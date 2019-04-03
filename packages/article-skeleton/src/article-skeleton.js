@@ -34,28 +34,14 @@ const renderRow = (
   rowData,
   onCommentsPress,
   onCommentGuidelinesPress,
-  onImagePress,
-  onLinkPress,
   onRelatedArticlePress,
   onTopicPress,
-  onTwitterLinkPress,
-  onVideoPress,
   analyticsStream,
-  interactiveConfig
 ) => {
   // eslint-disable-next-line default-case
   switch (rowData.type) {
     case "articleBodyRow": {
-      return (
-        <ArticleRow
-          content={rowData}
-          interactiveConfig={interactiveConfig}
-          onImagePress={onImagePress}
-          onLinkPress={onLinkPress}
-          onTwitterLinkPress={onTwitterLinkPress}
-          onVideoPress={onVideoPress}
-        />
-      );
+      return rowData.data
     }
 
     case "articleExtrasRow": {
@@ -107,27 +93,31 @@ class ArticleSkeleton extends Component {
       .map(viewableItem => onViewed(viewableItem.item, dataSource));
   }
 
+  rebuildRows(textFlow) {
+    return textFlow.block.children.map(block => {
+      let data;
+      if (block instanceof Layout.Block) {
+        data = this.renderBlock(block)
+      }
+      if (block instanceof Layout.InlineBlock) {
+        data = this.renderInlineBlock(block)
+      }
+      if (block instanceof FText.Text) {
+        data = this.renderText(block)
+      }
+      return {
+        type: 'articleBodyRow',
+        data
+      }
+    })
+  }
+
   layout() {
-    if (this.state.content) {
-      this.state.content.layout()
-      this.setState({
-        content: this.state.content
-      })
-      return
-    }
     const {
-      adConfig,
-      analyticsStream,
-      Header,
       interactiveConfig,
       onCommentGuidelinesPress,
-      onCommentsPress,
-      onImagePress,
       onLinkPress,
-      onRelatedArticlePress,
-      onTopicPress,
       onTwitterLinkPress,
-      onViewed,
       onVideoPress,
       receiveChildList
     } = this.props;
@@ -159,7 +149,21 @@ class ArticleSkeleton extends Component {
     const rows = articleData
       .filter(row => row.type === "articleBodyRow")
       .map(({ data }) => data);
-    
+
+    const others = articleData
+      .filter(row => row.type !== 'articleBodyRow')
+
+    if (this.state.flow) {
+      this.state.flow.layout()
+      this.setState({
+        content: [
+          ...this.rebuildRows(this.state.flow),
+          ...others
+        ]
+      })
+      return
+    }
+
     const textFlow = new Layout.TextFlow({
       width: 660,
       flow: rows.map(rowData => {
@@ -179,127 +183,130 @@ class ArticleSkeleton extends Component {
     receiveChildList(articleData);
 
     this.setState({
-      content: textFlow
+      flow: textFlow,
+      content: [
+        ...this.rebuildRows(textFlow),
+        ...others
+      ]
     })
-    /*
-    return (
-      <AdComposer adConfig={adConfig}>
-        <Responsive>
-          <View style={styles.articleContainer}>
-            <FlatList
-              data={articleData}
-              initialListSize={listViewSize}
-              interactiveConfig={interactiveConfig}
-              keyExtractor={item =>
-                item.index ? `${item.type}.${item.index}` : item.type
-              }
-              ListHeaderComponent={
-                <Gutter>
-                  <Header width={Math.min(maxWidth, width)} />
-                </Gutter>
-              }
-              onViewableItemsChanged={
-                onViewed ? this.onViewableItemsChanged : null
-              }
-              pageSize={listViewPageSize}
-              renderItem={({ item }) => (
-                <Gutter>
-                  {renderRow(
-                    item,
-                    onAuthorPress,
-                    onCommentsPress,
-                    onCommentGuidelinesPress,
-                    onLinkPress,
-                    onRelatedArticlePress,
-                    onTopicPress,
-                    onTwitterLinkPress,
-                    onVideoPress,
-                    analyticsStream,
-                    interactiveConfig
-                  )}
-                </Gutter>
-              )}
-              scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
-              testID="flat-list-article"
-              viewabilityConfig={viewabilityConfig}
-            />
-          </View>
-        </Responsive>
-      </AdComposer>
-    );
-    */
+  }
+
+  renderInlineBlock(block) {
+    const { width } = this.state;
+    return (<View>
+      <View onLayout={e => {
+        if (block.prevHeight !== block.height) {
+          this.layout()
+        }
+        block.prevHeight = block.height
+      }} style={{
+        position: 'absolute',
+        top: 0,
+        left: block.x + 60,
+        width: Math.min(maxWidth, width) * 0.35,
+        height: block.height,
+        zIndex: 1,
+      }}>
+        {block.getComponent()}
+      </View>
+      {block.children.map(subBlock => this.renderText(subBlock))}
+    </View>)
+  }
+
+  renderBlock(block) {
+    return block.getComponent()
+  }
+
+  renderText(block) {
+    return block.getComponent(style => <View style={{ height: block.measuredHeight }}>
+      {
+        block.block.children.map(line =>
+          line.idealSpans.map(span => (
+            <Text
+              selectable
+              style={{
+                ...style,
+                fontFamily: span.style.font,
+                fontWeight: span.style.font.includes('Bold') ? 'bold' : null,
+                fontStyle: span.style.font.includes('Italic') ? 'italic' : null,
+                position: 'absolute',
+                top: span.y,
+                left: span.x
+              }}
+            >
+              {span.text}
+            </Text>))
+        )
+      }
+    </View>
+    )
   }
 
   render() {
     const {
       adConfig,
+      analyticsStream,
       Header,
+      interactiveConfig,
+      onAuthorPress,
+      onCommentGuidelinesPress,
+      onCommentsPress,
+      onLinkPress,
+      onRelatedArticlePress,
+      onTopicPress,
+      onTwitterLinkPress,
+      onViewed,
+      onVideoPress
     } = this.props;
     const { width } = this.state;
     if (!this.state.content) {
       return null
     }
-    const textFlow = this.state.content
-    return (
-      <AdComposer adConfig={adConfig}>
-        <Responsive>
-          <View style={styles.articleContainer}>
-            <ScrollView>
+
+    return (<AdComposer adConfig={adConfig}>
+      <Responsive>
+        <View style={styles.articleContainer}>
+          <FlatList
+            data={this.state.content}
+            initialListSize={listViewSize}
+            interactiveConfig={interactiveConfig}
+            keyExtractor={item =>
+              item.index ? `${item.type}.${item.index}` : item.type
+            }
+            ListHeaderComponent={
               <Gutter>
                 <Header width={Math.min(maxWidth, width)} />
               </Gutter>
-              <View>
-                {
-                  textFlow.block.children.map(block => {
-                    if (block instanceof Layout.InlineBlock) {
-                      return (<View onLayout={e => {
-                        if (block.prevHeight !== block.height) {
-                          this.layout()
-                        }
-                        block.prevHeight = block.height
-                      }} style={{
-                        position: 'absolute',
-                        top: block.y,
-                        left: block.x + 60,
-                        width: Math.min(maxWidth, width) * 0.35,
-                        height: block.height,
-                        zIndex: 1,
-                      }}>
-                        {block.getComponent()}
-                      </View>)
-                    }
-                    if (block instanceof Layout.Block) {
-                      return block.getComponent()
-                    }
-                    if (block instanceof FText.Text) {
-                      return <Gutter>{block.getComponent(style => <View style={{ height: block.measuredHeight }}>
-                        {
-                          block.block.children.map(line =>
-                            line.idealSpans.map(span => (
-                              <Text
-                                selectable
-                                style={{
-                                  ...style,
-                                  fontFamily: span.style.font,
-                                  fontWeight: span.style.font.includes('Bold') ? 'bold' : null,
-                                  fontStyle: span.style.font.includes('Italic') ? 'italic' : null,
-                                  position: 'absolute',
-                                  top: span.y,
-                                  left: span.x
-                                }}
-                              >
-                                {span.text}
-                              </Text>))
-                          )
-                        }
-                      </View>
-                      )}</Gutter>
-                    }
-                  })
-                }
-              </View>
-            </ScrollView></View></Responsive></AdComposer>
-    )
+            }
+            onViewableItemsChanged={
+              onViewed ? this.onViewableItemsChanged : null
+            }
+            pageSize={listViewPageSize}
+            renderItem={({ item }) => (
+              <Gutter>
+                {renderRow(
+                  item,
+                  onAuthorPress,
+                  onCommentsPress,
+                  onCommentGuidelinesPress,
+                  onLinkPress,
+                  onRelatedArticlePress,
+                  onTopicPress,
+                  onTwitterLinkPress,
+                  onVideoPress,
+                  analyticsStream,
+                  interactiveConfig
+                )}
+              </Gutter>
+            )}
+            scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
+            testID="flat-list-article"
+            viewabilityConfig={viewabilityConfig}
+          />
+        </View>
+      </Responsive>
+    </AdComposer>
+    );
   }
 }
 

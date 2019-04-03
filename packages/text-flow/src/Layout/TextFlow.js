@@ -31,6 +31,7 @@ export default class TextFlow extends Container {
       if (child instanceof InlineBlock) {
         let grabbed = i + 1
         let next = this.flow[grabbed]
+        child.children = []
 
         if (!(next instanceof Text)) {
           throw new Error("Float stacking is not supported")
@@ -71,7 +72,7 @@ export default class TextFlow extends Container {
             }
           })
           vPosition += next.measuredHeight
-          this.block.addChild(next)
+          child.addChild(next)
           grabbed += 1
           next = this.flow[grabbed]
           if (pulledLines >= elNumLines || !next) {
