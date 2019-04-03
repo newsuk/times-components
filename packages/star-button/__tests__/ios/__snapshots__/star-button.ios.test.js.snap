@@ -3,6 +3,11 @@
 exports[`1. renders default 1`] = `
 <Link
   disabled={false}
+  linkStyle={
+    Object {
+      "alignSelf": "flex-start",
+    }
+  }
 >
   <IconStar
     fillColour="none"
@@ -16,6 +21,11 @@ exports[`1. renders default 1`] = `
 exports[`2. renders selected 1`] = `
 <Link
   disabled={false}
+  linkStyle={
+    Object {
+      "alignSelf": "flex-start",
+    }
+  }
 >
   <IconStar
     fillColour="#006699"
@@ -29,6 +39,11 @@ exports[`2. renders selected 1`] = `
 exports[`3. renders disabled 1`] = `
 <Link
   disabled={true}
+  linkStyle={
+    Object {
+      "alignSelf": "flex-start",
+    }
+  }
 >
   <IconStar
     fillColour="none"

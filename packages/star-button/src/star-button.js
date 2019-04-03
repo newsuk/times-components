@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Link from "@times-components/link";
 import { IconStar } from "@times-components/icons";
-import stars from "./styles";
+import styles, { stars } from "./styles";
 
 const StarButton = ({ disabled, height, onPress, selected }) => {
   const starState =
@@ -11,7 +11,7 @@ const StarButton = ({ disabled, height, onPress, selected }) => {
 
   return (
     // eslint-disable-next-line jsx-a11y/anchor-is-valid
-    <Link disabled={disabled} onPress={onPress}>
+    <Link disabled={disabled} linkStyle={styles.container} onPress={onPress}>
       <IconStar
         fillColour={fillColour}
         height={height}

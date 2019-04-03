@@ -1,5 +1,11 @@
 import { colours } from "@times-components/styleguide";
 
+const styles = {
+  container: {
+    alignSelf: "flex-start"
+  }
+};
+
 const stars = {
   disabled: {
     fillColour: "none",
@@ -18,4 +24,5 @@ const stars = {
   }
 };
 
-export default stars;
+export { stars };
+export default styles;
