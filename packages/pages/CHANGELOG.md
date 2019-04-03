@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.22.0](https://github.com/newsuk/times-components/compare/@times-components/pages@1.21.4...@times-components/pages@1.22.0) (2019-04-03)
+
+
+### Features
+
+* save star storybook ([#1854](https://github.com/newsuk/times-components/issues/1854)) ([a2984aa](https://github.com/newsuk/times-components/commit/a2984aa))
+
+
+
+
+
 ## [1.21.4](https://github.com/newsuk/times-components/compare/@times-components/pages@1.21.3...@times-components/pages@1.21.4) (2019-04-03)
 
 **Note:** Version bump only for package @times-components/pages
