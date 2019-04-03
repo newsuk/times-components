@@ -1,12 +1,12 @@
 import { StyleSheet } from "react-native";
-import { fonts, spacing } from "@times-components/styleguide";
+import { fonts, spacing, colours } from "@times-components/styleguide";
 import sharedStyles from "./shared";
 
 const styles = StyleSheet.create({
   ...sharedStyles,
   background: {
     alignItems: "center",
-    backgroundColor: "rgba(0, 0, 0, 0.6)",
+    backgroundColor: colours.functional.transparentBlack,
     display: "flex",
     justifyContent: "center"
   },

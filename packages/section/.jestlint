@@ -1,0 +1,5 @@
+{
+  "maxFileSize": 24000,
+  "maxDepth": 12,
+  "maxLines": 400
+}

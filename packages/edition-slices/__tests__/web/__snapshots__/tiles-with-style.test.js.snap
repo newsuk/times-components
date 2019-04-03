@@ -1571,8 +1571,8 @@ exports[`11. tile k 1`] = `
 .S3 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
-  font-size: 22px;
   font-weight: 400;
+  line-height: 27px;
   margin-bottom: 10px;
 }
 
@@ -1590,7 +1590,7 @@ exports[`11. tile k 1`] = `
 }
 
 .IS3 {
-  line-height: 22px;
+  font-size: 18px;
 }
 
 .IS4 {

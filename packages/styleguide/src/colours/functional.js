@@ -6,6 +6,7 @@ const functionalColours = {
   articleFlagUpdated: "#3C81BE",
   backgroundPrimary: "#F9F9F9",
   backgroundSecondary: "#EDEDED",
+  black: "#000000",
   border: "#F0F0F0",
   brandColour: "#1D1D1B",
   bullet: "#103546",
@@ -20,6 +21,7 @@ const functionalColours = {
   primary: "#333333",
   secondary: "#696969",
   tertiary: "#4D4D4D",
+  transparentBlack: "rgba(0, 0, 0, 0.6)",
   white: "#FFFFFF"
 };
 

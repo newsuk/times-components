@@ -14,27 +14,27 @@ class Standard extends Component {
     this.renderSmall = this.renderSmall.bind(this);
   }
 
-  getTiles() {
+  getTiles(breakpoint) {
     const {
       slice: { items },
       onPress
     } = this.props;
 
     return items.map(tile => (
-      <TileK key={tile.articleId} onPress={onPress} tile={tile} />
+      <TileK key={tile.articleId} breakpoint={breakpoint} onPress={onPress} tile={tile} />
     ));
   }
 
-  renderMedium() {
+  renderMedium(breakpoint) {
     return (
       <View style={styles.container}>
-        <VerticalLayout tiles={this.getTiles()} />
+        <VerticalLayout tiles={this.getTiles(breakpoint)} />
       </View>
     );
   }
 
   renderSmall() {
-    return <VerticalLayout tiles={this.getTiles()} />;
+    return <VerticalLayout tiles={this.getTiles(breakpoint)} />;
   }
 
   render() {
