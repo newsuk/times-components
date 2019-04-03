@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.8.0](https://github.com/newsuk/times-components/compare/@times-components/article@6.7.19...@times-components/article@6.8.0) (2019-04-03)
+
+
+### Features
+
+* gather data for image gallery ([#1835](https://github.com/newsuk/times-components/issues/1835)) ([52508b8](https://github.com/newsuk/times-components/commit/52508b8))
+
+
+
+
+
 ## [6.7.19](https://github.com/newsuk/times-components/compare/@times-components/article@6.7.18...@times-components/article@6.7.19) (2019-04-02)
 
 **Note:** Version bump only for package @times-components/article
