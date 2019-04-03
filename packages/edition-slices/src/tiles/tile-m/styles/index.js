@@ -1,4 +1,5 @@
 import { colours, fonts, spacing } from "@times-components/styleguide";
+import { verticalStyles } from "../../shared/styles";
 
 const styles = {
   container: {
@@ -11,6 +12,9 @@ const styles = {
     marginBottom: spacing(1),
     marginTop: spacing(4),
     textAlign: "center"
+  },
+  star: {
+    ...verticalStyles
   },
   strapline: {
     color: colours.functional.secondary,

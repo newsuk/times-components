@@ -16,6 +16,7 @@ const TileAG = ({ onPress, tile }) => {
       <View style={styles.container}>
         <TileSummary
           headlineStyle={styles.headline}
+          starStyle={styles.star}
           strapline={strapline}
           straplineStyle={styles.strapline}
           tile={tileWithoutLabelAndFlags}

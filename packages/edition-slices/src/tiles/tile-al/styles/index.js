@@ -1,4 +1,5 @@
 import { fontFactory, spacing } from "@times-components/styleguide";
+import { verticalStyles } from "../../shared/styles";
 
 const styles = {
   container: {
@@ -15,6 +16,9 @@ const styles = {
   imageContainer: {
     paddingVertical: spacing(2),
     width: "100%"
+  },
+  star: {
+    ...verticalStyles
   },
   summaryContainer: {
     lineHeight: 1.43,
