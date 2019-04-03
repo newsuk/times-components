@@ -56,13 +56,19 @@ const SecondaryTwoNoPicAndTwoSlice = ({
 
   return (
     <View style={styles.container}>
-      <Column tiles={[renderSecondary1]} style={styles.secondaryItemContainer} />
+      <Column
+        style={styles.secondaryItemContainer}
+        tiles={[renderSecondary1]}
+      />
       <ItemColSeparator />
-      <Column tiles={[renderSupport1]} style={styles.supportItemContainer} />
+      <Column style={styles.supportItemContainer} tiles={[renderSupport1]} />
       <ItemColSeparator />
-      <Column tiles={[renderSecondary2]} style={styles.secondaryItemContainer} />
+      <Column
+        style={styles.secondaryItemContainer}
+        tiles={[renderSecondary2]}
+      />
       <ItemColSeparator />
-      <Column tiles={[renderSupport2]} style={styles.supportItemContainer} />
+      <Column style={styles.supportItemContainer} tiles={[renderSupport2]} />
     </View>
   );
 };

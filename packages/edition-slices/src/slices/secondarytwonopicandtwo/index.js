@@ -90,10 +90,10 @@ class SecondaryTwoNoPicAndTwo extends Component {
   render() {
     return (
       <ResponsiveSlice
+        renderHuge={this.renderWide}
         renderMedium={this.renderMedium}
         renderSmall={this.renderSmall}
         renderWide={this.renderWide}
-        renderHuge={this.renderWide}
       />
     );
   }
