@@ -8,6 +8,7 @@ import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
 import com.facebook.stetho.Stetho;
+import com.horcrux.svg.SvgPackage;
 import com.storybooknative.stubs.StorybookStubPackage;
 
 import java.util.Arrays;
@@ -26,7 +27,8 @@ public class MainApplication extends Application implements ReactApplication {
             return Arrays.asList(
                     new MainReactPackage(),
                     new ComponentsPackage(),
-                    new StorybookStubPackage()
+                    new StorybookStubPackage(),
+                    new SvgPackage()
             );
         }
 

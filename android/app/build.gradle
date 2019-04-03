@@ -154,6 +154,7 @@ repositories {
 
 dependencies {
     implementation "com.facebook.react:react-native:0.55.4"  // From node_modules
+    implementation project(':react-native-svg')
     implementation "com.facebook.stetho:stetho:1.5.0"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
