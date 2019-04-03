@@ -1,6 +1,5 @@
 import TextStyle from "./TextStyle";
 import Markup from "./Markup";
-import Character from "../Text/Character";
 
 export default class StyledText extends Markup {
   style = new TextStyle()

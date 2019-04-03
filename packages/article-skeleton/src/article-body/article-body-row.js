@@ -52,7 +52,7 @@ export const ArticleRowFlow = ({
                     dropCap={value}
                     font={dropCapFont}
                     scale={scale}
-                    colour={sectionColour}/>
+                    colour={sectionColour} />
                 )}
             </Context.Consumer>)
           },
@@ -178,18 +178,16 @@ export const ArticleRowFlow = ({
 
       return {
         element: new Markup.Link({
-          href: url,
-          getComponent() {
-            return (
-              <ArticleLink
-                key={key}
-                linkType={attributes.type}
-                onPress={e => onLinkPress(e, { canonicalId, type, url })}
-                url={url}
-              >
-                {children}
-              </ArticleLink>
-            )
+          children,
+          href() {
+            return (<ArticleLink
+              key={key}
+              linkType={attributes.type}
+              onPress={e => onLinkPress(e, { canonicalId, type, url })}
+              url={url}
+            >
+              {this.text}
+            </ArticleLink>)
           }
         })
       }

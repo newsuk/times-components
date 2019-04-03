@@ -157,6 +157,7 @@ export default class Text extends Container {
 
       // create character
       char = new Character(this.characters[i].character, currentStyle, i);
+      char.href = this.characters[i].href;
 
       if (char.missing) {
         if (this.missingGlyphs == null) {

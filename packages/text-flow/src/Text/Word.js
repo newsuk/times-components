@@ -25,6 +25,7 @@ export default class Word extends Container {
     for (let i = 0; i < this.children.length; i += 1) {
       const char = this.children[i]
       if ((style !== char.style) || (href !== char.href)) {
+        href = char.href
         const span = new Span()
         span.word = this
         span.style = char.style
@@ -36,7 +37,6 @@ export default class Word extends Container {
         span.href = href
         spans.push(span)
         style = char.style
-        href = char.href
       } else {
         const span = spans[spans.length - 1]
         span.measuredWidth += Math.floor(char.getWidth())
