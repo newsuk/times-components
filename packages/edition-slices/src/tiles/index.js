@@ -7,6 +7,7 @@ export { default as TileAK } from "./tile-ak";
 export { default as TileAL } from "./tile-al";
 export { default as TileAM } from "./tile-am";
 export { default as TileAN } from "./tile-an";
+export { default as TileAP } from "./tile-ap";
 export { default as TileB } from "./tile-b";
 export { default as TileC } from "./tile-c";
 export { default as TileD } from "./tile-d";
