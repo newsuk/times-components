@@ -100,49 +100,53 @@ exports[`1. landscape default modal 1`] = `
           </View>
         </Gestures>
       </SafeAreaView>
-      <SafeAreaView
+      <Gradient
         style={
           Object {
-            "backgroundColor": "rgba(0, 0, 0, 0.7)",
             "flex": 0,
+            "height": 140,
+            "justifyContent": "flex-end",
             "marginTop": "auto",
             "position": "relative",
+            "width": "100%",
             "zIndex": 2,
           }
         }
       >
-        <View
-          style={
-            Object {
-              "margin": 15,
-            }
-          }
-        >
-          <Text
+        <SafeAreaView>
+          <View
             style={
               Object {
-                "color": "#FFFFFF",
-                "fontSize": 15,
-                "lineHeight": 15,
+                "margin": 15,
               }
             }
           >
-            Caption
-          </Text>
-          <Text
-            style={
-              Object {
-                "color": "#FFFFFF",
-                "fontSize": 10,
-                "lineHeight": 10,
-                "marginTop": 5,
+            <Text
+              style={
+                Object {
+                  "color": "#FFFFFF",
+                  "fontSize": 15,
+                  "lineHeight": 15,
+                }
               }
-            }
-          >
-            Credits
-          </Text>
-        </View>
-      </SafeAreaView>
+            >
+              Caption
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#FFFFFF",
+                  "fontSize": 10,
+                  "lineHeight": 10,
+                  "marginTop": 5,
+                }
+              }
+            >
+              Credits
+            </Text>
+          </View>
+        </SafeAreaView>
+      </Gradient>
     </View>
   </Modal>
   <View
@@ -274,49 +278,53 @@ exports[`2. portrait default modal 1`] = `
           </View>
         </Gestures>
       </SafeAreaView>
-      <SafeAreaView
+      <Gradient
         style={
           Object {
-            "backgroundColor": "rgba(0, 0, 0, 0.7)",
             "flex": 0,
+            "height": 140,
+            "justifyContent": "flex-end",
             "marginTop": "auto",
             "position": "relative",
+            "width": "100%",
             "zIndex": 2,
           }
         }
       >
-        <View
-          style={
-            Object {
-              "margin": 15,
-            }
-          }
-        >
-          <Text
+        <SafeAreaView>
+          <View
             style={
               Object {
-                "color": "#FFFFFF",
-                "fontSize": 15,
-                "lineHeight": 15,
+                "margin": 15,
               }
             }
           >
-            Caption
-          </Text>
-          <Text
-            style={
-              Object {
-                "color": "#FFFFFF",
-                "fontSize": 10,
-                "lineHeight": 10,
-                "marginTop": 5,
+            <Text
+              style={
+                Object {
+                  "color": "#FFFFFF",
+                  "fontSize": 15,
+                  "lineHeight": 15,
+                }
               }
-            }
-          >
-            Credits
-          </Text>
-        </View>
-      </SafeAreaView>
+            >
+              Caption
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#FFFFFF",
+                  "fontSize": 10,
+                  "lineHeight": 10,
+                  "marginTop": 5,
+                }
+              }
+            >
+              Credits
+            </Text>
+          </View>
+        </SafeAreaView>
+      </Gradient>
     </View>
   </Modal>
   <View
@@ -448,49 +456,53 @@ exports[`3. tablet landscape default modal 1`] = `
           </View>
         </Gestures>
       </SafeAreaView>
-      <SafeAreaView
+      <Gradient
         style={
           Object {
-            "backgroundColor": "rgba(0, 0, 0, 0.7)",
             "flex": 0,
+            "height": 140,
+            "justifyContent": "flex-end",
             "marginTop": "auto",
             "position": "relative",
+            "width": "100%",
             "zIndex": 2,
           }
         }
       >
-        <View
-          style={
-            Object {
-              "margin": 20,
-            }
-          }
-        >
-          <Text
+        <SafeAreaView>
+          <View
             style={
               Object {
-                "color": "#FFFFFF",
-                "fontSize": 15,
-                "lineHeight": 15,
+                "margin": 20,
               }
             }
           >
-            Caption
-          </Text>
-          <Text
-            style={
-              Object {
-                "color": "#FFFFFF",
-                "fontSize": 10,
-                "lineHeight": 10,
-                "marginTop": 5,
+            <Text
+              style={
+                Object {
+                  "color": "#FFFFFF",
+                  "fontSize": 15,
+                  "lineHeight": 15,
+                }
               }
-            }
-          >
-            Credits
-          </Text>
-        </View>
-      </SafeAreaView>
+            >
+              Caption
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#FFFFFF",
+                  "fontSize": 10,
+                  "lineHeight": 10,
+                  "marginTop": 5,
+                }
+              }
+            >
+              Credits
+            </Text>
+          </View>
+        </SafeAreaView>
+      </Gradient>
     </View>
   </Modal>
   <View
@@ -622,49 +634,53 @@ exports[`4. tablet portrait default modal 1`] = `
           </View>
         </Gestures>
       </SafeAreaView>
-      <SafeAreaView
+      <Gradient
         style={
           Object {
-            "backgroundColor": "rgba(0, 0, 0, 0.7)",
             "flex": 0,
+            "height": 140,
+            "justifyContent": "flex-end",
             "marginTop": "auto",
             "position": "relative",
+            "width": "100%",
             "zIndex": 2,
           }
         }
       >
-        <View
-          style={
-            Object {
-              "margin": 20,
-            }
-          }
-        >
-          <Text
+        <SafeAreaView>
+          <View
             style={
               Object {
-                "color": "#FFFFFF",
-                "fontSize": 15,
-                "lineHeight": 15,
+                "margin": 20,
               }
             }
           >
-            Caption
-          </Text>
-          <Text
-            style={
-              Object {
-                "color": "#FFFFFF",
-                "fontSize": 10,
-                "lineHeight": 10,
-                "marginTop": 5,
+            <Text
+              style={
+                Object {
+                  "color": "#FFFFFF",
+                  "fontSize": 15,
+                  "lineHeight": 15,
+                }
               }
-            }
-          >
-            Credits
-          </Text>
-        </View>
-      </SafeAreaView>
+            >
+              Caption
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#FFFFFF",
+                  "fontSize": 10,
+                  "lineHeight": 10,
+                  "marginTop": 5,
+                }
+              }
+            >
+              Credits
+            </Text>
+          </View>
+        </SafeAreaView>
+      </Gradient>
     </View>
   </Modal>
   <View

@@ -40,7 +40,15 @@ class GradientBase extends Component {
 
   render() {
     const { height, width } = this.getDimensions();
-    const { children, degrees, startColour, endColour, style } = this.props;
+    const {
+      children,
+      degrees,
+      startColour,
+      endColour,
+      endPoint,
+      startPoint,
+      style
+    } = this.props;
 
     const { start, end } = angleToPoints(((degrees + 90) / 180) * Math.PI);
 
@@ -65,8 +73,8 @@ class GradientBase extends Component {
             fill={
               new LinearGradient(
                 {
-                  "0": startColour,
-                  "1": endColour
+                  [endPoint]: endColour,
+                  [startPoint]: startColour
                 },
                 width * start.x,
                 height * start.y,

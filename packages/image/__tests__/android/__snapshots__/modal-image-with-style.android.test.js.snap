@@ -25,7 +25,9 @@ exports[`1. landscape default modal 1`] = `
       <View
         style={
           Object {
-            "alignItems": "flex-end",
+            "padding": 15,
+            "position": "relative",
+            "zIndex": 2,
           }
         }
       >
@@ -97,13 +99,14 @@ exports[`1. landscape default modal 1`] = `
           </View>
         </Gestures>
       </SafeAreaView>
-      <SafeAreaView
+      <View
         style={
           Object {
             "backgroundColor": "rgba(0, 0, 0, 0.7)",
             "flex": 0,
             "marginTop": "auto",
             "position": "relative",
+            "width": "100%",
             "zIndex": 2,
           }
         }
@@ -139,7 +142,7 @@ exports[`1. landscape default modal 1`] = `
             Credits
           </Text>
         </View>
-      </SafeAreaView>
+      </View>
     </View>
   </Modal>
   <View>
@@ -190,7 +193,9 @@ exports[`2. portrait default modal 1`] = `
       <View
         style={
           Object {
-            "alignItems": "flex-end",
+            "padding": 15,
+            "position": "relative",
+            "zIndex": 2,
           }
         }
       >
@@ -262,13 +267,14 @@ exports[`2. portrait default modal 1`] = `
           </View>
         </Gestures>
       </SafeAreaView>
-      <SafeAreaView
+      <View
         style={
           Object {
             "backgroundColor": "rgba(0, 0, 0, 0.7)",
             "flex": 0,
             "marginTop": "auto",
             "position": "relative",
+            "width": "100%",
             "zIndex": 2,
           }
         }
@@ -304,7 +310,7 @@ exports[`2. portrait default modal 1`] = `
             Credits
           </Text>
         </View>
-      </SafeAreaView>
+      </View>
     </View>
   </Modal>
   <View>
@@ -355,8 +361,9 @@ exports[`3. tablet landscape default modal 1`] = `
       <View
         style={
           Object {
-            "alignItems": "flex-end",
             "padding": 20,
+            "position": "relative",
+            "zIndex": 2,
           }
         }
       >
@@ -428,13 +435,14 @@ exports[`3. tablet landscape default modal 1`] = `
           </View>
         </Gestures>
       </SafeAreaView>
-      <SafeAreaView
+      <View
         style={
           Object {
             "backgroundColor": "rgba(0, 0, 0, 0.7)",
             "flex": 0,
             "marginTop": "auto",
             "position": "relative",
+            "width": "100%",
             "zIndex": 2,
           }
         }
@@ -470,7 +478,7 @@ exports[`3. tablet landscape default modal 1`] = `
             Credits
           </Text>
         </View>
-      </SafeAreaView>
+      </View>
     </View>
   </Modal>
   <View>
@@ -521,8 +529,9 @@ exports[`4. tablet portrait default modal 1`] = `
       <View
         style={
           Object {
-            "alignItems": "flex-end",
             "padding": 20,
+            "position": "relative",
+            "zIndex": 2,
           }
         }
       >
@@ -594,13 +603,14 @@ exports[`4. tablet portrait default modal 1`] = `
           </View>
         </Gestures>
       </SafeAreaView>
-      <SafeAreaView
+      <View
         style={
           Object {
             "backgroundColor": "rgba(0, 0, 0, 0.7)",
             "flex": 0,
             "marginTop": "auto",
             "position": "relative",
+            "width": "100%",
             "zIndex": 2,
           }
         }
@@ -636,7 +646,7 @@ exports[`4. tablet portrait default modal 1`] = `
             Credits
           </Text>
         </View>
-      </SafeAreaView>
+      </View>
     </View>
   </Modal>
   <View>

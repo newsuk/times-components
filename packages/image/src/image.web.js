@@ -4,7 +4,7 @@ import { addMissingProtocol } from "@times-components/utils";
 import Placeholder from "./placeholder";
 import { defaultProps, propTypes } from "./image-prop-types";
 import appendSize from "./utils";
-import styles from "./styles";
+import styles from "./styles/index.web";
 import StyledImage from "./styles/responsive";
 
 class TimesImage extends Component {

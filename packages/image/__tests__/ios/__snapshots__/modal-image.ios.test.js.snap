@@ -5,6 +5,12 @@ exports[`1. modal image 1`] = `
   <Modal
     hardwareAccelerated={false}
     presentationStyle="fullScreen"
+    supportedOrientations={
+      Array [
+        "portrait",
+        "landscape",
+      ]
+    }
     visible={false}
   >
     <View>
@@ -71,22 +77,31 @@ exports[`1. modal image 1`] = `
           </View>
         </Gestures>
       </SafeAreaView>
-      <SafeAreaView
-        forceInset={
-          Object {
-            "bottom": "always",
-            "horizontal": "always",
-            "top": "never",
-          }
-        }
+      <Gradient
+        degrees={180}
+        endColour="#000000E6"
+        endPoint="0.6428571428571428"
+        height={140}
         pointerEvents="none"
+        startColour="#00000000"
+        width={500}
       >
-        <View>
-          <Text>
-            Caption
-          </Text>
-        </View>
-      </SafeAreaView>
+        <SafeAreaView
+          forceInset={
+            Object {
+              "bottom": "always",
+              "horizontal": "always",
+              "top": "never",
+            }
+          }
+        >
+          <View>
+            <Text>
+              Caption
+            </Text>
+          </View>
+        </SafeAreaView>
+      </Gradient>
     </View>
   </Modal>
   <View>
@@ -123,6 +138,12 @@ exports[`2. modal image with no caption 1`] = `
   <Modal
     hardwareAccelerated={false}
     presentationStyle="fullScreen"
+    supportedOrientations={
+      Array [
+        "portrait",
+        "landscape",
+      ]
+    }
     visible={false}
   >
     <View>
@@ -165,16 +186,25 @@ exports[`2. modal image with no caption 1`] = `
           </View>
         </Gestures>
       </SafeAreaView>
-      <SafeAreaView
-        forceInset={
-          Object {
-            "bottom": "always",
-            "horizontal": "always",
-            "top": "never",
-          }
-        }
+      <Gradient
+        degrees={180}
+        endColour="#000000E6"
+        endPoint="0.6428571428571428"
+        height={140}
         pointerEvents="none"
-      />
+        startColour="#00000000"
+        width={500}
+      >
+        <SafeAreaView
+          forceInset={
+            Object {
+              "bottom": "always",
+              "horizontal": "always",
+              "top": "never",
+            }
+          }
+        />
+      </Gradient>
     </View>
   </Modal>
   <View>
@@ -194,6 +224,12 @@ exports[`3. modal image with custom highressize 1`] = `
   <Modal
     hardwareAccelerated={false}
     presentationStyle="fullScreen"
+    supportedOrientations={
+      Array [
+        "portrait",
+        "landscape",
+      ]
+    }
     visible={false}
   >
     <View>
@@ -260,22 +296,31 @@ exports[`3. modal image with custom highressize 1`] = `
           </View>
         </Gestures>
       </SafeAreaView>
-      <SafeAreaView
-        forceInset={
-          Object {
-            "bottom": "always",
-            "horizontal": "always",
-            "top": "never",
-          }
-        }
+      <Gradient
+        degrees={180}
+        endColour="#000000E6"
+        endPoint="0.6428571428571428"
+        height={140}
         pointerEvents="none"
+        startColour="#00000000"
+        width={500}
       >
-        <View>
-          <Text>
-            Caption
-          </Text>
-        </View>
-      </SafeAreaView>
+        <SafeAreaView
+          forceInset={
+            Object {
+              "bottom": "always",
+              "horizontal": "always",
+              "top": "never",
+            }
+          }
+        >
+          <View>
+            <Text>
+              Caption
+            </Text>
+          </View>
+        </SafeAreaView>
+      </Gradient>
     </View>
   </Modal>
   <View>

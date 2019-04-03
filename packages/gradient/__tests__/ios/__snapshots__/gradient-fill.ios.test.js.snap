@@ -167,3 +167,59 @@ exports[`6. gradient with an angle (270) 1`] = `
   </ARTSurfaceView>
 </View>
 `;
+
+exports[`7. gradient with custom colours 1`] = `
+<View>
+  <ARTSurfaceView>
+    <ARTShape
+      fill={
+        Array [
+          1,
+          0,
+          0,
+          -0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+        ]
+      }
+    />
+  </ARTSurfaceView>
+</View>
+`;
+
+exports[`8. gradient with custom points 1`] = `
+<View>
+  <ARTSurfaceView>
+    <ARTShape
+      fill={
+        Array [
+          1,
+          0,
+          0,
+          -0,
+          0,
+          0.9294117647058824,
+          0.9294117647058824,
+          0.9294117647058824,
+          1,
+          0.9764705882352941,
+          0.9764705882352941,
+          0.9764705882352941,
+          1,
+          0.8,
+          0.2,
+        ]
+      }
+    />
+  </ARTSurfaceView>
+</View>
+`;

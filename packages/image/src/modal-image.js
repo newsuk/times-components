@@ -5,11 +5,10 @@ import Gestures from "@times-components/gestures";
 import { ResponsiveContext } from "@times-components/responsive";
 import Button from "@times-components/link";
 import CloseButton from "./close-button";
+import ModalCaptionContainer from "./modal-caption-container";
 import Image from "./image";
 import { modalPropTypes, modalDefaultProps } from "./modal-image-prop-types";
 import styles, { captionStyles, tabletCaptionStyles } from "./styles";
-
-console.disableYellowBox = true;
 
 class ModalImage extends Component {
   constructor(props) {
@@ -59,6 +58,7 @@ class ModalImage extends Component {
         <Modal
           onRequestClose={this.hideModal}
           presentationStyle="fullScreen"
+          supportedOrientations={["portrait", "landscape"]}
           visible={showModal}
         >
           <ResponsiveContext.Consumer>
@@ -92,17 +92,12 @@ class ModalImage extends Component {
                     />
                   </Gestures>
                 </SafeAreaView>
-                <SafeAreaView
-                  forceInset={{
-                    bottom: "always",
-                    horizontal: "always",
-                    top: "never"
-                  }}
+                <ModalCaptionContainer
                   pointerEvents="none"
                   style={styles.bottomSafeView}
                 >
                   {this.renderCaption({ isTablet })}
-                </SafeAreaView>
+                </ModalCaptionContainer>
               </View>
             )}
           </ResponsiveContext.Consumer>

@@ -5,9 +5,9 @@ import GradientBase from "./gradient.base";
 
 const Gradient = props => (
   <GradientBase
-    {...props}
     endColour={colours.functional.backgroundSecondary}
     startColour={colours.functional.backgroundPrimary}
+    {...props}
   />
 );
 

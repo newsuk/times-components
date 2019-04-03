@@ -2,10 +2,10 @@ import { colours, spacing } from "@times-components/styleguide";
 
 const styles = {
   bottomSafeView: {
-    backgroundColor: "rgba(0, 0, 0, 0.7)",
     flex: 0,
     marginTop: "auto",
     position: "relative",
+    width: "100%",
     zIndex: 2
   },
   buttonContainer: {
