@@ -454,21 +454,19 @@ exports[`12. secondary two no pic and two 1`] = `
     </div>
     <div />
     <div>
-      <TileAE
-        tileName="secondary2"
-      />
-    </div>
-  </div>
-  <div />
-  <div>
-    <div>
-      <TileG
+      <TileAP
         tileName="support1"
       />
     </div>
     <div />
     <div>
-      <TileG
+      <TileAE
+        tileName="secondary2"
+      />
+    </div>
+    <div />
+    <div>
+      <TileAP
         tileName="support2"
       />
     </div>

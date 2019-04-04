@@ -118,12 +118,13 @@ const sliceStories = [
   {
     mock: mockSecondaryTwoAndTwoSlice(),
     name:
-      "Secondary Two And Two (Mobile: C,C,G,G, Tablet: V,V,G,G, Wide Tablet/Desktop: AM,AM,AL,AL)",
+      "Secondary Two And Two (Mobile: C,C,G,G, Tablet: V,V,G,G, Wide Tablet/Desktop: AM,AM,AN,AN)",
     Slice: SecondaryTwoAndTwoSlice
   },
   {
     mock: mockSecondaryTwoNoPicAndTwoSlice(),
-    name: "Secondary Two No Pic And Two (Mobile: B,B,G,G - Tablet: AE,AE,G,G)",
+    name:
+      "Secondary Two No Pic And Two (Mobile: B,B,G,G - Tablet: AE,AE,G,G, Wide Tablet/Desktop: AE,AE,AP,AP)",
     Slice: SecondaryTwoNoPicAndTwoSlice
   },
   {
