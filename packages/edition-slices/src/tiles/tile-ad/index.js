@@ -8,9 +8,10 @@ import {
   TileSummary,
   withTileTracking
 } from "../shared";
-import styles from "./styles";
+import styleFactory from "./styles";
 
-const TileAD = ({ onPress, tile }) => {
+const TileAD = ({ onPress, tile, breakpoint }) => {
+  const styles = styleFactory(breakpoint);
   const { container, headline, imageContainer, summaryContainer } = styles;
 
   return (
@@ -37,8 +38,13 @@ const TileAD = ({ onPress, tile }) => {
 };
 
 TileAD.propTypes = {
+  breakpoint: PropTypes.string,
   onPress: PropTypes.func.isRequired,
   tile: PropTypes.shape({}).isRequired
+};
+
+TileAD.defaultProps = {
+  breakpoint: null
 };
 
 export default withTileTracking(TileAD);

@@ -236,24 +236,29 @@ exports[`4. lead one and four 1`] = `
   <div>
     <div>
       <TileAC
+        breakpoint="wide"
         tileName="lead"
       />
     </div>
     <div />
     <div>
       <TileAD
+        breakpoint="wide"
         tileName="support1"
       />
       <div />
       <TileAD
+        breakpoint="wide"
         tileName="support2"
       />
       <div />
       <TileAD
+        breakpoint="wide"
         tileName="support3"
       />
       <div />
       <TileAD
+        breakpoint="wide"
         tileName="support4"
       />
     </div>

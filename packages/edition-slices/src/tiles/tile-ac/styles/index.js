@@ -1,6 +1,6 @@
 import { colours, fonts, spacing } from "@times-components/styleguide";
 
-const styles = {
+const main = {
   container: {
     flex: 1
   },
@@ -24,4 +24,22 @@ const styles = {
   }
 };
 
-export default styles;
+const stylesWide = {
+  headline: {
+    fontFamily: fonts.headline,
+    fontSize: 35,
+    lineHeight: 35,
+    marginBottom: spacing(2),
+    textAlign: "center"
+  }
+};
+
+const stylesResolver = {
+  huge: stylesWide,
+  wide: stylesWide
+};
+
+export default breakpoint => ({
+  ...main,
+  ...(stylesResolver[breakpoint] || {})
+});
