@@ -8,7 +8,7 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
 <ArticleSkeleton>
   <View>
     <View>
-      <Image
+      <ModalImage
         aspectRatio={1}
         uri="https://image.io"
       />
@@ -63,7 +63,7 @@ exports[`4. an article with ads 1`] = `
 <ArticleSkeleton>
   <View>
     <View>
-      <Image
+      <ModalImage
         aspectRatio={1}
         uri="https://image.io"
       />

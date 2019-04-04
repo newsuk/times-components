@@ -29,7 +29,11 @@ const ArticleHeader = ({
     {({ isTablet }) => (
       <View style={[styles.header, isTablet && styles.headerTablet]}>
         <View style={[styles.container, isTablet && styles.containerTablet]}>
-          <ModalImage aspectRatio={1} style={styles.authorImage} uri={authorImage} />
+          <ModalImage
+            aspectRatio={1}
+            style={styles.authorImage}
+            uri={authorImage}
+          />
           <Label isVideo={hasVideo} label={label} />
           <Text
             style={[
