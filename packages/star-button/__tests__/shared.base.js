@@ -40,6 +40,36 @@ export default () => {
 
         expect(testInstance.toJSON()).toMatchSnapshot();
       }
+    },
+    {
+      name: "renders default in dark theme",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <StarButton isDark onPress={() => {}} />
+        );
+
+        expect(testInstance.toJSON()).toMatchSnapshot();
+      }
+    },
+    {
+      name: "renders selected in dark theme",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <StarButton isDark onPress={() => {}} selected />
+        );
+
+        expect(testInstance.toJSON()).toMatchSnapshot();
+      }
+    },
+    {
+      name: "renders disabled in dark theme",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <StarButton disabled isDark onPress={() => {}} />
+        );
+
+        expect(testInstance.toJSON()).toMatchSnapshot();
+      }
     }
   ];
 

@@ -26,12 +26,21 @@ const lightStar = {
 };
 
 const darkStar = {
-  disabled: { ...lightStar.disabled, strokeColour: colours.functional.greyLabel },
-  initial: { ...lightStar.initial, strokeColour: colours.functional.greyLabel },
-  selected: { ...lightStar.selected, fillColour: colours.functional.articleFlagUpdated },
-}
+  disabled: {
+    ...lightStar.disabled,
+    strokeColour: colours.functional.greyLabel
+  },
+  initial: {
+    ...lightStar.initial,
+    strokeColour: colours.functional.greyLabel
+  },
+  selected: {
+    ...lightStar.selected,
+    fillColour: colours.functional.articleFlagUpdated
+  }
+};
 
-const getTheme = ({ isDark }) => isDark ? darkStar : lightStar;
+const getTheme = ({ isDark }) => (isDark ? darkStar : lightStar);
 
 export { getTheme };
 export default styles;

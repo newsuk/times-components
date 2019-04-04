@@ -4,8 +4,8 @@ import Link from "@times-components/link";
 import { IconStar } from "@times-components/icons";
 import styles, { getTheme } from "./styles";
 
-const StarButton = ({ isDark, disabled, height, onPress, selected }) => {
-  const stars = getTheme({ isDark })
+const StarButton = ({ disabled, height, isDark, onPress, selected }) => {
+  const stars = getTheme({ isDark });
   const starState =
     (disabled && "disabled") || (selected && "selected") || "initial";
   const { fillColour, opacity, strokeColour } = stars[starState];
@@ -24,17 +24,17 @@ const StarButton = ({ isDark, disabled, height, onPress, selected }) => {
 };
 
 StarButton.propTypes = {
-  isDark: PropTypes.bool,
   disabled: PropTypes.bool,
   height: PropTypes.number,
+  isDark: PropTypes.bool,
   onPress: PropTypes.func.isRequired,
   selected: PropTypes.bool
 };
 
 StarButton.defaultProps = {
-  isDark: false,
   disabled: false,
   height: 18,
+  isDark: false,
   selected: false
 };
 
