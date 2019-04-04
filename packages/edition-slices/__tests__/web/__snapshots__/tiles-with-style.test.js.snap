@@ -828,6 +828,24 @@ exports[`8. tile h 1`] = `
   margin-bottom: 10px;
 }
 
+.S7 {
+  color: rgba(51,51,51,1.00);
+  font-family: GillSansMTStd-Medium;
+  font-size: 13px;
+  font-weight: inherit;
+  line-height: 15px;
+  margin-bottom: 0px;
+}
+
+.S8 {
+  color: inherit;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: inherit;
+  line-height: inherit;
+  margin-bottom: 0px;
+}
+
 .IS1 {
   color: rgba(0,91,141,1.00);
 }
@@ -911,6 +929,20 @@ exports[`8. tile h 1`] = `
             ]
           }
         />
+      </div>
+      <div
+        className="S8"
+      >
+        <span
+          className="S7"
+        >
+          Richard Lloyd Parry
+        </span>
+        <span
+          className="S7"
+        >
+          , Hanoi
+        </span>
       </div>
     </div>
     <div
@@ -1074,14 +1106,9 @@ exports[`10. tile j 1`] = `
 }
 
 .IS5 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   padding-top: 10px;
   padding-right: 10px;
   padding-left: 10px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
 }
 </style>
 
@@ -1181,14 +1208,9 @@ exports[`11. tile k 1`] = `
 }
 
 .IS5 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   padding-top: 10px;
   padding-right: 10px;
   padding-left: 10px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
 }
 </style>
 
@@ -1455,14 +1477,9 @@ exports[`14. tile n 1`] = `
 
 .IS5 {
   background-color: rgba(39,45,52,1.00);
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   padding-top: 10px;
   padding-right: 10px;
   padding-left: 10px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
 }
 </style>
 
@@ -1647,6 +1664,22 @@ exports[`16. tile p 1`] = `
   margin-bottom: 10px;
 }
 
+.S6 {
+  font-family: GillSansMTStd-Medium;
+  font-size: 12px;
+  font-weight: inherit;
+  margin-bottom: 0px;
+}
+
+.S7 {
+  color: inherit;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: inherit;
+  line-height: inherit;
+  margin-bottom: 0px;
+}
+
 .IS1 {
   border-top-left-radius: 9999px;
   border-top-right-radius: 9999px;
@@ -1678,6 +1711,16 @@ exports[`16. tile p 1`] = `
 }
 
 .IS5 {
+  color: rgba(133,0,41,1.00);
+  line-height: 12px;
+}
+
+.IS6 {
+  color: rgba(133,0,41,1.00);
+  line-height: 12px;
+}
+
+.IS7 {
   -webkit-align-items: center;
   align-items: center;
   padding-top: 10px;
@@ -1685,7 +1728,7 @@ exports[`16. tile p 1`] = `
   -webkit-box-align: center;
 }
 
-.IS6 {
+.IS8 {
   -webkit-align-items: center;
   align-items: center;
   padding-top: 20px;
@@ -1699,7 +1742,7 @@ exports[`16. tile p 1`] = `
   url="/article/123"
 >
   <div
-    className="IS6 S1"
+    className="IS8 S1"
   >
     <div
       className="IS1 S1"
@@ -1710,7 +1753,7 @@ exports[`16. tile p 1`] = `
       />
     </div>
     <div
-      className="IS5 S1"
+      className="IS7 S1"
     >
       <div
         className="S1"
@@ -1748,6 +1791,20 @@ exports[`16. tile p 1`] = `
             ]
           }
         />
+      </div>
+      <div
+        className="S7"
+      >
+        <span
+          className="IS5 S6"
+        >
+          Richard Lloyd Parry
+        </span>
+        <span
+          className="IS6 S6"
+        >
+          , Hanoi
+        </span>
       </div>
     </div>
   </div>
@@ -2045,14 +2102,9 @@ exports[`20. tile t 1`] = `
 }
 
 .IS5 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   padding-top: 10px;
   padding-right: 10px;
   padding-left: 10px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
 }
 </style>
 
@@ -2160,9 +2212,6 @@ exports[`21. tile u 1`] = `
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   padding-top: 10px;
   padding-right: 10px;
   padding-left: 10px;
@@ -2170,8 +2219,6 @@ exports[`21. tile u 1`] = `
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
   -ms-flex-preferred-size: 0%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
 }
 </style>
 
@@ -2392,14 +2439,9 @@ exports[`23. tile w 1`] = `
 }
 
 .IS5 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   padding-top: 10px;
   padding-right: 20px;
   padding-left: 20px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
 }
 </style>
 
@@ -2960,6 +3002,24 @@ exports[`28. tile ab 1`] = `
   margin-bottom: 10px;
 }
 
+.S7 {
+  color: rgba(51,51,51,1.00);
+  font-family: GillSansMTStd-Medium;
+  font-size: 13px;
+  font-weight: inherit;
+  line-height: 15px;
+  margin-bottom: 0px;
+}
+
+.S8 {
+  color: inherit;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: inherit;
+  line-height: inherit;
+  margin-bottom: 0px;
+}
+
 .IS1 {
   color: rgba(0,91,141,1.00);
 }
@@ -2985,13 +3045,8 @@ exports[`28. tile ab 1`] = `
 }
 
 .IS5 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
   padding-right: 10px;
   padding-left: 10px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
 }
 </style>
 
@@ -3044,6 +3099,20 @@ exports[`28. tile ab 1`] = `
             ]
           }
         />
+      </div>
+      <div
+        className="S8"
+      >
+        <span
+          className="S7"
+        >
+          Richard Lloyd Parry
+        </span>
+        <span
+          className="S7"
+        >
+          , Hanoi
+        </span>
       </div>
     </div>
     <div
