@@ -2,9 +2,10 @@ import React from "react";
 import PropTypes from "prop-types";
 import Link from "@times-components/link";
 import { IconStar } from "@times-components/icons";
-import styles, { stars } from "./styles";
+import styles, { getTheme } from "./styles";
 
-const StarButton = ({ disabled, height, onPress, selected }) => {
+const StarButton = ({ isDark, disabled, height, onPress, selected }) => {
+  const stars = getTheme({ isDark })
   const starState =
     (disabled && "disabled") || (selected && "selected") || "initial";
   const { fillColour, opacity, strokeColour } = stars[starState];
@@ -23,6 +24,7 @@ const StarButton = ({ disabled, height, onPress, selected }) => {
 };
 
 StarButton.propTypes = {
+  isDark: PropTypes.bool,
   disabled: PropTypes.bool,
   height: PropTypes.number,
   onPress: PropTypes.func.isRequired,
@@ -30,6 +32,7 @@ StarButton.propTypes = {
 };
 
 StarButton.defaultProps = {
+  isDark: false,
   disabled: false,
   height: 18,
   selected: false
