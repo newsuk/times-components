@@ -97,7 +97,7 @@ const makeArticle = configuration => article => {
   }
 
   if (configuration & LINKED_BYLINE) {
-    configuredArticle.byline = fixtures.bylineWithLink;
+    configuredArticle.bylines = fixtures.bylineWithLink;
   }
 
   if (!(configuration & STANDFIRST)) {

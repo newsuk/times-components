@@ -90,7 +90,7 @@ export default ({
             itemIndex += 1;
             return makeItem(
               {
-                byline: [],
+                bylines: [],
                 hasVideo: false,
                 headline: `Test Headline ${itemIndex}`,
                 id: `d98c2${itemIndex

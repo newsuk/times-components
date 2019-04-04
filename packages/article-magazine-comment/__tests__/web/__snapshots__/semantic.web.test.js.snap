@@ -20,7 +20,7 @@ exports[`1. a full article 1`] = `
   ADVERTISEMENT
   <img
     alt=""
-    src="https://image.io"
+    src={null}
   />
   SOME LABEL
   <h1
@@ -36,7 +36,7 @@ exports[`1. a full article 1`] = `
   >
     Some Standfirst
   </h2>
-  Rick Broadbent
+  Some byline
   <time
     dateTime="2015-03-13T18:54:58.000Z"
   >

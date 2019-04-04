@@ -11,12 +11,12 @@ import {
 } from "../styles/responsive.web";
 import styles from "../styles";
 
-const ArticleMeta = ({ byline, publicationName, publishedTime }) => (
+const ArticleMeta = ({ bylines, publicationName, publishedTime }) => (
   <MetaContainer>
-    {byline && (
+    {bylines && (
       <Fragment>
         <Meta style={styles.meta}>
-          <ArticleBylineWithLinks ast={byline} />
+          <ArticleBylineWithLinks ast={bylines} />
         </Meta>
         <Separator />
       </Fragment>

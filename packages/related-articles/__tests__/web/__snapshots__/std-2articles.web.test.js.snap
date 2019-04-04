@@ -142,14 +142,50 @@ Array [
       "attrs": Object {
         "articles": Array [
           Object {
-            "byline": "Camilla Long, Environment Editor",
+            "bylines": Array [
+              Object {
+                "byline": Array [
+                  Object {
+                    "attributes": Object {},
+                    "children": Array [
+                      Object {
+                        "attributes": Object {
+                          "value": "Camilla Long, Environment Editor",
+                        },
+                        "children": Array [],
+                        "name": "text",
+                      },
+                    ],
+                    "name": "inline",
+                  },
+                ],
+              },
+            ],
             "headline": "First Short Headline",
             "id": "58604618-fb0e-11e7-a987-7fcf5e9983dc",
             "publishedTime": "2015-03-13T18:54:58.000Z",
             "role": "standard-1",
           },
           Object {
-            "byline": "Camilla Long, Environment Editor",
+            "bylines": Array [
+              Object {
+                "byline": Array [
+                  Object {
+                    "attributes": Object {},
+                    "children": Array [
+                      Object {
+                        "attributes": Object {
+                          "value": "Camilla Long, Environment Editor",
+                        },
+                        "children": Array [],
+                        "name": "text",
+                      },
+                    ],
+                    "name": "inline",
+                  },
+                ],
+              },
+            ],
             "headline": "Second Short Headline",
             "id": "8b47c1b8-fb05-11e7-a987-7fcf5e9983dc",
             "publishedTime": "2018-01-17T12:00:00.000Z",

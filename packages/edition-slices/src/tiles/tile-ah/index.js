@@ -22,7 +22,7 @@ const TileAH = ({ onPress, tile }) => (
         )}
       />
       <TileSummary
-        byline={tile.article.byline}
+        bylines={tile.article.bylines}
         bylineStyle={styles.bylineOpinion}
         headlineStyle={styles.headline}
         strapline={tile.strapline || tile.article.strapline}

@@ -52,17 +52,21 @@
     "url": "https://article1.io"
   },
   {
-    "byline": [
+    "bylines": [
       {
-        "name": "paragraph",
-        "attributes": {},
-        "children": [
+        "byline": [
           {
-            "name": "text",
-            "attributes": {
-              "value": "Byline 2"
-            },
-            "children": []
+            "name": "paragraph",
+            "attributes": {},
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value": "Byline 2"
+                },
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -118,17 +122,21 @@
     "url": "https://article2.io"
   },
   {
-    "byline": [
+    "bylines": [
       {
-        "name": "paragraph",
-        "attributes": {},
-        "children": [
+        "byline": [
           {
-            "name": "text",
-            "attributes": {
-              "value": "Byline 3"
-            },
-            "children": []
+            "name": "paragraph",
+            "attributes": {},
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value": "Byline 3"
+                },
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -184,17 +192,21 @@
     "url": "https://article3.io"
   },
   {
-    "byline": [
+    "bylines": [
       {
-        "name": "paragraph",
-        "attributes": {},
-        "children": [
+        "byline": [
           {
-            "name": "text",
-            "attributes": {
-              "value": "Byline 4"
-            },
-            "children": []
+            "name": "paragraph",
+            "attributes": {},
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value": "Byline 4"
+                },
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -250,17 +262,21 @@
     "url": "https://article4.io"
   },
   {
-    "byline": [
+    "bylines": [
       {
-        "name": "paragraph",
-        "attributes": {},
-        "children": [
+        "byline": [
           {
-            "name": "text",
-            "attributes": {
-              "value": "Byline 5"
-            },
-            "children": []
+            "name": "paragraph",
+            "attributes": {},
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value": "Byline 5"
+                },
+                "children": []
+              }
+            ]
           }
         ]
       }

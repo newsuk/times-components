@@ -305,19 +305,23 @@ export default ({
     relatedArticleSlice: {
       opinion: {
         article: {
-          byline: [
+          bylines: [
             {
-              attributes: {},
-              children: [
+              byline: [
                 {
-                  attributes: {
-                    value: "Sathnam Sanghera"
-                  },
-                  children: [],
-                  name: "text"
+                  attributes: {},
+                  children: [
+                    {
+                      attributes: {
+                        value: "Sathnam Sanghera"
+                      },
+                      children: [],
+                      name: "text"
+                    }
+                  ],
+                  name: "inline"
                 }
-              ],
-              name: "inline"
+              ]
             }
           ],
           headline: firstHeadline,
@@ -351,19 +355,23 @@ export default ({
       sliceName: "OpinionOneAndTwoSlice",
       support1: {
         article: {
-          byline: [
+          bylines: [
             {
-              attributes: {},
-              children: [
+              byline: [
                 {
-                  attributes: {
-                    value: "Deborah Haynes"
-                  },
-                  children: [],
-                  name: "text"
+                  attributes: {},
+                  children: [
+                    {
+                      attributes: {
+                        value: "Deborah Haynes"
+                      },
+                      children: [],
+                      name: "text"
+                    }
+                  ],
+                  name: "inline"
                 }
-              ],
-              name: "inline"
+              ]
             }
           ],
           headline: secondHeadline,

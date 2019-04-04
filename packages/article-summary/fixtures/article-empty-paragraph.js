@@ -20,17 +20,21 @@ export default ({
   bylineProps: {
     ast: [
       {
-        attributes: {},
-        children: [
+        byline: [
           {
-            attributes: {
-              value: byline
-            },
-            children: [],
-            name: "text"
+            attributes: {},
+            children: [
+              {
+                attributes: {
+                  value: byline
+                },
+                children: [],
+                name: "text"
+              }
+            ],
+            name: "inline"
           }
-        ],
-        name: "inline"
+        ]
       }
     ]
   },

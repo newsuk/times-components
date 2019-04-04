@@ -15,7 +15,7 @@ import {
 import styles from "../styles";
 
 const ArticleHeader = ({
-  byline,
+  bylines,
   flags,
   isTablet,
   hasVideo,
@@ -50,7 +50,7 @@ const ArticleHeader = ({
         )}
         <Standfirst standfirst={standfirst} />
         <Meta
-          byline={byline}
+          bylines={bylines}
           isTablet={isTablet}
           onAuthorPress={onAuthorPress}
           publicationName={publicationName}

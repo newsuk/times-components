@@ -1,397 +1,501 @@
 {
   "singleAuthor": [
     {
-      "name": "author",
-      "attributes": {
-        "slug": "alexandra-frean"
-      },
-      "children": [
+      "byline": [
         {
-          "name": "text",
+          "name": "author",
           "attributes": {
-            "value": "Alexandra Frean"
+            "slug": "alexandra-frean"
           },
-          "children": []
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": "Alexandra Frean"
+              },
+              "children": []
+            }
+          ]
         }
       ]
     }
   ],
   "singleInlineElement": [
     {
-      "name": "inline",
-      "attributes": {},
-      "children": [
+      "byline": [
         {
-          "name": "text",
-          "attributes": {
-            "value": "Lindsay McIntosh, Scottish Political Editor"
-          },
-          "children": []
+          "name": "inline",
+          "attributes": {},
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": "Lindsay McIntosh, Scottish Political Editor"
+              },
+              "children": []
+            }
+          ]
         }
       ]
     }
   ],
   "authorInTheBeginning": [
     {
-      "name": "author",
-      "attributes": {
-        "slug": "camilla-long"
-      },
-      "children": [
+      "byline": [
         {
-          "name": "text",
+          "name": "author",
           "attributes": {
-            "value": "Camilla Long"
+            "slug": "camilla-long"
           },
-          "children": []
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": "Camilla Long"
+              },
+              "children": []
+            }
+          ]
         }
       ]
     },
     {
-      "name": "inline",
-      "attributes": {},
-      "children": [
+      "byline": [
         {
-          "name": "text",
-          "attributes": {
-            "value": ", Environment Editor"
-          },
-          "children": []
+          "name": "inline",
+          "attributes": {},
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": ", Environment Editor"
+              },
+              "children": []
+            }
+          ]
         }
       ]
     }
   ],
   "authorAtTheEnd": [
     {
-      "name": "inline",
-      "attributes": {},
-      "children": [
+      "byline": [
         {
-          "name": "text",
-          "attributes": {
-            "value": "RBS Six Nations, "
-          },
-          "children": []
+          "name": "inline",
+          "attributes": {},
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": "RBS Six Nations, "
+              },
+              "children": []
+            }
+          ]
         }
       ]
     },
     {
-      "name": "author",
-      "attributes": {
-        "slug": "mike-atherton"
-      },
-      "children": [
+      "byline": [
         {
-          "name": "text",
+          "name": "author",
           "attributes": {
-            "value": "Mike Atherton"
+            "slug": "mike-atherton"
           },
-          "children": []
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": "Mike Atherton"
+              },
+              "children": []
+            }
+          ]
         }
       ]
     }
   ],
   "multipleAuthorsCommaSeparated": [
     {
-      "name": "author",
-      "attributes": {
-        "slug": "camilla-long"
-      },
-      "children": [
+      "byline": [
         {
-          "name": "text",
+          "name": "author",
           "attributes": {
-            "value": "Camilla Long"
+            "slug": "camilla-long"
           },
-          "children": []
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": "Camilla Long"
+              },
+              "children": []
+            }
+          ]
         }
       ]
     },
     {
-      "name": "inline",
-      "attributes": {},
-      "children": [
+      "byline": [
         {
-          "name": "text",
-          "attributes": {
-            "value": ", "
-          },
-          "children": []
+          "name": "inline",
+          "attributes": {},
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": ", "
+              },
+              "children": []
+            }
+          ]
         }
       ]
     },
     {
-      "name": "author",
-      "attributes": {
-        "slug": "mike-atherton"
-      },
-      "children": [
+      "byline": [
         {
-          "name": "text",
+          "name": "author",
           "attributes": {
-            "value": "Mike Atherton"
+            "slug": "mike-atherton"
           },
-          "children": []
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": "Mike Atherton"
+              },
+              "children": []
+            }
+          ]
         }
       ]
     },
     {
-      "name": "inline",
-      "attributes": {},
-      "children": [
+      "byline": [
         {
-          "name": "text",
-          "attributes": {
-            "value": ", "
-          },
-          "children": []
+          "name": "inline",
+          "attributes": {},
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": ", "
+              },
+              "children": []
+            }
+          ]
         }
       ]
     },
     {
-      "name": "author",
-      "attributes": {
-        "slug": "alexandra-frean"
-      },
-      "children": [
+      "byline": [
         {
-          "name": "text",
+          "name": "author",
           "attributes": {
-            "value": "Alexandra Frean"
+            "slug": "alexandra-frean"
           },
-          "children": []
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": "Alexandra Frean"
+              },
+              "children": []
+            }
+          ]
         }
       ]
     }
   ],
   "multipleAuthorsPipeSeparated": [
     {
-      "name": "author",
-      "attributes": {
-        "slug": "camilla-long"
-      },
-      "children": [
+      "byline": [
         {
-          "name": "text",
+          "name": "author",
           "attributes": {
-            "value": "Camilla Long"
+            "slug": "camilla-long"
           },
-          "children": []
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": "Camilla Long"
+              },
+              "children": []
+            }
+          ]
         }
       ]
     },
     {
-      "name": "inline",
-      "attributes": {},
-      "children": [
+      "byline": [
         {
-          "name": "text",
-          "attributes": {
-            "value": " | "
-          },
-          "children": []
+          "name": "inline",
+          "attributes": {},
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": " | "
+              },
+              "children": []
+            }
+          ]
         }
       ]
     },
     {
-      "name": "author",
-      "attributes": {
-        "slug": "mike-atherton"
-      },
-      "children": [
+      "byline": [
         {
-          "name": "text",
+          "name": "author",
           "attributes": {
-            "value": "Mike Atherton"
+            "slug": "mike-atherton"
           },
-          "children": []
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": "Mike Atherton"
+              },
+              "children": []
+            }
+          ]
         }
       ]
     },
     {
-      "name": "inline",
-      "attributes": {},
-      "children": [
+      "byline": [
         {
-          "name": "text",
-          "attributes": {
-            "value": " | "
-          },
-          "children": []
+          "name": "inline",
+          "attributes": {},
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": " | "
+              },
+              "children": []
+            }
+          ]
         }
       ]
     },
     {
-      "name": "author",
-      "attributes": {
-        "slug": "alexandra-frean"
-      },
-      "children": [
+      "byline": [
         {
-          "name": "text",
+          "name": "author",
           "attributes": {
-            "value": "Alexandra Frean"
+            "slug": "alexandra-frean"
           },
-          "children": []
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": "Alexandra Frean"
+              },
+              "children": []
+            }
+          ]
         }
       ]
     }
   ],
   "multipleAuthorsSpaceSeparated": [
     {
-      "name": "author",
-      "attributes": {
-        "slug": "camilla-long"
-      },
-      "children": [
+      "byline": [
         {
-          "name": "text",
+          "name": "author",
           "attributes": {
-            "value": "Camilla Long"
+            "slug": "camilla-long"
           },
-          "children": []
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": "Camilla Long"
+              },
+              "children": []
+            }
+          ]
         }
       ]
     },
     {
-      "name": "inline",
-      "attributes": {},
-      "children": [
+      "byline": [
         {
-          "name": "text",
-          "attributes": {
-            "value": " "
-          },
-          "children": []
+          "name": "inline",
+          "attributes": {},
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": " "
+              },
+              "children": []
+            }
+          ]
         }
       ]
     },
     {
-      "name": "author",
-      "attributes": {
-        "slug": "mike-atherton"
-      },
-      "children": [
+      "byline": [
         {
-          "name": "text",
+          "name": "author",
           "attributes": {
-            "value": "Mike Atherton"
+            "slug": "mike-atherton"
           },
-          "children": []
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": "Mike Atherton"
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "inline",
+          "attributes": {},
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": " "
+              },
+              "children": []
+            }
+          ]
         }
       ]
     },
     {
-      "name": "inline",
-      "attributes": {},
-      "children": [
+      "byline": [
         {
-          "name": "text",
+          "name": "author",
           "attributes": {
-            "value": " "
+            "slug": "alexandra-frean"
           },
-          "children": []
-        }
-      ]
-    },
-    {
-      "name": "author",
-      "attributes": {
-        "slug": "alexandra-frean"
-      },
-      "children": [
-        {
-          "name": "text",
-          "attributes": {
-            "value": "Alexandra Frean"
-          },
-          "children": []
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": "Alexandra Frean"
+              },
+              "children": []
+            }
+          ]
         }
       ]
     }
   ],
   "veryLongByline": [
     {
-      "name": "author",
-      "attributes": {
-        "slug": "camilla-long"
-      },
-      "children": [
+      "byline": [
         {
-          "name": "text",
+          "name": "author",
           "attributes": {
-            "value": "Camilla Long"
+            "slug": "camilla-long"
           },
-          "children": []
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": "Camilla Long"
+              },
+              "children": []
+            }
+          ]
         }
       ]
     },
     {
-      "name": "inline",
-      "attributes": {},
-      "children": [
+      "byline": [
         {
-          "name": "text",
-          "attributes": {
-            "value": ", Environment Editor | "
-          },
-          "children": []
+          "name": "inline",
+          "attributes": {},
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": ", Environment Editor | "
+              },
+              "children": []
+            }
+          ]
         }
       ]
     },
     {
-      "name": "author",
-      "attributes": {
-        "slug": "camilla-long"
-      },
-      "children": [
+      "byline": [
         {
-          "name": "text",
+          "name": "author",
           "attributes": {
-            "value": "Camilla Long"
+            "slug": "camilla-long"
           },
-          "children": []
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": "Camilla Long"
+              },
+              "children": []
+            }
+          ]
         }
       ]
     },
     {
-      "name": "inline",
-      "attributes": {},
-      "children": [
+      "byline": [
         {
-          "name": "text",
-          "attributes": {
-            "value": ", Environment Editor | "
-          },
-          "children": []
+          "name": "inline",
+          "attributes": {},
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": ", Environment Editor | "
+              },
+              "children": []
+            }
+          ]
         }
       ]
     },
     {
-      "name": "author",
-      "attributes": {
-        "slug": "camilla-long"
-      },
-      "children": [
+      "byline": [
         {
-          "name": "text",
+          "name": "author",
           "attributes": {
-            "value": "Camilla Long"
+            "slug": "camilla-long"
           },
-          "children": []
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": "Camilla Long"
+              },
+              "children": []
+            }
+          ]
         }
       ]
     },
     {
-      "name": "inline",
-      "attributes": {},
-      "children": [
+      "byline": [
         {
-          "name": "text",
-          "attributes": {
-            "value": ", Environment Editor"
-          },
-          "children": []
+          "name": "inline",
+          "attributes": {},
+          "children": [
+            {
+              "name": "text",
+              "attributes": {
+                "value": ", Environment Editor"
+              },
+              "children": []
+            }
+          ]
         }
       ]
     }

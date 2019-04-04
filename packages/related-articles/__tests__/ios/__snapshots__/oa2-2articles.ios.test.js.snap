@@ -134,14 +134,50 @@ Array [
       "attrs": Object {
         "articles": Array [
           Object {
-            "byline": "Sathnam Sanghera",
+            "bylines": Array [
+              Object {
+                "byline": Array [
+                  Object {
+                    "attributes": Object {},
+                    "children": Array [
+                      Object {
+                        "attributes": Object {
+                          "value": "Sathnam Sanghera",
+                        },
+                        "children": Array [],
+                        "name": "text",
+                      },
+                    ],
+                    "name": "inline",
+                  },
+                ],
+              },
+            ],
             "headline": "First Short Headline",
             "id": "a88b0330-d14c-11e7-b1ec-8503a5941b97",
             "publishedTime": "2015-03-13T18:54:58.000Z",
             "role": "opinion-one-and-two",
           },
           Object {
-            "byline": "Deborah Haynes",
+            "bylines": Array [
+              Object {
+                "byline": Array [
+                  Object {
+                    "attributes": Object {},
+                    "children": Array [
+                      Object {
+                        "attributes": Object {
+                          "value": "Deborah Haynes",
+                        },
+                        "children": Array [],
+                        "name": "text",
+                      },
+                    ],
+                    "name": "inline",
+                  },
+                ],
+              },
+            ],
             "headline": "Second Short Headline",
             "id": "e121aac6-d15d-11e7-b1ec-8503a5941b97",
             "publishedTime": "2018-01-17T12:00:00.000Z",

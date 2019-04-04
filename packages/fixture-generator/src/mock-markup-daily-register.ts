@@ -189,7 +189,6 @@ const markupTypes: Markup = {
   },
   birthdaysToday: {
     title: "Birthdays today",
-    byline: [],
     content: [
       {
         name: "paragraph",

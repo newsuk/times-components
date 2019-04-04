@@ -18,7 +18,7 @@ const findComponents = (testInstance, componentName) =>
   });
 
 const emptyArticle = {
-  byline: null,
+  bylines: null,
   expirableFlags: null,
   hasVideo: null,
   label: null,
@@ -160,7 +160,7 @@ const negativeTests = [
           {...articleProps}
           adConfig={adConfig}
           analyticsStream={() => {}}
-          article={articleFixture({ ...testFixture, byline: null })}
+          article={articleFixture({ ...testFixture, bylines: null })}
           onAuthorPress={() => {}}
           onCommentGuidelinesPress={() => {}}
           onCommentsPress={() => {}}

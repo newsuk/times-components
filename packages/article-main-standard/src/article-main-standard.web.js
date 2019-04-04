@@ -28,7 +28,7 @@ class ArticlePage extends Component {
   renderHeader(parentProps) {
     const { article } = this.props;
     const {
-      byline,
+      bylines,
       hasVideo,
       headline,
       expirableFlags,
@@ -52,7 +52,7 @@ class ArticlePage extends Component {
         </HeaderContainer>
         <MetaContainer>
           <ArticleMeta
-            byline={byline}
+            bylines={bylines}
             publicationName={publicationName}
             publishedTime={publishedTime}
           />

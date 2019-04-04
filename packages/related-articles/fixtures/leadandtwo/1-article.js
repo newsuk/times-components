@@ -126,19 +126,23 @@ export default ({
     relatedArticleSlice: {
       lead: {
         article: {
-          byline: [
+          bylines: [
             {
-              attributes: {},
-              children: [
+              byline: [
                 {
-                  attributes: {
-                    value: "Deborah Haynes"
-                  },
-                  children: [],
-                  name: "text"
+                  attributes: {},
+                  children: [
+                    {
+                      attributes: {
+                        value: "Deborah Haynes"
+                      },
+                      children: [],
+                      name: "text"
+                    }
+                  ],
+                  name: "inline"
                 }
-              ],
-              name: "inline"
+              ]
             }
           ],
           headline,

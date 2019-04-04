@@ -936,7 +936,12 @@ exports[`8. tile h 1`] = `
         <span
           className="S7"
         >
-          Libby Purves
+          Richard Lloyd Parry
+        </span>
+        <span
+          className="S7"
+        >
+          , Hanoi
         </span>
       </div>
     </div>
@@ -1711,6 +1716,11 @@ exports[`16. tile p 1`] = `
 }
 
 .IS6 {
+  color: rgba(133,0,41,1.00);
+  line-height: 12px;
+}
+
+.IS7 {
   -webkit-align-items: center;
   align-items: center;
   padding-top: 10px;
@@ -1718,7 +1728,7 @@ exports[`16. tile p 1`] = `
   -webkit-box-align: center;
 }
 
-.IS7 {
+.IS8 {
   -webkit-align-items: center;
   align-items: center;
   padding-top: 20px;
@@ -1732,7 +1742,7 @@ exports[`16. tile p 1`] = `
   url="/article/123"
 >
   <div
-    className="IS7 S1"
+    className="IS8 S1"
   >
     <div
       className="IS1 S1"
@@ -1743,7 +1753,7 @@ exports[`16. tile p 1`] = `
       />
     </div>
     <div
-      className="IS6 S1"
+      className="IS7 S1"
     >
       <div
         className="S1"
@@ -1788,7 +1798,12 @@ exports[`16. tile p 1`] = `
         <span
           className="IS5 S6"
         >
-          Libby Purves
+          Richard Lloyd Parry
+        </span>
+        <span
+          className="IS6 S6"
+        >
+          , Hanoi
         </span>
       </div>
     </div>
@@ -3091,7 +3106,12 @@ exports[`28. tile ab 1`] = `
         <span
           className="S7"
         >
-          Libby Purves
+          Richard Lloyd Parry
+        </span>
+        <span
+          className="S7"
+        >
+          , Hanoi
         </span>
       </div>
     </div>

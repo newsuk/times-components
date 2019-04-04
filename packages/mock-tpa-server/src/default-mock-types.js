@@ -1,5 +1,8 @@
 const defaultMockTypes = {
   Article: { __typename: "Article" },
+  ArticleByline: {
+    __typename: "TextByline"
+  },
   ArticleSlice: {
     __typename: "StandardSlice"
   },

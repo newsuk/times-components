@@ -288,7 +288,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 Object {
                   "article": Object {
                     "__typename": "Article",
-                    "byline": Array [],
+                    "bylines": Array [],
                     "hasVideo": false,
                     "headline": "RA Headline",
                     "id": "ra-1",
@@ -372,7 +372,7 @@ exports[`2. an article with no content 1`] = `
                 Object {
                   "article": Object {
                     "__typename": "Article",
-                    "byline": Array [],
+                    "bylines": Array [],
                     "hasVideo": false,
                     "headline": "RA Headline",
                     "id": "ra-1",

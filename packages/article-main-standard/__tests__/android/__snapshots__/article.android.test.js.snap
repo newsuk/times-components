@@ -57,17 +57,21 @@ exports[`1. an article 1`] = `
             ast={
               Array [
                 Object {
-                  "attributes": Object {},
-                  "children": Array [
+                  "byline": Array [
                     Object {
-                      "attributes": Object {
-                        "value": "Some byline",
-                      },
-                      "children": Array [],
-                      "name": "text",
+                      "attributes": Object {},
+                      "children": Array [
+                        Object {
+                          "attributes": Object {
+                            "value": "Some byline",
+                          },
+                          "children": Array [],
+                          "name": "text",
+                        },
+                      ],
+                      "name": "inline",
                     },
                   ],
-                  "name": "inline",
                 },
               ]
             }

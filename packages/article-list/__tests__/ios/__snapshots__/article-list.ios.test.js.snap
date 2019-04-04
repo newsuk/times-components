@@ -61,17 +61,21 @@ exports[`1. article list 1`] = `
                     Object {
                       "ast": Array [
                         Object {
-                          "attributes": Object {},
-                          "children": Array [
+                          "byline": Array [
                             Object {
-                              "attributes": Object {
-                                "value": "Byline 2",
-                              },
-                              "children": Array [],
-                              "name": "text",
+                              "attributes": Object {},
+                              "children": Array [
+                                Object {
+                                  "attributes": Object {
+                                    "value": "Byline 2",
+                                  },
+                                  "children": Array [],
+                                  "name": "text",
+                                },
+                              ],
+                              "name": "paragraph",
                             },
                           ],
-                          "name": "paragraph",
                         },
                       ],
                       "color": "#1D1D1B",
@@ -327,19 +331,23 @@ Array [
         "url": "https://article1.io",
       },
       Object {
-        "byline": Array [
+        "bylines": Array [
           Object {
-            "attributes": Object {},
-            "children": Array [
+            "byline": Array [
               Object {
-                "attributes": Object {
-                  "value": "Byline 2",
-                },
-                "children": Array [],
-                "name": "text",
+                "attributes": Object {},
+                "children": Array [
+                  Object {
+                    "attributes": Object {
+                      "value": "Byline 2",
+                    },
+                    "children": Array [],
+                    "name": "text",
+                  },
+                ],
+                "name": "paragraph",
               },
             ],
-            "name": "paragraph",
           },
         ],
         "hasVideo": false,

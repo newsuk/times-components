@@ -101,9 +101,6 @@ exports[`6. with multiple authors separated by spaces 1`] = `
   >
     Mike Atherton
   </Text>
-  <Text>
-     
-  </Text>
   <Text
     accessibilityRole="link"
   >

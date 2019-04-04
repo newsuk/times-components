@@ -7,7 +7,7 @@ import { adConfig } from "./ad-mock";
 import articleSkeletonProps from "./shared-article-skeleton-props";
 
 const emptyArticle = {
-  byline: null,
+  bylines: null,
   flags: null,
   label: null,
   leadAsset: null,

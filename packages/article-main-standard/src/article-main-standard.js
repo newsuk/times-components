@@ -31,7 +31,7 @@ class ArticlePage extends Component {
   renderHeader(parentProps) {
     const { article, onAuthorPress, onImagePress, onVideoPress } = this.props;
     const {
-      byline,
+      bylines,
       expirableFlags,
       hasVideo,
       headline,
@@ -72,7 +72,7 @@ class ArticlePage extends Component {
                 standfirst={standfirst}
               />
               <ArticleMeta
-                byline={byline}
+                bylines={bylines}
                 isTablet={isTablet}
                 onAuthorPress={onAuthorPress}
                 publicationName={publicationName}

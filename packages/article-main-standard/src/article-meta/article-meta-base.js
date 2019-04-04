@@ -12,7 +12,7 @@ const ArticleMetaRow = (textStyle, component, key, RowWrapper) => (
 );
 
 const ArticleMetaBase = ({
-  byline,
+  bylines,
   publicationName,
   publishedTime,
   RowWrapper,
@@ -27,11 +27,11 @@ const ArticleMetaBase = ({
     )
   ];
 
-  if (byline && byline.length > 0) {
+  if (bylines && bylines.length > 0) {
     return [
       ArticleMetaRow(
         styles.byline,
-        <ArticleBylineWithLinks ast={byline} onAuthorPress={onAuthorPress} />,
+        <ArticleBylineWithLinks ast={bylines} onAuthorPress={onAuthorPress} />,
         "articleByline",
         RowWrapper
       ),
@@ -56,14 +56,14 @@ const nodeShape = {
 };
 
 ArticleMetaBase.propTypes = {
-  byline: PropTypes.arrayOf(PropTypes.shape(nodeShape)),
+  bylines: PropTypes.arrayOf(PropTypes.shape(nodeShape)),
   onAuthorPress: PropTypes.func,
   publicationName: PropTypes.string,
   publishedTime: PropTypes.string
 };
 
 ArticleMetaBase.defaultProps = {
-  byline: [],
+  bylines: [],
   publicationName: null,
   publishedTime: null,
   RowWrapper: View
