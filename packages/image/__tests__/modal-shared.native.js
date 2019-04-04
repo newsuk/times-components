@@ -114,6 +114,18 @@ export default () => {
 
         expect(modal.props.visible).toBe(false);
       }
+    },
+    {
+      name: "image with onImagePress prop should not have Modal",
+      test: () => {
+        const onImagePress = () => {};
+        const propWithImagePress = { ...props, onImagePress };
+        const testInstance = TestRenderer.create(
+          <ModalImage {...propWithImagePress} />
+        );
+
+        expect(testInstance.root.findAllByType(Modal).length).toBe(0);
+      }
     }
   ];
 

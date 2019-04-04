@@ -96,17 +96,6 @@ exports[`card with default layout 1`] = `
 }
 
 .IS1 {
-  align-items: center;
-  bottom: 0;
-  justify-content: center;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 0;
-}
-
-.IS2 {
   display: table;
   height: 0;
   overflow: hidden;
@@ -126,6 +115,7 @@ exports[`card with default layout 1`] = `
       fadeImageIn={false}
       highResSize={100}
       lowResSize={50}
+      onImagePress={null}
       uri="https://img.io/img"
     />
   </div>

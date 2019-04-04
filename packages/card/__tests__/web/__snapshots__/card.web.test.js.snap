@@ -8,6 +8,7 @@ exports[`1. card default state 1`] = `
       fadeImageIn={false}
       highResSize={360}
       lowResSize={50}
+      onImagePress={null}
       uri="https://img.io/img"
     />
   </div>
@@ -27,6 +28,7 @@ exports[`2. pass an empty state to the image component 1`] = `
       fadeImageIn={false}
       highResSize={360}
       lowResSize={50}
+      onImagePress={null}
       uri={null}
     />
   </div>
@@ -56,6 +58,7 @@ exports[`4. pass an empty state to the image component when the uri is null 1`] 
       fadeImageIn={false}
       highResSize={360}
       lowResSize={50}
+      onImagePress={null}
       uri={null}
     />
   </div>
@@ -80,6 +83,7 @@ exports[`5. card with reversed layout 1`] = `
       fadeImageIn={false}
       highResSize={360}
       lowResSize={50}
+      onImagePress={null}
       uri="https://img.io/img"
     />
   </div>
@@ -106,6 +110,7 @@ exports[`7. card with a loading state 1`] = `
           fadeImageIn={false}
           highResSize={360}
           lowResSize={50}
+          onImagePress={null}
           uri="https://img.io/img"
         />
       </div>
@@ -181,6 +186,7 @@ exports[`9. card with reversed loading state 1`] = `
           fadeImageIn={false}
           highResSize={360}
           lowResSize={50}
+          onImagePress={null}
           uri="https://img.io/img"
         />
       </div>

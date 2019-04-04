@@ -199,6 +199,7 @@ export default [
       brightcoveVideoId: "5831024132001",
       caption: "This is video caption",
       display: "primary",
+      imageIndex: 1,
       paidOnly: "false",
       posterImageId: "0c0309d4-1aeb-11e8-9010-1eef6ba5d3de",
       posterImageUrl: "http://placekitten.com/1000/1000"
@@ -233,6 +234,7 @@ export default [
       brightcoveVideoId: "5831024132001",
       caption: "This is video caption secondary",
       display: "secondary",
+      imageIndex: 2,
       paidOnly: "false",
       posterImageUrl: "http://placekitten.com/500/500"
     },
@@ -244,6 +246,7 @@ export default [
       caption: "All the latest stories in culture and books.",
       credits: "The credits",
       display: "primary",
+      imageIndex: 3,
       ratio: "1500:1000",
       url: "http://image.io"
     },
@@ -298,6 +301,7 @@ export default [
       caption: "All the latest stories in culture and books.",
       credits: "The credits",
       display: "secondary",
+      imageIndex: 4,
       ratio: "3:2",
       url: "https://image.io"
     },
@@ -342,6 +346,7 @@ export default [
       caption: "All the latest stories in culture and books.",
       credits: "The credits",
       display: "inline",
+      imageIndex: 5,
       ratio: "1:1.50",
       url:
         "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fdb30ed6a-be62-11e7-b58a-4186f6049f2e.jpg?crop=384%2C576%2C0%2C0"
@@ -368,6 +373,7 @@ export default [
       caption: "All the latest stories in culture and books.",
       credits: "The credits",
       display: "inline",
+      imageIndex: 6,
       ratio: "3:2",
       url:
         "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F3ac674bc-beb2-11e7-8bb9-94e1372175c0.jpg?crop=5576%2C3717%2C0%2C0"

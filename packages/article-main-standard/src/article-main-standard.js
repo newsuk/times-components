@@ -29,7 +29,7 @@ class ArticlePage extends Component {
   }
 
   renderHeader(parentProps) {
-    const { article, onAuthorPress, onVideoPress } = this.props;
+    const { article, onAuthorPress, onImagePress, onVideoPress } = this.props;
     const {
       byline,
       expirableFlags,
@@ -51,6 +51,7 @@ class ArticlePage extends Component {
               <ArticleLeadAsset
                 {...getLeadAsset(article)}
                 getImageCrop={getStandardTemplateCrop}
+                onImagePress={onImagePress}
                 onVideoPress={onVideoPress}
                 renderCaption={({ caption }) =>
                   isTablet && <Caption {...caption} />
@@ -115,6 +116,7 @@ class ArticlePage extends Component {
       onAuthorPress,
       onCommentGuidelinesPress,
       onCommentsPress,
+      onImagePress,
       onLinkPress,
       onRelatedArticlePress,
       onTopicPress,
@@ -135,6 +137,7 @@ class ArticlePage extends Component {
         onAuthorPress={onAuthorPress}
         onCommentGuidelinesPress={onCommentGuidelinesPress}
         onCommentsPress={onCommentsPress}
+        onImagePress={onImagePress}
         onLinkPress={onLinkPress}
         onRelatedArticlePress={onRelatedArticlePress}
         onTopicPress={onTopicPress}
@@ -154,6 +157,7 @@ ArticlePage.propTypes = {
   onAuthorPress: PropTypes.func.isRequired,
   onCommentGuidelinesPress: PropTypes.func.isRequired,
   onCommentsPress: PropTypes.func.isRequired,
+  onImagePress: PropTypes.func,
   onLinkPress: PropTypes.func.isRequired,
   onTwitterLinkPress: PropTypes.func.isRequired,
   onVideoPress: PropTypes.func.isRequired,
@@ -163,6 +167,7 @@ ArticlePage.propTypes = {
 ArticlePage.defaultProps = {
   ...articleDefaultProps,
   interactiveConfig: {},
+  onImagePress: null,
   referralUrl: null
 };
 

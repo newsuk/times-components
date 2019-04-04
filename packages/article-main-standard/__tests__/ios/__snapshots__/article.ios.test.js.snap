@@ -13,6 +13,8 @@ exports[`1. an article 1`] = `
               text="Some Caption"
             />
           }
+          index={0}
+          onImagePress={null}
           uri="https://crop169.io"
         />
       </View>

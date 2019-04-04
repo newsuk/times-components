@@ -77,6 +77,9 @@ const renderArticle = ({
             onCommentsPress={preventDefaultedAction(decorateAction)(
               "onCommentsPress"
             )}
+            onImagePress={preventDefaultedAction(decorateAction)(
+              "onImagePress"
+            )}
             onLinkPress={preventDefaultedAction(decorateAction)("onLinkPress")}
             onRelatedArticlePress={preventDefaultedAction(decorateAction)(
               "onRelatedArticlePress"

@@ -103,9 +103,7 @@ class TimesImage extends Component {
         >
           {this.highResImage({ highResSize, lowResSize, url })}
           {this.lowResImage({ lowResSize, url })}
-          {imageIsLoaded ? null : (
-            <Placeholder dimensions={dimensions} style={styles.placeholder} />
-          )}
+          {imageIsLoaded ? null : <Placeholder dimensions={dimensions} />}
         </div>
       </View>
     );

@@ -9,6 +9,7 @@ export const propTypes = {
   fadeImageIn: PropTypes.bool,
   highResSize: PropTypes.number,
   lowResSize: PropTypes.number,
+  onImagePress: PropTypes.func,
   onLayout: PropTypes.func,
   style: ViewPropTypesStyle,
   uri: PropTypes.string
@@ -20,6 +21,7 @@ export const defaultProps = {
   fadeImageIn: false,
   highResSize: null,
   lowResSize: null,
+  onImagePress: null,
   style: {},
   uri: null
 };

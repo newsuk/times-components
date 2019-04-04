@@ -2296,7 +2296,7 @@ exports[`32. daily universal register - huge 1`] = `
         "alignItems": "center",
         "backgroundColor": "#F0F0F0",
         "flex": 1,
-        "paddingHorizontal": "25%",
+        "padding": 10,
       }
     }
   >
@@ -2321,7 +2321,6 @@ exports[`32. daily universal register - huge 1`] = `
     >
       Daily Universal Register
     </Text>
-    <TileS />
     <View
       style={
         Object {
@@ -2335,7 +2334,34 @@ exports[`32. daily universal register - huge 1`] = `
         }
       }
     />
-    <TileS />
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "paddingHorizontal": "30%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "paddingHorizontal": "5%",
+          }
+        }
+      >
+        <TileS />
+      </View>
+      <View
+        style={
+          Object {
+            "paddingHorizontal": "5%",
+          }
+        }
+      >
+        <TileS />
+      </View>
+    </View>
     <View
       style={
         Object {
@@ -2349,37 +2375,68 @@ exports[`32. daily universal register - huge 1`] = `
         }
       }
     />
-    <Image
-      style={
-        Object {
-          "height": 45,
-          "width": 60,
-        }
-      }
-    />
-    <TileS />
     <View
       style={
         Object {
-          "borderBottomColor": "#DBDBDB",
-          "borderBottomWidth": 1,
-          "borderColor": "#DBDBDB",
-          "borderStyle": "solid",
-          "marginBottom": 25,
-          "marginHorizontal": 10,
-          "width": "100%",
+          "alignItems": "center",
+          "flexDirection": "row",
+          "paddingHorizontal": "30%",
         }
       }
-    />
-    <Image
-      style={
-        Object {
-          "height": 45,
-          "width": 60,
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "column",
+          }
         }
-      }
-    />
-    <TileS />
+      >
+        <Image
+          style={
+            Object {
+              "height": 45,
+              "width": 60,
+            }
+          }
+        />
+        <View
+          style={
+            Object {
+              "paddingHorizontal": "5%",
+            }
+          }
+        >
+          <TileS />
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "column",
+          }
+        }
+      >
+        <Image
+          style={
+            Object {
+              "height": 45,
+              "width": 60,
+            }
+          }
+        />
+        <View
+          style={
+            Object {
+              "paddingHorizontal": "5%",
+            }
+          }
+        >
+          <TileS />
+        </View>
+      </View>
+    </View>
   </View>
 </View>
 `;

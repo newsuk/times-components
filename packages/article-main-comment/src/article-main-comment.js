@@ -17,7 +17,7 @@ class ArticlePage extends Component {
   }
 
   renderHeader() {
-    const { article, onAuthorPress } = this.props;
+    const { article, onAuthorPress, onImagePress } = this.props;
     const {
       bylines,
       expirableFlags,
@@ -53,6 +53,7 @@ class ArticlePage extends Component {
         headline={getHeadline(headline, shortHeadline)}
         label={label}
         onAuthorPress={onAuthorPress}
+        onImagePress={onImagePress}
         publicationName={publicationName}
         publishedTime={publishedTime}
         standfirst={standfirst}
@@ -79,6 +80,7 @@ class ArticlePage extends Component {
       onAuthorPress,
       onCommentGuidelinesPress,
       onCommentsPress,
+      onImagePress,
       onLinkPress,
       onRelatedArticlePress,
       onTopicPress,
@@ -98,6 +100,7 @@ class ArticlePage extends Component {
         onAuthorPress={onAuthorPress}
         onCommentGuidelinesPress={onCommentGuidelinesPress}
         onCommentsPress={onCommentsPress}
+        onImagePress={onImagePress}
         onLinkPress={onLinkPress}
         onRelatedArticlePress={onRelatedArticlePress}
         onTopicPress={onTopicPress}

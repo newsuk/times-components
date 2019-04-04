@@ -78,10 +78,12 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
               imageOptions={
                 Object {
                   "display": "primary",
+                  "index": 1,
                   "ratio": "1500:1000",
                   "uri": "https://image.io",
                 }
               }
+              onImagePress={null}
             />
           </View>
         </View>
@@ -99,10 +101,12 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
               imageOptions={
                 Object {
                   "display": "secondary",
+                  "index": 2,
                   "ratio": "1500:1000",
                   "uri": "https://image.io/secondary",
                 }
               }
+              onImagePress={null}
             />
           </View>
         </View>
@@ -120,10 +124,12 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
               imageOptions={
                 Object {
                   "display": "inline",
+                  "index": 3,
                   "ratio": "1500:1000",
                   "uri": "https://image.io/inline",
                 }
               }
+              onImagePress={null}
             />
           </View>
         </View>

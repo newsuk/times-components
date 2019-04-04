@@ -11,12 +11,14 @@ export const propTypes = {
     lowResSize: PropTypes.number,
     ratio: PropTypes.string,
     uri: PropTypes.string.isRequired
-  }).isRequired
+  }).isRequired,
+  onImagePress: PropTypes.func
 };
 
 export const defaultPropTypes = {
   captionOptions: {
     caption: null,
     credits: null
-  }
+  },
+  onImagePress: null
 };
