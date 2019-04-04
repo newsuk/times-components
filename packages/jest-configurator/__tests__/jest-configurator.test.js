@@ -26,9 +26,7 @@ describe("Jest Configurator Tests", () => {
 
     it("should include times-components in transform ignore patterns", () => {
       const config = jestConfigurator("android", dir);
-      expect(config.transformIgnorePatterns).toContain(
-        "node_modules/(?!(react-native|react-native-linear-gradient|react-native-iphone-x-helper|@times-components|@storybook/react-native)/)"
-      );
+      expect(config.transformIgnorePatterns).toMatchSnapshot();
     });
 
     it("should make sure the root directory is correct", () => {
