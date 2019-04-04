@@ -316,7 +316,7 @@ exports[`3. modal image with custom highressize 1`] = `
 </View>
 `;
 
-exports[`7. hides elements when tapping on the image 1`] = `
+exports[`8. hides elements when tapping on the image 1`] = `
 <View>
   <Modal
     hardwareAccelerated={false}
@@ -374,7 +374,7 @@ exports[`7. hides elements when tapping on the image 1`] = `
 </View>
 `;
 
-exports[`8. re-shows elements when tapping on the image a second time 1`] = `
+exports[`9. re-shows elements when tapping on the image a second time 1`] = `
 <View>
   <Modal
     hardwareAccelerated={false}
