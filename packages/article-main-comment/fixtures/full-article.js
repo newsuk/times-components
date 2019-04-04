@@ -2007,21 +2007,14 @@ export const testFixture = {
         }
       ],
       image: {
-        id: "36f9b2e8-0d41-464a-9e95-921bdb6895be",
         crop: {
           ratio: "1:1",
           url: "https://image.io"
-        }
+        },
+        id: "36f9b2e8-0d41-464a-9e95-921bdb6895be"
       }
     }
   ],
-  image: {
-    id: "36f9b2e8-0d41-464a-9e95-921bdb6895be",
-    crop: {
-      ratio: "1:1",
-      url: "https://image.io"
-    }
-  },
   commentCount: 65,
   commentsEnabled: true,
   content: [
@@ -2047,6 +2040,13 @@ export const testFixture = {
   ],
   hasVideo: false,
   headline: "Some Headline",
+  image: {
+    crop: {
+      ratio: "1:1",
+      url: "https://image.io"
+    },
+    id: "36f9b2e8-0d41-464a-9e95-921bdb6895be"
+  },
   label: "Some Label",
   leadAsset: {
     __typename: "Image",
