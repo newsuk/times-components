@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.51.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.50.1...@times-components/edition-slices@0.51.0) (2019-04-04)
+
+
+### Features
+
+* implement comment register L4 wide&huge ([#1851](https://github.com/newsuk/times-components/issues/1851)) ([51e11ef](https://github.com/newsuk/times-components/commit/51e11ef))
+
+
+
+
+
 ## [0.50.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.50.0...@times-components/edition-slices@0.50.1) (2019-04-03)
 
 **Note:** Version bump only for package @times-components/edition-slices

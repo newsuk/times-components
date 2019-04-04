@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.2.1](https://github.com/newsuk/times-components/compare/@times-components/image@5.2.0...@times-components/image@5.2.1) (2019-04-04)
+
+
+### Bug Fixes
+
+* Remove gradient from web background ([#1848](https://github.com/newsuk/times-components/issues/1848)) ([627803c](https://github.com/newsuk/times-components/commit/627803c))
+
+
+
+
+
 # [5.2.0](https://github.com/newsuk/times-components/compare/@times-components/image@5.1.1...@times-components/image@5.2.0) (2019-04-03)
 
 
