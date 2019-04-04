@@ -327,14 +327,6 @@ exports[`8. tile h 1`] = `
           }
         />
       </View>
-      <Text>
-        <Text>
-          Richard Lloyd Parry
-        </Text>
-        <Text>
-          , Hanoi
-        </Text>
-      </Text>
     </View>
     <View>
       <View>
@@ -649,14 +641,6 @@ exports[`16. tile p 1`] = `
           }
         />
       </View>
-      <Text>
-        <Text>
-          Richard Lloyd Parry
-        </Text>
-        <Text>
-          , Hanoi
-        </Text>
-      </Text>
     </View>
   </View>
 </Link>
@@ -1131,14 +1115,6 @@ exports[`28. tile ab 1`] = `
           }
         />
       </View>
-      <Text>
-        <Text>
-          Richard Lloyd Parry
-        </Text>
-        <Text>
-          , Hanoi
-        </Text>
-      </Text>
     </View>
     <View>
       <View>

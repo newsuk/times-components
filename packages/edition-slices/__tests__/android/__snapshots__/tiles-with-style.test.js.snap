@@ -630,34 +630,6 @@ exports[`8. tile h 1`] = `
       >
         <ArticleFlags />
       </View>
-      <Text>
-        <Text
-          style={
-            Object {
-              "color": "#333333",
-              "flexDirection": "row",
-              "fontFamily": "GillSansMTStd-Medium",
-              "fontSize": 13,
-              "lineHeight": 19,
-            }
-          }
-        >
-          Richard Lloyd Parry
-        </Text>
-        <Text
-          style={
-            Object {
-              "color": "#333333",
-              "flexDirection": "row",
-              "fontFamily": "GillSansMTStd-Medium",
-              "fontSize": 13,
-              "lineHeight": 19,
-            }
-          }
-        >
-          , Hanoi
-        </Text>
-      </Text>
     </View>
     <View
       style={
@@ -1271,36 +1243,6 @@ exports[`16. tile p 1`] = `
       >
         <ArticleFlags />
       </View>
-      <Text>
-        <Text
-          style={
-            Object {
-              "color": "#850029",
-              "flexDirection": "row",
-              "fontFamily": "GillSansMTStd-Medium",
-              "fontSize": 12,
-              "letterSpacing": 0.6,
-              "lineHeight": 12,
-            }
-          }
-        >
-          Richard Lloyd Parry
-        </Text>
-        <Text
-          style={
-            Object {
-              "color": "#850029",
-              "flexDirection": "row",
-              "fontFamily": "GillSansMTStd-Medium",
-              "fontSize": 12,
-              "letterSpacing": 0.6,
-              "lineHeight": 12,
-            }
-          }
-        >
-          , Hanoi
-        </Text>
-      </Text>
     </View>
   </View>
 </Link>
@@ -2222,34 +2164,6 @@ exports[`28. tile ab 1`] = `
       >
         <ArticleFlags />
       </View>
-      <Text>
-        <Text
-          style={
-            Object {
-              "color": "#333333",
-              "flexDirection": "row",
-              "fontFamily": "GillSansMTStd-Medium",
-              "fontSize": 13,
-              "lineHeight": 19,
-            }
-          }
-        >
-          Richard Lloyd Parry
-        </Text>
-        <Text
-          style={
-            Object {
-              "color": "#333333",
-              "flexDirection": "row",
-              "fontFamily": "GillSansMTStd-Medium",
-              "fontSize": 13,
-              "lineHeight": 19,
-            }
-          }
-        >
-          , Hanoi
-        </Text>
-      </Text>
     </View>
     <View
       style={

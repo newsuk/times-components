@@ -213,7 +213,7 @@ class MockMarkup {
     return this;
   }
 
-  addBylines(length: number = 1) {
+  addBylines() {
     this.markup = markupTypes.bylines;
     return this;
   }
