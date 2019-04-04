@@ -257,10 +257,12 @@ exports[`1. article with header 1`] = `
               imageOptions={
                 Object {
                   "display": "primary",
+                  "index": 3,
                   "ratio": "1500:1000",
                   "uri": "http://image.io",
                 }
               }
+              onImagePress={null}
             />
           </View>
         </View>
@@ -337,10 +339,12 @@ exports[`1. article with header 1`] = `
               imageOptions={
                 Object {
                   "display": "secondary",
+                  "index": 4,
                   "ratio": "3:2",
                   "uri": "https://image.io",
                 }
               }
+              onImagePress={null}
             />
           </View>
         </View>

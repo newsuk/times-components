@@ -13,6 +13,7 @@ class StorybookStubPackage : ReactPackage {
             AuthorProfileEvents(),
             ReactAnalytics(),
             ReactConfig(),
+            SectionEvents(),
             TopicEvents()
     )
 

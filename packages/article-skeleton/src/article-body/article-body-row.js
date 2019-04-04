@@ -23,6 +23,7 @@ const styles = styleFactory();
 const ArticleRow = ({
   content: { data, index },
   interactiveConfig,
+  onImagePress,
   onLinkPress,
   onTwitterLinkPress,
   onVideoPress
@@ -41,7 +42,7 @@ const ArticleRow = ({
         )
       };
     },
-    image(key, { display, ratio, url, caption, credits }) {
+    image(key, { display, ratio, url, imageIndex, caption, credits }) {
       return {
         element: (
           <View key={key}>
@@ -52,9 +53,11 @@ const ArticleRow = ({
               }}
               imageOptions={{
                 display,
+                index: imageIndex,
                 ratio,
                 uri: url
               }}
+              onImagePress={onImagePress}
             />
           </View>
         )
@@ -220,9 +223,14 @@ ArticleRow.propTypes = {
     index: PropTypes.number
   }).isRequired,
   interactiveConfig: PropTypes.shape({}).isRequired,
+  onImagePress: PropTypes.func,
   onLinkPress: PropTypes.func.isRequired,
   onTwitterLinkPress: PropTypes.func.isRequired,
   onVideoPress: PropTypes.func.isRequired
+};
+
+ArticleRow.defaultProps = {
+  onImagePress: null
 };
 
 export default ArticleRow;

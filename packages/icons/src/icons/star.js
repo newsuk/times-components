@@ -1,34 +1,33 @@
 import React from "react";
 import { colours } from "@times-components/styleguide";
-import Svg, { Polygon } from "@times-components/svgs";
+import Svg, { Path } from "@times-components/svgs";
 import { clean } from "@times-components/utils";
 import propTypes from "./prop-types";
-
-const viewBox =
-  "12.756953239440918 11.182208061218262 17.48609161376953 17.630264282226562";
 
 const IconStar = ({
   fillColour,
   height,
+  opacity,
   strokeColour,
-  title = "Star Icon",
+  title = "Save star",
   width
 }) => (
   <Svg
     role="img"
-    viewBox={viewBox}
+    viewBox="0 0 20 20"
     {...clean({
       height,
       title,
       width: width || height
     })}
   >
-    <Polygon
+    <Path
       {...clean({
         fill: fillColour,
+        opacity,
         stroke: strokeColour
       })}
-      points="20.5 24.9716827 15.0965 27.8124708 16.1284766 21.7955851 11.7569533 17.5344029 17.79825 16.6565511 20.5 11.1822077 23.20175 16.6565511 29.2430467 17.5344029 24.8715234 21.7955851 25.9035 27.8124708"
+      d="M16.0321915,18.681086 L13.9014848,12.1628241 L19.4524784,8.14270857 L12.6019503,8.15770268 L10.5,1.63105093 L8.39804966,8.15770268 L1.54752164,8.14270857 L7.09851524,12.1628241 L4.96780845,18.681086 L10.5,14.6375865 L16.0321915,18.681086 Z"
     />
   </Svg>
 );
@@ -36,7 +35,7 @@ const IconStar = ({
 IconStar.propTypes = propTypes;
 
 IconStar.defaultProps = {
-  fillColour: colours.functional.brandColour
+  fillColour: colours.functional.action
 };
 
 export default IconStar;

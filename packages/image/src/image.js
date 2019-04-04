@@ -71,6 +71,8 @@ class TimesImage extends Component {
       borderRadius,
       highResSize,
       lowResSize,
+      index,
+      onImagePress,
       style,
       uri
     } = this.props;
@@ -81,6 +83,7 @@ class TimesImage extends Component {
     return (
       <View
         aspectRatio={aspectRatio}
+        onImagePress={() => onImagePress(index)}
         onLayout={this.onImageLayout}
         style={[styles.imageContainer, style]}
       >

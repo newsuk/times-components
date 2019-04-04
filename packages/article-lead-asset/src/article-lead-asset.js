@@ -9,15 +9,19 @@ import {
 } from "./article-lead-asset-prop-types";
 import getRatio from "./get-ratio";
 
-const ArticleLeadAssetModalImage = ({ aspectRatio, caption, uri }) => (
-  <ModalImage {...{ aspectRatio, caption, uri }} />
-);
+const ArticleLeadAssetModalImage = ({
+  aspectRatio,
+  caption,
+  onImagePress,
+  uri
+}) => <ModalImage {...{ aspectRatio, caption, onImagePress, uri }} index={0} />;
 
 const ArticleLeadAsset = ({
   getImageCrop,
   renderCaption,
   isVideo,
   leadAsset,
+  onImagePress,
   onVideoPress,
   width,
   style
@@ -47,6 +51,7 @@ const ArticleLeadAsset = ({
         aspectRatio={getRatio(crop.ratio)}
         caption={<Caption {...caption} />}
         leadAsset={leadAsset}
+        onImagePress={onImagePress}
         onVideoPress={onVideoPress}
         uri={crop.url}
         width={width}

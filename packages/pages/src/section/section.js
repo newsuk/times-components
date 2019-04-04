@@ -26,6 +26,7 @@ class SectionPage extends Component {
       savedArticles: null
     };
     this.onAppStateChange = this.onAppStateChange.bind(this);
+    this.toggleArticleSaveStatus = this.toggleArticleSaveStatus.bind(this);
   }
 
   componentDidMount() {
@@ -69,6 +70,12 @@ class SectionPage extends Component {
     }
   }
 
+  toggleArticleSaveStatus(save, articleId) {
+    const { savedArticles } = this.state;
+    savedArticles[articleId] = save || undefined;
+    this.setState({ savedArticles });
+  }
+
   render() {
     const { publicationName, section } = this.props;
     const { recentlyOpenedPuzzleCount, savedArticles } = this.state;
@@ -77,11 +84,13 @@ class SectionPage extends Component {
       <SectionContext.Provider
         value={{
           onArticleSavePress: onArticleSavePress
-            ? (save, articleId) =>
-                onArticleSavePress(save, articleId).then(() => {
-                  savedArticles[articleId] = save || undefined;
-                  this.setState({ savedArticles });
-                })
+            ? (save, articleId) => {
+                this.toggleArticleSaveStatus(save, articleId);
+
+                onArticleSavePress(save, articleId).catch(() => {
+                  this.toggleArticleSaveStatus(!save, articleId);
+                });
+              }
             : null,
           publicationName,
           recentlyOpenedPuzzleCount,
