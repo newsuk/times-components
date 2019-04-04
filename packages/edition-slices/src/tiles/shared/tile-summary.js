@@ -6,7 +6,6 @@ import ArticleSummary, {
   ArticleSummaryHeadline,
   ArticleSummaryStrapline
 } from "@times-components/article-summary";
-import { SectionContext } from "@times-components/context";
 import { ArticleFlags } from "@times-components/article-flag";
 import { colours } from "@times-components/styleguide";
 import TileStar from "./tile-star";
@@ -46,16 +45,9 @@ class TileSummary extends Component {
       <View style={tileStyle.flagStyle}>
         <ArticleFlags {...flagColour} flags={expirableFlags} />
       </View>
-      <SectionContext.Provider
-        value={{
-          onArticleSavePress,
-          savedArticles
-        }}
-      >
         <View style={tileStyle.starButton}>
           <TileStar articleId="1" />
         </View>
-      </SectionContext.Provider>
     </View>
     );
   }

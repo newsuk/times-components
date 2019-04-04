@@ -46,13 +46,19 @@ const publications = {
   ST: "SUNDAYTIMES",
   TIMES: "TIMES"
 };
+
+const onArticleSavePress = {onArticleSavePressNotPresent: null, onArticleSavePressPresent: () => {}};
+const savedArticles = {savedArticlesNotPresent: null, savedArticlesPresent: {1: true, 2: true}};
+
 /* eslint-disable react/prop-types */
 const renderSlice = (Component, data) => ({ select }, { decorateAction }) => (
   <Responsive>
     <ScrollView>
       <SectionContext.Provider
         value={{
-          publicationName: select("Publication:", publications, "TIMES")
+          publicationName: select("Publication:", publications, "TIMES"),
+          onArticleSavePress: select("onArticleSavePress:", onArticleSavePress, null),
+          savedArticles: select("savedArticles:", savedArticles, null)
         }}
       >
         <Component

@@ -23,17 +23,10 @@ const TileQ = ({ onPress, tile }) => {
         style={styles.imageContainer}
         uri={getTileImageUri(tile, "crop32")}
       />
-      <SectionContext.Provider
-        value={{
-          onArticleSavePress,
-          savedArticles
-        }}
-      >
-        <View style={styles.starButton}>
-          <TileStar articleId="1" />
-        </View>
-      </SectionContext.Provider>
+      <View style={styles.starButton}>
+        <TileStar articleId="1" />
       </View>
+    </View>
   </TileLink>
 )};
 
