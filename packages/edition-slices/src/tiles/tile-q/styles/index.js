@@ -10,8 +10,8 @@ const styles = {
     width: "100%"
   },
   starButton: {
-    textAlign: "center",
-    marginTop: 10
+    marginTop: 10,
+    textAlign: "center"
   }
 };
 

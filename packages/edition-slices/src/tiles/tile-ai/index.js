@@ -10,11 +10,7 @@ import {
 } from "../shared";
 import styles from "./styles";
 
-const TileAI = ({ onPress, tile }) => {
-  const onArticleSavePress = () => {};
-  const savedArticles = [{1: true}];
-
-  return (
+const TileAI = ({ onPress, tile }) => (
   <TileLink onPress={onPress} tile={tile}>
     <View style={styles.container}>
       <TileImage
@@ -23,11 +19,11 @@ const TileAI = ({ onPress, tile }) => {
         uri={getTileImageUri(tile, "crop32")}
       />
       <View style={styles.starButton}>
-        <TileStar articleId="1" />
+        <TileStar articleId={tile.articleId} />
       </View>
     </View>
   </TileLink>
-)};
+);
 
 TileAI.propTypes = {
   onPress: PropTypes.func.isRequired,

@@ -47,8 +47,14 @@ const publications = {
   TIMES: "TIMES"
 };
 
-const onArticleSavePress = {onArticleSavePressNotPresent: null, onArticleSavePressPresent: () => {}};
-const savedArticles = {savedArticlesNotPresent: null, savedArticlesPresent: {1: true, 2: true}};
+const onArticleSavePress = {
+  onArticleSavePressNotPresent: null,
+  onArticleSavePressPresent: () => {}
+};
+const savedArticles = {
+  savedArticlesNotPresent: null,
+  savedArticlesPresent: { 1: true, 2: true }
+};
 
 /* eslint-disable react/prop-types */
 const renderSlice = (Component, data) => ({ select }, { decorateAction }) => (
@@ -56,8 +62,12 @@ const renderSlice = (Component, data) => ({ select }, { decorateAction }) => (
     <ScrollView>
       <SectionContext.Provider
         value={{
+          onArticleSavePress: select(
+            "onArticleSavePress:",
+            onArticleSavePress,
+            null
+          ),
           publicationName: select("Publication:", publications, "TIMES"),
-          onArticleSavePress: select("onArticleSavePress:", onArticleSavePress, null),
           savedArticles: select("savedArticles:", savedArticles, null)
         }}
       >

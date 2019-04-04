@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
 import ArticleSummary, {
@@ -29,26 +29,24 @@ class TileSummary extends Component {
   renderFlags() {
     const {
       tile: {
-        article: { expirableFlags,  articleId}
+        article: { expirableFlags },
+        articleId
       },
       flagColour,
       starStyle
     } = this.props;
 
-    const onArticleSavePress = () => {};
-    const savedArticles = [{1: true}];
-
-    const tileStyle = starStyle ? starStyle : horizontalStyles;
+    const tileStyle = starStyle || horizontalStyles;
 
     return (
-    <View style={tileStyle.container}>
-      <View style={tileStyle.flagStyle}>
-        <ArticleFlags {...flagColour} flags={expirableFlags} />
-      </View>
-        <View style={tileStyle.starButton}>
-          <TileStar articleId="1" />
+      <View style={tileStyle.container}>
+        <View style={tileStyle.flagStyle}>
+          <ArticleFlags {...flagColour} flags={expirableFlags} />
         </View>
-    </View>
+        <View style={tileStyle.starButton}>
+          <TileStar articleId={articleId} />
+        </View>
+      </View>
     );
   }
 
@@ -85,7 +83,6 @@ class TileSummary extends Component {
       bylines,
       bylineStyle,
       strapline,
-      starStyle,
       style,
       summary,
       labelColour
