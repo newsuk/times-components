@@ -142,6 +142,35 @@ export default () => {
 
         expect(testInstance.root.findAllByType(Modal).length).toBe(0);
       }
+    },
+    {
+      name: "hides elements when tapping on the image",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <ModalImage {...props} show />
+        );
+
+        const gestureController = testInstance.root.findByType(Gestures);
+
+        gestureController.props.onPress();
+
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "re-shows elements when tapping on the image a second time",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <ModalImage {...props} show />
+        );
+
+        const gestureController = testInstance.root.findByType(Gestures);
+
+        gestureController.props.onPress();
+        gestureController.props.onPress();
+
+        expect(testInstance).toMatchSnapshot();
+      }
     }
   ];
 

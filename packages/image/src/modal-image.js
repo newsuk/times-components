@@ -14,12 +14,14 @@ class ModalImage extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      elementsVisible: true,
       lowResImageWidth: null,
       showModal: props.show || false
     };
     this.hideModal = this.hideModal.bind(this);
     this.showModal = this.showModal.bind(this);
     this.onLowResLayout = this.onLowResLayout.bind(this);
+    this.toggleElements = this.toggleElements.bind(this);
   }
 
   onLowResLayout({ width }) {
@@ -32,6 +34,12 @@ class ModalImage extends Component {
 
   showModal() {
     this.setState({ showModal: true });
+  }
+
+  toggleElements() {
+    this.setState(({ elementsVisible }) => ({
+      elementsVisible: !elementsVisible
+    }));
   }
 
   renderCaption({ isTablet }) {
@@ -50,7 +58,7 @@ class ModalImage extends Component {
     if (onImagePress) {
       return <Image {...this.props} />;
     }
-    const { showModal, lowResImageWidth } = this.state;
+    const { showModal, lowResImageWidth, elementsVisible } = this.state;
     const lowResSize = highResSize || lowResImageWidth;
 
     return (
@@ -78,13 +86,16 @@ class ModalImage extends Component {
                     isTablet && styles.buttonContainerTablet
                   ]}
                 >
-                  <CloseButton isTablet={isTablet} onPress={this.hideModal} />
+                  {elementsVisible ? (
+                    <CloseButton isTablet={isTablet} onPress={this.hideModal} />
+                  ) : null}
                 </View>
                 <SafeAreaView
                   forceInset={{ horizontal: "always", vertical: "always" }}
                   style={styles.middleSafeView}
                 >
                   <Gestures
+                    onPress={this.toggleElements}
                     onSwipeDown={this.hideModal}
                     style={styles.gestureContainer}
                   >
@@ -95,12 +106,14 @@ class ModalImage extends Component {
                     />
                   </Gestures>
                 </SafeAreaView>
-                <ModalCaptionContainer
-                  pointerEvents="none"
-                  style={styles.bottomSafeView}
-                >
-                  {this.renderCaption({ isTablet })}
-                </ModalCaptionContainer>
+                {elementsVisible ? (
+                  <ModalCaptionContainer
+                    pointerEvents="none"
+                    style={styles.bottomSafeView}
+                  >
+                    {this.renderCaption({ isTablet })}
+                  </ModalCaptionContainer>
+                ) : null}
               </View>
             )}
           </ResponsiveContext.Consumer>

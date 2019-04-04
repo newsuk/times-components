@@ -351,3 +351,151 @@ exports[`3. modal image with custom highressize 1`] = `
   </View>
 </View>
 `;
+
+exports[`7. hides elements when tapping on the image 1`] = `
+<View>
+  <Modal
+    hardwareAccelerated={false}
+    presentationStyle="fullScreen"
+    supportedOrientations={
+      Array [
+        "portrait",
+        "landscape",
+      ]
+    }
+    visible={true}
+  >
+    <View>
+      <SafeAreaView
+        forceInset={
+          Object {
+            "bottom": "never",
+            "horizontal": "always",
+            "top": "always",
+          }
+        }
+      />
+      <View />
+      <SafeAreaView
+        forceInset={
+          Object {
+            "horizontal": "always",
+            "vertical": "always",
+          }
+        }
+      >
+        <Gestures>
+          <View
+            aspectRatio={1.5}
+          >
+            <Image
+              source={null}
+            />
+          </View>
+        </Gestures>
+      </SafeAreaView>
+    </View>
+  </Modal>
+  <View>
+    <View
+      aspectRatio={1.5}
+    >
+      <Image
+        source={null}
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`8. re-shows elements when tapping on the image a second time 1`] = `
+<View>
+  <Modal
+    hardwareAccelerated={false}
+    presentationStyle="fullScreen"
+    supportedOrientations={
+      Array [
+        "portrait",
+        "landscape",
+      ]
+    }
+    visible={true}
+  >
+    <View>
+      <SafeAreaView
+        forceInset={
+          Object {
+            "bottom": "never",
+            "horizontal": "always",
+            "top": "always",
+          }
+        }
+      />
+      <View>
+        <View>
+          <Image
+            resizeMode="contain"
+            source={
+              Object {
+                "testUri": "../../../packages/image/assets/close-button.png",
+              }
+            }
+          />
+        </View>
+      </View>
+      <SafeAreaView
+        forceInset={
+          Object {
+            "horizontal": "always",
+            "vertical": "always",
+          }
+        }
+      >
+        <Gestures>
+          <View
+            aspectRatio={1.5}
+          >
+            <Image
+              source={null}
+            />
+          </View>
+        </Gestures>
+      </SafeAreaView>
+      <Gradient
+        degrees={180}
+        endColour="#000000E6"
+        endPoint="0.6428571428571428"
+        height={140}
+        pointerEvents="none"
+        startColour="#00000000"
+        width={500}
+      >
+        <SafeAreaView
+          forceInset={
+            Object {
+              "bottom": "always",
+              "horizontal": "always",
+              "top": "never",
+            }
+          }
+        >
+          <View>
+            <Text>
+              Caption
+            </Text>
+          </View>
+        </SafeAreaView>
+      </Gradient>
+    </View>
+  </Modal>
+  <View>
+    <View
+      aspectRatio={1.5}
+    >
+      <Image
+        source={null}
+      />
+    </View>
+  </View>
+</View>
+`;

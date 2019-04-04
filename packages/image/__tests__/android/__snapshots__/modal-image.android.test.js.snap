@@ -315,3 +315,141 @@ exports[`3. modal image with custom highressize 1`] = `
   </View>
 </View>
 `;
+
+exports[`7. hides elements when tapping on the image 1`] = `
+<View>
+  <Modal
+    hardwareAccelerated={false}
+    presentationStyle="fullScreen"
+    supportedOrientations={
+      Array [
+        "portrait",
+        "landscape",
+      ]
+    }
+    visible={true}
+  >
+    <View>
+      <SafeAreaView
+        forceInset={
+          Object {
+            "bottom": "never",
+            "horizontal": "always",
+            "top": "always",
+          }
+        }
+      />
+      <View />
+      <SafeAreaView
+        forceInset={
+          Object {
+            "horizontal": "always",
+            "vertical": "always",
+          }
+        }
+      >
+        <Gestures>
+          <View
+            aspectRatio={1.5}
+          >
+            <Image
+              source={null}
+            />
+          </View>
+        </Gestures>
+      </SafeAreaView>
+    </View>
+  </Modal>
+  <View
+    pointerEvents="box-only"
+  >
+    <View
+      aspectRatio={1.5}
+    >
+      <Image
+        source={null}
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`8. re-shows elements when tapping on the image a second time 1`] = `
+<View>
+  <Modal
+    hardwareAccelerated={false}
+    presentationStyle="fullScreen"
+    supportedOrientations={
+      Array [
+        "portrait",
+        "landscape",
+      ]
+    }
+    visible={true}
+  >
+    <View>
+      <SafeAreaView
+        forceInset={
+          Object {
+            "bottom": "never",
+            "horizontal": "always",
+            "top": "always",
+          }
+        }
+      />
+      <View>
+        <View
+          pointerEvents="box-only"
+        >
+          <Image
+            resizeMode="contain"
+            source={
+              Object {
+                "testUri": "../../../packages/image/assets/close-button.png",
+              }
+            }
+          />
+        </View>
+      </View>
+      <SafeAreaView
+        forceInset={
+          Object {
+            "horizontal": "always",
+            "vertical": "always",
+          }
+        }
+      >
+        <Gestures>
+          <View
+            aspectRatio={1.5}
+          >
+            <Image
+              source={null}
+            />
+          </View>
+        </Gestures>
+      </SafeAreaView>
+      <View
+        pointerEvents="none"
+      >
+        <View>
+          <Text>
+            Caption
+          </Text>
+        </View>
+      </View>
+    </View>
+  </Modal>
+  <View
+    pointerEvents="box-only"
+  >
+    <View
+      aspectRatio={1.5}
+    >
+      <Image
+        source={null}
+      />
+    </View>
+  </View>
+</View>
+`;

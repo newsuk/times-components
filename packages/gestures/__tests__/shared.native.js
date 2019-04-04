@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "react-native";
+import { Text, TouchableWithoutFeedback } from "react-native";
 import TestRenderer from "react-test-renderer";
 import {
   addSerializers,
@@ -251,6 +251,23 @@ export default () => {
         }
       },
       {
+        name: "trigger on press when pressing on the image",
+        test() {
+          const onPress = jest.fn();
+          const testRenderer = TestRenderer.create(
+            <Gesture onPress={onPress}>
+              <Text>Hello world!</Text>
+            </Gesture>
+          );
+
+          testRenderer.root
+            .findByType(TouchableWithoutFeedback)
+            .props.onPress();
+
+          expect(onPress).toHaveBeenCalled();
+        }
+      },
+      {
         name: "trigger onSwipeDown when swiping down past the threshold",
         test() {
           const onSwipeDown = jest.fn();
@@ -323,24 +340,14 @@ export default () => {
         test() {
           const {
             onStartShouldSetResponder,
-            onMoveShouldSetResponder,
-            onStartShouldSetResponderCapture,
-            onMoveShouldSetResponderCapture
+            onMoveShouldSetResponder
           } = gestureHandlers(renderComponent().getInstance());
 
           const emptyTouchEvent = makeTouchEvent([{ x: 50, y: 50 }], []);
 
-          // gesture state is updated _only_ during the capture phase
-          // so the relative methods need to be called first
-          const capturedStart = onStartShouldSetResponderCapture(
-            emptyTouchEvent
-          );
-          const capturedMove = onMoveShouldSetResponderCapture(emptyTouchEvent);
           const respondedStart = onStartShouldSetResponder(emptyTouchEvent);
           const respondedMove = onMoveShouldSetResponder(emptyTouchEvent);
 
-          expect(capturedStart).toBe(true);
-          expect(capturedMove).toBe(true);
           expect(respondedStart).toBe(true);
           expect(respondedMove).toBe(true);
         }
@@ -350,9 +357,7 @@ export default () => {
         test() {
           const {
             onStartShouldSetResponder,
-            onMoveShouldSetResponder,
-            onStartShouldSetResponderCapture,
-            onMoveShouldSetResponderCapture
+            onMoveShouldSetResponder
           } = gestureHandlers(renderComponent().getInstance());
 
           const emptyTouchEvent = makeTouchEvent(
@@ -378,17 +383,9 @@ export default () => {
             ]
           );
 
-          // gesture state is updated _only_ during the capture phase
-          // so the relative methods need to be called first
-          const capturedStart = onStartShouldSetResponderCapture(
-            emptyTouchEvent
-          );
-          const capturedMove = onMoveShouldSetResponderCapture(emptyTouchEvent);
           const respondedStart = onStartShouldSetResponder(emptyTouchEvent);
           const respondedMove = onMoveShouldSetResponder(emptyTouchEvent);
 
-          expect(capturedStart).toBe(true);
-          expect(capturedMove).toBe(true);
           expect(respondedStart).toBe(true);
           expect(respondedMove).toBe(true);
         }

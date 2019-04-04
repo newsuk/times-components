@@ -1,5 +1,10 @@
 import React, { Component } from "react";
-import { Animated, PanResponder, View } from "react-native";
+import {
+  Animated,
+  PanResponder,
+  View,
+  TouchableWithoutFeedback
+} from "react-native";
 import PropTypes from "prop-types";
 
 const distanceBetweenTouches = ([
@@ -66,7 +71,7 @@ class Gestures extends Component {
 
     this.panResponder = PanResponder.create({
       onMoveShouldSetPanResponder: () => true,
-      onMoveShouldSetPanResponderCapture: () => true,
+      // onMoveShouldSetPanResponderCapture: () => true,
       onPanResponderMove: (evt, gestureState) => {
         this.onGestureMove(evt, gestureState);
       },
@@ -89,8 +94,8 @@ class Gestures extends Component {
       // Required for iOS support
       // https://github.com/facebook/react-native/issues/14295#issuecomment-389971835
       onPanResponderTerminationRequest: () => false,
-      onStartShouldSetPanResponder: () => true,
-      onStartShouldSetPanResponderCapture: () => true
+      onStartShouldSetPanResponder: () => true
+      // onStartShouldSetPanResponderCapture: () => true
     });
 
     this.onViewLayout = this.onViewLayout.bind(this);
@@ -148,7 +153,7 @@ class Gestures extends Component {
 
   render() {
     const { children, style } = this.props;
-    const { onSwipeDown: _, ...passThroughProps } = this.props;
+    const { onSwipeDown: _, onPress, ...passThroughProps } = this.props;
     const { angle, center, viewLayout, zoomRatio } = this.state;
 
     const transformStyle = {
@@ -179,12 +184,14 @@ class Gestures extends Component {
         style={style}
         {...this.panResponder.panHandlers}
       >
-        <Animated.View
-          {...passThroughProps}
-          style={[{ flexGrow: 1 }, transformStyle]}
-        >
-          {children}
-        </Animated.View>
+        <TouchableWithoutFeedback onPress={onPress}>
+          <Animated.View
+            {...passThroughProps}
+            style={[{ flexGrow: 1 }, transformStyle]}
+          >
+            {children}
+          </Animated.View>
+        </TouchableWithoutFeedback>
       </View>
     );
   }
@@ -192,10 +199,12 @@ class Gestures extends Component {
 
 Gestures.propTypes = {
   children: PropTypes.element.isRequired,
+  onPress: PropTypes.func,
   onSwipeDown: PropTypes.func
 };
 
 Gestures.defaultProps = {
+  onPress: () => null,
   onSwipeDown: null
 };
 
