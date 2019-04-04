@@ -1,7 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Image, View } from "react-native";
+import { View } from "react-native";
 import styles from "./styles/index";
+import T from "./t";
 
 function Placeholder({ dimensions }) {
   if (!dimensions) {
@@ -11,21 +12,8 @@ function Placeholder({ dimensions }) {
   const { height, width } = dimensions;
 
   return (
-    <View
-      height={height}
-      style={[
-        styles.container,
-        styles.placeholderContainer,
-        styles.placeholderBackground
-      ]}
-      width={width}
-    >
-      <Image
-        resizeMode="contain"
-        // eslint-disable-next-line global-require
-        source={require("../assets/t.png")}
-        style={{ width: Math.floor(width / 4) }}
-      />
+    <View height={height} style={styles.placeholder} width={width}>
+      <T width={width} />
     </View>
   );
 }

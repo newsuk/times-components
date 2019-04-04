@@ -1,6 +1,9 @@
+import { colours } from "@times-components/styleguide";
+
 const styles = {
   placeholder: {
     alignItems: "center",
+    backgroundColor: colours.functional.backgroundSecondary,
     bottom: 0,
     justifyContent: "center",
     left: 0,

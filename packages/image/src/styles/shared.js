@@ -26,9 +26,6 @@ const styles = {
     height: 40,
     width: 40
   },
-  container: {
-    flex: 1
-  },
   gestureContainer: {
     flexGrow: 1,
     position: "relative",
@@ -57,9 +54,10 @@ const styles = {
     position: "absolute",
     width: "100%"
   },
-  placeholderContainer: {
+  placeholder: {
     alignItems: "center",
     backgroundColor: colours.functional.backgroundSecondary,
+    flex: 1,
     justifyContent: "center"
   },
   safeViewContainer: {

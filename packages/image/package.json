@@ -65,7 +65,6 @@
   },
   "dependencies": {
     "@times-components/gestures": "4.0.0",
-    "@times-components/gradient": "3.0.0",
     "@times-components/link": "3.3.0",
     "@times-components/responsive": "0.4.3",
     "@times-components/styleguide": "3.26.3",

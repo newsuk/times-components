@@ -146,17 +146,6 @@ exports[`1. card loading state 1`] = `
 }
 
 .IS1 {
-  align-items: center;
-  bottom: 0;
-  justify-content: center;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 0;
-}
-
-.IS2 {
   display: table;
   height: 0;
   overflow: hidden;
@@ -164,8 +153,14 @@ exports[`1. card loading state 1`] = `
   padding-bottom: 150%;
 }
 
-.IS3 {
+.IS2 {
   background-image: linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%);
+}
+
+.IS3 {
+  height: 24;
+  margin-bottom: 10px;
+  max-width: 300;
 }
 
 .IS4 {
@@ -175,13 +170,12 @@ exports[`1. card loading state 1`] = `
 }
 
 .IS5 {
-  height: 24;
-  margin-bottom: 10px;
-  max-width: 300;
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
 }
 
 .IS6 {
-  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+  height: 10;
+  margin-bottom: 10px;
 }
 
 .IS7 {
@@ -190,12 +184,12 @@ exports[`1. card loading state 1`] = `
 }
 
 .IS8 {
-  height: 10;
-  margin-bottom: 10px;
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
 }
 
 .IS9 {
-  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+  height: 10;
+  margin-bottom: 10px;
 }
 
 .IS10 {
@@ -204,21 +198,16 @@ exports[`1. card loading state 1`] = `
 }
 
 .IS11 {
-  height: 10;
-  margin-bottom: 10px;
-}
-
-.IS12 {
   background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
 }
 
-.IS13 {
+.IS12 {
   height: 10;
   margin-bottom: 0;
   max-width: 240;
 }
 
-.IS14 {
+.IS13 {
   height: 10;
   margin-bottom: 0;
   max-width: 240;
@@ -249,19 +238,19 @@ exports[`1. card loading state 1`] = `
       >
         <Component>
           <Gradient
-            className="IS5"
+            className="IS4"
             degrees={264}
           />
           <Gradient
-            className="IS8"
+            className="IS7"
             degrees={267}
           />
           <Gradient
-            className="IS11"
+            className="IS10"
             degrees={267}
           />
           <Gradient
-            className="IS14"
+            className="IS13"
             degrees={267}
           />
         </Component>
@@ -478,17 +467,6 @@ exports[`2. card with reversed loading state 1`] = `
 }
 
 .IS13 {
-  align-items: center;
-  bottom: 0;
-  justify-content: center;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 0;
-}
-
-.IS14 {
   display: table;
   height: 0;
   overflow: hidden;
