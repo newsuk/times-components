@@ -2,11 +2,10 @@ import {
   colours,
   spacing,
   fonts,
-  fontSizes,
-  editionBreakpoints
+  fontSizes
 } from "@times-components/styleguide";
 
-const smallBreakpointStyles = {
+const main = {
   container: {
     alignItems: "center",
     backgroundColor: colours.functional.border,
@@ -35,6 +34,15 @@ const smallBreakpointStyles = {
   }
 };
 
+const smallBreakpointStyles = {
+  container: {
+    alignItems: "center",
+    backgroundColor: colours.functional.border,
+    flex: 1,
+    padding: spacing(2)
+  }
+};
+
 const mediumBreakpointStyles = {
   container: {
     alignItems: "center",
@@ -53,13 +61,29 @@ const wideBreakpointStyle = {
   }
 };
 
-export default breakpoint => {
-  if (breakpoint === editionBreakpoints.small) {
-    return smallBreakpointStyles;
+const hugeBreakpointStyle = {
+  columnItems: {
+    alignItems: "center",
+    flexDirection: "column"
+  },
+  item: {
+    paddingHorizontal: "5%"
+  },
+  rowItems: {
+    alignItems: "center",
+    flexDirection: "row",
+    paddingHorizontal: "30%"
   }
-  if (breakpoint === editionBreakpoints.medium) {
-    return { ...smallBreakpointStyles, ...mediumBreakpointStyles };
-  }
-
-  return { ...smallBreakpointStyles, ...wideBreakpointStyle };
 };
+
+const stylesResolver = {
+  huge: hugeBreakpointStyle,
+  medium: mediumBreakpointStyles,
+  small: smallBreakpointStyles,
+  wide: wideBreakpointStyle
+};
+
+export default breakpoint => ({
+  ...main,
+  ...(stylesResolver[breakpoint] || {})
+});

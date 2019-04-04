@@ -910,29 +910,44 @@ exports[`32. daily universal register - huge 1`] = `
     <Text>
       Daily Universal Register
     </Text>
-    <TileS />
     <View />
-    <TileS />
+    <View>
+      <View>
+        <TileS />
+      </View>
+      <View>
+        <TileS />
+      </View>
+    </View>
     <View />
-    <Image
-      resizeMode="contain"
-      source={
-        Object {
-          "testUri": "../../../packages/edition-slices/assets/leaves.png",
-        }
-      }
-    />
-    <TileS />
-    <View />
-    <Image
-      resizeMode="contain"
-      source={
-        Object {
-          "testUri": "../../../packages/edition-slices/assets/cake.png",
-        }
-      }
-    />
-    <TileS />
+    <View>
+      <View>
+        <Image
+          resizeMode="contain"
+          source={
+            Object {
+              "testUri": "../../../packages/edition-slices/assets/leaves.png",
+            }
+          }
+        />
+        <View>
+          <TileS />
+        </View>
+      </View>
+      <View>
+        <Image
+          resizeMode="contain"
+          source={
+            Object {
+              "testUri": "../../../packages/edition-slices/assets/cake.png",
+            }
+          }
+        />
+        <View>
+          <TileS />
+        </View>
+      </View>
+    </View>
   </View>
 </View>
 `;
