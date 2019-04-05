@@ -7,6 +7,8 @@ import {
 } from "react-native";
 import PropTypes from "prop-types";
 
+const SWIPE_DOWN_GESTURE_THRESHOLD = 50;
+
 const distanceBetweenTouches = ([
   { pageX: x1, pageY: y1 },
   { pageX: x2, pageY: y2 }
@@ -71,7 +73,6 @@ class Gestures extends Component {
 
     this.panResponder = PanResponder.create({
       onMoveShouldSetPanResponder: () => true,
-      // onMoveShouldSetPanResponderCapture: () => true,
       onPanResponderMove: (evt, gestureState) => {
         this.onGestureMove(evt, gestureState);
       },
@@ -95,7 +96,6 @@ class Gestures extends Component {
       // https://github.com/facebook/react-native/issues/14295#issuecomment-389971835
       onPanResponderTerminationRequest: () => false,
       onStartShouldSetPanResponder: () => true
-      // onStartShouldSetPanResponderCapture: () => true
     });
 
     this.onViewLayout = this.onViewLayout.bind(this);
@@ -106,7 +106,7 @@ class Gestures extends Component {
       this.handlePinchChange(evt);
     } else if (
       gestureState.numberActiveTouches === 1 &&
-      gestureState.dy >= 50
+      gestureState.dy >= SWIPE_DOWN_GESTURE_THRESHOLD
     ) {
       const { onSwipeDown } = this.props;
 

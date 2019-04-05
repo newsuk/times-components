@@ -2,7 +2,7 @@
 export { setIsTablet } from "@times-components/test-utils/dimensions";
 export { default as Gestures } from "@times-components/gestures";
 
-jest.mock("react-native-safe-area-view", () => "SafeAreaView");
+jest.mock("../src/react-native-safe-area", () => "SafeAreaView");
 
 jest.mock("@times-components/gestures", () => "Gestures");
 jest.mock("@times-components/gradient", () => "Gradient");

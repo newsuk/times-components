@@ -13,6 +13,7 @@ const functionalColours = {
   darkSupplement: "#272D34",
   greyLabel: "#CCC",
   keyline: "#DBDBDB",
+  modalBackground: "#000000",
   overlayGradientEnd: "rgba(0, 0, 0, 0)",
   overlayGradientStart: "rgba(1, 1, 1, 0.9)",
   primary: "#333333",

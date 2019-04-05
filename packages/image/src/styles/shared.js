@@ -1,5 +1,8 @@
 import { colours, spacing } from "@times-components/styleguide";
 
+const CLOSE_BUTTON_PHONE_SIZE = 25;
+const CLOSE_BUTTON_TABLET_SIZE = 30;
+
 const styles = {
   bottomSafeView: {
     flex: 0,
@@ -19,19 +22,19 @@ const styles = {
   closeButton: {
     alignItems: "center",
     backgroundColor: "rgba(0, 0, 0, 0.5)",
-    borderRadius: 25,
-    height: 25,
+    borderRadius: CLOSE_BUTTON_PHONE_SIZE,
+    height: CLOSE_BUTTON_PHONE_SIZE,
     justifyContent: "center",
-    width: 25
+    width: CLOSE_BUTTON_PHONE_SIZE
   },
   closeButtonImage: {
     height: "85%",
     width: "85%"
   },
   closeButtonTablet: {
-    borderRadius: 30,
-    height: 30,
-    width: 30
+    borderRadius: CLOSE_BUTTON_TABLET_SIZE,
+    height: CLOSE_BUTTON_TABLET_SIZE,
+    width: CLOSE_BUTTON_TABLET_SIZE
   },
   gestureContainer: {
     height: "100%",
@@ -57,14 +60,14 @@ const styles = {
     zIndex: 1
   },
   modal: {
-    backgroundColor: "#000000",
+    backgroundColor: colours.functional.modalBackground,
     flexDirection: "column",
     height: "100%",
     justifyContent: "space-between",
     width: "100%"
   },
   modalBackground: {
-    backgroundColor: "#000000",
+    backgroundColor: colours.functional.modalBackground,
     flex: 1
   },
   modalImageContainer: {
@@ -81,7 +84,7 @@ const styles = {
     justifyContent: "center"
   },
   topSafeView: {
-    backgroundColor: "#000000",
+    backgroundColor: colours.functional.modalBackground,
     flex: 0
   }
 };

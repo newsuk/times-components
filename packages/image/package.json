@@ -64,8 +64,8 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/gradient": "3.0.2",
-    "@times-components/gestures": "4.0.3",
+    "@times-components/gestures": "4.0.2",
+    "@times-components/gradient": "3.0.3",
     "@times-components/link": "3.3.3",
     "@times-components/responsive": "0.4.6",
     "@times-components/styleguide": "3.26.6",
@@ -74,7 +74,6 @@
     "intrinsic-scale": "3.0.3",
     "lodash.memoize": "4.1.2",
     "prop-types": "15.6.2",
-    "react-native-safe-area-view": "0.13.1",
     "styled-components": "3.4.0"
   },
   "peerDependencies": {
