@@ -33,6 +33,7 @@ class TileSummary extends Component {
         articleId
       },
       flagColour,
+      isDarkStar,
       starStyle
     } = this.props;
 
@@ -44,7 +45,7 @@ class TileSummary extends Component {
           <ArticleFlags {...flagColour} flags={expirableFlags} />
         </View>
         <View style={tileStyle.starButton}>
-          <TileStar articleId={articleId} />
+          <TileStar articleId={articleId} isDark={isDarkStar} />
         </View>
       </View>
     );
@@ -113,6 +114,7 @@ TileSummary.propTypes = {
   bylineStyle: PropTypes.shape({}),
   flagColour: PropTypes.shape({}),
   headlineStyle: PropTypes.shape({}),
+  isDarkStar: PropTypes.bool,
   labelColour: PropTypes.string,
   strapline: PropTypes.string,
   straplineStyle: PropTypes.shape({}),
@@ -126,6 +128,7 @@ TileSummary.defaultProps = {
   bylineStyle: null,
   flagColour: {},
   headlineStyle: null,
+  isDarkStar: false,
   labelColour: null,
   strapline: null,
   straplineStyle: null,

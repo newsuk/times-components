@@ -12,7 +12,7 @@ import {
 } from "../shared";
 import styles from "./styles";
 
-const TileN = ({ onPress, tile }) => (
+const TileN = ({ isDarkStar, onPress, tile }) => (
   <TileLink onPress={onPress} tile={tile}>
     <View style={styles.container}>
       <TileImage
@@ -23,6 +23,7 @@ const TileN = ({ onPress, tile }) => (
       <TileSummary
         flagColour={styles.flagColour}
         headlineStyle={styles.headline}
+        isDarkStar={isDarkStar}
         labelColour={colours.functional.greyLabel}
         strapline={getTileStrapline(tile)}
         style={styles.summaryContainer}
@@ -33,8 +34,13 @@ const TileN = ({ onPress, tile }) => (
 );
 
 TileN.propTypes = {
+  isDarkStar: PropTypes.bool,
   onPress: PropTypes.func.isRequired,
   tile: PropTypes.shape({}).isRequired
+};
+
+TileN.defaultProps = {
+  isDarkStar: true
 };
 
 export default withTileTracking(TileN);
