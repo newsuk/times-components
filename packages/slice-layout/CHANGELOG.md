@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.25.5](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.25.4...@times-components/slice-layout@0.25.5) (2019-04-05)
+
+
+### Bug Fixes
+
+* strapline ([#1860](https://github.com/newsuk/times-components/issues/1860)) ([09e3d25](https://github.com/newsuk/times-components/commit/09e3d25))
+
+
+
+
+
 ## [0.25.4](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.25.3...@times-components/slice-layout@0.25.4) (2019-04-05)
 
 **Note:** Version bump only for package @times-components/slice-layout
