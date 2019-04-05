@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArticleExtrasProvider returns query result 1`] = `undefined`;
