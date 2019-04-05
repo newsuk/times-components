@@ -275,7 +275,7 @@ exports[`2. an article with no content 1`] = `
                     Object {
                       "article": Object {
                         "__typename": "Article",
-                        "byline": Array [],
+                        "bylines": Array [],
                         "hasVideo": false,
                         "headline": "RA Headline",
                         "id": "ra-1",
@@ -435,7 +435,7 @@ Object {
   "action": "Pressed",
   "attrs": Object {
     "articleId": "198c4b2f-ecec-4f34-be53-c89f83bc1b44",
-    "byline": "Some byline",
+    "bylines": "Some byline",
     "eventTime": "2018-01-01T00:00:00.000Z",
     "headline": "Some Headline",
     "label": "Some Label",

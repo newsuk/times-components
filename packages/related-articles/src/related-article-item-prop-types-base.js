@@ -6,7 +6,7 @@ const { style: ViewPropTypesStyle } = ViewPropTypes;
 
 export const sharedPropTypes = {
   article: PropTypes.shape({
-    byline: PropTypes.arrayOf(treePropType),
+    bylines: PropTypes.arrayOf(treePropType),
     hasVideo: PropTypes.bool,
     headline: PropTypes.string,
     label: PropTypes.string,

@@ -10,20 +10,20 @@ import metaPropTypes from "./article-meta-prop-types";
 import styles from "../styles";
 
 const ArticleMeta = ({
-  byline,
+  bylines,
   isTablet,
   onAuthorPress,
   publicationName,
   publishedTime
 }) => (
   <View style={isTablet && styles.metaContainerTabletFlow}>
-    {byline && (
+    {bylines && (
       <Fragment>
         <View style={styles.meta}>
           <Context.Consumer>
             {({ theme: { sectionColour } }) => (
               <ArticleBylineWithLinks
-                ast={byline}
+                ast={bylines}
                 color={sectionColour || colours.section.default}
                 onAuthorPress={onAuthorPress}
               />

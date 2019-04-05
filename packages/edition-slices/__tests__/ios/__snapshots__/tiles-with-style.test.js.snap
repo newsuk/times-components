@@ -642,7 +642,20 @@ exports[`8. tile h 1`] = `
             }
           }
         >
-          Libby Purves
+          Richard Lloyd Parry
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#333333",
+              "flexDirection": "row",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 13,
+              "lineHeight": 15,
+            }
+          }
+        >
+          , Hanoi
         </Text>
       </Text>
     </View>
@@ -1271,7 +1284,21 @@ exports[`16. tile p 1`] = `
             }
           }
         >
-          Libby Purves
+          Richard Lloyd Parry
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#850029",
+              "flexDirection": "row",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 12,
+              "letterSpacing": 0.6,
+              "lineHeight": 12,
+            }
+          }
+        >
+          , Hanoi
         </Text>
       </Text>
     </View>
@@ -2207,7 +2234,20 @@ exports[`28. tile ab 1`] = `
             }
           }
         >
-          Libby Purves
+          Richard Lloyd Parry
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#333333",
+              "flexDirection": "row",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 13,
+              "lineHeight": 15,
+            }
+          }
+        >
+          , Hanoi
         </Text>
       </Text>
     </View>
@@ -2726,6 +2766,86 @@ exports[`35. tile an 1`] = `
           Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
           ...
         </Text>
+      </Text>
+      <View
+        style={
+          Object {
+            "marginBottom": 10,
+          }
+        }
+      >
+        <ArticleFlags />
+      </View>
+    </View>
+  </View>
+</Link>
+`;
+
+exports[`36. tile ap 1`] = `
+<Link>
+  <View
+    style={
+      Object {
+        "padding": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "borderRadius": 9999,
+          "overflow": "hidden",
+        }
+      }
+    >
+      <Image />
+    </View>
+    <View
+      style={
+        Object {
+          "justifyContent": "center",
+          "paddingHorizontal": 10,
+          "paddingTop": 5,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "marginBottom": 0,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#005B8D",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 12,
+              "fontWeight": "400",
+              "letterSpacing": 0.6,
+              "lineHeight": 14,
+              "marginBottom": 0,
+            }
+          }
+        >
+          LABEL
+        </Text>
+      </View>
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesModern-Bold",
+            "fontSize": 22,
+            "fontWeight": "900",
+            "lineHeight": 22,
+            "marginBottom": 5,
+            "paddingBottom": 5,
+          }
+        }
+      >
+        This is tile headline
       </Text>
       <View
         style={

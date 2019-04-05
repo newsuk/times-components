@@ -12,19 +12,19 @@ import styles from "../styles";
 const Separator = () => <View style={styles.separator} />;
 
 const ArticleMeta = ({
-  byline,
+  bylines,
   isTablet,
   onAuthorPress,
   publicationName,
   publishedTime
 }) => (
   <View style={[styles.metaContainer, isTablet && styles.metaContainerTablet]}>
-    {byline && (
+    {bylines && (
       <View style={[styles.meta, isTablet && styles.metaTablet]}>
         <Context.Consumer>
           {({ theme: { sectionColour } }) => (
             <ArticleBylineWithLinks
-              ast={byline}
+              ast={bylines}
               color={sectionColour || colours.section.default}
               onAuthorPress={onAuthorPress}
             />

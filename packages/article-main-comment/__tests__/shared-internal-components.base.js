@@ -63,7 +63,7 @@ const snapshotTests = renderComponent => [
     test() {
       const output = renderComponent(
         <Meta
-          byline={bylineWithLink()}
+          bylines={bylineWithLink()}
           onAuthorPress={() => {}}
           publicationName="TIMES"
           publishedTime="2015-03-23T19:39:39.000Z"

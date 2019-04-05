@@ -17,7 +17,7 @@ import styles from "../styles";
 
 const ArticleHeader = ({
   authorImage,
-  byline,
+  bylines,
   flags,
   hasVideo,
   headline,
@@ -57,7 +57,7 @@ const ArticleHeader = ({
         )}
         <Standfirst standfirst={standfirst} />
         <Meta
-          byline={byline}
+          bylines={bylines}
           hasElementsAbove={flags.length > 0 || standfirst}
           isTablet={isTablet}
           onAuthorPress={onAuthorPress}

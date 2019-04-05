@@ -95,17 +95,21 @@ exports[`2. article summary with opinion byline 1`] = `
       ast={
         Array [
           Object {
-            "attributes": Object {},
-            "children": Array [
+            "byline": Array [
               Object {
-                "attributes": Object {
-                  "value": "A byline",
-                },
-                "children": Array [],
-                "name": "text",
+                "attributes": Object {},
+                "children": Array [
+                  Object {
+                    "attributes": Object {
+                      "value": "A byline",
+                    },
+                    "children": Array [],
+                    "name": "text",
+                  },
+                ],
+                "name": "inline",
               },
             ],
-            "name": "inline",
           },
         ]
       }
@@ -164,17 +168,21 @@ exports[`3. article summary component with multiple paragraphs 1`] = `
       ast={
         Array [
           Object {
-            "attributes": Object {},
-            "children": Array [
+            "byline": Array [
               Object {
-                "attributes": Object {
-                  "value": "A byline",
-                },
-                "children": Array [],
-                "name": "text",
+                "attributes": Object {},
+                "children": Array [
+                  Object {
+                    "attributes": Object {
+                      "value": "A byline",
+                    },
+                    "children": Array [],
+                    "name": "text",
+                  },
+                ],
+                "name": "inline",
               },
             ],
-            "name": "inline",
           },
         ]
       }
@@ -314,17 +322,21 @@ exports[`7. article summary component with empty content at the end trimmed 1`] 
       ast={
         Array [
           Object {
-            "attributes": Object {},
-            "children": Array [
+            "byline": Array [
               Object {
-                "attributes": Object {
-                  "value": "A byline",
-                },
-                "children": Array [],
-                "name": "text",
+                "attributes": Object {},
+                "children": Array [
+                  Object {
+                    "attributes": Object {
+                      "value": "A byline",
+                    },
+                    "children": Array [],
+                    "name": "text",
+                  },
+                ],
+                "name": "inline",
               },
             ],
-            "name": "inline",
           },
         ]
       }
@@ -383,17 +395,21 @@ exports[`9. article summary component with no label 1`] = `
       ast={
         Array [
           Object {
-            "attributes": Object {},
-            "children": Array [
+            "byline": Array [
               Object {
-                "attributes": Object {
-                  "value": "A byline",
-                },
-                "children": Array [],
-                "name": "text",
+                "attributes": Object {},
+                "children": Array [
+                  Object {
+                    "attributes": Object {
+                      "value": "A byline",
+                    },
+                    "children": Array [],
+                    "name": "text",
+                  },
+                ],
+                "name": "inline",
               },
             ],
-            "name": "inline",
           },
         ]
       }
@@ -452,17 +468,21 @@ exports[`11. article summary component with no date publication 1`] = `
       ast={
         Array [
           Object {
-            "attributes": Object {},
-            "children": Array [
+            "byline": Array [
               Object {
-                "attributes": Object {
-                  "value": "A byline",
-                },
-                "children": Array [],
-                "name": "text",
+                "attributes": Object {},
+                "children": Array [
+                  Object {
+                    "attributes": Object {
+                      "value": "A byline",
+                    },
+                    "children": Array [],
+                    "name": "text",
+                  },
+                ],
+                "name": "inline",
               },
             ],
-            "name": "inline",
           },
         ]
       }
@@ -504,17 +524,21 @@ exports[`12. article summary component with a video label 1`] = `
       ast={
         Array [
           Object {
-            "attributes": Object {},
-            "children": Array [
+            "byline": Array [
               Object {
-                "attributes": Object {
-                  "value": "A byline",
-                },
-                "children": Array [],
-                "name": "text",
+                "attributes": Object {},
+                "children": Array [
+                  Object {
+                    "attributes": Object {
+                      "value": "A byline",
+                    },
+                    "children": Array [],
+                    "name": "text",
+                  },
+                ],
+                "name": "inline",
               },
             ],
-            "name": "inline",
           },
         ]
       }
@@ -577,32 +601,40 @@ exports[`13. article summary component with a strapline 1`] = `
       ast={
         Array [
           Object {
-            "attributes": Object {
-              "slug": "camilla-long",
-            },
-            "children": Array [
+            "byline": Array [
               Object {
                 "attributes": Object {
-                  "value": "Camilla Long",
+                  "slug": "camilla-long",
                 },
-                "children": Array [],
-                "name": "text",
+                "children": Array [
+                  Object {
+                    "attributes": Object {
+                      "value": "Camilla Long",
+                    },
+                    "children": Array [],
+                    "name": "text",
+                  },
+                ],
+                "name": "author",
               },
             ],
-            "name": "author",
           },
           Object {
-            "attributes": Object {},
-            "children": Array [
+            "byline": Array [
               Object {
-                "attributes": Object {
-                  "value": ", Environment Editor",
-                },
-                "children": Array [],
-                "name": "text",
+                "attributes": Object {},
+                "children": Array [
+                  Object {
+                    "attributes": Object {
+                      "value": ", Environment Editor",
+                    },
+                    "children": Array [],
+                    "name": "text",
+                  },
+                ],
+                "name": "inline",
               },
             ],
-            "name": "inline",
           },
         ]
       }

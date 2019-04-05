@@ -1,16 +1,20 @@
 [
   {
     "__typename": "Article",
-    "byline": [
+    "bylines": [
       {
-        "name": "inline",
-        "children": [
+        "byline": [
           {
-            "name": "text",
-            "attributes": {
-              "value": "Richard Lloyd Parry, Asia Editor | Didi Tang, Beijing"
-            },
-            "children": []
+            "name": "inline",
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value": "Richard Lloyd Parry, Asia Editor | Didi Tang, Beijing"
+                },
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -51,16 +55,20 @@
   },
   {
     "__typename": "Article",
-    "byline": [
+    "bylines": [
       {
-        "name": "inline",
-        "children": [
+        "byline": [
           {
-            "name": "text",
-            "attributes": {
-              "value": "Thomas Conlin"
-            },
-            "children": []
+            "name": "inline",
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value": "Thomas Conlin"
+                },
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -115,16 +123,20 @@
   },
   {
     "__typename": "Article",
-    "byline": [
+    "bylines": [
       {
-        "name": "inline",
-        "children": [
+        "byline": [
           {
-            "name": "text",
-            "attributes": {
-              "value": "Foreign Staff"
-            },
-            "children": []
+            "name": "inline",
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value": "Foreign Staff"
+                },
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -165,16 +177,20 @@
   },
   {
     "__typename": "Article",
-    "byline": [
+    "bylines": [
       {
-        "name": "inline",
-        "children": [
+        "byline": [
           {
-            "name": "text",
-            "attributes": {
-              "value": "Richard Lloyd Parry, Tokyo"
-            },
-            "children": []
+            "name": "inline",
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value": "Richard Lloyd Parry, Tokyo"
+                },
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -238,16 +254,20 @@
   },
   {
     "__typename": "Article",
-    "byline": [
+    "bylines": [
       {
-        "name": "inline",
-        "children": [
+        "byline": [
           {
-            "name": "text",
-            "attributes": {
-              "value": "Hilary Rose"
-            },
-            "children": []
+            "name": "inline",
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value": "Hilary Rose"
+                },
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -309,16 +329,20 @@
   },
   {
     "__typename": "Article",
-    "byline": [
+    "bylines": [
       {
-        "name": "inline",
-        "children": [
+        "byline": [
           {
-            "name": "text",
-            "attributes": {
-              "value": "Rhys Blakely, Washington | Didi Tang, Beijing"
-            },
-            "children": []
+            "name": "inline",
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value": "Rhys Blakely, Washington | Didi Tang, Beijing"
+                },
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -359,16 +383,20 @@
   },
   {
     "__typename": "Article",
-    "byline": [
+    "bylines": [
       {
-        "name": "inline",
-        "children": [
+        "byline": [
           {
-            "name": "text",
-            "attributes": {
-              "value": "Didi Tang, Beijing"
-            },
-            "children": []
+            "name": "inline",
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value": "Didi Tang, Beijing"
+                },
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -409,16 +437,20 @@
   },
   {
     "__typename": "Article",
-    "byline": [
+    "bylines": [
       {
-        "name": "inline",
-        "children": [
+        "byline": [
           {
-            "name": "text",
-            "attributes": {
-              "value": "Richard Lloyd Parry, Singapore | Boer Deng, Washington | Michael Evans"
-            },
-            "children": []
+            "name": "inline",
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value": "Richard Lloyd Parry, Singapore | Boer Deng, Washington | Michael Evans"
+                },
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -461,16 +493,20 @@
   },
   {
     "__typename": "Article",
-    "byline": [
+    "bylines": [
       {
-        "name": "inline",
-        "children": [
+        "byline": [
           {
-            "name": "text",
-            "attributes": {
-              "value": "Ben Hoyle, Los Angeles"
-            },
-            "children": []
+            "name": "inline",
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value": "Ben Hoyle, Los Angeles"
+                },
+                "children": []
+              }
+            ]
           }
         ]
       }
@@ -513,19 +549,23 @@
   },
   {
     "__typename": "Article",
-    "byline": [
+    "bylines": [
       {
-        "name": "author",
-        "attributes": {
-          "slug": "carol-midgley"
-        },
-        "children": [
+        "byline": [
           {
-            "name": "text",
+            "name": "author",
             "attributes": {
-              "value": "Carol Midgley"
+              "slug": "carol-midgley"
             },
-            "children": []
+            "children": [
+              {
+                "name": "text",
+                "attributes": {
+                  "value": "Carol Midgley"
+                },
+                "children": []
+              }
+            ]
           }
         ]
       }

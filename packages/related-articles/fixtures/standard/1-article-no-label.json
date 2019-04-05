@@ -105,17 +105,21 @@
             "publishedTime": "2015-03-13T18:54:58.000Z",
             "label": "",
             "url": "https://www.thetimes.co.uk/article/bayeux-tapestry-now-for-a-new-battle-bringing-fragile-masterpiece-to-britain-safely-2k629tpvh",
-            "byline": [
+            "bylines": [
               {
-                "name": "inline",
-                "attributes": {},
-                "children": [
+                "byline": [
                   {
-                    "name": "text",
-                    "attributes": {
-                      "value": "Charles Bremner, Paris | Jack Malvern"
-                    },
-                    "children": []
+                    "name": "inline",
+                    "attributes": {},
+                    "children": [
+                      {
+                        "name": "text",
+                        "attributes": {
+                          "value": "Charles Bremner, Paris | Jack Malvern"
+                        },
+                        "children": []
+                      }
+                    ]
                   }
                 ]
               }

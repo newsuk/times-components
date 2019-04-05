@@ -46,8 +46,7 @@ class MockArticle {
       slug: `british-trio-stopped-on-the-way-to-join-isis`,
       commentCount: 0,
       template: TemplateType.Mainstandard,
-      byline: new MockMarkup().addInlines().get(),
-      bylines: [],
+      bylines: new MockMarkup().addBylines().get(),
       expirableFlags: [
         {
           type: Flag.Exclusive,

@@ -1,8 +1,7 @@
 import PropTypes from "prop-types";
-import { propTypes as treePropType } from "@times-components/markup-forest";
 
 export const propTypes = {
-  ast: PropTypes.arrayOf(treePropType).isRequired,
+  ast: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
   onAuthorPress: PropTypes.func
 };
 

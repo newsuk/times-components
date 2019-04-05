@@ -1,6 +1,6 @@
 {
   "name": "@times-components/svgs",
-  "version": "2.5.4",
+  "version": "2.6.0",
   "description": "Svgs wrapper",
   "main": "dist/index",
   "dev": "src/index",
@@ -19,6 +19,17 @@
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist",
     "bundle": "NODE_ENV=production webpack -p"
+  },
+  "jest": {
+    "preset": "react-native",
+    "rootDir": "../../",
+    "coverageDirectory": "<rootDir>/packages/svgs/coverage/",
+    "transformIgnorePatterns": [
+      "node_modules/(?!(react-native|react-native-svg|@times-components)/)"
+    ],
+    "testMatch": [
+      "<rootDir>/packages/svgs/__tests__/*.test.js"
+    ]
   },
   "repository": {
     "type": "git",
@@ -40,9 +51,9 @@
   "devDependencies": {
     "@thetimes/jest-lint": "*",
     "@times-components/eslint-config-thetimes": "0.8.9",
-    "@times-components/jest-configurator": "2.3.4",
+    "@times-components/jest-configurator": "2.4.0",
     "@times-components/jest-serializer": "3.2.0",
-    "@times-components/test-utils": "2.2.14",
+    "@times-components/test-utils": "2.2.15",
     "@times-components/webpack-configurator": "2.0.15",
     "babel-cli": "6.26.0",
     "babel-core": "6.26.0",
@@ -63,6 +74,7 @@
   },
   "dependencies": {
     "prop-types": "15.6.2",
+    "react-native-svg": "6.5.3",
     "svgs": "3.2.1"
   },
   "peerDependencies": {

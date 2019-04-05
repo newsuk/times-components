@@ -3,6 +3,13 @@
 exports[`1. renders default 1`] = `
 <Link
   disabled={false}
+  linkStyle={
+    Object {
+      "height": 28,
+      "padding": "5px",
+      "width": 28,
+    }
+  }
 >
   <IconStar
     fillColour="none"
@@ -16,6 +23,13 @@ exports[`1. renders default 1`] = `
 exports[`2. renders selected 1`] = `
 <Link
   disabled={false}
+  linkStyle={
+    Object {
+      "height": 28,
+      "padding": "5px",
+      "width": 28,
+    }
+  }
 >
   <IconStar
     fillColour="#006699"
@@ -29,12 +43,79 @@ exports[`2. renders selected 1`] = `
 exports[`3. renders disabled 1`] = `
 <Link
   disabled={true}
+  linkStyle={
+    Object {
+      "height": 28,
+      "padding": "5px",
+      "width": 28,
+    }
+  }
 >
   <IconStar
     fillColour="none"
     height={18}
     opacity="0.4"
     strokeColour="#696969"
+  />
+</Link>
+`;
+
+exports[`4. renders default in dark theme 1`] = `
+<Link
+  disabled={false}
+  linkStyle={
+    Object {
+      "height": 28,
+      "padding": "5px",
+      "width": 28,
+    }
+  }
+>
+  <IconStar
+    fillColour="none"
+    height={18}
+    opacity="1"
+    strokeColour="#CCC"
+  />
+</Link>
+`;
+
+exports[`5. renders selected in dark theme 1`] = `
+<Link
+  disabled={false}
+  linkStyle={
+    Object {
+      "height": 28,
+      "padding": "5px",
+      "width": 28,
+    }
+  }
+>
+  <IconStar
+    fillColour="#3C81BE"
+    height={18}
+    opacity="1"
+    strokeColour="none"
+  />
+</Link>
+`;
+
+exports[`6. renders disabled in dark theme 1`] = `
+<Link
+  disabled={true}
+  linkStyle={
+    Object {
+      "height": 28,
+      "padding": "5px",
+      "width": 28,
+    }
+  }
+>
+  <IconStar
+    fillColour="none"
+    height={18}
+    opacity="0.4"
+    strokeColour="#CCC"
   />
 </Link>
 `;

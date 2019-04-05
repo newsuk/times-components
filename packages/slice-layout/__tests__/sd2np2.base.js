@@ -37,6 +37,38 @@ export default renderComponent => {
 
         expect(output).toMatchSnapshot();
       }
+    },
+    {
+      name: "secondary two no pic and two - wide",
+      test() {
+        const output = renderComponent(
+          <SecondaryTwoNoPicAndTwoSlice
+            breakpoint={editionBreakpoints.wide}
+            renderSecondary1={() => createItem("secondary-1")}
+            renderSecondary2={() => createItem("secondary-2")}
+            renderSupport1={() => createItem("support-1")}
+            renderSupport2={() => createItem("support-2")}
+          />
+        );
+
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "secondary two no pic and two - huge",
+      test() {
+        const output = renderComponent(
+          <SecondaryTwoNoPicAndTwoSlice
+            breakpoint={editionBreakpoints.huge}
+            renderSecondary1={() => createItem("secondary-1")}
+            renderSecondary2={() => createItem("secondary-2")}
+            renderSupport1={() => createItem("support-1")}
+            renderSupport2={() => createItem("support-2")}
+          />
+        );
+
+        expect(output).toMatchSnapshot();
+      }
     }
   ];
 

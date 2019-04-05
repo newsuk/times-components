@@ -64,7 +64,7 @@ class TileSummary extends Component {
       tile: {
         article: { hasVideo, label, section }
       },
-      byline,
+      bylines,
       bylineStyle,
       strapline,
       style,
@@ -74,7 +74,7 @@ class TileSummary extends Component {
 
     return (
       <ArticleSummary
-        bylineProps={byline ? { ast: byline, bylineStyle } : null}
+        bylineProps={bylines ? { ast: bylines, bylineStyle } : null}
         content={summary ? this.renderContent : undefined}
         flags={this.renderFlags}
         headline={this.renderHeadline}

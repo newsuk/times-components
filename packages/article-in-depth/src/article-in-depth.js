@@ -30,7 +30,7 @@ class ArticleInDepth extends Component {
     const { article, onAuthorPress, onImagePress, onVideoPress } = this.props;
     const {
       backgroundColour,
-      byline,
+      bylines,
       expirableFlags,
       hasVideo,
       headline,
@@ -72,7 +72,7 @@ class ArticleInDepth extends Component {
             >
               <Meta
                 backgroundColour={backgroundColour}
-                byline={byline}
+                bylines={bylines}
                 isTablet={isTablet}
                 onAuthorPress={onAuthorPress}
                 publicationName={publicationName}

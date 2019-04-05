@@ -33,6 +33,45 @@ const markupTypes: Markup = {
       }
     ]
   },
+  bylines: [
+    {
+      byline: [
+        {
+          name: "author",
+          children: [
+            {
+              name: "text",
+              children: [],
+              attributes: {
+                value: "Richard Lloyd Parry"
+              }
+            }
+          ],
+          attributes: {
+            slug: "richard-lloyd-parry"
+          }
+        }
+      ],
+      image: null
+    },
+    {
+      byline: [
+        {
+          name: "inline",
+          children: [
+            {
+              name: "text",
+              children: [],
+              attributes: {
+                value: ", Hanoi"
+              }
+            }
+          ]
+        }
+      ],
+      image: null
+    }
+  ],
   summary105: {
     name: "paragraph",
     attributes: {},
@@ -171,6 +210,11 @@ class MockMarkup {
 
   addInlines(length: number = 1) {
     this.markup = generateMarkup(this.markup, markupTypes.inline.name, length);
+    return this;
+  }
+
+  addBylines() {
+    this.markup = markupTypes.bylines;
     return this;
   }
 

@@ -1,7 +1,7 @@
 import { article } from "@times-components/provider-test-tools";
 
 const createArticle = () => ({
-  byline: [],
+  bylines: [],
   hasVideo: false,
   headline: `Patisserie calls in turnaround king after chief executive quits`,
   id: `97c64f20-cb67-11e4-a202-50ac5def393a`,
@@ -100,21 +100,25 @@ const description = () => [
   }
 ];
 
-const byline = () => [
+const bylines = () => [
   {
-    attributes: {
-      slug: "will-hodgkinson"
-    },
-    children: [
+    byline: [
       {
         attributes: {
-          value: "Will Hodgkinson"
+          slug: "will-hodgkinson"
         },
-        children: [],
-        name: "text"
+        children: [
+          {
+            attributes: {
+              value: "Will Hodgkinson"
+            },
+            children: [],
+            name: "text"
+          }
+        ],
+        name: "author"
       }
-    ],
-    name: "author"
+    ]
   }
 ];
 const totalArticleCount = 40;
@@ -152,7 +156,7 @@ export default () => ({
         count: totalArticleCount,
         list: createArticles(pageArtCount)
       },
-      byline,
+      bylines,
       description,
       name: "Canada"
     })

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.6.0](https://github.com/newsuk/times-components/compare/@times-components/svgs@2.5.4...@times-components/svgs@2.6.0) (2019-04-05)
+
+
+### Features
+
+* react native svg on android ([#1856](https://github.com/newsuk/times-components/issues/1856)) ([b690c32](https://github.com/newsuk/times-components/commit/b690c32))
+
+
+
+
+
 ## [2.5.4](https://github.com/newsuk/times-components/compare/@times-components/svgs@2.5.3...@times-components/svgs@2.5.4) (2019-03-14)
 
 **Note:** Version bump only for package @times-components/svgs

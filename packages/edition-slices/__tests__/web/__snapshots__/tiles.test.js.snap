@@ -329,7 +329,10 @@ exports[`8. tile h 1`] = `
       </div>
       <div>
         <span>
-          Libby Purves
+          Richard Lloyd Parry
+        </span>
+        <span>
+          , Hanoi
         </span>
       </div>
     </div>
@@ -648,7 +651,10 @@ exports[`16. tile p 1`] = `
       </div>
       <div>
         <span>
-          Libby Purves
+          Richard Lloyd Parry
+        </span>
+        <span>
+          , Hanoi
         </span>
       </div>
     </div>
@@ -1127,7 +1133,10 @@ exports[`28. tile ab 1`] = `
       </div>
       <div>
         <span>
-          Libby Purves
+          Richard Lloyd Parry
+        </span>
+        <span>
+          , Hanoi
         </span>
       </div>
     </div>
@@ -1390,6 +1399,46 @@ exports[`35. tile an 1`] = `
           ...
         </span>
       </div>
+      <div>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+        />
+      </div>
+    </div>
+  </div>
+</Link>
+`;
+
+exports[`36. tile ap 1`] = `
+<Link
+  url="/article/123"
+>
+  <div>
+    <div>
+      <Image
+        aspectRatio={1}
+        uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
+      />
+    </div>
+    <div>
+      <div>
+        <div>
+          LABEL
+        </div>
+      </div>
+      <h3
+        aria-level="3"
+        role="heading"
+      >
+        This is tile headline
+      </h3>
       <div>
         <ArticleFlags
           flags={

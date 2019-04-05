@@ -2100,7 +2100,7 @@ exports[`29. secondary two no pic and two - wide 1`] = `
     <View
       style={
         Object {
-          "width": "50%",
+          "width": "33.4%",
         }
       }
     >
@@ -2119,40 +2119,12 @@ exports[`29. secondary two no pic and two - wide 1`] = `
     <View
       style={
         Object {
-          "width": "50%",
+          "paddingHorizontal": 5,
+          "width": "16.6%",
         }
       }
     >
-      <TileAE />
-    </View>
-  </View>
-  <View
-    style={
-      Object {
-        "borderBottomWidth": 1,
-        "borderColor": "#DBDBDB",
-        "borderStyle": "solid",
-        "marginHorizontal": 10,
-      }
-    }
-  />
-  <View
-    style={
-      Object {
-        "flex": 1,
-        "flexDirection": "row",
-        "marginHorizontal": 10,
-      }
-    }
-  >
-    <View
-      style={
-        Object {
-          "width": "50%",
-        }
-      }
-    >
-      <TileG />
+      <TileAP />
     </View>
     <View
       style={
@@ -2167,11 +2139,31 @@ exports[`29. secondary two no pic and two - wide 1`] = `
     <View
       style={
         Object {
-          "width": "50%",
+          "width": "33.4%",
         }
       }
     >
-      <TileG />
+      <TileAE />
+    </View>
+    <View
+      style={
+        Object {
+          "borderColor": "#DBDBDB",
+          "borderRightWidth": 1,
+          "borderStyle": "solid",
+          "marginVertical": 10,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "paddingHorizontal": 5,
+          "width": "16.6%",
+        }
+      }
+    >
+      <TileAP />
     </View>
   </View>
 </View>
@@ -3259,16 +3251,17 @@ exports[`44. secondary two no pic and two - huge 1`] = `
   <View
     style={
       Object {
-        "flex": 1,
+        "alignSelf": "center",
         "flexDirection": "row",
         "marginHorizontal": 10,
+        "width": "86%",
       }
     }
   >
     <View
       style={
         Object {
-          "width": "50%",
+          "width": "33.4%",
         }
       }
     >
@@ -3287,40 +3280,12 @@ exports[`44. secondary two no pic and two - huge 1`] = `
     <View
       style={
         Object {
-          "width": "50%",
+          "paddingHorizontal": 10,
+          "width": "16.6%",
         }
       }
     >
-      <TileAE />
-    </View>
-  </View>
-  <View
-    style={
-      Object {
-        "borderBottomWidth": 1,
-        "borderColor": "#DBDBDB",
-        "borderStyle": "solid",
-        "marginHorizontal": 10,
-      }
-    }
-  />
-  <View
-    style={
-      Object {
-        "flex": 1,
-        "flexDirection": "row",
-        "marginHorizontal": 10,
-      }
-    }
-  >
-    <View
-      style={
-        Object {
-          "width": "50%",
-        }
-      }
-    >
-      <TileG />
+      <TileAP />
     </View>
     <View
       style={
@@ -3335,11 +3300,31 @@ exports[`44. secondary two no pic and two - huge 1`] = `
     <View
       style={
         Object {
-          "width": "50%",
+          "width": "33.4%",
         }
       }
     >
-      <TileG />
+      <TileAE />
+    </View>
+    <View
+      style={
+        Object {
+          "borderColor": "#DBDBDB",
+          "borderRightWidth": 1,
+          "borderStyle": "solid",
+          "marginVertical": 10,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "paddingHorizontal": 10,
+          "width": "16.6%",
+        }
+      }
+    >
+      <TileAP />
     </View>
   </View>
 </View>

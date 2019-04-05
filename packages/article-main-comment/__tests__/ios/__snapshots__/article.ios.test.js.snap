@@ -21,17 +21,28 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
             ast={
               Array [
                 Object {
-                  "attributes": Object {},
-                  "children": Array [
+                  "byline": Array [
                     Object {
-                      "attributes": Object {
-                        "value": "Rick Broadbent",
-                      },
-                      "children": Array [],
-                      "name": "text",
+                      "attributes": Object {},
+                      "children": Array [
+                        Object {
+                          "attributes": Object {
+                            "value": "Some byline",
+                          },
+                          "children": Array [],
+                          "name": "text",
+                        },
+                      ],
+                      "name": "inline",
                     },
                   ],
-                  "name": "inline",
+                  "image": Object {
+                    "crop": Object {
+                      "ratio": "1:1",
+                      "url": "https://image.io",
+                    },
+                    "id": "36f9b2e8-0d41-464a-9e95-921bdb6895be",
+                  },
                 },
               ]
             }
@@ -65,17 +76,28 @@ exports[`4. an article with ads 1`] = `
             ast={
               Array [
                 Object {
-                  "attributes": Object {},
-                  "children": Array [
+                  "byline": Array [
                     Object {
-                      "attributes": Object {
-                        "value": "Rick Broadbent",
-                      },
-                      "children": Array [],
-                      "name": "text",
+                      "attributes": Object {},
+                      "children": Array [
+                        Object {
+                          "attributes": Object {
+                            "value": "Some byline",
+                          },
+                          "children": Array [],
+                          "name": "text",
+                        },
+                      ],
+                      "name": "inline",
                     },
                   ],
-                  "name": "inline",
+                  "image": Object {
+                    "crop": Object {
+                      "ratio": "1:1",
+                      "url": "https://image.io",
+                    },
+                    "id": "36f9b2e8-0d41-464a-9e95-921bdb6895be",
+                  },
                 },
               ]
             }

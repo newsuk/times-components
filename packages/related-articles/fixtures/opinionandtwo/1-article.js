@@ -132,19 +132,23 @@ export default ({
     relatedArticleSlice: {
       opinion: {
         article: {
-          byline: [
+          bylines: [
             {
-              attributes: {},
-              children: [
+              byline: [
                 {
-                  attributes: {
-                    value: "Sathnam Sanghera"
-                  },
-                  children: [],
-                  name: "text"
+                  attributes: {},
+                  children: [
+                    {
+                      attributes: {
+                        value: "Sathnam Sanghera"
+                      },
+                      children: [],
+                      name: "text"
+                    }
+                  ],
+                  name: "inline"
                 }
-              ],
-              name: "inline"
+              ]
             }
           ],
           headline,

@@ -10,7 +10,7 @@ import styles from "../styles";
 const Separator = () => <View style={styles.separator} />;
 
 const ArticleMeta = ({
-  byline,
+  bylines,
   isTablet,
   hasElementsAbove,
   onAuthorPress,
@@ -24,9 +24,9 @@ const ArticleMeta = ({
       isTablet && styles.metaContainerTablet
     ]}
   >
-    {byline && (
+    {bylines && (
       <View style={[styles.meta, isTablet && styles.metaTablet]}>
-        <ArticleBylineWithLinks ast={byline} onAuthorPress={onAuthorPress} />
+        <ArticleBylineWithLinks ast={bylines} onAuthorPress={onAuthorPress} />
       </View>
     )}
     {isTablet ? <Separator /> : null}

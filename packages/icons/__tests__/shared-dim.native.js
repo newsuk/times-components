@@ -16,7 +16,9 @@ export default () => {
     compose(
       print,
       replaceTransform({
-        ARTSurfaceView: propsNoChildren
+        ARTSurfaceView: propsNoChildren,
+        RNSVGPath: propsNoChildren,
+        RNSVGSvgView: propsNoChildren
       }),
       flattenStyleTransform,
       minimaliseTransform((value, key) => key === "opacity")

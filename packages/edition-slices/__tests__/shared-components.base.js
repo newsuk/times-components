@@ -266,7 +266,7 @@ export default () => {
       }
     },
     {
-      name: "Tile Star is rendered as already saved",
+      name: "Tile Star is rendered as already saved in default light theme",
       test: () => {
         const onArticleSavePress = jest.fn();
         const savedArticles = { "1": true };
@@ -283,10 +283,31 @@ export default () => {
         );
 
         expect(output.root.findByType(StarButton).props.selected).toEqual(true);
+        expect(output.root.findByType(StarButton).props.isDark).toEqual(false);
       }
     },
     {
-      name: "Tile Star is rendered as not yet saved",
+      name: "Tile Star is rendered as already saved in dark theme",
+      test: () => {
+        const onArticleSavePress = jest.fn();
+        const savedArticles = { "1": true };
+
+        const output = TestRenderer.create(
+          <SectionContext.Provider
+            value={{
+              onArticleSavePress,
+              savedArticles
+            }}
+          >
+            <TileStar articleId="1" isDark />
+          </SectionContext.Provider>
+        );
+
+        expect(output.root.findByType(StarButton).props.isDark).toEqual(true);
+      }
+    },
+    {
+      name: "Tile Star is rendered as not yet saved in default light theme",
       test: () => {
         const onArticleSavePress = jest.fn();
         const savedArticles = { "1": true };
@@ -305,10 +326,31 @@ export default () => {
         expect(output.root.findByType(StarButton).props.selected).toEqual(
           false
         );
+        expect(output.root.findByType(StarButton).props.isDark).toEqual(false);
       }
     },
     {
-      name: "Tile Star is disabled",
+      name: "Tile Star is rendered as not yet saved in dark theme",
+      test: () => {
+        const onArticleSavePress = jest.fn();
+        const savedArticles = { "1": true };
+
+        const output = TestRenderer.create(
+          <SectionContext.Provider
+            value={{
+              onArticleSavePress,
+              savedArticles
+            }}
+          >
+            <TileStar articleId="I am not saved yet" isDark />
+          </SectionContext.Provider>
+        );
+
+        expect(output.root.findByType(StarButton).props.isDark).toEqual(true);
+      }
+    },
+    {
+      name: "Tile Star is disabled in default light theme",
       test: () => {
         const onArticleSavePress = jest.fn();
         const savedArticles = null;
@@ -325,6 +367,27 @@ export default () => {
         );
 
         expect(output.root.findByType(StarButton).props.disabled).toEqual(true);
+        expect(output.root.findByType(StarButton).props.isDark).toEqual(false);
+      }
+    },
+    {
+      name: "Tile Star is disabled in dark theme",
+      test: () => {
+        const onArticleSavePress = jest.fn();
+        const savedArticles = null;
+
+        const output = TestRenderer.create(
+          <SectionContext.Provider
+            value={{
+              onArticleSavePress,
+              savedArticles
+            }}
+          >
+            <TileStar articleId="1" isDark />
+          </SectionContext.Provider>
+        );
+
+        expect(output.root.findByType(StarButton).props.isDark).toEqual(true);
       }
     }
   ];

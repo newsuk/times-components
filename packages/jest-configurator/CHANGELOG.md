@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.4.0](https://github.com/newsuk/times-components/compare/@times-components/jest-configurator@2.3.4...@times-components/jest-configurator@2.4.0) (2019-04-05)
+
+
+### Features
+
+* react native svg on android ([#1856](https://github.com/newsuk/times-components/issues/1856)) ([b690c32](https://github.com/newsuk/times-components/commit/b690c32))
+
+
+
+
+
 ## [2.3.4](https://github.com/newsuk/times-components/compare/@times-components/jest-configurator@2.3.3...@times-components/jest-configurator@2.3.4) (2019-03-14)
 
 **Note:** Version bump only for package @times-components/jest-configurator

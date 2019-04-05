@@ -1,111 +1,164 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. iconemail renders with different colours 1`] = `
-<ARTShape
-  fill={
-    Array [
-      0,
-      0.9803921568627451,
-      0.792156862745098,
-      0.8705882352941177,
-      1,
-    ]
-  }
-  stroke={
-    Array [
-      0.7529411764705882,
-      1,
-      0.9333333333333333,
-      1,
-    ]
-  }
-/>
+<RNSVGSvgView>
+  <RNSVGGroup
+    fill={
+      Array [
+        0,
+        0.9803921568627451,
+        0.792156862745098,
+        0.8705882352941177,
+        1,
+      ]
+    }
+    stroke={
+      Array [
+        0,
+        0.7529411764705882,
+        1,
+        0.9333333333333333,
+        1,
+      ]
+    }
+  >
+    <RNSVGPath
+      fill={
+        Array [
+          0,
+          0,
+          0,
+          0,
+          1,
+        ]
+      }
+      stroke={null}
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
 `;
 
 exports[`2. iconfacebook renders with different colours 1`] = `
-<ARTShape
-  fill={
-    Array [
-      0,
-      0.9803921568627451,
-      0.792156862745098,
-      0.8705882352941177,
-      1,
-    ]
-  }
-  stroke={
-    Array [
-      0.7529411764705882,
-      1,
-      0.9333333333333333,
-      1,
-    ]
-  }
-/>
+<RNSVGSvgView>
+  <RNSVGGroup
+    fill={
+      Array [
+        0,
+        0.9803921568627451,
+        0.792156862745098,
+        0.8705882352941177,
+        1,
+      ]
+    }
+    stroke={
+      Array [
+        0,
+        0.7529411764705882,
+        1,
+        0.9333333333333333,
+        1,
+      ]
+    }
+  >
+    <RNSVGPath
+      fill={
+        Array [
+          0,
+          0,
+          0,
+          0,
+          1,
+        ]
+      }
+      stroke={null}
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
 `;
 
 exports[`3. iconforwardarrow renders with different colours 1`] = `
-<ARTShape
-  fill={
-    Array [
-      0,
-      0.9803921568627451,
-      0.792156862745098,
-      0.8705882352941177,
-      1,
-    ]
-  }
-  stroke={null}
-/>
+<RNSVGSvgView>
+  <RNSVGGroup
+    fill={
+      Array [
+        0,
+        0.9803921568627451,
+        0.792156862745098,
+        0.8705882352941177,
+        1,
+      ]
+    }
+    stroke={null}
+  >
+    <RNSVGPath
+      fill={
+        Array [
+          0,
+          0,
+          0,
+          0,
+          1,
+        ]
+      }
+      stroke={null}
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
 `;
 
 exports[`4. iconstar renders with different colours 1`] = `
-<ARTShape
-  fill={
-    Array [
-      0,
-      0.9803921568627451,
-      0.792156862745098,
-      0.8705882352941177,
-      1,
-    ]
-  }
-  stroke={
-    Array [
-      0.7529411764705882,
-      1,
-      0.9333333333333333,
-      1,
-    ]
-  }
-/>
+<RNSVGSvgView>
+  <RNSVGPath
+    fill={
+      Array [
+        0,
+        0.9803921568627451,
+        0.792156862745098,
+        0.8705882352941177,
+        1,
+      ]
+    }
+    stroke={
+      Array [
+        0,
+        0.7529411764705882,
+        1,
+        0.9333333333333333,
+        1,
+      ]
+    }
+  />
+</RNSVGSvgView>
 `;
 
 exports[`5. icontwitter renders with different colours 1`] = `
-<ARTShape
-  fill={
-    Array [
-      0,
-      0.9803921568627451,
-      0.792156862745098,
-      0.8705882352941177,
-      1,
-    ]
-  }
-  stroke={
-    Array [
-      0.7529411764705882,
-      1,
-      0.9333333333333333,
-      1,
-    ]
-  }
-/>
+<RNSVGSvgView>
+  <RNSVGPath
+    fill={
+      Array [
+        0,
+        0.9803921568627451,
+        0.792156862745098,
+        0.8705882352941177,
+        1,
+      ]
+    }
+    stroke={
+      Array [
+        0,
+        0.7529411764705882,
+        1,
+        0.9333333333333333,
+        1,
+      ]
+    }
+  />
+</RNSVGSvgView>
 `;
 
 exports[`6. iconvideo renders with different colours 1`] = `
-Array [
-  <ARTShape
+<RNSVGSvgView>
+  <RNSVGRect
     fill={
       Array [
         0,
@@ -117,14 +170,15 @@ Array [
     }
     stroke={
       Array [
+        0,
         0.7529411764705882,
         1,
         0.9333333333333333,
         1,
       ]
     }
-  />,
-  <ARTShape
+  />
+  <RNSVGPath
     fill={
       Array [
         0,
@@ -136,78 +190,88 @@ Array [
     }
     stroke={
       Array [
+        0,
         0.7529411764705882,
         1,
         0.9333333333333333,
         1,
       ]
     }
-  />,
-]
+  />
+</RNSVGSvgView>
 `;
 
 exports[`7. iconvideo360player renders with different colours 1`] = `
-<ARTShape
-  fill={
-    Array [
-      0,
-      0.9803921568627451,
-      0.792156862745098,
-      0.8705882352941177,
-      1,
-    ]
-  }
-  stroke={
-    Array [
-      0.7529411764705882,
-      1,
-      0.9333333333333333,
-      1,
-    ]
-  }
-/>
+<RNSVGSvgView>
+  <RNSVGPath
+    fill={
+      Array [
+        0,
+        0.9803921568627451,
+        0.792156862745098,
+        0.8705882352941177,
+        1,
+      ]
+    }
+    stroke={
+      Array [
+        0,
+        0.7529411764705882,
+        1,
+        0.9333333333333333,
+        1,
+      ]
+    }
+  />
+</RNSVGSvgView>
 `;
 
 exports[`8. thestlogo renders with different colours 1`] = `
-<ARTShape
-  fill={
-    Array [
-      0,
-      0.9803921568627451,
-      0.792156862745098,
-      0.8705882352941177,
-      1,
-    ]
-  }
-  stroke={
-    Array [
-      0.7529411764705882,
-      1,
-      0.9333333333333333,
-      1,
-    ]
-  }
-/>
+<RNSVGSvgView>
+  <RNSVGPath
+    fill={
+      Array [
+        0,
+        0.9803921568627451,
+        0.792156862745098,
+        0.8705882352941177,
+        1,
+      ]
+    }
+    stroke={
+      Array [
+        0,
+        0.7529411764705882,
+        1,
+        0.9333333333333333,
+        1,
+      ]
+    }
+  />
+</RNSVGSvgView>
 `;
 
 exports[`9. thetimeslogo renders with different colours 1`] = `
-<ARTShape
-  fill={
-    Array [
-      0,
-      0.9803921568627451,
-      0.792156862745098,
-      0.8705882352941177,
-      1,
-    ]
-  }
-  stroke={
-    Array [
-      0.7529411764705882,
-      1,
-      0.9333333333333333,
-      1,
-    ]
-  }
-/>
+<RNSVGSvgView>
+  <RNSVGPath
+    fill={
+      Array [
+        0,
+        0.9803921568627451,
+        0.792156862745098,
+        0.8705882352941177,
+        1,
+      ]
+    }
+    stroke={
+      Array [
+        0,
+        0.7529411764705882,
+        1,
+        0.9333333333333333,
+        1,
+      ]
+    }
+  />
+</RNSVGSvgView>
 `;

@@ -51,3 +51,59 @@ Array [
   </div>,
 ]
 `;
+
+exports[`3. secondary two no pic and two - wide 1`] = `
+<div>
+  <div>
+    <div>
+      secondary-1
+    </div>
+  </div>
+  <div />
+  <div>
+    <div>
+      support-1
+    </div>
+  </div>
+  <div />
+  <div>
+    <div>
+      secondary-2
+    </div>
+  </div>
+  <div />
+  <div>
+    <div>
+      support-2
+    </div>
+  </div>
+</div>
+`;
+
+exports[`4. secondary two no pic and two - huge 1`] = `
+<div>
+  <div>
+    <div>
+      secondary-1
+    </div>
+  </div>
+  <div />
+  <div>
+    <div>
+      support-1
+    </div>
+  </div>
+  <div />
+  <div>
+    <div>
+      secondary-2
+    </div>
+  </div>
+  <div />
+  <div>
+    <div>
+      support-2
+    </div>
+  </div>
+</div>
+`;

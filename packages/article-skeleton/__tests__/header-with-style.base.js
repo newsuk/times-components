@@ -9,7 +9,7 @@ import articleFixture from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
 
 const emptyArticle = {
-  byline: null,
+  bylines: null,
   flags: null,
   hasVideo: null,
   label: null,

@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { ScrollView, StyleSheet, Text, View } from "react-native";
 import { colours, fonts } from "@times-components/styleguide";
 import * as Icons from "./src/icons";
 
@@ -58,9 +58,11 @@ export default {
   children: [
     {
       component: ({ color }) => (
-        <View style={styles.wrapper}>
-          {Object.entries(Icons).map(renderIcon(color))}
-        </View>
+        <ScrollView>
+          <View style={styles.wrapper}>
+            {Object.entries(Icons).map(renderIcon(color))}
+          </View>
+        </ScrollView>
       ),
       name: "Icons",
       type: "story"
