@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
   ...sharedStyles,
   container: {
     ...sharedStyles.container,
-    marginBottom: 3
+    marginBottom: 1
   },
   iconContainer: {
     ...sharedStyles.iconContainer,
@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
   },
   title: {
     ...sharedStyles.title,
-    lineHeight: 11
+    lineHeight: 12
   }
 });
 
