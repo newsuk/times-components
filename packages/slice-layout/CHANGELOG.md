@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.26.0](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.25.5...@times-components/slice-layout@0.26.0) (2019-04-05)
+
+
+### Features
+
+* new modal image & related changes ([#1853](https://github.com/newsuk/times-components/issues/1853)) ([e1641c6](https://github.com/newsuk/times-components/commit/e1641c6))
+
+
+
+
+
 ## [0.25.5](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.25.4...@times-components/slice-layout@0.25.5) (2019-04-05)
 
 

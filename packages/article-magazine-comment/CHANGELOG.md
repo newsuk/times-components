@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@1.1.5...@times-components/article-magazine-comment@1.2.0) (2019-04-05)
+
+
+### Features
+
+* new modal image & related changes ([#1853](https://github.com/newsuk/times-components/issues/1853)) ([e1641c6](https://github.com/newsuk/times-components/commit/e1641c6))
+
+
+
+
+
 ## [1.1.5](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@1.1.4...@times-components/article-magazine-comment@1.1.5) (2019-04-05)
 
 **Note:** Version bump only for package @times-components/article-magazine-comment
