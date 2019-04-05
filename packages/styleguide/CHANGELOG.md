@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.26.5](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.26.4...@times-components/styleguide@3.26.5) (2019-04-05)
+
+
+### Bug Fixes
+
+* ripple effect is not full width any more ([#1855](https://github.com/newsuk/times-components/issues/1855)) ([f938631](https://github.com/newsuk/times-components/commit/f938631))
+
+
+
+
+
 ## [3.26.4](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.26.3...@times-components/styleguide@3.26.4) (2019-04-05)
 
 **Note:** Version bump only for package @times-components/styleguide
