@@ -77,13 +77,11 @@ exports[`1. modal image 1`] = `
           </View>
         </Gestures>
       </SafeAreaView>
-      <Gradient
-        degrees={180}
-        endColour="#000000E6"
-        endPoint="0.6428571428571428"
+      <OverlayGradient
+        degrees={0}
         height={140}
         pointerEvents="none"
-        startColour="#00000000"
+        startPoint="0.35714285714285715"
         width={500}
       >
         <SafeAreaView
@@ -101,7 +99,7 @@ exports[`1. modal image 1`] = `
             </Text>
           </View>
         </SafeAreaView>
-      </Gradient>
+      </OverlayGradient>
     </View>
   </Modal>
   <View>
@@ -186,13 +184,11 @@ exports[`2. modal image with no caption 1`] = `
           </View>
         </Gestures>
       </SafeAreaView>
-      <Gradient
-        degrees={180}
-        endColour="#000000E6"
-        endPoint="0.6428571428571428"
+      <OverlayGradient
+        degrees={0}
         height={140}
         pointerEvents="none"
-        startColour="#00000000"
+        startPoint="0.35714285714285715"
         width={500}
       >
         <SafeAreaView
@@ -204,7 +200,7 @@ exports[`2. modal image with no caption 1`] = `
             }
           }
         />
-      </Gradient>
+      </OverlayGradient>
     </View>
   </Modal>
   <View>
@@ -296,13 +292,11 @@ exports[`3. modal image with custom highressize 1`] = `
           </View>
         </Gestures>
       </SafeAreaView>
-      <Gradient
-        degrees={180}
-        endColour="#000000E6"
-        endPoint="0.6428571428571428"
+      <OverlayGradient
+        degrees={0}
         height={140}
         pointerEvents="none"
-        startColour="#00000000"
+        startPoint="0.35714285714285715"
         width={500}
       >
         <SafeAreaView
@@ -320,7 +314,7 @@ exports[`3. modal image with custom highressize 1`] = `
             </Text>
           </View>
         </SafeAreaView>
-      </Gradient>
+      </OverlayGradient>
     </View>
   </Modal>
   <View>
@@ -461,13 +455,11 @@ exports[`9. re-shows elements when tapping on the image a second time 1`] = `
           </View>
         </Gestures>
       </SafeAreaView>
-      <Gradient
-        degrees={180}
-        endColour="#000000E6"
-        endPoint="0.6428571428571428"
+      <OverlayGradient
+        degrees={0}
         height={140}
         pointerEvents="none"
-        startColour="#00000000"
+        startPoint="0.35714285714285715"
         width={500}
       >
         <SafeAreaView
@@ -485,7 +477,7 @@ exports[`9. re-shows elements when tapping on the image a second time 1`] = `
             </Text>
           </View>
         </SafeAreaView>
-      </Gradient>
+      </OverlayGradient>
     </View>
   </Modal>
   <View>

@@ -102,7 +102,7 @@ exports[`1. landscape default modal 1`] = `
       <View
         style={
           Object {
-            "backgroundColor": "rgba(0, 0, 0, 0.7)",
+            "backgroundColor": "#000000B3",
             "flex": 0,
             "marginTop": "auto",
             "position": "relative",
@@ -270,7 +270,7 @@ exports[`2. portrait default modal 1`] = `
       <View
         style={
           Object {
-            "backgroundColor": "rgba(0, 0, 0, 0.7)",
+            "backgroundColor": "#000000B3",
             "flex": 0,
             "marginTop": "auto",
             "position": "relative",
@@ -438,7 +438,7 @@ exports[`3. tablet landscape default modal 1`] = `
       <View
         style={
           Object {
-            "backgroundColor": "rgba(0, 0, 0, 0.7)",
+            "backgroundColor": "#000000B3",
             "flex": 0,
             "marginTop": "auto",
             "position": "relative",
@@ -606,7 +606,7 @@ exports[`4. tablet portrait default modal 1`] = `
       <View
         style={
           Object {
-            "backgroundColor": "rgba(0, 0, 0, 0.7)",
+            "backgroundColor": "#000000B3",
             "flex": 0,
             "marginTop": "auto",
             "position": "relative",

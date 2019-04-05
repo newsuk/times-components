@@ -61,11 +61,7 @@ class GradientBase extends Component {
     return (
       <View
         onLayout={this.onLayout}
-        style={[
-          { backgroundColor: startColour, height, width },
-          styles.container,
-          style
-        ]}
+        style={[{ height, width }, styles.container, style]}
       >
         <Surface height={height} style={styles.surface} width={width}>
           <Shape

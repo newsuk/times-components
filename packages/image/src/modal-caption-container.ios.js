@@ -1,21 +1,19 @@
 import React from "react";
 import { Dimensions } from "react-native";
-import Gradient from "@times-components/gradient";
+import { OverlayGradient } from "@times-components/gradient";
 import SafeAreaView from "./react-native-safe-area";
 
 const GRADIENT_HEIGHT = 140;
 const MIN_BLACK_HEIGHT = 50;
-const END_POINT = `${1 - MIN_BLACK_HEIGHT / GRADIENT_HEIGHT}`;
+const START_POINT = `${MIN_BLACK_HEIGHT / GRADIENT_HEIGHT}`;
 
 function ModalCaptionContainer({ children, style, ...props }) {
   return (
-    <Gradient
+    <OverlayGradient
       {...props}
-      degrees={180}
-      endColour="#000000E6"
-      endPoint={END_POINT}
+      degrees={0}
       height={GRADIENT_HEIGHT}
-      startColour="#00000000"
+      startPoint={START_POINT}
       style={[style, { height: GRADIENT_HEIGHT }]}
       width={Dimensions.get("window").width}
     >
@@ -28,7 +26,7 @@ function ModalCaptionContainer({ children, style, ...props }) {
       >
         {children}
       </SafeAreaView>
-    </Gradient>
+    </OverlayGradient>
   );
 }
 

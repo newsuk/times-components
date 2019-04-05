@@ -100,7 +100,7 @@ exports[`1. landscape default modal 1`] = `
           </View>
         </Gestures>
       </SafeAreaView>
-      <Gradient
+      <OverlayGradient
         style={
           Object {
             "flex": 0,
@@ -146,7 +146,7 @@ exports[`1. landscape default modal 1`] = `
             </Text>
           </View>
         </SafeAreaView>
-      </Gradient>
+      </OverlayGradient>
     </View>
   </Modal>
   <View
@@ -278,7 +278,7 @@ exports[`2. portrait default modal 1`] = `
           </View>
         </Gestures>
       </SafeAreaView>
-      <Gradient
+      <OverlayGradient
         style={
           Object {
             "flex": 0,
@@ -324,7 +324,7 @@ exports[`2. portrait default modal 1`] = `
             </Text>
           </View>
         </SafeAreaView>
-      </Gradient>
+      </OverlayGradient>
     </View>
   </Modal>
   <View
@@ -456,7 +456,7 @@ exports[`3. tablet landscape default modal 1`] = `
           </View>
         </Gestures>
       </SafeAreaView>
-      <Gradient
+      <OverlayGradient
         style={
           Object {
             "flex": 0,
@@ -502,7 +502,7 @@ exports[`3. tablet landscape default modal 1`] = `
             </Text>
           </View>
         </SafeAreaView>
-      </Gradient>
+      </OverlayGradient>
     </View>
   </Modal>
   <View
@@ -634,7 +634,7 @@ exports[`4. tablet portrait default modal 1`] = `
           </View>
         </Gestures>
       </SafeAreaView>
-      <Gradient
+      <OverlayGradient
         style={
           Object {
             "flex": 0,
@@ -680,7 +680,7 @@ exports[`4. tablet portrait default modal 1`] = `
             </Text>
           </View>
         </SafeAreaView>
-      </Gradient>
+      </OverlayGradient>
     </View>
   </Modal>
   <View
