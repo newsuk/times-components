@@ -160,8 +160,6 @@ const fontFixture = select => {
 const colourStoriesBuilder = getBuilder();
 colourStoriesBuilder
   .add({ colourMap: colours.functional, name: "Functional Colours" })
-  .add({ colourMap: colours.star.light, name: "Light Star Colours" })
-  .add({ colourMap: colours.star.dark, name: "Dark Star Colours" })
   .add({
     colourMap: colours.secondarySectionColours,
     name: "Secondary Section Colours"

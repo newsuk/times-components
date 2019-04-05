@@ -1,4 +1,4 @@
-import { colours, spacing } from "@times-components/styleguide";
+import { spacing } from "@times-components/styleguide";
 
 const styles = {
   container: {
@@ -8,19 +8,30 @@ const styles = {
   }
 };
 
+const themes = {
+  dark: {
+    default: "#CCC",
+    selected: "#3C81BE"
+  },
+  light: {
+    default: "#696969",
+    selected: "#006699"
+  }
+};
+
 const lightStar = {
   disabled: {
     fillColour: "none",
     opacity: "0.4",
-    strokeColour: colours.star.light.default
+    strokeColour: themes.light.default
   },
   initial: {
     fillColour: "none",
     opacity: "1",
-    strokeColour: colours.star.light.default
+    strokeColour: themes.light.default
   },
   selected: {
-    fillColour: colours.star.light.selected,
+    fillColour: themes.light.selected,
     opacity: "1",
     strokeColour: "none"
   }
@@ -29,15 +40,15 @@ const lightStar = {
 const darkStar = {
   disabled: {
     ...lightStar.disabled,
-    strokeColour: colours.star.dark.default
+    strokeColour: themes.dark.default
   },
   initial: {
     ...lightStar.initial,
-    strokeColour: colours.star.dark.default
+    strokeColour: themes.dark.default
   },
   selected: {
     ...lightStar.selected,
-    fillColour: colours.star.dark.selected
+    fillColour: themes.dark.selected
   }
 };
 
