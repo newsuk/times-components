@@ -1944,16 +1944,33 @@ exports[`36. tile ap 1`] = `
         This is tile headline
       </Text>
       <View>
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
+        <View>
+          <View>
+            <ArticleFlags
+              flags={
+                Array [
+                  Object {
+                    "expiryTime": "2030-03-14T12:00:00.000Z",
+                    "type": "EXCLUSIVE",
+                  },
+                  Object {
+                    "expiryTime": "2030-03-14T12:00:00.000Z",
+                    "type": "NEW",
+                  },
+                  Object {
+                    "expiryTime": "2030-03-14T12:00:00.000Z",
+                    "type": "SPONSORED",
+                  },
+                  Object {
+                    "expiryTime": "2030-03-14T12:00:00.000Z",
+                    "type": "UPDATED",
+                  },
+                ]
+              }
+            />
+          </View>
+          <View />
+        </View>
       </View>
     </View>
   </View>

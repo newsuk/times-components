@@ -3723,7 +3723,34 @@ exports[`36. tile ap 1`] = `
           }
         }
       >
-        <ArticleFlags />
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "flex-start",
+                "width": "75%",
+              }
+            }
+          >
+            <ArticleFlags />
+          </View>
+          <View
+            style={
+              Object {
+                "alignItems": "flex-end",
+                "flex": 1,
+                "marginTop": -5,
+                "width": "25%",
+              }
+            }
+          />
+        </View>
       </View>
     </View>
   </View>
