@@ -1,5 +1,5 @@
 import articleQuery from "./article";
-import articleCommentsQuery from "./article-comments";
+import articleExtrasQuery from "./article-extras";
 import * as authorArticlesNoImagesQuery from "./author-articles-no-images";
 import * as authorArticlesWithImagesQuery from "./author-articles-with-images";
 import authorQuery from "./author";
@@ -9,7 +9,7 @@ import topicQuery from "./topic";
 import * as topicArticlesQuery from "./topic-articles";
 
 export const article = articleQuery;
-export const articleComments = articleCommentsQuery;
+export const articleExtras = articleExtrasQuery;
 export const authorArticlesNoImages = authorArticlesNoImagesQuery.default;
 export const authorArticlesNoImagesPTV =
   authorArticlesNoImagesQuery.propsToVariables;
