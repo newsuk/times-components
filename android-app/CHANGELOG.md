@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.14.0](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.13.88...@times-components/android-app@0.14.0) (2019-04-05)
+
+
+### Features
+
+* react native svg on android ([#1856](https://github.com/newsuk/times-components/issues/1856)) ([b690c32](https://github.com/newsuk/times-components/commit/b690c32))
+
+
+
+
+
 ## [0.13.88](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.13.87...@times-components/android-app@0.13.88) (2019-04-04)
 
 **Note:** Version bump only for package @times-components/android-app
