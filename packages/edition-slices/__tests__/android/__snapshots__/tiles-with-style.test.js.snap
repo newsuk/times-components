@@ -991,8 +991,8 @@ exports[`9. tile i 1`] = `
         <View
           style={
             Object {
+              "alignItems": "center",
               "marginTop": 10,
-              "textAlign": "center",
             }
           }
         />
@@ -1367,8 +1367,8 @@ exports[`13. tile m 1`] = `
           <View
             style={
               Object {
+                "alignItems": "center",
                 "marginTop": 10,
-                "textAlign": "center",
               }
             }
           />
@@ -1699,8 +1699,8 @@ exports[`16. tile p 1`] = `
           <View
             style={
               Object {
+                "alignItems": "center",
                 "marginTop": 10,
-                "textAlign": "center",
               }
             }
           />
@@ -3172,8 +3172,8 @@ exports[`30. tile ag 1`] = `
           <View
             style={
               Object {
+                "alignItems": "center",
                 "marginTop": 10,
-                "textAlign": "center",
               }
             }
           />

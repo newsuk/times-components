@@ -20,8 +20,8 @@ const verticalStyles = {
   },
   flagStyle: {},
   starButton: {
-    marginTop: 10,
-    textAlign: "center"
+    alignItems: "center",
+    marginTop: 10
   }
 };
 
