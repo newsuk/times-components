@@ -2,16 +2,17 @@ import React from "react";
 import PropTypes from "prop-types";
 import Link from "@times-components/link";
 import { IconStar } from "@times-components/icons";
-import stars from "./styles";
+import styles, { getTheme } from "./styles";
 
-const StarButton = ({ disabled, height, onPress, selected }) => {
+const StarButton = ({ disabled, height, isDark, onPress, selected }) => {
+  const stars = getTheme({ isDark });
   const starState =
     (disabled && "disabled") || (selected && "selected") || "initial";
   const { fillColour, opacity, strokeColour } = stars[starState];
 
   return (
     // eslint-disable-next-line jsx-a11y/anchor-is-valid
-    <Link disabled={disabled} onPress={onPress}>
+    <Link disabled={disabled} linkStyle={styles.container} onPress={onPress}>
       <IconStar
         fillColour={fillColour}
         height={height}
@@ -25,6 +26,7 @@ const StarButton = ({ disabled, height, onPress, selected }) => {
 StarButton.propTypes = {
   disabled: PropTypes.bool,
   height: PropTypes.number,
+  isDark: PropTypes.bool,
   onPress: PropTypes.func.isRequired,
   selected: PropTypes.bool
 };
@@ -32,6 +34,7 @@ StarButton.propTypes = {
 StarButton.defaultProps = {
   disabled: false,
   height: 18,
+  isDark: false,
   selected: false
 };
 
