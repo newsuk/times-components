@@ -1415,3 +1415,43 @@ exports[`35. tile an 1`] = `
   </View>
 </Link>
 `;
+
+exports[`36. tile ap 1`] = `
+<Link
+  url="/article/123"
+>
+  <View>
+    <View>
+      <Image
+        aspectRatio={1}
+        uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
+      />
+    </View>
+    <View>
+      <View>
+        <Text>
+          LABEL
+        </Text>
+      </View>
+      <Text
+        accessibilityRole="heading"
+        aria-level="3"
+      >
+        This is tile headline
+      </Text>
+      <View>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+        />
+      </View>
+    </View>
+  </View>
+</Link>
+`;

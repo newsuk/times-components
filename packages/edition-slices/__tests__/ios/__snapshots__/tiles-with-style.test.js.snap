@@ -2780,3 +2780,83 @@ exports[`35. tile an 1`] = `
   </View>
 </Link>
 `;
+
+exports[`36. tile ap 1`] = `
+<Link>
+  <View
+    style={
+      Object {
+        "padding": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "borderRadius": 9999,
+          "overflow": "hidden",
+        }
+      }
+    >
+      <Image />
+    </View>
+    <View
+      style={
+        Object {
+          "justifyContent": "center",
+          "paddingHorizontal": 10,
+          "paddingTop": 5,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "marginBottom": 0,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#005B8D",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 12,
+              "fontWeight": "400",
+              "letterSpacing": 0.6,
+              "lineHeight": 14,
+              "marginBottom": 0,
+            }
+          }
+        >
+          LABEL
+        </Text>
+      </View>
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesModern-Bold",
+            "fontSize": 22,
+            "fontWeight": "900",
+            "lineHeight": 22,
+            "marginBottom": 5,
+            "paddingBottom": 5,
+          }
+        }
+      >
+        This is tile headline
+      </Text>
+      <View
+        style={
+          Object {
+            "marginBottom": 10,
+          }
+        }
+      >
+        <ArticleFlags />
+      </View>
+    </View>
+  </View>
+</Link>
+`;

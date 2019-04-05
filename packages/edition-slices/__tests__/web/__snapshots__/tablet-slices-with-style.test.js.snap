@@ -1429,7 +1429,7 @@ exports[`14. secondary two no pic and two - medium 1`] = `
 }
 
 .IS1 {
-  width: 50%;
+  width: 33.4%;
 }
 
 .IS2 {
@@ -1443,44 +1443,12 @@ exports[`14. secondary two no pic and two - medium 1`] = `
 }
 
 .IS3 {
-  width: 50%;
+  padding-right: 5px;
+  padding-left: 5px;
+  width: 16.6%;
 }
 
 .IS4 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin-right: 10px;
-  margin-left: 10px;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-}
-
-.IS5 {
-  border-bottom-width: 1px;
-  border-top-color: rgba(219,219,219,1.00);
-  border-right-color: rgba(219,219,219,1.00);
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-left-color: rgba(219,219,219,1.00);
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.IS6 {
-  width: 50%;
-}
-
-.IS7 {
   border-top-color: rgba(219,219,219,1.00);
   border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
@@ -1490,11 +1458,27 @@ exports[`14. secondary two no pic and two - medium 1`] = `
   margin-bottom: 10px;
 }
 
-.IS8 {
-  width: 50%;
+.IS5 {
+  width: 33.4%;
 }
 
-.IS9 {
+.IS6 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.IS7 {
+  padding-right: 5px;
+  padding-left: 5px;
+  width: 16.6%;
+}
+
+.IS8 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   -webkit-flex-shrink: 1;
@@ -1514,7 +1498,7 @@ exports[`14. secondary two no pic and two - medium 1`] = `
   -webkit-box-direction: normal;
 }
 
-.IS10 {
+.IS9 {
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
@@ -1524,10 +1508,10 @@ exports[`14. secondary two no pic and two - medium 1`] = `
 </style>
 
 <div
-  className="IS10 S1"
+  className="IS9 S1"
 >
   <div
-    className="IS4 S1"
+    className="IS8 S1"
   >
     <div
       className="IS1 S1"
@@ -1542,31 +1526,27 @@ exports[`14. secondary two no pic and two - medium 1`] = `
     <div
       className="IS3 S1"
     >
-      <TileAE
-        tileName="secondary2"
-      />
-    </div>
-  </div>
-  <div
-    className="IS5 S1"
-  />
-  <div
-    className="IS9 S1"
-  >
-    <div
-      className="IS6 S1"
-    >
-      <TileG
+      <TileAP
         tileName="support1"
       />
     </div>
     <div
-      className="IS7"
+      className="IS4"
     />
     <div
-      className="IS8 S1"
+      className="IS5 S1"
     >
-      <TileG
+      <TileAE
+        tileName="secondary2"
+      />
+    </div>
+    <div
+      className="IS6"
+    />
+    <div
+      className="IS7 S1"
+    >
+      <TileAP
         tileName="support2"
       />
     </div>
@@ -3127,7 +3107,7 @@ exports[`29. secondary two no pic and two - wide 1`] = `
 }
 
 .IS1 {
-  width: 50%;
+  width: 33.4%;
 }
 
 .IS2 {
@@ -3141,44 +3121,12 @@ exports[`29. secondary two no pic and two - wide 1`] = `
 }
 
 .IS3 {
-  width: 50%;
+  padding-right: 5px;
+  padding-left: 5px;
+  width: 16.6%;
 }
 
 .IS4 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin-right: 10px;
-  margin-left: 10px;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-}
-
-.IS5 {
-  border-bottom-width: 1px;
-  border-top-color: rgba(219,219,219,1.00);
-  border-right-color: rgba(219,219,219,1.00);
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-left-color: rgba(219,219,219,1.00);
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.IS6 {
-  width: 50%;
-}
-
-.IS7 {
   border-top-color: rgba(219,219,219,1.00);
   border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
@@ -3188,11 +3136,27 @@ exports[`29. secondary two no pic and two - wide 1`] = `
   margin-bottom: 10px;
 }
 
-.IS8 {
-  width: 50%;
+.IS5 {
+  width: 33.4%;
 }
 
-.IS9 {
+.IS6 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.IS7 {
+  padding-right: 5px;
+  padding-left: 5px;
+  width: 16.6%;
+}
+
+.IS8 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   -webkit-flex-shrink: 1;
@@ -3212,7 +3176,7 @@ exports[`29. secondary two no pic and two - wide 1`] = `
   -webkit-box-direction: normal;
 }
 
-.IS10 {
+.IS9 {
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
@@ -3222,10 +3186,10 @@ exports[`29. secondary two no pic and two - wide 1`] = `
 </style>
 
 <div
-  className="IS10 S1"
+  className="IS9 S1"
 >
   <div
-    className="IS4 S1"
+    className="IS8 S1"
   >
     <div
       className="IS1 S1"
@@ -3240,31 +3204,27 @@ exports[`29. secondary two no pic and two - wide 1`] = `
     <div
       className="IS3 S1"
     >
-      <TileAE
-        tileName="secondary2"
-      />
-    </div>
-  </div>
-  <div
-    className="IS5 S1"
-  />
-  <div
-    className="IS9 S1"
-  >
-    <div
-      className="IS6 S1"
-    >
-      <TileG
+      <TileAP
         tileName="support1"
       />
     </div>
     <div
-      className="IS7"
+      className="IS4"
     />
     <div
-      className="IS8 S1"
+      className="IS5 S1"
     >
-      <TileG
+      <TileAE
+        tileName="secondary2"
+      />
+    </div>
+    <div
+      className="IS6"
+    />
+    <div
+      className="IS7 S1"
+    >
+      <TileAP
         tileName="support2"
       />
     </div>
@@ -4825,7 +4785,7 @@ exports[`44. secondary two no pic and two - huge 1`] = `
 }
 
 .IS1 {
-  width: 50%;
+  width: 33.4%;
 }
 
 .IS2 {
@@ -4839,44 +4799,12 @@ exports[`44. secondary two no pic and two - huge 1`] = `
 }
 
 .IS3 {
-  width: 50%;
+  padding-right: 5px;
+  padding-left: 5px;
+  width: 16.6%;
 }
 
 .IS4 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  margin-right: 10px;
-  margin-left: 10px;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-}
-
-.IS5 {
-  border-bottom-width: 1px;
-  border-top-color: rgba(219,219,219,1.00);
-  border-right-color: rgba(219,219,219,1.00);
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-left-color: rgba(219,219,219,1.00);
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.IS6 {
-  width: 50%;
-}
-
-.IS7 {
   border-top-color: rgba(219,219,219,1.00);
   border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
@@ -4886,11 +4814,27 @@ exports[`44. secondary two no pic and two - huge 1`] = `
   margin-bottom: 10px;
 }
 
-.IS8 {
-  width: 50%;
+.IS5 {
+  width: 33.4%;
 }
 
-.IS9 {
+.IS6 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.IS7 {
+  padding-right: 5px;
+  padding-left: 5px;
+  width: 16.6%;
+}
+
+.IS8 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   -webkit-flex-shrink: 1;
@@ -4910,7 +4854,7 @@ exports[`44. secondary two no pic and two - huge 1`] = `
   -webkit-box-direction: normal;
 }
 
-.IS10 {
+.IS9 {
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
@@ -4920,10 +4864,10 @@ exports[`44. secondary two no pic and two - huge 1`] = `
 </style>
 
 <div
-  className="IS10 S1"
+  className="IS9 S1"
 >
   <div
-    className="IS4 S1"
+    className="IS8 S1"
   >
     <div
       className="IS1 S1"
@@ -4938,31 +4882,27 @@ exports[`44. secondary two no pic and two - huge 1`] = `
     <div
       className="IS3 S1"
     >
-      <TileAE
-        tileName="secondary2"
-      />
-    </div>
-  </div>
-  <div
-    className="IS5 S1"
-  />
-  <div
-    className="IS9 S1"
-  >
-    <div
-      className="IS6 S1"
-    >
-      <TileG
+      <TileAP
         tileName="support1"
       />
     </div>
     <div
-      className="IS7"
+      className="IS4"
     />
     <div
-      className="IS8 S1"
+      className="IS5 S1"
     >
-      <TileG
+      <TileAE
+        tileName="secondary2"
+      />
+    </div>
+    <div
+      className="IS6"
+    />
+    <div
+      className="IS7 S1"
+    >
+      <TileAP
         tileName="support2"
       />
     </div>

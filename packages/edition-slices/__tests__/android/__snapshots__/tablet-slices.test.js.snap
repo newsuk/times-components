@@ -789,21 +789,19 @@ exports[`29. secondary two no pic and two - wide 1`] = `
     </View>
     <View />
     <View>
-      <TileAE
-        tileName="secondary2"
-      />
-    </View>
-  </View>
-  <View />
-  <View>
-    <View>
-      <TileG
+      <TileAP
         tileName="support1"
       />
     </View>
     <View />
     <View>
-      <TileG
+      <TileAE
+        tileName="secondary2"
+      />
+    </View>
+    <View />
+    <View>
+      <TileAP
         tileName="support2"
       />
     </View>
@@ -1242,21 +1240,19 @@ exports[`44. secondary two no pic and two - huge 1`] = `
     </View>
     <View />
     <View>
-      <TileAE
-        tileName="secondary2"
-      />
-    </View>
-  </View>
-  <View />
-  <View>
-    <View>
-      <TileG
+      <TileAP
         tileName="support1"
       />
     </View>
     <View />
     <View>
-      <TileG
+      <TileAE
+        tileName="secondary2"
+      />
+    </View>
+    <View />
+    <View>
+      <TileAP
         tileName="support2"
       />
     </View>
