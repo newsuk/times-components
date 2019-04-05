@@ -26,6 +26,7 @@ exports[`1. video 1`] = `
             y="0"
           />
           <Rect
+            fillOpacity="0"
             height="100"
             stroke="#FFFFFF"
             strokeWidth="8"
@@ -67,6 +68,7 @@ exports[`2. video without a poster image 1`] = `
             y="0"
           />
           <Rect
+            fillOpacity="0"
             height="100"
             stroke="#FFFFFF"
             strokeWidth="8"
@@ -121,6 +123,7 @@ exports[`3. sky sports video 1`] = `
             y="0"
           />
           <Rect
+            fillOpacity="0"
             height="100"
             stroke="#FFFFFF"
             strokeWidth="8"
@@ -165,6 +168,7 @@ exports[`4. 360 video 1`] = `
             y="0"
           />
           <Rect
+            fillOpacity="0"
             height="100"
             stroke="#FFFFFF"
             strokeWidth="8"

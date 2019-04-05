@@ -14,6 +14,7 @@ const PlayIcon = () => (
         y="0"
       />
       <Rect
+        fillOpacity="0"
         height="100"
         stroke="#FFFFFF"
         strokeWidth="8"

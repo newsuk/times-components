@@ -1,4 +1,5 @@
 {
-  "maxAttributes": 8,
+  "maxAttributeArrayLength": 6,
+  "maxAttributes": 25,
   "maxAttributeStringLength": 32
 }

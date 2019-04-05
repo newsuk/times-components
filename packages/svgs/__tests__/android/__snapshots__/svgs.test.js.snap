@@ -1,58 +1,151 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. an svg, g, path 1`] = `
-<ARTSurfaceView
+<RNSVGSvgView
+  align="xMidYMid"
+  bbHeight="100"
+  bbWidth="100"
+  meetOrSlice={0}
+  minX={145}
+  minY={50}
   style={
     Object {
-      "height": 111.11111111111111,
+      "backgroundColor": "transparent",
+      "flex": 0,
+      "height": 100,
       "width": 100,
     }
   }
+  vbHeight={120}
+  vbWidth={108}
+  version="1.1"
 >
-  <ARTGroup
+  <RNSVGGroup
+    fillOpacity={1}
+    fillRule={0}
+    matrix={
+      Array [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+      ]
+    }
     opacity={1}
-    transform="e66c56023a2e4b857683d66b5bc5d146"
+    originX={0}
+    originY={0}
+    propList={
+      Array [
+        "stroke",
+        "strokeWidth",
+        "fill",
+        "fillRule",
+      ]
+    }
+    rotation={0}
+    scaleX={1}
+    scaleY={1}
+    skewX={0}
+    skewY={0}
+    strokeLinecap={0}
+    strokeLinejoin={0}
+    strokeMiterlimit={4}
+    strokeOpacity={1}
+    strokeWidth="1"
+    x={0}
+    y={0}
   >
-    <ARTGroup
+    <RNSVGPath
+      d="4872173116d82a1a379dbcc06ad3c243"
+      fill={
+        Array [
+          0,
+          0,
+          0,
+          0,
+          1,
+        ]
+      }
+      fillOpacity={1}
+      fillRule={1}
+      matrix={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
       opacity={1}
-      transform="e4c138e0ae717832b3b923e468af04e5"
-    >
-      <ARTShape
-        d="343185e9878751b0e59aeee3debd5e87"
-        fill={
-          Array [
-            0,
-            0,
-            0,
-            0,
-            1,
-          ]
-        }
-        opacity={1}
-        strokeCap={1}
-        strokeJoin={1}
-        strokeWidth={1}
-        transform="e4c138e0ae717832b3b923e468af04e5"
-      />
-    </ARTGroup>
-  </ARTGroup>
-</ARTSurfaceView>
+      originX={0}
+      originY={0}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+      rotation={0}
+      scaleX={1}
+      scaleY={1}
+      skewX={0}
+      skewY={0}
+      strokeLinecap={0}
+      strokeLinejoin={0}
+      strokeMiterlimit={4}
+      strokeOpacity={1}
+      strokeWidth="1"
+      x={0}
+      y={0}
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
 `;
 
 exports[`2. a path with no fill 1`] = `
-<ARTShape
-  d="343185e9878751b0e59aeee3debd5e87"
+<RNSVGPath
+  d="4872173116d82a1a379dbcc06ad3c243"
+  fillOpacity={1}
+  fillRule={1}
+  matrix={
+    Array [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+    ]
+  }
   opacity={1}
-  strokeCap={1}
-  strokeJoin={1}
-  strokeWidth={1}
-  transform="e4c138e0ae717832b3b923e468af04e5"
+  originX={0}
+  originY={0}
+  propList={
+    Array [
+      "fill",
+    ]
+  }
+  rotation={0}
+  scaleX={1}
+  scaleY={1}
+  skewX={0}
+  skewY={0}
+  strokeLinecap={0}
+  strokeLinejoin={0}
+  strokeMiterlimit={4}
+  strokeOpacity={1}
+  strokeWidth="1"
+  x={0}
+  y={0}
 />
 `;
 
 exports[`3. a polygon 1`] = `
-<ARTShape
-  d="f2fe184e88869d0ef2eb25afbc19b807"
+<RNSVGPath
+  d="f0010c2bbdef3c3bedb66db380f29ac6"
   fill={
     Array [
       0,
@@ -62,25 +155,53 @@ exports[`3. a polygon 1`] = `
       1,
     ]
   }
+  fillOpacity={1}
+  fillRule={1}
+  matrix={
+    Array [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+    ]
+  }
   opacity={1}
+  originX={0}
+  originY={0}
+  propList={
+    Array [
+      "stroke",
+      "fill",
+    ]
+  }
+  rotation={0}
+  scaleX={1}
+  scaleY={1}
+  skewX={0}
+  skewY={0}
   stroke={
     Array [
+      0,
       1,
       0,
       0,
       1,
     ]
   }
-  strokeCap={1}
-  strokeJoin={1}
-  strokeWidth={1}
-  transform="e4c138e0ae717832b3b923e468af04e5"
+  strokeLinecap={0}
+  strokeLinejoin={0}
+  strokeMiterlimit={4}
+  strokeOpacity={1}
+  strokeWidth="1"
+  x={0}
+  y={0}
 />
 `;
 
 exports[`4. a rect 1`] = `
-<ARTShape
-  d="db81aee2682fc4fbf84207fe820554da"
+<RNSVGRect
   fill={
     Array [
       0,
@@ -90,18 +211,53 @@ exports[`4. a rect 1`] = `
       1,
     ]
   }
-  opacity={0.4}
+  fillOpacity={0.4}
+  fillRule={1}
+  height="100"
+  matrix={
+    Array [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+    ]
+  }
+  opacity={1}
+  originX={0}
+  originY={0}
+  propList={
+    Array [
+      "stroke",
+      "strokeWidth",
+      "fill",
+      "fillOpacity",
+    ]
+  }
+  rotation={0}
+  rx="0"
+  ry="0"
+  scaleX={1}
+  scaleY={1}
+  skewX={0}
+  skewY={0}
   stroke={
     Array [
+      0,
       1,
       1,
       1,
       1,
     ]
   }
-  strokeCap={1}
-  strokeJoin={1}
-  strokeWidth={8}
-  transform="e4c138e0ae717832b3b923e468af04e5"
+  strokeLinecap={0}
+  strokeLinejoin={0}
+  strokeMiterlimit={4}
+  strokeOpacity={1}
+  strokeWidth="8"
+  width="100"
+  x="5"
+  y="10"
 />
 `;
