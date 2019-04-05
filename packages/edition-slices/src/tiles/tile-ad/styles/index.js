@@ -25,12 +25,12 @@ const stylesWide = {
   }
 };
 
-const stylesResolver = {
+const headlineFontSizeResolver = {
   huge: stylesWide,
   wide: stylesWide
 };
 
 export default breakpoint => ({
   ...main,
-  ...(stylesResolver[breakpoint] || {})
+  ...(headlineFontSizeResolver[breakpoint] || {})
 });

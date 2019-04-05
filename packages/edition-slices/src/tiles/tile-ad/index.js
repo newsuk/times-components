@@ -44,7 +44,7 @@ TileAD.propTypes = {
 };
 
 TileAD.defaultProps = {
-  breakpoint: null
+  breakpoint: "small"
 };
 
 export default withTileTracking(TileAD);
