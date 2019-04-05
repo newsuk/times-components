@@ -11,6 +11,7 @@ import { Text as FlowText, Markup } from "text-flow"
 
 const text = new FlowText.Text({
     font: 'TimesModern-Regular',
+    width: 660,
     size: 18,
     lineHeight: 30,
     markup: [new Markup.MarkupString("Hello World!")]
@@ -54,6 +55,7 @@ import { Text as FlowText, Layout, Markup } from "text-flow"
 
 const flow = new FlowText.Text({
     font: 'TimesModern-Regular',
+    width: 660,
     size: 18,
     lineHeight: 30,
     markup: [
@@ -89,6 +91,7 @@ import { Text as FlowText, Layout, Markup } from "text-flow"
 
 const flow = new Layout.TextFlow({
     font: 'TimesModern-Regular',
+    width: 660,
     size: 18,
     lineHeight: 30,
     flow: [
