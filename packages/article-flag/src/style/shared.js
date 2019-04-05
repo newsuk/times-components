@@ -11,7 +11,8 @@ const styles = {
     marginRight: spacing(3)
   },
   flags: {
-    flexDirection: "row"
+    flexDirection: "row",
+    flexWrap: "wrap"
   },
   title: {
     ...fontFactory({

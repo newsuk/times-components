@@ -4,11 +4,13 @@ const horizontalStyles = {
   },
   flagStyle: {
     alignItems: "flex-start",
-    flex: 1
+    width: "75%"
   },
   starButton: {
     alignItems: "flex-end",
-    flex: 1
+    flex: 1,
+    marginTop: -5,
+    width: "25%"
   }
 };
 
