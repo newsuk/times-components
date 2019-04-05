@@ -11,7 +11,7 @@ import {
   replacePropTransform
 } from "@times-components/jest-serializer";
 import { hash, iterator } from "@times-components/test-utils";
-import "./mocks";
+import { Gestures } from "./mocks";
 import Image, { ModalImage } from "../src";
 
 // eslint-disable-next-line react/prop-types
@@ -116,6 +116,22 @@ export default () => {
       }
     },
     {
+      name: "handle onSwipeDown on the gesture controller",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <ModalImage {...props} show />
+        );
+
+        const gestureController = testInstance.root.findByType(Gestures);
+
+        gestureController.props.onSwipeDown();
+
+        const modal = testInstance.root.find(node => node.type === Modal);
+
+        expect(modal.props.visible).toBe(false);
+      }
+    },
+    {
       name: "image with onImagePress prop should not have Modal",
       test: () => {
         const onImagePress = () => {};
@@ -125,6 +141,35 @@ export default () => {
         );
 
         expect(testInstance.root.findAllByType(Modal).length).toBe(0);
+      }
+    },
+    {
+      name: "hides elements when tapping on the image",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <ModalImage {...props} show />
+        );
+
+        const gestureController = testInstance.root.findByType(Gestures);
+
+        gestureController.props.onPress();
+
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "re-shows elements when tapping on the image a second time",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <ModalImage {...props} show />
+        );
+
+        const gestureController = testInstance.root.findByType(Gestures);
+
+        gestureController.props.onPress();
+        gestureController.props.onPress();
+
+        expect(testInstance).toMatchSnapshot();
       }
     }
   ];

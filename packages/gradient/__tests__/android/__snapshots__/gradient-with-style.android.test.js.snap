@@ -4,7 +4,6 @@ exports[`1. gradient using prop styles 1`] = `
 <View
   style={
     Object {
-      "backgroundColor": "#F9F9F9",
       "height": 200,
       "position": "relative",
       "width": 200,
@@ -33,7 +32,6 @@ exports[`2. gradient using array prop styles 1`] = `
 <View
   style={
     Object {
-      "backgroundColor": "#F9F9F9",
       "height": 300,
       "position": "relative",
       "width": 400,
@@ -62,7 +60,6 @@ exports[`3. gradient using stylesheets 1`] = `
 <View
   style={
     Object {
-      "backgroundColor": "#F9F9F9",
       "height": 200,
       "margin": 10,
       "position": "relative",

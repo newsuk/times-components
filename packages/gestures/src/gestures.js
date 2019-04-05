@@ -1,6 +1,13 @@
 import React, { Component } from "react";
-import { Animated, PanResponder, View } from "react-native";
+import {
+  Animated,
+  PanResponder,
+  View,
+  TouchableWithoutFeedback
+} from "react-native";
 import PropTypes from "prop-types";
+
+const SWIPE_DOWN_GESTURE_THRESHOLD = 50;
 
 const distanceBetweenTouches = ([
   { pageX: x1, pageY: y1 },
@@ -65,12 +72,9 @@ class Gestures extends Component {
     };
 
     this.panResponder = PanResponder.create({
-      onMoveShouldSetPanResponder: (e, { numberActiveTouches }) =>
-        numberActiveTouches > 1,
-      onMoveShouldSetPanResponderCapture: (e, { numberActiveTouches }) =>
-        numberActiveTouches > 1,
-      onPanResponderMove: evt => {
-        this.handlePinchChange(evt);
+      onMoveShouldSetPanResponder: () => true,
+      onPanResponderMove: (evt, gestureState) => {
+        this.onGestureMove(evt, gestureState);
       },
       onPanResponderRelease: () => {
         const { angle, zoomRatio } = this.state;
@@ -83,19 +87,33 @@ class Gestures extends Component {
           })
         ]).start();
       },
-      onPanResponderStart: evt => {
-        this.handlePinchStart(evt);
+      onPanResponderStart: (evt, gestureState) => {
+        if (gestureState.numberActiveTouches > 1) {
+          this.handlePinchStart(evt);
+        }
       },
       // Required for iOS support
       // https://github.com/facebook/react-native/issues/14295#issuecomment-389971835
       onPanResponderTerminationRequest: () => false,
-      onStartShouldSetPanResponder: (e, { numberActiveTouches }) =>
-        numberActiveTouches > 1,
-      onStartShouldSetPanResponderCapture: (e, { numberActiveTouches }) =>
-        numberActiveTouches > 1
+      onStartShouldSetPanResponder: () => true
     });
 
     this.onViewLayout = this.onViewLayout.bind(this);
+  }
+
+  onGestureMove(evt, gestureState) {
+    if (gestureState.numberActiveTouches > 1) {
+      this.handlePinchChange(evt);
+    } else if (
+      gestureState.numberActiveTouches === 1 &&
+      gestureState.dy >= SWIPE_DOWN_GESTURE_THRESHOLD
+    ) {
+      const { onSwipeDown } = this.props;
+
+      if (onSwipeDown) {
+        onSwipeDown();
+      }
+    }
   }
 
   onViewLayout(evt) {
@@ -135,6 +153,7 @@ class Gestures extends Component {
 
   render() {
     const { children, style } = this.props;
+    const { onSwipeDown: _, onPress, ...passThroughProps } = this.props;
     const { angle, center, viewLayout, zoomRatio } = this.state;
 
     const transformStyle = {
@@ -165,19 +184,28 @@ class Gestures extends Component {
         style={style}
         {...this.panResponder.panHandlers}
       >
-        <Animated.View
-          {...this.props}
-          style={[{ flexGrow: 1 }, transformStyle]}
-        >
-          {children}
-        </Animated.View>
+        <TouchableWithoutFeedback onPress={onPress}>
+          <Animated.View
+            {...passThroughProps}
+            style={[{ flexGrow: 1 }, transformStyle]}
+          >
+            {children}
+          </Animated.View>
+        </TouchableWithoutFeedback>
       </View>
     );
   }
 }
 
 Gestures.propTypes = {
-  children: PropTypes.element.isRequired
+  children: PropTypes.element.isRequired,
+  onPress: PropTypes.func,
+  onSwipeDown: PropTypes.func
+};
+
+Gestures.defaultProps = {
+  onPress: () => null,
+  onSwipeDown: null
 };
 
 export default Gestures;

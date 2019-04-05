@@ -68,6 +68,26 @@ export default () => {
 
         expect(testInstance).toMatchSnapshot();
       }
+    },
+    {
+      name: "gradient with custom colours",
+      test: () => {
+        const output = TestRenderer.create(
+          <Gradient endColour="#00FFFF" startColour="#FF0000" />
+        );
+
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "gradient with custom points",
+      test: () => {
+        const output = TestRenderer.create(
+          <Gradient endPoint="0.8" startPoint="0.2" />
+        );
+
+        expect(output).toMatchSnapshot();
+      }
     }
   ];
 

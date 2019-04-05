@@ -240,18 +240,26 @@ exports[`1. card loading state 1`] = `
           <Gradient
             className="IS4"
             degrees={264}
+            endPoint="1"
+            startPoint="0"
           />
           <Gradient
             className="IS7"
             degrees={267}
+            endPoint="1"
+            startPoint="0"
           />
           <Gradient
             className="IS10"
             degrees={267}
+            endPoint="1"
+            startPoint="0"
           />
           <Gradient
             className="IS13"
             degrees={267}
+            endPoint="1"
+            startPoint="0"
           />
         </Component>
       </div>
@@ -489,18 +497,26 @@ exports[`2. card with reversed loading state 1`] = `
           <Gradient
             className="IS3"
             degrees={264}
+            endPoint="1"
+            startPoint="0"
           />
           <Gradient
             className="IS6"
             degrees={267}
+            endPoint="1"
+            startPoint="0"
           />
           <Gradient
             className="IS9"
             degrees={267}
+            endPoint="1"
+            startPoint="0"
           />
           <Gradient
             className="IS12"
             degrees={267}
+            endPoint="1"
+            startPoint="0"
           />
         </Component>
       </div>

@@ -22,7 +22,7 @@ exports[`phone full article with style 1`] = `
         }
       }
     >
-      <Image
+      <ModalImage
         style={
           Object {
             "borderRadius": 50,
@@ -148,7 +148,7 @@ exports[`tablet full article with style 1`] = `
         }
       }
     >
-      <Image
+      <ModalImage
         style={
           Object {
             "borderRadius": 50,
