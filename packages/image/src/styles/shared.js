@@ -80,7 +80,6 @@ const styles = {
   placeholder: {
     alignItems: "center",
     backgroundColor: colours.functional.backgroundSecondary,
-    flex: 1,
     justifyContent: "center"
   },
   topSafeView: {
