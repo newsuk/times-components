@@ -118,18 +118,6 @@ exports[`1. tile a 1`] = `
                   "expiryTime": "2030-03-14T12:00:00.000Z",
                   "type": "EXCLUSIVE",
                 },
-                Object {
-                  "expiryTime": "2030-03-14T12:00:00.000Z",
-                  "type": "NEW",
-                },
-                Object {
-                  "expiryTime": "2030-03-14T12:00:00.000Z",
-                  "type": "SPONSORED",
-                },
-                Object {
-                  "expiryTime": "2030-03-14T12:00:00.000Z",
-                  "type": "UPDATED",
-                },
               ]
             }
           />
@@ -301,18 +289,6 @@ exports[`2. tile b 1`] = `
                     "expiryTime": "2030-03-14T12:00:00.000Z",
                     "type": "EXCLUSIVE",
                   },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "NEW",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "SPONSORED",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "UPDATED",
-                  },
                 ]
               }
             />
@@ -454,18 +430,6 @@ exports[`3. tile c 1`] = `
                 Object {
                   "expiryTime": "2030-03-14T12:00:00.000Z",
                   "type": "EXCLUSIVE",
-                },
-                Object {
-                  "expiryTime": "2030-03-14T12:00:00.000Z",
-                  "type": "NEW",
-                },
-                Object {
-                  "expiryTime": "2030-03-14T12:00:00.000Z",
-                  "type": "SPONSORED",
-                },
-                Object {
-                  "expiryTime": "2030-03-14T12:00:00.000Z",
-                  "type": "UPDATED",
                 },
               ]
             }
@@ -622,18 +586,6 @@ exports[`4. tile d 1`] = `
                     "expiryTime": "2030-03-14T12:00:00.000Z",
                     "type": "EXCLUSIVE",
                   },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "NEW",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "SPONSORED",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "UPDATED",
-                  },
                 ]
               }
             />
@@ -789,18 +741,6 @@ exports[`5. tile e 1`] = `
                   Object {
                     "expiryTime": "2030-03-14T12:00:00.000Z",
                     "type": "EXCLUSIVE",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "NEW",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "SPONSORED",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "UPDATED",
                   },
                 ]
               }
@@ -982,18 +922,6 @@ exports[`6. tile f 1`] = `
                     "expiryTime": "2030-03-14T12:00:00.000Z",
                     "type": "EXCLUSIVE",
                   },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "NEW",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "SPONSORED",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "UPDATED",
-                  },
                 ]
               }
             />
@@ -1159,18 +1087,6 @@ exports[`7. tile g 1`] = `
                   Object {
                     "expiryTime": "2030-03-14T12:00:00.000Z",
                     "type": "EXCLUSIVE",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "NEW",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "SPONSORED",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "UPDATED",
                   },
                 ]
               }
@@ -1373,18 +1289,6 @@ exports[`8. tile h 1`] = `
                     "expiryTime": "2030-03-14T12:00:00.000Z",
                     "type": "EXCLUSIVE",
                   },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "NEW",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "SPONSORED",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "UPDATED",
-                  },
                 ]
               }
             />
@@ -1531,18 +1435,6 @@ exports[`9. tile i 1`] = `
                   "expiryTime": "2030-03-14T12:00:00.000Z",
                   "type": "EXCLUSIVE",
                 },
-                Object {
-                  "expiryTime": "2030-03-14T12:00:00.000Z",
-                  "type": "NEW",
-                },
-                Object {
-                  "expiryTime": "2030-03-14T12:00:00.000Z",
-                  "type": "SPONSORED",
-                },
-                Object {
-                  "expiryTime": "2030-03-14T12:00:00.000Z",
-                  "type": "UPDATED",
-                },
               ]
             }
           />
@@ -1682,18 +1574,6 @@ exports[`10. tile j 1`] = `
                   Object {
                     "expiryTime": "2030-03-14T12:00:00.000Z",
                     "type": "EXCLUSIVE",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "NEW",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "SPONSORED",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "UPDATED",
                   },
                 ]
               }
@@ -1835,18 +1715,6 @@ exports[`11. tile k 1`] = `
                     "expiryTime": "2030-03-14T12:00:00.000Z",
                     "type": "EXCLUSIVE",
                   },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "NEW",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "SPONSORED",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "UPDATED",
-                  },
                 ]
               }
             />
@@ -1969,18 +1837,6 @@ exports[`12. tile l 1`] = `
                   Object {
                     "expiryTime": "2030-03-14T12:00:00.000Z",
                     "type": "EXCLUSIVE",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "NEW",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "SPONSORED",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "UPDATED",
                   },
                 ]
               }
@@ -2231,18 +2087,6 @@ exports[`14. tile n 1`] = `
                     "expiryTime": "2030-03-14T12:00:00.000Z",
                     "type": "EXCLUSIVE",
                   },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "NEW",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "SPONSORED",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "UPDATED",
-                  },
                 ]
               }
             />
@@ -2368,18 +2212,6 @@ exports[`15. tile o 1`] = `
                   Object {
                     "expiryTime": "2030-03-14T12:00:00.000Z",
                     "type": "EXCLUSIVE",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "NEW",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "SPONSORED",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "UPDATED",
                   },
                 ]
               }
@@ -2565,18 +2397,6 @@ exports[`16. tile p 1`] = `
                   Object {
                     "expiryTime": "2030-03-14T12:00:00.000Z",
                     "type": "EXCLUSIVE",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "NEW",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "SPONSORED",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "UPDATED",
                   },
                 ]
               }
@@ -2764,18 +2584,6 @@ exports[`18. tile r 1`] = `
                   Object {
                     "expiryTime": "2030-03-14T12:00:00.000Z",
                     "type": "EXCLUSIVE",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "NEW",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "SPONSORED",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "UPDATED",
                   },
                 ]
               }
@@ -3037,18 +2845,6 @@ exports[`20. tile t 1`] = `
                     "expiryTime": "2030-03-14T12:00:00.000Z",
                     "type": "EXCLUSIVE",
                   },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "NEW",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "SPONSORED",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "UPDATED",
-                  },
                 ]
               }
             />
@@ -3193,18 +2989,6 @@ exports[`21. tile u 1`] = `
                     "expiryTime": "2030-03-14T12:00:00.000Z",
                     "type": "EXCLUSIVE",
                   },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "NEW",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "SPONSORED",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "UPDATED",
-                  },
                 ]
               }
             />
@@ -3348,18 +3132,6 @@ exports[`22. tile v 1`] = `
                   Object {
                     "expiryTime": "2030-03-14T12:00:00.000Z",
                     "type": "EXCLUSIVE",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "NEW",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "SPONSORED",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "UPDATED",
                   },
                 ]
               }
@@ -3526,18 +3298,6 @@ exports[`23. tile w 1`] = `
                   Object {
                     "expiryTime": "2030-03-14T12:00:00.000Z",
                     "type": "EXCLUSIVE",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "NEW",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "SPONSORED",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "UPDATED",
                   },
                 ]
               }
@@ -3723,18 +3483,6 @@ exports[`24. tile x 1`] = `
                     "expiryTime": "2030-03-14T12:00:00.000Z",
                     "type": "EXCLUSIVE",
                   },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "NEW",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "SPONSORED",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "UPDATED",
-                  },
                 ]
               }
             />
@@ -3889,18 +3637,6 @@ exports[`25. tile y 1`] = `
                   "expiryTime": "2030-03-14T12:00:00.000Z",
                   "type": "EXCLUSIVE",
                 },
-                Object {
-                  "expiryTime": "2030-03-14T12:00:00.000Z",
-                  "type": "NEW",
-                },
-                Object {
-                  "expiryTime": "2030-03-14T12:00:00.000Z",
-                  "type": "SPONSORED",
-                },
-                Object {
-                  "expiryTime": "2030-03-14T12:00:00.000Z",
-                  "type": "UPDATED",
-                },
               ]
             }
           />
@@ -4022,18 +3758,6 @@ exports[`26. tile z 1`] = `
                   Object {
                     "expiryTime": "2030-03-14T12:00:00.000Z",
                     "type": "EXCLUSIVE",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "NEW",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "SPONSORED",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "UPDATED",
                   },
                 ]
               }
@@ -4181,18 +3905,6 @@ exports[`27. tile aa 1`] = `
                   Object {
                     "expiryTime": "2030-03-14T12:00:00.000Z",
                     "type": "EXCLUSIVE",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "NEW",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "SPONSORED",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "UPDATED",
                   },
                 ]
               }
@@ -4382,18 +4094,6 @@ exports[`28. tile ab 1`] = `
                     "expiryTime": "2030-03-14T12:00:00.000Z",
                     "type": "EXCLUSIVE",
                   },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "NEW",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "SPONSORED",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "UPDATED",
-                  },
                 ]
               }
             />
@@ -4575,18 +4275,6 @@ exports[`29. tile ae 1`] = `
                   Object {
                     "expiryTime": "2030-03-14T12:00:00.000Z",
                     "type": "EXCLUSIVE",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "NEW",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "SPONSORED",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "UPDATED",
                   },
                 ]
               }
@@ -5013,18 +4701,6 @@ exports[`33. tile al 1`] = `
                     "expiryTime": "2030-03-14T12:00:00.000Z",
                     "type": "EXCLUSIVE",
                   },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "NEW",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "SPONSORED",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "UPDATED",
-                  },
                 ]
               }
             />
@@ -5193,18 +4869,6 @@ exports[`34. tile am 1`] = `
                   Object {
                     "expiryTime": "2030-03-14T12:00:00.000Z",
                     "type": "EXCLUSIVE",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "NEW",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "SPONSORED",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "UPDATED",
                   },
                 ]
               }
@@ -5389,18 +5053,6 @@ exports[`35. tile an 1`] = `
                     "expiryTime": "2030-03-14T12:00:00.000Z",
                     "type": "EXCLUSIVE",
                   },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "NEW",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "SPONSORED",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "UPDATED",
-                  },
                 ]
               }
             />
@@ -5551,18 +5203,6 @@ exports[`36. tile ap 1`] = `
                   Object {
                     "expiryTime": "2030-03-14T12:00:00.000Z",
                     "type": "EXCLUSIVE",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "NEW",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "SPONSORED",
-                  },
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "UPDATED",
                   },
                 ]
               }
