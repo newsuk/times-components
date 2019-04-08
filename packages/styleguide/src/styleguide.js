@@ -1,6 +1,5 @@
 import sectionColours, { secondarySectionColours } from "./colours/section";
 import functionalColours from "./colours/functional";
-import starColours from "./colours/star";
 
 import FadeIn from "./animations";
 
@@ -22,8 +21,7 @@ import spacing from "./spacing";
 const colours = {
   functional: functionalColours,
   secondarySectionColours,
-  section: sectionColours,
-  star: starColours
+  section: sectionColours
 };
 
 const Animations = {

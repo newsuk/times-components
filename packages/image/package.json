@@ -1,6 +1,6 @@
 {
   "name": "@times-components/image",
-  "version": "5.3.0",
+  "version": "5.3.1",
   "main": "dist/index",
   "dev": "src/index",
   "scripts": {
@@ -38,10 +38,10 @@
   "devDependencies": {
     "@thetimes/jest-lint": "*",
     "@times-components/eslint-config-thetimes": "0.8.9",
-    "@times-components/jest-configurator": "2.4.1",
+    "@times-components/jest-configurator": "2.4.2",
     "@times-components/jest-serializer": "3.2.0",
-    "@times-components/storybook": "3.4.9",
-    "@times-components/test-utils": "2.2.18",
+    "@times-components/storybook": "3.4.10",
+    "@times-components/test-utils": "2.2.19",
     "@times-components/webpack-configurator": "2.0.15",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.4",
@@ -64,12 +64,12 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/gestures": "4.1.0",
-    "@times-components/gradient": "3.1.0",
-    "@times-components/link": "3.3.4",
-    "@times-components/responsive": "0.4.7",
-    "@times-components/styleguide": "3.27.0",
-    "@times-components/svgs": "2.6.1",
+    "@times-components/gestures": "4.1.1",
+    "@times-components/gradient": "3.1.1",
+    "@times-components/link": "3.3.5",
+    "@times-components/responsive": "0.4.8",
+    "@times-components/styleguide": "3.27.1",
+    "@times-components/svgs": "2.6.2",
     "@times-components/utils": "4.8.0",
     "intrinsic-scale": "3.0.3",
     "lodash.memoize": "4.1.2",
