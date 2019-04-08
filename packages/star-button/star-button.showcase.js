@@ -1,20 +1,25 @@
 import React from "react";
 import StarButton from "./src/star-button";
 
+const getProps = ({ boolean }) => ({
+  isDark: boolean("Enable Dark theme", false),
+  onPress: () => {}
+});
+
 export default {
   children: [
     {
-      component: () => <StarButton onPress={() => {}} />,
+      component: knobs => <StarButton {...getProps(knobs)} />,
       name: "Initial",
       type: "story"
     },
     {
-      component: () => <StarButton onPress={() => {}} selected />,
+      component: knobs => <StarButton {...getProps(knobs)} selected />,
       name: "Selected",
       type: "story"
     },
     {
-      component: () => <StarButton disabled onPress={() => {}} />,
+      component: knobs => <StarButton {...getProps(knobs)} disabled />,
       name: "Disabled",
       type: "story"
     }
