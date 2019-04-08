@@ -8,7 +8,9 @@ import styles from "./styles/shared";
 
 const ArticleExtrasError = ({ refetch }) => (
   <View style={styles.extrasErrorContainer}>
-    <Text style={styles.extrasErrorHeadline}>It looks like you're offline</Text>
+    <Text style={styles.extrasErrorHeadline}>
+      It looks like you&apos;re offline
+    </Text>
     <Text style={styles.extrasErrorBody}>
       Some features, such as related articles and comments, may not be avalaible
     </Text>

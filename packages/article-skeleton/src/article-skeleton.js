@@ -7,6 +7,7 @@ import { AdComposer } from "@times-components/ad";
 import Responsive from "@times-components/responsive";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import { screenWidth } from "@times-components/utils";
+import ArticleExtras from "@times-components/article-extras";
 import ArticleRow from "./article-body/article-body-row";
 import {
   articleSkeletonPropTypes,
@@ -17,7 +18,6 @@ import articleTrackingContext from "./article-tracking-context";
 import insertDropcapIntoAST from "./dropcap-util";
 import styles from "./styles/shared";
 import Gutter, { maxWidth } from "./gutter";
-import ArticleExtras from "./article-extras";
 
 const listViewPageSize = 1;
 const listViewSize = 10;
