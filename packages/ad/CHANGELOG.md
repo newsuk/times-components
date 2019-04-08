@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.5.12](https://github.com/newsuk/times-components/compare/@times-components/ad@2.5.11...@times-components/ad@2.5.12) (2019-04-05)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.5.11](https://github.com/newsuk/times-components/compare/@times-components/ad@2.5.10...@times-components/ad@2.5.11) (2019-04-05)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.5.10](https://github.com/newsuk/times-components/compare/@times-components/ad@2.5.9...@times-components/ad@2.5.10) (2019-04-05)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
 ## [2.5.9](https://github.com/newsuk/times-components/compare/@times-components/ad@2.5.8...@times-components/ad@2.5.9) (2019-04-05)
 
 **Note:** Version bump only for package @times-components/ad

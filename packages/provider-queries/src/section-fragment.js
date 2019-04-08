@@ -1253,6 +1253,7 @@ export default gql`
     headline
     id
     label
+    section
     shortHeadline
     url
   }

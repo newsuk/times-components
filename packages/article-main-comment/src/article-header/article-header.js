@@ -2,7 +2,7 @@ import React from "react";
 import { Text, View } from "react-native";
 import PropTypes from "prop-types";
 import { ArticleFlags, getActiveFlags } from "@times-components/article-flag";
-import Image from "@times-components/image";
+import { ModalImage } from "@times-components/image";
 import { ResponsiveContext } from "@times-components/responsive";
 import Label from "../article-label/article-label";
 import Meta from "../article-meta/article-meta";
@@ -29,7 +29,11 @@ const ArticleHeader = ({
     {({ isTablet }) => (
       <View style={[styles.header, isTablet && styles.headerTablet]}>
         <View style={[styles.container, isTablet && styles.containerTablet]}>
-          <Image aspectRatio={1} style={styles.authorImage} uri={authorImage} />
+          <ModalImage
+            aspectRatio={1}
+            style={styles.authorImage}
+            uri={authorImage}
+          />
           <Label isVideo={hasVideo} label={label} />
           <Text
             style={[

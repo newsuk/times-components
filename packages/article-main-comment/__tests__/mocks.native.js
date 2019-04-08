@@ -23,7 +23,11 @@ jest.mock("@times-components/article-topics", () => "ArticleTopics");
 jest.mock("@times-components/article-skeleton", () => MockArticleSkeleton);
 jest.mock("@times-components/brightcove-video", () => "BrightcoveVideo");
 jest.mock("@times-components/button", () => "Button");
-jest.mock("@times-components/image", () => "Image");
+jest.mock("@times-components/image", () => ({
+  __esModule: true,
+  default: "Image",
+  ModalImage: "ModalImage"
+}));
 jest.mock("@times-components/pull-quote", () => "PullQuote");
 jest.mock("@times-components/related-articles", () => "RelatedArticles");
 jest.mock("@times-components/watermark", () => "Watermark");

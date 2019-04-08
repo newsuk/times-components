@@ -1,35 +1,44 @@
 import { colours, spacing } from "@times-components/styleguide";
 
+const CLOSE_BUTTON_PHONE_SIZE = 25;
+const CLOSE_BUTTON_TABLET_SIZE = 30;
+
 const styles = {
+  bottomSafeView: {
+    flex: 0,
+    marginTop: "auto",
+    position: "relative",
+    width: "100%",
+    zIndex: 2
+  },
   buttonContainer: {
-    marginHorizontal: spacing(3),
-    marginVertical: spacing(3)
+    padding: spacing(3),
+    position: "relative",
+    zIndex: 2
   },
   buttonContainerTablet: {
-    marginHorizontal: spacing(4),
-    marginVertical: spacing(4)
+    padding: spacing(4)
   },
   closeButton: {
     alignItems: "center",
     backgroundColor: "rgba(0, 0, 0, 0.5)",
-    borderRadius: 30,
-    height: 30,
+    borderRadius: CLOSE_BUTTON_PHONE_SIZE,
+    height: CLOSE_BUTTON_PHONE_SIZE,
     justifyContent: "center",
-    width: 30
+    width: CLOSE_BUTTON_PHONE_SIZE
   },
   closeButtonImage: {
     height: "85%",
     width: "85%"
   },
   closeButtonTablet: {
-    borderRadius: 40,
-    height: 40,
-    width: 40
+    borderRadius: CLOSE_BUTTON_TABLET_SIZE,
+    height: CLOSE_BUTTON_TABLET_SIZE,
+    width: CLOSE_BUTTON_TABLET_SIZE
   },
   gestureContainer: {
-    flexGrow: 1,
-    position: "relative",
-    zIndex: 1
+    height: "100%",
+    width: "100%"
   },
   image: {
     height: "100%",
@@ -40,12 +49,26 @@ const styles = {
   imageContainer: {
     position: "relative"
   },
+  middleSafeView: {
+    bottom: 0,
+    height: "100%",
+    left: 0,
+    position: "absolute",
+    right: 0,
+    top: 0,
+    width: "100%",
+    zIndex: 1
+  },
   modal: {
-    backgroundColor: colours.functional.brandColour,
+    backgroundColor: colours.functional.modalBackground,
     flexDirection: "column",
     height: "100%",
     justifyContent: "space-between",
     width: "100%"
+  },
+  modalBackground: {
+    backgroundColor: colours.functional.modalBackground,
+    flex: 1
   },
   modalImageContainer: {
     alignItems: "center",
@@ -60,27 +83,23 @@ const styles = {
     flex: 1,
     justifyContent: "center"
   },
-  safeViewContainer: {
-    flex: 1
-  },
-  safeViewInnerContainer: {
-    flexGrow: 0,
-    height: "100%"
+  topSafeView: {
+    backgroundColor: colours.functional.modalBackground,
+    flex: 0
   }
 };
 
 export const captionStyles = {
   caption: {
     fontSize: 15,
-    lineHeight: 19
+    lineHeight: 15
   },
   container: {
-    marginHorizontal: spacing(3),
-    marginVertical: spacing(3)
+    margin: spacing(3)
   },
   credits: {
     fontSize: 10,
-    lineHeight: 20,
+    lineHeight: 10,
     marginTop: spacing(1)
   },
   text: {
@@ -92,8 +111,7 @@ export const tabletCaptionStyles = {
   ...captionStyles,
   container: {
     ...captionStyles.container,
-    marginHorizontal: spacing(4),
-    marginVertical: spacing(4)
+    margin: spacing(4)
   }
 };
 
