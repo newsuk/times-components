@@ -11,7 +11,7 @@ const horizontalStyles = {
   starButton: {
     alignItems: "flex-end",
     flex: 1,
-    marginTop: -spacing(1),
+    marginTop: -5,
     width: "25%"
   }
 };
