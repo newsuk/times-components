@@ -1,4 +1,4 @@
-import { articleComments as articleCommentsQuery } from "@times-components/provider-queries";
+import { articleExtras as articleExtrasQuery } from "@times-components/provider-queries";
 
 export default ({
   count = 123,
@@ -22,7 +22,7 @@ export default ({
         }
       },
       error: error(),
-      query: articleCommentsQuery,
+      query: articleExtrasQuery,
       variables: queryVariables
     }
   ];

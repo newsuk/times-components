@@ -2,14 +2,14 @@ import gql from "graphql-tag";
 import articleProps from "./article-props";
 
 export default gql`
-  query ArticleCommentsQuery($id: ID!) {
+  query ArticleExtrasQuery($id: ID!) {
     article(id: $id) {
       id
       commentCount
       commentsEnabled
 
       relatedArticleSlice {
-        __typename
+        sliceName: __typename
         ... on StandardSlice {
           items {
             ...relatedProps
