@@ -1,12 +1,24 @@
-import { colours, fonts, spacing } from "@times-components/styleguide";
+import {
+  colours,
+  fonts,
+  spacing,
+  editionBreakpoints
+} from "@times-components/styleguide";
 
-const main = {
+const headlineFontSizeResolver = {
+  [editionBreakpoints.huge]: 35,
+  [editionBreakpoints.wide]: 35,
+  [editionBreakpoints.small]: 30,
+  [editionBreakpoints.medium]: 30
+};
+
+export default breakpoint => ({
   container: {
     flex: 1
   },
   headline: {
     fontFamily: fonts.headline,
-    fontSize: 30,
+    fontSize: headlineFontSizeResolver[breakpoint],
     lineHeight: 35,
     marginBottom: spacing(2),
     textAlign: "center"
@@ -22,24 +34,4 @@ const main = {
     paddingHorizontal: spacing(8),
     paddingVertical: spacing(4)
   }
-};
-
-const stylesWide = {
-  headline: {
-    fontFamily: fonts.headline,
-    fontSize: 35,
-    lineHeight: 35,
-    marginBottom: spacing(2),
-    textAlign: "center"
-  }
-};
-
-const headlineFontSizeResolver = {
-  huge: stylesWide,
-  wide: stylesWide
-};
-
-export default breakpoint => ({
-  ...main,
-  ...(headlineFontSizeResolver[breakpoint] || {})
 });

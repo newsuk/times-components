@@ -1,6 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
+import { editionBreakpoints } from "@times-components/styleguide";
 import {
   getCrop,
   TileImage,
@@ -44,7 +45,7 @@ TileAD.propTypes = {
 };
 
 TileAD.defaultProps = {
-  breakpoint: "small"
+  breakpoint: editionBreakpoints.small
 };
 
 export default withTileTracking(TileAD);

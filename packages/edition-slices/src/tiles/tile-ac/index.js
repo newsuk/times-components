@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { editionBreakpoints } from "@times-components/styleguide";
 import {
   getCrop,
   TileImage,
@@ -39,7 +40,7 @@ TileAC.propTypes = {
 };
 
 TileAC.defaultProps = {
-  breakpoint: "small"
+  breakpoint: editionBreakpoints.small
 };
 
 export default withTileTracking(TileAC);
