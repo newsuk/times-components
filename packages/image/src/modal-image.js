@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import { Modal, View } from "react-native";
 import Gestures from "@times-components/gestures";
 import { ResponsiveContext } from "@times-components/responsive";
@@ -64,59 +64,65 @@ class ModalImage extends Component {
     return (
       <View>
         <Modal
+          animationType="slide"
           onRequestClose={this.hideModal}
           presentationStyle="fullScreen"
           supportedOrientations={["portrait", "landscape"]}
           visible={showModal}
         >
-          <ResponsiveContext.Consumer>
-            {({ isTablet }) => (
-              <View style={styles.modal}>
-                <SafeAreaView
-                  forceInset={{
-                    bottom: "never",
-                    horizontal: "always",
-                    top: "always"
-                  }}
-                  style={styles.topSafeView}
-                />
-                <View
-                  style={[
-                    styles.buttonContainer,
-                    isTablet && styles.buttonContainerTablet
-                  ]}
-                >
+          <View style={styles.modal}>
+            <ResponsiveContext.Consumer>
+              {({ isTablet }) => (
+                <Fragment>
+                  <SafeAreaView
+                    forceInset={{
+                      bottom: "never",
+                      horizontal: "always",
+                      top: "always"
+                    }}
+                    style={styles.topSafeView}
+                  />
+                  <View
+                    style={[
+                      styles.buttonContainer,
+                      isTablet && styles.buttonContainerTablet
+                    ]}
+                  >
+                    {elementsVisible ? (
+                      <CloseButton
+                        isTablet={isTablet}
+                        onPress={this.hideModal}
+                      />
+                    ) : null}
+                  </View>
+                  <SafeAreaView
+                    forceInset={{ horizontal: "always", vertical: "always" }}
+                    style={styles.middleSafeView}
+                  >
+                    <Gestures
+                      onPress={this.toggleElements}
+                      onSwipeDown={this.hideModal}
+                      style={styles.gestureContainer}
+                    >
+                      <Image
+                        {...this.props}
+                        lowResSize={lowResSize}
+                        style={styles.modalImageContainer}
+                      />
+                    </Gestures>
+                  </SafeAreaView>
                   {elementsVisible ? (
-                    <CloseButton isTablet={isTablet} onPress={this.hideModal} />
+                    <ModalCaptionContainer
+                      pointerEvents="none"
+                      style={styles.bottomSafeView}
+                    >
+                      {this.renderCaption({ isTablet })}
+                    </ModalCaptionContainer>
                   ) : null}
-                </View>
-                <SafeAreaView
-                  forceInset={{ horizontal: "always", vertical: "always" }}
-                  style={styles.middleSafeView}
-                >
-                  <Gestures
-                    onPress={this.toggleElements}
-                    onSwipeDown={this.hideModal}
-                    style={styles.gestureContainer}
-                  >
-                    <Image
-                      {...this.props}
-                      lowResSize={lowResSize}
-                      style={styles.modalImageContainer}
-                    />
-                  </Gestures>
-                </SafeAreaView>
-                {elementsVisible ? (
-                  <ModalCaptionContainer
-                    pointerEvents="none"
-                    style={styles.bottomSafeView}
-                  >
-                    {this.renderCaption({ isTablet })}
-                  </ModalCaptionContainer>
-                ) : null}
-              </View>
-            )}
-          </ResponsiveContext.Consumer>
+                </Fragment>
+              )}
+            </ResponsiveContext.Consumer>
+          </View>
         </Modal>
         <Button onPress={this.showModal}>
           <Image {...this.props} onImageLayout={this.onLowResLayout} />
