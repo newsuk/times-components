@@ -8,7 +8,6 @@ exports[`1. renders link 1`] = `
       "type": "ThemeAttrAndroid",
     }
   }
-  pointerEvents="box-only"
 >
   The Times
 </View>
@@ -22,7 +21,6 @@ exports[`2. renders link with target 1`] = `
       "type": "ThemeAttrAndroid",
     }
   }
-  pointerEvents="box-only"
 >
   The Times
 </View>
