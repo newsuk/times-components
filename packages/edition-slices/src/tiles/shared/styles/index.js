@@ -1,3 +1,5 @@
+import { spacing } from "@times-components/styleguide";
+
 const horizontalStyles = {
   container: {
     flexDirection: "row"
@@ -9,7 +11,7 @@ const horizontalStyles = {
   starButton: {
     alignItems: "flex-end",
     flex: 1,
-    marginTop: -5,
+    marginTop: -spacing(1),
     width: "25%"
   }
 };
@@ -21,7 +23,7 @@ const verticalStyles = {
   flagStyle: {},
   starButton: {
     alignItems: "center",
-    marginTop: 10
+    marginTop: spacing(2)
   }
 };
 

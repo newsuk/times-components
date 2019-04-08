@@ -19,7 +19,7 @@ const TileQ = ({ onPress, tile }) => (
         uri={getTileImageUri(tile, "crop32")}
       />
       <View style={styles.starButton}>
-        <TileStar articleId={tile.articleId} />
+        <TileStar articleId={tile.article.id} />
       </View>
     </View>
   </TileLink>
