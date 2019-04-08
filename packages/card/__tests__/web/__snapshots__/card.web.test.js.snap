@@ -118,15 +118,23 @@ exports[`7. card with a loading state 1`] = `
         <Component>
           <Gradient
             degrees={264}
+            endPoint="1"
+            startPoint="0"
           />
           <Gradient
             degrees={267}
+            endPoint="1"
+            startPoint="0"
           />
           <Gradient
             degrees={267}
+            endPoint="1"
+            startPoint="0"
           />
           <Gradient
             degrees={267}
+            endPoint="1"
+            startPoint="0"
           />
         </Component>
       </div>
@@ -143,15 +151,23 @@ exports[`8. card with a loading state and no image 1`] = `
         <Component>
           <Gradient
             degrees={264}
+            endPoint="1"
+            startPoint="0"
           />
           <Gradient
             degrees={267}
+            endPoint="1"
+            startPoint="0"
           />
           <Gradient
             degrees={267}
+            endPoint="1"
+            startPoint="0"
           />
           <Gradient
             degrees={267}
+            endPoint="1"
+            startPoint="0"
           />
         </Component>
       </div>
@@ -168,15 +184,23 @@ exports[`9. card with reversed loading state 1`] = `
         <Component>
           <Gradient
             degrees={264}
+            endPoint="1"
+            startPoint="0"
           />
           <Gradient
             degrees={267}
+            endPoint="1"
+            startPoint="0"
           />
           <Gradient
             degrees={267}
+            endPoint="1"
+            startPoint="0"
           />
           <Gradient
             degrees={267}
+            endPoint="1"
+            startPoint="0"
           />
         </Component>
       </div>
@@ -203,15 +227,23 @@ exports[`10. card with reversed loading state with no image 1`] = `
         <Component>
           <Gradient
             degrees={264}
+            endPoint="1"
+            startPoint="0"
           />
           <Gradient
             degrees={267}
+            endPoint="1"
+            startPoint="0"
           />
           <Gradient
             degrees={267}
+            endPoint="1"
+            startPoint="0"
           />
           <Gradient
             degrees={267}
+            endPoint="1"
+            startPoint="0"
           />
         </Component>
       </div>

@@ -7,7 +7,7 @@ import styles from "./styles";
 const TileAG = ({ onPress, tile }) => {
   const {
     strapline,
-    article: { id, shortHeadline, url }
+    article: { id, shortHeadline, strapline: articleStrapline, url }
   } = tile;
   const tileWithoutLabelAndFlags = { article: { id, shortHeadline, url } };
 
@@ -16,7 +16,7 @@ const TileAG = ({ onPress, tile }) => {
       <View style={styles.container}>
         <TileSummary
           headlineStyle={styles.headline}
-          strapline={strapline}
+          strapline={strapline || articleStrapline}
           straplineStyle={styles.strapline}
           tile={tileWithoutLabelAndFlags}
         />

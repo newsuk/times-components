@@ -6,7 +6,7 @@ exports[`1. landscape default modal 1`] = `
     <View
       style={
         Object {
-          "backgroundColor": "#1D1D1B",
+          "backgroundColor": "#000000",
           "flexDirection": "column",
           "height": "100%",
           "justifyContent": "space-between",
@@ -14,114 +14,133 @@ exports[`1. landscape default modal 1`] = `
         }
       }
     >
+      <SafeAreaView
+        style={
+          Object {
+            "backgroundColor": "#000000",
+            "flex": 0,
+          }
+        }
+      />
       <View
         style={
           Object {
-            "flex": 1,
+            "padding": 15,
+            "position": "relative",
+            "zIndex": 2,
           }
         }
       >
         <View
           style={
             Object {
-              "flexGrow": 0,
+              "alignItems": "center",
+              "backgroundColor": "rgba(0, 0, 0, 0.5)",
+              "borderRadius": 25,
+              "height": 25,
+              "justifyContent": "center",
+              "width": 25,
+            }
+          }
+        >
+          <Image
+            style={
+              Object {
+                "height": "85%",
+                "width": "85%",
+              }
+            }
+          />
+        </View>
+      </View>
+      <SafeAreaView
+        style={
+          Object {
+            "bottom": 0,
+            "height": "100%",
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "width": "100%",
+            "zIndex": 1,
+          }
+        }
+      >
+        <Gestures
+          style={
+            Object {
               "height": "100%",
+              "width": "100%",
             }
           }
         >
           <View
             style={
               Object {
-                "alignItems": "flex-end",
+                "alignItems": "center",
+                "height": "100%",
+                "justifyContent": "center",
+                "position": "absolute",
+                "width": "100%",
               }
             }
           >
-            <View
+            <Image
               style={
                 Object {
-                  "alignItems": "center",
-                  "backgroundColor": "rgba(0, 0, 0, 0.5)",
-                  "borderRadius": 30,
-                  "height": 30,
-                  "justifyContent": "center",
-                  "width": 30,
-                }
-              }
-            >
-              <Image
-                style={
-                  Object {
-                    "height": "85%",
-                    "width": "85%",
-                  }
-                }
-              />
-            </View>
-          </View>
-          <Gestures
-            style={
-              Object {
-                "flexGrow": 1,
-                "position": "relative",
-                "zIndex": 1,
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
                   "height": "100%",
-                  "justifyContent": "center",
                   "position": "absolute",
+                  "resizeMode": "contain",
                   "width": "100%",
                 }
               }
-            >
-              <Image
-                style={
-                  Object {
-                    "height": "100%",
-                    "position": "absolute",
-                    "resizeMode": "contain",
-                    "width": "100%",
-                  }
-                }
-              />
-            </View>
-          </Gestures>
-          <View
+            />
+          </View>
+        </Gestures>
+      </SafeAreaView>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#000000B3",
+            "flex": 0,
+            "marginTop": "auto",
+            "position": "relative",
+            "width": "100%",
+            "zIndex": 2,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "margin": 15,
+            }
+          }
+        >
+          <Text
             style={
               Object {
-                "marginHorizontal": 15,
-                "marginVertical": 15,
+                "color": "#FFFFFF",
+                "fontSize": 15,
+                "lineHeight": 15,
               }
             }
           >
-            <Text
-              style={
-                Object {
-                  "color": "#FFFFFF",
-                  "fontSize": 15,
-                  "lineHeight": 19,
-                }
+            Caption
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 10,
+                "lineHeight": 10,
+                "marginTop": 5,
               }
-            >
-              Caption
-            </Text>
-            <Text
-              style={
-                Object {
-                  "color": "#FFFFFF",
-                  "fontSize": 10,
-                  "lineHeight": 20,
-                  "marginTop": 5,
-                }
-              }
-            >
-              Credits
-            </Text>
-          </View>
+            }
+          >
+            Credits
+          </Text>
         </View>
       </View>
     </View>
@@ -155,7 +174,7 @@ exports[`2. portrait default modal 1`] = `
     <View
       style={
         Object {
-          "backgroundColor": "#1D1D1B",
+          "backgroundColor": "#000000",
           "flexDirection": "column",
           "height": "100%",
           "justifyContent": "space-between",
@@ -163,114 +182,133 @@ exports[`2. portrait default modal 1`] = `
         }
       }
     >
+      <SafeAreaView
+        style={
+          Object {
+            "backgroundColor": "#000000",
+            "flex": 0,
+          }
+        }
+      />
       <View
         style={
           Object {
-            "flex": 1,
+            "padding": 15,
+            "position": "relative",
+            "zIndex": 2,
           }
         }
       >
         <View
           style={
             Object {
-              "flexGrow": 0,
+              "alignItems": "center",
+              "backgroundColor": "rgba(0, 0, 0, 0.5)",
+              "borderRadius": 25,
+              "height": 25,
+              "justifyContent": "center",
+              "width": 25,
+            }
+          }
+        >
+          <Image
+            style={
+              Object {
+                "height": "85%",
+                "width": "85%",
+              }
+            }
+          />
+        </View>
+      </View>
+      <SafeAreaView
+        style={
+          Object {
+            "bottom": 0,
+            "height": "100%",
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "width": "100%",
+            "zIndex": 1,
+          }
+        }
+      >
+        <Gestures
+          style={
+            Object {
               "height": "100%",
+              "width": "100%",
             }
           }
         >
           <View
             style={
               Object {
-                "alignItems": "flex-end",
+                "alignItems": "center",
+                "height": "100%",
+                "justifyContent": "center",
+                "position": "absolute",
+                "width": "100%",
               }
             }
           >
-            <View
+            <Image
               style={
                 Object {
-                  "alignItems": "center",
-                  "backgroundColor": "rgba(0, 0, 0, 0.5)",
-                  "borderRadius": 30,
-                  "height": 30,
-                  "justifyContent": "center",
-                  "width": 30,
-                }
-              }
-            >
-              <Image
-                style={
-                  Object {
-                    "height": "85%",
-                    "width": "85%",
-                  }
-                }
-              />
-            </View>
-          </View>
-          <Gestures
-            style={
-              Object {
-                "flexGrow": 1,
-                "position": "relative",
-                "zIndex": 1,
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
                   "height": "100%",
-                  "justifyContent": "center",
                   "position": "absolute",
+                  "resizeMode": "contain",
                   "width": "100%",
                 }
               }
-            >
-              <Image
-                style={
-                  Object {
-                    "height": "100%",
-                    "position": "absolute",
-                    "resizeMode": "contain",
-                    "width": "100%",
-                  }
-                }
-              />
-            </View>
-          </Gestures>
-          <View
+            />
+          </View>
+        </Gestures>
+      </SafeAreaView>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#000000B3",
+            "flex": 0,
+            "marginTop": "auto",
+            "position": "relative",
+            "width": "100%",
+            "zIndex": 2,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "margin": 15,
+            }
+          }
+        >
+          <Text
             style={
               Object {
-                "marginHorizontal": 15,
-                "marginVertical": 15,
+                "color": "#FFFFFF",
+                "fontSize": 15,
+                "lineHeight": 15,
               }
             }
           >
-            <Text
-              style={
-                Object {
-                  "color": "#FFFFFF",
-                  "fontSize": 15,
-                  "lineHeight": 19,
-                }
+            Caption
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 10,
+                "lineHeight": 10,
+                "marginTop": 5,
               }
-            >
-              Caption
-            </Text>
-            <Text
-              style={
-                Object {
-                  "color": "#FFFFFF",
-                  "fontSize": 10,
-                  "lineHeight": 20,
-                  "marginTop": 5,
-                }
-              }
-            >
-              Credits
-            </Text>
-          </View>
+            }
+          >
+            Credits
+          </Text>
         </View>
       </View>
     </View>
@@ -304,7 +342,7 @@ exports[`3. tablet landscape default modal 1`] = `
     <View
       style={
         Object {
-          "backgroundColor": "#1D1D1B",
+          "backgroundColor": "#000000",
           "flexDirection": "column",
           "height": "100%",
           "justifyContent": "space-between",
@@ -312,116 +350,133 @@ exports[`3. tablet landscape default modal 1`] = `
         }
       }
     >
+      <SafeAreaView
+        style={
+          Object {
+            "backgroundColor": "#000000",
+            "flex": 0,
+          }
+        }
+      />
       <View
         style={
           Object {
-            "flex": 1,
+            "padding": 20,
+            "position": "relative",
+            "zIndex": 2,
           }
         }
       >
         <View
           style={
             Object {
-              "flexGrow": 0,
+              "alignItems": "center",
+              "backgroundColor": "rgba(0, 0, 0, 0.5)",
+              "borderRadius": 30,
+              "height": 30,
+              "justifyContent": "center",
+              "width": 30,
+            }
+          }
+        >
+          <Image
+            style={
+              Object {
+                "height": "85%",
+                "width": "85%",
+              }
+            }
+          />
+        </View>
+      </View>
+      <SafeAreaView
+        style={
+          Object {
+            "bottom": 0,
+            "height": "100%",
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "width": "100%",
+            "zIndex": 1,
+          }
+        }
+      >
+        <Gestures
+          style={
+            Object {
               "height": "100%",
+              "width": "100%",
             }
           }
         >
           <View
             style={
               Object {
-                "alignItems": "flex-end",
-                "marginHorizontal": 20,
-                "marginVertical": 20,
+                "alignItems": "center",
+                "height": "100%",
+                "justifyContent": "center",
+                "position": "absolute",
+                "width": "100%",
               }
             }
           >
-            <View
+            <Image
               style={
                 Object {
-                  "alignItems": "center",
-                  "backgroundColor": "rgba(0, 0, 0, 0.5)",
-                  "borderRadius": 40,
-                  "height": 40,
-                  "justifyContent": "center",
-                  "width": 40,
-                }
-              }
-            >
-              <Image
-                style={
-                  Object {
-                    "height": "85%",
-                    "width": "85%",
-                  }
-                }
-              />
-            </View>
-          </View>
-          <Gestures
-            style={
-              Object {
-                "flexGrow": 1,
-                "position": "relative",
-                "zIndex": 1,
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
                   "height": "100%",
-                  "justifyContent": "center",
                   "position": "absolute",
+                  "resizeMode": "contain",
                   "width": "100%",
                 }
               }
-            >
-              <Image
-                style={
-                  Object {
-                    "height": "100%",
-                    "position": "absolute",
-                    "resizeMode": "contain",
-                    "width": "100%",
-                  }
-                }
-              />
-            </View>
-          </Gestures>
-          <View
+            />
+          </View>
+        </Gestures>
+      </SafeAreaView>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#000000B3",
+            "flex": 0,
+            "marginTop": "auto",
+            "position": "relative",
+            "width": "100%",
+            "zIndex": 2,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "margin": 20,
+            }
+          }
+        >
+          <Text
             style={
               Object {
-                "marginHorizontal": 20,
-                "marginVertical": 20,
+                "color": "#FFFFFF",
+                "fontSize": 15,
+                "lineHeight": 15,
               }
             }
           >
-            <Text
-              style={
-                Object {
-                  "color": "#FFFFFF",
-                  "fontSize": 15,
-                  "lineHeight": 19,
-                }
+            Caption
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 10,
+                "lineHeight": 10,
+                "marginTop": 5,
               }
-            >
-              Caption
-            </Text>
-            <Text
-              style={
-                Object {
-                  "color": "#FFFFFF",
-                  "fontSize": 10,
-                  "lineHeight": 20,
-                  "marginTop": 5,
-                }
-              }
-            >
-              Credits
-            </Text>
-          </View>
+            }
+          >
+            Credits
+          </Text>
         </View>
       </View>
     </View>
@@ -455,7 +510,7 @@ exports[`4. tablet portrait default modal 1`] = `
     <View
       style={
         Object {
-          "backgroundColor": "#1D1D1B",
+          "backgroundColor": "#000000",
           "flexDirection": "column",
           "height": "100%",
           "justifyContent": "space-between",
@@ -463,116 +518,133 @@ exports[`4. tablet portrait default modal 1`] = `
         }
       }
     >
+      <SafeAreaView
+        style={
+          Object {
+            "backgroundColor": "#000000",
+            "flex": 0,
+          }
+        }
+      />
       <View
         style={
           Object {
-            "flex": 1,
+            "padding": 20,
+            "position": "relative",
+            "zIndex": 2,
           }
         }
       >
         <View
           style={
             Object {
-              "flexGrow": 0,
+              "alignItems": "center",
+              "backgroundColor": "rgba(0, 0, 0, 0.5)",
+              "borderRadius": 30,
+              "height": 30,
+              "justifyContent": "center",
+              "width": 30,
+            }
+          }
+        >
+          <Image
+            style={
+              Object {
+                "height": "85%",
+                "width": "85%",
+              }
+            }
+          />
+        </View>
+      </View>
+      <SafeAreaView
+        style={
+          Object {
+            "bottom": 0,
+            "height": "100%",
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+            "width": "100%",
+            "zIndex": 1,
+          }
+        }
+      >
+        <Gestures
+          style={
+            Object {
               "height": "100%",
+              "width": "100%",
             }
           }
         >
           <View
             style={
               Object {
-                "alignItems": "flex-end",
-                "marginHorizontal": 20,
-                "marginVertical": 20,
+                "alignItems": "center",
+                "height": "100%",
+                "justifyContent": "center",
+                "position": "absolute",
+                "width": "100%",
               }
             }
           >
-            <View
+            <Image
               style={
                 Object {
-                  "alignItems": "center",
-                  "backgroundColor": "rgba(0, 0, 0, 0.5)",
-                  "borderRadius": 40,
-                  "height": 40,
-                  "justifyContent": "center",
-                  "width": 40,
-                }
-              }
-            >
-              <Image
-                style={
-                  Object {
-                    "height": "85%",
-                    "width": "85%",
-                  }
-                }
-              />
-            </View>
-          </View>
-          <Gestures
-            style={
-              Object {
-                "flexGrow": 1,
-                "position": "relative",
-                "zIndex": 1,
-              }
-            }
-          >
-            <View
-              style={
-                Object {
-                  "alignItems": "center",
                   "height": "100%",
-                  "justifyContent": "center",
                   "position": "absolute",
+                  "resizeMode": "contain",
                   "width": "100%",
                 }
               }
-            >
-              <Image
-                style={
-                  Object {
-                    "height": "100%",
-                    "position": "absolute",
-                    "resizeMode": "contain",
-                    "width": "100%",
-                  }
-                }
-              />
-            </View>
-          </Gestures>
-          <View
+            />
+          </View>
+        </Gestures>
+      </SafeAreaView>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#000000B3",
+            "flex": 0,
+            "marginTop": "auto",
+            "position": "relative",
+            "width": "100%",
+            "zIndex": 2,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "margin": 20,
+            }
+          }
+        >
+          <Text
             style={
               Object {
-                "marginHorizontal": 20,
-                "marginVertical": 20,
+                "color": "#FFFFFF",
+                "fontSize": 15,
+                "lineHeight": 15,
               }
             }
           >
-            <Text
-              style={
-                Object {
-                  "color": "#FFFFFF",
-                  "fontSize": 15,
-                  "lineHeight": 19,
-                }
+            Caption
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 10,
+                "lineHeight": 10,
+                "marginTop": 5,
               }
-            >
-              Caption
-            </Text>
-            <Text
-              style={
-                Object {
-                  "color": "#FFFFFF",
-                  "fontSize": 10,
-                  "lineHeight": 20,
-                  "marginTop": 5,
-                }
-              }
-            >
-              Credits
-            </Text>
-          </View>
+            }
+          >
+            Credits
+          </Text>
         </View>
       </View>
     </View>

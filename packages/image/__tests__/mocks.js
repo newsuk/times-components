@@ -1,11 +1,13 @@
 // eslint-disable-next-line import/prefer-default-export
 export { setIsTablet } from "@times-components/test-utils/dimensions";
+export { default as Gestures } from "@times-components/gestures";
 
-// eslint-disable-next-line global-require
-jest.mock("../src/safer-area-view", () => require("react-native").SafeAreaView);
+jest.mock("../src/react-native-safe-area", () => "SafeAreaView");
 
 jest.mock("@times-components/gestures", () => "Gestures");
-jest.mock("@times-components/gradient", () => "Gradient");
+jest.mock("@times-components/gradient", () => ({
+  OverlayGradient: "OverlayGradient"
+}));
 
 // eslint-disable-next-line global-require
 jest.mock("@times-components/svgs", () => require("./mock-svg"));

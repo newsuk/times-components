@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.6.1](https://github.com/newsuk/times-components/compare/@times-components/svgs@2.6.0...@times-components/svgs@2.6.1) (2019-04-05)
+
+
+### Bug Fixes
+
+* strapline ([#1860](https://github.com/newsuk/times-components/issues/1860)) ([09e3d25](https://github.com/newsuk/times-components/commit/09e3d25))
+
+
+
+
+
 # [2.6.0](https://github.com/newsuk/times-components/compare/@times-components/svgs@2.5.4...@times-components/svgs@2.6.0) (2019-04-05)
 
 

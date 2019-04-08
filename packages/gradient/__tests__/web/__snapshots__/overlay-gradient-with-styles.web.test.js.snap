@@ -7,7 +7,7 @@ exports[`1. overlay gradient with style 1`] = `
 }
 
 .IS1 {
-  background-image: linear-gradient(30deg, rgba(1, 1, 1, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+  background-image: linear-gradient(30deg, #000000E6 0%, #00000000 100%);
 }
 </style>
 

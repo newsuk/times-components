@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/newsuk/times-components/compare/@times-components/schema@0.3.5...@times-components/schema@0.4.0) (2019-04-05)
+
+
+### Features
+
+* new modal image & related changes ([#1853](https://github.com/newsuk/times-components/issues/1853)) ([e1641c6](https://github.com/newsuk/times-components/commit/e1641c6))
+
+
+
+
+
 ## [0.3.5](https://github.com/newsuk/times-components/compare/@times-components/schema@0.3.4...@times-components/schema@0.3.5) (2019-04-05)
 
 **Note:** Version bump only for package @times-components/schema

@@ -5,63 +5,87 @@ exports[`1. modal image 1`] = `
   <Modal
     hardwareAccelerated={false}
     presentationStyle="fullScreen"
+    supportedOrientations={
+      Array [
+        "portrait",
+        "landscape",
+      ]
+    }
     visible={false}
   >
     <View>
+      <SafeAreaView
+        forceInset={
+          Object {
+            "bottom": "never",
+            "horizontal": "always",
+            "top": "always",
+          }
+        }
+      />
       <View>
-        <View>
-          <View>
+        <View
+          pointerEvents="box-only"
+        >
+          <Image
+            resizeMode="contain"
+            source={
+              Object {
+                "testUri": "../../../packages/image/assets/close-button.png",
+              }
+            }
+          />
+        </View>
+      </View>
+      <SafeAreaView
+        forceInset={
+          Object {
+            "horizontal": "always",
+            "vertical": "always",
+          }
+        }
+      >
+        <Gestures>
+          <View
+            aspectRatio={1.5}
+          >
             <View
-              pointerEvents="box-only"
+              height={350}
+              width={525}
             >
               <Image
                 resizeMode="contain"
                 source={
                   Object {
-                    "testUri": "../../../packages/image/assets/close-button.png",
+                    "testUri": "../../../packages/image/assets/t.png",
                   }
                 }
               />
             </View>
-          </View>
-          <Gestures>
-            <View
-              aspectRatio={1.5}
-            >
-              <View
-                height={350}
-                width={525}
-              >
-                <Image
-                  resizeMode="contain"
-                  source={
-                    Object {
-                      "testUri": "../../../packages/image/assets/t.png",
-                    }
-                  }
-                />
-              </View>
-              <Image
-                source={
-                  Object {
-                    "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=660",
-                  }
+            <Image
+              source={
+                Object {
+                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=660",
                 }
-              />
-              <Image
-                source={
-                  Object {
-                    "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=660",
-                  }
+              }
+            />
+            <Image
+              source={
+                Object {
+                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=660",
                 }
-              />
-            </View>
-          </Gestures>
-          <View>
-            <Text>
-              Caption
-            </Text>
+              }
+            />
           </View>
+        </Gestures>
+      </SafeAreaView>
+      <View
+        pointerEvents="none"
+      >
+        <View>
+          <Text>
+            Caption
+          </Text>
         </View>
       </View>
     </View>
@@ -102,36 +126,59 @@ exports[`2. modal image with no caption 1`] = `
   <Modal
     hardwareAccelerated={false}
     presentationStyle="fullScreen"
+    supportedOrientations={
+      Array [
+        "portrait",
+        "landscape",
+      ]
+    }
     visible={false}
   >
     <View>
+      <SafeAreaView
+        forceInset={
+          Object {
+            "bottom": "never",
+            "horizontal": "always",
+            "top": "always",
+          }
+        }
+      />
       <View>
-        <View>
-          <View>
-            <View
-              pointerEvents="box-only"
-            >
-              <Image
-                resizeMode="contain"
-                source={
-                  Object {
-                    "testUri": "../../../packages/image/assets/close-button.png",
-                  }
-                }
-              />
-            </View>
-          </View>
-          <Gestures>
-            <View
-              aspectRatio={1.5}
-            >
-              <Image
-                source={null}
-              />
-            </View>
-          </Gestures>
+        <View
+          pointerEvents="box-only"
+        >
+          <Image
+            resizeMode="contain"
+            source={
+              Object {
+                "testUri": "../../../packages/image/assets/close-button.png",
+              }
+            }
+          />
         </View>
       </View>
+      <SafeAreaView
+        forceInset={
+          Object {
+            "horizontal": "always",
+            "vertical": "always",
+          }
+        }
+      >
+        <Gestures>
+          <View
+            aspectRatio={1.5}
+          >
+            <Image
+              source={null}
+            />
+          </View>
+        </Gestures>
+      </SafeAreaView>
+      <View
+        pointerEvents="none"
+      />
     </View>
   </Modal>
   <View
@@ -153,63 +200,87 @@ exports[`3. modal image with custom highressize 1`] = `
   <Modal
     hardwareAccelerated={false}
     presentationStyle="fullScreen"
+    supportedOrientations={
+      Array [
+        "portrait",
+        "landscape",
+      ]
+    }
     visible={false}
   >
     <View>
+      <SafeAreaView
+        forceInset={
+          Object {
+            "bottom": "never",
+            "horizontal": "always",
+            "top": "always",
+          }
+        }
+      />
       <View>
-        <View>
-          <View>
+        <View
+          pointerEvents="box-only"
+        >
+          <Image
+            resizeMode="contain"
+            source={
+              Object {
+                "testUri": "../../../packages/image/assets/close-button.png",
+              }
+            }
+          />
+        </View>
+      </View>
+      <SafeAreaView
+        forceInset={
+          Object {
+            "horizontal": "always",
+            "vertical": "always",
+          }
+        }
+      >
+        <Gestures>
+          <View
+            aspectRatio={1.5}
+          >
             <View
-              pointerEvents="box-only"
+              height={350}
+              width={525}
             >
               <Image
                 resizeMode="contain"
                 source={
                   Object {
-                    "testUri": "../../../packages/image/assets/close-button.png",
+                    "testUri": "../../../packages/image/assets/t.png",
                   }
                 }
               />
             </View>
-          </View>
-          <Gestures>
-            <View
-              aspectRatio={1.5}
-            >
-              <View
-                height={350}
-                width={525}
-              >
-                <Image
-                  resizeMode="contain"
-                  source={
-                    Object {
-                      "testUri": "../../../packages/image/assets/t.png",
-                    }
-                  }
-                />
-              </View>
-              <Image
-                source={
-                  Object {
-                    "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
-                  }
+            <Image
+              source={
+                Object {
+                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
                 }
-              />
-              <Image
-                source={
-                  Object {
-                    "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
-                  }
+              }
+            />
+            <Image
+              source={
+                Object {
+                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
                 }
-              />
-            </View>
-          </Gestures>
-          <View>
-            <Text>
-              Caption
-            </Text>
+              }
+            />
           </View>
+        </Gestures>
+      </SafeAreaView>
+      <View
+        pointerEvents="none"
+      >
+        <View>
+          <Text>
+            Caption
+          </Text>
         </View>
       </View>
     </View>
@@ -239,6 +310,144 @@ exports[`3. modal image with custom highressize 1`] = `
             "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
           }
         }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`8. hides elements when tapping on the image 1`] = `
+<View>
+  <Modal
+    hardwareAccelerated={false}
+    presentationStyle="fullScreen"
+    supportedOrientations={
+      Array [
+        "portrait",
+        "landscape",
+      ]
+    }
+    visible={true}
+  >
+    <View>
+      <SafeAreaView
+        forceInset={
+          Object {
+            "bottom": "never",
+            "horizontal": "always",
+            "top": "always",
+          }
+        }
+      />
+      <View />
+      <SafeAreaView
+        forceInset={
+          Object {
+            "horizontal": "always",
+            "vertical": "always",
+          }
+        }
+      >
+        <Gestures>
+          <View
+            aspectRatio={1.5}
+          >
+            <Image
+              source={null}
+            />
+          </View>
+        </Gestures>
+      </SafeAreaView>
+    </View>
+  </Modal>
+  <View
+    pointerEvents="box-only"
+  >
+    <View
+      aspectRatio={1.5}
+    >
+      <Image
+        source={null}
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`9. re-shows elements when tapping on the image a second time 1`] = `
+<View>
+  <Modal
+    hardwareAccelerated={false}
+    presentationStyle="fullScreen"
+    supportedOrientations={
+      Array [
+        "portrait",
+        "landscape",
+      ]
+    }
+    visible={true}
+  >
+    <View>
+      <SafeAreaView
+        forceInset={
+          Object {
+            "bottom": "never",
+            "horizontal": "always",
+            "top": "always",
+          }
+        }
+      />
+      <View>
+        <View
+          pointerEvents="box-only"
+        >
+          <Image
+            resizeMode="contain"
+            source={
+              Object {
+                "testUri": "../../../packages/image/assets/close-button.png",
+              }
+            }
+          />
+        </View>
+      </View>
+      <SafeAreaView
+        forceInset={
+          Object {
+            "horizontal": "always",
+            "vertical": "always",
+          }
+        }
+      >
+        <Gestures>
+          <View
+            aspectRatio={1.5}
+          >
+            <Image
+              source={null}
+            />
+          </View>
+        </Gestures>
+      </SafeAreaView>
+      <View
+        pointerEvents="none"
+      >
+        <View>
+          <Text>
+            Caption
+          </Text>
+        </View>
+      </View>
+    </View>
+  </Modal>
+  <View
+    pointerEvents="box-only"
+  >
+    <View
+      aspectRatio={1.5}
+    >
+      <Image
+        source={null}
       />
     </View>
   </View>

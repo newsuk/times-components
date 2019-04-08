@@ -2,3 +2,4 @@
 **/coverage/*
 dist
 rnw.js
+src/react-native-safe-area.js
