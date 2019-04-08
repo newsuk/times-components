@@ -16,8 +16,7 @@ export default Component =>
       publishedTime: get(data, "publishedTime", ""),
       referralUrl,
       section: pageSection || get(data, "section", ""),
-      template: get(data, "template", "Default"),
-      topics: (get(data, "topics", []) || []).map(topic => topic.name).join(",")
+      template: get(data, "template", "Default")
     }),
     trackingObjectName: "Article"
   });

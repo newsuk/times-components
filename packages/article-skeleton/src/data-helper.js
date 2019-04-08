@@ -14,12 +14,7 @@ const append = ({ data, type }, list) => {
 
 const prepareDataForListView = articleData => {
   const relatedArticleSliceData = articleData.relatedArticleSlice
-    ? {
-        relatedArticleSlice: {
-          ...articleData.relatedArticleSlice,
-          sliceName: articleData.relatedArticleSlice.__typename // eslint-disable-line no-underscore-dangle
-        }
-      }
+    ? { relatedArticleSlice: articleData.relatedArticleSlice }
     : null;
   const commentsData = {
     articleId: articleData.id,
@@ -58,15 +53,21 @@ const prepareDataForListView = articleData => {
 
   return append(
     {
-      data: commentsData,
-      type: "comments"
+      data: { articleId: articleData.id, articleUrl: articleData.url },
+      type: "articleExtrasRow"
     },
     append(
       {
-        data: relatedArticleSliceData,
-        type: "relatedArticleSlice"
+        data: commentsData,
+        type: "comments"
       },
-      data
+      append(
+        {
+          data: relatedArticleSliceData,
+          type: "relatedArticleSlice"
+        },
+        data
+      )
     )
   );
 };
