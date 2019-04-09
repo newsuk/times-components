@@ -5,7 +5,9 @@ exports[`1. renders default 1`] = `
   disabled={false}
   linkStyle={
     Object {
+      "borderRadius": 9999,
       "height": 28,
+      "overflow": "hidden",
       "padding": 5,
       "width": 28,
     }
@@ -25,7 +27,9 @@ exports[`2. renders selected 1`] = `
   disabled={false}
   linkStyle={
     Object {
+      "borderRadius": 9999,
       "height": 28,
+      "overflow": "hidden",
       "padding": 5,
       "width": 28,
     }
@@ -45,7 +49,9 @@ exports[`3. renders disabled 1`] = `
   disabled={true}
   linkStyle={
     Object {
+      "borderRadius": 9999,
       "height": 28,
+      "overflow": "hidden",
       "padding": 5,
       "width": 28,
     }
@@ -65,7 +71,9 @@ exports[`4. renders default in dark theme 1`] = `
   disabled={false}
   linkStyle={
     Object {
+      "borderRadius": 9999,
       "height": 28,
+      "overflow": "hidden",
       "padding": 5,
       "width": 28,
     }
@@ -85,7 +93,9 @@ exports[`5. renders selected in dark theme 1`] = `
   disabled={false}
   linkStyle={
     Object {
+      "borderRadius": 9999,
       "height": 28,
+      "overflow": "hidden",
       "padding": 5,
       "width": 28,
     }
@@ -105,7 +115,9 @@ exports[`6. renders disabled in dark theme 1`] = `
   disabled={true}
   linkStyle={
     Object {
+      "borderRadius": 9999,
       "height": 28,
+      "overflow": "hidden",
       "padding": 5,
       "width": 28,
     }

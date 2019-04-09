@@ -86,7 +86,7 @@ exports[`4. iconstar sets a width when height is set 1`] = `
   }
   title="Save star"
   vbHeight={20}
-  vbWidth={20}
+  vbWidth={21}
 />
 `;
 
