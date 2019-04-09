@@ -1281,6 +1281,7 @@ exports[`12. lead one and four slice - medium 1`] = `
       className="IS1 S1"
     >
       <TileAC
+        breakpoint="wide"
         tileName="lead"
       />
     </div>
@@ -1291,24 +1292,28 @@ exports[`12. lead one and four slice - medium 1`] = `
       className="IS6 S1"
     >
       <TileAD
+        breakpoint="wide"
         tileName="support1"
       />
       <div
         className="IS3 S1"
       />
       <TileAD
+        breakpoint="wide"
         tileName="support2"
       />
       <div
         className="IS4 S1"
       />
       <TileAD
+        breakpoint="wide"
         tileName="support3"
       />
       <div
         className="IS5 S1"
       />
       <TileAD
+        breakpoint="wide"
         tileName="support4"
       />
     </div>
@@ -2959,6 +2964,7 @@ exports[`27. lead one and four slice - wide 1`] = `
       className="IS1 S1"
     >
       <TileAC
+        breakpoint="wide"
         tileName="lead"
       />
     </div>
@@ -2969,24 +2975,28 @@ exports[`27. lead one and four slice - wide 1`] = `
       className="IS6 S1"
     >
       <TileAD
+        breakpoint="wide"
         tileName="support1"
       />
       <div
         className="IS3 S1"
       />
       <TileAD
+        breakpoint="wide"
         tileName="support2"
       />
       <div
         className="IS4 S1"
       />
       <TileAD
+        breakpoint="wide"
         tileName="support3"
       />
       <div
         className="IS5 S1"
       />
       <TileAD
+        breakpoint="wide"
         tileName="support4"
       />
     </div>
@@ -4637,6 +4647,7 @@ exports[`42. lead one and four slice - huge 1`] = `
       className="IS1 S1"
     >
       <TileAC
+        breakpoint="wide"
         tileName="lead"
       />
     </div>
@@ -4647,24 +4658,28 @@ exports[`42. lead one and four slice - huge 1`] = `
       className="IS6 S1"
     >
       <TileAD
+        breakpoint="wide"
         tileName="support1"
       />
       <div
         className="IS3 S1"
       />
       <TileAD
+        breakpoint="wide"
         tileName="support2"
       />
       <div
         className="IS4 S1"
       />
       <TileAD
+        breakpoint="wide"
         tileName="support3"
       />
       <div
         className="IS5 S1"
       />
       <TileAD
+        breakpoint="wide"
         tileName="support4"
       />
     </div>
