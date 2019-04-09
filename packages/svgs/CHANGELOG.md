@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.6.4](https://github.com/newsuk/times-components/compare/@times-components/svgs@2.6.3...@times-components/svgs@2.6.4) (2019-04-09)
+
+
+### Bug Fixes
+
+* make save star ripple effect a circle ([#1867](https://github.com/newsuk/times-components/issues/1867)) ([4f9800e](https://github.com/newsuk/times-components/commit/4f9800e))
+
+
+
+
+
 ## [2.6.3](https://github.com/newsuk/times-components/compare/@times-components/svgs@2.6.2...@times-components/svgs@2.6.3) (2019-04-09)
 
 

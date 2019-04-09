@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.9](https://github.com/newsuk/times-components/compare/@times-components/star-button@0.1.8...@times-components/star-button@0.1.9) (2019-04-09)
+
+
+### Bug Fixes
+
+* make save star ripple effect a circle ([#1867](https://github.com/newsuk/times-components/issues/1867)) ([4f9800e](https://github.com/newsuk/times-components/commit/4f9800e))
+
+
+
+
+
 ## [0.1.8](https://github.com/newsuk/times-components/compare/@times-components/star-button@0.1.7...@times-components/star-button@0.1.8) (2019-04-09)
 
 **Note:** Version bump only for package @times-components/star-button
