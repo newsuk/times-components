@@ -199,9 +199,9 @@ exports[`default styles 1`] = `
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
-  line-height: 14px;
-  margin-top: 0px;
+  line-height: 12px;
   margin-bottom: 0px;
+  margin-top: -1px;
 }
 
 .S4 {

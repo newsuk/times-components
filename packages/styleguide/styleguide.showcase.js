@@ -9,6 +9,38 @@ import timesStyleguide, {
 } from "./src/styleguide";
 import styles from "./styleguide.styles";
 
+const getStories = ({ colourMap, name }) => {
+  const story = {
+    component: () => {
+      const colourBoxes = Object.keys(colourMap).map(colourName => (
+        <ColourBox
+          hex={colourMap[colourName]}
+          key={colourName}
+          name={colourName}
+        />
+      ));
+
+      return <View style={styles.display}>{colourBoxes}</View>;
+    },
+    name,
+    type: "story"
+  };
+
+  return [{ ...story, platform: "native" }, { ...story, platform: "web" }];
+};
+
+const getBuilder = () => {
+  const bulder = {
+    add: ({ colourMap, name }) => {
+      bulder.stories.push(...getStories({ colourMap, name }));
+      return bulder;
+    },
+    stories: []
+  };
+
+  return bulder;
+};
+
 const ColourBox = ({ name, hex }) => (
   <View style={styles.container}>
     <View style={{ ...styles.box, backgroundColor: hex }} />
@@ -41,7 +73,7 @@ const fontDisplayer = (fontFamily, phrase, fontSizes) =>
 const fontFixture = select => {
   const scale = select("Scale", scales, scales.large);
   const styleguide = timesStyleguide({ scale });
-  const phrase = "The Quick Brown Fox Jumped Over the Lazy Dog";
+  const phrase = "The Quick Brown Fox Jumps Over the Lazy Dog";
   return (
     <ScrollView>
       <View style={styles.showoffFontsContainer}>
@@ -125,108 +157,18 @@ const fontFixture = select => {
   );
 };
 
+const colourStoriesBuilder = getBuilder();
+colourStoriesBuilder
+  .add({ colourMap: colours.functional, name: "Functional Colours" })
+  .add({
+    colourMap: colours.secondarySectionColours,
+    name: "Secondary Section Colours"
+  })
+  .add({ colourMap: colours.section, name: "Section Colours" });
+
 export default {
   children: [
-    {
-      component: () => {
-        const colourBoxes = Object.keys(colours.functional).map(colourName => (
-          <ColourBox
-            hex={colours.functional[colourName]}
-            key={colourName}
-            name={colourName}
-          />
-        ));
-
-        return <ScrollView>{colourBoxes}</ScrollView>;
-      },
-      name: "Functional Colours",
-      platform: "native",
-      type: "story"
-    },
-    {
-      component: () => {
-        const colourBoxes = Object.keys(colours.functional).map(colourName => (
-          <ColourBox
-            hex={colours.functional[colourName]}
-            key={colourName}
-            name={colourName}
-          />
-        ));
-
-        return <View style={styles.display}>{colourBoxes}</View>;
-      },
-      name: "Functional Colours",
-      platform: "web",
-      type: "story"
-    },
-    {
-      component: () => {
-        const colourBoxes = Object.keys(colours.secondarySectionColours).map(
-          colourName => (
-            <ColourBox
-              hex={colours.secondarySectionColours[colourName]}
-              key={colourName}
-              name={colourName}
-            />
-          )
-        );
-
-        return <ScrollView>{colourBoxes}</ScrollView>;
-      },
-      name: "Secondary Section Colours",
-      platform: "native",
-      type: "story"
-    },
-    {
-      component: () => {
-        const colourBoxes = Object.keys(colours.secondarySectionColours).map(
-          colourName => (
-            <ColourBox
-              hex={colours.secondarySectionColours[colourName]}
-              key={colourName}
-              name={colourName}
-            />
-          )
-        );
-
-        return <View style={styles.display}>{colourBoxes}</View>;
-      },
-      name: "Secondary Section Colours",
-      platform: "web",
-      type: "story"
-    },
-    {
-      component: () => {
-        const colourBoxes = Object.keys(colours.section).map(colourName => (
-          <ColourBox
-            hex={colours.section[colourName]}
-            key={colourName}
-            name={colourName}
-          />
-        ));
-
-        return <ScrollView>{colourBoxes}</ScrollView>;
-      },
-      name: "Section Colours",
-      platform: "native",
-      type: "story"
-    },
-    {
-      component: () => {
-        const colourBoxes = Object.keys(colours.section).map(colourName => (
-          <ColourBox
-            hex={colours.section[colourName]}
-            key={colourName}
-            name={colourName}
-          />
-        ));
-
-        return <View style={styles.display}>{colourBoxes}</View>;
-      },
-      name: "Section Colours",
-      platform: "web",
-      type: "story"
-    },
+    ...colourStoriesBuilder.stories,
     {
       component: () => (
         <Animations.FadeIn>
