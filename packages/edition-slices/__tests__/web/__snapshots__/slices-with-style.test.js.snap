@@ -1055,6 +1055,7 @@ exports[`4. lead one and four 1`] = `
       className="IS1 S1"
     >
       <TileAC
+        breakpoint="wide"
         tileName="lead"
       />
     </div>
@@ -1065,24 +1066,28 @@ exports[`4. lead one and four 1`] = `
       className="IS6 S1"
     >
       <TileAD
+        breakpoint="wide"
         tileName="support1"
       />
       <div
         className="IS3 S1"
       />
       <TileAD
+        breakpoint="wide"
         tileName="support2"
       />
       <div
         className="IS4 S1"
       />
       <TileAD
+        breakpoint="wide"
         tileName="support3"
       />
       <div
         className="IS5 S1"
       />
       <TileAD
+        breakpoint="wide"
         tileName="support4"
       />
     </div>

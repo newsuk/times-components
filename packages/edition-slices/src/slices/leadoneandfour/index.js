@@ -49,19 +49,44 @@ class LeadOneAndFour extends Component {
       <LeadOneAndFourSlice
         breakpoint={breakpoint}
         renderLead={() => (
-          <TileAC onPress={onPress} tile={lead} tileName="lead" />
+          <TileAC
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={lead}
+            tileName="lead"
+          />
         )}
         renderSupport1={() => (
-          <TileAD onPress={onPress} tile={support1} tileName="support1" />
+          <TileAD
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={support1}
+            tileName="support1"
+          />
         )}
         renderSupport2={() => (
-          <TileAD onPress={onPress} tile={support2} tileName="support2" />
+          <TileAD
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={support2}
+            tileName="support2"
+          />
         )}
         renderSupport3={() => (
-          <TileAD onPress={onPress} tile={support3} tileName="support3" />
+          <TileAD
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={support3}
+            tileName="support3"
+          />
         )}
         renderSupport4={() => (
-          <TileAD onPress={onPress} tile={support4} tileName="support4" />
+          <TileAD
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={support4}
+            tileName="support4"
+          />
         )}
       />
     );

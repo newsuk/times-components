@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.6.8](https://github.com/newsuk/times-components/compare/@times-components/markup-forest@1.6.7...@times-components/markup-forest@1.6.8) (2019-04-09)
+
+
+### Bug Fixes
+
+* Video labels and Article label bugs ([#1863](https://github.com/newsuk/times-components/issues/1863)) ([df3e836](https://github.com/newsuk/times-components/commit/df3e836))
+
+
+
+
+
 ## [1.6.7](https://github.com/newsuk/times-components/compare/@times-components/markup-forest@1.6.6...@times-components/markup-forest@1.6.7) (2019-04-08)
 
 **Note:** Version bump only for package @times-components/markup-forest

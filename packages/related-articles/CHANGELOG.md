@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.65](https://github.com/newsuk/times-components/compare/@times-components/related-articles@5.5.64...@times-components/related-articles@5.5.65) (2019-04-09)
+
+
+### Bug Fixes
+
+* Video labels and Article label bugs ([#1863](https://github.com/newsuk/times-components/issues/1863)) ([df3e836](https://github.com/newsuk/times-components/commit/df3e836))
+
+
+
+
+
 ## [5.5.64](https://github.com/newsuk/times-components/compare/@times-components/related-articles@5.5.63...@times-components/related-articles@5.5.64) (2019-04-08)
 
 **Note:** Version bump only for package @times-components/related-articles

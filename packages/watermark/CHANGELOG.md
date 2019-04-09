@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.5.8](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.5.7...@times-components/watermark@2.5.8) (2019-04-09)
+
+
+### Bug Fixes
+
+* Video labels and Article label bugs ([#1863](https://github.com/newsuk/times-components/issues/1863)) ([df3e836](https://github.com/newsuk/times-components/commit/df3e836))
+
+
+
+
+
 ## [2.5.7](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.5.6...@times-components/watermark@2.5.7) (2019-04-08)
 
 **Note:** Version bump only for package @times-components/watermark
