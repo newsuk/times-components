@@ -1861,54 +1861,6 @@
     webpack-dev-server "3.1.7"
     webpack-merge "^4.1.1"
 
-<<<<<<< HEAD
-"@times-components/schema@0.3.5":
-  version "0.3.5"
-  resolved "https://registry.yarnpkg.com/@times-components/schema/-/schema-0.3.5.tgz#dd4820f5ed3a0a329dfa4d8de1093b1f637e799f"
-  integrity sha512-YA2bNRUB6uNgexGJoenbGl9K+Z1XQIUjr8Od1XtDRCmICDy2ABIaDg0ovC1/aSlGlyJhKqdR8yi1I6s/DYW6Jg==
-  dependencies:
-    apollo-cache-inmemory "1.3.11"
-    chalk "2.4.1"
-    graphql "0.13.2"
-    mkdirp "0.5.1"
-    node-fetch "2.2.0"
-
-"@times-components/storybook@3.4.8":
-  version "3.4.8"
-  resolved "https://registry.yarnpkg.com/@times-components/storybook/-/storybook-3.4.8.tgz#7385a7f8e8828be97dd12f4a6cd0b0d98bbf31aa"
-  integrity sha512-98MHcgnxlnBD1nchIVRMjQu0Xpdab6C1QyZSeqFIPpRgnjstL8RNomFPEcY4hSM8YWAvjcCs2JaL/N1ohUzRmg==
-  dependencies:
-    "@storybook/addon-actions" "3.4.10"
-    "@storybook/addon-knobs" "3.4.10"
-    "@storybook/react-native" "3.4.10"
-    "@times-components/schema" "0.3.5"
-    apollo-cache-inmemory "1.3.11"
-    apollo-client "2.4.7"
-    apollo-link-http "1.5.7"
-    babel-core "6.26.0"
-    babel-runtime "6.26.0"
-    prop-types "15.6.2"
-    react "16.5.2"
-    react-apollo "2.1.4"
-    react-test-renderer "16.5.2"
-
-"@times-components/styleguide@3.26.6":
-  version "3.26.6"
-  resolved "https://registry.yarnpkg.com/@times-components/styleguide/-/styleguide-3.26.6.tgz#69f793674b71d18a28ec00530f2161835eb7ee66"
-  integrity sha512-dUJ7pD/yGheRuwN/1BRpHwtIDz2RaIOdDxDk1cSi0KBfenzHUCPUcSpEYc8Qr4SoX/W5+c+Jvfxx+h6lfwY1cg==
-  dependencies:
-    prop-types "15.6.2"
-    styled-components "3.4.0"
-
-"@times-components/test-utils@2.2.17":
-  version "2.2.17"
-  resolved "https://registry.yarnpkg.com/@times-components/test-utils/-/test-utils-2.2.17.tgz#16f156eabdd9e41321f8157270d935f5b073b49e"
-  integrity sha512-dapd6KGGNlITsJuL9E/QbPAphu0jqQJKFCq4SCnB3SVS5YznGKhIKn5c1kl0y4yhZ7ed9n4s7jhQNgI2XQGS/A==
-  dependencies:
-    "@times-components/styleguide" "3.26.6"
-
-=======
->>>>>>> master
 "@types/accepts@^1.3.5":
   version "1.3.5"
   resolved "https://registry.yarnpkg.com/@types/accepts/-/accepts-1.3.5.tgz#c34bec115cfc746e04fe5a059df4ce7e7b391575"
