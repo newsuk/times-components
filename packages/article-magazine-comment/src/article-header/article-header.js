@@ -2,7 +2,7 @@ import React from "react";
 import { Text, View } from "react-native";
 import PropTypes from "prop-types";
 import { ArticleFlags, getActiveFlags } from "@times-components/article-flag";
-import Image from "@times-components/image";
+import { ModalImage } from "@times-components/image";
 import Context from "@times-components/context";
 import { fontFactory } from "@times-components/styleguide";
 
@@ -31,7 +31,7 @@ const ArticleHeader = ({
   <Context.Consumer>
     {({ theme: { headlineFont } }) => (
       <View style={[styles.container, isTablet && styles.containerTablet]}>
-        <Image
+        <ModalImage
           aspectRatio={1}
           style={[styles.authorImage, isTablet && styles.authorImageTablet]}
           uri={authorImage}

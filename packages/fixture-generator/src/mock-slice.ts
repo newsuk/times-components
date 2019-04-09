@@ -234,10 +234,27 @@ function mockSecondaryTwoNoPicAndTwoSlice(): SecondaryTwoNoPicAndTwoSliceWithNam
 
 function mockSecondaryTwoAndTwoSlice(): SecondaryTwoAndTwoSliceWithName {
   const tiles = getTiles(4);
+  const secondaryOneTile = {
+    ...tiles[0],
+    article: {
+      ...tiles[0].article,
+      hasVideo: true,
+      label: "long label | video icon too"
+    }
+  };
+
+  const secondaryTwoTile = {
+    ...tiles[1],
+    article: {
+      ...tiles[1].article,
+      label: "long label | by some author"
+    }
+  };
+
   return <SecondaryTwoAndTwoSliceWithName>{
     name: "SecondaryTwoAndTwoSlice",
-    secondary1: tiles[0],
-    secondary2: tiles[1],
+    secondary1: secondaryOneTile,
+    secondary2: secondaryTwoTile,
     support1: tiles[2],
     support2: tiles[3],
     items: tiles

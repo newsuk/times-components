@@ -3,6 +3,57 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.15.17](https://github.com/newsuk/times-components/compare/@times-components/provider@1.15.16...@times-components/provider@1.15.17) (2019-04-09)
+
+**Note:** Version bump only for package @times-components/provider
+
+
+
+
+
+## [1.15.16](https://github.com/newsuk/times-components/compare/@times-components/provider@1.15.15...@times-components/provider@1.15.16) (2019-04-09)
+
+**Note:** Version bump only for package @times-components/provider
+
+
+
+
+
+## [1.15.15](https://github.com/newsuk/times-components/compare/@times-components/provider@1.15.14...@times-components/provider@1.15.15) (2019-04-08)
+
+**Note:** Version bump only for package @times-components/provider
+
+
+
+
+
+## [1.15.14](https://github.com/newsuk/times-components/compare/@times-components/provider@1.15.13...@times-components/provider@1.15.14) (2019-04-08)
+
+**Note:** Version bump only for package @times-components/provider
+
+
+
+
+
+## [1.15.13](https://github.com/newsuk/times-components/compare/@times-components/provider@1.15.12...@times-components/provider@1.15.13) (2019-04-05)
+
+**Note:** Version bump only for package @times-components/provider
+
+
+
+
+
+## [1.15.12](https://github.com/newsuk/times-components/compare/@times-components/provider@1.15.11...@times-components/provider@1.15.12) (2019-04-05)
+
+
+### Bug Fixes
+
+* Add section to section query ([#1861](https://github.com/newsuk/times-components/issues/1861)) ([d547983](https://github.com/newsuk/times-components/commit/d547983))
+
+
+
+
+
 ## [1.15.11](https://github.com/newsuk/times-components/compare/@times-components/provider@1.15.10...@times-components/provider@1.15.11) (2019-04-05)
 
 **Note:** Version bump only for package @times-components/provider

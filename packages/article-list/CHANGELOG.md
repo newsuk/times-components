@@ -3,6 +3,54 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.21](https://github.com/newsuk/times-components/compare/@times-components/article-list@7.0.20...@times-components/article-list@7.0.21) (2019-04-09)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [7.0.20](https://github.com/newsuk/times-components/compare/@times-components/article-list@7.0.19...@times-components/article-list@7.0.20) (2019-04-09)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [7.0.19](https://github.com/newsuk/times-components/compare/@times-components/article-list@7.0.18...@times-components/article-list@7.0.19) (2019-04-08)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [7.0.18](https://github.com/newsuk/times-components/compare/@times-components/article-list@7.0.17...@times-components/article-list@7.0.18) (2019-04-08)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [7.0.17](https://github.com/newsuk/times-components/compare/@times-components/article-list@7.0.16...@times-components/article-list@7.0.17) (2019-04-05)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [7.0.16](https://github.com/newsuk/times-components/compare/@times-components/article-list@7.0.15...@times-components/article-list@7.0.16) (2019-04-05)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
 ## [7.0.15](https://github.com/newsuk/times-components/compare/@times-components/article-list@7.0.14...@times-components/article-list@7.0.15) (2019-04-05)
 
 **Note:** Version bump only for package @times-components/article-list

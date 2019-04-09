@@ -9,11 +9,17 @@ export const propTypes = {
     PropTypes.arrayOf(PropTypes.element)
   ]),
   degrees: PropTypes.number,
+  endColour: PropTypes.string,
+  endPoint: PropTypes.string,
+  startColour: PropTypes.string,
+  startPoint: PropTypes.string,
   style: ViewPropTypesStyle
 };
 
 export const defaultProps = {
   children: null,
   degrees: 265,
+  endPoint: "1",
+  startPoint: "0",
   style: null
 };

@@ -3,6 +3,57 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.27.4](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.27.3...@times-components/styleguide@3.27.4) (2019-04-09)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+## [3.27.3](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.27.2...@times-components/styleguide@3.27.3) (2019-04-09)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+## [3.27.2](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.27.1...@times-components/styleguide@3.27.2) (2019-04-08)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+## [3.27.1](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.27.0...@times-components/styleguide@3.27.1) (2019-04-08)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+# [3.27.0](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.26.6...@times-components/styleguide@3.27.0) (2019-04-05)
+
+
+### Features
+
+* new modal image & related changes ([#1853](https://github.com/newsuk/times-components/issues/1853)) ([e1641c6](https://github.com/newsuk/times-components/commit/e1641c6))
+
+
+
+
+
+## [3.26.6](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.26.5...@times-components/styleguide@3.26.6) (2019-04-05)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
 ## [3.26.5](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.26.4...@times-components/styleguide@3.26.5) (2019-04-05)
 
 

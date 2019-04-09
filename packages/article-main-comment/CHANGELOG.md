@@ -3,6 +3,60 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.18.4](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@0.18.3...@times-components/article-main-comment@0.18.4) (2019-04-09)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [0.18.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@0.18.2...@times-components/article-main-comment@0.18.3) (2019-04-09)
+
+
+### Bug Fixes
+
+* Video labels and Article label bugs ([#1863](https://github.com/newsuk/times-components/issues/1863)) ([df3e836](https://github.com/newsuk/times-components/commit/df3e836))
+
+
+
+
+
+## [0.18.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@0.18.1...@times-components/article-main-comment@0.18.2) (2019-04-08)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [0.18.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@0.18.0...@times-components/article-main-comment@0.18.1) (2019-04-08)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+# [0.18.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@0.17.5...@times-components/article-main-comment@0.18.0) (2019-04-05)
+
+
+### Features
+
+* new modal image & related changes ([#1853](https://github.com/newsuk/times-components/issues/1853)) ([e1641c6](https://github.com/newsuk/times-components/commit/e1641c6))
+
+
+
+
+
+## [0.17.5](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@0.17.4...@times-components/article-main-comment@0.17.5) (2019-04-05)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
 ## [0.17.4](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@0.17.3...@times-components/article-main-comment@0.17.4) (2019-04-05)
 
 **Note:** Version bump only for package @times-components/article-main-comment

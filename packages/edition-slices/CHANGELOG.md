@@ -3,6 +3,60 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.51.9](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.51.8...@times-components/edition-slices@0.51.9) (2019-04-09)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
+## [0.51.8](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.51.7...@times-components/edition-slices@0.51.8) (2019-04-09)
+
+
+### Bug Fixes
+
+* Video labels and Article label bugs ([#1863](https://github.com/newsuk/times-components/issues/1863)) ([df3e836](https://github.com/newsuk/times-components/commit/df3e836))
+
+
+
+
+
+## [0.51.7](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.51.6...@times-components/edition-slices@0.51.7) (2019-04-08)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
+## [0.51.6](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.51.5...@times-components/edition-slices@0.51.6) (2019-04-08)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
+## [0.51.5](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.51.4...@times-components/edition-slices@0.51.5) (2019-04-05)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
+## [0.51.4](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.51.3...@times-components/edition-slices@0.51.4) (2019-04-05)
+
+
+### Bug Fixes
+
+* strapline ([#1860](https://github.com/newsuk/times-components/issues/1860)) ([09e3d25](https://github.com/newsuk/times-components/commit/09e3d25))
+
+
+
+
+
 ## [0.51.3](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.51.2...@times-components/edition-slices@0.51.3) (2019-04-05)
 
 

@@ -3,6 +3,57 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.5.66](https://github.com/newsuk/times-components/compare/@times-components/related-articles@5.5.65...@times-components/related-articles@5.5.66) (2019-04-09)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [5.5.65](https://github.com/newsuk/times-components/compare/@times-components/related-articles@5.5.64...@times-components/related-articles@5.5.65) (2019-04-09)
+
+
+### Bug Fixes
+
+* Video labels and Article label bugs ([#1863](https://github.com/newsuk/times-components/issues/1863)) ([df3e836](https://github.com/newsuk/times-components/commit/df3e836))
+
+
+
+
+
+## [5.5.64](https://github.com/newsuk/times-components/compare/@times-components/related-articles@5.5.63...@times-components/related-articles@5.5.64) (2019-04-08)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [5.5.63](https://github.com/newsuk/times-components/compare/@times-components/related-articles@5.5.62...@times-components/related-articles@5.5.63) (2019-04-08)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [5.5.62](https://github.com/newsuk/times-components/compare/@times-components/related-articles@5.5.61...@times-components/related-articles@5.5.62) (2019-04-05)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [5.5.61](https://github.com/newsuk/times-components/compare/@times-components/related-articles@5.5.60...@times-components/related-articles@5.5.61) (2019-04-05)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
 ## [5.5.60](https://github.com/newsuk/times-components/compare/@times-components/related-articles@5.5.59...@times-components/related-articles@5.5.60) (2019-04-05)
 
 **Note:** Version bump only for package @times-components/related-articles
