@@ -2920,3 +2920,159 @@ exports[`36. tile ap 1`] = `
   </View>
 </Link>
 `;
+
+exports[`37. tile ad 1`] = `
+<Link>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "padding": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "width": "30%",
+        }
+      }
+    >
+      <Image />
+    </View>
+    <View
+      style={
+        Object {
+          "paddingHorizontal": 10,
+          "width": "70%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "marginBottom": 5,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#005B8D",
+              "fontFamily": "GillSansMTStd-Medium",
+              "fontSize": 12,
+              "fontWeight": "400",
+              "letterSpacing": 0.6,
+              "lineHeight": 12,
+              "marginBottom": 0,
+              "marginTop": -1,
+              "paddingTop": 0,
+            }
+          }
+        >
+          LABEL
+        </Text>
+      </View>
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesModern-Bold",
+            "fontSize": 20,
+            "fontWeight": "400",
+            "lineHeight": 27,
+            "marginBottom": 5,
+          }
+        }
+      >
+        This is tile headline
+      </Text>
+      <View
+        style={
+          Object {
+            "marginBottom": 10,
+          }
+        }
+      >
+        <ArticleFlags />
+      </View>
+    </View>
+  </View>
+</Link>
+`;
+
+exports[`38. tile ac 1`] = `
+<Link>
+  <View
+    style={
+      Object {
+        "width": "100%",
+      }
+    }
+  >
+    <Image />
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#F0F0F0",
+        "flex": 1,
+        "justifyContent": "center",
+        "paddingHorizontal": 40,
+        "paddingVertical": 20,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "marginBottom": 5,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#005B8D",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 0.6,
+            "lineHeight": 12,
+            "marginBottom": 0,
+            "marginTop": -1,
+            "paddingTop": 0,
+          }
+        }
+      >
+        LABEL
+      </Text>
+    </View>
+    <Text
+      style={
+        Object {
+          "color": "#333333",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 30,
+          "fontWeight": "400",
+          "lineHeight": 35,
+          "marginBottom": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      This is tile headline
+    </Text>
+    <View
+      style={
+        Object {
+          "marginBottom": 10,
+        }
+      }
+    >
+      <ArticleFlags />
+    </View>
+  </View>
+</Link>
+`;

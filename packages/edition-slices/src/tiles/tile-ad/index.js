@@ -1,6 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
+import { editionBreakpoints } from "@times-components/styleguide";
 import {
   getCrop,
   TileImage,
@@ -8,9 +9,10 @@ import {
   TileSummary,
   withTileTracking
 } from "../shared";
-import styles from "./styles";
+import styleFactory from "./styles";
 
-const TileAD = ({ onPress, tile }) => {
+const TileAD = ({ onPress, tile, breakpoint }) => {
+  const styles = styleFactory(breakpoint);
   const { container, headline, imageContainer, summaryContainer } = styles;
 
   return (
@@ -37,8 +39,13 @@ const TileAD = ({ onPress, tile }) => {
 };
 
 TileAD.propTypes = {
+  breakpoint: PropTypes.string,
   onPress: PropTypes.func.isRequired,
   tile: PropTypes.shape({}).isRequired
+};
+
+TileAD.defaultProps = {
+  breakpoint: editionBreakpoints.small
 };
 
 export default withTileTracking(TileAD);

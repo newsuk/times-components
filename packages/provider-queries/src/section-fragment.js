@@ -265,7 +265,9 @@ export default gql`
             listingAsset {
               ...listingAsset32
             }
+            summary125: summary(maxCharCount: 125)
           }
+          teaser125: teaser(maxCharCount: 125)
         }
         support2 {
           headline

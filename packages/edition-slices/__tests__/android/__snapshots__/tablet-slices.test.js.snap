@@ -298,24 +298,29 @@ exports[`12. lead one and four slice - medium 1`] = `
   <View>
     <View>
       <TileAC
+        breakpoint="medium"
         tileName="lead"
       />
     </View>
     <View />
     <View>
       <TileAD
+        breakpoint="medium"
         tileName="support1"
       />
       <View />
       <TileAD
+        breakpoint="medium"
         tileName="support2"
       />
       <View />
       <TileAD
+        breakpoint="medium"
         tileName="support3"
       />
       <View />
       <TileAD
+        breakpoint="medium"
         tileName="support4"
       />
     </View>
@@ -736,24 +741,29 @@ exports[`27. lead one and four slice - wide 1`] = `
   <View>
     <View>
       <TileAC
+        breakpoint="wide"
         tileName="lead"
       />
     </View>
     <View />
     <View>
       <TileAD
+        breakpoint="wide"
         tileName="support1"
       />
       <View />
       <TileAD
+        breakpoint="wide"
         tileName="support2"
       />
       <View />
       <TileAD
+        breakpoint="wide"
         tileName="support3"
       />
       <View />
       <TileAD
+        breakpoint="wide"
         tileName="support4"
       />
     </View>
@@ -1187,24 +1197,29 @@ exports[`42. lead one and four slice - huge 1`] = `
   <View>
     <View>
       <TileAC
+        breakpoint="huge"
         tileName="lead"
       />
     </View>
     <View />
     <View>
       <TileAD
+        breakpoint="huge"
         tileName="support1"
       />
       <View />
       <TileAD
+        breakpoint="huge"
         tileName="support2"
       />
       <View />
       <TileAD
+        breakpoint="huge"
         tileName="support3"
       />
       <View />
       <TileAD
+        breakpoint="huge"
         tileName="support4"
       />
     </View>
