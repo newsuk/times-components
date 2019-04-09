@@ -1,7 +1,12 @@
 import React from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
-import { getCrop, TileImage, TileLink, withTileTracking } from "../shared";
+import {
+  getTileImageUri,
+  TileImage,
+  TileLink,
+  withTileTracking
+} from "../shared";
 import styles from "./styles";
 
 const TileAI = ({ onPress, tile }) => (
@@ -10,10 +15,7 @@ const TileAI = ({ onPress, tile }) => (
       <TileImage
         aspectRatio={3 / 2}
         style={styles.imageContainer}
-        uri={getCrop(
-          tile.leadAsset || tile.article.listingAsset || tile.article.leadAsset,
-          "crop32"
-        )}
+        uri={getTileImageUri(tile, "crop32")}
       />
     </View>
   </TileLink>

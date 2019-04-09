@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import {
-  getCrop,
+  getTileImageUri,
   TileImage,
   TileLink,
   TileSummary,
@@ -19,10 +19,7 @@ const TileA = ({ onPress, tile }) => (
     <TileImage
       aspectRatio={16 / 9}
       style={styles.imageContainer}
-      uri={getCrop(
-        tile.leadAsset || tile.article.listingAsset || tile.article.leadAsset,
-        "crop169"
-      )}
+      uri={getTileImageUri(tile, "crop169")}
     />
   </TileLink>
 );

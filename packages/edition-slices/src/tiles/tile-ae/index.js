@@ -1,7 +1,12 @@
 import React from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
-import { TileLink, TileSummary, withTileTracking } from "../shared";
+import {
+  getTileSummary,
+  TileLink,
+  TileSummary,
+  withTileTracking
+} from "../shared";
 import styles from "./styles";
 
 const TileAE = ({ onPress, tile }) => (
@@ -9,7 +14,7 @@ const TileAE = ({ onPress, tile }) => (
     <View style={styles.container}>
       <TileSummary
         headlineStyle={styles.headline}
-        summary={tile.teaser125 || tile.article.summary125}
+        summary={getTileSummary(tile, 125)}
         tile={tile}
       />
     </View>
