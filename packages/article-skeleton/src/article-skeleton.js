@@ -20,6 +20,7 @@ import insertDropcapIntoAST from "./dropcap-util";
 import styles from "./styles/shared";
 import Gutter, { maxWidth } from "./gutter";
 import { Layout, Text as FText } from "@times-components/text-flow";
+import { tabletWidth, tabletWidthMax, spacing } from "@times-components/styleguide";
 
 const listViewPageSize = 1;
 const listViewSize = 10;
@@ -165,7 +166,7 @@ class ArticleSkeleton extends Component {
     }
 
     const textFlow = new Layout.TextFlow({
-      width: 660,
+      width: Math.min(tabletWidth, screenWidth()) - 10,
       flow: rows.map(rowData => {
         return (
           ArticleRowFlow({
@@ -192,25 +193,44 @@ class ArticleSkeleton extends Component {
   }
 
   renderInlineBlock(block) {
-    const { width } = this.state;
-    return (<View>
-      <View onLayout={e => {
-        if (block.prevHeight !== block.height) {
-          this.layout()
-        }
-        block.prevHeight = block.height
-      }} style={{
-        position: 'absolute',
-        top: 0,
-        left: block.x + 60,
-        width: Math.min(maxWidth, width) * 0.35,
-        height: block.height,
-        zIndex: 1,
-      }}>
-        {block.getComponent()}
-      </View>
-      {block.children.map(subBlock => this.renderText(subBlock))}
-    </View>)
+    return (
+      <ResponsiveContext.Consumer>
+        {() => {
+          const { width } = this.state;
+
+          const onLayout = () => {
+            if (block.prevHeight !== block.height) {
+              this.layout();
+            }
+            block.prevHeight = block.height;
+          };
+
+          // @todo Is there a better way to get this
+          const textLeftPadding = 5;
+          const gutterWidth = Math.min(screenWidth(), tabletWidthMax);
+          const textContainerWidth = Math.min(screenWidth(), tabletWidth);
+          const style = {
+            position: "absolute",
+            top: 0,
+            left: ((gutterWidth - textContainerWidth) / 2) + textLeftPadding,
+            width: Math.min(maxWidth, width) * 0.35,
+            height: block.height,
+            zIndex: 1
+          };
+          return (
+            <View>
+              <View
+                onLayout={onLayout}
+                style={style}
+              >
+                {block.getComponent()}
+              </View>
+              {block.children.map(subBlock => this.renderText(subBlock))}
+            </View>
+          );
+        }}
+      </ResponsiveContext.Consumer>
+    );
   }
 
   renderBlock(block) {

@@ -19,6 +19,7 @@ import InsetCaption from "./inset-caption";
 import styleFactory from "../styles/article-body";
 import { Markup, Layout, Text as FlowText } from "@times-components/text-flow"
 import DropCap from "@times-components/article-paragraph/src/drop-cap";
+import { tabletWidth } from "@times-components/styleguide";
 
 const styles = styleFactory();
 
@@ -214,7 +215,7 @@ export const ArticleRowFlow = ({
           font: 'TimesDigitalW04-Regular',
           size: 18,
           lineHeight: 30,
-          width: 660
+          width: Math.min(screenWidth(), tabletWidth) - 10
         })
       }
     },
