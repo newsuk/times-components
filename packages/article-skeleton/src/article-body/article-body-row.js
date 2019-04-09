@@ -8,7 +8,7 @@ import Context from "@times-components/context";
 import InteractiveWrapper from "@times-components/interactive-wrapper";
 import KeyFacts from "@times-components/key-facts";
 import { renderTree } from "@times-components/markup-forest";
-import coreRenderers, { flow } from "@times-components/markup";
+import { flow } from "@times-components/markup";
 import PullQuote from "@times-components/pull-quote";
 import { ResponsiveContext } from "@times-components/responsive";
 import { colours } from "@times-components/styleguide";
