@@ -1455,3 +1455,86 @@ exports[`36. tile ap 1`] = `
   </View>
 </Link>
 `;
+
+exports[`37. tile ad 1`] = `
+<Link
+  url="/article/123"
+>
+  <View>
+    <View>
+      <Image
+        aspectRatio={1.5}
+        uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
+      />
+    </View>
+    <View>
+      <View>
+        <Text>
+          LABEL
+        </Text>
+      </View>
+      <Text
+        accessibilityRole="heading"
+        aria-level="3"
+      >
+        This is tile headline
+      </Text>
+      <View>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+        />
+      </View>
+    </View>
+  </View>
+</Link>
+`;
+
+exports[`38. tile ac 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "flex": 1,
+    }
+  }
+  url="/article/123"
+>
+  <View>
+    <Image
+      aspectRatio={1.7777777777777777}
+      uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+    />
+  </View>
+  <View>
+    <View>
+      <Text>
+        LABEL
+      </Text>
+    </View>
+    <Text
+      accessibilityRole="heading"
+      aria-level="3"
+    >
+      This is tile headline
+    </Text>
+    <View>
+      <ArticleFlags
+        flags={
+          Array [
+            Object {
+              "expiryTime": "2030-03-14T12:00:00.000Z",
+              "type": "EXCLUSIVE",
+            },
+          ]
+        }
+      />
+    </View>
+  </View>
+</Link>
+`;
