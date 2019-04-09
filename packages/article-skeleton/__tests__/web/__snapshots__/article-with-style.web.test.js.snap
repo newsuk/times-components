@@ -67,11 +67,6 @@ exports[`full article with style 1`] = `
   display: block;
 }
 
-.c12 {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
 .c0 {
   display: none;
 }
@@ -201,15 +196,6 @@ exports[`full article with style 1`] = `
   }
 }
 
-@media (min-width:768px) {
-  .c12 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
 @media (min-width:1024px) {
   .c1 {
     padding-top: 20px;
@@ -312,11 +298,6 @@ exports[`full article with style 1`] = `
 
 .IS10 {
   margin: 0;
-}
-
-.IS11 {
-  border-top-color: #DBDBDB;
-  border-top-width: 1;
 }
 </style>
 
@@ -428,19 +409,7 @@ exports[`full article with style 1`] = `
         </div>
         <KeyFacts />
       </span>
-      <div
-        className="c12 S1"
-      >
-        <nav>
-          <ArticleTopics
-            className="IS11"
-          />
-        </nav>
-      </div>
-      <aside>
-        <RelatedArticles />
-      </aside>
-      <ArticleComments />
+      <ArticleExtras />
     </div>
   </div>
 </article>

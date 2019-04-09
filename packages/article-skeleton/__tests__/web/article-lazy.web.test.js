@@ -181,11 +181,11 @@ iterator([
         />
       );
 
-      const { isVisible } = testRenderer.root.findByType(
-        "RelatedArticles"
+      const { relatedArticlesVisible } = testRenderer.root.findByType(
+        "ArticleExtras"
       ).props;
 
-      expect(isVisible).toEqual(true);
+      expect(relatedArticlesVisible).toEqual(true);
     }
   }
 ]);
