@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.26.5](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.26.4...@times-components/slice-layout@0.26.5) (2019-04-09)
+
+
+### Bug Fixes
+
+* make save star ripple effect a circle ([#1867](https://github.com/newsuk/times-components/issues/1867)) ([4f9800e](https://github.com/newsuk/times-components/commit/4f9800e))
+
+
+
+
+
 ## [0.26.4](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.26.3...@times-components/slice-layout@0.26.4) (2019-04-09)
 
 **Note:** Version bump only for package @times-components/slice-layout

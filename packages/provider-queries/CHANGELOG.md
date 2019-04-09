@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.14.6](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@1.14.5...@times-components/provider-queries@1.14.6) (2019-04-09)
+
+
+### Bug Fixes
+
+* Add teaser for l2np2 ([#1866](https://github.com/newsuk/times-components/issues/1866)) ([55e3728](https://github.com/newsuk/times-components/commit/55e3728))
+
+
+
+
+
 ## [1.14.5](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@1.14.4...@times-components/provider-queries@1.14.5) (2019-04-05)
 
 
