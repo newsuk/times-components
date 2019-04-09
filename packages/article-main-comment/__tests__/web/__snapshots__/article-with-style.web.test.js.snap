@@ -360,11 +360,11 @@ exports[`full article with style 1`] = `
 
 .S3 {
   font-weight: 400;
-  line-height: 14px;
-  margin-top: 0px;
+  line-height: 12px;
   margin-bottom: 0px;
-  padding-top: 0px;
+  margin-top: -1px;
   padding-bottom: 0px;
+  padding-top: 1px;
 }
 
 .S4 {

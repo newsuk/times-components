@@ -4,8 +4,9 @@ const { fontFactory } = styleguideFactory();
 
 const styles = {
   container: {
-    alignItems: "center",
-    flexDirection: "row"
+    alignItems: "flex-start",
+    flexDirection: "row",
+    marginTop: -1
   },
   iconContainer: {
     paddingBottom: spacing(1)
@@ -15,12 +16,12 @@ const styles = {
       font: "supporting",
       fontSize: "cardMetaMobile"
     }),
+    flex: 1,
     fontWeight: "400",
     letterSpacing: 1.2,
-    marginLeft: 5,
-    padding: 0,
-    position: "relative",
-    top: 1
+    lineHeight: 11,
+    marginLeft: spacing(1),
+    paddingTop: 1
   }
 };
 

@@ -6,7 +6,7 @@ exports[`1. tile a 1`] = `
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 12px;
   margin-bottom: 0px;
 }
 
@@ -99,7 +99,7 @@ exports[`2. tile b 1`] = `
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 12px;
   margin-bottom: 0px;
 }
 
@@ -221,7 +221,7 @@ exports[`3. tile c 1`] = `
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 12px;
   margin-bottom: 0px;
 }
 
@@ -316,7 +316,7 @@ exports[`4. tile d 1`] = `
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 12px;
   margin-bottom: 0px;
 }
 
@@ -426,7 +426,7 @@ exports[`5. tile e 1`] = `
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 12px;
   margin-bottom: 0px;
 }
 
@@ -532,7 +532,7 @@ exports[`6. tile f 1`] = `
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 12px;
   margin-bottom: 0px;
 }
 
@@ -670,7 +670,7 @@ exports[`7. tile g 1`] = `
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 12px;
   margin-bottom: 0px;
 }
 
@@ -786,7 +786,7 @@ exports[`8. tile h 1`] = `
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 12px;
   margin-bottom: 0px;
 }
 
@@ -971,7 +971,7 @@ exports[`9. tile i 1`] = `
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 12px;
   margin-bottom: 0px;
 }
 
@@ -1071,7 +1071,7 @@ exports[`10. tile j 1`] = `
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 12px;
   margin-bottom: 0px;
 }
 
@@ -1174,7 +1174,7 @@ exports[`11. tile k 1`] = `
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 12px;
   margin-bottom: 0px;
 }
 
@@ -1272,7 +1272,7 @@ exports[`12. tile l 1`] = `
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 12px;
   margin-bottom: 0px;
 }
 
@@ -1432,7 +1432,7 @@ exports[`14. tile n 1`] = `
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 12px;
   margin-bottom: 0px;
 }
 
@@ -1549,7 +1549,7 @@ exports[`15. tile o 1`] = `
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 12px;
   margin-bottom: 0px;
 }
 
@@ -1641,7 +1641,7 @@ exports[`16. tile p 1`] = `
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 12px;
   margin-bottom: 0px;
 }
 
@@ -1668,6 +1668,7 @@ exports[`16. tile p 1`] = `
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: inherit;
+  line-height: 12px;
   margin-bottom: 0px;
 }
 
@@ -1712,12 +1713,10 @@ exports[`16. tile p 1`] = `
 
 .IS5 {
   color: rgba(133,0,41,1.00);
-  line-height: 12px;
 }
 
 .IS6 {
   color: rgba(133,0,41,1.00);
-  line-height: 12px;
 }
 
 .IS7 {
@@ -1858,7 +1857,7 @@ exports[`18. tile r 1`] = `
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 12px;
   margin-bottom: 0px;
 }
 
@@ -2065,7 +2064,7 @@ exports[`20. tile t 1`] = `
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 12px;
   margin-bottom: 0px;
 }
 
@@ -2166,7 +2165,7 @@ exports[`21. tile u 1`] = `
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 12px;
   margin-bottom: 0px;
 }
 
@@ -2284,7 +2283,7 @@ exports[`22. tile v 1`] = `
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 12px;
   margin-bottom: 0px;
 }
 
@@ -2378,7 +2377,7 @@ exports[`23. tile w 1`] = `
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 12px;
   margin-bottom: 0px;
 }
 
@@ -2514,7 +2513,7 @@ exports[`24. tile x 1`] = `
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 12px;
   margin-bottom: 0px;
 }
 
@@ -2652,7 +2651,7 @@ exports[`25. tile y 1`] = `
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 12px;
   margin-bottom: 0px;
 }
 
@@ -2767,7 +2766,7 @@ exports[`26. tile z 1`] = `
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 12px;
   margin-bottom: 0px;
 }
 
@@ -2864,7 +2863,7 @@ exports[`27. tile aa 1`] = `
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 12px;
   margin-bottom: 0px;
 }
 
@@ -2961,7 +2960,7 @@ exports[`28. tile ab 1`] = `
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 12px;
   margin-bottom: 0px;
 }
 
@@ -3137,7 +3136,7 @@ exports[`29. tile ae 1`] = `
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 12px;
   margin-bottom: 0px;
 }
 
@@ -3497,7 +3496,7 @@ exports[`33. tile al 1`] = `
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 12px;
   margin-bottom: 0px;
 }
 
@@ -3627,7 +3626,7 @@ exports[`34. tile am 1`] = `
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 12px;
   margin-bottom: 0px;
 }
 
@@ -3758,7 +3757,7 @@ exports[`35. tile an 1`] = `
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 12px;
   margin-bottom: 0px;
 }
 
@@ -3903,7 +3902,7 @@ exports[`36. tile ap 1`] = `
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 12px;
   margin-bottom: 0px;
 }
 
