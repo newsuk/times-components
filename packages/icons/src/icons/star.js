@@ -14,7 +14,7 @@ const IconStar = ({
 }) => (
   <Svg
     role="img"
-    viewBox="0 0 20 20"
+    viewBox="0 0 21 20"
     {...clean({
       height,
       title,
