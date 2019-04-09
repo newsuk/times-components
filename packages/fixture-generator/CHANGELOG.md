@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.22.7](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.22.6...@times-components/fixture-generator@0.22.7) (2019-04-09)
+
+
+### Bug Fixes
+
+* Video labels and Article label bugs ([#1863](https://github.com/newsuk/times-components/issues/1863)) ([df3e836](https://github.com/newsuk/times-components/commit/df3e836))
+
+
+
+
+
 ## [0.22.6](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.22.5...@times-components/fixture-generator@0.22.6) (2019-04-08)
 
 **Note:** Version bump only for package @times-components/fixture-generator
