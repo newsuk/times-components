@@ -4015,7 +4015,7 @@ exports[`37. tile ad 1`] = `
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 12px;
   margin-bottom: 0px;
 }
 
@@ -4118,7 +4118,7 @@ exports[`38. tile ac 1`] = `
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 12px;
   margin-bottom: 0px;
 }
 
