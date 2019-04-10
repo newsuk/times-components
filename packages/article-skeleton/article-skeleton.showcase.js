@@ -1,15 +1,21 @@
+import React from "react";
+import { MockedProvider } from "@times-components/provider-test-tools";
 import renderArticleSkeleton from "./showcase-helper";
 
 export default {
   children: [
     {
-      component: ({ boolean, select }, { decorateAction }) =>
-        renderArticleSkeleton({
-          boolean,
-          decorateAction,
-          hasScaling: true,
-          select
-        }),
+      // eslint-disable-next-line react/prop-types
+      component: ({ boolean, select }, { decorateAction }) => (
+        <MockedProvider mocks={[]}>
+          {renderArticleSkeleton({
+            boolean,
+            decorateAction,
+            hasScaling: true,
+            select
+          })}
+        </MockedProvider>
+      ),
       name: "Default",
       platform: "native",
       type: "story"
