@@ -244,13 +244,17 @@ class ArticleSkeleton extends Component {
   renderText(block, inlined = false) {
     if (!inlined) {
       return block.getComponent(style => <View>
-        <Text style={style}>{block.idealSpans.map((span) => {
+        <Text selectable style={style}>{block.idealSpans.map((span) => {
           if (span.href) {
-            return span.href()
+            return <Text
+              selectable
+            >
+              {span.href()}
+            </Text>
           }
           return <Text
             selectable
-            style={span.style.font && {
+            style={{
               fontFamily: span.style.font,
               fontWeight: span.style.font.includes('Bold') ? 'bold' : null,
               fontStyle: span.style.font.includes('Italic') ? 'italic' : null,

@@ -1,7 +1,7 @@
 import styleguide, { tabletWidth } from "@times-components/styleguide";
 
 const sharedStyles = scale => {
-  const { colours, fontFactory, spacing } = styleguide({ scale });
+  const { colours, fontFactory, spacing, lineHeight } = styleguide({ scale });
   return {
     ad: {
       borderBottomColor: colours.functional.keyline,
@@ -17,6 +17,10 @@ const sharedStyles = scale => {
       ...fontFactory({
         font: "body",
         fontSize: "bodyMobile"
+      }),
+      lineHeight: lineHeight({
+        font: 'body',
+        fontSize: 'bodyMobile'
       }),
       marginBottom: spacing(5),
       marginTop: 0
