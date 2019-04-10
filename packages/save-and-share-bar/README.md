@@ -38,6 +38,11 @@ yarn lint
 Testing can be done on each platform individually
 
 ```
+<<<<<<< HEAD
+=======
+yarn test:android
+yarn test:ios
+>>>>>>> feat: implement main Save and Share bar component
 yarn test:web
 ```
 
@@ -48,9 +53,18 @@ yarn test:all
 ```
 
 Visit the official
+<<<<<<< HEAD
 [storybook](http://components.thetimes.co.uk)
 to see our available link templates.
 
 ## Future
 
 The bar should be extended with custom onPress logic and user info state
+=======
+
+<!-- Add the storybook link here. -->
+
+## Future
+
+<!-- Add details of future development here. -->
+>>>>>>> feat: implement main Save and Share bar component

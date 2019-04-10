@@ -9,7 +9,10 @@
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff && yarn depcheck && jest-lint",
+    "test:android": "jest --config='./__tests__/android/jest.config.js'",
+    "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
     "test:web": "jest --config='./__tests__/web/jest.config.js'",
+    "test:all": "yarn test:android --coverage && yarn test:ios --coverage && yarn test:web --coverage",
     "prepublishOnly": "yarn transpile && yarn bundle",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist",
@@ -33,18 +36,31 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
+<<<<<<< HEAD
     "@times-components/icons": "2.10.20",
     "@times-components/link": "3.3.20",
     "@times-components/styleguide": "3.28.5",
+=======
+    "@times-components/icons": "2.10.8",
+    "@times-components/link": "3.3.9",
+    "@times-components/styleguide": "3.27.5",
+>>>>>>> feat: implement main Save and Share bar component
     "prop-types": "15.6.2"
   },
   "devDependencies": {
     "@thetimes/jest-lint": "*",
     "@times-components/eslint-config-thetimes": "0.8.9",
+<<<<<<< HEAD
     "@times-components/jest-configurator": "2.5.3",
     "@times-components/jest-serializer": "3.2.0",
     "@times-components/storybook": "3.4.25",
     "@times-components/test-utils": "2.2.34",
+=======
+    "@times-components/jest-configurator": "2.4.4",
+    "@times-components/jest-serializer": "3.2.0",
+    "@times-components/storybook": "3.4.14",
+    "@times-components/test-utils": "2.2.23",
+>>>>>>> feat: implement main Save and Share bar component
     "@times-components/webpack-configurator": "2.0.15",
     "babel-cli": "6.26.0",
     "eslint": "5.9.0",
