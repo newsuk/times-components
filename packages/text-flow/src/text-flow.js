@@ -4,5 +4,5 @@ export const Layout = { Block, BlockAlign, InlineBlock, TextFlow }
 import { Align, Case, Text as TextBox, FontLoader } from "./Text"
 export const Text = { Align, Case, Text: TextBox, FontLoader }
 
-import { Bold, Italic, MarkupString, Link, Styled } from "./Markup"
-export const Markup = { Bold, Italic, MarkupString, Link, Styled }
+import { Bold, Italic, MarkupString, Link, Styled, Newline } from "./Markup"
+export const Markup = { Bold, Italic, MarkupString, Link, Styled, Newline }

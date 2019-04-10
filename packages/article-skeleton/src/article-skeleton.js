@@ -1,7 +1,7 @@
 /* eslint-disable consistent-return */
 
 import React, { Component } from "react";
-import { View, FlatList, ScrollView, Text } from "react-native";
+import { View, FlatList, Text } from "react-native";
 import PropTypes from "prop-types";
 import { AdComposer } from "@times-components/ad";
 import Responsive from "@times-components/responsive";
@@ -20,7 +20,8 @@ import insertDropcapIntoAST from "./dropcap-util";
 import styles from "./styles/shared";
 import Gutter, { maxWidth } from "./gutter";
 import { Layout, Text as FText } from "@times-components/text-flow";
-import { tabletWidth, tabletWidthMax, spacing } from "@times-components/styleguide";
+import { tabletWidth, tabletWidthMax } from "@times-components/styleguide";
+import { Dimensions } from "react-native";
 
 const listViewPageSize = 1;
 const listViewSize = 10;
@@ -165,6 +166,8 @@ class ArticleSkeleton extends Component {
       return
     }
 
+    const { fontScale } = Dimensions.get('window');
+
     const textFlow = new Layout.TextFlow({
       width: Math.min(tabletWidth, screenWidth()) - 10,
       flow: rows.map(rowData => {
@@ -175,7 +178,8 @@ class ArticleSkeleton extends Component {
             onLinkPress,
             onTwitterLinkPress,
             onVideoPress,
-            width: Math.min(maxWidth, width)
+            width: Math.min(maxWidth, width),
+            fontScale
           })
         );
       })

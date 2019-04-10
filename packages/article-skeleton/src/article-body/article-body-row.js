@@ -1,6 +1,5 @@
 import React from "react";
-import { Text, View } from "react-native";
-import PropTypes from "prop-types";
+import { View, Dimensions } from "react-native";
 import ArticleImage from "@times-components/article-image";
 import ArticleParagraph from "@times-components/article-paragraph";
 import Ad from "@times-components/ad";
@@ -17,9 +16,10 @@ import Video from "@times-components/video";
 import ArticleLink from "./article-link";
 import InsetCaption from "./inset-caption";
 import styleFactory from "../styles/article-body";
-import { Markup, Layout, Text as FlowText } from "@times-components/text-flow"
+import { Markup, Layout, Text } from "@times-components/text-flow"
 import DropCap from "@times-components/article-paragraph/src/drop-cap";
 import { tabletWidth } from "@times-components/styleguide";
+
 
 const styles = styleFactory();
 
@@ -29,15 +29,16 @@ export const ArticleRowFlow = ({
   onLinkPress,
   onTwitterLinkPress,
   onVideoPress,
-  width
+  width,
+  fontScale
 }) =>
   renderTree(data, {
     ...flow,
     dropCap(key, { value }, children, indx, node) {
-      const text = new FlowText.Text({
+      const text = new Text.Text({
         font: 'TimesModern-Regular',
-        size: 90,
-        lineHeight: 90,
+        size: 90 * fontScale,
+        lineHeight: 90 * fontScale,
         markup: [new Markup.MarkupString(value)]
       });
       const width = text.characters[0].getWidth() + 10
@@ -195,7 +196,7 @@ export const ArticleRowFlow = ({
     },
     paragraph(key, attributes, children, indx, node) {
       return {
-        element: new FlowText.Text({
+        element: new Text.Text({
           getComponent(children) {
             return (<Context.Consumer key={key}>
               {({
@@ -213,8 +214,8 @@ export const ArticleRowFlow = ({
           },
           markup: children,
           font: 'TimesDigitalW04-Regular',
-          size: 18,
-          lineHeight: 30,
+          size: 18 * fontScale,
+          lineHeight: 30 * fontScale,
           width: Math.min(screenWidth(), tabletWidth) - 10
         })
       }
@@ -230,10 +231,10 @@ export const ArticleRowFlow = ({
     ) {
       const content = node.children[0].attributes.value;
       // TODO: measureText function?
-      const quote = new FlowText.Text({
+      const quote = new Text.Text({
         font: 'TimesModern-Regular',
-        size: 25,
-        lineHeight: 25 * 1.3,
+        size: 25 * fontScale,
+        lineHeight: (25 * 1.3) * fontScale,
         width: width * 0.35,
         markup: [new Markup.MarkupString(content)]
       });
