@@ -32,6 +32,16 @@ const viewabilityConfig = {
   waitForInteraction: false
 };
 
+const convertStyles = ({ font, size }) => {
+  return {
+    fontFamily: font,
+    fontWeight: font.includes('Bold') ? 'bold' : null,
+    fontStyle: font.includes('Italic') ? 'italic' : null,
+    fontSize: size,
+    lineHeight: 30
+  }
+}
+
 const renderRow = (
   rowData,
   onCommentsPress,
@@ -246,20 +256,11 @@ class ArticleSkeleton extends Component {
       return block.getComponent(style => <View>
         <Text selectable style={style}>{block.idealSpans.map((span) => {
           if (span.href) {
-            return <Text
-              selectable
-            >
-              {span.href()}
-            </Text>
+            return span.href()
           }
           return <Text
             selectable
-            style={{
-              fontFamily: span.style.font,
-              fontWeight: span.style.font.includes('Bold') ? 'bold' : null,
-              fontStyle: span.style.font.includes('Italic') ? 'italic' : null,
-              lineHeight: 30
-            }}
+            style={convertStyles(span.style)}
           >
             {span.text}
           </Text>
@@ -286,9 +287,7 @@ class ArticleSkeleton extends Component {
               selectable
               style={{
                 ...style,
-                fontFamily: span.style.font,
-                fontWeight: span.style.font.includes('Bold') ? 'bold' : null,
-                fontStyle: span.style.font.includes('Italic') ? 'italic' : null,
+                ...convertStyles(span.style),
                 position: 'absolute',
                 top: span.y,
                 left: span.x

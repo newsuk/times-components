@@ -243,7 +243,7 @@ export const ArticleRowFlow = ({
         shouldRenderChildren: false,
         element: new Layout.InlineBlock({
           width: width * 0.35,
-          height: height + 20,
+          height: height + ((25 * 1.3) * fontScale),
           getComponent() {
             return (<Context.Consumer key={key}>
               {({
