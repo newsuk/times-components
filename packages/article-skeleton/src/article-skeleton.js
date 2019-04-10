@@ -244,7 +244,10 @@ class ArticleSkeleton extends Component {
   renderText(block, inlined = false) {
     if (!inlined) {
       return block.getComponent(style => <View>
-        <Text style={style}>{block.idealSpans.map((span, i, array) => {
+        <Text style={style}>{block.idealSpans.map((span) => {
+          if (span.href) {
+            return span.href()
+          }
           return <Text
             selectable
             style={span.style.font && {
