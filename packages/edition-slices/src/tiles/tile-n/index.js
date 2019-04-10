@@ -3,7 +3,8 @@ import { View } from "react-native";
 import PropTypes from "prop-types";
 import { colours } from "@times-components/styleguide";
 import {
-  getCrop,
+  getTileImageUri,
+  getTileStrapline,
   TileImage,
   TileLink,
   TileSummary,
@@ -17,16 +18,13 @@ const TileN = ({ onPress, tile }) => (
       <TileImage
         aspectRatio={1}
         style={styles.imageContainer}
-        uri={getCrop(
-          tile.leadAsset || tile.article.listingAsset || tile.article.leadAsset,
-          "crop11"
-        )}
+        uri={getTileImageUri(tile, "crop11")}
       />
       <TileSummary
         flagColour={styles.flagColour}
         headlineStyle={styles.headline}
         labelColour={colours.functional.greyLabel}
-        strapline={tile.strapline || tile.article.strapline}
+        strapline={getTileStrapline(tile)}
         style={styles.summaryContainer}
         tile={tile}
       />
