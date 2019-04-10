@@ -22,8 +22,7 @@ const makeClient = options => {
   const networkInterfaceOptions = {
     fetch,
     headers: { "content-type": "application/x-www-form-urlencoded" },
-    uri: options.uri,
-    useGETForQueries: true
+    uri: options.uri
   };
 
   if (options.headers) {
