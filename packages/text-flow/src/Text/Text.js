@@ -9,6 +9,7 @@ import Linebreak, { infinity } from './Linebreak';
 import Penalty from './Penalty';
 import Glue from './Glue';
 import Box from './Box';
+import Span from './Span'
 
 export default class Text extends Container {
   markup = [];
@@ -94,6 +95,31 @@ export default class Text extends Container {
 
     this.wordLayout();
     this.lineLayout();
+  }
+
+  get idealSpans() {
+    const flatSpans = this.block.children
+      .reduce((acc, line) => {
+        const ideal = line.idealSpans;
+        return [...acc, ...ideal]
+      }, [])
+    const spans = []
+    let style = null
+    let href = undefined
+    for (let i = 0; i < flatSpans.length; i += 1) {
+      const span = flatSpans[i]
+      span.paragraph = this
+      if (span.style !== style || span.href !== href) {
+        spans.push(span)
+        href = span.href
+        style = span.style
+      } else {
+        const prevSpan = spans[spans.length - 1]
+        prevSpan.text += span.text
+        prevSpan.measuredHeight += Math.floor(span.measuredHeight)
+      }
+    }
+    return spans
   }
 
   //place characters in words

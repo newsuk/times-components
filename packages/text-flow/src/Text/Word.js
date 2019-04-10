@@ -43,6 +43,9 @@ export default class Word extends Container {
         span.text += char.character
       }
     }
+    if (spans.length && this.hasNewLine) {
+      spans[spans.length - 1].text += '\n'
+    }
     return spans
   }
 
