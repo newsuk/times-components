@@ -36,6 +36,9 @@ export default class Line extends Container {
       spans.forEach(span => {
         span.x = hPosition
         hPosition += span.measuredWidth
+        if (span.text[span.text.length - 1] === ' ') {
+          span.x -= span.word.spaceOffset / 2
+        }
       })
     }
     return spans
