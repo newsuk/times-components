@@ -12,9 +12,7 @@ const styles = {
   imageContainer: {
     width: "100%"
   },
-  star: {
-    ...verticalStyles
-  },
+  star: verticalStyles,
   summaryContainer: {
     alignItems: "center",
     backgroundColor: colours.functional.border,

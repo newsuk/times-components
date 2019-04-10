@@ -20,7 +20,6 @@ const verticalStyles = {
   container: {
     flexDirection: "column"
   },
-  flagStyle: {},
   starButton: {
     alignItems: "center",
     marginTop: spacing(2)

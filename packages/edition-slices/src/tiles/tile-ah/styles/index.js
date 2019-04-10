@@ -33,9 +33,7 @@ const styles = {
     overflow: "hidden",
     width: "30%"
   },
-  star: {
-    ...verticalStyles
-  },
+  star: verticalStyles,
   strapline: {
     color: colours.functional.secondary,
     fontSize: fontSizes.meta,

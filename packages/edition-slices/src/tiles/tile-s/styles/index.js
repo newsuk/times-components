@@ -28,9 +28,7 @@ const styles = {
       fontSize: "teaser"
     })
   },
-  star: {
-    ...verticalStyles
-  },
+  star: verticalStyles,
   title: {
     color: colours.functional.brandColour,
     fontFamily: fonts.headline,

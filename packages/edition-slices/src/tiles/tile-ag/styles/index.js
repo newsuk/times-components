@@ -14,9 +14,7 @@ const styles = {
     marginTop: spacing(4),
     textAlign: "center"
   },
-  star: {
-    ...verticalStyles
-  },
+  star: verticalStyles,
   strapline: {
     fontFamily: fonts.bodyRegular,
     fontSize: 14,
