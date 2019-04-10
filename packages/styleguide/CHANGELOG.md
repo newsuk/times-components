@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.27.6](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.27.5...@times-components/styleguide@3.27.6) (2019-04-10)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
 ## [3.27.5](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.27.4...@times-components/styleguide@3.27.5) (2019-04-09)
 
 **Note:** Version bump only for package @times-components/styleguide
