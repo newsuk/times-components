@@ -33,8 +33,13 @@ class TileSummary extends Component {
       },
       flagColour,
       isDarkStar,
+      isStar,
       starStyle
     } = this.props;
+
+    if (!isStar) {
+      return <ArticleFlags {...flagColour} flags={expirableFlags} />;
+    }
 
     const tileStyle = starStyle || horizontalStyles;
 
@@ -114,6 +119,7 @@ TileSummary.propTypes = {
   flagColour: PropTypes.shape({}),
   headlineStyle: PropTypes.shape({}),
   isDarkStar: PropTypes.bool,
+  isStar: PropTypes.bool,
   labelColour: PropTypes.string,
   strapline: PropTypes.string,
   straplineStyle: PropTypes.shape({}),
@@ -128,6 +134,7 @@ TileSummary.defaultProps = {
   flagColour: {},
   headlineStyle: null,
   isDarkStar: false,
+  isStar: true,
   labelColour: null,
   strapline: null,
   straplineStyle: null,

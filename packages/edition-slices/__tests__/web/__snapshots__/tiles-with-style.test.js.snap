@@ -343,38 +343,11 @@ exports[`3. tile c 1`] = `
 }
 
 .IS4 {
-  -webkit-align-items: flex-start;
-  align-items: flex-start;
-  width: 75%;
-  -ms-flex-align: start;
-  -webkit-box-align: start;
-}
-
-.IS5 {
-  -webkit-align-items: flex-end;
-  align-items: flex-end;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  margin-top: -5px;
-  width: 25%;
-  -ms-flex-align: end;
-  -webkit-box-align: end;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS6 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
+  bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  right: 0px;
 }
 </style>
 
@@ -418,29 +391,21 @@ exports[`3. tile c 1`] = `
     <div
       className="S1"
     >
-      <div
-        className="IS6 S3"
-      >
-        <div
-          className="IS4 S3"
-        >
-          <ArticleFlags
-            flags={
-              Array [
-                Object {
-                  "expiryTime": "2030-03-14T12:00:00.000Z",
-                  "type": "EXCLUSIVE",
-                },
-              ]
-            }
-          />
-        </div>
-        <div
-          className="IS5 S3"
-        />
-      </div>
+      <ArticleFlags
+        flags={
+          Array [
+            Object {
+              "expiryTime": "2030-03-14T12:00:00.000Z",
+              "type": "EXCLUSIVE",
+            },
+          ]
+        }
+      />
     </div>
   </div>
+  <div
+    className="IS4 S3"
+  />
 </Link>
 `;
 

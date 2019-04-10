@@ -267,36 +267,20 @@ exports[`3. tile c 1`] = `
         }
       }
     >
-      <View
-        style={
-          Object {
-            "flexDirection": "row",
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "alignItems": "flex-start",
-              "width": "75%",
-            }
-          }
-        >
-          <ArticleFlags />
-        </View>
-        <View
-          style={
-            Object {
-              "alignItems": "flex-end",
-              "flex": 1,
-              "marginTop": -5,
-              "width": "25%",
-            }
-          }
-        />
-      </View>
+      <ArticleFlags />
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "bottom": 0,
+        "marginLeft": "auto",
+        "marginRight": "auto",
+        "position": "absolute",
+        "right": 0,
+      }
+    }
+  />
 </Link>
 `;
 
