@@ -37,8 +37,7 @@ const convertStyles = ({ font, size }) => {
     fontFamily: font,
     fontWeight: font.includes('Bold') ? 'bold' : null,
     fontStyle: font.includes('Italic') ? 'italic' : null,
-    fontSize: size,
-    lineHeight: 30
+    fontSize: size
   }
 }
 
@@ -252,6 +251,7 @@ class ArticleSkeleton extends Component {
   }
 
   renderText(block, inlined = false) {
+    const { lineHeight } = block;
     if (!inlined) {
       return block.getComponent(style => <View>
         <Text selectable style={style}>{block.idealSpans.map((span) => {
@@ -260,7 +260,10 @@ class ArticleSkeleton extends Component {
           }
           return <Text
             selectable
-            style={convertStyles(span.style)}
+            style={{
+              ...convertStyles(span.style),
+              lineHeight
+            }}
           >
             {span.text}
           </Text>
@@ -288,6 +291,7 @@ class ArticleSkeleton extends Component {
               style={{
                 ...style,
                 ...convertStyles(span.style),
+                lineHeight,
                 position: 'absolute',
                 top: span.y,
                 left: span.x

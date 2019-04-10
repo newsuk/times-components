@@ -30,16 +30,16 @@ export default class Word extends Container {
         span.word = this
         span.style = char.style
         span.text = char.character
-        span.measuredWidth += Math.floor(char.getWidth())
+        span.measuredWidth += char.getWidth()
         span.measuredHeight = char.measuredHeight
-        span.x = Math.floor(char.x)
+        span.x = char.x
         span.y = this.y + char.y
         span.href = href
         spans.push(span)
         style = char.style
       } else {
         const span = spans[spans.length - 1]
-        span.measuredWidth += Math.floor(char.getWidth())
+        span.measuredWidth += char.getWidth()
         span.text += char.character
       }
     }
