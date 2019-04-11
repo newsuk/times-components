@@ -18,7 +18,7 @@ const TileC = ({ onPress, tile }) => (
       style={styles.imageContainer}
       uri={getTileImageUri(tile, "crop169")}
     />
-    <TileSummary headlineStyle={styles.headline} isStar={false} tile={tile} />
+    <TileSummary headlineStyle={styles.headline} tile={tile} withStar={false} />
     <View style={styles.star}>
       <TileStar articleId={tile.article.id} />
     </View>

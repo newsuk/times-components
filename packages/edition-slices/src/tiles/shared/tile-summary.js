@@ -33,11 +33,11 @@ class TileSummary extends Component {
       },
       flagColour,
       isDarkStar,
-      isStar,
+      withStar,
       starStyle
     } = this.props;
 
-    if (!isStar) {
+    if (!withStar) {
       return <ArticleFlags {...flagColour} flags={expirableFlags} />;
     }
 
@@ -119,14 +119,14 @@ TileSummary.propTypes = {
   flagColour: PropTypes.shape({}),
   headlineStyle: PropTypes.shape({}),
   isDarkStar: PropTypes.bool,
-  isStar: PropTypes.bool,
   labelColour: PropTypes.string,
   strapline: PropTypes.string,
   straplineStyle: PropTypes.shape({}),
   style: PropTypes.shape({}),
   summary: PropTypes.arrayOf(PropTypes.shape({})),
   summaryStyle: PropTypes.shape({}),
-  tile: PropTypes.shape({}).isRequired
+  tile: PropTypes.shape({}).isRequired,
+  withStar: PropTypes.bool
 };
 
 TileSummary.defaultProps = {
@@ -134,13 +134,13 @@ TileSummary.defaultProps = {
   flagColour: {},
   headlineStyle: null,
   isDarkStar: false,
-  isStar: true,
   labelColour: null,
   strapline: null,
   straplineStyle: null,
   style: null,
   summary: null,
-  summaryStyle: null
+  summaryStyle: null,
+  withStar: true
 };
 
 export default TileSummary;
