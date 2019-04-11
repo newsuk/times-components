@@ -1,7 +1,6 @@
-import { StyleSheet } from "react-native";
-import { colours } from "@times-components/styleguide";
+import { colours, editionBreakpoints } from "@times-components/styleguide";
 
-const styles = StyleSheet.create({
+const mainStyle = {
   container: {
     alignItems: "center",
     backgroundColor: colours.functional.black,
@@ -30,6 +29,30 @@ const styles = StyleSheet.create({
     bottom: 20,
     position: "absolute"
   }
-});
+};
 
-export default styles;
+const wideStyle = {
+  ...mainStyle,
+  container: {
+    ...mainStyle.container,
+    paddingHorizontal: "10%"
+  }
+};
+
+const hugeStyle = {
+  ...mainStyle,
+  container: {
+    ...mainStyle.container,
+    paddingHorizontal: "20%"
+  }
+};
+
+export default breakpoint => {
+  if (breakpoint === editionBreakpoints.huge) {
+    return hugeStyle;
+  }
+  if (breakpoint === editionBreakpoints.wide) {
+    return wideStyle;
+  }
+  return mainStyle;
+};
