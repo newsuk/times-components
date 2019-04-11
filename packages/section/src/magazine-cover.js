@@ -48,7 +48,7 @@ class MagazineCoverImage extends Component {
 
   render() {
     const { height } = Dimensions.get("window");
-    const imageHeight = height * 0.65;
+    const imageHeight = height * 0.55;
     const { breakpoint } = this.props;
 
     const styles = styleFactory(breakpoint);
