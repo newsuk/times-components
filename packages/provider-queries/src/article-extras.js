@@ -1,7 +1,9 @@
+import { addTypenameToDocument } from "apollo-utilities";
 import gql from "graphql-tag";
 import articleProps from "./article-props";
 
-export default gql`
+export default addTypenameToDocument(
+  gql`
   query ArticleExtrasQuery($id: ID!) {
     article(id: $id) {
       id
@@ -107,4 +109,4 @@ export default gql`
   }
 
   ${articleProps}
-`;
+`);
