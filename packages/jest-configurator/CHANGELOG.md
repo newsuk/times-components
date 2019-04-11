@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.4.5](https://github.com/newsuk/times-components/compare/@times-components/jest-configurator@2.4.4...@times-components/jest-configurator@2.4.5) (2019-04-11)
+
+
+### Bug Fixes
+
+* use post requests for graphql queries ([#1871](https://github.com/newsuk/times-components/issues/1871)) ([ab606f6](https://github.com/newsuk/times-components/commit/ab606f6))
+
+
+
+
+
 ## [2.4.4](https://github.com/newsuk/times-components/compare/@times-components/jest-configurator@2.4.3...@times-components/jest-configurator@2.4.4) (2019-04-09)
 
 

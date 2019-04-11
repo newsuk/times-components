@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.26.7](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.26.6...@times-components/slice-layout@0.26.7) (2019-04-11)
+
+
+### Bug Fixes
+
+* use post requests for graphql queries ([#1871](https://github.com/newsuk/times-components/issues/1871)) ([ab606f6](https://github.com/newsuk/times-components/commit/ab606f6))
+
+
+
+
+
 ## [0.26.6](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.26.5...@times-components/slice-layout@0.26.6) (2019-04-10)
 
 **Note:** Version bump only for package @times-components/slice-layout

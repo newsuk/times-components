@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.6.5](https://github.com/newsuk/times-components/compare/@times-components/svgs@2.6.4...@times-components/svgs@2.6.5) (2019-04-11)
+
+
+### Bug Fixes
+
+* use post requests for graphql queries ([#1871](https://github.com/newsuk/times-components/issues/1871)) ([ab606f6](https://github.com/newsuk/times-components/commit/ab606f6))
+
+
+
+
+
 ## [2.6.4](https://github.com/newsuk/times-components/compare/@times-components/svgs@2.6.3...@times-components/svgs@2.6.4) (2019-04-09)
 
 

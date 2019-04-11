@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.8.122](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.8.121...@times-components/ssr@1.8.122) (2019-04-11)
+
+
+### Bug Fixes
+
+* use post requests for graphql queries ([#1871](https://github.com/newsuk/times-components/issues/1871)) ([ab606f6](https://github.com/newsuk/times-components/commit/ab606f6))
+
+
+
+
+
 ## [1.8.121](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.8.120...@times-components/ssr@1.8.121) (2019-04-10)
 
 **Note:** Version bump only for package @times-components/ssr
