@@ -40,20 +40,11 @@ const SaveAndShareBar = ({
           title="Share on tweeter"
         />
       </Link>
-      <Link
         responsiveLinkStyles={styles.link}
         target="_blank"
         url={`${SharingApiUrls.facebook}?text=${articleUrl}`}
       >
         <IconFacebook
-          fillColour={styles.svgIcon.fillColour}
-          height={styles.svgIcon.fb.height}
-          title="Share on facebook"
-        />
-      </Link>
-      <Link onPress={onCopyLink} responsiveLinkStyles={styles.link}>
-        <IconCopyLink
-          fillColour={styles.svgIcon.fillColour}
           height={styles.svgIcon.height}
           title="Copy link o clipboard"
         />
