@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
+exports[`article extras 1`] = `
 <View>
   <View>
     <RelatedArticles />
@@ -17,7 +17,7 @@ exports[`renders correctly 1`] = `
 </View>
 `;
 
-exports[`renders error state 1`] = `
+exports[`article extras error state 1`] = `
 <View>
   <Text>
     It looks like you're offline

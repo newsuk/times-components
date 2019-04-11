@@ -35,7 +35,7 @@ export default () => {
 
   it("article extras error state", async done => {
     renderExtras({
-      error: () => "Error",
+      error: () => ({ error: "Error" }),
       onReady: testInstance => {
         expect(testInstance).toMatchSnapshot();
         done();
