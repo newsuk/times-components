@@ -41,7 +41,7 @@ ArticleExtras.propTypes = {
   relatedArticleSlice: PropTypes.shape({}).isRequired,
   relatedArticlesVisible: PropTypes.bool.isRequired,
   spotAccountId: PropTypes.string.isRequired,
-  topics: PropTypes.shape({}).isRequired
+  topics: PropTypes.arrayOf(PropTypes.shape({})).isRequired
 };
 
 export default ArticleExtras;
