@@ -3814,7 +3814,34 @@ exports[`37. tile ad 1`] = `
           }
         }
       >
-        <ArticleFlags />
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "flex-start",
+                "width": "75%",
+              }
+            }
+          >
+            <ArticleFlags />
+          </View>
+          <View
+            style={
+              Object {
+                "alignItems": "flex-end",
+                "flex": 1,
+                "marginTop": -5,
+                "width": "25%",
+              }
+            }
+          />
+        </View>
       </View>
     </View>
   </View>
@@ -3891,7 +3918,25 @@ exports[`38. tile ac 1`] = `
         }
       }
     >
-      <ArticleFlags />
+      <View
+        style={
+          Object {
+            "flexDirection": "column",
+          }
+        }
+      >
+        <View>
+          <ArticleFlags />
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "marginTop": 10,
+            }
+          }
+        />
+      </View>
     </View>
   </View>
 </Link>

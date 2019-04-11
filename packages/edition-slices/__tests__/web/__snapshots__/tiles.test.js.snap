@@ -1637,16 +1637,21 @@ exports[`37. tile ad 1`] = `
         This is tile headline
       </h3>
       <div>
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
+        <div>
+          <div>
+            <ArticleFlags
+              flags={
+                Array [
+                  Object {
+                    "expiryTime": "2030-03-14T12:00:00.000Z",
+                    "type": "EXCLUSIVE",
+                  },
+                ]
+              }
+            />
+          </div>
+          <div />
+        </div>
       </div>
     </div>
   </div>
@@ -1681,16 +1686,21 @@ exports[`38. tile ac 1`] = `
       This is tile headline
     </h3>
     <div>
-      <ArticleFlags
-        flags={
-          Array [
-            Object {
-              "expiryTime": "2030-03-14T12:00:00.000Z",
-              "type": "EXCLUSIVE",
-            },
-          ]
-        }
-      />
+      <div>
+        <div>
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
+          />
+        </div>
+        <div />
+      </div>
     </div>
   </div>
 </Link>
