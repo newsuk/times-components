@@ -1,10 +1,17 @@
+/* eslint-disable no-restricted-globals */
 export default class Glyph {
   path = "";
+
   offset;
+
   kerning = {};
+
   _graphic = null;
+
   _fill;
+
   _stroke;
+
   _strokeStyle;
 
   constructor(props = {}) {
@@ -12,7 +19,7 @@ export default class Glyph {
   }
 
   getKerning(characterCode, size) {
-    var out = -(this.kerning[characterCode] * size);
+    const out = -(this.kerning[characterCode] * size);
     if (isNaN(out)) {
       return 0;
     }
@@ -22,7 +29,7 @@ export default class Glyph {
     if (isNaN(size)) {
       return 0;
     }
-    if (this.kerning[characterCode] != undefined) {
+    if (this.kerning[characterCode] !== undefined) {
       return out;
     }
     return 0;

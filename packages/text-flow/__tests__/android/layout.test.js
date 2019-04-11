@@ -1,3 +1,3 @@
-import shared from "../layout.shared.test"
+import shared from "../layout.shared.test";
 
-shared()
+shared();

@@ -10,14 +10,14 @@ import TimesModernBold from './timesmodern_bold'
 import TimesModern from './timesmodern'
 
 export default {
-  'CenturyGothic-Bold': CenturyGothicBold,
-  'Flama-Bold': FlamaBold,
-  'GillSansMTStd-Medium': GilsansMedium,
-  'Tiempos-Headline-Bold': TiemposHeadlineBold,
-  'TimesDigitalW04-Bold': TimesDigitalW04Bold,
-  'TimesDigitalW04-Italic': TimesDigitalW04Italic,
-  'TimesDigitalW04-RegularSC': TimesDigitalW04RegularSC,
-  'TimesDigitalW04-Regular': TimesDigitalW04,
-  'TimesModern-Bold': TimesModernBold,
-  'TimesModern-Regular': TimesModern
-}
+  "CenturyGothic-Bold": CenturyGothicBold,
+  "Flama-Bold": FlamaBold,
+  "GillSansMTStd-Medium": GilsansMedium,
+  "Tiempos-Headline-Bold": TiemposHeadlineBold,
+  "TimesDigitalW04-Bold": TimesDigitalW04Bold,
+  "TimesDigitalW04-Italic": TimesDigitalW04Italic,
+  "TimesDigitalW04-Regular": TimesDigitalW04,
+  "TimesDigitalW04-RegularSC": TimesDigitalW04RegularSC,
+  "TimesModern-Bold": TimesModernBold,
+  "TimesModern-Regular": TimesModern
+};

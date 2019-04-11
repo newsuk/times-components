@@ -1,7 +1,7 @@
 export default class Markup {
-  children = []
+  children = [];
 
   constructor(props = {}) {
-    Object.assign(this, props)
+    Object.assign(this, props);
   }
 }

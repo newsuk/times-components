@@ -1,106 +1,146 @@
+/* eslint-disable prefer-destructuring */
 import Positioned from "../Layout/Positioned";
-import Case from './Case';
-import FontLoader from './FontLoader';
+import Case from "./Case";
+import FontLoader from "./FontLoader";
 
 export default class Character extends Positioned {
-  character = '';
+  character = "";
+
   characterCode = null;
+
   font = null;
+
   tracking = null;
+
   characterCase = null;
+
   characterCaseOffset = 0;
+
   index = null;
+
   size = null;
+
   fillColor = null;
+
   strokeColor = null;
+
   strokeWidth = null;
+
   measuredWidth = null;
+
   measuredHeight = null;
+
   missing = false;
+
   link = null;
+
   style = null;
 
-  _glyph;
-  _font;
+  glyph;
 
-  constructor(character, style = {}, index = null, glyph = null) {
+  fontInstance;
+
+  constructor(character, style = {}, index = null) {
     super();
     this.character = character;
     this.index = index;
-    this.style = style
+    this.style = style;
 
     Object.assign(this, style);
     this.index = index;
 
+    let upperSmall;
     // flip case depending on characterCase property
-    if (this.characterCase == Case.NORMAL) {
+    if (this.characterCase === Case.NORMAL) {
       this.character = character;
-    } else if (this.characterCase == Case.UPPER) {
+    } else if (this.characterCase === Case.UPPER) {
       this.character = character.toUpperCase();
-    } else if (this.characterCase == Case.LOWER) {
+    } else if (this.characterCase === Case.LOWER) {
       this.character = character.toLowerCase();
-    } else if (this.characterCase == Case.SMALL_CAPS) {
+    } else if (this.characterCase === Case.SMALL_CAPS) {
       this.character = character.toUpperCase();
-      var upperSmall = !(character === this.character);
+      upperSmall = !(character === this.character);
     } else {
-      //fallback case for unknown.
+      // fallback case for unknown.
       this.character = character;
     }
     this.characterCode = this.character.charCodeAt(0);
 
+    this.fontInstance = FontLoader.getFont(this.font);
 
+    if (this.fontInstance.glyphs[this.characterCode]) {
+      this.glyph = this.fontInstance.glyphs[this.characterCode];
 
-    this._font = FontLoader.getFont(this.font);
+      // flip lower
+    } else if (
+      this.fontInstance.glyphs[
+        String.fromCharCode(this.characterCode)
+          .toLowerCase()
+          .charCodeAt(0)
+      ]
+    ) {
+      this.glyph = this.fontInstance.glyphs[
+        String.fromCharCode(this.characterCode)
+          .toLowerCase()
+          .charCodeAt(0)
+      ];
 
-    if (this._font.glyphs[this.characterCode]) {
-      this._glyph = this._font.glyphs[this.characterCode];
-
-      //flip lower
-    } else if (this._font.glyphs[String.fromCharCode(this.characterCode).toLowerCase().charCodeAt(0)]) {
-      this._glyph = this._font.glyphs[String.fromCharCode(this.characterCode).toLowerCase().charCodeAt(0)];
-
-      //flip upper
-    } else if (this._font.glyphs[String.fromCharCode(this.characterCode).toUpperCase().charCodeAt(0)]) {
-      this._glyph = this._font.glyphs[String.fromCharCode(this.characterCode).toUpperCase().charCodeAt(0)];
+      // flip upper
+    } else if (
+      this.fontInstance.glyphs[
+        String.fromCharCode(this.characterCode)
+          .toUpperCase()
+          .charCodeAt(0)
+      ]
+    ) {
+      this.glyph = this.fontInstance.glyphs[
+        String.fromCharCode(this.characterCode)
+          .toUpperCase()
+          .charCodeAt(0)
+      ];
     }
 
-    //missing glyph
-    if (this._glyph === undefined) {
-      console.log("MISSING GLYPH:" + "'" + this.character + "'");
-      this._glyph = this._font.glyphs[42];
+    // missing glyph
+    if (this.glyph === undefined) {
+      this.glyph = this.fontInstance.glyphs[42];
       this.missing = true;
     }
 
     if (this.characterCase === Case.SMALL_CAPS) {
       if (upperSmall) {
-        this.scaleX = this.size / this._font.units * 0.8;
-        this.characterCaseOffset = -0.2 * (this._glyph.offset * this.size);
+        this.scaleX = this.size / this.fontInstance.units * 0.8;
+        this.characterCaseOffset = -0.2 * (this.glyph.offset * this.size);
       } else {
-        this.scaleX = this.size / this._font.units;
+        this.scaleX = this.size / this.fontInstance.units;
       }
     } else {
-      this.scaleX = this.size / this._font.units;
+      this.scaleX = this.size / this.fontInstance.units;
     }
 
     this.scaleY = -this.scaleX;
 
-    this.measuredHeight = (this._font.ascent - this._font.descent) * this.scaleX;
-    this.measuredWidth = this.scaleX * this._glyph.offset * this._font.units;
+    this.measuredHeight =
+      (this.fontInstance.ascent - this.fontInstance.descent) * this.scaleX;
+    this.measuredWidth =
+      this.scaleX * this.glyph.offset * this.fontInstance.units;
 
     this.hitArea = new Positioned({
+      height: this.fontInstance.ascent - this.fontInstance.descent,
+      width: this.glyph.offset * this.fontInstance.units,
       x: 0,
-      y: this._font.descent,
-      width: this._glyph.offset * this._font.units,
-      height: this._font.ascent - this._font.descent
+      y: this.fontInstance.descent
     });
   }
 
   setGlyph(glyph) {
-    this._glyph = glyph;
+    this.glyph = glyph;
   }
 
   trackingOffset() {
-    return this.size * (2.5 / this._font.units + 1 / 900 + this.tracking / 990);
+    return (
+      this.size *
+      (2.5 / this.fontInstance.units + 1 / 900 + this.tracking / 990)
+    );
   }
 
   draw(ctx) {
@@ -112,6 +152,6 @@ export default class Character extends Positioned {
   }
 
   getWidth() {
-    return this.size * this._glyph.offset;
+    return this.size * this.glyph.offset;
   }
 }

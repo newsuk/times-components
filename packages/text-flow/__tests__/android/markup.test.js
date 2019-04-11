@@ -1,3 +1,3 @@
-import shared from "../markup.shared.test"
+import shared from "../markup.shared.test";
 
-shared()
+shared();

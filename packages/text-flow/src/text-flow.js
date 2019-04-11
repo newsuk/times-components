@@ -1,8 +1,9 @@
-import { Block, BlockAlign, InlineBlock, TextFlow } from "./Layout"
-export const Layout = { Block, BlockAlign, InlineBlock, TextFlow }
+import { Block, BlockAlign, InlineBlock, TextFlow } from "./Layout";
 
-import { Align, Case, Text as TextBox, FontLoader } from "./Text"
-export const Text = { Align, Case, Text: TextBox, FontLoader }
+import { Align, Case, Text as TextBox, FontLoader } from "./Text";
 
-import { Bold, Italic, MarkupString, Link, Styled, Newline } from "./Markup"
-export const Markup = { Bold, Italic, MarkupString, Link, Styled, Newline }
+import { Bold, Italic, MarkupString, Link, Styled, Newline } from "./Markup";
+
+export const Layout = { Block, BlockAlign, InlineBlock, TextFlow };
+export const Text = { Align, Case, FontLoader, Text: TextBox };
+export const Markup = { Bold, Italic, Link, MarkupString, Newline, Styled };

@@ -105,9 +105,11 @@ export const remove = (list, node) => {
 };
 
 export class Node {
-  prev = null
-  next = null
-  data = null
+  prev = null;
+
+  next = null;
+
+  data = null;
 
   constructor(data) {
     this.data = data;

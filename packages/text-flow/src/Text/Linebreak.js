@@ -1,4 +1,4 @@
-import * as List from '../LinkedList';
+import * as List from "../LinkedList";
 
 const defaults = () => ({
   demerits: {
@@ -126,7 +126,7 @@ const linebreak = (nodes, lines, settings = defaults()) => {
 
     while (active !== null) {
       candidates = [
-        { demerits: Infinity, active: null, ratio: 0 },
+        { active: null, demerits: Infinity, ratio: 0 },
         { demerits: Infinity },
         { demerits: Infinity },
         { demerits: Infinity }
@@ -233,7 +233,10 @@ const linebreak = (nodes, lines, settings = defaults()) => {
     }
   };
 
-  List.push(activeNodes, new List.Node(breakpoint(0, 0, 0, 0, 0, undefined, null)));
+  List.push(
+    activeNodes,
+    new List.Node(breakpoint(0, 0, 0, 0, 0, undefined, null))
+  );
 
   nodes.forEach((node, index, ns) => {
     if (node.type === "box") {
@@ -268,9 +271,9 @@ const linebreak = (nodes, lines, settings = defaults()) => {
 
   const lineBreaks = breaks.reverse();
   if (!lineBreaks.length) {
-    return linebreak(nodes, lines, { tolerance: options.tolerance + 1})
+    return linebreak(nodes, lines, { tolerance: options.tolerance + 1 });
   }
-  return lineBreaks
+  return lineBreaks;
 };
 
-export default linebreak
+export default linebreak;

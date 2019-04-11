@@ -1,3 +1,3 @@
-import shared from '../text.shared.test'
+import shared from "../text.shared.test";
 
-shared()
+shared();

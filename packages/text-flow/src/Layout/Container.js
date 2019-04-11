@@ -1,32 +1,32 @@
 import Positioned from "./Positioned";
 
 export default class Container extends Positioned {
-  children = []
+  children = [];
 
   constructor(props = {}) {
-    super()
-    Object.assign(this, props)
+    super();
+    Object.assign(this, props);
   }
 
   moveX(val) {
-    Positioned.prototype.moveX.call(this, val)
+    Positioned.prototype.moveX.call(this, val);
     this.children.forEach(child => {
-      child.moveX(val)
-    })
+      child.moveX(val);
+    });
   }
 
   moveY(val) {
-    Positioned.prototype.moveY.call(this, val)
+    Positioned.prototype.moveY.call(this, val);
     this.children.forEach(child => {
-      child.moveY(val)
-    })
+      child.moveY(val);
+    });
   }
 
   removeAllChildren() {
-    this.children = []
+    this.children = [];
   }
 
   addChild(child) {
-    this.children.push(child)
+    this.children.push(child);
   }
 }
