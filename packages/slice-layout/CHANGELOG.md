@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.27.0](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.26.7...@times-components/slice-layout@0.27.0) (2019-04-11)
+
+
+### Features
+
+* remove unnecessary arrow functions and use objects indstead ([#1842](https://github.com/newsuk/times-components/issues/1842)) ([566edf9](https://github.com/newsuk/times-components/commit/566edf9))
+
+
+
+
+
 ## [0.26.7](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.26.6...@times-components/slice-layout@0.26.7) (2019-04-11)
 
 
