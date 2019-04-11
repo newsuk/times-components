@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 
 const propTypes = {
-  renderCartoon: PropTypes.func.isRequired,
-  renderLead: PropTypes.func.isRequired
+  cartoon: PropTypes.node.isRequired,
+  lead: PropTypes.node.isRequired
 };
 
 export default propTypes;

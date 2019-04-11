@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/newsuk/times-components/compare/@times-components/schema@0.4.3...@times-components/schema@0.5.0) (2019-04-11)
+
+
+### Features
+
+* remove unnecessary arrow functions and use objects indstead ([#1842](https://github.com/newsuk/times-components/issues/1842)) ([566edf9](https://github.com/newsuk/times-components/commit/566edf9))
+
+
+
+
+
 ## [0.4.3](https://github.com/newsuk/times-components/compare/@times-components/schema@0.4.2...@times-components/schema@0.4.3) (2019-04-10)
 
 **Note:** Version bump only for package @times-components/schema

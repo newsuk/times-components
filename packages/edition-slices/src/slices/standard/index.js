@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
-import { Column } from "@times-components/slice-layout";
+import { VerticalLayout } from "@times-components/slice-layout";
 import { TileK } from "../../tiles";
 import { ResponsiveSlice } from "../shared";
 import styles from "./styles";
 
 class Standard extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.renderMedium = this.renderMedium.bind(this);
     this.renderSmall = this.renderSmall.bind(this);
@@ -20,19 +20,21 @@ class Standard extends Component {
       onPress
     } = this.props;
 
-    return items.map(tile => () => <TileK onPress={onPress} tile={tile} />);
+    return items.map(tile => (
+      <TileK key={tile.articleId} onPress={onPress} tile={tile} />
+    ));
   }
 
   renderMedium() {
     return (
       <View style={styles.container}>
-        <Column tiles={this.getTiles()} />
+        <VerticalLayout tiles={this.getTiles()} />
       </View>
     );
   }
 
   renderSmall() {
-    return <Column tiles={this.getTiles()} />;
+    return <VerticalLayout tiles={this.getTiles()} />;
   }
 
   render() {

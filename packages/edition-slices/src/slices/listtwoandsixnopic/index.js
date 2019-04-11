@@ -28,30 +28,26 @@ class ListTwoAndSixNoPicSlice extends Component {
     return (
       <ListTwoAndSixNoPic
         breakpoint={breakpoint}
-        renderLead1={() => (
-          <TileC onPress={onPress} tile={lead1} tileName="lead1" />
-        )}
-        renderLead2={() => (
-          <TileC onPress={onPress} tile={lead2} tileName="lead2" />
-        )}
-        renderSupport1={() => (
+        lead1={<TileC onPress={onPress} tile={lead1} tileName="lead1" />}
+        lead2={<TileC onPress={onPress} tile={lead2} tileName="lead2" />}
+        support1={
           <TileL onPress={onPress} tile={support1} tileName="support1" />
-        )}
-        renderSupport2={() => (
+        }
+        support2={
           <TileL onPress={onPress} tile={support2} tileName="support2" />
-        )}
-        renderSupport3={() => (
+        }
+        support3={
           <TileL onPress={onPress} tile={support3} tileName="support3" />
-        )}
-        renderSupport4={() => (
+        }
+        support4={
           <TileL onPress={onPress} tile={support4} tileName="support4" />
-        )}
-        renderSupport5={() => (
+        }
+        support5={
           <TileL onPress={onPress} tile={support5} tileName="support5" />
-        )}
-        renderSupport6={() => (
+        }
+        support6={
           <TileL onPress={onPress} tile={support6} tileName="support6" />
-        )}
+        }
       />
     );
   }

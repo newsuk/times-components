@@ -12,10 +12,10 @@ export default renderComponent => {
         const output = renderComponent(
           <SecondaryTwoNoPicAndTwoSlice
             breakpoint={editionBreakpoints.small}
-            renderSecondary1={() => createItem("secondary-1")}
-            renderSecondary2={() => createItem("secondary-2")}
-            renderSupport1={() => createItem("support-1")}
-            renderSupport2={() => createItem("support-2")}
+            secondary1={createItem("secondary-1")}
+            secondary2={createItem("secondary-2")}
+            support1={createItem("support-1")}
+            support2={createItem("support-2")}
           />
         );
 
@@ -28,10 +28,10 @@ export default renderComponent => {
         const output = renderComponent(
           <SecondaryTwoNoPicAndTwoSlice
             breakpoint={editionBreakpoints.medium}
-            renderSecondary1={() => createItem("secondary-1")}
-            renderSecondary2={() => createItem("secondary-2")}
-            renderSupport1={() => createItem("support-1")}
-            renderSupport2={() => createItem("support-2")}
+            secondary1={createItem("secondary-1")}
+            secondary2={createItem("secondary-2")}
+            support1={createItem("support-1")}
+            support2={createItem("support-2")}
           />
         );
 
@@ -44,10 +44,10 @@ export default renderComponent => {
         const output = renderComponent(
           <SecondaryTwoNoPicAndTwoSlice
             breakpoint={editionBreakpoints.wide}
-            renderSecondary1={() => createItem("secondary-1")}
-            renderSecondary2={() => createItem("secondary-2")}
-            renderSupport1={() => createItem("support-1")}
-            renderSupport2={() => createItem("support-2")}
+            secondary1={createItem("secondary-1")}
+            secondary2={createItem("secondary-2")}
+            support1={createItem("support-1")}
+            support2={createItem("support-2")}
           />
         );
 
@@ -60,10 +60,10 @@ export default renderComponent => {
         const output = renderComponent(
           <SecondaryTwoNoPicAndTwoSlice
             breakpoint={editionBreakpoints.huge}
-            renderSecondary1={() => createItem("secondary-1")}
-            renderSecondary2={() => createItem("secondary-2")}
-            renderSupport1={() => createItem("support-1")}
-            renderSupport2={() => createItem("support-2")}
+            secondary1={createItem("secondary-1")}
+            secondary2={createItem("secondary-2")}
+            support1={createItem("support-1")}
+            support2={createItem("support-2")}
           />
         );
 

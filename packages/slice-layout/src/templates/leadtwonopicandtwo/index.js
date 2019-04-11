@@ -1,29 +1,28 @@
 import React from "react";
 import { View } from "react-native";
 import { editionBreakpoints } from "@times-components/styleguide";
-
-import Column from "../column";
 import { ItemColSeparator } from "../shared";
 import { propTypes, defaultProps } from "./proptypes";
 import styleFactory from "./styles";
+import VerticalLayout from "../verticallayout";
 
 const LeadTwoNoPicAndTwoSlice = ({
   breakpoint,
-  renderLead1,
-  renderLead2,
-  renderSupport1,
-  renderSupport2
+  lead1,
+  lead2,
+  support1,
+  support2
 }) => {
   const styles = styleFactory(breakpoint);
 
   if (breakpoint === editionBreakpoints.huge) {
     return (
       <View style={styles.container}>
-        <Column style={styles.column} tiles={[renderLead1, renderLead2]} />
+        <VerticalLayout style={styles.column} tiles={[lead1, lead2]} />
         <ItemColSeparator />
-        <View style={styles.middleTile}>{renderSupport1()}</View>
+        <View style={styles.middleTile}>{support1}</View>
         <ItemColSeparator />
-        <View style={styles.column}>{renderSupport2()}</View>
+        <View style={styles.column}>{support2}</View>
       </View>
     );
   }
@@ -31,28 +30,24 @@ const LeadTwoNoPicAndTwoSlice = ({
   if (breakpoint === editionBreakpoints.wide) {
     return (
       <View style={styles.container}>
-        <Column style={styles.column} tiles={[renderLead1, renderLead2]} />
+        <VerticalLayout style={styles.column} tiles={[lead1, lead2]} />
         <ItemColSeparator />
-        <View style={styles.middleTile}>{renderSupport1()}</View>
+        <View style={styles.middleTile}>{support1}</View>
         <ItemColSeparator />
-        <View style={styles.column}>{renderSupport2()}</View>
+        <View style={styles.column}>{support2}</View>
       </View>
     );
   }
 
   if (breakpoint === editionBreakpoints.small) {
-    return (
-      <Column
-        tiles={[renderLead1, renderLead2, renderSupport1, renderSupport2]}
-      />
-    );
+    return <VerticalLayout tiles={[lead1, lead2, support1, support2]} />;
   }
 
   return (
     <View style={styles.container}>
-      <Column style={styles.column} tiles={[renderLead1, renderLead2]} />
+      <VerticalLayout style={styles.column} tiles={[lead1, lead2]} />
       <ItemColSeparator />
-      <Column style={styles.column} tiles={[renderSupport1, renderSupport2]} />
+      <VerticalLayout style={styles.column} tiles={[support1, support2]} />
     </View>
   );
 };

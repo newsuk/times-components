@@ -20,21 +20,19 @@ class LeadOneAndFour extends Component {
     return (
       <LeadOneAndFourSlice
         breakpoint={breakpoint}
-        renderLead={() => (
-          <TileI onPress={onPress} tile={lead} tileName="lead" />
-        )}
-        renderSupport1={() => (
+        lead={<TileI onPress={onPress} tile={lead} tileName="lead" />}
+        support1={
           <TileJ onPress={onPress} tile={support1} tileName="support1" />
-        )}
-        renderSupport2={() => (
+        }
+        support2={
           <TileJ onPress={onPress} tile={support2} tileName="support2" />
-        )}
-        renderSupport3={() => (
+        }
+        support3={
           <TileJ onPress={onPress} tile={support3} tileName="support3" />
-        )}
-        renderSupport4={() => (
+        }
+        support4={
           <TileJ onPress={onPress} tile={support4} tileName="support4" />
-        )}
+        }
       />
     );
   }
@@ -48,46 +46,46 @@ class LeadOneAndFour extends Component {
     return (
       <LeadOneAndFourSlice
         breakpoint={breakpoint}
-        renderLead={() => (
+        lead={
           <TileAC
             breakpoint={breakpoint}
             onPress={onPress}
             tile={lead}
             tileName="lead"
           />
-        )}
-        renderSupport1={() => (
+        }
+        support1={
           <TileAD
             breakpoint={breakpoint}
             onPress={onPress}
             tile={support1}
             tileName="support1"
           />
-        )}
-        renderSupport2={() => (
+        }
+        support2={
           <TileAD
             breakpoint={breakpoint}
             onPress={onPress}
             tile={support2}
             tileName="support2"
           />
-        )}
-        renderSupport3={() => (
+        }
+        support3={
           <TileAD
             breakpoint={breakpoint}
             onPress={onPress}
             tile={support3}
             tileName="support3"
           />
-        )}
-        renderSupport4={() => (
+        }
+        support4={
           <TileAD
             breakpoint={breakpoint}
             onPress={onPress}
             tile={support4}
             tileName="support4"
           />
-        )}
+        }
       />
     );
   }

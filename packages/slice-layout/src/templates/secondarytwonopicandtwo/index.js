@@ -4,71 +4,61 @@ import { editionBreakpoints } from "@times-components/styleguide";
 import propTypes from "./proptypes";
 import styleFactory from "./styles";
 import { ItemColSeparator, ItemRowSeparator } from "../shared";
-import Column from "../column";
+import VerticalLayout from "../verticallayout";
+import HorizontalLayout from "../horizontallayout";
 
 const SecondaryTwoNoPicAndTwoSlice = ({
   breakpoint,
-  renderSecondary1,
-  renderSecondary2,
-  renderSupport1,
-  renderSupport2
+  secondary1,
+  secondary2,
+  support1,
+  support2
 }) => {
   const styles = styleFactory(breakpoint);
 
   if (breakpoint === editionBreakpoints.small) {
     return (
-      <Column
-        tiles={[
-          renderSecondary1,
-          renderSecondary2,
-          renderSupport1,
-          renderSupport2
-        ]}
-      />
+      <VerticalLayout tiles={[secondary1, secondary2, support1, support2]} />
     );
   }
 
   if (breakpoint === editionBreakpoints.medium) {
     return (
       <Fragment>
-        <View style={styles.itemContainer}>
-          <View key={renderSecondary1().props.id} style={styles.item}>
-            {renderSecondary1()}
-          </View>
-          <ItemColSeparator />
-          <View key={renderSecondary2().props.id} style={styles.item}>
-            {renderSecondary2()}
-          </View>
-        </View>
+        <HorizontalLayout
+          containerStyle={styles.itemContainer}
+          tiles={[
+            { style: styles.item, tile: secondary1 },
+            { style: styles.item, tile: secondary2 }
+          ]}
+        />
         <ItemRowSeparator />
-        <View style={styles.itemContainer}>
-          <View key={renderSupport1().props.id} style={styles.item}>
-            {renderSupport1()}
-          </View>
-          <ItemColSeparator />
-          <View key={renderSupport2().props.id} style={styles.item}>
-            {renderSupport2()}
-          </View>
-        </View>
+        <HorizontalLayout
+          containerStyle={styles.itemContainer}
+          tiles={[
+            { style: styles.item, tile: support1 },
+            { style: styles.item, tile: support2 }
+          ]}
+        />
       </Fragment>
     );
   }
 
   return (
     <View style={styles.container}>
-      <Column
+      <VerticalLayout
         style={styles.secondaryItemContainer}
-        tiles={[renderSecondary1]}
+        tiles={[secondary1]}
       />
       <ItemColSeparator />
-      <Column style={styles.supportItemContainer} tiles={[renderSupport1]} />
+      <VerticalLayout style={styles.supportItemContainer} tiles={[support1]} />
       <ItemColSeparator />
-      <Column
+      <VerticalLayout
         style={styles.secondaryItemContainer}
-        tiles={[renderSecondary2]}
+        tiles={[secondary2]}
       />
       <ItemColSeparator />
-      <Column style={styles.supportItemContainer} tiles={[renderSupport2]} />
+      <VerticalLayout style={styles.supportItemContainer} tiles={[support2]} />
     </View>
   );
 };
