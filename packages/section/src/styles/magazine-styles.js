@@ -15,6 +15,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     backgroundColor: colours.functional.black,
     flex: 1,
+    overflow: "hidden",
     width: "100%"
   },
   label: {
