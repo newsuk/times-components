@@ -10,6 +10,7 @@ import ArticleExtras from "@times-components/article-extras";
 import { Layout, Text as FText } from "@times-components/text-flow";
 import { tabletWidth, tabletWidthMax } from "@times-components/styleguide";
 import ArticleRowFlow from "./article-body/article-body-row";
+import ArticleTopics from "./article-topics";
 import {
   articleSkeletonPropTypes,
   articleSkeletonDefaultProps
