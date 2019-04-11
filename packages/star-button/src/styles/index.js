@@ -2,7 +2,9 @@ import { spacing } from "@times-components/styleguide";
 
 const styles = {
   container: {
+    borderRadius: 9999,
     height: 28,
+    overflow: "hidden",
     padding: spacing(1),
     width: 28
   }

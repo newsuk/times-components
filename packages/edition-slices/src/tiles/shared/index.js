@@ -1,4 +1,4 @@
-import getCrop from "./get-crop";
+import { getTileImageUri, getTileSummary, getTileStrapline } from "./utils";
 import TileImage from "./tile-image";
 import TileLink from "./tile-link";
 import TileStar from "./tile-star";
@@ -7,7 +7,9 @@ import withTileTracking from "./tile-tracking-events";
 import withPuzzleTileTracking from "./puzzle-tracking-events";
 
 export {
-  getCrop,
+  getTileImageUri,
+  getTileSummary,
+  getTileStrapline,
   TileImage,
   TileLink,
   TileStar,

@@ -4,8 +4,8 @@ import PropTypes from "prop-types";
 import webviewEventCallbackSetup from "./webview-event-callback-setup";
 
 const editorialLambdaProtocol = "https://";
-const editorialLambdaOrigin = "cwfiyvo20d.execute-api.eu-west-1.amazonaws.com";
-const editorialLambdaSlug = "dev/component";
+const editorialLambdaOrigin = "jotn9sgpg6.execute-api.eu-west-1.amazonaws.com";
+const editorialLambdaSlug = "prod/component";
 
 class InteractiveWrapper extends Component {
   static postMessageBugWorkaround() {

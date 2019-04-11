@@ -1,13 +1,17 @@
 import React from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
-import { TileLink, TileSummary, withTileTracking } from "../shared";
+import {
+  getTileStrapline,
+  TileLink,
+  TileSummary,
+  withTileTracking
+} from "../shared";
 import styles from "./styles";
 
 const TileAG = ({ onPress, tile }) => {
   const {
-    strapline,
-    article: { id, shortHeadline, strapline: articleStrapline, url }
+    article: { id, shortHeadline, url }
   } = tile;
   const tileWithoutLabelAndFlags = { article: { id, shortHeadline, url } };
 
@@ -16,7 +20,7 @@ const TileAG = ({ onPress, tile }) => {
       <View style={styles.container}>
         <TileSummary
           headlineStyle={styles.headline}
-          strapline={strapline || articleStrapline}
+          strapline={getTileStrapline(tile)}
           straplineStyle={styles.strapline}
           tile={tileWithoutLabelAndFlags}
         />

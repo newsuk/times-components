@@ -2,7 +2,7 @@ import React from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
 import {
-  getCrop,
+  getTileImageUri,
   TileImage,
   TileLink,
   TileSummary,
@@ -14,13 +14,7 @@ const TileR = ({ onPress, tile }) => (
   <TileLink onPress={onPress} tile={tile}>
     <View style={styles.container}>
       <TileSummary headlineStyle={styles.headline} tile={tile} />
-      <TileImage
-        aspectRatio={16 / 9}
-        uri={getCrop(
-          tile.leadAsset || tile.article.listingAsset || tile.article.leadAsset,
-          "crop169"
-        )}
-      />
+      <TileImage aspectRatio={16 / 9} uri={getTileImageUri(tile, "crop169")} />
     </View>
   </TileLink>
 );

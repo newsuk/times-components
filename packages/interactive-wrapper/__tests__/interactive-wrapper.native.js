@@ -174,7 +174,7 @@ export default () => {
     jest.spyOn(InteractiveWrapper, "openURLInBrowser");
     component.handleNavigationStateChange({
       url:
-        "http://cwfiyvo20d.execute-api.eu-west-1.amazonaws.com/same-origin-different-url"
+        "http://jotn9sgpg6.execute-api.eu-west-1.amazonaws.com/same-origin-different-url"
     });
     expect(InteractiveWrapper.openURLInBrowser).not.toHaveBeenCalled();
   });

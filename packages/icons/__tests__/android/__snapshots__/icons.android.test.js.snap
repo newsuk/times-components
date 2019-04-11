@@ -349,7 +349,7 @@ exports[`4. iconstar renders 1`] = `
   }
   title="IconStar"
   vbHeight={20}
-  vbWidth={20}
+  vbWidth={21}
 >
   <RNSVGPath
     d="53af37f285b7e6e57da32c1366718e90"

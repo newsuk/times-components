@@ -1,7 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
-import { TileLink, TileSummary } from "../shared";
+import { getTileStrapline, TileLink, TileSummary } from "../shared";
 import styles from "./styles";
 
 const TileX = ({ onPress, tile }) => (
@@ -9,7 +9,7 @@ const TileX = ({ onPress, tile }) => (
     <View style={styles.container}>
       <TileSummary
         headlineStyle={styles.headline}
-        strapline={tile.strapline || tile.article.strapline}
+        strapline={getTileStrapline(tile)}
         straplineStyle={styles.strapline}
         summary={tile.teaser300 || tile.article.summary300}
         tile={tile}
