@@ -1,29 +1,39 @@
 [
   {
-    "name": "author",
-    "attributes": {
-      "slug": "kaya-burgess"
-    },
-    "children": [
+    "__typename": "AuthorByline",
+    "byline": [
       {
-        "name": "text",
+        "name": "author",
         "attributes": {
-          "value": "Kaya Burgess"
+          "slug": "kaya-burgess"
         },
-        "children": []
+        "children": [
+          {
+            "name": "text",
+            "attributes": {
+              "value": "Kaya Burgess"
+            },
+            "children": []
+          }
+        ]
       }
     ]
   },
   {
-    "name": "inline",
-    "attributes": {},
-    "children": [
+    "__typename": "TextByline",
+    "byline": [
       {
-        "name": "text",
-        "attributes": {
-          "value": ", Religious Affairs Correspondent"
-        },
-        "children": []
+        "name": "inline",
+        "attributes": {},
+        "children": [
+          {
+            "name": "text",
+            "attributes": {
+              "value": ", Religious Affairs Correspondent"
+            },
+            "children": []
+          }
+        ]
       }
     ]
   }

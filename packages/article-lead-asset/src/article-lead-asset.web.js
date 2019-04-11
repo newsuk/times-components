@@ -5,6 +5,7 @@ import { AspectRatioContainer } from "@times-components/utils";
 import Video from "@times-components/video";
 
 import { defaultProps, propTypes } from "./article-lead-asset-prop-types";
+import getRatio from "./get-ratio";
 
 const ArticleLeadAsset = ({
   aspectRatio,
@@ -39,7 +40,12 @@ const ArticleLeadAsset = ({
       width="100%"
     />
   ) : (
-    <Image highResSize={width} lowResSize={100} uri={displayImage.url} />
+    <Image
+      aspectRatio={getRatio(aspectRatio)}
+      highResSize={width}
+      lowResSize={100}
+      uri={displayImage.url}
+    />
   );
 
   return (
