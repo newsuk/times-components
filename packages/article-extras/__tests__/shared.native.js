@@ -5,8 +5,7 @@ import {
   minimalNativeTransform,
   print
 } from "@times-components/jest-serializer";
-import "./mocks";
-import renderExtras from "./renderer";
+import shared from "./shared-base";
 
 export default () => {
   addSerializers(
@@ -24,22 +23,5 @@ export default () => {
     )
   );
 
-  it("article extras", async done => {
-    renderExtras({
-      onReady: testInstance => {
-        expect(testInstance).toMatchSnapshot();
-        done();
-      }
-    });
-  });
-
-  it("article extras error state", async done => {
-    renderExtras({
-      error: () => ({ error: "Error" }),
-      onReady: testInstance => {
-        expect(testInstance).toMatchSnapshot();
-        done();
-      }
-    });
-  });
+  shared();
 };

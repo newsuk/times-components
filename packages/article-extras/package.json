@@ -2,8 +2,8 @@
   "name": "@times-components/article-extras",
   "version": "0.0.1",
   "description": "Extra information components at the bottom of the articles, such as topics, related articles and comments",
-  "main": "dist/article-extras",
-  "dev": "src/article-extras",
+  "main": "dist/index",
+  "dev": "src/index",
   "scripts": {
     "depcheck": "depcheck --ignores='babel-*,depcheck,eslint,@thetimes/jest-lint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",

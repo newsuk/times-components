@@ -17,7 +17,7 @@ exports[`article extras 1`] = `
 </View>
 `;
 
-exports[`article extras error state 1`] = `
+exports[`comments error 1`] = `
 <View>
   <Text>
     It looks like you're offline
