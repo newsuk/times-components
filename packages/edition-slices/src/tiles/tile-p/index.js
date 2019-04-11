@@ -23,6 +23,7 @@ const TileP = ({ onPress, tile }) => (
         bylines={tile.article.bylines}
         bylineStyle={styles.bylineOpinion}
         headlineStyle={styles.headline}
+        starStyle={styles.star}
         strapline={getTileStrapline(tile)}
         straplineStyle={styles.strapline}
         style={styles.summaryContainer}

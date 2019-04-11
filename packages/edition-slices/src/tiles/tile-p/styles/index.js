@@ -4,6 +4,7 @@ import {
   fontSizes,
   spacing
 } from "@times-components/styleguide";
+import { verticalStyles } from "../../shared/styles";
 
 const styles = {
   bylineOpinion: {
@@ -31,6 +32,7 @@ const styles = {
     overflow: "hidden",
     width: "30%"
   },
+  star: verticalStyles,
   strapline: {
     color: colours.functional.secondary,
     fontSize: fontSizes.meta,

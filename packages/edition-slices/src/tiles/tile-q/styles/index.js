@@ -8,6 +8,10 @@ const styles = {
   imageContainer: {
     marginBottom: spacing(2),
     width: "100%"
+  },
+  starButton: {
+    marginTop: spacing(2),
+    textAlign: "center"
   }
 };
 

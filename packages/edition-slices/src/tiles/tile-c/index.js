@@ -1,9 +1,11 @@
 import React from "react";
+import { View } from "react-native";
 import PropTypes from "prop-types";
 import {
   getTileImageUri,
   TileImage,
   TileLink,
+  TileStar,
   TileSummary,
   withTileTracking
 } from "../shared";
@@ -16,7 +18,10 @@ const TileC = ({ onPress, tile }) => (
       style={styles.imageContainer}
       uri={getTileImageUri(tile, "crop169")}
     />
-    <TileSummary headlineStyle={styles.headline} tile={tile} />
+    <TileSummary headlineStyle={styles.headline} tile={tile} withStar={false} />
+    <View style={styles.star}>
+      <TileStar articleId={tile.article.id} />
+    </View>
   </TileLink>
 );
 

@@ -5,6 +5,7 @@ import {
   getTileImageUri,
   TileImage,
   TileLink,
+  TileStar,
   withTileTracking
 } from "../shared";
 import styles from "./styles";
@@ -17,6 +18,9 @@ const TileAI = ({ onPress, tile }) => (
         style={styles.imageContainer}
         uri={getTileImageUri(tile, "crop32")}
       />
+      <View style={styles.starButton}>
+        <TileStar articleId={tile.article.id} />
+      </View>
     </View>
   </TileLink>
 );

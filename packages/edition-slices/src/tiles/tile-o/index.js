@@ -5,12 +5,13 @@ import { colours } from "@times-components/styleguide";
 import { TileSummary, TileLink, withTileTracking } from "../shared";
 import styles from "./styles";
 
-const TileO = ({ onPress, tile }) => (
+const TileO = ({ isDarkStar, onPress, tile }) => (
   <TileLink onPress={onPress} tile={tile}>
     <View style={styles.container}>
       <TileSummary
         flagColour={styles.flagColour}
         headlineStyle={styles.headlineStyle}
+        isDarkStar={isDarkStar}
         labelColour={colours.functional.greyLabel}
         tile={tile}
       />
@@ -19,8 +20,13 @@ const TileO = ({ onPress, tile }) => (
 );
 
 TileO.propTypes = {
+  isDarkStar: PropTypes.bool,
   onPress: PropTypes.func.isRequired,
   tile: PropTypes.shape({}).isRequired
+};
+
+TileO.defaultProps = {
+  isDarkStar: true
 };
 
 export default withTileTracking(TileO);
