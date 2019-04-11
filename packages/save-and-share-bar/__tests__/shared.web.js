@@ -1,24 +1,22 @@
+import { AppRegistry } from "react-native-web";
 import {
   addSerializers,
   compose,
-  minimaliseTransform,
   minimalWebTransform,
-  print
+  rnwTransform,
+  stylePrinter
 } from "@times-components/jest-serializer";
-  import shared from "./shared.base";
+import shared from "./shared.base";
 
-  export default () => {
-    addSerializers(
-      expect,
-      compose(
-        print,
-        minimalWebTransform,
-        minimaliseTransform(
-          (value, key) =>
-            key === "style" || key === "className" || key === "data-testid"
-        )
-      )
-    );
+export default () => {
+  addSerializers(
+    expect,
+    compose(
+      stylePrinter,
+      minimalWebTransform,
+      rnwTransform(AppRegistry)
+    )
+  );
 
-    shared();
-  };
+  shared();
+};

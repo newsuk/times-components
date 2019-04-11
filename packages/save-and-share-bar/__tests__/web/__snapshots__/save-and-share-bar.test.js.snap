@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. saveandsharebar renders correctly 1`] = `
+<div
+  style={
+    Object {
+      "WebkitBoxDirection": "normal",
+      "WebkitBoxFlex": 1,
+      "WebkitBoxOrient": "horizontal",
+      "WebkitBoxPack": "justify",
+      "WebkitFlexBasis": "0%",
+      "WebkitFlexDirection": "row",
+      "WebkitFlexGrow": 1,
+      "WebkitFlexShrink": 1,
+      "WebkitJustifyContent": "space-between",
+      "flexBasis": "0%",
+      "flexDirection": "row",
+      "flexGrow": 1,
+      "flexShrink": 1,
+      "justifyContent": "space-between",
+      "msFlexDirection": "row",
+      "msFlexNegative": 1,
+      "msFlexPack": "justify",
+      "msFlexPositive": 1,
+      "msFlexPreferredSize": "0%",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "WebkitBoxDirection": "normal",
+        "WebkitBoxOrient": "horizontal",
+        "WebkitFlexDirection": "row",
+        "flexDirection": "row",
+        "msFlexDirection": "row",
+        "paddingBottom": "20px",
+        "paddingLeft": "20px",
+        "paddingRight": "20px",
+        "paddingTop": "20px",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "color": "rgba(105,105,105,1.00)",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": "13px",
+          "lineHeight": "15px",
+        }
+      }
+    >
+      Share
+    </div>
+    <Link
+      responsiveLinkStyles={
+        Object {
+          "base": "margin-left: 25px;",
+        }
+      }
+    >
+      <IconEmail
+        fillColour="#696969"
+        title="Share by email client"
+        width={22}
+      />
+    </Link>
+    <Link
+      responsiveLinkStyles={
+        Object {
+          "base": "margin-left: 25px;",
+        }
+      }
+      target="_blank"
+      url="https://twitter.com/intent/tweet?text="
+    >
+      <IconTwitter
+        fillColour="#696969"
+        title="Share on tweeter"
+        width={22}
+      />
+    </Link>
+    <Link
+      responsiveLinkStyles={
+        Object {
+          "base": "margin-left: 25px;",
+        }
+      }
+      target="_blank"
+      url="https://www.facebook.com/sharer/sharer.php?u="
+    >
+      <IconFacebook
+        fillColour="#696969"
+        heigth={20}
+        title="Share on facebook"
+        width={11}
+      />
+    </Link>
+  </div>
+  <div
+    style={
+      Object {
+        "WebkitBoxDirection": "normal",
+        "WebkitBoxOrient": "horizontal",
+        "WebkitFlexDirection": "row",
+        "flexDirection": "row",
+        "msFlexDirection": "row",
+        "paddingBottom": "20px",
+        "paddingLeft": "20px",
+        "paddingRight": "20px",
+        "paddingTop": "20px",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "color": "rgba(105,105,105,1.00)",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": "13px",
+          "lineHeight": "15px",
+        }
+      }
+    >
+      Save
+    </div>
+  </div>
+</div>
+`;

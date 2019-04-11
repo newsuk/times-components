@@ -1,13 +1,13 @@
 import React from "react";
-import SaveAndShareBar from "./src/save-and-share-bar.web";
+import SaveAndShareBar from "./src/save-and-share-bar";
 
 export default {
   children: [
     {
-      component: () => <SaveAndShareBar />,
-      name: "SaveAndShareBar",
+      component: () => <SaveAndShareBar articleUrl="" onPress={() => {}} />,
+      name: "Save snd Share bar",
       type: "story"
     }
   ],
-  name: "SaveAndShareBar"
+  name: "Save and Share bar"
 };

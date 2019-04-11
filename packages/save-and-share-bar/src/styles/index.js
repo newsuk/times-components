@@ -1,21 +1,32 @@
-import { spacing, colours } from "@times-components/styleguide";
+import { spacing, colours, fontFactory } from "@times-components/styleguide";
 
 const styles = {
   container: {
     flex: 1,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
+    flexDirection: "row",
+    justifyContent: "space-between"
   },
-  rowItem: {
-    flexDirection: 'row',
-    padding: spacing(4)
+  label: {
+    ...fontFactory({
+      font: "supporting",
+      fontSize: "cardMeta"
+    }),
+    color: colours.functional.secondary
   },
   link: {
-    base: `margin-left: 25px;`
+    base: `margin-left: ${spacing(5)};`
+  },
+  rowItem: {
+    flexDirection: "row",
+    padding: spacing(4)
   },
   svgIcon: {
+    fb: {
+      heigth: 20,
+      width: 11
+    },
     fillColour: colours.functional.secondary,
-    height: spacing(4)
+    width: 22
   }
 };
 
