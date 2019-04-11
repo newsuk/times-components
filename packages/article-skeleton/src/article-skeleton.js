@@ -8,6 +8,9 @@ import Responsive from "@times-components/responsive";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import { screenWidth } from "@times-components/utils";
 import ArticleExtras from "@times-components/article-extras";
+import { Layout, Text as FText } from "@times-components/text-flow";
+import { tabletWidth, tabletWidthMax } from "@times-components/styleguide";
+import { Dimensions } from "react-native";
 import { ArticleRowFlow } from "./article-body/article-body-row";
 import ArticleTopics from "./article-topics";
 import {
@@ -19,9 +22,6 @@ import articleTrackingContext from "./article-tracking-context";
 import insertDropcapIntoAST from "./dropcap-util";
 import styles from "./styles/shared";
 import Gutter, { maxWidth } from "./gutter";
-import { Layout, Text as FText } from "@times-components/text-flow";
-import { tabletWidth, tabletWidthMax } from "@times-components/styleguide";
-import { Dimensions } from "react-native";
 
 const listViewPageSize = 1;
 const listViewSize = 10;
@@ -32,14 +32,12 @@ const viewabilityConfig = {
   waitForInteraction: false
 };
 
-const convertStyles = ({ font, size }) => {
-  return {
+const convertStyles = ({ font, size }) => ({
     fontFamily: font,
     fontWeight: font.includes('Bold') ? 'bold' : null,
     fontStyle: font.includes('Italic') ? 'italic' : null,
     fontSize: size
-  }
-}
+  })
 
 const renderRow = (
   rowData,
@@ -179,8 +177,7 @@ class ArticleSkeleton extends Component {
 
     const textFlow = new Layout.TextFlow({
       width: Math.min(tabletWidth, screenWidth()) - 10,
-      flow: rows.map(rowData => {
-        return (
+      flow: rows.map(rowData => (
           ArticleRowFlow({
             content: rowData,
             interactiveConfig,
@@ -190,8 +187,7 @@ class ArticleSkeleton extends Component {
             width: Math.min(maxWidth, width),
             fontScale
           })
-        );
-      })
+        ))
     })
 
     receiveChildList(articleData);

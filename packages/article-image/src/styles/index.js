@@ -37,12 +37,12 @@ const styles = StyleSheet.create({
   },
   inlineContainerTablet: {
     ...containerShared,
-    paddingLeft: spacing(0),
-    width: '100%',
-    flexDirection: 'column',
-    paddingTop: 0,
+    flexDirection: "column",
     marginTop: 0,
-    paddingBottom: 0
+    paddingBottom: 0,
+    paddingLeft: spacing(0),
+    paddingTop: 0,
+    width: "100%"
   },
   inlineImage: {
     width: "100%"

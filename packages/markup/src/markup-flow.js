@@ -1,5 +1,5 @@
+import { Markup, Text } from "@times-components/text-flow";
 import { subscriptMap, superscriptMap } from "./sub-sup";
-import { Markup, Text } from "@times-components/text-flow"
 
 export default {
   block(key, attributes, renderedChildren) {
@@ -7,16 +7,16 @@ export default {
       element: new Markup.Styled({
         children: renderedChildren
       })
-    }
+    };
   },
   bold(key, attributes, renderedChildren) {
     return {
       element: new Markup.Bold({
         children: renderedChildren
       })
-    }
+    };
   },
-  break(key) {
+  break() {
     return {
       element: new Markup.Newline()
     };
@@ -45,21 +45,21 @@ export default {
   paragraph(key, attributes, renderedChildren) {
     return {
       element: new Text.Text({
-        markup: renderedChildren,
-        lineHeight: 30,
-        width: 600,
+        font: "TimesDigitalW04-Regular",
         height: 200,
+        lineHeight: 30,
+        markup: renderedChildren,
         size: 18,
-        font: 'TimesDigitalW04-Regular'
+        width: 600
       })
-    }
+    };
   },
   strong(key, attributes, renderedChildren) {
     return {
       element: new Markup.Bold({
         children: renderedChildren
       })
-    }
+    };
   },
   subscript(key, attributes, renderedChildren) {
     const chars = renderedChildren.toString().split("");
@@ -69,16 +69,16 @@ export default {
         element: new Markup.MarkupString(
           chars.map(char => subscriptMap[char].join(""))
         )
-      }
+      };
     }
     return {
       element: new Markup.StyledText({
+        children: renderedChildren,
         style: new Markup.TextStyle({
           size: 10
-        }),
-        children: renderedChildren
+        })
       })
-    }
+    };
   },
   superscript(key, attributes, renderedChildren) {
     const chars = renderedChildren.toString().split("");
@@ -88,14 +88,14 @@ export default {
         element: new Markup.MarkupString(
           chars.map(char => superscriptMap[char]).join("")
         )
-      }
+      };
     }
     return {
       element: new Markup.StyledText({
+        children: renderedChildren,
         style: new Markup.TextStyle({
           size: 10
-        }),
-        children: renderedChildren
+        })
       })
     };
   },

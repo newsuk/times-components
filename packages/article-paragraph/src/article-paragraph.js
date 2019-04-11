@@ -19,9 +19,7 @@ const BodyParagraph = props => (
         <Context.Consumer>
           {({ theme: { dropCapFont, scale } }) => {
             const stylesScaled = styleFactory(dropCapFont, scale);
-            return (
-              props.children(stylesScaled.articleTextElement)
-            );
+            return props.children(stylesScaled.articleTextElement);
           }}
         </Context.Consumer>
       </View>

@@ -9,9 +9,9 @@ import ResponsiveContext from "./context";
 
 const calculateState = (width, fontScale) => ({
   editionBreakpoint: getEditionBreakpoint(width),
+  fontScale,
   isTablet: width > tabletWidth,
-  screenWidth: width,
-  fontScale
+  screenWidth: width
 });
 
 class Responsive extends Component {

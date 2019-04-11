@@ -13,12 +13,12 @@ import { ResponsiveContext } from "@times-components/responsive";
 import { colours } from "@times-components/styleguide";
 import { screenWidth } from "@times-components/utils";
 import Video from "@times-components/video";
-import ArticleLink from "./article-link";
-import InsetCaption from "./inset-caption";
-import styleFactory from "../styles/article-body";
 import { Markup, Layout, Text } from "@times-components/text-flow"
 import DropCap from "@times-components/article-paragraph/src/drop-cap";
 import { tabletWidth } from "@times-components/styleguide";
+import ArticleLink from "./article-link";
+import InsetCaption from "./inset-caption";
+import styleFactory from "../styles/article-body";
 
 
 const styles = styleFactory();
@@ -51,10 +51,10 @@ export const ArticleRowFlow = ({
                 theme: { dropCapFont, sectionColour = colours.section.default, scale }
               }) => (
                   <DropCap
+                    colour={sectionColour}
                     dropCap={value}
                     font={dropCapFont}
-                    scale={scale}
-                    colour={sectionColour} />
+                    scale={scale} />
                 )}
             </Context.Consumer>)
           },
@@ -102,7 +102,7 @@ export const ArticleRowFlow = ({
             }
           })
         }
-      } else {
+      } 
         const [ratioWidth, ratioHeight] = ratio.split(":");
         const aspectRatio = ratioHeight / ratioWidth;
         return {
@@ -133,7 +133,7 @@ export const ArticleRowFlow = ({
             }
           })
         }
-      }
+      
     },
     interactive(key, { id }) {
       return {
