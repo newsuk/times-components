@@ -3,8 +3,8 @@ import { editionBreakpoints } from "@times-components/styleguide";
 
 const propTypes = {
   breakpoint: PropTypes.string,
-  renderLead: PropTypes.node.isRequired,
-  renderSupport: PropTypes.node.isRequired
+  lead: PropTypes.node.isRequired,
+  support: PropTypes.node.isRequired
 };
 
 const defaultProps = {

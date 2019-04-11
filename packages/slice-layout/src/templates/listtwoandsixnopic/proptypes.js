@@ -1,14 +1,14 @@
 import PropTypes from "prop-types";
 
 const propTypes = {
-  renderLead1: PropTypes.node.isRequired,
-  renderLead2: PropTypes.node.isRequired,
-  renderSupport1: PropTypes.node.isRequired,
-  renderSupport2: PropTypes.node.isRequired,
-  renderSupport3: PropTypes.node.isRequired,
-  renderSupport4: PropTypes.node.isRequired,
-  renderSupport5: PropTypes.node.isRequired,
-  renderSupport6: PropTypes.node.isRequired
+  lead1: PropTypes.node.isRequired,
+  lead2: PropTypes.node.isRequired,
+  support1: PropTypes.node.isRequired,
+  support2: PropTypes.node.isRequired,
+  support3: PropTypes.node.isRequired,
+  support4: PropTypes.node.isRequired,
+  support5: PropTypes.node.isRequired,
+  support6: PropTypes.node.isRequired
 };
 
 export default propTypes;

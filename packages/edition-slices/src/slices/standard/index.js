@@ -20,7 +20,9 @@ class Standard extends Component {
       onPress
     } = this.props;
 
-    return items.map(tile => <TileK onPress={onPress} tile={tile} />);
+    return items.map(tile => (
+      <TileK key={tile.articleId} onPress={onPress} tile={tile} />
+    ));
   }
 
   renderMedium() {
