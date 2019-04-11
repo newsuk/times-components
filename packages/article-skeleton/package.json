@@ -74,7 +74,6 @@
   },
   "dependencies": {
     "@times-components/ad": "2.5.19",
-    "@times-components/article-comments": "0.4.52",
     "@times-components/article-extras": "0.0.1",
     "@times-components/article-image": "5.1.12",
     "@times-components/article-paragraph": "0.7.21",
@@ -88,7 +87,6 @@
     "@times-components/markup": "3.3.43",
     "@times-components/markup-forest": "1.6.10",
     "@times-components/pull-quote": "3.4.58",
-    "@times-components/related-articles": "5.5.69",
     "@times-components/responsive": "0.4.14",
     "@times-components/styleguide": "3.27.7",
     "@times-components/tracking": "2.4.18",
