@@ -11,8 +11,8 @@ export default renderComponent => {
       test() {
         const output = renderComponent(
           <SecondaryOneAndColumnistSlice
-            renderColumnist={() => createItem("columnist")}
-            renderSecondary={() => createItem("secondary")}
+            columnist={createItem("columnist")}
+            secondary={createItem("secondary")}
           />
         );
 
@@ -25,8 +25,8 @@ export default renderComponent => {
         const output = renderComponent(
           <SecondaryOneAndColumnistSlice
             breakpoint={editionBreakpoints.medium}
-            renderColumnist={() => createItem("columnist")}
-            renderSecondary={() => createItem("secondary")}
+            columnist={createItem("columnist")}
+            secondary={createItem("secondary")}
           />
         );
 

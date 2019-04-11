@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
 
 const propTypes = {
-  renderSecondary: PropTypes.func.isRequired,
-  renderSupport1: PropTypes.func.isRequired,
-  renderSupport2: PropTypes.func.isRequired,
-  renderSupport3: PropTypes.func.isRequired,
-  renderSupport4: PropTypes.func.isRequired
+  secondary: PropTypes.node.isRequired,
+  support1: PropTypes.node.isRequired,
+  support2: PropTypes.node.isRequired,
+  support3: PropTypes.node.isRequired,
+  support4: PropTypes.node.isRequired
 };
 
 export default propTypes;

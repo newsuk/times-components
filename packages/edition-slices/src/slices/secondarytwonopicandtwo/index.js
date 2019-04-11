@@ -21,18 +21,18 @@ class SecondaryTwoNoPicAndTwo extends Component {
     return (
       <SecondaryTwoNoPicAndTwoSlice
         breakpoint={breakpoint}
-        renderSecondary1={() => (
+        secondary1={
           <TileB onPress={onPress} tile={secondary1} tileName="secondary1" />
-        )}
-        renderSecondary2={() => (
+        }
+        secondary2={
           <TileB onPress={onPress} tile={secondary2} tileName="secondary2" />
-        )}
-        renderSupport1={() => (
+        }
+        support1={
           <TileG onPress={onPress} tile={support1} tileName="support1" />
-        )}
-        renderSupport2={() => (
+        }
+        support2={
           <TileG onPress={onPress} tile={support2} tileName="support2" />
-        )}
+        }
       />
     );
   }
@@ -46,18 +46,18 @@ class SecondaryTwoNoPicAndTwo extends Component {
     return (
       <SecondaryTwoNoPicAndTwoSlice
         breakpoint={breakpoint}
-        renderSecondary1={() => (
+        secondary1={
           <TileAE onPress={onPress} tile={secondary1} tileName="secondary1" />
-        )}
-        renderSecondary2={() => (
+        }
+        secondary2={
           <TileAE onPress={onPress} tile={secondary2} tileName="secondary2" />
-        )}
-        renderSupport1={() => (
+        }
+        support1={
           <TileG onPress={onPress} tile={support1} tileName="support1" />
-        )}
-        renderSupport2={() => (
+        }
+        support2={
           <TileG onPress={onPress} tile={support2} tileName="support2" />
-        )}
+        }
       />
     );
   }
@@ -71,18 +71,18 @@ class SecondaryTwoNoPicAndTwo extends Component {
     return (
       <SecondaryTwoNoPicAndTwoSlice
         breakpoint={breakpoint}
-        renderSecondary1={() => (
+        secondary1={
           <TileAE onPress={onPress} tile={secondary1} tileName="secondary1" />
-        )}
-        renderSecondary2={() => (
+        }
+        secondary2={
           <TileAE onPress={onPress} tile={secondary2} tileName="secondary2" />
-        )}
-        renderSupport1={() => (
+        }
+        support1={
           <TileAP onPress={onPress} tile={support1} tileName="support1" />
-        )}
-        renderSupport2={() => (
+        }
+        support2={
           <TileAP onPress={onPress} tile={support2} tileName="support2" />
-        )}
+        }
       />
     );
   }

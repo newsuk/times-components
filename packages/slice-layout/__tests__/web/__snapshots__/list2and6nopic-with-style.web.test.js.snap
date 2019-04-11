@@ -136,57 +136,45 @@ exports[`1. list two and six no pic - small 1`] = `
     <div
       className="S1"
     >
-      <div
-        className="S1"
-      >
-        support-1
-      </div>
-      <div
-        className="S2"
-        style={
-          Object {
-            "borderBottomColor": "rgba(219,219,219,1.00)",
-            "borderBottomWidth": "1px",
-            "borderLeftColor": "rgba(219,219,219,1.00)",
-            "borderRightColor": "rgba(219,219,219,1.00)",
-            "borderTopColor": "rgba(219,219,219,1.00)",
-            "marginLeft": "10px",
-            "marginRight": "10px",
-          }
-        }
-      />
+      support-1
     </div>
+    <div
+      className="S2"
+      style={
+        Object {
+          "borderBottomColor": "rgba(219,219,219,1.00)",
+          "borderBottomWidth": "1px",
+          "borderLeftColor": "rgba(219,219,219,1.00)",
+          "borderRightColor": "rgba(219,219,219,1.00)",
+          "borderTopColor": "rgba(219,219,219,1.00)",
+          "marginLeft": "10px",
+          "marginRight": "10px",
+        }
+      }
+    />
     <div
       className="S1"
     >
-      <div
-        className="S1"
-      >
-        support-2
-      </div>
-      <div
-        className="S2"
-        style={
-          Object {
-            "borderBottomColor": "rgba(219,219,219,1.00)",
-            "borderBottomWidth": "1px",
-            "borderLeftColor": "rgba(219,219,219,1.00)",
-            "borderRightColor": "rgba(219,219,219,1.00)",
-            "borderTopColor": "rgba(219,219,219,1.00)",
-            "marginLeft": "10px",
-            "marginRight": "10px",
-          }
-        }
-      />
+      support-2
     </div>
+    <div
+      className="S2"
+      style={
+        Object {
+          "borderBottomColor": "rgba(219,219,219,1.00)",
+          "borderBottomWidth": "1px",
+          "borderLeftColor": "rgba(219,219,219,1.00)",
+          "borderRightColor": "rgba(219,219,219,1.00)",
+          "borderTopColor": "rgba(219,219,219,1.00)",
+          "marginLeft": "10px",
+          "marginRight": "10px",
+        }
+      }
+    />
     <div
       className="S1"
     >
-      <div
-        className="S1"
-      >
-        support-3
-      </div>
+      support-3
     </div>
   </div>
   <div
@@ -223,57 +211,45 @@ exports[`1. list two and six no pic - small 1`] = `
     <div
       className="S1"
     >
-      <div
-        className="S1"
-      >
-        support-4
-      </div>
-      <div
-        className="S2"
-        style={
-          Object {
-            "borderBottomColor": "rgba(219,219,219,1.00)",
-            "borderBottomWidth": "1px",
-            "borderLeftColor": "rgba(219,219,219,1.00)",
-            "borderRightColor": "rgba(219,219,219,1.00)",
-            "borderTopColor": "rgba(219,219,219,1.00)",
-            "marginLeft": "10px",
-            "marginRight": "10px",
-          }
-        }
-      />
+      support-4
     </div>
+    <div
+      className="S2"
+      style={
+        Object {
+          "borderBottomColor": "rgba(219,219,219,1.00)",
+          "borderBottomWidth": "1px",
+          "borderLeftColor": "rgba(219,219,219,1.00)",
+          "borderRightColor": "rgba(219,219,219,1.00)",
+          "borderTopColor": "rgba(219,219,219,1.00)",
+          "marginLeft": "10px",
+          "marginRight": "10px",
+        }
+      }
+    />
     <div
       className="S1"
     >
-      <div
-        className="S1"
-      >
-        support-5
-      </div>
-      <div
-        className="S2"
-        style={
-          Object {
-            "borderBottomColor": "rgba(219,219,219,1.00)",
-            "borderBottomWidth": "1px",
-            "borderLeftColor": "rgba(219,219,219,1.00)",
-            "borderRightColor": "rgba(219,219,219,1.00)",
-            "borderTopColor": "rgba(219,219,219,1.00)",
-            "marginLeft": "10px",
-            "marginRight": "10px",
-          }
-        }
-      />
+      support-5
     </div>
+    <div
+      className="S2"
+      style={
+        Object {
+          "borderBottomColor": "rgba(219,219,219,1.00)",
+          "borderBottomWidth": "1px",
+          "borderLeftColor": "rgba(219,219,219,1.00)",
+          "borderRightColor": "rgba(219,219,219,1.00)",
+          "borderTopColor": "rgba(219,219,219,1.00)",
+          "marginLeft": "10px",
+          "marginRight": "10px",
+        }
+      }
+    />
     <div
       className="S1"
     >
-      <div
-        className="S1"
-      >
-        support-6
-      </div>
+      support-6
     </div>
   </div>
 </div>
@@ -415,57 +391,45 @@ exports[`2. list two and six no pic - medium 1`] = `
     <div
       className="S1"
     >
-      <div
-        className="S1"
-      >
-        support-1
-      </div>
-      <div
-        className="S2"
-        style={
-          Object {
-            "borderBottomColor": "rgba(219,219,219,1.00)",
-            "borderBottomWidth": "1px",
-            "borderLeftColor": "rgba(219,219,219,1.00)",
-            "borderRightColor": "rgba(219,219,219,1.00)",
-            "borderTopColor": "rgba(219,219,219,1.00)",
-            "marginLeft": "10px",
-            "marginRight": "10px",
-          }
-        }
-      />
+      support-1
     </div>
+    <div
+      className="S2"
+      style={
+        Object {
+          "borderBottomColor": "rgba(219,219,219,1.00)",
+          "borderBottomWidth": "1px",
+          "borderLeftColor": "rgba(219,219,219,1.00)",
+          "borderRightColor": "rgba(219,219,219,1.00)",
+          "borderTopColor": "rgba(219,219,219,1.00)",
+          "marginLeft": "10px",
+          "marginRight": "10px",
+        }
+      }
+    />
     <div
       className="S1"
     >
-      <div
-        className="S1"
-      >
-        support-2
-      </div>
-      <div
-        className="S2"
-        style={
-          Object {
-            "borderBottomColor": "rgba(219,219,219,1.00)",
-            "borderBottomWidth": "1px",
-            "borderLeftColor": "rgba(219,219,219,1.00)",
-            "borderRightColor": "rgba(219,219,219,1.00)",
-            "borderTopColor": "rgba(219,219,219,1.00)",
-            "marginLeft": "10px",
-            "marginRight": "10px",
-          }
-        }
-      />
+      support-2
     </div>
+    <div
+      className="S2"
+      style={
+        Object {
+          "borderBottomColor": "rgba(219,219,219,1.00)",
+          "borderBottomWidth": "1px",
+          "borderLeftColor": "rgba(219,219,219,1.00)",
+          "borderRightColor": "rgba(219,219,219,1.00)",
+          "borderTopColor": "rgba(219,219,219,1.00)",
+          "marginLeft": "10px",
+          "marginRight": "10px",
+        }
+      }
+    />
     <div
       className="S1"
     >
-      <div
-        className="S1"
-      >
-        support-3
-      </div>
+      support-3
     </div>
   </div>
   <div
@@ -502,57 +466,45 @@ exports[`2. list two and six no pic - medium 1`] = `
     <div
       className="S1"
     >
-      <div
-        className="S1"
-      >
-        support-4
-      </div>
-      <div
-        className="S2"
-        style={
-          Object {
-            "borderBottomColor": "rgba(219,219,219,1.00)",
-            "borderBottomWidth": "1px",
-            "borderLeftColor": "rgba(219,219,219,1.00)",
-            "borderRightColor": "rgba(219,219,219,1.00)",
-            "borderTopColor": "rgba(219,219,219,1.00)",
-            "marginLeft": "10px",
-            "marginRight": "10px",
-          }
-        }
-      />
+      support-4
     </div>
+    <div
+      className="S2"
+      style={
+        Object {
+          "borderBottomColor": "rgba(219,219,219,1.00)",
+          "borderBottomWidth": "1px",
+          "borderLeftColor": "rgba(219,219,219,1.00)",
+          "borderRightColor": "rgba(219,219,219,1.00)",
+          "borderTopColor": "rgba(219,219,219,1.00)",
+          "marginLeft": "10px",
+          "marginRight": "10px",
+        }
+      }
+    />
     <div
       className="S1"
     >
-      <div
-        className="S1"
-      >
-        support-5
-      </div>
-      <div
-        className="S2"
-        style={
-          Object {
-            "borderBottomColor": "rgba(219,219,219,1.00)",
-            "borderBottomWidth": "1px",
-            "borderLeftColor": "rgba(219,219,219,1.00)",
-            "borderRightColor": "rgba(219,219,219,1.00)",
-            "borderTopColor": "rgba(219,219,219,1.00)",
-            "marginLeft": "10px",
-            "marginRight": "10px",
-          }
-        }
-      />
+      support-5
     </div>
+    <div
+      className="S2"
+      style={
+        Object {
+          "borderBottomColor": "rgba(219,219,219,1.00)",
+          "borderBottomWidth": "1px",
+          "borderLeftColor": "rgba(219,219,219,1.00)",
+          "borderRightColor": "rgba(219,219,219,1.00)",
+          "borderTopColor": "rgba(219,219,219,1.00)",
+          "marginLeft": "10px",
+          "marginRight": "10px",
+        }
+      }
+    />
     <div
       className="S1"
     >
-      <div
-        className="S1"
-      >
-        support-6
-      </div>
+      support-6
     </div>
   </div>
 </div>

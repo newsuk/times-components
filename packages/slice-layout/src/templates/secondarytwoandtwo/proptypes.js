@@ -3,10 +3,10 @@ import { editionBreakpoints } from "@times-components/styleguide";
 
 const propTypes = {
   breakpoint: PropTypes.string,
-  renderSecondary1: PropTypes.func.isRequired,
-  renderSecondary2: PropTypes.func.isRequired,
-  renderSupport1: PropTypes.func.isRequired,
-  renderSupport2: PropTypes.func.isRequired
+  secondary1: PropTypes.node.isRequired,
+  secondary2: PropTypes.node.isRequired,
+  support1: PropTypes.node.isRequired,
+  support2: PropTypes.node.isRequired
 };
 
 const defaultProps = {

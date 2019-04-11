@@ -16,41 +16,29 @@ exports[`1. list two and six no pic - small 1`] = `
   <div />
   <div>
     <div>
-      <div>
-        support-1
-      </div>
-      <div />
+      support-1
     </div>
+    <div />
     <div>
-      <div>
-        support-2
-      </div>
-      <div />
+      support-2
     </div>
+    <div />
     <div>
-      <div>
-        support-3
-      </div>
+      support-3
     </div>
   </div>
   <div />
   <div>
     <div>
-      <div>
-        support-4
-      </div>
-      <div />
+      support-4
     </div>
+    <div />
     <div>
-      <div>
-        support-5
-      </div>
-      <div />
+      support-5
     </div>
+    <div />
     <div>
-      <div>
-        support-6
-      </div>
+      support-6
     </div>
   </div>
 </div>
@@ -72,41 +60,29 @@ exports[`2. list two and six no pic - medium 1`] = `
   <div />
   <div>
     <div>
-      <div>
-        support-1
-      </div>
-      <div />
+      support-1
     </div>
+    <div />
     <div>
-      <div>
-        support-2
-      </div>
-      <div />
+      support-2
     </div>
+    <div />
     <div>
-      <div>
-        support-3
-      </div>
+      support-3
     </div>
   </div>
   <div />
   <div>
     <div>
-      <div>
-        support-4
-      </div>
-      <div />
+      support-4
     </div>
+    <div />
     <div>
-      <div>
-        support-5
-      </div>
-      <div />
+      support-5
     </div>
+    <div />
     <div>
-      <div>
-        support-6
-      </div>
+      support-6
     </div>
   </div>
 </div>

@@ -11,11 +11,11 @@ export default renderComponent => {
       test() {
         const output = renderComponent(
           <LeadOneAndFourSlice
-            renderLead={() => createItem("lead")}
-            renderSupport1={() => createItem("support-1")}
-            renderSupport2={() => createItem("support-2")}
-            renderSupport3={() => createItem("support-3")}
-            renderSupport4={() => createItem("support-4")}
+            lead={createItem("lead")}
+            support1={createItem("support-1")}
+            support2={createItem("support-2")}
+            support3={createItem("support-3")}
+            support4={createItem("support-4")}
           />
         );
 
@@ -28,11 +28,11 @@ export default renderComponent => {
         const output = renderComponent(
           <LeadOneAndFourSlice
             breakpoint={editionBreakpoints.medium}
-            renderLead={() => createItem("lead")}
-            renderSupport1={() => createItem("support-1")}
-            renderSupport2={() => createItem("support-2")}
-            renderSupport3={() => createItem("support-3")}
-            renderSupport4={() => createItem("support-4")}
+            lead={createItem("lead")}
+            support1={createItem("support-1")}
+            support2={createItem("support-2")}
+            support3={createItem("support-3")}
+            support4={createItem("support-4")}
           />
         );
 

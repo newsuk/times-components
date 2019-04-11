@@ -1,22 +1,23 @@
 import React from "react";
-import { View } from "react-native";
 import { editionBreakpoints } from "@times-components/styleguide";
-import Column from "../column";
+import VerticalLayout from "../verticallayout";
+import HorizontalLayout from "../horizontallayout";
 import propTypes from "./proptypes";
 import styles from "./styles";
-import { ItemColSeparator } from "../shared";
 
-const CommentLeadAndCartoon = ({ breakpoint, renderLead, renderCartoon }) => {
+const CommentLeadAndCartoon = ({ breakpoint, lead, cartoon }) => {
   if (breakpoint === editionBreakpoints.small) {
-    return <Column tiles={[renderLead, renderCartoon]} />;
+    return <VerticalLayout tiles={[lead, cartoon]} />;
   }
 
   return (
-    <View style={styles.container}>
-      <View style={styles.lead}>{renderLead()}</View>
-      <ItemColSeparator />
-      <View style={styles.cartoon}>{renderCartoon()}</View>
-    </View>
+    <HorizontalLayout
+      containerStyle={styles.container}
+      tiles={[
+        { style: styles.lead, tile: lead },
+        { style: styles.cartoon, tile: cartoon }
+      ]}
+    />
   );
 };
 

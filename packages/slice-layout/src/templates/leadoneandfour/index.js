@@ -3,42 +3,35 @@ import { View } from "react-native";
 import { editionBreakpoints } from "@times-components/styleguide";
 import { defaultProps, propTypes } from "./proptypes";
 import { ItemColSeparator } from "../shared";
-import Column from "../column";
+import VerticalLayout from "../verticallayout";
 import styles from "./styles";
 
 const leadOneAndFourSlice = ({
   breakpoint,
-  renderLead,
-  renderSupport1,
-  renderSupport2,
-  renderSupport3,
-  renderSupport4
+  lead,
+  support1,
+  support2,
+  support3,
+  support4
 }) => {
   const { container, leadContainer, supportContainer } = styles;
 
   if (editionBreakpoints.small === breakpoint) {
     return (
       <Fragment>
-        {renderLead()}
-        <Column
-          tiles={[
-            renderSupport1,
-            renderSupport2,
-            renderSupport3,
-            renderSupport4
-          ]}
-        />
+        {lead}
+        <VerticalLayout tiles={[support1, support2, support3, support4]} />
       </Fragment>
     );
   }
 
   return (
     <View style={container}>
-      <View style={leadContainer}>{renderLead()}</View>
+      <View style={leadContainer}>{lead}</View>
       <ItemColSeparator />
-      <Column
+      <VerticalLayout
         style={supportContainer}
-        tiles={[renderSupport1, renderSupport2, renderSupport3, renderSupport4]}
+        tiles={[support1, support2, support3, support4]}
       />
     </View>
   );

@@ -997,6 +997,7 @@ exports[`10. secondary one and columnist - medium 1`] = `
   border-left-color: rgba(219,219,219,1.00);
   border-right-width: 1px;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .IS3 {
@@ -1045,7 +1046,7 @@ exports[`10. secondary one and columnist - medium 1`] = `
       />
     </div>
     <div
-      className="IS2 S1"
+      className="IS2"
     />
     <div
       className="IS3 S1"
@@ -2680,6 +2681,7 @@ exports[`25. secondary one and columnist - wide 1`] = `
   border-left-color: rgba(219,219,219,1.00);
   border-right-width: 1px;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .IS3 {
@@ -2728,7 +2730,7 @@ exports[`25. secondary one and columnist - wide 1`] = `
       />
     </div>
     <div
-      className="IS2 S1"
+      className="IS2"
     />
     <div
       className="IS3 S1"
@@ -4363,6 +4365,7 @@ exports[`40. secondary one and columnist - huge 1`] = `
   border-left-color: rgba(219,219,219,1.00);
   border-right-width: 1px;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .IS3 {
@@ -4411,7 +4414,7 @@ exports[`40. secondary one and columnist - huge 1`] = `
       />
     </div>
     <div
-      className="IS2 S1"
+      className="IS2"
     />
     <div
       className="IS3 S1"

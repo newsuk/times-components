@@ -19,18 +19,18 @@ class SecondaryFour extends Component {
     return (
       <SecondaryFourSlice
         breakpoint={breakpoint}
-        renderSecondary1={() => (
+        secondary1={
           <TileC onPress={onPress} tile={secondary1} tileName="secondary1" />
-        )}
-        renderSecondary2={() => (
+        }
+        secondary2={
           <TileC onPress={onPress} tile={secondary2} tileName="secondary2" />
-        )}
-        renderSecondary3={() => (
+        }
+        secondary3={
           <TileC onPress={onPress} tile={secondary3} tileName="secondary3" />
-        )}
-        renderSecondary4={() => (
+        }
+        secondary4={
           <TileC onPress={onPress} tile={secondary4} tileName="secondary4" />
-        )}
+        }
       />
     );
   }

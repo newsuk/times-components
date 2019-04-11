@@ -37,15 +37,9 @@ class LeadersSlice extends Component {
     return (
       <Leaders
         breakpoint={breakpoint}
-        renderLeader1={() => (
-          <TileM onPress={onPress} tile={leader1} tileName="leader1" />
-        )}
-        renderLeader2={() => (
-          <TileM onPress={onPress} tile={leader2} tileName="leader2" />
-        )}
-        renderLeader3={() => (
-          <TileM onPress={onPress} tile={leader3} tileName="leader3" />
-        )}
+        leader1={<TileM onPress={onPress} tile={leader1} tileName="leader1" />}
+        leader2={<TileM onPress={onPress} tile={leader2} tileName="leader2" />}
+        leader3={<TileM onPress={onPress} tile={leader3} tileName="leader3" />}
       />
     );
   }
@@ -59,15 +53,9 @@ class LeadersSlice extends Component {
     return (
       <Leaders
         breakpoint={breakpoint}
-        renderLeader1={() => (
-          <TileAG onPress={onPress} tile={leader1} tileName="leader1" />
-        )}
-        renderLeader2={() => (
-          <TileAG onPress={onPress} tile={leader2} tileName="leader2" />
-        )}
-        renderLeader3={() => (
-          <TileAG onPress={onPress} tile={leader3} tileName="leader3" />
-        )}
+        leader1={<TileAG onPress={onPress} tile={leader1} tileName="leader1" />}
+        leader2={<TileAG onPress={onPress} tile={leader2} tileName="leader2" />}
+        leader3={<TileAG onPress={onPress} tile={leader3} tileName="leader3" />}
       />
     );
   }
