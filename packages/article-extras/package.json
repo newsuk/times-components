@@ -57,7 +57,6 @@
   },
   "dependencies": {
     "@times-components/article-comments": "0.4.53",
-    "@times-components/article-extras": "0.0.1",
     "@times-components/article-topics": "3.3.49",
     "@times-components/button": "2.3.54",
     "@times-components/context": "0.9.12",

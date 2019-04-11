@@ -26,11 +26,11 @@ export default ({
   commentCount = 100,
   commentsEnabled = true,
   chooseMedia = () => ({ __typename: "Image" }),
-  error = () => { },
+  error = () => {},
   makeArticle = x => x,
   makeRelatedArticle = x => x,
   relatedArticleCount = 3,
-  variables = () => { }
+  variables = () => {}
 }) => {
   const queryVariables = variables();
   let mediaIndex = -1;
@@ -56,8 +56,8 @@ export default ({
           }),
           ArticleSlice: () => ({
             __typename: "StandardSlice",
-            sliceName: "StandardSlice",
-            items: new MockList(relatedArticleCount)
+            items: new MockList(relatedArticleCount),
+            sliceName: "StandardSlice"
           }),
           Crop: (parent, { ratio }) => {
             if (parent.posterImage) {
@@ -84,8 +84,8 @@ export default ({
           Slug: () => "some-slug",
           StandardSlice: () => ({
             __typename: "StandardSlice",
-            sliceName: "StandardSlice",
-            items: []
+            items: [],
+            sliceName: "StandardSlice"
           }),
           Tile: () => ({}),
           URL: () => "https://test.io",
