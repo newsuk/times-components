@@ -11,9 +11,9 @@ export default renderComponent => {
       test() {
         const output = renderComponent(
           <Leaders
-            renderLeader1={() => createItem("leader-1")}
-            renderLeader2={() => createItem("leader-2")}
-            renderLeader3={() => createItem("leader-3")}
+            leader1={createItem("leader-1")}
+            leader2={createItem("leader-2")}
+            leader3={createItem("leader-3")}
           />
         );
 
@@ -26,9 +26,9 @@ export default renderComponent => {
         const output = renderComponent(
           <Leaders
             breakpoint={editionBreakpoints.medium}
-            renderLeader1={() => createItem("leader-1")}
-            renderLeader2={() => createItem("leader-2")}
-            renderLeader3={() => createItem("leader-3")}
+            leader1={createItem("leader-1")}
+            leader2={createItem("leader-2")}
+            leader3={createItem("leader-3")}
           />
         );
 

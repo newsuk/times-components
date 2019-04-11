@@ -11,10 +11,10 @@ export default renderComponent => {
       test() {
         const output = renderComponent(
           <LeadTwoNoPicAndTwoSlice
-            renderLead1={() => createItem("lead-1")}
-            renderLead2={() => createItem("lead-2")}
-            renderSupport1={() => createItem("support-1")}
-            renderSupport2={() => createItem("support-2")}
+            lead1={createItem("lead-1")}
+            lead2={createItem("lead-2")}
+            support1={createItem("support-1")}
+            support2={createItem("support-2")}
           />
         );
 
@@ -27,10 +27,10 @@ export default renderComponent => {
         const output = renderComponent(
           <LeadTwoNoPicAndTwoSlice
             breakpoint={editionBreakpoints.medium}
-            renderLead1={() => createItem("lead-1")}
-            renderLead2={() => createItem("lead-2")}
-            renderSupport1={() => createItem("support-1")}
-            renderSupport2={() => createItem("support-2")}
+            lead1={createItem("lead-1")}
+            lead2={createItem("lead-2")}
+            support1={createItem("support-1")}
+            support2={createItem("support-2")}
           />
         );
 
@@ -43,10 +43,10 @@ export default renderComponent => {
         const output = renderComponent(
           <LeadTwoNoPicAndTwoSlice
             breakpoint={editionBreakpoints.wide}
-            renderLead1={() => createItem("lead-1")}
-            renderLead2={() => createItem("lead-2")}
-            renderSupport1={() => createItem("support-1")}
-            renderSupport2={() => createItem("support-2")}
+            lead1={createItem("lead-1")}
+            lead2={createItem("lead-2")}
+            support1={createItem("support-1")}
+            support2={createItem("support-2")}
           />
         );
 
@@ -59,10 +59,10 @@ export default renderComponent => {
         const output = renderComponent(
           <LeadTwoNoPicAndTwoSlice
             breakpoint={editionBreakpoints.huge}
-            renderLead1={() => createItem("lead-1")}
-            renderLead2={() => createItem("lead-2")}
-            renderSupport1={() => createItem("support-1")}
-            renderSupport2={() => createItem("support-2")}
+            lead1={createItem("lead-1")}
+            lead2={createItem("lead-2")}
+            support1={createItem("support-1")}
+            support2={createItem("support-2")}
           />
         );
 

@@ -29,18 +29,14 @@ class LeadTwoNoPicAndTwo extends Component {
     return (
       <LeadTwoNoPicAndTwoSlice
         breakpoint={breakpoint}
-        renderLead1={() => (
-          <TileF onPress={onPress} tile={lead1} tileName="lead1" />
-        )}
-        renderLead2={() => (
-          <TileB onPress={onPress} tile={lead2} tileName="lead2" />
-        )}
-        renderSupport1={() => (
+        lead1={<TileF onPress={onPress} tile={lead1} tileName="lead1" />}
+        lead2={<TileB onPress={onPress} tile={lead2} tileName="lead2" />}
+        support1={
           <TileD onPress={onPress} tile={support1} tileName="support1" />
-        )}
-        renderSupport2={() => (
+        }
+        support2={
           <TileE onPress={onPress} tile={support2} tileName="support2" />
-        )}
+        }
       />
     );
   }
@@ -53,18 +49,14 @@ class LeadTwoNoPicAndTwo extends Component {
     return (
       <LeadTwoNoPicAndTwoSlice
         breakpoint={breakpoint}
-        renderLead1={() => (
-          <TileX onPress={onPress} tile={lead1} tileName="lead1" />
-        )}
-        renderLead2={() => (
-          <TileY onPress={onPress} tile={lead2} tileName="lead2" />
-        )}
-        renderSupport1={() => (
+        lead1={<TileX onPress={onPress} tile={lead1} tileName="lead1" />}
+        lead2={<TileY onPress={onPress} tile={lead2} tileName="lead2" />}
+        support1={
           <TileAL onPress={onPress} tile={support1} tileName="support1" />
-        )}
-        renderSupport2={() => (
+        }
+        support2={
           <TileZ onPress={onPress} tile={support2} tileName="support2" />
-        )}
+        }
       />
     );
   }
@@ -77,18 +69,14 @@ class LeadTwoNoPicAndTwo extends Component {
     return (
       <LeadTwoNoPicAndTwoSlice
         breakpoint={breakpoint}
-        renderLead1={() => (
-          <TileX onPress={onPress} tile={lead1} tileName="lead1" />
-        )}
-        renderLead2={() => (
-          <TileY onPress={onPress} tile={lead2} tileName="lead2" />
-        )}
-        renderSupport1={() => (
+        lead1={<TileX onPress={onPress} tile={lead1} tileName="lead1" />}
+        lead2={<TileY onPress={onPress} tile={lead2} tileName="lead2" />}
+        support1={
           <TileD onPress={onPress} tile={support1} tileName="support1" />
-        )}
-        renderSupport2={() => (
+        }
+        support2={
           <TileZ onPress={onPress} tile={support2} tileName="support2" />
-        )}
+        }
       />
     );
   }

@@ -2,48 +2,44 @@ import React, { Fragment } from "react";
 import { View } from "react-native";
 import { editionBreakpoints } from "@times-components/styleguide";
 import styleFactory from "./styles";
-import Column from "../column";
 import { ItemRowSeparator, ItemColSeparator } from "../shared";
+import HorizontalLayout from "../horizontallayout";
 import propTypes from "./proptypes";
+import VerticalLayout from "../verticallayout";
 
 const ListTwoAndSixNoPic = ({
   breakpoint,
-  renderLead1,
-  renderLead2,
-  renderSupport1,
-  renderSupport2,
-  renderSupport3,
-  renderSupport4,
-  renderSupport5,
-  renderSupport6
+  lead1,
+  lead2,
+  support1,
+  support2,
+  support3,
+  support4,
+  support5,
+  support6
 }) => {
   const styles = styleFactory(breakpoint);
   const supportItems = [
-    renderSupport1,
-    renderSupport2,
-    renderSupport3,
-    renderSupport4,
-    renderSupport5,
-    renderSupport6
+    support1,
+    support2,
+    support3,
+    support4,
+    support5,
+    support6
   ];
-
-  const renderRowItem1 = renderLead1();
-  const renderRowItem2 = renderLead2();
 
   if (breakpoint === editionBreakpoints.small) {
     return (
       <Fragment>
-        <View style={styles.leadContainer}>
-          <View key={renderRowItem1.props.id} style={styles.leadItem}>
-            {renderRowItem1}
-          </View>
-          <ItemColSeparator />
-          <View key={renderRowItem2.props.id} style={styles.leadItem}>
-            {renderRowItem2}
-          </View>
-        </View>
+        <HorizontalLayout
+          containerStyle={styles.leadContainer}
+          tiles={[
+            { style: styles.leadItem, tile: lead1 },
+            { style: styles.leadItem, tile: lead1 }
+          ]}
+        />
         <ItemRowSeparator />
-        <Column tiles={supportItems} />
+        <VerticalLayout tiles={supportItems} />
       </Fragment>
     );
   }
@@ -52,31 +48,13 @@ const ListTwoAndSixNoPic = ({
   const supportItemsTwo = supportItems.slice(3);
   return (
     <View style={styles.container}>
-      <View key={renderRowItem1.props.id} style={styles.rowItemContainer}>
-        {renderRowItem1}
-      </View>
+      <View style={styles.rowItemContainer}>{lead1}</View>
       <ItemColSeparator />
-      <View key={renderRowItem2.props.id} style={styles.rowItemContainer}>
-        {renderRowItem2}
-      </View>
+      <View style={styles.rowItemContainer}>{lead2}</View>
       <ItemColSeparator />
-      <View style={styles.rowItemContainer}>
-        {supportItemsOne.map((item, index) => (
-          <View key={item().props.id}>
-            {item()}
-            {supportItemsOne.length - 1 > index ? <ItemRowSeparator /> : null}
-          </View>
-        ))}
-      </View>
+      <VerticalLayout style={styles.rowItemContainer} tiles={supportItemsOne} />
       <ItemColSeparator />
-      <View style={styles.rowItemContainer}>
-        {supportItemsTwo.map((item, index) => (
-          <View key={item().props.id}>
-            {item()}
-            {supportItemsTwo.length - 1 > index ? <ItemRowSeparator /> : null}
-          </View>
-        ))}
-      </View>
+      <VerticalLayout style={styles.rowItemContainer} tiles={supportItemsTwo} />
     </View>
   );
 };

@@ -11,8 +11,8 @@ export default renderComponent => {
       test() {
         const output = renderComponent(
           <LeadOneAndOneSlice
-            renderLead={() => createItem("lead")}
-            renderSupport={() => createItem("support")}
+            lead={createItem("lead")}
+            support={createItem("support")}
           />
         );
 
@@ -25,8 +25,8 @@ export default renderComponent => {
         const output = renderComponent(
           <LeadOneAndOneSlice
             breakpoint={editionBreakpoints.medium}
-            renderLead={() => createItem("lead")}
-            renderSupport={() => createItem("support")}
+            lead={createItem("lead")}
+            support={createItem("support")}
           />
         );
 
