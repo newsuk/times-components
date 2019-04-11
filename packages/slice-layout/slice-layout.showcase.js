@@ -370,7 +370,7 @@ export default {
         <ScrollView>
           <SecondaryOneAndColumnistSlice
             breakpoint={breakpointSelect(select)}
-            clumnist={<Support1 tileName="support1" />}
+            columnist={<Support1 tileName="support1" />}
             secondary={<Support2 tileName="support2" />}
           />
         </ScrollView>
