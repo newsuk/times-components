@@ -5,7 +5,7 @@ import { ResponsiveContext } from "@times-components/responsive";
 import ArticleComments from "@times-components/article-comments";
 import RelatedArticles from "@times-components/related-articles";
 import ArticleTopics from "./article-topics";
-import styles from "./styles/shared";
+import styles from "./styles";
 
 const ArticleExtrasContent = ({
   analyticsStream,

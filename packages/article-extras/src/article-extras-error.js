@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import Button from "@times-components/button";
 import Context from "@times-components/context";
 import styleguide from "@times-components/styleguide";
-import styles from "./styles/shared";
+import styles from "./styles";
 
 const ArticleExtrasError = ({ refetch }) => (
   <View style={styles.extrasErrorContainer}>
