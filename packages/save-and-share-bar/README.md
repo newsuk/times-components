@@ -1,11 +1,25 @@
-# SaveAndShareBar
+# Save and Share bar
 
-<!-- Add the description of the package here. -->
+Save and Share bar component
 
 ## Contributing
 
 Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before contributing to this
 package
+
+## How to use
+
+```js
+import SaveAndShareBar from "@times-components/save-and-share-bar";
+
+<SaveAndShareBar     
+    articleUrl={articleId}
+    onCopyLink={this.copyLinkToClipboard}
+    onSaveToMyArticles={this.saveToMyArticles}
+    onShareOnEmail={this.shareOnEmail} 
+/>;
+
+```
 
 ## Running the code
 
@@ -25,8 +39,6 @@ yarn lint
 Testing can be done on each platform individually
 
 ```
-yarn test:android
-yarn test:ios
 yarn test:web
 ```
 
@@ -36,10 +48,13 @@ Or the tests for all platforms can be run
 yarn test:all
 ```
 
-Visit the official
 
-<!-- Add the storybook link here. -->
+Visit the official
+[storybook](http://components.thetimes.co.uk)
+to see our available link templates.
+
 
 ## Future
 
-<!-- Add details of future development here. -->
+The bar should be extended with custom onPress logic and user info state
+
