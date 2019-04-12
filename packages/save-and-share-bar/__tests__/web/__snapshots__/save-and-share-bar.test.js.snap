@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. saveandsharebar renders correctly 1`] = `
+exports[`1. save and share bar renders correctly 1`] = `
 <div
   style={
     Object {
@@ -50,8 +50,7 @@ exports[`1. saveandsharebar renders correctly 1`] = `
         Object {
           "color": "rgba(105,105,105,1.00)",
           "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": "13px",
-          "lineHeight": "15px",
+          "lineHeight": "14px",
         }
       }
     >
@@ -66,7 +65,7 @@ exports[`1. saveandsharebar renders correctly 1`] = `
     >
       <IconEmail
         fillColour="#696969"
-        height={20}
+        height={15}
         title="Share by email client"
       />
     </Link>
@@ -81,7 +80,7 @@ exports[`1. saveandsharebar renders correctly 1`] = `
     >
       <IconTwitter
         fillColour="#696969"
-        height={20}
+        height={15}
         title="Share on tweeter"
       />
     </Link>
@@ -96,8 +95,21 @@ exports[`1. saveandsharebar renders correctly 1`] = `
     >
       <IconFacebook
         fillColour="#696969"
-        height={23}
+        height={18}
         title="Share on facebook"
+      />
+    </Link>
+    <Link
+      responsiveLinkStyles={
+        Object {
+          "base": "margin-left: 25px;",
+        }
+      }
+    >
+      <IconCopyLink
+        fillColour="#696969"
+        height={15}
+        title="Copy link o clipboard"
       />
     </Link>
   </div>
@@ -125,13 +137,25 @@ exports[`1. saveandsharebar renders correctly 1`] = `
         Object {
           "color": "rgba(105,105,105,1.00)",
           "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": "13px",
-          "lineHeight": "15px",
+          "lineHeight": "14px",
         }
       }
     >
       Save
     </div>
+    <Link
+      responsiveLinkStyles={
+        Object {
+          "base": "margin-left: 25px;",
+        }
+      }
+    >
+      <IconSaveBookmark
+        fillColour="#FFFFFF"
+        strokeColour="#696969"
+        title="Save to My Articles"
+      />
+    </Link>
   </div>
 </div>
 `;

@@ -4,7 +4,14 @@ import SaveAndShareBar from "./src/save-and-share-bar";
 export default {
   children: [
     {
-      component: () => <SaveAndShareBar articleUrl="" onPress={() => {}} />,
+      component: () => (
+        <SaveAndShareBar
+          articleUrl=""
+          onCopyLink={() => {}}
+          onSaveToMyArticles={() => {}}
+          onShareOnEmail={() => {}}
+        />
+      ),
       name: "Save snd Share bar",
       type: "story"
     }

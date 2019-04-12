@@ -9,7 +9,7 @@ const styles = {
   label: {
     ...fontFactory({
       font: "supporting",
-      fontSize: "cardMeta"
+      fontSize: "meta"
     }),
     color: colours.functional.secondary
   },
@@ -23,10 +23,14 @@ const styles = {
   },
   svgIcon: {
     fb: {
-      height: 23
+      height: 18
     },
     fillColour: colours.functional.secondary,
-    height: 20
+    height: 15,
+    save: {
+      fillColour: colours.functional.white,
+      strokeColour: colours.functional.secondary
+    }
   }
 };
 
