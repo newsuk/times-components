@@ -24,7 +24,7 @@ class DailyRegisterLeadFour extends Component {
       <View style={styles.container}>
         <Logo
           imageUri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
-          ratio={1435 / 250}
+          ratio={1}
           style={styles.mastheadLogo}
           type="logo"
         />
@@ -62,23 +62,29 @@ class DailyRegisterLeadFour extends Component {
       <View style={styles.container}>
         <Logo
           imageUri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
-          ratio={1435 / 250}
+          ratio={1}
           style={styles.mastheadLogo}
           type="logo"
         />
         <Text style={styles.title}>Daily Universal Register</Text>
-        <ItemRowSeparator style={styles.separator} />
-        <View style={styles.rowItems}>
-          <View style={styles.item}>
-            <TileS tile={briefing} />
-          </View>
-          <View style={styles.item}>
-            <TileS tile={onThisDay} />
-          </View>
-        </View>
-        <ItemRowSeparator style={styles.separator} />
+
         <View style={styles.rowItems}>
           <View style={styles.columnItems}>
+            <ItemRowSeparator style={styles.separator} />
+            <View style={styles.item}>
+              <TileS tile={briefing} />
+            </View>
+          </View>
+          <View style={styles.columnItems}>
+            <ItemRowSeparator style={styles.separator} />
+            <View style={styles.item}>
+              <TileS tile={onThisDay} />
+            </View>
+          </View>
+        </View>
+        <View style={styles.rowItems}>
+          <View style={styles.columnItems}>
+            <ItemRowSeparator style={styles.separator} />
             <Logo
               imageUri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
               ratio={1 / 1}
@@ -90,6 +96,7 @@ class DailyRegisterLeadFour extends Component {
             </View>
           </View>
           <View style={styles.columnItems}>
+            <ItemRowSeparator style={styles.separator} />
             <Logo
               imageUri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
               ratio={1 / 1}

@@ -23,7 +23,7 @@ const main = {
   },
   separator: {
     borderBottomColor: colours.functional.keyline,
-    marginBottom: spacing(5),
+    marginVertical: spacing(5),
     width: "100%"
   },
   title: {
@@ -49,6 +49,10 @@ const mediumBreakpointStyles = {
     backgroundColor: colours.functional.border,
     flex: 1,
     paddingHorizontal: "20%"
+  },
+  mastheadLogo: {
+    height: 97,
+    width: 380
   }
 };
 
@@ -64,15 +68,21 @@ const wideBreakpointStyle = {
 const hugeBreakpointStyle = {
   columnItems: {
     alignItems: "center",
-    flexDirection: "column"
+    flex: 1,
+    flexDirection: "column",
+    paddingHorizontal: spacing(5)
   },
-  item: {
-    paddingHorizontal: "5%"
+  container: {
+    alignItems: "center",
+    alignSelf: "center",
+    backgroundColor: colours.functional.border,
+    flex: 1,
+    width: "86%"
   },
   rowItems: {
-    alignItems: "center",
     flexDirection: "row",
-    paddingHorizontal: "30%"
+    paddingHorizontal: "8%",
+    width: "100%"
   }
 };
 
