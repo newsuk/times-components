@@ -1179,23 +1179,33 @@ exports[`5. standard 1`] = `
     <div
       className="S1"
     >
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
       <div
         className="IS1 S1"
       />
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
       <div
         className="IS2 S1"
       />
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
       <div
         className="IS3 S1"
       />
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
       <div
         className="IS4 S1"
       />
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
     </div>
   </div>
 </div>

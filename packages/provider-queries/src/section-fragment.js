@@ -39,6 +39,23 @@ export default gql`
     name: __typename
     slices {
       name: __typename
+      ... on StandardSlice {
+        items {
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset32
+            }
+            listingAsset {
+              ...listingAsset32
+            }
+          }
+          headline
+          leadAsset {
+            ...leadAsset32
+          }
+        }
+      }
       ... on CommentLeadAndCartoonSlice {
         lead {
           headline
@@ -640,8 +657,31 @@ export default gql`
 
   fragment magazineSection on MagazineSection {
     name: __typename
+    cover {
+      crops {
+        ratio
+        url
+      }
+    }
     slices {
       name: __typename
+      ... on StandardSlice {
+        items {
+          article {
+            ...baseArticleProps
+            leadAsset {
+              ...leadAsset32
+            }
+            listingAsset {
+              ...listingAsset32
+            }
+          }
+          headline
+          leadAsset {
+            ...leadAsset32
+          }
+        }
+      }
       ... on CommentLeadAndCartoonSlice {
         lead {
           headline

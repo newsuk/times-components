@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.53.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.52.2...@times-components/edition-slices@0.53.0) (2019-04-12)
+
+
+### Features
+
+* Add magazine section ([#1852](https://github.com/newsuk/times-components/issues/1852)) ([edd1903](https://github.com/newsuk/times-components/commit/edd1903))
+
+
+
+
+
 ## [0.52.2](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.52.1...@times-components/edition-slices@0.52.2) (2019-04-12)
 
 **Note:** Version bump only for package @times-components/edition-slices

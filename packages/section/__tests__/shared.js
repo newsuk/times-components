@@ -90,4 +90,38 @@ export default () => {
       ).toJSON()
     ).toMatchSnapshot();
   });
+
+  it("Times magazine section", () => {
+    const edition = new MockEdition().get();
+
+    expect(
+      TestRenderer.create(
+        <Section
+          analyticsStream={() => {}}
+          onArticlePress={() => {}}
+          onPuzzleBarPress={() => {}}
+          onPuzzlePress={() => {}}
+          publicationName="TIMES"
+          section={edition.sections[4]}
+        />
+      ).toJSON()
+    ).toMatchSnapshot();
+  });
+
+  it("Sunday Times magazine section", () => {
+    const edition = new MockEdition().get();
+
+    expect(
+      TestRenderer.create(
+        <Section
+          analyticsStream={() => {}}
+          onArticlePress={() => {}}
+          onPuzzleBarPress={() => {}}
+          onPuzzlePress={() => {}}
+          publicationName="SUNDAY TIMES"
+          section={edition.sections[4]}
+        />
+      ).toJSON()
+    ).toMatchSnapshot();
+  });
 };
