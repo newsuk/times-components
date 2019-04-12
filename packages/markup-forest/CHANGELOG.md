@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.7.1](https://github.com/newsuk/times-components/compare/@times-components/markup-forest@1.7.0...@times-components/markup-forest@1.7.1) (2019-04-12)
+
+
+### Bug Fixes
+
+* images on safari ([#1877](https://github.com/newsuk/times-components/issues/1877)) ([ebd9a7c](https://github.com/newsuk/times-components/commit/ebd9a7c))
+
+
+
+
+
 # [1.7.0](https://github.com/newsuk/times-components/compare/@times-components/markup-forest@1.6.11...@times-components/markup-forest@1.7.0) (2019-04-12)
 
 

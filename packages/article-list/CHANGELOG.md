@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.30](https://github.com/newsuk/times-components/compare/@times-components/article-list@7.0.29...@times-components/article-list@7.0.30) (2019-04-12)
+
+
+### Bug Fixes
+
+* images on safari ([#1877](https://github.com/newsuk/times-components/issues/1877)) ([ebd9a7c](https://github.com/newsuk/times-components/commit/ebd9a7c))
+
+
+
+
+
 ## [7.0.29](https://github.com/newsuk/times-components/compare/@times-components/article-list@7.0.28...@times-components/article-list@7.0.29) (2019-04-12)
 
 **Note:** Version bump only for package @times-components/article-list

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.3.13](https://github.com/newsuk/times-components/compare/@times-components/image@5.3.12...@times-components/image@5.3.13) (2019-04-12)
+
+
+### Bug Fixes
+
+* images on safari ([#1877](https://github.com/newsuk/times-components/issues/1877)) ([ebd9a7c](https://github.com/newsuk/times-components/commit/ebd9a7c))
+
+
+
+
+
 ## [5.3.12](https://github.com/newsuk/times-components/compare/@times-components/image@5.3.11...@times-components/image@5.3.12) (2019-04-12)
 
 **Note:** Version bump only for package @times-components/image

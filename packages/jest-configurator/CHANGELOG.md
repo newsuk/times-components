@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.5.1](https://github.com/newsuk/times-components/compare/@times-components/jest-configurator@2.5.0...@times-components/jest-configurator@2.5.1) (2019-04-12)
+
+
+### Bug Fixes
+
+* images on safari ([#1877](https://github.com/newsuk/times-components/issues/1877)) ([ebd9a7c](https://github.com/newsuk/times-components/commit/ebd9a7c))
+
+
+
+
+
 # [2.5.0](https://github.com/newsuk/times-components/compare/@times-components/jest-configurator@2.4.6...@times-components/jest-configurator@2.5.0) (2019-04-12)
 
 
