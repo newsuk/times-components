@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Dimensions } from "react-native";
+import { View } from "react-native";
 import ArticleImage from "@times-components/article-image";
 import ArticleParagraph from "@times-components/article-paragraph";
 import Ad from "@times-components/ad";
@@ -10,20 +10,18 @@ import { renderTree } from "@times-components/markup-forest";
 import { flow } from "@times-components/markup";
 import PullQuote from "@times-components/pull-quote";
 import { ResponsiveContext } from "@times-components/responsive";
-import { colours } from "@times-components/styleguide";
+import { colours, tabletWidth } from "@times-components/styleguide";
 import { screenWidth } from "@times-components/utils";
 import Video from "@times-components/video";
-import { Markup, Layout, Text } from "@times-components/text-flow"
+import { Markup, Layout, Text } from "@times-components/text-flow";
 import DropCap from "@times-components/article-paragraph/src/drop-cap";
-import { tabletWidth } from "@times-components/styleguide";
 import ArticleLink from "./article-link";
 import InsetCaption from "./inset-caption";
 import styleFactory from "../styles/article-body";
 
-
 const styles = styleFactory();
 
-export const ArticleRowFlow = ({
+export default ({
   content: data,
   interactiveConfig,
   onLinkPress,
@@ -34,35 +32,6 @@ export const ArticleRowFlow = ({
 }) =>
   renderTree(data, {
     ...flow,
-    dropCap(key, { value }, children, indx, node) {
-      const text = new Text.Text({
-        font: 'TimesModern-Regular',
-        size: 90 * fontScale,
-        lineHeight: 90 * fontScale,
-        markup: [new Markup.MarkupString(value)]
-      });
-      const width = text.characters[0].getWidth() + 10
-      const height = 90
-      return {
-        element: new Layout.InlineBlock({
-          getComponent() {
-            return (<Context.Consumer key={key}>
-              {({
-                theme: { dropCapFont, sectionColour = colours.section.default, scale }
-              }) => (
-                  <DropCap
-                    colour={sectionColour}
-                    dropCap={value}
-                    font={dropCapFont}
-                    scale={scale} />
-                )}
-            </Context.Consumer>)
-          },
-          width,
-          height
-        })
-      }
-    },
     ad(key, attributes) {
       return {
         element: new Layout.Block({
@@ -74,13 +43,49 @@ export const ArticleRowFlow = ({
                 style={styles.ad}
                 {...attributes}
               />
-            )
+            );
           }
         })
-      }
+      };
     },
-    image(key, { display, ratio, url, caption, credits }, children, indx, node) {
-      if (display !== 'inline') {
+    dropCap(key, { value }) {
+      const text = new Text.Text({
+        font: "TimesModern-Regular",
+        lineHeight: 90 * fontScale,
+        markup: [new Markup.MarkupString(value)],
+        size: 90 * fontScale
+      });
+      const capWidth = text.characters[0].getWidth() + 10;
+      const height = 90;
+      return {
+        element: new Layout.InlineBlock({
+          getComponent() {
+            return (
+              <Context.Consumer key={key}>
+                {({
+                  theme: {
+                    dropCapFont,
+                    sectionColour = colours.section.default,
+                    scale
+                  }
+                }) => (
+                  <DropCap
+                    colour={sectionColour}
+                    dropCap={value}
+                    font={dropCapFont}
+                    scale={scale}
+                  />
+                )}
+              </Context.Consumer>
+            );
+          },
+          height,
+          width: capWidth
+        })
+      };
+    },
+    image(key, { display, ratio, url, caption, credits }) {
+      if (display !== "inline") {
         return {
           element: new Layout.Block({
             getComponent() {
@@ -98,42 +103,45 @@ export const ArticleRowFlow = ({
                     }}
                   />
                 </View>
-              )
+              );
             }
           })
-        }
-      } 
-        const [ratioWidth, ratioHeight] = ratio.split(":");
-        const aspectRatio = ratioHeight / ratioWidth;
-        return {
-          element: new Layout.InlineBlock({
-            width: width * 0.35,
-            height: (width * 0.35) * aspectRatio,
-            layoutDone: false,
-            prevHeight: 0,
-            getComponent() {
-              return (
-                <View key={key} onLayout={e => {
-                  this.height = e.nativeEvent.layout.height
-                  this.layoutDone = true
-                }}>
-                  <ArticleImage
-                    captionOptions={{
-                      caption,
-                      credits
-                    }}
-                    imageOptions={{
-                      display,
-                      ratio,
-                      uri: url
-                    }}
-                  />
-                </View>
-              )
-            }
-          })
-        }
-      
+        };
+      }
+      const [ratioWidth, ratioHeight] = ratio.split(":");
+      const aspectRatio = ratioHeight / ratioWidth;
+      const inline = new Layout.InlineBlock({
+        getComponent() {
+          return (
+            <View
+              key={key}
+              onLayout={e => {
+                inline.height = e.nativeEvent.layout.height;
+                inline.layoutDone = true;
+              }}
+            >
+              <ArticleImage
+                captionOptions={{
+                  caption,
+                  credits
+                }}
+                imageOptions={{
+                  display,
+                  ratio,
+                  uri: url
+                }}
+              />
+            </View>
+          );
+        },
+        height: width * 0.35 * aspectRatio,
+        layoutDone: false,
+        prevHeight: 0,
+        width: width * 0.35
+      });
+      return {
+        element: inline
+      };
     },
     interactive(key, { id }) {
       return {
@@ -153,10 +161,10 @@ export const ArticleRowFlow = ({
                   </View>
                 )}
               </ResponsiveContext.Consumer>
-            )
+            );
           }
         })
-      }
+      };
     },
     keyFacts(key, attributes, renderedChildren, indx, node) {
       return {
@@ -170,55 +178,62 @@ export const ArticleRowFlow = ({
                   </View>
                 )}
               </ResponsiveContext.Consumer>
-            )
+            );
           }
         })
-      }
+      };
     },
     link(key, attributes, children) {
       const { canonicalId, href: url, type } = attributes;
-
-      return {
-        element: new Markup.Link({
-          children,
-          href() {
-            return (<ArticleLink
+      const link = new Markup.Link({
+        children,
+        href(span) {
+          return (
+            <ArticleLink
               key={key}
               linkType={attributes.type}
               onPress={e => onLinkPress(e, { canonicalId, type, url })}
               url={url}
             >
-              {this.text}
-            </ArticleLink>)
-          }
-        })
-      }
+              {span.text}
+            </ArticleLink>
+          );
+        }
+      });
+      return {
+        element: link
+      };
     },
     paragraph(key, attributes, children, indx, node) {
       return {
         element: new Text.Text({
-          getComponent(children) {
-            return (<Context.Consumer key={key}>
-              {({
-                theme: { dropCapFont, sectionColour = colours.section.default }
-              }) => (
+          font: "TimesDigitalW04-Regular",
+          getComponent(spans) {
+            return (
+              <Context.Consumer key={key}>
+                {({
+                  theme: {
+                    dropCapFont,
+                    sectionColour = colours.section.default
+                  }
+                }) => (
                   <ArticleParagraph
                     ast={node}
                     dropCapColour={sectionColour}
                     dropCapFont={dropCapFont}
                   >
-                    {children}
+                    {spans}
                   </ArticleParagraph>
                 )}
-            </Context.Consumer>)
+              </Context.Consumer>
+            );
           },
-          markup: children,
-          font: 'TimesDigitalW04-Regular',
-          size: 18 * fontScale,
           lineHeight: 30 * fontScale,
+          markup: children,
+          size: 18 * fontScale,
           width: Math.min(screenWidth(), tabletWidth) - 10
         })
-      }
+      };
     },
     pullQuote(
       key,
@@ -232,23 +247,24 @@ export const ArticleRowFlow = ({
       const content = node.children[0].attributes.value;
       // TODO: measureText function?
       const quote = new Text.Text({
-        font: 'TimesModern-Regular',
+        font: "TimesModern-Regular",
+        lineHeight: 25 * 1.3 * fontScale,
+        markup: [new Markup.MarkupString(content)],
         size: 25 * fontScale,
-        lineHeight: (25 * 1.3) * fontScale,
-        width: width * 0.35,
-        markup: [new Markup.MarkupString(content)]
+        width: width * 0.35
       });
-      const height = quote.measuredHeight
+      const height = quote.measuredHeight;
       return {
-        shouldRenderChildren: false,
         element: new Layout.InlineBlock({
-          width: width * 0.35,
-          height: height + ((25 * 1.3) * fontScale),
           getComponent() {
-            return (<Context.Consumer key={key}>
-              {({
-                theme: { pullQuoteFont, sectionColour = colours.section.default }
-              }) => (
+            return (
+              <Context.Consumer key={key}>
+                {({
+                  theme: {
+                    pullQuoteFont,
+                    sectionColour = colours.section.default
+                  }
+                }) => (
                   <ResponsiveContext.Consumer>
                     {({ isTablet }) => (
                       <View style={isTablet && styles.containerTablet}>
@@ -266,10 +282,14 @@ export const ArticleRowFlow = ({
                     )}
                   </ResponsiveContext.Consumer>
                 )}
-            </Context.Consumer>)
-          }
-        })
-      }
+              </Context.Consumer>
+            );
+          },
+          height: height + 25 * 1.3 * fontScale,
+          width: width * 0.35
+        }),
+        shouldRenderChildren: false
+      };
     },
     video(
       key,
@@ -289,7 +309,7 @@ export const ArticleRowFlow = ({
               <ResponsiveContext.Consumer>
                 {({ isTablet }) => {
                   const aspectRatio = 16 / 9;
-                  const width = screenWidth(isTablet);
+                  const screenW = screenWidth(isTablet);
                   const height = width / aspectRatio;
                   return (
                     <View
@@ -307,16 +327,16 @@ export const ArticleRowFlow = ({
                         poster={{ uri: posterImageUrl }}
                         skySports={skySports}
                         videoId={brightcoveVideoId}
-                        width={width}
+                        width={screenW}
                       />
                       <InsetCaption caption={caption} />
                     </View>
                   );
                 }}
               </ResponsiveContext.Consumer>
-            )
+            );
           }
         })
-      }
+      };
     }
   });

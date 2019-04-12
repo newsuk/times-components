@@ -67,7 +67,7 @@ export default class Character extends Positioned {
     this.characterCode = this.character.charCodeAt(0);
 
     this.fontInstance = FontLoader.getFont(this.font);
-
+    
     if (this.fontInstance.glyphs[this.characterCode]) {
       this.glyph = this.fontInstance.glyphs[this.characterCode];
 

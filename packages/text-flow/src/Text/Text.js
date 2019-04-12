@@ -10,6 +10,7 @@ import Linebreak, { infinity } from "./Linebreak";
 import Penalty from "./Penalty";
 import Glue from "./Glue";
 import Box from "./Box";
+import fonts from "./fonts"
 
 export default class Text extends Container {
   markup = [];
@@ -76,23 +77,10 @@ export default class Text extends Container {
     if (props.width) {
       this.lineWidths = [props.width];
     }
-    const fonts = [this.font].concat(Text.gatherFonts(this.markup));
-    FontLoader.load(this, fonts);
+    Object.keys(fonts).forEach(name => FontLoader.loadFont(name))
     this.layout();
   }
 
-  static gatherFonts(markup) {
-    const fonts = [];
-    markup.forEach(child => {
-      if (child.style && child.style.font) {
-        fonts.push(child.style.font);
-      }
-      if (child.children) {
-        Text.gatherFonts(child.children);
-      }
-    });
-    return fonts;
-  }
 
   layout() {
     this.words = [];

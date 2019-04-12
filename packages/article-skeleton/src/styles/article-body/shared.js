@@ -19,8 +19,8 @@ const sharedStyles = scale => {
         fontSize: "bodyMobile"
       }),
       lineHeight: lineHeight({
-        font: 'body',
-        fontSize: 'bodyMobile'
+        font: "body",
+        fontSize: "bodyMobile"
       }),
       marginBottom: spacing(5),
       marginTop: 0

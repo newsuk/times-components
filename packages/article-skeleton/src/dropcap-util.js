@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 const templateWithDropCaps = [
   "indepth",
   "maincomment",
@@ -41,10 +42,13 @@ const insertDropcapIntoAST = (children, template, isDropcapDisabled) => {
     children.length >= 1 &&
     children[0].name === "paragraph"
   ) {
-    const firstTextChild = children[0].children[0]
-    const [dropcap, ...rest] = insertDropcap(firstTextChild, children[0].children)
-    children[0].children = rest
-    return [ dropcap, ...children ]
+    const firstTextChild = children[0].children[0];
+    const [dropcap, ...rest] = insertDropcap(
+      firstTextChild,
+      children[0].children
+    );
+    children[0].children = rest;
+    return [dropcap, ...children];
   }
   return children;
 };

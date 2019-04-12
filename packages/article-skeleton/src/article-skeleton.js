@@ -1,7 +1,6 @@
-/* eslint-disable consistent-return */
-
+/* eslint-disable consistent-return,no-param-reassign */
 import React, { Component } from "react";
-import { View, FlatList, Text } from "react-native";
+import { View, FlatList, Text, Dimensions } from "react-native";
 import PropTypes from "prop-types";
 import { AdComposer } from "@times-components/ad";
 import Responsive from "@times-components/responsive";
@@ -10,8 +9,7 @@ import { screenWidth } from "@times-components/utils";
 import ArticleExtras from "@times-components/article-extras";
 import { Layout, Text as FText } from "@times-components/text-flow";
 import { tabletWidth, tabletWidthMax } from "@times-components/styleguide";
-import { Dimensions } from "react-native";
-import { ArticleRowFlow } from "./article-body/article-body-row";
+import ArticleRowFlow from "./article-body/article-body-row";
 import ArticleTopics from "./article-topics";
 import {
   articleSkeletonPropTypes,
@@ -33,11 +31,11 @@ const viewabilityConfig = {
 };
 
 const convertStyles = ({ font, size }) => ({
-    fontFamily: font,
-    fontWeight: font.includes('Bold') ? 'bold' : null,
-    fontStyle: font.includes('Italic') ? 'italic' : null,
-    fontSize: size
-  })
+  fontFamily: font,
+  fontSize: size,
+  fontStyle: font.includes("Italic") ? "italic" : null,
+  fontWeight: font.includes("Bold") ? "bold" : null
+});
 
 const renderRow = (
   rowData,
@@ -45,12 +43,12 @@ const renderRow = (
   onCommentGuidelinesPress,
   onRelatedArticlePress,
   onTopicPress,
-  analyticsStream,
+  analyticsStream
 ) => {
   // eslint-disable-next-line default-case
   switch (rowData.type) {
     case "articleBodyRow": {
-      return rowData.data
+      return rowData.data;
     }
 
     case "articleExtrasRow": {
@@ -69,6 +67,71 @@ const renderRow = (
   }
 };
 
+const renderText = (block, inlined = false) => {
+  const { lineHeight } = block;
+  if (!inlined) {
+    return block.getComponent(style => (
+      <View>
+        <Text selectable style={style}>
+          {block.idealSpans.map(span => {
+            if (span.href) {
+              return span.href(span);
+            }
+            return (
+              <Text
+                selectable
+                style={{
+                  ...convertStyles(span.style),
+                  lineHeight
+                }}
+              >
+                {span.text}
+              </Text>
+            );
+          })}
+        </Text>
+      </View>
+    ));
+  }
+  return block.getComponent(style => (
+    <View style={{ height: block.measuredHeight }}>
+      {block.block.children.map(line =>
+        line.idealSpans.map(span => {
+          if (span.href) {
+            return (
+              <Text
+                selectable
+                style={{
+                  left: span.x,
+                  position: "absolute",
+                  top: span.y
+                }}
+              >
+                {span.href(span)}
+              </Text>
+            );
+          }
+          return (
+            <Text
+              selectable
+              style={{
+                left: span.x,
+                ...style,
+                ...convertStyles(span.style),
+                lineHeight,
+                position: "absolute",
+                top: span.y
+              }}
+            >
+              {span.text}
+            </Text>
+          );
+        })
+      )}
+    </View>
+  ));
+};
+
 class ArticleSkeleton extends Component {
   constructor(props) {
     super(props);
@@ -76,9 +139,9 @@ class ArticleSkeleton extends Component {
 
     if (props.data) {
       this.state = {
+        content: null,
         dataSource: props.data,
-        width: screenWidth(),
-        content: null
+        width: screenWidth()
       };
     } else {
       this.state = {
@@ -88,7 +151,7 @@ class ArticleSkeleton extends Component {
   }
 
   componentWillMount() {
-    this.layout()
+    this.layout();
   }
 
   onViewableItemsChanged(info) {
@@ -106,19 +169,19 @@ class ArticleSkeleton extends Component {
     return textFlow.block.children.map(block => {
       let data;
       if (block instanceof Layout.Block) {
-        data = this.renderBlock(block)
+        data = block.getComponent();
       }
       if (block instanceof Layout.InlineBlock) {
-        data = this.renderInlineBlock(block)
+        data = this.renderInlineBlock(block);
       }
       if (block instanceof FText.Text) {
-        data = this.renderText(block)
+        data = renderText(block);
       }
       return {
-        type: 'articleBodyRow',
-        data
-      }
-    })
+        data,
+        type: "articleBodyRow"
+      };
+    });
   }
 
   layout() {
@@ -130,19 +193,15 @@ class ArticleSkeleton extends Component {
       onVideoPress,
       receiveChildList
     } = this.props;
-    const { dataSource, width } = this.state;
+    const { dataSource, width, flow } = this.state;
     const { dropcapsDisabled, template } = dataSource;
     if (!dataSource.content) {
       return null;
     }
 
-    let newContent = [...dataSource.content]
+    let newContent = [...dataSource.content];
     if (newContent && newContent.length > 0) {
-      newContent = insertDropcapIntoAST(
-        newContent,
-        template,
-        dropcapsDisabled
-      );
+      newContent = insertDropcapIntoAST(newContent, template, dropcapsDisabled);
     }
 
     const articleOrganised = listViewDataHelper({
@@ -159,46 +218,39 @@ class ArticleSkeleton extends Component {
       .filter(row => row.type === "articleBodyRow")
       .map(({ data }) => data);
 
-    const others = articleData
-      .filter(row => row.type !== 'articleBodyRow')
+    const others = articleData.filter(row => row.type !== "articleBodyRow");
 
-    if (this.state.flow) {
-      this.state.flow.layout()
+    if (flow) {
+      flow.layout();
       this.setState({
-        content: [
-          ...this.rebuildRows(this.state.flow),
-          ...others
-        ]
-      })
-      return
+        content: [...this.rebuildRows(flow), ...others]
+      });
+      return;
     }
 
-    const { fontScale } = Dimensions.get('window');
+    const { fontScale } = Dimensions.get("window");
 
     const textFlow = new Layout.TextFlow({
-      width: Math.min(tabletWidth, screenWidth()) - 10,
-      flow: rows.map(rowData => (
-          ArticleRowFlow({
-            content: rowData,
-            interactiveConfig,
-            onLinkPress,
-            onTwitterLinkPress,
-            onVideoPress,
-            width: Math.min(maxWidth, width),
-            fontScale
-          })
-        ))
-    })
+      flow: rows.map(rowData =>
+        ArticleRowFlow({
+          content: rowData,
+          fontScale,
+          interactiveConfig,
+          onLinkPress,
+          onTwitterLinkPress,
+          onVideoPress,
+          width: Math.min(maxWidth, width)
+        })
+      ),
+      width: Math.min(tabletWidth, screenWidth()) - 10
+    });
 
     receiveChildList(articleData);
 
     this.setState({
-      flow: textFlow,
-      content: [
-        ...this.rebuildRows(textFlow),
-        ...others
-      ]
-    })
+      content: [...this.rebuildRows(textFlow), ...others],
+      flow: textFlow
+    });
   }
 
   renderInlineBlock(block) {
@@ -219,87 +271,24 @@ class ArticleSkeleton extends Component {
           const gutterWidth = Math.min(screenWidth(), tabletWidthMax);
           const textContainerWidth = Math.min(screenWidth(), tabletWidth);
           const style = {
+            height: block.height,
+            left: (gutterWidth - textContainerWidth) / 2 + textLeftPadding,
             position: "absolute",
             top: 0,
-            left: ((gutterWidth - textContainerWidth) / 2) + textLeftPadding,
             width: Math.min(maxWidth, width) * 0.35,
-            height: block.height,
             zIndex: 1
           };
           return (
             <View>
-              <View
-                onLayout={onLayout}
-                style={style}
-              >
+              <View onLayout={onLayout} style={style}>
                 {block.getComponent()}
               </View>
-              {block.children.map(subBlock => this.renderText(subBlock, true))}
+              {block.children.map(subBlock => renderText(subBlock, true))}
             </View>
           );
         }}
       </ResponsiveContext.Consumer>
     );
-  }
-
-  renderBlock(block) {
-    return block.getComponent()
-  }
-
-  renderText(block, inlined = false) {
-    const { lineHeight } = block;
-    if (!inlined) {
-      return block.getComponent(style => <View>
-        <Text selectable style={style}>{block.idealSpans.map((span) => {
-          if (span.href) {
-            return span.href()
-          }
-          return <Text
-            selectable
-            style={{
-              ...convertStyles(span.style),
-              lineHeight
-            }}
-          >
-            {span.text}
-          </Text>
-        })}</Text>
-      </View>)
-    }
-    return block.getComponent(style => <View style={{ height: block.measuredHeight }}>
-      {
-        block.block.children.map(line =>
-          line.idealSpans.map(span => {
-            if (span.href) {
-              return (<Text
-                selectable
-                style={{
-                  position: 'absolute',
-                  top: span.y,
-                  left: span.x
-                }}
-              >
-                {span.href()}
-              </Text>)
-            }
-            return (<Text
-              selectable
-              style={{
-                ...style,
-                ...convertStyles(span.style),
-                lineHeight,
-                position: 'absolute',
-                top: span.y,
-                left: span.x
-              }}
-            >
-              {span.text}
-            </Text>)
-          })
-        )
-      }
-    </View>
-    )
   }
 
   render() {
@@ -314,49 +303,50 @@ class ArticleSkeleton extends Component {
       onTopicPress,
       onViewed
     } = this.props;
-    const { width } = this.state;
-    if (!this.state.content) {
-      return null
+    const { width, content } = this.state;
+    if (!content) {
+      return null;
     }
 
-    return (<AdComposer adConfig={adConfig}>
-      <Responsive>
-        <View style={styles.articleContainer}>
-          <FlatList
-            data={this.state.content}
-            initialListSize={listViewSize}
-            interactiveConfig={interactiveConfig}
-            keyExtractor={item =>
-              item.index ? `${item.type}.${item.index}` : item.type
-            }
-            ListHeaderComponent={
-              <Gutter>
-                <Header width={Math.min(maxWidth, width)} />
-              </Gutter>
-            }
-            onViewableItemsChanged={
-              onViewed ? this.onViewableItemsChanged : null
-            }
-            pageSize={listViewPageSize}
-            renderItem={({ item }) => (
-              <Gutter>
-                {renderRow(
-                  item,
-                  onCommentsPress,
-                  onCommentGuidelinesPress,
-                  onRelatedArticlePress,
-                  onTopicPress,
-                  analyticsStream,
-                )}
-              </Gutter>
-            )}
-            scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
-            testID="flat-list-article"
-            viewabilityConfig={viewabilityConfig}
-          />
-        </View>
-      </Responsive>
-    </AdComposer>
+    return (
+      <AdComposer adConfig={adConfig}>
+        <Responsive>
+          <View style={styles.articleContainer}>
+            <FlatList
+              data={content}
+              initialListSize={listViewSize}
+              interactiveConfig={interactiveConfig}
+              keyExtractor={item =>
+                item.index ? `${item.type}.${item.index}` : item.type
+              }
+              ListHeaderComponent={
+                <Gutter>
+                  <Header width={Math.min(maxWidth, width)} />
+                </Gutter>
+              }
+              onViewableItemsChanged={
+                onViewed ? this.onViewableItemsChanged : null
+              }
+              pageSize={listViewPageSize}
+              renderItem={({ item }) => (
+                <Gutter>
+                  {renderRow(
+                    item,
+                    onCommentsPress,
+                    onCommentGuidelinesPress,
+                    onRelatedArticlePress,
+                    onTopicPress,
+                    analyticsStream
+                  )}
+                </Gutter>
+              )}
+              scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
+              testID="flat-list-article"
+              viewabilityConfig={viewabilityConfig}
+            />
+          </View>
+        </Responsive>
+      </AdComposer>
     );
   }
 }
