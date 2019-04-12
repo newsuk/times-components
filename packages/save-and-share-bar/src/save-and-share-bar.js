@@ -14,8 +14,8 @@ const SaveAndShareBar = ({ articleUrl, onShareOnEmail }) => (
       <Link onPress={onShareOnEmail} responsiveLinkStyles={styles.link}>
         <IconEmail
           fillColour={styles.svgIcon.fillColour}
+          height={styles.svgIcon.height}
           title="Share by email client"
-          width={styles.svgIcon.width}
         />
       </Link>
       <Link
@@ -25,8 +25,8 @@ const SaveAndShareBar = ({ articleUrl, onShareOnEmail }) => (
       >
         <IconTwitter
           fillColour={styles.svgIcon.fillColour}
+          height={styles.svgIcon.height}
           title="Share on tweeter"
-          width={styles.svgIcon.width}
         />
       </Link>
       <Link
@@ -36,9 +36,8 @@ const SaveAndShareBar = ({ articleUrl, onShareOnEmail }) => (
       >
         <IconFacebook
           fillColour={styles.svgIcon.fillColour}
-          heigth={styles.svgIcon.fb.heigth}
+          height={styles.svgIcon.fb.height}
           title="Share on facebook"
-          width={styles.svgIcon.fb.width}
         />
       </Link>
     </View>

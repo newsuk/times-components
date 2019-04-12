@@ -17,16 +17,16 @@ const styles = {
     base: `margin-left: ${spacing(5)};`
   },
   rowItem: {
+    alignItems: "center",
     flexDirection: "row",
     padding: spacing(4)
   },
   svgIcon: {
     fb: {
-      heigth: 20,
-      width: 11
+      height: 23
     },
     fillColour: colours.functional.secondary,
-    width: 22
+    height: 20
   }
 };
 

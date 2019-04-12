@@ -29,10 +29,14 @@ exports[`1. saveandsharebar renders correctly 1`] = `
   <div
     style={
       Object {
+        "WebkitAlignItems": "center",
+        "WebkitBoxAlign": "center",
         "WebkitBoxDirection": "normal",
         "WebkitBoxOrient": "horizontal",
         "WebkitFlexDirection": "row",
+        "alignItems": "center",
         "flexDirection": "row",
+        "msFlexAlign": "center",
         "msFlexDirection": "row",
         "paddingBottom": "20px",
         "paddingLeft": "20px",
@@ -62,8 +66,8 @@ exports[`1. saveandsharebar renders correctly 1`] = `
     >
       <IconEmail
         fillColour="#696969"
+        height={20}
         title="Share by email client"
-        width={22}
       />
     </Link>
     <Link
@@ -77,8 +81,8 @@ exports[`1. saveandsharebar renders correctly 1`] = `
     >
       <IconTwitter
         fillColour="#696969"
+        height={20}
         title="Share on tweeter"
-        width={22}
       />
     </Link>
     <Link
@@ -92,19 +96,22 @@ exports[`1. saveandsharebar renders correctly 1`] = `
     >
       <IconFacebook
         fillColour="#696969"
-        heigth={20}
+        height={23}
         title="Share on facebook"
-        width={11}
       />
     </Link>
   </div>
   <div
     style={
       Object {
+        "WebkitAlignItems": "center",
+        "WebkitBoxAlign": "center",
         "WebkitBoxDirection": "normal",
         "WebkitBoxOrient": "horizontal",
         "WebkitFlexDirection": "row",
+        "alignItems": "center",
         "flexDirection": "row",
+        "msFlexAlign": "center",
         "msFlexDirection": "row",
         "paddingBottom": "20px",
         "paddingLeft": "20px",

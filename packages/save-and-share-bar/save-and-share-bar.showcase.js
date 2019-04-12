@@ -9,5 +9,5 @@ export default {
       type: "story"
     }
   ],
-  name: "Save and Share bar"
+  name: "Composed/Save and Share bar"
 };
