@@ -1,3 +1,5 @@
-import shared from "../shared.native";
+import articleExtras from "../article-extras.native";
+import articleExtrasError from "../article-extras-error.native";
 
-shared();
+articleExtras();
+articleExtrasError();

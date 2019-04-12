@@ -6,7 +6,7 @@ import {
   print
 } from "@times-components/jest-serializer";
 import "./mocks";
-import shared from "./shared-base";
+import renderExtras from "./renderer";
 
 export default () => {
   addSerializers(
@@ -24,5 +24,13 @@ export default () => {
     )
   );
 
-  shared();
+  it("article extras error", async done => {
+    renderExtras({
+      error: () => ({ error: "Error" }),
+      onReady: testInstance => {
+        expect(testInstance).toMatchSnapshot();
+        done();
+      }
+    });
+  });
 };
