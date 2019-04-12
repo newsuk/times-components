@@ -52,7 +52,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@thetimes/jest-lint": "*",
+    "@thetimes/jest-lint": "1.4.0",
     "@times-components/eslint-config-thetimes": "0.8.9",
     "babel-cli": "6.26.0",
     "babel-core": "6.26.0",
