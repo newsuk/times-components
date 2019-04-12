@@ -8,7 +8,7 @@ export default Component =>
         eventName: "onArticleSavePress",
         getAttrs: ({ articleId, savedArticles }) => ({
           articleId,
-          isSaved : !savedArticles[articleId]
+          isSaved: !savedArticles[articleId]
         }),
         trackingName: "ArticleSave/Unsave"
       }
