@@ -17,7 +17,7 @@ Array [
 ]
 `;
 
-exports[`comments error 1`] = `
+exports[`article extras error 1`] = `
 <View>
   <Text>
     It looks like you're offline

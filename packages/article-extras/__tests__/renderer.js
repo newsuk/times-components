@@ -6,7 +6,7 @@ import {
   schemaToMocks
 } from "@times-components/provider-test-tools";
 import { delay } from "@times-components/test-utils";
-import ArticleExtras from "../src/article-extras";
+import ArticleExtras from "../src";
 
 const renderWithMocks = ({ component, onReady, params }) => {
   schemaToMocks(params).then(mocks => {

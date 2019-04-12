@@ -10,7 +10,7 @@ export default () => {
     });
   });
 
-  it("comments error", async done => {
+  it("article extras error", async done => {
     renderExtras({
       error: () => ({ error: "Error" }),
       onReady: testInstance => {
