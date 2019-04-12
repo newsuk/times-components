@@ -225,15 +225,25 @@ Array [
 
 exports[`5. standard 1`] = `
 <View>
-  <TileK />
+  <TileK
+    breakpoint="small"
+  />
   <View />
-  <TileK />
+  <TileK
+    breakpoint="small"
+  />
   <View />
-  <TileK />
+  <TileK
+    breakpoint="small"
+  />
   <View />
-  <TileK />
+  <TileK
+    breakpoint="small"
+  />
   <View />
-  <TileK />
+  <TileK
+    breakpoint="small"
+  />
 </View>
 `;
 

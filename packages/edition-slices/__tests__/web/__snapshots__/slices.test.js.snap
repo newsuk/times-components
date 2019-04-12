@@ -270,15 +270,25 @@ exports[`5. standard 1`] = `
 <div>
   <div>
     <div>
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
       <div />
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
       <div />
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
       <div />
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
       <div />
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
     </div>
   </div>
 </div>

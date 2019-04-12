@@ -1,5 +1,159 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Sunday Times magazine section 1`] = `
+<RCTScrollView>
+  <View>
+    <View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#000000",
+            "position": "relative",
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#000000",
+              "flex": 1,
+              "height": 733.7,
+              "opacity": 1,
+              "overflow": "hidden",
+              "width": "100%",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "position": "relative",
+                "width": 750,
+              }
+            }
+          >
+            <Image
+              style={
+                Object {
+                  "height": "100%",
+                  "position": "absolute",
+                  "resizeMode": "contain",
+                  "width": "100%",
+                }
+              }
+            />
+          </View>
+          <View
+            style={
+              Object {
+                "backgroundColor": "rgba(0, 0, 0, 0.6)",
+                "borderRadius": 9999,
+                "bottom": 20,
+                "position": "absolute",
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#FFFFFF",
+                  "letterSpacing": 0.3,
+                  "paddingHorizontal": 13,
+                  "paddingVertical": 8,
+                }
+              }
+            >
+              Tap image to view full magazine cover
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View />
+  </View>
+</RCTScrollView>
+`;
+
+exports[`Times magazine section 1`] = `
+<RCTScrollView>
+  <View>
+    <View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#000000",
+            "position": "relative",
+            "width": "100%",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#000000",
+              "flex": 1,
+              "height": 733.7,
+              "opacity": 1,
+              "overflow": "hidden",
+              "width": "100%",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "position": "relative",
+                "width": 750,
+              }
+            }
+          >
+            <Image
+              style={
+                Object {
+                  "height": "100%",
+                  "position": "absolute",
+                  "resizeMode": "contain",
+                  "width": "100%",
+                }
+              }
+            />
+          </View>
+          <View
+            style={
+              Object {
+                "backgroundColor": "rgba(0, 0, 0, 0.6)",
+                "borderRadius": 9999,
+                "bottom": 20,
+                "position": "absolute",
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#FFFFFF",
+                  "letterSpacing": 0.3,
+                  "paddingHorizontal": 13,
+                  "paddingVertical": 8,
+                }
+              }
+            >
+              Tap image to view full magazine cover
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View />
+  </View>
+</RCTScrollView>
+`;
+
 exports[`puzzle bar with more than one puzzle 1`] = `
 <View
   style={

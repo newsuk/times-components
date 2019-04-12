@@ -1406,23 +1406,33 @@ exports[`13. standard slice - medium 1`] = `
     <div
       className="S1"
     >
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
       <div
         className="IS1 S1"
       />
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
       <div
         className="IS2 S1"
       />
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
       <div
         className="IS3 S1"
       />
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
       <div
         className="IS4 S1"
       />
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
     </div>
   </div>
 </div>
@@ -3090,23 +3100,33 @@ exports[`28. standard slice - wide 1`] = `
     <div
       className="S1"
     >
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
       <div
         className="IS1 S1"
       />
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
       <div
         className="IS2 S1"
       />
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
       <div
         className="IS3 S1"
       />
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
       <div
         className="IS4 S1"
       />
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
     </div>
   </div>
 </div>
@@ -4774,23 +4794,33 @@ exports[`43. standard slice - huge 1`] = `
     <div
       className="S1"
     >
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
       <div
         className="IS1 S1"
       />
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
       <div
         className="IS2 S1"
       />
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
       <div
         className="IS3 S1"
       />
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
       <div
         className="IS4 S1"
       />
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
     </div>
   </div>
 </div>

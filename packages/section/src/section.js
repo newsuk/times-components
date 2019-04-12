@@ -6,6 +6,7 @@ import { withTrackScrollDepth } from "@times-components/tracking";
 import SectionItemSeparator from "./section-item-separator";
 import withTrackingContext from "./section-tracking-context";
 import PuzzleBar from "./puzzle-bar";
+import MagazineCover from "./magazine-cover";
 import Slice from "./slice";
 import styles from "./styles";
 import { splitPuzzlesBySlices, buildSliceData } from "./utils";
@@ -29,6 +30,22 @@ class Section extends Component {
       .map(viewableItem => onViewed(viewableItem.item, slices));
   }
 
+  getHeaderComponent(isPuzzle, isMagazine) {
+    const { onPuzzleBarPress } = this.props;
+    if (isPuzzle) {
+      return <PuzzleBar onPress={onPuzzleBarPress} />;
+    }
+
+    if (isMagazine) {
+      const {
+        section: { cover }
+      } = this.props;
+
+      return <MagazineCover cover={cover} />;
+    }
+    return null;
+  }
+
   renderItem({ index, item: slice }) {
     const {
       onArticlePress,
@@ -49,12 +66,13 @@ class Section extends Component {
 
   render() {
     const {
-      onPuzzleBarPress,
       section: { name, slices },
       onViewed,
       receiveChildList
     } = this.props;
     const isPuzzle = name === "PuzzleSection";
+    const isMagazine = name === "MagazineSection";
+
     const data = isPuzzle
       ? buildSliceData(splitPuzzlesBySlices(slices))
       : buildSliceData(slices);
@@ -75,9 +93,7 @@ class Section extends Component {
             ))
           }
           keyExtractor={item => item.elementId}
-          ListHeaderComponent={
-            isPuzzle ? <PuzzleBar onPress={onPuzzleBarPress} /> : null
-          }
+          ListHeaderComponent={this.getHeaderComponent(isPuzzle, isMagazine)}
           onViewableItemsChanged={onViewed ? this.onViewableItemsChanged : null}
           renderItem={this.renderItem}
           windowSize={5}

@@ -1,7 +1,8 @@
 import React from "react";
 import {
   mockPuzzleSection,
-  mockStandardSection
+  mockStandardSection,
+  mockMagazineSection
 } from "@times-components/fixture-generator";
 import storybookReporter from "@times-components/tealium-utils";
 import Section from "./src/section";
@@ -51,6 +52,26 @@ export default {
         />
       ),
       name: "Puzzles section",
+      type: "story"
+    },
+    {
+      component: (_, { decorateAction }) => (
+        <Section
+          analyticsStream={storybookReporter}
+          onArticlePress={preventDefaultedAction(decorateAction)(
+            "onArticlePress"
+          )}
+          onPuzzleBarPress={preventDefaultedAction(decorateAction)(
+            "onPuzzleBarPress"
+          )}
+          onPuzzlePress={preventDefaultedAction(decorateAction)(
+            "onPuzzlePress"
+          )}
+          publicationName="TIMES"
+          section={mockMagazineSection("Magazine")}
+        />
+      ),
+      name: "Magazine section",
       type: "story"
     }
   ],

@@ -314,15 +314,25 @@ exports[`13. standard slice - medium 1`] = `
 <div>
   <div>
     <div>
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
       <div />
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
       <div />
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
       <div />
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
       <div />
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
     </div>
   </div>
 </div>
@@ -739,15 +749,25 @@ exports[`28. standard slice - wide 1`] = `
 <div>
   <div>
     <div>
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
       <div />
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
       <div />
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
       <div />
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
       <div />
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
     </div>
   </div>
 </div>
@@ -1164,15 +1184,25 @@ exports[`43. standard slice - huge 1`] = `
 <div>
   <div>
     <div>
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
       <div />
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
       <div />
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
       <div />
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
       <div />
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
     </div>
   </div>
 </div>
