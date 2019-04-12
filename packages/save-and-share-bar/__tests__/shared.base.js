@@ -3,6 +3,7 @@ import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
 import Link from "@times-components/link";
 import SaveAndShareBar from "../src/save-and-share-bar";
+import Link from "@times-components/link";
 
 jest.mock("@times-components/link", () => "Link");
 

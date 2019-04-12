@@ -50,6 +50,13 @@ const SaveAndShareBar = ({
           title="Copy link on clipboard"
         />
       </Link>
+      <Link onPress={onCopyLink} responsiveLinkStyles={styles.link}>
+        <IconCopyLink
+          fillColour={styles.svgIcon.fillColour}
+          height={styles.svgIcon.height}
+          title="Copy link o clipboard"
+        />
+      </Link>
     </View>
     <View style={styles.rowItem}>
       <Text style={styles.label}>Save</Text>
