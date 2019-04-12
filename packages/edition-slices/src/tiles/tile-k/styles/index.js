@@ -5,7 +5,7 @@ import {
   editionBreakpoints
 } from "@times-components/styleguide";
 
-const headlineFontSizeResolver = {
+const headlineSizeResolver = {
   [editionBreakpoints.huge]: 25,
   [editionBreakpoints.wide]: 22,
   [editionBreakpoints.small]: 18,
@@ -20,8 +20,9 @@ export default breakpoint => ({
   headline: {
     color: colours.functional.primary,
     fontFamily: fonts.headline,
-    fontSize: headlineFontSizeResolver[breakpoint],
-    marginBottom: spacing(2)
+    fontSize: headlineSizeResolver[breakpoint],
+    marginBottom: spacing(2),
+    lineHeight: headlineSizeResolver[breakpoint]
   },
   imageContainer: {
     paddingRight: spacing(2),

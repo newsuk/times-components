@@ -1152,7 +1152,7 @@ exports[`11. tile k 1`] = `
             "fontFamily": "TimesModern-Bold",
             "fontSize": 18,
             "fontWeight": "900",
-            "lineHeight": 25,
+            "lineHeight": 18,
             "marginBottom": 10,
           }
         }
