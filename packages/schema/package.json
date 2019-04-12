@@ -1,6 +1,6 @@
 {
   "name": "@times-components/schema",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "main": "fragment-matcher.js",
   "bin": {
     "getSchema": "./index.js"
@@ -28,7 +28,7 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.8.9",
-    "@times-components/test-utils": "2.2.27",
+    "@times-components/test-utils": "2.2.28",
     "eslint": "5.9.0",
     "prettier": "1.14.3",
     "rimraf": "2.6.1"

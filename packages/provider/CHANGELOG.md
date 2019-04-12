@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.15.23](https://github.com/newsuk/times-components/compare/@times-components/provider@1.15.22...@times-components/provider@1.15.23) (2019-04-12)
+
+
+### Bug Fixes
+
+* article lead asset on web ([#1873](https://github.com/newsuk/times-components/issues/1873)) ([fb5b967](https://github.com/newsuk/times-components/commit/fb5b967))
+
+
+
+
+
 ## [1.15.22](https://github.com/newsuk/times-components/compare/@times-components/provider@1.15.21...@times-components/provider@1.15.22) (2019-04-11)
 
 **Note:** Version bump only for package @times-components/provider
