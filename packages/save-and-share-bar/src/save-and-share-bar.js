@@ -40,13 +40,14 @@ const SaveAndShareBar = ({
           title="Share on tweeter"
         />
       </Link>
+      <Link
         responsiveLinkStyles={styles.link}
         target="_blank"
         url={`${SharingApiUrls.facebook}?text=${articleUrl}`}
       >
         <IconFacebook
           height={styles.svgIcon.height}
-          title="Copy link o clipboard"
+          title="Copy link on clipboard"
         />
       </Link>
     </View>
