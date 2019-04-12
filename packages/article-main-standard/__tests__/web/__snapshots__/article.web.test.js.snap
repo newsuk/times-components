@@ -101,6 +101,7 @@ exports[`1. an article 1`] = `
         <div>
           <div>
             <Image
+              aspectRatio={1.7777777777777777}
               highResSize={null}
               lowResSize={100}
               uri="https://crop169.io"
