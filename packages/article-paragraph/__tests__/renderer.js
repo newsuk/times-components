@@ -27,7 +27,7 @@ export default (ast, section = "default") => {
                 key={indx}
                 uid={indx}
               >
-                {children}
+                {() => children}
               </ArticleParagraph>
             )
           };

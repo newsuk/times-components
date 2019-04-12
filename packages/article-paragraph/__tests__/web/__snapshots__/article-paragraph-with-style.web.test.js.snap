@@ -46,7 +46,7 @@ exports[`1. mpu config 1`] = `
         "color": "#333333",
         "fontFamily": "TimesDigitalW04",
         "fontSize": 17,
-        "lineHeight": 26,
+        "lineHeight": 30,
         "marginBottom": "25px",
         "marginTop": 0,
       },

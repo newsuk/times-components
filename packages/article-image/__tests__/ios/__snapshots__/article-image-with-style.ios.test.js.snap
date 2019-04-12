@@ -365,19 +365,21 @@ exports[`6. inline image (landscape) with caption and credits 1`] = `
   style={
     Object {
       "alignSelf": "center",
-      "flexDirection": "row",
+      "flexDirection": "column",
       "flexWrap": "nowrap",
-      "paddingBottom": 25,
+      "marginTop": 0,
+      "paddingBottom": 0,
       "paddingLeft": 0,
-      "paddingRight": 0,
-      "width": 640,
+      "paddingRight": 10,
+      "paddingTop": 0,
+      "width": "100%",
     }
   }
 >
   <View
     style={
       Object {
-        "width": "50%",
+        "width": "100%",
       }
     }
   >
@@ -398,7 +400,6 @@ exports[`6. inline image (landscape) with caption and credits 1`] = `
       Object {
         "paddingLeft": 10,
         "paddingTop": 0,
-        "width": "50%",
       }
     }
   >
@@ -447,19 +448,21 @@ exports[`7. inline image (portrait) with caption and credits 1`] = `
   style={
     Object {
       "alignSelf": "center",
-      "flexDirection": "row",
+      "flexDirection": "column",
       "flexWrap": "nowrap",
-      "paddingBottom": 25,
+      "marginTop": 0,
+      "paddingBottom": 0,
       "paddingLeft": 0,
-      "paddingRight": 0,
-      "width": 640,
+      "paddingRight": 10,
+      "paddingTop": 0,
+      "width": "100%",
     }
   }
 >
   <View
     style={
       Object {
-        "width": "50%",
+        "width": "100%",
       }
     }
   >
@@ -480,7 +483,6 @@ exports[`7. inline image (portrait) with caption and credits 1`] = `
       Object {
         "paddingLeft": 10,
         "paddingTop": 0,
-        "width": "50%",
       }
     }
   >

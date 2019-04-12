@@ -38,12 +38,10 @@ exports[`1. a secondary image 1`] = `
               imageOptions={
                 Object {
                   "display": "secondary",
-                  "index": 1,
                   "ratio": "3:2",
                   "uri": "https://image-2.io",
                 }
               }
-              onImagePress={null}
             />
           </View>
         </View>

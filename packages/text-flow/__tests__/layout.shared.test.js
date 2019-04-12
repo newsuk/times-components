@@ -3,11 +3,11 @@ import FontLoader from "../src/Text/FontLoader";
 
 export default () => {
   beforeAll(() => {
-    FontLoader.load({}, [
+    [
       "TimesDigitalW04-Regular",
       "TimesDigitalW04-Bold",
       "TimesDigitalW04-Italic"
-    ]);
+    ].forEach(name => FontLoader.loadFont(name));
   });
 
   it("indents lines next to an inline", () => {
