@@ -1,4 +1,3 @@
-import "./mocks";
 import renderExtras from "./renderer";
 
 export default () => {
