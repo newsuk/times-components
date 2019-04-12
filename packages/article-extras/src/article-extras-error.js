@@ -6,12 +6,13 @@ import Context from "@times-components/context";
 import styleguide from "@times-components/styleguide";
 import styles from "./styles";
 
-const CommentError = ({ refetch }) => (
-  <View style={styles.container}>
-    <Text style={styles.headline}>Unable to load comments</Text>
-    <Text style={styles.errorBody}>
-      You must have a network connection to view and post comments. Please check
-      your connection and retry.
+const ArticleExtrasError = ({ refetch }) => (
+  <View style={styles.extrasErrorContainer}>
+    <Text style={styles.extrasErrorHeadline}>
+      It looks like you&apos;re offline
+    </Text>
+    <Text style={styles.extrasErrorBody}>
+      Some features, such as related articles and comments, may not be avalaible
     </Text>
     <Context.Consumer>
       {({ theme: { scale } }) => {
@@ -25,7 +26,7 @@ const CommentError = ({ refetch }) => (
             fontSize={fontFactory.fontSize}
             lineHeight={fontFactory.lineHeight}
             onPress={refetch}
-            style={styles.errorButton}
+            style={styles.extrasErrorButton}
             title="Retry"
           />
         );
@@ -34,8 +35,8 @@ const CommentError = ({ refetch }) => (
   </View>
 );
 
-CommentError.propTypes = {
+ArticleExtrasError.propTypes = {
   refetch: PropTypes.func.isRequired
 };
 
-export default CommentError;
+export default ArticleExtrasError;

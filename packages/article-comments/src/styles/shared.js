@@ -15,20 +15,6 @@ const styles = {
     marginBottom: spacing(10),
     width: "100%"
   },
-  errorBody: {
-    ...fontFactory({
-      font: "supporting",
-      fontSize: "tertiary"
-    }),
-    color: colours.functional.secondary,
-    maxWidth: 330,
-    textAlign: "center"
-  },
-  errorButton: {
-    marginBottom: spacing(0),
-    marginTop: spacing(5),
-    maxWidth: 165
-  },
   headline: {
     color: colours.functional.primary,
     ...fontFactory({

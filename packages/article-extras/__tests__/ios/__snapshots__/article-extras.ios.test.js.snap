@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. article extras content 1`] = `
+Array [
+  <View>
+    <RelatedArticles />
+  </View>,
+  <View>
+    <ArticleTopics />
+  </View>,
+  <ArticleComments
+    articleId="dummy-article-id"
+    commentCount={123}
+    commentsEnabled={true}
+    url="dummy-article-url"
+  />,
+]
+`;
+
+exports[`2. article extras error 1`] = `
+<View>
+  <Text>
+    It looks like you're offline
+  </Text>
+  <Text>
+    Some features, such as related articles and comments, may not be avalaible
+  </Text>
+  <View
+    accessibilityComponentType="button"
+    accessibilityLabel="Retry"
+    accessibilityTraits="button"
+  >
+    <Text
+      title="Retry"
+    >
+      Retry
+    </Text>
+  </View>
+</View>
+`;

@@ -35,6 +35,7 @@ export default addTypenameToDocument(gql`
         }
       }
       relatedArticleSlice {
+        sliceName: __typename
         ... on StandardSlice {
           items {
             ...relatedProps

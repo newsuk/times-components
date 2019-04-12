@@ -52,10 +52,13 @@ exports[`1. a secondary image 1`] = `
         <View />
       </View>
       <View>
+        <View />
+      </View>
+      <View>
         <View>
-          <ArticleComments
+          <ArticleExtras
             articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-            url="https://url.io"
+            articleUrl="https://url.io"
           />
         </View>
       </View>
@@ -116,10 +119,13 @@ exports[`2. an inline image 1`] = `
         <View />
       </View>
       <View>
+        <View />
+      </View>
+      <View>
         <View>
-          <ArticleComments
+          <ArticleExtras
             articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-            url="https://url.io"
+            articleUrl="https://url.io"
           />
         </View>
       </View>

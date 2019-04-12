@@ -1,4 +1,4 @@
-import { spacing, tabletWidth } from "@times-components/styleguide";
+import { spacing } from "@times-components/styleguide";
 import { maxWidth } from "../gutter";
 
 const globalStyle = {
@@ -14,11 +14,6 @@ const globalStyle = {
     backgroundColor: "#ffffff",
     maxWidth: "100%",
     width: maxWidth
-  },
-  relatedArticlesTablet: {
-    alignSelf: "center",
-    maxWidth: tabletWidth,
-    width: "100%"
   }
 };
 
