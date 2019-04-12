@@ -39,10 +39,13 @@ Testing can be done on each platform individually
 
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 yarn test:android
 yarn test:ios
 >>>>>>> feat: implement main Save and Share bar component
+=======
+>>>>>>> chore: add readme
 yarn test:web
 ```
 
@@ -52,7 +55,9 @@ Or the tests for all platforms can be run
 yarn test:all
 ```
 
+
 Visit the official
+<<<<<<< HEAD
 <<<<<<< HEAD
 [storybook](http://components.thetimes.co.uk)
 to see our available link templates.
@@ -61,10 +66,18 @@ to see our available link templates.
 
 The bar should be extended with custom onPress logic and user info state
 =======
+=======
+[storybook](http://components.thetimes.co.uk)
+to see our available link templates.
+>>>>>>> chore: add readme
 
-<!-- Add the storybook link here. -->
 
 ## Future
 
+<<<<<<< HEAD
 <!-- Add details of future development here. -->
 >>>>>>> feat: implement main Save and Share bar component
+=======
+The bar should be extended with custom onPress logic and user info state
+
+>>>>>>> chore: add readme
