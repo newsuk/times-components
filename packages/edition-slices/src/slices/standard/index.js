@@ -21,7 +21,12 @@ class Standard extends Component {
     } = this.props;
 
     return items.map(tile => (
-      <TileK key={tile.articleId} breakpoint={breakpoint} onPress={onPress} tile={tile} />
+      <TileK
+        breakpoint={breakpoint}
+        key={tile.articleId}
+        onPress={onPress}
+        tile={tile}
+      />
     ));
   }
 
@@ -33,7 +38,7 @@ class Standard extends Component {
     );
   }
 
-  renderSmall() {
+  renderSmall(breakpoint) {
     return <VerticalLayout tiles={this.getTiles(breakpoint)} />;
   }
 
