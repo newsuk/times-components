@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
 import { ResponsiveContext } from "@times-components/responsive";
@@ -25,7 +25,7 @@ const ArticleExtrasContent = ({
   } = article;
 
   return (
-    <View>
+    <Fragment>
       {relatedArticleSlice ? (
         <ResponsiveContext.Consumer>
           {({ isTablet }) => (
@@ -48,7 +48,7 @@ const ArticleExtrasContent = ({
         onCommentsPress={onCommentsPress}
         url={articleUrl}
       />
-    </View>
+    </Fragment>
   );
 };
 
