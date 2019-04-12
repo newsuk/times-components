@@ -21,8 +21,8 @@ export default breakpoint => ({
     color: colours.functional.primary,
     fontFamily: fonts.headline,
     fontSize: headlineSizeResolver[breakpoint],
-    marginBottom: spacing(2),
-    lineHeight: headlineSizeResolver[breakpoint]
+    lineHeight: headlineSizeResolver[breakpoint],
+    marginBottom: spacing(2)
   },
   imageContainer: {
     paddingRight: spacing(2),
