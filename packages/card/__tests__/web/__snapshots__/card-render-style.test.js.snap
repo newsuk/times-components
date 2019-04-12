@@ -100,6 +100,7 @@ exports[`card with default layout 1`] = `
   height: 0;
   overflow: hidden;
   position: relative;
+  width: 100%;
   padding-bottom: 150%;
 }
 </style>

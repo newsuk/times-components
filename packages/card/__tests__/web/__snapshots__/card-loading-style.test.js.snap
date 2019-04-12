@@ -150,6 +150,7 @@ exports[`1. card loading state 1`] = `
   height: 0;
   overflow: hidden;
   position: relative;
+  width: 100%;
   padding-bottom: 150%;
 }
 
@@ -479,6 +480,7 @@ exports[`2. card with reversed loading state 1`] = `
   height: 0;
   overflow: hidden;
   position: relative;
+  width: 100%;
   padding-bottom: 150%;
 }
 </style>
