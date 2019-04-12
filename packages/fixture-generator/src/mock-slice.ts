@@ -3,6 +3,7 @@ import {
   CommentLeadAndCartoonSlice,
   DailyUniversalRegister,
   DailyUniversalRegisterItem,
+  Flag,
   StandardSlice,
   LeadOneAndFourSlice,
   LeadOneFullWidthSlice,
@@ -141,9 +142,31 @@ function mockLeadOneFullWidthSlice(): LeadOneFullWidthSliceWithName {
 
 function mockLeadOneAndOneSlice(): LeadOneAndOneSliceWithName {
   const tiles = getTiles(2);
+  const expirableFlags = [
+    {
+      type: Flag.Exclusive,
+      expiryTime: "2030-03-14T12:00:00.000Z"
+    },
+    {
+      type: Flag.New,
+      expiryTime: "2030-03-14T12:00:00.000Z"
+    },
+    {
+      type: Flag.Sponsored,
+      expiryTime: "2030-03-14T12:00:00.000Z"
+    },
+    {
+      type: Flag.Updated,
+      expiryTime: "2030-03-14T12:00:00.000Z"
+    }
+  ];
+  const leadTile = {
+    ...tiles[0],
+    article: { ...tiles[0].article, expirableFlags }
+  };
   return <LeadOneAndOneSliceWithName>{
     name: "LeadOneAndOneSlice",
-    lead: tiles[0],
+    lead: leadTile,
     support: tiles[1],
     items: tiles
   };

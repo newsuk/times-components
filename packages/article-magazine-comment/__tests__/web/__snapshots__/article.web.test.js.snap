@@ -72,6 +72,7 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
         <div>
           <div>
             <Image
+              aspectRatio={1.7777777777777777}
               highResSize={null}
               lowResSize={100}
               uri="https://crop169.io"
@@ -230,6 +231,7 @@ exports[`4. an article with ads 1`] = `
         <div>
           <div>
             <Image
+              aspectRatio={1.7777777777777777}
               highResSize={null}
               lowResSize={100}
               uri="https://crop169.io"
@@ -411,6 +413,7 @@ exports[`7. an article with no author 1`] = `
         <div>
           <div>
             <Image
+              aspectRatio={1.7777777777777777}
               highResSize={null}
               lowResSize={100}
               uri="https://crop169.io"

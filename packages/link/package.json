@@ -1,6 +1,6 @@
 {
   "name": "@times-components/link",
-  "version": "3.3.12",
+  "version": "3.3.13",
   "description": "component to handle links and navigation",
   "main": "dist/link",
   "dev": "src/link",
@@ -38,10 +38,10 @@
   "devDependencies": {
     "@thetimes/jest-lint": "*",
     "@times-components/eslint-config-thetimes": "0.8.9",
-    "@times-components/jest-configurator": "2.4.5",
+    "@times-components/jest-configurator": "2.4.6",
     "@times-components/jest-serializer": "3.2.0",
-    "@times-components/storybook": "3.4.17",
-    "@times-components/test-utils": "2.2.26",
+    "@times-components/storybook": "3.4.18",
+    "@times-components/test-utils": "2.2.27",
     "@times-components/webpack-configurator": "2.0.15",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.4",
@@ -67,7 +67,7 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/styleguide": "3.27.8",
+    "@times-components/styleguide": "3.27.9",
     "prop-types": "15.6.2",
     "styled-components": "3.4.0"
   },

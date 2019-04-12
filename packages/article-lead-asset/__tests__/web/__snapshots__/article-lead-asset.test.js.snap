@@ -28,6 +28,7 @@ exports[`1. renders correctly with an image lead asset 1`] = `
         className="IS1"
       >
         <Image
+          aspectRatio={1.7777777777777777}
           highResSize={600}
           lowResSize={100}
           uri="https://crop169.io/"
@@ -134,6 +135,7 @@ exports[`5. it renders correctly with a classname 1`] = `
         className="IS1"
       >
         <Image
+          aspectRatio={1.7777777777777777}
           highResSize={600}
           lowResSize={100}
           uri="https://crop169.io/"

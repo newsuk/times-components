@@ -27,6 +27,7 @@ class SectionPage extends Component {
     };
     this.onAppStateChange = this.onAppStateChange.bind(this);
     this.toggleArticleSaveStatus = this.toggleArticleSaveStatus.bind(this);
+    this.syncAppData = this.syncAppData.bind(this);
   }
 
   componentDidMount() {

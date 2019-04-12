@@ -1,6 +1,6 @@
 {
   "name": "@times-components/test-utils",
-  "version": "2.2.26",
+  "version": "2.2.27",
   "description": "Test helpers for Times Components",
   "main": "dist/index",
   "dev": "src/index",
@@ -39,7 +39,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
-    "@times-components/styleguide": "3.27.8"
+    "@times-components/styleguide": "3.27.9"
   },
   "devDependencies": {
     "@thetimes/jest-lint": "*",

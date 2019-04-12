@@ -25,9 +25,7 @@ exports[`1. modal image 1`] = `
         }
       />
       <View>
-        <View
-          pointerEvents="box-only"
-        >
+        <View>
           <Image
             resizeMode="contain"
             source={
@@ -91,9 +89,7 @@ exports[`1. modal image 1`] = `
       </View>
     </View>
   </Modal>
-  <View
-    pointerEvents="box-only"
-  >
+  <View>
     <View
       aspectRatio={1.5}
     >
@@ -147,9 +143,7 @@ exports[`2. modal image with no caption 1`] = `
         }
       />
       <View>
-        <View
-          pointerEvents="box-only"
-        >
+        <View>
           <Image
             resizeMode="contain"
             source={
@@ -183,9 +177,7 @@ exports[`2. modal image with no caption 1`] = `
       />
     </View>
   </Modal>
-  <View
-    pointerEvents="box-only"
-  >
+  <View>
     <View
       aspectRatio={1.5}
     >
@@ -222,9 +214,7 @@ exports[`3. modal image with custom highressize 1`] = `
         }
       />
       <View>
-        <View
-          pointerEvents="box-only"
-        >
+        <View>
           <Image
             resizeMode="contain"
             source={
@@ -288,9 +278,7 @@ exports[`3. modal image with custom highressize 1`] = `
       </View>
     </View>
   </Modal>
-  <View
-    pointerEvents="box-only"
-  >
+  <View>
     <View
       aspectRatio={1.5}
     >
@@ -364,9 +352,7 @@ exports[`8. hides elements when tapping on the image 1`] = `
       </SafeAreaView>
     </View>
   </Modal>
-  <View
-    pointerEvents="box-only"
-  >
+  <View>
     <View
       aspectRatio={1.5}
     >
@@ -403,9 +389,7 @@ exports[`9. re-shows elements when tapping on the image a second time 1`] = `
         }
       />
       <View>
-        <View
-          pointerEvents="box-only"
-        >
+        <View>
           <Image
             resizeMode="contain"
             source={
@@ -445,9 +429,7 @@ exports[`9. re-shows elements when tapping on the image a second time 1`] = `
       </View>
     </View>
   </Modal>
-  <View
-    pointerEvents="box-only"
-  >
+  <View>
     <View
       aspectRatio={1.5}
     >

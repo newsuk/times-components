@@ -5,6 +5,7 @@ import {
   fontSizes,
   colours
 } from "@times-components/styleguide";
+import { verticalStyles } from "../../shared/styles";
 
 const styles = {
   bold: {
@@ -27,6 +28,7 @@ const styles = {
       fontSize: "teaser"
     })
   },
+  star: verticalStyles,
   title: {
     color: colours.functional.brandColour,
     fontFamily: fonts.headline,

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { View } from "react-native";
 import PropTypes from "prop-types";
 import ArticleSummary, {
   ArticleSummaryContent,
@@ -7,6 +8,8 @@ import ArticleSummary, {
 } from "@times-components/article-summary";
 import { ArticleFlags } from "@times-components/article-flag";
 import { colours } from "@times-components/styleguide";
+import TileStar from "./tile-star";
+import { horizontalStyles } from "./styles";
 
 class TileSummary extends Component {
   constructor(props) {
@@ -26,12 +29,30 @@ class TileSummary extends Component {
   renderFlags() {
     const {
       tile: {
-        article: { expirableFlags }
+        article: { expirableFlags, id }
       },
-      flagColour
+      flagColour,
+      isDarkStar,
+      withStar,
+      starStyle
     } = this.props;
 
-    return <ArticleFlags {...flagColour} flags={expirableFlags} />;
+    if (!withStar) {
+      return <ArticleFlags {...flagColour} flags={expirableFlags} />;
+    }
+
+    const tileStyle = starStyle || horizontalStyles;
+
+    return (
+      <View style={tileStyle.container}>
+        <View style={tileStyle.flagStyle}>
+          <ArticleFlags {...flagColour} flags={expirableFlags} />
+        </View>
+        <View style={tileStyle.starButton}>
+          <TileStar articleId={id} isDark={isDarkStar} />
+        </View>
+      </View>
+    );
   }
 
   renderHeadline() {
@@ -97,25 +118,29 @@ TileSummary.propTypes = {
   bylineStyle: PropTypes.shape({}),
   flagColour: PropTypes.shape({}),
   headlineStyle: PropTypes.shape({}),
+  isDarkStar: PropTypes.bool,
   labelColour: PropTypes.string,
   strapline: PropTypes.string,
   straplineStyle: PropTypes.shape({}),
   style: PropTypes.shape({}),
   summary: PropTypes.arrayOf(PropTypes.shape({})),
   summaryStyle: PropTypes.shape({}),
-  tile: PropTypes.shape({}).isRequired
+  tile: PropTypes.shape({}).isRequired,
+  withStar: PropTypes.bool
 };
 
 TileSummary.defaultProps = {
   bylineStyle: null,
   flagColour: {},
   headlineStyle: null,
+  isDarkStar: false,
   labelColour: null,
   strapline: null,
   straplineStyle: null,
   style: null,
   summary: null,
-  summaryStyle: null
+  summaryStyle: null,
+  withStar: true
 };
 
 export default TileSummary;
