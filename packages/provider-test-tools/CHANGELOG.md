@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.17.0](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.16.3...@times-components/provider-test-tools@1.17.0) (2019-04-12)
+
+
+### Features
+
+* Article Extras package (lazy loading related articles & co) ([#1872](https://github.com/newsuk/times-components/issues/1872)) ([2d425a0](https://github.com/newsuk/times-components/commit/2d425a0))
+
+
+
+
+
 ## [1.16.3](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.16.2...@times-components/provider-test-tools@1.16.3) (2019-04-12)
 
 **Note:** Version bump only for package @times-components/provider-test-tools
