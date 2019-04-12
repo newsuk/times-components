@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.15.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@1.14.6...@times-components/provider-queries@1.15.0) (2019-04-12)
+
+
+### Features
+
+* Add magazine section ([#1852](https://github.com/newsuk/times-components/issues/1852)) ([edd1903](https://github.com/newsuk/times-components/commit/edd1903))
+
+
+
+
+
 ## [1.14.6](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@1.14.5...@times-components/provider-queries@1.14.6) (2019-04-09)
 
 
