@@ -1,20 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`article extras 1`] = `
-<View>
+Array [
   <View>
     <RelatedArticles />
-  </View>
+  </View>,
   <View>
     <ArticleTopics />
-  </View>
+  </View>,
   <ArticleComments
     articleId="dummy-article-id"
     commentCount={100}
     commentsEnabled={true}
     url="dummy-article-url"
-  />
-</View>
+  />,
+]
 `;
 
 exports[`comments error 1`] = `
