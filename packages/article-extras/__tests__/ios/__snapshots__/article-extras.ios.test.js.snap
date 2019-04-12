@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`article extras 1`] = `
+exports[`1. article extras content 1`] = `
 Array [
   <View>
     <RelatedArticles />
@@ -10,14 +10,14 @@ Array [
   </View>,
   <ArticleComments
     articleId="dummy-article-id"
-    commentCount={100}
+    commentCount={123}
     commentsEnabled={true}
     url="dummy-article-url"
   />,
 ]
 `;
 
-exports[`article extras error 1`] = `
+exports[`2. article extras error 1`] = `
 <View>
   <Text>
     It looks like you're offline
