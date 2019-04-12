@@ -75,9 +75,8 @@ exports[`2. daily universal register - medium 1`] = `
     <Image
       style={
         Object {
-          "height": 73,
-          "marginVertical": 10,
-          "width": 285,
+          "height": 97,
+          "width": 380,
         }
       }
     />
@@ -101,8 +100,8 @@ exports[`2. daily universal register - medium 1`] = `
           "borderBottomWidth": 1,
           "borderColor": "#DBDBDB",
           "borderStyle": "solid",
-          "marginBottom": 25,
           "marginHorizontal": 10,
+          "marginVertical": 25,
           "width": "100%",
         }
       }
@@ -115,8 +114,8 @@ exports[`2. daily universal register - medium 1`] = `
           "borderBottomWidth": 1,
           "borderColor": "#DBDBDB",
           "borderStyle": "solid",
-          "marginBottom": 25,
           "marginHorizontal": 10,
+          "marginVertical": 25,
           "width": "100%",
         }
       }
@@ -137,8 +136,8 @@ exports[`2. daily universal register - medium 1`] = `
           "borderBottomWidth": 1,
           "borderColor": "#DBDBDB",
           "borderStyle": "solid",
-          "marginBottom": 25,
           "marginHorizontal": 10,
+          "marginVertical": 25,
           "width": "100%",
         }
       }
@@ -1220,8 +1219,8 @@ exports[`17. daily universal register - wide 1`] = `
           "borderBottomWidth": 1,
           "borderColor": "#DBDBDB",
           "borderStyle": "solid",
-          "marginBottom": 25,
           "marginHorizontal": 10,
+          "marginVertical": 25,
           "width": "100%",
         }
       }
@@ -1234,8 +1233,8 @@ exports[`17. daily universal register - wide 1`] = `
           "borderBottomWidth": 1,
           "borderColor": "#DBDBDB",
           "borderStyle": "solid",
-          "marginBottom": 25,
           "marginHorizontal": 10,
+          "marginVertical": 25,
           "width": "100%",
         }
       }
@@ -1256,8 +1255,8 @@ exports[`17. daily universal register - wide 1`] = `
           "borderBottomWidth": 1,
           "borderColor": "#DBDBDB",
           "borderStyle": "solid",
-          "marginBottom": 25,
           "marginHorizontal": 10,
+          "marginVertical": 25,
           "width": "100%",
         }
       }
@@ -2284,9 +2283,10 @@ exports[`32. daily universal register - huge 1`] = `
     style={
       Object {
         "alignItems": "center",
+        "alignSelf": "center",
         "backgroundColor": "#F0F0F0",
         "flex": 1,
-        "padding": 10,
+        "width": "86%",
       }
     }
   >
@@ -2314,63 +2314,9 @@ exports[`32. daily universal register - huge 1`] = `
     <View
       style={
         Object {
-          "borderBottomColor": "#DBDBDB",
-          "borderBottomWidth": 1,
-          "borderColor": "#DBDBDB",
-          "borderStyle": "solid",
-          "marginBottom": 25,
-          "marginHorizontal": 10,
-          "width": "100%",
-        }
-      }
-    />
-    <View
-      style={
-        Object {
-          "alignItems": "center",
           "flexDirection": "row",
-          "paddingHorizontal": "30%",
-        }
-      }
-    >
-      <View
-        style={
-          Object {
-            "paddingHorizontal": "5%",
-          }
-        }
-      >
-        <TileS />
-      </View>
-      <View
-        style={
-          Object {
-            "paddingHorizontal": "5%",
-          }
-        }
-      >
-        <TileS />
-      </View>
-    </View>
-    <View
-      style={
-        Object {
-          "borderBottomColor": "#DBDBDB",
-          "borderBottomWidth": 1,
-          "borderColor": "#DBDBDB",
-          "borderStyle": "solid",
-          "marginBottom": 25,
-          "marginHorizontal": 10,
+          "paddingHorizontal": "8%",
           "width": "100%",
-        }
-      }
-    />
-    <View
-      style={
-        Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "paddingHorizontal": "30%",
         }
       }
     >
@@ -2378,25 +2324,26 @@ exports[`32. daily universal register - huge 1`] = `
         style={
           Object {
             "alignItems": "center",
+            "flex": 1,
             "flexDirection": "column",
+            "paddingHorizontal": 25,
           }
         }
       >
-        <Image
-          style={
-            Object {
-              "height": 45,
-              "width": 60,
-            }
-          }
-        />
         <View
           style={
             Object {
-              "paddingHorizontal": "5%",
+              "borderBottomColor": "#DBDBDB",
+              "borderBottomWidth": 1,
+              "borderColor": "#DBDBDB",
+              "borderStyle": "solid",
+              "marginHorizontal": 10,
+              "marginVertical": 25,
+              "width": "100%",
             }
           }
-        >
+        />
+        <View>
           <TileS />
         </View>
       </View>
@@ -2404,10 +2351,62 @@ exports[`32. daily universal register - huge 1`] = `
         style={
           Object {
             "alignItems": "center",
+            "flex": 1,
             "flexDirection": "column",
+            "paddingHorizontal": 25,
           }
         }
       >
+        <View
+          style={
+            Object {
+              "borderBottomColor": "#DBDBDB",
+              "borderBottomWidth": 1,
+              "borderColor": "#DBDBDB",
+              "borderStyle": "solid",
+              "marginHorizontal": 10,
+              "marginVertical": 25,
+              "width": "100%",
+            }
+          }
+        />
+        <View>
+          <TileS />
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "paddingHorizontal": "8%",
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "flexDirection": "column",
+            "paddingHorizontal": 25,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "borderBottomColor": "#DBDBDB",
+              "borderBottomWidth": 1,
+              "borderColor": "#DBDBDB",
+              "borderStyle": "solid",
+              "marginHorizontal": 10,
+              "marginVertical": 25,
+              "width": "100%",
+            }
+          }
+        />
         <Image
           style={
             Object {
@@ -2416,13 +2415,42 @@ exports[`32. daily universal register - huge 1`] = `
             }
           }
         />
+        <View>
+          <TileS />
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "flexDirection": "column",
+            "paddingHorizontal": 25,
+          }
+        }
+      >
         <View
           style={
             Object {
-              "paddingHorizontal": "5%",
+              "borderBottomColor": "#DBDBDB",
+              "borderBottomWidth": 1,
+              "borderColor": "#DBDBDB",
+              "borderStyle": "solid",
+              "marginHorizontal": 10,
+              "marginVertical": 25,
+              "width": "100%",
             }
           }
-        >
+        />
+        <Image
+          style={
+            Object {
+              "height": 45,
+              "width": 60,
+            }
+          }
+        />
+        <View>
           <TileS />
         </View>
       </View>

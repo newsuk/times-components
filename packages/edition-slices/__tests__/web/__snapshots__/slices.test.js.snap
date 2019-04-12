@@ -4,7 +4,7 @@ exports[`1. daily universal register 1`] = `
 <div>
   <div>
     <Image
-      aspectRatio={5.74}
+      aspectRatio={1}
       uri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
     />
     <div>
