@@ -37,7 +37,7 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
     "@times-components/context": "0.9.17",
-    "@times-components/edition-slices": "^0.53.3",
+    "@times-components/edition-slices": "0.53.3",
     "@times-components/icons": "2.10.16",
     "@times-components/image": "5.3.13",
     "@times-components/link": "3.3.17",
