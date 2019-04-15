@@ -16,7 +16,9 @@ export default () => {
     const initialSectionData = { name: "InitialSection" };
     const updatedSectionData = { name: "UpdatedSection" };
 
-    getSectionData.mockReturnValue(Promise.resolve(JSON.stringify(updatedSectionData)));
+    getSectionData.mockReturnValue(
+      Promise.resolve(JSON.stringify(updatedSectionData))
+    );
 
     const testInstance = TestRenderer.create(
       <Section section={JSON.stringify(initialSectionData)} />
