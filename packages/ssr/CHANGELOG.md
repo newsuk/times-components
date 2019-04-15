@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.8.132](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.8.131...@times-components/ssr@1.8.132) (2019-04-15)
+
+
+### Bug Fixes
+
+* setup theme correctly in SSR ([#1879](https://github.com/newsuk/times-components/issues/1879)) ([5902410](https://github.com/newsuk/times-components/commit/5902410))
+
+
+
+
+
 ## [1.8.131](https://github.com/newsuk/times-components/compare/@times-components/ssr@1.8.128...@times-components/ssr@1.8.131) (2019-04-15)
 
 **Note:** Version bump only for package @times-components/ssr
