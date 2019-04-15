@@ -78,11 +78,14 @@ export default () => {
     const edition = new MockEdition().get();
     const stream = jest.fn();
     const onArticlePress = jest.fn();
+    const artickleId = edition.sections[0].slices[0].lead.article.id;
+    const savedArticles = { artickleId: undefined };
+    const onArticleSavePress = () => {
+      savedArticles[artickleId] = !savedArticles[artickleId];
+    };
 
     const testInstance = TestRenderer.create(
-      <SectionContext.Provider
-        value={{ onArticleSavePress: jest.fn(), savedArticles: {} }}
-      >
+      <SectionContext.Provider value={{ onArticleSavePress, savedArticles }}>
         <WithTrackingContext
           onArticlePress={onArticlePress}
           onPuzzlePress={() => {}}
@@ -94,8 +97,9 @@ export default () => {
 
     const [starButton] = testInstance.root.findAllByType(StarButton);
     starButton.props.onPress();
+    starButton.props.onPress();
 
-    const [[call]] = stream.mock.calls;
+    const call = stream.mock.calls;
     expect(call).toMatchSnapshot();
   });
 
