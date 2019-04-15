@@ -9,15 +9,19 @@ const {
   getOpenedPuzzleCount,
   getSavedArticles,
   getSectionData,
-  onArticlePress,
+  onArticlePress: onArticlePressBridge,
   onPuzzleBarPress = () => {},
-  onPuzzlePress,
-  onArticleSavePress
+  onPuzzlePress: onPuzzlePressBridge,
+  onArticleSavePress: onArticleSavePressBridge
 } = NativeModules.SectionEvents || {
   onArticlePress: () => {},
   onPuzzleBarPress: () => {},
   onPuzzlePress: () => {}
 };
+
+const onArticlePress = ({ id, url }) => onArticlePressBridge(url, id);
+const onPuzzlePress = ({ id, title, url }) =>
+  onPuzzlePressBridge(url, title, id);
 
 class SectionPage extends Component {
   constructor(props) {
@@ -32,6 +36,7 @@ class SectionPage extends Component {
     this.toggleArticleSaveStatus = this.toggleArticleSaveStatus.bind(this);
     this.syncAppData = this.syncAppData.bind(this);
     this.updateSectionData = this.updateSectionData.bind(this);
+    this.onArticleSavePress = this.onArticleSavePress.bind(this);
   }
 
   componentDidMount() {
@@ -54,6 +59,14 @@ class SectionPage extends Component {
     if (nextAppState === "active") {
       this.syncAppData();
     }
+  }
+
+  onArticleSavePress(save, articleId) {
+    this.toggleArticleSaveStatus(save, articleId);
+
+    onArticleSavePressBridge(save, articleId).catch(() => {
+      this.toggleArticleSaveStatus(!save, articleId);
+    });
   }
 
   syncAppData() {
@@ -86,7 +99,7 @@ class SectionPage extends Component {
     } = this.props;
     if (getSectionData) {
       getSectionData(id).then(data => {
-        this.setState({ section: data });
+        this.setState({ section: JSON.parse(data) });
       });
     }
   }
@@ -104,14 +117,8 @@ class SectionPage extends Component {
     return (
       <SectionContext.Provider
         value={{
-          onArticleSavePress: onArticleSavePress
-            ? (save, articleId) => {
-                this.toggleArticleSaveStatus(save, articleId);
-
-                onArticleSavePress(save, articleId).catch(() => {
-                  this.toggleArticleSaveStatus(!save, articleId);
-                });
-              }
+          onArticleSavePress: onArticleSavePressBridge
+            ? this.onArticleSavePress
             : null,
           publicationName,
           recentlyOpenedPuzzleCount,
@@ -120,9 +127,9 @@ class SectionPage extends Component {
       >
         <Section
           analyticsStream={trackSection}
-          onArticlePress={({ id, url }) => onArticlePress(url, id)}
+          onArticlePress={onArticlePress}
           onPuzzleBarPress={onPuzzleBarPress}
-          onPuzzlePress={({ id, title, url }) => onPuzzlePress(url, title, id)}
+          onPuzzlePress={onPuzzlePress}
           section={section}
         />
       </SectionContext.Provider>
