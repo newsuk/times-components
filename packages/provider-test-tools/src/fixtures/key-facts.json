@@ -1,0 +1,111 @@
+{
+  "name": "keyFacts",
+  "attributes": {
+    "title": "Camilla watched"
+  },
+  "children": [
+    {
+      "name": "unorderedList",
+      "children": [
+        {
+          "name": "listElement",
+          "children": [
+            {
+              "name": "paragraph",
+              "children": [
+                {
+                  "name": "bold",
+                  "children": [
+                    {
+                      "name": "text",
+                      "attributes": {
+                        "value": "Silence"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "break",
+                  "children": []
+                },
+                {
+                  "name": "italic",
+                  "children": [
+                    {
+                      "name": "text",
+                      "attributes": {
+                        "value": "15, 161 mins"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "break",
+                  "children": []
+                },
+                {
+                  "name": "text",
+                  "attributes": {
+                    "value": "★★"
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "listElement",
+          "children": [
+            {
+              "name": "paragraph",
+              "children": [
+                {
+                  "name": "bold",
+                  "children": [
+                    {
+                      "name": "text",
+                      "attributes": {
+                        "value": "Rogue One: A Star Wars Story"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "break",
+                  "children": []
+                },
+                {
+                  "name": "italic",
+                  "children": [
+                    {
+                      "name": "text",
+                      "attributes": {
+                        "value": "12A, 134 mins"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "name": "break",
+                  "children": []
+                },
+                {
+                  "name": "text",
+                  "attributes": {
+                    "value": "★★★"
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
