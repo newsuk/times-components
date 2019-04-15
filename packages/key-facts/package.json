@@ -1,6 +1,6 @@
 {
   "name": "@times-components/key-facts",
-  "version": "1.5.39",
+  "version": "1.5.40",
   "description": "Bulleted list of text data",
   "main": "dist/key-facts",
   "dev": "src/key-facts",
@@ -38,10 +38,10 @@
   "devDependencies": {
     "@thetimes/jest-lint": "*",
     "@times-components/eslint-config-thetimes": "0.8.9",
-    "@times-components/jest-configurator": "2.5.2",
+    "@times-components/jest-configurator": "2.5.3",
     "@times-components/jest-serializer": "3.2.0",
-    "@times-components/storybook": "3.4.24",
-    "@times-components/test-utils": "2.2.33",
+    "@times-components/storybook": "3.4.25",
+    "@times-components/test-utils": "2.2.34",
     "@times-components/webpack-configurator": "2.0.15",
     "babel-cli": "6.26.0",
     "depcheck": "0.6.9",
@@ -64,12 +64,12 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/context": "0.9.19",
-    "@times-components/link": "3.3.19",
-    "@times-components/markup": "3.3.51",
-    "@times-components/markup-forest": "1.7.2",
-    "@times-components/responsive": "0.4.22",
-    "@times-components/styleguide": "3.28.4",
+    "@times-components/context": "0.9.20",
+    "@times-components/link": "3.3.20",
+    "@times-components/markup": "3.3.52",
+    "@times-components/markup-forest": "1.7.3",
+    "@times-components/responsive": "0.4.23",
+    "@times-components/styleguide": "3.28.5",
     "lodash.invert": "4.3.0",
     "prop-types": "15.6.2",
     "styled-components": "3.4.0"

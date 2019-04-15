@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.23.4](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.23.1...@times-components/fixture-generator@0.23.4) (2019-04-15)
+
+**Note:** Version bump only for package @times-components/fixture-generator
+
+
+
+
+
 ## [0.23.3](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.23.1...@times-components/fixture-generator@0.23.3) (2019-04-15)
 
 **Note:** Version bump only for package @times-components/fixture-generator
