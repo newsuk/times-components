@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/newsuk/times-components/compare/@times-components/schema@0.5.1...@times-components/schema@0.6.0) (2019-04-12)
+
+
+### Features
+
+* Article Extras package (lazy loading related articles & co) ([#1872](https://github.com/newsuk/times-components/issues/1872)) ([2d425a0](https://github.com/newsuk/times-components/commit/2d425a0))
+
+
+
+
+
+## [0.5.1](https://github.com/newsuk/times-components/compare/@times-components/schema@0.5.0...@times-components/schema@0.5.1) (2019-04-12)
+
+
+### Bug Fixes
+
+* article lead asset on web ([#1873](https://github.com/newsuk/times-components/issues/1873)) ([fb5b967](https://github.com/newsuk/times-components/commit/fb5b967))
+
+
+
+
+
 # [0.5.0](https://github.com/newsuk/times-components/compare/@times-components/schema@0.4.3...@times-components/schema@0.5.0) (2019-04-11)
 
 

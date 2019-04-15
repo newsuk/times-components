@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.31](https://github.com/newsuk/times-components/compare/@times-components/test-utils@2.2.30...@times-components/test-utils@2.2.31) (2019-04-12)
+
+**Note:** Version bump only for package @times-components/test-utils
+
+
+
+
+
+## [2.2.30](https://github.com/newsuk/times-components/compare/@times-components/test-utils@2.2.29...@times-components/test-utils@2.2.30) (2019-04-12)
+
+**Note:** Version bump only for package @times-components/test-utils
+
+
+
+
+
+## [2.2.29](https://github.com/newsuk/times-components/compare/@times-components/test-utils@2.2.28...@times-components/test-utils@2.2.29) (2019-04-12)
+
+**Note:** Version bump only for package @times-components/test-utils
+
+
+
+
+
+## [2.2.28](https://github.com/newsuk/times-components/compare/@times-components/test-utils@2.2.27...@times-components/test-utils@2.2.28) (2019-04-12)
+
+**Note:** Version bump only for package @times-components/test-utils
+
+
+
+
+
 ## [2.2.27](https://github.com/newsuk/times-components/compare/@times-components/test-utils@2.2.26...@times-components/test-utils@2.2.27) (2019-04-11)
 
 **Note:** Version bump only for package @times-components/test-utils

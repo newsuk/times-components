@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.19.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@0.19.0...@times-components/article-main-comment@0.19.1) (2019-04-12)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+# [0.19.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@0.18.11...@times-components/article-main-comment@0.19.0) (2019-04-12)
+
+
+### Features
+
+* Article Extras package (lazy loading related articles & co) ([#1872](https://github.com/newsuk/times-components/issues/1872)) ([2d425a0](https://github.com/newsuk/times-components/commit/2d425a0))
+
+
+
+
+
+## [0.18.11](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@0.18.10...@times-components/article-main-comment@0.18.11) (2019-04-12)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [0.18.10](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@0.18.9...@times-components/article-main-comment@0.18.10) (2019-04-12)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
 ## [0.18.9](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@0.18.8...@times-components/article-main-comment@0.18.9) (2019-04-11)
 
 **Note:** Version bump only for package @times-components/article-main-comment

@@ -32,25 +32,13 @@ export default () => {
 
   shared();
 
-  it("zero comments", async done => {
-    renderComments({
-      count: 0,
-      enabled: true,
-      onReady: testInstance => {
-        expect(testInstance).toMatchSnapshot();
-        done();
-      }
-    });
+  it("zero comments", () => {
+    const testInstance = renderComments({ count: 0, enabled: true });
+    expect(testInstance).toMatchSnapshot();
   });
 
-  it("single comment", async done => {
-    renderComments({
-      count: 1,
-      enabled: true,
-      onReady: testInstance => {
-        expect(testInstance).toMatchSnapshot();
-        done();
-      }
-    });
+  it("single comment", () => {
+    const testInstance = renderComments({ count: 1, enabled: true });
+    expect(testInstance).toMatchSnapshot();
   });
 };

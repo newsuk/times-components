@@ -61,11 +61,6 @@ exports[`full article with style 1`] = `
   display: block;
 }
 
-.c19 {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
 .c0 {
   display: none;
 }
@@ -204,15 +199,6 @@ exports[`full article with style 1`] = `
 @media (min-width:1024px) {
   .c14 {
     width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c19 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
   }
 }
 
@@ -554,11 +540,6 @@ exports[`full article with style 1`] = `
   padding-vertical: 10px;
   margin-top: 30px;
 }
-
-.IS15 {
-  border-top-color: #DBDBDB;
-  border-top-width: 1;
-}
 </style>
 
 <article>
@@ -724,19 +705,7 @@ exports[`full article with style 1`] = `
           <ArticleImage />
         </div>
       </div>
-      <div
-        className="c19 S1"
-      >
-        <nav>
-          <ArticleTopics
-            className="IS15"
-          />
-        </nav>
-      </div>
-      <aside>
-        <RelatedArticles />
-      </aside>
-      <ArticleComments />
+      <ArticleExtras />
     </div>
   </div>
 </article>
@@ -801,11 +770,6 @@ exports[`full article with style in the culture magazine 1`] = `
 
 .c14 {
   display: block;
-}
-
-.c19 {
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 .c0 {
@@ -946,15 +910,6 @@ exports[`full article with style in the culture magazine 1`] = `
 @media (min-width:1024px) {
   .c14 {
     width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c19 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
   }
 }
 
@@ -1297,11 +1252,6 @@ exports[`full article with style in the culture magazine 1`] = `
   padding-vertical: 10px;
   margin-top: 30px;
 }
-
-.IS15 {
-  border-top-color: #DBDBDB;
-  border-top-width: 1;
-}
 </style>
 
 <article>
@@ -1467,19 +1417,7 @@ exports[`full article with style in the culture magazine 1`] = `
           <ArticleImage />
         </div>
       </div>
-      <div
-        className="c19 S1"
-      >
-        <nav>
-          <ArticleTopics
-            className="IS15"
-          />
-        </nav>
-      </div>
-      <aside>
-        <RelatedArticles />
-      </aside>
-      <ArticleComments />
+      <ArticleExtras />
     </div>
   </div>
 </article>
@@ -1544,11 +1482,6 @@ exports[`full article with style in the style magazine 1`] = `
 
 .c14 {
   display: block;
-}
-
-.c19 {
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 .c0 {
@@ -1689,15 +1622,6 @@ exports[`full article with style in the style magazine 1`] = `
 @media (min-width:1024px) {
   .c14 {
     width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c19 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
   }
 }
 
@@ -2040,11 +1964,6 @@ exports[`full article with style in the style magazine 1`] = `
   padding-vertical: 10px;
   margin-top: 30px;
 }
-
-.IS15 {
-  border-top-color: #DBDBDB;
-  border-top-width: 1;
-}
 </style>
 
 <article>
@@ -2210,19 +2129,7 @@ exports[`full article with style in the style magazine 1`] = `
           <ArticleImage />
         </div>
       </div>
-      <div
-        className="c19 S1"
-      >
-        <nav>
-          <ArticleTopics
-            className="IS15"
-          />
-        </nav>
-      </div>
-      <aside>
-        <RelatedArticles />
-      </aside>
-      <ArticleComments />
+      <ArticleExtras />
     </div>
   </div>
 </article>
@@ -2287,11 +2194,6 @@ exports[`full article with style in the sunday times magazine 1`] = `
 
 .c14 {
   display: block;
-}
-
-.c19 {
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 .c0 {
@@ -2432,15 +2334,6 @@ exports[`full article with style in the sunday times magazine 1`] = `
 @media (min-width:1024px) {
   .c14 {
     width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c19 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
   }
 }
 
@@ -2783,11 +2676,6 @@ exports[`full article with style in the sunday times magazine 1`] = `
   padding-vertical: 10px;
   margin-top: 30px;
 }
-
-.IS15 {
-  border-top-color: #DBDBDB;
-  border-top-width: 1;
-}
 </style>
 
 <article>
@@ -2953,19 +2841,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
           <ArticleImage />
         </div>
       </div>
-      <div
-        className="c19 S1"
-      >
-        <nav>
-          <ArticleTopics
-            className="IS15"
-          />
-        </nav>
-      </div>
-      <aside>
-        <RelatedArticles />
-      </aside>
-      <ArticleComments />
+      <ArticleExtras />
     </div>
   </div>
 </article>

@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.23.1](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.23.0...@times-components/fixture-generator@0.23.1) (2019-04-12)
+
+**Note:** Version bump only for package @times-components/fixture-generator
+
+
+
+
+
+# [0.23.0](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.22.12...@times-components/fixture-generator@0.23.0) (2019-04-12)
+
+
+### Features
+
+* Add magazine section ([#1852](https://github.com/newsuk/times-components/issues/1852)) ([edd1903](https://github.com/newsuk/times-components/commit/edd1903))
+
+
+
+
+
+## [0.22.12](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.22.11...@times-components/fixture-generator@0.22.12) (2019-04-12)
+
+**Note:** Version bump only for package @times-components/fixture-generator
+
+
+
+
+
 ## [0.22.11](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.22.10...@times-components/fixture-generator@0.22.11) (2019-04-11)
 
 **Note:** Version bump only for package @times-components/fixture-generator

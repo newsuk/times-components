@@ -40,8 +40,8 @@ exports[`1. daily universal register 1`] = `
         "borderBottomWidth": 1,
         "borderColor": "#DBDBDB",
         "borderStyle": "solid",
-        "marginBottom": 25,
         "marginHorizontal": 10,
+        "marginVertical": 25,
         "width": "100%",
       }
     }
@@ -54,8 +54,8 @@ exports[`1. daily universal register 1`] = `
         "borderBottomWidth": 1,
         "borderColor": "#DBDBDB",
         "borderStyle": "solid",
-        "marginBottom": 25,
         "marginHorizontal": 10,
+        "marginVertical": 25,
         "width": "100%",
       }
     }
@@ -76,8 +76,8 @@ exports[`1. daily universal register 1`] = `
         "borderBottomWidth": 1,
         "borderColor": "#DBDBDB",
         "borderStyle": "solid",
-        "marginBottom": 25,
         "marginHorizontal": 10,
+        "marginVertical": 25,
         "width": "100%",
       }
     }

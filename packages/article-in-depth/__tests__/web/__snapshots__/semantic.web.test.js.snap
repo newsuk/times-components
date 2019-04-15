@@ -121,34 +121,7 @@ exports[`1. a full article 1`] = `
   </nav>
   <aside
     id="related-articles"
-  >
-    <h3
-      aria-level="3"
-      role="heading"
-    >
-      Related articles
-    </h3>
-    <a
-      href="https://some-url.io"
-    >
-      <img
-        alt=""
-        src="https://racrop169.io?resize=100"
-      />
-      RA LABEL
-      <h3
-        aria-level="3"
-        role="heading"
-      >
-        Headline
-      </h3>
-      <time
-        dateTime="2015-03-23T19:39:39.000Z"
-      >
-        March 23 2015, 7:39pm
-      </time>
-    </a>
-  </aside>
+  />
   <p>
     Comments are subject to our community guidelines, which can be viewed
      

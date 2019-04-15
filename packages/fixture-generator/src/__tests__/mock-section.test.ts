@@ -22,6 +22,7 @@ describe("The Mock Magazine Section", () => {
     const magazineSection = mockMagazineSection(title);
     expect(magazineSection).toHaveProperty("id");
     expect(magazineSection).toHaveProperty("slug");
+    expect(magazineSection).toHaveProperty("cover");
     expect(magazineSection.title).toBe(title);
     expect(magazineSection.slices.length).toBeGreaterThan(0);
   });

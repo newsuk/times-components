@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.7.1](https://github.com/newsuk/times-components/compare/@times-components/svgs@2.7.0...@times-components/svgs@2.7.1) (2019-04-12)
+
+
+### Bug Fixes
+
+* images on safari ([#1877](https://github.com/newsuk/times-components/issues/1877)) ([ebd9a7c](https://github.com/newsuk/times-components/commit/ebd9a7c))
+
+
+
+
+
+# [2.7.0](https://github.com/newsuk/times-components/compare/@times-components/svgs@2.6.6...@times-components/svgs@2.7.0) (2019-04-12)
+
+
+### Features
+
+* Add magazine section ([#1852](https://github.com/newsuk/times-components/issues/1852)) ([edd1903](https://github.com/newsuk/times-components/commit/edd1903))
+
+
+
+
+
 ## [2.6.6](https://github.com/newsuk/times-components/compare/@times-components/svgs@2.6.5...@times-components/svgs@2.6.6) (2019-04-11)
 
 **Note:** Version bump only for package @times-components/svgs

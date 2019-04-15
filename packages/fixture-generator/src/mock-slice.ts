@@ -126,7 +126,7 @@ function mockLeadOneAndFourSlice(): LeadOneAndFourSliceWithName {
 function mockStandardSlice(): StandardSliceWithName {
   const tiles = getTiles(5);
   return <StandardSliceWithName>{
-    name: "MagazineSlice",
+    name: "StandardSlice",
     items: tiles
   };
 }

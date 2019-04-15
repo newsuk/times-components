@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. renders correctly 1`] = `
+Array [
+  <div>
+    <nav>
+      <ArticleTopics />
+    </nav>
+  </div>,
+  <aside
+    id="related-articles"
+  >
+    <RelatedArticles
+      isVisible={true}
+    />
+  </aside>,
+  <ArticleComments
+    articleId="dummy-article-id"
+    isEnabled={true}
+    spotAccountId="dummy-spot-id"
+  />,
+]
+`;

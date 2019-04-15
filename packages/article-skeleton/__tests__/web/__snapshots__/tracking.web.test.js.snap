@@ -16,7 +16,6 @@ Array [
         "referralUrl": "",
         "section": "news",
         "template": "mainstandard",
-        "topics": "Football,Manchester United FC,Chelsea FC,Arsenal,Rugby Union",
       },
       "component": "Page",
       "object": "Article",

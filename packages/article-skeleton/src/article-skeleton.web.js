@@ -1,12 +1,10 @@
 import React, { Component, Fragment } from "react";
 import Ad, { AdComposer } from "@times-components/ad";
-import ArticleComments from "@times-components/article-comments";
+import ArticleExtras from "@times-components/article-extras";
 import LazyLoad from "@times-components/lazy-load";
-import RelatedArticles from "@times-components/related-articles";
 import { spacing } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import ArticleBody from "./article-body/article-body";
-import ArticleTopics from "./article-topics";
 import {
   articleSkeletonPropTypes,
   articleSkeletonDefaultProps
@@ -59,18 +57,6 @@ class ArticleSkeleton extends Component {
       spotAccountId
     } = this.props;
     const { articleWidth } = this.state;
-    // eslint-disable-next-line react/prop-types
-    const displayRelatedArticles = ({ isVisible }) =>
-      relatedArticleSlice ? (
-        <RelatedArticles
-          analyticsStream={analyticsStream}
-          isVisible={isVisible}
-          slice={{
-            ...relatedArticleSlice,
-            sliceName: relatedArticleSlice.__typename // eslint-disable-line no-underscore-dangle
-          }}
-        />
-      ) : null;
     const newContent = [...content];
     if (newContent && newContent.length > 0) {
       newContent[0] = insertDropcapIntoAST(
@@ -116,19 +102,17 @@ class ArticleSkeleton extends Component {
                       section={section}
                     />
 
-                    <ArticleTopics topics={topics} />
-                    <aside
-                      id="related-articles"
-                      ref={node => registerNode(node)}
-                    >
-                      {displayRelatedArticles({
-                        isVisible: !!observed.get("related-articles")
-                      })}
-                    </aside>
-                    <ArticleComments
+                    <ArticleExtras
+                      analyticsStream={analyticsStream}
                       articleId={articleId}
-                      isEnabled={commentsEnabled}
+                      commentsEnabled={commentsEnabled}
+                      registerNode={registerNode}
+                      relatedArticleSlice={relatedArticleSlice}
+                      relatedArticlesVisible={
+                        !!observed.get("related-articles")
+                      }
                       spotAccountId={spotAccountId}
+                      topics={topics}
                     />
                   </BodyContainer>
                 </MainContainer>

@@ -22,7 +22,7 @@ exports[`2. daily universal register - medium 1`] = `
 <div>
   <div>
     <Image
-      aspectRatio={5.74}
+      aspectRatio={1}
       uri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
     />
     <div>
@@ -314,15 +314,25 @@ exports[`13. standard slice - medium 1`] = `
 <div>
   <div>
     <div>
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
       <div />
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
       <div />
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
       <div />
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
       <div />
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
     </div>
   </div>
 </div>
@@ -447,7 +457,7 @@ exports[`17. daily universal register - wide 1`] = `
 <div>
   <div>
     <Image
-      aspectRatio={5.74}
+      aspectRatio={1}
       uri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
     />
     <div>
@@ -739,15 +749,25 @@ exports[`28. standard slice - wide 1`] = `
 <div>
   <div>
     <div>
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
       <div />
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
       <div />
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
       <div />
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
       <div />
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
     </div>
   </div>
 </div>
@@ -872,7 +892,7 @@ exports[`32. daily universal register - huge 1`] = `
 <div>
   <div>
     <Image
-      aspectRatio={5.74}
+      aspectRatio={1}
       uri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
     />
     <div>
@@ -1164,15 +1184,25 @@ exports[`43. standard slice - huge 1`] = `
 <div>
   <div>
     <div>
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
       <div />
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
       <div />
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
       <div />
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
       <div />
-      <TileK />
+      <TileK
+        breakpoint="wide"
+      />
     </div>
   </div>
 </div>

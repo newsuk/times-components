@@ -249,76 +249,19 @@ exports[`2. an article with no content 1`] = `
         <View />
       </View>
       <View>
-        <View>
-          <View>
-            <ArticleTopics
-              topics={
-                Array [
-                  Object {
-                    "name": "Topic",
-                    "slug": "topic",
-                  },
-                ]
-              }
-            />
-          </View>
-        </View>
+        <View />
+      </View>
+      <View>
+        <View />
+      </View>
+      <View>
+        <View />
       </View>
       <View>
         <View>
-          <View>
-            <RelatedArticles
-              slice={
-                Object {
-                  "__typename": "StandardSlice",
-                  "items": Array [
-                    Object {
-                      "article": Object {
-                        "__typename": "Article",
-                        "bylines": Array [],
-                        "hasVideo": false,
-                        "headline": "RA Headline",
-                        "id": "ra-1",
-                        "label": "RA Label",
-                        "leadAsset": Object {
-                          "__typename": "Image",
-                          "crop169": Object {
-                            "__typename": "Crop",
-                            "url": "https://racrop169.io",
-                          },
-                          "crop32": Object {
-                            "__typename": "Crop",
-                            "url": "https://racrop32.io",
-                          },
-                          "title": "RA Title",
-                        },
-                        "publicationName": "TIMES",
-                        "publishedTime": "2015-03-23T19:39:39.000Z",
-                        "shortHeadline": "Headline",
-                        "shortIdentifier": "2k629tpvh",
-                        "slug": "this-is-slug",
-                        "summary105": Array [],
-                        "summary125": Array [],
-                        "summary145": Array [],
-                        "summary160": Array [],
-                        "summary175": Array [],
-                        "summary225": Array [],
-                        "url": "https://ra.io",
-                      },
-                    },
-                  ],
-                  "sliceName": "StandardSlice",
-                }
-              }
-            />
-          </View>
-        </View>
-      </View>
-      <View>
-        <View>
-          <ArticleComments
+          <ArticleExtras
             articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-            url="https://url.io"
+            articleUrl="https://url.io"
           />
         </View>
       </View>
@@ -418,10 +361,13 @@ exports[`3. an article with a nested markup in first paragraph displays no drop 
         <View />
       </View>
       <View>
+        <View />
+      </View>
+      <View>
         <View>
-          <ArticleComments
+          <ArticleExtras
             articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-            url="https://url.io"
+            articleUrl="https://url.io"
           />
         </View>
       </View>
@@ -446,7 +392,6 @@ Object {
     "referralUrl": "",
     "section": "Some Section",
     "template": "mainstandard",
-    "topics": "Topic",
   },
   "component": "ArticleLink",
   "object": "Article",

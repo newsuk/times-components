@@ -3,7 +3,7 @@ jest.mock("@times-components/ad", () => require("./ad-mock"));
 jest.mock("@times-components/article-byline", () => ({
   ArticleBylineWithLinks: "ArticleBylineWithLinks"
 }));
-jest.mock("@times-components/article-comments", () => "ArticleComments");
+jest.mock("@times-components/article-extras", () => "ArticleExtras");
 jest.mock("@times-components/article-flag", () => ({
   ArticleFlags: "ArticleFlags"
 }));

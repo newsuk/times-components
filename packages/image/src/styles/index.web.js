@@ -16,7 +16,8 @@ const styles = {
     display: "table",
     height: 0,
     overflow: "hidden",
-    position: "relative"
+    position: "relative",
+    width: "100%"
   }
 };
 

@@ -3,14 +3,12 @@
 import React, { Component } from "react";
 import { View, FlatList } from "react-native";
 import PropTypes from "prop-types";
-import ArticleComments from "@times-components/article-comments";
 import { AdComposer } from "@times-components/ad";
-import RelatedArticles from "@times-components/related-articles";
-import Responsive, { ResponsiveContext } from "@times-components/responsive";
+import Responsive from "@times-components/responsive";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import { screenWidth } from "@times-components/utils";
+import ArticleExtras from "@times-components/article-extras";
 import ArticleRow from "./article-body/article-body-row";
-import ArticleTopics from "./article-topics";
 import {
   articleSkeletonPropTypes,
   articleSkeletonDefaultProps
@@ -32,7 +30,6 @@ const viewabilityConfig = {
 
 const renderRow = (
   rowData,
-  onAuthorPress,
   onCommentsPress,
   onCommentGuidelinesPress,
   onImagePress,
@@ -59,36 +56,16 @@ const renderRow = (
       );
     }
 
-    case "relatedArticleSlice": {
-      const { relatedArticleSlice } = rowData.data;
+    case "articleExtrasRow": {
       return (
-        <ResponsiveContext.Consumer>
-          {({ isTablet }) => (
-            <View style={isTablet && styles.relatedArticlesTablet}>
-              <RelatedArticles
-                analyticsStream={analyticsStream}
-                onPress={onRelatedArticlePress}
-                slice={relatedArticleSlice}
-              />
-            </View>
-          )}
-        </ResponsiveContext.Consumer>
-      );
-    }
-
-    case "topics": {
-      return (
-        <ArticleTopics onPress={onTopicPress} topics={rowData.data.topics} />
-      );
-    }
-
-    case "comments": {
-      return (
-        <ArticleComments
+        <ArticleExtras
+          analyticsStream={analyticsStream}
           articleId={rowData.data.articleId}
+          articleUrl={rowData.data.articleUrl}
           onCommentGuidelinesPress={onCommentGuidelinesPress}
           onCommentsPress={onCommentsPress}
-          url={rowData.data.url}
+          onRelatedArticlePress={onRelatedArticlePress}
+          onTopicPress={onTopicPress}
         />
       );
     }
@@ -129,7 +106,6 @@ class ArticleSkeleton extends Component {
       analyticsStream,
       Header,
       interactiveConfig,
-      onAuthorPress,
       onCommentGuidelinesPress,
       onCommentsPress,
       onImagePress,
@@ -192,7 +168,6 @@ class ArticleSkeleton extends Component {
                 <Gutter>
                   {renderRow(
                     item,
-                    onAuthorPress,
                     onCommentsPress,
                     onCommentGuidelinesPress,
                     onImagePress,
@@ -220,7 +195,6 @@ class ArticleSkeleton extends Component {
 ArticleSkeleton.propTypes = {
   ...articleSkeletonPropTypes,
   interactiveConfig: PropTypes.shape({}),
-  onAuthorPress: PropTypes.func.isRequired,
   onCommentGuidelinesPress: PropTypes.func.isRequired,
   onCommentsPress: PropTypes.func.isRequired,
   onLinkPress: PropTypes.func.isRequired,

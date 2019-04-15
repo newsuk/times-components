@@ -865,7 +865,6 @@ const defaultLeadAsset = {
   title: "Chris Reynolds Gordon at one of his party venues in London"
 };
 const defaultRelatedArticleSlice = {
-  __typename: "StandardSlice",
   items: [
     {
       article: {
@@ -1468,7 +1467,8 @@ const defaultRelatedArticleSlice = {
           "https://www.thetimes.co.uk/article/youtube-ignored-police-pleas-to-remove-threatening-videos-62v2mqp23"
       }
     }
-  ]
+  ],
+  sliceName: "StandardSlice"
 };
 const defaultSection = "news";
 const defaultShortHeadline = "Caribbean islands devastated by Hurricane Irma";
@@ -1663,7 +1663,6 @@ export const testFixture = {
     title: "Some Title"
   },
   relatedArticleSlice: {
-    __typename: "StandardSlice",
     items: [
       {
         article: {
@@ -1699,7 +1698,8 @@ export const testFixture = {
           url: "https://ra.io"
         }
       }
-    ]
+    ],
+    sliceName: "StandardSlice"
   },
   section: "Some Section",
   shortHeadline: "Some Short Headline",
