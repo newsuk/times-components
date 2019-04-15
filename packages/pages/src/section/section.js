@@ -8,6 +8,7 @@ import trackSection from "./track-section";
 const {
   getOpenedPuzzleCount,
   getSavedArticles,
+  getSectionData,
   onArticlePress,
   onPuzzleBarPress = () => {},
   onPuzzlePress,
@@ -21,24 +22,32 @@ const {
 class SectionPage extends Component {
   constructor(props) {
     super(props);
+    const { section } = this.props;
     this.state = {
       recentlyOpenedPuzzleCount: props ? props.recentlyOpenedPuzzleCount : 0,
-      savedArticles: null
+      savedArticles: null,
+      section
     };
     this.onAppStateChange = this.onAppStateChange.bind(this);
     this.toggleArticleSaveStatus = this.toggleArticleSaveStatus.bind(this);
     this.syncAppData = this.syncAppData.bind(this);
+    this.updateSectionData = this.updateSectionData.bind(this);
   }
 
   componentDidMount() {
     AppState.addEventListener("change", this.onAppStateChange);
     DeviceEventEmitter.addListener("updateSavedArticles", this.syncAppData);
+    DeviceEventEmitter.addListener("updateSectionData", this.updateSectionData);
     this.syncAppData();
   }
 
   componentWillUnmount() {
     AppState.removeEventListener("change", this.onAppStateChange);
-    DeviceEventEmitter.removeAllListeners("updateSavedArticles");
+    DeviceEventEmitter.removeListener("updateSavedArticles", this.syncAppData);
+    DeviceEventEmitter.removeListener(
+      "updateSectionData",
+      this.updateSectionData
+    );
   }
 
   onAppStateChange(nextAppState) {
@@ -50,7 +59,7 @@ class SectionPage extends Component {
   syncAppData() {
     const {
       section: { name }
-    } = this.props;
+    } = this.state;
     if (name === "PuzzleSection" && getOpenedPuzzleCount) {
       getOpenedPuzzleCount().then(count => {
         this.setState({ recentlyOpenedPuzzleCount: count });
@@ -71,6 +80,17 @@ class SectionPage extends Component {
     }
   }
 
+  updateSectionData() {
+    const {
+      section: { id }
+    } = this.props;
+    if (getSectionData) {
+      getSectionData(id).then(data => {
+        this.setState({ section: data });
+      });
+    }
+  }
+
   toggleArticleSaveStatus(save, articleId) {
     const { savedArticles } = this.state;
     savedArticles[articleId] = save || undefined;
@@ -78,8 +98,8 @@ class SectionPage extends Component {
   }
 
   render() {
-    const { publicationName, section } = this.props;
-    const { recentlyOpenedPuzzleCount, savedArticles } = this.state;
+    const { publicationName } = this.props;
+    const { recentlyOpenedPuzzleCount, savedArticles, section } = this.state;
 
     return (
       <SectionContext.Provider
