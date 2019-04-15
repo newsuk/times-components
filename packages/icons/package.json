@@ -1,6 +1,6 @@
 {
   "name": "@times-components/icons",
-  "version": "2.10.16",
+  "version": "2.10.18",
   "description": "Times SVG Icons",
   "main": "dist/icons",
   "dev": "src/icons",
@@ -38,10 +38,10 @@
   "devDependencies": {
     "@thetimes/jest-lint": "*",
     "@times-components/eslint-config-thetimes": "0.8.9",
-    "@times-components/jest-configurator": "2.5.1",
+    "@times-components/jest-configurator": "2.5.2",
     "@times-components/jest-serializer": "3.2.0",
-    "@times-components/storybook": "3.4.22",
-    "@times-components/test-utils": "2.2.31",
+    "@times-components/storybook": "3.4.24",
+    "@times-components/test-utils": "2.2.33",
     "@times-components/webpack-configurator": "2.0.15",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.4",
@@ -63,9 +63,9 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/styleguide": "3.28.2",
-    "@times-components/svgs": "2.7.1",
-    "@times-components/utils": "4.10.0",
+    "@times-components/styleguide": "3.28.4",
+    "@times-components/svgs": "2.7.2",
+    "@times-components/utils": "4.10.2",
     "prop-types": "15.6.2"
   },
   "peerDependencies": {
