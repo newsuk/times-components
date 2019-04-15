@@ -562,7 +562,7 @@ exports[`8. primary image with caption and credits with center caption override 
 </ContextProviderWithDefaults>
 `;
 
-exports[`9. secondary image with caption and credits with center caption override 1`] = `
+exports[`7. secondary image with caption and credits with center caption override 1`] = `
 .c0 {
   display: block;
   opacity: 0;

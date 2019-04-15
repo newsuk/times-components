@@ -143,14 +143,6 @@ export default class Character extends Positioned {
     );
   }
 
-  draw(ctx) {
-    this._glyph._fill.style = this.fillColor;
-    this._glyph._fill.matrix = null;
-    this._glyph._stroke.style = this.strokeColor;
-    this._glyph._strokeStyle.width = this.strokeWidth;
-    return this._glyph.draw(ctx);
-  }
-
   getWidth() {
     return this.size * this.glyph.offset;
   }

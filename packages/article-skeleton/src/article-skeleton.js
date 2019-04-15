@@ -3,14 +3,13 @@ import React, { Component } from "react";
 import { View, FlatList, Text, Dimensions } from "react-native";
 import PropTypes from "prop-types";
 import { AdComposer } from "@times-components/ad";
-import Responsive from "@times-components/responsive";
+import Responsive, { ResponsiveContext } from "@times-components/responsive";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import { screenWidth } from "@times-components/utils";
 import ArticleExtras from "@times-components/article-extras";
 import { Layout, Text as FText } from "@times-components/text-flow";
 import { tabletWidth, tabletWidthMax } from "@times-components/styleguide";
 import ArticleRowFlow from "./article-body/article-body-row";
-import ArticleTopics from "./article-topics";
 import {
   articleSkeletonPropTypes,
   articleSkeletonDefaultProps
@@ -187,7 +186,6 @@ class ArticleSkeleton extends Component {
   layout() {
     const {
       interactiveConfig,
-      onCommentGuidelinesPress,
       onLinkPress,
       onTwitterLinkPress,
       onVideoPress,
