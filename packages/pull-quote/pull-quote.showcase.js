@@ -16,7 +16,7 @@ const content =
   "[The judgement was] taken because of the evidence available in the court today, that the grandmother is an appropriate carer for the child";
 const caption = "Judge Sapnara";
 const title = "Author";
-const twitter = "@henrywinter";
+const twitter = "@JudgeSapnara";
 
 export default {
   children: [

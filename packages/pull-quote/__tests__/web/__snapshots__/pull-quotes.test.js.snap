@@ -123,7 +123,7 @@ exports[`5. with a twitter handle 1`] = `
       <div>
         <IconTwitter
           height={10}
-          width={12}
+          width={11}
         />
         <TextLink
           target="_blank"
