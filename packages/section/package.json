@@ -52,7 +52,7 @@
     "@times-components/fixture-generator": "0.23.1",
     "@times-components/jest-configurator": "2.5.1",
     "@times-components/jest-serializer": "3.2.0",
-    "@times-components/link": "3.3.13",
+    "@times-components/link": "3.3.17",
     "@times-components/star-button": "0.1.13",
     "@times-components/storybook": "3.4.22",
     "@times-components/tealium-utils": "0.7.38",
