@@ -30,9 +30,10 @@ exports[`1. daily universal register 1`] = `
   border-top-color: rgba(219,219,219,1.00);
   border-right-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
+  margin-top: 25px;
   margin-right: 10px;
-  margin-left: 10px;
   margin-bottom: 25px;
+  margin-left: 10px;
   width: 100%;
 }
 
@@ -42,9 +43,10 @@ exports[`1. daily universal register 1`] = `
   border-top-color: rgba(219,219,219,1.00);
   border-right-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
+  margin-top: 25px;
   margin-right: 10px;
-  margin-left: 10px;
   margin-bottom: 25px;
+  margin-left: 10px;
   width: 100%;
 }
 
@@ -59,9 +61,10 @@ exports[`1. daily universal register 1`] = `
   border-top-color: rgba(219,219,219,1.00);
   border-right-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
+  margin-top: 25px;
   margin-right: 10px;
-  margin-left: 10px;
   margin-bottom: 25px;
+  margin-left: 10px;
   width: 100%;
 }
 
@@ -106,7 +109,7 @@ exports[`1. daily universal register 1`] = `
     className="IS8 S2"
   >
     <Image
-      aspectRatio={5.74}
+      aspectRatio={1}
       className="IS1"
       uri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
     />

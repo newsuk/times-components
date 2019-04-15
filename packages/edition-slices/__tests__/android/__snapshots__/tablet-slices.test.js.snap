@@ -938,18 +938,23 @@ exports[`32. daily universal register - huge 1`] = `
     <Text>
       Daily Universal Register
     </Text>
-    <View />
     <View>
       <View>
-        <TileS />
+        <View />
+        <View>
+          <TileS />
+        </View>
       </View>
       <View>
-        <TileS />
+        <View />
+        <View>
+          <TileS />
+        </View>
       </View>
     </View>
-    <View />
     <View>
       <View>
+        <View />
         <Image
           resizeMode="contain"
           source={
@@ -963,6 +968,7 @@ exports[`32. daily universal register - huge 1`] = `
         </View>
       </View>
       <View>
+        <View />
         <Image
           resizeMode="contain"
           source={
