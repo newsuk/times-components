@@ -4,8 +4,8 @@ const React = require("react");
 const { ApolloProvider } = require("react-apollo");
 const { ArticleProvider } = require("@times-components/provider/rnw");
 const Article = require("@times-components/article/rnw").default;
-const Context = require("@times-components/context/rnw").default;
-const { scales, colours } = require("@times-components/styleguide/rnw");
+const { default: Context, defaults } = require("@times-components/context/rnw");
+const { scales, themeFactory } = require("@times-components/styleguide/rnw");
 
 const scale = scales.large;
 
@@ -34,7 +34,10 @@ module.exports = (client, analyticsStream, data) => {
           {
             value: {
               makeArticleUrl,
-              theme: { scale, sectionColour: colours.section[article.section] }
+              theme: {
+                ...themeFactory(article.section, article.template),
+                scale: scale || defaults.theme.scale
+              }
             }
           },
           React.createElement(Article, {
