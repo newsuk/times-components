@@ -1,3 +1,4 @@
+/* eslint-disable no-continue */
 import Container from "./Container";
 import Text from "../Text/Text";
 import Block from "./Block";

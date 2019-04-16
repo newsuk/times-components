@@ -1,13 +1,13 @@
 import React from "react";
-import { View, Text } from 'react-native'
+import { View, Text } from "react-native";
 import Context from "@times-components/context";
 import { scales, themeFactory } from "@times-components/styleguide";
 import { renderTree } from "@times-components/markup-forest";
 import "./mock-text-measure-module";
-import ArticleParagraph from "../src";
-import { Markup, Layout, Text as FText } from "@times-components/text-flow";
+import { Text as FText } from "@times-components/text-flow";
 import { flow } from "@times-components/markup";
-import Responsive, { ResponsiveContext } from "@times-components/responsive";
+import Responsive from "@times-components/responsive";
+import ArticleParagraph from "../src";
 
 export default (ast, section = "default") => {
   const theme = themeFactory(section, "magazinestandard");
@@ -27,7 +27,7 @@ export default (ast, section = "default") => {
               >
                 {spans}
               </ArticleParagraph>
-            )
+            );
           },
           lineHeight: 30,
           markup: children,
@@ -37,24 +37,18 @@ export default (ast, section = "default") => {
       };
     }
   });
-  const internals = rendered.getComponent(style => {
-    return (<View>
+  const internals = rendered.getComponent(style => (
+    <View>
       <Text selectable style={style}>
         {rendered.idealSpans.map(span => {
           if (span.href) {
             return span.href(span);
           }
-          return (
-            <Text
-              selectable
-            >
-              {span.text}
-            </Text>
-          );
+          return <Text selectable>{span.text}</Text>;
         })}
       </Text>
-    </View>)
-  })
+    </View>
+  ));
   return (
     <Context.Provider
       value={{
@@ -63,9 +57,7 @@ export default (ast, section = "default") => {
         }
       }}
     >
-      <Responsive>
-        {internals}
-      </Responsive>
+      <Responsive>{internals}</Responsive>
     </Context.Provider>
   );
 };

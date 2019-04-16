@@ -54,6 +54,7 @@
     "@times-components/storybook": "4.0.0",
     "@times-components/test-utils": "2.2.36",
     "@times-components/webpack-configurator": "2.0.15",
+    "@times-components/text-flow": "0.0.1",
     "babel-cli": "6.26.0",
     "babel-plugin-styled-components": "1.5.1",
     "eslint": "5.9.0",

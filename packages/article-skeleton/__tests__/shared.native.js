@@ -49,12 +49,11 @@ export default () => {
     <ArticleSkeleton
       {...articleSkeletonProps}
       adConfig={adConfig}
-      analyticsStream={stream || (() => { })}
+      analyticsStream={stream || (() => {})}
       data={articleFixture({
         ...testFixture,
         content: [
           {
-            name: "paragraph",
             children: [
               {
                 attributes: {
@@ -72,18 +71,19 @@ export default () => {
                 ],
                 name: "link"
               }
-            ]
+            ],
+            name: "paragraph"
           }
         ]
       })}
-      onAuthorPress={() => { }}
-      onCommentGuidelinesPress={() => { }}
-      onCommentsPress={() => { }}
-      onLinkPress={onLinkPress || (() => { })}
-      onRelatedArticlePress={() => { }}
-      onTopicPress={() => { }}
-      onTwitterLinkPress={() => { }}
-      onVideoPress={() => { }}
+      onAuthorPress={() => {}}
+      onCommentGuidelinesPress={() => {}}
+      onCommentsPress={() => {}}
+      onLinkPress={onLinkPress || (() => {})}
+      onRelatedArticlePress={() => {}}
+      onTopicPress={() => {}}
+      onTwitterLinkPress={() => {}}
+      onVideoPress={() => {}}
     />
   );
 
@@ -97,7 +97,7 @@ export default () => {
           renderArticle({ onLinkPress })
         );
 
-        expect(testInstance).toMatchSnapshot()
+        expect(testInstance).toMatchSnapshot();
 
         const [link] = testInstance.root.findAllByType(TextLink);
 

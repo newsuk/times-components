@@ -405,11 +405,11 @@ export default [
     },
     children: [
       {
-        name: "text",
         attributes: {
           value: "A pull quote is here."
         },
-        children: []
+        children: [],
+        name: "text"
       }
     ],
     name: "pullQuote"

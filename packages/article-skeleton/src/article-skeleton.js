@@ -217,7 +217,7 @@ class ArticleSkeleton extends Component {
       .map(({ data }) => data);
 
     if (!rows.length) {
-      return null
+      return null;
     }
 
     const others = articleData.filter(row => row.type !== "articleBodyRow");
@@ -303,11 +303,11 @@ class ArticleSkeleton extends Component {
       onCommentsPress,
       onRelatedArticlePress,
       onTopicPress,
-      onViewed,
+      onViewed
     } = this.props;
     const { width, content, dataSource } = this.state;
     if (!dataSource.content) {
-      return null
+      return null;
     }
 
     return (
