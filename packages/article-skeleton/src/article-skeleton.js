@@ -303,9 +303,12 @@ class ArticleSkeleton extends Component {
       onCommentsPress,
       onRelatedArticlePress,
       onTopicPress,
-      onViewed
+      onViewed,
     } = this.props;
-    const { width, content } = this.state;
+    const { width, content, dataSource } = this.state;
+    if (!dataSource.content) {
+      return null
+    }
 
     return (
       <AdComposer adConfig={adConfig}>
