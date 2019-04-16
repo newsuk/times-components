@@ -29,18 +29,22 @@ const preventDefaultedAction = decorateAction =>
 
 const FLAGS = 1;
 const HEADLINE = 2;
-const LABEL = 4;
-const LEAD_ASSET = 8;
-const LINKED_BYLINE = 16;
-const STANDFIRST = 32;
-const VIDEO = 64;
+const KEY_FACTS = 4;
+const LABEL = 8;
+const LEAD_ASSET = 16;
+const LINKED_BYLINE = 32;
+const PULL_QUOTE = 64;
+const STANDFIRST = 128;
+const VIDEO = 256;
 
 export const makeArticleConfiguration = ({
   withFlags,
   withHeadline,
+  withKeyFacts,
   withLabel,
   withLeadAsset,
   withLinkedByline,
+  withPullQuote,
   withStandfirst,
   withVideo
 }) => {
@@ -54,6 +58,10 @@ export const makeArticleConfiguration = ({
     mask = mask | HEADLINE;
   }
 
+  if (withKeyFacts) {
+    mask = mask | KEY_FACTS;
+  }
+
   if (withLabel) {
     mask = mask | LABEL;
   }
@@ -64,6 +72,10 @@ export const makeArticleConfiguration = ({
 
   if (withLinkedByline) {
     mask = mask | LINKED_BYLINE;
+  }
+
+  if (withPullQuote) {
+    mask = mask | PULL_QUOTE;
   }
 
   if (withStandfirst) {
@@ -79,6 +91,7 @@ export const makeArticleConfiguration = ({
 
 const makeArticle = configuration => article => {
   const configuredArticle = { ...article };
+  const extraContent = [];
 
   if (!(configuration & FLAGS)) {
     configuredArticle.expirableFlags = [];
@@ -86,6 +99,14 @@ const makeArticle = configuration => article => {
 
   if (!(configuration & HEADLINE)) {
     configuredArticle.headline = null;
+  }
+
+  if (configuration & KEY_FACTS) {
+    configuredArticle.content = [
+      ...configuredArticle.content.slice(0, 2),
+      fixtures.keyFacts,
+      ...configuredArticle.content.slice(2)
+    ];
   }
 
   if (!(configuration & LABEL)) {
@@ -100,13 +121,22 @@ const makeArticle = configuration => article => {
     configuredArticle.bylines = fixtures.bylineWithLink;
   }
 
+  if (configuration & PULL_QUOTE) {
+    extraContent.push(fixtures.pullQuote);
+  }
+
   if (!(configuration & STANDFIRST)) {
     configuredArticle.standfirst = null;
   }
 
-  if (!(configuration & VIDEO)) {
+  if (configuration & VIDEO) {
+    extraContent.unshift(fixtures.inlineVideo);
+  } else {
     configuredArticle.hasVideo = false;
   }
+
+  configuredArticle.content = [...extraContent, ...configuredArticle.content];
+  configuredArticle.paywalledContent = [...configuredArticle.content];
 
   return configuredArticle;
 };
@@ -260,9 +290,11 @@ const renderArticleConfig = ({
   const id = "263b03a1-2ce6-4b94-b053-0d35316548c5";
   const withFlags = boolean("Flags", true);
   const withHeadline = boolean("Headline", true);
+  const withKeyFacts = boolean("Key Facts", false);
   const withLabel = boolean("Label", true);
   const withLeadAsset = boolean("Lead Asset", true);
   const withLinkedByline = boolean("Linked Byline", true);
+  const withPullQuote = boolean("Pull Quote", false);
   const withStandfirst = boolean("Standfirst", true);
   const withVideo = boolean("Video", true);
 
@@ -286,9 +318,11 @@ const renderArticleConfig = ({
           configuration={makeArticleConfiguration({
             withFlags,
             withHeadline,
+            withKeyFacts,
             withLabel,
             withLeadAsset,
             withLinkedByline,
+            withPullQuote,
             withStandfirst,
             withVideo
           })}

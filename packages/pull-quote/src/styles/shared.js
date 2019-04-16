@@ -34,7 +34,7 @@ const sharedStyles = {
       fontSize: "link"
     }),
     color: colours.functional.action,
-    marginLeft: 3,
+    marginLeft: 4,
     textDecorationLine: "none"
   },
   text: {
@@ -51,7 +51,7 @@ const sharedStyles = {
     borderLeftWidth: 1,
     display: "flex",
     flexDirection: "row",
-    height: 15,
+    height: 13,
     marginLeft: 7,
     paddingLeft: 7
   }

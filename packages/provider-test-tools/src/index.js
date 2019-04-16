@@ -15,6 +15,9 @@ import MockFixture, { schemaToMocks } from "./mock-fixture";
 import nativeEdition from "./native-edition";
 import providerTester from "./provider-tester";
 import topic from "./topic";
+import inlineVideo from "./fixtures/inline-video.json";
+import keyFacts from "./fixtures/key-facts.json";
+import pullQuote from "./fixtures/pull-quote.json";
 import topicArticles from "./fixtures/topic-articles.json";
 import topicHead from "./fixtures/topic.json";
 import video from "../fixtures/video.json";
@@ -24,6 +27,9 @@ const fixtures = {
   articleListWithImages,
   author,
   bylineWithLink,
+  inlineVideo,
+  keyFacts,
+  pullQuote,
   topic: topicHead,
   topicArticles,
   video

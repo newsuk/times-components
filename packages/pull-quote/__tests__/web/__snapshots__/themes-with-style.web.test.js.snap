@@ -8,6 +8,10 @@ exports[`1. pull quote in culture magazine 1`] = `
   line-height: 30px;
 }
 
+.c0 cite {
+  font-style: normal;
+}
+
 @media (min-width:768px) {
   .c0 {
     font-size: 30px;
@@ -140,6 +144,10 @@ exports[`2. pull quote in style magazine 1`] = `
   line-height: 30px;
 }
 
+.c0 cite {
+  font-style: normal;
+}
+
 @media (min-width:768px) {
   .c0 {
     font-size: 30px;
@@ -270,6 +278,10 @@ exports[`3. pull quote in the sunday times magazine 1`] = `
   font-family: "TimesModern-Regular";
   font-size: 25px;
   line-height: 30px;
+}
+
+.c0 cite {
+  font-style: normal;
 }
 
 @media (min-width:768px) {

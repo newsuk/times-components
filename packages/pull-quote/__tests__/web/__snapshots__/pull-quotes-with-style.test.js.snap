@@ -8,6 +8,10 @@ exports[`different colours 1`] = `
   line-height: 30px;
 }
 
+.c0 cite {
+  font-style: normal;
+}
+
 @media (min-width:768px) {
   .c0 {
     font-size: 30px;
@@ -64,7 +68,7 @@ exports[`different colours 1`] = `
   -webkit-box-orient: horizontal;
   -webkit-flex-direction: row;
   flex-direction: row;
-  height: 15px;
+  height: 13px;
   margin-top: 0px;
   margin-bottom: 0px;
   margin-left: 7px;
@@ -120,7 +124,7 @@ exports[`different colours 1`] = `
   font-size: 13;
   line-height: 13;
   color: #006699;
-  margin-left: 3;
+  margin-left: 4;
   text-decoration-line: none;
 }
 </style>
@@ -161,7 +165,7 @@ exports[`different colours 1`] = `
       >
         <IconTwitter
           height={10}
-          width={12}
+          width={11}
         />
         <TextLink
           className="IS2"
