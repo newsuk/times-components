@@ -34,7 +34,25 @@ exports[`4. iconstar sets a width when height is set 1`] = `
 />
 `;
 
-exports[`5. icontwitter sets a width when height is set 1`] = `
+exports[`5. iconcopylink sets a width when height is set 1`] = `
+<svg
+  aria-label="[title]"
+  height={50}
+  role="img"
+  width={15}
+/>
+`;
+
+exports[`6. iconsavebookmark sets a width when height is set 1`] = `
+<svg
+  aria-label="[title]"
+  height={50}
+  role="img"
+  width={12}
+/>
+`;
+
+exports[`7. icontwitter sets a width when height is set 1`] = `
 <svg
   aria-label="[title]"
   height={50}
@@ -43,7 +61,7 @@ exports[`5. icontwitter sets a width when height is set 1`] = `
 />
 `;
 
-exports[`6. iconvideo sets a width when height is set 1`] = `
+exports[`8. iconvideo sets a width when height is set 1`] = `
 <svg
   aria-label="[title]"
   height={50}
@@ -52,7 +70,7 @@ exports[`6. iconvideo sets a width when height is set 1`] = `
 />
 `;
 
-exports[`7. iconvideo360player sets a width when height is set 1`] = `
+exports[`9. iconvideo360player sets a width when height is set 1`] = `
 <svg
   aria-label="[title]"
   height={50}
@@ -61,7 +79,7 @@ exports[`7. iconvideo360player sets a width when height is set 1`] = `
 />
 `;
 
-exports[`8. thestlogo sets a width when height is set 1`] = `
+exports[`10. thestlogo sets a width when height is set 1`] = `
 <svg
   aria-label="[title]"
   height={50}
@@ -70,7 +88,7 @@ exports[`8. thestlogo sets a width when height is set 1`] = `
 />
 `;
 
-exports[`9. thetimeslogo sets a width when height is set 1`] = `
+exports[`11. thetimeslogo sets a width when height is set 1`] = `
 <svg
   aria-label="[title]"
   height={50}

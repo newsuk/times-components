@@ -247,7 +247,111 @@ exports[`4. iconstar renders 1`] = `
 </ARTSurfaceView>
 `;
 
-exports[`5. icontwitter renders 1`] = `
+exports[`5. iconcopylink renders 1`] = `
+<ARTSurfaceView
+  style={
+    Object {
+      "height": 20,
+      "width": 20,
+    }
+  }
+>
+  <ARTGroup
+    transform={
+      Array [
+        1.3333333333333333,
+        0,
+        0,
+        1.3333333333333333,
+        0,
+        0,
+      ]
+    }
+  >
+    <ARTShape
+      d="1217dca6be4eb06805fca6189c3641aa"
+      fill={
+        Array [
+          0,
+          0.4117647058823529,
+          0.4117647058823529,
+          0.4117647058823529,
+          1,
+        ]
+      }
+      stroke={null}
+      strokeCap={1}
+      strokeDash={null}
+      strokeJoin={1}
+      strokeWidth={1}
+      transform={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+    />
+  </ARTGroup>
+</ARTSurfaceView>
+`;
+
+exports[`6. iconsavebookmark renders 1`] = `
+<ARTSurfaceView
+  style={
+    Object {
+      "height": 26.666666666666668,
+      "width": 20,
+    }
+  }
+>
+  <ARTGroup
+    transform={
+      Array [
+        1.6666666666666667,
+        0,
+        0,
+        1.6666666666666667,
+        0,
+        0,
+      ]
+    }
+  >
+    <ARTShape
+      d="80d9068e9458b98ad0e7ab404f81dffa"
+      fill={
+        Array [
+          0,
+          0.4117647058823529,
+          0.4117647058823529,
+          0.4117647058823529,
+          1,
+        ]
+      }
+      stroke={null}
+      strokeCap={1}
+      strokeDash={null}
+      strokeJoin={1}
+      strokeWidth={1}
+      transform={
+        Array [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+        ]
+      }
+    />
+  </ARTGroup>
+</ARTSurfaceView>
+`;
+
+exports[`7. icontwitter renders 1`] = `
 <ARTSurfaceView
   style={
     Object {
@@ -299,7 +403,7 @@ exports[`5. icontwitter renders 1`] = `
 </ARTSurfaceView>
 `;
 
-exports[`6. iconvideo renders 1`] = `
+exports[`8. iconvideo renders 1`] = `
 <ARTSurfaceView
   style={
     Object {
@@ -378,7 +482,7 @@ exports[`6. iconvideo renders 1`] = `
 </ARTSurfaceView>
 `;
 
-exports[`7. iconvideo360player renders 1`] = `
+exports[`9. iconvideo360player renders 1`] = `
 <ARTSurfaceView
   style={
     Object {
@@ -430,7 +534,7 @@ exports[`7. iconvideo360player renders 1`] = `
 </ARTSurfaceView>
 `;
 
-exports[`8. thestlogo renders 1`] = `
+exports[`10. thestlogo renders 1`] = `
 <ARTSurfaceView
   style={
     Object {
@@ -482,7 +586,7 @@ exports[`8. thestlogo renders 1`] = `
 </ARTSurfaceView>
 `;
 
-exports[`9. thetimeslogo renders 1`] = `
+exports[`11. thetimeslogo renders 1`] = `
 <ARTSurfaceView
   style={
     Object {

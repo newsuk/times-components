@@ -75,7 +75,43 @@ exports[`4. iconstar renders 1`] = `
 </svg>
 `;
 
-exports[`5. icontwitter renders 1`] = `
+exports[`5. iconcopylink renders 1`] = `
+<svg
+  aria-label="[title]"
+  height={15}
+  role="img"
+  viewBox="7798bdae936d01418f5704cad29092ad"
+  width={20}
+>
+  <title>
+    IconCopyLink
+  </title>
+  <path
+    d="9caedb2f218a37cd4660f2ab42e9b771"
+    fill="#696969"
+  />
+</svg>
+`;
+
+exports[`6. iconsavebookmark renders 1`] = `
+<svg
+  aria-label="[title]"
+  height={16}
+  role="img"
+  viewBox="192c9a888d6def500471679101ad9f5c"
+  width={20}
+>
+  <title>
+    IconSaveBookmark
+  </title>
+  <path
+    d="25ee7ee33953337725fa0c3787ab3241"
+    fill="#696969"
+  />
+</svg>
+`;
+
+exports[`7. icontwitter renders 1`] = `
 <svg
   aria-label="[title]"
   role="img"
@@ -92,7 +128,7 @@ exports[`5. icontwitter renders 1`] = `
 </svg>
 `;
 
-exports[`6. iconvideo renders 1`] = `
+exports[`8. iconvideo renders 1`] = `
 <svg
   aria-label="[title]"
   role="img"
@@ -116,7 +152,7 @@ exports[`6. iconvideo renders 1`] = `
 </svg>
 `;
 
-exports[`7. iconvideo360player renders 1`] = `
+exports[`9. iconvideo360player renders 1`] = `
 <svg
   aria-label="[title]"
   role="img"
@@ -133,7 +169,7 @@ exports[`7. iconvideo360player renders 1`] = `
 </svg>
 `;
 
-exports[`8. thestlogo renders 1`] = `
+exports[`10. thestlogo renders 1`] = `
 <svg
   aria-label="[title]"
   role="img"
@@ -150,7 +186,7 @@ exports[`8. thestlogo renders 1`] = `
 </svg>
 `;
 
-exports[`9. thetimeslogo renders 1`] = `
+exports[`11. thetimeslogo renders 1`] = `
 <svg
   aria-label="[title]"
   role="img"
