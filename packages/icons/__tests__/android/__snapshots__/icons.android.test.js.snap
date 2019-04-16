@@ -400,7 +400,147 @@ exports[`4. iconstar renders 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`5. icontwitter renders 1`] = `
+exports[`5. iconcopylink renders 1`] = `
+<RNSVGSvgView
+  align="xMidYMid"
+  bbHeight="15"
+  bbWidth="20"
+  meetOrSlice={0}
+  minX={0}
+  minY={0}
+  role="img"
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "flex": 0,
+      "height": 15,
+      "width": 20,
+    }
+  }
+  title="IconCopyLink"
+  vbHeight={15}
+  vbWidth={15}
+>
+  <RNSVGPath
+    d="9caedb2f218a37cd4660f2ab42e9b771"
+    fill={
+      Array [
+        0,
+        0.4117647058823529,
+        0.4117647058823529,
+        0.4117647058823529,
+        1,
+      ]
+    }
+    fillOpacity={1}
+    fillRule={1}
+    matrix={
+      Array [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+      ]
+    }
+    originX={0}
+    originY={0}
+    propList={
+      Array [
+        "fill",
+      ]
+    }
+    rotation={0}
+    scaleX={1}
+    scaleY={1}
+    skewX={0}
+    skewY={0}
+    stroke={null}
+    strokeDasharray={null}
+    strokeDashoffset={null}
+    strokeLinecap={0}
+    strokeLinejoin={0}
+    strokeMiterlimit={4}
+    strokeOpacity={1}
+    strokeWidth="1"
+    x={0}
+    y={0}
+  />
+</RNSVGSvgView>
+`;
+
+exports[`6. iconsavebookmark renders 1`] = `
+<RNSVGSvgView
+  align="xMidYMid"
+  bbHeight="16"
+  bbWidth="20"
+  meetOrSlice={0}
+  minX={0}
+  minY={0}
+  role="img"
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "flex": 0,
+      "height": 16,
+      "width": 20,
+    }
+  }
+  title="IconSaveBookmark"
+  vbHeight={16}
+  vbWidth={12}
+>
+  <RNSVGPath
+    d="25ee7ee33953337725fa0c3787ab3241"
+    fill={
+      Array [
+        0,
+        0.4117647058823529,
+        0.4117647058823529,
+        0.4117647058823529,
+        1,
+      ]
+    }
+    fillOpacity={1}
+    fillRule={1}
+    matrix={
+      Array [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+      ]
+    }
+    originX={0}
+    originY={0}
+    propList={
+      Array [
+        "fill",
+      ]
+    }
+    rotation={0}
+    scaleX={1}
+    scaleY={1}
+    skewX={0}
+    skewY={0}
+    stroke={null}
+    strokeDasharray={null}
+    strokeDashoffset={null}
+    strokeLinecap={0}
+    strokeLinejoin={0}
+    strokeMiterlimit={4}
+    strokeOpacity={1}
+    strokeWidth="1"
+    x={0}
+    y={0}
+  />
+</RNSVGSvgView>
+`;
+
+exports[`7. icontwitter renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   bbHeight="undefined"
@@ -467,7 +607,7 @@ exports[`5. icontwitter renders 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`6. iconvideo renders 1`] = `
+exports[`8. iconvideo renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   bbHeight="undefined"
@@ -583,7 +723,7 @@ exports[`6. iconvideo renders 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`7. iconvideo360player renders 1`] = `
+exports[`9. iconvideo360player renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   bbHeight="undefined"
@@ -650,7 +790,7 @@ exports[`7. iconvideo360player renders 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`8. thestlogo renders 1`] = `
+exports[`10. thestlogo renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   bbHeight="undefined"
@@ -717,7 +857,7 @@ exports[`8. thestlogo renders 1`] = `
 </RNSVGSvgView>
 `;
 
-exports[`9. thetimeslogo renders 1`] = `
+exports[`11. thetimeslogo renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   bbHeight="undefined"

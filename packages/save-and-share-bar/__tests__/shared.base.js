@@ -1,17 +1,17 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
-import SaveAndShareBar from "../src/save-and-share-bar";
 import Link from "@times-components/link";
+import SaveAndShareBar from "../src/save-and-share-bar";
 
 jest.mock("@times-components/link", () => "Link");
 
 jest.mock("@times-components/icons", () => ({
+  IconCopyLink: "IconCopyLink",
   IconEmail: "IconEmail",
   IconFacebook: "IconFacebook",
-  IconTwitter: "IconTwitter",
   IconSaveBookmark: "IconSaveBookmark",
-  IconCopyLink: "IconCopyLink"
+  IconTwitter: "IconTwitter"
 }));
 
 export default () => {
@@ -22,9 +22,9 @@ export default () => {
         const testInstance = TestRenderer.create(
           <SaveAndShareBar
             articleUrl=""
-            onCopyLink={() => { }}
-            onSaveToMyArticles={() => { }}
-            onShareOnEmail={() => { }}
+            onCopyLink={() => {}}
+            onSaveToMyArticles={() => {}}
+            onShareOnEmail={() => {}}
           />
         );
 
@@ -34,7 +34,6 @@ export default () => {
     {
       name: "onPress events triggers correctly",
       test: () => {
-
         const onShareOnEmail = jest.fn();
         const onCopyLink = jest.fn();
         const onSaveToMyArticles = jest.fn();
