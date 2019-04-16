@@ -8,37 +8,51 @@ import trackSection from "./track-section";
 const {
   getOpenedPuzzleCount,
   getSavedArticles,
-  onArticlePress,
+  getSectionData,
+  onArticlePress: onArticlePressBridge,
   onPuzzleBarPress = () => {},
-  onPuzzlePress,
-  onArticleSavePress
+  onPuzzlePress: onPuzzlePressBridge,
+  onArticleSavePress: onArticleSavePressBridge
 } = NativeModules.SectionEvents || {
   onArticlePress: () => {},
   onPuzzleBarPress: () => {},
   onPuzzlePress: () => {}
 };
 
+const onArticlePress = ({ id, url }) => onArticlePressBridge(url, id);
+const onPuzzlePress = ({ id, title, url }) =>
+  onPuzzlePressBridge(url, title, id);
+
 class SectionPage extends Component {
   constructor(props) {
     super(props);
+    const { section } = this.props;
     this.state = {
       recentlyOpenedPuzzleCount: props ? props.recentlyOpenedPuzzleCount : 0,
-      savedArticles: null
+      savedArticles: null,
+      section
     };
     this.onAppStateChange = this.onAppStateChange.bind(this);
     this.toggleArticleSaveStatus = this.toggleArticleSaveStatus.bind(this);
     this.syncAppData = this.syncAppData.bind(this);
+    this.updateSectionData = this.updateSectionData.bind(this);
+    this.onArticleSavePress = this.onArticleSavePress.bind(this);
   }
 
   componentDidMount() {
     AppState.addEventListener("change", this.onAppStateChange);
     DeviceEventEmitter.addListener("updateSavedArticles", this.syncAppData);
+    DeviceEventEmitter.addListener("updateSectionData", this.updateSectionData);
     this.syncAppData();
   }
 
   componentWillUnmount() {
     AppState.removeEventListener("change", this.onAppStateChange);
-    DeviceEventEmitter.removeAllListeners("updateSavedArticles");
+    DeviceEventEmitter.removeListener("updateSavedArticles", this.syncAppData);
+    DeviceEventEmitter.removeListener(
+      "updateSectionData",
+      this.updateSectionData
+    );
   }
 
   onAppStateChange(nextAppState) {
@@ -47,10 +61,18 @@ class SectionPage extends Component {
     }
   }
 
+  onArticleSavePress(save, articleId) {
+    this.toggleArticleSaveStatus(save, articleId);
+
+    onArticleSavePressBridge(save, articleId).catch(() => {
+      this.toggleArticleSaveStatus(!save, articleId);
+    });
+  }
+
   syncAppData() {
     const {
       section: { name }
-    } = this.props;
+    } = this.state;
     if (name === "PuzzleSection" && getOpenedPuzzleCount) {
       getOpenedPuzzleCount().then(count => {
         this.setState({ recentlyOpenedPuzzleCount: count });
@@ -71,6 +93,17 @@ class SectionPage extends Component {
     }
   }
 
+  updateSectionData() {
+    const {
+      section: { id }
+    } = this.props;
+    if (getSectionData) {
+      getSectionData(id).then(data => {
+        this.setState({ section: JSON.parse(data) });
+      });
+    }
+  }
+
   toggleArticleSaveStatus(save, articleId) {
     const { savedArticles } = this.state;
     savedArticles[articleId] = save || undefined;
@@ -78,20 +111,14 @@ class SectionPage extends Component {
   }
 
   render() {
-    const { publicationName, section } = this.props;
-    const { recentlyOpenedPuzzleCount, savedArticles } = this.state;
+    const { publicationName } = this.props;
+    const { recentlyOpenedPuzzleCount, savedArticles, section } = this.state;
 
     return (
       <SectionContext.Provider
         value={{
-          onArticleSavePress: onArticleSavePress
-            ? (save, articleId) => {
-                this.toggleArticleSaveStatus(save, articleId);
-
-                onArticleSavePress(save, articleId).catch(() => {
-                  this.toggleArticleSaveStatus(!save, articleId);
-                });
-              }
+          onArticleSavePress: onArticleSavePressBridge
+            ? this.onArticleSavePress
             : null,
           publicationName,
           recentlyOpenedPuzzleCount,
@@ -100,9 +127,9 @@ class SectionPage extends Component {
       >
         <Section
           analyticsStream={trackSection}
-          onArticlePress={({ id, url }) => onArticlePress(url, id)}
+          onArticlePress={onArticlePress}
           onPuzzleBarPress={onPuzzleBarPress}
-          onPuzzlePress={({ id, title, url }) => onPuzzlePress(url, title, id)}
+          onPuzzlePress={onPuzzlePress}
           section={section}
         />
       </SectionContext.Provider>
