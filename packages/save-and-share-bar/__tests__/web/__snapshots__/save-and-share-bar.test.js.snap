@@ -91,7 +91,7 @@ exports[`1. save and share bar renders correctly 1`] = `
         }
       }
       target="_blank"
-      url="https://www.facebook.com/sharer/sharer.php?u="
+      url="https://www.facebook.com/sharer/sharer.php?text="
     >
       <IconFacebook
         fillColour="#696969"

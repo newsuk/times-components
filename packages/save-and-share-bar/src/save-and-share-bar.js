@@ -32,7 +32,7 @@ const SaveAndShareBar = ({
       <Link
         responsiveLinkStyles={styles.link}
         target="_blank"
-        url={`${SharingApiUrls.facebook}?text=${articleUrl}`}
+        url={`${SharingApiUrls.twitter}?text=${articleUrl}`}
       >
         <IconTwitter
           fillColour={styles.svgIcon.fillColour}
@@ -43,7 +43,7 @@ const SaveAndShareBar = ({
       <Link
         responsiveLinkStyles={styles.link}
         target="_blank"
-        url={`${SharingApiUrls.twitter}?u=${articleUrl}`}
+        url={`${SharingApiUrls.facebook}?text=${articleUrl}`}
       >
         <IconFacebook
           fillColour={styles.svgIcon.fillColour}
@@ -77,10 +77,6 @@ SaveAndShareBar.propTypes = {
   onCopyLink: PropTypes.func.isRequired,
   onSaveToMyArticles: PropTypes.func.isRequired,
   onShareOnEmail: PropTypes.func.isRequired
-};
-
-SaveAndShareBar.defaultProps = {
-  articleUrl: ""
 };
 
 export default SaveAndShareBar;

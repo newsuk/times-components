@@ -12,13 +12,12 @@ package
 ```js
 import SaveAndShareBar from "@times-components/save-and-share-bar";
 
-<SaveAndShareBar     
-    articleUrl={articleId}
-    onCopyLink={this.copyLinkToClipboard}
-    onSaveToMyArticles={this.saveToMyArticles}
-    onShareOnEmail={this.shareOnEmail} 
+<SaveAndShareBar
+  articleUrl={articleId}
+  onCopyLink={this.copyLinkToClipboard}
+  onSaveToMyArticles={this.saveToMyArticles}
+  onShareOnEmail={this.shareOnEmail}
 />;
-
 ```
 
 ## Running the code
@@ -48,13 +47,10 @@ Or the tests for all platforms can be run
 yarn test:all
 ```
 
-
 Visit the official
 [storybook](http://components.thetimes.co.uk)
 to see our available link templates.
 
-
 ## Future
 
 The bar should be extended with custom onPress logic and user info state
-
