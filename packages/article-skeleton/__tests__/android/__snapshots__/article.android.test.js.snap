@@ -35,23 +35,20 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 T
               </Text>
             </View>
-            <ArticleParagraph
-              ast={
-                Object {
-                  "children": Array [
-                    Object {
-                      "attributes": Object {
-                        "value": "his being Black History Month, last week",
-                      },
-                      "children": Array [],
-                      "name": "text",
-                    },
-                  ],
-                  "name": "paragraph",
-                }
-              }
-              dropCapColour="#FF0000"
-            />
+            <View>
+              <View>
+                <Text
+                  selectable={true}
+                >
+                  his being Black History Month, 
+                </Text>
+                <Text
+                  selectable={true}
+                >
+                  last week
+                </Text>
+              </View>
+            </View>
           </View>
         </View>
       </View>
@@ -108,24 +105,19 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
       </View>
       <View>
         <View>
-          <ArticleParagraph
-            ast={
-              Object {
-                "attributes": Object {},
-                "children": Array [
-                  Object {
-                    "attributes": Object {
-                      "value": "Some content",
-                    },
-                    "children": Array [],
-                    "name": "text",
-                  },
-                ],
-                "name": "paragraph",
-              }
-            }
-            dropCapColour="#FF0000"
-          />
+          <View>
+            <View>
+              <Text
+                selectable={true}
+              >
+                <Text
+                  selectable={true}
+                >
+                  Some content
+                </Text>
+              </Text>
+            </View>
+          </View>
         </View>
       </View>
       <View>
@@ -279,42 +271,23 @@ exports[`3. an article with a nested markup in first paragraph displays no drop 
         <View />
       </View>
       <View>
-        <View>
-          <ArticleParagraph
-            ast={
-              Object {
-                "children": Array [],
-                "name": "paragraph",
-              }
-            }
-            dropCapColour="#FF0000"
-          />
-        </View>
+        <View />
       </View>
       <View>
         <View>
-          <ArticleParagraph
-            ast={
-              Object {
-                "children": Array [
-                  Object {
-                    "children": Array [
-                      Object {
-                        "attributes": Object {
-                          "value": "When she does come to social events, she dominates.",
-                        },
-                        "children": Array [],
-                        "name": "text",
-                      },
-                    ],
-                    "name": "bold",
-                  },
-                ],
-                "name": "paragraph",
-              }
-            }
-            dropCapColour="#FF0000"
-          />
+          <View>
+            <View>
+              <Text
+                selectable={true}
+              >
+                <Text
+                  selectable={true}
+                >
+                  When she does come to social events, she dominates.
+                </Text>
+              </Text>
+            </View>
+          </View>
         </View>
       </View>
       <View>
@@ -363,32 +336,19 @@ exports[`4. an inline link uses the given onpress 1`] = `
       </View>
       <View>
         <View>
-          <ArticleParagraph
-            ast={
-              Object {
-                "children": Array [
-                  Object {
-                    "attributes": Object {
-                      "href": "https://link.io",
-                      "target": "_blank",
-                    },
-                    "children": Array [
-                      Object {
-                        "attributes": Object {
-                          "value": "Press Me",
-                        },
-                        "children": Array [],
-                        "name": "text",
-                      },
-                    ],
-                    "name": "link",
-                  },
-                ],
-                "name": "paragraph",
-              }
-            }
-            dropCapColour="#1D1D1B"
-          />
+          <View>
+            <View>
+              <Text
+                selectable={true}
+              >
+                <Text
+                  accessibilityRole="link"
+                >
+                  Press Me
+                </Text>
+              </Text>
+            </View>
+          </View>
         </View>
       </View>
       <View>

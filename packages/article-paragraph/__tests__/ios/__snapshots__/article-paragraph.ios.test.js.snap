@@ -2,7 +2,17 @@
 
 exports[`1. paragraph 1`] = `
 <View>
-  This being Black History Month, last week was Politicians In Search Of An Eye-Catching Race-Related Policy Week.
+  <View>
+    <Text
+      selectable={true}
+    >
+      <Text
+        selectable={true}
+      >
+        This being Black History Month, last week was Politicians In Search Of An Eye-Catching Race-Related Policy Week.
+      </Text>
+    </Text>
+  </View>
 </View>
 `;
 
@@ -10,12 +20,32 @@ exports[`2. empty paragraph 1`] = `null`;
 
 exports[`3. paragraph with a drop cap 1`] = `
 <View>
-  his being Black History Month, last week was Politicians In Search Of An Eye-Catching Race-Related Policy Week.
+  <View>
+    <Text
+      selectable={true}
+    >
+      <Text
+        selectable={true}
+      >
+        his being Black History Month, last week was Politicians In Search Of An Eye-Catching Race-Related Policy Week.
+      </Text>
+    </Text>
+  </View>
 </View>
 `;
 
 exports[`4. paragraph with a short text and a drop cap 1`] = `
 <View>
-  his being Black History
+  <View>
+    <Text
+      selectable={true}
+    >
+      <Text
+        selectable={true}
+      >
+        his being Black History
+      </Text>
+    </Text>
+  </View>
 </View>
 `;

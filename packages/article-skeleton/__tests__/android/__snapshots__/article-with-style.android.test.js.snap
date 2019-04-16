@@ -61,7 +61,41 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 T
               </Text>
             </View>
-            <ArticleParagraph />
+            <View
+              style={
+                Object {
+                  "paddingLeft": 10,
+                  "paddingRight": 10,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "height": 0,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#333333",
+                      "fontFamily": "TimesDigitalW04-Regular",
+                      "fontSize": NaN,
+                      "fontStyle": null,
+                      "fontWeight": null,
+                      "left": 0,
+                      "lineHeight": NaN,
+                      "marginBottom": 20,
+                      "position": "absolute",
+                      "top": 0,
+                    }
+                  }
+                >
+                  his being Black History Month, last week
+                </Text>
+              </View>
+            </View>
           </View>
         </View>
       </View>
@@ -132,7 +166,43 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
             }
           }
         >
-          <ArticleParagraph />
+          <View
+            style={
+              Object {
+                "paddingLeft": 10,
+                "paddingRight": 10,
+              }
+            }
+          >
+            <View>
+              <Text
+                style={
+                  Object {
+                    "color": "#333333",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 17,
+                    "fontStyle": "normal",
+                    "lineHeight": 30,
+                    "marginBottom": 20,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "fontFamily": "TimesDigitalW04-Regular",
+                      "fontSize": NaN,
+                      "fontStyle": null,
+                      "fontWeight": null,
+                      "lineHeight": NaN,
+                    }
+                  }
+                >
+                  Some content
+                </Text>
+              </Text>
+            </View>
+          </View>
         </View>
       </View>
       <View>
@@ -526,9 +596,7 @@ exports[`3. an article with a nested markup in first paragraph displays no drop 
               "width": 1194,
             }
           }
-        >
-          <ArticleParagraph />
-        </View>
+        />
       </View>
       <View>
         <View
@@ -541,7 +609,43 @@ exports[`3. an article with a nested markup in first paragraph displays no drop 
             }
           }
         >
-          <ArticleParagraph />
+          <View
+            style={
+              Object {
+                "paddingLeft": 10,
+                "paddingRight": 10,
+              }
+            }
+          >
+            <View>
+              <Text
+                style={
+                  Object {
+                    "color": "#333333",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 17,
+                    "fontStyle": "normal",
+                    "lineHeight": 30,
+                    "marginBottom": 20,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "fontFamily": "TimesDigitalW04-Bold",
+                      "fontSize": NaN,
+                      "fontStyle": null,
+                      "fontWeight": "bold",
+                      "lineHeight": NaN,
+                    }
+                  }
+                >
+                  When she does come to social events, she dominates.
+                </Text>
+              </Text>
+            </View>
+          </View>
         </View>
       </View>
       <View>
@@ -620,7 +724,45 @@ exports[`4. an article skeleton with responsive items 1`] = `
             }
           }
         >
-          <ArticleParagraph />
+          <View
+            style={
+              Object {
+                "alignSelf": "center",
+                "paddingLeft": 10,
+                "paddingRight": 10,
+                "width": 660,
+              }
+            }
+          >
+            <View>
+              <Text
+                style={
+                  Object {
+                    "color": "#333333",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 17,
+                    "fontStyle": "normal",
+                    "lineHeight": 30,
+                    "marginBottom": 20,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "fontFamily": "TimesDigitalW04-Regular",
+                      "fontSize": NaN,
+                      "fontStyle": null,
+                      "fontWeight": null,
+                      "lineHeight": NaN,
+                    }
+                  }
+                >
+                  his being Black History Month, last week
+                </Text>
+              </Text>
+            </View>
+          </View>
         </View>
       </View>
       <View>
@@ -692,7 +834,45 @@ exports[`4. an article skeleton with responsive items 1`] = `
             }
           }
         >
-          <ArticleParagraph />
+          <View
+            style={
+              Object {
+                "alignSelf": "center",
+                "paddingLeft": 10,
+                "paddingRight": 10,
+                "width": 660,
+              }
+            }
+          >
+            <View>
+              <Text
+                style={
+                  Object {
+                    "color": "#333333",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 17,
+                    "fontStyle": "normal",
+                    "lineHeight": 30,
+                    "marginBottom": 20,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "fontFamily": "TimesDigitalW04-Regular",
+                      "fontSize": NaN,
+                      "fontStyle": null,
+                      "fontWeight": null,
+                      "lineHeight": NaN,
+                    }
+                  }
+                >
+                  Some content
+                </Text>
+              </Text>
+            </View>
+          </View>
         </View>
       </View>
       <View>

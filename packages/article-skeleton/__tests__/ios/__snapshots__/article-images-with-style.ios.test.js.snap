@@ -113,22 +113,6 @@ exports[`2. an inline image 1`] = `
               "width": 1194,
             }
           }
-        >
-          <View>
-            <ArticleImage />
-          </View>
-        </View>
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "alignSelf": "center",
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "width": 1194,
-            }
-          }
         />
       </View>
       <View>

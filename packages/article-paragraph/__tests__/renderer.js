@@ -1,4 +1,5 @@
-import React, { View, Text } from "react";
+import React from "react";
+import { View, Text } from 'react-native'
 import Context from "@times-components/context";
 import { scales, themeFactory } from "@times-components/styleguide";
 import { renderTree } from "@times-components/markup-forest";

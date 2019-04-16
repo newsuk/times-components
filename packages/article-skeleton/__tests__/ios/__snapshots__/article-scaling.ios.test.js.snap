@@ -33,9 +33,44 @@ exports[`1. scaled medium full article 1`] = `
             }
           }
         >
-          <ArticleParagraph>
-            Some content
-          </ArticleParagraph>
+          <View
+            style={
+              Object {
+                "alignSelf": "center",
+                "paddingLeft": 10,
+                "paddingRight": 10,
+                "width": 660,
+              }
+            }
+          >
+            <View>
+              <Text
+                style={
+                  Object {
+                    "color": "#333333",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 17,
+                    "lineHeight": 30,
+                    "marginBottom": 20,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "fontFamily": "TimesDigitalW04-Regular",
+                      "fontSize": 36,
+                      "fontStyle": null,
+                      "fontWeight": null,
+                      "lineHeight": 60,
+                    }
+                  }
+                >
+                  Some content
+                </Text>
+              </Text>
+            </View>
+          </View>
         </View>
       </View>
       <View>
@@ -126,9 +161,44 @@ exports[`2. scaled large full article 1`] = `
             }
           }
         >
-          <ArticleParagraph>
-            Some content
-          </ArticleParagraph>
+          <View
+            style={
+              Object {
+                "alignSelf": "center",
+                "paddingLeft": 10,
+                "paddingRight": 10,
+                "width": 660,
+              }
+            }
+          >
+            <View>
+              <Text
+                style={
+                  Object {
+                    "color": "#333333",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 21,
+                    "lineHeight": 31,
+                    "marginBottom": 20,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "fontFamily": "TimesDigitalW04-Regular",
+                      "fontSize": 36,
+                      "fontStyle": null,
+                      "fontWeight": null,
+                      "lineHeight": 60,
+                    }
+                  }
+                >
+                  Some content
+                </Text>
+              </Text>
+            </View>
+          </View>
         </View>
       </View>
       <View>
@@ -219,9 +289,44 @@ exports[`3. scaled xlarge full article 1`] = `
             }
           }
         >
-          <ArticleParagraph>
-            Some content
-          </ArticleParagraph>
+          <View
+            style={
+              Object {
+                "alignSelf": "center",
+                "paddingLeft": 10,
+                "paddingRight": 10,
+                "width": 660,
+              }
+            }
+          >
+            <View>
+              <Text
+                style={
+                  Object {
+                    "color": "#333333",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 23,
+                    "lineHeight": 33,
+                    "marginBottom": 20,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "fontFamily": "TimesDigitalW04-Regular",
+                      "fontSize": 36,
+                      "fontStyle": null,
+                      "fontWeight": null,
+                      "lineHeight": 60,
+                    }
+                  }
+                >
+                  Some content
+                </Text>
+              </Text>
+            </View>
+          </View>
         </View>
       </View>
       <View>
