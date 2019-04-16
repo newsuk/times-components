@@ -91,29 +91,6 @@ exports[`2. an inline image 1`] = `
         <View />
       </View>
       <View>
-        <View>
-          <View>
-            <ArticleImage
-              captionOptions={
-                Object {
-                  "caption": "A Caption",
-                  "credits": "Some Credits",
-                }
-              }
-              imageOptions={
-                Object {
-                  "display": "inline",
-                  "index": 1,
-                  "ratio": "9:4",
-                  "uri": "https://image-inline.io",
-                }
-              }
-              onImagePress={null}
-            />
-          </View>
-        </View>
-      </View>
-      <View>
         <View />
       </View>
       <View>

@@ -270,7 +270,7 @@ const linebreak = (nodes, lines, settings = defaults()) => {
   }
 
   const lineBreaks = breaks.reverse();
-  if (!lineBreaks.length) {
+  if (!lineBreaks.length && options.tolerance < 10) {
     return linebreak(nodes, lines, { tolerance: options.tolerance + 1 });
   }
   return lineBreaks;

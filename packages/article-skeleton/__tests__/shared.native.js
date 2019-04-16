@@ -49,36 +49,41 @@ export default () => {
     <ArticleSkeleton
       {...articleSkeletonProps}
       adConfig={adConfig}
-      analyticsStream={stream || (() => {})}
+      analyticsStream={stream || (() => { })}
       data={articleFixture({
         ...testFixture,
         content: [
           {
-            attributes: {
-              href: "https://link.io",
-              target: "_blank"
-            },
+            name: "paragraph",
             children: [
               {
                 attributes: {
-                  value: "Press Me"
+                  href: "https://link.io",
+                  target: "_blank"
                 },
-                children: [],
-                name: "text"
+                children: [
+                  {
+                    attributes: {
+                      value: "Press Me"
+                    },
+                    children: [],
+                    name: "text"
+                  }
+                ],
+                name: "link"
               }
-            ],
-            name: "link"
+            ]
           }
         ]
       })}
-      onAuthorPress={() => {}}
-      onCommentGuidelinesPress={() => {}}
-      onCommentsPress={() => {}}
-      onLinkPress={onLinkPress || (() => {})}
-      onRelatedArticlePress={() => {}}
-      onTopicPress={() => {}}
-      onTwitterLinkPress={() => {}}
-      onVideoPress={() => {}}
+      onAuthorPress={() => { }}
+      onCommentGuidelinesPress={() => { }}
+      onCommentsPress={() => { }}
+      onLinkPress={onLinkPress || (() => { })}
+      onRelatedArticlePress={() => { }}
+      onTopicPress={() => { }}
+      onTwitterLinkPress={() => { }}
+      onVideoPress={() => { }}
     />
   );
 
@@ -91,6 +96,8 @@ export default () => {
         const testInstance = TestRenderer.create(
           renderArticle({ onLinkPress })
         );
+
+        expect(testInstance).toMatchSnapshot()
 
         const [link] = testInstance.root.findAllByType(TextLink);
 

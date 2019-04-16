@@ -27,33 +27,32 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
       </View>
       <View>
         <View>
-          <ArticleParagraph
-            ast={
-              Object {
-                "children": Array [
-                  Object {
-                    "attributes": Object {
-                      "value": "T",
+          <View>
+            <View>
+              <Text
+                selectable={true}
+              >
+                T
+              </Text>
+            </View>
+            <ArticleParagraph
+              ast={
+                Object {
+                  "children": Array [
+                    Object {
+                      "attributes": Object {
+                        "value": "his being Black History Month, last week",
+                      },
+                      "children": Array [],
+                      "name": "text",
                     },
-                    "children": Array [],
-                    "name": "dropCap",
-                  },
-                  Object {
-                    "attributes": Object {
-                      "value": "his being Black History Month, last week",
-                    },
-                    "children": Array [],
-                    "name": "text",
-                  },
-                ],
-                "name": "paragraph",
+                  ],
+                  "name": "paragraph",
+                }
               }
-            }
-            dropCapColour="#FF0000"
-            uid={0}
-          >
-            his being Black History Month, last week
-          </ArticleParagraph>
+              dropCapColour="#FF0000"
+            />
+          </View>
         </View>
       </View>
       <View>
@@ -78,12 +77,10 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
               imageOptions={
                 Object {
                   "display": "primary",
-                  "index": 1,
                   "ratio": "1500:1000",
                   "uri": "https://image.io",
                 }
               }
-              onImagePress={null}
             />
           </View>
         </View>
@@ -101,46 +98,12 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
               imageOptions={
                 Object {
                   "display": "secondary",
-                  "index": 2,
                   "ratio": "1500:1000",
                   "uri": "https://image.io/secondary",
                 }
               }
-              onImagePress={null}
             />
           </View>
-        </View>
-      </View>
-      <View>
-        <View>
-          <View>
-            <ArticleImage
-              captionOptions={
-                Object {
-                  "caption": "An inline image caption",
-                  "credits": "The inline image credits",
-                }
-              }
-              imageOptions={
-                Object {
-                  "display": "inline",
-                  "index": 3,
-                  "ratio": "1500:1000",
-                  "uri": "https://image.io/inline",
-                }
-              }
-              onImagePress={null}
-            />
-          </View>
-        </View>
-      </View>
-      <View>
-        <View>
-          <Text
-            accessibilityRole="link"
-          >
-            Some Link
-          </Text>
         </View>
       </View>
       <View>
@@ -162,10 +125,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
               }
             }
             dropCapColour="#FF0000"
-            uid={6}
-          >
-            Some content
-          </ArticleParagraph>
+          />
         </View>
       </View>
       <View>
@@ -180,23 +140,9 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
       <View>
         <View>
           <View>
-            <PullQuote
-              caption="AName"
-              quoteColour="#FF0000"
-              text="a text"
-              twitter="@AName"
-            >
-              The pull quote content
-            </PullQuote>
-          </View>
-        </View>
-      </View>
-      <View>
-        <View>
-          <View>
             <Video
               accountId="57838016001"
-              height={371.25}
+              height={421.875}
               policyKey="1.2.3.4"
               poster={
                 Object {
@@ -216,6 +162,60 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
             </View>
           </View>
         </View>
+      </View>
+      <View>
+        <View>
+          <View>
+            <View>
+              <Text>
+                EXAMPLE TITLE
+              </Text>
+              <View>
+                <View>
+                  <View />
+                  <Text>
+                    Example bullet text
+                  </Text>
+                </View>
+                <View>
+                  <View />
+                  <Text>
+                    An example 
+                    <Text
+                      accessibilityRole="link"
+                    >
+                      link
+                    </Text>
+                  </Text>
+                </View>
+                <View>
+                  <View />
+                  <Text>
+                    More example text.
+                  </Text>
+                </View>
+                <View>
+                  <View />
+                  <Text>
+                    Example text 
+                    <Text>
+                      this is bold 
+                    </Text>
+                    <Text>
+                      this is in italics.
+                    </Text>
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View>
+        <View />
+      </View>
+      <View>
+        <View />
       </View>
       <View />
     </View>
@@ -247,23 +247,6 @@ exports[`2. an article with no content 1`] = `
     <View>
       <View>
         <View />
-      </View>
-      <View>
-        <View />
-      </View>
-      <View>
-        <View />
-      </View>
-      <View>
-        <View />
-      </View>
-      <View>
-        <View>
-          <ArticleExtras
-            articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-            articleUrl="https://url.io"
-          />
-        </View>
       </View>
     </View>
   </RCTScrollView>
@@ -300,30 +283,12 @@ exports[`3. an article with a nested markup in first paragraph displays no drop 
           <ArticleParagraph
             ast={
               Object {
-                "children": Array [
-                  Object {
-                    "children": Array [
-                      Object {
-                        "attributes": Object {
-                          "value": "Q Some years ago I made the decision to take as a friend a woman who is very opinionated.",
-                        },
-                        "children": Array [],
-                        "name": "text",
-                      },
-                    ],
-                    "name": "bold",
-                  },
-                ],
+                "children": Array [],
                 "name": "paragraph",
               }
             }
             dropCapColour="#FF0000"
-            uid={0}
-          >
-            <Text>
-              Q Some years ago I made the decision to take as a friend a woman who is very opinionated.
-            </Text>
-          </ArticleParagraph>
+          />
         </View>
       </View>
       <View>
@@ -349,13 +314,85 @@ exports[`3. an article with a nested markup in first paragraph displays no drop 
               }
             }
             dropCapColour="#FF0000"
-            uid={1}
-          >
-            <Text>
-              When she does come to social events, she dominates.
-            </Text>
-          </ArticleParagraph>
+          />
         </View>
+      </View>
+      <View>
+        <View />
+      </View>
+      <View>
+        <View />
+      </View>
+      <View>
+        <View>
+          <ArticleExtras
+            articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+            articleUrl="https://url.io"
+          />
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
+
+exports[`4. an inline link uses the given onpress 1`] = `
+<View>
+  <RCTScrollView
+    ListHeaderComponent={
+      <Gutter>
+        <Header
+          width={750}
+        />
+      </Gutter>
+    }
+    initialListSize={10}
+    initialNumToRender={10}
+    maxToRenderPerBatch={10}
+    numColumns={1}
+    onEndReachedThreshold={2}
+    pageSize={1}
+    scrollEventThrottle={50}
+    scrollRenderAheadDistance={10}
+    updateCellsBatchingPeriod={50}
+    windowSize={21}
+  >
+    <View>
+      <View>
+        <View />
+      </View>
+      <View>
+        <View>
+          <ArticleParagraph
+            ast={
+              Object {
+                "children": Array [
+                  Object {
+                    "attributes": Object {
+                      "href": "https://link.io",
+                      "target": "_blank",
+                    },
+                    "children": Array [
+                      Object {
+                        "attributes": Object {
+                          "value": "Press Me",
+                        },
+                        "children": Array [],
+                        "name": "text",
+                      },
+                    ],
+                    "name": "link",
+                  },
+                ],
+                "name": "paragraph",
+              }
+            }
+            dropCapColour="#1D1D1B"
+          />
+        </View>
+      </View>
+      <View>
+        <View />
       </View>
       <View>
         <View />

@@ -18,7 +18,7 @@ const ArticleParagraphWrapper = ({ ast, children, uid }) => {
 
 ArticleParagraphWrapper.propTypes = {
   ast: PropTypes.object.isRequired,
-  children: PropTypes.node.isRequired,
+  children: PropTypes.oneOf([PropTypes.node, PropTypes.func]).isRequired,
   uid: PropTypes.number.isRequired
 };
 

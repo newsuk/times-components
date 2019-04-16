@@ -216,6 +216,10 @@ class ArticleSkeleton extends Component {
       .filter(row => row.type === "articleBodyRow")
       .map(({ data }) => data);
 
+    if (!rows.length) {
+      return null
+    }
+
     const others = articleData.filter(row => row.type !== "articleBodyRow");
 
     if (flow) {
@@ -302,16 +306,13 @@ class ArticleSkeleton extends Component {
       onViewed
     } = this.props;
     const { width, content } = this.state;
-    if (!content) {
-      return null;
-    }
 
     return (
       <AdComposer adConfig={adConfig}>
         <Responsive>
           <View style={styles.articleContainer}>
             <FlatList
-              data={content}
+              data={content || []}
               initialListSize={listViewSize}
               interactiveConfig={interactiveConfig}
               keyExtractor={item =>

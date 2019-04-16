@@ -37,7 +37,8 @@ export default class TextFlow extends Container {
         child.children = [];
 
         if (!(next instanceof Text)) {
-          throw new Error("Float stacking is not supported");
+          i += 1
+          continue
         }
 
         const elWidth = child.width;
@@ -45,7 +46,7 @@ export default class TextFlow extends Container {
 
         const elNumLines = Math.ceil(elHeight / next.lineHeight);
         const elLines = [];
-        while (elNumLines !== elLines.length) {
+        while (elNumLines > elLines.length) {
           elLines.push(this.width - elWidth);
         }
         elLines.push(this.width);
@@ -88,6 +89,7 @@ export default class TextFlow extends Container {
         }
         i = grabbed;
         this.block.measuredHeight += child.height;
+        continue
       }
       if (child instanceof Block) {
         this.block.addChild(child);
@@ -97,7 +99,6 @@ export default class TextFlow extends Container {
         }
         child.y = vPosition;
         vPosition += child.measuredHeight;
-        i += 1;
       }
       if (child instanceof Text) {
         this.block.addChild(child);
@@ -107,8 +108,8 @@ export default class TextFlow extends Container {
         }
         child.y = vPosition;
         vPosition += child.measuredHeight;
-        i += 1;
       }
+      i += 1;
     }
     this.measuredHeight = this.block.measuredHeight;
     this.measuredWidth = this.block.measuredWidth;
