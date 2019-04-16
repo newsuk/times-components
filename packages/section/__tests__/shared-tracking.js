@@ -2,11 +2,14 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { MockEdition } from "@times-components/fixture-generator";
 import Link from "@times-components/link";
+import { SectionContext } from "@times-components/context";
+import StarButton from "@times-components/star-button";
 import TestRenderer from "react-test-renderer";
 import Section from "../src/section";
 
 jest.mock("@times-components/icons", () => ({
-  IconForwardArrow: "IconForwardArrow"
+  IconForwardArrow: "IconForwardArrow",
+  IconStar: "IconStar"
 }));
 
 class WithTrackingContext extends Component {
@@ -69,6 +72,35 @@ export default () => {
 
     expect(call).toMatchSnapshot();
     expect(onArticlePress.mock.calls).toMatchSnapshot("onArticlePress");
+  });
+
+  it("Save/Unsave article click tracking", () => {
+    const edition = new MockEdition().get();
+    const stream = jest.fn();
+    const onArticlePress = jest.fn();
+    const artickleId = edition.sections[0].slices[0].lead.article.id;
+    const savedArticles = { artickleId: undefined };
+    const onArticleSavePress = () => {
+      savedArticles[artickleId] = !savedArticles[artickleId];
+    };
+
+    const testInstance = TestRenderer.create(
+      <SectionContext.Provider value={{ onArticleSavePress, savedArticles }}>
+        <WithTrackingContext
+          onArticlePress={onArticlePress}
+          onPuzzlePress={() => {}}
+          section={edition.sections[0]}
+          stream={stream}
+        />
+      </SectionContext.Provider>
+    );
+
+    const [starButton] = testInstance.root.findAllByType(StarButton);
+    starButton.props.onPress();
+    starButton.props.onPress();
+
+    const call = stream.mock.calls;
+    expect(call).toMatchSnapshot();
   });
 
   it("puzzle section page click tracking", () => {
