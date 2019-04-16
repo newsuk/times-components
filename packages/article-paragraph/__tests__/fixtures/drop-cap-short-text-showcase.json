@@ -2,13 +2,6 @@
   "name": "paragraph",
   "children": [
     {
-      "name": "dropCap",
-      "attributes": {
-        "value": "T"
-      },
-      "children": []
-    },
-    {
       "name": "text",
       "attributes": {
         "value": "his being Black History"
