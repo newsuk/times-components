@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.23.0](https://github.com/newsuk/times-components/compare/@times-components/pages@1.22.23...@times-components/pages@1.23.0) (2019-04-16)
+
+
+### Features
+
+* Update section data on native event ([#1881](https://github.com/newsuk/times-components/issues/1881)) ([a9d33ca](https://github.com/newsuk/times-components/commit/a9d33ca))
+
+
+
+
+
 ## [1.22.23](https://github.com/newsuk/times-components/compare/@times-components/pages@1.22.22...@times-components/pages@1.22.23) (2019-04-16)
 
 **Note:** Version bump only for package @times-components/pages

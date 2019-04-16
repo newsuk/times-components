@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.11.0](https://github.com/newsuk/times-components/compare/@times-components/section@0.10.5...@times-components/section@0.11.0) (2019-04-16)
+
+
+### Features
+
+* add tracking to save article ([#1876](https://github.com/newsuk/times-components/issues/1876)) ([769d41e](https://github.com/newsuk/times-components/commit/769d41e))
+
+
+
+
+
 ## [0.10.5](https://github.com/newsuk/times-components/compare/@times-components/section@0.10.2...@times-components/section@0.10.5) (2019-04-15)
 
 **Note:** Version bump only for package @times-components/section
