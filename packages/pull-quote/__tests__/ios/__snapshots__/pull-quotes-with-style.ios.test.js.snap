@@ -85,7 +85,7 @@ exports[`different colours 1`] = `
           "borderLeftWidth": 1,
           "display": "flex",
           "flexDirection": "row",
-          "height": 15,
+          "height": 13,
           "marginLeft": 7,
           "paddingLeft": 7,
         }
@@ -93,7 +93,7 @@ exports[`different colours 1`] = `
     >
       <IconTwitter
         height={10}
-        width={12}
+        width={11}
       />
       <TextLink
         style={
@@ -102,7 +102,7 @@ exports[`different colours 1`] = `
             "fontFamily": "GillSansMTStd-Medium",
             "fontSize": 13,
             "lineHeight": 13,
-            "marginLeft": 3,
+            "marginLeft": 4,
             "paddingTop": 2,
             "textDecorationLine": "none",
           }

@@ -12,6 +12,10 @@ const PullQuoteContent = styled(Text)`
   font-family: "${fonts.headlineRegular}";
   font-size: ${fontSizes.pageComponentHeadline}px;
   line-height: 30px;
+  
+  cite {
+    font-style: normal;
+  }
 
   @media (min-width: ${breakpoints.medium}px) {
     font-size: ${fontSizes.headline}px;
