@@ -4,6 +4,7 @@ import { iterator } from "@times-components/test-utils";
 import Link from "@times-components/link";
 import SaveAndShareBar from "../src/save-and-share-bar";
 import Link from "@times-components/link";
+import SaveAndShareBar from "../src/save-and-share-bar";
 
 jest.mock("@times-components/link", () => "Link");
 
