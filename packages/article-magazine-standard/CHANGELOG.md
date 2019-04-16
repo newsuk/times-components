@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.5](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@1.2.4...@times-components/article-magazine-standard@1.2.5) (2019-04-16)
+
+
+### Bug Fixes
+
+* pull quotes design ([#1882](https://github.com/newsuk/times-components/issues/1882)) ([26a92a4](https://github.com/newsuk/times-components/commit/26a92a4))
+
+
+
+
+
 ## [1.2.4](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@1.2.1...@times-components/article-magazine-standard@1.2.4) (2019-04-15)
 
 **Note:** Version bump only for package @times-components/article-magazine-standard
