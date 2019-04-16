@@ -1831,7 +1831,7 @@
     react-split-pane "^0.1.77"
     react-treebeard "^2.1.0"
 
-"@thetimes/jest-lint@*", "@thetimes/jest-lint@1.4.0":
+"@thetimes/jest-lint@*":
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@thetimes/jest-lint/-/jest-lint-1.4.0.tgz#186710b494e0cbcea5e188234d0b8097797897e6"
   integrity sha512-o3ATYijAPxFZcEJ4nPTChdUEpivliAG6gswtIUyRKjc8zYPOo7UR8pxNI9J+JjW7Ye/t14SJizgyz85tU+4xmQ==
