@@ -13,7 +13,7 @@ fonts, weights, kerning, tracking and colours.
 ### Measuring Text
 
 ```javascript
-import { Text as FlowText, Markup } from "text-flow";
+import { Text as FlowText, Markup } from "@times-components/text-flow";
 
 const text = new FlowText.Text({
   font: "TimesModern-Regular",
@@ -33,7 +33,7 @@ rendering the text with.
 ### Getting the layout of a paragraph
 
 ```javascript
-import { Text as FlowText, Layout, Markup } from "text-flow";
+import { Text as FlowText, Layout, Markup } from "@times-components/text-flow";
 
 const textStyle = {
   font: "TimesModern-Regular",
@@ -61,7 +61,7 @@ const flow = new Layout.TextFlow({
 ### Paragraphs with markup
 
 ```javascript
-import { Text as FlowText, Layout, Markup } from "text-flow";
+import { Text as FlowText, Layout, Markup } from "@times-components/text-flow";
 
 const flow = new FlowText.Text({
   font: "TimesModern-Regular",
@@ -106,7 +106,7 @@ Currently only flowing around blocks is supported, text exclusion paths are
 possible but no API is provided.
 
 ```javascript
-import { Text as FlowText, Layout, Markup } from "text-flow"
+import { Text as FlowText, Layout, Markup } from "@times-components/text-flow"
 
 const flow = new Layout.TextFlow({
     font: 'TimesModern-Regular',
