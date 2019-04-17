@@ -2,6 +2,7 @@
 
 const React = require("react");
 const { ApolloProvider } = require("react-apollo");
+const { HelmetProvider } = require("react-helmet-async");
 const { TopicProvider } = require("@times-components/provider/rnw");
 const Context = require("@times-components/context/rnw").default;
 const { scales } = require("@times-components/styleguide/rnw");
@@ -10,7 +11,7 @@ const Topic = require("@times-components/topic/rnw").default;
 const scale = scales.large;
 const sectionColour = "#FFFFFF";
 
-module.exports = (client, analyticsStream, data) => {
+module.exports = (client, analyticsStream, data, helmetContext) => {
   const {
     debounceTimeMs,
     makeArticleUrl,
@@ -21,39 +22,43 @@ module.exports = (client, analyticsStream, data) => {
   } = data;
 
   return React.createElement(
-    ApolloProvider,
-    { client },
+    HelmetProvider,
+    { context: helmetContext },
     React.createElement(
-      TopicProvider,
-      {
-        debounceTimeMs,
-        page,
-        pageSize,
-        slug: topicSlug
-      },
-      ({ isLoading, error, refetch, topic }) =>
-        React.createElement(
-          Context.Provider,
-          {
-            value: {
-              makeArticleUrl,
-              theme: { scale, sectionColour }
-            }
-          },
-          React.createElement(Topic, {
-            adConfig: mapTopicToAdConfig(),
-            analyticsStream,
-            error,
-            isLoading,
-            onArticlePress: () => {},
-            onTwitterLinkPress: () => {},
-            page,
-            pageSize,
-            refetch,
-            slug: topicSlug,
-            topic
-          })
-        )
+      ApolloProvider,
+      { client },
+      React.createElement(
+        TopicProvider,
+        {
+          debounceTimeMs,
+          page,
+          pageSize,
+          slug: topicSlug
+        },
+        ({ isLoading, error, refetch, topic }) =>
+          React.createElement(
+            Context.Provider,
+            {
+              value: {
+                makeArticleUrl,
+                theme: { scale, sectionColour }
+              }
+            },
+            React.createElement(Topic, {
+              adConfig: mapTopicToAdConfig(),
+              analyticsStream,
+              error,
+              isLoading,
+              onArticlePress: () => {},
+              onTwitterLinkPress: () => {},
+              page,
+              pageSize,
+              refetch,
+              slug: topicSlug,
+              topic
+            })
+          )
+      )
     )
   );
 };

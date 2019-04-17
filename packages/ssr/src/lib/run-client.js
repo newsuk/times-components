@@ -55,7 +55,7 @@ module.exports = (component, clientOptions, data) => {
   };
   const analyticsStream = makeAnalyticsStream(reporterOptions);
 
-  const App = component(client, analyticsStream, data);
+  const App = component(client, analyticsStream, data, {});
 
   AppRegistry.registerComponent("App", () => () => App);
 
