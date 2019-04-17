@@ -89,10 +89,10 @@ class SaveStarWeb extends Component {
   }
 
   saveBookmark(id) {
-    console.log('inside saveBookmark');
+    console.log("inside saveBookmark");
     const bookmarkInput = [{ id: id }];
     const query = gql`mutation {
-      saveBookmarks(bookmarks: ${bookmarkInput}) {
+      saveBookmarks(bookmarks: [{ id: "9bd029d2-49a1-11e9-b472-f58a50a13bbb" }]) {
         id
       }
     }`;
@@ -101,10 +101,11 @@ class SaveStarWeb extends Component {
     client
       .mutate({ mutation: query })
       .then(response => {
-        console.log("response saveBookmark", data);
-        this.setState({ savedStatus: true,
-                        savedArticles: this.state.savedArticles.push({id: id})
-                   });
+        console.log("response saveBookmark", response);
+        this.setState({
+          savedStatus: true,
+          savedArticles: this.state.savedArticles.push({ id: id })
+        });
       })
       .catch(err => {
         this.setState({ savedStatus: false });
@@ -113,22 +114,28 @@ class SaveStarWeb extends Component {
   }
 
   unsaveBookmark(id) {
-    console.log('inside unsaveBookmark');
-    const bookmarkInput = [{ "id": id }];
-    const query = gql`mutation {
-      unsaveBookmarks(bookmarks: [{ id: "9bd029d2-49a1-11e9-b472-f58a50a13bbb" }])
-    }`;
+    console.log("inside unsaveBookmark");
+    const bookmarkInput = [{ id: id }];
+    const query = gql`
+      mutation {
+        unsaveBookmarks(
+          bookmarks: [{ id: "9bd029d2-49a1-11e9-b472-f58a50a13bbb" }]
+        )
+      }
+    `;
 
     const client = makeClient();
 
     client
       .mutate({ mutation: query })
       .then(response => {
-        const { data } = response;
-        console.log("response unsaveBookmark", data);
-        this.setState({ savedStatus: false,
-          savedArticles: this.state.savedArticles.map(item => item.id).filter(item => item !== id)
-          });
+        console.log("response unsaveBookmark", response);
+        this.setState({
+          savedStatus: false,
+          savedArticles: this.state.savedArticles
+            .map(item => item.id)
+            .filter(item => item !== id)
+        });
       })
       .catch(err => {
         this.setState({ savedStatus: true });
@@ -139,16 +146,15 @@ class SaveStarWeb extends Component {
   bookmarkEvents(id) {
     console.log("inisde bookmarkEvents");
 
-
     let newStatus = null;
-    console.log('savedArticles is ', this.state.savedArticles, id);
+    console.log("savedArticles is ", this.state.savedArticles, id);
 
-    if(this.state.savedArticles) {
-      newStatus = !!(this.state.savedArticles
+    if (this.state.savedArticles) {
+      newStatus = !!this.state.savedArticles
         .map(item => item.id)
-        .find(item => item === id))
-      console.log('newStatus is ', newStatus)
-      if(newStatus) {
+        .find(item => item === id);
+      console.log("newStatus is ", newStatus);
+      if (newStatus) {
         this.unsaveBookmark(id);
       } else {
         this.saveBookmark(id);
