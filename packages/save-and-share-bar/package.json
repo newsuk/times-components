@@ -35,6 +35,7 @@
   "dependencies": {
     "@times-components/icons": "2.11.0",
     "@times-components/link": "3.4.7",
+    "@times-components/save-star-web": "0.0.1",
     "@times-components/styleguide": "3.28.14",
     "@times-components/tracking": "2.4.34",
     "prop-types": "15.7.2",
