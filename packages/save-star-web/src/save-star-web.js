@@ -90,16 +90,22 @@ class SaveStarWeb extends Component {
 
   saveBookmark(id) {
     console.log("inside saveBookmark");
-    const bookmarkInput = [{ id: id }];
-    const query = gql`mutation {
-      saveBookmarks(bookmarks: [{ id: "9bd029d2-49a1-11e9-b472-f58a50a13bbb" }]) {
-        id
+    const query = gql`
+      mutation($id: UUID!) {
+        saveBookmarks(bookmarks: [{ id: $id }]) {
+          id
+        }
       }
-    }`;
+    `;
     const client = makeClient();
 
     client
-      .mutate({ mutation: query })
+      .mutate({
+        mutation: query,
+        variables: {
+          id: id
+        }
+      })
       .then(response => {
         console.log("response saveBookmark", response);
         this.setState({
@@ -115,19 +121,22 @@ class SaveStarWeb extends Component {
 
   unsaveBookmark(id) {
     console.log("inside unsaveBookmark");
-    const bookmarkInput = [{ id: id }];
+
     const query = gql`
-      mutation {
-        unsaveBookmarks(
-          bookmarks: [{ id: "9bd029d2-49a1-11e9-b472-f58a50a13bbb" }]
-        )
+      mutation($id: UUID!) {
+        unsaveBookmarks(bookmarks: [{ id: $id }])
       }
     `;
 
     const client = makeClient();
 
     client
-      .mutate({ mutation: query })
+      .mutate({
+        mutation: query,
+        variables: {
+          id: id
+        }
+      })
       .then(response => {
         console.log("response unsaveBookmark", response);
         this.setState({
