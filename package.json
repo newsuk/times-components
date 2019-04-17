@@ -52,7 +52,7 @@
     "cinstall": "./lib/custom_install.sh",
     "bundle": "lerna run bundle",
     "build:local": "yarn install && yarn bundle && yarn prepublishOnly",
-    "postinstall": "node lib/fetch-fonts.js && lerna run postinstall && lerna run transpile",
+    "postinstall": "yarn run fetch-fonts && lerna run postinstall && lerna run transpile",
     "packages:publish": "lerna publish --conventional-commits --yes --concurrency=1 --exact",
     "packages:publish-dry-run": "yarn packages:publish --no-git-tag-version --no-push",
     "clean-snaps": "rm -rf dextrose/snappy/*.png",

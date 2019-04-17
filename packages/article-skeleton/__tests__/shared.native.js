@@ -97,8 +97,6 @@ export default () => {
           renderArticle({ onLinkPress })
         );
 
-        expect(testInstance).toMatchSnapshot();
-
         const [link] = testInstance.root.findAllByType(TextLink);
 
         link.props.onPress();
