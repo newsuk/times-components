@@ -6,7 +6,6 @@ import { createHttpLink } from "apollo-link-http";
 import { fragmentMatcher } from "@times-components/schema";
 import { InMemoryCache } from "apollo-cache-inmemory";
 import gql from "graphql-tag";
-// import { Query } from "react-apollo";
 import {
   IconSaveBookmark
 } from "@times-components/icons";
@@ -30,17 +29,15 @@ class SaveStarWeb extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      savedStatus: false
+      savedStatus: null
     }
   }
 
   componentDidMount() {
     const { articleId } = this.props;
 
-    console.log('before window chk');
-
     if (typeof window === "undefined") {
-      console.log('inisde window chk');
+      console.log('inside window chk');
       //return loading state
       return null;
     }
@@ -56,10 +53,9 @@ class SaveStarWeb extends Component {
       }
     }`;
 
-    const graphqlapi = "https://prode-tpa.prod.thetimes.works/graphql"; //window.nuk.graphqlapi.url;
+    const graphqlapi = "https://prod-tpa.prod.thetimes.works/graphql"; //window.nuk.graphqlapi.url;
     const acs_tnl_cookie = "tid%3D77a8739a-fbad-4344-9bf8-09c33a49ed6b%26eid%3DAAAA002920174%26e%3D1%26a%3DTmVoYSBTcml2YXN0YXZh%26u%3D1910c402-2cf6-40dd-bb1e-4ee24e1e7f6b%26t%3D1554976444%26h%3D5f091672fb6e3258934b91f8715e2753";//window.nuk.getCookieValue('acs_tnl');
     const sacs_tnl_cookie = "1ff9a858-8f31-43f3-bb8a-4366dfcb858e";//window.nuk.getCookieValue('sacs_tnl');
-    console.log('before fetch');
 
     const networkInterfaceOptions = { fetch, headers: {}, uri: graphqlapi};
 
@@ -78,10 +74,14 @@ class SaveStarWeb extends Component {
     client.query({query: query}).then(response => {
         const {loading, data} = response;
         console.log('response is', loading, data);
+        //needs a spinner for loading state => default state is spinner
         if(loading === false) {
           const savedArticles = data.viewer.bookmarks.bookmarks;
           this.setState({savedStatus: !!(savedArticles.map(item => item.id).find(item => item===articleId))});
         }
+    }).catch(err => {
+        this.setState({savedStatus: false});
+        console.error('Error in connecting to api',err);
     });
 
   }
@@ -91,7 +91,7 @@ class SaveStarWeb extends Component {
 
     console.log('render saved status is', this.state.savedStatus);
 
-
+    //if savedstatus is null, show the spinning
     if(this.state.savedStatus) {
 
       return SaveLink(true);
