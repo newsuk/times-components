@@ -9,6 +9,7 @@ import {
   IconSaveBookmark
 } from "@times-components/icons";
 import withTrackEvents from "./tracking/with-track-events";
+import SaveStar from "@times-components/save-star-web";
 import SharingApiUrls from "./constants";
 import styles from "./styles";
 import BarItem from "./bar-item";
