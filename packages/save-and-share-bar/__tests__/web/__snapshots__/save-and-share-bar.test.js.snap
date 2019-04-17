@@ -51,67 +51,124 @@ exports[`1. save and share bar renders correctly 1`] = `
           "color": "rgba(105,105,105,1.00)",
           "fontFamily": "GillSansMTStd-Medium",
           "lineHeight": "14px",
+          "marginRight": "10px",
         }
       }
     >
       Share
     </div>
-    <Link
-      responsiveLinkStyles={
-        Object {
-          "base": "margin-left: 25px;",
-        }
+    <div>
+      <Link
+        responsiveLinkStyles={
+          Object {
+            "base": "
+      margin-left: 5px;
+      border-radius: 9999px;
+      overflow: hidden;
+      text-align: center;
+      line-height: 45px;
+      height: 40px;
+      width: 40px;
+      
+      &:hover {
+        background-color: #F5F5F5;
       }
-    >
-      <IconEmail
-        fillColour="#696969"
-        height={15}
-        title="Share by email client"
-      />
-    </Link>
-    <Link
-      responsiveLinkStyles={
-        Object {
-          "base": "margin-left: 25px;",
+    ",
+          }
         }
+      >
+        <IconEmail
+          fillColour="#696969"
+          height={15}
+          title="Share by email client"
+        />
+      </Link>
+    </div>
+    <div>
+      <Link
+        responsiveLinkStyles={
+          Object {
+            "base": "
+      margin-left: 5px;
+      border-radius: 9999px;
+      overflow: hidden;
+      text-align: center;
+      line-height: 45px;
+      height: 40px;
+      width: 40px;
+      
+      &:hover {
+        background-color: #F5F5F5;
       }
-      target="_blank"
-      url="https://twitter.com/intent/tweet?text="
-    >
-      <IconTwitter
-        fillColour="#696969"
-        height={15}
-        title="Share on tweeter"
-      />
-    </Link>
-    <Link
-      responsiveLinkStyles={
-        Object {
-          "base": "margin-left: 25px;",
+    ",
+          }
         }
+        target="_blank"
+        url="https://twitter.com/intent/tweet?text="
+      >
+        <IconTwitter
+          fillColour="#696969"
+          height={15}
+          title="Share on tweeter"
+        />
+      </Link>
+    </div>
+    <div>
+      <Link
+        responsiveLinkStyles={
+          Object {
+            "base": "
+      margin-left: 5px;
+      border-radius: 9999px;
+      overflow: hidden;
+      text-align: center;
+      line-height: 45px;
+      height: 40px;
+      width: 40px;
+      
+      &:hover {
+        background-color: #F5F5F5;
       }
-      target="_blank"
-      url="https://www.facebook.com/sharer/sharer.php?text="
-    >
-      <IconFacebook
-        fillColour="#696969"
-        height={18}
-        title="Share on facebook"
-      />
-    </Link>
-    <Link
-      responsiveLinkStyles={
-        Object {
-          "base": "margin-left: 25px;",
+    ",
+          }
         }
+        target="_blank"
+        url="https://www.facebook.com/sharer/sharer.php?text="
+      >
+        <IconFacebook
+          fillColour="#696969"
+          height={18}
+          title="Share on facebook"
+        />
+      </Link>
+    </div>
+    <div>
+      <Link
+        responsiveLinkStyles={
+          Object {
+            "base": "
+      margin-left: 5px;
+      border-radius: 9999px;
+      overflow: hidden;
+      text-align: center;
+      line-height: 45px;
+      height: 40px;
+      width: 40px;
+      
+      &:hover {
+        background-color: #F5F5F5;
       }
-    >
-      <IconCopyLink
-        fillColour="#696969"
-        height={15}
-        title="Copy link o clipboard"
-      />
-    </Link>
+    ",
+          }
+        }
+      >
+        <IconCopyLink
+          fillColour="#696969"
+          height={15}
+          title="Copy link on clipboard"
+        />
+      </Link>
+    </div>
   </div>
   <div
     style={
@@ -138,24 +195,39 @@ exports[`1. save and share bar renders correctly 1`] = `
           "color": "rgba(105,105,105,1.00)",
           "fontFamily": "GillSansMTStd-Medium",
           "lineHeight": "14px",
+          "marginRight": "10px",
         }
       }
     >
       Save
     </div>
-    <Link
-      responsiveLinkStyles={
-        Object {
-          "base": "margin-left: 25px;",
-        }
+    <div>
+      <Link
+        responsiveLinkStyles={
+          Object {
+            "base": "
+      margin-left: 5px;
+      border-radius: 9999px;
+      overflow: hidden;
+      text-align: center;
+      line-height: 45px;
+      height: 40px;
+      width: 40px;
+      
+      &:hover {
+        background-color: #F5F5F5;
       }
-    >
-      <IconSaveBookmark
-        fillColour="#FFFFFF"
-        strokeColour="#696969"
-        title="Save to My Articles"
-      />
-    </Link>
+    ",
+          }
+        }
+      >
+        <IconSaveBookmark
+          fillColour="#FFFFFF"
+          strokeColour="#696969"
+          title="Save to My Articles"
+        />
+      </Link>
+    </div>
   </div>
 </div>
 `;
