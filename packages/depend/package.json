@@ -58,7 +58,7 @@
     "@times-components/eslint-config-thetimes": "0.8.9",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.4.2",
-    "babel-preset-react-native": "4.0.0",
+    "metro-react-native-babel-preset": "0.53.1",
     "depcheck": "0.6.9",
     "eslint": "5.9.0",
     "jest": "23.3.0",

@@ -50,7 +50,7 @@
     "apollo-client": "2.4.7",
     "babel-cli": "6.26.0",
     "babel-loader": "7.1.4",
-    "babel-preset-react-native": "4.0.0",
+    "metro-react-native-babel-preset": "0.53.1",
     "depcheck": "0.6.9",
     "enzyme": "3.6.0",
     "eslint": "5.9.0",
