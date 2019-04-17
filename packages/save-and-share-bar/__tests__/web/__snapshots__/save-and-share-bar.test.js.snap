@@ -57,11 +57,10 @@ exports[`1. save and share bar renders correctly 1`] = `
     >
       Share
     </div>
-    <div>
-      <Link
-        responsiveLinkStyles={
-          Object {
-            "base": "
+    <Link
+      responsiveLinkStyles={
+        Object {
+          "base": "
       margin-left: 5px;
       border-radius: 9999px;
       overflow: hidden;
@@ -74,21 +73,24 @@ exports[`1. save and share bar renders correctly 1`] = `
         background-color: #F5F5F5;
       }
     ",
-          }
         }
+      }
+    >
+      <div
+        className="save-and-share-bar__HoverIcon-sc-1enokj3-0 NSqGJ"
+        color="#696969"
       >
         <IconEmail
-          fillColour="#696969"
+          fillColour="currentColor"
           height={15}
           title="Share by email client"
         />
-      </Link>
-    </div>
-    <div>
-      <Link
-        responsiveLinkStyles={
-          Object {
-            "base": "
+      </div>
+    </Link>
+    <Link
+      responsiveLinkStyles={
+        Object {
+          "base": "
       margin-left: 5px;
       border-radius: 9999px;
       overflow: hidden;
@@ -101,23 +103,26 @@ exports[`1. save and share bar renders correctly 1`] = `
         background-color: #F5F5F5;
       }
     ",
-          }
         }
-        target="_blank"
-        url="https://twitter.com/intent/tweet?text="
+      }
+      target="_blank"
+      url="https://twitter.com/intent/tweet?text="
+    >
+      <div
+        className="save-and-share-bar__HoverIcon-sc-1enokj3-0 NSqGJ"
+        color="#696969"
       >
         <IconTwitter
-          fillColour="#696969"
+          fillColour="currentColor"
           height={15}
           title="Share on tweeter"
         />
-      </Link>
-    </div>
-    <div>
-      <Link
-        responsiveLinkStyles={
-          Object {
-            "base": "
+      </div>
+    </Link>
+    <Link
+      responsiveLinkStyles={
+        Object {
+          "base": "
       margin-left: 5px;
       border-radius: 9999px;
       overflow: hidden;
@@ -130,23 +135,26 @@ exports[`1. save and share bar renders correctly 1`] = `
         background-color: #F5F5F5;
       }
     ",
-          }
         }
-        target="_blank"
-        url="https://www.facebook.com/sharer/sharer.php?text="
+      }
+      target="_blank"
+      url="https://www.facebook.com/sharer/sharer.php?text="
+    >
+      <div
+        className="save-and-share-bar__HoverIcon-sc-1enokj3-0 NSqGJ"
+        color="#696969"
       >
         <IconFacebook
-          fillColour="#696969"
+          fillColour="currentColor"
           height={18}
           title="Share on facebook"
         />
-      </Link>
-    </div>
-    <div>
-      <Link
-        responsiveLinkStyles={
-          Object {
-            "base": "
+      </div>
+    </Link>
+    <Link
+      responsiveLinkStyles={
+        Object {
+          "base": "
       margin-left: 5px;
       border-radius: 9999px;
       overflow: hidden;
@@ -159,16 +167,20 @@ exports[`1. save and share bar renders correctly 1`] = `
         background-color: #F5F5F5;
       }
     ",
-          }
         }
+      }
+    >
+      <div
+        className="save-and-share-bar__HoverIcon-sc-1enokj3-0 NSqGJ"
+        color="#696969"
       >
         <IconCopyLink
-          fillColour="#696969"
+          fillColour="currentColor"
           height={15}
           title="Copy link on clipboard"
         />
-      </Link>
-    </div>
+      </div>
+    </Link>
   </div>
   <div
     style={
@@ -201,11 +213,10 @@ exports[`1. save and share bar renders correctly 1`] = `
     >
       Save
     </div>
-    <div>
-      <Link
-        responsiveLinkStyles={
-          Object {
-            "base": "
+    <Link
+      responsiveLinkStyles={
+        Object {
+          "base": "
       margin-left: 5px;
       border-radius: 9999px;
       overflow: hidden;
@@ -218,16 +229,20 @@ exports[`1. save and share bar renders correctly 1`] = `
         background-color: #F5F5F5;
       }
     ",
-          }
         }
+      }
+    >
+      <div
+        className="save-and-share-bar__HoverIcon-sc-1enokj3-0 NSqGJ"
+        color="#696969"
       >
         <IconSaveBookmark
           fillColour="#FFFFFF"
-          strokeColour="#696969"
+          strokeColour="currentColor"
           title="Save to My Articles"
         />
-      </Link>
-    </div>
+      </div>
+    </Link>
   </div>
 </div>
 `;

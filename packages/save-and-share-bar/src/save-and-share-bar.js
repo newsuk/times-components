@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { View, Text } from "react-native";
 import Link from "@times-components/link";
+import styled from "styled-components";
 import {
   IconEmail,
   IconFacebook,
@@ -18,15 +19,10 @@ class SaveAndShareBar extends Component {
     super(props);
     this.state = {
       copyClicked: false,
-      copyColour: styles.svgIcon.fillColour,
       emailClicked: false,
-      emailColour: styles.svgIcon.fillColour,
       fbClicked: false,
-      fbColour: styles.svgIcon.fillColour,
       saveClicked: false,
-      saveColour: styles.svgIcon.save.strokeColour,
-      twClicked: false,
-      twColour: styles.svgIcon.fillColour
+      twClicked: false
     };
 
     this.onCopyLink = this.onCopyLink.bind(this);
@@ -74,155 +70,122 @@ class SaveAndShareBar extends Component {
     this.onClick("twClicked");
   }
 
-  updateIconStyle(iconColour, colour) {
-    this.setState({
-      [iconColour]: colour
-    });
-  }
-
   render() {
     const { articleUrl } = this.props;
 
     const {
       copyClicked,
-      copyColour,
       emailClicked,
-      emailColour,
       fbClicked,
-      fbColour,
       saveClicked,
-      saveColour,
-      twClicked,
-      twColour
+      twClicked
     } = this.state;
 
     return (
       <View style={styles.container}>
         <View style={styles.rowItem}>
           <Text style={styles.label}>Share</Text>
-          <View
-            onMouseEnter={() =>
-              this.updateIconStyle(
-                "emailColour",
-                styles.svgIcon.hoverFillColour
-              )
-            }
-            onMouseLeave={() =>
-              this.updateIconStyle("emailColour", styles.svgIcon.fillColour)
+          <Link
+            onPress={this.onShareOnEmail}
+            responsiveLinkStyles={
+              emailClicked ? styles.clickedLink : styles.link
             }
           >
-            <Link
-              onPress={this.onShareOnEmail}
-              responsiveLinkStyles={
-                emailClicked ? styles.clickedLink : styles.link
-              }
+            <HoverIcon
+              color={styles.svgIcon.fillColour}
+              hoverColor={styles.svgIcon.hoverFillColour}
             >
               <IconEmail
-                fillColour={emailColour}
+                fillColour="currentColor"
                 height={styles.svgIcon.height}
                 title="Share by email client"
               />
-            </Link>
-          </View>
-          <View
-            onMouseEnter={() =>
-              this.updateIconStyle("twColour", styles.svgIcon.hoverFillColour)
-            }
-            onMouseLeave={() =>
-              this.updateIconStyle("twColour", styles.svgIcon.fillColour)
-            }
+            </HoverIcon>
+          </Link>
+          <Link
+            onPress={this.onTwClick}
+            responsiveLinkStyles={twClicked ? styles.clickedLink : styles.link}
+            target="_blank"
+            url={`${SharingApiUrls.twitter}?text=${articleUrl}`}
           >
-            <Link
-              onPress={this.onTwClick}
-              responsiveLinkStyles={
-                twClicked ? styles.clickedLink : styles.link
-              }
-              target="_blank"
-              url={`${SharingApiUrls.twitter}?text=${articleUrl}`}
+            <HoverIcon
+              color={styles.svgIcon.fillColour}
+              hoverColor={styles.svgIcon.hoverFillColour}
             >
               <IconTwitter
-                fillColour={twColour}
+                fillColour="currentColor"
                 height={styles.svgIcon.height}
                 title="Share on tweeter"
               />
-            </Link>
-          </View>
-          <View
-            onMouseEnter={() =>
-              this.updateIconStyle("fbColour", styles.svgIcon.hoverFillColour)
-            }
-            onMouseLeave={() =>
-              this.updateIconStyle("fbColour", styles.svgIcon.fillColour)
-            }
+            </HoverIcon>
+          </Link>
+          <Link
+            onPress={this.onFbClick}
+            responsiveLinkStyles={fbClicked ? styles.clickedLink : styles.link}
+            target="_blank"
+            url={`${SharingApiUrls.facebook}?text=${articleUrl}`}
           >
-            <Link
-              onPress={this.onFbClick}
-              responsiveLinkStyles={
-                fbClicked ? styles.clickedLink : styles.link
-              }
-              target="_blank"
-              url={`${SharingApiUrls.facebook}?text=${articleUrl}`}
+            <HoverIcon
+              color={styles.svgIcon.fillColour}
+              hoverColor={styles.svgIcon.hoverFillColour}
             >
               <IconFacebook
-                fillColour={fbColour}
+                fillColour="currentColor"
                 height={styles.svgIcon.fb.height}
                 title="Share on facebook"
               />
-            </Link>
-          </View>
-          <View
-            onMouseEnter={() =>
-              this.updateIconStyle("copyColour", styles.svgIcon.hoverFillColour)
-            }
-            onMouseLeave={() =>
-              this.updateIconStyle("copyColour", styles.svgIcon.fillColour)
+            </HoverIcon>
+          </Link>
+          <Link
+            onPress={this.onCopyLink}
+            responsiveLinkStyles={
+              copyClicked ? styles.clickedLink : styles.link
             }
           >
-            <Link
-              onPress={this.onCopyLink}
-              responsiveLinkStyles={
-                copyClicked ? styles.clickedLink : styles.link
-              }
+            <HoverIcon
+              color={styles.svgIcon.fillColour}
+              hoverColor={styles.svgIcon.hoverFillColour}
             >
               <IconCopyLink
-                fillColour={copyColour}
+                fillColour="currentColor"
                 height={styles.svgIcon.height}
                 title="Copy link on clipboard"
               />
-            </Link>
-          </View>
+            </HoverIcon>
+          </Link>
         </View>
         <View style={styles.rowItem}>
           <Text style={styles.label}>Save</Text>
-          <View
-            onMouseEnter={() =>
-              this.updateIconStyle("saveColour", styles.svgIcon.hoverFillColour)
-            }
-            onMouseLeave={() =>
-              this.updateIconStyle(
-                "saveColour",
-                styles.svgIcon.save.strokeColour
-              )
+          <Link
+            onPress={this.onSaveToMyArticles}
+            responsiveLinkStyles={
+              saveClicked ? styles.clickedLink : styles.link
             }
           >
-            <Link
-              onPress={this.onSaveToMyArticles}
-              responsiveLinkStyles={
-                saveClicked ? styles.clickedLink : styles.link
-              }
+            <HoverIcon
+              color={styles.svgIcon.save.strokeColour}
+              hoverColor={styles.svgIcon.hoverFillColour}
             >
               <IconSaveBookmark
                 fillColour={styles.svgIcon.save.fillColour}
-                strokeColour={saveColour}
+                strokeColour="currentColor"
                 title="Save to My Articles"
               />
-            </Link>
-          </View>
+            </HoverIcon>
+          </Link>
         </View>
       </View>
     );
   }
 }
+
+const HoverIcon = styled.div`
+  color: ${props => props.color};
+
+  &:hover {
+    color: ${props => props.hoverColor || props.color};
+  }
+`;
 
 SaveAndShareBar.propTypes = {
   articleUrl: PropTypes.string.isRequired,
