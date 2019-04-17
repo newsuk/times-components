@@ -37,7 +37,7 @@ exports[`1. a secondary image 1`] = `
               }
               imageOptions={
                 Object {
-                  "display": "secondary",
+                  "display": "primary",
                   "ratio": "3:2",
                   "uri": "https://image-2.io",
                 }
@@ -89,6 +89,27 @@ exports[`2. an inline image 1`] = `
     <View>
       <View>
         <View />
+      </View>
+      <View>
+        <View>
+          <View>
+            <ArticleImage
+              captionOptions={
+                Object {
+                  "caption": "A Caption",
+                  "credits": "Some Credits",
+                }
+              }
+              imageOptions={
+                Object {
+                  "display": "primary",
+                  "ratio": "9:4",
+                  "uri": "https://image-inline.io",
+                }
+              }
+            />
+          </View>
+        </View>
       </View>
       <View>
         <View />

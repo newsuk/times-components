@@ -126,7 +126,7 @@ exports[`1. article with header 1`] = `
                 }
               }
               videoId="5831024132001"
-              width={660}
+              width={750}
             />
             <View>
               <View>
@@ -168,7 +168,7 @@ exports[`1. article with header 1`] = `
                 }
               }
               videoId="5831024132001"
-              width={660}
+              width={750}
             />
             <View>
               <View>
@@ -256,7 +256,7 @@ exports[`1. article with header 1`] = `
               }
               imageOptions={
                 Object {
-                  "display": "secondary",
+                  "display": "primary",
                   "ratio": "3:2",
                   "uri": "https://image.io",
                 }

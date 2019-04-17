@@ -7,6 +7,8 @@ import {
   Topic
 } from "@times-components/pages";
 
+console.disableYellowBox = false;
+
 // see https://github.com/facebook/react-native/issues/16434
 global.URL = URL;
 global.URLSearchParams = URLSearchParams;

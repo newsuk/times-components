@@ -36,10 +36,8 @@ exports[`1. scaled medium full article 1`] = `
           <View
             style={
               Object {
-                "alignSelf": "center",
                 "paddingLeft": 10,
                 "paddingRight": 10,
-                "width": 660,
               }
             }
           >
@@ -164,10 +162,8 @@ exports[`2. scaled large full article 1`] = `
           <View
             style={
               Object {
-                "alignSelf": "center",
                 "paddingLeft": 10,
                 "paddingRight": 10,
-                "width": 660,
               }
             }
           >
@@ -292,10 +288,8 @@ exports[`3. scaled xlarge full article 1`] = `
           <View
             style={
               Object {
-                "alignSelf": "center",
                 "paddingLeft": 10,
                 "paddingRight": 10,
-                "width": 660,
               }
             }
           >

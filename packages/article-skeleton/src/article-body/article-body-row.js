@@ -9,7 +9,6 @@ import KeyFacts from "@times-components/key-facts";
 import { renderTree } from "@times-components/markup-forest";
 import { flow } from "@times-components/markup";
 import PullQuote from "@times-components/pull-quote";
-import { ResponsiveContext } from "@times-components/responsive";
 import { colours, tabletWidth } from "@times-components/styleguide";
 import { screenWidth } from "@times-components/utils";
 import Video from "@times-components/video";
@@ -28,7 +27,8 @@ export default ({
   onTwitterLinkPress,
   onVideoPress,
   width,
-  fontScale
+  fontScale,
+  isTablet
 }) =>
   renderTree(data, {
     ...flow,
@@ -85,7 +85,9 @@ export default ({
       };
     },
     image(key, { display, ratio, url, caption, credits }) {
-      if (display !== "inline") {
+      const [ratioWidth, ratioHeight] = ratio.split(":");
+      const aspectRatio = ratioHeight / ratioWidth;
+      if (display !== "inline" || !isTablet) {
         return {
           element: new Layout.Block({
             getComponent() {
@@ -97,7 +99,7 @@ export default ({
                       credits
                     }}
                     imageOptions={{
-                      display,
+                      display: "primary",
                       ratio,
                       uri: url
                     }}
@@ -108,8 +110,6 @@ export default ({
           })
         };
       }
-      const [ratioWidth, ratioHeight] = ratio.split(":");
-      const aspectRatio = ratioHeight / ratioWidth;
       const inline = new Layout.InlineBlock({
         getComponent() {
           return (
@@ -148,19 +148,15 @@ export default ({
         element: new Layout.Block({
           getComponent() {
             return (
-              <ResponsiveContext.Consumer>
-                {({ isTablet }) => (
-                  <View
-                    key={key}
-                    style={[
-                      styles.interactiveContainer,
-                      isTablet && styles.interactiveContainerTablet
-                    ]}
-                  >
-                    <InteractiveWrapper config={interactiveConfig} id={id} />
-                  </View>
-                )}
-              </ResponsiveContext.Consumer>
+              <View
+                key={key}
+                style={[
+                  styles.interactiveContainer,
+                  isTablet && styles.interactiveContainerTablet
+                ]}
+              >
+                <InteractiveWrapper config={interactiveConfig} id={id} />
+              </View>
             );
           }
         })
@@ -171,13 +167,9 @@ export default ({
         element: new Layout.Block({
           getComponent() {
             return (
-              <ResponsiveContext.Consumer>
-                {({ isTablet }) => (
-                  <View style={isTablet && styles.containerTablet}>
-                    <KeyFacts ast={node} key={key} onLinkPress={onLinkPress} />
-                  </View>
-                )}
-              </ResponsiveContext.Consumer>
+              <View style={isTablet && styles.containerTablet}>
+                <KeyFacts ast={node} key={key} onLinkPress={onLinkPress} />
+              </View>
             );
           }
         })
@@ -245,7 +237,37 @@ export default ({
       node
     ) {
       const content = node.children[0].attributes.value;
-      // TODO: measureText function?
+      if (!isTablet) {
+        return {
+          element: new Layout.Block({
+            getComponent() {
+              return (
+                <Context.Consumer key={key}>
+                  {({
+                    theme: {
+                      pullQuoteFont,
+                      sectionColour = colours.section.default
+                    }
+                  }) => (
+                    <View style={isTablet && styles.containerTablet}>
+                      <PullQuote
+                        caption={name}
+                        font={pullQuoteFont}
+                        onTwitterLinkPress={onTwitterLinkPress}
+                        quoteColour={sectionColour}
+                        text={text}
+                        twitter={twitter}
+                      >
+                        {content}
+                      </PullQuote>
+                    </View>
+                  )}
+                </Context.Consumer>
+              );
+            }
+          })
+        };
+      }
       const quote = new Text.Text({
         font: "TimesModern-Regular",
         lineHeight: 25 * 1.3 * fontScale,
@@ -265,22 +287,18 @@ export default ({
                     sectionColour = colours.section.default
                   }
                 }) => (
-                  <ResponsiveContext.Consumer>
-                    {({ isTablet }) => (
-                      <View style={isTablet && styles.containerTablet}>
-                        <PullQuote
-                          caption={name}
-                          font={pullQuoteFont}
-                          onTwitterLinkPress={onTwitterLinkPress}
-                          quoteColour={sectionColour}
-                          text={text}
-                          twitter={twitter}
-                        >
-                          {content}
-                        </PullQuote>
-                      </View>
-                    )}
-                  </ResponsiveContext.Consumer>
+                  <View style={isTablet && styles.containerTablet}>
+                    <PullQuote
+                      caption={name}
+                      font={pullQuoteFont}
+                      onTwitterLinkPress={onTwitterLinkPress}
+                      quoteColour={sectionColour}
+                      text={text}
+                      twitter={twitter}
+                    >
+                      {content}
+                    </PullQuote>
+                  </View>
                 )}
               </Context.Consumer>
             );
@@ -305,35 +323,29 @@ export default ({
       return {
         element: new Layout.Block({
           getComponent() {
+            const aspectRatio = 16 / 9;
+            const screenW = screenWidth(isTablet);
+            const height = width / aspectRatio;
             return (
-              <ResponsiveContext.Consumer>
-                {({ isTablet }) => {
-                  const aspectRatio = 16 / 9;
-                  const screenW = screenWidth(isTablet);
-                  const height = width / aspectRatio;
-                  return (
-                    <View
-                      key={key}
-                      style={[
-                        styles.primaryContainer,
-                        isTablet && styles.containerTablet
-                      ]}
-                    >
-                      <Video
-                        accountId={brightcoveAccountId}
-                        height={height}
-                        onVideoPress={onVideoPress}
-                        policyKey={brightcovePolicyKey}
-                        poster={{ uri: posterImageUrl }}
-                        skySports={skySports}
-                        videoId={brightcoveVideoId}
-                        width={screenW}
-                      />
-                      <InsetCaption caption={caption} />
-                    </View>
-                  );
-                }}
-              </ResponsiveContext.Consumer>
+              <View
+                key={key}
+                style={[
+                  styles.primaryContainer,
+                  isTablet && styles.containerTablet
+                ]}
+              >
+                <Video
+                  accountId={brightcoveAccountId}
+                  height={height}
+                  onVideoPress={onVideoPress}
+                  policyKey={brightcovePolicyKey}
+                  poster={{ uri: posterImageUrl }}
+                  skySports={skySports}
+                  videoId={brightcoveVideoId}
+                  width={screenW}
+                />
+                <InsetCaption caption={caption} />
+              </View>
             );
           }
         })

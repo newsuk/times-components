@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import { View, FlatList, Text, Dimensions } from "react-native";
 import PropTypes from "prop-types";
 import { AdComposer } from "@times-components/ad";
-import Responsive, { ResponsiveContext } from "@times-components/responsive";
+import { ResponsiveContext } from "@times-components/responsive";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import { screenWidth } from "@times-components/utils";
 import ArticleExtras from "@times-components/article-extras";
@@ -165,7 +165,7 @@ class ArticleSkeleton extends Component {
   }
 
   rebuildRows(textFlow) {
-    return textFlow.block.children.map(block => {
+    return textFlow.block.children.map((block, i) => {
       let data;
       if (block instanceof Layout.Block) {
         data = block.getComponent();
@@ -178,6 +178,7 @@ class ArticleSkeleton extends Component {
       }
       return {
         data,
+        index: i,
         type: "articleBodyRow"
       };
     });
@@ -189,7 +190,8 @@ class ArticleSkeleton extends Component {
       onLinkPress,
       onTwitterLinkPress,
       onVideoPress,
-      receiveChildList
+      receiveChildList,
+      isTablet
     } = this.props;
     const { dataSource, width, flow } = this.state;
     const { dropcapsDisabled, template } = dataSource;
@@ -238,6 +240,7 @@ class ArticleSkeleton extends Component {
           content: rowData,
           fontScale,
           interactiveConfig,
+          isTablet,
           onLinkPress,
           onTwitterLinkPress,
           onVideoPress,
@@ -267,7 +270,6 @@ class ArticleSkeleton extends Component {
             }
             block.prevHeight = block.height;
           };
-
           // @todo Is there a better way to get this
           const textLeftPadding = 5;
           const gutterWidth = Math.min(screenWidth(), tabletWidthMax);
@@ -312,42 +314,40 @@ class ArticleSkeleton extends Component {
 
     return (
       <AdComposer adConfig={adConfig}>
-        <Responsive>
-          <View style={styles.articleContainer}>
-            <FlatList
-              data={content || []}
-              initialListSize={listViewSize}
-              interactiveConfig={interactiveConfig}
-              keyExtractor={item =>
-                item.index ? `${item.type}.${item.index}` : item.type
-              }
-              ListHeaderComponent={
-                <Gutter>
-                  <Header width={Math.min(maxWidth, width)} />
-                </Gutter>
-              }
-              onViewableItemsChanged={
-                onViewed ? this.onViewableItemsChanged : null
-              }
-              pageSize={listViewPageSize}
-              renderItem={({ item }) => (
-                <Gutter>
-                  {renderRow(
-                    item,
-                    onCommentsPress,
-                    onCommentGuidelinesPress,
-                    onRelatedArticlePress,
-                    onTopicPress,
-                    analyticsStream
-                  )}
-                </Gutter>
-              )}
-              scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
-              testID="flat-list-article"
-              viewabilityConfig={viewabilityConfig}
-            />
-          </View>
-        </Responsive>
+        <View style={styles.articleContainer}>
+          <FlatList
+            data={content || []}
+            initialListSize={listViewSize}
+            interactiveConfig={interactiveConfig}
+            keyExtractor={item =>
+              item.index ? `${item.type}.${item.index}` : item.type
+            }
+            ListHeaderComponent={
+              <Gutter>
+                <Header width={Math.min(maxWidth, width)} />
+              </Gutter>
+            }
+            onViewableItemsChanged={
+              onViewed ? this.onViewableItemsChanged : null
+            }
+            pageSize={listViewPageSize}
+            renderItem={({ item }) => (
+              <Gutter>
+                {renderRow(
+                  item,
+                  onCommentsPress,
+                  onCommentGuidelinesPress,
+                  onRelatedArticlePress,
+                  onTopicPress,
+                  analyticsStream
+                )}
+              </Gutter>
+            )}
+            scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
+            testID="flat-list-article"
+            viewabilityConfig={viewabilityConfig}
+          />
+        </View>
       </AdComposer>
     );
   }

@@ -20,8 +20,8 @@ import {
 import styles from "./styles";
 
 class ArticleMagazineComment extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.renderHeader = this.renderHeader.bind(this);
   }
 
@@ -113,24 +113,31 @@ class ArticleMagazineComment extends Component {
     } = this.props;
 
     return (
-      <ArticleSkeleton
-        adConfig={adConfig}
-        analyticsStream={analyticsStream}
-        data={article}
-        Header={this.renderHeader}
-        interactiveConfig={interactiveConfig}
-        onAuthorPress={onAuthorPress}
-        onCommentGuidelinesPress={onCommentGuidelinesPress}
-        onCommentsPress={onCommentsPress}
-        onImagePress={onImagePress}
-        onLinkPress={onLinkPress}
-        onRelatedArticlePress={onRelatedArticlePress}
-        onTopicPress={onTopicPress}
-        onTwitterLinkPress={onTwitterLinkPress}
-        onVideoPress={onVideoPress}
-        onViewableItemsChanged={onViewed ? this.onViewableItemsChanged : null}
-        receiveChildList={receiveChildList}
-      />
+      <ResponsiveContext.Consumer>
+        {({ isTablet }) => (
+          <ArticleSkeleton
+            adConfig={adConfig}
+            analyticsStream={analyticsStream}
+            data={article}
+            Header={this.renderHeader}
+            interactiveConfig={interactiveConfig}
+            isTablet={isTablet}
+            onAuthorPress={onAuthorPress}
+            onCommentGuidelinesPress={onCommentGuidelinesPress}
+            onCommentsPress={onCommentsPress}
+            onImagePress={onImagePress}
+            onLinkPress={onLinkPress}
+            onRelatedArticlePress={onRelatedArticlePress}
+            onTopicPress={onTopicPress}
+            onTwitterLinkPress={onTwitterLinkPress}
+            onVideoPress={onVideoPress}
+            onViewableItemsChanged={
+              onViewed ? this.onViewableItemsChanged : null
+            }
+            receiveChildList={receiveChildList}
+          />
+        )}
+      </ResponsiveContext.Consumer>
     );
   }
 }

@@ -94,9 +94,30 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
               }
               imageOptions={
                 Object {
-                  "display": "secondary",
+                  "display": "primary",
                   "ratio": "1500:1000",
                   "uri": "https://image.io/secondary",
+                }
+              }
+            />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View>
+          <View>
+            <ArticleImage
+              captionOptions={
+                Object {
+                  "caption": "An inline image caption",
+                  "credits": "The inline image credits",
+                }
+              }
+              imageOptions={
+                Object {
+                  "display": "primary",
+                  "ratio": "1500:1000",
+                  "uri": "https://image.io/inline",
                 }
               }
             />
@@ -132,6 +153,20 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
       <View>
         <View>
           <View>
+            <PullQuote
+              caption="AName"
+              quoteColour="#FF0000"
+              text="a text"
+              twitter="@AName"
+            >
+              The pull quote content
+            </PullQuote>
+          </View>
+        </View>
+      </View>
+      <View>
+        <View>
+          <View>
             <Video
               accountId="57838016001"
               height={421.875}
@@ -143,7 +178,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
               }
               skySports={false}
               videoId="4084164751001"
-              width={660}
+              width={750}
             />
             <View>
               <View>
@@ -202,12 +237,6 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
             </View>
           </View>
         </View>
-      </View>
-      <View>
-        <View />
-      </View>
-      <View>
-        <View />
       </View>
       <View />
     </View>
@@ -289,70 +318,6 @@ exports[`3. an article with a nested markup in first paragraph displays no drop 
             </View>
           </View>
         </View>
-      </View>
-      <View>
-        <View />
-      </View>
-      <View>
-        <View />
-      </View>
-      <View>
-        <View>
-          <ArticleExtras
-            articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-            articleUrl="https://url.io"
-          />
-        </View>
-      </View>
-    </View>
-  </RCTScrollView>
-</View>
-`;
-
-exports[`4. an inline link uses the given onpress 1`] = `
-<View>
-  <RCTScrollView
-    ListHeaderComponent={
-      <Gutter>
-        <Header
-          width={750}
-        />
-      </Gutter>
-    }
-    initialListSize={10}
-    initialNumToRender={10}
-    maxToRenderPerBatch={10}
-    numColumns={1}
-    onEndReachedThreshold={2}
-    pageSize={1}
-    scrollEventThrottle={50}
-    scrollRenderAheadDistance={10}
-    updateCellsBatchingPeriod={50}
-    windowSize={21}
-  >
-    <View>
-      <View>
-        <View />
-      </View>
-      <View>
-        <View>
-          <View>
-            <View>
-              <Text
-                selectable={true}
-              >
-                <Text
-                  accessibilityRole="link"
-                >
-                  Press Me
-                </Text>
-              </Text>
-            </View>
-          </View>
-        </View>
-      </View>
-      <View>
-        <View />
       </View>
       <View>
         <View />
