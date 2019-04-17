@@ -6,7 +6,7 @@
   "dev": "src/save-star-web",
   "scripts": {
     "depcheck": "depcheck --ignores='babel-*,depcheck,eslint,@thetimes/jest-lint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
-    "fmt": "eslint . --fix && prettier --write '**/*.*'",
+    "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff && yarn depcheck && jest-lint",
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
