@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.8.25](https://github.com/newsuk/times-components/compare/@times-components/article@6.8.24...@times-components/article@6.8.25) (2019-04-17)
+
+
+### Bug Fixes
+
+* ios article image press ([#1884](https://github.com/newsuk/times-components/issues/1884)) ([5240718](https://github.com/newsuk/times-components/commit/5240718))
+
+
+
+
+
 ## [6.8.24](https://github.com/newsuk/times-components/compare/@times-components/article@6.8.23...@times-components/article@6.8.24) (2019-04-16)
 
 **Note:** Version bump only for package @times-components/article

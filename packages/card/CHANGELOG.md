@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.2.17](https://github.com/newsuk/times-components/compare/@times-components/card@5.2.16...@times-components/card@5.2.17) (2019-04-17)
+
+
+### Bug Fixes
+
+* ios article image press ([#1884](https://github.com/newsuk/times-components/issues/1884)) ([5240718](https://github.com/newsuk/times-components/commit/5240718))
+
+
+
+
+
 ## [5.2.16](https://github.com/newsuk/times-components/compare/@times-components/card@5.2.13...@times-components/card@5.2.16) (2019-04-15)
 
 **Note:** Version bump only for package @times-components/card
