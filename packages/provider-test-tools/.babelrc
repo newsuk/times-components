@@ -1,5 +1,8 @@
 {
-  "presets": ["react-native"],
+  "presets": [
+    "react-native",
+    "@babel/preset-flow"
+  ],
   "plugins": [
     "styled-components",
     "add-react-displayname"

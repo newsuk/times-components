@@ -55,9 +55,10 @@
     ]
   },
   "dependencies": {
+    "@babel/core": "^7.0.0",
     "@times-components/test-utils": "2.2.34",
-    "babel-core": "6.26.0",
-    "babel-jest": "23.4.2",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.4.2",
     "babel-plugin-istanbul": "4.1.6",
     "babel-preset-jest": "23.2.0",
     "enzyme": "3.6.0",
@@ -69,9 +70,10 @@
     "jest-plugins": "2.9.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
     "@thetimes/jest-lint": "*",
     "@times-components/eslint-config-thetimes": "0.8.9",
-    "babel-cli": "6.26.0",
     "babel-plugin-add-react-displayname": "0.0.5",
     "babel-plugin-styled-components": "1.5.1",
     "babel-preset-react-native": "4.0.0",
