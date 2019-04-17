@@ -1,5 +1,6 @@
 import React from "react";
 import get from "lodash.get";
+import { Helmet } from "react-helmet-async";
 import ArticleList, {
   ArticleListPageError
 } from "@times-components/article-list";
@@ -87,6 +88,12 @@ const Topic = ({
 
         return (
           <Responsive>
+            <Helmet>
+              <title>
+                {name} | Page {`${page}/${pageSize}`} | The Times &amp; The
+                Sunday Times
+              </title>
+            </Helmet>
             <ArticleList
               adConfig={adConfig}
               articleListHeader={articleListHeader}

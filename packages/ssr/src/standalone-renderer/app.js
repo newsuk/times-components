@@ -16,13 +16,13 @@ server.use(express.static("dist"));
 const makeHtml = (
   initialState,
   initialProps,
-  { bundleName, markup, responsiveStyles, styles, title }
+  { bundleName, headMarkup, markup, responsiveStyles, styles }
 ) => `
         <!DOCTYPE html>
         <html>
           <head>
             <meta name="viewport" content="width=device-width, initial-scale=1">
-            <title>${title}</title>
+            ${headMarkup}
             ${styles}
             ${responsiveStyles}
           </head>
@@ -76,8 +76,7 @@ server.get("/article/:id", (request, response) => {
           bundleName: "article",
           markup,
           responsiveStyles,
-          styles,
-          title: "Article"
+          styles
         })
       )
     );
@@ -102,8 +101,7 @@ server.get("/profile/:slug", (request, response) => {
           bundleName: "author-profile",
           markup,
           responsiveStyles,
-          styles,
-          title: authorSlug
+          styles
         })
       )
     );
@@ -122,16 +120,24 @@ server.get("/topic/:slug", (request, response) => {
       { currentPage, topicSlug },
       { graphqlApiUrl, logger, makeArticleUrl }
     )
-    .then(({ initialProps, initialState, markup, responsiveStyles, styles }) =>
-      response.send(
-        makeHtml(initialState, initialProps, {
-          bundleName: "topic",
-          markup,
-          responsiveStyles,
-          styles,
-          title: topicSlug
-        })
-      )
+    .then(
+      ({
+        headMarkup,
+        initialProps,
+        initialState,
+        markup,
+        responsiveStyles,
+        styles
+      }) =>
+        response.send(
+          makeHtml(initialState, initialProps, {
+            bundleName: "topic",
+            headMarkup,
+            markup,
+            responsiveStyles,
+            styles
+          })
+        )
     );
 });
 
