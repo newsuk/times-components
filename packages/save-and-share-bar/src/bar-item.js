@@ -3,14 +3,14 @@ import { LinkWithPressedStyle } from "@times-components/link";
 import styled from "styled-components";
 import styles from "./styles";
 
- const HoverIcon = styled.div`
+const HoverIcon = styled.div`
   color: ${props => props.color};
-   &:hover {
+  &:hover {
     color: ${props => props.hoverColor || props.color};
   }
 `;
 
- const BarItem = ({
+const BarItem = ({
   children,
   color = styles.svgIcon.fillColour,
   hoverColor = styles.svgIcon.hoverFillColour,
@@ -27,4 +27,4 @@ import styles from "./styles";
   </LinkWithPressedStyle>
 );
 
- export default BarItem;
+export default BarItem;
