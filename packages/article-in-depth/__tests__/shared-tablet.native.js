@@ -11,7 +11,7 @@ import {
 import "./mocks.native";
 import Responsive from "@times-components/responsive";
 import { iterator } from "@times-components/test-utils";
-import { setIsTablet } from "@times-components/test-utils/dimensions";
+import { setIsTablet } from "@times-components/mocks/dimensions";
 
 import ArticleInDepth from "../src/article-in-depth";
 import sharedProps from "./shared-props";
