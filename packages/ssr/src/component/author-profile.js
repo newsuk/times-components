@@ -3,7 +3,7 @@
 const React = require("react");
 const { ApolloProvider } = require("react-apollo");
 const { AuthorProfileProvider } = require("@times-components/provider/rnw");
-const Context = require("@times-components/context/rnw").default;
+const { ContextProviderWithDefaults } = require("@times-components/context/rnw");
 const AuthorProfile = require("@times-components/author-profile/rnw").default;
 
 module.exports = (client, analyticsStream, data) => {
@@ -29,7 +29,7 @@ module.exports = (client, analyticsStream, data) => {
       },
       ({ author, isLoading, error, refetch }) =>
         React.createElement(
-          Context.Provider,
+          ContextProviderWithDefaults,
           { value: { makeArticleUrl } },
           React.createElement(AuthorProfile, {
             adConfig: mapProfileToAdConfig(),

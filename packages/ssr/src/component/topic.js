@@ -4,7 +4,7 @@ const React = require("react");
 const { ApolloProvider } = require("react-apollo");
 const { HelmetProvider } = require("react-helmet-async");
 const { TopicProvider } = require("@times-components/provider/rnw");
-const Context = require("@times-components/context/rnw").default;
+const { ContextProviderWithDefaults } = require("@times-components/context/rnw");
 const { scales } = require("@times-components/styleguide/rnw");
 const Topic = require("@times-components/topic/rnw").default;
 
@@ -37,7 +37,7 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
         },
         ({ isLoading, error, refetch, topic }) =>
           React.createElement(
-            Context.Provider,
+            ContextProviderWithDefaults,
             {
               value: {
                 makeArticleUrl,

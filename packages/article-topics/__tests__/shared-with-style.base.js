@@ -1,6 +1,6 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
-import Context from "@times-components/context";
+import { ContextProviderWithDefaults } from "@times-components/context";
 import { scales } from "@times-components/styleguide";
 import { iterator } from "@times-components/test-utils";
 import ArticleTopics from "../src/article-topics";
@@ -13,9 +13,9 @@ export default () => {
       test: () => {
         const scale = scales.medium;
         const testInstance = TestRenderer.create(
-          <Context.Provider value={{ theme: { scale } }}>
+          <ContextProviderWithDefaults value={{ theme: { scale } }}>
             <ArticleTopics onPress={() => {}} topics={topicData.slice(0, 1)} />
-          </Context.Provider>
+          </ContextProviderWithDefaults>
         );
 
         expect(testInstance).toMatchSnapshot();
@@ -26,9 +26,9 @@ export default () => {
       test: () => {
         const scale = scales.large;
         const testInstance = TestRenderer.create(
-          <Context.Provider value={{ theme: { scale } }}>
+          <ContextProviderWithDefaults value={{ theme: { scale } }}>
             <ArticleTopics onPress={() => {}} topics={topicData.slice(0, 1)} />
-          </Context.Provider>
+          </ContextProviderWithDefaults>
         );
 
         expect(testInstance).toMatchSnapshot();
@@ -39,9 +39,9 @@ export default () => {
       test: () => {
         const scale = scales.xlarge;
         const testInstance = TestRenderer.create(
-          <Context.Provider value={{ theme: { scale } }}>
+          <ContextProviderWithDefaults value={{ theme: { scale } }}>
             <ArticleTopics onPress={() => {}} topics={topicData.slice(0, 1)} />
-          </Context.Provider>
+          </ContextProviderWithDefaults>
         );
 
         expect(testInstance).toMatchSnapshot();

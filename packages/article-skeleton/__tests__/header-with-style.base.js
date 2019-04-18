@@ -1,8 +1,8 @@
 /* eslint-disable react/no-multi-comp */
 import React from "react";
 import { Text, View } from "react-native";
-import { iterator, makeArticleUrl } from "@times-components/test-utils";
-import Context from "@times-components/context";
+import { iterator } from "@times-components/test-utils";
+import { ContextProviderWithDefaults } from "@times-components/context";
 import { scales } from "@times-components/styleguide";
 import ArticleSkeleton from "../src/article-skeleton";
 import articleFixture from "../fixtures/full-article";
@@ -20,9 +20,8 @@ const emptyArticle = {
 };
 
 const renderArticle = (data, header) => (
-  <Context.Provider
+  <ContextProviderWithDefaults
     value={{
-      makeArticleUrl,
       theme: { scale: scales.medium, sectionColour: "#FF0000" }
     }}
   >
@@ -40,7 +39,7 @@ const renderArticle = (data, header) => (
       onTwitterLinkPress={() => {}}
       onVideoPress={() => {}}
     />
-  </Context.Provider>
+  </ContextProviderWithDefaults>
 );
 
 export const snapshotTests = renderComponent => [

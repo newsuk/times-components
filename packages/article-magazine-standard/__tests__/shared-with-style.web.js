@@ -1,7 +1,7 @@
 import React from "react";
 import { AppRegistry } from "react-native-web";
 import TestRenderer from "react-test-renderer";
-import Context from "@times-components/context";
+import { ContextProviderWithDefaults } from "@times-components/context";
 import {
   addSerializers,
   compose,
@@ -175,9 +175,9 @@ export default () => {
 
   it("full article with style in the culture magazine", () => {
     const testRenderer = TestRenderer.create(
-      <Context.Provider value={themeForSection("culture")}>
+      <ContextProviderWithDefaults value={themeForSection("culture")}>
         <ArticleMagazineStandard {...sharedProps} article={article} />
-      </Context.Provider>
+      </ContextProviderWithDefaults>
     );
 
     expect(testRenderer).toMatchSnapshot();
@@ -185,9 +185,9 @@ export default () => {
 
   it("full article with style in the style magazine", () => {
     const testRenderer = TestRenderer.create(
-      <Context.Provider value={themeForSection("style")}>
+      <ContextProviderWithDefaults value={themeForSection("style")}>
         <ArticleMagazineStandard {...sharedProps} article={article} />
-      </Context.Provider>
+      </ContextProviderWithDefaults>
     );
 
     expect(testRenderer).toMatchSnapshot();
@@ -195,9 +195,11 @@ export default () => {
 
   it("full article with style in the sunday times magazine", () => {
     const testRenderer = TestRenderer.create(
-      <Context.Provider value={themeForSection("thesundaytimesmagazine")}>
+      <ContextProviderWithDefaults
+        value={themeForSection("thesundaytimesmagazine")}
+      >
         <ArticleMagazineStandard {...sharedProps} article={article} />
-      </Context.Provider>
+      </ContextProviderWithDefaults>
     );
 
     expect(testRenderer).toMatchSnapshot();
