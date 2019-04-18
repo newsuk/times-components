@@ -51,67 +51,46 @@ exports[`1. save and share bar renders correctly 1`] = `
           "color": "rgba(105,105,105,1.00)",
           "fontFamily": "GillSansMTStd-Medium",
           "lineHeight": "14px",
+          "marginRight": "10px",
         }
       }
     >
       Share
     </div>
-    <Link
-      responsiveLinkStyles={
-        Object {
-          "base": "margin-left: 25px;",
-        }
-      }
-    >
+    <BarItem>
       <IconEmail
-        fillColour="#696969"
+        fillColour="currentColor"
         height={15}
         title="Share by email client"
       />
-    </Link>
-    <Link
-      responsiveLinkStyles={
-        Object {
-          "base": "margin-left: 25px;",
-        }
-      }
+    </BarItem>
+    <BarItem
       target="_blank"
       url="https://twitter.com/intent/tweet?text="
     >
       <IconTwitter
         fillColour="#696969"
         height={15}
-        title="Share on tweeter"
+        title="Share on Twitter"
       />
-    </Link>
-    <Link
-      responsiveLinkStyles={
-        Object {
-          "base": "margin-left: 25px;",
-        }
-      }
+    </BarItem>
+    <BarItem
       target="_blank"
       url="https://www.facebook.com/sharer/sharer.php?text="
     >
       <IconFacebook
-        fillColour="#696969"
+        fillColour="currentColor"
         height={18}
-        title="Share on facebook"
+        title="Share on Facebook"
       />
-    </Link>
-    <Link
-      responsiveLinkStyles={
-        Object {
-          "base": "margin-left: 25px;",
-        }
-      }
-    >
+    </BarItem>
+    <BarItem>
       <IconCopyLink
-        fillColour="#696969"
+        fillColour="currentColor"
         height={15}
-        title="Copy link o clipboard"
+        title="Copy link to clipboard"
       />
-    </Link>
+    </BarItem>
   </div>
   <div
     style={
@@ -138,24 +117,22 @@ exports[`1. save and share bar renders correctly 1`] = `
           "color": "rgba(105,105,105,1.00)",
           "fontFamily": "GillSansMTStd-Medium",
           "lineHeight": "14px",
+          "marginRight": "10px",
         }
       }
     >
       Save
     </div>
-    <Link
-      responsiveLinkStyles={
-        Object {
-          "base": "margin-left: 25px;",
-        }
-      }
+    <BarItem
+      color="#696969"
+      hoverColor="#1D1D1B"
     >
       <IconSaveBookmark
         fillColour="#FFFFFF"
-        strokeColour="#696969"
+        strokeColour="currentColor"
         title="Save to My Articles"
       />
-    </Link>
+    </BarItem>
   </div>
 </div>
 `;

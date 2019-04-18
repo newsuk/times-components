@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. link with pressed style 1`] = `
+.c0 {
+  margin-left: 5px;
+  border-radius: 9999px;
+  overflow: hidden;
+  text-align: center;
+  line-height: 45px;
+  height: 40px;
+  width: 40px;
+}
+
+.c0:hover {
+  background-color: #F5F5F5;
+}
+
+<a
+  className="c0"
+  href="http://thetimes.co.uk"
+  style={
+    Object {
+      "textDecoration": "underline",
+    }
+  }
+>
+  The Times
+</a>
+`;
