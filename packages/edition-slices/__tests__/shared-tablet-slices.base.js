@@ -2,7 +2,7 @@ import React from "react";
 import TestRenderer from "react-test-renderer";
 import { editionBreakpointWidths } from "@times-components/styleguide";
 import { iterator } from "@times-components/test-utils";
-import { setDimension } from "@times-components/test-utils/dimensions";
+import { setDimension } from "@times-components/mocks/dimensions";
 import {
   mockCommentLeadAndCartoonSlice,
   mockDailyRegisterSlice,
