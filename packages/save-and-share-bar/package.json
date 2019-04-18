@@ -1,6 +1,6 @@
 {
   "name": "@times-components/save-and-share-bar",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Save and Share bar",
   "main": "dist/save-and-share-bar",
   "dev": "src/save-and-share-bar",
@@ -33,9 +33,9 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
-    "@times-components/icons": "2.10.20",
-    "@times-components/link": "3.3.20",
-    "@times-components/styleguide": "3.28.5",
+    "@times-components/icons": "2.10.21",
+    "@times-components/link": "3.3.21",
+    "@times-components/styleguide": "3.28.6",
     "prop-types": "15.6.2",
     "styled-components": "3.4.0"
   },
@@ -45,7 +45,7 @@
     "@times-components/jest-configurator": "2.5.3",
     "@times-components/jest-serializer": "3.2.0",
     "@times-components/storybook": "3.4.25",
-    "@times-components/test-utils": "2.2.34",
+    "@times-components/test-utils": "2.2.35",
     "@times-components/webpack-configurator": "2.0.15",
     "babel-cli": "6.26.0",
     "eslint": "5.9.0",

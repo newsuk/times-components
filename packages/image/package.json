@@ -1,6 +1,6 @@
 {
   "name": "@times-components/image",
-  "version": "5.3.17",
+  "version": "5.3.18",
   "main": "dist/index",
   "dev": "src/index",
   "scripts": {
@@ -41,7 +41,7 @@
     "@times-components/jest-configurator": "2.5.3",
     "@times-components/jest-serializer": "3.2.0",
     "@times-components/storybook": "3.4.25",
-    "@times-components/test-utils": "2.2.34",
+    "@times-components/test-utils": "2.2.35",
     "@times-components/webpack-configurator": "2.0.15",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.4",
@@ -64,11 +64,11 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/gestures": "4.1.16",
-    "@times-components/gradient": "3.1.16",
-    "@times-components/link": "3.3.20",
-    "@times-components/responsive": "0.4.23",
-    "@times-components/styleguide": "3.28.5",
+    "@times-components/gestures": "4.1.17",
+    "@times-components/gradient": "3.1.17",
+    "@times-components/link": "3.3.21",
+    "@times-components/responsive": "0.4.24",
+    "@times-components/styleguide": "3.28.6",
     "@times-components/svgs": "2.7.3",
     "@times-components/utils": "4.10.3",
     "intrinsic-scale": "3.0.3",
