@@ -5,7 +5,7 @@ const defaultAdConfig = require("../lib/ads/make-author-profile-ad-config")
 
 module.exports = (
   { authorSlug, currentPage },
-  { graphqlApiUrl, logger, makeArticleUrl }
+  { graphqlApiUrl, logger, makeArticleUrl, makeTopicUrl }
 ) => {
   if (typeof authorSlug !== "string") {
     throw new Error(`Author slug should be a string. Received ${authorSlug}`);
@@ -26,6 +26,11 @@ module.exports = (
       `Make article url function is required. Received ${makeArticleUrl}`
     );
   }
+  if (!makeTopicUrl) {
+    throw new Error(
+      `Make topic url function is required. Received ${makeTopicUrl}`
+    );
+  }
 
   const options = {
     client: {
@@ -36,6 +41,7 @@ module.exports = (
       authorSlug,
       debounceTimeMs: 0,
       makeArticleUrl,
+      makeTopicUrl,
       mapProfileToAdConfig: defaultAdConfig,
       page: currentPage,
       pageSize: 20

@@ -4,7 +4,7 @@ const express = require("express");
 const shrinkRay = require("shrink-ray");
 
 const ssr = require("../server");
-const makeArticleUrl = require("../lib/make-url");
+const makeUrls = require("../lib/make-urls");
 const logger = require("../lib/simple-logger");
 
 const port = 3000;
@@ -65,9 +65,9 @@ server.get("/article/:id", (request, response) => {
 
   ssr
     .article(articleId, headers, {
+      ...makeUrls,
       graphqlApiUrl,
       logger,
-      makeArticleUrl,
       spotAccountId
     })
     .then(({ initialProps, initialState, markup, responsiveStyles, styles }) =>
@@ -93,7 +93,7 @@ server.get("/profile/:slug", (request, response) => {
   ssr
     .authorProfile(
       { authorSlug, currentPage },
-      { graphqlApiUrl, logger, makeArticleUrl }
+      { ...makeUrls, graphqlApiUrl, logger }
     )
     .then(({ initialProps, initialState, markup, responsiveStyles, styles }) =>
       response.send(
@@ -116,10 +116,7 @@ server.get("/topic/:slug", (request, response) => {
   const graphqlApiUrl = process.env.GRAPHQL_ENDPOINT;
 
   ssr
-    .topic(
-      { currentPage, topicSlug },
-      { graphqlApiUrl, logger, makeArticleUrl }
-    )
+    .topic({ currentPage, topicSlug }, { ...makeUrls, graphqlApiUrl, logger })
     .then(
       ({
         headMarkup,
