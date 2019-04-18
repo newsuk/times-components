@@ -6,11 +6,11 @@ import { colours, spacing } from "@times-components/styleguide";
 import { iterator } from "@times-components/test-utils";
 import LinkWithPressedStyle from "../../src/link-with-pressed-style.web";
 
-addSerializers(expect, minimalRnw(AppRegistry));
+ addSerializers(expect, minimalRnw(AppRegistry));
 
-require("jest-styled-components");
+ require("jest-styled-components");
 
-const tests = [
+ const tests = [
   {
     name: "Link with pressed style",
     test() {
@@ -30,7 +30,7 @@ const tests = [
         `
       };
 
-      const pressedStyle = {
+       const pressedStyle = {
         base: `
           ${style.base} 
           &:hover {
@@ -39,7 +39,7 @@ const tests = [
         `
       };
 
-      const testInstance = TestRenderer.create(
+       const testInstance = TestRenderer.create(
         <LinkWithPressedStyle
           onPress={() => {}}
           pressedStyle={pressedStyle}
@@ -50,9 +50,9 @@ const tests = [
         </LinkWithPressedStyle>
       );
 
-      expect(testInstance).toMatchSnapshot();
+       expect(testInstance).toMatchSnapshot();
     }
   }
 ];
 
-iterator(tests);
+ iterator(tests);
