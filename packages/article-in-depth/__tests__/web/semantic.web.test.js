@@ -11,7 +11,7 @@ import {
   replacePropTransform,
   replaceTransform
 } from "@times-components/jest-serializer";
-import Context from "@times-components/context";
+import { ContextProviderWithDefaults } from "@times-components/context";
 import { scales } from "@times-components/styleguide";
 import Article from "../../src/article-in-depth";
 import articleFixture, { testFixture } from "../../fixtures/full-article";
@@ -126,9 +126,8 @@ const tests = [
       const scale = scales.large;
       const sectionColour = "#FFFFFF";
       const testRenderer = TestRenderer.create(
-        <Context.Provider
+        <ContextProviderWithDefaults
           value={{
-            makeArticleUrl: () => "https://some-url.io",
             theme: { scale, sectionColour }
           }}
         >
@@ -145,7 +144,7 @@ const tests = [
             onVideoPress={() => {}}
             receiveChildList={() => {}}
           />
-        </Context.Provider>
+        </ContextProviderWithDefaults>
       );
 
       expect(testRenderer).toMatchSnapshot();

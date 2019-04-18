@@ -1,7 +1,7 @@
 import React from "react";
 import { NativeModules, Platform } from "react-native";
 import Article from "@times-components/article";
-import Context, { defaults } from "@times-components/context";
+import { ContextProviderWithDefaults, defaults } from "@times-components/context";
 import { themeFactory } from "@times-components/styleguide";
 import adTargetConfig from "./ad-targeting-config";
 import { propTypes, defaultProps } from "./article-prop-types";
@@ -55,7 +55,7 @@ const ArticleBase = ({
   };
 
   return (
-    <Context.Provider value={{ theme }}>
+    <ContextProviderWithDefaults value={{ theme }}>
       <Article
         adConfig={adConfig}
         analyticsStream={trackArticle}
@@ -86,7 +86,7 @@ const ArticleBase = ({
         referralUrl={referralUrl}
         refetch={refetch}
       />
-    </Context.Provider>
+    </ContextProviderWithDefaults>
   );
 };
 

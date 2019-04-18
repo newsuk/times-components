@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import Context from "@times-components/context";
+import { ContextProviderWithDefaults } from "@times-components/context";
 import { scales } from "@times-components/styleguide";
 import topicsData from "./fixtures/topics";
 import renderArticleTopics from "./showcase-helper";
@@ -11,9 +11,9 @@ export default {
       component: ({ select }, { decorateAction }) => {
         const scale = select("Scale", scales, scales.medium);
         return (
-          <Context.Provider value={{ theme: { scale } }}>
+          <ContextProviderWithDefaults value={{ theme: { scale } }}>
             {renderArticleTopics({ data: topicsData, decorateAction })}
-          </Context.Provider>
+          </ContextProviderWithDefaults>
         );
       },
       name: "Group of Topics",
@@ -24,9 +24,9 @@ export default {
       component: ({ select }, { decorateAction }) => {
         const scale = select("Scale", scales, scales.medium);
         return (
-          <Context.Provider value={{ theme: { scale } }}>
+          <ContextProviderWithDefaults value={{ theme: { scale } }}>
             {renderArticleTopics({ data: [topicsData[0]], decorateAction })}
-          </Context.Provider>
+          </ContextProviderWithDefaults>
         );
       },
       name: "Single Topic",

@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`ContextProviderWithDefaults adds defaults to the provided context 1`] = `"{\\"theme\\":{\\"scale\\":\\"large\\",\\"sectionColour\\":\\"#FFFFFF\\"}}"`;
+
 exports[`article context with default values 1`] = `"{\\"theme\\":{\\"imageCaptionAlignment\\":{},\\"scale\\":\\"medium\\"}}"`;
 
 exports[`article context with inline values 1`] = `"{\\"theme\\":{\\"scale\\":\\"large\\",\\"sectionColour\\":\\"#FFFFFF\\"}}"`;

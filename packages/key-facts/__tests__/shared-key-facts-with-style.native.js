@@ -1,6 +1,6 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
-import Context from "@times-components/context";
+import { ContextProviderWithDefaults } from "@times-components/context";
 import {
   addSerializers,
   compose,
@@ -65,9 +65,9 @@ export default () => {
     const sectionColour = "#FFFFFF";
 
     const testInstance = TestRenderer.create(
-      <Context.Provider value={{ theme: { scale, sectionColour } }}>
+      <ContextProviderWithDefaults value={{ theme: { scale, sectionColour } }}>
         <KeyFacts ast={dataWithTitle} onLinkPress={() => {}} />
-      </Context.Provider>
+      </ContextProviderWithDefaults>
     );
 
     expect(testInstance).toMatchSnapshot();

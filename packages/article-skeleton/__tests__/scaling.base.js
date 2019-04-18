@@ -1,5 +1,5 @@
 import React from "react";
-import Context from "@times-components/context";
+import { ContextProviderWithDefaults } from "@times-components/context";
 import { scales } from "@times-components/styleguide";
 import ArticleSkeleton from "../src/article-skeleton";
 import articleFixture, { testFixture } from "../fixtures/full-article";
@@ -11,7 +11,9 @@ export default renderComponent => [
     name: "scaled medium full article",
     test: () => {
       const output = renderComponent(
-        <Context.Provider value={{ theme: { scale: scales.medium } }}>
+        <ContextProviderWithDefaults
+          value={{ theme: { scale: scales.medium } }}
+        >
           <ArticleSkeleton
             {...articleSkeletonProps}
             adConfig={adConfig}
@@ -28,7 +30,7 @@ export default renderComponent => [
             onTwitterLinkPress={() => {}}
             onVideoPress={() => {}}
           />
-        </Context.Provider>
+        </ContextProviderWithDefaults>
       );
 
       expect(output).toMatchSnapshot();
@@ -38,7 +40,7 @@ export default renderComponent => [
     name: "scaled large full article",
     test: () => {
       const output = renderComponent(
-        <Context.Provider value={{ theme: { scale: scales.large } }}>
+        <ContextProviderWithDefaults value={{ theme: { scale: scales.large } }}>
           <ArticleSkeleton
             {...articleSkeletonProps}
             adConfig={adConfig}
@@ -55,7 +57,7 @@ export default renderComponent => [
             onTwitterLinkPress={() => {}}
             onVideoPress={() => {}}
           />
-        </Context.Provider>
+        </ContextProviderWithDefaults>
       );
 
       expect(output).toMatchSnapshot();
@@ -65,7 +67,9 @@ export default renderComponent => [
     name: "scaled xlarge full article",
     test: () => {
       const output = renderComponent(
-        <Context.Provider value={{ theme: { scale: scales.xlarge } }}>
+        <ContextProviderWithDefaults
+          value={{ theme: { scale: scales.xlarge } }}
+        >
           <ArticleSkeleton
             {...articleSkeletonProps}
             adConfig={adConfig}
@@ -82,7 +86,7 @@ export default renderComponent => [
             onTwitterLinkPress={() => {}}
             onVideoPress={() => {}}
           />
-        </Context.Provider>
+        </ContextProviderWithDefaults>
       );
 
       expect(output).toMatchSnapshot();
