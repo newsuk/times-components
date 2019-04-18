@@ -12,6 +12,7 @@ import { CentredCaption } from "@times-components/caption";
 import { ResponsiveContext } from "@times-components/responsive";
 import { tabletWidth } from "@times-components/styleguide";
 import LeadAsset from "@times-components/article-lead-asset";
+import Context from "@times-components/context";
 import ArticleHeader from "./article-header/article-header";
 import {
   articlePropTypes,
@@ -106,27 +107,32 @@ class ArticleMagazineStandard extends Component {
     return (
       <ResponsiveContext.Consumer>
         {({ isTablet }) => (
-          <ArticleSkeleton
-            adConfig={adConfig}
-            analyticsStream={analyticsStream}
-            data={article}
-            Header={this.renderHeader}
-            interactiveConfig={interactiveConfig}
-            isTablet={isTablet}
-            onAuthorPress={onAuthorPress}
-            onCommentGuidelinesPress={onCommentGuidelinesPress}
-            onCommentsPress={onCommentsPress}
-            onImagePress={onImagePress}
-            onLinkPress={onLinkPress}
-            onRelatedArticlePress={onRelatedArticlePress}
-            onTopicPress={onTopicPress}
-            onTwitterLinkPress={onTwitterLinkPress}
-            onVideoPress={onVideoPress}
-            onViewableItemsChanged={
-              onViewed ? this.onViewableItemsChanged : null
-            }
-            receiveChildList={receiveChildList}
-          />
+          <Context.Consumer>
+            {({ theme: { scale } }) => (
+              <ArticleSkeleton
+                adConfig={adConfig}
+                analyticsStream={analyticsStream}
+                data={article}
+                Header={this.renderHeader}
+                interactiveConfig={interactiveConfig}
+                isTablet={isTablet}
+                onAuthorPress={onAuthorPress}
+                onCommentGuidelinesPress={onCommentGuidelinesPress}
+                onCommentsPress={onCommentsPress}
+                onImagePress={onImagePress}
+                onLinkPress={onLinkPress}
+                onRelatedArticlePress={onRelatedArticlePress}
+                onTopicPress={onTopicPress}
+                onTwitterLinkPress={onTwitterLinkPress}
+                onVideoPress={onVideoPress}
+                onViewableItemsChanged={
+                  onViewed ? this.onViewableItemsChanged : null
+                }
+                receiveChildList={receiveChildList}
+                scale={scale}
+              />
+            )}
+          </Context.Consumer>
         )}
       </ResponsiveContext.Consumer>
     );

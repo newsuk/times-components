@@ -9,16 +9,14 @@ import KeyFacts from "@times-components/key-facts";
 import { renderTree } from "@times-components/markup-forest";
 import { flow } from "@times-components/markup";
 import PullQuote from "@times-components/pull-quote";
-import { colours, tabletWidth } from "@times-components/styleguide";
+import styleguide, { colours, tabletWidth } from "@times-components/styleguide";
 import { screenWidth } from "@times-components/utils";
 import Video from "@times-components/video";
-import { Markup, Layout, Text } from "@times-components/text-flow";
+import { Layout, Text, MarkupFactory } from "@times-components/text-flow";
 import DropCap from "@times-components/article-paragraph/src/drop-cap";
 import ArticleLink from "./article-link";
 import InsetCaption from "./inset-caption";
 import styleFactory from "../styles/article-body";
-
-const styles = styleFactory();
 
 export default ({
   content: data,
@@ -28,10 +26,30 @@ export default ({
   onVideoPress,
   width,
   fontScale,
-  isTablet
-}) =>
-  renderTree(data, {
-    ...flow,
+  isTablet,
+  scale
+}) => {
+  const styles = styleFactory(scale);
+  const { fontFactory } = styleguide({ scale });
+  const { fontFamily, fontSize, lineHeight } = fontFactory({
+    font: "body",
+    fontSize: "bodyMobile"
+  });
+  const boldFont = `${fontFamily}-Bold`;
+  const italicFont = `${fontFamily}-Italic`;
+  const { Bold, Italic, Link, Body } = MarkupFactory({
+    boldFont,
+    italicFont,
+    linkFont: fontFamily
+  });
+  return renderTree(data, {
+    ...flow({
+      Body,
+      Bold,
+      fontFamily,
+      Italic,
+      Link
+    }),
     ad(key, attributes) {
       return {
         element: new Layout.Block({
@@ -49,14 +67,14 @@ export default ({
       };
     },
     dropCap(key, { value }) {
+      const height = lineHeight * 3 * fontScale;
       const text = new Text.Text({
-        font: "TimesModern-Regular",
-        lineHeight: 90 * fontScale,
-        markup: [new Markup.MarkupString(value)],
-        size: 90 * fontScale
+        font: fontFamily,
+        lineHeight: height,
+        markup: [new Body(value)],
+        size: height
       });
       const capWidth = text.characters[0].getWidth() + 10;
-      const height = 90;
       return {
         element: new Layout.InlineBlock({
           getComponent() {
@@ -65,8 +83,7 @@ export default ({
                 {({
                   theme: {
                     dropCapFont,
-                    sectionColour = colours.section.default,
-                    scale
+                    sectionColour = colours.section.default
                   }
                 }) => (
                   <DropCap
@@ -177,7 +194,7 @@ export default ({
     },
     link(key, attributes, children) {
       const { canonicalId, href: url, type } = attributes;
-      const link = new Markup.Link({
+      const link = new Link({
         children,
         href(span) {
           return (
@@ -199,7 +216,7 @@ export default ({
     paragraph(key, attributes, children, indx, node) {
       return {
         element: new Text.Text({
-          font: "TimesDigitalW04-Regular",
+          font: fontFamily,
           getComponent(spans) {
             return (
               <Context.Consumer key={key}>
@@ -220,9 +237,9 @@ export default ({
               </Context.Consumer>
             );
           },
-          lineHeight: 30 * fontScale,
+          lineHeight: lineHeight * fontScale,
           markup: children,
-          size: 18 * fontScale,
+          size: fontSize * fontScale,
           width: Math.min(screenWidth(), tabletWidth) - 10
         })
       };
@@ -268,11 +285,19 @@ export default ({
           })
         };
       }
+      const {
+        fontFamily: qFontFamily,
+        fontSize: qFontSize,
+        lineHeight: qLineHeight
+      } = fontFactory({
+        font: "headlineRegular",
+        fontSize: "pageComponentHeadline"
+      });
       const quote = new Text.Text({
-        font: "TimesModern-Regular",
-        lineHeight: 25 * 1.3 * fontScale,
-        markup: [new Markup.MarkupString(content)],
-        size: 25 * fontScale,
+        font: qFontFamily,
+        lineHeight: qLineHeight * fontScale,
+        markup: [new Body(content)],
+        size: qFontSize * fontScale,
         width: width * 0.35
       });
       const height = quote.measuredHeight;
@@ -303,7 +328,7 @@ export default ({
               </Context.Consumer>
             );
           },
-          height: height + 25 * 1.3 * fontScale,
+          height: height + lineHeight * 1.3 * fontScale,
           width: width * 0.35
         }),
         shouldRenderChildren: false
@@ -352,3 +377,4 @@ export default ({
       };
     }
   });
+};

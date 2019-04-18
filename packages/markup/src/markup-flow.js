@@ -1,7 +1,7 @@
 import { Markup, Text } from "@times-components/text-flow";
 import { subscriptMap, superscriptMap } from "./sub-sup";
 
-export default {
+export default ({ fontFamily, Bold, Italic, Body }) => ({
   block(key, attributes, renderedChildren) {
     return {
       element: new Markup.Styled({
@@ -11,7 +11,7 @@ export default {
   },
   bold(key, attributes, renderedChildren) {
     return {
-      element: new Markup.Bold({
+      element: new Bold({
         children: renderedChildren
       })
     };
@@ -23,7 +23,7 @@ export default {
   },
   emphasis(key, attributes, renderedChildren) {
     return {
-      element: new Markup.Italic({
+      element: new Italic({
         children: renderedChildren
       })
     };
@@ -37,7 +37,7 @@ export default {
   },
   italic(key, attributes, renderedChildren) {
     return {
-      element: new Markup.Italic({
+      element: new Italic({
         children: renderedChildren
       })
     };
@@ -45,7 +45,7 @@ export default {
   paragraph(key, attributes, renderedChildren) {
     return {
       element: new Text.Text({
-        font: "TimesDigitalW04-Regular",
+        font: fontFamily,
         height: 200,
         lineHeight: 30,
         markup: renderedChildren,
@@ -56,7 +56,7 @@ export default {
   },
   strong(key, attributes, renderedChildren) {
     return {
-      element: new Markup.Bold({
+      element: new Bold({
         children: renderedChildren
       })
     };
@@ -66,9 +66,7 @@ export default {
 
     if (chars.every(char => char in subscriptMap)) {
       return {
-        element: new Markup.MarkupString(
-          chars.map(char => subscriptMap[char].join(""))
-        )
+        element: new Body(chars.map(char => subscriptMap[char].join("")))
       };
     }
     return {
@@ -85,9 +83,7 @@ export default {
 
     if (chars.every(char => char in superscriptMap)) {
       return {
-        element: new Markup.MarkupString(
-          chars.map(char => superscriptMap[char]).join("")
-        )
+        element: new Body(chars.map(char => superscriptMap[char]).join(""))
       };
     }
     return {
@@ -101,7 +97,7 @@ export default {
   },
   text(key, { value }) {
     return {
-      element: new Markup.MarkupString(value)
+      element: new Body(value)
     };
   }
-};
+});

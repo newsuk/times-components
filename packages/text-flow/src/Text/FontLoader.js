@@ -27,7 +27,7 @@ export default class FontLoader {
     if (name in FontLoader.fonts) {
       return FontLoader.fonts[name];
     }
-    return null;
+    throw new Error(`Missing font: ${name}`)
   }
 
   static loadFont(fontName) {

@@ -1,13 +1,13 @@
 /* eslint-disable no-param-reassign */
 import StyledText from "./Styled";
 
-export default class LinkText extends StyledText {
+export default font => class LinkText extends StyledText {
   href = null;
 
   constructor(props = {}) {
     super(props);
     this.href = props.href;
-    this.style.font = "TimesDigitalW04-Bold";
+    this.style.font = font
   }
 
   characters(textStyle) {

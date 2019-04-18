@@ -14,6 +14,7 @@ import {
 } from "@times-components/utils";
 import { tabletWidth } from "@times-components/styleguide";
 import Caption from "@times-components/caption";
+import Context from "@times-components/context";
 import ArticleHeader from "./article-header/article-header";
 import ArticleMeta from "./article-meta/article-meta";
 import stylesFactory from "./styles/article-body";
@@ -130,28 +131,33 @@ class ArticlePage extends Component {
     return (
       <ResponsiveContext.Consumer>
         {({ isTablet }) => (
-          <ArticleSkeleton
-            adConfig={adConfig}
-            analyticsStream={analyticsStream}
-            data={article}
-            Header={this.renderHeader}
-            interactiveConfig={interactiveConfig}
-            isTablet={isTablet}
-            onAuthorPress={onAuthorPress}
-            onCommentGuidelinesPress={onCommentGuidelinesPress}
-            onCommentsPress={onCommentsPress}
-            onImagePress={onImagePress}
-            onLinkPress={onLinkPress}
-            onRelatedArticlePress={onRelatedArticlePress}
-            onTopicPress={onTopicPress}
-            onTwitterLinkPress={onTwitterLinkPress}
-            onVideoPress={onVideoPress}
-            onViewableItemsChanged={
-              onViewed ? this.onViewableItemsChanged : null
-            }
-            receiveChildList={receiveChildList}
-            referralUrl={referralUrl}
-          />
+          <Context.Consumer>
+            {({ theme: { scale } }) => (
+              <ArticleSkeleton
+                adConfig={adConfig}
+                analyticsStream={analyticsStream}
+                data={article}
+                Header={this.renderHeader}
+                interactiveConfig={interactiveConfig}
+                isTablet={isTablet}
+                onAuthorPress={onAuthorPress}
+                onCommentGuidelinesPress={onCommentGuidelinesPress}
+                onCommentsPress={onCommentsPress}
+                onImagePress={onImagePress}
+                onLinkPress={onLinkPress}
+                onRelatedArticlePress={onRelatedArticlePress}
+                onTopicPress={onTopicPress}
+                onTwitterLinkPress={onTwitterLinkPress}
+                onVideoPress={onVideoPress}
+                onViewableItemsChanged={
+                  onViewed ? this.onViewableItemsChanged : null
+                }
+                receiveChildList={receiveChildList}
+                referralUrl={referralUrl}
+                scale={scale}
+              />
+            )}
+          </Context.Consumer>
         )}
       </ResponsiveContext.Consumer>
     );

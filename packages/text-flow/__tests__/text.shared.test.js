@@ -1,5 +1,11 @@
-import { Text, Markup } from "../src/text-flow";
+import { Text, MarkupFactory } from "../src/text-flow";
 import FontLoader from "../src/Text/FontLoader";
+
+const { Bold, Body } = MarkupFactory({
+  bodyFont: "TimesDigitalW04-Regular",
+  boldFont: "TimesDigitalW04-Bold",
+  italicFont: "TimesDigitalW04-Italic"
+});
 
 export default () => {
   beforeAll(() => {
@@ -15,11 +21,11 @@ export default () => {
       font: "TimesDigitalW04-Regular",
       lineHeight: 30,
       markup: [
-        new Markup.MarkupString("a test paragraph"),
-        new Markup.Bold({
-          children: [new Markup.MarkupString("some bold stuff")]
+        new Body("a test paragraph"),
+        new Bold({
+          children: [new Body("some bold stuff")]
         }),
-        new Markup.MarkupString("Some other stuff")
+        new Body("Some other stuff")
       ],
       size: 18,
       width: 300
@@ -47,11 +53,11 @@ export default () => {
       font: "TimesDigitalW04-Regular",
       lineHeight: 30,
       markup: [
-        new Markup.MarkupString("a test paragraph"),
-        new Markup.Bold({
-          children: [new Markup.MarkupString("some bold stuff")]
+        new Body("a test paragraph"),
+        new Bold({
+          children: [new Body("some bold stuff")]
         }),
-        new Markup.MarkupString("Some other stuff")
+        new Body("Some other stuff")
       ],
       size: 18,
       width: 300

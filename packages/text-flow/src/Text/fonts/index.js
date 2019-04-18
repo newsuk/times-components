@@ -14,6 +14,7 @@ export default {
   "Flama-Bold": FlamaBold,
   "GillSansMTStd-Medium": GilsansMedium,
   "Tiempos-Headline-Bold": TiemposHeadlineBold,
+  "TimesDigitalW04": TimesDigitalW04,
   "TimesDigitalW04-Bold": TimesDigitalW04Bold,
   "TimesDigitalW04-Italic": TimesDigitalW04Italic,
   "TimesDigitalW04-Regular": TimesDigitalW04,

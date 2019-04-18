@@ -1,5 +1,11 @@
-import { Markup } from "../src/text-flow";
+import { MarkupFactory } from "../src/text-flow";
 import FontLoader from "../src/Text/FontLoader";
+
+const { Bold, Italic, Body, Link } = MarkupFactory({
+  bodyFont: "TimesDigitalW04-Regular",
+  boldFont: "TimesDigitalW04-Bold",
+  italicFont: "TimesDigitalW04-Italic"
+});
 
 export default () => {
   beforeAll(() => {
@@ -11,7 +17,7 @@ export default () => {
   });
 
   it("MarkupString returns characters", () => {
-    const string = new Markup.MarkupString("Foobar");
+    const string = new Body("Foobar");
 
     expect(
       string
@@ -38,8 +44,8 @@ export default () => {
   });
 
   it("bold applies style", () => {
-    const bold = new Markup.Bold({
-      children: [new Markup.MarkupString("Foobar")]
+    const bold = new Bold({
+      children: [new Body("Foobar")]
     });
 
     expect(
@@ -50,8 +56,8 @@ export default () => {
   });
 
   it("italic applies style", () => {
-    const italic = new Markup.Italic({
-      children: [new Markup.MarkupString("Foobar")]
+    const italic = new Italic({
+      children: [new Body("Foobar")]
     });
 
     expect(
@@ -62,8 +68,8 @@ export default () => {
   });
 
   it("link saves href", () => {
-    const link = new Markup.Link({
-      children: [new Markup.MarkupString("Foobar")],
+    const link = new Link({
+      children: [new Body("Foobar")],
       href: "test"
     });
 

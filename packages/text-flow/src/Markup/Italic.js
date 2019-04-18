@@ -1,8 +1,8 @@
 import StyledText from "./Styled";
 
-export default class ItalicMarkup extends StyledText {
+export default font => class ItalicMarkup extends StyledText {
   constructor(props = {}) {
     super(props);
-    this.style.font = "TimesDigitalW04-Italic";
+    this.style.font = font;
   }
 }

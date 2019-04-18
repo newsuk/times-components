@@ -191,7 +191,8 @@ class ArticleSkeleton extends Component {
       onTwitterLinkPress,
       onVideoPress,
       receiveChildList,
-      isTablet
+      isTablet,
+      scale
     } = this.props;
     const { dataSource, width, flow } = this.state;
     const { dropcapsDisabled, template } = dataSource;
@@ -244,6 +245,7 @@ class ArticleSkeleton extends Component {
           onLinkPress,
           onTwitterLinkPress,
           onVideoPress,
+          scale,
           width: Math.min(maxWidth, width)
         })
       ),
