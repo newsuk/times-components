@@ -1,3 +1,4 @@
 {
-  "maxAttributes": 9
+  "maxAttributes": 9,
+  "maxAttributeStringLength": 90
 }

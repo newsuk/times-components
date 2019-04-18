@@ -4,7 +4,10 @@ const React = require("react");
 const { ApolloProvider } = require("react-apollo");
 const { ArticleProvider } = require("@times-components/provider/rnw");
 const Article = require("@times-components/article/rnw").default;
-const { ContextProviderWithDefaults, defaults } = require("@times-components/context/rnw");
+const {
+  ContextProviderWithDefaults,
+  defaults
+} = require("@times-components/context/rnw");
 const { scales, themeFactory } = require("@times-components/styleguide/rnw");
 
 const scale = scales.large;

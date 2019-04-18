@@ -4,7 +4,9 @@ const React = require("react");
 const { ApolloProvider } = require("react-apollo");
 const { HelmetProvider } = require("react-helmet-async");
 const { TopicProvider } = require("@times-components/provider/rnw");
-const { ContextProviderWithDefaults } = require("@times-components/context/rnw");
+const {
+  ContextProviderWithDefaults
+} = require("@times-components/context/rnw");
 const { scales } = require("@times-components/styleguide/rnw");
 const Topic = require("@times-components/topic/rnw").default;
 
