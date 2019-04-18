@@ -10,7 +10,7 @@ import {
   print
 } from "@times-components/jest-serializer";
 import { scales } from "@times-components/styleguide";
-import { setIsTablet } from "@times-components/test-utils/dimensions";
+import { setIsTablet } from "@times-components/mocks/dimensions";
 import KeyFacts from "../src/key-facts";
 import dataWithTitle from "../fixtures/key-facts-test.json";
 import dataWithoutTitle from "../fixtures/key-facts-no-title-test.json";

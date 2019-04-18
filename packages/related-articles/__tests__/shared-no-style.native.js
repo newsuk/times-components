@@ -5,7 +5,7 @@ import {
   minimalNativeTransform,
   print
 } from "@times-components/jest-serializer";
-import { mockNativeModules } from "@times-components/test-utils";
+import { mockNativeModules } from "@times-components/mocks";
 
 mockNativeModules();
 jest.mock("@times-components/card", () => "Card");

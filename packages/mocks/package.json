@@ -1,31 +1,28 @@
 {
-  "name": "@times-components/responsive",
-  "version": "0.4.24",
-  "description": "Responsive",
-  "main": "dist/responsive",
-  "dev": "src/responsive",
+  "name": "@times-components/mocks",
+  "version": "0.0.1",
+  "description": "Shared mocks for the tests",
+  "main": "dist/index",
+  "dev": "src/index",
   "scripts": {
     "depcheck": "depcheck --ignores='babel-*,depcheck,eslint,@thetimes/jest-lint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff && yarn depcheck && jest-lint",
-    "test:android": "jest --config='./__tests__/android/jest.config.js'",
-    "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
-    "test:web": "jest --config='./__tests__/web/jest.config.js'",
-    "test:all": "yarn test:android --coverage && yarn test:ios --coverage && yarn test:web --coverage",
-    "prepublishOnly": "yarn transpile && yarn bundle",
+    "prepublishOnly": "yarn transpile",
     "cleanup-dist": "rm -rf dist",
-    "transpile": "yarn cleanup-dist && babel src -d dist",
-    "bundle": "NODE_ENV=production webpack -p"
+    "transpile": "yarn cleanup-dist && babel src -d dist"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/newsuk/times-components.git"
   },
   "keywords": [
+    "react-native-web",
     "react",
     "native",
-    "responsive",
+    "web",
+    "mocks",
     "component"
   ],
   "license": "BSD-3-Clause",
@@ -34,29 +31,20 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
-    "@times-components/styleguide": "3.28.6",
-    "prop-types": "15.6.2"
+    "@times-components/styleguide": "3.28.6"
   },
   "devDependencies": {
     "@thetimes/jest-lint": "*",
     "@times-components/eslint-config-thetimes": "0.8.9",
-    "@times-components/jest-configurator": "2.5.3",
-    "@times-components/mocks": "0.0.1",
-    "@times-components/webpack-configurator": "2.0.15",
     "babel-cli": "6.26.0",
     "eslint": "5.9.0",
     "jest": "23.3.0",
     "prettier": "1.14.3",
     "react": "16.5.2",
-    "react-dom": "16.5.2",
-    "react-native": "0.55.4",
-    "react-test-renderer": "16.5.2",
-    "webpack": "4.6.0",
-    "webpack-cli": "2.1.4"
+    "react-native": "0.55.4"
   },
   "peerDependencies": {
     "react": ">=16.5",
-    "react-dom": ">=16.5",
     "react-native": ">=0.55",
     "react-native-web": "0.9.0"
   },
