@@ -1,6 +1,6 @@
 {
   "name": "@times-components/ad",
-  "version": "2.5.28",
+  "version": "2.5.29",
   "description": "Ad component",
   "main": "dist/ad",
   "dev": "src/ad",
@@ -38,7 +38,7 @@
     "@times-components/jest-configurator": "2.5.3",
     "@times-components/jest-serializer": "3.2.0",
     "@times-components/storybook": "3.4.25",
-    "@times-components/test-utils": "2.2.34",
+    "@times-components/test-utils": "2.2.35",
     "@times-components/webpack-configurator": "2.0.15",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "24.7.1",
@@ -61,7 +61,7 @@
     "webpack-cli": "3.3.0"
   },
   "dependencies": {
-    "@times-components/styleguide": "3.28.5",
+    "@times-components/styleguide": "3.28.6",
     "@times-components/utils": "4.10.3",
     "@times-components/watermark": "2.6.3",
     "prop-types": "15.6.2",

@@ -24,7 +24,7 @@ const Article = props => {
   if (onImagePress) {
     content = addIndexesToInlineImages(content, leadAsset);
     const mediaList = getMediaList(content, leadAsset);
-    onImagePressArticle = () => onImagePress(mediaList);
+    onImagePressArticle = index => onImagePress(index, mediaList);
   }
 
   const Component = templates[template] || ArticleMainStandard;
