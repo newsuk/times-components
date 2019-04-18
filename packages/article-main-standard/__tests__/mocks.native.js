@@ -1,7 +1,7 @@
 import {
   mockNativeModules,
   MockArticleSkeleton
-} from "@times-components/test-utils";
+} from "@times-components/mocks";
 
 // eslint-disable-next-line import/prefer-default-export
 export { setIsTablet } from "@times-components/test-utils/dimensions";
