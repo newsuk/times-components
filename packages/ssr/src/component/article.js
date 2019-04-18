@@ -14,6 +14,7 @@ module.exports = (client, analyticsStream, data) => {
     articleId,
     debounceTimeMs,
     makeArticleUrl,
+    makeTopicUrl,
     mapArticleToAdConfig,
     spotAccountId
   } = data;
@@ -34,6 +35,7 @@ module.exports = (client, analyticsStream, data) => {
           {
             value: {
               makeArticleUrl,
+              makeTopicUrl,
               theme: {
                 ...themeFactory(article.section, article.template),
                 scale: scale || defaults.theme.scale

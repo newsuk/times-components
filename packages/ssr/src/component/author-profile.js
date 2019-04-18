@@ -11,6 +11,7 @@ module.exports = (client, analyticsStream, data) => {
     authorSlug,
     debounceTimeMs,
     makeArticleUrl,
+    makeTopicUrl,
     mapProfileToAdConfig,
     page,
     pageSize
@@ -30,7 +31,7 @@ module.exports = (client, analyticsStream, data) => {
       ({ author, isLoading, error, refetch }) =>
         React.createElement(
           ContextProviderWithDefaults,
-          { value: { makeArticleUrl } },
+          { value: { makeArticleUrl, makeTopicUrl } },
           React.createElement(AuthorProfile, {
             adConfig: mapProfileToAdConfig(),
             analyticsStream,
