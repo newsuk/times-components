@@ -57,130 +57,40 @@ exports[`1. save and share bar renders correctly 1`] = `
     >
       Share
     </div>
-    <Link
-      responsiveLinkStyles={
-        Object {
-          "base": "
-      margin-left: 5px;
-      border-radius: 9999px;
-      overflow: hidden;
-      text-align: center;
-      line-height: 45px;
-      height: 40px;
-      width: 40px;
-      
-      &:hover {
-        background-color: #F5F5F5;
-      }
-    ",
-        }
-      }
-    >
-      <div
-        className="save-and-share-bar__HoverIcon-sc-1enokj3-0 NSqGJ"
-        color="#696969"
-      >
-        <IconEmail
-          fillColour="currentColor"
-          height={15}
-          title="Share by email client"
-        />
-      </div>
-    </Link>
-    <Link
-      responsiveLinkStyles={
-        Object {
-          "base": "
-      margin-left: 5px;
-      border-radius: 9999px;
-      overflow: hidden;
-      text-align: center;
-      line-height: 45px;
-      height: 40px;
-      width: 40px;
-      
-      &:hover {
-        background-color: #F5F5F5;
-      }
-    ",
-        }
-      }
+    <BarItem>
+      <IconEmail
+        fillColour="currentColor"
+        height={15}
+        title="Share by email client"
+      />
+    </BarItem>
+    <BarItem
       target="_blank"
       url="https://twitter.com/intent/tweet?text="
     >
-      <div
-        className="save-and-share-bar__HoverIcon-sc-1enokj3-0 NSqGJ"
-        color="#696969"
-      >
-        <IconTwitter
-          fillColour="currentColor"
-          height={15}
-          title="Share on tweeter"
-        />
-      </div>
-    </Link>
-    <Link
-      responsiveLinkStyles={
-        Object {
-          "base": "
-      margin-left: 5px;
-      border-radius: 9999px;
-      overflow: hidden;
-      text-align: center;
-      line-height: 45px;
-      height: 40px;
-      width: 40px;
-      
-      &:hover {
-        background-color: #F5F5F5;
-      }
-    ",
-        }
-      }
+      <IconTwitter
+        fillColour="currentColor"
+        height={15}
+        title="Share on Twitter"
+      />
+    </BarItem>
+    <BarItem
       target="_blank"
       url="https://www.facebook.com/sharer/sharer.php?text="
     >
-      <div
-        className="save-and-share-bar__HoverIcon-sc-1enokj3-0 NSqGJ"
-        color="#696969"
-      >
-        <IconFacebook
-          fillColour="currentColor"
-          height={18}
-          title="Share on facebook"
-        />
-      </div>
-    </Link>
-    <Link
-      responsiveLinkStyles={
-        Object {
-          "base": "
-      margin-left: 5px;
-      border-radius: 9999px;
-      overflow: hidden;
-      text-align: center;
-      line-height: 45px;
-      height: 40px;
-      width: 40px;
-      
-      &:hover {
-        background-color: #F5F5F5;
-      }
-    ",
-        }
-      }
-    >
-      <div
-        className="save-and-share-bar__HoverIcon-sc-1enokj3-0 NSqGJ"
-        color="#696969"
-      >
-        <IconCopyLink
-          fillColour="currentColor"
-          height={15}
-          title="Copy link on clipboard"
-        />
-      </div>
-    </Link>
+      <IconFacebook
+        fillColour="currentColor"
+        height={18}
+        title="Share on Facebook"
+      />
+    </BarItem>
+    <BarItem>
+      <IconCopyLink
+        fillColour="currentColor"
+        height={15}
+        title="Copy link to clipboard"
+      />
+    </BarItem>
   </div>
   <div
     style={
@@ -213,36 +123,16 @@ exports[`1. save and share bar renders correctly 1`] = `
     >
       Save
     </div>
-    <Link
-      responsiveLinkStyles={
-        Object {
-          "base": "
-      margin-left: 5px;
-      border-radius: 9999px;
-      overflow: hidden;
-      text-align: center;
-      line-height: 45px;
-      height: 40px;
-      width: 40px;
-      
-      &:hover {
-        background-color: #F5F5F5;
-      }
-    ",
-        }
-      }
+    <BarItem
+      color="#696969"
+      hoverColor="#1D1D1B"
     >
-      <div
-        className="save-and-share-bar__HoverIcon-sc-1enokj3-0 NSqGJ"
-        color="#696969"
-      >
-        <IconSaveBookmark
-          fillColour="#FFFFFF"
-          strokeColour="currentColor"
-          title="Save to My Articles"
-        />
-      </div>
-    </Link>
+      <IconSaveBookmark
+        fillColour="#FFFFFF"
+        strokeColour="currentColor"
+        title="Save to My Articles"
+      />
+    </BarItem>
   </div>
 </div>
 `;
