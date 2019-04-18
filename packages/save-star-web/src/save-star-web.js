@@ -6,6 +6,11 @@ import { createHttpLink } from "apollo-link-http";
 import { fragmentMatcher } from "@times-components/schema";
 import { InMemoryCache } from "apollo-cache-inmemory";
 import gql from "graphql-tag";
+import {
+  getBookmarks,
+  saveBookmarks,
+  unsaveBookmarks
+} from "@times-components/provider-queries";
 import { IconSaveBookmark } from "@times-components/icons";
 import { ApolloClient } from "apollo-client";
 import styles, { getStyles } from "./styles";
@@ -51,23 +56,10 @@ class SaveStarWeb extends Component {
       return null;
     }
 
-    const query = gql`
-      query SaveQuery {
-        viewer {
-          bookmarks {
-            bookmarks {
-              id
-            }
-            total
-          }
-        }
-      }
-    `;
-
     const client = makeClient();
 
     client
-      .query({ query })
+      .query({ query: getBookmarks })
       .then(response => {
         const { loading, data } = response;
         console.log("response is", loading, data);
@@ -90,18 +82,12 @@ class SaveStarWeb extends Component {
 
   saveBookmark(id) {
     console.log("inside saveBookmark");
-    const query = gql`
-      mutation($id: UUID!) {
-        saveBookmarks(bookmarks: [{ id: $id }]) {
-          id
-        }
-      }
-    `;
+
     const client = makeClient();
 
     client
       .mutate({
-        mutation: query,
+        mutation: saveBookmarks,
         variables: {
           id: id
         }
@@ -110,8 +96,9 @@ class SaveStarWeb extends Component {
         console.log("response saveBookmark", response);
         this.setState({
           savedStatus: true,
-          savedArticles: this.state.savedArticles.push({ id: id })
+          savedArticles: [...this.state.savedArticles, { id: id }]
         });
+        console.log("saveBookmark", this.state.savedArticles);
       })
       .catch(err => {
         this.setState({ savedStatus: false });
@@ -122,17 +109,11 @@ class SaveStarWeb extends Component {
   unsaveBookmark(id) {
     console.log("inside unsaveBookmark");
 
-    const query = gql`
-      mutation($id: UUID!) {
-        unsaveBookmarks(bookmarks: [{ id: $id }])
-      }
-    `;
-
     const client = makeClient();
 
     client
       .mutate({
-        mutation: query,
+        mutation: unsaveBookmarks,
         variables: {
           id: id
         }
