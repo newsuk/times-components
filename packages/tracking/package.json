@@ -51,7 +51,7 @@
     "depcheck": "0.6.9",
     "enzyme": "3.6.0",
     "eslint": "5.9.0",
-    "jest": "23.3.0",
+    "jest": "24.7.1",
     "prettier": "1.14.3",
     "react-test-renderer": "16.5.2",
     "webpack": "4.30.0",

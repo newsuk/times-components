@@ -4,4 +4,3 @@ module.exports = api => {
     plugins: ["@babel/plugin-proposal-object-rest-spread"]
   };
 };
-

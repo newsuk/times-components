@@ -49,7 +49,7 @@
     "depcheck": "0.6.9",
     "enzyme": "3.6.0",
     "eslint": "5.9.0",
-    "jest": "23.3.0",
+    "jest": "24.7.1",
     "jsdom": "9.12.0",
     "lodash.merge": "4.6.0",
     "prettier": "1.14.3",

@@ -65,7 +65,7 @@
     "enzyme-adapter-react-16": "1.5.0",
     "find-node-modules": "1.0.4",
     "identity-obj-proxy": "3.0.0",
-    "jest": "23.3.0",
+    "jest": "24.7.1",
     "jest-plugin-context": "2.6.0",
     "jest-plugins": "2.9.0"
   },

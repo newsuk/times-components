@@ -45,7 +45,7 @@
     "babel-plugin-react-native-web": "0.9.0",
     "babel-plugin-transform-es2015-modules-commonjs": "6.26.2",
     "eslint": "5.9.0",
-    "jest": "23.3.0",
+    "jest": "24.7.1",
     "prettier": "1.14.3"
   },
   "peerDependencies": {
