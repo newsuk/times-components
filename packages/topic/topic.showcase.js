@@ -43,13 +43,13 @@ const makeTopic = (decorateAction, params) => (
           slug={topicSlug}
         >
           {({
-              error,
-              isLoading,
-              page,
-              pageSize: authorPageSize,
-              refetch,
-              topic
-            }) => (
+            error,
+            isLoading,
+            page,
+            pageSize: authorPageSize,
+            refetch,
+            topic
+          }) => (
             <Topic
               error={error}
               isLoading={isLoading}
