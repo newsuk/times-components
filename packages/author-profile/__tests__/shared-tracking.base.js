@@ -1,6 +1,7 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
-import { iterator, mockNativeModules } from "@times-components/test-utils";
+import { mockNativeModules } from "@times-components/mocks";
+import { iterator } from "@times-components/test-utils";
 import mockDate from "mockdate";
 import "./mocks";
 import AuthorProfile from "../src/author-profile";
