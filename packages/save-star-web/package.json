@@ -43,7 +43,11 @@
     "apollo-client": "2.3.2",
     "graphql-tag": "2.8.0",
     "@times-components/schema": "0.6.3",
-    "@times-components/provider-queries": "1.16.0"
+    "@times-components/provider-queries": "1.16.0",
+    "prop-types": "15.6.2",
+    "unfetch": "^3.0.0",
+    "@times-components/icons": "2.10.21",
+    "@times-components/styleguide": "3.28.6"
   },
   "devDependencies": {
     "@thetimes/jest-lint": "*",
