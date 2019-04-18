@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. link with pressed style 1`] = `
+<a
+  className="bJHoRm"
+  href="http://thetimes.co.uk"
+  style={
+    Object {
+      "textDecoration": "underline",
+    }
+  }
+>
+  The Times
+</a>
+`;

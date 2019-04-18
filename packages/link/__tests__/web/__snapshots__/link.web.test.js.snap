@@ -1,24 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. with responsive styles 1`] = `
-.c0 {
-  color: #006699;
-  font-family: "TimesDigitalW04-Regular";
-  font-size: 17px;
-  line-height: 26px;
-  margin-bottom: 25px;
-  margin-top: 0;
-}
-
-@media (min-width:768px) {
-  .c0 {
-    font-size: 18px;
-    line-height: 30px;
-  }
-}
-
 <a
-  className="c0"
+  className="kLLwmH"
   href="http://thetimes.co.uk"
   style={
     Object {

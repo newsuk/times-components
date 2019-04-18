@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { View, Text } from "react-native";
-import Link from "@times-components/link";
 import {
   IconEmail,
   IconFacebook,
@@ -11,6 +10,7 @@ import {
 } from "@times-components/icons";
 import SharingApiUrls from "./constants";
 import styles from "./styles";
+import BarItem from "./bar-item";
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
 const SaveAndShareBar = ({
@@ -22,52 +22,54 @@ const SaveAndShareBar = ({
   <View style={styles.container}>
     <View style={styles.rowItem}>
       <Text style={styles.label}>Share</Text>
-      <Link onPress={onShareOnEmail} responsiveLinkStyles={styles.link}>
+      <BarItem onPress={onShareOnEmail}>
         <IconEmail
-          fillColour={styles.svgIcon.fillColour}
+          fillColour="currentColor"
           height={styles.svgIcon.height}
           title="Share by email client"
         />
-      </Link>
-      <Link
-        responsiveLinkStyles={styles.link}
+      </BarItem>
+      <BarItem
         target="_blank"
         url={`${SharingApiUrls.twitter}?text=${articleUrl}`}
       >
         <IconTwitter
           fillColour={styles.svgIcon.fillColour}
           height={styles.svgIcon.height}
-          title="Share on tweeter"
+          title="Share on Twitter"
         />
-      </Link>
-      <Link
-        responsiveLinkStyles={styles.link}
+      </BarItem>
+      <BarItem
         target="_blank"
         url={`${SharingApiUrls.facebook}?text=${articleUrl}`}
       >
         <IconFacebook
-          fillColour={styles.svgIcon.fillColour}
+          fillColour="currentColor"
           height={styles.svgIcon.fb.height}
-          title="Share on facebook"
+          title="Share on Facebook"
         />
-      </Link>
-      <Link onPress={onCopyLink} responsiveLinkStyles={styles.link}>
+      </BarItem>
+      <BarItem onPress={onCopyLink}>
         <IconCopyLink
-          fillColour={styles.svgIcon.fillColour}
+          fillColour="currentColor"
           height={styles.svgIcon.height}
-          title="Copy link o clipboard"
+          title="Copy link to clipboard"
         />
-      </Link>
+      </BarItem>
     </View>
     <View style={styles.rowItem}>
       <Text style={styles.label}>Save</Text>
-      <Link onPress={onSaveToMyArticles} responsiveLinkStyles={styles.link}>
+      <BarItem
+        color={styles.svgIcon.save.strokeColour}
+        hoverColor={styles.svgIcon.hoverFillColour}
+        onPress={onSaveToMyArticles}
+      >
         <IconSaveBookmark
           fillColour={styles.svgIcon.save.fillColour}
-          strokeColour={styles.svgIcon.save.strokeColour}
+          strokeColour="currentColor"
           title="Save to My Articles"
         />
-      </Link>
+      </BarItem>
     </View>
   </View>
 );
