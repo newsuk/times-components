@@ -7,10 +7,16 @@ exports[`2. a loading state 1`] = `
   <Helmet>
     <title>
       
-       | Page 
-      1/10
        | The Times & The Sunday Times
     </title>
+    <meta
+      content="Discover expert  articles from The Times and The Sunday Times."
+      name="description"
+    />
+    <link
+      href="/topic/some-slug"
+      rel="canonical"
+    />
   </Helmet>
   <ArticleList
     articleListHeader={
@@ -43,10 +49,16 @@ exports[`3. an article list 1`] = `
   <Helmet>
     <title>
       Test Name
-       | Page 
-      2/10
        | The Times & The Sunday Times
     </title>
+    <meta
+      content="Discover expert Test Name articles from The Times and The Sunday Times."
+      name="description"
+    />
+    <link
+      href="/topic/some-slug"
+      rel="canonical"
+    />
   </Helmet>
   <ArticleList
     articleListHeader={
@@ -123,10 +135,16 @@ exports[`4. fetches more articles 1`] = `
   <Helmet>
     <title>
       Test Name
-       | Page 
-      2/10
        | The Times & The Sunday Times
     </title>
+    <meta
+      content="Discover expert Test Name articles from The Times and The Sunday Times."
+      name="description"
+    />
+    <link
+      href="/topic/some-slug"
+      rel="canonical"
+    />
   </Helmet>
   <ArticleList
     articleListHeader={
@@ -208,10 +226,16 @@ exports[`5. fetches more articles and falls back to previous data if no more 1`]
   <Helmet>
     <title>
       Test Name
-       | Page 
-      2/10
        | The Times & The Sunday Times
     </title>
+    <meta
+      content="Discover expert Test Name articles from The Times and The Sunday Times."
+      name="description"
+    />
+    <link
+      href="/topic/some-slug"
+      rel="canonical"
+    />
   </Helmet>
   <ArticleList
     articleListHeader={

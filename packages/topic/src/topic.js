@@ -88,7 +88,7 @@ const Topic = ({
 
         return (
           <Responsive>
-            <Head {...{ name, page, pageSize }} />
+            <Head {...{ name, slug }} />
             <ArticleList
               adConfig={adConfig}
               articleListHeader={articleListHeader}
