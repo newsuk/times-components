@@ -14,6 +14,7 @@ const {
   onAuthorPress,
   onCommentsPress,
   onCommentGuidelinesPress,
+  onImagePress,
   onLinkPress,
   onTopicPress,
   onVideoPress
@@ -67,6 +68,7 @@ const ArticleBase = ({
         onCommentsPress={(event, { articleId: id, url }) =>
           onCommentsPress(id, url)
         }
+        onImagePress={onImagePress}
         onLinkPress={(event, { type, url }) => {
           if (type === "article") {
             onArticlePress(url);

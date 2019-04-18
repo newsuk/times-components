@@ -1,10 +1,10 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
-import Link from "@times-components/link";
+import BarItem from "../src/bar-item";
 import SaveAndShareBar from "../src/save-and-share-bar";
 
-jest.mock("@times-components/link", () => "Link");
+jest.mock("../src/bar-item", () => "BarItem");
 
 jest.mock("@times-components/icons", () => ({
   IconCopyLink: "IconCopyLink",
@@ -47,13 +47,13 @@ export default () => {
           />
         );
 
-        testInstance.root.findAllByType(Link)[0].props.onPress();
+        testInstance.root.findAllByType(BarItem)[0].props.onPress();
         expect(onShareOnEmail).toHaveBeenCalled();
 
-        testInstance.root.findAllByType(Link)[3].props.onPress();
+        testInstance.root.findAllByType(BarItem)[3].props.onPress();
         expect(onCopyLink).toHaveBeenCalled();
 
-        testInstance.root.findAllByType(Link)[4].props.onPress();
+        testInstance.root.findAllByType(BarItem)[4].props.onPress();
         expect(onSaveToMyArticles).toHaveBeenCalled();
       }
     }

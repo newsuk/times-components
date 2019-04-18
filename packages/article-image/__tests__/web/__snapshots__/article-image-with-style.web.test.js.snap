@@ -356,7 +356,6 @@ exports[`6. inline image (landscape) with caption and credits 1`] = `
         fadeImageIn={false}
         highResSize={null}
         lowResSize={null}
-        onImagePress={null}
         uri="https://img/someImage"
       />
     </div>
@@ -459,7 +458,6 @@ exports[`7. inline image (portrait) with caption and credits 1`] = `
         fadeImageIn={false}
         highResSize={null}
         lowResSize={null}
-        onImagePress={null}
         uri="https://img/someImage"
       />
     </div>
