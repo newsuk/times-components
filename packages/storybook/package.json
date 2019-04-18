@@ -54,6 +54,7 @@
     "prop-types": "15.6.2",
     "react": "16.5.2",
     "react-apollo": "2.1.4",
+    "react-helmet-async": "1.0.2",
     "react-test-renderer": "16.5.2"
   },
   "peerDependencies": {

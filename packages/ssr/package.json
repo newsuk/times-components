@@ -69,6 +69,7 @@
     "react-apollo": "2.1.4",
     "react-art": "16.5.2",
     "react-dom": "16.5.2",
+    "react-helmet-async": "1.0.2",
     "react-native": "0.55.4",
     "react-native-web": "0.9.0",
     "shrink-ray": "0.1.3",
