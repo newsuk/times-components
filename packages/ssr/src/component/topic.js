@@ -15,6 +15,7 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
   const {
     debounceTimeMs,
     makeArticleUrl,
+    makeTopicUrl,
     mapTopicToAdConfig,
     page,
     pageSize,
@@ -41,6 +42,7 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
             {
               value: {
                 makeArticleUrl,
+                makeTopicUrl,
                 theme: { scale, sectionColour }
               }
             },

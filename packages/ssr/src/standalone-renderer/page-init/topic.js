@@ -1,13 +1,13 @@
 const defaultMapTopicToConfig = require("../../lib/ads/make-topic-ad-config")
   .defaultClient;
-const makeArticleUrl = require("../../lib/make-url");
+const makeUrls = require("../../lib/make-urls");
 
 const rootTag = "main-container";
 
 window.nuk = window.nuk || {};
 window.nuk.ssr = {
   ...window.nuk.ssr,
-  makeArticleUrl,
+  ...makeUrls,
   mapTopicToAdConfig: defaultMapTopicToConfig,
   rootTag
 };
