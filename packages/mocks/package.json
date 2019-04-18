@@ -1,6 +1,6 @@
 {
   "name": "@times-components/mocks",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Shared mocks for the tests",
   "main": "dist/index",
   "dev": "src/index",
@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
-    "@times-components/styleguide": "3.28.6"
+    "@times-components/styleguide": "3.28.7"
   },
   "devDependencies": {
     "@thetimes/jest-lint": "*",

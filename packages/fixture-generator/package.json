@@ -1,6 +1,6 @@
 {
   "name": "@times-components/fixture-generator",
-  "version": "0.23.4",
+  "version": "0.23.5",
   "description": "Creates fixture data for testing",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -42,7 +42,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@times-components/schema": "0.6.3",
+    "@times-components/schema": "0.6.4",
     "@types/jest": "23.3.9",
     "depcheck": "0.6.9",
     "graphql-code-generator": "0.14.5",
