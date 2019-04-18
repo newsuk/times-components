@@ -1,6 +1,6 @@
 import React from "react";
 import { iterator } from "@times-components/test-utils";
-import Context from "@times-components/context";
+import { ContextProviderWithDefaults } from "@times-components/context";
 import Label from "../src/article-label/article-label";
 import Meta from "../src/article-meta/article-meta";
 import Standfirst from "../src/article-standfirst/article-standfirst";
@@ -30,13 +30,13 @@ const snapshotTests = renderComponent => [
     name: "article label uses default section colour",
     test() {
       const output = renderComponent(
-        <Context.Provider
+        <ContextProviderWithDefaults
           value={{
             theme: { sectionColour: null }
           }}
         >
           <Label label="Random Label" />
-        </Context.Provider>
+        </ContextProviderWithDefaults>
       );
 
       expect(output).toMatchSnapshot();
