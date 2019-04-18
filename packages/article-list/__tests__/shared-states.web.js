@@ -1,7 +1,6 @@
 import React from "react";
 import { Text } from "react-native";
 import TestRenderer from "react-test-renderer";
-import Context from "@times-components/context";
 import { iterator } from "@times-components/test-utils";
 import {
   addSerializers,
@@ -23,11 +22,6 @@ const omitProps = new Set([
   "labelProps"
 ]);
 
-const makeArticleUrl = ({ slug, shortIdentifier }) =>
-  slug && shortIdentifier
-    ? `https://www.thetimes.co.uk/article/${slug}-${shortIdentifier}`
-    : "";
-
 export default () => {
   addSerializers(
     expect,
@@ -46,14 +40,12 @@ export default () => {
       test() {
         const apolloError = new ApolloError("Test");
         const testInstance = TestRenderer.create(
-          <Context.Provider value={{ makeArticleUrl }}>
-            <ArticleList
-              adConfig={adConfig}
-              emptyStateMessage="Empty State"
-              error={apolloError}
-              refetch={() => {}}
-            />
-          </Context.Provider>
+          <ArticleList
+            adConfig={adConfig}
+            emptyStateMessage="Empty State"
+            error={apolloError}
+            refetch={() => {}}
+          />
         );
 
         expect(testInstance).toMatchSnapshot();
@@ -64,15 +56,13 @@ export default () => {
       test() {
         const apolloError = new ApolloError("Test");
         const testInstance = TestRenderer.create(
-          <Context.Provider value={{ makeArticleUrl }}>
-            <ArticleList
-              adConfig={adConfig}
-              articleListHeader={<Text>Some Header</Text>}
-              emptyStateMessage="Empty State"
-              error={apolloError}
-              refetch={() => {}}
-            />
-          </Context.Provider>
+          <ArticleList
+            adConfig={adConfig}
+            articleListHeader={<Text>Some Header</Text>}
+            emptyStateMessage="Empty State"
+            error={apolloError}
+            refetch={() => {}}
+          />
         );
 
         expect(testInstance).toMatchSnapshot();
@@ -82,14 +72,12 @@ export default () => {
       name: "an empty list",
       test() {
         const testInstance = TestRenderer.create(
-          <Context.Provider value={{ makeArticleUrl }}>
-            <ArticleList
-              adConfig={adConfig}
-              articles={[]}
-              emptyStateMessage="Empty state"
-              refetch={() => {}}
-            />
-          </Context.Provider>
+          <ArticleList
+            adConfig={adConfig}
+            articles={[]}
+            emptyStateMessage="Empty state"
+            refetch={() => {}}
+          />
         );
 
         expect(testInstance).toMatchSnapshot();
@@ -99,15 +87,13 @@ export default () => {
       name: "loading state",
       test() {
         const testInstance = TestRenderer.create(
-          <Context.Provider value={{ makeArticleUrl }}>
-            <ArticleList
-              adConfig={adConfig}
-              articlesLoading
-              emptyStateMessage="Empty state"
-              pageSize={3}
-              refetch={() => {}}
-            />
-          </Context.Provider>
+          <ArticleList
+            adConfig={adConfig}
+            articlesLoading
+            emptyStateMessage="Empty state"
+            pageSize={3}
+            refetch={() => {}}
+          />
         );
 
         expect(testInstance).toMatchSnapshot();
