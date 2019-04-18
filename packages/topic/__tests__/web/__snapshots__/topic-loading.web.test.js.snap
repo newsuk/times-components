@@ -2,6 +2,14 @@
 
 exports[`1. an article list loading 1`] = `
 <topicArticlesProvider>
+  <Helmet>
+    <title>
+      
+       | Page 
+      1/undefined
+       | The Times & The Sunday Times
+    </title>
+  </Helmet>
   <ArticleList
     articleListHeader={
       <TopicHead
