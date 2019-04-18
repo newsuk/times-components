@@ -71,7 +71,6 @@
   },
   "dependencies": {
     "@times-components/article-list": "7.0.37",
-    "@times-components/context": "0.9.21",
     "@times-components/markup": "3.3.53",
     "@times-components/markup-forest": "1.7.3",
     "@times-components/pagination": "3.2.54",
