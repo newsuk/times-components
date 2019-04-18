@@ -2,10 +2,7 @@ import React from "react";
 import mockDate from "mockdate";
 import { iterator } from "@times-components/test-utils";
 import Card from "@times-components/card";
-import Context from "@times-components/context";
 import RelatedArticles from "../src/related-articles";
-
-const makeArticleUrl = () => "https://some-url.io";
 
 export const testSummary = summary => [
   {
@@ -62,9 +59,7 @@ export const noArticlesTests = ({ fixture }) => renderComponent => {
         const events = jest.fn();
 
         const output = renderComponent(
-          <Context.Provider value={{ makeArticleUrl }}>
-            <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
-          </Context.Provider>
+          <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
         );
 
         expect(output).toMatchSnapshot();
@@ -74,15 +69,13 @@ export const noArticlesTests = ({ fixture }) => renderComponent => {
       name: "no related articles when there is no given slice name",
       test() {
         const output = renderComponent(
-          <Context.Provider value={{ makeArticleUrl }}>
-            <RelatedArticles
-              analyticsStream={() => {}}
-              onPress={() => {}}
-              slice={{
-                sliceName: ""
-              }}
-            />
-          </Context.Provider>
+          <RelatedArticles
+            analyticsStream={() => {}}
+            onPress={() => {}}
+            slice={{
+              sliceName: ""
+            }}
+          />
         );
 
         expect(output).toMatchSnapshot();
@@ -94,9 +87,7 @@ export const noArticlesTests = ({ fixture }) => renderComponent => {
         const events = jest.fn();
 
         renderComponent(
-          <Context.Provider value={{ makeArticleUrl }}>
-            <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
-          </Context.Provider>
+          <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
         );
 
         expect(events.mock.calls).toMatchSnapshot();
@@ -117,9 +108,7 @@ export const hasVideoTests = ({ fixture, name }) => renderComponent => {
         const events = jest.fn();
 
         const output = renderComponent(
-          <Context.Provider value={{ makeArticleUrl }}>
-            <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
-          </Context.Provider>
+          <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
         );
 
         expect(output).toMatchSnapshot();
@@ -140,9 +129,7 @@ export const noShortHeadlineTests = ({ fixture, name }) => renderComponent => {
         const events = jest.fn();
 
         const output = renderComponent(
-          <Context.Provider value={{ makeArticleUrl }}>
-            <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
-          </Context.Provider>
+          <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
         );
 
         expect(output).toMatchSnapshot();
@@ -154,9 +141,7 @@ export const noShortHeadlineTests = ({ fixture, name }) => renderComponent => {
         const events = jest.fn();
 
         renderComponent(
-          <Context.Provider value={{ makeArticleUrl }}>
-            <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
-          </Context.Provider>
+          <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
         );
 
         expect(events.mock.calls).toMatchSnapshot();
@@ -180,9 +165,7 @@ export const oneArticleTests = (platform = () => []) => ({
         const events = jest.fn();
 
         const output = renderComponent(
-          <Context.Provider value={{ makeArticleUrl }}>
-            <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
-          </Context.Provider>
+          <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
         );
 
         expect(output).toMatchSnapshot();
@@ -194,9 +177,7 @@ export const oneArticleTests = (platform = () => []) => ({
         const events = jest.fn();
 
         renderComponent(
-          <Context.Provider value={{ makeArticleUrl }}>
-            <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
-          </Context.Provider>
+          <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
         );
 
         expect(events.mock.calls).toMatchSnapshot();
@@ -218,9 +199,7 @@ export const twoArticlesTests = ({ fixture, name }) => renderComponent => {
         const events = jest.fn();
 
         const output = renderComponent(
-          <Context.Provider value={{ makeArticleUrl }}>
-            <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
-          </Context.Provider>
+          <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
         );
 
         expect(output).toMatchSnapshot();
@@ -232,9 +211,7 @@ export const twoArticlesTests = ({ fixture, name }) => renderComponent => {
         const events = jest.fn();
 
         renderComponent(
-          <Context.Provider value={{ makeArticleUrl }}>
-            <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
-          </Context.Provider>
+          <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
         );
 
         expect(events.mock.calls).toMatchSnapshot();
@@ -255,9 +232,7 @@ export const threeArticlesTests = ({ fixture, name }) => renderComponent => {
         const events = jest.fn();
 
         const output = renderComponent(
-          <Context.Provider value={{ makeArticleUrl }}>
-            <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
-          </Context.Provider>
+          <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
         );
         expect(output).toMatchSnapshot();
       }
@@ -268,9 +243,7 @@ export const threeArticlesTests = ({ fixture, name }) => renderComponent => {
         const events = jest.fn();
 
         renderComponent(
-          <Context.Provider value={{ makeArticleUrl }}>
-            <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
-          </Context.Provider>
+          <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
         );
 
         expect(events.mock.calls).toMatchSnapshot();
@@ -294,9 +267,7 @@ export const threeArticlesWithLeadAssetOverrideTests = ({
         const events = jest.fn();
 
         const output = renderComponent(
-          <Context.Provider value={{ makeArticleUrl }}>
-            <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
-          </Context.Provider>
+          <RelatedArticles {...createRelatedArticlesProps(fixture, events)} />
         );
 
         expect(output.root.findAllByType(Card)[0].props.imageUri).toEqual(
