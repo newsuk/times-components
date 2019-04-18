@@ -7,7 +7,7 @@ import {
   enzymeRenderedSerializer,
   minimalise
 } from "@times-components/jest-serializer";
-import Context from "@times-components/context";
+import { defaults } from "@times-components/context";
 import articleListFixture from "../../fixtures/articles.json";
 import adConfig from "../../fixtures/article-ad-config.json";
 import ArticleList from "../../src/article-list";
@@ -15,11 +15,6 @@ import ArticleList from "../../src/article-list";
 const delay = ms => new Promise(res => setTimeout(res, ms));
 
 const omitProps = new Set(["class", "className", "style"]);
-
-const makeArticleUrl = ({ slug, shortIdentifier }) =>
-  slug && shortIdentifier
-    ? `https://www.thetimes.co.uk/article/${slug}-${shortIdentifier}`
-    : "";
 
 addSerializers(
   expect,
@@ -88,11 +83,7 @@ const tests = [
     async test() {
       window.IntersectionObserver = FakeIntersectionObserver;
 
-      const component = mount(
-        <Context.Provider value={{ makeArticleUrl }}>
-          <ArticleList {...articleListProps} />
-        </Context.Provider>
-      );
+      const component = mount(<ArticleList {...articleListProps} />);
       // prove the first image starts off as low quality
       expect(
         component
@@ -140,11 +131,7 @@ const tests = [
     async test() {
       window.IntersectionObserver = FakeIntersectionObserver;
 
-      const component = mount(
-        <Context.Provider value={{ makeArticleUrl }}>
-          <ArticleList {...articleListProps} />
-        </Context.Provider>
-      );
+      const component = mount(<ArticleList {...articleListProps} />);
 
       const makeEntries = nodes =>
         [...nodes].map((node, indx) => ({
@@ -185,7 +172,7 @@ const tests = [
           attachTo: mountPoint,
           childContextTypes: { makeArticleUrl: PropTypes.func },
           context: {
-            makeArticleUrl,
+            makeArticleUrl: defaults.makeArticleUrl,
             tracking: {
               analytics: reporter
             }
