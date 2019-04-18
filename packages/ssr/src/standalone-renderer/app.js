@@ -95,15 +95,24 @@ server.get("/profile/:slug", (request, response) => {
       { authorSlug, currentPage },
       { ...makeUrls, graphqlApiUrl, logger }
     )
-    .then(({ initialProps, initialState, markup, responsiveStyles, styles }) =>
-      response.send(
-        makeHtml(initialState, initialProps, {
-          bundleName: "author-profile",
-          markup,
-          responsiveStyles,
-          styles
-        })
-      )
+    .then(
+      ({
+        initialProps,
+        initialState,
+        headMarkup,
+        markup,
+        responsiveStyles,
+        styles
+      }) =>
+        response.send(
+          makeHtml(initialState, initialProps, {
+            bundleName: "author-profile",
+            headMarkup,
+            markup,
+            responsiveStyles,
+            styles
+          })
+        )
     );
 });
 
