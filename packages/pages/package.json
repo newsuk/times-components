@@ -51,7 +51,7 @@
     "react-dom": "16.5.2",
     "react-native": "0.55.4",
     "react-test-renderer": "16.5.2",
-    "webpack": "4.6.0"
+    "webpack": "4.30.0"
   },
   "dependencies": {
     "@times-components/article": "6.8.24",
