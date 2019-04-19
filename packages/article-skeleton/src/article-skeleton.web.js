@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import Ad, { AdComposer } from "@times-components/ad";
+import SaveAndShareBar from "@times-components/save-and-share-bar";
 import ArticleExtras from "@times-components/article-extras";
 import LazyLoad from "@times-components/lazy-load";
 import { spacing } from "@times-components/styleguide";
@@ -14,7 +15,8 @@ import insertDropcapIntoAST from "./dropcap-util";
 import {
   BodyContainer,
   HeaderAdContainer,
-  MainContainer
+  MainContainer,
+  SaveShareContainer
 } from "./styles/responsive";
 import Head from "./head";
 
@@ -25,18 +27,32 @@ const adStyle = {
 class ArticleSkeleton extends Component {
   constructor(props) {
     super(props);
+    this.handleScroll = this.handleScroll.bind(this);
 
     this.state = {
-      articleWidth: null
+      articleWidth: null,
+      isSticky: false
     };
   }
 
   componentDidMount() {
     // eslint-disable-next-line react/no-did-mount-set-state
-    this.setState({
+    this.setState({...this.state,
       articleWidth: this.node && this.node.clientWidth
     });
+    window.addEventListener('scroll', this.handleScroll);
   }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll() {
+    const offsetTop  = this.sticky.getBoundingClientRect().top;
+    offsetTop <= 1
+      ? this.setState({ ...this.state, isSticky: true})
+      : this.setState({ ...this.state, isSticky: false});
+  };
 
   render() {
     const {
@@ -60,8 +76,9 @@ class ArticleSkeleton extends Component {
       template
     } = article;
 
-    const { articleWidth } = this.state;
+    const { articleWidth, isSticky } = this.state;
     const newContent = [...content];
+
     if (newContent && newContent.length > 0) {
       newContent[0] = insertDropcapIntoAST(
         newContent[0],
@@ -98,6 +115,11 @@ class ArticleSkeleton extends Component {
                 </HeaderAdContainer>
                 <MainContainer>
                   <Header width={articleWidth} />
+                  <SaveShareContainer isSticky={isSticky}>
+                    <div ref={(el) => {this.sticky = el; }}>
+                      <SaveAndShareBar />
+                    </div>
+                  </SaveShareContainer>
                   <BodyContainer>
                     <ArticleBody
                       content={newContent}
