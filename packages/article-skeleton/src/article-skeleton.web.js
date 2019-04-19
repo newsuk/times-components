@@ -37,22 +37,23 @@ class ArticleSkeleton extends Component {
 
   componentDidMount() {
     // eslint-disable-next-line react/no-did-mount-set-state
-    this.setState({...this.state,
+    this.setState(state => ({
+      ...state,
       articleWidth: this.node && this.node.clientWidth
-    });
-    window.addEventListener('scroll', this.handleScroll);
+    }));
+    window.addEventListener("scroll", this.handleScroll);
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
+    window.removeEventListener("scroll", this.handleScroll);
   }
 
   handleScroll() {
-    const offsetTop  = this.sticky.getBoundingClientRect().top;
-    offsetTop <= 1
-      ? this.setState({ ...this.state, isSticky: true})
-      : this.setState({ ...this.state, isSticky: false});
-  };
+    const offsetTop = this.sticky.getBoundingClientRect().top;
+    return offsetTop <= 1
+      ? this.setState(state => ({ ...state, isSticky: true }))
+      : this.setState(state => ({ ...state, isSticky: false }));
+  }
 
   render() {
     const {
@@ -116,7 +117,11 @@ class ArticleSkeleton extends Component {
                 <MainContainer>
                   <Header width={articleWidth} />
                   <SaveShareContainer isSticky={isSticky}>
-                    <div ref={(el) => {this.sticky = el; }}>
+                    <div
+                      ref={el => {
+                        this.sticky = el;
+                      }}
+                    >
                       <SaveAndShareBar />
                     </div>
                   </SaveShareContainer>

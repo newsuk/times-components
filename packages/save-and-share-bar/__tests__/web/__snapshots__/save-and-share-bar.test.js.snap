@@ -38,10 +38,10 @@ exports[`1. save and share bar renders correctly 1`] = `
         "flexDirection": "row",
         "msFlexAlign": "center",
         "msFlexDirection": "row",
-        "paddingBottom": "20px",
-        "paddingLeft": "20px",
-        "paddingRight": "20px",
-        "paddingTop": "20px",
+        "paddingBottom": "15px",
+        "paddingLeft": "15px",
+        "paddingRight": "15px",
+        "paddingTop": "15px",
       }
     }
   >
@@ -107,10 +107,10 @@ exports[`1. save and share bar renders correctly 1`] = `
         "flexDirection": "row",
         "msFlexAlign": "center",
         "msFlexDirection": "row",
-        "paddingBottom": "20px",
-        "paddingLeft": "20px",
-        "paddingRight": "20px",
-        "paddingTop": "20px",
+        "paddingBottom": "15px",
+        "paddingLeft": "15px",
+        "paddingRight": "15px",
+        "paddingTop": "15px",
       }
     }
   >

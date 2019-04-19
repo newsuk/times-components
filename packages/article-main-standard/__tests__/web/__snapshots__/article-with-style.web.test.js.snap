@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`full article with style 1`] = `
-.c12 {
+.c13 {
   color: #333333;
   display: block;
   font-family: "TimesDigitalW04-Regular";
@@ -12,28 +12,15 @@ exports[`full article with style 1`] = `
   padding-left: 10px;
 }
 
-.c15 {
+.c16 {
   padding-left: 10px;
 }
 
-.c11 {
+.c12 {
   width: 100%;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-bottom: 25px;
-}
-
-.c16 {
-  width: 100%;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  padding-left: 10px;
-  padding-right: 10px;
   padding-bottom: 25px;
 }
 
@@ -47,17 +34,34 @@ exports[`full article with style 1`] = `
   flex-wrap: nowrap;
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 25px;
+}
+
+.c18 {
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: 0;
   display: block;
 }
 
-.c14 {
+.c15 {
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 10px;
 }
 
-.c13 {
+.c14 {
+  display: block;
+}
+
+.c1 {
   display: block;
 }
 
@@ -65,11 +69,21 @@ exports[`full article with style 1`] = `
   display: none;
 }
 
-.c10 {
+.c11 {
   display: block;
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
+}
+
+.c10 {
+  height: 55px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-bottom-width: 1px;
+  border-top-width: 1px;
+  border-top-color: #DBDBDB;
+  border-bottom-color: #DBDBDB;
 }
 
 .c4 {
@@ -116,7 +130,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c12 {
+  .c13 {
     font-size: 18px;
     line-height: 30px;
     padding-left: 0;
@@ -126,62 +140,62 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
+  .c13 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c16 {
+    padding-left: 0px;
+  }
+}
+
+@media (min-width:768px) {
+  .c12 {
+    width: 80.8%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:1024px) {
   .c12 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
+  .c17 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c17 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c18 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c18 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
   .c15 {
-    padding-left: 0px;
-  }
-}
-
-@media (min-width:768px) {
-  .c11 {
-    width: 80.8%;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width:1024px) {
-  .c11 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c16 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c16 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c17 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c17 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c14 {
     width: 50%;
     float: left;
     margin-right: 20px;
@@ -193,7 +207,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c13 {
+  .c14 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -202,7 +216,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c13 {
+  .c14 {
     width: 56.2%;
   }
 }
@@ -211,7 +225,6 @@ exports[`full article with style 1`] = `
   .c1 {
     padding-top: 20px;
     margin: 0 auto;
-    display: block;
   }
 }
 
@@ -226,6 +239,30 @@ exports[`full article with style 1`] = `
     border-bottom-width: 1px;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+}
+
+@media (max-width:1320px) {
+  .c10 {
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 999;
+  }
+}
+
+@media (min-width:768px) {
+  .c10 {
+    width: 80.8%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+@media (min-width:1024px) {
+  .c10 {
+    width: 56.2%;
   }
 }
 
@@ -311,17 +348,10 @@ exports[`full article with style 1`] = `
   }
 }
 
-@media (min-width:768px) {
-  .c9 {
-    margin-bottom: 20px;
-  }
-}
-
 @media (min-width:1024px) {
   .c9 {
     width: 56.2%;
     margin: 0 auto;
-    padding-bottom: 20px;
     -webkit-order: 2;
     -ms-flex-order: 2;
     order: 2;
@@ -431,6 +461,33 @@ exports[`full article with style 1`] = `
 }
 
 .S10 {
+  font-weight: inherit;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S11 {
+  -ms-flex-preferred-size: auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.S12 {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S13 {
   -ms-flex-align: stretch;
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
@@ -443,7 +500,7 @@ exports[`full article with style 1`] = `
   padding-top: 0px;
 }
 
-.S11 {
+.S14 {
   font-weight: inherit;
   line-height: 17px;
   margin-top: 0px;
@@ -452,7 +509,7 @@ exports[`full article with style 1`] = `
   padding-bottom: 0px;
 }
 
-.S12 {
+.S15 {
   -ms-flex-align: stretch;
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
@@ -475,6 +532,68 @@ exports[`full article with style 1`] = `
 }
 
 .IS3 {
+  line-height: 14px;
+}
+
+.IS4 {
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS5 {
+  line-height: 14px;
+}
+
+.IS6 {
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS7 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+}
+
+.IS8 {
   font-family: TimesDigitalW04;
   font-size: 17;
   line-height: 30;
@@ -483,35 +602,35 @@ exports[`full article with style 1`] = `
   margin-top: 0;
 }
 
-.IS4 {
+.IS9 {
   height: 100%;
   width: 100%;
 }
 
-.IS5 {
+.IS10 {
   position: relative;
 }
 
-.IS6 {
+.IS11 {
   height: 100%;
   width: 100%;
 }
 
-.IS7 {
+.IS12 {
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
-.IS8 {
+.IS13 {
   padding-bottom: 56.25%;
 }
 
-.IS9 {
+.IS14 {
   margin: 0;
 }
 
-.IS10 {
+.IS15 {
   border-bottom-color: #DBDBDB;
   border-bottom-width: 1;
   border-top-color: #DBDBDB;
@@ -628,7 +747,79 @@ exports[`full article with style 1`] = `
     >
       <div>
         <div
-          className="c11 S1"
+          className="IS7 S12"
+        >
+          <div
+            className="IS4 S11"
+          >
+            <div
+              className="IS3 S10"
+            >
+              Share
+            </div>
+            <Link>
+              <svg>
+                <title>
+                  Share by email client
+                </title>
+                <g>
+                  <path />
+                </g>
+              </svg>
+            </Link>
+            <Link>
+              <svg>
+                <title>
+                  Share on tweeter
+                </title>
+                <path />
+              </svg>
+            </Link>
+            <Link>
+              <svg>
+                <title>
+                  Share on facebook
+                </title>
+                <g>
+                  <path />
+                </g>
+              </svg>
+            </Link>
+            <Link>
+              <svg>
+                <title>
+                  Copy link o clipboard
+                </title>
+                <path />
+              </svg>
+            </Link>
+          </div>
+          <div
+            className="IS6 S11"
+          >
+            <div
+              className="IS5 S10"
+            >
+              Save
+            </div>
+            <Link>
+              <svg>
+                <title>
+                  Save to My Articles
+                </title>
+                <path />
+              </svg>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c11 S1"
+    >
+      <div>
+        <div
+          className="c12 S1"
         >
           <ArticleImage />
         </div>
@@ -637,15 +828,15 @@ exports[`full article with style 1`] = `
         Some Link
       </Link>
       <p
-        className="c12 IS3"
+        className="c13 IS8"
       >
         Some content
       </p>
       <div
-        className="c13 S1"
+        className="c14 S1"
       >
         <div
-          className="c14 S1"
+          className="c15 S1"
         >
           <PullQuote>
             The pull quote content
@@ -653,25 +844,25 @@ exports[`full article with style 1`] = `
         </div>
       </div>
       <div
-        className="c11 S1"
+        className="c12 S1"
       >
         <figure
-          className="IS9"
+          className="IS14"
         >
           <div
-            className="IS8 S10"
+            className="IS13 S13"
           >
             <div
-              className="IS7 S1"
+              className="IS12 S1"
             >
               <div
-                className="IS6"
+                className="IS11"
               >
                 <div
-                  className="IS5"
+                  className="IS10"
                 >
                   <video
-                    className="video-js IS4"
+                    className="video-js IS9"
                   />
                 </div>
               </div>
@@ -679,16 +870,16 @@ exports[`full article with style 1`] = `
           </div>
           <figcaption>
             <div
-              className="c15 S1"
+              className="c16 S1"
             >
               <div
                 className="S1"
               >
                 <div
-                  className="S12"
+                  className="S15"
                 >
                   <div
-                    className="S11"
+                    className="S14"
                   >
                     This is video caption
                   </div>
@@ -699,18 +890,18 @@ exports[`full article with style 1`] = `
         </figure>
       </div>
       <Ad
-        className="IS10"
+        className="IS15"
       />
       <div>
         <div
-          className="c16 S1"
+          className="c17 S1"
         >
           <ArticleImage />
         </div>
       </div>
       <div>
         <div
-          className="c17 S1"
+          className="c18 S1"
         >
           <ArticleImage />
         </div>

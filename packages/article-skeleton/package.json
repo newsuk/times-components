@@ -78,6 +78,7 @@
     "@times-components/article-image": "6.0.4",
     "@times-components/article-paragraph": "1.0.4",
     "@times-components/article-topics": "4.0.4",
+    "@times-components/save-and-share-bar": "0.0.1",
     "@times-components/caption": "3.0.27",
     "@times-components/context": "1.0.4",
     "@times-components/interactive-wrapper": "0.2.45",

@@ -31,14 +31,15 @@ export const BodyContainer = styled(View)`
 
 /* --- SaveAndShareBar --- */
 export const SaveShareContainer = styled(View)`
-  ${props => props.isSticky && (Dimensions.get("window").width <= breakpoints.huge)
-    ? `width: 100% !important;
+  ${props =>
+    props.isSticky && Dimensions.get("window").width <= breakpoints.huge
+      ? `width: 100% !important;
       border: 0;
       background-color: #fff;
       opacity: 0.98;
       box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
       height: 49px`
-    : ""};
+      : ""};
 
   height: 55px;
   margin-top: ${spacing(6)};
@@ -47,7 +48,6 @@ export const SaveShareContainer = styled(View)`
   border-top-width: 1px;
   border-top-color: ${colours.functional.keyline};
   border-bottom-color: ${colours.functional.keyline};
-
 
   @media (max-width: ${breakpoints.huge}px) {
     position: sticky;

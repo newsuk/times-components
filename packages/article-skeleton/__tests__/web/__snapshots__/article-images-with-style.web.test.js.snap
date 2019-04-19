@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. a secondary image 1`] = `
-.c3 {
+.c4 {
   width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -14,19 +14,33 @@ exports[`1. a secondary image 1`] = `
   padding-bottom: 25px;
 }
 
+.c1 {
+  display: block;
+}
+
 .c0 {
   display: none;
 }
 
-.c2 {
+.c3 {
   display: block;
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
+.c2 {
+  height: 55px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-bottom-width: 1px;
+  border-top-width: 1px;
+  border-top-color: #DBDBDB;
+  border-bottom-color: #DBDBDB;
+}
+
 @media (min-width:768px) {
-  .c3 {
+  .c4 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -35,7 +49,7 @@ exports[`1. a secondary image 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c3 {
+  .c4 {
     width: 56.2%;
   }
 }
@@ -44,7 +58,6 @@ exports[`1. a secondary image 1`] = `
   .c1 {
     padding-top: 20px;
     margin: 0 auto;
-    display: block;
   }
 }
 
@@ -59,6 +72,30 @@ exports[`1. a secondary image 1`] = `
     border-bottom-width: 1px;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+}
+
+@media (max-width:1320px) {
+  .c2 {
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 999;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    width: 80.8%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+@media (min-width:1024px) {
+  .c2 {
+    width: 56.2%;
   }
 }
 
@@ -77,8 +114,101 @@ exports[`1. a secondary image 1`] = `
   padding-bottom: 0px;
 }
 
+.S2 {
+  font-weight: inherit;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S3 {
+  -ms-flex-preferred-size: auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.S4 {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 .IS1 {
   margin-bottom: 0;
+}
+
+.IS2 {
+  color: rgba(105,105,105,1.00);
+  font-family: GillSansMTStd-Medium;
+  line-height: 14px;
+}
+
+.IS3 {
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS4 {
+  color: rgba(105,105,105,1.00);
+  font-family: GillSansMTStd-Medium;
+  line-height: 14px;
+}
+
+.IS5 {
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS6 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
 }
 </style>
 
@@ -99,7 +229,79 @@ exports[`1. a secondary image 1`] = `
     >
       <div>
         <div
-          className="c3 S1"
+          className="IS6 S4"
+        >
+          <div
+            className="IS3 S3"
+          >
+            <div
+              className="IS2 S2"
+            >
+              Share
+            </div>
+            <Link>
+              <svg>
+                <title>
+                  Share by email client
+                </title>
+                <g>
+                  <path />
+                </g>
+              </svg>
+            </Link>
+            <Link>
+              <svg>
+                <title>
+                  Share on tweeter
+                </title>
+                <path />
+              </svg>
+            </Link>
+            <Link>
+              <svg>
+                <title>
+                  Share on facebook
+                </title>
+                <g>
+                  <path />
+                </g>
+              </svg>
+            </Link>
+            <Link>
+              <svg>
+                <title>
+                  Copy link o clipboard
+                </title>
+                <path />
+              </svg>
+            </Link>
+          </div>
+          <div
+            className="IS5 S3"
+          >
+            <div
+              className="IS4 S2"
+            >
+              Save
+            </div>
+            <Link>
+              <svg>
+                <title>
+                  Save to My Articles
+                </title>
+                <path />
+              </svg>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c3 S1"
+    >
+      <div>
+        <div
+          className="c4 S1"
         >
           <ArticleImage />
         </div>
@@ -111,7 +313,7 @@ exports[`1. a secondary image 1`] = `
 `;
 
 exports[`2. an inline image 1`] = `
-.c3 {
+.c4 {
   width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -125,19 +327,33 @@ exports[`2. an inline image 1`] = `
   display: block;
 }
 
+.c1 {
+  display: block;
+}
+
 .c0 {
   display: none;
 }
 
-.c2 {
+.c3 {
   display: block;
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
+.c2 {
+  height: 55px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-bottom-width: 1px;
+  border-top-width: 1px;
+  border-top-color: #DBDBDB;
+  border-bottom-color: #DBDBDB;
+}
+
 @media (min-width:768px) {
-  .c3 {
+  .c4 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -146,7 +362,7 @@ exports[`2. an inline image 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c3 {
+  .c4 {
     width: 56.2%;
   }
 }
@@ -155,7 +371,6 @@ exports[`2. an inline image 1`] = `
   .c1 {
     padding-top: 20px;
     margin: 0 auto;
-    display: block;
   }
 }
 
@@ -170,6 +385,30 @@ exports[`2. an inline image 1`] = `
     border-bottom-width: 1px;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+}
+
+@media (max-width:1320px) {
+  .c2 {
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 999;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    width: 80.8%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+@media (min-width:1024px) {
+  .c2 {
+    width: 56.2%;
   }
 }
 
@@ -188,8 +427,101 @@ exports[`2. an inline image 1`] = `
   padding-bottom: 0px;
 }
 
+.S2 {
+  font-weight: inherit;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.S3 {
+  -ms-flex-preferred-size: auto;
+  -webkit-flex-basis: auto;
+  flex-basis: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.S4 {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 .IS1 {
   margin-bottom: 0;
+}
+
+.IS2 {
+  color: rgba(105,105,105,1.00);
+  font-family: GillSansMTStd-Medium;
+  line-height: 14px;
+}
+
+.IS3 {
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS4 {
+  color: rgba(105,105,105,1.00);
+  font-family: GillSansMTStd-Medium;
+  line-height: 14px;
+}
+
+.IS5 {
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS6 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
 }
 </style>
 
@@ -210,7 +542,79 @@ exports[`2. an inline image 1`] = `
     >
       <div>
         <div
-          className="c3 S1"
+          className="IS6 S4"
+        >
+          <div
+            className="IS3 S3"
+          >
+            <div
+              className="IS2 S2"
+            >
+              Share
+            </div>
+            <Link>
+              <svg>
+                <title>
+                  Share by email client
+                </title>
+                <g>
+                  <path />
+                </g>
+              </svg>
+            </Link>
+            <Link>
+              <svg>
+                <title>
+                  Share on tweeter
+                </title>
+                <path />
+              </svg>
+            </Link>
+            <Link>
+              <svg>
+                <title>
+                  Share on facebook
+                </title>
+                <g>
+                  <path />
+                </g>
+              </svg>
+            </Link>
+            <Link>
+              <svg>
+                <title>
+                  Copy link o clipboard
+                </title>
+                <path />
+              </svg>
+            </Link>
+          </div>
+          <div
+            className="IS5 S3"
+          >
+            <div
+              className="IS4 S2"
+            >
+              Save
+            </div>
+            <Link>
+              <svg>
+                <title>
+                  Save to My Articles
+                </title>
+                <path />
+              </svg>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="c3 S1"
+    >
+      <div>
+        <div
+          className="c4 S1"
         >
           <ArticleImage />
         </div>
