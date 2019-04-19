@@ -16,7 +16,8 @@ import {
   BodyContainer,
   HeaderAdContainer,
   MainContainer,
-  SaveShareContainer
+  SaveShareContainer,
+  RefContainer
 } from "./styles/responsive";
 import Head from "./head";
 
@@ -117,13 +118,15 @@ class ArticleSkeleton extends Component {
                 <MainContainer>
                   <Header width={articleWidth} />
                   <SaveShareContainer isSticky={isSticky}>
-                    <div
-                      ref={el => {
-                        this.sticky = el;
-                      }}
-                    >
-                      <SaveAndShareBar />
-                    </div>
+                    <RefContainer isSticky={isSticky}>
+                      <div
+                        ref={el => {
+                          this.sticky = el;
+                        }}
+                      >
+                        <SaveAndShareBar />
+                      </div>
+                    </RefContainer>
                   </SaveShareContainer>
                   <BodyContainer>
                     <ArticleBody

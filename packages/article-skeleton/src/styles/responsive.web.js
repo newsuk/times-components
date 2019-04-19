@@ -2,6 +2,8 @@ import { View, Dimensions } from "react-native";
 import styled from "styled-components";
 import { breakpoints, colours, spacing } from "@times-components/styleguide";
 
+const windowWidth = Dimensions.get("window").width;
+
 export const MainContainer = styled(View)`
   display: block;
   @media (min-width: ${breakpoints.wide}px) {
@@ -32,22 +34,16 @@ export const BodyContainer = styled(View)`
 /* --- SaveAndShareBar --- */
 export const SaveShareContainer = styled(View)`
   ${props =>
-    props.isSticky && Dimensions.get("window").width <= breakpoints.huge
+    props.isSticky && windowWidth <= breakpoints.huge
       ? `width: 100% !important;
-      border: 0;
       background-color: #fff;
       opacity: 0.98;
       box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
-      height: 49px;
       margin: ${spacing(6)} 0 !important`
       : ""};
 
   height: 55px;
   margin: ${spacing(6)} ${spacing(2)};
-  border-bottom-width: 1px;
-  border-top-width: 1px;
-  border-top-color: ${colours.functional.keyline};
-  border-bottom-color: ${colours.functional.keyline};
 
   @media (max-width: ${breakpoints.huge}px) {
     position: sticky;
@@ -55,6 +51,20 @@ export const SaveShareContainer = styled(View)`
     top: 0;
     z-index: 999;
   }
+`;
+
+export const RefContainer = styled.div`
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: ${colours.functional.keyline};
+
+  ${props =>
+    props.isSticky && windowWidth <= breakpoints.huge ? "border: 0;" : ""};
+
+  ${props =>
+    props.isSticky && windowWidth <= breakpoints.medium
+      ? `padding: 0 ${spacing(2)};`
+      : ""};
 
   @media (min-width: ${breakpoints.medium}px) {
     width: 80.8%;
