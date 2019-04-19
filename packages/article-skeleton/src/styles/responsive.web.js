@@ -38,12 +38,12 @@ export const SaveShareContainer = styled(View)`
       background-color: #fff;
       opacity: 0.98;
       box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
-      height: 49px`
+      height: 49px;
+      margin: ${spacing(6)} 0 !important`
       : ""};
 
   height: 55px;
-  margin-top: ${spacing(6)};
-  margin-bottom: ${spacing(6)};
+  margin: ${spacing(6)} ${spacing(2)};
   border-bottom-width: 1px;
   border-top-width: 1px;
   border-top-color: ${colours.functional.keyline};
