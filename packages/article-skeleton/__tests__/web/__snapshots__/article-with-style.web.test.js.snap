@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`full article with style 1`] = `
-.c4 {
+.c5 {
   color: #333333;
   display: block;
   font-family: "TimesDigitalW04-Regular";
@@ -12,34 +12,21 @@ exports[`full article with style 1`] = `
   padding-left: 10px;
 }
 
-.c12 {
+.c13 {
   padding-left: 10px;
 }
 
-.c6 {
+.c7 {
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 20px;
 }
 
-.c7 {
+.c8 {
   width: 100%;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-bottom: 25px;
-}
-
-.c8 {
-  width: 100%;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  padding-left: 10px;
-  padding-right: 10px;
   padding-bottom: 25px;
 }
 
@@ -53,17 +40,30 @@ exports[`full article with style 1`] = `
   flex-wrap: nowrap;
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 25px;
+}
+
+.c10 {
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: 0;
   display: block;
 }
 
-.c11 {
+.c12 {
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 10px;
 }
 
-.c10 {
+.c11 {
   display: block;
 }
 
@@ -75,7 +75,7 @@ exports[`full article with style 1`] = `
   display: none;
 }
 
-.c3 {
+.c4 {
   display: block;
   -webkit-order: 3;
   -ms-flex-order: 3;
@@ -84,15 +84,16 @@ exports[`full article with style 1`] = `
 
 .c2 {
   height: 55px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  border-bottom-width: 1px;
-  border-top-width: 1px;
-  border-top-color: #DBDBDB;
-  border-bottom-color: #DBDBDB;
+  margin: 30px 10px;
 }
 
-.c5 {
+.c3 {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #DBDBDB;
+}
+
+.c6 {
   float: left;
   -webkit-margin-before: 11px !important;
   padding: 9px 10px 0px 0;
@@ -103,7 +104,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c4 {
+  .c5 {
     font-size: 18px;
     line-height: 30px;
     padding-left: 0;
@@ -113,19 +114,19 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c4 {
+  .c5 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c12 {
+  .c13 {
     padding-left: 0px;
   }
 }
 
 @media (min-width:768px) {
-  .c6 {
+  .c7 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -135,19 +136,6 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c6 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c7 {
-    width: 80.8%;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width:1024px) {
   .c7 {
     width: 56.2%;
   }
@@ -157,8 +145,6 @@ exports[`full article with style 1`] = `
   .c8 {
     width: 80.8%;
     margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
   }
 }
 
@@ -184,7 +170,22 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c11 {
+  .c10 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c10 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c12 {
     width: 50%;
     float: left;
     margin-right: 20px;
@@ -196,7 +197,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c10 {
+  .c11 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -205,7 +206,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c10 {
+  .c11 {
     width: 56.2%;
   }
 }
@@ -242,7 +243,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c3 {
     width: 80.8%;
     margin-left: auto !important;
     margin-right: auto !important;
@@ -250,7 +251,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c2 {
+  .c3 {
     width: 56.2%;
   }
 }
@@ -271,33 +272,6 @@ exports[`full article with style 1`] = `
 }
 
 .S2 {
-  font-weight: inherit;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
-.S3 {
-  -ms-flex-preferred-size: auto;
-  -webkit-flex-basis: auto;
-  flex-basis: auto;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.S4 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
-.S5 {
   -ms-flex-align: stretch;
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
@@ -315,76 +289,10 @@ exports[`full article with style 1`] = `
 }
 
 .IS2 {
-  color: rgba(105,105,105,1.00);
-  font-family: GillSansMTStd-Medium;
-  line-height: 14px;
-}
-
-.IS3 {
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  padding-top: 15px;
-  padding-right: 15px;
-  padding-bottom: 15px;
-  padding-left: 15px;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-}
-
-.IS4 {
-  color: rgba(105,105,105,1.00);
-  font-family: GillSansMTStd-Medium;
-  line-height: 14px;
-}
-
-.IS5 {
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  padding-top: 15px;
-  padding-right: 15px;
-  padding-bottom: 15px;
-  padding-left: 15px;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-}
-
-.IS6 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-pack: justify;
-  -webkit-box-pack: justify;
-}
-
-.IS7 {
   color: #1D1D1B;
 }
 
-.IS8 {
+.IS3 {
   font-family: TimesDigitalW04;
   font-size: 17;
   line-height: 30;
@@ -393,7 +301,7 @@ exports[`full article with style 1`] = `
   margin-top: 0;
 }
 
-.IS9 {
+.IS4 {
   font-family: TimesDigitalW04;
   font-size: 17;
   line-height: 30;
@@ -402,31 +310,31 @@ exports[`full article with style 1`] = `
   margin-top: 0;
 }
 
-.IS10 {
+.IS5 {
   height: 100%;
   width: 100%;
 }
 
-.IS11 {
+.IS6 {
   position: relative;
 }
 
-.IS12 {
+.IS7 {
   height: 100%;
   width: 100%;
 }
 
-.IS13 {
+.IS8 {
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
-.IS14 {
+.IS9 {
   padding-bottom: 56.25%;
 }
 
-.IS15 {
+.IS10 {
   margin: 0;
 }
 </style>
@@ -446,99 +354,31 @@ exports[`full article with style 1`] = `
     <div
       className="c2 S1"
     >
-      <div>
-        <div
-          className="IS6 S4"
-        >
-          <div
-            className="IS3 S3"
-          >
-            <div
-              className="IS2 S2"
-            >
-              Share
-            </div>
-            <Link>
-              <svg>
-                <title>
-                  Share by email client
-                </title>
-                <g>
-                  <path />
-                </g>
-              </svg>
-            </Link>
-            <Link>
-              <svg>
-                <title>
-                  Share on tweeter
-                </title>
-                <path />
-              </svg>
-            </Link>
-            <Link>
-              <svg>
-                <title>
-                  Share on facebook
-                </title>
-                <g>
-                  <path />
-                </g>
-              </svg>
-            </Link>
-            <Link>
-              <svg>
-                <title>
-                  Copy link o clipboard
-                </title>
-                <path />
-              </svg>
-            </Link>
-          </div>
-          <div
-            className="IS5 S3"
-          >
-            <div
-              className="IS4 S2"
-            >
-              Save
-            </div>
-            <Link>
-              <svg>
-                <title>
-                  Save to My Articles
-                </title>
-                <path />
-              </svg>
-            </Link>
-          </div>
+      <div
+        className="c3"
+      >
+        <div>
+          <SaveAndShareBar />
         </div>
       </div>
     </div>
     <div
-      className="c3 S1"
+      className="c4 S1"
     >
       <p
-        className="c4 IS8"
+        className="c5 IS3"
       >
         <span
-          className="c5 IS7"
+          className="c6 IS2"
         >
           T
         </span>
         his being Black History Month, last week
       </p>
       <div
-        className="c6"
+        className="c7"
       >
         <InteractiveWrapper />
-      </div>
-      <div>
-        <div
-          className="c7 S1"
-        >
-          <ArticleImage />
-        </div>
       </div>
       <div>
         <div
@@ -554,6 +394,13 @@ exports[`full article with style 1`] = `
           <ArticleImage />
         </div>
       </div>
+      <div>
+        <div
+          className="c10 S1"
+        >
+          <ArticleImage />
+        </div>
+      </div>
       <Link>
         Some Link
       </Link>
@@ -561,15 +408,15 @@ exports[`full article with style 1`] = `
         className="paywall"
       >
         <p
-          className="c4 IS9"
+          className="c5 IS4"
         >
           Some content
         </p>
         <div
-          className="c10 S1"
+          className="c11 S1"
         >
           <div
-            className="c11 S1"
+            className="c12 S1"
           >
             <PullQuote>
               The pull quote content
@@ -577,25 +424,25 @@ exports[`full article with style 1`] = `
           </div>
         </div>
         <div
-          className="c7 S1"
+          className="c8 S1"
         >
           <figure
-            className="IS15"
+            className="IS10"
           >
             <div
-              className="IS14 S5"
+              className="IS9 S2"
             >
               <div
-                className="IS13 S1"
+                className="IS8 S1"
               >
                 <div
-                  className="IS12"
+                  className="IS7"
                 >
                   <div
-                    className="IS11"
+                    className="IS6"
                   >
                     <video
-                      className="video-js IS10"
+                      className="video-js IS5"
                     />
                   </div>
                 </div>
@@ -603,7 +450,7 @@ exports[`full article with style 1`] = `
             </div>
             <figcaption>
               <div
-                className="c12 S1"
+                className="c13 S1"
               >
                 <Caption />
               </div>
