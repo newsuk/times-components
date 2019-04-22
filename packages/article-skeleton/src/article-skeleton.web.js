@@ -51,7 +51,8 @@ class ArticleSkeleton extends Component {
 
   handleScroll() {
     const offsetTop = this.sticky.getBoundingClientRect().top;
-    return offsetTop <= 1
+
+    return offsetTop === 1 || offsetTop === 0
       ? this.setState(state => ({ ...state, isSticky: true }))
       : this.setState(state => ({ ...state, isSticky: false }));
   }
