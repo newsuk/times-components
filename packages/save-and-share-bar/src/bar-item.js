@@ -3,12 +3,14 @@ import { LinkWithPressedStyle } from "@times-components/link";
 import styled from "styled-components";
 import styles from "./styles";
 
-const HoverIcon = styled.div`
-  color: ${props => props.color};
-  &:hover {
-    color: ${props => props.hoverColor || props.color};
-  }
-`;
+const HoverIcon =
+  styled.div &&
+  styled.div`
+    color: ${props => props.color};
+    &:hover {
+      color: ${props => props.hoverColor || props.color};
+    }
+  `;
 
 const BarItem = ({
   children,
