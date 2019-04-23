@@ -48,7 +48,7 @@
     "@times-components/tealium-utils": "0.7.41",
     "@times-components/test-utils": "2.2.35",
     "@times-components/webpack-configurator": "2.0.15",
-    "apollo-client": "2.4.7",
+    "apollo-client": "2.5.1",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "24.7.1",
     "babel-loader": "8.0.5",

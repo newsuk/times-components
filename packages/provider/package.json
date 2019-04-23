@@ -51,8 +51,8 @@
     "depcheck": "0.6.9",
     "enzyme": "3.6.0",
     "eslint": "5.9.0",
-    "graphql": "0.13.2",
-    "graphql-tag": "2.10.0",
+    "graphql": "14.2.1",
+    "graphql-tag": "2.10.1",
     "jest": "24.7.1",
     "lodash.omit": "4.4.0",
     "prettier": "1.14.3",
@@ -65,12 +65,12 @@
   },
   "dependencies": {
     "@times-components/provider-queries": "1.16.0",
-    "graphql-tag": "2.10.0",
+    "graphql-tag": "2.10.1",
     "hoist-non-react-statics": "2.5.5",
     "lodash.isequal": "4.4.0",
     "lodash.pick": "4.4.0",
     "prop-types": "15.6.2",
-    "react-apollo": "2.1.4",
+    "react-apollo": "2.5.5",
     "react-display-name": "0.2.3"
   },
   "peerDependencies": {
