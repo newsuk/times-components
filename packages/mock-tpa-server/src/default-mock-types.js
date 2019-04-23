@@ -14,7 +14,9 @@ const defaultMockTypes = {
   Media: { __typename: "Image" },
   Ratio: "16:9",
   Slug: "a-slug",
+  TinyInt: 123,
   Topic: { __typename: "Topic" },
+  UnitInterval: 0.5,
   URL: "url",
   UUID: "uuid"
 };
