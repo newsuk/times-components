@@ -18,9 +18,9 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '9.0'
 
   s.source       = { :git => 'https://github.com/newsuk/times-components.git', :tag => "v#{s.version}"}
-  s.source_files   = 'Pod/Classes/**/*.{h,m}'
-  s.preserve_paths = 'Pod/Classes/**/*.generated.objc'
-  s.resources      = 'Pod/Assets/{Emission.js,assets,PreHeatedGraphQLCache}'
+  # s.source_files   = 'ios-app/Classes/**/*.{h,m}'
+  # s.preserve_paths = 'Pod/Classes/**/*.generated.objc'
+  s.resources      = 'ios-app/ios-assets/**/*'
   
   # s.requires_arc = true
   # s.ios.deployment_target = '9.0'
@@ -50,12 +50,12 @@ Pod::Spec.new do |s|
   # s.dependency 'Folly'
   # s.dependency 'glog'
   react_podspecs = [
-    # 'node_modules/react-native/third-party-podspecs/DoubleConversion.podspec',
-    # 'node_modules/react-native/third-party-podspecs/Folly.podspec',
-    # 'node_modules/react-native/third-party-podspecs/glog.podspec',
+    'node_modules/react-native/third-party-podspecs/DoubleConversion.podspec',
+    'node_modules/react-native/third-party-podspecs/Folly.podspec',
+    'node_modules/react-native/third-party-podspecs/glog.podspec',
   ]
 
-  # Native dependencies of Emission, which come from node_modules
+  # Native dependencies if any, which come from node_modules
   dep_podspecs = [
     # 'node_modules/react-native-svg/RNSVG.podspec'
   ]
