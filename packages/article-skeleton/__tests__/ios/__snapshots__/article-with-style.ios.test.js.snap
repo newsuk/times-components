@@ -37,7 +37,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
             <View
               style={
                 Object {
-                  "height": 90,
+                  "height": NaN,
                   "left": 5,
                   "position": "absolute",
                   "top": 0,
@@ -80,7 +80,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                   style={
                     Object {
                       "color": "#333333",
-                      "fontFamily": "TimesDigitalW04-Regular",
+                      "fontFamily": "TimesDigitalW04",
                       "fontSize": NaN,
                       "fontStyle": null,
                       "fontWeight": null,
@@ -205,7 +205,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 <Text
                   style={
                     Object {
-                      "fontFamily": "TimesDigitalW04-Regular",
+                      "fontFamily": "TimesDigitalW04",
                       "fontSize": NaN,
                       "fontStyle": null,
                       "fontWeight": null,
@@ -757,7 +757,7 @@ exports[`4. an article skeleton with responsive items 1`] = `
                 <Text
                   style={
                     Object {
-                      "fontFamily": "TimesDigitalW04-Regular",
+                      "fontFamily": "TimesDigitalW04",
                       "fontSize": NaN,
                       "fontStyle": null,
                       "fontWeight": null,
@@ -880,7 +880,7 @@ exports[`4. an article skeleton with responsive items 1`] = `
                 <Text
                   style={
                     Object {
-                      "fontFamily": "TimesDigitalW04-Regular",
+                      "fontFamily": "TimesDigitalW04",
                       "fontSize": NaN,
                       "fontStyle": null,
                       "fontWeight": null,
