@@ -1,7 +1,7 @@
 {
   "name": "@times-components/ssr",
   "main": "src",
-  "version": "1.8.137",
+  "version": "1.8.138",
   "scripts": {
     "bundle:dev": "yarn cleanup-dist && webpack --config=webpack.config.js",
     "bundle:prod": "yarn cleanup-dist && NODE_ENV=production webpack --config=webpack.config.js -p",
@@ -38,7 +38,7 @@
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.8.9",
     "@times-components/fixture-generator": "0.23.5",
-    "@times-components/mock-tpa-server": "0.1.89",
+    "@times-components/mock-tpa-server": "0.1.90",
     "cypress": "3.1.3",
     "depcheck": "0.6.9",
     "eslint": "5.9.0",
