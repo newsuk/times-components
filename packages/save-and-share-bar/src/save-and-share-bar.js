@@ -14,11 +14,16 @@ import BarItem from "./bar-item";
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
 class SaveAndShareBar extends Component {
-  copyToClipboard = () => {
+  constructor(props) {
+    super(props);
+    this.copyToClipboard = this.copyToClipboard.bind(this);
+  }
+
+  copyToClipboard() {
     const { onCopyLink, articleUrl } = this.props;
     Clipboard.setString(articleUrl);
     onCopyLink();
-  };
+  }
 
   render() {
     const { articleUrl, onSaveToMyArticles, onShareOnEmail } = this.props;
@@ -38,7 +43,7 @@ class SaveAndShareBar extends Component {
             url={`${SharingApiUrls.twitter}?text=${articleUrl}`}
           >
             <IconTwitter
-              fillColour={styles.svgIcon.fillColour}
+              fillColour="currentColor"
               height={styles.svgIcon.height}
               title="Share on Twitter"
             />

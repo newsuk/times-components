@@ -69,7 +69,7 @@ exports[`1. save and share bar renders correctly 1`] = `
       url="https://twitter.com/intent/tweet?text="
     >
       <IconTwitter
-        fillColour="#696969"
+        fillColour="currentColor"
         height={15}
         title="Share on Twitter"
       />
