@@ -118,7 +118,7 @@ exports[`1. a full article 1`] = `
     </svg>
   </a>
   <a
-    href="https://twitter.com/intent/tweet?text=undefined"
+    href="https://twitter.com/intent/tweet?text=https://url.io"
     target="_blank"
   >
     <svg
@@ -129,7 +129,7 @@ exports[`1. a full article 1`] = `
       width={18.75}
     >
       <title>
-        Share on tweeter
+        Share on Twitter
       </title>
       <path
         d="ebf51b280a2c9ea0e632fdbf86606550"
@@ -137,7 +137,7 @@ exports[`1. a full article 1`] = `
     </svg>
   </a>
   <a
-    href="https://www.facebook.com/sharer/sharer.php?text=undefined"
+    href="https://www.facebook.com/sharer/sharer.php?text=https://url.io"
     target="_blank"
   >
     <svg
@@ -148,7 +148,7 @@ exports[`1. a full article 1`] = `
       width={9}
     >
       <title>
-        Share on facebook
+        Share on Facebook
       </title>
       <g>
         <path
@@ -166,7 +166,7 @@ exports[`1. a full article 1`] = `
       width={15}
     >
       <title>
-        Copy link o clipboard
+        Copy link to clipboard
       </title>
       <path
         d="f65af77b7574644b0c2e60934732135f"

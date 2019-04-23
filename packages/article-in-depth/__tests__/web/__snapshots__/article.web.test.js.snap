@@ -269,55 +269,147 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
             "__typename": "StandardSlice",
             "items": Array [
               Object {
-                "article": Object {
-                  "__typename": "Article",
-                  "bylines": Array [],
-                  "hasVideo": false,
-                  "headline": "RA Headline",
-                  "id": "ra-1",
-                  "label": "RA Label",
-                  "leadAsset": Object {
-                    "__typename": "Image",
-                    "crop169": Object {
-                      "__typename": "Crop",
-                      "url": "https://racrop169.io",
-                    },
-                    "crop32": Object {
-                      "__typename": "Crop",
-                      "url": "https://racrop32.io",
-                    },
-                    "title": "RA Title",
-                  },
-                  "publicationName": "TIMES",
-                  "publishedTime": "2015-03-23T19:39:39.000Z",
-                  "shortHeadline": "Headline",
-                  "shortIdentifier": "2k629tpvh",
-                  "slug": "this-is-slug",
-                  "summary105": Array [],
-                  "summary125": Array [],
-                  "summary145": Array [],
-                  "summary160": Array [],
-                  "summary175": Array [],
-                  "summary225": Array [],
-                  "url": "https://ra.io",
+                "attributes": Object {
+                  "value": "Some byline",
                 },
+                "children": Array [],
+                "name": "text",
               },
             ],
-          }
-        }
-        relatedArticlesVisible={false}
-        topics={
-          Array [
+            "name": "inline",
+          },
+        },
+      ],
+      "commentCount": 65,
+      "commentsEnabled": true,
+      "content": Array [
+        Object {
+          "attributes": Object {},
+          "children": Array [
             Object {
-              "name": "Topic",
-              "slug": "topic",
+              "attributes": Object {
+                "value": "Some content",
+              },
+              "children": Array [],
+              "name": "text",
             },
-          ]
-        }
-      />
-    </div>
-  </div>
-</article>
+          ],
+          "name": "paragraph",
+        },
+      ],
+      "expirableFlags": Array [],
+      "hasVideo": false,
+      "headline": "",
+      "id": "198c4b2f-ecec-4f34-be53-c89f83bc1b44",
+      "keywords": Array [
+        "Supplement",
+        "In",
+        "Depth",
+        "Template",
+        "Style",
+      ],
+      "leadAsset": Object {
+        "__typename": "Image",
+        "caption": "Some Caption",
+        "credits": "Some Credits",
+        "crop11": Object {
+          "__typename": "Crop",
+          "ratio": "1:1",
+          "url": "https://crop11.io",
+        },
+        "crop1251": Object {
+          "__typename": "Crop",
+          "ratio": "1.25:1",
+          "url": "https://crop1251.io",
+        },
+        "crop169": Object {
+          "__typename": "Crop",
+          "ratio": "16:9",
+          "url": "https://crop169.io",
+        },
+        "crop23": Object {
+          "__typename": "Crop",
+          "ratio": "2:3",
+          "url": "https://crop23.io",
+        },
+        "crop32": Object {
+          "__typename": "Crop",
+          "ratio": "3:2",
+          "url": "https://crop32.io",
+        },
+        "crop45": Object {
+          "__typename": "Crop",
+          "ratio": "4:5",
+          "url": "https://crop45.io",
+        },
+        "id": "id-123",
+        "title": "Some Title",
+      },
+      "publicationName": "TIMES",
+      "publishedTime": "2015-03-13T18:54:58.000Z",
+      "relatedArticleSlice": Object {
+        "__typename": "StandardSlice",
+        "items": Array [
+          Object {
+            "article": Object {
+              "__typename": "Article",
+              "bylines": Array [],
+              "hasVideo": false,
+              "headline": "RA Headline",
+              "id": "ra-1",
+              "label": "RA Label",
+              "leadAsset": Object {
+                "__typename": "Image",
+                "crop169": Object {
+                  "__typename": "Crop",
+                  "url": "https://racrop169.io",
+                },
+                "crop32": Object {
+                  "__typename": "Crop",
+                  "url": "https://racrop32.io",
+                },
+                "title": "RA Title",
+              },
+              "publicationName": "TIMES",
+              "publishedTime": "2015-03-23T19:39:39.000Z",
+              "shortHeadline": "Headline",
+              "shortIdentifier": "2k629tpvh",
+              "slug": "this-is-slug",
+              "summary105": Array [],
+              "summary125": Array [],
+              "summary145": Array [],
+              "summary160": Array [],
+              "summary175": Array [],
+              "summary225": Array [],
+              "url": "https://ra.io",
+            },
+          },
+        ],
+      },
+      "section": "Some Section",
+      "shortHeadline": "Some Short Headline",
+      "shortIdentifier": "2k629tpvh",
+      "slug": "this-is-slug",
+      "textColour": Object {
+        "__typename": "Colour",
+        "rgba": Object {
+          "__typename": "RGBA",
+          "alpha": 1,
+          "blue": 255,
+          "green": 255,
+          "red": 255,
+        },
+      },
+      "topics": Array [
+        Object {
+          "name": "Topic",
+          "slug": "topic",
+        },
+      ],
+      "url": "https://url.io",
+    }
+  }
+/>
 `;
 
 exports[`4. an article with ads 1`] = `
@@ -587,53 +679,137 @@ exports[`4. an article with ads 1`] = `
             "__typename": "StandardSlice",
             "items": Array [
               Object {
-                "article": Object {
-                  "__typename": "Article",
-                  "bylines": Array [],
-                  "hasVideo": false,
-                  "headline": "RA Headline",
-                  "id": "ra-1",
-                  "label": "RA Label",
-                  "leadAsset": Object {
-                    "__typename": "Image",
-                    "crop169": Object {
-                      "__typename": "Crop",
-                      "url": "https://racrop169.io",
-                    },
-                    "crop32": Object {
-                      "__typename": "Crop",
-                      "url": "https://racrop32.io",
-                    },
-                    "title": "RA Title",
-                  },
-                  "publicationName": "TIMES",
-                  "publishedTime": "2015-03-23T19:39:39.000Z",
-                  "shortHeadline": "Headline",
-                  "shortIdentifier": "2k629tpvh",
-                  "slug": "this-is-slug",
-                  "summary105": Array [],
-                  "summary125": Array [],
-                  "summary145": Array [],
-                  "summary160": Array [],
-                  "summary175": Array [],
-                  "summary225": Array [],
-                  "url": "https://ra.io",
+                "attributes": Object {
+                  "value": "Some byline",
                 },
+                "children": Array [],
+                "name": "text",
               },
             ],
-          }
-        }
-        relatedArticlesVisible={false}
-        topics={
-          Array [
-            Object {
-              "name": "Topic",
-              "slug": "topic",
+            "name": "inline",
+          },
+        },
+      ],
+      "commentCount": 65,
+      "commentsEnabled": true,
+      "content": Array [
+        Object {
+          "attributes": Object {},
+          "children": Array [],
+          "name": "ad",
+        },
+      ],
+      "expirableFlags": Array [],
+      "hasVideo": false,
+      "headline": "Some Headline",
+      "id": "198c4b2f-ecec-4f34-be53-c89f83bc1b44",
+      "keywords": Array [
+        "Supplement",
+        "In",
+        "Depth",
+        "Template",
+        "Style",
+      ],
+      "leadAsset": Object {
+        "__typename": "Image",
+        "caption": "Some Caption",
+        "credits": "Some Credits",
+        "crop11": Object {
+          "__typename": "Crop",
+          "ratio": "1:1",
+          "url": "https://crop11.io",
+        },
+        "crop1251": Object {
+          "__typename": "Crop",
+          "ratio": "1.25:1",
+          "url": "https://crop1251.io",
+        },
+        "crop169": Object {
+          "__typename": "Crop",
+          "ratio": "16:9",
+          "url": "https://crop169.io",
+        },
+        "crop23": Object {
+          "__typename": "Crop",
+          "ratio": "2:3",
+          "url": "https://crop23.io",
+        },
+        "crop32": Object {
+          "__typename": "Crop",
+          "ratio": "3:2",
+          "url": "https://crop32.io",
+        },
+        "crop45": Object {
+          "__typename": "Crop",
+          "ratio": "4:5",
+          "url": "https://crop45.io",
+        },
+        "id": "id-123",
+        "title": "Some Title",
+      },
+      "publicationName": "TIMES",
+      "publishedTime": "2015-03-13T18:54:58.000Z",
+      "relatedArticleSlice": Object {
+        "__typename": "StandardSlice",
+        "items": Array [
+          Object {
+            "article": Object {
+              "__typename": "Article",
+              "bylines": Array [],
+              "hasVideo": false,
+              "headline": "RA Headline",
+              "id": "ra-1",
+              "label": "RA Label",
+              "leadAsset": Object {
+                "__typename": "Image",
+                "crop169": Object {
+                  "__typename": "Crop",
+                  "url": "https://racrop169.io",
+                },
+                "crop32": Object {
+                  "__typename": "Crop",
+                  "url": "https://racrop32.io",
+                },
+                "title": "RA Title",
+              },
+              "publicationName": "TIMES",
+              "publishedTime": "2015-03-23T19:39:39.000Z",
+              "shortHeadline": "Headline",
+              "shortIdentifier": "2k629tpvh",
+              "slug": "this-is-slug",
+              "summary105": Array [],
+              "summary125": Array [],
+              "summary145": Array [],
+              "summary160": Array [],
+              "summary175": Array [],
+              "summary225": Array [],
+              "url": "https://ra.io",
             },
-          ]
-        }
-      />
-    </div>
-  </div>
-</article>
+          },
+        ],
+      },
+      "section": "Some Section",
+      "shortHeadline": "Some Short Headline",
+      "shortIdentifier": "2k629tpvh",
+      "slug": "this-is-slug",
+      "textColour": Object {
+        "__typename": "Colour",
+        "rgba": Object {
+          "__typename": "RGBA",
+          "alpha": 1,
+          "blue": 255,
+          "green": 255,
+          "red": 255,
+        },
+      },
+      "topics": Array [
+        Object {
+          "name": "Topic",
+          "slug": "topic",
+        },
+      ],
+      "url": "https://url.io",
+    }
+  }
+/>
 `;
