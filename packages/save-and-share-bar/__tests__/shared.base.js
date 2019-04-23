@@ -14,6 +14,14 @@ jest.mock("@times-components/icons", () => ({
   IconTwitter: "IconTwitter"
 }));
 
+jest.mock("react-native", () => {
+  const reactNativeMock = require.requireActual("react-native");
+  reactNativeMock.Clipboard = {
+    setString: () => {}
+  };
+  return reactNativeMock;
+});
+
 export default () => {
   const tests = [
     {
@@ -40,7 +48,7 @@ export default () => {
 
         const testInstance = TestRenderer.create(
           <SaveAndShareBar
-            articleUrl=""
+            articleUrl="articleUrl"
             onCopyLink={onCopyLink}
             onSaveToMyArticles={onSaveToMyArticles}
             onShareOnEmail={onShareOnEmail}
