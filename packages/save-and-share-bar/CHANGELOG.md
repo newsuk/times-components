@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.1.0](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.0.5...@times-components/save-and-share-bar@0.1.0) (2019-04-24)
+
+
+### Features
+
+* improve save and share bar icons state onPress ([#1898](https://github.com/newsuk/times-components/issues/1898)) ([a0af212](https://github.com/newsuk/times-components/commit/a0af212))
+
+
+
+
+
 ## [0.0.5](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.0.4...@times-components/save-and-share-bar@0.0.5) (2019-04-22)
 
 

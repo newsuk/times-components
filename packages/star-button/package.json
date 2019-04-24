@@ -1,6 +1,6 @@
 {
   "name": "@times-components/star-button",
-  "version": "0.1.23",
+  "version": "0.1.24",
   "description": "Star button",
   "main": "dist/star-button",
   "dev": "src/star-button",
@@ -56,7 +56,7 @@
   },
   "dependencies": {
     "@times-components/icons": "2.10.22",
-    "@times-components/link": "3.3.22",
+    "@times-components/link": "3.4.0",
     "@times-components/styleguide": "3.28.7",
     "prop-types": "15.6.2"
   },
