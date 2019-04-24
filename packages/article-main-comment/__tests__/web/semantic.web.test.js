@@ -17,6 +17,8 @@ import Article from "../../src/article-main-comment";
 import articleFixture, { testFixture } from "../../fixtures/full-article";
 import { adConfig } from "../ad-mock";
 
+jest.mock("react-helmet-async", () => ({ Helmet: "Helmet" }));
+
 const omitProps = new Set([
   "className",
   "fill",
