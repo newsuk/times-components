@@ -18,7 +18,8 @@ jest.mock("@times-components/icons", () => ({
 jest.mock("react-native", () => {
   const reactNativeMock = require.requireActual("react-native");
   reactNativeMock.Clipboard = {
-    setString: jest.fn()
+    setString: jest.fn(),
+    isAvailable: jest.fn(() => true)
   };
   return reactNativeMock;
 });
@@ -31,9 +32,9 @@ export default () => {
         const testInstance = TestRenderer.create(
           <SaveAndShareBar
             articleUrl=""
-            onCopyLink={() => {}}
-            onSaveToMyArticles={() => {}}
-            onShareOnEmail={() => {}}
+            onCopyLink={() => { }}
+            onSaveToMyArticles={() => { }}
+            onShareOnEmail={() => { }}
           />
         );
 
