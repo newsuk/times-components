@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { ActivityIndicator } from "react-native";
 import Link from "@times-components/link";
 import PropTypes from "prop-types";
 import fetch from "unfetch";
@@ -32,11 +33,14 @@ const makeClient = () => {
   });
 };
 
+
+
 class SaveStarWeb extends Component {
   constructor(props) {
     super(props);
     this.bookmarkEvents = this.bookmarkEvents.bind(this);
     this.state = {
+      loadingState: null,
       savedArticles: null,
       savedStatus: null
     };
@@ -46,20 +50,21 @@ class SaveStarWeb extends Component {
     const { articleId } = this.props;
 
     if (typeof window === "undefined") {
-      // return loading state
-      return null;
+       this.setState({ loadingState: false});;
     }
-
     const client = makeClient();
 
     client
       .query({ query: getBookmarks })
       .then(response => {
         const { loading, data } = response;
-        // needs a spinner for loading state => default state is spinner
+        if(loading) {
+          this.setState({ loadingState: true});
+        };
         if (loading === false) {
           const savedArticles = data.viewer.bookmarks.bookmarks;
           this.setState({
+            loadingState: false,
             savedArticles,
             savedStatus: !!savedArticles
               .map(item => item.id)
@@ -68,15 +73,38 @@ class SaveStarWeb extends Component {
         }
       })
       .catch(err => {
-        this.setState({ savedStatus: false });
+        this.setState({  loadingState: false, savedStatus: false });
         console.error("Error in connecting to api", err);
       });
   }
 
+  saveLink(saveStatus, articleId) {
+    const saveStyle = getStyles({ saveStatus });
+    const { fillColour, strokeColour } = saveStyle;
+
+    return (
+      <Link
+        onPress={e => {
+          e.preventDefault();
+          this.bookmarkEvents(articleId);
+        }}
+        responsiveLinkStyles={styles.link}
+      >
+        <IconSaveBookmark
+          fillColour={fillColour}
+          strokeColour={strokeColour}
+          title="Save to My Articles"
+        />
+      </Link>
+    );
+  }
+
   saveBookmark(id) {
     const client = makeClient();
-
+    this.setState({loadingState: true});
     const { savedArticles } = this.state;
+
+    console.log('hey');
 
     client
       .mutate({
@@ -85,14 +113,16 @@ class SaveStarWeb extends Component {
           id
         }
       })
-      .then(() => {
+      .then((result) => {
+        console.log('response is', result)
         this.setState({
+          loadingState: false,
           savedArticles: [...savedArticles, { id }],
           savedStatus: true
         });
       })
       .catch(err => {
-        this.setState({ savedStatus: false });
+        this.setState({  loadingState: false, savedStatus: false });
         console.error("Error in connecting to api", err);
       });
   }
@@ -100,6 +130,7 @@ class SaveStarWeb extends Component {
   unsaveBookmark(id) {
     const client = makeClient();
     const { savedArticles } = this.state;
+    this.setState({loadingState: true});
 
     client
       .mutate({
@@ -110,6 +141,7 @@ class SaveStarWeb extends Component {
       })
       .then(() => {
         this.setState({
+          loadingState: false,
           savedArticles: savedArticles
             .map(item => item.id)
             .filter(item => item !== id),
@@ -117,7 +149,7 @@ class SaveStarWeb extends Component {
         });
       })
       .catch(err => {
-        this.setState({ savedStatus: true });
+        this.setState({ loadingState: false, savedStatus: true });
         console.error("Error in connecting to api", err);
       });
   }
@@ -142,35 +174,17 @@ class SaveStarWeb extends Component {
 
   render() {
     const { articleId } = this.props;
-    const { savedStatus } = this.state;
+    const { savedStatus, loadingState } = this.state;
 
-    const SaveLink = saveStatus => {
-      const saveStyle = getStyles({ saveStatus });
-      const { fillColour, strokeColour } = saveStyle;
-
-      return (
-        <Link
-          onPress={e => {
-            e.preventDefault();
-            this.bookmarkEvents(articleId);
-          }}
-          responsiveLinkStyles={styles.link}
-        >
-          <IconSaveBookmark
-            fillColour={fillColour}
-            strokeColour={strokeColour}
-            title="Save to My Articles"
-          />
-        </Link>
-      );
-    };
-
-    // if savedstatus is null, show the spinning
-    if (savedStatus) {
-      return SaveLink(true);
+    if(loadingState) {
+      return ( <ActivityIndicator size="small" />);
     }
 
-    return SaveLink(false);
+    if (savedStatus) {
+      return this.saveLink(true, articleId);
+    }
+
+    return this.saveLink(false, articleId);
   }
 }
 
