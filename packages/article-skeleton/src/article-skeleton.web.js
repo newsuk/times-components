@@ -38,10 +38,9 @@ class ArticleSkeleton extends Component {
 
   componentDidMount() {
     // eslint-disable-next-line react/no-did-mount-set-state
-    this.setState(state => ({
-      ...state,
+    this.setState({
       articleWidth: this.node && this.node.clientWidth
-    }));
+    });
     window.addEventListener("scroll", this.handleScroll);
   }
 
@@ -53,7 +52,7 @@ class ArticleSkeleton extends Component {
     const offsetTop = this.sticky.getBoundingClientRect().top;
     const isSticky = offsetTop === 1 || offsetTop === 0;
 
-    return this.setState(state => ({ ...state, isSticky }));
+    return this.setState({ isSticky });
   }
 
   render() {

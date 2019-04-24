@@ -36,12 +36,12 @@ export const SaveShareContainer = styled(View)`
   ${props =>
     props.isSticky && windowWidth <= breakpoints.huge
       ? `width: 100% !important;
-      background-color: #fff;
       opacity: 0.98;
       box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
       margin: ${spacing(6)} 0 !important`
       : ""};
 
+  background-color: ${colours.functional.white};
   height: 55px;
   margin: ${spacing(6)} ${spacing(2)};
 
