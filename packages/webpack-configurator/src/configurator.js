@@ -7,12 +7,12 @@ export default ({ exists, readFile }, resolve) => {
       : {};
 
   const getBabelConfig = async dir => {
-    const babelrcPath = path.resolve(dir, ".babelrc");
-    const babelrc = await parseJson(babelrcPath);
+    const babelConfigPath = path.resolve(dir, "babel.config.js");
+    const babelConfig = require(babelConfigPath)({ cache: () => { } });
     return {
-      ...babelrc,
+      ...babelConfig,
       plugins: [
-        ...(babelrc.plugins || []),
+        ...(babelConfig.plugins || []),
         ["react-native-web", { commonjs: true }]
       ]
     };
