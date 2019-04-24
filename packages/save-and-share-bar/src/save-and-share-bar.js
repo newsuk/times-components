@@ -50,7 +50,7 @@ class SaveAndShareBar extends Component {
           </BarItem>
           <BarItem
             target="_blank"
-            url={`${SharingApiUrls.facebook}?text=${articleUrl}`}
+            url={`${SharingApiUrls.facebook}?u=${articleUrl}`}
           >
             <IconFacebook
               fillColour="currentColor"
