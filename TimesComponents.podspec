@@ -14,14 +14,15 @@ Pod::Spec.new do |s|
   s.homepage     = "https://www.news.co.uk"
   s.license      = { type: 'MIT', file: 'LICENSE' }
   s.author       = "News UK"
-  # s.platform     = :ios
   s.platform     = :ios, '9.0'
 
   # s.source       = { :git => 'https://github.com/newsuk/times-components.git', :tag => "v#{s.version}"}
   s.source       = { :git => 'https://github.com/newsuk/times-components.git', :branch => "feature/rn-ios-pod-setup"}
   # s.source_files   = 'ios-app/Classes/**/*.{h,m}'
   # s.preserve_paths = 'Pod/Classes/**/*.generated.objc'
-  s.resources      = ['ios-app/ios-assets/js/*', 'ios-app/ios-assets/res/**/*']
+  s.resources      = ['ios-app/ios-assets/js/index.ios.bundle', 'ios-app/ios-assets/res/*']
+  # s.resources      = ['ios-app/ios-assets/js/*']
+  # s.resource_bundles = {'TimesComponents' => ['./ios-app/ios-assets/res/*']}
   
   # s.requires_arc = true
   # s.ios.deployment_target = '9.0'
