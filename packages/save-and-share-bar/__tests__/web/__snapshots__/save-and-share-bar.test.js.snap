@@ -123,10 +123,7 @@ exports[`1. save and share bar renders correctly 1`] = `
     >
       Save
     </div>
-    <BarItem
-      color="#696969"
-      hoverColor="#1D1D1B"
-    >
+    <BarItem>
       <IconSaveBookmark
         fillColour="#FFFFFF"
         strokeColour="currentColor"

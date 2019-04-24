@@ -7,32 +7,32 @@ import styles from "./styles";
 const HoverIcon =
   styled.div &&
   styled.div`
-    color: ${props => props.color};
+    color: ${props => props.colour};
     &:hover {
-      color: ${props => props.hoverColor || props.color};
+      color: ${props => props.hoverColour || props.colour};
     }
   `;
 
-/* eslint-disable jsx-a11y/anchor-is-valid */
-const BarItem = ({ children, color, hoverColor, onPress, ...props }) => (
+/* eslint-disable jsx-a11y/anchor-is-valid, react/require-default-props */
+const BarItem = ({
+  children,
+  colour = styles.svgIcon.fillColour,
+  hoverColour = styles.svgIcon.hoverFillColour,
+  onPress,
+  ...props
+}) => (
   <Link onPress={onPress} responsiveLinkStyles={styles.link} {...props}>
-    <HoverIcon color={color} hoverColor={hoverColor}>
+    <HoverIcon colour={colour} hoverColour={hoverColour}>
       {children}
     </HoverIcon>
   </Link>
 );
 
-BarItem.defaultProps = {
-  color: styles.svgIcon.fillColour,
-  hoverColor: styles.svgIcon.hoverFillColour,
-  onPress: () => {}
-};
-
 BarItem.propTypes = {
   children: PropTypes.node.isRequired,
-  color: PropTypes.string,
-  hoverColor: PropTypes.string,
-  onPress: PropTypes.func
+  colour: PropTypes.string,
+  hoverColour: PropTypes.string,
+  onPress: PropTypes.func.isRequired
 };
 
 export default BarItem;

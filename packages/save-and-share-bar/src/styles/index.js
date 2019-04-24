@@ -27,7 +27,7 @@ const styles = {
       &:hover {
         background-color: ${colours.functional.whiteGrey};
       }
-      &:active{
+      &:active {
         background-color: ${colours.functional.keyline};
       }
     `
