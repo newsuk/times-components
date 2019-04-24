@@ -821,6 +821,75 @@ const defaultBylines = [
 ];
 const defaultCommentCount = 65;
 const defaultCommentsEnabled = true;
+const defaultDescriptionMarkup = [
+  {
+    children: [
+      {
+        attributes: {
+          href: "https://www.thetimes.co.uk/topic/boris-johnson",
+          type: "topic"
+        },
+        children: [
+          {
+            attributes: {
+              value: "Boris Johnson"
+            },
+            children: [],
+            name: "text"
+          }
+        ],
+        name: "link"
+      },
+      {
+        attributes: {
+          value:
+            "’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for "
+        },
+        children: [],
+        name: "text"
+      },
+      {
+        attributes: {
+          canonicalId:
+            "independent-group-change-uk-gets-approval-but-makes-a-hash-of-logo-hwm0bxsxn",
+          href:
+            "https://www.thetimes.co.uk/article/independent-group-change-uk-gets-approval-but-makes-a-hash-of-logo-hwm0bxsxn",
+          type: "article"
+        },
+        children: [
+          {
+            attributes: {
+              value: "Change UK"
+            },
+            children: [],
+            name: "text"
+          }
+        ],
+        name: "link"
+      },
+      {
+        attributes: {
+          value: " in next month’s European elections."
+        },
+        children: [],
+        name: "text"
+      }
+    ],
+    name: "paragraph"
+  },
+  {
+    children: [
+      {
+        attributes: {
+          value: "The pro-Remain party announced its MEP hopefuls from almost 4"
+        },
+        children: [],
+        name: "text"
+      }
+    ],
+    name: "paragraph"
+  }
+];
 const defaultFlags = ["NEW", "EXCLUSIVE"];
 const defaultHasVideo = false;
 const defaultHeadline =
@@ -1505,6 +1574,44 @@ const defaultTopics = [
 ];
 const defaultUrl = "https://www.thetimes.co.uk/";
 const defaultTemplate = "mainstandard";
+const defaultTiles = [
+  {
+    slices: [
+      {
+        sections: []
+      }
+    ]
+  },
+  {
+    slices: [
+      {
+        sections: [
+          {
+            title: "Comment"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    slices: [
+      {
+        sections: []
+      }
+    ]
+  },
+  {
+    slices: [
+      {
+        sections: [
+          {
+            title: "News"
+          }
+        ]
+      }
+    ]
+  }
+];
 const addProp = (obj, key, value) => {
   if (value != null) {
     return {
@@ -1521,6 +1628,7 @@ const makeDefaultConfig = ({
   commentsEnabled = defaultCommentsEnabled,
   commentCount = defaultCommentCount,
   content = defaultContent,
+  descriptionMarkup = defaultDescriptionMarkup,
   dropcapsDisabled,
   flags = defaultFlags,
   hasVideo = defaultHasVideo,
@@ -1536,12 +1644,14 @@ const makeDefaultConfig = ({
   standfirst = defaultStandfirst,
   topics = defaultTopics,
   template = defaultTemplate,
+  tiles = defaultTiles,
   url = defaultUrl
 } = {}) => ({
   bylines,
   commentCount,
   commentsEnabled,
   content,
+  descriptionMarkup,
   dropcapsDisabled,
   flags,
   hasVideo,
@@ -1556,6 +1666,7 @@ const makeDefaultConfig = ({
   slug,
   standfirst,
   template,
+  tiles,
   topics,
   url
 });
@@ -1582,7 +1693,6 @@ export default ({ withAds = true, ...config } = {}) => {
     core
   );
 };
-
 export const testFixture = {
   __typename: "Article",
   bylines: [
@@ -1621,6 +1731,7 @@ export const testFixture = {
       name: "paragraph"
     }
   ],
+  descriptionMarkup: defaultDescriptionMarkup,
   flags: ["NEW"],
   hasVideo: false,
   headline: "Some Headline",
@@ -1706,6 +1817,7 @@ export const testFixture = {
   shortIdentifier: "2k629tpvh",
   slug: "this-is-slug",
   standfirst: "Some Standfirst",
+  tiles: defaultTiles,
   topics: [
     {
       name: "Topic",

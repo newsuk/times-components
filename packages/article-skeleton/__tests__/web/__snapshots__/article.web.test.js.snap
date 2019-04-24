@@ -2,6 +2,7 @@
 
 exports[`1. a full article with all content items with dropcap template 1`] = `
 <article>
+  <Head />
   <div>
     <Ad
       contextUrl="https://url.io"
@@ -324,6 +325,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
 
 exports[`2. an article with no content 1`] = `
 <article>
+  <Head />
   <div>
     <Ad
       contextUrl="https://url.io"
@@ -395,6 +397,7 @@ exports[`2. an article with no content 1`] = `
 
 exports[`3. an article with a nested markup in first paragraph displays no drop cap 1`] = `
 <article>
+  <Head />
   <div>
     <Ad
       contextUrl="https://url.io"

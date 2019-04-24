@@ -83,6 +83,7 @@ exports[`1. a secondary image 1`] = `
 </style>
 
 <article>
+  <Head />
   <div
     className="c0 S1"
   >
@@ -193,6 +194,7 @@ exports[`2. an inline image 1`] = `
 </style>
 
 <article>
+  <Head />
   <div
     className="c0 S1"
   >

@@ -10,6 +10,7 @@ import "./mocks.web";
 import shared from "./images.base";
 
 const omitProps = new Set([
+  "article",
   "className",
   "data-testid",
   "responsiveLinkStyles",

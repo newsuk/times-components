@@ -70,15 +70,24 @@ server.get("/article/:id", (request, response) => {
       logger,
       spotAccountId
     })
-    .then(({ initialProps, initialState, markup, responsiveStyles, styles }) =>
-      response.send(
-        makeHtml(initialState, initialProps, {
-          bundleName: "article",
-          markup,
-          responsiveStyles,
-          styles
-        })
-      )
+    .then(
+      ({
+        initialProps,
+        initialState,
+        headMarkup,
+        markup,
+        responsiveStyles,
+        styles
+      }) =>
+        response.send(
+          makeHtml(initialState, initialProps, {
+            bundleName: "article",
+            headMarkup,
+            markup,
+            responsiveStyles,
+            styles
+          })
+        )
     );
 });
 
