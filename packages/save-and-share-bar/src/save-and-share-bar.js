@@ -12,7 +12,6 @@ import SharingApiUrls from "./constants";
 import styles from "./styles";
 import BarItem from "./bar-item";
 
-/* eslint-disable jsx-a11y/anchor-is-valid */
 const SaveAndShareBar = ({
   articleUrl,
   onCopyLink,
@@ -59,11 +58,7 @@ const SaveAndShareBar = ({
     </View>
     <View style={styles.rowItem}>
       <Text style={styles.label}>Save</Text>
-      <BarItem
-        color={styles.svgIcon.save.strokeColour}
-        hoverColor={styles.svgIcon.hoverFillColour}
-        onPress={onSaveToMyArticles}
-      >
+      <BarItem onPress={onSaveToMyArticles}>
         <IconSaveBookmark
           fillColour={styles.svgIcon.save.fillColour}
           strokeColour="currentColor"

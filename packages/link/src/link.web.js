@@ -53,4 +53,3 @@ Link.defaultProps = {
 
 export default Link;
 export { default as TextLink } from "./text-link";
-export { default as LinkWithPressedStyle } from "./link-with-pressed-style.web";

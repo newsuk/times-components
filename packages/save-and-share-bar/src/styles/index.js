@@ -27,6 +27,9 @@ const styles = {
       &:hover {
         background-color: ${colours.functional.whiteGrey};
       }
+      &:active {
+        background-color: ${colours.functional.keyline};
+      }
     `
   },
   rowItem: {
@@ -48,15 +51,4 @@ const styles = {
   }
 };
 
-const clickedStyles = {
-  clickedLink: {
-    base: `
-      ${styles.link.base} 
-      &:hover {
-        background-color: ${colours.functional.keyline};
-      }
-    `
-  }
-};
-
-export default { ...styles, ...clickedStyles };
+export default styles;
