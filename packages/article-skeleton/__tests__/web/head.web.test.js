@@ -41,6 +41,22 @@ describe("Head", () => {
     expect(testRenderer).toMatchSnapshot();
   });
 
+  it("uses short headline if headline not available", () => {
+    const testRenderer = TestRenderer.create(
+      <Head
+        article={{
+          ...article,
+          headline: null,
+          shortHeadline: "short headline"
+        }}
+      />
+    );
+
+    const title = testRenderer.root.findByType("title");
+
+    expect(title.children).toMatchSnapshot();
+  });
+
   it("uses the first non-news section in title", () => {
     const testRenderer = TestRenderer.create(
       <Head

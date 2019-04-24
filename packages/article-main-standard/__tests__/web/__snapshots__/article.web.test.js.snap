@@ -247,13 +247,13 @@ exports[`4. an article with no headline falls back to use shortheadline 1`] = `
 <article>
   <Helmet>
     <title>
-      
+      Some Short Headline
        | 
       
       The Times
     </title>
     <meta
-      content=""
+      content="Some Short Headline"
       name="article:title"
     />
     <meta
@@ -261,7 +261,7 @@ exports[`4. an article with no headline falls back to use shortheadline 1`] = `
       name="article:publication"
     />
     <meta
-      content=""
+      content="Some Short Headline"
       property="og:title"
     />
     <meta
@@ -273,7 +273,7 @@ exports[`4. an article with no headline falls back to use shortheadline 1`] = `
       property="og:url"
     />
     <meta
-      content=""
+      content="Some Short Headline"
       name="twitter:title"
     />
     <meta

@@ -121,6 +121,15 @@ Array [
 ]
 `;
 
+exports[`Head uses short headline if headline not available 1`] = `
+Array [
+  "short headline",
+  " | ",
+  "Comment | ",
+  "The Times",
+]
+`;
+
 exports[`Head uses the first non-news section in title 1`] = `
 Array [
   "Some Headline",

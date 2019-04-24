@@ -53,34 +53,41 @@ const PUBLICATION_NAMES = {
 };
 
 function Head({ article }) {
-  const { descriptionMarkup, headline, leadAsset, publicationName } = article;
+  const {
+    descriptionMarkup,
+    headline,
+    leadAsset,
+    publicationName,
+    shortHeadline
+  } = article;
   const publication = PUBLICATION_NAMES[publicationName];
   const authorName = getAuthorAsText(article);
   const desc =
     descriptionMarkup && renderTreeAsText({ children: descriptionMarkup });
   const sectionname = getSectionName(article);
   const leadassetUrl = get(leadAsset, "crop169.url", null);
+  const title = headline || shortHeadline;
 
   return (
     <Context.Consumer>
       {({ makeArticleUrl }) => (
         <Helmet>
           <title>
-            {headline} | {sectionname ? `${sectionname} | ` : ""}
+            {title} | {sectionname ? `${sectionname} | ` : ""}
             {publication}
           </title>
-          <meta content={headline} name="article:title" />
+          <meta content={title} name="article:title" />
           <meta content={publication} name="article:publication" />
           {desc && <meta content={desc} name="description" />}
           {authorName && <meta content={authorName} name="author" />}
 
-          <meta content={headline} property="og:title" />
+          <meta content={title} property="og:title" />
           <meta content="article" property="og:type" />
           <meta content={makeArticleUrl(article)} property="og:url" />
           {desc && <meta content={desc} property="og:description" />}
           {leadassetUrl && <meta content={leadassetUrl} property="og:image" />}
 
-          <meta content={headline} name="twitter:title" />
+          <meta content={title} name="twitter:title" />
           <meta content="summary_large_image" name="twitter:card" />
           <meta content={makeArticleUrl(article)} name="twitter:url" />
           {desc && <meta content={desc} name="twitter:description" />}
@@ -95,10 +102,11 @@ Head.propTypes = {
   article: PropTypes.shape({
     bylines: PropTypes.array,
     descriptionMarkup: PropTypes.array,
-    headline: PropTypes.string.isRequired,
+    headline: PropTypes.string,
     id: PropTypes.string.isRequired,
     leadAsset: PropTypes.object,
     publicationName: PropTypes.string.isRequired,
+    shortHeadline: PropTypes.string,
     shortIdentifier: PropTypes.string.isRequired,
     tiles: PropTypes.array
   }).isRequired
