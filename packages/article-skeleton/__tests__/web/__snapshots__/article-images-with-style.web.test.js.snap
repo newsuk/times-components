@@ -30,6 +30,7 @@ exports[`1. a secondary image 1`] = `
 }
 
 .c2 {
+  background-color: #FFFFFF;
   height: 55px;
   margin: 30px 10px;
 }
@@ -190,6 +191,7 @@ exports[`2. an inline image 1`] = `
 }
 
 .c2 {
+  background-color: #FFFFFF;
   height: 55px;
   margin: 30px 10px;
 }

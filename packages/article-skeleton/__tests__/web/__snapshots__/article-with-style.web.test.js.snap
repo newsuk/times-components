@@ -83,6 +83,7 @@ exports[`full article with style 1`] = `
 }
 
 .c2 {
+  background-color: #FFFFFF;
   height: 55px;
   margin: 30px 10px;
 }
