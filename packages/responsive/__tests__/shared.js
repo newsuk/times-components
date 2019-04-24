@@ -1,6 +1,6 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
-import { setDimension } from "@times-components/test-utils/dimensions";
+import { setDimension } from "@times-components/mocks/dimensions";
 import Responsive, { ResponsiveContext } from "../src/responsive";
 
 export default () => {

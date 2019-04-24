@@ -10,7 +10,7 @@ import {
 } from "@times-components/jest-serializer";
 import Responsive from "@times-components/responsive";
 import { delay, iterator } from "@times-components/test-utils";
-import { setIsTablet } from "@times-components/test-utils/dimensions";
+import { setIsTablet } from "@times-components/mocks/dimensions";
 
 import renderParagraph from "./renderer";
 import dropCapData from "./fixtures/drop-cap-showcase.json";

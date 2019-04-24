@@ -34,7 +34,7 @@ const SaveAndShareBar = ({
         url={`${SharingApiUrls.twitter}?text=${articleUrl}`}
       >
         <IconTwitter
-          fillColour={styles.svgIcon.fillColour}
+          fillColour="currentColor"
           height={styles.svgIcon.height}
           title="Share on Twitter"
         />

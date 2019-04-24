@@ -1,10 +1,10 @@
 import {
   mockNativeModules,
   MockArticleSkeleton
-} from "@times-components/test-utils";
+} from "@times-components/mocks";
 
 // eslint-disable-next-line import/prefer-default-export
-export { setIsTablet } from "@times-components/test-utils/dimensions";
+export { setIsTablet } from "@times-components/mocks/dimensions";
 
 // eslint-disable-next-line global-require
 jest.mock("@times-components/ad", () => require("./ad-mock"));
