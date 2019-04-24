@@ -1842,13 +1842,6 @@
     fs-extra "6.0.0"
     glob "7.1.2"
 
-"@times-components/context@0.9.20":
-  version "0.9.20"
-  resolved "https://registry.yarnpkg.com/@times-components/context/-/context-0.9.20.tgz#acd0e1e029916da5cb4eafc8e787e43cef69e597"
-  integrity sha512-6jbJ8V3XYqqLRGrqWaInPa8ehjq7mfrkADsbvlDlqZQS/jss+fbhIyuqkySNpeoWlRlqq3DA4B2XSPdOfolzwQ==
-  dependencies:
-    "@times-components/styleguide" "3.28.5"
-
 "@times-components/fructose@3.11.4":
   version "3.11.4"
   resolved "https://registry.yarnpkg.com/@times-components/fructose/-/fructose-3.11.4.tgz#c653664a2aa7722550e949c10880737f2b6704b9"
@@ -1874,14 +1867,6 @@
     webpack "4.6.0"
     webpack-dev-server "3.1.7"
     webpack-merge "^4.1.1"
-
-"@times-components/styleguide@3.28.5":
-  version "3.28.5"
-  resolved "https://registry.yarnpkg.com/@times-components/styleguide/-/styleguide-3.28.5.tgz#c07f29d1c99710f3dfa5eb409a8615b273938275"
-  integrity sha512-N9LBioeqMSjOl2pgOR6aVyXVjP7+sw+82h8Y30aJQgoEC1gjLk72iU7g29JpWJmX3f+66ayv2uCG3LvlRO6CRQ==
-  dependencies:
-    prop-types "15.6.2"
-    styled-components "3.4.0"
 
 "@types/accepts@^1.3.5":
   version "1.3.5"
