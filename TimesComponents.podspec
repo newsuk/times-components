@@ -46,12 +46,13 @@ Pod::Spec.new do |s|
   s.dependency 'React/ART', react_native_version
 
   # React's Dependencies
-  s.dependency 'yoga', "#{react_native_version}.React"
+  # s.dependency 'yoga', "#{react_native_version}.React"
 
   # s.dependency 'DoubleConversion'
   # s.dependency 'Folly'
   # s.dependency 'glog'
   react_podspecs = [
+    'node_modules/react-native/ReactCommon/yoga/yoga.podspec',
     'node_modules/react-native/third-party-podspecs/DoubleConversion.podspec',
     'node_modules/react-native/third-party-podspecs/Folly.podspec',
     'node_modules/react-native/third-party-podspecs/glog.podspec',
