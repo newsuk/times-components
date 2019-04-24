@@ -12,7 +12,6 @@ import SharingApiUrls from "./constants";
 import styles from "./styles";
 import BarItem from "./bar-item";
 
-/* eslint-disable jsx-a11y/anchor-is-valid */
 const SaveAndShareBar = ({
   articleUrl,
   onCopyLink,

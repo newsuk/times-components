@@ -1,6 +1,7 @@
 import React from "react";
-import { LinkWithPressedStyle } from "@times-components/link";
+import Link from "@times-components/link";
 import styled from "styled-components";
+import PropTypes from "prop-types";
 import styles from "./styles";
 
 const HoverIcon =
@@ -12,21 +13,26 @@ const HoverIcon =
     }
   `;
 
-const BarItem = ({
-  children,
-  color = styles.svgIcon.fillColour,
-  hoverColor = styles.svgIcon.hoverFillColour,
-  ...props
-}) => (
-  <LinkWithPressedStyle
-    pressedStyle={styles.clickedLink}
-    style={styles.link}
-    {...props}
-  >
+/* eslint-disable jsx-a11y/anchor-is-valid */
+const BarItem = ({ children, color, hoverColor, onPress, ...props }) => (
+  <Link onPress={onPress} responsiveLinkStyles={styles.link} {...props}>
     <HoverIcon color={color} hoverColor={hoverColor}>
       {children}
     </HoverIcon>
-  </LinkWithPressedStyle>
+  </Link>
 );
+
+BarItem.defaultProps = {
+  color: styles.svgIcon.fillColour,
+  hoverColor: styles.svgIcon.hoverFillColour,
+  onPress: () => {}
+};
+
+BarItem.propTypes = {
+  children: PropTypes.node.isRequired,
+  color: PropTypes.string,
+  hoverColor: PropTypes.string,
+  onPress: PropTypes.func
+};
 
 export default BarItem;
