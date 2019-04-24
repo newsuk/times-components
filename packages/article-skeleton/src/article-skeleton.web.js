@@ -16,6 +16,7 @@ import {
   HeaderAdContainer,
   MainContainer
 } from "./styles/responsive";
+import Head from "./head";
 
 const adStyle = {
   marginBottom: 0
@@ -41,21 +42,24 @@ class ArticleSkeleton extends Component {
     const {
       adConfig,
       analyticsStream,
-      data: {
-        commentsEnabled,
-        content,
-        dropcapsDisabled,
-        id: articleId,
-        section,
-        url,
-        topics,
-        relatedArticleSlice,
-        template
-      },
+      data: article,
       Header,
       receiveChildList,
       spotAccountId
     } = this.props;
+
+    const {
+      commentsEnabled,
+      content,
+      dropcapsDisabled,
+      id: articleId,
+      section,
+      url,
+      topics,
+      relatedArticleSlice,
+      template
+    } = article;
+
     const { articleWidth } = this.state;
     const newContent = [...content];
     if (newContent && newContent.length > 0) {
@@ -79,6 +83,7 @@ class ArticleSkeleton extends Component {
           this.node = node;
         }}
       >
+        <Head article={article} />
         <AdComposer adConfig={adConfig}>
           <LazyLoad rootMargin={spacing(10)} threshold={0.5}>
             {({ observed, registerNode }) => (

@@ -11,6 +11,7 @@ import "./mocks.web";
 import shared from "./shared.base";
 
 const omitProps = new Set([
+  "article",
   "className",
   "data-testid",
   "responsiveLinkStyles",
