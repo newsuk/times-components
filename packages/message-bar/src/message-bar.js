@@ -14,16 +14,17 @@ class MessageBar extends React.Component {
       {
         toValue: 1,
       }
-    ).start()
-    this.setState({
-      timeout: setTimeout(() => {
-        Animated.spring(
-          this.state.yValue,
-          {
-            toValue: 0
-          }
-        ).start()
-      }, 3000)
+    ).start(() => {
+      this.setState({
+        timeout: setTimeout(() => {
+          Animated.spring(
+            this.state.yValue,
+            {
+              toValue: 0
+            }
+          ).start()
+        }, 3000)
+      })
     })
   }
 

@@ -6,6 +6,7 @@ import ArticleMainStandard from "@times-components/article-main-standard";
 import ArticleMainComment from "@times-components/article-main-comment";
 import Responsive from "@times-components/responsive";
 import { getMediaList, addIndexesToInlineImages } from "./utils";
+import MessageQueue from '@times-components/message-bar';
 
 export const templates = {
   indepth: ArticleInDepth,
@@ -30,9 +31,11 @@ const Article = props => {
 
   const Component = templates[template] || ArticleMainStandard;
   return (
-    <Responsive>
-      <Component {...props} onImagePress={onImagePressArticle} />
-    </Responsive>
+    <MessageQueue>
+      <Responsive>
+        <Component {...props} onImagePress={onImagePressArticle} />
+      </Responsive>
+    </MessageQueue>
   );
 };
 

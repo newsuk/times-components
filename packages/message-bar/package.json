@@ -2,8 +2,8 @@
   "name": "@times-components/message-bar",
   "version": "0.0.1",
   "description": "A component for showing user notifications",
-  "main": "dist/message-bar",
-  "dev": "src/message-bar",
+  "main": "dist/message-queue",
+  "dev": "src/message-queue",
   "scripts": {
     "depcheck": "depcheck --ignores='babel-*,depcheck,eslint,@thetimes/jest-lint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",

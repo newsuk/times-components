@@ -1,10 +1,13 @@
 import { colours, fontFactory } from "@times-components/styleguide";
 
+const height = 50
+
 const sharedStyle = scale => ({
   MessageBarBody: {
-    flex: 1,
+    width: '100%',
     backgroundColor: colours.functional.articleFlagUpdated,
-    height: 50,
+    height,
+    zIndex: 10,
     shadowColor: 'rgba(0, 0, 0, 0.2)',
     shadowOffset: {
       width: 0,
@@ -33,6 +36,18 @@ const sharedStyle = scale => ({
     alignItems: 'center',
     justifyContent: 'center'
   },
+  MessageQueue: {
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    top: 0,
+    bottom: 0,
+    flex: 1,
+    width: '100%',
+    height,
+    zIndex: 10,
+    flexDirection: 'row'
+  }
 });
 
 export default sharedStyle;
