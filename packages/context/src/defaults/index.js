@@ -9,5 +9,8 @@ export default {
   theme: {
     imageCaptionAlignment: {},
     scale: scales.medium
+  },
+  user: {
+    isLoggedIn: false
   }
 };
