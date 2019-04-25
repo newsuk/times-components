@@ -9,7 +9,7 @@ react_native_version = package["dependencies"]["react-native"]
 Pod::Spec.new do |s|
   s.name         = "TimesComponents"
   # s.version      = podspec_version
-  s.version      = 'vtemp.1.2.3'
+  s.version      = '1.20.300'
   s.summary      = "Times iOS React components"
   s.description  = "All the things for Times iOS React components including dependencies"
   s.homepage     = "https://www.news.co.uk"
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '9.0'
 
   # s.source       = { :git => 'https://github.com/newsuk/times-components.git', :tag => "v#{s.version}"}
-  s.source       = { :git => 'https://github.com/newsuk/times-components.git', :tag => "vtemp.1.2.3"}
+  s.source       = { :git => 'https://github.com/newsuk/times-components.git', :tag => "1.20.300"}
   # s.source       = { :git => 'https://github.com/newsuk/times-components.git', :branch => "feature/rn-ios-pod-setup"}
   # s.source_files   = 'ios-app/Classes/**/*.{h,m}'
   # s.preserve_paths = 'Pod/Classes/**/*.generated.objc'
