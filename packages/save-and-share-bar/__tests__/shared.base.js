@@ -19,7 +19,7 @@ jest.mock("react-native", () => {
   const reactNativeMock = require.requireActual("react-native");
   reactNativeMock.Clipboard = {
     isAvailable: jest.fn(() => true),
-    setString: jest.fn(),
+    setString: jest.fn()
   };
   return reactNativeMock;
 });
@@ -32,9 +32,9 @@ export default () => {
         const testInstance = TestRenderer.create(
           <SaveAndShareBar
             articleUrl=""
-            onCopyLink={() => { }}
-            onSaveToMyArticles={() => { }}
-            onShareOnEmail={() => { }}
+            onCopyLink={() => {}}
+            onSaveToMyArticles={() => {}}
+            onShareOnEmail={() => {}}
           />
         );
 
@@ -43,15 +43,16 @@ export default () => {
       }
     },
     {
-      name: "save and share bar renders without copy to clipboard icon if it is not available",
+      name:
+        "save and share bar renders without copy to clipboard icon if it is not available",
       test: () => {
-        Clipboard.isAvailable.mockImplementation(() => false)
+        Clipboard.isAvailable.mockImplementation(() => false);
         const testInstance = TestRenderer.create(
           <SaveAndShareBar
             articleUrl=""
-            onCopyLink={() => { }}
-            onSaveToMyArticles={() => { }}
-            onShareOnEmail={() => { }}
+            onCopyLink={() => {}}
+            onSaveToMyArticles={() => {}}
+            onShareOnEmail={() => {}}
           />
         );
 
@@ -66,7 +67,7 @@ export default () => {
         const onCopyLink = jest.fn();
         const onSaveToMyArticles = jest.fn();
         const articleUrlMock = "articleUrlMock";
-        Clipboard.isAvailable.mockImplementation(() => true)
+        Clipboard.isAvailable.mockImplementation(() => true);
 
         const testInstance = TestRenderer.create(
           <SaveAndShareBar
