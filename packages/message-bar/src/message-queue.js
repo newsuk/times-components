@@ -2,19 +2,15 @@ import React from 'react';
 import { View } from 'react-native';
 import styleFactory from "./styles";
 import MessageBar from './message-bar';
+import MessageContext from "./message-context";
 
 class MessageQueue extends React.Component {
-  state = {
-    messages: []
-  }
-
   constructor(props) {
     super(props)
-    this.callbackContext = React.createContext({
-      showMessage: message => {
-        this.addMessage(message)
-      }
-    })
+    this.state = {
+      messages: [],
+      showMessage: message => this.addMessage(message)
+    };
   }
 
   componentDidMount() {
@@ -36,10 +32,12 @@ class MessageQueue extends React.Component {
     const styles = styleFactory(scale);
 
     return [
-      children,
+      <MessageContext.Provider value={this.state}>
+        {children}
+      </MessageContext.Provider>,
       <View style={styles.MessageQueue}>
         {messages}
-      </View>,
+      </View>
     ]
   }
 }

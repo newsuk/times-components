@@ -1,11 +1,11 @@
 import React from "react";
-import MessageBar from "./src/message-bar";
 import { scales } from "@times-components/styleguide";
+import MessageBar from "./src/message-bar";
 
 export default {
   children: [
     {
-      component: () => <MessageBar scale={scales.medium} message="Test message" />,
+      component: () => <MessageBar message="Test message" scale={scales.medium} />,
       name: "MessageBar",
       type: "story"
     }
