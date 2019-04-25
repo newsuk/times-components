@@ -9,6 +9,7 @@ import {
 import { withKnobs } from '@storybook/addon-knobs';
 import { BarSpacingDecorator, WhiteBgColorDecorator } from "@times-components/storybook";
 import { loadStories } from "./story-loader";
+import "./rn-addons";
 
 // see https://github.com/facebook/react-native/issues/16434
 global.URL = URL;
@@ -34,3 +35,5 @@ const StorybookUI = getStorybookUI({
 });
 
 AppRegistry.registerComponent("storybooknative", () => StorybookUI);
+
+export default StorybookUIRoot;

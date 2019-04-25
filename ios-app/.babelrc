@@ -1,12 +1,13 @@
 {
   "presets": ["react-native"],
   "plugins": ["add-react-displayname",
-    [
-      "module-resolver",
-      {
-        "alias": {
-          "react-dom/server": "../node_modules/react-apollo/react-apollo.browser.umd.js"
-        }
-      }
-    ]]
+    // [
+    //   "module-resolver",
+    //   {
+    //     "alias": {
+    //       "react-dom/server": "../node_modules/react-apollo/react-apollo.browser.umd.js"
+    //     }
+    //   }
+    // ]
+  ]
 }
