@@ -25,11 +25,13 @@ const ArticleExtras = ({
         />
       ) : null}
     </aside>
-    <ArticleComments
-      articleId={articleId}
-      isEnabled={commentsEnabled}
-      spotAccountId={spotAccountId}
-    />
+    {spotAccountId ? (
+      <ArticleComments
+        articleId={articleId}
+        isEnabled={commentsEnabled}
+        spotAccountId={spotAccountId}
+      />
+    ) : null}
   </Fragment>
 );
 

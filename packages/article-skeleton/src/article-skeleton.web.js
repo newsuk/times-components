@@ -4,6 +4,7 @@ import ArticleExtras from "@times-components/article-extras";
 import LazyLoad from "@times-components/lazy-load";
 import { spacing } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
+import Context from "@times-components/context";
 import ArticleBody from "./article-body/article-body";
 import {
   articleSkeletonPropTypes,
@@ -83,48 +84,55 @@ class ArticleSkeleton extends Component {
           this.node = node;
         }}
       >
-        <Head article={article} />
-        <AdComposer adConfig={adConfig}>
-          <LazyLoad rootMargin={spacing(10)} threshold={0.5}>
-            {({ observed, registerNode }) => (
-              <Fragment>
-                <HeaderAdContainer key="headerAd">
-                  <Ad
-                    contextUrl={url}
-                    section={section}
-                    slotName="header"
-                    style={adStyle}
-                  />
-                </HeaderAdContainer>
-                <MainContainer>
-                  <Header width={articleWidth} />
-                  <BodyContainer>
-                    <ArticleBody
-                      content={newContent}
-                      contextUrl={url}
-                      observed={observed}
-                      registerNode={registerNode}
-                      section={section}
-                    />
-
-                    <ArticleExtras
-                      analyticsStream={analyticsStream}
-                      articleId={articleId}
-                      commentsEnabled={commentsEnabled}
-                      registerNode={registerNode}
-                      relatedArticleSlice={relatedArticleSlice}
-                      relatedArticlesVisible={
-                        !!observed.get("related-articles")
-                      }
-                      spotAccountId={spotAccountId}
-                      topics={topics}
-                    />
-                  </BodyContainer>
-                </MainContainer>
-              </Fragment>
-            )}
-          </LazyLoad>
-        </AdComposer>
+        <Context.Consumer>
+          {({ user }) => (
+            <Fragment>
+            <Head article={article} />
+            <AdComposer adConfig={adConfig}>
+              <LazyLoad rootMargin={spacing(10)} threshold={0.5}>
+                {({ observed, registerNode }) => (
+                  <Fragment>
+                    <HeaderAdContainer key="headerAd">
+                      <Ad
+                        contextUrl={url}
+                        section={section}
+                        slotName="header"
+                        style={adStyle}
+                      />
+                    </HeaderAdContainer>
+                    <MainContainer>
+                      <Header width={articleWidth} />
+                      <BodyContainer>
+                        <ArticleBody
+                          content={newContent}
+                          contextUrl={url}
+                          observed={observed}
+                          registerNode={registerNode}
+                          section={section}
+                        />
+                        <ArticleExtras
+                          analyticsStream={analyticsStream}
+                          articleId={articleId}
+                          commentsEnabled={commentsEnabled}
+                          registerNode={registerNode}
+                          relatedArticleSlice={
+                            user.isLoggedIn ? relatedArticleSlice : null
+                          }
+                          relatedArticlesVisible={
+                            !!observed.get("related-articles")
+                          }
+                          spotAccountId={user.isLoggedIn ? spotAccountId : null}
+                          topics={user.isLoggedIn ? topics : null}
+                        />
+                      </BodyContainer>
+                    </MainContainer>
+                  </Fragment>
+                )}
+              </LazyLoad>
+            </AdComposer>
+            </Fragment>
+          )}
+        </Context.Consumer>
       </article>
     );
   }
