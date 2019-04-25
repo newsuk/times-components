@@ -6,7 +6,7 @@ export default {
     {
       component: () => (
         <SaveAndShareBar
-          articleUrl="article-url-test"
+          articleUrl="articleUrl"
           onCopyLink={() => {}}
           onSaveToMyArticles={() => {}}
           onShareOnEmail={() => {}}
