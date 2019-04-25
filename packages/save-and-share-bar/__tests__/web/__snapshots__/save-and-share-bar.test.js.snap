@@ -174,10 +174,8 @@ exports[`2. save and share bar renders without copy to clipboard icon if it is n
         "flexDirection": "row",
         "msFlexAlign": "center",
         "msFlexDirection": "row",
-        "paddingBottom": "20px",
-        "paddingLeft": "20px",
-        "paddingRight": "20px",
-        "paddingTop": "20px",
+        "paddingBottom": "10px",
+        "paddingTop": "10px",
       }
     }
   >
@@ -233,10 +231,8 @@ exports[`2. save and share bar renders without copy to clipboard icon if it is n
         "flexDirection": "row",
         "msFlexAlign": "center",
         "msFlexDirection": "row",
-        "paddingBottom": "20px",
-        "paddingLeft": "20px",
-        "paddingRight": "20px",
-        "paddingTop": "20px",
+        "paddingBottom": "10px",
+        "paddingTop": "10px",
       }
     }
   >
