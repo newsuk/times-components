@@ -17,7 +17,8 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '9.0'
 
   # s.source       = { :git => 'https://github.com/newsuk/times-components.git', :tag => "v#{s.version}"}
-  s.source       = { :git => 'https://github.com/newsuk/times-components.git', :branch => "feature/rn-ios-pod-setup"}
+  s.source       = { :git => 'https://github.com/newsuk/times-components.git', :tag => "vtemp.1.2.3"}
+  # s.source       = { :git => 'https://github.com/newsuk/times-components.git', :branch => "feature/rn-ios-pod-setup"}
   # s.source_files   = 'ios-app/Classes/**/*.{h,m}'
   # s.preserve_paths = 'Pod/Classes/**/*.generated.objc'
   s.resources      = ['ios-app/ios-assets/js/index.ios.bundle', 'ios-app/ios-assets/res/*']
