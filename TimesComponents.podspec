@@ -6,7 +6,6 @@ package = JSON.parse(File.read("./ios-app/package.json"))
 podspec_version = package["version"]
 react_native_version = package["dependencies"]["react-native"]
 
-plugin 'cocoapods-fix-react-native'
 Pod::Spec.new do |s|
   s.name         = "TimesComponents"
   # s.version      = podspec_version
