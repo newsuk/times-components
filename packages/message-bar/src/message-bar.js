@@ -1,16 +1,20 @@
-import React from "react";
+import React, { Component } from "react";
 import { View, Text, Image, Animated } from "react-native";
+import PropTypes from "prop-types";
 import styleFactory from "./styles";
 
-class MessageBar extends React.Component {
+const CloseIcon = require("../assets/close-button.png");
+
+class MessageBar extends Component {
   state = {
+    timeout: null,
     yValue: new Animated.Value(0),
-    timeout: null
   }
 
   componentDidMount() {
+    const { yValue } = this.state;
     Animated.spring(
-      this.state.yValue,
+      yValue,
       {
         toValue: 1,
       }
@@ -18,7 +22,7 @@ class MessageBar extends React.Component {
       this.setState({
         timeout: setTimeout(() => {
           Animated.spring(
-            this.state.yValue,
+            yValue,
             {
               toValue: 0
             }
@@ -48,12 +52,17 @@ class MessageBar extends React.Component {
         <View style={styles.MessageBarCloseButton}>
           <Image
             resizeMode="contain"
-            source={require("../assets/close-button.png")}
+            source={CloseIcon}
           />
         </View>
       </View>
     </Animated.View>)
   }
 }
+
+MessageBar.propTypes = {
+  scale: PropTypes.string.isRequired,
+  message: PropTypes.string.isRequired
+};
 
 export default MessageBar;
