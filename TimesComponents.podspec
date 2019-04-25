@@ -8,7 +8,8 @@ react_native_version = package["dependencies"]["react-native"]
 
 Pod::Spec.new do |s|
   s.name         = "TimesComponents"
-  s.version      = podspec_version
+  # s.version      = podspec_version
+  s.version      = 'vtemp.1.2.3'
   s.summary      = "Times iOS React components"
   s.description  = "All the things for Times iOS React components including dependencies"
   s.homepage     = "https://www.news.co.uk"
