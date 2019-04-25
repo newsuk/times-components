@@ -1,68 +1,91 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. an article 1`] = `
-<ArticleSkeleton
-  adConfig={
-    Object {
-      "adUnit": "mockAdUnit",
-      "bidInitialiser": Promise {
-        "_40": 0,
-        "_55": undefined,
-        "_65": 1,
-        "_72": null,
-      },
-      "bidderSlots": Array [
-        "header",
-        "inline-ad",
-      ],
-      "biddersConfig": Object {
-        "bidders": Object {
-          "amazon": Object {
-            "accountId": "3360",
-          },
-          "appnexus": Object {
-            "placementId": "5823281",
-          },
-          "criteo": Object {
-            "zoneMap": Object {
-              "120x600": "764877",
-            },
-          },
-          "ix": Object {
-            "siteId": "188830",
-          },
-          "pubmatic": Object {
-            "accountId": "156034",
-            "adSlotPrefix": "Thetimes",
-          },
-          "rubicon": Object {
-            "accountId": "14062",
-            "siteId": "70608",
-            "zoneId": "335918",
-          },
-        },
-        "bucketSize": 0.25,
-        "maxBid": 15,
-        "minPrice": 0.01,
-        "timeout": 3000,
-      },
-      "globalSlots": Array [
-        "ad-pixel",
-        "ad-pixelskin",
-        "ad-pixelteads",
-      ],
-      "networkId": "mockNetwork",
-      "pageTargeting": Object {
-        "title": "Title",
-      },
-      "slotTargeting": Object {
-        "path": "/news",
-      },
-    }
-  }
-  onImagePress={null}
-  referralUrl={null}
-/>
+<ArticleSkeleton>
+  <View>
+    <View>
+      <View>
+        <ModalImage
+          aspectRatio={1.7777777777777777}
+          caption={
+            <Caption
+              credits="Some Credits"
+              text="Some Caption"
+            />
+          }
+          index={0}
+          onImagePress={null}
+          uri="https://crop169.io"
+        />
+      </View>
+    </View>
+    <View>
+      <View>
+        <ArticleLabel
+          color="#1D1D1B"
+          title="Some Label"
+        />
+      </View>
+      <Text
+        selectable={true}
+      >
+        Some Headline
+      </Text>
+      <Text
+        accessibilityRole="heading"
+        aria-level="2"
+      >
+        Some Standfirst
+      </Text>
+      <View>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2019-03-14T12:00:00.000Z",
+                "type": "NEW",
+              },
+            ]
+          }
+        />
+      </View>
+    </View>
+    <View>
+      <View>
+        <Text>
+          <ArticleBylineWithLinks
+            ast={
+              Array [
+                Object {
+                  "byline": Array [
+                    Object {
+                      "attributes": Object {},
+                      "children": Array [
+                        Object {
+                          "attributes": Object {
+                            "value": "Some byline",
+                          },
+                          "children": Array [],
+                          "name": "text",
+                        },
+                      ],
+                      "name": "inline",
+                    },
+                  ],
+                },
+              ]
+            }
+          />
+        </Text>
+      </View>
+      <View>
+        <Text>
+          Friday March 13 2015, 6:54pm, The Times
+        </Text>
+      </View>
+    </View>
+  </View>
+</ArticleSkeleton>
 `;
 
 exports[`2. loading 1`] = `null`;
@@ -70,131 +93,51 @@ exports[`2. loading 1`] = `null`;
 exports[`3. an error 1`] = `<ArticleError />`;
 
 exports[`4. an article with no headline falls back to use shortheadline 1`] = `
-<ArticleSkeleton
-  adConfig={
-    Object {
-      "adUnit": "mockAdUnit",
-      "bidInitialiser": Promise {
-        "_40": 0,
-        "_55": undefined,
-        "_65": 1,
-        "_72": null,
-      },
-      "bidderSlots": Array [
-        "header",
-        "inline-ad",
-      ],
-      "biddersConfig": Object {
-        "bidders": Object {
-          "amazon": Object {
-            "accountId": "3360",
-          },
-          "appnexus": Object {
-            "placementId": "5823281",
-          },
-          "criteo": Object {
-            "zoneMap": Object {
-              "120x600": "764877",
-            },
-          },
-          "ix": Object {
-            "siteId": "188830",
-          },
-          "pubmatic": Object {
-            "accountId": "156034",
-            "adSlotPrefix": "Thetimes",
-          },
-          "rubicon": Object {
-            "accountId": "14062",
-            "siteId": "70608",
-            "zoneId": "335918",
-          },
-        },
-        "bucketSize": 0.25,
-        "maxBid": 15,
-        "minPrice": 0.01,
-        "timeout": 3000,
-      },
-      "globalSlots": Array [
-        "ad-pixel",
-        "ad-pixelskin",
-        "ad-pixelteads",
-      ],
-      "networkId": "mockNetwork",
-      "pageTargeting": Object {
-        "title": "Title",
-      },
-      "slotTargeting": Object {
-        "path": "/news",
-      },
-    }
-  }
-  onImagePress={null}
-  referralUrl={null}
-/>
+<ArticleSkeleton>
+  <View>
+    <View />
+    <View>
+      <Text
+        selectable={true}
+      >
+        Some Short Headline
+      </Text>
+      <View>
+        <ArticleFlags />
+      </View>
+    </View>
+    <View>
+      <View>
+        <Text>
+          Friday March 13 2015, 6:54pm, The Times
+        </Text>
+      </View>
+    </View>
+  </View>
+</ArticleSkeleton>
 `;
 
 exports[`5. an article with ads 1`] = `
-<ArticleSkeleton
-  adConfig={
-    Object {
-      "adUnit": "mockAdUnit",
-      "bidInitialiser": Promise {
-        "_40": 0,
-        "_55": undefined,
-        "_65": 1,
-        "_72": null,
-      },
-      "bidderSlots": Array [
-        "header",
-        "inline-ad",
-      ],
-      "biddersConfig": Object {
-        "bidders": Object {
-          "amazon": Object {
-            "accountId": "3360",
-          },
-          "appnexus": Object {
-            "placementId": "5823281",
-          },
-          "criteo": Object {
-            "zoneMap": Object {
-              "120x600": "764877",
-            },
-          },
-          "ix": Object {
-            "siteId": "188830",
-          },
-          "pubmatic": Object {
-            "accountId": "156034",
-            "adSlotPrefix": "Thetimes",
-          },
-          "rubicon": Object {
-            "accountId": "14062",
-            "siteId": "70608",
-            "zoneId": "335918",
-          },
-        },
-        "bucketSize": 0.25,
-        "maxBid": 15,
-        "minPrice": 0.01,
-        "timeout": 3000,
-      },
-      "globalSlots": Array [
-        "ad-pixel",
-        "ad-pixelskin",
-        "ad-pixelteads",
-      ],
-      "networkId": "mockNetwork",
-      "pageTargeting": Object {
-        "title": "Title",
-      },
-      "slotTargeting": Object {
-        "path": "/news",
-      },
-    }
-  }
-  onImagePress={null}
-  referralUrl={null}
-/>
+<ArticleSkeleton>
+  <View>
+    <View />
+    <View>
+      <Text
+        selectable={true}
+      >
+        Some Headline
+      </Text>
+      <View>
+        <ArticleFlags />
+      </View>
+    </View>
+    <View>
+      <View>
+        <Text>
+          Friday March 13 2015, 6:54pm, The Times
+        </Text>
+      </View>
+    </View>
+  </View>
+</ArticleSkeleton>
 `;

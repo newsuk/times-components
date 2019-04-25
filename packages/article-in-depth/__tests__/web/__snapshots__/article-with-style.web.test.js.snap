@@ -1,10 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`full article with style 1`] = `<ArticleSkeleton />`;
+exports[`full article with style 1`] = `
+.c15 {
+  color: #333333;
+  display: block;
+  font-family: "TimesDigitalW04-Regular";
+  line-height: 26px;
+  font-size: 17px;
+  margin: 0 auto 25px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
 
-exports[`full article with style in the culture magazine 1`] = `<ArticleSkeleton />`;
+.c18 {
+  padding-left: 10px;
+}
 
-exports[`full article with style in the style magazine 1`] = `<ArticleSkeleton />`;
+.c14 {
+  width: 100%;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 25px;
+}
 
 .c18 {
   width: 100%;

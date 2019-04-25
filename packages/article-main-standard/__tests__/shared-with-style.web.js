@@ -18,7 +18,7 @@ import { adConfig } from "./ad-mock";
 import articleProps from "./shared-article-props";
 
 jest.mock("@times-components/article-lead-asset", () => "ArticleLeadAsset");
-jest.mock("@times-components/article-skeleton", () => "ArticleSkeleton");
+jest.mock("@times-components/save-and-share-bar", () => "SaveAndShareBar");
 
 const styles = [
   "alignItems",

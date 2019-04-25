@@ -146,7 +146,7 @@ exports[`1. a full article 1`] = `
     </svg>
   </a>
   <a
-    href="https://www.facebook.com/sharer/sharer.php?text=https://url.io"
+    href="https://www.facebook.com/sharer/sharer.php?u=https://url.io"
     target="_blank"
   >
     <svg
@@ -164,22 +164,6 @@ exports[`1. a full article 1`] = `
           d="8f9b8bbdce60b96352628d3dbf6e37a0"
         />
       </g>
-    </svg>
-  </a>
-  <a>
-    <svg
-      aria-label="[title]"
-      height={15}
-      role="img"
-      viewBox="0 0 15 15"
-      width={15}
-    >
-      <title>
-        Copy link to clipboard
-      </title>
-      <path
-        d="f65af77b7574644b0c2e60934732135f"
-      />
     </svg>
   </a>
   Save
