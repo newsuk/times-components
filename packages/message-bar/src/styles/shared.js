@@ -4,49 +4,49 @@ const height = 50
 
 const sharedStyle = scale => ({
   MessageBarBody: {
-    width: '100%',
+    alignItems: 'center',
     backgroundColor: colours.functional.articleFlagUpdated,
+    flexDirection: 'row',
     height,
-    zIndex: 10,
     shadowColor: 'rgba(0, 0, 0, 0.2)',
     shadowOffset: {
+      height: 2,
       width: 0,
-      height: 2
     },
     shadowRadius: 5,
-    alignItems: 'center',
-    flexDirection: 'row'
-  },
-  MessageBarText: {
-    marginLeft: 20,
-    color: colours.functional.white,
-    ...fontFactory({
-      scale,
-      font: 'headline',
-      fontSize: 'secondary'
-    })
+    width: '100%',
+    zIndex: 10,
   },
   MessageBarCloseButton: {
-    width: 28,
-    height: 28,
+    alignItems: 'center',
     backgroundColor: 'rgba(255, 255, 255, 0.3)',
+    borderRadius: 28 / 2,
+    height: 28,
+    justifyContent: 'center',
     marginLeft: 'auto',
     marginRight: 20,
-    borderRadius: 28 / 2,
-    alignItems: 'center',
-    justifyContent: 'center'
+    width: 28,
+  },
+  MessageBarText: {
+    color: colours.functional.white,
+    ...fontFactory({
+      font: 'headline',
+      fontSize: 'secondary',
+      scale,
+    }),
+    marginLeft: 20,
   },
   MessageQueue: {
-    position: 'absolute',
-    left: 0,
-    right: 0,
-    top: 0,
     bottom: 0,
     flex: 1,
-    width: '100%',
+    flexDirection: 'row',
     height,
+    left: 0,
+    position: 'absolute',
+    right: 0,
+    top: 0,
+    width: '100%',
     zIndex: 10,
-    flexDirection: 'row'
   }
 });
 

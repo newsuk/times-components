@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Text, Image, Animated } from "react-native";
+import { View, Text, Image, Animated, TouchableOpacity } from "react-native";
 import PropTypes from "prop-types";
 import styleFactory from "./styles";
 
@@ -11,29 +11,60 @@ class MessageBar extends Component {
     yValue: new Animated.Value(0),
   }
 
+  constructor(props) {
+    super(props);
+    this.animateClosed = this.animateClosed.bind(this);
+    this.animateOpen = this.animateOpen.bind(this);
+    this.close = this.close.bind(this);
+  }
+
   componentDidMount() {
-    const { yValue } = this.state;
-    Animated.spring(
-      yValue,
-      {
-        toValue: 1,
-      }
-    ).start(() => {
+    this.animateOpen(() => {
       this.setState({
         timeout: setTimeout(() => {
-          Animated.spring(
-            yValue,
-            {
-              toValue: 0
-            }
-          ).start()
+          this.animateClosed()
         }, 3000)
       })
     })
   }
 
+  animateOpen(cb) {
+    const { yValue } = this.state;
+    Animated.spring(
+      yValue,
+      {
+        toValue: 1,
+        useNativeDriver: true
+      }
+    ).start(cb)
+  }
+
+  animateClosed(cb) {
+    const { yValue } = this.state;
+    Animated.spring(
+      yValue,
+      {
+        toValue: 0,
+        useNativeDriver: true
+      }
+    ).start(cb)
+  }
+
+  close() {
+    const { close, message } = this.props;
+    const { timeout } = this.state;
+    clearTimeout(timeout);
+    this.setState({
+      timeout: null
+    }, () => {
+      this.animateClosed(() => {
+        close(message)
+      })
+    })
+  }
+
   render() {
-    const { scale, message } = this.props;
+    const { message, scale } = this.props;
     const { yValue } = this.state;
     const styles = styleFactory(scale);
 
@@ -50,10 +81,12 @@ class MessageBar extends Component {
           {message}
         </Text>
         <View style={styles.MessageBarCloseButton}>
-          <Image
-            resizeMode="contain"
-            source={CloseIcon}
-          />
+          <TouchableOpacity onPress={this.close}>
+            <Image
+              resizeMode="contain"
+              source={CloseIcon}
+            />
+          </TouchableOpacity>
         </View>
       </View>
     </Animated.View>)
@@ -61,8 +94,9 @@ class MessageBar extends Component {
 }
 
 MessageBar.propTypes = {
+  close: PropTypes.func.isRequired,
+  message: PropTypes.string.isRequired,
   scale: PropTypes.string.isRequired,
-  message: PropTypes.string.isRequired
 };
 
 export default MessageBar;
