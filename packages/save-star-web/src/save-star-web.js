@@ -1,3 +1,4 @@
+/* eslint-env browser */
 import React, { Component } from "react";
 import { ActivityIndicator } from "react-native";
 import Link from "@times-components/link";
@@ -15,27 +16,30 @@ import { IconSaveBookmark } from "@times-components/icons";
 import { ApolloClient } from "apollo-client";
 import styles, { getStyles } from "./styles";
 
-const makeClient = () => {
-  const graphqlapi = "https://prod-tpa.prod.thetimes.works/graphql"; // window.nuk.graphqlapi.url;
-  const acsTnlCookie =
-    "tid%3D77a8739a-fbad-4344-9bf8-09c33a49ed6b%26eid%3DAAAA002920174%26e%3D1%26a%3DTmVoYSBTcml2YXN0YXZh%26u%3D1910c402-2cf6-40dd-bb1e-4ee24e1e7f6b%26t%3D1554976444%26h%3D5f091672fb6e3258934b91f8715e2753"; // window.nuk.getCookieValue('acs_tnl');
-  const sacsTnlCookie = "1ff9a858-8f31-43f3-bb8a-4366dfcb858e"; // window.nuk.getCookieValue('sacs_tnl');
-
-  const networkInterfaceOptions = { fetch, headers: {}, uri: graphqlapi };
-
-  networkInterfaceOptions.headers["content-type"] =
-    "application/x-www-form-urlencoded";
-  networkInterfaceOptions.headers.Authorization = `Cookie acs_tnl=${acsTnlCookie};sacs_tnl=${sacsTnlCookie}`;
-
-  return new ApolloClient({
-    cache: new InMemoryCache({ fragmentMatcher }),
-    link: createHttpLink(networkInterfaceOptions)
-  });
-};
-
-
-
 class SaveStarWeb extends Component {
+
+  static makeClient() {
+    let graphqlapi = null;
+    let acsTnlCookie = null;
+    let sacsTnlCookie = null;
+
+    if(window.nuk) {
+      graphqlapi = window.nuk.graphqlapi.url;
+      acsTnlCookie = window.nuk.getCookieValue('acs_tnl');
+      sacsTnlCookie = window.nuk.getCookieValue('sacs_tnl');
+    }
+    const networkInterfaceOptions = { fetch, headers: {}, uri: graphqlapi };
+
+    networkInterfaceOptions.headers["content-type"] =
+      "application/x-www-form-urlencoded";
+    networkInterfaceOptions.headers.Authorization = `Cookie acs_tnl=${acsTnlCookie};sacs_tnl=${sacsTnlCookie}`;
+
+    return new ApolloClient({
+      cache: new InMemoryCache({ fragmentMatcher }),
+      link: createHttpLink(networkInterfaceOptions)
+    });
+  }
+
   constructor(props) {
     super(props);
     this.bookmarkEvents = this.bookmarkEvents.bind(this);
@@ -50,9 +54,10 @@ class SaveStarWeb extends Component {
     const { articleId } = this.props;
 
     if (typeof window === "undefined") {
-       this.setState({ loadingState: false});;
+       this.setState({ loadingState: false});
     }
-    const client = makeClient();
+
+    const client = SaveStarWeb.makeClient();
 
     client
       .query({ query: getBookmarks })
@@ -100,7 +105,7 @@ class SaveStarWeb extends Component {
   }
 
   saveBookmark(id) {
-    const client = makeClient();
+    const client = SaveStarWeb.makeClient();
     this.setState({loadingState: true});
     const { savedArticles } = this.state;
 
@@ -128,7 +133,7 @@ class SaveStarWeb extends Component {
   }
 
   unsaveBookmark(id) {
-    const client = makeClient();
+    const client = SaveStarWeb.makeClient();
     const { savedArticles } = this.state;
     this.setState({loadingState: true});
 
