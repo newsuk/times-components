@@ -1,6 +1,6 @@
 import React from 'react';
 
 export default React.createContext({
-  messages: [],
+  message: null,
   showMessage: () => {}
 });

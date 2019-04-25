@@ -9,7 +9,7 @@ class MessageQueue extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      messages: [],
+      message: null,
       showMessage: message => this.addMessage(message)
     };
     this.addMessage = this.addMessage.bind(this)
@@ -23,20 +23,20 @@ class MessageQueue extends Component {
   }
 
   addMessage(message) {
-    this.setState(state => ({
-      messages: state.messages.concat([message])
+    this.setState(({
+      message
     }))
   }
 
-  removeMessage(message) {
-    this.setState(state => ({
-      messages: state.messages.filter(m => m !== message)
+  removeMessage() {
+    this.setState(({
+      message: null
     }))
   }
 
   render() {
     const { scale, children } = this.props;
-    const { messages } = this.state;
+    const { message } = this.state;
     const styles = styleFactory(scale);
 
     return [
@@ -44,7 +44,7 @@ class MessageQueue extends Component {
         {children}
       </MessageContext.Provider>,
       <View style={styles.MessageQueue}>
-        {messages.map(m => <MessageBar close={this.removeMessage} message={m}/>)}
+        { message && <MessageBar close={this.removeMessage} message={message}/> }
       </View>
     ]
   }

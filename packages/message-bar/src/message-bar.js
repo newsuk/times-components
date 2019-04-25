@@ -18,6 +18,21 @@ class MessageBar extends Component {
     this.close = this.close.bind(this);
   }
 
+  componentWillReceiveProps(props) {
+    const { message } = props
+    const { message: oldMessage } = this.props;
+    
+    if (message === oldMessage) {
+      const { timeout } = this.state;
+      clearTimeout(timeout);
+      this.setState({
+        timeout: setTimeout(() => {
+          this.animateClosed()
+        }, 3000)
+      })
+    }
+  }
+
   componentDidMount() {
     this.animateOpen(() => {
       this.setState({
@@ -51,14 +66,14 @@ class MessageBar extends Component {
   }
 
   close() {
-    const { close, message } = this.props;
+    const { close } = this.props;
     const { timeout } = this.state;
     clearTimeout(timeout);
     this.setState({
       timeout: null
     }, () => {
       this.animateClosed(() => {
-        close(message)
+        close()
       })
     })
   }
