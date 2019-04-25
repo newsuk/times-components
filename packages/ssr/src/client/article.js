@@ -16,7 +16,8 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     makeArticleUrl,
     makeTopicUrl,
     mapArticleToAdConfig,
-    spotAccountId
+    spotAccountId,
+    userState: window.nuk.user
   };
 
   const clientOptions = {
