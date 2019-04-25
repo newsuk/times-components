@@ -6,6 +6,7 @@ package = JSON.parse(File.read("./ios-app/package.json"))
 podspec_version = package["version"]
 react_native_version = package["dependencies"]["react-native"]
 
+plugin 'cocoapods-fix-react-native'
 Pod::Spec.new do |s|
   s.name         = "TimesComponents"
   # s.version      = podspec_version
@@ -17,8 +18,7 @@ Pod::Spec.new do |s|
   s.author       = "News UK"
   s.platform     = :ios, '9.0'
 
-  # s.source       = { :git => 'https://github.com/newsuk/times-components.git', :tag => "v#{s.version}"}
-  s.source       = { :git => 'https://github.com/newsuk/times-components.git', :tag => "1.20.300"}
+  s.source       = { :git => 'https://github.com/newsuk/times-components.git', :tag => "#{s.version}"}
   # s.source       = { :git => 'https://github.com/newsuk/times-components.git', :branch => "feature/rn-ios-pod-setup"}
   # s.source_files   = 'ios-app/Classes/**/*.{h,m}'
   # s.preserve_paths = 'Pod/Classes/**/*.generated.objc'
@@ -33,19 +33,19 @@ Pod::Spec.new do |s|
   #s.resource_bundles = {'TimesReactIOSBundle' => './ios-app/assets/js/index.ios.bundle'}
   
   # React, and the subspecs we have to use
-  # s.dependency 'React/Core', react_native_version
-  # s.dependency 'React/CxxBridge', react_native_version
-  # s.dependency 'React/RCTAnimation', react_native_version
-  # s.dependency 'React/RCTCameraRoll', react_native_version
-  # s.dependency 'React/RCTImage', react_native_version
-  # s.dependency 'React/RCTLinkingIOS', react_native_version
-  # s.dependency 'React/RCTNetwork', react_native_version
-  # s.dependency 'React/RCTText', react_native_version
-  # s.dependency 'React/RCTGeolocation', react_native_version
-  # s.dependency 'React/RCTActionSheet', react_native_version
-  # s.dependency 'React/RCTWebSocket', react_native_version
-  # s.dependency 'React/DevSupport', react_native_version
-  # s.dependency 'React/ART', react_native_version
+  s.dependency 'React/Core', react_native_version
+  s.dependency 'React/CxxBridge', react_native_version
+  s.dependency 'React/RCTAnimation', react_native_version
+  s.dependency 'React/RCTCameraRoll', react_native_version
+  s.dependency 'React/RCTImage', react_native_version
+  s.dependency 'React/RCTLinkingIOS', react_native_version
+  s.dependency 'React/RCTNetwork', react_native_version
+  s.dependency 'React/RCTText', react_native_version
+  s.dependency 'React/RCTGeolocation', react_native_version
+  s.dependency 'React/RCTActionSheet', react_native_version
+  s.dependency 'React/RCTWebSocket', react_native_version
+  s.dependency 'React/DevSupport', react_native_version
+  s.dependency 'React/ART', react_native_version
 
   # React's Dependencies
   # s.dependency 'yoga', "#{react_native_version}.React"
@@ -70,6 +70,6 @@ Pod::Spec.new do |s|
   podspecs = react_podspecs + dep_podspecs
   podspecs.each do |podspec_path|
     spec = Pod::Specification.from_file podspec_path
-    # s.dependency spec.name, "#{spec.version}"
+    s.dependency spec.name, "#{spec.version}"
   end
 end
