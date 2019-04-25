@@ -202,7 +202,8 @@ const renderArticle = ({
   inDepthTextColour,
   scale,
   section,
-  template
+  template,
+  isTeaser
 }) => (
   <ArticleProvider debounceTimeMs={0} id={id}>
     {({ article, error, refetch }) => {
@@ -224,6 +225,9 @@ const renderArticle = ({
             theme: {
               ...themeFactory(section, template),
               scale: scale || defaults.theme.scale
+            },
+            user: {
+              isLoggedIn: !isTeaser
             }
           }}
         >
@@ -279,7 +283,8 @@ const renderArticleConfig = ({
   decorateAction,
   hasScaling,
   link = null,
-  select
+  select,
+  isTeaser = false
 }) => {
   const id = "263b03a1-2ce6-4b94-b053-0d35316548c5";
   const withFlags = boolean("Flags", true);
@@ -291,6 +296,11 @@ const renderArticleConfig = ({
   const withPullQuote = boolean("Pull Quote", false);
   const withStandfirst = boolean("Standfirst", true);
   const withVideo = boolean("Video", true);
+  let withTeaser;
+
+  if (!isTeaser) {
+    withTeaser = boolean("Teaser (only Web)", false);
+  }
 
   const scale = hasScaling ? selectScales(select) : null;
   const section = selectSection(select);
@@ -329,6 +339,7 @@ const renderArticleConfig = ({
             id,
             inDepthBackgroundColour,
             inDepthTextColour,
+            isTeaser: isTeaser || withTeaser,
             scale,
             section,
             template
