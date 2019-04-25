@@ -16,12 +16,6 @@ class MessageQueue extends Component {
     this.removeMessage = this.removeMessage.bind(this)
   }
 
-  componentDidMount() {
-    setTimeout(() => {
-      this.addMessage('test message')
-    }, 1000)
-  }
-
   addMessage(message) {
     this.setState(({
       message
