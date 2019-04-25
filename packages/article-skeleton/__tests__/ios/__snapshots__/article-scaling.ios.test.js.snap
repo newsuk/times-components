@@ -58,8 +58,6 @@ exports[`1. scaled medium full article 1`] = `
                     Object {
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 34,
-                      "fontStyle": null,
-                      "fontWeight": null,
                       "lineHeight": 60,
                     }
                   }
@@ -184,8 +182,6 @@ exports[`2. scaled large full article 1`] = `
                     Object {
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 34,
-                      "fontStyle": null,
-                      "fontWeight": null,
                       "lineHeight": 60,
                     }
                   }
@@ -310,8 +306,6 @@ exports[`3. scaled xlarge full article 1`] = `
                     Object {
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 34,
-                      "fontStyle": null,
-                      "fontWeight": null,
                       "lineHeight": 60,
                     }
                   }
