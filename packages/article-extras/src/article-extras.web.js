@@ -14,26 +14,28 @@ const ArticleExtras = ({
   spotAccountId,
   topics
 }) => (
-  <Fragment>
-    <ArticleTopics topics={topics} />
-    <aside id="related-articles" ref={node => registerNode(node)}>
-      {relatedArticleSlice ? (
-        <RelatedArticles
-          analyticsStream={analyticsStream}
-          isVisible={relatedArticlesVisible}
-          slice={relatedArticleSlice}
+    <Fragment>
+      {topics ? (
+        <ArticleTopics topics={topics} />
+      ) : null}
+      <aside id="related-articles" ref={node => registerNode(node)}>
+        {relatedArticleSlice ? (
+          <RelatedArticles
+            analyticsStream={analyticsStream}
+            isVisible={relatedArticlesVisible}
+            slice={relatedArticleSlice}
+          />
+        ) : null}
+      </aside>
+      {spotAccountId ? (
+        <ArticleComments
+          articleId={articleId}
+          isEnabled={commentsEnabled}
+          spotAccountId={spotAccountId}
         />
       ) : null}
-    </aside>
-    {spotAccountId ? (
-      <ArticleComments
-        articleId={articleId}
-        isEnabled={commentsEnabled}
-        spotAccountId={spotAccountId}
-      />
-    ) : null}
-  </Fragment>
-);
+    </Fragment>
+  );
 
 ArticleExtras.propTypes = {
   analyticsStream: PropTypes.func.isRequired,
