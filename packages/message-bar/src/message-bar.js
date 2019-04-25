@@ -8,8 +8,8 @@ const CloseIcon = require("../assets/close-button.png");
 class MessageBar extends Component {
   state = {
     timeout: null,
-    yValue: new Animated.Value(0),
-  }
+    yValue: new Animated.Value(0)
+  };
 
   constructor(props) {
     super(props);
@@ -18,64 +18,61 @@ class MessageBar extends Component {
     this.close = this.close.bind(this);
   }
 
+  componentDidMount() {
+    this.animateOpen(() => {
+      this.setState({
+        timeout: setTimeout(() => {
+          this.animateClosed();
+        }, 3000)
+      });
+    });
+  }
+
   componentWillReceiveProps(props) {
-    const { message } = props
+    const { message } = props;
     const { message: oldMessage } = this.props;
-    
+
     if (message === oldMessage) {
       const { timeout } = this.state;
       clearTimeout(timeout);
       this.setState({
         timeout: setTimeout(() => {
-          this.animateClosed()
+          this.animateClosed();
         }, 3000)
-      })
+      });
     }
-  }
-
-  componentDidMount() {
-    this.animateOpen(() => {
-      this.setState({
-        timeout: setTimeout(() => {
-          this.animateClosed()
-        }, 3000)
-      })
-    })
   }
 
   animateOpen(cb) {
     const { yValue } = this.state;
-    Animated.spring(
-      yValue,
-      {
-        toValue: 1,
-        useNativeDriver: true
-      }
-    ).start(cb)
+    Animated.spring(yValue, {
+      toValue: 1,
+      useNativeDriver: true
+    }).start(cb);
   }
 
   animateClosed(cb) {
     const { yValue } = this.state;
-    Animated.spring(
-      yValue,
-      {
-        toValue: 0,
-        useNativeDriver: true
-      }
-    ).start(cb)
+    Animated.spring(yValue, {
+      toValue: 0,
+      useNativeDriver: true
+    }).start(cb);
   }
 
   close() {
     const { close } = this.props;
     const { timeout } = this.state;
     clearTimeout(timeout);
-    this.setState({
-      timeout: null
-    }, () => {
-      this.animateClosed(() => {
-        close()
-      })
-    })
+    this.setState(
+      {
+        timeout: null
+      },
+      () => {
+        this.animateClosed(() => {
+          close();
+        });
+      }
+    );
   }
 
   render() {
@@ -83,35 +80,36 @@ class MessageBar extends Component {
     const { yValue } = this.state;
     const styles = styleFactory(scale);
 
-    return (<Animated.View style={{
-      transform: [{
-        translateY: yValue.interpolate({
-          inputRange: [0, 1],
-          outputRange: [-50, 0]
-        })
-      }]
-    }}>
-      <View style={styles.MessageBarBody}>
-        <Text style={styles.MessageBarText}>
-          {message}
-        </Text>
-        <View style={styles.MessageBarCloseButton}>
-          <TouchableOpacity onPress={this.close}>
-            <Image
-              resizeMode="contain"
-              source={CloseIcon}
-            />
-          </TouchableOpacity>
+    return (
+      <Animated.View
+        style={{
+          transform: [
+            {
+              translateY: yValue.interpolate({
+                inputRange: [0, 1],
+                outputRange: [-50, 0]
+              })
+            }
+          ]
+        }}
+      >
+        <View style={styles.MessageBarBody}>
+          <Text style={styles.MessageBarText}>{message}</Text>
+          <View style={styles.MessageBarCloseButton}>
+            <TouchableOpacity onPress={this.close}>
+              <Image resizeMode="contain" source={CloseIcon} />
+            </TouchableOpacity>
+          </View>
         </View>
-      </View>
-    </Animated.View>)
+      </Animated.View>
+    );
   }
 }
 
 MessageBar.propTypes = {
   close: PropTypes.func.isRequired,
   message: PropTypes.string.isRequired,
-  scale: PropTypes.string.isRequired,
+  scale: PropTypes.string.isRequired
 };
 
 export default MessageBar;

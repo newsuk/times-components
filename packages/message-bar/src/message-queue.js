@@ -1,31 +1,32 @@
-import React, { Component } from 'react';
-import { View } from 'react-native';
-import PropTypes from 'prop-types';
+/* eslint-disable react/no-unused-state */
+import React, { Component } from "react";
+import { View } from "react-native";
+import PropTypes from "prop-types";
 import styleFactory from "./styles";
-import MessageBar from './message-bar';
+import MessageBar from "./message-bar";
 import MessageContext from "./message-context";
 
 class MessageQueue extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       message: null,
       showMessage: message => this.addMessage(message)
     };
-    this.addMessage = this.addMessage.bind(this)
-    this.removeMessage = this.removeMessage.bind(this)
+    this.addMessage = this.addMessage.bind(this);
+    this.removeMessage = this.removeMessage.bind(this);
   }
 
   addMessage(message) {
-    this.setState(({
+    this.setState({
       message
-    }))
+    });
   }
 
   removeMessage() {
-    this.setState(({
+    this.setState({
       message: null
-    }))
+    });
   }
 
   render() {
@@ -38,21 +39,18 @@ class MessageQueue extends Component {
         {children}
       </MessageContext.Provider>,
       <View style={styles.MessageQueue}>
-        { message && <MessageBar close={this.removeMessage} message={message}/> }
+        {message && <MessageBar close={this.removeMessage} message={message} />}
       </View>
-    ]
+    ];
   }
 }
 
 {
-  const {string, element, arrayOf, oneOf} = PropTypes;
+  const { string, element, arrayOf, oneOf } = PropTypes;
   MessageQueue.propTypes = {
-    children: oneOf([
-      element,
-      arrayOf(element)
-    ]).isRequired,
-    scale: string.isRequired,
-  }
+    children: oneOf([element, arrayOf(element)]).isRequired,
+    scale: string.isRequired
+  };
 }
 
 export default MessageQueue;

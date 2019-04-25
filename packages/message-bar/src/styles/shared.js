@@ -1,52 +1,52 @@
 import { colours, fontFactory } from "@times-components/styleguide";
 
-const height = 50
+const height = 50;
 
 const sharedStyle = scale => ({
   MessageBarBody: {
-    alignItems: 'center',
+    alignItems: "center",
     backgroundColor: colours.functional.articleFlagUpdated,
-    flexDirection: 'row',
+    flexDirection: "row",
     height,
-    shadowColor: 'rgba(0, 0, 0, 0.2)',
+    shadowColor: "rgba(0, 0, 0, 0.2)",
     shadowOffset: {
       height: 2,
-      width: 0,
+      width: 0
     },
     shadowRadius: 5,
-    width: '100%',
-    zIndex: 10,
+    width: "100%",
+    zIndex: 10
   },
   MessageBarCloseButton: {
-    alignItems: 'center',
-    backgroundColor: 'rgba(255, 255, 255, 0.3)',
+    alignItems: "center",
+    backgroundColor: "rgba(255, 255, 255, 0.3)",
     borderRadius: 28 / 2,
     height: 28,
-    justifyContent: 'center',
-    marginLeft: 'auto',
+    justifyContent: "center",
+    marginLeft: "auto",
     marginRight: 20,
-    width: 28,
+    width: 28
   },
   MessageBarText: {
     color: colours.functional.white,
     ...fontFactory({
-      font: 'headline',
-      fontSize: 'secondary',
-      scale,
+      font: "headline",
+      fontSize: "secondary",
+      scale
     }),
-    marginLeft: 20,
+    marginLeft: 20
   },
   MessageQueue: {
     bottom: 0,
     flex: 1,
-    flexDirection: 'row',
+    flexDirection: "row",
     height,
     left: 0,
-    position: 'absolute',
+    position: "absolute",
     right: 0,
     top: 0,
-    width: '100%',
-    zIndex: 10,
+    width: "100%",
+    zIndex: 10
   }
 });
 
