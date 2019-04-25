@@ -9,7 +9,6 @@ export default class MarkupString {
 
   characters(textStyle) {
     return this.text
-      .replace(/([\n][ \t]+)/g, "\n")
       .split("")
       .map(c => new Character(c, textStyle));
   }

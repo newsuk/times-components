@@ -11,8 +11,6 @@ export default class StyledText extends Markup {
     if (!this.style.tracking) this.style.tracking = textStyle.tracking;
     if (!this.style.characterCase)
       this.style.characterCase = textStyle.characterCase;
-    if (!this.style.fillColor) this.style.fillColor = textStyle.fillColor;
-    if (!this.style.strokeColor) this.style.strokeColor = textStyle.strokeColor;
     if (!this.style.strokeWidth) this.style.strokeWidth = textStyle.strokeWidth;
     return this.children.reduce(
       (acc, child) => [

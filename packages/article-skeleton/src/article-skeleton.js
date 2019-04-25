@@ -31,9 +31,7 @@ const viewabilityConfig = {
 
 const convertStyles = ({ font, size }) => ({
   fontFamily: font,
-  fontSize: size,
-  fontStyle: font.includes("Italic") ? "italic" : null,
-  fontWeight: font.includes("Bold") ? "bold" : null
+  fontSize: size
 });
 
 const renderRow = (

@@ -20,8 +20,15 @@ const childWithDropCap = {
   children: [
     {
       attributes: {
+        value: "A"
+      },
+      children: [],
+      name: "dropCap",
+    },
+    {
+      attributes: {
         value:
-          "As I follow Chris Reynolds Gordon down the first f…fty Shades of Grey but, he says, “I’m living it.”"
+          "s I follow Chris Reynolds Gordon down the first f…fty Shades of Grey but, he says, “I’m living it.”"
       },
       children: [],
       name: "text"
