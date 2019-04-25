@@ -2,6 +2,7 @@
 import React, { Component } from "react";
 import { ActivityIndicator } from "react-native";
 import Link from "@times-components/link";
+import styled from "styled-components";
 import PropTypes from "prop-types";
 import fetch from "unfetch";
 import { createHttpLink } from "apollo-link-http";
@@ -16,6 +17,14 @@ import { IconSaveBookmark } from "@times-components/icons";
 import { ApolloClient } from "apollo-client";
 import styles, { getStyles } from "./styles";
 
+const HoverIcon =
+styled.div &&
+styled.div`
+  color: ${props => props.colour};
+  &:hover {
+    color: ${props => props.hoverColour || props.colour};
+  }
+`;
 class SaveStarWeb extends Component {
 
   static makeClient() {
@@ -23,11 +32,11 @@ class SaveStarWeb extends Component {
     let acsTnlCookie = null;
     let sacsTnlCookie = null;
 
-    if(window.nuk) {
-      graphqlapi = window.nuk.graphqlapi.url;
-      acsTnlCookie = window.nuk.getCookieValue('acs_tnl');
-      sacsTnlCookie = window.nuk.getCookieValue('sacs_tnl');
-    }
+    // if(window.nuk) {
+      graphqlapi = "https://prod-tpa.prod.thetimes.works/graphql";//window.nuk.graphqlapi.url;
+      acsTnlCookie = "tid%3D77a8739a-fbad-4344-9bf8-09c33a49ed6b%26eid%3DAAAA002920174%26e%3D1%26a%3DTmVoYSBTcml2YXN0YXZh%26u%3D1910c402-2cf6-40dd-bb1e-4ee24e1e7f6b%26t%3D1554976444%26h%3D5f091672fb6e3258934b91f8715e2753";//window.nuk.getCookieValue('acs_tnl');
+      sacsTnlCookie = "1ff9a858-8f31-43f3-bb8a-4366dfcb858e";//window.nuk.getCookieValue('sacs_tnl');
+    // }
     const networkInterfaceOptions = { fetch, headers: {}, uri: graphqlapi };
 
     networkInterfaceOptions.headers["content-type"] =
@@ -83,7 +92,7 @@ class SaveStarWeb extends Component {
       });
   }
 
-  saveLink(saveStatus, articleId) {
+  saveLink(saveStatus, articleId, colour = styles.svgIcon.fillColour, hoverColour = styles.svgIcon.hoverFillColour) {
     const saveStyle = getStyles({ saveStatus });
     const { fillColour, strokeColour } = saveStyle;
 
@@ -95,11 +104,13 @@ class SaveStarWeb extends Component {
         }}
         responsiveLinkStyles={styles.link}
       >
-        <IconSaveBookmark
-          fillColour={fillColour}
-          strokeColour={strokeColour}
-          title="Save to My Articles"
-        />
+        <HoverIcon colour={colour} hoverColour={hoverColour}>
+          <IconSaveBookmark
+            fillColour={fillColour}
+            strokeColour={strokeColour}
+            title="Save to My Articles"
+          />
+        </HoverIcon>
       </Link>
     );
   }
@@ -178,7 +189,7 @@ class SaveStarWeb extends Component {
   }
 
   render() {
-    const { articleId } = this.props;
+    const { articleId, colour, hoverColour } = this.props;
     const { savedStatus, loadingState } = this.state;
 
     if(loadingState) {
@@ -186,15 +197,17 @@ class SaveStarWeb extends Component {
     }
 
     if (savedStatus) {
-      return this.saveLink(true, articleId);
+      return this.saveLink(true, articleId, colour, hoverColour);
     }
 
-    return this.saveLink(false, articleId);
+    return this.saveLink(false, articleId, colour, hoverColour);
   }
 }
 
 SaveStarWeb.propTypes = {
-  articleId: PropTypes.string.isRequired
+  articleId: PropTypes.string.isRequired,
+  colour: PropTypes.string,
+  hoverColour: PropTypes.string
 };
 
 export default SaveStarWeb;

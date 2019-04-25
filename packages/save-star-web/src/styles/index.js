@@ -8,6 +8,10 @@ const styles = {
     fillColour: colours.functional.action,
     strokeColour: colours.functional.secondary
   },
+  svgIcon: {
+    fillColour: colours.functional.secondary,
+    hoverFillColour: colours.functional.brandColour
+  },
   unsave: {
     fillColour: colours.functional.white,
     strokeColour: colours.functional.secondary
