@@ -75,22 +75,24 @@ class MessageBar extends Component {
   }
 
   render() {
-    const { message, scale } = this.props;
+    const { message, scale, animate } = this.props;
     const { yValue } = this.state;
     const styles = styleFactory(scale);
 
     return (
       <Animated.View
-        style={{
-          transform: [
-            {
-              translateY: yValue.interpolate({
-                inputRange: [0, 1],
-                outputRange: [-50, 0]
-              })
-            }
-          ]
-        }}
+        style={
+          animate && {
+            transform: [
+              {
+                translateY: yValue.interpolate({
+                  inputRange: [0, 1],
+                  outputRange: [-50, 0]
+                })
+              }
+            ]
+          }
+        }
       >
         <View style={styles.MessageBarBody}>
           <Text style={styles.MessageBarText}>{message}</Text>
@@ -106,6 +108,7 @@ class MessageBar extends Component {
 }
 
 MessageBar.propTypes = {
+  animate: PropTypes.bool.isRequired,
   close: PropTypes.func.isRequired,
   delay: PropTypes.number.isRequired,
   message: PropTypes.string.isRequired,

@@ -30,7 +30,7 @@ class MessageQueue extends Component {
   }
 
   render() {
-    const { scale, children, delay } = this.props;
+    const { scale, children, delay, animate } = this.props;
     const { message } = this.state;
     const styles = styleFactory(scale);
 
@@ -39,10 +39,10 @@ class MessageQueue extends Component {
         <MessageContext.Provider value={this.state}>
           {children}
         </MessageContext.Provider>
-        ,
         <View style={styles.MessageQueue}>
           {message && (
             <MessageBar
+              animate={animate}
               close={this.removeMessage}
               delay={delay}
               message={message}
@@ -56,8 +56,9 @@ class MessageQueue extends Component {
 }
 
 {
-  const { string, node, number } = PropTypes;
+  const { string, node, number, bool } = PropTypes;
   MessageQueue.propTypes = {
+    animate: bool.isRequired,
     children: node.isRequired,
     delay: number.isRequired,
     scale: string.isRequired

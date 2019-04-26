@@ -29,7 +29,6 @@ Array [
       test child content
     </Text>
   </View>,
-  ",",
   <View />,
 ]
 `;

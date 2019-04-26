@@ -15,12 +15,12 @@ const TestConsumer = () => (
   </Context.Consumer>
 );
 
-export default () => [
+export default animate => [
   {
     name: "renders correctly",
     test: async () => {
       const testInstance = TestRenderer.create(
-        <MessageQueue delay={1} scale={scales.medium}>
+        <MessageQueue animate={animate} delay={1} scale={scales.medium}>
           <View>
             <Text>test child content</Text>
           </View>
@@ -36,7 +36,7 @@ export default () => [
     name: "children can show a message",
     test: async () => {
       const testInstance = TestRenderer.create(
-        <MessageQueue delay={1} scale={scales.medium}>
+        <MessageQueue animate={animate} delay={1} scale={scales.medium}>
           <TestConsumer />
         </MessageQueue>
       );
@@ -52,7 +52,7 @@ export default () => [
     name: "removes the message when the bar says it closed",
     test: async () => {
       const testInstance = TestRenderer.create(
-        <MessageQueue delay={100} scale={scales.medium}>
+        <MessageQueue animate={animate} delay={100} scale={scales.medium}>
           <TestConsumer />
         </MessageQueue>
       );

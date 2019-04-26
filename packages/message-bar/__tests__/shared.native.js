@@ -17,5 +17,5 @@ export default () => {
     )
   );
 
-  shared();
+  shared(true);
 };

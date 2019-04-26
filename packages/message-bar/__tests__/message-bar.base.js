@@ -1,17 +1,18 @@
 import React from "react";
 import { TouchableOpacity } from "react-native";
-import TestRenderer from "react-test-renderer";
 import { scales } from "@times-components/styleguide";
 import { delay } from "@times-components/test-utils";
 import { shallow } from "enzyme";
+import TestRenderer from "react-test-renderer";
 import MessageBar from "../src/message-bar";
 
-export default () => [
+export default animate => [
   {
     name: "renders correctly",
     test: async () => {
       const testInstance = TestRenderer.create(
         <MessageBar
+          animate={animate}
           close={() => {}}
           delay={1}
           message="test message"
@@ -30,6 +31,7 @@ export default () => [
       const closed = jest.fn();
       const testInstance = shallow(
         <MessageBar
+          animate={animate}
           close={closed}
           delay={1}
           message="test message"
@@ -48,6 +50,7 @@ export default () => [
     test: async () => {
       const testInstance = shallow(
         <MessageBar
+          animate={animate}
           close={() => {}}
           delay={100}
           message="test message"
@@ -70,6 +73,7 @@ export default () => [
     test: async () => {
       const testInstance = shallow(
         <MessageBar
+          animate={animate}
           close={() => {}}
           delay={100}
           message="test message"

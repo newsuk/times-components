@@ -1,6 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. renders correctly 1`] = `<div />`;
+exports[`1. renders correctly 1`] = `
+<div>
+  <div>
+    <div>
+      test message
+    </div>
+    <div>
+      <div
+        tabIndex="0"
+      >
+        <div>
+          <div />
+          <img
+            alt=""
+            draggable={false}
+            src="uri"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
 
 exports[`5. renders correctly 1`] = `
 Array [
@@ -9,7 +31,6 @@ Array [
       test child content
     </div>
   </div>,
-  ",",
   <div />,
 ]
 `;
