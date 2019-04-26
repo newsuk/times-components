@@ -4,51 +4,24 @@ import { ActivityIndicator } from "react-native";
 import Link from "@times-components/link";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import fetch from "unfetch";
-import { createHttpLink } from "apollo-link-http";
-import { fragmentMatcher } from "@times-components/schema";
-import { InMemoryCache } from "apollo-cache-inmemory";
 import {
   getBookmarks,
   saveBookmarks,
   unsaveBookmarks
 } from "@times-components/provider-queries";
 import { IconSaveBookmark } from "@times-components/icons";
-import { ApolloClient } from "apollo-client";
 import styles, { getStyles } from "./styles";
+import makeClient from "./make-client-util";
 
 const HoverIcon =
-styled.div &&
-styled.div`
-  color: ${props => props.colour};
-  &:hover {
-    color: ${props => props.hoverColour || props.colour};
-  }
-`;
+  styled.div &&
+  styled.div`
+    color: ${props => props.colour};
+    &:hover {
+      color: ${props => props.hoverColour || props.colour};
+    }
+  `;
 class SaveStarWeb extends Component {
-
-  static makeClient() {
-    let graphqlapi = null;
-    let acsTnlCookie = null;
-    let sacsTnlCookie = null;
-
-    // if(window.nuk) {
-      graphqlapi = "https://prod-tpa.prod.thetimes.works/graphql";//window.nuk.graphqlapi.url;
-      acsTnlCookie = "tid%3D77a8739a-fbad-4344-9bf8-09c33a49ed6b%26eid%3DAAAA002920174%26e%3D1%26a%3DTmVoYSBTcml2YXN0YXZh%26u%3D1910c402-2cf6-40dd-bb1e-4ee24e1e7f6b%26t%3D1554976444%26h%3D5f091672fb6e3258934b91f8715e2753";//window.nuk.getCookieValue('acs_tnl');
-      sacsTnlCookie = "1ff9a858-8f31-43f3-bb8a-4366dfcb858e";//window.nuk.getCookieValue('sacs_tnl');
-    // }
-    const networkInterfaceOptions = { fetch, headers: {}, uri: graphqlapi };
-
-    networkInterfaceOptions.headers["content-type"] =
-      "application/x-www-form-urlencoded";
-    networkInterfaceOptions.headers.Authorization = `Cookie acs_tnl=${acsTnlCookie};sacs_tnl=${sacsTnlCookie}`;
-
-    return new ApolloClient({
-      cache: new InMemoryCache({ fragmentMatcher }),
-      link: createHttpLink(networkInterfaceOptions)
-    });
-  }
-
   constructor(props) {
     super(props);
     this.bookmarkEvents = this.bookmarkEvents.bind(this);
@@ -63,40 +36,47 @@ class SaveStarWeb extends Component {
     const { articleId } = this.props;
 
     if (typeof window === "undefined") {
-       this.setState({ loadingState: false});
+      this.setState({ loadingState: false });
     }
 
-    const client = SaveStarWeb.makeClient();
+    const client = makeClient();
 
     client
       .query({ query: getBookmarks })
       .then(response => {
         const { loading, data } = response;
-        if(loading) {
-          this.setState({ loadingState: true});
-        };
+        if (loading) {
+          this.setState({ loadingState: true });
+        }
         if (loading === false) {
-          const savedArticles = data.viewer.bookmarks.bookmarks;
+          const savedArticles = data.viewer.bookmarks.bookmarks.map(
+            item => item.id
+          );
+
           this.setState({
             loadingState: false,
             savedArticles,
-            savedStatus: !!savedArticles
-              .map(item => item.id)
-              .find(item => item === articleId)
+            savedStatus: !!savedArticles.find(item => item === articleId)
           });
         }
       })
       .catch(err => {
-        this.setState({  loadingState: false, savedStatus: false });
+        this.setState({ loadingState: false, savedStatus: false });
         console.error("Error in connecting to api", err);
       });
   }
 
-  saveLink(saveStatus, articleId, colour = styles.svgIcon.fillColour, hoverColour = styles.svgIcon.hoverFillColour) {
+  saveLink(
+    saveStatus,
+    articleId,
+    colour = styles.svgIcon.fillColour,
+    hoverColour = styles.svgIcon.hoverFillColour
+  ) {
     const saveStyle = getStyles({ saveStatus });
     const { fillColour, strokeColour } = saveStyle;
 
     return (
+      // eslint-disable-next-line jsx-a11y/anchor-is-valid
       <Link
         onPress={e => {
           e.preventDefault();
@@ -116,11 +96,9 @@ class SaveStarWeb extends Component {
   }
 
   saveBookmark(id) {
-    const client = SaveStarWeb.makeClient();
-    this.setState({loadingState: true});
+    const client = makeClient();
+    this.setState({ loadingState: true });
     const { savedArticles } = this.state;
-
-    console.log('hey');
 
     client
       .mutate({
@@ -129,25 +107,23 @@ class SaveStarWeb extends Component {
           id
         }
       })
-      .then((result) => {
-        console.log('response is', result)
+      .then(() => {
         this.setState({
           loadingState: false,
-          savedArticles: [...savedArticles, { id }],
+          savedArticles: [...savedArticles, id],
           savedStatus: true
         });
       })
       .catch(err => {
-        this.setState({  loadingState: false, savedStatus: false });
+        this.setState({ loadingState: false, savedStatus: false });
         console.error("Error in connecting to api", err);
       });
   }
 
   unsaveBookmark(id) {
-    const client = SaveStarWeb.makeClient();
+    const client = makeClient();
     const { savedArticles } = this.state;
-    this.setState({loadingState: true});
-
+    this.setState({ loadingState: true });
     client
       .mutate({
         mutation: unsaveBookmarks,
@@ -158,9 +134,7 @@ class SaveStarWeb extends Component {
       .then(() => {
         this.setState({
           loadingState: false,
-          savedArticles: savedArticles
-            .map(item => item.id)
-            .filter(item => item !== id),
+          savedArticles: savedArticles.filter(item => item !== id),
           savedStatus: false
         });
       })
@@ -175,9 +149,7 @@ class SaveStarWeb extends Component {
     const { savedArticles } = this.state;
 
     if (savedArticles) {
-      newStatus = !!savedArticles
-        .map(item => item.id)
-        .find(item => item === id);
+      newStatus = !!savedArticles.find(item => item === id);
       if (newStatus) {
         this.unsaveBookmark(id);
       } else {
@@ -192,8 +164,8 @@ class SaveStarWeb extends Component {
     const { articleId, colour, hoverColour } = this.props;
     const { savedStatus, loadingState } = this.state;
 
-    if(loadingState) {
-      return ( <ActivityIndicator size="small" />);
+    if (loadingState) {
+      return <ActivityIndicator size="small" />;
     }
 
     if (savedStatus) {
@@ -208,6 +180,11 @@ SaveStarWeb.propTypes = {
   articleId: PropTypes.string.isRequired,
   colour: PropTypes.string,
   hoverColour: PropTypes.string
+};
+
+SaveStarWeb.defaultProps = {
+  colour: styles.svgIcon.fillColour,
+  hoverColour: styles.svgIcon.hoverFillColour
 };
 
 export default SaveStarWeb;
