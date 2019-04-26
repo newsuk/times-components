@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. renders correctly 1`] = `
+<View>
+  <View>
+    <Text>
+      test message
+    </Text>
+    <View>
+      <View>
+        <Image
+          resizeMode="contain"
+          source={
+            Object {
+              "testUri": "../../../packages/message-bar/assets/close-button.png",
+            }
+          }
+        />
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`5. renders correctly 1`] = `
+Array [
+  <View>
+    <Text>
+      test child content
+    </Text>
+  </View>,
+  ",",
+  <View />,
+]
+`;

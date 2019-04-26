@@ -1,18 +1,9 @@
-import React from "react";
-import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
-import MessageBar from "../src/message-bar";
+import MessageBarTests from "./message-bar.base";
+import MessageQueueTests from "./message-queue.base";
 
 export default () => {
-  const tests = [
-    {
-      name: "renders correctly",
-      test: () => {
-        const testInstance = TestRenderer.create(<MessageBar />);
+  const tests = [...MessageBarTests(), ...MessageQueueTests()];
 
-        expect(testInstance.toJSON()).toMatchSnapshot();
-      }
-    }
-  ];
   iterator(tests);
 };

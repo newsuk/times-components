@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. renders correctly 1`] = `<div />`;
+
+exports[`5. renders correctly 1`] = `
+Array [
+  <div>
+    <div>
+      test child content
+    </div>
+  </div>,
+  ",",
+  <div />,
+]
+`;

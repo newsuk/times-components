@@ -19,17 +19,18 @@ class MessageBar extends Component {
   }
 
   componentDidMount() {
-    this.animateOpen(() => {
-      this.setState({
-        timeout: setTimeout(() => {
-          this.animateClosed();
-        }, 3000)
-      });
+    const { delay } = this.props;
+
+    this.animateOpen(() => {});
+    this.setState({
+      timeout: setTimeout(() => {
+        this.animateClosed();
+      }, delay)
     });
   }
 
   componentWillReceiveProps(props) {
-    const { message } = props;
+    const { message, delay } = props;
     const { message: oldMessage } = this.props;
 
     if (message === oldMessage) {
@@ -38,7 +39,7 @@ class MessageBar extends Component {
       this.setState({
         timeout: setTimeout(() => {
           this.animateClosed();
-        }, 3000)
+        }, delay)
       });
     }
   }
@@ -46,16 +47,14 @@ class MessageBar extends Component {
   animateOpen(cb) {
     const { yValue } = this.state;
     Animated.spring(yValue, {
-      toValue: 1,
-      useNativeDriver: true
+      toValue: 1
     }).start(cb);
   }
 
   animateClosed(cb) {
     const { yValue } = this.state;
     Animated.spring(yValue, {
-      toValue: 0,
-      useNativeDriver: true
+      toValue: 0
     }).start(cb);
   }
 
@@ -108,6 +107,7 @@ class MessageBar extends Component {
 
 MessageBar.propTypes = {
   close: PropTypes.func.isRequired,
+  delay: PropTypes.number.isRequired,
   message: PropTypes.string.isRequired,
   scale: PropTypes.string.isRequired
 };

@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unused-state */
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
 import styleFactory from "./styles";
@@ -30,25 +30,36 @@ class MessageQueue extends Component {
   }
 
   render() {
-    const { scale, children } = this.props;
+    const { scale, children, delay } = this.props;
     const { message } = this.state;
     const styles = styleFactory(scale);
 
-    return [
-      <MessageContext.Provider value={this.state}>
-        {children}
-      </MessageContext.Provider>,
-      <View style={styles.MessageQueue}>
-        {message && <MessageBar close={this.removeMessage} message={message} />}
-      </View>
-    ];
+    return (
+      <Fragment>
+        <MessageContext.Provider value={this.state}>
+          {children}
+        </MessageContext.Provider>
+        ,
+        <View style={styles.MessageQueue}>
+          {message && (
+            <MessageBar
+              close={this.removeMessage}
+              delay={delay}
+              message={message}
+              scale={scale}
+            />
+          )}
+        </View>
+      </Fragment>
+    );
   }
 }
 
 {
-  const { string, element, arrayOf, oneOf } = PropTypes;
+  const { string, node, number } = PropTypes;
   MessageQueue.propTypes = {
-    children: oneOf([element, arrayOf(element)]).isRequired,
+    children: node.isRequired,
+    delay: number.isRequired,
     scale: string.isRequired
   };
 }
