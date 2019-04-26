@@ -1,5 +1,6 @@
 import React from "react";
 import { mount, shallow } from "enzyme";
+import TestRenderer from "react-test-renderer";
 import Link from "@times-components/link";
 import { iterator, delay } from "@times-components/test-utils";
 import SaveStarWeb from "../src/save-star-web";
@@ -10,6 +11,26 @@ jest.mock("../src/make-client-util", () =>
 
 export default () => {
   const tests = [
+    {
+      name: "saved star with saved status",
+      test: async () => {
+        const testInstance = TestRenderer.create(
+          <SaveStarWeb articleId="123" />
+        );
+        await delay(0);
+        expect(expect(testInstance).toMatchSnapshot());
+      }
+    },
+    {
+      name: "saved star with unsaved status",
+      test: async () => {
+        const testInstance = TestRenderer.create(
+          <SaveStarWeb articleId="765" />
+        );
+        await delay(0);
+        expect(expect(testInstance).toMatchSnapshot());
+      }
+    },
     {
       name:
         "Fetches saved articles for user and set in state and checks saved status",
@@ -33,7 +54,6 @@ export default () => {
         expect(wrapper.state("savedStatus")).toEqual(false);
       }
     },
-
     {
       name: "Clicks on save link to save",
       test: async () => {
