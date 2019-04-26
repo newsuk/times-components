@@ -12,5 +12,4 @@ LICENSE
 yarn.lock
 *.log
 rnw.js
-haul.config.js
 assets/

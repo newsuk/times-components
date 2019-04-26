@@ -6,7 +6,7 @@
     "build:js": "NODE_ENV=production haul bundle --platform ios --dev false --minimize true --entry-file js/index.ios.js --bundle-output ios-assets/js/index.ios.bundle --assets-dest ios-assets/res/",
     "build:meta": "cat package.json | grep version | head -1 | sed 's/[\",\t ]//g' | awk -F: '{ print \"Bundle Version: \" $2 }' > ios-assets/js/index.ios.bundle.meta",
     "build:all": "yarn build:js && yarn build:meta",
-    "start": "haul start --platform ios",
+    "start": "react-native start",
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff"
@@ -20,7 +20,6 @@
   },
   "devDependencies": {
     "metro-react-native-babel-preset": "0.53.1",
-    "haul": "1.0.0-rc.6",
     "prettier": "1.14.3",
     "webpack": "4.30.0"
   },
