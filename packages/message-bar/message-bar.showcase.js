@@ -6,7 +6,12 @@ export default {
   children: [
     {
       component: () => (
-        <MessageBar delay={3000} message="Test message" scale={scales.medium} />
+        <MessageBar
+          animate
+          delay={3000}
+          message="Test message"
+          scale={scales.medium}
+        />
       ),
       name: "MessageBar",
       type: "story"
