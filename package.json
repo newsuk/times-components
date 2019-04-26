@@ -33,7 +33,7 @@
     "storybook:test-build": "build-storybook -c .storybook -s ./dist/public",
     "storybook:publish": "./lib/publish_storybook.sh",
     "prestorybook-native": "rnstl && node ./lib/fetch-fonts",
-    "storybook-native": "storybook -c .storybook.native start -p 7007 --haul ./.storybook.native/webpack.haul.storybook.js --platform all",
+    "storybook-native": "react-native start --root .storybook.native",
     "preios": "yarn fetch-fonts && ./lib/fix-ios-storybook.sh",
     "ios": "react-native run-ios --no-packager",
     "ios:logs": "yarn ios && react-native log-ios",
