@@ -2,6 +2,17 @@ module.exports = () => ({
   mutate: () =>
     Promise.resolve({
       data: {
+        saveBookmarks: [
+          {
+            id: "123"
+          },
+          {
+            id: "456"
+          },
+          {
+            id: "567"
+          }
+        ],
         unsaveBookmarks: ["123"]
       }
     }),
@@ -18,7 +29,7 @@ module.exports = () => ({
                 id: "456"
               }
             ],
-            total: 4
+            total: 2
           }
         }
       },
