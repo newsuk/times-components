@@ -4,6 +4,7 @@ import TestRenderer from "react-test-renderer";
 import Link from "@times-components/link";
 import { iterator, delay } from "@times-components/test-utils";
 import SaveStarWeb from "../src/save-star-web";
+
 /* eslint-disable global-require */
 jest.mock("../src/make-client-util", () =>
   require("../__mocks__/make-client-util")
@@ -33,7 +34,7 @@ export default () => {
     },
     {
       name:
-        "Fetches saved articles for user and set in state and checks saved status",
+        "Fetches saved articles for user and set in state and checks saved status to true",
       test: async () => {
         const wrapper = mount(<SaveStarWeb articleId="123" />);
         await delay(0);
@@ -41,6 +42,31 @@ export default () => {
         expect(wrapper.state("savedStatus")).toEqual(true);
       }
     },
+    // {
+    //   name:
+    //     "Fetches saved article when no saved articles for the user, status is correctly set ",
+    //   test: async () => {
+    //     jest.mock("../src/make-client-util", () => ({
+    //       query: () =>
+    //       Promise.resolve({
+    //         data: {
+    //           viewer: {
+    //             bookmarks: {
+    //               bookmarks: [],
+    //               total: 0
+    //             }
+    //           }
+    //         },
+    //         loading: false
+    //       })
+    //     }));
+
+    //     const wrapper = mount(<SaveStarWeb articleId="123" />);
+    //     await delay(0);
+    //     expect(wrapper.state("savedArticles")).toEqual([]);
+    //     expect(wrapper.state("savedStatus")).toEqual(false);
+    //   }
+    // },
     {
       name: "Clicks on save link to unsave",
       test: async () => {
@@ -57,25 +83,6 @@ export default () => {
     {
       name: "Clicks on save link to save",
       test: async () => {
-        jest.mock("../src/make-client-util", () => ({
-          mutate: () =>
-            Promise.resolve({
-              data: {
-                saveBookmarks: [
-                  {
-                    id: "123"
-                  },
-                  {
-                    id: "456"
-                  },
-                  {
-                    id: "567"
-                  }
-                ]
-              }
-            })
-        }));
-
         const wrapper = shallow(<SaveStarWeb articleId="567" />);
         await delay(0);
         const event = Object.assign(jest.fn(), { preventDefault: () => {} });
@@ -87,5 +94,11 @@ export default () => {
       }
     }
   ];
+
+  afterEach(() => {
+    jest.resetModules();
+    jest.clearAllMocks();
+  });
+
   iterator(tests);
 };

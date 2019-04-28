@@ -52,7 +52,6 @@ class SaveStarWeb extends Component {
           const savedArticles = data.viewer.bookmarks.bookmarks.map(
             item => item.id
           );
-
           this.setState({
             loadingState: false,
             savedArticles,
@@ -66,12 +65,9 @@ class SaveStarWeb extends Component {
       });
   }
 
-  saveLink(
-    saveStatus,
-    articleId,
-    colour = styles.svgIcon.fillColour,
-    hoverColour = styles.svgIcon.hoverFillColour
-  ) {
+  saveLink(saveStatus) {
+    const { colour, hoverColour } = this.props;
+
     const saveStyle = getStyles({ saveStatus });
     const { fillColour, strokeColour } = saveStyle;
 
@@ -80,7 +76,7 @@ class SaveStarWeb extends Component {
       <Link
         onPress={e => {
           e.preventDefault();
-          this.bookmarkEvents(articleId);
+          this.bookmarkEvents();
         }}
         responsiveLinkStyles={styles.link}
       >
@@ -95,10 +91,11 @@ class SaveStarWeb extends Component {
     );
   }
 
-  saveBookmark(id) {
+  saveBookmark() {
     const client = makeClient();
     this.setState({ loadingState: true });
     const { savedArticles } = this.state;
+    const { articleId: id } = this.props;
 
     client
       .mutate({
@@ -120,9 +117,11 @@ class SaveStarWeb extends Component {
       });
   }
 
-  unsaveBookmark(id) {
+  unsaveBookmark() {
     const client = makeClient();
     const { savedArticles } = this.state;
+    const { articleId: id } = this.props;
+
     this.setState({ loadingState: true });
     client
       .mutate({
@@ -144,24 +143,24 @@ class SaveStarWeb extends Component {
       });
   }
 
-  bookmarkEvents(id) {
+  bookmarkEvents() {
     let newStatus = null;
+    const { articleId: id } = this.props;
     const { savedArticles } = this.state;
 
     if (savedArticles) {
       newStatus = !!savedArticles.find(item => item === id);
       if (newStatus) {
-        this.unsaveBookmark(id);
+        this.unsaveBookmark();
       } else {
-        this.saveBookmark(id);
+        this.saveBookmark();
       }
     } else {
-      this.saveBookmark(id);
+      this.saveBookmark();
     }
   }
 
   render() {
-    const { articleId, colour, hoverColour } = this.props;
     const { savedStatus, loadingState } = this.state;
 
     if (loadingState) {
@@ -169,10 +168,10 @@ class SaveStarWeb extends Component {
     }
 
     if (savedStatus) {
-      return this.saveLink(true, articleId, colour, hoverColour);
+      return this.saveLink(true);
     }
 
-    return this.saveLink(false, articleId, colour, hoverColour);
+    return this.saveLink(false);
   }
 }
 
