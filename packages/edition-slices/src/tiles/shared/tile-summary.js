@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View } from "react-native";
+import { View, Platform } from "react-native";
 import PropTypes from "prop-types";
 import ArticleSummary, {
   ArticleSummaryContent,
@@ -37,7 +37,10 @@ class TileSummary extends Component {
       starStyle
     } = this.props;
 
-    if (!withStar) {
+    if (!withStar || Platform.OS === "ios") {
+      if (expirableFlags && !expirableFlags.length) {
+        return null;
+      }
       return <ArticleFlags {...flagColour} flags={expirableFlags} />;
     }
 
