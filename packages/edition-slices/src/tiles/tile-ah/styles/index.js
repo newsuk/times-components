@@ -31,7 +31,7 @@ const styles = {
   imageContainer: {
     borderRadius: 9999,
     overflow: "hidden",
-    width: "30%"
+    width: "40%"
   },
   star: verticalStyles,
   strapline: {

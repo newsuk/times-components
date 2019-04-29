@@ -1,11 +1,3 @@
-export interface PaginateArgs {
-  cursor?: Cursor | null;
-
-  first?: number | null;
-
-  desc?: boolean | null;
-}
-
 export interface DateFilter {
   from: DateTime;
 
@@ -28,6 +20,8 @@ export interface ArticleInput {
   listingAsset?: MediaInput | null;
 
   authors: Slug[];
+
+  byline: Markup;
 
   bylines?: (BylineInput | null)[] | null;
 
@@ -71,6 +65,8 @@ export interface ArticleInput {
 
   standfirst?: string | null;
 
+  strapline?: string | null;
+
   updatedTime: DateTime;
 
   isLegacy: boolean;
@@ -110,12 +106,18 @@ export interface CropInput {
   width: number;
 
   height: number;
+
+  sourceWidth?: number | null;
+
+  sourceHeight?: number | null;
 }
 
 export interface VideoInput {
   id: Uuid;
 
   caption?: string | null;
+
+  title?: string | null;
 
   brightcovePolicyKey: string;
 
@@ -678,6 +680,14 @@ export interface InTheNewsSectionItemInput {
   inTheNews?: InTheNewsSliceInput | null;
 }
 
+export interface PaginateArgs {
+  cursor?: Cursor | null;
+
+  first?: number | null;
+
+  desc?: boolean | null;
+}
+
 export interface PuffMainLinkInput {
   tile?: TileInput | null;
 
@@ -711,7 +721,7 @@ export interface TopicInput {
 export interface TopicTagInput {
   id: Uuid;
 
-  thresholdScore: number;
+  scoreThreshold: number;
 }
 
 export interface TopicUpdateInput {
@@ -783,6 +793,10 @@ export enum TemplateType {
   Mainstandard = "mainstandard"
 }
 
+export enum EditionGroupOptions {
+  Date = "date"
+}
+
 export enum Display {
   Primary = "primary",
   Secondary = "secondary",
@@ -792,6 +806,12 @@ export enum Display {
 
 /** A lower kebab case string */
 export type Slug = any;
+
+/** Tiny integer (range of 0-255) */
+export type TinyInt = any;
+
+/** Unit interval type (0-1 decimal range) */
+export type UnitInterval = any;
 
 /** An AST representing cross platform UI */
 export type Markup = any;
@@ -815,12 +835,6 @@ export type Cursor = any;
 
 /** Represents a date and time of day in ISO 8601 */
 export type ShortDate = any;
-
-/** Tiny integer (range of 0-255) */
-export type TinyInt = any;
-
-/** Unit interval type (0-1 decimal range) */
-export type UnitInterval = any;
 
 /** An dictionary of string-based key-value pairs */
 export type Dictionary = any;
@@ -926,6 +940,8 @@ export interface AuthorArticles {
 export interface Article {
   /** Used for indepth templates to define the background colour to be used. */
   backgroundColour?: Colour | null;
+  /** An AST of one or more authors that may contain job titles and/or locations */
+  byline?: Markup | null;
   /** Text or structured bylines for one or more authors */
   bylines?: (ArticleByline | null)[] | null;
   /** The content for the article in the shape of an AST */
@@ -992,6 +1008,8 @@ export interface Article {
   slug?: string | null;
   /** A brief introductory summary, typically appearing immediately after theheadline and typographically distinct from the rest of the article */
   standfirst?: string | null;
+  /** A brief introductory summary, typically appearing immediately after the standfirst */
+  strapline?: string | null;
   /** A predefined truncated version of the article with a max length of the teaser,can optionally choose a shorter length. Use this to avoid ACS. */
   summary?: Markup | null;
   /** Used for indepth templates to define the text colour to be used. */
@@ -1008,6 +1026,10 @@ export interface Article {
   template?: TemplateType | null;
 
   tags?: ArticleTagConnection | null;
+
+  synonyms: ArticleSynonymConnection;
+
+  topicConnection: ArticleTopicConnection;
 }
 
 export interface Colour {
@@ -1015,13 +1037,13 @@ export interface Colour {
 }
 
 export interface Rgba {
-  red: number;
+  red: TinyInt;
 
-  green: number;
+  green: TinyInt;
 
-  blue: number;
+  blue: TinyInt;
 
-  alpha: number;
+  alpha: UnitInterval;
 }
 
 export interface TextByline extends Byline {
@@ -1049,6 +1071,14 @@ export interface Crop {
   ratio?: Ratio | null;
 
   url?: Url | null;
+
+  relativeHorizontalOffset?: UnitInterval | null;
+
+  relativeVerticalOffset?: UnitInterval | null;
+
+  relativeWidth?: UnitInterval | null;
+
+  relativeHeight?: UnitInterval | null;
 }
 
 export interface AuthorByline extends Byline {
@@ -1069,6 +1099,8 @@ export interface Video {
   id: Uuid;
 
   caption?: string | null;
+
+  title?: string | null;
 
   brightcovePolicyKey?: string | null;
 
@@ -1113,6 +1145,8 @@ export interface Topic {
 
   slug: Slug;
 
+  articleConnection: TopicArticleConnection;
+
   tagConnection: TopicTagConnection;
 
   createdAt?: DateTime | null;
@@ -1125,6 +1159,24 @@ export interface TopicArticles {
   count?: number | null;
   /** List of articles associated with that topic */
   list: Article[];
+}
+
+export interface TopicArticleConnection {
+  nodes: Article[];
+
+  pageInfo?: PageInfo | null;
+
+  totalCount?: number | null;
+}
+
+export interface PageInfo {
+  startCursor?: Cursor | null;
+
+  endCursor?: Cursor | null;
+
+  hasNextPage: boolean;
+
+  hasPreviousPage: boolean;
 }
 
 export interface TopicTagConnection {
@@ -1142,27 +1194,19 @@ export interface TopicTagEdge {
 
   cursor?: Cursor | null;
 
-  thresholdScore?: number | null;
+  scoreThreshold?: number | null;
 }
 
 export interface Tag {
   id: Uuid;
 
-  primarySynonymId: Uuid;
+  primarySynonym: Synonym;
 
   description?: string | null;
 
   synonyms: SynonymConnection;
 
   articles: TagArticleConnection;
-}
-
-export interface SynonymConnection {
-  nodes: (Synonym | null)[];
-
-  pageInfo: PageInfo;
-
-  totalCount: number;
 }
 
 export interface Synonym {
@@ -1175,14 +1219,12 @@ export interface Synonym {
   type: SynonymType;
 }
 
-export interface PageInfo {
-  startCursor?: Cursor | null;
+export interface SynonymConnection {
+  nodes: (Synonym | null)[];
 
-  endCursor?: Cursor | null;
+  pageInfo: PageInfo;
 
-  hasNextPage: boolean;
-
-  hasPreviousPage: boolean;
+  totalCount: number;
 }
 
 export interface TagArticleConnection {
@@ -1200,9 +1242,9 @@ export interface TagArticleEdge {
 
   cursor: Cursor;
 
-  score: number;
+  combinedScore: number;
 
-  originalScore?: number | null;
+  scoreOverride?: number | null;
 }
 
 export interface ArticleTagConnection {
@@ -1220,9 +1262,35 @@ export interface ArticleTagEdge {
 
   cursor: Cursor;
 
-  score: number;
+  combinedScore: number;
 
-  originalScore?: number | null;
+  scoreOverride?: number | null;
+}
+
+export interface ArticleSynonymConnection {
+  edges: (ArticleSynonymEdge | null)[];
+
+  nodes: (Synonym | null)[];
+
+  pageInfo: PageInfo;
+
+  totalCount: number;
+}
+
+export interface ArticleSynonymEdge {
+  node: Synonym;
+
+  cursor: Cursor;
+
+  score: number;
+}
+
+export interface ArticleTopicConnection {
+  nodes: Topic[];
+
+  pageInfo?: PageInfo | null;
+
+  totalCount?: number | null;
 }
 
 export interface Articles {
@@ -1341,6 +1409,10 @@ export interface Mutation {
   saveBookmarks: Bookmark[];
 
   unsaveBookmarks: Uuid[];
+}
+
+export interface ArticleTagUpsertResult {
+  id: Uuid;
 }
 
 export interface ArticleUpsertResult {
@@ -1832,8 +1904,6 @@ export interface TagQueryArgs {
 export interface TagsQueryArgs {
   ids?: Uuid[] | null;
 
-  articleId?: Uuid | null;
-
   cursor?: Cursor | null;
 
   first?: number | null;
@@ -1843,6 +1913,8 @@ export interface TagsQueryArgs {
   dateFilter?: DateFilter | null;
 
   term?: string | null;
+
+  isOverflow?: boolean | null;
 }
 export interface TopicQueryArgs {
   slug?: Slug | null;
@@ -1873,7 +1945,25 @@ export interface TopicsArticleArgs {
   maxCount?: number | null;
 }
 export interface TagsArticleArgs {
-  paginateArgs?: PaginateArgs | null;
+  cursor?: Cursor | null;
+
+  first?: number | null;
+
+  desc?: boolean | null;
+}
+export interface SynonymsArticleArgs {
+  cursor?: Cursor | null;
+
+  first?: number | null;
+
+  desc?: boolean | null;
+}
+export interface TopicConnectionArticleArgs {
+  cursor?: Cursor | null;
+
+  first?: number | null;
+
+  desc?: boolean | null;
 }
 export interface CropImageArgs {
   ratio: Ratio;
@@ -1881,8 +1971,19 @@ export interface CropImageArgs {
 export interface TeaserTileArgs {
   maxCharCount?: number | null;
 }
+export interface ArticleConnectionTopicArgs {
+  cursor?: Cursor | null;
+
+  first?: number | null;
+
+  desc?: boolean | null;
+}
 export interface TagConnectionTopicArgs {
-  options?: PaginateArgs | null;
+  cursor?: Cursor | null;
+
+  first?: number | null;
+
+  desc?: boolean | null;
 }
 export interface ListTopicArticlesArgs {
   /** The maximum number of articles you want to take, defaults to 10 */
@@ -1891,10 +1992,18 @@ export interface ListTopicArticlesArgs {
   skip?: number | null;
 }
 export interface SynonymsTagArgs {
-  options?: PaginateArgs | null;
+  cursor?: Cursor | null;
+
+  first?: number | null;
+
+  desc?: boolean | null;
 }
 export interface ArticlesTagArgs {
-  options?: PaginateArgs | null;
+  cursor?: Cursor | null;
+
+  first?: number | null;
+
+  desc?: boolean | null;
 }
 export interface ListArticlesArgs {
   /** The maximum number of articles you want to take, defaults to 10 */
@@ -1907,6 +2016,8 @@ export interface ListEditionsPagedArgs {
   first?: number | null;
   /** The number of editions to skip over, useful for paging, defaults to 0 */
   skip?: number | null;
+  /** Grouping options, useful to deduplicate results */
+  group?: EditionGroupOptions | null;
 }
 export interface SpotimCodeBUserArgs {
   codeA: string;
