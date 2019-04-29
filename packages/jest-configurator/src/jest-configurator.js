@@ -53,7 +53,7 @@ const platformCode = platform => {
 };
 
 export default (platform, cwd, options = {}) => {
-  const { coverageIgnoreGlobs = [], setupTestFrameworkScriptFile } = options;
+  const { coverageIgnoreGlobs = [], setupFilesAfterEnv } = options;
   const [local, global] = findNodeModules(cwd);
   const module = path.resolve(cwd, local.replace("node_modules", ""));
   const rootDir = path.resolve(
@@ -70,7 +70,8 @@ export default (platform, cwd, options = {}) => {
     coveragePathIgnorePatterns: coverageIgnoreGlobs,
     modulePathIgnorePatterns: [
       "node_modules/haul/node_modules/react/",
-      "node_modules/redbox-react/node_modules/react/"
+      "node_modules/redbox-react/node_modules/react/",
+      "node_modules/@storybook/"
     ],
     preset: "react-native",
     rootDir,
@@ -94,8 +95,8 @@ export default (platform, cwd, options = {}) => {
     ]
   };
 
-  if (setupTestFrameworkScriptFile) {
-    config.setupTestFrameworkScriptFile = setupTestFrameworkScriptFile;
+  if (setupFilesAfterEnv) {
+    config.setupFilesAfterEnv = setupFilesAfterEnv;
   }
 
   return config;
