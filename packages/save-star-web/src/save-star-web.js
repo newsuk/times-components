@@ -11,7 +11,6 @@ import {
 } from "@times-components/provider-queries";
 import { IconSaveBookmark } from "@times-components/icons";
 import styles, { getStyles } from "./styles";
-import makeClient from "./make-client-util";
 
 const HoverIcon =
   styled.div &&
@@ -33,17 +32,17 @@ class SaveStarWeb extends Component {
   }
 
   componentDidMount() {
-    const { articleId } = this.props;
+    const { articleId, saveApi } = this.props;
 
     if (typeof window === "undefined") {
       this.setState({ loadingState: false });
     }
 
-    const client = makeClient();
-
-    client
-      .query({ query: getBookmarks })
+    // client
+    //   .query({ query: getBookmarks })
+    saveApi.getBookmarks()
       .then(response => {
+        console.log("CDM response:", response);
         const { loading, data } = response;
         if (loading) {
           this.setState({ loadingState: true });
@@ -92,18 +91,20 @@ class SaveStarWeb extends Component {
   }
 
   saveBookmark() {
-    const client = makeClient();
+    // const { client } = this.props;
+    const { saveApi } = this.props;
     this.setState({ loadingState: true });
     const { savedArticles } = this.state;
     const { articleId: id } = this.props;
 
-    client
-      .mutate({
-        mutation: saveBookmarks,
-        variables: {
-          id
-        }
-      })
+    // client
+    //   .mutate({
+    //     mutation: saveBookmarks,
+    //     variables: {
+    //       id
+    //     }
+    //   })
+    saveApi.bookmark(id)
       .then(() => {
         this.setState({
           loadingState: false,
@@ -118,18 +119,20 @@ class SaveStarWeb extends Component {
   }
 
   unsaveBookmark() {
-    const client = makeClient();
+    // const { client } = this.props;
+    const { saveApi } = this.props;
     const { savedArticles } = this.state;
     const { articleId: id } = this.props;
 
     this.setState({ loadingState: true });
-    client
-      .mutate({
-        mutation: unsaveBookmarks,
-        variables: {
-          id
-        }
-      })
+    // client
+    //   .mutate({
+    //     mutation: unsaveBookmarks,
+    //     variables: {
+    //       id
+    //     }
+    //   })
+    saveApi.unbookmark(id)
       .then(() => {
         this.setState({
           loadingState: false,
@@ -163,6 +166,7 @@ class SaveStarWeb extends Component {
   render() {
     const { savedStatus, loadingState } = this.state;
 
+    console.log("RenderStar:", savedStatus, "loading:", loadingState);
     if (loadingState) {
       return <ActivityIndicator size="small" />;
     }
