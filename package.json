@@ -47,7 +47,7 @@
     "android:build-lib": "lerna run --scope @times-components/android-app build:all --stream",
     "android:device": "./lib/setup_device_connections.sh && yarn android",
     "android:publish-lib": "lerna run --scope @times-components/android-app publish-library --stream",
-    "prefmt": "prettier --write '**/*.*'",
+    "prefmt": "prettier --write '**/*.{js,json}'",
     "fmt": "lerna run fmt",
     "cinstall": "./lib/custom_install.sh",
     "bundle": "lerna run bundle",
