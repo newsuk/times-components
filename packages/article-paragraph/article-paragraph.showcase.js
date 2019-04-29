@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import Context from "@times-components/context";
+import { ContextProviderWithDefaults } from "@times-components/context";
 import coreRenderers from "@times-components/markup";
 import { renderTree } from "@times-components/markup-forest";
 import { sections } from "@times-components/storybook";
@@ -16,7 +16,7 @@ const renderParagraphWithScale = (select, ast) => {
   const theme = themeFactory(section, "magazinestandard");
 
   return (
-    <Context.Provider value={{ theme: { scale } }}>
+    <ContextProviderWithDefaults value={{ theme: { scale } }}>
       {renderTree(ast, {
         ...coreRenderers,
         paragraph(key, attributes, children, indx, node) {
@@ -35,7 +35,7 @@ const renderParagraphWithScale = (select, ast) => {
           };
         }
       })}
-    </Context.Provider>
+    </ContextProviderWithDefaults>
   );
 };
 

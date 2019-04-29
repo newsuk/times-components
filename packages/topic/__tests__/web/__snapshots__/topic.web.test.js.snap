@@ -4,6 +4,20 @@ exports[`1. an error page 1`] = `<ArticleListPageError />`;
 
 exports[`2. a loading state 1`] = `
 <topicArticlesProvider>
+  <Helmet>
+    <title>
+      
+       | The Times & The Sunday Times
+    </title>
+    <meta
+      content="Discover expert  articles from The Times and The Sunday Times."
+      name="description"
+    />
+    <link
+      href="/topic/some-slug"
+      rel="canonical"
+    />
+  </Helmet>
   <ArticleList
     articleListHeader={
       <TopicHead
@@ -32,6 +46,20 @@ exports[`2. a loading state 1`] = `
 
 exports[`3. an article list 1`] = `
 <topicArticlesProvider>
+  <Helmet>
+    <title>
+      Test Name
+       | The Times & The Sunday Times
+    </title>
+    <meta
+      content="Discover expert Test Name articles from The Times and The Sunday Times."
+      name="description"
+    />
+    <link
+      href="/topic/some-slug"
+      rel="canonical"
+    />
+  </Helmet>
   <ArticleList
     articleListHeader={
       <TopicHead
@@ -104,6 +132,20 @@ exports[`3. an article list 1`] = `
 
 exports[`4. fetches more articles 1`] = `
 <topicArticlesProvider>
+  <Helmet>
+    <title>
+      Test Name
+       | The Times & The Sunday Times
+    </title>
+    <meta
+      content="Discover expert Test Name articles from The Times and The Sunday Times."
+      name="description"
+    />
+    <link
+      href="/topic/some-slug"
+      rel="canonical"
+    />
+  </Helmet>
   <ArticleList
     articleListHeader={
       <TopicHead
@@ -181,6 +223,20 @@ exports[`4. fetches more articles 1`] = `
 
 exports[`5. fetches more articles and falls back to previous data if no more 1`] = `
 <topicArticlesProvider>
+  <Helmet>
+    <title>
+      Test Name
+       | The Times & The Sunday Times
+    </title>
+    <meta
+      content="Discover expert Test Name articles from The Times and The Sunday Times."
+      name="description"
+    />
+    <link
+      href="/topic/some-slug"
+      rel="canonical"
+    />
+  </Helmet>
   <ArticleList
     articleListHeader={
       <TopicHead

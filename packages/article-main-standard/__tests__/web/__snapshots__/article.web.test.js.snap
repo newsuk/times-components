@@ -2,6 +2,58 @@
 
 exports[`1. an article 1`] = `
 <article>
+  <Helmet>
+    <title>
+      Some Headline
+       | 
+      
+      The Times
+    </title>
+    <meta
+      content="Some Headline"
+      name="article:title"
+    />
+    <meta
+      content="The Times"
+      name="article:publication"
+    />
+    <meta
+      content="Some byline"
+      name="author"
+    />
+    <meta
+      content="Some Headline"
+      property="og:title"
+    />
+    <meta
+      content="article"
+      property="og:type"
+    />
+    <meta
+      content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+      property="og:url"
+    />
+    <meta
+      content="https://crop169.io"
+      property="og:image"
+    />
+    <meta
+      content="Some Headline"
+      name="twitter:title"
+    />
+    <meta
+      content="summary_large_image"
+      name="twitter:card"
+    />
+    <meta
+      content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+      name="twitter:url"
+    />
+    <meta
+      content="https://crop169.io"
+      name="twitter:image"
+    />
+  </Helmet>
   <div>
     <Ad
       contextUrl="https://url.io"
@@ -193,6 +245,46 @@ exports[`3. an error 1`] = `null`;
 
 exports[`4. an article with no headline falls back to use shortheadline 1`] = `
 <article>
+  <Helmet>
+    <title>
+      Some Short Headline
+       | 
+      
+      The Times
+    </title>
+    <meta
+      content="Some Short Headline"
+      name="article:title"
+    />
+    <meta
+      content="The Times"
+      name="article:publication"
+    />
+    <meta
+      content="Some Short Headline"
+      property="og:title"
+    />
+    <meta
+      content="article"
+      property="og:type"
+    />
+    <meta
+      content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+      property="og:url"
+    />
+    <meta
+      content="Some Short Headline"
+      name="twitter:title"
+    />
+    <meta
+      content="summary_large_image"
+      name="twitter:card"
+    />
+    <meta
+      content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+      name="twitter:url"
+    />
+  </Helmet>
   <div>
     <Ad
       contextUrl="https://url.io"
@@ -242,6 +334,46 @@ exports[`4. an article with no headline falls back to use shortheadline 1`] = `
 
 exports[`5. an article with ads 1`] = `
 <article>
+  <Helmet>
+    <title>
+      Some Headline
+       | 
+      
+      The Times
+    </title>
+    <meta
+      content="Some Headline"
+      name="article:title"
+    />
+    <meta
+      content="The Times"
+      name="article:publication"
+    />
+    <meta
+      content="Some Headline"
+      property="og:title"
+    />
+    <meta
+      content="article"
+      property="og:type"
+    />
+    <meta
+      content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+      property="og:url"
+    />
+    <meta
+      content="Some Headline"
+      name="twitter:title"
+    />
+    <meta
+      content="summary_large_image"
+      name="twitter:card"
+    />
+    <meta
+      content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+      name="twitter:url"
+    />
+  </Helmet>
   <div>
     <Ad
       contextUrl="https://url.io"

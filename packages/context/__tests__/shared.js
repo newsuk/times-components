@@ -1,7 +1,10 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
 import { scales } from "@times-components/styleguide";
-import Context, { SectionContext } from "../src/context";
+import Context, {
+  ContextProviderWithDefaults,
+  SectionContext
+} from "../src/context";
 
 export default () => {
   it("article context with default values", () => {
@@ -56,5 +59,23 @@ export default () => {
     );
 
     expect(testInstance).toMatchSnapshot();
+  });
+
+  describe("ContextProviderWithDefaults", () => {
+    it("adds defaults to the provided context", () => {
+      const scale = scales.large;
+      const sectionColour = "#FFFFFF";
+      const testInstance = TestRenderer.create(
+        <ContextProviderWithDefaults
+          value={{ theme: { scale, sectionColour } }}
+        >
+          <Context.Consumer>
+            {context => JSON.stringify(context)}
+          </Context.Consumer>
+        </ContextProviderWithDefaults>
+      );
+
+      expect(testInstance).toMatchSnapshot();
+    });
   });
 };

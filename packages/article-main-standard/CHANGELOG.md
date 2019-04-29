@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@1.2.10...@times-components/article-main-standard@2.0.0) (2019-04-29)
+
+
+* BREAKING CHANGE feat: manage meta tags in times-components  (#1897) ([e2dffc8](https://github.com/newsuk/times-components/commit/e2dffc8)), closes [#1897](https://github.com/newsuk/times-components/issues/1897)
+
+
+### BREAKING CHANGES
+
+* feat: add makeTopicUrl
+
+* feat: move existing topic render tags over to times-components
+
+* feat: move existing author-profile render tags over to times-components
+
+* feat: move exmost article render tags over to times-components
+
+* chore: snaps
+
+* fix: usde short headline if headline not available
+
+* fix: deps
+
+* fix: lint
+
+* fix: lint
+
+* chore: article url should be consistent with topic url
+
+
+
+
+
 ## [1.2.10](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@1.2.9...@times-components/article-main-standard@1.2.10) (2019-04-24)
 
 **Note:** Version bump only for package @times-components/article-main-standard

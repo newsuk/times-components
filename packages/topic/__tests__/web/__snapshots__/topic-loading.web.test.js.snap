@@ -2,6 +2,20 @@
 
 exports[`1. an article list loading 1`] = `
 <topicArticlesProvider>
+  <Helmet>
+    <title>
+      
+       | The Times & The Sunday Times
+    </title>
+    <meta
+      content="Discover expert  articles from The Times and The Sunday Times."
+      name="description"
+    />
+    <link
+      href="/topic/some-slug"
+      rel="canonical"
+    />
+  </Helmet>
   <ArticleList
     articleListHeader={
       <TopicHead

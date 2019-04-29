@@ -1,0 +1,140 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Head outputs correct metadata 1`] = `
+<Helmet>
+  <title>
+    Some Headline
+     | 
+    Comment | 
+    The Times
+  </title>
+  <meta
+    content="Some Headline"
+    name="article:title"
+  />
+  <meta
+    content="The Times"
+    name="article:publication"
+  />
+  <meta
+    content="Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4"
+    name="description"
+  />
+  <meta
+    content="Some byline"
+    name="author"
+  />
+  <meta
+    content="Some Headline"
+    property="og:title"
+  />
+  <meta
+    content="article"
+    property="og:type"
+  />
+  <meta
+    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    property="og:url"
+  />
+  <meta
+    content="Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4"
+    property="og:description"
+  />
+  <meta
+    content="https://crop169.io"
+    property="og:image"
+  />
+  <meta
+    content="Some Headline"
+    name="twitter:title"
+  />
+  <meta
+    content="summary_large_image"
+    name="twitter:card"
+  />
+  <meta
+    content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+    name="twitter:url"
+  />
+  <meta
+    content="Boris Johnson’s sister an ex-BBC broadcaster and John Major’s health secretary will stand for Change UK in next month’s European elections.The pro-Remain party announced its MEP hopefuls from almost 4"
+    name="twitter:description"
+  />
+  <meta
+    content="https://crop169.io"
+    name="twitter:image"
+  />
+</Helmet>
+`;
+
+exports[`Head removes section from title if there are no tiles 1`] = `
+Array [
+  "Some Headline",
+  " | ",
+  "",
+  "The Times",
+]
+`;
+
+exports[`Head removes section from title if there are no tiles with sections 1`] = `
+Array [
+  "Some Headline",
+  " | ",
+  "",
+  "The Times",
+]
+`;
+
+exports[`Head shows Sunday Times in title if publication is SUNDAYTIMES 1`] = `
+Array [
+  "Some Headline",
+  " | ",
+  "Comment | ",
+  "The Sunday Times",
+]
+`;
+
+exports[`Head shows Times in title if publication is TIMES 1`] = `
+Array [
+  "Some Headline",
+  " | ",
+  "Comment | ",
+  "The Times",
+]
+`;
+
+exports[`Head uses news in title if news is the only available section 1`] = `
+Array [
+  "Some Headline",
+  " | ",
+  "News | ",
+  "The Times",
+]
+`;
+
+exports[`Head uses news in title if news is the only available section 2`] = `
+Array [
+  "Some Headline",
+  " | ",
+  "News | ",
+  "The Times",
+]
+`;
+
+exports[`Head uses short headline if headline not available 1`] = `
+Array [
+  "short headline",
+  " | ",
+  "Comment | ",
+  "The Times",
+]
+`;
+
+exports[`Head uses the first non-news section in title 1`] = `
+Array [
+  "Some Headline",
+  " | ",
+  "Comment | ",
+  "The Times",
+]
+`;

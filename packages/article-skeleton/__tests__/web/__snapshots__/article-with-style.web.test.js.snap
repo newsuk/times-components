@@ -302,6 +302,7 @@ exports[`full article with style 1`] = `
 </style>
 
 <article>
+  <Head />
   <div
     className="c0 S1"
   >

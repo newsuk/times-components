@@ -1,6 +1,6 @@
 {
   "maxAttributes": 11,
-  "maxAttributeStringLength": 36,
+  "maxAttributeStringLength": 200,
   "maxFileSize": 23725,
   "maxLines": 780
 }

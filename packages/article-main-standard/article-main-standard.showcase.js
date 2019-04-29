@@ -1,7 +1,10 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import articleAdConfig from "@times-components/ad/fixtures/article-ad-config.json";
-import Context, { defaults } from "@times-components/context";
+import {
+  ContextProviderWithDefaults,
+  defaults
+} from "@times-components/context";
 import { ArticleProvider } from "@times-components/provider";
 import {
   article as makeParams,
@@ -13,11 +16,6 @@ import { scales, themeFactory } from "@times-components/styleguide";
 import Responsive from "@times-components/responsive";
 import storybookReporter from "@times-components/tealium-utils";
 import Article from "./src/article-main-standard";
-
-const makeArticleUrl = ({ slug, shortIdentifier }) =>
-  slug && shortIdentifier
-    ? `https://www.thetimes.co.uk/article/${slug}-${shortIdentifier}`
-    : "";
 
 const preventDefaultedAction = decorateAction =>
   decorateAction([
@@ -40,9 +38,8 @@ const renderArticle = ({
   <Responsive>
     <ArticleProvider debounceTimeMs={0} id={id}>
       {({ article, isLoading, error, refetch }) => (
-        <Context.Provider
+        <ContextProviderWithDefaults
           value={{
-            makeArticleUrl,
             theme: {
               ...themeFactory(section, templateName),
               scale: scale || defaults.theme.scale
@@ -82,7 +79,7 @@ const renderArticle = ({
             )}
             refetch={refetch}
           />
-        </Context.Provider>
+        </ContextProviderWithDefaults>
       )}
     </ArticleProvider>
   </Responsive>

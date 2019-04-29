@@ -44,9 +44,9 @@ const makeClient = options => {
   });
 };
 
-const renderData = App =>
-  getDataFromTree(App).then(() => {
-    AppRegistry.registerComponent("App", () => () => App);
+const renderData = (app, helmetContext = {}) =>
+  getDataFromTree(app).then(() => {
+    AppRegistry.registerComponent("App", () => () => app);
 
     const { element, getStyleElement } = AppRegistry.getApplication("App");
     const serverStylesheet = new ServerStyleSheet();
@@ -58,15 +58,32 @@ const renderData = App =>
     const responsiveStyles = serverStylesheet.getStyleTags();
     const styles = ReactDOMServer.renderToStaticMarkup(getStyleElement());
 
-    return { markup, responsiveStyles, styles };
+    const { helmet } = helmetContext;
+    const headMarkup = helmet
+      ? ["title", "meta", "link"].reduce(
+          (head, key) => head + helmet[key].toString(),
+          ""
+        )
+      : "";
+
+    return {
+      headMarkup,
+      markup,
+      responsiveStyles,
+      styles
+    };
   });
 
 module.exports = async (component, options) => {
+  const helmetContext = {};
   const client = makeClient(options.client);
   const analyticsStream = () => {};
-  const App = component(client, analyticsStream, options.data);
+  const app = component(client, analyticsStream, options.data, helmetContext);
 
-  const { markup, responsiveStyles, styles } = await renderData(App);
+  const { headMarkup, markup, responsiveStyles, styles } = await renderData(
+    app,
+    helmetContext
+  );
 
   const props = safeStringify(options.data);
   const initialProps = `<script>window.nuk['${
@@ -77,6 +94,7 @@ module.exports = async (component, options) => {
   const initialState = `<script>window.__APOLLO_STATE__ = ${state};</script>`;
 
   return {
+    headMarkup,
     initialProps,
     initialState,
     markup,
