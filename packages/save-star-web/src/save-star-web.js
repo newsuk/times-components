@@ -4,11 +4,6 @@ import { ActivityIndicator } from "react-native";
 import Link from "@times-components/link";
 import styled from "styled-components";
 import PropTypes from "prop-types";
-import {
-  getBookmarks,
-  saveBookmarks,
-  unsaveBookmarks
-} from "@times-components/provider-queries";
 import { IconSaveBookmark } from "@times-components/icons";
 import styles, { getStyles } from "./styles";
 
@@ -37,12 +32,9 @@ class SaveStarWeb extends Component {
     if (typeof window === "undefined") {
       this.setState({ loadingState: false });
     }
-
-    // client
-    //   .query({ query: getBookmarks })
-    saveApi.getBookmarks()
+    saveApi
+      .getBookmarks()
       .then(response => {
-        console.log("CDM response:", response);
         const { loading, data } = response;
         if (loading) {
           this.setState({ loadingState: true });
@@ -91,20 +83,12 @@ class SaveStarWeb extends Component {
   }
 
   saveBookmark() {
-    // const { client } = this.props;
-    const { saveApi } = this.props;
     this.setState({ loadingState: true });
     const { savedArticles } = this.state;
-    const { articleId: id } = this.props;
+    const { articleId: id, saveApi } = this.props;
 
-    // client
-    //   .mutate({
-    //     mutation: saveBookmarks,
-    //     variables: {
-    //       id
-    //     }
-    //   })
-    saveApi.bookmark(id)
+    saveApi
+      .bookmark(id)
       .then(() => {
         this.setState({
           loadingState: false,
@@ -119,20 +103,13 @@ class SaveStarWeb extends Component {
   }
 
   unsaveBookmark() {
-    // const { client } = this.props;
-    const { saveApi } = this.props;
     const { savedArticles } = this.state;
-    const { articleId: id } = this.props;
+    const { articleId: id, saveApi } = this.props;
 
     this.setState({ loadingState: true });
-    // client
-    //   .mutate({
-    //     mutation: unsaveBookmarks,
-    //     variables: {
-    //       id
-    //     }
-    //   })
-    saveApi.unbookmark(id)
+
+    saveApi
+      .unBookmark(id)
       .then(() => {
         this.setState({
           loadingState: false,
@@ -166,7 +143,6 @@ class SaveStarWeb extends Component {
   render() {
     const { savedStatus, loadingState } = this.state;
 
-    console.log("RenderStar:", savedStatus, "loading:", loadingState);
     if (loadingState) {
       return <ActivityIndicator size="small" />;
     }
@@ -182,7 +158,8 @@ class SaveStarWeb extends Component {
 SaveStarWeb.propTypes = {
   articleId: PropTypes.string.isRequired,
   colour: PropTypes.string,
-  hoverColour: PropTypes.string
+  hoverColour: PropTypes.string,
+  saveApi: PropTypes.func.isRequired
 };
 
 SaveStarWeb.defaultProps = {

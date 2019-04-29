@@ -4,11 +4,7 @@ import TestRenderer from "react-test-renderer";
 import Link from "@times-components/link";
 import { iterator, delay } from "@times-components/test-utils";
 import SaveStarWeb from "../src/save-star-web";
-
-/* eslint-disable global-require */
-jest.mock("../src/make-client-util", () =>
-  require("../__mocks__/make-client-util")
-);
+import mockSaveApi from "../mock-save-api";
 
 export default () => {
   const tests = [
@@ -16,7 +12,10 @@ export default () => {
       name: "saved star with saved status",
       test: async () => {
         const testInstance = TestRenderer.create(
-          <SaveStarWeb articleId="123" />
+          <SaveStarWeb
+            articleId="5504b5a8-b1c0-11e8-a553-a0ee9be48bc6"
+            saveApi={mockSaveApi}
+          />
         );
         await delay(0);
         expect(expect(testInstance).toMatchSnapshot());
@@ -26,7 +25,10 @@ export default () => {
       name: "saved star with unsaved status",
       test: async () => {
         const testInstance = TestRenderer.create(
-          <SaveStarWeb articleId="765" />
+          <SaveStarWeb
+            articleId="6604b5a8-b1c0-11e8-a553-a0ee9be48bc6"
+            saveApi={mockSaveApi}
+          />
         );
         await delay(0);
         expect(expect(testInstance).toMatchSnapshot());
@@ -36,9 +38,17 @@ export default () => {
       name:
         "Fetches saved articles for user and set in state and checks saved status to true",
       test: async () => {
-        const wrapper = mount(<SaveStarWeb articleId="123" />);
+        const wrapper = mount(
+          <SaveStarWeb
+            articleId="96508c84-6611-11e9-adc2-05e1b87efaea"
+            saveApi={mockSaveApi}
+          />
+        );
         await delay(0);
-        expect(wrapper.state("savedArticles")).toEqual(["123", "456"]);
+        expect(wrapper.state("savedArticles")).toEqual([
+          "96508c84-6611-11e9-adc2-05e1b87efaea",
+          "5504b5a8-b1c0-11e8-a553-a0ee9be48bc6"
+        ]);
         expect(wrapper.state("savedStatus")).toEqual(true);
       }
     },
@@ -70,35 +80,46 @@ export default () => {
     {
       name: "Clicks on save link to unsave",
       test: async () => {
-        const wrapper = shallow(<SaveStarWeb articleId="123" />);
+        const wrapper = shallow(
+          <SaveStarWeb
+            articleId="96508c84-6611-11e9-adc2-05e1b87efaea"
+            saveApi={mockSaveApi}
+          />
+        );
         await delay(0);
         const event = Object.assign(jest.fn(), { preventDefault: () => {} });
         wrapper.find(Link).simulate("press", event);
         await delay(0);
 
-        expect(wrapper.state("savedArticles")).toEqual(["456"]);
+        expect(wrapper.state("savedArticles")).toEqual([
+          "5504b5a8-b1c0-11e8-a553-a0ee9be48bc6"
+        ]);
         expect(wrapper.state("savedStatus")).toEqual(false);
       }
     },
     {
       name: "Clicks on save link to save",
       test: async () => {
-        const wrapper = shallow(<SaveStarWeb articleId="567" />);
+        const wrapper = shallow(
+          <SaveStarWeb
+            articleId="9bd029d2-49a1-11e9-b472-f58a50a13bbb"
+            saveApi={mockSaveApi}
+          />
+        );
         await delay(0);
         const event = Object.assign(jest.fn(), { preventDefault: () => {} });
         wrapper.find(Link).simulate("press", event);
         await delay(0);
 
-        expect(wrapper.state("savedArticles")).toEqual(["123", "456", "567"]);
+        expect(wrapper.state("savedArticles")).toEqual([
+          "96508c84-6611-11e9-adc2-05e1b87efaea",
+          "5504b5a8-b1c0-11e8-a553-a0ee9be48bc6",
+          "9bd029d2-49a1-11e9-b472-f58a50a13bbb"
+        ]);
         expect(wrapper.state("savedStatus")).toEqual(true);
       }
     }
   ];
-
-  afterEach(() => {
-    jest.resetModules();
-    jest.clearAllMocks();
-  });
 
   iterator(tests);
 };
