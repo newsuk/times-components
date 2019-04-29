@@ -1,7 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Sunday Times magazine section 1`] = `
-<RCTScrollView>
+<RCTScrollView
+  style={
+    Object {
+      "paddingTop": 20,
+    }
+  }
+>
   <View>
     <View>
       <View
@@ -78,7 +84,13 @@ exports[`Sunday Times magazine section 1`] = `
 `;
 
 exports[`Times magazine section 1`] = `
-<RCTScrollView>
+<RCTScrollView
+  style={
+    Object {
+      "paddingTop": 20,
+    }
+  }
+>
   <View>
     <View>
       <View
@@ -232,7 +244,13 @@ exports[`puzzle bar with one puzzle 1`] = `
 `;
 
 exports[`section page 1`] = `
-<RCTScrollView>
+<RCTScrollView
+  style={
+    Object {
+      "paddingTop": 20,
+    }
+  }
+>
   <View>
     <View>
       <LeadOneAndFourSlice />
