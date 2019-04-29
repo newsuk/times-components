@@ -52,31 +52,36 @@ export default () => {
         expect(wrapper.state("savedStatus")).toEqual(true);
       }
     },
-    // {
-    //   name:
-    //     "Fetches saved article when no saved articles for the user, status is correctly set ",
-    //   test: async () => {
-    //     jest.mock("../src/make-client-util", () => ({
-    //       query: () =>
-    //       Promise.resolve({
-    //         data: {
-    //           viewer: {
-    //             bookmarks: {
-    //               bookmarks: [],
-    //               total: 0
-    //             }
-    //           }
-    //         },
-    //         loading: false
-    //       })
-    //     }));
+    {
+      name:
+        "Fetches saved article when no saved articles for the user, status is correctly set ",
+      test: async () => {
+        const saveApi = {
+          getBookmarks: () =>
+            Promise.resolve({
+              data: {
+                viewer: {
+                  bookmarks: {
+                    bookmarks: [],
+                    total: 0
+                  }
+                }
+              },
+              loading: false
+            })
+        };
 
-    //     const wrapper = mount(<SaveStarWeb articleId="123" />);
-    //     await delay(0);
-    //     expect(wrapper.state("savedArticles")).toEqual([]);
-    //     expect(wrapper.state("savedStatus")).toEqual(false);
-    //   }
-    // },
+        const wrapper = mount(
+          <SaveStarWeb
+            articleId="96508c84-6611-11e9-adc2-05e1b87efaea"
+            saveApi={saveApi}
+          />
+        );
+        await delay(0);
+        expect(wrapper.state("savedArticles")).toEqual([]);
+        expect(wrapper.state("savedStatus")).toEqual(false);
+      }
+    },
     {
       name: "Clicks on save link to unsave",
       test: async () => {

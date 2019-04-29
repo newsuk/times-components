@@ -3,7 +3,7 @@ import {
   saveBookmarks,
   unsaveBookmarks
 } from "@times-components/provider-queries";
-import makeClient from "./make-client-util";
+import makeClient from "./src/make-client-util";
 
 const client = makeClient();
 export default {

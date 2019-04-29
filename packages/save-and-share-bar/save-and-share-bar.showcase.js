@@ -1,4 +1,5 @@
 import React from "react";
+import saveApi from "@times-components/save-star-web/mock-save-api";
 import SaveAndShareBar from "./src/save-and-share-bar";
 
 export default {
@@ -10,8 +11,7 @@ export default {
           articleHeadline="test-headline"
           articleUrl="article-url-test"
           onCopyLink={() => {}}
-          onSaveToMyArticles={() => {}}
-          onShareOnEmail={() => {}}
+          saveApi={saveApi}
         />
       ),
       name: "Save snd Share bar",
