@@ -1,7 +1,7 @@
 import React from "react";
 import { AppRegistry } from "react-native-web";
 import TestRenderer from "react-test-renderer";
-import Context from "@times-components/context";
+import { ContextProviderWithDefaults } from "@times-components/context";
 import {
   addSerializers,
   compose,
@@ -59,9 +59,9 @@ it("key facts with title and context theme", () => {
   const sectionColour = "#FFFFFF";
 
   const testInstance = TestRenderer.create(
-    <Context.Provider value={{ theme: { scale, sectionColour } }}>
+    <ContextProviderWithDefaults value={{ theme: { scale, sectionColour } }}>
       <KeyFacts ast={data} onLinkPress={() => {}} />
-    </Context.Provider>
+    </ContextProviderWithDefaults>
   );
 
   expect(testInstance).toMatchSnapshot();

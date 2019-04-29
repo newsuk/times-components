@@ -1,7 +1,7 @@
 /* eslint-disable react/no-multi-comp */
 import React from "react";
-import { iterator, makeArticleUrl } from "@times-components/test-utils";
-import Context from "@times-components/context";
+import { iterator } from "@times-components/test-utils";
+import { ContextProviderWithDefaults } from "@times-components/context";
 import { scales } from "@times-components/styleguide";
 import ArticleSkeleton from "../src/article-skeleton";
 import contentWithNestedFirstParagraph from "../fixtures/bold-article-content";
@@ -9,9 +9,8 @@ import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
 
 export const renderArticle = (data, header = null) => (
-  <Context.Provider
+  <ContextProviderWithDefaults
     value={{
-      makeArticleUrl,
       theme: { scale: scales.medium, sectionColour: "#FF0000" }
     }}
   >
@@ -30,7 +29,7 @@ export const renderArticle = (data, header = null) => (
       onVideoPress={() => {}}
       spotAccountId=""
     />
-  </Context.Provider>
+  </ContextProviderWithDefaults>
 );
 
 export const fixtureArgs = {

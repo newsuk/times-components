@@ -1,5 +1,5 @@
 import React from "react";
-import Context from "@times-components/context";
+import { ContextProviderWithDefaults } from "@times-components/context";
 import { scales, themeFactory } from "@times-components/styleguide";
 import coreRenderers from "@times-components/markup";
 import { renderTree } from "@times-components/markup-forest";
@@ -9,7 +9,7 @@ import ArticleParagraph from "../src";
 export default (ast, section = "default") => {
   const theme = themeFactory(section, "magazinestandard");
   return (
-    <Context.Provider
+    <ContextProviderWithDefaults
       value={{
         theme: {
           scale: scales.medium
@@ -33,6 +33,6 @@ export default (ast, section = "default") => {
           };
         }
       })}
-    </Context.Provider>
+    </ContextProviderWithDefaults>
   );
 };

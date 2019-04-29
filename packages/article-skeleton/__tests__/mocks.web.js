@@ -1,3 +1,5 @@
+jest.mock("../src/head.web", () => "Head");
+
 // eslint-disable-next-line global-require
 jest.mock("@times-components/ad", () => require("./ad-mock"));
 jest.mock("@times-components/article-byline", () => ({

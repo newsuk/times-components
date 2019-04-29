@@ -7,7 +7,6 @@ import {
   MockFixture,
   MockedProvider
 } from "@times-components/provider-test-tools";
-import Context from "@times-components/context";
 import StorybookProvider from "@times-components/storybook/storybook-provider";
 import {
   authorArticlesWithImages as authorArticlesWithImagesQuery,
@@ -15,11 +14,6 @@ import {
 } from "@times-components/provider-queries";
 import storybookReporter from "@times-components/tealium-utils";
 import AuthorProfile from "./src/author-profile";
-
-const makeArticleUrl = ({ slug, shortIdentifier }) =>
-  slug && shortIdentifier
-    ? `https://www.thetimes.co.uk/article/${slug}-${shortIdentifier}`
-    : "";
 
 const preventDefaultedAction = decorateAction =>
   decorateAction([
@@ -51,35 +45,33 @@ const makeAuthorProfile = (decorateAction, params) => (
     params={params}
     render={mocks => (
       <MockedProvider mocks={mocks}>
-        <Context.Provider value={{ makeArticleUrl }}>
-          <AuthorProfileProvider
-            articleImageRatio={articleImageRatio}
-            debounceTimeMs={250}
-            page={1}
-            pageSize={pageSize}
-            slug={slug}
-          >
-            {({
-              author,
-              isLoading,
-              error,
-              page,
-              pageSize: authorPageSize,
-              refetch
-            }) => (
-              <AuthorProfile
-                author={author}
-                error={error}
-                isLoading={isLoading}
-                page={page}
-                pageSize={authorPageSize}
-                refetch={refetch}
-                slug={slug}
-                {...getProps(decorateAction)}
-              />
-            )}
-          </AuthorProfileProvider>
-        </Context.Provider>
+        <AuthorProfileProvider
+          articleImageRatio={articleImageRatio}
+          debounceTimeMs={250}
+          page={1}
+          pageSize={pageSize}
+          slug={slug}
+        >
+          {({
+            author,
+            isLoading,
+            error,
+            page,
+            pageSize: authorPageSize,
+            refetch
+          }) => (
+            <AuthorProfile
+              author={author}
+              error={error}
+              isLoading={isLoading}
+              page={page}
+              pageSize={authorPageSize}
+              refetch={refetch}
+              slug={slug}
+              {...getProps(decorateAction)}
+            />
+          )}
+        </AuthorProfileProvider>
       </MockedProvider>
     )}
   />

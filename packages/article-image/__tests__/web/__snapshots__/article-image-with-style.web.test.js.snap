@@ -504,7 +504,17 @@ exports[`8. primary image with caption and credits with center caption override 
   }
 }
 
-Array [
+<ContextProviderWithDefaults
+  value={
+    Object {
+      "theme": Object {
+        "imageCaptionAlignment": Object {
+          "primary": "center",
+        },
+      },
+    }
+  }
+>
   <div>
     <TimesImage
       aspectRatio={1.25}
@@ -520,7 +530,7 @@ Array [
       onImagePress={null}
       uri="https://img/someImage"
     />
-  </div>,
+  </div>
   <div>
     <InsetCenteredCaption
       credits="Some credits"
@@ -548,8 +558,8 @@ Array [
         </div>
       </responsiveweb__InsetCaptionStyle>
     </InsetCenteredCaption>
-  </div>,
-]
+  </div>
+</ContextProviderWithDefaults>
 `;
 
 exports[`9. secondary image with caption and credits with center caption override 1`] = `
@@ -563,7 +573,17 @@ exports[`9. secondary image with caption and credits with center caption overrid
   z-index: 2;
 }
 
-Array [
+<ContextProviderWithDefaults
+  value={
+    Object {
+      "theme": Object {
+        "imageCaptionAlignment": Object {
+          "secondary": "center",
+        },
+      },
+    }
+  }
+>
   <div>
     <TimesImage
       aspectRatio={1.5}
@@ -579,7 +599,7 @@ Array [
       onImagePress={null}
       uri="https://img/someImage"
     />
-  </div>,
+  </div>
   <div>
     <CentredCaption
       credits="Other credits"
@@ -596,6 +616,6 @@ Array [
         </div>
       </div>
     </CentredCaption>
-  </div>,
-]
+  </div>
+</ContextProviderWithDefaults>
 `;

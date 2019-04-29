@@ -2,49 +2,57 @@
 
 const React = require("react");
 const { ApolloProvider } = require("react-apollo");
+const { HelmetProvider } = require("react-helmet-async");
 const { AuthorProfileProvider } = require("@times-components/provider/rnw");
-const Context = require("@times-components/context/rnw").default;
+const {
+  ContextProviderWithDefaults
+} = require("@times-components/context/rnw");
 const AuthorProfile = require("@times-components/author-profile/rnw").default;
 
-module.exports = (client, analyticsStream, data) => {
+module.exports = (client, analyticsStream, data, helmetContext) => {
   const {
     authorSlug,
     debounceTimeMs,
     makeArticleUrl,
+    makeTopicUrl,
     mapProfileToAdConfig,
     page,
     pageSize
   } = data;
 
   return React.createElement(
-    ApolloProvider,
-    { client },
+    HelmetProvider,
+    { context: helmetContext },
     React.createElement(
-      AuthorProfileProvider,
-      {
-        debounceTimeMs,
-        page,
-        pageSize,
-        slug: authorSlug
-      },
-      ({ author, isLoading, error, refetch }) =>
-        React.createElement(
-          Context.Provider,
-          { value: { makeArticleUrl } },
-          React.createElement(AuthorProfile, {
-            adConfig: mapProfileToAdConfig(),
-            analyticsStream,
-            author,
-            error,
-            isLoading,
-            onArticlePress: () => {},
-            onTwitterLinkPress: () => {},
-            page,
-            pageSize,
-            refetch,
-            slug: authorSlug
-          })
-        )
+      ApolloProvider,
+      { client },
+      React.createElement(
+        AuthorProfileProvider,
+        {
+          debounceTimeMs,
+          page,
+          pageSize,
+          slug: authorSlug
+        },
+        ({ author, isLoading, error, refetch }) =>
+          React.createElement(
+            ContextProviderWithDefaults,
+            { value: { makeArticleUrl, makeTopicUrl } },
+            React.createElement(AuthorProfile, {
+              adConfig: mapProfileToAdConfig(),
+              analyticsStream,
+              author,
+              error,
+              isLoading,
+              onArticlePress: () => {},
+              onTwitterLinkPress: () => {},
+              page,
+              pageSize,
+              refetch,
+              slug: authorSlug
+            })
+          )
+      )
     )
   );
 };

@@ -3,16 +3,11 @@ import React from "react";
 import { Text, View } from "react-native";
 import invert from "lodash.invert";
 import articleAdConfig from "@times-components/ad/fixtures/article-ad-config.json";
-import Context from "@times-components/context";
+import { ContextProviderWithDefaults } from "@times-components/context";
 import { colours, scales } from "@times-components/styleguide";
 import storybookReporter from "@times-components/tealium-utils";
 import fullArticleFixture from "./fixtures/full-article";
 import ArticleSkeleton from "./src/article-skeleton";
-
-const makeArticleUrl = ({ slug, shortIdentifier }) =>
-  slug && shortIdentifier
-    ? `https://www.thetimes.co.uk/article/${slug}-${shortIdentifier}`
-    : "";
 
 const TestHeader = () => (
   <View
@@ -63,9 +58,7 @@ const renderArticleSkeleton = ({
   const showHeader = header ? () => <TestHeader /> : () => null;
 
   return (
-    <Context.Provider
-      value={{ makeArticleUrl, theme: { scale, sectionColour } }}
-    >
+    <ContextProviderWithDefaults value={{ theme: { scale, sectionColour } }}>
       <ArticleSkeleton
         adConfig={articleAdConfig}
         analyticsStream={storybookReporter}
@@ -89,7 +82,7 @@ const renderArticleSkeleton = ({
         onVideoPress={preventDefaultedAction(decorateAction)("onVideoPress")}
         onViewableItemsChanged={() => null}
       />
-    </Context.Provider>
+    </ContextProviderWithDefaults>
   );
 };
 

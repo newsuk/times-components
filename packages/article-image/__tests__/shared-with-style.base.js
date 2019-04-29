@@ -1,6 +1,6 @@
 import React from "react";
 import { setIsTablet } from "@times-components/mocks/dimensions";
-import Context from "@times-components/context";
+import { ContextProviderWithDefaults } from "@times-components/context";
 import { iterator } from "@times-components/test-utils";
 import ArticleImage from "../src/article-image";
 import primaryImageFixture from "../fixtures/primary-image";
@@ -137,7 +137,7 @@ export default makeTest => {
       test: () => {
         expect(
           makeTest(
-            <Context.Provider
+            <ContextProviderWithDefaults
               value={{
                 theme: { imageCaptionAlignment: { primary: "center" } }
               }}
@@ -146,7 +146,7 @@ export default makeTest => {
                 captionOptions={primaryImage.captionOptions}
                 imageOptions={primaryImage.imageOptions}
               />
-            </Context.Provider>
+            </ContextProviderWithDefaults>
           )
         ).toMatchSnapshot();
       }
@@ -157,7 +157,7 @@ export default makeTest => {
       test: () => {
         expect(
           makeTest(
-            <Context.Provider
+            <ContextProviderWithDefaults
               value={{
                 theme: { imageCaptionAlignment: { secondary: "center" } }
               }}
@@ -166,7 +166,7 @@ export default makeTest => {
                 captionOptions={secondaryImage.captionOptions}
                 imageOptions={secondaryImage.imageOptions}
               />
-            </Context.Provider>
+            </ContextProviderWithDefaults>
           )
         ).toMatchSnapshot();
       }
