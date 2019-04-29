@@ -82,6 +82,8 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                       "color": "#333333",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": NaN,
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
                       "left": 0,
                       "lineHeight": NaN,
                       "marginBottom": 20,
@@ -205,6 +207,8 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                     Object {
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": NaN,
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
                       "lineHeight": NaN,
                     }
                   }
@@ -639,6 +643,8 @@ exports[`3. an article with a nested markup in first paragraph displays no drop 
                     Object {
                       "fontFamily": "TimesDigitalW04-Bold",
                       "fontSize": NaN,
+                      "fontStyle": "normal",
+                      "fontWeight": "bold",
                       "lineHeight": NaN,
                     }
                   }
@@ -753,6 +759,8 @@ exports[`4. an article skeleton with responsive items 1`] = `
                     Object {
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": NaN,
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
                       "lineHeight": NaN,
                     }
                   }
@@ -874,6 +882,8 @@ exports[`4. an article skeleton with responsive items 1`] = `
                     Object {
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": NaN,
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
                       "lineHeight": NaN,
                     }
                   }

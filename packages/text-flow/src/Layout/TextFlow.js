@@ -92,16 +92,7 @@ export default class TextFlow extends Container {
         this.block.measuredHeight += child.height;
         continue
       }
-      if (child instanceof Block) {
-        this.block.addChild(child);
-        this.block.measuredHeight += child.measuredHeight;
-        if (this.block.measuredWidth < child.measuredWidth) {
-          this.block.measuredWidth = child.measuredWidth;
-        }
-        child.y = vPosition;
-        vPosition += child.measuredHeight;
-      }
-      if (child instanceof Text) {
+      if (child instanceof Block || child instanceof Text) {
         this.block.addChild(child);
         this.block.measuredHeight += child.measuredHeight;
         if (this.block.measuredWidth < child.measuredWidth) {

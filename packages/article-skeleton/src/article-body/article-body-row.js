@@ -24,6 +24,7 @@ export default ({
   onLinkPress,
   onTwitterLinkPress,
   onVideoPress,
+  onImagePress,
   width,
   fontScale,
   isTablet,
@@ -120,6 +121,7 @@ export default ({
                       ratio,
                       uri: url
                     }}
+                    onImagePress={onImagePress}
                   />
                 </View>
               );
@@ -127,16 +129,26 @@ export default ({
           })
         };
       }
+      const {
+        fontFamily: cFontFamily,
+        fontSize: cFontSize,
+        lineHeight: cLineHeight
+      } = fontFactory({
+        font: "supporting",
+        fontSize: "caption"
+      });
+      const captionText = new Text.Text({
+        font: cFontFamily,
+        lineHeight: cLineHeight * fontScale,
+        markup: [new Body(caption)],
+        size: cFontSize * fontScale,
+        width: width * 0.35
+      });
+      const captionHeight = captionText.measuredHeight;
       const inline = new Layout.InlineBlock({
         getComponent() {
           return (
-            <View
-              key={key}
-              onLayout={e => {
-                inline.height = e.nativeEvent.layout.height;
-                inline.layoutDone = true;
-              }}
-            >
+            <View key={key}>
               <ArticleImage
                 captionOptions={{
                   caption,
@@ -147,11 +159,12 @@ export default ({
                   ratio,
                   uri: url
                 }}
+                onImagePress={onImagePress}
               />
             </View>
           );
         },
-        height: width * 0.35 * aspectRatio,
+        height: width * 0.35 * aspectRatio + captionHeight,
         layoutDone: false,
         prevHeight: 0,
         width: width * 0.35

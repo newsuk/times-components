@@ -31,7 +31,9 @@ const viewabilityConfig = {
 
 const convertStyles = ({ font, size }) => ({
   fontFamily: font,
-  fontSize: size
+  fontSize: size,
+  fontStyle: font.includes("Italic") ? "italic" : "normal",
+  fontWeight: font.includes("Bold") ? "bold" : "normal"
 });
 
 const renderRow = (
@@ -99,6 +101,7 @@ const renderText = (block, inlined = false) => {
               <Text
                 selectable
                 style={{
+                  ...style,
                   left: span.x,
                   position: "absolute",
                   top: span.y
@@ -148,7 +151,7 @@ class ArticleSkeleton extends Component {
   }
 
   componentWillMount() {
-    this.layout();
+    this.updateData();
   }
 
   onViewableItemsChanged(info) {
@@ -182,17 +185,8 @@ class ArticleSkeleton extends Component {
     });
   }
 
-  layout() {
-    const {
-      interactiveConfig,
-      onLinkPress,
-      onTwitterLinkPress,
-      onVideoPress,
-      receiveChildList,
-      isTablet,
-      scale
-    } = this.props;
-    const { dataSource, width, flow } = this.state;
+  updateData() {
+    const { dataSource } = this.state;
     const { dropcapsDisabled, template } = dataSource;
     if (!dataSource.content) {
       return null;
@@ -223,6 +217,22 @@ class ArticleSkeleton extends Component {
 
     const others = articleData.filter(row => row.type !== "articleBodyRow");
 
+    this.layoutIfNeeded(rows, articleData, others);
+  }
+
+  layoutIfNeeded(rows, articleData, others) {
+    const {
+      interactiveConfig,
+      onImagePress,
+      onLinkPress,
+      onTwitterLinkPress,
+      onVideoPress,
+      receiveChildList,
+      isTablet,
+      scale
+    } = this.props;
+    const { width, flow } = this.state;
+
     if (flow) {
       flow.layout();
       this.setState({
@@ -240,6 +250,7 @@ class ArticleSkeleton extends Component {
           fontScale,
           interactiveConfig,
           isTablet,
+          onImagePress,
           onLinkPress,
           onTwitterLinkPress,
           onVideoPress,
@@ -264,13 +275,6 @@ class ArticleSkeleton extends Component {
         {() => {
           const { width } = this.state;
 
-          const onLayout = () => {
-            if (block.prevHeight !== block.height) {
-              this.layout();
-            }
-            block.prevHeight = block.height;
-          };
-          // @todo Is there a better way to get this
           const textLeftPadding = 5;
           const gutterWidth = Math.min(screenWidth(), tabletWidthMax);
           const textContainerWidth = Math.min(screenWidth(), tabletWidth);
@@ -284,9 +288,7 @@ class ArticleSkeleton extends Component {
           };
           return (
             <View>
-              <View onLayout={onLayout} style={style}>
-                {block.getComponent()}
-              </View>
+              <View style={style}>{block.getComponent()}</View>
               {block.children.map(subBlock => renderText(subBlock, true))}
             </View>
           );
