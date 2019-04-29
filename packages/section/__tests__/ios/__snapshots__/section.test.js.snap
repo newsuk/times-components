@@ -242,6 +242,7 @@ exports[`section page 1`] = `
             Object {
               "backgroundColor": "#DBDBDB",
               "height": 1,
+              "marginHorizontal": 20,
             }
           }
         />
@@ -255,6 +256,7 @@ exports[`section page 1`] = `
             Object {
               "backgroundColor": "#DBDBDB",
               "height": 1,
+              "marginHorizontal": 20,
             }
           }
         />
@@ -268,6 +270,7 @@ exports[`section page 1`] = `
             Object {
               "backgroundColor": "#DBDBDB",
               "height": 1,
+              "marginHorizontal": 20,
             }
           }
         />
@@ -281,6 +284,7 @@ exports[`section page 1`] = `
             Object {
               "backgroundColor": "#DBDBDB",
               "height": 1,
+              "marginHorizontal": 20,
             }
           }
         />
@@ -294,6 +298,7 @@ exports[`section page 1`] = `
             Object {
               "backgroundColor": "#DBDBDB",
               "height": 1,
+              "marginHorizontal": 20,
             }
           }
         />
