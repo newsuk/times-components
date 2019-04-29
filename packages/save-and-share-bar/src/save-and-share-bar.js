@@ -26,7 +26,7 @@ class SaveAndShareBar extends Component {
   }
 
   render() {
-    const { articleId, articleUrl, onSaveToMyArticles, onShareOnEmail, saveApi } = this.props;
+    const { articleId, articleUrl, onShareOnEmail, saveApi } = this.props;
     return (
       <View style={styles.container}>
         <View style={styles.rowItem}>
