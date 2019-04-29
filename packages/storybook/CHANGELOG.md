@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/newsuk/times-components/compare/@times-components/storybook@3.4.26...@times-components/storybook@4.0.0) (2019-04-29)
+
+
+* BREAKING CHANGE feat: manage meta tags in times-components  (#1897) ([e2dffc8](https://github.com/newsuk/times-components/commit/e2dffc8)), closes [#1897](https://github.com/newsuk/times-components/issues/1897)
+
+
+### BREAKING CHANGES
+
+* feat: add makeTopicUrl
+
+* feat: move existing topic render tags over to times-components
+
+* feat: move existing author-profile render tags over to times-components
+
+* feat: move exmost article render tags over to times-components
+
+* chore: snaps
+
+* fix: usde short headline if headline not available
+
+* fix: deps
+
+* fix: lint
+
+* fix: lint
+
+* chore: article url should be consistent with topic url
+
+
+
+
+
 ## [3.4.26](https://github.com/newsuk/times-components/compare/@times-components/storybook@3.4.25...@times-components/storybook@3.4.26) (2019-04-18)
 
 **Note:** Version bump only for package @times-components/storybook
