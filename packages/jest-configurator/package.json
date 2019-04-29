@@ -55,7 +55,7 @@
     ]
   },
   "dependencies": {
-    "@babel/core": "7.4.3",
+    "@babel/core": "7.4.4",
     "@times-components/test-utils": "2.2.36",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "24.7.1",
@@ -65,21 +65,21 @@
     "enzyme-adapter-react-16": "1.12.1",
     "find-node-modules": "1.0.4",
     "identity-obj-proxy": "3.0.0",
-    "jest": "24.7.1",
-    "jest-plugin-context": "2.6.0",
+    "jest": "23.3.0",
+    "jest-plugin-context": "2.9.0",
     "jest-plugins": "2.9.0"
   },
   "devDependencies": {
-    "@babel/cli": "7.4.3",
-    "@babel/core": "7.4.3",
+    "@babel/cli": "7.4.4",
+    "@babel/core": "7.4.4",
     "@thetimes/jest-lint": "*",
     "@times-components/eslint-config-thetimes": "0.8.9",
     "babel-plugin-add-react-displayname": "0.0.5",
-    "babel-plugin-styled-components": "1.5.1",
+    "babel-plugin-styled-components": "1.10.0",
     "metro-react-native-babel-preset": "0.53.1",
     "depcheck": "0.6.9",
-    "eslint": "5.9.0",
-    "prettier": "1.14.3"
+    "eslint": "5.16.0",
+    "prettier": "1.17.0"
   },
   "peerDependencies": {
     "react": ">=16.5",

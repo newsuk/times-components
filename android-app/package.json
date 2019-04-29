@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@times-components/pages": "1.23.3",
-    "prop-types": "15.6.2",
+    "prop-types": "15.7.2",
     "react": "16.5.2",
     "react-native": "0.55.4",
     "react-native-svg": "6.5.3",
@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "metro-react-native-babel-preset": "0.53.1",
-    "prettier": "1.14.3",
+    "prettier": "1.17.0",
     "webpack": "4.30.0"
   },
   "private": true
