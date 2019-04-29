@@ -3,6 +3,7 @@
 exports[`1. an svg, g, path 1`] = `
 <svg
   height={100}
+  style={Object {}}
   version="1.1"
   viewBox="145 50 108 120"
   width={100}
@@ -12,10 +13,12 @@ exports[`1. an svg, g, path 1`] = `
     fillRule="evenodd"
     stroke="none"
     strokeWidth="1"
+    style={Object {}}
   >
     <path
       d="M211.26076,54"
       fill="#000000"
+      style={Object {}}
     />
   </g>
 </svg>
@@ -25,14 +28,16 @@ exports[`2. a path with no fill 1`] = `
 <path
   d="M211.26076,54"
   fill="none"
+  style={Object {}}
 />
 `;
 
 exports[`3. a polygon 1`] = `
 <polygon
   fill="blue"
-  points="e6624ad17344f251daa0c00df406817b"
+  points="16.3405361 4.14989474 16.3405361 9.66442105 22.0216082 12.8146667 22.0216082 0.999894737"
   stroke="red"
+  style={Object {}}
 />
 `;
 
@@ -43,6 +48,7 @@ exports[`4. a rect 1`] = `
   height="100"
   stroke="rgb(255,255,255)"
   strokeWidth="8"
+  style={Object {}}
   width="100"
   x="5"
   y="10"
