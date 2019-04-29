@@ -26,13 +26,7 @@ class SaveAndShareBar extends Component {
   }
 
   render() {
-    const {
-      articleUrl,
-      onSaveToMyArticles,
-      onShareOnEmail,
-      onShareOnFB,
-      onShareOnTwitter
-    } = this.props;
+    const { articleId, articleUrl, onSaveToMyArticles, onShareOnEmail, saveApi } = this.props;
     return (
       <View style={styles.container}>
         <View style={styles.rowItem}>
@@ -80,17 +74,7 @@ class SaveAndShareBar extends Component {
         </View>
         <View style={styles.rowItem}>
           <Text style={styles.label}>Save</Text>
-          <BarItem
-            color={styles.svgIcon.save.strokeColour}
-            hoverColor={styles.svgIcon.hoverFillColour}
-            onPress={onSaveToMyArticles}
-          >
-            <IconSaveBookmark
-              fillColour={styles.svgIcon.save.fillColour}
-              strokeColour="currentColor"
-              title="Save to My Articles"
-            />
-          </BarItem>
+          <SaveStar articleId={articleId} saveApi={saveApi} />
         </View>
       </View>
     );
