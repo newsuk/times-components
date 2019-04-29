@@ -5,8 +5,7 @@ import {
   IconEmail,
   IconFacebook,
   IconTwitter,
-  IconCopyLink,
-  IconSaveBookmark
+  IconCopyLink
 } from "@times-components/icons";
 import withTrackEvents from "./tracking/with-track-events";
 import SaveStar from "@times-components/save-star-web";
@@ -107,7 +106,8 @@ SaveAndShareBar.propTypes = {
   onSaveToMyArticles: PropTypes.func.isRequired,
   onShareOnEmail: PropTypes.func.isRequired,
   onShareOnFB: PropTypes.func,
-  onShareOnTwitter: PropTypes.func
+  onShareOnTwitter: PropTypes.func,
+  saveApi: PropTypes.func.isRequired
 };
 
 /* Serves as an indication when share links are clicked for tracking and analytics */
