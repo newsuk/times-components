@@ -47,7 +47,7 @@
     "enzyme": "3.9.0",
     "enzyme-adapter-react-16": "1.12.1",
     "eslint": "5.16.0",
-    "jest": "23.3.0",
+    "jest": "23.6.0",
     "prettier": "1.17.0",
     "react": "16.5.2",
     "react-native": "0.55.4",

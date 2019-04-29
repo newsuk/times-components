@@ -32,14 +32,14 @@
     "@babel/core": "7.4.4",
     "@times-components/eslint-config-thetimes": "0.8.9",
     "babel-core": "^7.0.0-bridge.0",
-    "babel-jest": "24.7.1",
+    "babel-jest": "23.6.0",
     "babel-plugin-transform-object-rest-spread": "6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-stage-2": "6.24.1",
     "depcheck": "0.6.9",
     "eslint": "5.16.0",
     "eslint-plugin-graphql": "2.1.1",
-    "jest": "23.3.0",
+    "jest": "23.6.0",
     "prettier": "1.17.0"
   },
   "dependencies": {

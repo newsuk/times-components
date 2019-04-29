@@ -3,5 +3,5 @@ const path = require("path");
 
 module.exports = jestConfigurator("web", __dirname, {
   coverageIgnoreGlobs: ["*.js"],
-  setupTestFrameworkScriptFile: path.join(__dirname, "./serializers")
+  setupFilesAfterEnv: path.join(__dirname, "./serializers")
 });

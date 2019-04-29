@@ -21,6 +21,6 @@ module.exports = {
   rootDir: "../../",
   testMatch: [`**/jest-serializer/__tests__/ios/**.test.js`],
   transformIgnorePatterns: [
-    "node_modules/(?!(react-native|react-native-linear-gradient|react-native-iphone-x-helper|@times-components)/)"
+    "node_modules/(?!(react-native|react-native-svg|react-native-iphone-x-helper|@times-components|@storybook/react-native|react-native-swipe-gestures)/)"
   ]
 };
