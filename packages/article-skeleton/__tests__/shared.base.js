@@ -11,7 +11,8 @@ import { adConfig } from "./ad-mock";
 export const renderArticle = (data, header = null) => (
   <ContextProviderWithDefaults
     value={{
-      theme: { scale: scales.medium, sectionColour: "#FF0000" }
+      theme: { scale: scales.medium, sectionColour: "#FF0000" },
+      user: { isLoggedIn: true }
     }}
   >
     <ArticleSkeleton
