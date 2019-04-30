@@ -3,7 +3,7 @@ import { View, Text, TouchableOpacity } from "react-native";
 import TestRenderer from "react-test-renderer";
 import { scales } from "@times-components/styleguide";
 import { delay } from "@times-components/test-utils";
-import MessageQueue from "../src/message-queue";
+import MessageManager from "../src/message-manager";
 import MessageBar from "../src/message-bar";
 import Context from "../src/message-context";
 
@@ -20,11 +20,11 @@ export default animate => [
     name: "renders correctly",
     test: async () => {
       const testInstance = TestRenderer.create(
-        <MessageQueue animate={animate} delay={1} scale={scales.medium}>
+        <MessageManager animate={animate} delay={1} scale={scales.medium}>
           <View>
             <Text>test child content</Text>
           </View>
-        </MessageQueue>
+        </MessageManager>
       );
 
       await delay(500);
@@ -36,9 +36,9 @@ export default animate => [
     name: "children can show a message",
     test: async () => {
       const testInstance = TestRenderer.create(
-        <MessageQueue animate={animate} delay={1} scale={scales.medium}>
+        <MessageManager animate={animate} delay={1} scale={scales.medium}>
           <TestConsumer />
-        </MessageQueue>
+        </MessageManager>
       );
 
       const touchable = testInstance.root.findByType(TouchableOpacity);
@@ -52,9 +52,9 @@ export default animate => [
     name: "removes the message when the bar says it closed",
     test: async () => {
       const testInstance = TestRenderer.create(
-        <MessageQueue animate={animate} delay={100} scale={scales.medium}>
+        <MessageManager animate={animate} delay={100} scale={scales.medium}>
           <TestConsumer />
-        </MessageQueue>
+        </MessageManager>
       );
 
       const touchable = testInstance.root.findByType(TouchableOpacity);

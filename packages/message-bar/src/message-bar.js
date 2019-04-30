@@ -94,9 +94,9 @@ class MessageBar extends Component {
           }
         }
       >
-        <View style={styles.MessageBarBody}>
-          <Text style={styles.MessageBarText}>{message}</Text>
-          <View style={styles.MessageBarCloseButton}>
+        <View style={styles.messageBarBody}>
+          <Text style={styles.messageBarText}>{message}</Text>
+          <View style={styles.messageBarCloseButton}>
             <TouchableOpacity onPress={this.close}>
               <Image resizeMode="contain" source={CloseIcon} />
             </TouchableOpacity>

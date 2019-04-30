@@ -1,6 +1,23 @@
 # MessageBar
 
-<!-- Add the description of the package here. -->
+A context to allow consumers to show a floating message over an article.
+
+## Example Usage
+```javascript
+const TestConsumer = () => (
+  <Context.Consumer>
+    {({ showMessage }) => (
+      <TouchableOpacity onPress={() => showMessage("foo")} />
+    )}
+  </Context.Consumer>
+);
+
+...
+
+<MessageQueue animate delay={3000} scale={scales.medium}>
+    <TestConsumer />
+</MessageQueue>
+```
 
 ## Contributing
 
@@ -37,6 +54,7 @@ yarn test:all
 ```
 
 Visit the official
+[Storybook](http://localhost:9001/?knob-Size%20of%20ad%20placeholder%3A=default&selectedKind=Primitives%2FMessageBar&selectedStory=MessageBar&full=0&addons=1&stories=1&panelRight=1&addonPanel=storybooks%2Fstorybook-addon-knobs)
 
 <!-- Add the storybook link here. -->
 

@@ -1,3 +1,3 @@
-export { default as Queue } from "./message-queue";
-export { default as Bar } from "./message-bar";
-export { default as Context } from "./message-context";
+export { default as MessageManager } from "./message-manager";
+export { default as MessageBar } from "./message-bar";
+export { default as MessageContext } from "./message-context";

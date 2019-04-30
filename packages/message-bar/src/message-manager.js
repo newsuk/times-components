@@ -6,7 +6,9 @@ import styleFactory from "./styles";
 import MessageBar from "./message-bar";
 import MessageContext from "./message-context";
 
-class MessageQueue extends Component {
+// MessageManager implements the pattern found here:
+// https://reactjs.org/docs/context.html#updating-context-from-a-nested-component
+class MessageManager extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -39,7 +41,7 @@ class MessageQueue extends Component {
         <MessageContext.Provider value={this.state}>
           {children}
         </MessageContext.Provider>
-        <View style={styles.MessageQueue}>
+        <View style={styles.messageManager}>
           {message && (
             <MessageBar
               animate={animate}
@@ -57,7 +59,7 @@ class MessageQueue extends Component {
 
 {
   const { string, node, number, bool } = PropTypes;
-  MessageQueue.propTypes = {
+  MessageManager.propTypes = {
     animate: bool.isRequired,
     children: node.isRequired,
     delay: number.isRequired,
@@ -65,4 +67,4 @@ class MessageQueue extends Component {
   };
 }
 
-export default MessageQueue;
+export default MessageManager;

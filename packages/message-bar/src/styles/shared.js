@@ -3,7 +3,7 @@ import { colours, fontFactory } from "@times-components/styleguide";
 const height = 50;
 
 const sharedStyle = scale => ({
-  MessageBarBody: {
+  messageBarBody: {
     alignItems: "center",
     backgroundColor: colours.functional.articleFlagUpdated,
     flexDirection: "row",
@@ -17,7 +17,7 @@ const sharedStyle = scale => ({
     width: "100%",
     zIndex: 10
   },
-  MessageBarCloseButton: {
+  messageBarCloseButton: {
     alignItems: "center",
     backgroundColor: "rgba(255, 255, 255, 0.3)",
     borderRadius: 28 / 2,
@@ -27,7 +27,7 @@ const sharedStyle = scale => ({
     marginRight: 20,
     width: 28
   },
-  MessageBarText: {
+  messageBarText: {
     color: colours.functional.white,
     ...fontFactory({
       font: "headline",
@@ -36,7 +36,7 @@ const sharedStyle = scale => ({
     }),
     marginLeft: 20
   },
-  MessageQueue: {
+  messageManager: {
     bottom: 0,
     flex: 1,
     flexDirection: "row",
