@@ -36,6 +36,27 @@ export default () => {
     },
     {
       name:
+        "saved star with loading state while network request is fetching data",
+      test: async () => {
+        const apiMock = {
+          getBookmarks: () =>
+            Promise.resolve({
+              loading: true
+            })
+        };
+
+        const testInstance = TestRenderer.create(
+          <SaveStarWeb
+            articleId="6604b5a8-b1c0-11e8-a553-a0ee9be48bc6"
+            saveApi={apiMock}
+          />
+        );
+        await delay(0);
+        expect(expect(testInstance).toMatchSnapshot());
+      }
+    },
+    {
+      name:
         "Fetches saved articles for user and set in state and checks saved status to true",
       test: async () => {
         const wrapper = mount(
