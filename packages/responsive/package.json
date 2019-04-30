@@ -1,6 +1,6 @@
 {
   "name": "@times-components/responsive",
-  "version": "0.4.26",
+  "version": "0.4.27",
   "description": "Responsive",
   "main": "dist/responsive",
   "dev": "src/responsive",
@@ -34,15 +34,15 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
-    "@times-components/styleguide": "3.28.8",
+    "@times-components/styleguide": "3.28.9",
     "prop-types": "15.6.2"
   },
   "devDependencies": {
     "@thetimes/jest-lint": "*",
-    "@times-components/eslint-config-thetimes": "0.8.9",
-    "@times-components/jest-configurator": "2.5.4",
-    "@times-components/mocks": "0.0.3",
-    "@times-components/webpack-configurator": "2.0.15",
+    "@times-components/eslint-config-thetimes": "0.8.10",
+    "@times-components/jest-configurator": "2.5.5",
+    "@times-components/mocks": "0.0.4",
+    "@times-components/webpack-configurator": "2.0.16",
     "babel-cli": "6.26.0",
     "eslint": "5.9.0",
     "jest": "23.3.0",
