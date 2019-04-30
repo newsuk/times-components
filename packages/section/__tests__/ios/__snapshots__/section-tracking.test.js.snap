@@ -1,44 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Save/Unsave article click tracking 1`] = `
-Array [
-  Array [
-    Object {
-      "action": "Pressed",
-      "attrs": Object {
-        "articleId": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
-        "isSaved": true,
-        "sectionName": "News",
-        "sliceDepth": Object {
-          "itemNumber": 1,
-          "total": 9,
-        },
-        "sliceName": "LeadOneAndFourSlice",
-      },
-      "component": "ArticleSave/Unsave",
-      "object": "Slice",
-    },
-  ],
-  Array [
-    Object {
-      "action": "Pressed",
-      "attrs": Object {
-        "articleId": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
-        "isSaved": false,
-        "sectionName": "News",
-        "sliceDepth": Object {
-          "itemNumber": 1,
-          "total": 9,
-        },
-        "sliceName": "LeadOneAndFourSlice",
-      },
-      "component": "ArticleSave/Unsave",
-      "object": "Slice",
-    },
-  ],
-]
-`;
-
 exports[`default section page click tracking 1`] = `
 Object {
   "action": "Pressed",

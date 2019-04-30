@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { FlatList, View } from "react-native";
 import PropTypes from "prop-types";
-import Responsive from "@times-components/responsive";
+import Responsive, { ResponsiveContext } from "@times-components/responsive";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import SectionItemSeparator from "./section-item-separator";
 import withTrackingContext from "./section-tracking-context";
@@ -81,23 +81,33 @@ class Section extends Component {
 
     return (
       <Responsive>
-        <FlatList
-          data={data}
-          initialNumToRender={5}
-          ItemSeparatorComponent={
-            !isPuzzle &&
-            (() => (
-              <View style={styles.listItemSeparatorContainer}>
-                <SectionItemSeparator />
-              </View>
-            ))
-          }
-          keyExtractor={item => item.elementId}
-          ListHeaderComponent={this.getHeaderComponent(isPuzzle, isMagazine)}
-          onViewableItemsChanged={onViewed ? this.onViewableItemsChanged : null}
-          renderItem={this.renderItem}
-          windowSize={5}
-        />
+        <ResponsiveContext.Consumer>
+          {({ isTablet }) => (
+            <FlatList
+              data={data}
+              initialNumToRender={5}
+              ItemSeparatorComponent={
+                !isPuzzle &&
+                (() => (
+                  <View style={styles.listItemSeparatorContainer}>
+                    <SectionItemSeparator />
+                  </View>
+                ))
+              }
+              keyExtractor={item => item.elementId}
+              ListHeaderComponent={this.getHeaderComponent(
+                isPuzzle,
+                isMagazine
+              )}
+              onViewableItemsChanged={
+                onViewed ? this.onViewableItemsChanged : null
+              }
+              renderItem={this.renderItem}
+              style={isTablet ? styles.tabletSpacing : null}
+              windowSize={5}
+            />
+          )}
+        </ResponsiveContext.Consumer>
       </Responsive>
     );
   }
