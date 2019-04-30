@@ -3,7 +3,7 @@
 exports[`1. no child elements 1`] = `""`;
 
 exports[`2. a single child element 1`] = `
-.c1 {
+.c3 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -20,7 +20,7 @@ exports[`2. a single child element 1`] = `
   justify-content: center;
 }
 
-.c3 {
+.c7 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -28,19 +28,19 @@ exports[`2. a single child element 1`] = `
   padding-right: 10px;
 }
 
-.c0 .imageContainerClass {
+.c2 .imageContainerClass {
   display: block;
 }
 
-.c0 .summaryHidden {
+.c2 .summaryHidden {
   display: none;
 }
 
-.c0 .summary125Class {
+.c2 .summary125Class {
   display: block;
 }
 
-.c2 {
+.c6 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -56,13 +56,13 @@ exports[`2. a single child element 1`] = `
 }
 
 @media (-webkit-min-device-pixel-ratio:2) {
-  .c1 {
+  .c3 {
     border-bottom-width: 0.5px;
   }
 }
 
 @media (min-width:768px) {
-  .c3 {
+  .c7 {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
@@ -72,19 +72,49 @@ exports[`2. a single child element 1`] = `
 }
 
 @media (min-width:768px) {
-  .c0 .imageContainerClass {
+  .c2 .imageContainerClass {
     display: block;
   }
 
-  .c0 .headlineClass {
+  .c2 .headlineClass {
     font-size: 25px;
     line-height: 28px;
     margin-top: 5px;
   }
 }
 
+@media (min-width:1024px) {
+  .c0 .summary125Class {
+    display: block;
+  }
+
+  .c0 .summary145Class {
+    display: none;
+  }
+}
+
 @media (min-width:768px) {
-  .c0 .imageContainerClass {
+  .c6 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c4 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 .imageContainerClass {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
@@ -93,7 +123,7 @@ exports[`2. a single child element 1`] = `
     padding-right: 10px;
   }
 
-  .c0 .contentContainerClass {
+  .c1 .contentContainerClass {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
@@ -105,36 +135,6 @@ exports[`2. a single child element 1`] = `
   }
 }
 
-@media (min-width:1024px) {
-  .c0 .summary125Class {
-    display: block;
-  }
-
-  .c0 .summary145Class {
-    display: none;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    width: 80.8%;
-  }
-}
-
-@media (min-width:1024px) {
-  .c2 {
-    width: 56.2%;
-  }
-}
-
 <style>
 .S1 {
   border-bottom-width: 0px;
@@ -145,39 +145,31 @@ exports[`2. a single child element 1`] = `
 }
 </style>
 
-<configweb__Base>
+<div
+  className="c0 c1 c2 S1"
+>
   <div
-    className="c0 S1"
+    className="c3 S1"
   >
-    <responsiveweb__SliceContainer>
+    <div
+      className="c4 c5 c6 S1"
+    >
       <div
-        className="c1 S1"
+        className="c7 S1"
       >
-        <responsiveweb__Base>
-          <div
-            className="c2 S1"
-          >
-            <responsiveweb__ChildContainer>
-              <div
-                className="c3 S1"
-              >
-                <div
-                  className="S1"
-                >
-                  standard-1
-                </div>
-              </div>
-            </responsiveweb__ChildContainer>
-          </div>
-        </responsiveweb__Base>
+        <div
+          className="S1"
+        >
+          standard-1
+        </div>
       </div>
-    </responsiveweb__SliceContainer>
+    </div>
   </div>
-</configweb__Base>
+</div>
 `;
 
 exports[`3. two child elements 1`] = `
-.c1 {
+.c2 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -194,7 +186,7 @@ exports[`3. two child elements 1`] = `
   justify-content: center;
 }
 
-.c3 {
+.c6 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -202,7 +194,7 @@ exports[`3. two child elements 1`] = `
   padding-right: 10px;
 }
 
-.c4 {
+.c7 {
   border-bottom-color: #DBDBDB;
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -214,19 +206,19 @@ exports[`3. two child elements 1`] = `
   min-width: auto;
 }
 
-.c0 .imageContainerClass {
+.c1 .imageContainerClass {
   display: block;
 }
 
-.c0 .summaryHidden {
+.c1 .summaryHidden {
   display: none;
 }
 
-.c0 .summary125Class {
+.c1 .summary125Class {
   display: block;
 }
 
-.c2 {
+.c5 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -242,13 +234,13 @@ exports[`3. two child elements 1`] = `
 }
 
 @media (-webkit-min-device-pixel-ratio:2) {
-  .c1 {
+  .c2 {
     border-bottom-width: 0.5px;
   }
 }
 
 @media (min-width:768px) {
-  .c3 {
+  .c6 {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
@@ -258,7 +250,7 @@ exports[`3. two child elements 1`] = `
 }
 
 @media (min-width:768px) {
-  .c4 {
+  .c7 {
     border-bottom: none;
     border-right-color: #DBDBDB;
     border-right-style: solid;
@@ -271,11 +263,11 @@ exports[`3. two child elements 1`] = `
 }
 
 @media (min-width:768px) {
-  .c0 .imageContainerClass {
+  .c1 .imageContainerClass {
     display: block;
   }
 
-  .c0 .headlineClass {
+  .c1 .headlineClass {
     font-size: 25px;
     line-height: 28px;
     margin-top: 5px;
@@ -293,7 +285,7 @@ exports[`3. two child elements 1`] = `
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c5 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -301,13 +293,13 @@ exports[`3. two child elements 1`] = `
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c4 {
     width: 80.8%;
   }
 }
 
 @media (min-width:1024px) {
-  .c2 {
+  .c3 {
     width: 56.2%;
   }
 }
@@ -322,55 +314,43 @@ exports[`3. two child elements 1`] = `
 }
 </style>
 
-<configweb__Base>
+<div
+  className="c0 c1 S1"
+>
   <div
-    className="c0 S1"
+    className="c2 S1"
   >
-    <responsiveweb__SliceContainer>
+    <div
+      className="c3 c4 c5 S1"
+    >
       <div
-        className="c1 S1"
+        className="c6 S1"
       >
-        <responsiveweb__Base>
-          <div
-            className="c2 S1"
-          >
-            <responsiveweb__ChildContainer>
-              <div
-                className="c3 S1"
-              >
-                <div
-                  className="S1"
-                >
-                  standard-1
-                </div>
-              </div>
-            </responsiveweb__ChildContainer>
-            <responsiveweb>
-              <div
-                className="c4 S1"
-              />
-            </responsiveweb>
-            <responsiveweb__ChildContainer>
-              <div
-                className="c3 S1"
-              >
-                <div
-                  className="S1"
-                >
-                  standard-2
-                </div>
-              </div>
-            </responsiveweb__ChildContainer>
-          </div>
-        </responsiveweb__Base>
+        <div
+          className="S1"
+        >
+          standard-1
+        </div>
       </div>
-    </responsiveweb__SliceContainer>
+      <div
+        className="c7 S1"
+      />
+      <div
+        className="c6 S1"
+      >
+        <div
+          className="S1"
+        >
+          standard-2
+        </div>
+      </div>
+    </div>
   </div>
-</configweb__Base>
+</div>
 `;
 
 exports[`4. three child elements 1`] = `
-.c1 {
+.c2 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -387,7 +367,7 @@ exports[`4. three child elements 1`] = `
   justify-content: center;
 }
 
-.c3 {
+.c6 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -395,7 +375,7 @@ exports[`4. three child elements 1`] = `
   padding-right: 10px;
 }
 
-.c4 {
+.c7 {
   border-bottom-color: #DBDBDB;
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -407,19 +387,19 @@ exports[`4. three child elements 1`] = `
   min-width: auto;
 }
 
-.c0 .imageContainerClass {
+.c1 .imageContainerClass {
   display: none;
 }
 
-.c0 .summaryHidden {
+.c1 .summaryHidden {
   display: none;
 }
 
-.c0 .summary125Class {
+.c1 .summary125Class {
   display: block;
 }
 
-.c2 {
+.c5 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -435,13 +415,13 @@ exports[`4. three child elements 1`] = `
 }
 
 @media (-webkit-min-device-pixel-ratio:2) {
-  .c1 {
+  .c2 {
     border-bottom-width: 0.5px;
   }
 }
 
 @media (min-width:768px) {
-  .c3 {
+  .c6 {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
@@ -451,7 +431,7 @@ exports[`4. three child elements 1`] = `
 }
 
 @media (min-width:768px) {
-  .c4 {
+  .c7 {
     border-bottom: none;
     border-right-color: #DBDBDB;
     border-right-style: solid;
@@ -464,11 +444,11 @@ exports[`4. three child elements 1`] = `
 }
 
 @media (min-width:768px) {
-  .c0 .imageContainerClass {
+  .c1 .imageContainerClass {
     display: block;
   }
 
-  .c0 .headlineClass {
+  .c1 .headlineClass {
     font-size: 25px;
     line-height: 28px;
     margin-top: 5px;
@@ -486,27 +466,27 @@ exports[`4. three child elements 1`] = `
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c5 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
   }
 }
 
+@media (min-width:1024px) {
+  .c3 {
+    width: 100%;
+  }
+}
+
 @media (min-width:768px) {
-  .c2 {
+  .c4 {
     padding-left: 20px;
     padding-right: 20px;
     width: 100%;
   }
 }
 
-@media (min-width:1024px) {
-  .c2 {
-    width: 100%;
-  }
-}
-
 <style>
 .S1 {
   border-bottom-width: 0px;
@@ -517,65 +497,49 @@ exports[`4. three child elements 1`] = `
 }
 </style>
 
-<configweb__Base>
+<div
+  className="c0 c1 S1"
+>
   <div
-    className="c0 S1"
+    className="c2 S1"
   >
-    <responsiveweb__SliceContainer>
+    <div
+      className="c3 c4 c5 S1"
+    >
       <div
-        className="c1 S1"
+        className="c6 S1"
       >
-        <responsiveweb__Base>
-          <div
-            className="c2 S1"
-          >
-            <responsiveweb__ChildContainer>
-              <div
-                className="c3 S1"
-              >
-                <div
-                  className="S1"
-                >
-                  standard-1
-                </div>
-              </div>
-            </responsiveweb__ChildContainer>
-            <responsiveweb>
-              <div
-                className="c4 S1"
-              />
-            </responsiveweb>
-            <responsiveweb__ChildContainer>
-              <div
-                className="c3 S1"
-              >
-                <div
-                  className="S1"
-                >
-                  standard-2
-                </div>
-              </div>
-            </responsiveweb__ChildContainer>
-            <responsiveweb>
-              <div
-                className="c4 S1"
-              />
-            </responsiveweb>
-            <responsiveweb__ChildContainer>
-              <div
-                className="c3 S1"
-              >
-                <div
-                  className="S1"
-                >
-                  standard-3
-                </div>
-              </div>
-            </responsiveweb__ChildContainer>
-          </div>
-        </responsiveweb__Base>
+        <div
+          className="S1"
+        >
+          standard-1
+        </div>
       </div>
-    </responsiveweb__SliceContainer>
+      <div
+        className="c7 S1"
+      />
+      <div
+        className="c6 S1"
+      >
+        <div
+          className="S1"
+        >
+          standard-2
+        </div>
+      </div>
+      <div
+        className="c7 S1"
+      />
+      <div
+        className="c6 S1"
+      >
+        <div
+          className="S1"
+        >
+          standard-3
+        </div>
+      </div>
+    </div>
   </div>
-</configweb__Base>
+</div>
 `;

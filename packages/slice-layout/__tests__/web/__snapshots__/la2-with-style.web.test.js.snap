@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. a single child element 1`] = `
-.c1 {
+.c2 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -18,23 +18,23 @@ exports[`1. a single child element 1`] = `
   justify-content: center;
 }
 
-.c0 .supportImageContainerClass {
+.c1 .supportImageContainerClass {
   display: none;
 }
 
-.c0 .supportSummaryClass {
+.c1 .supportSummaryClass {
   display: none;
 }
 
-.c0 .summaryHidden {
+.c1 .summaryHidden {
   display: none;
 }
 
-.c0 .leadSummary125Class {
+.c1 .leadSummary125Class {
   display: block;
 }
 
-.c2 {
+.c5 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -50,7 +50,7 @@ exports[`1. a single child element 1`] = `
   width: 100%;
 }
 
-.c3 {
+.c8 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -65,18 +65,18 @@ exports[`1. a single child element 1`] = `
 }
 
 @media (-webkit-min-device-pixel-ratio:2) {
-  .c1 {
+  .c2 {
     border-bottom-width: 0.5px;
   }
 }
 
 @media (min-width:768px) {
-  .c0 .leadHeadlineClass {
+  .c1 .leadHeadlineClass {
     font-size: 30px;
     line-height: 30px;
   }
 
-  .c0 .leadImageContainerClass {
+  .c1 .leadImageContainerClass {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
@@ -84,7 +84,7 @@ exports[`1. a single child element 1`] = `
     min-width: auto;
   }
 
-  .c0 .leadContentContainerClass {
+  .c1 .leadContentContainerClass {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
@@ -96,15 +96,15 @@ exports[`1. a single child element 1`] = `
     min-width: 300px;
   }
 
-  .c0 .supportImageContainerClass {
+  .c1 .supportImageContainerClass {
     display: block;
   }
 
-  .c0 .leadSummary125Class {
+  .c1 .leadSummary125Class {
     display: block;
   }
 
-  .c0 .leadSummary175Class {
+  .c1 .leadSummary175Class {
     display: none;
   }
 }
@@ -122,7 +122,7 @@ exports[`1. a single child element 1`] = `
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c5 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -131,7 +131,7 @@ exports[`1. a single child element 1`] = `
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c4 {
     padding-left: 0px;
     padding-right: 0px;
     width: 80.8%;
@@ -139,20 +139,20 @@ exports[`1. a single child element 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c2 {
+  .c3 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c3 {
+  .c7 {
     padding-left: 0;
     padding-right: 0;
   }
 }
 
 @media (min-width:1024px) {
-  .c3 {
+  .c6 {
     -webkit-box-flex: 1.5;
     -webkit-flex-grow: 1.5;
     -ms-flex-positive: 1.5;
@@ -170,39 +170,31 @@ exports[`1. a single child element 1`] = `
 }
 </style>
 
-<configweb__Base>
+<div
+  className="c0 c1 S1"
+>
   <div
-    className="c0 S1"
+    className="c2 S1"
   >
-    <responsiveweb__SliceContainer>
+    <div
+      className="c3 c4 c5 S1"
+    >
       <div
-        className="c1 S1"
+        className="c6 c7 c8 S1"
       >
-        <responsiveweb__Base>
-          <div
-            className="c2 S1"
-          >
-            <responsiveweb__Base>
-              <div
-                className="c3 S1"
-              >
-                <div
-                  className="S1"
-                >
-                  lead
-                </div>
-              </div>
-            </responsiveweb__Base>
-          </div>
-        </responsiveweb__Base>
+        <div
+          className="S1"
+        >
+          lead
+        </div>
       </div>
-    </responsiveweb__SliceContainer>
+    </div>
   </div>
-</configweb__Base>
+</div>
 `;
 
 exports[`2. two child elements 1`] = `
-.c1 {
+.c2 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -219,7 +211,7 @@ exports[`2. two child elements 1`] = `
   justify-content: center;
 }
 
-.c4 {
+.c9 {
   border-bottom-color: #DBDBDB;
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -231,7 +223,7 @@ exports[`2. two child elements 1`] = `
   min-width: auto;
 }
 
-.c5 {
+.c10 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -241,23 +233,23 @@ exports[`2. two child elements 1`] = `
   height: auto;
 }
 
-.c0 .supportImageContainerClass {
+.c1 .supportImageContainerClass {
   display: none;
 }
 
-.c0 .supportSummaryClass {
+.c1 .supportSummaryClass {
   display: none;
 }
 
-.c0 .summaryHidden {
+.c1 .summaryHidden {
   display: none;
 }
 
-.c0 .leadSummary125Class {
+.c1 .leadSummary125Class {
   display: block;
 }
 
-.c2 {
+.c5 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -273,7 +265,7 @@ exports[`2. two child elements 1`] = `
   width: 100%;
 }
 
-.c3 {
+.c8 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -287,19 +279,19 @@ exports[`2. two child elements 1`] = `
   width: auto;
 }
 
-.c6 {
+.c11 {
   padding-left: 10px;
   padding-right: 10px;
 }
 
 @media (-webkit-min-device-pixel-ratio:2) {
-  .c1 {
+  .c2 {
     border-bottom-width: 0.5px;
   }
 }
 
 @media (min-width:768px) {
-  .c4 {
+  .c9 {
     border-bottom: none;
     border-right-color: #DBDBDB;
     border-right-style: solid;
@@ -312,7 +304,7 @@ exports[`2. two child elements 1`] = `
 }
 
 @media (min-width:768px) {
-  .c5 {
+  .c10 {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
@@ -320,12 +312,12 @@ exports[`2. two child elements 1`] = `
 }
 
 @media (min-width:768px) {
-  .c0 .leadHeadlineClass {
+  .c1 .leadHeadlineClass {
     font-size: 30px;
     line-height: 30px;
   }
 
-  .c0 .leadImageContainerClass {
+  .c1 .leadImageContainerClass {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
@@ -333,7 +325,7 @@ exports[`2. two child elements 1`] = `
     min-width: auto;
   }
 
-  .c0 .leadContentContainerClass {
+  .c1 .leadContentContainerClass {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
@@ -345,15 +337,15 @@ exports[`2. two child elements 1`] = `
     min-width: 300px;
   }
 
-  .c0 .supportImageContainerClass {
+  .c1 .supportImageContainerClass {
     display: block;
   }
 
-  .c0 .leadSummary125Class {
+  .c1 .leadSummary125Class {
     display: block;
   }
 
-  .c0 .leadSummary175Class {
+  .c1 .leadSummary175Class {
     display: none;
   }
 }
@@ -371,7 +363,7 @@ exports[`2. two child elements 1`] = `
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c5 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -379,20 +371,29 @@ exports[`2. two child elements 1`] = `
   }
 }
 
-@media (min-width:768px) {
-  .c2 {
+@media (min-width:1024px) {
+  .c3 {
     width: 100%;
   }
 }
 
 @media (min-width:1024px) {
-  .c2 {
+  .c6 {
+    -webkit-box-flex: 2.75;
+    -webkit-flex-grow: 2.75;
+    -ms-flex-positive: 2.75;
+    flex-grow: 2.75;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
     width: 100%;
   }
 }
 
 @media (min-width:768px) {
-  .c3 {
+  .c7 {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
@@ -405,17 +406,8 @@ exports[`2. two child elements 1`] = `
   }
 }
 
-@media (min-width:1024px) {
-  .c3 {
-    -webkit-box-flex: 2.75;
-    -webkit-flex-grow: 2.75;
-    -ms-flex-positive: 2.75;
-    flex-grow: 2.75;
-  }
-}
-
 @media (min-width:768px) {
-  .c6 {
+  .c11 {
     margin-left: 10px;
     margin-right: 10px;
     padding-left: 0;
@@ -424,7 +416,7 @@ exports[`2. two child elements 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c6 {
+  .c11 {
     margin-top: 0;
   }
 }
@@ -439,61 +431,47 @@ exports[`2. two child elements 1`] = `
 }
 </style>
 
-<configweb__Base>
+<div
+  className="c0 c1 S1"
+>
   <div
-    className="c0 S1"
+    className="c2 S1"
   >
-    <responsiveweb__SliceContainer>
+    <div
+      className="c3 c4 c5 S1"
+    >
       <div
-        className="c1 S1"
+        className="c6 c7 c8 S1"
       >
-        <responsiveweb__Base>
-          <div
-            className="c2 S1"
-          >
-            <responsiveweb__Base>
-              <div
-                className="c3 S1"
-              >
-                <div
-                  className="S1"
-                >
-                  lead
-                </div>
-              </div>
-            </responsiveweb__Base>
-            <responsiveweb>
-              <div
-                className="c4 S1"
-              />
-            </responsiveweb>
-            <responsiveweb__SupportsContainer>
-              <div
-                className="c5 S1"
-              >
-                <responsiveweb>
-                  <div
-                    className="c6 S1"
-                  >
-                    <div
-                      className="S1"
-                    >
-                      support-1
-                    </div>
-                  </div>
-                </responsiveweb>
-              </div>
-            </responsiveweb__SupportsContainer>
-          </div>
-        </responsiveweb__Base>
+        <div
+          className="S1"
+        >
+          lead
+        </div>
       </div>
-    </responsiveweb__SliceContainer>
+      <div
+        className="c9 S1"
+      />
+      <div
+        className="c10 S1"
+      >
+        <div
+          className="c11 S1"
+        >
+          <div
+            className="S1"
+          >
+            support-1
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</configweb__Base>
+</div>
 `;
 
 exports[`3. three child elements 1`] = `
-.c1 {
+.c2 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -510,7 +488,7 @@ exports[`3. three child elements 1`] = `
   justify-content: center;
 }
 
-.c4 {
+.c9 {
   border-bottom-color: #DBDBDB;
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -522,7 +500,7 @@ exports[`3. three child elements 1`] = `
   min-width: auto;
 }
 
-.c5 {
+.c10 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -532,7 +510,23 @@ exports[`3. three child elements 1`] = `
   height: auto;
 }
 
-.c2 {
+.c1 .supportImageContainerClass {
+  display: none;
+}
+
+.c1 .supportSummaryClass {
+  display: none;
+}
+
+.c1 .summaryHidden {
+  display: none;
+}
+
+.c1 .leadSummary125Class {
+  display: block;
+}
+
+.c5 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -548,7 +542,7 @@ exports[`3. three child elements 1`] = `
   width: 100%;
 }
 
-.c3 {
+.c8 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -562,28 +556,12 @@ exports[`3. three child elements 1`] = `
   width: auto;
 }
 
-.c6 {
+.c11 {
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.c0 .supportImageContainerClass {
-  display: none;
-}
-
-.c0 .supportSummaryClass {
-  display: none;
-}
-
-.c0 .summaryHidden {
-  display: none;
-}
-
-.c0 .leadSummary125Class {
-  display: block;
-}
-
-.c7 {
+.c12 {
   padding-left: 10px;
   padding-right: 10px;
   border-top-color: #DBDBDB;
@@ -594,13 +572,13 @@ exports[`3. three child elements 1`] = `
 }
 
 @media (-webkit-min-device-pixel-ratio:2) {
-  .c1 {
+  .c2 {
     border-bottom-width: 0.5px;
   }
 }
 
 @media (min-width:768px) {
-  .c4 {
+  .c9 {
     border-bottom: none;
     border-right-color: #DBDBDB;
     border-right-style: solid;
@@ -613,7 +591,7 @@ exports[`3. three child elements 1`] = `
 }
 
 @media (min-width:768px) {
-  .c5 {
+  .c10 {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
@@ -621,7 +599,46 @@ exports[`3. three child elements 1`] = `
 }
 
 @media (min-width:768px) {
-  .c2 {
+  .c1 .leadHeadlineClass {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .c1 .leadImageContainerClass {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin-bottom: 0;
+    min-width: auto;
+  }
+
+  .c1 .leadContentContainerClass {
+    -webkit-flex-basis: 0 !important;
+    -ms-flex-preferred-size: 0 !important;
+    flex-basis: 0 !important;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    margin-bottom: 10px;
+    min-width: 300px;
+  }
+
+  .c1 .supportImageContainerClass {
+    display: block;
+  }
+
+  .c1 .leadSummary125Class {
+    display: none;
+  }
+
+  .c1 .leadSummary175Class {
+    display: block;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -629,20 +646,29 @@ exports[`3. three child elements 1`] = `
   }
 }
 
-@media (min-width:768px) {
-  .c2 {
+@media (min-width:1024px) {
+  .c3 {
     width: 100%;
   }
 }
 
 @media (min-width:1024px) {
-  .c2 {
+  .c6 {
+    -webkit-box-flex: 1.5;
+    -webkit-flex-grow: 1.5;
+    -ms-flex-positive: 1.5;
+    flex-grow: 1.5;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
     width: 100%;
   }
 }
 
 @media (min-width:768px) {
-  .c3 {
+  .c7 {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
@@ -655,17 +681,8 @@ exports[`3. three child elements 1`] = `
   }
 }
 
-@media (min-width:1024px) {
-  .c3 {
-    -webkit-box-flex: 1.5;
-    -webkit-flex-grow: 1.5;
-    -ms-flex-positive: 1.5;
-    flex-grow: 1.5;
-  }
-}
-
 @media (min-width:768px) {
-  .c6 {
+  .c11 {
     margin-left: 10px;
     margin-right: 10px;
     padding-left: 0;
@@ -674,47 +691,8 @@ exports[`3. three child elements 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c6 {
+  .c11 {
     margin-top: 0;
-  }
-}
-
-@media (min-width:768px) {
-  .c0 .leadHeadlineClass {
-    font-size: 30px;
-    line-height: 30px;
-  }
-
-  .c0 .leadImageContainerClass {
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    margin-bottom: 0;
-    min-width: auto;
-  }
-
-  .c0 .leadContentContainerClass {
-    -webkit-flex-basis: 0 !important;
-    -ms-flex-preferred-size: 0 !important;
-    flex-basis: 0 !important;
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    margin-bottom: 10px;
-    min-width: 300px;
-  }
-
-  .c0 .supportImageContainerClass {
-    display: block;
-  }
-
-  .c0 .leadSummary125Class {
-    display: none;
-  }
-
-  .c0 .leadSummary175Class {
-    display: block;
   }
 }
 
@@ -751,7 +729,7 @@ exports[`3. three child elements 1`] = `
 }
 
 @media (min-width:768px) {
-  .c7 {
+  .c12 {
     margin-left: 10px;
     margin-right: 10px;
     padding-left: 0;
@@ -760,7 +738,7 @@ exports[`3. three child elements 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c7 {
+  .c12 {
     margin-top: 10px;
   }
 }
@@ -775,66 +753,50 @@ exports[`3. three child elements 1`] = `
 }
 </style>
 
-<configweb__Base>
+<div
+  className="c0 c1 S1"
+>
   <div
-    className="c0 S1"
+    className="c2 S1"
   >
-    <responsiveweb__SliceContainer>
+    <div
+      className="c3 c4 c5 S1"
+    >
       <div
-        className="c1 S1"
+        className="c6 c7 c8 S1"
       >
-        <responsiveweb__Base>
-          <div
-            className="c2 S1"
-          >
-            <responsiveweb__Base>
-              <div
-                className="c3 S1"
-              >
-                <div
-                  className="S1"
-                >
-                  lead
-                </div>
-              </div>
-            </responsiveweb__Base>
-            <responsiveweb>
-              <div
-                className="c4 S1"
-              />
-            </responsiveweb>
-            <responsiveweb__SupportsContainer>
-              <div
-                className="c5 S1"
-              >
-                <responsiveweb>
-                  <div
-                    className="c6 S1"
-                  >
-                    <div
-                      className="S1"
-                    >
-                      support-1
-                    </div>
-                  </div>
-                </responsiveweb>
-                <responsiveweb>
-                  <div
-                    className="c7 S1"
-                  >
-                    <div
-                      className="S1"
-                    >
-                      support-2
-                    </div>
-                  </div>
-                </responsiveweb>
-              </div>
-            </responsiveweb__SupportsContainer>
-          </div>
-        </responsiveweb__Base>
+        <div
+          className="S1"
+        >
+          lead
+        </div>
       </div>
-    </responsiveweb__SliceContainer>
+      <div
+        className="c9 S1"
+      />
+      <div
+        className="c10 S1"
+      >
+        <div
+          className="c11 S1"
+        >
+          <div
+            className="S1"
+          >
+            support-1
+          </div>
+        </div>
+        <div
+          className="c12 S1"
+        >
+          <div
+            className="S1"
+          >
+            support-2
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</configweb__Base>
+</div>
 `;
