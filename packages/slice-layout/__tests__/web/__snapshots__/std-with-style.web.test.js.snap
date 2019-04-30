@@ -3,138 +3,6 @@
 exports[`1. no child elements 1`] = `""`;
 
 exports[`2. a single child element 1`] = `
-.c3 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-bottom-color: #DBDBDB;
-  border-bottom-width: 1px;
-  border-style: solid;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c7 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.c2 .imageContainerClass {
-  display: block;
-}
-
-.c2 .summaryHidden {
-  display: none;
-}
-
-.c2 .summary125Class {
-  display: block;
-}
-
-.c6 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  width: 100%;
-}
-
-@media (-webkit-min-device-pixel-ratio:2) {
-  .c3 {
-    border-bottom-width: 0.5px;
-  }
-}
-
-@media (min-width:768px) {
-  .c7 {
-    -webkit-flex-basis: 0 !important;
-    -ms-flex-preferred-size: 0 !important;
-    flex-basis: 0 !important;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 .imageContainerClass {
-    display: block;
-  }
-
-  .c2 .headlineClass {
-    font-size: 25px;
-    line-height: 28px;
-    margin-top: 5px;
-  }
-}
-
-@media (min-width:768px) {
-  .c1 .imageContainerClass {
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    margin-bottom: 0;
-    min-width: auto;
-    padding-right: 10px;
-  }
-
-  .c1 .contentContainerClass {
-    -webkit-flex-basis: 0 !important;
-    -ms-flex-preferred-size: 0 !important;
-    flex-basis: 0 !important;
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    min-width: 300px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c0 .summary125Class {
-    display: block;
-  }
-
-  .c0 .summary145Class {
-    display: none;
-  }
-}
-
-@media (min-width:768px) {
-  .c6 {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-}
-
-@media (min-width:768px) {
-  .c5 {
-    width: 80.8%;
-  }
-}
-
-@media (min-width:1024px) {
-  .c4 {
-    width: 56.2%;
-  }
-}
-
 <style>
 .S1 {
   border-bottom-width: 0px;
@@ -145,165 +13,38 @@ exports[`2. a single child element 1`] = `
 }
 </style>
 
-<div
-  className="c0 c1 c2 S1"
->
+<configweb__Base>
   <div
-    className="c3 S1"
+    className="jwBPcH S1"
   >
-    <div
-      className="c4 c5 c6 S1"
-    >
+    <responsiveweb__SliceContainer>
       <div
-        className="c7 S1"
+        className="goDieb S1"
       >
-        <div
-          className="S1"
-        >
-          standard-1
-        </div>
+        <responsiveweb__Base>
+          <div
+            className="ipwGMY S1"
+          >
+            <responsiveweb__ChildContainer>
+              <div
+                className="bwWtkp S1"
+              >
+                <div
+                  className="S1"
+                >
+                  standard-1
+                </div>
+              </div>
+            </responsiveweb__ChildContainer>
+          </div>
+        </responsiveweb__Base>
       </div>
-    </div>
+    </responsiveweb__SliceContainer>
   </div>
-</div>
+</configweb__Base>
 `;
 
 exports[`3. two child elements 1`] = `
-.c2 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-bottom-color: #DBDBDB;
-  border-bottom-width: 1px;
-  border-style: solid;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c6 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.c7 {
-  border-bottom-color: #DBDBDB;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  min-width: auto;
-}
-
-.c1 .imageContainerClass {
-  display: block;
-}
-
-.c1 .summaryHidden {
-  display: none;
-}
-
-.c1 .summary125Class {
-  display: block;
-}
-
-.c5 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  width: 100%;
-}
-
-@media (-webkit-min-device-pixel-ratio:2) {
-  .c2 {
-    border-bottom-width: 0.5px;
-  }
-}
-
-@media (min-width:768px) {
-  .c6 {
-    -webkit-flex-basis: 0 !important;
-    -ms-flex-preferred-size: 0 !important;
-    flex-basis: 0 !important;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:768px) {
-  .c7 {
-    border-bottom: none;
-    border-right-color: #DBDBDB;
-    border-right-style: solid;
-    border-right-width: 1px;
-    -webkit-flex: 0 !important;
-    -ms-flex: 0 !important;
-    flex: 0 !important;
-    margin: 0 10px;
-  }
-}
-
-@media (min-width:768px) {
-  .c1 .imageContainerClass {
-    display: block;
-  }
-
-  .c1 .headlineClass {
-    font-size: 25px;
-    line-height: 28px;
-    margin-top: 5px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c0 .summary125Class {
-    display: block;
-  }
-
-  .c0 .summary145Class {
-    display: none;
-  }
-}
-
-@media (min-width:768px) {
-  .c5 {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-}
-
-@media (min-width:768px) {
-  .c4 {
-    width: 80.8%;
-  }
-}
-
-@media (min-width:1024px) {
-  .c3 {
-    width: 56.2%;
-  }
-}
-
 <style>
 .S1 {
   border-bottom-width: 0px;
@@ -314,179 +55,54 @@ exports[`3. two child elements 1`] = `
 }
 </style>
 
-<div
-  className="c0 c1 S1"
->
+<configweb__Base>
   <div
-    className="c2 S1"
+    className="blpnnB S1"
   >
-    <div
-      className="c3 c4 c5 S1"
-    >
+    <responsiveweb__SliceContainer>
       <div
-        className="c6 S1"
+        className="goDieb S1"
       >
-        <div
-          className="S1"
-        >
-          standard-1
-        </div>
+        <responsiveweb__Base>
+          <div
+            className="ipwGMY S1"
+          >
+            <responsiveweb__ChildContainer>
+              <div
+                className="bwWtkp S1"
+              >
+                <div
+                  className="S1"
+                >
+                  standard-1
+                </div>
+              </div>
+            </responsiveweb__ChildContainer>
+            <responsiveweb>
+              <div
+                className="iiVeDy S1"
+              />
+            </responsiveweb>
+            <responsiveweb__ChildContainer>
+              <div
+                className="bwWtkp S1"
+              >
+                <div
+                  className="S1"
+                >
+                  standard-2
+                </div>
+              </div>
+            </responsiveweb__ChildContainer>
+          </div>
+        </responsiveweb__Base>
       </div>
-      <div
-        className="c7 S1"
-      />
-      <div
-        className="c6 S1"
-      >
-        <div
-          className="S1"
-        >
-          standard-2
-        </div>
-      </div>
-    </div>
+    </responsiveweb__SliceContainer>
   </div>
-</div>
+</configweb__Base>
 `;
 
 exports[`4. three child elements 1`] = `
-.c2 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-bottom-color: #DBDBDB;
-  border-bottom-width: 1px;
-  border-style: solid;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c6 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.c7 {
-  border-bottom-color: #DBDBDB;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  min-width: auto;
-}
-
-.c1 .imageContainerClass {
-  display: none;
-}
-
-.c1 .summaryHidden {
-  display: none;
-}
-
-.c1 .summary125Class {
-  display: block;
-}
-
-.c5 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  width: 100%;
-}
-
-@media (-webkit-min-device-pixel-ratio:2) {
-  .c2 {
-    border-bottom-width: 0.5px;
-  }
-}
-
-@media (min-width:768px) {
-  .c6 {
-    -webkit-flex-basis: 0 !important;
-    -ms-flex-preferred-size: 0 !important;
-    flex-basis: 0 !important;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:768px) {
-  .c7 {
-    border-bottom: none;
-    border-right-color: #DBDBDB;
-    border-right-style: solid;
-    border-right-width: 1px;
-    -webkit-flex: 0 !important;
-    -ms-flex: 0 !important;
-    flex: 0 !important;
-    margin: 0 10px;
-  }
-}
-
-@media (min-width:768px) {
-  .c1 .imageContainerClass {
-    display: block;
-  }
-
-  .c1 .headlineClass {
-    font-size: 25px;
-    line-height: 28px;
-    margin-top: 5px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c0 .summary125Class {
-    display: none;
-  }
-
-  .c0 .summary145Class {
-    display: block;
-  }
-}
-
-@media (min-width:768px) {
-  .c5 {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-}
-
-@media (min-width:768px) {
-  .c4 {
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 100%;
-  }
-}
-
-@media (min-width:1024px) {
-  .c3 {
-    width: 100%;
-  }
-}
-
 <style>
 .S1 {
   border-bottom-width: 0px;
@@ -497,49 +113,65 @@ exports[`4. three child elements 1`] = `
 }
 </style>
 
-<div
-  className="c0 c1 S1"
->
+<configweb__Base>
   <div
-    className="c2 S1"
+    className="bCJkFj S1"
   >
-    <div
-      className="c3 c4 c5 S1"
-    >
+    <responsiveweb__SliceContainer>
       <div
-        className="c6 S1"
+        className="goDieb S1"
       >
-        <div
-          className="S1"
-        >
-          standard-1
-        </div>
+        <responsiveweb__Base>
+          <div
+            className="dOLCXz S1"
+          >
+            <responsiveweb__ChildContainer>
+              <div
+                className="bwWtkp S1"
+              >
+                <div
+                  className="S1"
+                >
+                  standard-1
+                </div>
+              </div>
+            </responsiveweb__ChildContainer>
+            <responsiveweb>
+              <div
+                className="iiVeDy S1"
+              />
+            </responsiveweb>
+            <responsiveweb__ChildContainer>
+              <div
+                className="bwWtkp S1"
+              >
+                <div
+                  className="S1"
+                >
+                  standard-2
+                </div>
+              </div>
+            </responsiveweb__ChildContainer>
+            <responsiveweb>
+              <div
+                className="iiVeDy S1"
+              />
+            </responsiveweb>
+            <responsiveweb__ChildContainer>
+              <div
+                className="bwWtkp S1"
+              >
+                <div
+                  className="S1"
+                >
+                  standard-3
+                </div>
+              </div>
+            </responsiveweb__ChildContainer>
+          </div>
+        </responsiveweb__Base>
       </div>
-      <div
-        className="c7 S1"
-      />
-      <div
-        className="c6 S1"
-      >
-        <div
-          className="S1"
-        >
-          standard-2
-        </div>
-      </div>
-      <div
-        className="c7 S1"
-      />
-      <div
-        className="c6 S1"
-      >
-        <div
-          className="S1"
-        >
-          standard-3
-        </div>
-      </div>
-    </div>
+    </responsiveweb__SliceContainer>
   </div>
-</div>
+</configweb__Base>
 `;
