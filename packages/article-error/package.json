@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-error",
-  "version": "0.2.65",
+  "version": "0.2.66",
   "description": "Article Error Template",
   "main": "dist/article-error",
   "dev": "src/article-error",
@@ -35,10 +35,10 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@thetimes/jest-lint": "*",
-    "@times-components/eslint-config-thetimes": "0.8.9",
-    "@times-components/jest-configurator": "2.5.4",
-    "@times-components/jest-serializer": "3.2.0",
-    "@times-components/storybook": "4.0.0",
+    "@times-components/eslint-config-thetimes": "0.8.10",
+    "@times-components/jest-configurator": "2.5.5",
+    "@times-components/jest-serializer": "3.2.1",
+    "@times-components/storybook": "4.0.1",
     "babel-cli": "6.26.0",
     "eslint": "5.9.0",
     "jest": "23.3.0",
@@ -55,8 +55,8 @@
     "react-native-web": "0.9.0"
   },
   "dependencies": {
-    "@times-components/button": "2.3.65",
-    "@times-components/styleguide": "3.28.8",
+    "@times-components/button": "2.3.66",
+    "@times-components/styleguide": "3.28.9",
     "prop-types": "15.6.2"
   },
   "publishConfig": {
