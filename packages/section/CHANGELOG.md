@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.12.0](https://github.com/newsuk/times-components/compare/@times-components/section@0.11.5...@times-components/section@0.12.0) (2019-04-30)
+
+
+### Features
+
+* replat-6101 edition tile summary padding fix ([#1903](https://github.com/newsuk/times-components/issues/1903)) ([bdb7406](https://github.com/newsuk/times-components/commit/bdb7406))
+
+
+
+
+
 ## [0.11.5](https://github.com/newsuk/times-components/compare/@times-components/section@0.11.4...@times-components/section@0.11.5) (2019-04-29)
 
 **Note:** Version bump only for package @times-components/section

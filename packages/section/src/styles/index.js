@@ -26,6 +26,9 @@ const styles = StyleSheet.create({
     color: colours.functional.brandColour,
     fontFamily: fonts.headlineRegular,
     fontSize: 20
+  },
+  tabletSpacing: {
+    paddingTop: spacing(4)
   }
 });
 

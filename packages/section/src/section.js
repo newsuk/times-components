@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { FlatList, View } from "react-native";
 import PropTypes from "prop-types";
-import Responsive from "@times-components/responsive";
+import Responsive, { ResponsiveContext } from "@times-components/responsive";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import SectionItemSeparator from "./section-item-separator";
 import withTrackingContext from "./section-tracking-context";
@@ -68,8 +68,9 @@ class Section extends Component {
   renderItemSeperator({ leadingItem }) {
     const { section: { name } } = this.props;
     const isPuzzle = name === "PuzzleSection";
+    const isLeadersSlice = leadingItem.name === "LeadersSlice";
 
-    if (isPuzzle || leadingItem.name === "") {
+    if (isPuzzle || isLeadersSlice) {
       return null;
     }
 
