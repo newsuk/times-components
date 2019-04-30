@@ -1,6 +1,165 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. a single child element 1`] = `
+.c1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1px;
+  border-style: solid;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c0 .supportImageContainerClass {
+  display: none;
+}
+
+.c0 .supportSummaryClass {
+  display: none;
+}
+
+.c0 .summaryHidden {
+  display: none;
+}
+
+.c0 .leadSummary125Class {
+  display: block;
+}
+
+.c2 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 100%;
+}
+
+.c3 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding-bottom: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+}
+
+@media (-webkit-min-device-pixel-ratio:2) {
+  .c1 {
+    border-bottom-width: 0.5px;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 .leadHeadlineClass {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .c0 .leadImageContainerClass {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin-bottom: 0;
+    min-width: auto;
+  }
+
+  .c0 .leadContentContainerClass {
+    -webkit-flex-basis: 0 !important;
+    -ms-flex-preferred-size: 0 !important;
+    flex-basis: 0 !important;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    margin-bottom: 10px;
+    min-width: 300px;
+  }
+
+  .c0 .supportImageContainerClass {
+    display: block;
+  }
+
+  .c0 .leadSummary125Class {
+    display: block;
+  }
+
+  .c0 .leadSummary175Class {
+    display: none;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 .leadImageContainerClass {
+    padding-right: 10px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 .leadImageContainerClass {
+    padding-right: 10px;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-bottom: 10px;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c2 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c3 {
+    -webkit-box-flex: 1.5;
+    -webkit-flex-grow: 1.5;
+    -ms-flex-positive: 1.5;
+    flex-grow: 1.5;
+  }
+}
+
 <style>
 .S1 {
   border-bottom-width: 0px;
@@ -13,19 +172,19 @@ exports[`1. a single child element 1`] = `
 
 <configweb__Base>
   <div
-    className="TWvSI S1"
+    className="c0 S1"
   >
     <responsiveweb__SliceContainer>
       <div
-        className="goDieb S1"
+        className="c1 S1"
       >
         <responsiveweb__Base>
           <div
-            className="dNDqlT S1"
+            className="c2 S1"
           >
             <responsiveweb__Base>
               <div
-                className="blsqKW S1"
+                className="c3 S1"
               >
                 <div
                   className="S1"
@@ -43,6 +202,233 @@ exports[`1. a single child element 1`] = `
 `;
 
 exports[`2. two child elements 1`] = `
+.c1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1px;
+  border-style: solid;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c4 {
+  border-bottom-color: #DBDBDB;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  min-width: auto;
+}
+
+.c5 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: auto;
+}
+
+.c0 .supportImageContainerClass {
+  display: none;
+}
+
+.c0 .supportSummaryClass {
+  display: none;
+}
+
+.c0 .summaryHidden {
+  display: none;
+}
+
+.c0 .leadSummary125Class {
+  display: block;
+}
+
+.c2 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 100%;
+}
+
+.c3 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding-bottom: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: auto;
+}
+
+.c6 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media (-webkit-min-device-pixel-ratio:2) {
+  .c1 {
+    border-bottom-width: 0.5px;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    border-bottom: none;
+    border-right-color: #DBDBDB;
+    border-right-style: solid;
+    border-right-width: 1px;
+    -webkit-flex: 0 !important;
+    -ms-flex: 0 !important;
+    flex: 0 !important;
+    margin: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    -webkit-flex-basis: 0 !important;
+    -ms-flex-preferred-size: 0 !important;
+    flex-basis: 0 !important;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 .leadHeadlineClass {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .c0 .leadImageContainerClass {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin-bottom: 0;
+    min-width: auto;
+  }
+
+  .c0 .leadContentContainerClass {
+    -webkit-flex-basis: 0 !important;
+    -ms-flex-preferred-size: 0 !important;
+    flex-basis: 0 !important;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    margin-bottom: 10px;
+    min-width: 300px;
+  }
+
+  .c0 .supportImageContainerClass {
+    display: block;
+  }
+
+  .c0 .leadSummary125Class {
+    display: block;
+  }
+
+  .c0 .leadSummary175Class {
+    display: none;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 .leadImageContainerClass {
+    padding-right: 10px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 .leadImageContainerClass {
+    padding-right: 10px;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-bottom: 10px;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    width: 100%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c2 {
+    width: 100%;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    -webkit-flex-basis: 0 !important;
+    -ms-flex-preferred-size: 0 !important;
+    flex-basis: 0 !important;
+    -webkit-box-flex: 3;
+    -webkit-flex-grow: 3;
+    -ms-flex-positive: 3;
+    flex-grow: 3;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c3 {
+    -webkit-box-flex: 2.75;
+    -webkit-flex-grow: 2.75;
+    -ms-flex-positive: 2.75;
+    flex-grow: 2.75;
+  }
+}
+
+@media (min-width:768px) {
+  .c6 {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c6 {
+    margin-top: 0;
+  }
+}
+
 <style>
 .S1 {
   border-bottom-width: 0px;
@@ -55,19 +441,19 @@ exports[`2. two child elements 1`] = `
 
 <configweb__Base>
   <div
-    className="TWvSI S1"
+    className="c0 S1"
   >
     <responsiveweb__SliceContainer>
       <div
-        className="goDieb S1"
+        className="c1 S1"
       >
         <responsiveweb__Base>
           <div
-            className="dVONZ S1"
+            className="c2 S1"
           >
             <responsiveweb__Base>
               <div
-                className="biSnqQ S1"
+                className="c3 S1"
               >
                 <div
                   className="S1"
@@ -78,16 +464,16 @@ exports[`2. two child elements 1`] = `
             </responsiveweb__Base>
             <responsiveweb>
               <div
-                className="dVXpuR S1"
+                className="c4 S1"
               />
             </responsiveweb>
             <responsiveweb__SupportsContainer>
               <div
-                className="bWUCtt S1"
+                className="c5 S1"
               >
                 <responsiveweb>
                   <div
-                    className="vRmnC S1"
+                    className="c6 S1"
                   >
                     <div
                       className="S1"
@@ -107,6 +493,278 @@ exports[`2. two child elements 1`] = `
 `;
 
 exports[`3. three child elements 1`] = `
+.c1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1px;
+  border-style: solid;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c4 {
+  border-bottom-color: #DBDBDB;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  min-width: auto;
+}
+
+.c5 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: auto;
+}
+
+.c2 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 100%;
+}
+
+.c3 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding-bottom: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: auto;
+}
+
+.c6 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.c0 .supportImageContainerClass {
+  display: none;
+}
+
+.c0 .supportSummaryClass {
+  display: none;
+}
+
+.c0 .summaryHidden {
+  display: none;
+}
+
+.c0 .leadSummary125Class {
+  display: block;
+}
+
+.c7 {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-top-color: #DBDBDB;
+  border-top-style: solid;
+  border-top-width: 1px;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+@media (-webkit-min-device-pixel-ratio:2) {
+  .c1 {
+    border-bottom-width: 0.5px;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    border-bottom: none;
+    border-right-color: #DBDBDB;
+    border-right-style: solid;
+    border-right-width: 1px;
+    -webkit-flex: 0 !important;
+    -ms-flex: 0 !important;
+    flex: 0 !important;
+    margin: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    -webkit-flex-basis: 0 !important;
+    -ms-flex-preferred-size: 0 !important;
+    flex-basis: 0 !important;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-bottom: 10px;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    width: 100%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c2 {
+    width: 100%;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    -webkit-flex-basis: 0 !important;
+    -ms-flex-preferred-size: 0 !important;
+    flex-basis: 0 !important;
+    -webkit-box-flex: 2;
+    -webkit-flex-grow: 2;
+    -ms-flex-positive: 2;
+    flex-grow: 2;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c3 {
+    -webkit-box-flex: 1.5;
+    -webkit-flex-grow: 1.5;
+    -ms-flex-positive: 1.5;
+    flex-grow: 1.5;
+  }
+}
+
+@media (min-width:768px) {
+  .c6 {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c6 {
+    margin-top: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 .leadHeadlineClass {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .c0 .leadImageContainerClass {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin-bottom: 0;
+    min-width: auto;
+  }
+
+  .c0 .leadContentContainerClass {
+    -webkit-flex-basis: 0 !important;
+    -ms-flex-preferred-size: 0 !important;
+    flex-basis: 0 !important;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    margin-bottom: 10px;
+    min-width: 300px;
+  }
+
+  .c0 .supportImageContainerClass {
+    display: block;
+  }
+
+  .c0 .leadSummary125Class {
+    display: none;
+  }
+
+  .c0 .leadSummary175Class {
+    display: block;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 .leadImageContainerClass {
+    margin-bottom: 10px;
+    min-width: 370px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 .leadImageContainerClass {
+    padding-right: 10px;
+    min-width: auto;
+  }
+
+  .c0 .supportImageContainerClass {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin-bottom: 0;
+    max-width: 185px;
+    min-width: auto;
+    padding-right: 10px;
+  }
+
+  .c0 .supportContentContainerClass {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin-bottom: 0;
+    min-width: 100px;
+  }
+}
+
+@media (min-width:768px) {
+  .c7 {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c7 {
+    margin-top: 10px;
+  }
+}
+
 <style>
 .S1 {
   border-bottom-width: 0px;
@@ -119,19 +777,19 @@ exports[`3. three child elements 1`] = `
 
 <configweb__Base>
   <div
-    className="kcccKH S1"
+    className="c0 S1"
   >
     <responsiveweb__SliceContainer>
       <div
-        className="goDieb S1"
+        className="c1 S1"
       >
         <responsiveweb__Base>
           <div
-            className="dVONZ S1"
+            className="c2 S1"
           >
             <responsiveweb__Base>
               <div
-                className="elUlFq S1"
+                className="c3 S1"
               >
                 <div
                   className="S1"
@@ -142,16 +800,16 @@ exports[`3. three child elements 1`] = `
             </responsiveweb__Base>
             <responsiveweb>
               <div
-                className="dVXpuR S1"
+                className="c4 S1"
               />
             </responsiveweb>
             <responsiveweb__SupportsContainer>
               <div
-                className="bWUCtt S1"
+                className="c5 S1"
               >
                 <responsiveweb>
                   <div
-                    className="vRmnC S1"
+                    className="c6 S1"
                   >
                     <div
                       className="S1"
@@ -162,7 +820,7 @@ exports[`3. three child elements 1`] = `
                 </responsiveweb>
                 <responsiveweb>
                   <div
-                    className="etnAjX S1"
+                    className="c7 S1"
                   >
                     <div
                       className="S1"
