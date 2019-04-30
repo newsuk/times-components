@@ -65,11 +65,11 @@ class Section extends Component {
     );
   }
 
-  renderItemSeperator() {
+  renderItemSeperator({ leadingItem }) {
     const { section: { name } } = this.props;
     const isPuzzle = name === "PuzzleSection";
 
-    if (isPuzzle) {
+    if (isPuzzle || leadingItem.name === "") {
       return null;
     }
 
