@@ -11,7 +11,7 @@ const Gutter = ({ children }) => (
         style={{
           alignSelf: "center",
           maxWidth: "100%",
-          paddingHorizontal: isTablet ? spacing(2) : spacing(0),
+          paddingHorizontal: isTablet ? spacing(2) : 0,
           width: editionMaxWidth
         }}
       >

@@ -100,7 +100,6 @@ export default () => {
   });
 };
 
-// https://nidigitalsolutions.jira.com/browse/REPLAT-6294
 // this test only applies for android as ios tiles have save buttons
 export const saveClickTracking = () => {
   it("Save/Unsave article click tracking", () => {
