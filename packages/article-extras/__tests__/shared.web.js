@@ -48,6 +48,25 @@ export default () => {
 
         expect(testInstance.toJSON()).toMatchSnapshot();
       }
+    },
+    {
+      name: "no related articles, topics and comments when user not logged in",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <ArticleExtras
+            analyticsStream={() => {}}
+            articleId="dummy-article-id"
+            commentsEnabled
+            registerNode={() => {}}
+            relatedArticleSlice={null}
+            relatedArticlesVisible
+            spotAccountId={null}
+            topics={null}
+          />
+        );
+
+        expect(testInstance.toJSON()).toMatchSnapshot();
+      }
     }
   ];
   iterator(tests);
