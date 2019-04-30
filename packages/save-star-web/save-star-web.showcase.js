@@ -1,6 +1,6 @@
 import React from "react";
 import SaveStarWeb from "./src/save-star-web";
-import mockSaveApi from "./mock-save-api";
+import mockSaveApi from "./mock-save-api-showcase";
 
 export default {
   children: [

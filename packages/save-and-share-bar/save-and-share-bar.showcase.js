@@ -1,5 +1,5 @@
 import React from "react";
-import saveApi from "@times-components/save-star-web/mock-save-api";
+import saveApi from "@times-components/save-star-web/mock-save-api-showcase";
 import SaveAndShareBar from "./src/save-and-share-bar";
 
 export default {

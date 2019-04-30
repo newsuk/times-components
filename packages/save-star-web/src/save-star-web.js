@@ -29,6 +29,8 @@ class SaveStarWeb extends Component {
   componentDidMount() {
     const { articleId, saveApi } = this.props;
 
+    this.setState({ loadingState: true });
+
     if (typeof window === "undefined") {
       this.setState({ loadingState: false });
     }
