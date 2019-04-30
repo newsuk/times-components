@@ -53,7 +53,7 @@ const platformCode = platform => {
 };
 
 export default (platform, cwd, options = {}) => {
-  const { coverageIgnoreGlobs = [], setupFilesAfterEnv } = options;
+  const { coverageIgnoreGlobs = [], setupTestFrameworkScriptFile } = options;
   const [local, global] = findNodeModules(cwd);
   const module = path.resolve(cwd, local.replace("node_modules", ""));
   const rootDir = path.resolve(
@@ -95,8 +95,8 @@ export default (platform, cwd, options = {}) => {
     ]
   };
 
-  if (setupFilesAfterEnv) {
-    config.setupFilesAfterEnv = setupFilesAfterEnv;
+  if (setupTestFrameworkScriptFile) {
+    config.setupTestFrameworkScriptFile = setupTestFrameworkScriptFile;
   }
 
   return config;

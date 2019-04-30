@@ -3,5 +3,5 @@ const path = require("path");
 
 module.exports = jestConfigurator("web", __dirname, {
   coverageIgnoreGlobs: ["tracking-context-types.js", "tracking.js"],
-  setupFilesAfterEnv: path.join(__dirname, "./serializers")
+  setupTestFrameworkScriptFile: path.join(__dirname, "./serializers")
 });
