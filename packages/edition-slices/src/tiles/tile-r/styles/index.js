@@ -8,8 +8,8 @@ const styles = {
   },
   headline: {
     fontFamily: fonts.headline,
-    fontSize: 45,
-    lineHeight: 45
+    fontSize: 40,
+    lineHeight: 40
   }
 };
 

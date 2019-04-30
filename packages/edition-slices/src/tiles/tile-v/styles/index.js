@@ -7,8 +7,8 @@ const styles = {
   },
   headline: {
     fontFamily: fonts.headline,
-    fontSize: 35,
-    lineHeight: 35,
+    fontSize: 30,
+    lineHeight: 30,
     paddingBottom: spacing(1)
   },
   imageContainer: {

@@ -1,4 +1,4 @@
-import { fontFactory, spacing } from "@times-components/styleguide";
+import { fonts, spacing } from "@times-components/styleguide";
 
 const styles = {
   container: {
@@ -7,10 +7,9 @@ const styles = {
     paddingTop: spacing(2)
   },
   headline: {
-    ...fontFactory({
-      font: "headline",
-      fontSize: "tileLeadHeadline"
-    })
+    fontFamily: fonts.headline,
+    fontSize: 30,
+    lineHeight: 30
   },
   summaryContainer: {
     marginHorizontal: spacing(2),

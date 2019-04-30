@@ -20,7 +20,7 @@ export default breakpoint => ({
   headline: {
     fontFamily: fonts.headline,
     fontSize: headlineFontSizeResolver[breakpoint],
-    lineHeight: 35,
+    lineHeight: headlineFontSizeResolver[breakpoint],
     marginBottom: spacing(2),
     textAlign: "center"
   },

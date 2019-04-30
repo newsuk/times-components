@@ -8,8 +8,8 @@ const styles = {
   },
   headline: {
     fontFamily: fonts.headline,
-    fontSize: 22,
-    lineHeight: 22,
+    fontSize: 20,
+    lineHeight: 20,
     paddingBottom: spacing(1)
   },
   imageContainer: {

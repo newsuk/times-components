@@ -196,9 +196,9 @@ exports[`3. tile c 1`] = `
         Object {
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 22,
+          "fontSize": 20,
           "fontWeight": "900",
-          "lineHeight": 22,
+          "lineHeight": 20,
           "marginBottom": 5,
           "paddingBottom": 5,
         }
@@ -1421,9 +1421,9 @@ exports[`18. tile r 1`] = `
           Object {
             "color": "#333333",
             "fontFamily": "TimesModern-Bold",
-            "fontSize": 45,
+            "fontSize": 40,
             "fontWeight": "900",
-            "lineHeight": 45,
+            "lineHeight": 40,
             "marginBottom": 5,
           }
         }
@@ -1686,9 +1686,9 @@ exports[`21. tile u 1`] = `
           Object {
             "color": "#333333",
             "fontFamily": "TimesModern-Bold",
-            "fontSize": 25,
+            "fontSize": 35,
             "fontWeight": "900",
-            "lineHeight": 25,
+            "lineHeight": 35,
             "marginBottom": 5,
             "paddingVertical": 5,
           }
@@ -1770,9 +1770,9 @@ exports[`22. tile v 1`] = `
           Object {
             "color": "#333333",
             "fontFamily": "TimesModern-Bold",
-            "fontSize": 35,
+            "fontSize": 30,
             "fontWeight": "900",
-            "lineHeight": 35,
+            "lineHeight": 30,
             "marginBottom": 5,
             "paddingBottom": 5,
           }
@@ -1935,9 +1935,9 @@ exports[`24. tile x 1`] = `
           Object {
             "color": "#333333",
             "fontFamily": "TimesModern-Bold",
-            "fontSize": 45,
+            "fontSize": 40,
             "fontWeight": "900",
-            "lineHeight": 45,
+            "lineHeight": 40,
             "marginBottom": 5,
           }
         }
@@ -2022,9 +2022,9 @@ exports[`25. tile y 1`] = `
         Object {
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 35,
+          "fontSize": 30,
           "fontWeight": "900",
-          "lineHeight": 35,
+          "lineHeight": 30,
           "marginBottom": 5,
         }
       }
@@ -2102,9 +2102,9 @@ exports[`26. tile z 1`] = `
           Object {
             "color": "#333333",
             "fontFamily": "TimesModern-Bold",
-            "fontSize": 35,
+            "fontSize": 25,
             "fontWeight": "900",
-            "lineHeight": 35,
+            "lineHeight": 25,
             "marginBottom": 10,
           }
         }
@@ -2379,9 +2379,9 @@ exports[`29. tile ae 1`] = `
           Object {
             "color": "#333333",
             "fontFamily": "TimesModern-Bold",
-            "fontSize": 35,
+            "fontSize": 30,
             "fontWeight": "900",
-            "lineHeight": 35,
+            "lineHeight": 30,
             "marginBottom": 5,
           }
         }
@@ -2500,7 +2500,7 @@ exports[`31. tile aj 1`] = `
           Object {
             "color": "#333333",
             "fontFamily": "TimesModern-Bold",
-            "fontSize": 22,
+            "fontSize": 25,
             "fontWeight": "900",
             "lineHeight": 25,
             "marginBottom": 5,
@@ -2999,7 +2999,7 @@ exports[`37. tile ad 1`] = `
             "fontFamily": "TimesModern-Bold",
             "fontSize": 20,
             "fontWeight": "900",
-            "lineHeight": 25,
+            "lineHeight": 20,
             "marginBottom": 5,
           }
         }
@@ -3075,7 +3075,7 @@ exports[`38. tile ac 1`] = `
           "fontFamily": "TimesModern-Bold",
           "fontSize": 30,
           "fontWeight": "900",
-          "lineHeight": 35,
+          "lineHeight": 30,
           "marginBottom": 10,
           "textAlign": "center",
         }
