@@ -43,7 +43,7 @@
     "@times-components/utils": "4.10.4",
     "lodash.invert": "4.3.0",
     "prop-types": "15.7.2",
-    "styled-components": "4.2.0"
+    "styled-components": "3.4.0"
   },
   "devDependencies": {
     "@babel/cli": "7.4.4",
@@ -62,7 +62,7 @@
     "babel-plugin-styled-components": "1.10.0",
     "eslint": "5.16.0",
     "jest": "23.6.0",
-    "jest-styled-components": "6.3.1",
+    "jest-styled-components": "5.0.1",
     "prettier": "1.17.0",
     "react": "16.5.2",
     "react-dom": "16.5.2",

@@ -83,7 +83,7 @@
     "@times-components/styleguide": "3.28.7",
     "@times-components/svgs": "2.7.4",
     "prop-types": "15.7.2",
-    "styled-components": "4.2.0"
+    "styled-components": "3.4.0"
   },
   "peerDependencies": {
     "react": ">=16.5",
