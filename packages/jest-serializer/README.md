@@ -282,15 +282,6 @@ with the raw output, then prune it iteratively to make sure you both don't miss
 something and/or can make informed decision on where you want to split your
 snapshots.
 
-[jest-lint](https://github.com/newsuk/jest-lint) should make your life a lot
-easier when it comes to deciding on when to "stop" or where to focus. It's
-particularly picky on the number of attributes on a JSX node which will force
-you to split your tests out. Try and find a natural split for the type of
-component and the type of attributes that are being spewed into the snapshot.
-For example, a component may have a number of functional `prop`s you care about
-and a collection of non-functional `prop`s. This would lead to a natural divide
-of functional and non-functional tests e.g. accessibility vs rendering vs style.
-
 It's particularly recommended to split out styling from rendering in tests due
 to the same "too many updates" problem. It's much more likely that the snapshots
 will be valued if they only update when they're supposed to and changing

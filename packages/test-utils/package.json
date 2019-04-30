@@ -7,8 +7,8 @@
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
-    "depcheck": "depcheck --ignores='@thetimes/jest-lint,babel-*,depcheck,eslint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
-    "lint": "eslint . && yarn prettier:diff && yarn depcheck && jest-lint",
+    "depcheck": "depcheck --ignores='babel-*,depcheck,eslint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
+    "lint": "eslint . && yarn prettier:diff && yarn depcheck",
     "test": "jest",
     "prepublishOnly": "yarn transpile && yarn bundle",
     "cleanup-dist": "rm -rf dist",
@@ -39,7 +39,6 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@thetimes/jest-lint": "*",
     "@times-components/eslint-config-thetimes": "0.8.10",
     "@times-components/webpack-configurator": "2.0.16",
     "babel-preset-react-native": "4.0.0",

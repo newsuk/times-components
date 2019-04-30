@@ -5,10 +5,10 @@
   "main": "dist/index",
   "dev": "src/index",
   "scripts": {
-    "depcheck": "depcheck --ignores='babel-*,depcheck,eslint,@thetimes/jest-lint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
+    "depcheck": "depcheck --ignores='babel-*,depcheck,eslint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
-    "lint": "eslint . && yarn prettier:diff && yarn depcheck && jest-lint",
+    "lint": "eslint . && yarn prettier:diff && yarn depcheck",
     "prepublishOnly": "yarn transpile",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist"
@@ -34,7 +34,6 @@
     "@times-components/styleguide": "3.28.9"
   },
   "devDependencies": {
-    "@thetimes/jest-lint": "*",
     "@times-components/eslint-config-thetimes": "0.8.10",
     "babel-cli": "6.26.0",
     "eslint": "5.9.0",

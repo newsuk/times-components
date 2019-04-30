@@ -7,7 +7,7 @@
   "scripts": {
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
-    "depcheck": "depcheck --ignores='@thetimes/jest-lint,babel-*,depcheck,eslint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
+    "depcheck": "depcheck --ignores='babel-*,depcheck,eslint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
     "lint": "eslint . && yarn prettier:diff && yarn depcheck",
     "prepublishOnly": "yarn transpile && yarn bundle",
     "cleanup-dist": "rm -rf dist",

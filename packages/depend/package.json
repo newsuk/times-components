@@ -8,8 +8,8 @@
     "prepublishOnly": "yarn transpile",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
-    "depcheck": "depcheck --ignores='@thetimes/jest-lint,babel-*,depcheck,eslint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
-    "lint": "eslint . && yarn prettier:diff && yarn depcheck && jest-lint",
+    "depcheck": "depcheck --ignores='babel-*,depcheck,eslint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
+    "lint": "eslint . && yarn prettier:diff && yarn depcheck",
     "test": "jest",
     "cli": "node dist/cli.js -l ../../"
   },
@@ -52,7 +52,6 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@thetimes/jest-lint": "*",
     "@times-components/eslint-config-thetimes": "0.8.10",
     "babel-cli": "6.26.0",
     "babel-core": "6.26.0",

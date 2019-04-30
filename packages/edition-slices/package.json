@@ -5,10 +5,10 @@
   "main": "dist/edition-slices",
   "dev": "src/edition-slices",
   "scripts": {
-    "depcheck": "depcheck --ignores='babel-*,depcheck,eslint,@thetimes/jest-lint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
+    "depcheck": "depcheck --ignores='babel-*,depcheck,eslint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
-    "lint": "eslint . && yarn prettier:diff && yarn depcheck && jest-lint",
+    "lint": "eslint . && yarn prettier:diff && yarn depcheck",
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
     "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
     "test:web": "jest --config='./__tests__/web/jest.config.js'",
@@ -52,7 +52,6 @@
     "prop-types": "15.6.2"
   },
   "devDependencies": {
-    "@thetimes/jest-lint": "*",
     "@times-components/eslint-config-thetimes": "0.8.10",
     "@times-components/fixture-generator": "0.23.6",
     "@times-components/jest-configurator": "2.5.5",
