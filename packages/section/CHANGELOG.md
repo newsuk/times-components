@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.13.0](https://github.com/newsuk/times-components/compare/@times-components/section@0.12.5...@times-components/section@0.13.0) (2019-05-01)
+
+
+### Features
+
+* replat 6101 edition slices keylines ([#1913](https://github.com/newsuk/times-components/issues/1913)) ([4919482](https://github.com/newsuk/times-components/commit/4919482))
+
+
+
+
+
 ## [0.12.5](https://github.com/newsuk/times-components/compare/@times-components/section@0.12.4...@times-components/section@0.12.5) (2019-05-01)
 
 **Note:** Version bump only for package @times-components/section
