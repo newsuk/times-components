@@ -22,9 +22,9 @@ const TileW = ({ onPress, tile }) => (
         tile={tile}
       />
       <TileImage
-        aspectRatio={3 / 2}
+        aspectRatio={16 / 9}
         style={styles.imageContainer}
-        uri={getTileImageUri(tile, "crop32")}
+        uri={getTileImageUri(tile, "crop169")}
       />
     </View>
   </TileLink>
