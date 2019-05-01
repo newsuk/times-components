@@ -7,8 +7,6 @@
       "error",
       {
         "devDependencies": [
-          "**/dextrose/**",
-          "**/fructose/**",
           "**/storybook/**"
         ],
         "optionalDependencies": false
