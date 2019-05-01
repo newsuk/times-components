@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-byline",
-  "version": "3.1.62",
+  "version": "3.1.63",
   "description": "Article byline information",
   "main": "dist/article-byline",
   "dev": "src/article-byline",
@@ -39,7 +39,7 @@
     "@times-components/eslint-config-thetimes": "0.8.10",
     "@times-components/jest-configurator": "2.5.6",
     "@times-components/jest-serializer": "3.2.2",
-    "@times-components/storybook": "4.0.2",
+    "@times-components/storybook": "4.0.3",
     "@times-components/test-utils": "2.2.38",
     "@times-components/webpack-configurator": "2.0.17",
     "babel-core": "6.26.0",
@@ -62,10 +62,10 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/link": "3.4.3",
-    "@times-components/markup": "3.3.57",
+    "@times-components/link": "3.4.4",
+    "@times-components/markup": "3.3.58",
     "@times-components/markup-forest": "1.7.6",
-    "@times-components/styleguide": "3.28.10",
+    "@times-components/styleguide": "3.28.11",
     "prop-types": "15.6.2"
   },
   "peerDependencies": {
