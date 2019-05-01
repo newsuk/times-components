@@ -67,7 +67,9 @@ class Section extends Component {
   }
 
   renderItemSeperator({ leadingItem }) {
-    const { section: { name } } = this.props;
+    const {
+      section: { name }
+    } = this.props;
     const isPuzzle = name === "PuzzleSection";
     const isIgnored = leadingItem.ignoreSeparator;
 
@@ -91,7 +93,7 @@ class Section extends Component {
     const isPuzzle = name === "PuzzleSection";
     const isMagazine = name === "MagazineSection";
 
-    let data = isPuzzle
+    const data = isPuzzle
       ? buildSliceData(splitPuzzlesBySlices(slices))
       : buildSliceData(slices);
 
@@ -107,25 +109,32 @@ class Section extends Component {
 
       return acc;
     }, []);
-    sliceIndices.map(index => data[index].ignoreSeparator = true);
+    sliceIndices.forEach(index => {
+      data[index].ignoreSeparator = true;
+    });
 
     return (
       <Responsive>
-        <ResponsiveContext>
+        <ResponsiveContext.Consumer>
           {({ isTablet }) => (
             <FlatList
               data={data}
               initialNumToRender={5}
               ItemSeparatorComponent={this.renderItemSeperator}
               keyExtractor={item => item.elementId}
-              ListHeaderComponent={this.getHeaderComponent(isPuzzle, isMagazine)}
-              onViewableItemsChanged={onViewed ? this.onViewableItemsChanged : null}
+              ListHeaderComponent={this.getHeaderComponent(
+                isPuzzle,
+                isMagazine
+              )}
+              onViewableItemsChanged={
+                onViewed ? this.onViewableItemsChanged : null
+              }
               renderItem={this.renderItem}
-              windowSize={5}
               style={isTablet ? styles.tabletSpacing : null}
+              windowSize={5}
             />
           )}
-        </ResponsiveContext>
+        </ResponsiveContext.Consumer>
       </Responsive>
     );
   }

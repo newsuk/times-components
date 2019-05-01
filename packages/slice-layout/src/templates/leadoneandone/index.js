@@ -10,7 +10,7 @@ const leadOneAndOneSlice = ({ breakpoint, lead, support }) => {
     return (
       <View>
         {lead}
-        <View style={ styles.keyline }/>
+        <View style={styles.keyline} />
         {support}
       </View>
     );
