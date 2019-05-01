@@ -1,5 +1,6 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
+import saveApi from "@times-components/save-star-web/mock-save-api";
 import { Clipboard } from "react-native";
 import "./mocks";
 import BarItem from "../src/bar-item";
@@ -10,7 +11,7 @@ export default () => {
     const onShareOnEmail = jest.fn();
     const onCopyLink = jest.fn();
     const onSaveToMyArticles = jest.fn();
-    const articleId = "id-123";
+    const articleId = "96508c84-6611-11e9-adc2-05e1b87efaea";
     const articleUrl = "https://www.thetimes.co.uk/";
     const articleHeadline = "test-headline";
 
@@ -25,13 +26,14 @@ export default () => {
           onCopyLink={onCopyLink}
           onSaveToMyArticles={onSaveToMyArticles}
           onShareOnEmail={onShareOnEmail}
+          saveApi={saveApi}
         />
       );
     });
 
     it("save and share bar renders correctly", () => {
       expect(testInstance.toJSON()).toMatchSnapshot();
-      expect(testInstance.root.findAllByType(BarItem)).toHaveLength(5);
+      expect(testInstance.root.findAllByType(BarItem)).toHaveLength(4);
     });
 
     it("onPress events triggers correctly", () => {
