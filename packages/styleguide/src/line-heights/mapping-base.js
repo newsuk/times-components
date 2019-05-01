@@ -1,6 +1,6 @@
 const mapping = {
   body: {
-    bodyMobile: 26,
+    bodyMobile: 30,
     puffLink: 15,
     secondary: 27,
     teaser: 20,

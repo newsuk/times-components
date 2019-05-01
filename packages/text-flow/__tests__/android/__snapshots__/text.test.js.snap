@@ -1,0 +1,192 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`creates ideal spans 1`] = `
+Array [
+  Object {
+    "height": 18,
+    "spans": Array [
+      Object {
+        "height": 18,
+        "style": Object {
+          "characterCase": 0,
+          "fillColor": "#000",
+          "font": "TimesDigitalW04-Regular",
+          "size": 18,
+          "strokeColor": null,
+          "strokeWidth": null,
+          "tracking": 0,
+        },
+        "text": "a test paragraph",
+        "width": 133.002,
+        "x": 0,
+        "y": 0,
+      },
+      Object {
+        "height": 18,
+        "style": TextStyle {
+          "characterCase": 0,
+          "fillColor": null,
+          "font": "TimesDigitalW04-Bold",
+          "size": 18,
+          "strokeColor": null,
+          "strokeWidth": null,
+          "tracking": 0,
+        },
+        "text": "some bold ",
+        "width": 94.21199999999999,
+        "x": 130.86,
+        "y": 0,
+      },
+    ],
+    "width": 228.83899999999994,
+    "x": 0,
+    "y": 0,
+  },
+  Object {
+    "height": 18,
+    "spans": Array [
+      Object {
+        "height": 18,
+        "style": TextStyle {
+          "characterCase": 0,
+          "fillColor": null,
+          "font": "TimesDigitalW04-Bold",
+          "size": 18,
+          "strokeColor": null,
+          "strokeWidth": null,
+          "tracking": 0,
+        },
+        "text": "stuff",
+        "width": 41.994,
+        "x": 0,
+        "y": 30,
+      },
+      Object {
+        "height": 18,
+        "style": Object {
+          "characterCase": 0,
+          "fillColor": "#000",
+          "font": "TimesDigitalW04-Regular",
+          "size": 18,
+          "strokeColor": null,
+          "strokeWidth": null,
+          "tracking": 0,
+        },
+        "text": "Some other stuff",
+        "width": 137.358,
+        "x": 41.994,
+        "y": 30,
+      },
+    ],
+    "width": 180.652,
+    "x": 0,
+    "y": 30,
+  },
+  Object {
+    "height": 0,
+    "spans": Array [],
+    "width": 0,
+    "x": 0,
+    "y": 60,
+  },
+  Object {
+    "height": 0,
+    "spans": Array [],
+    "width": 0,
+    "x": 0,
+    "y": 90,
+  },
+]
+`;
+
+exports[`does layout for a paragraph 1`] = `
+Array [
+  Object {
+    "children": Array [
+      Object {
+        "children": "a ",
+        "height": 18,
+        "width": 13.863999999999999,
+        "x": 0,
+        "y": 0,
+      },
+      Object {
+        "children": "test ",
+        "height": 18,
+        "width": 35.101,
+        "x": 13.863999999999999,
+        "y": 0,
+      },
+      Object {
+        "children": "paragraphsome ",
+        "height": 18,
+        "width": 136.05399999999995,
+        "x": 48.964999999999996,
+        "y": 0,
+      },
+      Object {
+        "children": "bold ",
+        "height": 18,
+        "width": 43.885,
+        "x": 185.01899999999995,
+        "y": 0,
+      },
+    ],
+    "height": 18,
+    "width": 228.83899999999994,
+    "x": 0,
+    "y": 0,
+  },
+  Object {
+    "children": Array [
+      Object {
+        "children": "stuffSome ",
+        "height": 18,
+        "width": 92.75599999999999,
+        "x": 0,
+        "y": 30,
+      },
+      Object {
+        "children": "other ",
+        "height": 18,
+        "width": 48.954,
+        "x": 92.75599999999999,
+        "y": 30,
+      },
+      Object {
+        "children": "stuff",
+        "height": 18,
+        "width": 39.007,
+        "x": 141.70999999999998,
+        "y": 30,
+      },
+    ],
+    "height": 18,
+    "width": 180.652,
+    "x": 0,
+    "y": 30,
+  },
+  Object {
+    "children": Array [
+      Object {
+        "children": "",
+        "height": 0,
+        "width": 0,
+        "x": 0,
+        "y": 60,
+      },
+    ],
+    "height": 0,
+    "width": 0,
+    "x": 0,
+    "y": 60,
+  },
+  Object {
+    "children": Array [],
+    "height": 0,
+    "width": 0,
+    "x": 0,
+    "y": 90,
+  },
+]
+`;

@@ -1,7 +1,6 @@
 import TestRenderer from "react-test-renderer";
 import renderParagraph from "./renderer";
 import dropCapData from "./fixtures/drop-cap-showcase.json";
-import { callAllLayouts } from "./shared.base";
 
 export default [
   {
@@ -10,7 +9,6 @@ export default [
       const testInstance = TestRenderer.create(
         renderParagraph(dropCapData, "culture")
       );
-      await callAllLayouts(testInstance);
       expect(testInstance).toMatchSnapshot();
     }
   },
@@ -20,7 +18,6 @@ export default [
       const testInstance = TestRenderer.create(
         renderParagraph(dropCapData, "style")
       );
-      await callAllLayouts(testInstance);
       expect(testInstance).toMatchSnapshot();
     }
   },
@@ -30,7 +27,6 @@ export default [
       const testInstance = TestRenderer.create(
         renderParagraph(dropCapData, "thesundaytimesmagazine")
       );
-      await callAllLayouts(testInstance);
       expect(testInstance).toMatchSnapshot();
     }
   }

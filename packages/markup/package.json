@@ -63,7 +63,8 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/styleguide": "3.28.11"
+    "@times-components/styleguide": "3.28.11",
+    "@times-components/text-flow": "0.0.1"
   },
   "peerDependencies": {
     "react": ">=16.5",

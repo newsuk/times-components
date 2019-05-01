@@ -65,6 +65,7 @@
     "@times-components/article-magazine-standard": "2.0.4",
     "@times-components/article-main-comment": "1.0.4",
     "@times-components/article-main-standard": "2.0.4",
+    "@times-components/responsive": "0.4.29",
     "@times-components/context": "1.0.3",
     "@times-components/provider": "1.16.11",
     "@times-components/styleguide": "3.28.11",

@@ -1,7 +1,7 @@
 import styleguide, { tabletWidth } from "@times-components/styleguide";
 
 const sharedStyles = scale => {
-  const { colours, fontFactory, spacing } = styleguide({ scale });
+  const { colours, fontFactory, spacing, lineHeight } = styleguide({ scale });
   return {
     ad: {
       borderBottomColor: colours.functional.keyline,
@@ -15,6 +15,10 @@ const sharedStyles = scale => {
     articleLink: {
       color: colours.functional.action,
       ...fontFactory({
+        font: "body",
+        fontSize: "bodyMobile"
+      }),
+      lineHeight: lineHeight({
         font: "body",
         fontSize: "bodyMobile"
       }),
@@ -34,8 +38,7 @@ const sharedStyles = scale => {
       marginBottom: spacing(5)
     },
     containerTablet: {
-      alignSelf: "center",
-      width: tabletWidth
+      alignSelf: "center"
     },
     imageContainerTablet: {
       alignSelf: "center"
