@@ -192,6 +192,7 @@ exports[`3. lead one and one 1`] = `
   <TileA
     tileName="lead"
   />
+  <View />
   <TileB
     tileName="support"
   />

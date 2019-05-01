@@ -5,6 +5,14 @@ exports[`1. lead one and one - small 1`] = `
   <Text>
     lead
   </Text>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#DBDBDB",
+        "height": 1,
+      }
+    }
+  />
   <Text>
     support
   </Text>
