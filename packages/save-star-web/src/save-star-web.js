@@ -1,6 +1,6 @@
 /* eslint-env browser */
 import React, { Component } from "react";
-import { ActivityIndicator } from "react-native";
+import { ActivityIndicator, View } from "react-native";
 import Link from "@times-components/link";
 import styled from "styled-components";
 import PropTypes from "prop-types";
@@ -22,7 +22,7 @@ class SaveStarWeb extends Component {
     this.state = {
       loadingState: null,
       savedArticles: null,
-      savedStatus: null
+      savedStatus: false
     };
   }
 
@@ -146,7 +146,11 @@ class SaveStarWeb extends Component {
     const { savedStatus, loadingState } = this.state;
 
     if (loadingState) {
-      return <ActivityIndicator size="small" />;
+      return (
+        <View style={styles.loading}>
+          <ActivityIndicator size="small" />
+        </View>
+      );
     }
 
     if (savedStatus) {
