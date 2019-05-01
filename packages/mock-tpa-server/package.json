@@ -37,10 +37,10 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-stage-2": "6.24.1",
     "depcheck": "0.6.9",
-    "eslint": "5.16.0",
+    "eslint": "5.9.0",
     "eslint-plugin-graphql": "2.1.1",
     "jest": "23.6.0",
-    "prettier": "1.17.0"
+    "prettier": "1.14.3"
   },
   "dependencies": {
     "@times-components/provider-test-tools": "1.17.5",
