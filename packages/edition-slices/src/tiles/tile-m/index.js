@@ -21,7 +21,7 @@ const TileM = ({ onPress, tile }) => {
         <TileSummary
           headlineStyle={styles.headline}
           starStyle={styles.star}
-          strapline={getTileStrapline(tile)}
+          strapline={"getTileStrapline(tile) wer wer wer wer wer wer "}
           straplineStyle={styles.strapline}
           tile={tileWithoutLabelAndFlags}
         />

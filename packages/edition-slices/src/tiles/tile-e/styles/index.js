@@ -12,12 +12,13 @@ const styles = {
     })
   },
   imageContainer: {
-    width: "45%"
+    width: "50%",
+    paddingRight: spacing(2)
   },
   summaryContainer: {
     paddingBottom: spacing(1),
-    paddingHorizontal: spacing(2),
-    width: "55%"
+    paddingRight: spacing(2),
+    width: "50%"
   }
 };
 

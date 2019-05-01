@@ -19,7 +19,8 @@ const styles = {
     fontFamily: fonts.bodyRegular,
     fontSize: 14,
     lineHeight: 20,
-    textAlign: "center"
+    textAlign: "center",
+    paddingHorizontal: spacing(8)
   }
 };
 
