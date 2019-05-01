@@ -44,6 +44,7 @@ class Section extends Component {
 
       return <MagazineCover cover={cover} />;
     }
+
     return null;
   }
 
@@ -98,16 +99,21 @@ class Section extends Component {
 
     return (
       <Responsive>
-        <FlatList
-          data={data}
-          initialNumToRender={5}
-          ItemSeparatorComponent={this.renderItemSeperator}
-          keyExtractor={item => item.elementId}
-          ListHeaderComponent={this.getHeaderComponent(isPuzzle, isMagazine)}
-          onViewableItemsChanged={onViewed ? this.onViewableItemsChanged : null}
-          renderItem={this.renderItem}
-          windowSize={5}
-        />
+        <ResponsiveContext>
+          {({ isTablet }) => (
+            <FlatList
+              data={data}
+              initialNumToRender={5}
+              ItemSeparatorComponent={this.renderItemSeperator}
+              keyExtractor={item => item.elementId}
+              ListHeaderComponent={this.getHeaderComponent(isPuzzle, isMagazine)}
+              onViewableItemsChanged={onViewed ? this.onViewableItemsChanged : null}
+              renderItem={this.renderItem}
+              windowSize={5}
+              style={isTablet ? styles.tabletSpacing : null}
+            />
+          )}
+        </ResponsiveContext>
       </Responsive>
     );
   }

@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     fontSize: 20
   },
   tabletSpacing: {
-    paddingTop: spacing(4)
+    paddingTop: spacing(2)
   }
 });
 
