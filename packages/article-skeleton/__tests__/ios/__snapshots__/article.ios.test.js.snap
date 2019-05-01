@@ -27,33 +27,29 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
       </View>
       <View>
         <View>
-          <ArticleParagraph
-            ast={
-              Object {
-                "children": Array [
-                  Object {
-                    "attributes": Object {
-                      "value": "T",
-                    },
-                    "children": Array [],
-                    "name": "dropCap",
-                  },
-                  Object {
-                    "attributes": Object {
-                      "value": "his being Black History Month, last week",
-                    },
-                    "children": Array [],
-                    "name": "text",
-                  },
-                ],
-                "name": "paragraph",
-              }
-            }
-            dropCapColour="#FF0000"
-            uid={0}
-          >
-            his being Black History Month, last week
-          </ArticleParagraph>
+          <View>
+            <View>
+              <Text
+                selectable={true}
+              >
+                T
+              </Text>
+            </View>
+            <View>
+              <View>
+                <Text
+                  selectable={true}
+                >
+                  his being Black History Month, 
+                </Text>
+                <Text
+                  selectable={true}
+                >
+                  last week
+                </Text>
+              </View>
+            </View>
+          </View>
         </View>
       </View>
       <View>
@@ -78,12 +74,10 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
               imageOptions={
                 Object {
                   "display": "primary",
-                  "index": 1,
                   "ratio": "1500:1000",
                   "uri": "https://image.io",
                 }
               }
-              onImagePress={null}
             />
           </View>
         </View>
@@ -100,13 +94,11 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
               }
               imageOptions={
                 Object {
-                  "display": "secondary",
-                  "index": 2,
+                  "display": "primary",
                   "ratio": "1500:1000",
                   "uri": "https://image.io/secondary",
                 }
               }
-              onImagePress={null}
             />
           </View>
         </View>
@@ -123,49 +115,30 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
               }
               imageOptions={
                 Object {
-                  "display": "inline",
-                  "index": 3,
+                  "display": "primary",
                   "ratio": "1500:1000",
                   "uri": "https://image.io/inline",
                 }
               }
-              onImagePress={null}
             />
           </View>
         </View>
       </View>
       <View>
         <View>
-          <Text
-            accessibilityRole="link"
-          >
-            Some Link
-          </Text>
-        </View>
-      </View>
-      <View>
-        <View>
-          <ArticleParagraph
-            ast={
-              Object {
-                "attributes": Object {},
-                "children": Array [
-                  Object {
-                    "attributes": Object {
-                      "value": "Some content",
-                    },
-                    "children": Array [],
-                    "name": "text",
-                  },
-                ],
-                "name": "paragraph",
-              }
-            }
-            dropCapColour="#FF0000"
-            uid={6}
-          >
-            Some content
-          </ArticleParagraph>
+          <View>
+            <View>
+              <Text
+                selectable={true}
+              >
+                <Text
+                  selectable={true}
+                >
+                  Some content
+                </Text>
+              </Text>
+            </View>
+          </View>
         </View>
       </View>
       <View>
@@ -196,7 +169,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
           <View>
             <Video
               accountId="57838016001"
-              height={371.25}
+              height={421.875}
               policyKey="1.2.3.4"
               poster={
                 Object {
@@ -205,13 +178,61 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
               }
               skySports={false}
               videoId="4084164751001"
-              width={660}
+              width={750}
             />
             <View>
               <View>
                 <Text>
                   This is video caption
                 </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View>
+        <View>
+          <View>
+            <View>
+              <Text>
+                EXAMPLE TITLE
+              </Text>
+              <View>
+                <View>
+                  <View />
+                  <Text>
+                    Example bullet text
+                  </Text>
+                </View>
+                <View>
+                  <View />
+                  <Text>
+                    An example 
+                    <Text
+                      accessibilityRole="link"
+                    >
+                      link
+                    </Text>
+                  </Text>
+                </View>
+                <View>
+                  <View />
+                  <Text>
+                    More example text.
+                  </Text>
+                </View>
+                <View>
+                  <View />
+                  <Text>
+                    Example text 
+                    <Text>
+                      this is bold 
+                    </Text>
+                    <Text>
+                      this is in italics.
+                    </Text>
+                  </Text>
+                </View>
               </View>
             </View>
           </View>
@@ -248,23 +269,6 @@ exports[`2. an article with no content 1`] = `
       <View>
         <View />
       </View>
-      <View>
-        <View />
-      </View>
-      <View>
-        <View />
-      </View>
-      <View>
-        <View />
-      </View>
-      <View>
-        <View>
-          <ArticleExtras
-            articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-            articleUrl="https://url.io"
-          />
-        </View>
-      </View>
     </View>
   </RCTScrollView>
 </View>
@@ -296,65 +300,23 @@ exports[`3. an article with a nested markup in first paragraph displays no drop 
         <View />
       </View>
       <View>
-        <View>
-          <ArticleParagraph
-            ast={
-              Object {
-                "children": Array [
-                  Object {
-                    "children": Array [
-                      Object {
-                        "attributes": Object {
-                          "value": "Q Some years ago I made the decision to take as a friend a woman who is very opinionated.",
-                        },
-                        "children": Array [],
-                        "name": "text",
-                      },
-                    ],
-                    "name": "bold",
-                  },
-                ],
-                "name": "paragraph",
-              }
-            }
-            dropCapColour="#FF0000"
-            uid={0}
-          >
-            <Text>
-              Q Some years ago I made the decision to take as a friend a woman who is very opinionated.
-            </Text>
-          </ArticleParagraph>
-        </View>
+        <View />
       </View>
       <View>
         <View>
-          <ArticleParagraph
-            ast={
-              Object {
-                "children": Array [
-                  Object {
-                    "children": Array [
-                      Object {
-                        "attributes": Object {
-                          "value": "When she does come to social events, she dominates.",
-                        },
-                        "children": Array [],
-                        "name": "text",
-                      },
-                    ],
-                    "name": "bold",
-                  },
-                ],
-                "name": "paragraph",
-              }
-            }
-            dropCapColour="#FF0000"
-            uid={1}
-          >
-            <Text>
-              When she does come to social events, she dominates.
-            </Text>
-          </ArticleParagraph>
+          <View>
+            <View>
+              <Text
+                selectable={true}
+              >
+                <Text
+                  selectable={true}
+                >
+                  When she does come to social events, she dominates.
+                </Text>
+              </Text>
+            </View>
+          </View>
         </View>
       </View>
       <View>

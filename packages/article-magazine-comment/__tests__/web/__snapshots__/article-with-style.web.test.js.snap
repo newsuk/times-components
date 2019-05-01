@@ -473,7 +473,7 @@ exports[`full article with style 1`] = `
 .IS5 {
   font-family: TimesDigitalW04;
   font-size: 17;
-  line-height: 26;
+  line-height: 30;
   color: #333333;
   margin-bottom: 25px;
   margin-top: 0;
@@ -1190,7 +1190,7 @@ exports[`full article with style in the culture magazine 1`] = `
 .IS7 {
   font-family: TimesDigitalW04;
   font-size: 17;
-  line-height: 26;
+  line-height: 30;
   color: #333333;
   margin-bottom: 25px;
   margin-top: 0;
@@ -1907,7 +1907,7 @@ exports[`full article with style in the style magazine 1`] = `
 .IS7 {
   font-family: TimesDigitalW04;
   font-size: 17;
-  line-height: 26;
+  line-height: 30;
   color: #333333;
   margin-bottom: 25px;
   margin-top: 0;
@@ -2624,7 +2624,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
 .IS7 {
   font-family: TimesDigitalW04;
   font-size: 17;
-  line-height: 26;
+  line-height: 30;
   color: #333333;
   margin-bottom: 25px;
   margin-top: 0;

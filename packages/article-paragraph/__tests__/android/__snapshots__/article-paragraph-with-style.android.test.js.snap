@@ -4,51 +4,12 @@ exports[`1. paragraph with a drop cap 1`] = `
 <View
   style={
     Object {
-      "flexDirection": "row",
-      "flexWrap": "wrap",
-      "height": 36,
       "paddingLeft": 10,
       "paddingRight": 10,
     }
   }
 >
-  <View
-    style={
-      Object {
-        "alignItems": "flex-start",
-        "flex": 0,
-        "flexDirection": "row",
-        "height": 1,
-        "justifyContent": "flex-start",
-      }
-    }
-  >
-    <View
-      style={
-        Object {
-          "height": 108,
-          "left": 0,
-          "position": "absolute",
-          "top": 0,
-          "width": 100,
-        }
-      }
-    >
-      <Text
-        style={
-          Object {
-            "color": "black",
-            "fontFamily": "TimesModern-Regular",
-            "fontSize": 96,
-            "marginBottom": -30,
-            "marginRight": 5,
-            "marginTop": -12,
-          }
-        }
-      >
-        T
-      </Text>
-    </View>
+  <View>
     <Text
       style={
         Object {
@@ -56,17 +17,14 @@ exports[`1. paragraph with a drop cap 1`] = `
           "fontFamily": "TimesDigitalW04",
           "fontSize": 17,
           "fontStyle": "normal",
-          "height": undefined,
-          "left": 100,
-          "lineHeight": 26,
+          "lineHeight": 30,
           "marginBottom": 20,
-          "position": "absolute",
-          "top": 0,
-          "width": 380,
         }
       }
     >
-      his being Black History Month, last week was Politicians In Search Of An Eye-Catching Race-Related Policy Week.  
+      <Text>
+        his being Black History Month, last week was Politicians In Search Of An Eye-Catching Race-Related Policy Week.
+      </Text>
     </Text>
   </View>
 </View>
@@ -83,20 +41,24 @@ exports[`2. responsive tablet paragraph 1`] = `
     }
   }
 >
-  <Text
-    style={
-      Object {
-        "color": "#333333",
-        "fontFamily": "TimesDigitalW04",
-        "fontSize": 17,
-        "fontStyle": "normal",
-        "lineHeight": 26,
-        "marginBottom": 20,
+  <View>
+    <Text
+      style={
+        Object {
+          "color": "#333333",
+          "fontFamily": "TimesDigitalW04",
+          "fontSize": 17,
+          "fontStyle": "normal",
+          "lineHeight": 30,
+          "marginBottom": 20,
+        }
       }
-    }
-  >
-    This being Black History Month, last week was Politicians In Search Of An Eye-Catching Race-Related Policy Week.
-  </Text>
+    >
+      <Text>
+        This being Black History Month, last week was Politicians In Search Of An Eye-Catching Race-Related Policy Week.
+      </Text>
+    </Text>
+  </View>
 </View>
 `;
 
@@ -105,52 +67,13 @@ exports[`3. responsive tablet paragraph with a drop cap 1`] = `
   style={
     Object {
       "alignSelf": "center",
-      "flexDirection": "row",
-      "flexWrap": "wrap",
-      "height": 36,
       "paddingLeft": 10,
       "paddingRight": 10,
       "width": 660,
     }
   }
 >
-  <View
-    style={
-      Object {
-        "alignItems": "flex-start",
-        "flex": 0,
-        "flexDirection": "row",
-        "height": 1,
-        "justifyContent": "flex-start",
-      }
-    }
-  >
-    <View
-      style={
-        Object {
-          "height": 108,
-          "left": 0,
-          "position": "absolute",
-          "top": 0,
-          "width": 100,
-        }
-      }
-    >
-      <Text
-        style={
-          Object {
-            "color": "black",
-            "fontFamily": "TimesModern-Regular",
-            "fontSize": 96,
-            "marginBottom": -30,
-            "marginRight": 5,
-            "marginTop": -12,
-          }
-        }
-      >
-        T
-      </Text>
-    </View>
+  <View>
     <Text
       style={
         Object {
@@ -158,17 +81,14 @@ exports[`3. responsive tablet paragraph with a drop cap 1`] = `
           "fontFamily": "TimesDigitalW04",
           "fontSize": 17,
           "fontStyle": "normal",
-          "height": undefined,
-          "left": 100,
-          "lineHeight": 26,
+          "lineHeight": 30,
           "marginBottom": 20,
-          "position": "absolute",
-          "top": 0,
-          "width": 560,
         }
       }
     >
-      his being Black History Month, last week was Politicians In Search Of An Eye-Catching Race-Related Policy Week.  
+      <Text>
+        his being Black History Month, last week was Politicians In Search Of An Eye-Catching Race-Related Policy Week.
+      </Text>
     </Text>
   </View>
 </View>

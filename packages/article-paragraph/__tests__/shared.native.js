@@ -11,7 +11,7 @@ import {
   print
 } from "@times-components/jest-serializer";
 import { iterator } from "@times-components/test-utils";
-import shared, { callAllLayouts } from "./shared.base";
+import shared from "./shared.base";
 import "./mock-text-measure-module";
 import DropCap from "../src/drop-cap";
 
@@ -39,8 +39,6 @@ export default () => {
           <DropCap dropCap={mockDropCap} scale={scales.large} text={mockText} />
         );
 
-        await callAllLayouts(testInstance);
-
         expect(
           testInstance.root.findAllByType(Text)[0].props.style[0].fontSize
         ).toBe(115);
@@ -51,8 +49,6 @@ export default () => {
             text={mockText}
           />
         );
-
-        await callAllLayouts(testInstance);
 
         expect(
           testInstance.root.findAllByType(Text)[0].props.style[0].fontSize

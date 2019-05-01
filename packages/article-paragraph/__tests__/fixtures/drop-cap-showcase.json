@@ -2,13 +2,6 @@
   "name": "paragraph",
   "children": [
     {
-      "name": "dropCap",
-      "attributes": {
-        "value": "T"
-      },
-      "children": []
-    },
-    {
       "name": "text",
       "attributes": {
         "value": "his being Black History Month, last week was Politicians In Search Of An Eye-Catching Race-Related Policy Week."

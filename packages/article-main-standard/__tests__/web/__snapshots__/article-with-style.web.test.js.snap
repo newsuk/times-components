@@ -477,7 +477,7 @@ exports[`full article with style 1`] = `
 .IS3 {
   font-family: TimesDigitalW04;
   font-size: 17;
-  line-height: 26;
+  line-height: 30;
   color: #333333;
   margin-bottom: 25px;
   margin-top: 0;

@@ -1,0 +1,6 @@
+node_modules
+dist
+src/Text/fonts/*
+lib/font_export/*.pyc
+!src/Text/Fonts/index.js
+**/*.pyc
