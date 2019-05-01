@@ -73,7 +73,6 @@ class SaveAndShareBar extends Component {
           </BarItem>
         </View>
         <View style={styles.rowItem}>
-          <Text style={styles.label}>Save</Text>
           <SaveStar articleId={articleId} saveApi={saveApi} />
         </View>
       </View>

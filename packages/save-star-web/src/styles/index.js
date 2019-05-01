@@ -1,11 +1,41 @@
-import { spacing, colours } from "@times-components/styleguide";
+import { spacing, colours, fontFactory } from "@times-components/styleguide";
 
 const styles = {
-  link: {
-    base: `margin-left: ${spacing(5)};`
+  activityLoader: {
+    backgroundColor: colours.functional.whiteGrey,
+    borderRadius: 9999,
+    height: 40,
+    lineHeight: 45,
+    marginLeft: spacing(1),
+    overflow: "hidden",
+    textAlign: "center",
+    width: 40
   },
-  loading: {
-    marginLeft: 17
+  label: {
+    ...fontFactory({
+      font: "supporting",
+      fontSize: "meta"
+    }),
+    color: colours.functional.secondary,
+    marginRight: spacing(2)
+  },
+  link: {
+    base: `
+    margin-left: ${spacing(1)};
+    border-radius: 9999px;
+    overflow: hidden;
+    text-align: center;
+    line-height: 45px;
+    height: 40px;
+    width: 40px;
+
+    &:hover {
+      background-color: ${colours.functional.whiteGrey};
+    }
+    &:active {
+      background-color: ${colours.functional.keyline};
+    }
+  `
   },
   save: {
     fillColour: colours.functional.action,

@@ -1,6 +1,6 @@
 /* eslint-env browser */
-import React, { Component } from "react";
-import { ActivityIndicator, View } from "react-native";
+import React, { Component, Fragment } from "react";
+import { ActivityIndicator, Text } from "react-native";
 import Link from "@times-components/link";
 import styled from "styled-components";
 import PropTypes from "prop-types";
@@ -15,6 +15,7 @@ const HoverIcon =
       color: ${props => props.hoverColour || props.colour};
     }
   `;
+
 class SaveStarWeb extends Component {
   constructor(props) {
     super(props);
@@ -64,23 +65,28 @@ class SaveStarWeb extends Component {
     const saveStyle = getStyles({ saveStatus });
     const { fillColour, strokeColour } = saveStyle;
 
+    const saveText = saveStatus ? "Saved" : "Save";
+
     return (
-      // eslint-disable-next-line jsx-a11y/anchor-is-valid
-      <Link
-        onPress={e => {
-          e.preventDefault();
-          this.bookmarkEvents();
-        }}
-        responsiveLinkStyles={styles.link}
-      >
-        <HoverIcon colour={colour} hoverColour={hoverColour}>
-          <IconSaveBookmark
-            fillColour={fillColour}
-            strokeColour={strokeColour}
-            title="Save to My Articles"
-          />
-        </HoverIcon>
-      </Link>
+      /* eslint-disable jsx-a11y/anchor-is-valid */
+      <Fragment>
+        <Text style={styles.label}>{saveText}</Text>
+        <Link
+          onPress={e => {
+            e.preventDefault();
+            this.bookmarkEvents();
+          }}
+          responsiveLinkStyles={styles.link}
+        >
+          <HoverIcon colour={colour} hoverColour={hoverColour}>
+            <IconSaveBookmark
+              fillColour={fillColour}
+              strokeColour={strokeColour}
+              title="Save to My Articles"
+            />
+          </HoverIcon>
+        </Link>
+      </Fragment>
     );
   }
 
@@ -144,12 +150,14 @@ class SaveStarWeb extends Component {
 
   render() {
     const { savedStatus, loadingState } = this.state;
+    const saveText = savedStatus ? "Saved" : "Save";
 
     if (loadingState) {
       return (
-        <View style={styles.loading}>
-          <ActivityIndicator size="small" />
-        </View>
+        <Fragment>
+          <Text style={styles.label}>{saveText}</Text>
+          <ActivityIndicator size="small" style={styles.activityLoader} />
+        </Fragment>
       );
     }
 
