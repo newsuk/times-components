@@ -4,7 +4,7 @@ exports[`Sunday Times magazine section 1`] = `
 <RCTScrollView
   style={
     Object {
-      "paddingTop": 20,
+      "paddingTop": 10,
     }
   }
 >
@@ -87,7 +87,7 @@ exports[`Times magazine section 1`] = `
 <RCTScrollView
   style={
     Object {
-      "paddingTop": 20,
+      "paddingTop": 10,
     }
   }
 >
@@ -247,7 +247,7 @@ exports[`section page 1`] = `
 <RCTScrollView
   style={
     Object {
-      "paddingTop": 20,
+      "paddingTop": 10,
     }
   }
 >
@@ -260,6 +260,7 @@ exports[`section page 1`] = `
             Object {
               "backgroundColor": "#DBDBDB",
               "height": 1,
+              "marginHorizontal": 20,
             }
           }
         />
@@ -273,6 +274,7 @@ exports[`section page 1`] = `
             Object {
               "backgroundColor": "#DBDBDB",
               "height": 1,
+              "marginHorizontal": 20,
             }
           }
         />
@@ -286,6 +288,7 @@ exports[`section page 1`] = `
             Object {
               "backgroundColor": "#DBDBDB",
               "height": 1,
+              "marginHorizontal": 20,
             }
           }
         />
@@ -299,6 +302,7 @@ exports[`section page 1`] = `
             Object {
               "backgroundColor": "#DBDBDB",
               "height": 1,
+              "marginHorizontal": 20,
             }
           }
         />
@@ -312,6 +316,7 @@ exports[`section page 1`] = `
             Object {
               "backgroundColor": "#DBDBDB",
               "height": 1,
+              "marginHorizontal": 20,
             }
           }
         />

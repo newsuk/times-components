@@ -50,7 +50,7 @@
     "prefmt": "prettier --write '**/*.{js,json}'",
     "fmt": "lerna run fmt",
     "cinstall": "./lib/custom_install.sh",
-    "clean": "rm -rf ./**/node_modules/",
+    "clean": "git clean -xdf",
     "bundle": "lerna run bundle",
     "build:local": "yarn install && yarn bundle && yarn prepublishOnly",
     "postinstall": "yarn run fetch-fonts && lerna run postinstall && lerna run transpile",

@@ -5,6 +5,7 @@ exports[`1. lead one and one - small 1`] = `
   <Text>
     lead
   </Text>
+  <View />
   <Text>
     support
   </Text>
