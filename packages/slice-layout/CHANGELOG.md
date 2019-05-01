@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.27.16](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.27.15...@times-components/slice-layout@0.27.16) (2019-05-01)
+
+
+### Bug Fixes
+
+* Issues with lead asset size ([#1904](https://github.com/newsuk/times-components/issues/1904)) ([26334b1](https://github.com/newsuk/times-components/commit/26334b1))
+
+
+
+
+
 ## [0.27.15](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.27.14...@times-components/slice-layout@0.27.15) (2019-05-01)
 
 **Note:** Version bump only for package @times-components/slice-layout

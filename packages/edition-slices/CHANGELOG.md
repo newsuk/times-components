@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.55.5](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.55.4...@times-components/edition-slices@0.55.5) (2019-05-01)
+
+
+### Bug Fixes
+
+* font size issues on slices ([#1910](https://github.com/newsuk/times-components/issues/1910)) ([61fe0c9](https://github.com/newsuk/times-components/commit/61fe0c9))
+* Issues with lead asset size ([#1904](https://github.com/newsuk/times-components/issues/1904)) ([26334b1](https://github.com/newsuk/times-components/commit/26334b1))
+
+
+
+
+
 ## [0.55.4](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.55.3...@times-components/edition-slices@0.55.4) (2019-05-01)
 
 **Note:** Version bump only for package @times-components/edition-slices
