@@ -65,7 +65,7 @@ class SaveStarWeb extends Component {
     const saveStyle = getStyles({ saveStatus });
     const { fillColour, strokeColour } = saveStyle;
 
-    const saveText = saveStatus ? "Saved" : "Save";
+    const saveText = saveStatus ? "Saved" : "Save  ";
 
     return (
       /* eslint-disable jsx-a11y/anchor-is-valid */
@@ -150,7 +150,7 @@ class SaveStarWeb extends Component {
 
   render() {
     const { savedStatus, loadingState } = this.state;
-    const saveText = savedStatus ? "Saved" : "Save";
+    const saveText = savedStatus ? "Saved" : "Save  ";
 
     if (loadingState) {
       return (
