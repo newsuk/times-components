@@ -1,6 +1,6 @@
 {
   "name": "@times-components/gestures",
-  "version": "4.1.22",
+  "version": "4.1.23",
   "description": "Wrapper to respond to pinch to zoom and rotate events",
   "main": "dist/gestures",
   "dev": "src/gestures",
@@ -59,7 +59,7 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/styleguide": "3.28.11",
+    "@times-components/styleguide": "3.28.12",
     "prop-types": "15.6.2"
   },
   "peerDependencies": {

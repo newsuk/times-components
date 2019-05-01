@@ -1,6 +1,6 @@
 {
   "name": "@times-components/date-publication",
-  "version": "0.20.56",
+  "version": "0.20.57",
   "description": "Date and Publication properties",
   "main": "dist/date-publication",
   "dev": "src/date-publication",
@@ -58,7 +58,7 @@
     "webpack-cli": "2.1.4"
   },
   "dependencies": {
-    "@times-components/styleguide": "3.28.11",
+    "@times-components/styleguide": "3.28.12",
     "date-fns": "1.28.5",
     "prop-types": "15.6.2"
   },
