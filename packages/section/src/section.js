@@ -69,9 +69,9 @@ class Section extends Component {
   renderItemSeperator({ leadingItem }) {
     const { section: { name } } = this.props;
     const isPuzzle = name === "PuzzleSection";
-    const isLeadersSlice = leadingItem.name === "LeadersSlice";
+    const isIgnored = leadingItem.ignoreSeparator;
 
-    if (isPuzzle || isLeadersSlice) {
+    if (isPuzzle || isIgnored) {
       return null;
     }
 
@@ -91,11 +91,23 @@ class Section extends Component {
     const isPuzzle = name === "PuzzleSection";
     const isMagazine = name === "MagazineSection";
 
-    const data = isPuzzle
+    let data = isPuzzle
       ? buildSliceData(splitPuzzlesBySlices(slices))
       : buildSliceData(slices);
 
     if (slices) receiveChildList(data);
+
+    const excludeSliceNames = ["LeadersSlice", "DailyUniversalRegister"];
+    const sliceNames = data.map(slice => slice.name);
+    const sliceIndices = excludeSliceNames.reduce((acc, sliceName) => {
+      const index = sliceNames.indexOf(sliceName);
+      if (index > 0) {
+        return [...acc, index - 1, index];
+      }
+
+      return acc;
+    }, []);
+    sliceIndices.map(index => data[index].ignoreSeparator = true);
 
     return (
       <Responsive>
