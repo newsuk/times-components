@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.55.2](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.55.1...@times-components/edition-slices@0.55.2) (2019-04-30)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
+## [0.55.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.55.0...@times-components/edition-slices@0.55.1) (2019-04-30)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
+# [0.55.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.54.5...@times-components/edition-slices@0.55.0) (2019-04-30)
+
+
+### Features
+
+* replat-6101 edition tile summary padding fix ([#1903](https://github.com/newsuk/times-components/issues/1903)) ([bdb7406](https://github.com/newsuk/times-components/commit/bdb7406))
+
+
+
+
+
 ## [0.54.5](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.54.4...@times-components/edition-slices@0.54.5) (2019-04-29)
 
 **Note:** Version bump only for package @times-components/edition-slices

@@ -24,7 +24,7 @@ const text = new FlowText.Text({
 });
 
 const width = text.measuredWidth;
-const Height = text.measuredHeight;
+const height = text.measuredHeight;
 ```
 
 Make sure you set the same font, size and line-height as what you will be

@@ -1,18 +1,24 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { View } from "react-native";
-import { editionMaxWidth } from "@times-components/styleguide";
+import { ResponsiveContext } from "@times-components/responsive";
+import { editionMaxWidth, spacing } from "@times-components/styleguide";
 
 const Gutter = ({ children }) => (
-  <View
-    style={{
-      alignSelf: "center",
-      maxWidth: "100%",
-      width: editionMaxWidth
-    }}
-  >
-    {children}
-  </View>
+  <ResponsiveContext.Consumer>
+    {({ isTablet }) => (
+      <View
+        style={{
+          alignSelf: "center",
+          maxWidth: "100%",
+          paddingHorizontal: isTablet ? spacing(2) : 0,
+          width: editionMaxWidth
+        }}
+      >
+        {children}
+      </View>
+    )}
+  </ResponsiveContext.Consumer>
 );
 
 Gutter.propTypes = {
