@@ -4,6 +4,9 @@ const styles = {
   link: {
     base: `margin-left: ${spacing(5)};`
   },
+  loading: {
+    marginLeft: 17
+  },
   save: {
     fillColour: colours.functional.action,
     strokeColour: colours.functional.secondary

@@ -47,32 +47,34 @@ exports[`2. saved star with unsaved status 1`] = `
 `;
 
 exports[`3. saved star with loading state while network request is fetching data 1`] = `
-<div
-  aria-valuemax="1"
-  aria-valuemin="0"
-  role="progressbar"
->
-  <div>
-    <svg
-      height="100%"
-      viewBox="0 0 32 32"
-      width="100%"
-    >
-      <circle
-        cx="16"
-        cy="16"
-        fill="none"
-        r="14"
-        strokeWidth="4"
-      />
-      <circle
-        cx="16"
-        cy="16"
-        fill="none"
-        r="14"
-        strokeWidth="4"
-      />
-    </svg>
+<div>
+  <div
+    aria-valuemax="1"
+    aria-valuemin="0"
+    role="progressbar"
+  >
+    <div>
+      <svg
+        height="100%"
+        viewBox="0 0 32 32"
+        width="100%"
+      >
+        <circle
+          cx="16"
+          cy="16"
+          fill="none"
+          r="14"
+          strokeWidth="4"
+        />
+        <circle
+          cx="16"
+          cy="16"
+          fill="none"
+          r="14"
+          strokeWidth="4"
+        />
+      </svg>
+    </div>
   </div>
 </div>
 `;
