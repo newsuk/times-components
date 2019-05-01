@@ -279,6 +279,27 @@ describe("Head", () => {
     ).toHaveLength(0);
   });
 
+  it("removes description tags if descriptionMarkup is empty", () => {
+    const testRenderer = TestRenderer.create(
+      <Head
+        article={{
+          ...article,
+          descriptionMarkup: []
+        }}
+      />
+    );
+
+    expect(
+      testRenderer.root.findAllByProps({ name: "description" })
+    ).toHaveLength(0);
+    expect(
+      testRenderer.root.findAllByProps({ property: "og:description" })
+    ).toHaveLength(0);
+    expect(
+      testRenderer.root.findAllByProps({ name: "twitter:description" })
+    ).toHaveLength(0);
+  });
+
   it("shows description tags if descriptionMarkup available", () => {
     const testRenderer = TestRenderer.create(<Head article={article} />);
 

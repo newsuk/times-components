@@ -63,7 +63,9 @@ function Head({ article }) {
   const publication = PUBLICATION_NAMES[publicationName];
   const authorName = getAuthorAsText(article);
   const desc =
-    descriptionMarkup && renderTreeAsText({ children: descriptionMarkup });
+    Array.isArray(descriptionMarkup) && descriptionMarkup.length
+      ? renderTreeAsText({ children: descriptionMarkup })
+      : null;
   const sectionname = getSectionName(article);
   const leadassetUrl = get(leadAsset, "crop169.url", null);
   const title = headline || shortHeadline;
