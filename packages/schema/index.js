@@ -16,7 +16,7 @@ async function main() {
       process.cwd(),
       fetch,
 
-      process.env.GRAPHQL_ENDPOINT || "http://localhost:4000/graphql"
+      process.env.GRAPHQL_ENDPOINT || "https://api.thetimes.co.uk/graphql"
     );
   } catch (e) {
     console.log(chalk.yellow(e));
