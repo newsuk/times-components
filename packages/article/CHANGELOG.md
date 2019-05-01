@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.4](https://github.com/newsuk/times-components/compare/@times-components/article@7.0.3...@times-components/article@7.0.4) (2019-05-01)
+
+
+### Bug Fixes
+
+* temporary fix for article showcase ([#1907](https://github.com/newsuk/times-components/issues/1907)) ([324c487](https://github.com/newsuk/times-components/commit/324c487))
+
+
+
+
+
 ## [7.0.3](https://github.com/newsuk/times-components/compare/@times-components/article@7.0.2...@times-components/article@7.0.3) (2019-05-01)
 
 **Note:** Version bump only for package @times-components/article
