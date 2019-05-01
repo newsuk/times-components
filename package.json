@@ -49,6 +49,7 @@
     "android:publish-lib": "lerna run --scope @times-components/android-app publish-library --stream",
     "prefmt": "prettier --write '**/*.*'",
     "fmt": "lerna run fmt",
+    "install": "GRAPHQL_ENDPOINT='https://api.thetimes.co.uk/graphql' yarn",
     "cinstall": "./lib/custom_install.sh",
     "bundle": "lerna run bundle",
     "build:local": "yarn install && yarn bundle && yarn prepublishOnly",
