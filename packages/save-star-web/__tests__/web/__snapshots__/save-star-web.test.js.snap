@@ -31,7 +31,7 @@ Array [
 exports[`2. saved star with unsaved status 1`] = `
 Array [
   <div>
-    Save
+    Save  
   </div>,
   <a>
     <div>
@@ -59,7 +59,7 @@ Array [
 exports[`3. saved star with loading state while network request is fetching data 1`] = `
 Array [
   <div>
-    Save
+    Save  
   </div>,
   <div
     aria-valuemax="1"
