@@ -324,8 +324,8 @@ exports[`3. tile c 1`] = `
 .S4 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
-  font-size: 22px;
   font-weight: 400;
+  line-height: 20px;
   margin-bottom: 5px;
 }
 
@@ -338,7 +338,7 @@ exports[`3. tile c 1`] = `
 }
 
 .IS3 {
-  line-height: 22px;
+  font-size: 20px;
   padding-bottom: 5px;
 }
 
@@ -2469,8 +2469,8 @@ exports[`18. tile r 1`] = `
 }
 
 .IS2 {
-  font-size: 45px;
-  line-height: 45px;
+  font-size: 40px;
+  line-height: 40px;
 }
 
 .IS3 {
@@ -2853,8 +2853,8 @@ exports[`21. tile u 1`] = `
 }
 
 .IS2 {
-  font-size: 25px;
-  line-height: 25px;
+  font-size: 35px;
+  line-height: 35px;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -3009,8 +3009,8 @@ exports[`22. tile v 1`] = `
 }
 
 .IS3 {
-  font-size: 35px;
-  line-height: 35px;
+  font-size: 30px;
+  line-height: 30px;
   padding-bottom: 5px;
 }
 
@@ -3343,8 +3343,8 @@ exports[`24. tile x 1`] = `
 }
 
 .IS2 {
-  font-size: 45px;
-  line-height: 45px;
+  font-size: 40px;
+  line-height: 40px;
 }
 
 .IS3 {
@@ -3513,8 +3513,8 @@ exports[`25. tile y 1`] = `
 }
 
 .IS2 {
-  font-size: 35px;
-  line-height: 35px;
+  font-size: 30px;
+  line-height: 30px;
 }
 
 .IS3 {
@@ -3644,8 +3644,8 @@ exports[`26. tile z 1`] = `
 }
 
 .IS2 {
-  font-size: 35px;
-  line-height: 35px;
+  font-size: 25px;
+  line-height: 25px;
 }
 
 .IS3 {
@@ -4150,8 +4150,8 @@ exports[`29. tile ae 1`] = `
 }
 
 .IS2 {
-  font-size: 35px;
-  line-height: 35px;
+  font-size: 30px;
+  line-height: 30px;
 }
 
 .IS3 {
@@ -4354,9 +4354,7 @@ exports[`31. tile aj 1`] = `
 .S1 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
-  font-size: 22px;
   font-weight: 400;
-  line-height: 27px;
   margin-bottom: 5px;
 }
 
@@ -4365,20 +4363,25 @@ exports[`31. tile aj 1`] = `
 }
 
 .IS1 {
+  font-size: 25px;
+  line-height: 25px;
+}
+
+.IS2 {
   padding-right: 15px;
   padding-left: 15px;
   padding-top: 15px;
   width: 85%;
 }
 
-.IS2 {
+.IS3 {
   -webkit-align-self: flex-end;
   align-self: flex-end;
   width: 85%;
   -ms-flex-item-align: end;
 }
 
-.IS3 {
+.IS4 {
   background-color: rgba(240,240,240,1.00);
   -webkit-flex-grow: 1;
   flex-grow: 1;
@@ -4403,21 +4406,21 @@ exports[`31. tile aj 1`] = `
   url="/crossword/123"
 >
   <div
-    className="IS3 S2"
+    className="IS4 S2"
   >
     <div
-      className="IS1 S2"
+      className="IS2 S2"
     >
       <h3
         aria-level="3"
-        className="S1"
+        className="IS1 S1"
         role="heading"
       >
         Times Concise medium No 7881
       </h3>
     </div>
     <div
-      className="IS2 S2"
+      className="IS3 S2"
     >
       <Image
         aspectRatio={1.5}
@@ -5200,7 +5203,7 @@ exports[`37. tile ad 1`] = `
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
-  line-height: 27px;
+  line-height: 20px;
   margin-bottom: 5px;
 }
 
@@ -5358,7 +5361,7 @@ exports[`38. tile ac 1`] = `
 
 .IS3 {
   font-size: 30px;
-  line-height: 35px;
+  line-height: 30px;
   text-align: center;
 }
 
