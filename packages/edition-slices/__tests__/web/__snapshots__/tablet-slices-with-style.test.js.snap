@@ -546,8 +546,6 @@ exports[`6. leaders slice - medium 1`] = `
 
 .IS12 {
   background-color: rgba(240,240,240,1.00);
-  padding-right: 40px;
-  padding-left: 40px;
   padding-top: 20px;
 }
 </style>
@@ -2243,8 +2241,6 @@ exports[`21. leaders slice - wide 1`] = `
 
 .IS12 {
   background-color: rgba(240,240,240,1.00);
-  padding-right: 40px;
-  padding-left: 40px;
   padding-top: 20px;
 }
 </style>
@@ -3940,8 +3936,6 @@ exports[`36. leaders slice - huge 1`] = `
 
 .IS12 {
   background-color: rgba(240,240,240,1.00);
-  padding-right: 40px;
-  padding-left: 40px;
   padding-top: 20px;
 }
 </style>

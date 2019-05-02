@@ -79,7 +79,7 @@ class TileSummary extends Component {
     const { strapline, straplineStyle } = this.props;
 
     return (
-      <ArticleSummaryStrapline strapline={"strapline wer wer wer wer werw erw erwerwerwer werw erw erw erw erwerwerwr wer wer wer werw erw er"} style={straplineStyle} />
+      <ArticleSummaryStrapline strapline={strapline} style={straplineStyle} />
     );
   }
 

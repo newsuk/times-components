@@ -436,7 +436,8 @@ exports[`4. tile d 1`] = `
 }
 
 .IS1 {
-  width: 45%;
+  padding-right: 10px;
+  width: 50%;
 }
 
 .IS2 {
@@ -483,10 +484,9 @@ exports[`4. tile d 1`] = `
 }
 
 .IS7 {
-  padding-right: 10px;
-  padding-left: 10px;
   padding-bottom: 5px;
-  width: 55%;
+  padding-right: 10px;
+  width: 50%;
 }
 
 .IS8 {
@@ -592,7 +592,8 @@ exports[`5. tile e 1`] = `
 }
 
 .IS1 {
-  width: 45%;
+  padding-right: 10px;
+  width: 50%;
 }
 
 .IS2 {
@@ -639,10 +640,9 @@ exports[`5. tile e 1`] = `
 }
 
 .IS7 {
-  padding-right: 10px;
-  padding-left: 10px;
   padding-bottom: 5px;
-  width: 55%;
+  padding-right: 10px;
+  width: 50%;
 }
 
 .IS8 {
@@ -1851,6 +1851,8 @@ exports[`13. tile m 1`] = `
 
 .IS2 {
   font-family: TimesDigitalW04-Regular;
+  padding-right: 40px;
+  padding-left: 40px;
   text-align: center;
 }
 
@@ -2262,7 +2264,6 @@ exports[`16. tile p 1`] = `
   line-height: 35px;
   padding-right: 10px;
   padding-left: 10px;
-  padding-top: 10px;
   text-align: center;
 }
 
@@ -2300,7 +2301,6 @@ exports[`16. tile p 1`] = `
   -webkit-align-items: center;
   align-items: center;
   padding-top: 20px;
-  padding-bottom: 20px;
   -ms-flex-align: center;
   -webkit-box-align: center;
 }
@@ -2586,7 +2586,6 @@ exports[`19. tile s 1`] = `
 
 .S3 {
   color: rgba(105,105,105,1.00);
-  font-family: TimesDigitalW04;
   font-size: 14px;
   font-weight: inherit;
   line-height: 20px;
@@ -2625,6 +2624,10 @@ exports[`19. tile s 1`] = `
 }
 
 .IS5 {
+  font-family: TimesDigitalW04-Regular;
+}
+
+.IS6 {
   margin-top: 10px;
 }
 </style>
@@ -2642,7 +2645,7 @@ exports[`19. tile s 1`] = `
     </div>
   </div>
   <div
-    className="S3"
+    className="IS5 S3"
   >
     <p>
       <b
@@ -2671,7 +2674,7 @@ exports[`19. tile s 1`] = `
     </p>
   </div>
   <div
-    className="IS5 S4"
+    className="IS6 S4"
   >
     <span>
       Libby Purves
@@ -4436,8 +4439,8 @@ exports[`32. tile ak 1`] = `
 .S1 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
+  font-size: 22px;
   font-weight: 400;
-  line-height: 27px;
   margin-bottom: 5px;
 }
 
@@ -4446,19 +4449,20 @@ exports[`32. tile ak 1`] = `
 }
 
 .IS1 {
-  font-size: 25px;
+  line-height: 22px;
 }
 
 .IS2 {
-  padding-right: 15px;
-  padding-left: 15px;
-  padding-top: 15px;
-  width: 85%;
+  height: 80px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 
 .IS3 {
   -webkit-align-self: flex-end;
   align-self: flex-end;
+  margin-top: -25px;
   width: 85%;
   -ms-flex-item-align: end;
 }
@@ -4471,8 +4475,11 @@ exports[`32. tile ak 1`] = `
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
+  height: 150px;
   margin-right: 5px;
   margin-left: 5px;
+  overflow-x: hidden;
+  overflow-y: hidden;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;

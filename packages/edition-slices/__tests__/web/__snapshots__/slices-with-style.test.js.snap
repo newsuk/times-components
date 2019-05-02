@@ -648,8 +648,6 @@ exports[`2. leaders 1`] = `
 
 .IS12 {
   background-color: rgba(240,240,240,1.00);
-  padding-right: 40px;
-  padding-left: 40px;
   padding-top: 20px;
 }
 </style>
@@ -816,8 +814,6 @@ exports[`2. leaders 2`] = `
 
 .IS12 {
   background-color: rgba(240,240,240,1.00);
-  padding-right: 40px;
-  padding-left: 40px;
   padding-top: 20px;
 }
 </style>
@@ -2090,39 +2086,10 @@ exports[`13. list two and six no pic 1`] = `
 }
 
 .IS5 {
-  border-bottom-width: 1px;
-  border-top-color: rgba(219,219,219,1.00);
-  border-right-color: rgba(219,219,219,1.00);
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-left-color: rgba(219,219,219,1.00);
-  margin-right: 10px;
-  margin-left: 10px;
+  width: 50%;
 }
 
 .IS6 {
-  border-bottom-width: 1px;
-  border-top-color: rgba(219,219,219,1.00);
-  border-right-color: rgba(219,219,219,1.00);
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-left-color: rgba(219,219,219,1.00);
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.IS7 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS8 {
   border-top-color: rgba(219,219,219,1.00);
   border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
@@ -2130,6 +2097,28 @@ exports[`13. list two and six no pic 1`] = `
   border-right-width: 1px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.IS7 {
+  width: 50%;
+}
+
+.IS8 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
 }
 
 .IS9 {
@@ -2143,6 +2132,42 @@ exports[`13. list two and six no pic 1`] = `
 }
 
 .IS10 {
+  width: 50%;
+}
+
+.IS11 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.IS12 {
+  width: 50%;
+}
+
+.IS13 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS14 {
   border-bottom-width: 1px;
   border-top-color: rgba(219,219,219,1.00);
   border-right-color: rgba(219,219,219,1.00);
@@ -2152,20 +2177,47 @@ exports[`13. list two and six no pic 1`] = `
   margin-left: 10px;
 }
 
-.IS11 {
+.IS15 {
+  width: 50%;
+}
+
+.IS16 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.IS17 {
+  width: 50%;
+}
+
+.IS18 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   -webkit-flex-shrink: 1;
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
   -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
 }
 
-.IS12 {
+.IS19 {
+  width: 50%;
+}
+
+.IS20 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   -webkit-flex-shrink: 1;
@@ -2185,7 +2237,7 @@ exports[`13. list two and six no pic 1`] = `
   -webkit-box-direction: normal;
 }
 
-.IS13 {
+.IS21 {
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
@@ -2195,10 +2247,10 @@ exports[`13. list two and six no pic 1`] = `
 </style>
 
 <div
-  className="IS13 S1"
+  className="IS21 S1"
 >
   <div
-    className="IS12 S1"
+    className="IS20 S1"
   >
     <div
       className="IS1 S1"
@@ -2221,45 +2273,77 @@ exports[`13. list two and six no pic 1`] = `
       className="IS4"
     />
     <div
-      className="IS7 S1"
+      className="IS19 S1"
     >
-      <TileL
-        tileName="support1"
-      />
       <div
-        className="IS5 S1"
-      />
-      <TileL
-        tileName="support2"
-      />
-      <div
-        className="IS6 S1"
-      />
-      <TileL
-        tileName="support3"
-      />
-    </div>
-    <div
-      className="IS8"
-    />
-    <div
-      className="IS11 S1"
-    >
-      <TileL
-        tileName="support4"
-      />
+        className="IS8 S1"
+      >
+        <div
+          className="IS5 S1"
+        >
+          <TileL
+            tileName="support1"
+          />
+        </div>
+        <div
+          className="IS6"
+        />
+        <div
+          className="IS7 S1"
+        >
+          <TileL
+            tileName="support2"
+          />
+        </div>
+      </div>
       <div
         className="IS9 S1"
       />
-      <TileL
-        tileName="support5"
+      <div
+        className="IS13 S1"
+      >
+        <div
+          className="IS10 S1"
+        >
+          <TileL
+            tileName="support3"
+          />
+        </div>
+        <div
+          className="IS11"
+        />
+        <div
+          className="IS12 S1"
+        >
+          <TileL
+            tileName="support4"
+          />
+        </div>
+      </div>
+      <div
+        className="IS14 S1"
       />
       <div
-        className="IS10 S1"
-      />
-      <TileL
-        tileName="support6"
-      />
+        className="IS18 S1"
+      >
+        <div
+          className="IS15 S1"
+        >
+          <TileL
+            tileName="support5"
+          />
+        </div>
+        <div
+          className="IS16"
+        />
+        <div
+          className="IS17 S1"
+        >
+          <TileL
+            tileName="support6"
+          />
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -2368,8 +2452,6 @@ exports[`14. leaders 1`] = `
 
 .IS12 {
   background-color: rgba(240,240,240,1.00);
-  padding-right: 40px;
-  padding-left: 40px;
   padding-top: 20px;
 }
 </style>
