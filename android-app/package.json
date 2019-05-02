@@ -4,7 +4,7 @@
   "license": "BSD-3-Clause",
   "scripts": {
     "build:android": "./gradlew clean && ./gradlew generateReactArchives && ./gradlew assemble && ./gradlew publish",
-    "build:js": "NODE_ENV=production haul bundle --platform android --dev false --minimize true --entry-file index.android.js --bundle-output xnative/src/main/assets/index.android.bundle --assets-dest xnative/src/main/res/",
+    "build:js": "react-native bundle --platform android --dev false --entry-file index.android.js --bundle-output xnative/src/main/assets/index.android.bundle --assets-dest xnative/src/main/res/",
     "build:move-map": "mkdir -p build && mv xnative/src/main/assets/index.android.bundle.map build/",
     "build:all": "yarn build && yarn build:android",
     "build": "yarn build:js && yarn build:move-map",
