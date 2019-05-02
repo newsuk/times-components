@@ -19,7 +19,7 @@ const HoverIcon =
 class SaveStarWeb extends Component {
   constructor(props) {
     super(props);
-    // this.bookmarkEvents = this.bookmarkEvents.bind(this);
+    this.onSaveButtonPress = this.onSaveButtonPress.bind(this);
     this.state = {
       loadingState: null,
       savedArticles: null,
@@ -27,111 +27,17 @@ class SaveStarWeb extends Component {
     };
   }
 
-  componentDidMount() {
+  async componentDidMount() {
     const { articleId, saveApi } = this.props;
 
-    this.setState({ loadingState: true });
+    this.setState({ loadingState: typeof window !== "undefined" });
 
-    if (typeof window === "undefined") {
-      this.setState({ loadingState: false });
-    }
-    saveApi
-      .getBookmarks()
-      .then(response => {
-        const { loading, data } = response;
-        if (loading) {
-          this.setState({ loadingState: true });
-        }
-        if (loading === false) {
-          const savedArticles = data.viewer.bookmarks.bookmarks.map(
-            item => item.id
-          );
-          this.setState({
-            loadingState: false,
-            savedArticles,
-            savedStatus: !!savedArticles.find(item => item === articleId)
-          });
-        }
-      })
-      .catch(err => {
-        this.setState({ loadingState: false, savedStatus: false });
-        console.error("Error in connecting to api", err);
-      });
+    await this.getBookmarks(articleId, saveApi);
   }
 
-  saveLink(saveStatus) {
-    const { colour, hoverColour } = this.props;
+  onSaveButtonPress(evt) {
+    evt.preventDefault();
 
-    const saveStyle = getStyles({ saveStatus });
-    const { fillColour, strokeColour } = saveStyle;
-
-    const saveText = saveStatus ? "Saved" : "Save  ";
-
-    return (
-      /* eslint-disable jsx-a11y/anchor-is-valid */
-      <Fragment>
-        <Text style={styles.label}>{saveText}</Text>
-        <Link
-          onPress={e => {
-            e.preventDefault();
-            this.bookmarkEvents();
-          }}
-          responsiveLinkStyles={styles.link}
-        >
-          <HoverIcon colour={colour} hoverColour={hoverColour}>
-            <IconSaveBookmark
-              fillColour={fillColour}
-              strokeColour={strokeColour}
-              title="Save to My Articles"
-            />
-          </HoverIcon>
-        </Link>
-      </Fragment>
-    );
-  }
-
-  saveBookmark() {
-    this.setState({ loadingState: true });
-    const { savedArticles } = this.state;
-    const { articleId: id, saveApi } = this.props;
-
-    saveApi
-      .bookmark(id)
-      .then(() => {
-        this.setState({
-          loadingState: false,
-          savedArticles: [...savedArticles, id],
-          savedStatus: true
-        });
-      })
-      .catch(err => {
-        this.setState({ loadingState: false, savedStatus: false });
-        console.error("Error in connecting to api", err);
-      });
-  }
-
-  unsaveBookmark() {
-    const { savedArticles } = this.state;
-    const { articleId: id, saveApi } = this.props;
-
-    this.setState({ loadingState: true });
-
-    saveApi
-      .unBookmark(id)
-      .then(() => {
-        this.setState({
-          loadingState: false,
-          savedArticles: savedArticles.filter(item => item !== id),
-          savedStatus: false
-        });
-      })
-      .catch(err => {
-        this.setState({ loadingState: false, savedStatus: true });
-        console.error("Error in connecting to api", err);
-      });
-  }
-
-  bookmarkEvents() {
     const { articleId: id } = this.props;
     const { savedArticles } = this.state;
 
@@ -147,24 +53,104 @@ class SaveStarWeb extends Component {
     }
   }
 
-  render() {
+  async getBookmarks(articleId, saveApi) {
+    try {
+      const response = await saveApi.getBookmarks();
+      const { loading, data } = response;
+      if (loading) {
+        this.setState({ loadingState: true });
+      } else {
+        const savedArticles = data.viewer.bookmarks.bookmarks.map(
+          item => item.id
+        );
+        this.setState({
+          loadingState: false,
+          savedArticles,
+          savedStatus: !!savedArticles.find(item => item === articleId)
+        });
+      }
+    } catch (error) {
+      this.setState({ loadingState: false, savedStatus: false });
+      console.error("Error in connecting to api", error);
+    }
+  }
+
+  async saveBookmark() {
+    this.setState({ loadingState: true });
+    const { savedArticles } = this.state;
+    const { articleId: id, saveApi } = this.props;
+
+    try {
+      await saveApi.bookmark(id);
+      this.setState({
+        loadingState: false,
+        savedArticles: [...savedArticles, id],
+        savedStatus: true
+      });
+    } catch (error) {
+      this.setState({ loadingState: false, savedStatus: false });
+      console.error("Error in connecting to api", error);
+    }
+  }
+
+  async unsaveBookmark() {
+    const { savedArticles } = this.state;
+    const { articleId: id, saveApi } = this.props;
+    this.setState({ loadingState: true });
+
+    try {
+      saveApi.unBookmark(id);
+      this.setState({
+        loadingState: false,
+        savedArticles: savedArticles.filter(item => item !== id),
+        savedStatus: false
+      });
+    } catch (error) {
+      this.setState({ loadingState: false, savedStatus: true });
+      console.error("Error in connecting to api", error);
+    }
+  }
+
+  renderSaveButton(saveStatus) {
+    const { colour, hoverColour } = this.props;
+
+    const saveStyle = getStyles({ saveStatus });
+    const { fillColour, strokeColour } = saveStyle;
+    /* eslint-disable jsx-a11y/anchor-is-valid */
+
+    return (
+      <Link onPress={this.onSaveButtonPress} responsiveLinkStyles={styles.link}>
+        <HoverIcon colour={colour} hoverColour={hoverColour}>
+          <IconSaveBookmark
+            fillColour={fillColour}
+            strokeColour={strokeColour}
+            title="Save to My Articles"
+          />
+        </HoverIcon>
+      </Link>
+    );
+  }
+
+  renderActivity() {
     const { savedStatus, loadingState } = this.state;
-    const saveText = savedStatus ? "Saved" : "Save  ";
 
     if (loadingState) {
-      return (
-        <Fragment>
-          <Text style={styles.label}>{saveText}</Text>
-          <ActivityIndicator size="small" style={styles.activityLoader} />
-        </Fragment>
-      );
+      return <ActivityIndicator size="small" style={styles.activityLoader} />;
     }
 
-    if (savedStatus) {
-      return this.saveLink(true);
-    }
+    return this.renderSaveButton(!!savedStatus);
+  }
 
-    return this.saveLink(false);
+  render() {
+    const { savedStatus } = this.state;
+    const activity = this.renderActivity();
+
+    return (
+      <Fragment>
+        <Text style={styles.label}>{savedStatus ? "Saved" : "Save  "}</Text>
+        {activity}
+      </Fragment>
+    );
   }
 }
 
