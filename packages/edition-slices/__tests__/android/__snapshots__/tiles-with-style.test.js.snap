@@ -178,14 +178,16 @@ exports[`2. tile b 1`] = `
 
 exports[`3. tile c 1`] = `
 <Link>
-  <Image
+  <View
     style={
       Object {
         "marginBottom": 10,
         "width": "100%",
       }
     }
-  />
+  >
+    <Image />
+  </View>
   <View>
     <View
       style={

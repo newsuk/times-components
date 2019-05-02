@@ -92,10 +92,12 @@ exports[`3. tile c 1`] = `
   }
   url="/article/123"
 >
-  <Image
-    aspectRatio={1.7777777777777777}
-    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
-  />
+  <View>
+    <Image
+      aspectRatio={1.7777777777777777}
+      uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+    />
+  </View>
   <View>
     <View>
       <Text>
