@@ -22,7 +22,6 @@ class SaveStarWeb extends Component {
     this.onSaveButtonPress = this.onSaveButtonPress.bind(this);
     this.state = {
       loadingState: null,
-      savedArticles: null,
       savedStatus: false
     };
   }
@@ -38,16 +37,10 @@ class SaveStarWeb extends Component {
   onSaveButtonPress(evt) {
     evt.preventDefault();
 
-    const { articleId: id } = this.props;
-    const { savedArticles } = this.state;
+    const { savedStatus } = this.state;
 
-    if (savedArticles) {
-      const newStatus = !!savedArticles.find(item => item === id);
-      if (newStatus) {
-        this.unsaveBookmark();
-      } else {
-        this.saveBookmark();
-      }
+    if (savedStatus) {
+      this.unsaveBookmark();
     } else {
       this.saveBookmark();
     }
@@ -63,9 +56,9 @@ class SaveStarWeb extends Component {
         const savedArticles = data.viewer.bookmarks.bookmarks.map(
           item => item.id
         );
+
         this.setState({
           loadingState: false,
-          savedArticles,
           savedStatus: !!savedArticles.find(item => item === articleId)
         });
       }
@@ -77,14 +70,12 @@ class SaveStarWeb extends Component {
 
   async saveBookmark() {
     this.setState({ loadingState: true });
-    const { savedArticles } = this.state;
     const { articleId: id, saveApi } = this.props;
 
     try {
       await saveApi.bookmark(id);
       this.setState({
         loadingState: false,
-        savedArticles: [...savedArticles, id],
         savedStatus: true
       });
     } catch (error) {
@@ -94,7 +85,6 @@ class SaveStarWeb extends Component {
   }
 
   async unsaveBookmark() {
-    const { savedArticles } = this.state;
     const { articleId: id, saveApi } = this.props;
     this.setState({ loadingState: true });
 
@@ -102,7 +92,6 @@ class SaveStarWeb extends Component {
       saveApi.unBookmark(id);
       this.setState({
         loadingState: false,
-        savedArticles: savedArticles.filter(item => item !== id),
         savedStatus: false
       });
     } catch (error) {
