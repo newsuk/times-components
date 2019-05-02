@@ -1,8 +1,6 @@
 import { View, Dimensions } from "react-native";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { breakpoints, colours, spacing } from "@times-components/styleguide";
-
-const windowWidth = Dimensions.get("window").width;
 
 export const MainContainer = styled(View)`
   display: block;
@@ -32,14 +30,20 @@ export const BodyContainer = styled(View)`
 `;
 
 /* --- SaveAndShareBar --- */
+
+const shouldStick = maxStickyWidth =>
+  Dimensions.get("window").width <= maxStickyWidth;
+
+const STICKY_STYLES = css`
+  width: 100% !important;
+  opacity: 0.98;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
+  margin: ${spacing(6)} 0 !important;
+`;
+
 export const SaveShareContainer = styled(View)`
   ${props =>
-    props.isSticky && windowWidth <= breakpoints.huge
-      ? `width: 100% !important;
-      opacity: 0.98;
-      box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
-      margin: ${spacing(6)} 0 !important`
-      : ""};
+    props.isSticky && shouldStick(breakpoints.huge) ? STICKY_STYLES : ""};
 
   background-color: ${colours.functional.white};
   height: 55px;
@@ -53,18 +57,25 @@ export const SaveShareContainer = styled(View)`
   }
 `;
 
-export const RefContainer = styled.div`
+const REF_STICKY_STYLES = css`
+  ${shouldStick(breakpoints.huge)
+    ? css`
+        border: 0;
+      `
+    : ""};
+  ${shouldStick(breakpoints.medium)
+    ? css`
+        padding: 0 ${spacing(2)};
+      `
+    : ""};
+`;
+
+export const SaveShareRefContainer = styled(View)`
   border-top: 1px solid;
   border-bottom: 1px solid;
   border-color: ${colours.functional.keyline};
 
-  ${props =>
-    props.isSticky && windowWidth <= breakpoints.huge ? "border: 0;" : ""};
-
-  ${props =>
-    props.isSticky && windowWidth <= breakpoints.medium
-      ? `padding: 0 ${spacing(2)};`
-      : ""};
+  ${props => (props.isSticky ? REF_STICKY_STYLES : "")};
 
   @media (min-width: ${breakpoints.medium}px) {
     width: 80.8%;

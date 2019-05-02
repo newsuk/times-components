@@ -356,7 +356,7 @@ exports[`full article with style 1`] = `
       className="c2 S1"
     >
       <div
-        className="c3"
+        className="c3 S1"
       >
         <div>
           <SaveAndShareBar />

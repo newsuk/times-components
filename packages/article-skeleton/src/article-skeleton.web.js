@@ -17,7 +17,7 @@ import {
   HeaderAdContainer,
   MainContainer,
   SaveShareContainer,
-  RefContainer
+  SaveShareRefContainer
 } from "./styles/responsive";
 import Head from "./head";
 
@@ -52,7 +52,7 @@ class ArticleSkeleton extends Component {
     const offsetTop = this.sticky.getBoundingClientRect().top;
     const isSticky = offsetTop === 1 || offsetTop === 0;
 
-    return this.setState({ isSticky });
+    this.setState({ isSticky });
   }
 
   render() {
@@ -117,7 +117,7 @@ class ArticleSkeleton extends Component {
                 <MainContainer>
                   <Header width={articleWidth} />
                   <SaveShareContainer isSticky={isSticky}>
-                    <RefContainer isSticky={isSticky}>
+                    <SaveShareRefContainer isSticky={isSticky}>
                       <div
                         ref={el => {
                           this.sticky = el;
@@ -130,7 +130,7 @@ class ArticleSkeleton extends Component {
                           onShareOnEmail={() => {}}
                         />
                       </div>
-                    </RefContainer>
+                    </SaveShareRefContainer>
                   </SaveShareContainer>
                   <BodyContainer>
                     <ArticleBody
