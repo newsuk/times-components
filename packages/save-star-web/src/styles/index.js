@@ -21,20 +21,20 @@ const styles = {
   },
   link: {
     base: `
-    margin-left: ${spacing(1)};
-    border-radius: 9999px;
-    overflow: hidden;
-    text-align: center;
-    line-height: 45px;
-    height: 40px;
-    width: 40px;
+      margin-left: ${spacing(1)};
+      border-radius: 9999px;
+      overflow: hidden;
+      text-align: center;
+      line-height: 45px;
+      height: 40px;
+      width: 40px;
 
-    &:hover {
-      background-color: ${colours.functional.whiteGrey};
-    }
-    &:active {
-      background-color: ${colours.functional.keyline};
-    }
+      &:hover {
+        background-color: ${colours.functional.whiteGrey};
+      }
+      &:active {
+        background-color: ${colours.functional.keyline};
+      }
   `
   },
   save: {
