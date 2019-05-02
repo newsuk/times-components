@@ -3,7 +3,7 @@ import Ad, { AdComposer } from "@times-components/ad";
 import SaveAndShareBar from "@times-components/save-and-share-bar";
 import ArticleExtras from "@times-components/article-extras";
 import LazyLoad from "@times-components/lazy-load";
-import { spacing } from "@times-components/styleguide";
+import { spacing, breakpoints } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import ArticleBody from "./article-body/article-body";
 import {
@@ -17,7 +17,8 @@ import {
   HeaderAdContainer,
   MainContainer,
   SaveShareContainer,
-  SaveShareRefContainer
+  SaveShareRefContainer,
+  isStickyAllowed
 } from "./styles/responsive";
 import Head from "./head";
 
@@ -50,7 +51,7 @@ class ArticleSkeleton extends Component {
 
   handleScroll() {
     const offsetTop = this.sticky.getBoundingClientRect().top;
-    const isSticky = offsetTop === 1 || offsetTop === 0;
+    const isSticky = isStickyAllowed(breakpoints.huge) && offsetTop <= 1;
 
     this.setState({ isSticky });
   }

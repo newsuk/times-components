@@ -31,7 +31,7 @@ export const BodyContainer = styled(View)`
 
 /* --- SaveAndShareBar --- */
 
-const shouldStick = maxStickyWidth =>
+export const isStickyAllowed = maxStickyWidth =>
   Dimensions.get("window").width <= maxStickyWidth;
 
 const STICKY_STYLES = css`
@@ -42,8 +42,7 @@ const STICKY_STYLES = css`
 `;
 
 export const SaveShareContainer = styled(View)`
-  ${props =>
-    props.isSticky && shouldStick(breakpoints.huge) ? STICKY_STYLES : ""};
+  ${props => (props.isSticky ? STICKY_STYLES : "")};
 
   background-color: ${colours.functional.white};
   height: 55px;
@@ -58,16 +57,10 @@ export const SaveShareContainer = styled(View)`
 `;
 
 const REF_STICKY_STYLES = css`
-  ${shouldStick(breakpoints.huge)
-    ? css`
-        border: 0;
-      `
-    : ""};
-  ${shouldStick(breakpoints.medium)
-    ? css`
-        padding: 0 ${spacing(2)};
-      `
-    : ""};
+  border: 0;
+  @media (max-width: ${breakpoints.medium}px) {
+    padding: 0 ${spacing(2)};
+  }
 `;
 
 export const SaveShareRefContainer = styled(View)`
