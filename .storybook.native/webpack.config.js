@@ -4,7 +4,7 @@ module.exports = (baseConfig, env, defaultConfig) => {
   baseConfig.entry = path.resolve(__dirname, "./index.js");
   baseConfig.resolve = {
     ...baseConfig.resolve,
-    extensions: [".android.js", ".ios.js", ".native.js", ".js", ".webpack.js", ".mjs", ".js"],
+    extensions: [".android.js", ".ios.js", ".native.js", ".js", ".webpack.js", ".mjs"],
     mainFields: ["devModule", "dev", "react-native", "browser", "module", "main"],
   };
 
