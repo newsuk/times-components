@@ -31,7 +31,6 @@
     "access": "public"
   },
   "devDependencies": {
-    "@babel/core": "7.4.4",
     "@thetimes/jest-lint": "*",
     "@times-components/eslint-config-thetimes": "0.8.9",
     "@times-components/jest-configurator": "2.5.4",
@@ -43,7 +42,6 @@
     "babel-loader": "8.0.5",
     "babel-plugin-add-react-displayname": "0.0.5",
     "babel-plugin-styled-components": "1.10.0",
-    "metro-react-native-babel-preset": "0.53.1",
     "depcheck": "0.6.9",
     "eslint": "5.9.0",
     "jest": "23.6.0",

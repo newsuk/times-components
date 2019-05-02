@@ -17,8 +17,8 @@ export default () => {
       print,
       minimalWebTransform,
       minimaliseTransform((value, key) => omitProps.has(key)),
-      replacePropTransform((value, key) =>
-        key === "src" ? hash(JSON.stringify(value)) : value
+      replacePropTransform(
+        (value, key) => (key === "src" ? hash(JSON.stringify(value)) : value)
       )
     )
   );

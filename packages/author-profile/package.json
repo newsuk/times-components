@@ -36,7 +36,6 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@babel/core": "7.4.4",
     "@thetimes/jest-lint": "*",
     "@times-components/ad": "2.5.30",
     "@times-components/eslint-config-thetimes": "0.8.9",
@@ -53,7 +52,6 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "23.6.0",
     "babel-loader": "8.0.5",
-    "metro-react-native-babel-preset": "0.53.1",
     "depcheck": "0.6.9",
     "eslint": "5.9.0",
     "jest": "23.6.0",

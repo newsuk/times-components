@@ -8,7 +8,8 @@ export default ({ exists, readFile }, resolve) => {
 
   const getBabelConfig = async dir => {
     const babelConfigPath = path.resolve(dir, "babel.config.js");
-    const babelConfig = require(babelConfigPath)({ cache: () => { } });
+    // eslint-disable-next-line global-require,import/no-dynamic-require
+    const babelConfig = require(babelConfigPath)({ cache: () => {} });
     return {
       ...babelConfig,
       plugins: [

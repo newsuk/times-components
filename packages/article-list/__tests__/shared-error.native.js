@@ -17,8 +17,8 @@ export default () => {
       print,
       minimalNativeTransform,
       minimaliseTransform((value, key) => omitProps.has(key)),
-      replacePropTransform((value, key) =>
-        key === "source" ? hash(JSON.stringify(value)) : value
+      replacePropTransform(
+        (value, key) => (key === "source" ? hash(JSON.stringify(value)) : value)
       )
     )
   );
