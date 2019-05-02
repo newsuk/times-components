@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { editionBreakpoints } from "@times-components/styleguide";
+import Image from "@times-components/image";
 import {
   getTileImageUri,
-  TileImage,
   TileLink,
   TileSummary,
   withTileTracking
@@ -16,7 +16,7 @@ const TileAC = ({ onPress, tile, breakpoint }) => {
 
   return (
     <TileLink onPress={onPress} style={container} tile={tile}>
-      <TileImage
+      <Image
         aspectRatio={16 / 9}
         style={imageContainer}
         uri={getTileImageUri(tile, "crop169")}
