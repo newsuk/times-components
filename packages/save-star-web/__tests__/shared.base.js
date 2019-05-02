@@ -66,10 +66,6 @@ export default () => {
           />
         );
         await delay(0);
-        expect(wrapper.state("savedArticles")).toEqual([
-          "96508c84-6611-11e9-adc2-05e1b87efaea",
-          "5504b5a8-b1c0-11e8-a553-a0ee9be48bc6"
-        ]);
         expect(wrapper.state("savedStatus")).toEqual(true);
       }
     },
@@ -99,7 +95,6 @@ export default () => {
           />
         );
         await delay(0);
-        expect(wrapper.state("savedArticles")).toEqual([]);
         expect(wrapper.state("savedStatus")).toEqual(false);
       }
     },
@@ -117,9 +112,6 @@ export default () => {
         wrapper.find(Link).simulate("press", event);
         await delay(0);
 
-        expect(wrapper.state("savedArticles")).toEqual([
-          "5504b5a8-b1c0-11e8-a553-a0ee9be48bc6"
-        ]);
         expect(wrapper.state("savedStatus")).toEqual(false);
       }
     },
@@ -137,11 +129,6 @@ export default () => {
         wrapper.find(Link).simulate("press", event);
         await delay(0);
 
-        expect(wrapper.state("savedArticles")).toEqual([
-          "96508c84-6611-11e9-adc2-05e1b87efaea",
-          "5504b5a8-b1c0-11e8-a553-a0ee9be48bc6",
-          "9bd029d2-49a1-11e9-b472-f58a50a13bbb"
-        ]);
         expect(wrapper.state("savedStatus")).toEqual(true);
       }
     }
