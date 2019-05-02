@@ -11,6 +11,7 @@ export default {
           articleHeadline="test-headline"
           articleUrl="article-url-test"
           onCopyLink={() => {}}
+          onShareOnEmail={() => {}}
           saveApi={saveApi}
         />
       ),

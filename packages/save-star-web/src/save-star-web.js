@@ -19,7 +19,7 @@ const HoverIcon =
 class SaveStarWeb extends Component {
   constructor(props) {
     super(props);
-    this.bookmarkEvents = this.bookmarkEvents.bind(this);
+    // this.bookmarkEvents = this.bookmarkEvents.bind(this);
     this.state = {
       loadingState: null,
       savedArticles: null,
@@ -132,12 +132,11 @@ class SaveStarWeb extends Component {
   }
 
   bookmarkEvents() {
-    let newStatus = null;
     const { articleId: id } = this.props;
     const { savedArticles } = this.state;
 
     if (savedArticles) {
-      newStatus = !!savedArticles.find(item => item === id);
+      const newStatus = !!savedArticles.find(item => item === id);
       if (newStatus) {
         this.unsaveBookmark();
       } else {
