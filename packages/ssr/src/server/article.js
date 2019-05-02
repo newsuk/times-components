@@ -6,7 +6,8 @@ const defaultAdConfig = require("../lib/ads/make-article-ad-config")
 module.exports = (
   articleId,
   headers,
-  { graphqlApiUrl, logger, makeArticleUrl, makeTopicUrl, spotAccountId }, userState
+  { graphqlApiUrl, logger, makeArticleUrl, makeTopicUrl, spotAccountId },
+  userState
 ) => {
   if (typeof articleId !== "string") {
     throw new Error(`Article ID should be a string. Received ${articleId}`);

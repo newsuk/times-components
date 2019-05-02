@@ -68,9 +68,10 @@ export default () => {
     it("adds defaults to the provided context", () => {
       const scale = scales.large;
       const sectionColour = "#FFFFFF";
+      const isLoggedIn = false;
       const testInstance = TestRenderer.create(
         <ContextProviderWithDefaults
-          value={{ theme: { scale, sectionColour } }}
+          value={{ theme: { scale, sectionColour }, user: { isLoggedIn } }}
         >
           <Context.Consumer>
             {context => JSON.stringify(context)}

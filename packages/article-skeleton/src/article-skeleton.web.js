@@ -87,49 +87,51 @@ class ArticleSkeleton extends Component {
         <Context.Consumer>
           {({ user }) => (
             <Fragment>
-            <Head article={article} />
-            <AdComposer adConfig={adConfig}>
-              <LazyLoad rootMargin={spacing(10)} threshold={0.5}>
-                {({ observed, registerNode }) => (
-                  <Fragment>
-                    <HeaderAdContainer key="headerAd">
-                      <Ad
-                        contextUrl={url}
-                        section={section}
-                        slotName="header"
-                        style={adStyle}
-                      />
-                    </HeaderAdContainer>
-                    <MainContainer>
-                      <Header width={articleWidth} />
-                      <BodyContainer>
-                        <ArticleBody
-                          content={newContent}
+              <Head article={article} />
+              <AdComposer adConfig={adConfig}>
+                <LazyLoad rootMargin={spacing(10)} threshold={0.5}>
+                  {({ observed, registerNode }) => (
+                    <Fragment>
+                      <HeaderAdContainer key="headerAd">
+                        <Ad
                           contextUrl={url}
-                          observed={observed}
-                          registerNode={registerNode}
                           section={section}
+                          slotName="header"
+                          style={adStyle}
                         />
-                        <ArticleExtras
-                          analyticsStream={analyticsStream}
-                          articleId={articleId}
-                          commentsEnabled={commentsEnabled}
-                          registerNode={registerNode}
-                          relatedArticleSlice={
-                            user.isLoggedIn ? relatedArticleSlice : null
-                          }
-                          relatedArticlesVisible={
-                            !!observed.get("related-articles")
-                          }
-                          spotAccountId={user.isLoggedIn ? spotAccountId : null}
-                          topics={user.isLoggedIn ? topics : null}
-                        />
-                      </BodyContainer>
-                    </MainContainer>
-                  </Fragment>
-                )}
-              </LazyLoad>
-            </AdComposer>
+                      </HeaderAdContainer>
+                      <MainContainer>
+                        <Header width={articleWidth} />
+                        <BodyContainer>
+                          <ArticleBody
+                            content={newContent}
+                            contextUrl={url}
+                            observed={observed}
+                            registerNode={registerNode}
+                            section={section}
+                          />
+                          <ArticleExtras
+                            analyticsStream={analyticsStream}
+                            articleId={articleId}
+                            commentsEnabled={commentsEnabled}
+                            registerNode={registerNode}
+                            relatedArticleSlice={
+                              user.isLoggedIn ? relatedArticleSlice : null
+                            }
+                            relatedArticlesVisible={
+                              !!observed.get("related-articles")
+                            }
+                            spotAccountId={
+                              user.isLoggedIn ? spotAccountId : null
+                            }
+                            topics={user.isLoggedIn ? topics : null}
+                          />
+                        </BodyContainer>
+                      </MainContainer>
+                    </Fragment>
+                  )}
+                </LazyLoad>
+              </AdComposer>
             </Fragment>
           )}
         </Context.Consumer>
