@@ -38,10 +38,6 @@ exports[`1. article summary component with a single paragraph 1`] = `
 }
 
 .S5 {
-  margin-bottom: 10px;
-}
-
-.S6 {
   color: rgba(105,105,105,1.00);
   font-family: GillSansMTStd-Medium;
   font-size: 13px;
@@ -50,7 +46,7 @@ exports[`1. article summary component with a single paragraph 1`] = `
   margin-bottom: 5px;
 }
 
-.S7 {
+.S6 {
   color: inherit;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
   font-size: 14px;
@@ -89,26 +85,22 @@ exports[`1. article summary component with a single paragraph 1`] = `
       ...
     </span>
   </div>
+  <ArticleFlags
+    flags={
+      Array [
+        Object {
+          "expiryTime": "2020-03-13T12:00:00.000Z",
+          "type": "UPDATED",
+        },
+        Object {
+          "expiryTime": "2019-03-14T12:00:00.000Z",
+          "type": "EXCLUSIVE",
+        },
+      ]
+    }
+  />
   <div
     className="S5"
-  >
-    <ArticleFlags
-      flags={
-        Array [
-          Object {
-            "expiryTime": "2020-03-13T12:00:00.000Z",
-            "type": "UPDATED",
-          },
-          Object {
-            "expiryTime": "2019-03-14T12:00:00.000Z",
-            "type": "EXCLUSIVE",
-          },
-        ]
-      }
-    />
-  </div>
-  <div
-    className="S6"
     data-testid="datePublication"
   >
     <DatePublication
@@ -117,7 +109,7 @@ exports[`1. article summary component with a single paragraph 1`] = `
     />
   </div>
   <div
-    className="S7"
+    className="S6"
   >
     <ArticleByline
       ast={

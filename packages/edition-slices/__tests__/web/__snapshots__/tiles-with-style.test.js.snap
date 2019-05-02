@@ -20,10 +20,6 @@ exports[`1. tile a 1`] = `
   font-weight: 400;
 }
 
-.S4 {
-  margin-bottom: 10px;
-}
-
 .IS1 {
   color: rgba(0,91,141,1.00);
 }
@@ -103,29 +99,25 @@ exports[`1. tile a 1`] = `
       This is tile headline
     </h3>
     <div
-      className="S4"
+      className="IS5 S2"
     >
       <div
-        className="IS5 S2"
+        className="IS3 S2"
       >
-        <div
-          className="IS3 S2"
-        >
-          <ArticleFlags
-            flags={
-              Array [
-                Object {
-                  "expiryTime": "2030-03-14T12:00:00.000Z",
-                  "type": "EXCLUSIVE",
-                },
-              ]
-            }
-          />
-        </div>
-        <div
-          className="IS4 S2"
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
         />
       </div>
+      <div
+        className="IS4 S2"
+      />
     </div>
   </div>
   <div
@@ -179,10 +171,6 @@ exports[`2. tile b 1`] = `
   font-size: 14px;
   font-weight: inherit;
   line-height: 20px;
-  margin-bottom: 10px;
-}
-
-.S6 {
   margin-bottom: 10px;
 }
 
@@ -274,29 +262,25 @@ exports[`2. tile b 1`] = `
         </span>
       </div>
       <div
-        className="S6"
+        className="IS5 S2"
       >
         <div
-          className="IS5 S2"
+          className="IS3 S2"
         >
-          <div
-            className="IS3 S2"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS4 S2"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
+        <div
+          className="IS4 S2"
+        />
       </div>
     </div>
   </div>
@@ -388,20 +372,16 @@ exports[`3. tile c 1`] = `
     >
       This is tile headline
     </h3>
-    <div
-      className="S1"
-    >
-      <ArticleFlags
-        flags={
-          Array [
-            Object {
-              "expiryTime": "2030-03-14T12:00:00.000Z",
-              "type": "EXCLUSIVE",
-            },
-          ]
-        }
-      />
-    </div>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
   </div>
   <div
     className="IS4 S3"
@@ -428,10 +408,6 @@ exports[`4. tile d 1`] = `
   font-family: TimesModern-Bold;
   font-size: 22px;
   font-weight: 400;
-  margin-bottom: 10px;
-}
-
-.S4 {
   margin-bottom: 10px;
 }
 
@@ -536,29 +512,25 @@ exports[`4. tile d 1`] = `
         This is tile headline
       </h3>
       <div
-        className="S4"
+        className="IS6 S1"
       >
         <div
-          className="IS6 S1"
+          className="IS4 S1"
         >
-          <div
-            className="IS4 S1"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS5 S1"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
+        <div
+          className="IS5 S1"
+        />
       </div>
     </div>
   </div>
@@ -585,10 +557,6 @@ exports[`5. tile e 1`] = `
   font-size: 22px;
   font-weight: 400;
   margin-bottom: 5px;
-}
-
-.S4 {
-  margin-bottom: 10px;
 }
 
 .IS1 {
@@ -692,29 +660,25 @@ exports[`5. tile e 1`] = `
         This is tile headline
       </h3>
       <div
-        className="S4"
+        className="IS6 S1"
       >
         <div
-          className="IS6 S1"
+          className="IS4 S1"
         >
-          <div
-            className="IS4 S1"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS5 S1"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
+        <div
+          className="IS5 S1"
+        />
       </div>
     </div>
   </div>
@@ -770,10 +734,6 @@ exports[`6. tile f 1`] = `
   font-size: 14px;
   font-weight: inherit;
   line-height: 20px;
-  margin-bottom: 10px;
-}
-
-.S7 {
   margin-bottom: 10px;
 }
 
@@ -872,29 +832,25 @@ exports[`6. tile f 1`] = `
         </span>
       </div>
       <div
-        className="S7"
+        className="IS5 S2"
       >
         <div
-          className="IS5 S2"
+          className="IS3 S2"
         >
-          <div
-            className="IS3 S2"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS4 S2"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
+        <div
+          className="IS4 S2"
+        />
       </div>
     </div>
   </div>
@@ -921,10 +877,6 @@ exports[`7. tile g 1`] = `
   font-size: 22px;
   font-weight: 400;
   margin-bottom: 5px;
-}
-
-.S4 {
-  margin-bottom: 10px;
 }
 
 .IS1 {
@@ -1038,29 +990,25 @@ exports[`7. tile g 1`] = `
         This is tile headline
       </h3>
       <div
-        className="S4"
+        className="IS6 S1"
       >
         <div
-          className="IS6 S1"
+          className="IS4 S1"
         >
-          <div
-            className="IS4 S1"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS5 S1"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
+        <div
+          className="IS5 S1"
+        />
       </div>
     </div>
   </div>
@@ -1112,10 +1060,6 @@ exports[`8. tile h 1`] = `
 }
 
 .S6 {
-  margin-bottom: 10px;
-}
-
-.S7 {
   color: rgba(51,51,51,1.00);
   font-family: GillSansMTStd-Medium;
   font-size: 13px;
@@ -1124,7 +1068,7 @@ exports[`8. tile h 1`] = `
   margin-bottom: 0px;
 }
 
-.S8 {
+.S7 {
   color: inherit;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
   font-size: 14px;
@@ -1239,40 +1183,36 @@ exports[`8. tile h 1`] = `
         </span>
       </div>
       <div
-        className="S6"
+        className="IS5 S2"
       >
         <div
-          className="IS5 S2"
+          className="IS3 S2"
         >
-          <div
-            className="IS3 S2"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS4 S2"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
+        <div
+          className="IS4 S2"
+        />
       </div>
       <div
-        className="S8"
+        className="S7"
       >
         <span
-          className="S7"
+          className="S6"
         >
           Richard Lloyd Parry
         </span>
         <span
-          className="S7"
+          className="S6"
         >
           , Hanoi
         </span>
@@ -1312,10 +1252,6 @@ exports[`9. tile i 1`] = `
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
-  margin-bottom: 10px;
-}
-
-.S4 {
   margin-bottom: 10px;
 }
 
@@ -1385,29 +1321,25 @@ exports[`9. tile i 1`] = `
       This is tile headline
     </h3>
     <div
-      className="S4"
+      className="S1"
     >
       <div
         className="S1"
       >
-        <div
-          className="S1"
-        >
-          <ArticleFlags
-            flags={
-              Array [
-                Object {
-                  "expiryTime": "2030-03-14T12:00:00.000Z",
-                  "type": "EXCLUSIVE",
-                },
-              ]
-            }
-          />
-        </div>
-        <div
-          className="IS4 S1"
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
         />
       </div>
+      <div
+        className="IS4 S1"
+      />
     </div>
   </div>
 </Link>
@@ -1432,10 +1364,6 @@ exports[`10. tile j 1`] = `
   font-family: TimesModern-Bold;
   font-size: 22px;
   font-weight: 400;
-  margin-bottom: 10px;
-}
-
-.S4 {
   margin-bottom: 10px;
 }
 
@@ -1525,29 +1453,25 @@ exports[`10. tile j 1`] = `
         This is tile headline
       </h3>
       <div
-        className="S4"
+        className="S1"
       >
         <div
-          className="S1"
+          className="IS4 S1"
         >
-          <div
-            className="IS4 S1"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS5 S1"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
+        <div
+          className="IS5 S1"
+        />
       </div>
     </div>
   </div>
@@ -1572,10 +1496,6 @@ exports[`11. tile k 1`] = `
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
-  margin-bottom: 10px;
-}
-
-.S4 {
   margin-bottom: 10px;
 }
 
@@ -1665,29 +1585,25 @@ exports[`11. tile k 1`] = `
         This is tile headline
       </h3>
       <div
-        className="S4"
+        className="S1"
       >
         <div
-          className="S1"
+          className="IS4 S1"
         >
-          <div
-            className="IS4 S1"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS5 S1"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
+        <div
+          className="IS5 S1"
+        />
       </div>
     </div>
   </div>
@@ -1713,10 +1629,6 @@ exports[`12. tile l 1`] = `
   font-family: TimesModern-Bold;
   font-weight: 400;
   line-height: 20px;
-  margin-bottom: 10px;
-}
-
-.S4 {
   margin-bottom: 10px;
 }
 
@@ -1788,29 +1700,25 @@ exports[`12. tile l 1`] = `
         This is tile headline
       </h3>
       <div
-        className="S4"
+        className="S2"
       >
         <div
-          className="S2"
+          className="IS3 S2"
         >
-          <div
-            className="IS3 S2"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS4 S2"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
+        <div
+          className="IS4 S2"
+        />
       </div>
     </div>
   </div>
@@ -1837,10 +1745,6 @@ exports[`13. tile m 1`] = `
 
 .S3 {
   margin-bottom: 0px;
-}
-
-.S4 {
-  margin-bottom: 10px;
 }
 
 .IS1 {
@@ -1887,20 +1791,16 @@ exports[`13. tile m 1`] = `
         Three Conservative MPs resign
       </h4>
       <div
-        className="S4"
+        className="S3"
       >
         <div
           className="S3"
         >
-          <div
-            className="S3"
-          >
-            <ArticleFlags />
-          </div>
-          <div
-            className="IS3 S3"
-          />
+          <ArticleFlags />
         </div>
+        <div
+          className="IS3 S3"
+        />
       </div>
     </div>
   </div>
@@ -1935,10 +1835,6 @@ exports[`14. tile n 1`] = `
   font-weight: inherit;
   line-height: 21px;
   margin-bottom: 0px;
-}
-
-.S5 {
-  margin-bottom: 10px;
 }
 
 .IS1 {
@@ -2036,30 +1932,26 @@ exports[`14. tile n 1`] = `
         Three Conservative MPs resign
       </h4>
       <div
-        className="S5"
+        className="S1"
       >
         <div
-          className="S1"
+          className="IS4 S1"
         >
-          <div
-            className="IS4 S1"
-          >
-            <ArticleFlags
-              color="#CCC"
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS5 S1"
+          <ArticleFlags
+            color="#CCC"
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
+        <div
+          className="IS5 S1"
+        />
       </div>
     </div>
   </div>
@@ -2084,10 +1976,6 @@ exports[`15. tile o 1`] = `
   font-family: TimesModern-Bold;
   font-size: 22px;
   font-weight: 400;
-}
-
-.S4 {
-  margin-bottom: 10px;
 }
 
 .IS1 {
@@ -2162,30 +2050,26 @@ exports[`15. tile o 1`] = `
         This is tile headline
       </h3>
       <div
-        className="S4"
+        className="S2"
       >
         <div
-          className="S2"
+          className="IS3 S2"
         >
-          <div
-            className="IS3 S2"
-          >
-            <ArticleFlags
-              color="#CCC"
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS4 S2"
+          <ArticleFlags
+            color="#CCC"
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
+        <div
+          className="IS4 S2"
+        />
       </div>
     </div>
   </div>
@@ -2222,10 +2106,6 @@ exports[`16. tile p 1`] = `
 }
 
 .S5 {
-  margin-bottom: 10px;
-}
-
-.S6 {
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: inherit;
@@ -2233,7 +2113,7 @@ exports[`16. tile p 1`] = `
   margin-bottom: 0px;
 }
 
-.S7 {
+.S6 {
   color: inherit;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
   font-size: 14px;
@@ -2347,40 +2227,36 @@ exports[`16. tile p 1`] = `
         Three Conservative MPs resign
       </h4>
       <div
-        className="S5"
+        className="S1"
       >
         <div
           className="S1"
         >
-          <div
-            className="S1"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS5 S1"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
+        <div
+          className="IS5 S1"
+        />
       </div>
       <div
-        className="S7"
+        className="S6"
       >
         <span
-          className="IS6 S6"
+          className="IS6 S5"
         >
           Richard Lloyd Parry
         </span>
         <span
-          className="IS7 S6"
+          className="IS7 S5"
         >
           , Hanoi
         </span>
@@ -2460,10 +2336,6 @@ exports[`18. tile r 1`] = `
   margin-bottom: 5px;
 }
 
-.S4 {
-  margin-bottom: 10px;
-}
-
 .IS1 {
   color: rgba(0,91,141,1.00);
 }
@@ -2534,29 +2406,25 @@ exports[`18. tile r 1`] = `
         This is tile headline
       </h3>
       <div
-        className="S4"
+        className="S2"
       >
         <div
-          className="S2"
+          className="IS3 S2"
         >
-          <div
-            className="IS3 S2"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS4 S2"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
+        <div
+          className="IS4 S2"
+        />
       </div>
     </div>
     <div
@@ -2702,10 +2570,6 @@ exports[`20. tile t 1`] = `
   margin-bottom: 5px;
 }
 
-.S4 {
-  margin-bottom: 10px;
-}
-
 .IS1 {
   width: 50%;
 }
@@ -2794,29 +2658,25 @@ exports[`20. tile t 1`] = `
         This is tile headline
       </h3>
       <div
-        className="S4"
+        className="S1"
       >
         <div
-          className="S1"
+          className="IS4 S1"
         >
-          <div
-            className="IS4 S1"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS5 S1"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
+        <div
+          className="IS5 S1"
+        />
       </div>
     </div>
   </div>
@@ -2842,10 +2702,6 @@ exports[`21. tile u 1`] = `
   font-family: TimesModern-Bold;
   font-weight: 400;
   margin-bottom: 5px;
-}
-
-.S4 {
-  margin-bottom: 10px;
 }
 
 .IS1 {
@@ -2938,29 +2794,25 @@ exports[`21. tile u 1`] = `
         This is tile headline
       </h3>
       <div
-        className="S4"
+        className="S2"
       >
         <div
-          className="S2"
+          className="IS3 S2"
         >
-          <div
-            className="IS3 S2"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS4 S2"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
+        <div
+          className="IS4 S2"
+        />
       </div>
     </div>
     <div
@@ -3082,29 +2934,25 @@ exports[`22. tile v 1`] = `
         This is tile headline
       </h3>
       <div
-        className="S1"
+        className="S3"
       >
         <div
-          className="S3"
+          className="IS4 S3"
         >
-          <div
-            className="IS4 S3"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS5 S3"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
+        <div
+          className="IS5 S3"
+        />
       </div>
     </div>
   </div>
@@ -3151,10 +2999,6 @@ exports[`23. tile w 1`] = `
   font-size: 14px;
   font-weight: inherit;
   line-height: 20px;
-  margin-bottom: 10px;
-}
-
-.S6 {
   margin-bottom: 10px;
 }
 
@@ -3248,29 +3092,25 @@ exports[`23. tile w 1`] = `
         </span>
       </div>
       <div
-        className="S6"
+        className="S2"
       >
         <div
-          className="S2"
+          className="IS3 S2"
         >
-          <div
-            className="IS3 S2"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS4 S2"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
+        <div
+          className="IS4 S2"
+        />
       </div>
     </div>
     <div
@@ -3331,10 +3171,6 @@ exports[`24. tile x 1`] = `
   font-size: 14px;
   font-weight: inherit;
   line-height: 20px;
-  margin-bottom: 10px;
-}
-
-.S7 {
   margin-bottom: 10px;
 }
 
@@ -3432,29 +3268,25 @@ exports[`24. tile x 1`] = `
         </span>
       </div>
       <div
-        className="S7"
+        className="S2"
       >
         <div
-          className="S2"
+          className="IS4 S2"
         >
-          <div
-            className="IS4 S2"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS5 S2"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
+        <div
+          className="IS5 S2"
+        />
       </div>
     </div>
   </div>
@@ -3501,10 +3333,6 @@ exports[`25. tile y 1`] = `
   font-size: 14px;
   font-weight: inherit;
   line-height: 20px;
-  margin-bottom: 10px;
-}
-
-.S6 {
   margin-bottom: 10px;
 }
 
@@ -3586,29 +3414,25 @@ exports[`25. tile y 1`] = `
       </span>
     </div>
     <div
-      className="S6"
+      className="S2"
     >
       <div
-        className="S2"
+        className="IS3 S2"
       >
-        <div
-          className="IS3 S2"
-        >
-          <ArticleFlags
-            flags={
-              Array [
-                Object {
-                  "expiryTime": "2030-03-14T12:00:00.000Z",
-                  "type": "EXCLUSIVE",
-                },
-              ]
-            }
-          />
-        </div>
-        <div
-          className="IS4 S2"
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
         />
       </div>
+      <div
+        className="IS4 S2"
+      />
     </div>
   </div>
 </Link>
@@ -3708,29 +3532,25 @@ exports[`26. tile z 1`] = `
         This is tile headline
       </h3>
       <div
-        className="S4"
+        className="S2"
       >
         <div
-          className="S2"
+          className="IS3 S2"
         >
-          <div
-            className="IS3 S2"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS4 S2"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
+        <div
+          className="IS4 S2"
+        />
       </div>
     </div>
     <div
@@ -3764,10 +3584,6 @@ exports[`27. tile aa 1`] = `
   font-family: TimesModern-Bold;
   font-weight: 400;
   margin-bottom: 5px;
-}
-
-.S4 {
-  margin-bottom: 10px;
 }
 
 .IS1 {
@@ -3855,29 +3671,25 @@ exports[`27. tile aa 1`] = `
         This is tile headline
       </h3>
       <div
-        className="S4"
+        className="S1"
       >
         <div
-          className="S1"
+          className="IS4 S1"
         >
-          <div
-            className="IS4 S1"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS5 S1"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
+        <div
+          className="IS5 S1"
+        />
       </div>
     </div>
   </div>
@@ -3928,10 +3740,6 @@ exports[`28. tile ab 1`] = `
 }
 
 .S6 {
-  margin-bottom: 10px;
-}
-
-.S7 {
   color: rgba(51,51,51,1.00);
   font-family: GillSansMTStd-Medium;
   font-size: 13px;
@@ -3940,7 +3748,7 @@ exports[`28. tile ab 1`] = `
   margin-bottom: 0px;
 }
 
-.S8 {
+.S7 {
   color: inherit;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
   font-size: 14px;
@@ -4043,40 +3851,36 @@ exports[`28. tile ab 1`] = `
         </span>
       </div>
       <div
-        className="S6"
+        className="S2"
       >
         <div
-          className="S2"
+          className="IS3 S2"
         >
-          <div
-            className="IS3 S2"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS4 S2"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
+        <div
+          className="IS4 S2"
+        />
       </div>
       <div
-        className="S8"
+        className="S7"
       >
         <span
-          className="S7"
+          className="S6"
         >
           Richard Lloyd Parry
         </span>
         <span
-          className="S7"
+          className="S6"
         >
           , Hanoi
         </span>
@@ -4138,10 +3942,6 @@ exports[`29. tile ae 1`] = `
   font-size: 14px;
   font-weight: inherit;
   line-height: 20px;
-  margin-bottom: 10px;
-}
-
-.S6 {
   margin-bottom: 10px;
 }
 
@@ -4225,29 +4025,25 @@ exports[`29. tile ae 1`] = `
         </span>
       </div>
       <div
-        className="S6"
+        className="S2"
       >
         <div
-          className="S2"
+          className="IS3 S2"
         >
-          <div
-            className="IS3 S2"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS4 S2"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
+        <div
+          className="IS4 S2"
+        />
       </div>
     </div>
   </div>
@@ -4273,10 +4069,6 @@ exports[`30. tile ag 1`] = `
 
 .S3 {
   margin-bottom: 0px;
-}
-
-.S4 {
-  margin-bottom: 10px;
 }
 
 .IS1 {
@@ -4329,20 +4121,16 @@ exports[`30. tile ag 1`] = `
         Three Conservative MPs resign
       </h4>
       <div
-        className="S4"
+        className="S3"
       >
         <div
           className="S3"
         >
-          <div
-            className="S3"
-          >
-            <ArticleFlags />
-          </div>
-          <div
-            className="IS3 S3"
-          />
+          <ArticleFlags />
         </div>
+        <div
+          className="IS3 S3"
+        />
       </div>
     </div>
   </div>
@@ -4557,10 +4345,6 @@ exports[`33. tile al 1`] = `
   margin-bottom: 10px;
 }
 
-.S6 {
-  margin-bottom: 10px;
-}
-
 .IS1 {
   padding-top: 10px;
   width: 100%;
@@ -4653,29 +4437,25 @@ exports[`33. tile al 1`] = `
         </span>
       </div>
       <div
-        className="S6"
+        className="S1"
       >
         <div
-          className="S1"
+          className="IS4 S1"
         >
-          <div
-            className="IS4 S1"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS5 S1"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
+        <div
+          className="IS5 S1"
+        />
       </div>
     </div>
   </div>
@@ -4822,29 +4602,25 @@ exports[`34. tile am 1`] = `
         </span>
       </div>
       <div
-        className="S1"
+        className="S3"
       >
         <div
-          className="S3"
+          className="IS4 S3"
         >
-          <div
-            className="IS4 S3"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS5 S3"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
+        <div
+          className="IS5 S3"
+        />
       </div>
     </div>
   </div>
@@ -4892,10 +4668,6 @@ exports[`35. tile an 1`] = `
   font-size: 14px;
   font-weight: inherit;
   line-height: 20px;
-  margin-bottom: 10px;
-}
-
-.S6 {
   margin-bottom: 10px;
 }
 
@@ -5005,29 +4777,25 @@ exports[`35. tile an 1`] = `
         </span>
       </div>
       <div
-        className="S6"
+        className="S1"
       >
         <div
-          className="S1"
+          className="IS4 S1"
         >
-          <div
-            className="IS4 S1"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS5 S1"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
+        <div
+          className="IS5 S1"
+        />
       </div>
     </div>
   </div>
@@ -5054,10 +4822,6 @@ exports[`36. tile ap 1`] = `
   font-size: 22px;
   font-weight: 400;
   margin-bottom: 5px;
-}
-
-.S4 {
-  margin-bottom: 10px;
 }
 
 .IS1 {
@@ -5156,29 +4920,25 @@ exports[`36. tile ap 1`] = `
         This is tile headline
       </h3>
       <div
-        className="S4"
+        className="S1"
       >
         <div
-          className="S1"
+          className="IS4 S1"
         >
-          <div
-            className="IS4 S1"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS5 S1"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
+        <div
+          className="IS5 S1"
+        />
       </div>
     </div>
   </div>
@@ -5205,10 +4965,6 @@ exports[`37. tile ad 1`] = `
   font-weight: 400;
   line-height: 20px;
   margin-bottom: 5px;
-}
-
-.S4 {
-  margin-bottom: 10px;
 }
 
 .IS1 {
@@ -5297,29 +5053,25 @@ exports[`37. tile ad 1`] = `
         This is tile headline
       </h3>
       <div
-        className="S4"
+        className="S1"
       >
         <div
-          className="S1"
+          className="IS4 S1"
         >
-          <div
-            className="IS4 S1"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS5 S1"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
+        <div
+          className="IS5 S1"
+        />
       </div>
     </div>
   </div>
@@ -5344,10 +5096,6 @@ exports[`38. tile ac 1`] = `
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
-  margin-bottom: 10px;
-}
-
-.S4 {
   margin-bottom: 10px;
 }
 
@@ -5436,29 +5184,25 @@ exports[`38. tile ac 1`] = `
       This is tile headline
     </h3>
     <div
-      className="S4"
+      className="S1"
     >
       <div
         className="S1"
       >
-        <div
-          className="S1"
-        >
-          <ArticleFlags
-            flags={
-              Array [
-                Object {
-                  "expiryTime": "2030-03-14T12:00:00.000Z",
-                  "type": "EXCLUSIVE",
-                },
-              ]
-            }
-          />
-        </div>
-        <div
-          className="IS4 S1"
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
         />
       </div>
+      <div
+        className="IS4 S1"
+      />
     </div>
   </div>
 </Link>
