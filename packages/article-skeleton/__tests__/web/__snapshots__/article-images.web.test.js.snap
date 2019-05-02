@@ -2,6 +2,7 @@
 
 exports[`1. a secondary image 1`] = `
 <article>
+  <Head />
   <div>
     <Ad
       contextUrl="https://url.io"
@@ -47,6 +48,7 @@ exports[`1. a secondary image 1`] = `
 
 exports[`2. an inline image 1`] = `
 <article>
+  <Head />
   <div>
     <Ad
       contextUrl="https://url.io"

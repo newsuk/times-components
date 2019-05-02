@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.28.12](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.28.11...@times-components/styleguide@3.28.12) (2019-05-01)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+## [3.28.11](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.28.10...@times-components/styleguide@3.28.11) (2019-05-01)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+## [3.28.10](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.28.9...@times-components/styleguide@3.28.10) (2019-04-30)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+## [3.28.9](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.28.8...@times-components/styleguide@3.28.9) (2019-04-30)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+## [3.28.8](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.28.7...@times-components/styleguide@3.28.8) (2019-04-29)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
 ## [3.28.7](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.28.6...@times-components/styleguide@3.28.7) (2019-04-18)
 
 **Note:** Version bump only for package @times-components/styleguide

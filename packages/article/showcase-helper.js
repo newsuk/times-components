@@ -1,7 +1,10 @@
 /* eslint-disable import/no-extraneous-dependencies, no-bitwise, operator-assignment, react/prop-types */
 import React, { Component, Fragment } from "react";
 import articleAdConfig from "@times-components/ad/fixtures/article-ad-config.json";
-import Context, { defaults } from "@times-components/context";
+import {
+  ContextProviderWithDefaults,
+  defaults
+} from "@times-components/context";
 import { ArticleProvider } from "@times-components/provider";
 import {
   article as makeParams,
@@ -13,11 +16,6 @@ import { sections } from "@times-components/storybook";
 import { scales, themeFactory } from "@times-components/styleguide";
 import storybookReporter from "@times-components/tealium-utils";
 import Article, { templates } from "./src/article";
-
-const makeArticleUrl = ({ slug, shortIdentifier }) =>
-  slug && shortIdentifier
-    ? `https://www.thetimes.co.uk/article/${slug}-${shortIdentifier}`
-    : "";
 
 const preventDefaultedAction = decorateAction =>
   decorateAction([
@@ -214,19 +212,15 @@ const renderArticle = ({
 
       const data = {
         ...article,
-        author: {
-          image:
-            "https://feeds.thetimes.co.uk/web/imageserver/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0694e84e-04ff-11e7-976a-0b4b9a1a67a3.jpg?crop=854,854,214,0&resize=400"
-        },
         backgroundColour: inDepthBackgroundColour,
+        descriptionMarkup: [article.content.find(m => m.name === "paragraph")],
         template,
         textColour: inDepthTextColour
       };
 
       return (
-        <Context.Provider
+        <ContextProviderWithDefaults
           value={{
-            makeArticleUrl,
             theme: {
               ...themeFactory(section, template),
               scale: scale || defaults.theme.scale
@@ -263,7 +257,7 @@ const renderArticle = ({
             )}
             refetch={refetch}
           />
-        </Context.Provider>
+        </ContextProviderWithDefaults>
       );
     }}
   </ArticleProvider>

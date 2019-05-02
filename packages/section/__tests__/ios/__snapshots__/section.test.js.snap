@@ -1,7 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Sunday Times magazine section 1`] = `
-<RCTScrollView>
+<RCTScrollView
+  style={
+    Object {
+      "paddingTop": 10,
+    }
+  }
+>
   <View>
     <View>
       <View
@@ -78,7 +84,13 @@ exports[`Sunday Times magazine section 1`] = `
 `;
 
 exports[`Times magazine section 1`] = `
-<RCTScrollView>
+<RCTScrollView
+  style={
+    Object {
+      "paddingTop": 10,
+    }
+  }
+>
   <View>
     <View>
       <View
@@ -232,7 +244,13 @@ exports[`puzzle bar with one puzzle 1`] = `
 `;
 
 exports[`section page 1`] = `
-<RCTScrollView>
+<RCTScrollView
+  style={
+    Object {
+      "paddingTop": 10,
+    }
+  }
+>
   <View>
     <View>
       <LeadOneAndFourSlice />
@@ -242,6 +260,7 @@ exports[`section page 1`] = `
             Object {
               "backgroundColor": "#DBDBDB",
               "height": 1,
+              "marginHorizontal": 20,
             }
           }
         />
@@ -255,6 +274,7 @@ exports[`section page 1`] = `
             Object {
               "backgroundColor": "#DBDBDB",
               "height": 1,
+              "marginHorizontal": 20,
             }
           }
         />
@@ -268,6 +288,7 @@ exports[`section page 1`] = `
             Object {
               "backgroundColor": "#DBDBDB",
               "height": 1,
+              "marginHorizontal": 20,
             }
           }
         />
@@ -281,6 +302,7 @@ exports[`section page 1`] = `
             Object {
               "backgroundColor": "#DBDBDB",
               "height": 1,
+              "marginHorizontal": 20,
             }
           }
         />
@@ -294,6 +316,7 @@ exports[`section page 1`] = `
             Object {
               "backgroundColor": "#DBDBDB",
               "height": 1,
+              "marginHorizontal": 20,
             }
           }
         />

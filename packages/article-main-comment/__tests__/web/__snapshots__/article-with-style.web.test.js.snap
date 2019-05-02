@@ -428,7 +428,7 @@ exports[`full article with style 1`] = `
 .IS2 {
   font-family: TimesDigitalW04;
   font-size: 17;
-  line-height: 26;
+  line-height: 30;
   color: #333333;
   margin-bottom: 25px;
   margin-top: 0;
@@ -475,6 +475,25 @@ exports[`full article with style 1`] = `
 </style>
 
 <article>
+  <Helmet>
+    <title>
+      Some Headline
+       | 
+      
+      The Times
+    </title>
+    <meta />
+    <meta />
+    <meta />
+    <meta />
+    <meta />
+    <meta />
+    <meta />
+    <meta />
+    <meta />
+    <meta />
+    <meta />
+  </Helmet>
   <div
     className="c0 S1"
   >

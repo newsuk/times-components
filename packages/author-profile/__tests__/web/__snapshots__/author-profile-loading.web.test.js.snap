@@ -2,6 +2,16 @@
 
 exports[`1. an article list loading with images 1`] = `
 <authorArticlesWithImagesProvider>
+  <Helmet>
+    <title>
+      
+       | The Times & The Sunday Times
+    </title>
+    <meta
+      content="Get up to date information and read all the latest articles from ."
+      name="description"
+    />
+  </Helmet>
   <ArticleList
     articleListHeader={
       <AuthorProfileHead
@@ -24,6 +34,16 @@ exports[`1. an article list loading with images 1`] = `
 
 exports[`2. an article list loading without images 1`] = `
 <authorArticlesWithImagesProvider>
+  <Helmet>
+    <title>
+      
+       | The Times & The Sunday Times
+    </title>
+    <meta
+      content="Get up to date information and read all the latest articles from ."
+      name="description"
+    />
+  </Helmet>
   <ArticleList
     articleListHeader={
       <AuthorProfileHead

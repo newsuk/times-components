@@ -13,6 +13,7 @@ import { ratioTextToFloat } from "@times-components/utils";
 import AuthorProfileHead from "./author-profile-head";
 import { propTypes, defaultProps } from "./author-profile-prop-types";
 import authorProfileTrackingContext from "./author-profile-tracking-context";
+import Head from "./head";
 
 const AuthorProfile = ({
   adConfig,
@@ -110,6 +111,7 @@ const AuthorProfile = ({
 
         return (
           <Responsive>
+            <Head name={name} />
             <ArticleList
               adConfig={adConfig}
               articleListHeader={articleListHeader}

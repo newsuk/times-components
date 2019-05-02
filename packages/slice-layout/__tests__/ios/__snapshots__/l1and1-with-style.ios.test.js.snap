@@ -5,6 +5,14 @@ exports[`1. lead one and one - small 1`] = `
   <Text>
     lead
   </Text>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#DBDBDB",
+        "height": 1,
+      }
+    }
+  />
   <Text>
     support
   </Text>
@@ -24,7 +32,7 @@ exports[`2. lead one and one - medium 1`] = `
   <View
     style={
       Object {
-        "width": "80%",
+        "width": "83.33%",
       }
     }
   >
@@ -45,7 +53,7 @@ exports[`2. lead one and one - medium 1`] = `
   <View
     style={
       Object {
-        "width": "20%",
+        "width": "16.67%",
       }
     }
   >

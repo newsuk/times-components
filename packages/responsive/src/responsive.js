@@ -7,18 +7,19 @@ import {
 } from "@times-components/styleguide";
 import ResponsiveContext from "./context";
 
-const calculateState = width => ({
+const calculateState = (width, fontScale) => ({
   editionBreakpoint: getEditionBreakpoint(width),
+  fontScale,
   isTablet: width > tabletWidth,
   screenWidth: width
 });
 
 class Responsive extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.onDimensionChange = this.onDimensionChange.bind(this);
-    const { width } = Dimensions.get("window");
-    this.state = calculateState(width);
+    const { fontScale, width } = Dimensions.get("window");
+    this.state = calculateState(width, fontScale);
   }
 
   componentWillMount() {
@@ -29,8 +30,8 @@ class Responsive extends Component {
     Dimensions.removeEventListener("change", this.onDimensionChange);
   }
 
-  onDimensionChange({ window: { width } }) {
-    this.setState(calculateState(width));
+  onDimensionChange({ window: { fontScale, width } }) {
+    this.setState(calculateState(width, fontScale));
   }
 
   render() {

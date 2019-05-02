@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.23](https://github.com/newsuk/times-components/compare/@times-components/gestures@4.1.22...@times-components/gestures@4.1.23) (2019-05-01)
+
+**Note:** Version bump only for package @times-components/gestures
+
+
+
+
+
+## [4.1.22](https://github.com/newsuk/times-components/compare/@times-components/gestures@4.1.21...@times-components/gestures@4.1.22) (2019-05-01)
+
+**Note:** Version bump only for package @times-components/gestures
+
+
+
+
+
+## [4.1.21](https://github.com/newsuk/times-components/compare/@times-components/gestures@4.1.20...@times-components/gestures@4.1.21) (2019-04-30)
+
+**Note:** Version bump only for package @times-components/gestures
+
+
+
+
+
+## [4.1.20](https://github.com/newsuk/times-components/compare/@times-components/gestures@4.1.19...@times-components/gestures@4.1.20) (2019-04-30)
+
+**Note:** Version bump only for package @times-components/gestures
+
+
+
+
+
+## [4.1.19](https://github.com/newsuk/times-components/compare/@times-components/gestures@4.1.18...@times-components/gestures@4.1.19) (2019-04-29)
+
+**Note:** Version bump only for package @times-components/gestures
+
+
+
+
+
 ## [4.1.18](https://github.com/newsuk/times-components/compare/@times-components/gestures@4.1.17...@times-components/gestures@4.1.18) (2019-04-18)
 
 **Note:** Version bump only for package @times-components/gestures

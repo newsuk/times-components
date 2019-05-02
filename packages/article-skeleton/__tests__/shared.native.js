@@ -54,20 +54,25 @@ export default () => {
         ...testFixture,
         content: [
           {
-            attributes: {
-              href: "https://link.io",
-              target: "_blank"
-            },
             children: [
               {
                 attributes: {
-                  value: "Press Me"
+                  href: "https://link.io",
+                  target: "_blank"
                 },
-                children: [],
-                name: "text"
+                children: [
+                  {
+                    attributes: {
+                      value: "Press Me"
+                    },
+                    children: [],
+                    name: "text"
+                  }
+                ],
+                name: "link"
               }
             ],
-            name: "link"
+            name: "paragraph"
           }
         ]
       })}

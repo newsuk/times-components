@@ -3,6 +3,68 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.28.0](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.27.16...@times-components/slice-layout@0.28.0) (2019-05-01)
+
+
+### Features
+
+* replat 6101 edition slices keylines ([#1913](https://github.com/newsuk/times-components/issues/1913)) ([4919482](https://github.com/newsuk/times-components/commit/4919482))
+
+
+
+
+
+## [0.27.16](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.27.15...@times-components/slice-layout@0.27.16) (2019-05-01)
+
+
+### Bug Fixes
+
+* Issues with lead asset size ([#1904](https://github.com/newsuk/times-components/issues/1904)) ([26334b1](https://github.com/newsuk/times-components/commit/26334b1))
+
+
+
+
+
+## [0.27.15](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.27.14...@times-components/slice-layout@0.27.15) (2019-05-01)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.27.14](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.27.13...@times-components/slice-layout@0.27.14) (2019-05-01)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.27.13](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.27.12...@times-components/slice-layout@0.27.13) (2019-04-30)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.27.12](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.27.11...@times-components/slice-layout@0.27.12) (2019-04-30)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.27.11](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.27.10...@times-components/slice-layout@0.27.11) (2019-04-29)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
 ## [0.27.10](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.27.9...@times-components/slice-layout@0.27.10) (2019-04-18)
 
 **Note:** Version bump only for package @times-components/slice-layout

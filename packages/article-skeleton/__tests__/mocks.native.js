@@ -14,7 +14,6 @@ jest.mock("@times-components/article-flag", () => ({
 }));
 jest.mock("@times-components/article-image", () => "ArticleImage");
 jest.mock("@times-components/article-label", () => "ArticleLabel");
-jest.mock("@times-components/article-paragraph", () => "ArticleParagraph");
 
 jest.mock("@times-components/article-topics", () => "ArticleTopics");
 jest.mock("@times-components/brightcove-video", () => "BrightcoveVideo");

@@ -1,4 +1,4 @@
-import { spacing } from "@times-components/styleguide";
+import { spacing, colours } from "@times-components/styleguide";
 
 const styles = {
   container: {
@@ -7,10 +7,14 @@ const styles = {
     marginHorizontal: spacing(2)
   },
   leadItem: {
-    width: "80%"
+    width: "83.33%"
+  },
+  keyline: {
+    backgroundColor: colours.functional.keyline,
+    height: 1
   },
   supportItem: {
-    width: "20%"
+    width: "16.67%"
   }
 };
 

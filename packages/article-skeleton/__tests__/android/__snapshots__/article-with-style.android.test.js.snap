@@ -33,9 +33,70 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
             }
           }
         >
-          <ArticleParagraph>
-            his being Black History Month, last week
-          </ArticleParagraph>
+          <View>
+            <View
+              style={
+                Object {
+                  "height": NaN,
+                  "left": 5,
+                  "position": "absolute",
+                  "top": 0,
+                  "width": 175,
+                  "zIndex": 1,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#FF0000",
+                    "fontFamily": "TimesModern-Regular",
+                    "fontSize": 96,
+                    "marginBottom": -30,
+                    "marginRight": 5,
+                    "marginTop": -12,
+                  }
+                }
+              >
+                T
+              </Text>
+            </View>
+            <View
+              style={
+                Object {
+                  "paddingLeft": 10,
+                  "paddingRight": 10,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "height": 0,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#333333",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": NaN,
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                      "left": 0,
+                      "lineHeight": NaN,
+                      "marginBottom": 20,
+                      "position": "absolute",
+                      "top": 0,
+                    }
+                  }
+                >
+                  his being Black History Month, last week
+                </Text>
+              </View>
+            </View>
+          </View>
         </View>
       </View>
       <View>
@@ -121,37 +182,43 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
             }
           }
         >
-          <Text
+          <View
             style={
               Object {
-                "color": "#006699",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "lineHeight": 26,
-                "marginBottom": 25,
-                "marginTop": 0,
-                "textDecorationLine": "underline",
+                "paddingLeft": 10,
+                "paddingRight": 10,
               }
             }
           >
-            Some Link
-          </Text>
-        </View>
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "alignSelf": "center",
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "width": 1194,
-            }
-          }
-        >
-          <ArticleParagraph>
-            Some content
-          </ArticleParagraph>
+            <View>
+              <Text
+                style={
+                  Object {
+                    "color": "#333333",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 17,
+                    "fontStyle": "normal",
+                    "lineHeight": 30,
+                    "marginBottom": 20,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": NaN,
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                      "lineHeight": NaN,
+                    }
+                  }
+                >
+                  Some content
+                </Text>
+              </Text>
+            </View>
+          </View>
         </View>
       </View>
       <View>
@@ -245,6 +312,229 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
           </View>
         </View>
       </View>
+      <View>
+        <View
+          style={
+            Object {
+              "alignSelf": "center",
+              "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
+              "width": 1194,
+            }
+          }
+        >
+          <View>
+            <View
+              style={
+                Object {
+                  "marginHorizontal": 10,
+                  "marginVertical": 5,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#FF0000",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 15,
+                    "fontWeight": "400",
+                    "letterSpacing": 1.2,
+                    "lineHeight": 18,
+                    "marginBottom": 20,
+                  }
+                }
+              >
+                EXAMPLE TITLE
+              </Text>
+              <View
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "flexDirection": "row",
+                      "marginBottom": 20,
+                      "paddingLeft": 1,
+                      "width": "100%",
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "backgroundColor": "#FF0000",
+                        "borderRadius": 2.5,
+                        "height": 5,
+                        "top": 2,
+                        "width": 5,
+                      }
+                    }
+                  />
+                  <Text
+                    style={
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesDigitalW04",
+                        "fontSize": 16,
+                        "lineHeight": 27,
+                        "marginTop": -8,
+                        "paddingLeft": 15,
+                        "width": "95%",
+                      }
+                    }
+                  >
+                    Example bullet text
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "flexDirection": "row",
+                      "marginBottom": 20,
+                      "paddingLeft": 1,
+                      "width": "100%",
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "backgroundColor": "#FF0000",
+                        "borderRadius": 2.5,
+                        "height": 5,
+                        "top": 2,
+                        "width": 5,
+                      }
+                    }
+                  />
+                  <Text
+                    style={
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesDigitalW04",
+                        "fontSize": 16,
+                        "lineHeight": 27,
+                        "marginTop": -8,
+                        "paddingLeft": 15,
+                        "width": "95%",
+                      }
+                    }
+                  >
+                    An example 
+                    <Text
+                      style={
+                        Object {
+                          "color": "#006699",
+                          "textDecorationLine": "underline",
+                        }
+                      }
+                    >
+                      link
+                    </Text>
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "flexDirection": "row",
+                      "marginBottom": 20,
+                      "paddingLeft": 1,
+                      "width": "100%",
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "backgroundColor": "#FF0000",
+                        "borderRadius": 2.5,
+                        "height": 5,
+                        "top": 2,
+                        "width": 5,
+                      }
+                    }
+                  />
+                  <Text
+                    style={
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesDigitalW04",
+                        "fontSize": 16,
+                        "lineHeight": 27,
+                        "marginTop": -8,
+                        "paddingLeft": 15,
+                        "width": "95%",
+                      }
+                    }
+                  >
+                    More example text.
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "flexDirection": "row",
+                      "marginBottom": 20,
+                      "paddingLeft": 1,
+                      "width": "100%",
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "backgroundColor": "#FF0000",
+                        "borderRadius": 2.5,
+                        "height": 5,
+                        "top": 2,
+                        "width": 5,
+                      }
+                    }
+                  />
+                  <Text
+                    style={
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesDigitalW04",
+                        "fontSize": 16,
+                        "lineHeight": 27,
+                        "marginTop": -8,
+                        "paddingLeft": 15,
+                        "width": "95%",
+                      }
+                    }
+                  >
+                    Example text 
+                    <Text
+                      style={
+                        Object {
+                          "fontWeight": "bold",
+                        }
+                      }
+                    >
+                      this is bold 
+                    </Text>
+                    <Text
+                      style={
+                        Object {
+                          "fontStyle": "italic",
+                        }
+                      }
+                    >
+                      this is in italics.
+                    </Text>
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
       <View
         style={
           Object {
@@ -278,56 +568,6 @@ exports[`2. an article with no content 1`] = `
             }
           }
         />
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "alignSelf": "center",
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "width": 1194,
-            }
-          }
-        />
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "alignSelf": "center",
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "width": 1194,
-            }
-          }
-        />
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "alignSelf": "center",
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "width": 1194,
-            }
-          }
-        />
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "alignSelf": "center",
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "width": 1194,
-            }
-          }
-        >
-          <ArticleExtras />
-        </View>
       </View>
     </View>
   </RCTScrollView>
@@ -366,19 +606,7 @@ exports[`3. an article with a nested markup in first paragraph displays no drop 
               "width": 1194,
             }
           }
-        >
-          <ArticleParagraph>
-            <Text
-              style={
-                Object {
-                  "fontWeight": "bold",
-                }
-              }
-            >
-              Q Some years ago I made the decision to take as a friend a woman who is very opinionated.
-            </Text>
-          </ArticleParagraph>
-        </View>
+        />
       </View>
       <View>
         <View
@@ -391,17 +619,43 @@ exports[`3. an article with a nested markup in first paragraph displays no drop 
             }
           }
         >
-          <ArticleParagraph>
-            <Text
-              style={
-                Object {
-                  "fontWeight": "bold",
-                }
+          <View
+            style={
+              Object {
+                "paddingLeft": 10,
+                "paddingRight": 10,
               }
-            >
-              When she does come to social events, she dominates.
-            </Text>
-          </ArticleParagraph>
+            }
+          >
+            <View>
+              <Text
+                style={
+                  Object {
+                    "color": "#333333",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 17,
+                    "fontStyle": "normal",
+                    "lineHeight": 30,
+                    "marginBottom": 20,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "fontFamily": "TimesDigitalW04-Bold",
+                      "fontSize": NaN,
+                      "fontStyle": "normal",
+                      "fontWeight": "bold",
+                      "lineHeight": NaN,
+                    }
+                  }
+                >
+                  When she does come to social events, she dominates.
+                </Text>
+              </Text>
+            </View>
+          </View>
         </View>
       </View>
       <View>
@@ -480,9 +734,45 @@ exports[`4. an article skeleton with responsive items 1`] = `
             }
           }
         >
-          <ArticleParagraph>
-            This being Black History Month, last week
-          </ArticleParagraph>
+          <View
+            style={
+              Object {
+                "alignSelf": "center",
+                "paddingLeft": 10,
+                "paddingRight": 10,
+                "width": 660,
+              }
+            }
+          >
+            <View>
+              <Text
+                style={
+                  Object {
+                    "color": "#333333",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 17,
+                    "fontStyle": "normal",
+                    "lineHeight": 30,
+                    "marginBottom": 20,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": NaN,
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                      "lineHeight": NaN,
+                    }
+                  }
+                >
+                  his being Black History Month, last week
+                </Text>
+              </Text>
+            </View>
+          </View>
         </View>
       </View>
       <View>
@@ -499,11 +789,9 @@ exports[`4. an article skeleton with responsive items 1`] = `
           <View
             style={
               Object {
-                "alignSelf": "center",
                 "marginBottom": 20,
                 "paddingLeft": 10,
                 "paddingRight": 10,
-                "width": 660,
               }
             }
           >
@@ -570,37 +858,45 @@ exports[`4. an article skeleton with responsive items 1`] = `
             }
           }
         >
-          <Text
+          <View
             style={
               Object {
-                "color": "#006699",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 17,
-                "lineHeight": 26,
-                "marginBottom": 25,
-                "marginTop": 0,
-                "textDecorationLine": "underline",
+                "alignSelf": "center",
+                "paddingLeft": 10,
+                "paddingRight": 10,
+                "width": 660,
               }
             }
           >
-            Some Link
-          </Text>
-        </View>
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "alignSelf": "center",
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "width": 1194,
-            }
-          }
-        >
-          <ArticleParagraph>
-            Some content
-          </ArticleParagraph>
+            <View>
+              <Text
+                style={
+                  Object {
+                    "color": "#333333",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 17,
+                    "fontStyle": "normal",
+                    "lineHeight": 30,
+                    "marginBottom": 20,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": NaN,
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                      "lineHeight": NaN,
+                    }
+                  }
+                >
+                  Some content
+                </Text>
+              </Text>
+            </View>
+          </View>
         </View>
       </View>
       <View>
@@ -640,14 +936,7 @@ exports[`4. an article skeleton with responsive items 1`] = `
             }
           }
         >
-          <View
-            style={
-              Object {
-                "alignSelf": "center",
-                "width": 660,
-              }
-            }
-          >
+          <View>
             <PullQuote>
               The pull quote content
             </PullQuote>
@@ -668,10 +957,9 @@ exports[`4. an article skeleton with responsive items 1`] = `
           <View
             style={
               Object {
-                "alignSelf": "center",
                 "flexDirection": "column",
                 "paddingBottom": 25,
-                "width": 660,
+                "width": "100%",
               }
             }
           >
@@ -697,6 +985,234 @@ exports[`4. an article skeleton with responsive items 1`] = `
                 >
                   This is video caption
                 </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "alignSelf": "center",
+              "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
+              "width": 1194,
+            }
+          }
+        >
+          <View>
+            <View
+              style={
+                Object {
+                  "alignSelf": "center",
+                  "flexDirection": "row",
+                  "marginHorizontal": 0,
+                  "marginVertical": 10,
+                  "width": "80.8%",
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#FF0000",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 15,
+                    "fontWeight": "400",
+                    "letterSpacing": 1.2,
+                    "lineHeight": 18,
+                    "marginBottom": 20,
+                    "paddingRight": 20,
+                    "width": "20%",
+                  }
+                }
+              >
+                EXAMPLE TITLE
+              </Text>
+              <View
+                style={
+                  Object {
+                    "flex": 1,
+                  }
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "flexDirection": "row",
+                      "marginBottom": 20,
+                      "paddingLeft": 1,
+                      "width": "100%",
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "backgroundColor": "#FF0000",
+                        "borderRadius": 2.5,
+                        "height": 5,
+                        "top": 2,
+                        "width": 5,
+                      }
+                    }
+                  />
+                  <Text
+                    style={
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesDigitalW04",
+                        "fontSize": 16,
+                        "lineHeight": 27,
+                        "marginTop": -8,
+                        "paddingLeft": 15,
+                        "width": "95%",
+                      }
+                    }
+                  >
+                    Example bullet text
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "flexDirection": "row",
+                      "marginBottom": 20,
+                      "paddingLeft": 1,
+                      "width": "100%",
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "backgroundColor": "#FF0000",
+                        "borderRadius": 2.5,
+                        "height": 5,
+                        "top": 2,
+                        "width": 5,
+                      }
+                    }
+                  />
+                  <Text
+                    style={
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesDigitalW04",
+                        "fontSize": 16,
+                        "lineHeight": 27,
+                        "marginTop": -8,
+                        "paddingLeft": 15,
+                        "width": "95%",
+                      }
+                    }
+                  >
+                    An example 
+                    <Text
+                      style={
+                        Object {
+                          "color": "#006699",
+                          "textDecorationLine": "underline",
+                        }
+                      }
+                    >
+                      link
+                    </Text>
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "flexDirection": "row",
+                      "marginBottom": 20,
+                      "paddingLeft": 1,
+                      "width": "100%",
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "backgroundColor": "#FF0000",
+                        "borderRadius": 2.5,
+                        "height": 5,
+                        "top": 2,
+                        "width": 5,
+                      }
+                    }
+                  />
+                  <Text
+                    style={
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesDigitalW04",
+                        "fontSize": 16,
+                        "lineHeight": 27,
+                        "marginTop": -8,
+                        "paddingLeft": 15,
+                        "width": "95%",
+                      }
+                    }
+                  >
+                    More example text.
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "flexDirection": "row",
+                      "marginBottom": 20,
+                      "paddingLeft": 1,
+                      "width": "100%",
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      Object {
+                        "backgroundColor": "#FF0000",
+                        "borderRadius": 2.5,
+                        "height": 5,
+                        "top": 2,
+                        "width": 5,
+                      }
+                    }
+                  />
+                  <Text
+                    style={
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "TimesDigitalW04",
+                        "fontSize": 16,
+                        "lineHeight": 27,
+                        "marginTop": -8,
+                        "paddingLeft": 15,
+                        "width": "95%",
+                      }
+                    }
+                  >
+                    Example text 
+                    <Text
+                      style={
+                        Object {
+                          "fontWeight": "bold",
+                        }
+                      }
+                    >
+                      this is bold 
+                    </Text>
+                    <Text
+                      style={
+                        Object {
+                          "fontStyle": "italic",
+                        }
+                      }
+                    >
+                      this is in italics.
+                    </Text>
+                  </Text>
+                </View>
               </View>
             </View>
           </View>

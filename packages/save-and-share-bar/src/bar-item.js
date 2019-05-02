@@ -1,32 +1,38 @@
 import React from "react";
-import { LinkWithPressedStyle } from "@times-components/link";
+import Link from "@times-components/link";
 import styled from "styled-components";
+import PropTypes from "prop-types";
 import styles from "./styles";
 
 const HoverIcon =
   styled.div &&
   styled.div`
-    color: ${props => props.color};
+    color: ${props => props.colour};
     &:hover {
-      color: ${props => props.hoverColor || props.color};
+      color: ${props => props.hoverColour || props.colour};
     }
   `;
 
+/* eslint-disable jsx-a11y/anchor-is-valid, react/require-default-props */
 const BarItem = ({
   children,
-  color = styles.svgIcon.fillColour,
-  hoverColor = styles.svgIcon.hoverFillColour,
+  colour = styles.svgIcon.fillColour,
+  hoverColour = styles.svgIcon.hoverFillColour,
+  onPress,
   ...props
 }) => (
-  <LinkWithPressedStyle
-    pressedStyle={styles.clickedLink}
-    style={styles.link}
-    {...props}
-  >
-    <HoverIcon color={color} hoverColor={hoverColor}>
+  <Link onPress={onPress} responsiveLinkStyles={styles.link} {...props}>
+    <HoverIcon colour={colour} hoverColour={hoverColour}>
       {children}
     </HoverIcon>
-  </LinkWithPressedStyle>
+  </Link>
 );
+
+BarItem.propTypes = {
+  children: PropTypes.node.isRequired,
+  colour: PropTypes.string,
+  hoverColour: PropTypes.string,
+  onPress: PropTypes.func.isRequired
+};
 
 export default BarItem;

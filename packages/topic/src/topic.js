@@ -10,6 +10,7 @@ import { ratioTextToFloat } from "@times-components/utils";
 import { propTypes, defaultProps } from "./topic-prop-types";
 import topicTrackingContext from "./topic-tracking-context";
 import TopicHead from "./topic-head";
+import Head from "./head";
 
 const Topic = ({
   adConfig,
@@ -87,6 +88,7 @@ const Topic = ({
 
         return (
           <Responsive>
+            <Head {...{ name, slug }} />
             <ArticleList
               adConfig={adConfig}
               articleListHeader={articleListHeader}

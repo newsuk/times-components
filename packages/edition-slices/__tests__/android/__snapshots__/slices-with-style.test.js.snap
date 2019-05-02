@@ -443,6 +443,14 @@ exports[`2. leaders 2`] = `
 exports[`3. lead one and one 1`] = `
 <View>
   <TileA />
+  <View
+    style={
+      Object {
+        "backgroundColor": "#DBDBDB",
+        "height": 1,
+      }
+    }
+  />
   <TileB />
 </View>
 `;

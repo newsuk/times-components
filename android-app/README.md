@@ -5,7 +5,7 @@ existing native application, or to bundle a native library for android app
 releases. This is useful when building components that are reliant on the
 behaviour of the actual app outside of the storybook.
 
-When ran as a development server, haul launches a webpack server that bundles
+When ran as a development server, react-native launches a webpack server that bundles
 components on-the-fly. Launch the app in debug mode to connect to development
 server.
 
@@ -15,7 +15,7 @@ bundle, image assets and native dependencies.
 ## Dev Server
 
 In order to run the dev server, either run `yarn android:app` in the repo root
-or `yarn start` inside this package. This will start Haul bundler and provide
+or `yarn start` inside this package. This will start react-native bundler and provide
 on-the-fly bundles for the react development.
 
 ## Bundling and release

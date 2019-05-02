@@ -10,18 +10,12 @@ exports[`2. empty paragraph 1`] = `<p />`;
 
 exports[`3. paragraph with a drop cap 1`] = `
 <p>
-  <span>
-    T
-  </span>
   his being Black History Month, last week was Politicians In Search Of An Eye-Catching Race-Related Policy Week.
 </p>
 `;
 
 exports[`4. paragraph with a short text and a drop cap 1`] = `
 <p>
-  <span>
-    T
-  </span>
   his being Black History
 </p>
 `;

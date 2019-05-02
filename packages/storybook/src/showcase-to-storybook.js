@@ -1,4 +1,5 @@
 import React, { StrictMode } from "react";
+import { HelmetProvider } from "react-helmet-async";
 import PropTypes from "prop-types";
 import { Platform } from "react-native";
 
@@ -10,7 +11,9 @@ React.Fragment.displayName = "React.Fragment";
 
 // eslint-disable-next-line react/prop-types
 export const StrictWrapper = ({ children }) => (
-  <StrictMode>{children}</StrictMode>
+  <StrictMode>
+    <HelmetProvider context={{}}>{children}</HelmetProvider>
+  </StrictMode>
 );
 
 const addStories = (

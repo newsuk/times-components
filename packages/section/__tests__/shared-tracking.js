@@ -74,6 +74,34 @@ export default () => {
     expect(onArticlePress.mock.calls).toMatchSnapshot("onArticlePress");
   });
 
+  it("puzzle section page click tracking", () => {
+    const edition = new MockEdition().get();
+
+    const stream = jest.fn();
+    const onPuzzlePress = jest.fn();
+
+    const testInstance = TestRenderer.create(
+      <WithTrackingContext
+        onArticlePress={() => {}}
+        onPuzzlePress={onPuzzlePress}
+        section={edition.sections[3]}
+        stream={stream}
+      />
+    );
+
+    const [link] = testInstance.root.findAllByType(Link);
+
+    link.props.onPress();
+
+    const [[call]] = stream.mock.calls;
+
+    expect(call).toMatchSnapshot();
+    expect(onPuzzlePress.mock.calls).toMatchSnapshot("onPuzzlePress");
+  });
+};
+
+// this test only applies for android as ios tiles have save buttons
+export const saveClickTracking = () => {
   it("Save/Unsave article click tracking", () => {
     const edition = new MockEdition().get();
     const stream = jest.fn();
@@ -101,30 +129,5 @@ export default () => {
 
     const call = stream.mock.calls;
     expect(call).toMatchSnapshot();
-  });
-
-  it("puzzle section page click tracking", () => {
-    const edition = new MockEdition().get();
-
-    const stream = jest.fn();
-    const onPuzzlePress = jest.fn();
-
-    const testInstance = TestRenderer.create(
-      <WithTrackingContext
-        onArticlePress={() => {}}
-        onPuzzlePress={onPuzzlePress}
-        section={edition.sections[3]}
-        stream={stream}
-      />
-    );
-
-    const [link] = testInstance.root.findAllByType(Link);
-
-    link.props.onPress();
-
-    const [[call]] = stream.mock.calls;
-
-    expect(call).toMatchSnapshot();
-    expect(onPuzzlePress.mock.calls).toMatchSnapshot("onPuzzlePress");
   });
 };

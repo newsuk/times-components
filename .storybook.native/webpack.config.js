@@ -11,7 +11,7 @@ module.exports = (baseConfig, env, defaultConfig) => {
   baseConfig.module.rules[0].test = /\.m?jsx?$/
   baseConfig.module.rules[0].query.presets = ["module:metro-react-native-babel-preset"]
   baseConfig.module.rules[0].query.plugins = []
-  baseConfig.module.rules[0].exclude = /node_modules\/(?!react|@expo|svgs|pretty-format|haul|metro)/;
+  baseConfig.module.rules[0].exclude = /node_modules\/(?!react|@expo|svgs|pretty-format|metro)/;
 
   baseConfig.module.rules.push(
     {

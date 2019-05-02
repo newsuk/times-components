@@ -8,7 +8,8 @@ const styles = StyleSheet.create({
   },
   listItemSeparator: {
     backgroundColor: colours.functional.keyline,
-    height: 1
+    height: 1,
+    marginHorizontal: spacing(4)
   },
   puzzleBarArrow: {
     paddingLeft: spacing(2),
@@ -25,6 +26,9 @@ const styles = StyleSheet.create({
     color: colours.functional.brandColour,
     fontFamily: fonts.headlineRegular,
     fontSize: 20
+  },
+  tabletSpacing: {
+    paddingTop: spacing(2)
   }
 });
 

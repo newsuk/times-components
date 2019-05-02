@@ -9,13 +9,12 @@ import {
   print
 } from "@times-components/jest-serializer";
 import Responsive from "@times-components/responsive";
-import { delay, iterator } from "@times-components/test-utils";
+import { iterator } from "@times-components/test-utils";
 import { setIsTablet } from "@times-components/mocks/dimensions";
 
 import renderParagraph from "./renderer";
 import dropCapData from "./fixtures/drop-cap-showcase.json";
 import paragraphData from "./fixtures/paragraph-showcase.json";
-import { callAllLayouts } from "./shared.base";
 
 export default () => {
   addSerializers(
@@ -33,7 +32,6 @@ export default () => {
       name: "paragraph with a drop cap",
       test: async () => {
         const testInstance = TestRenderer.create(renderParagraph(dropCapData));
-        await callAllLayouts(testInstance);
         expect(testInstance).toMatchSnapshot();
       }
     },
@@ -44,7 +42,6 @@ export default () => {
         const testInstance = TestRenderer.create(
           <Responsive>{renderParagraph(paragraphData)}</Responsive>
         );
-        await delay(0);
         expect(testInstance).toMatchSnapshot();
       }
     },
@@ -55,7 +52,6 @@ export default () => {
         const testInstance = TestRenderer.create(
           <Responsive>{renderParagraph(dropCapData)}</Responsive>
         );
-        await callAllLayouts(testInstance);
         expect(testInstance).toMatchSnapshot();
       }
     }

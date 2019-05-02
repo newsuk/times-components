@@ -30,14 +30,7 @@ This has been made possible using [Fructose](https://github.com/newsuk/fructose)
 
 ## Getting Started
 
-1. Run `yarn` to install dependencies with a `GRAPHQL_ENDPOINT` envar set for
-   linting. _This is simply an example GraphQL endpoint, and you will need to
-   obtain a valid API endpoint in order to successfully work with this
-   repository._
-
-```
-GRAPHQL_ENDPOINT="http://localhost:4000/graphql" yarn
-```
+1. Run `yarn install`
 
 2. Install [fontforge](http://fontforge.github.io/en-US/): `brew install fontforge` (See [Fonts section](#fonts))
 3. Components can be seen running in a storybook:
@@ -60,20 +53,12 @@ GRAPHQL_ENDPOINT="http://localhost:4000/graphql" yarn
 
 ## Native App Dev Server
 
-In order to run development servers for native applications, start haul dev
+In order to run development servers for native applications, start react-native dev
 server via:
 
 `yarn android:app` or `yarn ios:app`
 
 For step by step guide, see the corresponding Readme documentation for [android](./android-app/README.md) and [ios](./ios-app/README.md)
-
-## Haul
-
-We use Haul in lieu of the standard `react-native` CLI so that we can generate
-native Storybook bundles using Webpack, which we configure to honour our
-monorepo packages' respective `dev` entry points; this allows one to update a
-package's source code and preview the changes without having to manually
-re-transpile. Haul also automatically generates debuggable source maps.
 
 ### Fonts ⚠️
 

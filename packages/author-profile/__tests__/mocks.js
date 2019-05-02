@@ -1,3 +1,5 @@
+jest.mock("react-helmet-async", () => ({ Helmet: "Helmet" }));
+
 jest.mock("@times-components/article-list", () =>
   // eslint-disable-next-line global-require
   require("./mock-article-list")

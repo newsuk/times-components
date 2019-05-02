@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
 import PropTypes from "prop-types";
 import Context from "@times-components/context";
 import { ResponsiveContext } from "@times-components/responsive";
@@ -19,11 +19,7 @@ const BodyParagraph = props => (
         <Context.Consumer>
           {({ theme: { dropCapFont, scale } }) => {
             const stylesScaled = styleFactory(dropCapFont, scale);
-            return (
-              <Text selectable style={stylesScaled.articleTextElement}>
-                {props.children}
-              </Text>
-            );
+            return props.children(stylesScaled.articleTextElement);
           }}
         </Context.Consumer>
       </View>
@@ -32,9 +28,7 @@ const BodyParagraph = props => (
 );
 
 BodyParagraph.propTypes = {
-  children: PropTypes.arrayOf(
-    PropTypes.oneOfType([PropTypes.string, PropTypes.element])
-  ).isRequired
+  children: PropTypes.func.isRequired
 };
 
 export default BodyParagraph;

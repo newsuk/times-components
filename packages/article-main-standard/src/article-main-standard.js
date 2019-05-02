@@ -14,6 +14,7 @@ import {
 } from "@times-components/utils";
 import { tabletWidth } from "@times-components/styleguide";
 import Caption from "@times-components/caption";
+import Context from "@times-components/context";
 import ArticleHeader from "./article-header/article-header";
 import ArticleMeta from "./article-meta/article-meta";
 import stylesFactory from "./styles/article-body";
@@ -23,8 +24,8 @@ import {
 } from "./article-prop-types/article-prop-types";
 
 class ArticlePage extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.renderHeader = this.renderHeader.bind(this);
   }
 
@@ -128,25 +129,37 @@ class ArticlePage extends Component {
     } = this.props;
 
     return (
-      <ArticleSkeleton
-        adConfig={adConfig}
-        analyticsStream={analyticsStream}
-        data={article}
-        Header={this.renderHeader}
-        interactiveConfig={interactiveConfig}
-        onAuthorPress={onAuthorPress}
-        onCommentGuidelinesPress={onCommentGuidelinesPress}
-        onCommentsPress={onCommentsPress}
-        onImagePress={onImagePress}
-        onLinkPress={onLinkPress}
-        onRelatedArticlePress={onRelatedArticlePress}
-        onTopicPress={onTopicPress}
-        onTwitterLinkPress={onTwitterLinkPress}
-        onVideoPress={onVideoPress}
-        onViewableItemsChanged={onViewed ? this.onViewableItemsChanged : null}
-        receiveChildList={receiveChildList}
-        referralUrl={referralUrl}
-      />
+      <ResponsiveContext.Consumer>
+        {({ isTablet }) => (
+          <Context.Consumer>
+            {({ theme: { scale } }) => (
+              <ArticleSkeleton
+                adConfig={adConfig}
+                analyticsStream={analyticsStream}
+                data={article}
+                Header={this.renderHeader}
+                interactiveConfig={interactiveConfig}
+                isTablet={isTablet}
+                onAuthorPress={onAuthorPress}
+                onCommentGuidelinesPress={onCommentGuidelinesPress}
+                onCommentsPress={onCommentsPress}
+                onImagePress={onImagePress}
+                onLinkPress={onLinkPress}
+                onRelatedArticlePress={onRelatedArticlePress}
+                onTopicPress={onTopicPress}
+                onTwitterLinkPress={onTwitterLinkPress}
+                onVideoPress={onVideoPress}
+                onViewableItemsChanged={
+                  onViewed ? this.onViewableItemsChanged : null
+                }
+                receiveChildList={receiveChildList}
+                referralUrl={referralUrl}
+                scale={scale}
+              />
+            )}
+          </Context.Consumer>
+        )}
+      </ResponsiveContext.Consumer>
     );
   }
 }

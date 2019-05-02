@@ -19,8 +19,6 @@ addDecorator(withOptions({
   hierarchySeparator: /\//
 }));
 
-const loadStories = () => {
-  req.keys().filter(k => k.indexOf("brightcove-video") === -1).forEach(filename => req(filename));
-};
+const loadStories = () => req.keys().filter(k => k.indexOf("brightcove-video") === -1).forEach(filename => req(filename));
 
 configure(loadStories, module);

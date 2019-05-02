@@ -403,7 +403,15 @@ export default [
       },
       content: "A pull quote is here."
     },
-    children: [],
+    children: [
+      {
+        attributes: {
+          value: "A pull quote is here."
+        },
+        children: [],
+        name: "text"
+      }
+    ],
     name: "pullQuote"
   },
   {

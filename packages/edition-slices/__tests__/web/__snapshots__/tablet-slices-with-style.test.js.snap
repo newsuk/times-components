@@ -232,7 +232,7 @@ exports[`3. lead one and one - medium 1`] = `
 }
 
 .IS1 {
-  width: 80%;
+  width: 83.33%;
 }
 
 .IS2 {
@@ -246,7 +246,7 @@ exports[`3. lead one and one - medium 1`] = `
 }
 
 .IS3 {
-  width: 20%;
+  width: 16.67%;
 }
 
 .IS4 {
@@ -1929,7 +1929,7 @@ exports[`18. lead one and one - wide 1`] = `
 }
 
 .IS1 {
-  width: 80%;
+  width: 83.33%;
 }
 
 .IS2 {
@@ -1943,7 +1943,7 @@ exports[`18. lead one and one - wide 1`] = `
 }
 
 .IS3 {
-  width: 20%;
+  width: 16.67%;
 }
 
 .IS4 {
@@ -3626,7 +3626,7 @@ exports[`33. lead one and one - huge 1`] = `
 }
 
 .IS1 {
-  width: 80%;
+  width: 83.33%;
 }
 
 .IS2 {
@@ -3640,7 +3640,7 @@ exports[`33. lead one and one - huge 1`] = `
 }
 
 .IS3 {
-  width: 20%;
+  width: 16.67%;
 }
 
 .IS4 {

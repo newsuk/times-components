@@ -18,7 +18,8 @@ export default breakpoint => ({
   },
   headline: {
     fontFamily: fonts.headline,
-    fontSize: headlineFontSizeResolver[breakpoint]
+    fontSize: headlineFontSizeResolver[breakpoint],
+    lineHeight: headlineFontSizeResolver[breakpoint]
   },
   imageContainer: {
     width: "30%"

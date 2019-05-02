@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.69](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@3.2.68...@times-components/brightcove-video@3.2.69) (2019-05-01)
+
+**Note:** Version bump only for package @times-components/brightcove-video
+
+
+
+
+
+## [3.2.68](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@3.2.67...@times-components/brightcove-video@3.2.68) (2019-05-01)
+
+**Note:** Version bump only for package @times-components/brightcove-video
+
+
+
+
+
+## [3.2.67](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@3.2.66...@times-components/brightcove-video@3.2.67) (2019-04-30)
+
+**Note:** Version bump only for package @times-components/brightcove-video
+
+
+
+
+
+## [3.2.66](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@3.2.65...@times-components/brightcove-video@3.2.66) (2019-04-30)
+
+**Note:** Version bump only for package @times-components/brightcove-video
+
+
+
+
+
+## [3.2.65](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@3.2.64...@times-components/brightcove-video@3.2.65) (2019-04-29)
+
+**Note:** Version bump only for package @times-components/brightcove-video
+
+
+
+
+
 ## [3.2.64](https://github.com/newsuk/times-components/compare/@times-components/brightcove-video@3.2.63...@times-components/brightcove-video@3.2.64) (2019-04-18)
 
 **Note:** Version bump only for package @times-components/brightcove-video

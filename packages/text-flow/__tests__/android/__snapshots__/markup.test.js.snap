@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MarkupString returns characters 1`] = `
+Array [
+  Object {
+    "height": 12,
+    "width": 6.756,
+    "x": 0,
+    "y": 0,
+  },
+  Object {
+    "height": 12,
+    "width": 6.744000000000001,
+    "x": 0,
+    "y": 0,
+  },
+  Object {
+    "height": 12,
+    "width": 6.744000000000001,
+    "x": 0,
+    "y": 0,
+  },
+  Object {
+    "height": 12,
+    "width": 6.803999999999999,
+    "x": 0,
+    "y": 0,
+  },
+  Object {
+    "height": 12,
+    "width": 6.3,
+    "x": 0,
+    "y": 0,
+  },
+  Object {
+    "height": 12,
+    "width": 4.896,
+    "x": 0,
+    "y": 0,
+  },
+]
+`;

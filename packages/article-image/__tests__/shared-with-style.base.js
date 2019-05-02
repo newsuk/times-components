@@ -1,13 +1,11 @@
 import React from "react";
 import { setIsTablet } from "@times-components/mocks/dimensions";
-import Context from "@times-components/context";
+import { ContextProviderWithDefaults } from "@times-components/context";
 import { iterator } from "@times-components/test-utils";
 import ArticleImage from "../src/article-image";
 import primaryImageFixture from "../fixtures/primary-image";
 import secondaryImageFixture from "../fixtures/secondary-image";
 import fullwidthImageFixture from "../fixtures/fullwidth-image";
-import landscapeInlineImageFixture from "../fixtures/landscape-inline-image";
-import portraitInlineImageFixture from "../fixtures/portrait-inline-image";
 
 const testImageUrl = "https://img/someImage";
 const primaryImage = primaryImageFixture(
@@ -24,16 +22,6 @@ const secondaryImage = secondaryImageFixture(
   testImageUrl,
   "Another caption",
   "Other credits"
-);
-const landscapeInlineImage = landscapeInlineImageFixture(
-  testImageUrl,
-  "Landscape caption",
-  "Landscape credits"
-);
-const portraitInlineImage = portraitInlineImageFixture(
-  testImageUrl,
-  "Portrait caption",
-  "Portrait credits"
 );
 
 export default makeTest => {
@@ -106,38 +94,12 @@ export default makeTest => {
       }
     },
     {
-      name: "inline image (landscape) with caption and credits",
-      test: () => {
-        expect(
-          makeTest(
-            <ArticleImage
-              captionOptions={landscapeInlineImage.captionOptions}
-              imageOptions={landscapeInlineImage.imageOptions}
-            />
-          )
-        ).toMatchSnapshot();
-      }
-    },
-    {
-      name: "inline image (portrait) with caption and credits",
-      test: () => {
-        expect(
-          makeTest(
-            <ArticleImage
-              captionOptions={portraitInlineImage.captionOptions}
-              imageOptions={portraitInlineImage.imageOptions}
-            />
-          )
-        ).toMatchSnapshot();
-      }
-    },
-    {
       name:
         "primary image with caption and credits with center caption override",
       test: () => {
         expect(
           makeTest(
-            <Context.Provider
+            <ContextProviderWithDefaults
               value={{
                 theme: { imageCaptionAlignment: { primary: "center" } }
               }}
@@ -146,7 +108,7 @@ export default makeTest => {
                 captionOptions={primaryImage.captionOptions}
                 imageOptions={primaryImage.imageOptions}
               />
-            </Context.Provider>
+            </ContextProviderWithDefaults>
           )
         ).toMatchSnapshot();
       }
@@ -157,7 +119,7 @@ export default makeTest => {
       test: () => {
         expect(
           makeTest(
-            <Context.Provider
+            <ContextProviderWithDefaults
               value={{
                 theme: { imageCaptionAlignment: { secondary: "center" } }
               }}
@@ -166,7 +128,7 @@ export default makeTest => {
                 captionOptions={secondaryImage.captionOptions}
                 imageOptions={secondaryImage.imageOptions}
               />
-            </Context.Provider>
+            </ContextProviderWithDefaults>
           )
         ).toMatchSnapshot();
       }
