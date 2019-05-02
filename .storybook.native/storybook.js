@@ -8,7 +8,6 @@ import {
 import { withKnobs } from '@storybook/addon-knobs';
 import { BarSpacingDecorator, WhiteBgColorDecorator } from "@times-components/storybook";
 import { loadStories } from "./story-loader";
-import "./addons";
 
 if (Platform.OS === "ios") {
   addDecorator(BarSpacingDecorator);
