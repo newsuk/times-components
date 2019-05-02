@@ -16,7 +16,7 @@ const TileAI = ({ onPress, tile }) => (
       style={styles.imageContainer}
       uri={getTileImageUri(tile, "crop32")}
     />
-    <TileStar articleId={tile.article.id} style={styles.starButton}/>
+    <TileStar articleId={tile.article.id} style={styles.starButton} />
   </TileLink>
 );
 

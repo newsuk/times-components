@@ -19,7 +19,11 @@ const TileH = ({ onPress, tile }) => (
       summary={getTileSummary(tile, 125)}
       tile={tile}
     />
-    <Image aspectRatio={2 / 3} style={styles.imageContainer} uri={getTileImageUri(tile, "crop23")} />
+    <Image
+      aspectRatio={2 / 3}
+      style={styles.imageContainer}
+      uri={getTileImageUri(tile, "crop23")}
+    />
   </TileLink>
 );
 

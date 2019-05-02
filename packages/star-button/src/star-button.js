@@ -12,7 +12,11 @@ const StarButton = ({ disabled, height, isDark, onPress, selected, style }) => {
 
   return (
     // eslint-disable-next-line jsx-a11y/anchor-is-valid
-    <Link disabled={disabled} linkStyle={[styles.container, style]} onPress={onPress}>
+    <Link
+      disabled={disabled}
+      linkStyle={[styles.container, style]}
+      onPress={onPress}
+    >
       <IconStar
         fillColour={fillColour}
         height={height}

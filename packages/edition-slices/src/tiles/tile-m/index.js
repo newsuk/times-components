@@ -15,7 +15,11 @@ const TileM = ({ onPress, tile }) => {
   const tileWithoutLabelAndFlags = { article: { id, shortHeadline, url } };
 
   return (
-    <TileLink onPress={onPress} style={styles.container} tile={tileWithoutLabelAndFlags}>
+    <TileLink
+      onPress={onPress}
+      style={styles.container}
+      tile={tileWithoutLabelAndFlags}
+    >
       <TileSummary
         headlineStyle={styles.headline}
         starStyle={styles.star}
