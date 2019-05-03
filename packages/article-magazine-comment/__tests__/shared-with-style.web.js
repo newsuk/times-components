@@ -18,6 +18,8 @@ import ArticleMagazineComment from "../src/article-magazine-comment";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import sharedProps from "./shared-props";
 
+jest.mock("@times-components/save-and-share-bar", () => "SaveAndShareBar");
+
 const styles = [
   "alignItems",
   "flex",

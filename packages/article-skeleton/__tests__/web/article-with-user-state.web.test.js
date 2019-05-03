@@ -292,20 +292,20 @@ const renderArticle = userState => (
     <ArticleSkeleton
       {...articleSkeletonProps}
       adConfig={adConfig}
-      analyticsStream={() => { }}
+      analyticsStream={() => {}}
       data={article}
-      onAuthorPress={() => { }}
-      onLinkPress={() => { }}
-      onRelatedArticlePress={() => { }}
-      onTopicPress={() => { }}
-      onTwitterLinkPress={() => { }}
-      onVideoPress={() => { }}
+      onAuthorPress={() => {}}
+      onLinkPress={() => {}}
+      onRelatedArticlePress={() => {}}
+      onTopicPress={() => {}}
+      onTwitterLinkPress={() => {}}
+      onVideoPress={() => {}}
       spotAccountId=""
     />
   </Context.Provider>
 );
 
-describe('Article with user state', () => {
+describe("Article with user state", () => {
   it("Render full article when user is logged in", () => {
     const output = TestRenderer.create(renderArticle({ isLoggedIn: true }));
 
@@ -323,4 +323,4 @@ describe('Article with user state', () => {
 
     expect(output).toMatchSnapshot();
   });
-})
+});

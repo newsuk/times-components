@@ -85,10 +85,6 @@ exports[`full article with style 1`] = `
     style={
       Object {
         "alignItems": "center",
-        "borderBottomWidth": 1,
-        "borderColor": "#DBDBDB",
-        "borderTopWidth": 1,
-        "marginBottom": 25,
         "marginHorizontal": 10,
         "paddingBottom": 6,
         "paddingTop": 10,
@@ -220,10 +216,6 @@ exports[`full article with style in the culture magazine 1`] = `
     style={
       Object {
         "alignItems": "center",
-        "borderBottomWidth": 1,
-        "borderColor": "#DBDBDB",
-        "borderTopWidth": 1,
-        "marginBottom": 25,
         "marginHorizontal": 10,
         "paddingBottom": 6,
         "paddingTop": 10,
@@ -355,10 +347,6 @@ exports[`full article with style in the style magazine 1`] = `
     style={
       Object {
         "alignItems": "center",
-        "borderBottomWidth": 1,
-        "borderColor": "#DBDBDB",
-        "borderTopWidth": 1,
-        "marginBottom": 25,
         "marginHorizontal": 10,
         "paddingBottom": 6,
         "paddingTop": 10,
@@ -490,10 +478,6 @@ exports[`full article with style in the sunday times magazine 1`] = `
     style={
       Object {
         "alignItems": "center",
-        "borderBottomWidth": 1,
-        "borderColor": "#DBDBDB",
-        "borderTopWidth": 1,
-        "marginBottom": 25,
         "marginHorizontal": 10,
         "paddingBottom": 6,
         "paddingTop": 10,
@@ -625,10 +609,6 @@ exports[`tablet full article with style in the culture magazine 1`] = `
     style={
       Object {
         "alignItems": "center",
-        "borderBottomWidth": 1,
-        "borderColor": "#DBDBDB",
-        "borderTopWidth": 1,
-        "marginBottom": 25,
         "marginHorizontal": 10,
         "paddingBottom": 6,
         "paddingTop": 10,
@@ -760,10 +740,6 @@ exports[`tablet full article with style in the style magazine 1`] = `
     style={
       Object {
         "alignItems": "center",
-        "borderBottomWidth": 1,
-        "borderColor": "#DBDBDB",
-        "borderTopWidth": 1,
-        "marginBottom": 25,
         "marginHorizontal": 10,
         "paddingBottom": 6,
         "paddingTop": 10,
@@ -895,10 +871,6 @@ exports[`tablet full article with style in the sunday times magazine 1`] = `
     style={
       Object {
         "alignItems": "center",
-        "borderBottomWidth": 1,
-        "borderColor": "#DBDBDB",
-        "borderTopWidth": 1,
-        "marginBottom": 25,
         "marginHorizontal": 10,
         "paddingBottom": 6,
         "paddingTop": 10,

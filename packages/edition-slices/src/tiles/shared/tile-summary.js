@@ -51,9 +51,11 @@ class TileSummary extends Component {
         <View style={tileStyle.flagStyle}>
           <ArticleFlags {...flagColour} flags={expirableFlags} />
         </View>
-        <View style={tileStyle.starButton}>
-          <TileStar articleId={id} isDark={isDarkStar} />
-        </View>
+        <TileStar
+          articleId={id}
+          isDark={isDarkStar}
+          style={tileStyle.starButton}
+        />
       </View>
     );
   }

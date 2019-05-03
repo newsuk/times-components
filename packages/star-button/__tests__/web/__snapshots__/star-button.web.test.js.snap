@@ -4,13 +4,16 @@ exports[`1. renders default 1`] = `
 <Link
   disabled={false}
   linkStyle={
-    Object {
-      "borderRadius": 9999,
-      "height": 28,
-      "overflow": "hidden",
-      "padding": "5px",
-      "width": 28,
-    }
+    Array [
+      Object {
+        "borderRadius": 9999,
+        "height": 28,
+        "overflow": "hidden",
+        "padding": "5px",
+        "width": 28,
+      },
+      null,
+    ]
   }
 >
   <IconStar
@@ -26,13 +29,16 @@ exports[`2. renders selected 1`] = `
 <Link
   disabled={false}
   linkStyle={
-    Object {
-      "borderRadius": 9999,
-      "height": 28,
-      "overflow": "hidden",
-      "padding": "5px",
-      "width": 28,
-    }
+    Array [
+      Object {
+        "borderRadius": 9999,
+        "height": 28,
+        "overflow": "hidden",
+        "padding": "5px",
+        "width": 28,
+      },
+      null,
+    ]
   }
 >
   <IconStar
@@ -48,13 +54,16 @@ exports[`3. renders disabled 1`] = `
 <Link
   disabled={true}
   linkStyle={
-    Object {
-      "borderRadius": 9999,
-      "height": 28,
-      "overflow": "hidden",
-      "padding": "5px",
-      "width": 28,
-    }
+    Array [
+      Object {
+        "borderRadius": 9999,
+        "height": 28,
+        "overflow": "hidden",
+        "padding": "5px",
+        "width": 28,
+      },
+      null,
+    ]
   }
 >
   <IconStar
@@ -70,13 +79,16 @@ exports[`4. renders default in dark theme 1`] = `
 <Link
   disabled={false}
   linkStyle={
-    Object {
-      "borderRadius": 9999,
-      "height": 28,
-      "overflow": "hidden",
-      "padding": "5px",
-      "width": 28,
-    }
+    Array [
+      Object {
+        "borderRadius": 9999,
+        "height": 28,
+        "overflow": "hidden",
+        "padding": "5px",
+        "width": 28,
+      },
+      null,
+    ]
   }
 >
   <IconStar
@@ -92,13 +104,16 @@ exports[`5. renders selected in dark theme 1`] = `
 <Link
   disabled={false}
   linkStyle={
-    Object {
-      "borderRadius": 9999,
-      "height": 28,
-      "overflow": "hidden",
-      "padding": "5px",
-      "width": 28,
-    }
+    Array [
+      Object {
+        "borderRadius": 9999,
+        "height": 28,
+        "overflow": "hidden",
+        "padding": "5px",
+        "width": 28,
+      },
+      null,
+    ]
   }
 >
   <IconStar
@@ -114,13 +129,16 @@ exports[`6. renders disabled in dark theme 1`] = `
 <Link
   disabled={true}
   linkStyle={
-    Object {
-      "borderRadius": 9999,
-      "height": 28,
-      "overflow": "hidden",
-      "padding": "5px",
-      "width": 28,
-    }
+    Array [
+      Object {
+        "borderRadius": 9999,
+        "height": 28,
+        "overflow": "hidden",
+        "padding": "5px",
+        "width": 28,
+      },
+      null,
+    ]
   }
 >
   <IconStar

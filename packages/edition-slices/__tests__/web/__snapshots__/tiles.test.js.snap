@@ -30,58 +30,58 @@ exports[`1. tile a 1`] = `
             }
           />
         </div>
-        <div />
       </div>
     </div>
   </div>
-  <div>
-    <Image
-      aspectRatio={1.7777777777777777}
-      uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
-    />
-  </div>
+  <Image
+    aspectRatio={1.7777777777777777}
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+  />
 </Link>
 `;
 
 exports[`2. tile b 1`] = `
 <Link
+  linkStyle={
+    Object {
+      "paddingHorizontal": "10px",
+      "paddingTop": "10px",
+    }
+  }
   url="/article/123"
 >
   <div>
     <div>
       <div>
-        <div>
-          LABEL
-        </div>
+        LABEL
       </div>
-      <h3
-        aria-level="3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
-      <div>
-        <span>
-          
-          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-          ...
-        </span>
-      </div>
+    </div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div>
+      <span>
+        
+        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+        ...
+      </span>
+    </div>
+    <div>
       <div>
         <div>
-          <div>
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div />
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
+          />
         </div>
       </div>
     </div>
@@ -131,269 +131,23 @@ exports[`3. tile c 1`] = `
       />
     </div>
   </div>
-  <div />
 </Link>
 `;
 
 exports[`4. tile d 1`] = `
 <Link
+  linkStyle={
+    Object {
+      "flexDirection": "row",
+      "padding": "10px",
+    }
+  }
   url="/article/123"
 >
-  <div>
-    <div>
-      <Image
-        aspectRatio={1.5}
-        uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
-      />
-    </div>
-    <div>
-      <div>
-        <div>
-          LABEL
-        </div>
-      </div>
-      <h3
-        aria-level="3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
-      <div>
-        <div>
-          <div>
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div />
-        </div>
-      </div>
-    </div>
-  </div>
-</Link>
-`;
-
-exports[`5. tile e 1`] = `
-<Link
-  url="/article/123"
->
-  <div>
-    <div>
-      <Image
-        aspectRatio={0.8}
-        uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1434%2C1792%2C627%2C0"
-      />
-    </div>
-    <div>
-      <div>
-        <div>
-          LABEL
-        </div>
-      </div>
-      <h3
-        aria-level="3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
-      <div>
-        <div>
-          <div>
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div />
-        </div>
-      </div>
-    </div>
-  </div>
-</Link>
-`;
-
-exports[`6. tile f 1`] = `
-<Link
-  url="/article/123"
->
-  <div>
-    <div>
-      <div>
-        <div>
-          LABEL
-        </div>
-      </div>
-      <h3
-        aria-level="3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
-      <h4
-        aria-level="4"
-        role="heading"
-      >
-        Three Conservative MPs resign
-      </h4>
-      <div>
-        <span>
-          
-          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-          ...
-        </span>
-      </div>
-      <div>
-        <div>
-          <div>
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div />
-        </div>
-      </div>
-    </div>
-  </div>
-</Link>
-`;
-
-exports[`7. tile g 1`] = `
-<Link
-  url="/article/123"
->
-  <div>
-    <div>
-      <Image
-        aspectRatio={1}
-        uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
-      />
-    </div>
-    <div>
-      <div>
-        <div>
-          LABEL
-        </div>
-      </div>
-      <h3
-        aria-level="3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
-      <div>
-        <div>
-          <div>
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div />
-        </div>
-      </div>
-    </div>
-  </div>
-</Link>
-`;
-
-exports[`8. tile h 1`] = `
-<Link
-  url="/article/123"
->
-  <div>
-    <div>
-      <div>
-        <div>
-          LABEL
-        </div>
-      </div>
-      <h3
-        aria-level="3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
-      <div>
-        <span>
-          
-          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-          ...
-        </span>
-      </div>
-      <div>
-        <div>
-          <div>
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div />
-        </div>
-      </div>
-      <div>
-        <span>
-          Richard Lloyd Parry
-        </span>
-        <span>
-          , Hanoi
-        </span>
-      </div>
-    </div>
-    <div>
-      <div>
-        <Image
-          aspectRatio={0.6666666666666666}
-          uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1195%2C1792%2C747%2C0"
-        />
-      </div>
-    </div>
-  </div>
-</Link>
-`;
-
-exports[`9. tile i 1`] = `
-<Link
-  url="/article/123"
->
-  <div>
-    <Image
-      aspectRatio={1.7777777777777777}
-      uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
-    />
-  </div>
+  <Image
+    aspectRatio={1.5}
+    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
+  />
   <div>
     <div>
       <div>
@@ -420,7 +174,254 @@ exports[`9. tile i 1`] = `
             }
           />
         </div>
-        <div />
+      </div>
+    </div>
+  </div>
+</Link>
+`;
+
+exports[`5. tile e 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "flexDirection": "row",
+      "padding": "10px",
+    }
+  }
+  url="/article/123"
+>
+  <Image
+    aspectRatio={0.8}
+    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1434%2C1792%2C627%2C0"
+  />
+  <div>
+    <div>
+      <div>
+        LABEL
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div>
+      <div>
+        <div>
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</Link>
+`;
+
+exports[`6. tile f 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "paddingHorizontal": "10px",
+      "paddingTop": "10px",
+    }
+  }
+  url="/article/123"
+>
+  <div>
+    <div>
+      <div>
+        LABEL
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <h4
+      aria-level="4"
+      role="heading"
+    >
+      Three Conservative MPs resign
+    </h4>
+    <div>
+      <span>
+        
+        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+        ...
+      </span>
+    </div>
+    <div>
+      <div>
+        <div>
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</Link>
+`;
+
+exports[`7. tile g 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "flexDirection": "row",
+      "padding": "10px",
+    }
+  }
+  url="/article/123"
+>
+  <Image
+    aspectRatio={1}
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
+  />
+  <div>
+    <div>
+      <div>
+        LABEL
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div>
+      <div>
+        <div>
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</Link>
+`;
+
+exports[`8. tile h 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "flexDirection": "row",
+      "paddingHorizontal": "10px",
+    }
+  }
+  url="/article/123"
+>
+  <div>
+    <div>
+      <div>
+        LABEL
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div>
+      <span>
+        
+        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+        ...
+      </span>
+    </div>
+    <div>
+      <div>
+        <div>
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
+          />
+        </div>
+      </div>
+    </div>
+    <div>
+      <span>
+        Richard Lloyd Parry
+      </span>
+      <span>
+        , Hanoi
+      </span>
+    </div>
+  </div>
+  <Image
+    aspectRatio={0.6666666666666666}
+    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1195%2C1792%2C747%2C0"
+  />
+</Link>
+`;
+
+exports[`9. tile i 1`] = `
+<Link
+  url="/article/123"
+>
+  <Image
+    aspectRatio={1.7777777777777777}
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+  />
+  <div>
+    <div>
+      <div>
+        LABEL
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div>
+      <div>
+        <div>
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
+          />
+        </div>
       </div>
     </div>
   </div>
@@ -429,42 +430,43 @@ exports[`9. tile i 1`] = `
 
 exports[`10. tile j 1`] = `
 <Link
+  linkStyle={
+    Object {
+      "flexDirection": "row",
+      "padding": "10px",
+    }
+  }
   url="/article/123"
 >
+  <Image
+    aspectRatio={1.5}
+    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
+  />
   <div>
     <div>
-      <Image
-        aspectRatio={1.5}
-        uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
-      />
+      <div>
+        LABEL
+      </div>
     </div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
     <div>
       <div>
         <div>
-          LABEL
-        </div>
-      </div>
-      <h3
-        aria-level="3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
-      <div>
-        <div>
-          <div>
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div />
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
+          />
         </div>
       </div>
     </div>
@@ -474,42 +476,43 @@ exports[`10. tile j 1`] = `
 
 exports[`11. tile k 1`] = `
 <Link
+  linkStyle={
+    Object {
+      "flexDirection": "row",
+      "padding": "10px",
+    }
+  }
   url="/article/123"
 >
+  <Image
+    aspectRatio={1.5}
+    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
+  />
   <div>
     <div>
-      <Image
-        aspectRatio={1.5}
-        uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
-      />
+      <div>
+        LABEL
+      </div>
     </div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
     <div>
       <div>
         <div>
-          LABEL
-        </div>
-      </div>
-      <h3
-        aria-level="3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
-      <div>
-        <div>
-          <div>
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div />
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
+          />
         </div>
       </div>
     </div>
@@ -519,36 +522,39 @@ exports[`11. tile k 1`] = `
 
 exports[`12. tile l 1`] = `
 <Link
+  linkStyle={
+    Object {
+      "paddingHorizontal": "10px",
+      "paddingTop": "10px",
+    }
+  }
   url="/article/123"
 >
   <div>
     <div>
       <div>
-        <div>
-          LABEL
-        </div>
+        LABEL
       </div>
-      <h3
-        aria-level="3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
+    </div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div>
       <div>
         <div>
-          <div>
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div />
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
+          />
         </div>
       </div>
     </div>
@@ -558,28 +564,30 @@ exports[`12. tile l 1`] = `
 
 exports[`13. tile m 1`] = `
 <Link
+  linkStyle={
+    Object {
+      "paddingBottom": "10px",
+    }
+  }
   url="/article/123"
 >
   <div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      Driving Off
+    </h3>
+    <h4
+      aria-level="4"
+      role="heading"
+    >
+      Three Conservative MPs resign
+    </h4>
     <div>
-      <h3
-        aria-level="3"
-        role="heading"
-      >
-        Driving Off
-      </h3>
-      <h4
-        aria-level="4"
-        role="heading"
-      >
-        Three Conservative MPs resign
-      </h4>
       <div>
         <div>
-          <div>
-            <ArticleFlags />
-          </div>
-          <div />
+          <ArticleFlags />
         </div>
       </div>
     </div>
@@ -589,49 +597,51 @@ exports[`13. tile m 1`] = `
 
 exports[`14. tile n 1`] = `
 <Link
+  linkStyle={
+    Object {
+      "backgroundColor": "#272D34",
+      "flexDirection": "row",
+      "padding": "10px",
+    }
+  }
   url="/article/123"
 >
+  <Image
+    aspectRatio={1}
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
+  />
   <div>
     <div>
-      <Image
-        aspectRatio={1}
-        uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
-      />
+      <div>
+        LABEL
+      </div>
     </div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <h4
+      aria-level="4"
+      role="heading"
+    >
+      Three Conservative MPs resign
+    </h4>
     <div>
       <div>
         <div>
-          LABEL
-        </div>
-      </div>
-      <h3
-        aria-level="3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
-      <h4
-        aria-level="4"
-        role="heading"
-      >
-        Three Conservative MPs resign
-      </h4>
-      <div>
-        <div>
-          <div>
-            <ArticleFlags
-              color="#CCC"
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div />
+          <ArticleFlags
+            color="#CCC"
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
+          />
         </div>
       </div>
     </div>
@@ -641,37 +651,41 @@ exports[`14. tile n 1`] = `
 
 exports[`15. tile o 1`] = `
 <Link
+  linkStyle={
+    Object {
+      "backgroundColor": "#272D34",
+      "paddingHorizontal": 12,
+      "paddingVertical": "10px",
+    }
+  }
   url="/article/123"
 >
   <div>
     <div>
       <div>
-        <div>
-          LABEL
-        </div>
+        LABEL
       </div>
-      <h3
-        aria-level="3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
+    </div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div>
       <div>
         <div>
-          <div>
-            <ArticleFlags
-              color="#CCC"
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div />
+          <ArticleFlags
+            color="#CCC"
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
+          />
         </div>
       </div>
     </div>
@@ -681,58 +695,59 @@ exports[`15. tile o 1`] = `
 
 exports[`16. tile p 1`] = `
 <Link
+  linkStyle={
+    Object {
+      "alignItems": "center",
+      "paddingVertical": "20px",
+    }
+  }
   url="/article/123"
 >
+  <Image
+    aspectRatio={1}
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
+  />
   <div>
     <div>
-      <Image
-        aspectRatio={1}
-        uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
-      />
+      <div>
+        LABEL
+      </div>
     </div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <h4
+      aria-level="4"
+      role="heading"
+    >
+      Three Conservative MPs resign
+    </h4>
     <div>
       <div>
         <div>
-          LABEL
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
+          />
         </div>
       </div>
-      <h3
-        aria-level="3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
-      <h4
-        aria-level="4"
-        role="heading"
-      >
-        Three Conservative MPs resign
-      </h4>
-      <div>
-        <div>
-          <div>
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div />
-        </div>
-      </div>
-      <div>
-        <span>
-          Richard Lloyd Parry
-        </span>
-        <span>
-          , Hanoi
-        </span>
-      </div>
+    </div>
+    <div>
+      <span>
+        Richard Lloyd Parry
+      </span>
+      <span>
+        , Hanoi
+      </span>
     </div>
   </div>
 </Link>
@@ -740,62 +755,65 @@ exports[`16. tile p 1`] = `
 
 exports[`17. tile q 1`] = `
 <Link
+  linkStyle={
+    Object {
+      "alignItems": "center",
+      "paddingVertical": "10px",
+    }
+  }
   url="/article/123"
 >
-  <div>
-    <div>
-      <Image
-        aspectRatio={1.5}
-        uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
-      />
-    </div>
-    <div />
-  </div>
+  <Image
+    aspectRatio={1.5}
+    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
+  />
 </Link>
 `;
 
 exports[`18. tile r 1`] = `
 <Link
+  linkStyle={
+    Object {
+      "paddingBottom": "15px",
+      "paddingHorizontal": "20px",
+      "paddingTop": "10px",
+    }
+  }
   url="/article/123"
 >
   <div>
     <div>
       <div>
-        <div>
-          LABEL
-        </div>
+        LABEL
       </div>
-      <h3
-        aria-level="3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
+    </div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div>
       <div>
         <div>
-          <div>
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div />
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
+          />
         </div>
       </div>
     </div>
-    <div>
-      <Image
-        aspectRatio={1.7777777777777777}
-        uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
-      />
-    </div>
   </div>
+  <Image
+    aspectRatio={1.7777777777777777}
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+  />
 </Link>
 `;
 
@@ -839,42 +857,43 @@ exports[`19. tile s 1`] = `
 
 exports[`20. tile t 1`] = `
 <Link
+  linkStyle={
+    Object {
+      "flexDirection": "row",
+      "padding": "10px",
+    }
+  }
   url="/article/123"
 >
+  <Image
+    aspectRatio={1.7777777777777777}
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+  />
   <div>
     <div>
-      <Image
-        aspectRatio={1.7777777777777777}
-        uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
-      />
+      <div>
+        LABEL
+      </div>
     </div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
     <div>
       <div>
         <div>
-          LABEL
-        </div>
-      </div>
-      <h3
-        aria-level="3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
-      <div>
-        <div>
-          <div>
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div />
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
+          />
         </div>
       </div>
     </div>
@@ -884,87 +903,90 @@ exports[`20. tile t 1`] = `
 
 exports[`21. tile u 1`] = `
 <Link
+  linkStyle={
+    Object {
+      "flex": 1,
+      "flexDirection": "row",
+      "padding": "10px",
+    }
+  }
   url="/article/123"
 >
   <div>
     <div>
       <div>
-        <div>
-          LABEL
-        </div>
+        LABEL
       </div>
-      <h3
-        aria-level="3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
+    </div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div>
       <div>
         <div>
-          <div>
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div />
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
+          />
         </div>
       </div>
     </div>
-    <div>
-      <Image
-        aspectRatio={1.5}
-        uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
-      />
-    </div>
   </div>
+  <Image
+    aspectRatio={1.5}
+    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
+  />
 </Link>
 `;
 
 exports[`22. tile v 1`] = `
 <Link
+  linkStyle={
+    Object {
+      "paddingHorizontal": "10px",
+      "paddingTop": "10px",
+    }
+  }
   url="/article/123"
 >
+  <Image
+    aspectRatio={1.7777777777777777}
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+  />
   <div>
     <div>
-      <Image
-        aspectRatio={1.7777777777777777}
-        uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
-      />
+      <div>
+        LABEL
+      </div>
     </div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
     <div>
       <div>
         <div>
-          LABEL
-        </div>
-      </div>
-      <h3
-        aria-level="3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
-      <div>
-        <div>
-          <div>
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div />
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
+          />
         </div>
       </div>
     </div>
@@ -974,101 +996,106 @@ exports[`22. tile v 1`] = `
 
 exports[`23. tile w 1`] = `
 <Link
+  linkStyle={
+    Object {
+      "flexDirection": "row",
+      "paddingHorizontal": "20px",
+      "paddingVertical": "10px",
+    }
+  }
   url="/article/123"
 >
   <div>
     <div>
       <div>
-        <div>
-          LABEL
-        </div>
+        LABEL
       </div>
-      <h3
-        aria-level="3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
-      <div>
-        <span>
-          
-          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-          ...
-        </span>
-      </div>
-      <div>
-        <div>
-          <div>
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div />
-        </div>
-      </div>
+    </div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div>
+      <span>
+        
+        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+        ...
+      </span>
     </div>
     <div>
-      <Image
-        aspectRatio={1.7777777777777777}
-        uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
-      />
+      <div>
+        <div>
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
+          />
+        </div>
+      </div>
     </div>
   </div>
+  <Image
+    aspectRatio={1.7777777777777777}
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+  />
 </Link>
 `;
 
 exports[`24. tile x 1`] = `
 <Link
+  linkStyle={
+    Object {
+      "paddingHorizontal": "10px",
+      "paddingTop": "10px",
+    }
+  }
   url="/article/123"
 >
   <div>
     <div>
       <div>
-        <div>
-          LABEL
-        </div>
+        LABEL
       </div>
-      <h3
-        aria-level="3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
-      <h4
-        aria-level="4"
-        role="heading"
-      >
-        Three Conservative MPs resign
-      </h4>
-      <div>
-        <span>
-          
-          ‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye.
-          ...
-        </span>
-      </div>
+    </div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <h4
+      aria-level="4"
+      role="heading"
+    >
+      Three Conservative MPs resign
+    </h4>
+    <div>
+      <span>
+        
+        ‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye.
+        ...
+      </span>
+    </div>
+    <div>
       <div>
         <div>
-          <div>
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div />
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
+          />
         </div>
       </div>
     </div>
@@ -1120,7 +1147,6 @@ exports[`25. tile y 1`] = `
             }
           />
         </div>
-        <div />
       </div>
     </div>
   </div>
@@ -1129,550 +1155,13 @@ exports[`25. tile y 1`] = `
 
 exports[`26. tile z 1`] = `
 <Link
-  url="/article/123"
->
-  <div>
-    <div>
-      <div>
-        <div>
-          LABEL
-        </div>
-      </div>
-      <h3
-        aria-level="3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
-      <div>
-        <div>
-          <div>
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div />
-        </div>
-      </div>
-    </div>
-    <div>
-      <Image
-        aspectRatio={0.8}
-        uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1434%2C1792%2C627%2C0"
-      />
-    </div>
-  </div>
-</Link>
-`;
-
-exports[`27. tile aa 1`] = `
-<Link
-  url="/article/123"
->
-  <div>
-    <div>
-      <Image
-        aspectRatio={1.7777777777777777}
-        uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
-      />
-    </div>
-    <div>
-      <div>
-        <div>
-          LABEL
-        </div>
-      </div>
-      <h3
-        aria-level="3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
-      <div>
-        <div>
-          <div>
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div />
-        </div>
-      </div>
-    </div>
-  </div>
-</Link>
-`;
-
-exports[`28. tile ab 1`] = `
-<Link
-  url="/article/123"
->
-  <div>
-    <div>
-      <div>
-        <div>
-          LABEL
-        </div>
-      </div>
-      <h3
-        aria-level="3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
-      <div>
-        <span>
-          
-          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-          ...
-        </span>
-      </div>
-      <div>
-        <div>
-          <div>
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div />
-        </div>
-      </div>
-      <div>
-        <span>
-          Richard Lloyd Parry
-        </span>
-        <span>
-          , Hanoi
-        </span>
-      </div>
-    </div>
-    <div>
-      <div>
-        <Image
-          aspectRatio={0.6666666666666666}
-          uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1195%2C1792%2C747%2C0"
-        />
-      </div>
-    </div>
-  </div>
-</Link>
-`;
-
-exports[`29. tile ae 1`] = `
-<Link
-  url="/article/123"
->
-  <div>
-    <div>
-      <div>
-        <div>
-          LABEL
-        </div>
-      </div>
-      <h3
-        aria-level="3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
-      <div>
-        <span>
-          
-          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-          ...
-        </span>
-      </div>
-      <div>
-        <div>
-          <div>
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div />
-        </div>
-      </div>
-    </div>
-  </div>
-</Link>
-`;
-
-exports[`30. tile ag 1`] = `
-<Link
-  url="/article/123"
->
-  <div>
-    <div>
-      <h3
-        aria-level="3"
-        role="heading"
-      >
-        Driving Off
-      </h3>
-      <h4
-        aria-level="4"
-        role="heading"
-      >
-        Three Conservative MPs resign
-      </h4>
-      <div>
-        <div>
-          <div>
-            <ArticleFlags />
-          </div>
-          <div />
-        </div>
-      </div>
-    </div>
-  </div>
-</Link>
-`;
-
-exports[`31. tile aj 1`] = `
-<Link
   linkStyle={
     Object {
-      "flex": 1,
-    }
-  }
-  url="/crossword/123"
->
-  <div>
-    <div>
-      <h3
-        aria-level="3"
-        role="heading"
-      >
-        Times Concise medium No 7881
-      </h3>
-    </div>
-    <div>
-      <Image
-        aspectRatio={1.5}
-        uri="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
-      />
-    </div>
-  </div>
-</Link>
-`;
-
-exports[`32. tile ak 1`] = `
-<Link
-  linkStyle={
-    Object {
-      "flex": 1,
-    }
-  }
-  url="/crossword/123"
->
-  <div>
-    <div>
-      <h3
-        aria-level="3"
-        role="heading"
-      >
-        Times Concise medium No 7881
-      </h3>
-    </div>
-    <div>
-      <Image
-        aspectRatio={1.5}
-        uri="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
-      />
-    </div>
-  </div>
-</Link>
-`;
-
-exports[`33. tile al 1`] = `
-<Link
-  url="/article/123"
->
-  <div>
-    <div>
-      <Image
-        aspectRatio={1.5}
-        uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
-      />
-    </div>
-    <div>
-      <div>
-        <div>
-          LABEL
-        </div>
-      </div>
-      <h3
-        aria-level="3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
-      <div>
-        <span>
-          
-          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-          ...
-        </span>
-      </div>
-      <div>
-        <div>
-          <div>
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div />
-        </div>
-      </div>
-    </div>
-  </div>
-</Link>
-`;
-
-exports[`34. tile am 1`] = `
-<Link
-  url="/article/123"
->
-  <div>
-    <div>
-      <Image
-        aspectRatio={1.7777777777777777}
-        uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
-      />
-    </div>
-    <div>
-      <div>
-        <div>
-          LABEL
-        </div>
-      </div>
-      <h3
-        aria-level="3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
-      <div>
-        <span>
-          
-          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-          ...
-        </span>
-      </div>
-      <div>
-        <div>
-          <div>
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div />
-        </div>
-      </div>
-    </div>
-  </div>
-</Link>
-`;
-
-exports[`35. tile an 1`] = `
-<Link
-  url="/article/123"
->
-  <div>
-    <div>
-      <Image
-        aspectRatio={1}
-        uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
-      />
-    </div>
-    <div>
-      <div>
-        <div>
-          LABEL
-        </div>
-      </div>
-      <h3
-        aria-level="3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
-      <div>
-        <span>
-          
-          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-          ...
-        </span>
-      </div>
-      <div>
-        <div>
-          <div>
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div />
-        </div>
-      </div>
-    </div>
-  </div>
-</Link>
-`;
-
-exports[`36. tile ap 1`] = `
-<Link
-  url="/article/123"
->
-  <div>
-    <div>
-      <Image
-        aspectRatio={1}
-        uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
-      />
-    </div>
-    <div>
-      <div>
-        <div>
-          LABEL
-        </div>
-      </div>
-      <h3
-        aria-level="3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
-      <div>
-        <div>
-          <div>
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div />
-        </div>
-      </div>
-    </div>
-  </div>
-</Link>
-`;
-
-exports[`37. tile ad 1`] = `
-<Link
-  url="/article/123"
->
-  <div>
-    <div>
-      <Image
-        aspectRatio={1.5}
-        uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
-      />
-    </div>
-    <div>
-      <div>
-        <div>
-          LABEL
-        </div>
-      </div>
-      <h3
-        aria-level="3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
-      <div>
-        <div>
-          <div>
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div />
-        </div>
-      </div>
-    </div>
-  </div>
-</Link>
-`;
-
-exports[`38. tile ac 1`] = `
-<Link
-  linkStyle={
-    Object {
-      "flex": 1,
+      "margin": "10px",
     }
   }
   url="/article/123"
 >
-  <div>
-    <Image
-      aspectRatio={1.7777777777777777}
-      uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
-    />
-  </div>
   <div>
     <div>
       <div>
@@ -1699,7 +1188,541 @@ exports[`38. tile ac 1`] = `
             }
           />
         </div>
-        <div />
+      </div>
+    </div>
+  </div>
+  <Image
+    aspectRatio={0.8}
+    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1434%2C1792%2C627%2C0"
+  />
+</Link>
+`;
+
+exports[`27. tile aa 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "paddingHorizontal": "10px",
+    }
+  }
+  url="/article/123"
+>
+  <Image
+    aspectRatio={1.7777777777777777}
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+  />
+  <div>
+    <div>
+      <div>
+        LABEL
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div>
+      <div>
+        <div>
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</Link>
+`;
+
+exports[`28. tile ab 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "flexDirection": "row",
+      "paddingHorizontal": "10px",
+    }
+  }
+  url="/article/123"
+>
+  <div>
+    <div>
+      <div>
+        LABEL
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div>
+      <span>
+        
+        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+        ...
+      </span>
+    </div>
+    <div>
+      <div>
+        <div>
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
+          />
+        </div>
+      </div>
+    </div>
+    <div>
+      <span>
+        Richard Lloyd Parry
+      </span>
+      <span>
+        , Hanoi
+      </span>
+    </div>
+  </div>
+  <Image
+    aspectRatio={0.6666666666666666}
+    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1195%2C1792%2C747%2C0"
+  />
+</Link>
+`;
+
+exports[`29. tile ae 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "paddingHorizontal": "10px",
+      "paddingTop": "10px",
+    }
+  }
+  url="/article/123"
+>
+  <div>
+    <div>
+      <div>
+        LABEL
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div>
+      <span>
+        
+        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+        ...
+      </span>
+    </div>
+    <div>
+      <div>
+        <div>
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</Link>
+`;
+
+exports[`30. tile ag 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "paddingBottom": "10px",
+      "paddingHorizontal": "20px",
+    }
+  }
+  url="/article/123"
+>
+  <div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      Driving Off
+    </h3>
+    <h4
+      aria-level="4"
+      role="heading"
+    >
+      Three Conservative MPs resign
+    </h4>
+    <div>
+      <div>
+        <div>
+          <ArticleFlags />
+        </div>
+      </div>
+    </div>
+  </div>
+</Link>
+`;
+
+exports[`31. tile aj 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "flex": 1,
+    }
+  }
+  url="/crossword/123"
+>
+  <div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      Times Concise medium No 7881
+    </h3>
+  </div>
+  <Image
+    aspectRatio={1.5}
+    uri="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+  />
+</Link>
+`;
+
+exports[`32. tile ak 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "flex": 1,
+    }
+  }
+  url="/crossword/123"
+>
+  <div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      Times Concise medium No 7881
+    </h3>
+  </div>
+  <Image
+    aspectRatio={1.5}
+    uri="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+  />
+</Link>
+`;
+
+exports[`33. tile al 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "flexDirection": "column",
+      "paddingHorizontal": "10px",
+    }
+  }
+  url="/article/123"
+>
+  <Image
+    aspectRatio={1.5}
+    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
+  />
+  <div>
+    <div>
+      <div>
+        LABEL
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div>
+      <span>
+        
+        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+        ...
+      </span>
+    </div>
+    <div>
+      <div>
+        <div>
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</Link>
+`;
+
+exports[`34. tile am 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "paddingHorizontal": "10px",
+      "paddingTop": "10px",
+    }
+  }
+  url="/article/123"
+>
+  <Image
+    aspectRatio={1.7777777777777777}
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+  />
+  <div>
+    <div>
+      <div>
+        LABEL
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div>
+      <span>
+        
+        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+        ...
+      </span>
+    </div>
+    <div>
+      <div>
+        <div>
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</Link>
+`;
+
+exports[`35. tile an 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "padding": "10px",
+    }
+  }
+  url="/article/123"
+>
+  <Image
+    aspectRatio={1}
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
+  />
+  <div>
+    <div>
+      <div>
+        LABEL
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div>
+      <span>
+        
+        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+        ...
+      </span>
+    </div>
+    <div>
+      <div>
+        <div>
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</Link>
+`;
+
+exports[`36. tile ap 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "padding": "10px",
+    }
+  }
+  url="/article/123"
+>
+  <Image
+    aspectRatio={1}
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
+  />
+  <div>
+    <div>
+      <div>
+        LABEL
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div>
+      <div>
+        <div>
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</Link>
+`;
+
+exports[`37. tile ad 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "flexDirection": "row",
+      "padding": "10px",
+    }
+  }
+  url="/article/123"
+>
+  <Image
+    aspectRatio={1.5}
+    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
+  />
+  <div>
+    <div>
+      <div>
+        LABEL
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div>
+      <div>
+        <div>
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</Link>
+`;
+
+exports[`38. tile ac 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "flex": 1,
+    }
+  }
+  url="/article/123"
+>
+  <Image
+    aspectRatio={1.7777777777777777}
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+  />
+  <div>
+    <div>
+      <div>
+        LABEL
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div>
+      <div>
+        <div>
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
+          />
+        </div>
       </div>
     </div>
   </div>
