@@ -13,7 +13,7 @@ import { iterator } from "@times-components/test-utils";
 import Responsive from "@times-components/responsive";
 import { setIsTablet } from "./mocks";
 
-import ModalImage from "../src/modalImage";
+import ModalImage from "../src/modal-image";
 
 // eslint-disable-next-line react/prop-types
 const MockCaption = ({ style: { text, caption, credits, container } }) => (
