@@ -70,8 +70,10 @@ class TimesImage extends Component {
       aspectRatio,
       highResSize,
       lowResSize,
+      borderRadius,
       style,
       uri,
+      rounded,
       ...defaultImageProps
     } = this.props;
     const { isLoaded, dimensions } = this.state;
@@ -90,6 +92,7 @@ class TimesImage extends Component {
             {lowResSize ? (
               <Image
                 {...defaultImageProps}
+                borderRadius={rounded ? renderedRes / 2 : borderRadius}
                 source={{ uri: getUriAtRes(uri, lowResSize) }}
                 style={styles.image}
               />
@@ -98,6 +101,7 @@ class TimesImage extends Component {
         )}
         <LazyLoadingImage
           {...defaultImageProps}
+          borderRadius={rounded ? renderedRes / 2 : borderRadius}
           onLoad={this.handleLoad}
           source={srcUri && renderedRes ? { uri: srcUri } : null}
           style={styles.image}
@@ -110,7 +114,8 @@ class TimesImage extends Component {
 TimesImage.defaultProps = defaultProps;
 TimesImage.propTypes = {
   ...propTypes,
-  onImageLayout: PropTypes.func
+  onImageLayout: PropTypes.func,
+  rounded: PropTypes.bool
 };
 
 export default TimesImage;

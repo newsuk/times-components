@@ -116,6 +116,7 @@ exports[`card with default layout 1`] = `
       fadeImageIn={false}
       highResSize={100}
       lowResSize={50}
+      rounded={false}
       uri="https://img.io/img"
     />
   </div>

@@ -18,5 +18,6 @@ export const defaultProps = {
   fadeImageIn: false,
   highResSize: null,
   lowResSize: null,
+  rounded: false,
   uri: null
 };

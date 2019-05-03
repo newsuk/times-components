@@ -11,7 +11,6 @@ const styles = {
     })
   },
   imageContainer: {
-    borderRadius: 9999,
     overflow: "hidden"
   },
   summaryContainer: {
