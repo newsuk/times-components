@@ -101,7 +101,10 @@ class ArticleSkeleton extends Component {
                         />
                       </HeaderAdContainer>
                       <MainContainer>
-                        <Header width={articleWidth} />
+                        <Header
+                          topicsAllowed={user.isLoggedIn}
+                          width={articleWidth}
+                        />
                         <BodyContainer>
                           <ArticleBody
                             content={newContent}
@@ -113,18 +116,17 @@ class ArticleSkeleton extends Component {
                           <ArticleExtras
                             analyticsStream={analyticsStream}
                             articleId={articleId}
+                            commentsAllowed={user.isLoggedIn}
                             commentsEnabled={commentsEnabled}
                             registerNode={registerNode}
-                            relatedArticleSlice={
-                              user.isLoggedIn ? relatedArticleSlice : null
-                            }
+                            relatedArticleAllowed={user.isLoggedIn}
+                            relatedArticleSlice={relatedArticleSlice}
                             relatedArticlesVisible={
                               !!observed.get("related-articles")
                             }
-                            spotAccountId={
-                              user.isLoggedIn ? spotAccountId : null
-                            }
-                            topics={user.isLoggedIn ? topics : null}
+                            spotAccountId={spotAccountId}
+                            topics={topics}
+                            topicsAllowed={user.isLoggedIn}
                           />
                         </BodyContainer>
                       </MainContainer>
