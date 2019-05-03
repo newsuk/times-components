@@ -18,7 +18,7 @@ const BarItem = ({
   children,
   colour = styles.svgIcon.fillColour,
   hoverColour = styles.svgIcon.hoverFillColour,
-  onPress,
+  onPress = () => {},
   ...props
 }) => (
   <Link onPress={onPress} responsiveLinkStyles={styles.link} {...props}>
