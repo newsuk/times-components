@@ -23,7 +23,7 @@ const styles = {
       line-height: 45px;
       height: 40px;
       width: 40px;
-      
+
       &:hover {
         background-color: ${colours.functional.whiteGrey};
       }
@@ -35,7 +35,7 @@ const styles = {
   rowItem: {
     alignItems: "center",
     flexDirection: "row",
-    padding: spacing(4)
+    paddingVertical: spacing(2)
   },
   svgIcon: {
     fb: {

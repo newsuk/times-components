@@ -38,10 +38,8 @@ exports[`1. save and share bar renders correctly 1`] = `
         "flexDirection": "row",
         "msFlexAlign": "center",
         "msFlexDirection": "row",
-        "paddingBottom": "20px",
-        "paddingLeft": "20px",
-        "paddingRight": "20px",
-        "paddingTop": "20px",
+        "paddingBottom": "10px",
+        "paddingTop": "10px",
       }
     }
   >
@@ -107,140 +105,8 @@ exports[`1. save and share bar renders correctly 1`] = `
         "flexDirection": "row",
         "msFlexAlign": "center",
         "msFlexDirection": "row",
-        "paddingBottom": "20px",
-        "paddingLeft": "20px",
-        "paddingRight": "20px",
-        "paddingTop": "20px",
-      }
-    }
-  >
-    <div
-      style={
-        Object {
-          "color": "rgba(105,105,105,1.00)",
-          "fontFamily": "GillSansMTStd-Medium",
-          "lineHeight": "14px",
-          "marginRight": "10px",
-        }
-      }
-    >
-      Save
-    </div>
-    <BarItem
-      color="#696969"
-      hoverColor="#1D1D1B"
-    >
-      <IconSaveBookmark
-        fillColour="#FFFFFF"
-        strokeColour="currentColor"
-        title="Save to My Articles"
-      />
-    </BarItem>
-  </div>
-</div>
-`;
-
-exports[`2. save and share bar renders without copy to clipboard icon if it is not available 1`] = `
-<div
-  style={
-    Object {
-      "WebkitBoxDirection": "normal",
-      "WebkitBoxFlex": 1,
-      "WebkitBoxOrient": "horizontal",
-      "WebkitBoxPack": "justify",
-      "WebkitFlexBasis": "0%",
-      "WebkitFlexDirection": "row",
-      "WebkitFlexGrow": 1,
-      "WebkitFlexShrink": 1,
-      "WebkitJustifyContent": "space-between",
-      "flexBasis": "0%",
-      "flexDirection": "row",
-      "flexGrow": 1,
-      "flexShrink": 1,
-      "justifyContent": "space-between",
-      "msFlexDirection": "row",
-      "msFlexNegative": 1,
-      "msFlexPack": "justify",
-      "msFlexPositive": 1,
-      "msFlexPreferredSize": "0%",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "WebkitAlignItems": "center",
-        "WebkitBoxAlign": "center",
-        "WebkitBoxDirection": "normal",
-        "WebkitBoxOrient": "horizontal",
-        "WebkitFlexDirection": "row",
-        "alignItems": "center",
-        "flexDirection": "row",
-        "msFlexAlign": "center",
-        "msFlexDirection": "row",
-        "paddingBottom": "20px",
-        "paddingLeft": "20px",
-        "paddingRight": "20px",
-        "paddingTop": "20px",
-      }
-    }
-  >
-    <div
-      style={
-        Object {
-          "color": "rgba(105,105,105,1.00)",
-          "fontFamily": "GillSansMTStd-Medium",
-          "lineHeight": "14px",
-          "marginRight": "10px",
-        }
-      }
-    >
-      Share
-    </div>
-    <BarItem>
-      <IconEmail
-        fillColour="currentColor"
-        height={15}
-        title="Share by email client"
-      />
-    </BarItem>
-    <BarItem
-      target="_blank"
-      url="https://twitter.com/intent/tweet?text="
-    >
-      <IconTwitter
-        fillColour="currentColor"
-        height={15}
-        title="Share on Twitter"
-      />
-    </BarItem>
-    <BarItem
-      target="_blank"
-      url="https://www.facebook.com/sharer/sharer.php?u="
-    >
-      <IconFacebook
-        fillColour="currentColor"
-        height={18}
-        title="Share on Facebook"
-      />
-    </BarItem>
-  </div>
-  <div
-    style={
-      Object {
-        "WebkitAlignItems": "center",
-        "WebkitBoxAlign": "center",
-        "WebkitBoxDirection": "normal",
-        "WebkitBoxOrient": "horizontal",
-        "WebkitFlexDirection": "row",
-        "alignItems": "center",
-        "flexDirection": "row",
-        "msFlexAlign": "center",
-        "msFlexDirection": "row",
-        "paddingBottom": "20px",
-        "paddingLeft": "20px",
-        "paddingRight": "20px",
-        "paddingTop": "20px",
+        "paddingBottom": "10px",
+        "paddingTop": "10px",
       }
     }
   >

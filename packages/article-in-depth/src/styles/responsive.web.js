@@ -102,10 +102,6 @@ export const StandfirstContainer = styled(Text)`
 export const LeadAsset = styled(ArticleLeadAsset)`
   order: 2;
 
-  @media (min-width: ${breakpoints.medium}px) {
-    margin-bottom: ${spacing(6)};
-  }
-
   @media (min-width: ${breakpoints.wide}px) {
     width: 100%;
     margin-left: auto;

@@ -47,14 +47,10 @@ export const HeaderContainer = styled(View)`
     margin: 0 auto;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: ${spacing(7)};
-    margin-bottom: ${spacing(6)};
   }
 
   @media (min-width: ${breakpoints.wide}px) {
     width: 56.2%;
-    padding-bottom: ${spacing(7)};
-    margin-bottom: ${spacing(7)};
   }
 `;
 

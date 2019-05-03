@@ -1,8 +1,9 @@
 import React, { Component, Fragment } from "react";
 import Ad, { AdComposer } from "@times-components/ad";
+import SaveAndShareBar from "@times-components/save-and-share-bar";
 import ArticleExtras from "@times-components/article-extras";
 import LazyLoad from "@times-components/lazy-load";
-import { spacing } from "@times-components/styleguide";
+import { spacing, breakpoints } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import ArticleBody from "./article-body/article-body";
 import {
@@ -14,7 +15,10 @@ import insertDropcapIntoAST from "./dropcap-util";
 import {
   BodyContainer,
   HeaderAdContainer,
-  MainContainer
+  MainContainer,
+  SaveShareContainer,
+  SaveShareRefContainer,
+  isStickyAllowed
 } from "./styles/responsive";
 import Head from "./head";
 
@@ -25,9 +29,11 @@ const adStyle = {
 class ArticleSkeleton extends Component {
   constructor(props) {
     super(props);
+    this.handleScroll = this.handleScroll.bind(this);
 
     this.state = {
-      articleWidth: null
+      articleWidth: null,
+      isSticky: false
     };
   }
 
@@ -36,6 +42,22 @@ class ArticleSkeleton extends Component {
     this.setState({
       articleWidth: this.node && this.node.clientWidth
     });
+    if (window) {
+      window.addEventListener("scroll", this.handleScroll);
+    }
+  }
+
+  componentWillUnmount() {
+    if (window) {
+      window.removeEventListener("scroll", this.handleScroll);
+    }
+  }
+
+  handleScroll() {
+    const offsetTop = this.sticky.getBoundingClientRect().top;
+    const isSticky = isStickyAllowed(breakpoints.huge) && offsetTop <= 1;
+
+    this.setState({ isSticky });
   }
 
   render() {
@@ -60,8 +82,9 @@ class ArticleSkeleton extends Component {
       template
     } = article;
 
-    const { articleWidth } = this.state;
+    const { articleWidth, isSticky } = this.state;
     const newContent = [...content];
+
     if (newContent && newContent.length > 0) {
       newContent[0] = insertDropcapIntoAST(
         newContent[0],
@@ -98,6 +121,22 @@ class ArticleSkeleton extends Component {
                 </HeaderAdContainer>
                 <MainContainer>
                   <Header width={articleWidth} />
+                  <SaveShareContainer isSticky={isSticky}>
+                    <SaveShareRefContainer isSticky={isSticky}>
+                      <div
+                        ref={el => {
+                          this.sticky = el;
+                        }}
+                      >
+                        <SaveAndShareBar
+                          articleUrl={url}
+                          onCopyLink={() => {}}
+                          onSaveToMyArticles={() => {}}
+                          onShareOnEmail={() => {}}
+                        />
+                      </div>
+                    </SaveShareRefContainer>
+                  </SaveShareContainer>
                   <BodyContainer>
                     <ArticleBody
                       content={newContent}

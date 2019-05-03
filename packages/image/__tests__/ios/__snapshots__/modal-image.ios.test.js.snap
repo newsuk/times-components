@@ -62,6 +62,10 @@ exports[`1. modal image 1`] = `
               />
             </View>
             <Image
+              caption={<MockCaption />}
+              fadeImageIn={false}
+              onImagePress={null}
+              show={false}
               source={
                 Object {
                   "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=660",
@@ -69,6 +73,10 @@ exports[`1. modal image 1`] = `
               }
             />
             <Image
+              caption={<MockCaption />}
+              fadeImageIn={false}
+              onImagePress={null}
+              show={false}
               source={
                 Object {
                   "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=660",
@@ -121,6 +129,10 @@ exports[`1. modal image 1`] = `
         />
       </View>
       <Image
+        caption={<MockCaption />}
+        fadeImageIn={false}
+        onImagePress={null}
+        show={false}
         source={
           Object {
             "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=660",
@@ -181,6 +193,10 @@ exports[`2. modal image with no caption 1`] = `
             aspectRatio={1.5}
           >
             <Image
+              caption={null}
+              fadeImageIn={false}
+              onImagePress={null}
+              show={false}
               source={null}
             />
           </View>
@@ -210,6 +226,10 @@ exports[`2. modal image with no caption 1`] = `
       aspectRatio={1.5}
     >
       <Image
+        caption={null}
+        fadeImageIn={false}
+        onImagePress={null}
+        show={false}
         source={null}
       />
     </View>
@@ -279,6 +299,10 @@ exports[`3. modal image with custom highressize 1`] = `
               />
             </View>
             <Image
+              caption={<MockCaption />}
+              fadeImageIn={false}
+              onImagePress={null}
+              show={false}
               source={
                 Object {
                   "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
@@ -286,6 +310,10 @@ exports[`3. modal image with custom highressize 1`] = `
               }
             />
             <Image
+              caption={<MockCaption />}
+              fadeImageIn={false}
+              onImagePress={null}
+              show={false}
               source={
                 Object {
                   "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
@@ -338,6 +366,10 @@ exports[`3. modal image with custom highressize 1`] = `
         />
       </View>
       <Image
+        caption={<MockCaption />}
+        fadeImageIn={false}
+        onImagePress={null}
+        show={false}
         source={
           Object {
             "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
@@ -387,6 +419,10 @@ exports[`8. hides elements when tapping on the image 1`] = `
             aspectRatio={1.5}
           >
             <Image
+              caption={<MockCaption />}
+              fadeImageIn={false}
+              onImagePress={null}
+              show={true}
               source={null}
             />
           </View>
@@ -399,6 +435,10 @@ exports[`8. hides elements when tapping on the image 1`] = `
       aspectRatio={1.5}
     >
       <Image
+        caption={<MockCaption />}
+        fadeImageIn={false}
+        onImagePress={null}
+        show={true}
         source={null}
       />
     </View>
@@ -455,6 +495,10 @@ exports[`9. re-shows elements when tapping on the image a second time 1`] = `
             aspectRatio={1.5}
           >
             <Image
+              caption={<MockCaption />}
+              fadeImageIn={false}
+              onImagePress={null}
+              show={true}
               source={null}
             />
           </View>
@@ -490,6 +534,10 @@ exports[`9. re-shows elements when tapping on the image a second time 1`] = `
       aspectRatio={1.5}
     >
       <Image
+        caption={<MockCaption />}
+        fadeImageIn={false}
+        onImagePress={null}
+        show={true}
         source={null}
       />
     </View>

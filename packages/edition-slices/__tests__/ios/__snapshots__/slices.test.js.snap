@@ -417,7 +417,7 @@ Array [
     <View />
     <View>
       <TileC
-        tileName="lead1"
+        tileName="lead2"
       />
     </View>
   </View>,
