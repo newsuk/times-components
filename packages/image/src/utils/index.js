@@ -1,3 +1,3 @@
-import appendURL from "./appendToURL";
+import Utils from "./appendToURL";
 
-export default appendURL;
+export default Utils;
