@@ -72,7 +72,8 @@ class TimesImage extends Component {
       highResSize,
       lowResSize,
       style,
-      uri
+      uri,
+      ...defaultProps
     } = this.props;
     const { isLoaded, dimensions } = this.state;
     const renderedRes = highResSize || (dimensions ? dimensions.width : null);
@@ -89,6 +90,7 @@ class TimesImage extends Component {
             <Placeholder dimensions={dimensions} />
             {lowResSize ? (
               <Image
+                {...defaultProps}
                 borderRadius={borderRadius}
                 source={{ uri: getUriAtRes(uri, lowResSize) }}
                 style={styles.image}
@@ -97,6 +99,7 @@ class TimesImage extends Component {
           </Fragment>
         )}
         <LazyLoadingImage
+          {...defaultProps}
           borderRadius={borderRadius}
           onLoad={this.handleLoad}
           source={srcUri && renderedRes ? { uri: srcUri } : null}
