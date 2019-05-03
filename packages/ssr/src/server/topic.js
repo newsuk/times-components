@@ -4,7 +4,7 @@ const defaultAdConfig = require("../lib/ads/make-topic-ad-config")
   .defaultServer;
 
 module.exports = (
-  { currentPage, topicSlug },
+  { currentPage, topicSlug, useNewTopicDataSource = false },
   { graphqlApiUrl, logger, makeArticleUrl, makeTopicUrl }
 ) => {
   if (typeof topicSlug !== "string") {
@@ -35,7 +35,12 @@ module.exports = (
   const options = {
     client: {
       logger,
-      uri: graphqlApiUrl
+      uri: graphqlApiUrl,
+      headers: useNewTopicDataSource
+        ? {
+            "x-new-topic-data-source": true
+          }
+        : {}
     },
     data: {
       debounceTimeMs: 0,
@@ -44,7 +49,8 @@ module.exports = (
       mapTopicToAdConfig: defaultAdConfig,
       page: currentPage,
       pageSize: 20,
-      topicSlug
+      topicSlug,
+      useNewTopicDataSource
     },
     name: "topicPage"
   };
