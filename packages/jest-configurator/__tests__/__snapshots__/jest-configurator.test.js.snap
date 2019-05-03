@@ -2,6 +2,6 @@
 
 exports[`Jest Configurator Tests All platforms should include times-components in transform ignore patterns 1`] = `
 Array [
-  "node_modules/(?!(react-native|react-native-svg|react-native-iphone-x-helper|@times-components|@storybook/react-native)/)",
+  "node_modules/(?!(react-native|react-native-svg|react-native-iphone-x-helper|@times-components|@storybook/react-native|react-native-swipe-gestures)/)",
 ]
 `;

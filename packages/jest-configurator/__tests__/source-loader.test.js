@@ -13,32 +13,6 @@ const tests = [
     }
   },
   {
-    name: "non-monorepo package hash",
-    test() {
-      const filePath = "./fixtures/test.js";
-      const fileContents = readFileSync(filePath).toString();
-
-      expect(
-        getCacheKey(fileContents, filePath, "", {
-          rootDir: ""
-        })
-      ).toMatchSnapshot();
-    }
-  },
-  {
-    name: "untransformed unbabelable file",
-    test() {
-      const fileContents = `fn main(){"println!("Hello World!");}`;
-
-      const actual = transform(fileContents, "./fixtures/test.rs", {
-        coveragePathIgnorePatterns: [],
-        cwd: "/home/cwd"
-      });
-
-      expect(actual).toEqual(fileContents);
-    }
-  },
-  {
     name: "transformed non-monorepo file",
     test() {
       const fileContents = readFileSync("./fixtures/test.js").toString();
