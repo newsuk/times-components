@@ -3,12 +3,12 @@ import { Modal, View } from "react-native";
 import Gestures from "@times-components/gestures";
 import { ResponsiveContext } from "@times-components/responsive";
 import Button from "@times-components/link";
-import CloseButton from "./close-button";
-import ModalCaptionContainer from "./modal-caption-container";
-import SafeAreaView from "./react-native-safe-area";
-import Image from "./image";
+import CloseButton from "../close-button";
+import ModalCaptionContainer from "../modal-caption-container";
+import SafeAreaView from "../safeAreaView";
+import Image from "../image";
 import { modalPropTypes, modalDefaultProps } from "./modal-image-prop-types";
-import styles, { captionStyles, tabletCaptionStyles } from "./styles";
+import styles, { captionStyles, tabletCaptionStyles } from "../styles";
 
 class ModalImage extends Component {
   constructor(props) {

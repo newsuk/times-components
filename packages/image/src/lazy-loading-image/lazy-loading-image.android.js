@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { Image } from "react-native";
-import appendToUrl from "./utils";
+import appendToUrl from "../utils";
 
 class LazyLoadingImage extends Component {
   constructor() {
