@@ -162,6 +162,22 @@ exports[`1. a full article 1`] = `
       </g>
     </svg>
   </a>
+  <a>
+    <svg
+      aria-label="[title]"
+      height={15}
+      role="img"
+      viewBox="0 0 15 15"
+      width={15}
+    >
+      <title>
+        Copy link to clipboard
+      </title>
+      <path
+        d="f65af77b7574644b0c2e60934732135f"
+      />
+    </svg>
+  </a>
   Save
   <a>
     <svg
