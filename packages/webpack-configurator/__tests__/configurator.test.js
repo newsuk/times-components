@@ -29,7 +29,11 @@ describe("webpack-configurator", () => {
     });
 
     const { plugins } = await getBabelConfig(".");
-    expect(plugins).toEqual(["transform-es2015-modules-commonjs", "syntax-object-rest-spread", ["react-native-web", { commonjs: true }]]);
+    expect(plugins).toEqual([
+      "transform-es2015-modules-commonjs",
+      "syntax-object-rest-spread",
+      ["react-native-web", { commonjs: true }]
+    ]);
   });
 
   it("should extend babelconfig with rnw-plugin", async () => {
