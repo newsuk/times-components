@@ -1,3 +1,3 @@
 import appendURL from "./appendToURL";
 
-export default appendURL
+export default appendURL;
