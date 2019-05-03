@@ -17,7 +17,10 @@ exports[`1. a full article 1`] = `
       content="The Times"
       name="article:publication"
     />
-    
+    <meta
+      content="Some byline"
+      name="author"
+    />
     <meta
       content="Some Headline"
       property="og:title"

@@ -25,9 +25,11 @@ export const renderTreeAsText = (
   key = "0"
 ) =>
   value ||
-  children
-    .map((child, index) => renderTreeAsText(child, `${key}.${index}`))
-    .join("");
+  (children
+    ? children
+        .map((child, index) => renderTreeAsText(child, `${key}.${index}`))
+        .join("")
+    : "");
 
 const nodeShape = {
   attributes: PropTypes.object,
