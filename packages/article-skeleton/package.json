@@ -88,6 +88,7 @@
     "@times-components/markup-forest": "1.7.6",
     "@times-components/pull-quote": "3.4.77",
     "@times-components/responsive": "0.4.30",
+    "@times-components/save-and-share-bar": "0.2.5",
     "@times-components/styleguide": "3.28.12",
     "@times-components/text-flow": "0.0.2",
     "@times-components/tracking": "2.4.32",

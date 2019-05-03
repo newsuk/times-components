@@ -5,6 +5,8 @@ import ArticleSkeleton from "../src/article-skeleton";
 import articleFixture from "../fixtures/full-article";
 import articleSkeletonProps from "./shared-article-skeleton-props";
 
+jest.mock("@times-components/save-and-share-bar", () => "SaveAndShareBar");
+
 export default () => {
   beforeEach(() => {
     mockDate.set(1514764800000, 0);

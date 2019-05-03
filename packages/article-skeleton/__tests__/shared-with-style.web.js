@@ -17,6 +17,8 @@ import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
 import articleSkeletonProps from "./shared-article-skeleton-props";
 
+jest.mock("@times-components/save-and-share-bar", () => "SaveAndShareBar");
+
 const styles = [
   "alignItems",
   "flex",

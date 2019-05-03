@@ -8,6 +8,8 @@ import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
 import articleProps from "./shared-article-props";
 
+jest.mock("@times-components/save-and-share-bar", () => "SaveAndShareBar");
+
 const findComponents = (testInstance, componentName) =>
   testInstance.root.findAll(node => {
     if (typeof node.type === "string") {

@@ -12,6 +12,15 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
   </div>
   <div>
     <div>
+      <div>
+        <div>
+          <SaveAndShareBar
+            articleUrl="https://url.io"
+          />
+        </div>
+      </div>
+    </div>
+    <div>
       <p>
         This being Black History Month, last week
       </p>
@@ -332,6 +341,15 @@ exports[`2. an article with no content 1`] = `
   </div>
   <div>
     <div>
+      <div>
+        <div>
+          <SaveAndShareBar
+            articleUrl="https://url.io"
+          />
+        </div>
+      </div>
+    </div>
+    <div>
       <ArticleExtras
         articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
         commentsEnabled={true}
@@ -403,6 +421,15 @@ exports[`3. an article with a nested markup in first paragraph displays no drop 
     />
   </div>
   <div>
+    <div>
+      <div>
+        <div>
+          <SaveAndShareBar
+            articleUrl="https://url.io"
+          />
+        </div>
+      </div>
+    </div>
     <div>
       <p>
         <b>
