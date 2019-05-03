@@ -38,11 +38,12 @@ class SaveStarWeb extends Component {
     evt.preventDefault();
 
     const { savedStatus } = this.state;
+    const { saveApi } = this.props;
 
     if (savedStatus) {
-      this.unsaveBookmark();
+      this.saveUnsaveBookmark(saveApi.bookmark, false, true);
     } else {
-      this.saveBookmark();
+      this.saveUnsaveBookmark(saveApi.unBookmark, true, false);
     }
   }
 
@@ -68,34 +69,18 @@ class SaveStarWeb extends Component {
     }
   }
 
-  async saveBookmark() {
+  async saveUnsaveBookmark(saveMethod, successStatus, errorStatus) {
     this.setState({ loadingState: true });
-    const { articleId: id, saveApi } = this.props;
+    const { articleId: id } = this.props;
 
     try {
-      await saveApi.bookmark(id);
+      await saveMethod(id);
       this.setState({
         loadingState: false,
-        savedStatus: true
+        savedStatus: successStatus
       });
     } catch (error) {
-      this.setState({ loadingState: false, savedStatus: false });
-      console.error("Error in connecting to api", error);
-    }
-  }
-
-  async unsaveBookmark() {
-    const { articleId: id, saveApi } = this.props;
-    this.setState({ loadingState: true });
-
-    try {
-      saveApi.unBookmark(id);
-      this.setState({
-        loadingState: false,
-        savedStatus: false
-      });
-    } catch (error) {
-      this.setState({ loadingState: false, savedStatus: true });
+      this.setState({ loadingState: false, savedStatus: errorStatus });
       console.error("Error in connecting to api", error);
     }
   }
