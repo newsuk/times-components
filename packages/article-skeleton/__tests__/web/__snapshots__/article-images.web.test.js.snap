@@ -12,6 +12,15 @@ exports[`1. a secondary image 1`] = `
   </div>
   <div>
     <div>
+      <div>
+        <div>
+          <SaveAndShareBar
+            articleUrl="https://url.io"
+          />
+        </div>
+      </div>
+    </div>
+    <div>
       <div
         id="0"
       >
@@ -57,6 +66,15 @@ exports[`2. an inline image 1`] = `
     />
   </div>
   <div>
+    <div>
+      <div>
+        <div>
+          <SaveAndShareBar
+            articleUrl="https://url.io"
+          />
+        </div>
+      </div>
+    </div>
     <div>
       <div
         id="0"

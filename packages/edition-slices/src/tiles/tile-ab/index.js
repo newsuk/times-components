@@ -1,10 +1,9 @@
 import React from "react";
-import { View } from "react-native";
 import PropTypes from "prop-types";
+import Image from "@times-components/image";
 import {
   getTileImageUri,
   getTileSummary,
-  TileImage,
   TileLink,
   TileSummary,
   withTileTracking
@@ -12,19 +11,19 @@ import {
 import styles from "./styles";
 
 const TileH = ({ onPress, tile }) => (
-  <TileLink onPress={onPress} tile={tile}>
-    <View style={styles.container}>
-      <TileSummary
-        bylines={tile.article.bylines}
-        headlineStyle={styles.headline}
-        style={styles.summaryContainer}
-        summary={getTileSummary(tile, 125)}
-        tile={tile}
-      />
-      <View style={styles.imageContainer}>
-        <TileImage aspectRatio={2 / 3} uri={getTileImageUri(tile, "crop23")} />
-      </View>
-    </View>
+  <TileLink onPress={onPress} style={styles.container} tile={tile}>
+    <TileSummary
+      bylines={tile.article.bylines}
+      headlineStyle={styles.headline}
+      style={styles.summaryContainer}
+      summary={getTileSummary(tile, 125)}
+      tile={tile}
+    />
+    <Image
+      aspectRatio={2 / 3}
+      style={styles.imageContainer}
+      uri={getTileImageUri(tile, "crop23")}
+    />
   </TileLink>
 );
 

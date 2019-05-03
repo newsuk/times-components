@@ -103,6 +103,98 @@ exports[`1. a full article 1`] = `
       SOME CREDITS
     </figcaption>
   </figure>
+  Share
+  <a>
+    <svg
+      aria-label="[title]"
+      height={15}
+      role="img"
+      viewBox="0 0 22 16"
+      width={20.625}
+    >
+      <title>
+        Share by email client
+      </title>
+      <g>
+        <path
+          d="7662b27a9a5411e756afc5097a4eb94d"
+        />
+      </g>
+    </svg>
+  </a>
+  <a
+    href="https://twitter.com/intent/tweet?text=https://url.io"
+    target="_blank"
+  >
+    <svg
+      aria-label="[title]"
+      height={15}
+      role="img"
+      viewBox="-354.2 -279.4 750 600"
+      width={18.75}
+    >
+      <title>
+        Share on Twitter
+      </title>
+      <path
+        d="ebf51b280a2c9ea0e632fdbf86606550"
+      />
+    </svg>
+  </a>
+  <a
+    href="https://www.facebook.com/sharer/sharer.php?u=https://url.io"
+    target="_blank"
+  >
+    <svg
+      aria-label="[title]"
+      height={18}
+      role="img"
+      viewBox="14 10 10.592460632324219 20.397258758544922"
+      width={9}
+    >
+      <title>
+        Share on Facebook
+      </title>
+      <g>
+        <path
+          d="8f9b8bbdce60b96352628d3dbf6e37a0"
+        />
+      </g>
+    </svg>
+  </a>
+  <a>
+    <svg
+      aria-label="[title]"
+      height={15}
+      role="img"
+      viewBox="0 0 15 15"
+      width={15}
+    >
+      <title>
+        Copy link to clipboard
+      </title>
+      <path
+        d="f65af77b7574644b0c2e60934732135f"
+      />
+    </svg>
+  </a>
+  Save
+  <a>
+    <svg
+      aria-label="[title]"
+      height={16}
+      role="img"
+      viewBox="0 0 12 16"
+      width={12}
+    >
+      <title>
+        Save to My Articles
+      </title>
+      <path
+        d="367900640c3b5aa2804f45a084e247ea"
+      />
+    </svg>
+  </a>
   <img
     alt=""
     src="https://image.io?resize=100"
