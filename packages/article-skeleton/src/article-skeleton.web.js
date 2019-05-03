@@ -42,11 +42,15 @@ class ArticleSkeleton extends Component {
     this.setState({
       articleWidth: this.node && this.node.clientWidth
     });
-    window.addEventListener("scroll", this.handleScroll);
+    if (window) {
+      window.addEventListener("scroll", this.handleScroll);
+    }
   }
 
   componentWillUnmount() {
-    window.removeEventListener("scroll", this.handleScroll);
+    if (window) {
+      window.removeEventListener("scroll", this.handleScroll);
+    }
   }
 
   handleScroll() {
