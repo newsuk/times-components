@@ -26,12 +26,12 @@ class SaveStarWeb extends Component {
     };
   }
 
-  async componentDidMount() {
+  componentDidMount() {
     const { articleId, saveApi } = this.props;
 
     this.setState({ loadingState: typeof window !== "undefined" });
 
-    await this.getBookmarks(articleId, saveApi);
+    this.getBookmarks(articleId, saveApi);
   }
 
   onSaveButtonPress(evt) {
@@ -47,42 +47,45 @@ class SaveStarWeb extends Component {
     }
   }
 
-  async getBookmarks(articleId, saveApi) {
-    try {
-      const response = await saveApi.getBookmarks();
-      const { loading, data } = response;
-      if (loading) {
-        this.setState({ loadingState: true });
-      } else {
-        const savedArticles = data.viewer.bookmarks.bookmarks.map(
-          item => item.id
-        );
+  getBookmarks(articleId, saveApi) {
+    saveApi
+      .getBookmarks()
+      .then(response => {
+        const { loading, data } = response;
+        if (loading) {
+          this.setState({ loadingState: true });
+        } else {
+          const savedArticles = data.viewer.bookmarks.bookmarks.map(
+            item => item.id
+          );
 
-        this.setState({
-          loadingState: false,
-          savedStatus: !!savedArticles.find(item => item === articleId)
-        });
-      }
-    } catch (error) {
-      this.setState({ loadingState: false, savedStatus: false });
-      console.error("Error in connecting to api", error);
-    }
+          this.setState({
+            loadingState: false,
+            savedStatus: !!savedArticles.find(item => item === articleId)
+          });
+        }
+      })
+      .catch(error => {
+        this.setState({ loadingState: false, savedStatus: false });
+        console.error("Error in connecting to api", error);
+      });
   }
 
-  async saveUnsaveBookmark(saveMethod, successStatus, errorStatus) {
+  saveUnsaveBookmark(saveMethod, successStatus, errorStatus) {
     this.setState({ loadingState: true });
     const { articleId: id } = this.props;
 
-    try {
-      await saveMethod(id);
-      this.setState({
-        loadingState: false,
-        savedStatus: successStatus
+    saveMethod(id)
+      .then(() => {
+        this.setState({
+          loadingState: false,
+          savedStatus: successStatus
+        });
+      })
+      .catch(error => {
+        this.setState({ loadingState: false, savedStatus: errorStatus });
+        console.error("Error in connecting to api", error);
       });
-    } catch (error) {
-      this.setState({ loadingState: false, savedStatus: errorStatus });
-      console.error("Error in connecting to api", error);
-    }
   }
 
   renderSaveButton(saveStatus) {
