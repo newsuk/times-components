@@ -3,6 +3,7 @@ import Ad, { AdComposer } from "@times-components/ad";
 import SaveAndShareBar from "@times-components/save-and-share-bar";
 import ArticleExtras from "@times-components/article-extras";
 import LazyLoad from "@times-components/lazy-load";
+import saveApi from "@times-components/save-star-web/src/save-api";
 import { spacing, breakpoints } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import Context from "@times-components/context";
@@ -143,7 +144,8 @@ class ArticleSkeleton extends Component {
                                 onCopyLink={() => {}}
                                 onSaveToMyArticles={() => {}}
                                 onShareOnEmail={() => {}}
-                              />
+                                saveApi={saveApi}
+                                />
                             </div>
                           </SaveShareRefContainer>
                         </SaveShareContainer>
