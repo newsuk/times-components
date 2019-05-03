@@ -1,7 +1,7 @@
 /* eslint-disable react/no-danger, react/prop-types */
 import React, { Fragment } from "react";
 import { Text, View } from "react-native";
-import ModalImage from "./src/modal-image";
+import ModalImage from "./src/modalImage";
 
 const uri =
   "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7d2fd06c-a460-11e7-8955-1ad2a9a7928d.jpg?crop=1500%2C844%2C0%2C78";

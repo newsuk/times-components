@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { defaultProps, propTypes } from "./image-prop-types";
+import { defaultProps, propTypes } from "../image-prop-types";
 
 export const modalPropTypes = {
   ...propTypes,

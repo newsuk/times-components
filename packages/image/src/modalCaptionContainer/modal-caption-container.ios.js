@@ -1,7 +1,7 @@
 import React from "react";
 import { Dimensions } from "react-native";
 import { OverlayGradient } from "@times-components/gradient";
-import SafeAreaView from "./react-native-safe-area";
+import SafeAreaView from "../safearea/react-native-safe-area";
 
 const GRADIENT_HEIGHT = 140;
 const MIN_BLACK_HEIGHT = 50;

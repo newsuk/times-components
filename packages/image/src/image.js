@@ -8,10 +8,10 @@ import {
   normaliseWidthForAssetRequestCache,
   convertToPixels
 } from "@times-components/utils";
-import LazyLoadingImage from "./lazy-loading-image";
+import LazyLoadingImage from "./lazyLoadingImage/lazy-loading-image";
 import appendToUrl from "./utils";
 import { defaultProps, propTypes } from "./image-prop-types";
-import Placeholder from "./placeholder";
+import Placeholder from "./placeholder/placeholder";
 import styles from "./styles";
 
 const getUriAtRes = memoize(

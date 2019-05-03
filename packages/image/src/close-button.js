@@ -12,7 +12,7 @@ const CloseButton = ({ isTablet, onPress }) => (
     <Image
       resizeMode="contain"
       // eslint-disable-next-line global-require
-      source={require("../assets/close-button.png")}
+      source={require("../close-button.png")}
       style={styles.closeButtonImage}
     />
   </Button>
