@@ -1,10 +1,9 @@
 import React from "react";
-import { View } from "react-native";
 import PropTypes from "prop-types";
 import { editionBreakpoints } from "@times-components/styleguide";
+import Image from "@times-components/image";
 import {
   getTileImageUri,
-  TileImage,
   TileLink,
   TileSummary,
   withTileTracking
@@ -14,19 +13,17 @@ import styleFactory from "./styles";
 const TileK = ({ onPress, tile, breakpoint }) => {
   const styles = styleFactory(breakpoint);
   return (
-    <TileLink onPress={onPress} tile={tile}>
-      <View style={styles.container}>
-        <TileImage
-          aspectRatio={3 / 2}
-          style={styles.imageContainer}
-          uri={getTileImageUri(tile, "crop32")}
-        />
-        <TileSummary
-          headlineStyle={styles.headline}
-          style={styles.summaryContainer}
-          tile={tile}
-        />
-      </View>
+    <TileLink onPress={onPress} style={styles.container} tile={tile}>
+      <Image
+        aspectRatio={3 / 2}
+        style={styles.imageContainer}
+        uri={getTileImageUri(tile, "crop32")}
+      />
+      <TileSummary
+        headlineStyle={styles.headline}
+        style={styles.summaryContainer}
+        tile={tile}
+      />
     </TileLink>
   );
 };

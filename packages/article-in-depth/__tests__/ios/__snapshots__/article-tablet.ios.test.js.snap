@@ -92,10 +92,6 @@ exports[`1. article in depth - tablet 1`] = `
       Object {
         "alignItems": "center",
         "alignSelf": "center",
-        "borderBottomWidth": 1,
-        "borderColor": "#DBDBDB",
-        "borderTopWidth": 1,
-        "marginBottom": 25,
         "marginHorizontal": 10,
         "paddingBottom": 6,
         "paddingTop": 10,

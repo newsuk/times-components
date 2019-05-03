@@ -142,6 +142,15 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
       </div>
     </div>
     <div>
+      <div>
+        <div>
+          <SaveAndShareBar
+            articleUrl="https://url.io"
+          />
+        </div>
+      </div>
+    </div>
+    <div>
       <p>
         Some content
       </p>
@@ -338,6 +347,15 @@ exports[`4. an article with ads 1`] = `
               publication="TIMES"
             />
           </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <div>
+          <SaveAndShareBar
+            articleUrl="https://url.io"
+          />
         </div>
       </div>
     </div>
