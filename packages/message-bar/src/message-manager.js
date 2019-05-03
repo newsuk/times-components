@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unused-state */
 import React, { Component, Fragment } from "react";
-import { View } from "react-native";
+import { View, Platform } from "react-native";
 import PropTypes from "prop-types";
 import styleFactory from "./styles";
 import MessageBar from "./message-bar";
@@ -13,15 +13,22 @@ class MessageManager extends Component {
     super(props);
     this.state = {
       message: null,
-      showMessage: message => this.addMessage(message)
+      showMessage: message => this.addMessage(message),
+      offsetTop: 0
     };
     this.addMessage = this.addMessage.bind(this);
     this.removeMessage = this.removeMessage.bind(this);
+    this.onLayout = this.onLayout.bind(this);
   }
 
-  addMessage(message) {
+  onLayout(e) {
+    const {
+      nativeEvent: {
+        layout: { y }
+      }
+    } = e;
     this.setState({
-      message
+      offsetTop: y
     });
   }
 
@@ -31,17 +38,27 @@ class MessageManager extends Component {
     });
   }
 
+  addMessage(message) {
+    this.setState({
+      message
+    });
+  }
+
   render() {
     const { scale, children, delay, animate } = this.props;
-    const { message } = this.state;
+    const { message, offsetTop } = this.state;
     const styles = styleFactory(scale);
+    const offsetStyle = offsetTop
+      ? {
+          position: Platform.OS === "web" ? "fixed" : "absolute",
+          top: offsetTop,
+          height: message ? 50 : 0
+        }
+      : {};
 
     return (
       <Fragment>
-        <MessageContext.Provider value={this.state}>
-          {children}
-        </MessageContext.Provider>
-        <View style={styles.messageManager}>
+        <View style={[styles.messageManager, offsetStyle]}>
           {message && (
             <MessageBar
               animate={animate}
@@ -51,6 +68,11 @@ class MessageManager extends Component {
               scale={scale}
             />
           )}
+        </View>
+        <View onLayout={this.onLayout}>
+          <MessageContext.Provider value={this.state}>
+            {children}
+          </MessageContext.Provider>
         </View>
       </Fragment>
     );

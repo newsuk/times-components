@@ -1,5 +1,5 @@
 /* eslint-disable consistent-return,no-param-reassign */
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import { View, FlatList, Text, Dimensions } from "react-native";
 import PropTypes from "prop-types";
 import { AdComposer } from "@times-components/ad";
@@ -287,10 +287,10 @@ class ArticleSkeleton extends Component {
             zIndex: 1
           };
           return (
-            <View>
+            <Fragment>
               <View style={style}>{block.getComponent()}</View>
               {block.children.map(subBlock => renderText(subBlock, true))}
-            </View>
+            </Fragment>
           );
         }}
       </ResponsiveContext.Consumer>

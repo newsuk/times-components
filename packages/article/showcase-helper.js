@@ -15,6 +15,7 @@ import {
 import { sections } from "@times-components/storybook";
 import { scales, themeFactory } from "@times-components/styleguide";
 import storybookReporter from "@times-components/tealium-utils";
+import { MessageManager } from "@times-components/message-bar";
 import Article, { templates } from "./src/article";
 
 const preventDefaultedAction = decorateAction =>
@@ -231,36 +232,40 @@ const renderArticle = ({
             }
           }}
         >
-          <Article
-            adConfig={adConfig}
-            analyticsStream={analyticsStream}
-            article={data}
-            error={error}
-            isLoading={false}
-            onAuthorPress={preventDefaultedAction(decorateAction)(
-              "onAuthorPress"
-            )}
-            onCommentGuidelinesPress={preventDefaultedAction(decorateAction)(
-              "onCommentGuidelinesPress"
-            )}
-            onCommentsPress={preventDefaultedAction(decorateAction)(
-              "onCommentsPress"
-            )}
-            onLinkPress={preventDefaultedAction(decorateAction)("onLinkPress")}
-            onRelatedArticlePress={preventDefaultedAction(decorateAction)(
-              "onRelatedArticlePress"
-            )}
-            onTopicPress={preventDefaultedAction(decorateAction)(
-              "onTopicPress"
-            )}
-            onTwitterLinkPress={preventDefaultedAction(decorateAction)(
-              "onTwitterLinkPress"
-            )}
-            onVideoPress={preventDefaultedAction(decorateAction)(
-              "onVideoPress"
-            )}
-            refetch={refetch}
-          />
+          <MessageManager animate delay={30000} scale={scales.medium}>
+            <Article
+              adConfig={adConfig}
+              analyticsStream={analyticsStream}
+              article={data}
+              error={error}
+              isLoading={false}
+              onAuthorPress={preventDefaultedAction(decorateAction)(
+                "onAuthorPress"
+              )}
+              onCommentGuidelinesPress={preventDefaultedAction(decorateAction)(
+                "onCommentGuidelinesPress"
+              )}
+              onCommentsPress={preventDefaultedAction(decorateAction)(
+                "onCommentsPress"
+              )}
+              onLinkPress={preventDefaultedAction(decorateAction)(
+                "onLinkPress"
+              )}
+              onRelatedArticlePress={preventDefaultedAction(decorateAction)(
+                "onRelatedArticlePress"
+              )}
+              onTopicPress={preventDefaultedAction(decorateAction)(
+                "onTopicPress"
+              )}
+              onTwitterLinkPress={preventDefaultedAction(decorateAction)(
+                "onTwitterLinkPress"
+              )}
+              onVideoPress={preventDefaultedAction(decorateAction)(
+                "onVideoPress"
+              )}
+              refetch={refetch}
+            />
+          </MessageManager>
         </ContextProviderWithDefaults>
       );
     }}

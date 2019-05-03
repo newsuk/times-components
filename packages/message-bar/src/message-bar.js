@@ -87,7 +87,7 @@ class MessageBar extends Component {
               {
                 translateY: yValue.interpolate({
                   inputRange: [0, 1],
-                  outputRange: [-50, 0]
+                  outputRange: [-100, 0]
                 })
               }
             ]

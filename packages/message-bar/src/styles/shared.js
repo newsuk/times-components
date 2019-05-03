@@ -14,7 +14,8 @@ const sharedStyle = scale => ({
       width: 0
     },
     shadowRadius: 5,
-    width: "100%",
+    flexGrow: 1,
+    flexShrink: 0,
     zIndex: 10
   },
   messageBarCloseButton: {
@@ -37,14 +38,7 @@ const sharedStyle = scale => ({
     marginLeft: 20
   },
   messageManager: {
-    bottom: 0,
     flex: 1,
-    flexDirection: "row",
-    height,
-    left: 0,
-    position: "absolute",
-    right: 0,
-    top: 0,
     width: "100%",
     zIndex: 10
   }
