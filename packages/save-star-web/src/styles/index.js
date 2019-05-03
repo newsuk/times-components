@@ -5,10 +5,8 @@ const styles = {
     backgroundColor: colours.functional.whiteGrey,
     borderRadius: 9999,
     height: 40,
-    lineHeight: 45,
     marginLeft: spacing(1),
     overflow: "hidden",
-    textAlign: "center",
     width: 40
   },
   label: {

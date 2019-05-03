@@ -134,11 +134,9 @@ exports[`save and share bar component save and share bar renders correctly 1`] =
           "borderTopLeftRadius": "9999px",
           "borderTopRightRadius": "9999px",
           "height": "40px",
-          "lineHeight": "45px",
           "marginLeft": "5px",
           "overflowX": "hidden",
           "overflowY": "hidden",
-          "textAlign": "center",
           "width": "40px",
         }
       }

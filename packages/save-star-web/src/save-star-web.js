@@ -135,7 +135,7 @@ SaveStarWeb.propTypes = {
   articleId: PropTypes.string.isRequired,
   colour: PropTypes.string,
   hoverColour: PropTypes.string,
-  saveApi: PropTypes.func.isRequired
+  saveApi: PropTypes.shape({}).isRequired
 };
 
 SaveStarWeb.defaultProps = {
