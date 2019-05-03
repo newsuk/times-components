@@ -1,6 +1,7 @@
 # SaveStarWeb
 
 <!-- Add the description of the package here. -->
+Save Star is a stateful component which allows the user to view if their article is `saved`, also provides them the ability to `save` and `unsave` an article. It uses apollo client to fetch data from TPA.
 
 ## Contributing
 
@@ -22,18 +23,11 @@ yarn lint
 
 ## Testing
 
-Testing can be done on each platform individually
+Testing can be done on web
 
 ```
-yarn test:android
-yarn test:ios
 yarn test:web
-```
-
-Or the tests for all platforms can be run
-
-```
-yarn test:all
+yarn test
 ```
 
 Visit the official
