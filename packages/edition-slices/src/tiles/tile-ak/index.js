@@ -14,16 +14,13 @@ const TileAK = ({ id, image, onPress, title, url }) => (
     key={id}
     linkStyle={link}
     onPress={() => onPress({ id, title, url })}
+    style={puzzleContainer}
     url={url}
   >
-    <View style={puzzleContainer}>
-      <View style={header}>
-        <ArticleSummaryHeadline headline={title} style={headline} />
-      </View>
-      <View style={imageContainer}>
-        <Image aspectRatio={3 / 2} uri={image.crop32.url} />
-      </View>
+    <View style={header}>
+      <ArticleSummaryHeadline headline={title} style={headline} />
     </View>
+    <Image aspectRatio={3 / 2} style={imageContainer} uri={image.crop32.url} />
   </Link>
 );
 

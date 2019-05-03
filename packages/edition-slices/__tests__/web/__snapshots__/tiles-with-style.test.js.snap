@@ -43,25 +43,6 @@ exports[`1. tile a 1`] = `
 }
 
 .IS4 {
-  -webkit-align-items: flex-end;
-  align-items: flex-end;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  margin-top: -5px;
-  width: 25%;
-  -ms-flex-align: end;
-  -webkit-box-align: end;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS5 {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -69,13 +50,13 @@ exports[`1. tile a 1`] = `
   -webkit-box-direction: normal;
 }
 
-.IS6 {
+.IS5 {
   margin-right: 10px;
   margin-left: 10px;
   margin-top: 10px;
 }
 
-.IS7 {
+.IS6 {
   width: 100%;
 }
 </style>
@@ -84,7 +65,7 @@ exports[`1. tile a 1`] = `
   url="/article/123"
 >
   <div
-    className="IS6 S2"
+    className="IS5 S2"
   >
     <div
       className="S2"
@@ -106,7 +87,7 @@ exports[`1. tile a 1`] = `
       className="S4"
     >
       <div
-        className="IS5 S2"
+        className="IS4 S2"
       >
         <div
           className="IS3 S2"
@@ -122,20 +103,14 @@ exports[`1. tile a 1`] = `
             }
           />
         </div>
-        <div
-          className="IS4 S2"
-        />
       </div>
     </div>
   </div>
-  <div
-    className="IS7 S2"
-  >
-    <Image
-      aspectRatio={1.7777777777777777}
-      uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
-    />
-  </div>
+  <Image
+    aspectRatio={1.7777777777777777}
+    className="IS6"
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+  />
 </Link>
 `;
 
@@ -204,97 +179,71 @@ exports[`2. tile b 1`] = `
 }
 
 .IS4 {
-  -webkit-align-items: flex-end;
-  align-items: flex-end;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  margin-top: -5px;
-  width: 25%;
-  -ms-flex-align: end;
-  -webkit-box-align: end;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS5 {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
-
-.IS6 {
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-top: 10px;
-}
 </style>
 
 <Link
+  linkStyle={
+    Object {
+      "paddingHorizontal": "10px",
+      "paddingTop": "10px",
+    }
+  }
   url="/article/123"
 >
   <div
-    className="IS6 S2"
+    className="S2"
   >
     <div
       className="S2"
     >
       <div
-        className="S2"
+        className="IS1 S1"
+      >
+        LABEL
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      className="IS2 S3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div
+      className="S5"
+    >
+      <span
+        className="S4"
+      >
+        
+        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+        ...
+      </span>
+    </div>
+    <div
+      className="S6"
+    >
+      <div
+        className="IS4 S2"
       >
         <div
-          className="IS1 S1"
+          className="IS3 S2"
         >
-          LABEL
-        </div>
-      </div>
-      <h3
-        aria-level="3"
-        className="IS2 S3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
-      <div
-        className="S5"
-      >
-        <span
-          className="S4"
-        >
-          
-          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-          ...
-        </span>
-      </div>
-      <div
-        className="S6"
-      >
-        <div
-          className="IS5 S2"
-        >
-          <div
-            className="IS3 S2"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS4 S2"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
       </div>
@@ -340,14 +289,6 @@ exports[`3. tile c 1`] = `
 .IS3 {
   font-size: 20px;
   padding-bottom: 5px;
-}
-
-.IS4 {
-  bottom: 0px;
-  margin-left: auto;
-  margin-right: auto;
-  position: absolute;
-  right: 0px;
 }
 </style>
 
@@ -403,23 +344,20 @@ exports[`3. tile c 1`] = `
       />
     </div>
   </div>
-  <div
-    className="IS4 S3"
-  />
 </Link>
 `;
 
 exports[`4. tile d 1`] = `
 <style>
 .S1 {
-  margin-bottom: 0px;
-}
-
-.S2 {
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
+  margin-bottom: 0px;
+}
+
+.S2 {
   margin-bottom: 0px;
 }
 
@@ -456,25 +394,6 @@ exports[`4. tile d 1`] = `
 }
 
 .IS5 {
-  -webkit-align-items: flex-end;
-  align-items: flex-end;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  margin-top: -5px;
-  width: 25%;
-  -ms-flex-align: end;
-  -webkit-box-align: end;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS6 {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -482,81 +401,65 @@ exports[`4. tile d 1`] = `
   -webkit-box-direction: normal;
 }
 
-.IS7 {
+.IS6 {
   padding-right: 10px;
   padding-left: 10px;
   padding-bottom: 5px;
   width: 55%;
 }
-
-.IS8 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-}
 </style>
 
 <Link
+  linkStyle={
+    Object {
+      "flexDirection": "row",
+      "padding": "10px",
+    }
+  }
   url="/article/123"
 >
+  <Image
+    aspectRatio={1.5}
+    className="IS1"
+    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
+  />
   <div
-    className="IS8 S1"
+    className="IS6 S2"
   >
     <div
-      className="IS1 S1"
-    >
-      <Image
-        aspectRatio={1.5}
-        uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
-      />
-    </div>
-    <div
-      className="IS7 S1"
+      className="S2"
     >
       <div
-        className="S1"
+        className="IS2 S1"
       >
-        <div
-          className="IS2 S2"
-        >
-          LABEL
-        </div>
+        LABEL
       </div>
-      <h3
-        aria-level="3"
-        className="IS3 S3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
+    </div>
+    <h3
+      aria-level="3"
+      className="IS3 S3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div
+      className="S4"
+    >
       <div
-        className="S4"
+        className="IS5 S2"
       >
         <div
-          className="IS6 S1"
+          className="IS4 S2"
         >
-          <div
-            className="IS4 S1"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS5 S1"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
       </div>
@@ -568,14 +471,14 @@ exports[`4. tile d 1`] = `
 exports[`5. tile e 1`] = `
 <style>
 .S1 {
-  margin-bottom: 0px;
-}
-
-.S2 {
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
+  margin-bottom: 0px;
+}
+
+.S2 {
   margin-bottom: 0px;
 }
 
@@ -612,25 +515,6 @@ exports[`5. tile e 1`] = `
 }
 
 .IS5 {
-  -webkit-align-items: flex-end;
-  align-items: flex-end;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  margin-top: -5px;
-  width: 25%;
-  -ms-flex-align: end;
-  -webkit-box-align: end;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS6 {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -638,81 +522,65 @@ exports[`5. tile e 1`] = `
   -webkit-box-direction: normal;
 }
 
-.IS7 {
+.IS6 {
   padding-right: 10px;
   padding-left: 10px;
   padding-bottom: 5px;
   width: 55%;
 }
-
-.IS8 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-}
 </style>
 
 <Link
+  linkStyle={
+    Object {
+      "flexDirection": "row",
+      "padding": "10px",
+    }
+  }
   url="/article/123"
 >
+  <Image
+    aspectRatio={0.8}
+    className="IS1"
+    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1434%2C1792%2C627%2C0"
+  />
   <div
-    className="IS8 S1"
+    className="IS6 S2"
   >
     <div
-      className="IS1 S1"
-    >
-      <Image
-        aspectRatio={0.8}
-        uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1434%2C1792%2C627%2C0"
-      />
-    </div>
-    <div
-      className="IS7 S1"
+      className="S2"
     >
       <div
-        className="S1"
+        className="IS2 S1"
       >
-        <div
-          className="IS2 S2"
-        >
-          LABEL
-        </div>
+        LABEL
       </div>
-      <h3
-        aria-level="3"
-        className="IS3 S3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
+    </div>
+    <h3
+      aria-level="3"
+      className="IS3 S3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div
+      className="S4"
+    >
       <div
-        className="S4"
+        className="IS5 S2"
       >
         <div
-          className="IS6 S1"
+          className="IS4 S2"
         >
-          <div
-            className="IS4 S1"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS5 S1"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
       </div>
@@ -795,104 +663,78 @@ exports[`6. tile f 1`] = `
 }
 
 .IS4 {
-  -webkit-align-items: flex-end;
-  align-items: flex-end;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  margin-top: -5px;
-  width: 25%;
-  -ms-flex-align: end;
-  -webkit-box-align: end;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS5 {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
-
-.IS6 {
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-top: 10px;
-}
 </style>
 
 <Link
+  linkStyle={
+    Object {
+      "paddingHorizontal": "10px",
+      "paddingTop": "10px",
+    }
+  }
   url="/article/123"
 >
   <div
-    className="IS6 S2"
+    className="S2"
   >
     <div
       className="S2"
     >
       <div
-        className="S2"
+        className="IS1 S1"
+      >
+        LABEL
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      className="IS2 S3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <h4
+      aria-level="4"
+      className="S4"
+      role="heading"
+    >
+      Three Conservative MPs resign
+    </h4>
+    <div
+      className="S6"
+    >
+      <span
+        className="S5"
+      >
+        
+        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+        ...
+      </span>
+    </div>
+    <div
+      className="S7"
+    >
+      <div
+        className="IS4 S2"
       >
         <div
-          className="IS1 S1"
+          className="IS3 S2"
         >
-          LABEL
-        </div>
-      </div>
-      <h3
-        aria-level="3"
-        className="IS2 S3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
-      <h4
-        aria-level="4"
-        className="S4"
-        role="heading"
-      >
-        Three Conservative MPs resign
-      </h4>
-      <div
-        className="S6"
-      >
-        <span
-          className="S5"
-        >
-          
-          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-          ...
-        </span>
-      </div>
-      <div
-        className="S7"
-      >
-        <div
-          className="IS5 S2"
-        >
-          <div
-            className="IS3 S2"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS4 S2"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
       </div>
@@ -904,14 +746,14 @@ exports[`6. tile f 1`] = `
 exports[`7. tile g 1`] = `
 <style>
 .S1 {
-  margin-bottom: 0px;
-}
-
-.S2 {
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
+  margin-bottom: 0px;
+}
+
+.S2 {
   margin-bottom: 0px;
 }
 
@@ -928,12 +770,8 @@ exports[`7. tile g 1`] = `
 }
 
 .IS1 {
-  border-top-left-radius: 9999px;
-  border-top-right-radius: 9999px;
-  border-bottom-right-radius: 9999px;
-  border-bottom-left-radius: 9999px;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  border-radius: 9999;
+  overflow: hidden;
   width: 30%;
 }
 
@@ -955,25 +793,6 @@ exports[`7. tile g 1`] = `
 }
 
 .IS5 {
-  -webkit-align-items: flex-end;
-  align-items: flex-end;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  margin-top: -5px;
-  width: 25%;
-  -ms-flex-align: end;
-  -webkit-box-align: end;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS6 {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -981,7 +800,7 @@ exports[`7. tile g 1`] = `
   -webkit-box-direction: normal;
 }
 
-.IS7 {
+.IS6 {
   -webkit-justify-content: center;
   justify-content: center;
   padding-right: 10px;
@@ -991,74 +810,59 @@ exports[`7. tile g 1`] = `
   -ms-flex-pack: center;
   -webkit-box-pack: center;
 }
-
-.IS8 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-}
 </style>
 
 <Link
+  linkStyle={
+    Object {
+      "flexDirection": "row",
+      "padding": "10px",
+    }
+  }
   url="/article/123"
 >
+  <Image
+    aspectRatio={1}
+    className="IS1"
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
+  />
   <div
-    className="IS8 S1"
+    className="IS6 S2"
   >
     <div
-      className="IS1 S1"
-    >
-      <Image
-        aspectRatio={1}
-        uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
-      />
-    </div>
-    <div
-      className="IS7 S1"
+      className="S2"
     >
       <div
-        className="S1"
+        className="IS2 S1"
       >
-        <div
-          className="IS2 S2"
-        >
-          LABEL
-        </div>
+        LABEL
       </div>
-      <h3
-        aria-level="3"
-        className="IS3 S3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
+    </div>
+    <h3
+      aria-level="3"
+      className="IS3 S3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div
+      className="S4"
+    >
       <div
-        className="S4"
+        className="IS5 S2"
       >
         <div
-          className="IS6 S1"
+          className="IS4 S2"
         >
-          <div
-            className="IS4 S1"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS5 S1"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
       </div>
@@ -1150,161 +954,122 @@ exports[`8. tile h 1`] = `
 }
 
 .IS4 {
-  -webkit-align-items: flex-end;
-  align-items: flex-end;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  margin-top: -5px;
-  width: 25%;
-  -ms-flex-align: end;
-  -webkit-box-align: end;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
 }
 
 .IS5 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
+  padding-top: 10px;
+  padding-right: 10px;
+  width: 50%;
 }
 
 .IS6 {
-  padding-top: 10px;
-  padding-right: 10px;
-  width: 50%;
-}
-
-.IS7 {
-  -webkit-justify-content: flex-end;
+  flex-direction: column;
   justify-content: flex-end;
   padding-top: 10px;
   width: 50%;
-  -ms-flex-pack: end;
-  -webkit-box-pack: end;
-}
-
-.IS8 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  padding-right: 10px;
-  padding-left: 10px;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
 }
 </style>
 
 <Link
+  linkStyle={
+    Object {
+      "flexDirection": "row",
+      "paddingHorizontal": "10px",
+    }
+  }
   url="/article/123"
 >
   <div
-    className="IS8 S2"
+    className="IS5 S2"
   >
     <div
-      className="IS6 S2"
+      className="S2"
     >
       <div
-        className="S2"
+        className="IS1 S1"
+      >
+        LABEL
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      className="IS2 S3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div
+      className="S5"
+    >
+      <span
+        className="S4"
+      >
+        
+        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+        ...
+      </span>
+    </div>
+    <div
+      className="S6"
+    >
+      <div
+        className="IS4 S2"
       >
         <div
-          className="IS1 S1"
+          className="IS3 S2"
         >
-          LABEL
-        </div>
-      </div>
-      <h3
-        aria-level="3"
-        className="IS2 S3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
-      <div
-        className="S5"
-      >
-        <span
-          className="S4"
-        >
-          
-          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-          ...
-        </span>
-      </div>
-      <div
-        className="S6"
-      >
-        <div
-          className="IS5 S2"
-        >
-          <div
-            className="IS3 S2"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS4 S2"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
       </div>
-      <div
-        className="S8"
-      >
-        <span
-          className="S7"
-        >
-          Richard Lloyd Parry
-        </span>
-        <span
-          className="S7"
-        >
-          , Hanoi
-        </span>
-      </div>
     </div>
     <div
-      className="IS7 S2"
+      className="S8"
     >
-      <div
-        className="S2"
+      <span
+        className="S7"
       >
-        <Image
-          aspectRatio={0.6666666666666666}
-          uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1195%2C1792%2C747%2C0"
-        />
-      </div>
+        Richard Lloyd Parry
+      </span>
+      <span
+        className="S7"
+      >
+        , Hanoi
+      </span>
     </div>
   </div>
+  <Image
+    aspectRatio={0.6666666666666666}
+    className="IS6"
+    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1195%2C1792%2C747%2C0"
+  />
 </Link>
 `;
 
 exports[`9. tile i 1`] = `
 <style>
 .S1 {
-  margin-bottom: 0px;
-}
-
-.S2 {
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
+  margin-bottom: 0px;
+}
+
+.S2 {
   margin-bottom: 0px;
 }
 
@@ -1336,14 +1101,6 @@ exports[`9. tile i 1`] = `
 .IS4 {
   -webkit-align-items: center;
   align-items: center;
-  margin-top: 10px;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
-}
-
-.IS5 {
-  -webkit-align-items: center;
-  align-items: center;
   background-color: rgba(240,240,240,1.00);
   padding-right: 40px;
   padding-left: 40px;
@@ -1357,22 +1114,19 @@ exports[`9. tile i 1`] = `
 <Link
   url="/article/123"
 >
+  <Image
+    aspectRatio={1.7777777777777777}
+    className="IS1"
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+  />
   <div
-    className="IS1 S1"
-  >
-    <Image
-      aspectRatio={1.7777777777777777}
-      uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
-    />
-  </div>
-  <div
-    className="IS5 S1"
+    className="IS4 S2"
   >
     <div
-      className="S1"
+      className="S2"
     >
       <div
-        className="IS2 S2"
+        className="IS2 S1"
       >
         LABEL
       </div>
@@ -1388,10 +1142,10 @@ exports[`9. tile i 1`] = `
       className="S4"
     >
       <div
-        className="S1"
+        className="S2"
       >
         <div
-          className="S1"
+          className="S2"
         >
           <ArticleFlags
             flags={
@@ -1404,9 +1158,6 @@ exports[`9. tile i 1`] = `
             }
           />
         </div>
-        <div
-          className="IS4 S1"
-        />
       </div>
     </div>
   </div>
@@ -1416,14 +1167,14 @@ exports[`9. tile i 1`] = `
 exports[`10. tile j 1`] = `
 <style>
 .S1 {
-  margin-bottom: 0px;
-}
-
-.S2 {
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
+  margin-bottom: 0px;
+}
+
+.S2 {
   margin-bottom: 0px;
 }
 
@@ -1460,92 +1211,63 @@ exports[`10. tile j 1`] = `
 }
 
 .IS5 {
-  -webkit-align-items: flex-end;
-  align-items: flex-end;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  margin-top: -5px;
-  width: 25%;
-  -ms-flex-align: end;
-  -webkit-box-align: end;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS6 {
   padding-right: 10px;
   padding-left: 10px;
   width: 60%;
 }
-
-.IS7 {
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
-}
 </style>
 
 <Link
+  linkStyle={
+    Object {
+      "flexDirection": "row",
+      "padding": "10px",
+    }
+  }
   url="/article/123"
 >
+  <Image
+    aspectRatio={1.5}
+    className="IS1"
+    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
+  />
   <div
-    className="IS7 S1"
+    className="IS5 S2"
   >
     <div
-      className="IS1 S1"
-    >
-      <Image
-        aspectRatio={1.5}
-        uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
-      />
-    </div>
-    <div
-      className="IS6 S1"
+      className="S2"
     >
       <div
-        className="S1"
+        className="IS2 S1"
       >
-        <div
-          className="IS2 S2"
-        >
-          LABEL
-        </div>
+        LABEL
       </div>
-      <h3
-        aria-level="3"
-        className="IS3 S3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
+    </div>
+    <h3
+      aria-level="3"
+      className="IS3 S3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div
+      className="S4"
+    >
       <div
-        className="S4"
+        className="S2"
       >
         <div
-          className="S1"
+          className="IS4 S2"
         >
-          <div
-            className="IS4 S1"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS5 S1"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
       </div>
@@ -1557,14 +1279,14 @@ exports[`10. tile j 1`] = `
 exports[`11. tile k 1`] = `
 <style>
 .S1 {
-  margin-bottom: 0px;
-}
-
-.S2 {
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
+  margin-bottom: 0px;
+}
+
+.S2 {
   margin-bottom: 0px;
 }
 
@@ -1602,90 +1324,61 @@ exports[`11. tile k 1`] = `
 }
 
 .IS5 {
-  -webkit-align-items: flex-end;
-  align-items: flex-end;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  margin-top: -5px;
-  width: 25%;
-  -ms-flex-align: end;
-  -webkit-box-align: end;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS6 {
   width: 50%;
-}
-
-.IS7 {
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
 }
 </style>
 
 <Link
+  linkStyle={
+    Object {
+      "flexDirection": "row",
+      "padding": "10px",
+    }
+  }
   url="/article/123"
 >
+  <Image
+    aspectRatio={1.5}
+    className="IS1"
+    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
+  />
   <div
-    className="IS7 S1"
+    className="IS5 S2"
   >
     <div
-      className="IS1 S1"
-    >
-      <Image
-        aspectRatio={1.5}
-        uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
-      />
-    </div>
-    <div
-      className="IS6 S1"
+      className="S2"
     >
       <div
-        className="S1"
+        className="IS2 S1"
       >
-        <div
-          className="IS2 S2"
-        >
-          LABEL
-        </div>
+        LABEL
       </div>
-      <h3
-        aria-level="3"
-        className="IS3 S3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
+    </div>
+    <h3
+      aria-level="3"
+      className="IS3 S3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div
+      className="S4"
+    >
       <div
-        className="S4"
+        className="S2"
       >
         <div
-          className="S1"
+          className="IS4 S2"
         >
-          <div
-            className="IS4 S1"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS5 S1"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
       </div>
@@ -1735,80 +1428,54 @@ exports[`12. tile l 1`] = `
   -ms-flex-align: start;
   -webkit-box-align: start;
 }
-
-.IS4 {
-  -webkit-align-items: flex-end;
-  align-items: flex-end;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  margin-top: -5px;
-  width: 25%;
-  -ms-flex-align: end;
-  -webkit-box-align: end;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS5 {
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-top: 10px;
-}
 </style>
 
 <Link
+  linkStyle={
+    Object {
+      "paddingHorizontal": "10px",
+      "paddingTop": "10px",
+    }
+  }
   url="/article/123"
 >
   <div
-    className="IS5 S2"
+    className="S2"
   >
     <div
       className="S2"
     >
       <div
+        className="IS1 S1"
+      >
+        LABEL
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      className="IS2 S3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div
+      className="S4"
+    >
+      <div
         className="S2"
       >
         <div
-          className="IS1 S1"
+          className="IS3 S2"
         >
-          LABEL
-        </div>
-      </div>
-      <h3
-        aria-level="3"
-        className="IS2 S3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
-      <div
-        className="S4"
-      >
-        <div
-          className="S2"
-        >
-          <div
-            className="IS3 S2"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS4 S2"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
       </div>
@@ -1853,53 +1520,43 @@ exports[`13. tile m 1`] = `
   font-family: TimesDigitalW04-Regular;
   text-align: center;
 }
-
-.IS3 {
-  -webkit-align-items: center;
-  align-items: center;
-  margin-top: 10px;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
-}
 </style>
 
 <Link
+  linkStyle={
+    Object {
+      "paddingBottom": "10px",
+    }
+  }
   url="/article/123"
 >
   <div
     className="S3"
   >
-    <div
-      className="S3"
+    <h3
+      aria-level="3"
+      className="IS1 S1"
+      role="heading"
     >
-      <h3
-        aria-level="3"
-        className="IS1 S1"
-        role="heading"
-      >
-        Driving Off
-      </h3>
-      <h4
-        aria-level="4"
-        className="IS2 S2"
-        role="heading"
-      >
-        Three Conservative MPs resign
-      </h4>
+      Driving Off
+    </h3>
+    <h4
+      aria-level="4"
+      className="IS2 S2"
+      role="heading"
+    >
+      Three Conservative MPs resign
+    </h4>
+    <div
+      className="S4"
+    >
       <div
-        className="S4"
+        className="S3"
       >
         <div
           className="S3"
         >
-          <div
-            className="S3"
-          >
-            <ArticleFlags />
-          </div>
-          <div
-            className="IS3 S3"
-          />
+          <ArticleFlags />
         </div>
       </div>
     </div>
@@ -1910,14 +1567,14 @@ exports[`13. tile m 1`] = `
 exports[`14. tile n 1`] = `
 <style>
 .S1 {
-  margin-bottom: 0px;
-}
-
-.S2 {
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
+  margin-bottom: 0px;
+}
+
+.S2 {
   margin-bottom: 0px;
 }
 
@@ -1963,101 +1620,72 @@ exports[`14. tile n 1`] = `
 }
 
 .IS5 {
-  -webkit-align-items: flex-end;
-  align-items: flex-end;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  margin-top: -5px;
-  width: 25%;
-  -ms-flex-align: end;
-  -webkit-box-align: end;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS6 {
   padding-right: 10px;
   padding-left: 10px;
   width: 50%;
 }
-
-.IS7 {
-  background-color: rgba(39,45,52,1.00);
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
-}
 </style>
 
 <Link
+  linkStyle={
+    Object {
+      "backgroundColor": "#272D34",
+      "flexDirection": "row",
+      "padding": "10px",
+    }
+  }
   url="/article/123"
 >
+  <Image
+    aspectRatio={1}
+    className="IS1"
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
+  />
   <div
-    className="IS7 S1"
+    className="IS5 S2"
   >
     <div
-      className="IS1 S1"
-    >
-      <Image
-        aspectRatio={1}
-        uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
-      />
-    </div>
-    <div
-      className="IS6 S1"
+      className="S2"
     >
       <div
-        className="S1"
+        className="IS2 S1"
       >
-        <div
-          className="IS2 S2"
-        >
-          LABEL
-        </div>
+        LABEL
       </div>
-      <h3
-        aria-level="3"
-        className="IS3 S3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
-      <h4
-        aria-level="4"
-        className="S4"
-        role="heading"
-      >
-        Three Conservative MPs resign
-      </h4>
+    </div>
+    <h3
+      aria-level="3"
+      className="IS3 S3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <h4
+      aria-level="4"
+      className="S4"
+      role="heading"
+    >
+      Three Conservative MPs resign
+    </h4>
+    <div
+      className="S5"
+    >
       <div
-        className="S5"
+        className="S2"
       >
         <div
-          className="S1"
+          className="IS4 S2"
         >
-          <div
-            className="IS4 S1"
-          >
-            <ArticleFlags
-              color="#CCC"
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS5 S1"
+          <ArticleFlags
+            color="#CCC"
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
       </div>
@@ -2108,82 +1736,56 @@ exports[`15. tile o 1`] = `
   -ms-flex-align: start;
   -webkit-box-align: start;
 }
-
-.IS4 {
-  -webkit-align-items: flex-end;
-  align-items: flex-end;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  margin-top: -5px;
-  width: 25%;
-  -ms-flex-align: end;
-  -webkit-box-align: end;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS5 {
-  background-color: rgba(39,45,52,1.00);
-  padding-top: 10px;
-  padding-right: 12px;
-  padding-left: 12px;
-}
 </style>
 
 <Link
+  linkStyle={
+    Object {
+      "backgroundColor": "#272D34",
+      "paddingHorizontal": 12,
+      "paddingVertical": "10px",
+    }
+  }
   url="/article/123"
 >
   <div
-    className="IS5 S2"
+    className="S2"
   >
     <div
       className="S2"
     >
       <div
+        className="IS1 S1"
+      >
+        LABEL
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      className="IS2 S3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div
+      className="S4"
+    >
+      <div
         className="S2"
       >
         <div
-          className="IS1 S1"
+          className="IS3 S2"
         >
-          LABEL
-        </div>
-      </div>
-      <h3
-        aria-level="3"
-        className="IS2 S3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
-      <div
-        className="S4"
-      >
-        <div
-          className="S2"
-        >
-          <div
-            className="IS3 S2"
-          >
-            <ArticleFlags
-              color="#CCC"
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS4 S2"
+          <ArticleFlags
+            color="#CCC"
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
       </div>
@@ -2195,14 +1797,14 @@ exports[`15. tile o 1`] = `
 exports[`16. tile p 1`] = `
 <style>
 .S1 {
-  margin-bottom: 0px;
-}
-
-.S2 {
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
+  margin-bottom: 0px;
+}
+
+.S2 {
   margin-bottom: 0px;
 }
 
@@ -2243,12 +1845,8 @@ exports[`16. tile p 1`] = `
 }
 
 .IS1 {
-  border-top-left-radius: 9999px;
-  border-top-right-radius: 9999px;
-  border-bottom-right-radius: 9999px;
-  border-bottom-left-radius: 9999px;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  border-radius: 9999;
+  overflow: hidden;
   width: 30%;
 }
 
@@ -2273,11 +1871,7 @@ exports[`16. tile p 1`] = `
 }
 
 .IS5 {
-  -webkit-align-items: center;
-  align-items: center;
-  margin-top: 10px;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
+  color: rgba(133,0,41,1.00);
 }
 
 .IS6 {
@@ -2285,106 +1879,89 @@ exports[`16. tile p 1`] = `
 }
 
 .IS7 {
-  color: rgba(133,0,41,1.00);
-}
-
-.IS8 {
   -webkit-align-items: center;
   align-items: center;
   padding-top: 10px;
   -ms-flex-align: center;
   -webkit-box-align: center;
 }
-
-.IS9 {
-  -webkit-align-items: center;
-  align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
-}
 </style>
 
 <Link
+  linkStyle={
+    Object {
+      "alignItems": "center",
+      "paddingVertical": "20px",
+    }
+  }
   url="/article/123"
 >
+  <Image
+    aspectRatio={1}
+    className="IS1"
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
+  />
   <div
-    className="IS9 S1"
+    className="IS7 S2"
   >
     <div
-      className="IS1 S1"
-    >
-      <Image
-        aspectRatio={1}
-        uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
-      />
-    </div>
-    <div
-      className="IS8 S1"
+      className="S2"
     >
       <div
-        className="S1"
+        className="IS2 S1"
       >
-        <div
-          className="IS2 S2"
-        >
-          LABEL
-        </div>
+        LABEL
       </div>
-      <h3
-        aria-level="3"
-        className="IS3 S3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
-      <h4
-        aria-level="4"
-        className="IS4 S4"
-        role="heading"
-      >
-        Three Conservative MPs resign
-      </h4>
+    </div>
+    <h3
+      aria-level="3"
+      className="IS3 S3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <h4
+      aria-level="4"
+      className="IS4 S4"
+      role="heading"
+    >
+      Three Conservative MPs resign
+    </h4>
+    <div
+      className="S5"
+    >
       <div
-        className="S5"
+        className="S2"
       >
         <div
-          className="S1"
+          className="S2"
         >
-          <div
-            className="S1"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS5 S1"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
       </div>
-      <div
-        className="S7"
+    </div>
+    <div
+      className="S7"
+    >
+      <span
+        className="IS5 S6"
       >
-        <span
-          className="IS6 S6"
-        >
-          Richard Lloyd Parry
-        </span>
-        <span
-          className="IS7 S6"
-        >
-          , Hanoi
-        </span>
-      </div>
+        Richard Lloyd Parry
+      </span>
+      <span
+        className="IS6 S6"
+      >
+        , Hanoi
+      </span>
     </div>
   </div>
 </Link>
@@ -2392,50 +1969,26 @@ exports[`16. tile p 1`] = `
 
 exports[`17. tile q 1`] = `
 <style>
-.S1 {
-  margin-bottom: 10px;
-}
-
-.S2 {
-  margin-bottom: 0px;
-}
-
 .IS1 {
+  margin-bottom: 10px;
   width: 100%;
-}
-
-.IS2 {
-  margin-top: 10px;
-  text-align: center;
-}
-
-.IS3 {
-  -webkit-align-items: center;
-  align-items: center;
-  padding-top: 10px;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
 }
 </style>
 
 <Link
+  linkStyle={
+    Object {
+      "alignItems": "center",
+      "paddingVertical": "10px",
+    }
+  }
   url="/article/123"
 >
-  <div
-    className="IS3 S2"
-  >
-    <div
-      className="IS1 S1"
-    >
-      <Image
-        aspectRatio={1.5}
-        uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
-      />
-    </div>
-    <div
-      className="IS2 S2"
-    />
-  </div>
+  <Image
+    aspectRatio={1.5}
+    className="IS1"
+    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
+  />
 </Link>
 `;
 
@@ -2480,94 +2033,64 @@ exports[`18. tile r 1`] = `
   -ms-flex-align: start;
   -webkit-box-align: start;
 }
-
-.IS4 {
-  -webkit-align-items: flex-end;
-  align-items: flex-end;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  margin-top: -5px;
-  width: 25%;
-  -ms-flex-align: end;
-  -webkit-box-align: end;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS5 {
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-bottom: 15px;
-  padding-top: 10px;
-}
 </style>
 
 <Link
+  linkStyle={
+    Object {
+      "paddingBottom": "15px",
+      "paddingHorizontal": "20px",
+      "paddingTop": "10px",
+    }
+  }
   url="/article/123"
 >
   <div
-    className="IS5 S2"
+    className="S2"
   >
     <div
       className="S2"
     >
       <div
+        className="IS1 S1"
+      >
+        LABEL
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      className="IS2 S3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div
+      className="S4"
+    >
+      <div
         className="S2"
       >
         <div
-          className="IS1 S1"
+          className="IS3 S2"
         >
-          LABEL
-        </div>
-      </div>
-      <h3
-        aria-level="3"
-        className="IS2 S3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
-      <div
-        className="S4"
-      >
-        <div
-          className="S2"
-        >
-          <div
-            className="IS3 S2"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS4 S2"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
       </div>
     </div>
-    <div
-      className="S2"
-    >
-      <Image
-        aspectRatio={1.7777777777777777}
-        uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
-      />
-    </div>
   </div>
+  <Image
+    aspectRatio={1.7777777777777777}
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+  />
 </Link>
 `;
 
@@ -2683,14 +2206,14 @@ exports[`19. tile s 1`] = `
 exports[`20. tile t 1`] = `
 <style>
 .S1 {
-  margin-bottom: 0px;
-}
-
-.S2 {
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
+  margin-bottom: 0px;
+}
+
+.S2 {
   margin-bottom: 0px;
 }
 
@@ -2727,94 +2250,65 @@ exports[`20. tile t 1`] = `
 }
 
 .IS5 {
-  -webkit-align-items: flex-end;
-  align-items: flex-end;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  margin-top: -5px;
-  width: 25%;
-  -ms-flex-align: end;
-  -webkit-box-align: end;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS6 {
   padding-top: 5px;
   padding-right: 10px;
   padding-bottom: 5px;
   padding-left: 10px;
   width: 50%;
 }
-
-.IS7 {
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
-}
 </style>
 
 <Link
+  linkStyle={
+    Object {
+      "flexDirection": "row",
+      "padding": "10px",
+    }
+  }
   url="/article/123"
 >
+  <Image
+    aspectRatio={1.7777777777777777}
+    className="IS1"
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+  />
   <div
-    className="IS7 S1"
+    className="IS5 S2"
   >
     <div
-      className="IS1 S1"
-    >
-      <Image
-        aspectRatio={1.7777777777777777}
-        uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
-      />
-    </div>
-    <div
-      className="IS6 S1"
+      className="S2"
     >
       <div
-        className="S1"
+        className="IS2 S1"
       >
-        <div
-          className="IS2 S2"
-        >
-          LABEL
-        </div>
+        LABEL
       </div>
-      <h3
-        aria-level="3"
-        className="IS3 S3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
+    </div>
+    <h3
+      aria-level="3"
+      className="IS3 S3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div
+      className="S4"
+    >
       <div
-        className="S4"
+        className="S2"
       >
         <div
-          className="S1"
+          className="IS4 S2"
         >
-          <div
-            className="IS4 S1"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS5 S1"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
       </div>
@@ -2868,120 +2362,78 @@ exports[`21. tile u 1`] = `
 }
 
 .IS4 {
-  -webkit-align-items: flex-end;
-  align-items: flex-end;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  margin-top: -5px;
-  width: 25%;
-  -ms-flex-align: end;
-  -webkit-box-align: end;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS5 {
   padding-bottom: 5px;
   width: 40%;
 }
 
-.IS6 {
+.IS5 {
   width: 60%;
-}
-
-.IS7 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
 }
 </style>
 
 <Link
+  linkStyle={
+    Object {
+      "flex": 1,
+      "flexDirection": "row",
+      "padding": "10px",
+    }
+  }
   url="/article/123"
 >
   <div
-    className="IS7 S2"
+    className="IS4 S2"
   >
     <div
-      className="IS5 S2"
+      className="S2"
+    >
+      <div
+        className="IS1 S1"
+      >
+        LABEL
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      className="IS2 S3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div
+      className="S4"
     >
       <div
         className="S2"
       >
         <div
-          className="IS1 S1"
+          className="IS3 S2"
         >
-          LABEL
-        </div>
-      </div>
-      <h3
-        aria-level="3"
-        className="IS2 S3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
-      <div
-        className="S4"
-      >
-        <div
-          className="S2"
-        >
-          <div
-            className="IS3 S2"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS4 S2"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
       </div>
     </div>
-    <div
-      className="IS6 S2"
-    >
-      <Image
-        aspectRatio={1.5}
-        uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
-      />
-    </div>
   </div>
+  <Image
+    aspectRatio={1.5}
+    className="IS5"
+    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
+  />
 </Link>
 `;
 
 exports[`22. tile v 1`] = `
 <style>
 .S1 {
-  margin-bottom: 10px;
-}
-
-.S2 {
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
@@ -2989,18 +2441,23 @@ exports[`22. tile v 1`] = `
   margin-bottom: 0px;
 }
 
-.S3 {
+.S2 {
   margin-bottom: 0px;
 }
 
-.S4 {
+.S3 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
   margin-bottom: 5px;
 }
 
+.S4 {
+  margin-bottom: 10px;
+}
+
 .IS1 {
+  margin-bottom: 10px;
   width: 100%;
 }
 
@@ -3021,88 +2478,59 @@ exports[`22. tile v 1`] = `
   -ms-flex-align: start;
   -webkit-box-align: start;
 }
-
-.IS5 {
-  -webkit-align-items: flex-end;
-  align-items: flex-end;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  margin-top: -5px;
-  width: 25%;
-  -ms-flex-align: end;
-  -webkit-box-align: end;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS6 {
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-top: 10px;
-}
 </style>
 
 <Link
+  linkStyle={
+    Object {
+      "paddingHorizontal": "10px",
+      "paddingTop": "10px",
+    }
+  }
   url="/article/123"
 >
+  <Image
+    aspectRatio={1.7777777777777777}
+    className="IS1"
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+  />
   <div
-    className="IS6 S3"
+    className="S2"
   >
     <div
-      className="IS1 S1"
-    >
-      <Image
-        aspectRatio={1.7777777777777777}
-        uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
-      />
-    </div>
-    <div
-      className="S3"
+      className="S2"
     >
       <div
-        className="S3"
+        className="IS2 S1"
       >
-        <div
-          className="IS2 S2"
-        >
-          LABEL
-        </div>
+        LABEL
       </div>
-      <h3
-        aria-level="3"
-        className="IS3 S4"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
+    </div>
+    <h3
+      aria-level="3"
+      className="IS3 S3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div
+      className="S4"
+    >
       <div
-        className="S1"
+        className="S2"
       >
         <div
-          className="S3"
+          className="IS4 S2"
         >
-          <div
-            className="IS4 S3"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS5 S3"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
       </div>
@@ -3176,112 +2604,84 @@ exports[`23. tile w 1`] = `
 }
 
 .IS4 {
-  -webkit-align-items: flex-end;
-  align-items: flex-end;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  margin-top: -5px;
-  width: 25%;
-  -ms-flex-align: end;
-  -webkit-box-align: end;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS5 {
   padding-bottom: 5px;
   padding-right: 20px;
   width: 33.33%;
 }
 
-.IS6 {
+.IS5 {
   width: 66.66%;
-}
-
-.IS7 {
-  padding-top: 10px;
-  padding-right: 20px;
-  padding-left: 20px;
 }
 </style>
 
 <Link
+  linkStyle={
+    Object {
+      "flexDirection": "row",
+      "paddingHorizontal": "20px",
+      "paddingVertical": "10px",
+    }
+  }
   url="/article/123"
 >
   <div
-    className="IS7 S2"
+    className="IS4 S2"
   >
     <div
-      className="IS5 S2"
+      className="S2"
+    >
+      <div
+        className="IS1 S1"
+      >
+        LABEL
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      className="IS2 S3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div
+      className="S5"
+    >
+      <span
+        className="S4"
+      >
+        
+        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+        ...
+      </span>
+    </div>
+    <div
+      className="S6"
     >
       <div
         className="S2"
       >
         <div
-          className="IS1 S1"
+          className="IS3 S2"
         >
-          LABEL
-        </div>
-      </div>
-      <h3
-        aria-level="3"
-        className="IS2 S3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
-      <div
-        className="S5"
-      >
-        <span
-          className="S4"
-        >
-          
-          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-          ...
-        </span>
-      </div>
-      <div
-        className="S6"
-      >
-        <div
-          className="S2"
-        >
-          <div
-            className="IS3 S2"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS4 S2"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
       </div>
     </div>
-    <div
-      className="IS6 S2"
-    >
-      <Image
-        aspectRatio={1.7777777777777777}
-        uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
-      />
-    </div>
   </div>
+  <Image
+    aspectRatio={1.7777777777777777}
+    className="IS5"
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+  />
 </Link>
 `;
 
@@ -3361,98 +2761,72 @@ exports[`24. tile x 1`] = `
   -ms-flex-align: start;
   -webkit-box-align: start;
 }
-
-.IS5 {
-  -webkit-align-items: flex-end;
-  align-items: flex-end;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  margin-top: -5px;
-  width: 25%;
-  -ms-flex-align: end;
-  -webkit-box-align: end;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS6 {
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-top: 10px;
-}
 </style>
 
 <Link
+  linkStyle={
+    Object {
+      "paddingHorizontal": "10px",
+      "paddingTop": "10px",
+    }
+  }
   url="/article/123"
 >
   <div
-    className="IS6 S2"
+    className="S2"
   >
     <div
       className="S2"
     >
       <div
+        className="IS1 S1"
+      >
+        LABEL
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      className="IS2 S3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <h4
+      aria-level="4"
+      className="IS3 S4"
+      role="heading"
+    >
+      Three Conservative MPs resign
+    </h4>
+    <div
+      className="S6"
+    >
+      <span
+        className="S5"
+      >
+        
+        ‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye.
+        ...
+      </span>
+    </div>
+    <div
+      className="S7"
+    >
+      <div
         className="S2"
       >
         <div
-          className="IS1 S1"
+          className="IS4 S2"
         >
-          LABEL
-        </div>
-      </div>
-      <h3
-        aria-level="3"
-        className="IS2 S3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
-      <h4
-        aria-level="4"
-        className="IS3 S4"
-        role="heading"
-      >
-        Three Conservative MPs resign
-      </h4>
-      <div
-        className="S6"
-      >
-        <span
-          className="S5"
-        >
-          
-          ‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye.
-          ...
-        </span>
-      </div>
-      <div
-        className="S7"
-      >
-        <div
-          className="S2"
-        >
-          <div
-            className="IS4 S2"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS5 S2"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
       </div>
@@ -3524,25 +2898,6 @@ exports[`25. tile y 1`] = `
   -ms-flex-align: start;
   -webkit-box-align: start;
 }
-
-.IS4 {
-  -webkit-align-items: flex-end;
-  align-items: flex-end;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  margin-top: -5px;
-  width: 25%;
-  -ms-flex-align: end;
-  -webkit-box-align: end;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
 </style>
 
 <Link
@@ -3605,9 +2960,6 @@ exports[`25. tile y 1`] = `
             }
           />
         </div>
-        <div
-          className="IS4 S2"
-        />
       </div>
     </div>
   </div>
@@ -3655,107 +3007,76 @@ exports[`26. tile z 1`] = `
   -ms-flex-align: start;
   -webkit-box-align: start;
 }
-
-.IS4 {
-  -webkit-align-items: flex-end;
-  align-items: flex-end;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  margin-top: -5px;
-  width: 25%;
-  -ms-flex-align: end;
-  -webkit-box-align: end;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS5 {
-  margin-top: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
-}
 </style>
 
 <Link
+  linkStyle={
+    Object {
+      "margin": "10px",
+    }
+  }
   url="/article/123"
 >
   <div
-    className="IS5 S4"
+    className="S2"
   >
     <div
       className="S2"
     >
       <div
+        className="IS1 S1"
+      >
+        LABEL
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      className="IS2 S3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div
+      className="S4"
+    >
+      <div
         className="S2"
       >
         <div
-          className="IS1 S1"
+          className="IS3 S2"
         >
-          LABEL
-        </div>
-      </div>
-      <h3
-        aria-level="3"
-        className="IS2 S3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
-      <div
-        className="S4"
-      >
-        <div
-          className="S2"
-        >
-          <div
-            className="IS3 S2"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS4 S2"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
       </div>
     </div>
-    <div
-      className="S2"
-    >
-      <Image
-        aspectRatio={0.8}
-        uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1434%2C1792%2C627%2C0"
-      />
-    </div>
   </div>
+  <Image
+    aspectRatio={0.8}
+    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1434%2C1792%2C627%2C0"
+  />
 </Link>
 `;
 
 exports[`27. tile aa 1`] = `
 <style>
 .S1 {
-  margin-bottom: 0px;
-}
-
-.S2 {
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
+  margin-bottom: 0px;
+}
+
+.S2 {
   margin-bottom: 0px;
 }
 
@@ -3792,90 +3113,61 @@ exports[`27. tile aa 1`] = `
 }
 
 .IS5 {
-  -webkit-align-items: flex-end;
-  align-items: flex-end;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  margin-top: -5px;
-  width: 25%;
-  -ms-flex-align: end;
-  -webkit-box-align: end;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS6 {
   padding-top: 5px;
   padding-bottom: 5px;
-}
-
-.IS7 {
-  padding-right: 10px;
-  padding-left: 10px;
 }
 </style>
 
 <Link
+  linkStyle={
+    Object {
+      "paddingHorizontal": "10px",
+    }
+  }
   url="/article/123"
 >
+  <Image
+    aspectRatio={1.7777777777777777}
+    className="IS1"
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+  />
   <div
-    className="IS7 S1"
+    className="IS5 S2"
   >
     <div
-      className="IS1 S1"
-    >
-      <Image
-        aspectRatio={1.7777777777777777}
-        uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
-      />
-    </div>
-    <div
-      className="IS6 S1"
+      className="S2"
     >
       <div
-        className="S1"
+        className="IS2 S1"
       >
-        <div
-          className="IS2 S2"
-        >
-          LABEL
-        </div>
+        LABEL
       </div>
-      <h3
-        aria-level="3"
-        className="IS3 S3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
+    </div>
+    <h3
+      aria-level="3"
+      className="IS3 S3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div
+      className="S4"
+    >
       <div
-        className="S4"
+        className="S2"
       >
         <div
-          className="S1"
+          className="IS4 S2"
         >
-          <div
-            className="IS4 S1"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS5 S1"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
       </div>
@@ -3967,134 +3259,100 @@ exports[`28. tile ab 1`] = `
 }
 
 .IS4 {
-  -webkit-align-items: flex-end;
-  align-items: flex-end;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  margin-top: -5px;
-  width: 25%;
-  -ms-flex-align: end;
-  -webkit-box-align: end;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
+  padding-top: 10px;
+  padding-right: 10px;
+  width: 50%;
 }
 
 .IS5 {
-  padding-top: 10px;
-  padding-right: 10px;
-  width: 50%;
-}
-
-.IS6 {
-  -webkit-justify-content: flex-end;
+  flex-direction: column;
   justify-content: flex-end;
   padding-top: 10px;
   width: 50%;
-  -ms-flex-pack: end;
-  -webkit-box-pack: end;
-}
-
-.IS7 {
-  padding-right: 10px;
-  padding-left: 10px;
 }
 </style>
 
 <Link
+  linkStyle={
+    Object {
+      "flexDirection": "row",
+      "paddingHorizontal": "10px",
+    }
+  }
   url="/article/123"
 >
   <div
-    className="IS7 S2"
+    className="IS4 S2"
   >
     <div
-      className="IS5 S2"
+      className="S2"
+    >
+      <div
+        className="IS1 S1"
+      >
+        LABEL
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      className="IS2 S3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div
+      className="S5"
+    >
+      <span
+        className="S4"
+      >
+        
+        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+        ...
+      </span>
+    </div>
+    <div
+      className="S6"
     >
       <div
         className="S2"
       >
         <div
-          className="IS1 S1"
+          className="IS3 S2"
         >
-          LABEL
-        </div>
-      </div>
-      <h3
-        aria-level="3"
-        className="IS2 S3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
-      <div
-        className="S5"
-      >
-        <span
-          className="S4"
-        >
-          
-          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-          ...
-        </span>
-      </div>
-      <div
-        className="S6"
-      >
-        <div
-          className="S2"
-        >
-          <div
-            className="IS3 S2"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS4 S2"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
       </div>
-      <div
-        className="S8"
-      >
-        <span
-          className="S7"
-        >
-          Richard Lloyd Parry
-        </span>
-        <span
-          className="S7"
-        >
-          , Hanoi
-        </span>
-      </div>
     </div>
     <div
-      className="IS6 S2"
+      className="S8"
     >
-      <div
-        className="S2"
+      <span
+        className="S7"
       >
-        <Image
-          aspectRatio={0.6666666666666666}
-          uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1195%2C1792%2C747%2C0"
-        />
-      </div>
+        Richard Lloyd Parry
+      </span>
+      <span
+        className="S7"
+      >
+        , Hanoi
+      </span>
     </div>
   </div>
+  <Image
+    aspectRatio={0.6666666666666666}
+    className="IS5"
+    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1195%2C1792%2C747%2C0"
+  />
 </Link>
 `;
 
@@ -4161,91 +3419,65 @@ exports[`29. tile ae 1`] = `
   -ms-flex-align: start;
   -webkit-box-align: start;
 }
-
-.IS4 {
-  -webkit-align-items: flex-end;
-  align-items: flex-end;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  margin-top: -5px;
-  width: 25%;
-  -ms-flex-align: end;
-  -webkit-box-align: end;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS5 {
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-top: 10px;
-}
 </style>
 
 <Link
+  linkStyle={
+    Object {
+      "paddingHorizontal": "10px",
+      "paddingTop": "10px",
+    }
+  }
   url="/article/123"
 >
   <div
-    className="IS5 S2"
+    className="S2"
   >
     <div
       className="S2"
     >
       <div
+        className="IS1 S1"
+      >
+        LABEL
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      className="IS2 S3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div
+      className="S5"
+    >
+      <span
+        className="S4"
+      >
+        
+        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+        ...
+      </span>
+    </div>
+    <div
+      className="S6"
+    >
+      <div
         className="S2"
       >
         <div
-          className="IS1 S1"
+          className="IS3 S2"
         >
-          LABEL
-        </div>
-      </div>
-      <h3
-        aria-level="3"
-        className="IS2 S3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
-      <div
-        className="S5"
-      >
-        <span
-          className="S4"
-        >
-          
-          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-          ...
-        </span>
-      </div>
-      <div
-        className="S6"
-      >
-        <div
-          className="S2"
-        >
-          <div
-            className="IS3 S2"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS4 S2"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
       </div>
@@ -4290,58 +3522,44 @@ exports[`30. tile ag 1`] = `
   font-family: TimesDigitalW04-Regular;
   text-align: center;
 }
-
-.IS3 {
-  -webkit-align-items: center;
-  align-items: center;
-  margin-top: 10px;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
-}
-
-.IS4 {
-  padding-right: 20px;
-  padding-left: 20px;
-}
 </style>
 
 <Link
+  linkStyle={
+    Object {
+      "paddingBottom": "10px",
+      "paddingHorizontal": "20px",
+    }
+  }
   url="/article/123"
 >
   <div
-    className="IS4 S3"
+    className="S3"
   >
-    <div
-      className="S3"
+    <h3
+      aria-level="3"
+      className="IS1 S1"
+      role="heading"
     >
-      <h3
-        aria-level="3"
-        className="IS1 S1"
-        role="heading"
-      >
-        Driving Off
-      </h3>
-      <h4
-        aria-level="4"
-        className="IS2 S2"
-        role="heading"
-      >
-        Three Conservative MPs resign
-      </h4>
+      Driving Off
+    </h3>
+    <h4
+      aria-level="4"
+      className="IS2 S2"
+      role="heading"
+    >
+      Three Conservative MPs resign
+    </h4>
+    <div
+      className="S4"
+    >
       <div
-        className="S4"
+        className="S3"
       >
         <div
           className="S3"
         >
-          <div
-            className="S3"
-          >
-            <ArticleFlags />
-          </div>
-          <div
-            className="IS3 S3"
-          />
+          <ArticleFlags />
         </div>
       </div>
     </div>
@@ -4375,29 +3593,19 @@ exports[`31. tile aj 1`] = `
 }
 
 .IS3 {
-  -webkit-align-self: flex-end;
   align-self: flex-end;
   width: 85%;
-  -ms-flex-item-align: end;
 }
 
 .IS4 {
-  background-color: rgba(240,240,240,1.00);
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
+  background-color: #F0F0F0;
+  flex: 1;
   margin-top: 10px;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
 }
 </style>
 
 <Link
+  className="IS4"
   linkStyle={
     Object {
       "flex": 1,
@@ -4406,28 +3614,21 @@ exports[`31. tile aj 1`] = `
   url="/crossword/123"
 >
   <div
-    className="IS4 S2"
+    className="IS2 S2"
   >
-    <div
-      className="IS2 S2"
+    <h3
+      aria-level="3"
+      className="IS1 S1"
+      role="heading"
     >
-      <h3
-        aria-level="3"
-        className="IS1 S1"
-        role="heading"
-      >
-        Times Concise medium No 7881
-      </h3>
-    </div>
-    <div
-      className="IS3 S2"
-    >
-      <Image
-        aspectRatio={1.5}
-        uri="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
-      />
-    </div>
+      Times Concise medium No 7881
+    </h3>
   </div>
+  <Image
+    aspectRatio={1.5}
+    className="IS3"
+    uri="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+  />
 </Link>
 `;
 
@@ -4457,30 +3658,19 @@ exports[`32. tile ak 1`] = `
 }
 
 .IS3 {
-  -webkit-align-self: flex-end;
   align-self: flex-end;
   width: 85%;
-  -ms-flex-item-align: end;
 }
 
 .IS4 {
-  background-color: rgba(240,240,240,1.00);
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  margin-right: 5px;
-  margin-left: 5px;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
+  background-color: #F0F0F0;
+  flex: 1;
+  margin-horizontal: 5px;
 }
 </style>
 
 <Link
+  className="IS4"
   linkStyle={
     Object {
       "flex": 1,
@@ -4489,42 +3679,35 @@ exports[`32. tile ak 1`] = `
   url="/crossword/123"
 >
   <div
-    className="IS4 S2"
+    className="IS2 S2"
   >
-    <div
-      className="IS2 S2"
+    <h3
+      aria-level="3"
+      className="IS1 S1"
+      role="heading"
     >
-      <h3
-        aria-level="3"
-        className="IS1 S1"
-        role="heading"
-      >
-        Times Concise medium No 7881
-      </h3>
-    </div>
-    <div
-      className="IS3 S2"
-    >
-      <Image
-        aspectRatio={1.5}
-        uri="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
-      />
-    </div>
+      Times Concise medium No 7881
+    </h3>
   </div>
+  <Image
+    aspectRatio={1.5}
+    className="IS3"
+    uri="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+  />
 </Link>
 `;
 
 exports[`33. tile al 1`] = `
 <style>
 .S1 {
-  margin-bottom: 0px;
-}
-
-.S2 {
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
+  margin-bottom: 0px;
+}
+
+.S2 {
   margin-bottom: 0px;
 }
 
@@ -4562,7 +3745,7 @@ exports[`33. tile al 1`] = `
 }
 
 .IS1 {
-  padding-top: 10px;
+  padding-vertical: 10px;
   width: 100%;
 }
 
@@ -4582,98 +3765,70 @@ exports[`33. tile al 1`] = `
   -ms-flex-align: start;
   -webkit-box-align: start;
 }
-
-.IS5 {
-  -webkit-align-items: flex-end;
-  align-items: flex-end;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  margin-top: -5px;
-  width: 25%;
-  -ms-flex-align: end;
-  -webkit-box-align: end;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS6 {
-  padding-right: 10px;
-  padding-left: 10px;
-}
 </style>
 
 <Link
+  linkStyle={
+    Object {
+      "flexDirection": "column",
+      "paddingHorizontal": "10px",
+    }
+  }
   url="/article/123"
 >
+  <Image
+    aspectRatio={1.5}
+    className="IS1"
+    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
+  />
   <div
-    className="IS6 S1"
+    className="S2"
   >
     <div
-      className="IS1 S1"
+      className="S2"
     >
-      <Image
-        aspectRatio={1.5}
-        uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
-      />
+      <div
+        className="IS2 S1"
+      >
+        LABEL
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      className="S3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div
+      className="IS3 S5"
+    >
+      <span
+        className="S4"
+      >
+        
+        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+        ...
+      </span>
     </div>
     <div
-      className="S1"
+      className="S6"
     >
       <div
-        className="S1"
+        className="S2"
       >
         <div
-          className="IS2 S2"
+          className="IS4 S2"
         >
-          LABEL
-        </div>
-      </div>
-      <h3
-        aria-level="3"
-        className="S3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
-      <div
-        className="IS3 S5"
-      >
-        <span
-          className="S4"
-        >
-          
-          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-          ...
-        </span>
-      </div>
-      <div
-        className="S6"
-      >
-        <div
-          className="S1"
-        >
-          <div
-            className="IS4 S1"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS5 S1"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
       </div>
@@ -4685,10 +3840,6 @@ exports[`33. tile al 1`] = `
 exports[`34. tile am 1`] = `
 <style>
 .S1 {
-  margin-bottom: 10px;
-}
-
-.S2 {
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
@@ -4696,18 +3847,18 @@ exports[`34. tile am 1`] = `
   margin-bottom: 0px;
 }
 
-.S3 {
+.S2 {
   margin-bottom: 0px;
 }
 
-.S4 {
+.S3 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
   margin-bottom: 5px;
 }
 
-.S5 {
+.S4 {
   color: inherit;
   font-family: inherit;
   font-size: inherit;
@@ -4716,7 +3867,7 @@ exports[`34. tile am 1`] = `
   margin-bottom: 0px;
 }
 
-.S6 {
+.S5 {
   color: rgba(105,105,105,1.00);
   -ms-flex-wrap: wrap;
   -webkit-box-lines: multiple;
@@ -4729,7 +3880,12 @@ exports[`34. tile am 1`] = `
   margin-bottom: 10px;
 }
 
+.S6 {
+  margin-bottom: 10px;
+}
+
 .IS1 {
+  margin-bottom: 10px;
   width: 100%;
 }
 
@@ -4750,99 +3906,70 @@ exports[`34. tile am 1`] = `
   -ms-flex-align: start;
   -webkit-box-align: start;
 }
-
-.IS5 {
-  -webkit-align-items: flex-end;
-  align-items: flex-end;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  margin-top: -5px;
-  width: 25%;
-  -ms-flex-align: end;
-  -webkit-box-align: end;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS6 {
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-top: 10px;
-}
 </style>
 
 <Link
+  linkStyle={
+    Object {
+      "paddingHorizontal": "10px",
+      "paddingTop": "10px",
+    }
+  }
   url="/article/123"
 >
+  <Image
+    aspectRatio={1.7777777777777777}
+    className="IS1"
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+  />
   <div
-    className="IS6 S3"
+    className="S2"
   >
     <div
-      className="IS1 S1"
+      className="S2"
     >
-      <Image
-        aspectRatio={1.7777777777777777}
-        uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
-      />
+      <div
+        className="IS2 S1"
+      >
+        LABEL
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      className="IS3 S3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div
+      className="S5"
+    >
+      <span
+        className="S4"
+      >
+        
+        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+        ...
+      </span>
     </div>
     <div
-      className="S3"
+      className="S6"
     >
       <div
-        className="S3"
+        className="S2"
       >
         <div
-          className="IS2 S2"
+          className="IS4 S2"
         >
-          LABEL
-        </div>
-      </div>
-      <h3
-        aria-level="3"
-        className="IS3 S4"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
-      <div
-        className="S6"
-      >
-        <span
-          className="S5"
-        >
-          
-          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-          ...
-        </span>
-      </div>
-      <div
-        className="S1"
-      >
-        <div
-          className="S3"
-        >
-          <div
-            className="IS4 S3"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS5 S3"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
       </div>
@@ -4854,14 +3981,14 @@ exports[`34. tile am 1`] = `
 exports[`35. tile an 1`] = `
 <style>
 .S1 {
-  margin-bottom: 0px;
-}
-
-.S2 {
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
+  margin-bottom: 0px;
+}
+
+.S2 {
   margin-bottom: 0px;
 }
 
@@ -4900,12 +4027,8 @@ exports[`35. tile an 1`] = `
 }
 
 .IS1 {
-  border-top-left-radius: 9999px;
-  border-top-right-radius: 9999px;
-  border-bottom-right-radius: 9999px;
-  border-bottom-left-radius: 9999px;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  border-radius: 9999;
+  overflow: hidden;
 }
 
 .IS2 {
@@ -4925,25 +4048,6 @@ exports[`35. tile an 1`] = `
 }
 
 .IS5 {
-  -webkit-align-items: flex-end;
-  align-items: flex-end;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  margin-top: -5px;
-  width: 25%;
-  -ms-flex-align: end;
-  -webkit-box-align: end;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS6 {
   -webkit-justify-content: center;
   justify-content: center;
   padding-right: 10px;
@@ -4952,80 +4056,69 @@ exports[`35. tile an 1`] = `
   -ms-flex-pack: center;
   -webkit-box-pack: center;
 }
-
-.IS7 {
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
-}
 </style>
 
 <Link
+  linkStyle={
+    Object {
+      "padding": "10px",
+    }
+  }
   url="/article/123"
 >
+  <Image
+    aspectRatio={1}
+    className="IS1"
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
+  />
   <div
-    className="IS7 S1"
+    className="IS5 S2"
   >
     <div
-      className="IS1 S1"
+      className="S2"
     >
-      <Image
-        aspectRatio={1}
-        uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
-      />
+      <div
+        className="IS2 S1"
+      >
+        LABEL
+      </div>
+    </div>
+    <h3
+      aria-level="3"
+      className="IS3 S3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div
+      className="S5"
+    >
+      <span
+        className="S4"
+      >
+        
+        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+        ...
+      </span>
     </div>
     <div
-      className="IS6 S1"
+      className="S6"
     >
       <div
-        className="S1"
+        className="S2"
       >
         <div
-          className="IS2 S2"
+          className="IS4 S2"
         >
-          LABEL
-        </div>
-      </div>
-      <h3
-        aria-level="3"
-        className="IS3 S3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
-      <div
-        className="S5"
-      >
-        <span
-          className="S4"
-        >
-          
-          Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-          ...
-        </span>
-      </div>
-      <div
-        className="S6"
-      >
-        <div
-          className="S1"
-        >
-          <div
-            className="IS4 S1"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS5 S1"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
       </div>
@@ -5037,14 +4130,14 @@ exports[`35. tile an 1`] = `
 exports[`36. tile ap 1`] = `
 <style>
 .S1 {
-  margin-bottom: 0px;
-}
-
-.S2 {
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
+  margin-bottom: 0px;
+}
+
+.S2 {
   margin-bottom: 0px;
 }
 
@@ -5061,12 +4154,8 @@ exports[`36. tile ap 1`] = `
 }
 
 .IS1 {
-  border-top-left-radius: 9999px;
-  border-top-right-radius: 9999px;
-  border-bottom-right-radius: 9999px;
-  border-bottom-left-radius: 9999px;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  border-radius: 9999;
+  overflow: hidden;
 }
 
 .IS2 {
@@ -5087,25 +4176,6 @@ exports[`36. tile ap 1`] = `
 }
 
 .IS5 {
-  -webkit-align-items: flex-end;
-  align-items: flex-end;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  margin-top: -5px;
-  width: 25%;
-  -ms-flex-align: end;
-  -webkit-box-align: end;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS6 {
   -webkit-justify-content: center;
   justify-content: center;
   padding-right: 10px;
@@ -5114,69 +4184,58 @@ exports[`36. tile ap 1`] = `
   -ms-flex-pack: center;
   -webkit-box-pack: center;
 }
-
-.IS7 {
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
-}
 </style>
 
 <Link
+  linkStyle={
+    Object {
+      "padding": "10px",
+    }
+  }
   url="/article/123"
 >
+  <Image
+    aspectRatio={1}
+    className="IS1"
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
+  />
   <div
-    className="IS7 S1"
+    className="IS5 S2"
   >
     <div
-      className="IS1 S1"
-    >
-      <Image
-        aspectRatio={1}
-        uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
-      />
-    </div>
-    <div
-      className="IS6 S1"
+      className="S2"
     >
       <div
-        className="S1"
+        className="IS2 S1"
       >
-        <div
-          className="IS2 S2"
-        >
-          LABEL
-        </div>
+        LABEL
       </div>
-      <h3
-        aria-level="3"
-        className="IS3 S3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
+    </div>
+    <h3
+      aria-level="3"
+      className="IS3 S3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div
+      className="S4"
+    >
       <div
-        className="S4"
+        className="S2"
       >
         <div
-          className="S1"
+          className="IS4 S2"
         >
-          <div
-            className="IS4 S1"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS5 S1"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
       </div>
@@ -5188,14 +4247,14 @@ exports[`36. tile ap 1`] = `
 exports[`37. tile ad 1`] = `
 <style>
 .S1 {
-  margin-bottom: 0px;
-}
-
-.S2 {
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
+  margin-bottom: 0px;
+}
+
+.S2 {
   margin-bottom: 0px;
 }
 
@@ -5232,92 +4291,63 @@ exports[`37. tile ad 1`] = `
 }
 
 .IS5 {
-  -webkit-align-items: flex-end;
-  align-items: flex-end;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  margin-top: -5px;
-  width: 25%;
-  -ms-flex-align: end;
-  -webkit-box-align: end;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS6 {
   padding-right: 10px;
   padding-left: 10px;
   width: 70%;
 }
-
-.IS7 {
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
-}
 </style>
 
 <Link
+  linkStyle={
+    Object {
+      "flexDirection": "row",
+      "padding": "10px",
+    }
+  }
   url="/article/123"
 >
+  <Image
+    aspectRatio={1.5}
+    className="IS1"
+    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
+  />
   <div
-    className="IS7 S1"
+    className="IS5 S2"
   >
     <div
-      className="IS1 S1"
-    >
-      <Image
-        aspectRatio={1.5}
-        uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
-      />
-    </div>
-    <div
-      className="IS6 S1"
+      className="S2"
     >
       <div
-        className="S1"
+        className="IS2 S1"
       >
-        <div
-          className="IS2 S2"
-        >
-          LABEL
-        </div>
+        LABEL
       </div>
-      <h3
-        aria-level="3"
-        className="IS3 S3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
+    </div>
+    <h3
+      aria-level="3"
+      className="IS3 S3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div
+      className="S4"
+    >
       <div
-        className="S4"
+        className="S2"
       >
         <div
-          className="S1"
+          className="IS4 S2"
         >
-          <div
-            className="IS4 S1"
-          >
-            <ArticleFlags
-              flags={
-                Array [
-                  Object {
-                    "expiryTime": "2030-03-14T12:00:00.000Z",
-                    "type": "EXCLUSIVE",
-                  },
-                ]
-              }
-            />
-          </div>
-          <div
-            className="IS5 S1"
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
       </div>
@@ -5329,14 +4359,14 @@ exports[`37. tile ad 1`] = `
 exports[`38. tile ac 1`] = `
 <style>
 .S1 {
-  margin-bottom: 0px;
-}
-
-.S2 {
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
+  margin-bottom: 0px;
+}
+
+.S2 {
   margin-bottom: 0px;
 }
 
@@ -5366,14 +4396,6 @@ exports[`38. tile ac 1`] = `
 }
 
 .IS4 {
-  -webkit-align-items: center;
-  align-items: center;
-  margin-top: 10px;
-  -ms-flex-align: center;
-  -webkit-box-align: center;
-}
-
-.IS5 {
   -webkit-align-items: center;
   align-items: center;
   background-color: rgba(240,240,240,1.00);
@@ -5408,22 +4430,19 @@ exports[`38. tile ac 1`] = `
   }
   url="/article/123"
 >
+  <Image
+    aspectRatio={1.7777777777777777}
+    className="IS1"
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+  />
   <div
-    className="IS1 S1"
-  >
-    <Image
-      aspectRatio={1.7777777777777777}
-      uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
-    />
-  </div>
-  <div
-    className="IS5 S1"
+    className="IS4 S2"
   >
     <div
-      className="S1"
+      className="S2"
     >
       <div
-        className="IS2 S2"
+        className="IS2 S1"
       >
         LABEL
       </div>
@@ -5439,10 +4458,10 @@ exports[`38. tile ac 1`] = `
       className="S4"
     >
       <div
-        className="S1"
+        className="S2"
       >
         <div
-          className="S1"
+          className="S2"
         >
           <ArticleFlags
             flags={
@@ -5455,9 +4474,6 @@ exports[`38. tile ac 1`] = `
             }
           />
         </div>
-        <div
-          className="IS4 S1"
-        />
       </div>
     </div>
   </div>

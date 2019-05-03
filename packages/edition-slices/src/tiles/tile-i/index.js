@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Image from "@times-components/image";
 import {
   getTileImageUri,
-  TileImage,
   TileLink,
   TileSummary,
   withTileTracking
@@ -11,7 +11,7 @@ import styles from "./styles";
 
 const TileI = ({ onPress, tile }) => (
   <TileLink onPress={onPress} tile={tile}>
-    <TileImage
+    <Image
       aspectRatio={16 / 9}
       style={styles.imageContainer}
       uri={getTileImageUri(tile, "crop169")}
