@@ -43,8 +43,8 @@
   },
   "dependencies": {
     "@storybook/addon-actions": "4.1.18",
-    "@storybook/addon-knobs": "3.4.10",
-    "@storybook/react-native": "3.4.10",
+    "@storybook/addon-knobs": "4.1.18",
+    "@storybook/react-native": "4.1.18",
     "@times-components/schema": "0.6.7",
     "apollo-cache-inmemory": "1.5.1",
     "apollo-client": "2.5.1",
