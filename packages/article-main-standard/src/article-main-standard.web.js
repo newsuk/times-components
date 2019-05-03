@@ -56,7 +56,7 @@ class ArticlePage extends Component {
             publicationName={publicationName}
             publishedTime={publishedTime}
           />
-          <ArticleTopics topics={topics} />
+          {parentProps.topicsAllowed ? <ArticleTopics topics={topics} /> : null}
         </MetaContainer>
         <LeadAsset
           {...getLeadAsset(article)}
