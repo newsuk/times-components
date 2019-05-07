@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.0.12...@times-components/ssr@2.1.0) (2019-05-07)
+
+
+### Features
+
+* Topic list feature flag ([#1920](https://github.com/newsuk/times-components/issues/1920)) ([c7b8c25](https://github.com/newsuk/times-components/commit/c7b8c25))
+
+
+
+
+
 ## [2.0.12](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.0.11...@times-components/ssr@2.0.12) (2019-05-07)
 
 **Note:** Version bump only for package @times-components/ssr
