@@ -95,7 +95,15 @@ exports[`1. landscape default modal 1`] = `
                   "justifyContent": "center",
                 }
               }
-            />
+            >
+              <Image
+                style={
+                  Object {
+                    "width": "25%",
+                  }
+                }
+              />
+            </View>
             <Image
               style={
                 Object {
@@ -180,7 +188,15 @@ exports[`1. landscape default modal 1`] = `
             "justifyContent": "center",
           }
         }
-      />
+      >
+        <Image
+          style={
+            Object {
+              "width": "25%",
+            }
+          }
+        />
+      </View>
       <Image
         style={
           Object {
@@ -291,7 +307,15 @@ exports[`2. portrait default modal 1`] = `
                   "justifyContent": "center",
                 }
               }
-            />
+            >
+              <Image
+                style={
+                  Object {
+                    "width": "25%",
+                  }
+                }
+              />
+            </View>
             <Image
               style={
                 Object {
@@ -376,7 +400,15 @@ exports[`2. portrait default modal 1`] = `
             "justifyContent": "center",
           }
         }
-      />
+      >
+        <Image
+          style={
+            Object {
+              "width": "25%",
+            }
+          }
+        />
+      </View>
       <Image
         style={
           Object {
@@ -563,7 +595,15 @@ exports[`3. tablet landscape default modal 1`] = `
             "justifyContent": "center",
           }
         }
-      />
+      >
+        <Image
+          style={
+            Object {
+              "width": "25%",
+            }
+          }
+        />
+      </View>
       <Image
         style={
           Object {
@@ -750,7 +790,15 @@ exports[`4. tablet portrait default modal 1`] = `
             "justifyContent": "center",
           }
         }
-      />
+      >
+        <Image
+          style={
+            Object {
+              "width": "25%",
+            }
+          }
+        />
+      </View>
       <Image
         style={
           Object {

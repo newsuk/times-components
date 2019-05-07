@@ -7,7 +7,7 @@ import T from "../logo/t";
 function Placeholder({ size }) {
   return (
     <View height="100%" style={styles.placeholder} width="100%">
-      {size && <T size={size} />}
+      <T size={size} />
     </View>
   );
 }

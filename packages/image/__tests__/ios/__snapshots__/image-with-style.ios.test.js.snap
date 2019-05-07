@@ -20,7 +20,7 @@ exports[`1. default image 1`] = `
     <Image
       style={
         Object {
-          "width": 75,
+          "width": "25%",
         }
       }
     />
