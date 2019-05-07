@@ -282,6 +282,26 @@ exports[`3. tile c 1`] = `
   font-size: 20px;
   padding-bottom: 5px;
 }
+
+.IS4 {
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  width: 75%;
+  -ms-flex-align: start;
+  -webkit-box-align: start;
+}
+
+.IS5 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+}
 </style>
 
 <Link
@@ -321,16 +341,24 @@ exports[`3. tile c 1`] = `
     >
       This is tile headline
     </h3>
-    <ArticleFlags
-      flags={
-        Array [
-          Object {
-            "expiryTime": "2030-03-14T12:00:00.000Z",
-            "type": "EXCLUSIVE",
-          },
-        ]
-      }
-    />
+    <div
+      className="IS5 S3"
+    >
+      <div
+        className="IS4 S3"
+      >
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+        />
+      </div>
+    </div>
   </div>
 </Link>
 `;

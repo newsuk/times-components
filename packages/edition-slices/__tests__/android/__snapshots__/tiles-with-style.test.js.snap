@@ -215,7 +215,25 @@ exports[`3. tile c 1`] = `
     >
       This is tile headline
     </Text>
-    <ArticleFlags />
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "width": "75%",
+          }
+        }
+      >
+        <ArticleFlags />
+      </View>
+    </View>
   </View>
 </Link>
 `;
