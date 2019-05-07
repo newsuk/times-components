@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import { View, Image } from "react-native";
 import PropTypes from "prop-types";
 import memoize from "lodash.memoize";
@@ -33,10 +33,8 @@ class TimesImage extends Component {
     super(props);
 
     this.state = {
-      dimensions: null,
-      isLoaded: false
+      dimensions: null
     };
-    this.handleLoad = this.handleLoad.bind(this);
     this.onImageLayout = this.onImageLayout.bind(this);
   }
 
@@ -61,10 +59,6 @@ class TimesImage extends Component {
     }
   }
 
-  handleLoad() {
-    this.setState({ isLoaded: true });
-  }
-
   render() {
     const {
       aspectRatio,
@@ -76,7 +70,7 @@ class TimesImage extends Component {
       rounded,
       ...defaultImageProps
     } = this.props;
-    const { isLoaded, dimensions } = this.state;
+    const { dimensions } = this.state;
     const renderedRes = highResSize || (dimensions ? dimensions.width : null);
     const srcUri = getUriAtRes(uri, renderedRes);
 
@@ -86,23 +80,18 @@ class TimesImage extends Component {
         onLayout={this.onImageLayout}
         style={[styles.imageContainer, style]}
       >
-        {isLoaded ? null : (
-          <Fragment>
-            <Placeholder dimensions={dimensions} />
-            {lowResSize ? (
-              <Image
-                {...defaultImageProps}
-                borderRadius={rounded ? renderedRes / 2 : borderRadius}
-                source={{ uri: getUriAtRes(uri, lowResSize) }}
-                style={styles.image}
-              />
-            ) : null}
-          </Fragment>
-        )}
+        <Placeholder dimensions={dimensions} />
+        {lowResSize ? (
+          <Image
+            {...defaultImageProps}
+            borderRadius={rounded ? renderedRes / 2 : borderRadius}
+            source={{ uri: getUriAtRes(uri, lowResSize) }}
+            style={styles.image}
+          />
+        ) : null}
         <LazyLoadingImage
           {...defaultImageProps}
           borderRadius={rounded ? renderedRes / 2 : borderRadius}
-          onLoad={this.handleLoad}
           source={srcUri && renderedRes ? { uri: srcUri } : null}
           style={styles.image}
         />

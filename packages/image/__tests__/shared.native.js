@@ -56,24 +56,6 @@ export default () => {
       }
     },
     {
-      name: "handle onload event",
-      test: () => {
-        const testInstance = TestRenderer.create(<Image {...props} />);
-
-        testInstance.root.children[0].props.onLayout(
-          getLayoutEventForWidth(700)
-        );
-
-        expect(testInstance).toMatchSnapshot();
-
-        testInstance.root
-          .findAll(node => node.type === ReactNativeImage)[1]
-          .props.onLoad();
-
-        expect(testInstance).toMatchSnapshot();
-      }
-    },
-    {
       name: "data image url without a query string",
       test: () => {
         const dataUri =

@@ -106,50 +106,7 @@ exports[`4. prepend https schema 1`] = `
 </View>
 `;
 
-exports[`5. handle onload event 1`] = `
-<View
-  aspectRatio={2}
->
-  <View
-    height={350}
-    width={700}
-  >
-    <Image
-      resizeMode="contain"
-      source={
-        Object {
-          "testUri": "../../../packages/image/assets/t.png",
-        }
-      }
-    />
-  </View>
-  <Image
-    fadeImageIn={false}
-    source={
-      Object {
-        "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
-      }
-    }
-  />
-</View>
-`;
-
-exports[`5. handle onload event 2`] = `
-<View
-  aspectRatio={2}
->
-  <Image
-    fadeImageIn={false}
-    source={
-      Object {
-        "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
-      }
-    }
-  />
-</View>
-`;
-
-exports[`7. uses highressize if it exists 1`] = `
+exports[`6. uses highressize if it exists 1`] = `
 <View
   aspectRatio={2}
 >
@@ -177,7 +134,7 @@ exports[`7. uses highressize if it exists 1`] = `
 </View>
 `;
 
-exports[`9. image with borderradius 1`] = `
+exports[`8. image with borderradius 1`] = `
 <View
   aspectRatio={2}
 >
@@ -193,7 +150,7 @@ exports[`9. image with borderradius 1`] = `
 </View>
 `;
 
-exports[`10. uses lowressize image as placeholder if passed 1`] = `
+exports[`9. uses lowressize image as placeholder if passed 1`] = `
 <View
   aspectRatio={2}
 >
@@ -216,7 +173,7 @@ exports[`10. uses lowressize image as placeholder if passed 1`] = `
 </View>
 `;
 
-exports[`12. handle layout change 1`] = `
+exports[`11. handle layout change 1`] = `
 <View
   aspectRatio={2}
 >
