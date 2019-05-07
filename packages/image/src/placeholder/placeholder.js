@@ -4,23 +4,20 @@ import { View } from "react-native";
 import styles from "../styles/index";
 import T from "../logo/t";
 
-function Placeholder({ dimensions }) {
+function Placeholder({ size }) {
   return (
     <View height="100%" style={styles.placeholder} width="100%">
-      {dimensions && <T width={dimensions.width} />}
+      {size && <T size={size} />}
     </View>
   );
 }
 
 Placeholder.propTypes = {
-  dimensions: PropTypes.shape({
-    height: PropTypes.number.isRequired,
-    width: PropTypes.number.isRequired
-  })
+  size: PropTypes.number
 };
 
 Placeholder.defaultProps = {
-  dimensions: null
+  size: null
 };
 
 export default Placeholder;

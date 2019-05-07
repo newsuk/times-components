@@ -12,7 +12,7 @@ class TimesImage extends Component {
     super(props);
 
     this.state = {
-      dimensions: null,
+      width: null,
       highResIsLoaded: false,
       highResIsVisible: false,
       imageIsLoaded: false,
@@ -27,9 +27,8 @@ class TimesImage extends Component {
 
   onImageLayout(evt) {
     const { onLayout } = this.props;
-    const { height, width } = evt.nativeEvent.layout;
 
-    this.setState({ dimensions: { height, width } });
+    this.setState({ width: evt.nativeEvent.layout.width });
 
     if (onLayout) {
       onLayout(evt);
@@ -93,7 +92,7 @@ class TimesImage extends Component {
 
   render() {
     const { aspectRatio, highResSize, lowResSize, style, uri } = this.props;
-    const { dimensions, imageIsLoaded } = this.state;
+    const { imageIsLoaded, width } = this.state;
     const url = addMissingProtocol(uri);
 
     return (
@@ -103,7 +102,7 @@ class TimesImage extends Component {
         >
           {this.highResImage({ highResSize, lowResSize, url })}
           {this.lowResImage({ lowResSize, url })}
-          {imageIsLoaded ? null : <Placeholder dimensions={dimensions} />}
+          {imageIsLoaded ? null : <Placeholder size={width} />}
         </div>
       </View>
     );

@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { View, Image } from "react-native";
 import PropTypes from "prop-types";
 import memoize from "lodash.memoize";
-import { contain } from "intrinsic-scale";
 import {
   addMissingProtocol,
   normaliseWidthForAssetRequestCache,
@@ -33,56 +32,21 @@ class TimesImage extends Component {
     super(props);
 
     this.state = {
-      dimensions: null
+      width: null
     };
     this.onImageLayout = this.onImageLayout.bind(this);
   }
 
   onImageLayout(evt) {
-    const { aspectRatio, onLayout } = this.props;
-    const { layout } = evt.nativeEvent;
-    const { height, width } = contain(
-      layout.width,
-      layout.height,
-      layout.width,
-      aspectRatio ? layout.width / aspectRatio : layout.height
-    );
+    const { onLayout } = this.props;
 
-    this.setState({ dimensions: { height, width } });
+    this.setState({
+      width: evt.nativeEvent.layout.width
+    });
 
     if (onLayout) {
       onLayout(evt);
     }
-  }
-
-  getPlaceholderDimensions() {
-    const aspectRatio = this.getAspectRatio();
-    const { dimensions } = this.state;
-    const { highResSize } = this.props;
-
-    if (!highResSize && !dimensions) {
-      return null;
-    }
-
-    const width = highResSize || dimensions.width;
-    const height = width / aspectRatio;
-
-    return { width, height };
-  }
-
-  getAspectRatio() {
-    const { dimensions } = this.state;
-    const { aspectRatio } = this.props;
-
-    if (aspectRatio) {
-      return aspectRatio;
-    }
-
-    if (dimensions) {
-      return dimensions.width / dimensions.height;
-    }
-
-    return null;
   }
 
   render() {
@@ -96,8 +60,8 @@ class TimesImage extends Component {
       rounded,
       ...defaultImageProps
     } = this.props;
-    const dimensions = this.getPlaceholderDimensions(aspectRatio);
-    const renderedRes = highResSize || (dimensions ? dimensions.width : null);
+    const { width } = this.state;
+    const renderedRes = highResSize || width;
     const srcUri = getUriAtRes(uri, renderedRes);
 
     return (
@@ -116,7 +80,7 @@ class TimesImage extends Component {
             style={styles.image}
           />
         ) : (
-          <Placeholder dimensions={dimensions} />
+          <Placeholder size={renderedRes} />
         )}
         <LazyLoadingImage
           {...defaultImageProps}

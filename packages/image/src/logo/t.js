@@ -2,17 +2,17 @@ import React from "react";
 import { Image } from "react-native";
 import PropTypes from "prop-types";
 
-const T = ({ width }) => (
+const T = ({ size }) => (
   <Image
     resizeMode="contain"
     // eslint-disable-next-line global-require
     source={require("../../assets/t.png")}
-    style={{ width: Math.floor(width / 4) }}
+    style={{ width: Math.floor(size / 4) }}
   />
 );
 
 T.propTypes = {
-  width: PropTypes.number.isRequired
+  size: PropTypes.number.isRequired
 };
 
 export default T;
