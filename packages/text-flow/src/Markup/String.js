@@ -3,8 +3,8 @@ import Character from "../Text/Character";
 export default class MarkupString {
   text = "";
 
-  constructor(text = "") {
-    this.text = text;
+  constructor(text) {
+    this.text = text || "";
   }
 
   characters(textStyle) {
