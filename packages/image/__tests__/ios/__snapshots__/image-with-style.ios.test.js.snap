@@ -8,6 +8,23 @@ exports[`1. default image 1`] = `
     }
   }
 >
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#EDEDED",
+        "justifyContent": "center",
+      }
+    }
+  >
+    <Image
+      style={
+        Object {
+          "width": 75,
+        }
+      }
+    />
+  </View>
   <Image
     style={
       Object {

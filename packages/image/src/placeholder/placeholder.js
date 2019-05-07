@@ -5,15 +5,9 @@ import styles from "../styles/index";
 import T from "../logo/t";
 
 function Placeholder({ dimensions }) {
-  if (!dimensions) {
-    return null;
-  }
-
-  const { height, width } = dimensions;
-
   return (
-    <View height={height} style={styles.placeholder} width={width}>
-      <T width={width} />
+    <View height="100%" style={styles.placeholder} width="100%">
+      {dimensions && <T width={dimensions.width} />}
     </View>
   );
 }

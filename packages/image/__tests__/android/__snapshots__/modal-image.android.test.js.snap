@@ -49,8 +49,8 @@ exports[`1. modal image 1`] = `
             aspectRatio={1.5}
           >
             <View
-              height={350}
-              width={525}
+              height="100%"
+              width="100%"
             >
               <Image
                 resizeMode="contain"
@@ -102,8 +102,8 @@ exports[`1. modal image 1`] = `
       aspectRatio={1.5}
     >
       <View
-        height={350}
-        width={525}
+        height="100%"
+        width="100%"
       >
         <Image
           resizeMode="contain"
@@ -178,6 +178,10 @@ exports[`2. modal image with no caption 1`] = `
           <View
             aspectRatio={1.5}
           >
+            <View
+              height="100%"
+              width="100%"
+            />
             <Image
               caption={null}
               fadeImageIn={false}
@@ -197,6 +201,10 @@ exports[`2. modal image with no caption 1`] = `
     <View
       aspectRatio={1.5}
     >
+      <View
+        height="100%"
+        width="100%"
+      />
       <Image
         caption={null}
         fadeImageIn={false}
@@ -258,8 +266,8 @@ exports[`3. modal image with custom highressize 1`] = `
             aspectRatio={1.5}
           >
             <View
-              height={350}
-              width={525}
+              height="100%"
+              width="100%"
             >
               <Image
                 resizeMode="contain"
@@ -311,8 +319,8 @@ exports[`3. modal image with custom highressize 1`] = `
       aspectRatio={1.5}
     >
       <View
-        height={350}
-        width={525}
+        height="100%"
+        width="100%"
       >
         <Image
           resizeMode="contain"
@@ -376,6 +384,10 @@ exports[`8. hides elements when tapping on the image 1`] = `
           <View
             aspectRatio={1.5}
           >
+            <View
+              height="100%"
+              width="100%"
+            />
             <Image
               caption={<MockCaption />}
               fadeImageIn={false}
@@ -392,6 +404,10 @@ exports[`8. hides elements when tapping on the image 1`] = `
     <View
       aspectRatio={1.5}
     >
+      <View
+        height="100%"
+        width="100%"
+      />
       <Image
         caption={<MockCaption />}
         fadeImageIn={false}
@@ -452,6 +468,10 @@ exports[`9. re-shows elements when tapping on the image a second time 1`] = `
           <View
             aspectRatio={1.5}
           >
+            <View
+              height="100%"
+              width="100%"
+            />
             <Image
               caption={<MockCaption />}
               fadeImageIn={false}
@@ -477,6 +497,10 @@ exports[`9. re-shows elements when tapping on the image a second time 1`] = `
     <View
       aspectRatio={1.5}
     >
+      <View
+        height="100%"
+        width="100%"
+      />
       <Image
         caption={<MockCaption />}
         fadeImageIn={false}

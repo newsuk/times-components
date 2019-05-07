@@ -59,6 +59,36 @@ class TimesImage extends Component {
     }
   }
 
+  getPlaceholderDimensions() {
+    const aspectRatio = this.getAspectRatio();
+    const { dimensions } = this.state;
+    const { highResSize } = this.props;
+
+    if (!highResSize && !dimensions) {
+      return null;
+    }
+
+    const width = highResSize || dimensions.width;
+    const height = width / aspectRatio;
+
+    return { width, height };
+  }
+
+  getAspectRatio() {
+    const { dimensions } = this.state;
+    const { aspectRatio } = this.props;
+
+    if (aspectRatio) {
+      return aspectRatio;
+    }
+
+    if (dimensions) {
+      return dimensions.width / dimensions.height;
+    }
+
+    return null;
+  }
+
   render() {
     const {
       aspectRatio,
@@ -70,7 +100,7 @@ class TimesImage extends Component {
       rounded,
       ...defaultImageProps
     } = this.props;
-    const { dimensions } = this.state;
+    const dimensions = this.getPlaceholderDimensions(aspectRatio);
     const renderedRes = highResSize || (dimensions ? dimensions.width : null);
     const srcUri = getUriAtRes(uri, renderedRes);
 

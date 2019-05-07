@@ -87,6 +87,15 @@ exports[`1. landscape default modal 1`] = `
               }
             }
           >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#EDEDED",
+                  "justifyContent": "center",
+                }
+              }
+            />
             <Image
               style={
                 Object {
@@ -163,6 +172,15 @@ exports[`1. landscape default modal 1`] = `
         }
       }
     >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#EDEDED",
+            "justifyContent": "center",
+          }
+        }
+      />
       <Image
         style={
           Object {
@@ -265,6 +283,15 @@ exports[`2. portrait default modal 1`] = `
               }
             }
           >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#EDEDED",
+                  "justifyContent": "center",
+                }
+              }
+            />
             <Image
               style={
                 Object {
@@ -341,6 +368,15 @@ exports[`2. portrait default modal 1`] = `
         }
       }
     >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#EDEDED",
+            "justifyContent": "center",
+          }
+        }
+      />
       <Image
         style={
           Object {
@@ -443,6 +479,15 @@ exports[`3. tablet landscape default modal 1`] = `
               }
             }
           >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#EDEDED",
+                  "justifyContent": "center",
+                }
+              }
+            />
             <Image
               style={
                 Object {
@@ -519,6 +564,15 @@ exports[`3. tablet landscape default modal 1`] = `
         }
       }
     >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#EDEDED",
+            "justifyContent": "center",
+          }
+        }
+      />
       <Image
         style={
           Object {
@@ -621,6 +675,15 @@ exports[`4. tablet portrait default modal 1`] = `
               }
             }
           >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "#EDEDED",
+                  "justifyContent": "center",
+                }
+              }
+            />
             <Image
               style={
                 Object {
@@ -697,6 +760,15 @@ exports[`4. tablet portrait default modal 1`] = `
         }
       }
     >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#EDEDED",
+            "justifyContent": "center",
+          }
+        }
+      />
       <Image
         style={
           Object {
