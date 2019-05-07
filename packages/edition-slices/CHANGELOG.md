@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.56.5](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.56.4...@times-components/edition-slices@0.56.5) (2019-05-07)
+
+
+### Bug Fixes
+
+* remove ghost article flags view ([#1916](https://github.com/newsuk/times-components/issues/1916)) ([a10cea3](https://github.com/newsuk/times-components/commit/a10cea3))
+
+
+
+
+
 ## [0.56.4](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.56.3...@times-components/edition-slices@0.56.4) (2019-05-03)
 
 **Note:** Version bump only for package @times-components/edition-slices
