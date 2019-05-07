@@ -130,7 +130,8 @@ const tests = [
       const testRenderer = TestRenderer.create(
         <ContextProviderWithDefaults
           value={{
-            theme: { scale, sectionColour }
+            theme: { scale, sectionColour },
+            user: { isLoggedIn: true }
           }}
         >
           <Article
