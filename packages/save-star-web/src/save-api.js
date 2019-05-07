@@ -6,7 +6,7 @@ import {
 import { makeClient } from "@times-components/utils";
 
 const client = makeClient();
-export default {
+const saveApi = {
   bookmark: id =>
     client.mutate({
       mutation: saveBookmarks,
@@ -23,3 +23,5 @@ export default {
       }
     })
 };
+
+export default saveApi;

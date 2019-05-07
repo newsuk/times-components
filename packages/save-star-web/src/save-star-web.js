@@ -2,19 +2,10 @@
 import React, { Component, Fragment } from "react";
 import { ActivityIndicator, Text } from "react-native";
 import Link from "@times-components/link";
-import styled from "styled-components";
+import { HoverIcon } from "@times-components/save-and-share-bar"
 import PropTypes from "prop-types";
 import { IconSaveBookmark } from "@times-components/icons";
 import styles, { getStyles } from "./styles";
-
-const HoverIcon =
-  styled.div &&
-  styled.div`
-    color: ${props => props.colour};
-    &:hover {
-      color: ${props => props.hoverColour || props.colour};
-    }
-  `;
 
 class SaveStarWeb extends Component {
   constructor(props) {
@@ -93,7 +84,6 @@ class SaveStarWeb extends Component {
 
     const saveStyle = getStyles({ saveStatus });
     const { fillColour, strokeColour } = saveStyle;
-    /* eslint-disable jsx-a11y/anchor-is-valid */
 
     return (
       <Link onPress={this.onSaveButtonPress} responsiveLinkStyles={styles.link}>
@@ -135,8 +125,11 @@ SaveStarWeb.propTypes = {
   articleId: PropTypes.string.isRequired,
   colour: PropTypes.string,
   hoverColour: PropTypes.string,
-  saveApi: PropTypes.shape({}).isRequired
-};
+  saveApi: PropTypes.shape({
+    bookmark: PropTypes.func.isRequired,
+    getBookmarks: PropTypes.func.isRequired,
+    unBookmark: PropTypes.func.isRequired,
+  }).isRequired};
 
 SaveStarWeb.defaultProps = {
   colour: styles.svgIcon.fillColour,

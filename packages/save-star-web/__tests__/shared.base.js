@@ -18,7 +18,7 @@ export default () => {
           />
         );
         await delay(0);
-        expect(expect(testInstance).toMatchSnapshot());
+        expect(testInstance).toMatchSnapshot();
       }
     },
     {
@@ -31,7 +31,7 @@ export default () => {
           />
         );
         await delay(0);
-        expect(expect(testInstance).toMatchSnapshot());
+        expect(testInstance).toMatchSnapshot();
       }
     },
     {
@@ -39,6 +39,7 @@ export default () => {
         "saved star with loading state while network request is fetching data",
       test: async () => {
         const apiMock = {
+          ...mockSaveApi,
           getBookmarks: () =>
             Promise.resolve({
               loading: true
@@ -52,7 +53,7 @@ export default () => {
           />
         );
         await delay(0);
-        expect(expect(testInstance).toMatchSnapshot());
+        expect(testInstance).toMatchSnapshot();
       }
     },
     {
@@ -74,6 +75,7 @@ export default () => {
         "Fetches saved article when no saved articles for the user, status is correctly set ",
       test: async () => {
         const saveApi = {
+          ...mockSaveApi,
           getBookmarks: () =>
             Promise.resolve({
               data: {
@@ -108,7 +110,7 @@ export default () => {
           />
         );
         await delay(0);
-        const event = Object.assign(jest.fn(), { preventDefault: () => {} });
+        const event = Object.assign(jest.fn(), { preventDefault: jest.fn() });
         wrapper.find(Link).simulate("press", event);
         await delay(0);
 
@@ -125,7 +127,7 @@ export default () => {
           />
         );
         await delay(0);
-        const event = Object.assign(jest.fn(), { preventDefault: () => {} });
+        const event = Object.assign(jest.fn(), { preventDefault: jest.fn() });
         wrapper.find(Link).simulate("press", event);
         await delay(0);
 
