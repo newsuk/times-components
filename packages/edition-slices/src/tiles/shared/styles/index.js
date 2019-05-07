@@ -2,7 +2,8 @@ import { spacing } from "@times-components/styleguide";
 
 const horizontalStyles = {
   container: {
-    flexDirection: "row"
+    flexDirection: "row",
+    justifyContent: "space-between"
   },
   flagStyle: {
     alignItems: "flex-start",
