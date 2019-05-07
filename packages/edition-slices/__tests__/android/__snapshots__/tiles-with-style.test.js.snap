@@ -52,27 +52,19 @@ exports[`1. tile a 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 10,
+          "flexDirection": "row",
         }
       }
     >
       <View
         style={
           Object {
-            "flexDirection": "row",
+            "alignItems": "flex-start",
+            "width": "75%",
           }
         }
       >
-        <View
-          style={
-            Object {
-              "alignItems": "flex-start",
-              "width": "75%",
-            }
-          }
-        >
-          <ArticleFlags />
-        </View>
+        <ArticleFlags />
       </View>
     </View>
   </View>
@@ -149,27 +141,19 @@ exports[`2. tile b 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 10,
+          "flexDirection": "row",
         }
       }
     >
       <View
         style={
           Object {
-            "flexDirection": "row",
+            "alignItems": "flex-start",
+            "width": "75%",
           }
         }
       >
-        <View
-          style={
-            Object {
-              "alignItems": "flex-start",
-              "width": "75%",
-            }
-          }
-        >
-          <ArticleFlags />
-        </View>
+        <ArticleFlags />
       </View>
     </View>
   </View>
@@ -229,15 +213,7 @@ exports[`3. tile c 1`] = `
     >
       This is tile headline
     </Text>
-    <View
-      style={
-        Object {
-          "marginBottom": 10,
-        }
-      }
-    >
-      <ArticleFlags />
-    </View>
+    <ArticleFlags />
   </View>
 </Link>
 `;
@@ -302,27 +278,19 @@ exports[`4. tile d 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 10,
+          "flexDirection": "row",
         }
       }
     >
       <View
         style={
           Object {
-            "flexDirection": "row",
+            "alignItems": "flex-start",
+            "width": "75%",
           }
         }
       >
-        <View
-          style={
-            Object {
-              "alignItems": "flex-start",
-              "width": "75%",
-            }
-          }
-        >
-          <ArticleFlags />
-        </View>
+        <ArticleFlags />
       </View>
     </View>
   </View>
@@ -389,27 +357,19 @@ exports[`5. tile e 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 10,
+          "flexDirection": "row",
         }
       }
     >
       <View
         style={
           Object {
-            "flexDirection": "row",
+            "alignItems": "flex-start",
+            "width": "75%",
           }
         }
       >
-        <View
-          style={
-            Object {
-              "alignItems": "flex-start",
-              "width": "75%",
-            }
-          }
-        >
-          <ArticleFlags />
-        </View>
+        <ArticleFlags />
       </View>
     </View>
   </View>
@@ -492,27 +452,19 @@ exports[`6. tile f 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 10,
+          "flexDirection": "row",
         }
       }
     >
       <View
         style={
           Object {
-            "flexDirection": "row",
+            "alignItems": "flex-start",
+            "width": "75%",
           }
         }
       >
-        <View
-          style={
-            Object {
-              "alignItems": "flex-start",
-              "width": "75%",
-            }
-          }
-        >
-          <ArticleFlags />
-        </View>
+        <ArticleFlags />
       </View>
     </View>
   </View>
@@ -583,27 +535,19 @@ exports[`7. tile g 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 10,
+          "flexDirection": "row",
         }
       }
     >
       <View
         style={
           Object {
-            "flexDirection": "row",
+            "alignItems": "flex-start",
+            "width": "75%",
           }
         }
       >
-        <View
-          style={
-            Object {
-              "alignItems": "flex-start",
-              "width": "75%",
-            }
-          }
-        >
-          <ArticleFlags />
-        </View>
+        <ArticleFlags />
       </View>
     </View>
   </View>
@@ -681,27 +625,19 @@ exports[`8. tile h 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 10,
+          "flexDirection": "row",
         }
       }
     >
       <View
         style={
           Object {
-            "flexDirection": "row",
+            "alignItems": "flex-start",
+            "width": "75%",
           }
         }
       >
-        <View
-          style={
-            Object {
-              "alignItems": "flex-start",
-              "width": "75%",
-            }
-          }
-        >
-          <ArticleFlags />
-        </View>
+        <ArticleFlags />
       </View>
     </View>
     <Text>
@@ -809,20 +745,12 @@ exports[`9. tile i 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 10,
+          "flexDirection": "column",
         }
       }
     >
-      <View
-        style={
-          Object {
-            "flexDirection": "column",
-          }
-        }
-      >
-        <View>
-          <ArticleFlags />
-        </View>
+      <View>
+        <ArticleFlags />
       </View>
     </View>
   </View>
@@ -888,27 +816,19 @@ exports[`10. tile j 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 10,
+          "flexDirection": "row",
         }
       }
     >
       <View
         style={
           Object {
-            "flexDirection": "row",
+            "alignItems": "flex-start",
+            "width": "75%",
           }
         }
       >
-        <View
-          style={
-            Object {
-              "alignItems": "flex-start",
-              "width": "75%",
-            }
-          }
-        >
-          <ArticleFlags />
-        </View>
+        <ArticleFlags />
       </View>
     </View>
   </View>
@@ -974,27 +894,19 @@ exports[`11. tile k 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 10,
+          "flexDirection": "row",
         }
       }
     >
       <View
         style={
           Object {
-            "flexDirection": "row",
+            "alignItems": "flex-start",
+            "width": "75%",
           }
         }
       >
-        <View
-          style={
-            Object {
-              "alignItems": "flex-start",
-              "width": "75%",
-            }
-          }
-        >
-          <ArticleFlags />
-        </View>
+        <ArticleFlags />
       </View>
     </View>
   </View>
@@ -1046,27 +958,19 @@ exports[`12. tile l 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 10,
+          "flexDirection": "row",
         }
       }
     >
       <View
         style={
           Object {
-            "flexDirection": "row",
+            "alignItems": "flex-start",
+            "width": "75%",
           }
         }
       >
-        <View
-          style={
-            Object {
-              "alignItems": "flex-start",
-              "width": "75%",
-            }
-          }
-        >
-          <ArticleFlags />
-        </View>
+        <ArticleFlags />
       </View>
     </View>
   </View>
@@ -1109,20 +1013,12 @@ exports[`13. tile m 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 10,
+          "flexDirection": "column",
         }
       }
     >
-      <View
-        style={
-          Object {
-            "flexDirection": "column",
-          }
-        }
-      >
-        <View>
-          <ArticleFlags />
-        </View>
+      <View>
+        <ArticleFlags />
       </View>
     </View>
   </View>
@@ -1201,27 +1097,19 @@ exports[`14. tile n 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 10,
+          "flexDirection": "row",
         }
       }
     >
       <View
         style={
           Object {
-            "flexDirection": "row",
+            "alignItems": "flex-start",
+            "width": "75%",
           }
         }
       >
-        <View
-          style={
-            Object {
-              "alignItems": "flex-start",
-              "width": "75%",
-            }
-          }
-        >
-          <ArticleFlags />
-        </View>
+        <ArticleFlags />
       </View>
     </View>
   </View>
@@ -1274,27 +1162,19 @@ exports[`15. tile o 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 10,
+          "flexDirection": "row",
         }
       }
     >
       <View
         style={
           Object {
-            "flexDirection": "row",
+            "alignItems": "flex-start",
+            "width": "75%",
           }
         }
       >
-        <View
-          style={
-            Object {
-              "alignItems": "flex-start",
-              "width": "75%",
-            }
-          }
-        >
-          <ArticleFlags />
-        </View>
+        <ArticleFlags />
       </View>
     </View>
   </View>
@@ -1380,20 +1260,12 @@ exports[`16. tile p 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 10,
+          "flexDirection": "column",
         }
       }
     >
-      <View
-        style={
-          Object {
-            "flexDirection": "column",
-          }
-        }
-      >
-        <View>
-          <ArticleFlags />
-        </View>
+      <View>
+        <ArticleFlags />
       </View>
     </View>
     <Text>
@@ -1488,27 +1360,19 @@ exports[`18. tile r 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 10,
+          "flexDirection": "row",
         }
       }
     >
       <View
         style={
           Object {
-            "flexDirection": "row",
+            "alignItems": "flex-start",
+            "width": "75%",
           }
         }
       >
-        <View
-          style={
-            Object {
-              "alignItems": "flex-start",
-              "width": "75%",
-            }
-          }
-        >
-          <ArticleFlags />
-        </View>
+        <ArticleFlags />
       </View>
     </View>
   </View>
@@ -1685,27 +1549,19 @@ exports[`20. tile t 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 10,
+          "flexDirection": "row",
         }
       }
     >
       <View
         style={
           Object {
-            "flexDirection": "row",
+            "alignItems": "flex-start",
+            "width": "75%",
           }
         }
       >
-        <View
-          style={
-            Object {
-              "alignItems": "flex-start",
-              "width": "75%",
-            }
-          }
-        >
-          <ArticleFlags />
-        </View>
+        <ArticleFlags />
       </View>
     </View>
   </View>
@@ -1765,27 +1621,19 @@ exports[`21. tile u 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 10,
+          "flexDirection": "row",
         }
       }
     >
       <View
         style={
           Object {
-            "flexDirection": "row",
+            "alignItems": "flex-start",
+            "width": "75%",
           }
         }
       >
-        <View
-          style={
-            Object {
-              "alignItems": "flex-start",
-              "width": "75%",
-            }
-          }
-        >
-          <ArticleFlags />
-        </View>
+        <ArticleFlags />
       </View>
     </View>
   </View>
@@ -1853,27 +1701,19 @@ exports[`22. tile v 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 10,
+          "flexDirection": "row",
         }
       }
     >
       <View
         style={
           Object {
-            "flexDirection": "row",
+            "alignItems": "flex-start",
+            "width": "75%",
           }
         }
       >
-        <View
-          style={
-            Object {
-              "alignItems": "flex-start",
-              "width": "75%",
-            }
-          }
-        >
-          <ArticleFlags />
-        </View>
+        <ArticleFlags />
       </View>
     </View>
   </View>
@@ -1951,27 +1791,19 @@ exports[`23. tile w 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 10,
+          "flexDirection": "row",
         }
       }
     >
       <View
         style={
           Object {
-            "flexDirection": "row",
+            "alignItems": "flex-start",
+            "width": "75%",
           }
         }
       >
-        <View
-          style={
-            Object {
-              "alignItems": "flex-start",
-              "width": "75%",
-            }
-          }
-        >
-          <ArticleFlags />
-        </View>
+        <ArticleFlags />
       </View>
     </View>
   </View>
@@ -2061,27 +1893,19 @@ exports[`24. tile x 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 10,
+          "flexDirection": "row",
         }
       }
     >
       <View
         style={
           Object {
-            "flexDirection": "row",
+            "alignItems": "flex-start",
+            "width": "75%",
           }
         }
       >
-        <View
-          style={
-            Object {
-              "alignItems": "flex-start",
-              "width": "75%",
-            }
-          }
-        >
-          <ArticleFlags />
-        </View>
+        <ArticleFlags />
       </View>
     </View>
   </View>
@@ -2151,27 +1975,19 @@ exports[`25. tile y 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 10,
+          "flexDirection": "row",
         }
       }
     >
       <View
         style={
           Object {
-            "flexDirection": "row",
+            "alignItems": "flex-start",
+            "width": "75%",
           }
         }
       >
-        <View
-          style={
-            Object {
-              "alignItems": "flex-start",
-              "width": "75%",
-            }
-          }
-        >
-          <ArticleFlags />
-        </View>
+        <ArticleFlags />
       </View>
     </View>
   </View>
@@ -2223,27 +2039,19 @@ exports[`26. tile z 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 10,
+          "flexDirection": "row",
         }
       }
     >
       <View
         style={
           Object {
-            "flexDirection": "row",
+            "alignItems": "flex-start",
+            "width": "75%",
           }
         }
       >
-        <View
-          style={
-            Object {
-              "alignItems": "flex-start",
-              "width": "75%",
-            }
-          }
-        >
-          <ArticleFlags />
-        </View>
+        <ArticleFlags />
       </View>
     </View>
   </View>
@@ -2309,27 +2117,19 @@ exports[`27. tile aa 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 10,
+          "flexDirection": "row",
         }
       }
     >
       <View
         style={
           Object {
-            "flexDirection": "row",
+            "alignItems": "flex-start",
+            "width": "75%",
           }
         }
       >
-        <View
-          style={
-            Object {
-              "alignItems": "flex-start",
-              "width": "75%",
-            }
-          }
-        >
-          <ArticleFlags />
-        </View>
+        <ArticleFlags />
       </View>
     </View>
   </View>
@@ -2407,27 +2207,19 @@ exports[`28. tile ab 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 10,
+          "flexDirection": "row",
         }
       }
     >
       <View
         style={
           Object {
-            "flexDirection": "row",
+            "alignItems": "flex-start",
+            "width": "75%",
           }
         }
       >
-        <View
-          style={
-            Object {
-              "alignItems": "flex-start",
-              "width": "75%",
-            }
-          }
-        >
-          <ArticleFlags />
-        </View>
+        <ArticleFlags />
       </View>
     </View>
     <Text>
@@ -2535,27 +2327,19 @@ exports[`29. tile ae 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 10,
+          "flexDirection": "row",
         }
       }
     >
       <View
         style={
           Object {
-            "flexDirection": "row",
+            "alignItems": "flex-start",
+            "width": "75%",
           }
         }
       >
-        <View
-          style={
-            Object {
-              "alignItems": "flex-start",
-              "width": "75%",
-            }
-          }
-        >
-          <ArticleFlags />
-        </View>
+        <ArticleFlags />
       </View>
     </View>
   </View>
@@ -2598,20 +2382,12 @@ exports[`30. tile ag 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 10,
+          "flexDirection": "column",
         }
       }
     >
-      <View
-        style={
-          Object {
-            "flexDirection": "column",
-          }
-        }
-      >
-        <View>
-          <ArticleFlags />
-        </View>
+      <View>
+        <ArticleFlags />
       </View>
     </View>
   </View>
@@ -2780,27 +2556,19 @@ exports[`33. tile al 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 10,
+          "flexDirection": "row",
         }
       }
     >
       <View
         style={
           Object {
-            "flexDirection": "row",
+            "alignItems": "flex-start",
+            "width": "75%",
           }
         }
       >
-        <View
-          style={
-            Object {
-              "alignItems": "flex-start",
-              "width": "75%",
-            }
-          }
-        >
-          <ArticleFlags />
-        </View>
+        <ArticleFlags />
       </View>
     </View>
   </View>
@@ -2879,27 +2647,19 @@ exports[`34. tile am 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 10,
+          "flexDirection": "row",
         }
       }
     >
       <View
         style={
           Object {
-            "flexDirection": "row",
+            "alignItems": "flex-start",
+            "width": "75%",
           }
         }
       >
-        <View
-          style={
-            Object {
-              "alignItems": "flex-start",
-              "width": "75%",
-            }
-          }
-        >
-          <ArticleFlags />
-        </View>
+        <ArticleFlags />
       </View>
     </View>
   </View>
@@ -2985,27 +2745,19 @@ exports[`35. tile an 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 10,
+          "flexDirection": "row",
         }
       }
     >
       <View
         style={
           Object {
-            "flexDirection": "row",
+            "alignItems": "flex-start",
+            "width": "75%",
           }
         }
       >
-        <View
-          style={
-            Object {
-              "alignItems": "flex-start",
-              "width": "75%",
-            }
-          }
-        >
-          <ArticleFlags />
-        </View>
+        <ArticleFlags />
       </View>
     </View>
   </View>
@@ -3074,27 +2826,19 @@ exports[`36. tile ap 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 10,
+          "flexDirection": "row",
         }
       }
     >
       <View
         style={
           Object {
-            "flexDirection": "row",
+            "alignItems": "flex-start",
+            "width": "75%",
           }
         }
       >
-        <View
-          style={
-            Object {
-              "alignItems": "flex-start",
-              "width": "75%",
-            }
-          }
-        >
-          <ArticleFlags />
-        </View>
+        <ArticleFlags />
       </View>
     </View>
   </View>
@@ -3160,27 +2904,19 @@ exports[`37. tile ad 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 10,
+          "flexDirection": "row",
         }
       }
     >
       <View
         style={
           Object {
-            "flexDirection": "row",
+            "alignItems": "flex-start",
+            "width": "75%",
           }
         }
       >
-        <View
-          style={
-            Object {
-              "alignItems": "flex-start",
-              "width": "75%",
-            }
-          }
-        >
-          <ArticleFlags />
-        </View>
+        <ArticleFlags />
       </View>
     </View>
   </View>
@@ -3251,20 +2987,12 @@ exports[`38. tile ac 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 10,
+          "flexDirection": "column",
         }
       }
     >
-      <View
-        style={
-          Object {
-            "flexDirection": "column",
-          }
-        }
-      >
-        <View>
-          <ArticleFlags />
-        </View>
+      <View>
+        <ArticleFlags />
       </View>
     </View>
   </View>
