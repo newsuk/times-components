@@ -39,7 +39,7 @@ class TimesImage extends Component {
   }
 
   onImageLayout(evt) {
-    const { aspectRatio, onImageLayout, onLayout } = this.props;
+    const { aspectRatio, onLayout } = this.props;
     const { layout } = evt.nativeEvent;
     const { height, width } = contain(
       layout.width,
@@ -52,10 +52,6 @@ class TimesImage extends Component {
 
     if (onLayout) {
       onLayout(evt);
-    }
-
-    if (onImageLayout) {
-      onImageLayout({ height, width });
     }
   }
 
@@ -114,7 +110,9 @@ class TimesImage extends Component {
           <Image
             {...defaultImageProps}
             borderRadius={rounded ? renderedRes / 2 : borderRadius}
-            source={{ uri: getUriAtRes(uri, lowResSize) }}
+            source={{
+              uri: getUriAtRes(uri, Math.min(lowResSize, renderedRes))
+            }}
             style={styles.image}
           />
         ) : (
@@ -134,7 +132,6 @@ class TimesImage extends Component {
 TimesImage.defaultProps = defaultProps;
 TimesImage.propTypes = {
   ...propTypes,
-  onImageLayout: PropTypes.func,
   rounded: PropTypes.bool
 };
 

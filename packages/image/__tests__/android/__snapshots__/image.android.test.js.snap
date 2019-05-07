@@ -186,7 +186,7 @@ exports[`9. uses lowressize image as placeholder if passed 1`] = `
 </View>
 `;
 
-exports[`11. handle layout change 1`] = `
+exports[`10. handle layout change 1`] = `
 <View
   aspectRatio={2}
 >

@@ -24,8 +24,8 @@ class ModalImage extends Component {
     this.toggleElements = this.toggleElements.bind(this);
   }
 
-  onLowResLayout({ width }) {
-    this.setState({ lowResImageWidth: width });
+  onLowResLayout(evt) {
+    this.setState({ lowResImageWidth: evt.nativeEvent.layout.width });
   }
 
   hideModal() {
@@ -129,7 +129,7 @@ class ModalImage extends Component {
           </View>
         </Modal>
         <Button onPress={this.showModal}>
-          <Image {...this.props} onImageLayout={this.onLowResLayout} />
+          <Image {...this.props} onLayout={this.onLowResLayout} />
         </Button>
       </View>
     );

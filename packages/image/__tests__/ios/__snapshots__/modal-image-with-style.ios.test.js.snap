@@ -479,12 +479,13 @@ exports[`3. tablet landscape default modal 1`] = `
               }
             }
           >
-            <View
+            <Image
               style={
                 Object {
-                  "alignItems": "center",
-                  "backgroundColor": "#EDEDED",
-                  "justifyContent": "center",
+                  "height": "100%",
+                  "position": "absolute",
+                  "resizeMode": "contain",
+                  "width": "100%",
                 }
               }
             />
@@ -675,12 +676,13 @@ exports[`4. tablet portrait default modal 1`] = `
               }
             }
           >
-            <View
+            <Image
               style={
                 Object {
-                  "alignItems": "center",
-                  "backgroundColor": "#EDEDED",
-                  "justifyContent": "center",
+                  "height": "100%",
+                  "position": "absolute",
+                  "resizeMode": "contain",
+                  "width": "100%",
                 }
               }
             />
