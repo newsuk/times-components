@@ -93,7 +93,7 @@ SaveAndShareBar.propTypes = {
   saveApi: PropTypes.shape({
     bookmark: PropTypes.func.isRequired,
     getBookmarks: PropTypes.func.isRequired,
-    unBookmark: PropTypes.func.isRequired,
+    unBookmark: PropTypes.func.isRequired
   }).isRequired
 };
 
