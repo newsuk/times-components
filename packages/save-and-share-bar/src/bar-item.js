@@ -1,17 +1,8 @@
 import React from "react";
 import Link from "@times-components/link";
-import styled from "styled-components";
 import PropTypes from "prop-types";
 import styles from "./styles";
-
-const HoverIcon =
-  styled.div &&
-  styled.div`
-    color: ${props => props.colour};
-    &:hover {
-      color: ${props => props.hoverColour || props.colour};
-    }
-  `;
+import HoverIcon from "./hover-icon";
 
 /* eslint-disable jsx-a11y/anchor-is-valid, react/require-default-props */
 const BarItem = ({

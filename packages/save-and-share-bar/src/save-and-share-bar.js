@@ -90,7 +90,11 @@ SaveAndShareBar.propTypes = {
   onShareOnEmail: PropTypes.func.isRequired,
   onShareOnFB: PropTypes.func,
   onShareOnTwitter: PropTypes.func,
-  saveApi: PropTypes.func.isRequired
+  saveApi: PropTypes.shape({
+    bookmark: PropTypes.func.isRequired,
+    getBookmarks: PropTypes.func.isRequired,
+    unBookmark: PropTypes.func.isRequired,
+  }).isRequired
 };
 
 /* Serves as an indication when share links are clicked for tracking and analytics */
@@ -100,3 +104,4 @@ SaveAndShareBar.defaultProps = {
 };
 
 export default withTrackEvents(SaveAndShareBar);
+export { default as HoverIcon } from "./hover-icon";
