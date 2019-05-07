@@ -49,15 +49,7 @@ exports[`1. tile a 1`] = `
     >
       This is tile headline
     </Text>
-    <View
-      style={
-        Object {
-          "marginBottom": 10,
-        }
-      }
-    >
-      <ArticleFlags />
-    </View>
+    <ArticleFlags />
   </View>
   <Image
     style={
@@ -129,15 +121,7 @@ exports[`2. tile b 1`] = `
         ...
       </Text>
     </Text>
-    <View
-      style={
-        Object {
-          "marginBottom": 10,
-        }
-      }
-    >
-      <ArticleFlags />
-    </View>
+    <ArticleFlags />
   </View>
 </Link>
 `;
@@ -195,15 +179,7 @@ exports[`3. tile c 1`] = `
     >
       This is tile headline
     </Text>
-    <View
-      style={
-        Object {
-          "marginBottom": 10,
-        }
-      }
-    >
-      <ArticleFlags />
-    </View>
+    <ArticleFlags />
   </View>
 </Link>
 `;
@@ -213,7 +189,8 @@ exports[`4. tile d 1`] = `
   <Image
     style={
       Object {
-        "width": "45%",
+        "paddingRight": 10,
+        "width": "50%",
       }
     }
   />
@@ -221,8 +198,8 @@ exports[`4. tile d 1`] = `
     style={
       Object {
         "paddingBottom": 5,
-        "paddingHorizontal": 10,
-        "width": "55%",
+        "paddingRight": 10,
+        "width": "50%",
       }
     }
   >
@@ -265,15 +242,7 @@ exports[`4. tile d 1`] = `
     >
       This is tile headline
     </Text>
-    <View
-      style={
-        Object {
-          "marginBottom": 10,
-        }
-      }
-    >
-      <ArticleFlags />
-    </View>
+    <ArticleFlags />
   </View>
 </Link>
 `;
@@ -283,7 +252,8 @@ exports[`5. tile e 1`] = `
   <Image
     style={
       Object {
-        "width": "45%",
+        "paddingRight": 10,
+        "width": "50%",
       }
     }
   />
@@ -291,8 +261,8 @@ exports[`5. tile e 1`] = `
     style={
       Object {
         "paddingBottom": 5,
-        "paddingHorizontal": 10,
-        "width": "55%",
+        "paddingRight": 10,
+        "width": "50%",
       }
     }
   >
@@ -335,15 +305,7 @@ exports[`5. tile e 1`] = `
     >
       This is tile headline
     </Text>
-    <View
-      style={
-        Object {
-          "marginBottom": 10,
-        }
-      }
-    >
-      <ArticleFlags />
-    </View>
+    <ArticleFlags />
   </View>
 </Link>
 `;
@@ -421,15 +383,7 @@ exports[`6. tile f 1`] = `
         ...
       </Text>
     </Text>
-    <View
-      style={
-        Object {
-          "marginBottom": 10,
-        }
-      }
-    >
-      <ArticleFlags />
-    </View>
+    <ArticleFlags />
   </View>
 </Link>
 `;
@@ -495,15 +449,7 @@ exports[`7. tile g 1`] = `
     >
       This is tile headline
     </Text>
-    <View
-      style={
-        Object {
-          "marginBottom": 10,
-        }
-      }
-    >
-      <ArticleFlags />
-    </View>
+    <ArticleFlags />
   </View>
 </Link>
 `;
@@ -576,15 +522,7 @@ exports[`8. tile h 1`] = `
         ...
       </Text>
     </Text>
-    <View
-      style={
-        Object {
-          "marginBottom": 10,
-        }
-      }
-    >
-      <ArticleFlags />
-    </View>
+    <ArticleFlags />
     <Text>
       <Text
         style={
@@ -687,15 +625,7 @@ exports[`9. tile i 1`] = `
     >
       This is tile headline
     </Text>
-    <View
-      style={
-        Object {
-          "marginBottom": 10,
-        }
-      }
-    >
-      <ArticleFlags />
-    </View>
+    <ArticleFlags />
   </View>
 </Link>
 `;
@@ -756,15 +686,7 @@ exports[`10. tile j 1`] = `
     >
       This is tile headline
     </Text>
-    <View
-      style={
-        Object {
-          "marginBottom": 10,
-        }
-      }
-    >
-      <ArticleFlags />
-    </View>
+    <ArticleFlags />
   </View>
 </Link>
 `;
@@ -825,15 +747,7 @@ exports[`11. tile k 1`] = `
     >
       This is tile headline
     </Text>
-    <View
-      style={
-        Object {
-          "marginBottom": 10,
-        }
-      }
-    >
-      <ArticleFlags />
-    </View>
+    <ArticleFlags />
   </View>
 </Link>
 `;
@@ -880,15 +794,7 @@ exports[`12. tile l 1`] = `
     >
       This is tile headline
     </Text>
-    <View
-      style={
-        Object {
-          "marginBottom": 10,
-        }
-      }
-    >
-      <ArticleFlags />
-    </View>
+    <ArticleFlags />
   </View>
 </Link>
 `;
@@ -920,21 +826,14 @@ exports[`13. tile m 1`] = `
           "fontSize": 14,
           "lineHeight": 20,
           "paddingBottom": 10,
+          "paddingHorizontal": 40,
           "textAlign": "center",
         }
       }
     >
       Three Conservative MPs resign
     </Text>
-    <View
-      style={
-        Object {
-          "marginBottom": 10,
-        }
-      }
-    >
-      <ArticleFlags />
-    </View>
+    <ArticleFlags />
   </View>
 </Link>
 `;
@@ -1008,15 +907,7 @@ exports[`14. tile n 1`] = `
     >
       Three Conservative MPs resign
     </Text>
-    <View
-      style={
-        Object {
-          "marginBottom": 10,
-        }
-      }
-    >
-      <ArticleFlags />
-    </View>
+    <ArticleFlags />
   </View>
 </Link>
 `;
@@ -1064,15 +955,7 @@ exports[`15. tile o 1`] = `
     >
       This is tile headline
     </Text>
-    <View
-      style={
-        Object {
-          "marginBottom": 10,
-        }
-      }
-    >
-      <ArticleFlags />
-    </View>
+    <ArticleFlags />
   </View>
 </Link>
 `;
@@ -1131,7 +1014,6 @@ exports[`16. tile p 1`] = `
           "lineHeight": 35,
           "marginBottom": 5,
           "paddingHorizontal": 10,
-          "paddingTop": 10,
           "textAlign": "center",
         }
       }
@@ -1153,15 +1035,7 @@ exports[`16. tile p 1`] = `
     >
       Three Conservative MPs resign
     </Text>
-    <View
-      style={
-        Object {
-          "marginBottom": 10,
-        }
-      }
-    >
-      <ArticleFlags />
-    </View>
+    <ArticleFlags />
     <Text>
       <Text
         style={
@@ -1251,15 +1125,7 @@ exports[`18. tile r 1`] = `
     >
       This is tile headline
     </Text>
-    <View
-      style={
-        Object {
-          "marginBottom": 10,
-        }
-      }
-    >
-      <ArticleFlags />
-    </View>
+    <ArticleFlags />
   </View>
   <Image />
 </Link>
@@ -1297,7 +1163,7 @@ exports[`19. tile s 1`] = `
     style={
       Object {
         "color": "#696969",
-        "fontFamily": "TimesDigitalW04",
+        "fontFamily": "TimesDigitalW04-Regular",
         "fontSize": 14,
         "lineHeight": 20,
       }
@@ -1431,15 +1297,7 @@ exports[`20. tile t 1`] = `
     >
       This is tile headline
     </Text>
-    <View
-      style={
-        Object {
-          "marginBottom": 10,
-        }
-      }
-    >
-      <ArticleFlags />
-    </View>
+    <ArticleFlags />
   </View>
 </Link>
 `;
@@ -1494,15 +1352,7 @@ exports[`21. tile u 1`] = `
     >
       This is tile headline
     </Text>
-    <View
-      style={
-        Object {
-          "marginBottom": 10,
-        }
-      }
-    >
-      <ArticleFlags />
-    </View>
+    <ArticleFlags />
   </View>
   <Image
     style={
@@ -1565,15 +1415,7 @@ exports[`22. tile v 1`] = `
     >
       This is tile headline
     </Text>
-    <View
-      style={
-        Object {
-          "marginBottom": 10,
-        }
-      }
-    >
-      <ArticleFlags />
-    </View>
+    <ArticleFlags />
   </View>
 </Link>
 `;
@@ -1646,15 +1488,7 @@ exports[`23. tile w 1`] = `
         ...
       </Text>
     </Text>
-    <View
-      style={
-        Object {
-          "marginBottom": 10,
-        }
-      }
-    >
-      <ArticleFlags />
-    </View>
+    <ArticleFlags />
   </View>
   <Image
     style={
@@ -1739,15 +1573,7 @@ exports[`24. tile x 1`] = `
         ...
       </Text>
     </Text>
-    <View
-      style={
-        Object {
-          "marginBottom": 10,
-        }
-      }
-    >
-      <ArticleFlags />
-    </View>
+    <ArticleFlags />
   </View>
 </Link>
 `;
@@ -1812,15 +1638,7 @@ exports[`25. tile y 1`] = `
         ...
       </Text>
     </Text>
-    <View
-      style={
-        Object {
-          "marginBottom": 10,
-        }
-      }
-    >
-      <ArticleFlags />
-    </View>
+    <ArticleFlags />
   </View>
 </Link>
 `;
@@ -1867,15 +1685,7 @@ exports[`26. tile z 1`] = `
     >
       This is tile headline
     </Text>
-    <View
-      style={
-        Object {
-          "marginBottom": 10,
-        }
-      }
-    >
-      <ArticleFlags />
-    </View>
+    <ArticleFlags />
   </View>
   <Image />
 </Link>
@@ -1936,15 +1746,7 @@ exports[`27. tile aa 1`] = `
     >
       This is tile headline
     </Text>
-    <View
-      style={
-        Object {
-          "marginBottom": 10,
-        }
-      }
-    >
-      <ArticleFlags />
-    </View>
+    <ArticleFlags />
   </View>
 </Link>
 `;
@@ -2017,15 +1819,7 @@ exports[`28. tile ab 1`] = `
         ...
       </Text>
     </Text>
-    <View
-      style={
-        Object {
-          "marginBottom": 10,
-        }
-      }
-    >
-      <ArticleFlags />
-    </View>
+    <ArticleFlags />
     <Text>
       <Text
         style={
@@ -2128,15 +1922,7 @@ exports[`29. tile ae 1`] = `
         ...
       </Text>
     </Text>
-    <View
-      style={
-        Object {
-          "marginBottom": 10,
-        }
-      }
-    >
-      <ArticleFlags />
-    </View>
+    <ArticleFlags />
   </View>
 </Link>
 `;
@@ -2174,15 +1960,7 @@ exports[`30. tile ag 1`] = `
     >
       Three Conservative MPs resign
     </Text>
-    <View
-      style={
-        Object {
-          "marginBottom": 10,
-        }
-      }
-    >
-      <ArticleFlags />
-    </View>
+    <ArticleFlags />
   </View>
 </Link>
 `;
@@ -2238,16 +2016,18 @@ exports[`32. tile ak 1`] = `
     Object {
       "backgroundColor": "#F0F0F0",
       "flex": 1,
+      "height": 150,
       "marginHorizontal": 5,
+      "overflow": "hidden",
     }
   }
 >
   <View
     style={
       Object {
-        "paddingHorizontal": 15,
-        "paddingTop": 15,
-        "width": "85%",
+        "height": 80,
+        "paddingHorizontal": 10,
+        "paddingTop": 10,
       }
     }
   >
@@ -2256,9 +2036,9 @@ exports[`32. tile ak 1`] = `
         Object {
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 25,
+          "fontSize": 22,
           "fontWeight": "900",
-          "lineHeight": 25,
+          "lineHeight": 22,
           "marginBottom": 5,
         }
       }
@@ -2270,6 +2050,7 @@ exports[`32. tile ak 1`] = `
     style={
       Object {
         "alignSelf": "flex-end",
+        "marginTop": -25,
         "width": "85%",
       }
     }
@@ -2346,15 +2127,7 @@ exports[`33. tile al 1`] = `
         ...
       </Text>
     </Text>
-    <View
-      style={
-        Object {
-          "marginBottom": 10,
-        }
-      }
-    >
-      <ArticleFlags />
-    </View>
+    <ArticleFlags />
   </View>
 </Link>
 `;
@@ -2428,15 +2201,7 @@ exports[`34. tile am 1`] = `
         ...
       </Text>
     </Text>
-    <View
-      style={
-        Object {
-          "marginBottom": 10,
-        }
-      }
-    >
-      <ArticleFlags />
-    </View>
+    <ArticleFlags />
   </View>
 </Link>
 `;
@@ -2517,15 +2282,7 @@ exports[`35. tile an 1`] = `
         ...
       </Text>
     </Text>
-    <View
-      style={
-        Object {
-          "marginBottom": 10,
-        }
-      }
-    >
-      <ArticleFlags />
-    </View>
+    <ArticleFlags />
   </View>
 </Link>
 `;
@@ -2589,15 +2346,7 @@ exports[`36. tile ap 1`] = `
     >
       This is tile headline
     </Text>
-    <View
-      style={
-        Object {
-          "marginBottom": 10,
-        }
-      }
-    >
-      <ArticleFlags />
-    </View>
+    <ArticleFlags />
   </View>
 </Link>
 `;
@@ -2658,15 +2407,7 @@ exports[`37. tile ad 1`] = `
     >
       This is tile headline
     </Text>
-    <View
-      style={
-        Object {
-          "marginBottom": 10,
-        }
-      }
-    >
-      <ArticleFlags />
-    </View>
+    <ArticleFlags />
   </View>
 </Link>
 `;
@@ -2732,15 +2473,7 @@ exports[`38. tile ac 1`] = `
     >
       This is tile headline
     </Text>
-    <View
-      style={
-        Object {
-          "marginBottom": 10,
-        }
-      }
-    >
-      <ArticleFlags />
-    </View>
+    <ArticleFlags />
   </View>
 </Link>
 `;

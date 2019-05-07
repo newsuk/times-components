@@ -38,9 +38,6 @@ class TileSummary extends Component {
     } = this.props;
 
     if (!withStar || Platform.OS === "ios") {
-      if (expirableFlags && !expirableFlags.length) {
-        return null;
-      }
       return <ArticleFlags {...flagColour} flags={expirableFlags} />;
     }
 

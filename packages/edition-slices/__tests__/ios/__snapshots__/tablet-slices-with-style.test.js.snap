@@ -303,7 +303,6 @@ exports[`6. leaders slice - medium 1`] = `
   style={
     Object {
       "backgroundColor": "#F0F0F0",
-      "paddingHorizontal": 40,
       "paddingTop": 20,
     }
   }
@@ -1445,7 +1444,6 @@ exports[`21. leaders slice - wide 1`] = `
   style={
     Object {
       "backgroundColor": "#F0F0F0",
-      "paddingHorizontal": 40,
       "paddingTop": 20,
     }
   }
@@ -2645,7 +2643,6 @@ exports[`36. leaders slice - huge 1`] = `
   style={
     Object {
       "backgroundColor": "#F0F0F0",
-      "paddingHorizontal": 40,
       "paddingTop": 20,
     }
   }

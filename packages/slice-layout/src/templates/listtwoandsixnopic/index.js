@@ -44,17 +44,37 @@ const ListTwoAndSixNoPic = ({
     );
   }
 
-  const supportItemsOne = supportItems.slice(0, 3);
-  const supportItemsTwo = supportItems.slice(3);
   return (
     <View style={styles.container}>
       <View style={styles.rowItemContainer}>{lead1}</View>
       <ItemColSeparator />
       <View style={styles.rowItemContainer}>{lead2}</View>
       <ItemColSeparator />
-      <VerticalLayout style={styles.rowItemContainer} tiles={supportItemsOne} />
-      <ItemColSeparator />
-      <VerticalLayout style={styles.rowItemContainer} tiles={supportItemsTwo} />
+      <View style={styles.supportsWrapper}>
+        <HorizontalLayout
+          containerStyle={styles.supportContainer}
+          tiles={[
+            { style: styles.supportItem, tile: support1 },
+            { style: styles.supportItem, tile: support2 }
+          ]}
+        />
+        <ItemRowSeparator />
+        <HorizontalLayout
+          containerStyle={styles.supportContainer}
+          tiles={[
+            { style: styles.supportItem, tile: support3 },
+            { style: styles.supportItem, tile: support4 }
+          ]}
+        />
+        <ItemRowSeparator />
+        <HorizontalLayout
+          containerStyle={styles.supportContainer}
+          tiles={[
+            { style: styles.supportItem, tile: support5 },
+            { style: styles.supportItem, tile: support6 }
+          ]}
+        />
+      </View>
     </View>
   );
 };
