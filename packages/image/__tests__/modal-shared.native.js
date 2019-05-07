@@ -35,7 +35,7 @@ export default () => {
   );
 
   const props = {
-    aspectRatio: 3 / 2,
+    aspectRatio: 2,
     caption: <MockCaption />,
     uri: "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0"
   };

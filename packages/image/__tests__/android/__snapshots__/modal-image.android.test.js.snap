@@ -46,7 +46,7 @@ exports[`1. modal image 1`] = `
       >
         <Gestures>
           <View
-            aspectRatio={1.5}
+            aspectRatio={2}
           >
             <Image
               caption={<MockCaption />}
@@ -55,7 +55,7 @@ exports[`1. modal image 1`] = `
               show={false}
               source={
                 Object {
-                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=660",
+                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800",
                 }
               }
             />
@@ -66,7 +66,7 @@ exports[`1. modal image 1`] = `
               show={false}
               source={
                 Object {
-                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=660",
+                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800",
                 }
               }
             />
@@ -86,7 +86,7 @@ exports[`1. modal image 1`] = `
   </Modal>
   <View>
     <View
-      aspectRatio={1.5}
+      aspectRatio={2}
     >
       <View
         height="100%"
@@ -108,7 +108,7 @@ exports[`1. modal image 1`] = `
         show={false}
         source={
           Object {
-            "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=660",
+            "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800",
           }
         }
       />
@@ -163,7 +163,7 @@ exports[`2. modal image with no caption 1`] = `
       >
         <Gestures>
           <View
-            aspectRatio={1.5}
+            aspectRatio={2}
           >
             <View
               height="100%"
@@ -186,7 +186,7 @@ exports[`2. modal image with no caption 1`] = `
   </Modal>
   <View>
     <View
-      aspectRatio={1.5}
+      aspectRatio={2}
     >
       <View
         height="100%"
@@ -250,7 +250,7 @@ exports[`3. modal image with custom highressize 1`] = `
       >
         <Gestures>
           <View
-            aspectRatio={1.5}
+            aspectRatio={2}
           >
             <Image
               caption={<MockCaption />}
@@ -290,7 +290,7 @@ exports[`3. modal image with custom highressize 1`] = `
   </Modal>
   <View>
     <View
-      aspectRatio={1.5}
+      aspectRatio={2}
     >
       <View
         height="100%"
@@ -356,7 +356,7 @@ exports[`8. hides elements when tapping on the image 1`] = `
       >
         <Gestures>
           <View
-            aspectRatio={1.5}
+            aspectRatio={2}
           >
             <View
               height="100%"
@@ -376,7 +376,7 @@ exports[`8. hides elements when tapping on the image 1`] = `
   </Modal>
   <View>
     <View
-      aspectRatio={1.5}
+      aspectRatio={2}
     >
       <View
         height="100%"
@@ -440,7 +440,7 @@ exports[`9. re-shows elements when tapping on the image a second time 1`] = `
       >
         <Gestures>
           <View
-            aspectRatio={1.5}
+            aspectRatio={2}
           >
             <View
               height="100%"
@@ -469,7 +469,7 @@ exports[`9. re-shows elements when tapping on the image a second time 1`] = `
   </Modal>
   <View>
     <View
-      aspectRatio={1.5}
+      aspectRatio={2}
     >
       <View
         height="100%"

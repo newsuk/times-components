@@ -15,7 +15,7 @@ export default (renderComponent, platformTests = []) => {
       test: () => {
         const output = renderComponent(
           <Image
-            aspectRatio={3 / 2}
+            aspectRatio={2}
             highResSize={1000}
             uri="http://example.com/image.jpg?crop=1016%2C677%2C0%2C0"
           />

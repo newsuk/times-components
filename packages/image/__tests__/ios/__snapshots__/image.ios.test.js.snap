@@ -2,7 +2,7 @@
 
 exports[`1. default layout 1`] = `
 <View
-  aspectRatio={1.5}
+  aspectRatio={2}
 >
   <View
     height="100%"
