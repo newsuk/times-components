@@ -2,11 +2,12 @@
 import React, { Component, Fragment } from "react";
 import { ActivityIndicator, Text } from "react-native";
 import Link from "@times-components/link";
-import { HoverIcon } from "@times-components/save-and-share-bar"
+import { HoverIcon } from "@times-components/save-and-share-bar";
 import PropTypes from "prop-types";
 import { IconSaveBookmark } from "@times-components/icons";
 import styles, { getStyles } from "./styles";
 
+/* eslint-disable jsx-a11y/anchor-is-valid */
 class SaveStarWeb extends Component {
   constructor(props) {
     super(props);
@@ -128,8 +129,9 @@ SaveStarWeb.propTypes = {
   saveApi: PropTypes.shape({
     bookmark: PropTypes.func.isRequired,
     getBookmarks: PropTypes.func.isRequired,
-    unBookmark: PropTypes.func.isRequired,
-  }).isRequired};
+    unBookmark: PropTypes.func.isRequired
+  }).isRequired
+};
 
 SaveStarWeb.defaultProps = {
   colour: styles.svgIcon.fillColour,
