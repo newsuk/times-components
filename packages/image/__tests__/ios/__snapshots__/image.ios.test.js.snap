@@ -167,19 +167,6 @@ exports[`9. uses lowressize image as placeholder if passed 1`] = `
 <View
   aspectRatio={2}
 >
-  <View
-    height="100%"
-    width="100%"
-  >
-    <Image
-      resizeMode="contain"
-      source={
-        Object {
-          "testUri": "../../../packages/image/assets/t.png",
-        }
-      }
-    />
-  </View>
   <Image
     fadeImageIn={false}
     source={

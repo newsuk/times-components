@@ -110,7 +110,6 @@ class TimesImage extends Component {
         onLayout={this.onImageLayout}
         style={[styles.imageContainer, style]}
       >
-        <Placeholder dimensions={dimensions} />
         {lowResSize ? (
           <Image
             {...defaultImageProps}
@@ -118,7 +117,9 @@ class TimesImage extends Component {
             source={{ uri: getUriAtRes(uri, lowResSize) }}
             style={styles.image}
           />
-        ) : null}
+        ) : (
+          <Placeholder dimensions={dimensions} />
+        )}
         <LazyLoadingImage
           {...defaultImageProps}
           borderRadius={rounded ? renderedRes / 2 : borderRadius}

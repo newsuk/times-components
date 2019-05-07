@@ -48,19 +48,6 @@ exports[`1. modal image 1`] = `
           <View
             aspectRatio={1.5}
           >
-            <View
-              height="100%"
-              width="100%"
-            >
-              <Image
-                resizeMode="contain"
-                source={
-                  Object {
-                    "testUri": "../../../packages/image/assets/t.png",
-                  }
-                }
-              />
-            </View>
             <Image
               caption={<MockCaption />}
               fadeImageIn={false}
@@ -293,19 +280,6 @@ exports[`3. modal image with custom highressize 1`] = `
           <View
             aspectRatio={1.5}
           >
-            <View
-              height="100%"
-              width="100%"
-            >
-              <Image
-                resizeMode="contain"
-                source={
-                  Object {
-                    "testUri": "../../../packages/image/assets/t.png",
-                  }
-                }
-              />
-            </View>
             <Image
               caption={<MockCaption />}
               fadeImageIn={false}
