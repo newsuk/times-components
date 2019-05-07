@@ -19,7 +19,7 @@ const makeClient = options => {
 
   const networkInterfaceOptions = {
     fetch,
-    headers: options.headers,
+    headers: options.headers || {},
     uri: options.uri
   };
 
