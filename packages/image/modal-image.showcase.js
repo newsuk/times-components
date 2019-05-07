@@ -31,5 +31,5 @@ export default {
       type: "story"
     }
   ],
-  name: "Primitives/ModalImage"
+  name: "Primitives/modal-image"
 };

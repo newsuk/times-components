@@ -35,7 +35,7 @@ const ListTwoAndSixNoPic = ({
           containerStyle={styles.leadContainer}
           tiles={[
             { style: styles.leadItem, tile: lead1 },
-            { style: styles.leadItem, tile: lead1 }
+            { style: styles.leadItem, tile: lead2 }
           ]}
         />
         <ItemRowSeparator />

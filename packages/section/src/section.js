@@ -15,6 +15,7 @@ class Section extends Component {
   constructor(props) {
     super(props);
     this.renderItem = this.renderItem.bind(this);
+    this.renderItemSeperator = this.renderItemSeperator.bind(this);
     this.onViewableItemsChanged = this.onViewableItemsChanged.bind(this);
   }
 
@@ -43,6 +44,7 @@ class Section extends Component {
 
       return <MagazineCover cover={cover} />;
     }
+
     return null;
   }
 
@@ -64,6 +66,24 @@ class Section extends Component {
     );
   }
 
+  renderItemSeperator({ leadingItem }) {
+    const {
+      section: { name }
+    } = this.props;
+    const isPuzzle = name === "PuzzleSection";
+    const isIgnored = leadingItem.ignoreSeparator;
+
+    if (isPuzzle || isIgnored) {
+      return null;
+    }
+
+    return (
+      <View style={styles.listItemSeparatorContainer}>
+        <SectionItemSeparator />
+      </View>
+    );
+  }
+
   render() {
     const {
       section: { name, slices },
@@ -79,6 +99,20 @@ class Section extends Component {
 
     if (slices) receiveChildList(data);
 
+    const excludeSliceNames = ["LeadersSlice", "DailyUniversalRegister"];
+    const sliceNames = data.map(slice => slice.name);
+    const sliceIndices = excludeSliceNames.reduce((acc, sliceName) => {
+      const index = sliceNames.indexOf(sliceName);
+      if (index > 0) {
+        return [...acc, index - 1, index];
+      }
+
+      return acc;
+    }, []);
+    sliceIndices.forEach(index => {
+      data[index].ignoreSeparator = true;
+    });
+
     return (
       <Responsive>
         <ResponsiveContext.Consumer>
@@ -86,14 +120,7 @@ class Section extends Component {
             <FlatList
               data={data}
               initialNumToRender={5}
-              ItemSeparatorComponent={
-                !isPuzzle &&
-                (() => (
-                  <View style={styles.listItemSeparatorContainer}>
-                    <SectionItemSeparator />
-                  </View>
-                ))
-              }
+              ItemSeparatorComponent={this.renderItemSeperator}
               keyExtractor={item => item.elementId}
               ListHeaderComponent={this.getHeaderComponent(
                 isPuzzle,

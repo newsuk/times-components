@@ -58,19 +58,17 @@ class SaveAndShareBar extends Component {
               title="Share on Facebook"
             />
           </BarItem>
-          {Clipboard.isAvailable() && (
-            <BarItem
-              color={styles.svgIcon.save.strokeColour}
-              hoverColor={styles.svgIcon.hoverFillColour}
-              onPress={this.copyToClipboard}
-            >
-              <IconCopyLink
-                fillColour="currentColor"
-                height={styles.svgIcon.height}
-                title="Copy link to clipboard"
-              />
-            </BarItem>
-          )}
+          <BarItem
+            color={styles.svgIcon.save.strokeColour}
+            hoverColor={styles.svgIcon.hoverFillColour}
+            onPress={this.copyToClipboard}
+          >
+            <IconCopyLink
+              fillColour="currentColor"
+              height={styles.svgIcon.height}
+              title="Copy link to clipboard"
+            />
+          </BarItem>
         </View>
         <View style={styles.rowItem}>
           <Text style={styles.label}>Save</Text>

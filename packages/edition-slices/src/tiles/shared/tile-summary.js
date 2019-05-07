@@ -38,9 +38,6 @@ class TileSummary extends Component {
     } = this.props;
 
     if (!withStar || Platform.OS === "ios") {
-      if (expirableFlags && !expirableFlags.length) {
-        return null;
-      }
       return <ArticleFlags {...flagColour} flags={expirableFlags} />;
     }
 
@@ -51,9 +48,11 @@ class TileSummary extends Component {
         <View style={tileStyle.flagStyle}>
           <ArticleFlags {...flagColour} flags={expirableFlags} />
         </View>
-        <View style={tileStyle.starButton}>
-          <TileStar articleId={id} isDark={isDarkStar} />
-        </View>
+        <TileStar
+          articleId={id}
+          isDark={isDarkStar}
+          style={tileStyle.starButton}
+        />
       </View>
     );
   }

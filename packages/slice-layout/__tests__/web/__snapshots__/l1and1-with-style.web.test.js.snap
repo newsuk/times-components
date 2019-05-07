@@ -21,6 +21,15 @@ exports[`1. lead one and one - small 1`] = `
   </div>
   <div
     className="S1"
+    style={
+      Object {
+        "backgroundColor": "rgba(219,219,219,1.00)",
+        "height": "1px",
+      }
+    }
+  />
+  <div
+    className="S1"
   >
     support
   </div>

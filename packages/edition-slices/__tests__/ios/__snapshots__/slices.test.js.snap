@@ -192,6 +192,7 @@ exports[`3. lead one and one 1`] = `
   <TileA
     tileName="lead"
   />
+  <View />
   <TileB
     tileName="support"
   />
@@ -416,7 +417,7 @@ Array [
     <View />
     <View>
       <TileC
-        tileName="lead1"
+        tileName="lead2"
       />
     </View>
   </View>,

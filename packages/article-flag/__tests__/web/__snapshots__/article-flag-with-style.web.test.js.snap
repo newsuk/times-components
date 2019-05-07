@@ -108,7 +108,6 @@ exports[`2. multiple article flags 1`] = `
   -webkit-box-align: stretch;
   align-items: stretch;
   margin-right: 0px;
-  margin-bottom: 0px;
 }
 
 .IS1 {
@@ -262,6 +261,7 @@ exports[`2. multiple article flags 1`] = `
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  margin-bottom: 10px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-box-lines: multiple;

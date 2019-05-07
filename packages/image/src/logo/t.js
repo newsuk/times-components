@@ -6,7 +6,7 @@ const T = ({ width }) => (
   <Image
     resizeMode="contain"
     // eslint-disable-next-line global-require
-    source={require("../assets/t.png")}
+    source={require("../../assets/t.png")}
     style={{ width: Math.floor(width / 4) }}
   />
 );

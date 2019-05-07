@@ -5,10 +5,8 @@ exports[`phone full article with style 1`] = `
   <View
     style={
       Object {
-        "borderBottomColor": "#DBDBDB",
-        "borderBottomWidth": 1,
-        "marginBottom": 20,
-        "paddingBottom": 25,
+        "marginBottom": 15,
+        "paddingBottom": 20,
         "paddingTop": 35,
       }
     }
@@ -131,10 +129,8 @@ exports[`tablet full article with style 1`] = `
   <View
     style={
       Object {
-        "borderBottomColor": "#DBDBDB",
-        "borderBottomWidth": 1,
-        "marginBottom": 20,
-        "paddingBottom": 25,
+        "marginBottom": 15,
+        "paddingBottom": 20,
         "paddingTop": 35,
       }
     }

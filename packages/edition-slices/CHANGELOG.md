@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.56.4](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.56.3...@times-components/edition-slices@0.56.4) (2019-05-03)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
+## [0.56.3](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.56.2...@times-components/edition-slices@0.56.3) (2019-05-03)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
+## [0.56.2](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.56.1...@times-components/edition-slices@0.56.2) (2019-05-03)
+
+
+### Bug Fixes
+
+* use different lead tiles ([#1923](https://github.com/newsuk/times-components/issues/1923)) ([5006462](https://github.com/newsuk/times-components/commit/5006462))
+
+
+
+
+
+## [0.56.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.56.0...@times-components/edition-slices@0.56.1) (2019-05-03)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
+# [0.56.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.55.5...@times-components/edition-slices@0.56.0) (2019-05-01)
+
+
+### Features
+
+* replat 6101 edition slices keylines ([#1913](https://github.com/newsuk/times-components/issues/1913)) ([4919482](https://github.com/newsuk/times-components/commit/4919482))
+
+
+
+
+
 ## [0.55.5](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.55.4...@times-components/edition-slices@0.55.5) (2019-05-01)
 
 

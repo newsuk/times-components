@@ -19,6 +19,7 @@ import articleFixture, { testFixture } from "../fixtures/full-article";
 import sharedProps from "./shared-props";
 
 jest.mock("@times-components/article-lead-asset", () => "ArticleLeadAsset");
+jest.mock("@times-components/save-and-share-bar", () => "SaveAndShareBar");
 
 const styles = [
   "alignItems",
