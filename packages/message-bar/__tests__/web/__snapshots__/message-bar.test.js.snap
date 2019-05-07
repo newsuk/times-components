@@ -26,11 +26,13 @@ exports[`1. renders correctly 1`] = `
 
 exports[`5. renders correctly 1`] = `
 Array [
+  <div />,
   <div>
     <div>
-      test child content
+      <div>
+        test child content
+      </div>
     </div>
   </div>,
-  <div />,
 ]
 `;

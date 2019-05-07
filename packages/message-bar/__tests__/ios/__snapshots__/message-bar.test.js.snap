@@ -24,11 +24,13 @@ exports[`1. renders correctly 1`] = `
 
 exports[`5. renders correctly 1`] = `
 Array [
-  <View>
-    <Text>
-      test child content
-    </Text>
-  </View>,
   <View />,
+  <View>
+    <View>
+      <Text>
+        test child content
+      </Text>
+    </View>
+  </View>,
 ]
 `;
