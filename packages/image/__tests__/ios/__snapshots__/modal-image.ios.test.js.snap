@@ -59,17 +59,6 @@ exports[`1. modal image 1`] = `
                 }
               }
             />
-            <Image
-              caption={<MockCaption />}
-              fadeImageIn={false}
-              onImagePress={null}
-              show={false}
-              source={
-                Object {
-                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800",
-                }
-              }
-            />
           </View>
         </Gestures>
       </SafeAreaView>
@@ -280,17 +269,6 @@ exports[`3. modal image with custom highressize 1`] = `
           <View
             aspectRatio={2}
           >
-            <Image
-              caption={<MockCaption />}
-              fadeImageIn={false}
-              onImagePress={null}
-              show={false}
-              source={
-                Object {
-                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
-                }
-              }
-            />
             <Image
               caption={<MockCaption />}
               fadeImageIn={false}

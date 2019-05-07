@@ -63,6 +63,9 @@ class TimesImage extends Component {
     const { width } = this.state;
     const renderedRes = highResSize || width;
     const srcUri = getUriAtRes(uri, renderedRes);
+    const lowResUri = lowResSize
+      ? getUriAtRes(uri, Math.min(lowResSize, renderedRes))
+      : null;
 
     return (
       <View
@@ -70,18 +73,17 @@ class TimesImage extends Component {
         onLayout={this.onImageLayout}
         style={[styles.imageContainer, style]}
       >
-        {lowResSize ? (
+        {!lowResSize ? <Placeholder size={renderedRes} /> : null}
+        {lowResSize && lowResUri !== srcUri ? (
           <Image
             {...defaultImageProps}
             borderRadius={rounded ? renderedRes / 2 : borderRadius}
             source={{
-              uri: getUriAtRes(uri, Math.min(lowResSize, renderedRes))
+              uri: lowResUri
             }}
             style={styles.image}
           />
-        ) : (
-          <Placeholder size={renderedRes} />
-        )}
+        ) : null}
         <LazyLoadingImage
           {...defaultImageProps}
           borderRadius={rounded ? renderedRes / 2 : borderRadius}

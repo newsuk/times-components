@@ -489,16 +489,6 @@ exports[`3. tablet landscape default modal 1`] = `
                 }
               }
             />
-            <Image
-              style={
-                Object {
-                  "height": "100%",
-                  "position": "absolute",
-                  "resizeMode": "contain",
-                  "width": "100%",
-                }
-              }
-            />
           </View>
         </Gestures>
       </SafeAreaView>
@@ -676,16 +666,6 @@ exports[`4. tablet portrait default modal 1`] = `
               }
             }
           >
-            <Image
-              style={
-                Object {
-                  "height": "100%",
-                  "position": "absolute",
-                  "resizeMode": "contain",
-                  "width": "100%",
-                }
-              }
-            />
             <Image
               style={
                 Object {
