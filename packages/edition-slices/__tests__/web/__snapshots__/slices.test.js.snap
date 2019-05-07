@@ -505,31 +505,47 @@ exports[`13. list two and six no pic 1`] = `
     </div>
     <div />
     <div>
-      <TileL
-        tileName="support1"
-      />
+      <div>
+        <div>
+          <TileL
+            tileName="support1"
+          />
+        </div>
+        <div />
+        <div>
+          <TileL
+            tileName="support2"
+          />
+        </div>
+      </div>
       <div />
-      <TileL
-        tileName="support2"
-      />
+      <div>
+        <div>
+          <TileL
+            tileName="support3"
+          />
+        </div>
+        <div />
+        <div>
+          <TileL
+            tileName="support4"
+          />
+        </div>
+      </div>
       <div />
-      <TileL
-        tileName="support3"
-      />
-    </div>
-    <div />
-    <div>
-      <TileL
-        tileName="support4"
-      />
-      <div />
-      <TileL
-        tileName="support5"
-      />
-      <div />
-      <TileL
-        tileName="support6"
-      />
+      <div>
+        <div>
+          <TileL
+            tileName="support5"
+          />
+        </div>
+        <div />
+        <div>
+          <TileL
+            tileName="support6"
+          />
+        </div>
+      </div>
     </div>
   </div>
 </div>

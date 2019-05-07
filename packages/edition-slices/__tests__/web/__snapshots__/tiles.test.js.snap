@@ -668,7 +668,8 @@ exports[`16. tile p 1`] = `
   linkStyle={
     Object {
       "alignItems": "center",
-      "paddingVertical": "20px",
+      "paddingBottom": "10px",
+      "paddingTop": "20px",
     }
   }
   url="/article/123"

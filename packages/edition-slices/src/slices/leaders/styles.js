@@ -3,7 +3,6 @@ import { colours, fonts, spacing } from "@times-components/styleguide";
 const styles = {
   container: {
     backgroundColor: colours.functional.border,
-    paddingHorizontal: spacing(8),
     paddingTop: spacing(4)
   },
   heading: {

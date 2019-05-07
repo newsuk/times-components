@@ -223,7 +223,8 @@ exports[`4. tile d 1`] = `
   <Image
     style={
       Object {
-        "width": "45%",
+        "paddingRight": 10,
+        "width": "50%",
       }
     }
   />
@@ -231,8 +232,8 @@ exports[`4. tile d 1`] = `
     style={
       Object {
         "paddingBottom": 5,
-        "paddingHorizontal": 10,
-        "width": "55%",
+        "paddingRight": 10,
+        "width": "50%",
       }
     }
   >
@@ -302,7 +303,8 @@ exports[`5. tile e 1`] = `
   <Image
     style={
       Object {
-        "width": "45%",
+        "paddingRight": 10,
+        "width": "50%",
       }
     }
   />
@@ -310,8 +312,8 @@ exports[`5. tile e 1`] = `
     style={
       Object {
         "paddingBottom": 5,
-        "paddingHorizontal": 10,
-        "width": "55%",
+        "paddingRight": 10,
+        "width": "50%",
       }
     }
   >
@@ -1004,6 +1006,7 @@ exports[`13. tile m 1`] = `
           "fontSize": 14,
           "lineHeight": 20,
           "paddingBottom": 10,
+          "paddingHorizontal": 40,
           "textAlign": "center",
         }
       }
@@ -1235,7 +1238,6 @@ exports[`16. tile p 1`] = `
           "lineHeight": 35,
           "marginBottom": 5,
           "paddingHorizontal": 10,
-          "paddingTop": 10,
           "textAlign": "center",
         }
       }
@@ -1412,7 +1414,7 @@ exports[`19. tile s 1`] = `
     style={
       Object {
         "color": "#696969",
-        "fontFamily": "TimesDigitalW04",
+        "fontFamily": "TimesDigitalW04-Regular",
         "fontSize": 14,
         "lineHeight": 20,
       }
@@ -2445,16 +2447,18 @@ exports[`32. tile ak 1`] = `
     Object {
       "backgroundColor": "#F0F0F0",
       "flex": 1,
+      "height": 150,
       "marginHorizontal": 5,
+      "overflow": "hidden",
     }
   }
 >
   <View
     style={
       Object {
-        "paddingHorizontal": 15,
-        "paddingTop": 15,
-        "width": "85%",
+        "height": 80,
+        "paddingHorizontal": 10,
+        "paddingTop": 10,
       }
     }
   >
@@ -2463,9 +2467,9 @@ exports[`32. tile ak 1`] = `
         Object {
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 25,
+          "fontSize": 22,
           "fontWeight": "400",
-          "lineHeight": 27,
+          "lineHeight": 22,
           "marginBottom": 5,
         }
       }
@@ -2477,6 +2481,7 @@ exports[`32. tile ak 1`] = `
     style={
       Object {
         "alignSelf": "flex-end",
+        "marginTop": -25,
         "width": "85%",
       }
     }

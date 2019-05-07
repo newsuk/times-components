@@ -350,7 +350,8 @@ exports[`4. tile d 1`] = `
 }
 
 .IS1 {
-  width: 45%;
+  width: 50%;
+  padding-right: 10px;
 }
 
 .IS2 {
@@ -378,10 +379,9 @@ exports[`4. tile d 1`] = `
 }
 
 .IS6 {
-  padding-right: 10px;
-  padding-left: 10px;
   padding-bottom: 5px;
-  width: 55%;
+  padding-right: 10px;
+  width: 50%;
 }
 </style>
 
@@ -463,7 +463,8 @@ exports[`5. tile e 1`] = `
 }
 
 .IS1 {
-  width: 45%;
+  width: 50%;
+  padding-right: 10px;
 }
 
 .IS2 {
@@ -491,10 +492,9 @@ exports[`5. tile e 1`] = `
 }
 
 .IS6 {
-  padding-right: 10px;
-  padding-left: 10px;
   padding-bottom: 5px;
-  width: 55%;
+  padding-right: 10px;
+  width: 50%;
 }
 </style>
 
@@ -1422,6 +1422,8 @@ exports[`13. tile m 1`] = `
 
 .IS2 {
   font-family: TimesDigitalW04-Regular;
+  padding-right: 40px;
+  padding-left: 40px;
   text-align: center;
 }
 </style>
@@ -1740,7 +1742,6 @@ exports[`16. tile p 1`] = `
   line-height: 35px;
   padding-right: 10px;
   padding-left: 10px;
-  padding-top: 10px;
   text-align: center;
 }
 
@@ -1771,7 +1772,8 @@ exports[`16. tile p 1`] = `
   linkStyle={
     Object {
       "alignItems": "center",
-      "paddingVertical": "20px",
+      "paddingBottom": "10px",
+      "paddingTop": "20px",
     }
   }
   url="/article/123"
@@ -1977,7 +1979,6 @@ exports[`19. tile s 1`] = `
 
 .S3 {
   color: rgba(105,105,105,1.00);
-  font-family: TimesDigitalW04;
   font-size: 14px;
   font-weight: inherit;
   line-height: 20px;
@@ -2016,6 +2017,10 @@ exports[`19. tile s 1`] = `
 }
 
 .IS5 {
+  font-family: TimesDigitalW04-Regular;
+}
+
+.IS6 {
   margin-top: 10px;
 }
 </style>
@@ -2033,7 +2038,7 @@ exports[`19. tile s 1`] = `
     </div>
   </div>
   <div
-    className="S3"
+    className="IS5 S3"
   >
     <p>
       <b
@@ -2062,7 +2067,7 @@ exports[`19. tile s 1`] = `
     </p>
   </div>
   <div
-    className="IS5 S4"
+    className="IS6 S4"
   >
     <span>
       Libby Purves
@@ -3417,8 +3422,8 @@ exports[`32. tile ak 1`] = `
 .S1 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
+  font-size: 22px;
   font-weight: 400;
-  line-height: 27px;
   margin-bottom: 5px;
 }
 
@@ -3427,25 +3432,28 @@ exports[`32. tile ak 1`] = `
 }
 
 .IS1 {
-  font-size: 25px;
+  line-height: 22px;
 }
 
 .IS2 {
-  padding-right: 15px;
-  padding-left: 15px;
-  padding-top: 15px;
-  width: 85%;
+  height: 80px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 
 .IS3 {
   align-self: flex-end;
   width: 85%;
+  margin-top: -25px;
 }
 
 .IS4 {
   background-color: #F0F0F0;
   flex: 1;
   margin-horizontal: 5px;
+  height: 150;
+  overflow: hidden;
 }
 </style>
 
