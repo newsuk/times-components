@@ -42,8 +42,12 @@ exports[`1. tile a 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
 }
 
 .IS5 {
@@ -170,8 +174,12 @@ exports[`2. tile b 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
 }
 </style>
 
@@ -274,6 +282,26 @@ exports[`3. tile c 1`] = `
   font-size: 20px;
   padding-bottom: 5px;
 }
+
+.IS4 {
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  width: 75%;
+  -ms-flex-align: start;
+  -webkit-box-align: start;
+}
+
+.IS5 {
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+}
 </style>
 
 <Link
@@ -313,16 +341,24 @@ exports[`3. tile c 1`] = `
     >
       This is tile headline
     </h3>
-    <ArticleFlags
-      flags={
-        Array [
-          Object {
-            "expiryTime": "2030-03-14T12:00:00.000Z",
-            "type": "EXCLUSIVE",
-          },
-        ]
-      }
-    />
+    <div
+      className="IS5 S3"
+    >
+      <div
+        className="IS4 S3"
+      >
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+        />
+      </div>
+    </div>
   </div>
 </Link>
 `;
@@ -374,8 +410,12 @@ exports[`4. tile d 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
 }
 
 .IS6 {
@@ -487,8 +527,12 @@ exports[`5. tile e 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
 }
 
 .IS6 {
@@ -626,8 +670,12 @@ exports[`6. tile f 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
 }
 </style>
 
@@ -748,8 +796,12 @@ exports[`7. tile g 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
 }
 
 .IS6 {
@@ -901,8 +953,12 @@ exports[`8. tile h 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
 }
 
 .IS5 {
@@ -1139,6 +1195,13 @@ exports[`10. tile j 1`] = `
 }
 
 .IS5 {
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+}
+
+.IS6 {
   padding-right: 10px;
   padding-left: 10px;
   width: 60%;
@@ -1160,7 +1223,7 @@ exports[`10. tile j 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
   />
   <div
-    className="IS5 S2"
+    className="IS6 S2"
   >
     <div
       className="S2"
@@ -1179,7 +1242,7 @@ exports[`10. tile j 1`] = `
       This is tile headline
     </h3>
     <div
-      className="S2"
+      className="IS5 S2"
     >
       <div
         className="IS4 S2"
@@ -1244,6 +1307,13 @@ exports[`11. tile k 1`] = `
 }
 
 .IS5 {
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+}
+
+.IS6 {
   width: 50%;
 }
 </style>
@@ -1263,7 +1333,7 @@ exports[`11. tile k 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
   />
   <div
-    className="IS5 S2"
+    className="IS6 S2"
   >
     <div
       className="S2"
@@ -1282,7 +1352,7 @@ exports[`11. tile k 1`] = `
       This is tile headline
     </h3>
     <div
-      className="S2"
+      className="IS5 S2"
     >
       <div
         className="IS4 S2"
@@ -1340,6 +1410,13 @@ exports[`12. tile l 1`] = `
   -ms-flex-align: start;
   -webkit-box-align: start;
 }
+
+.IS4 {
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+}
 </style>
 
 <Link
@@ -1371,7 +1448,7 @@ exports[`12. tile l 1`] = `
       This is tile headline
     </h3>
     <div
-      className="S2"
+      className="IS4 S2"
     >
       <div
         className="IS3 S2"
@@ -1518,6 +1595,13 @@ exports[`14. tile n 1`] = `
 }
 
 .IS5 {
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+}
+
+.IS6 {
   padding-right: 10px;
   padding-left: 10px;
   width: 50%;
@@ -1540,7 +1624,7 @@ exports[`14. tile n 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
   />
   <div
-    className="IS5 S2"
+    className="IS6 S2"
   >
     <div
       className="S2"
@@ -1566,7 +1650,7 @@ exports[`14. tile n 1`] = `
       Three Conservative MPs resign
     </h4>
     <div
-      className="S2"
+      className="IS5 S2"
     >
       <div
         className="IS4 S2"
@@ -1626,6 +1710,13 @@ exports[`15. tile o 1`] = `
   -ms-flex-align: start;
   -webkit-box-align: start;
 }
+
+.IS4 {
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+}
 </style>
 
 <Link
@@ -1658,7 +1749,7 @@ exports[`15. tile o 1`] = `
       This is tile headline
     </h3>
     <div
-      className="S2"
+      className="IS4 S2"
     >
       <div
         className="IS3 S2"
@@ -1907,6 +1998,13 @@ exports[`18. tile r 1`] = `
   -ms-flex-align: start;
   -webkit-box-align: start;
 }
+
+.IS4 {
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+}
 </style>
 
 <Link
@@ -1939,7 +2037,7 @@ exports[`18. tile r 1`] = `
       This is tile headline
     </h3>
     <div
-      className="S2"
+      className="IS4 S2"
     >
       <div
         className="IS3 S2"
@@ -2119,6 +2217,13 @@ exports[`20. tile t 1`] = `
 }
 
 .IS5 {
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+}
+
+.IS6 {
   padding-top: 5px;
   padding-right: 10px;
   padding-bottom: 5px;
@@ -2142,7 +2247,7 @@ exports[`20. tile t 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
   <div
-    className="IS5 S2"
+    className="IS6 S2"
   >
     <div
       className="S2"
@@ -2161,7 +2266,7 @@ exports[`20. tile t 1`] = `
       This is tile headline
     </h3>
     <div
-      className="S2"
+      className="IS5 S2"
     >
       <div
         className="IS4 S2"
@@ -2223,11 +2328,18 @@ exports[`21. tile u 1`] = `
 }
 
 .IS4 {
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+}
+
+.IS5 {
   padding-bottom: 5px;
   width: 40%;
 }
 
-.IS5 {
+.IS6 {
   width: 60%;
 }
 </style>
@@ -2243,7 +2355,7 @@ exports[`21. tile u 1`] = `
   url="/article/123"
 >
   <div
-    className="IS4 S2"
+    className="IS5 S2"
   >
     <div
       className="S2"
@@ -2262,7 +2374,7 @@ exports[`21. tile u 1`] = `
       This is tile headline
     </h3>
     <div
-      className="S2"
+      className="IS4 S2"
     >
       <div
         className="IS3 S2"
@@ -2282,7 +2394,7 @@ exports[`21. tile u 1`] = `
   </div>
   <Image
     aspectRatio={1.5}
-    className="IS5"
+    className="IS6"
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
   />
 </Link>
@@ -2331,6 +2443,13 @@ exports[`22. tile v 1`] = `
   -ms-flex-align: start;
   -webkit-box-align: start;
 }
+
+.IS5 {
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+}
 </style>
 
 <Link
@@ -2367,7 +2486,7 @@ exports[`22. tile v 1`] = `
       This is tile headline
     </h3>
     <div
-      className="S2"
+      className="IS5 S2"
     >
       <div
         className="IS4 S2"
@@ -2449,12 +2568,19 @@ exports[`23. tile w 1`] = `
 }
 
 .IS4 {
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+}
+
+.IS5 {
   padding-bottom: 5px;
   padding-right: 20px;
   width: 33.33%;
 }
 
-.IS5 {
+.IS6 {
   width: 66.66%;
 }
 </style>
@@ -2470,7 +2596,7 @@ exports[`23. tile w 1`] = `
   url="/article/123"
 >
   <div
-    className="IS4 S2"
+    className="IS5 S2"
   >
     <div
       className="S2"
@@ -2500,7 +2626,7 @@ exports[`23. tile w 1`] = `
       </span>
     </div>
     <div
-      className="S2"
+      className="IS4 S2"
     >
       <div
         className="IS3 S2"
@@ -2520,7 +2646,7 @@ exports[`23. tile w 1`] = `
   </div>
   <Image
     aspectRatio={1.7777777777777777}
-    className="IS5"
+    className="IS6"
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
 </Link>
@@ -2598,6 +2724,13 @@ exports[`24. tile x 1`] = `
   -ms-flex-align: start;
   -webkit-box-align: start;
 }
+
+.IS5 {
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+}
 </style>
 
 <Link
@@ -2647,7 +2780,7 @@ exports[`24. tile x 1`] = `
       </span>
     </div>
     <div
-      className="S2"
+      className="IS5 S2"
     >
       <div
         className="IS4 S2"
@@ -2727,6 +2860,13 @@ exports[`25. tile y 1`] = `
   -ms-flex-align: start;
   -webkit-box-align: start;
 }
+
+.IS4 {
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+}
 </style>
 
 <Link
@@ -2770,7 +2910,7 @@ exports[`25. tile y 1`] = `
       </span>
     </div>
     <div
-      className="S2"
+      className="IS4 S2"
     >
       <div
         className="IS3 S2"
@@ -2828,6 +2968,13 @@ exports[`26. tile z 1`] = `
   -ms-flex-align: start;
   -webkit-box-align: start;
 }
+
+.IS4 {
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+}
 </style>
 
 <Link
@@ -2858,7 +3005,7 @@ exports[`26. tile z 1`] = `
       This is tile headline
     </h3>
     <div
-      className="S2"
+      className="IS4 S2"
     >
       <div
         className="IS3 S2"
@@ -2926,6 +3073,13 @@ exports[`27. tile aa 1`] = `
 }
 
 .IS5 {
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+}
+
+.IS6 {
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -2945,7 +3099,7 @@ exports[`27. tile aa 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
   <div
-    className="IS5 S2"
+    className="IS6 S2"
   >
     <div
       className="S2"
@@ -2964,7 +3118,7 @@ exports[`27. tile aa 1`] = `
       This is tile headline
     </h3>
     <div
-      className="S2"
+      className="IS5 S2"
     >
       <div
         className="IS4 S2"
@@ -3064,12 +3218,19 @@ exports[`28. tile ab 1`] = `
 }
 
 .IS4 {
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+}
+
+.IS5 {
   padding-top: 10px;
   padding-right: 10px;
   width: 50%;
 }
 
-.IS5 {
+.IS6 {
   flex-direction: column;
   justify-content: flex-end;
   padding-top: 10px;
@@ -3087,7 +3248,7 @@ exports[`28. tile ab 1`] = `
   url="/article/123"
 >
   <div
-    className="IS4 S2"
+    className="IS5 S2"
   >
     <div
       className="S2"
@@ -3117,7 +3278,7 @@ exports[`28. tile ab 1`] = `
       </span>
     </div>
     <div
-      className="S2"
+      className="IS4 S2"
     >
       <div
         className="IS3 S2"
@@ -3151,7 +3312,7 @@ exports[`28. tile ab 1`] = `
   </div>
   <Image
     aspectRatio={0.6666666666666666}
-    className="IS5"
+    className="IS6"
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1195%2C1792%2C747%2C0"
   />
 </Link>
@@ -3216,6 +3377,13 @@ exports[`29. tile ae 1`] = `
   -ms-flex-align: start;
   -webkit-box-align: start;
 }
+
+.IS4 {
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+}
 </style>
 
 <Link
@@ -3258,7 +3426,7 @@ exports[`29. tile ae 1`] = `
       </span>
     </div>
     <div
-      className="S2"
+      className="IS4 S2"
     >
       <div
         className="IS3 S2"
@@ -3549,6 +3717,13 @@ exports[`33. tile al 1`] = `
   -ms-flex-align: start;
   -webkit-box-align: start;
 }
+
+.IS5 {
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+}
 </style>
 
 <Link
@@ -3596,7 +3771,7 @@ exports[`33. tile al 1`] = `
       </span>
     </div>
     <div
-      className="S2"
+      className="IS5 S2"
     >
       <div
         className="IS4 S2"
@@ -3682,6 +3857,13 @@ exports[`34. tile am 1`] = `
   -ms-flex-align: start;
   -webkit-box-align: start;
 }
+
+.IS5 {
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+}
 </style>
 
 <Link
@@ -3729,7 +3911,7 @@ exports[`34. tile am 1`] = `
       </span>
     </div>
     <div
-      className="S2"
+      className="IS5 S2"
     >
       <div
         className="IS4 S2"
@@ -3816,6 +3998,13 @@ exports[`35. tile an 1`] = `
 }
 
 .IS5 {
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+}
+
+.IS6 {
   -webkit-justify-content: center;
   justify-content: center;
   padding-right: 10px;
@@ -3840,7 +4029,7 @@ exports[`35. tile an 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
   />
   <div
-    className="IS5 S2"
+    className="IS6 S2"
   >
     <div
       className="S2"
@@ -3870,7 +4059,7 @@ exports[`35. tile an 1`] = `
       </span>
     </div>
     <div
-      className="S2"
+      className="IS5 S2"
     >
       <div
         className="IS4 S2"
@@ -3936,6 +4125,13 @@ exports[`36. tile ap 1`] = `
 }
 
 .IS5 {
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+}
+
+.IS6 {
   -webkit-justify-content: center;
   justify-content: center;
   padding-right: 10px;
@@ -3960,7 +4156,7 @@ exports[`36. tile ap 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
   />
   <div
-    className="IS5 S2"
+    className="IS6 S2"
   >
     <div
       className="S2"
@@ -3979,7 +4175,7 @@ exports[`36. tile ap 1`] = `
       This is tile headline
     </h3>
     <div
-      className="S2"
+      className="IS5 S2"
     >
       <div
         className="IS4 S2"
@@ -4043,6 +4239,13 @@ exports[`37. tile ad 1`] = `
 }
 
 .IS5 {
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+}
+
+.IS6 {
   padding-right: 10px;
   padding-left: 10px;
   width: 70%;
@@ -4064,7 +4267,7 @@ exports[`37. tile ad 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
   />
   <div
-    className="IS5 S2"
+    className="IS6 S2"
   >
     <div
       className="S2"
@@ -4083,7 +4286,7 @@ exports[`37. tile ad 1`] = `
       This is tile headline
     </h3>
     <div
-      className="S2"
+      className="IS5 S2"
     >
       <div
         className="IS4 S2"
