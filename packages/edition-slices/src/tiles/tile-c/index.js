@@ -5,7 +5,6 @@ import Image from "@times-components/image";
 import {
   getTileImageUri,
   TileLink,
-  TileStar,
   TileSummary,
   withTileTracking
 } from "../shared";
@@ -17,7 +16,6 @@ const TileC = ({ onPress, tile }) => (
       <Image aspectRatio={16 / 9} uri={getTileImageUri(tile, "crop169")} />
     </View>
     <TileSummary headlineStyle={styles.headline} tile={tile} />
-    <TileStar articleId={tile.article.id} style={styles.star} />
   </TileLink>
 );
 
