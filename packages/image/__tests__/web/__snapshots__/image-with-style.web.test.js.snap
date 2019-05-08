@@ -70,7 +70,13 @@ exports[`1. default image 1`] = `
     />
     <div
       className="S1"
-    />
+    >
+      <Svg>
+        <G>
+          <Path />
+        </G>
+      </Svg>
+    </div>
   </div>
 </div>
 `;
@@ -145,7 +151,13 @@ exports[`2. default modal 1`] = `
     />
     <div
       className="S1"
-    />
+    >
+      <Svg>
+        <G>
+          <Path />
+        </G>
+      </Svg>
+    </div>
   </div>
 </div>
 `;

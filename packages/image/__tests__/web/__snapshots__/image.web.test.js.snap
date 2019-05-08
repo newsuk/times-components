@@ -19,10 +19,10 @@ exports[`1. default layout 1`] = `
     />
     <div>
       <Svg
-        height={219}
+        height="auto"
         version="1.1"
         viewBox="145 50 108 120"
-        width={219}
+        width="25%"
       >
         <G
           fill="none"
@@ -60,10 +60,10 @@ exports[`2. default layout without uri 1`] = `
     />
     <div>
       <Svg
-        height={219}
+        height="auto"
         version="1.1"
         viewBox="145 50 108 120"
-        width={219}
+        width="25%"
       >
         <G
           fill="none"
@@ -101,10 +101,10 @@ exports[`3. default layout without aspect ratio 1`] = `
     />
     <div>
       <Svg
-        height={219}
+        height="auto"
         version="1.1"
         viewBox="145 50 108 120"
-        width={219}
+        width="25%"
       >
         <G
           fill="none"
@@ -142,10 +142,10 @@ exports[`4. an invalid uri 1`] = `
     />
     <div>
       <Svg
-        height={219}
+        height="auto"
         version="1.1"
         viewBox="145 50 108 120"
-        width={219}
+        width="25%"
       >
         <G
           fill="none"
@@ -183,10 +183,10 @@ exports[`5. no url in environment 1`] = `
     />
     <div>
       <Svg
-        height={219}
+        height="auto"
         version="1.1"
         viewBox="145 50 108 120"
-        width={219}
+        width="25%"
       >
         <G
           fill="none"
@@ -224,10 +224,10 @@ exports[`6. with existing url params 1`] = `
     />
     <div>
       <Svg
-        height={219}
+        height="auto"
         version="1.1"
         viewBox="145 50 108 120"
-        width={219}
+        width="25%"
       >
         <G
           fill="none"
@@ -321,10 +321,10 @@ exports[`8. only a low res image 1`] = `
     />
     <div>
       <Svg
-        height={219}
+        height="auto"
         version="1.1"
         viewBox="145 50 108 120"
-        width={219}
+        width="25%"
       >
         <G
           fill="none"
@@ -362,10 +362,10 @@ exports[`9. fade in the low res image 1`] = `
     />
     <div>
       <Svg
-        height={219}
+        height="auto"
         version="1.1"
         viewBox="145 50 108 120"
-        width={219}
+        width="25%"
       >
         <G
           fill="none"
@@ -438,10 +438,10 @@ exports[`10. both high and low res sizes 1`] = `
     />
     <div>
       <Svg
-        height={219}
+        height="auto"
         version="1.1"
         viewBox="145 50 108 120"
-        width={219}
+        width="25%"
       >
         <G
           fill="none"

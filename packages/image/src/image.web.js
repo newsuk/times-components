@@ -12,7 +12,6 @@ class TimesImage extends Component {
     super(props);
 
     this.state = {
-      width: null,
       highResIsLoaded: false,
       highResIsVisible: false,
       imageIsLoaded: false,
@@ -22,17 +21,6 @@ class TimesImage extends Component {
     this.handleHighResOnLoad = this.handleHighResOnLoad.bind(this);
     this.handleLowResOnLoad = this.handleLowResOnLoad.bind(this);
     this.onHighResTransitionEnd = this.onHighResTransitionEnd.bind(this);
-    this.onImageLayout = this.onImageLayout.bind(this);
-  }
-
-  onImageLayout(evt) {
-    const { onLayout } = this.props;
-
-    this.setState({ width: evt.nativeEvent.layout.width });
-
-    if (onLayout) {
-      onLayout(evt);
-    }
   }
 
   onHighResTransitionEnd() {
@@ -91,18 +79,25 @@ class TimesImage extends Component {
   }
 
   render() {
-    const { aspectRatio, highResSize, lowResSize, style, uri } = this.props;
-    const { imageIsLoaded, width } = this.state;
+    const {
+      aspectRatio,
+      highResSize,
+      lowResSize,
+      style,
+      uri,
+      onLayout
+    } = this.props;
+    const { imageIsLoaded } = this.state;
     const url = addMissingProtocol(uri);
 
     return (
-      <View onLayout={this.onImageLayout} style={style}>
+      <View onLayout={onLayout} style={style}>
         <div
           style={{ ...styles.wrapper, paddingBottom: `${100 / aspectRatio}%` }}
         >
           {this.highResImage({ highResSize, lowResSize, url })}
           {this.lowResImage({ lowResSize, url })}
-          {imageIsLoaded ? null : <Placeholder size={width} />}
+          {imageIsLoaded ? null : <Placeholder />}
         </div>
       </View>
     );

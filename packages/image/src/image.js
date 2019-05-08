@@ -90,7 +90,7 @@ class TimesImage extends Component {
         />
         {isLoaded ? null : (
           <Fragment>
-            {!lowResSize ? <Placeholder size={renderedRes} /> : null}
+            {!lowResSize ? <Placeholder /> : null}
             {showLowResPlaceholder ? (
               <Image
                 {...defaultImageProps}
