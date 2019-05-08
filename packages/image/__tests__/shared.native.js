@@ -126,6 +126,16 @@ export default () => {
       }
     },
     {
+      name:
+        "does not use lowResSize image as placeholder if passed if same as high res",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <Image {...props} highResSize={800} lowResSize={800} />
+        );
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
       name: "handle layout change",
       test() {
         const testRenderer = TestRenderer.create(<Image {...props} />);

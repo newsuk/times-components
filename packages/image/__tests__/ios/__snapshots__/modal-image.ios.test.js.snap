@@ -50,6 +50,7 @@ exports[`1. modal image 1`] = `
           >
             <Image
               caption={<MockCaption />}
+              fadeDuration={0}
               fadeImageIn={false}
               onImagePress={null}
               show={false}
@@ -106,6 +107,7 @@ exports[`1. modal image 1`] = `
       </View>
       <Image
         caption={<MockCaption />}
+        fadeDuration={0}
         fadeImageIn={false}
         onImagePress={null}
         show={false}
@@ -183,6 +185,7 @@ exports[`2. modal image with no caption 1`] = `
             </View>
             <Image
               caption={null}
+              fadeDuration={0}
               fadeImageIn={false}
               onImagePress={null}
               show={false}
@@ -229,6 +232,7 @@ exports[`2. modal image with no caption 1`] = `
       </View>
       <Image
         caption={null}
+        fadeDuration={0}
         fadeImageIn={false}
         onImagePress={null}
         show={false}
@@ -289,6 +293,7 @@ exports[`3. modal image with custom highressize 1`] = `
           >
             <Image
               caption={<MockCaption />}
+              fadeDuration={0}
               fadeImageIn={false}
               onImagePress={null}
               show={false}
@@ -345,6 +350,7 @@ exports[`3. modal image with custom highressize 1`] = `
       </View>
       <Image
         caption={<MockCaption />}
+        fadeDuration={0}
         fadeImageIn={false}
         onImagePress={null}
         show={false}
@@ -411,6 +417,7 @@ exports[`8. hides elements when tapping on the image 1`] = `
             </View>
             <Image
               caption={<MockCaption />}
+              fadeDuration={0}
               fadeImageIn={false}
               onImagePress={null}
               show={true}
@@ -440,6 +447,7 @@ exports[`8. hides elements when tapping on the image 1`] = `
       </View>
       <Image
         caption={<MockCaption />}
+        fadeDuration={0}
         fadeImageIn={false}
         onImagePress={null}
         show={true}
@@ -513,6 +521,7 @@ exports[`9. re-shows elements when tapping on the image a second time 1`] = `
             </View>
             <Image
               caption={<MockCaption />}
+              fadeDuration={0}
               fadeImageIn={false}
               onImagePress={null}
               show={true}
@@ -565,6 +574,7 @@ exports[`9. re-shows elements when tapping on the image a second time 1`] = `
       </View>
       <Image
         caption={<MockCaption />}
+        fadeDuration={0}
         fadeImageIn={false}
         onImagePress={null}
         show={true}

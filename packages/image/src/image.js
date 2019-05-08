@@ -66,6 +66,7 @@ class TimesImage extends Component {
     const lowResUri = lowResSize
       ? getUriAtRes(uri, Math.min(lowResSize, renderedRes))
       : null;
+    const showLowResPlaceholder = lowResSize && lowResUri !== srcUri;
 
     return (
       <View
@@ -74,10 +75,11 @@ class TimesImage extends Component {
         style={[styles.imageContainer, style]}
       >
         {!lowResSize ? <Placeholder size={renderedRes} /> : null}
-        {lowResSize && lowResUri !== srcUri ? (
+        {showLowResPlaceholder ? (
           <Image
             {...defaultImageProps}
             borderRadius={rounded ? renderedRes / 2 : borderRadius}
+            fadeDuration={0}
             source={{
               uri: lowResUri
             }}
@@ -87,6 +89,7 @@ class TimesImage extends Component {
         <LazyLoadingImage
           {...defaultImageProps}
           borderRadius={rounded ? renderedRes / 2 : borderRadius}
+          fadeDuration={0}
           source={srcUri && renderedRes ? { uri: srcUri } : null}
           style={styles.image}
         />
