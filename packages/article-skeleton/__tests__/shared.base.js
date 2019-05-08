@@ -13,7 +13,8 @@ jest.mock("@times-components/save-and-share-bar", () => "SaveAndShareBar");
 export const renderArticle = (data, header = null) => (
   <ContextProviderWithDefaults
     value={{
-      theme: { scale: scales.medium, sectionColour: "#FF0000" }
+      theme: { scale: scales.medium, sectionColour: "#FF0000" },
+      user: { isLoggedIn: true }
     }}
   >
     <ArticleSkeleton

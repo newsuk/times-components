@@ -5,6 +5,7 @@ import ArticleExtras from "@times-components/article-extras";
 import LazyLoad from "@times-components/lazy-load";
 import { spacing, breakpoints } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
+import Context from "@times-components/context";
 import ArticleBody from "./article-body/article-body";
 import {
   articleSkeletonPropTypes,
@@ -106,64 +107,76 @@ class ArticleSkeleton extends Component {
           this.node = node;
         }}
       >
-        <Head article={article} />
-        <AdComposer adConfig={adConfig}>
-          <LazyLoad rootMargin={spacing(10)} threshold={0.5}>
-            {({ observed, registerNode }) => (
-              <Fragment>
-                <HeaderAdContainer key="headerAd">
-                  <Ad
-                    contextUrl={url}
-                    section={section}
-                    slotName="header"
-                    style={adStyle}
-                  />
-                </HeaderAdContainer>
-                <MainContainer>
-                  <Header width={articleWidth} />
-                  <SaveShareContainer isSticky={isSticky}>
-                    <SaveShareRefContainer isSticky={isSticky}>
-                      <div
-                        ref={el => {
-                          this.sticky = el;
-                        }}
-                      >
-                        <SaveAndShareBar
-                          articleUrl={url}
-                          onCopyLink={() => {}}
-                          onSaveToMyArticles={() => {}}
-                          onShareOnEmail={() => {}}
+        <Context.Consumer>
+          {({ user }) => (
+            <Fragment>
+              <Head article={article} />
+              <AdComposer adConfig={adConfig}>
+                <LazyLoad rootMargin={spacing(10)} threshold={0.5}>
+                  {({ observed, registerNode }) => (
+                    <Fragment>
+                      <HeaderAdContainer key="headerAd">
+                        <Ad
+                          contextUrl={url}
+                          section={section}
+                          slotName="header"
+                          style={adStyle}
                         />
-                      </div>
-                    </SaveShareRefContainer>
-                  </SaveShareContainer>
-                  <BodyContainer>
-                    <ArticleBody
-                      content={newContent}
-                      contextUrl={url}
-                      observed={observed}
-                      registerNode={registerNode}
-                      section={section}
-                    />
+                      </HeaderAdContainer>
+                      <MainContainer>
+                        <Header
+                          topicsAllowed={user.isLoggedIn}
+                          width={articleWidth}
+                        />
+                        <SaveShareContainer isSticky={isSticky}>
+                          <SaveShareRefContainer isSticky={isSticky}>
+                            <div
+                              ref={el => {
+                                this.sticky = el;
+                              }}
+                            >
+                              <SaveAndShareBar
+                                articleUrl={url}
+                                onCopyLink={() => {}}
+                                onSaveToMyArticles={() => {}}
+                                onShareOnEmail={() => {}}
+                              />
+                            </div>
+                          </SaveShareRefContainer>
+                        </SaveShareContainer>
+                        <BodyContainer>
+                          <ArticleBody
+                            content={newContent}
+                            contextUrl={url}
+                            observed={observed}
+                            registerNode={registerNode}
+                            section={section}
+                          />
 
-                    <ArticleExtras
-                      analyticsStream={analyticsStream}
-                      articleId={articleId}
-                      commentsEnabled={commentsEnabled}
-                      registerNode={registerNode}
-                      relatedArticleSlice={relatedArticleSlice}
-                      relatedArticlesVisible={
-                        !!observed.get("related-articles")
-                      }
-                      spotAccountId={spotAccountId}
-                      topics={topics}
-                    />
-                  </BodyContainer>
-                </MainContainer>
-              </Fragment>
-            )}
-          </LazyLoad>
-        </AdComposer>
+                          <ArticleExtras
+                            analyticsStream={analyticsStream}
+                            articleId={articleId}
+                            commentsAllowed={user.isLoggedIn}
+                            commentsEnabled={commentsEnabled}
+                            registerNode={registerNode}
+                            relatedArticleAllowed={user.isLoggedIn}
+                            relatedArticleSlice={relatedArticleSlice}
+                            relatedArticlesVisible={
+                              !!observed.get("related-articles")
+                            }
+                            spotAccountId={spotAccountId}
+                            topics={topics}
+                            topicsAllowed={user.isLoggedIn}
+                          />
+                        </BodyContainer>
+                      </MainContainer>
+                    </Fragment>
+                  )}
+                </LazyLoad>
+              </AdComposer>
+            </Fragment>
+          )}
+        </Context.Consumer>
       </article>
     );
   }

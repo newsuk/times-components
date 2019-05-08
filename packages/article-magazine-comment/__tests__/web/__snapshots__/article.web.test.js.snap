@@ -154,7 +154,9 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
       </p>
       <ArticleExtras
         articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        commentsAllowed={false}
         commentsEnabled={true}
+        relatedArticleAllowed={false}
         relatedArticleSlice={
           Object {
             "__typename": "StandardSlice",
@@ -205,6 +207,7 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
             },
           ]
         }
+        topicsAllowed={false}
       />
     </div>
   </div>
@@ -363,7 +366,9 @@ exports[`4. an article with ads 1`] = `
       />
       <ArticleExtras
         articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        commentsAllowed={false}
         commentsEnabled={true}
+        relatedArticleAllowed={false}
         relatedArticleSlice={
           Object {
             "__typename": "StandardSlice",
@@ -414,6 +419,7 @@ exports[`4. an article with ads 1`] = `
             },
           ]
         }
+        topicsAllowed={false}
       />
     </div>
   </div>
@@ -591,7 +597,9 @@ exports[`7. an article with no author 1`] = `
       </p>
       <ArticleExtras
         articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        commentsAllowed={false}
         commentsEnabled={true}
+        relatedArticleAllowed={false}
         relatedArticleSlice={
           Object {
             "__typename": "StandardSlice",
@@ -642,6 +650,7 @@ exports[`7. an article with no author 1`] = `
             },
           ]
         }
+        topicsAllowed={false}
       />
     </div>
   </div>

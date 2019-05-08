@@ -133,20 +133,6 @@ exports[`1. an article 1`] = `
           </span>
         </div>
       </div>
-      <div>
-        <nav>
-          <ArticleTopics
-            topics={
-              Array [
-                Object {
-                  "name": "Topic",
-                  "slug": "topic",
-                },
-              ]
-            }
-          />
-        </nav>
-      </div>
     </div>
     <div>
       <figure>
@@ -191,7 +177,9 @@ exports[`1. an article 1`] = `
       </p>
       <ArticleExtras
         articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        commentsAllowed={false}
         commentsEnabled={true}
+        relatedArticleAllowed={false}
         relatedArticleSlice={
           Object {
             "__typename": "StandardSlice",
@@ -242,6 +230,7 @@ exports[`1. an article 1`] = `
             },
           ]
         }
+        topicsAllowed={false}
       />
     </div>
   </div>
@@ -342,8 +331,11 @@ exports[`4. an article with no headline falls back to use shortheadline 1`] = `
       </p>
       <ArticleExtras
         articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        commentsAllowed={false}
         commentsEnabled={true}
+        relatedArticleAllowed={false}
         relatedArticlesVisible={false}
+        topicsAllowed={false}
       />
     </div>
   </div>
@@ -442,8 +434,11 @@ exports[`5. an article with ads 1`] = `
       />
       <ArticleExtras
         articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        commentsAllowed={false}
         commentsEnabled={true}
+        relatedArticleAllowed={false}
         relatedArticlesVisible={false}
+        topicsAllowed={false}
       />
     </div>
   </div>

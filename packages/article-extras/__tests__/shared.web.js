@@ -33,16 +33,43 @@ export default () => {
     {
       name: "renders correctly",
       test: () => {
+        const isAllowed = true;
         const testInstance = TestRenderer.create(
           <ArticleExtras
             analyticsStream={() => {}}
             articleId="dummy-article-id"
+            commentsAllowed={isAllowed}
             commentsEnabled
             registerNode={() => {}}
+            relatedArticleAllowed={isAllowed}
             relatedArticleSlice={relatedArticleSlice}
             relatedArticlesVisible
             spotAccountId="dummy-spot-id"
             topics={topics}
+            topicsAllowed={isAllowed}
+          />
+        );
+
+        expect(testInstance.toJSON()).toMatchSnapshot();
+      }
+    },
+    {
+      name: "no related articles, topics and comments when user not logged in",
+      test: () => {
+        const isAllowed = false;
+        const testInstance = TestRenderer.create(
+          <ArticleExtras
+            analyticsStream={() => {}}
+            articleId="dummy-article-id"
+            commentsAllowed={isAllowed}
+            commentsEnabled
+            registerNode={() => {}}
+            relatedArticleAllowed={isAllowed}
+            relatedArticleSlice={relatedArticleSlice}
+            relatedArticlesVisible
+            spotAccountId="dummy-spot-id"
+            topics={topics}
+            topicsAllowed={isAllowed}
           />
         );
 

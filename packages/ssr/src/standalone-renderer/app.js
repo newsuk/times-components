@@ -63,13 +63,22 @@ server.get("/article/:id", (request, response) => {
       }
     : null;
 
+  const userState = {
+    isLoggedIn: true
+  };
+
   ssr
-    .article(articleId, headers, {
-      ...makeUrls,
-      graphqlApiUrl,
-      logger,
-      spotAccountId
-    })
+    .article(
+      articleId,
+      headers,
+      {
+        ...makeUrls,
+        graphqlApiUrl,
+        logger,
+        spotAccountId
+      },
+      userState
+    )
     .then(
       ({
         initialProps,

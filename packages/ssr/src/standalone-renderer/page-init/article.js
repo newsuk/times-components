@@ -11,3 +11,7 @@ window.nuk.ssr = {
   mapArticleToAdConfig: defaultMapArticleToConfig,
   rootTag
 };
+window.nuk.user = {
+  ...window.nuk.user,
+  isLoggedIn: true
+};

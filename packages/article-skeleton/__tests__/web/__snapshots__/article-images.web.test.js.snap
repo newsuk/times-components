@@ -46,9 +46,12 @@ exports[`1. a secondary image 1`] = `
       </div>
       <ArticleExtras
         articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        commentsAllowed={true}
         commentsEnabled={true}
+        relatedArticleAllowed={true}
         relatedArticlesVisible={false}
         spotAccountId=""
+        topicsAllowed={true}
       />
     </div>
   </div>
@@ -101,9 +104,12 @@ exports[`2. an inline image 1`] = `
       </div>
       <ArticleExtras
         articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        commentsAllowed={true}
         commentsEnabled={true}
+        relatedArticleAllowed={true}
         relatedArticlesVisible={false}
         spotAccountId=""
+        topicsAllowed={true}
       />
     </div>
   </div>
