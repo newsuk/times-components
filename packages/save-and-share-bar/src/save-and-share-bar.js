@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { View, Text, Clipboard } from "react-native";
-import withTrackEvents from "./tracking/with-tack-events";
 import {
   IconEmail,
   IconFacebook,
@@ -9,6 +8,7 @@ import {
   IconCopyLink,
   IconSaveBookmark
 } from "@times-components/icons";
+import withTrackEvents from "./tracking/with-track-events";
 import SharingApiUrls from "./constants";
 import styles from "./styles";
 import BarItem from "./bar-item";
