@@ -21,19 +21,29 @@ exports[`1. default image 1`] = `
   <View
     style={
       Object {
-        "alignItems": "center",
-        "backgroundColor": "#EDEDED",
-        "justifyContent": "center",
+        "height": "100%",
+        "opacity": 1,
+        "width": "100%",
       }
     }
   >
-    <Image
+    <View
       style={
         Object {
-          "width": "25%",
+          "alignItems": "center",
+          "backgroundColor": "#EDEDED",
+          "justifyContent": "center",
         }
       }
-    />
+    >
+      <Image
+        style={
+          Object {
+            "width": "25%",
+          }
+        }
+      />
+    </View>
   </View>
 </View>
 `;

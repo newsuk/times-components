@@ -1,5 +1,5 @@
-import React, { Component, Fragment } from "react";
-import { View, Image } from "react-native";
+import React, { Component } from "react";
+import { Animated, View, Image } from "react-native";
 import PropTypes from "prop-types";
 import memoize from "lodash.memoize";
 import {
@@ -37,6 +37,7 @@ class TimesImage extends Component {
     };
     this.handleLoad = this.handleLoad.bind(this);
     this.onImageLayout = this.onImageLayout.bind(this);
+    this.fadeAnim = new Animated.Value(1);
   }
 
   onImageLayout(evt) {
@@ -52,7 +53,11 @@ class TimesImage extends Component {
   }
 
   handleLoad() {
-    this.setState({ isLoaded: true });
+    Animated.timing(this.fadeAnim, {
+      toValue: 0,
+      duration: 300,
+      useNativeDriver: true
+    }).start(() => this.setState({ isLoaded: true }));
   }
 
   render() {
@@ -73,6 +78,7 @@ class TimesImage extends Component {
       ? getUriAtRes(uri, Math.min(lowResSize, renderedRes))
       : null;
     const showLowResPlaceholder = lowResSize && lowResUri !== srcUri;
+    const fadeStyle = { width: "100%", height: "100%", opacity: this.fadeAnim };
 
     return (
       <View
@@ -89,7 +95,7 @@ class TimesImage extends Component {
           style={styles.image}
         />
         {isLoaded ? null : (
-          <Fragment>
+          <Animated.View style={fadeStyle}>
             {!lowResSize ? <Placeholder /> : null}
             {showLowResPlaceholder ? (
               <Image
@@ -102,7 +108,7 @@ class TimesImage extends Component {
                 style={styles.image}
               />
             ) : null}
-          </Fragment>
+          </Animated.View>
         )}
       </View>
     );

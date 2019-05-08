@@ -58,17 +58,21 @@ export default () => {
     {
       name: "handle onload event",
       test: () => {
+        jest.useFakeTimers();
+
         const testInstance = TestRenderer.create(<Image {...props} />);
 
         testInstance.root.children[0].props.onLayout(
           getLayoutEventForWidth(700)
         );
 
-        expect(testInstance).toMatchSnapshot();
-
         testInstance.root
           .findAll(node => node.type === ReactNativeImage)[0]
           .props.onLoad();
+
+        expect(testInstance).toMatchSnapshot();
+
+        jest.runAllTimers();
 
         expect(testInstance).toMatchSnapshot();
       }

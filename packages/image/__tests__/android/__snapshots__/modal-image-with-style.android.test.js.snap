@@ -99,19 +99,29 @@ exports[`1. landscape default modal 1`] = `
             <View
               style={
                 Object {
-                  "alignItems": "center",
-                  "backgroundColor": "#EDEDED",
-                  "justifyContent": "center",
+                  "height": "100%",
+                  "opacity": 1,
+                  "width": "100%",
                 }
               }
             >
-              <Image
+              <View
                 style={
                   Object {
-                    "width": "25%",
+                    "alignItems": "center",
+                    "backgroundColor": "#EDEDED",
+                    "justifyContent": "center",
                   }
                 }
-              />
+              >
+                <Image
+                  style={
+                    Object {
+                      "width": "25%",
+                    }
+                  }
+                />
+              </View>
             </View>
           </View>
         </Gestures>
@@ -183,19 +193,29 @@ exports[`1. landscape default modal 1`] = `
       <View
         style={
           Object {
-            "alignItems": "center",
-            "backgroundColor": "#EDEDED",
-            "justifyContent": "center",
+            "height": "100%",
+            "opacity": 1,
+            "width": "100%",
           }
         }
       >
-        <Image
+        <View
           style={
             Object {
-              "width": "25%",
+              "alignItems": "center",
+              "backgroundColor": "#EDEDED",
+              "justifyContent": "center",
             }
           }
-        />
+        >
+          <Image
+            style={
+              Object {
+                "width": "25%",
+              }
+            }
+          />
+        </View>
       </View>
     </View>
   </View>
@@ -301,19 +321,29 @@ exports[`2. portrait default modal 1`] = `
             <View
               style={
                 Object {
-                  "alignItems": "center",
-                  "backgroundColor": "#EDEDED",
-                  "justifyContent": "center",
+                  "height": "100%",
+                  "opacity": 1,
+                  "width": "100%",
                 }
               }
             >
-              <Image
+              <View
                 style={
                   Object {
-                    "width": "25%",
+                    "alignItems": "center",
+                    "backgroundColor": "#EDEDED",
+                    "justifyContent": "center",
                   }
                 }
-              />
+              >
+                <Image
+                  style={
+                    Object {
+                      "width": "25%",
+                    }
+                  }
+                />
+              </View>
             </View>
           </View>
         </Gestures>
@@ -385,19 +415,29 @@ exports[`2. portrait default modal 1`] = `
       <View
         style={
           Object {
-            "alignItems": "center",
-            "backgroundColor": "#EDEDED",
-            "justifyContent": "center",
+            "height": "100%",
+            "opacity": 1,
+            "width": "100%",
           }
         }
       >
-        <Image
+        <View
           style={
             Object {
-              "width": "25%",
+              "alignItems": "center",
+              "backgroundColor": "#EDEDED",
+              "justifyContent": "center",
             }
           }
-        />
+        >
+          <Image
+            style={
+              Object {
+                "width": "25%",
+              }
+            }
+          />
+        </View>
       </View>
     </View>
   </View>
@@ -500,6 +540,15 @@ exports[`3. tablet landscape default modal 1`] = `
                 }
               }
             />
+            <View
+              style={
+                Object {
+                  "height": "100%",
+                  "opacity": 1,
+                  "width": "100%",
+                }
+              }
+            />
           </View>
         </Gestures>
       </SafeAreaView>
@@ -570,19 +619,29 @@ exports[`3. tablet landscape default modal 1`] = `
       <View
         style={
           Object {
-            "alignItems": "center",
-            "backgroundColor": "#EDEDED",
-            "justifyContent": "center",
+            "height": "100%",
+            "opacity": 1,
+            "width": "100%",
           }
         }
       >
-        <Image
+        <View
           style={
             Object {
-              "width": "25%",
+              "alignItems": "center",
+              "backgroundColor": "#EDEDED",
+              "justifyContent": "center",
             }
           }
-        />
+        >
+          <Image
+            style={
+              Object {
+                "width": "25%",
+              }
+            }
+          />
+        </View>
       </View>
     </View>
   </View>
@@ -685,6 +744,15 @@ exports[`4. tablet portrait default modal 1`] = `
                 }
               }
             />
+            <View
+              style={
+                Object {
+                  "height": "100%",
+                  "opacity": 1,
+                  "width": "100%",
+                }
+              }
+            />
           </View>
         </Gestures>
       </SafeAreaView>
@@ -755,19 +823,29 @@ exports[`4. tablet portrait default modal 1`] = `
       <View
         style={
           Object {
-            "alignItems": "center",
-            "backgroundColor": "#EDEDED",
-            "justifyContent": "center",
+            "height": "100%",
+            "opacity": 1,
+            "width": "100%",
           }
         }
       >
-        <Image
+        <View
           style={
             Object {
-              "width": "25%",
+              "alignItems": "center",
+              "backgroundColor": "#EDEDED",
+              "justifyContent": "center",
             }
           }
-        />
+        >
+          <Image
+            style={
+              Object {
+                "width": "25%",
+              }
+            }
+          />
+        </View>
       </View>
     </View>
   </View>

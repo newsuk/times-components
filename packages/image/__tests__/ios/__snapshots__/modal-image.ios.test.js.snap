@@ -60,6 +60,7 @@ exports[`1. modal image 1`] = `
                 }
               }
             />
+            <View />
           </View>
         </Gestures>
       </SafeAreaView>
@@ -104,18 +105,20 @@ exports[`1. modal image 1`] = `
           }
         }
       />
-      <View
-        height="100%"
-        width="100%"
-      >
-        <Image
-          resizeMode="contain"
-          source={
-            Object {
-              "testUri": "../../../packages/image/assets/t.png",
+      <View>
+        <View
+          height="100%"
+          width="100%"
+        >
+          <Image
+            resizeMode="contain"
+            source={
+              Object {
+                "testUri": "../../../packages/image/assets/t.png",
+              }
             }
-          }
-        />
+          />
+        </View>
       </View>
     </View>
   </View>
@@ -178,18 +181,20 @@ exports[`2. modal image with no caption 1`] = `
               show={false}
               source={null}
             />
-            <View
-              height="100%"
-              width="100%"
-            >
-              <Image
-                resizeMode="contain"
-                source={
-                  Object {
-                    "testUri": "../../../packages/image/assets/t.png",
+            <View>
+              <View
+                height="100%"
+                width="100%"
+              >
+                <Image
+                  resizeMode="contain"
+                  source={
+                    Object {
+                      "testUri": "../../../packages/image/assets/t.png",
+                    }
                   }
-                }
-              />
+                />
+              </View>
             </View>
           </View>
         </Gestures>
@@ -225,18 +230,20 @@ exports[`2. modal image with no caption 1`] = `
         show={false}
         source={null}
       />
-      <View
-        height="100%"
-        width="100%"
-      >
-        <Image
-          resizeMode="contain"
-          source={
-            Object {
-              "testUri": "../../../packages/image/assets/t.png",
+      <View>
+        <View
+          height="100%"
+          width="100%"
+        >
+          <Image
+            resizeMode="contain"
+            source={
+              Object {
+                "testUri": "../../../packages/image/assets/t.png",
+              }
             }
-          }
-        />
+          />
+        </View>
       </View>
     </View>
   </View>
@@ -303,6 +310,7 @@ exports[`3. modal image with custom highressize 1`] = `
                 }
               }
             />
+            <View />
           </View>
         </Gestures>
       </SafeAreaView>
@@ -347,18 +355,20 @@ exports[`3. modal image with custom highressize 1`] = `
           }
         }
       />
-      <View
-        height="100%"
-        width="100%"
-      >
-        <Image
-          resizeMode="contain"
-          source={
-            Object {
-              "testUri": "../../../packages/image/assets/t.png",
+      <View>
+        <View
+          height="100%"
+          width="100%"
+        >
+          <Image
+            resizeMode="contain"
+            source={
+              Object {
+                "testUri": "../../../packages/image/assets/t.png",
+              }
             }
-          }
-        />
+          />
+        </View>
       </View>
     </View>
   </View>
@@ -410,18 +420,20 @@ exports[`9. hides elements when tapping on the image 1`] = `
               show={true}
               source={null}
             />
-            <View
-              height="100%"
-              width="100%"
-            >
-              <Image
-                resizeMode="contain"
-                source={
-                  Object {
-                    "testUri": "../../../packages/image/assets/t.png",
+            <View>
+              <View
+                height="100%"
+                width="100%"
+              >
+                <Image
+                  resizeMode="contain"
+                  source={
+                    Object {
+                      "testUri": "../../../packages/image/assets/t.png",
+                    }
                   }
-                }
-              />
+                />
+              </View>
             </View>
           </View>
         </Gestures>
@@ -440,18 +452,20 @@ exports[`9. hides elements when tapping on the image 1`] = `
         show={true}
         source={null}
       />
-      <View
-        height="100%"
-        width="100%"
-      >
-        <Image
-          resizeMode="contain"
-          source={
-            Object {
-              "testUri": "../../../packages/image/assets/t.png",
+      <View>
+        <View
+          height="100%"
+          width="100%"
+        >
+          <Image
+            resizeMode="contain"
+            source={
+              Object {
+                "testUri": "../../../packages/image/assets/t.png",
+              }
             }
-          }
-        />
+          />
+        </View>
       </View>
     </View>
   </View>
@@ -514,18 +528,20 @@ exports[`10. re-shows elements when tapping on the image a second time 1`] = `
               show={true}
               source={null}
             />
-            <View
-              height="100%"
-              width="100%"
-            >
-              <Image
-                resizeMode="contain"
-                source={
-                  Object {
-                    "testUri": "../../../packages/image/assets/t.png",
+            <View>
+              <View
+                height="100%"
+                width="100%"
+              >
+                <Image
+                  resizeMode="contain"
+                  source={
+                    Object {
+                      "testUri": "../../../packages/image/assets/t.png",
+                    }
                   }
-                }
-              />
+                />
+              </View>
             </View>
           </View>
         </Gestures>
@@ -567,18 +583,20 @@ exports[`10. re-shows elements when tapping on the image a second time 1`] = `
         show={true}
         source={null}
       />
-      <View
-        height="100%"
-        width="100%"
-      >
-        <Image
-          resizeMode="contain"
-          source={
-            Object {
-              "testUri": "../../../packages/image/assets/t.png",
+      <View>
+        <View
+          height="100%"
+          width="100%"
+        >
+          <Image
+            resizeMode="contain"
+            source={
+              Object {
+                "testUri": "../../../packages/image/assets/t.png",
+              }
             }
-          }
-        />
+          />
+        </View>
       </View>
     </View>
   </View>
