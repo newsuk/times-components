@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.3](https://github.com/newsuk/times-components/compare/@times-components/text-flow@0.0.2...@times-components/text-flow@0.0.3) (2019-05-08)
+
+
+### Bug Fixes
+
+* small fixes for layout and a crash fix on tablet ([#1926](https://github.com/newsuk/times-components/issues/1926)) ([54221cf](https://github.com/newsuk/times-components/commit/54221cf))
+
+
+
+
+
 ## 0.0.2 (2019-05-01)
 
 **Note:** Version bump only for package @times-components/text-flow

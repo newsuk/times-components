@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-main-comment",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "Main Comment Article Template",
   "main": "dist/article-main-comment",
   "dev": "src/article-main-comment",
@@ -60,11 +60,11 @@
   },
   "dependencies": {
     "@times-components/ad": "2.5.35",
-    "@times-components/article-byline": "3.1.64",
+    "@times-components/article-byline": "3.1.65",
     "@times-components/article-error": "0.2.69",
     "@times-components/article-flag": "2.6.29",
     "@times-components/article-label": "2.3.70",
-    "@times-components/article-skeleton": "1.0.13",
+    "@times-components/article-skeleton": "1.0.14",
     "@times-components/context": "1.0.5",
     "@times-components/date-publication": "0.20.57",
     "@times-components/image": "5.3.27",
