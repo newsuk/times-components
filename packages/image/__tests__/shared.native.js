@@ -56,6 +56,24 @@ export default () => {
       }
     },
     {
+      name: "handle onload event",
+      test: () => {
+        const testInstance = TestRenderer.create(<Image {...props} />);
+
+        testInstance.root.children[0].props.onLayout(
+          getLayoutEventForWidth(700)
+        );
+
+        expect(testInstance).toMatchSnapshot();
+
+        testInstance.root
+          .findAll(node => node.type === ReactNativeImage)[0]
+          .props.onLoad();
+
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
       name: "data image url without a query string",
       test: () => {
         const dataUri =
@@ -69,7 +87,7 @@ export default () => {
         );
 
         expect(
-          testInstance.root.findAll(node => node.type === ReactNativeImage)[1]
+          testInstance.root.findAll(node => node.type === ReactNativeImage)[0]
             .props.source.uri
         ).toEqual(dataUri);
       }
@@ -104,7 +122,7 @@ export default () => {
         const images = testInstance.root.findAll(
           node => node.type === ReactNativeImage
         );
-        expect(images[images.length - 1].props.source.uri).toEqual(uri);
+        expect(images[0].props.source.uri).toEqual(uri);
       }
     },
     {

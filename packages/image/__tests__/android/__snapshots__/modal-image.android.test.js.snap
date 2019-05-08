@@ -78,6 +78,18 @@ exports[`1. modal image 1`] = `
     <View
       aspectRatio={2}
     >
+      <Image
+        caption={<MockCaption />}
+        fadeDuration={0}
+        fadeImageIn={false}
+        onImagePress={null}
+        show={false}
+        source={
+          Object {
+            "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800",
+          }
+        }
+      />
       <View
         height="100%"
         width="100%"
@@ -91,18 +103,6 @@ exports[`1. modal image 1`] = `
           }
         />
       </View>
-      <Image
-        caption={<MockCaption />}
-        fadeDuration={0}
-        fadeImageIn={false}
-        onImagePress={null}
-        show={false}
-        source={
-          Object {
-            "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800",
-          }
-        }
-      />
     </View>
   </View>
 </View>
@@ -156,6 +156,14 @@ exports[`2. modal image with no caption 1`] = `
           <View
             aspectRatio={2}
           >
+            <Image
+              caption={null}
+              fadeDuration={0}
+              fadeImageIn={false}
+              onImagePress={null}
+              show={false}
+              source={null}
+            />
             <View
               height="100%"
               width="100%"
@@ -169,14 +177,6 @@ exports[`2. modal image with no caption 1`] = `
                 }
               />
             </View>
-            <Image
-              caption={null}
-              fadeDuration={0}
-              fadeImageIn={false}
-              onImagePress={null}
-              show={false}
-              source={null}
-            />
           </View>
         </Gestures>
       </SafeAreaView>
@@ -189,6 +189,14 @@ exports[`2. modal image with no caption 1`] = `
     <View
       aspectRatio={2}
     >
+      <Image
+        caption={null}
+        fadeDuration={0}
+        fadeImageIn={false}
+        onImagePress={null}
+        show={false}
+        source={null}
+      />
       <View
         height="100%"
         width="100%"
@@ -202,14 +210,6 @@ exports[`2. modal image with no caption 1`] = `
           }
         />
       </View>
-      <Image
-        caption={null}
-        fadeDuration={0}
-        fadeImageIn={false}
-        onImagePress={null}
-        show={false}
-        source={null}
-      />
     </View>
   </View>
 </View>
@@ -293,6 +293,18 @@ exports[`3. modal image with custom highressize 1`] = `
     <View
       aspectRatio={2}
     >
+      <Image
+        caption={<MockCaption />}
+        fadeDuration={0}
+        fadeImageIn={false}
+        onImagePress={null}
+        show={false}
+        source={
+          Object {
+            "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
+          }
+        }
+      />
       <View
         height="100%"
         width="100%"
@@ -306,18 +318,6 @@ exports[`3. modal image with custom highressize 1`] = `
           }
         />
       </View>
-      <Image
-        caption={<MockCaption />}
-        fadeDuration={0}
-        fadeImageIn={false}
-        onImagePress={null}
-        show={false}
-        source={
-          Object {
-            "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
-          }
-        }
-      />
     </View>
   </View>
 </View>
@@ -360,6 +360,14 @@ exports[`8. hides elements when tapping on the image 1`] = `
           <View
             aspectRatio={2}
           >
+            <Image
+              caption={<MockCaption />}
+              fadeDuration={0}
+              fadeImageIn={false}
+              onImagePress={null}
+              show={true}
+              source={null}
+            />
             <View
               height="100%"
               width="100%"
@@ -373,14 +381,6 @@ exports[`8. hides elements when tapping on the image 1`] = `
                 }
               />
             </View>
-            <Image
-              caption={<MockCaption />}
-              fadeDuration={0}
-              fadeImageIn={false}
-              onImagePress={null}
-              show={true}
-              source={null}
-            />
           </View>
         </Gestures>
       </SafeAreaView>
@@ -390,6 +390,14 @@ exports[`8. hides elements when tapping on the image 1`] = `
     <View
       aspectRatio={2}
     >
+      <Image
+        caption={<MockCaption />}
+        fadeDuration={0}
+        fadeImageIn={false}
+        onImagePress={null}
+        show={true}
+        source={null}
+      />
       <View
         height="100%"
         width="100%"
@@ -403,14 +411,6 @@ exports[`8. hides elements when tapping on the image 1`] = `
           }
         />
       </View>
-      <Image
-        caption={<MockCaption />}
-        fadeDuration={0}
-        fadeImageIn={false}
-        onImagePress={null}
-        show={true}
-        source={null}
-      />
     </View>
   </View>
 </View>
@@ -464,6 +464,14 @@ exports[`9. re-shows elements when tapping on the image a second time 1`] = `
           <View
             aspectRatio={2}
           >
+            <Image
+              caption={<MockCaption />}
+              fadeDuration={0}
+              fadeImageIn={false}
+              onImagePress={null}
+              show={true}
+              source={null}
+            />
             <View
               height="100%"
               width="100%"
@@ -477,14 +485,6 @@ exports[`9. re-shows elements when tapping on the image a second time 1`] = `
                 }
               />
             </View>
-            <Image
-              caption={<MockCaption />}
-              fadeDuration={0}
-              fadeImageIn={false}
-              onImagePress={null}
-              show={true}
-              source={null}
-            />
           </View>
         </Gestures>
       </SafeAreaView>
@@ -503,6 +503,14 @@ exports[`9. re-shows elements when tapping on the image a second time 1`] = `
     <View
       aspectRatio={2}
     >
+      <Image
+        caption={<MockCaption />}
+        fadeDuration={0}
+        fadeImageIn={false}
+        onImagePress={null}
+        show={true}
+        source={null}
+      />
       <View
         height="100%"
         width="100%"
@@ -516,14 +524,6 @@ exports[`9. re-shows elements when tapping on the image a second time 1`] = `
           }
         />
       </View>
-      <Image
-        caption={<MockCaption />}
-        fadeDuration={0}
-        fadeImageIn={false}
-        onImagePress={null}
-        show={true}
-        source={null}
-      />
     </View>
   </View>
 </View>

@@ -8,6 +8,16 @@ exports[`1. default image 1`] = `
     }
   }
 >
+  <Image
+    style={
+      Object {
+        "height": "100%",
+        "position": "absolute",
+        "resizeMode": "contain",
+        "width": "100%",
+      }
+    }
+  />
   <View
     style={
       Object {
@@ -25,15 +35,5 @@ exports[`1. default image 1`] = `
       }
     />
   </View>
-  <Image
-    style={
-      Object {
-        "height": "100%",
-        "position": "absolute",
-        "resizeMode": "contain",
-        "width": "100%",
-      }
-    }
-  />
 </View>
 `;

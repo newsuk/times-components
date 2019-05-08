@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import { View, Image } from "react-native";
 import PropTypes from "prop-types";
 import memoize from "lodash.memoize";
@@ -32,8 +32,10 @@ class TimesImage extends Component {
     super(props);
 
     this.state = {
+      isLoaded: false,
       width: null
     };
+    this.handleLoad = this.handleLoad.bind(this);
     this.onImageLayout = this.onImageLayout.bind(this);
   }
 
@@ -49,6 +51,10 @@ class TimesImage extends Component {
     }
   }
 
+  handleLoad() {
+    this.setState({ isLoaded: true });
+  }
+
   render() {
     const {
       aspectRatio,
@@ -60,7 +66,7 @@ class TimesImage extends Component {
       rounded,
       ...defaultImageProps
     } = this.props;
-    const { width } = this.state;
+    const { isLoaded, width } = this.state;
     const renderedRes = highResSize || width;
     const srcUri = getUriAtRes(uri, renderedRes);
     const lowResUri = lowResSize
@@ -74,25 +80,30 @@ class TimesImage extends Component {
         onLayout={this.onImageLayout}
         style={[styles.imageContainer, style]}
       >
-        {!lowResSize ? <Placeholder size={renderedRes} /> : null}
-        {showLowResPlaceholder ? (
-          <Image
-            {...defaultImageProps}
-            borderRadius={rounded ? renderedRes / 2 : borderRadius}
-            fadeDuration={0}
-            source={{
-              uri: lowResUri
-            }}
-            style={styles.image}
-          />
-        ) : null}
         <LazyLoadingImage
           {...defaultImageProps}
           borderRadius={rounded ? renderedRes / 2 : borderRadius}
           fadeDuration={0}
+          onLoad={this.handleLoad}
           source={srcUri && renderedRes ? { uri: srcUri } : null}
           style={styles.image}
         />
+        {isLoaded ? null : (
+          <Fragment>
+            {!lowResSize ? <Placeholder size={renderedRes} /> : null}
+            {showLowResPlaceholder ? (
+              <Image
+                {...defaultImageProps}
+                borderRadius={rounded ? renderedRes / 2 : borderRadius}
+                fadeDuration={0}
+                source={{
+                  uri: lowResUri
+                }}
+                style={styles.image}
+              />
+            ) : null}
+          </Fragment>
+        )}
       </View>
     );
   }
