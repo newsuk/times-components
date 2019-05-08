@@ -139,3 +139,4 @@ SaveStarWeb.defaultProps = {
 };
 
 export default SaveStarWeb;
+export { default as saveApi } from "./save-api";
