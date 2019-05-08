@@ -1,6 +1,6 @@
 {
   "name": "@times-components/context",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Shared context between components",
   "main": "dist/context",
   "dev": "src/context",

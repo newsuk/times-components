@@ -1,9 +1,8 @@
 import React from "react";
-import { View } from "react-native";
 import PropTypes from "prop-types";
+import Image from "@times-components/image";
 import {
   getTileImageUri,
-  TileImage,
   TileLink,
   TileSummary,
   withTileTracking
@@ -11,11 +10,9 @@ import {
 import styles from "./styles";
 
 const TileR = ({ onPress, tile }) => (
-  <TileLink onPress={onPress} tile={tile}>
-    <View style={styles.container}>
-      <TileSummary headlineStyle={styles.headline} tile={tile} />
-      <TileImage aspectRatio={16 / 9} uri={getTileImageUri(tile, "crop169")} />
-    </View>
+  <TileLink onPress={onPress} style={styles.container} tile={tile}>
+    <TileSummary headlineStyle={styles.headline} tile={tile} />
+    <Image aspectRatio={16 / 9} uri={getTileImageUri(tile, "crop169")} />
   </TileLink>
 );
 

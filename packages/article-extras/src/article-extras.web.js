@@ -7,17 +7,20 @@ import ArticleTopics from "./article-topics";
 const ArticleExtras = ({
   analyticsStream,
   articleId,
+  commentsAllowed,
   commentsEnabled,
   registerNode,
+  relatedArticleAllowed,
   relatedArticleSlice,
   relatedArticlesVisible,
   spotAccountId,
-  topics
+  topics,
+  topicsAllowed
 }) => (
   <Fragment>
-    <ArticleTopics topics={topics} />
+    {topicsAllowed ? <ArticleTopics topics={topics} /> : null}
     <aside id="related-articles" ref={node => registerNode(node)}>
-      {relatedArticleSlice ? (
+      {relatedArticleAllowed ? (
         <RelatedArticles
           analyticsStream={analyticsStream}
           isVisible={relatedArticlesVisible}
@@ -25,23 +28,34 @@ const ArticleExtras = ({
         />
       ) : null}
     </aside>
-    <ArticleComments
-      articleId={articleId}
-      isEnabled={commentsEnabled}
-      spotAccountId={spotAccountId}
-    />
+    {commentsAllowed ? (
+      <ArticleComments
+        articleId={articleId}
+        isEnabled={commentsEnabled}
+        spotAccountId={spotAccountId}
+      />
+    ) : null}
   </Fragment>
 );
 
 ArticleExtras.propTypes = {
   analyticsStream: PropTypes.func.isRequired,
   articleId: PropTypes.string.isRequired,
+  commentsAllowed: PropTypes.bool.isRequired,
   commentsEnabled: PropTypes.bool.isRequired,
   registerNode: PropTypes.func.isRequired,
-  relatedArticleSlice: PropTypes.shape({}).isRequired,
+  relatedArticleAllowed: PropTypes.bool.isRequired,
+  relatedArticleSlice: PropTypes.shape({}),
   relatedArticlesVisible: PropTypes.bool.isRequired,
-  spotAccountId: PropTypes.string.isRequired,
-  topics: PropTypes.arrayOf(PropTypes.shape({})).isRequired
+  spotAccountId: PropTypes.string,
+  topics: PropTypes.arrayOf(PropTypes.shape({})),
+  topicsAllowed: PropTypes.bool.isRequired
+};
+
+ArticleExtras.defaultProps = {
+  relatedArticleSlice: null,
+  spotAccountId: null,
+  topics: null
 };
 
 export default ArticleExtras;

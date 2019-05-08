@@ -8,12 +8,7 @@ import { iterator } from "@times-components/test-utils";
 import { mockEditionSlice } from "@times-components/fixture-generator";
 import StarButton from "@times-components/star-button";
 import { TileH, TileX } from "../src/tiles";
-import {
-  TileImage,
-  TileLink,
-  TileStar,
-  TileSummary
-} from "../src/tiles/shared";
+import { TileLink, TileStar, TileSummary } from "../src/tiles/shared";
 
 jest.mock("@times-components/article-flag", () => ({
   ArticleFlags: "ArticleFlags"
@@ -183,7 +178,7 @@ export default () => {
           <TileH onPress={() => {}} tile={tileWithListingAssetOverride} />
         );
 
-        expect(output.root.findByType(TileImage).props.uri).toEqual(
+        expect(output.root.findByType(Image).props.uri).toEqual(
           tileWithListingAssetOverride.article.listingAsset.crop23.url
         );
       }

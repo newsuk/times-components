@@ -20,7 +20,8 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     makeArticleUrl,
     makeTopicUrl,
     mapArticleToAdConfig,
-    spotAccountId
+    spotAccountId,
+    userState
   } = data;
 
   return React.createElement(
@@ -46,6 +47,9 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
                 theme: {
                   ...themeFactory(article.section, article.template),
                   scale: scale || defaults.theme.scale
+                },
+                user: {
+                  isLoggedIn: userState.isLoggedIn
                 }
               }
             },

@@ -8,7 +8,13 @@ if (window.nuk && window.nuk.ssr && window.nuk.topicPage) {
     makeTopicUrl,
     mapTopicToAdConfig
   } = window.nuk.ssr;
-  const { debounceTimeMs, page, pageSize, topicSlug } = window.nuk.topicPage;
+  const {
+    debounceTimeMs,
+    page,
+    pageSize,
+    topicSlug,
+    useNewTopicDataSource
+  } = window.nuk.topicPage;
 
   const data = {
     debounceTimeMs,
@@ -22,7 +28,12 @@ if (window.nuk && window.nuk.ssr && window.nuk.topicPage) {
 
   const clientOptions = {
     rootTag,
-    useGET: true
+    useGET: true,
+    headers: useNewTopicDataSource
+      ? {
+          "x-new-topic-data-source": true
+        }
+      : {}
   };
 
   runClient(topic, clientOptions, data);

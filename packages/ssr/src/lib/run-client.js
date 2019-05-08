@@ -17,7 +17,11 @@ const makeClient = options => {
     throw new Error("API endpoint is empty");
   }
 
-  const networkInterfaceOptions = { fetch, headers: {}, uri: options.uri };
+  const networkInterfaceOptions = {
+    fetch,
+    headers: options.headers || {},
+    uri: options.uri
+  };
 
   if (options.useGET) {
     networkInterfaceOptions.headers["content-type"] =
@@ -47,7 +51,8 @@ module.exports = (component, clientOptions, data) => {
   const client = makeClient({
     initialState: window.__APOLLO_STATE__,
     uri: window.nuk.graphqlapi.url,
-    useGET: clientOptions.useGET
+    useGET: clientOptions.useGET,
+    headers: clientOptions.headers
   });
 
   const reporterOptions = {

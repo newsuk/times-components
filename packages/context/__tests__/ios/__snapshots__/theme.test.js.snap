@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ContextProviderWithDefaults adds defaults to the provided context 1`] = `"{\\"theme\\":{\\"scale\\":\\"large\\",\\"sectionColour\\":\\"#FFFFFF\\"}}"`;
+exports[`ContextProviderWithDefaults adds defaults to the provided context 1`] = `"{\\"theme\\":{\\"scale\\":\\"large\\",\\"sectionColour\\":\\"#FFFFFF\\"},\\"user\\":{\\"isLoggedIn\\":false}}"`;
 
-exports[`article context with default values 1`] = `"{\\"theme\\":{\\"imageCaptionAlignment\\":{},\\"scale\\":\\"medium\\"}}"`;
+exports[`article context with default values 1`] = `"{\\"theme\\":{\\"imageCaptionAlignment\\":{},\\"scale\\":\\"medium\\"},\\"user\\":{\\"isLoggedIn\\":false}}"`;
 
-exports[`article context with inline values 1`] = `"{\\"theme\\":{\\"scale\\":\\"large\\",\\"sectionColour\\":\\"#FFFFFF\\"}}"`;
+exports[`article context with inline values 1`] = `"{\\"theme\\":{\\"scale\\":\\"large\\",\\"sectionColour\\":\\"#FFFFFF\\"},\\"user\\":{\\"isLoggedIn\\":false}}"`;
 
 exports[`section context with default values 1`] = `"{\\"onArticleSavePress\\":null,\\"publicationName\\":\\"TIMES\\",\\"recentlyOpenedPuzzleCount\\":0,\\"savedArticles\\":null}"`;
 

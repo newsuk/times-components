@@ -281,7 +281,6 @@ exports[`2. leaders 1`] = `
   style={
     Object {
       "backgroundColor": "#F0F0F0",
-      "paddingHorizontal": 40,
       "paddingTop": 20,
     }
   }
@@ -363,7 +362,6 @@ exports[`2. leaders 2`] = `
   style={
     Object {
       "backgroundColor": "#F0F0F0",
-      "paddingHorizontal": 40,
       "paddingTop": 20,
     }
   }
@@ -1008,7 +1006,6 @@ exports[`14. leaders 1`] = `
   style={
     Object {
       "backgroundColor": "#F0F0F0",
-      "paddingHorizontal": 40,
       "paddingTop": 20,
     }
   }

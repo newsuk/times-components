@@ -8,10 +8,13 @@ import contentWithNestedFirstParagraph from "../fixtures/bold-article-content";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
 
+jest.mock("@times-components/save-and-share-bar", () => "SaveAndShareBar");
+
 export const renderArticle = (data, header = null) => (
   <ContextProviderWithDefaults
     value={{
-      theme: { scale: scales.medium, sectionColour: "#FF0000" }
+      theme: { scale: scales.medium, sectionColour: "#FF0000" },
+      user: { isLoggedIn: true }
     }}
   >
     <ArticleSkeleton

@@ -18,8 +18,11 @@ export default () => {
   it("article context with inline values", () => {
     const scale = scales.large;
     const sectionColour = "#FFFFFF";
+    const isLoggedIn = false;
     const testInstance = TestRenderer.create(
-      <Context.Provider value={{ theme: { scale, sectionColour } }}>
+      <Context.Provider
+        value={{ theme: { scale, sectionColour }, user: { isLoggedIn } }}
+      >
         <Context.Consumer>
           {context => JSON.stringify(context)}
         </Context.Consumer>
@@ -65,9 +68,10 @@ export default () => {
     it("adds defaults to the provided context", () => {
       const scale = scales.large;
       const sectionColour = "#FFFFFF";
+      const isLoggedIn = false;
       const testInstance = TestRenderer.create(
         <ContextProviderWithDefaults
-          value={{ theme: { scale, sectionColour } }}
+          value={{ theme: { scale, sectionColour }, user: { isLoggedIn } }}
         >
           <Context.Consumer>
             {context => JSON.stringify(context)}

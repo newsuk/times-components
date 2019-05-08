@@ -16,7 +16,8 @@ const styles = {
   },
   container: {
     alignItems: "center",
-    paddingVertical: spacing(4)
+    paddingTop: spacing(4),
+    paddingBottom: spacing(2)
   },
   headline: {
     color: colours.functional.brandColour,
@@ -24,7 +25,6 @@ const styles = {
     fontSize: fontSizes.tileLeadHeadline,
     lineHeight: 35,
     paddingHorizontal: spacing(2),
-    paddingTop: spacing(2),
     textAlign: "center"
   },
   imageContainer: {

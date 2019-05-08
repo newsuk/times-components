@@ -19,6 +19,16 @@ const mediumBreakpointStyles = {
   },
   rowItemContainer: {
     flex: 1
+  },
+  supportContainer: {
+    flex: 1,
+    flexDirection: "row"
+  },
+  supportItem: {
+    width: "50%"
+  },
+  supportsWrapper: {
+    width: "50%"
   }
 };
 
