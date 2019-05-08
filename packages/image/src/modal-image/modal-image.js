@@ -76,7 +76,7 @@ class ModalImage extends Component {
         >
           <View style={styles.modal}>
             <ResponsiveContext.Consumer>
-              {({ isTablet }) => (
+              {({ isTablet, screenWidth }) => (
                 <Fragment>
                   <SafeAreaView
                     forceInset={{
@@ -110,6 +110,7 @@ class ModalImage extends Component {
                     >
                       <Image
                         {...this.props}
+                        highResSize={screenWidth}
                         lowResSize={lowResSize}
                         style={styles.modalImageContainer}
                       />

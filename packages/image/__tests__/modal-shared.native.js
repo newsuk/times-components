@@ -11,7 +11,8 @@ import {
   replacePropTransform
 } from "@times-components/jest-serializer";
 import { hash, iterator } from "@times-components/test-utils";
-import { Gestures } from "./mocks";
+import Responsive from "@times-components/responsive";
+import { Gestures, setDimension } from "./mocks";
 import Image, { ModalImage } from "../src";
 
 // eslint-disable-next-line react/prop-types
@@ -95,6 +96,23 @@ export default () => {
         const modal = testInstance.root.find(node => node.type === Modal);
 
         expect(modal.props.visible).toBe(true);
+      }
+    },
+    {
+      name: "modal image uses screen width to set highResSize",
+      test: () => {
+        const width = 1200;
+        const testInstance = TestRenderer.create(
+          <Responsive>
+            <ModalImage {...props} />
+          </Responsive>
+        );
+
+        setDimension({ width, height: width / 2 });
+
+        const modalImage = testInstance.root.findAllByType(Image)[0];
+
+        expect(modalImage.props.highResSize).toEqual(width);
       }
     },
     {

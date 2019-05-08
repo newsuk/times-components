@@ -299,7 +299,7 @@ exports[`3. modal image with custom highressize 1`] = `
               show={false}
               source={
                 Object {
-                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
+                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800",
                 }
               }
             />
@@ -365,7 +365,7 @@ exports[`3. modal image with custom highressize 1`] = `
 </View>
 `;
 
-exports[`8. hides elements when tapping on the image 1`] = `
+exports[`9. hides elements when tapping on the image 1`] = `
 <View>
   <Modal
     animationType="slide"
@@ -458,7 +458,7 @@ exports[`8. hides elements when tapping on the image 1`] = `
 </View>
 `;
 
-exports[`9. re-shows elements when tapping on the image a second time 1`] = `
+exports[`10. re-shows elements when tapping on the image a second time 1`] = `
 <View>
   <Modal
     animationType="slide"
@@ -535,7 +535,7 @@ exports[`9. re-shows elements when tapping on the image a second time 1`] = `
         height={140}
         pointerEvents="none"
         startPoint="0.35714285714285715"
-        width={500}
+        width={1200}
       >
         <SafeAreaView
           forceInset={
