@@ -2,26 +2,9 @@ import React from "react";
 import TestRenderer from "react-test-renderer";
 import { iterator } from "@times-components/test-utils";
 import { Clipboard } from "react-native";
+import "./mocks";
 import BarItem from "../src/bar-item";
 import SaveAndShareBar from "../src/save-and-share-bar";
-
-jest.mock("../src/bar-item", () => "BarItem");
-
-jest.mock("@times-components/icons", () => ({
-  IconCopyLink: "IconCopyLink",
-  IconEmail: "IconEmail",
-  IconFacebook: "IconFacebook",
-  IconSaveBookmark: "IconSaveBookmark",
-  IconTwitter: "IconTwitter"
-}));
-
-jest.mock("react-native", () => {
-  const reactNativeMock = require.requireActual("react-native");
-  reactNativeMock.Clipboard = {
-    setString: jest.fn()
-  };
-  return reactNativeMock;
-});
 
 export default () => {
   const tests = [

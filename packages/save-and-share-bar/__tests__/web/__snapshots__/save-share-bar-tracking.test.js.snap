@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`save and share tracking events when press copy to clipboard 1`] = `
+Object {
+  "action": "Pressed",
+  "attrs": Object {
+    "articleUrl": "dummy-url",
+  },
+  "component": "ArticleShareOnEmail",
+}
+`;
+
+exports[`save and share tracking events when press copy to clipboard 2`] = `
+Object {
+  "action": "Pressed",
+  "attrs": Object {
+    "articleUrl": "dummy-url",
+  },
+  "component": "ArticleShareOnEmail",
+}
+`;
+
+exports[`save and share tracking events when press copy to clipboard: onCopyLink 1`] = `
+Array [
+  Array [],
+]
+`;
+
+exports[`save and share tracking events when press copy to clipboard: onSaveToMyArticles 1`] = `
+Array [
+  Array [],
+]
+`;
+
+exports[`save and share tracking events when press share on email 1`] = `
+Object {
+  "action": "Pressed",
+  "attrs": Object {
+    "articleUrl": "dummy-url",
+  },
+  "component": "ArticleShareOnEmail",
+}
+`;
+
+exports[`save and share tracking events when press share on email: onShareOnEmail 1`] = `
+Array [
+  Array [],
+]
+`;

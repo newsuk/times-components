@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { View, Text, Clipboard } from "react-native";
+import withTrackEvents from "./tracking/with-tack-events";
 import {
   IconEmail,
   IconFacebook,
@@ -12,7 +13,6 @@ import SharingApiUrls from "./constants";
 import styles from "./styles";
 import BarItem from "./bar-item";
 
-/* eslint-disable jsx-a11y/anchor-is-valid */
 class SaveAndShareBar extends Component {
   constructor(props) {
     super(props);
@@ -96,4 +96,4 @@ SaveAndShareBar.propTypes = {
   onShareOnEmail: PropTypes.func.isRequired
 };
 
-export default SaveAndShareBar;
+export default withTrackEvents(SaveAndShareBar);
