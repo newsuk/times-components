@@ -51,7 +51,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                   Object {
                     "color": "#FF0000",
                     "fontFamily": "TimesModern-Regular",
-                    "fontSize": 96,
+                    "fontSize": 110,
                     "marginBottom": -30,
                     "marginRight": 5,
                     "marginTop": -12,
