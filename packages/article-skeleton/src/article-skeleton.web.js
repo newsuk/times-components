@@ -145,7 +145,7 @@ class ArticleSkeleton extends Component {
                                 onSaveToMyArticles={() => {}}
                                 onShareOnEmail={() => {}}
                                 saveApi={saveApi}
-                                />
+                              />
                             </div>
                           </SaveShareRefContainer>
                         </SaveShareContainer>
