@@ -1,6 +1,6 @@
 {
   "name": "@times-components/interactive-wrapper",
-  "version": "0.2.45",
+  "version": "0.2.46",
   "description": "Wrapper for legacy Interactive components",
   "main": "dist/interactive-wrapper",
   "dev": "src/interactive-wrapper",
@@ -38,10 +38,10 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.8.10",
-    "@times-components/jest-configurator": "2.5.6",
-    "@times-components/jest-serializer": "3.2.2",
-    "@times-components/storybook": "4.0.3",
-    "@times-components/webpack-configurator": "2.0.17",
+    "@times-components/jest-configurator": "2.5.7",
+    "@times-components/jest-serializer": "3.2.3",
+    "@times-components/storybook": "4.0.4",
+    "@times-components/webpack-configurator": "2.0.18",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "23.6.0",
     "enzyme": "3.9.0",
