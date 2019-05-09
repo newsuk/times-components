@@ -39,7 +39,7 @@
     "@times-components/styleguide": "3.28.14",
     "@times-components/utils": "4.10.11",
     "lodash.invert": "4.3.0",
-    "prop-types": "15.6.2"
+    "prop-types": "15.7.2"
   },
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.8.11",

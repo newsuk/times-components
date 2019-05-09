@@ -71,7 +71,7 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "prop-types": "15.6.2",
+    "prop-types": "15.7.2",
     "react-native-svg": "6.5.3",
     "svgs": "3.2.1"
   },
