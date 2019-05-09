@@ -3,7 +3,7 @@
   "version": "0.7.130",
   "license": "BSD-3-Clause",
   "scripts": {
-    "build:js": "react-native bundle --platform ios --dev false --entry-file index.ios.js --bundle-output ios-assets/js/index.ios.bundle --assets-dest ios-assets/res/",
+    "build:js": "mkdir -p ios-assets/js && mkdir -p ios-assets/res && react-native bundle --platform ios --dev false --entry-file index.ios.js --bundle-output ios-assets/js/index.ios.bundle --assets-dest ios-assets/res/",
     "build:meta": "cat package.json | grep version | head -1 | sed 's/[\",\t ]//g' | awk -F: '{ print \"Bundle Version: \" $2 }' > ios-assets/js/version.meta",
     "build:all": "yarn build:js && yarn build:meta",
     "start": "react-native start",
