@@ -44,12 +44,12 @@
     "babel-plugin-react-native-web": "0.11.2",
     "babel-plugin-transform-es2015-modules-commonjs": "6.26.2",
     "eslint": "5.9.0",
-    "jest": "23.6.0",
+    "jest": "24.8.0",
     "prettier": "1.14.3"
   },
   "peerDependencies": {
     "babel-loader": "8.0.5",
-    "react-native-web": "0.9.0",
+    "react-native-web": "0.11.2",
     "webpack": ">=4.30.0"
   },
   "publishConfig": {
