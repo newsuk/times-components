@@ -12,7 +12,6 @@ LICENSE
 yarn.lock
 *.log
 rnw.js
-haul.config.js
 xnative/*
 gradle/*
 gradlew

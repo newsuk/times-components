@@ -110,7 +110,7 @@ exports[`7. card with a loading state 1`] = `
         />
       </div>
       <div>
-        <Component>
+        <_default>
           <Gradient
             degrees={264}
             endPoint="1"
@@ -131,7 +131,7 @@ exports[`7. card with a loading state 1`] = `
             endPoint="1"
             startPoint="0"
           />
-        </Component>
+        </_default>
       </div>
     </div>
   </div>
@@ -143,7 +143,7 @@ exports[`8. card with a loading state and no image 1`] = `
   <div>
     <div>
       <div>
-        <Component>
+        <_default>
           <Gradient
             degrees={264}
             endPoint="1"
@@ -164,7 +164,7 @@ exports[`8. card with a loading state and no image 1`] = `
             endPoint="1"
             startPoint="0"
           />
-        </Component>
+        </_default>
       </div>
     </div>
   </div>
@@ -176,7 +176,7 @@ exports[`9. card with reversed loading state 1`] = `
   <div>
     <div>
       <div>
-        <Component>
+        <_default>
           <Gradient
             degrees={264}
             endPoint="1"
@@ -197,7 +197,7 @@ exports[`9. card with reversed loading state 1`] = `
             endPoint="1"
             startPoint="0"
           />
-        </Component>
+        </_default>
       </div>
       <div>
         <TimesImage
@@ -218,7 +218,7 @@ exports[`10. card with reversed loading state with no image 1`] = `
   <div>
     <div>
       <div>
-        <Component>
+        <_default>
           <Gradient
             degrees={264}
             endPoint="1"
@@ -239,7 +239,7 @@ exports[`10. card with reversed loading state with no image 1`] = `
             endPoint="1"
             startPoint="0"
           />
-        </Component>
+        </_default>
       </div>
     </div>
   </div>

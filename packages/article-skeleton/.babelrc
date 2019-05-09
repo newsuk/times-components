@@ -1,7 +1,0 @@
-{
-  "presets": ["react-native"],
-  "plugins": [
-    "styled-components",
-    "add-react-displayname"
-  ]
-}

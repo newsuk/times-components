@@ -1,4 +1,4 @@
-import "babel-polyfill";
+import "@babel/polyfill";
 import minimatch from "minimatch";
 
 const { keys, values, entries } = Object;

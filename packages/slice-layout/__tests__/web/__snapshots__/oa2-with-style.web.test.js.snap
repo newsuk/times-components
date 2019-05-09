@@ -352,12 +352,6 @@ exports[`2. two child elements 1`] = `
   }
 }
 
-@media (min-width:520px) {
-  .c3 .opinionImageContainerClass {
-    min-width: 120px;
-  }
-}
-
 @media (min-width:768px) {
   .c2 .opinionBylineClass,
   .c2 .opinionHeadlineClass {
@@ -378,31 +372,6 @@ exports[`2. two child elements 1`] = `
   }
 
   .c2 .supportImageContainerClass {
-    display: block;
-  }
-}
-
-@media (min-width:768px) {
-  .c1 .opinionImageContainerClass {
-    min-width: 165px;
-  }
-
-  .c1 .opinionSummary125Class {
-    display: none;
-  }
-
-  .c1 .opinionSummary145Class {
-    display: block;
-  }
-}
-
-@media (min-width:1024px) {
-  .c0 .opinionSummary125Class,
-  .c0 .opinionSummary145Class {
-    display: none;
-  }
-
-  .c0 .opinionSummary225Class {
     display: block;
   }
 }
@@ -431,20 +400,6 @@ exports[`2. two child elements 1`] = `
   .c9 a > div,
   .c9 a > div > div {
     height: 100%;
-  }
-}
-
-@media (min-width:768px) {
-  .c8 {
-    -webkit-flex-basis: 0 !important;
-    -ms-flex-preferred-size: 0 !important;
-    flex-basis: 0 !important;
-    -webkit-box-flex: 3;
-    -webkit-flex-grow: 3;
-    -ms-flex-positive: 3;
-    flex-grow: 3;
-    padding-left: 10px;
-    padding-right: 10px;
   }
 }
 
@@ -493,6 +448,51 @@ exports[`2. two child elements 1`] = `
 @media (min-width:1024px) {
   .c11 {
     min-width: 400px;
+  }
+}
+
+@media (min-width:520px) {
+  .c3 .opinionImageContainerClass {
+    min-width: 120px;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 .opinionImageContainerClass {
+    min-width: 165px;
+  }
+
+  .c1 .opinionSummary125Class {
+    display: none;
+  }
+
+  .c1 .opinionSummary145Class {
+    display: block;
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 .opinionSummary125Class,
+  .c0 .opinionSummary145Class {
+    display: none;
+  }
+
+  .c0 .opinionSummary225Class {
+    display: block;
+  }
+}
+
+@media (min-width:768px) {
+  .c8 {
+    -webkit-flex-basis: 0 !important;
+    -ms-flex-preferred-size: 0 !important;
+    flex-basis: 0 !important;
+    -webkit-box-flex: 3;
+    -webkit-flex-grow: 3;
+    -ms-flex-positive: 3;
+    flex-grow: 3;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -558,7 +558,7 @@ exports[`2. two child elements 1`] = `
         className="c11 c12 S1"
       >
         <div
-          className="c13 c14 c15 c16 S1"
+          className="5 c13 c14 c15 c16 S1"
         >
           <div
             className="S1"
@@ -685,19 +685,7 @@ exports[`3. three child elements 1`] = `
   padding-right: 10px;
 }
 
-.c21 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  min-height: auto;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.c20 {
+.c18 {
   border-top-color: #DBDBDB;
   border-top-style: solid;
   border-top-width: 1px;
@@ -719,12 +707,6 @@ exports[`3. three child elements 1`] = `
   .c3 .opinionHeadlineClass {
     padding-right: 30px;
     width: 80%;
-  }
-}
-
-@media (min-width:520px) {
-  .c2 .opinionImageContainerClass {
-    min-width: 120px;
   }
 }
 
@@ -753,20 +735,6 @@ exports[`3. three child elements 1`] = `
 }
 
 @media (min-width:768px) {
-  .c0 .opinionImageContainerClass {
-    min-width: 152px;
-  }
-
-  .c0 .opinionSummary125Class {
-    display: none;
-  }
-
-  .c0 .opinionSummary160Class {
-    display: block;
-  }
-}
-
-@media (min-width:768px) {
   .c5 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
@@ -790,33 +758,6 @@ exports[`3. three child elements 1`] = `
   .c9 a > div,
   .c9 a > div > div {
     height: 100%;
-  }
-}
-
-@media (min-width:768px) {
-  .c8 {
-    -webkit-flex-basis: 0 !important;
-    -ms-flex-preferred-size: 0 !important;
-    flex-basis: 0 !important;
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
-@media (min-width:768px) {
-  .c7 {
-    border-bottom-color: #DBDBDB;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    margin-bottom: 10px;
-    min-width: 100%;
-    padding-bottom: 10px;
-    padding-left: 0;
-    padding-right: 0;
   }
 }
 
@@ -862,15 +803,29 @@ exports[`3. three child elements 1`] = `
   }
 }
 
-@media (min-width:768px) {
-  .c12 {
-    min-width: 100%;
-  }
-}
-
 @media (min-width:1024px) {
   .c11 {
     min-width: auto;
+  }
+}
+
+@media (min-width:520px) {
+  .c2 .opinionImageContainerClass {
+    min-width: 120px;
+  }
+}
+
+@media (min-width:768px) {
+  .c8 {
+    -webkit-flex-basis: 0 !important;
+    -ms-flex-preferred-size: 0 !important;
+    flex-basis: 0 !important;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -889,12 +844,6 @@ exports[`3. three child elements 1`] = `
   }
 }
 
-@media (min-width:768px) {
-  .c15 {
-    max-width: 50%;
-  }
-}
-
 @media (min-width:1024px) {
   .c14 {
     padding-left: 10px;
@@ -902,15 +851,46 @@ exports[`3. three child elements 1`] = `
 }
 
 @media (min-width:768px) {
-  .c21 {
-    -webkit-flex-basis: 0 !important;
-    -ms-flex-preferred-size: 0 !important;
-    flex-basis: 0 !important;
+  .c0 .opinionImageContainerClass {
+    min-width: 152px;
+  }
+
+  .c0 .opinionSummary125Class {
+    display: none;
+  }
+
+  .c0 .opinionSummary160Class {
+    display: block;
   }
 }
 
 @media (min-width:768px) {
-  .c20 {
+  .c7 {
+    border-bottom-color: #DBDBDB;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    margin-bottom: 10px;
+    min-width: 100%;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c12 {
+    min-width: 100%;
+  }
+}
+
+@media (min-width:768px) {
+  .c15 {
+    max-width: 50%;
+  }
+}
+
+@media (min-width:768px) {
+  .c18 {
     border-left-color: #DBDBDB;
     border-left-style: solid;
     border-left-width: 1px;
@@ -923,20 +903,8 @@ exports[`3. three child elements 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c20 {
-    padding-right: 10px;
-  }
-}
-
-@media (min-width:768px) {
-  .c19 {
-    max-width: 50%;
-  }
-}
-
-@media (min-width:1024px) {
   .c18 {
-    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -975,7 +943,7 @@ exports[`3. three child elements 1`] = `
         className="c11 c12 c13 S1"
       >
         <div
-          className="c14 c15 c16 c17 S1"
+          className="5 c14 c15 c16 c17 S1"
         >
           <div
             className="S1"
@@ -984,7 +952,7 @@ exports[`3. three child elements 1`] = `
           </div>
         </div>
         <div
-          className="c18 c19 c20 c21 S1"
+          className="5 c14 c15 c18 c17 S1"
         >
           <div
             className="S1"

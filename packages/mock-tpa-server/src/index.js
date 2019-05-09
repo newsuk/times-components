@@ -30,7 +30,7 @@ export function startWithMockData(mockData) {
       schema: executableSchema
     });
 
-    server = new ApolloServer({ schema: executableSchema });
+    server = new ApolloServer({ uploads: false, schema: executableSchema });
 
     server.listen().then(({ url }) => {
       console.log(`🚀  ${serviceName} ready at ${url}`);

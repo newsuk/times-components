@@ -19,7 +19,7 @@ const ArticleHeader = ({
   standfirst,
   style
 }) => (
-  <View style={[...style]}>
+  <View style={style}>
     <HeaderLabel isVideo={hasVideo} label={label} />
     <HeadlineContainer
       accessibilityRole="heading"

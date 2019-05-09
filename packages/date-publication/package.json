@@ -41,26 +41,26 @@
     "@times-components/storybook": "4.0.3",
     "@times-components/test-utils": "2.2.38",
     "@times-components/webpack-configurator": "2.0.17",
-    "babel-core": "6.26.0",
-    "babel-loader": "7.1.4",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "23.6.0",
+    "babel-loader": "8.0.5",
     "babel-plugin-add-react-displayname": "0.0.5",
-    "babel-plugin-styled-components": "1.5.1",
-    "babel-preset-react-native": "4.0.0",
+    "babel-plugin-styled-components": "1.10.0",
     "depcheck": "0.6.9",
     "eslint": "5.9.0",
-    "jest": "23.3.0",
+    "jest": "23.6.0",
     "prettier": "1.14.3",
     "react": "16.5.2",
     "react-dom": "16.5.2",
     "react-native": "0.55.4",
     "react-test-renderer": "16.5.2",
-    "webpack": "4.6.0",
-    "webpack-cli": "2.1.4"
+    "webpack": "4.30.0",
+    "webpack-cli": "3.3.1"
   },
   "dependencies": {
     "@times-components/styleguide": "3.28.12",
     "date-fns": "1.28.5",
-    "prop-types": "15.6.2"
+    "prop-types": "15.7.2"
   },
   "peerDependencies": {
     "react": ">=16.5",

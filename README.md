@@ -54,20 +54,12 @@ This has been made possible using [Fructose](https://github.com/newsuk/fructose)
 
 ## Native App Dev Server
 
-In order to run development servers for native applications, start haul dev
+In order to run development servers for native applications, start react-native dev
 server via:
 
 `yarn android:app` or `yarn ios:app`
 
 For step by step guide, see the corresponding Readme documentation for [android](./android-app/README.md) and [ios](./ios-app/README.md)
-
-## Haul
-
-We use Haul in lieu of the standard `react-native` CLI so that we can generate
-native Storybook bundles using Webpack, which we configure to honour our
-monorepo packages' respective `dev` entry points; this allows one to update a
-package's source code and preview the changes without having to manually
-re-transpile. Haul also automatically generates debuggable source maps.
 
 ### Fonts ⚠️
 

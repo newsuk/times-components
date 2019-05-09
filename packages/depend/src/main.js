@@ -1,6 +1,7 @@
 /* eslint-disable no-console */
 import chalk from "chalk";
 import { join } from "path";
+import flatten from "lodash.flatten";
 import depend from "./depend";
 import graph from "./graph";
 
@@ -39,7 +40,7 @@ export default async function main({
 
   const packagesList = await Promise.all(
     packagesToFind.map(path => getPackages(path))
-  ).then(packages => packages.flatten());
+  ).then(packages => flatten(packages));
 
   return depend(packagesList, argv.strategy, argv.only, argv.pick)
     .then(

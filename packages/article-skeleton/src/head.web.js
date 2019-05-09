@@ -40,7 +40,11 @@ function getAuthorAsText(article) {
   }
 
   const children = bylines.reduce((acc, byline) => {
-    acc.push(...byline.byline);
+    if (Array.isArray(byline.byline)) {
+      acc.push(...byline.byline);
+    } else {
+      acc.push(byline.byline);
+    }
     return acc;
   }, []);
 
