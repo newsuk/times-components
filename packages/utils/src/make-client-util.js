@@ -10,7 +10,7 @@ const makeClient = () => {
   let acsTnlCookie = null;
   let sacsTnlCookie = null;
 
-  if (window.nuk) {
+  if (typeof window !== "undefined" && window.nuk) {
     graphqlapi = window.nuk.graphqlapi.url;
     acsTnlCookie = window.nuk.getCookieValue("acs_tnl");
     sacsTnlCookie = window.nuk.getCookieValue("sacs_tnl");
