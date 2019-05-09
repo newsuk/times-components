@@ -36,6 +36,7 @@
     "@times-components/icons": "2.10.29",
     "@times-components/link": "3.4.7",
     "@times-components/styleguide": "3.28.14",
+    "@times-components/tracking": "2.4.34",
     "prop-types": "15.7.2",
     "styled-components": "3.4.0"
   },
