@@ -56,7 +56,7 @@
     "apollo-link-http": "1.5.14",
     "apollo-client": "2.5.1",
     "apollo-cache-inmemory": "1.5.1",
-    "@times-components/schema": "0.6.8",
+    "@times-components/schema": "0.6.9",
     "unfetch": "^3.0.0"
   },
   "peerDependencies": {
