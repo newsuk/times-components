@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.2.29](https://github.com/newsuk/times-components/compare/@times-components/card@5.2.28...@times-components/card@5.2.29) (2019-05-09)
+
+
+### Bug Fixes
+
+* remove tile view container border radius styles ([#1915](https://github.com/newsuk/times-components/issues/1915)) ([8d21d51](https://github.com/newsuk/times-components/commit/8d21d51))
+
+
+
+
+
 ## [5.2.28](https://github.com/newsuk/times-components/compare/@times-components/card@5.2.27...@times-components/card@5.2.28) (2019-05-09)
 
 **Note:** Version bump only for package @times-components/card

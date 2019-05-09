@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.56.10](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.56.9...@times-components/edition-slices@0.56.10) (2019-05-09)
+
+
+### Bug Fixes
+
+* remove tile view container border radius styles ([#1915](https://github.com/newsuk/times-components/issues/1915)) ([8d21d51](https://github.com/newsuk/times-components/commit/8d21d51))
+
+
+
+
+
 ## [0.56.9](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.56.8...@times-components/edition-slices@0.56.9) (2019-05-09)
 
 **Note:** Version bump only for package @times-components/edition-slices

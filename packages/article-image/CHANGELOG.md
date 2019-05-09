@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.9](https://github.com/newsuk/times-components/compare/@times-components/article-image@6.0.8...@times-components/article-image@6.0.9) (2019-05-09)
+
+
+### Bug Fixes
+
+* remove tile view container border radius styles ([#1915](https://github.com/newsuk/times-components/issues/1915)) ([8d21d51](https://github.com/newsuk/times-components/commit/8d21d51))
+
+
+
+
+
 ## [6.0.8](https://github.com/newsuk/times-components/compare/@times-components/article-image@6.0.7...@times-components/article-image@6.0.8) (2019-05-09)
 
 **Note:** Version bump only for package @times-components/article-image

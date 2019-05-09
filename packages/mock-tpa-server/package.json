@@ -1,6 +1,6 @@
 {
   "name": "@times-components/mock-tpa-server",
-  "version": "0.1.96",
+  "version": "0.1.97",
   "description": "utility for testing times component clients with mocked api",
   "main": "./dist/index",
   "scripts": {
@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@times-components/eslint-config-thetimes": "0.8.10",
+    "@times-components/eslint-config-thetimes": "0.8.11",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "23.6.0",
     "babel-plugin-transform-object-rest-spread": "6.26.0",
@@ -42,8 +42,8 @@
     "prettier": "1.14.3"
   },
   "dependencies": {
-    "@times-components/provider-test-tools": "1.17.11",
-    "@times-components/schema": "0.6.8",
+    "@times-components/provider-test-tools": "1.17.12",
+    "@times-components/schema": "0.6.9",
     "apollo-server": "2.4.8",
     "graphql": "14.2.1",
     "graphql-tools": "4.0.4"
