@@ -77,7 +77,6 @@ class TimesImage extends Component {
     const lowResUri = lowResSize
       ? getUriAtRes(uri, Math.min(lowResSize, renderedRes))
       : null;
-    const showLowResPlaceholder = lowResSize && lowResUri !== srcUri;
     const fadeStyle = { width: "100%", height: "100%", opacity: this.fadeAnim };
 
     return (
@@ -96,8 +95,7 @@ class TimesImage extends Component {
         />
         {isLoaded ? null : (
           <Animated.View style={fadeStyle}>
-            {!lowResSize ? <Placeholder /> : null}
-            {showLowResPlaceholder ? (
+            {lowResSize ? (
               <Image
                 {...defaultImageProps}
                 borderRadius={rounded ? renderedRes / 2 : borderRadius}
@@ -107,7 +105,9 @@ class TimesImage extends Component {
                 }}
                 style={styles.image}
               />
-            ) : null}
+            ) : (
+              <Placeholder />
+            )}
           </Animated.View>
         )}
       </View>

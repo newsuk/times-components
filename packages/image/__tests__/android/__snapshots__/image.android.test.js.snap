@@ -255,24 +255,7 @@ exports[`10. uses lowressize image as placeholder if passed 1`] = `
 </View>
 `;
 
-exports[`11. does not use lowressize image as placeholder if passed if same as high res 1`] = `
-<View
-  aspectRatio={2}
->
-  <Image
-    fadeDuration={0}
-    fadeImageIn={false}
-    source={
-      Object {
-        "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800",
-      }
-    }
-  />
-  <View />
-</View>
-`;
-
-exports[`12. handle layout change 1`] = `
+exports[`11. handle layout change 1`] = `
 <View
   aspectRatio={2}
 >
