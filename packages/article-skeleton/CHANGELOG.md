@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.14](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.0.13...@times-components/article-skeleton@1.0.14) (2019-05-08)
+
+
+### Bug Fixes
+
+* small fixes for layout and a crash fix on tablet ([#1926](https://github.com/newsuk/times-components/issues/1926)) ([54221cf](https://github.com/newsuk/times-components/commit/54221cf))
+
+
+
+
+
 ## [1.0.13](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.0.12...@times-components/article-skeleton@1.0.13) (2019-05-08)
 
 **Note:** Version bump only for package @times-components/article-skeleton

@@ -7,7 +7,7 @@ const fontSize = (font, scale) => {
     },
     dropCap: {
       large: 115,
-      medium: 96,
+      medium: 110,
       xlarge: 124
     },
     stMagazine: {

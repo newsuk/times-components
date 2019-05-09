@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.56.8](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.56.7...@times-components/edition-slices@0.56.8) (2019-05-08)
+
+
+### Bug Fixes
+
+* android tile star styling ([#1925](https://github.com/newsuk/times-components/issues/1925)) ([a6528de](https://github.com/newsuk/times-components/commit/a6528de))
+
+
+
+
+
 ## [0.56.7](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.56.6...@times-components/edition-slices@0.56.7) (2019-05-08)
 
 **Note:** Version bump only for package @times-components/edition-slices

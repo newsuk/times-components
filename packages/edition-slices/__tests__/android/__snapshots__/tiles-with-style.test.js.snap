@@ -53,6 +53,7 @@ exports[`1. tile a 1`] = `
       style={
         Object {
           "flexDirection": "row",
+          "justifyContent": "space-between",
         }
       }
     >
@@ -142,6 +143,7 @@ exports[`2. tile b 1`] = `
       style={
         Object {
           "flexDirection": "row",
+          "justifyContent": "space-between",
         }
       }
     >
@@ -213,7 +215,25 @@ exports[`3. tile c 1`] = `
     >
       This is tile headline
     </Text>
-    <ArticleFlags />
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "width": "75%",
+          }
+        }
+      >
+        <ArticleFlags />
+      </View>
+    </View>
   </View>
 </Link>
 `;
@@ -280,6 +300,7 @@ exports[`4. tile d 1`] = `
       style={
         Object {
           "flexDirection": "row",
+          "justifyContent": "space-between",
         }
       }
     >
@@ -360,6 +381,7 @@ exports[`5. tile e 1`] = `
       style={
         Object {
           "flexDirection": "row",
+          "justifyContent": "space-between",
         }
       }
     >
@@ -455,6 +477,7 @@ exports[`6. tile f 1`] = `
       style={
         Object {
           "flexDirection": "row",
+          "justifyContent": "space-between",
         }
       }
     >
@@ -538,6 +561,7 @@ exports[`7. tile g 1`] = `
       style={
         Object {
           "flexDirection": "row",
+          "justifyContent": "space-between",
         }
       }
     >
@@ -628,6 +652,7 @@ exports[`8. tile h 1`] = `
       style={
         Object {
           "flexDirection": "row",
+          "justifyContent": "space-between",
         }
       }
     >
@@ -819,6 +844,7 @@ exports[`10. tile j 1`] = `
       style={
         Object {
           "flexDirection": "row",
+          "justifyContent": "space-between",
         }
       }
     >
@@ -897,6 +923,7 @@ exports[`11. tile k 1`] = `
       style={
         Object {
           "flexDirection": "row",
+          "justifyContent": "space-between",
         }
       }
     >
@@ -961,6 +988,7 @@ exports[`12. tile l 1`] = `
       style={
         Object {
           "flexDirection": "row",
+          "justifyContent": "space-between",
         }
       }
     >
@@ -1101,6 +1129,7 @@ exports[`14. tile n 1`] = `
       style={
         Object {
           "flexDirection": "row",
+          "justifyContent": "space-between",
         }
       }
     >
@@ -1166,6 +1195,7 @@ exports[`15. tile o 1`] = `
       style={
         Object {
           "flexDirection": "row",
+          "justifyContent": "space-between",
         }
       }
     >
@@ -1363,6 +1393,7 @@ exports[`18. tile r 1`] = `
       style={
         Object {
           "flexDirection": "row",
+          "justifyContent": "space-between",
         }
       }
     >
@@ -1552,6 +1583,7 @@ exports[`20. tile t 1`] = `
       style={
         Object {
           "flexDirection": "row",
+          "justifyContent": "space-between",
         }
       }
     >
@@ -1624,6 +1656,7 @@ exports[`21. tile u 1`] = `
       style={
         Object {
           "flexDirection": "row",
+          "justifyContent": "space-between",
         }
       }
     >
@@ -1704,6 +1737,7 @@ exports[`22. tile v 1`] = `
       style={
         Object {
           "flexDirection": "row",
+          "justifyContent": "space-between",
         }
       }
     >
@@ -1794,6 +1828,7 @@ exports[`23. tile w 1`] = `
       style={
         Object {
           "flexDirection": "row",
+          "justifyContent": "space-between",
         }
       }
     >
@@ -1896,6 +1931,7 @@ exports[`24. tile x 1`] = `
       style={
         Object {
           "flexDirection": "row",
+          "justifyContent": "space-between",
         }
       }
     >
@@ -1978,6 +2014,7 @@ exports[`25. tile y 1`] = `
       style={
         Object {
           "flexDirection": "row",
+          "justifyContent": "space-between",
         }
       }
     >
@@ -2042,6 +2079,7 @@ exports[`26. tile z 1`] = `
       style={
         Object {
           "flexDirection": "row",
+          "justifyContent": "space-between",
         }
       }
     >
@@ -2120,6 +2158,7 @@ exports[`27. tile aa 1`] = `
       style={
         Object {
           "flexDirection": "row",
+          "justifyContent": "space-between",
         }
       }
     >
@@ -2210,6 +2249,7 @@ exports[`28. tile ab 1`] = `
       style={
         Object {
           "flexDirection": "row",
+          "justifyContent": "space-between",
         }
       }
     >
@@ -2330,6 +2370,7 @@ exports[`29. tile ae 1`] = `
       style={
         Object {
           "flexDirection": "row",
+          "justifyContent": "space-between",
         }
       }
     >
@@ -2562,6 +2603,7 @@ exports[`33. tile al 1`] = `
       style={
         Object {
           "flexDirection": "row",
+          "justifyContent": "space-between",
         }
       }
     >
@@ -2653,6 +2695,7 @@ exports[`34. tile am 1`] = `
       style={
         Object {
           "flexDirection": "row",
+          "justifyContent": "space-between",
         }
       }
     >
@@ -2751,6 +2794,7 @@ exports[`35. tile an 1`] = `
       style={
         Object {
           "flexDirection": "row",
+          "justifyContent": "space-between",
         }
       }
     >
@@ -2832,6 +2876,7 @@ exports[`36. tile ap 1`] = `
       style={
         Object {
           "flexDirection": "row",
+          "justifyContent": "space-between",
         }
       }
     >
@@ -2910,6 +2955,7 @@ exports[`37. tile ad 1`] = `
       style={
         Object {
           "flexDirection": "row",
+          "justifyContent": "space-between",
         }
       }
     >
