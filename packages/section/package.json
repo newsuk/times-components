@@ -44,7 +44,7 @@
     "@times-components/responsive": "0.4.30",
     "@times-components/styleguide": "3.28.12",
     "@times-components/tracking": "2.4.32",
-    "prop-types": "15.6.2"
+    "prop-types": "15.7.2"
   },
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.8.10",
@@ -55,16 +55,17 @@
     "@times-components/storybook": "4.0.3",
     "@times-components/tealium-utils": "0.7.44",
     "@times-components/webpack-configurator": "2.0.17",
-    "babel-cli": "6.26.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "23.6.0",
     "eslint": "5.9.0",
-    "jest": "23.3.0",
+    "jest": "23.6.0",
     "prettier": "1.14.3",
     "react": "16.5.2",
     "react-dom": "16.5.2",
     "react-native": "0.55.4",
     "react-test-renderer": "16.5.2",
-    "webpack": "4.6.0",
-    "webpack-cli": "2.1.4"
+    "webpack": "4.30.0",
+    "webpack-cli": "3.3.1"
   },
   "peerDependencies": {
     "react": ">=16.5",

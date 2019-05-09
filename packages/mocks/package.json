@@ -37,7 +37,7 @@
     "@times-components/eslint-config-thetimes": "0.8.10",
     "babel-cli": "6.26.0",
     "eslint": "5.9.0",
-    "jest": "23.3.0",
+    "jest": "23.6.0",
     "prettier": "1.14.3",
     "react": "16.5.2",
     "react-native": "0.55.4"

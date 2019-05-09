@@ -69,8 +69,8 @@ export default (platform, cwd, options = {}) => {
     coverageDirectory: path.join(module, "coverage", platformPath),
     coveragePathIgnorePatterns: coverageIgnoreGlobs,
     modulePathIgnorePatterns: [
-      "node_modules/haul/node_modules/react/",
-      "node_modules/redbox-react/node_modules/react/"
+      "node_modules/redbox-react/node_modules/react/",
+      "node_modules/@storybook/"
     ],
     preset: "react-native",
     rootDir,
@@ -90,7 +90,7 @@ export default (platform, cwd, options = {}) => {
       "^.+\\.js$": path.resolve(__dirname, "source-loader.js")
     },
     transformIgnorePatterns: [
-      "node_modules/(?!(react-native|react-native-svg|react-native-iphone-x-helper|@times-components|@storybook/react-native)/)"
+      "node_modules/(?!(react-native|react-native-svg|react-native-iphone-x-helper|@times-components|@storybook/react-native|react-native-swipe-gestures)/)"
     ]
   };
 

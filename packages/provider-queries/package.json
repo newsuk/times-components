@@ -28,17 +28,15 @@
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.8.10",
     "@times-components/webpack-configurator": "2.0.17",
-    "babel-cli": "6.26.0",
-    "eslint": "5.9.0",
     "eslint-plugin-graphql": "2.1.1",
     "prettier": "1.14.3",
-    "webpack": "4.6.0",
-    "webpack-cli": "2.1.4"
+    "webpack": "4.30.0",
+    "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "apollo-utilities": "1.0.26",
-    "graphql": "0.13.2",
-    "graphql-tag": "2.10.0"
+    "apollo-utilities": "1.2.1",
+    "graphql": "14.2.1",
+    "graphql-tag": "2.10.1"
   },
   "publishConfig": {
     "access": "public"

@@ -41,17 +41,15 @@
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.8.10",
     "@times-components/webpack-configurator": "2.0.17",
-    "babel-preset-react-native": "4.0.0",
     "depcheck": "0.6.9",
-    "enzyme": "3.6.0",
-    "enzyme-adapter-react-16": "1.5.0",
+    "enzyme": "3.9.0",
+    "enzyme-adapter-react-16": "1.12.1",
     "eslint": "5.9.0",
-    "jest": "23.3.0",
+    "jest": "23.6.0",
     "prettier": "1.14.3",
     "react": "16.5.2",
-    "react-native": "0.55.4",
-    "webpack": "4.6.0",
-    "webpack-cli": "2.1.4"
+    "webpack": "4.30.0",
+    "webpack-cli": "3.3.1"
   },
   "publishConfig": {
     "access": "public"

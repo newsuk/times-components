@@ -66,9 +66,9 @@ const renderAd = slotName => (
 export default {
   children: [
     {
-      component: ({ selectV2 }) =>
+      component: ({ select }) =>
         renderAdPlaceholder(
-          selectV2(
+          select(
             "Size of ad placeholder:",
             placeholderSizes,
             placeholderSizes[0]
@@ -91,9 +91,9 @@ export default {
       type: "story"
     },
     {
-      component: ({ selectV2 }) =>
+      component: ({ select }) =>
         withOpenInNewWindow(
-          renderAd(selectV2("Slot Name:", slotNames, slotNames[1]))
+          renderAd(select("Slot Name:", slotNames, slotNames[1]))
         ),
       name: "Ad",
       type: "story"

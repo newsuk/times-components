@@ -3,26 +3,25 @@
   "version": "0.7.131",
   "license": "BSD-3-Clause",
   "scripts": {
-    "build:js": "NODE_ENV=production haul bundle --platform ios --dev false --minimize true --entry-file js/index.ios.js --bundle-output ios-assets/js/index.ios.bundle --assets-dest ios-assets/res/",
-    "build:meta": "cat package.json | grep version | head -1 | sed 's/[\",\t ]//g' | awk -F: '{ print \"Bundle Version: \" $2 }' > ios-assets/js/index.ios.bundle.meta",
+    "build:js": "mkdir -p ios-assets/js && mkdir -p ios-assets/res && react-native bundle --platform ios --dev false --entry-file index.ios.js --bundle-output ios-assets/js/index.ios.bundle --assets-dest ios-assets/res/",
+    "build:meta": "cat package.json | grep version | head -1 | sed 's/[\",\t ]//g' | awk -F: '{ print \"Bundle Version: \" $2 }' > ios-assets/js/version.meta",
     "build:all": "yarn build:js && yarn build:meta",
-    "start": "haul start --platform ios",
+    "start": "react-native start",
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff"
   },
   "dependencies": {
     "@times-components/pages": "2.0.16",
-    "prop-types": "15.6.2",
+    "prop-types": "15.7.2",
     "react": "16.5.2",
     "react-native": "0.55.4",
     "url-polyfill": "1.1.0"
   },
   "devDependencies": {
-    "babel-preset-react-native": "4.0.0",
-    "haul": "1.0.0-rc.6",
+    "metro-react-native-babel-preset": "0.53.1",
     "prettier": "1.14.3",
-    "webpack": "4.6.0"
+    "webpack": "4.30.0"
   },
   "private": true
 }

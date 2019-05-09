@@ -23,10 +23,10 @@ const timezones = [
 export default {
   children: [
     {
-      component: ({ selectV2 }) => (
+      component: ({ select }) => (
         <Text style={styles.text}>
           <DatePublication
-            date={selectV2("Date:", timezones, timezones[0])}
+            date={select("Date:", timezones, timezones[0])}
             publication="SUNDAYTIMES"
           />
         </Text>

@@ -1,6 +1,6 @@
 import * as babelJest from "babel-jest";
 import jestPreset from "babel-preset-jest";
-import { transform as babelTransform, util as babelUtil } from "babel-core";
+import { transform as babelTransform } from "@babel/core";
 import babelIstanbulPlugin from "babel-plugin-istanbul";
 import { readFileSync } from "fs";
 import { createHash } from "crypto";
@@ -36,10 +36,6 @@ const transform = (
   if (isPackageFile(filename)) {
     filename = pointToSource(filename);
     source = readSource(filename);
-  }
-
-  if (babelUtil && !babelUtil.canCompile(filename)) {
-    return source;
   }
 
   const transformResult = babelTransform(source, {
