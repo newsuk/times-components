@@ -31,8 +31,7 @@ export default Component =>
         actionName: "Pressed",
         eventName: "onShareOnFB",
         getAttrs: ({ articleUrl }) => ({
-          articleUrl,
-          type: "fb"
+          articleUrl
         }),
         trackingName: "ArticleShareOnFacebook"
       },
@@ -40,8 +39,7 @@ export default Component =>
         actionName: "Pressed",
         eventName: "onShareOnTwitter",
         getAttrs: ({ articleUrl }) => ({
-          articleUrl,
-          type: "twitter"
+          articleUrl
         }),
         trackingName: "ArticleShareOnTwitter"
       }

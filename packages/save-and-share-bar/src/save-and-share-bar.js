@@ -106,6 +106,7 @@ SaveAndShareBar.propTypes = {
   onShareOnTwitter: PropTypes.func
 };
 
+/* Serves as an indication when share links are clicked for tracking and analytics */
 SaveAndShareBar.defaultProps = {
   onShareOnFB: () => {},
   onShareOnTwitter: () => {}
