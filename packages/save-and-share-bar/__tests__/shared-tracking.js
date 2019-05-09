@@ -49,15 +49,18 @@ WithTrackingContext.propTypes = {
 
 export default () => {
   describe("save and share tracking events", () => {
-    const stream = jest.fn();
     const onShareOnEmail = jest.fn();
     const onCopyLink = jest.fn();
     const onSaveToMyArticles = jest.fn();
-    const articleUrl = "dummy-url";
+    const onShareOnFB = jest.fn();
+    const onShareOnTwitter = jest.fn();
+    const articleUrl = "https://www.thetimes.co.uk/";
 
-    let testInstance;
+    let stream = null;
+    let testInstance = null;
 
     beforeEach(() => {
+      stream = jest.fn();
       testInstance = TestRenderer.create(
         <WithTrackingContext
           analyticStream={stream}
@@ -65,19 +68,41 @@ export default () => {
           onCopyLink={onCopyLink}
           onSaveToMyArticles={onSaveToMyArticles}
           onShareOnEmail={onShareOnEmail}
+          onShareOnFB={onShareOnFB}
+          onShareOnTwitter={onShareOnTwitter}
         />
       );
     });
 
     it("when press share on email", () => {
       const shareOnEmailBarItem = testInstance.root.findAllByType(BarItem)[0];
-
       shareOnEmailBarItem.props.onPress();
 
       const [[call]] = stream.mock.calls;
 
       expect(call).toMatchSnapshot();
       expect(onShareOnEmail.mock.calls).toMatchSnapshot("onShareOnEmail");
+    });
+
+    it("when press share on twitter", () => {
+      const shareOnTwitterBarItem = testInstance.root.findAllByType(BarItem)[1];
+      shareOnTwitterBarItem.props.onPress();
+
+      const [[call]] = stream.mock.calls;
+
+      expect(call).toMatchSnapshot();
+      expect(onShareOnTwitter.mock.calls).toMatchSnapshot("onShareOnTwitter");
+    });
+
+    it("when press share on facebook", () => {
+      const shareOnFacebookBarItem = testInstance.root.findAllByType(
+        BarItem
+      )[2];
+      shareOnFacebookBarItem.props.onPress();
+
+      const [[call]] = stream.mock.calls;
+      expect(call).toMatchSnapshot();
+      expect(onShareOnFB.mock.calls).toMatchSnapshot("onShareOnFB");
     });
 
     it("when press copy to clipboard", () => {
@@ -87,19 +112,17 @@ export default () => {
       copyToClipboardBarItem.props.onPress();
 
       const [[call]] = stream.mock.calls;
-
       expect(call).toMatchSnapshot();
       expect(onCopyLink.mock.calls).toMatchSnapshot("onCopyLink");
     });
 
-    it("when press copy to clipboard", () => {
+    it("when press save to my articles", () => {
       const saveToMyArticlesBarItem = testInstance.root.findAllByType(
         BarItem
       )[4];
       saveToMyArticlesBarItem.props.onPress();
 
       const [[call]] = stream.mock.calls;
-
       expect(call).toMatchSnapshot();
       expect(onSaveToMyArticles.mock.calls).toMatchSnapshot(
         "onSaveToMyArticles"

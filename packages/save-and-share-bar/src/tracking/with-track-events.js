@@ -26,6 +26,24 @@ export default Component =>
           articleUrl
         }),
         trackingName: "ArticleCopyLink"
+      },
+      {
+        actionName: "Pressed",
+        eventName: "onShareOnFB",
+        getAttrs: ({ articleUrl }) => ({
+          articleUrl,
+          type: "fb"
+        }),
+        trackingName: "ArticleShareOnFacebook"
+      },
+      {
+        actionName: "Pressed",
+        eventName: "onShareOnTwitter",
+        getAttrs: ({ articleUrl }) => ({
+          articleUrl,
+          type: "twitter"
+        }),
+        trackingName: "ArticleShareOnTwitter"
       }
     ]
   });

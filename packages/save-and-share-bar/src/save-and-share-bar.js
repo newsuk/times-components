@@ -26,7 +26,13 @@ class SaveAndShareBar extends Component {
   }
 
   render() {
-    const { articleUrl, onSaveToMyArticles, onShareOnEmail } = this.props;
+    const {
+      articleUrl,
+      onSaveToMyArticles,
+      onShareOnEmail,
+      onShareOnFB,
+      onShareOnTwitter
+    } = this.props;
     return (
       <View style={styles.container}>
         <View style={styles.rowItem}>
@@ -39,6 +45,7 @@ class SaveAndShareBar extends Component {
             />
           </BarItem>
           <BarItem
+            onPress={onShareOnTwitter}
             target="_blank"
             url={`${SharingApiUrls.twitter}?text=${articleUrl}`}
           >
@@ -49,6 +56,7 @@ class SaveAndShareBar extends Component {
             />
           </BarItem>
           <BarItem
+            onPress={onShareOnFB}
             target="_blank"
             url={`${SharingApiUrls.facebook}?u=${articleUrl}`}
           >
@@ -93,7 +101,14 @@ SaveAndShareBar.propTypes = {
   articleUrl: PropTypes.string.isRequired,
   onCopyLink: PropTypes.func.isRequired,
   onSaveToMyArticles: PropTypes.func.isRequired,
-  onShareOnEmail: PropTypes.func.isRequired
+  onShareOnEmail: PropTypes.func.isRequired,
+  onShareOnFB: PropTypes.func,
+  onShareOnTwitter: PropTypes.func
+};
+
+SaveAndShareBar.defaultProps = {
+  onShareOnFB: () => {},
+  onShareOnTwitter: () => {}
 };
 
 export default withTrackEvents(SaveAndShareBar);

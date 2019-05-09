@@ -4,19 +4,9 @@ exports[`save and share tracking events when press copy to clipboard 1`] = `
 Object {
   "action": "Pressed",
   "attrs": Object {
-    "articleUrl": "dummy-url",
+    "articleUrl": "https://www.thetimes.co.uk/",
   },
-  "component": "ArticleShareOnEmail",
-}
-`;
-
-exports[`save and share tracking events when press copy to clipboard 2`] = `
-Object {
-  "action": "Pressed",
-  "attrs": Object {
-    "articleUrl": "dummy-url",
-  },
-  "component": "ArticleShareOnEmail",
+  "component": "ArticleCopyLink",
 }
 `;
 
@@ -26,7 +16,17 @@ Array [
 ]
 `;
 
-exports[`save and share tracking events when press copy to clipboard: onSaveToMyArticles 1`] = `
+exports[`save and share tracking events when press save to my articles 1`] = `
+Object {
+  "action": "Pressed",
+  "attrs": Object {
+    "articleUrl": "https://www.thetimes.co.uk/",
+  },
+  "component": "ArticleSaveToMyArticles",
+}
+`;
+
+exports[`save and share tracking events when press save to my articles: onSaveToMyArticles 1`] = `
 Array [
   Array [],
 ]
@@ -36,7 +36,7 @@ exports[`save and share tracking events when press share on email 1`] = `
 Object {
   "action": "Pressed",
   "attrs": Object {
-    "articleUrl": "dummy-url",
+    "articleUrl": "https://www.thetimes.co.uk/",
   },
   "component": "ArticleShareOnEmail",
 }
@@ -47,3 +47,29 @@ Array [
   Array [],
 ]
 `;
+
+exports[`save and share tracking events when press share on facebook 1`] = `
+Object {
+  "action": "Pressed",
+  "attrs": Object {
+    "articleUrl": "https://www.thetimes.co.uk/",
+    "type": "fb",
+  },
+  "component": "ArticleShareOnFacebook",
+}
+`;
+
+exports[`save and share tracking events when press share on facebook: onShareOnFB 1`] = `Array []`;
+
+exports[`save and share tracking events when press share on twitter 1`] = `
+Object {
+  "action": "Pressed",
+  "attrs": Object {
+    "articleUrl": "https://www.thetimes.co.uk/",
+    "type": "twitter",
+  },
+  "component": "ArticleShareOnTwitter",
+}
+`;
+
+exports[`save and share tracking events when press share on twitter: onShareOnTwitter 1`] = `Array []`;
