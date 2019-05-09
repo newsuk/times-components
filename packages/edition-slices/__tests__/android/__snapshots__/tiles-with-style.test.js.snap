@@ -501,7 +501,6 @@ exports[`7. tile g 1`] = `
   <Image
     style={
       Object {
-        "borderRadius": 9999,
         "overflow": "hidden",
         "width": "30%",
       }
@@ -1219,7 +1218,6 @@ exports[`16. tile p 1`] = `
   <Image
     style={
       Object {
-        "borderRadius": 9999,
         "overflow": "hidden",
         "width": "30%",
       }
@@ -2719,7 +2717,6 @@ exports[`35. tile an 1`] = `
   <Image
     style={
       Object {
-        "borderRadius": 9999,
         "overflow": "hidden",
       }
     }
@@ -2818,7 +2815,6 @@ exports[`36. tile ap 1`] = `
   <Image
     style={
       Object {
-        "borderRadius": 9999,
         "overflow": "hidden",
       }
     }
