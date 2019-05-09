@@ -40,8 +40,7 @@
     "@times-components/provider-queries": "2.0.4",
     "prop-types": "15.7.2",
     "@times-components/icons": "2.10.29",
-    "@times-components/styleguide": "3.28.14",
-    "styled-components": "3.4.0"
+    "@times-components/styleguide": "3.28.14"
   },
   "devDependencies": {
     "enzyme": "3.9.0",
