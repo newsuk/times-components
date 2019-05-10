@@ -5,11 +5,7 @@ import mockRNComponent from "./react-native-mock-components";
 export const mockReactNativeComponent = mockRNComponent;
 
 const nativeSpecific = platform => ({
-  haste: {
-    defaultPlatform: platform,
-    platforms: [platform],
-    providesModuleNodeModules: ["react", "react-native"]
-  }
+  moduleFileExtensions: [`${platform}.js`, "js", "json"]
 });
 
 const webSpecific = {
