@@ -111,7 +111,6 @@
     "@babel/cli": "7.4.4",
     "@babel/core": "7.4.4",
     "@babel/preset-flow": "7.0.0",
-    "@babel/runtime-corejs2": "7.4.4",
     "@storybook/addon-actions": "4.1.18",
     "@storybook/addon-info": "4.1.18",
     "@storybook/addon-knobs": "4.1.18",
@@ -167,6 +166,7 @@
   "dependencies": {
     "@babel/core": "7.4.4",
     "@babel/preset-env": "^7.0.0",
+    "@babel/runtime-corejs2": "7.4.4",
     "aws-sdk": "2.238.1",
     "react-art": "16.5.2",
     "react-native": "0.55.4",
