@@ -169,6 +169,7 @@
     "@babel/core": "7.4.4",
     "@babel/preset-env": "^7.0.0",
     "@babel/runtime": "7.4.4",
+    "@babel/runtime-corejs2": "7.4.4",
     "aws-sdk": "2.238.1",
     "react-art": "16.8.3",
     "react-native": "0.59.8",

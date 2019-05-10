@@ -135,3 +135,15 @@ Array [
   />,
 ]
 `;
+
+exports[`12. closeicon renders with different colours 1`] = `
+Array [
+  <title>
+    Close Icon
+  </title>,
+  <path
+    fill="white"
+    stroke="white"
+  />,
+]
+`;
