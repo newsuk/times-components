@@ -56,7 +56,7 @@ buck-out/
 */fastlane/Preview.html
 */fastlane/screenshots
 
-.storybook.native/story-loader.js
+storybook-native/story-loader.js
 storybook-static
 coverage
 dist
