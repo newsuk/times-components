@@ -6,6 +6,8 @@ export default {
     {
       component: () => (
         <SaveAndShareBar
+          articleId="id-123"
+          articleHeadline="test-headline"
           articleUrl="https://www.thetimes.co.uk/"
           onCopyLink={() => {}}
           onSaveToMyArticles={() => {}}

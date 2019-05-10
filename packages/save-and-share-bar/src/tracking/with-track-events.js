@@ -6,40 +6,45 @@ export default Component =>
       {
         actionName: "Pressed",
         eventName: "onSaveToMyArticles",
-        getAttrs: ({ articleUrl }) => ({
-          articleUrl
+        getAttrs: ({ articleId, articleHeadline }) => ({
+          articleId,
+          articleHeadline
         }),
         trackingName: "ArticleSaveToMyArticles"
       },
       {
         actionName: "Pressed",
         eventName: "onShareOnEmail",
-        getAttrs: ({ articleUrl }) => ({
-          articleUrl
+        getAttrs: ({ articleId, articleHeadline }) => ({
+          articleId,
+          articleHeadline
         }),
         trackingName: "ArticleShareOnEmail"
       },
       {
         actionName: "Pressed",
         eventName: "onCopyLink",
-        getAttrs: ({ articleUrl }) => ({
-          articleUrl
+        getAttrs: ({ articleId, articleHeadline }) => ({
+          articleId,
+          articleHeadline
         }),
         trackingName: "ArticleCopyLink"
       },
       {
         actionName: "Pressed",
         eventName: "onShareOnFB",
-        getAttrs: ({ articleUrl }) => ({
-          articleUrl
+        getAttrs: ({ articleId, articleHeadline }) => ({
+          articleId,
+          articleHeadline
         }),
         trackingName: "ArticleShareOnFacebook"
       },
       {
         actionName: "Pressed",
         eventName: "onShareOnTwitter",
-        getAttrs: ({ articleUrl }) => ({
-          articleUrl
+        getAttrs: ({ articleId, articleHeadline }) => ({
+          articleId,
+          articleHeadline
         }),
         trackingName: "ArticleShareOnTwitter"
       }

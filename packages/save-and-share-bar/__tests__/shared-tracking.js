@@ -17,7 +17,9 @@ class WithTrackingContext extends Component {
 
   render() {
     const {
+      articleId,
       articleUrl,
+      articleHeadline,
       onCopyLink,
       onSaveToMyArticles,
       onShareOnEmail
@@ -25,6 +27,8 @@ class WithTrackingContext extends Component {
     return (
       <SaveAndShareBar
         articleUrl={articleUrl}
+        articleId={articleId}
+        articleHeadline={articleHeadline}
         onCopyLink={onCopyLink}
         onSaveToMyArticles={onSaveToMyArticles}
         onShareOnEmail={onShareOnEmail}
@@ -42,6 +46,8 @@ WithTrackingContext.childContextTypes = {
 WithTrackingContext.propTypes = {
   analyticStream: PropTypes.func.isRequired,
   articleUrl: PropTypes.string.isRequired,
+  articleId: PropTypes.string.isRequired,
+  articleHeadline: PropTypes.string.isRequired,
   onCopyLink: PropTypes.func.isRequired,
   onSaveToMyArticles: PropTypes.func.isRequired,
   onShareOnEmail: PropTypes.func.isRequired
@@ -54,6 +60,8 @@ export default () => {
     const onSaveToMyArticles = jest.fn();
     const onShareOnFB = jest.fn();
     const onShareOnTwitter = jest.fn();
+    const articleId = "id-123";
+    const articleHeadline = "test-headline";
     const articleUrl = "https://www.thetimes.co.uk/";
 
     let stream = null;
@@ -65,6 +73,8 @@ export default () => {
         <WithTrackingContext
           analyticStream={stream}
           articleUrl={articleUrl}
+          articleId={articleId}
+          articleHeadline={articleHeadline}
           onCopyLink={onCopyLink}
           onSaveToMyArticles={onSaveToMyArticles}
           onShareOnEmail={onShareOnEmail}
@@ -101,6 +111,7 @@ export default () => {
       shareOnFacebookBarItem.props.onPress();
 
       const [[call]] = stream.mock.calls;
+
       expect(call).toMatchSnapshot();
       expect(onShareOnFB.mock.calls).toMatchSnapshot("onShareOnFB");
     });
@@ -112,6 +123,7 @@ export default () => {
       copyToClipboardBarItem.props.onPress();
 
       const [[call]] = stream.mock.calls;
+
       expect(call).toMatchSnapshot();
       expect(onCopyLink.mock.calls).toMatchSnapshot("onCopyLink");
     });
@@ -123,6 +135,7 @@ export default () => {
       saveToMyArticlesBarItem.props.onPress();
 
       const [[call]] = stream.mock.calls;
+
       expect(call).toMatchSnapshot();
       expect(onSaveToMyArticles.mock.calls).toMatchSnapshot(
         "onSaveToMyArticles"

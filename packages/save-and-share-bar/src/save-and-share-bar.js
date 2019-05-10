@@ -97,8 +97,11 @@ class SaveAndShareBar extends Component {
   }
 }
 
+/* eslint-disable react/no-unused-prop-types */
 SaveAndShareBar.propTypes = {
+  articleId: PropTypes.string.isRequired,
   articleUrl: PropTypes.string.isRequired,
+  articleHeadline: PropTypes.string.isRequired,
   onCopyLink: PropTypes.func.isRequired,
   onSaveToMyArticles: PropTypes.func.isRequired,
   onShareOnEmail: PropTypes.func.isRequired,

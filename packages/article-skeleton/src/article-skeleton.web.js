@@ -78,6 +78,7 @@ class ArticleSkeleton extends Component {
       id: articleId,
       section,
       url,
+      headline,
       topics,
       relatedArticleSlice,
       template
@@ -136,10 +137,12 @@ class ArticleSkeleton extends Component {
                               }}
                             >
                               <SaveAndShareBar
+                                articleId={articleId}
+                                articleHeadline={headline}
                                 articleUrl={url}
-                                onCopyLink={() => {}}
-                                onSaveToMyArticles={() => {}}
-                                onShareOnEmail={() => {}}
+                                onCopyLink={() => { }}
+                                onSaveToMyArticles={() => { }}
+                                onShareOnEmail={() => { }}
                               />
                             </div>
                           </SaveShareRefContainer>

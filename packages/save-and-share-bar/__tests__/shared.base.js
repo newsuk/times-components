@@ -13,7 +13,9 @@ export default () => {
       test: () => {
         const testInstance = TestRenderer.create(
           <SaveAndShareBar
-            articleUrl=""
+            articleId="id-123"
+            articleUrl="test-article-url"
+            articleHeadline="test-headline"
             onCopyLink={() => {}}
             onSaveToMyArticles={() => {}}
             onShareOnEmail={() => {}}
@@ -30,11 +32,15 @@ export default () => {
         const onShareOnEmail = jest.fn();
         const onCopyLink = jest.fn();
         const onSaveToMyArticles = jest.fn();
-        const articleUrlMock = "articleUrlMock";
+        const articleId = "id-123";
+        const articleUrl = "https://www.thetimes.co.uk/";
+        const articleHeadline = "test-headline";
 
         const testInstance = TestRenderer.create(
           <SaveAndShareBar
-            articleUrl={articleUrlMock}
+            articleId={articleId}
+            articleUrl={articleUrl}
+            articleHeadline={articleHeadline}
             onCopyLink={onCopyLink}
             onSaveToMyArticles={onSaveToMyArticles}
             onShareOnEmail={onShareOnEmail}
@@ -45,7 +51,7 @@ export default () => {
         expect(onShareOnEmail).toHaveBeenCalled();
 
         testInstance.root.findAllByType(BarItem)[3].props.onPress();
-        expect(Clipboard.setString).toHaveBeenCalledWith(articleUrlMock);
+        expect(Clipboard.setString).toHaveBeenCalledWith(articleUrl);
         expect(onCopyLink).toHaveBeenCalled();
 
         testInstance.root.findAllByType(BarItem)[4].props.onPress();

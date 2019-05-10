@@ -4,7 +4,8 @@ exports[`save and share tracking events when press copy to clipboard 1`] = `
 Object {
   "action": "Pressed",
   "attrs": Object {
-    "articleUrl": "https://www.thetimes.co.uk/",
+    "articleHeadline": "test-headline",
+    "articleId": "id-123",
   },
   "component": "ArticleCopyLink",
 }
@@ -20,7 +21,8 @@ exports[`save and share tracking events when press save to my articles 1`] = `
 Object {
   "action": "Pressed",
   "attrs": Object {
-    "articleUrl": "https://www.thetimes.co.uk/",
+    "articleHeadline": "test-headline",
+    "articleId": "id-123",
   },
   "component": "ArticleSaveToMyArticles",
 }
@@ -36,7 +38,8 @@ exports[`save and share tracking events when press share on email 1`] = `
 Object {
   "action": "Pressed",
   "attrs": Object {
-    "articleUrl": "https://www.thetimes.co.uk/",
+    "articleHeadline": "test-headline",
+    "articleId": "id-123",
   },
   "component": "ArticleShareOnEmail",
 }
@@ -52,7 +55,8 @@ exports[`save and share tracking events when press share on facebook 1`] = `
 Object {
   "action": "Pressed",
   "attrs": Object {
-    "articleUrl": "https://www.thetimes.co.uk/",
+    "articleHeadline": "test-headline",
+    "articleId": "id-123",
   },
   "component": "ArticleShareOnFacebook",
 }
@@ -64,7 +68,8 @@ exports[`save and share tracking events when press share on twitter 1`] = `
 Object {
   "action": "Pressed",
   "attrs": Object {
-    "articleUrl": "https://www.thetimes.co.uk/",
+    "articleHeadline": "test-headline",
+    "articleId": "id-123",
   },
   "component": "ArticleShareOnTwitter",
 }
