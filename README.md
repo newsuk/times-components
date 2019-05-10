@@ -32,9 +32,11 @@ This has been made possible using [Fructose](https://github.com/newsuk/fructose)
 
 1. Install [fontforge](http://fontforge.github.io/en-US/): `brew install fontforge` (See [Fonts section](#fonts))
 
-2. Run `yarn install`
+2. Install [watchman](https://facebook.github.io/watchman/docs/install.html): `brew install watchman`
 
-3. Components can be seen running in a storybook:
+3. Run `yarn install`
+
+4. Components can be seen running in a storybook:
 
 - web storybook
   1. `yarn storybook`
