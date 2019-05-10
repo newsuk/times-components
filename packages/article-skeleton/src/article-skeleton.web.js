@@ -140,9 +140,9 @@ class ArticleSkeleton extends Component {
                                 articleId={articleId}
                                 articleHeadline={headline}
                                 articleUrl={url}
-                                onCopyLink={() => { }}
-                                onSaveToMyArticles={() => { }}
-                                onShareOnEmail={() => { }}
+                                onCopyLink={() => {}}
+                                onSaveToMyArticles={() => {}}
+                                onShareOnEmail={() => {}}
                               />
                             </div>
                           </SaveShareRefContainer>
