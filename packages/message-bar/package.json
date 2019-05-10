@@ -8,7 +8,7 @@
     "depcheck": "depcheck --ignores='babel-*,depcheck,eslint,@thetimes/jest-lint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
     "fmt": "eslint . --fix && prettier --write '**/*.{js,json}'",
     "prettier:diff": "prettier --list-different '**/*.{js,json}'",
-    "lint": "eslint . && yarn prettier:diff && yarn depcheck && jest-lint",
+    "lint": "eslint . && yarn prettier:diff && yarn depcheck",
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
     "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
     "test:web": "jest --config='./__tests__/web/jest.config.js'",
@@ -62,6 +62,7 @@
     "react-native-web": "0.9.0"
   },
   "dependencies": {
+    "@times-components/icons": "2.10.29",
     "@times-components/styleguide": "3.28.14",
     "prop-types": "15.7.2"
   },

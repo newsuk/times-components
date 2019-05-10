@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-import { View, Text, Image, Animated, TouchableOpacity } from "react-native";
+import { View, Text, Animated, TouchableOpacity } from "react-native";
 import PropTypes from "prop-types";
+import { CloseIcon } from "@times-components/icons";
 import styleFactory from "./styles";
-
-const CloseIcon = require("../assets/close-button.png");
 
 class MessageBar extends Component {
   state = {
@@ -98,7 +97,7 @@ class MessageBar extends Component {
           <Text style={styles.messageBarText}>{message}</Text>
           <View style={styles.messageBarCloseButton}>
             <TouchableOpacity onPress={this.close}>
-              <Image resizeMode="contain" source={CloseIcon} />
+              <CloseIcon width="28" height="28" />
             </TouchableOpacity>
           </View>
         </View>
