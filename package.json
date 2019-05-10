@@ -89,13 +89,11 @@
       "path": "cz-conventional-changelog"
     }
   },
-  "workspaces": {
-    "packages": [
-      "packages/*",
-      "android-app",
-      "ios-app"
-    ]
-  },
+  "workspaces": [
+    "packages/*",
+    "android-app",
+    "ios-app"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/newsuk/times-components.git"
