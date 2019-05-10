@@ -53,7 +53,7 @@ const platformCode = platform => {
 };
 
 export default (platform, cwd, options = {}) => {
-  const { coverageIgnoreGlobs = [], setupTestFrameworkScriptFile } = options;
+  const { coverageIgnoreGlobs = [], setupFilesAfterEnv } = options;
   const [local, global] = findNodeModules(cwd);
   const module = path.resolve(cwd, local.replace("node_modules", ""));
   const rootDir = path.resolve(
@@ -78,6 +78,7 @@ export default (platform, cwd, options = {}) => {
       path.resolve(__dirname, "../setup-jest.js"),
       "jest-plugin-context/setup"
     ],
+    setupFilesAfterEnv: setupFilesAfterEnv ? [setupFilesAfterEnv] : [],
     testMatch: [`${module}/__tests__/${platformPath}*.test.js`],
     testPathIgnorePatterns: [
       path.join(module, "__tests__", platformPath, "jest.config.js")
@@ -93,10 +94,6 @@ export default (platform, cwd, options = {}) => {
       "node_modules/(?!(react-native|react-native-svg|react-native-iphone-x-helper|@times-components|@storybook/react-native|react-native-swipe-gestures)/)"
     ]
   };
-
-  if (setupTestFrameworkScriptFile) {
-    config.setupTestFrameworkScriptFile = setupTestFrameworkScriptFile;
-  }
 
   return config;
 };
