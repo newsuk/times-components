@@ -33,7 +33,7 @@
     "storybook:test-build": "build-storybook -c .storybook -s ./dist/public",
     "storybook:publish": "./lib/publish_storybook.sh",
     "prestorybook-native": "rnstl",
-    "storybook-native": "react-native start --projectRoot .storybook.native",
+    "storybook-native": "react-native start --config metro.config.storybook.js",
     "preios": "./lib/fix-ios-storybook.sh",
     "ios": "react-native run-ios --no-packager",
     "ios:logs": "yarn ios && react-native log-ios",
@@ -83,7 +83,7 @@
         "./packages"
       ],
       "pattern": "!(brightcove-video)/*.stories!(.web).js",
-      "outputFile": "./.storybook.native/story-loader.js"
+      "outputFile": "./storybook-native/story-loader.js"
     },
     "commitizen": {
       "path": "cz-conventional-changelog"
