@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`save and share tracking events save and share bar renders correctly 1`] = `
+exports[`save and share bar component save and share bar renders correctly 1`] = `
 <div
   style={
     Object {
