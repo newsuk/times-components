@@ -5,11 +5,7 @@ import mockRNComponent from "./react-native-mock-components";
 export const mockReactNativeComponent = mockRNComponent;
 
 const nativeSpecific = platform => ({
-  haste: {
-    defaultPlatform: platform,
-    platforms: [platform],
-    providesModuleNodeModules: ["react", "react-native"]
-  }
+  moduleFileExtensions: [`${platform}.js`, "js", "json"]
 });
 
 const webSpecific = {
@@ -78,6 +74,7 @@ export default (platform, cwd, options = {}) => {
       path.resolve(__dirname, "../setup-jest.js"),
       "jest-plugin-context/setup"
     ],
+    setupFilesAfterEnv: setupFilesAfterEnv ? [setupFilesAfterEnv] : [],
     testMatch: [`${module}/__tests__/${platformPath}*.test.js`],
     testPathIgnorePatterns: [
       path.join(module, "__tests__", platformPath, "jest.config.js")

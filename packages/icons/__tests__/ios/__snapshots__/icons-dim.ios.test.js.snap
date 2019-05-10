@@ -120,3 +120,14 @@ exports[`11. thetimeslogo sets a width when height is set 1`] = `
   }
 />
 `;
+
+exports[`12. closeicon sets a width when height is set 1`] = `
+<ARTSurfaceView
+  style={
+    Object {
+      "height": 28,
+      "width": 28,
+    }
+  }
+/>
+`;

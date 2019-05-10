@@ -5,6 +5,8 @@ import ArticleMagazineStandard from "@times-components/article-magazine-standard
 import ArticleMainStandard from "@times-components/article-main-standard";
 import ArticleMainComment from "@times-components/article-main-comment";
 import Responsive from "@times-components/responsive";
+import { scales } from "@times-components/styleguide";
+import { MessageManager } from "@times-components/message-bar";
 import { getMediaList, addIndexesToInlineImages } from "./utils";
 
 export const templates = {
@@ -30,9 +32,11 @@ const Article = props => {
 
   const Component = templates[template] || ArticleMainStandard;
   return (
-    <Responsive>
-      <Component {...props} onImagePress={onImagePressArticle} />
-    </Responsive>
+    <MessageManager animate delay={3000} scale={scales.medium}>
+      <Responsive>
+        <Component {...props} onImagePress={onImagePressArticle} />
+      </Responsive>
+    </MessageManager>
   );
 };
 
