@@ -43,16 +43,20 @@ exports[`card with reversed layout 1`] = `
 }
 
 .S3 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
   display: flex;
   -ms-flex-direction: column;
   -webkit-box-direction: normal;
   -webkit-box-orient: vertical;
   -webkit-flex-direction: column;
   flex-direction: column;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
   margin-bottom: 0px;
   min-width: 0px;
 }
@@ -69,10 +73,25 @@ exports[`card with reversed layout 1`] = `
   -webkit-flex-direction: column;
   flex-direction: column;
   margin-bottom: 0px;
-  min-width: 100%;
+  min-width: 0px;
 }
 
 .S5 {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 0px;
+  min-width: 100%;
+}
+
+.S6 {
   -ms-flex-align: start;
   -webkit-align-items: flex-start;
   -webkit-box-align: start;
@@ -107,7 +126,7 @@ exports[`card with reversed layout 1`] = `
 </style>
 
 <div
-  className="S5"
+  className="S6"
 >
   <div
     className="S2"
@@ -119,7 +138,7 @@ exports[`card with reversed layout 1`] = `
     </div>
   </div>
   <div
-    className="S4"
+    className="S5"
   >
     <TimesImage
       aspectRatio={0.6666666666666666}
