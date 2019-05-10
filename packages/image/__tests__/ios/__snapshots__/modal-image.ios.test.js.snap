@@ -124,6 +124,7 @@ exports[`1. modal image 1`] = `
           width="100%"
         >
           <Image
+            fadeDuration={0}
             resizeMode="contain"
             source={
               Object {
@@ -200,6 +201,7 @@ exports[`2. modal image with no caption 1`] = `
                 width="100%"
               >
                 <Image
+                  fadeDuration={0}
                   resizeMode="contain"
                   source={
                     Object {
@@ -249,6 +251,7 @@ exports[`2. modal image with no caption 1`] = `
           width="100%"
         >
           <Image
+            fadeDuration={0}
             resizeMode="contain"
             source={
               Object {
@@ -387,6 +390,7 @@ exports[`3. modal image with custom highressize 1`] = `
           width="100%"
         >
           <Image
+            fadeDuration={0}
             resizeMode="contain"
             source={
               Object {
@@ -452,6 +456,7 @@ exports[`9. hides elements when tapping on the image 1`] = `
                 width="100%"
               >
                 <Image
+                  fadeDuration={0}
                   resizeMode="contain"
                   source={
                     Object {
@@ -484,6 +489,7 @@ exports[`9. hides elements when tapping on the image 1`] = `
           width="100%"
         >
           <Image
+            fadeDuration={0}
             resizeMode="contain"
             source={
               Object {
@@ -560,6 +566,7 @@ exports[`10. re-shows elements when tapping on the image a second time 1`] = `
                 width="100%"
               >
                 <Image
+                  fadeDuration={0}
                   resizeMode="contain"
                   source={
                     Object {
@@ -615,6 +622,7 @@ exports[`10. re-shows elements when tapping on the image a second time 1`] = `
           width="100%"
         >
           <Image
+            fadeDuration={0}
             resizeMode="contain"
             source={
               Object {
