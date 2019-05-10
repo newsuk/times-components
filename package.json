@@ -155,7 +155,7 @@
     "react": "16.8.3",
     "react-dom": "16.8.3",
     "react-native": "0.59.8",
-    "react-native-storybook-loader": "1.5.1",
+    "react-native-storybook-loader": "1.8.0",
     "react-native-web": "0.11.2",
     "react-native-web-image-loader": "0.0.6",
     "rimraf": "2.6.1",

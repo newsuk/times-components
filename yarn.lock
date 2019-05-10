@@ -16585,10 +16585,10 @@ react-native-showcase-loader@1.1.0:
     glob "^7.1.1"
     yargs "^8.0.2"
 
-react-native-storybook-loader@1.5.1:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/react-native-storybook-loader/-/react-native-storybook-loader-1.5.1.tgz#4d02167db71a034ce81962c87a1b7abb6e66b2b3"
-  integrity sha512-BNuwJRhyfdwGEaB29PmIbzBeqyHmrLjKdFf0oPr8QYZQ/H7ER8ZprCVLq2O3kvr7AH2s6mg7hp3qc+qk+N+ydA==
+react-native-storybook-loader@1.8.0:
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/react-native-storybook-loader/-/react-native-storybook-loader-1.8.0.tgz#35056d62f01019af8692d540fd404a855464d4f3"
+  integrity sha512-uBAbL0K7QA6BTbGlPLobLGIcdlkV7+qEDH7FJtCLdJ/hM+2Sig6yTOo7LqD07JyUFi1EFmOV//xgzvxeRYv+qQ==
   dependencies:
     colors "^1.1.2"
     dot "^1.1.1"
