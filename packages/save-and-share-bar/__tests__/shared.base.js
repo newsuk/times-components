@@ -6,7 +6,7 @@ import BarItem from "../src/bar-item";
 import SaveAndShareBar from "../src/save-and-share-bar";
 
 export default () => {
-  describe("save and share tracking events", () => {
+  describe("save and share bar component", () => {
     const onShareOnEmail = jest.fn();
     const onCopyLink = jest.fn();
     const onSaveToMyArticles = jest.fn();
