@@ -16,23 +16,8 @@ class WithTrackingContext extends Component {
   }
 
   render() {
-    const {
-      articleId,
-      articleUrl,
-      articleHeadline,
-      onCopyLink,
-      onSaveToMyArticles,
-      onShareOnEmail
-    } = this.props;
     return (
-      <SaveAndShareBar
-        articleUrl={articleUrl}
-        articleId={articleId}
-        articleHeadline={articleHeadline}
-        onCopyLink={onCopyLink}
-        onSaveToMyArticles={onSaveToMyArticles}
-        onShareOnEmail={onShareOnEmail}
-      />
+      <SaveAndShareBar {...this.props} />
     );
   }
 }
