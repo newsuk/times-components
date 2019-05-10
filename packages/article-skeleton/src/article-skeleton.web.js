@@ -115,7 +115,9 @@ class ArticleSkeleton extends Component {
       headline,
       topics,
       relatedArticleSlice,
-      template
+      template,
+      savingEnabled,
+      sharingEnabled
     } = article;
 
     const { articleWidth, isSticky } = this.state;
@@ -163,7 +165,7 @@ class ArticleSkeleton extends Component {
                           topicsAllowed={user.isLoggedIn}
                           width={articleWidth}
                         />
-                        {this.renderSaveAndShareBar({
+                        {(savingEnabled || sharingEnabled) && this.renderSaveAndShareBar({
                           articleId,
                           headline,
                           url,

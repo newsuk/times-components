@@ -65,6 +65,8 @@ export default addTypenameToDocument(gql`
           }
         }
       }
+      sharingEnabled
+      savingEnabled
       standfirst
       tiles {
         slices {

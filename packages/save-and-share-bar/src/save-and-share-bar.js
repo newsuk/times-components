@@ -30,22 +30,25 @@ class SaveAndShareBar extends Component {
       articleId,
       articleUrl,
       onShareOnEmail,
+      savingEnabled,
+      sharingEnabled,
       onShareOnFB,
       onShareOnTwitter,
       saveApi
     } = this.props;
     return (
       <View style={styles.container}>
-        <View style={styles.rowItem}>
-          <Text style={styles.label}>Share</Text>
-          <BarItem onPress={onShareOnEmail}>
-            <IconEmail
-              fillColour="currentColor"
-              height={styles.svgIcon.height}
-              title="Share by email client"
-            />
-          </BarItem>
-          <BarItem
+        {sharingEnabled && (
+          <View style={styles.rowItem}>
+            <Text style={styles.label}>Share</Text>
+            <BarItem onPress={onShareOnEmail}>
+              <IconEmail
+                fillColour="currentColor"
+                height={styles.svgIcon.height}
+                title="Share by email client"
+              />
+            </BarItem>
+            <BarItem
             onPress={onShareOnTwitter}
             target="_blank"
             url={`${SharingApiUrls.twitter}?text=${articleUrl}`}
@@ -78,15 +81,15 @@ class SaveAndShareBar extends Component {
               title="Copy link to clipboard"
             />
           </BarItem>
-        </View>
-        <View style={styles.rowItem}>
+        </View>)}
+        {savingEnabled && <View style={styles.rowItem}>
           <SaveStar
             colour={styles.svgIcon.save.strokeColour}
             hoverColor={styles.svgIcon.hoverFillColour}
             articleId={articleId}
             saveApi={saveApi}
           />
-        </View>
+        </View>}
       </View>
     );
   }
@@ -106,6 +109,8 @@ SaveAndShareBar.propTypes = {
     getBookmarks: PropTypes.func.isRequired,
     unBookmark: PropTypes.func.isRequired
   }).isRequired
+  savingEnabled: PropTypes.func.isRequired,
+  sharingEnabled: PropTypes.func.isRequired
 };
 
 /* Serves as an indication when share links are clicked for tracking and analytics */
