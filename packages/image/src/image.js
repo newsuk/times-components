@@ -13,6 +13,8 @@ import { defaultProps, propTypes } from "./image-prop-types";
 import Placeholder from "./placeholder";
 import styles from "./styles";
 
+const FADE_ANIM_DURATION = 300;
+
 const getUriAtRes = memoize(
   (uri, resInPoints) => {
     const isDataImageUri = uri && uri.indexOf("data:") > -1;
@@ -53,11 +55,17 @@ class TimesImage extends Component {
   }
 
   handleLoad() {
+    clearTimeout(this.fadeAnimTimeout);
+
     Animated.timing(this.fadeAnim, {
       toValue: 0,
-      duration: 300,
+      duration: FADE_ANIM_DURATION,
       useNativeDriver: true
-    }).start(() => this.setState({ isLoaded: true }));
+    }).start();
+
+    this.fadeAnimTimeout = setTimeout(() => {
+      this.setState({ isLoaded: true });
+    }, FADE_ANIM_DURATION);
   }
 
   render() {
