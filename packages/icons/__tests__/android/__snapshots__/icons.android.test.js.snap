@@ -923,3 +923,82 @@ exports[`11. thetimeslogo renders 1`] = `
   />
 </RNSVGSvgView>
 `;
+
+exports[`12. closeicon renders 1`] = `
+<RNSVGSvgView
+  align="xMidYMid"
+  bbHeight="28"
+  bbWidth="20"
+  meetOrSlice={0}
+  minX={0}
+  minY={0}
+  role="img"
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "flex": 0,
+      "height": 28,
+      "width": 20,
+    }
+  }
+  title="Close Icon"
+  vbHeight={28}
+  vbWidth={28}
+>
+  <RNSVGPath
+    d="e47f4fab4bd751d2d3ea1eb7a66c492a"
+    fill={
+      Array [
+        0,
+        1,
+        1,
+        1,
+        1,
+      ]
+    }
+    fillOpacity={1}
+    fillRule={1}
+    matrix={
+      Array [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+      ]
+    }
+    originX={0}
+    originY={0}
+    propList={
+      Array [
+        "stroke",
+        "fill",
+      ]
+    }
+    rotation={0}
+    scaleX={1}
+    scaleY={1}
+    skewX={0}
+    skewY={0}
+    stroke={
+      Array [
+        0,
+        1,
+        1,
+        1,
+        1,
+      ]
+    }
+    strokeDasharray={null}
+    strokeDashoffset={null}
+    strokeLinecap={0}
+    strokeLinejoin={0}
+    strokeMiterlimit={4}
+    strokeOpacity={1}
+    strokeWidth="1"
+    x={0}
+    y={0}
+  />
+</RNSVGSvgView>
+`;

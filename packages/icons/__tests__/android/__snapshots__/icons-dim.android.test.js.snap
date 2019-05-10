@@ -250,3 +250,26 @@ exports[`11. thetimeslogo sets a width when height is set 1`] = `
   vbWidth={20}
 />
 `;
+
+exports[`12. closeicon sets a width when height is set 1`] = `
+<RNSVGSvgView
+  align="xMidYMid"
+  bbHeight="50"
+  bbWidth="28"
+  meetOrSlice={0}
+  minX={0}
+  minY={0}
+  role="img"
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "flex": 0,
+      "height": 50,
+      "width": 28,
+    }
+  }
+  title="Close Icon"
+  vbHeight={28}
+  vbWidth={28}
+/>
+`;

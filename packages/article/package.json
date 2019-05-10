@@ -67,7 +67,8 @@
     "@times-components/context": "1.0.7",
     "@times-components/provider": "1.16.13",
     "@times-components/responsive": "0.4.32",
-    "@times-components/styleguide": "3.28.14"
+    "@times-components/styleguide": "3.28.14",
+    "@times-components/message-bar": "0.0.1"
   },
   "peerDependencies": {
     "react": ">=16.5",
