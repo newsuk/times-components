@@ -16,9 +16,7 @@ class WithTrackingContext extends Component {
   }
 
   render() {
-    return (
-      <SaveAndShareBar {...this.props} />
-    );
+    return <SaveAndShareBar {...this.props} />;
   }
 }
 
