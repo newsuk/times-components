@@ -32,7 +32,7 @@ exports[`1. an article 1`] = `
         Some Headline
       </Text>
       <Text
-        accessibilityRole="heading"
+        accessibilityRole="header"
         aria-level="2"
       >
         Some Standfirst

@@ -9,7 +9,7 @@ const HeaderStandfirst = ({ standfirst, color }) => {
 
   return (
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="2"
       style={[styles.standFirst, { color }]}
       testID="standfirst"

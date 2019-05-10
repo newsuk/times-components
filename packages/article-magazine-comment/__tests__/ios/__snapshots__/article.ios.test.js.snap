@@ -161,7 +161,7 @@ exports[`7. an article with no author 1`] = `
       />
     </View>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="2"
     >
       Some Standfirst

@@ -3,7 +3,7 @@
 exports[`1. article standfirst with content 1`] = `
 <h2
   aria-level="2"
-  role="heading"
+  role="header"
 >
   This is a standfirst
 </h2>

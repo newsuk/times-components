@@ -33,7 +33,7 @@ const AuthorProfileHead = ({
     if (!name) return null;
     return (
       <Text
-        accessibilityRole="heading"
+        accessibilityRole="header"
         style={styles.name}
         testID="author-name"
       >
@@ -44,7 +44,6 @@ const AuthorProfileHead = ({
 
   return (
     <View
-      accessibilityRole="banner"
       style={[styles.authorHeadContainer, styles.authorHeadContainerNative]}
     >
       <AuthorProfileHeadBaseWithTracking

@@ -22,7 +22,7 @@ const TopicHead = ({ name, description, isLoading }) => {
     <View style={styles.wrapper}>
       <View style={styles.container}>
         <Text
-          accessibilityRole="heading"
+          accessibilityRole="header"
           style={styles.name}
           testID="topic-name"
         >

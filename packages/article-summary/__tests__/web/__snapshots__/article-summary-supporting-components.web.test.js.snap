@@ -4,7 +4,7 @@ exports[`1. article summary headline component 1`] = `
 <h3
   aria-level="3"
   className="bigOne"
-  role="heading"
+  role="header"
 >
   PM hails breakthrough ahead of key Commons vote
 </h3>
@@ -13,7 +13,7 @@ exports[`1. article summary headline component 1`] = `
 exports[`2. article summary strapline component 1`] = `
 <h4
   aria-level="4"
-  role="heading"
+  role="header"
 >
   PM hails breakthrough ahead of key Commons vote
 </h4>

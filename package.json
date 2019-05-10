@@ -34,7 +34,7 @@
     "storybook:publish": "./lib/publish_storybook.sh",
     "prestorybook-native": "rnstl",
     "storybook-native": "react-native start --projectRoot .storybook.native",
-    "build:android-app:js": "mkdir -p android-app/xnative/src/main/assets/ && mkdir -p android-app/xnative/src/main/res/ && react-native bundle --platform android --dev true --entry-file android-app/index.android.js --bundle-output android-app/xnative/src/main/assets/index.android.bundle --assets-dest android-app/xnative/src/main/res/",
+    "build:android-app:js": "mkdir -p android-app/xnative/src/main/assets/ && mkdir -p android-app/xnative/src/main/res/ && react-native bundle --platform android --dev false --entry-file android-app/index.android.js --bundle-output android-app/xnative/src/main/assets/index.android.bundle --assets-dest android-app/xnative/src/main/res/ --reactNativePath node_modules/react-native --reset-cache",
     "build:android-app": "yarn build:android-app:js && cd android-app && yarn build:android",
     "preios": "./lib/fix-ios-storybook.sh",
     "ios": "react-native run-ios --no-packager",

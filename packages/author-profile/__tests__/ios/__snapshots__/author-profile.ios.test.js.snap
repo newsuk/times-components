@@ -219,12 +219,12 @@ exports[`7. an article list header 1`] = `
         uri="https://image.io"
       />
       <Text
-        accessibilityRole="heading"
+        accessibilityRole="header"
       >
         Name
       </Text>
       <Text
-        accessibilityRole="heading"
+        accessibilityRole="header"
         aria-level="2"
       >
         job title
@@ -303,7 +303,7 @@ exports[`10. an article list header only changes on loading state change 2`] = `
       pointerEvents="box-none"
     >
       <Text
-        accessibilityRole="heading"
+        accessibilityRole="header"
         aria-level="2"
       >
         title 1
@@ -325,7 +325,7 @@ exports[`10. an article list header only changes on loading state change 3`] = `
       pointerEvents="box-none"
     >
       <Text
-        accessibilityRole="heading"
+        accessibilityRole="header"
         aria-level="2"
       >
         title 1

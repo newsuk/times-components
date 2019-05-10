@@ -12,7 +12,7 @@ exports[`1. tile a 1`] = `
     </div>
     <h3
       aria-level="3"
-      role="heading"
+      role="header"
     >
       This is tile headline
     </h3>
@@ -56,7 +56,7 @@ exports[`2. tile b 1`] = `
     </div>
     <h3
       aria-level="3"
-      role="heading"
+      role="header"
     >
       This is tile headline
     </h3>
@@ -110,7 +110,7 @@ exports[`3. tile c 1`] = `
     </div>
     <h3
       aria-level="3"
-      role="heading"
+      role="header"
     >
       This is tile headline
     </h3>
@@ -154,7 +154,7 @@ exports[`4. tile d 1`] = `
     </div>
     <h3
       aria-level="3"
-      role="heading"
+      role="header"
     >
       This is tile headline
     </h3>
@@ -198,7 +198,7 @@ exports[`5. tile e 1`] = `
     </div>
     <h3
       aria-level="3"
-      role="heading"
+      role="header"
     >
       This is tile headline
     </h3>
@@ -238,13 +238,13 @@ exports[`6. tile f 1`] = `
     </div>
     <h3
       aria-level="3"
-      role="heading"
+      role="header"
     >
       This is tile headline
     </h3>
     <h4
       aria-level="4"
-      role="heading"
+      role="header"
     >
       Three Conservative MPs resign
     </h4>
@@ -297,7 +297,7 @@ exports[`7. tile g 1`] = `
     </div>
     <h3
       aria-level="3"
-      role="heading"
+      role="header"
     >
       This is tile headline
     </h3>
@@ -337,7 +337,7 @@ exports[`8. tile h 1`] = `
     </div>
     <h3
       aria-level="3"
-      role="heading"
+      role="header"
     >
       This is tile headline
     </h3>
@@ -394,7 +394,7 @@ exports[`9. tile i 1`] = `
     </div>
     <h3
       aria-level="3"
-      role="heading"
+      role="header"
     >
       This is tile headline
     </h3>
@@ -438,7 +438,7 @@ exports[`10. tile j 1`] = `
     </div>
     <h3
       aria-level="3"
-      role="heading"
+      role="header"
     >
       This is tile headline
     </h3>
@@ -482,7 +482,7 @@ exports[`11. tile k 1`] = `
     </div>
     <h3
       aria-level="3"
-      role="heading"
+      role="header"
     >
       This is tile headline
     </h3>
@@ -522,7 +522,7 @@ exports[`12. tile l 1`] = `
     </div>
     <h3
       aria-level="3"
-      role="heading"
+      role="header"
     >
       This is tile headline
     </h3>
@@ -556,13 +556,13 @@ exports[`13. tile m 1`] = `
   <div>
     <h3
       aria-level="3"
-      role="heading"
+      role="header"
     >
       Driving Off
     </h3>
     <h4
       aria-level="4"
-      role="heading"
+      role="header"
     >
       Three Conservative MPs resign
     </h4>
@@ -598,13 +598,13 @@ exports[`14. tile n 1`] = `
     </div>
     <h3
       aria-level="3"
-      role="heading"
+      role="header"
     >
       This is tile headline
     </h3>
     <h4
       aria-level="4"
-      role="heading"
+      role="header"
     >
       Three Conservative MPs resign
     </h4>
@@ -646,7 +646,7 @@ exports[`15. tile o 1`] = `
     </div>
     <h3
       aria-level="3"
-      role="heading"
+      role="header"
     >
       This is tile headline
     </h3>
@@ -694,13 +694,13 @@ exports[`16. tile p 1`] = `
     </div>
     <h3
       aria-level="3"
-      role="heading"
+      role="header"
     >
       This is tile headline
     </h3>
     <h4
       aria-level="4"
-      role="heading"
+      role="header"
     >
       Three Conservative MPs resign
     </h4>
@@ -766,7 +766,7 @@ exports[`18. tile r 1`] = `
     </div>
     <h3
       aria-level="3"
-      role="heading"
+      role="header"
     >
       This is tile headline
     </h3>
@@ -852,7 +852,7 @@ exports[`20. tile t 1`] = `
     </div>
     <h3
       aria-level="3"
-      role="heading"
+      role="header"
     >
       This is tile headline
     </h3>
@@ -893,7 +893,7 @@ exports[`21. tile u 1`] = `
     </div>
     <h3
       aria-level="3"
-      role="heading"
+      role="header"
     >
       This is tile headline
     </h3>
@@ -941,7 +941,7 @@ exports[`22. tile v 1`] = `
     </div>
     <h3
       aria-level="3"
-      role="heading"
+      role="header"
     >
       This is tile headline
     </h3>
@@ -982,7 +982,7 @@ exports[`23. tile w 1`] = `
     </div>
     <h3
       aria-level="3"
-      role="heading"
+      role="header"
     >
       This is tile headline
     </h3>
@@ -1033,13 +1033,13 @@ exports[`24. tile x 1`] = `
     </div>
     <h3
       aria-level="3"
-      role="heading"
+      role="header"
     >
       This is tile headline
     </h3>
     <h4
       aria-level="4"
-      role="heading"
+      role="header"
     >
       Three Conservative MPs resign
     </h4>
@@ -1087,7 +1087,7 @@ exports[`25. tile y 1`] = `
     </div>
     <h3
       aria-level="3"
-      role="heading"
+      role="header"
     >
       This is tile headline
     </h3>
@@ -1133,7 +1133,7 @@ exports[`26. tile z 1`] = `
     </div>
     <h3
       aria-level="3"
-      role="heading"
+      role="header"
     >
       This is tile headline
     </h3>
@@ -1180,7 +1180,7 @@ exports[`27. tile aa 1`] = `
     </div>
     <h3
       aria-level="3"
-      role="heading"
+      role="header"
     >
       This is tile headline
     </h3>
@@ -1220,7 +1220,7 @@ exports[`28. tile ab 1`] = `
     </div>
     <h3
       aria-level="3"
-      role="heading"
+      role="header"
     >
       This is tile headline
     </h3>
@@ -1279,7 +1279,7 @@ exports[`29. tile ae 1`] = `
     </div>
     <h3
       aria-level="3"
-      role="heading"
+      role="header"
     >
       This is tile headline
     </h3>
@@ -1321,13 +1321,13 @@ exports[`30. tile ag 1`] = `
   <div>
     <h3
       aria-level="3"
-      role="heading"
+      role="header"
     >
       Driving Off
     </h3>
     <h4
       aria-level="4"
-      role="heading"
+      role="header"
     >
       Three Conservative MPs resign
     </h4>
@@ -1352,7 +1352,7 @@ exports[`31. tile aj 1`] = `
   <div>
     <h3
       aria-level="3"
-      role="heading"
+      role="header"
     >
       Times Concise medium No 7881
     </h3>
@@ -1376,7 +1376,7 @@ exports[`32. tile ak 1`] = `
   <div>
     <h3
       aria-level="3"
-      role="heading"
+      role="header"
     >
       Times Concise medium No 7881
     </h3>
@@ -1410,7 +1410,7 @@ exports[`33. tile al 1`] = `
     </div>
     <h3
       aria-level="3"
-      role="heading"
+      role="header"
     >
       This is tile headline
     </h3>
@@ -1461,7 +1461,7 @@ exports[`34. tile am 1`] = `
     </div>
     <h3
       aria-level="3"
-      role="heading"
+      role="header"
     >
       This is tile headline
     </h3>
@@ -1513,7 +1513,7 @@ exports[`35. tile an 1`] = `
     </div>
     <h3
       aria-level="3"
-      role="heading"
+      role="header"
     >
       This is tile headline
     </h3>
@@ -1565,7 +1565,7 @@ exports[`36. tile ap 1`] = `
     </div>
     <h3
       aria-level="3"
-      role="heading"
+      role="header"
     >
       This is tile headline
     </h3>
@@ -1609,7 +1609,7 @@ exports[`37. tile ad 1`] = `
     </div>
     <h3
       aria-level="3"
-      role="heading"
+      role="header"
     >
       This is tile headline
     </h3>
@@ -1652,7 +1652,7 @@ exports[`38. tile ac 1`] = `
     </div>
     <h3
       aria-level="3"
-      role="heading"
+      role="header"
     >
       This is tile headline
     </h3>

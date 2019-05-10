@@ -270,13 +270,13 @@ exports[`7. an article list header 1`] = `
       </div>
       <h1
         aria-level="1"
-        role="heading"
+        role="header"
       >
         Name
       </h1>
       <h2
         aria-level="2"
-        role="heading"
+        role="header"
       >
         job title
       </h2>
@@ -354,7 +354,7 @@ exports[`10. an article list header only changes on loading state change 2`] = `
     <div>
       <h2
         aria-level="2"
-        role="heading"
+        role="header"
       >
         title 1
       </h2>
@@ -374,7 +374,7 @@ exports[`10. an article list header only changes on loading state change 3`] = `
     <div>
       <h2
         aria-level="2"
-        role="heading"
+        role="header"
       >
         title 1
       </h2>
