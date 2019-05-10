@@ -53,7 +53,7 @@ const platformCode = platform => {
 };
 
 export default (platform, cwd, options = {}) => {
-  const { coverageIgnoreGlobs = [], setupTestFrameworkScriptFile } = options;
+  const { coverageIgnoreGlobs = [], setupFilesAfterEnv } = options;
   const [local, global] = findNodeModules(cwd);
   const module = path.resolve(cwd, local.replace("node_modules", ""));
   const rootDir = path.resolve(
@@ -91,12 +91,9 @@ export default (platform, cwd, options = {}) => {
     },
     transformIgnorePatterns: [
       "node_modules/(?!(react-native|react-native-svg|react-native-iphone-x-helper|@times-components|@storybook/react-native|react-native-swipe-gestures)/)"
-    ]
+    ],
+    setupFilesAfterEnv: setupFilesAfterEnv ? [setupFilesAfterEnv] : []
   };
-
-  if (setupTestFrameworkScriptFile) {
-    config.setupTestFrameworkScriptFile = setupTestFrameworkScriptFile;
-  }
 
   return config;
 };
