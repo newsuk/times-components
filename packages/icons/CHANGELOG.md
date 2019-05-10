@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.11.0](https://github.com/newsuk/times-components/compare/@times-components/icons@2.10.29...@times-components/icons@2.11.0) (2019-05-10)
+
+
+### Features
+
+* user notification bar (REPLAT-6144) ([#1896](https://github.com/newsuk/times-components/issues/1896)) ([90c0f49](https://github.com/newsuk/times-components/commit/90c0f49))
+
+
+
+
+
 ## [2.10.29](https://github.com/newsuk/times-components/compare/@times-components/icons@2.10.28...@times-components/icons@2.10.29) (2019-05-09)
 
 **Note:** Version bump only for package @times-components/icons
