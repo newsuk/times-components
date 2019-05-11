@@ -325,3 +325,28 @@ exports[`11. thetimeslogo renders with different colours 1`] = `
   />
 </RNSVGSvgView>
 `;
+
+exports[`12. closeicon renders with different colours 1`] = `
+<RNSVGSvgView>
+  <RNSVGPath
+    fill={
+      Array [
+        0,
+        1,
+        1,
+        1,
+        1,
+      ]
+    }
+    stroke={
+      Array [
+        0,
+        1,
+        1,
+        1,
+        1,
+      ]
+    }
+  />
+</RNSVGSvgView>
+`;
