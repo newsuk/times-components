@@ -5,7 +5,7 @@ exports[`1. no short headline 1`] = `
   <div>
     <h3
       aria-level="3"
-      role="header"
+      role="heading"
     >
       Related articles
     </h3>
@@ -40,7 +40,7 @@ exports[`1. no short headline 1`] = `
                   </div>
                   <h3
                     aria-level="3"
-                    role="header"
+                    role="heading"
                   >
                     Test Headline
                   </h3>

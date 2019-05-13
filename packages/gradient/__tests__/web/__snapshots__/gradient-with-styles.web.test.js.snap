@@ -12,6 +12,6 @@ exports[`1. gradient with style 1`] = `
 </style>
 
 <div
-  className="IS1 S1"
+  className="css-view-1dbjc4n r-backgroundColor-1g6456j IS1 S1"
 />
 `;

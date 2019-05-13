@@ -77,7 +77,7 @@ exports[`1. a full article 1`] = `
   SOME LABEL
   <h1
     aria-level="1"
-    role="header"
+    role="heading"
   >
     Some Headline
   </h1>
@@ -85,7 +85,7 @@ exports[`1. a full article 1`] = `
   <h2
     aria-level="2"
     data-testid="standfirst"
-    role="header"
+    role="heading"
   >
     Some Standfirst
   </h2>

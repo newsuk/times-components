@@ -22,7 +22,9 @@ exports[`1. mobile primary image with caption and credits 1`] = `
 }
 
 Array [
-  <div>
+  <div
+    className="css-view-1dbjc4n"
+  >
     <TimesImage
       aspectRatio={1.25}
       caption={
@@ -39,17 +41,27 @@ Array [
       uri="https://img/someImage"
     />
   </div>,
-  <div>
+  <div
+    className="css-view-1dbjc4n"
+  >
     <responsiveweb__InsetCaptionStyle>
       <div
-        className="c1"
+        className="c1 responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2 c1 css-view-1dbjc4n"
       >
-        <div>
-          <div>
-            <div>
+        <div
+          className="css-view-1dbjc4n"
+        >
+          <div
+            className="css-view-1dbjc4n r-paddingTop-m611by"
+          >
+            <div
+              className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+            >
               Some caption
             </div>
-            <div>
+            <div
+              className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
+            >
               SOME CREDITS
             </div>
           </div>
@@ -82,7 +94,9 @@ exports[`2. tablet primary image with caption and credits 1`] = `
 }
 
 Array [
-  <div>
+  <div
+    className="css-view-1dbjc4n"
+  >
     <TimesImage
       aspectRatio={1.25}
       caption={
@@ -99,17 +113,27 @@ Array [
       uri="https://img/someImage"
     />
   </div>,
-  <div>
+  <div
+    className="css-view-1dbjc4n"
+  >
     <responsiveweb__InsetCaptionStyle>
       <div
-        className="c1"
+        className="c1 responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2 c1 css-view-1dbjc4n"
       >
-        <div>
-          <div>
-            <div>
+        <div
+          className="css-view-1dbjc4n"
+        >
+          <div
+            className="css-view-1dbjc4n r-paddingTop-m611by"
+          >
+            <div
+              className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+            >
               Some caption
             </div>
-            <div>
+            <div
+              className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
+            >
               SOME CREDITS
             </div>
           </div>
@@ -142,7 +166,9 @@ exports[`3. mobile fullwidth image with caption and credits 1`] = `
 }
 
 Array [
-  <div>
+  <div
+    className="css-view-1dbjc4n"
+  >
     <TimesImage
       aspectRatio={1.25}
       caption={
@@ -159,17 +185,27 @@ Array [
       uri="https://img/someImage"
     />
   </div>,
-  <div>
+  <div
+    className="css-view-1dbjc4n"
+  >
     <responsiveweb__InsetCaptionStyle>
       <div
-        className="c1"
+        className="c1 responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2 c1 css-view-1dbjc4n"
       >
-        <div>
-          <div>
-            <div>
+        <div
+          className="css-view-1dbjc4n"
+        >
+          <div
+            className="css-view-1dbjc4n r-paddingTop-m611by"
+          >
+            <div
+              className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+            >
               Some caption
             </div>
-            <div>
+            <div
+              className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
+            >
               SOME CREDITS
             </div>
           </div>
@@ -202,7 +238,9 @@ exports[`4. tablet fullwidth image with caption and credits 1`] = `
 }
 
 Array [
-  <div>
+  <div
+    className="css-view-1dbjc4n"
+  >
     <TimesImage
       aspectRatio={1.25}
       caption={
@@ -219,17 +257,27 @@ Array [
       uri="https://img/someImage"
     />
   </div>,
-  <div>
+  <div
+    className="css-view-1dbjc4n"
+  >
     <responsiveweb__InsetCaptionStyle>
       <div
-        className="c1"
+        className="c1 responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2 c1 css-view-1dbjc4n"
       >
-        <div>
-          <div>
-            <div>
+        <div
+          className="css-view-1dbjc4n"
+        >
+          <div
+            className="css-view-1dbjc4n r-paddingTop-m611by"
+          >
+            <div
+              className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+            >
               Some caption
             </div>
-            <div>
+            <div
+              className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
+            >
               SOME CREDITS
             </div>
           </div>
@@ -252,7 +300,9 @@ exports[`5. secondary image with caption and credits 1`] = `
 }
 
 Array [
-  <div>
+  <div
+    className="css-view-1dbjc4n r-width-1f720gc"
+  >
     <TimesImage
       aspectRatio={1.5}
       caption={
@@ -269,13 +319,23 @@ Array [
       uri="https://img/someImage"
     />
   </div>,
-  <div>
-    <div>
-      <div>
-        <div>
+  <div
+    className="css-view-1dbjc4n r-paddingLeft-1hfyk0a r-paddingTop-wk8lta r-width-1f720gc"
+  >
+    <div
+      className="css-view-1dbjc4n"
+    >
+      <div
+        className="css-view-1dbjc4n r-paddingTop-wk8lta"
+      >
+        <div
+          className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+        >
           Another caption
         </div>
-        <div>
+        <div
+          className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
+        >
           OTHER CREDITS
         </div>
       </div>
@@ -316,7 +376,9 @@ exports[`6. primary image with caption and credits with center caption override 
     }
   }
 >
-  <div>
+  <div
+    className="css-view-1dbjc4n"
+  >
     <TimesImage
       aspectRatio={1.25}
       caption={
@@ -333,25 +395,35 @@ exports[`6. primary image with caption and credits with center caption override 
       uri="https://img/someImage"
     />
   </div>
-  <div>
+  <div
+    className="css-view-1dbjc4n"
+  >
     <InsetCenteredCaption
       credits="Some credits"
       text="Some caption"
     >
       <responsiveweb__InsetCaptionStyle>
         <div
-          className="c1"
+          className="c1 responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2 c1 css-view-1dbjc4n"
         >
           <CentredCaption
             credits="Some credits"
             text="Some caption"
           >
-            <div>
-              <div>
-                <div>
+            <div
+              className="css-view-1dbjc4n"
+            >
+              <div
+                className="css-view-1dbjc4n r-paddingTop-m611by"
+              >
+                <div
+                  className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+                >
                   Some caption
                 </div>
-                <div>
+                <div
+                  className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
+                >
                   SOME CREDITS
                 </div>
               </div>
@@ -386,7 +458,9 @@ exports[`7. secondary image with caption and credits with center caption overrid
     }
   }
 >
-  <div>
+  <div
+    className="css-view-1dbjc4n r-width-1f720gc"
+  >
     <TimesImage
       aspectRatio={1.5}
       caption={
@@ -403,17 +477,27 @@ exports[`7. secondary image with caption and credits with center caption overrid
       uri="https://img/someImage"
     />
   </div>
-  <div>
+  <div
+    className="css-view-1dbjc4n r-paddingLeft-1hfyk0a r-paddingTop-wk8lta r-width-1f720gc"
+  >
     <CentredCaption
       credits="Other credits"
       text="Another caption"
     >
-      <div>
-        <div>
-          <div>
+      <div
+        className="css-view-1dbjc4n"
+      >
+        <div
+          className="css-view-1dbjc4n r-paddingTop-wk8lta"
+        >
+          <div
+            className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+          >
             Another caption
           </div>
-          <div>
+          <div
+            className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
+          >
             OTHER CREDITS
           </div>
         </div>

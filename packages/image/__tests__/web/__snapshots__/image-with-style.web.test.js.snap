@@ -12,22 +12,6 @@ exports[`1. default image 1`] = `
 }
 
 <style>
-.S1 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  display: flex;
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  padding-bottom: 0px;
-  position: relative;
-  z-index: 0;
-}
-
 .IS1 {
   display: table;
   height: 0;
@@ -39,7 +23,7 @@ exports[`1. default image 1`] = `
 </style>
 
 <div
-  className="S1"
+  className="css-view-1dbjc4n"
 >
   <div
     className="IS1"
@@ -63,22 +47,6 @@ exports[`2. default modal 1`] = `
 }
 
 <style>
-.S1 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  display: flex;
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  padding-bottom: 0px;
-  position: relative;
-  z-index: 0;
-}
-
 .IS1 {
   display: table;
   height: 0;
@@ -90,7 +58,7 @@ exports[`2. default modal 1`] = `
 </style>
 
 <div
-  className="S1"
+  className="css-view-1dbjc4n"
 >
   <div
     className="IS1"

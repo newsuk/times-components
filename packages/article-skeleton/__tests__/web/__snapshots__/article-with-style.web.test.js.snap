@@ -258,33 +258,6 @@ exports[`full article with style 1`] = `
 }
 
 <style>
-.S1 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  -ms-flex-preferred-size: auto;
-  -webkit-flex-basis: auto;
-  flex-basis: auto;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
-.S2 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  -ms-flex-preferred-size: auto;
-  -webkit-flex-basis: auto;
-  flex-basis: auto;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 0px;
-}
-
 .IS1 {
   margin-bottom: 0;
 }
@@ -294,21 +267,12 @@ exports[`full article with style 1`] = `
 }
 
 .IS3 {
-  font-family: TimesDigitalW04;
-  font-size: 17;
-  line-height: 30;
-  color: #333333;
-  margin-bottom: 25px;
-  margin-top: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .IS4 {
-  font-family: TimesDigitalW04;
-  font-size: 17;
-  line-height: 30;
-  color: #333333;
-  margin-bottom: 25px;
-  margin-top: 0;
+  position: relative;
 }
 
 .IS5 {
@@ -317,25 +281,17 @@ exports[`full article with style 1`] = `
 }
 
 .IS6 {
-  position: relative;
-}
-
-.IS7 {
-  height: 100%;
-  width: 100%;
-}
-
-.IS8 {
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
-.IS9 {
+.IS7 {
   padding-bottom: 56.25%;
+  position: relative;
 }
 
-.IS10 {
+.IS8 {
   margin: 0;
 }
 </style>
@@ -343,20 +299,20 @@ exports[`full article with style 1`] = `
 <article>
   <Head />
   <div
-    className="c0 S1"
+    className="c0 responsiveweb__HeaderAdContainer-sc-1exejum-1 c0 css-view-1dbjc4n"
   >
     <Ad
       className="IS1"
     />
   </div>
   <div
-    className="c1 S1"
+    className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
   >
     <div
-      className="c2 S1"
+      className="c2 responsiveweb__SaveShareContainer-sc-1exejum-3 c2 css-view-1dbjc4n"
     >
       <div
-        className="c3 S1"
+        className="c3 responsiveweb__SaveShareRefContainer-sc-1exejum-4 c3 css-view-1dbjc4n"
       >
         <div>
           <SaveAndShareBar />
@@ -364,10 +320,10 @@ exports[`full article with style 1`] = `
       </div>
     </div>
     <div
-      className="c4 S1"
+      className="c4 responsiveweb__BodyContainer-sc-1exejum-2 c4 css-view-1dbjc4n"
     >
       <p
-        className="c5 IS3"
+        className="c5"
       >
         <span
           className="c6 IS2"
@@ -383,21 +339,21 @@ exports[`full article with style 1`] = `
       </div>
       <div>
         <div
-          className="c8 S1"
+          className="c8 responsiveweb__PrimaryImg-sc-16nqyj8-5 c8 css-view-1dbjc4n"
         >
           <ArticleImage />
         </div>
       </div>
       <div>
         <div
-          className="c9 S1"
+          className="c9 responsiveweb__SecondaryImg-sc-16nqyj8-6 c9 css-view-1dbjc4n"
         >
           <ArticleImage />
         </div>
       </div>
       <div>
         <div
-          className="c10 S1"
+          className="c10 responsiveweb__InlineImg-sc-16nqyj8-7 c10 css-view-1dbjc4n"
         >
           <ArticleImage />
         </div>
@@ -409,15 +365,15 @@ exports[`full article with style 1`] = `
         className="paywall"
       >
         <p
-          className="c5 IS4"
+          className="c5"
         >
           Some content
         </p>
         <div
-          className="c11 S1"
+          className="c11 responsiveweb__PullQuoteContainer-sc-16nqyj8-9 c11 css-view-1dbjc4n"
         >
           <div
-            className="c12 S1"
+            className="c12 responsiveweb__PullQuoteResp-sc-16nqyj8-8 c12 css-view-1dbjc4n"
           >
             <PullQuote>
               The pull quote content
@@ -425,25 +381,25 @@ exports[`full article with style 1`] = `
           </div>
         </div>
         <div
-          className="c8 S1"
+          className="c8 responsiveweb__PrimaryImg-sc-16nqyj8-5 c8 css-view-1dbjc4n"
         >
           <figure
-            className="IS10"
+            className="IS8"
           >
             <div
-              className="IS9 S2"
+              className="css-view-1dbjc4n IS7"
             >
               <div
-                className="IS8 S1"
+                className="css-view-1dbjc4n IS6"
               >
                 <div
-                  className="IS7"
+                  className="IS5"
                 >
                   <div
-                    className="IS6"
+                    className="IS4"
                   >
                     <video
-                      className="video-js IS5"
+                      className="video-js IS3"
                     />
                   </div>
                 </div>
@@ -451,7 +407,7 @@ exports[`full article with style 1`] = `
             </div>
             <figcaption>
               <div
-                className="c13 S1"
+                className="c13 inset-captionweb__InsetCaptionStyle-sc-8m7lci-0 c13 css-view-1dbjc4n"
               >
                 <Caption />
               </div>

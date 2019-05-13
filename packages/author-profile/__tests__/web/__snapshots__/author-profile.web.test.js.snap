@@ -257,9 +257,7 @@ exports[`6. fetches more articles and falls back to previous data if no more 1`]
 `;
 
 exports[`7. an article list header 1`] = `
-<header
-  role="banner"
->
+<div>
   <div>
     <div>
       <div>
@@ -270,13 +268,13 @@ exports[`7. an article list header 1`] = `
       </div>
       <h1
         aria-level="1"
-        role="header"
+        role="heading"
       >
         Name
       </h1>
       <h2
         aria-level="2"
-        role="header"
+        role="heading"
       >
         job title
       </h2>
@@ -302,13 +300,11 @@ exports[`7. an article list header 1`] = `
       </div>
     </div>
   </div>
-</header>
+</div>
 `;
 
 exports[`8. an article list header with no bio, job title, name or twitter 1`] = `
-<header
-  role="banner"
->
+<div>
   <div>
     <div>
       <div>
@@ -319,42 +315,36 @@ exports[`8. an article list header with no bio, job title, name or twitter 1`] =
       </div>
     </div>
   </div>
-</header>
+</div>
 `;
 
 exports[`9. an article list header loading 1`] = `
-<header
-  role="banner"
->
+<div>
   <div>
     <div>
       <Gradient />
     </div>
   </div>
-</header>
+</div>
 `;
 
 exports[`10. an article list header only changes on loading state change 1`] = `
-<header
-  role="banner"
->
+<div>
   <div>
     <div>
       <Gradient />
     </div>
   </div>
-</header>
+</div>
 `;
 
 exports[`10. an article list header only changes on loading state change 2`] = `
-<header
-  role="banner"
->
+<div>
   <div>
     <div>
       <h2
         aria-level="2"
-        role="header"
+        role="heading"
       >
         title 1
       </h2>
@@ -363,18 +353,16 @@ exports[`10. an article list header only changes on loading state change 2`] = `
       </div>
     </div>
   </div>
-</header>
+</div>
 `;
 
 exports[`10. an article list header only changes on loading state change 3`] = `
-<header
-  role="banner"
->
+<div>
   <div>
     <div>
       <h2
         aria-level="2"
-        role="header"
+        role="heading"
       >
         title 1
       </h2>
@@ -383,5 +371,5 @@ exports[`10. an article list header only changes on loading state change 3`] = `
       </div>
     </div>
   </div>
-</header>
+</div>
 `;

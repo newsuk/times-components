@@ -189,30 +189,20 @@ exports[`1. a single child element 1`] = `
   }
 }
 
-<style>
-.S1 {
-  border-bottom-width: 0px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-}
-</style>
-
 <div
-  className="c0 c1 c2 c3 S1"
+  className="c0 c1 c2 c3 configweb__Base-cj50u7-4 c0 configweb__Base-cj50u7-3 c1 configweb__Base-cj50u7-1 c2 configweb__Base-cj50u7-0 c3 css-view-1dbjc4n"
 >
   <div
-    className="c4 S1"
+    className="c4 responsiveweb__SliceContainer-sc-2kg7gs-0 c4 css-view-1dbjc4n"
   >
     <div
-      className="c5 S1"
+      className="c5 responsiveweb-fgzeui-0 c5 css-view-1dbjc4n"
     >
       <div
-        className="c6 c7 c8 S1"
+        className="c6 c7 c8 responsiveweb__Base-fgzeui-5 c6 responsiveweb__Base-fgzeui-3 c7 responsiveweb__Base-fgzeui-1 c8 css-view-1dbjc4n"
       >
         <div
-          className="S1"
+          className="css-text-76zvg2"
         >
           opinion
         </div>
@@ -523,45 +513,35 @@ exports[`2. two child elements 1`] = `
   }
 }
 
-<style>
-.S1 {
-  border-bottom-width: 0px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-}
-</style>
-
 <div
-  className="c0 c1 c2 c3 c4 S1"
+  className="c0 c1 c2 c3 c4 configweb__Base-cj50u7-7 c0 configweb__Base-cj50u7-5 c1 configweb__Base-cj50u7-3 c2 configweb__Base-cj50u7-2 c3 configweb__Base-cj50u7-0 c4 css-view-1dbjc4n"
 >
   <div
-    className="c5 S1"
+    className="c5 responsiveweb__SliceContainer-sc-2kg7gs-0 c5 css-view-1dbjc4n"
   >
     <div
-      className="c6 S1"
+      className="c6 responsiveweb-fgzeui-0 c6 css-view-1dbjc4n"
     >
       <div
-        className="c7 c8 c9 S1"
+        className="c7 c8 c9 responsiveweb__Base-fgzeui-5 c7 responsiveweb__Base-fgzeui-2 c8 responsiveweb__Base-fgzeui-1 c9 css-view-1dbjc4n"
       >
         <div
-          className="S1"
+          className="css-text-76zvg2"
         >
           opinion
         </div>
       </div>
       <div
-        className="c10 S1"
+        className="c10 responsiveweb-fgzeui-6 c10 css-view-1dbjc4n"
       />
       <div
-        className="c11 c12 S1"
+        className="c11 c12 responsiveweb__Base-fgzeui-9 c11 responsiveweb__Base-fgzeui-7 c12 css-view-1dbjc4n"
       >
         <div
-          className="5 c13 c14 c15 c16 S1"
+          className="5 c13 c14 c15 c16 c13 responsiveweb__Base-fgzeui-14 c14 responsiveweb__Base-fgzeui-12 c15 responsiveweb__Base-fgzeui-10 c16 css-view-1dbjc4n"
         >
           <div
-            className="S1"
+            className="css-text-76zvg2"
           >
             support-1
           </div>
@@ -908,54 +888,44 @@ exports[`3. three child elements 1`] = `
   }
 }
 
-<style>
-.S1 {
-  border-bottom-width: 0px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-}
-</style>
-
 <div
-  className="c0 c1 c2 c3 S1"
+  className="c0 c1 c2 c3 configweb__Base-cj50u7-6 c0 configweb__Base-cj50u7-3 c1 configweb__Base-cj50u7-2 c2 configweb__Base-cj50u7-0 c3 css-view-1dbjc4n"
 >
   <div
-    className="c4 S1"
+    className="c4 responsiveweb__SliceContainer-sc-2kg7gs-0 c4 css-view-1dbjc4n"
   >
     <div
-      className="c5 S1"
+      className="c5 responsiveweb-fgzeui-0 c5 css-view-1dbjc4n"
     >
       <div
-        className="c6 c7 c8 c9 S1"
+        className="c6 c7 c8 c9 responsiveweb__Base-fgzeui-5 c6 responsiveweb__Base-fgzeui-4 c7 responsiveweb__Base-fgzeui-2 c8 responsiveweb__Base-fgzeui-1 c9 css-view-1dbjc4n"
       >
         <div
-          className="S1"
+          className="css-text-76zvg2"
         >
           opinion
         </div>
       </div>
       <div
-        className="c10 S1"
+        className="c10 responsiveweb-fgzeui-6 c10 css-view-1dbjc4n"
       />
       <div
-        className="c11 c12 c13 S1"
+        className="c11 c12 c13 responsiveweb__Base-fgzeui-9 c11 responsiveweb__Base-fgzeui-8 c12 responsiveweb__Base-fgzeui-7 c13 css-view-1dbjc4n"
       >
         <div
-          className="5 c14 c15 c16 c17 S1"
+          className="5 c14 c15 c16 c17 c14 responsiveweb__Base-fgzeui-13 c15 responsiveweb__Base-fgzeui-12 c16 responsiveweb__Base-fgzeui-10 c17 css-view-1dbjc4n"
         >
           <div
-            className="S1"
+            className="css-text-76zvg2"
           >
             support-1
           </div>
         </div>
         <div
-          className="5 c14 c15 c18 c17 S1"
+          className="5 c14 c15 c18 c17 c14 responsiveweb__Base-fgzeui-13 c15 responsiveweb__Base-fgzeui-11 c18 responsiveweb__Base-fgzeui-10 c17 css-view-1dbjc4n"
         >
           <div
-            className="S1"
+            className="css-text-76zvg2"
           >
             support-2
           </div>

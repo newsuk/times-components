@@ -69,7 +69,7 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
     <div>
       <h1
         aria-level="1"
-        role="header"
+        role="heading"
       >
         Some Short Headline
       </h1>
@@ -276,7 +276,7 @@ exports[`4. an article with ads 1`] = `
     <div>
       <h1
         aria-level="1"
-        role="header"
+        role="heading"
       >
         Some Headline
       </h1>

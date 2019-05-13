@@ -10,6 +10,7 @@ exports[`1. renders correctly with an image lead asset 1`] = `
 
 .IS2 {
   padding-bottom: 56.25%;
+  position: relative;
 }
 
 .IS3 {
@@ -17,15 +18,17 @@ exports[`1. renders correctly with an image lead asset 1`] = `
 }
 </style>
 
-<div>
+<div
+  className="css-view-1dbjc4n"
+>
   <figure
     className="IS3"
   >
     <div
-      className="IS2"
+      className="css-view-1dbjc4n IS2"
     >
       <div
-        className="IS1"
+        className="css-view-1dbjc4n IS1"
       >
         <Image
           aspectRatio={1.7777777777777777}
@@ -36,10 +39,14 @@ exports[`1. renders correctly with an image lead asset 1`] = `
       </div>
     </div>
     <figcaption>
-      <div>
+      <div
+        className="css-text-76zvg2"
+      >
         Chris Reynolds Gordon at one of his party venues in London
       </div>
-      <div>
+      <div
+        className="css-text-76zvg2"
+      >
         The credits
       </div>
     </figcaption>
@@ -57,6 +64,7 @@ exports[`2. renders correctly with a video lead asset 1`] = `
 
 .IS2 {
   padding-bottom: 56.25%;
+  position: relative;
 }
 
 .IS3 {
@@ -64,15 +72,17 @@ exports[`2. renders correctly with a video lead asset 1`] = `
 }
 </style>
 
-<div>
+<div
+  className="css-view-1dbjc4n"
+>
   <figure
     className="IS3"
   >
     <div
-      className="IS2"
+      className="css-view-1dbjc4n IS2"
     >
       <div
-        className="IS1"
+        className="css-view-1dbjc4n IS1"
       >
         <Video
           accountId="1234"
@@ -90,10 +100,14 @@ exports[`2. renders correctly with a video lead asset 1`] = `
       </div>
     </div>
     <figcaption>
-      <div>
+      <div
+        className="css-text-76zvg2"
+      >
         Chris Reynolds Gordon at one of his party venues in London
       </div>
-      <div>
+      <div
+        className="css-text-76zvg2"
+      >
         The credits
       </div>
     </figcaption>
@@ -115,6 +129,7 @@ exports[`5. it renders correctly with a classname 1`] = `
 
 .IS2 {
   padding-bottom: 56.25%;
+  position: relative;
 }
 
 .IS3 {
@@ -123,16 +138,16 @@ exports[`5. it renders correctly with a classname 1`] = `
 </style>
 
 <div
-  className="test-class-name"
+  className="test-class-name test-class-name css-view-1dbjc4n"
 >
   <figure
     className="IS3"
   >
     <div
-      className="IS2"
+      className="css-view-1dbjc4n IS2"
     >
       <div
-        className="IS1"
+        className="css-view-1dbjc4n IS1"
       >
         <Image
           aspectRatio={1.7777777777777777}
@@ -143,10 +158,14 @@ exports[`5. it renders correctly with a classname 1`] = `
       </div>
     </div>
     <figcaption>
-      <div>
+      <div
+        className="css-text-76zvg2"
+      >
         Chris Reynolds Gordon at one of his party venues in London
       </div>
-      <div>
+      <div
+        className="css-text-76zvg2"
+      >
         The credits
       </div>
     </figcaption>

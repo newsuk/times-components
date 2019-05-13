@@ -73,26 +73,17 @@ exports[`1. article list 1`] = `
 
 <style>
 .S1 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
+  -ms-flex-negative: 1;
+  -ms-flex-positive: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-flex: 1;
+  -webkit-flex-basis: 0%;
+  -webkit-flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-basis: 0%;
+  flex-grow: 1;
+  flex-shrink: 1;
   max-width: 760px;
-  min-height: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  position: relative;
 }
 
 .S2 {
@@ -100,8 +91,6 @@ exports[`1. article list 1`] = `
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
   align-items: stretch;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
   -ms-flex-direction: row;
   -webkit-box-direction: normal;
   -webkit-box-orient: horizontal;
@@ -111,60 +100,11 @@ exports[`1. article list 1`] = `
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  min-height: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  position: relative;
 }
 
 .S3 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  min-height: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  position: relative;
-}
-
-.S4 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
   background-color: rgba(219,219,219,1.00);
-  border-top-width: 0px;
-  border-bottom-width: 0px;
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
   height: 1px;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  min-height: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  position: relative;
 }
 
 .IS1 {
@@ -177,19 +117,19 @@ exports[`1. article list 1`] = `
 </style>
 
 <div
-  className="S3"
+  className="css-view-1dbjc4n"
 >
   <div
-    className="S3"
+    className="css-view-1dbjc4n"
   >
     <div
-      className="c0 S3"
+      className="c0 responsiveweb__ListContentContainer-sc-143eup1-0 c0 css-view-1dbjc4n"
     >
       <div
-        className="S2"
+        className="css-view-1dbjc4n r-alignItems-1oszu61 r-flexDirection-18u37iz r-justifyContent-1777fci S2"
       >
         <div
-          className="S1"
+          className="css-view-1dbjc4n r-flex-13awgt0 r-maxWidth-jjmaes S1"
         >
           <Pagination />
         </div>
@@ -197,18 +137,18 @@ exports[`1. article list 1`] = `
     </div>
     <div>
       <div
-        className="c0 S3"
+        className="c0 responsiveweb__ListContentContainer-sc-143eup1-0 c0 css-view-1dbjc4n"
       >
         <Link>
           <div
-            className="c1 S3"
+            className="c1 responsiveweb__ListItemWrapper-sc-143eup1-1 c1 css-view-1dbjc4n"
           >
             <Card
               contentContainerClass="articleListContent"
               imageContainerClass="articleListImage"
             >
               <div
-                className="c2 S3"
+                className="c2 indexweb__FadeIn-v0crhg-0 c2 css-view-1dbjc4n"
               >
                 <ArticleSummary />
               </div>
@@ -219,25 +159,25 @@ exports[`1. article list 1`] = `
     </div>
     <div>
       <div
-        className="c0 S3"
+        className="c0 responsiveweb__ListContentContainer-sc-143eup1-0 c0 css-view-1dbjc4n"
       >
         <div
-          className="c3 S3"
+          className="c3 responsiveweb__ListItemSeparator-sc-143eup1-2 c3 css-view-1dbjc4n"
         >
           <div
-            className="S4"
+            className="css-view-1dbjc4n r-backgroundColor-oyv1ms r-height-109y4c4 S3"
           />
         </div>
         <Link>
           <div
-            className="c1 S3"
+            className="c1 responsiveweb__ListItemWrapper-sc-143eup1-1 c1 css-view-1dbjc4n"
           >
             <Card
               contentContainerClass="articleListContent"
               imageContainerClass="articleListImage"
             >
               <div
-                className="c2 S3"
+                className="c2 indexweb__FadeIn-v0crhg-0 c2 css-view-1dbjc4n"
               >
                 <ArticleSummary />
               </div>
@@ -248,25 +188,25 @@ exports[`1. article list 1`] = `
     </div>
     <div>
       <div
-        className="c0 S3"
+        className="c0 responsiveweb__ListContentContainer-sc-143eup1-0 c0 css-view-1dbjc4n"
       >
         <div
-          className="c3 S3"
+          className="c3 responsiveweb__ListItemSeparator-sc-143eup1-2 c3 css-view-1dbjc4n"
         >
           <div
-            className="S4"
+            className="css-view-1dbjc4n r-backgroundColor-oyv1ms r-height-109y4c4 S3"
           />
         </div>
         <Link>
           <div
-            className="c1 S3"
+            className="c1 responsiveweb__ListItemWrapper-sc-143eup1-1 c1 css-view-1dbjc4n"
           >
             <Card
               contentContainerClass="articleListContent"
               imageContainerClass="articleListImage"
             >
               <div
-                className="c2 S3"
+                className="c2 indexweb__FadeIn-v0crhg-0 c2 css-view-1dbjc4n"
               >
                 <ArticleSummary />
               </div>
@@ -277,25 +217,25 @@ exports[`1. article list 1`] = `
     </div>
     <div>
       <div
-        className="c0 S3"
+        className="c0 responsiveweb__ListContentContainer-sc-143eup1-0 c0 css-view-1dbjc4n"
       >
         <div
-          className="c3 S3"
+          className="c3 responsiveweb__ListItemSeparator-sc-143eup1-2 c3 css-view-1dbjc4n"
         >
           <div
-            className="S4"
+            className="css-view-1dbjc4n r-backgroundColor-oyv1ms r-height-109y4c4 S3"
           />
         </div>
         <Link>
           <div
-            className="c1 S3"
+            className="c1 responsiveweb__ListItemWrapper-sc-143eup1-1 c1 css-view-1dbjc4n"
           >
             <Card
               contentContainerClass="articleListContent"
               imageContainerClass="articleListImage"
             >
               <div
-                className="c2 S3"
+                className="c2 indexweb__FadeIn-v0crhg-0 c2 css-view-1dbjc4n"
               >
                 <ArticleSummary />
               </div>
@@ -306,25 +246,25 @@ exports[`1. article list 1`] = `
     </div>
     <div>
       <div
-        className="c0 S3"
+        className="c0 responsiveweb__ListContentContainer-sc-143eup1-0 c0 css-view-1dbjc4n"
       >
         <div
-          className="c3 S3"
+          className="c3 responsiveweb__ListItemSeparator-sc-143eup1-2 c3 css-view-1dbjc4n"
         >
           <div
-            className="S4"
+            className="css-view-1dbjc4n r-backgroundColor-oyv1ms r-height-109y4c4 S3"
           />
         </div>
         <Link>
           <div
-            className="c1 S3"
+            className="c1 responsiveweb__ListItemWrapper-sc-143eup1-1 c1 css-view-1dbjc4n"
           >
             <Card
               contentContainerClass="articleListContent"
               imageContainerClass="articleListImage"
             >
               <div
-                className="c2 S3"
+                className="c2 indexweb__FadeIn-v0crhg-0 c2 css-view-1dbjc4n"
               >
                 <ArticleSummary />
               </div>
@@ -337,10 +277,10 @@ exports[`1. article list 1`] = `
       className="IS1"
     />
     <div
-      className="S2"
+      className="css-view-1dbjc4n r-alignItems-1oszu61 r-flexDirection-18u37iz r-justifyContent-1777fci S2"
     >
       <div
-        className="S1"
+        className="css-view-1dbjc4n r-flex-13awgt0 r-maxWidth-jjmaes S1"
       >
         <Pagination />
       </div>

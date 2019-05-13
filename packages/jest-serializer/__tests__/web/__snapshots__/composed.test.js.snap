@@ -8,6 +8,6 @@ exports[`The serializers should minimalise and create styles 1`] = `
 </style>
 
 <div
-  className="S1"
+  className="css-text-76zvg2 r-color-howw7u r-padding-ub6tad S1"
 />
 `;

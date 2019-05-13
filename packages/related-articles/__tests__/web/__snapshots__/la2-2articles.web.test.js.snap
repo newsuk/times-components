@@ -5,7 +5,7 @@ exports[`1. one lead and one support related article 1`] = `
   <div>
     <h3
       aria-level="3"
-      role="header"
+      role="heading"
     >
       Related articles
     </h3>
@@ -40,7 +40,7 @@ exports[`1. one lead and one support related article 1`] = `
                   </div>
                   <h3
                     aria-level="3"
-                    role="header"
+                    role="heading"
                   >
                     First Short Headline
                   </h3>
@@ -99,7 +99,7 @@ exports[`1. one lead and one support related article 1`] = `
                     </div>
                     <h3
                       aria-level="3"
-                      role="header"
+                      role="heading"
                     >
                       Second Short Headline
                     </h3>

@@ -21,45 +21,22 @@ exports[`1. pull quote in culture magazine 1`] = `
 
 <style>
 .S1 {
-  border-left-width: 0px;
-  display: inline;
-  line-height: inherit;
   margin-top: 0px;
-  padding-left: 0px;
 }
 
 .S2 {
-  border-left-width: 0px;
-  color: inherit;
-  display: inline;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
-  font-size: 14px;
-  line-height: inherit;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  padding-left: 0px;
-}
-
-.S3 {
-  border-left-width: 0px;
   color: rgba(105,105,105,1.00);
-  display: inline;
   font-family: GillSansMTStd-Medium;
   font-size: 13px;
   line-height: 13px;
-  margin-top: 0px;
-  margin-left: 0px;
   margin-bottom: 0px;
-  padding-left: 0px;
 }
 
-.S4 {
+.S3 {
   -ms-flex-align: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   align-items: center;
-  border-left-width: 0px;
   display: flex;
   -ms-flex-direction: row;
   -webkit-box-direction: normal;
@@ -67,28 +44,12 @@ exports[`1. pull quote in culture magazine 1`] = `
   -webkit-flex-direction: row;
   flex-direction: row;
   height: 20px;
-  margin-bottom: 0px;
-  margin-left: 0px;
   margin-top: 10px;
-  padding-left: 0px;
 }
 
-.S5 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  border-left-width: 0px;
-  display: flex;
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  margin-left: 0px;
+.S4 {
   margin-bottom: 15px;
   margin-top: 0px;
-  padding-left: 0px;
 }
 
 .IS1 {
@@ -104,30 +65,30 @@ exports[`1. pull quote in culture magazine 1`] = `
   url=""
 >
   <div
-    className="S5"
+    className="css-view-1dbjc4n r-marginBottom-ku1wi2 r-marginTop-1mnahxq S4"
   >
     <div
-      className="IS1 S1"
+      className="css-text-76zvg2 r-marginTop-1mnahxq IS1 S1"
     >
       “
     </div>
     <div
-      className="c0 S2"
+      className="c0 responsiveweb__PullQuoteContent-sc-16yokeu-0 c0 css-text-76zvg2"
     >
       <cite>
         Some content
       </cite>
     </div>
     <div
-      className="S4"
+      className="css-view-1dbjc4n r-alignItems-1awozwy r-display-6koalj r-flexDirection-18u37iz r-height-z80fyv r-marginTop-156q2ks S3"
     >
       <div
-        className="S3"
+        className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-1akm30i r-marginBottom-p1pxzi S2"
       >
         A caption
       </div>
       <div
-        className="S3"
+        className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-1akm30i r-marginBottom-p1pxzi S2"
       >
         , Some extra text
       </div>
@@ -157,46 +118,23 @@ exports[`2. pull quote in style magazine 1`] = `
 
 <style>
 .S1 {
-  border-left-width: 0px;
   color: rgba(105,105,105,1.00);
-  display: inline;
-  line-height: inherit;
   margin-top: 0px;
-  padding-left: 0px;
 }
 
 .S2 {
-  border-left-width: 0px;
-  color: inherit;
-  display: inline;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
-  font-size: 14px;
-  line-height: inherit;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  padding-left: 0px;
-}
-
-.S3 {
-  border-left-width: 0px;
   color: rgba(105,105,105,1.00);
-  display: inline;
   font-family: GillSansMTStd-Medium;
   font-size: 13px;
   line-height: 13px;
-  margin-top: 0px;
-  margin-left: 0px;
   margin-bottom: 0px;
-  padding-left: 0px;
 }
 
-.S4 {
+.S3 {
   -ms-flex-align: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   align-items: center;
-  border-left-width: 0px;
   display: flex;
   -ms-flex-direction: row;
   -webkit-box-direction: normal;
@@ -204,28 +142,12 @@ exports[`2. pull quote in style magazine 1`] = `
   -webkit-flex-direction: row;
   flex-direction: row;
   height: 20px;
-  margin-bottom: 0px;
-  margin-left: 0px;
   margin-top: 10px;
-  padding-left: 0px;
 }
 
-.S5 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  border-left-width: 0px;
-  display: flex;
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  margin-left: 0px;
+.S4 {
   margin-bottom: 15px;
   margin-top: 0px;
-  padding-left: 0px;
 }
 
 .IS1 {
@@ -240,30 +162,30 @@ exports[`2. pull quote in style magazine 1`] = `
   url=""
 >
   <div
-    className="S5"
+    className="css-view-1dbjc4n r-marginBottom-ku1wi2 r-marginTop-1mnahxq S4"
   >
     <div
-      className="IS1 S1"
+      className="css-text-76zvg2 r-color-1khp51w r-marginTop-1mnahxq IS1 S1"
     >
       “
     </div>
     <div
-      className="c0 S2"
+      className="c0 responsiveweb__PullQuoteContent-sc-16yokeu-0 c0 css-text-76zvg2"
     >
       <cite>
         Some content
       </cite>
     </div>
     <div
-      className="S4"
+      className="css-view-1dbjc4n r-alignItems-1awozwy r-display-6koalj r-flexDirection-18u37iz r-height-z80fyv r-marginTop-156q2ks S3"
     >
       <div
-        className="S3"
+        className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-1akm30i r-marginBottom-p1pxzi S2"
       >
         A caption
       </div>
       <div
-        className="S3"
+        className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-1akm30i r-marginBottom-p1pxzi S2"
       >
         , Some extra text
       </div>
@@ -293,46 +215,23 @@ exports[`3. pull quote in the sunday times magazine 1`] = `
 
 <style>
 .S1 {
-  border-left-width: 0px;
   color: rgba(105,105,105,1.00);
-  display: inline;
-  line-height: inherit;
   margin-top: 0px;
-  padding-left: 0px;
 }
 
 .S2 {
-  border-left-width: 0px;
-  color: inherit;
-  display: inline;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
-  font-size: 14px;
-  line-height: inherit;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  padding-left: 0px;
-}
-
-.S3 {
-  border-left-width: 0px;
   color: rgba(105,105,105,1.00);
-  display: inline;
   font-family: GillSansMTStd-Medium;
   font-size: 13px;
   line-height: 13px;
-  margin-top: 0px;
-  margin-left: 0px;
   margin-bottom: 0px;
-  padding-left: 0px;
 }
 
-.S4 {
+.S3 {
   -ms-flex-align: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   align-items: center;
-  border-left-width: 0px;
   display: flex;
   -ms-flex-direction: row;
   -webkit-box-direction: normal;
@@ -340,28 +239,12 @@ exports[`3. pull quote in the sunday times magazine 1`] = `
   -webkit-flex-direction: row;
   flex-direction: row;
   height: 20px;
-  margin-bottom: 0px;
-  margin-left: 0px;
   margin-top: 10px;
-  padding-left: 0px;
 }
 
-.S5 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  border-left-width: 0px;
-  display: flex;
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  margin-left: 0px;
+.S4 {
   margin-bottom: 15px;
   margin-top: 0px;
-  padding-left: 0px;
 }
 
 .IS1 {
@@ -376,30 +259,30 @@ exports[`3. pull quote in the sunday times magazine 1`] = `
   url=""
 >
   <div
-    className="S5"
+    className="css-view-1dbjc4n r-marginBottom-ku1wi2 r-marginTop-1mnahxq S4"
   >
     <div
-      className="IS1 S1"
+      className="css-text-76zvg2 r-color-1khp51w r-marginTop-1mnahxq IS1 S1"
     >
       “
     </div>
     <div
-      className="c0 S2"
+      className="c0 responsiveweb__PullQuoteContent-sc-16yokeu-0 c0 css-text-76zvg2"
     >
       <cite>
         Some content
       </cite>
     </div>
     <div
-      className="S4"
+      className="css-view-1dbjc4n r-alignItems-1awozwy r-display-6koalj r-flexDirection-18u37iz r-height-z80fyv r-marginTop-156q2ks S3"
     >
       <div
-        className="S3"
+        className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-1akm30i r-marginBottom-p1pxzi S2"
       >
         A caption
       </div>
       <div
-        className="S3"
+        className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-1akm30i r-marginBottom-p1pxzi S2"
       >
         , Some extra text
       </div>
