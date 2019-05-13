@@ -32,11 +32,7 @@ const AuthorProfileHead = ({
   const renderName = () => {
     if (!name) return null;
     return (
-      <Text
-        accessibilityRole="header"
-        style={styles.name}
-        testID="author-name"
-      >
+      <Text accessibilityRole="header" style={styles.name} testID="author-name">
         {name}
       </Text>
     );

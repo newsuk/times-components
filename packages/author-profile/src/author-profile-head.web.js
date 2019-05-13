@@ -51,9 +51,7 @@ const AuthorProfileHead = ({
   };
 
   return (
-    <AuthorHeadWrapper
-      style={styles.authorHeadContainer}
-    >
+    <AuthorHeadWrapper style={styles.authorHeadContainer}>
       <AuthorProfileHeadBaseWithTracking
         isLoading={isLoading}
         jobTitle={jobTitle}
