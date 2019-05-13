@@ -108,7 +108,7 @@ SaveAndShareBar.propTypes = {
     bookmark: PropTypes.func.isRequired,
     getBookmarks: PropTypes.func.isRequired,
     unBookmark: PropTypes.func.isRequired
-  }).isRequired
+  }).isRequired,
   savingEnabled: PropTypes.func.isRequired,
   sharingEnabled: PropTypes.func.isRequired
 };

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. a primary image 1`] = `
-.c5 {
+.c3 {
   width: 100%;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -17,34 +17,22 @@ exports[`1. a primary image 1`] = `
   display: none;
 }
 
-.c4 {
+.c2 {
   display: block;
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
-.c2 {
-  background-color: #FFFFFF;
-  height: 55px;
-  margin: 30px 10px;
-}
-
-.c3 {
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-  border-color: #DBDBDB;
-}
-
 @media (min-width:768px) {
-  .c5 {
+  .c3 {
     width: 80.8%;
     margin: 0 auto;
   }
 }
 
 @media (min-width:1024px) {
-  .c5 {
+  .c3 {
     width: 56.2%;
   }
 }
@@ -70,30 +58,6 @@ exports[`1. a primary image 1`] = `
   }
 }
 
-@media (max-width:1320px) {
-  .c2 {
-    position: -webkit-sticky;
-    position: sticky;
-    left: 0;
-    top: 0;
-    z-index: 999;
-  }
-}
-
-@media (min-width:768px) {
-  .c3 {
-    width: 80.8%;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-}
-
-@media (min-width:1024px) {
-  .c3 {
-    width: 56.2%;
-  }
-}
-
 <style>
 .IS1 {
   margin-bottom: 0;
@@ -113,22 +77,11 @@ exports[`1. a primary image 1`] = `
     className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
   >
     <div
-      className="c2 responsiveweb__SaveShareContainer-sc-1exejum-3 c2 css-view-1dbjc4n"
-    >
-      <div
-        className="c3 responsiveweb__SaveShareRefContainer-sc-1exejum-4 c3 css-view-1dbjc4n"
-      >
-        <div>
-          <SaveAndShareBar />
-        </div>
-      </div>
-    </div>
-    <div
-      className="c4 responsiveweb__BodyContainer-sc-1exejum-2 c4 css-view-1dbjc4n"
+      className="c2 responsiveweb__BodyContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
     >
       <div>
         <div
-          className="c5 responsiveweb__PrimaryImg-sc-16nqyj8-5 c5 css-view-1dbjc4n"
+          className="c3 responsiveweb__PrimaryImg-sc-16nqyj8-5 c3 css-view-1dbjc4n"
         >
           <ArticleImage />
         </div>
@@ -148,23 +101,11 @@ exports[`2. a fullwidth image 1`] = `
   display: none;
 }
 
-.c4 {
+.c2 {
   display: block;
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
-}
-
-.c2 {
-  background-color: #FFFFFF;
-  height: 55px;
-  margin: 30px 10px;
-}
-
-.c3 {
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-  border-color: #DBDBDB;
 }
 
 @media (min-width:1024px) {
@@ -188,30 +129,6 @@ exports[`2. a fullwidth image 1`] = `
   }
 }
 
-@media (max-width:1320px) {
-  .c2 {
-    position: -webkit-sticky;
-    position: sticky;
-    left: 0;
-    top: 0;
-    z-index: 999;
-  }
-}
-
-@media (min-width:768px) {
-  .c3 {
-    width: 80.8%;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-}
-
-@media (min-width:1024px) {
-  .c3 {
-    width: 56.2%;
-  }
-}
-
 <style>
 .IS1 {
   margin-bottom: 0;
@@ -231,18 +148,7 @@ exports[`2. a fullwidth image 1`] = `
     className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
   >
     <div
-      className="c2 responsiveweb__SaveShareContainer-sc-1exejum-3 c2 css-view-1dbjc4n"
-    >
-      <div
-        className="c3 responsiveweb__SaveShareRefContainer-sc-1exejum-4 c3 css-view-1dbjc4n"
-      >
-        <div>
-          <SaveAndShareBar />
-        </div>
-      </div>
-    </div>
-    <div
-      className="c4 responsiveweb__BodyContainer-sc-1exejum-2 c4 css-view-1dbjc4n"
+      className="c2 responsiveweb__BodyContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
     >
       <div>
         <ArticleImage />
@@ -254,7 +160,7 @@ exports[`2. a fullwidth image 1`] = `
 `;
 
 exports[`3. a secondary image 1`] = `
-.c5 {
+.c3 {
   width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -275,27 +181,15 @@ exports[`3. a secondary image 1`] = `
   display: none;
 }
 
-.c4 {
+.c2 {
   display: block;
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
-.c2 {
-  background-color: #FFFFFF;
-  height: 55px;
-  margin: 30px 10px;
-}
-
-.c3 {
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-  border-color: #DBDBDB;
-}
-
 @media (min-width:768px) {
-  .c5 {
+  .c3 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -304,7 +198,7 @@ exports[`3. a secondary image 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c5 {
+  .c3 {
     width: 56.2%;
   }
 }
@@ -330,30 +224,6 @@ exports[`3. a secondary image 1`] = `
   }
 }
 
-@media (max-width:1320px) {
-  .c2 {
-    position: -webkit-sticky;
-    position: sticky;
-    left: 0;
-    top: 0;
-    z-index: 999;
-  }
-}
-
-@media (min-width:768px) {
-  .c3 {
-    width: 80.8%;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-}
-
-@media (min-width:1024px) {
-  .c3 {
-    width: 56.2%;
-  }
-}
-
 <style>
 .IS1 {
   margin-bottom: 0;
@@ -373,22 +243,11 @@ exports[`3. a secondary image 1`] = `
     className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
   >
     <div
-      className="c2 responsiveweb__SaveShareContainer-sc-1exejum-3 c2 css-view-1dbjc4n"
-    >
-      <div
-        className="c3 responsiveweb__SaveShareRefContainer-sc-1exejum-4 c3 css-view-1dbjc4n"
-      >
-        <div>
-          <SaveAndShareBar />
-        </div>
-      </div>
-    </div>
-    <div
-      className="c4 responsiveweb__BodyContainer-sc-1exejum-2 c4 css-view-1dbjc4n"
+      className="c2 responsiveweb__BodyContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
     >
       <div>
         <div
-          className="c5 responsiveweb__SecondaryImg-sc-16nqyj8-6 c5 css-view-1dbjc4n"
+          className="c3 responsiveweb__SecondaryImg-sc-16nqyj8-6 c3 css-view-1dbjc4n"
         >
           <ArticleImage />
         </div>
@@ -400,7 +259,7 @@ exports[`3. a secondary image 1`] = `
 `;
 
 exports[`4. an inline image 1`] = `
-.c5 {
+.c3 {
   width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -422,27 +281,15 @@ exports[`4. an inline image 1`] = `
   display: none;
 }
 
-.c4 {
+.c2 {
   display: block;
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
-.c2 {
-  background-color: #FFFFFF;
-  height: 55px;
-  margin: 30px 10px;
-}
-
-.c3 {
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-  border-color: #DBDBDB;
-}
-
 @media (min-width:768px) {
-  .c5 {
+  .c3 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -451,7 +298,7 @@ exports[`4. an inline image 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c5 {
+  .c3 {
     width: 56.2%;
   }
 }
@@ -477,30 +324,6 @@ exports[`4. an inline image 1`] = `
   }
 }
 
-@media (max-width:1320px) {
-  .c2 {
-    position: -webkit-sticky;
-    position: sticky;
-    left: 0;
-    top: 0;
-    z-index: 999;
-  }
-}
-
-@media (min-width:768px) {
-  .c3 {
-    width: 80.8%;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-}
-
-@media (min-width:1024px) {
-  .c3 {
-    width: 56.2%;
-  }
-}
-
 <style>
 .IS1 {
   margin-bottom: 0;
@@ -520,22 +343,11 @@ exports[`4. an inline image 1`] = `
     className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
   >
     <div
-      className="c2 responsiveweb__SaveShareContainer-sc-1exejum-3 c2 css-view-1dbjc4n"
-    >
-      <div
-        className="c3 responsiveweb__SaveShareRefContainer-sc-1exejum-4 c3 css-view-1dbjc4n"
-      >
-        <div>
-          <SaveAndShareBar />
-        </div>
-      </div>
-    </div>
-    <div
-      className="c4 responsiveweb__BodyContainer-sc-1exejum-2 c4 css-view-1dbjc4n"
+      className="c2 responsiveweb__BodyContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
     >
       <div>
         <div
-          className="c5 responsiveweb__InlineImg-sc-16nqyj8-7 c5 css-view-1dbjc4n"
+          className="c3 responsiveweb__InlineImg-sc-16nqyj8-7 c3 css-view-1dbjc4n"
         >
           <ArticleImage />
         </div>
