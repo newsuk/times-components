@@ -65,6 +65,8 @@ export default () => {
           onShareOnFB={onShareOnFB}
           onShareOnTwitter={onShareOnTwitter}
           saveApi={mockSaveApi}
+          sharingEnabled
+          savingEnabled
         />
       );
     });

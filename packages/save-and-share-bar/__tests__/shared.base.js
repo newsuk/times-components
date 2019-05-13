@@ -25,6 +25,8 @@ export default () => {
           onCopyLink={onCopyLink}
           onShareOnEmail={onShareOnEmail}
           saveApi={saveApi}
+          sharingEnabled
+          savingEnabled
         />
       );
     });
