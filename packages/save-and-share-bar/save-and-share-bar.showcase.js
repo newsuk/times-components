@@ -15,7 +15,7 @@ export default {
           saveApi={saveApi}
         />
       ),
-      name: "Save snd Share bar",
+      name: "Save and Share bar",
       type: "story"
     }
   ],
