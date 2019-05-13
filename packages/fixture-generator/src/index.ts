@@ -1,5 +1,6 @@
 import MockArticle from "./mock-article";
 import MockImage from "./mock-image";
+import MockUser from "./mock-user";
 import MockAuthor from "./mock-author";
 import MockEdition from "./mock-edition";
 import {
@@ -52,6 +53,7 @@ export {
   getPuzzleSlices,
   mockStandardSection,
   MockArticle,
+  MockUser,
   MockEdition,
   mockEditionSlice,
   MockImage,
