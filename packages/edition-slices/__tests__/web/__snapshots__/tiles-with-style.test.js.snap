@@ -3551,19 +3551,14 @@ exports[`31. tile aj 1`] = `
   align-self: flex-end;
   width: 85%;
 }
-
-.IS4 {
-  background-color: #F0F0F0;
-  flex: 1;
-  margin-top: 10px;
-}
 </style>
 
 <Link
-  className="IS4"
   linkStyle={
     Object {
+      "backgroundColor": "#F0F0F0",
       "flex": 1,
+      "marginTop": "10px",
     }
   }
   url="/crossword/123"
@@ -3617,21 +3612,16 @@ exports[`32. tile ak 1`] = `
   width: 85%;
   margin-top: -25px;
 }
-
-.IS4 {
-  background-color: #F0F0F0;
-  flex: 1;
-  margin-horizontal: 5px;
-  height: 150;
-  overflow: hidden;
-}
 </style>
 
 <Link
-  className="IS4"
   linkStyle={
     Object {
+      "backgroundColor": "#F0F0F0",
       "flex": 1,
+      "height": 150,
+      "marginHorizontal": "5px",
+      "overflow": "hidden",
     }
   }
   url="/crossword/123"
