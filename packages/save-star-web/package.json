@@ -33,11 +33,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
-<<<<<<< HEAD
     "@times-components/save-and-share-bar": "0.3.0",
-=======
-    "@times-components/save-and-share-bar": "0.2.9",
->>>>>>> 165923542ff40d728a65f41da58ab7a6ca55e61c
     "@times-components/link": "3.4.7",
     "@times-components/utils": "4.10.11",
     "@times-components/provider-queries": "2.0.4",
