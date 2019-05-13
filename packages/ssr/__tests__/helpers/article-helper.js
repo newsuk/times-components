@@ -14,7 +14,7 @@ const articleTemplateTest = template =>
         .setTemplate(template)
         .get();
 
-        userWithBookmarks = new MockUser().setBookmarksTotal(3);
+      userWithBookmarks = new MockUser().setBookmarksTotal(3);
     });
 
     afterEach(() => {

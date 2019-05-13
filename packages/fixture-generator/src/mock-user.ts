@@ -1,8 +1,4 @@
-import {
-  User,
-  Bookmark,
-  PageOfBookmarks
-} from "./types";
+import { User, Bookmark, PageOfBookmarks } from "./types";
 import UUID from "./mock-UUID";
 
 function getBookmarksObject(): PageOfBookmarks {
@@ -13,9 +9,11 @@ function getBookmarksObject(): PageOfBookmarks {
 }
 
 function getBookmarks(total: number): Bookmark[] {
-  return new Array(total).fill(0).map((): Bookmark => ({
-    id: UUID()
-  }));
+  return new Array(total).fill(0).map(
+    (): Bookmark => ({
+      id: UUID()
+    })
+  );
 }
 
 class MockUser {
@@ -23,14 +21,14 @@ class MockUser {
 
   constructor() {
     this.user = {
-      bookmarks: getBookmarksObject(),
+      bookmarks: getBookmarksObject()
     };
   }
 
   setBookmarksTotal(total: number) {
     if (this.user.bookmarks) {
       this.user.bookmarks.total = total;
-      this.user.bookmarks.bookmarks = getBookmarks(total)
+      this.user.bookmarks.bookmarks = getBookmarks(total);
       return this.user;
     }
     return this.user;

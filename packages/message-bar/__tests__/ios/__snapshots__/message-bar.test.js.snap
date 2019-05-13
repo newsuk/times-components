@@ -116,3 +116,16 @@ Array [
   </View>,
 ]
 `;
+
+exports[`5. renders correctly 2`] = `
+Array [
+  <View />,
+  <View>
+    <View>
+      <Text>
+        test child content
+      </Text>
+    </View>
+  </View>,
+]
+`;
