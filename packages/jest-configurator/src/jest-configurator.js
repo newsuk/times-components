@@ -17,7 +17,7 @@ const findHasteImpl = () => {
     }
   });
   return hasteImplModulePath;
-}
+};
 const nativeSpecific = platform => ({
   haste: {
     defaultPlatform: platform,
