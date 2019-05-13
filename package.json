@@ -142,6 +142,7 @@
     "global": "4.3.2",
     "handlebars": "4.0.10",
     "jest": "23.6.0",
+    "js-yaml": "3.13.1",
     "lcov-result-merger": "1.2.0",
     "lerna": "3.2.1",
     "metro-react-native-babel-preset": "0.53.1",
