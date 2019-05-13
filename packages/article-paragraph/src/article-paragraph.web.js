@@ -4,7 +4,7 @@ import { Paragraph } from "./styles/responsive";
 import styles from "./styles";
 
 const BodyParagraph = ({ children }) => (
-  <Paragraph style={[styles.articleTextElement]}>{children}</Paragraph>
+  <Paragraph style={styles.articleTextElement}>{children}</Paragraph>
 );
 
 BodyParagraph.propTypes = {
