@@ -106,79 +106,87 @@ exports[`1. secondary one and four 1`] = `
     style={
       Object {
         "backgroundColor": "#272D34",
-        "flexDirection": "row",
-        "margin": 10,
-        "marginBottom": 10,
-      }
-    }
-  >
-    <TheSTLogo />
-  </View>
-  <View
-    style={
-      Object {
-        "borderBottomColor": "#4D4D4D",
-        "borderBottomWidth": 1,
-        "borderColor": "#DBDBDB",
-        "borderStyle": "solid",
-        "marginHorizontal": 10,
-      }
-    }
-  />
-  <View
-    style={
-      Object {
-        "backgroundColor": "#272D34",
-        "flex": 1,
       }
     }
   >
     <View
       style={
         Object {
+          "backgroundColor": "#272D34",
           "flexDirection": "row",
+          "margin": 10,
+          "marginBottom": 10,
         }
       }
     >
-      <View>
-        <TileN />
-      </View>
+      <TheSTLogo />
     </View>
-    <View>
-      <TileO />
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#4D4D4D",
+          "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
+          "borderStyle": "solid",
+          "marginHorizontal": 10,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "backgroundColor": "#272D34",
+          "flex": 1,
+        }
+      }
+    >
       <View
         style={
           Object {
-            "borderBottomWidth": 1,
-            "borderColor": "#DBDBDB",
-            "borderStyle": "solid",
-            "marginHorizontal": 10,
+            "flexDirection": "row",
           }
         }
-      />
-      <TileO />
-      <View
-        style={
-          Object {
-            "borderBottomWidth": 1,
-            "borderColor": "#DBDBDB",
-            "borderStyle": "solid",
-            "marginHorizontal": 10,
+      >
+        <View>
+          <TileN />
+        </View>
+      </View>
+      <View>
+        <TileO />
+        <View
+          style={
+            Object {
+              "borderBottomWidth": 1,
+              "borderColor": "#DBDBDB",
+              "borderStyle": "solid",
+              "marginHorizontal": 10,
+            }
           }
-        }
-      />
-      <TileO />
-      <View
-        style={
-          Object {
-            "borderBottomWidth": 1,
-            "borderColor": "#DBDBDB",
-            "borderStyle": "solid",
-            "marginHorizontal": 10,
+        />
+        <TileO />
+        <View
+          style={
+            Object {
+              "borderBottomWidth": 1,
+              "borderColor": "#DBDBDB",
+              "borderStyle": "solid",
+              "marginHorizontal": 10,
+            }
           }
-        }
-      />
-      <TileO />
+        />
+        <TileO />
+        <View
+          style={
+            Object {
+              "borderBottomWidth": 1,
+              "borderColor": "#DBDBDB",
+              "borderStyle": "solid",
+              "marginHorizontal": 10,
+            }
+          }
+        />
+        <TileO />
+      </View>
     </View>
   </View>
 </View>
@@ -196,79 +204,87 @@ exports[`1. secondary one and four 2`] = `
     style={
       Object {
         "backgroundColor": "#272D34",
-        "flexDirection": "row",
-        "margin": 10,
-        "marginBottom": 10,
-      }
-    }
-  >
-    <TheTimesLogo />
-  </View>
-  <View
-    style={
-      Object {
-        "borderBottomColor": "#4D4D4D",
-        "borderBottomWidth": 1,
-        "borderColor": "#DBDBDB",
-        "borderStyle": "solid",
-        "marginHorizontal": 10,
-      }
-    }
-  />
-  <View
-    style={
-      Object {
-        "backgroundColor": "#272D34",
-        "flex": 1,
       }
     }
   >
     <View
       style={
         Object {
+          "backgroundColor": "#272D34",
           "flexDirection": "row",
+          "margin": 10,
+          "marginBottom": 10,
         }
       }
     >
-      <View>
-        <TileN />
-      </View>
+      <TheTimesLogo />
     </View>
-    <View>
-      <TileO />
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#4D4D4D",
+          "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
+          "borderStyle": "solid",
+          "marginHorizontal": 10,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "backgroundColor": "#272D34",
+          "flex": 1,
+        }
+      }
+    >
       <View
         style={
           Object {
-            "borderBottomWidth": 1,
-            "borderColor": "#DBDBDB",
-            "borderStyle": "solid",
-            "marginHorizontal": 10,
+            "flexDirection": "row",
           }
         }
-      />
-      <TileO />
-      <View
-        style={
-          Object {
-            "borderBottomWidth": 1,
-            "borderColor": "#DBDBDB",
-            "borderStyle": "solid",
-            "marginHorizontal": 10,
+      >
+        <View>
+          <TileN />
+        </View>
+      </View>
+      <View>
+        <TileO />
+        <View
+          style={
+            Object {
+              "borderBottomWidth": 1,
+              "borderColor": "#DBDBDB",
+              "borderStyle": "solid",
+              "marginHorizontal": 10,
+            }
           }
-        }
-      />
-      <TileO />
-      <View
-        style={
-          Object {
-            "borderBottomWidth": 1,
-            "borderColor": "#DBDBDB",
-            "borderStyle": "solid",
-            "marginHorizontal": 10,
+        />
+        <TileO />
+        <View
+          style={
+            Object {
+              "borderBottomWidth": 1,
+              "borderColor": "#DBDBDB",
+              "borderStyle": "solid",
+              "marginHorizontal": 10,
+            }
           }
-        }
-      />
-      <TileO />
+        />
+        <TileO />
+        <View
+          style={
+            Object {
+              "borderBottomWidth": 1,
+              "borderColor": "#DBDBDB",
+              "borderStyle": "solid",
+              "marginHorizontal": 10,
+            }
+          }
+        />
+        <TileO />
+      </View>
     </View>
   </View>
 </View>
@@ -704,79 +720,87 @@ exports[`10. secondary one and four 1`] = `
     style={
       Object {
         "backgroundColor": "#272D34",
-        "flexDirection": "row",
-        "margin": 10,
-        "marginBottom": 10,
-      }
-    }
-  >
-    <TheTimesLogo />
-  </View>
-  <View
-    style={
-      Object {
-        "borderBottomColor": "#4D4D4D",
-        "borderBottomWidth": 1,
-        "borderColor": "#DBDBDB",
-        "borderStyle": "solid",
-        "marginHorizontal": 10,
-      }
-    }
-  />
-  <View
-    style={
-      Object {
-        "backgroundColor": "#272D34",
-        "flex": 1,
       }
     }
   >
     <View
       style={
         Object {
+          "backgroundColor": "#272D34",
           "flexDirection": "row",
+          "margin": 10,
+          "marginBottom": 10,
         }
       }
     >
-      <View>
-        <TileN />
-      </View>
+      <TheTimesLogo />
     </View>
-    <View>
-      <TileO />
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#4D4D4D",
+          "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
+          "borderStyle": "solid",
+          "marginHorizontal": 10,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "backgroundColor": "#272D34",
+          "flex": 1,
+        }
+      }
+    >
       <View
         style={
           Object {
-            "borderBottomWidth": 1,
-            "borderColor": "#DBDBDB",
-            "borderStyle": "solid",
-            "marginHorizontal": 10,
+            "flexDirection": "row",
           }
         }
-      />
-      <TileO />
-      <View
-        style={
-          Object {
-            "borderBottomWidth": 1,
-            "borderColor": "#DBDBDB",
-            "borderStyle": "solid",
-            "marginHorizontal": 10,
+      >
+        <View>
+          <TileN />
+        </View>
+      </View>
+      <View>
+        <TileO />
+        <View
+          style={
+            Object {
+              "borderBottomWidth": 1,
+              "borderColor": "#DBDBDB",
+              "borderStyle": "solid",
+              "marginHorizontal": 10,
+            }
           }
-        }
-      />
-      <TileO />
-      <View
-        style={
-          Object {
-            "borderBottomWidth": 1,
-            "borderColor": "#DBDBDB",
-            "borderStyle": "solid",
-            "marginHorizontal": 10,
+        />
+        <TileO />
+        <View
+          style={
+            Object {
+              "borderBottomWidth": 1,
+              "borderColor": "#DBDBDB",
+              "borderStyle": "solid",
+              "marginHorizontal": 10,
+            }
           }
-        }
-      />
-      <TileO />
+        />
+        <TileO />
+        <View
+          style={
+            Object {
+              "borderBottomWidth": 1,
+              "borderColor": "#DBDBDB",
+              "borderStyle": "solid",
+              "marginHorizontal": 10,
+            }
+          }
+        />
+        <TileO />
+      </View>
     </View>
   </View>
 </View>

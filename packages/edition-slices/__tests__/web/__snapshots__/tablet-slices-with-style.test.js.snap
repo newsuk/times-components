@@ -711,85 +711,94 @@ exports[`7. secondary one and four - medium 1`] = `
   width: 1366px;
   -ms-flex-item-align: center;
 }
+
+.IS13 {
+  background-color: rgba(39,45,52,1.00);
+}
 </style>
 
 <div
-  className="IS12 S1"
+  className="IS13 S1"
 >
   <div
-    className="IS11 S1"
+    className="IS12 S1"
   >
     <div
-      className="IS1"
-    >
-      <TheTimesLogo
-        height={40}
-        width={42}
-      />
-    </div>
-    <div
-      className="IS2 S1"
-    />
-    <div
-      className="IS10 S1"
+      className="IS11 S1"
     >
       <div
-        className="IS3 S1"
+        className="IS1"
       >
-        <div
-          className="S1"
-        >
-          <TileN
-            tileName="secondary"
-          />
-        </div>
+        <TheTimesLogo
+          height={40}
+          width={42}
+        />
       </div>
       <div
-        className="IS4"
+        className="IS2 S1"
       />
       <div
-        className="IS6 S1"
+        className="IS10 S1"
       >
         <div
-          className="S1"
+          className="IS3 S1"
         >
-          <TileO
-            tileName="support1"
-          />
+          <div
+            className="S1"
+          >
+            <TileN
+              breakpoint="wide"
+              tileName="secondary"
+            />
+          </div>
         </div>
         <div
-          className="IS5 S1"
+          className="IS4"
         />
         <div
-          className="S1"
+          className="IS6 S1"
         >
-          <TileO
-            tileName="support3"
+          <div
+            className="S1"
+          >
+            <TileO
+              tileName="support1"
+            />
+          </div>
+          <div
+            className="IS5 S1"
           />
-        </div>
-      </div>
-      <div
-        className="IS7"
-      />
-      <div
-        className="IS9 S1"
-      >
-        <div
-          className="S1"
-        >
-          <TileO
-            tileName="support2"
-          />
+          <div
+            className="S1"
+          >
+            <TileO
+              tileName="support3"
+            />
+          </div>
         </div>
         <div
-          className="IS8 S1"
+          className="IS7"
         />
         <div
-          className="S1"
+          className="IS9 S1"
         >
-          <TileO
-            tileName="support4"
+          <div
+            className="S1"
+          >
+            <TileO
+              tileName="support2"
+            />
+          </div>
+          <div
+            className="IS8 S1"
           />
+          <div
+            className="S1"
+          >
+            <TileO
+              tileName="support4"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -2406,85 +2415,94 @@ exports[`22. secondary one and four - wide 1`] = `
   width: 1366px;
   -ms-flex-item-align: center;
 }
+
+.IS13 {
+  background-color: rgba(39,45,52,1.00);
+}
 </style>
 
 <div
-  className="IS12 S1"
+  className="IS13 S1"
 >
   <div
-    className="IS11 S1"
+    className="IS12 S1"
   >
     <div
-      className="IS1"
-    >
-      <TheTimesLogo
-        height={40}
-        width={42}
-      />
-    </div>
-    <div
-      className="IS2 S1"
-    />
-    <div
-      className="IS10 S1"
+      className="IS11 S1"
     >
       <div
-        className="IS3 S1"
+        className="IS1"
       >
-        <div
-          className="S1"
-        >
-          <TileN
-            tileName="secondary"
-          />
-        </div>
+        <TheTimesLogo
+          height={40}
+          width={42}
+        />
       </div>
       <div
-        className="IS4"
+        className="IS2 S1"
       />
       <div
-        className="IS6 S1"
+        className="IS10 S1"
       >
         <div
-          className="S1"
+          className="IS3 S1"
         >
-          <TileO
-            tileName="support1"
-          />
+          <div
+            className="S1"
+          >
+            <TileN
+              breakpoint="wide"
+              tileName="secondary"
+            />
+          </div>
         </div>
         <div
-          className="IS5 S1"
+          className="IS4"
         />
         <div
-          className="S1"
+          className="IS6 S1"
         >
-          <TileO
-            tileName="support3"
+          <div
+            className="S1"
+          >
+            <TileO
+              tileName="support1"
+            />
+          </div>
+          <div
+            className="IS5 S1"
           />
-        </div>
-      </div>
-      <div
-        className="IS7"
-      />
-      <div
-        className="IS9 S1"
-      >
-        <div
-          className="S1"
-        >
-          <TileO
-            tileName="support2"
-          />
+          <div
+            className="S1"
+          >
+            <TileO
+              tileName="support3"
+            />
+          </div>
         </div>
         <div
-          className="IS8 S1"
+          className="IS7"
         />
         <div
-          className="S1"
+          className="IS9 S1"
         >
-          <TileO
-            tileName="support4"
+          <div
+            className="S1"
+          >
+            <TileO
+              tileName="support2"
+            />
+          </div>
+          <div
+            className="IS8 S1"
           />
+          <div
+            className="S1"
+          >
+            <TileO
+              tileName="support4"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -4101,85 +4119,94 @@ exports[`37. secondary one and four - huge 1`] = `
   width: 1366px;
   -ms-flex-item-align: center;
 }
+
+.IS13 {
+  background-color: rgba(39,45,52,1.00);
+}
 </style>
 
 <div
-  className="IS12 S1"
+  className="IS13 S1"
 >
   <div
-    className="IS11 S1"
+    className="IS12 S1"
   >
     <div
-      className="IS1"
-    >
-      <TheTimesLogo
-        height={40}
-        width={42}
-      />
-    </div>
-    <div
-      className="IS2 S1"
-    />
-    <div
-      className="IS10 S1"
+      className="IS11 S1"
     >
       <div
-        className="IS3 S1"
+        className="IS1"
       >
-        <div
-          className="S1"
-        >
-          <TileN
-            tileName="secondary"
-          />
-        </div>
+        <TheTimesLogo
+          height={40}
+          width={42}
+        />
       </div>
       <div
-        className="IS4"
+        className="IS2 S1"
       />
       <div
-        className="IS6 S1"
+        className="IS10 S1"
       >
         <div
-          className="S1"
+          className="IS3 S1"
         >
-          <TileO
-            tileName="support1"
-          />
+          <div
+            className="S1"
+          >
+            <TileN
+              breakpoint="wide"
+              tileName="secondary"
+            />
+          </div>
         </div>
         <div
-          className="IS5 S1"
+          className="IS4"
         />
         <div
-          className="S1"
+          className="IS6 S1"
         >
-          <TileO
-            tileName="support3"
+          <div
+            className="S1"
+          >
+            <TileO
+              tileName="support1"
+            />
+          </div>
+          <div
+            className="IS5 S1"
           />
-        </div>
-      </div>
-      <div
-        className="IS7"
-      />
-      <div
-        className="IS9 S1"
-      >
-        <div
-          className="S1"
-        >
-          <TileO
-            tileName="support2"
-          />
+          <div
+            className="S1"
+          >
+            <TileO
+              tileName="support3"
+            />
+          </div>
         </div>
         <div
-          className="IS8 S1"
+          className="IS7"
         />
         <div
-          className="S1"
+          className="IS9 S1"
         >
-          <TileO
-            tileName="support4"
+          <div
+            className="S1"
+          >
+            <TileO
+              tileName="support2"
+            />
+          </div>
+          <div
+            className="IS8 S1"
           />
+          <div
+            className="S1"
+          >
+            <TileO
+              tileName="support4"
+            />
+          </div>
         </div>
       </div>
     </div>

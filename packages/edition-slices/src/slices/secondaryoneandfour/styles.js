@@ -26,6 +26,12 @@ const mediumBreakpointStyles = {
   }
 };
 
+export const responsiveSliceWrapper = {
+  responsiveSliceWrapper: {
+    backgroundColor: colours.functional.darkSupplement
+  }
+};
+
 export default breakpoint =>
   breakpoint === editionBreakpoints.small
     ? smallBreakpointStyles

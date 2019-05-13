@@ -156,46 +156,49 @@ exports[`7. secondary one and four - medium 1`] = `
 <View>
   <View>
     <View>
-      <TheTimesLogo
-        height={40}
-        width={42}
-      />
-    </View>
-    <View />
-    <View>
       <View>
-        <View>
-          <TileN
-            tileName="secondary"
-          />
-        </View>
+        <TheTimesLogo
+          height={40}
+          width={42}
+        />
       </View>
       <View />
       <View>
         <View>
-          <TileO
-            tileName="support1"
-          />
+          <View>
+            <TileN
+              breakpoint="medium"
+              tileName="secondary"
+            />
+          </View>
         </View>
         <View />
         <View>
-          <TileO
-            tileName="support3"
-          />
-        </View>
-      </View>
-      <View />
-      <View>
-        <View>
-          <TileO
-            tileName="support2"
-          />
+          <View>
+            <TileO
+              tileName="support1"
+            />
+          </View>
+          <View />
+          <View>
+            <TileO
+              tileName="support3"
+            />
+          </View>
         </View>
         <View />
         <View>
-          <TileO
-            tileName="support4"
-          />
+          <View>
+            <TileO
+              tileName="support2"
+            />
+          </View>
+          <View />
+          <View>
+            <TileO
+              tileName="support4"
+            />
+          </View>
         </View>
       </View>
     </View>
@@ -613,46 +616,49 @@ exports[`22. secondary one and four - wide 1`] = `
 <View>
   <View>
     <View>
-      <TheTimesLogo
-        height={40}
-        width={42}
-      />
-    </View>
-    <View />
-    <View>
       <View>
-        <View>
-          <TileN
-            tileName="secondary"
-          />
-        </View>
+        <TheTimesLogo
+          height={40}
+          width={42}
+        />
       </View>
       <View />
       <View>
         <View>
-          <TileO
-            tileName="support1"
-          />
+          <View>
+            <TileN
+              breakpoint="wide"
+              tileName="secondary"
+            />
+          </View>
         </View>
         <View />
         <View>
-          <TileO
-            tileName="support3"
-          />
-        </View>
-      </View>
-      <View />
-      <View>
-        <View>
-          <TileO
-            tileName="support2"
-          />
+          <View>
+            <TileO
+              tileName="support1"
+            />
+          </View>
+          <View />
+          <View>
+            <TileO
+              tileName="support3"
+            />
+          </View>
         </View>
         <View />
         <View>
-          <TileO
-            tileName="support4"
-          />
+          <View>
+            <TileO
+              tileName="support2"
+            />
+          </View>
+          <View />
+          <View>
+            <TileO
+              tileName="support4"
+            />
+          </View>
         </View>
       </View>
     </View>
@@ -1085,46 +1091,49 @@ exports[`37. secondary one and four - huge 1`] = `
 <View>
   <View>
     <View>
-      <TheTimesLogo
-        height={40}
-        width={42}
-      />
-    </View>
-    <View />
-    <View>
       <View>
-        <View>
-          <TileN
-            tileName="secondary"
-          />
-        </View>
+        <TheTimesLogo
+          height={40}
+          width={42}
+        />
       </View>
       <View />
       <View>
         <View>
-          <TileO
-            tileName="support1"
-          />
+          <View>
+            <TileN
+              breakpoint="huge"
+              tileName="secondary"
+            />
+          </View>
         </View>
         <View />
         <View>
-          <TileO
-            tileName="support3"
-          />
-        </View>
-      </View>
-      <View />
-      <View>
-        <View>
-          <TileO
-            tileName="support2"
-          />
+          <View>
+            <TileO
+              tileName="support1"
+            />
+          </View>
+          <View />
+          <View>
+            <TileO
+              tileName="support3"
+            />
+          </View>
         </View>
         <View />
         <View>
-          <TileO
-            tileName="support4"
-          />
+          <View>
+            <TileO
+              tileName="support2"
+            />
+          </View>
+          <View />
+          <View>
+            <TileO
+              tileName="support4"
+            />
+          </View>
         </View>
       </View>
     </View>

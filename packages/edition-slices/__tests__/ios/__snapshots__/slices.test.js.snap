@@ -42,36 +42,39 @@ exports[`1. daily universal register 1`] = `
 exports[`1. secondary one and four 1`] = `
 <View>
   <View>
-    <TheSTLogo
-      height={40}
-      width={60}
-    />
-  </View>
-  <View />
-  <View>
+    <View>
+      <TheSTLogo
+        height={40}
+        width={60}
+      />
+    </View>
+    <View />
     <View>
       <View>
-        <TileN
-          tileName="secondary"
+        <View>
+          <TileN
+            breakpoint="small"
+            tileName="secondary"
+          />
+        </View>
+      </View>
+      <View>
+        <TileO
+          tileName="support1"
+        />
+        <View />
+        <TileO
+          tileName="support2"
+        />
+        <View />
+        <TileO
+          tileName="support3"
+        />
+        <View />
+        <TileO
+          tileName="support4"
         />
       </View>
-    </View>
-    <View>
-      <TileO
-        tileName="support1"
-      />
-      <View />
-      <TileO
-        tileName="support2"
-      />
-      <View />
-      <TileO
-        tileName="support3"
-      />
-      <View />
-      <TileO
-        tileName="support4"
-      />
     </View>
   </View>
 </View>
@@ -80,36 +83,39 @@ exports[`1. secondary one and four 1`] = `
 exports[`1. secondary one and four 2`] = `
 <View>
   <View>
-    <TheTimesLogo
-      height={40}
-      width={42}
-    />
-  </View>
-  <View />
-  <View>
+    <View>
+      <TheTimesLogo
+        height={40}
+        width={42}
+      />
+    </View>
+    <View />
     <View>
       <View>
-        <TileN
-          tileName="secondary"
+        <View>
+          <TileN
+            breakpoint="small"
+            tileName="secondary"
+          />
+        </View>
+      </View>
+      <View>
+        <TileO
+          tileName="support1"
+        />
+        <View />
+        <TileO
+          tileName="support2"
+        />
+        <View />
+        <TileO
+          tileName="support3"
+        />
+        <View />
+        <TileO
+          tileName="support4"
         />
       </View>
-    </View>
-    <View>
-      <TileO
-        tileName="support1"
-      />
-      <View />
-      <TileO
-        tileName="support2"
-      />
-      <View />
-      <TileO
-        tileName="support3"
-      />
-      <View />
-      <TileO
-        tileName="support4"
-      />
     </View>
   </View>
 </View>
@@ -321,36 +327,39 @@ Array [
 exports[`10. secondary one and four 1`] = `
 <View>
   <View>
-    <TheTimesLogo
-      height={40}
-      width={42}
-    />
-  </View>
-  <View />
-  <View>
+    <View>
+      <TheTimesLogo
+        height={40}
+        width={42}
+      />
+    </View>
+    <View />
     <View>
       <View>
-        <TileN
-          tileName="secondary"
+        <View>
+          <TileN
+            breakpoint="small"
+            tileName="secondary"
+          />
+        </View>
+      </View>
+      <View>
+        <TileO
+          tileName="support1"
+        />
+        <View />
+        <TileO
+          tileName="support2"
+        />
+        <View />
+        <TileO
+          tileName="support3"
+        />
+        <View />
+        <TileO
+          tileName="support4"
         />
       </View>
-    </View>
-    <View>
-      <TileO
-        tileName="support1"
-      />
-      <View />
-      <TileO
-        tileName="support2"
-      />
-      <View />
-      <TileO
-        tileName="support3"
-      />
-      <View />
-      <TileO
-        tileName="support4"
-      />
     </View>
   </View>
 </View>
