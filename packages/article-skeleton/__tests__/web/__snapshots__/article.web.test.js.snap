@@ -15,6 +15,8 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
       <div>
         <div>
           <SaveAndShareBar
+            articleHeadline="Some Headline"
+            articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
             articleUrl="https://url.io"
           />
         </div>
@@ -347,6 +349,8 @@ exports[`2. an article with no content 1`] = `
       <div>
         <div>
           <SaveAndShareBar
+            articleHeadline="Some Headline"
+            articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
             articleUrl="https://url.io"
           />
         </div>
@@ -431,6 +435,8 @@ exports[`3. an article with a nested markup in first paragraph displays no drop 
       <div>
         <div>
           <SaveAndShareBar
+            articleHeadline="Some Headline"
+            articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
             articleUrl="https://url.io"
           />
         </div>

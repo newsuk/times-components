@@ -51,7 +51,8 @@
     "prefmt": "prettier --write '**/*.{js,json}'",
     "fmt": "lerna run fmt",
     "cinstall": "./lib/custom_install.sh",
-    "clean": "git clean -xdf",
+    "clean": "yarn cache clean && git clean -xdf",
+    "clean:build": "watchman watch-del-all && rm -rf $TMPDIR/metro-* && rm -rf $TMPDIR/haste-*",
     "bundle": "lerna run bundle",
     "build:local": "yarn install && yarn bundle && yarn prepublishOnly",
     "postinstall": "yarn run fetch-fonts && lerna run postinstall && lerna run transpile",
@@ -170,7 +171,6 @@
     "@babel/preset-env": "^7.0.0",
     "@babel/runtime": "7.4.4",
     "@babel/runtime-corejs2": "7.4.4",
-    "aws-sdk": "2.238.1",
     "react-art": "16.8.3",
     "react-native": "0.59.8",
     "react-native-showcase-loader": "1.1.0"

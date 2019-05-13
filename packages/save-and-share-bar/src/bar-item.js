@@ -32,7 +32,7 @@ BarItem.propTypes = {
   children: PropTypes.node.isRequired,
   colour: PropTypes.string,
   hoverColour: PropTypes.string,
-  onPress: PropTypes.func.isRequired
+  onPress: PropTypes.func
 };
 
 export default BarItem;
