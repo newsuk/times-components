@@ -22,7 +22,7 @@
   NSURL *jsCodeLocation;
 
   bundleJSLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
-  packagerJSLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
+  packagerJSLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index.storybook" fallbackResource:nil];
 
   if (bundleJSLocation) {
     jsCodeLocation = bundleJSLocation;
