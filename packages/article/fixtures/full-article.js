@@ -1703,6 +1703,8 @@ const defaultRelatedArticleSlice = {
         publicationName: "TIMES",
         publishedTime: "2015-03-23T20:42:27.000Z",
         section: "",
+        sharingEnabled: true,
+        savingEnabled: true,
         shortHeadline: "Rise of centenarian drivers",
         summary105: [
           {
@@ -1897,6 +1899,8 @@ const defaultRelatedArticleSlice = {
         publicationName: "TIMES",
         publishedTime: "2018-04-06T23:01:00.000Z",
         section: "news",
+        sharingEnabled: true,
+        savingEnabled: true,
         shortHeadline: "YouTube ignored police pleas",
         summary105: [
           {
@@ -2062,6 +2066,8 @@ const makeDefaultConfig = ({
   standfirst = defaultStandfirst,
   template = defaultTemplate,
   topics = defaultTopics,
+  savingEnabled = true,
+  sharingEnabled = true,
   url = defaultUrl
 } = {}) => ({
   author,
@@ -2077,6 +2083,8 @@ const makeDefaultConfig = ({
   leadAsset,
   relatedArticleSlice,
   section,
+  sharingEnabled,
+  savingEnabled,
   shortHeadline,
   shortIdentifier,
   slug,
@@ -2220,6 +2228,8 @@ export const testFixture = {
           publishedTime: "2015-03-23T19:39:39.000Z",
           shortHeadline: "Headline",
           shortIdentifier: "2k629tpvh",
+          sharingEnabled: true,
+          savingEnabled: true,
           slug: "this-is-slug",
           summary105: [],
           summary125: [],
@@ -2233,6 +2243,8 @@ export const testFixture = {
     ]
   },
   section: "Some Section",
+  sharingEnabled: true,
+  savingEnabled: true,
   shortHeadline: "Some Short Headline",
   shortIdentifier: "2k629tpvh",
   slug: "this-is-slug",
