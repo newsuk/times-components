@@ -7,8 +7,8 @@ import {
   IconTwitter,
   IconCopyLink
 } from "@times-components/icons";
-import withTrackEvents from "./tracking/with-track-events";
 import SaveStar from "@times-components/save-star-web";
+import withTrackEvents from "./tracking/with-track-events";
 import SharingApiUrls from "./constants";
 import styles from "./styles";
 import BarItem from "./bar-item";
@@ -26,7 +26,14 @@ class SaveAndShareBar extends Component {
   }
 
   render() {
-    const { articleId, articleUrl, onShareOnEmail, saveApi } = this.props;
+    const {
+      articleId,
+      articleUrl,
+      onShareOnTwitter,
+      onShareOnFB,
+      onShareOnEmail,
+      saveApi
+    } = this.props;
     return (
       <View style={styles.container}>
         <View style={styles.rowItem}>
@@ -73,7 +80,12 @@ class SaveAndShareBar extends Component {
           </BarItem>
         </View>
         <View style={styles.rowItem}>
-          <SaveStar articleId={articleId} saveApi={saveApi} />
+          <SaveStar
+            colour={styles.svgIcon.save.strokeColour}
+            hoverColour={styles.svgIcon.hoverFillColour}
+            articleId={articleId}
+            saveApi={saveApi}
+          />
         </View>
       </View>
     );
@@ -86,7 +98,6 @@ SaveAndShareBar.propTypes = {
   articleUrl: PropTypes.string.isRequired,
   articleHeadline: PropTypes.string.isRequired,
   onCopyLink: PropTypes.func.isRequired,
-  onSaveToMyArticles: PropTypes.func.isRequired,
   onShareOnEmail: PropTypes.func.isRequired,
   onShareOnFB: PropTypes.func,
   onShareOnTwitter: PropTypes.func,
