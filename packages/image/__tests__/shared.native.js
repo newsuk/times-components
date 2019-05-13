@@ -78,6 +78,28 @@ export default () => {
       }
     },
     {
+      name: "componentWillUnmount cancels animation timer",
+      test: () => {
+        jest.useFakeTimers();
+
+        const testRenderer = TestRenderer.create(<Image {...props} />);
+
+        testRenderer.root.children[0].props.onLayout(
+          getLayoutEventForWidth(700)
+        );
+
+        testRenderer.root
+          .findAll(node => node.type === ReactNativeImage)[0]
+          .props.onLoad();
+
+        testRenderer.getInstance().componentWillUnmount();
+
+        jest.runAllTimers();
+
+        expect(testRenderer).toMatchSnapshot();
+      }
+    },
+    {
       name: "data image url without a query string",
       test: () => {
         const dataUri =

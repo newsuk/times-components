@@ -42,6 +42,10 @@ class TimesImage extends Component {
     this.fadeAnim = new Animated.Value(1);
   }
 
+  componentWillUnmount() {
+    clearTimeout(this.fadeAnimTimeout);
+  }
+
   onImageLayout(evt) {
     const { onLayout } = this.props;
 
