@@ -17,6 +17,7 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
   const {
     articleId,
     debounceTimeMs,
+    getCookieValue,
     makeArticleUrl,
     makeTopicUrl,
     mapArticleToAdConfig,
@@ -42,6 +43,7 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
             ContextProviderWithDefaults,
             {
               value: {
+                getCookieValue,
                 makeArticleUrl,
                 makeTopicUrl,
                 theme: {
