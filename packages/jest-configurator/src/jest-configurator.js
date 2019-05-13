@@ -4,11 +4,25 @@ import mockRNComponent from "./react-native-mock-components";
 
 export const mockReactNativeComponent = mockRNComponent;
 
+const findHasteImpl = () => {
+  let hasteImplModulePath;
+
+  findNodeModules().some(nodeModulesPath => {
+    const hastePath = `${nodeModulesPath}/react-native/jest/hasteImpl.js`;
+    try {
+      hasteImplModulePath = require.resolve(hastePath);
+      return true;
+    } catch {
+      return false;
+    }
+  });
+  return hasteImplModulePath;
+}
 const nativeSpecific = platform => ({
   haste: {
     defaultPlatform: platform,
     platforms: [platform],
-    hasteImplModulePath: null,
+    hasteImplModulePath: findHasteImpl(),
     providesModuleNodeModules: ["react-native"]
   }
 });
