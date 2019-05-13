@@ -8,11 +8,11 @@ import {
   IconCopyLink,
   IconSaveBookmark
 } from "@times-components/icons";
+import withTrackEvents from "./tracking/with-track-events";
 import SharingApiUrls from "./constants";
 import styles from "./styles";
 import BarItem from "./bar-item";
 
-/* eslint-disable jsx-a11y/anchor-is-valid */
 class SaveAndShareBar extends Component {
   constructor(props) {
     super(props);
@@ -26,7 +26,13 @@ class SaveAndShareBar extends Component {
   }
 
   render() {
-    const { articleUrl, onSaveToMyArticles, onShareOnEmail } = this.props;
+    const {
+      articleUrl,
+      onSaveToMyArticles,
+      onShareOnEmail,
+      onShareOnFB,
+      onShareOnTwitter
+    } = this.props;
     return (
       <View style={styles.container}>
         <View style={styles.rowItem}>
@@ -39,6 +45,7 @@ class SaveAndShareBar extends Component {
             />
           </BarItem>
           <BarItem
+            onPress={onShareOnTwitter}
             target="_blank"
             url={`${SharingApiUrls.twitter}?text=${articleUrl}`}
           >
@@ -49,6 +56,7 @@ class SaveAndShareBar extends Component {
             />
           </BarItem>
           <BarItem
+            onPress={onShareOnFB}
             target="_blank"
             url={`${SharingApiUrls.facebook}?u=${articleUrl}`}
           >
@@ -89,11 +97,22 @@ class SaveAndShareBar extends Component {
   }
 }
 
+/* eslint-disable react/no-unused-prop-types */
 SaveAndShareBar.propTypes = {
+  articleId: PropTypes.string.isRequired,
   articleUrl: PropTypes.string.isRequired,
+  articleHeadline: PropTypes.string.isRequired,
   onCopyLink: PropTypes.func.isRequired,
   onSaveToMyArticles: PropTypes.func.isRequired,
-  onShareOnEmail: PropTypes.func.isRequired
+  onShareOnEmail: PropTypes.func.isRequired,
+  onShareOnFB: PropTypes.func,
+  onShareOnTwitter: PropTypes.func
 };
 
-export default SaveAndShareBar;
+/* Serves as an indication when share links are clicked for tracking and analytics */
+SaveAndShareBar.defaultProps = {
+  onShareOnFB: () => {},
+  onShareOnTwitter: () => {}
+};
+
+export default withTrackEvents(SaveAndShareBar);

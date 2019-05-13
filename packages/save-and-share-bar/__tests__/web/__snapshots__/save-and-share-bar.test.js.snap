@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. save and share bar renders correctly 1`] = `
+exports[`save and share bar component save and share bar renders correctly 1`] = `
 <div
   style={
     Object {
@@ -64,7 +64,7 @@ exports[`1. save and share bar renders correctly 1`] = `
     </BarItem>
     <BarItem
       target="_blank"
-      url="https://twitter.com/intent/tweet?text="
+      url="https://twitter.com/intent/tweet?text=https://www.thetimes.co.uk/"
     >
       <IconTwitter
         fillColour="currentColor"
@@ -74,7 +74,7 @@ exports[`1. save and share bar renders correctly 1`] = `
     </BarItem>
     <BarItem
       target="_blank"
-      url="https://www.facebook.com/sharer/sharer.php?u="
+      url="https://www.facebook.com/sharer/sharer.php?u=https://www.thetimes.co.uk/"
     >
       <IconFacebook
         fillColour="currentColor"
