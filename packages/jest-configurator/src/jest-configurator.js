@@ -4,12 +4,12 @@ import mockRNComponent from "./react-native-mock-components";
 
 export const mockReactNativeComponent = mockRNComponent;
 
-const nativeSpecific = (platform, rootDir) => ({
+const nativeSpecific = platform => ({
   haste: {
     defaultPlatform: platform,
     platforms: [platform],
-    hasteImplModulePath: require.resolve(`${rootDir}/node_modules/react-native/jest/hasteImpl.js`),
-    providesModuleNodeModules: ['react-native'],
+    hasteImplModulePath: null,
+    providesModuleNodeModules: ["react-native"]
   }
 });
 
@@ -38,16 +38,16 @@ const platformIndependentSpecific = {
   }
 };
 
-const platformCode = (platform, rootDir) => {
+const platformCode = platform => {
   switch (platform) {
     case "web":
       return webSpecific;
     case "node":
       return nodeSpecific;
     case "ios":
-      return nativeSpecific("ios", rootDir);
+      return nativeSpecific("ios");
     case "android":
-      return nativeSpecific("android", rootDir);
+      return nativeSpecific("android");
     default:
       return platformIndependentSpecific;
   }
@@ -65,7 +65,7 @@ export default (platform, cwd, options = {}) => {
   const platformPath = platform ? `${platform}/` : "";
 
   const config = {
-    ...platformCode(platform, rootDir),
+    ...platformCode(platform),
     collectCoverageFrom: [path.join(rootDir, module)],
     coverageDirectory: path.join(module, "coverage", platformPath),
     coveragePathIgnorePatterns: coverageIgnoreGlobs,
