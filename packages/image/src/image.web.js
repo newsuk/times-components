@@ -85,19 +85,25 @@ class TimesImage extends Component {
       lowResSize,
       style,
       uri,
-      onLayout
+      onLayout,
+      rounded
     } = this.props;
     const { imageIsLoaded } = this.state;
     const url = addMissingProtocol(uri);
 
     return (
-      <View onLayout={onLayout} style={style}>
+      <View
+        onLayout={onLayout}
+        style={[style, rounded && { borderRadius: "50%", overflow: "hidden" }]}
+      >
         <div
           style={{ ...styles.wrapper, paddingBottom: `${100 / aspectRatio}%` }}
         >
           {this.highResImage({ highResSize, lowResSize, url })}
           {this.lowResImage({ lowResSize, url })}
-          {imageIsLoaded ? null : <Placeholder />}
+          {imageIsLoaded ? null : (
+            <Placeholder borderRadius={rounded ? "50%" : 0} />
+          )}
         </div>
       </View>
     );

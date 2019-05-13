@@ -87,16 +87,28 @@ exports[`1. landscape default modal 1`] = `
               }
             }
           >
-            <Image
+            <View
               style={
                 Object {
+                  "borderRadius": 0,
                   "height": "100%",
+                  "overflow": "hidden",
                   "position": "absolute",
-                  "resizeMode": "contain",
                   "width": "100%",
                 }
               }
-            />
+            >
+              <Image
+                style={
+                  Object {
+                    "height": "100%",
+                    "position": "absolute",
+                    "resizeMode": "contain",
+                    "width": "100%",
+                  }
+                }
+              />
+            </View>
             <View
               style={
                 Object {
@@ -190,16 +202,28 @@ exports[`1. landscape default modal 1`] = `
         }
       }
     >
-      <Image
+      <View
         style={
           Object {
+            "borderRadius": 0,
             "height": "100%",
+            "overflow": "hidden",
             "position": "absolute",
-            "resizeMode": "contain",
             "width": "100%",
           }
         }
-      />
+      >
+        <Image
+          style={
+            Object {
+              "height": "100%",
+              "position": "absolute",
+              "resizeMode": "contain",
+              "width": "100%",
+            }
+          }
+        />
+      </View>
       <View
         style={
           Object {
@@ -319,16 +343,28 @@ exports[`2. portrait default modal 1`] = `
               }
             }
           >
-            <Image
+            <View
               style={
                 Object {
+                  "borderRadius": 0,
                   "height": "100%",
+                  "overflow": "hidden",
                   "position": "absolute",
-                  "resizeMode": "contain",
                   "width": "100%",
                 }
               }
-            />
+            >
+              <Image
+                style={
+                  Object {
+                    "height": "100%",
+                    "position": "absolute",
+                    "resizeMode": "contain",
+                    "width": "100%",
+                  }
+                }
+              />
+            </View>
             <View
               style={
                 Object {
@@ -422,16 +458,28 @@ exports[`2. portrait default modal 1`] = `
         }
       }
     >
-      <Image
+      <View
         style={
           Object {
+            "borderRadius": 0,
             "height": "100%",
+            "overflow": "hidden",
             "position": "absolute",
-            "resizeMode": "contain",
             "width": "100%",
           }
         }
-      />
+      >
+        <Image
+          style={
+            Object {
+              "height": "100%",
+              "position": "absolute",
+              "resizeMode": "contain",
+              "width": "100%",
+            }
+          }
+        />
+      </View>
       <View
         style={
           Object {
@@ -551,21 +599,13 @@ exports[`3. tablet landscape default modal 1`] = `
               }
             }
           >
-            <Image
-              style={
-                Object {
-                  "height": "100%",
-                  "position": "absolute",
-                  "resizeMode": "contain",
-                  "width": "100%",
-                }
-              }
-            />
             <View
               style={
                 Object {
+                  "borderRadius": 0,
                   "height": "100%",
-                  "opacity": 1,
+                  "overflow": "hidden",
+                  "position": "absolute",
                   "width": "100%",
                 }
               }
@@ -580,6 +620,38 @@ exports[`3. tablet landscape default modal 1`] = `
                   }
                 }
               />
+            </View>
+            <View
+              style={
+                Object {
+                  "height": "100%",
+                  "opacity": 1,
+                  "width": "100%",
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "borderRadius": 0,
+                    "height": "100%",
+                    "overflow": "hidden",
+                    "position": "absolute",
+                    "width": "100%",
+                  }
+                }
+              >
+                <Image
+                  style={
+                    Object {
+                      "height": "100%",
+                      "position": "absolute",
+                      "resizeMode": "contain",
+                      "width": "100%",
+                    }
+                  }
+                />
+              </View>
             </View>
           </View>
         </Gestures>
@@ -647,16 +719,28 @@ exports[`3. tablet landscape default modal 1`] = `
         }
       }
     >
-      <Image
+      <View
         style={
           Object {
+            "borderRadius": 0,
             "height": "100%",
+            "overflow": "hidden",
             "position": "absolute",
-            "resizeMode": "contain",
             "width": "100%",
           }
         }
-      />
+      >
+        <Image
+          style={
+            Object {
+              "height": "100%",
+              "position": "absolute",
+              "resizeMode": "contain",
+              "width": "100%",
+            }
+          }
+        />
+      </View>
       <View
         style={
           Object {
@@ -776,21 +860,13 @@ exports[`4. tablet portrait default modal 1`] = `
               }
             }
           >
-            <Image
-              style={
-                Object {
-                  "height": "100%",
-                  "position": "absolute",
-                  "resizeMode": "contain",
-                  "width": "100%",
-                }
-              }
-            />
             <View
               style={
                 Object {
+                  "borderRadius": 0,
                   "height": "100%",
-                  "opacity": 1,
+                  "overflow": "hidden",
+                  "position": "absolute",
                   "width": "100%",
                 }
               }
@@ -805,6 +881,38 @@ exports[`4. tablet portrait default modal 1`] = `
                   }
                 }
               />
+            </View>
+            <View
+              style={
+                Object {
+                  "height": "100%",
+                  "opacity": 1,
+                  "width": "100%",
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "borderRadius": 0,
+                    "height": "100%",
+                    "overflow": "hidden",
+                    "position": "absolute",
+                    "width": "100%",
+                  }
+                }
+              >
+                <Image
+                  style={
+                    Object {
+                      "height": "100%",
+                      "position": "absolute",
+                      "resizeMode": "contain",
+                      "width": "100%",
+                    }
+                  }
+                />
+              </View>
             </View>
           </View>
         </Gestures>
@@ -872,16 +980,28 @@ exports[`4. tablet portrait default modal 1`] = `
         }
       }
     >
-      <Image
+      <View
         style={
           Object {
+            "borderRadius": 0,
             "height": "100%",
+            "overflow": "hidden",
             "position": "absolute",
-            "resizeMode": "contain",
             "width": "100%",
           }
         }
-      />
+      >
+        <Image
+          style={
+            Object {
+              "height": "100%",
+              "position": "absolute",
+              "resizeMode": "contain",
+              "width": "100%",
+            }
+          }
+        />
+      </View>
       <View
         style={
           Object {

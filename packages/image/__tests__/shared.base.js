@@ -43,6 +43,13 @@ export default (renderComponent, platformTests = []) => {
         expect(output).toMatchSnapshot();
       }
     },
+    {
+      name: "rounded image",
+      test: () => {
+        const testRenderer = renderComponent(<Image {...props} rounded />);
+        expect(testRenderer).toMatchSnapshot();
+      }
+    },
     ...platformTests
   ];
 

@@ -152,15 +152,6 @@ export default () => {
       }
     },
     {
-      name: "image with borderRadius",
-      test: () => {
-        const testInstance = TestRenderer.create(
-          <Image {...props} borderRadius={10} />
-        );
-        expect(testInstance).toMatchSnapshot();
-      }
-    },
-    {
       name: "uses lowResSize image as placeholder if passed",
       test: () => {
         const testInstance = TestRenderer.create(

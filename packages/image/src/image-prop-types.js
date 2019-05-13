@@ -9,6 +9,7 @@ export const propTypes = {
   highResSize: PropTypes.number,
   lowResSize: PropTypes.number,
   onLayout: PropTypes.func,
+  rounded: PropTypes.bool,
   uri: PropTypes.string
 };
 

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Animated, View, Image } from "react-native";
-import PropTypes from "prop-types";
 import memoize from "lodash.memoize";
 import {
   addMissingProtocol,
@@ -77,7 +76,6 @@ class TimesImage extends Component {
       aspectRatio,
       highResSize,
       lowResSize,
-      borderRadius,
       style,
       uri,
       rounded,
@@ -89,7 +87,8 @@ class TimesImage extends Component {
     const lowResUri = lowResSize
       ? getUriAtRes(uri, Math.min(lowResSize, renderedRes))
       : null;
-    const fadeStyle = { width: "100%", height: "100%", opacity: this.fadeAnim };
+    const radius = width ? width / 2 : 9999;
+    const borderRadius = rounded ? radius : 0;
 
     return (
       <View
@@ -97,28 +96,30 @@ class TimesImage extends Component {
         onLayout={this.onImageLayout}
         style={[styles.imageContainer, style]}
       >
-        <LazyLoadingImage
-          {...defaultImageProps}
-          borderRadius={rounded ? renderedRes / 2 : borderRadius}
-          fadeDuration={0}
-          onLoad={this.handleLoad}
-          source={srcUri && renderedRes ? { uri: srcUri } : null}
-          style={styles.image}
-        />
+        <View style={[styles.roundContainer, { borderRadius }]}>
+          <LazyLoadingImage
+            {...defaultImageProps}
+            fadeDuration={0}
+            onLoad={this.handleLoad}
+            source={srcUri && renderedRes ? { uri: srcUri } : null}
+            style={styles.image}
+          />
+        </View>
         {isLoaded ? null : (
-          <Animated.View style={fadeStyle}>
+          <Animated.View
+            style={{ width: "100%", height: "100%", opacity: this.fadeAnim }}
+          >
             {lowResSize ? (
-              <Image
-                {...defaultImageProps}
-                borderRadius={rounded ? renderedRes / 2 : borderRadius}
-                fadeDuration={0}
-                source={{
-                  uri: lowResUri
-                }}
-                style={styles.image}
-              />
+              <View style={[styles.roundContainer, { borderRadius }]}>
+                <Image
+                  {...defaultImageProps}
+                  fadeDuration={0}
+                  source={{ uri: lowResUri }}
+                  style={styles.image}
+                />
+              </View>
             ) : (
-              <Placeholder />
+              <Placeholder borderRadius={borderRadius} />
             )}
           </Animated.View>
         )}
@@ -128,9 +129,6 @@ class TimesImage extends Component {
 }
 
 TimesImage.defaultProps = defaultProps;
-TimesImage.propTypes = {
-  ...propTypes,
-  rounded: PropTypes.bool
-};
+TimesImage.propTypes = propTypes;
 
 export default TimesImage;
