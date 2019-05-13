@@ -7,7 +7,7 @@ import { ArticleSummaryHeadline } from "@times-components/article-summary";
 import { withPuzzleTileTracking } from "../shared";
 import styles from "./styles";
 
-const { puzzleContainer, header, headline, imageContainer, link } = styles;
+const { puzzleContainer, header, headline, imageContainer } = styles;
 
 const TileAK = ({ id, image, onPress, title, url }) => (
   <Link
