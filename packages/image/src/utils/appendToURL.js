@@ -1,5 +1,10 @@
 /* eslint-env browser */
 
+const appendUriString = (uriString, key, value) => {
+  const separator = uriString.includes("?") ? "&" : "?";
+  return `${uriString}${separator}${key}=${value}`;
+};
+
 export default (uriString, key, value) => {
   if (!uriString || !key || !value) {
     return uriString;
@@ -10,8 +15,7 @@ export default (uriString, key, value) => {
   }
 
   if (typeof URL === "undefined") {
-    const separator = uriString.includes("?") ? "&" : "?";
-    return `${uriString}${separator}${key}=${value}`;
+    return appendUriString(uriString, key, value);
   }
 
   let url;
@@ -19,7 +23,7 @@ export default (uriString, key, value) => {
   try {
     url = new URL(uriString);
   } catch (e) {
-    return uriString;
+    return appendUriString(uriString, key, value);
   }
 
   if (url.search) {

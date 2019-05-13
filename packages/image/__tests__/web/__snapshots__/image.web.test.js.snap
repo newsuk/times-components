@@ -138,7 +138,7 @@ exports[`4. an invalid uri 1`] = `
   <div>
     <img
       alt=""
-      src="not-valid"
+      src="not-valid?resize=1400"
     />
     <div>
       <Svg
