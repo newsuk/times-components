@@ -4,29 +4,21 @@ import { View } from "react-native";
 import styles from "../styles/index";
 import T from "../logo/t";
 
-function Placeholder({ dimensions }) {
-  if (!dimensions) {
-    return null;
-  }
-
-  const { height, width } = dimensions;
-
+function Placeholder({ borderRadius }) {
   return (
-    <View height={height} style={styles.placeholder} width={width}>
-      <T width={width} />
+    <View
+      height="100%"
+      style={[styles.placeholder, borderRadius && { borderRadius }]}
+      width="100%"
+    >
+      <T />
     </View>
   );
 }
 
 Placeholder.propTypes = {
-  dimensions: PropTypes.shape({
-    height: PropTypes.number.isRequired,
-    width: PropTypes.number.isRequired
-  })
-};
-
-Placeholder.defaultProps = {
-  dimensions: null
+  borderRadius: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
+    .isRequired
 };
 
 export default Placeholder;

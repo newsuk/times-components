@@ -85,6 +85,12 @@ const styles = {
   topSafeView: {
     backgroundColor: colours.functional.modalBackground,
     flex: 0
+  },
+  roundContainer: {
+    width: "100%",
+    height: "100%",
+    position: "absolute",
+    overflow: "hidden"
   }
 };
 

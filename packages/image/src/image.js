@@ -1,8 +1,6 @@
-import React, { Component, Fragment } from "react";
-import { View, Image } from "react-native";
-import PropTypes from "prop-types";
+import React, { Component } from "react";
+import { Animated, View, Image } from "react-native";
 import memoize from "lodash.memoize";
-import { contain } from "intrinsic-scale";
 import {
   addMissingProtocol,
   normaliseWidthForAssetRequestCache,
@@ -13,6 +11,8 @@ import appendToUrl from "./utils";
 import { defaultProps, propTypes } from "./image-prop-types";
 import Placeholder from "./placeholder";
 import styles from "./styles";
+
+const FADE_ANIM_DURATION = 300;
 
 const getUriAtRes = memoize(
   (uri, resInPoints) => {
@@ -33,36 +33,42 @@ class TimesImage extends Component {
     super(props);
 
     this.state = {
-      dimensions: null,
-      isLoaded: false
+      isLoaded: false,
+      width: null
     };
     this.handleLoad = this.handleLoad.bind(this);
     this.onImageLayout = this.onImageLayout.bind(this);
+    this.fadeAnim = new Animated.Value(1);
+  }
+
+  componentWillUnmount() {
+    clearTimeout(this.fadeAnimTimeout);
   }
 
   onImageLayout(evt) {
-    const { aspectRatio, onImageLayout, onLayout } = this.props;
-    const { layout } = evt.nativeEvent;
-    const { height, width } = contain(
-      layout.width,
-      layout.height,
-      layout.width,
-      aspectRatio ? layout.width / aspectRatio : layout.height
-    );
+    const { onLayout } = this.props;
 
-    this.setState({ dimensions: { height, width } });
+    this.setState({
+      width: evt.nativeEvent.layout.width
+    });
 
     if (onLayout) {
       onLayout(evt);
     }
-
-    if (onImageLayout) {
-      onImageLayout({ height, width });
-    }
   }
 
   handleLoad() {
-    this.setState({ isLoaded: true });
+    clearTimeout(this.fadeAnimTimeout);
+
+    Animated.timing(this.fadeAnim, {
+      toValue: 0,
+      duration: FADE_ANIM_DURATION,
+      useNativeDriver: true
+    }).start();
+
+    this.fadeAnimTimeout = setTimeout(() => {
+      this.setState({ isLoaded: true });
+    }, FADE_ANIM_DURATION);
   }
 
   render() {
@@ -70,15 +76,19 @@ class TimesImage extends Component {
       aspectRatio,
       highResSize,
       lowResSize,
-      borderRadius,
       style,
       uri,
       rounded,
       ...defaultImageProps
     } = this.props;
-    const { isLoaded, dimensions } = this.state;
-    const renderedRes = highResSize || (dimensions ? dimensions.width : null);
+    const { isLoaded, width } = this.state;
+    const renderedRes = highResSize || width;
     const srcUri = getUriAtRes(uri, renderedRes);
+    const lowResUri = lowResSize
+      ? getUriAtRes(uri, Math.min(lowResSize, renderedRes))
+      : null;
+    const radius = width ? width / 2 : 9999;
+    const borderRadius = rounded ? radius : 0;
 
     return (
       <View
@@ -86,36 +96,39 @@ class TimesImage extends Component {
         onLayout={this.onImageLayout}
         style={[styles.imageContainer, style]}
       >
+        <View style={[styles.roundContainer, { borderRadius }]}>
+          <LazyLoadingImage
+            {...defaultImageProps}
+            fadeDuration={0}
+            onLoad={this.handleLoad}
+            source={srcUri && renderedRes ? { uri: srcUri } : null}
+            style={styles.image}
+          />
+        </View>
         {isLoaded ? null : (
-          <Fragment>
-            <Placeholder dimensions={dimensions} />
+          <Animated.View
+            style={{ width: "100%", height: "100%", opacity: this.fadeAnim }}
+          >
             {lowResSize ? (
-              <Image
-                {...defaultImageProps}
-                borderRadius={rounded ? renderedRes / 2 : borderRadius}
-                source={{ uri: getUriAtRes(uri, lowResSize) }}
-                style={styles.image}
-              />
-            ) : null}
-          </Fragment>
+              <View style={[styles.roundContainer, { borderRadius }]}>
+                <Image
+                  {...defaultImageProps}
+                  fadeDuration={0}
+                  source={{ uri: lowResUri }}
+                  style={styles.image}
+                />
+              </View>
+            ) : (
+              <Placeholder borderRadius={borderRadius} />
+            )}
+          </Animated.View>
         )}
-        <LazyLoadingImage
-          {...defaultImageProps}
-          borderRadius={rounded ? renderedRes / 2 : borderRadius}
-          onLoad={this.handleLoad}
-          source={srcUri && renderedRes ? { uri: srcUri } : null}
-          style={styles.image}
-        />
       </View>
     );
   }
 }
 
 TimesImage.defaultProps = defaultProps;
-TimesImage.propTypes = {
-  ...propTypes,
-  onImageLayout: PropTypes.func,
-  rounded: PropTypes.bool
-};
+TimesImage.propTypes = propTypes;
 
 export default TimesImage;
