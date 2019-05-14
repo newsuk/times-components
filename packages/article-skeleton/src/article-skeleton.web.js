@@ -57,10 +57,12 @@ class ArticleSkeleton extends Component {
   }
 
   handleScroll() {
-    const offsetTop = this.sticky.getBoundingClientRect().top;
-    const isSticky = isStickyAllowed(breakpoints.huge) && offsetTop <= 1;
+    if (this.stick) {
+      const offsetTop = this.sticky.getBoundingClientRect().top;
+      const isSticky = isStickyAllowed(breakpoints.huge) && offsetTop <= 1;
 
-    this.setState({ isSticky });
+      this.setState({ isSticky });
+    }
   }
 
   renderSaveAndShareBar({
