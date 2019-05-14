@@ -1,6 +1,6 @@
 {
   "name": "@times-components/text-flow",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A component for flowing text around generic inline elements.",
   "main": "dist/text-flow",
   "dev": "src/text-flow",
@@ -38,9 +38,9 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.8.11",
-    "@times-components/jest-configurator": "2.5.8",
-    "@times-components/storybook": "4.0.5",
-    "@times-components/webpack-configurator": "2.0.19",
+    "@times-components/jest-configurator": "2.5.9",
+    "@times-components/storybook": "4.0.6",
+    "@times-components/webpack-configurator": "2.0.20",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.5",
