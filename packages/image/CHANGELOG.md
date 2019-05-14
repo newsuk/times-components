@@ -3,6 +3,56 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0](https://github.com/newsuk/times-components/compare/@times-components/image@5.3.30...@times-components/image@6.0.0) (2019-05-14)
+
+
+* BREAKING CHANGE fix: image performance (#1927) ([5d366fa](https://github.com/newsuk/times-components/commit/5d366fa)), closes [#1927](https://github.com/newsuk/times-components/issues/1927)
+
+
+### BREAKING CHANGES
+
+* fix: don't hide placeholders once image is loaded to prevent fade
+
+* fix: improve performance of placeholder component
+
+* fix: don't show placeholder when low res image is used as placeholder
+* chore: remove onImageLayout and use native layout
+
+* chore: use accurate aspect ratios in tests
+
+* chore: remove unnecessary contrain module
+
+* fix: do not show low res placeholder if same size as high res image
+
+* fix: don't require layout to show T logo on native
+
+* fix: only show low res placeholder if different to high res
+
+* fix: restore hiding placeholder onload. Disable android fading
+
+* fix: do not require onlayout to render images on web
+
+* feat: use screen width as high res size on modal images to improve time to load
+
+* feat: add cross platform fade back
+
+* fix: always show low res placeholder as now necessary for the e fade
+
+* chore: snaps
+
+* fix: do not fade in the t image
+
+* fix: more resiliant hiding of placeholders once image has loaded
+
+* fix: clear timer on unmounted images
+* fix: remove unused borderRadius & fix rounded prop with placeholder
+
+* chore: snaps
+
+
+
+
+
 ## [5.3.30](https://github.com/newsuk/times-components/compare/@times-components/image@5.3.29...@times-components/image@5.3.30) (2019-05-14)
 
 **Note:** Version bump only for package @times-components/image
