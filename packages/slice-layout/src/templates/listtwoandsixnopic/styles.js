@@ -41,6 +41,7 @@ const wideBreakpointStyles = {
   container: {
     flex: 1,
     flexDirection: "row",
+    marginHorizontal: spacing(2),
     marginVertical: spacing(1)
   },
 
