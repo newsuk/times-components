@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-extras",
-  "version": "0.1.28",
+  "version": "0.1.29",
   "description": "Extra information components at the bottom of the articles, such as topics, related articles and comments",
   "main": "dist/index",
   "dev": "src/index",
@@ -61,7 +61,7 @@
     "@times-components/button": "2.3.71",
     "@times-components/context": "1.0.7",
     "@times-components/provider": "1.16.13",
-    "@times-components/related-articles": "6.0.16",
+    "@times-components/related-articles": "6.0.17",
     "@times-components/responsive": "0.4.32",
     "@times-components/styleguide": "3.28.14",
     "prop-types": "15.7.2",

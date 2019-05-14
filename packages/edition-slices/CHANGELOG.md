@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.56.12](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.56.11...@times-components/edition-slices@0.56.12) (2019-05-14)
+
+
+### Bug Fixes
+
+* puzzle tile bgs ([#1944](https://github.com/newsuk/times-components/issues/1944)) ([8dad22c](https://github.com/newsuk/times-components/commit/8dad22c))
+
+
+
+
+
 ## [0.56.11](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.56.10...@times-components/edition-slices@0.56.11) (2019-05-10)
 
 **Note:** Version bump only for package @times-components/edition-slices
