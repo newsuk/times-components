@@ -10,7 +10,6 @@ import {
 } from "../shared";
 import stylesFactory from "./styles";
 
-
 const TileW = ({ onPress, tile, breakpoint }) => {
   const styles = stylesFactory(breakpoint);
   return (
