@@ -11,7 +11,7 @@ exports[`1. tile a 1`] = `
       </Text>
     </View>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="3"
     >
       This is tile headline
@@ -51,7 +51,7 @@ exports[`2. tile b 1`] = `
       </Text>
     </View>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="3"
     >
       This is tile headline
@@ -101,7 +101,7 @@ exports[`3. tile c 1`] = `
       </Text>
     </View>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="3"
     >
       This is tile headline
@@ -141,7 +141,7 @@ exports[`4. tile d 1`] = `
       </Text>
     </View>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="3"
     >
       This is tile headline
@@ -181,7 +181,7 @@ exports[`5. tile e 1`] = `
       </Text>
     </View>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="3"
     >
       This is tile headline
@@ -217,13 +217,13 @@ exports[`6. tile f 1`] = `
       </Text>
     </View>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="3"
     >
       This is tile headline
     </Text>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="4"
     >
       Three Conservative MPs resign
@@ -272,7 +272,7 @@ exports[`7. tile g 1`] = `
       </Text>
     </View>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="3"
     >
       This is tile headline
@@ -308,7 +308,7 @@ exports[`8. tile h 1`] = `
       </Text>
     </View>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="3"
     >
       This is tile headline
@@ -361,7 +361,7 @@ exports[`9. tile i 1`] = `
       </Text>
     </View>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="3"
     >
       This is tile headline
@@ -401,7 +401,7 @@ exports[`10. tile j 1`] = `
       </Text>
     </View>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="3"
     >
       This is tile headline
@@ -441,7 +441,7 @@ exports[`11. tile k 1`] = `
       </Text>
     </View>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="3"
     >
       This is tile headline
@@ -477,7 +477,7 @@ exports[`12. tile l 1`] = `
       </Text>
     </View>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="3"
     >
       This is tile headline
@@ -507,13 +507,13 @@ exports[`13. tile m 1`] = `
 >
   <View>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="3"
     >
       Driving Off
     </Text>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="4"
     >
       Three Conservative MPs resign
@@ -545,13 +545,13 @@ exports[`14. tile n 1`] = `
       </Text>
     </View>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="3"
     >
       This is tile headline
     </Text>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="4"
     >
       Three Conservative MPs resign
@@ -589,7 +589,7 @@ exports[`15. tile o 1`] = `
       </Text>
     </View>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="3"
     >
       This is tile headline
@@ -633,13 +633,13 @@ exports[`16. tile p 1`] = `
       </Text>
     </View>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="3"
     >
       This is tile headline
     </Text>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="4"
     >
       Three Conservative MPs resign
@@ -701,7 +701,7 @@ exports[`18. tile r 1`] = `
       </Text>
     </View>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="3"
     >
       This is tile headline
@@ -783,7 +783,7 @@ exports[`20. tile t 1`] = `
       </Text>
     </View>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="3"
     >
       This is tile headline
@@ -820,7 +820,7 @@ exports[`21. tile u 1`] = `
       </Text>
     </View>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="3"
     >
       This is tile headline
@@ -864,7 +864,7 @@ exports[`22. tile v 1`] = `
       </Text>
     </View>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="3"
     >
       This is tile headline
@@ -901,7 +901,7 @@ exports[`23. tile w 1`] = `
       </Text>
     </View>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="3"
     >
       This is tile headline
@@ -948,13 +948,13 @@ exports[`24. tile x 1`] = `
       </Text>
     </View>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="3"
     >
       This is tile headline
     </Text>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="4"
     >
       Three Conservative MPs resign
@@ -998,7 +998,7 @@ exports[`25. tile y 1`] = `
       </Text>
     </View>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="3"
     >
       This is tile headline
@@ -1040,7 +1040,7 @@ exports[`26. tile z 1`] = `
       </Text>
     </View>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="3"
     >
       This is tile headline
@@ -1083,7 +1083,7 @@ exports[`27. tile aa 1`] = `
       </Text>
     </View>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="3"
     >
       This is tile headline
@@ -1119,7 +1119,7 @@ exports[`28. tile ab 1`] = `
       </Text>
     </View>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="3"
     >
       This is tile headline
@@ -1174,7 +1174,7 @@ exports[`29. tile ae 1`] = `
       </Text>
     </View>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="3"
     >
       This is tile headline
@@ -1212,13 +1212,13 @@ exports[`30. tile ag 1`] = `
 >
   <View>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="3"
     >
       Driving Off
     </Text>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="4"
     >
       Three Conservative MPs resign
@@ -1241,7 +1241,7 @@ exports[`31. tile aj 1`] = `
 >
   <View>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="3"
     >
       Times Concise medium No 7881
@@ -1269,7 +1269,7 @@ exports[`32. tile ak 1`] = `
 >
   <View>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="3"
     >
       Times Concise medium No 7881
@@ -1303,7 +1303,7 @@ exports[`33. tile al 1`] = `
       </Text>
     </View>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="3"
     >
       This is tile headline
@@ -1350,7 +1350,7 @@ exports[`34. tile am 1`] = `
       </Text>
     </View>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="3"
     >
       This is tile headline
@@ -1398,7 +1398,7 @@ exports[`35. tile an 1`] = `
       </Text>
     </View>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="3"
     >
       This is tile headline
@@ -1446,7 +1446,7 @@ exports[`36. tile ap 1`] = `
       </Text>
     </View>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="3"
     >
       This is tile headline
@@ -1486,7 +1486,7 @@ exports[`37. tile ad 1`] = `
       </Text>
     </View>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="3"
     >
       This is tile headline
@@ -1525,7 +1525,7 @@ exports[`38. tile ac 1`] = `
       </Text>
     </View>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="3"
     >
       This is tile headline

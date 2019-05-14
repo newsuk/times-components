@@ -18,35 +18,10 @@ exports[`1. default image 1`] = `
   -webkit-box-align: center;
   align-items: center;
   background-color: rgba(237,237,237,1.00);
-  display: flex;
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
   -ms-flex-pack: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-  padding-bottom: 0px;
-  position: relative;
-  z-index: 0;
-}
-
-.S2 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  display: flex;
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  padding-bottom: 0px;
-  position: relative;
-  z-index: 0;
 }
 
 .IS1 {
@@ -60,7 +35,7 @@ exports[`1. default image 1`] = `
 </style>
 
 <div
-  className="S2"
+  className="css-view-1dbjc4n"
 >
   <div
     className="IS1"
@@ -69,7 +44,7 @@ exports[`1. default image 1`] = `
       className="c0"
     />
     <div
-      className="S1"
+      className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-15282we r-justifyContent-1777fci S1"
     >
       <Svg>
         <G>
@@ -99,35 +74,10 @@ exports[`2. default modal 1`] = `
   -webkit-box-align: center;
   align-items: center;
   background-color: rgba(237,237,237,1.00);
-  display: flex;
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
   -ms-flex-pack: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-  padding-bottom: 0px;
-  position: relative;
-  z-index: 0;
-}
-
-.S2 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  display: flex;
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  padding-bottom: 0px;
-  position: relative;
-  z-index: 0;
 }
 
 .IS1 {
@@ -141,7 +91,7 @@ exports[`2. default modal 1`] = `
 </style>
 
 <div
-  className="S2"
+  className="css-view-1dbjc4n"
 >
   <div
     className="IS1"
@@ -150,7 +100,7 @@ exports[`2. default modal 1`] = `
       className="c0"
     />
     <div
-      className="S1"
+      className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-15282we r-justifyContent-1777fci S1"
     >
       <Svg>
         <G>

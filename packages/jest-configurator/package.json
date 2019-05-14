@@ -38,7 +38,6 @@
     "access": "public"
   },
   "jest": {
-    "preset": "react-native",
     "rootDir": "../../",
     "collectCoverageFrom": [
       "**/jest-configurator/src/**"
@@ -58,14 +57,14 @@
     "@babel/core": "7.4.4",
     "@times-components/test-utils": "2.2.40",
     "babel-core": "^7.0.0-bridge.0",
-    "babel-jest": "23.6.0",
+    "babel-jest": "24.8.0",
     "babel-plugin-istanbul": "5.1.3",
     "babel-preset-jest": "24.6.0",
     "enzyme": "3.9.0",
     "enzyme-adapter-react-16": "1.12.1",
     "find-node-modules": "1.0.4",
     "identity-obj-proxy": "3.0.0",
-    "jest": "23.6.0",
+    "jest": "24.8.0",
     "jest-plugin-context": "2.9.0",
     "jest-plugins": "2.9.0"
   },
@@ -81,7 +80,7 @@
     "react": ">=16.5",
     "react-dom": ">=16.5",
     "react-native": ">=0.55",
-    "react-native-web": "0.9.0"
+    "react-native-web": "0.11.2"
   },
   "resolutions": {
     "minimatch": "3.0.4"

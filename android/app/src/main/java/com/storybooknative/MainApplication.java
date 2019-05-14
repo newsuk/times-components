@@ -7,7 +7,6 @@ import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
-import com.facebook.stetho.Stetho;
 import com.horcrux.svg.SvgPackage;
 import com.storybooknative.stubs.StorybookStubPackage;
 
@@ -34,7 +33,7 @@ public class MainApplication extends Application implements ReactApplication {
 
         @Override
         protected String getJSMainModuleName() {
-            return "index.storybook";
+            return "storybook-native/index";
         }
     };
 
@@ -46,7 +45,6 @@ public class MainApplication extends Application implements ReactApplication {
     @Override
     public void onCreate() {
         super.onCreate();
-        Stetho.initializeWithDefaults(this);
         SoLoader.init(this, /* native exopackage */ false);
     }
 }

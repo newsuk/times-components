@@ -4,7 +4,7 @@ exports[`1. one opinion and two support related articles 1`] = `
 <View>
   <View>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="3"
     >
       Related articles
@@ -53,7 +53,7 @@ exports[`1. one opinion and two support related articles 1`] = `
                   </Text>
                 </Text>
                 <Text
-                  accessibilityRole="heading"
+                  accessibilityRole="header"
                   aria-level="3"
                 >
                   First Short Headline
@@ -103,7 +103,7 @@ exports[`1. one opinion and two support related articles 1`] = `
                   />
                 </View>
                 <Text
-                  accessibilityRole="heading"
+                  accessibilityRole="header"
                   aria-level="3"
                 >
                   Second Short Headline
@@ -149,7 +149,7 @@ exports[`1. one opinion and two support related articles 1`] = `
                   />
                 </View>
                 <Text
-                  accessibilityRole="heading"
+                  accessibilityRole="header"
                   aria-level="3"
                 >
                   Third Short Headline

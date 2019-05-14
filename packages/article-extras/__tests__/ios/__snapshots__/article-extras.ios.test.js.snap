@@ -26,9 +26,8 @@ exports[`2. article extras error 1`] = `
     Some features, such as related articles and comments, may not be avalaible
   </Text>
   <View
-    accessibilityComponentType="button"
     accessibilityLabel="Retry"
-    accessibilityTraits="button"
+    accessibilityRole="button"
   >
     <Text
       title="Retry"

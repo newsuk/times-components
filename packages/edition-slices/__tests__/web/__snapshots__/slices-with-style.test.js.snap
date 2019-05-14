@@ -2,15 +2,6 @@
 
 exports[`1. daily universal register 1`] = `
 <style>
-.S1 {
-  font-weight: inherit;
-  line-height: inherit;
-}
-
-.S2 {
-  margin-bottom: 0px;
-}
-
 .IS1 {
   height: 73;
   margin-vertical: 10px;
@@ -30,10 +21,14 @@ exports[`1. daily universal register 1`] = `
   border-top-color: rgba(219,219,219,1.00);
   border-right-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
-  margin-top: 25px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-right: 10px;
-  margin-bottom: 25px;
   margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   width: 100%;
 }
 
@@ -43,10 +38,14 @@ exports[`1. daily universal register 1`] = `
   border-top-color: rgba(219,219,219,1.00);
   border-right-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
-  margin-top: 25px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-right: 10px;
-  margin-bottom: 25px;
   margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   width: 100%;
 }
 
@@ -61,10 +60,14 @@ exports[`1. daily universal register 1`] = `
   border-top-color: rgba(219,219,219,1.00);
   border-right-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
-  margin-top: 25px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-right: 10px;
-  margin-bottom: 25px;
   margin-left: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   width: 100%;
 }
 
@@ -97,16 +100,18 @@ exports[`1. daily universal register 1`] = `
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
   width: 1366px;
   -ms-flex-item-align: center;
 }
 </style>
 
 <div
-  className="IS9 S2"
+  className="css-view-1dbjc4n IS9"
 >
   <div
-    className="IS8 S2"
+    className="css-view-1dbjc4n IS8"
   >
     <Image
       aspectRatio={1}
@@ -114,17 +119,17 @@ exports[`1. daily universal register 1`] = `
       uri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
     />
     <div
-      className="IS2 S1"
+      className="css-text-76zvg2 IS2"
     >
       Daily Universal Register
     </div>
     <TileS />
     <div
-      className="IS3"
+      className="css-view-1dbjc4n IS3"
     />
     <TileS />
     <div
-      className="IS4"
+      className="css-view-1dbjc4n IS4"
     />
     <Image
       aspectRatio={1}
@@ -133,7 +138,7 @@ exports[`1. daily universal register 1`] = `
     />
     <TileS />
     <div
-      className="IS6"
+      className="css-view-1dbjc4n IS6"
     />
     <Image
       aspectRatio={1}
@@ -147,10 +152,6 @@ exports[`1. daily universal register 1`] = `
 
 exports[`1. secondary one and four 1`] = `
 <style>
-.S1 {
-  margin-bottom: 0px;
-}
-
 .IS1 {
   background-color: rgba(39,45,52,1.00);
   -webkit-flex-direction: row;
@@ -170,6 +171,10 @@ exports[`1. secondary one and four 1`] = `
   border-top-color: rgba(219,219,219,1.00);
   border-right-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -184,6 +189,10 @@ exports[`1. secondary one and four 1`] = `
   border-bottom-color: rgba(77,77,77,1.00);
   border-left-color: rgba(77,77,77,1.00);
   border-right-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -194,6 +203,10 @@ exports[`1. secondary one and four 1`] = `
   border-right-color: rgba(77,77,77,1.00);
   border-bottom-color: rgba(77,77,77,1.00);
   border-left-color: rgba(77,77,77,1.00);
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -208,6 +221,10 @@ exports[`1. secondary one and four 1`] = `
   border-bottom-color: rgba(77,77,77,1.00);
   border-left-color: rgba(77,77,77,1.00);
   border-right-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -218,6 +235,10 @@ exports[`1. secondary one and four 1`] = `
   border-right-color: rgba(77,77,77,1.00);
   border-bottom-color: rgba(77,77,77,1.00);
   border-left-color: rgba(77,77,77,1.00);
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -244,6 +265,8 @@ exports[`1. secondary one and four 1`] = `
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
   width: 1366px;
   -ms-flex-item-align: center;
 }
@@ -254,16 +277,16 @@ exports[`1. secondary one and four 1`] = `
 </style>
 
 <div
-  className="IS13 S1"
+  className="css-view-1dbjc4n IS13"
 >
   <div
-    className="IS12 S1"
+    className="css-view-1dbjc4n IS12"
   >
     <div
-      className="IS11 S1"
+      className="css-view-1dbjc4n IS11"
     >
       <div
-        className="IS1"
+        className="css-view-1dbjc4n IS1"
       >
         <TheSTLogo
           height={40}
@@ -271,16 +294,16 @@ exports[`1. secondary one and four 1`] = `
         />
       </div>
       <div
-        className="IS2 S1"
+        className="css-view-1dbjc4n IS2"
       />
       <div
-        className="IS10 S1"
+        className="css-view-1dbjc4n IS10"
       >
         <div
-          className="IS3 S1"
+          className="css-view-1dbjc4n IS3"
         >
           <div
-            className="S1"
+            className="css-view-1dbjc4n"
           >
             <TileN
               breakpoint="wide"
@@ -289,23 +312,23 @@ exports[`1. secondary one and four 1`] = `
           </div>
         </div>
         <div
-          className="IS4"
+          className="css-view-1dbjc4n IS4"
         />
         <div
-          className="IS6 S1"
+          className="css-view-1dbjc4n IS6"
         >
           <div
-            className="S1"
+            className="css-view-1dbjc4n"
           >
             <TileO
               tileName="support1"
             />
           </div>
           <div
-            className="IS5 S1"
+            className="css-view-1dbjc4n IS5"
           />
           <div
-            className="S1"
+            className="css-view-1dbjc4n"
           >
             <TileO
               tileName="support3"
@@ -313,23 +336,23 @@ exports[`1. secondary one and four 1`] = `
           </div>
         </div>
         <div
-          className="IS7"
+          className="css-view-1dbjc4n IS7"
         />
         <div
-          className="IS9 S1"
+          className="css-view-1dbjc4n IS9"
         >
           <div
-            className="S1"
+            className="css-view-1dbjc4n"
           >
             <TileO
               tileName="support2"
             />
           </div>
           <div
-            className="IS8 S1"
+            className="css-view-1dbjc4n IS8"
           />
           <div
-            className="S1"
+            className="css-view-1dbjc4n"
           >
             <TileO
               tileName="support4"
@@ -344,10 +367,6 @@ exports[`1. secondary one and four 1`] = `
 
 exports[`1. secondary one and four 2`] = `
 <style>
-.S1 {
-  margin-bottom: 0px;
-}
-
 .IS1 {
   background-color: rgba(39,45,52,1.00);
   -webkit-flex-direction: row;
@@ -367,6 +386,10 @@ exports[`1. secondary one and four 2`] = `
   border-top-color: rgba(219,219,219,1.00);
   border-right-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -381,6 +404,10 @@ exports[`1. secondary one and four 2`] = `
   border-bottom-color: rgba(77,77,77,1.00);
   border-left-color: rgba(77,77,77,1.00);
   border-right-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -391,6 +418,10 @@ exports[`1. secondary one and four 2`] = `
   border-right-color: rgba(77,77,77,1.00);
   border-bottom-color: rgba(77,77,77,1.00);
   border-left-color: rgba(77,77,77,1.00);
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -405,6 +436,10 @@ exports[`1. secondary one and four 2`] = `
   border-bottom-color: rgba(77,77,77,1.00);
   border-left-color: rgba(77,77,77,1.00);
   border-right-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -415,6 +450,10 @@ exports[`1. secondary one and four 2`] = `
   border-right-color: rgba(77,77,77,1.00);
   border-bottom-color: rgba(77,77,77,1.00);
   border-left-color: rgba(77,77,77,1.00);
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -441,6 +480,8 @@ exports[`1. secondary one and four 2`] = `
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
   width: 1366px;
   -ms-flex-item-align: center;
 }
@@ -451,16 +492,16 @@ exports[`1. secondary one and four 2`] = `
 </style>
 
 <div
-  className="IS13 S1"
+  className="css-view-1dbjc4n IS13"
 >
   <div
-    className="IS12 S1"
+    className="css-view-1dbjc4n IS12"
   >
     <div
-      className="IS11 S1"
+      className="css-view-1dbjc4n IS11"
     >
       <div
-        className="IS1"
+        className="css-view-1dbjc4n IS1"
       >
         <TheTimesLogo
           height={40}
@@ -468,16 +509,16 @@ exports[`1. secondary one and four 2`] = `
         />
       </div>
       <div
-        className="IS2 S1"
+        className="css-view-1dbjc4n IS2"
       />
       <div
-        className="IS10 S1"
+        className="css-view-1dbjc4n IS10"
       >
         <div
-          className="IS3 S1"
+          className="css-view-1dbjc4n IS3"
         >
           <div
-            className="S1"
+            className="css-view-1dbjc4n"
           >
             <TileN
               breakpoint="wide"
@@ -486,23 +527,23 @@ exports[`1. secondary one and four 2`] = `
           </div>
         </div>
         <div
-          className="IS4"
+          className="css-view-1dbjc4n IS4"
         />
         <div
-          className="IS6 S1"
+          className="css-view-1dbjc4n IS6"
         >
           <div
-            className="S1"
+            className="css-view-1dbjc4n"
           >
             <TileO
               tileName="support1"
             />
           </div>
           <div
-            className="IS5 S1"
+            className="css-view-1dbjc4n IS5"
           />
           <div
-            className="S1"
+            className="css-view-1dbjc4n"
           >
             <TileO
               tileName="support3"
@@ -510,23 +551,23 @@ exports[`1. secondary one and four 2`] = `
           </div>
         </div>
         <div
-          className="IS7"
+          className="css-view-1dbjc4n IS7"
         />
         <div
-          className="IS9 S1"
+          className="css-view-1dbjc4n IS9"
         >
           <div
-            className="S1"
+            className="css-view-1dbjc4n"
           >
             <TileO
               tileName="support2"
             />
           </div>
           <div
-            className="IS8 S1"
+            className="css-view-1dbjc4n IS8"
           />
           <div
-            className="S1"
+            className="css-view-1dbjc4n"
           >
             <TileO
               tileName="support4"
@@ -541,21 +582,19 @@ exports[`1. secondary one and four 2`] = `
 
 exports[`2. lead one full width 1`] = `
 <style>
-.S1 {
-  margin-bottom: 0px;
-}
-
 .IS1 {
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
   width: 1366px;
   -ms-flex-item-align: center;
 }
 </style>
 
 <div
-  className="IS1 S1"
+  className="css-view-1dbjc4n IS1"
 >
   <TileR
     tileName="lead"
@@ -565,15 +604,6 @@ exports[`2. lead one full width 1`] = `
 
 exports[`2. leaders 1`] = `
 <style>
-.S1 {
-  font-weight: inherit;
-  margin-bottom: 0px;
-}
-
-.S2 {
-  margin-bottom: 0px;
-}
-
 .IS1 {
   height: 54;
   width: 283;
@@ -611,6 +641,10 @@ exports[`2. leaders 1`] = `
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
   border-right-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -627,6 +661,10 @@ exports[`2. leaders 1`] = `
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
   border-right-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -660,6 +698,8 @@ exports[`2. leaders 1`] = `
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
   width: 1366px;
   -ms-flex-item-align: center;
 }
@@ -671,10 +711,10 @@ exports[`2. leaders 1`] = `
 </style>
 
 <div
-  className="IS12 S2"
+  className="css-view-1dbjc4n IS12"
 >
   <div
-    className="IS4 S2"
+    className="css-view-1dbjc4n IS4"
   >
     <Image
       aspectRatio={5.4}
@@ -682,43 +722,43 @@ exports[`2. leaders 1`] = `
       uri="https://www.thetimes.co.uk/d/img/logos/sundaytimes-with-crest-black-53d6e31fb8.png"
     />
     <div
-      className="IS3 S2"
+      className="css-view-1dbjc4n IS3"
     >
       <div
-        className="IS2 S1"
+        className="css-text-76zvg2 IS2"
       >
          Leading Articles 
       </div>
     </div>
   </div>
   <div
-    className="IS11 S2"
+    className="css-view-1dbjc4n IS11"
   >
     <div
-      className="IS10 S2"
+      className="css-view-1dbjc4n IS10"
     >
       <div
-        className="IS5 S2"
+        className="css-view-1dbjc4n IS5"
       >
         <TileAG
           tileName="leader2"
         />
       </div>
       <div
-        className="IS6"
+        className="css-view-1dbjc4n IS6"
       />
       <div
-        className="IS7 S2"
+        className="css-view-1dbjc4n IS7"
       >
         <TileAG
           tileName="leader1"
         />
       </div>
       <div
-        className="IS8"
+        className="css-view-1dbjc4n IS8"
       />
       <div
-        className="IS9 S2"
+        className="css-view-1dbjc4n IS9"
       >
         <TileAG
           tileName="leader3"
@@ -731,15 +771,6 @@ exports[`2. leaders 1`] = `
 
 exports[`2. leaders 2`] = `
 <style>
-.S1 {
-  font-weight: inherit;
-  margin-bottom: 0px;
-}
-
-.S2 {
-  margin-bottom: 0px;
-}
-
 .IS1 {
   height: 51;
   width: 283;
@@ -777,6 +808,10 @@ exports[`2. leaders 2`] = `
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
   border-right-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -793,6 +828,10 @@ exports[`2. leaders 2`] = `
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
   border-right-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -826,6 +865,8 @@ exports[`2. leaders 2`] = `
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
   width: 1366px;
   -ms-flex-item-align: center;
 }
@@ -837,10 +878,10 @@ exports[`2. leaders 2`] = `
 </style>
 
 <div
-  className="IS12 S2"
+  className="css-view-1dbjc4n IS12"
 >
   <div
-    className="IS4 S2"
+    className="css-view-1dbjc4n IS4"
   >
     <Image
       aspectRatio={5.74}
@@ -848,43 +889,43 @@ exports[`2. leaders 2`] = `
       uri="https://www.thetimes.co.uk/d/img/leaders-masthead-d17db00289.png"
     />
     <div
-      className="IS3 S2"
+      className="css-view-1dbjc4n IS3"
     >
       <div
-        className="IS2 S1"
+        className="css-text-76zvg2 IS2"
       >
          Leading Articles 
       </div>
     </div>
   </div>
   <div
-    className="IS11 S2"
+    className="css-view-1dbjc4n IS11"
   >
     <div
-      className="IS10 S2"
+      className="css-view-1dbjc4n IS10"
     >
       <div
-        className="IS5 S2"
+        className="css-view-1dbjc4n IS5"
       >
         <TileAG
           tileName="leader2"
         />
       </div>
       <div
-        className="IS6"
+        className="css-view-1dbjc4n IS6"
       />
       <div
-        className="IS7 S2"
+        className="css-view-1dbjc4n IS7"
       >
         <TileAG
           tileName="leader1"
         />
       </div>
       <div
-        className="IS8"
+        className="css-view-1dbjc4n IS8"
       />
       <div
-        className="IS9 S2"
+        className="css-view-1dbjc4n IS9"
       >
         <TileAG
           tileName="leader3"
@@ -897,10 +938,6 @@ exports[`2. leaders 2`] = `
 
 exports[`3. lead one and one 1`] = `
 <style>
-.S1 {
-  margin-bottom: 0px;
-}
-
 .IS1 {
   width: 83.33%;
 }
@@ -911,6 +948,10 @@ exports[`3. lead one and one 1`] = `
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
   border-right-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -943,29 +984,31 @@ exports[`3. lead one and one 1`] = `
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
   width: 1366px;
   -ms-flex-item-align: center;
 }
 </style>
 
 <div
-  className="IS5 S1"
+  className="css-view-1dbjc4n IS5"
 >
   <div
-    className="IS4 S1"
+    className="css-view-1dbjc4n IS4"
   >
     <div
-      className="IS1 S1"
+      className="css-view-1dbjc4n IS1"
     >
       <TileU
         tileName="lead"
       />
     </div>
     <div
-      className="IS2"
+      className="css-view-1dbjc4n IS2"
     />
     <div
-      className="IS3 S1"
+      className="css-view-1dbjc4n IS3"
     >
       <TileC
         tileName="support"
@@ -977,10 +1020,6 @@ exports[`3. lead one and one 1`] = `
 
 exports[`4. lead one and four 1`] = `
 <style>
-.S1 {
-  margin-bottom: 0px;
-}
-
 .IS1 {
   padding-top: 10px;
   padding-right: 10px;
@@ -995,6 +1034,10 @@ exports[`4. lead one and four 1`] = `
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
   border-right-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -1005,6 +1048,10 @@ exports[`4. lead one and four 1`] = `
   border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -1015,6 +1062,10 @@ exports[`4. lead one and four 1`] = `
   border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -1025,6 +1076,10 @@ exports[`4. lead one and four 1`] = `
   border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -1057,19 +1112,21 @@ exports[`4. lead one and four 1`] = `
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
   width: 1366px;
   -ms-flex-item-align: center;
 }
 </style>
 
 <div
-  className="IS8 S1"
+  className="css-view-1dbjc4n IS8"
 >
   <div
-    className="IS7 S1"
+    className="css-view-1dbjc4n IS7"
   >
     <div
-      className="IS1 S1"
+      className="css-view-1dbjc4n IS1"
     >
       <TileAC
         breakpoint="wide"
@@ -1077,31 +1134,31 @@ exports[`4. lead one and four 1`] = `
       />
     </div>
     <div
-      className="IS2"
+      className="css-view-1dbjc4n IS2"
     />
     <div
-      className="IS6 S1"
+      className="css-view-1dbjc4n IS6"
     >
       <TileAD
         breakpoint="wide"
         tileName="support1"
       />
       <div
-        className="IS3 S1"
+        className="css-view-1dbjc4n IS3"
       />
       <TileAD
         breakpoint="wide"
         tileName="support2"
       />
       <div
-        className="IS4 S1"
+        className="css-view-1dbjc4n IS4"
       />
       <TileAD
         breakpoint="wide"
         tileName="support3"
       />
       <div
-        className="IS5 S1"
+        className="css-view-1dbjc4n IS5"
       />
       <TileAD
         breakpoint="wide"
@@ -1114,16 +1171,16 @@ exports[`4. lead one and four 1`] = `
 
 exports[`5. standard 1`] = `
 <style>
-.S1 {
-  margin-bottom: 0px;
-}
-
 .IS1 {
   border-bottom-width: 1px;
   border-top-color: rgba(219,219,219,1.00);
   border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -1134,6 +1191,10 @@ exports[`5. standard 1`] = `
   border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -1144,6 +1205,10 @@ exports[`5. standard 1`] = `
   border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -1154,6 +1219,10 @@ exports[`5. standard 1`] = `
   border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -1182,43 +1251,45 @@ exports[`5. standard 1`] = `
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
   width: 1366px;
   -ms-flex-item-align: center;
 }
 </style>
 
 <div
-  className="IS6 S1"
+  className="css-view-1dbjc4n IS6"
 >
   <div
-    className="IS5 S1"
+    className="css-view-1dbjc4n IS5"
   >
     <div
-      className="S1"
+      className="css-view-1dbjc4n"
     >
       <TileK
         breakpoint="wide"
       />
       <div
-        className="IS1 S1"
+        className="css-view-1dbjc4n IS1"
       />
       <TileK
         breakpoint="wide"
       />
       <div
-        className="IS2 S1"
+        className="css-view-1dbjc4n IS2"
       />
       <TileK
         breakpoint="wide"
       />
       <div
-        className="IS3 S1"
+        className="css-view-1dbjc4n IS3"
       />
       <TileK
         breakpoint="wide"
       />
       <div
-        className="IS4 S1"
+        className="css-view-1dbjc4n IS4"
       />
       <TileK
         breakpoint="wide"
@@ -1230,16 +1301,16 @@ exports[`5. standard 1`] = `
 
 exports[`6. lead two no pic and two 1`] = `
 <style>
-.S1 {
-  margin-bottom: 0px;
-}
-
 .IS1 {
   border-bottom-width: 1px;
   border-top-color: rgba(219,219,219,1.00);
   border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -1254,6 +1325,10 @@ exports[`6. lead two no pic and two 1`] = `
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
   border-right-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -1268,6 +1343,10 @@ exports[`6. lead two no pic and two 1`] = `
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
   border-right-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -1294,45 +1373,47 @@ exports[`6. lead two no pic and two 1`] = `
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
   width: 1366px;
   -ms-flex-item-align: center;
 }
 </style>
 
 <div
-  className="IS8 S1"
+  className="css-view-1dbjc4n IS8"
 >
   <div
-    className="IS7 S1"
+    className="css-view-1dbjc4n IS7"
   >
     <div
-      className="IS2 S1"
+      className="css-view-1dbjc4n IS2"
     >
       <TileX
         tileName="lead1"
       />
       <div
-        className="IS1 S1"
+        className="css-view-1dbjc4n IS1"
       />
       <TileY
         tileName="lead2"
       />
     </div>
     <div
-      className="IS3"
+      className="css-view-1dbjc4n IS3"
     />
     <div
-      className="IS4 S1"
+      className="css-view-1dbjc4n IS4"
     >
       <TileAL
         tileName="support1"
       />
     </div>
     <div
-      className="IS5"
+      className="css-view-1dbjc4n IS5"
     />
     <div
-      className="IS6 S1"
+      className="css-view-1dbjc4n IS6"
     >
       <TileZ
         tileName="support2"
@@ -1344,21 +1425,19 @@ exports[`6. lead two no pic and two 1`] = `
 
 exports[`7. secondary one 1`] = `
 <style>
-.S1 {
-  margin-bottom: 0px;
-}
-
 .IS1 {
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
   width: 1366px;
   -ms-flex-item-align: center;
 }
 </style>
 
 <div
-  className="IS1 S1"
+  className="css-view-1dbjc4n IS1"
 >
   <TileW
     tileName="secondary"
@@ -1368,10 +1447,6 @@ exports[`7. secondary one 1`] = `
 
 exports[`8. secondary one and columnist 1`] = `
 <style>
-.S1 {
-  margin-bottom: 0px;
-}
-
 .IS1 {
   padding-left: 10px;
   padding-top: 10px;
@@ -1384,6 +1459,10 @@ exports[`8. secondary one and columnist 1`] = `
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
   border-right-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -1415,29 +1494,31 @@ exports[`8. secondary one and columnist 1`] = `
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
   width: 1366px;
   -ms-flex-item-align: center;
 }
 </style>
 
 <div
-  className="IS5 S1"
+  className="css-view-1dbjc4n IS5"
 >
   <div
-    className="IS4 S1"
+    className="css-view-1dbjc4n IS4"
   >
     <div
-      className="IS1 S1"
+      className="css-view-1dbjc4n IS1"
     >
       <TileAA
         tileName="secondary"
       />
     </div>
     <div
-      className="IS2"
+      className="css-view-1dbjc4n IS2"
     />
     <div
-      className="IS3 S1"
+      className="css-view-1dbjc4n IS3"
     >
       <TileAB
         tileName="columnist"
@@ -1449,10 +1530,6 @@ exports[`8. secondary one and columnist 1`] = `
 
 exports[`9. secondary four 1`] = `
 <style>
-.S1 {
-  margin-bottom: 0px;
-}
-
 .IS1 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
@@ -1473,6 +1550,10 @@ exports[`9. secondary four 1`] = `
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
   border-right-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -1497,6 +1578,10 @@ exports[`9. secondary four 1`] = `
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
   border-right-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -1521,6 +1606,10 @@ exports[`9. secondary four 1`] = `
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
   border-right-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -1553,49 +1642,51 @@ exports[`9. secondary four 1`] = `
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
   width: 1366px;
   -ms-flex-item-align: center;
 }
 </style>
 
 <div
-  className="IS9 S1"
+  className="css-view-1dbjc4n IS9"
 >
   <div
-    className="IS8 S1"
+    className="css-view-1dbjc4n IS8"
   >
     <div
-      className="IS1 S1"
+      className="css-view-1dbjc4n IS1"
     >
       <TileC
         tileName="secondary1"
       />
     </div>
     <div
-      className="IS2"
+      className="css-view-1dbjc4n IS2"
     />
     <div
-      className="IS3 S1"
+      className="css-view-1dbjc4n IS3"
     >
       <TileC
         tileName="secondary2"
       />
     </div>
     <div
-      className="IS4"
+      className="css-view-1dbjc4n IS4"
     />
     <div
-      className="IS5 S1"
+      className="css-view-1dbjc4n IS5"
     >
       <TileC
         tileName="secondary3"
       />
     </div>
     <div
-      className="IS6"
+      className="css-view-1dbjc4n IS6"
     />
     <div
-      className="IS7 S1"
+      className="css-view-1dbjc4n IS7"
     >
       <TileC
         tileName="secondary4"
@@ -1607,10 +1698,6 @@ exports[`9. secondary four 1`] = `
 
 exports[`10. secondary one and four 1`] = `
 <style>
-.S1 {
-  margin-bottom: 0px;
-}
-
 .IS1 {
   background-color: rgba(39,45,52,1.00);
   -webkit-flex-direction: row;
@@ -1630,6 +1717,10 @@ exports[`10. secondary one and four 1`] = `
   border-top-color: rgba(219,219,219,1.00);
   border-right-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -1644,6 +1735,10 @@ exports[`10. secondary one and four 1`] = `
   border-bottom-color: rgba(77,77,77,1.00);
   border-left-color: rgba(77,77,77,1.00);
   border-right-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -1654,6 +1749,10 @@ exports[`10. secondary one and four 1`] = `
   border-right-color: rgba(77,77,77,1.00);
   border-bottom-color: rgba(77,77,77,1.00);
   border-left-color: rgba(77,77,77,1.00);
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -1668,6 +1767,10 @@ exports[`10. secondary one and four 1`] = `
   border-bottom-color: rgba(77,77,77,1.00);
   border-left-color: rgba(77,77,77,1.00);
   border-right-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -1678,6 +1781,10 @@ exports[`10. secondary one and four 1`] = `
   border-right-color: rgba(77,77,77,1.00);
   border-bottom-color: rgba(77,77,77,1.00);
   border-left-color: rgba(77,77,77,1.00);
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -1704,6 +1811,8 @@ exports[`10. secondary one and four 1`] = `
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
   width: 1366px;
   -ms-flex-item-align: center;
 }
@@ -1714,16 +1823,16 @@ exports[`10. secondary one and four 1`] = `
 </style>
 
 <div
-  className="IS13 S1"
+  className="css-view-1dbjc4n IS13"
 >
   <div
-    className="IS12 S1"
+    className="css-view-1dbjc4n IS12"
   >
     <div
-      className="IS11 S1"
+      className="css-view-1dbjc4n IS11"
     >
       <div
-        className="IS1"
+        className="css-view-1dbjc4n IS1"
       >
         <TheTimesLogo
           height={40}
@@ -1731,16 +1840,16 @@ exports[`10. secondary one and four 1`] = `
         />
       </div>
       <div
-        className="IS2 S1"
+        className="css-view-1dbjc4n IS2"
       />
       <div
-        className="IS10 S1"
+        className="css-view-1dbjc4n IS10"
       >
         <div
-          className="IS3 S1"
+          className="css-view-1dbjc4n IS3"
         >
           <div
-            className="S1"
+            className="css-view-1dbjc4n"
           >
             <TileN
               breakpoint="wide"
@@ -1749,23 +1858,23 @@ exports[`10. secondary one and four 1`] = `
           </div>
         </div>
         <div
-          className="IS4"
+          className="css-view-1dbjc4n IS4"
         />
         <div
-          className="IS6 S1"
+          className="css-view-1dbjc4n IS6"
         >
           <div
-            className="S1"
+            className="css-view-1dbjc4n"
           >
             <TileO
               tileName="support1"
             />
           </div>
           <div
-            className="IS5 S1"
+            className="css-view-1dbjc4n IS5"
           />
           <div
-            className="S1"
+            className="css-view-1dbjc4n"
           >
             <TileO
               tileName="support3"
@@ -1773,23 +1882,23 @@ exports[`10. secondary one and four 1`] = `
           </div>
         </div>
         <div
-          className="IS7"
+          className="css-view-1dbjc4n IS7"
         />
         <div
-          className="IS9 S1"
+          className="css-view-1dbjc4n IS9"
         >
           <div
-            className="S1"
+            className="css-view-1dbjc4n"
           >
             <TileO
               tileName="support2"
             />
           </div>
           <div
-            className="IS8 S1"
+            className="css-view-1dbjc4n IS8"
           />
           <div
-            className="S1"
+            className="css-view-1dbjc4n"
           >
             <TileO
               tileName="support4"
@@ -1804,10 +1913,6 @@ exports[`10. secondary one and four 1`] = `
 
 exports[`11. secondary two and two 1`] = `
 <style>
-.S1 {
-  margin-bottom: 0px;
-}
-
 .IS1 {
   width: 33.4%;
 }
@@ -1818,6 +1923,10 @@ exports[`11. secondary two and two 1`] = `
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
   border-right-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -1832,6 +1941,10 @@ exports[`11. secondary two and two 1`] = `
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
   border-right-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -1846,6 +1959,10 @@ exports[`11. secondary two and two 1`] = `
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
   border-right-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -1876,49 +1993,51 @@ exports[`11. secondary two and two 1`] = `
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
   width: 1366px;
   -ms-flex-item-align: center;
 }
 </style>
 
 <div
-  className="IS9 S1"
+  className="css-view-1dbjc4n IS9"
 >
   <div
-    className="IS8 S1"
+    className="css-view-1dbjc4n IS8"
   >
     <div
-      className="IS1 S1"
+      className="css-view-1dbjc4n IS1"
     >
       <TileAM
         tileName="secondary1"
       />
     </div>
     <div
-      className="IS2"
+      className="css-view-1dbjc4n IS2"
     />
     <div
-      className="IS3 S1"
+      className="css-view-1dbjc4n IS3"
     >
       <TileAN
         tileName="support1"
       />
     </div>
     <div
-      className="IS4"
+      className="css-view-1dbjc4n IS4"
     />
     <div
-      className="IS5 S1"
+      className="css-view-1dbjc4n IS5"
     >
       <TileAM
         tileName="secondary2"
       />
     </div>
     <div
-      className="IS6"
+      className="css-view-1dbjc4n IS6"
     />
     <div
-      className="IS7 S1"
+      className="css-view-1dbjc4n IS7"
     >
       <TileAN
         tileName="support2"
@@ -1930,10 +2049,6 @@ exports[`11. secondary two and two 1`] = `
 
 exports[`12. secondary two no pic and two 1`] = `
 <style>
-.S1 {
-  margin-bottom: 0px;
-}
-
 .IS1 {
   width: 33.4%;
 }
@@ -1944,6 +2059,10 @@ exports[`12. secondary two no pic and two 1`] = `
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
   border-right-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -1960,6 +2079,10 @@ exports[`12. secondary two no pic and two 1`] = `
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
   border-right-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -1974,6 +2097,10 @@ exports[`12. secondary two no pic and two 1`] = `
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
   border-right-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -2008,49 +2135,51 @@ exports[`12. secondary two no pic and two 1`] = `
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
   width: 1366px;
   -ms-flex-item-align: center;
 }
 </style>
 
 <div
-  className="IS9 S1"
+  className="css-view-1dbjc4n IS9"
 >
   <div
-    className="IS8 S1"
+    className="css-view-1dbjc4n IS8"
   >
     <div
-      className="IS1 S1"
+      className="css-view-1dbjc4n IS1"
     >
       <TileAE
         tileName="secondary1"
       />
     </div>
     <div
-      className="IS2"
+      className="css-view-1dbjc4n IS2"
     />
     <div
-      className="IS3 S1"
+      className="css-view-1dbjc4n IS3"
     >
       <TileAP
         tileName="support1"
       />
     </div>
     <div
-      className="IS4"
+      className="css-view-1dbjc4n IS4"
     />
     <div
-      className="IS5 S1"
+      className="css-view-1dbjc4n IS5"
     >
       <TileAE
         tileName="secondary2"
       />
     </div>
     <div
-      className="IS6"
+      className="css-view-1dbjc4n IS6"
     />
     <div
-      className="IS7 S1"
+      className="css-view-1dbjc4n IS7"
     >
       <TileAP
         tileName="support2"
@@ -2062,10 +2191,6 @@ exports[`12. secondary two no pic and two 1`] = `
 
 exports[`13. list two and six no pic 1`] = `
 <style>
-.S1 {
-  margin-bottom: 0px;
-}
-
 .IS1 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
@@ -2085,6 +2210,10 @@ exports[`13. list two and six no pic 1`] = `
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
   border-right-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -2108,6 +2237,10 @@ exports[`13. list two and six no pic 1`] = `
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
   border-right-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -2122,6 +2255,10 @@ exports[`13. list two and six no pic 1`] = `
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
   border-right-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -2154,6 +2291,10 @@ exports[`13. list two and six no pic 1`] = `
   border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -2168,6 +2309,10 @@ exports[`13. list two and six no pic 1`] = `
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
   border-right-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -2200,6 +2345,10 @@ exports[`13. list two and six no pic 1`] = `
   border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -2214,6 +2363,10 @@ exports[`13. list two and six no pic 1`] = `
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
   border-right-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -2268,55 +2421,57 @@ exports[`13. list two and six no pic 1`] = `
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
   width: 1366px;
   -ms-flex-item-align: center;
 }
 </style>
 
 <div
-  className="IS21 S1"
+  className="css-view-1dbjc4n IS21"
 >
   <div
-    className="IS20 S1"
+    className="css-view-1dbjc4n IS20"
   >
     <div
-      className="IS1 S1"
+      className="css-view-1dbjc4n IS1"
     >
       <TileC
         tileName="lead1"
       />
     </div>
     <div
-      className="IS2"
+      className="css-view-1dbjc4n IS2"
     />
     <div
-      className="IS3 S1"
+      className="css-view-1dbjc4n IS3"
     >
       <TileC
         tileName="lead2"
       />
     </div>
     <div
-      className="IS4"
+      className="css-view-1dbjc4n IS4"
     />
     <div
-      className="IS19 S1"
+      className="css-view-1dbjc4n IS19"
     >
       <div
-        className="IS8 S1"
+        className="css-view-1dbjc4n IS8"
       >
         <div
-          className="IS5 S1"
+          className="css-view-1dbjc4n IS5"
         >
           <TileL
             tileName="support1"
           />
         </div>
         <div
-          className="IS6"
+          className="css-view-1dbjc4n IS6"
         />
         <div
-          className="IS7 S1"
+          className="css-view-1dbjc4n IS7"
         >
           <TileL
             tileName="support2"
@@ -2324,23 +2479,23 @@ exports[`13. list two and six no pic 1`] = `
         </div>
       </div>
       <div
-        className="IS9 S1"
+        className="css-view-1dbjc4n IS9"
       />
       <div
-        className="IS13 S1"
+        className="css-view-1dbjc4n IS13"
       >
         <div
-          className="IS10 S1"
+          className="css-view-1dbjc4n IS10"
         >
           <TileL
             tileName="support3"
           />
         </div>
         <div
-          className="IS11"
+          className="css-view-1dbjc4n IS11"
         />
         <div
-          className="IS12 S1"
+          className="css-view-1dbjc4n IS12"
         >
           <TileL
             tileName="support4"
@@ -2348,23 +2503,23 @@ exports[`13. list two and six no pic 1`] = `
         </div>
       </div>
       <div
-        className="IS14 S1"
+        className="css-view-1dbjc4n IS14"
       />
       <div
-        className="IS18 S1"
+        className="css-view-1dbjc4n IS18"
       >
         <div
-          className="IS15 S1"
+          className="css-view-1dbjc4n IS15"
         >
           <TileL
             tileName="support5"
           />
         </div>
         <div
-          className="IS16"
+          className="css-view-1dbjc4n IS16"
         />
         <div
-          className="IS17 S1"
+          className="css-view-1dbjc4n IS17"
         >
           <TileL
             tileName="support6"
@@ -2378,15 +2533,6 @@ exports[`13. list two and six no pic 1`] = `
 
 exports[`14. leaders 1`] = `
 <style>
-.S1 {
-  font-weight: inherit;
-  margin-bottom: 0px;
-}
-
-.S2 {
-  margin-bottom: 0px;
-}
-
 .IS1 {
   height: 51;
   width: 283;
@@ -2424,6 +2570,10 @@ exports[`14. leaders 1`] = `
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
   border-right-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -2440,6 +2590,10 @@ exports[`14. leaders 1`] = `
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
   border-right-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -2473,6 +2627,8 @@ exports[`14. leaders 1`] = `
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
   width: 1366px;
   -ms-flex-item-align: center;
 }
@@ -2484,10 +2640,10 @@ exports[`14. leaders 1`] = `
 </style>
 
 <div
-  className="IS12 S2"
+  className="css-view-1dbjc4n IS12"
 >
   <div
-    className="IS4 S2"
+    className="css-view-1dbjc4n IS4"
   >
     <Image
       aspectRatio={5.74}
@@ -2495,43 +2651,43 @@ exports[`14. leaders 1`] = `
       uri="https://www.thetimes.co.uk/d/img/leaders-masthead-d17db00289.png"
     />
     <div
-      className="IS3 S2"
+      className="css-view-1dbjc4n IS3"
     >
       <div
-        className="IS2 S1"
+        className="css-text-76zvg2 IS2"
       >
          Leading Articles 
       </div>
     </div>
   </div>
   <div
-    className="IS11 S2"
+    className="css-view-1dbjc4n IS11"
   >
     <div
-      className="IS10 S2"
+      className="css-view-1dbjc4n IS10"
     >
       <div
-        className="IS5 S2"
+        className="css-view-1dbjc4n IS5"
       >
         <TileAG
           tileName="leader2"
         />
       </div>
       <div
-        className="IS6"
+        className="css-view-1dbjc4n IS6"
       />
       <div
-        className="IS7 S2"
+        className="css-view-1dbjc4n IS7"
       >
         <TileAG
           tileName="leader1"
         />
       </div>
       <div
-        className="IS8"
+        className="css-view-1dbjc4n IS8"
       />
       <div
-        className="IS9 S2"
+        className="css-view-1dbjc4n IS9"
       >
         <TileAG
           tileName="leader3"
@@ -2544,10 +2700,6 @@ exports[`14. leaders 1`] = `
 
 exports[`15. comment lead and cartoon 1`] = `
 <style>
-.S1 {
-  margin-bottom: 0px;
-}
-
 .IS1 {
   width: 33.3%;
 }
@@ -2558,6 +2710,10 @@ exports[`15. comment lead and cartoon 1`] = `
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
   border-right-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -2590,29 +2746,31 @@ exports[`15. comment lead and cartoon 1`] = `
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
   width: 1366px;
   -ms-flex-item-align: center;
 }
 </style>
 
 <div
-  className="IS5 S1"
+  className="css-view-1dbjc4n IS5"
 >
   <div
-    className="IS4 S1"
+    className="css-view-1dbjc4n IS4"
   >
     <div
-      className="IS1 S1"
+      className="css-view-1dbjc4n IS1"
     >
       <TileAH
         tileName="lead"
       />
     </div>
     <div
-      className="IS2"
+      className="css-view-1dbjc4n IS2"
     />
     <div
-      className="IS3 S1"
+      className="css-view-1dbjc4n IS3"
     >
       <TileAI
         tileName="cartoon"
@@ -2624,10 +2782,6 @@ exports[`15. comment lead and cartoon 1`] = `
 
 exports[`16. puzzle 1`] = `
 <style>
-.S1 {
-  margin-bottom: 0px;
-}
-
 .IS1 {
   width: 33%;
 }
@@ -2665,19 +2819,21 @@ exports[`16. puzzle 1`] = `
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
   width: 1366px;
   -ms-flex-item-align: center;
 }
 </style>
 
 <div
-  className="IS5 S1"
+  className="css-view-1dbjc4n IS5"
 >
   <div
-    className="IS4 S1"
+    className="css-view-1dbjc4n IS4"
   >
     <div
-      className="IS1 S1"
+      className="css-view-1dbjc4n IS1"
     >
       <TileAK
         id="0"
@@ -2699,7 +2855,7 @@ exports[`16. puzzle 1`] = `
       />
     </div>
     <div
-      className="IS2 S1"
+      className="css-view-1dbjc4n IS2"
     >
       <TileAK
         id="1"
@@ -2721,7 +2877,7 @@ exports[`16. puzzle 1`] = `
       />
     </div>
     <div
-      className="IS3 S1"
+      className="css-view-1dbjc4n IS3"
     >
       <TileAK
         id="2"

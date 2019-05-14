@@ -13,8 +13,15 @@ Array [
       >
         <RCTWebView
           className="IS1"
+          hardwareAccelerationEnabledExperimental={true}
           javaScriptEnabled={true}
           messagingEnabled={true}
+          originWhitelist={
+            Array [
+              "http://.*",
+              "https://.*",
+            ]
+          }
           saveFormDataDisabled={false}
           scalesPageToFit={true}
           thirdPartyCookiesEnabled={true}
@@ -33,8 +40,15 @@ Array [
       >
         <RCTWebView
           className="IS1"
+          hardwareAccelerationEnabledExperimental={true}
           javaScriptEnabled={true}
           messagingEnabled={true}
+          originWhitelist={
+            Array [
+              "http://.*",
+              "https://.*",
+            ]
+          }
           saveFormDataDisabled={false}
           scalesPageToFit={true}
           thirdPartyCookiesEnabled={true}

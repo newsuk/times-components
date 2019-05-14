@@ -255,7 +255,7 @@ exports[`6. an article list header 1`] = `
 <View>
   <View>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
     >
       Test Name
     </Text>
@@ -278,7 +278,7 @@ exports[`7. a topic header with no description 1`] = `
 <View>
   <View>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
     >
       No Desc
     </Text>

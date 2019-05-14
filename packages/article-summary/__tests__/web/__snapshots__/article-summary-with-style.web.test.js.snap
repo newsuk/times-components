@@ -16,15 +16,6 @@ exports[`1. article summary component with a single paragraph 1`] = `
 }
 
 .S3 {
-  color: inherit;
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  line-height: inherit;
-  margin-bottom: 0px;
-}
-
-.S4 {
   color: rgba(105,105,105,1.00);
   -ms-flex-wrap: wrap;
   -webkit-box-lines: multiple;
@@ -32,35 +23,24 @@ exports[`1. article summary component with a single paragraph 1`] = `
   flex-wrap: wrap;
   font-family: TimesDigitalW04;
   font-size: 14px;
-  font-weight: inherit;
   line-height: 20px;
   margin-bottom: 10px;
 }
 
-.S5 {
+.S4 {
   color: rgba(105,105,105,1.00);
   font-family: GillSansMTStd-Medium;
   font-size: 13px;
-  font-weight: inherit;
   line-height: 15px;
   margin-bottom: 5px;
-}
-
-.S6 {
-  color: inherit;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
-  font-size: 14px;
-  font-weight: inherit;
-  line-height: inherit;
-  margin-bottom: 0px;
 }
 </style>
 
 <div
-  className="S1"
+  className="css-view-1dbjc4n"
 >
   <div
-    className="S1"
+    className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
   >
     <ArticleLabel
       color="#333333"
@@ -69,16 +49,16 @@ exports[`1. article summary component with a single paragraph 1`] = `
   </div>
   <h3
     aria-level="3"
-    className="S2"
+    className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw r-marginBottom-d0pm55 S2"
     role="heading"
   >
     Test Headline
   </h3>
   <div
-    className="S4"
+    className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
   >
     <span
-      className="S3"
+      className="css-text-76zvg2 css-textHasAncestor-16my406"
     >
       
       Test paragraph
@@ -100,7 +80,7 @@ exports[`1. article summary component with a single paragraph 1`] = `
     }
   />
   <div
-    className="S5"
+    className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginBottom-d0pm55 S4"
     data-testid="datePublication"
   >
     <DatePublication
@@ -109,7 +89,7 @@ exports[`1. article summary component with a single paragraph 1`] = `
     />
   </div>
   <div
-    className="S6"
+    className="css-text-76zvg2"
   >
     <ArticleByline
       ast={
@@ -152,15 +132,6 @@ exports[`1. article summary component with a single paragraph 1`] = `
 exports[`2. article summary content component with the given style 1`] = `
 <style>
 .S1 {
-  color: inherit;
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  line-height: inherit;
-  margin-bottom: 0px;
-}
-
-.S2 {
   color: rgba(105,105,105,1.00);
   -ms-flex-wrap: wrap;
   -webkit-box-lines: multiple;
@@ -168,17 +139,16 @@ exports[`2. article summary content component with the given style 1`] = `
   flex-wrap: wrap;
   font-family: TimesDigitalW04;
   font-size: 14px;
-  font-weight: inherit;
   line-height: 20px;
   margin-bottom: 10px;
 }
 </style>
 
 <div
-  className="S2"
+  className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S1"
 >
   <span
-    className="S1"
+    className="css-text-76zvg2 css-textHasAncestor-16my406"
   >
     
     Test

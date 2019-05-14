@@ -1,31 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. secondary one and columnist - small 1`] = `
-<style>
-.S1 {
-  border-bottom-width: 0px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-}
-
-.S2 {
-  border-bottom-width: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-}
-
-.S3 {
-  border-bottom-width: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-}
-</style>
-
 <div
-  className="S1"
+  className="css-view-1dbjc4n"
   style={
     Object {
       "WebkitBoxDirection": "normal",
@@ -47,7 +24,7 @@ exports[`1. secondary one and columnist - small 1`] = `
   }
 >
   <div
-    className="S2"
+    className="css-view-1dbjc4n"
     style={
       Object {
         "paddingLeft": "10px",
@@ -57,27 +34,31 @@ exports[`1. secondary one and columnist - small 1`] = `
     }
   >
     <div
-      className="S1"
+      className="css-text-76zvg2"
     >
       secondary
     </div>
   </div>
   <div
-    className="S1"
+    className="css-view-1dbjc4n"
     style={
       Object {
         "borderBottomColor": "rgba(219,219,219,1.00)",
+        "borderBottomStyle": "solid",
         "borderLeftColor": "rgba(219,219,219,1.00)",
+        "borderLeftStyle": "solid",
         "borderRightColor": "rgba(219,219,219,1.00)",
+        "borderRightStyle": "solid",
         "borderRightWidth": "1px",
         "borderTopColor": "rgba(219,219,219,1.00)",
+        "borderTopStyle": "solid",
         "marginBottom": "10px",
         "marginTop": "10px",
       }
     }
   />
   <div
-    className="S3"
+    className="css-view-1dbjc4n"
     style={
       Object {
         "paddingRight": "10px",
@@ -86,7 +67,7 @@ exports[`1. secondary one and columnist - small 1`] = `
     }
   >
     <div
-      className="S1"
+      className="css-text-76zvg2"
     >
       columnist
     </div>
@@ -95,31 +76,8 @@ exports[`1. secondary one and columnist - small 1`] = `
 `;
 
 exports[`2. secondary one and columnist - medium 1`] = `
-<style>
-.S1 {
-  border-bottom-width: 0px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-}
-
-.S2 {
-  border-bottom-width: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-}
-
-.S3 {
-  border-bottom-width: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-}
-</style>
-
 <div
-  className="S1"
+  className="css-view-1dbjc4n"
   style={
     Object {
       "WebkitBoxDirection": "normal",
@@ -141,7 +99,7 @@ exports[`2. secondary one and columnist - medium 1`] = `
   }
 >
   <div
-    className="S2"
+    className="css-view-1dbjc4n"
     style={
       Object {
         "paddingLeft": "10px",
@@ -151,27 +109,31 @@ exports[`2. secondary one and columnist - medium 1`] = `
     }
   >
     <div
-      className="S1"
+      className="css-text-76zvg2"
     >
       secondary
     </div>
   </div>
   <div
-    className="S1"
+    className="css-view-1dbjc4n"
     style={
       Object {
         "borderBottomColor": "rgba(219,219,219,1.00)",
+        "borderBottomStyle": "solid",
         "borderLeftColor": "rgba(219,219,219,1.00)",
+        "borderLeftStyle": "solid",
         "borderRightColor": "rgba(219,219,219,1.00)",
+        "borderRightStyle": "solid",
         "borderRightWidth": "1px",
         "borderTopColor": "rgba(219,219,219,1.00)",
+        "borderTopStyle": "solid",
         "marginBottom": "10px",
         "marginTop": "10px",
       }
     }
   />
   <div
-    className="S3"
+    className="css-view-1dbjc4n"
     style={
       Object {
         "paddingRight": "10px",
@@ -180,7 +142,7 @@ exports[`2. secondary one and columnist - medium 1`] = `
     }
   >
     <div
-      className="S1"
+      className="css-text-76zvg2"
     >
       columnist
     </div>

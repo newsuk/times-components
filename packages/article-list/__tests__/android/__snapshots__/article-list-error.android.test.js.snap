@@ -22,7 +22,9 @@ exports[`1. page error 1`] = `
 `;
 
 exports[`2. article list 1`] = `
-<RCTScrollView>
+<RCTScrollView
+  removeClippedSubviews={true}
+>
   <View>
     <View>
       ArticleListItem

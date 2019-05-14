@@ -31,9 +31,11 @@ exports[`4. animations should have a fadein animation wrapper component 1`] = `
 }
 
 <div
-  className="c0"
+  className="c0 indexweb__FadeIn-v0crhg-0 c0 css-view-1dbjc4n"
 >
-  <div>
+  <div
+    className="css-text-76zvg2"
+  >
     Hello World
   </div>
 </div>
@@ -46,9 +48,11 @@ exports[`4. animations should have a fadein animation wrapper component 2`] = `
 }
 
 <div
-  className="c0"
+  className="c0 indexweb__FadeIn-v0crhg-0 c0 css-view-1dbjc4n"
 >
-  <div>
+  <div
+    className="css-text-76zvg2"
+  >
     Hello World
   </div>
 </div>

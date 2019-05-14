@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. article list 1`] = `
-<RCTScrollView>
+<RCTScrollView
+  removeClippedSubviews={false}
+>
   <View>
     <View>
       <View>
@@ -119,7 +121,9 @@ exports[`1. article list 1`] = `
 `;
 
 exports[`2. article list with no images 1`] = `
-<RCTScrollView>
+<RCTScrollView
+  removeClippedSubviews={false}
+>
   <View>
     <View>
       <View>
@@ -175,7 +179,9 @@ exports[`2. article list with no images 1`] = `
 `;
 
 exports[`3. a retry button when load more fails 1`] = `
-<RCTScrollView>
+<RCTScrollView
+  removeClippedSubviews={false}
+>
   <View>
     <View>
       <View>
@@ -228,7 +234,9 @@ exports[`3. a retry button when load more fails 1`] = `
 `;
 
 exports[`4. no footer with data equalling the count 1`] = `
-<RCTScrollView>
+<RCTScrollView
+  removeClippedSubviews={false}
+>
   <View>
     <View>
       <View>
@@ -406,7 +414,9 @@ Array [
 `;
 
 exports[`6. removes the retry button when successfully pressed 1`] = `
-<RCTScrollView>
+<RCTScrollView
+  removeClippedSubviews={false}
+>
   <View>
     <View>
       <View>

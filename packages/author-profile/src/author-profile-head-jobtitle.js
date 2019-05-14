@@ -4,7 +4,7 @@ import { Text } from "react-native";
 import styles from "./styles";
 
 const AuthorProfileHeadJobTitle = ({ jobTitle }) => (
-  <Text accessibilityRole="heading" aria-level="2" style={styles.jobTitle}>
+  <Text accessibilityRole="header" aria-level="2" style={styles.jobTitle}>
     {jobTitle.toLowerCase()}
   </Text>
 );

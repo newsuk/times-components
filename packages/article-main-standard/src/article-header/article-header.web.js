@@ -22,7 +22,7 @@ const ArticleHeader = ({
   <View style={style}>
     <HeaderLabel isVideo={hasVideo} label={label} />
     <HeadlineContainer
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="1"
       style={styles.articleHeadLineText}
     >

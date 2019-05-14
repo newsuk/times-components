@@ -9,11 +9,7 @@ exports[`Bar Spacing Decorator 1`] = `
     }
   }
 >
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-  >
+  <Text>
     I am in Storybook!
   </Text>
 </View>
@@ -35,11 +31,7 @@ exports[`Centered Decorator 1`] = `
     }
   }
 >
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-  >
+  <Text>
     I am in Storybook!
   </Text>
 </View>
@@ -55,22 +47,14 @@ exports[`Lateral Spacing Decorator 1`] = `
     }
   }
 >
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-  >
+  <Text>
     I am in Storybook!
   </Text>
 </View>
 `;
 
 exports[`StrictWrapper to wrap child components in Strict Mode 1`] = `
-<Text
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
->
+<Text>
   I am in Storybook!
 </Text>
 `;
@@ -246,11 +230,7 @@ exports[`White Background Decorator 1`] = `
     }
   }
 >
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-  >
+  <Text>
     I am in Storybook!
   </Text>
 </View>

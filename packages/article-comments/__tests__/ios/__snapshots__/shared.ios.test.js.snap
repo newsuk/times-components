@@ -32,9 +32,8 @@ exports[`enabled comments 1`] = `
     </Text>
   </Text>
   <View
-    accessibilityComponentType="button"
     accessibilityLabel="View comments"
-    accessibilityTraits="button"
+    accessibilityRole="button"
   >
     <Text
       title="View comments"
@@ -59,9 +58,8 @@ exports[`single comment 1`] = `
     </Text>
   </Text>
   <View
-    accessibilityComponentType="button"
     accessibilityLabel="View comments"
-    accessibilityTraits="button"
+    accessibilityRole="button"
   >
     <Text
       title="View comments"
@@ -86,9 +84,8 @@ exports[`zero comments 1`] = `
     </Text>
   </Text>
   <View
-    accessibilityComponentType="button"
     accessibilityLabel="Post a comment"
-    accessibilityTraits="button"
+    accessibilityRole="button"
   >
     <Text
       title="Post a comment"

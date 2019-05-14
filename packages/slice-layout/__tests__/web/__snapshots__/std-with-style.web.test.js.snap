@@ -135,30 +135,20 @@ exports[`2. a single child element 1`] = `
   }
 }
 
-<style>
-.S1 {
-  border-bottom-width: 0px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-}
-</style>
-
 <div
-  className="c0 c1 c2 S1"
+  className="c0 c1 c2 configweb__Base-sc-1adgnqc-2 c0 configweb__Base-sc-1adgnqc-1 c1 configweb__Base-sc-1adgnqc-0 c2 css-view-1dbjc4n"
 >
   <div
-    className="c3 S1"
+    className="c3 responsiveweb__SliceContainer-sc-2kg7gs-0 c3 css-view-1dbjc4n"
   >
     <div
-      className="c4 c5 c6 S1"
+      className="c4 c5 c6 responsiveweb__Base-aumpme-4 c4 responsiveweb__Base-aumpme-3 c5 responsiveweb__Base-aumpme-1 c6 css-view-1dbjc4n"
     >
       <div
-        className="c7 S1"
+        className="c7 responsiveweb__ChildContainer-aumpme-0 c7 css-view-1dbjc4n"
       >
         <div
-          className="S1"
+          className="css-text-76zvg2"
         >
           standard-1
         </div>
@@ -304,42 +294,32 @@ exports[`3. two child elements 1`] = `
   }
 }
 
-<style>
-.S1 {
-  border-bottom-width: 0px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-}
-</style>
-
 <div
-  className="c0 c1 S1"
+  className="c0 c1 configweb__Base-sc-1adgnqc-2 c0 configweb__Base-sc-1adgnqc-0 c1 css-view-1dbjc4n"
 >
   <div
-    className="c2 S1"
+    className="c2 responsiveweb__SliceContainer-sc-2kg7gs-0 c2 css-view-1dbjc4n"
   >
     <div
-      className="c3 c4 c5 S1"
+      className="c3 c4 c5 responsiveweb__Base-aumpme-4 c3 responsiveweb__Base-aumpme-3 c4 responsiveweb__Base-aumpme-1 c5 css-view-1dbjc4n"
     >
       <div
-        className="c6 S1"
+        className="c6 responsiveweb__ChildContainer-aumpme-0 c6 css-view-1dbjc4n"
       >
         <div
-          className="S1"
+          className="css-text-76zvg2"
         >
           standard-1
         </div>
       </div>
       <div
-        className="c7 S1"
+        className="c7 responsiveweb-sc-2kg7gs-1 c7 css-view-1dbjc4n"
       />
       <div
-        className="c6 S1"
+        className="c6 responsiveweb__ChildContainer-aumpme-0 c6 css-view-1dbjc4n"
       >
         <div
-          className="S1"
+          className="css-text-76zvg2"
         >
           standard-2
         </div>
@@ -487,54 +467,44 @@ exports[`4. three child elements 1`] = `
   }
 }
 
-<style>
-.S1 {
-  border-bottom-width: 0px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-}
-</style>
-
 <div
-  className="c0 c1 S1"
+  className="c0 c1 configweb__Base-sc-1adgnqc-2 c0 configweb__Base-sc-1adgnqc-0 c1 css-view-1dbjc4n"
 >
   <div
-    className="c2 S1"
+    className="c2 responsiveweb__SliceContainer-sc-2kg7gs-0 c2 css-view-1dbjc4n"
   >
     <div
-      className="c3 c4 c5 S1"
+      className="c3 c4 c5 responsiveweb__Base-aumpme-4 c3 responsiveweb__Base-aumpme-2 c4 responsiveweb__Base-aumpme-1 c5 css-view-1dbjc4n"
     >
       <div
-        className="c6 S1"
+        className="c6 responsiveweb__ChildContainer-aumpme-0 c6 css-view-1dbjc4n"
       >
         <div
-          className="S1"
+          className="css-text-76zvg2"
         >
           standard-1
         </div>
       </div>
       <div
-        className="c7 S1"
+        className="c7 responsiveweb-sc-2kg7gs-1 c7 css-view-1dbjc4n"
       />
       <div
-        className="c6 S1"
+        className="c6 responsiveweb__ChildContainer-aumpme-0 c6 css-view-1dbjc4n"
       >
         <div
-          className="S1"
+          className="css-text-76zvg2"
         >
           standard-2
         </div>
       </div>
       <div
-        className="c7 S1"
+        className="c7 responsiveweb-sc-2kg7gs-1 c7 css-view-1dbjc4n"
       />
       <div
-        className="c6 S1"
+        className="c6 responsiveweb__ChildContainer-aumpme-0 c6 css-view-1dbjc4n"
       >
         <div
-          className="S1"
+          className="css-text-76zvg2"
         >
           standard-3
         </div>

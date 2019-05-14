@@ -1,8 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. article summary component with a single paragraph 1`] = `
-<div>
-  <div>
+<div
+  className="css-view-1dbjc4n"
+>
+  <div
+    className="css-view-1dbjc4n r-marginBottom-p1pxzi"
+  >
     <ArticleLabel
       color="#333333"
       title="Test label"
@@ -10,12 +14,17 @@ exports[`1. article summary component with a single paragraph 1`] = `
   </div>
   <h3
     aria-level="3"
+    className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw r-marginBottom-d0pm55"
     role="heading"
   >
     Test Headline
   </h3>
-  <div>
-    <span>
+  <div
+    className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
+  >
+    <span
+      className="css-text-76zvg2 css-textHasAncestor-16my406"
+    >
       
       Test paragraph
       ...
@@ -35,13 +44,17 @@ exports[`1. article summary component with a single paragraph 1`] = `
       ]
     }
   />
-  <div>
+  <div
+    className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginBottom-d0pm55"
+  >
     <DatePublication
       date="2017-11-17T00:01:00.000Z"
       publication="TIMES"
     />
   </div>
-  <div>
+  <div
+    className="css-text-76zvg2"
+  >
     <ArticleByline
       ast={
         Array [
@@ -81,14 +94,20 @@ exports[`1. article summary component with a single paragraph 1`] = `
 `;
 
 exports[`2. article summary with opinion byline 1`] = `
-<div>
-  <div>
+<div
+  className="css-view-1dbjc4n"
+>
+  <div
+    className="css-view-1dbjc4n r-marginBottom-p1pxzi"
+  >
     <ArticleLabel
       color="#333333"
       title="Test label"
     />
   </div>
-  <div>
+  <div
+    className="css-text-76zvg2"
+  >
     <ArticleBylineOpinion
       ast={
         Array [
@@ -116,18 +135,25 @@ exports[`2. article summary with opinion byline 1`] = `
   </div>
   <h3
     aria-level="3"
+    className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw r-marginBottom-d0pm55"
     role="heading"
   >
     Test Headline
   </h3>
-  <div>
-    <span>
+  <div
+    className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
+  >
+    <span
+      className="css-text-76zvg2 css-textHasAncestor-16my406"
+    >
       
       Test paragraph
       ...
     </span>
   </div>
-  <div>
+  <div
+    className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginBottom-d0pm55"
+  >
     <DatePublication
       date="2017-11-17T00:01:00.000Z"
       publication="TIMES"
@@ -137,31 +163,44 @@ exports[`2. article summary with opinion byline 1`] = `
 `;
 
 exports[`3. article summary component with multiple paragraphs 1`] = `
-<div>
+<div
+  className="css-view-1dbjc4n"
+>
   <h3
     aria-level="3"
+    className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw r-marginBottom-d0pm55"
     role="heading"
   >
     Test Headline
   </h3>
-  <div>
-    <span>
+  <div
+    className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
+  >
+    <span
+      className="css-text-76zvg2 css-textHasAncestor-16my406"
+    >
       
       Test paragraph 1.
     </span>
-    <span>
+    <span
+      className="css-text-76zvg2 css-textHasAncestor-16my406"
+    >
        
       Test paragraph 2
       ...
     </span>
   </div>
-  <div>
+  <div
+    className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginBottom-d0pm55"
+  >
     <DatePublication
       date="2017-11-17T00:01:00.000Z"
       publication="TIMES"
     />
   </div>
-  <div>
+  <div
+    className="css-text-76zvg2"
+  >
     <ArticleByline
       ast={
         Array [
@@ -190,9 +229,15 @@ exports[`3. article summary component with multiple paragraphs 1`] = `
 `;
 
 exports[`4. article summary component with content including line breaks 1`] = `
-<div>
-  <div>
-    <span>
+<div
+  className="css-view-1dbjc4n"
+>
+  <div
+    className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
+  >
+    <span
+      className="css-text-76zvg2 css-textHasAncestor-16my406"
+    >
       
       <b>
         Review 1
@@ -202,7 +247,9 @@ exports[`4. article summary component with content including line breaks 1`] = `
       <br />
       ★★★★☆
     </span>
-    <span>
+    <span
+      className="css-text-76zvg2 css-textHasAncestor-16my406"
+    >
        
       <b>
         Review 2
@@ -212,7 +259,9 @@ exports[`4. article summary component with content including line breaks 1`] = `
       <br />
       ★★★☆☆
     </span>
-    <span>
+    <span
+      className="css-text-76zvg2 css-textHasAncestor-16my406"
+    >
        
       Test paragraph
       ...
@@ -222,8 +271,12 @@ exports[`4. article summary component with content including line breaks 1`] = `
 `;
 
 exports[`5. article summary component containing links 1`] = `
-<div>
-  <div>
+<div
+  className="css-view-1dbjc4n"
+>
+  <div
+    className="css-view-1dbjc4n r-marginBottom-p1pxzi"
+  >
     <ArticleLabel
       color="#333333"
       title="Test label"
@@ -231,25 +284,36 @@ exports[`5. article summary component containing links 1`] = `
   </div>
   <h3
     aria-level="3"
+    className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw r-marginBottom-d0pm55"
     role="heading"
   >
     Test Headline
   </h3>
-  <div>
-    <span>
+  <div
+    className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
+  >
+    <span
+      className="css-text-76zvg2 css-textHasAncestor-16my406"
+    >
       
-      <span>
+      <span
+        className="css-text-76zvg2 css-textHasAncestor-16my406"
+      >
         Sajid Javid
       </span>
        has warned the Home Office to expect an overhaul after the 
-      <span>
+      <span
+        className="css-text-76zvg2 css-textHasAncestor-16my406"
+      >
         Windrush scandal
       </span>
        as he ditches the policy of creating a “hostile
       ...
     </span>
   </div>
-  <div>
+  <div
+    className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginBottom-d0pm55"
+  >
     <DatePublication
       date="2017-11-17T00:01:00.000Z"
       publication="TIMES"
@@ -259,8 +323,12 @@ exports[`5. article summary component containing links 1`] = `
 `;
 
 exports[`6. article summary component with headline and no content 1`] = `
-<div>
-  <div>
+<div
+  className="css-view-1dbjc4n"
+>
+  <div
+    className="css-view-1dbjc4n r-marginBottom-p1pxzi"
+  >
     <ArticleLabel
       color="#333333"
       title="Test label"
@@ -268,11 +336,14 @@ exports[`6. article summary component with headline and no content 1`] = `
   </div>
   <h3
     aria-level="3"
+    className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw r-marginBottom-d0pm55"
     role="heading"
   >
     Test Headline
   </h3>
-  <div>
+  <div
+    className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginBottom-d0pm55"
+  >
     <DatePublication
       date="2017-07-01T14:32:00.000Z"
       publication="SUNDAYTIMES"
@@ -282,8 +353,12 @@ exports[`6. article summary component with headline and no content 1`] = `
 `;
 
 exports[`7. article summary component with empty content at the end trimmed 1`] = `
-<div>
-  <div>
+<div
+  className="css-view-1dbjc4n"
+>
+  <div
+    className="css-view-1dbjc4n r-marginBottom-p1pxzi"
+  >
     <ArticleLabel
       color="#333333"
       title="Test label"
@@ -291,31 +366,44 @@ exports[`7. article summary component with empty content at the end trimmed 1`] 
   </div>
   <h3
     aria-level="3"
+    className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw r-marginBottom-d0pm55"
     role="heading"
   >
     Test Headline
   </h3>
-  <div>
-    <span>
+  <div
+    className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
+  >
+    <span
+      className="css-text-76zvg2 css-textHasAncestor-16my406"
+    >
       
       Test paragraph 1.
     </span>
-    <span>
+    <span
+      className="css-text-76zvg2 css-textHasAncestor-16my406"
+    >
        
       Test paragraph 2
     </span>
-    <span>
+    <span
+      className="css-text-76zvg2 css-textHasAncestor-16my406"
+    >
        
       ...
     </span>
   </div>
-  <div>
+  <div
+    className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginBottom-d0pm55"
+  >
     <DatePublication
       date="2017-07-01T14:32:00.000Z"
       publication="SUNDAYTIMES"
     />
   </div>
-  <div>
+  <div
+    className="css-text-76zvg2"
+  >
     <ArticleByline
       ast={
         Array [
@@ -344,21 +432,30 @@ exports[`7. article summary component with empty content at the end trimmed 1`] 
 `;
 
 exports[`8. article summary component with no byline 1`] = `
-<div>
+<div
+  className="css-view-1dbjc4n"
+>
   <h3
     aria-level="3"
+    className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw r-marginBottom-d0pm55"
     role="heading"
   >
     Test Headline
   </h3>
-  <div>
-    <span>
+  <div
+    className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
+  >
+    <span
+      className="css-text-76zvg2 css-textHasAncestor-16my406"
+    >
       
       Test paragraph
       ...
     </span>
   </div>
-  <div>
+  <div
+    className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginBottom-d0pm55"
+  >
     <DatePublication
       date="2017-11-17T00:01:00.000Z"
       publication="TIMES"
@@ -368,27 +465,38 @@ exports[`8. article summary component with no byline 1`] = `
 `;
 
 exports[`9. article summary component with no label 1`] = `
-<div>
+<div
+  className="css-view-1dbjc4n"
+>
   <h3
     aria-level="3"
+    className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw r-marginBottom-d0pm55"
     role="heading"
   >
     Test Headline
   </h3>
-  <div>
-    <span>
+  <div
+    className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
+  >
+    <span
+      className="css-text-76zvg2 css-textHasAncestor-16my406"
+    >
       
       Test paragraph
       ...
     </span>
   </div>
-  <div>
+  <div
+    className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginBottom-d0pm55"
+  >
     <DatePublication
       date="2017-11-17T00:01:00.000Z"
       publication="TIMES"
     />
   </div>
-  <div>
+  <div
+    className="css-text-76zvg2"
+  >
     <ArticleByline
       ast={
         Array [
@@ -417,21 +525,31 @@ exports[`9. article summary component with no label 1`] = `
 `;
 
 exports[`10. article summary component with no headline 1`] = `
-<div>
-  <div>
+<div
+  className="css-view-1dbjc4n"
+>
+  <div
+    className="css-view-1dbjc4n r-marginBottom-p1pxzi"
+  >
     <ArticleLabel
       color="#333333"
       title="Test label"
     />
   </div>
-  <div>
-    <span>
+  <div
+    className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
+  >
+    <span
+      className="css-text-76zvg2 css-textHasAncestor-16my406"
+    >
       
       Test paragraph
       ...
     </span>
   </div>
-  <div>
+  <div
+    className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginBottom-d0pm55"
+  >
     <DatePublication
       date="2017-07-01T14:32:00.000Z"
       publication="SUNDAYTIMES"
@@ -441,8 +559,12 @@ exports[`10. article summary component with no headline 1`] = `
 `;
 
 exports[`11. article summary component with no date publication 1`] = `
-<div>
-  <div>
+<div
+  className="css-view-1dbjc4n"
+>
+  <div
+    className="css-view-1dbjc4n r-marginBottom-p1pxzi"
+  >
     <ArticleLabel
       color="#333333"
       title="Test label"
@@ -450,18 +572,25 @@ exports[`11. article summary component with no date publication 1`] = `
   </div>
   <h3
     aria-level="3"
+    className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw r-marginBottom-d0pm55"
     role="heading"
   >
     Test Headline
   </h3>
-  <div>
-    <span>
+  <div
+    className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
+  >
+    <span
+      className="css-text-76zvg2 css-textHasAncestor-16my406"
+    >
       
       Test paragraph
       ...
     </span>
   </div>
-  <div>
+  <div
+    className="css-text-76zvg2"
+  >
     <ArticleByline
       ast={
         Array [
@@ -490,8 +619,12 @@ exports[`11. article summary component with no date publication 1`] = `
 `;
 
 exports[`12. article summary component with a video label 1`] = `
-<div>
-  <div>
+<div
+  className="css-view-1dbjc4n"
+>
+  <div
+    className="css-view-1dbjc4n r-marginBottom-p1pxzi"
+  >
     <VideoLabel
       color="#333333"
       isVideo={true}
@@ -500,24 +633,33 @@ exports[`12. article summary component with a video label 1`] = `
   </div>
   <h3
     aria-level="3"
+    className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw r-marginBottom-d0pm55"
     role="heading"
   >
     Test Headline
   </h3>
-  <div>
-    <span>
+  <div
+    className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
+  >
+    <span
+      className="css-text-76zvg2 css-textHasAncestor-16my406"
+    >
       
       Test paragraph
       ...
     </span>
   </div>
-  <div>
+  <div
+    className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginBottom-d0pm55"
+  >
     <DatePublication
       date="2017-11-17T00:01:00.000Z"
       publication="TIMES"
     />
   </div>
-  <div>
+  <div
+    className="css-text-76zvg2"
+  >
     <ArticleByline
       ast={
         Array [
@@ -546,8 +688,12 @@ exports[`12. article summary component with a video label 1`] = `
 `;
 
 exports[`13. article summary component with a strapline 1`] = `
-<div>
-  <div>
+<div
+  className="css-view-1dbjc4n"
+>
+  <div
+    className="css-view-1dbjc4n r-marginBottom-p1pxzi"
+  >
     <ArticleLabel
       color="#333333"
       title="Test label"
@@ -555,18 +701,24 @@ exports[`13. article summary component with a strapline 1`] = `
   </div>
   <h3
     aria-level="3"
+    className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw r-marginBottom-d0pm55"
     role="heading"
   >
     Test Headline
   </h3>
   <h4
     aria-level="4"
+    className="css-reset-4rbku5 css-text-76zvg2 r-color-1khp51w r-fontFamily-4h8ur4 r-fontSize-1b6yd1w r-lineHeight-10yl4k r-paddingBottom-1mi0q7o"
     role="heading"
   >
     Test Strapline
   </h4>
-  <div>
-    <span>
+  <div
+    className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
+  >
+    <span
+      className="css-text-76zvg2 css-textHasAncestor-16my406"
+    >
       
       Test paragraph
       ...
@@ -586,13 +738,17 @@ exports[`13. article summary component with a strapline 1`] = `
       ]
     }
   />
-  <div>
+  <div
+    className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginBottom-d0pm55"
+  >
     <DatePublication
       date="2017-11-17T00:01:00.000Z"
       publication="TIMES"
     />
   </div>
-  <div>
+  <div
+    className="css-text-76zvg2"
+  >
     <ArticleByline
       ast={
         Array [

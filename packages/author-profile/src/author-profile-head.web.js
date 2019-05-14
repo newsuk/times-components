@@ -41,7 +41,7 @@ const AuthorProfileHead = ({
     if (!name) return null;
     return (
       <AuthorNameWrapper
-        accessibilityRole="heading"
+        accessibilityRole="header"
         aria-level="1"
         testID="author-name"
       >
@@ -51,10 +51,7 @@ const AuthorProfileHead = ({
   };
 
   return (
-    <AuthorHeadWrapper
-      accessibilityRole="banner"
-      style={styles.authorHeadContainer}
-    >
+    <AuthorHeadWrapper style={styles.authorHeadContainer}>
       <AuthorProfileHeadBaseWithTracking
         isLoading={isLoading}
         jobTitle={jobTitle}

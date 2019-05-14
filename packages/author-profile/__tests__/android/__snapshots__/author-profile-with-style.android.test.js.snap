@@ -177,23 +177,3 @@ exports[`2. an article list header loading 1`] = `
   </View>
 </View>
 `;
-
-exports[`3. an article list header faded in 1`] = `
-"Snapshot Diff:
-- First value
-+ Second value
-
-@@ -19,11 +19,11 @@
-    }
-  >
-    <View
-      style={
-        Object {
--         \\"opacity\\": 1,
-+         \\"opacity\\": 0,
-        }
-      }
-    >
-      <View
-        pointerEvents=\\"box-none\\""
-`;

@@ -4,7 +4,7 @@ exports[`1. one lead and one support related article 1`] = `
 <View>
   <View>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="3"
     >
       Related articles
@@ -38,7 +38,7 @@ exports[`1. one lead and one support related article 1`] = `
                   />
                 </View>
                 <Text
-                  accessibilityRole="heading"
+                  accessibilityRole="header"
                   aria-level="3"
                 >
                   First Short Headline
@@ -93,7 +93,7 @@ exports[`1. one lead and one support related article 1`] = `
                   />
                 </View>
                 <Text
-                  accessibilityRole="heading"
+                  accessibilityRole="header"
                   aria-level="3"
                 >
                   Second Short Headline

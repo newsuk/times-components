@@ -1,19 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. error state if a component throws an error 1`] = `
-<div>
+<div
+  className="css-text-76zvg2"
+>
   Error: an error occurred
 </div>
 `;
 
 exports[`2. error state if a component invokes an error 1`] = `
-<div>
+<div
+  className="css-text-76zvg2"
+>
   Error: some error
 </div>
 `;
 
 exports[`3. good state if there is no error 1`] = `
-<div>
+<div
+  className="css-text-76zvg2"
+>
   All good
 </div>
 `;

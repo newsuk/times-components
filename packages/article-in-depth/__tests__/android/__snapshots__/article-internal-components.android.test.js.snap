@@ -2,7 +2,7 @@
 
 exports[`1. article standfirst with content 1`] = `
 <Text
-  accessibilityRole="heading"
+  accessibilityRole="header"
   aria-level="2"
 >
   This is a standfirst

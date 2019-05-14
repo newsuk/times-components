@@ -1,8 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. overlay gradient with a child 1`] = `
-<div>
-  <div>
+<div
+  className="css-view-1dbjc4n"
+>
+  <div
+    className="css-text-76zvg2"
+  >
     Hello world!
   </div>
 </div>

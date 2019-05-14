@@ -16,6 +16,7 @@ exports[`1. article with header 1`] = `
     numColumns={1}
     onEndReachedThreshold={2}
     pageSize={1}
+    removeClippedSubviews={false}
     scrollEventThrottle={50}
     scrollRenderAheadDistance={10}
     updateCellsBatchingPeriod={50}
