@@ -115,6 +115,7 @@ exports[`save and share bar component save and share bar renders correctly 1`] =
       }
     }
   >
+<<<<<<< HEAD
     <div
       className="css-text-76zvg2"
       style={
@@ -124,21 +125,20 @@ exports[`save and share bar component save and share bar renders correctly 1`] =
           "fontSize": "14px",
           "lineHeight": "14px",
           "marginRight": "10px",
+=======
+    <SaveStarWeb
+      articleId="96508c84-6611-11e9-adc2-05e1b87efaea"
+      colour="#696969"
+      hoverColor="#1D1D1B"
+      saveApi={
+        Object {
+          "bookmark": [Function],
+          "getBookmarks": [Function],
+          "unBookmark": [Function],
+>>>>>>> feat: Save Star functionality
         }
       }
-    >
-      Save
-    </div>
-    <BarItem
-      color="#696969"
-      hoverColor="#1D1D1B"
-    >
-      <IconSaveBookmark
-        fillColour="#FFFFFF"
-        strokeColour="currentColor"
-        title="Save to My Articles"
-      />
-    </BarItem>
+    />
   </div>
 </div>
 `;

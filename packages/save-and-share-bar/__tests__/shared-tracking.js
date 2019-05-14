@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import "./mocks";
 import BarItem from "../src/bar-item";
 import SaveAndShareBar from "../src/save-and-share-bar";
+import mockSaveApi from "@times-components/save-star-web/mock-save-api";
 
 class WithTrackingContext extends Component {
   getChildContext() {
@@ -63,6 +64,7 @@ export default () => {
           onShareOnEmail={onShareOnEmail}
           onShareOnFB={onShareOnFB}
           onShareOnTwitter={onShareOnTwitter}
+          saveApi={mockSaveApi}
         />
       );
     });
@@ -114,7 +116,7 @@ export default () => {
     it("when press save to my articles", () => {
       const saveToMyArticlesBarItem = testInstance.root.findAllByType(
         BarItem
-      )[4];
+      )[3];
       saveToMyArticlesBarItem.props.onPress();
 
       const [[call]] = stream.mock.calls;
