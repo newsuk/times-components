@@ -28,6 +28,7 @@ const makeHtml = (
           </head>
           <body style="margin:0">
             <script>window.nuk = {
+              getCookieValue: () => "cookie",
               graphqlapi: {url: "${process.env.GRAPHQL_ENDPOINT}"},
               tracking: {enabled: false}
             };</script>

@@ -21,6 +21,7 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     makeTopicUrl,
     mapArticleToAdConfig,
     spotAccountId,
+    getCookieValue,
     userState
   } = data;
 
@@ -42,6 +43,7 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
             ContextProviderWithDefaults,
             {
               value: {
+                getCookieValue,
                 makeArticleUrl,
                 makeTopicUrl,
                 theme: {

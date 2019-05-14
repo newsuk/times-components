@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import TestRenderer from "react-test-renderer";
+import mockSaveApi from "@times-components/save-star-web/mock-save-api";
 import PropTypes from "prop-types";
 import "./mocks";
 import BarItem from "../src/bar-item";
 import SaveAndShareBar from "../src/save-and-share-bar";
-import mockSaveApi from "@times-components/save-star-web/mock-save-api";
 
 class WithTrackingContext extends Component {
   getChildContext() {
