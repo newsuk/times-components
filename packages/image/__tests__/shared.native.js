@@ -58,19 +58,45 @@ export default () => {
     {
       name: "handle onload event",
       test: () => {
+        jest.useFakeTimers();
+
         const testInstance = TestRenderer.create(<Image {...props} />);
 
         testInstance.root.children[0].props.onLayout(
           getLayoutEventForWidth(700)
         );
 
-        expect(testInstance).toMatchSnapshot();
-
         testInstance.root
-          .findAll(node => node.type === ReactNativeImage)[1]
+          .findAll(node => node.type === ReactNativeImage)[0]
           .props.onLoad();
 
         expect(testInstance).toMatchSnapshot();
+
+        jest.runAllTimers();
+
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "componentWillUnmount cancels animation timer",
+      test: () => {
+        jest.useFakeTimers();
+
+        const testRenderer = TestRenderer.create(<Image {...props} />);
+
+        testRenderer.root.children[0].props.onLayout(
+          getLayoutEventForWidth(700)
+        );
+
+        testRenderer.root
+          .findAll(node => node.type === ReactNativeImage)[0]
+          .props.onLoad();
+
+        testRenderer.getInstance().componentWillUnmount();
+
+        jest.runAllTimers();
+
+        expect(testRenderer).toMatchSnapshot();
       }
     },
     {
@@ -87,7 +113,7 @@ export default () => {
         );
 
         expect(
-          testInstance.root.findAll(node => node.type === ReactNativeImage)[1]
+          testInstance.root.findAll(node => node.type === ReactNativeImage)[0]
             .props.source.uri
         ).toEqual(dataUri);
       }
@@ -122,16 +148,7 @@ export default () => {
         const images = testInstance.root.findAll(
           node => node.type === ReactNativeImage
         );
-        expect(images[images.length - 1].props.source.uri).toEqual(uri);
-      }
-    },
-    {
-      name: "image with borderRadius",
-      test: () => {
-        const testInstance = TestRenderer.create(
-          <Image {...props} borderRadius={10} />
-        );
-        expect(testInstance).toMatchSnapshot();
+        expect(images[0].props.source.uri).toEqual(uri);
       }
     },
     {
@@ -141,21 +158,6 @@ export default () => {
           <Image {...props} highResSize={2000} lowResSize={800} />
         );
         expect(testInstance).toMatchSnapshot();
-      }
-    },
-    {
-      name: "handle onImageLayout event",
-      test: () => {
-        const mockEvt = getLayoutEventForWidth(700);
-        const mockOnImageLayout = jest.fn();
-        const testInstance = TestRenderer.create(
-          <Image {...props} onImageLayout={mockOnImageLayout} />
-        );
-
-        testInstance.root.children[0].props.onLayout(mockEvt);
-        expect(mockOnImageLayout).toHaveBeenCalledWith(
-          mockEvt.nativeEvent.layout
-        );
       }
     },
     {

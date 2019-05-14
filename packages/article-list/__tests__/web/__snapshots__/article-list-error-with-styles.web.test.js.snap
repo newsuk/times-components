@@ -74,6 +74,18 @@ exports[`1. page error 1`] = `
 
 <style>
 .S1 {
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: rgba(237,237,237,1.00);
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.S2 {
   -ms-flex-item-align: center;
   -webkit-align-self: center;
   align-self: center;
@@ -85,7 +97,7 @@ exports[`1. page error 1`] = `
   text-align: center;
 }
 
-.S2 {
+.S3 {
   color: rgba(105,105,105,1.00);
   font-family: TimesDigitalW04-Regular;
   font-size: 18px;
@@ -123,6 +135,15 @@ exports[`1. page error 1`] = `
         <img
           className="c2"
         />
+        <div
+          className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-15282we r-justifyContent-1777fci S1"
+        >
+          <svg>
+            <g>
+              <path />
+            </g>
+          </svg>
+        </div>
       </div>
     </div>
   </div>
@@ -130,12 +151,12 @@ exports[`1. page error 1`] = `
     className="c3 responsiveweb__PageErrorContentContainer-sc-143eup1-7 c3 css-view-1dbjc4n"
   >
     <div
-      className="css-text-76zvg2 r-alignSelf-1kihuf0 r-color-1yqk5fa r-fontFamily-iirzy8 r-fontSize-yy2aun r-lineHeight-eaezby r-marginBottom-15d164r r-marginTop-1x0uki6 r-textAlign-q4m81j S1"
+      className="css-text-76zvg2 r-alignSelf-1kihuf0 r-color-1yqk5fa r-fontFamily-iirzy8 r-fontSize-yy2aun r-lineHeight-eaezby r-marginBottom-15d164r r-marginTop-1x0uki6 r-textAlign-q4m81j S2"
     >
       Something's gone wrong
     </div>
     <div
-      className="css-text-76zvg2 r-color-1khp51w r-fontFamily-lmhck6 r-fontSize-1i10wst r-lineHeight-1kt6imw r-textAlign-q4m81j S2"
+      className="css-text-76zvg2 r-color-1khp51w r-fontFamily-lmhck6 r-fontSize-1i10wst r-lineHeight-1kt6imw r-textAlign-q4m81j S3"
     >
       We can't load the page you have requested. Please check your network connection and retry to continue
     </div>

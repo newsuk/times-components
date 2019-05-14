@@ -46,43 +46,38 @@ exports[`1. modal image 1`] = `
       >
         <Gestures>
           <View
-            aspectRatio={1.5}
+            aspectRatio={2}
           >
-            <View
-              height={350}
-              width={525}
-            >
+            <View>
               <Image
-                resizeMode="contain"
+                caption={<MockCaption />}
+                fadeDuration={0}
+                fadeImageIn={false}
+                onImagePress={null}
+                show={false}
                 source={
                   Object {
-                    "testUri": "../../../packages/image/assets/t.png",
+                    "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800",
                   }
                 }
               />
             </View>
-            <Image
-              caption={<MockCaption />}
-              fadeImageIn={false}
-              onImagePress={null}
-              show={false}
-              source={
-                Object {
-                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=660",
-                }
-              }
-            />
-            <Image
-              caption={<MockCaption />}
-              fadeImageIn={false}
-              onImagePress={null}
-              show={false}
-              source={
-                Object {
-                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=660",
-                }
-              }
-            />
+            <View>
+              <View>
+                <Image
+                  caption={<MockCaption />}
+                  fadeDuration={0}
+                  fadeImageIn={false}
+                  onImagePress={null}
+                  show={false}
+                  source={
+                    Object {
+                      "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800",
+                    }
+                  }
+                />
+              </View>
+            </View>
           </View>
         </Gestures>
       </SafeAreaView>
@@ -99,32 +94,38 @@ exports[`1. modal image 1`] = `
   </Modal>
   <View>
     <View
-      aspectRatio={1.5}
+      aspectRatio={2}
     >
-      <View
-        height={350}
-        width={525}
-      >
+      <View>
         <Image
-          resizeMode="contain"
+          caption={<MockCaption />}
+          fadeDuration={0}
+          fadeImageIn={false}
+          onImagePress={null}
+          show={false}
           source={
             Object {
-              "testUri": "../../../packages/image/assets/t.png",
+              "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800",
             }
           }
         />
       </View>
-      <Image
-        caption={<MockCaption />}
-        fadeImageIn={false}
-        onImagePress={null}
-        show={false}
-        source={
-          Object {
-            "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=660",
-          }
-        }
-      />
+      <View>
+        <View
+          height="100%"
+          width="100%"
+        >
+          <Image
+            fadeDuration={0}
+            resizeMode="contain"
+            source={
+              Object {
+                "testUri": "../../../packages/image/assets/t.png",
+              }
+            }
+          />
+        </View>
+      </View>
     </View>
   </View>
 </View>
@@ -176,15 +177,34 @@ exports[`2. modal image with no caption 1`] = `
       >
         <Gestures>
           <View
-            aspectRatio={1.5}
+            aspectRatio={2}
           >
-            <Image
-              caption={null}
-              fadeImageIn={false}
-              onImagePress={null}
-              show={false}
-              source={null}
-            />
+            <View>
+              <Image
+                caption={null}
+                fadeDuration={0}
+                fadeImageIn={false}
+                onImagePress={null}
+                show={false}
+                source={null}
+              />
+            </View>
+            <View>
+              <View
+                height="100%"
+                width="100%"
+              >
+                <Image
+                  fadeDuration={0}
+                  resizeMode="contain"
+                  source={
+                    Object {
+                      "testUri": "../../../packages/image/assets/t.png",
+                    }
+                  }
+                />
+              </View>
+            </View>
           </View>
         </Gestures>
       </SafeAreaView>
@@ -195,15 +215,34 @@ exports[`2. modal image with no caption 1`] = `
   </Modal>
   <View>
     <View
-      aspectRatio={1.5}
+      aspectRatio={2}
     >
-      <Image
-        caption={null}
-        fadeImageIn={false}
-        onImagePress={null}
-        show={false}
-        source={null}
-      />
+      <View>
+        <Image
+          caption={null}
+          fadeDuration={0}
+          fadeImageIn={false}
+          onImagePress={null}
+          show={false}
+          source={null}
+        />
+      </View>
+      <View>
+        <View
+          height="100%"
+          width="100%"
+        >
+          <Image
+            fadeDuration={0}
+            resizeMode="contain"
+            source={
+              Object {
+                "testUri": "../../../packages/image/assets/t.png",
+              }
+            }
+          />
+        </View>
+      </View>
     </View>
   </View>
 </View>
@@ -255,43 +294,38 @@ exports[`3. modal image with custom highressize 1`] = `
       >
         <Gestures>
           <View
-            aspectRatio={1.5}
+            aspectRatio={2}
           >
-            <View
-              height={350}
-              width={525}
-            >
+            <View>
               <Image
-                resizeMode="contain"
+                caption={<MockCaption />}
+                fadeDuration={0}
+                fadeImageIn={false}
+                onImagePress={null}
+                show={false}
                 source={
                   Object {
-                    "testUri": "../../../packages/image/assets/t.png",
+                    "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800",
                   }
                 }
               />
             </View>
-            <Image
-              caption={<MockCaption />}
-              fadeImageIn={false}
-              onImagePress={null}
-              show={false}
-              source={
-                Object {
-                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
-                }
-              }
-            />
-            <Image
-              caption={<MockCaption />}
-              fadeImageIn={false}
-              onImagePress={null}
-              show={false}
-              source={
-                Object {
-                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
-                }
-              }
-            />
+            <View>
+              <View>
+                <Image
+                  caption={<MockCaption />}
+                  fadeDuration={0}
+                  fadeImageIn={false}
+                  onImagePress={null}
+                  show={false}
+                  source={
+                    Object {
+                      "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800",
+                    }
+                  }
+                />
+              </View>
+            </View>
           </View>
         </Gestures>
       </SafeAreaView>
@@ -308,38 +342,44 @@ exports[`3. modal image with custom highressize 1`] = `
   </Modal>
   <View>
     <View
-      aspectRatio={1.5}
+      aspectRatio={2}
     >
-      <View
-        height={350}
-        width={525}
-      >
+      <View>
         <Image
-          resizeMode="contain"
+          caption={<MockCaption />}
+          fadeDuration={0}
+          fadeImageIn={false}
+          onImagePress={null}
+          show={false}
           source={
             Object {
-              "testUri": "../../../packages/image/assets/t.png",
+              "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
             }
           }
         />
       </View>
-      <Image
-        caption={<MockCaption />}
-        fadeImageIn={false}
-        onImagePress={null}
-        show={false}
-        source={
-          Object {
-            "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
-          }
-        }
-      />
+      <View>
+        <View
+          height="100%"
+          width="100%"
+        >
+          <Image
+            fadeDuration={0}
+            resizeMode="contain"
+            source={
+              Object {
+                "testUri": "../../../packages/image/assets/t.png",
+              }
+            }
+          />
+        </View>
+      </View>
     </View>
   </View>
 </View>
 `;
 
-exports[`8. hides elements when tapping on the image 1`] = `
+exports[`9. hides elements when tapping on the image 1`] = `
 <View>
   <Modal
     animationType="slide"
@@ -374,15 +414,34 @@ exports[`8. hides elements when tapping on the image 1`] = `
       >
         <Gestures>
           <View
-            aspectRatio={1.5}
+            aspectRatio={2}
           >
-            <Image
-              caption={<MockCaption />}
-              fadeImageIn={false}
-              onImagePress={null}
-              show={true}
-              source={null}
-            />
+            <View>
+              <Image
+                caption={<MockCaption />}
+                fadeDuration={0}
+                fadeImageIn={false}
+                onImagePress={null}
+                show={true}
+                source={null}
+              />
+            </View>
+            <View>
+              <View
+                height="100%"
+                width="100%"
+              >
+                <Image
+                  fadeDuration={0}
+                  resizeMode="contain"
+                  source={
+                    Object {
+                      "testUri": "../../../packages/image/assets/t.png",
+                    }
+                  }
+                />
+              </View>
+            </View>
           </View>
         </Gestures>
       </SafeAreaView>
@@ -390,21 +449,40 @@ exports[`8. hides elements when tapping on the image 1`] = `
   </Modal>
   <View>
     <View
-      aspectRatio={1.5}
+      aspectRatio={2}
     >
-      <Image
-        caption={<MockCaption />}
-        fadeImageIn={false}
-        onImagePress={null}
-        show={true}
-        source={null}
-      />
+      <View>
+        <Image
+          caption={<MockCaption />}
+          fadeDuration={0}
+          fadeImageIn={false}
+          onImagePress={null}
+          show={true}
+          source={null}
+        />
+      </View>
+      <View>
+        <View
+          height="100%"
+          width="100%"
+        >
+          <Image
+            fadeDuration={0}
+            resizeMode="contain"
+            source={
+              Object {
+                "testUri": "../../../packages/image/assets/t.png",
+              }
+            }
+          />
+        </View>
+      </View>
     </View>
   </View>
 </View>
 `;
 
-exports[`9. re-shows elements when tapping on the image a second time 1`] = `
+exports[`10. re-shows elements when tapping on the image a second time 1`] = `
 <View>
   <Modal
     animationType="slide"
@@ -450,15 +528,34 @@ exports[`9. re-shows elements when tapping on the image a second time 1`] = `
       >
         <Gestures>
           <View
-            aspectRatio={1.5}
+            aspectRatio={2}
           >
-            <Image
-              caption={<MockCaption />}
-              fadeImageIn={false}
-              onImagePress={null}
-              show={true}
-              source={null}
-            />
+            <View>
+              <Image
+                caption={<MockCaption />}
+                fadeDuration={0}
+                fadeImageIn={false}
+                onImagePress={null}
+                show={true}
+                source={null}
+              />
+            </View>
+            <View>
+              <View
+                height="100%"
+                width="100%"
+              >
+                <Image
+                  fadeDuration={0}
+                  resizeMode="contain"
+                  source={
+                    Object {
+                      "testUri": "../../../packages/image/assets/t.png",
+                    }
+                  }
+                />
+              </View>
+            </View>
           </View>
         </Gestures>
       </SafeAreaView>
@@ -475,15 +572,34 @@ exports[`9. re-shows elements when tapping on the image a second time 1`] = `
   </Modal>
   <View>
     <View
-      aspectRatio={1.5}
+      aspectRatio={2}
     >
-      <Image
-        caption={<MockCaption />}
-        fadeImageIn={false}
-        onImagePress={null}
-        show={true}
-        source={null}
-      />
+      <View>
+        <Image
+          caption={<MockCaption />}
+          fadeDuration={0}
+          fadeImageIn={false}
+          onImagePress={null}
+          show={true}
+          source={null}
+        />
+      </View>
+      <View>
+        <View
+          height="100%"
+          width="100%"
+        >
+          <Image
+            fadeDuration={0}
+            resizeMode="contain"
+            source={
+              Object {
+                "testUri": "../../../packages/image/assets/t.png",
+              }
+            }
+          />
+        </View>
+      </View>
     </View>
   </View>
 </View>

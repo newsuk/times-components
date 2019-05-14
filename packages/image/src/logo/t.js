@@ -1,18 +1,16 @@
 import React from "react";
 import { Image } from "react-native";
-import PropTypes from "prop-types";
 
-const T = ({ width }) => (
-  <Image
-    resizeMode="contain"
-    // eslint-disable-next-line global-require
-    source={require("../../assets/t.png")}
-    style={{ width: Math.floor(width / 4) }}
-  />
-);
-
-T.propTypes = {
-  width: PropTypes.number.isRequired
-};
+function T() {
+  return (
+    <Image
+      fadeDuration={0}
+      resizeMode="contain"
+      // eslint-disable-next-line global-require
+      source={require("../../assets/t.png")}
+      style={{ width: "25%" }}
+    />
+  );
+}
 
 export default T;

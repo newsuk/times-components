@@ -117,7 +117,7 @@ export default ({
                       credits
                     }}
                     imageOptions={{
-                      display: "primary",
+                      display: display === "inline" ? "secondary" : display,
                       ratio,
                       uri: url
                     }}

@@ -70,7 +70,6 @@
     "@times-components/styleguide": "3.28.14",
     "@times-components/svgs": "2.7.8",
     "@times-components/utils": "4.10.11",
-    "intrinsic-scale": "3.0.3",
     "lodash.memoize": "4.1.2",
     "prop-types": "15.7.2",
     "styled-components": "3.4.0"

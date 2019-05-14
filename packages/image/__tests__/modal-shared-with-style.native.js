@@ -28,7 +28,7 @@ const props = {
   uri: "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0"
 };
 
-function callOnLayout(testRenderer, layout = { height: 700, width: 300 }) {
+function callOnLayout(testRenderer, layout = { height: 700, width: 350 }) {
   testRenderer.root.children[0].instance.onLowResLayout({
     nativeEvent: { layout }
   });
@@ -80,7 +80,7 @@ export default () => {
           </Responsive>
         );
 
-        callOnLayout(testRenderer, { height: 1300, width: 700 });
+        callOnLayout(testRenderer, { height: 1400, width: 700 });
 
         expect(testRenderer).toMatchSnapshot();
       }
@@ -95,7 +95,7 @@ export default () => {
           </Responsive>
         );
 
-        callOnLayout(testRenderer, { height: 700, width: 1300 });
+        callOnLayout(testRenderer, { height: 700, width: 1400 });
 
         expect(testRenderer).toMatchSnapshot();
       }

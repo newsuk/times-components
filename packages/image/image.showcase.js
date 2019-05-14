@@ -9,7 +9,7 @@ const sixteenNineUri =
   "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F7d2fd06c-a460-11e7-8955-1ad2a9a7928d.jpg?crop=1500%2C844%2C0%2C78&resize=685";
 
 const SquareImage = props => (
-  <Image aspectRatio={1 / 1} uri={squareUri} {...props} />
+  <Image aspectRatio={1} uri={squareUri} {...props} />
 );
 const SixteenNineImage = props => (
   <Image aspectRatio={16 / 9} uri={sixteenNineUri} {...props} />
@@ -20,6 +20,11 @@ export default {
     {
       component: () => <SquareImage />,
       name: "Fills parent width",
+      type: "story"
+    },
+    {
+      component: () => <SquareImage rounded />,
+      name: "Rounded images",
       type: "story"
     },
     {
