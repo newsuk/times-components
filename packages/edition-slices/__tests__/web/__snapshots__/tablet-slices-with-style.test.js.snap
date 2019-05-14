@@ -816,6 +816,7 @@ exports[`8. secondary one - medium 1`] = `
   className="IS1 S1"
 >
   <TileW
+    breakpoint="wide"
     tileName="secondary"
   />
 </div>
@@ -2511,6 +2512,7 @@ exports[`23. secondary one - wide 1`] = `
   className="IS1 S1"
 >
   <TileW
+    breakpoint="wide"
     tileName="secondary"
   />
 </div>
@@ -4206,6 +4208,7 @@ exports[`38. secondary one - huge 1`] = `
   className="IS1 S1"
 >
   <TileW
+    breakpoint="wide"
     tileName="secondary"
   />
 </div>

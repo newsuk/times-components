@@ -1343,6 +1343,7 @@ exports[`7. secondary one 1`] = `
   className="IS1 S1"
 >
   <TileW
+    breakpoint="wide"
     tileName="secondary"
   />
 </div>

@@ -18,12 +18,19 @@ class SecondaryOneSlice extends Component {
     return <TileA onPress={onPress} tile={secondary} tileName="secondary" />;
   }
 
-  renderMedium() {
+  renderMedium(breakpoint) {
     const {
       onPress,
       slice: { secondary }
     } = this.props;
-    return <TileW onPress={onPress} tile={secondary} tileName="secondary" />;
+    return (
+      <TileW
+        onPress={onPress}
+        tile={secondary}
+        tileName="secondary"
+        breakpoint={breakpoint}
+      />
+    );
   }
 
   render() {
