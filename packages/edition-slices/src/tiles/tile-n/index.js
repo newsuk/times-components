@@ -9,30 +9,34 @@ import {
   TileSummary,
   withTileTracking
 } from "../shared";
-import styles from "./styles";
+import styleFactory from "./styles";
 
-const TileN = ({ isDarkStar, onPress, tile }) => (
-  <TileLink onPress={onPress} style={styles.container} tile={tile}>
-    <Image
-      aspectRatio={1}
-      style={styles.imageContainer}
-      uri={getTileImageUri(tile, "crop11")}
-    />
-    <TileSummary
-      flagColour={styles.flagColour}
-      headlineStyle={styles.headline}
-      isDarkStar={isDarkStar}
-      labelColour={colours.functional.greyLabel}
-      strapline={getTileStrapline(tile)}
-      style={styles.summaryContainer}
-      tile={tile}
-    />
-  </TileLink>
-);
+const TileN = ({ isDarkStar, onPress, tile, breakpoint }) => {
+  const styles = styleFactory(breakpoint);
+  return (
+    <TileLink onPress={onPress} style={styles.container} tile={tile}>
+      <Image
+        aspectRatio={1}
+        style={styles.imageContainer}
+        uri={getTileImageUri(tile, "crop11")}
+      />
+      <TileSummary
+        flagColour={styles.flagColour}
+        headlineStyle={styles.headline}
+        isDarkStar={isDarkStar}
+        labelColour={colours.functional.greyLabel}
+        strapline={getTileStrapline(tile)}
+        style={styles.summaryContainer}
+        tile={tile}
+      />
+    </TileLink>
+  );
+};
 
 TileN.propTypes = {
   isDarkStar: PropTypes.bool,
   onPress: PropTypes.func.isRequired,
+  breakpoint: PropTypes.string.isRequired,
   tile: PropTypes.shape({}).isRequired
 };
 

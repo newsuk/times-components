@@ -1560,7 +1560,6 @@ exports[`14. tile n 1`] = `
 
 .S3 {
   font-family: TimesModern-Bold;
-  font-size: 22px;
   font-weight: 400;
   margin-bottom: 5px;
 }
@@ -1584,7 +1583,8 @@ exports[`14. tile n 1`] = `
 
 .IS3 {
   color: rgba(255,255,255,1.00);
-  line-height: 22px;
+  font-size: 30px;
+  line-height: 33px;
 }
 
 .IS4 {

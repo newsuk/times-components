@@ -33,46 +33,49 @@ exports[`1. secondary one and four 1`] = `
 <div>
   <div>
     <div>
-      <TheSTLogo
-        height={40}
-        width={60}
-      />
-    </div>
-    <div />
-    <div>
       <div>
-        <div>
-          <TileN
-            tileName="secondary"
-          />
-        </div>
+        <TheSTLogo
+          height={40}
+          width={60}
+        />
       </div>
       <div />
       <div>
         <div>
-          <TileO
-            tileName="support1"
-          />
+          <div>
+            <TileN
+              breakpoint="wide"
+              tileName="secondary"
+            />
+          </div>
         </div>
         <div />
         <div>
-          <TileO
-            tileName="support3"
-          />
-        </div>
-      </div>
-      <div />
-      <div>
-        <div>
-          <TileO
-            tileName="support2"
-          />
+          <div>
+            <TileO
+              tileName="support1"
+            />
+          </div>
+          <div />
+          <div>
+            <TileO
+              tileName="support3"
+            />
+          </div>
         </div>
         <div />
         <div>
-          <TileO
-            tileName="support4"
-          />
+          <div>
+            <TileO
+              tileName="support2"
+            />
+          </div>
+          <div />
+          <div>
+            <TileO
+              tileName="support4"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -84,46 +87,49 @@ exports[`1. secondary one and four 2`] = `
 <div>
   <div>
     <div>
-      <TheTimesLogo
-        height={40}
-        width={42}
-      />
-    </div>
-    <div />
-    <div>
       <div>
-        <div>
-          <TileN
-            tileName="secondary"
-          />
-        </div>
+        <TheTimesLogo
+          height={40}
+          width={42}
+        />
       </div>
       <div />
       <div>
         <div>
-          <TileO
-            tileName="support1"
-          />
+          <div>
+            <TileN
+              breakpoint="wide"
+              tileName="secondary"
+            />
+          </div>
         </div>
         <div />
         <div>
-          <TileO
-            tileName="support3"
-          />
-        </div>
-      </div>
-      <div />
-      <div>
-        <div>
-          <TileO
-            tileName="support2"
-          />
+          <div>
+            <TileO
+              tileName="support1"
+            />
+          </div>
+          <div />
+          <div>
+            <TileO
+              tileName="support3"
+            />
+          </div>
         </div>
         <div />
         <div>
-          <TileO
-            tileName="support4"
-          />
+          <div>
+            <TileO
+              tileName="support2"
+            />
+          </div>
+          <div />
+          <div>
+            <TileO
+              tileName="support4"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -382,46 +388,49 @@ exports[`10. secondary one and four 1`] = `
 <div>
   <div>
     <div>
-      <TheTimesLogo
-        height={40}
-        width={42}
-      />
-    </div>
-    <div />
-    <div>
       <div>
-        <div>
-          <TileN
-            tileName="secondary"
-          />
-        </div>
+        <TheTimesLogo
+          height={40}
+          width={42}
+        />
       </div>
       <div />
       <div>
         <div>
-          <TileO
-            tileName="support1"
-          />
+          <div>
+            <TileN
+              breakpoint="wide"
+              tileName="secondary"
+            />
+          </div>
         </div>
         <div />
         <div>
-          <TileO
-            tileName="support3"
-          />
-        </div>
-      </div>
-      <div />
-      <div>
-        <div>
-          <TileO
-            tileName="support2"
-          />
+          <div>
+            <TileO
+              tileName="support1"
+            />
+          </div>
+          <div />
+          <div>
+            <TileO
+              tileName="support3"
+            />
+          </div>
         </div>
         <div />
         <div>
-          <TileO
-            tileName="support4"
-          />
+          <div>
+            <TileO
+              tileName="support2"
+            />
+          </div>
+          <div />
+          <div>
+            <TileO
+              tileName="support4"
+            />
+          </div>
         </div>
       </div>
     </div>
