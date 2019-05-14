@@ -2,7 +2,7 @@
 import React, { Component, Fragment } from "react";
 import { ActivityIndicator, Text } from "react-native";
 import Link from "@times-components/link";
-import { HoverIcon } from "@times-components/save-and-share-bar";
+import { HoverIcon } from "@times-components/utils";
 import PropTypes from "prop-types";
 import { IconSaveBookmark } from "@times-components/icons";
 import styles, { getStyles } from "./styles";

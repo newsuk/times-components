@@ -115,4 +115,3 @@ SaveAndShareBar.defaultProps = {
 };
 
 export default withTrackEvents(SaveAndShareBar);
-export { default as HoverIcon } from "./hover-icon";
