@@ -8,7 +8,7 @@ import {
   ItemRowSeparator
 } from "@times-components/slice-layout";
 import { TileO, TileN } from "../../tiles";
-import styleFactory, { darkBackgroundColor } from "./styles";
+import styleFactory, { darkBackgroundColour } from "./styles";
 import { ResponsiveSlice } from "../shared";
 
 class SecondaryOneAndFour extends Component {
@@ -66,7 +66,7 @@ class SecondaryOneAndFour extends Component {
 
   render() {
     return (
-      <View style={darkBackgroundColor}>
+      <View style={darkBackgroundColour}>
         <ResponsiveSlice
           renderSmall={this.renderSlice}
           renderMedium={this.renderSlice}
