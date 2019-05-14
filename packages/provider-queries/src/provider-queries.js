@@ -1,5 +1,6 @@
 import articleQuery from "./article";
 import articleExtrasQuery from "./article-extras";
+import getTokenisedEmailUrlQuery from "./getTokenisedEmailUrl";
 import * as authorArticlesNoImagesQuery from "./author-articles-no-images";
 import * as authorArticlesWithImagesQuery from "./author-articles-with-images";
 import authorQuery from "./author";
@@ -10,6 +11,7 @@ import * as topicArticlesQuery from "./topic-articles";
 
 export const article = articleQuery;
 export const articleExtras = articleExtrasQuery;
+export const getTokenisedEmailUrl = getTokenisedEmailUrlQuery;
 export const authorArticlesNoImages = authorArticlesNoImagesQuery.default;
 export const authorArticlesNoImagesPTV =
   authorArticlesNoImagesQuery.propsToVariables;

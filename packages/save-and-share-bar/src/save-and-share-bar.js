@@ -12,11 +12,15 @@ import SharingApiUrls from "./constants";
 import styles from "./styles";
 import BarItem from "./bar-item";
 
+import getTokenisedEmailUrlMock from "./utils/mock-get-tokenised-email-url";
+// import getTokenisedEmailUrlApi from "./get-tokenised-email-url-api";
+
 /* eslint-disable jsx-a11y/anchor-is-valid */
 class SaveAndShareBar extends Component {
   constructor(props) {
     super(props);
     this.copyToClipboard = this.copyToClipboard.bind(this);
+    this.handleOnShareEmailPress = this.handleOnShareEmailPress.bind(this);
   }
 
   copyToClipboard() {
@@ -25,13 +29,29 @@ class SaveAndShareBar extends Component {
     onCopyLink();
   }
 
+  handleOnShareEmailPress() {
+    /* eslint-env browser */
+    const { articleHeadline, articleUrl } = this.props;
+    // getTokenisedEmailUrlApi(articleUrl).then(res => {
+    //   const mailtoEmailUrl = `mailto:?subject=${articleHeadline} from The Times&body=I thought you would be interested in this story from The Times%0A%0A${articleHeadline}%0A%0A${res.data.article.tokenisedUrl}`;
+    //   // window.location = mailtoEmailUrl;
+    // });
+
+    getTokenisedEmailUrlMock(articleUrl).then(res => {
+      const mailtoEmailUrl = `mailto:?subject=${articleHeadline} from The Times&body=I thought you would be interested in this story from The Times%0A%0A${articleHeadline}%0A%0A${res.data.article.tokenisedUrl}`;
+      window.location = mailtoEmailUrl;
+    });
+
+  }
+
   render() {
-    const { articleUrl, onSaveToMyArticles, onShareOnEmail } = this.props;
+    const { articleUrl, onSaveToMyArticles } = this.props;
+
     return (
       <View style={styles.container}>
         <View style={styles.rowItem}>
           <Text style={styles.label}>Share</Text>
-          <BarItem onPress={onShareOnEmail}>
+          <BarItem onPress={this.handleOnShareEmailPress}>
             <IconEmail
               fillColour="currentColor"
               height={styles.svgIcon.height}
@@ -91,9 +111,9 @@ class SaveAndShareBar extends Component {
 
 SaveAndShareBar.propTypes = {
   articleUrl: PropTypes.string.isRequired,
+  articleHeadline: PropTypes.string.isRequired,
   onCopyLink: PropTypes.func.isRequired,
-  onSaveToMyArticles: PropTypes.func.isRequired,
-  onShareOnEmail: PropTypes.func.isRequired
+  onSaveToMyArticles: PropTypes.func.isRequired
 };
 
 export default SaveAndShareBar;

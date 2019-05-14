@@ -78,6 +78,7 @@ class ArticleSkeleton extends Component {
       id: articleId,
       section,
       url,
+      headline,
       topics,
       relatedArticleSlice,
       template
@@ -136,6 +137,7 @@ class ArticleSkeleton extends Component {
                               }}
                             >
                               <SaveAndShareBar
+                                articleHeadline={headline}
                                 articleUrl={url}
                                 onCopyLink={() => {}}
                                 onSaveToMyArticles={() => {}}
