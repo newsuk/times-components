@@ -6,7 +6,7 @@ import {
 
 const smallBreakpointStyles = {
   logoContainer: {
-    backgroundColor: colours.functional.darkSupplement,
+    ...darkBackgroundColor,
     flexDirection: "row",
     margin: spacing(2),
     marginBottom: spacing(2)
@@ -15,21 +15,19 @@ const smallBreakpointStyles = {
     borderBottomColor: colours.functional.tertiary
   },
   sliceWrapper: {
-    backgroundColor: colours.functional.darkSupplement
+    ...darkBackgroundColor
   }
 };
 
 const mediumBreakpointStyles = {
   sliceWrapper: {
-    backgroundColor: colours.functional.darkSupplement,
+    ...darkBackgroundColor,
     paddingHorizontal: spacing(2)
   }
 };
 
-export const responsiveSliceWrapper = {
-  responsiveSliceWrapper: {
-    backgroundColor: colours.functional.darkSupplement
-  }
+export const darkBackgroundColor = {
+  backgroundColor: colours.functional.darkSupplement
 };
 
 export default breakpoint =>
