@@ -884,9 +884,9 @@ exports[`14. tile n 1`] = `
         Object {
           "color": "#FFFFFF",
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 22,
+          "fontSize": 30,
           "fontWeight": "900",
-          "lineHeight": 22,
+          "lineHeight": 33,
           "marginBottom": 5,
         }
       }
@@ -1964,15 +1964,7 @@ exports[`30. tile ag 1`] = `
 `;
 
 exports[`31. tile aj 1`] = `
-<Link
-  style={
-    Object {
-      "backgroundColor": "#F0F0F0",
-      "flex": 1,
-      "marginTop": 10,
-    }
-  }
->
+<Link>
   <View
     style={
       Object {
@@ -2009,17 +2001,7 @@ exports[`31. tile aj 1`] = `
 `;
 
 exports[`32. tile ak 1`] = `
-<Link
-  style={
-    Object {
-      "backgroundColor": "#F0F0F0",
-      "flex": 1,
-      "height": 150,
-      "marginHorizontal": 5,
-      "overflow": "hidden",
-    }
-  }
->
+<Link>
   <View
     style={
       Object {

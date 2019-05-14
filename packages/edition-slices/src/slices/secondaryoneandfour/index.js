@@ -8,7 +8,7 @@ import {
   ItemRowSeparator
 } from "@times-components/slice-layout";
 import { TileO, TileN } from "../../tiles";
-import styleFactory from "./styles";
+import styleFactory, { darkBackgroundColour } from "./styles";
 import { ResponsiveSlice } from "../shared";
 
 class SecondaryOneAndFour extends Component {
@@ -22,7 +22,6 @@ class SecondaryOneAndFour extends Component {
       onPress,
       slice: { secondary, support1, support2, support3, support4 }
     } = this.props;
-
     const styles = styleFactory(breakpoint);
     return (
       <SectionContext.Consumer>
@@ -43,6 +42,7 @@ class SecondaryOneAndFour extends Component {
                   onPress={onPress}
                   tile={secondary}
                   tileName="secondary"
+                  breakpoint={breakpoint}
                 />
               }
               support1={
@@ -66,10 +66,12 @@ class SecondaryOneAndFour extends Component {
 
   render() {
     return (
-      <ResponsiveSlice
-        renderMedium={this.renderSlice}
-        renderSmall={this.renderSlice}
-      />
+      <View style={darkBackgroundColour}>
+        <ResponsiveSlice
+          renderSmall={this.renderSlice}
+          renderMedium={this.renderSlice}
+        />
+      </View>
     );
   }
 }

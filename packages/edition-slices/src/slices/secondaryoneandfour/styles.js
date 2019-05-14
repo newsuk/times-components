@@ -4,9 +4,13 @@ import {
   editionBreakpoints
 } from "@times-components/styleguide";
 
+export const darkBackgroundColour = {
+  backgroundColor: colours.functional.darkSupplement
+};
+
 const smallBreakpointStyles = {
   logoContainer: {
-    backgroundColor: colours.functional.darkSupplement,
+    ...darkBackgroundColour,
     flexDirection: "row",
     margin: spacing(2),
     marginBottom: spacing(2)
@@ -15,13 +19,13 @@ const smallBreakpointStyles = {
     borderBottomColor: colours.functional.tertiary
   },
   sliceWrapper: {
-    backgroundColor: colours.functional.darkSupplement
+    ...darkBackgroundColour
   }
 };
 
 const mediumBreakpointStyles = {
   sliceWrapper: {
-    backgroundColor: colours.functional.darkSupplement,
+    ...darkBackgroundColour,
     paddingHorizontal: spacing(2)
   }
 };

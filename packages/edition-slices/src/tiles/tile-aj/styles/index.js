@@ -14,9 +14,6 @@ const styles = {
     alignSelf: "flex-end",
     width: "85%"
   },
-  link: {
-    flex: 1
-  },
   puzzleContainer: {
     backgroundColor: colours.functional.border,
     flex: 1,

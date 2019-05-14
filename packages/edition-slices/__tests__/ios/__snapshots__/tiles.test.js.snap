@@ -1232,7 +1232,9 @@ exports[`31. tile aj 1`] = `
 <Link
   linkStyle={
     Object {
+      "backgroundColor": "#F0F0F0",
       "flex": 1,
+      "marginTop": 10,
     }
   }
   url="/crossword/123"
@@ -1256,7 +1258,11 @@ exports[`32. tile ak 1`] = `
 <Link
   linkStyle={
     Object {
+      "backgroundColor": "#F0F0F0",
       "flex": 1,
+      "height": 150,
+      "marginHorizontal": 5,
+      "overflow": "hidden",
     }
   }
   url="/crossword/123"

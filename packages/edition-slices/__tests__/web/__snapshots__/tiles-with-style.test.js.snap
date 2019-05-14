@@ -1528,7 +1528,6 @@ exports[`14. tile n 1`] = `
 
 .S3 {
   font-family: TimesModern-Bold;
-  font-size: 22px;
   font-weight: 400;
   margin-bottom: 5px;
 }
@@ -1550,7 +1549,8 @@ exports[`14. tile n 1`] = `
 
 .IS3 {
   color: rgba(255,255,255,1.00);
-  line-height: 22px;
+  font-size: 30px;
+  line-height: 33px;
 }
 
 .IS4 {
@@ -1604,7 +1604,7 @@ exports[`14. tile n 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-76zvg2 r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS3 S3"
+      className="css-reset-4rbku5 css-text-76zvg2 r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS3 S3"
       role="heading"
     >
       This is tile headline
@@ -3437,19 +3437,14 @@ exports[`31. tile aj 1`] = `
   align-self: flex-end;
   width: 85%;
 }
-
-.IS4 {
-  background-color: #F0F0F0;
-  flex: 1;
-  margin-top: 10px;
-}
 </style>
 
 <Link
-  className="IS4"
   linkStyle={
     Object {
+      "backgroundColor": "#F0F0F0",
       "flex": 1,
+      "marginTop": "10px",
     }
   }
   url="/crossword/123"
@@ -3499,21 +3494,16 @@ exports[`32. tile ak 1`] = `
   width: 85%;
   margin-top: -25px;
 }
-
-.IS4 {
-  background-color: #F0F0F0;
-  flex: 1;
-  margin-horizontal: 5px;
-  height: 150;
-  overflow: hidden;
-}
 </style>
 
 <Link
-  className="IS4"
   linkStyle={
     Object {
+      "backgroundColor": "#F0F0F0",
       "flex": 1,
+      "height": 150,
+      "marginHorizontal": "5px",
+      "overflow": "hidden",
     }
   }
   url="/crossword/123"
