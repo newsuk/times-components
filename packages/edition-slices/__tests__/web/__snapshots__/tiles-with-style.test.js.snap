@@ -770,7 +770,6 @@ exports[`7. tile g 1`] = `
 }
 
 .IS1 {
-  border-radius: 9999;
   overflow: hidden;
   width: 30%;
 }
@@ -828,6 +827,8 @@ exports[`7. tile g 1`] = `
   <Image
     aspectRatio={1}
     className="IS1"
+    resizeMode="cover"
+    rounded={true}
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
   />
   <div
@@ -1559,7 +1560,6 @@ exports[`14. tile n 1`] = `
 
 .S3 {
   font-family: TimesModern-Bold;
-  font-size: 22px;
   font-weight: 400;
   margin-bottom: 5px;
 }
@@ -1583,7 +1583,8 @@ exports[`14. tile n 1`] = `
 
 .IS3 {
   color: rgba(255,255,255,1.00);
-  line-height: 22px;
+  font-size: 30px;
+  line-height: 33px;
 }
 
 .IS4 {
@@ -1818,7 +1819,6 @@ exports[`16. tile p 1`] = `
 }
 
 .IS1 {
-  border-radius: 9999;
   overflow: hidden;
   width: 30%;
 }
@@ -1872,6 +1872,8 @@ exports[`16. tile p 1`] = `
   <Image
     aspectRatio={1}
     className="IS1"
+    resizeMode="cover"
+    rounded={true}
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
   />
   <div
@@ -3549,19 +3551,14 @@ exports[`31. tile aj 1`] = `
   align-self: flex-end;
   width: 85%;
 }
-
-.IS4 {
-  background-color: #F0F0F0;
-  flex: 1;
-  margin-top: 10px;
-}
 </style>
 
 <Link
-  className="IS4"
   linkStyle={
     Object {
+      "backgroundColor": "#F0F0F0",
       "flex": 1,
+      "marginTop": "10px",
     }
   }
   url="/crossword/123"
@@ -3615,21 +3612,16 @@ exports[`32. tile ak 1`] = `
   width: 85%;
   margin-top: -25px;
 }
-
-.IS4 {
-  background-color: #F0F0F0;
-  flex: 1;
-  margin-horizontal: 5px;
-  height: 150;
-  overflow: hidden;
-}
 </style>
 
 <Link
-  className="IS4"
   linkStyle={
     Object {
+      "backgroundColor": "#F0F0F0",
       "flex": 1,
+      "height": 150,
+      "marginHorizontal": "5px",
+      "overflow": "hidden",
     }
   }
   url="/crossword/123"
@@ -3977,7 +3969,6 @@ exports[`35. tile an 1`] = `
 }
 
 .IS1 {
-  border-radius: 9999;
   overflow: hidden;
 }
 
@@ -4026,6 +4017,8 @@ exports[`35. tile an 1`] = `
   <Image
     aspectRatio={1}
     className="IS1"
+    resizeMode="cover"
+    rounded={true}
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
   />
   <div
@@ -4103,7 +4096,6 @@ exports[`36. tile ap 1`] = `
 }
 
 .IS1 {
-  border-radius: 9999;
   overflow: hidden;
 }
 
@@ -4153,6 +4145,8 @@ exports[`36. tile ap 1`] = `
   <Image
     aspectRatio={1}
     className="IS1"
+    resizeMode="cover"
+    rounded={true}
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
   />
   <div

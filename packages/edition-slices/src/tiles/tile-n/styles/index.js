@@ -1,6 +1,11 @@
-import { colours, fontFactory, spacing } from "@times-components/styleguide";
+import {
+  colours,
+  fontFactory,
+  spacing,
+  editionBreakpoints
+} from "@times-components/styleguide";
 
-const styles = {
+const styles = fontSize => ({
   container: {
     backgroundColor: colours.functional.darkSupplement,
     flexDirection: "row",
@@ -12,7 +17,7 @@ const styles = {
   headline: {
     ...fontFactory({
       font: "headline",
-      fontSize: "infoTitle"
+      fontSize
     }),
     color: colours.functional.white
   },
@@ -26,6 +31,13 @@ const styles = {
     paddingHorizontal: spacing(2),
     width: "50%"
   }
-};
+});
 
-export default styles;
+export default breakpoint => {
+  const fontSize =
+    breakpoint === editionBreakpoints.small ||
+    breakpoint === editionBreakpoints.medium
+      ? "infoTitle"
+      : "headline";
+  return styles(fontSize);
+};

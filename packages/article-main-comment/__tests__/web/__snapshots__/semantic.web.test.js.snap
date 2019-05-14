@@ -74,6 +74,18 @@ exports[`1. a full article 1`] = `
     alt=""
     src="https://image.io"
   />
+  <svg
+    height="auto"
+    version="1.1"
+    viewBox="145 50 108 120"
+    width="25%"
+  >
+    <g>
+      <path
+        d="6a6c07166e9c40e4f62e57af2b507822"
+      />
+    </g>
+  </svg>
   SOME LABEL
   <h1
     aria-level="1"
@@ -194,6 +206,18 @@ exports[`1. a full article 1`] = `
     alt=""
     src="https://image.io?resize=100"
   />
+  <svg
+    height="auto"
+    version="1.1"
+    viewBox="145 50 108 120"
+    width="25%"
+  >
+    <g>
+      <path
+        d="6a6c07166e9c40e4f62e57af2b507822"
+      />
+    </g>
+  </svg>
   An image caption
   THE IMAGE CREDITS
   <a

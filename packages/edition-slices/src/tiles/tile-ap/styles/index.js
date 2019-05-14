@@ -12,7 +12,6 @@ const styles = {
     paddingBottom: spacing(1)
   },
   imageContainer: {
-    borderRadius: 9999,
     overflow: "hidden"
   },
   summaryContainer: {

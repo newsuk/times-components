@@ -9,6 +9,7 @@ export const propTypes = {
   highResSize: PropTypes.number,
   lowResSize: PropTypes.number,
   onLayout: PropTypes.func,
+  rounded: PropTypes.bool,
   uri: PropTypes.string
 };
 
@@ -18,5 +19,6 @@ export const defaultProps = {
   fadeImageIn: false,
   highResSize: null,
   lowResSize: null,
+  rounded: false,
   uri: null
 };

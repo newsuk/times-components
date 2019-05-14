@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`save and share tracking events when press copy to clipboard 1`] = `
+Object {
+  "action": "Pressed",
+  "attrs": Object {
+    "articleHeadline": "test-headline",
+    "articleId": "id-123",
+  },
+  "component": "ArticleCopyLink",
+}
+`;
+
+exports[`save and share tracking events when press copy to clipboard: onCopyLink 1`] = `
+Array [
+  Array [],
+]
+`;
+
+exports[`save and share tracking events when press save to my articles 1`] = `
+Object {
+  "action": "Pressed",
+  "attrs": Object {
+    "articleHeadline": "test-headline",
+    "articleId": "id-123",
+  },
+  "component": "ArticleSaveToMyArticles",
+}
+`;
+
+exports[`save and share tracking events when press save to my articles: onSaveToMyArticles 1`] = `
+Array [
+  Array [],
+]
+`;
+
+exports[`save and share tracking events when press share on email 1`] = `
+Object {
+  "action": "Pressed",
+  "attrs": Object {
+    "articleHeadline": "test-headline",
+    "articleId": "id-123",
+  },
+  "component": "ArticleShareOnEmail",
+}
+`;
+
+exports[`save and share tracking events when press share on email: onShareOnEmail 1`] = `
+Array [
+  Array [],
+]
+`;
+
+exports[`save and share tracking events when press share on facebook 1`] = `
+Object {
+  "action": "Pressed",
+  "attrs": Object {
+    "articleHeadline": "test-headline",
+    "articleId": "id-123",
+  },
+  "component": "ArticleShareOnFacebook",
+}
+`;
+
+exports[`save and share tracking events when press share on facebook: onShareOnFB 1`] = `
+Array [
+  Array [],
+]
+`;
+
+exports[`save and share tracking events when press share on twitter 1`] = `
+Object {
+  "action": "Pressed",
+  "attrs": Object {
+    "articleHeadline": "test-headline",
+    "articleId": "id-123",
+  },
+  "component": "ArticleShareOnTwitter",
+}
+`;
+
+exports[`save and share tracking events when press share on twitter: onShareOnTwitter 1`] = `
+Array [
+  Array [],
+]
+`;

@@ -16,6 +16,8 @@ const TileAH = ({ onPress, tile }) => (
       aspectRatio={1}
       style={styles.imageContainer}
       uri={getTileImageUri(tile, "crop11")}
+      rounded
+      resizeMode="cover"
     />
     <TileSummary
       bylines={tile.article.bylines}

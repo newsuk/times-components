@@ -28,16 +28,20 @@ exports[`1. card loading state 1`] = `
 
 <style>
 .S1 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
   display: flex;
   -ms-flex-direction: column;
   -webkit-box-direction: normal;
   -webkit-box-orient: vertical;
   -webkit-flex-direction: column;
   flex-direction: column;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
   margin-bottom: 0px;
   min-width: 0px;
 }
@@ -53,11 +57,26 @@ exports[`1. card loading state 1`] = `
   -webkit-box-orient: vertical;
   -webkit-flex-direction: column;
   flex-direction: column;
+  margin-bottom: 0px;
+  min-width: 0px;
+}
+
+.S3 {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  flex-direction: column;
   margin-bottom: 10px;
   min-width: 100%;
 }
 
-.S3 {
+.S4 {
   -ms-flex-align: stretch;
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
@@ -74,7 +93,7 @@ exports[`1. card loading state 1`] = `
   min-width: 0px;
 }
 
-.S4 {
+.S5 {
   -ms-flex-align: stretch;
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
@@ -90,7 +109,7 @@ exports[`1. card loading state 1`] = `
   min-width: 0px;
 }
 
-.S5 {
+.S6 {
   -ms-flex-align: stretch;
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
@@ -107,7 +126,7 @@ exports[`1. card loading state 1`] = `
   min-width: 0px;
 }
 
-.S6 {
+.S7 {
   -ms-flex-align: stretch;
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
@@ -122,7 +141,7 @@ exports[`1. card loading state 1`] = `
   min-width: 100%;
 }
 
-.S7 {
+.S8 {
   -ms-flex-align: start;
   -webkit-align-items: flex-start;
   -webkit-box-align: start;
@@ -217,26 +236,27 @@ exports[`1. card loading state 1`] = `
 
 <indexweb__FadeIn>
   <div
-    className="c0 S1"
+    className="c0 S2"
   >
     <div
-      className="S7"
+      className="S8"
     >
       <div
-        className="S2"
+        className="S3"
       >
         <TimesImage
           aspectRatio={0.6666666666666666}
           fadeImageIn={false}
           highResSize={800}
           lowResSize={60}
+          rounded={false}
           uri="https://img.io/img"
         />
       </div>
       <div
-        className="S6"
+        className="S7"
       >
-        <Component>
+        <_default>
           <Gradient
             className="IS4"
             degrees={264}
@@ -261,7 +281,7 @@ exports[`1. card loading state 1`] = `
             endPoint="1"
             startPoint="0"
           />
-        </Component>
+        </_default>
       </div>
     </div>
   </div>
@@ -361,16 +381,20 @@ exports[`2. card with reversed loading state 1`] = `
 }
 
 .S5 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
   display: flex;
   -ms-flex-direction: column;
   -webkit-box-direction: normal;
   -webkit-box-orient: vertical;
   -webkit-flex-direction: column;
   flex-direction: column;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
   margin-bottom: 0px;
   min-width: 0px;
 }
@@ -387,10 +411,25 @@ exports[`2. card with reversed loading state 1`] = `
   -webkit-flex-direction: column;
   flex-direction: column;
   margin-bottom: 0px;
-  min-width: 100%;
+  min-width: 0px;
 }
 
 .S7 {
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 0px;
+  min-width: 100%;
+}
+
+.S8 {
   -ms-flex-align: start;
   -webkit-align-items: flex-start;
   -webkit-box-align: start;
@@ -486,15 +525,15 @@ exports[`2. card with reversed loading state 1`] = `
 
 <indexweb__FadeIn>
   <div
-    className="c0 S5"
+    className="c0 S6"
   >
     <div
-      className="S7"
+      className="S8"
     >
       <div
         className="S4"
       >
-        <Component>
+        <_default>
           <Gradient
             className="IS3"
             degrees={264}
@@ -519,16 +558,17 @@ exports[`2. card with reversed loading state 1`] = `
             endPoint="1"
             startPoint="0"
           />
-        </Component>
+        </_default>
       </div>
       <div
-        className="S6"
+        className="S7"
       >
         <TimesImage
           aspectRatio={0.6666666666666666}
           fadeImageIn={false}
           highResSize={800}
           lowResSize={60}
+          rounded={false}
           uri="https://img.io/img"
         />
       </div>

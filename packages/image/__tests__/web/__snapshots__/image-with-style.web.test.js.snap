@@ -13,6 +13,27 @@ exports[`1. default image 1`] = `
 
 <style>
 .S1 {
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: rgba(237,237,237,1.00);
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  padding-bottom: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.S2 {
   -ms-flex-align: stretch;
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
@@ -39,7 +60,7 @@ exports[`1. default image 1`] = `
 </style>
 
 <div
-  className="S1"
+  className="S2"
 >
   <div
     className="IS1"
@@ -47,6 +68,15 @@ exports[`1. default image 1`] = `
     <img
       className="c0"
     />
+    <div
+      className="S1"
+    >
+      <Svg>
+        <G>
+          <Path />
+        </G>
+      </Svg>
+    </div>
   </div>
 </div>
 `;
@@ -64,6 +94,27 @@ exports[`2. default modal 1`] = `
 
 <style>
 .S1 {
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: rgba(237,237,237,1.00);
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  padding-bottom: 0px;
+  position: relative;
+  z-index: 0;
+}
+
+.S2 {
   -ms-flex-align: stretch;
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
@@ -90,7 +141,7 @@ exports[`2. default modal 1`] = `
 </style>
 
 <div
-  className="S1"
+  className="S2"
 >
   <div
     className="IS1"
@@ -98,6 +149,15 @@ exports[`2. default modal 1`] = `
     <img
       className="c0"
     />
+    <div
+      className="S1"
+    >
+      <Svg>
+        <G>
+          <Path />
+        </G>
+      </Svg>
+    </div>
   </div>
 </div>
 `;

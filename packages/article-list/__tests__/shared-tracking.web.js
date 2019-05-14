@@ -5,6 +5,7 @@ import { iterator } from "@times-components/test-utils";
 import ArticleList from "../src/article-list";
 import articlesFixture from "../fixtures/articles.json";
 import adConfig from "../fixtures/article-ad-config.json";
+import ArticleListItem from "../src/article-list-item";
 
 export default () => {
   jest.useFakeTimers();
@@ -45,12 +46,9 @@ export default () => {
 
         const testInstance = TestRenderer.create(<WithTrackingContext />);
 
-        const [trackedItem] = testInstance.root.findAll(
-          node => node.type.displayName === "ArticleListItem"
-        );
+        const [trackedItem] = testInstance.root.findAllByType(ArticleListItem);
 
-        trackedItem.props.onPress();
-
+        trackedItem.children[0].props.onPress();
         const [[call]] = stream.mock.calls;
 
         expect(call).toMatchSnapshot();

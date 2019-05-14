@@ -137,6 +137,7 @@ class ArticleSkeleton extends Component {
                               }}
                             >
                               <SaveAndShareBar
+                                articleId={articleId}
                                 articleHeadline={headline}
                                 articleUrl={url}
                                 onCopyLink={() => {}}

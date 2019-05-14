@@ -33,68 +33,66 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
             }
           }
         >
-          <View>
+          <View
+            style={
+              Object {
+                "height": NaN,
+                "left": 5,
+                "position": "absolute",
+                "top": 0,
+                "width": 175,
+                "zIndex": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#FF0000",
+                  "fontFamily": "TimesModern-Regular",
+                  "fontSize": 110,
+                  "marginBottom": -30,
+                  "marginRight": 5,
+                  "marginTop": -12,
+                }
+              }
+            >
+              T
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "paddingLeft": 10,
+                "paddingRight": 10,
+              }
+            }
+          >
             <View
               style={
                 Object {
-                  "height": NaN,
-                  "left": 5,
-                  "position": "absolute",
-                  "top": 0,
-                  "width": 175,
-                  "zIndex": 1,
+                  "height": 0,
                 }
               }
             >
               <Text
                 style={
                   Object {
-                    "color": "#FF0000",
-                    "fontFamily": "TimesModern-Regular",
-                    "fontSize": 110,
-                    "marginBottom": -30,
-                    "marginRight": 5,
-                    "marginTop": -12,
+                    "color": "#333333",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": NaN,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                    "left": 0,
+                    "lineHeight": NaN,
+                    "marginBottom": 20,
+                    "position": "absolute",
+                    "top": 0,
                   }
                 }
               >
-                T
+                his being Black History Month, last week
               </Text>
-            </View>
-            <View
-              style={
-                Object {
-                  "paddingLeft": 10,
-                  "paddingRight": 10,
-                }
-              }
-            >
-              <View
-                style={
-                  Object {
-                    "height": 0,
-                  }
-                }
-              >
-                <Text
-                  style={
-                    Object {
-                      "color": "#333333",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": NaN,
-                      "fontStyle": "normal",
-                      "fontWeight": "normal",
-                      "left": 0,
-                      "lineHeight": NaN,
-                      "marginBottom": 20,
-                      "position": "absolute",
-                      "top": 0,
-                    }
-                  }
-                >
-                  his being Black History Month, last week
-                </Text>
-              </View>
             </View>
           </View>
         </View>

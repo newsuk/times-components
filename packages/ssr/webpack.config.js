@@ -20,8 +20,12 @@ const babelConfig = {
     loader: "babel-loader",
     options: {
       cacheDirectory: true,
-      plugins: ["add-react-displayname", "styled-components"],
-      presets: ["react-native"]
+      plugins: [
+        "babel-plugin-styled-components",
+        "@babel/plugin-proposal-object-rest-spread",
+        "@babel/plugin-transform-react-display-name"
+      ],
+      presets: ["module:metro-react-native-babel-preset"]
     }
   }
 };

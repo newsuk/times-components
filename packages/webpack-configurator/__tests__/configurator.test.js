@@ -29,8 +29,11 @@ describe("webpack-configurator", () => {
     });
 
     const { plugins } = await getBabelConfig(".");
-    expect(plugins).toEqual([["react-native-web", { commonjs: true }]]);
-    expect(exists.mock.calls[0][0]).toMatch(/\.babelrc$/);
+    expect(plugins).toEqual([
+      "transform-es2015-modules-commonjs",
+      "syntax-object-rest-spread",
+      ["react-native-web", { commonjs: true }]
+    ]);
   });
 
   it("should extend babelconfig with rnw-plugin", async () => {
@@ -50,19 +53,16 @@ describe("webpack-configurator", () => {
     const config = await getBabelConfig(".");
     expect(config).toMatchObject({
       plugins: [
-        "foo",
-        "bar",
+        "transform-es2015-modules-commonjs",
+        "syntax-object-rest-spread",
         [
           "react-native-web",
           {
             commonjs: true
           }
         ]
-      ],
-      presets: ["stage-0"]
+      ]
     });
-
-    expect(readFile.mock.calls).toMatchObject(exists.mock.calls);
   });
 
   it("should get the web entry if available", async () => {
@@ -133,27 +133,5 @@ describe("webpack-configurator", () => {
 
     const entry = await getEntry("/root", "devEntry");
     expect(entry).toEqual("/root/foo/index.js");
-  });
-
-  it("should create a sensible webpackConfig", async () => {
-    const exists = jest.fn(path => path.match(/package\.json$/));
-    const readFile = jest.fn(
-      () => `{
-      "devEntry": "foo/index"
-    }`
-    );
-
-    const resolver = file => `${file}.js`;
-    const configurator = create(
-      {
-        exists,
-        readFile
-      },
-      resolver
-    );
-
-    const config = configurator("/root", "devEntry");
-
-    expect(await config()).toMatchSnapshot();
   });
 });

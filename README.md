@@ -1,7 +1,7 @@
 # The Times Component Library
 
 [![Coverage Status](https://coveralls.io/repos/github/newsuk/times-components/badge.svg?branch=master)](https://coveralls.io/github/newsuk/times-components?branch=master)
-[![Build Status](https://travis-ci.org/newsuk/times-components.svg?branch=master)](https://travis-ci.org/newsuk/times-components)
+[![Build Status](https://app.bitrise.io/app/b82f579b5213b496#/builds)](https://app.bitrise.io/app/b82f579b5213b496#/builds)
 
 ### Purpose
 
@@ -22,11 +22,7 @@ You can try without these requirements, but you'd be on your own.
 
 ## Viewing Our Components
 
-If you use Expo you are able to scan the QR code below
-
-<img src="https://s3.eu-west-1.amazonaws.com/nu-tools-expo/MasterExpo.png">
-
-This has been made possible using [Fructose](https://github.com/newsuk/fructose)
+Go to http://components.thetimes.co.uk
 
 ## Getting Started
 
@@ -54,20 +50,12 @@ This has been made possible using [Fructose](https://github.com/newsuk/fructose)
 
 ## Native App Dev Server
 
-In order to run development servers for native applications, start haul dev
+In order to run development servers for native applications, start react-native dev
 server via:
 
 `yarn android:app` or `yarn ios:app`
 
 For step by step guide, see the corresponding Readme documentation for [android](./android-app/README.md) and [ios](./ios-app/README.md)
-
-## Haul
-
-We use Haul in lieu of the standard `react-native` CLI so that we can generate
-native Storybook bundles using Webpack, which we configure to honour our
-monorepo packages' respective `dev` entry points; this allows one to update a
-package's source code and preview the changes without having to manually
-re-transpile. Haul also automatically generates debuggable source maps.
 
 ### Fonts ⚠️
 

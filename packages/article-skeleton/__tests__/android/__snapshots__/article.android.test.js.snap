@@ -28,26 +28,24 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
       <View>
         <View>
           <View>
+            <Text
+              selectable={true}
+            >
+              T
+            </Text>
+          </View>
+          <View>
             <View>
               <Text
                 selectable={true}
               >
-                T
+                his being Black History Month, 
               </Text>
-            </View>
-            <View>
-              <View>
-                <Text
-                  selectable={true}
-                >
-                  his being Black History Month, 
-                </Text>
-                <Text
-                  selectable={true}
-                >
-                  last week
-                </Text>
-              </View>
+              <Text
+                selectable={true}
+              >
+                last week
+              </Text>
             </View>
           </View>
         </View>
@@ -94,7 +92,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
               }
               imageOptions={
                 Object {
-                  "display": "primary",
+                  "display": "secondary",
                   "ratio": "1500:1000",
                   "uri": "https://image.io/secondary",
                 }
@@ -115,7 +113,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
               }
               imageOptions={
                 Object {
-                  "display": "primary",
+                  "display": "secondary",
                   "ratio": "1500:1000",
                   "uri": "https://image.io/inline",
                 }

@@ -3,6 +3,57 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.1.3](https://github.com/newsuk/times-components/compare/@times-components/article@7.1.2...@times-components/article@7.1.3) (2019-05-14)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [7.1.2](https://github.com/newsuk/times-components/compare/@times-components/article@7.1.1...@times-components/article@7.1.2) (2019-05-14)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [7.1.1](https://github.com/newsuk/times-components/compare/@times-components/article@7.1.0...@times-components/article@7.1.1) (2019-05-13)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+# [7.1.0](https://github.com/newsuk/times-components/compare/@times-components/article@7.0.16...@times-components/article@7.1.0) (2019-05-10)
+
+
+### Features
+
+* user notification bar (REPLAT-6144) ([#1896](https://github.com/newsuk/times-components/issues/1896)) ([90c0f49](https://github.com/newsuk/times-components/commit/90c0f49))
+
+
+
+
+
+## [7.0.16](https://github.com/newsuk/times-components/compare/@times-components/article@7.0.15...@times-components/article@7.0.16) (2019-05-09)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [7.0.15](https://github.com/newsuk/times-components/compare/@times-components/article@7.0.14...@times-components/article@7.0.15) (2019-05-09)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
 ## [7.0.14](https://github.com/newsuk/times-components/compare/@times-components/article@7.0.13...@times-components/article@7.0.14) (2019-05-08)
 
 **Note:** Version bump only for package @times-components/article

@@ -2,29 +2,35 @@
 
 exports[`1. default layout 1`] = `
 <View
-  aspectRatio={1.5}
+  aspectRatio={2}
 >
-  <View
-    height={350}
-    width={525}
-  >
+  <View>
     <Image
-      resizeMode="contain"
+      fadeDuration={0}
+      fadeImageIn={false}
       source={
         Object {
-          "testUri": "../../../packages/image/assets/t.png",
+          "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
         }
       }
     />
   </View>
-  <Image
-    fadeImageIn={false}
-    source={
-      Object {
-        "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
-      }
-    }
-  />
+  <View>
+    <View
+      height="100%"
+      width="100%"
+    >
+      <Image
+        fadeDuration={0}
+        resizeMode="contain"
+        source={
+          Object {
+            "testUri": "../../../packages/image/assets/t.png",
+          }
+        }
+      />
+    </View>
+  </View>
 </View>
 `;
 
@@ -32,187 +38,280 @@ exports[`2. default layout without uri 1`] = `
 <View
   aspectRatio={2}
 >
-  <View
-    height={350}
-    width={700}
-  >
+  <View>
     <Image
-      resizeMode="contain"
-      source={
-        Object {
-          "testUri": "../../../packages/image/assets/t.png",
-        }
-      }
+      fadeDuration={0}
+      fadeImageIn={false}
+      source={null}
     />
   </View>
-  <Image
-    fadeImageIn={false}
-    source={null}
-  />
+  <View>
+    <View
+      height="100%"
+      width="100%"
+    >
+      <Image
+        fadeDuration={0}
+        resizeMode="contain"
+        source={
+          Object {
+            "testUri": "../../../packages/image/assets/t.png",
+          }
+        }
+      />
+    </View>
+  </View>
 </View>
 `;
 
 exports[`3. default layout without aspect ratio 1`] = `
 <View>
-  <View
-    height={350}
-    width={700}
-  >
+  <View>
     <Image
-      resizeMode="contain"
+      fadeDuration={0}
+      fadeImageIn={false}
       source={
         Object {
-          "testUri": "../../../packages/image/assets/t.png",
+          "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800",
         }
       }
     />
   </View>
-  <Image
-    fadeImageIn={false}
-    source={
-      Object {
-        "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800",
-      }
-    }
-  />
+  <View>
+    <View
+      height="100%"
+      width="100%"
+    >
+      <Image
+        fadeDuration={0}
+        resizeMode="contain"
+        source={
+          Object {
+            "testUri": "../../../packages/image/assets/t.png",
+          }
+        }
+      />
+    </View>
+  </View>
 </View>
 `;
 
-exports[`4. prepend https schema 1`] = `
+exports[`4. rounded image 1`] = `
 <View
   aspectRatio={2}
 >
-  <View
-    height={350}
-    width={700}
-  >
+  <View>
     <Image
-      resizeMode="contain"
+      fadeDuration={0}
+      fadeImageIn={false}
       source={
         Object {
-          "testUri": "../../../packages/image/assets/t.png",
+          "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800",
         }
       }
     />
   </View>
-  <Image
-    fadeImageIn={false}
-    source={
-      Object {
-        "uri": "https://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
-      }
-    }
-  />
+  <View>
+    <View
+      height="100%"
+      width="100%"
+    >
+      <Image
+        fadeDuration={0}
+        resizeMode="contain"
+        source={
+          Object {
+            "testUri": "../../../packages/image/assets/t.png",
+          }
+        }
+      />
+    </View>
+  </View>
 </View>
 `;
 
-exports[`5. handle onload event 1`] = `
+exports[`5. prepend https schema 1`] = `
 <View
   aspectRatio={2}
 >
-  <View
-    height={350}
-    width={700}
-  >
+  <View>
     <Image
-      resizeMode="contain"
+      fadeDuration={0}
+      fadeImageIn={false}
       source={
         Object {
-          "testUri": "../../../packages/image/assets/t.png",
+          "uri": "https://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
         }
       }
     />
   </View>
-  <Image
-    fadeImageIn={false}
-    source={
-      Object {
-        "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
-      }
-    }
-  />
+  <View>
+    <View
+      height="100%"
+      width="100%"
+    >
+      <Image
+        fadeDuration={0}
+        resizeMode="contain"
+        source={
+          Object {
+            "testUri": "../../../packages/image/assets/t.png",
+          }
+        }
+      />
+    </View>
+  </View>
 </View>
 `;
 
-exports[`5. handle onload event 2`] = `
+exports[`6. handle onload event 1`] = `
 <View
   aspectRatio={2}
 >
-  <Image
-    fadeImageIn={false}
-    source={
-      Object {
-        "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
-      }
-    }
-  />
-</View>
-`;
-
-exports[`7. uses highressize if it exists 1`] = `
-<View
-  aspectRatio={2}
->
-  <View
-    height={350}
-    width={700}
-  >
+  <View>
     <Image
-      resizeMode="contain"
+      fadeDuration={0}
+      fadeImageIn={false}
       source={
         Object {
-          "testUri": "../../../packages/image/assets/t.png",
+          "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
         }
       }
     />
   </View>
-  <Image
-    fadeImageIn={false}
-    source={
-      Object {
-        "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=660",
-      }
-    }
-  />
+  <View>
+    <View
+      height="100%"
+      width="100%"
+    >
+      <Image
+        fadeDuration={0}
+        resizeMode="contain"
+        source={
+          Object {
+            "testUri": "../../../packages/image/assets/t.png",
+          }
+        }
+      />
+    </View>
+  </View>
 </View>
 `;
 
-exports[`9. image with borderradius 1`] = `
+exports[`6. handle onload event 2`] = `
 <View
   aspectRatio={2}
 >
-  <Image
-    borderRadius={10}
-    fadeImageIn={false}
-    source={
-      Object {
-        "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
+  <View>
+    <Image
+      fadeDuration={0}
+      fadeImageIn={false}
+      source={
+        Object {
+          "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
+        }
       }
-    }
-  />
+    />
+  </View>
 </View>
 `;
 
-exports[`10. uses lowressize image as placeholder if passed 1`] = `
+exports[`7. componentwillunmount cancels animation timer 1`] = `
 <View
   aspectRatio={2}
 >
-  <Image
-    fadeImageIn={false}
-    source={
-      Object {
-        "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800",
+  <View>
+    <Image
+      fadeDuration={0}
+      fadeImageIn={false}
+      source={
+        Object {
+          "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
+        }
       }
-    }
-  />
-  <Image
-    fadeImageIn={false}
-    source={
-      Object {
-        "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=2308",
+    />
+  </View>
+  <View>
+    <View
+      height="100%"
+      width="100%"
+    >
+      <Image
+        fadeDuration={0}
+        resizeMode="contain"
+        source={
+          Object {
+            "testUri": "../../../packages/image/assets/t.png",
+          }
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`9. uses highressize if it exists 1`] = `
+<View
+  aspectRatio={2}
+>
+  <View>
+    <Image
+      fadeDuration={0}
+      fadeImageIn={false}
+      source={
+        Object {
+          "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=660",
+        }
       }
-    }
-  />
+    />
+  </View>
+  <View>
+    <View
+      height="100%"
+      width="100%"
+    >
+      <Image
+        fadeDuration={0}
+        resizeMode="contain"
+        source={
+          Object {
+            "testUri": "../../../packages/image/assets/t.png",
+          }
+        }
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`11. uses lowressize image as placeholder if passed 1`] = `
+<View
+  aspectRatio={2}
+>
+  <View>
+    <Image
+      fadeDuration={0}
+      fadeImageIn={false}
+      source={
+        Object {
+          "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=2308",
+        }
+      }
+    />
+  </View>
+  <View>
+    <View>
+      <Image
+        fadeDuration={0}
+        fadeImageIn={false}
+        source={
+          Object {
+            "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800",
+          }
+        }
+      />
+    </View>
+  </View>
 </View>
 `;
 
@@ -220,26 +319,32 @@ exports[`12. handle layout change 1`] = `
 <View
   aspectRatio={2}
 >
-  <View
-    height={300}
-    width={600}
-  >
+  <View>
     <Image
-      resizeMode="contain"
+      fadeDuration={0}
+      fadeImageIn={false}
       source={
         Object {
-          "testUri": "../../../packages/image/assets/t.png",
+          "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
         }
       }
     />
   </View>
-  <Image
-    fadeImageIn={false}
-    source={
-      Object {
-        "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
-      }
-    }
-  />
+  <View>
+    <View
+      height="100%"
+      width="100%"
+    >
+      <Image
+        fadeDuration={0}
+        resizeMode="contain"
+        source={
+          Object {
+            "testUri": "../../../packages/image/assets/t.png",
+          }
+        }
+      />
+    </View>
+  </View>
 </View>
 `;

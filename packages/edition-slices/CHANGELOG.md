@@ -3,6 +3,55 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.57.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.56.12...@times-components/edition-slices@0.57.0) (2019-05-14)
+
+
+### Features
+
+* Implement edition slice supplement secondary 1 and 4 ([#1941](https://github.com/newsuk/times-components/issues/1941)) ([d70c956](https://github.com/newsuk/times-components/commit/d70c956))
+
+
+
+
+
+## [0.56.12](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.56.11...@times-components/edition-slices@0.56.12) (2019-05-14)
+
+
+### Bug Fixes
+
+* puzzle tile bgs ([#1944](https://github.com/newsuk/times-components/issues/1944)) ([8dad22c](https://github.com/newsuk/times-components/commit/8dad22c))
+
+
+
+
+
+## [0.56.11](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.56.10...@times-components/edition-slices@0.56.11) (2019-05-10)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
+## [0.56.10](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.56.9...@times-components/edition-slices@0.56.10) (2019-05-09)
+
+
+### Bug Fixes
+
+* remove tile view container border radius styles ([#1915](https://github.com/newsuk/times-components/issues/1915)) ([8d21d51](https://github.com/newsuk/times-components/commit/8d21d51))
+
+
+
+
+
+## [0.56.9](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.56.8...@times-components/edition-slices@0.56.9) (2019-05-09)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
 ## [0.56.8](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.56.7...@times-components/edition-slices@0.56.8) (2019-05-08)
 
 

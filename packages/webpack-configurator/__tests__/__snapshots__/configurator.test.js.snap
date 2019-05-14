@@ -1,55 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`webpack-configurator should create a sensible webpackConfig 1`] = `
-Object {
-  "devtool": false,
-  "entry": Object {
-    "index": "/root/foo/index.js",
-  },
-  "externals": [Function],
-  "mode": "production",
-  "module": Object {
-    "rules": Array [
-      Object {
-        "exclude": /\\(node_module\\)/,
-        "test": /\\\\\\.js\\$/,
-        "use": Object {
-          "loader": "babel-loader",
-          "options": Object {
-            "cacheDirectory": true,
-            "plugins": Array [
-              Array [
-                "react-native-web",
-                Object {
-                  "commonjs": true,
-                },
-              ],
-            ],
-          },
-        },
-      },
-    ],
-  },
-  "output": Object {
-    "filename": "rnw.js",
-    "libraryTarget": "commonjs2",
-    "path": "/root",
-  },
-  "resolve": Object {
-    "extensions": Array [
-      ".web.js",
-      ".js",
-    ],
-    "mainFields": Array [
-      "dev",
-      "module",
-      "main",
-    ],
-  },
-  "target": "node",
-}
-`;
-
 exports[`webpack-configurator should throw if entry could not be resolved 1`] = `[Error: could not resolve "/root/foo/index". Make sure "devEntry" in "/root/package.json" points to the right file]`;
 
 exports[`webpack-configurator should throw if package.json not found 1`] = `[Error: entrypoint "devEntry" not found in "/root/package.json".]`;

@@ -211,16 +211,6 @@ exports[`2. two child elements 1`] = `
   justify-content: center;
 }
 
-.c10 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  height: auto;
-}
-
 .c9 {
   border-bottom-color: #DBDBDB;
   border-bottom-style: solid;
@@ -231,6 +221,16 @@ exports[`2. two child elements 1`] = `
   margin-bottom: 10px;
   margin-top: 10px;
   min-width: auto;
+}
+
+.c10 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: auto;
 }
 
 .c1 .supportImageContainerClass {
@@ -291,14 +291,6 @@ exports[`2. two child elements 1`] = `
 }
 
 @media (min-width:768px) {
-  .c10 {
-    -webkit-flex-basis: 0 !important;
-    -ms-flex-preferred-size: 0 !important;
-    flex-basis: 0 !important;
-  }
-}
-
-@media (min-width:768px) {
   .c9 {
     border-bottom: none;
     border-right-color: #DBDBDB;
@@ -308,6 +300,14 @@ exports[`2. two child elements 1`] = `
     -ms-flex: 0 !important;
     flex: 0 !important;
     margin: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c10 {
+    -webkit-flex-basis: 0 !important;
+    -ms-flex-preferred-size: 0 !important;
+    flex-basis: 0 !important;
   }
 }
 
@@ -371,14 +371,23 @@ exports[`2. two child elements 1`] = `
   }
 }
 
-@media (min-width:768px) {
-  .c4 {
+@media (min-width:1024px) {
+  .c3 {
     width: 100%;
   }
 }
 
 @media (min-width:1024px) {
-  .c3 {
+  .c6 {
+    -webkit-box-flex: 2.75;
+    -webkit-flex-grow: 2.75;
+    -ms-flex-positive: 2.75;
+    flex-grow: 2.75;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
     width: 100%;
   }
 }
@@ -394,15 +403,6 @@ exports[`2. two child elements 1`] = `
     flex-grow: 3;
     padding-left: 10px;
     padding-right: 10px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c6 {
-    -webkit-box-flex: 2.75;
-    -webkit-flex-grow: 2.75;
-    -ms-flex-positive: 2.75;
-    flex-grow: 2.75;
   }
 }
 
@@ -488,16 +488,6 @@ exports[`3. three child elements 1`] = `
   justify-content: center;
 }
 
-.c10 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  height: auto;
-}
-
 .c9 {
   border-bottom-color: #DBDBDB;
   border-bottom-style: solid;
@@ -508,6 +498,16 @@ exports[`3. three child elements 1`] = `
   margin-bottom: 10px;
   margin-top: 10px;
   min-width: auto;
+}
+
+.c10 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: auto;
 }
 
 .c1 .supportImageContainerClass {
@@ -578,14 +578,6 @@ exports[`3. three child elements 1`] = `
 }
 
 @media (min-width:768px) {
-  .c10 {
-    -webkit-flex-basis: 0 !important;
-    -ms-flex-preferred-size: 0 !important;
-    flex-basis: 0 !important;
-  }
-}
-
-@media (min-width:768px) {
   .c9 {
     border-bottom: none;
     border-right-color: #DBDBDB;
@@ -595,6 +587,14 @@ exports[`3. three child elements 1`] = `
     -ms-flex: 0 !important;
     flex: 0 !important;
     margin: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c10 {
+    -webkit-flex-basis: 0 !important;
+    -ms-flex-preferred-size: 0 !important;
+    flex-basis: 0 !important;
   }
 }
 
@@ -638,6 +638,65 @@ exports[`3. three child elements 1`] = `
 }
 
 @media (min-width:768px) {
+  .c5 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-bottom: 10px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c3 {
+    width: 100%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c6 {
+    -webkit-box-flex: 1.5;
+    -webkit-flex-grow: 1.5;
+    -ms-flex-positive: 1.5;
+    flex-grow: 1.5;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    width: 100%;
+  }
+}
+
+@media (min-width:768px) {
+  .c7 {
+    -webkit-flex-basis: 0 !important;
+    -ms-flex-preferred-size: 0 !important;
+    flex-basis: 0 !important;
+    -webkit-box-flex: 2;
+    -webkit-flex-grow: 2;
+    -ms-flex-positive: 2;
+    flex-grow: 2;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width:768px) {
+  .c11 {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c11 {
+    margin-top: 0;
+  }
+}
+
+@media (min-width:768px) {
   .c0 .leadImageContainerClass {
     margin-bottom: 10px;
     min-width: 370px;
@@ -666,65 +725,6 @@ exports[`3. three child elements 1`] = `
     flex: 1;
     margin-bottom: 0;
     min-width: 100px;
-  }
-}
-
-@media (min-width:768px) {
-  .c5 {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    padding-bottom: 10px;
-  }
-}
-
-@media (min-width:768px) {
-  .c4 {
-    width: 100%;
-  }
-}
-
-@media (min-width:1024px) {
-  .c3 {
-    width: 100%;
-  }
-}
-
-@media (min-width:768px) {
-  .c7 {
-    -webkit-flex-basis: 0 !important;
-    -ms-flex-preferred-size: 0 !important;
-    flex-basis: 0 !important;
-    -webkit-box-flex: 2;
-    -webkit-flex-grow: 2;
-    -ms-flex-positive: 2;
-    flex-grow: 2;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
-@media (min-width:1024px) {
-  .c6 {
-    -webkit-box-flex: 1.5;
-    -webkit-flex-grow: 1.5;
-    -ms-flex-positive: 1.5;
-    flex-grow: 1.5;
-  }
-}
-
-@media (min-width:768px) {
-  .c11 {
-    margin-left: 10px;
-    margin-right: 10px;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c11 {
-    margin-top: 0;
   }
 }
 
