@@ -33,7 +33,8 @@ const ArticleHeader = ({
           style={[
             styles.container,
             { backgroundColor: backgroundColour, width: "100%" },
-            isTablet && styles.containerTablet
+            isTablet && styles.containerTablet,
+            { marginBottom: -1 }
           ]}
         >
           <View
