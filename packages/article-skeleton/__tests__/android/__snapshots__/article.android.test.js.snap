@@ -92,7 +92,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
               }
               imageOptions={
                 Object {
-                  "display": "primary",
+                  "display": "secondary",
                   "ratio": "1500:1000",
                   "uri": "https://image.io/secondary",
                 }
@@ -113,7 +113,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
               }
               imageOptions={
                 Object {
-                  "display": "primary",
+                  "display": "secondary",
                   "ratio": "1500:1000",
                   "uri": "https://image.io/inline",
                 }

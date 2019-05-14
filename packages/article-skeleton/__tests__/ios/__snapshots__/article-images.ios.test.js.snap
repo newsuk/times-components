@@ -37,7 +37,7 @@ exports[`1. a secondary image 1`] = `
               }
               imageOptions={
                 Object {
-                  "display": "primary",
+                  "display": "secondary",
                   "ratio": "3:2",
                   "uri": "https://image-2.io",
                 }
@@ -102,7 +102,7 @@ exports[`2. an inline image 1`] = `
               }
               imageOptions={
                 Object {
-                  "display": "primary",
+                  "display": "secondary",
                   "ratio": "9:4",
                   "uri": "https://image-inline.io",
                 }

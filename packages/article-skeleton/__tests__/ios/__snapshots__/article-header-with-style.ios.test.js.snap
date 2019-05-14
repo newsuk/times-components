@@ -256,7 +256,7 @@ exports[`1. article with header 1`] = `
               }
               imageOptions={
                 Object {
-                  "display": "primary",
+                  "display": "secondary",
                   "ratio": "3:2",
                   "uri": "https://image.io",
                 }
