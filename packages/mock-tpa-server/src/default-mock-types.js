@@ -18,6 +18,7 @@ const defaultMockTypes = {
   Topic: { __typename: "Topic" },
   UnitInterval: 0.5,
   URL: "url",
+  User: "user",
   UUID: "uuid"
 };
 

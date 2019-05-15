@@ -5,9 +5,9 @@ import {
   IconEmail,
   IconFacebook,
   IconTwitter,
-  IconCopyLink,
-  IconSaveBookmark
+  IconCopyLink
 } from "@times-components/icons";
+import SaveStar from "@times-components/save-star-web";
 import withTrackEvents from "./tracking/with-track-events";
 import SharingApiUrls from "./constants";
 import styles from "./styles";
@@ -27,11 +27,12 @@ class SaveAndShareBar extends Component {
 
   render() {
     const {
+      articleId,
       articleUrl,
-      onSaveToMyArticles,
       onShareOnEmail,
       onShareOnFB,
-      onShareOnTwitter
+      onShareOnTwitter,
+      saveApi
     } = this.props;
     return (
       <View style={styles.container}>
@@ -79,18 +80,12 @@ class SaveAndShareBar extends Component {
           </BarItem>
         </View>
         <View style={styles.rowItem}>
-          <Text style={styles.label}>Save</Text>
-          <BarItem
-            color={styles.svgIcon.save.strokeColour}
+          <SaveStar
+            colour={styles.svgIcon.save.strokeColour}
             hoverColor={styles.svgIcon.hoverFillColour}
-            onPress={onSaveToMyArticles}
-          >
-            <IconSaveBookmark
-              fillColour={styles.svgIcon.save.fillColour}
-              strokeColour="currentColor"
-              title="Save to My Articles"
-            />
-          </BarItem>
+            articleId={articleId}
+            saveApi={saveApi}
+          />
         </View>
       </View>
     );
@@ -103,10 +98,14 @@ SaveAndShareBar.propTypes = {
   articleUrl: PropTypes.string.isRequired,
   articleHeadline: PropTypes.string.isRequired,
   onCopyLink: PropTypes.func.isRequired,
-  onSaveToMyArticles: PropTypes.func.isRequired,
   onShareOnEmail: PropTypes.func.isRequired,
   onShareOnFB: PropTypes.func,
-  onShareOnTwitter: PropTypes.func
+  onShareOnTwitter: PropTypes.func,
+  saveApi: PropTypes.shape({
+    bookmark: PropTypes.func.isRequired,
+    getBookmarks: PropTypes.func.isRequired,
+    unBookmark: PropTypes.func.isRequired
+  }).isRequired
 };
 
 /* Serves as an indication when share links are clicked for tracking and analytics */

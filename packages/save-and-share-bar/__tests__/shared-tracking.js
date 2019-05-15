@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import TestRenderer from "react-test-renderer";
+import mockSaveApi from "@times-components/save-star-web/mock-save-api";
 import PropTypes from "prop-types";
 import "./mocks";
 import BarItem from "../src/bar-item";
@@ -63,6 +64,7 @@ export default () => {
           onShareOnEmail={onShareOnEmail}
           onShareOnFB={onShareOnFB}
           onShareOnTwitter={onShareOnTwitter}
+          saveApi={mockSaveApi}
         />
       );
     });
@@ -114,7 +116,7 @@ export default () => {
     it("when press save to my articles", () => {
       const saveToMyArticlesBarItem = testInstance.root.findAllByType(
         BarItem
-      )[4];
+      )[3];
       saveToMyArticlesBarItem.props.onPress();
 
       const [[call]] = stream.mock.calls;

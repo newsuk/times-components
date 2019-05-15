@@ -24,15 +24,11 @@ Object {
     "articleHeadline": "test-headline",
     "articleId": "id-123",
   },
-  "component": "ArticleSaveToMyArticles",
+  "component": "ArticleCopyLink",
 }
 `;
 
-exports[`save and share tracking events when press save to my articles: onSaveToMyArticles 1`] = `
-Array [
-  Array [],
-]
-`;
+exports[`save and share tracking events when press save to my articles: onSaveToMyArticles 1`] = `Array []`;
 
 exports[`save and share tracking events when press share on email 1`] = `
 Object {
