@@ -331,6 +331,7 @@ exports[`6. lead two no pic and two 1`] = `
 exports[`7. secondary one 1`] = `
 <div>
   <TileW
+    breakpoint="wide"
     tileName="secondary"
   />
 </div>

@@ -1,6 +1,10 @@
-import { fontFactory, spacing } from "@times-components/styleguide";
+import {
+  fontFactory,
+  spacing,
+  editionBreakpoints
+} from "@times-components/styleguide";
 
-const styles = {
+const styles = fontSize => ({
   container: {
     flexDirection: "row",
     paddingHorizontal: spacing(4),
@@ -9,7 +13,7 @@ const styles = {
   headline: {
     ...fontFactory({
       font: "headline",
-      fontSize: "tileLeadHeadline"
+      fontSize
     })
   },
   imageContainer: {
@@ -20,6 +24,9 @@ const styles = {
     paddingRight: spacing(4),
     width: "33.33%"
   }
-};
+});
 
-export default styles;
+export default breakpoint =>
+  editionBreakpoints.huge === breakpoint
+    ? styles("articleHeadline")
+    : styles("tileLeadHeadline");

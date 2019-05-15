@@ -1440,6 +1440,7 @@ exports[`7. secondary one 1`] = `
   className="css-view-1dbjc4n IS1"
 >
   <TileW
+    breakpoint="wide"
     tileName="secondary"
   />
 </div>

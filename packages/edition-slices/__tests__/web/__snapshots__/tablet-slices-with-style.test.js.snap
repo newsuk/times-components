@@ -859,6 +859,7 @@ exports[`8. secondary one - medium 1`] = `
   className="css-view-1dbjc4n IS1"
 >
   <TileW
+    breakpoint="wide"
     tileName="secondary"
   />
 </div>
@@ -2655,6 +2656,7 @@ exports[`23. secondary one - wide 1`] = `
   className="css-view-1dbjc4n IS1"
 >
   <TileW
+    breakpoint="wide"
     tileName="secondary"
   />
 </div>
@@ -4451,6 +4453,7 @@ exports[`38. secondary one - huge 1`] = `
   className="css-view-1dbjc4n IS1"
 >
   <TileW
+    breakpoint="wide"
     tileName="secondary"
   />
 </div>
