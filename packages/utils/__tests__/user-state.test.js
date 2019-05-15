@@ -4,21 +4,20 @@ const defaultUserState = {
     isLoggedIn: true,
     isMetered: false,
     isMeteredExpired: false,
-    isShared: true
+    isShared: false
 };
 
-describe.only('user state should', () => {
+describe('user state should', () => {
     it('return true if userState isLoggedIn is true', () => {
-        const userState = defaultUserState;
-        expect(isLoggedIn(userState)).toBe(true);
+        expect(isLoggedIn(defaultUserState)).toBe(true);
     });
 
-    it('return true if user.isLoggedIn equals true and iuser.isMeteredExpired equals true', () => {
+    it('return true if user.isLoggedIn equals true and user.isMeteredExpired equals true', () => {
         const userState = {...defaultUserState, isMeteredExpired: true};
         expect(isMeteredExpired(userState)).toBe(true);
     });
 
-    it('sreturn false if user.isLoggedIn equals true and iuser.isMeteredExpired equals false', () => {
+    it('return false if user.isLoggedIn equals true and iuser.isMeteredExpired equals false', () => {
         expect(isMeteredExpired(defaultUserState)).toBe(false);
     });
 
@@ -33,6 +32,7 @@ describe.only('user state should', () => {
     });
 
     it('return true if user.isLoggedIn equals true and user.isMetered equals true', () => {
-        expect(isMetered(defaultUserState)).toBe(false);
+        const userState = {...defaultUserState, isShared: true};
+        expect(isMetered(userState)).toBe(false);
     });
 });
