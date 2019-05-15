@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.58.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.57.2...@times-components/edition-slices@0.58.0) (2019-05-15)
+
+
+### Features
+
+* Implement secondary-one slice for huge breakpoint. ([#1946](https://github.com/newsuk/times-components/issues/1946)) ([f0e8e54](https://github.com/newsuk/times-components/commit/f0e8e54))
+
+
+
+
+
 ## [0.57.2](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.57.1...@times-components/edition-slices@0.57.2) (2019-05-14)
 
 **Note:** Version bump only for package @times-components/edition-slices
