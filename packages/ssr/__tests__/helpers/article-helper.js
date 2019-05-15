@@ -1,10 +1,11 @@
-import { MockArticle } from "@times-components/fixture-generator";
+import { MockArticle, MockUser } from "@times-components/fixture-generator";
 
 const relatedArticleCount = 3;
 
 const articleTemplateTest = template =>
   describe(`Article - ${template}`, () => {
     let sundayTimesArticleWithThreeRelatedArticles;
+    let userWithBookmarks;
 
     beforeEach(() => {
       sundayTimesArticleWithThreeRelatedArticles = new MockArticle()
@@ -12,6 +13,8 @@ const articleTemplateTest = template =>
         .setRelatedArticles(relatedArticleCount)
         .setTemplate(template)
         .get();
+
+      userWithBookmarks = new MockUser().setBookmarksTotal(3);
     });
 
     afterEach(() => {
@@ -21,7 +24,8 @@ const articleTemplateTest = template =>
     it("loads hi-res images for related articles", () =>
       cy
         .task("startMockServerWith", {
-          Article: sundayTimesArticleWithThreeRelatedArticles
+          Article: sundayTimesArticleWithThreeRelatedArticles,
+          User: userWithBookmarks
         })
         .visit("/article/8763d1a0-ca57-11e8-bde6-fae32479843d")
         .get("#related-articles")
@@ -45,7 +49,8 @@ const articleTemplateTest = template =>
 
     it("loads all the required article ads", () => {
       cy.task("startMockServerWith", {
-        Article: sundayTimesArticleWithThreeRelatedArticles
+        Article: sundayTimesArticleWithThreeRelatedArticles,
+        User: userWithBookmarks
       })
         .visit("/article/8763d1a0-ca57-11e8-bde6-fae32479843d")
         .wait(2000);
@@ -66,7 +71,8 @@ const articleTemplateTest = template =>
         .get();
 
       cy.task("startMockServerWith", {
-        Article: articleWithCommentsEnabled
+        Article: articleWithCommentsEnabled,
+        User: userWithBookmarks
       }).visit("/article/8763d1a0-ca57-11e8-bde6-fae32479843d");
 
       cy.get("script[data-spotim-module]")
@@ -86,7 +92,8 @@ const articleTemplateTest = template =>
         .get();
 
       cy.task("startMockServerWith", {
-        Article: articleWithCommentsDisabled
+        Article: articleWithCommentsDisabled,
+        User: userWithBookmarks
       }).visit("/article/8763d1a0-ca57-11e8-bde6-fae32479843d");
 
       cy.get("script[data-spotim-module]").should("not.exist");

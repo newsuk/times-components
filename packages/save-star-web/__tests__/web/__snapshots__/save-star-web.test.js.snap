@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. saved star with saved status 1`] = `
+Array [
+  <div>
+    Saved
+  </div>,
+  <a>
+    <div>
+      <svg
+        aria-label="[title]"
+        height={16}
+        role="img"
+        viewBox="0 0 12 16"
+        width={12}
+      >
+        <title>
+          Save to My Articles
+        </title>
+        <path
+          d="M1 0h10a1 1 0 0 1 1 1v15l-5.98-4.466L0 16V1a1 1 0 0 1 1-1z"
+          fill="#006699"
+          stroke="#696969"
+        />
+      </svg>
+    </div>
+  </a>,
+]
+`;
+
+exports[`2. saved star with unsaved status 1`] = `
+Array [
+  <div>
+    Save  
+  </div>,
+  <a>
+    <div>
+      <svg
+        aria-label="[title]"
+        height={16}
+        role="img"
+        viewBox="0 0 12 16"
+        width={12}
+      >
+        <title>
+          Save to My Articles
+        </title>
+        <path
+          d="M1 0h10a1 1 0 0 1 1 1v15l-5.98-4.466L0 16V1a1 1 0 0 1 1-1z"
+          fill="#FFFFFF"
+          stroke="#696969"
+        />
+      </svg>
+    </div>
+  </a>,
+]
+`;
+
+exports[`3. saved star with loading state while network request is fetching data 1`] = `
+Array [
+  <div>
+    Save  
+  </div>,
+  <div
+    aria-valuemax="1"
+    aria-valuemin="0"
+    role="progressbar"
+  >
+    <div>
+      <svg
+        height="100%"
+        viewBox="0 0 32 32"
+        width="100%"
+      >
+        <circle
+          cx="16"
+          cy="16"
+          fill="none"
+          r="14"
+          strokeWidth="4"
+        />
+        <circle
+          cx="16"
+          cy="16"
+          fill="none"
+          r="14"
+          strokeWidth="4"
+        />
+      </svg>
+    </div>
+  </div>,
+]
+`;

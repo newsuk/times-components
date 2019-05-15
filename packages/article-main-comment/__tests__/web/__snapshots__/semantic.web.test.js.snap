@@ -185,23 +185,23 @@ exports[`1. a full article 1`] = `
       />
     </svg>
   </a>
-  Save
-  <a>
-    <svg
-      aria-label="[title]"
-      height={16}
-      role="img"
-      viewBox="0 0 12 16"
-      width={12}
-    >
-      <title>
-        Save to My Articles
-      </title>
-      <path
-        d="367900640c3b5aa2804f45a084e247ea"
-      />
-    </svg>
-  </a>
+  Save  
+  <svg
+    height="100%"
+    viewBox="0 0 32 32"
+    width="100%"
+  >
+    <circle
+      cx="16"
+      cy="16"
+      r="14"
+    />
+    <circle
+      cx="16"
+      cy="16"
+      r="14"
+    />
+  </svg>
   <img
     alt=""
     src="https://image.io?resize=100"

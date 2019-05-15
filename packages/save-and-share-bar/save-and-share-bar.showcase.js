@@ -1,4 +1,5 @@
 import React from "react";
+import saveApi from "@times-components/save-star-web/mock-save-api-showcase";
 import SaveAndShareBar from "./src/save-and-share-bar";
 
 export default {
@@ -6,15 +7,15 @@ export default {
     {
       component: () => (
         <SaveAndShareBar
-          articleId="id-123"
+          articleId="9bd029d2-49a1-11e9-b472-f58a50a13bbb"
           articleHeadline="test-headline"
           articleUrl="https://www.thetimes.co.uk/"
           onCopyLink={() => {}}
-          onSaveToMyArticles={() => {}}
           onShareOnEmail={() => {}}
+          saveApi={saveApi}
         />
       ),
-      name: "Save snd Share bar",
+      name: "Save and Share bar",
       type: "story"
     }
   ],
