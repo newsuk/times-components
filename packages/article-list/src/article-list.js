@@ -210,6 +210,7 @@ class ArticleList extends Component {
         keyExtractor={item => item.elementId}
         ListFooterComponent={articleListFooter}
         ListHeaderComponent={articleListHeader}
+        nestedScrollEnabled
         onEndReached={() =>
           // Workaround for iOS Flatlist bug (https://github.com/facebook/react-native/issues/16067)
           data.length > 0 ? this.fetchMoreOnEndReached(data) : null

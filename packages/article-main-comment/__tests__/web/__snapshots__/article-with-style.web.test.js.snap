@@ -286,7 +286,7 @@ exports[`full article with style 1`] = `
 @media (min-width:768px) {
   .c2 {
     width: 80.8%;
-    margin: 0 auto;
+    margin: 0 auto 10px;
     margin-left: auto;
     margin-right: auto;
   }

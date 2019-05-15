@@ -307,18 +307,45 @@ const renderArticle = userState => (
 
 describe("Article with user state", () => {
   it("Render full article when user is logged in", () => {
-    const output = TestRenderer.create(renderArticle({ isLoggedIn: true }));
+    const userState = {
+      isLoggedIn: true
+    };
+
+    const nuk = {
+      user: {
+        ...userState
+      }
+    };
+    window.nuk = nuk;
+
+    const output = TestRenderer.create(renderArticle(userState));
 
     expect(output).toMatchSnapshot();
   });
 
   it("Render teaser article when user is not logged in", () => {
-    const output = TestRenderer.create(renderArticle({ isLoggedIn: false }));
+    const userState = {
+      isLoggedIn: false
+    };
+
+    const nuk = {
+      user: {
+        ...userState
+      }
+    };
+    window.nuk = nuk;
+
+    const output = TestRenderer.create(renderArticle(userState));
 
     expect(output).toMatchSnapshot();
   });
 
   it("Render teaser article when user is null", () => {
+    const nuk = {
+      user: {}
+    };
+    window.nuk = nuk;
+
     const output = TestRenderer.create(renderArticle(null));
 
     expect(output).toMatchSnapshot();

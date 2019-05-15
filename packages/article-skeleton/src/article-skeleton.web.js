@@ -44,13 +44,14 @@ class ArticleSkeleton extends Component {
     this.setState({
       articleWidth: this.node && this.node.clientWidth
     });
-    if (window) {
+
+    if (window && window.nuk.user.isLoggedIn) {
       window.addEventListener("scroll", this.handleScroll);
     }
   }
 
   componentWillUnmount() {
-    if (window) {
+    if (window && window.nuk.user.isLoggedIn) {
       window.removeEventListener("scroll", this.handleScroll);
     }
   }
@@ -60,6 +61,38 @@ class ArticleSkeleton extends Component {
     const isSticky = isStickyAllowed(breakpoints.huge) && offsetTop <= 1;
 
     this.setState({ isSticky });
+  }
+
+  renderSaveAndShareBar({
+    articleId,
+    headline,
+    url,
+    isSticky,
+    allowSaveAndShare
+  }) {
+    if (!allowSaveAndShare) return null;
+
+    return (
+      <SaveShareContainer isSticky={isSticky}>
+        <SaveShareRefContainer isSticky={isSticky}>
+          <div
+            ref={el => {
+              this.sticky = el;
+            }}
+          >
+            <SaveAndShareBar
+              articleId={articleId}
+              articleHeadline={headline}
+              articleUrl={url}
+              onCopyLink={() => {}}
+              onSaveToMyArticles={() => {}}
+              onShareOnEmail={() => {}}
+              saveApi={saveApi}
+            />
+          </div>
+        </SaveShareRefContainer>
+      </SaveShareContainer>
+    );
   }
 
   render() {
@@ -130,25 +163,13 @@ class ArticleSkeleton extends Component {
                           topicsAllowed={user.isLoggedIn}
                           width={articleWidth}
                         />
-                        <SaveShareContainer isSticky={isSticky}>
-                          <SaveShareRefContainer isSticky={isSticky}>
-                            <div
-                              ref={el => {
-                                this.sticky = el;
-                              }}
-                            >
-                              <SaveAndShareBar
-                                articleId={articleId}
-                                articleHeadline={headline}
-                                articleUrl={url}
-                                onCopyLink={() => {}}
-                                onSaveToMyArticles={() => {}}
-                                onShareOnEmail={() => {}}
-                                saveApi={saveApi}
-                              />
-                            </div>
-                          </SaveShareRefContainer>
-                        </SaveShareContainer>
+                        {this.renderSaveAndShareBar({
+                          articleId,
+                          headline,
+                          url,
+                          isSticky,
+                          allowSaveAndShare: user.isLoggedIn
+                        })}
                         <BodyContainer>
                           <ArticleBody
                             content={newContent}
@@ -157,7 +178,6 @@ class ArticleSkeleton extends Component {
                             registerNode={registerNode}
                             section={section}
                           />
-
                           <ArticleExtras
                             analyticsStream={analyticsStream}
                             articleId={articleId}
