@@ -38,14 +38,10 @@ Array [
       style={
         Object {
           "borderBottomColor": "rgba(219,219,219,1.00)",
-          "borderBottomStyle": "solid",
           "borderLeftColor": "rgba(219,219,219,1.00)",
-          "borderLeftStyle": "solid",
           "borderRightColor": "rgba(219,219,219,1.00)",
-          "borderRightStyle": "solid",
           "borderRightWidth": "1px",
           "borderTopColor": "rgba(219,219,219,1.00)",
-          "borderTopStyle": "solid",
           "marginBottom": "10px",
           "marginTop": "10px",
         }
@@ -67,14 +63,10 @@ Array [
     style={
       Object {
         "borderBottomColor": "rgba(219,219,219,1.00)",
-        "borderBottomStyle": "solid",
         "borderBottomWidth": "1px",
         "borderLeftColor": "rgba(219,219,219,1.00)",
-        "borderLeftStyle": "solid",
         "borderRightColor": "rgba(219,219,219,1.00)",
-        "borderRightStyle": "solid",
         "borderTopColor": "rgba(219,219,219,1.00)",
-        "borderTopStyle": "solid",
         "marginLeft": "10px",
         "marginRight": "10px",
       }
@@ -89,14 +81,10 @@ Array [
     style={
       Object {
         "borderBottomColor": "rgba(219,219,219,1.00)",
-        "borderBottomStyle": "solid",
         "borderBottomWidth": "1px",
         "borderLeftColor": "rgba(219,219,219,1.00)",
-        "borderLeftStyle": "solid",
         "borderRightColor": "rgba(219,219,219,1.00)",
-        "borderRightStyle": "solid",
         "borderTopColor": "rgba(219,219,219,1.00)",
-        "borderTopStyle": "solid",
         "marginLeft": "10px",
         "marginRight": "10px",
       }
@@ -166,14 +154,10 @@ exports[`2. secondary two and two - medium 1`] = `
       style={
         Object {
           "borderBottomColor": "rgba(219,219,219,1.00)",
-          "borderBottomStyle": "solid",
           "borderLeftColor": "rgba(219,219,219,1.00)",
-          "borderLeftStyle": "solid",
           "borderRightColor": "rgba(219,219,219,1.00)",
-          "borderRightStyle": "solid",
           "borderRightWidth": "1px",
           "borderTopColor": "rgba(219,219,219,1.00)",
-          "borderTopStyle": "solid",
           "marginBottom": "10px",
           "marginTop": "10px",
         }
@@ -195,14 +179,10 @@ exports[`2. secondary two and two - medium 1`] = `
     style={
       Object {
         "borderBottomColor": "rgba(219,219,219,1.00)",
-        "borderBottomStyle": "solid",
         "borderBottomWidth": "1px",
         "borderLeftColor": "rgba(219,219,219,1.00)",
-        "borderLeftStyle": "solid",
         "borderRightColor": "rgba(219,219,219,1.00)",
-        "borderRightStyle": "solid",
         "borderTopColor": "rgba(219,219,219,1.00)",
-        "borderTopStyle": "solid",
         "marginLeft": "10px",
         "marginRight": "10px",
       }
@@ -245,14 +225,10 @@ exports[`2. secondary two and two - medium 1`] = `
       style={
         Object {
           "borderBottomColor": "rgba(219,219,219,1.00)",
-          "borderBottomStyle": "solid",
           "borderLeftColor": "rgba(219,219,219,1.00)",
-          "borderLeftStyle": "solid",
           "borderRightColor": "rgba(219,219,219,1.00)",
-          "borderRightStyle": "solid",
           "borderRightWidth": "1px",
           "borderTopColor": "rgba(219,219,219,1.00)",
-          "borderTopStyle": "solid",
           "marginBottom": "10px",
           "marginTop": "10px",
         }
@@ -310,14 +286,10 @@ exports[`3. secondary two and two - wide 1`] = `
     style={
       Object {
         "borderBottomColor": "rgba(219,219,219,1.00)",
-        "borderBottomStyle": "solid",
         "borderLeftColor": "rgba(219,219,219,1.00)",
-        "borderLeftStyle": "solid",
         "borderRightColor": "rgba(219,219,219,1.00)",
-        "borderRightStyle": "solid",
         "borderRightWidth": "1px",
         "borderTopColor": "rgba(219,219,219,1.00)",
-        "borderTopStyle": "solid",
         "marginBottom": "10px",
         "marginTop": "10px",
       }
@@ -338,14 +310,10 @@ exports[`3. secondary two and two - wide 1`] = `
     style={
       Object {
         "borderBottomColor": "rgba(219,219,219,1.00)",
-        "borderBottomStyle": "solid",
         "borderLeftColor": "rgba(219,219,219,1.00)",
-        "borderLeftStyle": "solid",
         "borderRightColor": "rgba(219,219,219,1.00)",
-        "borderRightStyle": "solid",
         "borderRightWidth": "1px",
         "borderTopColor": "rgba(219,219,219,1.00)",
-        "borderTopStyle": "solid",
         "marginBottom": "10px",
         "marginTop": "10px",
       }
@@ -366,14 +334,10 @@ exports[`3. secondary two and two - wide 1`] = `
     style={
       Object {
         "borderBottomColor": "rgba(219,219,219,1.00)",
-        "borderBottomStyle": "solid",
         "borderLeftColor": "rgba(219,219,219,1.00)",
-        "borderLeftStyle": "solid",
         "borderRightColor": "rgba(219,219,219,1.00)",
-        "borderRightStyle": "solid",
         "borderRightWidth": "1px",
         "borderTopColor": "rgba(219,219,219,1.00)",
-        "borderTopStyle": "solid",
         "marginBottom": "10px",
         "marginTop": "10px",
       }
@@ -424,14 +388,10 @@ exports[`4. secondary two and two - huge 1`] = `
     style={
       Object {
         "borderBottomColor": "rgba(219,219,219,1.00)",
-        "borderBottomStyle": "solid",
         "borderLeftColor": "rgba(219,219,219,1.00)",
-        "borderLeftStyle": "solid",
         "borderRightColor": "rgba(219,219,219,1.00)",
-        "borderRightStyle": "solid",
         "borderRightWidth": "1px",
         "borderTopColor": "rgba(219,219,219,1.00)",
-        "borderTopStyle": "solid",
         "marginBottom": "10px",
         "marginTop": "10px",
       }
@@ -454,14 +414,10 @@ exports[`4. secondary two and two - huge 1`] = `
     style={
       Object {
         "borderBottomColor": "rgba(219,219,219,1.00)",
-        "borderBottomStyle": "solid",
         "borderLeftColor": "rgba(219,219,219,1.00)",
-        "borderLeftStyle": "solid",
         "borderRightColor": "rgba(219,219,219,1.00)",
-        "borderRightStyle": "solid",
         "borderRightWidth": "1px",
         "borderTopColor": "rgba(219,219,219,1.00)",
-        "borderTopStyle": "solid",
         "marginBottom": "10px",
         "marginTop": "10px",
       }
@@ -482,14 +438,10 @@ exports[`4. secondary two and two - huge 1`] = `
     style={
       Object {
         "borderBottomColor": "rgba(219,219,219,1.00)",
-        "borderBottomStyle": "solid",
         "borderLeftColor": "rgba(219,219,219,1.00)",
-        "borderLeftStyle": "solid",
         "borderRightColor": "rgba(219,219,219,1.00)",
-        "borderRightStyle": "solid",
         "borderRightWidth": "1px",
         "borderTopColor": "rgba(219,219,219,1.00)",
-        "borderTopStyle": "solid",
         "marginBottom": "10px",
         "marginTop": "10px",
       }

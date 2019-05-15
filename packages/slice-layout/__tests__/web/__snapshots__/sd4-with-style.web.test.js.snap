@@ -2,8 +2,18 @@
 
 exports[`1. secondary four - small 1`] = `
 Array [
-  <div
-    className="css-view-1dbjc4n"
+  <style>
+.S1 {
+  border-bottom-width: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+</style>
+
+<div
+    className="S1"
     style={
       Object {
         "WebkitBoxDirection": "normal",
@@ -25,7 +35,7 @@ Array [
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="S1"
       style={
         Object {
           "width": "50%",
@@ -33,31 +43,27 @@ Array [
       }
     >
       <div
-        className="css-text-76zvg2"
+        className="S1"
       >
         secondary-1
       </div>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="S1"
       style={
         Object {
           "borderBottomColor": "rgba(219,219,219,1.00)",
-          "borderBottomStyle": "solid",
           "borderLeftColor": "rgba(219,219,219,1.00)",
-          "borderLeftStyle": "solid",
           "borderRightColor": "rgba(219,219,219,1.00)",
-          "borderRightStyle": "solid",
           "borderRightWidth": "1px",
           "borderTopColor": "rgba(219,219,219,1.00)",
-          "borderTopStyle": "solid",
           "marginBottom": "10px",
           "marginTop": "10px",
         }
       }
     />
     <div
-      className="css-view-1dbjc4n"
+      className="S1"
       style={
         Object {
           "width": "50%",
@@ -65,32 +71,47 @@ Array [
       }
     >
       <div
-        className="css-text-76zvg2"
+        className="S1"
       >
         secondary-2
       </div>
     </div>
   </div>,
-  <div
-    className="css-view-1dbjc4n"
+  <style>
+.S1 {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+</style>
+
+<div
+    className="S1"
     style={
       Object {
         "borderBottomColor": "rgba(219,219,219,1.00)",
-        "borderBottomStyle": "solid",
         "borderBottomWidth": "1px",
         "borderLeftColor": "rgba(219,219,219,1.00)",
-        "borderLeftStyle": "solid",
         "borderRightColor": "rgba(219,219,219,1.00)",
-        "borderRightStyle": "solid",
         "borderTopColor": "rgba(219,219,219,1.00)",
-        "borderTopStyle": "solid",
         "marginLeft": "10px",
         "marginRight": "10px",
       }
     }
   />,
-  <div
-    className="css-view-1dbjc4n"
+  <style>
+.S1 {
+  border-bottom-width: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+</style>
+
+<div
+    className="S1"
     style={
       Object {
         "WebkitBoxDirection": "normal",
@@ -112,7 +133,7 @@ Array [
     }
   >
     <div
-      className="css-view-1dbjc4n"
+      className="S1"
       style={
         Object {
           "width": "50%",
@@ -120,31 +141,27 @@ Array [
       }
     >
       <div
-        className="css-text-76zvg2"
+        className="S1"
       >
         secondary-3
       </div>
     </div>
     <div
-      className="css-view-1dbjc4n"
+      className="S1"
       style={
         Object {
           "borderBottomColor": "rgba(219,219,219,1.00)",
-          "borderBottomStyle": "solid",
           "borderLeftColor": "rgba(219,219,219,1.00)",
-          "borderLeftStyle": "solid",
           "borderRightColor": "rgba(219,219,219,1.00)",
-          "borderRightStyle": "solid",
           "borderRightWidth": "1px",
           "borderTopColor": "rgba(219,219,219,1.00)",
-          "borderTopStyle": "solid",
           "marginBottom": "10px",
           "marginTop": "10px",
         }
       }
     />
     <div
-      className="css-view-1dbjc4n"
+      className="S1"
       style={
         Object {
           "width": "50%",
@@ -152,7 +169,7 @@ Array [
       }
     >
       <div
-        className="css-text-76zvg2"
+        className="S1"
       >
         secondary-4
       </div>
@@ -162,8 +179,18 @@ Array [
 `;
 
 exports[`2. secondary four - medium 1`] = `
+<style>
+.S1 {
+  border-bottom-width: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+</style>
+
 <div
-  className="css-view-1dbjc4n"
+  className="S1"
   style={
     Object {
       "WebkitBoxDirection": "normal",
@@ -177,7 +204,7 @@ exports[`2. secondary four - medium 1`] = `
   }
 >
   <div
-    className="css-view-1dbjc4n"
+    className="S1"
     style={
       Object {
         "WebkitBoxFlex": 1,
@@ -195,31 +222,27 @@ exports[`2. secondary four - medium 1`] = `
     }
   >
     <div
-      className="css-text-76zvg2"
+      className="S1"
     >
       secondary-1
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="S1"
     style={
       Object {
         "borderBottomColor": "rgba(219,219,219,1.00)",
-        "borderBottomStyle": "solid",
         "borderLeftColor": "rgba(219,219,219,1.00)",
-        "borderLeftStyle": "solid",
         "borderRightColor": "rgba(219,219,219,1.00)",
-        "borderRightStyle": "solid",
         "borderRightWidth": "1px",
         "borderTopColor": "rgba(219,219,219,1.00)",
-        "borderTopStyle": "solid",
         "marginBottom": "10px",
         "marginTop": "10px",
       }
     }
   />
   <div
-    className="css-view-1dbjc4n"
+    className="S1"
     style={
       Object {
         "WebkitBoxFlex": 1,
@@ -237,31 +260,27 @@ exports[`2. secondary four - medium 1`] = `
     }
   >
     <div
-      className="css-text-76zvg2"
+      className="S1"
     >
       secondary-2
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="S1"
     style={
       Object {
         "borderBottomColor": "rgba(219,219,219,1.00)",
-        "borderBottomStyle": "solid",
         "borderLeftColor": "rgba(219,219,219,1.00)",
-        "borderLeftStyle": "solid",
         "borderRightColor": "rgba(219,219,219,1.00)",
-        "borderRightStyle": "solid",
         "borderRightWidth": "1px",
         "borderTopColor": "rgba(219,219,219,1.00)",
-        "borderTopStyle": "solid",
         "marginBottom": "10px",
         "marginTop": "10px",
       }
     }
   />
   <div
-    className="css-view-1dbjc4n"
+    className="S1"
     style={
       Object {
         "WebkitBoxFlex": 1,
@@ -279,31 +298,27 @@ exports[`2. secondary four - medium 1`] = `
     }
   >
     <div
-      className="css-text-76zvg2"
+      className="S1"
     >
       secondary-3
     </div>
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="S1"
     style={
       Object {
         "borderBottomColor": "rgba(219,219,219,1.00)",
-        "borderBottomStyle": "solid",
         "borderLeftColor": "rgba(219,219,219,1.00)",
-        "borderLeftStyle": "solid",
         "borderRightColor": "rgba(219,219,219,1.00)",
-        "borderRightStyle": "solid",
         "borderRightWidth": "1px",
         "borderTopColor": "rgba(219,219,219,1.00)",
-        "borderTopStyle": "solid",
         "marginBottom": "10px",
         "marginTop": "10px",
       }
     }
   />
   <div
-    className="css-view-1dbjc4n"
+    className="S1"
     style={
       Object {
         "WebkitBoxFlex": 1,
@@ -321,7 +336,7 @@ exports[`2. secondary four - medium 1`] = `
     }
   >
     <div
-      className="css-text-76zvg2"
+      className="S1"
     >
       secondary-4
     </div>

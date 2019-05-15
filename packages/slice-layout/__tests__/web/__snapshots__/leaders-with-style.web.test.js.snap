@@ -40,14 +40,10 @@ exports[`1. leaders - small 1`] = `
     style={
       Object {
         "borderBottomColor": "rgba(219,219,219,1.00)",
-        "borderBottomStyle": "solid",
         "borderLeftColor": "rgba(219,219,219,1.00)",
-        "borderLeftStyle": "solid",
         "borderRightColor": "rgba(219,219,219,1.00)",
-        "borderRightStyle": "solid",
         "borderRightWidth": "1px",
         "borderTopColor": "rgba(219,219,219,1.00)",
-        "borderTopStyle": "solid",
         "marginBottom": "10px",
         "marginTop": "10px",
       }
@@ -70,14 +66,10 @@ exports[`1. leaders - small 1`] = `
     style={
       Object {
         "borderBottomColor": "rgba(219,219,219,1.00)",
-        "borderBottomStyle": "solid",
         "borderLeftColor": "rgba(219,219,219,1.00)",
-        "borderLeftStyle": "solid",
         "borderRightColor": "rgba(219,219,219,1.00)",
-        "borderRightStyle": "solid",
         "borderRightWidth": "1px",
         "borderTopColor": "rgba(219,219,219,1.00)",
-        "borderTopStyle": "solid",
         "marginBottom": "10px",
         "marginTop": "10px",
       }
@@ -139,14 +131,10 @@ exports[`2. leaders - medium 1`] = `
     style={
       Object {
         "borderBottomColor": "rgba(219,219,219,1.00)",
-        "borderBottomStyle": "solid",
         "borderLeftColor": "rgba(219,219,219,1.00)",
-        "borderLeftStyle": "solid",
         "borderRightColor": "rgba(219,219,219,1.00)",
-        "borderRightStyle": "solid",
         "borderRightWidth": "1px",
         "borderTopColor": "rgba(219,219,219,1.00)",
-        "borderTopStyle": "solid",
         "marginBottom": "10px",
         "marginTop": "10px",
       }
@@ -169,14 +157,10 @@ exports[`2. leaders - medium 1`] = `
     style={
       Object {
         "borderBottomColor": "rgba(219,219,219,1.00)",
-        "borderBottomStyle": "solid",
         "borderLeftColor": "rgba(219,219,219,1.00)",
-        "borderLeftStyle": "solid",
         "borderRightColor": "rgba(219,219,219,1.00)",
-        "borderRightStyle": "solid",
         "borderRightWidth": "1px",
         "borderTopColor": "rgba(219,219,219,1.00)",
-        "borderTopStyle": "solid",
         "marginBottom": "10px",
         "marginTop": "10px",
       }
