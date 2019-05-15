@@ -8,28 +8,32 @@ import {
   TileSummary,
   withTileTracking
 } from "../shared";
-import styles from "./styles";
+import stylesFactory from "./styles";
 
-const TileW = ({ onPress, tile }) => (
-  <TileLink onPress={onPress} style={styles.container} tile={tile}>
-    <TileSummary
-      headlineStyle={styles.headline}
-      style={styles.summaryContainer}
-      summary={getTileSummary(tile, 125)}
-      summaryStyle={styles.summary}
-      tile={tile}
-    />
-    <Image
-      aspectRatio={16 / 9}
-      style={styles.imageContainer}
-      uri={getTileImageUri(tile, "crop169")}
-    />
-  </TileLink>
-);
+const TileW = ({ onPress, tile, breakpoint }) => {
+  const styles = stylesFactory(breakpoint);
+  return (
+    <TileLink onPress={onPress} style={styles.container} tile={tile}>
+      <TileSummary
+        headlineStyle={styles.headline}
+        style={styles.summaryContainer}
+        summary={getTileSummary(tile, 125)}
+        summaryStyle={styles.summary}
+        tile={tile}
+      />
+      <Image
+        aspectRatio={16 / 9}
+        style={styles.imageContainer}
+        uri={getTileImageUri(tile, "crop169")}
+      />
+    </TileLink>
+  );
+};
 
 TileW.propTypes = {
   onPress: PropTypes.func.isRequired,
-  tile: PropTypes.shape({}).isRequired
+  tile: PropTypes.shape({}).isRequired,
+  breakpoint: PropTypes.string.isRequired
 };
 
 export default withTileTracking(TileW);

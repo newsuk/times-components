@@ -1,6 +1,6 @@
 {
   "name": "@times-components/jest-serializer",
-  "version": "3.2.4",
+  "version": "3.2.5",
   "description": "serializer",
   "main": "dist/index",
   "dev": "src/jest-serializer",
@@ -35,21 +35,21 @@
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.8.11",
     "babel-core": "^7.0.0-bridge.0",
-    "babel-jest": "23.6.0",
+    "babel-jest": "24.8.0",
     "depcheck": "0.6.9",
     "enzyme": "3.9.0",
     "enzyme-adapter-react-16": "1.12.1",
     "eslint": "5.9.0",
     "identity-obj-proxy": "3.0.0",
-    "jest": "23.6.0",
+    "jest": "24.8.0",
     "prettier": "1.14.3",
     "prop-types": "15.7.2",
-    "react-art": "16.5.2",
-    "react-native-web": "0.9.0",
-    "react-test-renderer": "16.5.2"
+    "react-art": "16.8.3",
+    "react-native-web": "0.11.2",
+    "react-test-renderer": "16.8.3"
   },
   "dependencies": {
-    "@times-components/jest-configurator": "2.5.8",
+    "@times-components/jest-configurator": "2.5.9",
     "css": "^2.2.1",
     "enzyme-to-json": "3.3.5",
     "hyphenate-style-name": "1.0.2",
@@ -60,7 +60,7 @@
     "react": ">=16",
     "react-dom": ">=16",
     "react-native": ">=0.53.0",
-    "react-native-web": "0.9.0"
+    "react-native-web": "0.11.2"
   },
   "publishConfig": {
     "access": "public"

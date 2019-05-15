@@ -8,21 +8,13 @@ exports[`1. with a single author 1`] = `
   font-size: 13px;
   line-height: 15px;
 }
-
-.S2 {
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-}
 </style>
 
 <div
-  className="S2"
+  className="css-view-1dbjc4n"
 >
   <a
-    className="S1"
+    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-76zvg2 r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-1ddef8g S1"
     href="/profile/alexandra-frean"
     role="link"
   >
@@ -51,52 +43,44 @@ exports[`2. with a very long byline 1`] = `
   font-size: 13px;
   line-height: 15px;
 }
-
-.S3 {
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-}
 </style>
 
 <div
-  className="S3"
+  className="css-view-1dbjc4n"
 >
   <a
-    className="S1"
+    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-76zvg2 r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-1ddef8g S1"
     href="/profile/camilla-long"
     role="link"
   >
     Camilla Long
   </a>
   <div
-    className="S2"
+    className="css-text-76zvg2 r-color-1khp51w r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S2"
   >
     , Environment Editor | 
   </div>
   <a
-    className="S1"
+    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-76zvg2 r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-1ddef8g S1"
     href="/profile/camilla-long"
     role="link"
   >
     Camilla Long
   </a>
   <div
-    className="S2"
+    className="css-text-76zvg2 r-color-1khp51w r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S2"
   >
     , Environment Editor | 
   </div>
   <a
-    className="S1"
+    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-76zvg2 r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-1ddef8g S1"
     href="/profile/camilla-long"
     role="link"
   >
     Camilla Long
   </a>
   <div
-    className="S2"
+    className="css-text-76zvg2 r-color-1khp51w r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S2"
   >
     , Environment Editor
   </div>

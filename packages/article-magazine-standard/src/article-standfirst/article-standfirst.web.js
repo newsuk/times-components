@@ -8,7 +8,7 @@ const HeaderStandfirst = ({ standfirst }) => {
 
   return (
     <StandfirstContainer
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="2"
       style={styles.standFirst}
       testID="standfirst"

@@ -5,14 +5,16 @@ import { InMemoryCache } from "apollo-cache-inmemory";
 import { fragmentMatcher } from "@times-components/schema";
 
 const {
-  NativeFetch: { fetch } = {},
+  NativeFetch,
   ReactConfig: { graphqlEndPoint }
 } = NativeModules;
 
-const link = fetch
+const link = NativeFetch
   ? createHttpLink({
       fetch: (uri, opts) =>
-        fetch(uri, opts).then(responseBody => new Response(responseBody)),
+        NativeFetch.fetch(uri, opts).then(
+          responseBody => new Response(responseBody)
+        ),
       uri: graphqlEndPoint
     })
   : createHttpLink({

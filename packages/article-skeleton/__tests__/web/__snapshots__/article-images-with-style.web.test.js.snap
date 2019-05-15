@@ -102,20 +102,6 @@ exports[`1. a secondary image 1`] = `
 }
 
 <style>
-.S1 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  -ms-flex-preferred-size: auto;
-  -webkit-flex-basis: auto;
-  flex-basis: auto;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
 .IS1 {
   margin-bottom: 0;
 }
@@ -124,20 +110,20 @@ exports[`1. a secondary image 1`] = `
 <article>
   <Head />
   <div
-    className="c0 S1"
+    className="c0 responsiveweb__HeaderAdContainer-sc-1exejum-1 c0 css-view-1dbjc4n"
   >
     <Ad
       className="IS1"
     />
   </div>
   <div
-    className="c1 S1"
+    className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
   >
     <div
-      className="c2 S1"
+      className="c2 responsiveweb__SaveShareContainer-sc-1exejum-3 c2 css-view-1dbjc4n"
     >
       <div
-        className="c3 S1"
+        className="c3 responsiveweb__SaveShareRefContainer-sc-1exejum-4 c3 css-view-1dbjc4n"
       >
         <div>
           <SaveAndShareBar />
@@ -145,11 +131,11 @@ exports[`1. a secondary image 1`] = `
       </div>
     </div>
     <div
-      className="c4 S1"
+      className="c4 responsiveweb__BodyContainer-sc-1exejum-2 c4 css-view-1dbjc4n"
     >
       <div>
         <div
-          className="c5 S1"
+          className="c5 responsiveweb__SecondaryImg-sc-16nqyj8-6 c5 css-view-1dbjc4n"
         >
           <ArticleImage />
         </div>
@@ -263,20 +249,6 @@ exports[`2. an inline image 1`] = `
 }
 
 <style>
-.S1 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  -ms-flex-preferred-size: auto;
-  -webkit-flex-basis: auto;
-  flex-basis: auto;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
 .IS1 {
   margin-bottom: 0;
 }
@@ -285,20 +257,20 @@ exports[`2. an inline image 1`] = `
 <article>
   <Head />
   <div
-    className="c0 S1"
+    className="c0 responsiveweb__HeaderAdContainer-sc-1exejum-1 c0 css-view-1dbjc4n"
   >
     <Ad
       className="IS1"
     />
   </div>
   <div
-    className="c1 S1"
+    className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
   >
     <div
-      className="c2 S1"
+      className="c2 responsiveweb__SaveShareContainer-sc-1exejum-3 c2 css-view-1dbjc4n"
     >
       <div
-        className="c3 S1"
+        className="c3 responsiveweb__SaveShareRefContainer-sc-1exejum-4 c3 css-view-1dbjc4n"
       >
         <div>
           <SaveAndShareBar />
@@ -306,11 +278,11 @@ exports[`2. an inline image 1`] = `
       </div>
     </div>
     <div
-      className="c4 S1"
+      className="c4 responsiveweb__BodyContainer-sc-1exejum-2 c4 css-view-1dbjc4n"
     >
       <div>
         <div
-          className="c5 S1"
+          className="c5 responsiveweb__InlineImg-sc-16nqyj8-7 c5 css-view-1dbjc4n"
         >
           <ArticleImage />
         </div>

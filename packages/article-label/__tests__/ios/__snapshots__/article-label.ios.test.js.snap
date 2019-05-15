@@ -2,9 +2,6 @@
 
 exports[`Article Label test on ios renders ArticleLabel 1`] = `
 <Text
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
   style={
     Object {
       "color": "#008347",
@@ -25,9 +22,6 @@ exports[`Article Label test on ios renders ArticleLabel 1`] = `
 
 exports[`Article Label test on ios renders ArticleLabel with GraphQL Colour type 1`] = `
 <Text
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
   style={
     Object {
       "color": "#008347",

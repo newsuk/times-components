@@ -79,79 +79,28 @@ exports[`1. page error 1`] = `
   -webkit-box-align: center;
   align-items: center;
   background-color: rgba(237,237,237,1.00);
-  border-top-width: 0px;
-  border-bottom-width: 0px;
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
   -ms-flex-pack: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  min-height: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  position: relative;
 }
 
 .S2 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  min-height: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  position: relative;
-}
-
-.S3 {
   -ms-flex-item-align: center;
   -webkit-align-self: center;
   align-self: center;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
   color: rgba(29,29,27,1.00);
   font-family: TimesModern-Bold;
   font-size: 26px;
-  margin-right: 0px;
-  margin-left: 0px;
   margin-bottom: 10px;
   margin-top: 20px;
-  padding-top: 0px;
-  padding-bottom: 0px;
   text-align: center;
 }
 
-.S4 {
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+.S3 {
   color: rgba(105,105,105,1.00);
   font-family: TimesDigitalW04-Regular;
   font-size: 18px;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
   text-align: center;
 }
 
@@ -172,13 +121,13 @@ exports[`1. page error 1`] = `
 </style>
 
 <div
-  className="c0 S2"
+  className="c0 responsiveweb__PageErrorContainer-sc-143eup1-5 c0 css-view-1dbjc4n"
 >
   <div
-    className="c1 S2"
+    className="c1 responsiveweb__PageErrorImageContainer-sc-143eup1-6 c1 css-view-1dbjc4n"
   >
     <div
-      className="S2"
+      className="css-view-1dbjc4n"
     >
       <div
         className="IS1"
@@ -187,7 +136,7 @@ exports[`1. page error 1`] = `
           className="c2"
         />
         <div
-          className="S1"
+          className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-15282we r-justifyContent-1777fci S1"
         >
           <svg>
             <g>
@@ -199,15 +148,15 @@ exports[`1. page error 1`] = `
     </div>
   </div>
   <div
-    className="c3 S2"
+    className="c3 responsiveweb__PageErrorContentContainer-sc-143eup1-7 c3 css-view-1dbjc4n"
   >
     <div
-      className="S3"
+      className="css-text-76zvg2 r-alignSelf-1kihuf0 r-color-1yqk5fa r-fontFamily-iirzy8 r-fontSize-yy2aun r-lineHeight-eaezby r-marginBottom-15d164r r-marginTop-1x0uki6 r-textAlign-q4m81j S2"
     >
       Something's gone wrong
     </div>
     <div
-      className="S4"
+      className="css-text-76zvg2 r-color-1khp51w r-fontFamily-lmhck6 r-fontSize-1i10wst r-lineHeight-1kt6imw r-textAlign-q4m81j S3"
     >
       We can't load the page you have requested. Please check your network connection and retry to continue
     </div>
@@ -347,39 +296,24 @@ exports[`2. article list 1`] = `
 
 <style>
 .S1 {
-  border-top-width: 0px;
-  border-bottom-width: 0px;
   color: rgba(105,105,105,1.00);
   font-family: GillSansMTStd-Medium;
   font-size: 15px;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  padding-bottom: 0px;
   padding-top: 4px;
 }
 
 .S2 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  min-height: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  position: relative;
+  -ms-flex-negative: 1;
+  -ms-flex-positive: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-flex: 1;
+  -webkit-flex-basis: 0%;
+  -webkit-flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-basis: 0%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  max-width: 760px;
 }
 
 .S3 {
@@ -387,31 +321,6 @@ exports[`2. article list 1`] = `
   -webkit-align-items: stretch;
   -webkit-box-align: stretch;
   align-items: stretch;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  max-width: 760px;
-  min-height: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  position: relative;
-}
-
-.S4 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
   -ms-flex-direction: row;
   -webkit-box-direction: normal;
   -webkit-box-orient: horizontal;
@@ -421,52 +330,44 @@ exports[`2. article list 1`] = `
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  min-height: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  position: relative;
 }
 </style>
 
 <div
-  className="S2"
+  className="css-view-1dbjc4n"
 >
   <div
-    className="S2"
+    className="css-view-1dbjc4n"
   >
     <div
-      className="c0 S2"
+      className="c0 responsiveweb__ListContentContainer-sc-143eup1-0 c0 css-view-1dbjc4n"
     >
       <div
-        className="S4"
+        className="css-view-1dbjc4n r-alignItems-1oszu61 r-flexDirection-18u37iz r-justifyContent-1777fci S3"
       >
         <div
-          className="S3"
+          className="css-view-1dbjc4n r-flex-13awgt0 r-maxWidth-jjmaes S2"
         >
           <div
-            className="c1 S2"
+            className="c1 pagination-containerweb__ContainerWithResults-sc-1kff8us-0 c1 css-view-1dbjc4n"
           >
             <div
-              className="c2 S2"
+              className="c2 resultsweb__MessageContainer-sc-1eowhty-0 c2 css-view-1dbjc4n"
             >
               <div
-                className="S1"
+                className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-a023e6 r-lineHeight-fxxt2n r-paddingTop-1h8ys4a S1"
               >
                 Showing 0 - 0 of 0 results
               </div>
             </div>
             <div
-              className="c3 S2"
+              className="c3 pagination-borderweb__BorderWithResults-sc-1tad75g-0 c3 css-view-1dbjc4n"
             >
               <div
-                className="c4 S2"
+                className="c4 responsiveweb__LinkContainer-sc-10qy9xl-0 c4 css-view-1dbjc4n"
               />
               <div
-                className="c4 S2"
+                className="c4 responsiveweb__LinkContainer-sc-10qy9xl-0 c4 css-view-1dbjc4n"
               />
             </div>
           </div>
@@ -475,29 +376,29 @@ exports[`2. article list 1`] = `
     </div>
     <div>
       <div
-        className="c0 S2"
+        className="c0 responsiveweb__ListContentContainer-sc-143eup1-0 c0 css-view-1dbjc4n"
       >
         ArticleListItem
       </div>
     </div>
     <div />
     <div
-      className="S4"
+      className="css-view-1dbjc4n r-alignItems-1oszu61 r-flexDirection-18u37iz r-justifyContent-1777fci S3"
     >
       <div
-        className="S3"
+        className="css-view-1dbjc4n r-flex-13awgt0 r-maxWidth-jjmaes S2"
       >
         <div
-          className="c5 S2"
+          className="c5 pagination-containerweb__ContainerWithoutResults-sc-1kff8us-1 c5 css-view-1dbjc4n"
         >
           <div
-            className="c6 S2"
+            className="c6 pagination-borderweb__BorderWithoutResults-sc-1tad75g-1 c6 css-view-1dbjc4n"
           >
             <div
-              className="c4 S2"
+              className="c4 responsiveweb__LinkContainer-sc-10qy9xl-0 c4 css-view-1dbjc4n"
             />
             <div
-              className="c4 S2"
+              className="c4 responsiveweb__LinkContainer-sc-10qy9xl-0 c4 css-view-1dbjc4n"
             />
           </div>
         </div>

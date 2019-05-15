@@ -2,25 +2,6 @@
 
 exports[`1. red article flag 1`] = `
 <style>
-.S1 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  margin-right: 0px;
-  margin-bottom: 0px;
-}
-
-.S2 {
-  margin-right: 0px;
-  margin-bottom: 0px;
-}
-
 .IS1 {
   background-color: rgba(255,0,0,1.00);
   border-top-left-radius: 2.5px;
@@ -55,13 +36,13 @@ exports[`1. red article flag 1`] = `
 </style>
 
 <div
-  className="IS3 S2"
+  className="css-view-1dbjc4n IS3"
 >
   <div
-    className="IS1 S1"
+    className="css-view-1dbjc4n IS1"
   />
   <div
-    className="IS2 S2"
+    className="css-text-76zvg2 IS2"
   >
     coloured red
   </div>
@@ -70,46 +51,6 @@ exports[`1. red article flag 1`] = `
 
 exports[`2. multiple article flags 1`] = `
 <style>
-.S1 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  margin-right: 0px;
-  margin-bottom: 0px;
-}
-
-.S2 {
-  margin-right: 0px;
-  margin-bottom: 0px;
-}
-
-.S3 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  margin-bottom: 0px;
-}
-
-.S4 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  margin-right: 0px;
-}
-
 .IS1 {
   background-color: rgba(60,129,190,1.00);
   border-top-left-radius: 2.5px;
@@ -269,67 +210,67 @@ exports[`2. multiple article flags 1`] = `
 </style>
 
 <div
-  className="IS17 S4"
+  className="css-view-1dbjc4n IS17"
 >
   <div
-    className="IS4 S3"
+    className="css-view-1dbjc4n IS4"
   >
     <div
-      className="IS3 S2"
+      className="css-view-1dbjc4n IS3"
     >
       <div
-        className="IS1 S1"
+        className="css-view-1dbjc4n IS1"
       />
       <div
-        className="IS2 S2"
+        className="css-text-76zvg2 IS2"
       >
         updated
       </div>
     </div>
   </div>
   <div
-    className="IS8 S3"
+    className="css-view-1dbjc4n IS8"
   >
     <div
-      className="IS7 S2"
+      className="css-view-1dbjc4n IS7"
     >
       <div
-        className="IS5 S1"
+        className="css-view-1dbjc4n IS5"
       />
       <div
-        className="IS6 S2"
+        className="css-text-76zvg2 IS6"
       >
         exclusive
       </div>
     </div>
   </div>
   <div
-    className="IS12 S3"
+    className="css-view-1dbjc4n IS12"
   >
     <div
-      className="IS11 S2"
+      className="css-view-1dbjc4n IS11"
     >
       <div
-        className="IS9 S1"
+        className="css-view-1dbjc4n IS9"
       />
       <div
-        className="IS10 S2"
+        className="css-text-76zvg2 IS10"
       >
         new
       </div>
     </div>
   </div>
   <div
-    className="IS16 S3"
+    className="css-view-1dbjc4n IS16"
   >
     <div
-      className="IS15 S2"
+      className="css-view-1dbjc4n IS15"
     >
       <div
-        className="IS13 S1"
+        className="css-view-1dbjc4n IS13"
       />
       <div
-        className="IS14 S2"
+        className="css-text-76zvg2 IS14"
       >
         sponsored
       </div>

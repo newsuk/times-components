@@ -17,12 +17,9 @@ class RelatedArticles extends Component {
   }
 
   render() {
-    const {
-      isVisible,
-      onPress,
-      slice: { items, lead, opinion, sliceName, support1, support2 }
-    } = this.props;
-
+    const { isVisible, onPress, slice } = this.props;
+    if (!slice) return null;
+    const { items, lead, opinion, sliceName, support1, support2 } = slice;
     if (!sliceName || (!items && !lead && !opinion)) return null;
 
     const renderArticleItem = (config, article, leadAssetOverride) => {

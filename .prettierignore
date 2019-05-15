@@ -15,7 +15,7 @@ yarn.lock
 *.log
 
 # specific to root
-.storybook.native/story-loader.js
+storybook-native
 storybook-static
 *.yml
 *.html

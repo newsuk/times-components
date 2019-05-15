@@ -1,11 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Tracking tests on android TrackEvents forwards props to wrapped component 1`] = `
-<Text
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
->
+<Text>
   bar
 </Text>
 `;
@@ -17,11 +13,7 @@ exports[`Tracking tests on android TrackEvents raises error when event name is n
 exports[`Tracking tests on android TrackEvents raises error when trying to track the same event more than once 1`] = `"WithTrackEvents(TestComponent): Event event1 was tracked multiple times"`;
 
 exports[`Tracking tests on android TrackEvents renders when tracking context is missing 1`] = `
-<Text
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
->
+<Text>
   foo
 </Text>
 `;
@@ -58,21 +50,13 @@ Array [
 `;
 
 exports[`Tracking tests on android WithTrackScrollDepth forwards props to wrapped component 1`] = `
-<Text
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
->
+<Text>
   bar
 </Text>
 `;
 
 exports[`Tracking tests on android WithTrackScrollDepth renders when tracking context is missing 1`] = `
-<Text
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
->
+<Text>
   foo
 </Text>
 `;
@@ -98,11 +82,7 @@ Array [
 `;
 
 exports[`Tracking tests on android WithTrackingContext forwards props to wrapped component 1`] = `
-<Text
-  accessible={true}
-  allowFontScaling={true}
-  ellipsizeMode="tail"
->
+<Text>
   bar
 </Text>
 `;

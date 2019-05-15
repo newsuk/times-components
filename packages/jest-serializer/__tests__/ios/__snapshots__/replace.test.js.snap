@@ -8,25 +8,13 @@ exports[`The replace serializer should provide a helper to return the child of a
 
 exports[`The replace serializer should provide a helper to return the children of an element only 1`] = `
 Array [
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-  >
+  <Text>
     Hello world1!
   </Text>,
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-  >
+  <Text>
     Hello world2!
   </Text>,
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-  >
+  <Text>
     Hello world3!
   </Text>,
 ]
@@ -34,22 +22,14 @@ Array [
 
 exports[`The replace serializer should provide a helper to return the component with props and no children 1`] = `
 <View>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-  />
+  <Text />
 </View>
 `;
 
 exports[`The replace serializer should replace the expected component 1`] = `
 <View>
   <Placeholder>
-    <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
-    >
+    <Text>
       Replaced
     </Text>
   </Placeholder>

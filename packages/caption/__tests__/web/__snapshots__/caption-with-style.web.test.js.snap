@@ -5,9 +5,7 @@ exports[`1. caption with container and text styles 1`] = `
 .S1 {
   font-family: GillSansMTStd-Medium;
   font-size: 13px;
-  font-weight: inherit;
   line-height: 17px;
-  padding-top: 0px;
 }
 
 .S2 {
@@ -16,15 +14,10 @@ exports[`1. caption with container and text styles 1`] = `
   font-weight: 400;
   letter-spacing: 1px;
   line-height: 17px;
-  padding-top: 0px;
 }
 
 .S3 {
   padding-top: 10px;
-}
-
-.S4 {
-  padding-top: 0px;
 }
 
 .IS1 {
@@ -41,18 +34,18 @@ exports[`1. caption with container and text styles 1`] = `
 </style>
 
 <div
-  className="S4"
+  className="css-view-1dbjc4n"
 >
   <div
-    className="IS3 S3"
+    className="css-view-1dbjc4n r-paddingTop-m611by IS3 S3"
   >
     <div
-      className="IS1 S1"
+      className="css-text-76zvg2 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0 IS1 S1"
     >
       Some caption text goes in here
     </div>
     <div
-      className="IS2 S2"
+      className="css-text-76zvg2 r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0 IS2 S2"
     >
       JUST CREDITS
     </div>
@@ -64,9 +57,7 @@ exports[`2. caption with container, caption, and credit styles 1`] = `
 <style>
 .S1 {
   font-family: GillSansMTStd-Medium;
-  font-weight: inherit;
   line-height: 17px;
-  padding-top: 0px;
 }
 
 .S2 {
@@ -74,15 +65,10 @@ exports[`2. caption with container, caption, and credit styles 1`] = `
   font-weight: 400;
   letter-spacing: 1px;
   line-height: 17px;
-  padding-top: 0px;
 }
 
 .S3 {
   padding-top: 10px;
-}
-
-.S4 {
-  padding-top: 0px;
 }
 
 .IS1 {
@@ -101,18 +87,18 @@ exports[`2. caption with container, caption, and credit styles 1`] = `
 </style>
 
 <div
-  className="S4"
+  className="css-view-1dbjc4n"
 >
   <div
-    className="IS3 S3"
+    className="css-view-1dbjc4n r-paddingTop-m611by IS3 S3"
   >
     <div
-      className="IS1 S1"
+      className="css-text-76zvg2 r-fontFamily-j2s0nr r-lineHeight-5fcqz0 IS1 S1"
     >
       Some caption text goes in here
     </div>
     <div
-      className="IS2 S2"
+      className="css-text-76zvg2 r-fontFamily-j2s0nr r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0 IS2 S2"
     >
       JUST CREDITS
     </div>
@@ -126,9 +112,7 @@ exports[`3. caption with only container styles 1`] = `
   color: rgba(105,105,105,1.00);
   font-family: GillSansMTStd-Medium;
   font-size: 13px;
-  font-weight: inherit;
   line-height: 17px;
-  padding-top: 0px;
 }
 
 .S2 {
@@ -138,15 +122,10 @@ exports[`3. caption with only container styles 1`] = `
   font-weight: 400;
   letter-spacing: 1px;
   line-height: 17px;
-  padding-top: 0px;
 }
 
 .S3 {
   padding-top: 10px;
-}
-
-.S4 {
-  padding-top: 0px;
 }
 
 .IS1 {
@@ -155,18 +134,18 @@ exports[`3. caption with only container styles 1`] = `
 </style>
 
 <div
-  className="S4"
+  className="css-view-1dbjc4n"
 >
   <div
-    className="IS1 S3"
+    className="css-view-1dbjc4n r-paddingTop-m611by IS1 S3"
   >
     <div
-      className="S1"
+      className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0 S1"
     >
       Some caption text goes in here
     </div>
     <div
-      className="S2"
+      className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0 S2"
     >
       JUST CREDITS
     </div>

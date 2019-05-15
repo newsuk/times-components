@@ -2,11 +2,14 @@
 
 exports[`The replace serializer should provide a helper to remove native elements from a web tree 1`] = `
 <WrapperComponent>
-  <div>
+  <div
+    className="css-view-1dbjc4n"
+  >
     <ChildComponent
       text="Hello world!"
     >
       <div
+        className="css-text-76zvg2"
         dir="auto"
       >
         Hello world!
@@ -19,9 +22,12 @@ exports[`The replace serializer should provide a helper to remove native element
 exports[`The replace serializer should provide a helper to return the child of an element only 1`] = `
 <WrapperComponent>
   <View>
-    <div>
+    <div
+      className="css-view-1dbjc4n"
+    >
       <Text>
         <div
+          className="css-text-76zvg2"
           dir="auto"
         >
           Hello world!
@@ -61,7 +67,9 @@ Array [
 exports[`The replace serializer should provide a helper to return the component with props and no children 1`] = `
 <WrapperComponent>
   <View>
-    <div>
+    <div
+      className="css-view-1dbjc4n"
+    >
       <ChildComponent
         text="Hello world!"
       />
@@ -74,7 +82,7 @@ exports[`The replace serializer should replace the expected component 1`] = `
 <WrapperComponent>
   <View>
     <div
-      className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+      className="css-view-1dbjc4n"
     >
       <Placeholder>
         <Text>
@@ -90,7 +98,7 @@ exports[`The replace serializer should replace the expected component completely
 <WrapperComponent>
   <View>
     <div
-      className="rn-alignItems-1oszu61 rn-borderTopStyle-1efd50x rn-borderRightStyle-14skgim rn-borderBottomStyle-rull8r rn-borderLeftStyle-mm0ijv rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-6koalj rn-flexShrink-1qe8dj5 rn-flexBasis-1mlwlqe rn-flexDirection-eqz5dr rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-minHeight-ifefl9 rn-minWidth-bcqeeo rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-position-bnwqim rn-zIndex-1lgpqti"
+      className="css-view-1dbjc4n"
     />
   </View>
 </WrapperComponent>
