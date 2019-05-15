@@ -1,206 +1,217 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. list two and six no pic - small 1`] = `
-<style>
-.S1 {
-  border-bottom-width: 0px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-}
-
-.S2 {
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-}
-</style>
-
 <div
-  className="S1"
+  className="css-view-1dbjc4n"
 >
   <div
-    className="S1"
+    className="css-view-1dbjc4n"
   >
     <div
-      className="S1"
+      className="css-text-76zvg2"
     >
       lead-1
     </div>
   </div>
   <div
-    className="S1"
+    className="css-view-1dbjc4n"
     style={
       Object {
         "borderBottomColor": "rgba(219,219,219,1.00)",
+        "borderBottomStyle": "solid",
         "borderLeftColor": "rgba(219,219,219,1.00)",
+        "borderLeftStyle": "solid",
         "borderRightColor": "rgba(219,219,219,1.00)",
+        "borderRightStyle": "solid",
         "borderRightWidth": "1px",
         "borderTopColor": "rgba(219,219,219,1.00)",
+        "borderTopStyle": "solid",
         "marginBottom": "10px",
         "marginTop": "10px",
       }
     }
   />
   <div
-    className="S1"
+    className="css-view-1dbjc4n"
   >
     <div
-      className="S1"
+      className="css-text-76zvg2"
     >
       lead-2
     </div>
   </div>
   <div
-    className="S1"
+    className="css-view-1dbjc4n"
     style={
       Object {
         "borderBottomColor": "rgba(219,219,219,1.00)",
+        "borderBottomStyle": "solid",
         "borderLeftColor": "rgba(219,219,219,1.00)",
+        "borderLeftStyle": "solid",
         "borderRightColor": "rgba(219,219,219,1.00)",
+        "borderRightStyle": "solid",
         "borderRightWidth": "1px",
         "borderTopColor": "rgba(219,219,219,1.00)",
+        "borderTopStyle": "solid",
         "marginBottom": "10px",
         "marginTop": "10px",
       }
     }
   />
   <div
-    className="S1"
+    className="css-view-1dbjc4n"
   >
     <div
-      className="S1"
+      className="css-view-1dbjc4n"
     >
       <div
-        className="S1"
+        className="css-view-1dbjc4n"
       >
         <div
-          className="S1"
+          className="css-text-76zvg2"
         >
           support-1
         </div>
       </div>
       <div
-        className="S1"
+        className="css-view-1dbjc4n"
         style={
           Object {
             "borderBottomColor": "rgba(219,219,219,1.00)",
+            "borderBottomStyle": "solid",
             "borderLeftColor": "rgba(219,219,219,1.00)",
+            "borderLeftStyle": "solid",
             "borderRightColor": "rgba(219,219,219,1.00)",
+            "borderRightStyle": "solid",
             "borderRightWidth": "1px",
             "borderTopColor": "rgba(219,219,219,1.00)",
+            "borderTopStyle": "solid",
             "marginBottom": "10px",
             "marginTop": "10px",
           }
         }
       />
       <div
-        className="S1"
+        className="css-view-1dbjc4n"
       >
         <div
-          className="S1"
+          className="css-text-76zvg2"
         >
           support-2
         </div>
       </div>
     </div>
     <div
-      className="S2"
+      className="css-view-1dbjc4n"
       style={
         Object {
           "borderBottomColor": "rgba(219,219,219,1.00)",
+          "borderBottomStyle": "solid",
           "borderBottomWidth": "1px",
           "borderLeftColor": "rgba(219,219,219,1.00)",
+          "borderLeftStyle": "solid",
           "borderRightColor": "rgba(219,219,219,1.00)",
+          "borderRightStyle": "solid",
           "borderTopColor": "rgba(219,219,219,1.00)",
+          "borderTopStyle": "solid",
           "marginLeft": "10px",
           "marginRight": "10px",
         }
       }
     />
     <div
-      className="S1"
+      className="css-view-1dbjc4n"
     >
       <div
-        className="S1"
+        className="css-view-1dbjc4n"
       >
         <div
-          className="S1"
+          className="css-text-76zvg2"
         >
           support-3
         </div>
       </div>
       <div
-        className="S1"
+        className="css-view-1dbjc4n"
         style={
           Object {
             "borderBottomColor": "rgba(219,219,219,1.00)",
+            "borderBottomStyle": "solid",
             "borderLeftColor": "rgba(219,219,219,1.00)",
+            "borderLeftStyle": "solid",
             "borderRightColor": "rgba(219,219,219,1.00)",
+            "borderRightStyle": "solid",
             "borderRightWidth": "1px",
             "borderTopColor": "rgba(219,219,219,1.00)",
+            "borderTopStyle": "solid",
             "marginBottom": "10px",
             "marginTop": "10px",
           }
         }
       />
       <div
-        className="S1"
+        className="css-view-1dbjc4n"
       >
         <div
-          className="S1"
+          className="css-text-76zvg2"
         >
           support-4
         </div>
       </div>
     </div>
     <div
-      className="S2"
+      className="css-view-1dbjc4n"
       style={
         Object {
           "borderBottomColor": "rgba(219,219,219,1.00)",
+          "borderBottomStyle": "solid",
           "borderBottomWidth": "1px",
           "borderLeftColor": "rgba(219,219,219,1.00)",
+          "borderLeftStyle": "solid",
           "borderRightColor": "rgba(219,219,219,1.00)",
+          "borderRightStyle": "solid",
           "borderTopColor": "rgba(219,219,219,1.00)",
+          "borderTopStyle": "solid",
           "marginLeft": "10px",
           "marginRight": "10px",
         }
       }
     />
     <div
-      className="S1"
+      className="css-view-1dbjc4n"
     >
       <div
-        className="S1"
+        className="css-view-1dbjc4n"
       >
         <div
-          className="S1"
+          className="css-text-76zvg2"
         >
           support-5
         </div>
       </div>
       <div
-        className="S1"
+        className="css-view-1dbjc4n"
         style={
           Object {
             "borderBottomColor": "rgba(219,219,219,1.00)",
+            "borderBottomStyle": "solid",
             "borderLeftColor": "rgba(219,219,219,1.00)",
+            "borderLeftStyle": "solid",
             "borderRightColor": "rgba(219,219,219,1.00)",
+            "borderRightStyle": "solid",
             "borderRightWidth": "1px",
             "borderTopColor": "rgba(219,219,219,1.00)",
+            "borderTopStyle": "solid",
             "marginBottom": "10px",
             "marginTop": "10px",
           }
         }
       />
       <div
-        className="S1"
+        className="css-view-1dbjc4n"
       >
         <div
-          className="S1"
+          className="css-text-76zvg2"
         >
           support-6
         </div>
@@ -211,25 +222,8 @@ exports[`1. list two and six no pic - small 1`] = `
 `;
 
 exports[`2. list two and six no pic - medium 1`] = `
-<style>
-.S1 {
-  border-bottom-width: 0px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-}
-
-.S2 {
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-}
-</style>
-
 <div
-  className="S1"
+  className="css-view-1dbjc4n"
   style={
     Object {
       "WebkitBoxDirection": "normal",
@@ -253,7 +247,7 @@ exports[`2. list two and six no pic - medium 1`] = `
   }
 >
   <div
-    className="S1"
+    className="css-view-1dbjc4n"
     style={
       Object {
         "WebkitBoxFlex": 1,
@@ -270,27 +264,31 @@ exports[`2. list two and six no pic - medium 1`] = `
     }
   >
     <div
-      className="S1"
+      className="css-text-76zvg2"
     >
       lead-1
     </div>
   </div>
   <div
-    className="S1"
+    className="css-view-1dbjc4n"
     style={
       Object {
         "borderBottomColor": "rgba(219,219,219,1.00)",
+        "borderBottomStyle": "solid",
         "borderLeftColor": "rgba(219,219,219,1.00)",
+        "borderLeftStyle": "solid",
         "borderRightColor": "rgba(219,219,219,1.00)",
+        "borderRightStyle": "solid",
         "borderRightWidth": "1px",
         "borderTopColor": "rgba(219,219,219,1.00)",
+        "borderTopStyle": "solid",
         "marginBottom": "10px",
         "marginTop": "10px",
       }
     }
   />
   <div
-    className="S1"
+    className="css-view-1dbjc4n"
     style={
       Object {
         "WebkitBoxFlex": 1,
@@ -307,27 +305,31 @@ exports[`2. list two and six no pic - medium 1`] = `
     }
   >
     <div
-      className="S1"
+      className="css-text-76zvg2"
     >
       lead-2
     </div>
   </div>
   <div
-    className="S1"
+    className="css-view-1dbjc4n"
     style={
       Object {
         "borderBottomColor": "rgba(219,219,219,1.00)",
+        "borderBottomStyle": "solid",
         "borderLeftColor": "rgba(219,219,219,1.00)",
+        "borderLeftStyle": "solid",
         "borderRightColor": "rgba(219,219,219,1.00)",
+        "borderRightStyle": "solid",
         "borderRightWidth": "1px",
         "borderTopColor": "rgba(219,219,219,1.00)",
+        "borderTopStyle": "solid",
         "marginBottom": "10px",
         "marginTop": "10px",
       }
     }
   />
   <div
-    className="S1"
+    className="css-view-1dbjc4n"
     style={
       Object {
         "width": "50%",
@@ -335,7 +337,7 @@ exports[`2. list two and six no pic - medium 1`] = `
     }
   >
     <div
-      className="S1"
+      className="css-view-1dbjc4n"
       style={
         Object {
           "WebkitBoxDirection": "normal",
@@ -357,7 +359,7 @@ exports[`2. list two and six no pic - medium 1`] = `
       }
     >
       <div
-        className="S1"
+        className="css-view-1dbjc4n"
         style={
           Object {
             "width": "50%",
@@ -365,27 +367,31 @@ exports[`2. list two and six no pic - medium 1`] = `
         }
       >
         <div
-          className="S1"
+          className="css-text-76zvg2"
         >
           support-1
         </div>
       </div>
       <div
-        className="S1"
+        className="css-view-1dbjc4n"
         style={
           Object {
             "borderBottomColor": "rgba(219,219,219,1.00)",
+            "borderBottomStyle": "solid",
             "borderLeftColor": "rgba(219,219,219,1.00)",
+            "borderLeftStyle": "solid",
             "borderRightColor": "rgba(219,219,219,1.00)",
+            "borderRightStyle": "solid",
             "borderRightWidth": "1px",
             "borderTopColor": "rgba(219,219,219,1.00)",
+            "borderTopStyle": "solid",
             "marginBottom": "10px",
             "marginTop": "10px",
           }
         }
       />
       <div
-        className="S1"
+        className="css-view-1dbjc4n"
         style={
           Object {
             "width": "50%",
@@ -393,28 +399,32 @@ exports[`2. list two and six no pic - medium 1`] = `
         }
       >
         <div
-          className="S1"
+          className="css-text-76zvg2"
         >
           support-2
         </div>
       </div>
     </div>
     <div
-      className="S2"
+      className="css-view-1dbjc4n"
       style={
         Object {
           "borderBottomColor": "rgba(219,219,219,1.00)",
+          "borderBottomStyle": "solid",
           "borderBottomWidth": "1px",
           "borderLeftColor": "rgba(219,219,219,1.00)",
+          "borderLeftStyle": "solid",
           "borderRightColor": "rgba(219,219,219,1.00)",
+          "borderRightStyle": "solid",
           "borderTopColor": "rgba(219,219,219,1.00)",
+          "borderTopStyle": "solid",
           "marginLeft": "10px",
           "marginRight": "10px",
         }
       }
     />
     <div
-      className="S1"
+      className="css-view-1dbjc4n"
       style={
         Object {
           "WebkitBoxDirection": "normal",
@@ -436,7 +446,7 @@ exports[`2. list two and six no pic - medium 1`] = `
       }
     >
       <div
-        className="S1"
+        className="css-view-1dbjc4n"
         style={
           Object {
             "width": "50%",
@@ -444,27 +454,31 @@ exports[`2. list two and six no pic - medium 1`] = `
         }
       >
         <div
-          className="S1"
+          className="css-text-76zvg2"
         >
           support-3
         </div>
       </div>
       <div
-        className="S1"
+        className="css-view-1dbjc4n"
         style={
           Object {
             "borderBottomColor": "rgba(219,219,219,1.00)",
+            "borderBottomStyle": "solid",
             "borderLeftColor": "rgba(219,219,219,1.00)",
+            "borderLeftStyle": "solid",
             "borderRightColor": "rgba(219,219,219,1.00)",
+            "borderRightStyle": "solid",
             "borderRightWidth": "1px",
             "borderTopColor": "rgba(219,219,219,1.00)",
+            "borderTopStyle": "solid",
             "marginBottom": "10px",
             "marginTop": "10px",
           }
         }
       />
       <div
-        className="S1"
+        className="css-view-1dbjc4n"
         style={
           Object {
             "width": "50%",
@@ -472,28 +486,32 @@ exports[`2. list two and six no pic - medium 1`] = `
         }
       >
         <div
-          className="S1"
+          className="css-text-76zvg2"
         >
           support-4
         </div>
       </div>
     </div>
     <div
-      className="S2"
+      className="css-view-1dbjc4n"
       style={
         Object {
           "borderBottomColor": "rgba(219,219,219,1.00)",
+          "borderBottomStyle": "solid",
           "borderBottomWidth": "1px",
           "borderLeftColor": "rgba(219,219,219,1.00)",
+          "borderLeftStyle": "solid",
           "borderRightColor": "rgba(219,219,219,1.00)",
+          "borderRightStyle": "solid",
           "borderTopColor": "rgba(219,219,219,1.00)",
+          "borderTopStyle": "solid",
           "marginLeft": "10px",
           "marginRight": "10px",
         }
       }
     />
     <div
-      className="S1"
+      className="css-view-1dbjc4n"
       style={
         Object {
           "WebkitBoxDirection": "normal",
@@ -515,7 +533,7 @@ exports[`2. list two and six no pic - medium 1`] = `
       }
     >
       <div
-        className="S1"
+        className="css-view-1dbjc4n"
         style={
           Object {
             "width": "50%",
@@ -523,27 +541,31 @@ exports[`2. list two and six no pic - medium 1`] = `
         }
       >
         <div
-          className="S1"
+          className="css-text-76zvg2"
         >
           support-5
         </div>
       </div>
       <div
-        className="S1"
+        className="css-view-1dbjc4n"
         style={
           Object {
             "borderBottomColor": "rgba(219,219,219,1.00)",
+            "borderBottomStyle": "solid",
             "borderLeftColor": "rgba(219,219,219,1.00)",
+            "borderLeftStyle": "solid",
             "borderRightColor": "rgba(219,219,219,1.00)",
+            "borderRightStyle": "solid",
             "borderRightWidth": "1px",
             "borderTopColor": "rgba(219,219,219,1.00)",
+            "borderTopStyle": "solid",
             "marginBottom": "10px",
             "marginTop": "10px",
           }
         }
       />
       <div
-        className="S1"
+        className="css-view-1dbjc4n"
         style={
           Object {
             "width": "50%",
@@ -551,7 +573,7 @@ exports[`2. list two and six no pic - medium 1`] = `
         }
       >
         <div
-          className="S1"
+          className="css-text-76zvg2"
         >
           support-6
         </div>

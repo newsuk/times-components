@@ -160,30 +160,20 @@ exports[`1. a single child element 1`] = `
   }
 }
 
-<style>
-.S1 {
-  border-bottom-width: 0px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-}
-</style>
-
 <div
-  className="c0 c1 S1"
+  className="c0 c1 configweb__Base-sc-11p999w-2 c0 configweb__Base-sc-11p999w-0 c1 css-view-1dbjc4n"
 >
   <div
-    className="c2 S1"
+    className="c2 responsiveweb__SliceContainer-sc-2kg7gs-0 c2 css-view-1dbjc4n"
   >
     <div
-      className="c3 c4 c5 S1"
+      className="c3 c4 c5 responsiveweb__Base-sc-1xpiscc-3 c3 responsiveweb__Base-sc-1xpiscc-2 c4 responsiveweb__Base-sc-1xpiscc-0 c5 css-view-1dbjc4n"
     >
       <div
-        className="c6 c7 c8 S1"
+        className="c6 c7 c8 responsiveweb__Base-sc-1xpiscc-7 c6 responsiveweb__Base-sc-1xpiscc-6 c7 responsiveweb__Base-sc-1xpiscc-4 c8 css-view-1dbjc4n"
       >
         <div
-          className="S1"
+          className="css-text-76zvg2"
         >
           lead
         </div>
@@ -421,45 +411,35 @@ exports[`2. two child elements 1`] = `
   }
 }
 
-<style>
-.S1 {
-  border-bottom-width: 0px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-}
-</style>
-
 <div
-  className="c0 c1 S1"
+  className="c0 c1 configweb__Base-sc-11p999w-2 c0 configweb__Base-sc-11p999w-0 c1 css-view-1dbjc4n"
 >
   <div
-    className="c2 S1"
+    className="c2 responsiveweb__SliceContainer-sc-2kg7gs-0 c2 css-view-1dbjc4n"
   >
     <div
-      className="c3 c4 c5 S1"
+      className="c3 c4 c5 responsiveweb__Base-sc-1xpiscc-3 c3 responsiveweb__Base-sc-1xpiscc-1 c4 responsiveweb__Base-sc-1xpiscc-0 c5 css-view-1dbjc4n"
     >
       <div
-        className="c6 c7 c8 S1"
+        className="c6 c7 c8 responsiveweb__Base-sc-1xpiscc-7 c6 responsiveweb__Base-sc-1xpiscc-5 c7 responsiveweb__Base-sc-1xpiscc-4 c8 css-view-1dbjc4n"
       >
         <div
-          className="S1"
+          className="css-text-76zvg2"
         >
           lead
         </div>
       </div>
       <div
-        className="c9 S1"
+        className="c9 responsiveweb-sc-2kg7gs-1 c9 css-view-1dbjc4n"
       />
       <div
-        className="c10 S1"
+        className="c10 responsiveweb__SupportsContainer-sc-1xpiscc-8 c10 css-view-1dbjc4n"
       >
         <div
-          className="c11 S1"
+          className="c11 responsiveweb-sc-1xpiscc-10 c11 css-view-1dbjc4n"
         >
           <div
-            className="S1"
+            className="css-text-76zvg2"
           >
             support-1
           </div>
@@ -743,54 +723,44 @@ exports[`3. three child elements 1`] = `
   }
 }
 
-<style>
-.S1 {
-  border-bottom-width: 0px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-}
-</style>
-
 <div
-  className="c0 c1 S1"
+  className="c0 c1 configweb__Base-sc-11p999w-1 c0 configweb__Base-sc-11p999w-0 c1 css-view-1dbjc4n"
 >
   <div
-    className="c2 S1"
+    className="c2 responsiveweb__SliceContainer-sc-2kg7gs-0 c2 css-view-1dbjc4n"
   >
     <div
-      className="c3 c4 c5 S1"
+      className="c3 c4 c5 responsiveweb__Base-sc-1xpiscc-3 c3 responsiveweb__Base-sc-1xpiscc-1 c4 responsiveweb__Base-sc-1xpiscc-0 c5 css-view-1dbjc4n"
     >
       <div
-        className="c6 c7 c8 S1"
+        className="c6 c7 c8 responsiveweb__Base-sc-1xpiscc-7 c6 responsiveweb__Base-sc-1xpiscc-5 c7 responsiveweb__Base-sc-1xpiscc-4 c8 css-view-1dbjc4n"
       >
         <div
-          className="S1"
+          className="css-text-76zvg2"
         >
           lead
         </div>
       </div>
       <div
-        className="c9 S1"
+        className="c9 responsiveweb-sc-2kg7gs-1 c9 css-view-1dbjc4n"
       />
       <div
-        className="c10 S1"
+        className="c10 responsiveweb__SupportsContainer-sc-1xpiscc-8 c10 css-view-1dbjc4n"
       >
         <div
-          className="c11 S1"
+          className="c11 responsiveweb-sc-1xpiscc-10 c11 css-view-1dbjc4n"
         >
           <div
-            className="S1"
+            className="css-text-76zvg2"
           >
             support-1
           </div>
         </div>
         <div
-          className="c12 S1"
+          className="c12 responsiveweb-sc-1xpiscc-9 c12 css-view-1dbjc4n"
         >
           <div
-            className="S1"
+            className="css-text-76zvg2"
           >
             support-2
           </div>

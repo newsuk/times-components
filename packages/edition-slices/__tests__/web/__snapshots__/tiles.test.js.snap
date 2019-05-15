@@ -10,12 +10,12 @@ exports[`1. tile a 1`] = `
         LABEL
       </div>
     </div>
-    <div
+    <h3
       aria-level="3"
-      role="header"
+      role="heading"
     >
       This is tile headline
-    </div>
+    </h3>
     <div>
       <div>
         <ArticleFlags
@@ -54,12 +54,12 @@ exports[`2. tile b 1`] = `
         LABEL
       </div>
     </div>
-    <div
+    <h3
       aria-level="3"
-      role="header"
+      role="heading"
     >
       This is tile headline
-    </div>
+    </h3>
     <div>
       <span>
         
@@ -108,12 +108,12 @@ exports[`3. tile c 1`] = `
         LABEL
       </div>
     </div>
-    <div
+    <h3
       aria-level="3"
-      role="header"
+      role="heading"
     >
       This is tile headline
-    </div>
+    </h3>
     <div>
       <div>
         <ArticleFlags
@@ -152,12 +152,12 @@ exports[`4. tile d 1`] = `
         LABEL
       </div>
     </div>
-    <div
+    <h3
       aria-level="3"
-      role="header"
+      role="heading"
     >
       This is tile headline
-    </div>
+    </h3>
     <div>
       <div>
         <ArticleFlags
@@ -196,12 +196,12 @@ exports[`5. tile e 1`] = `
         LABEL
       </div>
     </div>
-    <div
+    <h3
       aria-level="3"
-      role="header"
+      role="heading"
     >
       This is tile headline
-    </div>
+    </h3>
     <div>
       <div>
         <ArticleFlags
@@ -236,18 +236,18 @@ exports[`6. tile f 1`] = `
         LABEL
       </div>
     </div>
-    <div
+    <h3
       aria-level="3"
-      role="header"
+      role="heading"
     >
       This is tile headline
-    </div>
-    <div
+    </h3>
+    <h4
       aria-level="4"
-      role="header"
+      role="heading"
     >
       Three Conservative MPs resign
-    </div>
+    </h4>
     <div>
       <span>
         
@@ -295,12 +295,12 @@ exports[`7. tile g 1`] = `
         LABEL
       </div>
     </div>
-    <div
+    <h3
       aria-level="3"
-      role="header"
+      role="heading"
     >
       This is tile headline
-    </div>
+    </h3>
     <div>
       <div>
         <ArticleFlags
@@ -335,12 +335,12 @@ exports[`8. tile h 1`] = `
         LABEL
       </div>
     </div>
-    <div
+    <h3
       aria-level="3"
-      role="header"
+      role="heading"
     >
       This is tile headline
-    </div>
+    </h3>
     <div>
       <span>
         
@@ -392,12 +392,12 @@ exports[`9. tile i 1`] = `
         LABEL
       </div>
     </div>
-    <div
+    <h3
       aria-level="3"
-      role="header"
+      role="heading"
     >
       This is tile headline
-    </div>
+    </h3>
     <div>
       <div>
         <ArticleFlags
@@ -436,12 +436,12 @@ exports[`10. tile j 1`] = `
         LABEL
       </div>
     </div>
-    <div
+    <h3
       aria-level="3"
-      role="header"
+      role="heading"
     >
       This is tile headline
-    </div>
+    </h3>
     <div>
       <div>
         <ArticleFlags
@@ -480,12 +480,12 @@ exports[`11. tile k 1`] = `
         LABEL
       </div>
     </div>
-    <div
+    <h3
       aria-level="3"
-      role="header"
+      role="heading"
     >
       This is tile headline
-    </div>
+    </h3>
     <div>
       <div>
         <ArticleFlags
@@ -520,12 +520,12 @@ exports[`12. tile l 1`] = `
         LABEL
       </div>
     </div>
-    <div
+    <h3
       aria-level="3"
-      role="header"
+      role="heading"
     >
       This is tile headline
-    </div>
+    </h3>
     <div>
       <div>
         <ArticleFlags
@@ -554,18 +554,18 @@ exports[`13. tile m 1`] = `
   url="/article/123"
 >
   <div>
-    <div
+    <h3
       aria-level="3"
-      role="header"
+      role="heading"
     >
       Driving Off
-    </div>
-    <div
+    </h3>
+    <h4
       aria-level="4"
-      role="header"
+      role="heading"
     >
       Three Conservative MPs resign
-    </div>
+    </h4>
     <div>
       <div>
         <ArticleFlags />
@@ -596,18 +596,18 @@ exports[`14. tile n 1`] = `
         LABEL
       </div>
     </div>
-    <div
+    <h3
       aria-level="3"
-      role="header"
+      role="heading"
     >
       This is tile headline
-    </div>
-    <div
+    </h3>
+    <h4
       aria-level="4"
-      role="header"
+      role="heading"
     >
       Three Conservative MPs resign
-    </div>
+    </h4>
     <div>
       <div>
         <ArticleFlags
@@ -644,12 +644,12 @@ exports[`15. tile o 1`] = `
         LABEL
       </div>
     </div>
-    <div
+    <h3
       aria-level="3"
-      role="header"
+      role="heading"
     >
       This is tile headline
-    </div>
+    </h3>
     <div>
       <div>
         <ArticleFlags
@@ -692,18 +692,18 @@ exports[`16. tile p 1`] = `
         LABEL
       </div>
     </div>
-    <div
+    <h3
       aria-level="3"
-      role="header"
+      role="heading"
     >
       This is tile headline
-    </div>
-    <div
+    </h3>
+    <h4
       aria-level="4"
-      role="header"
+      role="heading"
     >
       Three Conservative MPs resign
-    </div>
+    </h4>
     <div>
       <div>
         <ArticleFlags
@@ -764,12 +764,12 @@ exports[`18. tile r 1`] = `
         LABEL
       </div>
     </div>
-    <div
+    <h3
       aria-level="3"
-      role="header"
+      role="heading"
     >
       This is tile headline
-    </div>
+    </h3>
     <div>
       <div>
         <ArticleFlags
@@ -850,12 +850,12 @@ exports[`20. tile t 1`] = `
         LABEL
       </div>
     </div>
-    <div
+    <h3
       aria-level="3"
-      role="header"
+      role="heading"
     >
       This is tile headline
-    </div>
+    </h3>
     <div>
       <div>
         <ArticleFlags
@@ -891,12 +891,12 @@ exports[`21. tile u 1`] = `
         LABEL
       </div>
     </div>
-    <div
+    <h3
       aria-level="3"
-      role="header"
+      role="heading"
     >
       This is tile headline
-    </div>
+    </h3>
     <div>
       <div>
         <ArticleFlags
@@ -939,12 +939,12 @@ exports[`22. tile v 1`] = `
         LABEL
       </div>
     </div>
-    <div
+    <h3
       aria-level="3"
-      role="header"
+      role="heading"
     >
       This is tile headline
-    </div>
+    </h3>
     <div>
       <div>
         <ArticleFlags
@@ -980,12 +980,12 @@ exports[`23. tile w 1`] = `
         LABEL
       </div>
     </div>
-    <div
+    <h3
       aria-level="3"
-      role="header"
+      role="heading"
     >
       This is tile headline
-    </div>
+    </h3>
     <div>
       <span>
         
@@ -1031,18 +1031,18 @@ exports[`24. tile x 1`] = `
         LABEL
       </div>
     </div>
-    <div
+    <h3
       aria-level="3"
-      role="header"
+      role="heading"
     >
       This is tile headline
-    </div>
-    <div
+    </h3>
+    <h4
       aria-level="4"
-      role="header"
+      role="heading"
     >
       Three Conservative MPs resign
-    </div>
+    </h4>
     <div>
       <span>
         
@@ -1085,12 +1085,12 @@ exports[`25. tile y 1`] = `
         LABEL
       </div>
     </div>
-    <div
+    <h3
       aria-level="3"
-      role="header"
+      role="heading"
     >
       This is tile headline
-    </div>
+    </h3>
     <div>
       <span>
         
@@ -1131,12 +1131,12 @@ exports[`26. tile z 1`] = `
         LABEL
       </div>
     </div>
-    <div
+    <h3
       aria-level="3"
-      role="header"
+      role="heading"
     >
       This is tile headline
-    </div>
+    </h3>
     <div>
       <div>
         <ArticleFlags
@@ -1178,12 +1178,12 @@ exports[`27. tile aa 1`] = `
         LABEL
       </div>
     </div>
-    <div
+    <h3
       aria-level="3"
-      role="header"
+      role="heading"
     >
       This is tile headline
-    </div>
+    </h3>
     <div>
       <div>
         <ArticleFlags
@@ -1218,12 +1218,12 @@ exports[`28. tile ab 1`] = `
         LABEL
       </div>
     </div>
-    <div
+    <h3
       aria-level="3"
-      role="header"
+      role="heading"
     >
       This is tile headline
-    </div>
+    </h3>
     <div>
       <span>
         
@@ -1277,12 +1277,12 @@ exports[`29. tile ae 1`] = `
         LABEL
       </div>
     </div>
-    <div
+    <h3
       aria-level="3"
-      role="header"
+      role="heading"
     >
       This is tile headline
-    </div>
+    </h3>
     <div>
       <span>
         
@@ -1319,18 +1319,18 @@ exports[`30. tile ag 1`] = `
   url="/article/123"
 >
   <div>
-    <div
+    <h3
       aria-level="3"
-      role="header"
+      role="heading"
     >
       Driving Off
-    </div>
-    <div
+    </h3>
+    <h4
       aria-level="4"
-      role="header"
+      role="heading"
     >
       Three Conservative MPs resign
-    </div>
+    </h4>
     <div>
       <div>
         <ArticleFlags />
@@ -1352,12 +1352,12 @@ exports[`31. tile aj 1`] = `
   url="/crossword/123"
 >
   <div>
-    <div
+    <h3
       aria-level="3"
-      role="header"
+      role="heading"
     >
       Times Concise medium No 7881
-    </div>
+    </h3>
   </div>
   <Image
     aspectRatio={1.5}
@@ -1380,12 +1380,12 @@ exports[`32. tile ak 1`] = `
   url="/crossword/123"
 >
   <div>
-    <div
+    <h3
       aria-level="3"
-      role="header"
+      role="heading"
     >
       Times Concise medium No 7881
-    </div>
+    </h3>
   </div>
   <Image
     aspectRatio={1.5}
@@ -1414,12 +1414,12 @@ exports[`33. tile al 1`] = `
         LABEL
       </div>
     </div>
-    <div
+    <h3
       aria-level="3"
-      role="header"
+      role="heading"
     >
       This is tile headline
-    </div>
+    </h3>
     <div>
       <span>
         
@@ -1465,12 +1465,12 @@ exports[`34. tile am 1`] = `
         LABEL
       </div>
     </div>
-    <div
+    <h3
       aria-level="3"
-      role="header"
+      role="heading"
     >
       This is tile headline
-    </div>
+    </h3>
     <div>
       <span>
         
@@ -1517,12 +1517,12 @@ exports[`35. tile an 1`] = `
         LABEL
       </div>
     </div>
-    <div
+    <h3
       aria-level="3"
-      role="header"
+      role="heading"
     >
       This is tile headline
-    </div>
+    </h3>
     <div>
       <span>
         
@@ -1569,12 +1569,12 @@ exports[`36. tile ap 1`] = `
         LABEL
       </div>
     </div>
-    <div
+    <h3
       aria-level="3"
-      role="header"
+      role="heading"
     >
       This is tile headline
-    </div>
+    </h3>
     <div>
       <div>
         <ArticleFlags
@@ -1613,12 +1613,12 @@ exports[`37. tile ad 1`] = `
         LABEL
       </div>
     </div>
-    <div
+    <h3
       aria-level="3"
-      role="header"
+      role="heading"
     >
       This is tile headline
-    </div>
+    </h3>
     <div>
       <div>
         <ArticleFlags
@@ -1656,12 +1656,12 @@ exports[`38. tile ac 1`] = `
         LABEL
       </div>
     </div>
-    <div
+    <h3
       aria-level="3"
-      role="header"
+      role="heading"
     >
       This is tile headline
-    </div>
+    </h3>
     <div>
       <div>
         <ArticleFlags

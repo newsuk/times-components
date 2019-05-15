@@ -29,10 +29,14 @@ exports[`1. secondary one and four - small 1`] = `
     style={
       Object {
         "borderBottomColor": "rgba(77,77,77,1.00)",
+        "borderBottomStyle": "solid",
         "borderLeftColor": "rgba(77,77,77,1.00)",
+        "borderLeftStyle": "solid",
         "borderRightColor": "rgba(77,77,77,1.00)",
+        "borderRightStyle": "solid",
         "borderRightWidth": "1px",
         "borderTopColor": "rgba(77,77,77,1.00)",
+        "borderTopStyle": "solid",
         "marginBottom": "10px",
         "marginTop": "10px",
       }
@@ -54,10 +58,14 @@ exports[`1. secondary one and four - small 1`] = `
       style={
         Object {
           "borderBottomColor": "rgba(77,77,77,1.00)",
+          "borderBottomStyle": "solid",
           "borderBottomWidth": "1px",
           "borderLeftColor": "rgba(77,77,77,1.00)",
+          "borderLeftStyle": "solid",
           "borderRightColor": "rgba(77,77,77,1.00)",
+          "borderRightStyle": "solid",
           "borderTopColor": "rgba(77,77,77,1.00)",
+          "borderTopStyle": "solid",
           "marginLeft": "10px",
           "marginRight": "10px",
         }
@@ -73,10 +81,14 @@ exports[`1. secondary one and four - small 1`] = `
     style={
       Object {
         "borderBottomColor": "rgba(77,77,77,1.00)",
+        "borderBottomStyle": "solid",
         "borderLeftColor": "rgba(77,77,77,1.00)",
+        "borderLeftStyle": "solid",
         "borderRightColor": "rgba(77,77,77,1.00)",
+        "borderRightStyle": "solid",
         "borderRightWidth": "1px",
         "borderTopColor": "rgba(77,77,77,1.00)",
+        "borderTopStyle": "solid",
         "marginBottom": "10px",
         "marginTop": "10px",
       }
@@ -98,10 +110,14 @@ exports[`1. secondary one and four - small 1`] = `
       style={
         Object {
           "borderBottomColor": "rgba(77,77,77,1.00)",
+          "borderBottomStyle": "solid",
           "borderBottomWidth": "1px",
           "borderLeftColor": "rgba(77,77,77,1.00)",
+          "borderLeftStyle": "solid",
           "borderRightColor": "rgba(77,77,77,1.00)",
+          "borderRightStyle": "solid",
           "borderTopColor": "rgba(77,77,77,1.00)",
+          "borderTopStyle": "solid",
           "marginLeft": "10px",
           "marginRight": "10px",
         }
@@ -145,10 +161,14 @@ exports[`2. secondary one and four - medium 1`] = `
     style={
       Object {
         "borderBottomColor": "rgba(77,77,77,1.00)",
+        "borderBottomStyle": "solid",
         "borderLeftColor": "rgba(77,77,77,1.00)",
+        "borderLeftStyle": "solid",
         "borderRightColor": "rgba(77,77,77,1.00)",
+        "borderRightStyle": "solid",
         "borderRightWidth": "1px",
         "borderTopColor": "rgba(77,77,77,1.00)",
+        "borderTopStyle": "solid",
         "marginBottom": "10px",
         "marginTop": "10px",
       }
@@ -170,10 +190,14 @@ exports[`2. secondary one and four - medium 1`] = `
       style={
         Object {
           "borderBottomColor": "rgba(77,77,77,1.00)",
+          "borderBottomStyle": "solid",
           "borderBottomWidth": "1px",
           "borderLeftColor": "rgba(77,77,77,1.00)",
+          "borderLeftStyle": "solid",
           "borderRightColor": "rgba(77,77,77,1.00)",
+          "borderRightStyle": "solid",
           "borderTopColor": "rgba(77,77,77,1.00)",
+          "borderTopStyle": "solid",
           "marginLeft": "10px",
           "marginRight": "10px",
         }
@@ -189,10 +213,14 @@ exports[`2. secondary one and four - medium 1`] = `
     style={
       Object {
         "borderBottomColor": "rgba(77,77,77,1.00)",
+        "borderBottomStyle": "solid",
         "borderLeftColor": "rgba(77,77,77,1.00)",
+        "borderLeftStyle": "solid",
         "borderRightColor": "rgba(77,77,77,1.00)",
+        "borderRightStyle": "solid",
         "borderRightWidth": "1px",
         "borderTopColor": "rgba(77,77,77,1.00)",
+        "borderTopStyle": "solid",
         "marginBottom": "10px",
         "marginTop": "10px",
       }
@@ -214,10 +242,14 @@ exports[`2. secondary one and four - medium 1`] = `
       style={
         Object {
           "borderBottomColor": "rgba(77,77,77,1.00)",
+          "borderBottomStyle": "solid",
           "borderBottomWidth": "1px",
           "borderLeftColor": "rgba(77,77,77,1.00)",
+          "borderLeftStyle": "solid",
           "borderRightColor": "rgba(77,77,77,1.00)",
+          "borderRightStyle": "solid",
           "borderTopColor": "rgba(77,77,77,1.00)",
+          "borderTopStyle": "solid",
           "marginLeft": "10px",
           "marginRight": "10px",
         }
