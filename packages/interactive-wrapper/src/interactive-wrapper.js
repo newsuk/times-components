@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Linking, Platform, View, WebView } from "react-native";
+import { Linking, Platform, WebView } from "react-native";
 import PropTypes from "prop-types";
 import webviewEventCallbackSetup from "./webview-event-callback-setup";
 
@@ -52,8 +52,11 @@ class InteractiveWrapper extends Component {
       (e && e.nativeEvent && e.nativeEvent.data) ||
       e.nativeEvent.data === "0"
     ) {
+      const { height: prevHeight } = this.state;
       const height = Number(e.nativeEvent.data);
-      this.setState({ height });
+      if (height !== prevHeight && height > prevHeight) {
+        this.setState({ height });
+      }
     } else {
       console.error(`Invalid height received ${e.nativeEvent.data}`); // eslint-disable-line no-console
     }
@@ -85,20 +88,18 @@ class InteractiveWrapper extends Component {
     const uri = `${editorialLambdaProtocol}${editorialLambdaOrigin}/${editorialLambdaSlug}/${id}?dev=${dev}&env=${environment}&platform=${platform}&version=${version}`;
 
     return (
-      <View style={{ height }}>
-        <WebView
-          onLoadEnd={this.onLoadEnd}
-          onMessage={this.onMessage}
-          onNavigationStateChange={this.handleNavigationStateChange}
-          ref={webview => {
-            this.webview = webview;
-          }}
-          scrollEnabled={false}
-          source={{ uri }}
-          style={{ height }}
-          {...InteractiveWrapper.postMessageBugWorkaround()}
-        />
-      </View>
+      <WebView
+        onLoadEnd={this.onLoadEnd}
+        onMessage={this.onMessage}
+        onNavigationStateChange={this.handleNavigationStateChange}
+        ref={webview => {
+          this.webview = webview;
+        }}
+        scrollEnabled={false}
+        source={{ uri }}
+        style={{ height }}
+        {...InteractiveWrapper.postMessageBugWorkaround()}
+      />
     );
   }
 }
