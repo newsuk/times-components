@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.4](https://github.com/newsuk/times-components/compare/@times-components/section@1.0.3...@times-components/section@1.0.4) (2019-05-15)
+
+
+### Bug Fixes
+
+* Android nested scroll ([#1951](https://github.com/newsuk/times-components/issues/1951)) ([7ade13a](https://github.com/newsuk/times-components/commit/7ade13a))
+
+
+
+
+
 ## [1.0.3](https://github.com/newsuk/times-components/compare/@times-components/section@1.0.2...@times-components/section@1.0.3) (2019-05-15)
 
 **Note:** Version bump only for package @times-components/section

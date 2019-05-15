@@ -1,7 +1,7 @@
 {
   "name": "@times-components/ssr",
   "main": "src",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "scripts": {
     "bundle:dev": "yarn cleanup-dist && webpack --config=webpack.config.js",
     "bundle:prod": "yarn cleanup-dist && NODE_ENV=production webpack --config=webpack.config.js -p",
@@ -51,14 +51,14 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/article": "7.1.6",
-    "@times-components/author-profile": "6.0.17",
+    "@times-components/article": "7.1.7",
+    "@times-components/author-profile": "6.0.18",
     "@times-components/context": "1.0.8",
     "@times-components/provider": "1.16.15",
     "@times-components/schema": "0.6.10",
     "@times-components/styleguide": "3.28.15",
     "@times-components/tealium": "1.13.9",
-    "@times-components/topic": "5.0.17",
+    "@times-components/topic": "5.0.18",
     "apollo-cache-inmemory": "1.5.1",
     "apollo-client": "2.5.1",
     "apollo-link": "1.2.4",
