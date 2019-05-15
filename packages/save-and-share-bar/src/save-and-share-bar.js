@@ -22,6 +22,10 @@ class SaveAndShareBar extends Component {
     super(props);
     this.copyToClipboard = this.copyToClipboard.bind(this);
     this.handleOnShareEmailPress = this.handleOnShareEmailPress.bind(this);
+
+    this.state = {
+      isLoading: false
+    };
   }
 
   copyToClipboard() {
@@ -52,6 +56,9 @@ class SaveAndShareBar extends Component {
       onShareOnFB,
       onShareOnTwitter
     } = this.props;
+
+    const { isLoading } = this.state;
+
     return (
       <View style={styles.container}>
         <View style={styles.rowItem}>

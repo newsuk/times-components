@@ -7,7 +7,6 @@ import SaveAndShareBar from "../src/save-and-share-bar";
 
 export default () => {
   describe("save and share bar component", () => {
-    const onShareOnEmail = jest.fn();
     const onCopyLink = jest.fn();
     const onSaveToMyArticles = jest.fn();
     const articleId = "id-123";
@@ -24,20 +23,16 @@ export default () => {
           articleHeadline={articleHeadline}
           onCopyLink={onCopyLink}
           onSaveToMyArticles={onSaveToMyArticles}
-          onShareOnEmail={onShareOnEmail}
         />
       );
     });
 
     it("save and share bar renders correctly", () => {
+      debugger;
       expect(testInstance.toJSON()).toMatchSnapshot();
       expect(testInstance.root.findAllByType(BarItem)).toHaveLength(5);
     });
-
     it("onPress events triggers correctly", () => {
-      testInstance.root.findAllByType(BarItem)[0].props.onPress();
-      expect(onShareOnEmail).toHaveBeenCalled();
-
       testInstance.root.findAllByType(BarItem)[3].props.onPress();
       expect(Clipboard.setString).toHaveBeenCalledWith(articleUrl);
       expect(onCopyLink).toHaveBeenCalled();

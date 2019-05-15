@@ -32,13 +32,11 @@ WithTrackingContext.propTypes = {
   articleId: PropTypes.string.isRequired,
   articleHeadline: PropTypes.string.isRequired,
   onCopyLink: PropTypes.func.isRequired,
-  onSaveToMyArticles: PropTypes.func.isRequired,
-  onShareOnEmail: PropTypes.func.isRequired
+  onSaveToMyArticles: PropTypes.func.isRequired
 };
 
 export default () => {
   describe("save and share tracking events", () => {
-    const onShareOnEmail = jest.fn();
     const onCopyLink = jest.fn();
     const onSaveToMyArticles = jest.fn();
     const onShareOnFB = jest.fn();
@@ -60,21 +58,10 @@ export default () => {
           articleHeadline={articleHeadline}
           onCopyLink={onCopyLink}
           onSaveToMyArticles={onSaveToMyArticles}
-          onShareOnEmail={onShareOnEmail}
           onShareOnFB={onShareOnFB}
           onShareOnTwitter={onShareOnTwitter}
         />
       );
-    });
-
-    it("when press share on email", () => {
-      const shareOnEmailBarItem = testInstance.root.findAllByType(BarItem)[0];
-      shareOnEmailBarItem.props.onPress();
-
-      const [[call]] = stream.mock.calls;
-
-      expect(call).toMatchSnapshot();
-      expect(onShareOnEmail.mock.calls).toMatchSnapshot("onShareOnEmail");
     });
 
     it("when press share on twitter", () => {
