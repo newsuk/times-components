@@ -2154,7 +2154,9 @@ exports[`13. list two and six no pic 1`] = `
   border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
+  margin-top: 5px;
   margin-right: 10px;
+  margin-bottom: 5px;
   margin-left: 10px;
 }
 
@@ -2200,7 +2202,9 @@ exports[`13. list two and six no pic 1`] = `
   border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
+  margin-top: 5px;
   margin-right: 10px;
+  margin-bottom: 5px;
   margin-left: 10px;
 }
 
@@ -2254,7 +2258,9 @@ exports[`13. list two and six no pic 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  margin-top: 5px;
   margin-right: 10px;
+  margin-bottom: 5px;
   margin-left: 10px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
@@ -2277,7 +2283,7 @@ exports[`13. list two and six no pic 1`] = `
   className="IS21 S1"
 >
   <div
-    className="IS20 S1"
+    className="IS20"
   >
     <div
       className="IS1 S1"
@@ -2324,7 +2330,7 @@ exports[`13. list two and six no pic 1`] = `
         </div>
       </div>
       <div
-        className="IS9 S1"
+        className="IS9"
       />
       <div
         className="IS13 S1"
@@ -2348,7 +2354,7 @@ exports[`13. list two and six no pic 1`] = `
         </div>
       </div>
       <div
-        className="IS14 S1"
+        className="IS14"
       />
       <div
         className="IS18 S1"
