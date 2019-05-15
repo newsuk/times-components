@@ -19,7 +19,12 @@ const TileAK = ({ id, image, onPress, title, url }) => (
     <View style={header}>
       <ArticleSummaryHeadline headline={title} style={headline} />
     </View>
-    <Image aspectRatio={3 / 2} style={imageContainer} uri={image.crop32.url} />
+    <Image
+      aspectRatio={3 / 2}
+      disablePlaceholder
+      style={imageContainer}
+      uri={image.crop32.url}
+    />
   </Link>
 );
 
