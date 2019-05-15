@@ -51,10 +51,18 @@ export default () => {
         resolvedOptions: () => ({ timeZone: "Europe/London" })
       })
     };
+
+    const nuk = {
+      user: {
+        isLoggedIn: true
+      }
+    };
+    global.nuk = nuk;
   });
 
   afterEach(() => {
     global.Intl = realIntl;
+    global.nuk = {};
   });
 
   shared();

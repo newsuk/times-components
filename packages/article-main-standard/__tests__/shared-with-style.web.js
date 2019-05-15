@@ -12,6 +12,7 @@ import {
   stylePrinter
 } from "@times-components/jest-serializer";
 import "./mocks.web";
+import { ContextProviderWithDefaults } from "@times-components/context";
 import ArticleMainStandard from "../src/article-main-standard";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
@@ -50,6 +51,19 @@ export default () => {
 
   // eslint-disable-next-line global-require
   require("jest-styled-components");
+
+  beforeEach(() => {
+    const nuk = {
+      user: {
+        isLoggedIn: true
+      }
+    };
+    global.nuk = nuk;
+  });
+
+  afterEach(() => {
+    global.nuk = {};
+  });
 
   it("full article with style", () => {
     const article = articleFixture({
@@ -160,18 +174,24 @@ export default () => {
     });
 
     const output = TestRenderer.create(
-      <ArticleMainStandard
-        {...articleProps}
-        adConfig={adConfig}
-        analyticsStream={() => {}}
-        article={article}
-        onAuthorPress={() => {}}
-        onLinkPress={() => {}}
-        onRelatedArticlePress={() => {}}
-        onTopicPress={() => {}}
-        onTwitterLinkPress={() => {}}
-        onVideoPress={() => {}}
-      />
+      <ContextProviderWithDefaults
+        value={{
+          user: { isLoggedIn: true }
+        }}
+      >
+        <ArticleMainStandard
+          {...articleProps}
+          adConfig={adConfig}
+          analyticsStream={() => {}}
+          article={article}
+          onAuthorPress={() => {}}
+          onLinkPress={() => {}}
+          onRelatedArticlePress={() => {}}
+          onTopicPress={() => {}}
+          onTwitterLinkPress={() => {}}
+          onVideoPress={() => {}}
+        />
+      </ContextProviderWithDefaults>
     );
 
     expect(output).toMatchSnapshot();
