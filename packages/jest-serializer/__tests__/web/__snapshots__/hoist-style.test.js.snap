@@ -8,7 +8,7 @@ exports[`hoist-style should hoist a style and leave existing props untouched 1`]
 </style>
 
 <div
-  className="rn-borderTopWidth-13yce4e rn-borderRightWidth-fnigne rn-borderBottomWidth-ndvcnb rn-borderLeftWidth-gxnn5r rn-boxSizing-deolkf rn-display-1471scf rn-fontFamily-14xgk7a rn-fontSize-1b43r93 rn-fontStyle-o11vmf rn-fontVariant-ebii48 rn-fontWeight-gul640 rn-lineHeight-t9a87b rn-marginTop-1mnahxq rn-marginRight-61z16t rn-marginBottom-p1pxzi rn-marginLeft-11wrixw rn-paddingTop-wk8lta rn-paddingRight-9aemit rn-paddingBottom-1mdbw0j rn-paddingLeft-gy4na3 rn-textDecoration-bauka4 rn-whiteSpace-q42fyq rn-wordWrap-qvutc0 IS1"
+  className="css-text-76zvg2 IS1"
   dir="auto"
   foo="bar"
 >
@@ -18,17 +18,13 @@ exports[`hoist-style should hoist a style and leave existing props untouched 1`]
 
 exports[`hoist-style should hoist a style as well as an rnw class 1`] = `
 <style>
-.S1 {
-  border-top-width: 0px;
-}
-
 .IS1 {
   color: rgba(255,0,0,1.00);
 }
 </style>
 
 <div
-  className="IS1 S1"
+  className="css-text-76zvg2 IS1"
   dir="auto"
   foo="bar"
 >

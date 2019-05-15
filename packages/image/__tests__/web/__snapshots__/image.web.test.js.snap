@@ -179,7 +179,7 @@ exports[`5. an invalid uri 1`] = `
   <div>
     <img
       alt=""
-      src="not-valid?resize=1400"
+      src="not-valid"
     />
     <div>
       <Svg
@@ -220,7 +220,7 @@ exports[`6. no url in environment 1`] = `
   <div>
     <img
       alt=""
-      src="not-valid?resize=1400"
+      src="not-valid"
     />
     <div>
       <Svg

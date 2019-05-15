@@ -8,7 +8,7 @@ const HeaderStandfirst = ({ hasFlags, standfirst }) => {
 
   return (
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="2"
       style={[styles.standFirst, !hasFlags && styles.standFirstWithoutFlags]}
       testID="standfirst"

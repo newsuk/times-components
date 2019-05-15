@@ -1,87 +1,137 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. single inline element 1`] = `
-<div>
-  <div>
+<div
+  className="css-view-1dbjc4n"
+>
+  <div
+    className="css-text-76zvg2 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+  >
     Lindsay McIntosh, Scottish Political Editor
   </div>
 </div>
 `;
 
 exports[`2. with the author in the begining 1`] = `
-<div>
-  <div>
+<div
+  className="css-view-1dbjc4n"
+>
+  <div
+    className="css-text-76zvg2 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+  >
     Camilla Long
   </div>
-  <div>
+  <div
+    className="css-text-76zvg2 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+  >
     , Environment Editor
   </div>
 </div>
 `;
 
 exports[`3. with the author at the end 1`] = `
-<div>
-  <div>
+<div
+  className="css-view-1dbjc4n"
+>
+  <div
+    className="css-text-76zvg2 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+  >
     RBS Six Nations, 
   </div>
-  <div>
+  <div
+    className="css-text-76zvg2 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+  >
     Mike Atherton
   </div>
 </div>
 `;
 
 exports[`4. with multiple authors separated by a pipe 1`] = `
-<div>
-  <div>
+<div
+  className="css-view-1dbjc4n"
+>
+  <div
+    className="css-text-76zvg2 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+  >
     Camilla Long
   </div>
-  <div>
+  <div
+    className="css-text-76zvg2 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+  >
      | 
   </div>
-  <div>
+  <div
+    className="css-text-76zvg2 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+  >
     Mike Atherton
   </div>
-  <div>
+  <div
+    className="css-text-76zvg2 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+  >
      | 
   </div>
-  <div>
+  <div
+    className="css-text-76zvg2 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+  >
     Alexandra Frean
   </div>
 </div>
 `;
 
 exports[`5. with multiple authors separated by text with commas 1`] = `
-<div>
-  <div>
+<div
+  className="css-view-1dbjc4n"
+>
+  <div
+    className="css-text-76zvg2 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+  >
     Camilla Long
   </div>
-  <div>
+  <div
+    className="css-text-76zvg2 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+  >
     , 
   </div>
-  <div>
+  <div
+    className="css-text-76zvg2 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+  >
     Mike Atherton
   </div>
-  <div>
+  <div
+    className="css-text-76zvg2 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+  >
     , 
   </div>
-  <div>
+  <div
+    className="css-text-76zvg2 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+  >
     Alexandra Frean
   </div>
 </div>
 `;
 
 exports[`6. with multiple authors separated by spaces 1`] = `
-<div>
-  <div>
+<div
+  className="css-view-1dbjc4n"
+>
+  <div
+    className="css-text-76zvg2 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+  >
     Camilla Long
   </div>
-  <div>
+  <div
+    className="css-text-76zvg2 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+  >
      
   </div>
-  <div>
+  <div
+    className="css-text-76zvg2 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+  >
     Mike Atherton
   </div>
-  <div>
+  <div
+    className="css-text-76zvg2 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+  >
     Alexandra Frean
   </div>
 </div>

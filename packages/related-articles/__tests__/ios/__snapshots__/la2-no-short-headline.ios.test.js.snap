@@ -4,7 +4,7 @@ exports[`1. no short headline 1`] = `
 <View>
   <View>
     <Text
-      accessibilityRole="heading"
+      accessibilityRole="header"
       aria-level="3"
     >
       Related articles
@@ -38,7 +38,7 @@ exports[`1. no short headline 1`] = `
                   />
                 </View>
                 <Text
-                  accessibilityRole="heading"
+                  accessibilityRole="header"
                   aria-level="3"
                 >
                   Test Headline

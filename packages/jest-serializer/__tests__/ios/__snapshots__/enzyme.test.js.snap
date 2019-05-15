@@ -1,26 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`On native the Enzyme shallow serializer should render the expected snapshot 1`] = `
-<Component>
-  <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
-  >
+<View>
+  <Text>
     Hello World!
   </Text>
-  <Component>
+  <View>
     <SomeComponent
       style={null}
     >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-      >
+      <Text>
         Hello world!
       </Text>
     </SomeComponent>
-  </Component>
-</Component>
+  </View>
+</View>
 `;

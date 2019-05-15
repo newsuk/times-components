@@ -47,7 +47,9 @@ exports[`1. multiple ad slots 1`] = `
     <View
       className="IS2"
     >
-      <div>
+      <div
+        className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0"
+      >
         <DOMContext
           baseUrl="https://www.thetimes.co.uk/"
           height={250}
@@ -70,7 +72,9 @@ exports[`1. multiple ad slots 1`] = `
     <View
       className="IS4"
     >
-      <div>
+      <div
+        className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0"
+      >
         <DOMContext
           baseUrl="https://www.thetimes.co.uk/"
           height={1}
@@ -93,7 +97,9 @@ exports[`1. multiple ad slots 1`] = `
     <View
       className="IS6"
     >
-      <div>
+      <div
+        className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0"
+      >
         <DOMContext
           baseUrl="https://www.thetimes.co.uk/"
           height={250}
@@ -177,7 +183,9 @@ exports[`2. placeholder when isloading 1`] = `
   <View
     className="IS7"
   >
-    <div>
+    <div
+      className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0"
+    >
       <AdPlaceholder
         className="IS6"
         height={250}
@@ -186,19 +194,23 @@ exports[`2. placeholder when isloading 1`] = `
         <View
           className="IS5"
         >
-          <div>
+          <div
+            className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0 r-justifyContent-1777fci"
+          >
             <View
               className="IS4"
               testID="ad-placeholder"
             >
               <div
-                className="IS3"
+                className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-gbtiil r-borderColor-1kv57cf r-borderStyle-1phboty r-borderWidth-rs99b7 r-justifyContent-1777fci r-overflow-1udh08x IS3"
                 data-testid="ad-placeholder"
               >
                 <View
                   className="IS1"
                 >
-                  <div>
+                  <div
+                    className="css-view-1dbjc4n r-left-1d2f490 r-position-u8s1d r-top-ipm5af"
+                  >
                     <Watermark
                       height={250}
                       viewBox="-630 120 1200 50"
@@ -209,7 +221,9 @@ exports[`2. placeholder when isloading 1`] = `
                 <Text
                   className="IS2"
                 >
-                  <div>
+                  <div
+                    className="css-text-76zvg2 r-backgroundColor-gbtiil r-borderColor-1kv57cf r-borderStyle-1phboty r-borderWidth-rs99b7 r-color-1khp51w r-fontFamily-1feecvn r-fontSize-1gkfh8e r-letterSpacing-i933xg r-lineHeight-fxxt2n r-paddingBottom-1inuy60 r-paddingLeft-1hfyk0a r-paddingRight-1qfoi16 r-paddingTop-glunga r-zIndex-184en5c"
+                  >
                     ADVERTISEMENT
                   </div>
                 </Text>
@@ -297,7 +311,9 @@ exports[`3. nothing if there is an error in the loading of scripts 1`] = `
   <View
     className="IS8"
   >
-    <div>
+    <div
+      className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0"
+    >
       <DOMContext
         baseUrl="https://www.thetimes.co.uk/"
         height={0}
@@ -315,19 +331,23 @@ exports[`3. nothing if there is an error in the loading of scripts 1`] = `
         <View
           className="IS6"
         >
-          <div>
+          <div
+            className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0 r-justifyContent-1777fci"
+          >
             <View
               className="IS5"
               testID="ad-placeholder"
             >
               <div
-                className="IS4"
+                className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-gbtiil r-borderColor-1kv57cf r-borderStyle-1phboty r-borderWidth-rs99b7 r-justifyContent-1777fci r-overflow-1udh08x IS4"
                 data-testid="ad-placeholder"
               >
                 <View
                   className="IS2"
                 >
-                  <div>
+                  <div
+                    className="css-view-1dbjc4n r-left-1d2f490 r-position-u8s1d r-top-ipm5af"
+                  >
                     <Watermark
                       height={250}
                       viewBox="-630 120 1200 50"
@@ -338,7 +358,9 @@ exports[`3. nothing if there is an error in the loading of scripts 1`] = `
                 <Text
                   className="IS3"
                 >
-                  <div>
+                  <div
+                    className="css-text-76zvg2 r-backgroundColor-gbtiil r-borderColor-1kv57cf r-borderStyle-1phboty r-borderWidth-rs99b7 r-color-1khp51w r-fontFamily-1feecvn r-fontSize-1gkfh8e r-letterSpacing-i933xg r-lineHeight-fxxt2n r-paddingBottom-1inuy60 r-paddingLeft-1hfyk0a r-paddingRight-1qfoi16 r-paddingTop-glunga r-zIndex-184en5c"
+                  >
                     ADVERTISEMENT
                   </div>
                 </Text>

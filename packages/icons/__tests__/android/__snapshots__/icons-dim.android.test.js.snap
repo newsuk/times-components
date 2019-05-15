@@ -3,8 +3,9 @@
 exports[`1. iconemail sets a width when height is set 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
-  bbHeight="50"
-  bbWidth="68.75"
+  bbHeight={50}
+  bbWidth={68.75}
+  height={50}
   meetOrSlice={0}
   minX={0}
   minY={0}
@@ -12,22 +13,25 @@ exports[`1. iconemail sets a width when height is set 1`] = `
   style={
     Object {
       "backgroundColor": "transparent",
+      "borderWidth": 0,
       "flex": 0,
       "height": 50,
-      "width": 68.75,
+      "width": 68,
     }
   }
   title="Email Icon"
   vbHeight={16}
   vbWidth={22}
+  width={68.75}
 />
 `;
 
 exports[`2. iconfacebook sets a width when height is set 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
-  bbHeight="50"
-  bbWidth="25"
+  bbHeight={50}
+  bbWidth={25}
+  height={50}
   meetOrSlice={0}
   minX={14}
   minY={10}
@@ -35,6 +39,7 @@ exports[`2. iconfacebook sets a width when height is set 1`] = `
   style={
     Object {
       "backgroundColor": "transparent",
+      "borderWidth": 0,
       "flex": 0,
       "height": 50,
       "width": 25,
@@ -43,20 +48,23 @@ exports[`2. iconfacebook sets a width when height is set 1`] = `
   title="Facebook Icon"
   vbHeight={20.397258758544922}
   vbWidth={10.592460632324219}
+  width={25}
 />
 `;
 
 exports[`3. iconforwardarrow sets a width when height is set 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
-  bbHeight="12"
-  bbWidth="7"
+  bbHeight={12}
+  bbWidth={7}
+  height={12}
   meetOrSlice={0}
   minX={42}
   minY={12}
   style={
     Object {
       "backgroundColor": "transparent",
+      "borderWidth": 0,
       "flex": 0,
       "height": 12,
       "width": 7,
@@ -64,14 +72,16 @@ exports[`3. iconforwardarrow sets a width when height is set 1`] = `
   }
   vbHeight={120}
   vbWidth={60}
+  width={7}
 />
 `;
 
 exports[`4. iconstar sets a width when height is set 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
-  bbHeight="50"
-  bbWidth="50"
+  bbHeight={50}
+  bbWidth={50}
+  height={50}
   meetOrSlice={0}
   minX={0}
   minY={0}
@@ -79,6 +89,7 @@ exports[`4. iconstar sets a width when height is set 1`] = `
   style={
     Object {
       "backgroundColor": "transparent",
+      "borderWidth": 0,
       "flex": 0,
       "height": 50,
       "width": 50,
@@ -87,14 +98,16 @@ exports[`4. iconstar sets a width when height is set 1`] = `
   title="Save star"
   vbHeight={20}
   vbWidth={21}
+  width={50}
 />
 `;
 
 exports[`5. iconcopylink sets a width when height is set 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
-  bbHeight="50"
-  bbWidth="15"
+  bbHeight={50}
+  bbWidth={15}
+  height={50}
   meetOrSlice={0}
   minX={0}
   minY={0}
@@ -102,6 +115,7 @@ exports[`5. iconcopylink sets a width when height is set 1`] = `
   style={
     Object {
       "backgroundColor": "transparent",
+      "borderWidth": 0,
       "flex": 0,
       "height": 50,
       "width": 15,
@@ -110,14 +124,16 @@ exports[`5. iconcopylink sets a width when height is set 1`] = `
   title="Copy link to clipboard"
   vbHeight={15}
   vbWidth={15}
+  width={15}
 />
 `;
 
 exports[`6. iconsavebookmark sets a width when height is set 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
-  bbHeight="50"
-  bbWidth="12"
+  bbHeight={50}
+  bbWidth={12}
+  height={50}
   meetOrSlice={0}
   minX={0}
   minY={0}
@@ -125,6 +141,7 @@ exports[`6. iconsavebookmark sets a width when height is set 1`] = `
   style={
     Object {
       "backgroundColor": "transparent",
+      "borderWidth": 0,
       "flex": 0,
       "height": 50,
       "width": 12,
@@ -133,14 +150,16 @@ exports[`6. iconsavebookmark sets a width when height is set 1`] = `
   title="Save to My Articles"
   vbHeight={16}
   vbWidth={12}
+  width={12}
 />
 `;
 
 exports[`7. icontwitter sets a width when height is set 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
-  bbHeight="50"
-  bbWidth="62.5"
+  bbHeight={50}
+  bbWidth={62.5}
+  height={50}
   meetOrSlice={0}
   minX={-354.2}
   minY={-279.4}
@@ -148,22 +167,25 @@ exports[`7. icontwitter sets a width when height is set 1`] = `
   style={
     Object {
       "backgroundColor": "transparent",
+      "borderWidth": 0,
       "flex": 0,
       "height": 50,
-      "width": 62.5,
+      "width": 62,
     }
   }
   title="Twitter Icon"
   vbHeight={600}
   vbWidth={750}
+  width={62.5}
 />
 `;
 
 exports[`8. iconvideo sets a width when height is set 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
-  bbHeight="50"
-  bbWidth="85"
+  bbHeight={50}
+  bbWidth={85}
+  height={50}
   meetOrSlice={0}
   minX={0}
   minY={0}
@@ -171,6 +193,7 @@ exports[`8. iconvideo sets a width when height is set 1`] = `
   style={
     Object {
       "backgroundColor": "transparent",
+      "borderWidth": 0,
       "flex": 0,
       "height": 50,
       "width": 85,
@@ -179,14 +202,16 @@ exports[`8. iconvideo sets a width when height is set 1`] = `
   title="Video Icon"
   vbHeight={40}
   vbWidth={68}
+  width={85}
 />
 `;
 
 exports[`9. iconvideo360player sets a width when height is set 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
-  bbHeight="50"
-  bbWidth="54"
+  bbHeight={50}
+  bbWidth={54}
+  height={50}
   meetOrSlice={0}
   minX={0}
   minY={0}
@@ -194,6 +219,7 @@ exports[`9. iconvideo360player sets a width when height is set 1`] = `
   style={
     Object {
       "backgroundColor": "transparent",
+      "borderWidth": 0,
       "flex": 0,
       "height": 50,
       "width": 54,
@@ -202,14 +228,16 @@ exports[`9. iconvideo360player sets a width when height is set 1`] = `
   title="Video 360 Player Icon"
   vbHeight={100}
   vbWidth={108}
+  width={54}
 />
 `;
 
 exports[`10. thestlogo sets a width when height is set 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
-  bbHeight="50"
-  bbWidth="50"
+  bbHeight={50}
+  bbWidth={50}
+  height={50}
   meetOrSlice={0}
   minX={0}
   minY={0}
@@ -217,6 +245,7 @@ exports[`10. thestlogo sets a width when height is set 1`] = `
   style={
     Object {
       "backgroundColor": "transparent",
+      "borderWidth": 0,
       "flex": 0,
       "height": 50,
       "width": 50,
@@ -225,14 +254,16 @@ exports[`10. thestlogo sets a width when height is set 1`] = `
   title="ST"
   vbHeight={20}
   vbWidth={29}
+  width={50}
 />
 `;
 
 exports[`11. thetimeslogo sets a width when height is set 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
-  bbHeight="50"
-  bbWidth="50"
+  bbHeight={50}
+  bbWidth={50}
+  height={50}
   meetOrSlice={0}
   minX={0}
   minY={0}
@@ -240,6 +271,7 @@ exports[`11. thetimeslogo sets a width when height is set 1`] = `
   style={
     Object {
       "backgroundColor": "transparent",
+      "borderWidth": 0,
       "flex": 0,
       "height": 50,
       "width": 50,
@@ -248,14 +280,16 @@ exports[`11. thetimeslogo sets a width when height is set 1`] = `
   title="The Times"
   vbHeight={20}
   vbWidth={20}
+  width={50}
 />
 `;
 
 exports[`12. closeicon sets a width when height is set 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
-  bbHeight="50"
-  bbWidth="28"
+  bbHeight={50}
+  bbWidth={28}
+  height={50}
   meetOrSlice={0}
   minX={0}
   minY={0}
@@ -263,6 +297,7 @@ exports[`12. closeicon sets a width when height is set 1`] = `
   style={
     Object {
       "backgroundColor": "transparent",
+      "borderWidth": 0,
       "flex": 0,
       "height": 50,
       "width": 28,
@@ -271,5 +306,6 @@ exports[`12. closeicon sets a width when height is set 1`] = `
   title="Close Icon"
   vbHeight={28}
   vbWidth={28}
+  width={28}
 />
 `;

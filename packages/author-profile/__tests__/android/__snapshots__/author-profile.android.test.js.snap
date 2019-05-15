@@ -207,9 +207,7 @@ exports[`6. fetches more articles and falls back to previous data if no more 1`]
 `;
 
 exports[`7. an article list header 1`] = `
-<View
-  accessibilityRole="banner"
->
+<View>
   <View>
     <View
       pointerEvents="box-none"
@@ -219,12 +217,12 @@ exports[`7. an article list header 1`] = `
         uri="https://image.io"
       />
       <Text
-        accessibilityRole="heading"
+        accessibilityRole="header"
       >
         Name
       </Text>
       <Text
-        accessibilityRole="heading"
+        accessibilityRole="header"
         aria-level="2"
       >
         job title
@@ -254,9 +252,7 @@ exports[`7. an article list header 1`] = `
 `;
 
 exports[`8. an article list header with no bio, job title, name or twitter 1`] = `
-<View
-  accessibilityRole="banner"
->
+<View>
   <View>
     <View
       pointerEvents="box-none"
@@ -271,9 +267,7 @@ exports[`8. an article list header with no bio, job title, name or twitter 1`] =
 `;
 
 exports[`9. an article list header loading 1`] = `
-<View
-  accessibilityRole="banner"
->
+<View>
   <View>
     <View>
       <Gradient />
@@ -283,9 +277,7 @@ exports[`9. an article list header loading 1`] = `
 `;
 
 exports[`10. an article list header only changes on loading state change 1`] = `
-<View
-  accessibilityRole="banner"
->
+<View>
   <View>
     <View>
       <Gradient />
@@ -295,15 +287,13 @@ exports[`10. an article list header only changes on loading state change 1`] = `
 `;
 
 exports[`10. an article list header only changes on loading state change 2`] = `
-<View
-  accessibilityRole="banner"
->
+<View>
   <View>
     <View
       pointerEvents="box-none"
     >
       <Text
-        accessibilityRole="heading"
+        accessibilityRole="header"
         aria-level="2"
       >
         title 1
@@ -317,15 +307,13 @@ exports[`10. an article list header only changes on loading state change 2`] = `
 `;
 
 exports[`10. an article list header only changes on loading state change 3`] = `
-<View
-  accessibilityRole="banner"
->
+<View>
   <View>
     <View
       pointerEvents="box-none"
     >
       <Text
-        accessibilityRole="heading"
+        accessibilityRole="header"
         aria-level="2"
       >
         title 1

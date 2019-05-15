@@ -6,24 +6,21 @@ exports[`1. group of topics 1`] = `
   color: rgba(105,105,105,1.00);
   font-family: GillSansMTStd-Medium;
   font-size: 13px;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
 }
 
 .S2 {
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-top-color: rgba(219,219,219,1.00);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-top-width: 1px;
   padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
@@ -31,18 +28,8 @@ exports[`1. group of topics 1`] = `
 }
 
 .S3 {
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  margin-bottom: 0px;
   margin-right: 10px;
   margin-top: 10px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
 }
 
 .S4 {
@@ -59,13 +46,7 @@ exports[`1. group of topics 1`] = `
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-  margin-top: 0px;
-  margin-right: 0px;
   margin-bottom: 10px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
 }
 
 .IS1 {
@@ -74,19 +55,19 @@ exports[`1. group of topics 1`] = `
 </style>
 
 <div
-  className="S4"
+  className="css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj r-justifyContent-1777fci r-marginBottom-15d164r S4"
 >
   <div
-    className="S3"
+    className="css-view-1dbjc4n r-marginRight-zso239 r-marginTop-156q2ks S3"
   >
     <a
       className="IS1"
     >
       <div
-        className="S2"
+        className="css-view-1dbjc4n r-borderColor-1kv57cf r-borderRadius-1jkafct r-borderWidth-rs99b7 r-paddingBottom-1mi0q7o r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-paddingTop-m611by S2"
       >
         <div
-          className="S1"
+          className="css-cursor-18t94o4 css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-1akm30i r-position-bnwqim r-top-o9xkwf S1"
         >
           Football
         </div>
@@ -102,24 +83,21 @@ exports[`2. group of topics at large scale 1`] = `
   color: rgba(105,105,105,1.00);
   font-family: GillSansMTStd-Medium;
   font-size: 13px;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
 }
 
 .S2 {
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-top-color: rgba(219,219,219,1.00);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-top-width: 1px;
   padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
@@ -127,18 +105,8 @@ exports[`2. group of topics at large scale 1`] = `
 }
 
 .S3 {
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  margin-bottom: 0px;
   margin-right: 10px;
   margin-top: 10px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
 }
 
 .S4 {
@@ -155,13 +123,7 @@ exports[`2. group of topics at large scale 1`] = `
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-  margin-top: 0px;
-  margin-right: 0px;
   margin-bottom: 10px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
 }
 
 .IS1 {
@@ -170,19 +132,19 @@ exports[`2. group of topics at large scale 1`] = `
 </style>
 
 <div
-  className="S4"
+  className="css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj r-justifyContent-1777fci r-marginBottom-15d164r S4"
 >
   <div
-    className="S3"
+    className="css-view-1dbjc4n r-marginRight-zso239 r-marginTop-156q2ks S3"
   >
     <a
       className="IS1"
     >
       <div
-        className="S2"
+        className="css-view-1dbjc4n r-borderColor-1kv57cf r-borderRadius-1jkafct r-borderWidth-rs99b7 r-paddingBottom-1mi0q7o r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-paddingTop-m611by S2"
       >
         <div
-          className="S1"
+          className="css-cursor-18t94o4 css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-1akm30i r-position-bnwqim r-top-o9xkwf S1"
         >
           Football
         </div>
@@ -198,24 +160,21 @@ exports[`3. group of topics at xlarge scale 1`] = `
   color: rgba(105,105,105,1.00);
   font-family: GillSansMTStd-Medium;
   font-size: 13px;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
 }
 
 .S2 {
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-top-color: rgba(219,219,219,1.00);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-top-width: 1px;
   padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
@@ -223,18 +182,8 @@ exports[`3. group of topics at xlarge scale 1`] = `
 }
 
 .S3 {
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  margin-bottom: 0px;
   margin-right: 10px;
   margin-top: 10px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
 }
 
 .S4 {
@@ -251,13 +200,7 @@ exports[`3. group of topics at xlarge scale 1`] = `
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-  margin-top: 0px;
-  margin-right: 0px;
   margin-bottom: 10px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
 }
 
 .IS1 {
@@ -266,19 +209,19 @@ exports[`3. group of topics at xlarge scale 1`] = `
 </style>
 
 <div
-  className="S4"
+  className="css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj r-justifyContent-1777fci r-marginBottom-15d164r S4"
 >
   <div
-    className="S3"
+    className="css-view-1dbjc4n r-marginRight-zso239 r-marginTop-156q2ks S3"
   >
     <a
       className="IS1"
     >
       <div
-        className="S2"
+        className="css-view-1dbjc4n r-borderColor-1kv57cf r-borderRadius-1jkafct r-borderWidth-rs99b7 r-paddingBottom-1mi0q7o r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-paddingTop-m611by S2"
       >
         <div
-          className="S1"
+          className="css-cursor-18t94o4 css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-1akm30i r-position-bnwqim r-top-o9xkwf S1"
         >
           Football
         </div>

@@ -31,7 +31,11 @@ exports[`4. emphasis 1`] = `
 </em>
 `;
 
-exports[`5. image tag 1`] = `<div />`;
+exports[`5. image tag 1`] = `
+<div
+  className="css-view-1dbjc4n"
+/>
+`;
 
 exports[`6. inline 1`] = `
 <span>
@@ -69,4 +73,8 @@ exports[`11. superscript 1`] = `
 </sup>
 `;
 
-exports[`12. does not render a script tag 1`] = `<div />`;
+exports[`12. does not render a script tag 1`] = `
+<div
+  className="css-view-1dbjc4n"
+/>
+`;

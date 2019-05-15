@@ -1,33 +1,47 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. single inline element 1`] = `
-<div>
-  <div>
+<div
+  className="css-view-1dbjc4n"
+>
+  <div
+    className="css-text-76zvg2 r-color-1khp51w r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+  >
     Lindsay McIntosh, Scottish Political Editor
   </div>
 </div>
 `;
 
 exports[`2. with the author in the begining 1`] = `
-<div>
+<div
+  className="css-view-1dbjc4n"
+>
   <a
+    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-76zvg2 r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-1ddef8g"
     href="/profile/camilla-long"
     role="link"
   >
     Camilla Long
   </a>
-  <div>
+  <div
+    className="css-text-76zvg2 r-color-1khp51w r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+  >
     , Environment Editor
   </div>
 </div>
 `;
 
 exports[`3. with the author at the end 1`] = `
-<div>
-  <div>
+<div
+  className="css-view-1dbjc4n"
+>
+  <div
+    className="css-text-76zvg2 r-color-1khp51w r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+  >
     RBS Six Nations, 
   </div>
   <a
+    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-76zvg2 r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-1ddef8g"
     href="/profile/mike-atherton"
     role="link"
   >
@@ -37,26 +51,35 @@ exports[`3. with the author at the end 1`] = `
 `;
 
 exports[`4. with multiple authors separated by a pipe 1`] = `
-<div>
+<div
+  className="css-view-1dbjc4n"
+>
   <a
+    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-76zvg2 r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-1ddef8g"
     href="/profile/camilla-long"
     role="link"
   >
     Camilla Long
   </a>
-  <div>
+  <div
+    className="css-text-76zvg2 r-color-1khp51w r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+  >
      | 
   </div>
   <a
+    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-76zvg2 r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-1ddef8g"
     href="/profile/mike-atherton"
     role="link"
   >
     Mike Atherton
   </a>
-  <div>
+  <div
+    className="css-text-76zvg2 r-color-1khp51w r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+  >
      | 
   </div>
   <a
+    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-76zvg2 r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-1ddef8g"
     href="/profile/alexandra-frean"
     role="link"
   >
@@ -66,26 +89,35 @@ exports[`4. with multiple authors separated by a pipe 1`] = `
 `;
 
 exports[`5. with multiple authors separated by text with commas 1`] = `
-<div>
+<div
+  className="css-view-1dbjc4n"
+>
   <a
+    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-76zvg2 r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-1ddef8g"
     href="/profile/camilla-long"
     role="link"
   >
     Camilla Long
   </a>
-  <div>
+  <div
+    className="css-text-76zvg2 r-color-1khp51w r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+  >
     , 
   </div>
   <a
+    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-76zvg2 r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-1ddef8g"
     href="/profile/mike-atherton"
     role="link"
   >
     Mike Atherton
   </a>
-  <div>
+  <div
+    className="css-text-76zvg2 r-color-1khp51w r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+  >
     , 
   </div>
   <a
+    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-76zvg2 r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-1ddef8g"
     href="/profile/alexandra-frean"
     role="link"
   >
@@ -95,23 +127,30 @@ exports[`5. with multiple authors separated by text with commas 1`] = `
 `;
 
 exports[`6. with multiple authors separated by spaces 1`] = `
-<div>
+<div
+  className="css-view-1dbjc4n"
+>
   <a
+    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-76zvg2 r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-1ddef8g"
     href="/profile/camilla-long"
     role="link"
   >
     Camilla Long
   </a>
-  <div>
+  <div
+    className="css-text-76zvg2 r-color-1khp51w r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n"
+  >
      
   </div>
   <a
+    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-76zvg2 r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-1ddef8g"
     href="/profile/mike-atherton"
     role="link"
   >
     Mike Atherton
   </a>
   <a
+    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-76zvg2 r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-1ddef8g"
     href="/profile/alexandra-frean"
     role="link"
   >

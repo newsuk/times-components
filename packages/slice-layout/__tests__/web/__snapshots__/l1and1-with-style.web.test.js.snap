@@ -1,26 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. lead one and one - small 1`] = `
-<style>
-.S1 {
-  border-bottom-width: 0px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-}
-</style>
-
 <div
-  className="S1"
+  className="css-view-1dbjc4n"
 >
   <div
-    className="S1"
+    className="css-text-76zvg2"
   >
     lead
   </div>
   <div
-    className="S1"
+    className="css-view-1dbjc4n"
     style={
       Object {
         "backgroundColor": "rgba(219,219,219,1.00)",
@@ -29,7 +19,7 @@ exports[`1. lead one and one - small 1`] = `
     }
   />
   <div
-    className="S1"
+    className="css-text-76zvg2"
   >
     support
   </div>
@@ -37,18 +27,8 @@ exports[`1. lead one and one - small 1`] = `
 `;
 
 exports[`2. lead one and one - medium 1`] = `
-<style>
-.S1 {
-  border-bottom-width: 0px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-}
-</style>
-
 <div
-  className="S1"
+  className="css-view-1dbjc4n"
   style={
     Object {
       "WebkitBoxDirection": "normal",
@@ -72,7 +52,7 @@ exports[`2. lead one and one - medium 1`] = `
   }
 >
   <div
-    className="S1"
+    className="css-view-1dbjc4n"
     style={
       Object {
         "width": "83.33%",
@@ -80,27 +60,31 @@ exports[`2. lead one and one - medium 1`] = `
     }
   >
     <div
-      className="S1"
+      className="css-text-76zvg2"
     >
       lead
     </div>
   </div>
   <div
-    className="S1"
+    className="css-view-1dbjc4n"
     style={
       Object {
         "borderBottomColor": "rgba(219,219,219,1.00)",
+        "borderBottomStyle": "solid",
         "borderLeftColor": "rgba(219,219,219,1.00)",
+        "borderLeftStyle": "solid",
         "borderRightColor": "rgba(219,219,219,1.00)",
+        "borderRightStyle": "solid",
         "borderRightWidth": "1px",
         "borderTopColor": "rgba(219,219,219,1.00)",
+        "borderTopStyle": "solid",
         "marginBottom": "10px",
         "marginTop": "10px",
       }
     }
   />
   <div
-    className="S1"
+    className="css-view-1dbjc4n"
     style={
       Object {
         "width": "16.67%",
@@ -108,7 +92,7 @@ exports[`2. lead one and one - medium 1`] = `
     }
   >
     <div
-      className="S1"
+      className="css-text-76zvg2"
     >
       support
     </div>

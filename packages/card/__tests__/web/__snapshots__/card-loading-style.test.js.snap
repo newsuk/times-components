@@ -32,116 +32,60 @@ exports[`1. card loading state 1`] = `
   -webkit-align-items: center;
   -webkit-box-align: center;
   align-items: center;
-  display: flex;
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
   -ms-flex-pack: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-  margin-bottom: 0px;
-  min-width: 0px;
 }
 
 .S2 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  display: flex;
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  margin-bottom: 0px;
-  min-width: 0px;
+  -ms-flex-negative: 1;
+  -ms-flex-positive: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-flex: 1;
+  -webkit-flex-basis: 0%;
+  -webkit-flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-basis: 0%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin-bottom: 10px;
+  min-width: 100%;
 }
 
 .S3 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  display: flex;
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  margin-bottom: 10px;
-  min-width: 100%;
-}
-
-.S4 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  display: flex;
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
   height: 24px;
   margin-bottom: 10px;
   max-width: 300px;
-  min-width: 0px;
+}
+
+.S4 {
+  height: 10px;
+  margin-bottom: 10px;
 }
 
 .S5 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  display: flex;
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  height: 10px;
-  margin-bottom: 10px;
-  min-width: 0px;
-}
-
-.S6 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  display: flex;
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
   height: 10px;
   margin-bottom: 0px;
   max-width: 240px;
-  min-width: 0px;
 }
 
-.S7 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  display: flex;
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
+.S6 {
+  -ms-flex-negative: 1;
+  -ms-flex-positive: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-flex: 1;
+  -webkit-flex-basis: 0%;
+  -webkit-flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-basis: 0%;
+  flex-grow: 1;
+  flex-shrink: 1;
   margin-bottom: 0px;
   min-width: 100%;
 }
 
-.S8 {
+.S7 {
   -ms-flex-align: start;
   -webkit-align-items: flex-start;
   -webkit-box-align: start;
@@ -160,8 +104,6 @@ exports[`1. card loading state 1`] = `
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
   justify-content: flex-end;
-  margin-bottom: 0px;
-  min-width: 0px;
 }
 
 .IS1 {
@@ -236,13 +178,13 @@ exports[`1. card loading state 1`] = `
 
 <indexweb__FadeIn>
   <div
-    className="c0 S2"
+    className="c0 indexweb__FadeIn-v0crhg-0 c0 css-view-1dbjc4n"
   >
     <div
-      className="S8"
+      className="css-view-1dbjc4n r-alignItems-1habvwh r-display-6koalj r-flexDirection-18u37iz r-flexWrap-1w6e6rj r-justifyContent-17s6mgv S7"
     >
       <div
-        className="S3"
+        className="css-view-1dbjc4n r-flex-13awgt0 r-marginBottom-15d164r r-minWidth-3e7lpq S2"
       >
         <TimesImage
           aspectRatio={0.6666666666666666}
@@ -254,7 +196,7 @@ exports[`1. card loading state 1`] = `
         />
       </div>
       <div
-        className="S7"
+        className="css-view-1dbjc4n r-flex-13awgt0 r-marginBottom-p1pxzi r-minHeight-1lorjx1 r-minWidth-3e7lpq S6"
       >
         <_default>
           <Gradient
@@ -316,66 +258,33 @@ exports[`2. card with reversed loading state 1`] = `
 
 <style>
 .S1 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  display: flex;
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
   height: 24px;
   margin-bottom: 10px;
   max-width: 300px;
-  min-width: 0px;
 }
 
 .S2 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  display: flex;
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
   height: 10px;
   margin-bottom: 10px;
-  min-width: 0px;
 }
 
 .S3 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  display: flex;
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
   height: 10px;
   margin-bottom: 0px;
   max-width: 240px;
-  min-width: 0px;
 }
 
 .S4 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  display: flex;
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
+  -ms-flex-negative: 1;
+  -ms-flex-positive: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-flex: 1;
+  -webkit-flex-basis: 0%;
+  -webkit-flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-basis: 0%;
+  flex-grow: 1;
+  flex-shrink: 1;
   margin-bottom: 10px;
   min-width: 100%;
 }
@@ -385,51 +294,28 @@ exports[`2. card with reversed loading state 1`] = `
   -webkit-align-items: center;
   -webkit-box-align: center;
   align-items: center;
-  display: flex;
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
   -ms-flex-pack: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-  margin-bottom: 0px;
-  min-width: 0px;
 }
 
 .S6 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  display: flex;
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  margin-bottom: 0px;
-  min-width: 0px;
-}
-
-.S7 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  display: flex;
-  -ms-flex-direction: column;
-  -webkit-box-direction: normal;
-  -webkit-box-orient: vertical;
-  -webkit-flex-direction: column;
-  flex-direction: column;
+  -ms-flex-negative: 1;
+  -ms-flex-positive: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-flex: 1;
+  -webkit-flex-basis: 0%;
+  -webkit-flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-basis: 0%;
+  flex-grow: 1;
+  flex-shrink: 1;
   margin-bottom: 0px;
   min-width: 100%;
 }
 
-.S8 {
+.S7 {
   -ms-flex-align: start;
   -webkit-align-items: flex-start;
   -webkit-box-align: start;
@@ -449,8 +335,6 @@ exports[`2. card with reversed loading state 1`] = `
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
   justify-content: flex-end;
-  margin-bottom: 0px;
-  min-width: 0px;
 }
 
 .IS1 {
@@ -525,13 +409,13 @@ exports[`2. card with reversed loading state 1`] = `
 
 <indexweb__FadeIn>
   <div
-    className="c0 S6"
+    className="c0 indexweb__FadeIn-v0crhg-0 c0 css-view-1dbjc4n"
   >
     <div
-      className="S8"
+      className="css-view-1dbjc4n r-alignItems-1habvwh r-display-6koalj r-flexDirection-18u37iz r-flexWrap-1w6e6rj r-height-16l9doz r-justifyContent-17s6mgv S7"
     >
       <div
-        className="S4"
+        className="css-view-1dbjc4n r-flex-13awgt0 r-marginBottom-15d164r r-minHeight-1lorjx1 r-minWidth-3e7lpq S4"
       >
         <_default>
           <Gradient
@@ -561,7 +445,7 @@ exports[`2. card with reversed loading state 1`] = `
         </_default>
       </div>
       <div
-        className="S7"
+        className="css-view-1dbjc4n r-flex-13awgt0 r-marginBottom-p1pxzi r-minWidth-3e7lpq S6"
       >
         <TimesImage
           aspectRatio={0.6666666666666666}

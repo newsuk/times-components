@@ -169,6 +169,13 @@ exports[`1. an article 1`] = `
             articleHeadline="Some Headline"
             articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
             articleUrl="https://url.io"
+            saveApi={
+              Object {
+                "bookmark": [Function],
+                "getBookmarks": [Function],
+                "unBookmark": [Function],
+              }
+            }
           />
         </div>
       </div>
@@ -325,6 +332,13 @@ exports[`4. an article with no headline falls back to use shortheadline 1`] = `
             articleHeadline=""
             articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
             articleUrl="https://url.io"
+            saveApi={
+              Object {
+                "bookmark": [Function],
+                "getBookmarks": [Function],
+                "unBookmark": [Function],
+              }
+            }
           />
         </div>
       </div>
@@ -428,6 +442,13 @@ exports[`5. an article with ads 1`] = `
             articleHeadline="Some Headline"
             articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
             articleUrl="https://url.io"
+            saveApi={
+              Object {
+                "bookmark": [Function],
+                "getBookmarks": [Function],
+                "unBookmark": [Function],
+              }
+            }
           />
         </div>
       </div>

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/test-utils",
-  "version": "2.2.40",
+  "version": "2.2.41",
   "description": "Test helpers for Times Components",
   "main": "dist/index",
   "dev": "src/index",
@@ -40,14 +40,14 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.8.11",
-    "@times-components/webpack-configurator": "2.0.19",
+    "@times-components/webpack-configurator": "2.0.20",
     "depcheck": "0.6.9",
     "enzyme": "3.9.0",
     "enzyme-adapter-react-16": "1.12.1",
     "eslint": "5.9.0",
-    "jest": "23.6.0",
+    "jest": "24.8.0",
     "prettier": "1.14.3",
-    "react": "16.5.2",
+    "react": "16.8.3",
     "webpack": "4.30.0",
     "webpack-cli": "3.3.1"
   },

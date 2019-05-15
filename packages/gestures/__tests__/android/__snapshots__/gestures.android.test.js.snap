@@ -8,31 +8,31 @@ exports[`1. scale correctly when spreading fingers 1`] = `
         "flexGrow": 1,
         "transform": Array [
           Object {
-            "translateX": -15,
+            "translateX": -0,
           },
           Object {
-            "translateY": -25,
+            "translateY": -0,
           },
           Object {
-            "translateX": 55,
+            "translateX": 0,
           },
           Object {
-            "translateY": 15,
+            "translateY": 0,
           },
           Object {
-            "scale": 3,
+            "scale": 1,
           },
           Object {
-            "translateX": -55,
+            "translateX": -0,
           },
           Object {
-            "translateY": -15,
+            "translateY": -0,
           },
           Object {
-            "translateX": 15,
+            "translateX": 0,
           },
           Object {
-            "translateY": 25,
+            "translateY": 0,
           },
           Object {
             "rotate": "0 deg",
@@ -59,34 +59,34 @@ exports[`2. rotate anti-clockwise when turning fingers 1`] = `
         "flexGrow": 1,
         "transform": Array [
           Object {
-            "translateX": -15,
+            "translateX": -0,
           },
           Object {
-            "translateY": -25,
+            "translateY": -0,
           },
           Object {
-            "translateX": 30,
+            "translateX": 0,
           },
           Object {
-            "translateY": 15,
+            "translateY": 0,
           },
           Object {
             "scale": 1,
           },
           Object {
-            "translateX": -30,
+            "translateX": -0,
           },
           Object {
-            "translateY": -15,
+            "translateY": -0,
           },
           Object {
-            "translateX": 15,
+            "translateX": 0,
           },
           Object {
-            "translateY": 25,
+            "translateY": 0,
           },
           Object {
-            "rotate": "90 deg",
+            "rotate": "0 deg",
           },
           Object {
             "perspective": 1000,
@@ -110,34 +110,34 @@ exports[`3. rotate clockwise when turning fingers 1`] = `
         "flexGrow": 1,
         "transform": Array [
           Object {
-            "translateX": -15,
+            "translateX": -0,
           },
           Object {
-            "translateY": -25,
+            "translateY": -0,
           },
           Object {
-            "translateX": 30,
+            "translateX": 0,
           },
           Object {
-            "translateY": 15,
+            "translateY": 0,
           },
           Object {
             "scale": 1,
           },
           Object {
-            "translateX": -30,
+            "translateX": -0,
           },
           Object {
-            "translateY": -15,
+            "translateY": -0,
           },
           Object {
-            "translateX": 15,
+            "translateX": 0,
           },
           Object {
-            "translateY": 25,
+            "translateY": 0,
           },
           Object {
-            "rotate": "270 deg",
+            "rotate": "0 deg",
           },
           Object {
             "perspective": 1000,
@@ -161,34 +161,34 @@ exports[`4. scale and rotate when spreading and rotating fingers 1`] = `
         "flexGrow": 1,
         "transform": Array [
           Object {
-            "translateX": -15,
+            "translateX": -0,
           },
           Object {
-            "translateY": -25,
+            "translateY": -0,
           },
           Object {
-            "translateX": 90,
+            "translateX": 0,
           },
           Object {
-            "translateY": 45,
+            "translateY": 0,
           },
           Object {
-            "scale": 2.9154759474226504,
+            "scale": 1,
           },
           Object {
-            "translateX": -90,
+            "translateX": -0,
           },
           Object {
-            "translateY": -45,
+            "translateY": -0,
           },
           Object {
-            "translateX": 15,
+            "translateX": 0,
           },
           Object {
-            "translateY": 25,
+            "translateY": 0,
           },
           Object {
-            "rotate": "-5.906 deg",
+            "rotate": "0 deg",
           },
           Object {
             "perspective": 1000,
@@ -212,31 +212,31 @@ exports[`5. do nothing if a finger is removed while interacting 1`] = `
         "flexGrow": 1,
         "transform": Array [
           Object {
-            "translateX": -15,
+            "translateX": -0,
           },
           Object {
-            "translateY": -25,
+            "translateY": -0,
           },
           Object {
-            "translateX": -20,
+            "translateX": 0,
           },
           Object {
-            "translateY": -60,
+            "translateY": 0,
           },
           Object {
             "scale": 1,
           },
           Object {
-            "translateX": 20,
+            "translateX": -0,
           },
           Object {
-            "translateY": 60,
+            "translateY": -0,
           },
           Object {
-            "translateX": 15,
+            "translateX": 0,
           },
           Object {
-            "translateY": 25,
+            "translateY": 0,
           },
           Object {
             "rotate": "0 deg",

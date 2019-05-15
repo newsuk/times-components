@@ -195,6 +195,7 @@ exports[`7. secondary one and four - medium 1`] = `
 exports[`8. secondary one - medium 1`] = `
 <div>
   <TileW
+    breakpoint="wide"
     tileName="secondary"
   />
 </div>
@@ -633,6 +634,7 @@ exports[`22. secondary one and four - wide 1`] = `
 exports[`23. secondary one - wide 1`] = `
 <div>
   <TileW
+    breakpoint="wide"
     tileName="secondary"
   />
 </div>
@@ -1071,6 +1073,7 @@ exports[`37. secondary one and four - huge 1`] = `
 exports[`38. secondary one - huge 1`] = `
 <div>
   <TileW
+    breakpoint="wide"
     tileName="secondary"
   />
 </div>

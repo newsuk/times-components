@@ -2,6 +2,7 @@
 
 exports[`Bar Spacing Decorator 1`] = `
 <div
+  className="css-view-1dbjc4n"
   style={
     Object {
       "WebkitBoxFlex": 1,
@@ -19,6 +20,7 @@ exports[`Bar Spacing Decorator 1`] = `
   }
 >
   <div
+    className="css-text-76zvg2"
     dir="auto"
   >
     I am in Storybook!
@@ -28,6 +30,7 @@ exports[`Bar Spacing Decorator 1`] = `
 
 exports[`Centered Decorator 1`] = `
 <div
+  className="css-view-1dbjc4n"
   style={
     Object {
       "WebkitAlignItems": "center",
@@ -62,6 +65,7 @@ exports[`Centered Decorator 1`] = `
   }
 >
   <div
+    className="css-text-76zvg2"
     dir="auto"
   >
     I am in Storybook!
@@ -71,6 +75,7 @@ exports[`Centered Decorator 1`] = `
 
 exports[`Lateral Spacing Decorator 1`] = `
 <div
+  className="css-view-1dbjc4n"
   style={
     Object {
       "WebkitBoxFlex": 1,
@@ -89,6 +94,7 @@ exports[`Lateral Spacing Decorator 1`] = `
   }
 >
   <div
+    className="css-text-76zvg2"
     dir="auto"
   >
     I am in Storybook!
@@ -98,6 +104,7 @@ exports[`Lateral Spacing Decorator 1`] = `
 
 exports[`StrictWrapper to wrap child components in Strict Mode 1`] = `
 <div
+  className="css-text-76zvg2"
   dir="auto"
 >
   I am in Storybook!
@@ -255,6 +262,7 @@ Array [
 
 exports[`White Background Decorator 1`] = `
 <div
+  className="css-view-1dbjc4n"
   style={
     Object {
       "WebkitBoxFlex": 1,
@@ -277,6 +285,7 @@ exports[`White Background Decorator 1`] = `
   }
 >
   <div
+    className="css-text-76zvg2"
     dir="auto"
   >
     I am in Storybook!

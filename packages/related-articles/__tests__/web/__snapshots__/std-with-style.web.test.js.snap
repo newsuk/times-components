@@ -135,16 +135,10 @@ exports[`default styles 1`] = `
 
 <style>
 .S1 {
-  border-top-width: 0px;
-  border-bottom-width: 0px;
   color: rgba(51,51,51,1.00);
-  display: inline;
   font-family: TimesModern-Bold;
   font-size: 25px;
-  font-weight: inherit;
   line-height: 27px;
-  margin-top: 0px;
-  margin-bottom: 0px;
 }
 
 .S2 {
@@ -154,6 +148,10 @@ exports[`default styles 1`] = `
   align-items: center;
   border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-right-style: solid;
+  border-top-style: solid;
   border-top-color: rgba(219,219,219,1.00);
   border-top-width: 1px;
   display: flex;
@@ -161,14 +159,9 @@ exports[`default styles 1`] = `
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-  margin-top: 0px;
-  margin-bottom: 0px;
 }
 
 .S3 {
-  border-top-width: 0px;
-  border-bottom-width: 0px;
-  display: inline;
   font-family: GillSansMTStd-Medium;
   font-size: 12px;
   font-weight: 400;
@@ -178,22 +171,11 @@ exports[`default styles 1`] = `
 }
 
 .S4 {
-  -ms-flex-align: stretch;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  align-items: stretch;
-  border-top-width: 0px;
-  border-bottom-width: 0px;
-  display: flex;
-  margin-top: 0px;
   margin-bottom: 0px;
 }
 
 .S5 {
-  border-top-width: 0px;
-  border-bottom-width: 0px;
   color: rgba(51,51,51,1.00);
-  display: inline;
   font-family: TimesModern-Bold;
   font-size: 22px;
   font-weight: 400;
@@ -203,68 +185,26 @@ exports[`default styles 1`] = `
 }
 
 .S6 {
-  border-top-width: 0px;
-  border-bottom-width: 0px;
-  color: inherit;
-  display: inline;
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  line-height: inherit;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.S7 {
-  border-top-width: 0px;
-  border-bottom-width: 0px;
   color: rgba(105,105,105,1.00);
-  display: inline;
   font-family: TimesDigitalW04;
   font-size: 14px;
-  font-weight: inherit;
   line-height: 20px;
-  margin-top: 0px;
   margin-bottom: 10px;
 }
 
-.S8 {
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+.S7 {
   color: rgba(105,105,105,1.00);
-  display: inline;
   font-family: GillSansMTStd-Medium;
   font-size: 13px;
-  font-weight: inherit;
   line-height: 15px;
-  margin-top: 0px;
   margin-bottom: 5px;
 }
 
-.S9 {
-  border-top-width: 0px;
-  border-bottom-width: 0px;
+.S8 {
   color: rgba(51,51,51,1.00);
-  display: inline;
   font-family: GillSansMTStd-Medium;
   font-size: 13px;
-  font-weight: inherit;
   line-height: 15px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.S10 {
-  border-top-width: 0px;
-  border-bottom-width: 0px;
-  color: inherit;
-  display: inline;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
-  font-size: 14px;
-  font-weight: inherit;
-  line-height: inherit;
-  margin-top: 0px;
-  margin-bottom: 0px;
 }
 
 .IS1 {
@@ -273,59 +213,59 @@ exports[`default styles 1`] = `
 </style>
 
 <div
-  className="S4"
+  className="css-view-1dbjc4n"
 >
   <div
-    className="S2"
+    className="css-view-1dbjc4n r-alignItems-1awozwy r-borderBottomColor-91l5k4 r-borderBottomWidth-qklmqi r-borderStyle-1phboty r-borderTopColor-1ozwgwe r-borderTopWidth-5kkj8d r-display-6koalj r-justifyContent-1777fci r-padding-1oqcu8e S2"
   >
     <h3
-      className="S1"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-h1js2l r-lineHeight-1kt6imw r-paddingTop-glunga S1"
     >
       Related articles
     </h3>
   </div>
   <div
-    className="c0 c1 c2 S4"
+    className="c0 c1 c2 configweb__Base-sc-1adgnqc-2 c0 configweb__Base-sc-1adgnqc-1 c1 configweb__Base-sc-1adgnqc-0 c2 css-view-1dbjc4n"
   >
     <div
-      className="c3 S4"
+      className="c3 responsiveweb__SliceContainer-sc-2kg7gs-0 c3 css-view-1dbjc4n"
     >
       <div
-        className="c4 c5 c6 S4"
+        className="c4 c5 c6 responsiveweb__Base-aumpme-4 c4 responsiveweb__Base-aumpme-3 c5 responsiveweb__Base-aumpme-1 c6 css-view-1dbjc4n"
       >
         <div
-          className="c7 S4"
+          className="c7 responsiveweb__ChildContainer-aumpme-0 c7 css-view-1dbjc4n"
         >
           <Link>
             <div
-              className="S4"
+              className="css-view-1dbjc4n"
             >
               <Card>
                 <div
-                  className="S4"
+                  className="css-view-1dbjc4n"
                 >
                   <div
-                    className="S4"
+                    className="css-view-1dbjc4n r-marginBottom-p1pxzi S4"
                   >
                     <div
-                      className="S3 IS1"
+                      className="css-text-76zvg2 r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-3b040n r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv S3 IS1"
                     >
                       TEST LABEL
                     </div>
                   </div>
                   <h3
-                    className="headlineClass S5"
+                    className="headlineClass css-reset-4rbku5 headlineClass css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw r-marginBottom-d0pm55 r-marginTop-1mnahxq S5"
                   >
                     Test Short Headline
                   </h3>
                   <div
-                    className="S4"
+                    className="css-view-1dbjc4n"
                   >
                     <div
-                      className="summaryHidden summary125Class S7"
+                      className="summaryHidden summary125Class summaryHidden summary125Class css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S6"
                     >
                       <span
-                        className="S6"
+                        className="css-text-76zvg2 css-textHasAncestor-16my406"
                       >
                         
                         Summary 125
@@ -334,22 +274,22 @@ exports[`default styles 1`] = `
                     </div>
                   </div>
                   <div
-                    className="S8"
+                    className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginBottom-d0pm55 S7"
                   >
                     <time>
                       March 13 2015, 6:54pm
                     </time>
                   </div>
                   <div
-                    className="S10"
+                    className="css-text-76zvg2"
                   >
                     <span
-                      className="S9"
+                      className="css-text-76zvg2 css-textHasAncestor-16my406 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S8"
                     >
                       Camilla Long
                     </span>
                     <span
-                      className="S9"
+                      className="css-text-76zvg2 css-textHasAncestor-16my406 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S8"
                     >
                       , Environment Editor
                     </span>

@@ -2,6 +2,7 @@
 
 exports[`save and share bar component save and share bar renders correctly 1`] = `
 <div
+  className="css-view-1dbjc4n"
   style={
     Object {
       "WebkitBoxDirection": "normal",
@@ -27,6 +28,7 @@ exports[`save and share bar component save and share bar renders correctly 1`] =
   }
 >
   <div
+    className="css-view-1dbjc4n"
     style={
       Object {
         "WebkitAlignItems": "center",
@@ -44,10 +46,12 @@ exports[`save and share bar component save and share bar renders correctly 1`] =
     }
   >
     <div
+      className="css-text-76zvg2"
       style={
         Object {
           "color": "rgba(105,105,105,1.00)",
           "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": "14px",
           "lineHeight": "14px",
           "marginRight": "10px",
         }
@@ -94,6 +98,7 @@ exports[`save and share bar component save and share bar renders correctly 1`] =
     </BarItem>
   </div>
   <div
+    className="css-view-1dbjc4n"
     style={
       Object {
         "WebkitAlignItems": "center",
@@ -110,28 +115,18 @@ exports[`save and share bar component save and share bar renders correctly 1`] =
       }
     }
   >
-    <div
-      style={
+    <SaveStarWeb
+      articleId="96508c84-6611-11e9-adc2-05e1b87efaea"
+      colour="#696969"
+      hoverColor="#1D1D1B"
+      saveApi={
         Object {
-          "color": "rgba(105,105,105,1.00)",
-          "fontFamily": "GillSansMTStd-Medium",
-          "lineHeight": "14px",
-          "marginRight": "10px",
+          "bookmark": [Function],
+          "getBookmarks": [Function],
+          "unBookmark": [Function],
         }
       }
-    >
-      Save
-    </div>
-    <BarItem
-      color="#696969"
-      hoverColor="#1D1D1B"
-    >
-      <IconSaveBookmark
-        fillColour="#FFFFFF"
-        strokeColour="currentColor"
-        title="Save to My Articles"
-      />
-    </BarItem>
+    />
   </div>
 </div>
 `;
