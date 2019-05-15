@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.3.1...@times-components/save-and-share-bar@0.4.0) (2019-05-15)
+
+
+### Features
+
+* Save Star functionality ([#1945](https://github.com/newsuk/times-components/issues/1945)) ([b236da9](https://github.com/newsuk/times-components/commit/b236da9))
+
+
+
+
+
 ## [0.3.1](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.3.0...@times-components/save-and-share-bar@0.3.1) (2019-05-14)
 
 **Note:** Version bump only for package @times-components/save-and-share-bar

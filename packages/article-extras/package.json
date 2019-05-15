@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-extras",
-  "version": "0.1.31",
+  "version": "0.1.32",
   "description": "Extra information components at the bottom of the articles, such as topics, related articles and comments",
   "main": "dist/index",
   "dev": "src/index",
@@ -39,7 +39,7 @@
     "@times-components/eslint-config-thetimes": "0.8.11",
     "@times-components/jest-configurator": "2.5.9",
     "@times-components/jest-serializer": "3.2.5",
-    "@times-components/provider-test-tools": "1.17.13",
+    "@times-components/provider-test-tools": "1.17.14",
     "@times-components/storybook": "4.0.6",
     "@times-components/test-utils": "2.2.41",
     "@times-components/webpack-configurator": "2.0.20",
@@ -56,12 +56,12 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/article-comments": "0.5.16",
+    "@times-components/article-comments": "0.5.17",
     "@times-components/article-topics": "4.0.8",
-    "@times-components/button": "2.3.72",
+    "@times-components/button": "2.3.73",
     "@times-components/context": "1.0.8",
-    "@times-components/provider": "1.16.14",
-    "@times-components/related-articles": "6.0.19",
+    "@times-components/provider": "1.16.15",
+    "@times-components/related-articles": "6.0.20",
     "@times-components/responsive": "0.4.33",
     "@times-components/styleguide": "3.28.15",
     "prop-types": "15.7.2",

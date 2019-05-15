@@ -1,6 +1,6 @@
 {
   "name": "@times-components/save-star-web",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Save Star for Web",
   "main": "dist/save-star-web",
   "dev": "src/save-star-web",
@@ -33,16 +33,14 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
+    "@times-components/icons": "2.11.2",
     "@times-components/link": "3.4.8",
-    "@times-components/utils": "4.10.12",
-    "@times-components/provider-queries": "2.0.5",
-    "prop-types": "15.7.2",
-    "@times-components/icons": "2.11.1",
-    "@times-components/styleguide": "3.28.15"
+    "@times-components/provider-queries": "2.1.0",
+    "@times-components/styleguide": "3.28.15",
+    "@times-components/utils": "4.11.0",
+    "prop-types": "15.7.2"
   },
   "devDependencies": {
-    "enzyme": "3.9.0",
-    "react-test-renderer": "16.8.3",
     "@times-components/eslint-config-thetimes": "0.8.11",
     "@times-components/jest-configurator": "2.5.9",
     "@times-components/jest-serializer": "3.2.5",
@@ -52,12 +50,14 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.5",
+    "enzyme": "3.9.0",
     "eslint": "5.9.0",
     "jest": "24.8.0",
     "prettier": "1.14.3",
     "react": "16.8.3",
     "react-dom": "16.8.3",
     "react-native": "0.59.8",
+    "react-test-renderer": "16.8.3",
     "webpack": "4.30.0",
     "webpack-cli": "3.3.1"
   },

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/image",
-  "version": "6.0.1",
+  "version": "6.0.2",
   "main": "dist/index",
   "dev": "src/index",
   "scripts": {
@@ -69,7 +69,7 @@
     "@times-components/responsive": "0.4.33",
     "@times-components/styleguide": "3.28.15",
     "@times-components/svgs": "2.7.9",
-    "@times-components/utils": "4.10.12",
+    "@times-components/utils": "4.11.0",
     "lodash.memoize": "4.1.2",
     "prop-types": "15.7.2",
     "styled-components": "3.4.0"

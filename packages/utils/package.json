@@ -1,6 +1,6 @@
 {
   "name": "@times-components/utils",
-  "version": "4.10.12",
+  "version": "4.11.0",
   "description": "A set of helpers and/or workarounds to be shared across packages",
   "main": "dist",
   "dev": "src",
@@ -49,16 +49,16 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
+    "@times-components/schema": "0.6.10",
     "@times-components/styleguide": "3.28.15",
+    "apollo-cache-inmemory": "1.5.1",
+    "apollo-client": "2.5.1",
+    "apollo-link-http": "1.5.14",
     "lodash.omitby": "4.6.0",
     "prop-types": "15.7.2",
     "react-native": "0.59.8",
-    "apollo-link-http": "1.5.14",
-    "apollo-client": "2.5.1",
-    "apollo-cache-inmemory": "1.5.1",
-    "@times-components/schema": "0.6.10",
-    "unfetch": "^3.0.0",
-    "styled-components": "3.4.0"
+    "styled-components": "3.4.0",
+    "unfetch": "^3.0.0"
   },
   "peerDependencies": {
     "react": ">=16.5",
