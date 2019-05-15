@@ -23,6 +23,7 @@ exports[`1. page error 1`] = `
 
 exports[`2. article list 1`] = `
 <RCTScrollView
+  nestedScrollEnabled={true}
   removeClippedSubviews={false}
 >
   <View>

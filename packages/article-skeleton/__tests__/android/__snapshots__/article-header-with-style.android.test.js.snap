@@ -13,6 +13,7 @@ exports[`1. article with header 1`] = `
     initialListSize={10}
     initialNumToRender={10}
     maxToRenderPerBatch={10}
+    nestedScrollEnabled={true}
     numColumns={1}
     onEndReachedThreshold={2}
     pageSize={1}

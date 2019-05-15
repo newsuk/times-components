@@ -2,6 +2,7 @@
 
 exports[`1. article list 1`] = `
 <RCTScrollView
+  nestedScrollEnabled={true}
   removeClippedSubviews={false}
 >
   <View>
@@ -122,6 +123,7 @@ exports[`1. article list 1`] = `
 
 exports[`2. article list with no images 1`] = `
 <RCTScrollView
+  nestedScrollEnabled={true}
   removeClippedSubviews={false}
 >
   <View>
@@ -180,6 +182,7 @@ exports[`2. article list with no images 1`] = `
 
 exports[`3. a retry button when load more fails 1`] = `
 <RCTScrollView
+  nestedScrollEnabled={true}
   removeClippedSubviews={false}
 >
   <View>
@@ -235,6 +238,7 @@ exports[`3. a retry button when load more fails 1`] = `
 
 exports[`4. no footer with data equalling the count 1`] = `
 <RCTScrollView
+  nestedScrollEnabled={true}
   removeClippedSubviews={false}
 >
   <View>
@@ -415,6 +419,7 @@ Array [
 
 exports[`6. removes the retry button when successfully pressed 1`] = `
 <RCTScrollView
+  nestedScrollEnabled={true}
   removeClippedSubviews={false}
 >
   <View>
