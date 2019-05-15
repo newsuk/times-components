@@ -1,6 +1,138 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. a secondary image 1`] = `
+exports[`1. a primary image 1`] = `
+<article>
+  <Head />
+  <div>
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="header"
+    />
+  </div>
+  <div>
+    <div>
+      <div>
+        <div>
+          <SaveAndShareBar
+            articleHeadline="Some Headline"
+            articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+            articleUrl="https://url.io"
+            saveApi={
+              Object {
+                "bookmark": [Function],
+                "getBookmarks": [Function],
+                "unBookmark": [Function],
+              }
+            }
+          />
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        id="0"
+      >
+        <div>
+          <ArticleImage
+            captionOptions={
+              Object {
+                "caption": "A Caption",
+                "credits": "Some Credits",
+              }
+            }
+            imageOptions={
+              Object {
+                "display": "primary",
+                "highResSize": null,
+                "lowResSize": 100,
+                "ratio": "3:2",
+                "uri": "https://image-2.io",
+              }
+            }
+          />
+        </div>
+      </div>
+      <ArticleExtras
+        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        commentsAllowed={true}
+        commentsEnabled={true}
+        relatedArticleAllowed={true}
+        relatedArticlesVisible={false}
+        spotAccountId=""
+        topicsAllowed={true}
+      />
+    </div>
+  </div>
+</article>
+`;
+
+exports[`2. a fullwidth image 1`] = `
+<article>
+  <Head />
+  <div>
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="header"
+    />
+  </div>
+  <div>
+    <div>
+      <div>
+        <div>
+          <SaveAndShareBar
+            articleHeadline="Some Headline"
+            articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+            articleUrl="https://url.io"
+            saveApi={
+              Object {
+                "bookmark": [Function],
+                "getBookmarks": [Function],
+                "unBookmark": [Function],
+              }
+            }
+          />
+        </div>
+      </div>
+    </div>
+    <div>
+      <div
+        id="0"
+      >
+        <ArticleImage
+          captionOptions={
+            Object {
+              "caption": "A Caption",
+              "credits": "Some Credits",
+            }
+          }
+          imageOptions={
+            Object {
+              "display": "fullwidth",
+              "highResSize": null,
+              "lowResSize": 100,
+              "ratio": "3:2",
+              "uri": "https://image-2.io",
+            }
+          }
+        />
+      </div>
+      <ArticleExtras
+        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        commentsAllowed={true}
+        commentsEnabled={true}
+        relatedArticleAllowed={true}
+        relatedArticlesVisible={false}
+        spotAccountId=""
+        topicsAllowed={true}
+      />
+    </div>
+  </div>
+</article>
+`;
+
+exports[`3. a secondary image 1`] = `
 <article>
   <Head />
   <div>
@@ -67,7 +199,7 @@ exports[`1. a secondary image 1`] = `
 </article>
 `;
 
-exports[`2. an inline image 1`] = `
+exports[`4. an inline image 1`] = `
 <article>
   <Head />
   <div>

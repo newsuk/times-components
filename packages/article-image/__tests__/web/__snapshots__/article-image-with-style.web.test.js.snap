@@ -21,55 +21,74 @@ exports[`1. mobile primary image with caption and credits 1`] = `
   }
 }
 
-Array [
+<ArticleImageNative
+  captionOptions={
+    Object {
+      "caption": "Some caption",
+      "credits": "Some credits",
+    }
+  }
+  imageOptions={
+    Object {
+      "display": "primary",
+      "ratio": "15:12",
+      "uri": "https://img/someImage",
+    }
+  }
+  onImagePress={null}
+>
   <div
-    className="css-view-1dbjc4n"
+    className="css-view-1dbjc4n r-flexDirection-eqz5dr r-paddingBottom-19yat4t r-width-13qz1uu"
   >
-    <TimesImage
-      aspectRatio={1.25}
-      caption={
-        <Caption
-          credits="Some credits"
-          text="Some caption"
-        />
-      }
-      fadeImageIn={false}
-      highResSize={null}
-      lowResSize={null}
-      onImagePress={null}
-      rounded={false}
-      uri="https://img/someImage"
-    />
-  </div>,
-  <div
-    className="css-view-1dbjc4n"
-  >
-    <responsiveweb__InsetCaptionStyle>
-      <div
-        className="c1 responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2 c1 css-view-1dbjc4n"
-      >
+    <div
+      className="css-view-1dbjc4n"
+    >
+      <TimesImage
+        aspectRatio={1.25}
+        caption={
+          <Caption
+            credits="Some credits"
+            text="Some caption"
+          />
+        }
+        fadeImageIn={false}
+        highResSize={null}
+        lowResSize={null}
+        onImagePress={null}
+        rounded={false}
+        uri="https://img/someImage"
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n"
+    >
+      <responsiveweb__InsetCaptionStyle>
         <div
-          className="css-view-1dbjc4n"
+          className="c1 responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2 c1 css-view-1dbjc4n"
         >
           <div
-            className="css-view-1dbjc4n r-paddingTop-m611by"
+            className="css-view-1dbjc4n"
           >
             <div
-              className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+              className="css-view-1dbjc4n r-paddingTop-m611by"
             >
-              Some caption
-            </div>
-            <div
-              className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
-            >
-              SOME CREDITS
+              <div
+                className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+              >
+                Some caption
+              </div>
+              <div
+                className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
+              >
+                SOME CREDITS
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </responsiveweb__InsetCaptionStyle>
-  </div>,
-]
+      </responsiveweb__InsetCaptionStyle>
+    </div>
+  </div>
+</ArticleImageNative>
 `;
 
 exports[`2. tablet primary image with caption and credits 1`] = `
@@ -93,55 +112,74 @@ exports[`2. tablet primary image with caption and credits 1`] = `
   }
 }
 
-Array [
+<ArticleImageNative
+  captionOptions={
+    Object {
+      "caption": "Some caption",
+      "credits": "Some credits",
+    }
+  }
+  imageOptions={
+    Object {
+      "display": "primary",
+      "ratio": "15:12",
+      "uri": "https://img/someImage",
+    }
+  }
+  onImagePress={null}
+>
   <div
-    className="css-view-1dbjc4n"
+    className="css-view-1dbjc4n r-flexDirection-eqz5dr r-paddingBottom-19yat4t r-width-13qz1uu"
   >
-    <TimesImage
-      aspectRatio={1.25}
-      caption={
-        <Caption
-          credits="Some credits"
-          text="Some caption"
-        />
-      }
-      fadeImageIn={false}
-      highResSize={null}
-      lowResSize={null}
-      onImagePress={null}
-      rounded={false}
-      uri="https://img/someImage"
-    />
-  </div>,
-  <div
-    className="css-view-1dbjc4n"
-  >
-    <responsiveweb__InsetCaptionStyle>
-      <div
-        className="c1 responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2 c1 css-view-1dbjc4n"
-      >
+    <div
+      className="css-view-1dbjc4n"
+    >
+      <TimesImage
+        aspectRatio={1.25}
+        caption={
+          <Caption
+            credits="Some credits"
+            text="Some caption"
+          />
+        }
+        fadeImageIn={false}
+        highResSize={null}
+        lowResSize={null}
+        onImagePress={null}
+        rounded={false}
+        uri="https://img/someImage"
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n"
+    >
+      <responsiveweb__InsetCaptionStyle>
         <div
-          className="css-view-1dbjc4n"
+          className="c1 responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2 c1 css-view-1dbjc4n"
         >
           <div
-            className="css-view-1dbjc4n r-paddingTop-m611by"
+            className="css-view-1dbjc4n"
           >
             <div
-              className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+              className="css-view-1dbjc4n r-paddingTop-m611by"
             >
-              Some caption
-            </div>
-            <div
-              className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
-            >
-              SOME CREDITS
+              <div
+                className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+              >
+                Some caption
+              </div>
+              <div
+                className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
+              >
+                SOME CREDITS
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </responsiveweb__InsetCaptionStyle>
-  </div>,
-]
+      </responsiveweb__InsetCaptionStyle>
+    </div>
+  </div>
+</ArticleImageNative>
 `;
 
 exports[`3. mobile fullwidth image with caption and credits 1`] = `
@@ -155,42 +193,50 @@ exports[`3. mobile fullwidth image with caption and credits 1`] = `
   z-index: 2;
 }
 
-.c1 {
-  padding-left: 10px;
-}
-
-@media (min-width:768px) {
-  .c1 {
-    padding-left: 0px;
+<ArticleImageNative
+  captionOptions={
+    Object {
+      "caption": "Some caption",
+      "credits": "Some credits",
+    }
   }
-}
-
-Array [
+  imageOptions={
+    Object {
+      "display": "fullwidth",
+      "ratio": "15:12",
+      "uri": "https://img/someImage",
+    }
+  }
+  onImagePress={null}
+>
   <div
-    className="css-view-1dbjc4n"
+    className="css-view-1dbjc4n r-marginBottom-15d164r r-marginHorizontal-1jgb5lz r-maxWidth-11gaior"
   >
-    <TimesImage
-      aspectRatio={1.25}
-      caption={
-        <Caption
-          credits="Some credits"
-          text="Some caption"
-        />
-      }
-      fadeImageIn={false}
-      highResSize={null}
-      lowResSize={null}
-      onImagePress={null}
-      rounded={false}
-      uri="https://img/someImage"
-    />
-  </div>,
-  <div
-    className="css-view-1dbjc4n"
-  >
-    <responsiveweb__InsetCaptionStyle>
-      <div
-        className="c1 responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2 c1 css-view-1dbjc4n"
+    <div
+      className="css-view-1dbjc4n"
+    >
+      <TimesImage
+        aspectRatio={1.25}
+        caption={
+          <Caption
+            credits="Some credits"
+            text="Some caption"
+          />
+        }
+        fadeImageIn={false}
+        highResSize={null}
+        lowResSize={null}
+        onImagePress={null}
+        rounded={false}
+        uri="https://img/someImage"
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n r-alignSelf-1kihuf0 r-maxWidth-1cmskyw"
+    >
+      <CentredCaption
+        credits="Some credits"
+        text="Some caption"
       >
         <div
           className="css-view-1dbjc4n"
@@ -210,10 +256,10 @@ Array [
             </div>
           </div>
         </div>
-      </div>
-    </responsiveweb__InsetCaptionStyle>
-  </div>,
-]
+      </CentredCaption>
+    </div>
+  </div>
+</ArticleImageNative>
 `;
 
 exports[`4. tablet fullwidth image with caption and credits 1`] = `
@@ -227,42 +273,50 @@ exports[`4. tablet fullwidth image with caption and credits 1`] = `
   z-index: 2;
 }
 
-.c1 {
-  padding-left: 10px;
-}
-
-@media (min-width:768px) {
-  .c1 {
-    padding-left: 0px;
+<ArticleImageNative
+  captionOptions={
+    Object {
+      "caption": "Some caption",
+      "credits": "Some credits",
+    }
   }
-}
-
-Array [
+  imageOptions={
+    Object {
+      "display": "fullwidth",
+      "ratio": "15:12",
+      "uri": "https://img/someImage",
+    }
+  }
+  onImagePress={null}
+>
   <div
-    className="css-view-1dbjc4n"
+    className="css-view-1dbjc4n r-marginBottom-15d164r r-marginHorizontal-1jgb5lz r-maxWidth-11gaior"
   >
-    <TimesImage
-      aspectRatio={1.25}
-      caption={
-        <Caption
-          credits="Some credits"
-          text="Some caption"
-        />
-      }
-      fadeImageIn={false}
-      highResSize={null}
-      lowResSize={null}
-      onImagePress={null}
-      rounded={false}
-      uri="https://img/someImage"
-    />
-  </div>,
-  <div
-    className="css-view-1dbjc4n"
-  >
-    <responsiveweb__InsetCaptionStyle>
-      <div
-        className="c1 responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2 c1 css-view-1dbjc4n"
+    <div
+      className="css-view-1dbjc4n"
+    >
+      <TimesImage
+        aspectRatio={1.25}
+        caption={
+          <Caption
+            credits="Some credits"
+            text="Some caption"
+          />
+        }
+        fadeImageIn={false}
+        highResSize={null}
+        lowResSize={null}
+        onImagePress={null}
+        rounded={false}
+        uri="https://img/someImage"
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n r-alignSelf-1kihuf0 r-maxWidth-1cmskyw"
+    >
+      <CentredCaption
+        credits="Some credits"
+        text="Some caption"
       >
         <div
           className="css-view-1dbjc4n"
@@ -282,10 +336,10 @@ Array [
             </div>
           </div>
         </div>
-      </div>
-    </responsiveweb__InsetCaptionStyle>
-  </div>,
-]
+      </CentredCaption>
+    </div>
+  </div>
+</ArticleImageNative>
 `;
 
 exports[`5. secondary image with caption and credits 1`] = `
@@ -299,49 +353,68 @@ exports[`5. secondary image with caption and credits 1`] = `
   z-index: 2;
 }
 
-Array [
+<ArticleImageNative
+  captionOptions={
+    Object {
+      "caption": "Another caption",
+      "credits": "Other credits",
+    }
+  }
+  imageOptions={
+    Object {
+      "display": "secondary",
+      "ratio": "3:2",
+      "uri": "https://img/someImage",
+    }
+  }
+  onImagePress={null}
+>
   <div
-    className="css-view-1dbjc4n r-width-1f720gc"
-  >
-    <TimesImage
-      aspectRatio={1.5}
-      caption={
-        <Caption
-          credits="Other credits"
-          text="Another caption"
-        />
-      }
-      fadeImageIn={false}
-      highResSize={null}
-      lowResSize={null}
-      onImagePress={null}
-      rounded={false}
-      uri="https://img/someImage"
-    />
-  </div>,
-  <div
-    className="css-view-1dbjc4n r-paddingLeft-1hfyk0a r-paddingTop-wk8lta r-width-1f720gc"
+    className="css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-tzz3ar r-paddingBottom-k8qxaj r-paddingLeft-1hfyk0a r-paddingRight-1qfoi16 r-width-13qz1uu"
   >
     <div
-      className="css-view-1dbjc4n"
+      className="css-view-1dbjc4n r-width-1f720gc"
+    >
+      <TimesImage
+        aspectRatio={1.5}
+        caption={
+          <Caption
+            credits="Other credits"
+            text="Another caption"
+          />
+        }
+        fadeImageIn={false}
+        highResSize={null}
+        lowResSize={null}
+        onImagePress={null}
+        rounded={false}
+        uri="https://img/someImage"
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingLeft-1hfyk0a r-paddingTop-wk8lta r-width-1f720gc"
     >
       <div
-        className="css-view-1dbjc4n r-paddingTop-wk8lta"
+        className="css-view-1dbjc4n"
       >
         <div
-          className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+          className="css-view-1dbjc4n r-paddingTop-wk8lta"
         >
-          Another caption
-        </div>
-        <div
-          className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
-        >
-          OTHER CREDITS
+          <div
+            className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+          >
+            Another caption
+          </div>
+          <div
+            className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
+          >
+            OTHER CREDITS
+          </div>
         </div>
       </div>
     </div>
-  </div>,
-]
+  </div>
+</ArticleImageNative>
 `;
 
 exports[`6. primary image with caption and credits with center caption override 1`] = `
@@ -376,63 +449,84 @@ exports[`6. primary image with caption and credits with center caption override 
     }
   }
 >
-  <div
-    className="css-view-1dbjc4n"
+  <ArticleImageNative
+    captionOptions={
+      Object {
+        "caption": "Some caption",
+        "credits": "Some credits",
+      }
+    }
+    imageOptions={
+      Object {
+        "display": "primary",
+        "ratio": "15:12",
+        "uri": "https://img/someImage",
+      }
+    }
+    onImagePress={null}
   >
-    <TimesImage
-      aspectRatio={1.25}
-      caption={
-        <Caption
+    <div
+      className="css-view-1dbjc4n r-flexDirection-eqz5dr r-paddingBottom-19yat4t r-width-13qz1uu"
+    >
+      <div
+        className="css-view-1dbjc4n"
+      >
+        <TimesImage
+          aspectRatio={1.25}
+          caption={
+            <Caption
+              credits="Some credits"
+              text="Some caption"
+            />
+          }
+          fadeImageIn={false}
+          highResSize={null}
+          lowResSize={null}
+          onImagePress={null}
+          rounded={false}
+          uri="https://img/someImage"
+        />
+      </div>
+      <div
+        className="css-view-1dbjc4n"
+      >
+        <InsetCenteredCaption
           credits="Some credits"
           text="Some caption"
-        />
-      }
-      fadeImageIn={false}
-      highResSize={null}
-      lowResSize={null}
-      onImagePress={null}
-      rounded={false}
-      uri="https://img/someImage"
-    />
-  </div>
-  <div
-    className="css-view-1dbjc4n"
-  >
-    <InsetCenteredCaption
-      credits="Some credits"
-      text="Some caption"
-    >
-      <responsiveweb__InsetCaptionStyle>
-        <div
-          className="c1 responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2 c1 css-view-1dbjc4n"
         >
-          <CentredCaption
-            credits="Some credits"
-            text="Some caption"
-          >
+          <responsiveweb__InsetCaptionStyle>
             <div
-              className="css-view-1dbjc4n"
+              className="c1 responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2 c1 css-view-1dbjc4n"
             >
-              <div
-                className="css-view-1dbjc4n r-paddingTop-m611by"
+              <CentredCaption
+                credits="Some credits"
+                text="Some caption"
               >
                 <div
-                  className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+                  className="css-view-1dbjc4n"
                 >
-                  Some caption
+                  <div
+                    className="css-view-1dbjc4n r-paddingTop-m611by"
+                  >
+                    <div
+                      className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+                    >
+                      Some caption
+                    </div>
+                    <div
+                      className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
+                    >
+                      SOME CREDITS
+                    </div>
+                  </div>
                 </div>
-                <div
-                  className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
-                >
-                  SOME CREDITS
-                </div>
-              </div>
+              </CentredCaption>
             </div>
-          </CentredCaption>
-        </div>
-      </responsiveweb__InsetCaptionStyle>
-    </InsetCenteredCaption>
-  </div>
+          </responsiveweb__InsetCaptionStyle>
+        </InsetCenteredCaption>
+      </div>
+    </div>
+  </ArticleImageNative>
 </ContextProviderWithDefaults>
 `;
 
@@ -458,51 +552,72 @@ exports[`7. secondary image with caption and credits with center caption overrid
     }
   }
 >
-  <div
-    className="css-view-1dbjc4n r-width-1f720gc"
-  >
-    <TimesImage
-      aspectRatio={1.5}
-      caption={
-        <Caption
-          credits="Other credits"
-          text="Another caption"
-        />
+  <ArticleImageNative
+    captionOptions={
+      Object {
+        "caption": "Another caption",
+        "credits": "Other credits",
       }
-      fadeImageIn={false}
-      highResSize={null}
-      lowResSize={null}
-      onImagePress={null}
-      rounded={false}
-      uri="https://img/someImage"
-    />
-  </div>
-  <div
-    className="css-view-1dbjc4n r-paddingLeft-1hfyk0a r-paddingTop-wk8lta r-width-1f720gc"
+    }
+    imageOptions={
+      Object {
+        "display": "secondary",
+        "ratio": "3:2",
+        "uri": "https://img/someImage",
+      }
+    }
+    onImagePress={null}
   >
-    <CentredCaption
-      credits="Other credits"
-      text="Another caption"
+    <div
+      className="css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-tzz3ar r-paddingBottom-k8qxaj r-paddingLeft-1hfyk0a r-paddingRight-1qfoi16 r-width-13qz1uu"
     >
       <div
-        className="css-view-1dbjc4n"
+        className="css-view-1dbjc4n r-width-1f720gc"
       >
-        <div
-          className="css-view-1dbjc4n r-paddingTop-wk8lta"
+        <TimesImage
+          aspectRatio={1.5}
+          caption={
+            <Caption
+              credits="Other credits"
+              text="Another caption"
+            />
+          }
+          fadeImageIn={false}
+          highResSize={null}
+          lowResSize={null}
+          onImagePress={null}
+          rounded={false}
+          uri="https://img/someImage"
+        />
+      </div>
+      <div
+        className="css-view-1dbjc4n r-paddingLeft-1hfyk0a r-paddingTop-wk8lta r-width-1f720gc"
+      >
+        <CentredCaption
+          credits="Other credits"
+          text="Another caption"
         >
           <div
-            className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+            className="css-view-1dbjc4n"
           >
-            Another caption
+            <div
+              className="css-view-1dbjc4n r-paddingTop-wk8lta"
+            >
+              <div
+                className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+              >
+                Another caption
+              </div>
+              <div
+                className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
+              >
+                OTHER CREDITS
+              </div>
+            </div>
           </div>
-          <div
-            className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
-          >
-            OTHER CREDITS
-          </div>
-        </div>
+        </CentredCaption>
       </div>
-    </CentredCaption>
-  </div>
+    </div>
+  </ArticleImageNative>
 </ContextProviderWithDefaults>
 `;
