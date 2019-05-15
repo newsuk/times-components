@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Subscriber } from "react-broadcast";
-import { View } from "react-native";
+import { View, Platform } from "react-native";
 import { screenWidth } from "@times-components/utils";
 import { getSlotConfig, prebidConfig, getPrebidSlotConfig } from "./utils";
 import adInit from "./utils/ad-init";
@@ -99,7 +99,10 @@ class Ad extends Component {
       ? { height: 0, width: 0 }
       : {
           height: config.maxSizes.height,
-          width: config.maxSizes.width
+          width:
+            Platform.OS === "ios" || Platform.OS === "android"
+              ? screenWidth()
+              : config.maxSizes.width
         };
 
     const AdComponent = (
