@@ -115,17 +115,6 @@ exports[`save and share bar component save and share bar renders correctly 1`] =
       }
     }
   >
-<<<<<<< HEAD
-    <div
-      className="css-text-76zvg2"
-      style={
-        Object {
-          "color": "rgba(105,105,105,1.00)",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": "14px",
-          "lineHeight": "14px",
-          "marginRight": "10px",
-=======
     <SaveStarWeb
       articleId="96508c84-6611-11e9-adc2-05e1b87efaea"
       colour="#696969"
@@ -135,7 +124,6 @@ exports[`save and share bar component save and share bar renders correctly 1`] =
           "bookmark": [Function],
           "getBookmarks": [Function],
           "unBookmark": [Function],
->>>>>>> feat: Save Star functionality
         }
       }
     />
