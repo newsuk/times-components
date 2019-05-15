@@ -126,6 +126,7 @@ class Section extends Component {
                 isPuzzle,
                 isMagazine
               )}
+              nestedScrollEnabled
               onViewableItemsChanged={
                 onViewed ? this.onViewableItemsChanged : null
               }

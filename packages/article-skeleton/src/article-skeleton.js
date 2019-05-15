@@ -329,6 +329,7 @@ class ArticleSkeleton extends Component {
                 <Header width={Math.min(maxWidth, width)} />
               </Gutter>
             }
+            nestedScrollEnabled
             onViewableItemsChanged={
               onViewed ? this.onViewableItemsChanged : null
             }
