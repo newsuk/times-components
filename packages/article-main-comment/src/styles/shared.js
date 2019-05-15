@@ -61,7 +61,14 @@ const sharedStyles = {
     flexWrap: "wrap"
   },
   metaContainer: {
-    alignItems: "center"
+    alignItems: "center",
+    width: "100%",
+    paddingBottom: spacing(2),
+    paddingTop: spacing(2),
+    borderBottomColor: colours.functional.keyline,
+    borderBottomWidth: 1,
+    borderTopColor: colours.functional.keyline,
+    borderTopWidth: 1
   },
   metaContainerTablet: {
     flexDirection: "row",

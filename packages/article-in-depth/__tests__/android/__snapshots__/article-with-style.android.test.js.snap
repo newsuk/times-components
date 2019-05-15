@@ -7,6 +7,7 @@ exports[`full article with style 1`] = `
       Object {
         "alignItems": "center",
         "backgroundColor": "rgba(60, 129, 190, 1)",
+        "marginBottom": -1,
         "paddingBottom": 45,
         "paddingHorizontal": 20,
         "paddingTop": 45,
@@ -85,8 +86,13 @@ exports[`full article with style 1`] = `
     style={
       Object {
         "alignItems": "center",
+        "borderBottomColor": "#DBDBDB",
+        "borderBottomWidth": 1,
+        "borderTopColor": "#DBDBDB",
+        "borderTopWidth": 1,
+        "marginBottom": 20,
         "marginHorizontal": 10,
-        "paddingBottom": 6,
+        "paddingBottom": 10,
         "paddingTop": 10,
       }
     }
@@ -138,6 +144,7 @@ exports[`full article with style in the culture magazine 1`] = `
       Object {
         "alignItems": "center",
         "backgroundColor": "rgba(60, 129, 190, 1)",
+        "marginBottom": -1,
         "paddingBottom": 45,
         "paddingHorizontal": 20,
         "paddingTop": 45,
@@ -216,8 +223,13 @@ exports[`full article with style in the culture magazine 1`] = `
     style={
       Object {
         "alignItems": "center",
+        "borderBottomColor": "#DBDBDB",
+        "borderBottomWidth": 1,
+        "borderTopColor": "#DBDBDB",
+        "borderTopWidth": 1,
+        "marginBottom": 20,
         "marginHorizontal": 10,
-        "paddingBottom": 6,
+        "paddingBottom": 10,
         "paddingTop": 10,
       }
     }
@@ -269,6 +281,7 @@ exports[`full article with style in the style magazine 1`] = `
       Object {
         "alignItems": "center",
         "backgroundColor": "rgba(60, 129, 190, 1)",
+        "marginBottom": -1,
         "paddingBottom": 45,
         "paddingHorizontal": 20,
         "paddingTop": 45,
@@ -347,8 +360,13 @@ exports[`full article with style in the style magazine 1`] = `
     style={
       Object {
         "alignItems": "center",
+        "borderBottomColor": "#DBDBDB",
+        "borderBottomWidth": 1,
+        "borderTopColor": "#DBDBDB",
+        "borderTopWidth": 1,
+        "marginBottom": 20,
         "marginHorizontal": 10,
-        "paddingBottom": 6,
+        "paddingBottom": 10,
         "paddingTop": 10,
       }
     }
@@ -400,6 +418,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
       Object {
         "alignItems": "center",
         "backgroundColor": "rgba(60, 129, 190, 1)",
+        "marginBottom": -1,
         "paddingBottom": 45,
         "paddingHorizontal": 20,
         "paddingTop": 45,
@@ -478,8 +497,13 @@ exports[`full article with style in the sunday times magazine 1`] = `
     style={
       Object {
         "alignItems": "center",
+        "borderBottomColor": "#DBDBDB",
+        "borderBottomWidth": 1,
+        "borderTopColor": "#DBDBDB",
+        "borderTopWidth": 1,
+        "marginBottom": 20,
         "marginHorizontal": 10,
-        "paddingBottom": 6,
+        "paddingBottom": 10,
         "paddingTop": 10,
       }
     }
@@ -531,6 +555,7 @@ exports[`tablet full article with style in the culture magazine 1`] = `
       Object {
         "alignItems": "center",
         "backgroundColor": "rgba(60, 129, 190, 1)",
+        "marginBottom": -1,
         "paddingBottom": 45,
         "paddingHorizontal": 20,
         "paddingTop": 45,
@@ -609,8 +634,13 @@ exports[`tablet full article with style in the culture magazine 1`] = `
     style={
       Object {
         "alignItems": "center",
+        "borderBottomColor": "#DBDBDB",
+        "borderBottomWidth": 1,
+        "borderTopColor": "#DBDBDB",
+        "borderTopWidth": 1,
+        "marginBottom": 20,
         "marginHorizontal": 10,
-        "paddingBottom": 6,
+        "paddingBottom": 10,
         "paddingTop": 10,
       }
     }
@@ -662,6 +692,7 @@ exports[`tablet full article with style in the style magazine 1`] = `
       Object {
         "alignItems": "center",
         "backgroundColor": "rgba(60, 129, 190, 1)",
+        "marginBottom": -1,
         "paddingBottom": 45,
         "paddingHorizontal": 20,
         "paddingTop": 45,
@@ -740,8 +771,13 @@ exports[`tablet full article with style in the style magazine 1`] = `
     style={
       Object {
         "alignItems": "center",
+        "borderBottomColor": "#DBDBDB",
+        "borderBottomWidth": 1,
+        "borderTopColor": "#DBDBDB",
+        "borderTopWidth": 1,
+        "marginBottom": 20,
         "marginHorizontal": 10,
-        "paddingBottom": 6,
+        "paddingBottom": 10,
         "paddingTop": 10,
       }
     }
@@ -793,6 +829,7 @@ exports[`tablet full article with style in the sunday times magazine 1`] = `
       Object {
         "alignItems": "center",
         "backgroundColor": "rgba(60, 129, 190, 1)",
+        "marginBottom": -1,
         "paddingBottom": 45,
         "paddingHorizontal": 20,
         "paddingTop": 45,
@@ -871,8 +908,13 @@ exports[`tablet full article with style in the sunday times magazine 1`] = `
     style={
       Object {
         "alignItems": "center",
+        "borderBottomColor": "#DBDBDB",
+        "borderBottomWidth": 1,
+        "borderTopColor": "#DBDBDB",
+        "borderTopWidth": 1,
+        "marginBottom": 20,
         "marginHorizontal": 10,
-        "paddingBottom": 6,
+        "paddingBottom": 10,
         "paddingTop": 10,
       }
     }

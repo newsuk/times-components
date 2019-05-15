@@ -400,7 +400,8 @@ exports[`full article with style 1`] = `
   -webkit-align-items: center;
   -webkit-box-align: center;
   align-items: center;
-  padding-bottom: 6px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
   padding-top: 10px;
 }
 
@@ -547,7 +548,7 @@ exports[`full article with style 1`] = `
       className="c6 IS6"
     />
     <div
-      className="c2 responsiveweb__HeaderContainer-sc-1nipn43-2 c2 css-view-1dbjc4n r-alignItems-1awozwy r-marginHorizontal-vlx1xi r-paddingBottom-12rqra3 r-paddingTop-m611by S8"
+      className="c2 responsiveweb__HeaderContainer-sc-1nipn43-2 c2 css-view-1dbjc4n r-alignItems-1awozwy r-borderBottomColor-91l5k4 r-borderBottomWidth-qklmqi r-borderTopColor-1ozwgwe r-borderTopWidth-5kkj8d r-marginBottom-117bsoe r-marginHorizontal-vlx1xi r-paddingBottom-1mi0q7o r-paddingTop-m611by S8"
     >
       <div
         className="c7 responsiveweb__MetaContainer-sc-1nipn43-6 c7 css-view-1dbjc4n"
@@ -1080,7 +1081,8 @@ exports[`full article with style in the culture magazine 1`] = `
   -webkit-align-items: center;
   -webkit-box-align: center;
   align-items: center;
-  padding-bottom: 6px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
   padding-top: 10px;
 }
 
@@ -1228,7 +1230,7 @@ exports[`full article with style in the culture magazine 1`] = `
       className="c6 IS6"
     />
     <div
-      className="c2 responsiveweb__HeaderContainer-sc-1nipn43-2 c2 css-view-1dbjc4n r-alignItems-1awozwy r-marginHorizontal-vlx1xi r-paddingBottom-12rqra3 r-paddingTop-m611by S8"
+      className="c2 responsiveweb__HeaderContainer-sc-1nipn43-2 c2 css-view-1dbjc4n r-alignItems-1awozwy r-borderBottomColor-91l5k4 r-borderBottomWidth-qklmqi r-borderTopColor-1ozwgwe r-borderTopWidth-5kkj8d r-marginBottom-117bsoe r-marginHorizontal-vlx1xi r-paddingBottom-1mi0q7o r-paddingTop-m611by S8"
     >
       <div
         className="c7 responsiveweb__MetaContainer-sc-1nipn43-6 c7 css-view-1dbjc4n"
@@ -1761,7 +1763,8 @@ exports[`full article with style in the style magazine 1`] = `
   -webkit-align-items: center;
   -webkit-box-align: center;
   align-items: center;
-  padding-bottom: 6px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
   padding-top: 10px;
 }
 
@@ -1909,7 +1912,7 @@ exports[`full article with style in the style magazine 1`] = `
       className="c6 IS6"
     />
     <div
-      className="c2 responsiveweb__HeaderContainer-sc-1nipn43-2 c2 css-view-1dbjc4n r-alignItems-1awozwy r-marginHorizontal-vlx1xi r-paddingBottom-12rqra3 r-paddingTop-m611by S8"
+      className="c2 responsiveweb__HeaderContainer-sc-1nipn43-2 c2 css-view-1dbjc4n r-alignItems-1awozwy r-borderBottomColor-91l5k4 r-borderBottomWidth-qklmqi r-borderTopColor-1ozwgwe r-borderTopWidth-5kkj8d r-marginBottom-117bsoe r-marginHorizontal-vlx1xi r-paddingBottom-1mi0q7o r-paddingTop-m611by S8"
     >
       <div
         className="c7 responsiveweb__MetaContainer-sc-1nipn43-6 c7 css-view-1dbjc4n"
@@ -2442,7 +2445,8 @@ exports[`full article with style in the sunday times magazine 1`] = `
   -webkit-align-items: center;
   -webkit-box-align: center;
   align-items: center;
-  padding-bottom: 6px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
   padding-top: 10px;
 }
 
@@ -2590,7 +2594,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
       className="c6 IS6"
     />
     <div
-      className="c2 responsiveweb__HeaderContainer-sc-1nipn43-2 c2 css-view-1dbjc4n r-alignItems-1awozwy r-marginHorizontal-vlx1xi r-paddingBottom-12rqra3 r-paddingTop-m611by S8"
+      className="c2 responsiveweb__HeaderContainer-sc-1nipn43-2 c2 css-view-1dbjc4n r-alignItems-1awozwy r-borderBottomColor-91l5k4 r-borderBottomWidth-qklmqi r-borderTopColor-1ozwgwe r-borderTopWidth-5kkj8d r-marginBottom-117bsoe r-marginHorizontal-vlx1xi r-paddingBottom-1mi0q7o r-paddingTop-m611by S8"
     >
       <div
         className="c7 responsiveweb__MetaContainer-sc-1nipn43-6 c7 css-view-1dbjc4n"

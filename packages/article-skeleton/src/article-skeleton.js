@@ -229,6 +229,7 @@ class ArticleSkeleton extends Component {
       onVideoPress,
       receiveChildList,
       isTablet,
+      dropCapFont,
       scale
     } = this.props;
     const { width, flow } = this.state;
@@ -254,6 +255,7 @@ class ArticleSkeleton extends Component {
           onLinkPress,
           onTwitterLinkPress,
           onVideoPress,
+          dropCapFont,
           scale,
           width: Math.min(maxWidth, width)
         })

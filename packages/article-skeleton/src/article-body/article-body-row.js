@@ -9,7 +9,11 @@ import KeyFacts from "@times-components/key-facts";
 import { renderTree } from "@times-components/markup-forest";
 import { flow } from "@times-components/markup";
 import PullQuote from "@times-components/pull-quote";
-import styleguide, { colours, tabletWidth } from "@times-components/styleguide";
+import styleguide, {
+  colours,
+  tabletWidth,
+  fonts
+} from "@times-components/styleguide";
 import { screenWidth } from "@times-components/utils";
 import Video from "@times-components/video";
 import { Layout, Text, MarkupFactory } from "@times-components/text-flow";
@@ -28,6 +32,7 @@ export default ({
   width,
   fontScale,
   isTablet,
+  dropCapFont = "dropCap",
   scale
 }) => {
   const styles = styleFactory(scale);
@@ -70,23 +75,18 @@ export default ({
     dropCap(key, { value }) {
       const height = lineHeight * 3 * fontScale;
       const text = new Text.Text({
-        font: fontFamily,
+        font: fonts[dropCapFont],
         lineHeight: height,
         markup: [new Body(value)],
         size: height
       });
-      const capWidth = text.characters[0].getWidth() + 10;
+      const capWidth = text.characters[0].getWidth() + 10 * fontScale;
       return {
         element: new Layout.InlineBlock({
           getComponent() {
             return (
               <Context.Consumer key={key}>
-                {({
-                  theme: {
-                    dropCapFont,
-                    sectionColour = colours.section.default
-                  }
-                }) => (
+                {({ theme: { sectionColour = colours.section.default } }) => (
                   <DropCap
                     colour={sectionColour}
                     dropCap={value}
@@ -233,12 +233,7 @@ export default ({
           getComponent(spans) {
             return (
               <Context.Consumer key={key}>
-                {({
-                  theme: {
-                    dropCapFont,
-                    sectionColour = colours.section.default
-                  }
-                }) => (
+                {({ theme: { sectionColour = colours.section.default } }) => (
                   <ArticleParagraph
                     ast={node}
                     dropCapColour={sectionColour}
