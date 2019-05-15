@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.6.0](https://github.com/newsuk/times-components/compare/@times-components/ad@2.5.39...@times-components/ad@2.6.0) (2019-05-15)
+
+
+### Features
+
+* make ads 100% width on native platforms ([#1947](https://github.com/newsuk/times-components/issues/1947)) ([eb6c688](https://github.com/newsuk/times-components/commit/eb6c688))
+
+
+
+
+
 ## [2.5.39](https://github.com/newsuk/times-components/compare/@times-components/ad@2.5.38...@times-components/ad@2.5.39) (2019-05-15)
 
 **Note:** Version bump only for package @times-components/ad
