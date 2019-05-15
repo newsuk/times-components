@@ -197,7 +197,9 @@ export default () => {
 
   it("full article with style in the culture magazine", () => {
     const testRenderer = TestRenderer.create(
-      <ContextProviderWithDefaults value={{ ...themeForSection("culture"), user: { isLoggedIn: true } }}>
+      <ContextProviderWithDefaults
+        value={{ ...themeForSection("culture"), user: { isLoggedIn: true } }}
+      >
         <ArticleMagazineComment {...sharedProps} article={article} />
       </ContextProviderWithDefaults>
     );
@@ -207,7 +209,9 @@ export default () => {
 
   it("full article with style in the style magazine", () => {
     const testRenderer = TestRenderer.create(
-      <ContextProviderWithDefaults value={{ ...themeForSection("style"), user: { isLoggedIn: true } }}>
+      <ContextProviderWithDefaults
+        value={{ ...themeForSection("style"), user: { isLoggedIn: true } }}
+      >
         <ArticleMagazineComment {...sharedProps} article={article} />
       </ContextProviderWithDefaults>
     );
@@ -218,7 +222,10 @@ export default () => {
   it("full article with style in the sunday times magazine", () => {
     const testRenderer = TestRenderer.create(
       <ContextProviderWithDefaults
-        value={{ ...themeForSection("thesundaytimesmagazine"), user: { isLoggedIn: true } }}
+        value={{
+          ...themeForSection("thesundaytimesmagazine"),
+          user: { isLoggedIn: true }
+        }}
       >
         <ArticleMagazineComment {...sharedProps} article={article} />
       </ContextProviderWithDefaults>

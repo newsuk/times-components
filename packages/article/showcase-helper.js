@@ -206,71 +206,71 @@ const renderArticle = ({
   template,
   isTeaser
 }) => (
-    <ArticleProvider debounceTimeMs={0} id={id}>
-      {({ article, error, refetch }) => {
-        if (!article) {
-          return null;
-        }
+  <ArticleProvider debounceTimeMs={0} id={id}>
+    {({ article, error, refetch }) => {
+      if (!article) {
+        return null;
+      }
 
-        const data = {
-          ...article,
-          backgroundColour: inDepthBackgroundColour,
-          descriptionMarkup: [article.content.find(m => m.name === "paragraph")],
-          template,
-          textColour: inDepthTextColour
-        };
+      const data = {
+        ...article,
+        backgroundColour: inDepthBackgroundColour,
+        descriptionMarkup: [article.content.find(m => m.name === "paragraph")],
+        template,
+        textColour: inDepthTextColour
+      };
 
-        return (
-          <ContextProviderWithDefaults
-            value={{
-              theme: {
-                ...themeFactory(section, template),
-                scale: scale || defaults.theme.scale
-              },
-              user: {
-                isLoggedIn: !isTeaser
-              }
-            }}
-          >
-            <MessageManager animate delay={30000} scale={scales.medium}>
-              <Article
-                adConfig={adConfig}
-                analyticsStream={analyticsStream}
-                article={data}
-                error={error}
-                isLoading={false}
-                onAuthorPress={preventDefaultedAction(decorateAction)(
-                  "onAuthorPress"
-                )}
-                onCommentGuidelinesPress={preventDefaultedAction(decorateAction)(
-                  "onCommentGuidelinesPress"
-                )}
-                onCommentsPress={preventDefaultedAction(decorateAction)(
-                  "onCommentsPress"
-                )}
-                onLinkPress={preventDefaultedAction(decorateAction)(
-                  "onLinkPress"
-                )}
-                onRelatedArticlePress={preventDefaultedAction(decorateAction)(
-                  "onRelatedArticlePress"
-                )}
-                onTopicPress={preventDefaultedAction(decorateAction)(
-                  "onTopicPress"
-                )}
-                onTwitterLinkPress={preventDefaultedAction(decorateAction)(
-                  "onTwitterLinkPress"
-                )}
-                onVideoPress={preventDefaultedAction(decorateAction)(
-                  "onVideoPress"
-                )}
-                refetch={refetch}
-              />
-            </MessageManager>
-          </ContextProviderWithDefaults>
-        );
-      }}
-    </ArticleProvider>
-  );
+      return (
+        <ContextProviderWithDefaults
+          value={{
+            theme: {
+              ...themeFactory(section, template),
+              scale: scale || defaults.theme.scale
+            },
+            user: {
+              isLoggedIn: !isTeaser
+            }
+          }}
+        >
+          <MessageManager animate delay={30000} scale={scales.medium}>
+            <Article
+              adConfig={adConfig}
+              analyticsStream={analyticsStream}
+              article={data}
+              error={error}
+              isLoading={false}
+              onAuthorPress={preventDefaultedAction(decorateAction)(
+                "onAuthorPress"
+              )}
+              onCommentGuidelinesPress={preventDefaultedAction(decorateAction)(
+                "onCommentGuidelinesPress"
+              )}
+              onCommentsPress={preventDefaultedAction(decorateAction)(
+                "onCommentsPress"
+              )}
+              onLinkPress={preventDefaultedAction(decorateAction)(
+                "onLinkPress"
+              )}
+              onRelatedArticlePress={preventDefaultedAction(decorateAction)(
+                "onRelatedArticlePress"
+              )}
+              onTopicPress={preventDefaultedAction(decorateAction)(
+                "onTopicPress"
+              )}
+              onTwitterLinkPress={preventDefaultedAction(decorateAction)(
+                "onTwitterLinkPress"
+              )}
+              onVideoPress={preventDefaultedAction(decorateAction)(
+                "onVideoPress"
+              )}
+              refetch={refetch}
+            />
+          </MessageManager>
+        </ContextProviderWithDefaults>
+      );
+    }}
+  </ArticleProvider>
+);
 
 const templateNames = Object.keys(templates).reduce(
   (t, key) => ({ ...t, [key]: key }),
@@ -315,9 +315,11 @@ const renderArticleConfig = ({
       ? { rgba: { alpha: 1, blue: 255, green: 255, red: 255 } }
       : null;
 
+  /* eslint-disable no-undef */
   window.nuk = window.nuk || {};
-  window.nuk.user = { isLoggedIn: !(isTeaser || withTeaser) }
-  
+  window.nuk.user = { isLoggedIn: !(isTeaser || withTeaser) };
+  /* eslint-enable no-undef */
+
   return (
     <Fragment>
       {link}
