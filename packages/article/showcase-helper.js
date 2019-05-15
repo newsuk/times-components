@@ -315,6 +315,11 @@ const renderArticleConfig = ({
       ? { rgba: { alpha: 1, blue: 255, green: 255, red: 255 } }
       : null;
 
+  /* eslint-disable no-undef */
+  window.nuk = window.nuk || {};
+  window.nuk.user = { isLoggedIn: !(isTeaser || withTeaser) };
+  /* eslint-enable no-undef */
+
   return (
     <Fragment>
       {link}

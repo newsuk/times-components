@@ -166,9 +166,28 @@ export default () => {
   // eslint-disable-next-line global-require
   require("jest-styled-components");
 
+  beforeEach(() => {
+    const nuk = {
+      user: {
+        isLoggedIn: true
+      }
+    };
+    global.nuk = nuk;
+  });
+
+  afterEach(() => {
+    global.nuk = {};
+  });
+
   it("full article with style", () => {
     const testRenderer = TestRenderer.create(
-      <ArticleMagazineStandard {...sharedProps} article={article} />
+      <ContextProviderWithDefaults
+        value={{
+          user: { isLoggedIn: true }
+        }}
+      >
+        <ArticleMagazineStandard {...sharedProps} article={article} />
+      </ContextProviderWithDefaults>
     );
 
     expect(testRenderer).toMatchSnapshot();
@@ -176,7 +195,9 @@ export default () => {
 
   it("full article with style in the culture magazine", () => {
     const testRenderer = TestRenderer.create(
-      <ContextProviderWithDefaults value={themeForSection("culture")}>
+      <ContextProviderWithDefaults
+        value={{ ...themeForSection("culture"), user: { isLoggedIn: true } }}
+      >
         <ArticleMagazineStandard {...sharedProps} article={article} />
       </ContextProviderWithDefaults>
     );
@@ -186,7 +207,9 @@ export default () => {
 
   it("full article with style in the style magazine", () => {
     const testRenderer = TestRenderer.create(
-      <ContextProviderWithDefaults value={themeForSection("style")}>
+      <ContextProviderWithDefaults
+        value={{ ...themeForSection("style"), user: { isLoggedIn: true } }}
+      >
         <ArticleMagazineStandard {...sharedProps} article={article} />
       </ContextProviderWithDefaults>
     );
@@ -197,7 +220,10 @@ export default () => {
   it("full article with style in the sunday times magazine", () => {
     const testRenderer = TestRenderer.create(
       <ContextProviderWithDefaults
-        value={themeForSection("thesundaytimesmagazine")}
+        value={{
+          ...themeForSection("thesundaytimesmagazine"),
+          user: { isLoggedIn: true }
+        }}
       >
         <ArticleMagazineStandard {...sharedProps} article={article} />
       </ContextProviderWithDefaults>

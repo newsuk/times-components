@@ -70,6 +70,13 @@ iterator([
         ]
       });
 
+      const nuk = {
+        user: {
+          isLoggedIn: true
+        }
+      };
+      window.nuk = nuk;
+
       const testRenderer = TestRenderer.create(
         <ArticleSkeleton
           adConfig={adConfig}
@@ -128,6 +135,13 @@ iterator([
         ]
       });
 
+      const nuk = {
+        user: {
+          isLoggedIn: true
+        }
+      };
+      window.nuk = nuk;
+
       const testRenderer = TestRenderer.create(
         <ArticleSkeleton
           adConfig={adConfig}
@@ -164,6 +178,13 @@ iterator([
       const article = articleFixture({
         ...testFixture
       });
+
+      const nuk = {
+        user: {
+          isLoggedIn: true
+        }
+      };
+      window.nuk = nuk;
 
       const testRenderer = TestRenderer.create(
         <ArticleSkeleton

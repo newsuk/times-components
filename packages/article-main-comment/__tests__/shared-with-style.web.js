@@ -12,6 +12,7 @@ import {
   stylePrinter
 } from "@times-components/jest-serializer";
 import "./mocks.web";
+import { ContextProviderWithDefaults } from "@times-components/context";
 import ArticleMainComment from "../src/article-main-comment";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import sharedProps from "./shared-props";
@@ -48,6 +49,19 @@ export default () => {
 
   // eslint-disable-next-line global-require
   require("jest-styled-components");
+
+  beforeEach(() => {
+    const nuk = {
+      user: {
+        isLoggedIn: true
+      }
+    };
+    global.nuk = nuk;
+  });
+
+  afterEach(() => {
+    global.nuk = {};
+  });
 
   it("full article with style", () => {
     const article = articleFixture({
@@ -161,7 +175,13 @@ export default () => {
     });
 
     const testRenderer = TestRenderer.create(
-      <ArticleMainComment {...sharedProps} article={article} />
+      <ContextProviderWithDefaults
+        value={{
+          user: { isLoggedIn: true }
+        }}
+      >
+        <ArticleMainComment {...sharedProps} article={article} />
+      </ContextProviderWithDefaults>
     );
 
     expect(testRenderer).toMatchSnapshot();

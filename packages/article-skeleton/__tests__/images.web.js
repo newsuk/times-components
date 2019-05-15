@@ -30,5 +30,18 @@ export default () => {
     )
   );
 
+  beforeEach(() => {
+    const nuk = {
+      user: {
+        isLoggedIn: true
+      }
+    };
+    global.nuk = nuk;
+  });
+
+  afterEach(() => {
+    global.nuk = {};
+  });
+
   shared();
 };

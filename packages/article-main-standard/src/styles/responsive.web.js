@@ -70,11 +70,15 @@ export const MetaContainer = styled(View)`
 
 export const LeadAsset = styled(ArticleLeadAsset)`
   order: 1;
-  margin-bottom: ${spacing(2)};
+  margin-bottom: ${spacing(4)};
+
+  @media (min-width: ${breakpoints.medium}px) {
+    margin-bottom: ${spacing(6)};
+  }
 
   @media (min-width: ${breakpoints.wide}px) {
     width: 56.2%;
-    margin: 0 auto;
+    margin: 0 auto ${spacing(6)};
     order: 2;
   }
 `;

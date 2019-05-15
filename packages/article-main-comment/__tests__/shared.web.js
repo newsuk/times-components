@@ -28,5 +28,18 @@ export default () => {
     )
   );
 
+  beforeEach(() => {
+    const nuk = {
+      user: {
+        isLoggedIn: false
+      }
+    };
+    global.nuk = nuk;
+  });
+
+  afterEach(() => {
+    global.nuk = {};
+  });
+
   shared(TestRenderer.create);
 };
