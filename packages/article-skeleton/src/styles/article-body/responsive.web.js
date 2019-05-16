@@ -10,7 +10,7 @@ import {
 
 /* --- Body --- */
 
-export const ParagraphContainer = styled("div")`
+export const ParagraphContainer = styled.div`
   padding-left: ${spacing(2)};
   padding-right: ${spacing(2)};
 
@@ -26,7 +26,7 @@ export const ParagraphContainer = styled("div")`
   }
 `;
 
-export const Paragraph = styled("p")`
+export const Paragraph = styled.p`
   color: ${colours.functional.primary};
   font-family: "${fonts.bodyRegular}";
   line-height: 26px;
@@ -41,7 +41,7 @@ export const Paragraph = styled("p")`
   }
 `;
 
-export const InteractiveContainer = styled("div")`
+export const InteractiveContainer = styled.div`
   padding-left: ${spacing(2)};
   padding-right: ${spacing(2)};
   margin-bottom: ${spacing(4)};

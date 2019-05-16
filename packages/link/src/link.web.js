@@ -4,7 +4,7 @@ import { breakpoints } from "@times-components/styleguide";
 import PropTypes from "prop-types";
 
 const RespLink = responsiveLinkStyles =>
-  styled("a")`
+  styled.a`
     ${responsiveLinkStyles.base} @media (min-width: ${breakpoints.medium}px) {
       ${responsiveLinkStyles.medium};
     }

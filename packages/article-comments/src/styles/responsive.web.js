@@ -7,7 +7,7 @@ import {
   spacing
 } from "@times-components/styleguide";
 
-export const CommentContainer = styled("div")`
+export const CommentContainer = styled.div`
   margin-left: auto;
   margin-right: auto;
 
@@ -20,7 +20,7 @@ export const CommentContainer = styled("div")`
   }
 `;
 
-export const CommentEnabledGuidelines = styled("p")`
+export const CommentEnabledGuidelines = styled.p`
   color: ${colours.functional.secondary};
   font-family: "${fonts.supporting}";
   font-size: ${fontSizes.commentsGuidelines}px;
@@ -29,7 +29,7 @@ export const CommentEnabledGuidelines = styled("p")`
   padding-top: ${spacing(6)};
 `;
 
-export const CommentDisabledGuidelines = styled("p")`
+export const CommentDisabledGuidelines = styled.p`
   color: ${colours.functional.secondary};
   font-family: "${fonts.supporting}";
   font-size: ${fontSizes.commentsGuidelines}px;
@@ -39,7 +39,7 @@ export const CommentDisabledGuidelines = styled("p")`
   text-align: center;
 `;
 
-export const CommentDisabledHeadline = styled("p")`
+export const CommentDisabledHeadline = styled.p`
   color: ${colours.functional.primary};
   font-family: "${fonts.headline}";
   font-size: ${fontSizes.commentsHeadline}px;
