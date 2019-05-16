@@ -1,22 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. list two and six no pic - small 1`] = `
-<View
-  style={
-    Object {
-      "flex": 1,
-      "flexDirection": "row",
-      "marginHorizontal": 10,
-    }
-  }
->
-  <View
-    style={
-      Object {
-        "flex": 1,
-      }
-    }
-  >
+<View>
+  <View>
     <Text>
       lead-1
     </Text>
@@ -31,13 +17,7 @@ exports[`1. list two and six no pic - small 1`] = `
       }
     }
   />
-  <View
-    style={
-      Object {
-        "flex": 1,
-      }
-    }
-  >
+  <View>
     <Text>
       lead-2
     </Text>
@@ -52,28 +32,9 @@ exports[`1. list two and six no pic - small 1`] = `
       }
     }
   />
-  <View
-    style={
-      Object {
-        "width": "50%",
-      }
-    }
-  >
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "flexDirection": "row",
-        }
-      }
-    >
-      <View
-        style={
-          Object {
-            "width": "50%",
-          }
-        }
-      >
+  <View>
+    <View>
+      <View>
         <Text>
           support-1
         </Text>
@@ -88,13 +49,7 @@ exports[`1. list two and six no pic - small 1`] = `
           }
         }
       />
-      <View
-        style={
-          Object {
-            "width": "50%",
-          }
-        }
-      >
+      <View>
         <Text>
           support-2
         </Text>
@@ -110,21 +65,8 @@ exports[`1. list two and six no pic - small 1`] = `
         }
       }
     />
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "flexDirection": "row",
-        }
-      }
-    >
-      <View
-        style={
-          Object {
-            "width": "50%",
-          }
-        }
-      >
+    <View>
+      <View>
         <Text>
           support-3
         </Text>
@@ -139,13 +81,7 @@ exports[`1. list two and six no pic - small 1`] = `
           }
         }
       />
-      <View
-        style={
-          Object {
-            "width": "50%",
-          }
-        }
-      >
+      <View>
         <Text>
           support-4
         </Text>
@@ -161,21 +97,8 @@ exports[`1. list two and six no pic - small 1`] = `
         }
       }
     />
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "flexDirection": "row",
-        }
-      }
-    >
-      <View
-        style={
-          Object {
-            "width": "50%",
-          }
-        }
-      >
+    <View>
+      <View>
         <Text>
           support-5
         </Text>
@@ -190,13 +113,7 @@ exports[`1. list two and six no pic - small 1`] = `
           }
         }
       />
-      <View
-        style={
-          Object {
-            "width": "50%",
-          }
-        }
-      >
+      <View>
         <Text>
           support-6
         </Text>

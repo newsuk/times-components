@@ -58,7 +58,7 @@ const ListTwoAndSixNoPic = ({
             { style: styles.supportItem, tile: support2 }
           ]}
         />
-        <ItemRowSeparator />
+        <ItemRowSeparator style={styles.separator} />
         <HorizontalLayout
           containerStyle={styles.supportContainer}
           tiles={[
@@ -66,7 +66,7 @@ const ListTwoAndSixNoPic = ({
             { style: styles.supportItem, tile: support4 }
           ]}
         />
-        <ItemRowSeparator />
+        <ItemRowSeparator style={styles.separator} />
         <HorizontalLayout
           containerStyle={styles.supportContainer}
           tiles={[
