@@ -1,6 +1,6 @@
 {
   "name": "@times-components/tealium",
-  "version": "1.13.9",
+  "version": "1.13.10",
   "description": "React component for tealium reporter",
   "main": "dist",
   "dev": "src",

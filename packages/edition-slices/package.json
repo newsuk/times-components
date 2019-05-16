@@ -1,6 +1,6 @@
 {
   "name": "@times-components/edition-slices",
-  "version": "0.59.3",
+  "version": "0.59.4",
   "description": "Components used in edition pages including slices and tiles",
   "main": "dist/edition-slices",
   "dev": "src/edition-slices",
@@ -48,7 +48,7 @@
     "@times-components/slice-layout": "0.29.0",
     "@times-components/star-button": "0.1.36",
     "@times-components/styleguide": "3.28.15",
-    "@times-components/tracking": "2.4.35",
+    "@times-components/tracking": "2.4.36",
     "prop-types": "15.7.2"
   },
   "devDependencies": {

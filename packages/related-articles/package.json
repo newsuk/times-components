@@ -1,6 +1,6 @@
 {
   "name": "@times-components/related-articles",
-  "version": "6.0.24",
+  "version": "6.0.25",
   "description": "related articles of an article",
   "main": "dist/related-articles",
   "dev": "src/related-articles",
@@ -41,7 +41,7 @@
     "@times-components/jest-serializer": "3.2.5",
     "@times-components/mocks": "0.0.10",
     "@times-components/storybook": "4.0.6",
-    "@times-components/tealium-utils": "0.7.47",
+    "@times-components/tealium-utils": "0.7.48",
     "@times-components/test-utils": "2.2.41",
     "@times-components/webpack-configurator": "2.0.20",
     "babel-core": "^7.0.0-bridge.0",
@@ -73,7 +73,7 @@
     "@times-components/markup-forest": "1.7.9",
     "@times-components/slice-layout": "0.29.0",
     "@times-components/styleguide": "3.28.15",
-    "@times-components/tracking": "2.4.35",
+    "@times-components/tracking": "2.4.36",
     "lodash.get": "4.4.2",
     "prop-types": "15.7.2"
   },
