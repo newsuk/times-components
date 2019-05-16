@@ -167,13 +167,14 @@ class ArticleSkeleton extends Component {
                           topicsAllowed={user.isLoggedIn}
                           width={articleWidth}
                         />
-                        {(savingEnabled || sharingEnabled) && this.renderSaveAndShareBar({
-                          articleId,
-                          headline,
-                          url,
-                          isSticky,
-                          allowSaveAndShare: user.isLoggedIn
-                        })}
+                        {(savingEnabled || sharingEnabled) &&
+                          this.renderSaveAndShareBar({
+                            articleId,
+                            headline,
+                            url,
+                            isSticky,
+                            allowSaveAndShare: user.isLoggedIn
+                          })}
                         <BodyContainer>
                           <ArticleBody
                             content={newContent}
