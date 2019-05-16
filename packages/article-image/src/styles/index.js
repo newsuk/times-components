@@ -21,6 +21,7 @@ const styles = StyleSheet.create({
   },
   fullwidthContainer: {
     marginBottom: spacing(2),
+    marginHorizontal: "auto",
     maxWidth: tabletWidthMax
   },
   inlineCaption: {

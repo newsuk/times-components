@@ -1,6 +1,140 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. a secondary image 1`] = `
+exports[`1. a primary image 1`] = `
+<View>
+  <RCTScrollView
+    ListHeaderComponent={
+      <Gutter>
+        <Header
+          width={750}
+        />
+      </Gutter>
+    }
+    initialListSize={10}
+    initialNumToRender={10}
+    maxToRenderPerBatch={10}
+    nestedScrollEnabled={true}
+    numColumns={1}
+    onEndReachedThreshold={2}
+    pageSize={1}
+    removeClippedSubviews={true}
+    scrollEventThrottle={50}
+    scrollRenderAheadDistance={10}
+    updateCellsBatchingPeriod={50}
+    windowSize={21}
+  >
+    <View>
+      <View>
+        <View />
+      </View>
+      <View>
+        <View>
+          <View>
+            <ArticleImage
+              captionOptions={
+                Object {
+                  "caption": "A Caption",
+                  "credits": "Some Credits",
+                }
+              }
+              imageOptions={
+                Object {
+                  "display": "primary",
+                  "ratio": "3:2",
+                  "uri": "https://image-2.io",
+                }
+              }
+            />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View />
+      </View>
+      <View>
+        <View />
+      </View>
+      <View>
+        <View>
+          <ArticleExtras
+            articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+            articleUrl="https://url.io"
+          />
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
+
+exports[`2. a fullwidth image 1`] = `
+<View>
+  <RCTScrollView
+    ListHeaderComponent={
+      <Gutter>
+        <Header
+          width={750}
+        />
+      </Gutter>
+    }
+    initialListSize={10}
+    initialNumToRender={10}
+    maxToRenderPerBatch={10}
+    nestedScrollEnabled={true}
+    numColumns={1}
+    onEndReachedThreshold={2}
+    pageSize={1}
+    removeClippedSubviews={true}
+    scrollEventThrottle={50}
+    scrollRenderAheadDistance={10}
+    updateCellsBatchingPeriod={50}
+    windowSize={21}
+  >
+    <View>
+      <View>
+        <View />
+      </View>
+      <View>
+        <View>
+          <View>
+            <ArticleImage
+              captionOptions={
+                Object {
+                  "caption": "A Caption",
+                  "credits": "Some Credits",
+                }
+              }
+              imageOptions={
+                Object {
+                  "display": "fullwidth",
+                  "ratio": "3:2",
+                  "uri": "https://image-2.io",
+                }
+              }
+            />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View />
+      </View>
+      <View>
+        <View />
+      </View>
+      <View>
+        <View>
+          <ArticleExtras
+            articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+            articleUrl="https://url.io"
+          />
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
+
+exports[`3. a secondary image 1`] = `
 <View>
   <RCTScrollView
     ListHeaderComponent={
@@ -67,7 +201,7 @@ exports[`1. a secondary image 1`] = `
 </View>
 `;
 
-exports[`2. an inline image 1`] = `
+exports[`4. an inline image 1`] = `
 <View>
   <RCTScrollView
     ListHeaderComponent={
