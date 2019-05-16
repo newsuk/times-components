@@ -18,7 +18,7 @@ Everything should be generated at `install` time but you can regenerate by
 running something like:
 
 ```bash
-GRAPHQL_ENDPOINT='my.endpoint.io/graphql' yarn postinstall
+GRAPHQL_ENDPOINT='my.endpoint.io/graphql' yarn build:schema
 ```
 
 ## Contributing
