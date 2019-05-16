@@ -2,4 +2,4 @@
 module.exports = require('./babel.config')({
   cache: () => {},
   env: () => process.env.NODE_ENV
-})
+});
