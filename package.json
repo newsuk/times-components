@@ -32,7 +32,6 @@
     "prestorybook:test-build": "yarn storybook:build-vendor",
     "storybook:test-build": "build-storybook -c .storybook -s ./dist/public",
     "storybook:publish": "./lib/publish_storybook.sh",
-    "prestorybook-native": "rnstl",
     "storybook-native": "cd storybook-native && yarn start",
     "ios": "react-native run-ios --no-packager",
     "ios:logs": "yarn ios && react-native log-ios",
@@ -77,13 +76,6 @@
     ]
   },
   "config": {
-    "react-native-storybook-loader": {
-      "searchDir": [
-        "./packages"
-      ],
-      "pattern": "!(brightcove-video)/*.stories!(.web).js",
-      "outputFile": "./storybook-native/story-loader.js"
-    },
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
@@ -153,7 +145,6 @@
     "prop-types": "15.7.2",
     "react": "16.6.3",
     "react-dom": "16.6.3",
-    "react-native-storybook-loader": "1.8.0",
     "react-native-web": "0.11.2",
     "react-native-web-image-loader": "0.0.6",
     "rimraf": "2.6.1",

@@ -6,7 +6,17 @@
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
+    "postinstall": "rnstl",
     "start": "react-native start"
+  },
+  "config": {
+    "react-native-storybook-loader": {
+      "searchDir": [
+        "../packages"
+      ],
+      "pattern": "!(brightcove-video)/*.stories!(.web).js",
+      "outputFile": "./story-loader.js"
+    }
   },
   "dependencies": {
     "@times-components/storybook": "4.0.6",
@@ -27,6 +37,7 @@
   "devDependencies": {
     "metro-react-native-babel-preset": "0.53.1",
     "prettier": "1.14.3",
+    "react-native-storybook-loader": "1.8.0",
     "webpack": "4.30.0"
   },
   "private": true
