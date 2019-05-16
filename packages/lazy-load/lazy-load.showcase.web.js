@@ -3,7 +3,7 @@ import styled from "styled-components";
 import LazyLoad from "./src/lazy-load";
 
 const list = new Array(50).fill(0).map((_, indx) => `node-${indx}`);
-const ListElement = styled.li`
+const ListElement = styled("li")`
   align-items: center;
   border: 2px solid white;
   display: flex;

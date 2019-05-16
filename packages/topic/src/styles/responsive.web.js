@@ -50,7 +50,7 @@ export const HeadContainer = styled(View)`
   }
 `;
 
-export const ResponsiveName = styled.h1`
+export const ResponsiveName = styled("h1")`
   font-family: "${fonts.headline}";
   font-size: ${fontSizes.pageHeadline}px;
   color: ${colours.functional.brandColour};

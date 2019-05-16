@@ -21,7 +21,7 @@ const dropCapTopPaddings = {
   styleMagazine: { bottom: 10, top: 0 }
 };
 
-export const Paragraph = styled.p`
+export const Paragraph = styled("p")`
   color: ${colours.functional.primary};
   display: block;
   font-family: "${fonts.bodyRegular}";
@@ -44,7 +44,7 @@ export const Paragraph = styled.p`
   }
 `;
 
-export const dropCap = (font = "dropCap") => styled.span`
+export const dropCap = (font = "dropCap") => styled("span")`
   float: left;
   -webkit-margin-before: 11px !important;
   padding: ${dropCapTopPaddings[font].top}px 10px ${

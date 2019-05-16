@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export default styled.img`
+export default styled("img")`
   display: block;
   opacity: ${({ isLoaded }) => (isLoaded ? 1 : 0)};
   position: absolute;
