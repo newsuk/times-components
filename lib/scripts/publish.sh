@@ -67,4 +67,4 @@ lerna publish --conventional-commits --yes --concurrency=1 --exact -m "$MESSAGE"
 echo "Pushing to master"
 git push origin master --tags --quiet > /dev/null 2>&1
 
-./lib/publish_storybook.sh
+./lib/scripts/publish_storybook.sh
