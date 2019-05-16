@@ -57,7 +57,7 @@ class ArticleSkeleton extends Component {
   }
 
   handleScroll() {
-    if (this.stick) {
+    if (this.sticky) {
       const offsetTop = this.sticky.getBoundingClientRect().top;
       const isSticky = isStickyAllowed(breakpoints.huge) && offsetTop <= 1;
 
@@ -70,7 +70,9 @@ class ArticleSkeleton extends Component {
     headline,
     url,
     isSticky,
-    allowSaveAndShare
+    allowSaveAndShare,
+    savingEnabled,
+    sharingEnabled
   }) {
     if (!allowSaveAndShare) return null;
 
@@ -90,6 +92,8 @@ class ArticleSkeleton extends Component {
               onSaveToMyArticles={() => {}}
               onShareOnEmail={() => {}}
               saveApi={saveApi}
+              savingEnabled={savingEnabled}
+              sharingEnabled={sharingEnabled}
             />
           </div>
         </SaveShareRefContainer>
@@ -173,7 +177,9 @@ class ArticleSkeleton extends Component {
                             headline,
                             url,
                             isSticky,
-                            allowSaveAndShare: user.isLoggedIn
+                            allowSaveAndShare: user.isLoggedIn,
+                            savingEnabled,
+                            sharingEnabled
                           })}
                         <BodyContainer>
                           <ArticleBody

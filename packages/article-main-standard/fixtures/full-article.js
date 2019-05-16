@@ -1424,8 +1424,8 @@ const defaultRelatedArticleSlice = {
         publicationName: "TIMES",
         publishedTime: "2015-03-23T19:39:39.000Z",
         section: "",
-        savingEnabled: true,
-        sharingEnabled: true,
+        savingEnabled: false,
+        sharingEnabled: false,
         shortHeadline: "Pratchett’s law of the jungle",
         summary105: [
           {
