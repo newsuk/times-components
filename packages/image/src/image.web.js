@@ -81,6 +81,7 @@ class TimesImage extends Component {
   render() {
     const {
       aspectRatio,
+      disablePlaceholder,
       highResSize,
       lowResSize,
       style,
@@ -101,7 +102,7 @@ class TimesImage extends Component {
         >
           {this.highResImage({ highResSize, lowResSize, url })}
           {this.lowResImage({ lowResSize, url })}
-          {imageIsLoaded ? null : (
+          {disablePlaceholder || imageIsLoaded ? null : (
             <Placeholder borderRadius={rounded ? "50%" : 0} />
           )}
         </div>

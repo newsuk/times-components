@@ -70,6 +70,21 @@ export default () => {
       }
     },
     {
+      name: "with disabled placeholder",
+      test: () => {
+        const testRenderer = TestRenderer.create(
+          <Image
+            aspectRatio={2}
+            disablePlaceholder
+            highResSize={1400}
+            uri="https://image.io"
+          />
+        );
+
+        expect(testRenderer).toMatchSnapshot();
+      }
+    },
+    {
       name:
         "remove the low res image after the high res image has transitioned in",
       test: () => {

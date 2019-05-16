@@ -112,6 +112,7 @@ exports[`card with reversed layout 1`] = `
   >
     <TimesImage
       aspectRatio={0.6666666666666666}
+      disablePlaceholder={false}
       fadeImageIn={false}
       highResSize={600}
       lowResSize={30}

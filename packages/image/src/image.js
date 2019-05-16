@@ -58,22 +58,32 @@ class TimesImage extends Component {
   }
 
   handleLoad() {
+    const { disablePlaceholder } = this.props;
+
     clearTimeout(this.fadeAnimTimeout);
 
-    Animated.timing(this.fadeAnim, {
-      toValue: 0,
-      duration: FADE_ANIM_DURATION,
-      useNativeDriver: true
-    }).start();
-
-    this.fadeAnimTimeout = setTimeout(() => {
+    const done = () => {
       this.setState({ isLoaded: true });
-    }, FADE_ANIM_DURATION);
+    };
+
+    if (disablePlaceholder) {
+      this.fadeAnim.setValue(1);
+      done();
+    } else {
+      Animated.timing(this.fadeAnim, {
+        toValue: 0,
+        duration: FADE_ANIM_DURATION,
+        useNativeDriver: true
+      }).start();
+
+      this.fadeAnimTimeout = setTimeout(done, FADE_ANIM_DURATION);
+    }
   }
 
   render() {
     const {
       aspectRatio,
+      disablePlaceholder,
       highResSize,
       lowResSize,
       style,
@@ -89,6 +99,9 @@ class TimesImage extends Component {
       : null;
     const radius = width ? width / 2 : 9999;
     const borderRadius = rounded ? radius : 0;
+    const placeholder = disablePlaceholder ? null : (
+      <Placeholder borderRadius={borderRadius} />
+    );
 
     return (
       <View
@@ -119,7 +132,7 @@ class TimesImage extends Component {
                 />
               </View>
             ) : (
-              <Placeholder borderRadius={borderRadius} />
+              placeholder
             )}
           </Animated.View>
         )}

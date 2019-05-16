@@ -287,7 +287,28 @@ exports[`7. with existing url params 1`] = `
 </div>
 `;
 
-exports[`8. remove the low res image after the high res image has transitioned in 1`] = `
+exports[`8. with disabled placeholder 1`] = `
+.c0 {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  width: 100%;
+  z-index: 2;
+}
+
+<div>
+  <div>
+    <img
+      alt=""
+      src="https://image.io?resize=1400"
+    />
+  </div>
+</div>
+`;
+
+exports[`9. remove the low res image after the high res image has transitioned in 1`] = `
 .c1 {
   display: block;
   opacity: 1;
@@ -322,7 +343,7 @@ exports[`8. remove the low res image after the high res image has transitioned i
 </div>
 `;
 
-exports[`8. remove the low res image after the high res image has transitioned in 2`] = `
+exports[`9. remove the low res image after the high res image has transitioned in 2`] = `
 .c0 {
   display: block;
   opacity: 1;
@@ -343,7 +364,7 @@ exports[`8. remove the low res image after the high res image has transitioned i
 </div>
 `;
 
-exports[`9. only a low res image 1`] = `
+exports[`10. only a low res image 1`] = `
 .c0 {
   display: block;
   opacity: 1;
@@ -384,7 +405,7 @@ exports[`9. only a low res image 1`] = `
 </div>
 `;
 
-exports[`10. fade in the low res image 1`] = `
+exports[`11. fade in the low res image 1`] = `
 .c0 {
   display: block;
   opacity: 0;
@@ -425,7 +446,7 @@ exports[`10. fade in the low res image 1`] = `
 </div>
 `;
 
-exports[`10. fade in the low res image 2`] = `
+exports[`11. fade in the low res image 2`] = `
 .c0 {
   display: block;
   opacity: 1;
@@ -446,7 +467,7 @@ exports[`10. fade in the low res image 2`] = `
 </div>
 `;
 
-exports[`11. both high and low res sizes 1`] = `
+exports[`12. both high and low res sizes 1`] = `
 .c0 {
   display: block;
   opacity: 0;
