@@ -8,7 +8,6 @@ exports[`1. article in depth - tablet 1`] = `
         "alignItems": "center",
         "alignSelf": "center",
         "backgroundColor": "rgba(60, 129, 190, 1)",
-        "marginBottom": -1,
         "maxWidth": 1194,
         "paddingBottom": 45,
         "paddingHorizontal": 20,
