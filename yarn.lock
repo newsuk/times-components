@@ -16490,10 +16490,10 @@ react-native-swipe-gestures@^1.0.2:
   resolved "https://registry.yarnpkg.com/react-native-swipe-gestures/-/react-native-swipe-gestures-1.0.3.tgz#4160f8d459627323f3a3d2770af4bcd82fd054f5"
   integrity sha512-KOouRzPB2fHFjVombsSdRfYo8SFeNVa4Ho4B5il87DuuF26sPNOtb3je+qaT/xVptedOsCzRPJGbWFMsaBApgg==
 
-react-native-web-image-loader@0.0.6:
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/react-native-web-image-loader/-/react-native-web-image-loader-0.0.6.tgz#4c8a6d100838b7b975de05bd27f90fc09e71c247"
-  integrity sha512-/iaPKhL2uIaCa1aCnXqP8hxPfbJlztoa0izXNOeBoqYV7315qf5nyR7TUqdPEb9cKPEPFB87JdyIls9dEmHfPQ==
+react-native-web-image-loader@0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/react-native-web-image-loader/-/react-native-web-image-loader-0.0.7.tgz#4055a3b2e0c0fc8b0ccc2273d46a153e29ac5e85"
+  integrity sha512-OKEtqosNF5ow7X2bZT2DgEpVBP8bT1h4ycWU3inWKU6bHF2JscYIQFZaFtWKtHbjlVa6o97vVUx2lYhLlozV8A==
   dependencies:
     image-size "^0.5.1"
     loader-utils "^0.2.16"
