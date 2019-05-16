@@ -13,7 +13,7 @@ describe("user state should", () => {
   });
 
   it("return false if userState isLoggedIn is false", () => {
-    const userState = {...defaultUserState, isLoggedIn: false}
+    const userState = { ...defaultUserState, isLoggedIn: false };
     expect(isLoggedIn(userState)).toBe(false);
   });
 
