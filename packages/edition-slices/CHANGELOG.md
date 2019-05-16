@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.59.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.58.1...@times-components/edition-slices@0.59.0) (2019-05-16)
+
+
+### Features
+
+* list-2-and-6-no-pic slice for huge and wide ([#1948](https://github.com/newsuk/times-components/issues/1948)) ([a9ee306](https://github.com/newsuk/times-components/commit/a9ee306))
+
+
+
+
+
 ## [0.58.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.58.0...@times-components/edition-slices@0.58.1) (2019-05-15)
 
 **Note:** Version bump only for package @times-components/edition-slices
