@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.5](https://github.com/newsuk/times-components/compare/@times-components/image@6.0.4...@times-components/image@6.0.5) (2019-05-16)
+
+
+### Bug Fixes
+
+* prevent collapsing of view causing issue during image fade on android ([#1962](https://github.com/newsuk/times-components/issues/1962)) ([307e7c1](https://github.com/newsuk/times-components/commit/307e7c1))
+
+
+
+
+
 ## [6.0.4](https://github.com/newsuk/times-components/compare/@times-components/image@6.0.3...@times-components/image@6.0.4) (2019-05-16)
 
 
