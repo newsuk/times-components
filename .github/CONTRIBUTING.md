@@ -57,8 +57,8 @@ the storybook.
 
 ## Commands
 
-- `yarn install` : Install all dependencies and run `yarn transpile` and `yarn postinstall` in all packages.
-- `yarn full:install` : Install all dependencies and run `yarn transpile` and `yarn postinstall` in all packages, fetch fonts and build the TPA schema
+- `yarn install` : Install all dependencies and run `yarn transpile` and `yarn postinstall` in all packages, fetch fonts and build the TPA schema
+- `yarn install --ignore-scripts` : Install all dependencies only.
 - `yarn deps:lint`: Check all packages if they are using the latest version of other packages.
 - `yarn deps:fix`: Same as `yarn deps:lint`, but if there are some outdated packages, it bumps the versions.
 - `yarn test:e2e`: Run Cypress end to end tests locally
