@@ -5,6 +5,7 @@ exports[`1. card default state 1`] = `
   <div>
     <TimesImage
       aspectRatio={0.6666666666666666}
+      disablePlaceholder={false}
       fadeImageIn={false}
       highResSize={360}
       lowResSize={50}
@@ -25,6 +26,7 @@ exports[`2. pass an empty state to the image component 1`] = `
   <div>
     <TimesImage
       aspectRatio={0.6666666666666666}
+      disablePlaceholder={false}
       fadeImageIn={false}
       highResSize={360}
       lowResSize={50}
@@ -55,6 +57,7 @@ exports[`4. pass an empty state to the image component when the uri is null 1`] 
   <div>
     <TimesImage
       aspectRatio={0.6666666666666666}
+      disablePlaceholder={false}
       fadeImageIn={false}
       highResSize={360}
       lowResSize={50}
@@ -80,6 +83,7 @@ exports[`5. card with reversed layout 1`] = `
   <div>
     <TimesImage
       aspectRatio={0.6666666666666666}
+      disablePlaceholder={false}
       fadeImageIn={false}
       highResSize={360}
       lowResSize={50}
@@ -107,6 +111,7 @@ exports[`7. card with a loading state 1`] = `
       <div>
         <TimesImage
           aspectRatio={0.6666666666666666}
+          disablePlaceholder={false}
           fadeImageIn={false}
           highResSize={360}
           lowResSize={50}
@@ -207,6 +212,7 @@ exports[`9. card with reversed loading state 1`] = `
       <div>
         <TimesImage
           aspectRatio={0.6666666666666666}
+          disablePlaceholder={false}
           fadeImageIn={false}
           highResSize={360}
           lowResSize={50}

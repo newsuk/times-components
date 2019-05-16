@@ -188,6 +188,7 @@ exports[`1. card loading state 1`] = `
       >
         <TimesImage
           aspectRatio={0.6666666666666666}
+          disablePlaceholder={false}
           fadeImageIn={false}
           highResSize={800}
           lowResSize={60}
@@ -449,6 +450,7 @@ exports[`2. card with reversed loading state 1`] = `
       >
         <TimesImage
           aspectRatio={0.6666666666666666}
+          disablePlaceholder={false}
           fadeImageIn={false}
           highResSize={800}
           lowResSize={60}

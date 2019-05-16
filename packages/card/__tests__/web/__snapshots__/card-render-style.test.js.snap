@@ -102,6 +102,7 @@ exports[`card with default layout 1`] = `
   >
     <TimesImage
       aspectRatio={0.6666666666666666}
+      disablePlaceholder={false}
       fadeImageIn={false}
       highResSize={100}
       lowResSize={50}

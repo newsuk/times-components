@@ -51,6 +51,7 @@ exports[`1. mobile primary image with caption and credits 1`] = `
             text="Some caption"
           />
         }
+        disablePlaceholder={false}
         fadeImageIn={false}
         highResSize={null}
         lowResSize={null}
@@ -142,6 +143,7 @@ exports[`2. tablet primary image with caption and credits 1`] = `
             text="Some caption"
           />
         }
+        disablePlaceholder={false}
         fadeImageIn={false}
         highResSize={null}
         lowResSize={null}
@@ -223,6 +225,7 @@ exports[`3. mobile fullwidth image with caption and credits 1`] = `
             text="Some caption"
           />
         }
+        disablePlaceholder={false}
         fadeImageIn={false}
         highResSize={null}
         lowResSize={null}
@@ -303,6 +306,7 @@ exports[`4. tablet fullwidth image with caption and credits 1`] = `
             text="Some caption"
           />
         }
+        disablePlaceholder={false}
         fadeImageIn={false}
         highResSize={null}
         lowResSize={null}
@@ -383,6 +387,7 @@ exports[`5. secondary image with caption and credits 1`] = `
             text="Another caption"
           />
         }
+        disablePlaceholder={false}
         fadeImageIn={false}
         highResSize={null}
         lowResSize={null}
@@ -479,6 +484,7 @@ exports[`6. primary image with caption and credits with center caption override 
               text="Some caption"
             />
           }
+          disablePlaceholder={false}
           fadeImageIn={false}
           highResSize={null}
           lowResSize={null}
@@ -582,6 +588,7 @@ exports[`7. secondary image with caption and credits with center caption overrid
               text="Another caption"
             />
           }
+          disablePlaceholder={false}
           fadeImageIn={false}
           highResSize={null}
           lowResSize={null}
