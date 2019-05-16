@@ -120,6 +120,7 @@ class TimesImage extends Component {
         </View>
         {isLoaded ? null : (
           <Animated.View
+            collapsable={false}
             style={{ width: "100%", height: "100%", opacity: this.fadeAnim }}
           >
             {lowResSize ? (
