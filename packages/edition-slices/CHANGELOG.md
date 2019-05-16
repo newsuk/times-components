@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.59.2](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.59.1...@times-components/edition-slices@0.59.2) (2019-05-16)
+
+
+### Bug Fixes
+
+* hide placeholders for puzzle slices ([#1955](https://github.com/newsuk/times-components/issues/1955)) ([534ba09](https://github.com/newsuk/times-components/commit/534ba09))
+
+
+
+
+
 ## [0.59.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.59.0...@times-components/edition-slices@0.59.1) (2019-05-16)
 
 **Note:** Version bump only for package @times-components/edition-slices
