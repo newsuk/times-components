@@ -111,6 +111,9 @@
   "devDependencies": {
     "@babel/cli": "7.4.4",
     "@babel/core": "7.4.4",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/runtime": "7.4.4",
+    "@babel/runtime-corejs2": "7.4.4",
     "@babel/plugin-proposal-decorators": "7.4.4",
     "@babel/preset-flow": "7.0.0",
     "@storybook/addon-actions": "4.1.18",
@@ -166,10 +169,6 @@
     "webpack": "4.30.0"
   },
   "dependencies": {
-    "@babel/core": "7.4.4",
-    "@babel/preset-env": "^7.0.0",
-    "@babel/runtime": "7.4.4",
-    "@babel/runtime-corejs2": "7.4.4",
     "react-art": "16.8.3",
     "react-native": "0.59.8",
     "react-native-showcase-loader": "1.1.0"
