@@ -1,6 +1,6 @@
 {
   "name": "@times-components/button",
-  "version": "2.3.73",
+  "version": "2.3.74",
   "description": "Button component",
   "main": "dist/button",
   "dev": "src/button",
@@ -62,7 +62,7 @@
   },
   "dependencies": {
     "@times-components/styleguide": "3.28.15",
-    "@times-components/utils": "4.11.0",
+    "@times-components/utils": "4.11.1",
     "prop-types": "15.7.2"
   },
   "peerDependencies": {

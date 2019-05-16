@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.1](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.2.0...@times-components/message-bar@0.2.1) (2019-05-16)
+
+
+### Bug Fixes
+
+* Bump rnw on message-bar and ssw ([#1959](https://github.com/newsuk/times-components/issues/1959)) ([6d7f188](https://github.com/newsuk/times-components/commit/6d7f188))
+
+
+
+
+
 # [0.2.0](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.1.1...@times-components/message-bar@0.2.0) (2019-05-15)
 
 
