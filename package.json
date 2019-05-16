@@ -110,7 +110,6 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@babel/cli": "7.4.4",
-    "@babel/core": "7.4.4",
     "@babel/plugin-proposal-decorators": "7.4.4",
     "@babel/preset-flow": "7.0.0",
     "@storybook/addon-actions": "4.1.18",
@@ -153,7 +152,6 @@
     "prop-types": "15.7.2",
     "react": "16.8.3",
     "react-dom": "16.8.3",
-    "react-native": "0.59.8",
     "react-native-storybook-loader": "1.8.0",
     "react-native-web": "0.11.2",
     "react-native-web-image-loader": "0.0.6",
