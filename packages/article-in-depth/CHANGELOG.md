@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.2.0](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.1.7...@times-components/article-in-depth@3.2.0) (2019-05-17)
+
+
+### Features
+
+* (Replat 4657) Web - Respect disable Save/ Share flags on an article ([#1911](https://github.com/newsuk/times-components/issues/1911)) ([5d731bb](https://github.com/newsuk/times-components/commit/5d731bb))
+
+
+
+
+
 ## [3.1.7](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.1.6...@times-components/article-in-depth@3.1.7) (2019-05-16)
 
 **Note:** Version bump only for package @times-components/article-in-depth
