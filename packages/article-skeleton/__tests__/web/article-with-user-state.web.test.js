@@ -350,4 +350,19 @@ describe("Article with user state", () => {
 
     expect(output).toMatchSnapshot();
   });
+
+  it("Render Metered expired article when user is logged in and is metered expired", () => {
+    const userState = {
+      isLoggedIn: true,
+      isMeteredExpired: true
+    };
+    const nuk = {
+      user: { ...userState }
+    };
+
+    window.nuk = nuk;
+
+    const output = TestRenderer.create(renderArticle(userState));
+    expect(output).toMatchSnapshot();
+  });
 });

@@ -204,7 +204,9 @@ const renderArticle = ({
   scale,
   section,
   template,
-  isTeaser
+  isTeaser,
+  isLoggedIn,
+  isMeteredExpired
 }) => (
   <ArticleProvider debounceTimeMs={0} id={id}>
     {({ article, error, refetch }) => {
@@ -228,7 +230,8 @@ const renderArticle = ({
               scale: scale || defaults.theme.scale
             },
             user: {
-              isLoggedIn: !isTeaser
+              isLoggedIn,
+              isMeteredExpired
             }
           }}
         >
@@ -289,7 +292,9 @@ const renderArticleConfig = ({
   hasScaling,
   link = null,
   select,
-  isTeaser = false
+  isTeaser = false,
+  isLoggedIn = false,
+  isMeteredExpired = false
 }) => {
   const id = "263b03a1-2ce6-4b94-b053-0d35316548c5";
   const withFlags = boolean("Flags", true);
@@ -317,7 +322,7 @@ const renderArticleConfig = ({
 
   /* eslint-disable no-undef */
   window.nuk = window.nuk || {};
-  window.nuk.user = { isLoggedIn: !(isTeaser || withTeaser) };
+  window.nuk.user = { isLoggedIn, isMeteredExpired };
   /* eslint-enable no-undef */
 
   return (
@@ -346,6 +351,8 @@ const renderArticleConfig = ({
             inDepthBackgroundColour,
             inDepthTextColour,
             isTeaser: isTeaser || withTeaser,
+            isLoggedIn,
+            isMeteredExpired,
             scale,
             section,
             template
