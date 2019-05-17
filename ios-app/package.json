@@ -6,13 +6,14 @@
     "build": "cat package.json | grep version | head -1 | sed 's/[\",\t ]//g' | awk -F: '{ print \"Bundle Version: \" $2 }' > ios-assets/js/version.meta",
     "fmt": "prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
-    "lint": "eslint . && yarn prettier:diff"
+    "lint": "eslint . && yarn prettier:diff",
+    "start": "react-native start"
   },
   "dependencies": {
     "@times-components/pages": "2.0.34",
     "prop-types": "15.7.2",
-    "react": "16.8.3",
-    "react-native": "0.59.8",
+    "react": "16.6.3",
+    "react-native": "0.58.6",
     "url-polyfill": "1.1.0"
   },
   "devDependencies": {

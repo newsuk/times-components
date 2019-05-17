@@ -156,7 +156,7 @@ repositories {
 }
 
 dependencies {
-    implementation "com.facebook.react:react-native:0.59.8"  // From node_modules
+    implementation "com.facebook.react:react-native:0.58.6"  // From node_modules
     implementation project(':react-native-svg')
     implementation "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
