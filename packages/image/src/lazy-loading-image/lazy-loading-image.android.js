@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { Image } from "react-native";
-import appendToUrl from "../utils";
+import { appendParamsToQuery } from "../utils";
 
 class LazyLoadingImage extends Component {
   constructor() {
@@ -11,8 +11,26 @@ class LazyLoadingImage extends Component {
   }
 
   render() {
-    const { source } = this.props;
+    const {
+      source,
+      relativeWidth,
+      relativeHeight,
+      relativeHorizontalOffset,
+      relativeVerticalOffset
+    } = this.props;
     const { error } = this.state;
+
+    const queryArray = [
+      ["offline", true],
+      ["rel_height", relativeHeight],
+      ["rel_width", relativeWidth],
+      ["rel_horizontal_offset", relativeHorizontalOffset],
+      ["rel_vertical_offset", relativeVerticalOffset]
+    ];
+    const queryParamMap = new Map(queryArray);
+
+    const uri = appendParamsToQuery(source.uri, queryParamMap);
+
     return (
       <Fragment>
         {error &&
@@ -24,7 +42,7 @@ class LazyLoadingImage extends Component {
             source={
               source
                 ? {
-                    uri: appendToUrl(source.uri, "offline", true)
+                    uri
                   }
                 : null
             }

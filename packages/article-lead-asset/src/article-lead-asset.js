@@ -12,13 +12,28 @@ import getRatio from "./get-ratio";
 const ArticleLeadAssetModalImage = ({
   aspectRatio,
   caption,
+  crop,
   onImagePress,
   uri,
-  width
+  width,
+  relativeWidth,
+  relativeHeight,
+  relativeHorizontalOffset,
+  relativeVerticalOffset
 }) => (
   <ModalImage
     highResSize={width}
-    {...{ aspectRatio, caption, onImagePress, uri }}
+    {...{
+      aspectRatio,
+      caption,
+      crop,
+      onImagePress,
+      uri,
+      relativeWidth,
+      relativeHeight,
+      relativeHorizontalOffset,
+      relativeVerticalOffset
+    }}
     index={0}
   />
 );
@@ -58,6 +73,10 @@ const ArticleLeadAsset = ({
         aspectRatio={getRatio(crop.ratio)}
         caption={<Caption {...caption} />}
         leadAsset={leadAsset}
+        relativeWidth={crop.relativeWidth}
+        relativeHeight={crop.relativeHeight}
+        relativeHorizontalOffset={crop.relativeHorizontalOffset}
+        relativeVerticalOffset={crop.relativeVerticalOffset}
         onImagePress={onImagePress}
         onVideoPress={onVideoPress}
         uri={crop.url}
