@@ -30,7 +30,7 @@ export default class TealiumSendScheduler {
     this.disableAutoPageViewTracking();
 
     const utag = this.d.createElement("script");
-    utag.async = true;
+    utag.defer = true;
     utag.type = "text/javascript";
     utag.onload = () => {
       TealiumSendScheduler.scriptLoaded = true;
