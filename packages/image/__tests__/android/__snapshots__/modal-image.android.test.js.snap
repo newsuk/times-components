@@ -62,7 +62,9 @@ exports[`1. modal image 1`] = `
                 }
               />
             </View>
-            <View>
+            <View
+              collapsable={false}
+            >
               <View>
                 <Image
                   caption={<MockCaption />}
@@ -110,7 +112,9 @@ exports[`1. modal image 1`] = `
           }
         />
       </View>
-      <View>
+      <View
+        collapsable={false}
+      >
         <View
           height="100%"
           width="100%"
@@ -189,7 +193,9 @@ exports[`2. modal image with no caption 1`] = `
                 source={null}
               />
             </View>
-            <View>
+            <View
+              collapsable={false}
+            >
               <View
                 height="100%"
                 width="100%"
@@ -227,7 +233,9 @@ exports[`2. modal image with no caption 1`] = `
           source={null}
         />
       </View>
-      <View>
+      <View
+        collapsable={false}
+      >
         <View
           height="100%"
           width="100%"
@@ -310,7 +318,9 @@ exports[`3. modal image with custom highressize 1`] = `
                 }
               />
             </View>
-            <View>
+            <View
+              collapsable={false}
+            >
               <View>
                 <Image
                   caption={<MockCaption />}
@@ -358,7 +368,9 @@ exports[`3. modal image with custom highressize 1`] = `
           }
         />
       </View>
-      <View>
+      <View
+        collapsable={false}
+      >
         <View
           height="100%"
           width="100%"
@@ -426,7 +438,9 @@ exports[`9. hides elements when tapping on the image 1`] = `
                 source={null}
               />
             </View>
-            <View>
+            <View
+              collapsable={false}
+            >
               <View
                 height="100%"
                 width="100%"
@@ -461,7 +475,9 @@ exports[`9. hides elements when tapping on the image 1`] = `
           source={null}
         />
       </View>
-      <View>
+      <View
+        collapsable={false}
+      >
         <View
           height="100%"
           width="100%"
@@ -540,7 +556,9 @@ exports[`10. re-shows elements when tapping on the image a second time 1`] = `
                 source={null}
               />
             </View>
-            <View>
+            <View
+              collapsable={false}
+            >
               <View
                 height="100%"
                 width="100%"
@@ -584,7 +602,9 @@ exports[`10. re-shows elements when tapping on the image a second time 1`] = `
           source={null}
         />
       </View>
-      <View>
+      <View
+        collapsable={false}
+      >
         <View
           height="100%"
           width="100%"
