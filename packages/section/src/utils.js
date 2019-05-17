@@ -6,21 +6,6 @@ const withIgnoredSeperator = slice => ({ ...slice, ignoreSeparator: true });
 const shouldIgnoreSeperator = ({ name }) =>
   name === "LeadersSlice" || name === "DailyUniversalRegister";
 
-const addSeparatorData = memoizeOne(data =>
-  data.reduce((newSlices, slice, idx) => {
-    const nextSlice = data[idx + 1];
-
-    if (nextSlice && shouldIgnoreSeperator(nextSlice)) {
-      newSlices[idx] = withIgnoredSeperator(slice);
-      newSlices[idx + 1] = withIgnoredSeperator(nextSlice);
-    } else if (!newSlices[idx]) {
-      newSlices[idx] = slice;
-    }
-
-    return newSlices;
-  }, [])
-);
-
 const splitPuzzlesBySlices = (puzzles, numberOfTilesPerSlice = 3) =>
   puzzles.reduce((result, puzzle, index) => {
     const slices = result;
@@ -36,13 +21,26 @@ const splitPuzzlesBySlices = (puzzles, numberOfTilesPerSlice = 3) =>
     return slices;
   }, []);
 
-const buildSliceData = memoizeOne(slices =>
-  addSeparatorData(
-    slices.map((slice, index) => ({
-      ...slice,
-      elementId: `${slice.id}.${index}`
-    }))
-  )
+const buildSliceData = memoizeOne(data =>
+  data.reduce((newSlices, oldSlice, idx) => {
+    const nextSlice = data[idx + 1];
+
+    if (nextSlice && shouldIgnoreSeperator(nextSlice)) {
+      newSlices[idx] = withIgnoredSeperator(oldSlice);
+      newSlices[idx + 1] = withIgnoredSeperator(nextSlice);
+    } else if (!newSlices[idx]) {
+      newSlices[idx] = oldSlice;
+    }
+
+    const currentSlice = newSlices[idx];
+
+    newSlices[idx] = {
+      ...currentSlice,
+      elementId: `${currentSlice.id}.${idx}`
+    };
+
+    return newSlices;
+  }, [])
 );
 
 const getRatio = ratio => {

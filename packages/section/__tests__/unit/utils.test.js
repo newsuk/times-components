@@ -39,20 +39,115 @@ describe("splitPuzzlesBySlices", () => {
 });
 
 describe("buildSliceData", () => {
-  it("should create slice with elementId", () => {
-    const slices = [{ id: "a", name: "sliceA" }, { id: "b", name: "sliceB" }];
-    const withElementId = buildSliceData(slices);
-
-    expect(withElementId[0].elementId).toBe("a.0");
-    expect(withElementId[1].elementId).toBe("b.1");
+  it("should add elementId and ignoreSeparator properties", () => {
+    const originalData = [
+      { id: "a", name: "LeadersSlice" },
+      { id: "b", name: "DailyUniversalRegister" },
+      { id: "c", name: "OtherSlice" },
+      { id: "d", name: "LeadersSlice" },
+      { id: "e", name: "DailyUniversalRegister" },
+      { id: "f", name: "OtherSlice" },
+      { id: "g", name: "OtherSlice" },
+      { id: "h", name: "LeadersSlice" },
+      { id: "i", name: "OtherSlice" },
+      { id: "j", name: "OtherSlice" },
+      { id: "k", name: "OtherSlice" },
+      { id: "l", name: "DailyUniversalRegister" }
+    ];
+    const newData = buildSliceData(originalData);
+    expect(newData).toMatchInlineSnapshot(`
+      Array [
+        Object {
+          "elementId": "a.0",
+          "id": "a",
+          "ignoreSeparator": true,
+          "name": "LeadersSlice",
+        },
+        Object {
+          "elementId": "b.1",
+          "id": "b",
+          "ignoreSeparator": true,
+          "name": "DailyUniversalRegister",
+        },
+        Object {
+          "elementId": "c.2",
+          "id": "c",
+          "ignoreSeparator": true,
+          "name": "OtherSlice",
+        },
+        Object {
+          "elementId": "d.3",
+          "id": "d",
+          "ignoreSeparator": true,
+          "name": "LeadersSlice",
+        },
+        Object {
+          "elementId": "e.4",
+          "id": "e",
+          "ignoreSeparator": true,
+          "name": "DailyUniversalRegister",
+        },
+        Object {
+          "elementId": "f.5",
+          "id": "f",
+          "name": "OtherSlice",
+        },
+        Object {
+          "elementId": "g.6",
+          "id": "g",
+          "ignoreSeparator": true,
+          "name": "OtherSlice",
+        },
+        Object {
+          "elementId": "h.7",
+          "id": "h",
+          "ignoreSeparator": true,
+          "name": "LeadersSlice",
+        },
+        Object {
+          "elementId": "i.8",
+          "id": "i",
+          "name": "OtherSlice",
+        },
+        Object {
+          "elementId": "j.9",
+          "id": "j",
+          "name": "OtherSlice",
+        },
+        Object {
+          "elementId": "k.10",
+          "id": "k",
+          "ignoreSeparator": true,
+          "name": "OtherSlice",
+        },
+        Object {
+          "elementId": "l.11",
+          "id": "l",
+          "ignoreSeparator": true,
+          "name": "DailyUniversalRegister",
+        },
+      ]
+    `);
   });
 
-  it("should not change any other properties", () => {
-    const slices = [{ id: "a", name: "sliceA" }, { id: "b", name: "sliceB" }];
-    const withElementId = buildSliceData(slices);
-
-    expect(withElementId[0].name).toBe(slices[0].name);
-    expect(withElementId[1].name).toBe(slices[1].name);
+  it("should not mutate passed data", () => {
+    const originalData = [
+      { id: "a", name: "LeadersSlice" },
+      { id: "b", name: "DailyUniversalRegister" },
+      { id: "c", name: "OtherSlice" },
+      { id: "d", name: "LeadersSlice" },
+      { id: "e", name: "DailyUniversalRegister" },
+      { id: "f", name: "OtherSlice" },
+      { id: "g", name: "OtherSlice" },
+      { id: "h", name: "LeadersSlice" },
+      { id: "i", name: "OtherSlice" },
+      { id: "j", name: "OtherSlice" },
+      { id: "k", name: "OtherSlice" },
+      { id: "l", name: "DailyUniversalRegister" }
+    ];
+    const json = JSON.stringify(originalData);
+    buildSliceData(originalData);
+    expect(JSON.stringify(originalData)).toEqual(json);
   });
 });
 
