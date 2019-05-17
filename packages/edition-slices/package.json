@@ -1,6 +1,6 @@
 {
   "name": "@times-components/edition-slices",
-  "version": "0.59.2",
+  "version": "0.59.4",
   "description": "Components used in edition pages including slices and tiles",
   "main": "dist/edition-slices",
   "dev": "src/edition-slices",
@@ -40,7 +40,7 @@
     "@times-components/article-summary": "3.10.43",
     "@times-components/context": "1.0.8",
     "@times-components/icons": "2.11.3",
-    "@times-components/image": "6.0.4",
+    "@times-components/image": "6.0.5",
     "@times-components/link": "3.4.8",
     "@times-components/markup": "3.3.63",
     "@times-components/markup-forest": "1.7.9",
@@ -48,7 +48,7 @@
     "@times-components/slice-layout": "0.29.0",
     "@times-components/star-button": "0.1.36",
     "@times-components/styleguide": "3.28.15",
-    "@times-components/tracking": "2.4.35",
+    "@times-components/tracking": "2.4.36",
     "prop-types": "15.7.2"
   },
   "devDependencies": {
@@ -65,10 +65,10 @@
     "eslint": "5.9.0",
     "jest": "24.8.0",
     "prettier": "1.14.3",
-    "react": "16.8.3",
-    "react-dom": "16.8.3",
-    "react-native": "0.59.8",
-    "react-test-renderer": "16.8.3",
+    "react": "16.6.3",
+    "react-dom": "16.6.3",
+    "react-native": "0.58.6",
+    "react-test-renderer": "16.6.3",
     "webpack": "4.30.0",
     "webpack-cli": "3.3.1"
   },
