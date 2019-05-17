@@ -320,7 +320,7 @@ class ArticleSkeleton extends Component {
           <FlatList
             data={content || []}
             initialListSize={listViewSize}
-            removeClippedSubviews={true}
+            removeClippedSubviews
             interactiveConfig={interactiveConfig}
             keyExtractor={item =>
               item.index ? `${item.type}.${item.index}` : item.type

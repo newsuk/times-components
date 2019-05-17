@@ -104,7 +104,7 @@ class Section extends Component {
         <ResponsiveContext.Consumer>
           {({ isTablet }) => (
             <FlatList
-              removeClippedSubviews={true}
+              removeClippedSubviews
               data={data}
               initialNumToRender={5}
               ItemSeparatorComponent={this.renderItemSeperator}
