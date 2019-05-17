@@ -30,63 +30,69 @@ class SaveAndShareBar extends Component {
       articleId,
       articleUrl,
       onShareOnEmail,
+      savingEnabled,
+      sharingEnabled,
       onShareOnFB,
       onShareOnTwitter,
       saveApi
     } = this.props;
     return (
       <View style={styles.container}>
-        <View style={styles.rowItem}>
-          <Text style={styles.label}>Share</Text>
-          <BarItem onPress={onShareOnEmail}>
-            <IconEmail
-              fillColour="currentColor"
-              height={styles.svgIcon.height}
-              title="Share by email client"
+        {sharingEnabled && (
+          <View style={styles.rowItem}>
+            <Text style={styles.label}>Share</Text>
+            <BarItem onPress={onShareOnEmail}>
+              <IconEmail
+                fillColour="currentColor"
+                height={styles.svgIcon.height}
+                title="Share by email client"
+              />
+            </BarItem>
+            <BarItem
+              onPress={onShareOnTwitter}
+              target="_blank"
+              url={`${SharingApiUrls.twitter}?text=${articleUrl}`}
+            >
+              <IconTwitter
+                fillColour="currentColor"
+                height={styles.svgIcon.height}
+                title="Share on Twitter"
+              />
+            </BarItem>
+            <BarItem
+              onPress={onShareOnFB}
+              target="_blank"
+              url={`${SharingApiUrls.facebook}?u=${articleUrl}`}
+            >
+              <IconFacebook
+                fillColour="currentColor"
+                height={styles.svgIcon.fb.height}
+                title="Share on Facebook"
+              />
+            </BarItem>
+            <BarItem
+              color={styles.svgIcon.save.strokeColour}
+              hoverColor={styles.svgIcon.hoverFillColour}
+              onPress={this.copyToClipboard}
+            >
+              <IconCopyLink
+                fillColour="currentColor"
+                height={styles.svgIcon.height}
+                title="Copy link to clipboard"
+              />
+            </BarItem>
+          </View>
+        )}
+        {savingEnabled && (
+          <View style={styles.rowItem}>
+            <SaveStar
+              colour={styles.svgIcon.save.strokeColour}
+              hoverColor={styles.svgIcon.hoverFillColour}
+              articleId={articleId}
+              saveApi={saveApi}
             />
-          </BarItem>
-          <BarItem
-            onPress={onShareOnTwitter}
-            target="_blank"
-            url={`${SharingApiUrls.twitter}?text=${articleUrl}`}
-          >
-            <IconTwitter
-              fillColour="currentColor"
-              height={styles.svgIcon.height}
-              title="Share on Twitter"
-            />
-          </BarItem>
-          <BarItem
-            onPress={onShareOnFB}
-            target="_blank"
-            url={`${SharingApiUrls.facebook}?u=${articleUrl}`}
-          >
-            <IconFacebook
-              fillColour="currentColor"
-              height={styles.svgIcon.fb.height}
-              title="Share on Facebook"
-            />
-          </BarItem>
-          <BarItem
-            color={styles.svgIcon.save.strokeColour}
-            hoverColor={styles.svgIcon.hoverFillColour}
-            onPress={this.copyToClipboard}
-          >
-            <IconCopyLink
-              fillColour="currentColor"
-              height={styles.svgIcon.height}
-              title="Copy link to clipboard"
-            />
-          </BarItem>
-        </View>
-        <View style={styles.rowItem}>
-          <SaveStar
-            colour={styles.svgIcon.save.strokeColour}
-            hoverColor={styles.svgIcon.hoverFillColour}
-            articleId={articleId}
-            saveApi={saveApi}
-          />
-        </View>
+          </View>
+        )}
       </View>
     );
   }
@@ -105,7 +111,9 @@ SaveAndShareBar.propTypes = {
     bookmark: PropTypes.func.isRequired,
     getBookmarks: PropTypes.func.isRequired,
     unBookmark: PropTypes.func.isRequired
-  }).isRequired
+  }).isRequired,
+  savingEnabled: PropTypes.func.isRequired,
+  sharingEnabled: PropTypes.func.isRequired
 };
 
 /* Serves as an indication when share links are clicked for tracking and analytics */

@@ -57,10 +57,12 @@ class ArticleSkeleton extends Component {
   }
 
   handleScroll() {
-    const offsetTop = this.sticky.getBoundingClientRect().top;
-    const isSticky = isStickyAllowed(breakpoints.huge) && offsetTop <= 1;
+    if (this.sticky) {
+      const offsetTop = this.sticky.getBoundingClientRect().top;
+      const isSticky = isStickyAllowed(breakpoints.huge) && offsetTop <= 1;
 
-    this.setState({ isSticky });
+      this.setState({ isSticky });
+    }
   }
 
   renderSaveAndShareBar({
@@ -68,7 +70,9 @@ class ArticleSkeleton extends Component {
     headline,
     url,
     isSticky,
-    allowSaveAndShare
+    allowSaveAndShare,
+    savingEnabled,
+    sharingEnabled
   }) {
     if (!allowSaveAndShare) return null;
 
@@ -88,6 +92,8 @@ class ArticleSkeleton extends Component {
               onSaveToMyArticles={() => {}}
               onShareOnEmail={() => {}}
               saveApi={saveApi}
+              savingEnabled={savingEnabled}
+              sharingEnabled={sharingEnabled}
             />
           </div>
         </SaveShareRefContainer>
@@ -115,7 +121,9 @@ class ArticleSkeleton extends Component {
       headline,
       topics,
       relatedArticleSlice,
-      template
+      template,
+      savingEnabled,
+      sharingEnabled
     } = article;
 
     const { articleWidth, isSticky } = this.state;
@@ -163,13 +171,16 @@ class ArticleSkeleton extends Component {
                           topicsAllowed={user.isLoggedIn}
                           width={articleWidth}
                         />
-                        {this.renderSaveAndShareBar({
-                          articleId,
-                          headline,
-                          url,
-                          isSticky,
-                          allowSaveAndShare: user.isLoggedIn
-                        })}
+                        {(savingEnabled || sharingEnabled) &&
+                          this.renderSaveAndShareBar({
+                            articleId,
+                            headline,
+                            url,
+                            isSticky,
+                            allowSaveAndShare: user.isLoggedIn,
+                            savingEnabled,
+                            sharingEnabled
+                          })}
                         <BodyContainer>
                           <ArticleBody
                             content={newContent}
