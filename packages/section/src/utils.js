@@ -1,3 +1,26 @@
+/* eslint-disable no-param-reassign */
+import memoizeOne from "memoize-one";
+
+const withIgnoredSeperator = slice => ({ ...slice, ignoreSeparator: true });
+
+const shouldIgnoreSeperator = ({ name }) =>
+  name === "LeadersSlice" || name === "DailyUniversalRegister";
+
+const addSeparatorData = memoizeOne(data =>
+  data.reduce((newSlices, slice, idx) => {
+    const nextSlice = data[idx + 1];
+
+    if (nextSlice && shouldIgnoreSeperator(nextSlice)) {
+      newSlices[idx] = withIgnoredSeperator(slice);
+      newSlices[idx + 1] = withIgnoredSeperator(nextSlice);
+    } else if (!newSlices[idx]) {
+      newSlices[idx] = slice;
+    }
+
+    return newSlices;
+  }, [])
+);
+
 const splitPuzzlesBySlices = (puzzles, numberOfTilesPerSlice = 3) =>
   puzzles.reduce((result, puzzle, index) => {
     const slices = result;
@@ -13,11 +36,14 @@ const splitPuzzlesBySlices = (puzzles, numberOfTilesPerSlice = 3) =>
     return slices;
   }, []);
 
-const buildSliceData = slices =>
-  slices.map((slice, index) => ({
-    ...slice,
-    elementId: `${slice.id}.${index}`
-  }));
+const buildSliceData = memoizeOne(slices =>
+  addSeparatorData(
+    slices.map((slice, index) => ({
+      ...slice,
+      elementId: `${slice.id}.${index}`
+    }))
+  )
+);
 
 const getRatio = ratio => {
   const ratios = ratio.split(":").map(num => parseInt(num, 10));
