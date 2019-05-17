@@ -99,20 +99,6 @@ class Section extends Component {
 
     if (slices) receiveChildList(data);
 
-    const excludeSliceNames = ["LeadersSlice", "DailyUniversalRegister"];
-    const sliceNames = data.map(slice => slice.name);
-    const sliceIndices = excludeSliceNames.reduce((acc, sliceName) => {
-      const index = sliceNames.indexOf(sliceName);
-      if (index > 0) {
-        return [...acc, index - 1, index];
-      }
-
-      return acc;
-    }, []);
-    sliceIndices.forEach(index => {
-      data[index].ignoreSeparator = true;
-    });
-
     return (
       <Responsive>
         <ResponsiveContext.Consumer>
