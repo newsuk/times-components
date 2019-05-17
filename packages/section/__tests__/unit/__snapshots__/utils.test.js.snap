@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`buildSliceData should add elementId and ignoreSeparator properties 1`] = `
+Array [
+  Object {
+    "elementId": "a.0",
+    "id": "a",
+    "ignoreSeparator": true,
+    "name": "LeadersSlice",
+  },
+  Object {
+    "elementId": "b.1",
+    "id": "b",
+    "ignoreSeparator": true,
+    "name": "DailyUniversalRegister",
+  },
+  Object {
+    "elementId": "c.2",
+    "id": "c",
+    "ignoreSeparator": true,
+    "name": "OtherSlice",
+  },
+  Object {
+    "elementId": "d.3",
+    "id": "d",
+    "ignoreSeparator": true,
+    "name": "LeadersSlice",
+  },
+  Object {
+    "elementId": "e.4",
+    "id": "e",
+    "ignoreSeparator": true,
+    "name": "DailyUniversalRegister",
+  },
+  Object {
+    "elementId": "f.5",
+    "id": "f",
+    "name": "OtherSlice",
+  },
+  Object {
+    "elementId": "g.6",
+    "id": "g",
+    "ignoreSeparator": true,
+    "name": "OtherSlice",
+  },
+  Object {
+    "elementId": "h.7",
+    "id": "h",
+    "ignoreSeparator": true,
+    "name": "LeadersSlice",
+  },
+  Object {
+    "elementId": "i.8",
+    "id": "i",
+    "name": "OtherSlice",
+  },
+  Object {
+    "elementId": "j.9",
+    "id": "j",
+    "name": "OtherSlice",
+  },
+  Object {
+    "elementId": "k.10",
+    "id": "k",
+    "ignoreSeparator": true,
+    "name": "OtherSlice",
+  },
+  Object {
+    "elementId": "l.11",
+    "id": "l",
+    "ignoreSeparator": true,
+    "name": "DailyUniversalRegister",
+  },
+]
+`;
