@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-image",
-  "version": "7.1.3",
+  "version": "7.1.4",
   "description": "Article Image",
   "main": "dist/article-image",
   "dev": "src/article-image",
@@ -37,11 +37,11 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.8.11",
-    "@times-components/jest-configurator": "2.5.9",
-    "@times-components/jest-serializer": "3.2.5",
-    "@times-components/mocks": "0.0.10",
-    "@times-components/storybook": "4.0.6",
-    "@times-components/test-utils": "2.2.41",
+    "@times-components/jest-configurator": "2.5.10",
+    "@times-components/jest-serializer": "3.2.6",
+    "@times-components/mocks": "0.0.11",
+    "@times-components/storybook": "4.0.7",
+    "@times-components/test-utils": "2.2.42",
     "@times-components/webpack-configurator": "2.0.20",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "24.8.0",
@@ -68,11 +68,11 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/caption": "3.0.30",
-    "@times-components/context": "1.0.8",
-    "@times-components/image": "6.0.5",
-    "@times-components/responsive": "0.4.33",
-    "@times-components/styleguide": "3.28.15",
+    "@times-components/caption": "3.0.31",
+    "@times-components/context": "1.0.9",
+    "@times-components/image": "6.0.6",
+    "@times-components/responsive": "0.4.34",
+    "@times-components/styleguide": "3.28.16",
     "prop-types": "15.7.2",
     "styled-components": "3.4.0"
   },

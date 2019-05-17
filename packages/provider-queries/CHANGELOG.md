@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.1.0...@times-components/provider-queries@2.2.0) (2019-05-17)
+
+
+### Features
+
+* (Replat 4657) Web - Respect disable Save/ Share flags on an article ([#1911](https://github.com/newsuk/times-components/issues/1911)) ([5d731bb](https://github.com/newsuk/times-components/commit/5d731bb))
+
+
+
+
+
 # [2.1.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.0.5...@times-components/provider-queries@2.1.0) (2019-05-15)
 
 

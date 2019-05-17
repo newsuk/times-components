@@ -1,6 +1,6 @@
 {
   "name": "@times-components/gradient",
-  "version": "3.1.26",
+  "version": "3.1.27",
   "description": "Renders a gradient background",
   "main": "dist/gradient",
   "dev": "src/gradient",
@@ -48,10 +48,10 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.8.11",
-    "@times-components/jest-configurator": "2.5.9",
-    "@times-components/jest-serializer": "3.2.5",
-    "@times-components/storybook": "4.0.6",
-    "@times-components/test-utils": "2.2.41",
+    "@times-components/jest-configurator": "2.5.10",
+    "@times-components/jest-serializer": "3.2.6",
+    "@times-components/storybook": "4.0.7",
+    "@times-components/test-utils": "2.2.42",
     "@times-components/webpack-configurator": "2.0.20",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "24.8.0",
@@ -72,7 +72,7 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/styleguide": "3.28.15",
+    "@times-components/styleguide": "3.28.16",
     "prop-types": "15.7.2"
   },
   "peerDependencies": {

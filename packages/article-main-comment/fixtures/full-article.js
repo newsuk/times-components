@@ -1283,6 +1283,8 @@ const defaultRelatedArticleSlice = {
         publicationName: "TIMES",
         publishedTime: "2015-03-23T19:39:39.000Z",
         section: "",
+        sharingEnabled: true,
+        savingEnabled: true,
         shortHeadline: "Pratchett’s law of the jungle",
         summary105: [
           {
@@ -1552,6 +1554,8 @@ const defaultRelatedArticleSlice = {
         publicationName: "TIMES",
         publishedTime: "2015-03-23T20:42:27.000Z",
         section: "",
+        sharingEnabled: true,
+        savingEnabled: true,
         shortHeadline: "Rise of centenarian drivers",
         summary105: [
           {
@@ -1746,6 +1750,8 @@ const defaultRelatedArticleSlice = {
         publicationName: "TIMES",
         publishedTime: "2018-04-06T23:01:00.000Z",
         section: "news",
+        sharingEnabled: true,
+        savingEnabled: true,
         shortHeadline: "YouTube ignored police pleas",
         summary105: [
           {
@@ -1939,6 +1945,8 @@ const makeDefaultConfig = ({
   shortHeadline = defaultShortHeadline,
   shortIdentifier = defaultShortIdentifier,
   slug = defaultSlug,
+  sharingEnabled = true,
+  savingEnabled = true,
   standfirst = defaultStandfirst,
   topics = defaultTopics,
   url = defaultUrl
@@ -1956,6 +1964,8 @@ const makeDefaultConfig = ({
   leadAsset,
   relatedArticleSlice,
   section,
+  sharingEnabled,
+  savingEnabled,
   shortHeadline,
   shortIdentifier,
   slug,
@@ -2113,6 +2123,8 @@ export const testFixture = {
           shortHeadline: "Headline",
           shortIdentifier: "2k629tpvh",
           slug: "this-is-slug",
+          savingEnabled: true,
+          sharingEnabled: true,
           summary105: [],
           summary125: [],
           summary145: [],
@@ -2128,6 +2140,8 @@ export const testFixture = {
   shortHeadline: "Some Short Headline",
   shortIdentifier: "2k629tpvh",
   slug: "this-is-slug",
+  savingEnabled: true,
+  sharingEnabled: true,
   standfirst: "Some Standfirst",
   topics: [
     {
