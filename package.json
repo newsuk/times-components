@@ -32,20 +32,19 @@
     "prestorybook:test-build": "yarn storybook:build-vendor",
     "storybook:test-build": "build-storybook -c .storybook -s ./dist/public",
     "storybook:publish": "./lib/publish_storybook.sh",
-    "prestorybook-native": "rnstl",
-    "storybook-native": "react-native start --config metro.config.storybook.js",
+    "storybook-native": "cd storybook-native && yarn start",
     "ios": "react-native run-ios --no-packager",
     "ios:logs": "yarn ios && react-native log-ios",
-    "ios:app": "react-native start --config metro.config.ios.js",
+    "ios:app": "cd ios-app && yarn start",
     "ios:build-lib": "yarn ios:build-lib:js && cd ios-app && yarn build",
-    "ios:build-lib:js": "mkdir -p ios-app/ios-assets/js && mkdir -p ios-app/ios-assets/res && react-native bundle --platform ios --dev false --entry-file ios-app/index.ios.js --bundle-output ios-app/ios-assets/js/index.ios.bundle --assets-dest ios-app/ios-assets/res/ --reactNativePath node_modules/react-native",
+    "ios:build-lib:js": "mkdir -p ios-app/ios-assets/js && mkdir -p ios-app/ios-assets/res && react-native bundle --platform ios --dev false --entry-file ios-app/index.ios.js --bundle-output ios-app/ios-assets/js/index.ios.bundle --assets-dest ios-app/ios-assets/res/",
     "start-emulator": "./lib/start_android_emulator.sh",
     "preandroid": "yarn start-emulator",
     "android": "react-native run-android --no-packager",
     "android:logs": "yarn android && react-native log-android",
-    "android:app": "react-native start --config metro.config.android.js",
+    "android:app": "cd android-app && yarn start",
     "android:build-lib": "yarn android:build-lib:js && cd android-app && yarn build",
-    "android:build-lib:js": "mkdir -p android-app/xnative/src/main/assets/ && mkdir -p android-app/xnative/src/main/res/ && react-native bundle --platform android --dev false --entry-file android-app/index.android.js --bundle-output android-app/xnative/src/main/assets/index.android.bundle --assets-dest android-app/xnative/src/main/res/ --reactNativePath node_modules/react-native",
+    "android:build-lib:js": "mkdir -p android-app/xnative/src/main/assets/ && mkdir -p android-app/xnative/src/main/res/ && react-native bundle --platform android --dev false --entry-file android-app/index.android.js --bundle-output android-app/xnative/src/main/assets/index.android.bundle --assets-dest android-app/xnative/src/main/res/",
     "android:device": "./lib/setup_device_connections.sh && yarn android",
     "android:publish-lib": "lerna run --scope @times-components/android-app publish-library --stream",
     "prefmt": "prettier --write '**/*.{js,json}'",
@@ -77,13 +76,6 @@
     ]
   },
   "config": {
-    "react-native-storybook-loader": {
-      "searchDir": [
-        "./packages"
-      ],
-      "pattern": "!(brightcove-video)/*.stories!(.web).js",
-      "outputFile": "./storybook-native/story-loader.js"
-    },
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
@@ -91,7 +83,8 @@
   "workspaces": [
     "packages/*",
     "android-app",
-    "ios-app"
+    "ios-app",
+    "storybook-native"
   ],
   "repository": {
     "type": "git",
@@ -125,7 +118,6 @@
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.5",
     "babel-plugin-module-resolver": "3.2.0",
-    "babel-runtime": "6.26.0",
     "chromeless": "1.3.0",
     "commitizen": "2.9.6",
     "coveralls": "2.13.1",
@@ -151,10 +143,8 @@
     "node-fetch": "2.2.0",
     "prettier": "1.14.3",
     "prop-types": "15.7.2",
-    "react": "16.8.3",
-    "react-dom": "16.8.3",
-    "react-native": "0.59.8",
-    "react-native-storybook-loader": "1.8.0",
+    "react": "16.6.3",
+    "react-dom": "16.6.3",
     "react-native-web": "0.11.2",
     "react-native-web-image-loader": "0.0.6",
     "rimraf": "2.6.1",
@@ -170,8 +160,8 @@
     "@babel/preset-env": "^7.0.0",
     "@babel/runtime": "7.4.4",
     "@babel/runtime-corejs2": "7.4.4",
-    "react-art": "16.8.3",
-    "react-native": "0.59.8",
+    "react-art": "16.6.3",
+    "react-native": "0.58.6",
     "react-native-showcase-loader": "1.1.0"
   }
 }
