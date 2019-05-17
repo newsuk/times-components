@@ -7,7 +7,7 @@
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
     "postinstall": "rnstl",
-    "start": "react-native start"
+    "start": "react-native start --config ../../../../storybook-native/metro.config.js"
   },
   "config": {
     "react-native-storybook-loader": {
