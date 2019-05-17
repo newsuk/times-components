@@ -8,7 +8,7 @@
     "prettier:diff": "prettier --list-different '**/*.*'",
     "publish-library": "./publish.sh",
     "lint": "eslint . && yarn prettier:diff",
-    "start": "react-native start"
+    "start": "react-native start --config ../../../../android-app/metro.config.js"
   },
   "dependencies": {
     "@times-components/pages": "2.0.35",
