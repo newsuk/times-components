@@ -35,6 +35,7 @@ export default ({
   dropCapFont = "dropCap",
   scale
 }) => {
+  console.log('data is', data);
   const styles = styleFactory(scale);
   const { fontFactory } = styleguide({ scale });
   const { fontFamily, fontSize, lineHeight } = fontFactory({

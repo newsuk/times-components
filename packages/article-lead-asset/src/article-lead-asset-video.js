@@ -11,7 +11,11 @@ const ArticleLeadAssetVideo = ({
   leadAsset,
   onVideoPress,
   uri,
-  width
+  width,
+  relativeWidth,
+  relativeHeight,
+  relativeHorizontalOffset,
+  relativeVerticalOffset
 }) => {
   const {
     brightcoveVideoId,
@@ -31,6 +35,10 @@ const ArticleLeadAssetVideo = ({
       skySports={skySports}
       videoId={brightcoveVideoId}
       width={width}
+      relativeWidth={relativeWidth}
+      relativeHeight={relativeHeight}
+      relativeHorizontalOffset={relativeHorizontalOffset}
+      relativeVerticalOffset={relativeVerticalOffset}
     />
   );
 };

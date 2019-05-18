@@ -48,12 +48,6 @@ class LazyLoadingImage extends Component {
             }
           />
         ) : null}
-        <Image
-          {...this.props}
-          onError={({ nativeEvent: { error: imageError } }) => {
-            this.setState({ error: imageError });
-          }}
-        />
       </Fragment>
     );
   }
