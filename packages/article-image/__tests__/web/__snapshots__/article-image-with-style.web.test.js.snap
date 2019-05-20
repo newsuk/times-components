@@ -64,28 +64,58 @@ exports[`1. mobile primary image with caption and credits 1`] = `
       className="css-view-1dbjc4n"
     >
       <responsiveweb__InsetCaptionStyle>
-        <div
-          className="c1 responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2 c1 css-view-1dbjc4n"
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2",
+                "isStatic": true,
+                "lastClassName": "c1",
+                "rules": Array [
+                  "padding-left:",
+                  "10px",
+                  ";@media (min-width:",
+                  "768",
+                  "px){padding-left:0px;}",
+                ],
+              },
+              "displayName": "responsiveweb__InsetCaptionStyle",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2",
+              "target": [Function],
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
         >
           <div
-            className="css-view-1dbjc4n"
+            className="c1 responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2 c1 css-view-1dbjc4n"
           >
             <div
-              className="css-view-1dbjc4n r-paddingTop-m611by"
+              className="css-view-1dbjc4n"
             >
               <div
-                className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+                className="css-view-1dbjc4n r-paddingTop-m611by"
               >
-                Some caption
-              </div>
-              <div
-                className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
-              >
-                SOME CREDITS
+                <div
+                  className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+                >
+                  Some caption
+                </div>
+                <div
+                  className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
+                >
+                  SOME CREDITS
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </StyledComponent>
       </responsiveweb__InsetCaptionStyle>
     </div>
   </div>
@@ -156,28 +186,58 @@ exports[`2. tablet primary image with caption and credits 1`] = `
       className="css-view-1dbjc4n"
     >
       <responsiveweb__InsetCaptionStyle>
-        <div
-          className="c1 responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2 c1 css-view-1dbjc4n"
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2",
+                "isStatic": true,
+                "lastClassName": "c1",
+                "rules": Array [
+                  "padding-left:",
+                  "10px",
+                  ";@media (min-width:",
+                  "768",
+                  "px){padding-left:0px;}",
+                ],
+              },
+              "displayName": "responsiveweb__InsetCaptionStyle",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2",
+              "target": [Function],
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
         >
           <div
-            className="css-view-1dbjc4n"
+            className="c1 responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2 c1 css-view-1dbjc4n"
           >
             <div
-              className="css-view-1dbjc4n r-paddingTop-m611by"
+              className="css-view-1dbjc4n"
             >
               <div
-                className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+                className="css-view-1dbjc4n r-paddingTop-m611by"
               >
-                Some caption
-              </div>
-              <div
-                className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
-              >
-                SOME CREDITS
+                <div
+                  className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+                >
+                  Some caption
+                </div>
+                <div
+                  className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
+                >
+                  SOME CREDITS
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </StyledComponent>
       </responsiveweb__InsetCaptionStyle>
     </div>
   </div>
@@ -501,33 +561,63 @@ exports[`6. primary image with caption and credits with center caption override 
           text="Some caption"
         >
           <responsiveweb__InsetCaptionStyle>
-            <div
-              className="c1 responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2 c1 css-view-1dbjc4n"
+            <StyledComponent
+              forwardedComponent={
+                Object {
+                  "$$typeof": Symbol(react.forward_ref),
+                  "attrs": Array [],
+                  "componentStyle": ComponentStyle {
+                    "componentId": "responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2",
+                    "isStatic": true,
+                    "lastClassName": "c1",
+                    "rules": Array [
+                      "padding-left:",
+                      "10px",
+                      ";@media (min-width:",
+                      "768",
+                      "px){padding-left:0px;}",
+                    ],
+                  },
+                  "displayName": "responsiveweb__InsetCaptionStyle",
+                  "foldedComponentIds": Array [],
+                  "render": [Function],
+                  "styledComponentId": "responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2",
+                  "target": [Function],
+                  "toString": [Function],
+                  "warnTooManyClasses": [Function],
+                  "withComponent": [Function],
+                }
+              }
+              forwardedRef={null}
             >
-              <CentredCaption
-                credits="Some credits"
-                text="Some caption"
+              <div
+                className="c1 responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2 c1 css-view-1dbjc4n"
               >
-                <div
-                  className="css-view-1dbjc4n"
+                <CentredCaption
+                  credits="Some credits"
+                  text="Some caption"
                 >
                   <div
-                    className="css-view-1dbjc4n r-paddingTop-m611by"
+                    className="css-view-1dbjc4n"
                   >
                     <div
-                      className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+                      className="css-view-1dbjc4n r-paddingTop-m611by"
                     >
-                      Some caption
-                    </div>
-                    <div
-                      className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
-                    >
-                      SOME CREDITS
+                      <div
+                        className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+                      >
+                        Some caption
+                      </div>
+                      <div
+                        className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
+                      >
+                        SOME CREDITS
+                      </div>
                     </div>
                   </div>
-                </div>
-              </CentredCaption>
-            </div>
+                </CentredCaption>
+              </div>
+            </StyledComponent>
           </responsiveweb__InsetCaptionStyle>
         </InsetCenteredCaption>
       </div>

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`default styles 1`] = `
-.c3 {
+.c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -18,7 +18,7 @@ exports[`default styles 1`] = `
   justify-content: center;
 }
 
-.c7 {
+.c3 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -26,19 +26,19 @@ exports[`default styles 1`] = `
   padding-right: 10px;
 }
 
-.c2 .imageContainerClass {
+.c0 .imageContainerClass {
   display: block;
 }
 
-.c2 .summaryHidden {
+.c0 .summaryHidden {
   display: none;
 }
 
-.c2 .summary125Class {
+.c0 .summary125Class {
   display: block;
 }
 
-.c6 {
+.c2 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -54,13 +54,13 @@ exports[`default styles 1`] = `
 }
 
 @media (-webkit-min-device-pixel-ratio:2) {
-  .c3 {
+  .c1 {
     border-bottom-width: 0.5px;
   }
 }
 
 @media (min-width:768px) {
-  .c7 {
+  .c3 {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
@@ -70,11 +70,11 @@ exports[`default styles 1`] = `
 }
 
 @media (min-width:768px) {
-  .c2 .imageContainerClass {
+  .c0 .imageContainerClass {
     display: block;
   }
 
-  .c2 .headlineClass {
+  .c0 .headlineClass {
     font-size: 25px;
     line-height: 28px;
     margin-top: 5px;
@@ -82,7 +82,7 @@ exports[`default styles 1`] = `
 }
 
 @media (min-width:768px) {
-  .c1 .imageContainerClass {
+  .c0 .imageContainerClass {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
@@ -91,7 +91,7 @@ exports[`default styles 1`] = `
     padding-right: 10px;
   }
 
-  .c1 .contentContainerClass {
+  .c0 .contentContainerClass {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
@@ -114,7 +114,7 @@ exports[`default styles 1`] = `
 }
 
 @media (min-width:768px) {
-  .c6 {
+  .c2 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -122,13 +122,13 @@ exports[`default styles 1`] = `
 }
 
 @media (min-width:768px) {
-  .c5 {
+  .c2 {
     width: 80.8%;
   }
 }
 
 @media (min-width:1024px) {
-  .c4 {
+  .c2 {
     width: 56.2%;
   }
 }
@@ -225,16 +225,16 @@ exports[`default styles 1`] = `
     </h3>
   </div>
   <div
-    className="c0 c1 c2 configweb__Base-sc-1adgnqc-2 c0 configweb__Base-sc-1adgnqc-1 c1 configweb__Base-sc-1adgnqc-0 c2 css-view-1dbjc4n"
+    className="c0 configweb__Base-sc-1adgnqc-0 configweb__Base-sc-1adgnqc-1 configweb__Base-sc-1adgnqc-2 c0 css-view-1dbjc4n"
   >
     <div
-      className="c3 responsiveweb__SliceContainer-sc-2kg7gs-0 c3 css-view-1dbjc4n"
+      className="c1 responsiveweb__SliceContainer-sc-2kg7gs-0 c1 css-view-1dbjc4n"
     >
       <div
-        className="c4 c5 c6 responsiveweb__Base-aumpme-4 c4 responsiveweb__Base-aumpme-3 c5 responsiveweb__Base-aumpme-1 c6 css-view-1dbjc4n"
+        className="c2 responsiveweb__Base-aumpme-1 responsiveweb__Base-aumpme-3 responsiveweb__Base-aumpme-4 c2 css-view-1dbjc4n"
       >
         <div
-          className="c7 responsiveweb__ChildContainer-aumpme-0 c7 css-view-1dbjc4n"
+          className="c3 responsiveweb__ChildContainer-aumpme-0 c3 css-view-1dbjc4n"
         >
           <Link>
             <div
