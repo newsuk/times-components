@@ -154,7 +154,7 @@ class ArticleSkeleton extends Component {
         <Context.Consumer>
           {({ user }) => {
             const isUserLoggedIn = isLoggedIn(user);
-            const allow = isUserLoggedIn && !isMeteredExpired(user);
+            const isAllowed = isUserLoggedIn && !isMeteredExpired(user);
             return (
               <Fragment>
                 <Head article={article} />
@@ -172,7 +172,7 @@ class ArticleSkeleton extends Component {
                         </HeaderAdContainer>
                         <MainContainer>
                           <Header
-                            topicsAllowed={allow}
+                            topicsAllowed={isUserLoggedIn}
                             width={articleWidth}
                           />
                           {(savingEnabled || sharingEnabled) &&
@@ -189,57 +189,34 @@ class ArticleSkeleton extends Component {
                             <ArticleBody
                               content={newContent}
                               contextUrl={url}
+                              observed={observed}
+                              registerNode={registerNode}
                               section={section}
-                              slotName="header"
-                              style={adStyle}
                             />
-                          </HeaderAdContainer>
-                          <MainContainer>
-                            <Header
-                              topicsAllowed={allow}
-                              width={articleWidth}
+                            <ArticleExtras
+                              analyticsStream={analyticsStream}
+                              articleId={articleId}
+                              commentsAllowed={isAllowed}
+                              commentsEnabled={commentsEnabled}
+                              registerNode={registerNode}
+                              relatedArticleAllowed={isAllowed}
+                              relatedArticleSlice={relatedArticleSlice}
+                              relatedArticlesVisible={
+                                !!observed.get("related-articles")
+                              }
+                              spotAccountId={spotAccountId}
+                              topics={topics}
+                              topicsAllowed={isAllowed}
                             />
-                            {this.renderSaveAndShareBar({
-                              articleId,
-                              headline,
-                              url,
-                              isSticky,
-                              allowSaveAndShare: isUserLoggedIn
-                            })}
-                            <BodyContainer>
-                              <ArticleBody
-                                content={newContent}
-                                contextUrl={url}
-                                observed={observed}
-                                registerNode={registerNode}
-                                section={section}
-                              />
-                              <ArticleExtras
-                                analyticsStream={analyticsStream}
-                                articleId={articleId}
-                                commentsAllowed={allow}
-                                commentsEnabled={commentsEnabled}
-                                registerNode={registerNode}
-                                relatedArticleAllowed={allow}
-                                relatedArticleSlice={relatedArticleSlice}
-                                relatedArticlesVisible={
-                                  !!observed.get("related-articles")
-                                }
-                                spotAccountId={spotAccountId}
-                                topics={topics}
-                                topicsAllowed={allow}
-                              />
-                            </BodyContainer>
-                          </MainContainer>
-                        </Fragment>
-                      )}
-                    </LazyLoad>
-                  </AdComposer>
-                </Fragment>
-              );
-            }
-          }
-          }
+                          </BodyContainer>
+                        </MainContainer>
+                      </Fragment>
+                    )}
+                  </LazyLoad>
+                </AdComposer>
+              </Fragment>
+            );
+          }}
         </Context.Consumer>
       </article>
     );

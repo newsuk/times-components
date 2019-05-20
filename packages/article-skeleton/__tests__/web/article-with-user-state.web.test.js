@@ -312,9 +312,7 @@ describe("Article with user state", () => {
     };
 
     const nuk = {
-      user: {
-        ...userState
-      }
+      user: userState
     };
     window.nuk = nuk;
 
@@ -329,9 +327,7 @@ describe("Article with user state", () => {
     };
 
     const nuk = {
-      user: {
-        ...userState
-      }
+      user: userState
     };
     window.nuk = nuk;
 
@@ -354,10 +350,11 @@ describe("Article with user state", () => {
   it("Render Metered expired article when user is logged in and is metered expired", () => {
     const userState = {
       isLoggedIn: true,
+      isMetered: false,
       isMeteredExpired: true
     };
     const nuk = {
-      user: { ...userState }
+      user: userState
     };
 
     window.nuk = nuk;

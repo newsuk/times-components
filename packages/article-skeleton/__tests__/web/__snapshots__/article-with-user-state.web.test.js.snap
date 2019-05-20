@@ -429,6 +429,8 @@ exports[`Article with user state Render Metered expired article when user is log
                   },
                   "publicationName": "TIMES",
                   "publishedTime": "2015-03-23T19:39:39.000Z",
+                  "savingEnabled": true,
+                  "sharingEnabled": true,
                   "shortHeadline": "Headline",
                   "shortIdentifier": "2k629tpvh",
                   "slug": "this-is-slug",

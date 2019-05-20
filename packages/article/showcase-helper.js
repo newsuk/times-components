@@ -230,7 +230,7 @@ const renderArticle = ({
               scale: scale || defaults.theme.scale
             },
             user: {
-              isLoggedIn,
+              isLoggedIn: !isTeaser || isMeteredExpired,
               isMeteredExpired
             }
           }}
@@ -307,6 +307,7 @@ const renderArticleConfig = ({
   const withStandfirst = boolean("Standfirst", true);
   const withVideo = boolean("Video", true);
   const withTeaser = !isTeaser && boolean("Teaser (only Web)", false);
+  const isMeteredExpiredPage = !isMeteredExpired && boolean('Metered expired page (only web)', false);
 
   const scale = hasScaling ? selectScales(select) : null;
   const section = selectSection(select);
@@ -352,7 +353,7 @@ const renderArticleConfig = ({
             inDepthTextColour,
             isTeaser: isTeaser || withTeaser,
             isLoggedIn,
-            isMeteredExpired,
+            isMeteredExpired: isMeteredExpired || isMeteredExpiredPage,
             scale,
             section,
             template
