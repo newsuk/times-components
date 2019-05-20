@@ -98,9 +98,9 @@ class TileSummary extends Component {
     return (
       <ArticleSummary
         bylineProps={bylines ? { ast: bylines, bylineStyle } : null}
-        content={summary ? this.renderContent : undefined}
-        flags={this.renderFlags}
-        headline={this.renderHeadline}
+        content={summary ? this.renderContent() : undefined}
+        flags={this.renderFlags()}
+        headline={this.renderHeadline()}
         label={label}
         labelProps={{
           color:
@@ -109,7 +109,7 @@ class TileSummary extends Component {
           isVideo: hasVideo,
           title: label
         }}
-        strapline={strapline ? this.renderStrapline : undefined}
+        strapline={strapline ? this.renderStrapline() : undefined}
         style={style}
       />
     );

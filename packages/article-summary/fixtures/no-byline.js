@@ -13,7 +13,7 @@ export default ({
   bylineProps: {
     ast: []
   },
-  content: () => (
+  content: (
     <ArticleSummaryContent
       ast={[
         {
@@ -36,5 +36,5 @@ export default ({
     date: "2017-11-17T00:01:00.000Z",
     publication: "TIMES"
   },
-  headline: () => <ArticleSummaryHeadline headline={headline} />
+  headline: <ArticleSummaryHeadline headline={headline} />
 });

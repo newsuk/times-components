@@ -121,7 +121,7 @@ class RelatedArticleItem extends Component {
                 color: colours.section[section] || colours.section.default,
                 isOpinionByline
               }}
-              content={() =>
+              content={
                 showSummary && (
                   <View style={summaryStyle}>
                     {summaryLengths.map(item => {
@@ -141,13 +141,13 @@ class RelatedArticleItem extends Component {
                 )
               }
               datePublicationProps={{ date: publishedTime, showDay: false }}
-              headline={() => (
+              headline={
                 <ArticleSummaryHeadline
                   className={headlineClass}
                   headline={getHeadline(headline, shortHeadline)}
                   style={styles.headline}
                 />
-              )}
+              }
               labelProps={{
                 color: colours.section[section] || colours.section.default,
                 isVideo: hasVideo,
