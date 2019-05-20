@@ -8,20 +8,22 @@ exports[`3. does not render an inline image with no ratio and no caption or cred
 
 exports[`4. inline image with no ratio only shows caption and credits 1`] = `
 <div>
-  <div>
-    <figcaption>
-      <div>
+  <responsiveweb__InsetCaptionContainerStyle>
+    <div>
+      <figcaption>
         <div>
           <div>
-            Some caption
-          </div>
-          <div>
-            SOME CREDIT
+            <div>
+              Some caption
+            </div>
+            <div>
+              SOME CREDIT
+            </div>
           </div>
         </div>
-      </div>
-    </figcaption>
-  </div>
+      </figcaption>
+    </div>
+  </responsiveweb__InsetCaptionContainerStyle>
 </div>
 `;
 
@@ -30,10 +32,17 @@ exports[`5. image with no caption 1`] = `
   <div>
     <div>
       <div>
-        <img
+        <responsiveweb
           alt=""
+          isLoaded={false}
           src="https://img/someImage"
-        />
+          zIndex={2}
+        >
+          <img
+            alt=""
+            src="https://img/someImage"
+          />
+        </responsiveweb>
         <div>
           <svg
             height="auto"
@@ -94,10 +103,17 @@ exports[`8. primary image renders with caption and credits 1`] = `
   <div>
     <div>
       <div>
-        <img
+        <responsiveweb
           alt=""
+          isLoaded={false}
           src="https://img/someImage"
-        />
+          zIndex={2}
+        >
+          <img
+            alt=""
+            src="https://img/someImage"
+          />
+        </responsiveweb>
         <div>
           <svg
             height="auto"
@@ -122,18 +138,20 @@ exports[`8. primary image renders with caption and credits 1`] = `
     </div>
   </div>
   <div>
-    <div>
+    <responsiveweb__InsetCaptionStyle>
       <div>
         <div>
           <div>
-            Some caption
-          </div>
-          <div>
-            SOME CREDIT
+            <div>
+              Some caption
+            </div>
+            <div>
+              SOME CREDIT
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </responsiveweb__InsetCaptionStyle>
   </div>
 </div>
 `;
@@ -143,14 +161,28 @@ exports[`9. primary image with given resolutions 1`] = `
   <div>
     <div>
       <div>
-        <img
+        <responsiveweb
           alt=""
+          isLoaded={false}
           src="https://img/someImage?resize=900"
-        />
-        <img
+          zIndex={2}
+        >
+          <img
+            alt=""
+            src="https://img/someImage?resize=900"
+          />
+        </responsiveweb>
+        <responsiveweb
           alt=""
+          isLoaded={true}
           src="https://img/someImage?resize=50"
-        />
+          zIndex={1}
+        >
+          <img
+            alt=""
+            src="https://img/someImage?resize=50"
+          />
+        </responsiveweb>
         <div>
           <svg
             height="auto"
@@ -175,18 +207,20 @@ exports[`9. primary image with given resolutions 1`] = `
     </div>
   </div>
   <div>
-    <div>
+    <responsiveweb__InsetCaptionStyle>
       <div>
         <div>
           <div>
-            Some caption
-          </div>
-          <div>
-            SOME CREDIT
+            <div>
+              Some caption
+            </div>
+            <div>
+              SOME CREDIT
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </responsiveweb__InsetCaptionStyle>
   </div>
 </div>
 `;

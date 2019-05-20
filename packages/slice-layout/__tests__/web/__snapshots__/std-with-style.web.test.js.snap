@@ -3,7 +3,7 @@
 exports[`1. no child elements 1`] = `""`;
 
 exports[`2. a single child element 1`] = `
-.c3 {
+.c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -20,7 +20,7 @@ exports[`2. a single child element 1`] = `
   justify-content: center;
 }
 
-.c7 {
+.c3 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -28,19 +28,19 @@ exports[`2. a single child element 1`] = `
   padding-right: 10px;
 }
 
-.c2 .imageContainerClass {
+.c0 .imageContainerClass {
   display: block;
 }
 
-.c2 .summaryHidden {
+.c0 .summaryHidden {
   display: none;
 }
 
-.c2 .summary125Class {
+.c0 .summary125Class {
   display: block;
 }
 
-.c6 {
+.c2 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -56,13 +56,13 @@ exports[`2. a single child element 1`] = `
 }
 
 @media (-webkit-min-device-pixel-ratio:2) {
-  .c3 {
+  .c1 {
     border-bottom-width: 0.5px;
   }
 }
 
 @media (min-width:768px) {
-  .c7 {
+  .c3 {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
@@ -72,49 +72,19 @@ exports[`2. a single child element 1`] = `
 }
 
 @media (min-width:768px) {
-  .c2 .imageContainerClass {
+  .c0 .imageContainerClass {
     display: block;
   }
 
-  .c2 .headlineClass {
+  .c0 .headlineClass {
     font-size: 25px;
     line-height: 28px;
     margin-top: 5px;
   }
 }
 
-@media (min-width:1024px) {
-  .c0 .summary125Class {
-    display: block;
-  }
-
-  .c0 .summary145Class {
-    display: none;
-  }
-}
-
 @media (min-width:768px) {
-  .c6 {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-}
-
-@media (min-width:768px) {
-  .c5 {
-    width: 80.8%;
-  }
-}
-
-@media (min-width:1024px) {
-  .c4 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c1 .imageContainerClass {
+  .c0 .imageContainerClass {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
@@ -123,7 +93,7 @@ exports[`2. a single child element 1`] = `
     padding-right: 10px;
   }
 
-  .c1 .contentContainerClass {
+  .c0 .contentContainerClass {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
@@ -135,135 +105,6 @@ exports[`2. a single child element 1`] = `
   }
 }
 
-<div
-  className="c0 c1 c2 configweb__Base-sc-1adgnqc-2 c0 configweb__Base-sc-1adgnqc-1 c1 configweb__Base-sc-1adgnqc-0 c2 css-view-1dbjc4n"
->
-  <div
-    className="c3 responsiveweb__SliceContainer-sc-2kg7gs-0 c3 css-view-1dbjc4n"
-  >
-    <div
-      className="c4 c5 c6 responsiveweb__Base-aumpme-4 c4 responsiveweb__Base-aumpme-3 c5 responsiveweb__Base-aumpme-1 c6 css-view-1dbjc4n"
-    >
-      <div
-        className="c7 responsiveweb__ChildContainer-aumpme-0 c7 css-view-1dbjc4n"
-      >
-        <div
-          className="css-text-76zvg2"
-        >
-          standard-1
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`3. two child elements 1`] = `
-.c2 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-bottom-color: #DBDBDB;
-  border-bottom-width: 1px;
-  border-style: solid;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.c6 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.c7 {
-  border-bottom-color: #DBDBDB;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  min-width: auto;
-}
-
-.c1 .imageContainerClass {
-  display: block;
-}
-
-.c1 .summaryHidden {
-  display: none;
-}
-
-.c1 .summary125Class {
-  display: block;
-}
-
-.c5 {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  width: 100%;
-}
-
-@media (-webkit-min-device-pixel-ratio:2) {
-  .c2 {
-    border-bottom-width: 0.5px;
-  }
-}
-
-@media (min-width:768px) {
-  .c6 {
-    -webkit-flex-basis: 0 !important;
-    -ms-flex-preferred-size: 0 !important;
-    flex-basis: 0 !important;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:768px) {
-  .c7 {
-    border-bottom: none;
-    border-right-color: #DBDBDB;
-    border-right-style: solid;
-    border-right-width: 1px;
-    -webkit-flex: 0 !important;
-    -ms-flex: 0 !important;
-    flex: 0 !important;
-    margin: 0 10px;
-  }
-}
-
-@media (min-width:768px) {
-  .c1 .imageContainerClass {
-    display: block;
-  }
-
-  .c1 .headlineClass {
-    font-size: 25px;
-    line-height: 28px;
-    margin-top: 5px;
-  }
-}
-
 @media (min-width:1024px) {
   .c0 .summary125Class {
     display: block;
@@ -275,7 +116,7 @@ exports[`3. two child elements 1`] = `
 }
 
 @media (min-width:768px) {
-  .c5 {
+  .c2 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -283,54 +124,50 @@ exports[`3. two child elements 1`] = `
 }
 
 @media (min-width:768px) {
-  .c4 {
+  .c2 {
     width: 80.8%;
   }
 }
 
 @media (min-width:1024px) {
-  .c3 {
+  .c2 {
     width: 56.2%;
   }
 }
 
-<div
-  className="c0 c1 configweb__Base-sc-1adgnqc-2 c0 configweb__Base-sc-1adgnqc-0 c1 css-view-1dbjc4n"
->
+<configweb__Base>
   <div
-    className="c2 responsiveweb__SliceContainer-sc-2kg7gs-0 c2 css-view-1dbjc4n"
+    className="c0 configweb__Base-sc-1adgnqc-0 configweb__Base-sc-1adgnqc-1 configweb__Base-sc-1adgnqc-2 c0 css-view-1dbjc4n"
   >
-    <div
-      className="c3 c4 c5 responsiveweb__Base-aumpme-4 c3 responsiveweb__Base-aumpme-3 c4 responsiveweb__Base-aumpme-1 c5 css-view-1dbjc4n"
-    >
+    <responsiveweb__SliceContainer>
       <div
-        className="c6 responsiveweb__ChildContainer-aumpme-0 c6 css-view-1dbjc4n"
+        className="c1 responsiveweb__SliceContainer-sc-2kg7gs-0 c1 css-view-1dbjc4n"
       >
-        <div
-          className="css-text-76zvg2"
-        >
-          standard-1
-        </div>
+        <responsiveweb__Base>
+          <div
+            className="c2 responsiveweb__Base-aumpme-1 responsiveweb__Base-aumpme-3 responsiveweb__Base-aumpme-4 c2 css-view-1dbjc4n"
+          >
+            <responsiveweb__ChildContainer>
+              <div
+                className="c3 responsiveweb__ChildContainer-aumpme-0 c3 css-view-1dbjc4n"
+              >
+                <div
+                  className="css-text-76zvg2"
+                >
+                  standard-1
+                </div>
+              </div>
+            </responsiveweb__ChildContainer>
+          </div>
+        </responsiveweb__Base>
       </div>
-      <div
-        className="c7 responsiveweb-sc-2kg7gs-1 c7 css-view-1dbjc4n"
-      />
-      <div
-        className="c6 responsiveweb__ChildContainer-aumpme-0 c6 css-view-1dbjc4n"
-      >
-        <div
-          className="css-text-76zvg2"
-        >
-          standard-2
-        </div>
-      </div>
-    </div>
+    </responsiveweb__SliceContainer>
   </div>
-</div>
+</configweb__Base>
 `;
 
-exports[`4. three child elements 1`] = `
-.c2 {
+exports[`3. two child elements 1`] = `
+.c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -347,7 +184,7 @@ exports[`4. three child elements 1`] = `
   justify-content: center;
 }
 
-.c6 {
+.c3 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -355,7 +192,7 @@ exports[`4. three child elements 1`] = `
   padding-right: 10px;
 }
 
-.c7 {
+.c4 {
   border-bottom-color: #DBDBDB;
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -367,19 +204,19 @@ exports[`4. three child elements 1`] = `
   min-width: auto;
 }
 
-.c1 .imageContainerClass {
-  display: none;
-}
-
-.c1 .summaryHidden {
-  display: none;
-}
-
-.c1 .summary125Class {
+.c0 .imageContainerClass {
   display: block;
 }
 
-.c5 {
+.c0 .summaryHidden {
+  display: none;
+}
+
+.c0 .summary125Class {
+  display: block;
+}
+
+.c2 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -395,13 +232,13 @@ exports[`4. three child elements 1`] = `
 }
 
 @media (-webkit-min-device-pixel-ratio:2) {
-  .c2 {
+  .c1 {
     border-bottom-width: 0.5px;
   }
 }
 
 @media (min-width:768px) {
-  .c6 {
+  .c3 {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
@@ -411,7 +248,7 @@ exports[`4. three child elements 1`] = `
 }
 
 @media (min-width:768px) {
-  .c7 {
+  .c4 {
     border-bottom: none;
     border-right-color: #DBDBDB;
     border-right-style: solid;
@@ -424,11 +261,194 @@ exports[`4. three child elements 1`] = `
 }
 
 @media (min-width:768px) {
-  .c1 .imageContainerClass {
+  .c0 .imageContainerClass {
     display: block;
   }
 
-  .c1 .headlineClass {
+  .c0 .headlineClass {
+    font-size: 25px;
+    line-height: 28px;
+    margin-top: 5px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c0 .summary125Class {
+    display: block;
+  }
+
+  .c0 .summary145Class {
+    display: none;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c2 {
+    width: 56.2%;
+  }
+}
+
+<configweb__Base>
+  <div
+    className="c0 configweb__Base-sc-1adgnqc-0 configweb__Base-sc-1adgnqc-2 c0 css-view-1dbjc4n"
+  >
+    <responsiveweb__SliceContainer>
+      <div
+        className="c1 responsiveweb__SliceContainer-sc-2kg7gs-0 c1 css-view-1dbjc4n"
+      >
+        <responsiveweb__Base>
+          <div
+            className="c2 responsiveweb__Base-aumpme-1 responsiveweb__Base-aumpme-3 responsiveweb__Base-aumpme-4 c2 css-view-1dbjc4n"
+          >
+            <responsiveweb__ChildContainer>
+              <div
+                className="c3 responsiveweb__ChildContainer-aumpme-0 c3 css-view-1dbjc4n"
+              >
+                <div
+                  className="css-text-76zvg2"
+                >
+                  standard-1
+                </div>
+              </div>
+            </responsiveweb__ChildContainer>
+            <responsiveweb>
+              <div
+                className="c4 responsiveweb-sc-2kg7gs-1 c4 css-view-1dbjc4n"
+              />
+            </responsiveweb>
+            <responsiveweb__ChildContainer>
+              <div
+                className="c3 responsiveweb__ChildContainer-aumpme-0 c3 css-view-1dbjc4n"
+              >
+                <div
+                  className="css-text-76zvg2"
+                >
+                  standard-2
+                </div>
+              </div>
+            </responsiveweb__ChildContainer>
+          </div>
+        </responsiveweb__Base>
+      </div>
+    </responsiveweb__SliceContainer>
+  </div>
+</configweb__Base>
+`;
+
+exports[`4. three child elements 1`] = `
+.c1 {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1px;
+  border-style: solid;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c3 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.c4 {
+  border-bottom-color: #DBDBDB;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  min-width: auto;
+}
+
+.c0 .imageContainerClass {
+  display: none;
+}
+
+.c0 .summaryHidden {
+  display: none;
+}
+
+.c0 .summary125Class {
+  display: block;
+}
+
+.c2 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 100%;
+}
+
+@media (-webkit-min-device-pixel-ratio:2) {
+  .c1 {
+    border-bottom-width: 0.5px;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    -webkit-flex-basis: 0 !important;
+    -ms-flex-preferred-size: 0 !important;
+    flex-basis: 0 !important;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    border-bottom: none;
+    border-right-color: #DBDBDB;
+    border-right-style: solid;
+    border-right-width: 1px;
+    -webkit-flex: 0 !important;
+    -ms-flex: 0 !important;
+    flex: 0 !important;
+    margin: 0 10px;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 .imageContainerClass {
+    display: block;
+  }
+
+  .c0 .headlineClass {
     font-size: 25px;
     line-height: 28px;
     margin-top: 5px;
@@ -446,70 +466,86 @@ exports[`4. three child elements 1`] = `
 }
 
 @media (min-width:768px) {
-  .c5 {
+  .c2 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
   }
 }
 
-@media (min-width:1024px) {
-  .c3 {
-    width: 100%;
-  }
-}
-
 @media (min-width:768px) {
-  .c4 {
+  .c2 {
     padding-left: 20px;
     padding-right: 20px;
     width: 100%;
   }
 }
 
-<div
-  className="c0 c1 configweb__Base-sc-1adgnqc-2 c0 configweb__Base-sc-1adgnqc-0 c1 css-view-1dbjc4n"
->
+@media (min-width:1024px) {
+  .c2 {
+    width: 100%;
+  }
+}
+
+<configweb__Base>
   <div
-    className="c2 responsiveweb__SliceContainer-sc-2kg7gs-0 c2 css-view-1dbjc4n"
+    className="c0 configweb__Base-sc-1adgnqc-0 configweb__Base-sc-1adgnqc-2 c0 css-view-1dbjc4n"
   >
-    <div
-      className="c3 c4 c5 responsiveweb__Base-aumpme-4 c3 responsiveweb__Base-aumpme-2 c4 responsiveweb__Base-aumpme-1 c5 css-view-1dbjc4n"
-    >
+    <responsiveweb__SliceContainer>
       <div
-        className="c6 responsiveweb__ChildContainer-aumpme-0 c6 css-view-1dbjc4n"
+        className="c1 responsiveweb__SliceContainer-sc-2kg7gs-0 c1 css-view-1dbjc4n"
       >
-        <div
-          className="css-text-76zvg2"
-        >
-          standard-1
-        </div>
+        <responsiveweb__Base>
+          <div
+            className="c2 responsiveweb__Base-aumpme-1 responsiveweb__Base-aumpme-2 responsiveweb__Base-aumpme-4 c2 css-view-1dbjc4n"
+          >
+            <responsiveweb__ChildContainer>
+              <div
+                className="c3 responsiveweb__ChildContainer-aumpme-0 c3 css-view-1dbjc4n"
+              >
+                <div
+                  className="css-text-76zvg2"
+                >
+                  standard-1
+                </div>
+              </div>
+            </responsiveweb__ChildContainer>
+            <responsiveweb>
+              <div
+                className="c4 responsiveweb-sc-2kg7gs-1 c4 css-view-1dbjc4n"
+              />
+            </responsiveweb>
+            <responsiveweb__ChildContainer>
+              <div
+                className="c3 responsiveweb__ChildContainer-aumpme-0 c3 css-view-1dbjc4n"
+              >
+                <div
+                  className="css-text-76zvg2"
+                >
+                  standard-2
+                </div>
+              </div>
+            </responsiveweb__ChildContainer>
+            <responsiveweb>
+              <div
+                className="c4 responsiveweb-sc-2kg7gs-1 c4 css-view-1dbjc4n"
+              />
+            </responsiveweb>
+            <responsiveweb__ChildContainer>
+              <div
+                className="c3 responsiveweb__ChildContainer-aumpme-0 c3 css-view-1dbjc4n"
+              >
+                <div
+                  className="css-text-76zvg2"
+                >
+                  standard-3
+                </div>
+              </div>
+            </responsiveweb__ChildContainer>
+          </div>
+        </responsiveweb__Base>
       </div>
-      <div
-        className="c7 responsiveweb-sc-2kg7gs-1 c7 css-view-1dbjc4n"
-      />
-      <div
-        className="c6 responsiveweb__ChildContainer-aumpme-0 c6 css-view-1dbjc4n"
-      >
-        <div
-          className="css-text-76zvg2"
-        >
-          standard-2
-        </div>
-      </div>
-      <div
-        className="c7 responsiveweb-sc-2kg7gs-1 c7 css-view-1dbjc4n"
-      />
-      <div
-        className="c6 responsiveweb__ChildContainer-aumpme-0 c6 css-view-1dbjc4n"
-      >
-        <div
-          className="css-text-76zvg2"
-        >
-          standard-3
-        </div>
-      </div>
-    </div>
+    </responsiveweb__SliceContainer>
   </div>
-</div>
+</configweb__Base>
 `;

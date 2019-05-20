@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`default styles 1`] = `
-.c2 {
+.c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -18,23 +18,23 @@ exports[`default styles 1`] = `
   justify-content: center;
 }
 
-.c1 .supportImageContainerClass {
+.c0 .supportImageContainerClass {
   display: none;
 }
 
-.c1 .supportSummaryClass {
+.c0 .supportSummaryClass {
   display: none;
 }
 
-.c1 .summaryHidden {
+.c0 .summaryHidden {
   display: none;
 }
 
-.c1 .leadSummary125Class {
+.c0 .leadSummary125Class {
   display: block;
 }
 
-.c5 {
+.c2 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -50,7 +50,7 @@ exports[`default styles 1`] = `
   width: 100%;
 }
 
-.c8 {
+.c3 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -65,18 +65,18 @@ exports[`default styles 1`] = `
 }
 
 @media (-webkit-min-device-pixel-ratio:2) {
-  .c2 {
+  .c1 {
     border-bottom-width: 0.5px;
   }
 }
 
 @media (min-width:768px) {
-  .c1 .leadHeadlineClass {
+  .c0 .leadHeadlineClass {
     font-size: 30px;
     line-height: 30px;
   }
 
-  .c1 .leadImageContainerClass {
+  .c0 .leadImageContainerClass {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
@@ -84,7 +84,7 @@ exports[`default styles 1`] = `
     min-width: auto;
   }
 
-  .c1 .leadContentContainerClass {
+  .c0 .leadContentContainerClass {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
@@ -96,15 +96,15 @@ exports[`default styles 1`] = `
     min-width: 300px;
   }
 
-  .c1 .supportImageContainerClass {
+  .c0 .supportImageContainerClass {
     display: block;
   }
 
-  .c1 .leadSummary125Class {
+  .c0 .leadSummary125Class {
     display: block;
   }
 
-  .c1 .leadSummary175Class {
+  .c0 .leadSummary175Class {
     display: none;
   }
 }
@@ -122,7 +122,7 @@ exports[`default styles 1`] = `
 }
 
 @media (min-width:768px) {
-  .c5 {
+  .c2 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -131,7 +131,7 @@ exports[`default styles 1`] = `
 }
 
 @media (min-width:768px) {
-  .c4 {
+  .c2 {
     padding-left: 0px;
     padding-right: 0px;
     width: 80.8%;
@@ -139,20 +139,20 @@ exports[`default styles 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c3 {
+  .c2 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c7 {
+  .c3 {
     padding-left: 0;
     padding-right: 0;
   }
 }
 
 @media (min-width:1024px) {
-  .c6 {
+  .c3 {
     -webkit-box-flex: 1.5;
     -webkit-flex-grow: 1.5;
     -ms-flex-positive: 1.5;
@@ -252,16 +252,16 @@ exports[`default styles 1`] = `
     </h3>
   </div>
   <div
-    className="c0 c1 configweb__Base-sc-11p999w-2 c0 configweb__Base-sc-11p999w-0 c1 css-view-1dbjc4n"
+    className="c0 configweb__Base-sc-11p999w-0 configweb__Base-sc-11p999w-2 c0 css-view-1dbjc4n"
   >
     <div
-      className="c2 responsiveweb__SliceContainer-sc-2kg7gs-0 c2 css-view-1dbjc4n"
+      className="c1 responsiveweb__SliceContainer-sc-2kg7gs-0 c1 css-view-1dbjc4n"
     >
       <div
-        className="c3 c4 c5 responsiveweb__Base-sc-1xpiscc-3 c3 responsiveweb__Base-sc-1xpiscc-2 c4 responsiveweb__Base-sc-1xpiscc-0 c5 css-view-1dbjc4n"
+        className="c2 responsiveweb__Base-sc-1xpiscc-0 responsiveweb__Base-sc-1xpiscc-2 responsiveweb__Base-sc-1xpiscc-3 c2 css-view-1dbjc4n"
       >
         <div
-          className="c6 c7 c8 responsiveweb__Base-sc-1xpiscc-7 c6 responsiveweb__Base-sc-1xpiscc-6 c7 responsiveweb__Base-sc-1xpiscc-4 c8 css-view-1dbjc4n"
+          className="c3 responsiveweb__Base-sc-1xpiscc-4 responsiveweb__Base-sc-1xpiscc-6 responsiveweb__Base-sc-1xpiscc-7 c3 css-view-1dbjc4n"
         >
           <Link>
             <div
