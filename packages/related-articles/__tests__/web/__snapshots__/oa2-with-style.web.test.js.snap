@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`default styles 1`] = `
-.c4 {
+.c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -18,11 +18,11 @@ exports[`default styles 1`] = `
   justify-content: center;
 }
 
-.c3 .opinionContentContainerClass {
+.c0 .opinionContentContainerClass {
   min-height: 250px;
 }
 
-.c3 .opinionImageContainerClass {
+.c0 .opinionImageContainerClass {
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -32,25 +32,25 @@ exports[`default styles 1`] = `
   right: 0;
 }
 
-.c3 .supportImageContainerClass {
+.c0 .supportImageContainerClass {
   display: none;
 }
 
-.c3 .supportSummaryClass {
+.c0 .supportSummaryClass {
   display: none;
 }
 
-.c3 .summaryHidden {
+.c0 .summaryHidden {
   display: none;
 }
 
-.c3 .opinionSummary125Class {
+.c0 .opinionSummary125Class {
   display: block;
   padding-right: 20px;
   width: 60%;
 }
 
-.c5 {
+.c2 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -66,7 +66,7 @@ exports[`default styles 1`] = `
   width: 100%;
 }
 
-.c8 {
+.c3 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -80,48 +80,48 @@ exports[`default styles 1`] = `
 }
 
 @media (-webkit-min-device-pixel-ratio:2) {
-  .c4 {
+  .c1 {
     border-bottom-width: 0.5px;
   }
 }
 
 @media (min-width:520px) {
-  .c3 .opinionContentContainerClass {
+  .c0 .opinionContentContainerClass {
     min-height: 200px;
   }
 
-  .c3 .opinionHeadlineClass {
+  .c0 .opinionHeadlineClass {
     padding-right: 30px;
     width: 80%;
   }
 }
 
 @media (min-width:520px) {
-  .c2 .opinionImageContainerClass {
+  .c0 .opinionImageContainerClass {
     min-width: 130px;
   }
 }
 
 @media (min-width:768px) {
-  .c1 .opinionBylineClass,
-  .c1 .opinionHeadlineClass {
+  .c0 .opinionBylineClass,
+  .c0 .opinionHeadlineClass {
     font-size: 30px;
     line-height: 30px;
     width: 100%;
   }
 
-  .c1 .opinionContentContainerClass {
+  .c0 .opinionContentContainerClass {
     min-width: auto;
     padding-right: 55px;
   }
 
-  .c1 .opinionImageContainerClass {
+  .c0 .opinionImageContainerClass {
     max-width: 167px;
     min-width: auto;
     position: relative;
   }
 
-  .c1 .supportImageContainerClass {
+  .c0 .supportImageContainerClass {
     display: block;
   }
 }
@@ -141,34 +141,34 @@ exports[`default styles 1`] = `
 }
 
 @media (min-width:768px) {
-  .c5 {
+  .c2 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
     width: 80.8%;
   }
 
-  .c5 a {
+  .c2 a {
     display: block;
     height: 100%;
   }
 }
 
 @media (min-width:1024px) {
-  .c5 {
+  .c2 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c8 a > div,
-  .c8 a > div > div {
+  .c3 a > div,
+  .c3 a > div > div {
     height: 100%;
   }
 }
 
 @media (min-width:768px) {
-  .c7 {
+  .c3 {
     -webkit-box-flex: 0;
     -webkit-flex-grow: 0;
     -ms-flex-positive: 0;
@@ -179,7 +179,7 @@ exports[`default styles 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c6 {
+  .c3 {
     border-bottom: none;
     margin-bottom: 0;
     min-width: auto;
@@ -282,16 +282,16 @@ exports[`default styles 1`] = `
     </h3>
   </div>
   <div
-    className="c0 c1 c2 c3 configweb__Base-cj50u7-4 c0 configweb__Base-cj50u7-3 c1 configweb__Base-cj50u7-1 c2 configweb__Base-cj50u7-0 c3 css-view-1dbjc4n"
+    className="c0 configweb__Base-cj50u7-0 configweb__Base-cj50u7-1 configweb__Base-cj50u7-3 configweb__Base-cj50u7-4 c0 css-view-1dbjc4n"
   >
     <div
-      className="c4 responsiveweb__SliceContainer-sc-2kg7gs-0 c4 css-view-1dbjc4n"
+      className="c1 responsiveweb__SliceContainer-sc-2kg7gs-0 c1 css-view-1dbjc4n"
     >
       <div
-        className="c5 responsiveweb-fgzeui-0 c5 css-view-1dbjc4n"
+        className="c2 responsiveweb-fgzeui-0 c2 css-view-1dbjc4n"
       >
         <div
-          className="c6 c7 c8 responsiveweb__Base-fgzeui-5 c6 responsiveweb__Base-fgzeui-3 c7 responsiveweb__Base-fgzeui-1 c8 css-view-1dbjc4n"
+          className="c3 responsiveweb__Base-fgzeui-1 responsiveweb__Base-fgzeui-3 responsiveweb__Base-fgzeui-5 c3 css-view-1dbjc4n"
         >
           <Link>
             <div
