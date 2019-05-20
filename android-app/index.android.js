@@ -6,6 +6,8 @@ import {
   Topic
 } from "@times-components/pages";
 
+console.disableYellowBox = true;
+
 AppRegistry.registerComponent("Article", () => Article);
 AppRegistry.registerComponent("AuthorProfile", () => AuthorProfile);
 AppRegistry.registerComponent("Section", () => Section);

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/android-app",
-  "version": "0.14.69",
+  "version": "1.0.0",
   "license": "BSD-3-Clause",
   "scripts": {
     "build": "./gradlew clean && ./gradlew generateReactArchives && ./gradlew assemble && ./gradlew publish",
@@ -16,6 +16,7 @@
     "react": "16.6.3",
     "react-native": "0.58.6",
     "react-native-svg": "9.4.0",
+    "react-native-webview": "5.10.0",
     "url-polyfill": "1.1.0"
   },
   "devDependencies": {

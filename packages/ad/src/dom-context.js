@@ -1,5 +1,6 @@
 import React, { PureComponent } from "react";
-import { WebView, View, Linking, Platform } from "react-native";
+import { View, Linking, Platform } from "react-native";
+import { WebView } from "react-native-webview";
 import webviewEventCallbackSetup from "./utils/webview-event-callback-setup";
 import logger from "./utils/logger";
 import { propTypes, defaultProps } from "./dom-context-prop-types";

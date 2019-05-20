@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Linking, Platform, View, WebView } from "react-native";
+import { Linking, Platform, View } from "react-native";
+import { WebView } from "react-native-webview";
 import PropTypes from "prop-types";
 import webviewEventCallbackSetup from "./webview-event-callback-setup";
 
@@ -13,13 +14,13 @@ class InteractiveWrapper extends Component {
       android: {
         injectedJavaScript: `(${webviewEventCallbackSetup})({window, os: "${
           Platform.OS
-        }"});`
+          }"});`
       },
       // https://github.com/facebook/react-native/issues/10865
       ios: {
         injectedJavaScript: `window.reactBridgePostMessage = window.postMessage; window.postMessage = String(Object.hasOwnProperty).replace('hasOwnProperty', 'postMessage'); (${webviewEventCallbackSetup})({window, os: "${
           Platform.OS
-        }"});`
+          }"});`
       }
     });
   }
@@ -83,10 +84,12 @@ class InteractiveWrapper extends Component {
     const { height } = this.state;
 
     const uri = `${editorialLambdaProtocol}${editorialLambdaOrigin}/${editorialLambdaSlug}/${id}?dev=${dev}&env=${environment}&platform=${platform}&version=${version}`;
+    console.log("Interactive Height:", id, height, uri);
 
     return (
       <View style={{ height }}>
         <WebView
+          height={height}
           onLoadEnd={this.onLoadEnd}
           onMessage={this.onMessage}
           onNavigationStateChange={this.handleNavigationStateChange}
