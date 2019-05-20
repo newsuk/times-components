@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.11.5](https://github.com/newsuk/times-components/compare/@times-components/utils@4.11.4...@times-components/utils@4.11.5) (2019-05-20)
+
+
+### Bug Fixes
+
+* Move HoverIcon to web only exports ([#1977](https://github.com/newsuk/times-components/issues/1977)) ([7e19f80](https://github.com/newsuk/times-components/commit/7e19f80))
+
+
+
+
+
 ## [4.11.4](https://github.com/newsuk/times-components/compare/@times-components/utils@4.11.3...@times-components/utils@4.11.4) (2019-05-20)
 
 **Note:** Version bump only for package @times-components/utils
