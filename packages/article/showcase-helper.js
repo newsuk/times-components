@@ -205,7 +205,6 @@ const renderArticle = ({
   section,
   template,
   isTeaser,
-  isLoggedIn,
   isMeteredExpired
 }) => (
   <ArticleProvider debounceTimeMs={0} id={id}>
@@ -307,7 +306,8 @@ const renderArticleConfig = ({
   const withStandfirst = boolean("Standfirst", true);
   const withVideo = boolean("Video", true);
   const withTeaser = !isTeaser && boolean("Teaser (only Web)", false);
-  const isMeteredExpiredPage = !isMeteredExpired && boolean('Metered expired page (only web)', false);
+  const isMeteredExpiredPage =
+    !isMeteredExpired && boolean("Metered expired page (only web)", false);
 
   const scale = hasScaling ? selectScales(select) : null;
   const section = selectSection(select);
@@ -352,7 +352,6 @@ const renderArticleConfig = ({
             inDepthBackgroundColour,
             inDepthTextColour,
             isTeaser: isTeaser || withTeaser,
-            isLoggedIn,
             isMeteredExpired: isMeteredExpired || isMeteredExpiredPage,
             scale,
             section,
