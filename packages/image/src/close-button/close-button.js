@@ -3,6 +3,7 @@ import { Image } from "react-native";
 import PropTypes from "prop-types";
 import Button from "@times-components/link";
 import styles from "../styles";
+import closeImagePath from "../../assets/close-button.png";
 
 const CloseButton = ({ isTablet, onPress }) => (
   <Button
@@ -11,8 +12,7 @@ const CloseButton = ({ isTablet, onPress }) => (
   >
     <Image
       resizeMode="contain"
-      // eslint-disable-next-line global-require
-      source={require("../../assets/close-button.png")}
+      source={closeImagePath}
       style={styles.closeButtonImage}
     />
   </Button>

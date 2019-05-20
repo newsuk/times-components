@@ -1,8 +1,6 @@
 import React from "react";
 import { Image } from "react-native";
-
-// eslint-disable-next-line global-require
-const logoPath = require("../../assets/t.png");
+import logoPath from "../../assets/t.png";
 
 function T() {
   return (
