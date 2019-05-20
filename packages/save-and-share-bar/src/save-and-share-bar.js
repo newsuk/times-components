@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { View, Text, Clipboard } from "react-native";
+import { ActivityIndicator, View, Text, Clipboard } from "react-native";
 import {
   IconEmail,
   IconFacebook,
@@ -12,9 +12,6 @@ import withTrackEvents from "./tracking/with-track-events";
 import SharingApiUrls from "./constants";
 import styles from "./styles";
 import BarItem from "./bar-item";
-
-import getTokenisedEmailUrlMock from "./utils/mock-get-tokenised-email-url";
-// import getTokenisedEmailUrlApi from "./get-tokenised-email-url-api";
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
 class SaveAndShareBar extends Component {
@@ -36,24 +33,33 @@ class SaveAndShareBar extends Component {
 
   handleOnShareEmailPress() {
     /* eslint-env browser */
-    const { articleHeadline, articleUrl } = this.props;
-    // getTokenisedEmailUrlApi(articleUrl).then(res => {
-    //   const mailtoEmailUrl = `mailto:?subject=${articleHeadline} from The Times&body=I thought you would be interested in this story from The Times%0A%0A${articleHeadline}%0A%0A${res.data.article.tokenisedUrl}`;
-    //   // window.location = mailtoEmailUrl;
-    // });
+    const { articleHeadline, articleId, onShareOnEmail } = this.props;
+    this.setState({ isLoading: true });
 
-    getTokenisedEmailUrlMock(articleUrl).then(res => {
-      const mailtoEmailUrl = `mailto:?subject=${articleHeadline} from The Times&body=I thought you would be interested in this story from The Times%0A%0A${articleHeadline}%0A%0A${res.data.article.tokenisedUrl}`;
-      window.location = mailtoEmailUrl;
-    });
+    onShareOnEmail(articleId)
+      .then(res => {
+        const { loading, data } = res;
 
+        if (!loading && data) {
+          this.setState({ isLoading: false });
+          const {
+            article: { tokenisedUrl: url }
+          } = data;
+
+          const mailtoEmailUrl = `mailto:?subject=${articleHeadline} from The Times&body=I thought you would be interested in this story from The Times%0A%0A${articleHeadline}%0A%0A${url}`;
+          window.location = mailtoEmailUrl;
+        }
+      })
+      .catch(error => {
+        this.setState({ isLoading: false });
+        console.error("Error in connecting to api", error);
+      });
   }
 
   render() {
     const {
       articleId,
       articleUrl,
-      onSaveToMyArticles,
       onShareOnFB,
       onShareOnTwitter,
       saveApi
@@ -66,11 +72,15 @@ class SaveAndShareBar extends Component {
         <View style={styles.rowItem}>
           <Text style={styles.label}>Share</Text>
           <BarItem onPress={this.handleOnShareEmailPress}>
-            <IconEmail
-              fillColour="currentColor"
-              height={styles.svgIcon.height}
-              title="Share by email client"
-            />
+            {isLoading ? (
+              <ActivityIndicator size="small" style={styles.activityLoader} />
+            ) : (
+              <IconEmail
+                fillColour="currentColor"
+                height={styles.svgIcon.height}
+                title="Share by email client"
+              />
+            )}
           </BarItem>
           <BarItem
             onPress={onShareOnTwitter}
@@ -124,8 +134,8 @@ SaveAndShareBar.propTypes = {
   articleId: PropTypes.string.isRequired,
   articleUrl: PropTypes.string.isRequired,
   articleHeadline: PropTypes.string.isRequired,
+  onShareOnEmail: PropTypes.func.isRequired,
   onCopyLink: PropTypes.func.isRequired,
-  onSaveToMyArticles: PropTypes.func.isRequired,
   onShareOnFB: PropTypes.func,
   onShareOnTwitter: PropTypes.func,
   saveApi: PropTypes.shape({

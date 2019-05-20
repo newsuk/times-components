@@ -23,6 +23,7 @@ import {
   isStickyAllowed
 } from "./styles/responsive";
 import Head from "./head";
+import getTokenisedEmailUrlApi from "@times-components/save-and-share-bar/src/get-tokenised-email-url-api";
 
 const adStyle = {
   marginBottom: 0
@@ -142,6 +143,7 @@ class ArticleSkeleton extends Component {
                                 articleHeadline={headline}
                                 articleUrl={url}
                                 onCopyLink={() => {}}
+                                onShareOnEmail={getTokenisedEmailUrlApi}
                                 saveApi={saveApi}
                               />
                             </div>
