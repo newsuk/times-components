@@ -1,6 +1,6 @@
 {
   "name": "@times-components/depend",
-  "version": "2.1.18",
+  "version": "2.1.19",
   "description": "dependency analyzer and fixer",
   "main": "dist/depend",
   "scripts": {
@@ -52,7 +52,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@times-components/eslint-config-thetimes": "0.8.11",
+    "@times-components/eslint-config-thetimes": "0.8.12",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "24.8.0",
     "depcheck": "0.6.9",

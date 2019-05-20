@@ -1,6 +1,6 @@
 {
   "name": "@times-components/mocks",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "Shared mocks for the tests",
   "main": "dist/index",
   "dev": "src/index",
@@ -31,10 +31,10 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
-    "@times-components/styleguide": "3.28.17"
+    "@times-components/styleguide": "3.28.18"
   },
   "devDependencies": {
-    "@times-components/eslint-config-thetimes": "0.8.11",
+    "@times-components/eslint-config-thetimes": "0.8.12",
     "babel-cli": "6.26.0",
     "eslint": "5.9.0",
     "jest": "24.8.0",
