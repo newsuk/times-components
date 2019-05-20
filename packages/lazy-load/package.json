@@ -1,6 +1,6 @@
 {
   "name": "@times-components/lazy-load",
-  "version": "0.4.33",
+  "version": "0.4.34",
   "description": "Use IntersectionObserver to lazy load resources",
   "main": "dist/lazy-load",
   "dev": "src/lazy-load",
