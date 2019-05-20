@@ -6,6 +6,13 @@ const styles = {
     flexDirection: "row",
     justifyContent: "space-between"
   },
+  activityLoader: {
+    borderRadius: 9999,
+    height: 40,
+    marginLeft: spacing(1),
+    overflow: "hidden",
+    width: 40
+  },
   label: {
     ...fontFactory({
       font: "supporting",

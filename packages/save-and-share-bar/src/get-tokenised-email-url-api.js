@@ -3,4 +3,5 @@ import { makeClient } from "@times-components/utils";
 
 const client = makeClient();
 
-export default url => client.query({ query: getTokenisedEmailUrl, variables: { url } });;
+export default id =>
+  client.query({ query: getTokenisedEmailUrl, variables: { id } });

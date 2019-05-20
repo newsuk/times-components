@@ -32,14 +32,12 @@ WithTrackingContext.propTypes = {
   articleUrl: PropTypes.string.isRequired,
   articleId: PropTypes.string.isRequired,
   articleHeadline: PropTypes.string.isRequired,
-  onCopyLink: PropTypes.func.isRequired,
-  onSaveToMyArticles: PropTypes.func.isRequired
+  onCopyLink: PropTypes.func.isRequired
 };
 
 export default () => {
   describe("save and share tracking events", () => {
     const onCopyLink = jest.fn();
-    const onSaveToMyArticles = jest.fn();
     const onShareOnFB = jest.fn();
     const onShareOnTwitter = jest.fn();
     const articleId = "id-123";
@@ -58,7 +56,6 @@ export default () => {
           articleId={articleId}
           articleHeadline={articleHeadline}
           onCopyLink={onCopyLink}
-          onSaveToMyArticles={onSaveToMyArticles}
           onShareOnFB={onShareOnFB}
           onShareOnTwitter={onShareOnTwitter}
           saveApi={mockSaveApi}
@@ -98,20 +95,6 @@ export default () => {
 
       expect(call).toMatchSnapshot();
       expect(onCopyLink.mock.calls).toMatchSnapshot("onCopyLink");
-    });
-
-    it("when press save to my articles", () => {
-      const saveToMyArticlesBarItem = testInstance.root.findAllByType(
-        BarItem
-      )[3];
-      saveToMyArticlesBarItem.props.onPress();
-
-      const [[call]] = stream.mock.calls;
-
-      expect(call).toMatchSnapshot();
-      expect(onSaveToMyArticles.mock.calls).toMatchSnapshot(
-        "onSaveToMyArticles"
-      );
     });
   });
 };

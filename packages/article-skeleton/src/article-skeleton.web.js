@@ -142,8 +142,6 @@ class ArticleSkeleton extends Component {
                                 articleHeadline={headline}
                                 articleUrl={url}
                                 onCopyLink={() => {}}
-                                onSaveToMyArticles={() => {}}
-                                onShareOnEmail={() => {}}
                                 saveApi={saveApi}
                               />
                             </div>

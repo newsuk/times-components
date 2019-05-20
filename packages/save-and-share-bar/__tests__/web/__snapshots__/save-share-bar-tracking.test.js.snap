@@ -17,19 +17,6 @@ Array [
 ]
 `;
 
-exports[`save and share tracking events when press save to my articles 1`] = `
-Object {
-  "action": "Pressed",
-  "attrs": Object {
-    "articleHeadline": "test-headline",
-    "articleId": "id-123",
-  },
-  "component": "ArticleCopyLink",
-}
-`;
-
-exports[`save and share tracking events when press save to my articles: onSaveToMyArticles 1`] = `Array []`;
-
 exports[`save and share tracking events when press share on facebook 1`] = `
 Object {
   "action": "Pressed",
