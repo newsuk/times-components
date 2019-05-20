@@ -37,6 +37,7 @@ class SectionPage extends Component {
     this.syncAppData = this.syncAppData.bind(this);
     this.updateSectionData = this.updateSectionData.bind(this);
     this.onArticleSavePress = this.onArticleSavePress.bind(this);
+    this.isSyncing = false;
   }
 
   componentDidMount() {
@@ -69,27 +70,41 @@ class SectionPage extends Component {
     });
   }
 
-  syncAppData() {
+  async syncAppData() {
     const {
       section: { name }
     } = this.state;
-    if (name === "PuzzleSection" && getOpenedPuzzleCount) {
-      getOpenedPuzzleCount().then(count => {
-        this.setState({ recentlyOpenedPuzzleCount: count });
-      });
+
+    if (this.isSyncing) {
+      return;
     }
 
-    if (getSavedArticles) {
-      getSavedArticles().then(articleIds => {
-        const savedArticles = articleIds ? {} : null;
-        articleIds.forEach(id => {
-          savedArticles[id] = true;
-        });
+    this.isSyncing = true;
+
+    try {
+      if (name === "PuzzleSection" && getOpenedPuzzleCount) {
+        const count = await getOpenedPuzzleCount();
+
+        this.setState({ recentlyOpenedPuzzleCount: count });
+      }
+
+      if (getSavedArticles) {
+        const articleIds = await getSavedArticles();
+        const savedArticles = !articleIds
+          ? null
+          : articleIds.reduce((saved, id) => {
+              // eslint-disable-next-line no-param-reassign
+              saved[id] = true;
+
+              return saved;
+            }, {});
 
         this.setState({
           savedArticles
         });
-      });
+      }
+    } finally {
+      this.isSyncing = false;
     }
   }
 

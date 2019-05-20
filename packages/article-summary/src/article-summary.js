@@ -20,7 +20,37 @@ function renderAst(ast) {
   return renderTrees(summarise(ast), renderer);
 }
 
-const ArticleSummary = props => {
+function Label(props) {
+  const { title, isVideo } = props;
+
+  if (!title) {
+    return null;
+  }
+
+  return (
+    <View style={styles.labelWrapper}>
+      {isVideo ? <VideoLabel {...props} /> : <ArticleLabel {...props} />}
+    </View>
+  );
+}
+
+function Byline(props) {
+  const { ast, isOpinionByline, bylineClass } = props;
+
+  if (!ast || ast.length === 0) return null;
+
+  const BylineComponent = isOpinionByline
+    ? ArticleBylineOpinion
+    : ArticleByline;
+
+  return (
+    <Text>
+      <BylineComponent {...props} className={bylineClass} />
+    </Text>
+  );
+}
+
+function ArticleSummary(props) {
   const {
     bylineProps,
     content,
@@ -32,52 +62,26 @@ const ArticleSummary = props => {
     strapline
   } = props;
 
-  const renderByline = () => {
-    if (!bylineProps.ast || bylineProps.ast.length === 0) return null;
-
-    const Byline = bylineProps.isOpinionByline
-      ? ArticleBylineOpinion
-      : ArticleByline;
-
-    return (
-      <Text>
-        <Byline {...bylineProps} className={bylineProps.bylineClass} />
-      </Text>
-    );
-  };
-
-  const renderLabel = () => {
-    if (labelProps && labelProps.title) {
-      return (
-        <View style={styles.labelWrapper}>
-          {labelProps.isVideo ? (
-            <VideoLabel {...labelProps} />
-          ) : (
-            <ArticleLabel {...labelProps} />
-          )}
-        </View>
-      );
-    }
-    return null;
-  };
+  const { isOpinionByline = false } = bylineProps || {};
+  const byline = bylineProps ? <Byline {...bylineProps} /> : null;
 
   return (
     <View style={style}>
-      {renderLabel()}
-      {bylineProps && bylineProps.isOpinionByline ? renderByline() : null}
-      {headline()}
-      {strapline()}
-      {content()}
-      {flags()}
+      {labelProps ? <Label {...labelProps} /> : null}
+      {isOpinionByline && byline}
+      {headline}
+      {strapline}
+      {content}
+      {flags}
       {datePublicationProps ? (
         <Text style={styles.metaText} testID="datePublication">
           <DatePublication {...datePublicationProps} />
         </Text>
       ) : null}
-      {bylineProps && !bylineProps.isOpinionByline ? renderByline() : null}
+      {!isOpinionByline && byline}
     </View>
   );
-};
+}
 
 ArticleSummary.propTypes = {
   bylineProps: PropTypes.shape({
@@ -85,30 +89,30 @@ ArticleSummary.propTypes = {
     bylineClass: PropTypes.string,
     isOpinionByline: PropTypes.bool
   }),
-  content: PropTypes.func,
+  content: PropTypes.node,
   datePublicationProps: PropTypes.shape({
     date: PropTypes.string,
     publication: PropTypes.string
   }),
-  flags: PropTypes.func,
-  headline: PropTypes.func,
+  flags: PropTypes.node,
+  headline: PropTypes.node,
   labelProps: PropTypes.shape({
     color: PropTypes.string,
     isVideo: PropTypes.bool,
     title: PropTypes.string
   }),
-  strapline: PropTypes.func,
+  strapline: PropTypes.node,
   style: PropTypes.shape({})
 };
 
 ArticleSummary.defaultProps = {
   bylineProps: null,
-  content: () => null,
+  content: null,
   datePublicationProps: null,
-  flags: () => null,
-  headline: () => null,
+  flags: null,
+  headline: null,
   labelProps: null,
-  strapline: () => null,
+  strapline: null,
   style: null
 };
 

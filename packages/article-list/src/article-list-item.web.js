@@ -67,7 +67,7 @@ const ArticleListItem = props => {
       date: publishedTime,
       publication: publicationName
     },
-    headline: () => (
+    headline: (
       <ArticleSummaryHeadline headline={getHeadline(headline, shortHeadline)} />
     ),
     labelProps: {
@@ -80,20 +80,20 @@ const ArticleListItem = props => {
   const children = showImage ? (
     <ArticleSummary
       {...childProps}
-      content={() => <ArticleSummaryContent ast={summary} />}
+      content={<ArticleSummaryContent ast={summary} />}
     />
   ) : (
     <Fragment>
       <ListItemLongText>
         <ArticleSummary
           {...childProps}
-          content={() => <ArticleSummaryContent ast={longSummary} />}
+          content={<ArticleSummaryContent ast={longSummary} />}
         />
       </ListItemLongText>
       <ListItemShortText>
         <ArticleSummary
           {...childProps}
-          content={() => <ArticleSummaryContent ast={shortSummary} />}
+          content={<ArticleSummaryContent ast={shortSummary} />}
         />
       </ListItemShortText>
     </Fragment>

@@ -20,7 +20,26 @@ jest.mock("@times-components/section", () => {
   );
 });
 
+function deferred() {
+  let resolve;
+  let reject;
+  const promise = new Promise((pResolve, pReject) => {
+    resolve = pResolve;
+    reject = pReject;
+  });
+  return { resolve, promise, reject };
+}
+
 export default () => {
+  beforeEach(() => {
+    const {
+      SectionEvents: { getSavedArticles, onArticleSavePress }
+    } = NativeModules;
+
+    getSavedArticles.mockReset();
+    onArticleSavePress.mockReset();
+  });
+
   it("saved article integration", async () => {
     const {
       SectionEvents: { getSavedArticles, onArticleSavePress }
@@ -49,5 +68,38 @@ export default () => {
     onPress(false, "456");
     await delay(0);
     expect(testInstance.toJSON()).toMatchSnapshot("unsave article 456");
+  });
+
+  it("won't trigger getSavedArticles multiple times simultaneously", async () => {
+    const {
+      SectionEvents: { getSavedArticles, onArticleSavePress }
+    } = NativeModules;
+
+    const { resolve, promise } = deferred();
+
+    getSavedArticles.mockReturnValue(promise);
+    onArticleSavePress.mockReturnValue(Promise.resolve(true));
+
+    const testInstance = TestRenderer.create(
+      <SectionPage section={{ name: "News", slices: [] }} />
+    );
+
+    const instance = testInstance.getInstance();
+
+    instance.componentDidMount();
+    instance.syncAppData();
+
+    await delay(0);
+
+    expect(getSavedArticles).toHaveBeenCalledTimes(1);
+
+    resolve(["123", "456"]);
+    await promise;
+
+    instance.syncAppData();
+
+    await promise;
+
+    expect(getSavedArticles).toHaveBeenCalledTimes(2);
   });
 };

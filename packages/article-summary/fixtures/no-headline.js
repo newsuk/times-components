@@ -10,7 +10,7 @@ export default ({
   label = defaultLabel,
   paragraph = defaultParagraph
 } = {}) => ({
-  content: () => (
+  content: (
     <ArticleSummaryContent
       ast={[
         {

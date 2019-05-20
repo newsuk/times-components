@@ -11,7 +11,7 @@ export default ({
   review1Title = defaultReview1Title,
   review2Title = defaultReview2Title
 } = {}) => ({
-  content: () => (
+  content: (
     <ArticleSummaryContent
       ast={[
         {
