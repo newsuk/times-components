@@ -38,10 +38,28 @@ export default {
           decorateAction,
           hasScaling: false,
           isTeaser: true,
+          isLoggedIn: false,
           link,
           select
         }),
       name: "Article teaser",
+      platform: "web",
+      type: "story"
+    },
+    {
+      component: ({ boolean, color, select }, { decorateAction }) =>
+        renderArticleConfig({
+          boolean,
+          color,
+          decorateAction,
+          hasScaling: false,
+          isTeaser: true,
+          isLoggedIn: true,
+          isMeteredExpired: true,
+          link,
+          select
+        }),
+      name: "Article metered expired",
       platform: "web",
       type: "story"
     }

@@ -7,6 +7,7 @@ import LazyLoad from "@times-components/lazy-load";
 import { spacing, breakpoints } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import Context from "@times-components/context";
+import { isLoggedIn, isMeteredExpired } from "@times-components/utils";
 import ArticleBody from "./article-body/article-body";
 import {
   articleSkeletonPropTypes,
@@ -151,67 +152,71 @@ class ArticleSkeleton extends Component {
         }}
       >
         <Context.Consumer>
-          {({ user }) => (
-            <Fragment>
-              <Head article={article} />
-              <AdComposer adConfig={adConfig}>
-                <LazyLoad rootMargin={spacing(10)} threshold={0.5}>
-                  {({ observed, registerNode }) => (
-                    <Fragment>
-                      <HeaderAdContainer key="headerAd">
-                        <Ad
-                          contextUrl={url}
-                          section={section}
-                          slotName="header"
-                          style={adStyle}
-                        />
-                      </HeaderAdContainer>
-                      <MainContainer>
-                        <Header
-                          topicsAllowed={user.isLoggedIn}
-                          width={articleWidth}
-                        />
-                        {(savingEnabled || sharingEnabled) &&
-                          this.renderSaveAndShareBar({
-                            articleId,
-                            headline,
-                            url,
-                            isSticky,
-                            allowSaveAndShare: user.isLoggedIn,
-                            savingEnabled,
-                            sharingEnabled
-                          })}
-                        <BodyContainer>
-                          <ArticleBody
-                            content={newContent}
+          {({ user }) => {
+            const isUserLoggedIn = isLoggedIn(user);
+            const isAllowed = isUserLoggedIn && !isMeteredExpired(user);
+            return (
+              <Fragment>
+                <Head article={article} />
+                <AdComposer adConfig={adConfig}>
+                  <LazyLoad rootMargin={spacing(10)} threshold={0.5}>
+                    {({ observed, registerNode }) => (
+                      <Fragment>
+                        <HeaderAdContainer key="headerAd">
+                          <Ad
                             contextUrl={url}
-                            observed={observed}
-                            registerNode={registerNode}
                             section={section}
+                            slotName="header"
+                            style={adStyle}
                           />
-                          <ArticleExtras
-                            analyticsStream={analyticsStream}
-                            articleId={articleId}
-                            commentsAllowed={user.isLoggedIn}
-                            commentsEnabled={commentsEnabled}
-                            registerNode={registerNode}
-                            relatedArticleAllowed={user.isLoggedIn}
-                            relatedArticleSlice={relatedArticleSlice}
-                            relatedArticlesVisible={
-                              !!observed.get("related-articles")
-                            }
-                            spotAccountId={spotAccountId}
-                            topics={topics}
-                            topicsAllowed={user.isLoggedIn}
+                        </HeaderAdContainer>
+                        <MainContainer>
+                          <Header
+                            topicsAllowed={isUserLoggedIn}
+                            width={articleWidth}
                           />
-                        </BodyContainer>
-                      </MainContainer>
-                    </Fragment>
-                  )}
-                </LazyLoad>
-              </AdComposer>
-            </Fragment>
-          )}
+                          {(savingEnabled || sharingEnabled) &&
+                            this.renderSaveAndShareBar({
+                              articleId,
+                              headline,
+                              url,
+                              isSticky,
+                              allowSaveAndShare: isUserLoggedIn,
+                              savingEnabled,
+                              sharingEnabled
+                            })}
+                          <BodyContainer>
+                            <ArticleBody
+                              content={newContent}
+                              contextUrl={url}
+                              observed={observed}
+                              registerNode={registerNode}
+                              section={section}
+                            />
+                            <ArticleExtras
+                              analyticsStream={analyticsStream}
+                              articleId={articleId}
+                              commentsAllowed={isAllowed}
+                              commentsEnabled={commentsEnabled}
+                              registerNode={registerNode}
+                              relatedArticleAllowed={isAllowed}
+                              relatedArticleSlice={relatedArticleSlice}
+                              relatedArticlesVisible={
+                                !!observed.get("related-articles")
+                              }
+                              spotAccountId={spotAccountId}
+                              topics={topics}
+                              topicsAllowed={isAllowed}
+                            />
+                          </BodyContainer>
+                        </MainContainer>
+                      </Fragment>
+                    )}
+                  </LazyLoad>
+                </AdComposer>
+              </Fragment>
+            );
+          }}
         </Context.Consumer>
       </article>
     );
