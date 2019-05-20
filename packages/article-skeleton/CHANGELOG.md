@@ -3,6 +3,95 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.6.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.6.1...@times-components/article-skeleton@1.6.2) (2019-05-20)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.6.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.6.0...@times-components/article-skeleton@1.6.1) (2019-05-20)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.6.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.5.5...@times-components/article-skeleton@1.6.0) (2019-05-17)
+
+
+### Features
+
+* (Replat 4657) Web - Respect disable Save/ Share flags on an article ([#1911](https://github.com/newsuk/times-components/issues/1911)) ([5d731bb](https://github.com/newsuk/times-components/commit/5d731bb))
+
+
+
+
+
+## [1.5.5](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.5.4...@times-components/article-skeleton@1.5.5) (2019-05-16)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.5.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.5.3...@times-components/article-skeleton@1.5.4) (2019-05-16)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.5.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.5.2...@times-components/article-skeleton@1.5.3) (2019-05-16)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.5.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.5.1...@times-components/article-skeleton@1.5.2) (2019-05-16)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.5.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.5.0...@times-components/article-skeleton@1.5.1) (2019-05-16)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.5.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.4.1...@times-components/article-skeleton@1.5.0) (2019-05-15)
+
+
+### Features
+
+* full width images on web ([#1954](https://github.com/newsuk/times-components/issues/1954)) ([adbdcdc](https://github.com/newsuk/times-components/commit/adbdcdc))
+
+
+
+
+
+## [1.4.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.4.0...@times-components/article-skeleton@1.4.1) (2019-05-15)
+
+
+### Bug Fixes
+
+* Android nested scroll ([#1951](https://github.com/newsuk/times-components/issues/1951)) ([7ade13a](https://github.com/newsuk/times-components/commit/7ade13a))
+
+
+
+
+
 # [1.4.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.3.1...@times-components/article-skeleton@1.4.0) (2019-05-15)
 
 

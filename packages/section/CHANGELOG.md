@@ -3,6 +3,89 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.13](https://github.com/newsuk/times-components/compare/@times-components/section@1.0.12...@times-components/section@1.0.13) (2019-05-20)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
+## [1.0.12](https://github.com/newsuk/times-components/compare/@times-components/section@1.0.11...@times-components/section@1.0.12) (2019-05-20)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
+## [1.0.11](https://github.com/newsuk/times-components/compare/@times-components/section@1.0.10...@times-components/section@1.0.11) (2019-05-17)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
+## [1.0.10](https://github.com/newsuk/times-components/compare/@times-components/section@1.0.9...@times-components/section@1.0.10) (2019-05-17)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
+## [1.0.9](https://github.com/newsuk/times-components/compare/@times-components/section@1.0.8...@times-components/section@1.0.9) (2019-05-16)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
+## [1.0.8](https://github.com/newsuk/times-components/compare/@times-components/section@1.0.7...@times-components/section@1.0.8) (2019-05-16)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
+## [1.0.7](https://github.com/newsuk/times-components/compare/@times-components/section@1.0.6...@times-components/section@1.0.7) (2019-05-16)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
+## [1.0.6](https://github.com/newsuk/times-components/compare/@times-components/section@1.0.5...@times-components/section@1.0.6) (2019-05-16)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
+## [1.0.5](https://github.com/newsuk/times-components/compare/@times-components/section@1.0.4...@times-components/section@1.0.5) (2019-05-16)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
+## [1.0.4](https://github.com/newsuk/times-components/compare/@times-components/section@1.0.3...@times-components/section@1.0.4) (2019-05-15)
+
+
+### Bug Fixes
+
+* Android nested scroll ([#1951](https://github.com/newsuk/times-components/issues/1951)) ([7ade13a](https://github.com/newsuk/times-components/commit/7ade13a))
+
+
+
+
+
 ## [1.0.3](https://github.com/newsuk/times-components/compare/@times-components/section@1.0.2...@times-components/section@1.0.3) (2019-05-15)
 
 **Note:** Version bump only for package @times-components/section

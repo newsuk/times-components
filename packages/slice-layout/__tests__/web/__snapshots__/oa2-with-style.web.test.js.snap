@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. a single child element 1`] = `
-.c4 {
+.c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -18,11 +18,11 @@ exports[`1. a single child element 1`] = `
   justify-content: center;
 }
 
-.c3 .opinionContentContainerClass {
+.c0 .opinionContentContainerClass {
   min-height: 250px;
 }
 
-.c3 .opinionImageContainerClass {
+.c0 .opinionImageContainerClass {
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
@@ -32,25 +32,25 @@ exports[`1. a single child element 1`] = `
   right: 0;
 }
 
-.c3 .supportImageContainerClass {
+.c0 .supportImageContainerClass {
   display: none;
 }
 
-.c3 .supportSummaryClass {
+.c0 .supportSummaryClass {
   display: none;
 }
 
-.c3 .summaryHidden {
+.c0 .summaryHidden {
   display: none;
 }
 
-.c3 .opinionSummary125Class {
+.c0 .opinionSummary125Class {
   display: block;
   padding-right: 20px;
   width: 60%;
 }
 
-.c5 {
+.c2 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -66,7 +66,7 @@ exports[`1. a single child element 1`] = `
   width: 100%;
 }
 
-.c8 {
+.c3 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -80,48 +80,48 @@ exports[`1. a single child element 1`] = `
 }
 
 @media (-webkit-min-device-pixel-ratio:2) {
-  .c4 {
+  .c1 {
     border-bottom-width: 0.5px;
   }
 }
 
 @media (min-width:520px) {
-  .c3 .opinionContentContainerClass {
+  .c0 .opinionContentContainerClass {
     min-height: 200px;
   }
 
-  .c3 .opinionHeadlineClass {
+  .c0 .opinionHeadlineClass {
     padding-right: 30px;
     width: 80%;
   }
 }
 
 @media (min-width:520px) {
-  .c2 .opinionImageContainerClass {
+  .c0 .opinionImageContainerClass {
     min-width: 130px;
   }
 }
 
 @media (min-width:768px) {
-  .c1 .opinionBylineClass,
-  .c1 .opinionHeadlineClass {
+  .c0 .opinionBylineClass,
+  .c0 .opinionHeadlineClass {
     font-size: 30px;
     line-height: 30px;
     width: 100%;
   }
 
-  .c1 .opinionContentContainerClass {
+  .c0 .opinionContentContainerClass {
     min-width: auto;
     padding-right: 55px;
   }
 
-  .c1 .opinionImageContainerClass {
+  .c0 .opinionImageContainerClass {
     max-width: 167px;
     min-width: auto;
     position: relative;
   }
 
-  .c1 .supportImageContainerClass {
+  .c0 .supportImageContainerClass {
     display: block;
   }
 }
@@ -141,34 +141,34 @@ exports[`1. a single child element 1`] = `
 }
 
 @media (min-width:768px) {
-  .c5 {
+  .c2 {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
     width: 80.8%;
   }
 
-  .c5 a {
+  .c2 a {
     display: block;
     height: 100%;
   }
 }
 
 @media (min-width:1024px) {
-  .c5 {
+  .c2 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c8 a > div,
-  .c8 a > div > div {
+  .c3 a > div,
+  .c3 a > div > div {
     height: 100%;
   }
 }
 
 @media (min-width:768px) {
-  .c7 {
+  .c3 {
     -webkit-box-flex: 0;
     -webkit-flex-grow: 0;
     -ms-flex-positive: 0;
@@ -179,7 +179,7 @@ exports[`1. a single child element 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c6 {
+  .c3 {
     border-bottom: none;
     margin-bottom: 0;
     min-width: auto;
@@ -189,31 +189,39 @@ exports[`1. a single child element 1`] = `
   }
 }
 
-<div
-  className="c0 c1 c2 c3 configweb__Base-cj50u7-4 c0 configweb__Base-cj50u7-3 c1 configweb__Base-cj50u7-1 c2 configweb__Base-cj50u7-0 c3 css-view-1dbjc4n"
->
+<configweb__Base>
   <div
-    className="c4 responsiveweb__SliceContainer-sc-2kg7gs-0 c4 css-view-1dbjc4n"
+    className="c0 configweb__Base-cj50u7-0 configweb__Base-cj50u7-1 configweb__Base-cj50u7-3 configweb__Base-cj50u7-4 c0 css-view-1dbjc4n"
   >
-    <div
-      className="c5 responsiveweb-fgzeui-0 c5 css-view-1dbjc4n"
-    >
+    <responsiveweb__SliceContainer>
       <div
-        className="c6 c7 c8 responsiveweb__Base-fgzeui-5 c6 responsiveweb__Base-fgzeui-3 c7 responsiveweb__Base-fgzeui-1 c8 css-view-1dbjc4n"
+        className="c1 responsiveweb__SliceContainer-sc-2kg7gs-0 c1 css-view-1dbjc4n"
       >
-        <div
-          className="css-text-76zvg2"
-        >
-          opinion
-        </div>
+        <responsiveweb>
+          <div
+            className="c2 responsiveweb-fgzeui-0 c2 css-view-1dbjc4n"
+          >
+            <responsiveweb__Base>
+              <div
+                className="c3 responsiveweb__Base-fgzeui-1 responsiveweb__Base-fgzeui-3 responsiveweb__Base-fgzeui-5 c3 css-view-1dbjc4n"
+              >
+                <div
+                  className="css-text-76zvg2"
+                >
+                  opinion
+                </div>
+              </div>
+            </responsiveweb__Base>
+          </div>
+        </responsiveweb>
       </div>
-    </div>
+    </responsiveweb__SliceContainer>
   </div>
-</div>
+</configweb__Base>
 `;
 
 exports[`2. two child elements 1`] = `
-.c5 {
+.c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -230,39 +238,7 @@ exports[`2. two child elements 1`] = `
   justify-content: center;
 }
 
-.c4 .opinionContentContainerClass {
-  min-height: 250px;
-}
-
-.c4 .opinionImageContainerClass {
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: end;
-  align-self: flex-end;
-  bottom: -9px;
-  min-width: 100px;
-  position: absolute;
-  right: 0;
-}
-
-.c4 .supportImageContainerClass {
-  display: none;
-}
-
-.c4 .supportSummaryClass {
-  display: none;
-}
-
-.c4 .summaryHidden {
-  display: none;
-}
-
-.c4 .opinionSummary125Class {
-  display: block;
-  padding-right: 20px;
-  width: 60%;
-}
-
-.c6 {
+.c2 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -278,7 +254,7 @@ exports[`2. two child elements 1`] = `
   width: 100%;
 }
 
-.c9 {
+.c3 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -291,7 +267,7 @@ exports[`2. two child elements 1`] = `
   width: auto;
 }
 
-.c10 {
+.c4 {
   border-bottom-color: #DBDBDB;
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -303,7 +279,7 @@ exports[`2. two child elements 1`] = `
   min-width: auto;
 }
 
-.c12 {
+.c5 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -313,7 +289,39 @@ exports[`2. two child elements 1`] = `
   height: auto;
 }
 
-.c16 {
+.c0 .opinionContentContainerClass {
+  min-height: 250px;
+}
+
+.c0 .opinionImageContainerClass {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  bottom: -9px;
+  min-width: 100px;
+  position: absolute;
+  right: 0;
+}
+
+.c0 .supportImageContainerClass {
+  display: none;
+}
+
+.c0 .supportSummaryClass {
+  display: none;
+}
+
+.c0 .summaryHidden {
+  display: none;
+}
+
+.c0 .opinionSummary125Class {
+  display: block;
+  padding-right: 20px;
+  width: 60%;
+}
+
+.c6 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -326,75 +334,54 @@ exports[`2. two child elements 1`] = `
 }
 
 @media (-webkit-min-device-pixel-ratio:2) {
-  .c5 {
+  .c1 {
     border-bottom-width: 0.5px;
   }
 }
 
-@media (min-width:520px) {
-  .c4 .opinionContentContainerClass {
-    min-height: 200px;
-  }
-
-  .c4 .opinionHeadlineClass {
-    padding-right: 30px;
-    width: 80%;
-  }
-}
-
 @media (min-width:768px) {
-  .c2 .opinionBylineClass,
-  .c2 .opinionHeadlineClass {
-    font-size: 30px;
-    line-height: 30px;
-    width: 100%;
-  }
-
-  .c2 .opinionContentContainerClass {
-    min-width: auto;
-    padding-right: 55px;
-  }
-
-  .c2 .opinionImageContainerClass {
-    max-width: 167px;
-    min-width: auto;
-    position: relative;
-  }
-
-  .c2 .supportImageContainerClass {
-    display: block;
-  }
-}
-
-@media (min-width:768px) {
-  .c6 {
+  .c2 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
     width: 100%;
   }
 
-  .c6 a {
+  .c2 a {
     display: block;
     height: 100%;
   }
 }
 
 @media (min-width:1024px) {
-  .c6 {
+  .c2 {
     width: 100%;
   }
 }
 
 @media (min-width:768px) {
-  .c9 a > div,
-  .c9 a > div > div {
+  .c3 a > div,
+  .c3 a > div > div {
     height: 100%;
   }
 }
 
+@media (min-width:768px) {
+  .c3 {
+    -webkit-flex-basis: 0 !important;
+    -ms-flex-preferred-size: 0 !important;
+    flex-basis: 0 !important;
+    -webkit-box-flex: 3;
+    -webkit-flex-grow: 3;
+    -ms-flex-positive: 3;
+    flex-grow: 3;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
 @media (min-width:1024px) {
-  .c7 {
+  .c3 {
     border-bottom: none;
     margin-bottom: 0;
     min-width: auto;
@@ -405,7 +392,7 @@ exports[`2. two child elements 1`] = `
 }
 
 @media (min-width:768px) {
-  .c10 {
+  .c4 {
     border-bottom: none;
     border-right-color: #DBDBDB;
     border-right-style: solid;
@@ -419,13 +406,13 @@ exports[`2. two child elements 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c10 {
+  .c4 {
     display: block;
   }
 }
 
 @media (min-width:768px) {
-  .c12 {
+  .c5 {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
@@ -436,27 +423,62 @@ exports[`2. two child elements 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c11 {
+  .c5 {
     min-width: 400px;
   }
 }
 
 @media (min-width:520px) {
-  .c3 .opinionImageContainerClass {
+  .c0 .opinionContentContainerClass {
+    min-height: 200px;
+  }
+
+  .c0 .opinionHeadlineClass {
+    padding-right: 30px;
+    width: 80%;
+  }
+}
+
+@media (min-width:520px) {
+  .c0 .opinionImageContainerClass {
     min-width: 120px;
   }
 }
 
 @media (min-width:768px) {
-  .c1 .opinionImageContainerClass {
+  .c0 .opinionBylineClass,
+  .c0 .opinionHeadlineClass {
+    font-size: 30px;
+    line-height: 30px;
+    width: 100%;
+  }
+
+  .c0 .opinionContentContainerClass {
+    min-width: auto;
+    padding-right: 55px;
+  }
+
+  .c0 .opinionImageContainerClass {
+    max-width: 167px;
+    min-width: auto;
+    position: relative;
+  }
+
+  .c0 .supportImageContainerClass {
+    display: block;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 .opinionImageContainerClass {
     min-width: 165px;
   }
 
-  .c1 .opinionSummary125Class {
+  .c0 .opinionSummary125Class {
     display: none;
   }
 
-  .c1 .opinionSummary145Class {
+  .c0 .opinionSummary145Class {
     display: block;
   }
 }
@@ -473,21 +495,7 @@ exports[`2. two child elements 1`] = `
 }
 
 @media (min-width:768px) {
-  .c8 {
-    -webkit-flex-basis: 0 !important;
-    -ms-flex-preferred-size: 0 !important;
-    flex-basis: 0 !important;
-    -webkit-box-flex: 3;
-    -webkit-flex-grow: 3;
-    -ms-flex-positive: 3;
-    flex-grow: 3;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
-@media (min-width:768px) {
-  .c16 {
+  .c6 {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
@@ -495,65 +503,79 @@ exports[`2. two child elements 1`] = `
 }
 
 @media (min-width:768px) {
-  .c15 {
+  .c6 {
     padding-left: 10px;
     padding-right: 10px;
   }
 }
 
 @media (min-width:768px) {
-  .c14 {
+  .c6 {
     max-width: 100%;
   }
 }
 
 @media (min-width:1024px) {
-  .c13 {
+  .c6 {
     padding-left: 10px;
   }
 }
 
-<div
-  className="c0 c1 c2 c3 c4 configweb__Base-cj50u7-7 c0 configweb__Base-cj50u7-5 c1 configweb__Base-cj50u7-3 c2 configweb__Base-cj50u7-2 c3 configweb__Base-cj50u7-0 c4 css-view-1dbjc4n"
->
+<configweb__Base>
   <div
-    className="c5 responsiveweb__SliceContainer-sc-2kg7gs-0 c5 css-view-1dbjc4n"
+    className="c0 configweb__Base-cj50u7-0 configweb__Base-cj50u7-2 configweb__Base-cj50u7-3 configweb__Base-cj50u7-5 configweb__Base-cj50u7-7 c0 css-view-1dbjc4n"
   >
-    <div
-      className="c6 responsiveweb-fgzeui-0 c6 css-view-1dbjc4n"
-    >
+    <responsiveweb__SliceContainer>
       <div
-        className="c7 c8 c9 responsiveweb__Base-fgzeui-5 c7 responsiveweb__Base-fgzeui-2 c8 responsiveweb__Base-fgzeui-1 c9 css-view-1dbjc4n"
+        className="c1 responsiveweb__SliceContainer-sc-2kg7gs-0 c1 css-view-1dbjc4n"
       >
-        <div
-          className="css-text-76zvg2"
-        >
-          opinion
-        </div>
-      </div>
-      <div
-        className="c10 responsiveweb-fgzeui-6 c10 css-view-1dbjc4n"
-      />
-      <div
-        className="c11 c12 responsiveweb__Base-fgzeui-9 c11 responsiveweb__Base-fgzeui-7 c12 css-view-1dbjc4n"
-      >
-        <div
-          className="5 c13 c14 c15 c16 c13 responsiveweb__Base-fgzeui-14 c14 responsiveweb__Base-fgzeui-12 c15 responsiveweb__Base-fgzeui-10 c16 css-view-1dbjc4n"
-        >
+        <responsiveweb>
           <div
-            className="css-text-76zvg2"
+            className="c2 responsiveweb-fgzeui-0 c2 css-view-1dbjc4n"
           >
-            support-1
+            <responsiveweb__Base>
+              <div
+                className="c3 responsiveweb__Base-fgzeui-1 responsiveweb__Base-fgzeui-2 responsiveweb__Base-fgzeui-5 c3 css-view-1dbjc4n"
+              >
+                <div
+                  className="css-text-76zvg2"
+                >
+                  opinion
+                </div>
+              </div>
+            </responsiveweb__Base>
+            <responsiveweb>
+              <div
+                className="c4 responsiveweb-fgzeui-6 c4 css-view-1dbjc4n"
+              />
+            </responsiveweb>
+            <responsiveweb__Base>
+              <div
+                className="c5 responsiveweb__Base-fgzeui-7 responsiveweb__Base-fgzeui-9 c5 css-view-1dbjc4n"
+              >
+                <responsiveweb__Base>
+                  <div
+                    className="0 c6 responsiveweb__Base-fgzeui-12 responsiveweb__Base-fgzeui-14 responsiveweb__Base-fgzeui-15 c6 css-view-1dbjc4n"
+                  >
+                    <div
+                      className="css-text-76zvg2"
+                    >
+                      support-1
+                    </div>
+                  </div>
+                </responsiveweb__Base>
+              </div>
+            </responsiveweb__Base>
           </div>
-        </div>
+        </responsiveweb>
       </div>
-    </div>
+    </responsiveweb__SliceContainer>
   </div>
-</div>
+</configweb__Base>
 `;
 
 exports[`3. three child elements 1`] = `
-.c4 {
+.c1 {
   -webkit-align-items: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -570,39 +592,7 @@ exports[`3. three child elements 1`] = `
   justify-content: center;
 }
 
-.c3 .opinionContentContainerClass {
-  min-height: 250px;
-}
-
-.c3 .opinionImageContainerClass {
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: end;
-  align-self: flex-end;
-  bottom: -9px;
-  min-width: 100px;
-  position: absolute;
-  right: 0;
-}
-
-.c3 .supportImageContainerClass {
-  display: none;
-}
-
-.c3 .supportSummaryClass {
-  display: none;
-}
-
-.c3 .summaryHidden {
-  display: none;
-}
-
-.c3 .opinionSummary125Class {
-  display: block;
-  padding-right: 20px;
-  width: 60%;
-}
-
-.c5 {
+.c2 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -618,7 +608,7 @@ exports[`3. three child elements 1`] = `
   width: 100%;
 }
 
-.c9 {
+.c3 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -631,7 +621,7 @@ exports[`3. three child elements 1`] = `
   width: auto;
 }
 
-.c10 {
+.c4 {
   border-bottom-color: #DBDBDB;
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -643,7 +633,7 @@ exports[`3. three child elements 1`] = `
   min-width: auto;
 }
 
-.c13 {
+.c5 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -653,7 +643,7 @@ exports[`3. three child elements 1`] = `
   height: auto;
 }
 
-.c17 {
+.c6 {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -665,7 +655,16 @@ exports[`3. three child elements 1`] = `
   padding-right: 10px;
 }
 
-.c18 {
+.c7 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  min-height: auto;
+  padding-left: 10px;
+  padding-right: 10px;
   border-top-color: #DBDBDB;
   border-top-style: solid;
   border-top-width: 1px;
@@ -673,130 +672,73 @@ exports[`3. three child elements 1`] = `
   padding-top: 10px;
 }
 
+.c0 .opinionContentContainerClass {
+  min-height: 250px;
+}
+
+.c0 .opinionImageContainerClass {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  bottom: -9px;
+  min-width: 100px;
+  position: absolute;
+  right: 0;
+}
+
+.c0 .supportImageContainerClass {
+  display: none;
+}
+
+.c0 .supportSummaryClass {
+  display: none;
+}
+
+.c0 .summaryHidden {
+  display: none;
+}
+
+.c0 .opinionSummary125Class {
+  display: block;
+  padding-right: 20px;
+  width: 60%;
+}
+
 @media (-webkit-min-device-pixel-ratio:2) {
-  .c4 {
+  .c1 {
     border-bottom-width: 0.5px;
   }
 }
 
-@media (min-width:520px) {
-  .c3 .opinionContentContainerClass {
-    min-height: 200px;
-  }
-
-  .c3 .opinionHeadlineClass {
-    padding-right: 30px;
-    width: 80%;
-  }
-}
-
 @media (min-width:768px) {
-  .c1 .opinionBylineClass,
-  .c1 .opinionHeadlineClass {
-    font-size: 30px;
-    line-height: 30px;
-    width: 100%;
-  }
-
-  .c1 .opinionContentContainerClass {
-    min-width: auto;
-    padding-right: 55px;
-  }
-
-  .c1 .opinionImageContainerClass {
-    max-width: 167px;
-    min-width: auto;
-    position: relative;
-  }
-
-  .c1 .supportImageContainerClass {
-    display: block;
-  }
-}
-
-@media (min-width:768px) {
-  .c5 {
+  .c2 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
     width: 80.8%;
   }
 
-  .c5 a {
+  .c2 a {
     display: block;
     height: 100%;
   }
 }
 
 @media (min-width:1024px) {
-  .c5 {
+  .c2 {
     width: 100%;
   }
 }
 
 @media (min-width:768px) {
-  .c9 a > div,
-  .c9 a > div > div {
+  .c3 a > div,
+  .c3 a > div > div {
     height: 100%;
   }
 }
 
-@media (min-width:1024px) {
-  .c6 {
-    border-bottom: none;
-    margin-bottom: 0;
-    min-width: auto;
-    padding-bottom: 0;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
 @media (min-width:768px) {
-  .c10 {
-    border-bottom: none;
-    border-right-color: #DBDBDB;
-    border-right-style: solid;
-    border-right-width: 1px;
-    display: none;
-    -webkit-flex: 0 !important;
-    -ms-flex: 0 !important;
-    flex: 0 !important;
-    margin: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c10 {
-    display: block;
-  }
-}
-
-@media (min-width:768px) {
-  .c13 {
-    -webkit-flex-basis: 0 !important;
-    -ms-flex-preferred-size: 0 !important;
-    flex-basis: 0 !important;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-}
-
-@media (min-width:1024px) {
-  .c11 {
-    min-width: auto;
-  }
-}
-
-@media (min-width:520px) {
-  .c2 .opinionImageContainerClass {
-    min-width: 120px;
-  }
-}
-
-@media (min-width:768px) {
-  .c8 {
+  .c3 {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
@@ -810,7 +752,74 @@ exports[`3. three child elements 1`] = `
 }
 
 @media (min-width:768px) {
-  .c17 {
+  .c3 {
+    border-bottom-color: #DBDBDB;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    margin-bottom: 10px;
+    min-width: 100%;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c3 {
+    border-bottom: none;
+    margin-bottom: 0;
+    min-width: auto;
+    padding-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    border-bottom: none;
+    border-right-color: #DBDBDB;
+    border-right-style: solid;
+    border-right-width: 1px;
+    display: none;
+    -webkit-flex: 0 !important;
+    -ms-flex: 0 !important;
+    flex: 0 !important;
+    margin: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c4 {
+    display: block;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    -webkit-flex-basis: 0 !important;
+    -ms-flex-preferred-size: 0 !important;
+    flex-basis: 0 !important;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
+    min-width: 100%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c5 {
+    min-width: auto;
+  }
+}
+
+@media (min-width:768px) {
+  .c6 {
     -webkit-flex-basis: 0 !important;
     -ms-flex-preferred-size: 0 !important;
     flex-basis: 0 !important;
@@ -818,15 +827,101 @@ exports[`3. three child elements 1`] = `
 }
 
 @media (min-width:768px) {
-  .c16 {
+  .c6 {
     padding-left: 0;
     padding-right: 0;
   }
 }
 
+@media (min-width:768px) {
+  .c6 {
+    max-width: 50%;
+  }
+}
+
 @media (min-width:1024px) {
-  .c14 {
+  .c6 {
     padding-left: 10px;
+  }
+}
+
+@media (min-width:768px) {
+  .c7 {
+    -webkit-flex-basis: 0 !important;
+    -ms-flex-preferred-size: 0 !important;
+    flex-basis: 0 !important;
+  }
+}
+
+@media (min-width:768px) {
+  .c7 {
+    border-left-color: #DBDBDB;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-top: none;
+    margin-left: 10px;
+    margin-top: 0;
+    padding-right: 0;
+    padding-top: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c7 {
+    padding-right: 10px;
+  }
+}
+
+@media (min-width:768px) {
+  .c7 {
+    max-width: 50%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c7 {
+    padding-left: 10px;
+  }
+}
+
+@media (min-width:520px) {
+  .c0 .opinionContentContainerClass {
+    min-height: 200px;
+  }
+
+  .c0 .opinionHeadlineClass {
+    padding-right: 30px;
+    width: 80%;
+  }
+}
+
+@media (min-width:520px) {
+  .c0 .opinionImageContainerClass {
+    min-width: 120px;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 .opinionBylineClass,
+  .c0 .opinionHeadlineClass {
+    font-size: 30px;
+    line-height: 30px;
+    width: 100%;
+  }
+
+  .c0 .opinionContentContainerClass {
+    min-width: auto;
+    padding-right: 55px;
+  }
+
+  .c0 .opinionImageContainerClass {
+    max-width: 167px;
+    min-width: auto;
+    position: relative;
+  }
+
+  .c0 .supportImageContainerClass {
+    display: block;
   }
 }
 
@@ -844,94 +939,66 @@ exports[`3. three child elements 1`] = `
   }
 }
 
-@media (min-width:768px) {
-  .c7 {
-    border-bottom-color: #DBDBDB;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    margin-bottom: 10px;
-    min-width: 100%;
-    padding-bottom: 10px;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:768px) {
-  .c12 {
-    min-width: 100%;
-  }
-}
-
-@media (min-width:768px) {
-  .c15 {
-    max-width: 50%;
-  }
-}
-
-@media (min-width:768px) {
-  .c18 {
-    border-left-color: #DBDBDB;
-    border-left-style: solid;
-    border-left-width: 1px;
-    border-top: none;
-    margin-left: 10px;
-    margin-top: 0;
-    padding-right: 0;
-    padding-top: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c18 {
-    padding-right: 10px;
-  }
-}
-
-<div
-  className="c0 c1 c2 c3 configweb__Base-cj50u7-6 c0 configweb__Base-cj50u7-3 c1 configweb__Base-cj50u7-2 c2 configweb__Base-cj50u7-0 c3 css-view-1dbjc4n"
->
+<configweb__Base>
   <div
-    className="c4 responsiveweb__SliceContainer-sc-2kg7gs-0 c4 css-view-1dbjc4n"
+    className="c0 configweb__Base-cj50u7-0 configweb__Base-cj50u7-2 configweb__Base-cj50u7-3 configweb__Base-cj50u7-6 c0 css-view-1dbjc4n"
   >
-    <div
-      className="c5 responsiveweb-fgzeui-0 c5 css-view-1dbjc4n"
-    >
+    <responsiveweb__SliceContainer>
       <div
-        className="c6 c7 c8 c9 responsiveweb__Base-fgzeui-5 c6 responsiveweb__Base-fgzeui-4 c7 responsiveweb__Base-fgzeui-2 c8 responsiveweb__Base-fgzeui-1 c9 css-view-1dbjc4n"
+        className="c1 responsiveweb__SliceContainer-sc-2kg7gs-0 c1 css-view-1dbjc4n"
       >
-        <div
-          className="css-text-76zvg2"
-        >
-          opinion
-        </div>
-      </div>
-      <div
-        className="c10 responsiveweb-fgzeui-6 c10 css-view-1dbjc4n"
-      />
-      <div
-        className="c11 c12 c13 responsiveweb__Base-fgzeui-9 c11 responsiveweb__Base-fgzeui-8 c12 responsiveweb__Base-fgzeui-7 c13 css-view-1dbjc4n"
-      >
-        <div
-          className="5 c14 c15 c16 c17 c14 responsiveweb__Base-fgzeui-13 c15 responsiveweb__Base-fgzeui-12 c16 responsiveweb__Base-fgzeui-10 c17 css-view-1dbjc4n"
-        >
+        <responsiveweb>
           <div
-            className="css-text-76zvg2"
+            className="c2 responsiveweb-fgzeui-0 c2 css-view-1dbjc4n"
           >
-            support-1
+            <responsiveweb__Base>
+              <div
+                className="c3 responsiveweb__Base-fgzeui-1 responsiveweb__Base-fgzeui-2 responsiveweb__Base-fgzeui-4 responsiveweb__Base-fgzeui-5 c3 css-view-1dbjc4n"
+              >
+                <div
+                  className="css-text-76zvg2"
+                >
+                  opinion
+                </div>
+              </div>
+            </responsiveweb__Base>
+            <responsiveweb>
+              <div
+                className="c4 responsiveweb-fgzeui-6 c4 css-view-1dbjc4n"
+              />
+            </responsiveweb>
+            <responsiveweb__Base>
+              <div
+                className="c5 responsiveweb__Base-fgzeui-7 responsiveweb__Base-fgzeui-8 responsiveweb__Base-fgzeui-9 c5 css-view-1dbjc4n"
+              >
+                <responsiveweb__Base>
+                  <div
+                    className="0 c6 responsiveweb__Base-fgzeui-12 responsiveweb__Base-fgzeui-13 responsiveweb__Base-fgzeui-15 c6 css-view-1dbjc4n"
+                  >
+                    <div
+                      className="css-text-76zvg2"
+                    >
+                      support-1
+                    </div>
+                  </div>
+                </responsiveweb__Base>
+                <responsiveweb__Base>
+                  <div
+                    className="0 c7 responsiveweb__Base-fgzeui-11 responsiveweb__Base-fgzeui-13 responsiveweb__Base-fgzeui-15 c7 css-view-1dbjc4n"
+                  >
+                    <div
+                      className="css-text-76zvg2"
+                    >
+                      support-2
+                    </div>
+                  </div>
+                </responsiveweb__Base>
+              </div>
+            </responsiveweb__Base>
           </div>
-        </div>
-        <div
-          className="5 c14 c15 c18 c17 c14 responsiveweb__Base-fgzeui-13 c15 responsiveweb__Base-fgzeui-11 c18 responsiveweb__Base-fgzeui-10 c17 css-view-1dbjc4n"
-        >
-          <div
-            className="css-text-76zvg2"
-          >
-            support-2
-          </div>
-        </div>
+        </responsiveweb>
       </div>
-    </div>
+    </responsiveweb__SliceContainer>
   </div>
-</div>
+</configweb__Base>
 `;

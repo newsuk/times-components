@@ -3,6 +3,54 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.7.30](https://github.com/newsuk/times-components/compare/@times-components/video@4.7.29...@times-components/video@4.7.30) (2019-05-20)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.7.29](https://github.com/newsuk/times-components/compare/@times-components/video@4.7.28...@times-components/video@4.7.29) (2019-05-20)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.7.28](https://github.com/newsuk/times-components/compare/@times-components/video@4.7.27...@times-components/video@4.7.28) (2019-05-17)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.7.27](https://github.com/newsuk/times-components/compare/@times-components/video@4.7.26...@times-components/video@4.7.27) (2019-05-16)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.7.26](https://github.com/newsuk/times-components/compare/@times-components/video@4.7.25...@times-components/video@4.7.26) (2019-05-16)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.7.25](https://github.com/newsuk/times-components/compare/@times-components/video@4.7.24...@times-components/video@4.7.25) (2019-05-16)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
 ## [4.7.24](https://github.com/newsuk/times-components/compare/@times-components/video@4.7.23...@times-components/video@4.7.24) (2019-05-15)
 
 **Note:** Version bump only for package @times-components/video

@@ -1,64 +1,102 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. a single child element 1`] = `
-<div>
+<configweb__Base>
   <div>
-    <div>
+    <responsiveweb__SliceContainer>
       <div>
-        <div>
-          opinion
-        </div>
+        <responsiveweb>
+          <div>
+            <responsiveweb__Base>
+              <div>
+                <div>
+                  opinion
+                </div>
+              </div>
+            </responsiveweb__Base>
+          </div>
+        </responsiveweb>
       </div>
-    </div>
+    </responsiveweb__SliceContainer>
   </div>
-</div>
+</configweb__Base>
 `;
 
 exports[`2. two child elements 1`] = `
-<div>
+<configweb__Base>
   <div>
-    <div>
+    <responsiveweb__SliceContainer>
       <div>
-        <div>
-          opinion
-        </div>
-      </div>
-      <div />
-      <div>
-        <div>
+        <responsiveweb>
           <div>
-            support-1
+            <responsiveweb__Base>
+              <div>
+                <div>
+                  opinion
+                </div>
+              </div>
+            </responsiveweb__Base>
+            <responsiveweb>
+              <div />
+            </responsiveweb>
+            <responsiveweb__Base>
+              <div>
+                <responsiveweb__Base>
+                  <div>
+                    <div>
+                      support-1
+                    </div>
+                  </div>
+                </responsiveweb__Base>
+              </div>
+            </responsiveweb__Base>
           </div>
-        </div>
+        </responsiveweb>
       </div>
-    </div>
+    </responsiveweb__SliceContainer>
   </div>
-</div>
+</configweb__Base>
 `;
 
 exports[`3. three child elements 1`] = `
-<div>
+<configweb__Base>
   <div>
-    <div>
+    <responsiveweb__SliceContainer>
       <div>
-        <div>
-          opinion
-        </div>
-      </div>
-      <div />
-      <div>
-        <div>
+        <responsiveweb>
           <div>
-            support-1
+            <responsiveweb__Base>
+              <div>
+                <div>
+                  opinion
+                </div>
+              </div>
+            </responsiveweb__Base>
+            <responsiveweb>
+              <div />
+            </responsiveweb>
+            <responsiveweb__Base>
+              <div>
+                <responsiveweb__Base>
+                  <div>
+                    <div>
+                      support-1
+                    </div>
+                  </div>
+                </responsiveweb__Base>
+                <responsiveweb__Base>
+                  <div>
+                    <div>
+                      support-2
+                    </div>
+                  </div>
+                </responsiveweb__Base>
+              </div>
+            </responsiveweb__Base>
           </div>
-        </div>
-        <div>
-          <div>
-            support-2
-          </div>
-        </div>
+        </responsiveweb>
       </div>
-    </div>
+    </responsiveweb__SliceContainer>
   </div>
-</div>
+</configweb__Base>
 `;

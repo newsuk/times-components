@@ -3,6 +3,60 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.8](https://github.com/newsuk/times-components/compare/@times-components/image@6.0.7...@times-components/image@6.0.8) (2019-05-20)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.0.7](https://github.com/newsuk/times-components/compare/@times-components/image@6.0.6...@times-components/image@6.0.7) (2019-05-20)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.0.6](https://github.com/newsuk/times-components/compare/@times-components/image@6.0.5...@times-components/image@6.0.6) (2019-05-17)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.0.5](https://github.com/newsuk/times-components/compare/@times-components/image@6.0.4...@times-components/image@6.0.5) (2019-05-16)
+
+
+### Bug Fixes
+
+* prevent collapsing of view causing issue during image fade on android ([#1962](https://github.com/newsuk/times-components/issues/1962)) ([307e7c1](https://github.com/newsuk/times-components/commit/307e7c1))
+
+
+
+
+
+## [6.0.4](https://github.com/newsuk/times-components/compare/@times-components/image@6.0.3...@times-components/image@6.0.4) (2019-05-16)
+
+
+### Bug Fixes
+
+* hide placeholders for puzzle slices ([#1955](https://github.com/newsuk/times-components/issues/1955)) ([534ba09](https://github.com/newsuk/times-components/commit/534ba09))
+
+
+
+
+
+## [6.0.3](https://github.com/newsuk/times-components/compare/@times-components/image@6.0.2...@times-components/image@6.0.3) (2019-05-16)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
 ## [6.0.2](https://github.com/newsuk/times-components/compare/@times-components/image@6.0.1...@times-components/image@6.0.2) (2019-05-15)
 
 **Note:** Version bump only for package @times-components/image

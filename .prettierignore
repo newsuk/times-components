@@ -27,6 +27,4 @@ ios-app
 coverage
 settings.gradle
 build.gradle
-dextrose/snappy
 TimesReactIOS.podspec
-fructose/components.js

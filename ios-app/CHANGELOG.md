@@ -3,6 +3,94 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.153](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.7.152...@times-components/ios-app@0.7.153) (2019-05-20)
+
+**Note:** Version bump only for package @times-components/ios-app
+
+
+
+
+
+## [0.7.152](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.7.151...@times-components/ios-app@0.7.152) (2019-05-20)
+
+**Note:** Version bump only for package @times-components/ios-app
+
+
+
+
+
+## [0.7.151](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.7.150...@times-components/ios-app@0.7.151) (2019-05-17)
+
+**Note:** Version bump only for package @times-components/ios-app
+
+
+
+
+
+## [0.7.150](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.7.149...@times-components/ios-app@0.7.150) (2019-05-17)
+
+**Note:** Version bump only for package @times-components/ios-app
+
+
+
+
+
+## [0.7.149](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.7.148...@times-components/ios-app@0.7.149) (2019-05-16)
+
+**Note:** Version bump only for package @times-components/ios-app
+
+
+
+
+
+## [0.7.148](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.7.147...@times-components/ios-app@0.7.148) (2019-05-16)
+
+**Note:** Version bump only for package @times-components/ios-app
+
+
+
+
+
+## [0.7.147](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.7.146...@times-components/ios-app@0.7.147) (2019-05-16)
+
+**Note:** Version bump only for package @times-components/ios-app
+
+
+
+
+
+## [0.7.146](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.7.145...@times-components/ios-app@0.7.146) (2019-05-16)
+
+**Note:** Version bump only for package @times-components/ios-app
+
+
+
+
+
+## [0.7.145](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.7.144...@times-components/ios-app@0.7.145) (2019-05-16)
+
+**Note:** Version bump only for package @times-components/ios-app
+
+
+
+
+
+## [0.7.144](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.7.143...@times-components/ios-app@0.7.144) (2019-05-15)
+
+**Note:** Version bump only for package @times-components/ios-app
+
+
+
+
+
+## [0.7.143](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.7.142...@times-components/ios-app@0.7.143) (2019-05-15)
+
+**Note:** Version bump only for package @times-components/ios-app
+
+
+
+
+
 ## [0.7.142](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.7.141...@times-components/ios-app@0.7.142) (2019-05-15)
 
 **Note:** Version bump only for package @times-components/ios-app

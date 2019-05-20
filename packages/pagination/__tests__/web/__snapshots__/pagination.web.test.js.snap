@@ -1,266 +1,334 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. renders results, previous and next 1`] = `
-<div>
+<pagination-containerweb__ContainerWithResults>
   <div>
-    <div>
-      Showing 13 - 15 of 20 results
-    </div>
-  </div>
-  <div>
-    <div>
-      <a
-        href="?mock-4"
-      >
+    <resultsweb__MessageContainer>
+      <div>
         <div>
-          <svg
-            height={12}
-            viewBox="42 12 60 120"
-            width={7}
-          >
-            <g
-              fill="#006699"
-            >
-              <path
-                d="8cd5ea7b91eea38d77fd9ad20f3573cb"
-              />
-            </g>
-          </svg>
-          <div>
-            <span>
-              Previous
-              <span>
-                 page
-              </span>
-            </span>
-          </div>
+          Showing 13 - 15 of 20 results
         </div>
-      </a>
-    </div>
-    <div>
-      <a
-        href="?mock-6"
-      >
-        <div>
+      </div>
+    </resultsweb__MessageContainer>
+    <pagination-borderweb__BorderWithResults>
+      <div>
+        <responsiveweb__LinkContainer>
           <div>
-            <span>
-              Next
-              <span>
-                 page
-              </span>
-            </span>
-          </div>
-          <svg
-            height={12}
-            viewBox="42 12 60 120"
-            width={7}
-          >
-            <g
-              fill="#006699"
+            <a
+              href="?mock-4"
             >
-              <path
-                d="9a11f164df72df4cb9ea6a3266824472"
-              />
-            </g>
-          </svg>
-        </div>
-      </a>
-    </div>
+              <div>
+                <svg
+                  height={12}
+                  viewBox="42 12 60 120"
+                  width={7}
+                >
+                  <g
+                    fill="#006699"
+                  >
+                    <path
+                      d="8cd5ea7b91eea38d77fd9ad20f3573cb"
+                    />
+                  </g>
+                </svg>
+                <div>
+                  <span>
+                    Previous
+                    <page-labelweb__ResponsiveLabel>
+                      <span>
+                         page
+                      </span>
+                    </page-labelweb__ResponsiveLabel>
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </responsiveweb__LinkContainer>
+        <responsiveweb__LinkContainer>
+          <div>
+            <a
+              href="?mock-6"
+            >
+              <div>
+                <div>
+                  <span>
+                    Next
+                    <page-labelweb__ResponsiveLabel>
+                      <span>
+                         page
+                      </span>
+                    </page-labelweb__ResponsiveLabel>
+                  </span>
+                </div>
+                <svg
+                  height={12}
+                  viewBox="42 12 60 120"
+                  width={7}
+                >
+                  <g
+                    fill="#006699"
+                  >
+                    <path
+                      d="9a11f164df72df4cb9ea6a3266824472"
+                    />
+                  </g>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </responsiveweb__LinkContainer>
+      </div>
+    </pagination-borderweb__BorderWithResults>
   </div>
-</div>
+</pagination-containerweb__ContainerWithResults>
 `;
 
 exports[`2. renders with no results 1`] = `
-<div>
+<pagination-containerweb__ContainerWithoutResults>
   <div>
-    <div>
-      <a
-        href="?mock-4"
-      >
-        <div>
-          <svg
-            height={12}
-            viewBox="42 12 60 120"
-            width={7}
-          >
-            <g
-              fill="#006699"
-            >
-              <path
-                d="8cd5ea7b91eea38d77fd9ad20f3573cb"
-              />
-            </g>
-          </svg>
+    <pagination-borderweb__BorderWithoutResults>
+      <div>
+        <responsiveweb__LinkContainer>
           <div>
-            <span>
-              Previous
-              <span>
-                 page
-              </span>
-            </span>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div>
-      <a
-        href="?mock-6"
-      >
-        <div>
-          <div>
-            <span>
-              Next
-              <span>
-                 page
-              </span>
-            </span>
-          </div>
-          <svg
-            height={12}
-            viewBox="42 12 60 120"
-            width={7}
-          >
-            <g
-              fill="#006699"
+            <a
+              href="?mock-4"
             >
-              <path
-                d="9a11f164df72df4cb9ea6a3266824472"
-              />
-            </g>
-          </svg>
-        </div>
-      </a>
-    </div>
+              <div>
+                <svg
+                  height={12}
+                  viewBox="42 12 60 120"
+                  width={7}
+                >
+                  <g
+                    fill="#006699"
+                  >
+                    <path
+                      d="8cd5ea7b91eea38d77fd9ad20f3573cb"
+                    />
+                  </g>
+                </svg>
+                <div>
+                  <span>
+                    Previous
+                    <page-labelweb__ResponsiveLabel>
+                      <span>
+                         page
+                      </span>
+                    </page-labelweb__ResponsiveLabel>
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </responsiveweb__LinkContainer>
+        <responsiveweb__LinkContainer>
+          <div>
+            <a
+              href="?mock-6"
+            >
+              <div>
+                <div>
+                  <span>
+                    Next
+                    <page-labelweb__ResponsiveLabel>
+                      <span>
+                         page
+                      </span>
+                    </page-labelweb__ResponsiveLabel>
+                  </span>
+                </div>
+                <svg
+                  height={12}
+                  viewBox="42 12 60 120"
+                  width={7}
+                >
+                  <g
+                    fill="#006699"
+                  >
+                    <path
+                      d="9a11f164df72df4cb9ea6a3266824472"
+                    />
+                  </g>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </responsiveweb__LinkContainer>
+      </div>
+    </pagination-borderweb__BorderWithoutResults>
   </div>
-</div>
+</pagination-containerweb__ContainerWithoutResults>
 `;
 
 exports[`3. does not give a count smaller than a single page 1`] = `
-<div>
+<pagination-containerweb__ContainerWithResults>
   <div>
-    <div>
-      Showing 1 - 20 of 20 results
-    </div>
+    <resultsweb__MessageContainer>
+      <div>
+        <div>
+          Showing 1 - 20 of 20 results
+        </div>
+      </div>
+    </resultsweb__MessageContainer>
+    <pagination-borderweb__BorderWithResults>
+      <div>
+        <responsiveweb__LinkContainer>
+          <div />
+        </responsiveweb__LinkContainer>
+        <responsiveweb__LinkContainer>
+          <div />
+        </responsiveweb__LinkContainer>
+      </div>
+    </pagination-borderweb__BorderWithResults>
   </div>
-  <div>
-    <div />
-    <div />
-  </div>
-</div>
+</pagination-containerweb__ContainerWithResults>
 `;
 
 exports[`4. limits the starting result to the total count 1`] = `
-<div>
+<pagination-containerweb__ContainerWithResults>
   <div>
-    <div>
-      Showing 20 - 20 of 20 results
-    </div>
-  </div>
-  <div>
-    <div>
-      <a
-        href="?mock-3"
-      >
+    <resultsweb__MessageContainer>
+      <div>
         <div>
-          <svg
-            height={12}
-            viewBox="42 12 60 120"
-            width={7}
-          >
-            <g
-              fill="#006699"
-            >
-              <path
-                d="8cd5ea7b91eea38d77fd9ad20f3573cb"
-              />
-            </g>
-          </svg>
-          <div>
-            <span>
-              Previous
-              <span>
-                 page
-              </span>
-            </span>
-          </div>
+          Showing 20 - 20 of 20 results
         </div>
-      </a>
-    </div>
-    <div />
+      </div>
+    </resultsweb__MessageContainer>
+    <pagination-borderweb__BorderWithResults>
+      <div>
+        <responsiveweb__LinkContainer>
+          <div>
+            <a
+              href="?mock-3"
+            >
+              <div>
+                <svg
+                  height={12}
+                  viewBox="42 12 60 120"
+                  width={7}
+                >
+                  <g
+                    fill="#006699"
+                  >
+                    <path
+                      d="8cd5ea7b91eea38d77fd9ad20f3573cb"
+                    />
+                  </g>
+                </svg>
+                <div>
+                  <span>
+                    Previous
+                    <page-labelweb__ResponsiveLabel>
+                      <span>
+                         page
+                      </span>
+                    </page-labelweb__ResponsiveLabel>
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </responsiveweb__LinkContainer>
+        <responsiveweb__LinkContainer>
+          <div />
+        </responsiveweb__LinkContainer>
+      </div>
+    </pagination-borderweb__BorderWithResults>
   </div>
-</div>
+</pagination-containerweb__ContainerWithResults>
 `;
 
 exports[`5. renders previous and not next 1`] = `
-<div>
+<pagination-containerweb__ContainerWithoutResults>
   <div>
-    <div>
-      <a
-        href="?mock-4"
-      >
-        <div>
-          <svg
-            height={12}
-            viewBox="42 12 60 120"
-            width={7}
-          >
-            <g
-              fill="#006699"
-            >
-              <path
-                d="8cd5ea7b91eea38d77fd9ad20f3573cb"
-              />
-            </g>
-          </svg>
+    <pagination-borderweb__BorderWithoutResults>
+      <div>
+        <responsiveweb__LinkContainer>
           <div>
-            <span>
-              Previous
-              <span>
-                 page
-              </span>
-            </span>
+            <a
+              href="?mock-4"
+            >
+              <div>
+                <svg
+                  height={12}
+                  viewBox="42 12 60 120"
+                  width={7}
+                >
+                  <g
+                    fill="#006699"
+                  >
+                    <path
+                      d="8cd5ea7b91eea38d77fd9ad20f3573cb"
+                    />
+                  </g>
+                </svg>
+                <div>
+                  <span>
+                    Previous
+                    <page-labelweb__ResponsiveLabel>
+                      <span>
+                         page
+                      </span>
+                    </page-labelweb__ResponsiveLabel>
+                  </span>
+                </div>
+              </div>
+            </a>
           </div>
-        </div>
-      </a>
-    </div>
-    <div />
+        </responsiveweb__LinkContainer>
+        <responsiveweb__LinkContainer>
+          <div />
+        </responsiveweb__LinkContainer>
+      </div>
+    </pagination-borderweb__BorderWithoutResults>
   </div>
-</div>
+</pagination-containerweb__ContainerWithoutResults>
 `;
 
 exports[`6. renders next and not previous 1`] = `
-<div>
+<pagination-containerweb__ContainerWithoutResults>
   <div>
-    <div />
-    <div>
-      <a
-        href="?mock-2"
-      >
-        <div>
+    <pagination-borderweb__BorderWithoutResults>
+      <div>
+        <responsiveweb__LinkContainer>
+          <div />
+        </responsiveweb__LinkContainer>
+        <responsiveweb__LinkContainer>
           <div>
-            <span>
-              Next
-              <span>
-                 page
-              </span>
-            </span>
-          </div>
-          <svg
-            height={12}
-            viewBox="42 12 60 120"
-            width={7}
-          >
-            <g
-              fill="#006699"
+            <a
+              href="?mock-2"
             >
-              <path
-                d="9a11f164df72df4cb9ea6a3266824472"
-              />
-            </g>
-          </svg>
-        </div>
-      </a>
-    </div>
+              <div>
+                <div>
+                  <span>
+                    Next
+                    <page-labelweb__ResponsiveLabel>
+                      <span>
+                         page
+                      </span>
+                    </page-labelweb__ResponsiveLabel>
+                  </span>
+                </div>
+                <svg
+                  height={12}
+                  viewBox="42 12 60 120"
+                  width={7}
+                >
+                  <g
+                    fill="#006699"
+                  >
+                    <path
+                      d="9a11f164df72df4cb9ea6a3266824472"
+                    />
+                  </g>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </responsiveweb__LinkContainer>
+      </div>
+    </pagination-borderweb__BorderWithoutResults>
   </div>
-</div>
+</pagination-containerweb__ContainerWithoutResults>
 `;

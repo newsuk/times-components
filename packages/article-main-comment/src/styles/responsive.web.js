@@ -44,7 +44,7 @@ export const HeaderContainer = styled(View)`
 
   @media (min-width: ${breakpoints.medium}px) {
     width: 80.8%;
-    margin: 0 auto;
+    margin: 0 auto ${spacing(2)};
     margin-left: auto;
     margin-right: auto;
   }

@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.2](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.5.1...@times-components/save-and-share-bar@0.5.2) (2019-05-20)
+
+**Note:** Version bump only for package @times-components/save-and-share-bar
+
+
+
+
+
+## [0.5.1](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.5.0...@times-components/save-and-share-bar@0.5.1) (2019-05-20)
+
+**Note:** Version bump only for package @times-components/save-and-share-bar
+
+
+
+
+
+# [0.5.0](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.4.2...@times-components/save-and-share-bar@0.5.0) (2019-05-17)
+
+
+### Features
+
+* (Replat 4657) Web - Respect disable Save/ Share flags on an article ([#1911](https://github.com/newsuk/times-components/issues/1911)) ([5d731bb](https://github.com/newsuk/times-components/commit/5d731bb))
+
+
+
+
+
+## [0.4.2](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.4.1...@times-components/save-and-share-bar@0.4.2) (2019-05-16)
+
+**Note:** Version bump only for package @times-components/save-and-share-bar
+
+
+
+
+
+## [0.4.1](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.4.0...@times-components/save-and-share-bar@0.4.1) (2019-05-16)
+
+
+### Bug Fixes
+
+* Bump rnw on message-bar and ssw ([#1959](https://github.com/newsuk/times-components/issues/1959)) ([6d7f188](https://github.com/newsuk/times-components/commit/6d7f188))
+
+
+
+
+
 # [0.4.0](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.3.1...@times-components/save-and-share-bar@0.4.0) (2019-05-15)
 
 

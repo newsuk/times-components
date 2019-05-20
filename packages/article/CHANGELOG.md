@@ -3,6 +3,89 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.2.2](https://github.com/newsuk/times-components/compare/@times-components/article@7.2.1...@times-components/article@7.2.2) (2019-05-20)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [7.2.1](https://github.com/newsuk/times-components/compare/@times-components/article@7.2.0...@times-components/article@7.2.1) (2019-05-20)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+# [7.2.0](https://github.com/newsuk/times-components/compare/@times-components/article@7.1.13...@times-components/article@7.2.0) (2019-05-17)
+
+
+### Features
+
+* (Replat 4657) Web - Respect disable Save/ Share flags on an article ([#1911](https://github.com/newsuk/times-components/issues/1911)) ([5d731bb](https://github.com/newsuk/times-components/commit/5d731bb))
+
+
+
+
+
+## [7.1.13](https://github.com/newsuk/times-components/compare/@times-components/article@7.1.12...@times-components/article@7.1.13) (2019-05-16)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [7.1.12](https://github.com/newsuk/times-components/compare/@times-components/article@7.1.11...@times-components/article@7.1.12) (2019-05-16)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [7.1.11](https://github.com/newsuk/times-components/compare/@times-components/article@7.1.10...@times-components/article@7.1.11) (2019-05-16)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [7.1.10](https://github.com/newsuk/times-components/compare/@times-components/article@7.1.9...@times-components/article@7.1.10) (2019-05-16)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [7.1.9](https://github.com/newsuk/times-components/compare/@times-components/article@7.1.8...@times-components/article@7.1.9) (2019-05-16)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [7.1.8](https://github.com/newsuk/times-components/compare/@times-components/article@7.1.7...@times-components/article@7.1.8) (2019-05-15)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [7.1.7](https://github.com/newsuk/times-components/compare/@times-components/article@7.1.6...@times-components/article@7.1.7) (2019-05-15)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
 ## [7.1.6](https://github.com/newsuk/times-components/compare/@times-components/article@7.1.5...@times-components/article@7.1.6) (2019-05-15)
 
 **Note:** Version bump only for package @times-components/article

@@ -45,22 +45,61 @@ class ArticleSkeleton extends Component {
     this.setState({
       articleWidth: this.node && this.node.clientWidth
     });
-    if (window) {
+
+    if (window && window.nuk.user.isLoggedIn) {
       window.addEventListener("scroll", this.handleScroll);
     }
   }
 
   componentWillUnmount() {
-    if (window) {
+    if (window && window.nuk.user.isLoggedIn) {
       window.removeEventListener("scroll", this.handleScroll);
     }
   }
 
   handleScroll() {
-    const offsetTop = this.sticky.getBoundingClientRect().top;
-    const isSticky = isStickyAllowed(breakpoints.huge) && offsetTop <= 1;
+    if (this.sticky) {
+      const offsetTop = this.sticky.getBoundingClientRect().top;
+      const isSticky = isStickyAllowed(breakpoints.huge) && offsetTop <= 1;
 
-    this.setState({ isSticky });
+      this.setState({ isSticky });
+    }
+  }
+
+  renderSaveAndShareBar({
+    articleId,
+    headline,
+    url,
+    isSticky,
+    allowSaveAndShare,
+    savingEnabled,
+    sharingEnabled
+  }) {
+    if (!allowSaveAndShare) return null;
+
+    return (
+      <SaveShareContainer isSticky={isSticky}>
+        <SaveShareRefContainer isSticky={isSticky}>
+          <div
+            ref={el => {
+              this.sticky = el;
+            }}
+          >
+            <SaveAndShareBar
+              articleId={articleId}
+              articleHeadline={headline}
+              articleUrl={url}
+              onCopyLink={() => {}}
+              onSaveToMyArticles={() => {}}
+              onShareOnEmail={getTokenisedEmailUrlApi}
+              saveApi={saveApi}
+              savingEnabled={savingEnabled}
+              sharingEnabled={sharingEnabled}
+            />
+          </div>
+        </SaveShareRefContainer>
+      </SaveShareContainer>
+    );
   }
 
   render() {
@@ -83,7 +122,9 @@ class ArticleSkeleton extends Component {
       headline,
       topics,
       relatedArticleSlice,
-      template
+      template,
+      savingEnabled,
+      sharingEnabled
     } = article;
 
     const { articleWidth, isSticky } = this.state;
@@ -131,24 +172,16 @@ class ArticleSkeleton extends Component {
                           topicsAllowed={user.isLoggedIn}
                           width={articleWidth}
                         />
-                        <SaveShareContainer isSticky={isSticky}>
-                          <SaveShareRefContainer isSticky={isSticky}>
-                            <div
-                              ref={el => {
-                                this.sticky = el;
-                              }}
-                            >
-                              <SaveAndShareBar
-                                articleId={articleId}
-                                articleHeadline={headline}
-                                articleUrl={url}
-                                onCopyLink={() => {}}
-                                onShareOnEmail={getTokenisedEmailUrlApi}
-                                saveApi={saveApi}
-                              />
-                            </div>
-                          </SaveShareRefContainer>
-                        </SaveShareContainer>
+                        {(savingEnabled || sharingEnabled) &&
+                          this.renderSaveAndShareBar({
+                            articleId,
+                            headline,
+                            url,
+                            isSticky,
+                            allowSaveAndShare: user.isLoggedIn,
+                            savingEnabled,
+                            sharingEnabled
+                          })}
                         <BodyContainer>
                           <ArticleBody
                             content={newContent}
@@ -157,7 +190,6 @@ class ArticleSkeleton extends Component {
                             registerNode={registerNode}
                             section={section}
                           />
-
                           <ArticleExtras
                             analyticsStream={analyticsStream}
                             articleId={articleId}

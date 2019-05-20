@@ -5,6 +5,7 @@ export const propTypes = {
   ...Image.PropTypes,
   aspectRatio: PropTypes.number,
   borderRadius: PropTypes.number,
+  disablePlaceholder: PropTypes.bool,
   fadeImageIn: PropTypes.bool,
   highResSize: PropTypes.number,
   lowResSize: PropTypes.number,
@@ -16,6 +17,7 @@ export const propTypes = {
 export const defaultProps = {
   ...Image.defaultImagePropTypes,
   aspectRatio: undefined,
+  disablePlaceholder: false,
   fadeImageIn: false,
   highResSize: null,
   lowResSize: null,

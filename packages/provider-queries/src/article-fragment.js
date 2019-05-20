@@ -33,6 +33,8 @@ export default gql`
         ...imageProps
       }
     }
+    savingEnabled
+    sharingEnabled
     standfirst
     template
     textColour {

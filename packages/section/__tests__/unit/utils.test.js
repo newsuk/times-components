@@ -39,20 +39,43 @@ describe("splitPuzzlesBySlices", () => {
 });
 
 describe("buildSliceData", () => {
-  it("should create slice with elementId", () => {
-    const slices = [{ id: "a", name: "sliceA" }, { id: "b", name: "sliceB" }];
-    const withElementId = buildSliceData(slices);
-
-    expect(withElementId[0].elementId).toBe("a.0");
-    expect(withElementId[1].elementId).toBe("b.1");
+  it("should add elementId and ignoreSeparator properties", () => {
+    const originalData = [
+      { id: "a", name: "LeadersSlice" },
+      { id: "b", name: "DailyUniversalRegister" },
+      { id: "c", name: "OtherSlice" },
+      { id: "d", name: "LeadersSlice" },
+      { id: "e", name: "DailyUniversalRegister" },
+      { id: "f", name: "OtherSlice" },
+      { id: "g", name: "OtherSlice" },
+      { id: "h", name: "LeadersSlice" },
+      { id: "i", name: "OtherSlice" },
+      { id: "j", name: "OtherSlice" },
+      { id: "k", name: "OtherSlice" },
+      { id: "l", name: "DailyUniversalRegister" }
+    ];
+    const newData = buildSliceData(originalData);
+    expect(newData).toMatchSnapshot();
   });
 
-  it("should not change any other properties", () => {
-    const slices = [{ id: "a", name: "sliceA" }, { id: "b", name: "sliceB" }];
-    const withElementId = buildSliceData(slices);
-
-    expect(withElementId[0].name).toBe(slices[0].name);
-    expect(withElementId[1].name).toBe(slices[1].name);
+  it("should not mutate passed data", () => {
+    const originalData = [
+      { id: "a", name: "LeadersSlice" },
+      { id: "b", name: "DailyUniversalRegister" },
+      { id: "c", name: "OtherSlice" },
+      { id: "d", name: "LeadersSlice" },
+      { id: "e", name: "DailyUniversalRegister" },
+      { id: "f", name: "OtherSlice" },
+      { id: "g", name: "OtherSlice" },
+      { id: "h", name: "LeadersSlice" },
+      { id: "i", name: "OtherSlice" },
+      { id: "j", name: "OtherSlice" },
+      { id: "k", name: "OtherSlice" },
+      { id: "l", name: "DailyUniversalRegister" }
+    ];
+    const json = JSON.stringify(originalData);
+    buildSliceData(originalData);
+    expect(JSON.stringify(originalData)).toEqual(json);
   });
 });
 

@@ -1418,6 +1418,8 @@ const defaultRelatedArticleSlice = {
         },
         publicationName: "TIMES",
         publishedTime: "2015-03-23T19:39:39.000Z",
+        sharingEnabled: true,
+        savingEnabled: true,
         section: "",
         shortHeadline: "Pratchett’s law of the jungle",
         summary105: [
@@ -1688,6 +1690,8 @@ const defaultRelatedArticleSlice = {
         publicationName: "TIMES",
         publishedTime: "2015-03-23T20:42:27.000Z",
         section: "",
+        sharingEnabled: true,
+        savingEnabled: true,
         shortHeadline: "Rise of centenarian drivers",
         summary105: [
           {
@@ -1883,6 +1887,8 @@ const defaultRelatedArticleSlice = {
         publishedTime: "2018-04-06T23:01:00.000Z",
         section: "news",
         shortHeadline: "YouTube ignored police pleas",
+        savingEnabled: true,
+        sharingEnabled: true,
         summary105: [
           {
             children: [
@@ -2056,6 +2062,8 @@ const makeDefaultConfig = ({
   shortIdentifier = defaultShortIdentifier,
   slug = defaultSlug,
   standfirst = defaultStandfirst,
+  sharingEnabled = true,
+  savingEnabled = true,
   textColour = defaultTextColour,
   topics = defaultTopics,
   url = defaultUrl
@@ -2073,6 +2081,8 @@ const makeDefaultConfig = ({
   leadAsset,
   relatedArticleSlice,
   section,
+  savingEnabled,
+  sharingEnabled,
   shortHeadline,
   shortIdentifier,
   slug,
@@ -2199,6 +2209,8 @@ export const testFixture = {
           headline: "RA Headline",
           id: "ra-1",
           label: "RA Label",
+          sharingEnabled: true,
+          savingEnabled: true,
           leadAsset: {
             __typename: "Image",
             crop32: {
@@ -2229,6 +2241,8 @@ export const testFixture = {
   },
   section: "Some Section",
   shortHeadline: "Some Short Headline",
+  sharingEnabled: true,
+  savingEnabled: true,
   shortIdentifier: "2k629tpvh",
   slug: "this-is-slug",
   standfirst: "Some Standfirst",

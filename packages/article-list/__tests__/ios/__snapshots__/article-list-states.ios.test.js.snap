@@ -53,7 +53,7 @@ exports[`3. an empty list 1`] = `
 
 exports[`4. loading state 1`] = `
 <RCTScrollView
-  removeClippedSubviews={false}
+  nestedScrollEnabled={true}
 >
   <View>
     <View>

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/brightcove-video",
-  "version": "3.2.73",
+  "version": "3.2.77",
   "main": "dist/index",
   "dev": "src/index",
   "scripts": {
@@ -45,9 +45,9 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
-    "@times-components/eslint-config-thetimes": "0.8.11",
-    "@times-components/storybook": "4.0.6",
-    "@times-components/webpack-configurator": "2.0.20",
+    "@times-components/eslint-config-thetimes": "0.8.12",
+    "@times-components/storybook": "4.0.8",
+    "@times-components/webpack-configurator": "2.0.21",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.5",
@@ -56,19 +56,19 @@
     "eslint": "5.9.0",
     "jest": "24.8.0",
     "prettier": "1.14.3",
-    "react": "16.8.3",
-    "react-art": "16.8.3",
-    "react-dom": "16.8.3",
-    "react-native": "0.59.8",
+    "react": "16.6.3",
+    "react-art": "16.6.3",
+    "react-dom": "16.6.3",
+    "react-native": "0.58.6",
     "react-native-web": "0.11.2",
-    "react-test-renderer": "16.8.3",
+    "react-test-renderer": "16.6.3",
     "webpack": "4.30.0",
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/styleguide": "3.28.15",
-    "@times-components/svgs": "2.7.9",
-    "@times-components/utils": "4.11.0",
+    "@times-components/styleguide": "3.28.18",
+    "@times-components/svgs": "2.7.11",
+    "@times-components/utils": "4.11.4",
     "prop-types": "15.7.2"
   },
   "peerDependencies": {

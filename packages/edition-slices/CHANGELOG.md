@@ -3,6 +3,76 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.59.7](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.59.6...@times-components/edition-slices@0.59.7) (2019-05-20)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
+## [0.59.6](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.59.5...@times-components/edition-slices@0.59.6) (2019-05-20)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
+## [0.59.5](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.59.4...@times-components/edition-slices@0.59.5) (2019-05-17)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
+## [0.59.4](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.59.3...@times-components/edition-slices@0.59.4) (2019-05-16)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
+## [0.59.3](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.59.2...@times-components/edition-slices@0.59.3) (2019-05-16)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
+## [0.59.2](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.59.1...@times-components/edition-slices@0.59.2) (2019-05-16)
+
+
+### Bug Fixes
+
+* hide placeholders for puzzle slices ([#1955](https://github.com/newsuk/times-components/issues/1955)) ([534ba09](https://github.com/newsuk/times-components/commit/534ba09))
+
+
+
+
+
+## [0.59.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.59.0...@times-components/edition-slices@0.59.1) (2019-05-16)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
+# [0.59.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.58.1...@times-components/edition-slices@0.59.0) (2019-05-16)
+
+
+### Features
+
+* list-2-and-6-no-pic slice for huge and wide ([#1948](https://github.com/newsuk/times-components/issues/1948)) ([a9ee306](https://github.com/newsuk/times-components/commit/a9ee306))
+
+
+
+
+
 ## [0.58.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.58.0...@times-components/edition-slices@0.58.1) (2019-05-15)
 
 **Note:** Version bump only for package @times-components/edition-slices

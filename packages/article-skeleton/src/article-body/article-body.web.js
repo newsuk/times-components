@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 import Ad from "@times-components/ad";
 import ArticleImage from "@times-components/article-image";
@@ -32,6 +32,8 @@ export const responsiveDisplayWrapper = displayType => {
       return SecondaryImg;
     case "inline":
       return InlineImg;
+    case "fullwidth":
+      return Fragment;
     default:
       return PrimaryImg;
   }

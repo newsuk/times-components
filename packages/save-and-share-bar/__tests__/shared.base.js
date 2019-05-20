@@ -26,6 +26,8 @@ export default () => {
           onCopyLink={onCopyLink}
           onShareOnEmail={mockGetTokenisedEmailUrl}
           saveApi={saveApi}
+          sharingEnabled
+          savingEnabled
         />
       );
     });

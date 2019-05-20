@@ -73,6 +73,11 @@ export default {
       type: "story"
     },
     {
+      component: () => <SquareImage disablePlaceholder />,
+      name: "With disabled placeholder",
+      type: "story"
+    },
+    {
       component: () => (
         <View>
           <SquareImage

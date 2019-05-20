@@ -1,4 +1,4 @@
-import { editionBreakpoints, spacing } from "@times-components/styleguide";
+import { spacing } from "@times-components/styleguide";
 
 const smallBreakpointStyles = {
   leadContainer: {
@@ -11,12 +11,7 @@ const smallBreakpointStyles = {
   }
 };
 
-const mediumBreakpointStyles = {
-  container: {
-    flex: 1,
-    flexDirection: "row",
-    marginHorizontal: spacing(2)
-  },
+export const sharedMediumAndWide = {
   rowItemContainer: {
     flex: 1
   },
@@ -32,7 +27,34 @@ const mediumBreakpointStyles = {
   }
 };
 
-export default breakpoint =>
-  breakpoint === editionBreakpoints.small
-    ? smallBreakpointStyles
-    : mediumBreakpointStyles;
+const mediumBreakpointStyles = {
+  ...sharedMediumAndWide,
+  container: {
+    flex: 1,
+    flexDirection: "row",
+    marginHorizontal: spacing(2)
+  }
+};
+
+const wideBreakpointStyles = {
+  ...sharedMediumAndWide,
+  container: {
+    flex: 1,
+    flexDirection: "row",
+    marginHorizontal: spacing(2),
+    marginVertical: spacing(1)
+  },
+
+  separator: {
+    marginVertical: spacing(1)
+  }
+};
+
+const stylesResolver = {
+  small: smallBreakpointStyles,
+  medium: mediumBreakpointStyles,
+  wide: wideBreakpointStyles,
+  huge: wideBreakpointStyles
+};
+
+export default breakpoint => stylesResolver[breakpoint] || {};

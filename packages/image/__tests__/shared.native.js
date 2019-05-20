@@ -78,6 +78,30 @@ export default () => {
       }
     },
     {
+      name: "handle onload event with disabled placeholder",
+      test: () => {
+        jest.useFakeTimers();
+
+        const testInstance = TestRenderer.create(
+          <Image disablePlaceholder {...props} />
+        );
+
+        testInstance.root.children[0].props.onLayout(
+          getLayoutEventForWidth(700)
+        );
+
+        testInstance.root
+          .findAll(node => node.type === ReactNativeImage)[0]
+          .props.onLoad();
+
+        expect(testInstance).toMatchSnapshot();
+
+        jest.runAllTimers();
+
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
       name: "componentWillUnmount cancels animation timer",
       test: () => {
         jest.useFakeTimers();

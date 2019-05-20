@@ -8,7 +8,7 @@ storybook-components
 *.stories.native.js
 *.stories.web.js
 *.showcase.js
-*.fructose.js
+
 *.test.js
 android/**/test
 android/**/androidTest

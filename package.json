@@ -6,7 +6,7 @@
   "main": "index.js",
   "engines": {
     "node": ">=8.10.0 <10",
-    "yarn": "1.12.3"
+    "yarn": "1.16.0"
   },
   "bin": {
     "times-components": "times-components"
@@ -15,9 +15,6 @@
     "native": "node node_modules/react-native/local-cli/cli.js start",
     "test": "yarn storybook:test-build && jest ./lib --ci --bail --coverage",
     "test:all": "yarn test && lerna run test --since --stream && lerna run test:all --since --stream",
-    "visual-snapshot-ios": "./lib/visual_snapshots/run-ios-dextrose.sh",
-    "visual-snapshot-web": "./lib/visual_snapshots/run-web-dextrose.sh",
-    "visual-snapshot-android": "./lib/visual_snapshots/run-android-dextrose.sh",
     "coverage:publish": "lcov-result-merger './**/lcov.info' | coveralls",
     "prelint": "eslint . && prettier --list-different '**/*.js' && yarn deps:lint",
     "lint": "lerna run lint --since -- -- --ci",
@@ -32,20 +29,19 @@
     "prestorybook:test-build": "yarn storybook:build-vendor",
     "storybook:test-build": "build-storybook -c .storybook -s ./dist/public",
     "storybook:publish": "./lib/publish_storybook.sh",
-    "prestorybook-native": "rnstl",
-    "storybook-native": "react-native start --config metro.config.storybook.js",
+    "storybook-native": "cd storybook-native && yarn start",
     "ios": "react-native run-ios --no-packager",
     "ios:logs": "yarn ios && react-native log-ios",
-    "ios:app": "react-native start --config metro.config.ios.js",
+    "ios:app": "cd ios-app && yarn start",
     "ios:build-lib": "yarn ios:build-lib:js && cd ios-app && yarn build",
-    "ios:build-lib:js": "mkdir -p ios-app/ios-assets/js && mkdir -p ios-app/ios-assets/res && react-native bundle --platform ios --dev false --entry-file ios-app/index.ios.js --bundle-output ios-app/ios-assets/js/index.ios.bundle --assets-dest ios-app/ios-assets/res/ --reactNativePath node_modules/react-native",
+    "ios:build-lib:js": "mkdir -p ios-app/ios-assets/js && mkdir -p ios-app/ios-assets/res && react-native bundle --platform ios --dev false --entry-file ios-app/index.ios.js --bundle-output ios-app/ios-assets/js/index.ios.bundle --assets-dest ios-app/ios-assets/res/",
     "start-emulator": "./lib/start_android_emulator.sh",
     "preandroid": "yarn start-emulator",
     "android": "react-native run-android --no-packager",
     "android:logs": "yarn android && react-native log-android",
-    "android:app": "react-native start --config metro.config.android.js",
+    "android:app": "cd android-app && yarn start",
     "android:build-lib": "yarn android:build-lib:js && cd android-app && yarn build",
-    "android:build-lib:js": "mkdir -p android-app/xnative/src/main/assets/ && mkdir -p android-app/xnative/src/main/res/ && react-native bundle --platform android --dev false --entry-file android-app/index.android.js --bundle-output android-app/xnative/src/main/assets/index.android.bundle --assets-dest android-app/xnative/src/main/res/ --reactNativePath node_modules/react-native",
+    "android:build-lib:js": "mkdir -p android-app/xnative/src/main/assets/ && mkdir -p android-app/xnative/src/main/res/ && react-native bundle --platform android --dev false --entry-file android-app/index.android.js --bundle-output android-app/xnative/src/main/assets/index.android.bundle --assets-dest android-app/xnative/src/main/res/",
     "android:device": "./lib/setup_device_connections.sh && yarn android",
     "android:publish-lib": "lerna run --scope @times-components/android-app publish-library --stream",
     "prefmt": "prettier --write '**/*.{js,json}'",
@@ -57,7 +53,6 @@
     "postinstall": "yarn run fetch-fonts && lerna run postinstall && lerna run transpile",
     "packages:publish": "lerna publish --conventional-commits --yes --concurrency=1 --exact",
     "packages:publish-dry-run": "yarn packages:publish --no-git-tag-version --no-push",
-    "clean-snaps": "rm -rf dextrose/snappy/*.png",
     "commit": "git-cz",
     "prepublishOnly": "lerna run prepublishOnly",
     "test:e2e": "yarn bundle && lerna run test:integration --stream",
@@ -77,13 +72,6 @@
     ]
   },
   "config": {
-    "react-native-storybook-loader": {
-      "searchDir": [
-        "./packages"
-      ],
-      "pattern": "!(brightcove-video)/*.stories!(.web).js",
-      "outputFile": "./storybook-native/story-loader.js"
-    },
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
@@ -91,7 +79,8 @@
   "workspaces": [
     "packages/*",
     "android-app",
-    "ios-app"
+    "ios-app",
+    "storybook-native"
   ],
   "repository": {
     "type": "git",
@@ -125,13 +114,12 @@
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.5",
     "babel-plugin-module-resolver": "3.2.0",
+    "babel-preset-react-native": "4.0.1",
     "babel-runtime": "6.26.0",
-    "chromeless": "1.3.0",
     "commitizen": "2.9.6",
     "coveralls": "2.13.1",
     "cz-conventional-changelog": "2.1.0",
     "dashify": "0.2.2",
-    "dextrose": "4.0.7",
     "es6-promise-pool": "^2.5.0",
     "eslint": "5.9.0",
     "eslint-config-airbnb": "17.1.0",
@@ -151,18 +139,16 @@
     "node-fetch": "2.2.0",
     "prettier": "1.14.3",
     "prop-types": "15.7.2",
-    "react": "16.8.3",
-    "react-dom": "16.8.3",
-    "react-native": "0.59.8",
-    "react-native-storybook-loader": "1.8.0",
+    "react": "16.6.3",
+    "react-dom": "16.6.3",
     "react-native-web": "0.11.2",
     "react-native-web-image-loader": "0.0.6",
+    "react-scripts": "3.0.1",
     "rimraf": "2.6.1",
     "sort-pkg": "1.1.0",
     "subcommander": "1.0.0",
     "url": "0.11.0",
     "url-polyfill": "1.1.0",
-    "wd": "1.4.1",
     "webpack": "4.30.0"
   },
   "dependencies": {
@@ -170,8 +156,8 @@
     "@babel/preset-env": "^7.0.0",
     "@babel/runtime": "7.4.4",
     "@babel/runtime-corejs2": "7.4.4",
-    "react-art": "16.8.3",
-    "react-native": "0.59.8",
+    "react-art": "16.6.3",
+    "react-native": "0.58.6",
     "react-native-showcase-loader": "1.1.0"
   }
 }

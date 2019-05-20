@@ -2298,6 +2298,8 @@ exports[`13. list two and six no pic 1`] = `
   border-left-style: solid;
   margin-right: 10px;
   margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .IS10 {
@@ -2352,6 +2354,8 @@ exports[`13. list two and six no pic 1`] = `
   border-left-style: solid;
   margin-right: 10px;
   margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .IS15 {
@@ -2410,6 +2414,8 @@ exports[`13. list two and six no pic 1`] = `
   flex-direction: row;
   margin-right: 10px;
   margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
