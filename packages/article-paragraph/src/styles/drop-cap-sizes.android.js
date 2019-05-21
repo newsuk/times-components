@@ -34,12 +34,12 @@ const margins = (font, scale) => {
     },
     dropCap: {
       large: { bottom: -26, top: -14 },
-      medium: { bottom: -30, top: -12 },
+      medium: { bottom: -30, top: -17 },
       xlarge: { bottom: -22, top: -16 }
     },
     stMagazine: {
       large: { bottom: -26, top: -19 },
-      medium: { bottom: -30, top: -12 },
+      medium: { bottom: -30, top: -17 },
       xlarge: { bottom: -22, top: -19 }
     },
     styleMagazine: {
