@@ -118,7 +118,7 @@ class Section extends Component {
               }
               renderItem={this.renderItem}
               style={isTablet ? styles.tabletSpacing : null}
-              windowSize={5}
+              windowSize={2}
             />
           )}
         </ResponsiveContext.Consumer>

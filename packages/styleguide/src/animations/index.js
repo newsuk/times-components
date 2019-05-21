@@ -16,6 +16,11 @@ class FadeIn extends Component {
     }).start();
   }
 
+  componentWillUnmount() {
+    const { fadeAnim } = this.state;
+    fadeAnim.stopAnimation(() => {});
+  }
+
   render() {
     const { fadeAnim } = this.state;
     const { children } = this.props;
