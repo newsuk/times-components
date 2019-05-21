@@ -13,6 +13,8 @@ export default {
           onCopyLink={() => {}}
           onShareOnEmail={() => {}}
           saveApi={saveApi}
+          savingEnabled
+          sharingEnabled
         />
       ),
       name: "Save and Share bar",
