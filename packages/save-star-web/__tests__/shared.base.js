@@ -163,6 +163,48 @@ export default () => {
 
         expect(wrapper.state("savedStatus")).toEqual(true);
       }
+    },
+    {
+      name: "Clicks on saved link calls unsave api",
+      test: async () => {
+        const apiSave = mockSaveApi;
+
+        const unsaveSpy = jest.spyOn(apiSave, "unBookmark");
+
+        const wrapper = shallow(
+          <SaveStarWeb
+            articleId="96508c84-6611-11e9-adc2-05e1b87efaea"
+            saveApi={apiSave}
+          />
+        );
+        await delay(0);
+        const event = Object.assign(jest.fn(), { preventDefault: jest.fn() });
+        wrapper.find(Link).simulate("press", event);
+        await delay(0);
+
+        expect(unsaveSpy).toHaveBeenCalled();
+      }
+    },
+    {
+      name: "Clicks on save link to call save api",
+      test: async () => {
+        const apiSave = mockSaveApi;
+
+        const saveSpy = jest.spyOn(apiSave, "bookmark");
+
+        const wrapper = shallow(
+          <SaveStarWeb
+            articleId="9bd029d2-49a1-11e9-b472-f58a50a13bbb"
+            saveApi={apiSave}
+          />
+        );
+        await delay(0);
+        const event = Object.assign(jest.fn(), { preventDefault: jest.fn() });
+        wrapper.find(Link).simulate("press", event);
+        await delay(0);
+
+        expect(saveSpy).toHaveBeenCalled();
+      }
     }
   ];
 
