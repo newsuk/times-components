@@ -105,7 +105,7 @@ class Section extends Component {
           {({ isTablet }) => (
             <FlatList
               data={data}
-              initialNumToRender={5}
+              initialNumToRender={isTablet ? 5 : 2}
               ItemSeparatorComponent={this.renderItemSeperator}
               keyExtractor={item => item.elementId}
               ListHeaderComponent={this.getHeaderComponent(
@@ -118,7 +118,7 @@ class Section extends Component {
               }
               renderItem={this.renderItem}
               style={isTablet ? styles.tabletSpacing : null}
-              windowSize={5}
+              windowSize={3}
             />
           )}
         </ResponsiveContext.Consumer>
