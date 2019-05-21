@@ -29,8 +29,6 @@ class LazyLoadingImage extends Component {
     ];
     const queryParamMap = new Map(queryArray);
 
-    const uri = appendParamsToQuery(source.uri, queryParamMap);
-
     return (
       <Fragment>
         {error &&
@@ -42,7 +40,7 @@ class LazyLoadingImage extends Component {
             source={
               source
                 ? {
-                    uri
+                    uri: appendParamsToQuery(source.uri, queryParamMap)
                   }
                 : null
             }
