@@ -204,7 +204,8 @@ const renderArticle = ({
   scale,
   section,
   template,
-  isTeaser
+  isTeaser,
+  isMeteredExpired
 }) => (
   <ArticleProvider debounceTimeMs={0} id={id}>
     {({ article, error, refetch }) => {
@@ -228,7 +229,8 @@ const renderArticle = ({
               scale: scale || defaults.theme.scale
             },
             user: {
-              isLoggedIn: !isTeaser
+              isLoggedIn: !isTeaser || isMeteredExpired,
+              isMeteredExpired
             }
           }}
         >
@@ -289,7 +291,9 @@ const renderArticleConfig = ({
   hasScaling,
   link = null,
   select,
-  isTeaser = false
+  isTeaser = false,
+  isLoggedIn = false,
+  isMeteredExpired = false
 }) => {
   const id = "263b03a1-2ce6-4b94-b053-0d35316548c5";
   const withFlags = boolean("Flags", true);
@@ -302,6 +306,8 @@ const renderArticleConfig = ({
   const withStandfirst = boolean("Standfirst", true);
   const withVideo = boolean("Video", true);
   const withTeaser = !isTeaser && boolean("Teaser (only Web)", false);
+  const isMeteredExpiredPage =
+    !isMeteredExpired && boolean("Metered expired page (only web)", false);
 
   const scale = hasScaling ? selectScales(select) : null;
   const section = selectSection(select);
@@ -317,7 +323,7 @@ const renderArticleConfig = ({
 
   /* eslint-disable no-undef */
   window.nuk = window.nuk || {};
-  window.nuk.user = { isLoggedIn: !(isTeaser || withTeaser) };
+  window.nuk.user = { isLoggedIn, isMeteredExpired };
   /* eslint-enable no-undef */
 
   return (
@@ -346,6 +352,7 @@ const renderArticleConfig = ({
             inDepthBackgroundColour,
             inDepthTextColour,
             isTeaser: isTeaser || withTeaser,
+            isMeteredExpired: isMeteredExpired || isMeteredExpiredPage,
             scale,
             section,
             template

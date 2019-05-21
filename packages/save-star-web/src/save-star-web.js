@@ -33,9 +33,9 @@ class SaveStarWeb extends Component {
     const { saveApi } = this.props;
 
     if (savedStatus) {
-      this.saveUnsaveBookmark(saveApi.bookmark, false, true);
+      this.saveUnsaveBookmark(saveApi.unBookmark, false, true);
     } else {
-      this.saveUnsaveBookmark(saveApi.unBookmark, true, false);
+      this.saveUnsaveBookmark(saveApi.bookmark, true, false);
     }
   }
 
@@ -106,7 +106,7 @@ class SaveStarWeb extends Component {
       return <ActivityIndicator size="small" style={styles.activityLoader} />;
     }
 
-    return this.renderSaveButton(!!savedStatus);
+    return this.renderSaveButton(savedStatus);
   }
 
   render() {

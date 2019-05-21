@@ -1,13 +1,13 @@
 import React from "react";
 import { Image } from "react-native";
+import logoPath from "../../assets/t.png";
 
 function T() {
   return (
     <Image
       fadeDuration={0}
       resizeMode="contain"
-      // eslint-disable-next-line global-require
-      source={require("../../assets/t.png")}
+      source={logoPath}
       style={{ width: "25%" }}
     />
   );

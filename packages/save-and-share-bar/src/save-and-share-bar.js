@@ -60,7 +60,6 @@ class SaveAndShareBar extends Component {
     const {
       articleId,
       articleUrl,
-      onShareOnEmail,
       savingEnabled,
       sharingEnabled,
       onShareOnFB,
@@ -84,8 +83,7 @@ class SaveAndShareBar extends Component {
                   height={styles.svgIcon.height}
                   title="Share by email client"
                 />
-              )
-              }
+              )}
             </BarItem>
             <BarItem
               onPress={onShareOnTwitter}

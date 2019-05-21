@@ -38,7 +38,7 @@ export default ({
       }
     ]
   },
-  content: () => (
+  content: (
     <ArticleSummaryContent
       ast={[
         {
@@ -79,7 +79,7 @@ export default ({
     date: "2017-07-01T14:32:00.000Z",
     publication: "SUNDAYTIMES"
   },
-  headline: () => <ArticleSummaryHeadline headline={headline} />,
+  headline: <ArticleSummaryHeadline headline={headline} />,
   labelProps: {
     color: colours.functional.primary,
     title: label

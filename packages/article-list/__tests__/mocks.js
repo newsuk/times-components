@@ -1,6 +1,11 @@
 // eslint-disable-next-line global-require
 jest.mock("@times-components/ad", () => require("./ad-mock"));
-jest.mock("@times-components/article-summary", () => "ArticleSummary");
+jest.mock("@times-components/article-summary", () => ({
+  __esModule: "true",
+  default: "ArticleSummary",
+  ArticleSummaryHeadline: "ArticleSummaryHeadline",
+  ArticleSummaryContent: "ArticleSummaryContent"
+}));
 jest.mock("@times-components/button", () => "Button");
 jest.mock("@times-components/card", () => "Card");
 jest.mock("@times-components/image", () => "Image");

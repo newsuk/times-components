@@ -36,11 +36,37 @@ exports[`1. article list 1`] = `
               <div>
                 <ArticleSummary
                   bylineProps={null}
+                  content={
+                    <ArticleSummaryContent
+                      ast={
+                        Array [
+                          Object {
+                            "attributes": Object {},
+                            "children": Array [
+                              Object {
+                                "attributes": Object {
+                                  "value": "Summary 1",
+                                },
+                                "children": Array [],
+                                "name": "text",
+                              },
+                            ],
+                            "name": "paragraph",
+                          },
+                        ]
+                      }
+                    />
+                  }
                   datePublicationProps={
                     Object {
                       "date": "2017-11-17T00:01:00.000Z",
                       "publication": "TIMES",
                     }
+                  }
+                  headline={
+                    <ArticleSummaryHeadline
+                      headline="ShortHeadline 1"
+                    />
                   }
                   labelProps={
                     Object {
@@ -103,11 +129,37 @@ exports[`1. article list 1`] = `
                       "color": "#1D1D1B",
                     }
                   }
+                  content={
+                    <ArticleSummaryContent
+                      ast={
+                        Array [
+                          Object {
+                            "attributes": Object {},
+                            "children": Array [
+                              Object {
+                                "attributes": Object {
+                                  "value": "Summary 2",
+                                },
+                                "children": Array [],
+                                "name": "text",
+                              },
+                            ],
+                            "name": "paragraph",
+                          },
+                        ]
+                      }
+                    />
+                  }
                   datePublicationProps={
                     Object {
                       "date": "2017-11-17T00:01:00.000Z",
                       "publication": "SUNDAYTIMES",
                     }
+                  }
+                  headline={
+                    <ArticleSummaryHeadline
+                      headline="ShortHeadline 2"
+                    />
                   }
                   labelProps={
                     Object {
@@ -170,11 +222,37 @@ exports[`1. article list 1`] = `
                       "color": "#1D1D1B",
                     }
                   }
+                  content={
+                    <ArticleSummaryContent
+                      ast={
+                        Array [
+                          Object {
+                            "attributes": Object {},
+                            "children": Array [
+                              Object {
+                                "attributes": Object {
+                                  "value": "Summary 3",
+                                },
+                                "children": Array [],
+                                "name": "text",
+                              },
+                            ],
+                            "name": "paragraph",
+                          },
+                        ]
+                      }
+                    />
+                  }
                   datePublicationProps={
                     Object {
                       "date": "2017-11-17T00:01:00.000Z",
                       "publication": "SUNDAYTIMES",
                     }
+                  }
+                  headline={
+                    <ArticleSummaryHeadline
+                      headline="ShortHeadline 3"
+                    />
                   }
                   labelProps={
                     Object {
@@ -237,11 +315,37 @@ exports[`1. article list 1`] = `
                       "color": "#1D1D1B",
                     }
                   }
+                  content={
+                    <ArticleSummaryContent
+                      ast={
+                        Array [
+                          Object {
+                            "attributes": Object {},
+                            "children": Array [
+                              Object {
+                                "attributes": Object {
+                                  "value": "Summary 4",
+                                },
+                                "children": Array [],
+                                "name": "text",
+                              },
+                            ],
+                            "name": "paragraph",
+                          },
+                        ]
+                      }
+                    />
+                  }
                   datePublicationProps={
                     Object {
                       "date": "2017-11-17T00:01:00.000Z",
                       "publication": "SUNDAYTIMES",
                     }
+                  }
+                  headline={
+                    <ArticleSummaryHeadline
+                      headline="ShortHeadline 4"
+                    />
                   }
                   labelProps={
                     Object {
@@ -304,11 +408,37 @@ exports[`1. article list 1`] = `
                       "color": "#1D1D1B",
                     }
                   }
+                  content={
+                    <ArticleSummaryContent
+                      ast={
+                        Array [
+                          Object {
+                            "attributes": Object {},
+                            "children": Array [
+                              Object {
+                                "attributes": Object {
+                                  "value": "Summary 5",
+                                },
+                                "children": Array [],
+                                "name": "text",
+                              },
+                            ],
+                            "name": "paragraph",
+                          },
+                        ]
+                      }
+                    />
+                  }
                   datePublicationProps={
                     Object {
                       "date": "2017-11-17T00:01:00.000Z",
                       "publication": "SUNDAYTIMES",
                     }
+                  }
+                  headline={
+                    <ArticleSummaryHeadline
+                      headline="ShortHeadline 5"
+                    />
                   }
                   labelProps={
                     Object {
@@ -378,11 +508,17 @@ exports[`2. article list with no images 1`] = `
                 <div>
                   <ArticleSummary
                     bylineProps={null}
+                    content={<ArticleSummaryContent />}
                     datePublicationProps={
                       Object {
                         "date": "2017-11-17T00:01:00.000Z",
                         "publication": "TIMES",
                       }
+                    }
+                    headline={
+                      <ArticleSummaryHeadline
+                        headline="ShortHeadline 1"
+                      />
                     }
                     labelProps={
                       Object {
@@ -396,11 +532,37 @@ exports[`2. article list with no images 1`] = `
                 <div>
                   <ArticleSummary
                     bylineProps={null}
+                    content={
+                      <ArticleSummaryContent
+                        ast={
+                          Array [
+                            Object {
+                              "attributes": Object {},
+                              "children": Array [
+                                Object {
+                                  "attributes": Object {
+                                    "value": "Short summary 1",
+                                  },
+                                  "children": Array [],
+                                  "name": "text",
+                                },
+                              ],
+                              "name": "paragraph",
+                            },
+                          ]
+                        }
+                      />
+                    }
                     datePublicationProps={
                       Object {
                         "date": "2017-11-17T00:01:00.000Z",
                         "publication": "TIMES",
                       }
+                    }
+                    headline={
+                      <ArticleSummaryHeadline
+                        headline="ShortHeadline 1"
+                      />
                     }
                     labelProps={
                       Object {
@@ -468,11 +630,17 @@ exports[`3. article list with missing image 1`] = `
                 <div>
                   <ArticleSummary
                     bylineProps={null}
+                    content={<ArticleSummaryContent />}
                     datePublicationProps={
                       Object {
                         "date": "2017-11-17T00:01:00.000Z",
                         "publication": "TIMES",
                       }
+                    }
+                    headline={
+                      <ArticleSummaryHeadline
+                        headline="ShortHeadline 1"
+                      />
                     }
                     labelProps={
                       Object {
@@ -486,11 +654,37 @@ exports[`3. article list with missing image 1`] = `
                 <div>
                   <ArticleSummary
                     bylineProps={null}
+                    content={
+                      <ArticleSummaryContent
+                        ast={
+                          Array [
+                            Object {
+                              "attributes": Object {},
+                              "children": Array [
+                                Object {
+                                  "attributes": Object {
+                                    "value": "Short summary 1",
+                                  },
+                                  "children": Array [],
+                                  "name": "text",
+                                },
+                              ],
+                              "name": "paragraph",
+                            },
+                          ]
+                        }
+                      />
+                    }
                     datePublicationProps={
                       Object {
                         "date": "2017-11-17T00:01:00.000Z",
                         "publication": "TIMES",
                       }
+                    }
+                    headline={
+                      <ArticleSummaryHeadline
+                        headline="ShortHeadline 1"
+                      />
                     }
                     labelProps={
                       Object {

@@ -36,7 +36,7 @@ export default ({
       }
     ]
   },
-  content: () => (
+  content: (
     <ArticleSummaryContent
       ast={[
         {
@@ -55,7 +55,7 @@ export default ({
       ]}
     />
   ),
-  headline: () => <ArticleSummaryHeadline headline={headline} />,
+  headline: <ArticleSummaryHeadline headline={headline} />,
   labelProps: {
     color: colours.functional.primary,
     title: label

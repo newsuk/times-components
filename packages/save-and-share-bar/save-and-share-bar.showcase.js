@@ -14,6 +14,8 @@ export default {
           onCopyLink={() => {}}
           onShareOnEmail={mockGetTokenisedEmailUrl}
           saveApi={saveApi}
+          savingEnabled
+          sharingEnabled
         />
       ),
       name: "Save and Share bar",

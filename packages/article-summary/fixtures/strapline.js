@@ -60,7 +60,7 @@ export default ({
       }
     ]
   },
-  content: () => (
+  content: (
     <ArticleSummaryContent
       ast={[
         {
@@ -83,7 +83,7 @@ export default ({
     date: "2017-11-17T00:01:00.000Z",
     publication: "TIMES"
   },
-  flags: () => (
+  flags: (
     <ArticleFlags
       flags={[
         { expiryTime: "2020-03-13T12:00:00.000Z", type: "UPDATED" },
@@ -91,10 +91,10 @@ export default ({
       ]}
     />
   ),
-  headline: () => <ArticleSummaryHeadline headline={headline} />,
+  headline: <ArticleSummaryHeadline headline={headline} />,
   labelProps: {
     color: colours.functional.primary,
     title: label
   },
-  strapline: () => <ArticleSummaryStrapline strapline={strapline} />
+  strapline: <ArticleSummaryStrapline strapline={strapline} />
 });
