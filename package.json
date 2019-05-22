@@ -63,6 +63,14 @@
     "coveragePathIgnorePatterns": [
       "lib/cli/edition-checker/src/main.js"
     ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 87,
+        "functions": 87,
+        "lines": 87,
+        "statements": 87
+      }
+    },
     "testPathIgnorePatterns": [
       "<rootDir>/node_modules/"
     ],
