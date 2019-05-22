@@ -35,13 +35,12 @@ class SaveAndShareBar extends Component {
   handleOnShareEmailPress() {
     /* eslint-env browser */
     const { articleHeadline, articleId, getTokenisedShareUrl } = this.props;
+    this.setState({ isLoading: true });
 
     getTokenisedShareUrl(articleId)
       .then(res => {
         const { loading, data } = res;
-        if (loading) {
-          this.setState({ isLoading: loading });
-        } else {
+        if (!loading && data) {
           this.setState({ isLoading: false });
           const {
             article: { tokenisedUrl: url }

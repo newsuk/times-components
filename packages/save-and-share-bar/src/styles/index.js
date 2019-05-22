@@ -9,7 +9,6 @@ const styles = {
   activityLoader: {
     borderRadius: 9999,
     height: 40,
-    marginLeft: spacing(1),
     overflow: "hidden",
     width: 40
   },
