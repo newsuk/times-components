@@ -42,7 +42,7 @@ export default {
           link,
           select
         }),
-      name: "Article teaser",
+      name: "Article teaser (no marketing overlays)",
       platform: "web",
       type: "story"
     },
@@ -59,7 +59,7 @@ export default {
           link,
           select
         }),
-      name: "Article metered expired",
+      name: "Article metered expired (no marketing overlays)",
       platform: "web",
       type: "story"
     }
