@@ -1,6 +1,6 @@
 {
   "name": "@times-components/card",
-  "version": "6.0.10",
+  "version": "6.0.11",
   "main": "dist/card",
   "dev": "src/card",
   "scripts": {
@@ -66,10 +66,10 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/gradient": "3.1.29",
-    "@times-components/image": "6.0.10",
-    "@times-components/responsive": "0.4.36",
-    "@times-components/styleguide": "3.28.18",
+    "@times-components/gradient": "3.1.30",
+    "@times-components/image": "6.0.11",
+    "@times-components/responsive": "0.4.37",
+    "@times-components/styleguide": "3.28.19",
     "prop-types": "15.7.2",
     "styled-components": "4.2.0"
   },

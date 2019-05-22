@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.28.19](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.28.18...@times-components/styleguide@3.28.19) (2019-05-22)
+
+
+### Bug Fixes
+
+* Stop animated values as well as timers onunmount as it can leak memory ([#1981](https://github.com/newsuk/times-components/issues/1981)) ([f497aaf](https://github.com/newsuk/times-components/commit/f497aaf))
+
+
+
+
+
 ## [3.28.18](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.28.17...@times-components/styleguide@3.28.18) (2019-05-20)
 
 **Note:** Version bump only for package @times-components/styleguide
