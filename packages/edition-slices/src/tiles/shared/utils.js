@@ -1,3 +1,5 @@
+import { NativeModules } from "react-native";
+
 const getTileImageUri = (tile, crop) => {
   const leadAsset =
     tile.leadAsset || tile.article.listingAsset || tile.article.leadAsset;
@@ -17,4 +19,7 @@ const getTileSummary = (tile, length) =>
 
 const getTileStrapline = tile => tile.strapline || tile.article.strapline;
 
-export { getTileImageUri, getTileSummary, getTileStrapline };
+const isSaveSupported =
+  NativeModules.SectionEvents && NativeModules.SectionEvents.getSavedArticles;
+
+export { getTileImageUri, getTileSummary, getTileStrapline, isSaveSupported };

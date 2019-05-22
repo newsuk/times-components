@@ -15,6 +15,7 @@ const TileAJ = ({ id, image, onPress, title, url }) => (
     linkStyle={puzzleContainer}
     onPress={() => onPress({ id, title, url })}
     url={url}
+    withStar={false}
   >
     <View style={header}>
       <ArticleSummaryHeadline headline={title} style={headline} />

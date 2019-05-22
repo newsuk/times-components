@@ -14,7 +14,12 @@ import styleFactory from "./styles";
 const TileN = ({ isDarkStar, onPress, tile, breakpoint }) => {
   const styles = styleFactory(breakpoint);
   return (
-    <TileLink onPress={onPress} style={styles.container} tile={tile}>
+    <TileLink
+      onPress={onPress}
+      style={styles.container}
+      tile={tile}
+      isDarkStar={isDarkStar}
+    >
       <Image
         aspectRatio={1}
         style={styles.imageContainer}
@@ -23,7 +28,6 @@ const TileN = ({ isDarkStar, onPress, tile, breakpoint }) => {
       <TileSummary
         flagColour={styles.flagColour}
         headlineStyle={styles.headline}
-        isDarkStar={isDarkStar}
         labelColour={colours.functional.greyLabel}
         strapline={getTileStrapline(tile)}
         style={styles.summaryContainer}

@@ -1,4 +1,4 @@
-import { Author, AuthorArticles, Article } from "./types";
+import { Author, AuthorArticles } from "./types";
 import MockMarkup from "./mock-markup";
 import MockArticle from "./mock-article";
 

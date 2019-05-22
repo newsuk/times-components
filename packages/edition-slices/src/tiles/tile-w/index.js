@@ -13,13 +13,19 @@ import stylesFactory from "./styles";
 const TileW = ({ onPress, tile, breakpoint }) => {
   const styles = stylesFactory(breakpoint);
   return (
-    <TileLink onPress={onPress} style={styles.container} tile={tile}>
+    <TileLink
+      onPress={onPress}
+      style={styles.container}
+      tile={tile}
+      withStar={false}
+    >
       <TileSummary
         headlineStyle={styles.headline}
         style={styles.summaryContainer}
         summary={getTileSummary(tile, 125)}
         summaryStyle={styles.summary}
         tile={tile}
+        withStar
       />
       <Image
         aspectRatio={16 / 9}

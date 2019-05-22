@@ -19,10 +19,10 @@ const TileAG = ({ onPress, tile }) => {
       onPress={onPress}
       style={styles.container}
       tile={tileWithoutLabelAndFlags}
+      starStyle={styles.star}
     >
       <TileSummary
         headlineStyle={styles.headline}
-        starStyle={styles.star}
         strapline={getTileStrapline(tile)}
         straplineStyle={styles.strapline}
         tile={tileWithoutLabelAndFlags}

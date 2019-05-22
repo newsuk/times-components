@@ -1,4 +1,3 @@
-import { Crop, Image } from "./types";
 import UUID from "./mock-UUID";
 import TimesImage from "./times-image";
 

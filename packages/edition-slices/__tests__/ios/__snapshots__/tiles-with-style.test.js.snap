@@ -49,7 +49,25 @@ exports[`1. tile a 1`] = `
     >
       This is tile headline
     </Text>
-    <ArticleFlags />
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "width": "75%",
+          }
+        }
+      >
+        <ArticleFlags />
+      </View>
+    </View>
   </View>
   <Image
     style={
@@ -63,7 +81,13 @@ exports[`1. tile a 1`] = `
 
 exports[`2. tile b 1`] = `
 <Link>
-  <View>
+  <View
+    style={
+      Object {
+        "paddingBottom": 25,
+      }
+    }
+  >
     <View
       style={
         Object {
@@ -138,7 +162,13 @@ exports[`3. tile c 1`] = `
   >
     <Image />
   </View>
-  <View>
+  <View
+    style={
+      Object {
+        "paddingBottom": 25,
+      }
+    }
+  >
     <View
       style={
         Object {
@@ -312,7 +342,13 @@ exports[`5. tile e 1`] = `
 
 exports[`6. tile f 1`] = `
 <Link>
-  <View>
+  <View
+    style={
+      Object {
+        "paddingBottom": 25,
+      }
+    }
+  >
     <View
       style={
         Object {
@@ -402,6 +438,7 @@ exports[`7. tile g 1`] = `
     style={
       Object {
         "justifyContent": "center",
+        "paddingBottom": 25,
         "paddingHorizontal": 10,
         "paddingTop": 5,
         "width": "70%",
@@ -458,6 +495,7 @@ exports[`8. tile h 1`] = `
   <View
     style={
       Object {
+        "paddingBottom": 25,
         "paddingRight": 10,
         "paddingVertical": 10,
         "width": "50%",
@@ -624,7 +662,17 @@ exports[`9. tile i 1`] = `
     >
       This is tile headline
     </Text>
-    <ArticleFlags />
+    <View
+      style={
+        Object {
+          "flexDirection": "column",
+        }
+      }
+    >
+      <View>
+        <ArticleFlags />
+      </View>
+    </View>
   </View>
 </Link>
 `;
@@ -641,6 +689,7 @@ exports[`10. tile j 1`] = `
   <View
     style={
       Object {
+        "paddingBottom": 25,
         "paddingHorizontal": 10,
         "width": "60%",
       }
@@ -703,6 +752,7 @@ exports[`11. tile k 1`] = `
   <View
     style={
       Object {
+        "paddingBottom": 25,
         "width": "50%",
       }
     }
@@ -753,7 +803,13 @@ exports[`11. tile k 1`] = `
 
 exports[`12. tile l 1`] = `
 <Link>
-  <View>
+  <View
+    style={
+      Object {
+        "paddingBottom": 25,
+      }
+    }
+  >
     <View
       style={
         Object {
@@ -832,7 +888,17 @@ exports[`13. tile m 1`] = `
     >
       Three Conservative MPs resign
     </Text>
-    <ArticleFlags />
+    <View
+      style={
+        Object {
+          "flexDirection": "column",
+        }
+      }
+    >
+      <View>
+        <ArticleFlags />
+      </View>
+    </View>
   </View>
 </Link>
 `;
@@ -849,6 +915,7 @@ exports[`14. tile n 1`] = `
   <View
     style={
       Object {
+        "paddingBottom": 25,
         "paddingHorizontal": 10,
         "width": "50%",
       }
@@ -913,7 +980,13 @@ exports[`14. tile n 1`] = `
 
 exports[`15. tile o 1`] = `
 <Link>
-  <View>
+  <View
+    style={
+      Object {
+        "paddingBottom": 25,
+      }
+    }
+  >
     <View
       style={
         Object {
@@ -1033,7 +1106,17 @@ exports[`16. tile p 1`] = `
     >
       Three Conservative MPs resign
     </Text>
-    <ArticleFlags />
+    <View
+      style={
+        Object {
+          "flexDirection": "column",
+        }
+      }
+    >
+      <View>
+        <ArticleFlags />
+      </View>
+    </View>
     <Text>
       <Text
         style={
@@ -1083,7 +1166,13 @@ exports[`17. tile q 1`] = `
 
 exports[`18. tile r 1`] = `
 <Link>
-  <View>
+  <View
+    style={
+      Object {
+        "paddingBottom": 25,
+      }
+    }
+  >
     <View
       style={
         Object {
@@ -1250,6 +1339,7 @@ exports[`20. tile t 1`] = `
   <View
     style={
       Object {
+        "paddingBottom": 25,
         "paddingHorizontal": 10,
         "paddingVertical": 5,
         "width": "50%",
@@ -1350,7 +1440,25 @@ exports[`21. tile u 1`] = `
     >
       This is tile headline
     </Text>
-    <ArticleFlags />
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "width": "75%",
+          }
+        }
+      >
+        <ArticleFlags />
+      </View>
+    </View>
   </View>
   <Image
     style={
@@ -1372,7 +1480,13 @@ exports[`22. tile v 1`] = `
       }
     }
   />
-  <View>
+  <View
+    style={
+      Object {
+        "paddingBottom": 25,
+      }
+    }
+  >
     <View
       style={
         Object {
@@ -1486,7 +1600,25 @@ exports[`23. tile w 1`] = `
         ...
       </Text>
     </Text>
-    <ArticleFlags />
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "width": "75%",
+          }
+        }
+      >
+        <ArticleFlags />
+      </View>
+    </View>
   </View>
   <Image
     style={
@@ -1500,7 +1632,13 @@ exports[`23. tile w 1`] = `
 
 exports[`24. tile x 1`] = `
 <Link>
-  <View>
+  <View
+    style={
+      Object {
+        "paddingBottom": 25,
+      }
+    }
+  >
     <View
       style={
         Object {
@@ -1636,7 +1774,25 @@ exports[`25. tile y 1`] = `
         ...
       </Text>
     </Text>
-    <ArticleFlags />
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "width": "75%",
+          }
+        }
+      >
+        <ArticleFlags />
+      </View>
+    </View>
   </View>
 </Link>
 `;
@@ -1683,7 +1839,25 @@ exports[`26. tile z 1`] = `
     >
       This is tile headline
     </Text>
-    <ArticleFlags />
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "flex-start",
+            "width": "75%",
+          }
+        }
+      >
+        <ArticleFlags />
+      </View>
+    </View>
   </View>
   <Image />
 </Link>
@@ -1701,6 +1875,7 @@ exports[`27. tile aa 1`] = `
   <View
     style={
       Object {
+        "paddingBottom": 25,
         "paddingVertical": 5,
       }
     }
@@ -1754,6 +1929,7 @@ exports[`28. tile ab 1`] = `
   <View
     style={
       Object {
+        "paddingBottom": 25,
         "paddingRight": 10,
         "paddingVertical": 10,
         "width": "50%",
@@ -1862,7 +2038,13 @@ exports[`28. tile ab 1`] = `
 
 exports[`29. tile ae 1`] = `
 <Link>
-  <View>
+  <View
+    style={
+      Object {
+        "paddingBottom": 25,
+      }
+    }
+  >
     <View
       style={
         Object {
@@ -1927,7 +2109,13 @@ exports[`29. tile ae 1`] = `
 
 exports[`30. tile ag 1`] = `
 <Link>
-  <View>
+  <View
+    style={
+      Object {
+        "paddingBottom": 25,
+      }
+    }
+  >
     <Text
       style={
         Object {
@@ -2048,7 +2236,13 @@ exports[`33. tile al 1`] = `
       }
     }
   />
-  <View>
+  <View
+    style={
+      Object {
+        "paddingBottom": 25,
+      }
+    }
+  >
     <View
       style={
         Object {
@@ -2122,7 +2316,13 @@ exports[`34. tile am 1`] = `
       }
     }
   />
-  <View>
+  <View
+    style={
+      Object {
+        "paddingBottom": 25,
+      }
+    }
+  >
     <View
       style={
         Object {
@@ -2199,6 +2399,7 @@ exports[`35. tile an 1`] = `
     style={
       Object {
         "justifyContent": "center",
+        "paddingBottom": 25,
         "paddingHorizontal": 10,
         "paddingTop": 10,
       }
@@ -2279,6 +2480,7 @@ exports[`36. tile ap 1`] = `
     style={
       Object {
         "justifyContent": "center",
+        "paddingBottom": 25,
         "paddingHorizontal": 10,
         "paddingTop": 5,
       }
@@ -2341,6 +2543,7 @@ exports[`37. tile ad 1`] = `
   <View
     style={
       Object {
+        "paddingBottom": 25,
         "paddingHorizontal": 10,
         "width": "70%",
       }
@@ -2406,6 +2609,7 @@ exports[`38. tile ac 1`] = `
         "backgroundColor": "#F0F0F0",
         "flex": 1,
         "justifyContent": "center",
+        "paddingBottom": 25,
         "paddingHorizontal": 40,
         "paddingVertical": 20,
       }
