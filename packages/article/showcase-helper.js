@@ -35,6 +35,7 @@ const LINKED_BYLINE = 32;
 const PULL_QUOTE = 64;
 const STANDFIRST = 128;
 const VIDEO = 256;
+const TEASED_CONTENT = 512;
 
 export const makeArticleConfiguration = ({
   withFlags,
@@ -45,7 +46,8 @@ export const makeArticleConfiguration = ({
   withLinkedByline,
   withPullQuote,
   withStandfirst,
-  withVideo
+  withVideo,
+  withTeasedContent
 }) => {
   let mask;
 
@@ -83,6 +85,10 @@ export const makeArticleConfiguration = ({
 
   if (withVideo) {
     mask = mask | VIDEO;
+  }
+
+  if (withTeasedContent) {
+    mask = mask | TEASED_CONTENT;
   }
 
   return mask;
@@ -132,6 +138,10 @@ const makeArticle = configuration => article => {
     extraContent.unshift(fixtures.inlineVideo);
   } else {
     configuredArticle.hasVideo = false;
+  }
+
+  if (configuration & TEASED_CONTENT) {
+    configuredArticle.content = [...configuredArticle.content.slice(0, 6)];
   }
 
   configuredArticle.content = [...extraContent, ...configuredArticle.content];
@@ -305,9 +315,12 @@ const renderArticleConfig = ({
   const withPullQuote = boolean("Pull Quote", false);
   const withStandfirst = boolean("Standfirst", true);
   const withVideo = boolean("Video", true);
-  const withTeaser = !isTeaser && boolean("Teaser (only Web)", false);
+  const withTeaser =
+    !isTeaser &&
+    boolean("Teaser page (only Web, no marketing overlays)", false);
   const isMeteredExpiredPage =
-    !isMeteredExpired && boolean("Metered expired page (only web)", false);
+    !isMeteredExpired &&
+    boolean("Metered expired page (only Web, no marketing overlays)", false);
 
   const scale = hasScaling ? selectScales(select) : null;
   const section = selectSection(select);
@@ -340,7 +353,11 @@ const renderArticleConfig = ({
             withLinkedByline,
             withPullQuote,
             withStandfirst,
-            withVideo
+            withVideo,
+            withTeasedContent:
+              withTeaser ||
+              isTeaser ||
+              (isMeteredExpired || isMeteredExpiredPage)
           })}
           id={id}
         >

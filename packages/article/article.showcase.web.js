@@ -64,5 +64,5 @@ export default {
       type: "story"
     }
   ],
-  name: "Pages/Article"
+  name: "Pages/Article (marketing overlays)"
 };
