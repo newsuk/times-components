@@ -1,14 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { dropCap } from "./styles/responsive";
+import { DropCap } from "./styles/responsive.web";
 import { propTypes, defaultProps } from "./drop-cap-prop-types";
 
-const DropCapView = ({ colour, children, font }) => {
-  const DropCapWithFont = dropCap(font);
+function DropCapView({ colour, children, font }) {
   return (
-    <DropCapWithFont style={{ color: colour }}>{children}</DropCapWithFont>
+    <DropCap font={font} style={{ color: colour }}>
+      {children}
+    </DropCap>
   );
-};
+}
 
 DropCapView.propTypes = {
   ...propTypes,

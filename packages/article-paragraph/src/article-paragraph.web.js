@@ -1,13 +1,3 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Paragraph } from "./styles/responsive";
+import { Paragraph } from "./styles/responsive.web";
 
-const BodyParagraph = ({ children }) => <Paragraph>{children}</Paragraph>;
-
-BodyParagraph.propTypes = {
-  children: PropTypes.arrayOf(
-    PropTypes.oneOfType([PropTypes.string, PropTypes.element])
-  ).isRequired
-};
-
-export default BodyParagraph;
+export default Paragraph;
