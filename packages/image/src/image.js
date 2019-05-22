@@ -43,6 +43,7 @@ class TimesImage extends Component {
 
   componentWillUnmount() {
     clearTimeout(this.fadeAnimTimeout);
+    this.fadeAnim.stopAnimation(() => {});
   }
 
   onImageLayout(evt) {

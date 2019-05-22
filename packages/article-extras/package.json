@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-extras",
-  "version": "0.1.42",
+  "version": "0.1.43",
   "description": "Extra information components at the bottom of the articles, such as topics, related articles and comments",
   "main": "dist/index",
   "dev": "src/index",
@@ -56,14 +56,14 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/article-comments": "0.5.22",
-    "@times-components/article-topics": "4.0.12",
-    "@times-components/button": "2.3.78",
-    "@times-components/context": "1.0.11",
+    "@times-components/article-comments": "0.5.23",
+    "@times-components/article-topics": "4.0.13",
+    "@times-components/button": "2.3.79",
+    "@times-components/context": "1.0.12",
     "@times-components/provider": "1.17.1",
-    "@times-components/related-articles": "6.0.30",
-    "@times-components/responsive": "0.4.36",
-    "@times-components/styleguide": "3.28.18",
+    "@times-components/related-articles": "6.0.31",
+    "@times-components/responsive": "0.4.37",
+    "@times-components/styleguide": "3.28.19",
     "prop-types": "15.7.2",
     "styled-components": "4.2.0"
   },

@@ -200,6 +200,7 @@ class ArticleList extends Component {
 
     return (
       <FlatList
+        removeClippedSubviews
         accessibilityID="scroll-view"
         data={data}
         ItemSeparatorComponent={() => (

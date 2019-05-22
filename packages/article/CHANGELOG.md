@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.2.7](https://github.com/newsuk/times-components/compare/@times-components/article@7.2.6...@times-components/article@7.2.7) (2019-05-22)
+
+
+### Bug Fixes
+
+* show less content for teaser page and metered expired page ([#1983](https://github.com/newsuk/times-components/issues/1983)) ([7cccdc9](https://github.com/newsuk/times-components/commit/7cccdc9))
+
+
+
+
+
 ## [7.2.6](https://github.com/newsuk/times-components/compare/@times-components/article@7.2.5...@times-components/article@7.2.6) (2019-05-21)
 
 **Note:** Version bump only for package @times-components/article
