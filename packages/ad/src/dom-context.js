@@ -100,6 +100,7 @@ class DOMContext extends PureComponent {
         <body>
           <div></div>
           <script>
+            window.postMessage = function(data) {window.ReactNativeWebView.postMessage(data);};
             (${webviewEventCallbackSetup})({window});
           </script>
           <script>

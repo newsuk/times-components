@@ -6,7 +6,7 @@
 const webviewEventCallbackSetup = options => {
   const { window } = options;
   window.eventCallback = (type, detail) => {
-    window.ReactNativeWebView.postMessage(
+    window.postMessage(
       JSON.stringify({
         detail,
         isTngMessage: true,
