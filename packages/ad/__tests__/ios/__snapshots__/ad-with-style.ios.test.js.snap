@@ -11,10 +11,12 @@ Array [
       <View
         className="IS2"
       >
-        <RCTWebView
+        <RNCWKWebView
+          androidHardwareAccelerationDisabled={true}
+          cacheEnabled={true}
           className="IS1"
           messagingEnabled={true}
-          scalesPageToFit={true}
+          useSharedProcessPool={true}
         />
       </View>
     </View>
@@ -28,10 +30,12 @@ Array [
       <View
         className="IS2"
       >
-        <RCTWebView
+        <RNCWKWebView
+          androidHardwareAccelerationDisabled={true}
+          cacheEnabled={true}
           className="IS1"
           messagingEnabled={true}
-          scalesPageToFit={true}
+          useSharedProcessPool={true}
         />
       </View>
     </View>

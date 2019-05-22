@@ -93,7 +93,7 @@ export default (platform, cwd, options = {}) => {
       "^.+\\.js$": path.resolve(__dirname, "source-loader.js")
     },
     transformIgnorePatterns: [
-      "node_modules/(?!(react-native|react-native-svg|react-native-iphone-x-helper|@times-components|@storybook/react-native|react-native-swipe-gestures)/)"
+      "node_modules/(?!(react-native|react-native-svg|react-native-webview|react-native-iphone-x-helper|@times-components|@storybook/react-native|react-native-swipe-gestures)/)"
     ]
   };
 

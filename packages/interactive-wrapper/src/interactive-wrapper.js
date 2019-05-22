@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Linking, Platform, View } from "react-native";
+import { Linking, View } from "react-native";
 import { WebView } from "react-native-webview";
 import PropTypes from "prop-types";
 import webviewEventCallbackSetup from "./webview-event-callback-setup";
@@ -9,22 +9,6 @@ const editorialLambdaOrigin = "jotn9sgpg6.execute-api.eu-west-1.amazonaws.com";
 const editorialLambdaSlug = "prod/component";
 
 class InteractiveWrapper extends Component {
-  static postMessageBugWorkaround() {
-    return Platform.select({
-      android: {
-        injectedJavaScript: `(${webviewEventCallbackSetup})({window, os: "${
-          Platform.OS
-          }"});`
-      },
-      // https://github.com/facebook/react-native/issues/10865
-      ios: {
-        injectedJavaScript: `window.reactBridgePostMessage = window.postMessage; window.postMessage = String(Object.hasOwnProperty).replace('hasOwnProperty', 'postMessage'); (${webviewEventCallbackSetup})({window, os: "${
-          Platform.OS
-          }"});`
-      }
-    });
-  }
-
   static openURLInBrowser(url) {
     return Linking.canOpenURL(url)
       .then(supported => {
@@ -84,12 +68,11 @@ class InteractiveWrapper extends Component {
     const { height } = this.state;
 
     const uri = `${editorialLambdaProtocol}${editorialLambdaOrigin}/${editorialLambdaSlug}/${id}?dev=${dev}&env=${environment}&platform=${platform}&version=${version}`;
-    console.log("Interactive Height:", id, height, uri);
 
     return (
       <View style={{ height }}>
         <WebView
-          height={height}
+          injectedJavaScript={`window.postMessage = function(data) {window.ReactNativeWebView.postMessage(data);};(${webviewEventCallbackSetup})({window});`}
           onLoadEnd={this.onLoadEnd}
           onMessage={this.onMessage}
           onNavigationStateChange={this.handleNavigationStateChange}
@@ -99,7 +82,6 @@ class InteractiveWrapper extends Component {
           scrollEnabled={false}
           source={{ uri }}
           style={{ height }}
-          {...InteractiveWrapper.postMessageBugWorkaround()}
         />
       </View>
     );
