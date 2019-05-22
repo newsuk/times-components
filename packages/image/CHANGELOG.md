@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.11](https://github.com/newsuk/times-components/compare/@times-components/image@6.0.10...@times-components/image@6.0.11) (2019-05-22)
+
+
+### Bug Fixes
+
+* Stop animated values as well as timers onunmount as it can leak memory ([#1981](https://github.com/newsuk/times-components/issues/1981)) ([f497aaf](https://github.com/newsuk/times-components/commit/f497aaf))
+
+
+
+
+
 ## [6.0.10](https://github.com/newsuk/times-components/compare/@times-components/image@6.0.9...@times-components/image@6.0.10) (2019-05-20)
 
 **Note:** Version bump only for package @times-components/image
