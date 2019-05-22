@@ -14,7 +14,7 @@ export default Component =>
       },
       {
         actionName: "Pressed",
-        eventName: "onShareOnEmail",
+        eventName: "onShareEmailIconClick",
         getAttrs: ({ articleId, articleHeadline }) => ({
           articleId,
           articleHeadline

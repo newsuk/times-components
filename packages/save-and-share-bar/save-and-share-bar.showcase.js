@@ -1,7 +1,7 @@
 import React from "react";
 import saveApi from "@times-components/save-star-web/mock-save-api-showcase";
 import SaveAndShareBar from "./src/save-and-share-bar";
-import mockGetTokenisedEmailUrl from "./src/utils/mock-get-tokenised-email-url";
+import mockGetTokenisedArticleUrl from "./src/utils/mock-get-tokenised-article-url";
 
 export default {
   children: [
@@ -12,7 +12,7 @@ export default {
           articleHeadline="test-headline"
           articleUrl="https://www.thetimes.co.uk/"
           onCopyLink={() => {}}
-          onShareOnEmail={mockGetTokenisedEmailUrl}
+          getTokenisedShareUrl={mockGetTokenisedArticleUrl}
           saveApi={saveApi}
           savingEnabled
           sharingEnabled

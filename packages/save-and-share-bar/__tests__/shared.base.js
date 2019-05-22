@@ -6,7 +6,7 @@ import "./mocks";
 import { delay } from "@times-components/test-utils";
 import BarItem from "../src/bar-item";
 import SaveAndShareBar from "../src/save-and-share-bar";
-import mockGetTokenisedEmailUrl from "../src/utils/mock-get-tokenised-email-url";
+import mockGetTokenisedArticleUrl from "../src/utils/mock-get-tokenised-article-url";
 
 export default () => {
   describe("save and share bar component", () => {
@@ -24,7 +24,7 @@ export default () => {
           articleUrl={articleUrl}
           articleHeadline={articleHeadline}
           onCopyLink={onCopyLink}
-          onShareOnEmail={mockGetTokenisedEmailUrl}
+          getTokenisedShareUrl={mockGetTokenisedArticleUrl}
           saveApi={saveApi}
           sharingEnabled
           savingEnabled
@@ -44,7 +44,7 @@ export default () => {
     });
 
     it("getTokenisedEmail query to return tokenised url", async () => {
-      const mock = await mockGetTokenisedEmailUrl(articleId);
+      const mock = await mockGetTokenisedArticleUrl(articleId);
       const {
         data: {
           article: { tokenisedUrl: url }
@@ -57,6 +57,24 @@ export default () => {
     });
 
     it("email icon with loading state while network request is fetching data", async () => {
+      const apiMock = () =>
+        Promise.resolve({
+          loading: true
+        });
+
+      testInstance = TestRenderer.create(
+        <SaveAndShareBar
+          articleId={articleId}
+          articleUrl={articleUrl}
+          articleHeadline={articleHeadline}
+          onCopyLink={onCopyLink}
+          getTokenisedShareUrl={apiMock}
+          saveApi={saveApi}
+          sharingEnabled
+          savingEnabled
+        />
+      );
+
       testInstance.root.findAllByType(BarItem)[0].props.onPress();
       await delay(0);
       expect(testInstance).toMatchSnapshot();

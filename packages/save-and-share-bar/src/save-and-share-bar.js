@@ -8,6 +8,7 @@ import {
   IconCopyLink
 } from "@times-components/icons";
 import SaveStar from "@times-components/save-star-web";
+import getTokenisedArticleUrlApi from "./get-tokenised-article-url-api";
 import withTrackEvents from "./tracking/with-track-events";
 import SharingApiUrls from "./constants";
 import styles from "./styles";
@@ -33,14 +34,14 @@ class SaveAndShareBar extends Component {
 
   handleOnShareEmailPress() {
     /* eslint-env browser */
-    const { articleHeadline, articleId, onShareOnEmail } = this.props;
-    this.setState({ isLoading: true });
+    const { articleHeadline, articleId, getTokenisedShareUrl } = this.props;
 
-    onShareOnEmail(articleId)
+    getTokenisedShareUrl(articleId)
       .then(res => {
         const { loading, data } = res;
-
-        if (!loading && data) {
+        if (loading) {
+          this.setState({ isLoading: loading });
+        } else {
           this.setState({ isLoading: false });
           const {
             article: { tokenisedUrl: url }
@@ -140,7 +141,7 @@ SaveAndShareBar.propTypes = {
   articleId: PropTypes.string.isRequired,
   articleUrl: PropTypes.string.isRequired,
   articleHeadline: PropTypes.string.isRequired,
-  onShareOnEmail: PropTypes.func.isRequired,
+  getTokenisedShareUrl: PropTypes.func,
   onCopyLink: PropTypes.func.isRequired,
   onShareOnFB: PropTypes.func,
   onShareOnTwitter: PropTypes.func,
@@ -156,7 +157,11 @@ SaveAndShareBar.propTypes = {
 /* Serves as an indication when share links are clicked for tracking and analytics */
 SaveAndShareBar.defaultProps = {
   onShareOnFB: () => {},
-  onShareOnTwitter: () => {}
+  onShareOnTwitter: () => {},
+  getTokenisedShareUrl: getTokenisedArticleUrlApi
 };
 
 export default withTrackEvents(SaveAndShareBar);
+export {
+  default as getTokenisedArticleUrlApi
+} from "./get-tokenised-article-url-api";
