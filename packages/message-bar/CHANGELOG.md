@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.7](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.2.6...@times-components/message-bar@0.2.7) (2019-05-23)
+
+
+### Bug Fixes
+
+* Change message bar layout to fix flicker issue ([#1990](https://github.com/newsuk/times-components/issues/1990)) ([dfa4ee4](https://github.com/newsuk/times-components/commit/dfa4ee4))
+
+
+
+
+
 ## [0.2.6](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.2.5...@times-components/message-bar@0.2.6) (2019-05-22)
 
 **Note:** Version bump only for package @times-components/message-bar

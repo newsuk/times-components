@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.3.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.2.8...@times-components/article-main-comment@2.3.0) (2019-05-23)
+
+
+### Features
+
+* (Replat 6378) Fix article regressions ([#1956](https://github.com/newsuk/times-components/issues/1956)) ([fb9c3bb](https://github.com/newsuk/times-components/commit/fb9c3bb))
+
+
+
+
+
 ## [2.2.8](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.2.7...@times-components/article-main-comment@2.2.8) (2019-05-23)
 
 
