@@ -63,8 +63,7 @@ const sharedStyles = {
   metaContainer: {
     alignItems: "center",
     width: "100%",
-    paddingBottom: spacing(2),
-    paddingTop: spacing(2),
+    paddingVertical: spacing(2),
     borderBottomColor: colours.functional.keyline,
     borderBottomWidth: 1,
     borderTopColor: colours.functional.keyline,
