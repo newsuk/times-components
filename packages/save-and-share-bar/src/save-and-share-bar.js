@@ -42,10 +42,7 @@ class SaveAndShareBar extends Component {
         const { loading, data } = res;
         if (!loading) {
           this.setState({ isLoading: false });
-          const {
-            article: { tokenisedUrl: url }
-          } = data;
-
+          const { url } = data.article.tokenisedUrl;
           const mailtoEmailUrl = `mailto:?subject=${articleHeadline} from The Times&body=I thought you would be interested in this story from The Times%0A%0A${articleHeadline}%0A%0A${url}`;
           window.location.assign(mailtoEmailUrl);
         }

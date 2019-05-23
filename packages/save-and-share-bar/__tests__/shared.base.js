@@ -6,7 +6,6 @@ import "./mocks";
 import { delay } from "@times-components/test-utils";
 import BarItem from "../src/bar-item";
 import SaveAndShareBar from "../src/save-and-share-bar";
-import mockGetTokenisedArticleUrl from "../src/utils/mock-get-tokenised-article-url";
 
 export default () => {
   describe("save and share bar component", () => {
@@ -14,6 +13,15 @@ export default () => {
     const articleId = "96508c84-6611-11e9-adc2-05e1b87efaea";
     const articleUrl = "https://www.thetimes.co.uk/";
     const articleHeadline = "test-headline";
+    const mockGetTokenisedArticleUrl = id =>
+      Promise.resolve({
+        data: {
+          article: {
+            tokenisedUrl: `https://www.thetimes.co.uk/article/${id}?shareToken=333310c5af52a3c6e467e3b15516c950`
+          }
+        },
+        loading: false
+      });
 
     let testInstance = null;
 
@@ -72,11 +80,7 @@ export default () => {
       window.location.assign = jest.fn();
 
       const mock = await mockGetTokenisedArticleUrl(articleId);
-      const {
-        data: {
-          article: { tokenisedUrl: url }
-        }
-      } = mock;
+      const { url } = mock.data.article.tokenisedUrl;
 
       const mailtoUrl = `mailto:?subject=${articleHeadline} from The Times&body=I thought you would be interested in this story from The Times%0A%0A${articleHeadline}%0A%0A${url}`;
 
