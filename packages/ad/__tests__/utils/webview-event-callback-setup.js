@@ -20,12 +20,10 @@ export default () => {
         }
       }),
       console: {},
+      postMessage: jest.fn().mockImplementation(data => {
+        window.postMessageDecoded(JSON.parse(data));
+      }),
       postMessageDecoded: jest.fn(),
-      ReactNativeWebView: {
-        postMessage: jest.fn().mockImplementation(data => {
-          window.postMessageDecoded(JSON.parse(data));
-        })
-      },
       requestAnimationFrame: realWindow.requestAnimationFrame,
       setTimeout: realWindow.setTimeout
     };
