@@ -2,6 +2,7 @@
 import React from "react";
 import { Text, View } from "react-native";
 import invert from "lodash.invert";
+import saveApi from "@times-components/save-star-web/mock-save-api-showcase";
 import articleAdConfig from "@times-components/ad/fixtures/article-ad-config.json";
 import { ContextProviderWithDefaults } from "@times-components/context";
 import { colours, scales } from "@times-components/styleguide";
@@ -81,6 +82,7 @@ const renderArticleSkeleton = ({
         )}
         onVideoPress={preventDefaultedAction(decorateAction)("onVideoPress")}
         onViewableItemsChanged={() => null}
+        saveApi={saveApi}
       />
     </ContextProviderWithDefaults>
   );
