@@ -20,12 +20,10 @@ export default () => {
         }
       }),
       console: {},
-      originalPostMessage: {},
       postMessage: jest.fn().mockImplementation(data => {
         window.postMessageDecoded(JSON.parse(data));
       }),
       postMessageDecoded: jest.fn(),
-      reactBridgePostMessageDecoded: jest.fn(),
       requestAnimationFrame: realWindow.requestAnimationFrame,
       setTimeout: realWindow.setTimeout
     };
@@ -44,15 +42,6 @@ export default () => {
     expect(window.eventCallback).toBeUndefined();
     webviewEventCallbackSetup({ window });
     expect(window.eventCallback).toEqual(expect.any(Function));
-  });
-
-  it("falls back to postMessage if reactBridgePostMessage if not available", () => {
-    webviewEventCallbackSetup({ window });
-    window.postMessage = jest.fn();
-    delete window.reactBridgePostMessage;
-    window.eventCallback("TYPE", "DETAIL");
-    jest.runAllTimers();
-    expect(window.postMessage).toHaveBeenCalledTimes(1);
   });
 
   const expectMessageFromError = (error, messageDetail) => {
@@ -107,13 +96,5 @@ export default () => {
       isTngMessage: true,
       type: "error"
     });
-  });
-
-  it("posts a message to reactBridgePostMessage instead of postMessage on ios", () => {
-    window.reactBridgePostMessage = jest.fn();
-    webviewEventCallbackSetup({ os: "ios", window });
-    window.console.error("a");
-    jest.runAllTimers();
-    expect(window.reactBridgePostMessage).toHaveBeenCalled();
   });
 };

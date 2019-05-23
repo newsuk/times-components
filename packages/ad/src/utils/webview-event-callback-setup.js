@@ -4,46 +4,9 @@
 /* eslint-env browser */
 
 const webviewEventCallbackSetup = options => {
-  const { os, window } = options;
-
-  // Enqueue window messages until it's ready - See https://github.com/facebook/react-native/issues/11594#issuecomment-274689549 for details
-  let isReactNativePostMessageReady = !!window.originalPostMessage;
-  const queue = [];
-  let currentPostMessageFn = function store(message) {
-    if (queue.length > 100) queue.shift();
-    queue.push(message);
-  };
-
-  const postMessage = message => {
-    const method = window.reactBridgePostMessage || window.postMessage;
-    method(message);
-  };
-
-  const sendQueue = () => {
-    while (queue.length > 0) postMessage(queue.shift());
-  };
-
-  if (!isReactNativePostMessageReady) {
-    Object.defineProperty(
-      window,
-      os === "ios" ? "reactBridgePostMessage" : "postMessage",
-      {
-        configurable: true,
-        enumerable: true,
-        get() {
-          return currentPostMessageFn;
-        },
-        set(fn) {
-          currentPostMessageFn = fn;
-          isReactNativePostMessageReady = true;
-          window.setTimeout(sendQueue, 0);
-        }
-      }
-    );
-  }
-
+  const { window } = options;
   window.eventCallback = (type, detail) => {
-    postMessage(
+    window.postMessage(
       JSON.stringify({
         detail,
         isTngMessage: true,

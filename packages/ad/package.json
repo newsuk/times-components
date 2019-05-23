@@ -62,7 +62,8 @@
     "@times-components/utils": "4.11.6",
     "@times-components/watermark": "2.6.16",
     "prop-types": "15.7.2",
-    "react-broadcast": "0.5.2"
+    "react-broadcast": "0.5.2",
+    "react-native-webview": "5.10.0"
   },
   "peerDependencies": {
     "react": ">=16.5",

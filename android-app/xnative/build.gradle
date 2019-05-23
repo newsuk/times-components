@@ -78,4 +78,7 @@ dependencies {
     api("react-repo:react-native-svg:${packageInfo.dependencies.'react-native-svg'}") {	
         exclude group: "com.facebook.react"	
     }
+    api("react-repo:react-native-webview:${packageInfo.dependencies.'react-native-webview'}") {	
+        exclude group: "com.facebook.react"	
+    }
 }
