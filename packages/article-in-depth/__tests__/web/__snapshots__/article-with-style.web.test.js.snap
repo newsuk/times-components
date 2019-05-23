@@ -12,6 +12,12 @@ exports[`full article with style 1`] = `
   padding-left: 10px;
 }
 
+.c15:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .c18 {
   padding-left: 10px;
 }
@@ -690,6 +696,12 @@ exports[`full article with style in the culture magazine 1`] = `
   margin: 0 auto 25px;
   padding-right: 10px;
   padding-left: 10px;
+}
+
+.c15:after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .c18 {
@@ -1373,6 +1385,12 @@ exports[`full article with style in the style magazine 1`] = `
   padding-left: 10px;
 }
 
+.c15:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .c18 {
   padding-left: 10px;
 }
@@ -2052,6 +2070,12 @@ exports[`full article with style in the sunday times magazine 1`] = `
   margin: 0 auto 25px;
   padding-right: 10px;
   padding-left: 10px;
+}
+
+.c15:after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .c18 {
