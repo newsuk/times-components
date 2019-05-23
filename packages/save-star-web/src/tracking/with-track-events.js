@@ -6,8 +6,9 @@ export default Component =>
       {
         actionName: "Pressed",
         eventName: "onSaveButtonPress",
-        getAttrs: ({ articleId }) => ({
-          articleId
+        getAttrs: ({ articleId, articleHeadline }) => ({
+          articleId,
+          articleHeadline
         }),
         trackingName: "ArticleSaveToMyArticles"
       }

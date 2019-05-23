@@ -41,11 +41,13 @@ export default () => {
 
     beforeEach(() => {
       const articleId = "id-123";
+      const articleHeadline = "Article-headline";
       stream = jest.fn();
       testInstance = TestRenderer.create(
           <WithTrackingContext
             analyticStream={stream}
             articleId={articleId}
+            articleHeadline={articleHeadline}
             saveApi={mockSaveApi}
             onSaveButtonPress={onSaveButtonPress}
           />
