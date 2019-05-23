@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.6.7](https://github.com/newsuk/times-components/compare/@times-components/ad@2.6.6...@times-components/ad@2.6.7) (2019-05-23)
+
+
+### Bug Fixes
+
+* Replace webview with community lib ([#1985](https://github.com/newsuk/times-components/issues/1985)) ([4c540e1](https://github.com/newsuk/times-components/commit/4c540e1))
+
+
+
+
+
 ## [2.6.6](https://github.com/newsuk/times-components/compare/@times-components/ad@2.6.5...@times-components/ad@2.6.6) (2019-05-22)
 
 **Note:** Version bump only for package @times-components/ad

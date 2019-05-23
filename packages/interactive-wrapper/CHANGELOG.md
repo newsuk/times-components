@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.51](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.2.50...@times-components/interactive-wrapper@0.2.51) (2019-05-23)
+
+
+### Bug Fixes
+
+* Replace webview with community lib ([#1985](https://github.com/newsuk/times-components/issues/1985)) ([4c540e1](https://github.com/newsuk/times-components/commit/4c540e1))
+
+
+
+
+
 ## [0.2.50](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.2.49...@times-components/interactive-wrapper@0.2.50) (2019-05-20)
 
 **Note:** Version bump only for package @times-components/interactive-wrapper
