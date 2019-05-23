@@ -4,7 +4,7 @@ import { ActivityIndicator, Text } from "react-native";
 import Link from "@times-components/link";
 import { HoverIcon } from "@times-components/utils";
 import PropTypes from "prop-types";
-import { IconSaveBookmark, IconStar } from "@times-components/icons";
+import { IconStar } from "@times-components/icons";
 import styles, { getStyles } from "./styles";
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
