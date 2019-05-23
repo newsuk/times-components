@@ -6,7 +6,7 @@ import { HoverIcon } from "@times-components/utils";
 import PropTypes from "prop-types";
 import { IconStar } from "@times-components/icons";
 import styles, { getStyles } from "./styles";
-import withTrackEvents from './tracking/with-track-events';
+import withTrackEvents from "./tracking/with-track-events";
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
 class SaveStarWeb extends Component {
@@ -16,12 +16,20 @@ class SaveStarWeb extends Component {
       loadingState: null,
       savedStatus: false
     };
+    this.saveUnsaveBookmark = this.saveUnsaveBookmark.bind(this);
+    this.onLinkPress = this.onLinkPress.bind(this);
   }
 
   componentDidMount() {
     const { articleId, saveApi } = this.props;
 
     this.getBookmarks(articleId, saveApi);
+  }
+
+  onLinkPress(evt) {
+    const { onSaveButtonPress } = this.props;
+    const { savedStatus } = this.state;
+    onSaveButtonPress(evt, savedStatus, this.saveUnsaveBookmark);
   }
 
   getBookmarks(articleId, saveApi) {
@@ -44,19 +52,34 @@ class SaveStarWeb extends Component {
       })
       .catch(error => {
         this.setState({ loadingState: false, savedStatus: false });
+        console.error(error);
+      });
+  }
+
+  saveUnsaveBookmark(saveMethod, successStatus, errorStatus) {
+    this.setState({ loadingState: true });
+    const { articleId: id } = this.props;
+    saveMethod(id)
+      .then(() => {
+        this.setState({
+          loadingState: false,
+          savedStatus: successStatus
+        });
+      })
+      .catch(error => {
+        this.setState({ loadingState: false, savedStatus: errorStatus });
         console.error("Error in connecting to api", error);
       });
   }
 
-
-  renderSaveButton(saveStatus) {
-    const { colour, hoverColour, height = 18, onSaveButtonPress } = this.props;
-
-    const saveStyle = getStyles({ saveStatus });
+  renderSaveButton() {
+    const { colour, hoverColour, height = 18 } = this.props;
+    const { savedStatus } = this.state;
+    const saveStyle = getStyles({ saveStatus: savedStatus });
     const { fillColour, strokeColour } = saveStyle;
 
     return (
-      <Link onPress={onSaveButtonPress} responsiveLinkStyles={styles.link}>
+      <Link onPress={this.onLinkPress} responsiveLinkStyles={styles.link}>
         <HoverIcon colour={colour} hoverColour={hoverColour}>
           <IconStar
             fillColour={fillColour}
@@ -70,13 +93,13 @@ class SaveStarWeb extends Component {
   }
 
   renderActivity() {
-    const { savedStatus, loadingState } = this.state;
+    const { loadingState } = this.state;
 
     if (loadingState) {
       return <ActivityIndicator size="small" style={styles.activityLoader} />;
     }
 
-    return this.renderSaveButton(savedStatus);
+    return this.renderSaveButton();
   }
 
   render() {
@@ -94,7 +117,6 @@ class SaveStarWeb extends Component {
 
 SaveStarWeb.propTypes = {
   articleId: PropTypes.string.isRequired,
-  articleHeadline: PropTypes.string.isRequired,
   colour: PropTypes.string,
   hoverColour: PropTypes.string,
   height: PropTypes.number.isRequired,
@@ -103,7 +125,7 @@ SaveStarWeb.propTypes = {
     getBookmarks: PropTypes.func.isRequired,
     unBookmark: PropTypes.func.isRequired
   }).isRequired,
-  onSaveButtonPress: PropTypes.func.isRequired
+  onSaveButtonPress: PropTypes.func
 };
 
 SaveStarWeb.defaultProps = {

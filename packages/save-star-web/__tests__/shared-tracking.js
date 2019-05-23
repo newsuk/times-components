@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import TestRenderer from "react-test-renderer";
-import mockSaveApi from "@times-components/save-star-web/mock-save-api";
 import PropTypes from "prop-types";
-import SaveStarWeb from "../src/save-star-web";
 import Link from "@times-components/link";
+import mockSaveApi from "../mock-save-api";
+import SaveStarWeb from "../src/save-star-web";
 
 class WithTrackingContext extends Component {
   getChildContext() {
@@ -29,14 +29,18 @@ WithTrackingContext.childContextTypes = {
 WithTrackingContext.propTypes = {
   analyticStream: PropTypes.func.isRequired,
   articleId: PropTypes.string.isRequired,
-  saveApi: PropTypes.object,
+  saveApi: PropTypes.shape({
+    bookmark: PropTypes.func.isRequired,
+    getBookmarks: PropTypes.func.isRequired,
+    unBookmark: PropTypes.func.isRequired
+  }).isRequired,
   onSaveButtonPress: PropTypes.func.isRequired
 };
 
 export default () => {
   describe("save star tracking events", () => {
-    let testInstance = null
-    let stream = null
+    let testInstance = null;
+    let stream = null;
     const onSaveButtonPress = jest.fn();
 
     beforeEach(() => {
@@ -44,25 +48,22 @@ export default () => {
       const articleHeadline = "Article-headline";
       stream = jest.fn();
       testInstance = TestRenderer.create(
-          <WithTrackingContext
-            analyticStream={stream}
-            articleId={articleId}
-            articleHeadline={articleHeadline}
-            saveApi={mockSaveApi}
-            onSaveButtonPress={onSaveButtonPress}
-          />
-        );
-    })
+        <WithTrackingContext
+          analyticStream={stream}
+          articleId={articleId}
+          articleHeadline={articleHeadline}
+          saveApi={mockSaveApi}
+          onSaveButtonPress={onSaveButtonPress}
+        />
+      );
+    });
 
     it("when press save star", () => {
-      const saveStarLink = testInstance.root.findAllByType(
-        Link
-      )[0];
+      const saveStarLink = testInstance.root.findAllByType(Link)[0];
       saveStarLink.props.onPress();
       const [[call]] = stream.mock.calls;
 
       expect(call).toMatchSnapshot();
-      expect(onSaveButtonPress.mock.calls).toMatchSnapshot();
     });
   });
 };

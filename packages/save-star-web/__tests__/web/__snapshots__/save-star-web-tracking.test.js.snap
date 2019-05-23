@@ -10,9 +10,3 @@ Object {
   "component": "ArticleSaveToMyArticles",
 }
 `;
-
-exports[`save star tracking events when press save star 2`] = `
-Array [
-  Array [],
-]
-`;
