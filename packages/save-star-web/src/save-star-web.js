@@ -127,7 +127,7 @@ SaveStarWeb.propTypes = {
   articleId: PropTypes.string.isRequired,
   colour: PropTypes.string,
   hoverColour: PropTypes.string,
-  height: PropTypes.string,
+  height: PropTypes.number.isRequired,
   saveApi: PropTypes.shape({
     bookmark: PropTypes.func.isRequired,
     getBookmarks: PropTypes.func.isRequired,
@@ -137,8 +137,7 @@ SaveStarWeb.propTypes = {
 
 SaveStarWeb.defaultProps = {
   colour: styles.svgIcon.fillColour,
-  hoverColour: styles.svgIcon.hoverFillColour,
-  height: styles.svgIcon.star.height
+  hoverColour: styles.svgIcon.hoverFillColour
 };
 
 export default SaveStarWeb;
