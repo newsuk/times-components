@@ -40,7 +40,6 @@
     "@times-components/markup-forest": "1.7.11",
     "@times-components/responsive": "0.4.37",
     "@times-components/styleguide": "3.28.19",
-    "lodash.invert": "4.3.0",
     "prop-types": "15.7.2",
     "styled-components": "4.2.0"
   },

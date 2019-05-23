@@ -12,6 +12,12 @@ exports[`1. mpu config 1`] = `
   padding-left: 10px;
 }
 
+.c0:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 @media (min-width:768px) {
   .c0 {
     font-size: 18px;
