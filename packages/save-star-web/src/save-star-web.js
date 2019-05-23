@@ -137,7 +137,8 @@ SaveStarWeb.propTypes = {
 
 SaveStarWeb.defaultProps = {
   colour: styles.svgIcon.fillColour,
-  hoverColour: styles.svgIcon.hoverFillColour
+  hoverColour: styles.svgIcon.hoverFillColour,
+  height: styles.svgIcon.star.height
 };
 
 export default SaveStarWeb;
