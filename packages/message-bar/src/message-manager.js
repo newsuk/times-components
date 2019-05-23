@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unused-state */
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import { View, Platform } from "react-native";
 import PropTypes from "prop-types";
 import styleFactory from "./styles";
@@ -57,7 +57,7 @@ class MessageManager extends Component {
       : {};
 
     return (
-      <Fragment>
+      <View>
         <View style={[styles.messageManager, offsetStyle]}>
           {message && (
             <MessageBar
@@ -74,7 +74,7 @@ class MessageManager extends Component {
             {children}
           </MessageContext.Provider>
         </View>
-      </Fragment>
+      </View>
     );
   }
 }
