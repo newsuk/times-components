@@ -29,8 +29,8 @@
     "@times-components/storybook": "4.0.9",
     "babel-polyfill": "6.26.0",
     "prop-types": "15.7.2",
-    "react": "16.6.3",
-    "react-native": "0.58.6",
+    "react": "16.8.6",
+    "react-native": "0.59.8",
     "react-native-svg": "9.4.0",
     "url-polyfill": "1.1.0"
   },

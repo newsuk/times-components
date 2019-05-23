@@ -141,9 +141,9 @@
     "node-fetch": "2.2.0",
     "prettier": "1.14.3",
     "prop-types": "15.7.2",
-    "react": "16.6.3",
-    "react-dom": "16.6.3",
-    "react-native-web": "0.11.2",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-native-web": "0.11.4",
     "react-native-web-image-loader": "0.0.6",
     "react-scripts": "3.0.1",
     "rimraf": "2.6.1",
@@ -159,8 +159,9 @@
     "@babel/preset-env": "^7.0.0",
     "@babel/runtime": "7.4.4",
     "@babel/runtime-corejs2": "7.4.4",
+    "@kudo-ci/jsc-android": "241213-no-jit",
     "react-art": "16.6.3",
-    "react-native": "0.58.6",
+    "react-native": "0.59.8",
     "react-native-showcase-loader": "1.1.0"
   }
 }
