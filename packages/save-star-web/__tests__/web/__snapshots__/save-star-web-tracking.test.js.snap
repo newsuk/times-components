@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`save star tracking events when press save star 1`] = `
+Object {
+  "action": "Pressed",
+  "attrs": Object {
+    "articleId": "id-123",
+  },
+  "component": "ArticleSaveToMyArticles",
+}
+`;
+
+exports[`save star tracking events when press save star 2`] = `
+Array [
+  Array [],
+]
+`;

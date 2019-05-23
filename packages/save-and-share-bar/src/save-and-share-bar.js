@@ -17,12 +17,44 @@ class SaveAndShareBar extends Component {
   constructor(props) {
     super(props);
     this.copyToClipboard = this.copyToClipboard.bind(this);
+    this.onSaveButtonPress = this.onSaveButtonPress.bind(this);
   }
 
   copyToClipboard() {
     const { onCopyLink, articleUrl } = this.props;
     Clipboard.setString(articleUrl);
     onCopyLink();
+  }
+
+
+  onSaveButtonPress(evt) {
+    evt.preventDefault();
+
+    const { savedStatus } = this.state;
+    const { saveApi } = this.props;
+
+    if (savedStatus) {
+      this.saveUnsaveBookmark(saveApi.unBookmark, false, true);
+    } else {
+      this.saveUnsaveBookmark(saveApi.bookmark, true, false);
+    }
+  }
+
+  saveUnsaveBookmark(saveMethod, successStatus, errorStatus) {
+    this.setState({ loadingState: true });
+    const { articleId: id } = this.props;
+
+    saveMethod(id)
+      .then(() => {
+        this.setState({
+          loadingState: false,
+          savedStatus: successStatus
+        });
+      })
+      .catch(error => {
+        this.setState({ loadingState: false, savedStatus: errorStatus });
+        console.error("Error in connecting to api", error);
+      });
   }
 
   render() {
@@ -90,7 +122,11 @@ class SaveAndShareBar extends Component {
               hoverColor={styles.svgIcon.hoverFillColour}
               articleId={articleId}
               saveApi={saveApi}
+<<<<<<< HEAD
               height={styles.svgIcon.star.height}
+=======
+              onSaveButtonPress={this.onSaveButtonPress}
+>>>>>>> Feat Add tracking to save star press event
             />
           </View>
         )}
