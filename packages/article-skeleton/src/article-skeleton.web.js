@@ -76,7 +76,9 @@ class ArticleSkeleton extends Component {
     savingEnabled,
     sharingEnabled
   }) {
-    const saveServiceApi = saveApi || saveArticleApi;
+    const saveServiceApi =
+      saveApi && saveApi.bookmark ? saveApi : saveArticleApi;
+
     if (!allowSaveAndShare) return null;
 
     return (
