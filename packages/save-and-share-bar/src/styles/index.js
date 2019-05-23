@@ -41,6 +41,9 @@ const styles = {
     fb: {
       height: 18
     },
+    star: {
+      height: 18
+    },
     fillColour: colours.functional.secondary,
     height: 15,
     hoverFillColour: colours.functional.brandColour,
