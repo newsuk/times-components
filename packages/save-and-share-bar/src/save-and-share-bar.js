@@ -40,14 +40,14 @@ class SaveAndShareBar extends Component {
     getTokenisedShareUrl(articleId)
       .then(res => {
         const { loading, data } = res;
-        if (!loading && data) {
+        if (!loading) {
           this.setState({ isLoading: false });
           const {
             article: { tokenisedUrl: url }
           } = data;
 
           const mailtoEmailUrl = `mailto:?subject=${articleHeadline} from The Times&body=I thought you would be interested in this story from The Times%0A%0A${articleHeadline}%0A%0A${url}`;
-          window.location = mailtoEmailUrl;
+          window.location.assign(mailtoEmailUrl);
         }
       })
       .catch(error => {
@@ -161,6 +161,3 @@ SaveAndShareBar.defaultProps = {
 };
 
 export default withTrackEvents(SaveAndShareBar);
-export {
-  default as getTokenisedArticleUrlApi
-} from "./get-tokenised-article-url-api";

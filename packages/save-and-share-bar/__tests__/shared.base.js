@@ -43,19 +43,6 @@ export default () => {
       expect(onCopyLink).toHaveBeenCalled();
     });
 
-    it("getTokenisedEmail query to return tokenised url", async () => {
-      const mock = await mockGetTokenisedArticleUrl(articleId);
-      const {
-        data: {
-          article: { tokenisedUrl: url }
-        }
-      } = mock;
-
-      expect(url).toEqual(
-        `${articleUrl}article/${articleId}?shareToken=333310c5af52a3c6e467e3b15516c950`
-      );
-    });
-
     it("email icon with loading state while network request is fetching data", async () => {
       const apiMock = () =>
         Promise.resolve({
@@ -78,6 +65,24 @@ export default () => {
       testInstance.root.findAllByType(BarItem)[0].props.onPress();
       await delay(0);
       expect(testInstance).toMatchSnapshot();
+    });
+
+    it("fetches tokenised article url and change window.location", async () => {
+      /* eslint-env browser */
+      window.location.assign = jest.fn();
+
+      const mock = await mockGetTokenisedArticleUrl(articleId);
+      const {
+        data: {
+          article: { tokenisedUrl: url }
+        }
+      } = mock;
+
+      const mailtoUrl = `mailto:?subject=${articleHeadline} from The Times&body=I thought you would be interested in this story from The Times%0A%0A${articleHeadline}%0A%0A${url}`;
+
+      testInstance.root.findAllByType(BarItem)[0].props.onPress();
+      await delay(100);
+      expect(window.location.assign).toBeCalledWith(mailtoUrl);
     });
   });
 };

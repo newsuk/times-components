@@ -72,7 +72,6 @@ exports[`save and share bar component email icon with loading state while networ
             "borderTopLeftRadius": "9999px",
             "borderTopRightRadius": "9999px",
             "height": "40px",
-            "marginLeft": "5px",
             "overflowX": "hidden",
             "overflowY": "hidden",
             "width": "40px",
