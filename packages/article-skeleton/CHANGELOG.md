@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.6.8](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.6.7...@times-components/article-skeleton@1.6.8) (2019-05-23)
+
+
+### Bug Fixes
+
+* make drop caps consistent across browsers + fix two line paras ([#1987](https://github.com/newsuk/times-components/issues/1987)) ([6548b08](https://github.com/newsuk/times-components/commit/6548b08))
+
+
+
+
+
 ## [1.6.7](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.6.6...@times-components/article-skeleton@1.6.7) (2019-05-22)
 
 **Note:** Version bump only for package @times-components/article-skeleton
