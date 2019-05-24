@@ -6,7 +6,7 @@ import LazyLoad from "@times-components/lazy-load";
 import { spacing, breakpoints } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import Context from "@times-components/context";
-import saveArticleApi from "@times-components/save-star-web/mock-save-api-showcase";
+import { saveApi as saveArticleApi } from "@times-components/save-star-web";
 import { isLoggedIn, isMeteredExpired } from "@times-components/utils";
 import ArticleBody from "./article-body/article-body";
 import {
