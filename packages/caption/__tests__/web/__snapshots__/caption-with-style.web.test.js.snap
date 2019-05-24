@@ -40,12 +40,12 @@ exports[`1. caption with container and text styles 1`] = `
     className="css-view-1dbjc4n r-paddingTop-m611by IS3 S3"
   >
     <div
-      className="css-text-76zvg2 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0 IS1 S1"
+      className="css-text-901oao r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0 IS1 S1"
     >
       Some caption text goes in here
     </div>
     <div
-      className="css-text-76zvg2 r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0 IS2 S2"
+      className="css-text-901oao r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0 IS2 S2"
     >
       JUST CREDITS
     </div>
@@ -93,12 +93,12 @@ exports[`2. caption with container, caption, and credit styles 1`] = `
     className="css-view-1dbjc4n r-paddingTop-m611by IS3 S3"
   >
     <div
-      className="css-text-76zvg2 r-fontFamily-j2s0nr r-lineHeight-5fcqz0 IS1 S1"
+      className="css-text-901oao r-fontFamily-j2s0nr r-lineHeight-5fcqz0 IS1 S1"
     >
       Some caption text goes in here
     </div>
     <div
-      className="css-text-76zvg2 r-fontFamily-j2s0nr r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0 IS2 S2"
+      className="css-text-901oao r-fontFamily-j2s0nr r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0 IS2 S2"
     >
       JUST CREDITS
     </div>
@@ -140,12 +140,12 @@ exports[`3. caption with only container styles 1`] = `
     className="css-view-1dbjc4n r-paddingTop-m611by IS1 S3"
   >
     <div
-      className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0 S1"
+      className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0 S1"
     >
       Some caption text goes in here
     </div>
     <div
-      className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0 S2"
+      className="css-text-901oao r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0 S2"
     >
       JUST CREDITS
     </div>

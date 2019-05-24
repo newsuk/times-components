@@ -20,7 +20,7 @@ exports[`Bar Spacing Decorator 1`] = `
   }
 >
   <div
-    className="css-text-76zvg2"
+    className="css-text-901oao"
     dir="auto"
   >
     I am in Storybook!
@@ -65,7 +65,7 @@ exports[`Centered Decorator 1`] = `
   }
 >
   <div
-    className="css-text-76zvg2"
+    className="css-text-901oao"
     dir="auto"
   >
     I am in Storybook!
@@ -94,7 +94,7 @@ exports[`Lateral Spacing Decorator 1`] = `
   }
 >
   <div
-    className="css-text-76zvg2"
+    className="css-text-901oao"
     dir="auto"
   >
     I am in Storybook!
@@ -104,7 +104,7 @@ exports[`Lateral Spacing Decorator 1`] = `
 
 exports[`StrictWrapper to wrap child components in Strict Mode 1`] = `
 <div
-  className="css-text-76zvg2"
+  className="css-text-901oao"
   dir="auto"
 >
   I am in Storybook!
@@ -285,7 +285,7 @@ exports[`White Background Decorator 1`] = `
   }
 >
   <div
-    className="css-text-76zvg2"
+    className="css-text-901oao"
     dir="auto"
   >
     I am in Storybook!

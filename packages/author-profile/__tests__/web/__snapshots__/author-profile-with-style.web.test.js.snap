@@ -137,12 +137,12 @@ exports[`1. an article list header 1`] = `
         />
       </div>
       <h1
-        className="c3 css-reset-4rbku5 responsiveweb__AuthorNameWrapper-rnqjol-1 c3 css-text-76zvg2"
+        className="c3 css-reset-4rbku5 responsiveweb__AuthorNameWrapper-rnqjol-1 c3 css-text-901oao"
       >
         Name
       </h1>
       <h2
-        className="css-reset-4rbku5 css-text-76zvg2 r-WebkitFontSmoothing-1vzmqqg r-color-1khp51w r-fontFamily-yvv7r8 r-fontSize-1b43r93 r-lineHeight-1f529hi r-marginTop-1g94qm0 S1"
+        className="css-reset-4rbku5 css-text-901oao r-WebkitFontSmoothing-1vzmqqg r-color-1khp51w r-fontFamily-yvv7r8 r-fontSize-1b43r93 r-lineHeight-1f529hi r-marginTop-1g94qm0 S1"
       >
         job title
       </h2>
@@ -165,7 +165,7 @@ exports[`1. an article list header 1`] = `
         className="c4 responsiveweb__BioContainer-rnqjol-2 c4 css-view-1dbjc4n"
       >
         <div
-          className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-1feecvn r-fontSize-ubezar r-lineHeight-1kt6imw r-textAlign-q4m81j S4"
+          className="css-text-901oao r-color-1khnkhu r-fontFamily-1feecvn r-fontSize-ubezar r-lineHeight-1kt6imw r-textAlign-q4m81j S4"
         >
           Camilla Long
         </div>

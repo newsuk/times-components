@@ -2,7 +2,7 @@
 
 exports[`Tracking tests on web TrackEvents forwards props to wrapped component 1`] = `
 <div
-  className="css-text-76zvg2"
+  className="css-text-901oao"
   dir="auto"
 >
   bar
@@ -17,7 +17,7 @@ exports[`Tracking tests on web TrackEvents raises error when trying to track the
 
 exports[`Tracking tests on web TrackEvents renders when tracking context is missing 1`] = `
 <div
-  className="css-text-76zvg2"
+  className="css-text-901oao"
   dir="auto"
 >
   foo
@@ -59,7 +59,7 @@ exports[`Tracking tests on web WithTrackScrollDepth does not report missing elem
 
 exports[`Tracking tests on web WithTrackScrollDepth forwards props to wrapped component 1`] = `
 <div
-  className="css-text-76zvg2"
+  className="css-text-901oao"
   dir="auto"
 >
   bar
@@ -68,7 +68,7 @@ exports[`Tracking tests on web WithTrackScrollDepth forwards props to wrapped co
 
 exports[`Tracking tests on web WithTrackScrollDepth renders when tracking context is missing 1`] = `
 <div
-  className="css-text-76zvg2"
+  className="css-text-901oao"
   dir="auto"
 >
   foo
@@ -178,7 +178,7 @@ Array [
 
 exports[`Tracking tests on web WithTrackingContext forwards props to wrapped component 1`] = `
 <div
-  className="css-text-76zvg2"
+  className="css-text-901oao"
   dir="auto"
 >
   bar

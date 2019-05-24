@@ -152,7 +152,7 @@ exports[`2. a single child element 1`] = `
                 className="c3 responsiveweb__ChildContainer-aumpme-0 c3 css-view-1dbjc4n"
               >
                 <div
-                  className="css-text-76zvg2"
+                  className="css-text-901oao"
                 >
                   standard-1
                 </div>
@@ -319,7 +319,7 @@ exports[`3. two child elements 1`] = `
                 className="c3 responsiveweb__ChildContainer-aumpme-0 c3 css-view-1dbjc4n"
               >
                 <div
-                  className="css-text-76zvg2"
+                  className="css-text-901oao"
                 >
                   standard-1
                 </div>
@@ -335,7 +335,7 @@ exports[`3. two child elements 1`] = `
                 className="c3 responsiveweb__ChildContainer-aumpme-0 c3 css-view-1dbjc4n"
               >
                 <div
-                  className="css-text-76zvg2"
+                  className="css-text-901oao"
                 >
                   standard-2
                 </div>
@@ -504,7 +504,7 @@ exports[`4. three child elements 1`] = `
                 className="c3 responsiveweb__ChildContainer-aumpme-0 c3 css-view-1dbjc4n"
               >
                 <div
-                  className="css-text-76zvg2"
+                  className="css-text-901oao"
                 >
                   standard-1
                 </div>
@@ -520,7 +520,7 @@ exports[`4. three child elements 1`] = `
                 className="c3 responsiveweb__ChildContainer-aumpme-0 c3 css-view-1dbjc4n"
               >
                 <div
-                  className="css-text-76zvg2"
+                  className="css-text-901oao"
                 >
                   standard-2
                 </div>
@@ -536,7 +536,7 @@ exports[`4. three child elements 1`] = `
                 className="c3 responsiveweb__ChildContainer-aumpme-0 c3 css-view-1dbjc4n"
               >
                 <div
-                  className="css-text-76zvg2"
+                  className="css-text-901oao"
                 >
                   standard-3
                 </div>
