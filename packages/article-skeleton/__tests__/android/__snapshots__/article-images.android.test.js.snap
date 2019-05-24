@@ -41,6 +41,10 @@ exports[`1. a primary image 1`] = `
                 Object {
                   "display": "primary",
                   "ratio": "3:2",
+                  "relativeHeight": undefined,
+                  "relativeHorizontalOffset": undefined,
+                  "relativeVerticalOffset": undefined,
+                  "relativeWidth": undefined,
                   "uri": "https://image-2.io",
                 }
               }
@@ -108,6 +112,10 @@ exports[`2. a fullwidth image 1`] = `
                 Object {
                   "display": "fullwidth",
                   "ratio": "3:2",
+                  "relativeHeight": undefined,
+                  "relativeHorizontalOffset": undefined,
+                  "relativeVerticalOffset": undefined,
+                  "relativeWidth": undefined,
                   "uri": "https://image-2.io",
                 }
               }
@@ -175,6 +183,10 @@ exports[`3. a secondary image 1`] = `
                 Object {
                   "display": "secondary",
                   "ratio": "3:2",
+                  "relativeHeight": undefined,
+                  "relativeHorizontalOffset": undefined,
+                  "relativeVerticalOffset": undefined,
+                  "relativeWidth": undefined,
                   "uri": "https://image-2.io",
                 }
               }
@@ -242,6 +254,10 @@ exports[`4. an inline image 1`] = `
                 Object {
                   "display": "secondary",
                   "ratio": "9:4",
+                  "relativeHeight": undefined,
+                  "relativeHorizontalOffset": undefined,
+                  "relativeVerticalOffset": undefined,
+                  "relativeWidth": undefined,
                   "uri": "https://image-inline.io",
                 }
               }
