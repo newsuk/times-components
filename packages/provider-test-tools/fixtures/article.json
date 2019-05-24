@@ -33,7 +33,11 @@
         "credits": "some credits",
         "crop": {
           "ratio": "1:1",
-          "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c1333a8-1aa2-11e9-944c-54b267eb465b.jpg?crop=1037%2C1037%2C448%2C38"
+          "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c1333a8-1aa2-11e9-944c-54b267eb465b.jpg?crop=1037%2C1037%2C448%2C38",
+          "relativeHeight": 0.4,
+          "relativeHorizontalOffset": 0.16666666666666666,
+          "relativeVerticalOffset": 0.2,
+          "relativeWidth": 0.5
         },
         "id": "372bc095-34c4-47e4-8b1e-d352f5641ee5",
         "title": "some title"
@@ -78,7 +82,11 @@
         "caption": "Key stage: on the punishing Alpe d’Huez, Thomas pushes ahead of his teammate Chris Froome in this year’s pivotal stage 12 victory",
         "credits": "PA",
         "ratio": "1500:1000",
-        "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F0253b078-a204-11e8-82dc-6845d6807657.jpg?crop=2250%2C1500%2C0%2C0"
+        "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F0253b078-a204-11e8-82dc-6845d6807657.jpg?crop=2250%2C1500%2C0%2C0",
+        "relativeHeight": 0.4,
+        "relativeHorizontalOffset": 0.16666666666666666,
+        "relativeVerticalOffset": 0.2,
+        "relativeWidth": 0.5
       },
       "children": []
     },
@@ -102,7 +110,11 @@
         "caption": "Iron man: Thomas at home",
         "credits": "GARETH PHILLIPS",
         "ratio": "1200:1500",
-        "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fea2622be-a79f-11e8-b7c2-058fb57c563b.jpg?crop=1300%2C1625%2C0%2C0"
+        "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fea2622be-a79f-11e8-b7c2-058fb57c563b.jpg?crop=1300%2C1625%2C0%2C0",
+        "relativeHeight": 0.4,
+        "relativeHorizontalOffset": 0.16666666666666666,
+        "relativeVerticalOffset": 0.2,
+        "relativeWidth": 0.5
       },
       "children": []
     },
@@ -562,7 +574,11 @@
         "caption": "Key stage: on the punishing Alpe d’Huez, Thomas pushes ahead of his teammate Chris Froome in this year’s pivotal stage 12 victory",
         "credits": "PA",
         "ratio": "1500:1000",
-        "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F0253b078-a204-11e8-82dc-6845d6807657.jpg?crop=2250%2C1500%2C0%2C0"
+        "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F0253b078-a204-11e8-82dc-6845d6807657.jpg?crop=2250%2C1500%2C0%2C0",
+        "relativeHeight": 0.4,
+        "relativeHorizontalOffset": 0.16666666666666666,
+        "relativeVerticalOffset": 0.2,
+        "relativeWidth": 0.5
       },
       "children": []
     },
@@ -586,7 +602,11 @@
         "caption": "Iron man: Thomas at home",
         "credits": "GARETH PHILLIPS",
         "ratio": "1200:1500",
-        "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fea2622be-a79f-11e8-b7c2-058fb57c563b.jpg?crop=1300%2C1625%2C0%2C0"
+        "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fea2622be-a79f-11e8-b7c2-058fb57c563b.jpg?crop=1300%2C1625%2C0%2C0",
+        "relativeHeight": 0.4,
+        "relativeHorizontalOffset": 0.16666666666666666,
+        "relativeVerticalOffset": 0.2,
+        "relativeWidth": 0.5
       },
       "children": []
     },
@@ -1045,27 +1065,51 @@
     "credits": "Gareth Philips",
     "crop169": {
       "ratio": "16:9",
-      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd67cded0-ca7a-11e8-998e-a6e3c63abd14.jpg?crop=1600%2C900%2C0%2C0"
+      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd67cded0-ca7a-11e8-998e-a6e3c63abd14.jpg?crop=1600%2C900%2C0%2C0",
+      "relativeHeight": 0.4,
+      "relativeHorizontalOffset": 0.16666666666666666,
+      "relativeVerticalOffset": 0.2,
+      "relativeWidth": 0.5
     },
     "crop32": {
       "ratio": "3:2",
-      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46f.jpg?crop=4272%2C2848%2C0%2C0"
+      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46f.jpg?crop=4272%2C2848%2C0%2C0",
+      "relativeHeight": 0.4,
+      "relativeHorizontalOffset": 0.16666666666666666,
+      "relativeVerticalOffset": 0.2,
+      "relativeWidth": 0.5
     },
     "crop1251": {
       "ratio": "1.25:1",
-      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46f.jpg?crop=3560%2C2848%2C356%2C0"
+      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46f.jpg?crop=3560%2C2848%2C356%2C0",
+      "relativeHeight": 0.4,
+      "relativeHorizontalOffset": 0.16666666666666666,
+      "relativeVerticalOffset": 0.2,
+      "relativeWidth": 0.5
     },
     "crop11": {
       "ratio": "1:1",
-      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46f.jpg?crop=2848%2C2848%2C712%2C0"
+      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46f.jpg?crop=2848%2C2848%2C712%2C0",
+      "relativeHeight": 0.4,
+      "relativeHorizontalOffset": 0.16666666666666666,
+      "relativeVerticalOffset": 0.2,
+      "relativeWidth": 0.5
     },
     "crop45": {
       "ratio": "4:5",
-      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46f.jpg?crop=2278%2C2848%2C997%2C0"
+      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46f.jpg?crop=2278%2C2848%2C997%2C0",
+      "relativeHeight": 0.4,
+      "relativeHorizontalOffset": 0.16666666666666666,
+      "relativeVerticalOffset": 0.2,
+      "relativeWidth": 0.5
     },
     "crop23": {
       "ratio": "2:3",
-      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46f.jpg?crop=1899%2C2848%2C1187%2C0"
+      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46f.jpg?crop=1899%2C2848%2C1187%2C0",
+      "relativeHeight": 0.4,
+      "relativeHorizontalOffset": 0.16666666666666666,
+      "relativeVerticalOffset": 0.2,
+      "relativeWidth": 0.5
     },
     "id": "263b03a1-2ce6-4b94-b053-0d35316548c5",
     "title": "Chris Reynolds Gordon at one of his party venues in London",
@@ -1076,27 +1120,51 @@
     "credits": "Gareth Philips",
     "crop169": {
       "ratio": "16:9",
-      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd67cded0-ca7a-11e8-998e-a6e3c63abd14la.jpg?crop=1600%2C900%2C0%2C0"
+      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd67cded0-ca7a-11e8-998e-a6e3c63abd14la.jpg?crop=1600%2C900%2C0%2C0",
+      "relativeHeight": 0.4,
+      "relativeHorizontalOffset": 0.16666666666666666,
+      "relativeVerticalOffset": 0.2,
+      "relativeWidth": 0.5
     },
     "crop32": {
       "ratio": "3:2",
-      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46fla.jpg?crop=4272%2C2848%2C0%2C0"
+      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46fla.jpg?crop=4272%2C2848%2C0%2C0",
+      "relativeHeight": 0.4,
+      "relativeHorizontalOffset": 0.16666666666666666,
+      "relativeVerticalOffset": 0.2,
+      "relativeWidth": 0.5
     },
     "crop1251": {
       "ratio": "1.25:1",
-      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46fla.jpg?crop=3560%2C2848%2C356%2C0"
+      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46fla.jpg?crop=3560%2C2848%2C356%2C0",
+      "relativeHeight": 0.4,
+      "relativeHorizontalOffset": 0.16666666666666666,
+      "relativeVerticalOffset": 0.2,
+      "relativeWidth": 0.5
     },
     "crop11": {
       "ratio": "1:1",
-      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46fla.jpg?crop=2848%2C2848%2C712%2C0"
+      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46fla.jpg?crop=2848%2C2848%2C712%2C0",
+      "relativeHeight": 0.4,
+      "relativeHorizontalOffset": 0.16666666666666666,
+      "relativeVerticalOffset": 0.2,
+      "relativeWidth": 0.5
     },
     "crop45": {
       "ratio": "4:5",
-      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46fla.jpg?crop=2278%2C2848%2C997%2C0"
+      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46fla.jpg?crop=2278%2C2848%2C997%2C0",
+      "relativeHeight": 0.4,
+      "relativeHorizontalOffset": 0.16666666666666666,
+      "relativeVerticalOffset": 0.2,
+      "relativeWidth": 0.5
     },
     "crop23": {
       "ratio": "2:3",
-      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46fla.jpg?crop=1899%2C2848%2C1187%2C0"
+      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F52e8ecac-c7e2-11e8-9259-db41e732e46fla.jpg?crop=1899%2C2848%2C1187%2C0",
+      "relativeHeight": 0.4,
+      "relativeHorizontalOffset": 0.16666666666666666,
+      "relativeVerticalOffset": 0.2,
+      "relativeWidth": 0.5
     },
     "id": "363b03a1-2ce6-4b94-b053-0d35316548c5",
     "title": "Chris Reynolds Gordon at one of his party venues in London-la",
@@ -1127,24 +1195,32 @@
           }
         ],
         "hasVideo": true,
-        "headline": "TMS: Pratchett’s law of the jungle - Disable Saving",
+        "headline": "TMS: Pratchett’s law of the jungle - Disable Saving",
         "id": "ea16d744-cb4a-11e4-a202-50ac5def393a",
         "label": "Health",
         "leadAsset": {
           "crop169": {
-            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32",
+            "relativeHeight": 0.4,
+            "relativeHorizontalOffset": 0.16666666666666666,
+            "relativeVerticalOffset": 0.2,
+            "relativeWidth": 0.5
           },
           "crop32": {
-            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32",
+            "relativeHeight": 0.4,
+            "relativeHorizontalOffset": 0.16666666666666666,
+            "relativeVerticalOffset": 0.2,
+            "relativeWidth": 0.5
           },
           "id": "6c1c108e-ed63-47af-df1d-46c63be16627",
-          "title": "TMS: Pratchett’s law of the jungle",
+          "title": "TMS: Pratchett’s law of the jungle",
           "__typename": "Image"
         },
         "publicationName": "TIMES",
         "publishedTime": "2015-03-23T19:39:39.000Z",
         "section": "sport",
-        "shortHeadline": "TMS: Pratchett’s law of the jungle",
+        "shortHeadline": "TMS: Pratchett’s law of the jungle",
         "shortIdentifier": "abc123",
         "slug": "related-article-slug",
         "summary105": [
@@ -1372,10 +1448,18 @@
         "label": "Science",
         "leadAsset": {
           "crop169": {
-            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F9932cf70-d791-11e8-9c20-5eb2e7b96a26.jpg?crop=3839%2C2160%2C215%2C210"
+            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F9932cf70-d791-11e8-9c20-5eb2e7b96a26.jpg?crop=3839%2C2160%2C215%2C210",
+            "relativeHeight": 0.4,
+            "relativeHorizontalOffset": 0.16666666666666666,
+            "relativeVerticalOffset": 0.2,
+            "relativeWidth": 0.5
           },
           "crop32": {
-            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F9932cf70-d791-11e8-9c20-5eb2e7b96a26.jpg?crop=3839%2C2160%2C215%2C210"
+            "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F9932cf70-d791-11e8-9c20-5eb2e7b96a26.jpg?crop=3839%2C2160%2C215%2C210",
+            "relativeHeight": 0.4,
+            "relativeHorizontalOffset": 0.16666666666666666,
+            "relativeVerticalOffset": 0.2,
+            "relativeWidth": 0.5
           },
           "id": "6c1c108e-ed63-47af-df1d-46c63be16627",
           "title": "Rise of centenarian drivers as elderly push on",
@@ -1549,10 +1633,18 @@
         "leadAsset": {
           "posterImage": {
             "crop169": {
-              "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe251dcc0-d7df-11e8-9c20-5eb2e7b96a26.jpg?crop=5022%2C2825%2C0%2C262"
+              "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe251dcc0-d7df-11e8-9c20-5eb2e7b96a26.jpg?crop=5022%2C2825%2C0%2C262",
+              "relativeHeight": 0.4,
+              "relativeHorizontalOffset": 0.16666666666666666,
+              "relativeVerticalOffset": 0.2,
+              "relativeWidth": 0.5
             },
             "crop32": {
-              "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe251dcc0-d7df-11e8-9c20-5eb2e7b96a26.jpg?crop=5022%2C2825%2C0%2C262"
+              "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fe251dcc0-d7df-11e8-9c20-5eb2e7b96a26.jpg?crop=5022%2C2825%2C0%2C262",
+              "relativeHeight": 0.4,
+              "relativeHorizontalOffset": 0.16666666666666666,
+              "relativeVerticalOffset": 0.2,
+              "relativeWidth": 0.5
             },
             "id": "f5eacb2d-2f87-46cb-a36a-225bf9a6482f",
             "title": "",

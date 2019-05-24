@@ -58,6 +58,7 @@ export default ({
 
             return getMediaUrl(parent, ratio);
           },
+          UnitInterval: () => 0.4,
           DateTime: () => "2018-10-25",
           Markup: (parent, { maxCharCount }) => {
             if (maxCharCount) {

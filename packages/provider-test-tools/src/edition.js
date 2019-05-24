@@ -37,6 +37,7 @@ export default ({ variables = () => {} } = {}) => {
 
             return getMediaUrl(parent, ratio);
           },
+          UnitInterval: () => 0.4,
           DateTime: () => "2018-10-25",
           LeadOneFullWidthSlice: () => ({
             __typename: "LeadOneFullWidthSlice",
