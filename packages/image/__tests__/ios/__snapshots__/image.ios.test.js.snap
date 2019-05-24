@@ -8,6 +8,10 @@ exports[`1. default layout 1`] = `
     <Image
       fadeDuration={0}
       fadeImageIn={false}
+      relativeHeight={0.4}
+      relativeHorizontalOffset={0.16666666666666666}
+      relativeVerticalOffset={0.2}
+      relativeWidth={0.5}
       source={
         Object {
           "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
@@ -44,6 +48,10 @@ exports[`2. default layout without uri 1`] = `
     <Image
       fadeDuration={0}
       fadeImageIn={false}
+      relativeHeight={0.4}
+      relativeHorizontalOffset={0.16666666666666666}
+      relativeVerticalOffset={0.2}
+      relativeWidth={0.5}
       source={null}
     />
   </View>
@@ -74,6 +82,10 @@ exports[`3. default layout without aspect ratio 1`] = `
     <Image
       fadeDuration={0}
       fadeImageIn={false}
+      relativeHeight={0.4}
+      relativeHorizontalOffset={0.16666666666666666}
+      relativeVerticalOffset={0.2}
+      relativeWidth={0.5}
       source={
         Object {
           "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800",
@@ -110,6 +122,10 @@ exports[`4. rounded image 1`] = `
     <Image
       fadeDuration={0}
       fadeImageIn={false}
+      relativeHeight={0.4}
+      relativeHorizontalOffset={0.16666666666666666}
+      relativeVerticalOffset={0.2}
+      relativeWidth={0.5}
       source={
         Object {
           "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800",
@@ -146,6 +162,10 @@ exports[`5. prepend https schema 1`] = `
     <Image
       fadeDuration={0}
       fadeImageIn={false}
+      relativeHeight={0.4}
+      relativeHorizontalOffset={0.16666666666666666}
+      relativeVerticalOffset={0.2}
+      relativeWidth={0.5}
       source={
         Object {
           "uri": "https://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
@@ -182,6 +202,10 @@ exports[`6. handle onload event 1`] = `
     <Image
       fadeDuration={0}
       fadeImageIn={false}
+      relativeHeight={0.4}
+      relativeHorizontalOffset={0.16666666666666666}
+      relativeVerticalOffset={0.2}
+      relativeWidth={0.5}
       source={
         Object {
           "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
@@ -218,6 +242,10 @@ exports[`6. handle onload event 2`] = `
     <Image
       fadeDuration={0}
       fadeImageIn={false}
+      relativeHeight={0.4}
+      relativeHorizontalOffset={0.16666666666666666}
+      relativeVerticalOffset={0.2}
+      relativeWidth={0.5}
       source={
         Object {
           "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
@@ -236,6 +264,10 @@ exports[`7. handle onload event with disabled placeholder 1`] = `
     <Image
       fadeDuration={0}
       fadeImageIn={false}
+      relativeHeight={0.4}
+      relativeHorizontalOffset={0.16666666666666666}
+      relativeVerticalOffset={0.2}
+      relativeWidth={0.5}
       source={
         Object {
           "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
@@ -254,6 +286,10 @@ exports[`7. handle onload event with disabled placeholder 2`] = `
     <Image
       fadeDuration={0}
       fadeImageIn={false}
+      relativeHeight={0.4}
+      relativeHorizontalOffset={0.16666666666666666}
+      relativeVerticalOffset={0.2}
+      relativeWidth={0.5}
       source={
         Object {
           "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
@@ -272,6 +308,10 @@ exports[`8. componentwillunmount cancels animation timer 1`] = `
     <Image
       fadeDuration={0}
       fadeImageIn={false}
+      relativeHeight={0.4}
+      relativeHorizontalOffset={0.16666666666666666}
+      relativeVerticalOffset={0.2}
+      relativeWidth={0.5}
       source={
         Object {
           "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
@@ -308,6 +348,10 @@ exports[`10. uses highressize if it exists 1`] = `
     <Image
       fadeDuration={0}
       fadeImageIn={false}
+      relativeHeight={0.4}
+      relativeHorizontalOffset={0.16666666666666666}
+      relativeVerticalOffset={0.2}
+      relativeWidth={0.5}
       source={
         Object {
           "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=660",
@@ -344,6 +388,10 @@ exports[`12. uses lowressize image as placeholder if passed 1`] = `
     <Image
       fadeDuration={0}
       fadeImageIn={false}
+      relativeHeight={0.4}
+      relativeHorizontalOffset={0.16666666666666666}
+      relativeVerticalOffset={0.2}
+      relativeWidth={0.5}
       source={
         Object {
           "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=2308",
@@ -377,6 +425,10 @@ exports[`13. handle layout change 1`] = `
     <Image
       fadeDuration={0}
       fadeImageIn={false}
+      relativeHeight={0.4}
+      relativeHorizontalOffset={0.16666666666666666}
+      relativeVerticalOffset={0.2}
+      relativeWidth={0.5}
       source={
         Object {
           "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",

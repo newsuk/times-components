@@ -34,7 +34,11 @@ export default () => {
   const props = {
     aspectRatio: 2,
     highResSize: 900,
-    uri: "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0"
+    uri: "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0",
+    relativeWidth:0.5,
+    relativeHeight:0.4,
+    relativeHorizontalOffset: 0.16666666666666666,
+    relativeVerticalOffset: 0.2
   };
 
   const tests = [
