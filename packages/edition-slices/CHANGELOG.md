@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.60.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.59.11...@times-components/edition-slices@0.60.0) (2019-05-24)
+
+
+### Features
+
+* replat 6371 tilestar new design ([#1986](https://github.com/newsuk/times-components/issues/1986)) ([2d4bf82](https://github.com/newsuk/times-components/commit/2d4bf82))
+
+
+
+
+
 ## [0.59.11](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.59.10...@times-components/edition-slices@0.59.11) (2019-05-23)
 
 **Note:** Version bump only for package @times-components/edition-slices

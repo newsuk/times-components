@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.25.0](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.24.2...@times-components/fixture-generator@0.25.0) (2019-05-24)
+
+
+### Features
+
+* replat 6371 tilestar new design ([#1986](https://github.com/newsuk/times-components/issues/1986)) ([2d4bf82](https://github.com/newsuk/times-components/commit/2d4bf82))
+
+
+
+
+
 ## [0.24.2](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.24.1...@times-components/fixture-generator@0.24.2) (2019-05-20)
 
 **Note:** Version bump only for package @times-components/fixture-generator
