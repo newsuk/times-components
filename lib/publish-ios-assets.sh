@@ -2,7 +2,7 @@
 set -e
 
 VERBOSE=0
-ASSET_REPO="git@github.com:newsuk/times-pod-specs.git"
+ASSET_REPO="git@github.com:newsuk/times-components-ios-artifacts.git"
 
 function logError () {
     echo "$@" >&4
@@ -41,7 +41,7 @@ VERSION=$(cat ios-app/package.json | grep version | head -1 | sed 's/[\",\t ]//g
 if [ -z "$VERSION" ]
 then
   logError "Error: Can't find ios version"
-  exit 1
+  exit 2
 fi
 log "Found new version: $VERSION"
 
@@ -49,7 +49,7 @@ log "Found new version: $VERSION"
 # Create Tmp Folder
 # =======================
 
-TMP_ASSET_DIR=$(mktemp -d) || { logError "Failed to create temp file" ; exit 1; }
+TMP_ASSET_DIR=$(mktemp -d) || { logError "Failed to create temp file" ; exit 2; }
 logVerbose "Tmp Directory: $TMP_ASSET_DIR"
 
 # ==================================
@@ -69,7 +69,7 @@ cd $TMP_ASSET_DIR 2>&4 1>&3
 # If tag already present on the repo, abort
 if [ $(git tag -l "$VERSION") ]; then
     logError "Error: $VERSION already exists in assets repo"
-    exit 1
+    exit 2
 fi
 cd - 2>&4 1>&3
 
@@ -80,8 +80,9 @@ cd - 2>&4 1>&3
 log "Update new assets"
 rm -rf $TMP_ASSET_DIR/assets 1>&3
 mkdir -p $TMP_ASSET_DIR/assets 1>&3
-cp -r ios-app/ios-assets $TMP_ASSET_DIR/assets 1>&3
-cp TimesComponents.podspec $TMP_ASSET_DIR/ 1>&3
+cp -r ios-app/ios-assets/* $TMP_ASSET_DIR/assets 1>&3
+# Lets not copy podspec file over as it has path info for this repo
+# and it will be confusing to see it over in assets repo
 
 cd $TMP_ASSET_DIR 2>&4 1>&3
 git add $TMP_ASSET_DIR/assets TimesComponents.podspec 1>&3
@@ -99,7 +100,7 @@ git push origin master --tags --quiet 1>&3
 # ==================================
 
 logVerbose "Clean up tmp folder"
-#rm -rf $TMP_ASSET_DIR 2>&4 1>&3
+rm -rf $TMP_ASSET_DIR 2>&4 1>&3
 
 log "All done!!"
 exit 0

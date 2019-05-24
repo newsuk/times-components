@@ -50,18 +50,19 @@ podspec_version = package["version"]
 react_native_version = package["dependencies"]["react-native"]
 
 Pod::Spec.new do |s|
-  s.name         = "TimesComponents"
-  s.version      = podspec_version
-  s.summary      = "Times iOS React components"
-  s.description  = "All the things for Times iOS React components including dependencies"
-  s.homepage     = "https://www.news.co.uk"
-  s.license      = { type: 'MIT', file: 'LICENSE' }
-  s.author       = "News UK"
-  s.platform     = :ios, '9.0'
-  s.swift_version = '4.2'
-
-  s.source       = { :git => 'https://github.com/newsuk/times-components.git', :tag => "#{s.version}"}
-  s.resources      = ['ios-app/ios-assets/js/index.ios.bundle', 'ios-app/ios-assets/res/*']
+  s.name             = "TimesComponents"
+  s.version          = podspec_version
+  s.summary          = "Times iOS React components"
+  s.description      = "All the things for Times iOS React components including dependencies"
+  s.homepage         = "https://www.news.co.uk"
+  s.license          = { type: 'MIT', file: 'LICENSE' }
+  s.author           = "News UK"
+  s.platform         = :ios, '9.0'
+  s.swift_version    = '4.2'
+  s.source           = { :git => 'https://github.com/newsuk/times-components-ios-artifacts', :tag => "#{s.version}"}
+  s.resource_bundles = {
+    'TimesComponents' => ['ios-app/ios-assets/js/index.ios.bundle', 'ios-app/ios-assets/res/*']
+  }
   
   # React, and the subspecs we have to use
   s.dependency 'React/Core', react_native_version
