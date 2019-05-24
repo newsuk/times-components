@@ -20,7 +20,7 @@ import {
   HeaderAdContainer,
   MainContainer,
   SaveShareContainer,
-  SaveShareRefContainer,
+  SaveShareInnerContainer,
   isStickyAllowed
 } from "./styles/responsive";
 import Head from "./head";
@@ -33,10 +33,10 @@ class ArticleSkeleton extends Component {
   constructor(props) {
     super(props);
     this.handleScroll = this.handleScroll.bind(this);
+    this.stickyRef = React.createRef();
 
     this.state = {
-      articleWidth: null,
-      isSticky: false
+      articleWidth: null
     };
   }
 
@@ -46,23 +46,30 @@ class ArticleSkeleton extends Component {
       articleWidth: this.node && this.node.clientWidth
     });
 
-    if (window && window.nuk.user.isLoggedIn) {
-      window.addEventListener("scroll", this.handleScroll);
-    }
+    window.addEventListener("scroll", this.handleScroll);
   }
 
   componentWillUnmount() {
-    if (window && window.nuk.user.isLoggedIn) {
-      window.removeEventListener("scroll", this.handleScroll);
-    }
+    window.removeEventListener("scroll", this.handleScroll);
   }
 
+  // Not using state for performance
   handleScroll() {
-    if (this.sticky) {
-      const offsetTop = this.sticky.getBoundingClientRect().top;
+    const sticky = this.stickyRef.current;
+
+    if (sticky) {
+      const offsetTop = sticky.getBoundingClientRect().top;
       const isSticky = isStickyAllowed(breakpoints.huge) && offsetTop <= 1;
 
-      this.setState({ isSticky });
+      if (isSticky !== this.isSticky) {
+        this.isSticky = isSticky;
+
+        if (isSticky) {
+          sticky.classList.add("isSticky");
+        } else {
+          sticky.classList.remove("isSticky");
+        }
+      }
     }
   }
 
@@ -70,7 +77,6 @@ class ArticleSkeleton extends Component {
     articleId,
     headline,
     url,
-    isSticky,
     allowSaveAndShare,
     saveApi,
     savingEnabled,
@@ -82,26 +88,20 @@ class ArticleSkeleton extends Component {
     if (!allowSaveAndShare) return null;
 
     return (
-      <SaveShareContainer isSticky={isSticky}>
-        <SaveShareRefContainer isSticky={isSticky}>
-          <div
-            ref={el => {
-              this.sticky = el;
-            }}
-          >
-            <SaveAndShareBar
-              articleId={articleId}
-              articleHeadline={headline}
-              articleUrl={url}
-              onCopyLink={() => {}}
-              onSaveToMyArticles={() => {}}
-              onShareOnEmail={() => {}}
-              saveApi={saveServiceApi}
-              savingEnabled={savingEnabled}
-              sharingEnabled={sharingEnabled}
-            />
-          </div>
-        </SaveShareRefContainer>
+      <SaveShareContainer ref={this.stickyRef}>
+        <SaveShareInnerContainer>
+          <SaveAndShareBar
+            articleId={articleId}
+            articleHeadline={headline}
+            articleUrl={url}
+            onCopyLink={() => {}}
+            onSaveToMyArticles={() => {}}
+            onShareOnEmail={() => {}}
+            saveApi={saveServiceApi}
+            savingEnabled={savingEnabled}
+            sharingEnabled={sharingEnabled}
+          />
+        </SaveShareInnerContainer>
       </SaveShareContainer>
     );
   }
@@ -132,7 +132,7 @@ class ArticleSkeleton extends Component {
       sharingEnabled
     } = article;
 
-    const { articleWidth, isSticky } = this.state;
+    const { articleWidth } = this.state;
     const newContent = [...content];
 
     if (newContent && newContent.length > 0) {
@@ -185,7 +185,6 @@ class ArticleSkeleton extends Component {
                               articleId,
                               headline,
                               url,
-                              isSticky,
                               allowSaveAndShare: isUserLoggedIn,
                               saveApi,
                               savingEnabled,
