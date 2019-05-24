@@ -6,6 +6,7 @@ const articleSkeletonPropTypes = {
   data: PropTypes.shape({}),
   Header: PropTypes.func.isRequired,
   receiveChildList: PropTypes.func,
+  saveApi: PropTypes.func,
   spotAccountId: PropTypes.string
 };
 
@@ -13,7 +14,8 @@ const articleSkeletonDefaultProps = {
   adConfig: {},
   data: null,
   Header: () => null,
-  receiveChildList: () => {}
+  receiveChildList: () => {},
+  saveApi: () => {}
 };
 
 export { articleSkeletonPropTypes, articleSkeletonDefaultProps };
