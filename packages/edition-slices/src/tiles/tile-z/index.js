@@ -10,8 +10,13 @@ import {
 import styles from "./styles";
 
 const TileZ = ({ onPress, tile }) => (
-  <TileLink onPress={onPress} style={styles.container} tile={tile}>
-    <TileSummary headlineStyle={styles.headline} tile={tile} />
+  <TileLink
+    onPress={onPress}
+    style={styles.container}
+    tile={tile}
+    withStar={false}
+  >
+    <TileSummary headlineStyle={styles.headline} tile={tile} withStar />
     <Image aspectRatio={4 / 5} uri={getTileImageUri(tile, "crop45")} />
   </TileLink>
 );

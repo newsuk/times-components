@@ -11,7 +11,12 @@ import {
 import styles from "./styles";
 
 const TileP = ({ onPress, tile }) => (
-  <TileLink onPress={onPress} style={styles.container} tile={tile}>
+  <TileLink
+    onPress={onPress}
+    style={styles.container}
+    tile={tile}
+    withStar={false}
+  >
     <Image
       aspectRatio={1}
       style={styles.imageContainer}
@@ -23,11 +28,12 @@ const TileP = ({ onPress, tile }) => (
       bylines={tile.article.bylines}
       bylineStyle={styles.bylineOpinion}
       headlineStyle={styles.headline}
-      starStyle={styles.star}
       strapline={getTileStrapline(tile)}
       straplineStyle={styles.strapline}
       style={styles.summaryContainer}
+      starStyle={styles.star}
       tile={tile}
+      withStar
     />
   </TileLink>
 );

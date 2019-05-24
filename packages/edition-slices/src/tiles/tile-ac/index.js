@@ -15,7 +15,12 @@ const TileAC = ({ onPress, tile, breakpoint }) => {
   const { container, headline, imageContainer, summaryContainer } = styles;
 
   return (
-    <TileLink onPress={onPress} style={container} tile={tile}>
+    <TileLink
+      onPress={onPress}
+      style={container}
+      tile={tile}
+      starStyle={styles.star}
+    >
       <Image
         aspectRatio={16 / 9}
         style={imageContainer}
@@ -23,7 +28,6 @@ const TileAC = ({ onPress, tile, breakpoint }) => {
       />
       <TileSummary
         headlineStyle={headline}
-        starStyle={styles.star}
         style={summaryContainer}
         tile={tile}
       />

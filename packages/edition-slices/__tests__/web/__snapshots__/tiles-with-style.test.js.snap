@@ -153,23 +153,7 @@ exports[`2. tile b 1`] = `
 }
 
 .IS3 {
-  -webkit-align-items: flex-start;
-  align-items: flex-start;
-  width: 75%;
-  -ms-flex-align: start;
-  -webkit-box-align: start;
-}
-
-.IS4 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-pack: justify;
-  -webkit-box-pack: justify;
+  padding-bottom: 25px;
 }
 </style>
 
@@ -183,7 +167,7 @@ exports[`2. tile b 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n"
+    className="css-view-1dbjc4n IS3"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
@@ -212,24 +196,16 @@ exports[`2. tile b 1`] = `
         ...
       </span>
     </div>
-    <div
-      className="css-view-1dbjc4n IS4"
-    >
-      <div
-        className="css-view-1dbjc4n IS3"
-      >
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
-      </div>
-    </div>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
   </div>
 </Link>
 `;
@@ -274,23 +250,7 @@ exports[`3. tile c 1`] = `
 }
 
 .IS4 {
-  -webkit-align-items: flex-start;
-  align-items: flex-start;
-  width: 75%;
-  -ms-flex-align: start;
-  -webkit-box-align: start;
-}
-
-.IS5 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-pack: justify;
-  -webkit-box-pack: justify;
+  padding-bottom: 25px;
 }
 </style>
 
@@ -313,7 +273,7 @@ exports[`3. tile c 1`] = `
     />
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="css-view-1dbjc4n IS4"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S3"
@@ -331,24 +291,16 @@ exports[`3. tile c 1`] = `
     >
       This is tile headline
     </h3>
-    <div
-      className="css-view-1dbjc4n IS5"
-    >
-      <div
-        className="css-view-1dbjc4n IS4"
-      >
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
-      </div>
-    </div>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
   </div>
 </Link>
 `;
@@ -389,26 +341,6 @@ exports[`4. tile d 1`] = `
 }
 
 .IS4 {
-  -webkit-align-items: flex-start;
-  align-items: flex-start;
-  width: 75%;
-  -ms-flex-align: start;
-  -webkit-box-align: start;
-}
-
-.IS5 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-pack: justify;
-  -webkit-box-pack: justify;
-}
-
-.IS6 {
   padding-bottom: 5px;
   padding-right: 10px;
   width: 50%;
@@ -430,7 +362,7 @@ exports[`4. tile d 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
   />
   <div
-    className="css-view-1dbjc4n IS6"
+    className="css-view-1dbjc4n IS4"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
@@ -448,24 +380,16 @@ exports[`4. tile d 1`] = `
     >
       This is tile headline
     </h3>
-    <div
-      className="css-view-1dbjc4n IS5"
-    >
-      <div
-        className="css-view-1dbjc4n IS4"
-      >
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
-      </div>
-    </div>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
   </div>
 </Link>
 `;
@@ -506,26 +430,6 @@ exports[`5. tile e 1`] = `
 }
 
 .IS4 {
-  -webkit-align-items: flex-start;
-  align-items: flex-start;
-  width: 75%;
-  -ms-flex-align: start;
-  -webkit-box-align: start;
-}
-
-.IS5 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-pack: justify;
-  -webkit-box-pack: justify;
-}
-
-.IS6 {
   padding-bottom: 5px;
   padding-right: 10px;
   width: 50%;
@@ -547,7 +451,7 @@ exports[`5. tile e 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1434%2C1792%2C627%2C0"
   />
   <div
-    className="css-view-1dbjc4n IS6"
+    className="css-view-1dbjc4n IS4"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
@@ -565,24 +469,16 @@ exports[`5. tile e 1`] = `
     >
       This is tile headline
     </h3>
-    <div
-      className="css-view-1dbjc4n IS5"
-    >
-      <div
-        className="css-view-1dbjc4n IS4"
-      >
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
-      </div>
-    </div>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
   </div>
 </Link>
 `;
@@ -637,23 +533,7 @@ exports[`6. tile f 1`] = `
 }
 
 .IS3 {
-  -webkit-align-items: flex-start;
-  align-items: flex-start;
-  width: 75%;
-  -ms-flex-align: start;
-  -webkit-box-align: start;
-}
-
-.IS4 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-pack: justify;
-  -webkit-box-pack: justify;
+  padding-bottom: 25px;
 }
 </style>
 
@@ -667,7 +547,7 @@ exports[`6. tile f 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n"
+    className="css-view-1dbjc4n IS3"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
@@ -703,24 +583,16 @@ exports[`6. tile f 1`] = `
         ...
       </span>
     </div>
-    <div
-      className="css-view-1dbjc4n IS4"
-    >
-      <div
-        className="css-view-1dbjc4n IS3"
-      >
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
-      </div>
-    </div>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
   </div>
 </Link>
 `;
@@ -762,28 +634,9 @@ exports[`7. tile g 1`] = `
 }
 
 .IS4 {
-  -webkit-align-items: flex-start;
-  align-items: flex-start;
-  width: 75%;
-  -ms-flex-align: start;
-  -webkit-box-align: start;
-}
-
-.IS5 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-pack: justify;
-  -webkit-box-pack: justify;
-}
-
-.IS6 {
   -webkit-justify-content: center;
   justify-content: center;
+  padding-bottom: 25px;
   padding-right: 10px;
   padding-left: 10px;
   padding-top: 5px;
@@ -810,7 +663,7 @@ exports[`7. tile g 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
   />
   <div
-    className="css-view-1dbjc4n IS6"
+    className="css-view-1dbjc4n IS4"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
@@ -828,24 +681,16 @@ exports[`7. tile g 1`] = `
     >
       This is tile headline
     </h3>
-    <div
-      className="css-view-1dbjc4n IS5"
-    >
-      <div
-        className="css-view-1dbjc4n IS4"
-      >
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
-      </div>
-    </div>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
   </div>
 </Link>
 `;
@@ -900,33 +745,13 @@ exports[`8. tile h 1`] = `
 }
 
 .IS3 {
-  -webkit-align-items: flex-start;
-  align-items: flex-start;
-  width: 75%;
-  -ms-flex-align: start;
-  -webkit-box-align: start;
-}
-
-.IS4 {
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-pack: justify;
-  -webkit-box-pack: justify;
-}
-
-.IS5 {
+  padding-bottom: 25px;
   padding-right: 10px;
   padding-top: 10px;
-  padding-bottom: 10px;
   width: 50%;
 }
 
-.IS6 {
+.IS4 {
   flex-direction: column;
   justify-content: flex-end;
   padding-top: 10px;
@@ -944,7 +769,7 @@ exports[`8. tile h 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS5"
+    className="css-view-1dbjc4n IS3"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
@@ -973,24 +798,16 @@ exports[`8. tile h 1`] = `
         ...
       </span>
     </div>
-    <div
-      className="css-view-1dbjc4n IS4"
-    >
-      <div
-        className="css-view-1dbjc4n IS3"
-      >
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
-      </div>
-    </div>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
     <div
       className="css-text-76zvg2"
     >
@@ -1008,7 +825,7 @@ exports[`8. tile h 1`] = `
   </div>
   <Image
     aspectRatio={0.6666666666666666}
-    className="IS6"
+    className="IS4"
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1195%2C1792%2C747%2C0"
   />
 </Link>
@@ -1154,21 +971,7 @@ exports[`10. tile j 1`] = `
 }
 
 .IS4 {
-  -webkit-align-items: flex-start;
-  align-items: flex-start;
-  width: 75%;
-  -ms-flex-align: start;
-  -webkit-box-align: start;
-}
-
-.IS5 {
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -ms-flex-pack: justify;
-  -webkit-box-pack: justify;
-}
-
-.IS6 {
+  padding-bottom: 25px;
   padding-right: 10px;
   padding-left: 10px;
   width: 60%;
@@ -1190,7 +993,7 @@ exports[`10. tile j 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
   />
   <div
-    className="css-view-1dbjc4n IS6"
+    className="css-view-1dbjc4n IS4"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
@@ -1208,24 +1011,16 @@ exports[`10. tile j 1`] = `
     >
       This is tile headline
     </h3>
-    <div
-      className="css-view-1dbjc4n r-flexDirection-18u37iz IS5"
-    >
-      <div
-        className="css-view-1dbjc4n IS4"
-      >
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
-      </div>
-    </div>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
   </div>
 </Link>
 `;
@@ -1266,21 +1061,7 @@ exports[`11. tile k 1`] = `
 }
 
 .IS4 {
-  -webkit-align-items: flex-start;
-  align-items: flex-start;
-  width: 75%;
-  -ms-flex-align: start;
-  -webkit-box-align: start;
-}
-
-.IS5 {
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -ms-flex-pack: justify;
-  -webkit-box-pack: justify;
-}
-
-.IS6 {
+  padding-bottom: 25px;
   width: 50%;
 }
 </style>
@@ -1300,7 +1081,7 @@ exports[`11. tile k 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
   />
   <div
-    className="css-view-1dbjc4n IS6"
+    className="css-view-1dbjc4n IS4"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
@@ -1318,24 +1099,16 @@ exports[`11. tile k 1`] = `
     >
       This is tile headline
     </h3>
-    <div
-      className="css-view-1dbjc4n r-flexDirection-18u37iz IS5"
-    >
-      <div
-        className="css-view-1dbjc4n IS4"
-      >
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
-      </div>
-    </div>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
   </div>
 </Link>
 `;
@@ -1371,18 +1144,7 @@ exports[`12. tile l 1`] = `
 }
 
 .IS3 {
-  -webkit-align-items: flex-start;
-  align-items: flex-start;
-  width: 75%;
-  -ms-flex-align: start;
-  -webkit-box-align: start;
-}
-
-.IS4 {
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -ms-flex-pack: justify;
-  -webkit-box-pack: justify;
+  padding-bottom: 25px;
 }
 </style>
 
@@ -1396,7 +1158,7 @@ exports[`12. tile l 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n"
+    className="css-view-1dbjc4n IS3"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
@@ -1414,24 +1176,16 @@ exports[`12. tile l 1`] = `
     >
       This is tile headline
     </h3>
-    <div
-      className="css-view-1dbjc4n r-flexDirection-18u37iz IS4"
-    >
-      <div
-        className="css-view-1dbjc4n IS3"
-      >
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
-      </div>
-    </div>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
   </div>
 </Link>
 `;
@@ -1554,21 +1308,7 @@ exports[`14. tile n 1`] = `
 }
 
 .IS4 {
-  -webkit-align-items: flex-start;
-  align-items: flex-start;
-  width: 75%;
-  -ms-flex-align: start;
-  -webkit-box-align: start;
-}
-
-.IS5 {
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -ms-flex-pack: justify;
-  -webkit-box-pack: justify;
-}
-
-.IS6 {
+  padding-bottom: 25px;
   padding-right: 10px;
   padding-left: 10px;
   width: 50%;
@@ -1591,7 +1331,7 @@ exports[`14. tile n 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
   />
   <div
-    className="css-view-1dbjc4n IS6"
+    className="css-view-1dbjc4n IS4"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
@@ -1616,25 +1356,17 @@ exports[`14. tile n 1`] = `
     >
       Three Conservative MPs resign
     </h4>
-    <div
-      className="css-view-1dbjc4n r-flexDirection-18u37iz IS5"
-    >
-      <div
-        className="css-view-1dbjc4n IS4"
-      >
-        <ArticleFlags
-          color="#CCC"
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
-      </div>
-    </div>
+    <ArticleFlags
+      color="#CCC"
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
   </div>
 </Link>
 `;
@@ -1671,18 +1403,7 @@ exports[`15. tile o 1`] = `
 }
 
 .IS3 {
-  -webkit-align-items: flex-start;
-  align-items: flex-start;
-  width: 75%;
-  -ms-flex-align: start;
-  -webkit-box-align: start;
-}
-
-.IS4 {
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -ms-flex-pack: justify;
-  -webkit-box-pack: justify;
+  padding-bottom: 25px;
 }
 </style>
 
@@ -1697,7 +1418,7 @@ exports[`15. tile o 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n"
+    className="css-view-1dbjc4n IS3"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
@@ -1715,25 +1436,17 @@ exports[`15. tile o 1`] = `
     >
       This is tile headline
     </h3>
-    <div
-      className="css-view-1dbjc4n r-flexDirection-18u37iz IS4"
-    >
-      <div
-        className="css-view-1dbjc4n IS3"
-      >
-        <ArticleFlags
-          color="#CCC"
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
-      </div>
-    </div>
+    <ArticleFlags
+      color="#CCC"
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
   </div>
 </Link>
 `;
@@ -1955,18 +1668,7 @@ exports[`18. tile r 1`] = `
 }
 
 .IS3 {
-  -webkit-align-items: flex-start;
-  align-items: flex-start;
-  width: 75%;
-  -ms-flex-align: start;
-  -webkit-box-align: start;
-}
-
-.IS4 {
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -ms-flex-pack: justify;
-  -webkit-box-pack: justify;
+  padding-bottom: 25px;
 }
 </style>
 
@@ -1981,7 +1683,7 @@ exports[`18. tile r 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n"
+    className="css-view-1dbjc4n IS3"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
@@ -1999,24 +1701,16 @@ exports[`18. tile r 1`] = `
     >
       This is tile headline
     </h3>
-    <div
-      className="css-view-1dbjc4n r-flexDirection-18u37iz IS4"
-    >
-      <div
-        className="css-view-1dbjc4n IS3"
-      >
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
-      </div>
-    </div>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
   </div>
   <Image
     aspectRatio={1.7777777777777777}
@@ -2161,25 +1855,10 @@ exports[`20. tile t 1`] = `
 }
 
 .IS4 {
-  -webkit-align-items: flex-start;
-  align-items: flex-start;
-  width: 75%;
-  -ms-flex-align: start;
-  -webkit-box-align: start;
-}
-
-.IS5 {
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -ms-flex-pack: justify;
-  -webkit-box-pack: justify;
-}
-
-.IS6 {
+  padding-bottom: 25px;
   padding-right: 10px;
   padding-left: 10px;
   padding-top: 5px;
-  padding-bottom: 5px;
   width: 50%;
 }
 </style>
@@ -2199,7 +1878,7 @@ exports[`20. tile t 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
   <div
-    className="css-view-1dbjc4n IS6"
+    className="css-view-1dbjc4n IS4"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
@@ -2217,24 +1896,16 @@ exports[`20. tile t 1`] = `
     >
       This is tile headline
     </h3>
-    <div
-      className="css-view-1dbjc4n r-flexDirection-18u37iz IS5"
-    >
-      <div
-        className="css-view-1dbjc4n IS4"
-      >
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
-      </div>
-    </div>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
   </div>
 </Link>
 `;
@@ -2389,24 +2060,14 @@ exports[`22. tile v 1`] = `
 }
 
 .IS4 {
-  -webkit-align-items: flex-start;
-  align-items: flex-start;
-  width: 75%;
-  -ms-flex-align: start;
-  -webkit-box-align: start;
-}
-
-.IS5 {
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -ms-flex-pack: justify;
-  -webkit-box-pack: justify;
+  padding-bottom: 25px;
 }
 </style>
 
 <Link
   linkStyle={
     Object {
+      "flex": 1,
       "paddingHorizontal": "10px",
       "paddingTop": "10px",
     }
@@ -2419,7 +2080,7 @@ exports[`22. tile v 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
   <div
-    className="css-view-1dbjc4n"
+    className="css-view-1dbjc4n IS4"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
@@ -2437,24 +2098,16 @@ exports[`22. tile v 1`] = `
     >
       This is tile headline
     </h3>
-    <div
-      className="css-view-1dbjc4n r-flexDirection-18u37iz IS5"
-    >
-      <div
-        className="css-view-1dbjc4n IS4"
-      >
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
-      </div>
-    </div>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
   </div>
 </Link>
 `;
@@ -2648,18 +2301,7 @@ exports[`24. tile x 1`] = `
 }
 
 .IS4 {
-  -webkit-align-items: flex-start;
-  align-items: flex-start;
-  width: 75%;
-  -ms-flex-align: start;
-  -webkit-box-align: start;
-}
-
-.IS5 {
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -ms-flex-pack: justify;
-  -webkit-box-pack: justify;
+  padding-bottom: 25px;
 }
 </style>
 
@@ -2673,7 +2315,7 @@ exports[`24. tile x 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n"
+    className="css-view-1dbjc4n IS4"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
@@ -2709,24 +2351,16 @@ exports[`24. tile x 1`] = `
         ...
       </span>
     </div>
-    <div
-      className="css-view-1dbjc4n r-flexDirection-18u37iz IS5"
-    >
-      <div
-        className="css-view-1dbjc4n IS4"
-      >
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
-      </div>
-    </div>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
   </div>
 </Link>
 `;
@@ -2985,23 +2619,8 @@ exports[`27. tile aa 1`] = `
 }
 
 .IS4 {
-  -webkit-align-items: flex-start;
-  align-items: flex-start;
-  width: 75%;
-  -ms-flex-align: start;
-  -webkit-box-align: start;
-}
-
-.IS5 {
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -ms-flex-pack: justify;
-  -webkit-box-pack: justify;
-}
-
-.IS6 {
+  padding-bottom: 25px;
   padding-top: 5px;
-  padding-bottom: 5px;
 }
 </style>
 
@@ -3019,7 +2638,7 @@ exports[`27. tile aa 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
   <div
-    className="css-view-1dbjc4n IS6"
+    className="css-view-1dbjc4n IS4"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
@@ -3037,24 +2656,16 @@ exports[`27. tile aa 1`] = `
     >
       This is tile headline
     </h3>
-    <div
-      className="css-view-1dbjc4n r-flexDirection-18u37iz IS5"
-    >
-      <div
-        className="css-view-1dbjc4n IS4"
-      >
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
-      </div>
-    </div>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
   </div>
 </Link>
 `;
@@ -3109,28 +2720,13 @@ exports[`28. tile ab 1`] = `
 }
 
 .IS3 {
-  -webkit-align-items: flex-start;
-  align-items: flex-start;
-  width: 75%;
-  -ms-flex-align: start;
-  -webkit-box-align: start;
-}
-
-.IS4 {
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -ms-flex-pack: justify;
-  -webkit-box-pack: justify;
-}
-
-.IS5 {
+  padding-bottom: 25px;
   padding-right: 10px;
   padding-top: 10px;
-  padding-bottom: 10px;
   width: 50%;
 }
 
-.IS6 {
+.IS4 {
   flex-direction: column;
   justify-content: flex-end;
   padding-top: 10px;
@@ -3148,7 +2744,7 @@ exports[`28. tile ab 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS5"
+    className="css-view-1dbjc4n IS3"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
@@ -3177,24 +2773,16 @@ exports[`28. tile ab 1`] = `
         ...
       </span>
     </div>
-    <div
-      className="css-view-1dbjc4n r-flexDirection-18u37iz IS4"
-    >
-      <div
-        className="css-view-1dbjc4n IS3"
-      >
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
-      </div>
-    </div>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
     <div
       className="css-text-76zvg2"
     >
@@ -3212,7 +2800,7 @@ exports[`28. tile ab 1`] = `
   </div>
   <Image
     aspectRatio={0.6666666666666666}
-    className="IS6"
+    className="IS4"
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1195%2C1792%2C747%2C0"
   />
 </Link>
@@ -3261,24 +2849,14 @@ exports[`29. tile ae 1`] = `
 }
 
 .IS3 {
-  -webkit-align-items: flex-start;
-  align-items: flex-start;
-  width: 75%;
-  -ms-flex-align: start;
-  -webkit-box-align: start;
-}
-
-.IS4 {
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -ms-flex-pack: justify;
-  -webkit-box-pack: justify;
+  padding-bottom: 25px;
 }
 </style>
 
 <Link
   linkStyle={
     Object {
+      "flex": 1,
       "paddingHorizontal": "10px",
       "paddingTop": "10px",
     }
@@ -3286,7 +2864,7 @@ exports[`29. tile ae 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n"
+    className="css-view-1dbjc4n IS3"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
@@ -3315,24 +2893,16 @@ exports[`29. tile ae 1`] = `
         ...
       </span>
     </div>
-    <div
-      className="css-view-1dbjc4n r-flexDirection-18u37iz IS4"
-    >
-      <div
-        className="css-view-1dbjc4n IS3"
-      >
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
-      </div>
-    </div>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
   </div>
 </Link>
 `;
@@ -3365,11 +2935,7 @@ exports[`30. tile ag 1`] = `
 }
 
 .IS3 {
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
+  padding-bottom: 25px;
 }
 </style>
 
@@ -3383,7 +2949,7 @@ exports[`30. tile ag 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n"
+    className="css-view-1dbjc4n IS3"
   >
     <h3
       aria-level="3"
@@ -3399,15 +2965,7 @@ exports[`30. tile ag 1`] = `
     >
       Three Conservative MPs resign
     </h4>
-    <div
-      className="css-view-1dbjc4n IS3"
-    >
-      <div
-        className="css-view-1dbjc4n"
-      >
-        <ArticleFlags />
-      </div>
-    </div>
+    <ArticleFlags />
   </div>
 </Link>
 `;
@@ -3448,6 +3006,7 @@ exports[`31. tile aj 1`] = `
     }
   }
   url="/crossword/123"
+  withStar={false}
 >
   <div
     className="css-view-1dbjc4n IS2"
@@ -3508,6 +3067,7 @@ exports[`32. tile ak 1`] = `
     }
   }
   url="/crossword/123"
+  withStar={false}
 >
   <div
     className="css-view-1dbjc4n IS2"
@@ -3577,18 +3137,7 @@ exports[`33. tile al 1`] = `
 }
 
 .IS4 {
-  -webkit-align-items: flex-start;
-  align-items: flex-start;
-  width: 75%;
-  -ms-flex-align: start;
-  -webkit-box-align: start;
-}
-
-.IS5 {
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -ms-flex-pack: justify;
-  -webkit-box-pack: justify;
+  padding-bottom: 25px;
 }
 </style>
 
@@ -3607,7 +3156,7 @@ exports[`33. tile al 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
   />
   <div
-    className="css-view-1dbjc4n"
+    className="css-view-1dbjc4n IS4"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
@@ -3636,24 +3185,16 @@ exports[`33. tile al 1`] = `
         ...
       </span>
     </div>
-    <div
-      className="css-view-1dbjc4n r-flexDirection-18u37iz IS5"
-    >
-      <div
-        className="css-view-1dbjc4n IS4"
-      >
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
-      </div>
-    </div>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
   </div>
 </Link>
 `;
@@ -3707,18 +3248,7 @@ exports[`34. tile am 1`] = `
 }
 
 .IS4 {
-  -webkit-align-items: flex-start;
-  align-items: flex-start;
-  width: 75%;
-  -ms-flex-align: start;
-  -webkit-box-align: start;
-}
-
-.IS5 {
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -ms-flex-pack: justify;
-  -webkit-box-pack: justify;
+  padding-bottom: 25px;
 }
 </style>
 
@@ -3737,7 +3267,7 @@ exports[`34. tile am 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
   <div
-    className="css-view-1dbjc4n"
+    className="css-view-1dbjc4n IS4"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
@@ -3766,24 +3296,16 @@ exports[`34. tile am 1`] = `
         ...
       </span>
     </div>
-    <div
-      className="css-view-1dbjc4n r-flexDirection-18u37iz IS5"
-    >
-      <div
-        className="css-view-1dbjc4n IS4"
-      >
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
-      </div>
-    </div>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
   </div>
 </Link>
 `;
@@ -3835,23 +3357,9 @@ exports[`35. tile an 1`] = `
 }
 
 .IS4 {
-  -webkit-align-items: flex-start;
-  align-items: flex-start;
-  width: 75%;
-  -ms-flex-align: start;
-  -webkit-box-align: start;
-}
-
-.IS5 {
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -ms-flex-pack: justify;
-  -webkit-box-pack: justify;
-}
-
-.IS6 {
   -webkit-justify-content: center;
   justify-content: center;
+  padding-bottom: 25px;
   padding-right: 10px;
   padding-left: 10px;
   padding-top: 10px;
@@ -3876,7 +3384,7 @@ exports[`35. tile an 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
   />
   <div
-    className="css-view-1dbjc4n IS6"
+    className="css-view-1dbjc4n IS4"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
@@ -3905,24 +3413,16 @@ exports[`35. tile an 1`] = `
         ...
       </span>
     </div>
-    <div
-      className="css-view-1dbjc4n r-flexDirection-18u37iz IS5"
-    >
-      <div
-        className="css-view-1dbjc4n IS4"
-      >
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
-      </div>
-    </div>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
   </div>
 </Link>
 `;
@@ -3963,23 +3463,9 @@ exports[`36. tile ap 1`] = `
 }
 
 .IS4 {
-  -webkit-align-items: flex-start;
-  align-items: flex-start;
-  width: 75%;
-  -ms-flex-align: start;
-  -webkit-box-align: start;
-}
-
-.IS5 {
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -ms-flex-pack: justify;
-  -webkit-box-pack: justify;
-}
-
-.IS6 {
   -webkit-justify-content: center;
   justify-content: center;
+  padding-bottom: 25px;
   padding-right: 10px;
   padding-left: 10px;
   padding-top: 5px;
@@ -4004,7 +3490,7 @@ exports[`36. tile ap 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
   />
   <div
-    className="css-view-1dbjc4n IS6"
+    className="css-view-1dbjc4n IS4"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
@@ -4022,24 +3508,16 @@ exports[`36. tile ap 1`] = `
     >
       This is tile headline
     </h3>
-    <div
-      className="css-view-1dbjc4n r-flexDirection-18u37iz IS5"
-    >
-      <div
-        className="css-view-1dbjc4n IS4"
-      >
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
-      </div>
-    </div>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
   </div>
 </Link>
 `;
@@ -4079,21 +3557,7 @@ exports[`37. tile ad 1`] = `
 }
 
 .IS4 {
-  -webkit-align-items: flex-start;
-  align-items: flex-start;
-  width: 75%;
-  -ms-flex-align: start;
-  -webkit-box-align: start;
-}
-
-.IS5 {
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -ms-flex-pack: justify;
-  -webkit-box-pack: justify;
-}
-
-.IS6 {
+  padding-bottom: 25px;
   padding-right: 10px;
   padding-left: 10px;
   width: 70%;
@@ -4115,7 +3579,7 @@ exports[`37. tile ad 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
   />
   <div
-    className="css-view-1dbjc4n IS6"
+    className="css-view-1dbjc4n IS4"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
@@ -4133,24 +3597,16 @@ exports[`37. tile ad 1`] = `
     >
       This is tile headline
     </h3>
-    <div
-      className="css-view-1dbjc4n r-flexDirection-18u37iz IS5"
-    >
-      <div
-        className="css-view-1dbjc4n IS4"
-      >
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
-      </div>
-    </div>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
   </div>
 </Link>
 `;
@@ -4191,14 +3647,6 @@ exports[`38. tile ac 1`] = `
 }
 
 .IS4 {
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-}
-
-.IS5 {
   -webkit-align-items: center;
   align-items: center;
   background-color: rgba(240,240,240,1.00);
@@ -4210,10 +3658,10 @@ exports[`38. tile ac 1`] = `
   flex-basis: 0%;
   -webkit-justify-content: center;
   justify-content: center;
+  padding-bottom: 25px;
   padding-right: 40px;
   padding-left: 40px;
   padding-top: 20px;
-  padding-bottom: 20px;
   -ms-flex-align: center;
   -webkit-box-align: center;
   -ms-flex-positive: 1;
@@ -4239,7 +3687,7 @@ exports[`38. tile ac 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
   <div
-    className="css-view-1dbjc4n IS5"
+    className="css-view-1dbjc4n IS4"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
@@ -4257,24 +3705,16 @@ exports[`38. tile ac 1`] = `
     >
       This is tile headline
     </h3>
-    <div
-      className="css-view-1dbjc4n IS4"
-    >
-      <div
-        className="css-view-1dbjc4n"
-      >
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
-      </div>
-    </div>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
   </div>
 </Link>
 `;

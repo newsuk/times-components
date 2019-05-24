@@ -5,7 +5,7 @@ import { SectionContext } from "@times-components/context";
 import withArticleSaveTracking from "./save-article-tracking-events";
 
 const StarWithTracking = withArticleSaveTracking(
-  ({ articleId, onArticleSavePress, savedArticles, isDark }) => {
+  ({ articleId, onArticleSavePress, savedArticles, isDark, style }) => {
     const disabled = !savedArticles;
     const isSaved = savedArticles && savedArticles[articleId];
 
@@ -15,6 +15,7 @@ const StarWithTracking = withArticleSaveTracking(
 
     return (
       <StarButton
+        style={style}
         disabled={disabled}
         isDark={isDark}
         onPress={onStarPress}
@@ -24,11 +25,12 @@ const StarWithTracking = withArticleSaveTracking(
   }
 );
 
-const TileStar = ({ articleId, isDark }) => (
+const TileStar = ({ articleId, isDark, style }) => (
   <SectionContext.Consumer>
     {({ onArticleSavePress, savedArticles }) =>
       onArticleSavePress ? (
         <StarWithTracking
+          style={style}
           articleId={articleId}
           isDark={isDark}
           onArticleSavePress={onArticleSavePress}
@@ -41,10 +43,12 @@ const TileStar = ({ articleId, isDark }) => (
 
 TileStar.propTypes = {
   articleId: PropTypes.string.isRequired,
+  style: PropTypes.shape({}),
   isDark: PropTypes.bool
 };
 
 TileStar.defaultProps = {
+  style: null,
   isDark: false
 };
 

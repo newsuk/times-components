@@ -8,13 +8,17 @@ const horizontalStyles = {
   flagStyle: {
     alignItems: "flex-start",
     width: "75%"
-  },
-  starButton: {
-    alignItems: "flex-end",
-    flex: 1,
-    marginTop: -5,
-    width: "25%"
   }
+};
+
+const tileStar = {
+  position: "absolute",
+  right: spacing(2),
+  bottom: spacing(1)
+};
+
+const starPadding = {
+  paddingBottom: spacing(5)
 };
 
 const verticalStyles = {
@@ -22,9 +26,8 @@ const verticalStyles = {
     flexDirection: "column"
   },
   starButton: {
-    alignItems: "center",
-    marginTop: spacing(2)
+    alignSelf: "center"
   }
 };
 
-export { horizontalStyles, verticalStyles };
+export { horizontalStyles, verticalStyles, tileStar, starPadding };

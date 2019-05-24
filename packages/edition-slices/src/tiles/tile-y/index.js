@@ -4,11 +4,17 @@ import { TileLink, TileSummary, withTileTracking } from "../shared";
 import styles from "./styles";
 
 const TileY = ({ onPress, tile }) => (
-  <TileLink onPress={onPress} style={styles.container} tile={tile}>
+  <TileLink
+    onPress={onPress}
+    style={styles.container}
+    tile={tile}
+    withStar={false}
+  >
     <TileSummary
       headlineStyle={styles.headline}
       summary={tile.teaser300 || tile.article.summary300}
       tile={tile}
+      withStar
     />
   </TileLink>
 );
