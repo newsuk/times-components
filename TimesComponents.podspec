@@ -61,7 +61,7 @@ Pod::Spec.new do |s|
   s.swift_version    = '4.2'
   s.source           = { :git => 'https://github.com/newsuk/times-components-ios-artifacts', :tag => "#{s.version}"}
   s.resource_bundles = {
-    'TimesComponents' => ['ios-app/ios-assets/js/index.ios.bundle', 'ios-app/ios-assets/res/*']
+    'TimesComponents' => ['assets/js/index.ios.bundle', 'assets/res/*']
   }
   
   # React, and the subspecs we have to use
