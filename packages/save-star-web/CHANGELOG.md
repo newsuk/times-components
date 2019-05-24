@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.1.8...@times-components/save-star-web@0.2.0) (2019-05-24)
+
+
+### Features
+
+* Revert save icon to save star icon ([#1991](https://github.com/newsuk/times-components/issues/1991)) ([f7a6c15](https://github.com/newsuk/times-components/commit/f7a6c15))
+
+
+
+
+
 ## [0.1.8](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.1.7...@times-components/save-star-web@0.1.8) (2019-05-23)
 
 **Note:** Version bump only for package @times-components/save-star-web
