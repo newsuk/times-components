@@ -118,6 +118,7 @@ exports[`save and share bar component save and share bar renders correctly 1`] =
     <SaveStarWeb
       articleId="96508c84-6611-11e9-adc2-05e1b87efaea"
       colour="#696969"
+      height={18}
       hoverColor="#1D1D1B"
       saveApi={
         Object {

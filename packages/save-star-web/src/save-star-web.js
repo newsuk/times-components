@@ -4,7 +4,7 @@ import { ActivityIndicator, Text } from "react-native";
 import Link from "@times-components/link";
 import { HoverIcon } from "@times-components/utils";
 import PropTypes from "prop-types";
-import { IconSaveBookmark } from "@times-components/icons";
+import { IconStar } from "@times-components/icons";
 import styles, { getStyles } from "./styles";
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
@@ -81,7 +81,7 @@ class SaveStarWeb extends Component {
   }
 
   renderSaveButton(saveStatus) {
-    const { colour, hoverColour } = this.props;
+    const { colour, hoverColour, height = 18 } = this.props;
 
     const saveStyle = getStyles({ saveStatus });
     const { fillColour, strokeColour } = saveStyle;
@@ -89,10 +89,11 @@ class SaveStarWeb extends Component {
     return (
       <Link onPress={this.onSaveButtonPress} responsiveLinkStyles={styles.link}>
         <HoverIcon colour={colour} hoverColour={hoverColour}>
-          <IconSaveBookmark
+          <IconStar
             fillColour={fillColour}
             strokeColour={strokeColour}
             title="Save to My Articles"
+            height={height}
           />
         </HoverIcon>
       </Link>
@@ -126,6 +127,7 @@ SaveStarWeb.propTypes = {
   articleId: PropTypes.string.isRequired,
   colour: PropTypes.string,
   hoverColour: PropTypes.string,
+  height: PropTypes.number.isRequired,
   saveApi: PropTypes.shape({
     bookmark: PropTypes.func.isRequired,
     getBookmarks: PropTypes.func.isRequired,
