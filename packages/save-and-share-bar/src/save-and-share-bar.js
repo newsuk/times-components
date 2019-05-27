@@ -104,11 +104,8 @@ class SaveAndShareBar extends Component {
               articleId={articleId}
               articleHeadline={articleHeadline}
               saveApi={saveApi}
-<<<<<<< HEAD
               height={styles.svgIcon.star.height}
-=======
               onSaveButtonPress={this.onSaveButtonPress}
->>>>>>> Feat Add tracking to save star press event
             />
           </View>
         )}
