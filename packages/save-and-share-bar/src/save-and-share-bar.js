@@ -20,46 +20,27 @@ class SaveAndShareBar extends Component {
     this.onSaveButtonPress = this.onSaveButtonPress.bind(this);
   }
 
+  onSaveButtonPress(evt, savedStatus, saveUnsaveBookmark) {
+    evt.preventDefault();
+    const { saveApi } = this.props;
+
+    if (savedStatus) {
+      saveUnsaveBookmark(saveApi.unBookmark, false, true);
+    } else {
+      saveUnsaveBookmark(saveApi.bookmark, true, false);
+    }
+  }
+
   copyToClipboard() {
     const { onCopyLink, articleUrl } = this.props;
     Clipboard.setString(articleUrl);
     onCopyLink();
   }
 
-
-  onSaveButtonPress(evt) {
-    evt.preventDefault();
-
-    const { savedStatus } = this.state;
-    const { saveApi } = this.props;
-
-    if (savedStatus) {
-      this.saveUnsaveBookmark(saveApi.unBookmark, false, true);
-    } else {
-      this.saveUnsaveBookmark(saveApi.bookmark, true, false);
-    }
-  }
-
-  saveUnsaveBookmark(saveMethod, successStatus, errorStatus) {
-    this.setState({ loadingState: true });
-    const { articleId: id } = this.props;
-
-    saveMethod(id)
-      .then(() => {
-        this.setState({
-          loadingState: false,
-          savedStatus: successStatus
-        });
-      })
-      .catch(error => {
-        this.setState({ loadingState: false, savedStatus: errorStatus });
-        console.error("Error in connecting to api", error);
-      });
-  }
-
   render() {
     const {
       articleId,
+      articleHeadline,
       articleUrl,
       onShareOnEmail,
       savingEnabled,
@@ -121,6 +102,7 @@ class SaveAndShareBar extends Component {
               colour={styles.svgIcon.save.strokeColour}
               hoverColor={styles.svgIcon.hoverFillColour}
               articleId={articleId}
+              articleHeadline={articleHeadline}
               saveApi={saveApi}
 <<<<<<< HEAD
               height={styles.svgIcon.star.height}
