@@ -6,51 +6,62 @@ import {
   SaveShareInnerContainer
 } from "./styles/responsive";
 
+const isOutOfView = node => node.getBoundingClientRect().top <= 1;
+
 class StickySaveAndShareBar extends Component {
   constructor(props) {
     super(props);
-    this.checkSticky = this.checkSticky.bind(this);
-    this.stickyRef = React.createRef();
+
+    this.updateSticky = this.updateSticky.bind(this);
+    this.containerRef = React.createRef();
   }
 
   componentDidMount() {
-    window.addEventListener("scroll", this.checkSticky);
-    window.addEventListener("resize", this.checkSticky);
+    window.addEventListener("scroll", this.updateSticky);
+    window.addEventListener("resize", this.updateSticky);
   }
 
   componentWillUnmount() {
-    window.removeEventListener("scroll", this.checkSticky);
-    window.removeEventListener("resize", this.checkSticky);
+    window.removeEventListener("scroll", this.updateSticky);
+    window.removeEventListener("resize", this.updateSticky);
   }
 
-  checkSticky() {
-    const sticky = this.stickyRef.current;
+  setSticky(container, shouldBeSticky) {
+    this.isSticky = shouldBeSticky;
 
-    if (sticky) {
-      const offsetTop = sticky.getBoundingClientRect().top;
-      const isSticky = offsetTop <= 1;
+    if (shouldBeSticky) {
+      container.classList.add("sticky");
+    } else {
+      container.classList.remove("sticky");
+    }
+  }
 
-      if (isSticky !== this.isSticky) {
-        this.isSticky = isSticky;
+  doesStickyNeedUpdating(shouldBeSticky) {
+    return shouldBeSticky !== this.isSticky;
+  }
 
-        if (isSticky) {
-          sticky.classList.add("sticky");
-        } else {
-          sticky.classList.remove("sticky");
-        }
-      }
+  updateSticky() {
+    const container = this.containerRef.current;
+
+    if (!container) {
+      return;
+    }
+
+    const shouldBeSticky = isOutOfView(container);
+
+    if (this.doesStickyNeedUpdating(shouldBeSticky)) {
+      this.setSticky(container, shouldBeSticky);
     }
   }
 
   render() {
     const { saveApi, ...props } = this.props;
-    const saveServiceApi =
-      saveApi && saveApi.bookmark ? saveApi : saveArticleApi;
+    const api = saveApi && saveApi.bookmark ? saveApi : saveArticleApi;
 
     return (
-      <SaveShareContainer ref={this.stickyRef}>
+      <SaveShareContainer ref={this.containerRef}>
         <SaveShareInnerContainer>
-          <SaveAndShareBar {...props} saveApi={saveServiceApi} />
+          <SaveAndShareBar {...props} saveApi={api} />
         </SaveShareInnerContainer>
       </SaveShareContainer>
     );
