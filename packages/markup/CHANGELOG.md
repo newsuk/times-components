@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.3.69](https://github.com/newsuk/times-components/compare/@times-components/markup@3.3.68...@times-components/markup@3.3.69) (2019-05-28)
+
+
+### Bug Fixes
+
+* Subscript markup fallback scenario ([#1999](https://github.com/newsuk/times-components/issues/1999)) ([ced689f](https://github.com/newsuk/times-components/commit/ced689f))
+
+
+
+
+
 ## [3.3.68](https://github.com/newsuk/times-components/compare/@times-components/markup@3.3.67...@times-components/markup@3.3.68) (2019-05-23)
 
 **Note:** Version bump only for package @times-components/markup
