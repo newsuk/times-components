@@ -77,13 +77,13 @@ export const SaveShareContainer = styled.div`
     top: 0;
     z-index: 999;
 
-    &.isSticky {
+    &.sticky {
       width: 100% !important;
       box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
     }
 
     /* stylelint-disable */
-    &:not(.isSticky) ${SaveShareInnerContainer} {
+    &:not(.sticky) ${SaveShareInnerContainer} {
       ${NON_STICKY_CSS};
     }
     /* stylelint-enable */

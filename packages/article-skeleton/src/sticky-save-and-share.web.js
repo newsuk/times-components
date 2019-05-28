@@ -6,24 +6,24 @@ import {
   SaveShareInnerContainer
 } from "./styles/responsive";
 
-class AttachedSaveAndShareBar extends Component {
+class StickySaveAndShareBar extends Component {
   constructor(props) {
     super(props);
-    this.checkAttachment = this.checkAttachment.bind(this);
+    this.checkSticky = this.checkSticky.bind(this);
     this.stickyRef = React.createRef();
   }
 
   componentDidMount() {
-    window.addEventListener("scroll", this.checkAttachment);
-    window.addEventListener("resize", this.checkAttachment);
+    window.addEventListener("scroll", this.checkSticky);
+    window.addEventListener("resize", this.checkSticky);
   }
 
   componentWillUnmount() {
-    window.removeEventListener("scroll", this.checkAttachment);
-    window.removeEventListener("resize", this.checkAttachment);
+    window.removeEventListener("scroll", this.checkSticky);
+    window.removeEventListener("resize", this.checkSticky);
   }
 
-  checkAttachment() {
+  checkSticky() {
     const sticky = this.stickyRef.current;
 
     if (sticky) {
@@ -34,9 +34,9 @@ class AttachedSaveAndShareBar extends Component {
         this.isSticky = isSticky;
 
         if (isSticky) {
-          sticky.classList.add("isSticky");
+          sticky.classList.add("sticky");
         } else {
-          sticky.classList.remove("isSticky");
+          sticky.classList.remove("sticky");
         }
       }
     }
@@ -57,4 +57,4 @@ class AttachedSaveAndShareBar extends Component {
   }
 }
 
-export default AttachedSaveAndShareBar;
+export default StickySaveAndShareBar;

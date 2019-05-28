@@ -19,7 +19,7 @@ import {
   MainContainer
 } from "./styles/responsive";
 import Head from "./head";
-import AttachedSaveAndShareBar from "./attached-save-and-share.web";
+import StickySaveAndShareBar from "./sticky-save-and-share.web";
 
 const adStyle = {
   marginBottom: 0
@@ -119,7 +119,7 @@ class ArticleSkeleton extends Component {
                             width={articleWidth}
                           />
                           {shouldRenderSaveAndShare && (
-                            <AttachedSaveAndShareBar
+                            <StickySaveAndShareBar
                               articleId={articleId}
                               articleHeadline={headline}
                               articleUrl={url}
