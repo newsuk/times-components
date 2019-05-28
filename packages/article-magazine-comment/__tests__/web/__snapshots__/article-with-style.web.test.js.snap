@@ -93,29 +93,6 @@ exports[`full article with style 1`] = `
   margin: 30px 0;
 }
 
-.c12.isSticky {
-  width: 100% !important;
-  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.3);
-}
-
-.c12:not(.isSticky) .c13:before,
-.c12:not(.isSticky) .c13:after {
-  content: "";
-  height: 1px;
-  background-color: #DBDBDB;
-  position: absolute;
-  left: 10px;
-  right: 10px;
-}
-
-.c12:not(.isSticky) .c13:before {
-  top: 0;
-}
-
-.c12:not(.isSticky) .c13:after {
-  bottom: 0;
-}
-
 .c3 {
   border-radius: 50%;
   height: 100px;
@@ -295,6 +272,49 @@ exports[`full article with style 1`] = `
     left: 0;
     top: 0;
     z-index: 999;
+  }
+
+  .c12.sticky {
+    width: 100% !important;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.3);
+  }
+
+  .c12:not(.sticky) .c13:before,
+  .c12:not(.sticky) .c13:after {
+    content: "";
+    height: 1px;
+    background-color: #DBDBDB;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+  }
+
+  .c12:not(.sticky) .c13:before {
+    top: 0;
+  }
+
+  .c12:not(.sticky) .c13:after {
+    bottom: 0;
+  }
+}
+
+@media (min-width:1321px) {
+  .c12 .c13:before,
+  .c12 .c13:after {
+    content: "";
+    height: 1px;
+    background-color: #DBDBDB;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+  }
+
+  .c12 .c13:before {
+    top: 0;
+  }
+
+  .c12 .c13:after {
+    bottom: 0;
   }
 }
 
@@ -796,29 +816,6 @@ exports[`full article with style in the culture magazine 1`] = `
   margin: 30px 0;
 }
 
-.c12.isSticky {
-  width: 100% !important;
-  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.3);
-}
-
-.c12:not(.isSticky) .c13:before,
-.c12:not(.isSticky) .c13:after {
-  content: "";
-  height: 1px;
-  background-color: #DBDBDB;
-  position: absolute;
-  left: 10px;
-  right: 10px;
-}
-
-.c12:not(.isSticky) .c13:before {
-  top: 0;
-}
-
-.c12:not(.isSticky) .c13:after {
-  bottom: 0;
-}
-
 .c3 {
   border-radius: 50%;
   height: 100px;
@@ -998,6 +995,49 @@ exports[`full article with style in the culture magazine 1`] = `
     left: 0;
     top: 0;
     z-index: 999;
+  }
+
+  .c12.sticky {
+    width: 100% !important;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.3);
+  }
+
+  .c12:not(.sticky) .c13:before,
+  .c12:not(.sticky) .c13:after {
+    content: "";
+    height: 1px;
+    background-color: #DBDBDB;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+  }
+
+  .c12:not(.sticky) .c13:before {
+    top: 0;
+  }
+
+  .c12:not(.sticky) .c13:after {
+    bottom: 0;
+  }
+}
+
+@media (min-width:1321px) {
+  .c12 .c13:before,
+  .c12 .c13:after {
+    content: "";
+    height: 1px;
+    background-color: #DBDBDB;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+  }
+
+  .c12 .c13:before {
+    top: 0;
+  }
+
+  .c12 .c13:after {
+    bottom: 0;
   }
 }
 
@@ -1507,29 +1547,6 @@ exports[`full article with style in the style magazine 1`] = `
   margin: 30px 0;
 }
 
-.c12.isSticky {
-  width: 100% !important;
-  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.3);
-}
-
-.c12:not(.isSticky) .c13:before,
-.c12:not(.isSticky) .c13:after {
-  content: "";
-  height: 1px;
-  background-color: #DBDBDB;
-  position: absolute;
-  left: 10px;
-  right: 10px;
-}
-
-.c12:not(.isSticky) .c13:before {
-  top: 0;
-}
-
-.c12:not(.isSticky) .c13:after {
-  bottom: 0;
-}
-
 .c3 {
   border-radius: 50%;
   height: 100px;
@@ -1709,6 +1726,49 @@ exports[`full article with style in the style magazine 1`] = `
     left: 0;
     top: 0;
     z-index: 999;
+  }
+
+  .c12.sticky {
+    width: 100% !important;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.3);
+  }
+
+  .c12:not(.sticky) .c13:before,
+  .c12:not(.sticky) .c13:after {
+    content: "";
+    height: 1px;
+    background-color: #DBDBDB;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+  }
+
+  .c12:not(.sticky) .c13:before {
+    top: 0;
+  }
+
+  .c12:not(.sticky) .c13:after {
+    bottom: 0;
+  }
+}
+
+@media (min-width:1321px) {
+  .c12 .c13:before,
+  .c12 .c13:after {
+    content: "";
+    height: 1px;
+    background-color: #DBDBDB;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+  }
+
+  .c12 .c13:before {
+    top: 0;
+  }
+
+  .c12 .c13:after {
+    bottom: 0;
   }
 }
 
@@ -2218,29 +2278,6 @@ exports[`full article with style in the sunday times magazine 1`] = `
   margin: 30px 0;
 }
 
-.c12.isSticky {
-  width: 100% !important;
-  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.3);
-}
-
-.c12:not(.isSticky) .c13:before,
-.c12:not(.isSticky) .c13:after {
-  content: "";
-  height: 1px;
-  background-color: #DBDBDB;
-  position: absolute;
-  left: 10px;
-  right: 10px;
-}
-
-.c12:not(.isSticky) .c13:before {
-  top: 0;
-}
-
-.c12:not(.isSticky) .c13:after {
-  bottom: 0;
-}
-
 .c3 {
   border-radius: 50%;
   height: 100px;
@@ -2420,6 +2457,49 @@ exports[`full article with style in the sunday times magazine 1`] = `
     left: 0;
     top: 0;
     z-index: 999;
+  }
+
+  .c12.sticky {
+    width: 100% !important;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.3);
+  }
+
+  .c12:not(.sticky) .c13:before,
+  .c12:not(.sticky) .c13:after {
+    content: "";
+    height: 1px;
+    background-color: #DBDBDB;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+  }
+
+  .c12:not(.sticky) .c13:before {
+    top: 0;
+  }
+
+  .c12:not(.sticky) .c13:after {
+    bottom: 0;
+  }
+}
+
+@media (min-width:1321px) {
+  .c12 .c13:before,
+  .c12 .c13:after {
+    content: "";
+    height: 1px;
+    background-color: #DBDBDB;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+  }
+
+  .c12 .c13:before {
+    top: 0;
+  }
+
+  .c12 .c13:after {
+    bottom: 0;
   }
 }
 
