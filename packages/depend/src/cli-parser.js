@@ -66,4 +66,10 @@ export default commander
   .option("-sr --show-rules", "prints rules that will be applied")
   .option("-l --list", "prints all dependencies in use")
   .option("-b --bail", "returns 1 if packages need fixing")
-  .option("--hint", "print fix suggestions");
+  .option("--hint", "print fix suggestions")
+  .on("--help", () => {
+    console.log(
+      "  For more details see https://github.com/newsuk/times-components/tree/master/packages/depend"
+    );
+    console.log("");
+  });
