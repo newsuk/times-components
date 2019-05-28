@@ -19,7 +19,7 @@ import {
   MainContainer
 } from "./styles/responsive";
 import Head from "./head";
-import StickySaveAndShareBar from "./sticky-save-and-share";
+import StickySaveAndShareBar from "./sticky-save-and-share-bar";
 
 const adStyle = {
   marginBottom: 0
