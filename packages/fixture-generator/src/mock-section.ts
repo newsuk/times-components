@@ -18,7 +18,6 @@ import {
   mockStandardSlice,
   mockListTwoAndSixNoPicSlice
 } from "./mock-slice";
-import MockImage from "./mock-image";
 
 function getSlices(): Array<ArticleSlice> {
   return [

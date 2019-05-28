@@ -12,6 +12,12 @@ exports[`1. paragraph with a drop cap in culture magazine 1`] = `
   padding-left: 10px;
 }
 
+.c0:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 @media (min-width:768px) {
   .c0 {
     font-size: 18px;
@@ -47,6 +53,12 @@ exports[`2. paragraph with a drop cap in style magazine 1`] = `
   padding-left: 10px;
 }
 
+.c0:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 @media (min-width:768px) {
   .c0 {
     font-size: 18px;
@@ -80,6 +92,12 @@ exports[`3. paragraph with a drop cap in the sunday times magazine 1`] = `
   margin: 0 auto 25px;
   padding-right: 10px;
   padding-left: 10px;
+}
+
+.c0:after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 @media (min-width:768px) {

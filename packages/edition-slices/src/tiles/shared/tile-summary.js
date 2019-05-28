@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Platform } from "react-native";
+import { View } from "react-native";
 import PropTypes from "prop-types";
 import ArticleSummary, {
   ArticleSummaryContent,
@@ -9,7 +9,8 @@ import ArticleSummary, {
 import { ArticleFlags } from "@times-components/article-flag";
 import { colours } from "@times-components/styleguide";
 import TileStar from "./tile-star";
-import { horizontalStyles } from "./styles";
+import { horizontalStyles, starPadding } from "./styles";
+import { isSaveSupported } from "./utils";
 
 class TileSummary extends Component {
   constructor(props) {
@@ -37,7 +38,7 @@ class TileSummary extends Component {
       starStyle
     } = this.props;
 
-    if (!withStar || Platform.OS === "ios") {
+    if (!withStar || isSaveSupported) {
       return <ArticleFlags {...flagColour} flags={expirableFlags} />;
     }
 
@@ -92,6 +93,7 @@ class TileSummary extends Component {
       strapline,
       style,
       summary,
+      withStar,
       labelColour
     } = this.props;
 
@@ -110,7 +112,7 @@ class TileSummary extends Component {
           title: label
         }}
         strapline={strapline ? this.renderStrapline() : undefined}
-        style={style}
+        style={withStar ? style : [starPadding, style]}
       />
     );
   }
@@ -142,7 +144,7 @@ TileSummary.defaultProps = {
   style: null,
   summary: null,
   summaryStyle: null,
-  withStar: true
+  withStar: false
 };
 
 export default TileSummary;

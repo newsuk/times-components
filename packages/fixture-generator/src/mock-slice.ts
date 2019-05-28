@@ -21,7 +21,6 @@ import {
   SecondaryOneAndFourSlice,
   Puzzle
 } from "./types";
-import MockArticle from "./mock-article";
 import MockPuzzle from "./mock-puzzle";
 
 import MockTile from "./mock-tile";

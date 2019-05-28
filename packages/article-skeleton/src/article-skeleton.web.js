@@ -2,11 +2,11 @@ import React, { Component, Fragment } from "react";
 import Ad, { AdComposer } from "@times-components/ad";
 import SaveAndShareBar from "@times-components/save-and-share-bar";
 import ArticleExtras from "@times-components/article-extras";
-import { saveApi } from "@times-components/save-star-web";
 import LazyLoad from "@times-components/lazy-load";
 import { spacing, breakpoints } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import Context from "@times-components/context";
+import { saveApi as saveArticleApi } from "@times-components/save-star-web";
 import { isLoggedIn, isMeteredExpired } from "@times-components/utils";
 import ArticleBody from "./article-body/article-body";
 import {
@@ -72,9 +72,13 @@ class ArticleSkeleton extends Component {
     url,
     isSticky,
     allowSaveAndShare,
+    saveApi,
     savingEnabled,
     sharingEnabled
   }) {
+    const saveServiceApi =
+      saveApi && saveApi.bookmark ? saveApi : saveArticleApi;
+
     if (!allowSaveAndShare) return null;
 
     return (
@@ -108,6 +112,7 @@ class ArticleSkeleton extends Component {
       data: article,
       Header,
       receiveChildList,
+      saveApi,
       spotAccountId
     } = this.props;
 
@@ -181,6 +186,7 @@ class ArticleSkeleton extends Component {
                               url,
                               isSticky,
                               allowSaveAndShare: isUserLoggedIn,
+                              saveApi,
                               savingEnabled,
                               sharingEnabled
                             })}

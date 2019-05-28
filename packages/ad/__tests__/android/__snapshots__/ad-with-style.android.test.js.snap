@@ -11,16 +11,15 @@ Array [
       <View
         className="IS2"
       >
-        <RCTWebView
+        <RNCWebView
+          allowFileAccess={false}
+          allowsFullscreenVideo={false}
+          androidHardwareAccelerationDisabled={true}
+          cacheEnabled={true}
           className="IS1"
           javaScriptEnabled={true}
           messagingEnabled={true}
-          originWhitelist={
-            Array [
-              "http://.*",
-              "https://.*",
-            ]
-          }
+          overScrollMode="always"
           saveFormDataDisabled={false}
           scalesPageToFit={true}
           thirdPartyCookiesEnabled={true}
@@ -37,16 +36,15 @@ Array [
       <View
         className="IS2"
       >
-        <RCTWebView
+        <RNCWebView
+          allowFileAccess={false}
+          allowsFullscreenVideo={false}
+          androidHardwareAccelerationDisabled={true}
+          cacheEnabled={true}
           className="IS1"
           javaScriptEnabled={true}
           messagingEnabled={true}
-          originWhitelist={
-            Array [
-              "http://.*",
-              "https://.*",
-            ]
-          }
+          overScrollMode="always"
           saveFormDataDisabled={false}
           scalesPageToFit={true}
           thirdPartyCookiesEnabled={true}

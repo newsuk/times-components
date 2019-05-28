@@ -132,11 +132,12 @@ class ArticlePage extends Component {
       <ResponsiveContext.Consumer>
         {({ isTablet }) => (
           <Context.Consumer>
-            {({ theme: { scale } }) => (
+            {({ theme: { scale, dropCapFont } }) => (
               <ArticleSkeleton
                 adConfig={adConfig}
                 analyticsStream={analyticsStream}
                 data={article}
+                dropCapFont={dropCapFont}
                 Header={this.renderHeader}
                 interactiveConfig={interactiveConfig}
                 isTablet={isTablet}

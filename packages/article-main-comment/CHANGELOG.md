@@ -3,6 +3,60 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.4](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.3.3...@times-components/article-main-comment@2.3.4) (2019-05-24)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.3.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.3.2...@times-components/article-main-comment@2.3.3) (2019-05-24)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.3.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.3.1...@times-components/article-main-comment@2.3.2) (2019-05-24)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.3.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.3.0...@times-components/article-main-comment@2.3.1) (2019-05-23)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+# [2.3.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.2.8...@times-components/article-main-comment@2.3.0) (2019-05-23)
+
+
+### Features
+
+* (Replat 6378) Fix article regressions ([#1956](https://github.com/newsuk/times-components/issues/1956)) ([fb9c3bb](https://github.com/newsuk/times-components/commit/fb9c3bb))
+
+
+
+
+
+## [2.2.8](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.2.7...@times-components/article-main-comment@2.2.8) (2019-05-23)
+
+
+### Bug Fixes
+
+* make drop caps consistent across browsers + fix two line paras ([#1987](https://github.com/newsuk/times-components/issues/1987)) ([6548b08](https://github.com/newsuk/times-components/commit/6548b08))
+
+
+
+
+
 ## [2.2.7](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.2.6...@times-components/article-main-comment@2.2.7) (2019-05-22)
 
 **Note:** Version bump only for package @times-components/article-main-comment

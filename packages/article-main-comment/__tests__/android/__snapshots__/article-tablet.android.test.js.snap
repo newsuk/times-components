@@ -87,8 +87,14 @@ exports[`1. article main comment - tablet 1`] = `
         style={
           Object {
             "alignItems": "center",
+            "borderBottomColor": "#DBDBDB",
+            "borderBottomWidth": 1,
+            "borderTopColor": "#DBDBDB",
+            "borderTopWidth": 1,
             "flexDirection": "row",
             "justifyContent": "center",
+            "paddingVertical": 10,
+            "width": "100%",
           }
         }
       >

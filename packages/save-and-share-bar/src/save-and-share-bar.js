@@ -124,6 +124,7 @@ class SaveAndShareBar extends Component {
               hoverColor={styles.svgIcon.hoverFillColour}
               articleId={articleId}
               saveApi={saveApi}
+              height={styles.svgIcon.star.height}
             />
           </View>
         )}

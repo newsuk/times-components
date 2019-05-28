@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import {
   breakpoints,
   colours,
@@ -8,17 +8,24 @@ import {
 } from "@times-components/styleguide";
 
 const dropCapFontSizes = {
-  cultureMagazine: 100,
+  cultureMagazine: 104,
   dropCap: 110,
-  stMagazine: 110,
-  styleMagazine: 110
+  stMagazine: 105,
+  styleMagazine: 103
 };
 
-const dropCapTopPaddings = {
-  cultureMagazine: { bottom: 15, top: 0 },
-  dropCap: { bottom: 0, top: 9 },
-  stMagazine: { bottom: 10, top: 0 },
-  styleMagazine: { bottom: 10, top: 0 }
+const lineHeights = {
+  cultureMagazine: 0.85,
+  dropCap: 0.55,
+  stMagazine: 0.7,
+  styleMagazine: 0.8
+};
+
+const dropCapMargins = {
+  cultureMagazine: -0.06,
+  dropCap: 0.2,
+  stMagazine: 0.065,
+  styleMagazine: -0.01
 };
 
 export const Paragraph = styled.p`
@@ -30,6 +37,13 @@ export const Paragraph = styled.p`
   margin: 0 auto ${spacing(5)};
   padding-right: ${spacing(2)};
   padding-left: ${spacing(2)};
+   
+  // Clear fix for floated dropcap
+  &:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
   @media (min-width: ${breakpoints.medium}px) {
     font-size: ${fontSizes.body}px;
@@ -44,14 +58,16 @@ export const Paragraph = styled.p`
   }
 `;
 
-export const dropCap = (font = "dropCap") => styled.span`
+export const DropCap = styled.span`
   float: left;
-  -webkit-margin-before: 11px !important;
-  padding: ${dropCapTopPaddings[font].top}px 10px ${
-  dropCapTopPaddings[font].bottom
-}px 0;
-  line-height: 0.6em;
-  font-size: ${dropCapFontSizes[font]}px;
-  font-family: "${fonts[font]}";
   color: ${colours.functional.primary};
+  padding-right: 10px;
+  line-height: 1em;
+
+  ${({ font = "dropCap" }) => css`
+    margin-top: ${dropCapMargins[font]}em;
+    line-height: ${lineHeights[font]}em;
+    font-size: ${dropCapFontSizes[font]}px;
+    font-family: "${fonts[font]}";
+  `};
 `;

@@ -8,6 +8,7 @@ import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
 import com.horcrux.svg.SvgPackage;
+import com.reactnativecommunity.webview.RNCWebViewPackage;
 import com.storybooknative.stubs.StorybookStubPackage;
 
 import java.util.Arrays;
@@ -27,7 +28,8 @@ public class MainApplication extends Application implements ReactApplication {
                     new MainReactPackage(),
                     new ComponentsPackage(),
                     new StorybookStubPackage(),
-                    new SvgPackage()
+                    new SvgPackage(),
+                    new RNCWebViewPackage()
             );
         }
 

@@ -3,6 +3,57 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.14.76](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.14.75...@times-components/android-app@0.14.76) (2019-05-24)
+
+**Note:** Version bump only for package @times-components/android-app
+
+
+
+
+
+## [0.14.75](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.14.74...@times-components/android-app@0.14.75) (2019-05-24)
+
+**Note:** Version bump only for package @times-components/android-app
+
+
+
+
+
+## [0.14.74](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.14.73...@times-components/android-app@0.14.74) (2019-05-24)
+
+**Note:** Version bump only for package @times-components/android-app
+
+
+
+
+
+## [0.14.73](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.14.72...@times-components/android-app@0.14.73) (2019-05-23)
+
+
+### Bug Fixes
+
+* Replace webview with community lib ([#1985](https://github.com/newsuk/times-components/issues/1985)) ([4c540e1](https://github.com/newsuk/times-components/commit/4c540e1))
+
+
+
+
+
+## [0.14.72](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.14.71...@times-components/android-app@0.14.72) (2019-05-23)
+
+**Note:** Version bump only for package @times-components/android-app
+
+
+
+
+
+## [0.14.71](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.14.70...@times-components/android-app@0.14.71) (2019-05-23)
+
+**Note:** Version bump only for package @times-components/android-app
+
+
+
+
+
 ## [0.14.70](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.14.69...@times-components/android-app@0.14.70) (2019-05-22)
 
 **Note:** Version bump only for package @times-components/android-app

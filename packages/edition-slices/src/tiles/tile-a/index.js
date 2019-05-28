@@ -10,11 +10,12 @@ import {
 import styles from "./styles";
 
 const TileA = ({ onPress, tile }) => (
-  <TileLink onPress={onPress} tile={tile}>
+  <TileLink onPress={onPress} tile={tile} withStar={false}>
     <TileSummary
       headlineStyle={styles.headline}
       style={styles.summaryContainer}
       tile={tile}
+      withStar
     />
     <Image
       aspectRatio={16 / 9}

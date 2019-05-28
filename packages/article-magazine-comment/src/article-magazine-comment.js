@@ -117,7 +117,7 @@ class ArticleMagazineComment extends Component {
       <ResponsiveContext.Consumer>
         {({ isTablet }) => (
           <Context.Consumer>
-            {({ theme: { scale } }) => (
+            {({ theme: { scale, dropCapFont } }) => (
               <ArticleSkeleton
                 adConfig={adConfig}
                 analyticsStream={analyticsStream}
@@ -125,6 +125,7 @@ class ArticleMagazineComment extends Component {
                 Header={this.renderHeader}
                 interactiveConfig={interactiveConfig}
                 isTablet={isTablet}
+                dropCapFont={dropCapFont}
                 onAuthorPress={onAuthorPress}
                 onCommentGuidelinesPress={onCommentGuidelinesPress}
                 onCommentsPress={onCommentsPress}

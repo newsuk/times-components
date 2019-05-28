@@ -1,5 +1,6 @@
 import React, { PureComponent } from "react";
-import { WebView, View, Linking, Platform } from "react-native";
+import { View, Linking } from "react-native";
+import { WebView } from "react-native-webview";
 import webviewEventCallbackSetup from "./utils/webview-event-callback-setup";
 import logger from "./utils/logger";
 import { propTypes, defaultProps } from "./dom-context-prop-types";
@@ -99,7 +100,8 @@ class DOMContext extends PureComponent {
         <body>
           <div></div>
           <script>
-            (${webviewEventCallbackSetup})({window, os: "${Platform.OS}"});
+            window.postMessage = function(data) {window.ReactNativeWebView.postMessage(data);};
+            (${webviewEventCallbackSetup})({window});
           </script>
           <script>
           (${init})({
@@ -113,13 +115,6 @@ class DOMContext extends PureComponent {
         </body>
       </html>
     `;
-    const postMessageBugWorkaround = Platform.select({
-      // https://github.com/facebook/react-native/issues/10865
-      ios: {
-        injectedJavaScript:
-          "window.reactBridgePostMessage = window.postMessage; window.postMessage = String(Object.hasOwnProperty).replace('hasOwnProperty', 'postMessage');"
-      }
-    });
     return (
       <View
         style={{
@@ -128,6 +123,7 @@ class DOMContext extends PureComponent {
         }}
       >
         <WebView
+          androidHardwareAccelerationDisabled
           onMessage={this.handleMessageEvent}
           onNavigationStateChange={this.handleNavigationStateChange}
           ref={ref => {
@@ -138,7 +134,6 @@ class DOMContext extends PureComponent {
             html
           }}
           style={{ backgroundColor: "transparent" }}
-          {...postMessageBugWorkaround}
         />
       </View>
     );

@@ -83,6 +83,12 @@ exports[`phone full article with style 1`] = `
         style={
           Object {
             "alignItems": "center",
+            "borderBottomColor": "#DBDBDB",
+            "borderBottomWidth": 1,
+            "borderTopColor": "#DBDBDB",
+            "borderTopWidth": 1,
+            "paddingVertical": 10,
+            "width": "100%",
           }
         }
       >
@@ -207,6 +213,12 @@ exports[`tablet full article with style 1`] = `
         style={
           Object {
             "alignItems": "center",
+            "borderBottomColor": "#DBDBDB",
+            "borderBottomWidth": 1,
+            "borderTopColor": "#DBDBDB",
+            "borderTopWidth": 1,
+            "paddingVertical": 10,
+            "width": "100%",
           }
         }
       >
