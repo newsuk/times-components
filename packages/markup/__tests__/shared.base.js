@@ -14,7 +14,9 @@ import lineBreak from "../fixtures/break.json";
 import script from "../fixtures/script.json";
 import strong from "../fixtures/strong.json";
 import subscript from "../fixtures/subscript.json";
+import subscriptWithFallback from "../fixtures/subscript-fallback.json";
 import superscript from "../fixtures/superscript.json";
+import superscriptWithFallback from "../fixtures/superscript-fallback.json";
 
 export default renderComponent => {
   const tests = [
@@ -101,9 +103,29 @@ export default renderComponent => {
       }
     },
     {
+      name: "subscript with fallback",
+      test: () => {
+        const output = renderComponent(
+          renderTree(subscriptWithFallback, coreRenderers)
+        );
+
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
       name: "superscript",
       test: () => {
         const output = renderComponent(renderTree(superscript, coreRenderers));
+
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "superscript with fallback",
+      test: () => {
+        const output = renderComponent(
+          renderTree(superscriptWithFallback, coreRenderers)
+        );
 
         expect(output).toMatchSnapshot();
       }

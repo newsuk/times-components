@@ -70,7 +70,7 @@ export default ({ fontFamily, Bold, Italic, Body }) => ({
       };
     }
     return {
-      element: new Markup.StyledText({
+      element: new Markup.Styled({
         children: renderedChildren,
         style: new Markup.TextStyle({
           size: 10
@@ -87,7 +87,7 @@ export default ({ fontFamily, Bold, Italic, Body }) => ({
       };
     }
     return {
-      element: new Markup.StyledText({
+      element: new Markup.Styled({
         children: renderedChildren,
         style: new Markup.TextStyle({
           size: 10
