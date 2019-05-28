@@ -2,7 +2,7 @@
 set -e
 
 VERBOSE=0
-ASSET_REPO="git@github.com:newsuk/times-components-ios-artifacts.git"
+ASSET_REPO="https://${GH_TOKEN}@github.com/newsuk/times-components-ios-artifacts.git"
 
 function logError () {
     echo "$@" >&4
