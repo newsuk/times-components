@@ -33,7 +33,7 @@
     "ios": "react-native run-ios --no-packager",
     "ios:logs": "yarn ios && react-native log-ios",
     "ios:app": "cd ios-app && yarn start",
-    "ios:publish-lib": "./lib/publish-ios-assets.sh",
+    "ios:publish-lib": "./lib/publish-ios-assets.sh -v",
     "ios:build-lib": "yarn ios:build-lib:js && cd ios-app && yarn build",
     "ios:build-lib:js": "mkdir -p ios-app/ios-assets/js && mkdir -p ios-app/ios-assets/res && react-native bundle --platform ios --dev false --entry-file ios-app/index.ios.js --bundle-output ios-app/ios-assets/js/index.ios.bundle --assets-dest ios-app/ios-assets/res/",
     "start-emulator": "./lib/start_android_emulator.sh",
