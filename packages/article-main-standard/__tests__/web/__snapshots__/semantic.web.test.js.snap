@@ -204,22 +204,22 @@ exports[`1. a full article with an image as the lead asset 1`] = `
     </svg>
   </a>
   Save  
-  <svg
-    height="100%"
-    viewBox="0 0 32 32"
-    width="100%"
-  >
-    <circle
-      cx="16"
-      cy="16"
-      r="14"
-    />
-    <circle
-      cx="16"
-      cy="16"
-      r="14"
-    />
-  </svg>
+  <a>
+    <svg
+      aria-label="[title]"
+      height={18}
+      role="img"
+      viewBox="0 0 21 20"
+      width={18}
+    >
+      <title>
+        Save to My Articles
+      </title>
+      <path
+        d="9ff663b012becce62bbdc88ff3a5e330"
+      />
+    </svg>
+  </a>
   <img
     alt=""
     src="https://image.io?resize=100"
