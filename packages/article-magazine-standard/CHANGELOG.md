@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.3.8](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.3.7...@times-components/article-magazine-standard@3.3.8) (2019-05-29)
+
+
+### Bug Fixes
+
+* save/share bar appearance when sticky; fix performance of becomi… ([#1995](https://github.com/newsuk/times-components/issues/1995)) ([5e34c02](https://github.com/newsuk/times-components/commit/5e34c02))
+
+
+
+
+
 ## [3.3.7](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.3.6...@times-components/article-magazine-standard@3.3.7) (2019-05-29)
 
 **Note:** Version bump only for package @times-components/article-magazine-standard
