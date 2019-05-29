@@ -29,6 +29,7 @@ const styles = {
       line-height: 45px;
       height: 40px;
       width: 40px;
+      cursor: pointer;
 
       &:hover {
         background-color: ${colours.functional.whiteGrey};

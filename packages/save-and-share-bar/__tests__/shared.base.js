@@ -4,6 +4,7 @@ import saveApi from "@times-components/save-star-web/mock-save-api";
 import { Clipboard } from "react-native";
 import "./mocks";
 import { delay } from "@times-components/test-utils";
+import mockGetTokenisedArticleUrl from "../src/utils/mock-get-tokenised-article-url";
 import BarItem from "../src/bar-item";
 import SaveAndShareBar from "../src/save-and-share-bar";
 
@@ -13,15 +14,6 @@ export default () => {
     const articleId = "96508c84-6611-11e9-adc2-05e1b87efaea";
     const articleUrl = "https://www.thetimes.co.uk/";
     const articleHeadline = "test-headline";
-    const mockGetTokenisedArticleUrl = id =>
-      Promise.resolve({
-        data: {
-          article: {
-            tokenisedUrl: `https://www.thetimes.co.uk/article/${id}?shareToken=333310c5af52a3c6e467e3b15516c950`
-          }
-        },
-        loading: false
-      });
 
     let testInstance = null;
 

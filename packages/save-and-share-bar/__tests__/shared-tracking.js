@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import TestRenderer from "react-test-renderer";
 import mockSaveApi from "@times-components/save-star-web/mock-save-api";
 import PropTypes from "prop-types";
+import mockGetTokenisedArticleUrl from "../src/utils/mock-get-tokenised-article-url";
 import "./mocks";
 import BarItem from "../src/bar-item";
 import SaveAndShareBar from "../src/save-and-share-bar";
@@ -59,6 +60,7 @@ export default () => {
           onShareOnFB={onShareOnFB}
           onShareOnTwitter={onShareOnTwitter}
           saveApi={mockSaveApi}
+          getTokenisedShareUrl={mockGetTokenisedArticleUrl}
           sharingEnabled
           savingEnabled
         />
@@ -97,6 +99,18 @@ export default () => {
 
       expect(call).toMatchSnapshot();
       expect(onCopyLink.mock.calls).toMatchSnapshot("onCopyLink");
+    });
+
+    it("when press share article url by email", () => {
+      const copyToClipboardBarItem = testInstance.root.findAllByType(
+        BarItem
+      )[0];
+      copyToClipboardBarItem.props.onPress();
+
+      const [[call]] = stream.mock.calls;
+
+      expect(call).toMatchSnapshot();
+      expect(onCopyLink.mock.calls).toMatchSnapshot("getTokenisedShareUrl");
     });
   });
 };

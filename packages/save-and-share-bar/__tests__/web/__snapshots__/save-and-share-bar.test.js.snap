@@ -165,6 +165,7 @@ exports[`save and share bar component email icon with loading state while networ
     <SaveStarWeb
       articleId="96508c84-6611-11e9-adc2-05e1b87efaea"
       colour="#696969"
+      height={18}
       hoverColor="#1D1D1B"
       saveApi={
         Object {
