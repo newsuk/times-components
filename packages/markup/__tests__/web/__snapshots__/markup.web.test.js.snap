@@ -67,13 +67,25 @@ exports[`10. subscript 1`] = `
 </sub>
 `;
 
-exports[`11. superscript 1`] = `
+exports[`11. subscript with fallback 1`] = `
+<sub>
+  without unicode support
+</sub>
+`;
+
+exports[`12. superscript 1`] = `
 <sup>
   2
 </sup>
 `;
 
-exports[`12. does not render a script tag 1`] = `
+exports[`13. superscript with fallback 1`] = `
+<sup>
+  without unicode support
+</sup>
+`;
+
+exports[`14. does not render a script tag 1`] = `
 <div
   className="css-view-1dbjc4n"
 />

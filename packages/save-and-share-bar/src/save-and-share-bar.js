@@ -20,10 +20,22 @@ class SaveAndShareBar extends Component {
     super(props);
     this.copyToClipboard = this.copyToClipboard.bind(this);
     this.handleOnShareEmailPress = this.handleOnShareEmailPress.bind(this);
+    this.onSaveButtonPress = this.onSaveButtonPress.bind(this);
 
     this.state = {
       isLoading: false
     };
+  }
+
+  onSaveButtonPress(evt, savedStatus, saveUnsaveBookmark) {
+    evt.preventDefault();
+    const { saveApi } = this.props;
+
+    if (savedStatus) {
+      saveUnsaveBookmark(saveApi.unBookmark, false, true);
+    } else {
+      saveUnsaveBookmark(saveApi.bookmark, true, false);
+    }
   }
 
   copyToClipboard() {
@@ -56,6 +68,7 @@ class SaveAndShareBar extends Component {
   render() {
     const {
       articleId,
+      articleHeadline,
       articleUrl,
       savingEnabled,
       sharingEnabled,
@@ -123,8 +136,10 @@ class SaveAndShareBar extends Component {
               colour={styles.svgIcon.save.strokeColour}
               hoverColor={styles.svgIcon.hoverFillColour}
               articleId={articleId}
+              articleHeadline={articleHeadline}
               saveApi={saveApi}
               height={styles.svgIcon.star.height}
+              onSaveButtonPress={this.onSaveButtonPress}
             />
           </View>
         )}
