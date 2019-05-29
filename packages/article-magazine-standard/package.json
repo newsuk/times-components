@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-magazine-standard",
-  "version": "3.3.5",
+  "version": "3.3.6",
   "description": "Magazine Standard Article Template",
   "main": "dist/article-magazine-standard",
   "dev": "src/article-magazine-standard",
@@ -66,7 +66,7 @@
     "@times-components/article-flag": "2.6.40",
     "@times-components/article-label": "2.3.81",
     "@times-components/article-lead-asset": "1.1.50",
-    "@times-components/article-skeleton": "1.7.5",
+    "@times-components/article-skeleton": "1.7.6",
     "@times-components/caption": "3.0.35",
     "@times-components/context": "1.0.13",
     "@times-components/date-publication": "0.20.65",
