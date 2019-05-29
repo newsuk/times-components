@@ -76,8 +76,7 @@ export default () => {
 
       const mailtoUrl = `mailto:?subject=${articleHeadline} from The Times&body=I thought you would be interested in this story from The Times%0A%0A${articleHeadline}%0A%0A${url}`;
 
-      testInstance.root.findAllByType(BarItem)[0].props.onPress();
-      await delay(100);
+      await testInstance.root.findAllByType(BarItem)[0].props.onPress();
       expect(window.location.assign).toBeCalledWith(mailtoUrl);
     });
   });

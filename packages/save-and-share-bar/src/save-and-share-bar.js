@@ -51,8 +51,8 @@ class SaveAndShareBar extends Component {
 
     getTokenisedShareUrl(articleId)
       .then(res => {
-        const { loading, data } = res;
-        if (!loading) {
+        const { data } = res;
+        if (data) {
           this.setState({ isLoading: false });
           const { url } = data.article.tokenisedUrl;
           const mailtoEmailUrl = `mailto:?subject=${articleHeadline} from The Times&body=I thought you would be interested in this story from The Times%0A%0A${articleHeadline}%0A%0A${url}`;

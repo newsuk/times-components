@@ -1,10 +1,10 @@
 import articleQuery from "./article";
 import articleExtrasQuery from "./article-extras";
-import getTokenisedArticleUrlQuery from "./getTokenisedArticleUrl";
+import getTokenisedArticleUrlQuery from "./get-tokenised-article-url";
 import * as authorArticlesNoImagesQuery from "./author-articles-no-images";
 import * as authorArticlesWithImagesQuery from "./author-articles-with-images";
 import authorQuery from "./author";
-import getBookmarksQuery from "./getBookmarks";
+import getBookmarksQuery from "./get-bookmarks";
 import saveBookmarksQuery from "./save-bookmark";
 import unsaveBookmarksQuery from "./unsave-bookmark";
 import editionQuery from "./edition";
