@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StickySaveAndShareBar renders 1`] = `
+<StickySaveAndShareBar>
+  <responsiveweb__SaveShareContainer>
+    <StyledComponent>
+      <div>
+        <responsiveweb__SaveShareInnerContainer>
+          <StyledComponent
+            forwardedRef={null}
+          >
+            <div>
+              <Component>
+                SaveAndShareBar
+              </Component>
+            </div>
+          </StyledComponent>
+        </responsiveweb__SaveShareInnerContainer>
+      </div>
+    </StyledComponent>
+  </responsiveweb__SaveShareContainer>
+</StickySaveAndShareBar>
+`;

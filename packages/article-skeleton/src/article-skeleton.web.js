@@ -1,29 +1,25 @@
 import React, { Component, Fragment } from "react";
 import Ad, { AdComposer } from "@times-components/ad";
-import SaveAndShareBar from "@times-components/save-and-share-bar";
 import ArticleExtras from "@times-components/article-extras";
 import LazyLoad from "@times-components/lazy-load";
-import { spacing, breakpoints } from "@times-components/styleguide";
+import { spacing } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import Context from "@times-components/context";
-import { saveApi as saveArticleApi } from "@times-components/save-star-web";
 import { isLoggedIn, isMeteredExpired } from "@times-components/utils";
 import ArticleBody from "./article-body/article-body";
 import {
-  articleSkeletonPropTypes,
-  articleSkeletonDefaultProps
+  articleSkeletonDefaultProps,
+  articleSkeletonPropTypes
 } from "./article-skeleton-prop-types";
 import articleTrackingContext from "./article-tracking-context";
 import insertDropcapIntoAST from "./dropcap-util";
 import {
   BodyContainer,
   HeaderAdContainer,
-  MainContainer,
-  SaveShareContainer,
-  SaveShareRefContainer,
-  isStickyAllowed
+  MainContainer
 } from "./styles/responsive";
 import Head from "./head";
+import StickySaveAndShareBar from "./sticky-save-and-share-bar";
 
 const adStyle = {
   marginBottom: 0
@@ -32,11 +28,9 @@ const adStyle = {
 class ArticleSkeleton extends Component {
   constructor(props) {
     super(props);
-    this.handleScroll = this.handleScroll.bind(this);
 
     this.state = {
-      articleWidth: null,
-      isSticky: false
+      articleWidth: null
     };
   }
 
@@ -45,65 +39,6 @@ class ArticleSkeleton extends Component {
     this.setState({
       articleWidth: this.node && this.node.clientWidth
     });
-
-    if (window && window.nuk.user.isLoggedIn) {
-      window.addEventListener("scroll", this.handleScroll);
-    }
-  }
-
-  componentWillUnmount() {
-    if (window && window.nuk.user.isLoggedIn) {
-      window.removeEventListener("scroll", this.handleScroll);
-    }
-  }
-
-  handleScroll() {
-    if (this.sticky) {
-      const offsetTop = this.sticky.getBoundingClientRect().top;
-      const isSticky = isStickyAllowed(breakpoints.huge) && offsetTop <= 1;
-
-      this.setState({ isSticky });
-    }
-  }
-
-  renderSaveAndShareBar({
-    articleId,
-    headline,
-    url,
-    isSticky,
-    allowSaveAndShare,
-    saveApi,
-    savingEnabled,
-    sharingEnabled
-  }) {
-    const saveServiceApi =
-      saveApi && saveApi.bookmark ? saveApi : saveArticleApi;
-
-    if (!allowSaveAndShare) return null;
-
-    return (
-      <SaveShareContainer isSticky={isSticky}>
-        <SaveShareRefContainer isSticky={isSticky}>
-          <div
-            ref={el => {
-              this.sticky = el;
-            }}
-          >
-            <SaveAndShareBar
-              articleId={articleId}
-              articleHeadline={headline}
-              articleUrl={url}
-              onCopyLink={() => {}}
-              onSaveToMyArticles={() => {}}
-              onShareOnEmail={() => {}}
-              saveApi={saveServiceApi}
-              savingEnabled={savingEnabled}
-              sharingEnabled={sharingEnabled}
-            />
-          </div>
-        </SaveShareRefContainer>
-      </SaveShareContainer>
-    );
   }
 
   render() {
@@ -132,7 +67,7 @@ class ArticleSkeleton extends Component {
       sharingEnabled
     } = article;
 
-    const { articleWidth, isSticky } = this.state;
+    const { articleWidth } = this.state;
     const newContent = [...content];
 
     if (newContent && newContent.length > 0) {
@@ -160,6 +95,9 @@ class ArticleSkeleton extends Component {
           {({ user }) => {
             const isUserLoggedIn = isLoggedIn(user);
             const isAllowed = isUserLoggedIn && !isMeteredExpired(user);
+            const shouldRenderSaveAndShare =
+              (savingEnabled || sharingEnabled) && isUserLoggedIn;
+
             return (
               <Fragment>
                 <Head article={article} />
@@ -180,17 +118,19 @@ class ArticleSkeleton extends Component {
                             topicsAllowed={isUserLoggedIn}
                             width={articleWidth}
                           />
-                          {(savingEnabled || sharingEnabled) &&
-                            this.renderSaveAndShareBar({
-                              articleId,
-                              headline,
-                              url,
-                              isSticky,
-                              allowSaveAndShare: isUserLoggedIn,
-                              saveApi,
-                              savingEnabled,
-                              sharingEnabled
-                            })}
+                          {shouldRenderSaveAndShare && (
+                            <StickySaveAndShareBar
+                              articleId={articleId}
+                              articleHeadline={headline}
+                              articleUrl={url}
+                              onCopyLink={() => {}}
+                              onSaveToMyArticles={() => {}}
+                              onShareOnEmail={() => {}}
+                              saveApi={saveApi}
+                              savingEnabled={savingEnabled}
+                              sharingEnabled={sharingEnabled}
+                            />
+                          )}
                           <BodyContainer>
                             <ArticleBody
                               content={newContent}
