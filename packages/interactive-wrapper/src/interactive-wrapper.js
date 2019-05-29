@@ -23,7 +23,7 @@ class InteractiveWrapper extends Component {
   constructor() {
     super();
     this.state = {
-      height: 0
+      height: 1
     };
     this.onMessage = this.onMessage.bind(this);
     this.handleNavigationStateChange = this.handleNavigationStateChange.bind(
