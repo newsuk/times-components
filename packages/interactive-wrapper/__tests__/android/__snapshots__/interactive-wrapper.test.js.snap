@@ -4,7 +4,7 @@ exports[`renders correctly 1`] = `
 <View
   style={
     Object {
-      "height": 0,
+      "height": 1,
     }
   }
 >
@@ -33,7 +33,7 @@ exports[`renders correctly 1`] = `
         Object {
           "backgroundColor": "#ffffff",
           "flex": 1,
-          "height": 0,
+          "height": 1,
           "overflow": "hidden",
         }
       }
