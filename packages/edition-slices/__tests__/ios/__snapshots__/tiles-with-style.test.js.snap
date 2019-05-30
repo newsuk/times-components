@@ -49,25 +49,7 @@ exports[`1. tile a 1`] = `
     >
       This is tile headline
     </Text>
-    <View
-      style={
-        Object {
-          "flexDirection": "row",
-          "justifyContent": "space-between",
-        }
-      }
-    >
-      <View
-        style={
-          Object {
-            "alignItems": "flex-start",
-            "width": "75%",
-          }
-        }
-      >
-        <ArticleFlags />
-      </View>
-    </View>
+    <ArticleFlags />
   </View>
   <Image
     style={
@@ -662,17 +644,7 @@ exports[`9. tile i 1`] = `
     >
       This is tile headline
     </Text>
-    <View
-      style={
-        Object {
-          "flexDirection": "column",
-        }
-      }
-    >
-      <View>
-        <ArticleFlags />
-      </View>
-    </View>
+    <ArticleFlags />
   </View>
 </Link>
 `;
@@ -888,17 +860,7 @@ exports[`13. tile m 1`] = `
     >
       Three Conservative MPs resign
     </Text>
-    <View
-      style={
-        Object {
-          "flexDirection": "column",
-        }
-      }
-    >
-      <View>
-        <ArticleFlags />
-      </View>
-    </View>
+    <ArticleFlags />
   </View>
 </Link>
 `;
@@ -1106,17 +1068,7 @@ exports[`16. tile p 1`] = `
     >
       Three Conservative MPs resign
     </Text>
-    <View
-      style={
-        Object {
-          "flexDirection": "column",
-        }
-      }
-    >
-      <View>
-        <ArticleFlags />
-      </View>
-    </View>
+    <ArticleFlags />
     <Text>
       <Text
         style={
@@ -1440,25 +1392,7 @@ exports[`21. tile u 1`] = `
     >
       This is tile headline
     </Text>
-    <View
-      style={
-        Object {
-          "flexDirection": "row",
-          "justifyContent": "space-between",
-        }
-      }
-    >
-      <View
-        style={
-          Object {
-            "alignItems": "flex-start",
-            "width": "75%",
-          }
-        }
-      >
-        <ArticleFlags />
-      </View>
-    </View>
+    <ArticleFlags />
   </View>
   <Image
     style={
@@ -1600,25 +1534,7 @@ exports[`23. tile w 1`] = `
         ...
       </Text>
     </Text>
-    <View
-      style={
-        Object {
-          "flexDirection": "row",
-          "justifyContent": "space-between",
-        }
-      }
-    >
-      <View
-        style={
-          Object {
-            "alignItems": "flex-start",
-            "width": "75%",
-          }
-        }
-      >
-        <ArticleFlags />
-      </View>
-    </View>
+    <ArticleFlags />
   </View>
   <Image
     style={
@@ -1774,25 +1690,7 @@ exports[`25. tile y 1`] = `
         ...
       </Text>
     </Text>
-    <View
-      style={
-        Object {
-          "flexDirection": "row",
-          "justifyContent": "space-between",
-        }
-      }
-    >
-      <View
-        style={
-          Object {
-            "alignItems": "flex-start",
-            "width": "75%",
-          }
-        }
-      >
-        <ArticleFlags />
-      </View>
-    </View>
+    <ArticleFlags />
   </View>
 </Link>
 `;
@@ -1839,25 +1737,7 @@ exports[`26. tile z 1`] = `
     >
       This is tile headline
     </Text>
-    <View
-      style={
-        Object {
-          "flexDirection": "row",
-          "justifyContent": "space-between",
-        }
-      }
-    >
-      <View
-        style={
-          Object {
-            "alignItems": "flex-start",
-            "width": "75%",
-          }
-        }
-      >
-        <ArticleFlags />
-      </View>
-    </View>
+    <ArticleFlags />
   </View>
   <Image />
 </Link>
