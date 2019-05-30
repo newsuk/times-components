@@ -454,7 +454,6 @@ exports[`full article with style 1`] = `
 
 .IS3 {
   z-index: 999;
-  position: sticky;
   top: 0;
 }
 
@@ -582,7 +581,7 @@ exports[`full article with style 1`] = `
       className="c10 IS2"
     />
     <div
-      className="c11 IS3"
+      className="tc-sticky-container c11 IS3"
     >
       <div
         className="c12 c13"
@@ -1138,7 +1137,6 @@ exports[`full article with style in the culture magazine 1`] = `
 
 .IS5 {
   z-index: 999;
-  position: sticky;
   top: 0;
 }
 
@@ -1266,7 +1264,7 @@ exports[`full article with style in the culture magazine 1`] = `
       className="c10 IS4"
     />
     <div
-      className="c11 IS5"
+      className="tc-sticky-container c11 IS5"
     >
       <div
         className="c12 c13"
@@ -1822,7 +1820,6 @@ exports[`full article with style in the style magazine 1`] = `
 
 .IS5 {
   z-index: 999;
-  position: sticky;
   top: 0;
 }
 
@@ -1950,7 +1947,7 @@ exports[`full article with style in the style magazine 1`] = `
       className="c10 IS4"
     />
     <div
-      className="c11 IS5"
+      className="tc-sticky-container c11 IS5"
     >
       <div
         className="c12 c13"
@@ -2506,7 +2503,6 @@ exports[`full article with style in the sunday times magazine 1`] = `
 
 .IS5 {
   z-index: 999;
-  position: sticky;
   top: 0;
 }
 
@@ -2634,7 +2630,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
       className="c10 IS4"
     />
     <div
-      className="c11 IS5"
+      className="tc-sticky-container c11 IS5"
     >
       <div
         className="c12 c13"

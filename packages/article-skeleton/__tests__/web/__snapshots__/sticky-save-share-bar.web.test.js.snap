@@ -2,11 +2,12 @@
 
 exports[`StickySaveAndShareBar renders 1`] = `
 <StickySaveAndShareBar>
-  <WithStickyContext(UnwrappedSticky)>
-    <UnwrappedSticky>
+  <WithStickyContext(Sticky)>
+    <Sticky>
       <responsiveweb__SaveShareContainer>
         <StyledComponent>
           <div>
+            <GlobalStyleComponent />
             <responsiveweb__SaveShareInnerContainer>
               <StyledComponent
                 forwardedRef={null}
@@ -21,7 +22,7 @@ exports[`StickySaveAndShareBar renders 1`] = `
           </div>
         </StyledComponent>
       </responsiveweb__SaveShareContainer>
-    </UnwrappedSticky>
-  </WithStickyContext(UnwrappedSticky)>
+    </Sticky>
+  </WithStickyContext(Sticky)>
 </StickySaveAndShareBar>
 `;

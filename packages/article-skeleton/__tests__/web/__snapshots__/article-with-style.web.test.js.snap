@@ -315,7 +315,6 @@ exports[`full article with style 1`] = `
 
 .IS2 {
   z-index: 999;
-  position: sticky;
   top: 0;
 }
 
@@ -366,7 +365,7 @@ exports[`full article with style 1`] = `
     className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
   >
     <div
-      className="c2 IS2"
+      className="tc-sticky-container c2 IS2"
     >
       <div
         className="c3 c4"

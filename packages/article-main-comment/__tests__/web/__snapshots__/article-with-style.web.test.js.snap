@@ -448,7 +448,6 @@ exports[`full article with style 1`] = `
 
 .IS2 {
   z-index: 999;
-  position: sticky;
   top: 0;
 }
 
@@ -578,7 +577,7 @@ exports[`full article with style 1`] = `
       </div>
     </div>
     <div
-      className="c11 IS2"
+      className="tc-sticky-container c11 IS2"
     >
       <div
         className="c12 c13"

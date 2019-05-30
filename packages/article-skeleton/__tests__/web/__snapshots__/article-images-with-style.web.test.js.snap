@@ -145,7 +145,6 @@ exports[`1. a primary image 1`] = `
 
 .IS2 {
   z-index: 999;
-  position: sticky;
   top: 0;
 }
 </style>
@@ -163,7 +162,7 @@ exports[`1. a primary image 1`] = `
     className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
   >
     <div
-      className="c2 IS2"
+      className="tc-sticky-container c2 IS2"
     >
       <div
         className="c3 c4"
@@ -311,7 +310,6 @@ exports[`2. a fullwidth image 1`] = `
 
 .IS2 {
   z-index: 999;
-  position: sticky;
   top: 0;
 }
 </style>
@@ -329,7 +327,7 @@ exports[`2. a fullwidth image 1`] = `
     className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
   >
     <div
-      className="c2 IS2"
+      className="tc-sticky-container c2 IS2"
     >
       <div
         className="c3 c4"
@@ -501,7 +499,6 @@ exports[`3. a secondary image 1`] = `
 
 .IS2 {
   z-index: 999;
-  position: sticky;
   top: 0;
 }
 </style>
@@ -519,7 +516,7 @@ exports[`3. a secondary image 1`] = `
     className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
   >
     <div
-      className="c2 IS2"
+      className="tc-sticky-container c2 IS2"
     >
       <div
         className="c3 c4"
@@ -696,7 +693,6 @@ exports[`4. an inline image 1`] = `
 
 .IS2 {
   z-index: 999;
-  position: sticky;
   top: 0;
 }
 </style>
@@ -714,7 +710,7 @@ exports[`4. an inline image 1`] = `
     className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
   >
     <div
-      className="c2 IS2"
+      className="tc-sticky-container c2 IS2"
     >
       <div
         className="c3 c4"
