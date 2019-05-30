@@ -49,7 +49,8 @@ class ArticleSkeleton extends Component {
       Header,
       receiveChildList,
       saveApi,
-      spotAccountId
+      spotAccountId,
+      paidContentClassName
     } = this.props;
 
     const {
@@ -138,6 +139,7 @@ class ArticleSkeleton extends Component {
                               observed={observed}
                               registerNode={registerNode}
                               section={section}
+                              paidContentClassName={paidContentClassName}
                             />
                             <ArticleExtras
                               analyticsStream={analyticsStream}

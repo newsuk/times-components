@@ -22,7 +22,8 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     mapArticleToAdConfig,
     spotAccountId,
     getCookieValue,
-    userState
+    userState,
+    paidContentClassName
   } = data;
 
   return React.createElement(
@@ -65,7 +66,8 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
               onRelatedArticlePress: () => {},
               onTopicPress: () => {},
               refetch,
-              spotAccountId
+              spotAccountId,
+              paidContentClassName
             })
           )
       )

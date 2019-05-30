@@ -39,7 +39,7 @@ export const responsiveDisplayWrapper = displayType => {
   }
 };
 
-const renderers = ({ observed, registerNode }) => ({
+const renderers = ({ observed, registerNode, paidContentClassName }) => ({
   ...coreRenderers,
   ad(key, attributes) {
     return {
@@ -129,7 +129,7 @@ const renderers = ({ observed, registerNode }) => ({
   paywall(key, attributes, children) {
     return {
       element: (
-        <span className="paywall" key={key}>
+        <span className={paidContentClassName} key={key}>
           {children}
         </span>
       )
@@ -213,11 +213,12 @@ const ArticleBody = ({
   contextUrl,
   observed,
   registerNode,
-  section
+  section,
+  paidContentClassName
 }) =>
   renderTrees(
     bodyContent.map(decorateAd({ contextUrl, section })),
-    renderers({ observed, registerNode })
+    renderers({ observed, registerNode, paidContentClassName })
   );
 
 ArticleBody.propTypes = {
