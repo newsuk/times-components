@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. a primary image 1`] = `
-.c5 {
+.c6 {
   width: 100%;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -17,34 +17,33 @@ exports[`1. a primary image 1`] = `
   display: none;
 }
 
-.c4 {
+.c5 {
   display: block;
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
+.c4 {
+  position: relative;
+  padding: 0 10px;
+}
+
 .c2 {
   background-color: #FFFFFF;
   height: 55px;
-  margin: 30px 10px;
-}
-
-.c3 {
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-  border-color: #DBDBDB;
+  margin: 30px 0;
 }
 
 @media (min-width:768px) {
-  .c5 {
+  .c6 {
     width: 80.8%;
     margin: 0 auto;
   }
 }
 
 @media (min-width:1024px) {
-  .c5 {
+  .c6 {
     width: 56.2%;
   }
 }
@@ -70,6 +69,20 @@ exports[`1. a primary image 1`] = `
   }
 }
 
+@media (min-width:768px) {
+  .c4 {
+    width: 80.8%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+@media (min-width:1024px) {
+  .c4 {
+    width: 56.2%;
+  }
+}
+
 @media (max-width:1320px) {
   .c2 {
     position: -webkit-sticky;
@@ -78,19 +91,48 @@ exports[`1. a primary image 1`] = `
     top: 0;
     z-index: 999;
   }
-}
 
-@media (min-width:768px) {
-  .c3 {
-    width: 80.8%;
-    margin-left: auto !important;
-    margin-right: auto !important;
+  .c2.sticky {
+    width: 100% !important;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.3);
+  }
+
+  .c2:not(.sticky) .c3:before,
+  .c2:not(.sticky) .c3:after {
+    content: "";
+    height: 1px;
+    background-color: #DBDBDB;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+  }
+
+  .c2:not(.sticky) .c3:before {
+    top: 0;
+  }
+
+  .c2:not(.sticky) .c3:after {
+    bottom: 0;
   }
 }
 
-@media (min-width:1024px) {
-  .c3 {
-    width: 56.2%;
+@media (min-width:1321px) {
+  .c2 .c3:before,
+  .c2 .c3:after {
+    content: "";
+    height: 1px;
+    background-color: #DBDBDB;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+  }
+
+  .c2 .c3:before {
+    top: 0;
+  }
+
+  .c2 .c3:after {
+    bottom: 0;
   }
 }
 
@@ -113,22 +155,20 @@ exports[`1. a primary image 1`] = `
     className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
   >
     <div
-      className="c2 responsiveweb__SaveShareContainer-sc-1exejum-3 c2 css-view-1dbjc4n"
+      className="c2"
     >
       <div
-        className="c3 responsiveweb__SaveShareRefContainer-sc-1exejum-4 c3 css-view-1dbjc4n"
+        className="c3 c4"
       >
-        <div>
-          <SaveAndShareBar />
-        </div>
+        <SaveAndShareBar />
       </div>
     </div>
     <div
-      className="c4 responsiveweb__BodyContainer-sc-1exejum-2 c4 css-view-1dbjc4n"
+      className="c5 responsiveweb__BodyContainer-sc-1exejum-2 c5 css-view-1dbjc4n"
     >
       <div>
         <div
-          className="c5 responsiveweb__PrimaryImg-sc-16nqyj8-5 c5 css-view-1dbjc4n"
+          className="c6 responsiveweb__PrimaryImg-sc-16nqyj8-5 c6 css-view-1dbjc4n"
         >
           <ArticleImage />
         </div>
@@ -148,23 +188,22 @@ exports[`2. a fullwidth image 1`] = `
   display: none;
 }
 
-.c4 {
+.c5 {
   display: block;
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
+.c4 {
+  position: relative;
+  padding: 0 10px;
+}
+
 .c2 {
   background-color: #FFFFFF;
   height: 55px;
-  margin: 30px 10px;
-}
-
-.c3 {
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-  border-color: #DBDBDB;
+  margin: 30px 0;
 }
 
 @media (min-width:1024px) {
@@ -188,6 +227,20 @@ exports[`2. a fullwidth image 1`] = `
   }
 }
 
+@media (min-width:768px) {
+  .c4 {
+    width: 80.8%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+@media (min-width:1024px) {
+  .c4 {
+    width: 56.2%;
+  }
+}
+
 @media (max-width:1320px) {
   .c2 {
     position: -webkit-sticky;
@@ -196,19 +249,48 @@ exports[`2. a fullwidth image 1`] = `
     top: 0;
     z-index: 999;
   }
-}
 
-@media (min-width:768px) {
-  .c3 {
-    width: 80.8%;
-    margin-left: auto !important;
-    margin-right: auto !important;
+  .c2.sticky {
+    width: 100% !important;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.3);
+  }
+
+  .c2:not(.sticky) .c3:before,
+  .c2:not(.sticky) .c3:after {
+    content: "";
+    height: 1px;
+    background-color: #DBDBDB;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+  }
+
+  .c2:not(.sticky) .c3:before {
+    top: 0;
+  }
+
+  .c2:not(.sticky) .c3:after {
+    bottom: 0;
   }
 }
 
-@media (min-width:1024px) {
-  .c3 {
-    width: 56.2%;
+@media (min-width:1321px) {
+  .c2 .c3:before,
+  .c2 .c3:after {
+    content: "";
+    height: 1px;
+    background-color: #DBDBDB;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+  }
+
+  .c2 .c3:before {
+    top: 0;
+  }
+
+  .c2 .c3:after {
+    bottom: 0;
   }
 }
 
@@ -231,18 +313,16 @@ exports[`2. a fullwidth image 1`] = `
     className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
   >
     <div
-      className="c2 responsiveweb__SaveShareContainer-sc-1exejum-3 c2 css-view-1dbjc4n"
+      className="c2"
     >
       <div
-        className="c3 responsiveweb__SaveShareRefContainer-sc-1exejum-4 c3 css-view-1dbjc4n"
+        className="c3 c4"
       >
-        <div>
-          <SaveAndShareBar />
-        </div>
+        <SaveAndShareBar />
       </div>
     </div>
     <div
-      className="c4 responsiveweb__BodyContainer-sc-1exejum-2 c4 css-view-1dbjc4n"
+      className="c5 responsiveweb__BodyContainer-sc-1exejum-2 c5 css-view-1dbjc4n"
     >
       <div>
         <ArticleImage />
@@ -254,7 +334,7 @@ exports[`2. a fullwidth image 1`] = `
 `;
 
 exports[`3. a secondary image 1`] = `
-.c5 {
+.c6 {
   width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -275,27 +355,26 @@ exports[`3. a secondary image 1`] = `
   display: none;
 }
 
-.c4 {
+.c5 {
   display: block;
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
+.c4 {
+  position: relative;
+  padding: 0 10px;
+}
+
 .c2 {
   background-color: #FFFFFF;
   height: 55px;
-  margin: 30px 10px;
-}
-
-.c3 {
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-  border-color: #DBDBDB;
+  margin: 30px 0;
 }
 
 @media (min-width:768px) {
-  .c5 {
+  .c6 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -304,7 +383,7 @@ exports[`3. a secondary image 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c5 {
+  .c6 {
     width: 56.2%;
   }
 }
@@ -330,6 +409,20 @@ exports[`3. a secondary image 1`] = `
   }
 }
 
+@media (min-width:768px) {
+  .c4 {
+    width: 80.8%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+@media (min-width:1024px) {
+  .c4 {
+    width: 56.2%;
+  }
+}
+
 @media (max-width:1320px) {
   .c2 {
     position: -webkit-sticky;
@@ -338,19 +431,48 @@ exports[`3. a secondary image 1`] = `
     top: 0;
     z-index: 999;
   }
-}
 
-@media (min-width:768px) {
-  .c3 {
-    width: 80.8%;
-    margin-left: auto !important;
-    margin-right: auto !important;
+  .c2.sticky {
+    width: 100% !important;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.3);
+  }
+
+  .c2:not(.sticky) .c3:before,
+  .c2:not(.sticky) .c3:after {
+    content: "";
+    height: 1px;
+    background-color: #DBDBDB;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+  }
+
+  .c2:not(.sticky) .c3:before {
+    top: 0;
+  }
+
+  .c2:not(.sticky) .c3:after {
+    bottom: 0;
   }
 }
 
-@media (min-width:1024px) {
-  .c3 {
-    width: 56.2%;
+@media (min-width:1321px) {
+  .c2 .c3:before,
+  .c2 .c3:after {
+    content: "";
+    height: 1px;
+    background-color: #DBDBDB;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+  }
+
+  .c2 .c3:before {
+    top: 0;
+  }
+
+  .c2 .c3:after {
+    bottom: 0;
   }
 }
 
@@ -373,22 +495,20 @@ exports[`3. a secondary image 1`] = `
     className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
   >
     <div
-      className="c2 responsiveweb__SaveShareContainer-sc-1exejum-3 c2 css-view-1dbjc4n"
+      className="c2"
     >
       <div
-        className="c3 responsiveweb__SaveShareRefContainer-sc-1exejum-4 c3 css-view-1dbjc4n"
+        className="c3 c4"
       >
-        <div>
-          <SaveAndShareBar />
-        </div>
+        <SaveAndShareBar />
       </div>
     </div>
     <div
-      className="c4 responsiveweb__BodyContainer-sc-1exejum-2 c4 css-view-1dbjc4n"
+      className="c5 responsiveweb__BodyContainer-sc-1exejum-2 c5 css-view-1dbjc4n"
     >
       <div>
         <div
-          className="c5 responsiveweb__SecondaryImg-sc-16nqyj8-6 c5 css-view-1dbjc4n"
+          className="c6 responsiveweb__SecondaryImg-sc-16nqyj8-6 c6 css-view-1dbjc4n"
         >
           <ArticleImage />
         </div>
@@ -400,7 +520,7 @@ exports[`3. a secondary image 1`] = `
 `;
 
 exports[`4. an inline image 1`] = `
-.c5 {
+.c6 {
   width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -422,27 +542,26 @@ exports[`4. an inline image 1`] = `
   display: none;
 }
 
-.c4 {
+.c5 {
   display: block;
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
+.c4 {
+  position: relative;
+  padding: 0 10px;
+}
+
 .c2 {
   background-color: #FFFFFF;
   height: 55px;
-  margin: 30px 10px;
-}
-
-.c3 {
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-  border-color: #DBDBDB;
+  margin: 30px 0;
 }
 
 @media (min-width:768px) {
-  .c5 {
+  .c6 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -451,7 +570,7 @@ exports[`4. an inline image 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c5 {
+  .c6 {
     width: 56.2%;
   }
 }
@@ -477,6 +596,20 @@ exports[`4. an inline image 1`] = `
   }
 }
 
+@media (min-width:768px) {
+  .c4 {
+    width: 80.8%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+@media (min-width:1024px) {
+  .c4 {
+    width: 56.2%;
+  }
+}
+
 @media (max-width:1320px) {
   .c2 {
     position: -webkit-sticky;
@@ -485,19 +618,48 @@ exports[`4. an inline image 1`] = `
     top: 0;
     z-index: 999;
   }
-}
 
-@media (min-width:768px) {
-  .c3 {
-    width: 80.8%;
-    margin-left: auto !important;
-    margin-right: auto !important;
+  .c2.sticky {
+    width: 100% !important;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.3);
+  }
+
+  .c2:not(.sticky) .c3:before,
+  .c2:not(.sticky) .c3:after {
+    content: "";
+    height: 1px;
+    background-color: #DBDBDB;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+  }
+
+  .c2:not(.sticky) .c3:before {
+    top: 0;
+  }
+
+  .c2:not(.sticky) .c3:after {
+    bottom: 0;
   }
 }
 
-@media (min-width:1024px) {
-  .c3 {
-    width: 56.2%;
+@media (min-width:1321px) {
+  .c2 .c3:before,
+  .c2 .c3:after {
+    content: "";
+    height: 1px;
+    background-color: #DBDBDB;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+  }
+
+  .c2 .c3:before {
+    top: 0;
+  }
+
+  .c2 .c3:after {
+    bottom: 0;
   }
 }
 
@@ -520,22 +682,20 @@ exports[`4. an inline image 1`] = `
     className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
   >
     <div
-      className="c2 responsiveweb__SaveShareContainer-sc-1exejum-3 c2 css-view-1dbjc4n"
+      className="c2"
     >
       <div
-        className="c3 responsiveweb__SaveShareRefContainer-sc-1exejum-4 c3 css-view-1dbjc4n"
+        className="c3 c4"
       >
-        <div>
-          <SaveAndShareBar />
-        </div>
+        <SaveAndShareBar />
       </div>
     </div>
     <div
-      className="c4 responsiveweb__BodyContainer-sc-1exejum-2 c4 css-view-1dbjc4n"
+      className="c5 responsiveweb__BodyContainer-sc-1exejum-2 c5 css-view-1dbjc4n"
     >
       <div>
         <div
-          className="c5 responsiveweb__InlineImg-sc-16nqyj8-7 c5 css-view-1dbjc4n"
+          className="c6 responsiveweb__InlineImg-sc-16nqyj8-7 c6 css-view-1dbjc4n"
         >
           <ArticleImage />
         </div>

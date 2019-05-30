@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.52](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.2.51...@times-components/interactive-wrapper@0.2.52) (2019-05-29)
+
+
+### Bug Fixes
+
+* Set interactives initial height to 1 ([#2000](https://github.com/newsuk/times-components/issues/2000)) ([df8a4bd](https://github.com/newsuk/times-components/commit/df8a4bd))
+
+
+
+
+
 ## [0.2.51](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.2.50...@times-components/interactive-wrapper@0.2.51) (2019-05-23)
 
 
