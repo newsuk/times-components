@@ -18,18 +18,20 @@ class MessageBar extends Component {
   }
 
   componentDidMount() {
-    const { delay } = this.props;
+    const { delay, close } = this.props;
 
     this.animateOpen(() => {});
     this.setState({
       timeout: setTimeout(() => {
-        this.animateClosed();
+        this.animateClosed(() => {
+          close();
+        });
       }, delay)
     });
   }
 
   componentWillReceiveProps(props) {
-    const { message, delay } = props;
+    const { message, delay, close } = props;
     const { message: oldMessage } = this.props;
 
     if (message === oldMessage) {
@@ -37,7 +39,9 @@ class MessageBar extends Component {
       clearTimeout(timeout);
       this.setState({
         timeout: setTimeout(() => {
-          this.animateClosed();
+          this.animateClosed(() => {
+            close();
+          });
         }, delay)
       });
     }
@@ -74,9 +78,9 @@ class MessageBar extends Component {
   }
 
   render() {
-    const { message, scale, animate } = this.props;
+    const { message, scale, animate, breakpoint } = this.props;
     const { yValue } = this.state;
-    const styles = styleFactory(scale);
+    const styles = styleFactory(scale, breakpoint);
 
     return (
       <Animated.View
@@ -93,12 +97,14 @@ class MessageBar extends Component {
           }
         }
       >
-        <View style={styles.messageBarBody}>
-          <Text style={styles.messageBarText}>{message}</Text>
-          <View style={styles.messageBarCloseButton}>
-            <TouchableOpacity onPress={this.close}>
-              <CloseIcon width="28" height="28" />
-            </TouchableOpacity>
+        <View style={styles.messageBarBodyContainer}>
+          <View style={styles.messageBarBody}>
+            <Text style={styles.messageBarText}>{message}</Text>
+            <View style={styles.messageBarCloseButton}>
+              <TouchableOpacity onPress={this.close}>
+                <CloseIcon width="28" height="28" />
+              </TouchableOpacity>
+            </View>
           </View>
         </View>
       </Animated.View>
@@ -108,6 +114,7 @@ class MessageBar extends Component {
 
 MessageBar.propTypes = {
   animate: PropTypes.bool.isRequired,
+  breakpoint: PropTypes.string.isRequired,
   close: PropTypes.func.isRequired,
   delay: PropTypes.number.isRequired,
   message: PropTypes.string.isRequired,

@@ -4,28 +4,30 @@ exports[`1. renders correctly 1`] = `
 <div>
   <div>
     <div>
-      test message
-    </div>
-    <div>
-      <div
-        tabIndex="0"
-      >
-        <svg
-          aria-label="[title]"
-          height="28"
-          role="img"
-          viewBox="0 0 28 28"
-          width="28"
+      <div>
+        test message
+      </div>
+      <div>
+        <div
+          tabIndex="0"
         >
-          <title>
-            Close Icon
-          </title>
-          <path
-            d="M15.617 14l4.683 5.838-.462.462L14 15.617 8.162 20.3l-.462-.462L12.383 14 7.7 8.162l.462-.462L14 12.383 19.838 7.7l.462.462z"
-            fill="white"
-            stroke="white"
-          />
-        </svg>
+          <svg
+            aria-label="[title]"
+            height="28"
+            role="img"
+            viewBox="0 0 28 28"
+            width="28"
+          >
+            <title>
+              Close Icon
+            </title>
+            <path
+              d="M15.617 14l4.683 5.838-.462.462L14 15.617 8.162 20.3l-.462-.462L12.383 14 7.7 8.162l.462-.462L14 12.383 19.838 7.7l.462.462z"
+              fill="white"
+              stroke="white"
+            />
+          </svg>
+        </div>
       </div>
     </div>
   </div>
