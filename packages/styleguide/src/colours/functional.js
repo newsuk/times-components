@@ -22,6 +22,7 @@ const functionalColours = {
   secondary: "#696969",
   tertiary: "#4D4D4D",
   transparentBlack: "rgba(0, 0, 0, 0.6)",
+  transparentWhite: "rgba(255, 255, 255, 0.3)",
   white: "#FFFFFF",
   whiteGrey: "#F5F5F5"
 };

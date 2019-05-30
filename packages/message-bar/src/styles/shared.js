@@ -10,14 +10,13 @@ const messageBarBody = {
   height,
   flexGrow: 1,
   flexShrink: 0,
-  marginLeft: "auto",
-  marginRight: "auto"
+  marginHorizontal: "auto"
 };
 
 const messageBarCloseButton = {
   alignItems: "center",
-  backgroundColor: "rgba(255, 255, 255, 0.3)",
-  borderRadius: 28 / 2,
+  backgroundColor: colours.functional.transparentWhite,
+  borderRadius: 14,
   height: 28,
   justifyContent: "center",
   marginLeft: "auto",
@@ -46,12 +45,8 @@ export const sharedStyle = scale => ({
     shadowRadius: 5,
     zIndex: 10
   },
-  messageBarBody: {
-    ...messageBarBody
-  },
-  messageBarCloseButton: {
-    ...messageBarCloseButton
-  },
+  messageBarBody,
+  messageBarCloseButton,
   messageBarText: {
     ...messageBarText(scale)
   },
