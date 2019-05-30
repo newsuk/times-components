@@ -9,6 +9,7 @@ const {
   ContextProviderWithDefaults,
   defaults
 } = require("@times-components/context/rnw");
+const { StickyProvider } = require("@times-components/sticky/rnw");
 const { scales, themeFactory } = require("@times-components/styleguide/rnw");
 
 const scale = scales.large;
@@ -26,48 +27,52 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
   } = data;
 
   return React.createElement(
-    HelmetProvider,
-    { context: helmetContext },
+    StickyProvider,
+    {},
     React.createElement(
-      ApolloProvider,
-      { client },
+      HelmetProvider,
+      { context: helmetContext },
       React.createElement(
-        ArticleProvider,
-        {
-          analyticsStream,
-          debounceTimeMs,
-          id: articleId
-        },
-        ({ article, isLoading, error, refetch }) =>
-          React.createElement(
-            ContextProviderWithDefaults,
-            {
-              value: {
-                getCookieValue,
-                makeArticleUrl,
-                makeTopicUrl,
-                theme: {
-                  ...themeFactory(article.section, article.template),
-                  scale: scale || defaults.theme.scale
-                },
-                user: {
-                  isLoggedIn: userState.isLoggedIn
+        ApolloProvider,
+        { client },
+        React.createElement(
+          ArticleProvider,
+          {
+            analyticsStream,
+            debounceTimeMs,
+            id: articleId
+          },
+          ({ article, isLoading, error, refetch }) =>
+            React.createElement(
+              ContextProviderWithDefaults,
+              {
+                value: {
+                  getCookieValue,
+                  makeArticleUrl,
+                  makeTopicUrl,
+                  theme: {
+                    ...themeFactory(article.section, article.template),
+                    scale: scale || defaults.theme.scale
+                  },
+                  user: {
+                    isLoggedIn: userState.isLoggedIn
+                  }
                 }
-              }
-            },
-            React.createElement(Article, {
-              adConfig: mapArticleToAdConfig(article),
-              analyticsStream,
-              article,
-              error,
-              isLoading,
-              onAuthorPress: () => {},
-              onRelatedArticlePress: () => {},
-              onTopicPress: () => {},
-              refetch,
-              spotAccountId
-            })
-          )
+              },
+              React.createElement(Article, {
+                adConfig: mapArticleToAdConfig(article),
+                analyticsStream,
+                article,
+                error,
+                isLoading,
+                onAuthorPress: () => {},
+                onRelatedArticlePress: () => {},
+                onTopicPress: () => {},
+                refetch,
+                spotAccountId
+              })
+            )
+        )
       )
     )
   );

@@ -85,8 +85,6 @@ exports[`1. a primary image 1`] = `
 
 @media (max-width:1320px) {
   .c2 {
-    position: -webkit-sticky;
-    position: sticky;
     left: 0;
     top: 0;
     z-index: 999;
@@ -117,6 +115,10 @@ exports[`1. a primary image 1`] = `
 }
 
 @media (min-width:1321px) {
+  .c2 {
+    position: static !important;
+  }
+
   .c2 .c3:before,
   .c2 .c3:after {
     content: "";
@@ -140,6 +142,12 @@ exports[`1. a primary image 1`] = `
 .IS1 {
   margin-bottom: 0;
 }
+
+.IS2 {
+  z-index: 999;
+  position: sticky;
+  top: 0;
+}
 </style>
 
 <article>
@@ -155,7 +163,7 @@ exports[`1. a primary image 1`] = `
     className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
   >
     <div
-      className="c2"
+      className="c2 IS2"
     >
       <div
         className="c3 c4"
@@ -243,8 +251,6 @@ exports[`2. a fullwidth image 1`] = `
 
 @media (max-width:1320px) {
   .c2 {
-    position: -webkit-sticky;
-    position: sticky;
     left: 0;
     top: 0;
     z-index: 999;
@@ -275,6 +281,10 @@ exports[`2. a fullwidth image 1`] = `
 }
 
 @media (min-width:1321px) {
+  .c2 {
+    position: static !important;
+  }
+
   .c2 .c3:before,
   .c2 .c3:after {
     content: "";
@@ -298,6 +308,12 @@ exports[`2. a fullwidth image 1`] = `
 .IS1 {
   margin-bottom: 0;
 }
+
+.IS2 {
+  z-index: 999;
+  position: sticky;
+  top: 0;
+}
 </style>
 
 <article>
@@ -313,7 +329,7 @@ exports[`2. a fullwidth image 1`] = `
     className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
   >
     <div
-      className="c2"
+      className="c2 IS2"
     >
       <div
         className="c3 c4"
@@ -425,8 +441,6 @@ exports[`3. a secondary image 1`] = `
 
 @media (max-width:1320px) {
   .c2 {
-    position: -webkit-sticky;
-    position: sticky;
     left: 0;
     top: 0;
     z-index: 999;
@@ -457,6 +471,10 @@ exports[`3. a secondary image 1`] = `
 }
 
 @media (min-width:1321px) {
+  .c2 {
+    position: static !important;
+  }
+
   .c2 .c3:before,
   .c2 .c3:after {
     content: "";
@@ -480,6 +498,12 @@ exports[`3. a secondary image 1`] = `
 .IS1 {
   margin-bottom: 0;
 }
+
+.IS2 {
+  z-index: 999;
+  position: sticky;
+  top: 0;
+}
 </style>
 
 <article>
@@ -495,7 +519,7 @@ exports[`3. a secondary image 1`] = `
     className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
   >
     <div
-      className="c2"
+      className="c2 IS2"
     >
       <div
         className="c3 c4"
@@ -612,8 +636,6 @@ exports[`4. an inline image 1`] = `
 
 @media (max-width:1320px) {
   .c2 {
-    position: -webkit-sticky;
-    position: sticky;
     left: 0;
     top: 0;
     z-index: 999;
@@ -644,6 +666,10 @@ exports[`4. an inline image 1`] = `
 }
 
 @media (min-width:1321px) {
+  .c2 {
+    position: static !important;
+  }
+
   .c2 .c3:before,
   .c2 .c3:after {
     content: "";
@@ -667,6 +693,12 @@ exports[`4. an inline image 1`] = `
 .IS1 {
   margin-bottom: 0;
 }
+
+.IS2 {
+  z-index: 999;
+  position: sticky;
+  top: 0;
+}
 </style>
 
 <article>
@@ -682,7 +714,7 @@ exports[`4. an inline image 1`] = `
     className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
   >
     <div
-      className="c2"
+      className="c2 IS2"
     >
       <div
         className="c3 c4"

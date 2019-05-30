@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sticky renders with custom props 1`] = `
+<Sticky
+  Component="span"
+  className="sticky-container"
+  stickyClassName="sticky"
+  stickyContext={
+    Object {
+      "top": 0,
+    }
+  }
+  style={
+    Object {
+      "backgroundColor": "blue",
+    }
+  }
+  zIndex={333}
+>
+  <span
+    className="sticky-container tc-sticky-container"
+    style={
+      Object {
+        "backgroundColor": "blue",
+        "top": 0,
+        "zIndex": 333,
+      }
+    }
+  >
+    <GlobalStyleComponent />
+    <div />
+  </span>
+</Sticky>
+`;
+
+exports[`Sticky renders with default props 1`] = `
+<Sticky
+  Component="div"
+  stickyClassName="sticky"
+  stickyContext={
+    Object {
+      "top": 0,
+    }
+  }
+  zIndex={999}
+>
+  <div
+    className="tc-sticky-container"
+    style={
+      Object {
+        "top": 0,
+        "zIndex": 999,
+      }
+    }
+  >
+    <GlobalStyleComponent />
+  </div>
+</Sticky>
+`;
+
+exports[`Sticky renders with sticky provider using custom props 1`] = `
+<StickyProvider
+  Component="span"
+  className="provider"
+>
+  <span
+    className="provider"
+  >
+    <WithStickyContext(Sticky)>
+      <Sticky
+        Component="div"
+        stickyClassName="sticky"
+        stickyContext={
+          Object {
+            "top": 40,
+          }
+        }
+        zIndex={999}
+      >
+        <div
+          className="tc-sticky-container"
+          style={
+            Object {
+              "top": 40,
+              "zIndex": 999,
+            }
+          }
+        >
+          <GlobalStyleComponent />
+          <div />
+        </div>
+      </Sticky>
+    </WithStickyContext(Sticky)>
+  </span>
+</StickyProvider>
+`;
+
+exports[`Sticky renders with sticky provider using default props 1`] = `
+<StickyProvider
+  Component="div"
+>
+  <div>
+    <WithStickyContext(Sticky)>
+      <Sticky
+        Component="div"
+        stickyClassName="sticky"
+        stickyContext={
+          Object {
+            "top": 30,
+          }
+        }
+        zIndex={999}
+      >
+        <div
+          className="tc-sticky-container"
+          style={
+            Object {
+              "top": 30,
+              "zIndex": 999,
+            }
+          }
+        >
+          <GlobalStyleComponent />
+          <div />
+        </div>
+      </Sticky>
+    </WithStickyContext(Sticky)>
+  </div>
+</StickyProvider>
+`;
