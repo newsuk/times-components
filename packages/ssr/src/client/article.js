@@ -8,7 +8,12 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     makeTopicUrl,
     mapArticleToAdConfig
   } = window.nuk.ssr;
-  const { articleId, debounceTimeMs, spotAccountId, paidContentClassName } = window.nuk.article;
+  const {
+    articleId,
+    debounceTimeMs,
+    spotAccountId,
+    paidContentClassName
+  } = window.nuk.article;
   const { getCookieValue } = window.nuk;
 
   const data = {
