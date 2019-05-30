@@ -4,7 +4,7 @@ import saveApi from "@times-components/save-star-web/mock-save-api";
 import { Clipboard } from "react-native";
 import "./mocks";
 import { delay } from "@times-components/test-utils";
-import mockGetTokenisedArticleUrl from "../src/utils/mock-get-tokenised-article-url";
+import mockGetTokenisedArticleUrl from "../mock-get-tokenised-article-url";
 import BarItem from "../src/bar-item";
 import SaveAndShareBar from "../src/save-and-share-bar";
 

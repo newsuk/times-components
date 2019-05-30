@@ -30,7 +30,9 @@ Object {
 
 exports[`save and share tracking events when press share article url by email: getTokenisedShareUrl 1`] = `
 Array [
-  Array [],
+  Array [
+    "id-123",
+  ],
 ]
 `;
 

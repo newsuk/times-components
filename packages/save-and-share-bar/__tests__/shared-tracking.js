@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import TestRenderer from "react-test-renderer";
 import mockSaveApi from "@times-components/save-star-web/mock-save-api";
 import PropTypes from "prop-types";
-import mockGetTokenisedArticleUrl from "../src/utils/mock-get-tokenised-article-url";
+import mockGetTokenisedArticleUrl from "../mock-get-tokenised-article-url";
 import "./mocks";
 import BarItem from "../src/bar-item";
 import SaveAndShareBar from "../src/save-and-share-bar";
@@ -44,6 +44,7 @@ export default () => {
     const articleId = "id-123";
     const articleHeadline = "test-headline";
     const articleUrl = "https://www.thetimes.co.uk/";
+    const getTokenisedShareUrl = jest.fn(mockGetTokenisedArticleUrl);
 
     let stream = null;
     let testInstance = null;
@@ -60,7 +61,7 @@ export default () => {
           onShareOnFB={onShareOnFB}
           onShareOnTwitter={onShareOnTwitter}
           saveApi={mockSaveApi}
-          getTokenisedShareUrl={mockGetTokenisedArticleUrl}
+          getTokenisedShareUrl={getTokenisedShareUrl}
           sharingEnabled
           savingEnabled
         />
@@ -102,15 +103,15 @@ export default () => {
     });
 
     it("when press share article url by email", () => {
-      const copyToClipboardBarItem = testInstance.root.findAllByType(
+      const shareArticleUrlByEmailBarItem = testInstance.root.findAllByType(
         BarItem
       )[0];
-      copyToClipboardBarItem.props.onPress();
+      shareArticleUrlByEmailBarItem.props.onPress();
 
       const [[call]] = stream.mock.calls;
 
       expect(call).toMatchSnapshot();
-      expect(onCopyLink.mock.calls).toMatchSnapshot("getTokenisedShareUrl");
+      expect(getTokenisedShareUrl.mock.calls).toMatchSnapshot("getTokenisedShareUrl");
     });
   });
 };

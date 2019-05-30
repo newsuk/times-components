@@ -1,7 +1,7 @@
 import React from "react";
 import saveApi from "@times-components/save-star-web/mock-save-api-showcase";
 import SaveAndShareBar from "./src/save-and-share-bar";
-import mockGetTokenisedArticleUrl from "./src/utils/mock-get-tokenised-article-url-showcase";
+import mockGetTokenisedArticleUrl from "./mock-get-tokenised-article-url-showcase";
 
 export default {
   children: [
