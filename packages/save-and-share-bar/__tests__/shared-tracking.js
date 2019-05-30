@@ -111,7 +111,9 @@ export default () => {
       const [[call]] = stream.mock.calls;
 
       expect(call).toMatchSnapshot();
-      expect(getTokenisedShareUrl.mock.calls).toMatchSnapshot("getTokenisedShareUrl");
+      expect(getTokenisedShareUrl.mock.calls).toMatchSnapshot(
+        "getTokenisedShareUrl"
+      );
     });
   });
 };

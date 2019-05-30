@@ -35,6 +35,7 @@
   },
   "dependencies": {
     "apollo-utilities": "1.2.1",
+    "apollo-cache-inmemory": "1.5.1",
     "graphql": "14.2.1",
     "graphql-tag": "2.10.1"
   },
