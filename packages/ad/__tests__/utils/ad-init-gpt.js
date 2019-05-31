@@ -12,10 +12,10 @@ export default () => {
   it("configures googletag on page init", () => {
     const init = adInit(initOptions);
 
-    jest.spyOn(init.gpt, "scheduleSetPageTargetingValues");
+    jest.spyOn(init.gpt, "setPageTargeting");
 
     init.init();
-    expect(init.gpt.scheduleSetPageTargetingValues).toHaveBeenCalledWith({
+    expect(init.gpt.setPageTargeting).toHaveBeenCalledWith({
       pageOptionName: "pageOptionValue"
     });
   });
@@ -23,7 +23,7 @@ export default () => {
   it("sets the window.googletag global on page init", () => {
     const init = adInit(initOptions);
     delete mock.window.googletag;
-    init.gpt.setupAsync(init.utils);
+    init.gpt.init(init.utils);
     expect(mock.window.googletag).not.toBeNull();
   });
 
@@ -31,7 +31,7 @@ export default () => {
     const init = adInit(initOptions);
     const original = { data: "present" };
     mock.window.googletag = original;
-    init.gpt.setupAsync(init.utils);
+    init.gpt.init(init.utils);
     expect(mock.window.googletag).toBe(original);
   });
 
@@ -53,7 +53,8 @@ export default () => {
   it("displays all ads for web", () => {
     const init = adInit(initOptions);
 
-    init.gpt.displayAds();
+    init.gpt.refreshAd();
+    mock.processGoogletagCommandQueue();
 
     expect(mock.pubAds.refresh).toHaveBeenCalled();
   });

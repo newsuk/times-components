@@ -17,76 +17,44 @@ export default () => {
     expectFunctionToBeSelfContained(adInitOriginal);
   });
 
-  it("performs page-level setup for the first slot only", () => {
-    const init1 = adInit(initOptions);
-    const init2 = adInit(initOptions);
-
-    jest.spyOn(init1, "initPageAsync").mockReturnValue(Promise.resolve());
-    jest.spyOn(init2, "initPageAsync").mockReturnValue(Promise.resolve());
-
-    init1.init();
-    init2.init();
-
-    expect(init1.initPageAsync).toHaveBeenCalledTimes(1);
-    expect(init2.initPageAsync).toHaveBeenCalledTimes(0);
-  });
-
   it("refresh the ads on a new breakpoint", () => {
     const init1 = adInit(initOptions);
 
-    jest
-      .spyOn(init1.gpt, "scheduleSetPageTargetingValues")
-      .mockImplementation();
-    jest.spyOn(init1.gpt, "displayAds").mockImplementation();
-
-    init1.init();
-    init1.handleBreakpointChange("huge", { matches: true });
+    init1.handleBreakPointChange("huge", { matches: true });
+    mock.processGoogletagCommandQueue();
     mock.processGoogletagCommandQueue();
 
-    expect(init1.gpt.scheduleSetPageTargetingValues).toHaveBeenCalledWith({
-      breakpoint: "huge",
-      refresh: "true"
-    });
-    expect(init1.gpt.displayAds).toHaveBeenCalledTimes(1);
+    expect(mock.pubAds.setTargeting).toHaveBeenCalledTimes(2);
+    expect(mock.pubAds.setTargeting).toHaveBeenCalledWith("breakpoint", "huge");
+    expect(mock.pubAds.setTargeting).toHaveBeenCalledWith("refresh", "true");
+    expect(mock.pubAds.refresh).toHaveBeenCalledTimes(1);
   });
 
   it("do not refresh the ads if the query doesn't match", () => {
     const init1 = adInit(initOptions);
 
-    jest
-      .spyOn(init1.gpt, "scheduleSetPageTargetingValues")
-      .mockImplementation();
-    jest.spyOn(init1.gpt, "displayAds").mockImplementation();
+    jest.spyOn(init1.gpt, "refreshAd").mockImplementation();
 
-    init1.init();
-    init1.handleBreakpointChange("huge", { matches: false });
+    init1.handleBreakPointChange("huge", { matches: false });
+    mock.processGoogletagCommandQueue();
+    mock.processGoogletagCommandQueue();
 
-    expect(init1.gpt.displayAds).toHaveBeenCalledTimes(0);
+    expect(mock.pubAds.setTargeting).toHaveBeenCalledTimes(0);
+    expect(mock.pubAds.refresh).toHaveBeenCalledTimes(0);
   });
 
   it("rejects if the init hook is called twice", () => {
     const init = adInit(initOptions);
     init.init();
-    return init.init().catch(err => {
-      const expectedError = new Error("init() has already been called");
-      expect(err).toEqual(expectedError);
+    return init.init().then(err => {
+      expect(err).toEqual("skipped");
     });
   });
 
   it("reject if ads are disabled", () => {
     const init = adInit(merge(initOptions, { data: { disableAds: true } }));
-    return init.init().catch(err => {
-      const expectedError = new Error("ads disabled");
-      expect(err).toEqual(expectedError);
+    return init.init().then(err => {
+      expect(err).toEqual("skipped");
     });
-  });
-
-  it("sets element only once", () => {
-    const init = adInit(initOptions);
-    jest.spyOn(init, "initElement");
-    init.init();
-    expect(init.initElement).toHaveBeenCalledTimes(1);
-    init.init();
-    expect(init.initElement).toHaveBeenCalledTimes(1);
   });
 };

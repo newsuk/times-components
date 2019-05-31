@@ -19,7 +19,7 @@ export default () => {
     jest
       .spyOn(init.utils, "createScriptElement")
       .mockImplementation(createScriptElementImpl);
-    jest.spyOn(init.gpt, "scheduleSetPageTargetingValues");
+    jest.spyOn(init.gpt, "setPageTargeting");
 
     init.grapeshot.setupAsync(init.gpt, init.utils);
   };
@@ -28,7 +28,7 @@ export default () => {
     testGrapeshotScriptLoadResult((uri, onLoad) => {
       onLoad();
       setTimeout(() => {
-        expect(init.gpt.scheduleSetPageTargetingValues).toHaveBeenCalledWith({
+        expect(init.gpt.setPageTargeting).toHaveBeenCalledWith({
           gs_cat: mockGrapeshotResult
         });
         done();
@@ -40,7 +40,7 @@ export default () => {
     testGrapeshotScriptLoadResult((uri, onLoad, onError) => {
       onError();
       setTimeout(() => {
-        expect(init.gpt.scheduleSetPageTargetingValues).not.toHaveBeenCalled();
+        expect(init.gpt.setPageTargeting).not.toHaveBeenCalled();
         done();
       }, 0);
     });
