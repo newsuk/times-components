@@ -6,6 +6,7 @@ import { spacing } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import Context from "@times-components/context";
 import { isLoggedIn, isMeteredExpired } from "@times-components/utils";
+import { MessageContext } from "@times-components/message-bar";
 import ArticleBody from "./article-body/article-body";
 import {
   articleSkeletonDefaultProps,
@@ -119,17 +120,23 @@ class ArticleSkeleton extends Component {
                             width={articleWidth}
                           />
                           {shouldRenderSaveAndShare && (
-                            <StickySaveAndShareBar
-                              articleId={articleId}
-                              articleHeadline={headline}
-                              articleUrl={url}
-                              onCopyLink={() => {}}
-                              onSaveToMyArticles={() => {}}
-                              onShareOnEmail={() => {}}
-                              saveApi={saveApi}
-                              savingEnabled={savingEnabled}
-                              sharingEnabled={sharingEnabled}
-                            />
+                            <MessageContext.Consumer>
+                              {({ showMessage }) => (
+                                <StickySaveAndShareBar
+                                  articleId={articleId}
+                                  articleHeadline={headline}
+                                  articleUrl={url}
+                                  onCopyLink={() =>
+                                    showMessage("Article link copied")
+                                  }
+                                  onSaveToMyArticles={() => {}}
+                                  onShareOnEmail={() => {}}
+                                  saveApi={saveApi}
+                                  savingEnabled={savingEnabled}
+                                  sharingEnabled={sharingEnabled}
+                                />
+                              )}
+                            </MessageContext.Consumer>
                           )}
                           <BodyContainer>
                             <ArticleBody

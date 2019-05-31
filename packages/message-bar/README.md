@@ -14,9 +14,9 @@ const TestConsumer = () => (
 
 ...
 
-<MessageQueue animate delay={3000} scale={scales.medium}>
+<MessageManager animate delay={3000} scale={scales.medium}>
     <TestConsumer />
-</MessageQueue>
+</MessageManager>
 ```
 
 ## Contributing

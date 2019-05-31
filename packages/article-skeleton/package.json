@@ -86,6 +86,7 @@
     "@times-components/link": "3.4.13",
     "@times-components/markup": "3.3.69",
     "@times-components/markup-forest": "1.7.12",
+    "@times-components/message-bar": "0.2.8",
     "@times-components/pull-quote": "3.4.89",
     "@times-components/responsive": "0.4.38",
     "@times-components/save-and-share-bar": "0.6.2",

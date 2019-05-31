@@ -32,11 +32,11 @@ const Article = props => {
 
   const Component = templates[template] || ArticleMainStandard;
   return (
-    <MessageManager animate delay={3000} scale={scales.medium}>
-      <Responsive>
+    <Responsive>
+      <MessageManager animate delay={3000} scale={scales.medium}>
         <Component {...props} onImagePress={onImagePressArticle} />
-      </Responsive>
-    </MessageManager>
+      </MessageManager>
+    </Responsive>
   );
 };
 

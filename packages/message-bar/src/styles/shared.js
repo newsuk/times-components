@@ -2,40 +2,53 @@ import { colours, fontFactory } from "@times-components/styleguide";
 
 const height = 50;
 
-const sharedStyle = scale => ({
-  messageBarBody: {
-    alignItems: "center",
+const messageBarBody = {
+  maxWidth: 1182,
+  width: "100%",
+  flexDirection: "row",
+  alignItems: "center",
+  height,
+  flexGrow: 1,
+  flexShrink: 0,
+  marginHorizontal: "auto"
+};
+
+const messageBarCloseButton = {
+  alignItems: "center",
+  backgroundColor: colours.functional.transparentWhite,
+  borderRadius: 14,
+  height: 28,
+  justifyContent: "center",
+  marginLeft: "auto",
+  marginRight: 20,
+  width: 28
+};
+
+const messageBarText = scale => ({
+  color: colours.functional.white,
+  ...fontFactory({
+    font: "headline",
+    fontSize: "secondary",
+    scale
+  }),
+  marginLeft: 20
+});
+
+export const sharedStyle = scale => ({
+  messageBarBodyContainer: {
     backgroundColor: colours.functional.articleFlagUpdated,
-    flexDirection: "row",
-    height,
     shadowColor: "rgba(0, 0, 0, 0.2)",
     shadowOffset: {
       height: 2,
       width: 0
     },
     shadowRadius: 5,
-    flexGrow: 1,
-    flexShrink: 0,
     zIndex: 10
   },
-  messageBarCloseButton: {
-    alignItems: "center",
-    backgroundColor: "rgba(255, 255, 255, 0.3)",
-    borderRadius: 28 / 2,
-    height: 28,
-    justifyContent: "center",
-    marginLeft: "auto",
-    marginRight: 20,
-    width: 28
-  },
+  messageBarBody,
+  messageBarCloseButton,
   messageBarText: {
-    color: colours.functional.white,
-    ...fontFactory({
-      font: "headline",
-      fontSize: "secondary",
-      scale
-    }),
-    marginLeft: 20
+    ...messageBarText(scale)
   },
   messageManager: {
     flex: 1,
@@ -44,4 +57,48 @@ const sharedStyle = scale => ({
   }
 });
 
-export default sharedStyle;
+const smallBreakpointStyles = scale => ({
+  ...sharedStyle(scale),
+  messageBarCloseButton: {
+    ...messageBarCloseButton,
+    marginRight: 10
+  },
+  messageBarText: {
+    ...messageBarText(scale),
+    marginLeft: 10
+  }
+});
+
+const mediumBreakpointStyles = scale => ({
+  ...sharedStyle(scale),
+  messageBarCloseButton: {
+    ...messageBarCloseButton,
+    marginRight: 10
+  },
+  messageBarText: {
+    ...messageBarText(scale),
+    marginLeft: 60
+  }
+});
+
+const wideBreakpointStyles = scale => ({
+  ...sharedStyle(scale),
+  messageBarBody: {
+    ...messageBarBody,
+    maxWidth: 1024
+  }
+});
+
+const hugeBreakpointStyles = scale => ({
+  ...sharedStyle(scale)
+});
+
+const stylesResolver = {
+  small: smallBreakpointStyles,
+  medium: mediumBreakpointStyles,
+  wide: wideBreakpointStyles,
+  huge: hugeBreakpointStyles
+};
+
+export default (scale, breakpoint = "huge") =>
+  stylesResolver[breakpoint](scale);

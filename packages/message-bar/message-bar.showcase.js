@@ -8,8 +8,9 @@ export default {
       component: () => (
         <MessageBar
           animate
+          close={() => {}}
           delay={3000}
-          message="Test message"
+          message="Article link copied"
           scale={scales.medium}
         />
       ),
