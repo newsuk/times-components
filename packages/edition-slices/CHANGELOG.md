@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.60.3](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.60.1...@times-components/edition-slices@0.60.3) (2019-05-31)
+
+
+### Bug Fixes
+
+* replat 6625 android savestar ([#2002](https://github.com/newsuk/times-components/issues/2002)) ([b219c87](https://github.com/newsuk/times-components/commit/b219c87))
+
+
+
+
+
 ## [0.60.2](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.60.1...@times-components/edition-slices@0.60.2) (2019-05-31)
 
 

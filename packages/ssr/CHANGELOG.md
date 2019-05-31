@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.26](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.2.25...@times-components/ssr@2.2.26) (2019-05-31)
+
+
+### Bug Fixes
+
+* save share bar should stick below fixed siblings ([#2005](https://github.com/newsuk/times-components/issues/2005)) ([2c80a69](https://github.com/newsuk/times-components/commit/2c80a69))
+
+
+
+
+
 ## [2.2.25](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.2.24...@times-components/ssr@2.2.25) (2019-05-29)
 
 **Note:** Version bump only for package @times-components/ssr
