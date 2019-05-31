@@ -33,10 +33,13 @@ addSerializers(
 );
 
 const article = articleFixture({ ...testFixture });
+const paidContentClassName = "class-name";
 
 describe("Head", () => {
   it("outputs correct metadata", () => {
-    const testRenderer = TestRenderer.create(<Head article={article} />);
+    const testRenderer = TestRenderer.create(
+      <Head article={article} paidContentClassName={paidContentClassName} />
+    );
 
     expect(testRenderer).toMatchSnapshot();
   });

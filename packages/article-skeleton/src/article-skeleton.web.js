@@ -103,7 +103,10 @@ class ArticleSkeleton extends Component {
 
             return (
               <Fragment>
-                <Head article={article} />
+                <Head
+                  article={article}
+                  paidContentClassName={paidContentClassName}
+                />
                 <AdComposer adConfig={adConfig}>
                   <LazyLoad rootMargin={spacing(10)} threshold={0.5}>
                     {({ observed, registerNode }) => (
