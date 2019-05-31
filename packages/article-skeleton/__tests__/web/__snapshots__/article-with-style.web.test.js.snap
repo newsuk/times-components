@@ -408,9 +408,7 @@ exports[`full article with style 1`] = `
       <Link>
         Some Link
       </Link>
-      <span
-        className="paywall"
-      >
+      <span>
         <p
           className="c6"
         >
