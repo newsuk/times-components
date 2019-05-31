@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import TestRenderer from "react-test-renderer";
 import mockSaveApi from "@times-components/save-star-web/mock-save-api";
 import PropTypes from "prop-types";
-import mockGetTokenisedArticleUrl from "../mock-get-tokenised-article-url";
+import mockGetTokenisedArticleUrl from "./mock-get-tokenised-article-url";
 import "./mocks";
 import BarItem from "../src/bar-item";
 import SaveAndShareBar from "../src/save-and-share-bar";

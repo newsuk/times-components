@@ -3,8 +3,7 @@ import TestRenderer from "react-test-renderer";
 import saveApi from "@times-components/save-star-web/mock-save-api";
 import { Clipboard } from "react-native";
 import "./mocks";
-import { delay } from "@times-components/test-utils";
-import mockGetTokenisedArticleUrl from "../mock-get-tokenised-article-url";
+import mockGetTokenisedArticleUrl from "./mock-get-tokenised-article-url";
 import BarItem from "../src/bar-item";
 import SaveAndShareBar from "../src/save-and-share-bar";
 
@@ -62,8 +61,8 @@ export default () => {
         />
       );
 
-      testInstance.root.findAllByType(BarItem)[0].props.onPress();
-      await delay(0);
+      await testInstance.root.findAllByType(BarItem)[0].props.onPress();
+
       expect(testInstance).toMatchSnapshot();
     });
 
