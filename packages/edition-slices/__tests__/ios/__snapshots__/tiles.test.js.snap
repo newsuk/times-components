@@ -16,20 +16,16 @@ exports[`1. tile a 1`] = `
     >
       This is tile headline
     </Text>
-    <View>
-      <View>
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
-      </View>
-    </View>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
   </View>
   <Image
     aspectRatio={1.7777777777777777}
@@ -370,20 +366,16 @@ exports[`9. tile i 1`] = `
     >
       This is tile headline
     </Text>
-    <View>
-      <View>
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
-      </View>
-    </View>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
   </View>
 </Link>
 `;
@@ -526,11 +518,7 @@ exports[`13. tile m 1`] = `
     >
       Three Conservative MPs resign
     </Text>
-    <View>
-      <View>
-        <ArticleFlags />
-      </View>
-    </View>
+    <ArticleFlags />
   </View>
 </Link>
 `;
@@ -656,20 +644,16 @@ exports[`16. tile p 1`] = `
     >
       Three Conservative MPs resign
     </Text>
-    <View>
-      <View>
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
-      </View>
-    </View>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
     <Text>
       <Text>
         Richard Lloyd Parry
@@ -841,20 +825,16 @@ exports[`21. tile u 1`] = `
     >
       This is tile headline
     </Text>
-    <View>
-      <View>
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
-      </View>
-    </View>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
   </View>
   <Image
     aspectRatio={1.5}
@@ -934,20 +914,16 @@ exports[`23. tile w 1`] = `
         ...
       </Text>
     </Text>
-    <View>
-      <View>
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
-      </View>
-    </View>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
   </View>
   <Image
     aspectRatio={1.7777777777777777}
@@ -1035,20 +1011,16 @@ exports[`25. tile y 1`] = `
         ...
       </Text>
     </Text>
-    <View>
-      <View>
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
-      </View>
-    </View>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
   </View>
 </Link>
 `;
@@ -1074,20 +1046,16 @@ exports[`26. tile z 1`] = `
     >
       This is tile headline
     </Text>
-    <View>
-      <View>
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
-      </View>
-    </View>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
   </View>
   <Image
     aspectRatio={0.8}

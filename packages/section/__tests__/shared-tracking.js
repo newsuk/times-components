@@ -11,6 +11,13 @@ jest.mock("@times-components/icons", () => ({
   IconForwardArrow: "IconForwardArrow",
   IconStar: "IconStar"
 }));
+jest.mock("react-native", () => {
+  const rn = require.requireActual("react-native");
+  rn.NativeModules.SectionEvents = {
+    getSavedArticles: jest.fn().mockReturnValue(Promise.resolve(true))
+  };
+  return rn;
+});
 
 class WithTrackingContext extends Component {
   getChildContext() {
