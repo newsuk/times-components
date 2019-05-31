@@ -1,3 +1,4 @@
+import merge from "lodash.merge";
 import adInitOriginal from "../../src/utils/ad-init";
 import { makeAdInitMocks, adInit } from "../../fixtures/ad-init-mocks";
 import { expectFunctionToBeSelfContained } from "../../fixtures/check-self-contained-function";
@@ -20,28 +21,14 @@ export default () => {
     const init1 = adInit(initOptions);
     const init2 = adInit(initOptions);
 
-    jest.spyOn(init1, "doPageAdSetupAsync").mockImplementation();
-    jest.spyOn(init2, "doPageAdSetupAsync").mockImplementation();
+    jest.spyOn(init1, "initPageAsync").mockReturnValue(Promise.resolve());
+    jest.spyOn(init2, "initPageAsync").mockReturnValue(Promise.resolve());
 
     init1.init();
     init2.init();
 
-    expect(init1.doPageAdSetupAsync).toHaveBeenCalledTimes(1);
-    expect(init2.doPageAdSetupAsync).toHaveBeenCalledTimes(0);
-  });
-
-  it("performs slot-level setup for every slot", () => {
-    const init1 = adInit(initOptions);
-    const init2 = adInit(initOptions);
-
-    jest.spyOn(init1.gpt, "doSlotAdSetup").mockImplementation();
-    jest.spyOn(init2.gpt, "doSlotAdSetup").mockImplementation();
-
-    init1.init();
-    init2.init();
-
-    expect(init1.gpt.doSlotAdSetup).toHaveBeenCalledTimes(1);
-    expect(init2.gpt.doSlotAdSetup).toHaveBeenCalledTimes(1);
+    expect(init1.initPageAsync).toHaveBeenCalledTimes(1);
+    expect(init2.initPageAsync).toHaveBeenCalledTimes(0);
   });
 
   it("refresh the ads on a new breakpoint", () => {
@@ -77,21 +64,29 @@ export default () => {
     expect(init1.gpt.displayAds).toHaveBeenCalledTimes(0);
   });
 
-  it("throws if the init hook is called twice", () => {
+  it("rejects if the init hook is called twice", () => {
     const init = adInit(initOptions);
     init.init();
-    expect(() => init.init()).toThrowError(
-      new Error("init() has already been called")
-    );
+    return init.init().catch(err => {
+      const expectedError = new Error("init() has already been called");
+      expect(err).toEqual(expectedError);
+    });
   });
 
-  it("destroys all slots", () => {
+  it("reject if ads are disabled", () => {
+    const init = adInit(merge(initOptions, { data: { disableAds: true } }));
+    return init.init().catch(err => {
+      const expectedError = new Error("ads disabled");
+      expect(err).toEqual(expectedError);
+    });
+  });
+
+  it("sets element only once", () => {
     const init = adInit(initOptions);
-
-    jest.spyOn(init.gpt, "destroySlots").mockImplementation();
-
-    init.destroySlots();
-
-    expect(init.gpt.destroySlots).toHaveBeenCalledTimes(1);
+    jest.spyOn(init, "initElement");
+    init.init();
+    expect(init.initElement).toHaveBeenCalledTimes(1);
+    init.init();
+    expect(init.initElement).toHaveBeenCalledTimes(1);
   });
 };
