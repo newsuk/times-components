@@ -61,20 +61,18 @@ class MessageManager extends Component {
       <View>
         <View style={[styles.messageManager, offsetStyle]}>
           {message && (
-            <Responsive>
-              <ResponsiveContext.Consumer>
-                {({ editionBreakpoint }) => (
-                  <MessageBar
-                    animate={animate}
-                    close={this.removeMessage}
-                    delay={delay}
-                    message={message}
-                    scale={scale}
-                    breakpoint={editionBreakpoint}
-                  />
-                )}
-              </ResponsiveContext.Consumer>
-            </Responsive>
+            <ResponsiveContext.Consumer>
+              {({ editionBreakpoint }) => (
+                <MessageBar
+                  animate={animate}
+                  close={this.removeMessage}
+                  delay={delay}
+                  message={message}
+                  scale={scale}
+                  breakpoint={editionBreakpoint}
+                />
+              )}
+            </ResponsiveContext.Consumer>
           )}
         </View>
         <View onLayout={this.onLayout}>
