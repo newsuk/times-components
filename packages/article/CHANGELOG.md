@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.2.19](https://github.com/newsuk/times-components/compare/@times-components/article@7.2.18...@times-components/article@7.2.19) (2019-05-31)
+
+
+### Bug Fixes
+
+* message bar consumed and styled in web ([#2003](https://github.com/newsuk/times-components/issues/2003)) ([7c5c65e](https://github.com/newsuk/times-components/commit/7c5c65e))
+
+
+
+
+
 ## [7.2.18](https://github.com/newsuk/times-components/compare/@times-components/article@7.2.17...@times-components/article@7.2.18) (2019-05-31)
 
 **Note:** Version bump only for package @times-components/article

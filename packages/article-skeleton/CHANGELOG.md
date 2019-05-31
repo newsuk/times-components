@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.7.10](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.7.9...@times-components/article-skeleton@1.7.10) (2019-05-31)
+
+
+### Bug Fixes
+
+* message bar consumed and styled in web ([#2003](https://github.com/newsuk/times-components/issues/2003)) ([7c5c65e](https://github.com/newsuk/times-components/commit/7c5c65e))
+
+
+
+
+
 ## [1.7.9](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.7.8...@times-components/article-skeleton@1.7.9) (2019-05-31)
 
 

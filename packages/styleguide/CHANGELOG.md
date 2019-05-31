@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.28.21](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.28.20...@times-components/styleguide@3.28.21) (2019-05-31)
+
+
+### Bug Fixes
+
+* message bar consumed and styled in web ([#2003](https://github.com/newsuk/times-components/issues/2003)) ([7c5c65e](https://github.com/newsuk/times-components/commit/7c5c65e))
+
+
+
+
+
 ## [3.28.20](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.28.19...@times-components/styleguide@3.28.20) (2019-05-23)
 
 **Note:** Version bump only for package @times-components/styleguide
