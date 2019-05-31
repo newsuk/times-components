@@ -8,6 +8,8 @@ const numberOrString = PropTypes.oneOfType([
 export const propTypes = {
   accountId: PropTypes.string.isRequired,
   height: numberOrString.isRequired,
+  id: PropTypes.string,
+  is360: PropTypes.bool,
   paidOnly: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   playerId: PropTypes.string,
   policyKey: PropTypes.string.isRequired,
@@ -18,6 +20,7 @@ export const propTypes = {
 };
 
 export const defaultProps = {
+  is360: false,
   paidOnly: false,
   playerId: "default",
   poster: null,
