@@ -12,13 +12,12 @@ const LazyLoadingImage = props => {
   } = props;
 
   const queryArray = [
-    ["offline", true],
-    ["rel_height", relativeHeight],
-    ["rel_width", relativeWidth],
-    ["rel_horizontal_offset", relativeHorizontalOffset],
-    ["rel_vertical_offset", relativeVerticalOffset]
+    { name: "offline", value: true },
+    { name: "rel_height", value: relativeHeight },
+    { name: "rel_width", value: relativeWidth },
+    { name: "rel_horizontal_offset", value: relativeHorizontalOffset },
+    { name: "rel_vertical_offset", value: relativeVerticalOffset }
   ];
-  const queryParamMap = new Map(queryArray);
 
   return (
     <Fragment>
@@ -28,7 +27,7 @@ const LazyLoadingImage = props => {
           source={
             source
               ? {
-                  uri: appendParamsToQuery(source.uri, queryParamMap)
+                  uri: appendParamsToQuery(source.uri, queryArray)
                 }
               : null
           }

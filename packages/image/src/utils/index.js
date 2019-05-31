@@ -7,10 +7,15 @@ const appendParamsToQuery = (uriString, paramMap) => {
 
   let finalUri = uriString;
 
-  paramMap.forEach((value, key) => {
-    if (!(finalUri.includes(`?${key}`) || finalUri.includes(`&${key}`))) {
+  paramMap.forEach(item => {
+    if (
+      !(
+        (item && finalUri.includes(`?${item.name}`)) ||
+        finalUri.includes(`&${item.name}`)
+      )
+    ) {
       const separator = finalUri.includes("?") ? "&" : "?";
-      finalUri = `${finalUri}${separator}${key}=${value}`;
+      finalUri = `${finalUri}${separator}${item.name}=${item.value}`;
     }
   });
 
