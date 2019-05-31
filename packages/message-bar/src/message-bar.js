@@ -47,6 +47,13 @@ class MessageBar extends Component {
     }
   }
 
+  componentWillUnmount() {
+    const { timeout } = this.state;
+    if (timeout) {
+      clearTimeout(timeout);
+    }
+  }
+
   animateOpen(cb) {
     const { yValue } = this.state;
     Animated.spring(yValue, {
