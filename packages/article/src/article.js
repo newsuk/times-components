@@ -34,7 +34,7 @@ const Article = props => {
   return (
     <Responsive>
       <MessageManager animate delay={3000} scale={scales.medium}>
-          <Component {...props} onImagePress={onImagePressArticle} />
+        <Component {...props} onImagePress={onImagePressArticle} />
       </MessageManager>
     </Responsive>
   );
