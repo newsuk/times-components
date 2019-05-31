@@ -109,9 +109,12 @@ const tests = [
           },
           {
             attributes: {
+              id: "3dbfe6b8-680b-11e9-b277-88f3d445182c",
+              is360: false,
               brightcoveAccountId: "57838016001",
               brightcovePolicyKey: "1.2.3.4",
               brightcoveVideoId: "4084164751001",
+              brightcovePlayerId: "default",
               caption: "This is video caption",
               display: "primary",
               paidOnly: "false",

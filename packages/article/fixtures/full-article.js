@@ -647,9 +647,12 @@ export const videoLeadAsset = ({
   brightcovePolicyKey = defaultBrightcovePolicyKey
 } = {}) => ({
   __typename: "Video",
+  id: "3dbfe6b8-680b-11e9-b277-88f3d445182c",
+  is360: false,
   brightcoveAccountId: "5436121857001",
   brightcovePolicyKey,
   brightcoveVideoId: "5831024132001",
+  brightcovePlayerId: "default",
   caption: "This is video caption",
   paidOnly: "false",
   posterImage: {
