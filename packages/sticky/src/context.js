@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 import getDisplayName from "react-display-name";
 import hoistNonReactStatic from "hoist-non-react-statics";
 
-import { getTop, getTopParent } from "./util";
+import { getTop } from "./util";
 
 const { Provider, Consumer } = React.createContext({ top: 0 });
 
@@ -40,7 +40,6 @@ class StickyProvider extends Component {
       this.setState({ top: newTop });
     }
   }
-
 
   ref(node) {
     this.node = node;
@@ -87,4 +86,4 @@ function withStickyContext(WrappedComponent) {
   return WithStickyContext;
 }
 
-export { StickyProvider, withStickyContext }
+export { StickyProvider, withStickyContext };
