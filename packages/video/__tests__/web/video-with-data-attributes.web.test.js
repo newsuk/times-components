@@ -47,6 +47,18 @@ const tests = [
 
       expect(testInstance.toJSON()).toMatchSnapshot();
     }
+  },
+  {
+    name: "360 video with data attributes",
+    test: () => {
+      const testInstance = TestRenderer.create(
+        <IsPaidSubscriber.Provider value>
+          <Video {...defaultVideoProps} paidOnly={false} poster={null} is360 />
+        </IsPaidSubscriber.Provider>
+      );
+
+      expect(testInstance.toJSON()).toMatchSnapshot();
+    }
   }
 ];
 

@@ -62,7 +62,7 @@ const tests = [
     name: "360 video",
     test: () => {
       const testInstance = TestRenderer.create(
-        <Video {...defaultVideoProps} playerId="foo" />
+        <Video {...defaultVideoProps} is360 />
       );
 
       expect(testInstance.toJSON()).toMatchSnapshot();

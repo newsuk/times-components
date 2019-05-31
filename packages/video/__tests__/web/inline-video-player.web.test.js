@@ -8,7 +8,6 @@ describe("InlineVideoPlayer", () => {
   afterEach(() => {
     delete window.bc;
     delete window.videojs;
-    InlineVideoPlayer.index = 0;
     InlineVideoPlayer.scriptLoadError = false;
     InlineVideoPlayer.activePlayers = [];
     InlineVideoPlayer.brightcoveSDKLoadedStarted = false;
@@ -95,7 +94,9 @@ describe("InlineVideoPlayer", () => {
     addBrightcoveSDKGlobals();
 
     renderer.create(<InlineVideoPlayer {...defaultVideoProps} />);
-    renderer.create(<InlineVideoPlayer {...defaultVideoProps} />);
+    renderer.create(
+      <InlineVideoPlayer {...defaultVideoProps} id="[tpa video id 2]" />
+    );
 
     const [component1, component2] = InlineVideoPlayer.activePlayers;
     jest.spyOn(component1.player, "pause");
@@ -109,7 +110,9 @@ describe("InlineVideoPlayer", () => {
 
   it("doesn't hold references to players after they have been unmounted", () => {
     renderer.create(<InlineVideoPlayer {...defaultVideoProps} />);
-    const p2 = renderer.create(<InlineVideoPlayer {...defaultVideoProps} />);
+    const p2 = renderer.create(
+      <InlineVideoPlayer {...defaultVideoProps} id="[tpa video id 2]" />
+    );
 
     expect(InlineVideoPlayer.activePlayers.length).toBe(2);
     const [component1] = InlineVideoPlayer.activePlayers;
@@ -129,7 +132,9 @@ describe("InlineVideoPlayer", () => {
     jest.spyOn(InlineVideoPlayer, "appendScript").mockImplementation();
 
     renderer.create(<InlineVideoPlayer {...defaultVideoProps} />);
-    renderer.create(<InlineVideoPlayer {...defaultVideoProps} />);
+    renderer.create(
+      <InlineVideoPlayer {...defaultVideoProps} id="[tpa video id 2]" />
+    );
     const [component1, component2] = InlineVideoPlayer.activePlayers;
 
     jest.spyOn(component1, methodName).mockImplementation();
