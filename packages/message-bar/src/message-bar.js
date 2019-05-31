@@ -6,7 +6,6 @@ import styleFactory from "./styles";
 
 class MessageBar extends Component {
   state = {
-    timeout: null,
     yValue: new Animated.Value(0)
   };
 
@@ -21,13 +20,11 @@ class MessageBar extends Component {
     const { delay, close } = this.props;
 
     this.animateOpen(() => {});
-    this.setState({
-      timeout: setTimeout(() => {
-        this.animateClosed(() => {
-          close();
-        });
-      }, delay)
-    });
+    this.timeout = setTimeout(() => {
+      this.animateClosed(() => {
+        close();
+      });
+    }, delay);
   }
 
   componentWillReceiveProps(props) {
@@ -35,22 +32,18 @@ class MessageBar extends Component {
     const { message: oldMessage } = this.props;
 
     if (message === oldMessage) {
-      const { timeout } = this.state;
-      clearTimeout(timeout);
-      this.setState({
-        timeout: setTimeout(() => {
-          this.animateClosed(() => {
-            close();
-          });
-        }, delay)
-      });
+      clearTimeout(this.timeout);
+      this.timeout = setTimeout(() => {
+        this.animateClosed(() => {
+          close();
+        });
+      }, delay);
     }
   }
 
   componentWillUnmount() {
-    const { timeout } = this.state;
-    if (timeout) {
-      clearTimeout(timeout);
+    if (this.timeout) {
+      clearTimeout(this.timeout);
     }
   }
 
@@ -70,18 +63,11 @@ class MessageBar extends Component {
 
   close() {
     const { close } = this.props;
-    const { timeout } = this.state;
-    clearTimeout(timeout);
-    this.setState(
-      {
-        timeout: null
-      },
-      () => {
-        this.animateClosed(() => {
-          close();
-        });
-      }
-    );
+    clearTimeout(this.timeout);
+    this.timeout = null;
+    this.animateClosed(() => {
+      close();
+    });
   }
 
   render() {
