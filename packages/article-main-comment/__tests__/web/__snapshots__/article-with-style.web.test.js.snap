@@ -261,8 +261,6 @@ exports[`full article with style 1`] = `
 
 @media (max-width:1320px) {
   .c11 {
-    position: -webkit-sticky;
-    position: sticky;
     left: 0;
     top: 0;
     z-index: 999;
@@ -293,6 +291,10 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1321px) {
+  .c11 {
+    position: static !important;
+  }
+
   .c11 .c12:before,
   .c11 .c12:after {
     content: "";
@@ -445,35 +447,40 @@ exports[`full article with style 1`] = `
 }
 
 .IS2 {
-  height: 100%;
-  width: 100%;
+  z-index: 999;
+  top: 0;
 }
 
 .IS3 {
-  position: relative;
-}
-
-.IS4 {
   height: 100%;
   width: 100%;
 }
 
+.IS4 {
+  position: relative;
+}
+
 .IS5 {
+  height: 100%;
+  width: 100%;
+}
+
+.IS6 {
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
-.IS6 {
+.IS7 {
   padding-bottom: 56.25%;
   position: relative;
 }
 
-.IS7 {
+.IS8 {
   margin: 0;
 }
 
-.IS8 {
+.IS9 {
   border-bottom-color: #DBDBDB;
   border-bottom-width: 1;
   border-top-color: #DBDBDB;
@@ -570,7 +577,7 @@ exports[`full article with style 1`] = `
       </div>
     </div>
     <div
-      className="c11"
+      className="tc-sticky-container c11 IS2"
     >
       <div
         className="c12 c13"
@@ -611,22 +618,22 @@ exports[`full article with style 1`] = `
         className="c15 responsiveweb__PrimaryImg-sc-16nqyj8-5 c15 css-view-1dbjc4n"
       >
         <figure
-          className="IS7"
+          className="IS8"
         >
           <div
-            className="css-view-1dbjc4n IS6"
+            className="css-view-1dbjc4n IS7"
           >
             <div
-              className="css-view-1dbjc4n IS5"
+              className="css-view-1dbjc4n IS6"
             >
               <div
-                className="IS4"
+                className="IS5"
               >
                 <div
-                  className="IS3"
+                  className="IS4"
                 >
                   <video
-                    className="video-js IS2"
+                    className="video-js IS3"
                   />
                 </div>
               </div>
@@ -642,7 +649,7 @@ exports[`full article with style 1`] = `
         </figure>
       </div>
       <Ad
-        className="IS8"
+        className="IS9"
       />
       <div>
         <div

@@ -255,8 +255,6 @@ exports[`full article with style 1`] = `
 
 @media (max-width:1320px) {
   .c2 {
-    position: -webkit-sticky;
-    position: sticky;
     left: 0;
     top: 0;
     z-index: 999;
@@ -287,6 +285,10 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1321px) {
+  .c2 {
+    position: static !important;
+  }
+
   .c2 .c3:before,
   .c2 .c3:after {
     content: "";
@@ -312,35 +314,40 @@ exports[`full article with style 1`] = `
 }
 
 .IS2 {
-  color: #1D1D1B;
+  z-index: 999;
+  top: 0;
 }
 
 .IS3 {
-  height: 100%;
-  width: 100%;
+  color: #1D1D1B;
 }
 
 .IS4 {
-  position: relative;
-}
-
-.IS5 {
   height: 100%;
   width: 100%;
 }
 
+.IS5 {
+  position: relative;
+}
+
 .IS6 {
+  height: 100%;
+  width: 100%;
+}
+
+.IS7 {
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
-.IS7 {
+.IS8 {
   padding-bottom: 56.25%;
   position: relative;
 }
 
-.IS8 {
+.IS9 {
   margin: 0;
 }
 </style>
@@ -358,7 +365,7 @@ exports[`full article with style 1`] = `
     className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
   >
     <div
-      className="c2"
+      className="tc-sticky-container c2 IS2"
     >
       <div
         className="c3 c4"
@@ -373,7 +380,7 @@ exports[`full article with style 1`] = `
         className="c6"
       >
         <span
-          className="c7 IS2"
+          className="c7 IS3"
         >
           T
         </span>
@@ -431,22 +438,22 @@ exports[`full article with style 1`] = `
           className="c9 responsiveweb__PrimaryImg-sc-16nqyj8-5 c9 css-view-1dbjc4n"
         >
           <figure
-            className="IS8"
+            className="IS9"
           >
             <div
-              className="css-view-1dbjc4n IS7"
+              className="css-view-1dbjc4n IS8"
             >
               <div
-                className="css-view-1dbjc4n IS6"
+                className="css-view-1dbjc4n IS7"
               >
                 <div
-                  className="IS5"
+                  className="IS6"
                 >
                   <div
-                    className="IS4"
+                    className="IS5"
                   >
                     <video
-                      className="video-js IS3"
+                      className="video-js IS4"
                     />
                   </div>
                 </div>

@@ -34,29 +34,6 @@ addSerializers(
 );
 
 describe("StickySaveAndShareBar", () => {
-  let eventMap;
-  let realAddEventListener;
-  let realRemoveEventListener;
-
-  beforeEach(() => {
-    realAddEventListener = window.addEventListener;
-    realRemoveEventListener = window.removeEventListener;
-    eventMap = {};
-
-    window.addEventListener = jest.fn((eventName, callback) => {
-      eventMap[eventName] = callback;
-    });
-
-    window.removeEventListener = jest.fn(eventName => {
-      delete eventMap[eventName];
-    });
-  });
-
-  afterEach(() => {
-    window.addEventListener = realAddEventListener;
-    window.removeEventListener = realRemoveEventListener;
-  });
-
   it("uses the passed savedApi if it is valid", () => {
     const passedSaveApi = { bookmark: jest.fn() };
 
@@ -85,98 +62,5 @@ describe("StickySaveAndShareBar", () => {
     const component = mount(<StickySaveAndShareBar />);
 
     expect(component).toMatchSnapshot();
-  });
-
-  it("removes events when unmounting", () => {
-    const component = mount(<StickySaveAndShareBar />);
-    component.unmount();
-
-    expect(eventMap).toEqual({});
-  });
-
-  it("does not throw if scrolling before the ref is set", () => {
-    const component = mount(<StickySaveAndShareBar />);
-
-    component.instance().containerRef.current = null;
-    eventMap.scroll();
-    eventMap.resize();
-  });
-
-  it("becomes sticky when scrolling past it and unsticky when scrolling again", () => {
-    const component = mount(<StickySaveAndShareBar />);
-    const classList = { add: jest.fn(), remove: jest.fn() };
-    const getBoundingClientRect = jest.fn();
-
-    component.instance().containerRef.current = {
-      getBoundingClientRect,
-      classList
-    };
-
-    getBoundingClientRect.mockReturnValueOnce({ top: 0 });
-    eventMap.scroll();
-
-    expect(classList.add).toHaveBeenCalledWith("sticky");
-    expect(classList.remove).not.toHaveBeenCalled();
-
-    getBoundingClientRect.mockReturnValueOnce({ top: 5 });
-    eventMap.scroll();
-
-    expect(classList.remove).toHaveBeenCalledWith("sticky");
-  });
-
-  it("does not add the sticky class twice when scrolling", () => {
-    const component = mount(<StickySaveAndShareBar />);
-    const classList = { add: jest.fn(), remove: jest.fn() };
-    const getBoundingClientRect = jest.fn();
-
-    component.instance().containerRef.current = {
-      getBoundingClientRect,
-      classList
-    };
-
-    getBoundingClientRect.mockReturnValue({ top: 0 });
-    eventMap.scroll();
-    eventMap.scroll();
-
-    expect(classList.add).toHaveBeenCalledTimes(1);
-  });
-
-  it("does not add the sticky class twice when resizing", () => {
-    const component = mount(<StickySaveAndShareBar />);
-    const classList = { add: jest.fn(), remove: jest.fn() };
-    const getBoundingClientRect = jest.fn();
-
-    component.instance().containerRef.current = {
-      getBoundingClientRect,
-      classList
-    };
-
-    getBoundingClientRect.mockReturnValue({ top: 0 });
-    eventMap.scroll();
-    eventMap.scroll();
-
-    expect(classList.add).toHaveBeenCalledTimes(1);
-  });
-
-  it("becomes sticky when resizing so that the bar is now off screen", () => {
-    const component = mount(<StickySaveAndShareBar />);
-    const classList = { add: jest.fn(), remove: jest.fn() };
-    const getBoundingClientRect = jest.fn();
-
-    component.instance().containerRef.current = {
-      getBoundingClientRect,
-      classList
-    };
-
-    getBoundingClientRect.mockReturnValueOnce({ top: 0 });
-    eventMap.resize();
-
-    expect(classList.add).toHaveBeenCalledWith("sticky");
-    expect(classList.remove).not.toHaveBeenCalled();
-
-    getBoundingClientRect.mockReturnValueOnce({ top: 5 });
-    eventMap.resize();
-
-    expect(classList.remove).toHaveBeenCalledWith("sticky");
   });
 });

@@ -260,8 +260,6 @@ exports[`full article with style 1`] = `
 
 @media (max-width:1320px) {
   .c11 {
-    position: -webkit-sticky;
-    position: sticky;
     left: 0;
     top: 0;
     z-index: 999;
@@ -292,6 +290,10 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1321px) {
+  .c11 {
+    position: static !important;
+  }
+
   .c11 .c12:before,
   .c11 .c12:after {
     content: "";
@@ -490,35 +492,40 @@ exports[`full article with style 1`] = `
 }
 
 .IS7 {
-  height: 100%;
-  width: 100%;
+  z-index: 999;
+  top: 0;
 }
 
 .IS8 {
-  position: relative;
-}
-
-.IS9 {
   height: 100%;
   width: 100%;
 }
 
+.IS9 {
+  position: relative;
+}
+
 .IS10 {
+  height: 100%;
+  width: 100%;
+}
+
+.IS11 {
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
-.IS11 {
+.IS12 {
   padding-bottom: 56.25%;
   position: relative;
 }
 
-.IS12 {
+.IS13 {
   margin: 0;
 }
 
-.IS13 {
+.IS14 {
   border-bottom-color: #DBDBDB;
   border-bottom-width: 1;
   border-top-color: #DBDBDB;
@@ -621,7 +628,7 @@ exports[`full article with style 1`] = `
       </div>
     </div>
     <div
-      className="c11"
+      className="tc-sticky-container c11 IS7"
     >
       <div
         className="c12 c13"
@@ -662,22 +669,22 @@ exports[`full article with style 1`] = `
         className="c15 responsiveweb__PrimaryImg-sc-16nqyj8-5 c15 css-view-1dbjc4n"
       >
         <figure
-          className="IS12"
+          className="IS13"
         >
           <div
-            className="css-view-1dbjc4n IS11"
+            className="css-view-1dbjc4n IS12"
           >
             <div
-              className="css-view-1dbjc4n IS10"
+              className="css-view-1dbjc4n IS11"
             >
               <div
-                className="IS9"
+                className="IS10"
               >
                 <div
-                  className="IS8"
+                  className="IS9"
                 >
                   <video
-                    className="video-js IS7"
+                    className="video-js IS8"
                   />
                 </div>
               </div>
@@ -705,7 +712,7 @@ exports[`full article with style 1`] = `
         </figure>
       </div>
       <Ad
-        className="IS13"
+        className="IS14"
       />
       <div>
         <div
@@ -987,8 +994,6 @@ exports[`full article with style in the culture magazine 1`] = `
 
 @media (max-width:1320px) {
   .c11 {
-    position: -webkit-sticky;
-    position: sticky;
     left: 0;
     top: 0;
     z-index: 999;
@@ -1019,6 +1024,10 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 @media (min-width:1321px) {
+  .c11 {
+    position: static !important;
+  }
+
   .c11 .c12:before,
   .c11 .c12:after {
     content: "";
@@ -1218,35 +1227,40 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 .IS7 {
-  height: 100%;
-  width: 100%;
+  z-index: 999;
+  top: 0;
 }
 
 .IS8 {
-  position: relative;
-}
-
-.IS9 {
   height: 100%;
   width: 100%;
 }
 
+.IS9 {
+  position: relative;
+}
+
 .IS10 {
+  height: 100%;
+  width: 100%;
+}
+
+.IS11 {
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
-.IS11 {
+.IS12 {
   padding-bottom: 56.25%;
   position: relative;
 }
 
-.IS12 {
+.IS13 {
   margin: 0;
 }
 
-.IS13 {
+.IS14 {
   border-bottom-color: #DBDBDB;
   border-bottom-width: 1;
   border-top-color: #DBDBDB;
@@ -1349,7 +1363,7 @@ exports[`full article with style in the culture magazine 1`] = `
       </div>
     </div>
     <div
-      className="c11"
+      className="tc-sticky-container c11 IS7"
     >
       <div
         className="c12 c13"
@@ -1390,22 +1404,22 @@ exports[`full article with style in the culture magazine 1`] = `
         className="c15 responsiveweb__PrimaryImg-sc-16nqyj8-5 c15 css-view-1dbjc4n"
       >
         <figure
-          className="IS12"
+          className="IS13"
         >
           <div
-            className="css-view-1dbjc4n IS11"
+            className="css-view-1dbjc4n IS12"
           >
             <div
-              className="css-view-1dbjc4n IS10"
+              className="css-view-1dbjc4n IS11"
             >
               <div
-                className="IS9"
+                className="IS10"
               >
                 <div
-                  className="IS8"
+                  className="IS9"
                 >
                   <video
-                    className="video-js IS7"
+                    className="video-js IS8"
                   />
                 </div>
               </div>
@@ -1433,7 +1447,7 @@ exports[`full article with style in the culture magazine 1`] = `
         </figure>
       </div>
       <Ad
-        className="IS13"
+        className="IS14"
       />
       <div>
         <div
@@ -1715,8 +1729,6 @@ exports[`full article with style in the style magazine 1`] = `
 
 @media (max-width:1320px) {
   .c11 {
-    position: -webkit-sticky;
-    position: sticky;
     left: 0;
     top: 0;
     z-index: 999;
@@ -1747,6 +1759,10 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 @media (min-width:1321px) {
+  .c11 {
+    position: static !important;
+  }
+
   .c11 .c12:before,
   .c11 .c12:after {
     content: "";
@@ -1946,35 +1962,40 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 .IS7 {
-  height: 100%;
-  width: 100%;
+  z-index: 999;
+  top: 0;
 }
 
 .IS8 {
-  position: relative;
-}
-
-.IS9 {
   height: 100%;
   width: 100%;
 }
 
+.IS9 {
+  position: relative;
+}
+
 .IS10 {
+  height: 100%;
+  width: 100%;
+}
+
+.IS11 {
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
-.IS11 {
+.IS12 {
   padding-bottom: 56.25%;
   position: relative;
 }
 
-.IS12 {
+.IS13 {
   margin: 0;
 }
 
-.IS13 {
+.IS14 {
   border-bottom-color: #DBDBDB;
   border-bottom-width: 1;
   border-top-color: #DBDBDB;
@@ -2077,7 +2098,7 @@ exports[`full article with style in the style magazine 1`] = `
       </div>
     </div>
     <div
-      className="c11"
+      className="tc-sticky-container c11 IS7"
     >
       <div
         className="c12 c13"
@@ -2118,22 +2139,22 @@ exports[`full article with style in the style magazine 1`] = `
         className="c15 responsiveweb__PrimaryImg-sc-16nqyj8-5 c15 css-view-1dbjc4n"
       >
         <figure
-          className="IS12"
+          className="IS13"
         >
           <div
-            className="css-view-1dbjc4n IS11"
+            className="css-view-1dbjc4n IS12"
           >
             <div
-              className="css-view-1dbjc4n IS10"
+              className="css-view-1dbjc4n IS11"
             >
               <div
-                className="IS9"
+                className="IS10"
               >
                 <div
-                  className="IS8"
+                  className="IS9"
                 >
                   <video
-                    className="video-js IS7"
+                    className="video-js IS8"
                   />
                 </div>
               </div>
@@ -2161,7 +2182,7 @@ exports[`full article with style in the style magazine 1`] = `
         </figure>
       </div>
       <Ad
-        className="IS13"
+        className="IS14"
       />
       <div>
         <div
@@ -2443,8 +2464,6 @@ exports[`full article with style in the sunday times magazine 1`] = `
 
 @media (max-width:1320px) {
   .c11 {
-    position: -webkit-sticky;
-    position: sticky;
     left: 0;
     top: 0;
     z-index: 999;
@@ -2475,6 +2494,10 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 @media (min-width:1321px) {
+  .c11 {
+    position: static !important;
+  }
+
   .c11 .c12:before,
   .c11 .c12:after {
     content: "";
@@ -2674,35 +2697,40 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 .IS7 {
-  height: 100%;
-  width: 100%;
+  z-index: 999;
+  top: 0;
 }
 
 .IS8 {
-  position: relative;
-}
-
-.IS9 {
   height: 100%;
   width: 100%;
 }
 
+.IS9 {
+  position: relative;
+}
+
 .IS10 {
+  height: 100%;
+  width: 100%;
+}
+
+.IS11 {
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
-.IS11 {
+.IS12 {
   padding-bottom: 56.25%;
   position: relative;
 }
 
-.IS12 {
+.IS13 {
   margin: 0;
 }
 
-.IS13 {
+.IS14 {
   border-bottom-color: #DBDBDB;
   border-bottom-width: 1;
   border-top-color: #DBDBDB;
@@ -2805,7 +2833,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
       </div>
     </div>
     <div
-      className="c11"
+      className="tc-sticky-container c11 IS7"
     >
       <div
         className="c12 c13"
@@ -2846,22 +2874,22 @@ exports[`full article with style in the sunday times magazine 1`] = `
         className="c15 responsiveweb__PrimaryImg-sc-16nqyj8-5 c15 css-view-1dbjc4n"
       >
         <figure
-          className="IS12"
+          className="IS13"
         >
           <div
-            className="css-view-1dbjc4n IS11"
+            className="css-view-1dbjc4n IS12"
           >
             <div
-              className="css-view-1dbjc4n IS10"
+              className="css-view-1dbjc4n IS11"
             >
               <div
-                className="IS9"
+                className="IS10"
               >
                 <div
-                  className="IS8"
+                  className="IS9"
                 >
                   <video
-                    className="video-js IS7"
+                    className="video-js IS8"
                   />
                 </div>
               </div>
@@ -2889,7 +2917,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
         </figure>
       </div>
       <Ad
-        className="IS13"
+        className="IS14"
       />
       <div>
         <div

@@ -1,0 +1,27 @@
+.bar {
+  height: 30px;
+  background: red;
+  position: sticky;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 400px;
+}
+
+.sticky {
+  background: blue;
+}
+
+.fixed {
+  position: fixed;
+  background: yellow;
+  left: 0;
+  width: 100%;
+  top: 0;
+}
+
+.fixed + .container {
+  margin-top: 30px;
+}
