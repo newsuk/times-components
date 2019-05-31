@@ -1,24 +1,51 @@
 /* eslint-disable react/no-unused-state,no-shadow */
+/* eslint-env browser */
+
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import getDisplayName from "react-display-name";
 import hoistNonReactStatic from "hoist-non-react-statics";
 
-import { getTop } from "./util";
+import { getTop, getTopParent } from "./util";
 
 const { Provider, Consumer } = React.createContext({ top: 0 });
 
-export class StickyProvider extends Component {
+class StickyProvider extends Component {
   constructor(props) {
     super(props);
     this.state = { top: 0 };
     this.ref = this.ref.bind(this);
+    this.setTop = this.setTop.bind(this);
   }
 
-  ref(node) {
-    const top = getTop(node) || 0;
+  componentDidMount() {
+    window.addEventListener("resize", this.setTop);
+  }
 
-    this.setState({ top });
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.setTop);
+  }
+
+  setTop() {
+    const { node } = this;
+    const { top } = this.state;
+
+    if (!node) {
+      return;
+    }
+
+    const newTop = Math.round((getTop(node) || 0) + window.pageYOffset);
+
+    if (newTop !== top) {
+      this.setState({ top: newTop });
+    }
+  }
+
+
+  ref(node) {
+    this.node = node;
+
+    this.setTop();
   }
 
   render() {
@@ -41,7 +68,7 @@ StickyProvider.defaultProps = {
   Component: "div"
 };
 
-export function withStickyContext(WrappedComponent) {
+function withStickyContext(WrappedComponent) {
   function WithStickyContext(props) {
     return (
       <Consumer>
@@ -59,3 +86,5 @@ export function withStickyContext(WrappedComponent) {
 
   return WithStickyContext;
 }
+
+export { StickyProvider, withStickyContext }

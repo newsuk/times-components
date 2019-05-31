@@ -40,6 +40,8 @@ describe("Sticky", () => {
     window.removeEventListener = jest.fn(eventName => {
       delete eventMap[eventName];
     });
+
+    window.pageYOffset = 0;
   });
 
   afterEach(() => {
@@ -70,9 +72,11 @@ describe("Sticky", () => {
 
   it("removes events when unmounting", () => {
     const component = mount(
-      <UnwrappedSticky>
-        <div />
-      </UnwrappedSticky>
+      <StickyProvider>
+        <Sticky>
+          <div />
+        </Sticky>
+      </StickyProvider>
     );
     component.unmount();
 
@@ -80,7 +84,8 @@ describe("Sticky", () => {
   });
 
   it("renders with sticky provider using default props", () => {
-    const containerNode = { getBoundingClientRect: () => ({ top: 30 }) };
+    window.pageYOffset = -19.9;
+    const containerNode = { getBoundingClientRect: () => ({ top: 50 }) };
 
     const component = mount(
       <StickyProvider>

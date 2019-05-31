@@ -15,7 +15,7 @@ const GlobalStickyStyles = createGlobalStyle`
 
 const isOutOfView = (node, top) => getTop(node) <= top + 1;
 
-export class UnwrappedSticky extends Component {
+class UnwrappedSticky extends Component {
   constructor(props) {
     super(props);
 
@@ -112,6 +112,6 @@ UnwrappedSticky.defaultProps = {
 
 const Sticky = withStickyContext(UnwrappedSticky);
 
-export { StickyProvider };
+export { UnwrappedSticky, StickyProvider };
 
 export default Sticky;

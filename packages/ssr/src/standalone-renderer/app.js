@@ -38,6 +38,10 @@ const makeHtml = (
             #main-container {
               margin-top: 50px;
             }
+            @media screen and (max-width:800px) {
+              #nav { height: 30px; }
+              #main-container { margin-top: 30px; }
+            }
             </style>
           </head>
           <body style="margin:0">
