@@ -72,7 +72,6 @@ export const SaveShareContainer = styled.div`
   margin: ${spacing(6)} 0;
 
   @media (max-width: ${breakpoints.huge}px) {
-    position: sticky;
     left: 0;
     top: 0;
     z-index: 999;
@@ -90,6 +89,8 @@ export const SaveShareContainer = styled.div`
   }
 
   @media (min-width: ${breakpoints.huge + 1}px) {
+    position: static !important;
+
     /* stylelint-disable */
     ${SaveShareInnerContainer} {
       ${NON_STICKY_CSS};

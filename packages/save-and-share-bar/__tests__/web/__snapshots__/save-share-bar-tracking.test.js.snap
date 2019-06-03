@@ -17,33 +17,22 @@ Array [
 ]
 `;
 
-exports[`save and share tracking events when press save to my articles 1`] = `
+exports[`save and share tracking events when press share article url by email 1`] = `
 Object {
   "action": "Pressed",
   "attrs": Object {
     "articleHeadline": "test-headline",
     "articleId": "id-123",
   },
-  "component": "ArticleCopyLink",
+  "component": "ArticleShareUrlByEmail",
 }
 `;
 
-exports[`save and share tracking events when press save to my articles: onSaveToMyArticles 1`] = `Array []`;
-
-exports[`save and share tracking events when press share on email 1`] = `
-Object {
-  "action": "Pressed",
-  "attrs": Object {
-    "articleHeadline": "test-headline",
-    "articleId": "id-123",
-  },
-  "component": "ArticleShareOnEmail",
-}
-`;
-
-exports[`save and share tracking events when press share on email: onShareOnEmail 1`] = `
+exports[`save and share tracking events when press share article url by email: getTokenisedShareUrl 1`] = `
 Array [
-  Array [],
+  Array [
+    "id-123",
+  ],
 ]
 `;
 

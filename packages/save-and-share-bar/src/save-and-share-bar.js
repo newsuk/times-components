@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { View, Text, Clipboard } from "react-native";
+import { ActivityIndicator, View, Text, Clipboard } from "react-native";
 import {
   IconEmail,
   IconFacebook,
@@ -8,16 +8,23 @@ import {
   IconCopyLink
 } from "@times-components/icons";
 import SaveStar from "@times-components/save-star-web";
+import getTokenisedArticleUrlApi from "./get-tokenised-article-url-api";
 import withTrackEvents from "./tracking/with-track-events";
 import SharingApiUrls from "./constants";
 import styles from "./styles";
 import BarItem from "./bar-item";
 
+/* eslint-disable jsx-a11y/anchor-is-valid */
 class SaveAndShareBar extends Component {
   constructor(props) {
     super(props);
     this.copyToClipboard = this.copyToClipboard.bind(this);
+    this.handleOnShareEmailPress = this.handleOnShareEmailPress.bind(this);
     this.onSaveButtonPress = this.onSaveButtonPress.bind(this);
+
+    this.state = {
+      isLoading: false
+    };
   }
 
   onSaveButtonPress(evt, savedStatus, saveUnsaveBookmark) {
@@ -37,29 +44,56 @@ class SaveAndShareBar extends Component {
     onCopyLink();
   }
 
+  handleOnShareEmailPress() {
+    /* eslint-env browser */
+    const { articleHeadline, articleId, getTokenisedShareUrl } = this.props;
+    this.setState({ isLoading: true });
+
+    getTokenisedShareUrl(articleId)
+      .then(res => {
+        const { data } = res;
+        if (data) {
+          this.setState({ isLoading: false });
+          const { url } = data.article.tokenisedUrl;
+          const mailtoEmailUrl = `mailto:?subject=${articleHeadline} from The Times&body=I thought you would be interested in this story from The Times%0A%0A${articleHeadline}%0A%0A${url}`;
+          window.location.assign(mailtoEmailUrl);
+        }
+      })
+      .catch(error => {
+        this.setState({ isLoading: false });
+        console.error("Error in connecting to api", error);
+      });
+  }
+
   render() {
     const {
       articleId,
       articleHeadline,
       articleUrl,
-      onShareOnEmail,
       savingEnabled,
       sharingEnabled,
       onShareOnFB,
       onShareOnTwitter,
       saveApi
     } = this.props;
+
+    const { isLoading } = this.state;
+
     return (
       <View style={styles.container}>
         {sharingEnabled && (
           <View style={styles.rowItem}>
             <Text style={styles.label}>Share</Text>
-            <BarItem onPress={onShareOnEmail}>
-              <IconEmail
-                fillColour="currentColor"
-                height={styles.svgIcon.height}
-                title="Share by email client"
-              />
+            <BarItem onPress={this.handleOnShareEmailPress}>
+              {isLoading ? (
+                <ActivityIndicator size="small" style={styles.activityLoader} />
+              ) : (
+                <IconEmail
+                  fillColour="currentColor"
+                  height={styles.svgIcon.height}
+                  title="Share by email client"
+                />
+              )}
             </BarItem>
             <BarItem
               onPress={onShareOnTwitter}
@@ -119,8 +153,8 @@ SaveAndShareBar.propTypes = {
   articleId: PropTypes.string.isRequired,
   articleUrl: PropTypes.string.isRequired,
   articleHeadline: PropTypes.string.isRequired,
+  getTokenisedShareUrl: PropTypes.func,
   onCopyLink: PropTypes.func.isRequired,
-  onShareOnEmail: PropTypes.func.isRequired,
   onShareOnFB: PropTypes.func,
   onShareOnTwitter: PropTypes.func,
   saveApi: PropTypes.shape({
@@ -135,7 +169,8 @@ SaveAndShareBar.propTypes = {
 /* Serves as an indication when share links are clicked for tracking and analytics */
 SaveAndShareBar.defaultProps = {
   onShareOnFB: () => {},
-  onShareOnTwitter: () => {}
+  onShareOnTwitter: () => {},
+  getTokenisedShareUrl: getTokenisedArticleUrlApi
 };
 
 export default withTrackEvents(SaveAndShareBar);

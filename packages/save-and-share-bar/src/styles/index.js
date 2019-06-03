@@ -6,6 +6,12 @@ const styles = {
     flexDirection: "row",
     justifyContent: "space-between"
   },
+  activityLoader: {
+    borderRadius: 9999,
+    height: 40,
+    overflow: "hidden",
+    width: 40
+  },
   label: {
     ...fontFactory({
       font: "supporting",
@@ -23,6 +29,7 @@ const styles = {
       line-height: 45px;
       height: 40px;
       width: 40px;
+      cursor: pointer;
 
       &:hover {
         background-color: ${colours.functional.whiteGrey};

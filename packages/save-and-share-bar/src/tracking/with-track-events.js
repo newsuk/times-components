@@ -14,12 +14,12 @@ export default Component =>
       },
       {
         actionName: "Pressed",
-        eventName: "onShareOnEmail",
+        eventName: "getTokenisedShareUrl",
         getAttrs: ({ articleId, articleHeadline }) => ({
           articleId,
           articleHeadline
         }),
-        trackingName: "ArticleShareOnEmail"
+        trackingName: "ArticleShareUrlByEmail"
       },
       {
         actionName: "Pressed",

@@ -25,6 +25,24 @@ const makeHtml = (
             ${headMarkup}
             ${styles}
             ${responsiveStyles}
+            <style>
+            #nav {
+              height: 50px;
+              position: fixed;
+              background-color: rgb(19, 53, 78);
+              width: 100%;
+              left: 0;
+              z-index: 9;
+              top: 0;
+            }
+            #main-container {
+              margin-top: 50px;
+            }
+            @media screen and (max-width:800px) {
+              #nav { height: 30px; }
+              #main-container { margin-top: 30px; }
+            }
+            </style>
           </head>
           <body style="margin:0">
             <script>window.nuk = {
@@ -34,6 +52,7 @@ const makeHtml = (
             };</script>
             ${initialProps}
             ${initialState}
+             <div id="nav"></div>
             <div id="main-container">${markup}</div>
           </body>
           <script src="/common.react.bundle.js"></script>

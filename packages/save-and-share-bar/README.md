@@ -16,7 +16,6 @@ import SaveAndShareBar from "@times-components/save-and-share-bar";
   articleUrl={articleId}
   onCopyLink={this.copyLinkToClipboard}
   onSaveToMyArticles={this.saveToMyArticles}
-  onShareOnEmail={this.shareOnEmail}
   saveApi={saveApi}
 />;
 ```

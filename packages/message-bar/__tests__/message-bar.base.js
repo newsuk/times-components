@@ -58,12 +58,13 @@ export default animate => [
         />
       );
 
-      const prevTimeout = testInstance.state("timeout");
+      const prevTimeout = testInstance.instance().timeout;
+
       testInstance.setProps({
         message: "test message"
       });
 
-      const newTimeout = testInstance.state("timeout");
+      const newTimeout = testInstance.instance().timeout;
 
       expect(prevTimeout).not.toEqual(newTimeout);
     }
@@ -81,13 +82,12 @@ export default animate => [
         />
       );
 
-      const prevTimeout = testInstance.state("timeout");
+      const prevTimeout = testInstance.instance().timeout;
       testInstance.setProps({
         message: "new test message"
       });
 
-      const newTimeout = testInstance.state("timeout");
-
+      const newTimeout = testInstance.instance().timeout;
       expect(prevTimeout).toEqual(newTimeout);
     }
   }

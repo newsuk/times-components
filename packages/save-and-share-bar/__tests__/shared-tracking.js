@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import TestRenderer from "react-test-renderer";
 import mockSaveApi from "@times-components/save-star-web/mock-save-api";
 import PropTypes from "prop-types";
+import mockGetTokenisedArticleUrl from "./mock-get-tokenised-article-url";
 import "./mocks";
 import BarItem from "../src/bar-item";
 import SaveAndShareBar from "../src/save-and-share-bar";
@@ -32,21 +33,18 @@ WithTrackingContext.propTypes = {
   articleUrl: PropTypes.string.isRequired,
   articleId: PropTypes.string.isRequired,
   articleHeadline: PropTypes.string.isRequired,
-  onCopyLink: PropTypes.func.isRequired,
-  onSaveToMyArticles: PropTypes.func.isRequired,
-  onShareOnEmail: PropTypes.func.isRequired
+  onCopyLink: PropTypes.func.isRequired
 };
 
 export default () => {
   describe("save and share tracking events", () => {
-    const onShareOnEmail = jest.fn();
     const onCopyLink = jest.fn();
-    const onSaveToMyArticles = jest.fn();
     const onShareOnFB = jest.fn();
     const onShareOnTwitter = jest.fn();
     const articleId = "id-123";
     const articleHeadline = "test-headline";
     const articleUrl = "https://www.thetimes.co.uk/";
+    const getTokenisedShareUrl = jest.fn(mockGetTokenisedArticleUrl);
 
     let stream = null;
     let testInstance = null;
@@ -60,25 +58,14 @@ export default () => {
           articleId={articleId}
           articleHeadline={articleHeadline}
           onCopyLink={onCopyLink}
-          onSaveToMyArticles={onSaveToMyArticles}
-          onShareOnEmail={onShareOnEmail}
           onShareOnFB={onShareOnFB}
           onShareOnTwitter={onShareOnTwitter}
           saveApi={mockSaveApi}
+          getTokenisedShareUrl={getTokenisedShareUrl}
           sharingEnabled
           savingEnabled
         />
       );
-    });
-
-    it("when press share on email", () => {
-      const shareOnEmailBarItem = testInstance.root.findAllByType(BarItem)[0];
-      shareOnEmailBarItem.props.onPress();
-
-      const [[call]] = stream.mock.calls;
-
-      expect(call).toMatchSnapshot();
-      expect(onShareOnEmail.mock.calls).toMatchSnapshot("onShareOnEmail");
     });
 
     it("when press share on twitter", () => {
@@ -115,17 +102,17 @@ export default () => {
       expect(onCopyLink.mock.calls).toMatchSnapshot("onCopyLink");
     });
 
-    it("when press save to my articles", () => {
-      const saveToMyArticlesBarItem = testInstance.root.findAllByType(
+    it("when press share article url by email", () => {
+      const shareArticleUrlByEmailBarItem = testInstance.root.findAllByType(
         BarItem
-      )[3];
-      saveToMyArticlesBarItem.props.onPress();
+      )[0];
+      shareArticleUrlByEmailBarItem.props.onPress();
 
       const [[call]] = stream.mock.calls;
 
       expect(call).toMatchSnapshot();
-      expect(onSaveToMyArticles.mock.calls).toMatchSnapshot(
-        "onSaveToMyArticles"
+      expect(getTokenisedShareUrl.mock.calls).toMatchSnapshot(
+        "getTokenisedShareUrl"
       );
     });
   });

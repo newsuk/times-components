@@ -38,7 +38,7 @@ class TileSummary extends Component {
       starStyle
     } = this.props;
 
-    if (!withStar || isSaveSupported) {
+    if (!withStar || !isSaveSupported) {
       return <ArticleFlags {...flagColour} flags={expirableFlags} />;
     }
 
