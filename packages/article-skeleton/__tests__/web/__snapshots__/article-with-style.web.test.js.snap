@@ -415,7 +415,9 @@ exports[`full article with style 1`] = `
       <Link>
         Some Link
       </Link>
-      <span>
+      <span
+        className="paidContentClassName"
+      >
         <p
           className="c6"
         >

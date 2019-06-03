@@ -329,6 +329,7 @@ export default () => {
           onTwitterLinkPress={() => {}}
           onVideoPress={() => {}}
           spotAccountId=""
+          paidContentClassName="paidContentClassName"
         />
       </ContextProviderWithDefaults>
     );

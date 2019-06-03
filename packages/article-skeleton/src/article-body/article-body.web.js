@@ -230,6 +230,7 @@ ArticleBody.propTypes = {
     })
   ).isRequired,
   contextUrl: PropTypes.string.isRequired,
+  paidContentClassName: PropTypes.string,
   section: PropTypes.string
 };
 
