@@ -1,20 +1,20 @@
-.bar {
+.sticky-story .bar {
   height: 30px;
   background: red;
   position: sticky;
 }
 
-.container {
+.sticky-story .container {
   margin: 0 auto;
   padding: 10px;
   max-width: 400px;
 }
 
-.sticky {
+.sticky-story .sticky {
   background: blue;
 }
 
-.fixed {
+.sticky-story .fixed {
   position: fixed;
   background: yellow;
   left: 0;
@@ -22,6 +22,6 @@
   top: 0;
 }
 
-.fixed + .container {
+.sticky-story .fixed + .container {
   margin-top: 30px;
 }
