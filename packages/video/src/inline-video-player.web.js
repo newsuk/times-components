@@ -171,7 +171,7 @@ class InlineVideoPlayer extends Component {
     } = this.props;
     const { error, hasVideoPlayed } = this.state;
     if (error) {
-      throw new Error('Can\'t load video'); // caught by parent ErrorView
+      throw new Error("Can't load video"); // caught by parent ErrorView
     }
 
     return (
