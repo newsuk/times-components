@@ -7,7 +7,7 @@ export default {
   children: [
     {
       component: () => (
-        <>
+        <div className="sticky-story">
           <div className="container">
             <h2>Scroll down…</h2>
             <Sticky className="bar" />
@@ -90,14 +90,14 @@ export default {
               qui reiciendis, sunt vel vitae?
             </p>
           </div>
-        </>
+        </div>
       ),
       name: "Sticky without fixed sibling",
       type: "story"
     },
     {
       component: () => (
-        <>
+        <div className="sticky-story">
           <div className="bar fixed" />
           <StickyProvider className="container">
             <h2>Scroll down…</h2>
@@ -181,7 +181,7 @@ export default {
               qui reiciendis, sunt vel vitae?
             </p>
           </StickyProvider>
-        </>
+        </div>
       ),
       name: "Sticky with fixed sibling",
       type: "story"
