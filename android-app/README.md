@@ -52,4 +52,4 @@ uploaded to maven.
 - Enable react article features in the developer settings
 - Navigate to an article page on the app
 - Reload the article by pressing key `]` to load the react-native article
-- To update the app to the latest times-component, update the dependancy [here](https://github.com/newsuk/nu-projectd-times-smartphone-android/blob/develop/mobile/build.gradle#L200) to the android-app version [here](https://github.com/newsuk/times-components/blob/10d3ec6dfaba08b376792fa17d6e2fced5747a7e/android-app/package.json#L3) and reinstall the app on the emulator
+- To update the app to the latest times-component, update the dependancy [here](https://github.com/newsuk/nu-projectd-times-smartphone-android/blob/develop/mobile/build.gradle#L199) to the android-app version [here](https://github.com/newsuk/times-components/blob/10d3ec6dfaba08b376792fa17d6e2fced5747a7e/android-app/package.json#L3) and reinstall the app on the emulator
