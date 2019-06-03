@@ -72,7 +72,7 @@ const tests = [
     }
   },
   {
-    name: "no sky banner displayed on play",
+    name: "player icon for 360 video not displayed after play",
     test: () => {
       const testInstance = TestRenderer.create(
         <Video {...defaultVideoProps} is360 />

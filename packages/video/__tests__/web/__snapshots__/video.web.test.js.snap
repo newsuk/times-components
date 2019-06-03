@@ -49,7 +49,7 @@ exports[`3. 360 video 1`] = `
 </div>
 `;
 
-exports[`4. no sky banner displayed on play 1`] = `
+exports[`4. player icon for 360 video not displayed after play 1`] = `
 <div>
   <div>
     <video

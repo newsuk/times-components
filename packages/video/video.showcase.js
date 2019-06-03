@@ -41,6 +41,8 @@ const skySportsVideoProps = {
   }
 };
 
+const mockId = "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee";
+
 export default {
   children: [
     {
@@ -71,7 +73,6 @@ export default {
     },
     {
       component: () => {
-        const mockId = "3dbfe6b8-680b-11e9-b277-88f3d445182d";
         const props = {
           playerId: "y4yoiFCf1",
           videoId: "5992442066001",
@@ -111,17 +112,13 @@ export default {
       type: "story"
     },
     {
-      component: () => {
-        const mockId = "3dbfe6b8-680b-11e9-b277-88f3d445182d";
-
-        return (
-          <View>
-            <Video {...defaultVideoProps} />
-            <View style={{ height: 20 }} />
-            <Video {...defaultVideoProps} videoId="5612887446001" id={mockId} />
-          </View>
-        );
-      },
+      component: () => (
+        <View>
+          <Video {...defaultVideoProps} />
+          <View style={{ height: 20 }} />
+          <Video {...defaultVideoProps} videoId="5612887446001" id={mockId} />
+        </View>
+      ),
       name: "two players with different videos",
       type: "story"
     },
