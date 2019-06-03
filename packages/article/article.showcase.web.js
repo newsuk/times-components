@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-env browser */
 import React from "react";
+import { StickyProvider } from "@times-components/sticky";
 import renderArticleConfig from "./showcase-helper";
 
 const link = typeof document === "object" &&
@@ -14,11 +15,32 @@ const link = typeof document === "object" &&
     </a>
   );
 
+function renderWebArticleWithConfig(config) {
+  return (
+    <>
+      <div
+        style={{
+          height: 50,
+          position: "fixed",
+          left: 0,
+          top: 0,
+          width: "100%",
+          backgroundColor: "#13354E",
+          zIndex: 2
+        }}
+      />
+      <StickyProvider style={{ marginTop: 50 }}>
+        {renderArticleConfig(config)}
+      </StickyProvider>
+    </>
+  );
+}
+
 export default {
   children: [
     {
       component: ({ boolean, color, select }, { decorateAction }) =>
-        renderArticleConfig({
+        renderWebArticleWithConfig({
           boolean,
           color,
           decorateAction,
@@ -32,7 +54,7 @@ export default {
     },
     {
       component: ({ boolean, color, select }, { decorateAction }) =>
-        renderArticleConfig({
+        renderWebArticleWithConfig({
           boolean,
           color,
           decorateAction,
@@ -48,7 +70,7 @@ export default {
     },
     {
       component: ({ boolean, color, select }, { decorateAction }) =>
-        renderArticleConfig({
+        renderWebArticleWithConfig({
           boolean,
           color,
           decorateAction,
