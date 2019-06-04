@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.4.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.3.11...@times-components/article-main-comment@2.4.0) (2019-06-04)
+
+
+### Features
+
+* use paidContentClassName from Render when loading paywalled content ([#2004](https://github.com/newsuk/times-components/issues/2004)) ([7580f62](https://github.com/newsuk/times-components/commit/7580f62))
+
+
+
+
+
 ## [2.3.11](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.3.10...@times-components/article-main-comment@2.3.11) (2019-06-03)
 
 **Note:** Version bump only for package @times-components/article-main-comment

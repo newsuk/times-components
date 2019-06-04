@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.8.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.7.11...@times-components/article-skeleton@1.8.0) (2019-06-04)
+
+
+### Features
+
+* use paidContentClassName from Render when loading paywalled content ([#2004](https://github.com/newsuk/times-components/issues/2004)) ([7580f62](https://github.com/newsuk/times-components/commit/7580f62))
+
+
+
+
+
 ## [1.7.11](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.7.10...@times-components/article-skeleton@1.7.11) (2019-06-03)
 
 **Note:** Version bump only for package @times-components/article-skeleton
