@@ -109,7 +109,7 @@ export default () => {
       shareArticleUrlByEmailBarItem.props.onPress();
 
       const [[call]] = stream.mock.calls;
-      console.log(stream.mock.calls);
+
       expect(call).toMatchSnapshot();
       expect(getTokenisedShareUrl.mock.calls).toMatchSnapshot(
         "getTokenisedShareUrl"
