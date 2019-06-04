@@ -5,8 +5,7 @@ import PropTypes from "prop-types";
 import Context from "@times-components/context";
 import { renderTreeAsText } from "@times-components/markup-forest";
 
-const FAVICON_URL =
-  "https://www.thetimes.co.uk/d/img/icons/icon_1_5x-a13ee0bf9a.png";
+const DOMAIN = "https://www.thetimes.co.uk";
 
 // Get the section for an article, preferring it not to be News
 function getSectionName(article) {
@@ -80,7 +79,7 @@ const getThumbnailUrlFromImage = article => {
   return get(article.leadAsset, "crop169.url", null);
 };
 
-function Head({ article, paidContentClassName }) {
+function Head({ article, paidContentClassName, faviconPath }) {
   const {
     descriptionMarkup,
     headline,
@@ -111,7 +110,7 @@ function Head({ article, paidContentClassName }) {
     "@context": "http://schema.org",
     "@type": "NewsArticle",
     headline: title,
-    logo: FAVICON_URL,
+    logo: `${DOMAIN}${faviconPath}`,
     publisher: {
       "@type": "Organization",
       name: publication
@@ -189,7 +188,8 @@ Head.propTypes = {
     shortIdentifier: PropTypes.string.isRequired,
     tiles: PropTypes.array
   }).isRequired,
-  paidContentClassName: PropTypes.string.isRequired
+  paidContentClassName: PropTypes.string.isRequired,
+  faviconPath: PropTypes.string.isRequired
 };
 
 export default Head;

@@ -31,6 +31,7 @@ const Article = props => {
   }
 
   const Component = templates[template] || ArticleMainStandard;
+
   return (
     <Responsive>
       <MessageManager animate delay={3000} scale={scales.medium}>

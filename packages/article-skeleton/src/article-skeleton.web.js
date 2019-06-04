@@ -52,7 +52,8 @@ class ArticleSkeleton extends Component {
       receiveChildList,
       saveApi,
       spotAccountId,
-      paidContentClassName
+      paidContentClassName,
+      faviconPath
     } = this.props;
 
     const {
@@ -106,6 +107,7 @@ class ArticleSkeleton extends Component {
                 <Head
                   article={article}
                   paidContentClassName={paidContentClassName}
+                  faviconPath={faviconPath}
                 />
                 <AdComposer adConfig={adConfig}>
                   <LazyLoad rootMargin={spacing(10)} threshold={0.5}>

@@ -12,7 +12,8 @@ module.exports = (
     makeArticleUrl,
     makeTopicUrl,
     spotAccountId,
-    paidContentClassName
+    paidContentClassName,
+    faviconPath
   },
   userState
 ) => {
@@ -55,7 +56,8 @@ module.exports = (
       mapArticleToAdConfig: defaultAdConfig,
       spotAccountId,
       userState,
-      paidContentClassName
+      paidContentClassName,
+      faviconPath
     },
     name: "article"
   };
