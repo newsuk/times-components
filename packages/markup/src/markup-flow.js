@@ -95,7 +95,7 @@ export default ({ fontFamily, Bold, Italic, Body }) => ({
       })
     };
   },
-  text(key, { value }) {
+  text(key, { value, parent }) {
     return {
       element: new Body(value)
     };

@@ -72,7 +72,15 @@ export default ({
         })
       };
     },
-    dropCap(key, { value }) {
+    dropCap(key, attributes, children, indx, node) {
+      let value = node
+      while (typeof value !== 'string') {
+        if (value.name === 'text') {
+          value = value.attributes.value
+        } else {
+          value = value.children[0]
+        } 
+      }
       const height = lineHeight * 3 * fontScale;
       const text = new Text.Text({
         font: fonts[dropCapFont],
