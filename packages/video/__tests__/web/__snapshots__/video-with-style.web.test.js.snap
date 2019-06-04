@@ -12,7 +12,9 @@ exports[`1. video marked as sky sports 1`] = `
   <div
     style={
       Object {
+        "height": 200,
         "position": "relative",
+        "width": 300,
       }
     }
   >
@@ -61,7 +63,9 @@ exports[`2. 360 video 1`] = `
   <div
     style={
       Object {
+        "height": 200,
         "position": "relative",
+        "width": 300,
       }
     }
   >

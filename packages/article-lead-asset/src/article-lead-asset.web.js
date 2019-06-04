@@ -31,7 +31,10 @@ const ArticleLeadAsset = ({
     <Video
       accountId={leadAsset.brightcoveAccountId}
       height="100%"
+      id={leadAsset.id}
+      is360={leadAsset.is360}
       paidOnly={leadAsset.paidOnly}
+      playerId={leadAsset.brightcovePlayerId}
       policyKey={leadAsset.brightcovePolicyKey}
       position="absolute"
       poster={{ uri: displayImage.url }}

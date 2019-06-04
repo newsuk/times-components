@@ -47,9 +47,12 @@ const videoProps = {
   ...props,
   isVideo: true,
   leadAsset: {
+    id: "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+    is360: false,
     brightcoveAccountId: "1234",
     brightcovePolicyKey: "policyKey",
     brightcoveVideoId: "5678",
+    brightcovePlayerId: "3456",
     posterImage: imageLeadAsset
   },
   onVideoPress() {}

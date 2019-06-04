@@ -87,6 +87,9 @@ exports[`2. renders correctly with a video lead asset 1`] = `
         <Video
           accountId="1234"
           height="100%"
+          id="aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+          is360={false}
+          playerId="3456"
           policyKey="policyKey"
           position="absolute"
           poster={

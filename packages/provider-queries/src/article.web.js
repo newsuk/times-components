@@ -23,13 +23,16 @@ export default addTypenameToDocument(gql`
       keywords
       leadAsset {
         ... on Video {
+          id
           brightcoveAccountId
           brightcovePolicyKey
           brightcoveVideoId
+          brightcovePlayerId
           posterImage {
             ...imageProps
           }
           skySports
+          is360
         }
         ... on Image {
           ...imageProps

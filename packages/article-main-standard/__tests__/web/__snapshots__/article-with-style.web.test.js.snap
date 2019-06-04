@@ -479,6 +479,8 @@ exports[`full article with style 1`] = `
 }
 
 .IS5 {
+  height: 100%;
+  width: 100%;
   position: relative;
 }
 

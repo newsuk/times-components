@@ -1,6 +1,8 @@
 const videoProps = {
   accountId: "[account id]",
   height: 200,
+  id: "[tpa video id]",
+  is360: false,
   onVideoPress: () => {},
   paidOnly: false,
   playerId: "default",

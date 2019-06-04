@@ -169,9 +169,12 @@ const renderers = ({ observed, registerNode, paidContentClassName }) => ({
   video(
     key,
     {
+      id,
+      is360,
       brightcovePolicyKey,
       brightcoveVideoId,
       brightcoveAccountId,
+      brightcovePlayerId,
       caption,
       posterImageUrl,
       skysports
@@ -184,8 +187,11 @@ const renderers = ({ observed, registerNode, paidContentClassName }) => ({
           <figure style={{ margin: 0 }}>
             <AspectRatioContainer aspectRatio="16:9">
               <Video
+                id={id}
+                is360={is360}
                 accountId={brightcoveAccountId}
                 height="100%"
+                playerId={brightcovePlayerId}
                 policyKey={brightcovePolicyKey}
                 poster={{ uri: posterImageUrl }}
                 skySports={skysports}

@@ -4,6 +4,7 @@ import React from "react";
 import Video from "./src/video";
 import IsPaidSubscriber from "./src/is-paid-subscriber";
 
+const id = "3dbfe6b8-680b-11e9-b277-88f3d445182c";
 const policyKey =
   "BCpkADawqM0NK0Rq8n6sEQyWykemrqeSmIQqqVt3XBrdpl8TYlvqN3hwKphBJRnkPgx6WAbozCW_VgTOBCNf1AQRh8KnmXSXfveQalRc5-pyNlSod5XzP99If2U";
 const accountId = "5436121857001";
@@ -17,6 +18,8 @@ const skySportsPosterImageURI =
 const defaultVideoProps = {
   accountId,
   height: 180,
+  id,
+  is360: false,
   onVideoPress: () => {
     Alert.alert(
       "onVideoPress called",
@@ -37,6 +40,8 @@ const skySportsVideoProps = {
     uri: skySportsPosterImageURI
   }
 };
+
+const mockId = "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee";
 
 export default {
   children: [
@@ -68,7 +73,11 @@ export default {
     },
     {
       component: () => {
-        const props = { playerId: "y4yoiFCf1", videoId: "5992442066001" };
+        const props = {
+          playerId: "y4yoiFCf1",
+          videoId: "5992442066001",
+          is360: true
+        };
         return (
           <View>
             <Text
@@ -88,7 +97,13 @@ export default {
             >
               Desktop size:
             </Text>
-            <Video {...defaultVideoProps} {...props} height={374} width={664} />
+            <Video
+              {...defaultVideoProps}
+              {...props}
+              height={374}
+              width={664}
+              id={mockId}
+            />
           </View>
         );
       },
@@ -101,7 +116,7 @@ export default {
         <View>
           <Video {...defaultVideoProps} />
           <View style={{ height: 20 }} />
-          <Video {...defaultVideoProps} videoId="5612887446001" />
+          <Video {...defaultVideoProps} videoId="5612887446001" id={mockId} />
         </View>
       ),
       name: "two players with different videos",

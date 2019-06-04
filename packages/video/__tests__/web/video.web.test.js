@@ -65,17 +65,17 @@ const tests = [
     name: "360 video",
     test: () => {
       const testInstance = TestRenderer.create(
-        <Video {...defaultVideoProps} playerId="foo" />
+        <Video {...defaultVideoProps} is360 />
       );
 
       expect(testInstance.toJSON()).toMatchSnapshot();
     }
   },
   {
-    name: "no sky banner displayed on play",
+    name: "player icon for 360 video not displayed after play",
     test: () => {
       const testInstance = TestRenderer.create(
-        <Video {...defaultVideoProps} playerId="foo" />
+        <Video {...defaultVideoProps} is360 />
       );
 
       const VideoComponent = testInstance.root.findAllByType(InlineVideoPlayer);

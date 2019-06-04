@@ -44,8 +44,6 @@ div[data-is-360="true"] button.vjs-big-play-button {
 `;
 
 class InlineVideoPlayer extends Component {
-  static index = 0;
-
   static scriptLoadError = false;
 
   static activePlayers = [];
@@ -76,8 +74,7 @@ class InlineVideoPlayer extends Component {
       hasVideoPlayed: false
     };
 
-    InlineVideoPlayer.index += 1;
-    this.id = `${props.videoId}-${props.accountId}-${InlineVideoPlayer.index}`;
+    this.id = `${props.videoId}-${props.accountId}-${props.id}`;
   }
 
   componentDidMount() {
@@ -169,28 +166,27 @@ class InlineVideoPlayer extends Component {
       videoId,
       accountId,
       playerId,
-      skySports
+      skySports,
+      is360
     } = this.props;
     const { error, hasVideoPlayed } = this.state;
-    const is360Video = playerId !== "default"; // Will get an explicit boolean from CMS and this inference can then go
-
     if (error) {
-      throw new Error(); // caught by parent ErrorView
+      throw new Error("Can't load video"); // caught by parent ErrorView
     }
 
     return (
       /* eslint jsx-a11y/media-has-caption: "off" */
       // Added a wrapping div as brightcove adds siblings to the video tag
       <div
-        data-is-360={is360Video}
+        data-is-360={is360}
         data-testid="video-component"
         style={{ height, width }}
       >
-        <div style={{ position: "relative" }}>
+        <div style={{ height, width, position: "relative" }}>
           {!hasVideoPlayed && (
             <Fragment>
               {skySports && <SkySportsBanner />}
-              {is360Video && <Video360Icon />}
+              {is360 && <Video360Icon />}
             </Fragment>
           )}
           <video

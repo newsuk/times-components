@@ -457,6 +457,8 @@ exports[`full article with style 1`] = `
 }
 
 .IS4 {
+  height: 100%;
+  width: 100%;
   position: relative;
 }
 

@@ -264,7 +264,7 @@ exports[`Article with user state Render Metered expired article when user is log
                       data-embed="default"
                       data-player="default"
                       data-video-id="4084164751001"
-                      id="4084164751001-57838016001-4"
+                      id="4084164751001-57838016001-3dbfe6b8-680b-11e9-b277-88f3d445182c"
                       poster="https://image.io"
                     />
                   </div>
@@ -718,7 +718,7 @@ exports[`Article with user state Render full article when user is logged in 1`] 
                       data-embed="default"
                       data-player="default"
                       data-video-id="4084164751001"
-                      id="4084164751001-57838016001-1"
+                      id="4084164751001-57838016001-3dbfe6b8-680b-11e9-b277-88f3d445182c"
                       poster="https://image.io"
                     />
                   </div>
@@ -1043,7 +1043,7 @@ exports[`Article with user state Render teaser article when user is not logged i
                       data-embed="default"
                       data-player="default"
                       data-video-id="4084164751001"
-                      id="4084164751001-57838016001-2"
+                      id="4084164751001-57838016001-3dbfe6b8-680b-11e9-b277-88f3d445182c"
                       poster="https://image.io"
                     />
                   </div>
@@ -1368,7 +1368,7 @@ exports[`Article with user state Render teaser article when user is null 1`] = `
                       data-embed="default"
                       data-player="default"
                       data-video-id="4084164751001"
-                      id="4084164751001-57838016001-3"
+                      id="4084164751001-57838016001-3dbfe6b8-680b-11e9-b277-88f3d445182c"
                       poster="https://image.io"
                     />
                   </div>
