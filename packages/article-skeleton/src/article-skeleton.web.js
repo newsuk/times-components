@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from "react";
+import PropTypes from "prop-types";
 import Ad, { AdComposer } from "@times-components/ad";
 import ArticleExtras from "@times-components/article-extras";
 import LazyLoad from "@times-components/lazy-load";
@@ -50,7 +51,8 @@ class ArticleSkeleton extends Component {
       Header,
       receiveChildList,
       saveApi,
-      spotAccountId
+      spotAccountId,
+      paidContentClassName
     } = this.props;
 
     const {
@@ -145,6 +147,7 @@ class ArticleSkeleton extends Component {
                               observed={observed}
                               registerNode={registerNode}
                               section={section}
+                              paidContentClassName={paidContentClassName}
                             />
                             <ArticleExtras
                               analyticsStream={analyticsStream}
@@ -176,7 +179,10 @@ class ArticleSkeleton extends Component {
   }
 }
 
-ArticleSkeleton.propTypes = articleSkeletonPropTypes;
+ArticleSkeleton.propTypes = {
+  ...articleSkeletonPropTypes,
+  paidContentClassName: PropTypes.string
+};
 ArticleSkeleton.defaultProps = articleSkeletonDefaultProps;
 
 export default articleTrackingContext(withTrackScrollDepth(ArticleSkeleton));

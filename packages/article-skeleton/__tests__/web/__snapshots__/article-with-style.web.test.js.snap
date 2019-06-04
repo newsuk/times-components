@@ -416,7 +416,7 @@ exports[`full article with style 1`] = `
         Some Link
       </Link>
       <span
-        className="paywall"
+        className="paidContentClassName"
       >
         <p
           className="c6"

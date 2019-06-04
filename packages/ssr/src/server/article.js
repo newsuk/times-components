@@ -6,7 +6,14 @@ const defaultAdConfig = require("../lib/ads/make-article-ad-config")
 module.exports = (
   articleId,
   headers,
-  { graphqlApiUrl, logger, makeArticleUrl, makeTopicUrl, spotAccountId },
+  {
+    graphqlApiUrl,
+    logger,
+    makeArticleUrl,
+    makeTopicUrl,
+    spotAccountId,
+    paidContentClassName
+  },
   userState
 ) => {
   if (typeof articleId !== "string") {
@@ -47,7 +54,8 @@ module.exports = (
       makeTopicUrl,
       mapArticleToAdConfig: defaultAdConfig,
       spotAccountId,
-      userState
+      userState,
+      paidContentClassName
     },
     name: "article"
   };

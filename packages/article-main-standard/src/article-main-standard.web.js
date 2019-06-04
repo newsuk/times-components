@@ -76,7 +76,8 @@ class ArticlePage extends Component {
       isLoading,
       receiveChildList,
       saveApi,
-      spotAccountId
+      spotAccountId,
+      paidContentClassName
     } = this.props;
 
     if (error || isLoading) {
@@ -92,6 +93,7 @@ class ArticlePage extends Component {
         receiveChildList={receiveChildList}
         saveApi={saveApi}
         spotAccountId={spotAccountId}
+        paidContentClassName={paidContentClassName}
       />
     );
   }
