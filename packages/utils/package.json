@@ -50,6 +50,7 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
+    "@times-components/context": "1.0.14",
     "@times-components/schema": "0.6.12",
     "@times-components/styleguide": "3.28.22",
     "apollo-cache-inmemory": "1.5.1",
