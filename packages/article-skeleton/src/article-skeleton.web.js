@@ -5,8 +5,12 @@ import ArticleExtras from "@times-components/article-extras";
 import LazyLoad from "@times-components/lazy-load";
 import { spacing } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
-import Context from "@times-components/context";
-import { isLoggedIn, isMeteredExpired } from "@times-components/utils";
+import {
+  isLoggedIn,
+  isMeteredExpired,
+  isShared,
+  ClientUserStateConsumer
+} from "@times-components/utils";
 import { MessageContext } from "@times-components/message-bar";
 import ArticleBody from "./article-body/article-body";
 import {
@@ -26,6 +30,14 @@ import StickySaveAndShareBar from "./sticky-save-and-share-bar";
 const adStyle = {
   marginBottom: 0
 };
+
+function isNonExpiredUser(user) {
+  return isLoggedIn(user) && !isMeteredExpired(user);
+}
+
+function shouldShowFullArticle(user) {
+  return isShared(user) || isNonExpiredUser(user);
+}
 
 class ArticleSkeleton extends Component {
   constructor(props) {
@@ -94,31 +106,32 @@ class ArticleSkeleton extends Component {
           this.node = node;
         }}
       >
-        <Context.Consumer>
-          {({ user }) => {
-            const isUserLoggedIn = isLoggedIn(user);
-            const isAllowed = isUserLoggedIn && !isMeteredExpired(user);
-            const shouldRenderSaveAndShare =
-              (savingEnabled || sharingEnabled) && isUserLoggedIn;
-
-            return (
+        <Head article={article} />
+        <AdComposer adConfig={adConfig}>
+          <LazyLoad rootMargin={spacing(10)} threshold={0.5}>
+            {({ observed, registerNode }) => (
               <Fragment>
-                <Head article={article} />
-                <AdComposer adConfig={adConfig}>
-                  <LazyLoad rootMargin={spacing(10)} threshold={0.5}>
-                    {({ observed, registerNode }) => (
-                      <Fragment>
-                        <HeaderAdContainer key="headerAd">
-                          <Ad
-                            contextUrl={url}
-                            section={section}
-                            slotName="header"
-                            style={adStyle}
-                          />
-                        </HeaderAdContainer>
-                        <MainContainer>
+                <HeaderAdContainer key="headerAd">
+                  <Ad
+                    contextUrl={url}
+                    section={section}
+                    slotName="header"
+                    style={adStyle}
+                  />
+                </HeaderAdContainer>
+                <MainContainer>
+                  <ClientUserStateConsumer
+                    twoPassRenderSlowly={({ user }) => {
+                      const showFullArticle = shouldShowFullArticle(user);
+                      const articleNeedsSaveAndShare =
+                        savingEnabled || sharingEnabled;
+                      const shouldRenderSaveAndShare =
+                        articleNeedsSaveAndShare && showFullArticle;
+
+                      return (
+                        <Fragment>
                           <Header
-                            topicsAllowed={isUserLoggedIn}
+                            topicsAllowed={showFullArticle}
                             width={articleWidth}
                           />
                           {shouldRenderSaveAndShare && (
@@ -134,46 +147,57 @@ class ArticleSkeleton extends Component {
                                   onSaveToMyArticles={() => {}}
                                   onShareOnEmail={() => {}}
                                   saveApi={saveApi}
-                                  savingEnabled={savingEnabled}
+                                  savingEnabled={
+                                    savingEnabled && isLoggedIn(user)
+                                  }
                                   sharingEnabled={sharingEnabled}
+                                  shouldTokeniseShareLinks={isLoggedIn(user)}
                                 />
                               )}
                             </MessageContext.Consumer>
                           )}
-                          <BodyContainer>
-                            <ArticleBody
-                              content={newContent}
-                              contextUrl={url}
-                              observed={observed}
-                              registerNode={registerNode}
-                              section={section}
-                              paidContentClassName={paidContentClassName}
-                            />
-                            <ArticleExtras
-                              analyticsStream={analyticsStream}
-                              articleId={articleId}
-                              commentsAllowed={isAllowed}
-                              commentsEnabled={commentsEnabled}
-                              registerNode={registerNode}
-                              relatedArticleAllowed={isAllowed}
-                              relatedArticleSlice={relatedArticleSlice}
-                              relatedArticlesVisible={
-                                !!observed.get("related-articles")
-                              }
-                              spotAccountId={spotAccountId}
-                              topics={topics}
-                              topicsAllowed={isAllowed}
-                            />
-                          </BodyContainer>
-                        </MainContainer>
-                      </Fragment>
-                    )}
-                  </LazyLoad>
-                </AdComposer>
+                        </Fragment>
+                      );
+                    }}
+                  />
+                  <BodyContainer>
+                    <ArticleBody
+                      content={newContent}
+                      contextUrl={url}
+                      observed={observed}
+                      registerNode={registerNode}
+                      section={section}
+                      paidContentClassName={paidContentClassName}
+                    />
+                    <ClientUserStateConsumer
+                      twoPassRenderSlowly={({ user }) => {
+                        const notExpired = isNonExpiredUser(user);
+
+                        return (
+                          <ArticleExtras
+                            analyticsStream={analyticsStream}
+                            articleId={articleId}
+                            commentsAllowed={notExpired}
+                            commentsEnabled={commentsEnabled}
+                            registerNode={registerNode}
+                            relatedArticleAllowed={notExpired}
+                            relatedArticleSlice={relatedArticleSlice}
+                            relatedArticlesVisible={
+                              !!observed.get("related-articles")
+                            }
+                            spotAccountId={spotAccountId}
+                            topics={topics}
+                            topicsAllowed={shouldShowFullArticle(user)}
+                          />
+                        );
+                      }}
+                    />
+                  </BodyContainer>
+                </MainContainer>
               </Fragment>
-            );
-          }}
-        </Context.Consumer>
+            )}
+          </LazyLoad>
+        </AdComposer>
       </article>
     );
   }

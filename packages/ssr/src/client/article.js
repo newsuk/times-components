@@ -12,7 +12,8 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     articleId,
     debounceTimeMs,
     spotAccountId,
-    paidContentClassName
+    paidContentClassName,
+    userState
   } = window.nuk.article;
   const { getCookieValue } = window.nuk;
 
@@ -25,7 +26,7 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     mapArticleToAdConfig,
     spotAccountId,
     paidContentClassName,
-    userState: window.nuk.user
+    userState
   };
 
   const clientOptions = {

@@ -46,23 +46,46 @@ class SaveAndShareBar extends Component {
 
   handleOnShareEmailPress() {
     /* eslint-env browser */
-    const { articleHeadline, articleId, getTokenisedShareUrl } = this.props;
-    this.setState({ isLoading: true });
+    const {
+      articleId,
+      articleUrl,
+      getTokenisedShareUrl,
+      shouldTokeniseShareLinks
+    } = this.props;
 
-    getTokenisedShareUrl(articleId)
-      .then(res => {
-        const { data } = res;
-        if (data) {
+    if (shouldTokeniseShareLinks) {
+      this.setState({ isLoading: true });
+
+      getTokenisedShareUrl(articleId)
+        .then(res => {
+          const { data } = res;
+          if (data) {
+            this.setState({ isLoading: false });
+            const { url } = data.article.tokenisedUrl;
+            this.openMailClient(url);
+          }
+        })
+        .catch(error => {
           this.setState({ isLoading: false });
-          const { url } = data.article.tokenisedUrl;
-          const mailtoEmailUrl = `mailto:?subject=${articleHeadline} from The Times&body=I thought you would be interested in this story from The Times%0A%0A${articleHeadline}%0A%0A${url}`;
-          window.location.assign(mailtoEmailUrl);
-        }
-      })
-      .catch(error => {
-        this.setState({ isLoading: false });
-        console.error("Error in connecting to api", error);
-      });
+          console.error("Error in connecting to api", error);
+        });
+    } else {
+      let url = articleUrl;
+      const matches = window.location.search.match(/[?&]shareToken=([^&]+)/);
+
+      if (matches) {
+        url += `?shareToken=${matches[1]}`;
+      }
+
+      this.openMailClient(url);
+    }
+  }
+
+  openMailClient(url) {
+    const { articleHeadline } = this.props;
+    const mailtoEmailUrl = `mailto:?subject=${articleHeadline} from The Times&body=I thought you would be interested in this story from The Times%0A%0A${articleHeadline}%0A%0A${url}`;
+
+    window.location.assign(mailtoEmailUrl);
   }
 
   render() {
@@ -162,15 +185,17 @@ SaveAndShareBar.propTypes = {
     getBookmarks: PropTypes.func.isRequired,
     unBookmark: PropTypes.func.isRequired
   }).isRequired,
-  savingEnabled: PropTypes.func.isRequired,
-  sharingEnabled: PropTypes.func.isRequired
+  savingEnabled: PropTypes.bool.isRequired,
+  sharingEnabled: PropTypes.bool.isRequired,
+  shouldTokeniseShareLinks: PropTypes.bool
 };
 
 /* Serves as an indication when share links are clicked for tracking and analytics */
 SaveAndShareBar.defaultProps = {
   onShareOnFB: () => {},
   onShareOnTwitter: () => {},
-  getTokenisedShareUrl: getTokenisedArticleUrlApi
+  getTokenisedShareUrl: getTokenisedArticleUrlApi,
+  shouldTokeniseShareLinks: true
 };
 
 export default withTrackEvents(SaveAndShareBar);
