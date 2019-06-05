@@ -25,7 +25,7 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     getCookieValue,
     userState,
     paidContentClassName,
-    faviconPath
+    faviconUrl
   } = data;
 
   return React.createElement(
@@ -73,7 +73,7 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
                 refetch,
                 spotAccountId,
                 paidContentClassName,
-                faviconPath
+                faviconUrl
               })
             )
         )

@@ -78,7 +78,7 @@ class ArticlePage extends Component {
       saveApi,
       spotAccountId,
       paidContentClassName,
-      faviconPath
+      faviconUrl
     } = this.props;
 
     if (error || isLoading) {
@@ -95,7 +95,7 @@ class ArticlePage extends Component {
         saveApi={saveApi}
         spotAccountId={spotAccountId}
         paidContentClassName={paidContentClassName}
-        faviconPath={faviconPath}
+        faviconUrl={faviconUrl}
       />
     );
   }

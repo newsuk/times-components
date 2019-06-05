@@ -57,6 +57,11 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
       content="https://crop169.io"
       name="twitter:image"
     />
+    <script
+      type="application/ld+json"
+    >
+      {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Short Headline","publisher":{"@type":"Organization","name":"The Times"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io"}
+    </script>
   </Helmet>
   <div>
     <Ad
@@ -247,6 +252,11 @@ exports[`4. an article with ads 1`] = `
       content="https://crop169.io"
       name="twitter:image"
     />
+    <script
+      type="application/ld+json"
+    >
+      {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io"}
+    </script>
   </Helmet>
   <div>
     <Ad

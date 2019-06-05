@@ -34,7 +34,7 @@ addSerializers(
 
 const article = articleFixture({ ...testFixture });
 const paidContentClassName = "class-name";
-const faviconPath = "favicon/path";
+const faviconUrl = "https://www.thetimes.co.uk/d/img/icons/favicon.ico";
 
 describe("Head", () => {
   it("outputs correct metadata", () => {
@@ -42,7 +42,7 @@ describe("Head", () => {
       <Head
         article={article}
         paidContentClassName={paidContentClassName}
-        faviconPath={faviconPath}
+        faviconUrl={faviconUrl}
       />
     );
 
