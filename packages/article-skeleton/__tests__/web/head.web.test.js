@@ -34,12 +34,16 @@ addSerializers(
 
 const article = articleFixture({ ...testFixture });
 const paidContentClassName = "class-name";
-const faviconPath = 'favicon/path'
+const faviconPath = "favicon/path";
 
 describe("Head", () => {
   it("outputs correct metadata", () => {
     const testRenderer = TestRenderer.create(
-      <Head article={article} paidContentClassName={paidContentClassName} faviconPath={faviconPath} />
+      <Head
+        article={article}
+        paidContentClassName={paidContentClassName}
+        faviconPath={faviconPath}
+      />
     );
 
     expect(testRenderer).toMatchSnapshot();
