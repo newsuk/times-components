@@ -163,7 +163,6 @@ exports[`save and share bar component email icon with loading state while networ
     }
   >
     <SaveStarWeb
-      articleHeadline="test-headline"
       articleId="96508c84-6611-11e9-adc2-05e1b87efaea"
       colour="#696969"
       height={18}
@@ -296,7 +295,6 @@ exports[`save and share bar component save and share bar renders correctly 1`] =
     }
   >
     <SaveStarWeb
-      articleHeadline="test-headline"
       articleId="96508c84-6611-11e9-adc2-05e1b87efaea"
       colour="#696969"
       height={18}
