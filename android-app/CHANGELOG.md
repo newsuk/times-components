@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.14.87](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.14.86...@times-components/android-app@0.14.87) (2019-06-06)
+
+
+### Bug Fixes
+
+* save-star-web tests ([#2010](https://github.com/newsuk/times-components/issues/2010)) ([5fca4ae](https://github.com/newsuk/times-components/commit/5fca4ae))
+
+
+
+
+
 ## [0.14.86](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.14.85...@times-components/android-app@0.14.86) (2019-06-06)
 
 **Note:** Version bump only for package @times-components/android-app
