@@ -56,30 +56,11 @@ export default () => {
       expect(testInstance).toMatchSnapshot();
     });
 
-    it("check if bookmark api method is invoked", async () => {
-      const bookmark = jest.fn().mockResolvedValue();
-      const testInstance = TestRenderer.create(
-        <SaveStarWeb
-          articleId={savedId}
-          saveApi={{
-            ...mockSaveApi,
-            bookmark
-          }}
-          onSaveButtonPress={jest.fn(cb => cb())}
-        />
-      );
-
-      const [saveStarLink] = testInstance.root.findAllByType(Link);
-      await saveStarLink.props.onPress();
-
-      expect(bookmark).toHaveBeenCalled();
-    });
-
     it("check if unBookmark api method is invoked", async () => {
       const unBookmark = jest.fn().mockResolvedValue();
       const testInstance = TestRenderer.create(
         <SaveStarWeb
-          articleId={notSavedId}
+          articleId={savedId}
           saveApi={{
             ...mockSaveApi,
             unBookmark
@@ -89,12 +70,30 @@ export default () => {
       );
 
       const [saveStarLink] = testInstance.root.findAllByType(Link);
+      await delay(0);
       await saveStarLink.props.onPress();
 
-      const [unSaveStarLink] = testInstance.root.findAllByType(Link);
-      await unSaveStarLink.props.onPress();
-
       expect(unBookmark).toHaveBeenCalled();
+    });
+
+    it("check if bookmark api method is invoked", async () => {
+      const bookmark = jest.fn().mockResolvedValue();
+      const testInstance = TestRenderer.create(
+        <SaveStarWeb
+          articleId={notSavedId}
+          saveApi={{
+            ...mockSaveApi,
+            bookmark
+          }}
+          onSaveButtonPress={jest.fn(cb => cb())}
+        />
+      );
+
+      const [saveStarLink] = testInstance.root.findAllByType(Link);
+      await delay(0);
+      await saveStarLink.props.onPress();
+
+      expect(bookmark).toHaveBeenCalled();
     });
   });
 };
