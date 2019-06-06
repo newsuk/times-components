@@ -11,6 +11,10 @@ export default {
     scale: scales.medium
   },
   user: {
-    isLoggedIn: false
+    isLoggedIn: false,
+    isMetered: false,
+    isMeteredExpired: false,
+    isShared: false,
+    registrationType: ""
   }
 };

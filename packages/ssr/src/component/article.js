@@ -55,9 +55,7 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
                     ...themeFactory(article.section, article.template),
                     scale: scale || defaults.theme.scale
                   },
-                  user: {
-                    isLoggedIn: userState.isLoggedIn
-                  }
+                  user: userState
                 }
               },
               React.createElement(Article, {
