@@ -7,7 +7,7 @@ import articleSkeletonProps from "../shared-article-skeleton-props";
 import shared from "../shared-tracking";
 
 beforeEach(() => {
-  global.nuk = { user: { isLoggedIn: true } }
+  global.nuk = { user: { registrationType: "logged out" } };
 });
 
 afterEach(() => {
@@ -32,13 +32,13 @@ it("analytics when rendering a shared Article page with metered access", () => {
       analyticsStream={stream}
       data={articleFixture()}
       Header={() => null}
-      onAuthorPress={() => { }}
-      onCommentGuidelinesPress={() => { }}
-      onCommentsPress={() => { }}
-      onLinkPress={() => { }}
-      onRelatedArticlePress={() => { }}
-      onTwitterLinkPress={() => { }}
-      onVideoPress={() => { }}
+      onAuthorPress={() => {}}
+      onCommentGuidelinesPress={() => {}}
+      onCommentsPress={() => {}}
+      onLinkPress={() => {}}
+      onRelatedArticlePress={() => {}}
+      onTwitterLinkPress={() => {}}
+      onVideoPress={() => {}}
     />
   );
   expect(stream.mock.calls).toMatchSnapshot();
