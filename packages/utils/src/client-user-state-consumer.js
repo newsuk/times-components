@@ -14,44 +14,38 @@
  */
 
 /* eslint-env browser */
+/* eslint-disable react/require-default-props */
 
-import React, { Component } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import Context from "@times-components/context";
+import ServerClientRender from "./server-client-render";
 
-class ClientUserStateConsumer extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { isClient: false };
-  }
+// Using React Components for the Client/Server for performance reasons
+function Client({ children, user }) {
+  return children({ user: { ...user, ...window.nuk.user } });
+}
 
-  componentDidMount() {
-    this.setState({ isClient: true });
-  }
+function Server({ children, user }) {
+  return children({ user });
+}
 
-  render() {
-    return (
-      <Context.Consumer>
-        {({ user }) => {
-          const { isClient } = this.state;
-          const { twoPassRenderSlowly } = this.props;
-
-          return twoPassRenderSlowly({
-            user: isClient
-              ? {
-                  ...user,
-                  ...window.nuk.user
-                }
-              : user
-          });
-        }}
-      </Context.Consumer>
-    );
-  }
+function ClientUserStateConsumer({ children, serverRender = true }) {
+  return (
+    <Context.Consumer>
+      {({ user }) => (
+        <ServerClientRender
+          client={<Client {...{ children, user }} />}
+          server={serverRender ? <Server {...{ children, user }} /> : null}
+        />
+      )}
+    </Context.Consumer>
+  );
 }
 
 ClientUserStateConsumer.propTypes = {
-  twoPassRenderSlowly: PropTypes.func.isRequired
+  children: PropTypes.func.isRequired,
+  serverRender: PropTypes.bool
 };
 
 export default ClientUserStateConsumer;

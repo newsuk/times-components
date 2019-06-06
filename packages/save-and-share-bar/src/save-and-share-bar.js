@@ -1,30 +1,23 @@
+/* eslint-env browser */
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { ActivityIndicator, View, Text, Clipboard } from "react-native";
-import {
-  IconEmail,
-  IconFacebook,
-  IconTwitter,
-  IconCopyLink
-} from "@times-components/icons";
+import { View, Clipboard } from "react-native";
+import { IconFacebook, IconTwitter, IconCopyLink } from "@times-components/icons";
 import SaveStar from "@times-components/save-star-web";
+import { UserState } from "@times-components/utils";
 import getTokenisedArticleUrlApi from "./get-tokenised-article-url-api";
 import withTrackEvents from "./tracking/with-track-events";
 import SharingApiUrls from "./constants";
 import styles from "./styles";
 import BarItem from "./bar-item";
+import EmailShare from "./email-share";
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
 class SaveAndShareBar extends Component {
   constructor(props) {
     super(props);
     this.copyToClipboard = this.copyToClipboard.bind(this);
-    this.handleOnShareEmailPress = this.handleOnShareEmailPress.bind(this);
     this.onSaveButtonPress = this.onSaveButtonPress.bind(this);
-
-    this.state = {
-      isLoading: false
-    };
   }
 
   /* eslint-disable class-methods-use-this */
@@ -39,50 +32,6 @@ class SaveAndShareBar extends Component {
     onCopyLink();
   }
 
-  handleOnShareEmailPress() {
-    /* eslint-env browser */
-    const {
-      articleId,
-      articleUrl,
-      getTokenisedShareUrl,
-      shouldTokeniseShareLinks
-    } = this.props;
-
-    if (shouldTokeniseShareLinks) {
-      this.setState({ isLoading: true });
-
-      getTokenisedShareUrl(articleId)
-        .then(res => {
-          const { data } = res;
-          if (data) {
-            this.setState({ isLoading: false });
-            const { url } = data.article.tokenisedUrl;
-            this.openMailClient(url);
-          }
-        })
-        .catch(error => {
-          this.setState({ isLoading: false });
-          console.error("Error in connecting to api", error);
-        });
-    } else {
-      let url = articleUrl;
-      const matches = window.location.search.match(/[?&]shareToken=([^&]+)/);
-
-      if (matches) {
-        url += `?shareToken=${matches[1]}`;
-      }
-
-      this.openMailClient(url);
-    }
-  }
-
-  openMailClient(url) {
-    const { articleHeadline } = this.props;
-    const mailtoEmailUrl = `mailto:?subject=${articleHeadline} from The Times&body=I thought you would be interested in this story from The Times%0A%0A${articleHeadline}%0A%0A${url}`;
-
-    window.location.assign(mailtoEmailUrl);
-  }
-
   render() {
     const {
       articleId,
@@ -94,24 +43,16 @@ class SaveAndShareBar extends Component {
       saveApi
     } = this.props;
 
-    const { isLoading } = this.state;
-
     return (
       <View style={styles.container}>
         {sharingEnabled && (
           <View style={styles.rowItem}>
-            <Text style={styles.label}>Share</Text>
-            <BarItem onPress={this.handleOnShareEmailPress}>
-              {isLoading ? (
-                <ActivityIndicator size="small" style={styles.activityLoader} />
-              ) : (
-                <IconEmail
-                  fillColour="currentColor"
-                  height={styles.svgIcon.height}
-                  title="Share by email client"
-                />
-              )}
-            </BarItem>
+            <UserState
+              state={UserState.loggedIn}
+              fallback={<EmailShare {...this.props} shouldTokenise={false} />}
+            >
+              <EmailShare {...this.props} shouldTokenise />
+            </UserState>
             <BarItem
               onPress={onShareOnTwitter}
               target="_blank"
@@ -147,8 +88,9 @@ class SaveAndShareBar extends Component {
             </BarItem>
           </View>
         )}
-        {savingEnabled && (
-          <View style={styles.rowItem}>
+        {savingEnabled ? (
+          <UserState state={UserState.loggedIn} serverRender={false}>
+            <View style={styles.rowItem}>
             <SaveStar
               colour={styles.svgIcon.save.strokeColour}
               hoverColor={styles.svgIcon.hoverFillColour}
@@ -158,7 +100,8 @@ class SaveAndShareBar extends Component {
               onSaveButtonPress={this.onSaveButtonPress}
             />
           </View>
-        )}
+        </UserState>
+        ) : null}
       </View>
     );
   }
@@ -179,16 +122,14 @@ SaveAndShareBar.propTypes = {
     unBookmark: PropTypes.func.isRequired
   }).isRequired,
   savingEnabled: PropTypes.bool.isRequired,
-  sharingEnabled: PropTypes.bool.isRequired,
-  shouldTokeniseShareLinks: PropTypes.bool
+  sharingEnabled: PropTypes.bool.isRequired
 };
 
 /* Serves as an indication when share links are clicked for tracking and analytics */
 SaveAndShareBar.defaultProps = {
   onShareOnFB: () => {},
   onShareOnTwitter: () => {},
-  getTokenisedShareUrl: getTokenisedArticleUrlApi,
-  shouldTokeniseShareLinks: true
+  getTokenisedShareUrl: getTokenisedArticleUrlApi
 };
 
 export default withTrackEvents(SaveAndShareBar);

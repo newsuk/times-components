@@ -5,12 +5,7 @@ import ArticleExtras from "@times-components/article-extras";
 import LazyLoad from "@times-components/lazy-load";
 import { spacing } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
-import {
-  isLoggedIn,
-  isMeteredExpired,
-  isShared,
-  ClientUserStateConsumer
-} from "@times-components/utils";
+import { UserState } from "@times-components/utils";
 import { MessageContext } from "@times-components/message-bar";
 import ArticleBody from "./article-body/article-body";
 import {
@@ -30,14 +25,6 @@ import StickySaveAndShareBar from "./sticky-save-and-share-bar";
 const adStyle = {
   marginBottom: 0
 };
-
-function isNonExpiredUser(user) {
-  return isLoggedIn(user) && !isMeteredExpired(user);
-}
-
-function shouldShowFullArticle(user) {
-  return isShared(user) || isNonExpiredUser(user);
-}
 
 class ArticleSkeleton extends Component {
   constructor(props) {
@@ -125,46 +112,28 @@ class ArticleSkeleton extends Component {
                   />
                 </HeaderAdContainer>
                 <MainContainer>
-                  <ClientUserStateConsumer
-                    twoPassRenderSlowly={({ user }) => {
-                      const showFullArticle = shouldShowFullArticle(user);
-                      const articleNeedsSaveAndShare =
-                        savingEnabled || sharingEnabled;
-                      const shouldRenderSaveAndShare =
-                        articleNeedsSaveAndShare && showFullArticle;
-
-                      return (
-                        <Fragment>
-                          <Header
-                            topicsAllowed={showFullArticle}
-                            width={articleWidth}
+                  <Header width={articleWidth} />
+                  {savingEnabled || sharingEnabled ? (
+                    <UserState state={UserState.fullArticle}>
+                      <MessageContext.Consumer>
+                        {({ showMessage }) => (
+                          <StickySaveAndShareBar
+                            articleId={articleId}
+                            articleHeadline={headline}
+                            articleUrl={url}
+                            onCopyLink={() =>
+                              showMessage("Article link copied")
+                            }
+                            onSaveToMyArticles={() => {}}
+                            onShareOnEmail={() => {}}
+                            saveApi={saveApi}
+                            savingEnabled={savingEnabled}
+                            sharingEnabled={sharingEnabled}
                           />
-                          {shouldRenderSaveAndShare && (
-                            <MessageContext.Consumer>
-                              {({ showMessage }) => (
-                                <StickySaveAndShareBar
-                                  articleId={articleId}
-                                  articleHeadline={headline}
-                                  articleUrl={url}
-                                  onCopyLink={() =>
-                                    showMessage("Article link copied")
-                                  }
-                                  onSaveToMyArticles={() => {}}
-                                  onShareOnEmail={() => {}}
-                                  saveApi={saveApi}
-                                  savingEnabled={
-                                    savingEnabled && isLoggedIn(user)
-                                  }
-                                  sharingEnabled={sharingEnabled}
-                                  shouldTokeniseShareLinks={isLoggedIn(user)}
-                                />
-                              )}
-                            </MessageContext.Consumer>
-                          )}
-                        </Fragment>
-                      );
-                    }}
-                  />
+                        )}
+                      </MessageContext.Consumer>
+                    </UserState>
+                  ) : null}
                   <BodyContainer>
                     <ArticleBody
                       content={newContent}
@@ -174,28 +143,17 @@ class ArticleSkeleton extends Component {
                       section={section}
                       paidContentClassName={paidContentClassName}
                     />
-                    <ClientUserStateConsumer
-                      twoPassRenderSlowly={({ user }) => {
-                        const notExpired = isNonExpiredUser(user);
-
-                        return (
-                          <ArticleExtras
-                            analyticsStream={analyticsStream}
-                            articleId={articleId}
-                            commentsAllowed={notExpired}
-                            commentsEnabled={commentsEnabled}
-                            registerNode={registerNode}
-                            relatedArticleAllowed={notExpired}
-                            relatedArticleSlice={relatedArticleSlice}
-                            relatedArticlesVisible={
-                              !!observed.get("related-articles")
-                            }
-                            spotAccountId={spotAccountId}
-                            topics={topics}
-                            topicsAllowed={shouldShowFullArticle(user)}
-                          />
-                        );
-                      }}
+                    <ArticleExtras
+                      analyticsStream={analyticsStream}
+                      articleId={articleId}
+                      commentsEnabled={commentsEnabled}
+                      registerNode={registerNode}
+                      relatedArticleSlice={relatedArticleSlice}
+                      relatedArticlesVisible={
+                        !!observed.get("related-articles")
+                      }
+                      spotAccountId={spotAccountId}
+                      topics={topics}
                     />
                   </BodyContainer>
                 </MainContainer>
