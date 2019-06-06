@@ -12,7 +12,7 @@ import {
   articleSkeletonDefaultProps,
   articleSkeletonPropTypes
 } from "./article-skeleton-prop-types";
-import articleTrackingContext from "./article-tracking-context";
+import articleTrackingContext from "./tracking/article-tracking-context";
 import insertDropcapIntoAST from "./dropcap-util";
 import {
   BodyContainer,
