@@ -1,16 +1,19 @@
 import "../mocks.web";
 import React from "react";
 import renderer from "react-test-renderer";
+import mockDate from "mockdate";
 import ArticleSkeleton from "../../src/article-skeleton";
 import articleFixture from "../../fixtures/full-article";
 import articleSkeletonProps from "../shared-article-skeleton-props";
 import shared from "../shared-tracking";
 
 beforeEach(() => {
+  mockDate.set(1514764800000, 0);
   global.nuk = { user: { registrationType: "logged out" } };
 });
 
 afterEach(() => {
+  mockDate.reset();
   global.nuk = {};
 });
 
