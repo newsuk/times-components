@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.15](https://github.com/newsuk/times-components/compare/@times-components/context@1.0.14...@times-components/context@1.0.15) (2019-06-06)
+
+
+### Bug Fixes
+
+* pass whole userState object by SSR to the TC consumers ([#2015](https://github.com/newsuk/times-components/issues/2015)) ([134133a](https://github.com/newsuk/times-components/commit/134133a))
+
+
+
+
+
 ## [1.0.14](https://github.com/newsuk/times-components/compare/@times-components/context@1.0.13...@times-components/context@1.0.14) (2019-05-31)
 
 **Note:** Version bump only for package @times-components/context

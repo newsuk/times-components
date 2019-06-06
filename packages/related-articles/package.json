@@ -1,6 +1,6 @@
 {
   "name": "@times-components/related-articles",
-  "version": "6.0.34",
+  "version": "6.0.35",
   "description": "related articles of an article",
   "main": "dist/related-articles",
   "dev": "src/related-articles",
@@ -68,7 +68,7 @@
   "dependencies": {
     "@times-components/article-summary": "3.10.52",
     "@times-components/card": "6.0.13",
-    "@times-components/context": "1.0.14",
+    "@times-components/context": "1.0.15",
     "@times-components/link": "3.4.14",
     "@times-components/markup-forest": "1.7.12",
     "@times-components/slice-layout": "0.29.6",
