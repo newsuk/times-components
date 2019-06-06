@@ -10,7 +10,7 @@
     "lint": "eslint . && yarn prettier:diff",
     "test": "jest",
     "prepublishOnly": "yarn transpile && yarn bundle",
-    "watch": "watch 'yarn prepublishOnly && cd ../ssr && yarn prepublishOnly' ./src --ignoreDotFiles --ignoreUnreadable",
+    "watch": "watch 'yarn bundle && cd ../ssr && yarn prepublishOnly' ./src --ignoreDotFiles --ignoreUnreadable",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist",
     "bundle": "NODE_ENV=production webpack -p"

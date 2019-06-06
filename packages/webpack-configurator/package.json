@@ -9,7 +9,6 @@
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff",
     "prepublishOnly": "yarn transpile",
-    "watch": "watch 'yarn prepublishOnly && cd ../ssr && yarn prepublishOnly' ./src --ignoreDotFiles --ignoreUnreadable",
     "test": "jest",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist"
