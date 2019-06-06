@@ -11,12 +11,13 @@ platforms
 
 ### Dev Environment
 
-We require MacOS with [Node.js](https://nodejs.org) (version >=8 with npm v5),
+We require MacOS with [Node.js](https://nodejs.org) (version >=8.10.0 < 10> with npm v5),
 [yarn](https://yarnpkg.com) (latest) and
 [watchman](https://facebook.github.io/watchman) installed. Native development
 requires [Xcode](https://developer.apple.com/xcode),
-[Android Studio](https://developer.android.com/studio/index.html) and
-[JDK 8](http://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html).
+[Android Studio](https://developer.android.com/studio/index.html),
+[JDK 8](http://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html) and
+[pip](https://pip.pypa.io/en/stable/installing/).
 
 You can try without these requirements, but you'd be on your own.
 
