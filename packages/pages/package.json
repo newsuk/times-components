@@ -12,6 +12,7 @@
     "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
     "test:all": "yarn test:android --coverage && yarn test:ios --coverage",
     "prepublishOnly": "yarn transpile",
+    "watch": "watch 'yarn prepublishOnly' ./src --ignoreDotFiles --ignoreUnreadable",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist"
   },

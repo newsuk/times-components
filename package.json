@@ -57,7 +57,8 @@
     "commit": "git-cz",
     "prepublishOnly": "lerna run prepublishOnly",
     "test:e2e": "yarn bundle && lerna run test:integration --stream",
-    "test:e2e:debug": "yarn bundle && lerna run test:integration:debug --stream"
+    "test:e2e:debug": "yarn bundle && lerna run test:integration:debug --stream",
+    "watch": "lerna run watch --stream --no-sort --concurrency 100"
   },
   "jest": {
     "preset": "react-native",
@@ -150,6 +151,7 @@
     "subcommander": "1.0.0",
     "url": "0.11.0",
     "url-polyfill": "1.1.0",
+    "watch": "1.0.2",
     "webpack": "4.30.0"
   },
   "dependencies": {

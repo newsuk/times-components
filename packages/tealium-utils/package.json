@@ -12,6 +12,7 @@
     "prepublishOnly": "yarn transpile && yarn bundle",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src --ignore node_modules,__tests__ -d dist",
+    "watch": "watch 'yarn bundle' ./src --ignoreDotFiles --ignoreUnreadable",
     "bundle": "NODE_ENV=production webpack -p"
   },
   "repository": {

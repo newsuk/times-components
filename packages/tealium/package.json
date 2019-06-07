@@ -11,6 +11,7 @@
     "lint": "eslint . && yarn prettier:diff && yarn depcheck",
     "test:web": "jest --config='./__tests__/web/jest.config.js'",
     "prepublishOnly": "yarn transpile && yarn bundle",
+    "watch": "watch 'yarn bundle' ./src --ignoreDotFiles --ignoreUnreadable",
     "bundle": "NODE_ENV=production webpack -p",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist"
@@ -28,6 +29,7 @@
     "@times-components/eslint-config-thetimes": "0.8.12",
     "@times-components/jest-configurator": "2.5.12",
     "@times-components/test-utils": "2.2.43",
+    "@times-components/webpack-configurator": "2.0.21",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.5",

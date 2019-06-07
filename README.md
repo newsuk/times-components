@@ -98,6 +98,10 @@ To debug our native Storybook:
 6. click _Sources_
 7. expand _debuggerWorker.js_ => _webpack://_ => _._ => _packages_
 
+## Link times-components to the Render project
+
+Follow these steps [here](https://github.com/newsuk/cps-content-render#locally-mount-your-custom-build-of-times-components)
+
 ## Testing and code coverage
 
 | Tests                                      | Covered            | CI                                                            |

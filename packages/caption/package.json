@@ -9,6 +9,7 @@
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "depcheck": "depcheck --ignores='babel-*,depcheck,eslint,jest,prettier,react-art,webpack*' --ignore-bin-package=false --skip-missing",
     "lint": "eslint . && yarn prettier:diff && yarn depcheck",
+    "watch": "watch 'yarn bundle' ./src --ignoreDotFiles --ignoreUnreadable",
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
     "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
     "test:web": "jest --config='./__tests__/web/jest.config.js'",

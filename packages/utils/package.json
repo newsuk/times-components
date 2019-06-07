@@ -12,6 +12,7 @@
     "test": "jest --config='./__tests__/jest.config.js'",
     "prepublishOnly": "yarn transpile && yarn bundle",
     "transpile": "babel src -d dist",
+    "watch": "watch 'yarn bundle' ./src --ignoreDotFiles --ignoreUnreadable",
     "bundle": "NODE_ENV=production webpack -p"
   },
   "repository": {

@@ -11,6 +11,7 @@
     "lint": "eslint . && yarn prettier:diff && yarn depcheck",
     "prepublishOnly": "yarn transpile && yarn bundle",
     "test": "jest --config='./__tests__/jest.config.js'",
+    "watch": "watch 'yarn bundle' ./src --ignoreDotFiles --ignoreUnreadable",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist",
     "bundle": "NODE_ENV=production webpack -p"

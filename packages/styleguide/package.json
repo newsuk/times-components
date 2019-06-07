@@ -16,6 +16,7 @@
     "prepublishOnly": "yarn transpile && yarn bundle",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist",
+    "watch": "watch 'yarn bundle' ./src --ignoreDotFiles --ignoreUnreadable",
     "bundle": "NODE_ENV=production webpack -p"
   },
   "repository": {
@@ -41,6 +42,7 @@
     "@times-components/jest-serializer": "3.2.8",
     "@times-components/storybook": "4.0.9",
     "@times-components/test-utils": "2.2.43",
+    "@times-components/webpack-configurator": "2.0.21",
     "babel-loader": "8.0.5",
     "babel-plugin-add-react-displayname": "0.0.5",
     "babel-plugin-styled-components": "1.10.0",
