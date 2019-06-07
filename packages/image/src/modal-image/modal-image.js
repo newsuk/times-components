@@ -55,6 +55,7 @@ class ModalImage extends Component {
 
   render() {
     const { highResSize, index, onImagePress } = this.props;
+
     if (onImagePress) {
       return (
         <Button onPress={() => onImagePress(index)}>
@@ -130,7 +131,11 @@ class ModalImage extends Component {
           </View>
         </Modal>
         <Button onPress={this.showModal}>
-          <Image {...this.props} onLayout={this.onLowResLayout} />
+          <Image
+            {...this.props}
+            lowResSize={lowResSize}
+            onLayout={this.onLowResLayout}
+          />
         </Button>
       </View>
     );
