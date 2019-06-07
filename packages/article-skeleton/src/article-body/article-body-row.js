@@ -1,3 +1,4 @@
+/* eslint-disable prefer-destructuring */
 import React from "react";
 import { View } from "react-native";
 import ArticleImage from "@times-components/article-image";
@@ -73,21 +74,37 @@ export default ({
       };
     },
     dropCap(key, attributes, children, indx, node) {
-      let value = node
-      while (typeof value !== 'string') {
-        if (value.name === 'text') {
-          value = value.attributes.value
+      let value = node;
+      while (typeof value !== "string") {
+        if (value.name === "text") {
+          value = value.attributes.value;
         } else {
-          value = value.children[0]
-        } 
+          value = value.children[0];
+        }
       }
       const height = lineHeight * 3 * fontScale;
-      const text = new Text.Text({
+      let text = new Text.Text({
         font: fonts[dropCapFont],
         lineHeight: height,
         markup: [new Body(value)],
         size: height
       });
+      if (children.length) {
+        text = children[0];
+        if (text.markup[0].style) {
+          text.markup[0].style.size = height;
+        }
+        text.font = fonts[dropCapFont];
+        text.lineHeight = height;
+        text.size = height;
+        text.layout();
+        value = text.words[0].idealSpans[0];
+        if (value.href) {
+          value = value.href(value);
+        } else {
+          value = value.text;
+        }
+      }
       const capWidth = text.characters[0].getWidth() + 10 * fontScale;
       return {
         element: new Layout.InlineBlock({

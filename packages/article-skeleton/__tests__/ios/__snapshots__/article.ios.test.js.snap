@@ -304,7 +304,39 @@ exports[`3. an article with a nested markup in first paragraph displays no drop 
         <View />
       </View>
       <View>
-        <View />
+        <View>
+          <View>
+            <Text
+              selectable={true}
+            >
+              Q
+            </Text>
+          </View>
+          <View>
+            <View>
+              <Text
+                selectable={true}
+              >
+                 Some years ago I made 
+              </Text>
+              <Text
+                selectable={true}
+              >
+                the decision to take as a 
+              </Text>
+              <Text
+                selectable={true}
+              >
+                friend a woman who is very 
+              </Text>
+              <Text
+                selectable={true}
+              >
+                opinionated.
+              </Text>
+            </View>
+          </View>
+        </View>
       </View>
       <View>
         <View>

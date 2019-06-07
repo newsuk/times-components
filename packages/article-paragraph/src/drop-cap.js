@@ -1,4 +1,4 @@
-import React from "react";
+import React, { cloneElement } from "react";
 import { Text } from "react-native";
 import PropTypes from "prop-types";
 import { ResponsiveContext } from "@times-components/responsive";
@@ -8,6 +8,17 @@ import { propTypes, defaultProps } from "./drop-cap-prop-types";
 const DropCap = props => {
   const { colour, dropCap, font, scale } = props;
   const stylesThemedAndScaled = styleFactory(font, scale);
+  const { color, ...withoutColor } = stylesThemedAndScaled.dropCapTextElement;
+  const value =
+    typeof dropCap === "string"
+      ? dropCap
+      : cloneElement(dropCap, {
+          style: {
+            ...withoutColor,
+            lineHeight: stylesThemedAndScaled.fontSize,
+            textDecorationLine: "none"
+          }
+        });
 
   return (
     <Text
@@ -19,7 +30,7 @@ const DropCap = props => {
         }
       ]}
     >
-      {dropCap}
+      {value}
     </Text>
   );
 };
