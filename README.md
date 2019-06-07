@@ -100,7 +100,7 @@ To debug our native Storybook:
 
 ## Link times-components to the Render project
 
-Follow this steps [here](https://github.com/newsuk/cps-content-render#locally-mount-your-custom-build-of-times-components)
+Follow these steps [here](https://github.com/newsuk/cps-content-render#locally-mount-your-custom-build-of-times-components)
 
 ## Testing and code coverage
 
