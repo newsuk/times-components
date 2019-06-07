@@ -23,7 +23,10 @@ import ServerClientRender from "./server-client-render";
 
 // Using React Components for the Client/Server for performance reasons
 function Client({ children, user }) {
-  return children({ user: { ...user, ...window.nuk.user } });
+  const { nuk = {} } = window;
+  const clientUser = nuk.user || {};
+
+  return children({ user: { ...user, ...clientUser } });
 }
 
 function Server({ children, user }) {
