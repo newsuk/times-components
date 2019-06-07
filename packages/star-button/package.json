@@ -1,6 +1,6 @@
 {
   "name": "@times-components/star-button",
-  "version": "0.1.43",
+  "version": "0.1.44",
   "description": "Star button",
   "main": "dist/star-button",
   "dev": "src/star-button",
@@ -56,9 +56,9 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/icons": "2.11.10",
-    "@times-components/link": "3.4.14",
-    "@times-components/styleguide": "3.28.21",
+    "@times-components/icons": "2.11.11",
+    "@times-components/link": "3.4.15",
+    "@times-components/styleguide": "3.28.22",
     "prop-types": "15.7.2"
   },
   "peerDependencies": {
