@@ -58,7 +58,7 @@
     "prepublishOnly": "lerna run prepublishOnly",
     "test:e2e": "yarn bundle && lerna run test:integration --stream",
     "test:e2e:debug": "yarn bundle && lerna run test:integration:debug --stream",
-    "watch": "lerna run watch --stream"
+    "watch": "lerna run watch --stream --no-sort --concurrency 100"
   },
   "jest": {
     "preset": "react-native",

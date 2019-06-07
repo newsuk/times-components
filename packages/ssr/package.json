@@ -16,8 +16,7 @@
     "start:testserver": "GRAPHQL_ENDPOINT=http://localhost:4000/graphql SPOT_ID=5p0t_1m_1d yarn start & wait-on tcp:3000",
     "stop:testserver": "kill $(lsof -t -i:3000)",
     "test:integration": "yarn bundle:prod && yarn start:testserver && cypress run; exitCode=$?; yarn stop:testserver; exit $exitCode",
-    "test:integration:debug": "yarn bundle:prod && yarn start:testserver && DEBUG=cypress:* cypress open; exitCode=$?; yarn stop:testserver; exit $exitCode",
-    "watch": "watch 'yarn prepublishOnly' ./src --ignoreDotFiles --ignoreUnreadable"
+    "test:integration:debug": "yarn bundle:prod && yarn start:testserver && DEBUG=cypress:* cypress open; exitCode=$?; yarn stop:testserver; exit $exitCode"
   },
   "repository": {
     "type": "git",
