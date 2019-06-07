@@ -53,7 +53,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                   "fontSize": 110,
                   "marginBottom": -30,
                   "marginRight": 5,
-                  "marginTop": -17,
+                  "marginTop": -14,
                 }
               }
             >
@@ -625,7 +625,7 @@ exports[`3. an article with a nested markup in first paragraph displays no drop 
                   "fontSize": 110,
                   "marginBottom": -30,
                   "marginRight": 5,
-                  "marginTop": -17,
+                  "marginTop": -14,
                 }
               }
             >
