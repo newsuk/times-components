@@ -2,7 +2,11 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { View, Clipboard } from "react-native";
-import { IconFacebook, IconTwitter, IconCopyLink } from "@times-components/icons";
+import {
+  IconFacebook,
+  IconTwitter,
+  IconCopyLink
+} from "@times-components/icons";
 import SaveStar from "@times-components/save-star-web";
 import { UserState } from "@times-components/utils";
 import getTokenisedArticleUrlApi from "./get-tokenised-article-url-api";
@@ -48,7 +52,7 @@ class SaveAndShareBar extends Component {
         {sharingEnabled && (
           <View style={styles.rowItem}>
             <UserState
-              state={UserState.loggedIn}
+              state={UserState.subscriber}
               fallback={<EmailShare {...this.props} shouldTokenise={false} />}
             >
               <EmailShare {...this.props} shouldTokenise />
@@ -115,6 +119,7 @@ SaveAndShareBar.propTypes = {
   getTokenisedShareUrl: PropTypes.func,
   onCopyLink: PropTypes.func.isRequired,
   onShareOnFB: PropTypes.func,
+  onShareEmail: PropTypes.func,
   onShareOnTwitter: PropTypes.func,
   saveApi: PropTypes.shape({
     bookmark: PropTypes.func.isRequired,
@@ -129,6 +134,7 @@ SaveAndShareBar.propTypes = {
 SaveAndShareBar.defaultProps = {
   onShareOnFB: () => {},
   onShareOnTwitter: () => {},
+  onShareEmail: () => {},
   getTokenisedShareUrl: getTokenisedArticleUrlApi
 };
 

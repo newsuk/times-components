@@ -5,6 +5,7 @@ import { ActivityIndicator, Text } from "react-native";
 import { IconEmail } from "@times-components/icons";
 import styles from "./styles";
 import BarItem from "./bar-item";
+import withTrackEvents from "./tracking/with-track-events";
 
 class EmailShare extends Component {
   constructor(props) {
@@ -18,8 +19,12 @@ class EmailShare extends Component {
       articleId,
       getTokenisedShareUrl,
       shouldTokenise,
-      articleUrl
+      articleUrl,
+      onShareEmail,
+      articleHeadline
     } = this.props;
+
+    onShareEmail({ articleId, articleUrl, articleHeadline });
 
     if (shouldTokenise) {
       this.setState({ isLoading: true });
@@ -77,10 +82,11 @@ class EmailShare extends Component {
 
 EmailShare.propTypes = {
   getTokenisedShareUrl: PropTypes.func.isRequired,
+  onShareEmail: PropTypes.func.isRequired,
   articleUrl: PropTypes.string.isRequired,
   articleHeadline: PropTypes.string.isRequired,
   articleId: PropTypes.string.isRequired,
   shouldTokenise: PropTypes.bool.isRequired
 };
 
-export default EmailShare;
+export default withTrackEvents(EmailShare);

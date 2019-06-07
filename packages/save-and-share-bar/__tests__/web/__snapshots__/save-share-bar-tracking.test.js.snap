@@ -28,10 +28,14 @@ Object {
 }
 `;
 
-exports[`save and share tracking events when press share article url by email: getTokenisedShareUrl 1`] = `
+exports[`save and share tracking events when press share article url by email: onShareEmail 1`] = `
 Array [
   Array [
-    "id-123",
+    Object {
+      "articleHeadline": "test-headline",
+      "articleId": "id-123",
+      "articleUrl": "https://www.thetimes.co.uk/",
+    },
   ],
 ]
 `;

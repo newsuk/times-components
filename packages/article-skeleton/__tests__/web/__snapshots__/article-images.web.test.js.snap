@@ -55,12 +55,9 @@ exports[`1. a primary image 1`] = `
       </div>
       <ArticleExtras
         articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-        commentsAllowed={true}
         commentsEnabled={true}
-        relatedArticleAllowed={true}
         relatedArticlesVisible={false}
         spotAccountId=""
-        topicsAllowed={true}
       />
     </div>
   </div>
@@ -120,12 +117,9 @@ exports[`2. a fullwidth image 1`] = `
       </div>
       <ArticleExtras
         articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-        commentsAllowed={true}
         commentsEnabled={true}
-        relatedArticleAllowed={true}
         relatedArticlesVisible={false}
         spotAccountId=""
-        topicsAllowed={true}
       />
     </div>
   </div>
@@ -187,12 +181,9 @@ exports[`3. a secondary image 1`] = `
       </div>
       <ArticleExtras
         articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-        commentsAllowed={true}
         commentsEnabled={true}
-        relatedArticleAllowed={true}
         relatedArticlesVisible={false}
         spotAccountId=""
-        topicsAllowed={true}
       />
     </div>
   </div>
@@ -254,12 +245,9 @@ exports[`4. an inline image 1`] = `
       </div>
       <ArticleExtras
         articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-        commentsAllowed={true}
         commentsEnabled={true}
-        relatedArticleAllowed={true}
         relatedArticlesVisible={false}
         spotAccountId=""
-        topicsAllowed={true}
       />
     </div>
   </div>

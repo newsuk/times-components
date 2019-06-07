@@ -11,5 +11,8 @@ export const isMetered = userState =>
 export const isNonExpiredUser = user =>
   isLoggedIn(user) && !isMeteredExpired(user);
 
+export const isSubscriber = userState =>
+  isLoggedIn(userState) && !userState.isMetered && !userState.isMeteredExpired;
+
 export const shouldShowFullArticle = user =>
   isShared(user) || isNonExpiredUser(user);

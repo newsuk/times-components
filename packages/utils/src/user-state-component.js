@@ -18,13 +18,14 @@ import {
   isMeteredExpired,
   isNonExpiredUser,
   isShared,
-  shouldShowFullArticle
+  shouldShowFullArticle,
+  isSubscriber
 } from "./user-state";
 
 function UserState({ state, children, fallback, serverRender }) {
   return (
     <ClientUserStateConsumer serverRender={serverRender}>
-      {({ user }) => state(user) ? children : fallback}
+      {({ user }) => (state(user) ? children : fallback)}
     </ClientUserStateConsumer>
   );
 }
@@ -35,6 +36,7 @@ UserState.metered = isMetered;
 UserState.shared = isShared;
 UserState.nonExpiredUser = isNonExpiredUser;
 UserState.fullArticle = shouldShowFullArticle;
+UserState.subscriber = isSubscriber;
 
 UserState.propTypes = {
   state: PropTypes.func.isRequired,
