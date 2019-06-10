@@ -1,6 +1,6 @@
 {
   "name": "@times-components/button",
-  "version": "2.3.81",
+  "version": "2.3.82",
   "description": "Button component",
   "main": "dist/button",
   "dev": "src/button",
@@ -10,6 +10,7 @@
     "depcheck": "depcheck --ignores='babel-*,depcheck,eslint,jest,prettier,react-art,webpack*' --ignore-bin-package=false --skip-missing",
     "lint": "eslint . && yarn prettier:diff && yarn depcheck",
     "prepublishOnly": "yarn transpile && yarn bundle",
+    "watch": "watch 'yarn bundle' ./src --ignoreDotFiles --ignoreUnreadable",
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
     "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
     "test:web": "jest --config='./__tests__/web/jest.config.js'",
@@ -61,8 +62,8 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/styleguide": "3.28.21",
-    "@times-components/utils": "4.11.8",
+    "@times-components/styleguide": "3.28.22",
+    "@times-components/utils": "4.11.9",
     "prop-types": "15.7.2"
   },
   "peerDependencies": {

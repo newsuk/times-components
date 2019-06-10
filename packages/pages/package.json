@@ -1,6 +1,6 @@
 {
   "name": "@times-components/pages",
-  "version": "2.0.58",
+  "version": "2.0.62",
   "main": "dist/pages",
   "dev": "src/pages",
   "scripts": {
@@ -12,6 +12,7 @@
     "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
     "test:all": "yarn test:android --coverage && yarn test:ios --coverage",
     "prepublishOnly": "yarn transpile",
+    "watch": "watch 'yarn prepublishOnly' ./src --ignoreDotFiles --ignoreUnreadable",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist"
   },
@@ -52,14 +53,14 @@
     "webpack": "4.30.0"
   },
   "dependencies": {
-    "@times-components/article": "7.2.21",
-    "@times-components/author-profile": "6.0.35",
-    "@times-components/context": "1.0.14",
-    "@times-components/provider": "1.17.5",
+    "@times-components/article": "7.2.25",
+    "@times-components/author-profile": "6.0.38",
+    "@times-components/context": "1.0.16",
+    "@times-components/provider": "1.17.6",
     "@times-components/schema": "0.6.12",
-    "@times-components/section": "1.0.22",
-    "@times-components/styleguide": "3.28.21",
-    "@times-components/topic": "5.0.35",
+    "@times-components/section": "1.0.25",
+    "@times-components/styleguide": "3.28.22",
+    "@times-components/topic": "5.0.38",
     "apollo-cache-inmemory": "1.5.1",
     "apollo-client": "2.5.1",
     "apollo-link-http": "1.5.14",

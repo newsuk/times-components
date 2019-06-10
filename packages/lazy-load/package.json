@@ -1,6 +1,6 @@
 {
   "name": "@times-components/lazy-load",
-  "version": "0.4.36",
+  "version": "0.4.37",
   "description": "Use IntersectionObserver to lazy load resources",
   "main": "dist/lazy-load",
   "dev": "src/lazy-load",
@@ -11,6 +11,7 @@
     "lint": "eslint . && yarn prettier:diff && yarn depcheck",
     "test:web": "jest --config='./__tests__/web/jest.config.js'",
     "prepublishOnly": "yarn transpile && yarn bundle",
+    "watch": "watch 'yarn bundle' ./src --ignoreDotFiles --ignoreUnreadable",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist",
     "bundle": "NODE_ENV=production webpack -p"

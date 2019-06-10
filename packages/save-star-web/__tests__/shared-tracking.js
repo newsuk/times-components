@@ -7,10 +7,10 @@ import SaveStarWeb from "../src/save-star-web";
 
 class WithTrackingContext extends Component {
   getChildContext() {
-    const { analyticStream } = this.props;
+    const { analyticsStream } = this.props;
     return {
       tracking: {
-        analytics: analyticStream
+        analytics: analyticsStream
       }
     };
   }
@@ -27,7 +27,7 @@ WithTrackingContext.childContextTypes = {
 };
 
 WithTrackingContext.propTypes = {
-  analyticStream: PropTypes.func.isRequired,
+  analyticsStream: PropTypes.func.isRequired,
   articleId: PropTypes.string.isRequired,
   saveApi: PropTypes.shape({
     bookmark: PropTypes.func.isRequired,
@@ -39,30 +39,26 @@ WithTrackingContext.propTypes = {
 
 export default () => {
   describe("save star tracking events", () => {
-    let testInstance = null;
-    let stream = null;
+    const articleId = "id-123";
+    const articleHeadline = "Article-headline";
+    const stream = jest.fn();
     const onSaveButtonPress = jest.fn();
 
-    beforeEach(() => {
-      const articleId = "id-123";
-      const articleHeadline = "Article-headline";
-      stream = jest.fn();
-      testInstance = TestRenderer.create(
-        <WithTrackingContext
-          analyticStream={stream}
-          articleId={articleId}
-          articleHeadline={articleHeadline}
-          saveApi={mockSaveApi}
-          onSaveButtonPress={onSaveButtonPress}
-        />
-      );
-    });
+    const testInstance = TestRenderer.create(
+      <WithTrackingContext
+        analyticsStream={stream}
+        articleId={articleId}
+        articleHeadline={articleHeadline}
+        saveApi={mockSaveApi}
+        onSaveButtonPress={onSaveButtonPress}
+      />
+    );
 
-    it("when press save star", () => {
-      const saveStarLink = testInstance.root.findAllByType(Link)[0];
-      saveStarLink.props.onPress();
+    it("when press save star", async () => {
+      const [saveStarLink] = testInstance.root.findAllByType(Link);
+      await saveStarLink.props.onPress();
+
       const [[call]] = stream.mock.calls;
-
       expect(call).toMatchSnapshot();
     });
   });

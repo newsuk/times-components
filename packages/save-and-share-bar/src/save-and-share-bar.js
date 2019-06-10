@@ -27,15 +27,10 @@ class SaveAndShareBar extends Component {
     };
   }
 
-  onSaveButtonPress(evt, savedStatus, saveUnsaveBookmark) {
-    evt.preventDefault();
-    const { saveApi } = this.props;
-
-    if (savedStatus) {
-      saveUnsaveBookmark(saveApi.unBookmark, false, true);
-    } else {
-      saveUnsaveBookmark(saveApi.bookmark, true, false);
-    }
+  /* eslint-disable class-methods-use-this */
+  onSaveButtonPress(callback, event) {
+    event.preventDefault();
+    callback();
   }
 
   copyToClipboard() {
@@ -68,7 +63,6 @@ class SaveAndShareBar extends Component {
   render() {
     const {
       articleId,
-      articleHeadline,
       articleUrl,
       savingEnabled,
       sharingEnabled,
@@ -136,7 +130,6 @@ class SaveAndShareBar extends Component {
               colour={styles.svgIcon.save.strokeColour}
               hoverColor={styles.svgIcon.hoverFillColour}
               articleId={articleId}
-              articleHeadline={articleHeadline}
               saveApi={saveApi}
               height={styles.svgIcon.star.height}
               onSaveButtonPress={this.onSaveButtonPress}
@@ -162,8 +155,8 @@ SaveAndShareBar.propTypes = {
     getBookmarks: PropTypes.func.isRequired,
     unBookmark: PropTypes.func.isRequired
   }).isRequired,
-  savingEnabled: PropTypes.func.isRequired,
-  sharingEnabled: PropTypes.func.isRequired
+  savingEnabled: PropTypes.bool.isRequired,
+  sharingEnabled: PropTypes.bool.isRequired
 };
 
 /* Serves as an indication when share links are clicked for tracking and analytics */

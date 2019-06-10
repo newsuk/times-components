@@ -1,6 +1,6 @@
 {
   "name": "@times-components/ad",
-  "version": "2.6.8",
+  "version": "2.6.9",
   "description": "Ad component",
   "main": "dist/ad",
   "dev": "src/ad",
@@ -14,6 +14,7 @@
     "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
     "test:web": "jest --config='./__tests__/web/jest.config.js'",
     "test:all": "yarn test:android --coverage && yarn test:ios --coverage && yarn test:web --coverage",
+    "watch": "watch 'yarn bundle' ./src --ignoreDotFiles --ignoreUnreadable",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist",
     "bundle": "NODE_ENV=production webpack -p"
@@ -58,9 +59,9 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/styleguide": "3.28.21",
-    "@times-components/utils": "4.11.8",
-    "@times-components/watermark": "2.6.18",
+    "@times-components/styleguide": "3.28.22",
+    "@times-components/utils": "4.11.9",
+    "@times-components/watermark": "2.6.19",
     "prop-types": "15.7.2",
     "react-broadcast": "0.5.2",
     "react-native-webview": "5.10.0"

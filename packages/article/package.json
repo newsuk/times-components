@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article",
-  "version": "7.2.21",
+  "version": "7.2.25",
   "description": "The article",
   "main": "dist/article",
   "dev": "src/article",
@@ -11,6 +11,7 @@
     "lint": "eslint . && yarn prettier:diff && yarn depcheck",
     "prepublishOnly": "yarn transpile && yarn bundle",
     "test": "jest --config='./__tests__/jest.config.js'",
+    "watch": "watch 'yarn bundle' ./src --ignoreDotFiles --ignoreUnreadable",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist",
     "bundle": "NODE_ENV=production webpack -p"
@@ -35,9 +36,9 @@
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.8.12",
     "@times-components/jest-configurator": "2.5.12",
-    "@times-components/provider-test-tools": "1.17.19",
+    "@times-components/provider-test-tools": "1.17.20",
     "@times-components/storybook": "4.0.9",
-    "@times-components/tealium-utils": "0.7.51",
+    "@times-components/tealium-utils": "0.7.52",
     "@times-components/webpack-configurator": "2.0.21",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "24.8.0",
@@ -58,18 +59,18 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/ad": "2.6.8",
-    "@times-components/article-in-depth": "3.3.12",
-    "@times-components/article-magazine-comment": "3.4.0",
-    "@times-components/article-magazine-standard": "3.4.0",
-    "@times-components/article-main-comment": "2.4.0",
-    "@times-components/article-main-standard": "3.4.0",
-    "@times-components/context": "1.0.14",
-    "@times-components/message-bar": "0.2.9",
-    "@times-components/provider": "1.17.5",
-    "@times-components/responsive": "0.4.39",
-    "@times-components/save-star-web": "0.2.4",
-    "@times-components/styleguide": "3.28.21"
+    "@times-components/ad": "2.6.9",
+    "@times-components/article-in-depth": "3.3.16",
+    "@times-components/article-magazine-comment": "3.4.4",
+    "@times-components/article-magazine-standard": "3.4.4",
+    "@times-components/article-main-comment": "2.4.4",
+    "@times-components/article-main-standard": "3.4.4",
+    "@times-components/context": "1.0.16",
+    "@times-components/message-bar": "0.2.10",
+    "@times-components/provider": "1.17.6",
+    "@times-components/responsive": "0.4.40",
+    "@times-components/save-star-web": "0.2.6",
+    "@times-components/styleguide": "3.28.22"
   },
   "peerDependencies": {
     "react": ">=16.5",

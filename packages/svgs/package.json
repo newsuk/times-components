@@ -1,6 +1,6 @@
 {
   "name": "@times-components/svgs",
-  "version": "2.7.12",
+  "version": "2.7.13",
   "description": "Svgs wrapper",
   "main": "dist/index",
   "dev": "src/index",
@@ -16,6 +16,7 @@
     "test:all": "yarn test:android --coverage && yarn test:ios --coverage && yarn test:web --coverage",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist",
+    "watch": "watch 'yarn bundle' ./src --ignoreDotFiles --ignoreUnreadable",
     "bundle": "NODE_ENV=production webpack -p"
   },
   "jest": {

@@ -9,10 +9,10 @@ import SaveAndShareBar from "../src/save-and-share-bar";
 
 class WithTrackingContext extends Component {
   getChildContext() {
-    const { analyticStream } = this.props;
+    const { analyticsStream } = this.props;
     return {
       tracking: {
-        analytics: analyticStream
+        analytics: analyticsStream
       }
     };
   }
@@ -29,7 +29,7 @@ WithTrackingContext.childContextTypes = {
 };
 
 WithTrackingContext.propTypes = {
-  analyticStream: PropTypes.func.isRequired,
+  analyticsStream: PropTypes.func.isRequired,
   articleUrl: PropTypes.string.isRequired,
   articleId: PropTypes.string.isRequired,
   articleHeadline: PropTypes.string.isRequired,
@@ -53,7 +53,7 @@ export default () => {
       stream = jest.fn();
       testInstance = TestRenderer.create(
         <WithTrackingContext
-          analyticStream={stream}
+          analyticsStream={stream}
           articleUrl={articleUrl}
           articleId={articleId}
           articleHeadline={articleHeadline}

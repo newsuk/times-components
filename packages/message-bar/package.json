@@ -1,6 +1,6 @@
 {
   "name": "@times-components/message-bar",
-  "version": "0.2.9",
+  "version": "0.2.10",
   "description": "A component for showing user notifications",
   "main": "dist/index",
   "dev": "src/index",
@@ -14,6 +14,7 @@
     "test:web": "jest --config='./__tests__/web/jest.config.js'",
     "test:all": "yarn test:android --coverage && yarn test:ios --coverage && yarn test:web --coverage",
     "prepublishOnly": "yarn transpile && yarn bundle",
+    "watch": "watch 'yarn bundle' ./src --ignoreDotFiles --ignoreUnreadable",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist",
     "bundle": "NODE_ENV=production webpack -p"
@@ -62,9 +63,9 @@
     "react-native-web": "0.11.2"
   },
   "dependencies": {
-    "@times-components/icons": "2.11.10",
-    "@times-components/responsive": "0.4.39",
-    "@times-components/styleguide": "3.28.21",
+    "@times-components/icons": "2.11.11",
+    "@times-components/responsive": "0.4.40",
+    "@times-components/styleguide": "3.28.22",
     "prop-types": "15.7.2"
   },
   "publishConfig": {

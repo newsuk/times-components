@@ -1,6 +1,6 @@
 {
   "name": "@times-components/sticky",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Attach children to viewport on scroll (web only)",
   "main": "dist/sticky",
   "dev": "src/sticky",
@@ -14,6 +14,7 @@
     "prepublishOnly": "yarn transpile && yarn bundle",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist",
+    "watch": "watch 'yarn bundle' ./src --ignoreDotFiles --ignoreUnreadable",
     "bundle": "NODE_ENV=production webpack -p"
   },
   "repository": {

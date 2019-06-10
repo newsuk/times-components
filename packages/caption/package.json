@@ -1,6 +1,6 @@
 {
   "name": "@times-components/caption",
-  "version": "3.0.36",
+  "version": "3.0.37",
   "description": "Media caption component",
   "main": "dist/caption",
   "dev": "src/caption",
@@ -9,6 +9,7 @@
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "depcheck": "depcheck --ignores='babel-*,depcheck,eslint,jest,prettier,react-art,webpack*' --ignore-bin-package=false --skip-missing",
     "lint": "eslint . && yarn prettier:diff && yarn depcheck",
+    "watch": "watch 'yarn bundle' ./src --ignoreDotFiles --ignoreUnreadable",
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
     "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
     "test:web": "jest --config='./__tests__/web/jest.config.js'",
@@ -36,7 +37,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
-    "@times-components/styleguide": "3.28.21",
+    "@times-components/styleguide": "3.28.22",
     "prop-types": "15.7.2"
   },
   "devDependencies": {
