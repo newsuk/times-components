@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.4.0](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.3.16...@times-components/article-in-depth@3.4.0) (2019-06-10)
+
+
+### Features
+
+* implement lead asset to use the passed width ([#2020](https://github.com/newsuk/times-components/issues/2020)) ([7cdc865](https://github.com/newsuk/times-components/commit/7cdc865))
+
+
+
+
+
 ## [3.3.16](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.3.15...@times-components/article-in-depth@3.3.16) (2019-06-10)
 
 **Note:** Version bump only for package @times-components/article-in-depth

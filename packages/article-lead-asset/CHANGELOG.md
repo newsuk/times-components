@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.1.53...@times-components/article-lead-asset@1.2.0) (2019-06-10)
+
+
+### Features
+
+* implement lead asset to use the passed width ([#2020](https://github.com/newsuk/times-components/issues/2020)) ([7cdc865](https://github.com/newsuk/times-components/commit/7cdc865))
+
+
+
+
+
 ## [1.1.53](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.1.52...@times-components/article-lead-asset@1.1.53) (2019-06-07)
 
 **Note:** Version bump only for package @times-components/article-lead-asset
