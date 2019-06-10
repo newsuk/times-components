@@ -22,6 +22,7 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
           text="Some Caption"
         />
       }
+      highResSize={1194}
       index={0}
       onImagePress={null}
       uri="https://crop169.io"
@@ -85,6 +86,7 @@ exports[`4. an article with ads 1`] = `
           text="Some Caption"
         />
       }
+      highResSize={1194}
       index={0}
       onImagePress={null}
       uri="https://crop169.io"

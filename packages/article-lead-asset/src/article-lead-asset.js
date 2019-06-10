@@ -13,8 +13,15 @@ const ArticleLeadAssetModalImage = ({
   aspectRatio,
   caption,
   onImagePress,
-  uri
-}) => <ModalImage {...{ aspectRatio, caption, onImagePress, uri }} index={0} />;
+  uri,
+  width
+}) => (
+  <ModalImage
+    highResSize={width}
+    {...{ aspectRatio, caption, onImagePress, uri }}
+    index={0}
+  />
+);
 
 const ArticleLeadAsset = ({
   getImageCrop,

@@ -129,16 +129,16 @@ exports[`1. modal image 1`] = `
       <View
         collapsable={false}
       >
-        <View
-          height="100%"
-          width="100%"
-        >
+        <View>
           <Image
+            caption={<MockCaption />}
             fadeDuration={0}
-            resizeMode="contain"
+            fadeImageIn={false}
+            onImagePress={null}
+            show={false}
             source={
               Object {
-                "testUri": "../../../packages/image/assets/t.png",
+                "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800",
               }
             }
           />
@@ -413,16 +413,16 @@ exports[`3. modal image with custom highressize 1`] = `
       <View
         collapsable={false}
       >
-        <View
-          height="100%"
-          width="100%"
-        >
+        <View>
           <Image
+            caption={<MockCaption />}
             fadeDuration={0}
-            resizeMode="contain"
+            fadeImageIn={false}
+            onImagePress={null}
+            show={false}
             source={
               Object {
-                "testUri": "../../../packages/image/assets/t.png",
+                "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
               }
             }
           />

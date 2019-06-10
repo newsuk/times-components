@@ -723,16 +723,21 @@ exports[`3. tablet landscape default modal 1`] = `
         <View
           style={
             Object {
-              "alignItems": "center",
-              "backgroundColor": "#EDEDED",
-              "justifyContent": "center",
+              "borderRadius": 0,
+              "height": "100%",
+              "overflow": "hidden",
+              "position": "absolute",
+              "width": "100%",
             }
           }
         >
           <Image
             style={
               Object {
-                "width": "25%",
+                "height": "100%",
+                "position": "absolute",
+                "resizeMode": "contain",
+                "width": "100%",
               }
             }
           />
@@ -974,16 +979,21 @@ exports[`4. tablet portrait default modal 1`] = `
         <View
           style={
             Object {
-              "alignItems": "center",
-              "backgroundColor": "#EDEDED",
-              "justifyContent": "center",
+              "borderRadius": 0,
+              "height": "100%",
+              "overflow": "hidden",
+              "position": "absolute",
+              "width": "100%",
             }
           }
         >
           <Image
             style={
               Object {
-                "width": "25%",
+                "height": "100%",
+                "position": "absolute",
+                "resizeMode": "contain",
+                "width": "100%",
               }
             }
           />
