@@ -177,7 +177,7 @@ exports[`1. a single child element 1`] = `
                 className="c3 responsiveweb__Base-sc-1xpiscc-4 responsiveweb__Base-sc-1xpiscc-6 responsiveweb__Base-sc-1xpiscc-7 c3 css-view-1dbjc4n"
               >
                 <div
-                  className="css-text-76zvg2"
+                  className="css-text-901oao"
                 >
                   lead
                 </div>
@@ -436,7 +436,7 @@ exports[`2. two child elements 1`] = `
                 className="c3 responsiveweb__Base-sc-1xpiscc-4 responsiveweb__Base-sc-1xpiscc-5 responsiveweb__Base-sc-1xpiscc-7 c3 css-view-1dbjc4n"
               >
                 <div
-                  className="css-text-76zvg2"
+                  className="css-text-901oao"
                 >
                   lead
                 </div>
@@ -456,7 +456,7 @@ exports[`2. two child elements 1`] = `
                     className="c6 responsiveweb-sc-1xpiscc-10 c6 css-view-1dbjc4n"
                   >
                     <div
-                      className="css-text-76zvg2"
+                      className="css-text-901oao"
                     >
                       support-1
                     </div>
@@ -762,7 +762,7 @@ exports[`3. three child elements 1`] = `
                 className="c3 responsiveweb__Base-sc-1xpiscc-4 responsiveweb__Base-sc-1xpiscc-5 responsiveweb__Base-sc-1xpiscc-7 c3 css-view-1dbjc4n"
               >
                 <div
-                  className="css-text-76zvg2"
+                  className="css-text-901oao"
                 >
                   lead
                 </div>
@@ -782,7 +782,7 @@ exports[`3. three child elements 1`] = `
                     className="c6 responsiveweb-sc-1xpiscc-10 c6 css-view-1dbjc4n"
                   >
                     <div
-                      className="css-text-76zvg2"
+                      className="css-text-901oao"
                     >
                       support-1
                     </div>
@@ -793,7 +793,7 @@ exports[`3. three child elements 1`] = `
                     className="c7 responsiveweb-sc-1xpiscc-9 c7 css-view-1dbjc4n"
                   >
                     <div
-                      className="css-text-76zvg2"
+                      className="css-text-901oao"
                     >
                       support-2
                     </div>

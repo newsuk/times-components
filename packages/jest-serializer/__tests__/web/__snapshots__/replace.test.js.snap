@@ -9,7 +9,7 @@ exports[`The replace serializer should provide a helper to remove native element
       text="Hello world!"
     >
       <div
-        className="css-text-76zvg2"
+        className="css-text-901oao"
         dir="auto"
       >
         Hello world!
@@ -27,7 +27,7 @@ exports[`The replace serializer should provide a helper to return the child of a
     >
       <Text>
         <div
-          className="css-text-76zvg2"
+          className="css-text-901oao"
           dir="auto"
         >
           Hello world!

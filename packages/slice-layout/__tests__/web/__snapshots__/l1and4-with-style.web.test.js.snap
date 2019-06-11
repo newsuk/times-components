@@ -3,7 +3,7 @@
 exports[`1. lead one and four - small 1`] = `
 Array [
   <div
-    className="css-text-76zvg2"
+    className="css-text-901oao"
   >
     lead
   </div>,
@@ -11,7 +11,7 @@ Array [
     className="css-view-1dbjc4n"
   >
     <div
-      className="css-text-76zvg2"
+      className="css-text-901oao"
     >
       support-1
     </div>
@@ -34,7 +34,7 @@ Array [
       }
     />
     <div
-      className="css-text-76zvg2"
+      className="css-text-901oao"
     >
       support-2
     </div>
@@ -57,7 +57,7 @@ Array [
       }
     />
     <div
-      className="css-text-76zvg2"
+      className="css-text-901oao"
     >
       support-3
     </div>
@@ -80,7 +80,7 @@ Array [
       }
     />
     <div
-      className="css-text-76zvg2"
+      className="css-text-901oao"
     >
       support-4
     </div>
@@ -126,7 +126,7 @@ exports[`2. lead one and four - medium 1`] = `
     }
   >
     <div
-      className="css-text-76zvg2"
+      className="css-text-901oao"
     >
       lead
     </div>
@@ -158,7 +158,7 @@ exports[`2. lead one and four - medium 1`] = `
     }
   >
     <div
-      className="css-text-76zvg2"
+      className="css-text-901oao"
     >
       support-1
     </div>
@@ -181,7 +181,7 @@ exports[`2. lead one and four - medium 1`] = `
       }
     />
     <div
-      className="css-text-76zvg2"
+      className="css-text-901oao"
     >
       support-2
     </div>
@@ -204,7 +204,7 @@ exports[`2. lead one and four - medium 1`] = `
       }
     />
     <div
-      className="css-text-76zvg2"
+      className="css-text-901oao"
     >
       support-3
     </div>
@@ -227,7 +227,7 @@ exports[`2. lead one and four - medium 1`] = `
       }
     />
     <div
-      className="css-text-76zvg2"
+      className="css-text-901oao"
     >
       support-4
     </div>

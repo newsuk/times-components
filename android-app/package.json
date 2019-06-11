@@ -13,8 +13,8 @@
   "dependencies": {
     "@times-components/pages": "2.0.64",
     "prop-types": "15.7.2",
-    "react": "16.8.6",
-    "react-native": "0.59.8",
+    "react": "16.6.3",
+    "react-native": "0.58.6",
     "react-native-svg": "9.4.0",
     "react-native-webview": "5.10.0",
     "@kudo-ci/jsc-android": "241213-no-jit",

@@ -45,12 +45,12 @@ exports[`1. video with error 1`] = `
   className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-2tavb8 r-display-6koalj r-justifyContent-1777fci IS1 S3"
 >
   <div
-    className="css-text-76zvg2 r-color-jwli3a r-fontFamily-iirzy8 r-fontSize-adyw6z r-height-16l9doz r-marginBottom-15d164r r-textAlign-q4m81j r-width-iyfy8q S1"
+    className="css-text-901oao r-color-jwli3a r-fontFamily-iirzy8 r-fontSize-adyw6z r-height-16l9doz r-marginBottom-15d164r r-textAlign-q4m81j r-width-iyfy8q S1"
   >
     Video unable to play
   </div>
   <div
-    className="css-text-76zvg2 r-color-kpc20e r-fontFamily-1feecvn r-fontSize-1b43r93 r-height-16l9doz r-maxWidth-q5oqfz r-textAlign-q4m81j r-width-riqrgh S2"
+    className="css-text-901oao r-color-kpc20e r-fontFamily-1feecvn r-fontSize-1b43r93 r-height-16l9doz r-maxWidth-q5oqfz r-textAlign-q4m81j r-width-riqrgh S2"
   >
     Please check your network connection and try refreshing the page. If that doesn't work, please try again later
   </div>

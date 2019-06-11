@@ -72,7 +72,7 @@ exports[`1. video label with a title 1`] = `
       />
     </div>
     <div
-      className="css-text-76zvg2 r-flex-13awgt0 r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-19r33im r-lineHeight-56xrmm r-marginLeft-1f6r7vd r-paddingTop-njp1lv IS2 S2"
+      className="css-text-901oao r-flex-13awgt0 r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-19r33im r-lineHeight-56xrmm r-marginLeft-1f6r7vd r-paddingTop-njp1lv IS2 S2"
     >
       SWIMMING
     </div>
@@ -152,7 +152,7 @@ exports[`2. video label without a title shows video 1`] = `
       />
     </div>
     <div
-      className="css-text-76zvg2 r-flex-13awgt0 r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-19r33im r-lineHeight-56xrmm r-marginLeft-1f6r7vd r-paddingTop-njp1lv IS2 S2"
+      className="css-text-901oao r-flex-13awgt0 r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-19r33im r-lineHeight-56xrmm r-marginLeft-1f6r7vd r-paddingTop-njp1lv IS2 S2"
     >
       VIDEO
     </div>
@@ -232,7 +232,7 @@ exports[`3. video label with the black default colour 1`] = `
       />
     </div>
     <div
-      className="css-text-76zvg2 r-flex-13awgt0 r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-19r33im r-lineHeight-56xrmm r-marginLeft-1f6r7vd r-paddingTop-njp1lv IS2 S2"
+      className="css-text-901oao r-flex-13awgt0 r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-19r33im r-lineHeight-56xrmm r-marginLeft-1f6r7vd r-paddingTop-njp1lv IS2 S2"
     >
       VIDEO
     </div>
