@@ -114,7 +114,7 @@ class ArticleSkeleton extends Component {
                 <MainContainer>
                   <Header width={articleWidth} />
                   {savingEnabled || sharingEnabled ? (
-                    <UserState state={UserState.fullArticle}>
+                    <UserState state={UserState.loggedInOrShared}>
                       <MessageContext.Consumer>
                         {({ showMessage }) => (
                           <StickySaveAndShareBar

@@ -424,7 +424,7 @@ exports[`5. an article with ads 1`] = `
 </article>
 `;
 
-exports[`6. should show topics when showing full article 1`] = `
+exports[`6. should show topics when logged in or shared 1`] = `
 <article>
   <Helmet>
     <title>

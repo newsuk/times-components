@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`full article with style 1`] = `
-.c16 {
+.c13 {
   color: #333333;
   display: block;
   font-family: "TimesDigitalW04-Regular";
@@ -12,17 +12,17 @@ exports[`full article with style 1`] = `
   padding-left: 10px;
 }
 
-.c16:after {
+.c13:after {
   content: "";
   clear: both;
   display: table;
 }
 
-.c19 {
+.c16 {
   padding-left: 10px;
 }
 
-.c15 {
+.c12 {
   width: 100%;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
@@ -30,7 +30,7 @@ exports[`full article with style 1`] = `
   padding-bottom: 25px;
 }
 
-.c20 {
+.c17 {
   width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -43,7 +43,7 @@ exports[`full article with style 1`] = `
   padding-bottom: 25px;
 }
 
-.c21 {
+.c18 {
   width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -57,13 +57,13 @@ exports[`full article with style 1`] = `
   display: block;
 }
 
-.c18 {
+.c15 {
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 10px;
 }
 
-.c17 {
+.c14 {
   display: block;
 }
 
@@ -75,22 +75,11 @@ exports[`full article with style 1`] = `
   display: none;
 }
 
-.c14 {
+.c11 {
   display: block;
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
-}
-
-.c13 {
-  position: relative;
-  padding: 0 10px;
-}
-
-.c11 {
-  background-color: #FFFFFF;
-  height: 55px;
-  margin: 30px 0;
 }
 
 .c3 {
@@ -133,7 +122,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c16 {
+  .c13 {
     font-size: 18px;
     line-height: 30px;
     padding-left: 0;
@@ -143,32 +132,32 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c16 {
+  .c13 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c19 {
+  .c16 {
     padding-left: 0px;
   }
 }
 
 @media (min-width:768px) {
-  .c15 {
+  .c12 {
     width: 80.8%;
     margin: 0 auto;
   }
 }
 
 @media (min-width:1024px) {
-  .c15 {
+  .c12 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c20 {
+  .c17 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -177,28 +166,28 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c20 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c21 {
-    width: 80.8%;
-    margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1024px) {
-  .c21 {
+  .c17 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
   .c18 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c18 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c15 {
     width: 50%;
     float: left;
     margin-right: 20px;
@@ -210,7 +199,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c17 {
+  .c14 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -219,7 +208,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c17 {
+  .c14 {
     width: 56.2%;
   }
 }
@@ -242,75 +231,6 @@ exports[`full article with style 1`] = `
     border-bottom-width: 1px;
     padding-top: 10px;
     padding-bottom: 10px;
-  }
-}
-
-@media (min-width:768px) {
-  .c13 {
-    width: 80.8%;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-}
-
-@media (min-width:1024px) {
-  .c13 {
-    width: 56.2%;
-  }
-}
-
-@media (max-width:1320px) {
-  .c11 {
-    left: 0;
-    top: 0;
-    z-index: 999;
-  }
-
-  .c11.sticky {
-    width: 100% !important;
-    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.3);
-  }
-
-  .c11:not(.sticky) .c12:before,
-  .c11:not(.sticky) .c12:after {
-    content: "";
-    height: 1px;
-    background-color: #DBDBDB;
-    position: absolute;
-    left: 10px;
-    right: 10px;
-  }
-
-  .c11:not(.sticky) .c12:before {
-    top: 0;
-  }
-
-  .c11:not(.sticky) .c12:after {
-    bottom: 0;
-  }
-}
-
-@media (min-width:1321px) {
-  .c11 {
-    position: static !important;
-  }
-
-  .c11 .c12:before,
-  .c11 .c12:after {
-    content: "";
-    height: 1px;
-    background-color: #DBDBDB;
-    position: absolute;
-    left: 10px;
-    right: 10px;
-  }
-
-  .c11 .c12:before {
-    top: 0;
-  }
-
-  .c11 .c12:after {
-    bottom: 0;
   }
 }
 
@@ -447,42 +367,37 @@ exports[`full article with style 1`] = `
 }
 
 .IS2 {
-  z-index: 999;
-  top: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .IS3 {
   height: 100%;
   width: 100%;
+  position: relative;
 }
 
 .IS4 {
   height: 100%;
   width: 100%;
-  position: relative;
 }
 
 .IS5 {
-  height: 100%;
-  width: 100%;
-}
-
-.IS6 {
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
-.IS7 {
+.IS6 {
   padding-bottom: 56.25%;
   position: relative;
 }
 
-.IS8 {
+.IS7 {
   margin: 0;
 }
 
-.IS9 {
+.IS8 {
   border-bottom-color: #DBDBDB;
   border-bottom-width: 1;
   border-top-color: #DBDBDB;
@@ -582,20 +497,11 @@ exports[`full article with style 1`] = `
       </div>
     </div>
     <div
-      className="tc-sticky-container c11 IS2"
-    >
-      <div
-        className="c12 c13"
-      >
-        <SaveAndShareBar />
-      </div>
-    </div>
-    <div
-      className="c14 responsiveweb__BodyContainer-sc-1exejum-2 c14 css-view-1dbjc4n"
+      className="c11 responsiveweb__BodyContainer-sc-1exejum-2 c11 css-view-1dbjc4n"
     >
       <div>
         <div
-          className="c15 responsiveweb__PrimaryImg-sc-16nqyj8-5 c15 css-view-1dbjc4n"
+          className="c12 responsiveweb__PrimaryImg-sc-16nqyj8-5 c12 css-view-1dbjc4n"
         >
           <ArticleImage />
         </div>
@@ -604,15 +510,15 @@ exports[`full article with style 1`] = `
         Some Link
       </Link>
       <p
-        className="c16"
+        className="c13"
       >
         Some content
       </p>
       <div
-        className="c17 responsiveweb__PullQuoteContainer-sc-16nqyj8-9 c17 css-view-1dbjc4n"
+        className="c14 responsiveweb__PullQuoteContainer-sc-16nqyj8-9 c14 css-view-1dbjc4n"
       >
         <div
-          className="c18 responsiveweb__PullQuoteResp-sc-16nqyj8-8 c18 css-view-1dbjc4n"
+          className="c15 responsiveweb__PullQuoteResp-sc-16nqyj8-8 c15 css-view-1dbjc4n"
         >
           <PullQuote>
             The pull quote content
@@ -620,25 +526,25 @@ exports[`full article with style 1`] = `
         </div>
       </div>
       <div
-        className="c15 responsiveweb__PrimaryImg-sc-16nqyj8-5 c15 css-view-1dbjc4n"
+        className="c12 responsiveweb__PrimaryImg-sc-16nqyj8-5 c12 css-view-1dbjc4n"
       >
         <figure
-          className="IS8"
+          className="IS7"
         >
           <div
-            className="css-view-1dbjc4n IS7"
+            className="css-view-1dbjc4n IS6"
           >
             <div
-              className="css-view-1dbjc4n IS6"
+              className="css-view-1dbjc4n IS5"
             >
               <div
-                className="IS5"
+                className="IS4"
               >
                 <div
-                  className="IS4"
+                  className="IS3"
                 >
                   <video
-                    className="video-js IS3"
+                    className="video-js IS2"
                   />
                 </div>
               </div>
@@ -646,7 +552,7 @@ exports[`full article with style 1`] = `
           </div>
           <figcaption>
             <div
-              className="c19 inset-captionweb__InsetCaptionStyle-sc-8m7lci-0 c19 css-view-1dbjc4n"
+              className="c16 inset-captionweb__InsetCaptionStyle-sc-8m7lci-0 c16 css-view-1dbjc4n"
             >
               <Caption />
             </div>
@@ -654,18 +560,18 @@ exports[`full article with style 1`] = `
         </figure>
       </div>
       <Ad
-        className="IS9"
+        className="IS8"
       />
       <div>
         <div
-          className="c20 responsiveweb__SecondaryImg-sc-16nqyj8-6 c20 css-view-1dbjc4n"
+          className="c17 responsiveweb__SecondaryImg-sc-16nqyj8-6 c17 css-view-1dbjc4n"
         >
           <ArticleImage />
         </div>
       </div>
       <div>
         <div
-          className="c21 responsiveweb__InlineImg-sc-16nqyj8-7 c21 css-view-1dbjc4n"
+          className="c18 responsiveweb__InlineImg-sc-16nqyj8-7 c18 css-view-1dbjc4n"
         >
           <ArticleImage />
         </div>

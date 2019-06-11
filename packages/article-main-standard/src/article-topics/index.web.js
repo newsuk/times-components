@@ -8,7 +8,7 @@ import TopicsMetaContainer from "../styles/article-topics/responsive";
 const ShowTopics = ({ topics }) => {
   if (topics && topics.length > 0) {
     return (
-      <UserState state={UserState.fullArticle}>
+      <UserState state={UserState.loggedInOrShared}>
         <TopicsMetaContainer>
           <nav>
             <ArticleTopics style={styles.topicsMetaContainer} topics={topics} />

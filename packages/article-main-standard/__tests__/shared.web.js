@@ -39,9 +39,9 @@ export default () => {
 
   shared(TestRenderer.create, [
     {
-      name: "should show topics when showing full article",
+      name: "should show topics when logged in or shared",
       test() {
-        UserState.mockStates = [UserState.fullArticle];
+        UserState.mockStates = [UserState.loggedInOrShared];
 
         const output = TestRenderer.create(
           <ArticleMainStandard

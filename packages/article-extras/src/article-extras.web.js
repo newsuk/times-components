@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import { UserState } from "@times-components/utils";
 import ArticleComments from "@times-components/article-comments";
@@ -15,25 +15,21 @@ const ArticleExtras = ({
   spotAccountId,
   topics
 }) => (
-  <Fragment>
-    <UserState state={UserState.fullArticle}>
-      <ArticleTopics topics={topics} />
-    </UserState>
-    <UserState state={UserState.nonExpiredUser}>
-      <aside id="related-articles" ref={node => registerNode(node)}>
-        <RelatedArticles
-          analyticsStream={analyticsStream}
-          isVisible={relatedArticlesVisible}
-          slice={relatedArticleSlice}
-        />
-      </aside>
-      <ArticleComments
-        articleId={articleId}
-        isEnabled={commentsEnabled}
-        spotAccountId={spotAccountId}
+  <UserState state={UserState.fullArticle}>
+    <ArticleTopics topics={topics} />
+    <aside id="related-articles" ref={node => registerNode(node)}>
+      <RelatedArticles
+        analyticsStream={analyticsStream}
+        isVisible={relatedArticlesVisible}
+        slice={relatedArticleSlice}
       />
-    </UserState>
-  </Fragment>
+    </aside>
+    <ArticleComments
+      articleId={articleId}
+      isEnabled={commentsEnabled}
+      spotAccountId={spotAccountId}
+    />
+  </UserState>
 );
 
 ArticleExtras.propTypes = {

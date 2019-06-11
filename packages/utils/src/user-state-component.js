@@ -19,7 +19,8 @@ import {
   isNonExpiredUser,
   isShared,
   shouldShowFullArticle,
-  isSubscriber
+  isSubscriber,
+  isLoggedInOrShared
 } from "./user-state";
 
 function UserState({ state, children, fallback, serverRender }) {
@@ -37,6 +38,7 @@ UserState.shared = isShared;
 UserState.nonExpiredUser = isNonExpiredUser;
 UserState.fullArticle = shouldShowFullArticle;
 UserState.subscriber = isSubscriber;
+UserState.loggedInOrShared = isLoggedInOrShared;
 
 UserState.propTypes = {
   state: PropTypes.func.isRequired,
