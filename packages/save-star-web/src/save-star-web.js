@@ -87,7 +87,9 @@ class SaveStarWeb extends Component {
           <IconStar
             fillColour={fillColour}
             strokeColour={strokeColour}
-            title={savedStatus ? "Remove from My Articles" : "Save to My Articles"}
+            title={
+              savedStatus ? "Remove from My Articles" : "Save to My Articles"
+            }
             height={18}
           />
         </HoverIcon>
