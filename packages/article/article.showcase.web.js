@@ -37,7 +37,6 @@ export default {
           color,
           decorateAction,
           hasScaling: false,
-          isTeaser: true,
           link,
           select
         }),
@@ -55,7 +54,6 @@ export default {
           color,
           decorateAction,
           hasScaling: false,
-          isTeaser: true,
           link,
           select
         }),

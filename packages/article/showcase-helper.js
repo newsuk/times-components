@@ -299,7 +299,6 @@ const renderArticleConfig = ({
   hasScaling,
   link = null,
   select,
-  isTeaser = false,
 }) => {
   const id = "263b03a1-2ce6-4b94-b053-0d35316548c5";
   const withFlags = boolean("Flags", true);
@@ -311,9 +310,6 @@ const renderArticleConfig = ({
   const withPullQuote = boolean("Pull Quote", false);
   const withStandfirst = boolean("Standfirst", true);
   const withVideo = boolean("Video", true);
-  const withTeaser =
-    !isTeaser &&
-    boolean("Teaser page (only Web, no marketing overlays)", false);
 
   const scale = hasScaling ? selectScales(select) : null;
   const section = selectSection(select);
@@ -327,7 +323,9 @@ const renderArticleConfig = ({
       ? { rgba: { alpha: 1, blue: 255, green: 255, red: 255 } }
       : null;
 
-  const isMeteredExpired = global.nuk && global.nuk.user && global.nuk.user.isMeteredExpired;
+  const user = global.nuk && global.nuk.user || {};
+  const { isLoggedIn, isMeteredExpired, isShared } = user;
+  const isTeaser = !isShared && (isMeteredExpired || !isLoggedIn);
 
   return (
     <Fragment>
@@ -344,10 +342,7 @@ const renderArticleConfig = ({
             withPullQuote,
             withStandfirst,
             withVideo,
-            withTeasedContent:
-              withTeaser ||
-              isTeaser ||
-              isMeteredExpired
+            withTeasedContent: isTeaser
           })}
           id={id}
         >
@@ -358,7 +353,7 @@ const renderArticleConfig = ({
             id,
             inDepthBackgroundColour,
             inDepthTextColour,
-            isTeaser: isTeaser || withTeaser,
+            isTeaser,
             isMeteredExpired,
             saveApi: saveArticleApi,
             scale,
