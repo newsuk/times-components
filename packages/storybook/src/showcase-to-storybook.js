@@ -31,20 +31,17 @@ const addStories = (
   if (child.type === "story") {
     const args = [knobs, actions];
 
-    builder.add(
-      child.name,
-      () => {
-        if (Platform.OS === "web") {
-          addUserStateKnobs(knobs, child.userStateDefaults);
-        }
-
-        return strictMode ? (
-          <StrictWrapper>{child.component(...args)}</StrictWrapper>
-        ) : (
-          child.component(...args)
-        );
+    builder.add(child.name, () => {
+      if (Platform.OS === "web") {
+        addUserStateKnobs(knobs, child.defaultUserState);
       }
-    );
+
+      return strictMode ? (
+        <StrictWrapper>{child.component(...args)}</StrictWrapper>
+      ) : (
+        child.component(...args)
+      );
+    });
   }
 
   if (child.type === "decorator") {

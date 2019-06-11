@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-env browser */
 import React from "react";
+import { USER_STATES } from "@times-components/storybook";
 import renderArticleConfig from "./showcase-helper";
 
 const link = typeof document === "object" &&
@@ -43,9 +44,7 @@ export default {
       name: "Article teaser",
       platform: "web",
       type: "story",
-      userStateDefaults: {
-        isLoggedIn: false
-      }
+      defaultUserState: USER_STATES.GUEST
     },
     {
       component: ({ boolean, color, select }, { decorateAction }) =>
@@ -60,11 +59,7 @@ export default {
       name: "Article metered expired",
       platform: "web",
       type: "story",
-      userStateDefaults: {
-        isLoggedIn: true,
-        isMetered: true,
-        isMeteredExpired: true,
-      }
+      defaultUserState: USER_STATES.RA_EXPIRED
     }
   ],
   name: "Pages/Article (marketing overlays)"

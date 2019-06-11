@@ -1,24 +1,56 @@
-/* eslint-disable import/prefer-default-export */
-
 /* eslint-env browser */
-export function addUserStateKnobs({ boolean }, defaults = { isLoggedIn: true }) {
+
+const SUBSCRIBER = "Subscriber";
+const RA = "Registered Access";
+const RA_EXPIRED = "Registered Access (Expired)";
+const GUEST = "Guest";
+
+export const USER_STATES = { SUBSCRIBER, RA, RA_EXPIRED, GUEST };
+
+const activeStatesPerUserState = {
+  [SUBSCRIBER]: ["isLoggedIn"],
+  [RA]: ["isLoggedIn", "isMetered"],
+  [RA_EXPIRED]: ["isLoggedIn", "isMetered", "isMeteredExpired"],
+  [GUEST]: []
+};
+
+const userStatesOptions = [SUBSCRIBER, RA, RA_EXPIRED, GUEST];
+
+export function addUserStateKnobs(
+  { boolean, select },
+  defaultState = SUBSCRIBER
+) {
   window.nuk = window.nuk || {};
 
-  Object.defineProperty(
-    window.nuk,
-    "user",
-    {
-      enumerable: true,
-      configurable: true,
-      get() {
-        const groupId = "User State";
-        const isLoggedIn = boolean("Is Logged In", defaults.isLoggedIn || false, groupId);
-        const isMetered = boolean("Is Metered", defaults.isMetered || false, groupId);
-        const isMeteredExpired = boolean("Is Metered Expired", defaults.isMeteredExpired || false, groupId);
-        const isShared = boolean("Is Shared", defaults.isShared || false, groupId);
+  Object.defineProperty(window.nuk, "user", {
+    enumerable: true,
+    configurable: true,
+    get() {
+      const groupId = "User State";
+      const userStateIdx = select(
+        "Current User State",
+        userStatesOptions,
+        `${userStatesOptions.indexOf(defaultState)}`,
+        groupId
+      );
+      const userStateName = userStatesOptions[userStateIdx];
+      const isShared = boolean("Is Shared", false, groupId);
+      const activeStateNames = activeStatesPerUserState[userStateName];
+      const activeStates = activeStateNames.reduce(
+        (acc, name) => ({
+          ...acc,
+          [name]: true
+        }),
+        {}
+      );
 
-        return { isLoggedIn, isMetered, isMeteredExpired, isShared };
-      }
+      return {
+        isLoggedIn: false,
+        isMetered: false,
+        isMeteredExpired: false,
+        isShared,
+        ...activeStates
+      };
     }
-  );
+  });
 }

@@ -1,6 +1,7 @@
 import { storiesOf } from "@storybook/react-native";
 import * as actions from "@storybook/addon-actions";
 import * as decorators from "./decorators";
+import { USER_STATES } from "./user-state";
 import showcaseToStoryBook from "./showcase-to-storybook";
 import knobs from "./knobs";
 import select from "./select-shim";
@@ -22,5 +23,6 @@ export {
   sections,
   select,
   showcaseConverter,
-  WhiteBgColorDecorator
+  WhiteBgColorDecorator,
+  USER_STATES
 };

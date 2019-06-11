@@ -298,7 +298,7 @@ const renderArticleConfig = ({
   decorateAction,
   hasScaling,
   link = null,
-  select,
+  select
 }) => {
   const id = "263b03a1-2ce6-4b94-b053-0d35316548c5";
   const withFlags = boolean("Flags", true);
@@ -323,7 +323,7 @@ const renderArticleConfig = ({
       ? { rgba: { alpha: 1, blue: 255, green: 255, red: 255 } }
       : null;
 
-  const user = global.nuk && global.nuk.user || {};
+  const user = (global.nuk && global.nuk.user) || {};
   const { isLoggedIn, isMeteredExpired, isShared } = user;
   const isTeaser = !isShared && (isMeteredExpired || !isLoggedIn);
 
