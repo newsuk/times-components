@@ -84,13 +84,12 @@ Pod::Spec.new do |s|
     'node_modules/react-native/ReactCommon/yoga/yoga.podspec',
     'node_modules/react-native/third-party-podspecs/DoubleConversion.podspec',
     'node_modules/react-native/third-party-podspecs/Folly.podspec',
-    'node_modules/react-native/third-party-podspecs/glog.podspec',
+    'node_modules/react-native/third-party-podspecs/glog.podspec'
   ]
 
   # Native dependencies if any, which come from node_modules
   dep_podspecs = [
-    # Leave here for future
-    # 'node_modules/react-native-svg/RNSVG.podspec'
+    'node_modules/react-native-webview/react-native-webview.podspec'
   ]
 
   # Ties the exact versions so host apps don't need to guess the version
