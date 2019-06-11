@@ -38,13 +38,15 @@ export default {
           decorateAction,
           hasScaling: false,
           isTeaser: true,
-          isLoggedIn: false,
           link,
           select
         }),
       name: "Article teaser",
       platform: "web",
-      type: "story"
+      type: "story",
+      userStateDefaults: {
+        isLoggedIn: false
+      }
     },
     {
       component: ({ boolean, color, select }, { decorateAction }) =>
@@ -54,14 +56,17 @@ export default {
           decorateAction,
           hasScaling: false,
           isTeaser: true,
-          isLoggedIn: true,
-          isMeteredExpired: true,
           link,
           select
         }),
       name: "Article metered expired",
       platform: "web",
-      type: "story"
+      type: "story",
+      userStateDefaults: {
+        isLoggedIn: true,
+        isMetered: true,
+        isMeteredExpired: true,
+      }
     }
   ],
   name: "Pages/Article (marketing overlays)"
