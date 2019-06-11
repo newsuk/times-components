@@ -17,5 +17,4 @@ export const isSubscriber = userState =>
 export const shouldShowFullArticle = user =>
   isShared(user) || isNonExpiredUser(user);
 
-export const isLoggedInOrShared = user =>
-  isShared(user) || isLoggedIn(user);
+export const isLoggedInOrShared = user => isShared(user) || isLoggedIn(user);
