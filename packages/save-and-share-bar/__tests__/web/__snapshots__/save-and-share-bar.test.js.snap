@@ -46,7 +46,7 @@ exports[`save and share bar component email icon with loading state while networ
     }
   >
     <div
-      className="css-text-901oao"
+      className="css-text-76zvg2"
       style={
         Object {
           "color": "rgba(105,105,105,1.00)",
@@ -225,7 +225,7 @@ exports[`save and share bar component save and share bar renders correctly 1`] =
     }
   >
     <div
-      className="css-text-901oao"
+      className="css-text-76zvg2"
       style={
         Object {
           "color": "rgba(105,105,105,1.00)",
