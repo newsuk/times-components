@@ -20,7 +20,9 @@ export default () => {
     MockUserState.mockReset = () => {
       MockUserState.mockStates = [
         RealUserState.fullArticle,
-        RealUserState.loggedIn
+        RealUserState.loggedIn,
+        RealUserState.loggedInOrShared,
+        RealUserState.subscriber
       ];
     };
 
