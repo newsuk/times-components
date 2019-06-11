@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-skeleton",
-  "version": "1.8.5",
+  "version": "1.8.6",
   "description": "The article skeleton",
   "main": "dist/article-skeleton",
   "dev": "src/article-skeleton",
@@ -90,8 +90,8 @@
     "@times-components/message-bar": "0.2.10",
     "@times-components/pull-quote": "3.4.91",
     "@times-components/responsive": "0.4.40",
-    "@times-components/save-and-share-bar": "0.6.6",
-    "@times-components/save-star-web": "0.2.6",
+    "@times-components/save-and-share-bar": "0.6.7",
+    "@times-components/save-star-web": "0.2.7",
     "@times-components/sticky": "0.0.4",
     "@times-components/styleguide": "3.28.22",
     "@times-components/text-flow": "0.0.11",
