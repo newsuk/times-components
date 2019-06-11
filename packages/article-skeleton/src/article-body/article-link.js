@@ -8,9 +8,7 @@ import articleLinkTrackingEvents from "./article-link-tracking-events";
 const ArticleLink = props => (
   <Context.Consumer>
     {({ theme: { scale } }) => {
-      const styles = {
-        ...styleFactory(scale)
-      };
+      const styles = styleFactory(scale);
       return (
         <TextLink
           onPress={props.onPress}

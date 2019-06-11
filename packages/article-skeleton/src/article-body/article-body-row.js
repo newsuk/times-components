@@ -89,7 +89,7 @@ export default ({
         markup: [new Body(value)],
         size: height
       });
-      if (children.length) {
+      if (children.length > 0) {
         text = children[0];
         if (text.markup[0].style) {
           text.markup[0].style.size = height;

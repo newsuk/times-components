@@ -302,7 +302,7 @@ export const snapshotTests = renderComponent => [
   },
   {
     name:
-      "an article with a nested markup in first paragraph displays no drop cap",
+      "an article with a nested markup in first paragraph displays a drop cap",
     test() {
       const template = "maincomment";
       const article = articleFixture({
