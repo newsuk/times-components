@@ -5,6 +5,7 @@ import mockDate from "mockdate";
 import ArticleSkeleton from "../../src/article-skeleton";
 import articleFixture from "../../fixtures/full-article";
 import articleSkeletonProps from "../shared-article-skeleton-props";
+import { getRegistrationType, getSharedStatus } from "../../src/data-helper";
 import shared from "../shared-tracking";
 
 beforeEach(() => {
@@ -35,16 +36,24 @@ it("analytics when rendering a shared Article page with metered access", () => {
       analyticsStream={stream}
       data={articleFixture()}
       Header={() => null}
-      onAuthorPress={() => {}}
-      onCommentGuidelinesPress={() => {}}
-      onCommentsPress={() => {}}
-      onLinkPress={() => {}}
-      onRelatedArticlePress={() => {}}
-      onTwitterLinkPress={() => {}}
-      onVideoPress={() => {}}
+      onAuthorPress={() => { }}
+      onCommentGuidelinesPress={() => { }}
+      onCommentsPress={() => { }}
+      onLinkPress={() => { }}
+      onRelatedArticlePress={() => { }}
+      onTwitterLinkPress={() => { }}
+      onVideoPress={() => { }}
     />
   );
   expect(stream.mock.calls).toMatchSnapshot();
+});
+
+it("getRegistrationType helper function", () => {
+  expect(getRegistrationType(global.nuk.user)).toEqual("logged out");
+});
+
+it("getSharedStatus helper function", () => {
+  expect(getSharedStatus(global.nuk.user)).toEqual("no");
 });
 
 shared();
