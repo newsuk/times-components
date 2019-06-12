@@ -43,7 +43,7 @@ export default () => {
     });
 
     it("save and share bar renders correctly when logged in", () => {
-      UserState.mockStates = [UserState.subscriber, UserState.isLoggedIn];
+      UserState.mockStates = [UserState.subscriber, UserState.loggedIn];
       const testInstance = TestRenderer.create(<SaveAndShareBar {...props} />);
       expect(testInstance.toJSON()).toMatchSnapshot();
     });
