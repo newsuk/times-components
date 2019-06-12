@@ -23,10 +23,17 @@ import {
   isLoggedInOrShared
 } from "./matchers";
 
-function UserState({ state, children, fallback, serverRender }) {
+function UserState({
+  state: shouldRenderInCurrentUserState,
+  children,
+  fallback,
+  serverRender
+}) {
   return (
     <ClientUserStateConsumer serverRender={serverRender}>
-      {({ user }) => (state(user) ? children : fallback)}
+      {({ user }) =>
+        shouldRenderInCurrentUserState(user) ? children : fallback
+      }
     </ClientUserStateConsumer>
   );
 }
