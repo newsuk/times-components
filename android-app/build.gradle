@@ -26,6 +26,11 @@ allprojects {
         maven {
             url "$reactRepositoryPath"
         }
+
+        maven {
+            // Local Maven repo containing AARs with JSC library built for Android
+            url "$rootDir/../node_modules/@kudo-ci/jsc-android/dist"
+        }
     }
 }
 
@@ -66,7 +71,12 @@ task generateReactArchives {
         from('../node_modules/react-native/android')
         into(reactRepositoryPath)
     }
+    task jscCopy(type: Copy) {
+        from('../node_modules/@kudo-ci/jsc-android/dist')
+        into(reactRepositoryPath)
+    }
 
     reactNativeCopy.dependsOn(removePreviousReactArchives)
-    generateReactArchives.dependsOn(reactNativeCopy)
+    jscCopy.dependsOn(reactNativeCopy)
+    generateReactArchives.dependsOn(jscCopy)
 }

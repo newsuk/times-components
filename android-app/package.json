@@ -17,6 +17,7 @@
     "react-native": "0.58.6",
     "react-native-svg": "9.4.0",
     "react-native-webview": "5.10.0",
+    "@kudo-ci/jsc-android": "241213-no-jit",
     "url-polyfill": "1.1.0"
   },
   "devDependencies": {
