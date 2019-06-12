@@ -95,16 +95,16 @@ class SaveAndShareBar extends Component {
         {savingEnabled ? (
           <UserState state={UserState.loggedIn} serverRender={false}>
             <View style={styles.rowItem}>
-            <SaveStar
-              colour={styles.svgIcon.save.strokeColour}
-              hoverColor={styles.svgIcon.hoverFillColour}
-              articleId={articleId}
-              saveApi={saveApi}
-              height={styles.svgIcon.star.height}
-              onSaveButtonPress={this.onSaveButtonPress}
-            />
-          </View>
-        </UserState>
+              <SaveStar
+                colour={styles.svgIcon.save.strokeColour}
+                hoverColor={styles.svgIcon.hoverFillColour}
+                articleId={articleId}
+                saveApi={saveApi}
+                height={styles.svgIcon.star.height}
+                onSaveButtonPress={this.onSaveButtonPress}
+              />
+            </View>
+          </UserState>
         ) : null}
       </View>
     );
