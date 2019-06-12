@@ -60,7 +60,7 @@ const renderData = (app, helmetContext = {}) =>
 
     const { helmet } = helmetContext;
     const headMarkup = helmet
-      ? ["title", "meta", "link"].reduce(
+      ? ["title", "meta", "link", "script"].reduce(
           (head, key) => head + helmet[key].toString(),
           ""
         )

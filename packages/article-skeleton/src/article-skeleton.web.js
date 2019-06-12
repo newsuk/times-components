@@ -52,7 +52,8 @@ class ArticleSkeleton extends Component {
       receiveChildList,
       saveApi,
       spotAccountId,
-      paidContentClassName
+      paidContentClassName,
+      faviconUrl
     } = this.props;
 
     const {
@@ -103,7 +104,11 @@ class ArticleSkeleton extends Component {
 
             return (
               <Fragment>
-                <Head article={article} />
+                <Head
+                  article={article}
+                  paidContentClassName={paidContentClassName}
+                  faviconUrl={faviconUrl}
+                />
                 <AdComposer adConfig={adConfig}>
                   <LazyLoad rootMargin={spacing(10)} threshold={0.5}>
                     {({ observed, registerNode }) => (
