@@ -92,7 +92,7 @@ export default () => {
     expect(mock.window.apstag.fetchBids).toHaveBeenCalled();
   });
 
-  it("get Amazon Config without a commercial section", () => {
+  it("get Amazon Config with a commercial section", () => {
     const init = adInit(initOptions);
     const slots = [{ code: "ad-header", sizes: [[970, 250], [970, 90]] }];
     const amazonSlotConfig = [
@@ -111,7 +111,7 @@ export default () => {
     ).toEqual(amazonSlotConfig);
   });
 
-  it("get Amazon Config with a commercial section", () => {
+  it("get empty Amazon Config without a commercial section", () => {
     const init = adInit(initOptions);
     expect(
       init.apstag.getConfig({
