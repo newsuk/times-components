@@ -1,6 +1,6 @@
 {
   "name": "@times-components/android-app",
-  "version": "0.14.91",
+  "version": "0.14.92",
   "license": "BSD-3-Clause",
   "scripts": {
     "build": "./gradlew clean && ./gradlew generateReactArchives && ./gradlew assemble && ./gradlew publish",
@@ -11,13 +11,13 @@
     "start": "react-native start --config ../../../../android-app/metro.config.js"
   },
   "dependencies": {
+    "@kudo-ci/jsc-android": "241213-no-jit",
     "@times-components/pages": "2.0.64",
     "prop-types": "15.7.2",
     "react": "16.6.3",
     "react-native": "0.58.6",
     "react-native-svg": "9.4.0",
     "react-native-webview": "5.10.0",
-    "@kudo-ci/jsc-android": "241213-no-jit",
     "url-polyfill": "1.1.0"
   },
   "devDependencies": {
