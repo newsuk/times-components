@@ -1,11 +1,7 @@
 /* eslint-env browser */
 
-const SUBSCRIBER = "Subscriber";
-const RA = "Registered Access";
-const RA_EXPIRED = "Registered Access (Expired)";
-const GUEST = "Guest";
-
-export const USER_STATES = { SUBSCRIBER, RA, RA_EXPIRED, GUEST };
+import { select, boolean } from "@storybook/addon-knobs/react";
+import { SUBSCRIBER, RA, RA_EXPIRED, GUEST } from "./states";
 
 const activeStatesPerUserState = {
   [SUBSCRIBER]: ["isLoggedIn"],
@@ -16,10 +12,7 @@ const activeStatesPerUserState = {
 
 const userStatesOptions = [SUBSCRIBER, RA, RA_EXPIRED, GUEST];
 
-export function addUserStateKnobs(
-  { boolean, select },
-  defaultState = SUBSCRIBER
-) {
+function addUserStateKnobs(defaultState = SUBSCRIBER) {
   window.nuk = window.nuk || {};
 
   Object.defineProperty(window.nuk, "user", {
@@ -27,13 +20,12 @@ export function addUserStateKnobs(
     configurable: true,
     get() {
       const groupId = "User State";
-      const userStateIdx = select(
+      const userStateName = select(
         "Current User State",
         userStatesOptions,
-        `${userStatesOptions.indexOf(defaultState)}`,
+        defaultState,
         groupId
       );
-      const userStateName = userStatesOptions[userStateIdx];
       const isShared = boolean("Is Shared", false, groupId);
       const activeStateNames = activeStatesPerUserState[userStateName];
       const activeStates = activeStateNames.reduce(
@@ -54,3 +46,5 @@ export function addUserStateKnobs(
     }
   });
 }
+
+export default addUserStateKnobs;

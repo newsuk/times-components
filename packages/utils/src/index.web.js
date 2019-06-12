@@ -1,6 +1,5 @@
 export * from "./screen";
 export * from "./strings";
-export * from "./user-state";
 
 export { default as clean } from "./props";
 export { default as addMissingProtocol } from "./add-missing-protocol";
@@ -12,4 +11,3 @@ export { default as getHeadline } from "./get-headline";
 export { default as gqlRgbaToHex } from "./gql-rgba-to-hex";
 export { default as gqlRgbaToStyle } from "./gql-rgba-to-style";
 export { default as HoverIcon } from "./hover-icon";
-export { default as UserState } from "./user-state-component";

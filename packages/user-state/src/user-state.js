@@ -21,7 +21,7 @@ import {
   shouldShowFullArticle,
   isSubscriber,
   isLoggedInOrShared
-} from "./user-state";
+} from "./matchers";
 
 function UserState({ state, children, fallback, serverRender }) {
   return (
@@ -51,5 +51,9 @@ UserState.defaultProps = {
   serverRender: true,
   fallback: null
 };
+
+export { default as mockUserState } from "./mock-user-state";
+export { default as USER_STATES } from "./states";
+export { default as addUserStateKnobs } from "./storybook-helper";
 
 export default UserState;

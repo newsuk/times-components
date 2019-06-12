@@ -1,6 +1,6 @@
 import React from "react";
 import ArticleTopics from "@times-components/article-topics";
-import { UserState } from "@times-components/utils";
+import UserState from "@times-components/user-state";
 import PropTypes from "prop-types";
 import styles from "../styles/article-topics";
 import TopicsMetaContainer from "../styles/article-topics/responsive";

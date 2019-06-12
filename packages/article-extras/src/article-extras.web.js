@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { UserState } from "@times-components/utils";
+import UserState from "@times-components/user-state";
 import ArticleComments from "@times-components/article-comments";
 import RelatedArticles from "@times-components/related-articles";
 import ArticleTopics from "./article-topics";

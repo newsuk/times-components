@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-env browser */
 import React from "react";
-import { USER_STATES } from "@times-components/storybook";
+import { USER_STATES } from "@times-components/user-state";
 import renderArticleConfig from "./showcase-helper";
 
 const link = typeof document === "object" &&

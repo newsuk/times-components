@@ -1,6 +1,6 @@
 /* eslint-disable import/prefer-default-export */
 
-import { mockUserState } from "@times-components/mocks";
+import { mockUserState } from "@times-components/user-state";
 
 export const UserState = mockUserState();
 

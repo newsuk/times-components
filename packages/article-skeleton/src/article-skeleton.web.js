@@ -5,7 +5,7 @@ import ArticleExtras from "@times-components/article-extras";
 import LazyLoad from "@times-components/lazy-load";
 import { spacing } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
-import { UserState } from "@times-components/utils";
+import UserState from "@times-components/user-state";
 import { MessageContext } from "@times-components/message-bar";
 import ArticleBody from "./article-body/article-body";
 import {
