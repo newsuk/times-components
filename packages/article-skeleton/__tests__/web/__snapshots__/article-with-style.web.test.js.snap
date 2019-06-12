@@ -383,7 +383,9 @@ exports[`full article with style 1`] = `
       >
         <span
           className="c7 IS3"
-        />
+        >
+           
+        </span>
         his being Black History Month, last week
       </p>
       <div

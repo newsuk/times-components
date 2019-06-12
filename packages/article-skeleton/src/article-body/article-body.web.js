@@ -48,7 +48,7 @@ const renderers = ({ observed, registerNode, paidContentClassName }) => ({
       )
     };
   },
-  dropCap(key, attributes, children) {
+  dropCap(key, attrs, children) {
     return {
       element: (
         <Context.Consumer key={key}>
@@ -56,7 +56,7 @@ const renderers = ({ observed, registerNode, paidContentClassName }) => ({
             theme: { dropCapFont, sectionColour = colours.section.default }
           }) => (
             <DropCapView colour={sectionColour} font={dropCapFont}>
-              {children}
+              {children.length > 0 ? children : " "}
             </DropCapView>
           )}
         </Context.Consumer>
