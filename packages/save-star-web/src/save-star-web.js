@@ -81,14 +81,15 @@ class SaveStarWeb extends Component {
     const { savedStatus } = this.state;
     const saveStyle = getStyles({ saveStatus: savedStatus });
     const { fillColour, strokeColour } = saveStyle;
-
     return (
       <Link onPress={this.onSaveButtonPress} responsiveLinkStyles={styles.link}>
         <HoverIcon colour={colour} hoverColour={hoverColour}>
           <IconStar
             fillColour={fillColour}
             strokeColour={strokeColour}
-            title="Save to My Articles"
+            title={
+              savedStatus ? "Remove from My Articles" : "Save to My Articles"
+            }
             height={18}
           />
         </HoverIcon>

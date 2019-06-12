@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.1.0](https://github.com/newsuk/times-components/compare/@times-components/image@6.0.14...@times-components/image@6.1.0) (2019-06-10)
+
+
+### Features
+
+* implement lead asset to use the passed width ([#2020](https://github.com/newsuk/times-components/issues/2020)) ([7cdc865](https://github.com/newsuk/times-components/commit/7cdc865))
+
+
+
+
+
 ## [6.0.14](https://github.com/newsuk/times-components/compare/@times-components/image@6.0.13...@times-components/image@6.0.14) (2019-06-07)
 
 **Note:** Version bump only for package @times-components/image
