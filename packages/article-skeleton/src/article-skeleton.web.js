@@ -72,14 +72,17 @@ class ArticleSkeleton extends Component {
     } = article;
 
     const { articleWidth } = this.state;
-    const newContent = [...content];
+    let newContent = [...content];
 
     if (newContent && newContent.length > 0) {
-      newContent[0] = insertDropcapIntoAST(
-        newContent[0],
-        template,
-        dropcapsDisabled
-      );
+      newContent = insertDropcapIntoAST(newContent, template, dropcapsDisabled);
+    }
+
+    if (newContent.length > 0 && newContent[0].name === "dropCap") {
+      // remove the wrapping paragraph
+      newContent[0].children = newContent[0].children[0].children;
+      newContent[1].children = [newContent[0], ...newContent[1].children];
+      newContent = newContent.slice(1);
     }
 
     receiveChildList([

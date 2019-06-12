@@ -31,7 +31,10 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
     </div>
     <div>
       <p>
-        This being Black History Month, last week
+        <span>
+          T
+        </span>
+        his being Black History Month, last week
       </p>
       <div>
         <InteractiveWrapper
@@ -469,8 +472,13 @@ exports[`3. an article with a nested markup in first paragraph displays a drop c
     </div>
     <div>
       <p>
+        <span>
+          <b>
+            Q
+          </b>
+        </span>
         <b>
-          Q Some years ago I made the decision to take as a friend a woman who is very opinionated.
+           Some years ago I made the decision to take as a friend a woman who is very opinionated.
         </b>
       </p>
       <p>

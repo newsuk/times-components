@@ -142,9 +142,7 @@ exports[`Article with user state Render Metered expired article when user is log
     </div>
     <div>
       <p>
-        <span>
-          T
-        </span>
+        <span />
         his being Black History Month, last week
       </p>
       <div>
@@ -596,9 +594,7 @@ exports[`Article with user state Render full article when user is logged in 1`] 
     </div>
     <div>
       <p>
-        <span>
-          T
-        </span>
+        <span />
         his being Black History Month, last week
       </p>
       <div>
@@ -921,9 +917,7 @@ exports[`Article with user state Render teaser article when user is not logged i
   <div>
     <div>
       <p>
-        <span>
-          T
-        </span>
+        <span />
         his being Black History Month, last week
       </p>
       <div>
@@ -1246,9 +1240,7 @@ exports[`Article with user state Render teaser article when user is null 1`] = `
   <div>
     <div>
       <p>
-        <span>
-          T
-        </span>
+        <span />
         his being Black History Month, last week
       </p>
       <div>
