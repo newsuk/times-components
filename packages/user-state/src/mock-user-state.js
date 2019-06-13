@@ -10,8 +10,8 @@ function mockUserState() {
         : fallback;
     }
 
-    Object.entries(RealUserState).reduce((acc, [key, val]) => {
-      acc[key] = val;
+    Object.keys(RealUserState).reduce((acc, key) => {
+      acc[key] = RealUserState[key];
 
       return acc;
     }, MockUserState);

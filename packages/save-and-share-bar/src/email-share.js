@@ -71,7 +71,7 @@ class EmailShare extends Component {
             <IconEmail
               fillColour="currentColor"
               height={styles.svgIcon.height}
-              title="Share by email client"
+              title="Share by email"
             />
           )}
         </BarItem>

@@ -140,7 +140,7 @@ exports[`save and share bar component save and share bar renders correctly when 
       <IconEmail
         fillColour="currentColor"
         height={15}
-        title="Share by email client"
+        title="Share by email"
       />
     </BarItem>
     <BarItem
@@ -272,7 +272,7 @@ exports[`save and share bar component save and share bar renders correctly when 
       <IconEmail
         fillColour="currentColor"
         height={15}
-        title="Share by email client"
+        title="Share by email"
       />
     </BarItem>
     <BarItem

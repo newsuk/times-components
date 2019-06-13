@@ -16,7 +16,7 @@ import {
   isLoggedIn,
   isMetered,
   isMeteredExpired,
-  isNonExpiredUser,
+  isNonMeteredExpiredUser,
   isShared,
   shouldShowFullArticle,
   isSubscriber,
@@ -42,7 +42,7 @@ UserState.loggedIn = isLoggedIn;
 UserState.meteredExpired = isMeteredExpired;
 UserState.metered = isMetered;
 UserState.shared = isShared;
-UserState.nonExpiredUser = isNonExpiredUser;
+UserState.nonMeteredExpiredUser = isNonMeteredExpiredUser;
 UserState.fullArticle = shouldShowFullArticle;
 UserState.subscriber = isSubscriber;
 UserState.loggedInOrShared = isLoggedInOrShared;

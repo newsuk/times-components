@@ -3,7 +3,7 @@ import {
   isMeteredExpired,
   isShared,
   isMetered,
-  isNonExpiredUser,
+  isNonMeteredExpiredUser,
   isSubscriber,
   shouldShowFullArticle,
   isLoggedInOrShared
@@ -83,10 +83,10 @@ describe("user state should", () => {
     });
   });
 
-  describe("isNonExpiredUser", () => {
+  describe("isNonMeteredExpiredUser", () => {
     it("returns true when user is a subscriber", () => {
       const userState = { ...defaultUserState, isLoggedIn: true };
-      expect(isNonExpiredUser(userState)).toBe(true);
+      expect(isNonMeteredExpiredUser(userState)).toBe(true);
     });
 
     it("returns true when user is a metered", () => {
@@ -95,7 +95,7 @@ describe("user state should", () => {
         isLoggedIn: true,
         isMetered: false
       };
-      expect(isNonExpiredUser(userState)).toBe(true);
+      expect(isNonMeteredExpiredUser(userState)).toBe(true);
     });
 
     it("returns false when user is a metered expired", () => {
@@ -105,12 +105,12 @@ describe("user state should", () => {
         isMetered: false,
         isMeteredExpired: false
       };
-      expect(isNonExpiredUser(userState)).toBe(true);
+      expect(isNonMeteredExpiredUser(userState)).toBe(true);
     });
 
     it("returns false when user is guest", () => {
       const userState = { ...defaultUserState, isLoggedIn: false };
-      expect(isNonExpiredUser(userState)).toBe(false);
+      expect(isNonMeteredExpiredUser(userState)).toBe(false);
     });
   });
 
