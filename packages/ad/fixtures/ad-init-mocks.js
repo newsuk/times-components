@@ -51,6 +51,10 @@ export const makeAdInitMocks = (withHeaderBidding = false) => {
     setTargetingForGPTAsync: jest.fn()
   };
   window.pbjs = pbjs;
+  const processPrebidCommandQueue = () => {
+    window.pbjs.que.forEach(cmd => cmd());
+    window.pbjs.que = [];
+  };
   const apstag = {
     /* eslint-disable prefer-rest-params, no-underscore-dangle */
     _Q: [],
@@ -138,6 +142,7 @@ export const makeAdInitMocks = (withHeaderBidding = false) => {
       googletag,
       nuk,
       processGoogletagCommandQueue,
+      processPrebidCommandQueue,
       pubAds,
       sizeMapping,
       slot,
