@@ -14,7 +14,7 @@ Array [
         <RNCWebView
           allowFileAccess={false}
           allowsFullscreenVideo={false}
-          androidHardwareAccelerationDisabled={true}
+          androidHardwareAccelerationDisabled={false}
           cacheEnabled={true}
           className="IS1"
           javaScriptEnabled={true}
@@ -39,7 +39,7 @@ Array [
         <RNCWebView
           allowFileAccess={false}
           allowsFullscreenVideo={false}
-          androidHardwareAccelerationDisabled={true}
+          androidHardwareAccelerationDisabled={false}
           cacheEnabled={true}
           className="IS1"
           javaScriptEnabled={true}
