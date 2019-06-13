@@ -1,6 +1,6 @@
 {
   "name": "@times-components/sticky",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Attach children to viewport on scroll (web only)",
   "main": "dist/sticky",
   "dev": "src/sticky",
