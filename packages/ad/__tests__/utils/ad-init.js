@@ -1,3 +1,4 @@
+import merge from "lodash.merge";
 import adInitOriginal from "../../src/utils/ad-init";
 import { makeAdInitMocks, adInit } from "../../fixtures/ad-init-mocks";
 import { expectFunctionToBeSelfContained } from "../../fixtures/check-self-contained-function";
@@ -16,82 +17,44 @@ export default () => {
     expectFunctionToBeSelfContained(adInitOriginal);
   });
 
-  it("performs page-level setup for the first slot only", () => {
-    const init1 = adInit(initOptions);
-    const init2 = adInit(initOptions);
-
-    jest.spyOn(init1, "doPageAdSetupAsync").mockImplementation();
-    jest.spyOn(init2, "doPageAdSetupAsync").mockImplementation();
-
-    init1.init();
-    init2.init();
-
-    expect(init1.doPageAdSetupAsync).toHaveBeenCalledTimes(1);
-    expect(init2.doPageAdSetupAsync).toHaveBeenCalledTimes(0);
-  });
-
-  it("performs slot-level setup for every slot", () => {
-    const init1 = adInit(initOptions);
-    const init2 = adInit(initOptions);
-
-    jest.spyOn(init1.gpt, "doSlotAdSetup").mockImplementation();
-    jest.spyOn(init2.gpt, "doSlotAdSetup").mockImplementation();
-
-    init1.init();
-    init2.init();
-
-    expect(init1.gpt.doSlotAdSetup).toHaveBeenCalledTimes(1);
-    expect(init2.gpt.doSlotAdSetup).toHaveBeenCalledTimes(1);
-  });
-
   it("refresh the ads on a new breakpoint", () => {
     const init1 = adInit(initOptions);
 
-    jest
-      .spyOn(init1.gpt, "scheduleSetPageTargetingValues")
-      .mockImplementation();
-    jest.spyOn(init1.gpt, "displayAds").mockImplementation();
-
-    init1.init();
-    init1.handleBreakpointChange("huge", { matches: true });
+    init1.handleBreakPointChange("huge", { matches: true });
+    mock.processGoogletagCommandQueue();
     mock.processGoogletagCommandQueue();
 
-    expect(init1.gpt.scheduleSetPageTargetingValues).toHaveBeenCalledWith({
-      breakpoint: "huge",
-      refresh: "true"
-    });
-    expect(init1.gpt.displayAds).toHaveBeenCalledTimes(1);
+    expect(mock.pubAds.setTargeting).toHaveBeenCalledTimes(2);
+    expect(mock.pubAds.setTargeting).toHaveBeenCalledWith("breakpoint", "huge");
+    expect(mock.pubAds.setTargeting).toHaveBeenCalledWith("refresh", "true");
+    expect(mock.pubAds.refresh).toHaveBeenCalledTimes(1);
   });
 
   it("do not refresh the ads if the query doesn't match", () => {
     const init1 = adInit(initOptions);
 
-    jest
-      .spyOn(init1.gpt, "scheduleSetPageTargetingValues")
-      .mockImplementation();
-    jest.spyOn(init1.gpt, "displayAds").mockImplementation();
+    jest.spyOn(init1.gpt, "refreshAd").mockImplementation();
 
-    init1.init();
-    init1.handleBreakpointChange("huge", { matches: false });
+    init1.handleBreakPointChange("huge", { matches: false });
+    mock.processGoogletagCommandQueue();
+    mock.processGoogletagCommandQueue();
 
-    expect(init1.gpt.displayAds).toHaveBeenCalledTimes(0);
+    expect(mock.pubAds.setTargeting).toHaveBeenCalledTimes(0);
+    expect(mock.pubAds.refresh).toHaveBeenCalledTimes(0);
   });
 
-  it("throws if the init hook is called twice", () => {
+  it("rejects if the init hook is called twice", () => {
     const init = adInit(initOptions);
     init.init();
-    expect(() => init.init()).toThrowError(
-      new Error("init() has already been called")
-    );
+    return init.init().then(err => {
+      expect(err).toEqual("skipped");
+    });
   });
 
-  it("destroys all slots", () => {
-    const init = adInit(initOptions);
-
-    jest.spyOn(init.gpt, "destroySlots").mockImplementation();
-
-    init.destroySlots();
-
-    expect(init.gpt.destroySlots).toHaveBeenCalledTimes(1);
+  it("reject if ads are disabled", () => {
+    const init = adInit(merge(initOptions, { data: { disableAds: true } }));
+    return init.init().then(err => {
+      expect(err).toEqual("skipped");
+    });
   });
 };
