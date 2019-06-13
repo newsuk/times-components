@@ -64,6 +64,7 @@
     "@times-components/provider": "1.17.6",
     "@times-components/related-articles": "6.0.38",
     "@times-components/responsive": "0.4.40",
+    "@times-components/user-state": "0.0.1",
     "@times-components/styleguide": "3.28.22",
     "prop-types": "15.7.2",
     "styled-components": "4.2.0"

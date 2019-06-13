@@ -42,6 +42,7 @@
     "@times-components/styleguide": "3.28.22",
     "@times-components/tracking": "2.4.40",
     "@times-components/utils": "4.11.9",
+    "@times-components/user-state": "0.0.1",
     "prop-types": "15.7.2"
   },
   "devDependencies": {

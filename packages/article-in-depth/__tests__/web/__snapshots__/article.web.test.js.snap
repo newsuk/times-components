@@ -150,14 +150,30 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
       </div>
     </div>
     <div>
+      <div>
+        <SaveAndShareBar
+          articleHeadline=""
+          articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+          articleUrl="https://url.io"
+          saveApi={
+            Object {
+              "bookmark": [Function],
+              "getBookmarks": [Function],
+              "unBookmark": [Function],
+            }
+          }
+          savingEnabled={true}
+          sharingEnabled={true}
+        />
+      </div>
+    </div>
+    <div>
       <p>
         Some content
       </p>
       <ArticleExtras
         articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-        commentsAllowed={false}
         commentsEnabled={true}
-        relatedArticleAllowed={false}
         relatedArticleSlice={
           Object {
             "__typename": "StandardSlice",
@@ -210,7 +226,6 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
             },
           ]
         }
-        topicsAllowed={false}
       />
     </div>
   </div>
@@ -363,6 +378,24 @@ exports[`4. an article with ads 1`] = `
       </div>
     </div>
     <div>
+      <div>
+        <SaveAndShareBar
+          articleHeadline="Some Headline"
+          articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+          articleUrl="https://url.io"
+          saveApi={
+            Object {
+              "bookmark": [Function],
+              "getBookmarks": [Function],
+              "unBookmark": [Function],
+            }
+          }
+          savingEnabled={true}
+          sharingEnabled={true}
+        />
+      </div>
+    </div>
+    <div>
       <Ad
         contextUrl="https://url.io"
         section="Some Section"
@@ -370,9 +403,7 @@ exports[`4. an article with ads 1`] = `
       />
       <ArticleExtras
         articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-        commentsAllowed={false}
         commentsEnabled={true}
-        relatedArticleAllowed={false}
         relatedArticleSlice={
           Object {
             "__typename": "StandardSlice",
@@ -425,7 +456,6 @@ exports[`4. an article with ads 1`] = `
             },
           ]
         }
-        topicsAllowed={false}
       />
     </div>
   </div>

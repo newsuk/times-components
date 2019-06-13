@@ -8,7 +8,7 @@ import {
   print
 } from "@times-components/jest-serializer";
 import { iterator } from "@times-components/test-utils";
-import "./mocks";
+import { UserState } from "./mocks";
 import ArticleExtras from "../src/article-extras";
 import { relatedArticleSlice, topics } from "../fixtures/article-extras";
 
@@ -33,20 +33,17 @@ export default () => {
     {
       name: "renders correctly",
       test: () => {
-        const isAllowed = true;
+        UserState.mockStates = [UserState.fullArticle];
         const testInstance = TestRenderer.create(
           <ArticleExtras
             analyticsStream={() => {}}
             articleId="dummy-article-id"
-            commentsAllowed={isAllowed}
             commentsEnabled
             registerNode={() => {}}
-            relatedArticleAllowed={isAllowed}
             relatedArticleSlice={relatedArticleSlice}
             relatedArticlesVisible
             spotAccountId="dummy-spot-id"
             topics={topics}
-            topicsAllowed={isAllowed}
           />
         );
 
@@ -56,20 +53,17 @@ export default () => {
     {
       name: "no related articles, topics and comments when user not logged in",
       test: () => {
-        const isAllowed = false;
+        UserState.mockStates = [];
         const testInstance = TestRenderer.create(
           <ArticleExtras
             analyticsStream={() => {}}
             articleId="dummy-article-id"
-            commentsAllowed={isAllowed}
             commentsEnabled
             registerNode={() => {}}
-            relatedArticleAllowed={isAllowed}
             relatedArticleSlice={relatedArticleSlice}
             relatedArticlesVisible
             spotAccountId="dummy-spot-id"
             topics={topics}
-            topicsAllowed={isAllowed}
           />
         );
 

@@ -1,3 +1,8 @@
+/* eslint-disable import/prefer-default-export */
+import { mockUserState } from "@times-components/user-state";
+
+export const UserState = mockUserState();
+
 jest.mock("react-helmet-async", () => ({ Helmet: "Helmet" }));
 // eslint-disable-next-line global-require
 jest.mock("@times-components/ad", () => require("./ad-mock"));

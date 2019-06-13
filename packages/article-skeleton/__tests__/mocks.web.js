@@ -1,3 +1,8 @@
+/* eslint-disable import/prefer-default-export */
+import { mockUserState } from "@times-components/user-state";
+
+export const UserState = mockUserState();
+
 jest.mock("../src/head.web", () => "Head");
 
 // eslint-disable-next-line global-require

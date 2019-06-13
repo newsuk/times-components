@@ -1,0 +1,67 @@
+{
+  "name": "@times-components/user-state",
+  "version": "0.0.1",
+  "description": "Selectively render react components based on current user state",
+  "main": "dist/user-state",
+  "dev": "src/user-state",
+  "scripts": {
+    "depcheck": "depcheck --ignores='babel-*,depcheck,eslint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
+    "fmt": "eslint . --fix && prettier --write '**/*.*'",
+    "prettier:diff": "prettier --list-different '**/*.*'",
+    "lint": "eslint . && yarn prettier:diff && yarn depcheck",
+    "test": "jest --config='./__tests__/jest.config.js'",
+    "prepublishOnly": "yarn transpile && yarn bundle",
+    "cleanup-dist": "rm -rf dist",
+    "transpile": "yarn cleanup-dist && babel src -d dist",
+    "bundle": "NODE_ENV=production webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newsuk/times-components.git"
+  },
+  "keywords": [
+    "react-native-web",
+    "react",
+    "native",
+    "web",
+    "user-state",
+    "component"
+  ],
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/newsuk/times-components/issues"
+  },
+  "homepage": "https://github.com/newsuk/times-components#readme",
+  "dependencies": {
+    "@storybook/addon-knobs": "4.1.18",
+    "@times-components/context": "1.0.16",
+    "prop-types": "15.7.2"
+  },
+  "devDependencies": {
+    "@times-components/eslint-config-thetimes": "0.8.12",
+    "@times-components/jest-configurator": "2.5.12",
+    "@times-components/jest-serializer": "3.2.8",
+    "@times-components/webpack-configurator": "2.0.21",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "24.8.0",
+    "babel-loader": "8.0.5",
+    "eslint": "5.9.0",
+    "jest": "24.8.0",
+    "prettier": "1.14.3",
+    "react": "16.6.3",
+    "react-dom": "16.6.3",
+    "react-native": "0.58.6",
+    "react-test-renderer": "16.6.3",
+    "webpack": "4.30.0",
+    "webpack-cli": "3.3.1"
+  },
+  "peerDependencies": {
+    "react": ">=16.5",
+    "react-dom": ">=16.5",
+    "react-native": ">=0.55",
+    "react-native-web": "0.11.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

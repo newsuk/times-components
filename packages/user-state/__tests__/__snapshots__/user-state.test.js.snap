@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserState does not render its children if matcher function returns false 1`] = `null`;
+
+exports[`UserState does not renders its fallback if matcher function returns true 1`] = `
+<div>
+  should render children
+</div>
+`;
+
+exports[`UserState renders its children if matcher function returns true 1`] = `
+<div>
+  should render children
+</div>
+`;
+
+exports[`UserState renders its fallback if matcher function returns false 1`] = `
+<div>
+  should render fallback
+</div>
+`;

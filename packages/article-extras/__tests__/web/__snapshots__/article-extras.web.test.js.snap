@@ -22,8 +22,4 @@ Array [
 ]
 `;
 
-exports[`2. no related articles, topics and comments when user not logged in 1`] = `
-<aside
-  id="related-articles"
-/>
-`;
+exports[`2. no related articles, topics and comments when user not logged in 1`] = `null`;

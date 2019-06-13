@@ -5,8 +5,7 @@ import ArticleExtras from "@times-components/article-extras";
 import LazyLoad from "@times-components/lazy-load";
 import { spacing } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
-import Context from "@times-components/context";
-import { isLoggedIn, isMeteredExpired } from "@times-components/utils";
+import UserState from "@times-components/user-state";
 import { MessageContext } from "@times-components/message-bar";
 import ArticleBody from "./article-body/article-body";
 import {
@@ -95,90 +94,73 @@ class ArticleSkeleton extends Component {
           this.node = node;
         }}
       >
-        <Context.Consumer>
-          {({ user }) => {
-            const isUserLoggedIn = isLoggedIn(user);
-            const isAllowed = isUserLoggedIn && !isMeteredExpired(user);
-            const shouldRenderSaveAndShare =
-              (savingEnabled || sharingEnabled) && isUserLoggedIn;
-
-            return (
+        <Head
+          article={article}
+          paidContentClassName={paidContentClassName}
+          faviconUrl={faviconUrl}
+        />
+        <AdComposer adConfig={adConfig}>
+          <LazyLoad rootMargin={spacing(10)} threshold={0.5}>
+            {({ observed, registerNode }) => (
               <Fragment>
-                <Head
-                  article={article}
-                  paidContentClassName={paidContentClassName}
-                  faviconUrl={faviconUrl}
-                />
-                <AdComposer adConfig={adConfig}>
-                  <LazyLoad rootMargin={spacing(10)} threshold={0.5}>
-                    {({ observed, registerNode }) => (
-                      <Fragment>
-                        <HeaderAdContainer key="headerAd">
-                          <Ad
-                            contextUrl={url}
-                            section={section}
-                            slotName="header"
-                            style={adStyle}
+                <HeaderAdContainer key="headerAd">
+                  <Ad
+                    contextUrl={url}
+                    section={section}
+                    slotName="header"
+                    style={adStyle}
+                  />
+                </HeaderAdContainer>
+                <MainContainer>
+                  <Header width={articleWidth} />
+                  {savingEnabled || sharingEnabled ? (
+                    <UserState state={UserState.loggedInOrShared}>
+                      <MessageContext.Consumer>
+                        {({ showMessage }) => (
+                          <StickySaveAndShareBar
+                            articleId={articleId}
+                            articleHeadline={headline}
+                            articleUrl={url}
+                            onCopyLink={() =>
+                              showMessage("Article link copied")
+                            }
+                            onSaveToMyArticles={() => {}}
+                            onShareOnEmail={() => {}}
+                            saveApi={saveApi}
+                            savingEnabled={savingEnabled}
+                            sharingEnabled={sharingEnabled}
                           />
-                        </HeaderAdContainer>
-                        <MainContainer>
-                          <Header
-                            topicsAllowed={isUserLoggedIn}
-                            width={articleWidth}
-                          />
-                          {shouldRenderSaveAndShare && (
-                            <MessageContext.Consumer>
-                              {({ showMessage }) => (
-                                <StickySaveAndShareBar
-                                  articleId={articleId}
-                                  articleHeadline={headline}
-                                  articleUrl={url}
-                                  onCopyLink={() =>
-                                    showMessage("Article link copied")
-                                  }
-                                  onSaveToMyArticles={() => {}}
-                                  onShareOnEmail={() => {}}
-                                  saveApi={saveApi}
-                                  savingEnabled={savingEnabled}
-                                  sharingEnabled={sharingEnabled}
-                                />
-                              )}
-                            </MessageContext.Consumer>
-                          )}
-                          <BodyContainer>
-                            <ArticleBody
-                              content={newContent}
-                              contextUrl={url}
-                              observed={observed}
-                              registerNode={registerNode}
-                              section={section}
-                              paidContentClassName={paidContentClassName}
-                            />
-                            <ArticleExtras
-                              analyticsStream={analyticsStream}
-                              articleId={articleId}
-                              commentsAllowed={isAllowed}
-                              commentsEnabled={commentsEnabled}
-                              registerNode={registerNode}
-                              relatedArticleAllowed={isAllowed}
-                              relatedArticleSlice={relatedArticleSlice}
-                              relatedArticlesVisible={
-                                !!observed.get("related-articles")
-                              }
-                              spotAccountId={spotAccountId}
-                              topics={topics}
-                              topicsAllowed={isAllowed}
-                            />
-                          </BodyContainer>
-                        </MainContainer>
-                      </Fragment>
-                    )}
-                  </LazyLoad>
-                </AdComposer>
+                        )}
+                      </MessageContext.Consumer>
+                    </UserState>
+                  ) : null}
+                  <BodyContainer>
+                    <ArticleBody
+                      content={newContent}
+                      contextUrl={url}
+                      observed={observed}
+                      registerNode={registerNode}
+                      section={section}
+                      paidContentClassName={paidContentClassName}
+                    />
+                    <ArticleExtras
+                      analyticsStream={analyticsStream}
+                      articleId={articleId}
+                      commentsEnabled={commentsEnabled}
+                      registerNode={registerNode}
+                      relatedArticleSlice={relatedArticleSlice}
+                      relatedArticlesVisible={
+                        !!observed.get("related-articles")
+                      }
+                      spotAccountId={spotAccountId}
+                      topics={topics}
+                    />
+                  </BodyContainer>
+                </MainContainer>
               </Fragment>
-            );
-          }}
-        </Context.Consumer>
+            )}
+          </LazyLoad>
+        </AdComposer>
       </article>
     );
   }

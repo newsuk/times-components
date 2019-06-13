@@ -10,8 +10,8 @@ import {
 } from "@times-components/jest-serializer";
 import { scales } from "@times-components/styleguide";
 
-import "../mocks.web";
 import Context from "@times-components/context";
+import { UserState } from "../mocks.web";
 
 import { adConfig } from "../ad-mock";
 import articleFixture, { testFixture } from "../../fixtures/full-article";
@@ -285,11 +285,10 @@ const article = articleFixture({
   ]
 });
 
-const renderArticle = userState => (
+const renderArticle = () => (
   <Context.Provider
     value={{
-      theme: { scale: scales.medium, sectionColour: "#FF0000" },
-      user: userState || {}
+      theme: { scale: scales.medium, sectionColour: "#FF0000" }
     }}
   >
     <ArticleSkeleton
@@ -309,60 +308,18 @@ const renderArticle = userState => (
 );
 
 describe("Article with user state", () => {
-  it("Render full article when user is logged in", () => {
-    const userState = {
-      isLoggedIn: true
-    };
-
-    const nuk = {
-      user: userState
-    };
-    window.nuk = nuk;
-
-    const output = TestRenderer.create(renderArticle(userState));
+  it("Render full article when user has access to full article", () => {
+    UserState.mockStates = [UserState.fullArticle, UserState.loggedIn];
+    const output = TestRenderer.create(renderArticle());
 
     expect(output).toMatchSnapshot();
   });
 
-  it("Render teaser article when user is not logged in", () => {
-    const userState = {
-      isLoggedIn: false
-    };
+  it("Render teaser article when user does not have access to full article", () => {
+    UserState.mockStates = [];
 
-    const nuk = {
-      user: userState
-    };
-    window.nuk = nuk;
+    const output = TestRenderer.create(renderArticle());
 
-    const output = TestRenderer.create(renderArticle(userState));
-
-    expect(output).toMatchSnapshot();
-  });
-
-  it("Render teaser article when user is null", () => {
-    const nuk = {
-      user: {}
-    };
-    window.nuk = nuk;
-
-    const output = TestRenderer.create(renderArticle(null));
-
-    expect(output).toMatchSnapshot();
-  });
-
-  it("Render Metered expired article when user is logged in and is metered expired", () => {
-    const userState = {
-      isLoggedIn: true,
-      isMetered: false,
-      isMeteredExpired: true
-    };
-    const nuk = {
-      user: userState
-    };
-
-    window.nuk = nuk;
-
-    const output = TestRenderer.create(renderArticle(userState));
     expect(output).toMatchSnapshot();
   });
 });
