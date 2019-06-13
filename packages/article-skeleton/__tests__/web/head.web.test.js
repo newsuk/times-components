@@ -33,10 +33,18 @@ addSerializers(
 );
 
 const article = articleFixture({ ...testFixture });
+const paidContentClassName = "class-name";
+const faviconUrl = "https://www.thetimes.co.uk/d/img/icons/favicon.ico";
 
 describe("Head", () => {
   it("outputs correct metadata", () => {
-    const testRenderer = TestRenderer.create(<Head article={article} />);
+    const testRenderer = TestRenderer.create(
+      <Head
+        article={article}
+        paidContentClassName={paidContentClassName}
+        faviconUrl={faviconUrl}
+      />
+    );
 
     expect(testRenderer).toMatchSnapshot();
   });

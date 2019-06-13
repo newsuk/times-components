@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.54](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.1.53...@times-components/article-extras@0.1.54) (2019-06-13)
+
+
+### Bug Fixes
+
+* user state hydration ([#2021](https://github.com/newsuk/times-components/issues/2021)) ([16fc4c8](https://github.com/newsuk/times-components/commit/16fc4c8))
+
+
+
+
+
 ## [0.1.53](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.1.52...@times-components/article-extras@0.1.53) (2019-06-10)
 
 **Note:** Version bump only for package @times-components/article-extras

@@ -56,14 +56,39 @@ const PUBLICATION_NAMES = {
   TIMES: "The Times"
 };
 
-function Head({ article }) {
+const getThumbnailUrlFromVideo = article =>
+  get(article.leadAsset.posterImage, "crop169.url", null);
+
+const getThumbnailUrlFromImage = article => {
+  const tileUrl =
+    article.tiles &&
+    article.tiles.find(tile => get(tile.leadAsset, "crop169.url", null));
+
+  if (tileUrl) {
+    return tileUrl;
+  }
+
+  const listingAssetUrl = get(article.listingAsset, "crop169.url", null);
+
+  if (listingAssetUrl) {
+    return listingAssetUrl;
+  }
+
+  return get(article.leadAsset, "crop169.url", null);
+};
+
+function Head({ article, paidContentClassName, faviconUrl }) {
   const {
     descriptionMarkup,
     headline,
     leadAsset,
     publicationName,
-    shortHeadline
+    shortHeadline,
+    publishedTime,
+    updatedTime,
+    hasVideo
   } = article;
+
   const publication = PUBLICATION_NAMES[publicationName];
   const authorName = getAuthorAsText(article);
   const desc =
@@ -72,34 +97,79 @@ function Head({ article }) {
       : null;
   const sectionname = getSectionName(article);
   const leadassetUrl = get(leadAsset, "crop169.url", null);
+  const caption = get(leadAsset, "caption", null);
   const title = headline || shortHeadline;
+  const datePublished = new Date(publishedTime).toISOString().split("T")[0];
+  const thumbnailUrl = hasVideo
+    ? getThumbnailUrlFromVideo(article)
+    : getThumbnailUrlFromImage(article);
+
+  const jsonLD = {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    headline: title,
+    logo: faviconUrl,
+    publisher: {
+      "@type": "Organization",
+      name: publication
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage"
+    },
+    dateCreated: publishedTime,
+    datePublished,
+    isAccessibleForFree: false,
+    hasPart: {
+      "@type": "WebPageElement",
+      isAccessibleForFree: false,
+      cssSelector: `.${paidContentClassName}`
+    },
+    image: {
+      "@type": "ImageObject",
+      url: leadassetUrl,
+      caption
+    },
+    thumbnailUrl
+  };
+
+  if (updatedTime) {
+    jsonLD.dateUpdated = updatedTime;
+  }
 
   return (
     <Context.Consumer>
-      {({ makeArticleUrl }) => (
-        <Helmet>
-          <title>
-            {title} | {sectionname ? `${sectionname} | ` : ""}
-            {publication}
-          </title>
-          <meta content={title} name="article:title" />
-          <meta content={publication} name="article:publication" />
-          {desc && <meta content={desc} name="description" />}
-          {authorName && <meta content={authorName} name="author" />}
+      {({ makeArticleUrl }) => {
+        jsonLD.mainEntityOfPage["@id"] = makeArticleUrl(article);
+        return (
+          <Helmet>
+            <title>
+              {title} | {sectionname ? `${sectionname} | ` : ""}
+              {publication}
+            </title>
+            <meta content={title} name="article:title" />
+            <meta content={publication} name="article:publication" />
+            {desc && <meta content={desc} name="description" />}
+            {authorName && <meta content={authorName} name="author" />}
 
-          <meta content={title} property="og:title" />
-          <meta content="article" property="og:type" />
-          <meta content={makeArticleUrl(article)} property="og:url" />
-          {desc && <meta content={desc} property="og:description" />}
-          {leadassetUrl && <meta content={leadassetUrl} property="og:image" />}
+            <meta content={title} property="og:title" />
+            <meta content="article" property="og:type" />
+            <meta content={makeArticleUrl(article)} property="og:url" />
+            {desc && <meta content={desc} property="og:description" />}
+            {leadassetUrl && (
+              <meta content={leadassetUrl} property="og:image" />
+            )}
 
-          <meta content={title} name="twitter:title" />
-          <meta content="summary_large_image" name="twitter:card" />
-          <meta content={makeArticleUrl(article)} name="twitter:url" />
-          {desc && <meta content={desc} name="twitter:description" />}
-          {leadassetUrl && <meta content={leadassetUrl} name="twitter:image" />}
-        </Helmet>
-      )}
+            <meta content={title} name="twitter:title" />
+            <meta content="summary_large_image" name="twitter:card" />
+            <meta content={makeArticleUrl(article)} name="twitter:url" />
+            {desc && <meta content={desc} name="twitter:description" />}
+            {leadassetUrl && (
+              <meta content={leadassetUrl} name="twitter:image" />
+            )}
+            <script type="application/ld+json">{JSON.stringify(jsonLD)}</script>
+          </Helmet>
+        );
+      }}
     </Context.Consumer>
   );
 }
@@ -115,7 +185,9 @@ Head.propTypes = {
     shortHeadline: PropTypes.string,
     shortIdentifier: PropTypes.string.isRequired,
     tiles: PropTypes.array
-  }).isRequired
+  }).isRequired,
+  paidContentClassName: PropTypes.string.isRequired,
+  faviconUrl: PropTypes.string.isRequired
 };
 
 export default Head;

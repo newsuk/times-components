@@ -1,185 +1,83 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`save and share bar component email icon with loading state while network request is fetching data 1`] = `
-<div
-  className="css-view-1dbjc4n"
-  style={
-    Object {
-      "WebkitBoxDirection": "normal",
-      "WebkitBoxFlex": 1,
-      "WebkitBoxOrient": "horizontal",
-      "WebkitBoxPack": "justify",
-      "WebkitFlexBasis": "0%",
-      "WebkitFlexDirection": "row",
-      "WebkitFlexGrow": 1,
-      "WebkitFlexShrink": 1,
-      "WebkitJustifyContent": "space-between",
-      "flexBasis": "0%",
-      "flexDirection": "row",
-      "flexGrow": 1,
-      "flexShrink": 1,
-      "justifyContent": "space-between",
-      "msFlexDirection": "row",
-      "msFlexNegative": 1,
-      "msFlexPack": "justify",
-      "msFlexPositive": 1,
-      "msFlexPreferredSize": "0%",
-    }
-  }
->
+exports[`save and share bar component email icon when tokenising with loading state while network request is fetching data 1`] = `
+Array [
   <div
-    className="css-view-1dbjc4n"
+    className="css-text-76zvg2"
     style={
       Object {
-        "WebkitAlignItems": "center",
-        "WebkitBoxAlign": "center",
-        "WebkitBoxDirection": "normal",
-        "WebkitBoxOrient": "horizontal",
-        "WebkitFlexDirection": "row",
-        "alignItems": "center",
-        "flexDirection": "row",
-        "msFlexAlign": "center",
-        "msFlexDirection": "row",
-        "paddingBottom": "10px",
-        "paddingTop": "10px",
+        "color": "rgba(105,105,105,1.00)",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": "14px",
+        "lineHeight": "14px",
+        "marginRight": "10px",
       }
     }
   >
+    Share
+  </div>,
+  <BarItem>
     <div
-      className="css-text-76zvg2"
+      aria-valuemax="1"
+      aria-valuemin="0"
+      className="css-view-1dbjc4n r-alignItems-1awozwy r-justifyContent-1777fci"
+      role="progressbar"
       style={
         Object {
-          "color": "rgba(105,105,105,1.00)",
-          "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": "14px",
-          "lineHeight": "14px",
-          "marginRight": "10px",
+          "borderBottomLeftRadius": "9999px",
+          "borderBottomRightRadius": "9999px",
+          "borderTopLeftRadius": "9999px",
+          "borderTopRightRadius": "9999px",
+          "height": "40px",
+          "overflowX": "hidden",
+          "overflowY": "hidden",
+          "width": "40px",
         }
       }
     >
-      Share
-    </div>
-    <BarItem>
       <div
-        aria-valuemax="1"
-        aria-valuemin="0"
-        className="css-view-1dbjc4n r-alignItems-1awozwy r-justifyContent-1777fci"
-        role="progressbar"
-        style={
-          Object {
-            "borderBottomLeftRadius": "9999px",
-            "borderBottomRightRadius": "9999px",
-            "borderTopLeftRadius": "9999px",
-            "borderTopRightRadius": "9999px",
-            "height": "40px",
-            "overflowX": "hidden",
-            "overflowY": "hidden",
-            "width": "40px",
-          }
-        }
+        className="css-view-1dbjc4n r-animationDuration-17bb2tj r-animationIterationCount-1muvv40 r-animationKeyframes-127358a r-animationTimingFunction-1ldzwu0 r-height-z80fyv r-width-19wmn03"
       >
-        <div
-          className="css-view-1dbjc4n r-animationDuration-17bb2tj r-animationIterationCount-1muvv40 r-animationKeyframes-127358a r-animationTimingFunction-1ldzwu0 r-height-z80fyv r-width-19wmn03"
+        <svg
+          height="100%"
+          viewBox="0 0 32 32"
+          width="100%"
         >
-          <svg
-            height="100%"
-            viewBox="0 0 32 32"
-            width="100%"
-          >
-            <circle
-              cx="16"
-              cy="16"
-              fill="none"
-              r="14"
-              strokeWidth="4"
-              style={
-                Object {
-                  "opacity": 0.2,
-                  "stroke": "#1976D2",
-                }
+          <circle
+            cx="16"
+            cy="16"
+            fill="none"
+            r="14"
+            strokeWidth="4"
+            style={
+              Object {
+                "opacity": 0.2,
+                "stroke": "#1976D2",
               }
-            />
-            <circle
-              cx="16"
-              cy="16"
-              fill="none"
-              r="14"
-              strokeWidth="4"
-              style={
-                Object {
-                  "stroke": "#1976D2",
-                  "strokeDasharray": 80,
-                  "strokeDashoffset": 60,
-                }
+            }
+          />
+          <circle
+            cx="16"
+            cy="16"
+            fill="none"
+            r="14"
+            strokeWidth="4"
+            style={
+              Object {
+                "stroke": "#1976D2",
+                "strokeDasharray": 80,
+                "strokeDashoffset": 60,
               }
-            />
-          </svg>
-        </div>
+            }
+          />
+        </svg>
       </div>
-    </BarItem>
-    <BarItem
-      target="_blank"
-      url="https://twitter.com/intent/tweet?text=https://www.thetimes.co.uk/"
-    >
-      <IconTwitter
-        fillColour="currentColor"
-        height={15}
-        title="Share on Twitter"
-      />
-    </BarItem>
-    <BarItem
-      target="_blank"
-      url="https://www.facebook.com/sharer/sharer.php?u=https://www.thetimes.co.uk/"
-    >
-      <IconFacebook
-        fillColour="currentColor"
-        height={18}
-        title="Share on Facebook"
-      />
-    </BarItem>
-    <BarItem
-      color="#696969"
-      hoverColor="#1D1D1B"
-    >
-      <IconCopyLink
-        fillColour="currentColor"
-        height={15}
-        title="Copy link to clipboard"
-      />
-    </BarItem>
-  </div>
-  <div
-    className="css-view-1dbjc4n r-alignItems-1awozwy"
-    style={
-      Object {
-        "WebkitBoxDirection": "normal",
-        "WebkitBoxOrient": "horizontal",
-        "WebkitFlexDirection": "row",
-        "flexDirection": "row",
-        "msFlexDirection": "row",
-        "paddingBottom": "10px",
-        "paddingTop": "10px",
-      }
-    }
-  >
-    <SaveStarWeb
-      articleId="96508c84-6611-11e9-adc2-05e1b87efaea"
-      colour="#696969"
-      height={18}
-      hoverColor="#1D1D1B"
-      saveApi={
-        Object {
-          "bookmark": [Function],
-          "getBookmarks": [Function],
-          "unBookmark": [Function],
-        }
-      }
-    />
-  </div>
-</div>
+    </div>
+  </BarItem>,
+]
 `;
 
-exports[`save and share bar component save and share bar renders correctly 1`] = `
+exports[`save and share bar component save and share bar renders correctly when logged in 1`] = `
 <div
   className="css-view-1dbjc4n"
   style={
@@ -242,7 +140,7 @@ exports[`save and share bar component save and share bar renders correctly 1`] =
       <IconEmail
         fillColour="currentColor"
         height={15}
-        title="Share by email client"
+        title="Share by email"
       />
     </BarItem>
     <BarItem
@@ -307,6 +205,106 @@ exports[`save and share bar component save and share bar renders correctly 1`] =
         }
       }
     />
+  </div>
+</div>
+`;
+
+exports[`save and share bar component save and share bar renders correctly when not logged in 1`] = `
+<div
+  className="css-view-1dbjc4n"
+  style={
+    Object {
+      "WebkitBoxDirection": "normal",
+      "WebkitBoxFlex": 1,
+      "WebkitBoxOrient": "horizontal",
+      "WebkitBoxPack": "justify",
+      "WebkitFlexBasis": "0%",
+      "WebkitFlexDirection": "row",
+      "WebkitFlexGrow": 1,
+      "WebkitFlexShrink": 1,
+      "WebkitJustifyContent": "space-between",
+      "flexBasis": "0%",
+      "flexDirection": "row",
+      "flexGrow": 1,
+      "flexShrink": 1,
+      "justifyContent": "space-between",
+      "msFlexDirection": "row",
+      "msFlexNegative": 1,
+      "msFlexPack": "justify",
+      "msFlexPositive": 1,
+      "msFlexPreferredSize": "0%",
+    }
+  }
+>
+  <div
+    className="css-view-1dbjc4n"
+    style={
+      Object {
+        "WebkitAlignItems": "center",
+        "WebkitBoxAlign": "center",
+        "WebkitBoxDirection": "normal",
+        "WebkitBoxOrient": "horizontal",
+        "WebkitFlexDirection": "row",
+        "alignItems": "center",
+        "flexDirection": "row",
+        "msFlexAlign": "center",
+        "msFlexDirection": "row",
+        "paddingBottom": "10px",
+        "paddingTop": "10px",
+      }
+    }
+  >
+    <div
+      className="css-text-76zvg2"
+      style={
+        Object {
+          "color": "rgba(105,105,105,1.00)",
+          "fontFamily": "GillSansMTStd-Medium",
+          "fontSize": "14px",
+          "lineHeight": "14px",
+          "marginRight": "10px",
+        }
+      }
+    >
+      Share
+    </div>
+    <BarItem>
+      <IconEmail
+        fillColour="currentColor"
+        height={15}
+        title="Share by email"
+      />
+    </BarItem>
+    <BarItem
+      target="_blank"
+      url="https://twitter.com/intent/tweet?text=https://www.thetimes.co.uk/"
+    >
+      <IconTwitter
+        fillColour="currentColor"
+        height={15}
+        title="Share on Twitter"
+      />
+    </BarItem>
+    <BarItem
+      target="_blank"
+      url="https://www.facebook.com/sharer/sharer.php?u=https://www.thetimes.co.uk/"
+    >
+      <IconFacebook
+        fillColour="currentColor"
+        height={18}
+        title="Share on Facebook"
+      />
+    </BarItem>
+    <BarItem
+      color="#696969"
+      hoverColor="#1D1D1B"
+    >
+      <IconCopyLink
+        fillColour="currentColor"
+        height={15}
+        title="Copy link to clipboard"
+      />
+    </BarItem>
   </div>
 </div>
 `;

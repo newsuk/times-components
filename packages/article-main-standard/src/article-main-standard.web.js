@@ -56,7 +56,7 @@ class ArticlePage extends Component {
             publicationName={publicationName}
             publishedTime={publishedTime}
           />
-          {parentProps.topicsAllowed ? <ArticleTopics topics={topics} /> : null}
+          <ArticleTopics topics={topics} />
         </MetaContainer>
         <LeadAsset
           {...getLeadAsset(article)}
@@ -77,7 +77,8 @@ class ArticlePage extends Component {
       receiveChildList,
       saveApi,
       spotAccountId,
-      paidContentClassName
+      paidContentClassName,
+      faviconUrl
     } = this.props;
 
     if (error || isLoading) {
@@ -94,6 +95,7 @@ class ArticlePage extends Component {
         saveApi={saveApi}
         spotAccountId={spotAccountId}
         paidContentClassName={paidContentClassName}
+        faviconUrl={faviconUrl}
       />
     );
   }

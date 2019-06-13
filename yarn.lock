@@ -2091,6 +2091,11 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^12.0.9"
 
+"@kudo-ci/jsc-android@241213-no-jit":
+  version "241213.10000.0"
+  resolved "https://registry.yarnpkg.com/@kudo-ci/jsc-android/-/jsc-android-241213.10000.0.tgz#a299636bdacaf5eb6d800a4ce7892a7c1eb813bd"
+  integrity sha512-2Oy45sWvUljbhixttrlTvfuBzetRtIayNQmUhjeijwV6oCJ8KswrgEpCKeotlyxkCUuWcVKUM8I7lzISY16QMg==
+
 "@lerna/add@^3.2.0":
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/@lerna/add/-/add-3.4.1.tgz#d41068317e30f530df48220d256b5e79690b1877"

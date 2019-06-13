@@ -24,7 +24,8 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     spotAccountId,
     getCookieValue,
     userState,
-    paidContentClassName
+    paidContentClassName,
+    faviconUrl
   } = data;
 
   return React.createElement(
@@ -69,7 +70,8 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
                 onTopicPress: () => {},
                 refetch,
                 spotAccountId,
-                paidContentClassName
+                paidContentClassName,
+                faviconUrl
               })
             )
         )

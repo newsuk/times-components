@@ -41,6 +41,7 @@ export default () => {
     const onCopyLink = jest.fn();
     const onShareOnFB = jest.fn();
     const onShareOnTwitter = jest.fn();
+    const onShareEmail = jest.fn();
     const articleId = "id-123";
     const articleHeadline = "test-headline";
     const articleUrl = "https://www.thetimes.co.uk/";
@@ -48,6 +49,7 @@ export default () => {
 
     let stream = null;
     let testInstance = null;
+    let realLocation;
 
     beforeEach(() => {
       stream = jest.fn();
@@ -62,17 +64,29 @@ export default () => {
           onShareOnTwitter={onShareOnTwitter}
           saveApi={mockSaveApi}
           getTokenisedShareUrl={getTokenisedShareUrl}
+          onShareEmail={onShareEmail}
           sharingEnabled
           savingEnabled
         />
       );
+      realLocation = global.window.location;
+      delete global.window.location;
+      global.window.location = {
+        assign: jest.fn(),
+        search: ""
+      };
+    });
+
+    afterEach(() => {
+      delete global.window.location;
+      global.window.location = realLocation;
     });
 
     it("when press share on twitter", () => {
       const shareOnTwitterBarItem = testInstance.root.findAllByType(BarItem)[1];
       shareOnTwitterBarItem.props.onPress();
 
-      const [[call]] = stream.mock.calls;
+      const call = stream.mock.calls[0][0];
 
       expect(call).toMatchSnapshot();
       expect(onShareOnTwitter.mock.calls).toMatchSnapshot("onShareOnTwitter");
@@ -84,7 +98,7 @@ export default () => {
       )[2];
       shareOnFacebookBarItem.props.onPress();
 
-      const [[call]] = stream.mock.calls;
+      const call = stream.mock.calls[0][0];
 
       expect(call).toMatchSnapshot();
       expect(onShareOnFB.mock.calls).toMatchSnapshot("onShareOnFB");
@@ -96,24 +110,22 @@ export default () => {
       )[3];
       copyToClipboardBarItem.props.onPress();
 
-      const [[call]] = stream.mock.calls;
+      const call = stream.mock.calls[0][0];
 
       expect(call).toMatchSnapshot();
       expect(onCopyLink.mock.calls).toMatchSnapshot("onCopyLink");
     });
 
-    it("when press share article url by email", () => {
+    it("when press share article url by email", async () => {
       const shareArticleUrlByEmailBarItem = testInstance.root.findAllByType(
         BarItem
       )[0];
-      shareArticleUrlByEmailBarItem.props.onPress();
+      await shareArticleUrlByEmailBarItem.props.onPress();
 
-      const [[call]] = stream.mock.calls;
+      const call = stream.mock.calls[0][0];
 
       expect(call).toMatchSnapshot();
-      expect(getTokenisedShareUrl.mock.calls).toMatchSnapshot(
-        "getTokenisedShareUrl"
-      );
+      expect(onShareEmail.mock.calls).toMatchSnapshot("onShareEmail");
     });
   });
 };

@@ -298,10 +298,7 @@ const renderArticleConfig = ({
   decorateAction,
   hasScaling,
   link = null,
-  select,
-  isTeaser = false,
-  isLoggedIn = false,
-  isMeteredExpired = false
+  select
 }) => {
   const id = "263b03a1-2ce6-4b94-b053-0d35316548c5";
   const withFlags = boolean("Flags", true);
@@ -313,12 +310,6 @@ const renderArticleConfig = ({
   const withPullQuote = boolean("Pull Quote", false);
   const withStandfirst = boolean("Standfirst", true);
   const withVideo = boolean("Video", true);
-  const withTeaser =
-    !isTeaser &&
-    boolean("Teaser page (only Web, no marketing overlays)", false);
-  const isMeteredExpiredPage =
-    !isMeteredExpired &&
-    boolean("Metered expired page (only Web, no marketing overlays)", false);
 
   const scale = hasScaling ? selectScales(select) : null;
   const section = selectSection(select);
@@ -332,10 +323,9 @@ const renderArticleConfig = ({
       ? { rgba: { alpha: 1, blue: 255, green: 255, red: 255 } }
       : null;
 
-  /* eslint-disable no-undef */
-  window.nuk = window.nuk || {};
-  window.nuk.user = { isLoggedIn, isMeteredExpired };
-  /* eslint-enable no-undef */
+  const user = (global.nuk && global.nuk.user) || {};
+  const { isLoggedIn, isMeteredExpired, isShared } = user;
+  const isTeaser = !isShared && (isMeteredExpired || !isLoggedIn);
 
   return (
     <Fragment>
@@ -352,10 +342,7 @@ const renderArticleConfig = ({
             withPullQuote,
             withStandfirst,
             withVideo,
-            withTeasedContent:
-              withTeaser ||
-              isTeaser ||
-              (isMeteredExpired || isMeteredExpiredPage)
+            withTeasedContent: isTeaser
           })}
           id={id}
         >
@@ -366,8 +353,8 @@ const renderArticleConfig = ({
             id,
             inDepthBackgroundColour,
             inDepthTextColour,
-            isTeaser: isTeaser || withTeaser,
-            isMeteredExpired: isMeteredExpired || isMeteredExpiredPage,
+            isTeaser,
+            isMeteredExpired,
             saveApi: saveArticleApi,
             scale,
             section,
