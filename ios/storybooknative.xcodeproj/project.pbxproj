@@ -35,12 +35,19 @@
 		2D16E6881FA4F8E400B85C8A /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E6891FA4F8E400B85C8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* storybooknativeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* storybooknativeTests.m */; };
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
+		515F7D171F0E7BA000966DF3 /* GillSansMTStd-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 515F7D131F0E7BA000966DF3 /* GillSansMTStd-Medium.ttf */; };
+		515F7D191F0E7BA000966DF3 /* TimesDigitalW04-RegularSC.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 515F7D151F0E7BA000966DF3 /* TimesDigitalW04-RegularSC.ttf */; };
+		515F7D1A1F0E7BA000966DF3 /* TimesModern-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 515F7D161F0E7BA000966DF3 /* TimesModern-Bold.ttf */; };
 		81EFDD092285D35400E73FD1 /* AuthorProfileEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = 81EFDCD72285D35400E73FD1 /* AuthorProfileEvents.m */; };
 		81EFDD0A2285D35400E73FD1 /* ReactConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 81EFDD052285D35400E73FD1 /* ReactConfig.m */; };
 		81EFDD0B2285D35400E73FD1 /* TopicEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = 81EFDD062285D35400E73FD1 /* TopicEvents.m */; };
 		81EFDD0C2285D35400E73FD1 /* ArticleEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = 81EFDD072285D35400E73FD1 /* ArticleEvents.m */; };
 		81EFDD0D2285D35400E73FD1 /* ReactAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = 81EFDD082285D35400E73FD1 /* ReactAnalytics.m */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		A811797A1F72B75A00BEE77B /* TimesModern-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A81179791F72B75A00BEE77B /* TimesModern-Regular.ttf */; };
+		A811797B1F72B75D00BEE77B /* TimesDigitalW04_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A811795C1F72B6D600BEE77B /* TimesDigitalW04_bold.ttf */; };
+		A811797C1F72B75F00BEE77B /* TimesDigitalW04_italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A811795D1F72B6D600BEE77B /* TimesDigitalW04_italic.ttf */; };
+		A811797D1F72B76200BEE77B /* TimesDigitalW04.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A811795E1F72B6D600BEE77B /* TimesDigitalW04.ttf */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
 		ED2971652150620600B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2971642150620600B7C4FE /* JavaScriptCore.framework */; };
@@ -346,6 +353,9 @@
 		2D02E47B1E0B4A5D006451C7 /* storybooknative-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "storybooknative-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* storybooknative-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "storybooknative-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		515F7D131F0E7BA000966DF3 /* GillSansMTStd-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "GillSansMTStd-Medium.ttf"; path = "../dist/public/fonts/GillSansMTStd-Medium.ttf"; sourceTree = "<group>"; };
+		515F7D151F0E7BA000966DF3 /* TimesDigitalW04-RegularSC.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TimesDigitalW04-RegularSC.ttf"; path = "../dist/public/fonts/TimesDigitalW04-RegularSC.ttf"; sourceTree = "<group>"; };
+		515F7D161F0E7BA000966DF3 /* TimesModern-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TimesModern-Bold.ttf"; path = "../dist/public/fonts/TimesModern-Bold.ttf"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		81EFDCD72285D35400E73FD1 /* AuthorProfileEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AuthorProfileEvents.m; path = storybooknative/AuthorProfileEvents.m; sourceTree = "<group>"; };
@@ -354,6 +364,10 @@
 		81EFDD072285D35400E73FD1 /* ArticleEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArticleEvents.m; path = storybooknative/ArticleEvents.m; sourceTree = "<group>"; };
 		81EFDD082285D35400E73FD1 /* ReactAnalytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReactAnalytics.m; path = storybooknative/ReactAnalytics.m; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		A811795C1F72B6D600BEE77B /* TimesDigitalW04_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = TimesDigitalW04_bold.ttf; path = ../dist/public/fonts/TimesDigitalW04_bold.ttf; sourceTree = "<group>"; };
+		A811795D1F72B6D600BEE77B /* TimesDigitalW04_italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = TimesDigitalW04_italic.ttf; path = ../dist/public/fonts/TimesDigitalW04_italic.ttf; sourceTree = "<group>"; };
+		A811795E1F72B6D600BEE77B /* TimesDigitalW04.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = TimesDigitalW04.ttf; path = ../dist/public/fonts/TimesDigitalW04.ttf; sourceTree = "<group>"; };
+		A81179791F72B75A00BEE77B /* TimesModern-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TimesModern-Regular.ttf"; path = "../dist/public/fonts/TimesModern-Regular.ttf"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
@@ -558,6 +572,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		6D97D0B322B292A400CF9422 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A811795C1F72B6D600BEE77B /* TimesDigitalW04_bold.ttf */,
+				A811795D1F72B6D600BEE77B /* TimesDigitalW04_italic.ttf */,
+				A81179791F72B75A00BEE77B /* TimesModern-Regular.ttf */,
+				515F7D161F0E7BA000966DF3 /* TimesModern-Bold.ttf */,
+				515F7D151F0E7BA000966DF3 /* TimesDigitalW04-RegularSC.ttf */,
+				A811795E1F72B6D600BEE77B /* TimesDigitalW04.ttf */,
+				515F7D131F0E7BA000966DF3 /* GillSansMTStd-Medium.ttf */,
+			);
+			name = "Fonts";
+			sourceTree = "<group>";
+		};
 		78C398B11ACF4ADC00677621 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -604,6 +632,7 @@
 				00E356EF1AD99517003FC87E /* storybooknativeTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				6D97D0B322B292A400CF9422 /* Fonts */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -1075,6 +1104,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				A811797B1F72B75D00BEE77B /* TimesDigitalW04_bold.ttf in Resources */,
+				A811797C1F72B75F00BEE77B /* TimesDigitalW04_italic.ttf in Resources */,
+				A811797A1F72B75A00BEE77B /* TimesModern-Regular.ttf in Resources */,
+				515F7D1A1F0E7BA000966DF3 /* TimesModern-Bold.ttf in Resources */,
+				515F7D191F0E7BA000966DF3 /* TimesDigitalW04-RegularSC.ttf in Resources */,
+				A811797D1F72B76200BEE77B /* TimesDigitalW04.ttf in Resources */,
+				515F7D171F0E7BA000966DF3 /* GillSansMTStd-Medium.ttf in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

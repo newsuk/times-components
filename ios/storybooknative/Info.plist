@@ -2,6 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+  <key>UIAppFonts</key>
+  <array>
+    <string>GillSansMTStd-Medium.ttf</string>
+    <string>TimesDigitalW04-RegularSC.ttf</string>
+    <string>TimesModern-Bold.ttf</string>
+    <string>TimesModern-Regular.ttf</string>
+    <string>TimesDigitalW04.ttf</string>
+    <string>TimesDigitalW04_italic.ttf</string>
+    <string>TimesDigitalW04_bold.ttf</string>
+  </array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
