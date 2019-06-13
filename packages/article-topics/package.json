@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-topics",
-  "version": "4.0.17",
+  "version": "4.0.18",
   "description": "Map of Topics related to the Article",
   "main": "dist/article-topics",
   "dev": "src/article-topics",
@@ -40,8 +40,8 @@
     "@times-components/eslint-config-thetimes": "0.8.12",
     "@times-components/jest-configurator": "2.5.12",
     "@times-components/jest-serializer": "3.2.8",
-    "@times-components/mocks": "0.0.17",
-    "@times-components/storybook": "4.0.9",
+    "@times-components/mocks": "0.0.18",
+    "@times-components/storybook": "4.0.10",
     "@times-components/test-utils": "2.2.43",
     "@times-components/webpack-configurator": "2.0.21",
     "babel-core": "^7.0.0-bridge.0",
@@ -62,10 +62,10 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/context": "1.0.16",
-    "@times-components/link": "3.4.15",
-    "@times-components/styleguide": "3.28.22",
-    "@times-components/tracking": "2.4.40",
+    "@times-components/context": "1.0.17",
+    "@times-components/link": "3.4.16",
+    "@times-components/styleguide": "3.28.23",
+    "@times-components/tracking": "2.4.41",
     "prop-types": "15.7.2"
   },
   "peerDependencies": {

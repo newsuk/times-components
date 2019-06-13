@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.12](https://github.com/newsuk/times-components/compare/@times-components/text-flow@0.0.11...@times-components/text-flow@0.0.12) (2019-06-13)
+
+**Note:** Version bump only for package @times-components/text-flow
+
+
+
+
+
 ## [0.0.11](https://github.com/newsuk/times-components/compare/@times-components/text-flow@0.0.10...@times-components/text-flow@0.0.11) (2019-06-10)
 
 **Note:** Version bump only for package @times-components/text-flow

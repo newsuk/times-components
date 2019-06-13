@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.10](https://github.com/newsuk/times-components/compare/@times-components/storybook@4.0.9...@times-components/storybook@4.0.10) (2019-06-13)
+
+
+### Bug Fixes
+
+* user state hydration ([#2021](https://github.com/newsuk/times-components/issues/2021)) ([16fc4c8](https://github.com/newsuk/times-components/commit/16fc4c8))
+
+
+
+
+
 ## [4.0.9](https://github.com/newsuk/times-components/compare/@times-components/storybook@4.0.8...@times-components/storybook@4.0.9) (2019-05-23)
 
 **Note:** Version bump only for package @times-components/storybook

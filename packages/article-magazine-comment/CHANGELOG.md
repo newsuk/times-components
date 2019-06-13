@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.5.3](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.5.2...@times-components/article-magazine-comment@3.5.3) (2019-06-13)
+
+
+### Bug Fixes
+
+* user state hydration ([#2021](https://github.com/newsuk/times-components/issues/2021)) ([16fc4c8](https://github.com/newsuk/times-components/commit/16fc4c8))
+
+
+
+
+
 ## [3.5.2](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.5.1...@times-components/article-magazine-comment@3.5.2) (2019-06-12)
 
 **Note:** Version bump only for package @times-components/article-magazine-comment
