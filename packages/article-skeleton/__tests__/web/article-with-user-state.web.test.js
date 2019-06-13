@@ -36,16 +36,24 @@ addSerializers(
   )
 );
 
+// TODO: why is this here? we have a set of fixtures of articles already
 const article = articleFixture({
   ...testFixture,
   content: [
     {
       children: [
         {
-          attributes: {
-            value: "T"
-          },
-          children: [],
+          attributes: {},
+          children: [
+            {
+              attributes: {
+                value: "T",
+                dropCap: true
+              },
+              children: [],
+              name: "text"
+            }
+          ],
           name: "dropCap"
         },
         {

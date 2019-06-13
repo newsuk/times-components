@@ -56,7 +56,7 @@ const renderers = ({ observed, registerNode, paidContentClassName }) => ({
             theme: { dropCapFont, sectionColour = colours.section.default }
           }) => (
             <DropCapView colour={sectionColour} font={dropCapFont}>
-              {children.length > 0 ? children : " "}
+              {children}
             </DropCapView>
           )}
         </Context.Consumer>
