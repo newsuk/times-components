@@ -15,7 +15,7 @@ import {
   articleSkeletonDefaultProps
 } from "./article-skeleton-prop-types";
 import listViewDataHelper from "./data-helper";
-import articleTrackingContext from "./article-tracking-context";
+import articleTrackingContext from "./tracking/article-tracking-context";
 import insertDropcapIntoAST from "./dropcap-util";
 import styles from "./styles/shared";
 import Gutter, { maxWidth } from "./gutter";

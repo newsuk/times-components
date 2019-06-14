@@ -72,4 +72,14 @@ const prepareDataForListView = articleData => {
   );
 };
 
+export const getRegistrationType = () => {
+  const user = (global.nuk && global.nuk.user) || {};
+  return user && user.registrationType ? user.registrationType : "";
+};
+
+export const getSharedStatus = () => {
+  const user = (global.nuk && global.nuk.user) || {};
+  return user && user.isShared ? "yes" : "no";
+};
+
 export default prepareDataForListView;

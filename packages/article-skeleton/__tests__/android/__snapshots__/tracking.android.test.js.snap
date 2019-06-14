@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. analytics when rendering an Article page 1`] = `
+exports[`[Article page analytics] should match snapshot when rendering an article page 1`] = `
 Array [
   Array [
     Object {

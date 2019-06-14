@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. analytics when rendering an Article page 1`] = `
+exports[`[Article page analytics] should match snapshot when rendering an article page 1`] = `
 Array [
   Array [
     Object {
@@ -14,7 +14,35 @@ Array [
         "pageName": "france-defies-may-over-russia-37b27qd2s",
         "publishedTime": "2015-03-13T18:54:58.000Z",
         "referralUrl": "",
+        "registrationType": "logged out",
         "section": "news",
+        "shared": "no",
+        "template": "mainstandard",
+      },
+      "component": "Page",
+      "object": "Article",
+    },
+  ],
+]
+`;
+
+exports[`analytics when rendering a shared Article page with metered access 1`] = `
+Array [
+  Array [
+    Object {
+      "action": "Viewed",
+      "attrs": Object {
+        "articleId": "198c4b2f-ecec-4f34-be53-c89f83bc1b44",
+        "bylines": "Camilla Long",
+        "eventTime": "2018-01-01T00:00:00.000Z",
+        "headline": "Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record",
+        "label": "HURRICANE IRMA",
+        "pageName": "france-defies-may-over-russia-37b27qd2s",
+        "publishedTime": "2015-03-13T18:54:58.000Z",
+        "referralUrl": "",
+        "registrationType": "metered access:article limit not reached",
+        "section": "news",
+        "shared": "yes",
         "template": "mainstandard",
       },
       "component": "Page",

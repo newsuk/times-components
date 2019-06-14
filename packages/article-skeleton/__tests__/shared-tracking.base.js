@@ -8,32 +8,35 @@ import articleSkeletonProps from "./shared-article-skeleton-props";
 jest.mock("@times-components/save-and-share-bar", () => "SaveAndShareBar");
 
 export default () => {
-  beforeEach(() => {
-    mockDate.set(1514764800000, 0);
-  });
+  describe("[Article page analytics]", () => {
+    let stream = null;
 
-  afterEach(() => {
-    mockDate.reset();
-  });
+    beforeEach(() => {
+      stream = jest.fn();
+      mockDate.set(1514764800000, 0);
+    });
 
-  it("1. analytics when rendering an Article page", () => {
-    const stream = jest.fn();
+    afterEach(() => {
+      mockDate.reset();
+    });
 
-    renderer.create(
-      <ArticleSkeleton
-        {...articleSkeletonProps}
-        analyticsStream={stream}
-        data={articleFixture()}
-        Header={() => null}
-        onAuthorPress={() => {}}
-        onCommentGuidelinesPress={() => {}}
-        onCommentsPress={() => {}}
-        onLinkPress={() => {}}
-        onRelatedArticlePress={() => {}}
-        onTwitterLinkPress={() => {}}
-        onVideoPress={() => {}}
-      />
-    );
-    expect(stream.mock.calls).toMatchSnapshot();
+    it("should match snapshot when rendering an article page", () => {
+      renderer.create(
+        <ArticleSkeleton
+          {...articleSkeletonProps}
+          analyticsStream={stream}
+          data={articleFixture()}
+          Header={() => null}
+          onAuthorPress={() => {}}
+          onCommentGuidelinesPress={() => {}}
+          onCommentsPress={() => {}}
+          onLinkPress={() => {}}
+          onRelatedArticlePress={() => {}}
+          onTwitterLinkPress={() => {}}
+          onVideoPress={() => {}}
+        />
+      );
+      expect(stream.mock.calls).toMatchSnapshot();
+    });
   });
 };
