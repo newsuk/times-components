@@ -9,7 +9,9 @@ import Link from "@times-components/link";
 import { Animations, colours } from "@times-components/styleguide";
 import articleListItemTrackingEvents from "./article-list-item-tracking-events";
 import { propTypes, defaultProps } from "./article-list-item-prop-types";
-import { getAltText, getImageUri, getHeadline } from "./utils";
+import {getImageUri, getHeadline } from "./utils";
+import {getAltText} from "@times-components/utils";
+
 import {
   ListItemWrapper,
   ListItemLongText,

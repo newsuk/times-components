@@ -56,6 +56,7 @@
     "apollo-client": "2.5.1",
     "apollo-link-http": "1.5.14",
     "lodash.omitby": "4.6.0",
+    "lodash.get": "4.4.2",
     "prop-types": "15.7.2",
     "react-native": "0.58.6",
     "styled-components": "4.2.0",
