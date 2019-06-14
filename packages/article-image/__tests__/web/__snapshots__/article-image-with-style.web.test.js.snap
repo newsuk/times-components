@@ -21,105 +21,86 @@ exports[`1. mobile primary image with caption and credits 1`] = `
   }
 }
 
-<ArticleImageNative
-  captionOptions={
-    Object {
-      "caption": "Some caption",
-      "credits": "Some credits",
-    }
-  }
-  imageOptions={
-    Object {
-      "display": "primary",
-      "ratio": "15:12",
-      "uri": "https://img/someImage",
-    }
-  }
-  onImagePress={null}
->
+Array [
   <div
-    className="css-view-1dbjc4n r-flexDirection-eqz5dr r-paddingBottom-19yat4t r-width-13qz1uu"
+    className="css-view-1dbjc4n"
   >
-    <div
-      className="css-view-1dbjc4n"
-    >
-      <TimesImage
-        aspectRatio={1.25}
-        caption={
-          <Caption
-            credits="Some credits"
-            text="Some caption"
-          />
-        }
-        disablePlaceholder={false}
-        fadeImageIn={false}
-        highResSize={null}
-        lowResSize={null}
-        onImagePress={null}
-        rounded={false}
-        uri="https://img/someImage"
-      />
-    </div>
-    <div
-      className="css-view-1dbjc4n"
-    >
-      <responsiveweb__InsetCaptionStyle>
-        <StyledComponent
-          forwardedComponent={
-            Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
-              "componentStyle": ComponentStyle {
-                "componentId": "responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2",
-                "isStatic": true,
-                "lastClassName": "c1",
-                "rules": Array [
-                  "padding-left:",
-                  "10px",
-                  ";@media (min-width:",
-                  "768",
-                  "px){padding-left:0px;}",
-                ],
-              },
-              "displayName": "responsiveweb__InsetCaptionStyle",
-              "foldedComponentIds": Array [],
-              "render": [Function],
-              "styledComponentId": "responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2",
-              "target": [Function],
-              "toString": [Function],
-              "warnTooManyClasses": [Function],
-              "withComponent": [Function],
-            }
+    <TimesImage
+      aspectRatio={1.25}
+      caption={
+        <Caption
+          credits="Some credits"
+          text="Some caption"
+        />
+      }
+      disablePlaceholder={false}
+      fadeImageIn={false}
+      highResSize={null}
+      lowResSize={null}
+      onImagePress={null}
+      rounded={false}
+      uri="https://img/someImage"
+    />
+  </div>,
+  <div
+    className="css-view-1dbjc4n"
+  >
+    <responsiveweb__InsetCaptionStyle>
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2",
+              "isStatic": true,
+              "lastClassName": "c1",
+              "rules": Array [
+                "padding-left:",
+                "10px",
+                ";@media (min-width:",
+                "768",
+                "px){padding-left:0px;}",
+              ],
+            },
+            "displayName": "responsiveweb__InsetCaptionStyle",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2",
+            "target": [Function],
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
           }
-          forwardedRef={null}
+        }
+        forwardedRef={null}
+      >
+        <div
+          className="c1 responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2 c1 css-view-1dbjc4n"
         >
           <div
-            className="c1 responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2 c1 css-view-1dbjc4n"
+            className="css-view-1dbjc4n"
           >
             <div
-              className="css-view-1dbjc4n"
+              className="css-view-1dbjc4n r-paddingTop-m611by"
             >
               <div
-                className="css-view-1dbjc4n r-paddingTop-m611by"
+                className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
               >
-                <div
-                  className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
-                >
-                  Some caption
-                </div>
-                <div
-                  className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
-                >
-                  SOME CREDITS
-                </div>
+                Some caption
+              </div>
+              <div
+                className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
+              >
+                SOME CREDITS
               </div>
             </div>
           </div>
-        </StyledComponent>
-      </responsiveweb__InsetCaptionStyle>
-    </div>
-  </div>
-</ArticleImageNative>
+        </div>
+      </StyledComponent>
+    </responsiveweb__InsetCaptionStyle>
+  </div>,
+]
 `;
 
 exports[`2. tablet primary image with caption and credits 1`] = `
@@ -143,105 +124,86 @@ exports[`2. tablet primary image with caption and credits 1`] = `
   }
 }
 
-<ArticleImageNative
-  captionOptions={
-    Object {
-      "caption": "Some caption",
-      "credits": "Some credits",
-    }
-  }
-  imageOptions={
-    Object {
-      "display": "primary",
-      "ratio": "15:12",
-      "uri": "https://img/someImage",
-    }
-  }
-  onImagePress={null}
->
+Array [
   <div
-    className="css-view-1dbjc4n r-flexDirection-eqz5dr r-paddingBottom-19yat4t r-width-13qz1uu"
+    className="css-view-1dbjc4n"
   >
-    <div
-      className="css-view-1dbjc4n"
-    >
-      <TimesImage
-        aspectRatio={1.25}
-        caption={
-          <Caption
-            credits="Some credits"
-            text="Some caption"
-          />
-        }
-        disablePlaceholder={false}
-        fadeImageIn={false}
-        highResSize={null}
-        lowResSize={null}
-        onImagePress={null}
-        rounded={false}
-        uri="https://img/someImage"
-      />
-    </div>
-    <div
-      className="css-view-1dbjc4n"
-    >
-      <responsiveweb__InsetCaptionStyle>
-        <StyledComponent
-          forwardedComponent={
-            Object {
-              "$$typeof": Symbol(react.forward_ref),
-              "attrs": Array [],
-              "componentStyle": ComponentStyle {
-                "componentId": "responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2",
-                "isStatic": true,
-                "lastClassName": "c1",
-                "rules": Array [
-                  "padding-left:",
-                  "10px",
-                  ";@media (min-width:",
-                  "768",
-                  "px){padding-left:0px;}",
-                ],
-              },
-              "displayName": "responsiveweb__InsetCaptionStyle",
-              "foldedComponentIds": Array [],
-              "render": [Function],
-              "styledComponentId": "responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2",
-              "target": [Function],
-              "toString": [Function],
-              "warnTooManyClasses": [Function],
-              "withComponent": [Function],
-            }
+    <TimesImage
+      aspectRatio={1.25}
+      caption={
+        <Caption
+          credits="Some credits"
+          text="Some caption"
+        />
+      }
+      disablePlaceholder={false}
+      fadeImageIn={false}
+      highResSize={null}
+      lowResSize={null}
+      onImagePress={null}
+      rounded={false}
+      uri="https://img/someImage"
+    />
+  </div>,
+  <div
+    className="css-view-1dbjc4n"
+  >
+    <responsiveweb__InsetCaptionStyle>
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2",
+              "isStatic": true,
+              "lastClassName": "c1",
+              "rules": Array [
+                "padding-left:",
+                "10px",
+                ";@media (min-width:",
+                "768",
+                "px){padding-left:0px;}",
+              ],
+            },
+            "displayName": "responsiveweb__InsetCaptionStyle",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2",
+            "target": [Function],
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
           }
-          forwardedRef={null}
+        }
+        forwardedRef={null}
+      >
+        <div
+          className="c1 responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2 c1 css-view-1dbjc4n"
         >
           <div
-            className="c1 responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2 c1 css-view-1dbjc4n"
+            className="css-view-1dbjc4n"
           >
             <div
-              className="css-view-1dbjc4n"
+              className="css-view-1dbjc4n r-paddingTop-m611by"
             >
               <div
-                className="css-view-1dbjc4n r-paddingTop-m611by"
+                className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
               >
-                <div
-                  className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
-                >
-                  Some caption
-                </div>
-                <div
-                  className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
-                >
-                  SOME CREDITS
-                </div>
+                Some caption
+              </div>
+              <div
+                className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
+              >
+                SOME CREDITS
               </div>
             </div>
           </div>
-        </StyledComponent>
-      </responsiveweb__InsetCaptionStyle>
-    </div>
-  </div>
-</ArticleImageNative>
+        </div>
+      </StyledComponent>
+    </responsiveweb__InsetCaptionStyle>
+  </div>,
+]
 `;
 
 exports[`3. mobile fullwidth image with caption and credits 1`] = `
@@ -255,74 +217,55 @@ exports[`3. mobile fullwidth image with caption and credits 1`] = `
   z-index: 2;
 }
 
-<ArticleImageNative
-  captionOptions={
-    Object {
-      "caption": "Some caption",
-      "credits": "Some credits",
-    }
-  }
-  imageOptions={
-    Object {
-      "display": "fullwidth",
-      "ratio": "15:12",
-      "uri": "https://img/someImage",
-    }
-  }
-  onImagePress={null}
->
+Array [
   <div
-    className="css-view-1dbjc4n r-marginBottom-15d164r r-marginHorizontal-1jgb5lz r-maxWidth-11gaior"
+    className="css-view-1dbjc4n"
   >
-    <div
-      className="css-view-1dbjc4n"
+    <TimesImage
+      aspectRatio={1.25}
+      caption={
+        <Caption
+          credits="Some credits"
+          text="Some caption"
+        />
+      }
+      disablePlaceholder={false}
+      fadeImageIn={false}
+      highResSize={null}
+      lowResSize={null}
+      onImagePress={null}
+      rounded={false}
+      uri="https://img/someImage"
+    />
+  </div>,
+  <div
+    className="css-view-1dbjc4n r-alignSelf-1kihuf0 r-maxWidth-1cmskyw"
+  >
+    <CentredCaption
+      credits="Some credits"
+      text="Some caption"
     >
-      <TimesImage
-        aspectRatio={1.25}
-        caption={
-          <Caption
-            credits="Some credits"
-            text="Some caption"
-          />
-        }
-        disablePlaceholder={false}
-        fadeImageIn={false}
-        highResSize={null}
-        lowResSize={null}
-        onImagePress={null}
-        rounded={false}
-        uri="https://img/someImage"
-      />
-    </div>
-    <div
-      className="css-view-1dbjc4n r-alignSelf-1kihuf0 r-maxWidth-1cmskyw"
-    >
-      <CentredCaption
-        credits="Some credits"
-        text="Some caption"
+      <div
+        className="css-view-1dbjc4n"
       >
         <div
-          className="css-view-1dbjc4n"
+          className="css-view-1dbjc4n r-paddingTop-m611by"
         >
           <div
-            className="css-view-1dbjc4n r-paddingTop-m611by"
+            className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
           >
-            <div
-              className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
-            >
-              Some caption
-            </div>
-            <div
-              className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
-            >
-              SOME CREDITS
-            </div>
+            Some caption
+          </div>
+          <div
+            className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
+          >
+            SOME CREDITS
           </div>
         </div>
-      </CentredCaption>
-    </div>
-  </div>
-</ArticleImageNative>
+      </div>
+    </CentredCaption>
+  </div>,
+]
 `;
 
 exports[`4. tablet fullwidth image with caption and credits 1`] = `
@@ -336,74 +279,55 @@ exports[`4. tablet fullwidth image with caption and credits 1`] = `
   z-index: 2;
 }
 
-<ArticleImageNative
-  captionOptions={
-    Object {
-      "caption": "Some caption",
-      "credits": "Some credits",
-    }
-  }
-  imageOptions={
-    Object {
-      "display": "fullwidth",
-      "ratio": "15:12",
-      "uri": "https://img/someImage",
-    }
-  }
-  onImagePress={null}
->
+Array [
   <div
-    className="css-view-1dbjc4n r-marginBottom-15d164r r-marginHorizontal-1jgb5lz r-maxWidth-11gaior"
+    className="css-view-1dbjc4n"
   >
-    <div
-      className="css-view-1dbjc4n"
+    <TimesImage
+      aspectRatio={1.25}
+      caption={
+        <Caption
+          credits="Some credits"
+          text="Some caption"
+        />
+      }
+      disablePlaceholder={false}
+      fadeImageIn={false}
+      highResSize={null}
+      lowResSize={null}
+      onImagePress={null}
+      rounded={false}
+      uri="https://img/someImage"
+    />
+  </div>,
+  <div
+    className="css-view-1dbjc4n r-alignSelf-1kihuf0 r-maxWidth-1cmskyw"
+  >
+    <CentredCaption
+      credits="Some credits"
+      text="Some caption"
     >
-      <TimesImage
-        aspectRatio={1.25}
-        caption={
-          <Caption
-            credits="Some credits"
-            text="Some caption"
-          />
-        }
-        disablePlaceholder={false}
-        fadeImageIn={false}
-        highResSize={null}
-        lowResSize={null}
-        onImagePress={null}
-        rounded={false}
-        uri="https://img/someImage"
-      />
-    </div>
-    <div
-      className="css-view-1dbjc4n r-alignSelf-1kihuf0 r-maxWidth-1cmskyw"
-    >
-      <CentredCaption
-        credits="Some credits"
-        text="Some caption"
+      <div
+        className="css-view-1dbjc4n"
       >
         <div
-          className="css-view-1dbjc4n"
+          className="css-view-1dbjc4n r-paddingTop-m611by"
         >
           <div
-            className="css-view-1dbjc4n r-paddingTop-m611by"
+            className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
           >
-            <div
-              className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
-            >
-              Some caption
-            </div>
-            <div
-              className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
-            >
-              SOME CREDITS
-            </div>
+            Some caption
+          </div>
+          <div
+            className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
+          >
+            SOME CREDITS
           </div>
         </div>
-      </CentredCaption>
-    </div>
-  </div>
-</ArticleImageNative>
+      </div>
+    </CentredCaption>
+  </div>,
+]
 `;
 
 exports[`5. secondary image with caption and credits 1`] = `
@@ -417,69 +341,50 @@ exports[`5. secondary image with caption and credits 1`] = `
   z-index: 2;
 }
 
-<ArticleImageNative
-  captionOptions={
-    Object {
-      "caption": "Another caption",
-      "credits": "Other credits",
-    }
-  }
-  imageOptions={
-    Object {
-      "display": "secondary",
-      "ratio": "3:2",
-      "uri": "https://img/someImage",
-    }
-  }
-  onImagePress={null}
->
+Array [
   <div
-    className="css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-tzz3ar r-paddingBottom-k8qxaj r-paddingLeft-1hfyk0a r-paddingRight-1qfoi16 r-width-13qz1uu"
+    className="css-view-1dbjc4n r-width-1f720gc"
+  >
+    <TimesImage
+      aspectRatio={1.5}
+      caption={
+        <Caption
+          credits="Other credits"
+          text="Another caption"
+        />
+      }
+      disablePlaceholder={false}
+      fadeImageIn={false}
+      highResSize={null}
+      lowResSize={null}
+      onImagePress={null}
+      rounded={false}
+      uri="https://img/someImage"
+    />
+  </div>,
+  <div
+    className="css-view-1dbjc4n r-paddingLeft-1hfyk0a r-paddingTop-wk8lta r-width-1f720gc"
   >
     <div
-      className="css-view-1dbjc4n r-width-1f720gc"
-    >
-      <TimesImage
-        aspectRatio={1.5}
-        caption={
-          <Caption
-            credits="Other credits"
-            text="Another caption"
-          />
-        }
-        disablePlaceholder={false}
-        fadeImageIn={false}
-        highResSize={null}
-        lowResSize={null}
-        onImagePress={null}
-        rounded={false}
-        uri="https://img/someImage"
-      />
-    </div>
-    <div
-      className="css-view-1dbjc4n r-paddingLeft-1hfyk0a r-paddingTop-wk8lta r-width-1f720gc"
+      className="css-view-1dbjc4n"
     >
       <div
-        className="css-view-1dbjc4n"
+        className="css-view-1dbjc4n r-paddingTop-wk8lta"
       >
         <div
-          className="css-view-1dbjc4n r-paddingTop-wk8lta"
+          className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
         >
-          <div
-            className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
-          >
-            Another caption
-          </div>
-          <div
-            className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
-          >
-            OTHER CREDITS
-          </div>
+          Another caption
+        </div>
+        <div
+          className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
+        >
+          OTHER CREDITS
         </div>
       </div>
     </div>
-  </div>
-</ArticleImageNative>
+  </div>,
+]
 `;
 
 exports[`6. primary image with caption and credits with center caption override 1`] = `
@@ -514,115 +419,94 @@ exports[`6. primary image with caption and credits with center caption override 
     }
   }
 >
-  <ArticleImageNative
-    captionOptions={
-      Object {
-        "caption": "Some caption",
-        "credits": "Some credits",
-      }
-    }
-    imageOptions={
-      Object {
-        "display": "primary",
-        "ratio": "15:12",
-        "uri": "https://img/someImage",
-      }
-    }
-    onImagePress={null}
+  <div
+    className="css-view-1dbjc4n"
   >
-    <div
-      className="css-view-1dbjc4n r-flexDirection-eqz5dr r-paddingBottom-19yat4t r-width-13qz1uu"
-    >
-      <div
-        className="css-view-1dbjc4n"
-      >
-        <TimesImage
-          aspectRatio={1.25}
-          caption={
-            <Caption
-              credits="Some credits"
-              text="Some caption"
-            />
-          }
-          disablePlaceholder={false}
-          fadeImageIn={false}
-          highResSize={null}
-          lowResSize={null}
-          onImagePress={null}
-          rounded={false}
-          uri="https://img/someImage"
-        />
-      </div>
-      <div
-        className="css-view-1dbjc4n"
-      >
-        <InsetCenteredCaption
+    <TimesImage
+      aspectRatio={1.25}
+      caption={
+        <Caption
           credits="Some credits"
           text="Some caption"
+        />
+      }
+      disablePlaceholder={false}
+      fadeImageIn={false}
+      highResSize={null}
+      lowResSize={null}
+      onImagePress={null}
+      rounded={false}
+      uri="https://img/someImage"
+    />
+  </div>
+  <div
+    className="css-view-1dbjc4n"
+  >
+    <InsetCenteredCaption
+      credits="Some credits"
+      text="Some caption"
+    >
+      <responsiveweb__InsetCaptionStyle>
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2",
+                "isStatic": true,
+                "lastClassName": "c1",
+                "rules": Array [
+                  "padding-left:",
+                  "10px",
+                  ";@media (min-width:",
+                  "768",
+                  "px){padding-left:0px;}",
+                ],
+              },
+              "displayName": "responsiveweb__InsetCaptionStyle",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2",
+              "target": [Function],
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+          }
+          forwardedRef={null}
         >
-          <responsiveweb__InsetCaptionStyle>
-            <StyledComponent
-              forwardedComponent={
-                Object {
-                  "$$typeof": Symbol(react.forward_ref),
-                  "attrs": Array [],
-                  "componentStyle": ComponentStyle {
-                    "componentId": "responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2",
-                    "isStatic": true,
-                    "lastClassName": "c1",
-                    "rules": Array [
-                      "padding-left:",
-                      "10px",
-                      ";@media (min-width:",
-                      "768",
-                      "px){padding-left:0px;}",
-                    ],
-                  },
-                  "displayName": "responsiveweb__InsetCaptionStyle",
-                  "foldedComponentIds": Array [],
-                  "render": [Function],
-                  "styledComponentId": "responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2",
-                  "target": [Function],
-                  "toString": [Function],
-                  "warnTooManyClasses": [Function],
-                  "withComponent": [Function],
-                }
-              }
-              forwardedRef={null}
+          <div
+            className="c1 responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2 c1 css-view-1dbjc4n"
+          >
+            <CentredCaption
+              credits="Some credits"
+              text="Some caption"
             >
               <div
-                className="c1 responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2 c1 css-view-1dbjc4n"
+                className="css-view-1dbjc4n"
               >
-                <CentredCaption
-                  credits="Some credits"
-                  text="Some caption"
+                <div
+                  className="css-view-1dbjc4n r-paddingTop-m611by"
                 >
                   <div
-                    className="css-view-1dbjc4n"
+                    className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
                   >
-                    <div
-                      className="css-view-1dbjc4n r-paddingTop-m611by"
-                    >
-                      <div
-                        className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
-                      >
-                        Some caption
-                      </div>
-                      <div
-                        className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
-                      >
-                        SOME CREDITS
-                      </div>
-                    </div>
+                    Some caption
                   </div>
-                </CentredCaption>
+                  <div
+                    className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
+                  >
+                    SOME CREDITS
+                  </div>
+                </div>
               </div>
-            </StyledComponent>
-          </responsiveweb__InsetCaptionStyle>
-        </InsetCenteredCaption>
-      </div>
-    </div>
-  </ArticleImageNative>
+            </CentredCaption>
+          </div>
+        </StyledComponent>
+      </responsiveweb__InsetCaptionStyle>
+    </InsetCenteredCaption>
+  </div>
 </ContextProviderWithDefaults>
 `;
 
@@ -648,73 +532,52 @@ exports[`7. secondary image with caption and credits with center caption overrid
     }
   }
 >
-  <ArticleImageNative
-    captionOptions={
-      Object {
-        "caption": "Another caption",
-        "credits": "Other credits",
-      }
-    }
-    imageOptions={
-      Object {
-        "display": "secondary",
-        "ratio": "3:2",
-        "uri": "https://img/someImage",
-      }
-    }
-    onImagePress={null}
+  <div
+    className="css-view-1dbjc4n r-width-1f720gc"
   >
-    <div
-      className="css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-tzz3ar r-paddingBottom-k8qxaj r-paddingLeft-1hfyk0a r-paddingRight-1qfoi16 r-width-13qz1uu"
-    >
-      <div
-        className="css-view-1dbjc4n r-width-1f720gc"
-      >
-        <TimesImage
-          aspectRatio={1.5}
-          caption={
-            <Caption
-              credits="Other credits"
-              text="Another caption"
-            />
-          }
-          disablePlaceholder={false}
-          fadeImageIn={false}
-          highResSize={null}
-          lowResSize={null}
-          onImagePress={null}
-          rounded={false}
-          uri="https://img/someImage"
-        />
-      </div>
-      <div
-        className="css-view-1dbjc4n r-paddingLeft-1hfyk0a r-paddingTop-wk8lta r-width-1f720gc"
-      >
-        <CentredCaption
+    <TimesImage
+      aspectRatio={1.5}
+      caption={
+        <Caption
           credits="Other credits"
           text="Another caption"
+        />
+      }
+      disablePlaceholder={false}
+      fadeImageIn={false}
+      highResSize={null}
+      lowResSize={null}
+      onImagePress={null}
+      rounded={false}
+      uri="https://img/someImage"
+    />
+  </div>
+  <div
+    className="css-view-1dbjc4n r-paddingLeft-1hfyk0a r-paddingTop-wk8lta r-width-1f720gc"
+  >
+    <CentredCaption
+      credits="Other credits"
+      text="Another caption"
+    >
+      <div
+        className="css-view-1dbjc4n"
+      >
+        <div
+          className="css-view-1dbjc4n r-paddingTop-wk8lta"
         >
           <div
-            className="css-view-1dbjc4n"
+            className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
           >
-            <div
-              className="css-view-1dbjc4n r-paddingTop-wk8lta"
-            >
-              <div
-                className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
-              >
-                Another caption
-              </div>
-              <div
-                className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
-              >
-                OTHER CREDITS
-              </div>
-            </div>
+            Another caption
           </div>
-        </CentredCaption>
+          <div
+            className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
+          >
+            OTHER CREDITS
+          </div>
+        </div>
       </div>
-    </div>
-  </ArticleImageNative>
+    </CentredCaption>
+  </div>
 </ContextProviderWithDefaults>
 `;

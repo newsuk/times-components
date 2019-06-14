@@ -12,7 +12,7 @@ exports[`full article with style 1`] = `
   padding-left: 10px;
 }
 
-.c6:after {
+.c6:first-of-type:after {
   content: "";
   clear: both;
   display: table;
