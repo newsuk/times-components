@@ -2,14 +2,16 @@
 /* eslint-env browser */
 
 import React, { Component } from "react";
+import { createPortal } from "react-dom";
 import PropTypes from "prop-types";
 import { createGlobalStyle } from "styled-components";
-import { getTop } from "./util";
+import { getTop, getTopFromBody } from "./util";
 import { withStickyContext, StickyProvider } from "./context";
 
 const GlobalStickyStyles = createGlobalStyle`
   .tc-sticky-container {
-    position: sticky;
+    left: 50%;
+    transform: translateX(-50%);
   }
 `;
 
@@ -20,13 +22,22 @@ class UnwrappedSticky extends Component {
     super(props);
 
     this.updateSticky = this.updateSticky.bind(this);
-    this.containerRef = React.createRef();
+    this.createContainerRef = this.createContainerRef.bind(this);
+    this.createPlaceholderRef = this.createPlaceholderRef.bind(this);
     this.isSticky = false;
   }
 
   componentDidMount() {
     window.addEventListener("scroll", this.updateSticky);
     window.addEventListener("resize", this.updateSticky);
+
+    this.updateSticky();
+    this.syncPlaceholder();
+  }
+
+  componentDidUpdate() {
+    this.updateSticky();
+    this.syncPlaceholder();
   }
 
   componentWillUnmount() {
@@ -50,18 +61,58 @@ class UnwrappedSticky extends Component {
   }
 
   updateSticky() {
-    const { stickyContext } = this.props;
-    const container = this.containerRef.current;
+    const { stickyContext, shouldBeSticky } = this.props;
+    const { container, placeholder } = this;
 
-    if (!container) {
+    if (!container || !placeholder) {
       return;
     }
 
-    const shouldBeSticky = isOutOfView(container, stickyContext.top);
+    const isSticky = isOutOfView(placeholder, stickyContext.top) && shouldBeSticky();
 
-    if (this.doesStickyNeedUpdating(shouldBeSticky)) {
-      this.setSticky(container, shouldBeSticky);
+    if (this.doesStickyNeedUpdating(isSticky)) {
+      this.setSticky(container, isSticky);
+      this.syncPlaceholder();
     }
+  }
+
+  syncPlaceholder() {
+    const { container, placeholder, isSticky } = this;
+    const { stickyContext, wide, zIndex } = this.props;
+
+    if (!container || !placeholder) {
+      return;
+    }
+
+    const { style } = container;
+
+    style.width = isSticky && wide ? "100%" : `${placeholder.offsetWidth}px`;
+    placeholder.style.height = `${container.offsetHeight}px`;
+
+    if (isSticky) {
+      style.top = `${stickyContext.top}px`;
+      style.position = "fixed";
+      style.zIndex = zIndex;
+    } else {
+      style.top = `${getTopFromBody(placeholder)}px`;
+      style.position = "absolute";
+      style.zIndex = "initial";
+    }
+
+  }
+
+  createContainerRef(container) {
+    this.container = container;
+
+    this.updateSticky();
+    this.syncPlaceholder();
+  }
+
+  createPlaceholderRef(placeholder) {
+    this.placeholder = placeholder;
+
+    this.updateSticky();
+    this.syncPlaceholder();
   }
 
   render() {
@@ -70,18 +121,26 @@ class UnwrappedSticky extends Component {
       style,
       children,
       className,
-      stickyContext,
-      zIndex
+      stickyContext
     } = this.props;
+    const portalTarget = stickyContext.node ? stickyContext.node.parentNode : document.body;
     return (
-      <Component
-        className={`${className} tc-sticky-container`}
-        ref={this.containerRef}
-        style={{ zIndex, ...style, top: stickyContext.top }}
-      >
+      <>
         <GlobalStickyStyles />
-        {children}
-      </Component>
+        <Component ref={this.createPlaceholderRef} className={`${className} tc-sticky-placeholder`} style={style} />
+        {
+          createPortal(
+            <Component
+              className={`${className} tc-sticky-container`}
+              style={style}
+              ref={this.createContainerRef}
+            >
+              {children}
+            </Component>,
+            portalTarget
+          )
+        }
+      </>
     );
   }
 }
@@ -97,7 +156,9 @@ UnwrappedSticky.propTypes = {
   stickyContext: PropTypes.shape({
     top: PropTypes.number.isRequired
   }),
-  zIndex: PropTypes.number
+  zIndex: PropTypes.number,
+  wide: PropTypes.bool,
+  shouldBeSticky: PropTypes.func
 };
 
 UnwrappedSticky.defaultProps = {
@@ -107,7 +168,9 @@ UnwrappedSticky.defaultProps = {
   style: {},
   stickyClassName: "sticky",
   stickyContext: { top: 0 },
-  zIndex: 999
+  zIndex: 999,
+  wide: false,
+  shouldBeSticky: () => true,
 };
 
 const Sticky = withStickyContext(UnwrappedSticky);

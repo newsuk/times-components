@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 import getDisplayName from "react-display-name";
 import hoistNonReactStatic from "hoist-non-react-statics";
 
-import { getTop } from "./util";
+import { getTopFromBody } from "./util";
 
 const { Provider, Consumer } = React.createContext({ top: 0 });
 
@@ -34,10 +34,11 @@ class StickyProvider extends Component {
       return;
     }
 
-    const newTop = Math.round((getTop(node) || 0) + window.pageYOffset);
+
+    const newTop = Math.round(getTopFromBody(node));
 
     if (newTop !== top) {
-      this.setState({ top: newTop });
+      this.setState({ top: newTop, node });
     }
   }
 
