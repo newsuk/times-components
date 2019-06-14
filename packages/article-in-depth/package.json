@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-in-depth",
-  "version": "3.4.6",
+  "version": "3.4.7",
   "description": "In Depth Article Template",
   "main": "dist/article-in-depth",
   "dev": "src/article-in-depth",
@@ -61,13 +61,13 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/ad": "2.6.11",
+    "@times-components/ad": "2.6.12",
     "@times-components/article-byline": "3.1.78",
     "@times-components/article-error": "0.2.83",
     "@times-components/article-flag": "2.6.43",
     "@times-components/article-label": "2.3.84",
     "@times-components/article-lead-asset": "1.2.2",
-    "@times-components/article-skeleton": "1.8.11",
+    "@times-components/article-skeleton": "1.8.12",
     "@times-components/caption": "3.0.38",
     "@times-components/context": "1.0.17",
     "@times-components/date-publication": "0.20.68",

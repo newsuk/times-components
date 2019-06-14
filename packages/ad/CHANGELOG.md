@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.6.12](https://github.com/newsuk/times-components/compare/@times-components/ad@2.6.11...@times-components/ad@2.6.12) (2019-06-14)
+
+
+### Bug Fixes
+
+* make unruly ads work correctly in the new webview component ([#2028](https://github.com/newsuk/times-components/issues/2028)) ([e5272b5](https://github.com/newsuk/times-components/commit/e5272b5))
+
+
+
+
+
 ## [2.6.11](https://github.com/newsuk/times-components/compare/@times-components/ad@2.6.10...@times-components/ad@2.6.11) (2019-06-13)
 
 
