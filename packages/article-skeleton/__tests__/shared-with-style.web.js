@@ -71,10 +71,16 @@ export default () => {
         {
           children: [
             {
-              attributes: {
-                value: "T"
-              },
-              children: [],
+              attributes: {},
+              children: [
+                {
+                  attributes: {
+                    value: "T"
+                  },
+                  children: [],
+                  name: "text"
+                }
+              ],
               name: "dropCap"
             },
             {
