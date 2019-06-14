@@ -1,34 +1,32 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. does not render an image if display is not received 1`] = `<div />`;
+exports[`1. does not render an image if display is not received 1`] = `""`;
 
-exports[`2. does not render a primary image if ratio is not received 1`] = `<div />`;
+exports[`2. does not render a primary image if ratio is not received 1`] = `""`;
 
-exports[`3. does not render an inline image with no ratio and no caption or credits 1`] = `<div />`;
+exports[`3. does not render an inline image with no ratio and no caption or credits 1`] = `""`;
 
 exports[`4. inline image with no ratio only shows caption and credits 1`] = `
-<div>
-  <responsiveweb__InsetCaptionContainerStyle>
-    <div>
-      <figcaption>
+<responsiveweb__InsetCaptionContainerStyle>
+  <div>
+    <figcaption>
+      <div>
         <div>
           <div>
-            <div>
-              Some caption
-            </div>
-            <div>
-              SOME CREDIT
-            </div>
+            Some caption
+          </div>
+          <div>
+            SOME CREDIT
           </div>
         </div>
-      </figcaption>
-    </div>
-  </responsiveweb__InsetCaptionContainerStyle>
-</div>
+      </div>
+    </figcaption>
+  </div>
+</responsiveweb__InsetCaptionContainerStyle>
 `;
 
 exports[`5. image with no caption 1`] = `
-<div>
+Array [
   <div>
     <div>
       <div>
@@ -65,9 +63,9 @@ exports[`5. image with no caption 1`] = `
         </div>
       </div>
     </div>
-  </div>
-  
-</div>
+  </div>,
+  "",
+]
 `;
 
 exports[`6. image with no display only shows given caption 1`] = `
@@ -75,9 +73,7 @@ exports[`6. image with no display only shows given caption 1`] = `
   <div>
     <div>
       <div>
-        <div>
-          Some caption
-        </div>
+        Some caption
       </div>
     </div>
   </div>
@@ -89,9 +85,7 @@ exports[`7. image with no display only shows given credits 1`] = `
   <div>
     <div>
       <div>
-        <div>
-          SOME CREDIT
-        </div>
+        SOME CREDIT
       </div>
     </div>
   </div>
@@ -99,7 +93,7 @@ exports[`7. image with no display only shows given credits 1`] = `
 `;
 
 exports[`8. primary image renders with caption and credits 1`] = `
-<div>
+Array [
   <div>
     <div>
       <div>
@@ -136,7 +130,7 @@ exports[`8. primary image renders with caption and credits 1`] = `
         </div>
       </div>
     </div>
-  </div>
+  </div>,
   <div>
     <responsiveweb__InsetCaptionStyle>
       <div>
@@ -152,12 +146,12 @@ exports[`8. primary image renders with caption and credits 1`] = `
         </div>
       </div>
     </responsiveweb__InsetCaptionStyle>
-  </div>
-</div>
+  </div>,
+]
 `;
 
 exports[`9. primary image with given resolutions 1`] = `
-<div>
+Array [
   <div>
     <div>
       <div>
@@ -205,7 +199,7 @@ exports[`9. primary image with given resolutions 1`] = `
         </div>
       </div>
     </div>
-  </div>
+  </div>,
   <div>
     <responsiveweb__InsetCaptionStyle>
       <div>
@@ -221,6 +215,6 @@ exports[`9. primary image with given resolutions 1`] = `
         </div>
       </div>
     </responsiveweb__InsetCaptionStyle>
-  </div>
-</div>
+  </div>,
+]
 `;

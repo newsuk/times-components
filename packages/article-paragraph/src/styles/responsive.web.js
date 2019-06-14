@@ -39,7 +39,7 @@ export const Paragraph = styled.p`
   padding-left: ${spacing(2)};
    
   // Clear fix for floated dropcap
-  &:after {
+  &:first-of-type:after {
     content: "";
     clear: both;
     display: table;

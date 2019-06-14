@@ -12,7 +12,7 @@ exports[`full article with style 1`] = `
   padding-left: 10px;
 }
 
-.c16:after {
+.c16:first-of-type:after {
   content: "";
   clear: both;
   display: table;
@@ -692,7 +692,7 @@ exports[`full article with style in the culture magazine 1`] = `
   padding-left: 10px;
 }
 
-.c16:after {
+.c16:first-of-type:after {
   content: "";
   clear: both;
   display: table;
@@ -1380,7 +1380,7 @@ exports[`full article with style in the style magazine 1`] = `
   padding-left: 10px;
 }
 
-.c16:after {
+.c16:first-of-type:after {
   content: "";
   clear: both;
   display: table;
@@ -2068,7 +2068,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   padding-left: 10px;
 }
 
-.c16:after {
+.c16:first-of-type:after {
   content: "";
   clear: both;
   display: table;

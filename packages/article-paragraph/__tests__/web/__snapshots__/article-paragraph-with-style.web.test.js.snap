@@ -12,7 +12,7 @@ exports[`1. mpu config 1`] = `
   padding-left: 10px;
 }
 
-.c0:after {
+.c0:first-of-type:after {
   content: "";
   clear: both;
   display: table;
