@@ -1305,15 +1305,13 @@ export default gql`
     ... on Video {
       posterImage {
         crop169: crop(ratio: "16:9") {
-          ratio
-          url
+          ...cropProps
         }
       }
     }
     ... on Image {
       crop169: crop(ratio: "16:9") {
-        ratio
-        url
+        ...cropProps
       }
     }
   }
@@ -1323,15 +1321,13 @@ export default gql`
     ... on Video {
       posterImage {
         crop32: crop(ratio: "3:2") {
-          ratio
-          url
+          ...cropProps
         }
       }
     }
     ... on Image {
       crop32: crop(ratio: "3:2") {
-        ratio
-        url
+        ...cropProps
       }
     }
   }
@@ -1341,15 +1337,13 @@ export default gql`
     ... on Video {
       posterImage {
         crop11: crop(ratio: "1:1") {
-          ratio
-          url
+          ...cropProps
         }
       }
     }
     ... on Image {
       crop11: crop(ratio: "1:1") {
-        ratio
-        url
+        ...cropProps
       }
     }
   }
@@ -1359,15 +1353,13 @@ export default gql`
     ... on Video {
       posterImage {
         crop45: crop(ratio: "4:5") {
-          ratio
-          url
+          ...cropProps
         }
       }
     }
     ... on Image {
       crop45: crop(ratio: "4:5") {
-        ratio
-        url
+        ...cropProps
       }
     }
   }
@@ -1377,15 +1369,13 @@ export default gql`
     ... on Video {
       posterImage {
         crop23: crop(ratio: "2:3") {
-          ratio
-          url
+          ...cropProps
         }
       }
     }
     ... on Image {
       crop23: crop(ratio: "2:3") {
-        ratio
-        url
+        ...cropProps
       }
     }
   }
@@ -1395,23 +1385,19 @@ export default gql`
     ... on Video {
       posterImage {
         crop32: crop(ratio: "3:2") {
-          ratio
-          url
+          ...cropProps
         }
         crop169: crop(ratio: "16:9") {
-          ratio
-          url
+          ...cropProps
         }
       }
     }
     ... on Image {
       crop32: crop(ratio: "3:2") {
-        ratio
-        url
+        ...cropProps
       }
       crop169: crop(ratio: "16:9") {
-        ratio
-        url
+        ...cropProps
       }
     }
   }
@@ -1421,15 +1407,13 @@ export default gql`
     ... on Video {
       posterImage {
         crop32: crop(ratio: "3:2") {
-          ratio
-          url
+          ...cropProps
         }
       }
     }
     ... on Image {
       crop32: crop(ratio: "3:2") {
-        ratio
-        url
+        ...cropProps
       }
     }
   }
@@ -1439,15 +1423,13 @@ export default gql`
     ... on Video {
       posterImage {
         crop11: crop(ratio: "1:1") {
-          ratio
-          url
+          ...cropProps
         }
       }
     }
     ... on Image {
       crop11: crop(ratio: "1:1") {
-        ratio
-        url
+        ...cropProps
       }
     }
   }
@@ -1457,15 +1439,13 @@ export default gql`
     ... on Video {
       posterImage {
         crop45: crop(ratio: "4:5") {
-          ratio
-          url
+          ...cropProps
         }
       }
     }
     ... on Image {
       crop45: crop(ratio: "4:5") {
-        ratio
-        url
+        ...cropProps
       }
     }
   }
@@ -1475,15 +1455,13 @@ export default gql`
     ... on Video {
       posterImage {
         crop23: crop(ratio: "2:3") {
-          ratio
-          url
+          ...cropProps
         }
       }
     }
     ... on Image {
       crop23: crop(ratio: "2:3") {
-        ratio
-        url
+        ...cropProps
       }
     }
   }
@@ -1493,15 +1471,13 @@ export default gql`
     ... on Video {
       posterImage {
         crop169: crop(ratio: "16:9") {
-          ratio
-          url
+          ...cropProps
         }
       }
     }
     ... on Image {
       crop169: crop(ratio: "16:9") {
-        ratio
-        url
+        ...cropProps
       }
     }
   }
@@ -1511,24 +1487,28 @@ export default gql`
     ... on Video {
       posterImage {
         crop32: crop(ratio: "3:2") {
-          ratio
-          url
+          ...cropProps
         }
         crop169: crop(ratio: "16:9") {
-          ratio
-          url
+          ...cropProps
         }
       }
     }
     ... on Image {
       crop32: crop(ratio: "3:2") {
-        ratio
-        url
+        ...cropProps
       }
       crop169: crop(ratio: "16:9") {
-        ratio
-        url
+        ...cropProps
       }
     }
+  }
+  fragment cropProps on Crop {
+    ratio
+    relativeHorizontalOffset
+    relativeVerticalOffset
+    relativeWidth
+    relativeHeight
+    url
   }
 `;

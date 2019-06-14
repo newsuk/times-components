@@ -102,7 +102,20 @@ export default ({
         })
       };
     },
-    image(key, { display, ratio, url, caption, credits }) {
+    image(
+      key,
+      {
+        display,
+        ratio,
+        url,
+        caption,
+        credits,
+        relativeWidth,
+        relativeHeight,
+        relativeHorizontalOffset,
+        relativeVerticalOffset
+      }
+    ) {
       const [ratioWidth, ratioHeight] = ratio.split(":");
       const aspectRatio = ratioHeight / ratioWidth;
       if (display !== "inline" || !isTablet) {
@@ -119,7 +132,11 @@ export default ({
                     imageOptions={{
                       display: display === "inline" ? "secondary" : display,
                       ratio,
-                      uri: url
+                      uri: url,
+                      relativeWidth,
+                      relativeHeight,
+                      relativeHorizontalOffset,
+                      relativeVerticalOffset
                     }}
                     onImagePress={onImagePress}
                   />

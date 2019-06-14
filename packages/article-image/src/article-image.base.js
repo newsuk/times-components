@@ -46,7 +46,18 @@ const renderCaption = (caption, credits, display, theme) => {
 };
 
 const ArticleImage = ({ imageOptions, captionOptions, onImagePress }) => {
-  const { display, highResSize, index, lowResSize, ratio, uri } = imageOptions;
+  const {
+    display,
+    highResSize,
+    index,
+    lowResSize,
+    ratio,
+    uri,
+    relativeHeight,
+    relativeWidth,
+    relativeHorizontalOffset,
+    relativeVerticalOffset
+  } = imageOptions;
   const { caption, credits } = captionOptions;
 
   if (display === "inline") {
@@ -83,6 +94,10 @@ const ArticleImage = ({ imageOptions, captionOptions, onImagePress }) => {
           lowResSize={lowResSize}
           onImagePress={onImagePress}
           uri={uri}
+          relativeWidth={relativeWidth}
+          relativeHeight={relativeHeight}
+          relativeHorizontalOffset={relativeHorizontalOffset}
+          relativeVerticalOffset={relativeVerticalOffset}
         />
       </View>
       {renderedCaption}

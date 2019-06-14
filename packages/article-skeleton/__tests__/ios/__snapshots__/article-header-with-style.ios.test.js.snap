@@ -196,6 +196,10 @@ exports[`1. article with header 1`] = `
                 Object {
                   "display": "primary",
                   "ratio": "1500:1000",
+                  "relativeHeight": undefined,
+                  "relativeHorizontalOffset": undefined,
+                  "relativeVerticalOffset": undefined,
+                  "relativeWidth": undefined,
                   "uri": "http://image.io",
                 }
               }
@@ -260,6 +264,10 @@ exports[`1. article with header 1`] = `
                 Object {
                   "display": "secondary",
                   "ratio": "3:2",
+                  "relativeHeight": undefined,
+                  "relativeHorizontalOffset": undefined,
+                  "relativeVerticalOffset": undefined,
+                  "relativeWidth": undefined,
                   "uri": "https://image.io",
                 }
               }

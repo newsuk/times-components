@@ -5,7 +5,11 @@ import Image from "../src";
 const props = {
   aspectRatio: 2,
   highResSize: 800,
-  uri: "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0"
+  uri: "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0",
+  relativeWidth: 0.5,
+  relativeHeight: 0.4,
+  relativeHorizontalOffset: 0.16666666666666666,
+  relativeVerticalOffset: 0.2
 };
 
 export default (renderComponent, platformTests = []) => {
@@ -18,6 +22,10 @@ export default (renderComponent, platformTests = []) => {
             aspectRatio={2}
             highResSize={1000}
             uri="http://example.com/image.jpg?crop=1016%2C677%2C0%2C0"
+            relativeWidth={0.5}
+            relativeHeight={0.4}
+            relativeHorizontalOffset={0.16666666666666666}
+            relativeVerticalOffset={0.2}
           />
         );
         expect(output).toMatchSnapshot();
@@ -27,7 +35,13 @@ export default (renderComponent, platformTests = []) => {
       name: "default layout without uri",
       test: () => {
         const output = renderComponent(
-          <Image aspectRatio={props.aspectRatio} />
+          <Image
+            aspectRatio={props.aspectRatio}
+            relativeWidth={0.5}
+            relativeHeight={0.4}
+            relativeHorizontalOffset={0.16666666666666666}
+            relativeVerticalOffset={0.2}
+          />
         );
 
         expect(output).toMatchSnapshot();
@@ -37,7 +51,13 @@ export default (renderComponent, platformTests = []) => {
       name: "default layout without aspect ratio",
       test: () => {
         const output = renderComponent(
-          <Image uri="http://example.com/image.jpg?crop=1016%2C677%2C0%2C0" />
+          <Image
+            uri="http://example.com/image.jpg?crop=1016%2C677%2C0%2C0"
+            relativeWidth={0.5}
+            relativeHeight={0.4}
+            relativeHorizontalOffset={0.16666666666666666}
+            relativeVerticalOffset={0.2}
+          />
         );
 
         expect(output).toMatchSnapshot();

@@ -1,44 +1,41 @@
-import React, { Component, Fragment } from "react";
+import React, { Fragment } from "react";
 import { Image } from "react-native";
-import appendToUrl from "../utils";
+import { appendParamsToQuery } from "../utils";
 
-class LazyLoadingImage extends Component {
-  constructor() {
-    super();
-    this.state = {
-      error: null
-    };
-  }
+const LazyLoadingImage = props => {
+  const {
+    source,
+    relativeWidth,
+    relativeHeight,
+    relativeHorizontalOffset,
+    relativeVerticalOffset
+  } = props;
 
-  render() {
-    const { source } = this.props;
-    const { error } = this.state;
-    return (
-      <Fragment>
-        {error &&
-        source &&
-        source.uri &&
-        !source.uri.includes("data:image/") ? (
-          <Image
-            {...this.props}
-            source={
-              source
-                ? {
-                    uri: appendToUrl(source.uri, "offline", true)
-                  }
-                : null
-            }
-          />
-        ) : null}
+  const queryArray = [
+    { name: "offline", value: true },
+    { name: "rel_height", value: relativeHeight },
+    { name: "rel_width", value: relativeWidth },
+    { name: "rel_horizontal_offset", value: relativeHorizontalOffset },
+    { name: "rel_vertical_offset", value: relativeVerticalOffset }
+  ];
+
+  return (
+    <Fragment>
+      {source && source.uri && !source.uri.includes("data:image/") ? (
         <Image
-          {...this.props}
-          onError={({ nativeEvent: { error: imageError } }) => {
-            this.setState({ error: imageError });
-          }}
+          {...props}
+          source={
+            source
+              ? {
+                  uri: appendParamsToQuery(source.uri, queryArray)
+                }
+              : null
+          }
         />
-      </Fragment>
-    );
-  }
-}
+      ) : null}
+      <Image {...props} />
+    </Fragment>
+  );
+};
 
 export default LazyLoadingImage;

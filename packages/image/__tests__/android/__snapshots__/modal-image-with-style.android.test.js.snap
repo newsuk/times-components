@@ -107,6 +107,16 @@ exports[`1. landscape default modal 1`] = `
                   }
                 }
               />
+              <Image
+                style={
+                  Object {
+                    "height": "100%",
+                    "position": "absolute",
+                    "resizeMode": "contain",
+                    "width": "100%",
+                  }
+                }
+              />
             </View>
             <View
               style={
@@ -343,6 +353,16 @@ exports[`2. portrait default modal 1`] = `
                 }
               }
             >
+              <Image
+                style={
+                  Object {
+                    "height": "100%",
+                    "position": "absolute",
+                    "resizeMode": "contain",
+                    "width": "100%",
+                  }
+                }
+              />
               <Image
                 style={
                   Object {
@@ -599,6 +619,16 @@ exports[`3. tablet landscape default modal 1`] = `
                   }
                 }
               />
+              <Image
+                style={
+                  Object {
+                    "height": "100%",
+                    "position": "absolute",
+                    "resizeMode": "contain",
+                    "width": "100%",
+                  }
+                }
+              />
             </View>
             <View
               style={
@@ -845,6 +875,16 @@ exports[`4. tablet portrait default modal 1`] = `
                 }
               }
             >
+              <Image
+                style={
+                  Object {
+                    "height": "100%",
+                    "position": "absolute",
+                    "resizeMode": "contain",
+                    "width": "100%",
+                  }
+                }
+              />
               <Image
                 style={
                   Object {

@@ -52,35 +52,37 @@ export default gql`
     caption
     credits
     crop169: crop(ratio: "16:9") {
-      ratio
-      url
+      ...cropProps
     }
     crop32: crop(ratio: "3:2") {
-      ratio
-      url
+      ...cropProps
     }
     crop1251: crop(ratio: "1.25:1") {
-      ratio
-      url
+      ...cropProps
     }
     crop11: crop(ratio: "1:1") {
-      ratio
-      url
+      ...cropProps
     }
     crop45: crop(ratio: "4:5") {
-      ratio
-      url
+      ...cropProps
     }
     crop23: crop(ratio: "2:3") {
-      ratio
-      url
+      ...cropProps
     }
     crop2251: crop(ratio: "2.25:1") {
-      ratio
-      url
+      ...cropProps
     }
     id
     title
+  }
+
+  fragment cropProps on Crop {
+    ratio
+    relativeHorizontalOffset
+    relativeVerticalOffset
+    relativeWidth
+    relativeHeight
+    url
   }
 
   ${articleProps}

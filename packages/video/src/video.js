@@ -16,7 +16,11 @@ const Video = ({
   poster,
   skySports,
   videoId,
-  width
+  width,
+  relativeWidth,
+  relativeHeight,
+  relativeHorizontalOffset,
+  relativeVerticalOffset
 }) => (
   <Touchable
     accessibilityLabel="Video Splash"
@@ -39,6 +43,10 @@ const Video = ({
             width
           }}
           uri={poster.uri}
+          relativeWidth={relativeWidth}
+          relativeHeight={relativeHeight}
+          relativeHorizontalOffset={relativeHorizontalOffset}
+          relativeVerticalOffset={relativeVerticalOffset}
         />
       ) : (
         <View
