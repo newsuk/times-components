@@ -59,10 +59,11 @@ class TimesImage extends Component {
 
   highResImage({ highResSize, lowResSize, url }) {
     const { highResIsLoaded } = this.state;
+    const { altText } = this.props;
     if (!lowResSize || highResSize) {
       return (
         <StyledImage
-          alt={this.props.altText}
+          alt={altText}
           ref={this.getHighResImage}
           isLoaded={highResIsLoaded}
           onLoad={this.handleHighResOnLoad}
@@ -78,10 +79,11 @@ class TimesImage extends Component {
 
   lowResImage({ lowResSize, url }) {
     const { highResIsVisible, lowResIsLoaded } = this.state;
+    const { altText } = this.props;
     if (lowResSize && !highResIsVisible) {
       return (
         <StyledImage
-          alt={this.props.altText}
+          alt={altText}
           ref={this.getLowResImage}
           isLoaded={lowResIsLoaded}
           onLoad={this.handleLowResOnLoad}
@@ -95,7 +97,6 @@ class TimesImage extends Component {
   }
 
   render() {
-    console.log("PROPS", this.props)
     const {
       aspectRatio,
       disablePlaceholder,

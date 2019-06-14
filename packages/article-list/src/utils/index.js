@@ -1,3 +1,1 @@
-import { getImageUri, getHeadline } from "./index-base";
-
-export { getImageUri, getHeadline };
+export { getImageUri, getHeadline, getAltText } from "./index-base";

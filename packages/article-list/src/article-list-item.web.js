@@ -42,7 +42,7 @@ const ArticleListItem = props => {
   } = article || {};
 
   const imageUri = getImageUri(article);
-  const imageAltText = getAltText(article)
+  const imageAltText = getAltText(article);
 
   if (isLoading) {
     return (

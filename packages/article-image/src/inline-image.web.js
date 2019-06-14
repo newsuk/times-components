@@ -22,7 +22,6 @@ const renderCaption = (display, caption, credits) => {
 };
 
 const InlineImage = ({ imageOptions, captionOptions }) => {
-  console.log("CAPTION", caption)
   const { display, highResSize, lowResSize, ratio, uri } = imageOptions;
   const { caption, credits } = captionOptions;
 
