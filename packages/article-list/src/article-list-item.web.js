@@ -9,7 +9,7 @@ import Link from "@times-components/link";
 import { Animations, colours } from "@times-components/styleguide";
 import articleListItemTrackingEvents from "./article-list-item-tracking-events";
 import { propTypes, defaultProps } from "./article-list-item-prop-types";
-import { getImageUri, getHeadline } from "./utils";
+import { getAltText, getImageUri, getHeadline } from "./utils";
 import {
   ListItemWrapper,
   ListItemLongText,
@@ -42,6 +42,8 @@ const ArticleListItem = props => {
   } = article || {};
 
   const imageUri = getImageUri(article);
+  const imageAltText = getAltText(article)
+
   if (isLoading) {
     return (
       <ListItemWrapper>
@@ -113,6 +115,7 @@ const ArticleListItem = props => {
                 highResSize={highResSize}
                 imageContainerClass="articleListImage"
                 imageRatio={imageRatio}
+                imageAltText={imageAltText}
                 imageUri={imageUri}
                 isLoading={isLoading}
                 lowResSize={lowResSize}

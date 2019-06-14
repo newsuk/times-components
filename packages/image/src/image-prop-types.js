@@ -3,9 +3,9 @@ import { Image } from "react-native";
 
 export const propTypes = {
   ...Image.PropTypes,
+  altText: PropTypes.string,
   aspectRatio: PropTypes.number,
   borderRadius: PropTypes.number,
-  caption: PropTypes.string,
   disablePlaceholder: PropTypes.bool,
   fadeImageIn: PropTypes.bool,
   highResSize: PropTypes.number,

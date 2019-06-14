@@ -23,6 +23,7 @@ class CardContent extends Component {
       contentContainerClass,
       fadeImageIn,
       highResSize,
+      imageAltText,
       imageContainerClass,
       imageRatio,
       imageStyle,
@@ -46,6 +47,7 @@ class CardContent extends Component {
           ]}
         >
           <Image
+            altText={imageAltText}
             aspectRatio={imageRatio}
             fadeImageIn={fadeImageIn}
             highResSize={highResSize}

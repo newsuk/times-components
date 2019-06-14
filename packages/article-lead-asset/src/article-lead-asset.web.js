@@ -44,7 +44,7 @@ const ArticleLeadAsset = ({
     />
   ) : (
     <Image
-      caption={caption && caption.text}
+      altText={caption && caption.text}
       aspectRatio={getRatio(aspectRatio)}
       highResSize={width}
       lowResSize={100}
