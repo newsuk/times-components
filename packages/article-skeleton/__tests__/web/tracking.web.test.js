@@ -49,11 +49,11 @@ it("analytics when rendering a shared Article page with metered access", () => {
 });
 
 it("getRegistrationType helper function", () => {
-  expect(getRegistrationType(global.nuk.user)).toEqual("logged out");
+  expect(getRegistrationType()).toEqual("logged out");
 });
 
 it("getSharedStatus helper function", () => {
-  expect(getSharedStatus(global.nuk.user)).toEqual("no");
+  expect(getSharedStatus()).toEqual("no");
 });
 
 shared();

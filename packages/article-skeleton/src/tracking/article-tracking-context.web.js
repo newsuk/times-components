@@ -18,8 +18,8 @@ export default Component =>
       referralUrl,
       section: pageSection || get(data, "section", ""),
       template: get(data, "template", "Default"),
-      registrationType: getRegistrationType(window.nuk.user),
-      shared: getSharedStatus(window.nuk.user)
+      registrationType: getRegistrationType(),
+      shared: getSharedStatus()
     }),
     trackingObjectName: "Article"
   });
