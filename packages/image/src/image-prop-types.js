@@ -5,6 +5,7 @@ export const propTypes = {
   ...Image.PropTypes,
   aspectRatio: PropTypes.number,
   borderRadius: PropTypes.number,
+  caption: PropTypes.string,
   disablePlaceholder: PropTypes.bool,
   fadeImageIn: PropTypes.bool,
   highResSize: PropTypes.number,

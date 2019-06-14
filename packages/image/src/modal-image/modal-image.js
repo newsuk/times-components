@@ -55,7 +55,11 @@ class ModalImage extends Component {
 
   render() {
     const { highResSize, index, onImagePress } = this.props;
+<<<<<<< HEAD
 
+=======
+    console.log("CAPTION", this.props.caption)
+>>>>>>> Begin to pass caption through as props
     if (onImagePress) {
       return (
         <Button onPress={() => onImagePress(index)}>

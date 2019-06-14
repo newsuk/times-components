@@ -95,6 +95,7 @@ class TimesImage extends Component {
   }
 
   render() {
+    console.log("PROPS", this.props)
     const {
       aspectRatio,
       disablePlaceholder,
