@@ -62,7 +62,7 @@ class TimesImage extends Component {
     if (!lowResSize || highResSize) {
       return (
         <StyledImage
-          alt=""
+          alt={this.props.caption}
           ref={this.getHighResImage}
           isLoaded={highResIsLoaded}
           onLoad={this.handleHighResOnLoad}
@@ -81,8 +81,12 @@ class TimesImage extends Component {
     if (lowResSize && !highResIsVisible) {
       return (
         <StyledImage
+<<<<<<< HEAD
           alt=""
           ref={this.getLowResImage}
+=======
+          alt={this.props.caption}
+>>>>>>> Add props to lead image
           isLoaded={lowResIsLoaded}
           onLoad={this.handleLowResOnLoad}
           src={appendToURL(url, "resize", lowResSize)}
