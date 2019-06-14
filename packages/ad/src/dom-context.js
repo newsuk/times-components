@@ -123,7 +123,7 @@ class DOMContext extends PureComponent {
         }}
       >
         <WebView
-          androidHardwareAccelerationDisabled
+          originWhitelist={["http://.*", "https://.*"]}
           onMessage={this.handleMessageEvent}
           onNavigationStateChange={this.handleNavigationStateChange}
           ref={ref => {
