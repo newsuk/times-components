@@ -39,7 +39,7 @@ function getMagazineSlices(): Array<ArticleSlice> {
 
 function getPuzzleSlices(count: number): Array<PuzzleSectionSlice> {
   return new Array(count)
-    .fill(0)
+    .map(() => 0)
     .map((_, index) => ({ ...mockPuzzleSlice(), id: `${index}` }));
 }
 

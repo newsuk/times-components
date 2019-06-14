@@ -4,7 +4,7 @@ import MockArticle from "./mock-article";
 
 const getAuthorArticles = (count: number): AuthorArticles => ({
   count,
-  list: new Array(count).fill(new MockArticle().get())
+  list: new Array(count).map(() => new MockArticle().get())
 });
 
 class MockAuthor {

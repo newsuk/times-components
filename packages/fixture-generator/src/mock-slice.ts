@@ -102,11 +102,11 @@ function getDailyRegisterItem(): DailyUniversalRegisterItem {
 }
 
 function getTiles(count: number): Array<Tile> {
-  return new Array(count).fill(0).map(() => new MockTile().get());
+  return new Array(count).map(() => 0).map(() => new MockTile().get());
 }
 
 function getDailyRegister(count: number): Array<DailyUniversalRegisterItem> {
-  return new Array(count).fill(0).map(() => getDailyRegisterItem());
+  return new Array(count).map(() => 0).map(() => getDailyRegisterItem());
 }
 
 function mockLeadOneAndFourSlice(): LeadOneAndFourSliceWithName {

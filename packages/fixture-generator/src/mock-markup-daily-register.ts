@@ -293,7 +293,7 @@ const generateDailyRegisterMarkup = (
   iterations: number
 ) => {
   new Array(iterations)
-    .fill(0)
+    .map(() => 0)
     .forEach(() => array.push(...markupTypes[markupType].content));
   return array;
 };

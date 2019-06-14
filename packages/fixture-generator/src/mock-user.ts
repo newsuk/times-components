@@ -9,7 +9,7 @@ function getBookmarksObject(): PageOfBookmarks {
 }
 
 function getBookmarks(total: number): Bookmark[] {
-  return new Array(total).fill(0).map(
+  return new Array(total).map(() => 0).map(
     (): Bookmark => ({
       id: UUID()
     })

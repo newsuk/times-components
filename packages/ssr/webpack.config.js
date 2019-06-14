@@ -25,7 +25,7 @@ const babelConfig = {
         "@babel/plugin-proposal-object-rest-spread",
         "@babel/plugin-transform-react-display-name"
       ],
-      presets: ["module:metro-react-native-babel-preset"]
+      presets: ["@babel/preset-env", "module:metro-react-native-babel-preset"]
     }
   }
 };
