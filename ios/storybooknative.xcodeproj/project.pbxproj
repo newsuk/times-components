@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -35,16 +36,23 @@
 		2D16E6881FA4F8E400B85C8A /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E6891FA4F8E400B85C8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* storybooknativeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* storybooknativeTests.m */; };
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
+		515F7D171F0E7BA000966DF3 /* GillSansMTStd-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 515F7D131F0E7BA000966DF3 /* GillSansMTStd-Medium.ttf */; };
+		515F7D191F0E7BA000966DF3 /* TimesDigitalW04-RegularSC.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 515F7D151F0E7BA000966DF3 /* TimesDigitalW04-RegularSC.ttf */; };
+		515F7D1A1F0E7BA000966DF3 /* TimesModern-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 515F7D161F0E7BA000966DF3 /* TimesModern-Bold.ttf */; };
 		81EFDD092285D35400E73FD1 /* AuthorProfileEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = 81EFDCD72285D35400E73FD1 /* AuthorProfileEvents.m */; };
 		81EFDD0A2285D35400E73FD1 /* ReactConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 81EFDD052285D35400E73FD1 /* ReactConfig.m */; };
 		81EFDD0B2285D35400E73FD1 /* TopicEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = 81EFDD062285D35400E73FD1 /* TopicEvents.m */; };
 		81EFDD0C2285D35400E73FD1 /* ArticleEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = 81EFDD072285D35400E73FD1 /* ArticleEvents.m */; };
 		81EFDD0D2285D35400E73FD1 /* ReactAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = 81EFDD082285D35400E73FD1 /* ReactAnalytics.m */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		8BB02F10EF4B411F89A4D887 /* libRNCWebView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6749B6A76504FECB637F739 /* libRNCWebView.a */; };
+		A811797A1F72B75A00BEE77B /* TimesModern-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A81179791F72B75A00BEE77B /* TimesModern-Regular.ttf */; };
+		A811797B1F72B75D00BEE77B /* TimesDigitalW04_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A811795C1F72B6D600BEE77B /* TimesDigitalW04_bold.ttf */; };
+		A811797C1F72B75F00BEE77B /* TimesDigitalW04_italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A811795D1F72B6D600BEE77B /* TimesDigitalW04_italic.ttf */; };
+		A811797D1F72B76200BEE77B /* TimesDigitalW04.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A811795E1F72B6D600BEE77B /* TimesDigitalW04.ttf */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
 		ED2971652150620600B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2971642150620600B7C4FE /* JavaScriptCore.framework */; };
-		8BB02F10EF4B411F89A4D887 /* libRNCWebView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6749B6A76504FECB637F739 /* libRNCWebView.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -272,6 +280,13 @@
 			remoteGlobalIDString = 2D2A28201D9B03D100D4039D;
 			remoteInfo = "RCTAnimation-tvOS";
 		};
+		6D574A4C22B2974E00604B78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 646608590E26457C903D7348 /* RNCWebView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RNCWebView;
+		};
 		78C398B81ACF4ADC00677621 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */;
@@ -346,7 +361,11 @@
 		2D02E47B1E0B4A5D006451C7 /* storybooknative-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "storybooknative-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* storybooknative-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "storybooknative-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		515F7D131F0E7BA000966DF3 /* GillSansMTStd-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "GillSansMTStd-Medium.ttf"; path = "../dist/public/fonts/GillSansMTStd-Medium.ttf"; sourceTree = "<group>"; };
+		515F7D151F0E7BA000966DF3 /* TimesDigitalW04-RegularSC.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TimesDigitalW04-RegularSC.ttf"; path = "../dist/public/fonts/TimesDigitalW04-RegularSC.ttf"; sourceTree = "<group>"; };
+		515F7D161F0E7BA000966DF3 /* TimesModern-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TimesModern-Bold.ttf"; path = "../dist/public/fonts/TimesModern-Bold.ttf"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
+		646608590E26457C903D7348 /* RNCWebView.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNCWebView.xcodeproj; path = "../node_modules/react-native-webview/ios/RNCWebView.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		81EFDCD72285D35400E73FD1 /* AuthorProfileEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AuthorProfileEvents.m; path = storybooknative/AuthorProfileEvents.m; sourceTree = "<group>"; };
 		81EFDD052285D35400E73FD1 /* ReactConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReactConfig.m; path = storybooknative/ReactConfig.m; sourceTree = "<group>"; };
@@ -354,11 +373,14 @@
 		81EFDD072285D35400E73FD1 /* ArticleEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArticleEvents.m; path = storybooknative/ArticleEvents.m; sourceTree = "<group>"; };
 		81EFDD082285D35400E73FD1 /* ReactAnalytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReactAnalytics.m; path = storybooknative/ReactAnalytics.m; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		A811795C1F72B6D600BEE77B /* TimesDigitalW04_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = TimesDigitalW04_bold.ttf; path = ../dist/public/fonts/TimesDigitalW04_bold.ttf; sourceTree = "<group>"; };
+		A811795D1F72B6D600BEE77B /* TimesDigitalW04_italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = TimesDigitalW04_italic.ttf; path = ../dist/public/fonts/TimesDigitalW04_italic.ttf; sourceTree = "<group>"; };
+		A811795E1F72B6D600BEE77B /* TimesDigitalW04.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = TimesDigitalW04.ttf; path = ../dist/public/fonts/TimesDigitalW04.ttf; sourceTree = "<group>"; };
+		A81179791F72B75A00BEE77B /* TimesModern-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "TimesModern-Regular.ttf"; path = "../dist/public/fonts/TimesModern-Regular.ttf"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
+		C6749B6A76504FECB637F739 /* libRNCWebView.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNCWebView.a; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		646608590E26457C903D7348 /* RNCWebView.xcodeproj */ = {isa = PBXFileReference; name = "RNCWebView.xcodeproj"; path = "../node_modules/react-native-webview/ios/RNCWebView.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
-		C6749B6A76504FECB637F739 /* libRNCWebView.a */ = {isa = PBXFileReference; name = "libRNCWebView.a"; path = "libRNCWebView.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -558,6 +580,36 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		6D574A2322B2974C00604B78 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				C6749B6A76504FECB637F739 /* libRNCWebView.a */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		6D574A4922B2974E00604B78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D574A4D22B2974E00604B78 /* libRNCWebView.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D97D0B322B292A400CF9422 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A811795C1F72B6D600BEE77B /* TimesDigitalW04_bold.ttf */,
+				A811795D1F72B6D600BEE77B /* TimesDigitalW04_italic.ttf */,
+				A81179791F72B75A00BEE77B /* TimesModern-Regular.ttf */,
+				515F7D161F0E7BA000966DF3 /* TimesModern-Bold.ttf */,
+				515F7D151F0E7BA000966DF3 /* TimesDigitalW04-RegularSC.ttf */,
+				A811795E1F72B6D600BEE77B /* TimesDigitalW04.ttf */,
+				515F7D131F0E7BA000966DF3 /* GillSansMTStd-Medium.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		78C398B11ACF4ADC00677621 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -604,6 +656,8 @@
 				00E356EF1AD99517003FC87E /* storybooknativeTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				6D97D0B322B292A400CF9422 /* Fonts */,
+				6D574A2322B2974C00604B78 /* Recovered References */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -788,6 +842,10 @@
 				{
 					ProductGroup = 146834001AC3E56700842450 /* Products */;
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+				},
+				{
+					ProductGroup = 6D574A4922B2974E00604B78 /* Products */;
+					ProjectRef = 646608590E26457C903D7348 /* RNCWebView.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1011,6 +1069,13 @@
 			remoteRef = 5E9157341DD0AC6500FF2AA8 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		6D574A4D22B2974E00604B78 /* libRNCWebView.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNCWebView.a;
+			remoteRef = 6D574A4C22B2974E00604B78 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		78C398B91ACF4ADC00677621 /* libRCTLinking.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1075,6 +1140,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				A811797B1F72B75D00BEE77B /* TimesDigitalW04_bold.ttf in Resources */,
+				A811797C1F72B75F00BEE77B /* TimesDigitalW04_italic.ttf in Resources */,
+				A811797A1F72B75A00BEE77B /* TimesModern-Regular.ttf in Resources */,
+				515F7D1A1F0E7BA000966DF3 /* TimesModern-Bold.ttf in Resources */,
+				515F7D191F0E7BA000966DF3 /* TimesDigitalW04-RegularSC.ttf in Resources */,
+				A811797D1F72B76200BEE77B /* TimesDigitalW04.ttf in Resources */,
+				515F7D171F0E7BA000966DF3 /* GillSansMTStd-Medium.ttf in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1203,9 +1275,17 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-webview/ios",
+				);
 				INFOPLIST_FILE = storybooknativeTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -1213,14 +1293,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/storybooknative.app/storybooknative";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../node_modules/react-native-webview/ios",
-				);
 			};
 			name = Debug;
 		};
@@ -1229,9 +1301,17 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-webview/ios",
+				);
 				INFOPLIST_FILE = storybooknativeTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -1239,14 +1319,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/storybooknative.app/storybooknative";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../node_modules/react-native-webview/ios",
-				);
 			};
 			name = Release;
 		};
@@ -1256,6 +1328,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-webview/ios",
+				);
 				INFOPLIST_FILE = storybooknative/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1266,10 +1342,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = storybooknative;
 				VERSIONING_SYSTEM = "apple-generic";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../node_modules/react-native-webview/ios",
-				);
 			};
 			name = Debug;
 		};
@@ -1278,6 +1350,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-webview/ios",
+				);
 				INFOPLIST_FILE = storybooknative/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1288,10 +1364,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = storybooknative;
 				VERSIONING_SYSTEM = "apple-generic";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../node_modules/react-native-webview/ios",
-				);
 			};
 			name = Release;
 		};
@@ -1307,8 +1379,16 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-webview/ios",
+				);
 				INFOPLIST_FILE = "storybooknative-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -1318,14 +1398,6 @@
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../node_modules/react-native-webview/ios",
-				);
 			};
 			name = Debug;
 		};
@@ -1341,8 +1413,16 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-webview/ios",
+				);
 				INFOPLIST_FILE = "storybooknative-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -1352,14 +1432,6 @@
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../node_modules/react-native-webview/ios",
-				);
 			};
 			name = Release;
 		};
@@ -1374,8 +1446,16 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-webview/ios",
+				);
 				INFOPLIST_FILE = "storybooknative-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -1385,14 +1465,6 @@
 				SDKROOT = appletvos;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/storybooknative-tvOS.app/storybooknative-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../node_modules/react-native-webview/ios",
-				);
 			};
 			name = Debug;
 		};
@@ -1407,8 +1479,16 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../node_modules/react-native-webview/ios",
+				);
 				INFOPLIST_FILE = "storybooknative-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-lc++",
@@ -1418,14 +1498,6 @@
 				SDKROOT = appletvos;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/storybooknative-tvOS.app/storybooknative-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/../node_modules/react-native-webview/ios",
-				);
 			};
 			name = Release;
 		};
