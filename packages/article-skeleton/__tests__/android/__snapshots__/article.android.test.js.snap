@@ -41,12 +41,12 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
               <Text
                 selectable={true}
               >
-                his being Black History Month, 
+                his being Black History 
               </Text>
               <Text
                 selectable={true}
               >
-                last week
+                Month, last week
               </Text>
             </View>
           </View>
@@ -317,22 +317,22 @@ exports[`3. an article with a nested markup in first paragraph displays a drop c
               <Text
                 selectable={true}
               >
-                 Some years ago I made 
+                 Some years ago I 
               </Text>
               <Text
                 selectable={true}
               >
-                the decision to take as a 
+                made the decision 
               </Text>
               <Text
                 selectable={true}
               >
-                friend a woman who is very 
+                to take as a friend 
               </Text>
               <Text
                 selectable={true}
               >
-                opinionated.
+                a woman who is very opinionated.
               </Text>
             </View>
           </View>

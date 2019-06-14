@@ -22,6 +22,7 @@ import DropCap from "@times-components/article-paragraph/src/drop-cap";
 import ArticleLink from "./article-link";
 import InsetCaption from "./inset-caption";
 import styleFactory from "../styles/article-body";
+import { getDropCap, getDropCapValue } from "../dropcap-util-common";
 
 export default ({
   content: data,
@@ -83,29 +84,12 @@ export default ({
         }
       }
       const height = lineHeight * 3 * fontScale;
-      let text = new Text.Text({
-        font: fonts[dropCapFont],
-        lineHeight: height,
-        markup: [new Body(value)],
-        size: height
-      });
-      if (children.length > 0) {
-        text = children[0];
-        if (text.markup[0].style) {
-          text.markup[0].style.size = height;
-        }
-        text.font = fonts[dropCapFont];
-        text.lineHeight = height;
-        text.size = height;
-        text.layout();
-        value = text.words[0].idealSpans[0];
-        if (value.href) {
-          value = value.href(value);
-        } else {
-          value = value.text;
-        }
-      }
-      const capWidth = text.characters[0].getWidth() + 10 * fontScale;
+
+      const cap = getDropCap(children, fonts[dropCapFont], height, [
+        new Body(value)
+      ]);
+      const capWidth = (cap.measuredWidth + 10) * fontScale;
+
       return {
         element: new Layout.InlineBlock({
           getComponent() {
@@ -114,7 +98,7 @@ export default ({
                 {({ theme: { sectionColour = colours.section.default } }) => (
                   <DropCap
                     colour={sectionColour}
-                    dropCap={value}
+                    dropCap={getDropCapValue(cap)}
                     font={dropCapFont}
                     scale={scale}
                   />
