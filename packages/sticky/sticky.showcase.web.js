@@ -8,9 +8,14 @@ const GlobalStyles = createGlobalStyle`
 .sticky-story.with-fixed {
   padding-top: 30px;
 }
+
 .bar {
   height: 30px;
   background: red;
+}
+
+.bar:not(.fixed) {
+  margin: 30px 0;
 }
 
 .container, .sticky-content {
@@ -50,6 +55,12 @@ export default {
           <GlobalStyles/>
           <div className="container">
             <h2>Scroll down…</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet
+              assumenda autem dolorem dolores eligendi error ipsam itaque
+              laborum odit officia perspiciatis praesentium provident quaerat
+              qui reiciendis, sunt vel vitae?
+            </p>
             <Sticky className="bar">
               <div className="sticky-content">Content</div>
             </Sticky>
@@ -144,6 +155,12 @@ export default {
           <div className="bar fixed" />
           <StickyProvider className="container">
             <h2>Scroll down…</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet
+              assumenda autem dolorem dolores eligendi error ipsam itaque
+              laborum odit officia perspiciatis praesentium provident quaerat
+              qui reiciendis, sunt vel vitae?
+            </p>
             <Sticky className="bar">
               <div className="sticky-content">Content</div>
             </Sticky>
@@ -238,6 +255,12 @@ export default {
           <div className="bar fixed" />
           <StickyProvider className="container">
             <h2>Scroll down…</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet
+              assumenda autem dolorem dolores eligendi error ipsam itaque
+              laborum odit officia perspiciatis praesentium provident quaerat
+              qui reiciendis, sunt vel vitae?
+            </p>
             <Sticky className="bar" wide>
               <div className="sticky-content">Content</div>
             </Sticky>
@@ -333,6 +356,12 @@ export default {
             <div className="bar fixed"/>
             <StickyProvider className="container">
               <h2>Scroll down…</h2>
+              <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet
+              assumenda autem dolorem dolores eligendi error ipsam itaque
+              laborum odit officia perspiciatis praesentium provident quaerat
+              qui reiciendis, sunt vel vitae?
+            </p>
               <Sticky className="bar" wide shouldBeSticky={() => window.matchMedia(`(max-width: ${breakpoints.wide}px)`).matches}>
                 <div className="sticky-content">Content</div>
               </Sticky>

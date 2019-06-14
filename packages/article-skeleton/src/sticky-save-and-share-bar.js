@@ -8,7 +8,7 @@ import {
 } from "./styles/responsive";
 
 function StickySaveAndShareBar(props) {
-  const mql = window.matchMedia(`(max-width: ${breakpoints.wide}px)`);
+  const mql = window.matchMedia(`(max-width: ${breakpoints.huge}px)`);
 
   return (
     <Sticky Component={SaveShareContainer} wide shouldBeSticky={() => mql.matches}>

@@ -89,8 +89,6 @@ export const SaveShareContainer = styled.div`
   }
 
   @media (min-width: ${breakpoints.huge + 1}px) {
-    position: static !important;
-
     /* stylelint-disable */
     ${SaveShareInnerContainer} {
       ${NON_STICKY_CSS};

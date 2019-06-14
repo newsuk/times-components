@@ -4,16 +4,8 @@
 import React, { Component } from "react";
 import { createPortal } from "react-dom";
 import PropTypes from "prop-types";
-import { createGlobalStyle } from "styled-components";
 import { getTop, getTopFromBody } from "./util";
 import { withStickyContext, StickyProvider } from "./context";
-
-const GlobalStickyStyles = createGlobalStyle`
-  .tc-sticky-container {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-`;
 
 const isOutOfView = (node, top) => getTop(node) <= top + 1;
 
@@ -22,14 +14,16 @@ class UnwrappedSticky extends Component {
     super(props);
 
     this.updateSticky = this.updateSticky.bind(this);
+    this.syncPlaceholder = this.syncPlaceholder.bind(this);
     this.createContainerRef = this.createContainerRef.bind(this);
     this.createPlaceholderRef = this.createPlaceholderRef.bind(this);
     this.isSticky = false;
   }
 
   componentDidMount() {
-    window.addEventListener("scroll", this.updateSticky);
+    window.addEventListener("resize", this.syncPlaceholder);
     window.addEventListener("resize", this.updateSticky);
+    window.addEventListener("scroll", this.updateSticky);
 
     this.updateSticky();
     this.syncPlaceholder();
@@ -41,8 +35,9 @@ class UnwrappedSticky extends Component {
   }
 
   componentWillUnmount() {
-    window.removeEventListener("scroll", this.updateSticky);
+    window.removeEventListener("resize", this.syncPlaceholder);
     window.removeEventListener("resize", this.updateSticky);
+    window.removeEventListener("scroll", this.updateSticky);
   }
 
   setSticky(container, shouldBeSticky) {
@@ -87,7 +82,15 @@ class UnwrappedSticky extends Component {
     const { style } = container;
 
     style.width = isSticky && wide ? "100%" : `${placeholder.offsetWidth}px`;
-    placeholder.style.height = `${container.offsetHeight}px`;
+
+    const containerStyles = window.getComputedStyle(container);
+    const { marginTop } = containerStyles;
+
+    Object.assign(placeholder.style, {
+      marginTop,
+      marginBottom: containerStyles.marginBottom,
+      height: `${container.offsetHeight}px`
+    });
 
     if (isSticky) {
       style.top = `${stickyContext.top}px`;
@@ -99,6 +102,8 @@ class UnwrappedSticky extends Component {
       style.zIndex = "initial";
     }
 
+    style.transform = `translate(-50%, -${marginTop})`;
+    style.left = "50%";
   }
 
   createContainerRef(container) {
@@ -126,8 +131,7 @@ class UnwrappedSticky extends Component {
     const portalTarget = stickyContext.node ? stickyContext.node.parentNode : document.body;
     return (
       <>
-        <GlobalStickyStyles />
-        <Component ref={this.createPlaceholderRef} className={`${className} tc-sticky-placeholder`} style={style} />
+        <div ref={this.createPlaceholderRef} className="tc-sticky-placeholder"  />
         {
           createPortal(
             <Component
