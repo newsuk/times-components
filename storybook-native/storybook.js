@@ -11,6 +11,7 @@ import {
   WhiteBgColorDecorator
 } from "@times-components/storybook";
 import { loadStories } from "./story-loader";
+import "./rn-addons";
 
 if (Platform.OS === "ios") {
   addDecorator(BarSpacingDecorator);

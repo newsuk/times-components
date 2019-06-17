@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.86](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.3.85...@times-components/article-label@2.3.86) (2019-06-17)
+
+
+### Bug Fixes
+
+* storybook fixes and knobs for native added ([#2035](https://github.com/newsuk/times-components/issues/2035)) ([09b1fc9](https://github.com/newsuk/times-components/commit/09b1fc9))
+
+
+
+
+
 ## [2.3.85](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.3.84...@times-components/article-label@2.3.85) (2019-06-17)
 
 **Note:** Version bump only for package @times-components/article-label
