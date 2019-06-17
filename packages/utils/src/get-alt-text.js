@@ -1,6 +1,6 @@
-import get from "lodash.get";
-
-export default item =>
-  get(item, "leadAsset.title", null) ||
-  get(item, "leadAsset.caption", "") ||
-  "";
+export default asset => {
+  if (asset) {
+    return asset.title || asset.caption || ''
+  }
+  return ''
+}
