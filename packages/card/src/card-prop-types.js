@@ -9,7 +9,7 @@ export const cardPropTypes = {
   children: PropTypes.node,
   fadeImageIn: PropTypes.bool,
   highResSize: PropTypes.number,
-  imgAltText: PropTypes.string,
+  imageAccessibilityLabel: PropTypes.string,
   imageStyle: ViewPropTypesStyle,
   imageUri: PropTypes.string,
   isLoading: PropTypes.bool,

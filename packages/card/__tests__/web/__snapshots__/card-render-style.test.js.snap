@@ -101,6 +101,7 @@ exports[`card with default layout 1`] = `
     className="css-view-1dbjc4n r-flex-13awgt0 r-marginBottom-15d164r r-minWidth-3e7lpq S2"
   >
     <TimesImage
+      accessibilityLabel=""
       aspectRatio={0.6666666666666666}
       disablePlaceholder={false}
       fadeImageIn={false}

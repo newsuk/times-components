@@ -50,6 +50,7 @@ exports[`1. modal image 1`] = `
           >
             <View>
               <Image
+                accessibilityLabel=""
                 caption={<MockCaption />}
                 fadeDuration={0}
                 fadeImageIn={false}
@@ -79,6 +80,7 @@ exports[`1. modal image 1`] = `
             >
               <View>
                 <Image
+                  accessibilityLabel=""
                   caption={<MockCaption />}
                   fadeDuration={0}
                   fadeImageIn={false}
@@ -112,6 +114,7 @@ exports[`1. modal image 1`] = `
     >
       <View>
         <Image
+          accessibilityLabel=""
           caption={<MockCaption />}
           fadeDuration={0}
           fadeImageIn={false}
@@ -209,6 +212,7 @@ exports[`2. modal image with no caption 1`] = `
           >
             <View>
               <Image
+                accessibilityLabel=""
                 caption={null}
                 fadeDuration={0}
                 fadeImageIn={false}
@@ -249,6 +253,7 @@ exports[`2. modal image with no caption 1`] = `
     >
       <View>
         <Image
+          accessibilityLabel=""
           caption={null}
           fadeDuration={0}
           fadeImageIn={false}
@@ -330,6 +335,7 @@ exports[`3. modal image with custom highressize 1`] = `
           >
             <View>
               <Image
+                accessibilityLabel=""
                 caption={<MockCaption />}
                 fadeDuration={0}
                 fadeImageIn={false}
@@ -359,6 +365,7 @@ exports[`3. modal image with custom highressize 1`] = `
             >
               <View>
                 <Image
+                  accessibilityLabel=""
                   caption={<MockCaption />}
                   fadeDuration={0}
                   fadeImageIn={false}
@@ -392,6 +399,7 @@ exports[`3. modal image with custom highressize 1`] = `
     >
       <View>
         <Image
+          accessibilityLabel=""
           caption={<MockCaption />}
           fadeDuration={0}
           fadeImageIn={false}
@@ -478,6 +486,7 @@ exports[`9. hides elements when tapping on the image 1`] = `
           >
             <View>
               <Image
+                accessibilityLabel=""
                 caption={<MockCaption />}
                 fadeDuration={0}
                 fadeImageIn={false}
@@ -515,6 +524,7 @@ exports[`9. hides elements when tapping on the image 1`] = `
     >
       <View>
         <Image
+          accessibilityLabel=""
           caption={<MockCaption />}
           fadeDuration={0}
           fadeImageIn={false}
@@ -596,6 +606,7 @@ exports[`10. re-shows elements when tapping on the image a second time 1`] = `
           >
             <View>
               <Image
+                accessibilityLabel=""
                 caption={<MockCaption />}
                 fadeDuration={0}
                 fadeImageIn={false}
@@ -642,6 +653,7 @@ exports[`10. re-shows elements when tapping on the image a second time 1`] = `
     >
       <View>
         <Image
+          accessibilityLabel=""
           caption={<MockCaption />}
           fadeDuration={0}
           fadeImageIn={false}

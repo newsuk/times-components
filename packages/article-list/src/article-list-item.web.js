@@ -44,7 +44,7 @@ const ArticleListItem = props => {
   } = article || {};
 
   const imageUri = getImageUri(article);
-  const imageAltText = leadAsset.caption || "";
+  const imageAccessibilityLabel = leadAsset.caption || "";
 
   if (isLoading) {
     return (
@@ -117,7 +117,7 @@ const ArticleListItem = props => {
                 highResSize={highResSize}
                 imageContainerClass="articleListImage"
                 imageRatio={imageRatio}
-                imageAltText={imageAltText}
+                imageAccessibilityLabel={imageAccessibilityLabel}
                 imageUri={imageUri}
                 isLoading={isLoading}
                 lowResSize={lowResSize}
