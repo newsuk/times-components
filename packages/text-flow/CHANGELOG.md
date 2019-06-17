@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.1.0](https://github.com/newsuk/times-components/compare/@times-components/text-flow@0.0.12...@times-components/text-flow@0.1.0) (2019-06-17)
+
+
+### Features
+
+* allow dropcaps that contain markup ([#2013](https://github.com/newsuk/times-components/issues/2013)) ([ffd25d1](https://github.com/newsuk/times-components/commit/ffd25d1))
+
+
+
+
+
 ## [0.0.12](https://github.com/newsuk/times-components/compare/@times-components/text-flow@0.0.11...@times-components/text-flow@0.0.12) (2019-06-13)
 
 **Note:** Version bump only for package @times-components/text-flow
