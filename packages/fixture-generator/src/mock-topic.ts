@@ -24,6 +24,9 @@ class MockTopic {
           hasPreviousPage: false
         },
         totalCount: 0
+      },
+      articleConnection: {
+        nodes: []
       }
     };
   }

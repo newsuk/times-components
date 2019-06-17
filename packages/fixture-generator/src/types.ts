@@ -1,10 +1,4 @@
-export interface PaginateArgs {
-  cursor?: Cursor | null;
-
-  first?: number | null;
-
-  desc?: boolean | null;
-}
+export type Maybe<T> = T | null;
 
 export interface DateFilter {
   from: DateTime;
@@ -23,45 +17,47 @@ export interface BookmarkUnsaveInput {
 }
 
 export interface ArticleInput {
-  leadAsset?: MediaInput | null;
+  leadAsset?: Maybe<MediaInput>;
 
-  listingAsset?: MediaInput | null;
+  listingAsset?: Maybe<MediaInput>;
 
   authors: Slug[];
 
-  bylines?: (BylineInput | null)[] | null;
+  byline: Markup;
 
-  backgroundColour?: ColourInput | null;
+  bylines?: Maybe<(Maybe<BylineInput>)[]>;
+
+  backgroundColour?: Maybe<ColourInput>;
 
   dropcapsDisabled: boolean;
 
   expirableFlags: ExpirableFlagInput[];
 
-  headline?: string | null;
+  headline?: Maybe<string>;
 
-  shortHeadline?: string | null;
+  shortHeadline?: Maybe<string>;
 
   id: Uuid;
 
-  label?: string | null;
+  label?: Maybe<string>;
 
   commentsEnabled: boolean;
 
-  commentsPreModerated?: boolean | null;
+  commentsPreModerated?: Maybe<boolean>;
 
   commercialTags: string[];
 
-  commercialSectionTags?: string[] | null;
+  commercialSectionTags?: Maybe<string[]>;
 
-  section?: SectionName | null;
+  section?: Maybe<SectionName>;
 
   publicationName: PublicationName;
 
   publishedTime: DateTime;
 
-  relatedArticleSlice?: ArticleSliceInput | null;
+  relatedArticleSlice?: Maybe<ArticleSliceInput>;
 
-  textColour?: ColourInput | null;
+  textColour?: Maybe<ColourInput>;
 
   savingEnabled: boolean;
 
@@ -69,7 +65,9 @@ export interface ArticleInput {
 
   slug: Slug;
 
-  standfirst?: string | null;
+  standfirst?: Maybe<string>;
+
+  strapline?: Maybe<string>;
 
   updatedTime: DateTime;
 
@@ -77,13 +75,13 @@ export interface ArticleInput {
 
   content: ContentFragmentInput[];
 
-  template?: TemplateType | null;
+  template?: Maybe<TemplateType>;
 }
 
 export interface MediaInput {
-  image?: ImageInput | null;
+  image?: Maybe<ImageInput>;
 
-  video?: VideoInput | null;
+  video?: Maybe<VideoInput>;
 }
 
 export interface ImageInput {
@@ -91,9 +89,9 @@ export interface ImageInput {
 
   title: string;
 
-  caption?: string | null;
+  caption?: Maybe<string>;
 
-  credits?: string | null;
+  credits?: Maybe<string>;
 
   crops: CropInput[];
 }
@@ -110,12 +108,18 @@ export interface CropInput {
   width: number;
 
   height: number;
+
+  sourceWidth?: Maybe<number>;
+
+  sourceHeight?: Maybe<number>;
 }
 
 export interface VideoInput {
   id: Uuid;
 
-  caption?: string | null;
+  caption?: Maybe<string>;
+
+  title?: Maybe<string>;
 
   brightcovePolicyKey: string;
 
@@ -130,14 +134,16 @@ export interface VideoInput {
   skySports: boolean;
 
   posterImage: ImageInput;
+
+  is360?: Maybe<boolean>;
 }
 
 export interface BylineInput {
   byline: Markup;
 
-  author?: Slug | null;
+  author?: Maybe<Slug>;
 
-  image?: ImageInput | null;
+  image?: Maybe<ImageInput>;
 }
 
 export interface ColourInput {
@@ -157,15 +163,15 @@ export interface RgbaInput {
 export interface ExpirableFlagInput {
   type: Flag;
   /** The number of seconds for which this flag applies following the publishedTime. Null would apply indefinitely. */
-  duration?: number | null;
+  duration?: Maybe<number>;
 }
 
 export interface ArticleSliceInput {
-  standardSlice?: StandardSliceInput | null;
+  standardSlice?: Maybe<StandardSliceInput>;
 
-  leadOneAndTwoSlice?: LeadOneAndTwoSliceInput | null;
+  leadOneAndTwoSlice?: Maybe<LeadOneAndTwoSliceInput>;
 
-  opinionOneAndTwoSlice?: OpinionOneAndTwoSliceInput | null;
+  opinionOneAndTwoSlice?: Maybe<OpinionOneAndTwoSliceInput>;
 }
 
 export interface StandardSliceInput {
@@ -175,13 +181,13 @@ export interface StandardSliceInput {
 export interface TileInput {
   articleId: Uuid;
 
-  headline?: string | null;
+  headline?: Maybe<string>;
 
-  leadAsset?: MediaInput | null;
+  leadAsset?: Maybe<MediaInput>;
 
-  strapline?: string | null;
+  strapline?: Maybe<string>;
 
-  teaser?: Markup | null;
+  teaser?: Maybe<Markup>;
 }
 
 export interface LeadOneAndTwoSliceInput {
@@ -201,13 +207,13 @@ export interface OpinionOneAndTwoSliceInput {
 }
 
 export interface ContentFragmentInput {
-  richText?: RichTextFragmentInput | null;
+  richText?: Maybe<RichTextFragmentInput>;
 
-  image?: ImageFragmentInput | null;
+  image?: Maybe<ImageFragmentInput>;
 
-  video?: VideoFragmentInput | null;
+  video?: Maybe<VideoFragmentInput>;
 
-  interactive?: InteractiveFragmentInput | null;
+  interactive?: Maybe<InteractiveFragmentInput>;
 }
 
 export interface RichTextFragmentInput {
@@ -221,7 +227,7 @@ export interface ImageFragmentInput {
 }
 
 export interface ContentFragmentMetadataInput {
-  display?: Display | null;
+  display?: Maybe<Display>;
 }
 
 export interface VideoFragmentInput {
@@ -239,7 +245,7 @@ export interface InteractiveFragmentInput {
 export interface InteractiveInput {
   id: Uuid;
 
-  caption?: string | null;
+  caption?: Maybe<string>;
 
   url: Url;
 
@@ -269,9 +275,9 @@ export interface AuthorCreateInput {
 
   biography: Markup;
   /** URL for the image of an author */
-  image?: Url | null;
+  image?: Maybe<Url>;
   /** Twitter handle for an author */
-  twitter?: string | null;
+  twitter?: Maybe<string>;
 
   hasLeadAssets: boolean;
 }
@@ -283,9 +289,9 @@ export interface AuthorUpdateInput {
 
   biography: Markup;
   /** URL for the image of an author */
-  image?: Url | null;
+  image?: Maybe<Url>;
   /** Twitter handle for an author */
-  twitter?: string | null;
+  twitter?: Maybe<string>;
 
   hasLeadAssets: boolean;
 }
@@ -305,13 +311,13 @@ export interface CommentTwoAndNotebookSliceInput {
 }
 
 export interface CostComplexity {
-  min?: number | null;
+  min?: number;
 
-  max?: number | null;
+  max?: Maybe<number>;
 }
 
 export interface CreateTagInput {
-  tagId?: string | null;
+  tagId?: Maybe<string>;
 
   name: string;
 
@@ -331,7 +337,7 @@ export interface DailyUniversalRegisterInput {
 export interface DailyUniversalRegisterItemInput {
   title: string;
 
-  byline?: Markup | null;
+  byline?: Maybe<Markup>;
 
   content: Markup;
 }
@@ -345,81 +351,91 @@ export interface EditionInput {
 
   publicationName: PublicationName;
 
+  region?: Maybe<Region>;
+
   publishedTime: DateTime;
 
   updatedTime: DateTime;
 
-  sections?: (SectionInput | null)[] | null;
+  sections?: Maybe<(Maybe<SectionInput>)[]>;
 }
 
 export interface SectionInput {
-  standardSection?: StandardSectionInput | null;
+  standardSection?: Maybe<StandardSectionInput>;
 
-  puzzleSection?: PuzzleSectionInput | null;
+  puzzleSection?: Maybe<PuzzleSectionInput>;
 
-  magazineSection?: MagazineSectionInput | null;
+  magazineSection?: Maybe<MagazineSectionInput>;
 }
 
 export interface StandardSectionInput {
   id: Uuid;
 
-  title?: string | null;
+  title?: Maybe<string>;
 
   slug: Slug;
 
   colour: ColourInput;
 
-  slices: (StandardSectionSliceInput | null)[];
+  slices: (Maybe<StandardSectionSliceInput>)[];
 }
 
 export interface StandardSectionSliceInput {
-  standardSlice?: StandardSliceInput | null;
+  standardSlice?: Maybe<StandardSliceInput>;
 
-  commentLeadAndCartoonSlice?: CommentLeadAndCartoonSliceInput | null;
+  commentLeadAndCartoonSlice?: Maybe<CommentLeadAndCartoonSliceInput>;
 
-  letterThundererPodcastSlice?: LetterThundererPodcastSliceInput | null;
+  letterThundererPodcastSlice?: Maybe<LetterThundererPodcastSliceInput>;
 
-  commentTwoAndNotebookSlice?: CommentTwoAndNotebookSliceInput | null;
+  commentTwoAndNotebookSlice?: Maybe<CommentTwoAndNotebookSliceInput>;
 
-  focusSlice?: FocusSliceInput | null;
+  focusSlice?: Maybe<FocusSliceInput>;
 
-  leadersSlice?: LeadersSliceInput | null;
+  leadersSlice?: Maybe<LeadersSliceInput>;
 
-  leadOneAndFourSlice?: LeadOneAndFourSliceInput | null;
+  leadOneAndFourSlice?: Maybe<LeadOneAndFourSliceInput>;
 
-  leadOneAndOneSlice?: LeadOneAndOneSliceInput | null;
+  supplementLeadAndFourStackSlice?: Maybe<SupplementLeadAndFourStackSliceInput>;
 
-  leadOneAndTwoSlice?: LeadOneAndTwoSliceInput | null;
+  leadOneAndOneSlice?: Maybe<LeadOneAndOneSliceInput>;
 
-  leadOneFullWidthSlice?: LeadOneFullWidthSliceInput | null;
+  leadOneAndTwoSlice?: Maybe<LeadOneAndTwoSliceInput>;
 
-  leadOneNoPicAndOneAndPortraitSlice?: LeadOneNoPicAndOneAndPortraitSliceInput | null;
+  leadOneFullWidthSlice?: Maybe<LeadOneFullWidthSliceInput>;
 
-  leadTwoNoPicAndTwoSlice?: LeadTwoNoPicAndTwoSliceInput | null;
+  leadOneNoPicAndOneAndPortraitSlice?: Maybe<
+    LeadOneNoPicAndOneAndPortraitSliceInput
+  >;
 
-  obituariesLeadAndTwoSlice?: ObituariesLeadAndTwoSliceInput | null;
+  leadTwoNoPicAndTwoSlice?: Maybe<LeadTwoNoPicAndTwoSliceInput>;
 
-  opinionOneAndTwoSlice?: OpinionOneAndTwoSliceInput | null;
+  obituariesLeadAndTwoSlice?: Maybe<ObituariesLeadAndTwoSliceInput>;
 
-  secondaryFourSlice?: SecondaryFourSliceInput | null;
+  opinionOneAndTwoSlice?: Maybe<OpinionOneAndTwoSliceInput>;
 
-  secondaryOneSlice?: SecondaryOneSliceInput | null;
+  secondaryFourSlice?: Maybe<SecondaryFourSliceInput>;
 
-  secondaryOneAndColumnistSlice?: SecondaryOneAndColumnistSliceInput | null;
+  secondaryOneSlice?: Maybe<SecondaryOneSliceInput>;
 
-  secondaryOneAndFourSlice?: SecondaryOneAndFourSliceInput | null;
+  secondaryOneAndColumnistSlice?: Maybe<SecondaryOneAndColumnistSliceInput>;
 
-  secondaryTwoAndTwoSlice?: SecondaryTwoAndTwoSliceInput | null;
+  secondaryOneAndFourSlice?: Maybe<SecondaryOneAndFourSliceInput>;
 
-  secondaryTwoNoPicAndTwoSlice?: SecondaryTwoNoPicAndTwoSliceInput | null;
+  supplementSecondaryOneAndFourSlice?: Maybe<
+    SupplementSecondaryOneAndFourSliceInput
+  >;
 
-  twoPicAndSixNoPicSlice?: TwoPicAndSixNoPicSliceInput | null;
+  secondaryTwoAndTwoSlice?: Maybe<SecondaryTwoAndTwoSliceInput>;
 
-  puff?: PuffSliceInput | null;
+  secondaryTwoNoPicAndTwoSlice?: Maybe<SecondaryTwoNoPicAndTwoSliceInput>;
 
-  inTheNews?: InTheNewsSliceInput | null;
+  twoPicAndSixNoPicSlice?: Maybe<TwoPicAndSixNoPicSliceInput>;
 
-  dailyUniversalRegister?: DailyUniversalRegisterInput | null;
+  puff?: Maybe<PuffSliceInput>;
+
+  inTheNews?: Maybe<InTheNewsSliceInput>;
+
+  dailyUniversalRegister?: Maybe<DailyUniversalRegisterInput>;
 }
 
 export interface LetterThundererPodcastSliceInput {
@@ -443,6 +459,18 @@ export interface LeadersSliceInput {
 }
 
 export interface LeadOneAndFourSliceInput {
+  lead: TileInput;
+
+  support1: TileInput;
+
+  support2: TileInput;
+
+  support3: TileInput;
+
+  support4: TileInput;
+}
+
+export interface SupplementLeadAndFourStackSliceInput {
   lead: TileInput;
 
   support1: TileInput;
@@ -522,6 +550,18 @@ export interface SecondaryOneAndFourSliceInput {
   support4: TileInput;
 }
 
+export interface SupplementSecondaryOneAndFourSliceInput {
+  secondary: TileInput;
+
+  support1: TileInput;
+
+  support2: TileInput;
+
+  support3: TileInput;
+
+  support4: TileInput;
+}
+
 export interface SecondaryTwoAndTwoSliceInput {
   secondary1: TileInput;
 
@@ -589,19 +629,19 @@ export interface InTheNewsSliceInput {
 export interface PuzzleSectionInput {
   id: Uuid;
 
-  title?: string | null;
+  title?: Maybe<string>;
 
   slug: Slug;
 
   colour: ColourInput;
 
-  slices: (PuzzleSectionSliceInput | null)[];
+  slices: (Maybe<PuzzleSectionSliceInput>)[];
 }
 
 export interface PuzzleSectionSliceInput {
-  puzzle?: PuzzleInput | null;
+  puzzle?: Maybe<PuzzleInput>;
 
-  puff?: PuffSliceInput | null;
+  puff?: Maybe<PuffSliceInput>;
 }
 
 export interface PuzzleInput {
@@ -611,13 +651,15 @@ export interface PuzzleInput {
 
   url: Url;
 
+  hideOnMobile?: Maybe<boolean>;
+
   image: ImageInput;
 }
 
 export interface MagazineSectionInput {
   id: Uuid;
 
-  title?: string | null;
+  title?: Maybe<string>;
 
   slug: Slug;
 
@@ -625,75 +667,91 @@ export interface MagazineSectionInput {
 
   cover: ImageInput;
 
-  slices: (MagazineSectionSliceInput | null)[];
+  slices: (Maybe<MagazineSectionSliceInput>)[];
 }
 
 export interface MagazineSectionSliceInput {
-  standardSlice?: StandardSliceInput | null;
+  standardSlice?: Maybe<StandardSliceInput>;
 
-  commentLeadAndCartoonSlice?: CommentLeadAndCartoonSliceInput | null;
+  commentLeadAndCartoonSlice?: Maybe<CommentLeadAndCartoonSliceInput>;
 
-  letterThundererPodcastSlice?: LetterThundererPodcastSliceInput | null;
+  letterThundererPodcastSlice?: Maybe<LetterThundererPodcastSliceInput>;
 
-  commentTwoAndNotebookSlice?: CommentTwoAndNotebookSliceInput | null;
+  commentTwoAndNotebookSlice?: Maybe<CommentTwoAndNotebookSliceInput>;
 
-  focusSlice?: FocusSliceInput | null;
+  focusSlice?: Maybe<FocusSliceInput>;
 
-  leadersSlice?: LeadersSliceInput | null;
+  leadersSlice?: Maybe<LeadersSliceInput>;
 
-  leadOneAndFourSlice?: LeadOneAndFourSliceInput | null;
+  leadOneAndFourSlice?: Maybe<LeadOneAndFourSliceInput>;
 
-  leadOneAndOneSlice?: LeadOneAndOneSliceInput | null;
+  supplementLeadAndFourStackSlice?: Maybe<SupplementLeadAndFourStackSliceInput>;
 
-  leadOneAndTwoSlice?: LeadOneAndTwoSliceInput | null;
+  leadOneAndOneSlice?: Maybe<LeadOneAndOneSliceInput>;
 
-  leadOneFullWidthSlice?: LeadOneFullWidthSliceInput | null;
+  leadOneAndTwoSlice?: Maybe<LeadOneAndTwoSliceInput>;
 
-  leadOneNoPicAndOneAndPortraitSlice?: LeadOneNoPicAndOneAndPortraitSliceInput | null;
+  leadOneFullWidthSlice?: Maybe<LeadOneFullWidthSliceInput>;
 
-  leadTwoNoPicAndTwoSlice?: LeadTwoNoPicAndTwoSliceInput | null;
+  leadOneNoPicAndOneAndPortraitSlice?: Maybe<
+    LeadOneNoPicAndOneAndPortraitSliceInput
+  >;
 
-  obituariesLeadAndTwoSlice?: ObituariesLeadAndTwoSliceInput | null;
+  leadTwoNoPicAndTwoSlice?: Maybe<LeadTwoNoPicAndTwoSliceInput>;
 
-  opinionOneAndTwoSlice?: OpinionOneAndTwoSliceInput | null;
+  obituariesLeadAndTwoSlice?: Maybe<ObituariesLeadAndTwoSliceInput>;
 
-  secondaryFourSlice?: SecondaryFourSliceInput | null;
+  opinionOneAndTwoSlice?: Maybe<OpinionOneAndTwoSliceInput>;
 
-  secondaryOneSlice?: SecondaryOneSliceInput | null;
+  secondaryFourSlice?: Maybe<SecondaryFourSliceInput>;
 
-  secondaryOneAndColumnistSlice?: SecondaryOneAndColumnistSliceInput | null;
+  secondaryOneSlice?: Maybe<SecondaryOneSliceInput>;
 
-  secondaryOneAndFourSlice?: SecondaryOneAndFourSliceInput | null;
+  secondaryOneAndColumnistSlice?: Maybe<SecondaryOneAndColumnistSliceInput>;
 
-  secondaryTwoAndTwoSlice?: SecondaryTwoAndTwoSliceInput | null;
+  secondaryOneAndFourSlice?: Maybe<SecondaryOneAndFourSliceInput>;
 
-  secondaryTwoNoPicAndTwoSlice?: SecondaryTwoNoPicAndTwoSliceInput | null;
+  supplementSecondaryOneAndFourSlice?: Maybe<
+    SupplementSecondaryOneAndFourSliceInput
+  >;
 
-  twoPicAndSixNoPicSlice?: TwoPicAndSixNoPicSliceInput | null;
+  secondaryTwoAndTwoSlice?: Maybe<SecondaryTwoAndTwoSliceInput>;
 
-  puff?: PuffSliceInput | null;
+  secondaryTwoNoPicAndTwoSlice?: Maybe<SecondaryTwoNoPicAndTwoSliceInput>;
+
+  twoPicAndSixNoPicSlice?: Maybe<TwoPicAndSixNoPicSliceInput>;
+
+  puff?: Maybe<PuffSliceInput>;
 }
 
 export interface InTheNewsSectionItemInput {
-  inTheNews?: InTheNewsSliceInput | null;
+  inTheNews?: Maybe<InTheNewsSliceInput>;
+}
+
+export interface PaginateArgs {
+  cursor?: Maybe<Cursor>;
+
+  first?: Maybe<number>;
+
+  desc?: Maybe<boolean>;
 }
 
 export interface PuffMainLinkInput {
-  tile?: TileInput | null;
+  tile?: Maybe<TileInput>;
 
-  namedLink?: NamedLinkInput | null;
+  namedLink?: Maybe<NamedLinkInput>;
 }
 
 export interface PuffSectionItemInput {
-  puff?: PuffSliceInput | null;
+  puff?: Maybe<PuffSliceInput>;
 }
 
 export interface PuffTopicLinkInput {
-  standardSection?: StandardSectionInput | null;
+  standardSection?: Maybe<StandardSectionInput>;
 
-  puzzleSection?: PuzzleSectionInput | null;
+  puzzleSection?: Maybe<PuzzleSectionInput>;
 
-  namedLink?: NamedLinkInput | null;
+  namedLink?: Maybe<NamedLinkInput>;
 }
 
 export interface TagUpdateInput {
@@ -705,13 +763,13 @@ export interface TopicInput {
 
   slug: Slug;
 
-  description?: RichText | null;
+  description?: Maybe<RichText>;
 }
 
 export interface TopicTagInput {
   id: Uuid;
 
-  thresholdScore: number;
+  scoreThreshold: number;
 }
 
 export interface TopicUpdateInput {
@@ -783,6 +841,15 @@ export enum TemplateType {
   Mainstandard = "mainstandard"
 }
 
+export enum Region {
+  Default = "default",
+  Ireland = "ireland"
+}
+
+export enum EditionGroupOptions {
+  Date = "date"
+}
+
 export enum Display {
   Primary = "primary",
   Secondary = "secondary",
@@ -790,8 +857,19 @@ export enum Display {
   Fullwidth = "fullwidth"
 }
 
+export enum CacheControlScope {
+  Public = "PUBLIC",
+  Private = "PRIVATE"
+}
+
 /** A lower kebab case string */
 export type Slug = any;
+
+/** Tiny integer (range of 0-255) */
+export type TinyInt = any;
+
+/** Unit interval type (0-1 decimal range) */
+export type UnitInterval = any;
 
 /** An AST representing cross platform UI */
 export type Markup = any;
@@ -813,14 +891,11 @@ export type RichText = any;
 
 export type Cursor = any;
 
+/** The `BigInt` scalar type represents non-fractional signed whole numeric values. BigInt can represent values between -(2^53) + 1 and 2^53 - 1. */
+export type BigInt = any;
+
 /** Represents a date and time of day in ISO 8601 */
 export type ShortDate = any;
-
-/** Tiny integer (range of 0-255) */
-export type TinyInt = any;
-
-/** Unit interval type (0-1 decimal range) */
-export type UnitInterval = any;
 
 /** An dictionary of string-based key-value pairs */
 export type Dictionary = any;
@@ -836,12 +911,12 @@ export type Dictionary = any;
 export interface Byline {
   byline: Markup;
 
-  image?: Image | null;
+  image?: Maybe<Image>;
 }
 
-/** A selection of template types that have opinions over how they should bepresented. Usually used within the context of an associated list of articles */
+/** A selection of template types that have opinions over how they should be presented. Usually used within the context of an associated list of articles */
 export interface Layout {
-  template?: Template | null;
+  template?: Maybe<Template>;
 }
 
 export interface ArticleSlice {
@@ -866,148 +941,158 @@ export interface Section {
 
 export interface Query {
   /** A list of authors */
-  author?: Author | null;
+  author?: Maybe<Author>;
 
-  authors?: (Author | null)[] | null;
+  authors?: Maybe<(Maybe<Author>)[]>;
 
-  article?: Article | null;
+  article?: Maybe<Article>;
 
-  articles?: Articles | null;
+  articles?: Maybe<Articles>;
 
-  edition?: Edition | null;
+  edition?: Maybe<Edition>;
 
-  editions?: EditionsPaged | null;
+  editions?: Maybe<EditionsPaged>;
 
-  section?: Section | null;
+  section?: Maybe<Section>;
 
   sports: Sport[];
 
-  sportCompetition?: SportCompetition | null;
+  sportCompetition?: Maybe<SportCompetition>;
 
-  tag?: Tag | null;
+  tag?: Maybe<Tag>;
 
-  tags?: TagConnection | null;
+  tags?: Maybe<TagConnection>;
 
-  topic?: Topic | null;
+  topic?: Maybe<Topic>;
 
-  topics?: TopicConnection | null;
+  topics?: Maybe<TopicConnection>;
   /** The currently authenticated user */
-  viewer?: User | null;
+  viewer?: Maybe<User>;
 }
 
 /** An author of a piece of writing */
 export interface Author {
   id: string;
 
-  articles?: AuthorArticles | null;
+  articles?: Maybe<AuthorArticles>;
 
-  biography?: Markup | null;
+  biography?: Maybe<Markup>;
   /** URL for the image of an author */
-  image?: Url | null;
+  image?: Maybe<Url>;
 
-  jobTitle?: string | null;
+  jobTitle?: Maybe<string>;
   /** The name of the author */
   name: string;
   /** Some authors have poor article lead assets, this flag denotes that the lead assets are useful for presentation purposes */
-  hasLeadAssets?: boolean | null;
+  hasLeadAssets?: Maybe<boolean>;
   /** Twitter handle for an author (can be an empty string) */
-  twitter?: string | null;
+  twitter?: Maybe<string>;
 
-  slug?: Slug | null;
+  slug?: Maybe<Slug>;
 }
 
 export interface AuthorArticles {
   /** The number of articles written by an author */
-  count?: number | null;
+  count?: Maybe<number>;
   /** List of articles written by an author */
-  list?: (Article | null)[] | null;
+  list?: Maybe<(Maybe<Article>)[]>;
 }
 
 export interface Article {
   /** Used for indepth templates to define the background colour to be used. */
-  backgroundColour?: Colour | null;
+  backgroundColour?: Maybe<Colour>;
+  /** An AST of one or more authors that may contain job titles and/or locations */
+  byline?: Maybe<Markup>;
   /** Text or structured bylines for one or more authors */
-  bylines?: (ArticleByline | null)[] | null;
+  bylines?: Maybe<(Maybe<ArticleByline>)[]>;
   /** The content for the article in the shape of an AST */
-  content?: Markup | null;
-  /** The paywalled content for the article in the shape of an AST. After the freecontent, the rest of the markup is wrapped in a paywall element to allowflexible sampling to work with a classname */
-  paywalledContent?: Markup | null;
+  content?: Maybe<Markup>;
+  /** The paywalled content for the article in the shape of an AST. After the free content, the rest of the markup is wrapped in a paywall element to allow flexible sampling to work with a classname */
+  paywalledContent?: Maybe<Markup>;
   /** Ability to disable dropcaps even if the given template has them by default */
-  dropcapsDisabled?: boolean | null;
+  dropcapsDisabled?: Maybe<boolean>;
   /** A list of time dependent with pair dependencies */
-  flags?: (Flag | null)[] | null;
+  flags?: Maybe<(Maybe<Flag>)[]>;
   /** List of time dependent with expiry time */
-  expirableFlags?: (ExpirableFlag | null)[] | null;
+  expirableFlags?: Maybe<(Maybe<ExpirableFlag>)[]>;
   /** Whether or not the article contains a video (as a lead asset or an inline video, or both) */
-  hasVideo?: boolean | null;
+  hasVideo?: Maybe<boolean>;
   /** A longer SEO headline. Note this might not be populated so please use 'shortHeadline' as a fallback. */
-  headline?: string | null;
+  headline?: Maybe<string>;
 
   id: Uuid;
-  /** A user specific flag that indicates whether the article has been bookmarked(saved) by the user. This property can only be accessed by logged in users. */
-  isBookmarked?: boolean | null;
+  /** A user specific flag that indicates whether the article has been bookmarked (saved) by the user. This property can only be accessed by logged in users. */
+  isBookmarked?: Maybe<boolean>;
   /** A free piece of text to describe an article */
-  label?: string | null;
+  label?: Maybe<string>;
   /** A flag set outside of the commenting system, usually used for controversial articles */
-  commentsEnabled?: boolean | null;
+  commentsEnabled?: Maybe<boolean>;
   /** The commenting system moderation policy for this article */
-  commentsPreModerated?: boolean | null;
+  commentsPreModerated?: Maybe<boolean>;
   /** The number of comments an article has */
-  commentCount?: number | null;
+  commentCount?: Maybe<number>;
   /** A rarely populated field that is a list of free text such as ["luxury", "ferrari"] */
-  commercialTags?: (string | null)[] | null;
-  /** A field that is populated from the article headline, a string delineated withcommas such as ["this", "is", "a", "headline"] */
+  commercialTags?: Maybe<(Maybe<string>)[]>;
+  /** A field that is populated from the article headline, a string delineated with commas such as ["this", "is", "a", "headline"] */
   keywords: string[];
-  /** A shorter headline useful for when space is at a premium. Note this may returnnull so please use `headline` field as a fallback. */
-  shortHeadline?: string | null;
+  /** A shorter headline useful for when space is at a premium. Note this may return null so please use `headline` field as a fallback. */
+  shortHeadline?: Maybe<string>;
   /** Hashed version of the article identifier */
-  shortIdentifier?: string | null;
+  shortIdentifier?: Maybe<string>;
   /** The name of the segment that the article appears in, for example Sport in a newspaper */
-  section?: SectionName | null;
+  section?: Maybe<SectionName>;
   /** A field that is a list of free text for commercial section tags */
-  commercialSectionTags?: string[] | null;
+  commercialSectionTags?: Maybe<string[]>;
 
-  leadAsset?: Media | null;
+  leadAsset?: Maybe<Media>;
 
-  listingAsset?: Media | null;
+  listingAsset?: Maybe<Media>;
 
   publicationName: PublicationName;
 
-  publishedTime?: DateTime | null;
+  publishedTime?: Maybe<DateTime>;
   /** Date the article was first published */
-  firstPublishedTime?: DateTime | null;
+  firstPublishedTime?: Maybe<DateTime>;
 
-  updatedTime?: DateTime | null;
+  updatedTime?: Maybe<DateTime>;
   /** Curated list of articles selected by editorial that appear at the end of an article */
-  relatedArticles?: (Article | null)[] | null;
+  relatedArticles?: Maybe<(Maybe<Article>)[]>;
   /** Presentational information on how the related articles should be displayed */
-  relatedArticlesLayout?: Layout | null;
+  relatedArticlesLayout?: Maybe<Layout>;
   /** Related article slice */
-  relatedArticleSlice?: ArticleSlice | null;
+  relatedArticleSlice?: Maybe<ArticleSlice>;
 
-  savingEnabled?: boolean | null;
+  savingEnabled?: Maybe<boolean>;
 
-  sharingEnabled?: boolean | null;
+  sharingEnabled?: Maybe<boolean>;
   /** Customisable field in the CMS, that is by default a slugified version of the article title */
-  slug?: string | null;
-  /** A brief introductory summary, typically appearing immediately after theheadline and typographically distinct from the rest of the article */
-  standfirst?: string | null;
-  /** A predefined truncated version of the article with a max length of the teaser,can optionally choose a shorter length. Use this to avoid ACS. */
-  summary?: Markup | null;
+  slug?: Maybe<string>;
+  /** A brief introductory summary, typically appearing immediately after the headline and typographically distinct from the rest of the article */
+  standfirst?: Maybe<string>;
+  /** A brief introductory summary, typically appearing immediately after the standfirst */
+  strapline?: Maybe<string>;
+  /** A predefined truncated version of the article with a max length of the teaser, can optionally choose a shorter length. Use this to avoid ACS. */
+  summary?: Maybe<Markup>;
   /** Used for indepth templates to define the text colour to be used. */
-  textColour?: Colour | null;
+  textColour?: Maybe<Colour>;
   /** The tiles that this article appears in */
-  tiles?: (Tile | null)[] | null;
+  tiles?: Maybe<(Maybe<Tile>)[]>;
 
-  title?: string | null;
+  title?: Maybe<string>;
+  /** Used for tokenised article URL */
+  tokenisedUrl?: Maybe<Url>;
   /** Topics that the requested article belong to */
-  topics?: (Topic | null)[] | null;
+  topics?: Maybe<(Maybe<Topic>)[]>;
 
-  url?: Url | null;
+  url?: Maybe<Url>;
 
-  template?: TemplateType | null;
+  template?: Maybe<TemplateType>;
 
-  tags?: ArticleTagConnection | null;
+  tags?: Maybe<ArticleTagConnection>;
+
+  synonyms: ArticleSynonymConnection;
+
+  topicConnection: ArticleTopicConnection;
 }
 
 export interface Colour {
@@ -1015,40 +1100,48 @@ export interface Colour {
 }
 
 export interface Rgba {
-  red: number;
+  red: TinyInt;
 
-  green: number;
+  green: TinyInt;
 
-  blue: number;
+  blue: TinyInt;
 
-  alpha: number;
+  alpha: UnitInterval;
 }
 
 export interface TextByline extends Byline {
   byline: Markup;
 
-  image?: Image | null;
+  image?: Maybe<Image>;
 }
 
 export interface Image {
   id: Uuid;
 
-  title?: string | null;
+  title?: Maybe<string>;
 
-  caption?: string | null;
+  caption?: Maybe<string>;
 
-  credits?: string | null;
+  credits?: Maybe<string>;
 
-  crop?: Crop | null;
+  crop?: Maybe<Crop>;
 
   crops: Crop[];
 }
 
 /** The selected area for a given image and its ratio */
 export interface Crop {
-  ratio?: Ratio | null;
+  ratio?: Maybe<Ratio>;
 
-  url?: Url | null;
+  url?: Maybe<Url>;
+
+  relativeHorizontalOffset?: Maybe<UnitInterval>;
+
+  relativeVerticalOffset?: Maybe<UnitInterval>;
+
+  relativeWidth?: Maybe<UnitInterval>;
+
+  relativeHeight?: Maybe<UnitInterval>;
 }
 
 export interface AuthorByline extends Byline {
@@ -1056,33 +1149,37 @@ export interface AuthorByline extends Byline {
 
   byline: Markup;
 
-  image?: Image | null;
+  image?: Maybe<Image>;
 }
 
 export interface ExpirableFlag {
   type: Flag;
 
-  expiryTime?: DateTime | null;
+  expiryTime?: Maybe<DateTime>;
 }
 
 export interface Video {
   id: Uuid;
 
-  caption?: string | null;
+  caption?: Maybe<string>;
 
-  brightcovePolicyKey?: string | null;
+  title?: Maybe<string>;
 
-  brightcovePlayerId?: string | null;
+  brightcovePolicyKey?: Maybe<string>;
 
-  brightcoveVideoId?: string | null;
+  brightcovePlayerId?: Maybe<string>;
 
-  paidOnly?: boolean | null;
+  brightcoveVideoId?: Maybe<string>;
 
-  skySports?: boolean | null;
+  paidOnly?: Maybe<boolean>;
 
-  brightcoveAccountId?: string | null;
+  skySports?: Maybe<boolean>;
 
-  posterImage?: Image | null;
+  brightcoveAccountId?: Maybe<string>;
+
+  posterImage?: Maybe<Image>;
+
+  is360?: Maybe<boolean>;
 }
 
 /** An article presentation */
@@ -1091,40 +1188,60 @@ export interface Tile {
 
   article: Article;
 
-  headline?: string | null;
+  headline?: Maybe<string>;
 
-  leadAsset?: Media | null;
+  leadAsset?: Maybe<Media>;
 
-  strapline?: string | null;
+  strapline?: Maybe<string>;
 
-  teaser?: Markup | null;
+  teaser?: Maybe<Markup>;
 
-  slices?: (ArticleSlice | null)[] | null;
+  slices?: Maybe<(Maybe<ArticleSlice>)[]>;
 }
 
 export interface Topic {
-  id?: string | null;
+  id?: Maybe<string>;
 
-  articles?: TopicArticles | null;
+  articles?: Maybe<TopicArticles>;
   /** A short sentence to describe the topic */
-  description?: RichText | null;
+  description?: Maybe<RichText>;
 
   name: string;
 
   slug: Slug;
 
+  articleConnection: TopicArticleConnection;
+
   tagConnection: TopicTagConnection;
 
-  createdAt?: DateTime | null;
+  createdAt?: Maybe<DateTime>;
 
-  updatedAt?: DateTime | null;
+  updatedAt?: Maybe<DateTime>;
 }
 
 export interface TopicArticles {
   /** The number of articles in a given topic */
-  count?: number | null;
+  count?: Maybe<number>;
   /** List of articles associated with that topic */
   list: Article[];
+}
+
+export interface TopicArticleConnection {
+  nodes: Article[];
+
+  pageInfo?: Maybe<PageInfo>;
+
+  totalCount?: Maybe<number>;
+}
+
+export interface PageInfo {
+  startCursor?: Maybe<Cursor>;
+
+  endCursor?: Maybe<Cursor>;
+
+  hasNextPage: boolean;
+
+  hasPreviousPage: boolean;
 }
 
 export interface TopicTagConnection {
@@ -1138,31 +1255,23 @@ export interface TopicTagConnection {
 }
 
 export interface TopicTagEdge {
-  node?: Tag | null;
+  node?: Maybe<Tag>;
 
-  cursor?: Cursor | null;
+  cursor?: Maybe<Cursor>;
 
-  thresholdScore?: number | null;
+  scoreThreshold?: Maybe<number>;
 }
 
 export interface Tag {
   id: Uuid;
 
-  primarySynonymId: Uuid;
+  primarySynonym: Synonym;
 
-  description?: string | null;
+  description?: Maybe<string>;
 
   synonyms: SynonymConnection;
 
   articles: TagArticleConnection;
-}
-
-export interface SynonymConnection {
-  nodes: (Synonym | null)[];
-
-  pageInfo: PageInfo;
-
-  totalCount: number;
 }
 
 export interface Synonym {
@@ -1175,20 +1284,18 @@ export interface Synonym {
   type: SynonymType;
 }
 
-export interface PageInfo {
-  startCursor?: Cursor | null;
+export interface SynonymConnection {
+  nodes: (Maybe<Synonym>)[];
 
-  endCursor?: Cursor | null;
+  pageInfo: PageInfo;
 
-  hasNextPage: boolean;
-
-  hasPreviousPage: boolean;
+  totalCount: number;
 }
 
 export interface TagArticleConnection {
-  edges?: (TagArticleEdge | null)[] | null;
+  edges?: Maybe<(Maybe<TagArticleEdge>)[]>;
 
-  nodes: (Article | null)[];
+  nodes: (Maybe<Article>)[];
 
   pageInfo: PageInfo;
 
@@ -1200,15 +1307,15 @@ export interface TagArticleEdge {
 
   cursor: Cursor;
 
-  score: number;
+  combinedScore: number;
 
-  originalScore?: number | null;
+  scoreOverride?: Maybe<number>;
 }
 
 export interface ArticleTagConnection {
-  edges: (ArticleTagEdge | null)[];
+  edges: (Maybe<ArticleTagEdge>)[];
 
-  nodes: (Tag | null)[];
+  nodes: (Maybe<Tag>)[];
 
   pageInfo: PageInfo;
 
@@ -1220,38 +1327,68 @@ export interface ArticleTagEdge {
 
   cursor: Cursor;
 
-  score: number;
+  combinedScore: number;
 
-  originalScore?: number | null;
+  scoreOverride?: Maybe<number>;
+}
+
+export interface ArticleSynonymConnection {
+  edges: (Maybe<ArticleSynonymEdge>)[];
+
+  nodes: (Maybe<Synonym>)[];
+
+  pageInfo: PageInfo;
+
+  totalCount: number;
+}
+
+export interface ArticleSynonymEdge {
+  node: Synonym;
+
+  cursor: Cursor;
+
+  score: number;
+}
+
+export interface ArticleTopicConnection {
+  nodes: Topic[];
+
+  pageInfo?: Maybe<PageInfo>;
+
+  totalCount?: Maybe<number>;
 }
 
 export interface Articles {
   /** The number of articles that satisfy the filter */
-  count?: number | null;
+  count?: Maybe<number>;
 
-  list: (Article | null)[];
+  list: (Maybe<Article>)[];
 }
 
 /** An edition for a single day */
 export interface Edition {
   id: Uuid;
   /** Journalist inputted text which denotes the last time an edition was published */
-  updateText?: string | null;
+  updateText?: Maybe<string>;
   /** The date that the edition is intended for, not necessarily the date it was published (contrast with `publishedTime`) */
-  date?: ShortDate | null;
+  date?: Maybe<ShortDate>;
 
   publicationName: PublicationName;
+  /** The region the edition is intended for */
+  region?: Maybe<Region>;
   /** The date & time that the edition was published (contrast with `date`) */
-  publishedTime?: DateTime | null;
+  publishedTime?: Maybe<DateTime>;
 
-  updatedTime?: DateTime | null;
+  updatedTime?: Maybe<DateTime>;
 
-  sections?: (Section | null)[] | null;
+  sections?: Maybe<(Maybe<Section>)[]>;
+  /** Current version of the edition (used primarily for caching) */
+  revision: BigInt;
 }
 
 /** A list of editions with pagination meta data */
 export interface EditionsPaged {
-  list?: (Edition | null)[] | null;
+  list?: Maybe<(Maybe<Edition>)[]>;
 }
 
 /** A sport in the sports video hub */
@@ -1260,7 +1397,7 @@ export interface Sport {
 
   name: string;
   /** A list of competitions associated to a sport */
-  competitions: (SportCompetition | null)[];
+  competitions: (Maybe<SportCompetition>)[];
 }
 
 /** A sport competition in the sports video hub */
@@ -1269,9 +1406,9 @@ export interface SportCompetition {
 
   name: string;
   /** Poster image of the most recent video of a competition */
-  imageUrl?: Url | null;
+  imageUrl?: Maybe<Url>;
   /** Non-vector logo for competition */
-  logoUrl?: Url | null;
+  logoUrl?: Maybe<Url>;
   /** A list of video groupings associated to a sport competition */
   groups: SportVideoGroup[];
 }
@@ -1289,11 +1426,11 @@ export interface BrightcoveSportVideo {
 
   title: string;
 
-  subtitle?: string | null;
+  subtitle?: Maybe<string>;
 
   posterImageUrl: Url;
 
-  posterImageOverlayUrl?: Url | null;
+  posterImageOverlayUrl?: Maybe<Url>;
 
   publishedTime: DateTime;
 
@@ -1305,7 +1442,7 @@ export interface BrightcoveSportVideo {
 }
 
 export interface TagConnection {
-  nodes: (Tag | null)[];
+  nodes: (Maybe<Tag>)[];
 
   pageInfo: PageInfo;
 
@@ -1322,9 +1459,9 @@ export interface TopicConnection {
 
 export interface User {
   /** a code used for Spot.IM's Single Sign On auth. Details here: https://github.com/SpotIM/spotim-integration-docs/blob/master/api/single-sign-on/README.md */
-  spotimCodeB?: string | null;
+  spotimCodeB?: Maybe<string>;
 
-  bookmarks?: PageOfBookmarks | null;
+  bookmarks?: Maybe<PageOfBookmarks>;
 }
 
 export interface PageOfBookmarks {
@@ -1341,6 +1478,10 @@ export interface Mutation {
   saveBookmarks: Bookmark[];
 
   unsaveBookmarks: Uuid[];
+}
+
+export interface ArticleTagUpsertResult {
+  id: Uuid;
 }
 
 export interface ArticleUpsertResult {
@@ -1388,14 +1529,14 @@ export interface DailyUniversalRegister {
 export interface DailyUniversalRegisterItem {
   title: string;
 
-  byline?: Markup | null;
+  byline?: Maybe<Markup>;
 
   content: Markup;
 }
 
 /** Any number of articles with no opinion on the layout/importance of any */
 export interface Default extends Layout {
-  template?: Template | null;
+  template?: Maybe<Template>;
 }
 
 export interface EditionUpsertResult {
@@ -1418,13 +1559,13 @@ export interface InTheNewsSlice {
   sections: Section[];
 }
 
-/** Three articles with one that has more importance over the others denoted by themain ID. Would usually be associated with a list of articles */
+/** Three articles with one that has more importance over the others denoted by the main ID. Would usually be associated with a list of articles */
 export interface LeadAndTwo extends Layout {
-  template?: Template | null;
+  template?: Maybe<Template>;
 
-  main?: Uuid | null;
+  main?: Maybe<Uuid>;
 
-  lead?: Uuid | null;
+  lead?: Maybe<Uuid>;
 }
 
 /** Three leader articles (leaders) */
@@ -1468,7 +1609,7 @@ export interface LeadOneAndOneSlice extends ArticleSlice {
   sections: Section[];
 }
 
-/** A lead article and two supporting articles. This slice can also represent leadrelated articles slice of the same name (lead-1-and-2-puffs,related-links-lead-and-2) */
+/** A lead article and two supporting articles. This slice can also represent lead related articles slice of the same name (lead-1-and-2-puffs, related-links-lead-and-2) */
 export interface LeadOneAndTwoSlice extends ArticleSlice {
   lead: Tile;
 
@@ -1553,6 +1694,23 @@ export interface StandardSlice extends ArticleSlice {
   sections: Section[];
 }
 
+/** A supplement lead article and four supporting articles (replacing LeadOneAndFourSlice). */
+export interface SupplementLeadAndFourStackSlice extends ArticleSlice {
+  lead: Tile;
+
+  support1: Tile;
+
+  support2: Tile;
+
+  support3: Tile;
+
+  support4: Tile;
+
+  items: Tile[];
+
+  sections: Section[];
+}
+
 /** Special obituary lead and two support articles (obituaries-lead-and-2) */
 export interface ObituariesLeadAndTwoSlice extends ArticleSlice {
   lead: Tile;
@@ -1616,6 +1774,23 @@ export interface SecondaryOneAndColumnistSlice extends ArticleSlice {
 
 /** A secondary module and four supporting articles (supplement-secondary-1-and-4) */
 export interface SecondaryOneAndFourSlice extends ArticleSlice {
+  secondary: Tile;
+
+  support1: Tile;
+
+  support2: Tile;
+
+  support3: Tile;
+
+  support4: Tile;
+
+  items: Tile[];
+
+  sections: Section[];
+}
+
+/** A supplement secondary module and four supporting articles (replacing SecondaryOneAndFourSlice). */
+export interface SupplementSecondaryOneAndFourSlice extends ArticleSlice {
   secondary: Tile;
 
   support1: Tile;
@@ -1740,16 +1915,18 @@ export interface Puzzle {
 
   url: Url;
 
+  hideOnMobile: boolean;
+
   image: Image;
 }
 
-/** Three articles with one that has more importance over the others denoted by themain ID. Would usually be associated with a list of articles */
+/** Three articles with one that has more importance over the others denoted by the main ID. Would usually be associated with a list of articles */
 export interface OpinionAndTwo extends Layout {
-  template?: Template | null;
+  template?: Maybe<Template>;
 
-  main?: Uuid | null;
+  main?: Maybe<Uuid>;
 
-  opinion?: Uuid | null;
+  opinion?: Maybe<Uuid>;
 }
 
 export interface SectionUpdateResult {
@@ -1761,7 +1938,7 @@ export interface SliceUpdateResult {
 }
 
 export interface TagMergeResult {
-  primaryTagId?: Uuid | null;
+  primaryTagId?: Maybe<Uuid>;
 }
 
 export interface TagSplitResult {
@@ -1779,15 +1956,15 @@ export interface TopicCreateResult {
 }
 
 export interface TopicRemoveResult {
-  slug?: Slug | null;
+  slug?: Maybe<Slug>;
 }
 
 export interface TopicTagLinkResult {
-  topicId?: Uuid | null;
+  topicId?: Maybe<Uuid>;
 }
 
 export interface TopicTagRemoveResult {
-  tagId?: Uuid | null;
+  tagId?: Maybe<Uuid>;
 }
 
 export interface TopicUpdateResult {
@@ -1806,19 +1983,21 @@ export interface ArticleQueryArgs {
   id: string;
 }
 export interface ArticlesQueryArgs {
-  updatedSince?: DateTime | null;
+  updatedSince?: Maybe<DateTime>;
 
-  ids?: string[] | null;
+  ids?: Maybe<string[]>;
 
-  shortIdentifier?: string | null;
+  shortIdentifier?: Maybe<string>;
 }
 export interface EditionQueryArgs {
   id: string;
+
+  minRevision?: Maybe<BigInt>;
 }
 export interface EditionsQueryArgs {
-  updatedSince?: DateTime | null;
+  updatedSince?: Maybe<DateTime>;
 
-  ids?: string[] | null;
+  ids?: Maybe<string[]>;
 }
 export interface SectionQueryArgs {
   id: string;
@@ -1827,94 +2006,135 @@ export interface SportCompetitionQueryArgs {
   id: string;
 }
 export interface TagQueryArgs {
-  id: Uuid;
+  id: string;
 }
 export interface TagsQueryArgs {
-  ids?: Uuid[] | null;
+  ids?: Maybe<string[]>;
 
-  articleId?: Uuid | null;
+  cursor?: Maybe<Cursor>;
 
-  cursor?: Cursor | null;
+  first?: Maybe<number>;
 
-  first?: number | null;
+  desc?: Maybe<boolean>;
 
-  desc?: boolean | null;
+  dateFilter?: Maybe<DateFilter>;
 
-  dateFilter?: DateFilter | null;
+  term?: Maybe<string>;
 
-  term?: string | null;
+  isOverflow?: Maybe<boolean>;
 }
 export interface TopicQueryArgs {
-  slug?: Slug | null;
+  slug?: Maybe<Slug>;
 
-  id?: Uuid | null;
+  id?: Maybe<string>;
 }
 export interface TopicsQueryArgs {
-  cursor?: Cursor | null;
+  cursor?: Maybe<Cursor>;
 
-  first?: number | null;
+  first?: Maybe<number>;
 }
 export interface ListAuthorArticlesArgs {
   /** The maximum number of articles you want to take, defaults to 10 */
-  first?: number | null;
+  first?: number;
   /** The number of articles to skip over, useful for paging, defaults to 0 */
-  skip?: number | null;
+  skip?: number;
 }
 export interface ContentArticleArgs {
-  /** If a teaser is required, use to truncate the article content by words. Ifthe client doesn't have permission for the content, the maximum will be thelesser of the predefined teaser length and requested maximum */
-  maxWordCount?: number | null;
-  /** If summary text is required, use to truncate the article content bycharacters. If the client doesn't have permission for the content, themaximum will be the lesser of the predefined teaser length and requestedmaximum. Has no effect if maxWordCount is specified */
-  maxCharCount?: number | null;
+  /** If a teaser is required, use to truncate the article content by words. If the client doesn't have permission for the content, the maximum will be the lesser of the predefined teaser length and requested maximum */
+  maxWordCount?: Maybe<number>;
+  /** If summary text is required, use to truncate the article content by characters. If the client doesn't have permission for the content, the maximum will be the lesser of the predefined teaser length and requested maximum. Has no effect if maxWordCount is specified */
+  maxCharCount?: Maybe<number>;
 }
 export interface SummaryArticleArgs {
-  maxCharCount?: number | null;
+  maxCharCount?: Maybe<number>;
 }
 export interface TopicsArticleArgs {
-  maxCount?: number | null;
+  maxCount?: Maybe<number>;
 }
 export interface TagsArticleArgs {
-  paginateArgs?: PaginateArgs | null;
+  cursor?: Maybe<Cursor>;
+
+  first?: Maybe<number>;
+
+  desc?: Maybe<boolean>;
+}
+export interface SynonymsArticleArgs {
+  cursor?: Maybe<Cursor>;
+
+  first?: Maybe<number>;
+
+  desc?: Maybe<boolean>;
+}
+export interface TopicConnectionArticleArgs {
+  cursor?: Maybe<Cursor>;
+
+  first?: Maybe<number>;
+
+  desc?: Maybe<boolean>;
 }
 export interface CropImageArgs {
   ratio: Ratio;
 }
 export interface TeaserTileArgs {
-  maxCharCount?: number | null;
+  maxCharCount?: Maybe<number>;
+}
+export interface ArticleConnectionTopicArgs {
+  cursor?: Maybe<Cursor>;
+
+  first?: Maybe<number>;
+
+  desc?: Maybe<boolean>;
 }
 export interface TagConnectionTopicArgs {
-  options?: PaginateArgs | null;
+  cursor?: Maybe<Cursor>;
+
+  first?: Maybe<number>;
+
+  desc?: Maybe<boolean>;
 }
 export interface ListTopicArticlesArgs {
   /** The maximum number of articles you want to take, defaults to 10 */
-  first?: number | null;
+  first?: number;
   /** The number of articles to skip over, useful for paging, defaults to 0 */
-  skip?: number | null;
+  skip?: number;
 }
 export interface SynonymsTagArgs {
-  options?: PaginateArgs | null;
+  cursor?: Maybe<Cursor>;
+
+  first?: Maybe<number>;
+
+  desc?: Maybe<boolean>;
 }
 export interface ArticlesTagArgs {
-  options?: PaginateArgs | null;
+  cursor?: Maybe<Cursor>;
+
+  first?: Maybe<number>;
+
+  desc?: Maybe<boolean>;
 }
 export interface ListArticlesArgs {
   /** The maximum number of articles you want to take, defaults to 10 */
-  first?: number | null;
+  first?: number;
   /** The number of articles to skip over, useful for paging, defaults to 0 */
-  skip?: number | null;
+  skip?: number;
 }
 export interface ListEditionsPagedArgs {
   /** The maximum number of editions you want to take, defaults to 10 */
-  first?: number | null;
+  first?: number;
   /** The number of editions to skip over, useful for paging, defaults to 0 */
-  skip?: number | null;
+  skip?: number;
+  /** Grouping options, useful to deduplicate results */
+  group?: Maybe<EditionGroupOptions>;
+  /** Region filter, to get the editions for a specific region */
+  region?: Maybe<Region>;
 }
 export interface SpotimCodeBUserArgs {
   codeA: string;
 }
 export interface BookmarksUserArgs {
-  first?: number | null;
+  first?: number;
 
-  skip?: number | null;
+  skip?: number;
 }
 export interface SaveBookmarksMutationArgs {
   bookmarks: BookmarkSaveInput[];
@@ -1939,6 +2159,7 @@ export type MagazineSectionSlice =
   | FocusSlice
   | LeadersSlice
   | LeadOneAndFourSlice
+  | SupplementLeadAndFourStackSlice
   | LeadOneAndOneSlice
   | LeadOneAndTwoSlice
   | LeadOneFullWidthSlice
@@ -1950,6 +2171,7 @@ export type MagazineSectionSlice =
   | SecondaryOneSlice
   | SecondaryOneAndColumnistSlice
   | SecondaryOneAndFourSlice
+  | SupplementSecondaryOneAndFourSlice
   | SecondaryTwoAndTwoSlice
   | SecondaryTwoNoPicAndTwoSlice
   | TwoPicAndSixNoPicSlice
@@ -1968,6 +2190,7 @@ export type StandardSectionSlice =
   | FocusSlice
   | LeadersSlice
   | LeadOneAndFourSlice
+  | SupplementLeadAndFourStackSlice
   | LeadOneAndOneSlice
   | LeadOneAndTwoSlice
   | LeadOneFullWidthSlice
@@ -1979,6 +2202,7 @@ export type StandardSectionSlice =
   | SecondaryOneSlice
   | SecondaryOneAndColumnistSlice
   | SecondaryOneAndFourSlice
+  | SupplementSecondaryOneAndFourSlice
   | SecondaryTwoAndTwoSlice
   | SecondaryTwoNoPicAndTwoSlice
   | TwoPicAndSixNoPicSlice

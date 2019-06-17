@@ -33,7 +33,8 @@ class MockPuzzle {
       id: UUID(),
       title: "Times Concise medium No 7881",
       url: "/crossword/123",
-      image: new PuzzleImage().get()
+      image: new PuzzleImage().get(),
+      hideOnMobile: false
     };
   }
 
