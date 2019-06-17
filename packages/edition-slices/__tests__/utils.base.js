@@ -8,7 +8,7 @@ import {
 const tile = mockEditionSlice(1).items[0];
 
 export default () => {
-  describe.only("getTileImage should", () => {
+  describe("getTileImage should", () => {
     test("getTileImage - return null if there is no lead asset", () => {
       const tileWithoutLeadAsset = {
         ...tile,
