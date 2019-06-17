@@ -28,5 +28,5 @@ export const defaultProps = {
 
 export const webDefaultProps = {
   ...defaultProps,
-  accessibilityLabel: ''
+  accessibilityLabel: ""
 };

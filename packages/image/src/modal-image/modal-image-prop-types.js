@@ -10,7 +10,7 @@ export const modalPropTypes = {
 
 export const modalDefaultProps = {
   ...defaultProps,
-  accessibilityLabel: '',
+  accessibilityLabel: "",
   caption: null,
   onImagePress: null,
   show: false
