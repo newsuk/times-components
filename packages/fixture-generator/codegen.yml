@@ -1,0 +1,6 @@
+schema: https://api.thetimes.co.uk/graphql
+generates:
+  src/types.ts:
+    - typescript
+    - typescript-operations
+    - typescript-compatibility
