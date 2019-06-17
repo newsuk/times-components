@@ -41,6 +41,7 @@
     "@times-components/save-star-web": "0.2.9",
     "@times-components/styleguide": "3.28.23",
     "@times-components/tracking": "2.4.41",
+    "@times-components/context": "1.0.17",
     "@times-components/user-state": "0.0.2",
     "@times-components/utils": "4.11.10",
     "prop-types": "15.7.2"

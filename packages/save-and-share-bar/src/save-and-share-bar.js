@@ -9,6 +9,7 @@ import {
 } from "@times-components/icons";
 import SaveStar from "@times-components/save-star-web";
 import UserState from "@times-components/user-state";
+import { SectionContext } from "@times-components/context";
 import getTokenisedArticleUrlApi from "./get-tokenised-article-url-api";
 import withTrackEvents from "./tracking/with-track-events";
 import SharingApiUrls from "./constants";
@@ -51,12 +52,26 @@ class SaveAndShareBar extends Component {
       <View style={styles.container}>
         {sharingEnabled && (
           <View style={styles.rowItem}>
-            <UserState
-              state={UserState.subscriber}
-              fallback={<EmailShare {...this.props} shouldTokenise={false} />}
-            >
-              <EmailShare {...this.props} shouldTokenise />
-            </UserState>
+            <SectionContext.Consumer>
+              {({ publicationName }) => (
+                <UserState
+                  state={UserState.subscriber}
+                  fallback={
+                    <EmailShare
+                      {...this.props}
+                      shouldTokenise={false}
+                      publicationName={publicationName}
+                    />
+                  }
+                >
+                  <EmailShare
+                    {...this.props}
+                    shouldTokenise
+                    publicationName={publicationName}
+                  />
+                </UserState>
+              )}
+            </SectionContext.Consumer>
             <BarItem
               onPress={onShareOnTwitter}
               target="_blank"

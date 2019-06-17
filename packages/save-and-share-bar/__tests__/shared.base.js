@@ -12,6 +12,7 @@ import EmailShare from "../src/email-share";
 export default () => {
   describe("save and share bar component", () => {
     const onCopyLink = jest.fn();
+    const onShareEmail = jest.fn();
     const articleId = "96508c84-6611-11e9-adc2-05e1b87efaea";
     const articleUrl = "https://www.thetimes.co.uk/";
     const articleHeadline = "test-headline";
@@ -20,6 +21,7 @@ export default () => {
       articleUrl,
       articleHeadline,
       onCopyLink,
+      onShareEmail,
       getTokenisedShareUrl: mockGetTokenisedArticleUrl,
       saveApi,
       sharingEnabled: true,
@@ -84,16 +86,21 @@ export default () => {
         });
 
       const testInstance = TestRenderer.create(
-        <EmailShare {...props} getTokenisedShareUrl={apiMock} shouldTokenise />
+        <EmailShare
+          {...props}
+          getTokenisedShareUrl={apiMock}
+          shouldTokenise
+          publicationName="TIMES"
+        />
       );
       await testInstance.root.findByType(BarItem).props.onPress();
 
       expect(testInstance).toMatchSnapshot();
     });
 
-    it("when tokenising, email icon fetches tokenised article url and change window.location", async () => {
+    it("when tokenising, email icon fetches tokenised article url and change window.location (The Times)", async () => {
       const testInstance = TestRenderer.create(
-        <EmailShare {...props} shouldTokenise />
+        <EmailShare {...props} shouldTokenise publicationName="TIMES" />
       );
 
       const mock = await mockGetTokenisedArticleUrl(articleId);
@@ -105,10 +112,28 @@ export default () => {
       expect(window.location.assign).toBeCalledWith(mailtoUrl);
     });
 
+    it("when tokenising, email icon fetches tokenised article url and change window.location (The Sunday Times)", async () => {
+      const testInstance = TestRenderer.create(
+        <EmailShare
+          {...props}
+          shouldTokenise
+          publicationName="THE SUNDAY TIMES"
+        />
+      );
+
+      const mock = await mockGetTokenisedArticleUrl(articleId);
+      const { url } = mock.data.article.tokenisedUrl;
+
+      const mailtoUrl = `mailto:?subject=${articleHeadline} from The Sunday Times&body=I thought you would be interested in this story from The Sunday Times%0A%0A${articleHeadline}%0A%0A${url}`;
+
+      await testInstance.root.findAllByType(BarItem)[0].props.onPress();
+      expect(window.location.assign).toBeCalledWith(mailtoUrl);
+    });
+
     it("when not tokenising, but using existing tokenised article, email icon uses existing tokenised article url and change window.location", async () => {
       window.location.search = "?shareToken=foo";
       const testInstance = TestRenderer.create(
-        <EmailShare {...props} shouldTokenise={false} />
+        <EmailShare {...props} shouldTokenise={false} publicationName="TIMES" />
       );
 
       const url = `${articleUrl}?shareToken=foo`;
@@ -120,7 +145,7 @@ export default () => {
 
     it("when not tokenising email icon uses article url and change window.location", async () => {
       const testInstance = TestRenderer.create(
-        <EmailShare {...props} shouldTokenise={false} />
+        <EmailShare {...props} shouldTokenise={false} publicationName="TIMES" />
       );
 
       const mailtoUrl = `mailto:?subject=${articleHeadline} from The Times&body=I thought you would be interested in this story from The Times%0A%0A${articleHeadline}%0A%0A${articleUrl}`;
