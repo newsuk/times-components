@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@1.1.8...@times-components/article-paragraph@1.2.0) (2019-06-17)
+
+
+### Features
+
+* allow dropcaps that contain markup ([#2013](https://github.com/newsuk/times-components/issues/2013)) ([ffd25d1](https://github.com/newsuk/times-components/commit/ffd25d1))
+
+
+
+
+
 ## [1.1.8](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@1.1.7...@times-components/article-paragraph@1.1.8) (2019-06-14)
 
 **Note:** Version bump only for package @times-components/article-paragraph

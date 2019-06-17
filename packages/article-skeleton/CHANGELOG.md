@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.9.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.8.12...@times-components/article-skeleton@1.9.0) (2019-06-17)
+
+
+### Features
+
+* allow dropcaps that contain markup ([#2013](https://github.com/newsuk/times-components/issues/2013)) ([ffd25d1](https://github.com/newsuk/times-components/commit/ffd25d1))
+
+
+
+
+
 ## [1.8.12](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.8.11...@times-components/article-skeleton@1.8.12) (2019-06-14)
 
 **Note:** Version bump only for package @times-components/article-skeleton
