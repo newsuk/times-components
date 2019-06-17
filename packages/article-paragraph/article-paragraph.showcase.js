@@ -12,7 +12,7 @@ import ArticleParagraph from "./src";
 
 const renderParagraphWithScale = (select, ast) => {
   const scale = select("Scale", scales, scales.medium);
-  const section = select("Section", sections, "The Sunday Times Magazine");
+  const section = select("Section", sections, "The Times Magazine");
   const theme = themeFactory(section, "magazinestandard");
 
   return (

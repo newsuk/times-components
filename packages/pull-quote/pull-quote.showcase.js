@@ -22,11 +22,7 @@ export default {
   children: [
     {
       component: ({ color, select, text }, { decorateAction }) => {
-        const section = select(
-          "Section",
-          sections,
-          "The Sunday Times Magazine"
-        );
+        const section = select("Section", sections, "The Times Magazine");
         const theme = themeFactory(section, "magazinestandard");
         return (
           <PullQuotes
