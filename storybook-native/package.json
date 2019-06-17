@@ -23,6 +23,7 @@
     "@storybook/addon-info": "4.1.18",
     "@storybook/addon-knobs": "4.1.18",
     "@storybook/addon-options": "4.1.18",
+    "@storybook/addon-ondevice-knobs": "4.1.18",
     "@storybook/addons": "4.1.18",
     "@storybook/react": "4.1.18",
     "@storybook/react-native": "4.1.18",

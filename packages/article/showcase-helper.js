@@ -288,8 +288,7 @@ const templateNames = Object.keys(templates).reduce(
 );
 
 const selectScales = select => select("Scale", scales, scales.medium);
-const selectSection = select =>
-  sections[select("Section", sections, sections.default)];
+const selectSection = select => select("Section", sections, "News");
 const selectTemplate = select =>
   select("Template", templateNames, templateNames.mainstandard);
 

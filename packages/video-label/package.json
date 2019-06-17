@@ -39,7 +39,7 @@
   "dependencies": {
     "@times-components/icons": "2.11.13",
     "@times-components/styleguide": "3.28.24",
-    "lodash.invert": "4.3.0",
+    "lodash.pick": "4.4.0",
     "prop-types": "15.7.2"
   },
   "devDependencies": {
