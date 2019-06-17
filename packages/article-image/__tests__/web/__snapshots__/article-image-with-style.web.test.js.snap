@@ -25,6 +25,7 @@ Array [
   <div
     className="css-view-1dbjc4n"
   >
+<<<<<<< HEAD
     <TimesImage
       aspectRatio={1.25}
       caption={
@@ -71,6 +72,59 @@ Array [
             "toString": [Function],
             "warnTooManyClasses": [Function],
             "withComponent": [Function],
+=======
+    <div
+      className="css-view-1dbjc4n"
+    >
+      <TimesImage
+        accessibilityLabel="Some caption"
+        aspectRatio={1.25}
+        caption={
+          <Caption
+            credits="Some credits"
+            text="Some caption"
+          />
+        }
+        disablePlaceholder={false}
+        fadeImageIn={false}
+        highResSize={null}
+        lowResSize={null}
+        onImagePress={null}
+        rounded={false}
+        uri="https://img/someImage"
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n"
+    >
+      <responsiveweb__InsetCaptionStyle>
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2",
+                "isStatic": true,
+                "lastClassName": "c1",
+                "rules": Array [
+                  "padding-left:",
+                  "10px",
+                  ";@media (min-width:",
+                  "768",
+                  "px){padding-left:0px;}",
+                ],
+              },
+              "displayName": "responsiveweb__InsetCaptionStyle",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2",
+              "target": [Function],
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+>>>>>>> fix: all failing jest snapshots test
           }
         }
         forwardedRef={null}
@@ -128,6 +182,7 @@ Array [
   <div
     className="css-view-1dbjc4n"
   >
+<<<<<<< HEAD
     <TimesImage
       aspectRatio={1.25}
       caption={
@@ -174,6 +229,59 @@ Array [
             "toString": [Function],
             "warnTooManyClasses": [Function],
             "withComponent": [Function],
+=======
+    <div
+      className="css-view-1dbjc4n"
+    >
+      <TimesImage
+        accessibilityLabel="Some caption"
+        aspectRatio={1.25}
+        caption={
+          <Caption
+            credits="Some credits"
+            text="Some caption"
+          />
+        }
+        disablePlaceholder={false}
+        fadeImageIn={false}
+        highResSize={null}
+        lowResSize={null}
+        onImagePress={null}
+        rounded={false}
+        uri="https://img/someImage"
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n"
+    >
+      <responsiveweb__InsetCaptionStyle>
+        <StyledComponent
+          forwardedComponent={
+            Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "attrs": Array [],
+              "componentStyle": ComponentStyle {
+                "componentId": "responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2",
+                "isStatic": true,
+                "lastClassName": "c1",
+                "rules": Array [
+                  "padding-left:",
+                  "10px",
+                  ";@media (min-width:",
+                  "768",
+                  "px){padding-left:0px;}",
+                ],
+              },
+              "displayName": "responsiveweb__InsetCaptionStyle",
+              "foldedComponentIds": Array [],
+              "render": [Function],
+              "styledComponentId": "responsiveweb__InsetCaptionStyle-sc-1gt1h9z-2",
+              "target": [Function],
+              "toString": [Function],
+              "warnTooManyClasses": [Function],
+              "withComponent": [Function],
+            }
+>>>>>>> fix: all failing jest snapshots test
           }
         }
         forwardedRef={null}
@@ -221,6 +329,7 @@ Array [
   <div
     className="css-view-1dbjc4n"
   >
+<<<<<<< HEAD
     <TimesImage
       aspectRatio={1.25}
       caption={
@@ -244,6 +353,31 @@ Array [
     <CentredCaption
       credits="Some credits"
       text="Some caption"
+=======
+    <div
+      className="css-view-1dbjc4n"
+    >
+      <TimesImage
+        accessibilityLabel="Some caption"
+        aspectRatio={1.25}
+        caption={
+          <Caption
+            credits="Some credits"
+            text="Some caption"
+          />
+        }
+        disablePlaceholder={false}
+        fadeImageIn={false}
+        highResSize={null}
+        lowResSize={null}
+        onImagePress={null}
+        rounded={false}
+        uri="https://img/someImage"
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n r-alignSelf-1kihuf0 r-maxWidth-1cmskyw"
+>>>>>>> fix: all failing jest snapshots test
     >
       <div
         className="css-view-1dbjc4n"
@@ -283,6 +417,7 @@ Array [
   <div
     className="css-view-1dbjc4n"
   >
+<<<<<<< HEAD
     <TimesImage
       aspectRatio={1.25}
       caption={
@@ -306,6 +441,31 @@ Array [
     <CentredCaption
       credits="Some credits"
       text="Some caption"
+=======
+    <div
+      className="css-view-1dbjc4n"
+    >
+      <TimesImage
+        accessibilityLabel="Some caption"
+        aspectRatio={1.25}
+        caption={
+          <Caption
+            credits="Some credits"
+            text="Some caption"
+          />
+        }
+        disablePlaceholder={false}
+        fadeImageIn={false}
+        highResSize={null}
+        lowResSize={null}
+        onImagePress={null}
+        rounded={false}
+        uri="https://img/someImage"
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n r-alignSelf-1kihuf0 r-maxWidth-1cmskyw"
+>>>>>>> fix: all failing jest snapshots test
     >
       <div
         className="css-view-1dbjc4n"
@@ -366,7 +526,32 @@ Array [
     className="css-view-1dbjc4n r-paddingLeft-1hfyk0a r-paddingTop-wk8lta r-width-1f720gc"
   >
     <div
+<<<<<<< HEAD
       className="css-view-1dbjc4n"
+=======
+      className="css-view-1dbjc4n r-width-1f720gc"
+    >
+      <TimesImage
+        accessibilityLabel="Another caption"
+        aspectRatio={1.5}
+        caption={
+          <Caption
+            credits="Other credits"
+            text="Another caption"
+          />
+        }
+        disablePlaceholder={false}
+        fadeImageIn={false}
+        highResSize={null}
+        lowResSize={null}
+        onImagePress={null}
+        rounded={false}
+        uri="https://img/someImage"
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n r-paddingLeft-1hfyk0a r-paddingTop-wk8lta r-width-1f720gc"
+>>>>>>> fix: all failing jest snapshots test
     >
       <div
         className="css-view-1dbjc4n r-paddingTop-wk8lta"
@@ -446,6 +631,7 @@ exports[`6. primary image with caption and credits with center caption override 
       credits="Some credits"
       text="Some caption"
     >
+<<<<<<< HEAD
       <responsiveweb__InsetCaptionStyle>
         <StyledComponent
           forwardedComponent={
@@ -473,6 +659,19 @@ exports[`6. primary image with caption and credits with center caption override 
               "warnTooManyClasses": [Function],
               "withComponent": [Function],
             }
+=======
+      <div
+        className="css-view-1dbjc4n"
+      >
+        <TimesImage
+          accessibilityLabel="Some caption"
+          aspectRatio={1.25}
+          caption={
+            <Caption
+              credits="Some credits"
+              text="Some caption"
+            />
+>>>>>>> fix: all failing jest snapshots test
           }
           forwardedRef={null}
         >
@@ -560,7 +759,32 @@ exports[`7. secondary image with caption and credits with center caption overrid
       text="Another caption"
     >
       <div
+<<<<<<< HEAD
         className="css-view-1dbjc4n"
+=======
+        className="css-view-1dbjc4n r-width-1f720gc"
+      >
+        <TimesImage
+          accessibilityLabel="Another caption"
+          aspectRatio={1.5}
+          caption={
+            <Caption
+              credits="Other credits"
+              text="Another caption"
+            />
+          }
+          disablePlaceholder={false}
+          fadeImageIn={false}
+          highResSize={null}
+          lowResSize={null}
+          onImagePress={null}
+          rounded={false}
+          uri="https://img/someImage"
+        />
+      </div>
+      <div
+        className="css-view-1dbjc4n r-paddingLeft-1hfyk0a r-paddingTop-wk8lta r-width-1f720gc"
+>>>>>>> fix: all failing jest snapshots test
       >
         <div
           className="css-view-1dbjc4n r-paddingTop-wk8lta"

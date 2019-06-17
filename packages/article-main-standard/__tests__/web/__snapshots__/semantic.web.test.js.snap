@@ -113,7 +113,7 @@ exports[`1. a full article with an image as the lead asset 1`] = `
   </nav>
   <figure>
     <img
-      alt=""
+      alt="Some Caption"
       src="https://crop169.io?resize=100"
     />
     <svg
@@ -226,7 +226,7 @@ exports[`1. a full article with an image as the lead asset 1`] = `
     </svg>
   </a>
   <img
-    alt=""
+    alt="An image caption"
     src="https://image.io?resize=100"
   />
   <svg
