@@ -1,7 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 import Image from "@times-components/image";
-import { AspectRatioContainer, getAltText } from "@times-components/utils";
+import { AspectRatioContainer } from "@times-components/utils";
 import Video from "@times-components/video";
 
 import { defaultProps, propTypes } from "./article-lead-asset-prop-types";
@@ -44,7 +44,7 @@ const ArticleLeadAsset = ({
     />
   ) : (
     <Image
-      altText={getAltText(leadAsset)}
+      altText={caption.text}
       aspectRatio={getRatio(aspectRatio)}
       highResSize={width}
       lowResSize={100}

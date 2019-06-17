@@ -7,7 +7,6 @@ import Card from "@times-components/card";
 import Context from "@times-components/context";
 import Link from "@times-components/link";
 import { Animations, colours } from "@times-components/styleguide";
-import { getAltText } from "@times-components/utils";
 import articleListItemTrackingEvents from "./article-list-item-tracking-events";
 import { propTypes, defaultProps } from "./article-list-item-prop-types";
 import { getImageUri, getHeadline } from "./utils";
@@ -34,6 +33,7 @@ const ArticleListItem = props => {
     hasVideo,
     headline,
     label,
+    leadAsset,
     longSummary,
     publicationName,
     publishedTime,
@@ -44,7 +44,7 @@ const ArticleListItem = props => {
   } = article || {};
 
   const imageUri = getImageUri(article);
-  const imageAltText = getAltText(article.leadAsset);
+  const imageAltText = leadAsset.caption || ""
 
   if (isLoading) {
     return (

@@ -3,7 +3,6 @@ export * from "./strings";
 export * from "./user-state";
 
 export { default as clean } from "./props";
-export { default as getAltText } from "./get-alt-text";
 export { default as addMissingProtocol } from "./add-missing-protocol";
 export { default as AspectRatioContainer } from "./media-aspect-ratio";
 export { default as getLeadAsset } from "./get-lead-asset";
