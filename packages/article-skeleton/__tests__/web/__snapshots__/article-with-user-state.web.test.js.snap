@@ -261,7 +261,9 @@ exports[`Article with user state Render full article when user has access to ful
         />
       </span>
       <ArticleExtras
+        articleHeadline="Some Headline"
         articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        articleUrl="https://url.io"
         commentsEnabled={true}
         relatedArticleSlice={
           Object {
@@ -307,6 +309,8 @@ exports[`Article with user state Render full article when user has access to ful
           }
         }
         relatedArticlesVisible={false}
+        savingEnabled={true}
+        sharingEnabled={true}
         spotAccountId=""
         topics={
           Array [
@@ -583,7 +587,9 @@ exports[`Article with user state Render teaser article when user does not have a
         />
       </span>
       <ArticleExtras
+        articleHeadline="Some Headline"
         articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        articleUrl="https://url.io"
         commentsEnabled={true}
         relatedArticleSlice={
           Object {
@@ -629,6 +635,8 @@ exports[`Article with user state Render teaser article when user does not have a
           }
         }
         relatedArticlesVisible={false}
+        savingEnabled={true}
+        sharingEnabled={true}
         spotAccountId=""
         topics={
           Array [

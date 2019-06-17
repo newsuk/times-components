@@ -7,7 +7,9 @@ import {
   IconTwitter,
   IconCopyLink
 } from "@times-components/icons";
-import SaveStar from "@times-components/save-star-web";
+import SaveStar, {
+  saveApi as saveArticleApi
+} from "@times-components/save-star-web";
 import UserState from "@times-components/user-state";
 import { SectionContext } from "@times-components/context";
 import getTokenisedArticleUrlApi from "./get-tokenised-article-url-api";
@@ -47,6 +49,8 @@ class SaveAndShareBar extends Component {
       onShareOnTwitter,
       saveApi
     } = this.props;
+
+    const api = saveApi && saveApi.bookmark ? saveApi : saveArticleApi;
 
     return (
       <View style={styles.container}>
@@ -114,7 +118,7 @@ class SaveAndShareBar extends Component {
                 colour={styles.svgIcon.save.strokeColour}
                 hoverColor={styles.svgIcon.hoverFillColour}
                 articleId={articleId}
-                saveApi={saveApi}
+                saveApi={api}
                 height={styles.svgIcon.star.height}
                 onSaveButtonPress={this.onSaveButtonPress}
               />

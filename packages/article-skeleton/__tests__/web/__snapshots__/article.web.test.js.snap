@@ -282,7 +282,9 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
         }
       />
       <ArticleExtras
+        articleHeadline="Some Headline"
         articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        articleUrl="https://url.io"
         commentsEnabled={true}
         relatedArticleSlice={
           Object {
@@ -328,6 +330,8 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
           }
         }
         relatedArticlesVisible={false}
+        savingEnabled={true}
+        sharingEnabled={true}
         spotAccountId=""
         topics={
           Array [
@@ -374,7 +378,9 @@ exports[`2. an article with no content 1`] = `
     </div>
     <div>
       <ArticleExtras
+        articleHeadline="Some Headline"
         articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        articleUrl="https://url.io"
         commentsEnabled={true}
         relatedArticleSlice={
           Object {
@@ -420,6 +426,8 @@ exports[`2. an article with no content 1`] = `
           }
         }
         relatedArticlesVisible={false}
+        savingEnabled={true}
+        sharingEnabled={true}
         spotAccountId=""
         topics={
           Array [
@@ -481,9 +489,13 @@ exports[`3. an article with a nested markup in first paragraph displays a drop c
         </b>
       </p>
       <ArticleExtras
+        articleHeadline="Some Headline"
         articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        articleUrl="https://url.io"
         commentsEnabled={true}
         relatedArticlesVisible={false}
+        savingEnabled={true}
+        sharingEnabled={true}
         spotAccountId=""
       />
     </div>
