@@ -52,8 +52,11 @@ class EmailShare extends Component {
   }
 
   openMailClient(url) {
-    const { articleHeadline } = this.props;
-    const mailtoEmailUrl = `mailto:?subject=${articleHeadline} from The Times&body=I thought you would be interested in this story from The Times%0A%0A${articleHeadline}%0A%0A${url}`;
+    const { articleHeadline, publicationName } = this.props;
+    const publication =
+      publicationName !== "TIMES" ? "The Sunday Times" : "The Times";
+
+    const mailtoEmailUrl = `mailto:?subject=${articleHeadline} from ${publication}&body=I thought you would be interested in this story from ${publication}%0A%0A${articleHeadline}%0A%0A${url}`;
 
     window.location.assign(mailtoEmailUrl);
   }
@@ -86,7 +89,12 @@ EmailShare.propTypes = {
   articleUrl: PropTypes.string.isRequired,
   articleHeadline: PropTypes.string.isRequired,
   articleId: PropTypes.string.isRequired,
-  shouldTokenise: PropTypes.bool.isRequired
+  shouldTokenise: PropTypes.bool.isRequired,
+  publicationName: PropTypes.string
+};
+
+EmailShare.defaultProps = {
+  publicationName: "TIMES"
 };
 
 export default withTrackEvents(EmailShare);
