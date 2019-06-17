@@ -21,11 +21,32 @@ class TimesImage extends Component {
     this.handleHighResOnLoad = this.handleHighResOnLoad.bind(this);
     this.handleLowResOnLoad = this.handleLowResOnLoad.bind(this);
     this.onHighResTransitionEnd = this.onHighResTransitionEnd.bind(this);
+    this.getLowResImage = this.getLowResImage.bind(this);
+    this.getHighResImage = this.getHighResImage.bind(this);
   }
 
   onHighResTransitionEnd() {
     this.setState({
       highResIsVisible: true
+    });
+  }
+
+  getHighResImage(img) {
+    if (img && img.complete) {
+      this.handleHighResOnLoad();
+    }
+  }
+
+  getLowResImage(img) {
+    if (img && img.complete) {
+      this.handleLowResOnLoad();
+    }
+  }
+
+  handleLowResOnLoad() {
+    this.setState({
+      imageIsLoaded: true,
+      lowResIsLoaded: true
     });
   }
 
@@ -36,19 +57,13 @@ class TimesImage extends Component {
     });
   }
 
-  handleLowResOnLoad() {
-    this.setState({
-      imageIsLoaded: true,
-      lowResIsLoaded: true
-    });
-  }
-
   highResImage({ highResSize, lowResSize, url }) {
     const { highResIsLoaded } = this.state;
     if (!lowResSize || highResSize) {
       return (
         <StyledImage
           alt=""
+          ref={this.getHighResImage}
           isLoaded={highResIsLoaded}
           onLoad={this.handleHighResOnLoad}
           onTransitionEnd={this.onHighResTransitionEnd}
@@ -67,6 +82,7 @@ class TimesImage extends Component {
       return (
         <StyledImage
           alt=""
+          ref={this.getLowResImage}
           isLoaded={lowResIsLoaded}
           onLoad={this.handleLowResOnLoad}
           src={appendToURL(url, "resize", lowResSize)}
