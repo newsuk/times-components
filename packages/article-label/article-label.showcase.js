@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import invert from "lodash.invert";
+import pick from "lodash.pick";
+import { sections } from "@times-components/storybook";
 import { colours } from "@times-components/styleguide";
 import ArticleLabel from "./src/article-label";
 
@@ -11,7 +12,7 @@ export default {
         <ArticleLabel
           color={select(
             "Section",
-            invert(colours.section),
+            pick(colours.section, sections),
             colours.section.default
           )}
           title="swimming"

@@ -69,8 +69,6 @@ This reduces the number of stories, and introduces a level of interactivity that
 allows users to fiddle with UI and test various aspects of components for
 themselves.
 
-NB: we provide a shim for the `select` knob, as it has crashed storybook.
-
 ## Decorators
 
 The showcase package provides some custom

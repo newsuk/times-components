@@ -1,7 +1,8 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import { Text, View } from "react-native";
-import invert from "lodash.invert";
+import pick from "lodash.pick";
+import { sections } from "@times-components/storybook";
 import saveApi from "@times-components/save-star-web/mock-save-api-showcase";
 import articleAdConfig from "@times-components/ad/fixtures/article-ad-config.json";
 import { ContextProviderWithDefaults } from "@times-components/context";
@@ -35,7 +36,7 @@ const preventDefaultedAction = decorateAction =>
 
 const selectScales = select => select("Scale", scales, scales.medium);
 const selectSection = select =>
-  select("Section", invert(colours.section), colours.section.default);
+  select("Section", pick(colours.section, sections), colours.section.default);
 
 const renderArticleSkeleton = ({
   boolean,

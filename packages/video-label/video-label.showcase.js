@@ -1,7 +1,8 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import { colours } from "@times-components/styleguide";
-import invert from "lodash.invert";
+import pick from "lodash.pick";
+import { sections } from "@times-components/storybook";
 import VideoLabel from "./src/video-label";
 
 export default {
@@ -11,7 +12,7 @@ export default {
         <VideoLabel
           color={select(
             "Section",
-            invert(colours.section),
+            pick(colours.section, sections),
             colours.section.default
           )}
         />
@@ -24,7 +25,7 @@ export default {
         <VideoLabel
           color={select(
             "Section",
-            invert(colours.section),
+            pick(colours.section, sections),
             colours.section.default
           )}
           title="swimming"
