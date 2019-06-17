@@ -1,6 +1,6 @@
 {
   "name": "@times-components/storybook-native",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "license": "BSD-3-Clause",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
@@ -22,12 +22,12 @@
     "@storybook/addon-actions": "4.1.18",
     "@storybook/addon-info": "4.1.18",
     "@storybook/addon-knobs": "4.1.18",
-    "@storybook/addon-options": "4.1.18",
     "@storybook/addon-ondevice-knobs": "4.1.18",
+    "@storybook/addon-options": "4.1.18",
     "@storybook/addons": "4.1.18",
     "@storybook/react": "4.1.18",
     "@storybook/react-native": "4.1.18",
-    "@times-components/storybook": "4.0.11",
+    "@times-components/storybook": "4.0.12",
     "babel-polyfill": "6.26.0",
     "prop-types": "15.7.2",
     "react": "16.6.3",

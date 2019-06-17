@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.4.94](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.4.93...@times-components/pull-quote@3.4.94) (2019-06-17)
+
+
+### Bug Fixes
+
+* storybook fixes and knobs for native added ([#2035](https://github.com/newsuk/times-components/issues/2035)) ([09b1fc9](https://github.com/newsuk/times-components/commit/09b1fc9))
+
+
+
+
+
 ## [3.4.93](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.4.92...@times-components/pull-quote@3.4.93) (2019-06-17)
 
 **Note:** Version bump only for package @times-components/pull-quote

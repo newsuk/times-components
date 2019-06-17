@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.9.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.9.1...@times-components/article-skeleton@1.9.2) (2019-06-17)
+
+
+### Bug Fixes
+
+* storybook fixes and knobs for native added ([#2035](https://github.com/newsuk/times-components/issues/2035)) ([09b1fc9](https://github.com/newsuk/times-components/commit/09b1fc9))
+
+
+
+
+
 ## [1.9.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.9.0...@times-components/article-skeleton@1.9.1) (2019-06-17)
 
 **Note:** Version bump only for package @times-components/article-skeleton

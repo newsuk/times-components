@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.22](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.0.21...@times-components/key-facts@2.0.22) (2019-06-17)
+
+
+### Bug Fixes
+
+* storybook fixes and knobs for native added ([#2035](https://github.com/newsuk/times-components/issues/2035)) ([09b1fc9](https://github.com/newsuk/times-components/commit/09b1fc9))
+
+
+
+
+
 ## [2.0.21](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.0.20...@times-components/key-facts@2.0.21) (2019-06-17)
 
 **Note:** Version bump only for package @times-components/key-facts
