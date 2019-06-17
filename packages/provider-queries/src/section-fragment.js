@@ -25,6 +25,7 @@ export default gql`
         id
         title
         url
+        hideOnMobile
         image {
           crop32: crop(ratio: "3:2") {
             ratio

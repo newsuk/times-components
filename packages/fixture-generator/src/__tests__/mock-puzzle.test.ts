@@ -7,6 +7,7 @@ describe("Mock Puzzle", () => {
     expect(mockPuzzle).toHaveProperty("title");
     expect(mockPuzzle).toHaveProperty("url");
     expect(mockPuzzle).toHaveProperty("image");
+    expect(mockPuzzle).toHaveProperty("hideOnMobile");
   });
 
   it("creates Puzzle image with crop url", () => {

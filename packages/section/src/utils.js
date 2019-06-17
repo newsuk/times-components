@@ -1,5 +1,6 @@
 /* eslint-disable no-param-reassign */
 import memoizeOne from "memoize-one";
+import { editionBreakpoints } from "@times-components/styleguide";
 
 const withIgnoredSeperator = slice => ({ ...slice, ignoreSeparator: true });
 
@@ -11,8 +12,8 @@ const splitPuzzlesBySlices = (puzzles, numberOfTilesPerSlice = 3) =>
     const slices = result;
     const sliceIndex = Math.floor(index / numberOfTilesPerSlice);
     const { id, name } = puzzle;
-
     slices[sliceIndex] = slices[sliceIndex] || { id, name };
+
     slices[sliceIndex].puzzles = [
       ...(slices[sliceIndex].puzzles || []),
       puzzle
@@ -60,4 +61,23 @@ const getImage = ({ crops = [] }) => {
   };
 };
 
-export { splitPuzzlesBySlices, buildSliceData, getImage };
+const filterPuzzles = (puzzles, editionBreakpoint) =>
+  editionBreakpoint === editionBreakpoints.small
+    ? puzzles.filter(puzzle => !puzzle.hideOnMobile)
+    : puzzles;
+
+const createPuzzleData = (puzzles, editionBreakpoint) => {
+  const filteredPuzzles = filterPuzzles(puzzles, editionBreakpoint);
+  const splitedPuzzlesBySlices = splitPuzzlesBySlices(filteredPuzzles);
+  const sliceData = buildSliceData(splitedPuzzlesBySlices);
+
+  return sliceData;
+};
+
+export {
+  buildSliceData,
+  getImage,
+  createPuzzleData,
+  splitPuzzlesBySlices,
+  filterPuzzles
+};

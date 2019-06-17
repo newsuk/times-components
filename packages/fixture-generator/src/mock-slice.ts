@@ -339,14 +339,10 @@ function mockArticleSlice(count: number): ArticleSlice {
   return { items: getTiles(count), sections: [] };
 }
 
-function mockPuzzleSlice(): Puzzle {
-  const { id, title, url, image } = new MockPuzzle().get();
+function mockPuzzleSlice(hideOnMobile: boolean = false): Puzzle {
   return <PuzzleWithName>{
     name: "Puzzle",
-    id,
-    title,
-    url,
-    image
+    ...new MockPuzzle(hideOnMobile).get()
   };
 }
 
