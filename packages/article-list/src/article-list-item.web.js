@@ -44,7 +44,7 @@ const ArticleListItem = props => {
   } = article || {};
 
   const imageUri = getImageUri(article);
-  const imageAltText = leadAsset.caption || ""
+  const imageAltText = leadAsset.caption || "";
 
   if (isLoading) {
     return (
