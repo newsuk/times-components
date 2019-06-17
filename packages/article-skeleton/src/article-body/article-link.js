@@ -12,7 +12,14 @@ const ArticleLink = props => (
       return (
         <TextLink
           onPress={props.onPress}
-          style={styles.articleLink}
+          style={
+            props.style
+              ? {
+                  ...styles.articleLink,
+                  ...props.style
+                }
+              : styles.articleLink
+          }
           url={props.url}
         >
           {props.children}

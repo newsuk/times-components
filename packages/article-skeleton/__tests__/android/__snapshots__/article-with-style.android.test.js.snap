@@ -53,7 +53,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                   "fontSize": 110,
                   "marginBottom": -30,
                   "marginRight": 5,
-                  "marginTop": -17,
+                  "marginTop": -14,
                 }
               }
             >
@@ -572,7 +572,7 @@ exports[`2. an article with no content 1`] = `
 </View>
 `;
 
-exports[`3. an article with a nested markup in first paragraph displays no drop cap 1`] = `
+exports[`3. an article with a nested markup in first paragraph displays a drop cap 1`] = `
 <View
   style={
     Object {
@@ -604,19 +604,34 @@ exports[`3. an article with a nested markup in first paragraph displays no drop 
               "width": 1194,
             }
           }
-        />
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "alignSelf": "center",
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "width": 1194,
-            }
-          }
         >
+          <View
+            style={
+              Object {
+                "height": NaN,
+                "left": 5,
+                "position": "absolute",
+                "top": 0,
+                "width": 175,
+                "zIndex": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#FF0000",
+                  "fontFamily": "TimesModern-Regular",
+                  "fontSize": 110,
+                  "marginBottom": -30,
+                  "marginRight": 5,
+                  "marginTop": -14,
+                }
+              }
+            >
+              Q
+            </Text>
+          </View>
           <View
             style={
               Object {
@@ -625,32 +640,65 @@ exports[`3. an article with a nested markup in first paragraph displays no drop 
               }
             }
           >
-            <View>
+            <View
+              style={
+                Object {
+                  "height": 0,
+                }
+              }
+            >
               <Text
                 style={
                   Object {
                     "color": "#333333",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 17,
+                    "fontFamily": "TimesDigitalW04-Bold",
+                    "fontSize": NaN,
                     "fontStyle": "normal",
-                    "lineHeight": 30,
+                    "fontWeight": "bold",
+                    "left": 0,
+                    "lineHeight": NaN,
                     "marginBottom": 20,
+                    "position": "absolute",
+                    "top": 0,
                   }
                 }
               >
-                <Text
-                  style={
-                    Object {
-                      "fontFamily": "TimesDigitalW04-Bold",
-                      "fontSize": NaN,
-                      "fontStyle": "normal",
-                      "fontWeight": "bold",
-                      "lineHeight": NaN,
-                    }
+                 Some years ago I made the decision to take as a friend a woman who is very opinionated.
+              </Text>
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "paddingLeft": 10,
+                "paddingRight": 10,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "height": 0,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#333333",
+                    "fontFamily": "TimesDigitalW04-Bold",
+                    "fontSize": NaN,
+                    "fontStyle": "normal",
+                    "fontWeight": "bold",
+                    "left": 0,
+                    "lineHeight": NaN,
+                    "marginBottom": 20,
+                    "position": "absolute",
+                    "top": 0,
                   }
-                >
-                  When she does come to social events, she dominates.
-                </Text>
+                }
+              >
+                When she does come to social events, she dominates.
               </Text>
             </View>
           </View>
@@ -766,7 +814,7 @@ exports[`4. an article skeleton with responsive items 1`] = `
                     }
                   }
                 >
-                  his being Black History Month, last week
+                  This being Black History Month, last week
                 </Text>
               </Text>
             </View>

@@ -38,10 +38,10 @@ const childWithMarkup = {
 
 const childWithDropCap = [
   {
-    name: "dropCap",
     attributes: {},
     children: [
       {
+        name: "dropCap",
         attributes: {},
         children: [
           {
@@ -52,14 +52,8 @@ const childWithDropCap = [
             children: [],
             name: "text"
           }
-        ],
-        name: "paragraph"
-      }
-    ]
-  },
-  {
-    attributes: {},
-    children: [
+        ]
+      },
       {
         attributes: {
           value:
@@ -76,11 +70,11 @@ const childWithDropCap = [
 
 const childWithDropCapAndMarkup = [
   {
-    name: "dropCap",
-    attributes: {},
+    attributes: [],
     children: [
       {
-        attributes: [],
+        name: "dropCap",
+        attributes: {},
         children: [
           {
             attributes: {
@@ -98,14 +92,8 @@ const childWithDropCapAndMarkup = [
             ],
             name: "link"
           }
-        ],
-        name: "paragraph"
-      }
-    ]
-  },
-  {
-    attributes: [],
-    children: [
+        ]
+      },
       {
         attributes: {
           dropCap: true

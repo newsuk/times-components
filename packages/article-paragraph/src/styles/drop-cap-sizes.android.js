@@ -34,7 +34,7 @@ const margins = (font, scale) => {
     },
     dropCap: {
       large: { bottom: -26, top: -14 },
-      medium: { bottom: -30, top: -17 },
+      medium: { bottom: -30, top: -14 },
       xlarge: { bottom: -22, top: -16 }
     },
     stMagazine: {

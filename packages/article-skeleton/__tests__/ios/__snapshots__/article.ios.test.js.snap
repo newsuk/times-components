@@ -41,12 +41,12 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
               <Text
                 selectable={true}
               >
-                his being Black History Month, 
+                his being Black History 
               </Text>
               <Text
                 selectable={true}
               >
-                last week
+                Month, last week
               </Text>
             </View>
           </View>
@@ -288,7 +288,7 @@ exports[`2. an article with no content 1`] = `
 </View>
 `;
 
-exports[`3. an article with a nested markup in first paragraph displays no drop cap 1`] = `
+exports[`3. an article with a nested markup in first paragraph displays a drop cap 1`] = `
 <View>
   <RCTScrollView
     ListHeaderComponent={
@@ -316,7 +316,39 @@ exports[`3. an article with a nested markup in first paragraph displays no drop 
         <View />
       </View>
       <View>
-        <View />
+        <View>
+          <View>
+            <Text
+              selectable={true}
+            >
+              Q
+            </Text>
+          </View>
+          <View>
+            <View>
+              <Text
+                selectable={true}
+              >
+                 Some years ago I 
+              </Text>
+              <Text
+                selectable={true}
+              >
+                made the decision 
+              </Text>
+              <Text
+                selectable={true}
+              >
+                to take as a friend 
+              </Text>
+              <Text
+                selectable={true}
+              >
+                a woman who is very opinionated.
+              </Text>
+            </View>
+          </View>
+        </View>
       </View>
       <View>
         <View>

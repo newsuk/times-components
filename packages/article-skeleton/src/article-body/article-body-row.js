@@ -1,3 +1,4 @@
+/* eslint-disable prefer-destructuring */
 import React from "react";
 import { View } from "react-native";
 import ArticleImage from "@times-components/article-image";
@@ -21,6 +22,7 @@ import DropCap from "@times-components/article-paragraph/src/drop-cap";
 import ArticleLink from "./article-link";
 import InsetCaption from "./inset-caption";
 import styleFactory from "../styles/article-body";
+import { getDropCap, getDropCapValue } from "../dropcap-util-common";
 
 export default ({
   content: data,
@@ -72,15 +74,22 @@ export default ({
         })
       };
     },
-    dropCap(key, { value }) {
+    dropCap(key, attributes, children, indx, node) {
+      let value = node;
+      while (typeof value !== "string") {
+        if (value.name === "text") {
+          value = value.attributes.value;
+        } else {
+          value = value.children[0];
+        }
+      }
       const height = lineHeight * 3 * fontScale;
-      const text = new Text.Text({
-        font: fonts[dropCapFont],
-        lineHeight: height,
-        markup: [new Body(value)],
-        size: height
-      });
-      const capWidth = text.characters[0].getWidth() + 10 * fontScale;
+
+      const cap = getDropCap(children, fonts[dropCapFont], height, [
+        new Body(value)
+      ]);
+      const capWidth = (cap.measuredWidth + 10) * fontScale;
+
       return {
         element: new Layout.InlineBlock({
           getComponent() {
@@ -89,7 +98,7 @@ export default ({
                 {({ theme: { sectionColour = colours.section.default } }) => (
                   <DropCap
                     colour={sectionColour}
-                    dropCap={value}
+                    dropCap={getDropCapValue(cap)}
                     font={dropCapFont}
                     scale={scale}
                   />
