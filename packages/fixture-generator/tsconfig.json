@@ -6,7 +6,7 @@
       "es6"
     ] ,
     "outDir": "./build",
-    "rootDir": "./src", 
+    "rootDir": "./src",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true

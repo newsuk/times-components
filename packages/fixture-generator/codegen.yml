@@ -3,8 +3,9 @@ schema:
 documents: []
 config: {}
 generates:
-  config: {}
-  src/types.ts:
-    - "typescript-common"
-    - "typescript-client"
-    - "typescript-server"
+  ./src/types.ts:
+    config: {}
+    plugins:
+      - "typescript-common"
+      - "typescript-client"
+      - "typescript-server"
