@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Image from "@times-components/image";
 import {
-  getTileImageUri,
+  getTileImage,
   getTileSummary,
   TileLink,
   TileSummary,
@@ -12,6 +12,8 @@ import stylesFactory from "./styles";
 
 const TileW = ({ onPress, tile, breakpoint }) => {
   const styles = stylesFactory(breakpoint);
+  const crop = getTileImage(tile, "crop169");
+
   return (
     <TileLink
       onPress={onPress}
@@ -29,8 +31,12 @@ const TileW = ({ onPress, tile, breakpoint }) => {
       />
       <Image
         aspectRatio={16 / 9}
+        relativeWidth={crop.relativeWidth}
+        relativeHeight={crop.relativeHeight}
+        relativeHorizontalOffset={crop.relativeHorizontalOffset}
+        relativeVerticalOffset={crop.relativeVerticalOffset}
         style={styles.imageContainer}
-        uri={getTileImageUri(tile, "crop169")}
+        uri={crop.url}
       />
     </TileLink>
   );
