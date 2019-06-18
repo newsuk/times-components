@@ -51,3 +51,14 @@ Array [
   ],
 ]
 `;
+
+exports[`should track ArticleLink clicks in analytics 1`] = `
+Object {
+  "action": "Pressed",
+  "attrs": Object {
+    "target": "t-target",
+    "url": "test.io",
+  },
+  "component": "ArticleLink",
+}
+`;
