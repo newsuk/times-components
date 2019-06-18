@@ -12,7 +12,7 @@ const ArticleExtrasError = ({ refetch }) => (
       It looks like you&apos;re offline
     </Text>
     <Text style={styles.extrasErrorBody}>
-      Some features, such as related articles and comments, may not be avalaible
+      Some features, such as related articles and comments, may not be available
     </Text>
     <Context.Consumer>
       {({ theme: { scale } }) => {
