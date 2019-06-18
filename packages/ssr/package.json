@@ -1,7 +1,7 @@
 {
   "name": "@times-components/ssr",
   "main": "src",
-  "version": "2.3.16",
+  "version": "2.3.17",
   "scripts": {
     "bundle:dev": "yarn cleanup-dist && webpack --config=webpack.config.js",
     "bundle:prod": "yarn cleanup-dist && NODE_ENV=production webpack --config=webpack.config.js -p",
@@ -51,7 +51,7 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/article": "7.2.37",
+    "@times-components/article": "7.2.38",
     "@times-components/author-profile": "6.0.47",
     "@times-components/context": "1.0.20",
     "@times-components/provider": "1.17.11",

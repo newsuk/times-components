@@ -17,48 +17,30 @@ export default Component =>
         supports
           .filter(support => support !== undefined)
           .map(({ article }, index) => {
-            const {
-              bylines,
-              headline,
-              id,
-              publishedTime,
-              shortHeadline
-            } = article;
+            const { headline, id, shortHeadline } = article;
             return {
-              bylines,
               headline: getHeadline(headline, shortHeadline),
               id,
-              publishedTime,
               role: roles[index + 1]
             };
           });
 
       const standardTracking = () =>
         items.map(({ article }, index) => {
-          const {
-            bylines,
-            headline,
-            id,
-            publishedTime,
-            shortHeadline
-          } = article;
+          const { headline, id, shortHeadline } = article;
           return {
-            bylines,
             headline: getHeadline(headline, shortHeadline),
             id,
-            publishedTime,
             role: standardRoles[index]
           };
         });
 
       const leadOneAndTwoTracking = () => {
         const { article } = lead;
-        const { bylines, headline, id, publishedTime, shortHeadline } = article;
+        const { headline, id, shortHeadline } = article;
         const leadOneAndTwoTrackingObject = {
-          bylines,
           headline: getHeadline(headline, shortHeadline),
           id,
-          publishedTime,
           role: leadOneAndTwoRoles[0]
         };
 
@@ -69,12 +51,10 @@ export default Component =>
 
       const opinionOneAndTwoTracking = () => {
         const { article } = opinion;
-        const { bylines, headline, id, publishedTime, shortHeadline } = article;
+        const { headline, id, shortHeadline } = article;
         const opinionOneAndTwoTrackingObject = {
-          bylines,
           headline: getHeadline(headline, shortHeadline),
           id,
-          publishedTime,
           role: opinionOneAndTwoRoles[0]
         };
 

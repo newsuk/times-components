@@ -84,28 +84,8 @@ Array [
       "attrs": Object {
         "articles": Array [
           Object {
-            "bylines": Array [
-              Object {
-                "byline": Array [
-                  Object {
-                    "attributes": Object {},
-                    "children": Array [
-                      Object {
-                        "attributes": Object {
-                          "value": "Deborah Haynes",
-                        },
-                        "children": Array [],
-                        "name": "text",
-                      },
-                    ],
-                    "name": "inline",
-                  },
-                ],
-              },
-            ],
             "headline": "Test Headline",
             "id": "a88b0330-d14c-11e7-b1ec-8503a5941b97",
-            "publishedTime": "2015-03-13T18:54:58.000Z",
             "role": "lead-one-and-two",
           },
         ],
