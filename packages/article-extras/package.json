@@ -57,8 +57,8 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/message-bar": "0.2.12",
-    "@times-components/save-and-share-bar": "0.6.10",
+    "@times-components/message-bar": "0.2.13",
+    "@times-components/save-and-share-bar": "0.6.11",
     "@times-components/article-comments": "0.5.30",
     "@times-components/article-topics": "4.0.20",
     "@times-components/button": "2.3.85",
