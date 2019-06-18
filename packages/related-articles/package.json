@@ -1,6 +1,6 @@
 {
   "name": "@times-components/related-articles",
-  "version": "6.0.44",
+  "version": "6.0.45",
   "description": "related articles of an article",
   "main": "dist/related-articles",
   "dev": "src/related-articles",
