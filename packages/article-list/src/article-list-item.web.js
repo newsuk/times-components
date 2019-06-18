@@ -10,6 +10,7 @@ import { Animations, colours } from "@times-components/styleguide";
 import articleListItemTrackingEvents from "./article-list-item-tracking-events";
 import { propTypes, defaultProps } from "./article-list-item-prop-types";
 import { getImageUri, getHeadline } from "./utils";
+
 import {
   ListItemWrapper,
   ListItemLongText,
@@ -32,6 +33,7 @@ const ArticleListItem = props => {
     hasVideo,
     headline,
     label,
+    leadAsset,
     longSummary,
     publicationName,
     publishedTime,
@@ -42,6 +44,8 @@ const ArticleListItem = props => {
   } = article || {};
 
   const imageUri = getImageUri(article);
+  const imageAccessibilityLabel = (leadAsset && leadAsset.caption) || "";
+
   if (isLoading) {
     return (
       <ListItemWrapper>
@@ -111,6 +115,7 @@ const ArticleListItem = props => {
                 contentContainerClass="articleListContent"
                 fadeImageIn={fadeImageIn}
                 highResSize={highResSize}
+                imageAccessibilityLabel={imageAccessibilityLabel}
                 imageContainerClass="articleListImage"
                 imageRatio={imageRatio}
                 imageUri={imageUri}

@@ -124,6 +124,7 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
         <div>
           <div>
             <Image
+              accessibilityLabel="Some Caption"
               aspectRatio={1.7777777777777777}
               highResSize={null}
               lowResSize={100}
@@ -342,6 +343,7 @@ exports[`4. an article with ads 1`] = `
         <div>
           <div>
             <Image
+              accessibilityLabel="Some Caption"
               aspectRatio={1.7777777777777777}
               highResSize={null}
               lowResSize={100}

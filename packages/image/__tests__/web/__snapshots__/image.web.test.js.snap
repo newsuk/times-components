@@ -14,7 +14,6 @@ exports[`1. default layout 1`] = `
 <div>
   <div>
     <img
-      alt=""
       src="http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1000"
     />
     <div>
@@ -55,7 +54,6 @@ exports[`2. default layout without uri 1`] = `
 <div>
   <div>
     <img
-      alt=""
       src={null}
     />
     <div>
@@ -96,7 +94,6 @@ exports[`3. default layout without aspect ratio 1`] = `
 <div>
   <div>
     <img
-      alt=""
       src="http://example.com/image.jpg?crop=1016%2C677%2C0%2C0"
     />
     <div>
@@ -137,7 +134,6 @@ exports[`4. rounded image 1`] = `
 <div>
   <div>
     <img
-      alt=""
       src="http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800"
     />
     <div>
@@ -178,7 +174,6 @@ exports[`5. an invalid uri 1`] = `
 <div>
   <div>
     <img
-      alt=""
       src="not-valid"
     />
     <div>
@@ -219,7 +214,6 @@ exports[`6. no url in environment 1`] = `
 <div>
   <div>
     <img
-      alt=""
       src="not-valid"
     />
     <div>
@@ -260,7 +254,6 @@ exports[`7. with existing url params 1`] = `
 <div>
   <div>
     <img
-      alt=""
       src="https://image.io?resize=1400"
     />
     <div>
@@ -301,7 +294,6 @@ exports[`8. with disabled placeholder 1`] = `
 <div>
   <div>
     <img
-      alt=""
       src="https://image.io?resize=1400"
     />
   </div>
@@ -332,11 +324,9 @@ exports[`9. remove the low res image after the high res image has transitioned i
 <div>
   <div>
     <img
-      alt=""
       src="https://image.io?resize=1400"
     />
     <img
-      alt=""
       src="https://image.io?resize=200"
     />
   </div>
@@ -357,7 +347,6 @@ exports[`9. remove the low res image after the high res image has transitioned i
 <div>
   <div>
     <img
-      alt=""
       src="https://image.io?resize=1400"
     />
   </div>
@@ -378,7 +367,6 @@ exports[`10. only a low res image 1`] = `
 <div>
   <div>
     <img
-      alt=""
       src="https://image.io?resize=200"
     />
     <div>
@@ -419,7 +407,6 @@ exports[`11. fade in the low res image 1`] = `
 <div>
   <div>
     <img
-      alt=""
       src="https://image.io?resize=200"
     />
     <div>
@@ -460,7 +447,6 @@ exports[`11. fade in the low res image 2`] = `
 <div>
   <div>
     <img
-      alt=""
       src="https://image.io?resize=200"
     />
   </div>
@@ -491,11 +477,9 @@ exports[`12. both high and low res sizes 1`] = `
 <div>
   <div>
     <img
-      alt=""
       src="https://image.io?resize=900"
     />
     <img
-      alt=""
       src="https://image.io?resize=200"
     />
     <div>

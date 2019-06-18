@@ -27,6 +27,7 @@ exports[`5. image with no caption 1`] = `
 <View>
   <View>
     <ModalImage
+      accessibilityLabel={null}
       aspectRatio={1.7777777777777777}
       caption={
         <Caption
@@ -73,6 +74,7 @@ exports[`8. primary image renders with caption and credits 1`] = `
 <View>
   <View>
     <ModalImage
+      accessibilityLabel="Some caption"
       aspectRatio={1.7777777777777777}
       caption={
         <Caption
@@ -103,6 +105,7 @@ exports[`9. primary image with given resolutions 1`] = `
 <View>
   <View>
     <ModalImage
+      accessibilityLabel="Some caption"
       aspectRatio={1.7777777777777777}
       caption={
         <Caption

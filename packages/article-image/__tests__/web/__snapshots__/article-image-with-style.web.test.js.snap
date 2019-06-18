@@ -26,6 +26,7 @@ Array [
     className="css-view-1dbjc4n"
   >
     <TimesImage
+      accessibilityLabel="Some caption"
       aspectRatio={1.25}
       caption={
         <Caption
@@ -129,6 +130,7 @@ Array [
     className="css-view-1dbjc4n"
   >
     <TimesImage
+      accessibilityLabel="Some caption"
       aspectRatio={1.25}
       caption={
         <Caption
@@ -222,6 +224,7 @@ Array [
     className="css-view-1dbjc4n"
   >
     <TimesImage
+      accessibilityLabel="Some caption"
       aspectRatio={1.25}
       caption={
         <Caption
@@ -284,6 +287,7 @@ Array [
     className="css-view-1dbjc4n"
   >
     <TimesImage
+      accessibilityLabel="Some caption"
       aspectRatio={1.25}
       caption={
         <Caption
@@ -346,6 +350,7 @@ Array [
     className="css-view-1dbjc4n r-width-1f720gc"
   >
     <TimesImage
+      accessibilityLabel="Another caption"
       aspectRatio={1.5}
       caption={
         <Caption
@@ -423,6 +428,7 @@ exports[`6. primary image with caption and credits with center caption override 
     className="css-view-1dbjc4n"
   >
     <TimesImage
+      accessibilityLabel="Some caption"
       aspectRatio={1.25}
       caption={
         <Caption
@@ -536,6 +542,7 @@ exports[`7. secondary image with caption and credits with center caption overrid
     className="css-view-1dbjc4n r-width-1f720gc"
   >
     <TimesImage
+      accessibilityLabel="Another caption"
       aspectRatio={1.5}
       caption={
         <Caption
