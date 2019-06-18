@@ -44,7 +44,7 @@ const ArticleListItem = props => {
   } = article || {};
 
   const imageUri = getImageUri(article);
-  const imageAccessibilityLabel = leadAsset && leadAsset.caption || "";
+  const imageAccessibilityLabel = (leadAsset && leadAsset.caption) || "";
 
   if (isLoading) {
     return (
