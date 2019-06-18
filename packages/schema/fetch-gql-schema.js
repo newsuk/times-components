@@ -31,7 +31,7 @@ const writeFragmentMatcher = (cwd, schema) => {
   );
 
   const fm = `
-  const { IntrospectionFragmentMatcher } = require("apollo-cache-inmemory");
+  const apolloCacheInmemory = require("apollo-cache-inmemory");
 
   const introspectionQueryResultData = {
     __schema: {
@@ -39,7 +39,7 @@ const writeFragmentMatcher = (cwd, schema) => {
     }
   };
 
-  const fragmentMatcher = new IntrospectionFragmentMatcher({
+  const fragmentMatcher = new apolloCacheInmemory.IntrospectionFragmentMatcher({
     introspectionQueryResultData
   });
 

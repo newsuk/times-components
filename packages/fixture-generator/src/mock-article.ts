@@ -73,7 +73,19 @@ class MockArticle {
       summary160: new MockMarkup().addSummary("summary160").get(),
       summary175: new MockMarkup().addSummary("summary175").get(),
       summary225: new MockMarkup().addSummary("summary225").get(),
-      summary300: new MockMarkup().addSummary("summary300").get()
+      summary300: new MockMarkup().addSummary("summary300").get(),
+      synonyms: {
+        edges: [],
+        nodes: [],
+        pageInfo: {
+          hasNextPage: false,
+          hasPreviousPage: false
+        },
+        totalCount: 1
+      },
+      topicConnection: {
+        nodes: []
+      }
     };
   }
 
