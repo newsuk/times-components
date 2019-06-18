@@ -63,6 +63,7 @@ exports[`1. modal image 1`] = `
                 }
               />
               <Image
+                accessibilityLabel=""
                 caption={<MockCaption />}
                 fadeDuration={0}
                 fadeImageIn={false}
@@ -127,6 +128,7 @@ exports[`1. modal image 1`] = `
           }
         />
         <Image
+          accessibilityLabel=""
           caption={<MockCaption />}
           fadeDuration={0}
           fadeImageIn={false}
@@ -144,6 +146,7 @@ exports[`1. modal image 1`] = `
       >
         <View>
           <Image
+            accessibilityLabel=""
             caption={<MockCaption />}
             fadeDuration={0}
             fadeImageIn={false}
@@ -348,6 +351,7 @@ exports[`3. modal image with custom highressize 1`] = `
                 }
               />
               <Image
+                accessibilityLabel=""
                 caption={<MockCaption />}
                 fadeDuration={0}
                 fadeImageIn={false}
@@ -412,6 +416,7 @@ exports[`3. modal image with custom highressize 1`] = `
           }
         />
         <Image
+          accessibilityLabel=""
           caption={<MockCaption />}
           fadeDuration={0}
           fadeImageIn={false}
@@ -429,6 +434,7 @@ exports[`3. modal image with custom highressize 1`] = `
       >
         <View>
           <Image
+            accessibilityLabel=""
             caption={<MockCaption />}
             fadeDuration={0}
             fadeImageIn={false}

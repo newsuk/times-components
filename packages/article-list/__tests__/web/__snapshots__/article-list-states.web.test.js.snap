@@ -94,15 +94,51 @@ exports[`4. loading state 1`] = `
     <div
       accessibility-label="empty.0"
       id="empty.0"
-    />
+    >
+      <div>
+        <div>
+          <Card
+            imageRatio={1}
+            isLoading={true}
+            showImage={true}
+          />
+        </div>
+      </div>
+    </div>
     <div
       accessibility-label="empty.1"
       id="empty.1"
-    />
+    >
+      <div>
+        <div>
+          <div />
+        </div>
+        <div>
+          <Card
+            imageRatio={1}
+            isLoading={true}
+            showImage={true}
+          />
+        </div>
+      </div>
+    </div>
     <div
       accessibility-label="empty.2"
       id="empty.2"
-    />
+    >
+      <div>
+        <div>
+          <div />
+        </div>
+        <div>
+          <Card
+            imageRatio={1}
+            isLoading={true}
+            showImage={true}
+          />
+        </div>
+      </div>
+    </div>
     <div>
       <div>
         <Pagination
