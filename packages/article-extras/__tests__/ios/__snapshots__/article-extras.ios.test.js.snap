@@ -23,7 +23,7 @@ exports[`2. article extras error 1`] = `
     It looks like you're offline
   </Text>
   <Text>
-    Some features, such as related articles and comments, may not be avalaible
+    Some features, such as related articles and comments, may not be available
   </Text>
   <View
     accessibilityLabel="Retry"
