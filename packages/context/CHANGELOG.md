@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.20](https://github.com/newsuk/times-components/compare/@times-components/context@1.0.19...@times-components/context@1.0.20) (2019-06-18)
+
+**Note:** Version bump only for package @times-components/context
+
+
+
+
+
 ## [1.0.19](https://github.com/newsuk/times-components/compare/@times-components/context@1.0.18...@times-components/context@1.0.19) (2019-06-17)
 
 **Note:** Version bump only for package @times-components/context
