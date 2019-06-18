@@ -82,47 +82,8 @@ Array [
       "attrs": Object {
         "articles": Array [
           Object {
-            "bylines": Array [
-              Object {
-                "byline": Array [
-                  Object {
-                    "attributes": Object {
-                      "slug": "camilla-long",
-                    },
-                    "children": Array [
-                      Object {
-                        "attributes": Object {
-                          "value": "Camilla Long",
-                        },
-                        "children": Array [],
-                        "name": "text",
-                      },
-                    ],
-                    "name": "author",
-                  },
-                ],
-              },
-              Object {
-                "byline": Array [
-                  Object {
-                    "attributes": Object {},
-                    "children": Array [
-                      Object {
-                        "attributes": Object {
-                          "value": ", Environment Editor",
-                        },
-                        "children": Array [],
-                        "name": "text",
-                      },
-                    ],
-                    "name": "inline",
-                  },
-                ],
-              },
-            ],
             "headline": "Test Short Headline",
             "id": "48604618-fb0e-11e7-a987-7fcf5e9983dc",
-            "publishedTime": "2015-03-13T18:54:58.000Z",
             "role": "standard-1",
           },
         ],
