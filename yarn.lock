@@ -3261,6 +3261,36 @@
     fs-extra "6.0.0"
     glob "7.1.2"
 
+"@times-components/error-view@2.2.70":
+  version "2.2.70"
+  resolved "https://registry.yarnpkg.com/@times-components/error-view/-/error-view-2.2.70.tgz#2dbfdcbbcc19c330c888c955dd024f90f6549a6d"
+  integrity sha512-GA1dY6s/wZm5JUaMaKWBJAwJijAJMlrqvTi3R9YOVuKVszQoeOXMr8Fv5/RaEut6cux6tUI4rVYsc6NoOu4YUA==
+  dependencies:
+    "@times-components/styleguide" "3.28.25"
+    prop-types "15.7.2"
+
+"@times-components/styleguide@3.28.25":
+  version "3.28.25"
+  resolved "https://registry.yarnpkg.com/@times-components/styleguide/-/styleguide-3.28.25.tgz#f2fefd20d69e6cc1fcde63ceba69fc83d313ed26"
+  integrity sha512-H1tfnlvW9KF3CmD0Zp20krPdk2DoMnfsoVZJcMACYHbXoqkPbQwHsRFtzuSgj450qiFwUoOpeoqgixslhOnodQ==
+  dependencies:
+    prop-types "15.7.2"
+    styled-components "4.2.0"
+
+"@times-components/video@4.7.43":
+  version "4.7.43"
+  resolved "https://registry.yarnpkg.com/@times-components/video/-/video-4.7.43.tgz#b51ef9938c1a285a5f024568abae4b9fda4f60d9"
+  integrity sha512-2QYdr/uYiCen58UlozcBW/tZE8tfzR6LooCIRF8G4LfUQE0YKeR0Umpd+H6RTBFVLC+iRJCTEmmIYKMYE0O5sQ==
+  dependencies:
+    "@times-components/error-view" "2.2.70"
+    "@times-components/gradient" "3.1.36"
+    "@times-components/icons" "2.11.14"
+    "@times-components/image" "6.1.5"
+    "@times-components/styleguide" "3.28.25"
+    "@times-components/svgs" "2.7.13"
+    prop-types "15.7.2"
+    styled-components "4.2.0"
+
 "@types/accepts@^1.3.5":
   version "1.3.5"
   resolved "https://registry.yarnpkg.com/@types/accepts/-/accepts-1.3.5.tgz#c34bec115cfc746e04fe5a059df4ce7e7b391575"
