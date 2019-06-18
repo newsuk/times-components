@@ -1,8 +1,11 @@
 import { mockPuzzleSlice } from "@times-components/fixture-generator";
+import { editionBreakpoints } from "@times-components/styleguide";
 import {
   splitPuzzlesBySlices,
   buildSliceData,
-  getImage
+  getImage,
+  filterPuzzles,
+  createPuzzleData
 } from "../../src/utils";
 
 describe("splitPuzzlesBySlices", () => {
@@ -55,6 +58,7 @@ describe("buildSliceData", () => {
       { id: "l", name: "DailyUniversalRegister" }
     ];
     const newData = buildSliceData(originalData);
+
     expect(newData).toMatchSnapshot();
   });
 
@@ -103,5 +107,62 @@ describe("getImage", () => {
       ratio: 35 / 43,
       url: exampleUrl
     });
+  });
+});
+
+describe("filterPuzzles", () => {
+  it("should not filter the puzzles on small resolution and return the same collection", () => {
+    const puzzles = new Array(7).fill(0).map(() => mockPuzzleSlice());
+    const filteredPuzzles = filterPuzzles(puzzles, editionBreakpoints.small);
+
+    expect(filteredPuzzles.length).toBe(7);
+  });
+
+  it("should not filter the puzzles on different resolution than small and return the same collection", () => {
+    const puzzles = new Array(6).fill(0).map(() => mockPuzzleSlice());
+    puzzles.push(mockPuzzleSlice(true));
+    const filteredPuzzles = filterPuzzles(puzzles, editionBreakpoints.wide);
+
+    expect(filteredPuzzles.length).toBe(7);
+  });
+
+  it("should filter the puzzles and return array with 6 elements", () => {
+    const puzzles = new Array(6).fill(0).map(() => mockPuzzleSlice());
+    puzzles.push(mockPuzzleSlice(true));
+    const filteredPuzzles = filterPuzzles(puzzles, editionBreakpoints.small);
+
+    expect(filteredPuzzles.length).toBe(6);
+  });
+
+  it("should return an empty array if puzzles are is empty", () => {
+    const puzzles = [];
+    const filteredPuzzles = filterPuzzles(puzzles, editionBreakpoints.small);
+
+    expect(filteredPuzzles.length).toBe(0);
+  });
+});
+
+describe("createPuzzleData", () => {
+  it("should create puzzle data and return 3 rows of puzzles", () => {
+    const puzzles = new Array(7).fill(0).map(() => mockPuzzleSlice());
+    const data = createPuzzleData(puzzles, editionBreakpoints.small);
+
+    expect(data).toMatchSnapshot();
+  });
+
+  it("should create puzzle data and return 2 rows of puzzles", () => {
+    const puzzles = new Array(6).fill(0).map(() => mockPuzzleSlice());
+    puzzles.push(mockPuzzleSlice(true));
+    const data = createPuzzleData(puzzles, editionBreakpoints.small);
+
+    expect(data).toMatchSnapshot();
+  });
+
+  it("should create puzzle data and return 3 rows of puzzles on resolution different than small ", () => {
+    const puzzles = new Array(6).fill(0).map(() => mockPuzzleSlice());
+    puzzles.push(mockPuzzleSlice(true));
+    const data = createPuzzleData(puzzles, editionBreakpoints.wide);
+
+    expect(data).toMatchSnapshot();
   });
 });

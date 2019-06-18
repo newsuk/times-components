@@ -9,7 +9,7 @@ import PuzzleBar from "./puzzle-bar";
 import MagazineCover from "./magazine-cover";
 import Slice from "./slice";
 import styles from "./styles";
-import { splitPuzzlesBySlices, buildSliceData } from "./utils";
+import { buildSliceData, createPuzzleData } from "./utils";
 
 class Section extends Component {
   constructor(props) {
@@ -90,38 +90,41 @@ class Section extends Component {
       onViewed,
       receiveChildList
     } = this.props;
+
     const isPuzzle = name === "PuzzleSection";
     const isMagazine = name === "MagazineSection";
-
-    const data = isPuzzle
-      ? buildSliceData(splitPuzzlesBySlices(slices))
-      : buildSliceData(slices);
-
-    if (slices) receiveChildList(data);
 
     return (
       <Responsive>
         <ResponsiveContext.Consumer>
-          {({ isTablet }) => (
-            <FlatList
-              removeClippedSubviews
-              data={data}
-              initialNumToRender={isTablet ? 5 : 2}
-              ItemSeparatorComponent={this.renderItemSeperator}
-              keyExtractor={item => item.elementId}
-              ListHeaderComponent={this.getHeaderComponent(
-                isPuzzle,
-                isMagazine
-              )}
-              nestedScrollEnabled
-              onViewableItemsChanged={
-                onViewed ? this.onViewableItemsChanged : null
-              }
-              renderItem={this.renderItem}
-              style={isTablet ? styles.tabletSpacing : null}
-              windowSize={3}
-            />
-          )}
+          {({ isTablet, editionBreakpoint }) => {
+            const data = isPuzzle
+              ? createPuzzleData(slices, editionBreakpoint)
+              : buildSliceData(slices);
+
+            if (slices) receiveChildList(data);
+
+            return (
+              <FlatList
+                removeClippedSubviews
+                data={data}
+                initialNumToRender={isTablet ? 5 : 2}
+                ItemSeparatorComponent={this.renderItemSeperator}
+                keyExtractor={item => item.elementId}
+                ListHeaderComponent={this.getHeaderComponent(
+                  isPuzzle,
+                  isMagazine
+                )}
+                nestedScrollEnabled
+                onViewableItemsChanged={
+                  onViewed ? this.onViewableItemsChanged : null
+                }
+                renderItem={this.renderItem}
+                style={isTablet ? styles.tabletSpacing : null}
+                windowSize={3}
+              />
+            );
+          }}
         </ResponsiveContext.Consumer>
       </Responsive>
     );
