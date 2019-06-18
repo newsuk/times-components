@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
   ...sharedStyles,
   link: {
     ...sharedStyles.link,
-    lineHeight: 19,
+    lineHeight: 19
   },
   nonLinkText: {
     ...sharedStyles.nonLinkText,
