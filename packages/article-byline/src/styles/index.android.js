@@ -6,7 +6,6 @@ const styles = StyleSheet.create({
   link: {
     ...sharedStyles.link,
     lineHeight: 19,
-    textDecorationLine: "none"
   },
   nonLinkText: {
     ...sharedStyles.nonLinkText,
