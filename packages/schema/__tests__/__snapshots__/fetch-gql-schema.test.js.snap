@@ -12,7 +12,7 @@ Object {
 
 exports[`fetch gql schema should 2. write the expected fragment matcher 1`] = `
 "
-  const { IntrospectionFragmentMatcher } = require(\\"apollo-cache-inmemory\\");
+  const apolloCacheInmemory = require(\\"apollo-cache-inmemory\\");
 
   const introspectionQueryResultData = {
     __schema: {
@@ -20,7 +20,7 @@ exports[`fetch gql schema should 2. write the expected fragment matcher 1`] = `
     }
   };
 
-  const fragmentMatcher = new IntrospectionFragmentMatcher({
+  const fragmentMatcher = new apolloCacheInmemory.IntrospectionFragmentMatcher({
     introspectionQueryResultData
   });
 
