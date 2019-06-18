@@ -25,8 +25,3 @@ export const defaultProps = {
   rounded: false,
   uri: null
 };
-
-export const webDefaultProps = {
-  ...defaultProps,
-  accessibilityLabel: ""
-};

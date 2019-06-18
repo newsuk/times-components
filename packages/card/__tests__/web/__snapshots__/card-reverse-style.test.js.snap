@@ -111,7 +111,6 @@ exports[`card with reversed layout 1`] = `
     className="css-view-1dbjc4n r-flex-13awgt0 r-marginBottom-p1pxzi r-minWidth-3e7lpq S3"
   >
     <TimesImage
-      accessibilityLabel=""
       aspectRatio={0.6666666666666666}
       disablePlaceholder={false}
       fadeImageIn={false}

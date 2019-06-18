@@ -76,7 +76,6 @@ exports[`1. a full article 1`] = `
   </svg>
   ADVERTISEMENT
   <img
-    alt=""
     src="https://image.io"
   />
   <svg

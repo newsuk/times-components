@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { View } from "react-native";
 import { addMissingProtocol } from "@times-components/utils";
 import Placeholder from "./placeholder";
-import { webDefaultProps, propTypes } from "./image-prop-types";
+import { defaultProps, propTypes } from "./image-prop-types";
 import appendToURL from "./utils";
 import styles from "./styles/index.web";
 import StyledImage from "./styles/responsive";
@@ -130,6 +130,6 @@ class TimesImage extends Component {
 }
 
 TimesImage.propTypes = propTypes;
-TimesImage.defaultProps = webDefaultProps;
+TimesImage.defaultProps = defaultProps;
 
 export default TimesImage;
