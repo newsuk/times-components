@@ -6,6 +6,7 @@ import {
   mockDailyRegisterSlice,
   mockPuzzleSlice
 } from "@times-components/fixture-generator";
+import { editionBreakpoints } from "@times-components/styleguide";
 
 import {
   TileA,
@@ -236,4 +237,28 @@ export default () => {
   ];
 
   iterator(tests);
+
+  describe("tiles that change logic based on breakpoints", () => {
+    test("TileW without teaser for tablet", () => {
+      const output = TestRenderer.create(
+        <TileW
+          onPress={() => {}}
+          tile={tile}
+          breakpoint={editionBreakpoints.medium}
+        />
+      );
+      expect(output).toMatchSnapshot();
+    });
+
+    test("TileW with teaser for wider screens", () => {
+      const output = TestRenderer.create(
+        <TileW
+          onPress={() => {}}
+          tile={tile}
+          breakpoint={editionBreakpoints.wide}
+        />
+      );
+      expect(output).toMatchSnapshot();
+    });
+  });
 };
