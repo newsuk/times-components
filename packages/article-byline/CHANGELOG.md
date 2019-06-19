@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.82](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.1.81...@times-components/article-byline@3.1.82) (2019-06-19)
+
+
+### Bug Fixes
+
+* remove underline from byline ([#2044](https://github.com/newsuk/times-components/issues/2044)) ([7401b19](https://github.com/newsuk/times-components/commit/7401b19))
+
+
+
+
+
 ## [3.1.81](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.1.80...@times-components/article-byline@3.1.81) (2019-06-18)
 
 **Note:** Version bump only for package @times-components/article-byline

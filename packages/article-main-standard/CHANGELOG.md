@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.6.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.5.12...@times-components/article-main-standard@3.6.0) (2019-06-19)
+
+
+### Bug Fixes
+
+* replat 6828 change colon to fullstop in time display ([#2048](https://github.com/newsuk/times-components/issues/2048)) ([6a9e8bc](https://github.com/newsuk/times-components/commit/6a9e8bc))
+
+
+### Features
+
+* replat 3983 add alt tag to images ([#2040](https://github.com/newsuk/times-components/issues/2040)) ([2538d9e](https://github.com/newsuk/times-components/commit/2538d9e))
+
+
+
+
+
 ## [3.5.12](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.5.11...@times-components/article-main-standard@3.5.12) (2019-06-18)
 
 **Note:** Version bump only for package @times-components/article-main-standard

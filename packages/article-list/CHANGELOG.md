@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.1.0](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.0.32...@times-components/article-list@9.1.0) (2019-06-19)
+
+
+### Features
+
+* replat 3983 add alt tag to images ([#2040](https://github.com/newsuk/times-components/issues/2040)) ([2538d9e](https://github.com/newsuk/times-components/commit/2538d9e))
+
+
+
+
+
 ## [9.0.32](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.0.31...@times-components/article-list@9.0.32) (2019-06-18)
 
 **Note:** Version bump only for package @times-components/article-list

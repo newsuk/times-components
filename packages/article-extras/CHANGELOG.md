@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.61](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.1.60...@times-components/article-extras@0.1.61) (2019-06-19)
+
+
+### Bug Fixes
+
+* typo in article extras ([#2045](https://github.com/newsuk/times-components/issues/2045)) ([b71b554](https://github.com/newsuk/times-components/commit/b71b554))
+
+
+
+
+
 ## [0.1.60](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.1.59...@times-components/article-extras@0.1.60) (2019-06-18)
 
 **Note:** Version bump only for package @times-components/article-extras

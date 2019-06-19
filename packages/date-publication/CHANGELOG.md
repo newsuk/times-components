@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.20.72](https://github.com/newsuk/times-components/compare/@times-components/date-publication@0.20.71...@times-components/date-publication@0.20.72) (2019-06-19)
+
+
+### Bug Fixes
+
+* replat 6828 change colon to fullstop in time display ([#2048](https://github.com/newsuk/times-components/issues/2048)) ([6a9e8bc](https://github.com/newsuk/times-components/commit/6a9e8bc))
+
+
+
+
+
 ## [0.20.71](https://github.com/newsuk/times-components/compare/@times-components/date-publication@0.20.70...@times-components/date-publication@0.20.71) (2019-06-18)
 
 **Note:** Version bump only for package @times-components/date-publication
