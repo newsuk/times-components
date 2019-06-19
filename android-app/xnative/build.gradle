@@ -73,15 +73,8 @@ android {
     }
 }
 
-
-configurations.all {
-    resolutionStrategy {
-        force 'org.webkit:android-jsc:r241213'
-    }
-}
-
 dependencies {
-    implementation "org.webkit:android-jsc-cppruntime:+"
+    implementation "org.webkit:android-jsc:r241213"
     
     api "com.facebook.react:react-native:${packageInfo.dependencies.'react-native'}"
     api("react-repo:react-native-svg:${packageInfo.dependencies.'react-native-svg'}") {	

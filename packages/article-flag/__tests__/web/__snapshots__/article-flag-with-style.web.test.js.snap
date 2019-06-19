@@ -42,7 +42,7 @@ exports[`1. red article flag 1`] = `
     className="css-view-1dbjc4n IS1"
   />
   <div
-    className="css-text-76zvg2 IS2"
+    className="css-text-901oao IS2"
   >
     coloured red
   </div>
@@ -222,7 +222,7 @@ exports[`2. multiple article flags 1`] = `
         className="css-view-1dbjc4n IS1"
       />
       <div
-        className="css-text-76zvg2 IS2"
+        className="css-text-901oao IS2"
       >
         updated
       </div>
@@ -238,7 +238,7 @@ exports[`2. multiple article flags 1`] = `
         className="css-view-1dbjc4n IS5"
       />
       <div
-        className="css-text-76zvg2 IS6"
+        className="css-text-901oao IS6"
       >
         exclusive
       </div>
@@ -254,7 +254,7 @@ exports[`2. multiple article flags 1`] = `
         className="css-view-1dbjc4n IS9"
       />
       <div
-        className="css-text-76zvg2 IS10"
+        className="css-text-901oao IS10"
       >
         new
       </div>
@@ -270,7 +270,7 @@ exports[`2. multiple article flags 1`] = `
         className="css-view-1dbjc4n IS13"
       />
       <div
-        className="css-text-76zvg2 IS14"
+        className="css-text-901oao IS14"
       >
         sponsored
       </div>

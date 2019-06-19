@@ -128,7 +128,7 @@ exports[`1. daily universal register 1`] = `
         uri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
       />
       <div
-        className="css-text-76zvg2 IS2"
+        className="css-text-901oao IS2"
       >
         Daily Universal Register
       </div>
@@ -735,7 +735,7 @@ exports[`2. leaders 1`] = `
       className="css-view-1dbjc4n IS3"
     >
       <div
-        className="css-text-76zvg2 IS2"
+        className="css-text-901oao IS2"
       >
          Leading Articles 
       </div>
@@ -902,7 +902,7 @@ exports[`2. leaders 2`] = `
       className="css-view-1dbjc4n IS3"
     >
       <div
-        className="css-text-76zvg2 IS2"
+        className="css-text-901oao IS2"
       >
          Leading Articles 
       </div>
@@ -2671,7 +2671,7 @@ exports[`14. leaders 1`] = `
       className="css-view-1dbjc4n IS3"
     >
       <div
-        className="css-text-76zvg2 IS2"
+        className="css-text-901oao IS2"
       >
          Leading Articles 
       </div>

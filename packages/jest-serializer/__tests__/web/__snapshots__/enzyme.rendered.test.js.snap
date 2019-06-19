@@ -5,13 +5,13 @@ exports[`On web the Enzyme rendered serializer should render the expected snapsh
   className="css-view-1dbjc4n"
 >
   <div
-    className="css-text-76zvg2"
+    className="css-text-901oao"
     dir="auto"
   >
     Hello!
   </div>
   <div
-    className="css-text-76zvg2"
+    className="css-text-901oao"
     dir="auto"
   >
     deeply nested

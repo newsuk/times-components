@@ -12,7 +12,7 @@ exports[`On web the Enzyme tree serializer should render the expected snapshot 1
     >
       <Text>
         <div
-          className="css-text-76zvg2"
+          className="css-text-901oao"
           dir="auto"
         >
           Hello!
@@ -20,7 +20,7 @@ exports[`On web the Enzyme tree serializer should render the expected snapshot 1
       </Text>
       <Text>
         <div
-          className="css-text-76zvg2"
+          className="css-text-901oao"
           dir="auto"
         >
           deeply nested

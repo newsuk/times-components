@@ -19,7 +19,7 @@ exports[`1. with a single author 1`] = `
   className="css-view-1dbjc4n"
 >
   <div
-    className="css-text-76zvg2 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S1"
+    className="css-text-901oao r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S1"
   >
     Alexandra Frean
   </div>
@@ -45,32 +45,32 @@ exports[`2. with a very long byline 1`] = `
   className="css-view-1dbjc4n"
 >
   <div
-    className="css-text-76zvg2 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S1"
+    className="css-text-901oao r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S1"
   >
     Camilla Long
   </div>
   <div
-    className="css-text-76zvg2 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S1"
+    className="css-text-901oao r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S1"
   >
     , Environment Editor | 
   </div>
   <div
-    className="css-text-76zvg2 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S1"
+    className="css-text-901oao r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S1"
   >
     Camilla Long
   </div>
   <div
-    className="css-text-76zvg2 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S1"
+    className="css-text-901oao r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S1"
   >
     , Environment Editor | 
   </div>
   <div
-    className="css-text-76zvg2 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S1"
+    className="css-text-901oao r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S1"
   >
     Camilla Long
   </div>
   <div
-    className="css-text-76zvg2 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S1"
+    className="css-text-901oao r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S1"
   >
     , Environment Editor
   </div>

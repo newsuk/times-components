@@ -8,7 +8,7 @@ exports[`1. caption without credits 1`] = `
     className="css-view-1dbjc4n r-paddingTop-m611by"
   >
     <div
-      className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+      className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
     >
       Some caption text goes in here
     </div>
@@ -24,12 +24,12 @@ exports[`2. caption with credits 1`] = `
     className="css-view-1dbjc4n r-paddingTop-m611by"
   >
     <div
-      className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+      className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
     >
       Some caption text goes in here
     </div>
     <div
-      className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
+      className="css-text-901oao r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
     >
       JUST CREDITS
     </div>
@@ -45,7 +45,7 @@ exports[`3. caption with credits only 1`] = `
     className="css-view-1dbjc4n r-paddingTop-m611by"
   >
     <div
-      className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
+      className="css-text-901oao r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
     >
       JUST CREDITS
     </div>
@@ -58,7 +58,7 @@ exports[`4. caption with child 1`] = `
   className="css-view-1dbjc4n"
 >
   <div
-    className="css-text-76zvg2"
+    className="css-text-901oao"
   >
     Hello world!
   </div>
@@ -66,12 +66,12 @@ exports[`4. caption with child 1`] = `
     className="css-view-1dbjc4n r-paddingTop-m611by"
   >
     <div
-      className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+      className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
     >
       Some caption text goes in here
     </div>
     <div
-      className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
+      className="css-text-901oao r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
     >
       JUST CREDITS
     </div>
@@ -87,7 +87,7 @@ exports[`5. centred caption without credits 1`] = `
     className="css-view-1dbjc4n r-paddingTop-m611by"
   >
     <div
-      className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+      className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
       style={
         Object {
           "paddingLeft": "10px",
@@ -110,7 +110,7 @@ exports[`6. centred caption caption with credits 1`] = `
     className="css-view-1dbjc4n r-paddingTop-m611by"
   >
     <div
-      className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+      className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
       style={
         Object {
           "paddingLeft": "10px",
@@ -122,7 +122,7 @@ exports[`6. centred caption caption with credits 1`] = `
       Some caption text goes in here
     </div>
     <div
-      className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
+      className="css-text-901oao r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
       style={
         Object {
           "paddingLeft": "10px",
@@ -145,7 +145,7 @@ exports[`7. centred caption caption with credits only 1`] = `
     className="css-view-1dbjc4n r-paddingTop-m611by"
   >
     <div
-      className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
+      className="css-text-901oao r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
       style={
         Object {
           "paddingLeft": "10px",
@@ -165,7 +165,7 @@ exports[`8. centred caption caption with child 1`] = `
   className="css-view-1dbjc4n"
 >
   <div
-    className="css-text-76zvg2"
+    className="css-text-901oao"
   >
     Hello world!
   </div>
@@ -173,7 +173,7 @@ exports[`8. centred caption caption with child 1`] = `
     className="css-view-1dbjc4n r-paddingTop-m611by"
   >
     <div
-      className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+      className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
       style={
         Object {
           "paddingLeft": "10px",
@@ -185,7 +185,7 @@ exports[`8. centred caption caption with child 1`] = `
       Some caption text goes in here
     </div>
     <div
-      className="css-text-76zvg2 r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
+      className="css-text-901oao r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
       style={
         Object {
           "paddingLeft": "10px",

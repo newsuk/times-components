@@ -48,7 +48,7 @@
   },
   "peerDependencies": {
     "babel-loader": "8.0.5",
-    "react-native-web": "0.11.2",
+    "react-native-web": "0.11.4",
     "webpack": ">=4.30.0"
   },
   "publishConfig": {

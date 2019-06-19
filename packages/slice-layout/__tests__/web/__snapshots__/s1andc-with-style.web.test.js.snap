@@ -34,7 +34,7 @@ exports[`1. secondary one and columnist - small 1`] = `
     }
   >
     <div
-      className="css-text-76zvg2"
+      className="css-text-901oao"
     >
       secondary
     </div>
@@ -67,7 +67,7 @@ exports[`1. secondary one and columnist - small 1`] = `
     }
   >
     <div
-      className="css-text-76zvg2"
+      className="css-text-901oao"
     >
       columnist
     </div>
@@ -109,7 +109,7 @@ exports[`2. secondary one and columnist - medium 1`] = `
     }
   >
     <div
-      className="css-text-76zvg2"
+      className="css-text-901oao"
     >
       secondary
     </div>
@@ -142,7 +142,7 @@ exports[`2. secondary one and columnist - medium 1`] = `
     }
   >
     <div
-      className="css-text-76zvg2"
+      className="css-text-901oao"
     >
       columnist
     </div>

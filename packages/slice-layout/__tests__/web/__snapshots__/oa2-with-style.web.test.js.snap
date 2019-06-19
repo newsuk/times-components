@@ -206,7 +206,7 @@ exports[`1. a single child element 1`] = `
                 className="c3 responsiveweb__Base-fgzeui-1 responsiveweb__Base-fgzeui-3 responsiveweb__Base-fgzeui-5 c3 css-view-1dbjc4n"
               >
                 <div
-                  className="css-text-76zvg2"
+                  className="css-text-901oao"
                 >
                   opinion
                 </div>
@@ -538,7 +538,7 @@ exports[`2. two child elements 1`] = `
                 className="c3 responsiveweb__Base-fgzeui-1 responsiveweb__Base-fgzeui-2 responsiveweb__Base-fgzeui-5 c3 css-view-1dbjc4n"
               >
                 <div
-                  className="css-text-76zvg2"
+                  className="css-text-901oao"
                 >
                   opinion
                 </div>
@@ -558,7 +558,7 @@ exports[`2. two child elements 1`] = `
                     className="0 c6 responsiveweb__Base-fgzeui-12 responsiveweb__Base-fgzeui-14 responsiveweb__Base-fgzeui-15 c6 css-view-1dbjc4n"
                   >
                     <div
-                      className="css-text-76zvg2"
+                      className="css-text-901oao"
                     >
                       support-1
                     </div>
@@ -956,7 +956,7 @@ exports[`3. three child elements 1`] = `
                 className="c3 responsiveweb__Base-fgzeui-1 responsiveweb__Base-fgzeui-2 responsiveweb__Base-fgzeui-4 responsiveweb__Base-fgzeui-5 c3 css-view-1dbjc4n"
               >
                 <div
-                  className="css-text-76zvg2"
+                  className="css-text-901oao"
                 >
                   opinion
                 </div>
@@ -976,7 +976,7 @@ exports[`3. three child elements 1`] = `
                     className="0 c6 responsiveweb__Base-fgzeui-12 responsiveweb__Base-fgzeui-13 responsiveweb__Base-fgzeui-15 c6 css-view-1dbjc4n"
                   >
                     <div
-                      className="css-text-76zvg2"
+                      className="css-text-901oao"
                     >
                       support-1
                     </div>
@@ -987,7 +987,7 @@ exports[`3. three child elements 1`] = `
                     className="0 c7 responsiveweb__Base-fgzeui-11 responsiveweb__Base-fgzeui-13 responsiveweb__Base-fgzeui-15 c7 css-view-1dbjc4n"
                   >
                     <div
-                      className="css-text-76zvg2"
+                      className="css-text-901oao"
                     >
                       support-2
                     </div>

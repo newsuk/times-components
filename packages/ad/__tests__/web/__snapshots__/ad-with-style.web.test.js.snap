@@ -222,7 +222,7 @@ exports[`2. placeholder when isloading 1`] = `
                   className="IS2"
                 >
                   <div
-                    className="css-text-76zvg2 r-backgroundColor-gbtiil r-borderColor-1kv57cf r-borderStyle-1phboty r-borderWidth-rs99b7 r-color-1khp51w r-fontFamily-1feecvn r-fontSize-1gkfh8e r-letterSpacing-i933xg r-lineHeight-fxxt2n r-paddingBottom-1inuy60 r-paddingLeft-1hfyk0a r-paddingRight-1qfoi16 r-paddingTop-glunga r-zIndex-184en5c"
+                    className="css-text-901oao r-backgroundColor-gbtiil r-borderColor-1kv57cf r-borderStyle-1phboty r-borderWidth-rs99b7 r-color-1khp51w r-fontFamily-1feecvn r-fontSize-1gkfh8e r-letterSpacing-i933xg r-lineHeight-fxxt2n r-paddingBottom-1inuy60 r-paddingLeft-1hfyk0a r-paddingRight-1qfoi16 r-paddingTop-glunga r-zIndex-184en5c"
                   >
                     ADVERTISEMENT
                   </div>
@@ -359,7 +359,7 @@ exports[`3. nothing if there is an error in the loading of scripts 1`] = `
                   className="IS3"
                 >
                   <div
-                    className="css-text-76zvg2 r-backgroundColor-gbtiil r-borderColor-1kv57cf r-borderStyle-1phboty r-borderWidth-rs99b7 r-color-1khp51w r-fontFamily-1feecvn r-fontSize-1gkfh8e r-letterSpacing-i933xg r-lineHeight-fxxt2n r-paddingBottom-1inuy60 r-paddingLeft-1hfyk0a r-paddingRight-1qfoi16 r-paddingTop-glunga r-zIndex-184en5c"
+                    className="css-text-901oao r-backgroundColor-gbtiil r-borderColor-1kv57cf r-borderStyle-1phboty r-borderWidth-rs99b7 r-color-1khp51w r-fontFamily-1feecvn r-fontSize-1gkfh8e r-letterSpacing-i933xg r-lineHeight-fxxt2n r-paddingBottom-1inuy60 r-paddingLeft-1hfyk0a r-paddingRight-1qfoi16 r-paddingTop-glunga r-zIndex-184en5c"
                   >
                     ADVERTISEMENT
                   </div>
