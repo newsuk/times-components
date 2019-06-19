@@ -230,7 +230,7 @@ export default ({ el, data, platform, eventCallback, window }) => {
     },
 
     prebid: {
-      url: "https://www.thetimes.co.uk/d/js/vendor/newPrebid.min-7526ce2390.js",
+      url: "https://www.thetimes.co.uk/d/js/vendor/prebid.min-4c674b73bd.js",
 
       bid({ slots } = data) {
         return new Promise((resolve, reject) => {
