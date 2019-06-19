@@ -80,7 +80,7 @@ exports[`6. article meta uses default section colour 1`] = `
   </View>
   <View>
     <Text>
-      Monday March 23 2015, 7:39pm, The Times
+      Monday March 23 2015, 7.39pm, The Times
     </Text>
   </View>
 </View>

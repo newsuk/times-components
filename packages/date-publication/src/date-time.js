@@ -33,7 +33,7 @@ class DatePublication extends Component {
     const isDateBST = isBST(datetimeUTC);
     const offset = isDateBST ? 60 : 0;
     const datetimeLondonTimezone = addMinutes(datetimeUTC, offset);
-    const baseFormatString = "MMMM DD YYYY, h:mma";
+    const baseFormatString = "MMMM DD YYYY, h.mma";
     const formatString = showDay
       ? `dddd ${baseFormatString}`
       : baseFormatString;
