@@ -64,7 +64,7 @@ exports[`1. one lead and two support related articles 1`] = `
                     <time
                       dateTime="2015-03-13T18:54:58.000Z"
                     >
-                      March 13 2015, 6:54pm
+                      March 13 2015, 6.54pm
                     </time>
                   </div>
                   <div>
@@ -115,7 +115,7 @@ exports[`1. one lead and two support related articles 1`] = `
                       <time
                         dateTime="2018-01-17T12:00:00.000Z"
                       >
-                        January 17 2018, 12:00pm
+                        January 17 2018, 12.00pm
                       </time>
                     </div>
                     <div>
@@ -164,7 +164,7 @@ exports[`1. one lead and two support related articles 1`] = `
                       <time
                         dateTime="2018-01-17T12:00:00.000Z"
                       >
-                        January 17 2018, 12:00pm
+                        January 17 2018, 12.00pm
                       </time>
                     </div>
                     <div>

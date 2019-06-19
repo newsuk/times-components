@@ -81,7 +81,7 @@ exports[`1. an article 1`] = `
       </View>
       <View>
         <Text>
-          Friday March 13 2015, 6:54pm, The Times
+          Friday March 13 2015, 6.54pm, The Times
         </Text>
       </View>
     </View>
@@ -110,7 +110,7 @@ exports[`4. an article with no headline falls back to use shortheadline 1`] = `
     <View>
       <View>
         <Text>
-          Friday March 13 2015, 6:54pm, The Times
+          Friday March 13 2015, 6.54pm, The Times
         </Text>
       </View>
     </View>
@@ -135,7 +135,7 @@ exports[`5. an article with ads 1`] = `
     <View>
       <View>
         <Text>
-          Friday March 13 2015, 6:54pm, The Times
+          Friday March 13 2015, 6.54pm, The Times
         </Text>
       </View>
     </View>
