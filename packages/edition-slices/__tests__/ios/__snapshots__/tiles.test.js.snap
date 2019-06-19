@@ -1549,3 +1549,92 @@ exports[`38. tile ac 1`] = `
   </View>
 </Link>
 `;
+
+exports[`tiles that change logic based on breakpoints TileW with teaser for wider screens 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "flexDirection": "row",
+      "paddingHorizontal": 20,
+      "paddingVertical": 10,
+    }
+  }
+  url="/article/123"
+>
+  <View>
+    <View>
+      <Text>
+        LABEL
+      </Text>
+    </View>
+    <Text
+      accessibilityRole="header"
+      aria-level="3"
+    >
+      This is tile headline
+    </Text>
+    <Text>
+      <Text>
+        
+        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+        ...
+      </Text>
+    </Text>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
+  </View>
+  <Image
+    aspectRatio={1.7777777777777777}
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+  />
+</Link>
+`;
+
+exports[`tiles that change logic based on breakpoints TileW without teaser for tablet 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "flexDirection": "row",
+      "paddingHorizontal": 20,
+      "paddingVertical": 10,
+    }
+  }
+  url="/article/123"
+>
+  <View>
+    <View>
+      <Text>
+        LABEL
+      </Text>
+    </View>
+    <Text
+      accessibilityRole="header"
+      aria-level="3"
+    >
+      This is tile headline
+    </Text>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
+  </View>
+  <Image
+    aspectRatio={1.7777777777777777}
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+  />
+</Link>
+`;
