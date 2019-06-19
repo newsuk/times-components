@@ -9,25 +9,33 @@ import styles from "./styles";
 
 const { puzzleContainer, header, headline, imageContainer } = styles;
 
-const TileAJ = ({ id, image, onPress, title, url }) => (
-  <Link
-    key={id}
-    linkStyle={puzzleContainer}
-    onPress={() => onPress({ id, title, url })}
-    url={url}
-    withStar={false}
-  >
-    <View style={header}>
-      <ArticleSummaryHeadline headline={title} style={headline} />
-    </View>
-    <Image
-      aspectRatio={3 / 2}
-      disablePlaceholder
-      style={imageContainer}
-      uri={image.crop32.url}
-    />
-  </Link>
-);
+const TileAJ = ({ id, image, onPress, title, url }) => {
+  const crop = image.crop32;
+
+  return (
+    <Link
+      key={id}
+      linkStyle={puzzleContainer}
+      onPress={() => onPress({ id, title, url })}
+      url={url}
+      withStar={false}
+    >
+      <View style={header}>
+        <ArticleSummaryHeadline headline={title} style={headline} />
+      </View>
+      <Image
+        aspectRatio={3 / 2}
+        disablePlaceholder
+        relativeWidth={crop.relativeWidth}
+        relativeHeight={crop.relativeHeight}
+        relativeHorizontalOffset={crop.relativeHorizontalOffset}
+        relativeVerticalOffset={crop.relativeVerticalOffset}
+        style={imageContainer}
+        uri={crop.url}
+      />
+    </Link>
+  );
+};
 
 TileAJ.propTypes = {
   id: PropTypes.string.isRequired,

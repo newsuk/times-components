@@ -3,6 +3,7 @@ import { Image } from "react-native";
 
 export const propTypes = {
   ...Image.PropTypes,
+  accessibilityLabel: PropTypes.string,
   aspectRatio: PropTypes.number,
   borderRadius: PropTypes.number,
   disablePlaceholder: PropTypes.bool,

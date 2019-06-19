@@ -87,6 +87,7 @@ const ArticleImage = ({ imageOptions, captionOptions, onImagePress }) => {
     <Fragment>
       <View style={styles[`${display}Image`]}>
         <ModalImage
+          accessibilityLabel={caption}
           aspectRatio={aspectRatio}
           caption={<Caption credits={credits} text={caption} />}
           highResSize={highResSize}

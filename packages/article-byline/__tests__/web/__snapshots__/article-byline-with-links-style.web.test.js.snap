@@ -14,7 +14,7 @@ exports[`1. with a single author 1`] = `
   className="css-view-1dbjc4n"
 >
   <a
-    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-76zvg2 r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-1ddef8g S1"
+    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-76zvg2 r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-13wfysu S1"
     href="/profile/alexandra-frean"
     role="link"
   >
@@ -49,7 +49,7 @@ exports[`2. with a very long byline 1`] = `
   className="css-view-1dbjc4n"
 >
   <a
-    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-76zvg2 r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-1ddef8g S1"
+    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-76zvg2 r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-13wfysu S1"
     href="/profile/camilla-long"
     role="link"
   >
@@ -61,7 +61,7 @@ exports[`2. with a very long byline 1`] = `
     , Environment Editor | 
   </div>
   <a
-    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-76zvg2 r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-1ddef8g S1"
+    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-76zvg2 r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-13wfysu S1"
     href="/profile/camilla-long"
     role="link"
   >
@@ -73,7 +73,7 @@ exports[`2. with a very long byline 1`] = `
     , Environment Editor | 
   </div>
   <a
-    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-76zvg2 r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-1ddef8g S1"
+    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-76zvg2 r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-13wfysu S1"
     href="/profile/camilla-long"
     role="link"
   >

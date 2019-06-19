@@ -7,7 +7,8 @@ const shared = {
       font: "supporting",
       fontSize: "cardMeta"
     }),
-    color: colours.functional.action
+    color: colours.functional.action,
+    textDecorationLine: "none"
   },
   nonLinkText: {
     ...fontFactory({

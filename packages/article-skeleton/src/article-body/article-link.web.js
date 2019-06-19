@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "@times-components/link";
 import { colours, fonts, fontSizes } from "@times-components/styleguide";
+import withTrackEvents from "./article-link-tracking-events";
 
 // SHOULD BE IN STYLES
 const responsiveLinkStyles = {
@@ -18,17 +19,23 @@ const responsiveLinkStyles = {
   `
 };
 
-const ArticleLink = ({ children, target, url }) => (
-  <Link responsiveLinkStyles={responsiveLinkStyles} target={target} url={url}>
+const ArticleLink = ({ children, target, url, onPress }) => (
+  <Link
+    responsiveLinkStyles={responsiveLinkStyles}
+    target={target}
+    url={url}
+    onPress={onPress}
+  >
     {children}
   </Link>
 );
 
 ArticleLink.defaultProps = {
-  ...Link.defaultProps
+  ...Link.defaultProps,
+  onPress: () => {}
 };
 
 ArticleLink.propTypes = {
   ...Link.propTypes
 };
-export default ArticleLink;
+export default withTrackEvents(ArticleLink);

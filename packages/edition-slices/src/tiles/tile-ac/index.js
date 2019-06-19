@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { editionBreakpoints } from "@times-components/styleguide";
 import Image from "@times-components/image";
 import {
-  getTileImageUri,
+  getTileImage,
   TileLink,
   TileSummary,
   withTileTracking
@@ -13,6 +13,7 @@ import styleFactory from "./styles";
 const TileAC = ({ onPress, tile, breakpoint }) => {
   const styles = styleFactory(breakpoint);
   const { container, headline, imageContainer, summaryContainer } = styles;
+  const crop = getTileImage(tile, "crop169");
 
   return (
     <TileLink
@@ -23,8 +24,12 @@ const TileAC = ({ onPress, tile, breakpoint }) => {
     >
       <Image
         aspectRatio={16 / 9}
+        relativeWidth={crop.relativeWidth}
+        relativeHeight={crop.relativeHeight}
+        relativeHorizontalOffset={crop.relativeHorizontalOffset}
+        relativeVerticalOffset={crop.relativeVerticalOffset}
         style={imageContainer}
-        uri={getTileImageUri(tile, "crop169")}
+        uri={crop.url}
       />
       <TileSummary
         headlineStyle={headline}

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.2.0](https://github.com/newsuk/times-components/compare/@times-components/article-image@7.1.21...@times-components/article-image@7.2.0) (2019-06-19)
+
+
+### Features
+
+* replat 3983 add alt tag to images ([#2040](https://github.com/newsuk/times-components/issues/2040)) ([2538d9e](https://github.com/newsuk/times-components/commit/2538d9e))
+
+
+
+
+
 ## [7.1.21](https://github.com/newsuk/times-components/compare/@times-components/article-image@7.1.20...@times-components/article-image@7.1.21) (2019-06-18)
 
 **Note:** Version bump only for package @times-components/article-image

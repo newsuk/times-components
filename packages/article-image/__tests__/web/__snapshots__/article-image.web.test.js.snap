@@ -31,13 +31,13 @@ Array [
     <div>
       <div>
         <responsiveweb
-          alt=""
+          alt={null}
           isLoaded={false}
           src="https://img/someImage"
           zIndex={2}
         >
           <img
-            alt=""
+            alt={null}
             src="https://img/someImage"
           />
         </responsiveweb>
@@ -98,13 +98,13 @@ Array [
     <div>
       <div>
         <responsiveweb
-          alt=""
+          alt="Some caption"
           isLoaded={false}
           src="https://img/someImage"
           zIndex={2}
         >
           <img
-            alt=""
+            alt="Some caption"
             src="https://img/someImage"
           />
         </responsiveweb>
@@ -156,24 +156,24 @@ Array [
     <div>
       <div>
         <responsiveweb
-          alt=""
+          alt="Some caption"
           isLoaded={false}
           src="https://img/someImage?resize=900"
           zIndex={2}
         >
           <img
-            alt=""
+            alt="Some caption"
             src="https://img/someImage?resize=900"
           />
         </responsiveweb>
         <responsiveweb
-          alt=""
+          alt="Some caption"
           isLoaded={true}
           src="https://img/someImage?resize=50"
           zIndex={1}
         >
           <img
-            alt=""
+            alt="Some caption"
             src="https://img/someImage?resize=50"
           />
         </responsiveweb>

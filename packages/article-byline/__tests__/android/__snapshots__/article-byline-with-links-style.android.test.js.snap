@@ -10,7 +10,7 @@ exports[`1. with a single author 1`] = `
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
         "lineHeight": 19,
-        "textDecorationLine": "underline",
+        "textDecorationLine": "none",
       }
     }
   >
@@ -29,7 +29,7 @@ exports[`2. with a very long byline 1`] = `
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
         "lineHeight": 19,
-        "textDecorationLine": "underline",
+        "textDecorationLine": "none",
       }
     }
   >
@@ -56,7 +56,7 @@ exports[`2. with a very long byline 1`] = `
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
         "lineHeight": 19,
-        "textDecorationLine": "underline",
+        "textDecorationLine": "none",
       }
     }
   >
@@ -83,7 +83,7 @@ exports[`2. with a very long byline 1`] = `
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
         "lineHeight": 19,
-        "textDecorationLine": "underline",
+        "textDecorationLine": "none",
       }
     }
   >

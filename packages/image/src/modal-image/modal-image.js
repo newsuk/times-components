@@ -55,7 +55,6 @@ class ModalImage extends Component {
 
   render() {
     const { highResSize, index, onImagePress } = this.props;
-
     if (onImagePress) {
       return (
         <Button onPress={() => onImagePress(index)}>

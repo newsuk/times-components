@@ -23,6 +23,7 @@ class CardContent extends Component {
       contentContainerClass,
       fadeImageIn,
       highResSize,
+      imageAccessibilityLabel,
       imageContainerClass,
       imageRatio,
       imageStyle,
@@ -46,6 +47,7 @@ class CardContent extends Component {
           ]}
         >
           <Image
+            accessibilityLabel={imageAccessibilityLabel}
             aspectRatio={imageRatio}
             fadeImageIn={fadeImageIn}
             highResSize={highResSize}

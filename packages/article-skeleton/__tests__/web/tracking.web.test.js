@@ -1,9 +1,12 @@
 import "../mocks.web";
-import React from "react";
-import renderer from "react-test-renderer";
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import TestRenderer from "react-test-renderer";
 import mockDate from "mockdate";
+import Link from "@times-components/link";
 import ArticleSkeleton from "../../src/article-skeleton";
 import articleFixture from "../../fixtures/full-article";
+import ArticleLink from "../../src/article-body/article-link";
 import articleSkeletonProps from "../shared-article-skeleton-props";
 import { getRegistrationType, getSharedStatus } from "../../src/data-helper";
 import shared from "../shared-tracking";
@@ -30,7 +33,7 @@ it("analytics when rendering a shared Article page with metered access", () => {
   global.nuk.user = userStateMock;
   const stream = jest.fn();
 
-  renderer.create(
+  TestRenderer.create(
     <ArticleSkeleton
       {...articleSkeletonProps}
       analyticsStream={stream}
@@ -54,6 +57,38 @@ it("getRegistrationType helper function", () => {
 
 it("getSharedStatus helper function", () => {
   expect(getSharedStatus()).toEqual("no");
+});
+
+it("should track ArticleLink clicks in analytics", () => {
+  const analyticsStream = jest.fn();
+
+  class WithTrackingContext extends Component {
+    getChildContext() {
+      return {
+        tracking: {
+          analytics: analyticsStream
+        }
+      };
+    }
+
+    render() {
+      return <ArticleLink key="t-key" target="t-target" url="test.io" />;
+    }
+  }
+
+  WithTrackingContext.childContextTypes = {
+    tracking: PropTypes.shape({
+      analytics: PropTypes.func
+    })
+  };
+
+  const testInstance = TestRenderer.create(<WithTrackingContext />);
+
+  const [articleLink] = testInstance.root.findAllByType(Link);
+  articleLink.props.onPress();
+
+  const [[callParams]] = analyticsStream.mock.calls;
+  expect(callParams).toMatchSnapshot();
 });
 
 shared();
