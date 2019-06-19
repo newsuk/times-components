@@ -1,8 +1,6 @@
 import React from "react";
 import { AppRegistry } from "react-native-web";
-import { shallow, mount } from "enzyme";
-import { saveApi } from "@times-components/save-star-web";
-import SaveAndShareBar from "@times-components/save-and-share-bar";
+import { mount } from "enzyme";
 import {
   addSerializers,
   compose,
@@ -34,30 +32,6 @@ addSerializers(
 );
 
 describe("StickySaveAndShareBar", () => {
-  it("uses the passed savedApi if it is valid", () => {
-    const passedSaveApi = { bookmark: jest.fn() };
-
-    const component = shallow(
-      <StickySaveAndShareBar saveApi={passedSaveApi} />
-    );
-
-    expect(component.find(SaveAndShareBar).prop("saveApi")).toEqual(
-      passedSaveApi
-    );
-  });
-
-  it("uses global savedApi if passed is not valid", () => {
-    const component = shallow(<StickySaveAndShareBar saveApi={{}} />);
-
-    expect(component.find(SaveAndShareBar).prop("saveApi")).toEqual(saveApi);
-  });
-
-  it("uses global savedApi if save api is not passed", () => {
-    const component = shallow(<StickySaveAndShareBar />);
-
-    expect(component.find(SaveAndShareBar).prop("saveApi")).toEqual(saveApi);
-  });
-
   it("renders", () => {
     const component = mount(<StickySaveAndShareBar />);
 
