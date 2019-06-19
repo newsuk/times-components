@@ -512,6 +512,10 @@ exports[`7. tile g 1`] = `
 .IS3 {
   -webkit-justify-content: center;
   justify-content: center;
+<<<<<<< HEAD
+=======
+  padding-bottom: 0px;
+>>>>>>> fix: REPLAT-6745 secondary no pic and two styling
   padding-right: 10px;
   padding-left: 10px;
   padding-top: 5px;
