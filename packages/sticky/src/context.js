@@ -8,7 +8,7 @@ import hoistNonReactStatic from "hoist-non-react-statics";
 
 import { getTopFromBody } from "./util";
 
-const defaultContext = { top: 0, node: document.body };
+export const defaultContext = { top: 0, node: document.body };
 const { Provider, Consumer } = React.createContext(defaultContext);
 
 class StickyProvider extends Component {
@@ -60,8 +60,8 @@ class StickyProvider extends Component {
 }
 
 StickyProvider.propTypes = {
-  Component: PropTypes.node,
-  children: PropTypes.element.isRequired
+  Component: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),
+  children: PropTypes.node.isRequired
 };
 
 StickyProvider.defaultProps = {

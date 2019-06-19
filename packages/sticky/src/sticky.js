@@ -2,67 +2,87 @@
 /* eslint-env browser */
 
 import React, { Component } from "react";
-import { createGlobalStyle } from "styled-components";
 import PropTypes from "prop-types";
 import { getOuterVerticalStyle, isOutOfView } from "./util";
-import { withStickyContext, StickyProvider } from "./context";
-
-const PLACEHOLDER_HIDDEN_CLASS_NAME = "tc-sticky-placeholder-hidden";
+import { withStickyContext, StickyProvider, defaultContext } from "./context";
 
 export const STICKY_CLASS_NAME = "tc-sticky";
-
-const GlobalStyles = createGlobalStyle`
-   .${PLACEHOLDER_HIDDEN_CLASS_NAME} { display: none !important; }
-   .${STICKY_CLASS_NAME} {
-      position: fixed; 
-      margin-top: 0 !important;
-      left: 0;
-      width: 100%;
-   }
-`;
-
 
 class UnwrappedSticky extends Component {
   constructor(props) {
     super(props);
 
     this.updateSticky = this.updateSticky.bind(this);
-    this.containerRef = React.createRef();
-    this.placeholderRef = React.createRef();
+    this.createContainerRef = this.createContainerRef.bind(this);
+    this.createPlaceholderRef = this.createPlaceholderRef.bind(this);
     this.isSticky = false;
   }
 
   componentDidMount() {
     window.addEventListener("scroll", this.updateSticky);
     window.addEventListener("resize", this.updateSticky);
+
+    this.updateSticky();
+  }
+
+  componentDidUpdate() {
+    this.updateSticky();
   }
 
   componentWillUnmount() {
     window.removeEventListener("scroll", this.updateSticky);
     window.removeEventListener("resize", this.updateSticky);
 
-    if (this.isSticky && this.container) {
-      this.container.parentNode.removeChild(this.container);
+    if (this.isSticky) {
+      this.setSticky(false);
     }
   }
 
-  setSticky({ container, placeholder }, shouldBeSticky) {
+  setSticky(shouldBeSticky) {
+    const { placeholder, container } = this;
+
+    if (!placeholder || !container) {
+      return;
+    }
+
     const { stickyContext, zIndex } = this.props;
     this.isSticky = shouldBeSticky;
 
     if (shouldBeSticky) {
-      Object.assign(placeholder.style, getOuterVerticalStyle(container));
+      const outerStyles = getOuterVerticalStyle(container);
+      Object.assign(placeholder.style, outerStyles);
       container.classList.add(STICKY_CLASS_NAME);
-      placeholder.classList.remove(PLACEHOLDER_HIDDEN_CLASS_NAME);
-      stickyContext.node.appendChild(container);
-      container.style.top = `${stickyContext.top}px`;
-      container.style.zIndex = zIndex;
+      placeholder.style.removeProperty("display");
+      stickyContext.node.parentNode.appendChild(container);
+      Object.assign(container.style, {
+        top: `${stickyContext.top}px`,
+        zIndex,
+        position: "fixed",
+        left: 0,
+        width: "100%",
+        transform: `translateY(-${outerStyles.marginTop})`
+      });
     } else {
       container.classList.remove(STICKY_CLASS_NAME);
-      placeholder.classList.add(PLACEHOLDER_HIDDEN_CLASS_NAME);
       placeholder.parentNode.insertBefore(container, placeholder.nextSibling);
-      container.style.zIndex = "initial";
+      placeholder.style.display = "none";
+      container.style.removeProperty("top");
+      container.style.removeProperty("z-index");
+      container.style.removeProperty("position");
+      container.style.removeProperty("left");
+      container.style.removeProperty("width");
+      container.style.removeProperty("transform");
     }
+  }
+
+  createContainerRef(node) {
+    this.container = node;
+    this.updateSticky();
+  }
+
+  createPlaceholderRef(node) {
+    this.placeholder = node;
+    this.updateSticky();
   }
 
   doesStickyNeedUpdating(shouldBeSticky) {
@@ -71,19 +91,18 @@ class UnwrappedSticky extends Component {
 
   updateSticky() {
     const { stickyContext, shouldBeSticky } = this.props;
-    const container = this.containerRef.current;
-    const placeholder = this.placeholderRef.current;
+    const { container, placeholder, isSticky } = this;
 
-    if (!container || !placeholder) {
+    if (!container || !placeholder || !stickyContext.node) {
       return;
     }
 
     const shouldCurrentlyBeSticky =
       shouldBeSticky() &&
-      isOutOfView(this.isSticky ? placeholder : container, stickyContext.top);
+      isOutOfView(isSticky ? placeholder : container, stickyContext.top);
 
     if (this.doesStickyNeedUpdating(shouldCurrentlyBeSticky)) {
-      this.setSticky({ container, placeholder }, shouldCurrentlyBeSticky);
+      this.setSticky(shouldCurrentlyBeSticky);
     }
   }
 
@@ -91,15 +110,16 @@ class UnwrappedSticky extends Component {
     const { Component, style, children, className } = this.props;
     return (
       <>
-        <GlobalStyles />
         <div
-          ref={this.placeholderRef}
-          className="tc-sticky-placeholder tc-sticky-placeholder-hidden"
+          ref={this.createPlaceholderRef}
+          style={{ display: "none" }}
+          data-tc-sticky-placeholder
         />
         <Component
-          className={`${className} tc-sticky-container`}
+          className={className}
           style={style}
-          ref={this.containerRef}
+          data-tc-sticky-element
+          ref={this.createContainerRef}
         >
           {children}
         </Component>
@@ -111,14 +131,17 @@ class UnwrappedSticky extends Component {
 UnwrappedSticky.displayName = "Sticky";
 
 UnwrappedSticky.propTypes = {
-  Component: PropTypes.node,
+  Component: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),
   style: PropTypes.object,
   className: PropTypes.string,
-  children: PropTypes.element,
+  children: PropTypes.node,
   stickyContext: PropTypes.shape({
-    top: PropTypes.number.isRequired
+    top: PropTypes.number.isRequired,
+    node: PropTypes.shape({
+      appendChild: PropTypes.func.isRequired
+    })
   }),
-  zIndex: PropTypes.number,
+  zIndex: PropTypes.string,
   shouldBeSticky: PropTypes.func
 };
 
@@ -126,9 +149,9 @@ UnwrappedSticky.defaultProps = {
   Component: "div",
   className: "",
   children: null,
+  stickyContext: defaultContext,
   style: {},
-  stickyContext: { top: 0 },
-  zIndex: 999,
+  zIndex: "999",
   shouldBeSticky: () => true
 };
 
