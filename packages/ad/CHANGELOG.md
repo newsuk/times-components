@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.6.16](https://github.com/newsuk/times-components/compare/@times-components/ad@2.6.15...@times-components/ad@2.6.16) (2019-06-19)
+
+
+### Bug Fixes
+
+* sync prebid url inline with render ([#2049](https://github.com/newsuk/times-components/issues/2049)) ([52b4a7e](https://github.com/newsuk/times-components/commit/52b4a7e))
+
+
+
+
+
 ## [2.6.15](https://github.com/newsuk/times-components/compare/@times-components/ad@2.6.14...@times-components/ad@2.6.15) (2019-06-18)
 
 **Note:** Version bump only for package @times-components/ad

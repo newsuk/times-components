@@ -1,6 +1,6 @@
 {
   "name": "@times-components/android-app",
-  "version": "0.14.104",
+  "version": "0.14.105",
   "license": "BSD-3-Clause",
   "scripts": {
     "build": "./gradlew clean && ./gradlew generateReactArchives && ./gradlew assemble && ./gradlew publish",
@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@kudo-ci/jsc-android": "241213-no-jit",
-    "@times-components/pages": "2.0.76",
+    "@times-components/pages": "2.0.77",
     "prop-types": "15.7.2",
     "react": "16.6.3",
     "react-native": "0.58.6",

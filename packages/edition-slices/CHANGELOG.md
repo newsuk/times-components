@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.61.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.60.15...@times-components/edition-slices@0.61.0) (2019-06-19)
+
+
+### Features
+
+* Adding crop fields for all images for offline support ([#2041](https://github.com/newsuk/times-components/issues/2041)) ([3478051](https://github.com/newsuk/times-components/commit/3478051))
+
+
+
+
+
 ## [0.60.15](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.60.14...@times-components/edition-slices@0.60.15) (2019-06-19)
 
 **Note:** Version bump only for package @times-components/edition-slices
