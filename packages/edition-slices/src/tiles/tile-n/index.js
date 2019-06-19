@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { colours } from "@times-components/styleguide";
 import Image from "@times-components/image";
 import {
-  getTileImageUri,
+  getTileImage,
   getTileStrapline,
   TileLink,
   TileSummary,
@@ -13,6 +13,8 @@ import styleFactory from "./styles";
 
 const TileN = ({ isDarkStar, onPress, tile, breakpoint }) => {
   const styles = styleFactory(breakpoint);
+  const crop = getTileImage(tile, "crop11");
+
   return (
     <TileLink
       onPress={onPress}
@@ -22,8 +24,12 @@ const TileN = ({ isDarkStar, onPress, tile, breakpoint }) => {
     >
       <Image
         aspectRatio={1}
+        relativeWidth={crop.relativeWidth}
+        relativeHeight={crop.relativeHeight}
+        relativeHorizontalOffset={crop.relativeHorizontalOffset}
+        relativeVerticalOffset={crop.relativeVerticalOffset}
         style={styles.imageContainer}
-        uri={getTileImageUri(tile, "crop11")}
+        uri={crop.url}
       />
       <TileSummary
         flagColour={styles.flagColour}
