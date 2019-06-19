@@ -8,12 +8,13 @@ import hoistNonReactStatic from "hoist-non-react-statics";
 
 import { getTopFromBody } from "./util";
 
-const { Provider, Consumer } = React.createContext({ top: 0 });
+const defaultContext = { top: 0, node: document.body };
+const { Provider, Consumer } = React.createContext(defaultContext);
 
 class StickyProvider extends Component {
   constructor(props) {
     super(props);
-    this.state = { top: 0 };
+    this.state = { ...defaultContext };
     this.ref = this.ref.bind(this);
     this.setTop = this.setTop.bind(this);
   }
@@ -28,16 +29,15 @@ class StickyProvider extends Component {
 
   setTop() {
     const { node } = this;
-    const { top } = this.state;
+    const { top, node: currentNode } = this.state;
 
     if (!node) {
       return;
     }
 
-
     const newTop = Math.round(getTopFromBody(node));
 
-    if (newTop !== top) {
+    if (newTop !== top || node !== currentNode) {
       this.setState({ top: newTop, node });
     }
   }

@@ -1,6 +1,7 @@
 import { View } from "react-native";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { breakpoints, colours, spacing } from "@times-components/styleguide";
+import { STICKY_CLASS_NAME } from "@times-components/sticky";
 
 export const MainContainer = styled(View)`
   display: block;
@@ -46,53 +47,35 @@ export const SaveShareInnerContainer = styled.div`
   }
 `;
 
-const NON_STICKY_CSS = css`
-  &:before,
-  &:after {
-    content: "";
-    height: 1px;
-    background-color: ${colours.functional.keyline};
-    position: absolute;
-    left: ${spacing(2)};
-    right: ${spacing(2)};
-  }
-
-  &:before {
-    top: 0;
-  }
-
-  &:after {
-    bottom: 0;
-  }
-`;
-
 export const SaveShareContainer = styled.div`
   background-color: ${colours.functional.white};
   height: 55px;
   margin: ${spacing(6)} 0;
 
-  @media (max-width: ${breakpoints.huge}px) {
-    left: 0;
-    top: 0;
-    z-index: 999;
-
-    &.sticky {
-      width: 100% !important;
-      box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
-    }
-
-    /* stylelint-disable */
-    &:not(.sticky) ${SaveShareInnerContainer} {
-      ${NON_STICKY_CSS};
-    }
-    /* stylelint-enable */
+  &.${STICKY_CLASS_NAME} {
+    width: 100% !important;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
   }
 
-  @media (min-width: ${breakpoints.huge + 1}px) {
-    /* stylelint-disable */
-    ${SaveShareInnerContainer} {
-      ${NON_STICKY_CSS};
+  /* stylelint-disable */
+  &:not(.${STICKY_CLASS_NAME}) ${SaveShareInnerContainer} {
+    &:before,
+    &:after {
+      content: "";
+      height: 1px;
+      background-color: ${colours.functional.keyline};
+      position: absolute;
+      left: ${spacing(2)};
+      right: ${spacing(2)};
     }
-    /* stylelint-enable */
+    
+    &:before {
+      top: 0;
+    }
+    
+    &:after {
+      bottom: 0;
+    }
   }
+  /* stylelint-enable */
 `;
