@@ -2,9 +2,6 @@
 
 Attach children to viewport on scroll (web only)
 
-Uses the CSS feature `position: sticky` and adds a class you can use to
-restyle the component when it becomes sticky.
-
 This also supports sticking relative to a specified container using the provided
 `StickyProvider` component, which renders a chosen element (defaults to a `div`)
 to calculate the required offset. This can be useful if you wish to stick the
