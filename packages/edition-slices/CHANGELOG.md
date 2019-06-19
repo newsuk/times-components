@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.61.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.61.0...@times-components/edition-slices@0.61.1) (2019-06-19)
+
+
+### Bug Fixes
+
+* remove teaser text from secondary one slice on 768px breakpoint ([#2050](https://github.com/newsuk/times-components/issues/2050)) ([0e82ecd](https://github.com/newsuk/times-components/commit/0e82ecd))
+
+
+
+
+
 # [0.61.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.60.15...@times-components/edition-slices@0.61.0) (2019-06-19)
 
 
