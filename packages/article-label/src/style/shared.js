@@ -8,7 +8,7 @@ const styles = {
       fontSize: "cardMetaMobile"
     }),
     fontWeight: "400",
-    letterSpacing: 0.6,
+    letterSpacing: 1.2,
     lineHeight: 11,
     marginBottom: 0,
     marginTop: -1,
