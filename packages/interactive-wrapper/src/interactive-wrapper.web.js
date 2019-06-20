@@ -10,13 +10,13 @@ export default class InteractiveWrapper extends Component {
     this.placeholder = React.createRef(null);
 
     this.state = {
-      webComponentsPolyfill: false
+      webComponentsPolyfillExists: false
     };
   }
 
   componentDidMount() {
     window.addEventListener("WebComponentsReady", () => {
-      this.setState({ webComponentsPolyfill: true });
+      this.setState({ webComponentsPolyfillExists: true });
 
       const { attributes, element, source } = this.props;
       const placeholder = this.placeholder.current;
@@ -40,8 +40,8 @@ export default class InteractiveWrapper extends Component {
   }
 
   render() {
-    const { webComponentsPolyfill } = this.state;
-    return webComponentsPolyfill && <div ref={this.placeholder} />;
+    const { webComponentsPolyfillExists } = this.state;
+    return webComponentsPolyfillExists && <div ref={this.placeholder} />;
   }
 }
 
