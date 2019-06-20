@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.6.17](https://github.com/newsuk/times-components/compare/@times-components/ad@2.6.16...@times-components/ad@2.6.17) (2019-06-20)
+
+
+### Bug Fixes
+
+* ads bidInitialiser ([#2055](https://github.com/newsuk/times-components/issues/2055)) ([20e44c1](https://github.com/newsuk/times-components/commit/20e44c1))
+
+
+
+
+
 ## [2.6.16](https://github.com/newsuk/times-components/compare/@times-components/ad@2.6.15...@times-components/ad@2.6.16) (2019-06-19)
 
 
