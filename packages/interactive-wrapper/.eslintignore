@@ -2,3 +2,4 @@
 **/coverage/*
 dist
 rnw.js
+src/webcomponent-lite.js
