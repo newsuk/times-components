@@ -6,6 +6,7 @@ import {
   mockDailyRegisterSlice,
   mockPuzzleSlice
 } from "@times-components/fixture-generator";
+import { editionBreakpoints } from "@times-components/styleguide";
 
 import {
   TileA,
@@ -45,7 +46,8 @@ import {
   TileAN,
   TileAP,
   TileAD,
-  TileAC
+  TileAC,
+  TileAQ
 } from "../src/tiles";
 
 jest.mock("@times-components/article-flag", () => ({
@@ -233,8 +235,36 @@ export default () => {
     {
       name: "tile ac",
       test: () => testTile(TileAC)
+    },
+    {
+      name: "tile aq",
+      test: () => testTile(TileAQ)
     }
   ];
 
   iterator(tests);
+
+  describe("tiles that change logic based on breakpoints", () => {
+    test("TileW without teaser for tablet", () => {
+      const output = TestRenderer.create(
+        <TileW
+          onPress={() => {}}
+          tile={tile}
+          breakpoint={editionBreakpoints.medium}
+        />
+      );
+      expect(output).toMatchSnapshot();
+    });
+
+    test("TileW with teaser for wider screens", () => {
+      const output = TestRenderer.create(
+        <TileW
+          onPress={() => {}}
+          tile={tile}
+          breakpoint={editionBreakpoints.wide}
+        />
+      );
+      expect(output).toMatchSnapshot();
+    });
+  });
 };

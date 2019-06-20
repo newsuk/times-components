@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.2.6...@times-components/article-lead-asset@1.3.0) (2019-06-19)
+
+
+### Features
+
+* replat 3983 add alt tag to images ([#2040](https://github.com/newsuk/times-components/issues/2040)) ([2538d9e](https://github.com/newsuk/times-components/commit/2538d9e))
+
+
+
+
+
 ## [1.2.6](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.2.5...@times-components/article-lead-asset@1.2.6) (2019-06-18)
 
 **Note:** Version bump only for package @times-components/article-lead-asset

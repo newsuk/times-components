@@ -1,6 +1,6 @@
 import { mockEditionSlice } from "@times-components/fixture-generator";
 import {
-  getTileImageUri,
+  getTileImage,
   getTileSummary,
   getTileStrapline
 } from "../src/tiles/shared";
@@ -8,8 +8,8 @@ import {
 const tile = mockEditionSlice(1).items[0];
 
 export default () => {
-  describe("getTileImageUri should", () => {
-    test("getTileImageUri - return null if there is no lead asset", () => {
+  describe("getTileImage should", () => {
+    test("getTileImage - return null if there is no lead asset", () => {
       const tileWithoutLeadAsset = {
         ...tile,
         article: {
@@ -19,9 +19,9 @@ export default () => {
         },
         leadAsset: null
       };
-      expect(getTileImageUri(tileWithoutLeadAsset, "crop169")).toEqual(null);
+      expect(getTileImage(tileWithoutLeadAsset, "crop169")).toEqual(null);
     });
-    test("getTileImageUri - return poster image crop if lead asset is a video", () => {
+    test("getTileImage - return poster image crop if lead asset is a video", () => {
       const leadAsset = {
         __typename: "Video",
         posterImage: {
@@ -45,11 +45,11 @@ export default () => {
         },
         leadAsset
       };
-      expect(getTileImageUri(tileWithLeadAsset, "crop169")).toEqual(
-        leadAsset.posterImage.crop169.url
+      expect(getTileImage(tileWithLeadAsset, "crop169")).toEqual(
+        leadAsset.posterImage.crop169
       );
     });
-    test("getTileImageUri - return undefined if lead asset doesnt have the right crop", () => {
+    test("getTileImage - return undefined if lead asset doesnt have the right crop", () => {
       const leadAsset = {
         caption: null,
         credits: null,
@@ -66,9 +66,9 @@ export default () => {
         },
         leadAsset
       };
-      expect(getTileImageUri(tileWithLeadAsset, "crop45")).toEqual(undefined);
+      expect(getTileImage(tileWithLeadAsset, "crop45")).toEqual({});
     });
-    test("getTileImageUri - return empty object if lead asset is a video but doesnt have a poster image of the right crop", () => {
+    test("getTileImage - return empty object if lead asset is a video but doesnt have a poster image of the right crop", () => {
       const leadAsset = {
         __typename: "Video",
         posterImage: {
@@ -88,7 +88,7 @@ export default () => {
         },
         leadAsset
       };
-      expect(getTileImageUri(tileWithLeadAsset, "crop45")).toEqual(undefined);
+      expect(getTileImage(tileWithLeadAsset, "crop45")).toEqual({});
     });
   });
 

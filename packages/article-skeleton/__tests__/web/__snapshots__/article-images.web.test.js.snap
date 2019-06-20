@@ -17,13 +17,6 @@ exports[`1. a primary image 1`] = `
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
           articleUrl="https://url.io"
-          saveApi={
-            Object {
-              "bookmark": [Function],
-              "getBookmarks": [Function],
-              "unBookmark": [Function],
-            }
-          }
           savingEnabled={true}
           sharingEnabled={true}
         />
@@ -54,9 +47,13 @@ exports[`1. a primary image 1`] = `
         </div>
       </div>
       <ArticleExtras
+        articleHeadline="Some Headline"
         articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        articleUrl="https://url.io"
         commentsEnabled={true}
         relatedArticlesVisible={false}
+        savingEnabled={true}
+        sharingEnabled={true}
         spotAccountId=""
       />
     </div>
@@ -81,13 +78,6 @@ exports[`2. a fullwidth image 1`] = `
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
           articleUrl="https://url.io"
-          saveApi={
-            Object {
-              "bookmark": [Function],
-              "getBookmarks": [Function],
-              "unBookmark": [Function],
-            }
-          }
           savingEnabled={true}
           sharingEnabled={true}
         />
@@ -116,9 +106,13 @@ exports[`2. a fullwidth image 1`] = `
         />
       </div>
       <ArticleExtras
+        articleHeadline="Some Headline"
         articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        articleUrl="https://url.io"
         commentsEnabled={true}
         relatedArticlesVisible={false}
+        savingEnabled={true}
+        sharingEnabled={true}
         spotAccountId=""
       />
     </div>
@@ -143,13 +137,6 @@ exports[`3. a secondary image 1`] = `
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
           articleUrl="https://url.io"
-          saveApi={
-            Object {
-              "bookmark": [Function],
-              "getBookmarks": [Function],
-              "unBookmark": [Function],
-            }
-          }
           savingEnabled={true}
           sharingEnabled={true}
         />
@@ -180,9 +167,13 @@ exports[`3. a secondary image 1`] = `
         </div>
       </div>
       <ArticleExtras
+        articleHeadline="Some Headline"
         articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        articleUrl="https://url.io"
         commentsEnabled={true}
         relatedArticlesVisible={false}
+        savingEnabled={true}
+        sharingEnabled={true}
         spotAccountId=""
       />
     </div>
@@ -207,13 +198,6 @@ exports[`4. an inline image 1`] = `
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
           articleUrl="https://url.io"
-          saveApi={
-            Object {
-              "bookmark": [Function],
-              "getBookmarks": [Function],
-              "unBookmark": [Function],
-            }
-          }
           savingEnabled={true}
           sharingEnabled={true}
         />
@@ -244,9 +228,13 @@ exports[`4. an inline image 1`] = `
         </div>
       </div>
       <ArticleExtras
+        articleHeadline="Some Headline"
         articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        articleUrl="https://url.io"
         commentsEnabled={true}
         relatedArticlesVisible={false}
+        savingEnabled={true}
+        sharingEnabled={true}
         spotAccountId=""
       />
     </div>

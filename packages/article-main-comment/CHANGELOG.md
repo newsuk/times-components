@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.5.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.5.2...@times-components/article-main-comment@2.5.3) (2019-06-20)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.5.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.5.1...@times-components/article-main-comment@2.5.2) (2019-06-20)
+
+
+### Bug Fixes
+
+* share-save-bar at the bottom of article page ([#2039](https://github.com/newsuk/times-components/issues/2039)) ([6ca3ac6](https://github.com/newsuk/times-components/commit/6ca3ac6))
+
+
+
+
+
+## [2.5.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.5.0...@times-components/article-main-comment@2.5.1) (2019-06-19)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+# [2.5.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.4.17...@times-components/article-main-comment@2.5.0) (2019-06-19)
+
+
+### Bug Fixes
+
+* replat 6828 change colon to fullstop in time display ([#2048](https://github.com/newsuk/times-components/issues/2048)) ([6a9e8bc](https://github.com/newsuk/times-components/commit/6a9e8bc))
+
+
+### Features
+
+* replat 3983 add alt tag to images ([#2040](https://github.com/newsuk/times-components/issues/2040)) ([2538d9e](https://github.com/newsuk/times-components/commit/2538d9e))
+
+
+
+
+
 ## [2.4.17](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.4.16...@times-components/article-main-comment@2.4.17) (2019-06-18)
 
 **Note:** Version bump only for package @times-components/article-main-comment

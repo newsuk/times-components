@@ -32,7 +32,11 @@ const styles = {
     overflow: "hidden",
     width: "40%"
   },
-  star: verticalStyles,
+  star: {
+    ...verticalStyles.starButton,
+    position: "relative",
+    right: "auto"
+  },
   strapline: {
     color: colours.functional.secondary,
     fontSize: fontSizes.meta,

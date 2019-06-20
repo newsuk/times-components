@@ -3,6 +3,47 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.61.2](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.61.1...@times-components/edition-slices@0.61.2) (2019-06-20)
+
+
+### Bug Fixes
+
+* save star positioning ([#2053](https://github.com/newsuk/times-components/issues/2053)) ([e5a11df](https://github.com/newsuk/times-components/commit/e5a11df))
+
+
+
+
+
+## [0.61.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.61.0...@times-components/edition-slices@0.61.1) (2019-06-19)
+
+
+### Bug Fixes
+
+* remove teaser text from secondary one slice on 768px breakpoint ([#2050](https://github.com/newsuk/times-components/issues/2050)) ([0e82ecd](https://github.com/newsuk/times-components/commit/0e82ecd))
+
+
+
+
+
+# [0.61.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.60.15...@times-components/edition-slices@0.61.0) (2019-06-19)
+
+
+### Features
+
+* Adding crop fields for all images for offline support ([#2041](https://github.com/newsuk/times-components/issues/2041)) ([3478051](https://github.com/newsuk/times-components/commit/3478051))
+
+
+
+
+
+## [0.60.15](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.60.14...@times-components/edition-slices@0.60.15) (2019-06-19)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
 ## [0.60.14](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.60.13...@times-components/edition-slices@0.60.14) (2019-06-18)
 
 **Note:** Version bump only for package @times-components/edition-slices

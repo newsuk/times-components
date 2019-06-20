@@ -1,8 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Image from "@times-components/image";
+import { editionBreakpoints } from "@times-components/styleguide";
 import {
-  getTileImageUri,
+  getTileImage,
   getTileSummary,
   TileLink,
   TileSummary,
@@ -12,6 +13,9 @@ import stylesFactory from "./styles";
 
 const TileW = ({ onPress, tile, breakpoint }) => {
   const styles = stylesFactory(breakpoint);
+  const crop = getTileImage(tile, "crop169");
+  const summary =
+    breakpoint !== editionBreakpoints.medium ? getTileSummary(tile, 125) : null;
   return (
     <TileLink
       onPress={onPress}
@@ -22,15 +26,19 @@ const TileW = ({ onPress, tile, breakpoint }) => {
       <TileSummary
         headlineStyle={styles.headline}
         style={styles.summaryContainer}
-        summary={getTileSummary(tile, 125)}
+        summary={summary}
         summaryStyle={styles.summary}
         tile={tile}
         withStar
       />
       <Image
         aspectRatio={16 / 9}
+        relativeWidth={crop.relativeWidth}
+        relativeHeight={crop.relativeHeight}
+        relativeHorizontalOffset={crop.relativeHorizontalOffset}
+        relativeVerticalOffset={crop.relativeVerticalOffset}
         style={styles.imageContainer}
-        uri={getTileImageUri(tile, "crop169")}
+        uri={crop.url}
       />
     </TileLink>
   );

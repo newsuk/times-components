@@ -5,7 +5,7 @@ Array [
   <time
     dateTime="2017-07-01T14:32:00.000Z"
   >
-    Saturday July 01 2017, 3:32pm
+    Saturday July 01 2017, 3.32pm
   </time>,
   <span>
     , The Times
@@ -18,7 +18,7 @@ Array [
   <time
     dateTime="2017-07-01T14:32:00.000Z"
   >
-    Saturday July 01 2017, 3:32pm
+    Saturday July 01 2017, 3.32pm
   </time>,
   <span>
     , The Sunday Times
@@ -30,7 +30,7 @@ exports[`3. date and no given publication 1`] = `
 <time
   dateTime="2017-07-01T14:32:00.000Z"
 >
-  Saturday July 01 2017, 3:32pm
+  Saturday July 01 2017, 3.32pm
 </time>
 `;
 
@@ -38,6 +38,6 @@ exports[`4. date and no day 1`] = `
 <time
   dateTime="2017-07-01T14:32:00.000Z"
 >
-  July 01 2017, 3:32pm
+  July 01 2017, 3.32pm
 </time>
 `;

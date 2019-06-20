@@ -173,7 +173,9 @@ exports[`1. an article 1`] = `
         Some content
       </p>
       <ArticleExtras
+        articleHeadline="Some Headline"
         articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        articleUrl="https://url.io"
         commentsEnabled={true}
         relatedArticleSlice={
           Object {
@@ -217,6 +219,8 @@ exports[`1. an article 1`] = `
           }
         }
         relatedArticlesVisible={false}
+        savingEnabled={true}
+        sharingEnabled={true}
         topics={
           Array [
             Object {
@@ -320,9 +324,13 @@ exports[`4. an article with no headline falls back to use shortheadline 1`] = `
         Some content
       </p>
       <ArticleExtras
+        articleHeadline=""
         articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        articleUrl="https://url.io"
         commentsEnabled={true}
         relatedArticlesVisible={false}
+        savingEnabled={true}
+        sharingEnabled={true}
       />
     </div>
   </div>
@@ -416,9 +424,13 @@ exports[`5. an article with ads 1`] = `
         slotName="inline-ad"
       />
       <ArticleExtras
+        articleHeadline="Some Headline"
         articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        articleUrl="https://url.io"
         commentsEnabled={true}
         relatedArticlesVisible={false}
+        savingEnabled={true}
+        sharingEnabled={true}
       />
     </div>
   </div>
@@ -613,13 +625,6 @@ exports[`6. should show topics when logged in or shared 1`] = `
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
           articleUrl="https://url.io"
-          saveApi={
-            Object {
-              "bookmark": [Function],
-              "getBookmarks": [Function],
-              "unBookmark": [Function],
-            }
-          }
           savingEnabled={true}
           sharingEnabled={true}
         />
@@ -630,7 +635,9 @@ exports[`6. should show topics when logged in or shared 1`] = `
         Some content
       </p>
       <ArticleExtras
+        articleHeadline="Some Headline"
         articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        articleUrl="https://url.io"
         commentsEnabled={true}
         relatedArticleSlice={
           Object {
@@ -674,6 +681,8 @@ exports[`6. should show topics when logged in or shared 1`] = `
           }
         }
         relatedArticlesVisible={false}
+        savingEnabled={true}
+        sharingEnabled={true}
         topics={
           Array [
             Object {
