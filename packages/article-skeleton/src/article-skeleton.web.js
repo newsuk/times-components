@@ -149,6 +149,11 @@ class ArticleSkeleton extends Component {
                     <ArticleExtras
                       analyticsStream={analyticsStream}
                       articleId={articleId}
+                      articleHeadline={headline}
+                      articleUrl={url}
+                      saveApi={saveApi}
+                      savingEnabled={savingEnabled}
+                      sharingEnabled={sharingEnabled}
                       commentsEnabled={commentsEnabled}
                       registerNode={registerNode}
                       relatedArticleSlice={relatedArticleSlice}

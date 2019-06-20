@@ -151,13 +151,6 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
           articleHeadline=""
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
           articleUrl="https://url.io"
-          saveApi={
-            Object {
-              "bookmark": [Function],
-              "getBookmarks": [Function],
-              "unBookmark": [Function],
-            }
-          }
           savingEnabled={true}
           sharingEnabled={true}
         />
@@ -168,7 +161,9 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
         Some content
       </p>
       <ArticleExtras
+        articleHeadline=""
         articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        articleUrl="https://url.io"
         commentsEnabled={true}
         relatedArticleSlice={
           Object {
@@ -214,6 +209,8 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
           }
         }
         relatedArticlesVisible={false}
+        savingEnabled={true}
+        sharingEnabled={true}
         topics={
           Array [
             Object {
@@ -375,13 +372,6 @@ exports[`4. an article with ads 1`] = `
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
           articleUrl="https://url.io"
-          saveApi={
-            Object {
-              "bookmark": [Function],
-              "getBookmarks": [Function],
-              "unBookmark": [Function],
-            }
-          }
           savingEnabled={true}
           sharingEnabled={true}
         />
@@ -394,7 +384,9 @@ exports[`4. an article with ads 1`] = `
         slotName="inline-ad"
       />
       <ArticleExtras
+        articleHeadline="Some Headline"
         articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        articleUrl="https://url.io"
         commentsEnabled={true}
         relatedArticleSlice={
           Object {
@@ -440,6 +432,8 @@ exports[`4. an article with ads 1`] = `
           }
         }
         relatedArticlesVisible={false}
+        savingEnabled={true}
+        sharingEnabled={true}
         topics={
           Array [
             Object {
@@ -622,13 +616,6 @@ exports[`7. an article with no author 1`] = `
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
           articleUrl="https://url.io"
-          saveApi={
-            Object {
-              "bookmark": [Function],
-              "getBookmarks": [Function],
-              "unBookmark": [Function],
-            }
-          }
           savingEnabled={true}
           sharingEnabled={true}
         />
@@ -639,7 +626,9 @@ exports[`7. an article with no author 1`] = `
         Some content
       </p>
       <ArticleExtras
+        articleHeadline="Some Headline"
         articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        articleUrl="https://url.io"
         commentsEnabled={true}
         relatedArticleSlice={
           Object {
@@ -685,6 +674,8 @@ exports[`7. an article with no author 1`] = `
           }
         }
         relatedArticlesVisible={false}
+        savingEnabled={true}
+        sharingEnabled={true}
         topics={
           Array [
             Object {

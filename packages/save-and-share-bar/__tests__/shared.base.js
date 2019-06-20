@@ -1,13 +1,19 @@
 /* eslint-env browser */
 import React from "react";
 import TestRenderer from "react-test-renderer";
-import saveApi from "@times-components/save-star-web/mock-save-api";
 import { Clipboard } from "react-native";
+import SaveStarWeb, { saveApi } from "@times-components/save-star-web";
 import { UserState } from "./mocks";
 import mockGetTokenisedArticleUrl from "./mock-get-tokenised-article-url";
 import BarItem from "../src/bar-item";
 import SaveAndShareBar from "../src/save-and-share-bar";
 import EmailShare from "../src/email-share";
+
+jest.mock("@times-components/save-star-web", () => ({
+  default: () => "SaveStarWeb",
+  __esModule: true,
+  saveApi: jest.fn()
+}));
 
 export default () => {
   describe("save and share bar component", () => {
@@ -96,6 +102,33 @@ export default () => {
       await testInstance.root.findByType(BarItem).props.onPress();
 
       expect(testInstance).toMatchSnapshot();
+    });
+
+    it("uses the passed savedApi if it is valid", () => {
+      const passedSaveApi = { bookmark: jest.fn() };
+
+      const component = TestRenderer.create(
+        <SaveAndShareBar saveApi={passedSaveApi} />
+      );
+
+      expect(component.root.props.saveApi).toEqual(passedSaveApi);
+    });
+
+    it("uses global savedApi if passed is not valid", () => {
+      const testInstance = TestRenderer.create(
+        <SaveAndShareBar {...props} saveApi={{}} />
+      );
+      expect(testInstance.root.findByType(SaveStarWeb).props.saveApi).toEqual(
+        saveApi
+      );
+    });
+
+    it("uses global savedApi if save api is not passed", () => {
+      const testInstance = TestRenderer.create(<SaveAndShareBar {...props} />);
+
+      expect(testInstance.root.findByType(SaveStarWeb).props.saveApi).toEqual(
+        saveApi
+      );
     });
 
     it("when tokenising, email icon fetches tokenised article url and change window.location (The Times)", async () => {
