@@ -181,9 +181,9 @@ exports[`3. tile c 1`] = `
         Object {
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 20,
+          "fontSize": 22,
           "fontWeight": "900",
-          "lineHeight": 20,
+          "lineHeight": 22,
           "marginBottom": 5,
           "paddingBottom": 5,
         }
@@ -2534,6 +2534,87 @@ exports[`38. tile ac 1`] = `
       }
     >
       This is tile headline
+    </Text>
+    <ArticleFlags />
+  </View>
+</Link>
+`;
+
+exports[`39. tile aq 1`] = `
+<Link>
+  <View
+    style={
+      Object {
+        "marginBottom": 10,
+        "width": "100%",
+      }
+    }
+  >
+    <Image />
+  </View>
+  <View
+    style={
+      Object {
+        "paddingBottom": 25,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "marginBottom": 0,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#005B8D",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 12,
+            "fontWeight": "400",
+            "letterSpacing": 0.6,
+            "lineHeight": 11,
+            "marginBottom": 0,
+            "marginTop": -1,
+            "paddingTop": 1,
+          }
+        }
+      >
+        LABEL
+      </Text>
+    </View>
+    <Text
+      style={
+        Object {
+          "color": "#333333",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 22,
+          "fontWeight": "900",
+          "lineHeight": 22,
+          "marginBottom": 5,
+        }
+      }
+    >
+      This is tile headline
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "#696969",
+          "flexWrap": "wrap",
+          "fontFamily": "TimesDigitalW04",
+          "fontSize": 14,
+          "lineHeight": 20,
+          "marginBottom": 10,
+        }
+      }
+    >
+      <Text>
+        
+        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+        ...
+      </Text>
     </Text>
     <ArticleFlags />
   </View>

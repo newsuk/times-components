@@ -145,7 +145,8 @@ const sliceStories = [
   },
   {
     mock: mockListTwoAndSixNoPicSlice(),
-    name: "List Two And Six No Pic (Mobile, Tablet: C,C,L,L,L,L,L,L)",
+    name:
+      "List Two And Six No Pic (Mobile: : C,C,L,L,L,L,L,L, Tablet: AQ,AQ,L,L,L,L,L,L, Wide Tablet: C,C,L,L,L,L,L,L)",
     Slice: ListTwoAndSixNoPicSlice
   },
   {
