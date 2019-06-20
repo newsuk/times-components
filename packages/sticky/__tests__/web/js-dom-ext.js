@@ -26,8 +26,9 @@ Object.defineProperties(window.HTMLElement.prototype, {
   },
   offsetWidth: {
     get() {
-      return parseFloat(window.getComputedStyle(this).width) || (
-        this.parentNode === document.body ? 1000 : this.parentNode.clientWidth
+      return (
+        parseFloat(window.getComputedStyle(this).width) ||
+        (this.parentNode === document.body ? 1000 : this.parentNode.clientWidth)
       );
     }
   },

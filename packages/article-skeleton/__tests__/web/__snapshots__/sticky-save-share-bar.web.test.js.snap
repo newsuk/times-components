@@ -4,24 +4,30 @@ exports[`StickySaveAndShareBar renders 1`] = `
 <StickySaveAndShareBar>
   <WithStickyContext(Sticky)>
     <Sticky>
-      <responsiveweb__SaveShareContainer>
-        <StyledComponent>
-          <div>
-            <GlobalStyleComponent />
-            <responsiveweb__SaveShareInnerContainer>
-              <StyledComponent
-                forwardedRef={null}
-              >
-                <div>
-                  <Component>
-                    SaveAndShareBar
-                  </Component>
-                </div>
-              </StyledComponent>
-            </responsiveweb__SaveShareInnerContainer>
-          </div>
-        </StyledComponent>
-      </responsiveweb__SaveShareContainer>
+      <div>
+        <responsiveweb__OuterSaveShareContainer>
+          <StyledComponent
+            forwardedRef={null}
+          >
+            <div>
+              <div>
+                <responsiveweb__SaveShareContainer>
+                  <StyledComponent
+                    forwardedRef={null}
+                  >
+                    <div>
+                      <Component>
+                        SaveAndShareBar
+                      </Component>
+                    </div>
+                  </StyledComponent>
+                </responsiveweb__SaveShareContainer>
+              </div>
+            </div>
+          </StyledComponent>
+        </responsiveweb__OuterSaveShareContainer>
+      </div>
+      <div />
     </Sticky>
   </WithStickyContext(Sticky)>
 </StickySaveAndShareBar>

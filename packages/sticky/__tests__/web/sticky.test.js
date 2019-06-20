@@ -345,7 +345,10 @@ describe("Sticky", () => {
 
   it("triggers the sticky detection on resize", () => {
     render(
-      <UnwrappedSticky style={{ marginTop: 10, marginBottom: 20, height: 60 }} stickyContext={{ top: 10 }} />,
+      <UnwrappedSticky
+        style={{ marginTop: 10, marginBottom: 20, height: 60 }}
+        stickyContext={{ top: 10 }}
+      />,
       root
     );
 
@@ -353,5 +356,4 @@ describe("Sticky", () => {
     eventMap.resize();
     expect(document.body).toMatchSnapshot();
   });
-
 });

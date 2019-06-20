@@ -84,13 +84,40 @@ exports[`full article with style 1`] = `
 
 .c14 {
   position: relative;
-  padding: 0 10px;
+  margin: 0 auto;
+  height: 60px;
+}
+
+.c14:before,
+.c14:after {
+  content: "";
+  height: 1px;
+  background-color: #DBDBDB;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.c14:before {
+  top: 0;
+}
+
+.c14:after {
+  bottom: 0;
 }
 
 .c12 {
+  margin: 30px auto;
   background-color: #FFFFFF;
-  height: 55px;
-  margin: 30px 0;
+}
+
+.c12.tc-sticky {
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.3);
+}
+
+.c12.tc-sticky .c13:before,
+.c12.tc-sticky .c13:after {
+  display: none;
 }
 
 .c3 {
@@ -254,69 +281,12 @@ exports[`full article with style 1`] = `
 @media (min-width:768px) {
   .c14 {
     width: 80.8%;
-    margin-left: auto !important;
-    margin-right: auto !important;
   }
 }
 
 @media (min-width:1024px) {
   .c14 {
     width: 56.2%;
-  }
-}
-
-@media (max-width:1320px) {
-  .c12 {
-    left: 0;
-    top: 0;
-    z-index: 999;
-  }
-
-  .c12.sticky {
-    width: 100% !important;
-    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.3);
-  }
-
-  .c12:not(.sticky) .c13:before,
-  .c12:not(.sticky) .c13:after {
-    content: "";
-    height: 1px;
-    background-color: #DBDBDB;
-    position: absolute;
-    left: 10px;
-    right: 10px;
-  }
-
-  .c12:not(.sticky) .c13:before {
-    top: 0;
-  }
-
-  .c12:not(.sticky) .c13:after {
-    bottom: 0;
-  }
-}
-
-@media (min-width:1321px) {
-  .c12 {
-    position: static !important;
-  }
-
-  .c12 .c13:before,
-  .c12 .c13:after {
-    content: "";
-    height: 1px;
-    background-color: #DBDBDB;
-    position: absolute;
-    left: 10px;
-    right: 10px;
-  }
-
-  .c12 .c13:before {
-    top: 0;
-  }
-
-  .c12 .c13:after {
-    bottom: 0;
   }
 }
 
@@ -486,8 +456,7 @@ exports[`full article with style 1`] = `
 }
 
 .IS5 {
-  z-index: 999;
-  top: 0;
+  display: none;
 }
 
 .IS6 {
@@ -640,15 +609,22 @@ exports[`full article with style 1`] = `
         </figcaption>
       </figure>
     </div>
-    <div
-      className="tc-sticky-container c12 IS5"
-    >
+    <div>
       <div
-        className="c13 c14"
+        className="c12"
       >
-        <SaveAndShareBar />
+        <div>
+          <div
+            className="c13 c14"
+          >
+            <SaveAndShareBar />
+          </div>
+        </div>
       </div>
     </div>
+    <div
+      className="IS5"
+    />
     <div
       className="c15 responsiveweb__BodyContainer-sc-1exejum-2 c15 css-view-1dbjc4n"
     >
@@ -819,13 +795,40 @@ exports[`full article with style in the culture magazine 1`] = `
 
 .c14 {
   position: relative;
-  padding: 0 10px;
+  margin: 0 auto;
+  height: 60px;
+}
+
+.c14:before,
+.c14:after {
+  content: "";
+  height: 1px;
+  background-color: #DBDBDB;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.c14:before {
+  top: 0;
+}
+
+.c14:after {
+  bottom: 0;
 }
 
 .c12 {
+  margin: 30px auto;
   background-color: #FFFFFF;
-  height: 55px;
-  margin: 30px 0;
+}
+
+.c12.tc-sticky {
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.3);
+}
+
+.c12.tc-sticky .c13:before,
+.c12.tc-sticky .c13:after {
+  display: none;
 }
 
 .c3 {
@@ -989,69 +992,12 @@ exports[`full article with style in the culture magazine 1`] = `
 @media (min-width:768px) {
   .c14 {
     width: 80.8%;
-    margin-left: auto !important;
-    margin-right: auto !important;
   }
 }
 
 @media (min-width:1024px) {
   .c14 {
     width: 56.2%;
-  }
-}
-
-@media (max-width:1320px) {
-  .c12 {
-    left: 0;
-    top: 0;
-    z-index: 999;
-  }
-
-  .c12.sticky {
-    width: 100% !important;
-    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.3);
-  }
-
-  .c12:not(.sticky) .c13:before,
-  .c12:not(.sticky) .c13:after {
-    content: "";
-    height: 1px;
-    background-color: #DBDBDB;
-    position: absolute;
-    left: 10px;
-    right: 10px;
-  }
-
-  .c12:not(.sticky) .c13:before {
-    top: 0;
-  }
-
-  .c12:not(.sticky) .c13:after {
-    bottom: 0;
-  }
-}
-
-@media (min-width:1321px) {
-  .c12 {
-    position: static !important;
-  }
-
-  .c12 .c13:before,
-  .c12 .c13:after {
-    content: "";
-    height: 1px;
-    background-color: #DBDBDB;
-    position: absolute;
-    left: 10px;
-    right: 10px;
-  }
-
-  .c12 .c13:before {
-    top: 0;
-  }
-
-  .c12 .c13:after {
-    bottom: 0;
   }
 }
 
@@ -1229,8 +1175,7 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 .IS7 {
-  z-index: 999;
-  top: 0;
+  display: none;
 }
 
 .IS8 {
@@ -1383,15 +1328,22 @@ exports[`full article with style in the culture magazine 1`] = `
         </figcaption>
       </figure>
     </div>
-    <div
-      className="tc-sticky-container c12 IS7"
-    >
+    <div>
       <div
-        className="c13 c14"
+        className="c12"
       >
-        <SaveAndShareBar />
+        <div>
+          <div
+            className="c13 c14"
+          >
+            <SaveAndShareBar />
+          </div>
+        </div>
       </div>
     </div>
+    <div
+      className="IS7"
+    />
     <div
       className="c15 responsiveweb__BodyContainer-sc-1exejum-2 c15 css-view-1dbjc4n"
     >
@@ -1562,13 +1514,40 @@ exports[`full article with style in the style magazine 1`] = `
 
 .c14 {
   position: relative;
-  padding: 0 10px;
+  margin: 0 auto;
+  height: 60px;
+}
+
+.c14:before,
+.c14:after {
+  content: "";
+  height: 1px;
+  background-color: #DBDBDB;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.c14:before {
+  top: 0;
+}
+
+.c14:after {
+  bottom: 0;
 }
 
 .c12 {
+  margin: 30px auto;
   background-color: #FFFFFF;
-  height: 55px;
-  margin: 30px 0;
+}
+
+.c12.tc-sticky {
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.3);
+}
+
+.c12.tc-sticky .c13:before,
+.c12.tc-sticky .c13:after {
+  display: none;
 }
 
 .c3 {
@@ -1732,69 +1711,12 @@ exports[`full article with style in the style magazine 1`] = `
 @media (min-width:768px) {
   .c14 {
     width: 80.8%;
-    margin-left: auto !important;
-    margin-right: auto !important;
   }
 }
 
 @media (min-width:1024px) {
   .c14 {
     width: 56.2%;
-  }
-}
-
-@media (max-width:1320px) {
-  .c12 {
-    left: 0;
-    top: 0;
-    z-index: 999;
-  }
-
-  .c12.sticky {
-    width: 100% !important;
-    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.3);
-  }
-
-  .c12:not(.sticky) .c13:before,
-  .c12:not(.sticky) .c13:after {
-    content: "";
-    height: 1px;
-    background-color: #DBDBDB;
-    position: absolute;
-    left: 10px;
-    right: 10px;
-  }
-
-  .c12:not(.sticky) .c13:before {
-    top: 0;
-  }
-
-  .c12:not(.sticky) .c13:after {
-    bottom: 0;
-  }
-}
-
-@media (min-width:1321px) {
-  .c12 {
-    position: static !important;
-  }
-
-  .c12 .c13:before,
-  .c12 .c13:after {
-    content: "";
-    height: 1px;
-    background-color: #DBDBDB;
-    position: absolute;
-    left: 10px;
-    right: 10px;
-  }
-
-  .c12 .c13:before {
-    top: 0;
-  }
-
-  .c12 .c13:after {
-    bottom: 0;
   }
 }
 
@@ -1972,8 +1894,7 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 .IS7 {
-  z-index: 999;
-  top: 0;
+  display: none;
 }
 
 .IS8 {
@@ -2126,15 +2047,22 @@ exports[`full article with style in the style magazine 1`] = `
         </figcaption>
       </figure>
     </div>
-    <div
-      className="tc-sticky-container c12 IS7"
-    >
+    <div>
       <div
-        className="c13 c14"
+        className="c12"
       >
-        <SaveAndShareBar />
+        <div>
+          <div
+            className="c13 c14"
+          >
+            <SaveAndShareBar />
+          </div>
+        </div>
       </div>
     </div>
+    <div
+      className="IS7"
+    />
     <div
       className="c15 responsiveweb__BodyContainer-sc-1exejum-2 c15 css-view-1dbjc4n"
     >
@@ -2305,13 +2233,40 @@ exports[`full article with style in the sunday times magazine 1`] = `
 
 .c14 {
   position: relative;
-  padding: 0 10px;
+  margin: 0 auto;
+  height: 60px;
+}
+
+.c14:before,
+.c14:after {
+  content: "";
+  height: 1px;
+  background-color: #DBDBDB;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.c14:before {
+  top: 0;
+}
+
+.c14:after {
+  bottom: 0;
 }
 
 .c12 {
+  margin: 30px auto;
   background-color: #FFFFFF;
-  height: 55px;
-  margin: 30px 0;
+}
+
+.c12.tc-sticky {
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.3);
+}
+
+.c12.tc-sticky .c13:before,
+.c12.tc-sticky .c13:after {
+  display: none;
 }
 
 .c3 {
@@ -2475,69 +2430,12 @@ exports[`full article with style in the sunday times magazine 1`] = `
 @media (min-width:768px) {
   .c14 {
     width: 80.8%;
-    margin-left: auto !important;
-    margin-right: auto !important;
   }
 }
 
 @media (min-width:1024px) {
   .c14 {
     width: 56.2%;
-  }
-}
-
-@media (max-width:1320px) {
-  .c12 {
-    left: 0;
-    top: 0;
-    z-index: 999;
-  }
-
-  .c12.sticky {
-    width: 100% !important;
-    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.3);
-  }
-
-  .c12:not(.sticky) .c13:before,
-  .c12:not(.sticky) .c13:after {
-    content: "";
-    height: 1px;
-    background-color: #DBDBDB;
-    position: absolute;
-    left: 10px;
-    right: 10px;
-  }
-
-  .c12:not(.sticky) .c13:before {
-    top: 0;
-  }
-
-  .c12:not(.sticky) .c13:after {
-    bottom: 0;
-  }
-}
-
-@media (min-width:1321px) {
-  .c12 {
-    position: static !important;
-  }
-
-  .c12 .c13:before,
-  .c12 .c13:after {
-    content: "";
-    height: 1px;
-    background-color: #DBDBDB;
-    position: absolute;
-    left: 10px;
-    right: 10px;
-  }
-
-  .c12 .c13:before {
-    top: 0;
-  }
-
-  .c12 .c13:after {
-    bottom: 0;
   }
 }
 
@@ -2715,8 +2613,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 .IS7 {
-  z-index: 999;
-  top: 0;
+  display: none;
 }
 
 .IS8 {
@@ -2869,15 +2766,22 @@ exports[`full article with style in the sunday times magazine 1`] = `
         </figcaption>
       </figure>
     </div>
-    <div
-      className="tc-sticky-container c12 IS7"
-    >
+    <div>
       <div
-        className="c13 c14"
+        className="c12"
       >
-        <SaveAndShareBar />
+        <div>
+          <div
+            className="c13 c14"
+          >
+            <SaveAndShareBar />
+          </div>
+        </div>
       </div>
     </div>
+    <div
+      className="IS7"
+    />
     <div
       className="c15 responsiveweb__BodyContainer-sc-1exejum-2 c15 css-view-1dbjc4n"
     >

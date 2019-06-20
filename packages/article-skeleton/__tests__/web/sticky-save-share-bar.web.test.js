@@ -12,6 +12,8 @@ import {
 } from "@times-components/jest-serializer";
 import StickySaveAndShareBar from "../../src/sticky-save-and-share-bar";
 
+window.matchMedia = jest.fn(() => ({ matches: true }));
+
 jest.mock("@times-components/save-and-share-bar", () => () =>
   "SaveAndShareBar"
 );

@@ -53,26 +53,29 @@ export const SaveShareContainer = styled.div`
     left: 0;
     right: 0;
   }
-  
+
   &:before {
     top: 0;
   }
-  
+
   &:after {
     bottom: 0;
   }
 `;
-
 export const OuterSaveShareContainer = styled.div`
   margin: ${spacing(6)} auto;
   background-color: ${colours.functional.white};
-  
+
   &.${STICKY_CLASS_NAME} {
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
-    
+
+    /* stylelint-disable */
     ${SaveShareContainer} {
-      &:before, &:after { display: none; }
+      &:before,
+      &:after {
+        display: none;
+      }
     }
+    /* stylelint-enable */
   }
 `;
-

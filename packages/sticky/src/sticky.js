@@ -144,20 +144,12 @@ class UnwrappedSticky extends Component {
     const { Component, style, children, className } = this.props;
     return (
       <>
-        <div
-          data-tc-sticky-container
-          ref={this.createContainerRef}>
-          <Component
-            className={className}
-            style={style}
-          >
+        <div data-tc-sticky-container ref={this.createContainerRef}>
+          <Component className={className} style={style}>
             <div data-tc-sticky-sizer>{children}</div>
           </Component>
         </div>
-        <div
-          style={{ display: "none" }}
-          data-tc-sticky-placeholder
-        />
+        <div style={{ display: "none" }} data-tc-sticky-placeholder />
       </>
     );
   }
@@ -188,6 +180,15 @@ UnwrappedSticky.defaultProps = {
 };
 
 const Sticky = withStickyContext(UnwrappedSticky);
+
+const matchMedia =
+  typeof window !== "undefined" && window.matchMedia || (() => ({ matches: true }));
+
+Sticky.mediaQuery = query => {
+  const mql = matchMedia(query);
+
+  return () => mql.matches;
+};
 
 export { UnwrappedSticky, StickyProvider };
 
