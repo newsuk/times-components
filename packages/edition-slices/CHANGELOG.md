@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.61.3](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.61.2...@times-components/edition-slices@0.61.3) (2019-06-20)
+
+
+### Bug Fixes
+
+* REPLAT-6745 list-2-and-6-no-pic tablet teaser ([#2054](https://github.com/newsuk/times-components/issues/2054)) ([f0743ad](https://github.com/newsuk/times-components/commit/f0743ad))
+
+
+
+
+
 ## [0.61.2](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.61.1...@times-components/edition-slices@0.61.2) (2019-06-20)
 
 
