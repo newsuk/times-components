@@ -1,16 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
-<InteractiveWrapper
-  attributes={
-    Object {
-      "chaptercounter": "Chapter%20one",
-      "heading": "A heading",
-      "standfirst": "A standfirst",
-    }
-  }
-  element="chapter-header"
-  id="a0534eee-682e-4955-8e1e-84b428ef1e79"
-  source="//components.timesdev.tools/lib2/times-chapter-header-1.0.0/chapter-header.html"
-/>
-`;
+exports[`renders correctly 1`] = `<div />`;
