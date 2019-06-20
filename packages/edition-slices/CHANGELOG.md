@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.61.2](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.61.1...@times-components/edition-slices@0.61.2) (2019-06-20)
+
+
+### Bug Fixes
+
+* save star positioning ([#2053](https://github.com/newsuk/times-components/issues/2053)) ([e5a11df](https://github.com/newsuk/times-components/commit/e5a11df))
+
+
+
+
+
 ## [0.61.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.61.0...@times-components/edition-slices@0.61.1) (2019-06-19)
 
 
