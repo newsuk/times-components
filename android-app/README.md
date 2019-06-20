@@ -53,3 +53,12 @@ uploaded to maven.
 - Navigate to an article page on the app
 - Reload the article by pressing key `]` to load the react-native article
 - To update the app to the latest times-component, update the dependancy [here](https://github.com/newsuk/nu-projectd-times-smartphone-android/blob/develop/mobile/build.gradle#L199) to the android-app version [here](https://github.com/newsuk/times-components/blob/10d3ec6dfaba08b376792fa17d6e2fced5747a7e/android-app/package.json#L3) and reinstall the app on the emulator
+
+### Locally install Times Component library on devices
+
+1. Check Android SDK path is exported to \$ANDROID_HOME. In Mac, android sdk is installed to ~/Library/Android/sdk by default. `export ANDROID_HOME="/Users/<USERNAME>/Library/Android/sdk"`
+2. update the version in android-app package.json and chnage the android build.gradle package version correspondingly
+3. Build lib `yarn android:build-lib`
+4. Copy newly built android bundle to andriod repo `cp android-app/xnative/src/main/assets/index.android.bundle ../../nu-projectd-times-smartphone-android/mobile/src/main/assets/index.android.bundle`
+5. before building, update the version in android-app/package.json to something that doesnt exist in nu-android, mobile/build.gradle change the version to match in the top level build.gradle add the local repo: `maven { url "../../times-components/android-app/repo"}`
+6. then using android studio build the app onto the device
