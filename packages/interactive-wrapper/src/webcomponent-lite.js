@@ -1,4 +1,3 @@
-/* eslint-disable */
 /**
  * @license
  * Copyright (c) 2014 The Polymer Project Authors. All rights reserved.
@@ -101,7 +100,7 @@
       }
       return encodeURIComponent(c);
     }
-    const EOF; const ALPHA = /[a-zA-Z]/; const ALPHANUMERIC = /[a-zA-Z0-9\+\-\.]/;
+    let EOF; const ALPHA = /[a-zA-Z]/; const ALPHANUMERIC = /[a-zA-Z0-9\+\-\.]/;
     function parse(input, stateOverride, base) {
       function err(message) {
         errors.push(message);
