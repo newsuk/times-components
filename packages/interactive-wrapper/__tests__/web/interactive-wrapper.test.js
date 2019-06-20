@@ -21,7 +21,9 @@ it("renders correctly", () => {
     source:
       "//components.timesdev.tools/lib2/times-chapter-header-1.0.0/chapter-header.html"
   };
+  const container = document.createElement("div");
 
-  const wrapper = mount(<InteractiveWrapper {...props} />);
-  expect(wrapper).toMatchSnapshot();
+  mount(<InteractiveWrapper {...props} />, { attachTo: container });
+
+  expect(container).toMatchSnapshot();
 });
