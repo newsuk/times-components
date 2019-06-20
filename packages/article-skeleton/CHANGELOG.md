@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.9.7](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.9.6...@times-components/article-skeleton@1.9.7) (2019-06-20)
+
+
+### Bug Fixes
+
+* share-save-bar at the bottom of article page ([#2039](https://github.com/newsuk/times-components/issues/2039)) ([6ca3ac6](https://github.com/newsuk/times-components/commit/6ca3ac6))
+
+
+
+
+
 ## [1.9.6](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.9.5...@times-components/article-skeleton@1.9.6) (2019-06-19)
 
 **Note:** Version bump only for package @times-components/article-skeleton

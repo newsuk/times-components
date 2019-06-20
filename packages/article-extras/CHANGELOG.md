@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.62](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.1.61...@times-components/article-extras@0.1.62) (2019-06-20)
+
+
+### Bug Fixes
+
+* share-save-bar at the bottom of article page ([#2039](https://github.com/newsuk/times-components/issues/2039)) ([6ca3ac6](https://github.com/newsuk/times-components/commit/6ca3ac6))
+
+
+
+
+
 ## [0.1.61](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.1.60...@times-components/article-extras@0.1.61) (2019-06-19)
 
 
