@@ -33,6 +33,7 @@ const styles = {
   },
   star: verticalStyles,
   strapline: {
+    fontFamily: fonts.bodyRegular,
     color: colours.functional.secondary,
     fontSize: fontSizes.meta,
     lineHeight: 20,
@@ -41,7 +42,8 @@ const styles = {
   },
   summaryContainer: {
     alignItems: "center",
-    paddingTop: spacing(2)
+    paddingTop: spacing(2),
+    paddingBottom: spacing(3)
   }
 };
 
