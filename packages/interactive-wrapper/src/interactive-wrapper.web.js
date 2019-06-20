@@ -2,9 +2,7 @@
 /* eslint-disable react/forbid-prop-types */
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import 'webcomponents.js-2'
-// let webComponent
-
+import "./webcomponent-lite";
 
 export default class InteractiveWrapper extends Component {
   constructor(props) {
@@ -13,48 +11,37 @@ export default class InteractiveWrapper extends Component {
 
     this.state = {
       webComponentsPolyfill: false
-    }
-    
+    };
   }
-  
+
   componentDidMount() {
+    window.addEventListener("WebComponentsReady", () => {
+      this.setState({ webComponentsPolyfill: true });
 
-    // if(!this.state.webComponentsPolyfill) {
-    //  webcomponents = require("webcomponents.js-2")
-      window.addEventListener('WebComponentsReady', (e) => {
-        console.log(this)
-         this.setState({ webComponentsPolyfill: true });
-          // imports are loaded and elements have been registered
-         console.log('Components are ready');
+      const { attributes, element, source } = this.props;
+      const placeholder = this.placeholder.current;
+      const { parentNode } = placeholder;
 
-             
-    const { attributes, element, source } = this.props;
-    const placeholder = this.placeholder.current;
-    const { parentNode } = placeholder;
+      const newElement = document.createElement(element);
+      const link = document.createElement("link");
 
-    const newElement = document.createElement(element);
-    const link = document.createElement("link");
+      link.setAttribute("href", source);
+      link.setAttribute("rel", "import");
 
-    link.setAttribute("href", source);
-    link.setAttribute("rel", "import");
+      Object.keys(attributes).forEach(key =>
+        newElement.setAttribute(key, attributes[key])
+      );
 
-    Object.keys(attributes).forEach(key =>
-      newElement.setAttribute(key, attributes[key])
-    );
+      parentNode.replaceChild(newElement, placeholder);
+      parentNode.insertBefore(link, newElement);
 
-    parentNode.replaceChild(newElement, placeholder);
-    parentNode.insertBefore(link, newElement);
-
-    delete this.placeholder.current;
-       })
-      // }
-
-  
-    
+      delete this.placeholder.current;
+    });
   }
 
   render() {
-    return this.state.webComponentsPolyfill ? <div ref={this.placeholder} /> : <div> loading</div>
+    const { webComponentsPolyfill } = this.state;
+    return webComponentsPolyfill && <div ref={this.placeholder} />;
   }
 }
 

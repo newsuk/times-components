@@ -58,8 +58,7 @@
   },
   "dependencies": {
     "prop-types": "15.7.2",
-    "react-native-webview": "5.10.0",
-    "webcomponents.js-2": "0.7.24"
+    "react-native-webview": "5.10.0"
   },
   "peerDependencies": {
     "react": ">=16.5",
