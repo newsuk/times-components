@@ -27,7 +27,7 @@ export default ({ el, data, platform, eventCallback, window }) => {
   const { Promise, document, googletag, pbjs, apstag, initCalled } = window;
   let localInitCalled = false;
   const isWeb = platform === "web";
-  const { timeout, bidders, bidInitialiser } = data.prebidConfig;
+  const { timeout, bidders } = data.prebidConfig;
   const amazonAccountID = bidders && bidders.amazon && bidders.amazon.accountId;
 
   return {
@@ -38,7 +38,7 @@ export default ({ el, data, platform, eventCallback, window }) => {
       localInitCalled = true;
       window.initCalled = true;
 
-      if (!bidInitialiser) {
+      if (!data.bidInitialiser) {
         this.loadScripts();
       }
 
