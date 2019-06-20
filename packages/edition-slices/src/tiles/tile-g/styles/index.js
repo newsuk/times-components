@@ -2,6 +2,7 @@ import { fontFactory, spacing } from "@times-components/styleguide";
 
 const styles = {
   container: {
+    flex: 1,
     flexDirection: "row",
     padding: spacing(2)
   },
