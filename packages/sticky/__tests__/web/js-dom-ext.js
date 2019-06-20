@@ -26,20 +26,30 @@ Object.defineProperties(window.HTMLElement.prototype, {
   },
   offsetWidth: {
     get() {
-      return parseFloat(window.getComputedStyle(this).width) || 0;
+      return parseFloat(window.getComputedStyle(this).width) || (
+        this.parentNode === document.body ? 1000 : this.parentNode.clientWidth
+      );
+    }
+  },
+  clientWidth: {
+    get() {
+      return this.offsetWidth;
     }
   },
   getBoundingClientRect: {
+    writable: true,
     value() {
       let top = -window.pageYOffset;
+      let left = -window.pageXOffset;
       let node = this;
 
       while (node !== document.body) {
         top += node.offsetTop;
+        left += node.offsetLeft;
         node = node.parentNode;
       }
 
-      return { top };
+      return { top, left, width: this.offsetWidth };
     }
   }
 });

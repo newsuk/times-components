@@ -8,7 +8,7 @@ import hoistNonReactStatic from "hoist-non-react-statics";
 
 import { getTopFromBody } from "./util";
 
-export const defaultContext = { top: 0, node: document.body };
+export const defaultContext = { top: 0 };
 const { Provider, Consumer } = React.createContext(defaultContext);
 
 class StickyProvider extends Component {
@@ -29,7 +29,7 @@ class StickyProvider extends Component {
 
   setTop() {
     const { node } = this;
-    const { top, node: currentNode } = this.state;
+    const { top } = this.state;
 
     if (!node) {
       return;
@@ -37,8 +37,8 @@ class StickyProvider extends Component {
 
     const newTop = Math.round(getTopFromBody(node));
 
-    if (newTop !== top || node !== currentNode) {
-      this.setState({ top: newTop, node });
+    if (newTop !== top) {
+      this.setState({ top: newTop });
     }
   }
 

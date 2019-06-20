@@ -3,7 +3,7 @@
 
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { getOuterVerticalStyle, isOutOfView } from "./util";
+import { isOutOfView } from "./util";
 import { withStickyContext, StickyProvider, defaultContext } from "./context";
 
 export const STICKY_CLASS_NAME = "tc-sticky";
@@ -13,25 +13,29 @@ class UnwrappedSticky extends Component {
     super(props);
 
     this.updateSticky = this.updateSticky.bind(this);
+    this.updateStickyOnResize = this.updateStickyOnResize.bind(this);
     this.createContainerRef = this.createContainerRef.bind(this);
-    this.createPlaceholderRef = this.createPlaceholderRef.bind(this);
     this.isSticky = false;
   }
 
   componentDidMount() {
     window.addEventListener("scroll", this.updateSticky);
-    window.addEventListener("resize", this.updateSticky);
+    window.addEventListener("resize", this.updateStickyOnResize);
 
     this.updateSticky();
   }
 
   componentDidUpdate() {
+    if (this.isSticky) {
+      this.setSticky(false);
+    }
+
     this.updateSticky();
   }
 
   componentWillUnmount() {
     window.removeEventListener("scroll", this.updateSticky);
-    window.removeEventListener("resize", this.updateSticky);
+    window.removeEventListener("resize", this.updateStickyOnResize);
 
     if (this.isSticky) {
       this.setSticky(false);
@@ -39,9 +43,9 @@ class UnwrappedSticky extends Component {
   }
 
   setSticky(shouldBeSticky) {
-    const { placeholder, container } = this;
+    const { placeholder, container, component, sizer } = this;
 
-    if (!placeholder || !container) {
+    if (!placeholder || !container || !component || !sizer) {
       return;
     }
 
@@ -49,40 +53,52 @@ class UnwrappedSticky extends Component {
     this.isSticky = shouldBeSticky;
 
     if (shouldBeSticky) {
-      const outerStyles = getOuterVerticalStyle(container);
-      Object.assign(placeholder.style, outerStyles);
-      container.classList.add(STICKY_CLASS_NAME);
-      placeholder.style.removeProperty("display");
-      stickyContext.node.parentNode.appendChild(container);
-      Object.assign(container.style, {
-        top: `${stickyContext.top}px`,
-        zIndex,
-        position: "fixed",
-        left: 0,
-        width: "100%",
-        transform: `translateY(-${outerStyles.marginTop})`
-      });
+      const styles = window.getComputedStyle(component);
+
+      placeholder.style.cssText += `
+        margin-top: ${styles.marginTop};
+        margin-bottom: ${styles.marginBottom};
+        height: ${styles.height};
+        display: block;
+      `;
+
+      container.style.cssText += `
+        top: ${stickyContext.top}px;
+        z-index: ${zIndex};
+        position: fixed;
+        left: 0;
+        width: 100%;
+        transform: translateY(-${styles.marginTop}); 
+      `;
+
+      component.classList.add(STICKY_CLASS_NAME);
+
+      document.body.appendChild(container);
+
+      this.updateSizer();
     } else {
-      container.classList.remove(STICKY_CLASS_NAME);
+      component.classList.remove(STICKY_CLASS_NAME);
       placeholder.parentNode.insertBefore(container, placeholder.nextSibling);
       placeholder.style.display = "none";
-      container.style.removeProperty("top");
-      container.style.removeProperty("z-index");
-      container.style.removeProperty("position");
-      container.style.removeProperty("left");
-      container.style.removeProperty("width");
-      container.style.removeProperty("transform");
+      container.setAttribute("style", "");
+      sizer.setAttribute("style", "");
     }
   }
 
   createContainerRef(node) {
     this.container = node;
-    this.updateSticky();
-  }
 
-  createPlaceholderRef(node) {
-    this.placeholder = node;
-    this.updateSticky();
+    if (node) {
+      this.component = node.firstElementChild;
+      this.sizer = this.component.firstElementChild;
+      this.placeholder = this.container.nextSibling;
+
+      this.updateSticky();
+    } else {
+      delete this.component;
+      delete this.sizer;
+      delete this.placeholder;
+    }
   }
 
   doesStickyNeedUpdating(shouldBeSticky) {
@@ -93,7 +109,7 @@ class UnwrappedSticky extends Component {
     const { stickyContext, shouldBeSticky } = this.props;
     const { container, placeholder, isSticky } = this;
 
-    if (!container || !placeholder || !stickyContext.node) {
+    if (!container || !placeholder) {
       return;
     }
 
@@ -106,23 +122,42 @@ class UnwrappedSticky extends Component {
     }
   }
 
+  updateStickyOnResize() {
+    this.updateSticky();
+    this.updateSizer();
+  }
+
+  updateSizer() {
+    const { sizer, placeholder, isSticky } = this;
+
+    if (isSticky) {
+      const rect = placeholder.getBoundingClientRect();
+
+      sizer.style.cssText += `
+        width: ${rect.width}px;
+        margin-left: ${rect.left}px;
+      `;
+    }
+  }
+
   render() {
     const { Component, style, children, className } = this.props;
     return (
       <>
         <div
-          ref={this.createPlaceholderRef}
+          data-tc-sticky-container
+          ref={this.createContainerRef}>
+          <Component
+            className={className}
+            style={style}
+          >
+            <div data-tc-sticky-sizer>{children}</div>
+          </Component>
+        </div>
+        <div
           style={{ display: "none" }}
           data-tc-sticky-placeholder
         />
-        <Component
-          className={className}
-          style={style}
-          data-tc-sticky-element
-          ref={this.createContainerRef}
-        >
-          {children}
-        </Component>
       </>
     );
   }
@@ -136,10 +171,7 @@ UnwrappedSticky.propTypes = {
   className: PropTypes.string,
   children: PropTypes.node,
   stickyContext: PropTypes.shape({
-    top: PropTypes.number.isRequired,
-    node: PropTypes.shape({
-      appendChild: PropTypes.func.isRequired
-    })
+    top: PropTypes.number.isRequired
   }),
   zIndex: PropTypes.string,
   shouldBeSticky: PropTypes.func
@@ -149,7 +181,7 @@ UnwrappedSticky.defaultProps = {
   Component: "div",
   className: "",
   children: null,
-  stickyContext: defaultContext,
+  stickyContext: { ...defaultContext },
   style: {},
   zIndex: "999",
   shouldBeSticky: () => true
