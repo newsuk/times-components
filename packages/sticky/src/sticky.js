@@ -182,7 +182,8 @@ UnwrappedSticky.defaultProps = {
 const Sticky = withStickyContext(UnwrappedSticky);
 
 const matchMedia =
-  typeof window !== "undefined" && window.matchMedia || (() => ({ matches: true }));
+  (typeof window !== "undefined" && window.matchMedia) ||
+  (() => ({ matches: true }));
 
 Sticky.mediaQuery = query => {
   const mql = matchMedia(query);
