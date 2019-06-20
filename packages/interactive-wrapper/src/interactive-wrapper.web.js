@@ -2,14 +2,32 @@
 /* eslint-disable react/forbid-prop-types */
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import 'webcomponents.js-2'
+// let webComponent
+
 
 export default class InteractiveWrapper extends Component {
   constructor(props) {
     super(props);
     this.placeholder = React.createRef(null);
-  }
 
+    this.state = {
+      webComponentsPolyfill: false
+    }
+    
+  }
+  
   componentDidMount() {
+
+    // if(!this.state.webComponentsPolyfill) {
+    //  webcomponents = require("webcomponents.js-2")
+      window.addEventListener('WebComponentsReady', (e) => {
+        console.log(this)
+         this.setState({ webComponentsPolyfill: true });
+          // imports are loaded and elements have been registered
+         console.log('Components are ready');
+
+             
     const { attributes, element, source } = this.props;
     const placeholder = this.placeholder.current;
     const { parentNode } = placeholder;
@@ -28,10 +46,15 @@ export default class InteractiveWrapper extends Component {
     parentNode.insertBefore(link, newElement);
 
     delete this.placeholder.current;
+       })
+      // }
+
+  
+    
   }
 
   render() {
-    return <div ref={this.placeholder} />;
+    return this.state.webComponentsPolyfill ? <div ref={this.placeholder} /> : <div> loading</div>
   }
 }
 
