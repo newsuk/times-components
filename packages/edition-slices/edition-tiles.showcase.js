@@ -43,7 +43,8 @@ import {
   TileAL,
   TileAM,
   TileAN,
-  TileAP
+  TileAP,
+  TileAQ
 } from "./src/tiles";
 
 const tile = mockEditionSlice(1).items[0];
@@ -232,6 +233,10 @@ const tileStories = [
   {
     name: "Tile AP - Vertical Aligned - Roundel Img on top of Article Summary",
     Tile: TileAP
+  },
+  {
+    name: "Tile AQ - Top image, 22pt headline, with teaser",
+    Tile: TileAQ
   }
 ];
 
