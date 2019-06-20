@@ -36,6 +36,10 @@ export const SaveShareContainer = styled.div`
   margin: 0 auto;
   height: 60px;
 
+  @media (max-width: ${breakpoints.medium - 1}px) {
+    padding: 0 ${spacing(2)};
+  }
+
   @media (min-width: ${breakpoints.medium}px) {
     width: 80.8%;
   }

@@ -96,6 +96,12 @@ exports[`1. a primary image 1`] = `
   }
 }
 
+@media (max-width:767px) {
+  .c4 {
+    padding: 0 10px;
+  }
+}
+
 @media (min-width:768px) {
   .c4 {
     width: 80.8%;
@@ -234,6 +240,12 @@ exports[`2. a fullwidth image 1`] = `
     border-bottom-width: 1px;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+}
+
+@media (max-width:767px) {
+  .c4 {
+    padding: 0 10px;
   }
 }
 
@@ -399,6 +411,12 @@ exports[`3. a secondary image 1`] = `
     border-bottom-width: 1px;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+}
+
+@media (max-width:767px) {
+  .c4 {
+    padding: 0 10px;
   }
 }
 
@@ -569,6 +587,12 @@ exports[`4. an inline image 1`] = `
     border-bottom-width: 1px;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+}
+
+@media (max-width:767px) {
+  .c4 {
+    padding: 0 10px;
   }
 }
 

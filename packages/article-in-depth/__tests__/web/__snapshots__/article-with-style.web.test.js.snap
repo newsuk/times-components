@@ -271,6 +271,12 @@ exports[`full article with style 1`] = `
   }
 }
 
+@media (max-width:767px) {
+  .c13 {
+    padding: 0 10px;
+  }
+}
+
 @media (min-width:768px) {
   .c13 {
     width: 80.8%;
@@ -983,6 +989,12 @@ exports[`full article with style in the culture magazine 1`] = `
     border-bottom-width: 1px;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+}
+
+@media (max-width:767px) {
+  .c13 {
+    padding: 0 10px;
   }
 }
 
@@ -1702,6 +1714,12 @@ exports[`full article with style in the style magazine 1`] = `
   }
 }
 
+@media (max-width:767px) {
+  .c13 {
+    padding: 0 10px;
+  }
+}
+
 @media (min-width:768px) {
   .c13 {
     width: 80.8%;
@@ -2415,6 +2433,12 @@ exports[`full article with style in the sunday times magazine 1`] = `
     border-bottom-width: 1px;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+}
+
+@media (max-width:767px) {
+  .c13 {
+    padding: 0 10px;
   }
 }
 
