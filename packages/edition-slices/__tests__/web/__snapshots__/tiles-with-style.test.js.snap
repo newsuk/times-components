@@ -3,40 +3,28 @@
 exports[`1. tile a 1`] = `
 <style>
 .S1 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
   margin-bottom: 0px;
 }
 
 .S2 {
-  margin-bottom: 0px;
-}
-
-.S3 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
 }
 
 .IS1 {
-  color: rgba(0,91,141,1.00);
-}
-
-.IS2 {
   font-size: 35px;
   line-height: 35px;
   margin-bottom: 10px;
 }
 
-.IS3 {
+.IS2 {
   margin-right: 10px;
   margin-left: 10px;
   margin-top: 10px;
 }
 
-.IS4 {
+.IS3 {
   width: 100%;
 }
 </style>
@@ -45,20 +33,20 @@ exports[`1. tile a 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS3"
+    className="css-view-1dbjc4n IS2"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
     >
-      <div
-        className="css-text-76zvg2 r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-3b040n r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS1 S1"
-      >
-        LABEL
-      </div>
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 IS2 S3"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 IS1 S2"
       role="heading"
     >
       This is tile headline
@@ -76,7 +64,7 @@ exports[`1. tile a 1`] = `
   </div>
   <Image
     aspectRatio={1.7777777777777777}
-    className="IS4"
+    className="IS3"
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
 </Link>
@@ -85,25 +73,17 @@ exports[`1. tile a 1`] = `
 exports[`2. tile b 1`] = `
 <style>
 .S1 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
   margin-bottom: 0px;
 }
 
 .S2 {
-  margin-bottom: 0px;
-}
-
-.S3 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
   margin-bottom: 5px;
 }
 
-.S4 {
+.S3 {
   color: rgba(105,105,105,1.00);
   -ms-flex-wrap: wrap;
   -webkit-box-lines: multiple;
@@ -116,15 +96,11 @@ exports[`2. tile b 1`] = `
 }
 
 .IS1 {
-  color: rgba(0,91,141,1.00);
-}
-
-.IS2 {
   font-size: 25px;
   line-height: 25px;
 }
 
-.IS3 {
+.IS2 {
   padding-bottom: 25px;
 }
 </style>
@@ -139,26 +115,26 @@ exports[`2. tile b 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS3"
+    className="css-view-1dbjc4n IS2"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
     >
-      <div
-        className="css-text-76zvg2 r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-3b040n r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS1 S1"
-      >
-        LABEL
-      </div>
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S3"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
       role="heading"
     >
       This is tile headline
     </h3>
     <div
-      className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S4"
+      className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
     >
       <span
         className="css-text-76zvg2 css-textHasAncestor-16my406"
@@ -189,18 +165,10 @@ exports[`3. tile c 1`] = `
 }
 
 .S2 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
   margin-bottom: 0px;
 }
 
 .S3 {
-  margin-bottom: 0px;
-}
-
-.S4 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-size: 22px;
@@ -213,15 +181,11 @@ exports[`3. tile c 1`] = `
 }
 
 .IS2 {
-  color: rgba(0,91,141,1.00);
-}
-
-.IS3 {
   line-height: 22px;
   padding-bottom: 5px;
 }
 
-.IS4 {
+.IS3 {
   padding-bottom: 25px;
 }
 </style>
@@ -245,20 +209,20 @@ exports[`3. tile c 1`] = `
     />
   </div>
   <div
-    className="css-view-1dbjc4n IS4"
+    className="css-view-1dbjc4n IS3"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S3"
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
     >
-      <div
-        className="css-text-76zvg2 r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-3b040n r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS2 S2"
-      >
-        LABEL
-      </div>
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS3 S4"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S3"
       role="heading"
     >
       This is tile headline
@@ -280,18 +244,10 @@ exports[`3. tile c 1`] = `
 exports[`4. tile d 1`] = `
 <style>
 .S1 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
   margin-bottom: 0px;
 }
 
 .S2 {
-  margin-bottom: 0px;
-}
-
-.S3 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-size: 22px;
@@ -305,14 +261,10 @@ exports[`4. tile d 1`] = `
 }
 
 .IS2 {
-  color: rgba(0,91,141,1.00);
-}
-
-.IS3 {
   line-height: 22px;
 }
 
-.IS4 {
+.IS3 {
   padding-bottom: 5px;
   padding-right: 10px;
   width: 50%;
@@ -334,20 +286,20 @@ exports[`4. tile d 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
   />
   <div
-    className="css-view-1dbjc4n IS4"
+    className="css-view-1dbjc4n IS3"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
     >
-      <div
-        className="css-text-76zvg2 r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-3b040n r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS2 S1"
-      >
-        LABEL
-      </div>
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-15d164r IS3 S3"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-15d164r IS2 S2"
       role="heading"
     >
       This is tile headline
@@ -369,18 +321,10 @@ exports[`4. tile d 1`] = `
 exports[`5. tile e 1`] = `
 <style>
 .S1 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
   margin-bottom: 0px;
 }
 
 .S2 {
-  margin-bottom: 0px;
-}
-
-.S3 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-size: 22px;
@@ -394,14 +338,10 @@ exports[`5. tile e 1`] = `
 }
 
 .IS2 {
-  color: rgba(0,91,141,1.00);
-}
-
-.IS3 {
   line-height: 22px;
 }
 
-.IS4 {
+.IS3 {
   padding-bottom: 5px;
   padding-right: 10px;
   width: 50%;
@@ -423,20 +363,20 @@ exports[`5. tile e 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1434%2C1792%2C627%2C0"
   />
   <div
-    className="css-view-1dbjc4n IS4"
+    className="css-view-1dbjc4n IS3"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
     >
-      <div
-        className="css-text-76zvg2 r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-3b040n r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS2 S1"
-      >
-        LABEL
-      </div>
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS3 S3"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
       role="heading"
     >
       This is tile headline
@@ -458,32 +398,24 @@ exports[`5. tile e 1`] = `
 exports[`6. tile f 1`] = `
 <style>
 .S1 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
   margin-bottom: 0px;
 }
 
 .S2 {
-  margin-bottom: 0px;
-}
-
-.S3 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
   margin-bottom: 5px;
 }
 
-.S4 {
+.S3 {
   color: rgba(105,105,105,1.00);
   font-family: TimesModern-Regular;
   font-size: 19px;
   line-height: 21px;
 }
 
-.S5 {
+.S4 {
   color: rgba(105,105,105,1.00);
   -ms-flex-wrap: wrap;
   -webkit-box-lines: multiple;
@@ -496,15 +428,11 @@ exports[`6. tile f 1`] = `
 }
 
 .IS1 {
-  color: rgba(0,91,141,1.00);
-}
-
-.IS2 {
   font-size: 35px;
   line-height: 35px;
 }
 
-.IS3 {
+.IS2 {
   padding-bottom: 25px;
 }
 </style>
@@ -519,33 +447,33 @@ exports[`6. tile f 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS3"
+    className="css-view-1dbjc4n IS2"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
     >
-      <div
-        className="css-text-76zvg2 r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-3b040n r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS1 S1"
-      >
-        LABEL
-      </div>
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S3"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
       role="heading"
     >
       This is tile headline
     </h3>
     <h4
       aria-level="4"
-      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khp51w r-fontFamily-4h8ur4 r-fontSize-1b6yd1w r-lineHeight-10yl4k r-paddingBottom-1mi0q7o S4"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khp51w r-fontFamily-4h8ur4 r-fontSize-1b6yd1w r-lineHeight-10yl4k r-paddingBottom-1mi0q7o S3"
       role="heading"
     >
       Three Conservative MPs resign
     </h4>
     <div
-      className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S5"
+      className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S4"
     >
       <span
         className="css-text-76zvg2 css-textHasAncestor-16my406"
@@ -572,18 +500,10 @@ exports[`6. tile f 1`] = `
 exports[`7. tile g 1`] = `
 <style>
 .S1 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
   margin-bottom: 0px;
 }
 
 .S2 {
-  margin-bottom: 0px;
-}
-
-.S3 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-size: 22px;
@@ -597,15 +517,11 @@ exports[`7. tile g 1`] = `
 }
 
 .IS2 {
-  color: rgba(0,91,141,1.00);
-}
-
-.IS3 {
   line-height: 22px;
   padding-bottom: 5px;
 }
 
-.IS4 {
+.IS3 {
   -webkit-justify-content: center;
   justify-content: center;
   padding-bottom: 25px;
@@ -636,20 +552,20 @@ exports[`7. tile g 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
   />
   <div
-    className="css-view-1dbjc4n IS4"
+    className="css-view-1dbjc4n IS3"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
     >
-      <div
-        className="css-text-76zvg2 r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-3b040n r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS2 S1"
-      >
-        LABEL
-      </div>
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS3 S3"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
       role="heading"
     >
       This is tile headline
@@ -671,18 +587,10 @@ exports[`7. tile g 1`] = `
 exports[`8. tile h 1`] = `
 <style>
 .S1 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
   margin-bottom: 0px;
 }
 
 .S2 {
-  margin-bottom: 0px;
-}
-
-.S3 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-size: 22px;
@@ -690,7 +598,7 @@ exports[`8. tile h 1`] = `
   margin-bottom: 10px;
 }
 
-.S4 {
+.S3 {
   color: rgba(105,105,105,1.00);
   -ms-flex-wrap: wrap;
   -webkit-box-lines: multiple;
@@ -702,7 +610,7 @@ exports[`8. tile h 1`] = `
   margin-bottom: 10px;
 }
 
-.S5 {
+.S4 {
   color: rgba(51,51,51,1.00);
   font-family: GillSansMTStd-Medium;
   font-size: 13px;
@@ -710,21 +618,17 @@ exports[`8. tile h 1`] = `
 }
 
 .IS1 {
-  color: rgba(0,91,141,1.00);
-}
-
-.IS2 {
   line-height: 22px;
 }
 
-.IS3 {
+.IS2 {
   padding-bottom: 25px;
   padding-right: 10px;
   padding-top: 10px;
   width: 50%;
 }
 
-.IS4 {
+.IS3 {
   flex-direction: column;
   justify-content: flex-end;
   padding-top: 10px;
@@ -742,26 +646,26 @@ exports[`8. tile h 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS3"
+    className="css-view-1dbjc4n IS2"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
     >
-      <div
-        className="css-text-76zvg2 r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-3b040n r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS1 S1"
-      >
-        LABEL
-      </div>
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-15d164r IS2 S3"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-15d164r IS1 S2"
       role="heading"
     >
       This is tile headline
     </h3>
     <div
-      className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S4"
+      className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
     >
       <span
         className="css-text-76zvg2 css-textHasAncestor-16my406"
@@ -785,12 +689,12 @@ exports[`8. tile h 1`] = `
       className="css-text-76zvg2"
     >
       <span
-        className="css-text-76zvg2 css-textHasAncestor-16my406 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S5"
+        className="css-text-76zvg2 css-textHasAncestor-16my406 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S4"
       >
         Richard Lloyd Parry
       </span>
       <span
-        className="css-text-76zvg2 css-textHasAncestor-16my406 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S5"
+        className="css-text-76zvg2 css-textHasAncestor-16my406 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S4"
       >
         , Hanoi
       </span>
@@ -798,7 +702,7 @@ exports[`8. tile h 1`] = `
   </div>
   <Image
     aspectRatio={0.6666666666666666}
-    className="IS4"
+    className="IS3"
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1195%2C1792%2C747%2C0"
   />
 </Link>
@@ -807,18 +711,10 @@ exports[`8. tile h 1`] = `
 exports[`9. tile i 1`] = `
 <style>
 .S1 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
   margin-bottom: 0px;
 }
 
 .S2 {
-  margin-bottom: 0px;
-}
-
-.S3 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
@@ -830,16 +726,12 @@ exports[`9. tile i 1`] = `
 }
 
 .IS2 {
-  color: rgba(0,91,141,1.00);
-}
-
-.IS3 {
   font-size: 35px;
   line-height: 35px;
   text-align: center;
 }
 
-.IS4 {
+.IS3 {
   -webkit-align-items: center;
   align-items: center;
   background-color: rgba(240,240,240,1.00);
@@ -861,20 +753,20 @@ exports[`9. tile i 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
   <div
-    className="css-view-1dbjc4n IS4"
+    className="css-view-1dbjc4n IS3"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
     >
-      <div
-        className="css-text-76zvg2 r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-3b040n r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS2 S1"
-      >
-        LABEL
-      </div>
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-15d164r IS3 S3"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-15d164r IS2 S2"
       role="heading"
     >
       This is tile headline
@@ -896,18 +788,10 @@ exports[`9. tile i 1`] = `
 exports[`10. tile j 1`] = `
 <style>
 .S1 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
   margin-bottom: 0px;
 }
 
 .S2 {
-  margin-bottom: 0px;
-}
-
-.S3 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-size: 22px;
@@ -920,14 +804,10 @@ exports[`10. tile j 1`] = `
 }
 
 .IS2 {
-  color: rgba(0,91,141,1.00);
-}
-
-.IS3 {
   line-height: 22px;
 }
 
-.IS4 {
+.IS3 {
   padding-bottom: 25px;
   padding-right: 10px;
   padding-left: 10px;
@@ -950,20 +830,20 @@ exports[`10. tile j 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
   />
   <div
-    className="css-view-1dbjc4n IS4"
+    className="css-view-1dbjc4n IS3"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
     >
-      <div
-        className="css-text-76zvg2 r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-3b040n r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS2 S1"
-      >
-        LABEL
-      </div>
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-15d164r IS3 S3"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-15d164r IS2 S2"
       role="heading"
     >
       This is tile headline
@@ -985,18 +865,10 @@ exports[`10. tile j 1`] = `
 exports[`11. tile k 1`] = `
 <style>
 .S1 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
   margin-bottom: 0px;
 }
 
 .S2 {
-  margin-bottom: 0px;
-}
-
-.S3 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
@@ -1009,15 +881,11 @@ exports[`11. tile k 1`] = `
 }
 
 .IS2 {
-  color: rgba(0,91,141,1.00);
-}
-
-.IS3 {
   font-size: 18px;
   line-height: 18px;
 }
 
-.IS4 {
+.IS3 {
   padding-bottom: 25px;
   width: 50%;
 }
@@ -1038,20 +906,20 @@ exports[`11. tile k 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
   />
   <div
-    className="css-view-1dbjc4n IS4"
+    className="css-view-1dbjc4n IS3"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
     >
-      <div
-        className="css-text-76zvg2 r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-3b040n r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS2 S1"
-      >
-        LABEL
-      </div>
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-15d164r IS3 S3"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-15d164r IS2 S2"
       role="heading"
     >
       This is tile headline
@@ -1073,18 +941,10 @@ exports[`11. tile k 1`] = `
 exports[`12. tile l 1`] = `
 <style>
 .S1 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
   margin-bottom: 0px;
 }
 
 .S2 {
-  margin-bottom: 0px;
-}
-
-.S3 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
@@ -1093,14 +953,10 @@ exports[`12. tile l 1`] = `
 }
 
 .IS1 {
-  color: rgba(0,91,141,1.00);
-}
-
-.IS2 {
   font-size: 20px;
 }
 
-.IS3 {
+.IS2 {
   padding-bottom: 25px;
 }
 </style>
@@ -1116,20 +972,20 @@ exports[`12. tile l 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS3"
+    className="css-view-1dbjc4n IS2"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
     >
-      <div
-        className="css-text-76zvg2 r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-3b040n r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS1 S1"
-      >
-        LABEL
-      </div>
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-lineHeight-rjixqe r-marginBottom-15d164r IS2 S3"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-lineHeight-rjixqe r-marginBottom-15d164r IS1 S2"
       role="heading"
     >
       This is tile headline
@@ -1211,24 +1067,16 @@ exports[`13. tile m 1`] = `
 exports[`14. tile n 1`] = `
 <style>
 .S1 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
   margin-bottom: 0px;
 }
 
 .S2 {
-  margin-bottom: 0px;
-}
-
-.S3 {
   font-family: TimesModern-Bold;
   font-weight: 400;
   margin-bottom: 5px;
 }
 
-.S4 {
+.S3 {
   color: rgba(105,105,105,1.00);
   font-family: TimesModern-Regular;
   font-size: 19px;
@@ -1240,16 +1088,12 @@ exports[`14. tile n 1`] = `
 }
 
 .IS2 {
-  color: rgba(204,204,204,1.00);
-}
-
-.IS3 {
   color: rgba(255,255,255,1.00);
   font-size: 30px;
   line-height: 33px;
 }
 
-.IS4 {
+.IS3 {
   padding-bottom: 25px;
   padding-right: 10px;
   padding-left: 10px;
@@ -1273,27 +1117,27 @@ exports[`14. tile n 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
   />
   <div
-    className="css-view-1dbjc4n IS4"
+    className="css-view-1dbjc4n IS3"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
     >
-      <div
-        className="css-text-76zvg2 r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-3b040n r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS2 S1"
-      >
-        LABEL
-      </div>
+      <ArticleLabel
+        color="#CCC"
+        isVideo={false}
+        title="label"
+      />
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-76zvg2 r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS3 S3"
+      className="css-reset-4rbku5 css-text-76zvg2 r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
       role="heading"
     >
       This is tile headline
     </h3>
     <h4
       aria-level="4"
-      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khp51w r-fontFamily-4h8ur4 r-fontSize-1b6yd1w r-lineHeight-10yl4k r-paddingBottom-1mi0q7o S4"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khp51w r-fontFamily-4h8ur4 r-fontSize-1b6yd1w r-lineHeight-10yl4k r-paddingBottom-1mi0q7o S3"
       role="heading"
     >
       Three Conservative MPs resign
@@ -1316,35 +1160,23 @@ exports[`14. tile n 1`] = `
 exports[`15. tile o 1`] = `
 <style>
 .S1 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
   margin-bottom: 0px;
 }
 
 .S2 {
-  margin-bottom: 0px;
-}
-
-.S3 {
   font-family: TimesModern-Bold;
   font-size: 22px;
   font-weight: 400;
 }
 
 .IS1 {
-  color: rgba(204,204,204,1.00);
-}
-
-.IS2 {
   color: rgba(255,255,255,1.00);
   line-height: 22px;
   margin-bottom: 11px;
   margin-top: 5px;
 }
 
-.IS3 {
+.IS2 {
   padding-bottom: 25px;
 }
 </style>
@@ -1360,20 +1192,20 @@ exports[`15. tile o 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS3"
+    className="css-view-1dbjc4n IS2"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
     >
-      <div
-        className="css-text-76zvg2 r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-3b040n r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS1 S1"
-      >
-        LABEL
-      </div>
+      <ArticleLabel
+        color="#CCC"
+        isVideo={false}
+        title="label"
+      />
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-76zvg2 r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 IS2 S3"
+      className="css-reset-4rbku5 css-text-76zvg2 r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 IS1 S2"
       role="heading"
     >
       This is tile headline
@@ -1396,34 +1228,24 @@ exports[`15. tile o 1`] = `
 exports[`16. tile p 1`] = `
 <style>
 .S1 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
   margin-bottom: 0px;
 }
 
 .S2 {
-  margin-bottom: 0px;
-}
-
-.S3 {
   font-family: TimesModern-Bold;
   font-weight: 400;
   margin-bottom: 5px;
 }
 
-.S4 {
+.S3 {
   color: rgba(105,105,105,1.00);
   font-family: TimesModern-Regular;
   font-size: 14px;
   line-height: 20px;
 }
 
-.S5 {
+.S4 {
   font-family: GillSansMTStd-Medium;
-  font-size: 12px;
-  line-height: 12px;
 }
 
 .IS1 {
@@ -1432,10 +1254,6 @@ exports[`16. tile p 1`] = `
 }
 
 .IS2 {
-  color: rgba(0,91,141,1.00);
-}
-
-.IS3 {
   color: rgba(29,29,27,1.00);
   font-size: 35px;
   line-height: 35px;
@@ -1444,21 +1262,27 @@ exports[`16. tile p 1`] = `
   text-align: center;
 }
 
-.IS4 {
+.IS3 {
   padding-right: 40px;
   padding-left: 40px;
   text-align: center;
 }
 
+.IS4 {
+  color: rgba(133,0,41,1.00);
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  line-height: 12px;
+}
+
 .IS5 {
   color: rgba(133,0,41,1.00);
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  line-height: 12px;
 }
 
 .IS6 {
-  color: rgba(133,0,41,1.00);
-}
-
-.IS7 {
   -webkit-align-items: center;
   align-items: center;
   padding-top: 10px;
@@ -1485,27 +1309,27 @@ exports[`16. tile p 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
   />
   <div
-    className="css-view-1dbjc4n IS7"
+    className="css-view-1dbjc4n IS6"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
     >
-      <div
-        className="css-text-76zvg2 r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-3b040n r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS2 S1"
-      >
-        LABEL
-      </div>
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-76zvg2 r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS3 S3"
+      className="css-reset-4rbku5 css-text-76zvg2 r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
       role="heading"
     >
       This is tile headline
     </h3>
     <h4
       aria-level="4"
-      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khp51w r-fontFamily-4h8ur4 r-fontSize-1b43r93 r-lineHeight-rjixqe r-paddingBottom-1mi0q7o IS4 S4"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khp51w r-fontFamily-4h8ur4 r-fontSize-1b43r93 r-lineHeight-rjixqe r-paddingBottom-1mi0q7o IS3 S3"
       role="heading"
     >
       Three Conservative MPs resign
@@ -1524,12 +1348,12 @@ exports[`16. tile p 1`] = `
       className="css-text-76zvg2"
     >
       <span
-        className="css-text-76zvg2 css-textHasAncestor-16my406 r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-1enofrn r-letterSpacing-3b040n r-lineHeight-56xrmm IS5 S5"
+        className="css-text-76zvg2 css-textHasAncestor-16my406 r-flexDirection-18u37iz r-fontFamily-j2s0nr IS4 S4"
       >
         Richard Lloyd Parry
       </span>
       <span
-        className="css-text-76zvg2 css-textHasAncestor-16my406 r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-1enofrn r-letterSpacing-3b040n r-lineHeight-56xrmm IS6 S5"
+        className="css-text-76zvg2 css-textHasAncestor-16my406 r-flexDirection-18u37iz r-fontFamily-j2s0nr IS5 S4"
       >
         , Hanoi
       </span>
@@ -1566,18 +1390,10 @@ exports[`17. tile q 1`] = `
 exports[`18. tile r 1`] = `
 <style>
 .S1 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
   margin-bottom: 0px;
 }
 
 .S2 {
-  margin-bottom: 0px;
-}
-
-.S3 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
@@ -1585,15 +1401,11 @@ exports[`18. tile r 1`] = `
 }
 
 .IS1 {
-  color: rgba(0,91,141,1.00);
-}
-
-.IS2 {
   font-size: 40px;
   line-height: 40px;
 }
 
-.IS3 {
+.IS2 {
   padding-bottom: 25px;
 }
 </style>
@@ -1609,20 +1421,20 @@ exports[`18. tile r 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS3"
+    className="css-view-1dbjc4n IS2"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
     >
-      <div
-        className="css-text-76zvg2 r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-3b040n r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS1 S1"
-      >
-        LABEL
-      </div>
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S3"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
       role="heading"
     >
       This is tile headline
@@ -1661,7 +1473,6 @@ exports[`19. tile s 1`] = `
 .S3 {
   color: rgba(105,105,105,1.00);
   font-family: GillSansMTStd-Medium;
-  font-size: 12px;
 }
 
 .IS1 {
@@ -1691,6 +1502,7 @@ exports[`19. tile s 1`] = `
 }
 
 .IS6 {
+  font-size: 12px;
   margin-top: 10px;
 }
 </style>
@@ -1737,7 +1549,7 @@ exports[`19. tile s 1`] = `
     </p>
   </div>
   <div
-    className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-1enofrn IS6 S3"
+    className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr IS6 S3"
   >
     <span>
       Libby Purves
@@ -1749,18 +1561,10 @@ exports[`19. tile s 1`] = `
 exports[`20. tile t 1`] = `
 <style>
 .S1 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
   margin-bottom: 0px;
 }
 
 .S2 {
-  margin-bottom: 0px;
-}
-
-.S3 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-size: 22px;
@@ -1773,14 +1577,10 @@ exports[`20. tile t 1`] = `
 }
 
 .IS2 {
-  color: rgba(0,91,141,1.00);
-}
-
-.IS3 {
   line-height: 22px;
 }
 
-.IS4 {
+.IS3 {
   padding-bottom: 25px;
   padding-right: 10px;
   padding-left: 10px;
@@ -1804,20 +1604,20 @@ exports[`20. tile t 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
   <div
-    className="css-view-1dbjc4n IS4"
+    className="css-view-1dbjc4n IS3"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
     >
-      <div
-        className="css-text-76zvg2 r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-3b040n r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS2 S1"
-      >
-        LABEL
-      </div>
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS3 S3"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
       role="heading"
     >
       This is tile headline
@@ -1839,18 +1639,10 @@ exports[`20. tile t 1`] = `
 exports[`21. tile u 1`] = `
 <style>
 .S1 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
   margin-bottom: 0px;
 }
 
 .S2 {
-  margin-bottom: 0px;
-}
-
-.S3 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
@@ -1858,22 +1650,18 @@ exports[`21. tile u 1`] = `
 }
 
 .IS1 {
-  color: rgba(0,91,141,1.00);
-}
-
-.IS2 {
   font-size: 35px;
   line-height: 35px;
   padding-top: 5px;
   padding-bottom: 5px;
 }
 
-.IS3 {
+.IS2 {
   padding-bottom: 5px;
   width: 40%;
 }
 
-.IS4 {
+.IS3 {
   width: 60%;
 }
 </style>
@@ -1889,20 +1677,20 @@ exports[`21. tile u 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS3"
+    className="css-view-1dbjc4n IS2"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
     >
-      <div
-        className="css-text-76zvg2 r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-3b040n r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS1 S1"
-      >
-        LABEL
-      </div>
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S3"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
       role="heading"
     >
       This is tile headline
@@ -1920,7 +1708,7 @@ exports[`21. tile u 1`] = `
   </div>
   <Image
     aspectRatio={1.5}
-    className="IS4"
+    className="IS3"
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
   />
 </Link>
@@ -1929,18 +1717,10 @@ exports[`21. tile u 1`] = `
 exports[`22. tile v 1`] = `
 <style>
 .S1 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
   margin-bottom: 0px;
 }
 
 .S2 {
-  margin-bottom: 0px;
-}
-
-.S3 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
@@ -1953,16 +1733,12 @@ exports[`22. tile v 1`] = `
 }
 
 .IS2 {
-  color: rgba(0,91,141,1.00);
-}
-
-.IS3 {
   font-size: 30px;
   line-height: 30px;
   padding-bottom: 5px;
 }
 
-.IS4 {
+.IS3 {
   padding-bottom: 25px;
 }
 </style>
@@ -1983,20 +1759,20 @@ exports[`22. tile v 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
   <div
-    className="css-view-1dbjc4n IS4"
+    className="css-view-1dbjc4n IS3"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
     >
-      <div
-        className="css-text-76zvg2 r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-3b040n r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS2 S1"
-      >
-        LABEL
-      </div>
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS3 S3"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
       role="heading"
     >
       This is tile headline
@@ -2018,25 +1794,17 @@ exports[`22. tile v 1`] = `
 exports[`23. tile w 1`] = `
 <style>
 .S1 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
   margin-bottom: 0px;
 }
 
 .S2 {
-  margin-bottom: 0px;
-}
-
-.S3 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
   margin-bottom: 5px;
 }
 
-.S4 {
+.S3 {
   color: rgba(105,105,105,1.00);
   -ms-flex-wrap: wrap;
   -webkit-box-lines: multiple;
@@ -2049,21 +1817,17 @@ exports[`23. tile w 1`] = `
 }
 
 .IS1 {
-  color: rgba(0,91,141,1.00);
-}
-
-.IS2 {
   font-size: 35px;
   line-height: 35px;
 }
 
-.IS3 {
+.IS2 {
   padding-bottom: 5px;
   padding-right: 20px;
   width: 33.33%;
 }
 
-.IS4 {
+.IS3 {
   width: 66.66%;
 }
 </style>
@@ -2079,26 +1843,26 @@ exports[`23. tile w 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS3"
+    className="css-view-1dbjc4n IS2"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
     >
-      <div
-        className="css-text-76zvg2 r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-3b040n r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS1 S1"
-      >
-        LABEL
-      </div>
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S3"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
       role="heading"
     >
       This is tile headline
     </h3>
     <div
-      className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S4"
+      className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
     >
       <span
         className="css-text-76zvg2 css-textHasAncestor-16my406"
@@ -2121,7 +1885,7 @@ exports[`23. tile w 1`] = `
   </div>
   <Image
     aspectRatio={1.7777777777777777}
-    className="IS4"
+    className="IS3"
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
 </Link>
@@ -2130,29 +1894,21 @@ exports[`23. tile w 1`] = `
 exports[`24. tile x 1`] = `
 <style>
 .S1 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
   margin-bottom: 0px;
 }
 
 .S2 {
-  margin-bottom: 0px;
-}
-
-.S3 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
   margin-bottom: 5px;
 }
 
-.S4 {
+.S3 {
   color: rgba(105,105,105,1.00);
 }
 
-.S5 {
+.S4 {
   color: rgba(105,105,105,1.00);
   -ms-flex-wrap: wrap;
   -webkit-box-lines: multiple;
@@ -2165,22 +1921,18 @@ exports[`24. tile x 1`] = `
 }
 
 .IS1 {
-  color: rgba(0,91,141,1.00);
-}
-
-.IS2 {
   font-size: 40px;
   line-height: 40px;
 }
 
-.IS3 {
+.IS2 {
   font-family: TimesDigitalW04-Regular;
   font-size: 25px;
   line-height: 25px;
   padding-bottom: 5px;
 }
 
-.IS4 {
+.IS3 {
   padding-bottom: 25px;
 }
 </style>
@@ -2195,33 +1947,33 @@ exports[`24. tile x 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS4"
+    className="css-view-1dbjc4n IS3"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
     >
-      <div
-        className="css-text-76zvg2 r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-3b040n r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS1 S1"
-      >
-        LABEL
-      </div>
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S3"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
       role="heading"
     >
       This is tile headline
     </h3>
     <h4
       aria-level="4"
-      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khp51w IS3 S4"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khp51w IS2 S3"
       role="heading"
     >
       Three Conservative MPs resign
     </h4>
     <div
-      className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S5"
+      className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S4"
     >
       <span
         className="css-text-76zvg2 css-textHasAncestor-16my406"
@@ -2248,25 +2000,17 @@ exports[`24. tile x 1`] = `
 exports[`25. tile y 1`] = `
 <style>
 .S1 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
   margin-bottom: 0px;
 }
 
 .S2 {
-  margin-bottom: 0px;
-}
-
-.S3 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
   margin-bottom: 5px;
 }
 
-.S4 {
+.S3 {
   color: rgba(105,105,105,1.00);
   -ms-flex-wrap: wrap;
   -webkit-box-lines: multiple;
@@ -2279,10 +2023,6 @@ exports[`25. tile y 1`] = `
 }
 
 .IS1 {
-  color: rgba(0,91,141,1.00);
-}
-
-.IS2 {
   font-size: 30px;
   line-height: 30px;
 }
@@ -2302,23 +2042,23 @@ exports[`25. tile y 1`] = `
     className="css-view-1dbjc4n"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
     >
-      <div
-        className="css-text-76zvg2 r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-3b040n r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS1 S1"
-      >
-        LABEL
-      </div>
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S3"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
       role="heading"
     >
       This is tile headline
     </h3>
     <div
-      className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S4"
+      className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
     >
       <span
         className="css-text-76zvg2 css-textHasAncestor-16my406"
@@ -2345,18 +2085,10 @@ exports[`25. tile y 1`] = `
 exports[`26. tile z 1`] = `
 <style>
 .S1 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
   margin-bottom: 0px;
 }
 
 .S2 {
-  margin-bottom: 0px;
-}
-
-.S3 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
@@ -2364,10 +2096,6 @@ exports[`26. tile z 1`] = `
 }
 
 .IS1 {
-  color: rgba(0,91,141,1.00);
-}
-
-.IS2 {
   font-size: 25px;
   line-height: 25px;
 }
@@ -2385,17 +2113,17 @@ exports[`26. tile z 1`] = `
     className="css-view-1dbjc4n"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
     >
-      <div
-        className="css-text-76zvg2 r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-3b040n r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS1 S1"
-      >
-        LABEL
-      </div>
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-15d164r IS2 S3"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-15d164r IS1 S2"
       role="heading"
     >
       This is tile headline
@@ -2421,18 +2149,10 @@ exports[`26. tile z 1`] = `
 exports[`27. tile aa 1`] = `
 <style>
 .S1 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
   margin-bottom: 0px;
 }
 
 .S2 {
-  margin-bottom: 0px;
-}
-
-.S3 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
@@ -2444,15 +2164,11 @@ exports[`27. tile aa 1`] = `
 }
 
 .IS2 {
-  color: rgba(0,91,141,1.00);
-}
-
-.IS3 {
   font-size: 30px;
   line-height: 30px;
 }
 
-.IS4 {
+.IS3 {
   padding-bottom: 25px;
   padding-top: 5px;
 }
@@ -2472,20 +2188,20 @@ exports[`27. tile aa 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
   <div
-    className="css-view-1dbjc4n IS4"
+    className="css-view-1dbjc4n IS3"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
     >
-      <div
-        className="css-text-76zvg2 r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-3b040n r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS2 S1"
-      >
-        LABEL
-      </div>
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS3 S3"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
       role="heading"
     >
       This is tile headline
@@ -2507,25 +2223,17 @@ exports[`27. tile aa 1`] = `
 exports[`28. tile ab 1`] = `
 <style>
 .S1 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
   margin-bottom: 0px;
 }
 
 .S2 {
-  margin-bottom: 0px;
-}
-
-.S3 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
   margin-bottom: 5px;
 }
 
-.S4 {
+.S3 {
   color: rgba(105,105,105,1.00);
   -ms-flex-wrap: wrap;
   -webkit-box-lines: multiple;
@@ -2537,7 +2245,7 @@ exports[`28. tile ab 1`] = `
   margin-bottom: 10px;
 }
 
-.S5 {
+.S4 {
   color: rgba(51,51,51,1.00);
   font-family: GillSansMTStd-Medium;
   font-size: 13px;
@@ -2545,22 +2253,18 @@ exports[`28. tile ab 1`] = `
 }
 
 .IS1 {
-  color: rgba(0,91,141,1.00);
-}
-
-.IS2 {
   font-size: 30px;
   line-height: 30px;
 }
 
-.IS3 {
+.IS2 {
   padding-bottom: 25px;
   padding-right: 10px;
   padding-top: 10px;
   width: 50%;
 }
 
-.IS4 {
+.IS3 {
   flex-direction: column;
   justify-content: flex-end;
   padding-top: 10px;
@@ -2578,26 +2282,26 @@ exports[`28. tile ab 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS3"
+    className="css-view-1dbjc4n IS2"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
     >
-      <div
-        className="css-text-76zvg2 r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-3b040n r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS1 S1"
-      >
-        LABEL
-      </div>
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S3"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
       role="heading"
     >
       This is tile headline
     </h3>
     <div
-      className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S4"
+      className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
     >
       <span
         className="css-text-76zvg2 css-textHasAncestor-16my406"
@@ -2621,12 +2325,12 @@ exports[`28. tile ab 1`] = `
       className="css-text-76zvg2"
     >
       <span
-        className="css-text-76zvg2 css-textHasAncestor-16my406 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S5"
+        className="css-text-76zvg2 css-textHasAncestor-16my406 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S4"
       >
         Richard Lloyd Parry
       </span>
       <span
-        className="css-text-76zvg2 css-textHasAncestor-16my406 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S5"
+        className="css-text-76zvg2 css-textHasAncestor-16my406 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S4"
       >
         , Hanoi
       </span>
@@ -2634,7 +2338,7 @@ exports[`28. tile ab 1`] = `
   </div>
   <Image
     aspectRatio={0.6666666666666666}
-    className="IS4"
+    className="IS3"
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1195%2C1792%2C747%2C0"
   />
 </Link>
@@ -2643,25 +2347,17 @@ exports[`28. tile ab 1`] = `
 exports[`29. tile ae 1`] = `
 <style>
 .S1 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
   margin-bottom: 0px;
 }
 
 .S2 {
-  margin-bottom: 0px;
-}
-
-.S3 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
   margin-bottom: 5px;
 }
 
-.S4 {
+.S3 {
   color: rgba(105,105,105,1.00);
   -ms-flex-wrap: wrap;
   -webkit-box-lines: multiple;
@@ -2674,15 +2370,11 @@ exports[`29. tile ae 1`] = `
 }
 
 .IS1 {
-  color: rgba(0,91,141,1.00);
-}
-
-.IS2 {
   font-size: 30px;
   line-height: 30px;
 }
 
-.IS3 {
+.IS2 {
   padding-bottom: 25px;
 }
 </style>
@@ -2698,26 +2390,26 @@ exports[`29. tile ae 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS3"
+    className="css-view-1dbjc4n IS2"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
     >
-      <div
-        className="css-text-76zvg2 r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-3b040n r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS1 S1"
-      >
-        LABEL
-      </div>
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S3"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
       role="heading"
     >
       This is tile headline
     </h3>
     <div
-      className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S4"
+      className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
     >
       <span
         className="css-text-76zvg2 css-textHasAncestor-16my406"
@@ -2926,18 +2618,10 @@ exports[`32. tile ak 1`] = `
 exports[`33. tile al 1`] = `
 <style>
 .S1 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
   margin-bottom: 0px;
 }
 
 .S2 {
-  margin-bottom: 0px;
-}
-
-.S3 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-size: 22px;
@@ -2946,7 +2630,7 @@ exports[`33. tile al 1`] = `
   margin-bottom: 0px;
 }
 
-.S4 {
+.S3 {
   color: rgba(105,105,105,1.00);
   -ms-flex-wrap: wrap;
   -webkit-box-lines: multiple;
@@ -2962,15 +2646,11 @@ exports[`33. tile al 1`] = `
 }
 
 .IS2 {
-  color: rgba(0,91,141,1.00);
-}
-
-.IS3 {
   font-family: TimesDigitalW04-Regular;
   width: 100%;
 }
 
-.IS4 {
+.IS3 {
   padding-bottom: 25px;
 }
 </style>
@@ -2990,26 +2670,26 @@ exports[`33. tile al 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
   />
   <div
-    className="css-view-1dbjc4n IS4"
+    className="css-view-1dbjc4n IS3"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
     >
-      <div
-        className="css-text-76zvg2 r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-3b040n r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS2 S1"
-      >
-        LABEL
-      </div>
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw r-marginBottom-p1pxzi S3"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw r-marginBottom-p1pxzi S2"
       role="heading"
     >
       This is tile headline
     </h3>
     <div
-      className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontSize-1b43r93 r-marginBottom-15d164r IS3 S4"
+      className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontSize-1b43r93 r-marginBottom-15d164r IS2 S3"
     >
       <span
         className="css-text-76zvg2 css-textHasAncestor-16my406"
@@ -3036,25 +2716,17 @@ exports[`33. tile al 1`] = `
 exports[`34. tile am 1`] = `
 <style>
 .S1 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
   margin-bottom: 0px;
 }
 
 .S2 {
-  margin-bottom: 0px;
-}
-
-.S3 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
   margin-bottom: 5px;
 }
 
-.S4 {
+.S3 {
   color: rgba(105,105,105,1.00);
   -ms-flex-wrap: wrap;
   -webkit-box-lines: multiple;
@@ -3072,16 +2744,12 @@ exports[`34. tile am 1`] = `
 }
 
 .IS2 {
-  color: rgba(0,91,141,1.00);
-}
-
-.IS3 {
   font-size: 35px;
   line-height: 35px;
   padding-bottom: 5px;
 }
 
-.IS4 {
+.IS3 {
   padding-bottom: 25px;
 }
 </style>
@@ -3101,26 +2769,26 @@ exports[`34. tile am 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
   <div
-    className="css-view-1dbjc4n IS4"
+    className="css-view-1dbjc4n IS3"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
     >
-      <div
-        className="css-text-76zvg2 r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-3b040n r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS2 S1"
-      >
-        LABEL
-      </div>
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS3 S3"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
       role="heading"
     >
       This is tile headline
     </h3>
     <div
-      className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S4"
+      className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
     >
       <span
         className="css-text-76zvg2 css-textHasAncestor-16my406"
@@ -3147,18 +2815,10 @@ exports[`34. tile am 1`] = `
 exports[`35. tile an 1`] = `
 <style>
 .S1 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
   margin-bottom: 0px;
 }
 
 .S2 {
-  margin-bottom: 0px;
-}
-
-.S3 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-size: 22px;
@@ -3166,7 +2826,7 @@ exports[`35. tile an 1`] = `
   margin-bottom: 5px;
 }
 
-.S4 {
+.S3 {
   color: rgba(105,105,105,1.00);
   -ms-flex-wrap: wrap;
   -webkit-box-lines: multiple;
@@ -3183,14 +2843,10 @@ exports[`35. tile an 1`] = `
 }
 
 .IS2 {
-  color: rgba(0,91,141,1.00);
-}
-
-.IS3 {
   line-height: 22px;
 }
 
-.IS4 {
+.IS3 {
   -webkit-justify-content: center;
   justify-content: center;
   padding-bottom: 25px;
@@ -3218,26 +2874,26 @@ exports[`35. tile an 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
   />
   <div
-    className="css-view-1dbjc4n IS4"
+    className="css-view-1dbjc4n IS3"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
     >
-      <div
-        className="css-text-76zvg2 r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-3b040n r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS2 S1"
-      >
-        LABEL
-      </div>
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS3 S3"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
       role="heading"
     >
       This is tile headline
     </h3>
     <div
-      className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S4"
+      className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
     >
       <span
         className="css-text-76zvg2 css-textHasAncestor-16my406"
@@ -3264,18 +2920,10 @@ exports[`35. tile an 1`] = `
 exports[`36. tile ap 1`] = `
 <style>
 .S1 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
   margin-bottom: 0px;
 }
 
 .S2 {
-  margin-bottom: 0px;
-}
-
-.S3 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-size: 22px;
@@ -3288,15 +2936,11 @@ exports[`36. tile ap 1`] = `
 }
 
 .IS2 {
-  color: rgba(0,91,141,1.00);
-}
-
-.IS3 {
   line-height: 22px;
   padding-bottom: 5px;
 }
 
-.IS4 {
+.IS3 {
   -webkit-justify-content: center;
   justify-content: center;
   padding-bottom: 25px;
@@ -3324,20 +2968,20 @@ exports[`36. tile ap 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
   />
   <div
-    className="css-view-1dbjc4n IS4"
+    className="css-view-1dbjc4n IS3"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
     >
-      <div
-        className="css-text-76zvg2 r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-3b040n r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS2 S1"
-      >
-        LABEL
-      </div>
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS3 S3"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
       role="heading"
     >
       This is tile headline
@@ -3359,18 +3003,10 @@ exports[`36. tile ap 1`] = `
 exports[`37. tile ad 1`] = `
 <style>
 .S1 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
   margin-bottom: 0px;
 }
 
 .S2 {
-  margin-bottom: 0px;
-}
-
-.S3 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
@@ -3383,14 +3019,10 @@ exports[`37. tile ad 1`] = `
 }
 
 .IS2 {
-  color: rgba(0,91,141,1.00);
-}
-
-.IS3 {
   font-size: 20px;
 }
 
-.IS4 {
+.IS3 {
   padding-bottom: 25px;
   padding-right: 10px;
   padding-left: 10px;
@@ -3413,20 +3045,20 @@ exports[`37. tile ad 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
   />
   <div
-    className="css-view-1dbjc4n IS4"
+    className="css-view-1dbjc4n IS3"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
     >
-      <div
-        className="css-text-76zvg2 r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-3b040n r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS2 S1"
-      >
-        LABEL
-      </div>
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-lineHeight-rjixqe r-marginBottom-d0pm55 IS3 S3"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-lineHeight-rjixqe r-marginBottom-d0pm55 IS2 S2"
       role="heading"
     >
       This is tile headline
@@ -3448,18 +3080,10 @@ exports[`37. tile ad 1`] = `
 exports[`38. tile ac 1`] = `
 <style>
 .S1 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
   margin-bottom: 0px;
 }
 
 .S2 {
-  margin-bottom: 0px;
-}
-
-.S3 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
@@ -3471,16 +3095,12 @@ exports[`38. tile ac 1`] = `
 }
 
 .IS2 {
-  color: rgba(0,91,141,1.00);
-}
-
-.IS3 {
   font-size: 30px;
   line-height: 30px;
   text-align: center;
 }
 
-.IS4 {
+.IS3 {
   -webkit-align-items: center;
   align-items: center;
   background-color: rgba(240,240,240,1.00);
@@ -3521,20 +3141,20 @@ exports[`38. tile ac 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
   <div
-    className="css-view-1dbjc4n IS4"
+    className="css-view-1dbjc4n IS3"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
     >
-      <div
-        className="css-text-76zvg2 r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-3b040n r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS2 S1"
-      >
-        LABEL
-      </div>
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-15d164r IS3 S3"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-15d164r IS2 S2"
       role="heading"
     >
       This is tile headline
@@ -3560,18 +3180,10 @@ exports[`39. tile aq 1`] = `
 }
 
 .S2 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
   margin-bottom: 0px;
 }
 
 .S3 {
-  margin-bottom: 0px;
-}
-
-.S4 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-size: 22px;
@@ -3579,7 +3191,7 @@ exports[`39. tile aq 1`] = `
   margin-bottom: 5px;
 }
 
-.S5 {
+.S4 {
   color: rgba(105,105,105,1.00);
   -ms-flex-wrap: wrap;
   -webkit-box-lines: multiple;
@@ -3596,14 +3208,10 @@ exports[`39. tile aq 1`] = `
 }
 
 .IS2 {
-  color: rgba(0,91,141,1.00);
-}
-
-.IS3 {
   line-height: 22px;
 }
 
-.IS4 {
+.IS3 {
   padding-bottom: 25px;
 }
 </style>
@@ -3627,127 +3235,20 @@ exports[`39. tile aq 1`] = `
     />
   </div>
   <div
-    className="css-view-1dbjc4n IS4"
-  >
-    <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S3"
-    >
-      <div
-        className="css-text-76zvg2 r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-3b040n r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS2 S2"
-      >
-        LABEL
-      </div>
-    </div>
-    <h3
-      aria-level="3"
-      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS3 S4"
-      role="heading"
-    >
-      This is tile headline
-    </h3>
-    <div
-      className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S5"
-    >
-      <span
-        className="css-text-76zvg2 css-textHasAncestor-16my406"
-      >
-        
-        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-        ...
-      </span>
-    </div>
-    <ArticleFlags
-      flags={
-        Array [
-          Object {
-            "expiryTime": "2030-03-14T12:00:00.000Z",
-            "type": "EXCLUSIVE",
-          },
-        ]
-      }
-    />
-  </div>
-</Link>
-`;
-
-exports[`tiles that change logic based on breakpoints TileW with teaser for wider screens 1`] = `
-<style>
-.S1 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
-  margin-bottom: 0px;
-}
-
-.S2 {
-  margin-bottom: 0px;
-}
-
-.S3 {
-  color: rgba(51,51,51,1.00);
-  font-family: TimesModern-Bold;
-  font-weight: 400;
-  margin-bottom: 5px;
-}
-
-.S4 {
-  color: rgba(105,105,105,1.00);
-  -ms-flex-wrap: wrap;
-  -webkit-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  font-family: TimesDigitalW04;
-  font-size: 14px;
-  line-height: 20px;
-  margin-bottom: 10px;
-}
-
-.IS1 {
-  color: rgba(0,91,141,1.00);
-}
-
-.IS2 {
-  font-size: 35px;
-  line-height: 35px;
-}
-
-.IS3 {
-  padding-bottom: 5px;
-  padding-right: 20px;
-  width: 33.33%;
-}
-
-.IS4 {
-  width: 66.66%;
-}
-</style>
-
-<Link
-  linkStyle={
-    Object {
-      "flexDirection": "row",
-      "paddingHorizontal": "20px",
-      "paddingVertical": "10px",
-    }
-  }
-  url="/article/123"
->
-  <div
     className="css-view-1dbjc4n IS3"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
     >
-      <div
-        className="css-text-76zvg2 r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-3b040n r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS1 S1"
-      >
-        LABEL
-      </div>
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S3"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S3"
       role="heading"
     >
       This is tile headline
@@ -3774,51 +3275,46 @@ exports[`tiles that change logic based on breakpoints TileW with teaser for wide
       }
     />
   </div>
-  <Image
-    aspectRatio={1.7777777777777777}
-    className="IS4"
-    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
-  />
 </Link>
 `;
 
-exports[`tiles that change logic based on breakpoints TileW without teaser for tablet 1`] = `
+exports[`tiles that change logic based on breakpoints TileW with teaser for wider screens 1`] = `
 <style>
 .S1 {
-  font-family: GillSansMTStd-Medium;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 12px;
   margin-bottom: 0px;
 }
 
 .S2 {
-  margin-bottom: 0px;
-}
-
-.S3 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
   margin-bottom: 5px;
 }
 
-.IS1 {
-  color: rgba(0,91,141,1.00);
+.S3 {
+  color: rgba(105,105,105,1.00);
+  -ms-flex-wrap: wrap;
+  -webkit-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-family: TimesDigitalW04;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
 }
 
-.IS2 {
+.IS1 {
   font-size: 35px;
   line-height: 35px;
 }
 
-.IS3 {
+.IS2 {
   padding-bottom: 5px;
   padding-right: 20px;
   width: 33.33%;
 }
 
-.IS4 {
+.IS3 {
   width: 66.66%;
 }
 </style>
@@ -3834,20 +3330,108 @@ exports[`tiles that change logic based on breakpoints TileW without teaser for t
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS3"
+    className="css-view-1dbjc4n IS2"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
     >
-      <div
-        className="css-text-76zvg2 r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-3b040n r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS1 S1"
-      >
-        LABEL
-      </div>
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S3"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div
+      className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
+    >
+      <span
+        className="css-text-76zvg2 css-textHasAncestor-16my406"
+      >
+        
+        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+        ...
+      </span>
+    </div>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
+  </div>
+  <Image
+    aspectRatio={1.7777777777777777}
+    className="IS3"
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+  />
+</Link>
+`;
+
+exports[`tiles that change logic based on breakpoints TileW without teaser for tablet 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.S2 {
+  color: rgba(51,51,51,1.00);
+  font-family: TimesModern-Bold;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.IS1 {
+  font-size: 35px;
+  line-height: 35px;
+}
+
+.IS2 {
+  padding-bottom: 5px;
+  padding-right: 20px;
+  width: 33.33%;
+}
+
+.IS3 {
+  width: 66.66%;
+}
+</style>
+
+<Link
+  linkStyle={
+    Object {
+      "flexDirection": "row",
+      "paddingHorizontal": "20px",
+      "paddingVertical": "10px",
+    }
+  }
+  url="/article/123"
+>
+  <div
+    className="css-view-1dbjc4n IS2"
+  >
+    <div
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+    >
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
+    </div>
+    <h3
+      aria-level="3"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
       role="heading"
     >
       This is tile headline
@@ -3865,7 +3449,7 @@ exports[`tiles that change logic based on breakpoints TileW without teaser for t
   </div>
   <Image
     aspectRatio={1.7777777777777777}
-    className="IS4"
+    className="IS3"
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
 </Link>

@@ -21,7 +21,7 @@ const styles = {
       fontSize: "cardMetaMobile"
     }),
     fontWeight: "400",
-    letterSpacing: 1.4,
+    letterSpacing: 0.6,
     marginLeft: spacing(1)
   },
   view: {

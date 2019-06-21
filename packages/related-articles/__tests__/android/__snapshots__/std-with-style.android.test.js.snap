@@ -57,23 +57,7 @@ exports[`default styles 1`] = `
                     }
                   }
                 >
-                  <Text
-                    style={
-                      Object {
-                        "color": "#DB133B",
-                        "fontFamily": "GillSansMTStd-Medium",
-                        "fontSize": 12,
-                        "fontWeight": "400",
-                        "letterSpacing": 0.6,
-                        "lineHeight": 12,
-                        "marginBottom": 0,
-                        "marginTop": -1,
-                        "paddingTop": 0,
-                      }
-                    }
-                  >
-                    TEST LABEL
-                  </Text>
+                  <ArticleLabel />
                 </View>
                 <Text
                   style={
