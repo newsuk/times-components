@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View } from "react-native";
+import { View, Platform } from "react-native";
 import PropTypes from "prop-types";
 import ArticleSummary, {
   ArticleSummaryContent,
@@ -112,7 +112,9 @@ class TileSummary extends Component {
           title: label
         }}
         strapline={strapline ? this.renderStrapline() : undefined}
-        style={withStar ? style : [starPadding, style]}
+        style={
+          Platform.os === "android" && !withStar ? [starPadding, style] : style
+        }
       />
     );
   }
