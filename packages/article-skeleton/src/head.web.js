@@ -51,6 +51,29 @@ function getAuthorAsText(article) {
   return renderTreeAsText({ children });
 }
 
+function appendToUrl(uriString, key, value) {
+  if (!uriString || !key || !value) {
+    return uriString;
+  }
+
+  if (uriString.includes(`?${key}`) || uriString.includes(`&${key}`)) {
+    return uriString;
+  }
+
+  let url;
+  try {
+    url = new URL(uriString);
+  } catch (e) {
+    return uriString;
+  }
+
+  if (url.search) {
+    return `${uriString}&${key}=${value}`;
+  }
+
+  return `${uriString}?${key}=${value}`;
+}
+
 const PUBLICATION_NAMES = {
   SUNDAYTIMES: "The Sunday Times",
   TIMES: "The Times"
@@ -96,7 +119,11 @@ function Head({ article, paidContentClassName, faviconUrl }) {
       ? renderTreeAsText({ children: descriptionMarkup })
       : null;
   const sectionname = getSectionName(article);
-  const leadassetUrl = get(leadAsset, "crop169.url", null);
+  const leadassetUrl = appendToUrl(
+    get(leadAsset, "crop169.url", null),
+    "resize",
+    685
+  );
   const caption = get(leadAsset, "caption", null);
   const title = headline || shortHeadline;
   const datePublished = new Date(publishedTime).toISOString().split("T")[0];
