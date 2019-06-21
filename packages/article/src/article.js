@@ -19,8 +19,8 @@ export const templates = {
 
 export class TakeoverBailout extends Error {
   constructor(message) {
-    super(message)
-    this.name = "TakeoverBailout"
+    super(message);
+    this.name = "TakeoverBailout";
   }
 }
 
@@ -29,8 +29,8 @@ const Article = props => {
   const { leadAsset, template = "mainstandard" } = article || {};
   let { content } = article || {};
 
-  if (article.template === 'takeoverPage') {
-    throw new TakeoverBailout("Aborted react render: Takeover page")
+  if (template === "takeoverPage") {
+    throw new TakeoverBailout("Aborted react render: Takeover page");
   }
 
   let onImagePressArticle = null;

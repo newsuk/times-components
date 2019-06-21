@@ -29,73 +29,69 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     faviconUrl
   } = data;
 
+  let articleElement = "";
+  let element = "";
+
   try {
-    console.log('55555aaaaa')
-    const artElement =  React.createElement(Article, {
-      adConfig: mapArticleToAdConfig(article),
-      analyticsStream,
-      article,
-      error,
-      isLoading,
-      onAuthorPress: () => {},
-      onRelatedArticlePress: () => {},
-      onTopicPress: () => {},
-      refetch,
-      spotAccountId,
-      paidContentClassName,
-      faviconUrl
-    })
-  }
-  catch(error) {
-    console.log('55555bvbbb Error in creating art elemengt', error)
-    throw new TakeoverBailout("Aborted react render: Takeover page") 
+    articleElement = (article, isLoading, error, refetch) =>
+      React.createElement(Article, {
+        adConfig: mapArticleToAdConfig(article),
+        analyticsStream,
+        article,
+        error,
+        isLoading,
+        onAuthorPress: () => {},
+        onRelatedArticlePress: () => {},
+        onTopicPress: () => {},
+        refetch,
+        spotAccountId,
+        paidContentClassName,
+        faviconUrl
+      });
+  } catch (error) {
+    throw new TakeoverBailout("Aborted react render: Takeover page");
   }
 
-try
-{  
-  console.log('33333333')
-  element =  React.createElement(
-    StickyProvider,
-    {},
-    React.createElement(
-      HelmetProvider,
-      { context: helmetContext },
+  try {
+    element = React.createElement(
+      StickyProvider,
+      {},
       React.createElement(
-        ApolloProvider,
-        { client },
+        HelmetProvider,
+        { context: helmetContext },
         React.createElement(
-          ArticleProvider,
-          {
-            analyticsStream,
-            debounceTimeMs,
-            id: articleId
-          },
-          ({ article, isLoading, error, refetch }) =>
-            React.createElement(
-              ContextProviderWithDefaults,
-              {
-                value: {
-                  getCookieValue,
-                  makeArticleUrl,
-                  makeTopicUrl,
-                  theme: {
-                    ...themeFactory(article.section, article.template),
-                    scale: scale || defaults.theme.scale
-                  },
-                  user: userState
-                }
-              },
-              artElement
-            )
+          ApolloProvider,
+          { client },
+          React.createElement(
+            ArticleProvider,
+            {
+              analyticsStream,
+              debounceTimeMs,
+              id: articleId
+            },
+            ({ article, isLoading, error, refetch }) =>
+              React.createElement(
+                ContextProviderWithDefaults,
+                {
+                  value: {
+                    getCookieValue,
+                    makeArticleUrl,
+                    makeTopicUrl,
+                    theme: {
+                      ...themeFactory(article.section, article.template),
+                      scale: scale || defaults.theme.scale
+                    },
+                    user: userState
+                  }
+                },
+                articleElement(article, isLoading, error, refetch)
+              )
+          )
         )
       )
-    )
-  );
-  }
-  catch(error) 
-  {  
-    console.log('4444444error is', error)
-    throw new TakeoverBailout("Aborted react render: Takeover page")
+    );
+  } catch (error) {
+    throw new TakeoverBailout("Aborted react render: Takeover page");
   }
 
   return element;

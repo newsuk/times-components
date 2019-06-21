@@ -66,14 +66,7 @@ module.exports = (
     name: "article"
   };
 
-
-    console.log('aaaaa')
-    serverElements = runServer(article, options).catch(error => {
-      console.log( 'bbbbbb', error)
-      throw new Error(error) 
-    });
-  
-
-
-  return serverElements;
+  return runServer(article, options).catch(error => {
+    throw new Error(error);
+  });
 };
