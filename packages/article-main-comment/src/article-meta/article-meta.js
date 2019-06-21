@@ -8,6 +8,8 @@ import styles from "../styles";
 
 const Separator = () => <View style={styles.separator} />;
 
+const hasBylineElement = (bylines) => bylines && bylines[0].byline.length > 0;
+
 const ArticleMeta = ({
   bylines,
   hasStandfirst,
@@ -16,33 +18,34 @@ const ArticleMeta = ({
   publicationName,
   publishedTime
 }) => (
-  <View
-    style={[
-      styles.metaContainer,
-      !hasStandfirst && styles.metaFlagSpacer,
-      isTablet && styles.metaContainerTablet
-    ]}
-  >
-    {bylines && (
-      <Fragment>
-        <View style={styles.meta}>
-          <ArticleBylineWithLinks ast={bylines} onAuthorPress={onAuthorPress} />
-        </View>
-      </Fragment>
-    )}
-    {isTablet ? <Separator /> : null}
-    <View style={styles.meta}>
-      <Text
-        style={[
-          styles.datePublication,
-          isTablet && styles.datePublicationTablet
-        ]}
-      >
-        <DatePublication date={publishedTime} publication={publicationName} />
-      </Text>
+    <View
+      style={[
+        styles.metaContainer,
+        !hasStandfirst && styles.metaFlagSpacer,
+        isTablet && styles.metaContainerTablet
+      ]}
+    >
+      {hasBylineElement(bylines) && (
+        <Fragment>
+          <View style={styles.meta}>
+            <ArticleBylineWithLinks ast={bylines} onAuthorPress={onAuthorPress} />
+          </View>
+        </Fragment>
+
+      )}
+      {isTablet ? <Separator /> : null}
+      <View style={styles.meta}>
+        <Text
+          style={[
+            styles.datePublication,
+            isTablet && styles.datePublicationTablet
+          ]}
+        >
+          <DatePublication date={publishedTime} publication={publicationName} />
+        </Text>
+      </View>
     </View>
-  </View>
-);
+  );
 
 ArticleMeta.propTypes = {
   ...metaPropTypes,
