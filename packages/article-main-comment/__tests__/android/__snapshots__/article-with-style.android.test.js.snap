@@ -117,7 +117,7 @@ exports[`phone full article with style 1`] = `
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 13,
                 "lineHeight": 15,
-                "marginTop": 15,
+                "marginTop": 5,
               }
             }
           >
@@ -247,7 +247,7 @@ exports[`tablet full article with style 1`] = `
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 13,
                 "lineHeight": 15,
-                "marginTop": 15,
+                "marginTop": 5,
               }
             }
           >

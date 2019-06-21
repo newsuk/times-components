@@ -5,13 +5,19 @@ import { ArticleBylineWithLinks } from "@times-components/article-byline";
 import DatePublication from "@times-components/date-publication";
 import styles from "../styles/article-meta";
 
-const ArticleMetaRow = (textStyle, rowWrapperStyles = {}, component, key, RowWrapper) => (
+const ArticleMetaRow = (
+  textStyle,
+  rowWrapperStyles = {},
+  component,
+  key,
+  RowWrapper
+) => (
   <RowWrapper key={key} style={rowWrapperStyles}>
     <Text style={textStyle}>{component}</Text>
   </RowWrapper>
 );
 
-const hasBylineElement = (bylines) => (bylines && bylines.length > 0);
+const hasBylineElement = bylines => bylines && bylines.length > 0;
 
 const ArticleMetaBase = ({
   bylines,
@@ -20,8 +26,6 @@ const ArticleMetaBase = ({
   RowWrapper,
   onAuthorPress
 }) => {
-
-
   const data = [
     ArticleMetaRow(
       styles.datePublication,

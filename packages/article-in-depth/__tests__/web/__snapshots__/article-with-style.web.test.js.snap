@@ -488,7 +488,7 @@ exports[`full article with style 1`] = `
 }
 
 .IS6 {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .IS7 {
@@ -1228,7 +1228,7 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 .IS6 {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .IS7 {
@@ -1968,7 +1968,7 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 .IS6 {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .IS7 {
@@ -2708,7 +2708,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 .IS6 {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .IS7 {

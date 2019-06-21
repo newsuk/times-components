@@ -78,14 +78,13 @@ exports[`1. article in depth - tablet 1`] = `
     style={
       Object {
         "alignSelf": "center",
-        "marginBottom": 20,
+        "marginBottom": 0,
         "maxWidth": 1194,
         "width": "100%",
       }
     }
   >
     <ModalImage />
-    <CenteredCaption />
   </View>
   <View
     style={
