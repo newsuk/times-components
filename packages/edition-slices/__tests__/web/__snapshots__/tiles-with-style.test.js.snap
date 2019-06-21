@@ -1836,8 +1836,9 @@ exports[`23. tile w 1`] = `
   linkStyle={
     Object {
       "flexDirection": "row",
+      "paddingBottom": "15px",
       "paddingHorizontal": "20px",
-      "paddingVertical": "10px",
+      "paddingTop": "10px",
     }
   }
   url="/article/123"
@@ -3323,8 +3324,9 @@ exports[`tiles that change logic based on breakpoints TileW with teaser for wide
   linkStyle={
     Object {
       "flexDirection": "row",
+      "paddingBottom": "15px",
       "paddingHorizontal": "20px",
-      "paddingVertical": "10px",
+      "paddingTop": "10px",
     }
   }
   url="/article/123"
@@ -3411,8 +3413,9 @@ exports[`tiles that change logic based on breakpoints TileW without teaser for t
   linkStyle={
     Object {
       "flexDirection": "row",
+      "paddingBottom": "15px",
       "paddingHorizontal": "20px",
-      "paddingVertical": "10px",
+      "paddingTop": "10px",
     }
   }
   url="/article/123"

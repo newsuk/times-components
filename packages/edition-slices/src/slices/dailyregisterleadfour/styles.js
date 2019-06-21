@@ -48,11 +48,13 @@ const mediumBreakpointStyles = {
     alignItems: "center",
     backgroundColor: colours.functional.border,
     flex: 1,
-    paddingHorizontal: "20%"
+    paddingHorizontal: "20%",
+    paddingVertical: spacing(2)
   },
   mastheadLogo: {
     height: 97,
-    width: 380
+    width: 380,
+    marginVertical: spacing(2)
   }
 };
 
@@ -61,7 +63,8 @@ const wideBreakpointStyle = {
     alignItems: "center",
     backgroundColor: colours.functional.border,
     flex: 1,
-    paddingHorizontal: "25%"
+    paddingHorizontal: "25%",
+    paddingVertical: spacing(2)
   }
 };
 
@@ -97,3 +100,7 @@ export default breakpoint => ({
   ...main,
   ...(stylesResolver[breakpoint] || {})
 });
+
+export const backgroundColour = {
+  backgroundColor: main.container.backgroundColor
+};
