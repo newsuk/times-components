@@ -11,17 +11,28 @@ exports[`1. a primary image 1`] = `
     />
   </div>
   <div>
-    <div>
+    <div
+      data-tc-sticky-container={true}
+    >
       <div>
-        <SaveAndShareBar
-          articleHeadline="Some Headline"
-          articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-          articleUrl="https://url.io"
-          savingEnabled={true}
-          sharingEnabled={true}
-        />
+        <div
+          data-tc-sticky-sizer={true}
+        >
+          <div>
+            <SaveAndShareBar
+              articleHeadline="Some Headline"
+              articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+              articleUrl="https://url.io"
+              savingEnabled={true}
+              sharingEnabled={true}
+            />
+          </div>
+        </div>
       </div>
     </div>
+    <div
+      data-tc-sticky-placeholder={true}
+    />
     <div>
       <div
         id="0"
@@ -72,17 +83,28 @@ exports[`2. a fullwidth image 1`] = `
     />
   </div>
   <div>
-    <div>
+    <div
+      data-tc-sticky-container={true}
+    >
       <div>
-        <SaveAndShareBar
-          articleHeadline="Some Headline"
-          articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-          articleUrl="https://url.io"
-          savingEnabled={true}
-          sharingEnabled={true}
-        />
+        <div
+          data-tc-sticky-sizer={true}
+        >
+          <div>
+            <SaveAndShareBar
+              articleHeadline="Some Headline"
+              articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+              articleUrl="https://url.io"
+              savingEnabled={true}
+              sharingEnabled={true}
+            />
+          </div>
+        </div>
       </div>
     </div>
+    <div
+      data-tc-sticky-placeholder={true}
+    />
     <div>
       <div
         id="0"
@@ -131,17 +153,28 @@ exports[`3. a secondary image 1`] = `
     />
   </div>
   <div>
-    <div>
+    <div
+      data-tc-sticky-container={true}
+    >
       <div>
-        <SaveAndShareBar
-          articleHeadline="Some Headline"
-          articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-          articleUrl="https://url.io"
-          savingEnabled={true}
-          sharingEnabled={true}
-        />
+        <div
+          data-tc-sticky-sizer={true}
+        >
+          <div>
+            <SaveAndShareBar
+              articleHeadline="Some Headline"
+              articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+              articleUrl="https://url.io"
+              savingEnabled={true}
+              sharingEnabled={true}
+            />
+          </div>
+        </div>
       </div>
     </div>
+    <div
+      data-tc-sticky-placeholder={true}
+    />
     <div>
       <div
         id="0"
@@ -192,17 +225,28 @@ exports[`4. an inline image 1`] = `
     />
   </div>
   <div>
-    <div>
+    <div
+      data-tc-sticky-container={true}
+    >
       <div>
-        <SaveAndShareBar
-          articleHeadline="Some Headline"
-          articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-          articleUrl="https://url.io"
-          savingEnabled={true}
-          sharingEnabled={true}
-        />
+        <div
+          data-tc-sticky-sizer={true}
+        >
+          <div>
+            <SaveAndShareBar
+              articleHeadline="Some Headline"
+              articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+              articleUrl="https://url.io"
+              savingEnabled={true}
+              sharingEnabled={true}
+            />
+          </div>
+        </div>
       </div>
     </div>
+    <div
+      data-tc-sticky-placeholder={true}
+    />
     <div>
       <div
         id="0"

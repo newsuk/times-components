@@ -1,34 +1,26 @@
-/* eslint-disable no-undef */
-import React from "react";
-import { AppRegistry } from "react-native-web";
-import { mount } from "enzyme";
-import {
-  addSerializers,
-  compose,
-  enzymeTreeSerializer,
-  minimalWebTransform,
-  print,
-  rnwTransform
-} from "@times-components/jest-serializer";
+/* eslint-disable react/no-multi-comp */
+/* eslint-env jest, browser */
+import React, { Component } from "react";
+import { render } from "react-dom";
+import Sticky, { StickyProvider, UnwrappedSticky } from "../../src/sticky";
 
-import Sticky, { UnwrappedSticky, StickyProvider } from "../../src/sticky";
+import "./js-dom-ext";
 
-addSerializers(
-  expect,
-  enzymeTreeSerializer(),
-  compose(
-    print,
-    minimalWebTransform,
-    rnwTransform(AppRegistry)
-  )
-);
-
+// @todo Resize events
 describe("Sticky", () => {
   let eventMap;
   let realAddEventListener;
   let realRemoveEventListener;
+  let root;
 
   beforeEach(() => {
+    document.body.innerHTML = "";
+
+    root = document.createElement("div");
+    root.id = "react-root";
+
+    document.body.appendChild(root);
+
     realAddEventListener = window.addEventListener;
     realRemoveEventListener = window.removeEventListener;
     eventMap = {};
@@ -50,223 +42,318 @@ describe("Sticky", () => {
   });
 
   it("renders with default props", () => {
-    const component = mount(<UnwrappedSticky />);
+    render(
+      <StickyProvider>
+        <div style={{ width: 600, margin: "0 auto" }}>
+          <Sticky style={{ marginTop: 10, marginBottom: 20, height: 60 }} />
+        </div>
+      </StickyProvider>,
+      root
+    );
 
-    expect(component).toMatchSnapshot();
+    expect(document.body).toMatchSnapshot();
   });
 
   it("renders with custom props", () => {
-    const component = mount(
-      <UnwrappedSticky
-        className="sticky-container"
-        Component="span"
-        zIndex={333}
-        style={{ backgroundColor: "blue" }}
-      >
-        <div />
-      </UnwrappedSticky>
+    render(
+      <StickyProvider Component="span">
+        <div>
+          <Sticky
+            Component="span"
+            className="test-class-name"
+            zIndex="666"
+            style={{ marginTop: 10, marginBottom: 20, height: 60 }}
+          >
+            children
+          </Sticky>
+        </div>
+      </StickyProvider>,
+      root
     );
 
-    expect(component).toMatchSnapshot();
+    expect(document.body).toMatchSnapshot();
   });
 
   it("removes events when unmounting", () => {
-    const component = mount(
-      <StickyProvider>
-        <Sticky>
-          <div />
-        </Sticky>
-      </StickyProvider>
-    );
-    component.unmount();
+    let unmount;
+
+    class TestComponent extends Component {
+      constructor() {
+        super();
+        this.state = { unmounted: false };
+        unmount = () => this.setState({ unmounted: true });
+      }
+
+      render() {
+        const { unmounted } = this.state;
+
+        return (
+          <StickyProvider>
+            <div>
+              {unmounted ? null : (
+                <Sticky
+                  style={{ marginTop: 10, marginBottom: 20, height: 60 }}
+                />
+              )}
+            </div>
+          </StickyProvider>
+        );
+      }
+    }
+
+    render(<TestComponent />, root);
+
+    unmount();
 
     expect(eventMap).toEqual({});
   });
 
-  it("renders with sticky provider using default props", () => {
-    window.pageYOffset = -19.9;
-    const containerNode = { getBoundingClientRect: () => ({ top: 50 }) };
+  it("cleans sticky node unmounting", () => {
+    let unmount;
 
-    const component = mount(
+    class TestComponent extends Component {
+      constructor() {
+        super();
+        this.state = { unmounted: false };
+        unmount = () => this.setState({ unmounted: true });
+      }
+
+      render() {
+        const { unmounted } = this.state;
+
+        return (
+          <StickyProvider>
+            <div>
+              {unmounted ? null : (
+                <Sticky
+                  style={{ marginTop: 10, marginBottom: 20, height: 60 }}
+                />
+              )}
+            </div>
+          </StickyProvider>
+        );
+      }
+    }
+
+    render(<TestComponent />, root);
+
+    window.pageYOffset = 9;
+    eventMap.scroll();
+
+    unmount();
+
+    expect(document.body).toMatchSnapshot();
+  });
+
+  it("becomes sticky and unsticky when scrolling past it", () => {
+    render(
       <StickyProvider>
-        <Sticky>
-          <div />
-        </Sticky>
-      </StickyProvider>
+        <div style={{ width: 600, margin: "0 auto" }}>
+          <Sticky style={{ marginTop: 10, marginBottom: 20, height: 60 }} />
+        </div>
+      </StickyProvider>,
+      root
     );
 
-    component.instance().ref(containerNode);
-    component.update();
-
-    expect(component).toMatchSnapshot();
-  });
-
-  it("renders with sticky provider using custom props", () => {
-    const containerNode = { getBoundingClientRect: () => ({ top: 40 }) };
-
-    const component = mount(
-      <StickyProvider Component="span" className="provider">
-        <Sticky>
-          <div />
-        </Sticky>
-      </StickyProvider>
-    );
-
-    component.instance().ref(containerNode);
-    component.update();
-
-    expect(component).toMatchSnapshot();
-  });
-
-  it("does not throw if scrolling before the ref is set", () => {
-    const component = mount(
-      <UnwrappedSticky>
-        <div>Sticky</div>
-      </UnwrappedSticky>
-    );
-
-    component.instance().containerRef.current = null;
+    window.pageYOffset = 9;
     eventMap.scroll();
+    expect(document.body).toMatchSnapshot();
+    window.pageYOffset = 8;
+    eventMap.scroll();
+    expect(document.body).toMatchSnapshot();
+  });
+
+  it("remains sticky when continuing scrolling", () => {
+    render(
+      <StickyProvider>
+        <div style={{ width: 600, margin: "0 auto" }}>
+          <Sticky style={{ marginTop: 10, marginBottom: 20, height: 60 }} />
+        </div>
+      </StickyProvider>,
+      root
+    );
+
+    window.pageYOffset = 9;
+    eventMap.scroll();
+    window.pageYOffset = 13;
+    eventMap.scroll();
+    expect(document.body).toMatchSnapshot();
+  });
+
+  it("sticks with custom z-index", () => {
+    render(
+      <StickyProvider>
+        <div style={{ width: 600, margin: "0 auto" }}>
+          <Sticky
+            style={{ marginTop: 10, marginBottom: 20, height: 60 }}
+            zIndex="666"
+          />
+        </div>
+      </StickyProvider>,
+      root
+    );
+
+    window.pageYOffset = 9;
+    eventMap.scroll();
+
+    expect(
+      document.body.querySelector("[data-tc-sticky-container]").style.zIndex
+    ).toEqual("666");
+  });
+
+  it("sticks to the offset of the sticky provider", () => {
+    root.style.marginTop = "30px";
+
+    render(
+      <StickyProvider>
+        <div style={{ width: 600, margin: "0 auto" }}>
+          <Sticky style={{ marginTop: 10, marginBottom: 20, height: 60 }} />
+        </div>
+      </StickyProvider>,
+      root
+    );
+
+    window.pageYOffset = 9;
+    eventMap.scroll();
+    expect(
+      document.body.querySelector("[data-tc-sticky-container]").style.top
+    ).toEqual("30px");
+  });
+
+  it("is moved to the correct level in the tree when becoming sticky", () => {
+    render(
+      <StickyProvider>
+        <div style={{ width: 600, margin: "0 auto" }}>
+          <Sticky style={{ marginTop: 10, marginBottom: 20, height: 60 }} />
+        </div>
+      </StickyProvider>,
+      root
+    );
+
+    window.pageYOffset = 9;
+    eventMap.scroll();
+    expect(
+      document.body.querySelector("[data-tc-sticky-container]").parentNode
+    ).toEqual(document.body);
+  });
+
+  it("shouldBeSticky is checked when deciding whether to become sticky", () => {
+    const shouldBeSticky = jest.fn(() => false);
+    render(
+      <StickyProvider>
+        <div style={{ width: 600, margin: "0 auto" }}>
+          <Sticky
+            style={{ marginTop: 10, marginBottom: 20, height: 60 }}
+            shouldBeSticky={shouldBeSticky}
+          />
+        </div>
+      </StickyProvider>,
+      root
+    );
+
+    window.pageYOffset = 9;
+    eventMap.scroll();
+
+    expect(document.body).toMatchSnapshot();
+    expect(shouldBeSticky).toHaveBeenCalled();
+  });
+
+  it("changes to the sticky context correctly update the position", () => {
+    let change;
+
+    class TestComponent extends Component {
+      constructor() {
+        super();
+        this.state = { top: 30 };
+        change = () => this.setState({ top: 50 });
+      }
+
+      render() {
+        const { top } = this.state;
+
+        return (
+          <UnwrappedSticky
+            style={{ marginTop: 10, marginBottom: 20, height: 60 }}
+            stickyContext={{ top }}
+          />
+        );
+      }
+    }
+
+    render(<TestComponent />, root);
+
+    change();
+
+    window.pageYOffset = 9;
+    eventMap.scroll();
+
+    expect(
+      document.body.querySelector("[data-tc-sticky-container]").style.top
+    ).toEqual("50px");
+  });
+
+  it("correctly sets the sizer width and margin when sticky", () => {
+    render(
+      <StickyProvider>
+        <div style={{ width: 800, marginLeft: 30 }}>
+          <Sticky style={{ marginTop: 10, marginBottom: 20, height: 60 }} />
+        </div>
+      </StickyProvider>,
+      root
+    );
+
+    window.pageYOffset = 9;
+    eventMap.scroll();
+
+    const sizer = document.body.querySelector("[data-tc-sticky-sizer]");
+
+    expect(sizer).toMatchSnapshot();
+  });
+
+  it("resizes the sizer on browser resize", () => {
+    let change;
+
+    class TestComponent extends Component {
+      constructor() {
+        super();
+        this.state = { width: 300, marginLeft: 30 };
+        change = () => this.setState({ width: 400, marginLeft: 60 });
+      }
+
+      render() {
+        const { width, marginLeft } = this.state;
+        return (
+          <StickyProvider>
+            <div style={{ width, marginLeft }}>
+              <Sticky />
+            </div>
+          </StickyProvider>
+        );
+      }
+    }
+
+    render(<TestComponent />, root);
+
+    change();
+
     eventMap.resize();
+
+    const sizer = document.body.querySelector("[data-tc-sticky-sizer]");
+    expect(sizer.style.width).toEqual("400px");
+    expect(sizer.style.marginLeft).toEqual("60px");
   });
 
-  it("becomes sticky when scrolling past it and unsticky when scrolling again", () => {
-    const component = mount(
-      <UnwrappedSticky>
-        <div />
-      </UnwrappedSticky>
+  it("triggers the sticky detection on resize", () => {
+    render(
+      <UnwrappedSticky
+        style={{ marginTop: 10, marginBottom: 20, height: 60 }}
+        stickyContext={{ top: 10 }}
+      />,
+      root
     );
-    const classList = { add: jest.fn(), remove: jest.fn() };
-    const getBoundingClientRect = jest.fn();
 
-    component.instance().containerRef.current = {
-      getBoundingClientRect,
-      classList
-    };
-
-    getBoundingClientRect.mockReturnValueOnce({ top: 0 });
-    eventMap.scroll();
-
-    expect(classList.add).toHaveBeenCalledWith("sticky");
-    expect(classList.remove).not.toHaveBeenCalled();
-
-    getBoundingClientRect.mockReturnValueOnce({ top: 5 });
-    eventMap.scroll();
-
-    expect(classList.remove).toHaveBeenCalledWith("sticky");
-  });
-
-  it("becomes sticky with custom sticky class when scrolling past it and unsticky when scrolling again", () => {
-    const component = mount(
-      <UnwrappedSticky stickyClassName="custom-sticky">
-        <div />
-      </UnwrappedSticky>
-    );
-    const classList = { add: jest.fn(), remove: jest.fn() };
-    const getBoundingClientRect = jest.fn();
-
-    component.instance().containerRef.current = {
-      getBoundingClientRect,
-      classList
-    };
-
-    getBoundingClientRect.mockReturnValueOnce({ top: 0 });
-    eventMap.scroll();
-
-    expect(classList.add).toHaveBeenCalledWith("custom-sticky");
-    expect(classList.remove).not.toHaveBeenCalled();
-
-    getBoundingClientRect.mockReturnValueOnce({ top: 5 });
-    eventMap.scroll();
-
-    expect(classList.remove).toHaveBeenCalledWith("custom-sticky");
-  });
-
-  it("when setting stickyContext it becomes sticky when scrolling past it and unsticky when scrolling again", () => {
-    const component = mount(
-      <UnwrappedSticky stickyContext={{ top: 5 }}>
-        <div />
-      </UnwrappedSticky>
-    );
-    const classList = { add: jest.fn(), remove: jest.fn() };
-    const getBoundingClientRect = jest.fn();
-
-    component.instance().containerRef.current = {
-      getBoundingClientRect,
-      classList
-    };
-
-    getBoundingClientRect.mockReturnValueOnce({ top: 7 });
-    eventMap.scroll();
-
-    expect(classList.add).not.toHaveBeenCalled();
-    expect(classList.remove).not.toHaveBeenCalled();
-
-    getBoundingClientRect.mockReturnValueOnce({ top: 6 });
-    eventMap.scroll();
-
-    expect(classList.add).toHaveBeenCalledWith("sticky");
-    expect(classList.remove).not.toHaveBeenCalled();
-
-    getBoundingClientRect.mockReturnValueOnce({ top: 7 });
-    eventMap.scroll();
-
-    expect(classList.remove).toHaveBeenCalledWith("sticky");
-  });
-
-  it("does not add the sticky class twice when scrolling", () => {
-    const component = mount(<UnwrappedSticky />);
-    const classList = { add: jest.fn(), remove: jest.fn() };
-    const getBoundingClientRect = jest.fn();
-
-    component.instance().containerRef.current = {
-      getBoundingClientRect,
-      classList
-    };
-
-    getBoundingClientRect.mockReturnValue({ top: 0 });
-    eventMap.scroll();
-    eventMap.scroll();
-
-    expect(classList.add).toHaveBeenCalledTimes(1);
-  });
-
-  it("does not add the sticky class twice when resizing", () => {
-    const component = mount(<UnwrappedSticky />);
-    const classList = { add: jest.fn(), remove: jest.fn() };
-    const getBoundingClientRect = jest.fn();
-
-    component.instance().containerRef.current = {
-      getBoundingClientRect,
-      classList
-    };
-
-    getBoundingClientRect.mockReturnValue({ top: 0 });
-    eventMap.scroll();
-    eventMap.scroll();
-
-    expect(classList.add).toHaveBeenCalledTimes(1);
-  });
-
-  it("becomes sticky when resizing so that the bar is now off screen", () => {
-    const component = mount(<UnwrappedSticky />);
-    const classList = { add: jest.fn(), remove: jest.fn() };
-    const getBoundingClientRect = jest.fn();
-
-    component.instance().containerRef.current = {
-      getBoundingClientRect,
-      classList
-    };
-
-    getBoundingClientRect.mockReturnValueOnce({ top: 0 });
+    window.pageYOffset = 10;
     eventMap.resize();
-
-    expect(classList.add).toHaveBeenCalledWith("sticky");
-    expect(classList.remove).not.toHaveBeenCalled();
-
-    getBoundingClientRect.mockReturnValueOnce({ top: 5 });
-    eventMap.resize();
-
-    expect(classList.remove).toHaveBeenCalledWith("sticky");
+    expect(document.body).toMatchSnapshot();
   });
 });

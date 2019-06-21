@@ -1,6 +1,7 @@
 import { View } from "react-native";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { breakpoints, colours, spacing } from "@times-components/styleguide";
+import { STICKY_CLASS_NAME } from "@times-components/sticky";
 
 export const MainContainer = styled(View)`
   display: block;
@@ -30,31 +31,31 @@ export const BodyContainer = styled(View)`
 `;
 
 /* --- SaveAndShareBar --- */
-
-export const SaveShareInnerContainer = styled.div`
+export const SaveShareContainer = styled.div`
   position: relative;
-  padding: 0 ${spacing(2)};
+  margin: 0 auto;
+  height: 60px;
+
+  @media (max-width: ${breakpoints.medium - 1}px) {
+    padding: 0 ${spacing(2)};
+  }
 
   @media (min-width: ${breakpoints.medium}px) {
     width: 80.8%;
-    margin-left: auto !important;
-    margin-right: auto !important;
   }
 
   @media (min-width: ${breakpoints.wide}px) {
     width: 56.2%;
   }
-`;
 
-const NON_STICKY_CSS = css`
   &:before,
   &:after {
     content: "";
     height: 1px;
     background-color: ${colours.functional.keyline};
     position: absolute;
-    left: ${spacing(2)};
-    right: ${spacing(2)};
+    left: 0;
+    right: 0;
   }
 
   &:before {
@@ -65,35 +66,19 @@ const NON_STICKY_CSS = css`
     bottom: 0;
   }
 `;
-
-export const SaveShareContainer = styled.div`
+export const OuterSaveShareContainer = styled.div`
+  margin: ${spacing(6)} auto;
   background-color: ${colours.functional.white};
-  height: 55px;
-  margin: ${spacing(6)} 0;
 
-  @media (max-width: ${breakpoints.huge}px) {
-    left: 0;
-    top: 0;
-    z-index: 999;
-
-    &.sticky {
-      width: 100% !important;
-      box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
-    }
+  &.${STICKY_CLASS_NAME} {
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
 
     /* stylelint-disable */
-    &:not(.sticky) ${SaveShareInnerContainer} {
-      ${NON_STICKY_CSS};
-    }
-    /* stylelint-enable */
-  }
-
-  @media (min-width: ${breakpoints.huge + 1}px) {
-    position: static !important;
-
-    /* stylelint-disable */
-    ${SaveShareInnerContainer} {
-      ${NON_STICKY_CSS};
+    ${SaveShareContainer} {
+      &:before,
+      &:after {
+        display: none;
+      }
     }
     /* stylelint-enable */
   }

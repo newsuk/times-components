@@ -1,130 +1,243 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Sticky renders with custom props 1`] = `
-<Sticky
-  Component="span"
-  className="sticky-container"
-  stickyClassName="sticky"
-  stickyContext={
-    Object {
-      "top": 0,
-    }
-  }
-  style={
-    Object {
-      "backgroundColor": "blue",
-    }
-  }
-  zIndex={333}
->
-  <span
-    className="sticky-container tc-sticky-container"
-    style={
-      Object {
-        "backgroundColor": "blue",
-        "top": 0,
-        "zIndex": 333,
-      }
-    }
+exports[`Sticky becomes sticky and unsticky when scrolling past it 1`] = `
+<body>
+  <div
+    id="react-root"
   >
-    <GlobalStyleComponent />
-    <div />
-  </span>
-</Sticky>
+    <div>
+      <div
+        style="width: 600px; margin: 0px auto;"
+      >
+        <div
+          data-tc-sticky-placeholder="true"
+          style="display: block; margin-top: 10px; margin-bottom: 20px; height: 60px;"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    data-tc-sticky-container="true"
+    style="top: 0px; z-index: 999; position: fixed; left: 0px; width: 100%; transform: translateY(-10px);"
+  >
+    <div
+      class="tc-sticky"
+      style="margin-top: 10px; margin-bottom: 20px; height: 60px;"
+    >
+      <div
+        data-tc-sticky-sizer="true"
+        style="width: 600px; margin-left: 0px;"
+      />
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Sticky becomes sticky and unsticky when scrolling past it 2`] = `
+<body>
+  <div
+    id="react-root"
+  >
+    <div>
+      <div
+        style="width: 600px; margin: 0px auto;"
+      >
+        <div
+          data-tc-sticky-placeholder="true"
+          style="display: none; margin-top: 10px; margin-bottom: 20px; height: 60px;"
+        />
+        <div
+          data-tc-sticky-container="true"
+          style=""
+        >
+          <div
+            class=""
+            style="margin-top: 10px; margin-bottom: 20px; height: 60px;"
+          >
+            <div
+              data-tc-sticky-sizer="true"
+              style=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Sticky cleans sticky node unmounting 1`] = `
+<body>
+  <div
+    id="react-root"
+  >
+    <div>
+      <div />
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Sticky correctly sets the sizer width and margin when sticky 1`] = `
+<div
+  data-tc-sticky-sizer="true"
+  style="width: 800px; margin-left: 30px;"
+/>
+`;
+
+exports[`Sticky remains sticky when continuing scrolling 1`] = `
+<body>
+  <div
+    id="react-root"
+  >
+    <div>
+      <div
+        style="width: 600px; margin: 0px auto;"
+      >
+        <div
+          data-tc-sticky-placeholder="true"
+          style="display: block; margin-top: 10px; margin-bottom: 20px; height: 60px;"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    data-tc-sticky-container="true"
+    style="top: 0px; z-index: 999; position: fixed; left: 0px; width: 100%; transform: translateY(-10px);"
+  >
+    <div
+      class="tc-sticky"
+      style="margin-top: 10px; margin-bottom: 20px; height: 60px;"
+    >
+      <div
+        data-tc-sticky-sizer="true"
+        style="width: 600px; margin-left: 0px;"
+      />
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Sticky renders with custom props 1`] = `
+<body>
+  <div
+    id="react-root"
+  >
+    <span>
+      <div>
+        <div
+          data-tc-sticky-placeholder="true"
+          style="display: none; margin-top: 10px; margin-bottom: 20px; height: 60px;"
+        />
+        <div
+          data-tc-sticky-container="true"
+          style=""
+        >
+          <span
+            class="test-class-name"
+            style="margin-top: 10px; margin-bottom: 20px; height: 60px;"
+          >
+            <div
+              data-tc-sticky-sizer="true"
+              style=""
+            >
+              children
+            </div>
+          </span>
+        </div>
+      </div>
+    </span>
+  </div>
+</body>
 `;
 
 exports[`Sticky renders with default props 1`] = `
-<Sticky
-  Component="div"
-  stickyClassName="sticky"
-  stickyContext={
-    Object {
-      "top": 0,
-    }
-  }
-  zIndex={999}
->
+<body>
   <div
-    className="tc-sticky-container"
-    style={
-      Object {
-        "top": 0,
-        "zIndex": 999,
-      }
-    }
+    id="react-root"
   >
-    <GlobalStyleComponent />
-  </div>
-</Sticky>
-`;
-
-exports[`Sticky renders with sticky provider using custom props 1`] = `
-<StickyProvider
-  Component="span"
-  className="provider"
->
-  <span
-    className="provider"
-  >
-    <WithStickyContext(Sticky)>
-      <Sticky
-        Component="div"
-        stickyClassName="sticky"
-        stickyContext={
-          Object {
-            "top": 40,
-          }
-        }
-        zIndex={999}
+    <div>
+      <div
+        style="width: 600px; margin: 0px auto;"
       >
         <div
-          className="tc-sticky-container"
-          style={
-            Object {
-              "top": 40,
-              "zIndex": 999,
-            }
-          }
+          data-tc-sticky-placeholder="true"
+          style="display: none; margin-top: 10px; margin-bottom: 20px; height: 60px;"
+        />
+        <div
+          data-tc-sticky-container="true"
+          style=""
         >
-          <GlobalStyleComponent />
-          <div />
+          <div
+            class=""
+            style="margin-top: 10px; margin-bottom: 20px; height: 60px;"
+          >
+            <div
+              data-tc-sticky-sizer="true"
+              style=""
+            />
+          </div>
         </div>
-      </Sticky>
-    </WithStickyContext(Sticky)>
-  </span>
-</StickyProvider>
+      </div>
+    </div>
+  </div>
+</body>
 `;
 
-exports[`Sticky renders with sticky provider using default props 1`] = `
-<StickyProvider
-  Component="div"
->
-  <div>
-    <WithStickyContext(Sticky)>
-      <Sticky
-        Component="div"
-        stickyClassName="sticky"
-        stickyContext={
-          Object {
-            "top": 30,
-          }
-        }
-        zIndex={999}
+exports[`Sticky shouldBeSticky is checked when deciding whether to become sticky 1`] = `
+<body>
+  <div
+    id="react-root"
+  >
+    <div>
+      <div
+        style="width: 600px; margin: 0px auto;"
       >
         <div
-          className="tc-sticky-container"
-          style={
-            Object {
-              "top": 30,
-              "zIndex": 999,
-            }
-          }
+          data-tc-sticky-container="true"
         >
-          <GlobalStyleComponent />
-          <div />
+          <div
+            class=""
+            style="margin-top: 10px; margin-bottom: 20px; height: 60px;"
+          >
+            <div
+              data-tc-sticky-sizer="true"
+            />
+          </div>
         </div>
-      </Sticky>
-    </WithStickyContext(Sticky)>
+        <div
+          data-tc-sticky-placeholder="true"
+          style="display: none;"
+        />
+      </div>
+    </div>
   </div>
-</StickyProvider>
+</body>
+`;
+
+exports[`Sticky triggers the sticky detection on resize 1`] = `
+<body>
+  <div
+    id="react-root"
+  >
+    <div
+      data-tc-sticky-placeholder="true"
+      style="display: block; margin-top: 10px; margin-bottom: 20px; height: 60px;"
+    />
+  </div>
+  <div
+    data-tc-sticky-container="true"
+    style="top: 10px; z-index: 999; position: fixed; left: 0px; width: 100%; transform: translateY(-10px);"
+  >
+    <div
+      class="tc-sticky"
+      style="margin-top: 10px; margin-bottom: 20px; height: 60px;"
+    >
+      <div
+        data-tc-sticky-sizer="true"
+        style="width: 1000px; margin-left: 0px;"
+      />
+    </div>
+  </div>
+</body>
 `;

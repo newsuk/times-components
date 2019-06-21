@@ -2,6 +2,7 @@
 
 const express = require("express");
 const shrinkRay = require("shrink-ray");
+const { breakpoints, colours } = require("@times-components/styleguide");
 
 const ssr = require("../server");
 const makeUrls = require("../lib/make-urls");
@@ -26,6 +27,7 @@ const makeHtml = (
             ${styles}
             ${responsiveStyles}
             <style>
+            body { background: ${colours.functional.gutter}; }
             #nav {
               height: 50px;
               position: fixed;
@@ -36,9 +38,23 @@ const makeHtml = (
               top: 0;
             }
             #main-container {
+              margin: 0 auto;
               margin-top: 50px;
+              position: relative;
+              overflow: hidden;
+              background: white;
+              max-width: 1182px;
             }
-            @media screen and (max-width:800px) {
+            @media screen and (max-width:${breakpoints.huge - 1}px) {
+              #main-container { max-width: 1024px; }
+            }
+            @media screen and (max-width:${breakpoints.wide - 1}px) {
+              #main-container { max-width: 860px; }
+            }
+            @media screen and (max-width:${breakpoints.medium - 1}px) {
+              #main-container { max-width: 520px; }
+            }
+            @media screen and (max-width: 800px) {
               #nav { height: 30px; }
               #main-container { margin-top: 30px; }
             }

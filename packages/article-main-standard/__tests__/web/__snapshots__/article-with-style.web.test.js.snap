@@ -84,13 +84,40 @@ exports[`full article with style 1`] = `
 
 .c12 {
   position: relative;
-  padding: 0 10px;
+  margin: 0 auto;
+  height: 60px;
+}
+
+.c12:before,
+.c12:after {
+  content: "";
+  height: 1px;
+  background-color: #DBDBDB;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.c12:before {
+  top: 0;
+}
+
+.c12:after {
+  bottom: 0;
 }
 
 .c10 {
+  margin: 30px auto;
   background-color: #FFFFFF;
-  height: 55px;
-  margin: 30px 0;
+}
+
+.c10.tc-sticky {
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.3);
+}
+
+.c10.tc-sticky .c11:before,
+.c10.tc-sticky .c11:after {
+  display: none;
 }
 
 .c4 {
@@ -249,72 +276,21 @@ exports[`full article with style 1`] = `
   }
 }
 
+@media (max-width:767px) {
+  .c12 {
+    padding: 0 10px;
+  }
+}
+
 @media (min-width:768px) {
   .c12 {
     width: 80.8%;
-    margin-left: auto !important;
-    margin-right: auto !important;
   }
 }
 
 @media (min-width:1024px) {
   .c12 {
     width: 56.2%;
-  }
-}
-
-@media (max-width:1320px) {
-  .c10 {
-    left: 0;
-    top: 0;
-    z-index: 999;
-  }
-
-  .c10.sticky {
-    width: 100% !important;
-    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.3);
-  }
-
-  .c10:not(.sticky) .c11:before,
-  .c10:not(.sticky) .c11:after {
-    content: "";
-    height: 1px;
-    background-color: #DBDBDB;
-    position: absolute;
-    left: 10px;
-    right: 10px;
-  }
-
-  .c10:not(.sticky) .c11:before {
-    top: 0;
-  }
-
-  .c10:not(.sticky) .c11:after {
-    bottom: 0;
-  }
-}
-
-@media (min-width:1321px) {
-  .c10 {
-    position: static !important;
-  }
-
-  .c10 .c11:before,
-  .c10 .c11:after {
-    content: "";
-    height: 1px;
-    background-color: #DBDBDB;
-    position: absolute;
-    left: 10px;
-    right: 10px;
-  }
-
-  .c10 .c11:before {
-    top: 0;
-  }
-
-  .c10 .c11:after {
-    bottom: 0;
   }
 }
 
@@ -469,8 +445,7 @@ exports[`full article with style 1`] = `
 }
 
 .IS3 {
-  z-index: 999;
-  top: 0;
+  display: none;
 }
 
 .IS4 {
@@ -619,15 +594,22 @@ exports[`full article with style 1`] = `
     <ArticleLeadAsset
       className="c9"
     />
-    <div
-      className="tc-sticky-container c10 IS3"
-    >
+    <div>
       <div
-        className="c11 c12"
+        className="c10"
       >
-        <SaveAndShareBar />
+        <div>
+          <div
+            className="c11 c12"
+          >
+            <SaveAndShareBar />
+          </div>
+        </div>
       </div>
     </div>
+    <div
+      className="IS3"
+    />
     <div
       className="c13 responsiveweb__BodyContainer-sc-1exejum-2 c13 css-view-1dbjc4n"
     >

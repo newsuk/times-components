@@ -37,19 +37,17 @@
   "dependencies": {
     "hoist-non-react-statics": "2.5.5",
     "prop-types": "15.7.2",
-    "react-display-name": "0.2.3",
-    "styled-components": "4.2.0"
+    "react-display-name": "0.2.3"
   },
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.8.12",
     "@times-components/jest-configurator": "2.5.12",
-    "@times-components/jest-serializer": "3.2.8",
     "@times-components/storybook": "4.0.13",
+    "@times-components/styleguide": "3.28.26",
     "@times-components/webpack-configurator": "2.0.21",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.5",
-    "enzyme": "3.9.0",
     "eslint": "5.9.0",
     "jest": "24.8.0",
     "prettier": "1.14.3",

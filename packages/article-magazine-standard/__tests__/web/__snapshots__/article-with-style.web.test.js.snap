@@ -84,13 +84,40 @@ exports[`full article with style 1`] = `
 
 .c13 {
   position: relative;
-  padding: 0 10px;
+  margin: 0 auto;
+  height: 60px;
+}
+
+.c13:before,
+.c13:after {
+  content: "";
+  height: 1px;
+  background-color: #DBDBDB;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.c13:before {
+  top: 0;
+}
+
+.c13:after {
+  bottom: 0;
 }
 
 .c11 {
+  margin: 30px auto;
   background-color: #FFFFFF;
-  height: 55px;
-  margin: 30px 0;
+}
+
+.c11.tc-sticky {
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.3);
+}
+
+.c11.tc-sticky .c12:before,
+.c11.tc-sticky .c12:after {
+  display: none;
 }
 
 .c9 {
@@ -244,72 +271,21 @@ exports[`full article with style 1`] = `
   }
 }
 
+@media (max-width:767px) {
+  .c13 {
+    padding: 0 10px;
+  }
+}
+
 @media (min-width:768px) {
   .c13 {
     width: 80.8%;
-    margin-left: auto !important;
-    margin-right: auto !important;
   }
 }
 
 @media (min-width:1024px) {
   .c13 {
     width: 56.2%;
-  }
-}
-
-@media (max-width:1320px) {
-  .c11 {
-    left: 0;
-    top: 0;
-    z-index: 999;
-  }
-
-  .c11.sticky {
-    width: 100% !important;
-    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.3);
-  }
-
-  .c11:not(.sticky) .c12:before,
-  .c11:not(.sticky) .c12:after {
-    content: "";
-    height: 1px;
-    background-color: #DBDBDB;
-    position: absolute;
-    left: 10px;
-    right: 10px;
-  }
-
-  .c11:not(.sticky) .c12:before {
-    top: 0;
-  }
-
-  .c11:not(.sticky) .c12:after {
-    bottom: 0;
-  }
-}
-
-@media (min-width:1321px) {
-  .c11 {
-    position: static !important;
-  }
-
-  .c11 .c12:before,
-  .c11 .c12:after {
-    content: "";
-    height: 1px;
-    background-color: #DBDBDB;
-    position: absolute;
-    left: 10px;
-    right: 10px;
-  }
-
-  .c11 .c12:before {
-    top: 0;
-  }
-
-  .c11 .c12:after {
-    bottom: 0;
   }
 }
 
@@ -453,8 +429,7 @@ exports[`full article with style 1`] = `
 }
 
 .IS3 {
-  z-index: 999;
-  top: 0;
+  display: none;
 }
 
 .IS4 {
@@ -585,15 +560,22 @@ exports[`full article with style 1`] = `
     <ArticleLeadAsset
       className="c10 IS2"
     />
-    <div
-      className="tc-sticky-container c11 IS3"
-    >
+    <div>
       <div
-        className="c12 c13"
+        className="c11"
       >
-        <SaveAndShareBar />
+        <div>
+          <div
+            className="c12 c13"
+          >
+            <SaveAndShareBar />
+          </div>
+        </div>
       </div>
     </div>
+    <div
+      className="IS3"
+    />
     <div
       className="c14 responsiveweb__BodyContainer-sc-1exejum-2 c14 css-view-1dbjc4n"
     >
@@ -764,13 +746,40 @@ exports[`full article with style in the culture magazine 1`] = `
 
 .c13 {
   position: relative;
-  padding: 0 10px;
+  margin: 0 auto;
+  height: 60px;
+}
+
+.c13:before,
+.c13:after {
+  content: "";
+  height: 1px;
+  background-color: #DBDBDB;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.c13:before {
+  top: 0;
+}
+
+.c13:after {
+  bottom: 0;
 }
 
 .c11 {
+  margin: 30px auto;
   background-color: #FFFFFF;
-  height: 55px;
-  margin: 30px 0;
+}
+
+.c11.tc-sticky {
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.3);
+}
+
+.c11.tc-sticky .c12:before,
+.c11.tc-sticky .c12:after {
+  display: none;
 }
 
 .c9 {
@@ -924,72 +933,21 @@ exports[`full article with style in the culture magazine 1`] = `
   }
 }
 
+@media (max-width:767px) {
+  .c13 {
+    padding: 0 10px;
+  }
+}
+
 @media (min-width:768px) {
   .c13 {
     width: 80.8%;
-    margin-left: auto !important;
-    margin-right: auto !important;
   }
 }
 
 @media (min-width:1024px) {
   .c13 {
     width: 56.2%;
-  }
-}
-
-@media (max-width:1320px) {
-  .c11 {
-    left: 0;
-    top: 0;
-    z-index: 999;
-  }
-
-  .c11.sticky {
-    width: 100% !important;
-    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.3);
-  }
-
-  .c11:not(.sticky) .c12:before,
-  .c11:not(.sticky) .c12:after {
-    content: "";
-    height: 1px;
-    background-color: #DBDBDB;
-    position: absolute;
-    left: 10px;
-    right: 10px;
-  }
-
-  .c11:not(.sticky) .c12:before {
-    top: 0;
-  }
-
-  .c11:not(.sticky) .c12:after {
-    bottom: 0;
-  }
-}
-
-@media (min-width:1321px) {
-  .c11 {
-    position: static !important;
-  }
-
-  .c11 .c12:before,
-  .c11 .c12:after {
-    content: "";
-    height: 1px;
-    background-color: #DBDBDB;
-    position: absolute;
-    left: 10px;
-    right: 10px;
-  }
-
-  .c11 .c12:before {
-    top: 0;
-  }
-
-  .c11 .c12:after {
-    bottom: 0;
   }
 }
 
@@ -1141,8 +1099,7 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 .IS5 {
-  z-index: 999;
-  top: 0;
+  display: none;
 }
 
 .IS6 {
@@ -1273,15 +1230,22 @@ exports[`full article with style in the culture magazine 1`] = `
     <ArticleLeadAsset
       className="c10 IS4"
     />
-    <div
-      className="tc-sticky-container c11 IS5"
-    >
+    <div>
       <div
-        className="c12 c13"
+        className="c11"
       >
-        <SaveAndShareBar />
+        <div>
+          <div
+            className="c12 c13"
+          >
+            <SaveAndShareBar />
+          </div>
+        </div>
       </div>
     </div>
+    <div
+      className="IS5"
+    />
     <div
       className="c14 responsiveweb__BodyContainer-sc-1exejum-2 c14 css-view-1dbjc4n"
     >
@@ -1452,13 +1416,40 @@ exports[`full article with style in the style magazine 1`] = `
 
 .c13 {
   position: relative;
-  padding: 0 10px;
+  margin: 0 auto;
+  height: 60px;
+}
+
+.c13:before,
+.c13:after {
+  content: "";
+  height: 1px;
+  background-color: #DBDBDB;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.c13:before {
+  top: 0;
+}
+
+.c13:after {
+  bottom: 0;
 }
 
 .c11 {
+  margin: 30px auto;
   background-color: #FFFFFF;
-  height: 55px;
-  margin: 30px 0;
+}
+
+.c11.tc-sticky {
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.3);
+}
+
+.c11.tc-sticky .c12:before,
+.c11.tc-sticky .c12:after {
+  display: none;
 }
 
 .c9 {
@@ -1612,72 +1603,21 @@ exports[`full article with style in the style magazine 1`] = `
   }
 }
 
+@media (max-width:767px) {
+  .c13 {
+    padding: 0 10px;
+  }
+}
+
 @media (min-width:768px) {
   .c13 {
     width: 80.8%;
-    margin-left: auto !important;
-    margin-right: auto !important;
   }
 }
 
 @media (min-width:1024px) {
   .c13 {
     width: 56.2%;
-  }
-}
-
-@media (max-width:1320px) {
-  .c11 {
-    left: 0;
-    top: 0;
-    z-index: 999;
-  }
-
-  .c11.sticky {
-    width: 100% !important;
-    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.3);
-  }
-
-  .c11:not(.sticky) .c12:before,
-  .c11:not(.sticky) .c12:after {
-    content: "";
-    height: 1px;
-    background-color: #DBDBDB;
-    position: absolute;
-    left: 10px;
-    right: 10px;
-  }
-
-  .c11:not(.sticky) .c12:before {
-    top: 0;
-  }
-
-  .c11:not(.sticky) .c12:after {
-    bottom: 0;
-  }
-}
-
-@media (min-width:1321px) {
-  .c11 {
-    position: static !important;
-  }
-
-  .c11 .c12:before,
-  .c11 .c12:after {
-    content: "";
-    height: 1px;
-    background-color: #DBDBDB;
-    position: absolute;
-    left: 10px;
-    right: 10px;
-  }
-
-  .c11 .c12:before {
-    top: 0;
-  }
-
-  .c11 .c12:after {
-    bottom: 0;
   }
 }
 
@@ -1829,8 +1769,7 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 .IS5 {
-  z-index: 999;
-  top: 0;
+  display: none;
 }
 
 .IS6 {
@@ -1961,15 +1900,22 @@ exports[`full article with style in the style magazine 1`] = `
     <ArticleLeadAsset
       className="c10 IS4"
     />
-    <div
-      className="tc-sticky-container c11 IS5"
-    >
+    <div>
       <div
-        className="c12 c13"
+        className="c11"
       >
-        <SaveAndShareBar />
+        <div>
+          <div
+            className="c12 c13"
+          >
+            <SaveAndShareBar />
+          </div>
+        </div>
       </div>
     </div>
+    <div
+      className="IS5"
+    />
     <div
       className="c14 responsiveweb__BodyContainer-sc-1exejum-2 c14 css-view-1dbjc4n"
     >
@@ -2140,13 +2086,40 @@ exports[`full article with style in the sunday times magazine 1`] = `
 
 .c13 {
   position: relative;
-  padding: 0 10px;
+  margin: 0 auto;
+  height: 60px;
+}
+
+.c13:before,
+.c13:after {
+  content: "";
+  height: 1px;
+  background-color: #DBDBDB;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.c13:before {
+  top: 0;
+}
+
+.c13:after {
+  bottom: 0;
 }
 
 .c11 {
+  margin: 30px auto;
   background-color: #FFFFFF;
-  height: 55px;
-  margin: 30px 0;
+}
+
+.c11.tc-sticky {
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.3);
+}
+
+.c11.tc-sticky .c12:before,
+.c11.tc-sticky .c12:after {
+  display: none;
 }
 
 .c9 {
@@ -2300,72 +2273,21 @@ exports[`full article with style in the sunday times magazine 1`] = `
   }
 }
 
+@media (max-width:767px) {
+  .c13 {
+    padding: 0 10px;
+  }
+}
+
 @media (min-width:768px) {
   .c13 {
     width: 80.8%;
-    margin-left: auto !important;
-    margin-right: auto !important;
   }
 }
 
 @media (min-width:1024px) {
   .c13 {
     width: 56.2%;
-  }
-}
-
-@media (max-width:1320px) {
-  .c11 {
-    left: 0;
-    top: 0;
-    z-index: 999;
-  }
-
-  .c11.sticky {
-    width: 100% !important;
-    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.3);
-  }
-
-  .c11:not(.sticky) .c12:before,
-  .c11:not(.sticky) .c12:after {
-    content: "";
-    height: 1px;
-    background-color: #DBDBDB;
-    position: absolute;
-    left: 10px;
-    right: 10px;
-  }
-
-  .c11:not(.sticky) .c12:before {
-    top: 0;
-  }
-
-  .c11:not(.sticky) .c12:after {
-    bottom: 0;
-  }
-}
-
-@media (min-width:1321px) {
-  .c11 {
-    position: static !important;
-  }
-
-  .c11 .c12:before,
-  .c11 .c12:after {
-    content: "";
-    height: 1px;
-    background-color: #DBDBDB;
-    position: absolute;
-    left: 10px;
-    right: 10px;
-  }
-
-  .c11 .c12:before {
-    top: 0;
-  }
-
-  .c11 .c12:after {
-    bottom: 0;
   }
 }
 
@@ -2517,8 +2439,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 .IS5 {
-  z-index: 999;
-  top: 0;
+  display: none;
 }
 
 .IS6 {
@@ -2649,15 +2570,22 @@ exports[`full article with style in the sunday times magazine 1`] = `
     <ArticleLeadAsset
       className="c10 IS4"
     />
-    <div
-      className="tc-sticky-container c11 IS5"
-    >
+    <div>
       <div
-        className="c12 c13"
+        className="c11"
       >
-        <SaveAndShareBar />
+        <div>
+          <div
+            className="c12 c13"
+          >
+            <SaveAndShareBar />
+          </div>
+        </div>
       </div>
     </div>
+    <div
+      className="IS5"
+    />
     <div
       className="c14 responsiveweb__BodyContainer-sc-1exejum-2 c14 css-view-1dbjc4n"
     >
