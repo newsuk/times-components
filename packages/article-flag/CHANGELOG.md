@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.6.47](https://github.com/newsuk/times-components/compare/@times-components/article-flag@2.6.46...@times-components/article-flag@2.6.47) (2019-06-21)
+
+
+### Bug Fixes
+
+* change flag and label spacings ([#2051](https://github.com/newsuk/times-components/issues/2051)) ([e066961](https://github.com/newsuk/times-components/commit/e066961))
+
+
+
+
+
 ## [2.6.46](https://github.com/newsuk/times-components/compare/@times-components/article-flag@2.6.45...@times-components/article-flag@2.6.46) (2019-06-18)
 
 **Note:** Version bump only for package @times-components/article-flag

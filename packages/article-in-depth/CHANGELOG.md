@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.5.4](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.5.3...@times-components/article-in-depth@3.5.4) (2019-06-21)
+
+
+### Bug Fixes
+
+* change flag and label spacings ([#2051](https://github.com/newsuk/times-components/issues/2051)) ([e066961](https://github.com/newsuk/times-components/commit/e066961))
+
+
+
+
+
 ## [3.5.3](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.5.2...@times-components/article-in-depth@3.5.3) (2019-06-20)
 
 **Note:** Version bump only for package @times-components/article-in-depth
