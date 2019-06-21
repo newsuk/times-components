@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { ItemRowSeparator } from "@times-components/slice-layout";
 import { ResponsiveSlice } from "../shared";
 import { TileS } from "../../tiles";
-import styleFactory, { backgroundColor } from "./styles";
+import styleFactory, { backgroundColour } from "./styles";
 import Logo from "./logo";
 
 class DailyRegisterLeadFour extends Component {
@@ -114,7 +114,7 @@ class DailyRegisterLeadFour extends Component {
 
   render() {
     return (
-      <View style={backgroundColor}>
+      <View style={backgroundColour}>
         <ResponsiveSlice
           renderHuge={this.renderHuge}
           renderMedium={this.renderSlice}

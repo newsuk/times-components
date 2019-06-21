@@ -101,6 +101,6 @@ export default breakpoint => ({
   ...(stylesResolver[breakpoint] || {})
 });
 
-export const backgroundColor = {
+export const backgroundColour = {
   backgroundColor: main.container.backgroundColor
 };
