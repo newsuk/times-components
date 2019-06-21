@@ -38,7 +38,7 @@ export default ({ el, data, platform, eventCallback, window }) => {
       localInitCalled = true;
       window.initCalled = true;
 
-      if (!data.bidInitialiser) {
+      if ((!data.bidInitialiser && isWeb) || !isWeb) {
         this.loadScripts();
       }
 
