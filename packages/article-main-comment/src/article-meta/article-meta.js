@@ -8,7 +8,8 @@ import styles from "../styles";
 
 const Separator = () => <View style={styles.separator} />;
 
-const hasBylineElement = bylines => bylines && bylines[0].byline.length > 0;
+const hasBylineData = bylines =>
+  Array.isArray(bylines) && bylines[0].byline && bylines[0].byline.length > 0;
 
 const ArticleMeta = ({
   bylines,
@@ -25,7 +26,7 @@ const ArticleMeta = ({
       isTablet && styles.metaContainerTablet
     ]}
   >
-    {hasBylineElement(bylines) && (
+    {hasBylineData(bylines) && (
       <Fragment>
         <View style={styles.meta}>
           <ArticleBylineWithLinks ast={bylines} onAuthorPress={onAuthorPress} />

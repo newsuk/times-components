@@ -17,7 +17,7 @@ const ArticleMetaRow = (
   </RowWrapper>
 );
 
-const hasBylineElement = bylines => bylines && bylines.length > 0;
+const hasBylineData = bylines => Array.isArray(bylines) && bylines.length > 0;
 
 const ArticleMetaBase = ({
   bylines,
@@ -29,14 +29,14 @@ const ArticleMetaBase = ({
   const data = [
     ArticleMetaRow(
       styles.datePublication,
-      !hasBylineElement(bylines) ? styles.articleMetaElement : {},
+      !hasBylineData(bylines) ? styles.articleMetaElement : {},
       <DatePublication date={publishedTime} publication={publicationName} />,
       "articleDatePublication",
       RowWrapper
     )
   ];
 
-  if (hasBylineElement(bylines)) {
+  if (hasBylineData(bylines)) {
     return [
       ArticleMetaRow(
         styles.byline,

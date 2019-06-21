@@ -62,7 +62,7 @@ class ArticleInDepth extends Component {
               onImagePress={onImagePress}
               onVideoPress={onVideoPress}
               renderCaption={({ caption }) =>
-                caption.text && <CentredCaption {...caption} />
+                caption && caption.text && <CentredCaption {...caption} />
               }
               style={[styles.leadAsset, isTablet && styles.leadAssetTablet]}
               width={width}
