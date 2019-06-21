@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.61.5](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.61.4...@times-components/edition-slices@0.61.5) (2019-06-21)
+
+
+### Bug Fixes
+
+* REPLAT-6745 dailyRegisterLeadFour and secondaryOne styling updates ([#2062](https://github.com/newsuk/times-components/issues/2062)) ([c2249f2](https://github.com/newsuk/times-components/commit/c2249f2))
+
+
+
+
+
 ## [0.61.4](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.61.3...@times-components/edition-slices@0.61.4) (2019-06-21)
 
 
