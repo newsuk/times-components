@@ -56,6 +56,9 @@
     "packages:publish-dry-run": "yarn packages:publish --no-git-tag-version --no-push",
     "commit": "git-cz",
     "prepublishOnly": "lerna run prepublishOnly",
+    "test:ios": "lerna run test:ios --stream",
+    "test:android": "lerna run test:android --stream",
+    "test:web": "lerna run test:web --stream",
     "test:e2e": "yarn bundle && lerna run test:integration --stream",
     "test:e2e:debug": "yarn bundle && lerna run test:integration:debug --stream",
     "watch": "lerna run watch --stream --no-sort --concurrency 100"
