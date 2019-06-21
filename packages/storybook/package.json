@@ -1,6 +1,6 @@
 {
   "name": "@times-components/storybook",
-  "version": "4.0.13",
+  "version": "4.0.14",
   "description": "React storybook helpers for Times Components",
   "main": "dist/storybook",
   "dev": "src/storybook",
@@ -46,17 +46,17 @@
     "@storybook/addon-knobs": "4.1.18",
     "@storybook/react-native": "4.1.18",
     "@times-components/schema": "0.6.13",
-    "@times-components/user-state": "0.0.5",
+    "@times-components/user-state": "0.0.6",
     "apollo-cache-inmemory": "1.5.1",
     "apollo-client": "2.5.1",
     "apollo-link-http": "1.5.14",
     "babel-core": "^7.0.0-bridge.0",
     "prop-types": "15.7.2",
-    "styled-components": "4.2.0",
     "react": "16.6.3",
     "react-apollo": "2.5.5",
     "react-helmet-async": "1.0.2",
-    "react-test-renderer": "16.6.3"
+    "react-test-renderer": "16.6.3",
+    "styled-components": "4.2.0"
   },
   "peerDependencies": {
     "react": ">=16.5",

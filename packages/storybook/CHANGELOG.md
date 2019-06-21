@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.14](https://github.com/newsuk/times-components/compare/@times-components/storybook@4.0.13...@times-components/storybook@4.0.14) (2019-06-21)
+
+
+### Bug Fixes
+
+* support full width sticky save/share bar  ([#2057](https://github.com/newsuk/times-components/issues/2057)) ([ddb1b1b](https://github.com/newsuk/times-components/commit/ddb1b1b))
+
+
+
+
+
 ## [4.0.13](https://github.com/newsuk/times-components/compare/@times-components/storybook@4.0.12...@times-components/storybook@4.0.13) (2019-06-18)
 
 **Note:** Version bump only for package @times-components/storybook

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.10](https://github.com/newsuk/times-components/compare/@times-components/sticky@0.0.9...@times-components/sticky@0.0.10) (2019-06-21)
+
+
+### Bug Fixes
+
+* support full width sticky save/share bar  ([#2057](https://github.com/newsuk/times-components/issues/2057)) ([ddb1b1b](https://github.com/newsuk/times-components/commit/ddb1b1b))
+
+
+
+
+
 ## [0.0.9](https://github.com/newsuk/times-components/compare/@times-components/sticky@0.0.8...@times-components/sticky@0.0.9) (2019-06-18)
 
 **Note:** Version bump only for package @times-components/sticky

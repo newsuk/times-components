@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.6.6](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.6.5...@times-components/article-main-standard@3.6.6) (2019-06-21)
+
+
+### Bug Fixes
+
+* support full width sticky save/share bar  ([#2057](https://github.com/newsuk/times-components/issues/2057)) ([ddb1b1b](https://github.com/newsuk/times-components/commit/ddb1b1b))
+
+
+
+
+
 ## [3.6.5](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.6.4...@times-components/article-main-standard@3.6.5) (2019-06-21)
 
 
