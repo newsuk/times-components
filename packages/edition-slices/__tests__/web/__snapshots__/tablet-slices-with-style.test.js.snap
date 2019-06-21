@@ -170,6 +170,8 @@ exports[`2. daily universal register - medium 1`] = `
   flex-basis: 0%;
   padding-right: 25%;
   padding-left: 25%;
+  padding-top: 10px;
+  padding-bottom: 10px;
   -ms-flex-align: center;
   -webkit-box-align: center;
   -ms-flex-positive: 1;
@@ -187,47 +189,55 @@ exports[`2. daily universal register - medium 1`] = `
   width: 1366px;
   -ms-flex-item-align: center;
 }
+
+.IS10 {
+  background-color: rgba(240,240,240,1.00);
+}
 </style>
 
 <div
-  className="css-view-1dbjc4n IS9"
+  className="css-view-1dbjc4n IS10"
 >
   <div
-    className="css-view-1dbjc4n IS8"
+    className="css-view-1dbjc4n IS9"
   >
-    <Image
-      aspectRatio={1}
-      className="IS1"
-      uri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
-    />
     <div
-      className="css-text-76zvg2 IS2"
+      className="css-view-1dbjc4n IS8"
     >
-      Daily Universal Register
+      <Image
+        aspectRatio={1}
+        className="IS1"
+        uri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
+      />
+      <div
+        className="css-text-76zvg2 IS2"
+      >
+        Daily Universal Register
+      </div>
+      <TileS />
+      <div
+        className="css-view-1dbjc4n IS3"
+      />
+      <TileS />
+      <div
+        className="css-view-1dbjc4n IS4"
+      />
+      <Image
+        aspectRatio={1}
+        className="IS5"
+        uri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
+      />
+      <TileS />
+      <div
+        className="css-view-1dbjc4n IS6"
+      />
+      <Image
+        aspectRatio={1}
+        className="IS7"
+        uri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
+      />
+      <TileS />
     </div>
-    <TileS />
-    <div
-      className="css-view-1dbjc4n IS3"
-    />
-    <TileS />
-    <div
-      className="css-view-1dbjc4n IS4"
-    />
-    <Image
-      aspectRatio={1}
-      className="IS5"
-      uri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
-    />
-    <TileS />
-    <div
-      className="css-view-1dbjc4n IS6"
-    />
-    <Image
-      aspectRatio={1}
-      className="IS7"
-      uri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
-    />
-    <TileS />
   </div>
 </div>
 `;
@@ -1967,6 +1977,8 @@ exports[`17. daily universal register - wide 1`] = `
   flex-basis: 0%;
   padding-right: 25%;
   padding-left: 25%;
+  padding-top: 10px;
+  padding-bottom: 10px;
   -ms-flex-align: center;
   -webkit-box-align: center;
   -ms-flex-positive: 1;
@@ -1984,47 +1996,55 @@ exports[`17. daily universal register - wide 1`] = `
   width: 1366px;
   -ms-flex-item-align: center;
 }
+
+.IS10 {
+  background-color: rgba(240,240,240,1.00);
+}
 </style>
 
 <div
-  className="css-view-1dbjc4n IS9"
+  className="css-view-1dbjc4n IS10"
 >
   <div
-    className="css-view-1dbjc4n IS8"
+    className="css-view-1dbjc4n IS9"
   >
-    <Image
-      aspectRatio={1}
-      className="IS1"
-      uri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
-    />
     <div
-      className="css-text-76zvg2 IS2"
+      className="css-view-1dbjc4n IS8"
     >
-      Daily Universal Register
+      <Image
+        aspectRatio={1}
+        className="IS1"
+        uri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
+      />
+      <div
+        className="css-text-76zvg2 IS2"
+      >
+        Daily Universal Register
+      </div>
+      <TileS />
+      <div
+        className="css-view-1dbjc4n IS3"
+      />
+      <TileS />
+      <div
+        className="css-view-1dbjc4n IS4"
+      />
+      <Image
+        aspectRatio={1}
+        className="IS5"
+        uri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
+      />
+      <TileS />
+      <div
+        className="css-view-1dbjc4n IS6"
+      />
+      <Image
+        aspectRatio={1}
+        className="IS7"
+        uri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
+      />
+      <TileS />
     </div>
-    <TileS />
-    <div
-      className="css-view-1dbjc4n IS3"
-    />
-    <TileS />
-    <div
-      className="css-view-1dbjc4n IS4"
-    />
-    <Image
-      aspectRatio={1}
-      className="IS5"
-      uri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
-    />
-    <TileS />
-    <div
-      className="css-view-1dbjc4n IS6"
-    />
-    <Image
-      aspectRatio={1}
-      className="IS7"
-      uri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
-    />
-    <TileS />
   </div>
 </div>
 `;
@@ -3764,6 +3784,8 @@ exports[`32. daily universal register - huge 1`] = `
   flex-basis: 0%;
   padding-right: 25%;
   padding-left: 25%;
+  padding-top: 10px;
+  padding-bottom: 10px;
   -ms-flex-align: center;
   -webkit-box-align: center;
   -ms-flex-positive: 1;
@@ -3781,47 +3803,55 @@ exports[`32. daily universal register - huge 1`] = `
   width: 1366px;
   -ms-flex-item-align: center;
 }
+
+.IS10 {
+  background-color: rgba(240,240,240,1.00);
+}
 </style>
 
 <div
-  className="css-view-1dbjc4n IS9"
+  className="css-view-1dbjc4n IS10"
 >
   <div
-    className="css-view-1dbjc4n IS8"
+    className="css-view-1dbjc4n IS9"
   >
-    <Image
-      aspectRatio={1}
-      className="IS1"
-      uri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
-    />
     <div
-      className="css-text-76zvg2 IS2"
+      className="css-view-1dbjc4n IS8"
     >
-      Daily Universal Register
+      <Image
+        aspectRatio={1}
+        className="IS1"
+        uri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
+      />
+      <div
+        className="css-text-76zvg2 IS2"
+      >
+        Daily Universal Register
+      </div>
+      <TileS />
+      <div
+        className="css-view-1dbjc4n IS3"
+      />
+      <TileS />
+      <div
+        className="css-view-1dbjc4n IS4"
+      />
+      <Image
+        aspectRatio={1}
+        className="IS5"
+        uri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
+      />
+      <TileS />
+      <div
+        className="css-view-1dbjc4n IS6"
+      />
+      <Image
+        aspectRatio={1}
+        className="IS7"
+        uri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
+      />
+      <TileS />
     </div>
-    <TileS />
-    <div
-      className="css-view-1dbjc4n IS3"
-    />
-    <TileS />
-    <div
-      className="css-view-1dbjc4n IS4"
-    />
-    <Image
-      aspectRatio={1}
-      className="IS5"
-      uri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
-    />
-    <TileS />
-    <div
-      className="css-view-1dbjc4n IS6"
-    />
-    <Image
-      aspectRatio={1}
-      className="IS7"
-      uri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
-    />
-    <TileS />
   </div>
 </div>
 `;

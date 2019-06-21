@@ -21,40 +21,42 @@ exports[`1. comment lead and cartoon - medium 1`] = `
 exports[`2. daily universal register - medium 1`] = `
 <View>
   <View>
-    <Image
-      resizeMode="contain"
-      source={
-        Object {
-          "testUri": "../../../packages/edition-slices/assets/daily-universal-register.png",
+    <View>
+      <Image
+        resizeMode="contain"
+        source={
+          Object {
+            "testUri": "../../../packages/edition-slices/assets/daily-universal-register.png",
+          }
         }
-      }
-    />
-    <Text>
-      Daily Universal Register
-    </Text>
-    <TileS />
-    <View />
-    <TileS />
-    <View />
-    <Image
-      resizeMode="contain"
-      source={
-        Object {
-          "testUri": "../../../packages/edition-slices/assets/leaves.png",
+      />
+      <Text>
+        Daily Universal Register
+      </Text>
+      <TileS />
+      <View />
+      <TileS />
+      <View />
+      <Image
+        resizeMode="contain"
+        source={
+          Object {
+            "testUri": "../../../packages/edition-slices/assets/leaves.png",
+          }
         }
-      }
-    />
-    <TileS />
-    <View />
-    <Image
-      resizeMode="contain"
-      source={
-        Object {
-          "testUri": "../../../packages/edition-slices/assets/cake.png",
+      />
+      <TileS />
+      <View />
+      <Image
+        resizeMode="contain"
+        source={
+          Object {
+            "testUri": "../../../packages/edition-slices/assets/cake.png",
+          }
         }
-      }
-    />
-    <TileS />
+      />
+      <TileS />
+    </View>
   </View>
 </View>
 `;
@@ -480,40 +482,42 @@ exports[`16. comment lead and cartoon - wide 1`] = `
 exports[`17. daily universal register - wide 1`] = `
 <View>
   <View>
-    <Image
-      resizeMode="contain"
-      source={
-        Object {
-          "testUri": "../../../packages/edition-slices/assets/daily-universal-register.png",
+    <View>
+      <Image
+        resizeMode="contain"
+        source={
+          Object {
+            "testUri": "../../../packages/edition-slices/assets/daily-universal-register.png",
+          }
         }
-      }
-    />
-    <Text>
-      Daily Universal Register
-    </Text>
-    <TileS />
-    <View />
-    <TileS />
-    <View />
-    <Image
-      resizeMode="contain"
-      source={
-        Object {
-          "testUri": "../../../packages/edition-slices/assets/leaves.png",
+      />
+      <Text>
+        Daily Universal Register
+      </Text>
+      <TileS />
+      <View />
+      <TileS />
+      <View />
+      <Image
+        resizeMode="contain"
+        source={
+          Object {
+            "testUri": "../../../packages/edition-slices/assets/leaves.png",
+          }
         }
-      }
-    />
-    <TileS />
-    <View />
-    <Image
-      resizeMode="contain"
-      source={
-        Object {
-          "testUri": "../../../packages/edition-slices/assets/cake.png",
+      />
+      <TileS />
+      <View />
+      <Image
+        resizeMode="contain"
+        source={
+          Object {
+            "testUri": "../../../packages/edition-slices/assets/cake.png",
+          }
         }
-      }
-    />
-    <TileS />
+      />
+      <TileS />
+    </View>
   </View>
 </View>
 `;
@@ -935,58 +939,60 @@ exports[`31. comment lead and cartoon - huge 1`] = `
 exports[`32. daily universal register - huge 1`] = `
 <View>
   <View>
-    <Image
-      resizeMode="contain"
-      source={
-        Object {
-          "testUri": "../../../packages/edition-slices/assets/daily-universal-register.png",
+    <View>
+      <Image
+        resizeMode="contain"
+        source={
+          Object {
+            "testUri": "../../../packages/edition-slices/assets/daily-universal-register.png",
+          }
         }
-      }
-    />
-    <Text>
-      Daily Universal Register
-    </Text>
-    <View>
+      />
+      <Text>
+        Daily Universal Register
+      </Text>
       <View>
-        <View />
         <View>
-          <TileS />
+          <View />
+          <View>
+            <TileS />
+          </View>
+        </View>
+        <View>
+          <View />
+          <View>
+            <TileS />
+          </View>
         </View>
       </View>
       <View>
-        <View />
         <View>
-          <TileS />
-        </View>
-      </View>
-    </View>
-    <View>
-      <View>
-        <View />
-        <Image
-          resizeMode="contain"
-          source={
-            Object {
-              "testUri": "../../../packages/edition-slices/assets/leaves.png",
+          <View />
+          <Image
+            resizeMode="contain"
+            source={
+              Object {
+                "testUri": "../../../packages/edition-slices/assets/leaves.png",
+              }
             }
-          }
-        />
-        <View>
-          <TileS />
+          />
+          <View>
+            <TileS />
+          </View>
         </View>
-      </View>
-      <View>
-        <View />
-        <Image
-          resizeMode="contain"
-          source={
-            Object {
-              "testUri": "../../../packages/edition-slices/assets/cake.png",
-            }
-          }
-        />
         <View>
-          <TileS />
+          <View />
+          <Image
+            resizeMode="contain"
+            source={
+              Object {
+                "testUri": "../../../packages/edition-slices/assets/cake.png",
+              }
+            }
+          />
+          <View>
+            <TileS />
+          </View>
         </View>
       </View>
     </View>

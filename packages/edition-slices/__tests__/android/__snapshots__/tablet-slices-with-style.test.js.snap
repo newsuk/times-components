@@ -57,102 +57,112 @@ exports[`2. daily universal register - medium 1`] = `
 <View
   style={
     Object {
-      "alignSelf": "center",
-      "maxWidth": "100%",
-      "paddingHorizontal": 10,
-      "width": 1366,
+      "backgroundColor": "#F0F0F0",
     }
   }
 >
   <View
     style={
       Object {
-        "alignItems": "center",
-        "backgroundColor": "#F0F0F0",
-        "flex": 1,
-        "paddingHorizontal": "20%",
+        "alignSelf": "center",
+        "maxWidth": "100%",
+        "paddingHorizontal": 10,
+        "width": 1366,
       }
     }
   >
-    <Image
+    <View
       style={
         Object {
-          "height": 97,
-          "width": 380,
-        }
-      }
-    />
-    <Text
-      style={
-        Object {
-          "color": "#850029",
-          "fontFamily": "TimesDigitalW04",
-          "fontSize": 16,
-          "marginBottom": 25,
+          "alignItems": "center",
+          "backgroundColor": "#F0F0F0",
+          "flex": 1,
+          "paddingHorizontal": "20%",
+          "paddingVertical": 10,
         }
       }
     >
-      Daily Universal Register
-    </Text>
-    <TileS />
-    <View
-      style={
-        Object {
-          "borderBottomColor": "#DBDBDB",
-          "borderBottomWidth": 1,
-          "borderColor": "#DBDBDB",
-          "borderStyle": "solid",
-          "marginHorizontal": 10,
-          "marginVertical": 25,
-          "width": "100%",
+      <Image
+        style={
+          Object {
+            "height": 97,
+            "marginVertical": 10,
+            "width": 380,
+          }
         }
-      }
-    />
-    <TileS />
-    <View
-      style={
-        Object {
-          "borderBottomColor": "#DBDBDB",
-          "borderBottomWidth": 1,
-          "borderColor": "#DBDBDB",
-          "borderStyle": "solid",
-          "marginHorizontal": 10,
-          "marginVertical": 25,
-          "width": "100%",
+      />
+      <Text
+        style={
+          Object {
+            "color": "#850029",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 16,
+            "marginBottom": 25,
+          }
         }
-      }
-    />
-    <Image
-      style={
-        Object {
-          "height": 45,
-          "width": 60,
+      >
+        Daily Universal Register
+      </Text>
+      <TileS />
+      <View
+        style={
+          Object {
+            "borderBottomColor": "#DBDBDB",
+            "borderBottomWidth": 1,
+            "borderColor": "#DBDBDB",
+            "borderStyle": "solid",
+            "marginHorizontal": 10,
+            "marginVertical": 25,
+            "width": "100%",
+          }
         }
-      }
-    />
-    <TileS />
-    <View
-      style={
-        Object {
-          "borderBottomColor": "#DBDBDB",
-          "borderBottomWidth": 1,
-          "borderColor": "#DBDBDB",
-          "borderStyle": "solid",
-          "marginHorizontal": 10,
-          "marginVertical": 25,
-          "width": "100%",
+      />
+      <TileS />
+      <View
+        style={
+          Object {
+            "borderBottomColor": "#DBDBDB",
+            "borderBottomWidth": 1,
+            "borderColor": "#DBDBDB",
+            "borderStyle": "solid",
+            "marginHorizontal": 10,
+            "marginVertical": 25,
+            "width": "100%",
+          }
         }
-      }
-    />
-    <Image
-      style={
-        Object {
-          "height": 45,
-          "width": 60,
+      />
+      <Image
+        style={
+          Object {
+            "height": 45,
+            "width": 60,
+          }
         }
-      }
-    />
-    <TileS />
+      />
+      <TileS />
+      <View
+        style={
+          Object {
+            "borderBottomColor": "#DBDBDB",
+            "borderBottomWidth": 1,
+            "borderColor": "#DBDBDB",
+            "borderStyle": "solid",
+            "marginHorizontal": 10,
+            "marginVertical": 25,
+            "width": "100%",
+          }
+        }
+      />
+      <Image
+        style={
+          Object {
+            "height": 45,
+            "width": 60,
+          }
+        }
+      />
+      <TileS />
+    </View>
   </View>
 </View>
 `;
@@ -1197,103 +1207,112 @@ exports[`17. daily universal register - wide 1`] = `
 <View
   style={
     Object {
-      "alignSelf": "center",
-      "maxWidth": "100%",
-      "paddingHorizontal": 10,
-      "width": 1366,
+      "backgroundColor": "#F0F0F0",
     }
   }
 >
   <View
     style={
       Object {
-        "alignItems": "center",
-        "backgroundColor": "#F0F0F0",
-        "flex": 1,
-        "paddingHorizontal": "25%",
+        "alignSelf": "center",
+        "maxWidth": "100%",
+        "paddingHorizontal": 10,
+        "width": 1366,
       }
     }
   >
-    <Image
+    <View
       style={
         Object {
-          "height": 73,
-          "marginVertical": 10,
-          "width": 285,
-        }
-      }
-    />
-    <Text
-      style={
-        Object {
-          "color": "#850029",
-          "fontFamily": "TimesDigitalW04",
-          "fontSize": 16,
-          "marginBottom": 25,
+          "alignItems": "center",
+          "backgroundColor": "#F0F0F0",
+          "flex": 1,
+          "paddingHorizontal": "25%",
+          "paddingVertical": 10,
         }
       }
     >
-      Daily Universal Register
-    </Text>
-    <TileS />
-    <View
-      style={
-        Object {
-          "borderBottomColor": "#DBDBDB",
-          "borderBottomWidth": 1,
-          "borderColor": "#DBDBDB",
-          "borderStyle": "solid",
-          "marginHorizontal": 10,
-          "marginVertical": 25,
-          "width": "100%",
+      <Image
+        style={
+          Object {
+            "height": 73,
+            "marginVertical": 10,
+            "width": 285,
+          }
         }
-      }
-    />
-    <TileS />
-    <View
-      style={
-        Object {
-          "borderBottomColor": "#DBDBDB",
-          "borderBottomWidth": 1,
-          "borderColor": "#DBDBDB",
-          "borderStyle": "solid",
-          "marginHorizontal": 10,
-          "marginVertical": 25,
-          "width": "100%",
+      />
+      <Text
+        style={
+          Object {
+            "color": "#850029",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 16,
+            "marginBottom": 25,
+          }
         }
-      }
-    />
-    <Image
-      style={
-        Object {
-          "height": 45,
-          "width": 60,
+      >
+        Daily Universal Register
+      </Text>
+      <TileS />
+      <View
+        style={
+          Object {
+            "borderBottomColor": "#DBDBDB",
+            "borderBottomWidth": 1,
+            "borderColor": "#DBDBDB",
+            "borderStyle": "solid",
+            "marginHorizontal": 10,
+            "marginVertical": 25,
+            "width": "100%",
+          }
         }
-      }
-    />
-    <TileS />
-    <View
-      style={
-        Object {
-          "borderBottomColor": "#DBDBDB",
-          "borderBottomWidth": 1,
-          "borderColor": "#DBDBDB",
-          "borderStyle": "solid",
-          "marginHorizontal": 10,
-          "marginVertical": 25,
-          "width": "100%",
+      />
+      <TileS />
+      <View
+        style={
+          Object {
+            "borderBottomColor": "#DBDBDB",
+            "borderBottomWidth": 1,
+            "borderColor": "#DBDBDB",
+            "borderStyle": "solid",
+            "marginHorizontal": 10,
+            "marginVertical": 25,
+            "width": "100%",
+          }
         }
-      }
-    />
-    <Image
-      style={
-        Object {
-          "height": 45,
-          "width": 60,
+      />
+      <Image
+        style={
+          Object {
+            "height": 45,
+            "width": 60,
+          }
         }
-      }
-    />
-    <TileS />
+      />
+      <TileS />
+      <View
+        style={
+          Object {
+            "borderBottomColor": "#DBDBDB",
+            "borderBottomWidth": 1,
+            "borderColor": "#DBDBDB",
+            "borderStyle": "solid",
+            "marginHorizontal": 10,
+            "marginVertical": 25,
+            "width": "100%",
+          }
+        }
+      />
+      <Image
+        style={
+          Object {
+            "height": 45,
+            "width": 60,
+          }
+        }
+      />
+      <TileS />
+    </View>
   </View>
 </View>
 `;
@@ -2318,186 +2337,194 @@ exports[`32. daily universal register - huge 1`] = `
 <View
   style={
     Object {
-      "alignSelf": "center",
-      "maxWidth": "100%",
-      "paddingHorizontal": 10,
-      "width": 1366,
+      "backgroundColor": "#F0F0F0",
     }
   }
 >
   <View
     style={
       Object {
-        "alignItems": "center",
         "alignSelf": "center",
-        "backgroundColor": "#F0F0F0",
-        "flex": 1,
-        "width": "86%",
+        "maxWidth": "100%",
+        "paddingHorizontal": 10,
+        "width": 1366,
       }
     }
   >
-    <Image
-      style={
-        Object {
-          "height": 73,
-          "marginVertical": 10,
-          "width": 285,
-        }
-      }
-    />
-    <Text
-      style={
-        Object {
-          "color": "#850029",
-          "fontFamily": "TimesDigitalW04",
-          "fontSize": 16,
-          "marginBottom": 25,
-        }
-      }
-    >
-      Daily Universal Register
-    </Text>
     <View
       style={
         Object {
-          "flexDirection": "row",
-          "paddingHorizontal": "8%",
-          "width": "100%",
+          "alignItems": "center",
+          "alignSelf": "center",
+          "backgroundColor": "#F0F0F0",
+          "flex": 1,
+          "width": "86%",
         }
       }
     >
+      <Image
+        style={
+          Object {
+            "height": 73,
+            "marginVertical": 10,
+            "width": 285,
+          }
+        }
+      />
+      <Text
+        style={
+          Object {
+            "color": "#850029",
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 16,
+            "marginBottom": 25,
+          }
+        }
+      >
+        Daily Universal Register
+      </Text>
       <View
         style={
           Object {
-            "alignItems": "center",
-            "flex": 1,
-            "flexDirection": "column",
-            "paddingHorizontal": 25,
+            "flexDirection": "row",
+            "paddingHorizontal": "8%",
+            "width": "100%",
           }
         }
       >
         <View
           style={
             Object {
-              "borderBottomColor": "#DBDBDB",
-              "borderBottomWidth": 1,
-              "borderColor": "#DBDBDB",
-              "borderStyle": "solid",
-              "marginHorizontal": 10,
-              "marginVertical": 25,
-              "width": "100%",
+              "alignItems": "center",
+              "flex": 1,
+              "flexDirection": "column",
+              "paddingHorizontal": 25,
             }
           }
-        />
-        <View>
-          <TileS />
+        >
+          <View
+            style={
+              Object {
+                "borderBottomColor": "#DBDBDB",
+                "borderBottomWidth": 1,
+                "borderColor": "#DBDBDB",
+                "borderStyle": "solid",
+                "marginHorizontal": 10,
+                "marginVertical": 25,
+                "width": "100%",
+              }
+            }
+          />
+          <View>
+            <TileS />
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flex": 1,
+              "flexDirection": "column",
+              "paddingHorizontal": 25,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "borderBottomColor": "#DBDBDB",
+                "borderBottomWidth": 1,
+                "borderColor": "#DBDBDB",
+                "borderStyle": "solid",
+                "marginHorizontal": 10,
+                "marginVertical": 25,
+                "width": "100%",
+              }
+            }
+          />
+          <View>
+            <TileS />
+          </View>
         </View>
       </View>
       <View
         style={
           Object {
-            "alignItems": "center",
-            "flex": 1,
-            "flexDirection": "column",
-            "paddingHorizontal": 25,
+            "flexDirection": "row",
+            "paddingHorizontal": "8%",
+            "width": "100%",
           }
         }
       >
         <View
           style={
             Object {
-              "borderBottomColor": "#DBDBDB",
-              "borderBottomWidth": 1,
-              "borderColor": "#DBDBDB",
-              "borderStyle": "solid",
-              "marginHorizontal": 10,
-              "marginVertical": 25,
-              "width": "100%",
+              "alignItems": "center",
+              "flex": 1,
+              "flexDirection": "column",
+              "paddingHorizontal": 25,
             }
           }
-        />
-        <View>
-          <TileS />
+        >
+          <View
+            style={
+              Object {
+                "borderBottomColor": "#DBDBDB",
+                "borderBottomWidth": 1,
+                "borderColor": "#DBDBDB",
+                "borderStyle": "solid",
+                "marginHorizontal": 10,
+                "marginVertical": 25,
+                "width": "100%",
+              }
+            }
+          />
+          <Image
+            style={
+              Object {
+                "height": 45,
+                "width": 60,
+              }
+            }
+          />
+          <View>
+            <TileS />
+          </View>
         </View>
-      </View>
-    </View>
-    <View
-      style={
-        Object {
-          "flexDirection": "row",
-          "paddingHorizontal": "8%",
-          "width": "100%",
-        }
-      }
-    >
-      <View
-        style={
-          Object {
-            "alignItems": "center",
-            "flex": 1,
-            "flexDirection": "column",
-            "paddingHorizontal": 25,
-          }
-        }
-      >
         <View
           style={
             Object {
-              "borderBottomColor": "#DBDBDB",
-              "borderBottomWidth": 1,
-              "borderColor": "#DBDBDB",
-              "borderStyle": "solid",
-              "marginHorizontal": 10,
-              "marginVertical": 25,
-              "width": "100%",
+              "alignItems": "center",
+              "flex": 1,
+              "flexDirection": "column",
+              "paddingHorizontal": 25,
             }
           }
-        />
-        <Image
-          style={
-            Object {
-              "height": 45,
-              "width": 60,
+        >
+          <View
+            style={
+              Object {
+                "borderBottomColor": "#DBDBDB",
+                "borderBottomWidth": 1,
+                "borderColor": "#DBDBDB",
+                "borderStyle": "solid",
+                "marginHorizontal": 10,
+                "marginVertical": 25,
+                "width": "100%",
+              }
             }
-          }
-        />
-        <View>
-          <TileS />
-        </View>
-      </View>
-      <View
-        style={
-          Object {
-            "alignItems": "center",
-            "flex": 1,
-            "flexDirection": "column",
-            "paddingHorizontal": 25,
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "borderBottomColor": "#DBDBDB",
-              "borderBottomWidth": 1,
-              "borderColor": "#DBDBDB",
-              "borderStyle": "solid",
-              "marginHorizontal": 10,
-              "marginVertical": 25,
-              "width": "100%",
+          />
+          <Image
+            style={
+              Object {
+                "height": 45,
+                "width": 60,
+              }
             }
-          }
-        />
-        <Image
-          style={
-            Object {
-              "height": 45,
-              "width": 60,
-            }
-          }
-        />
-        <View>
-          <TileS />
+          />
+          <View>
+            <TileS />
+          </View>
         </View>
       </View>
     </View>

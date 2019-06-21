@@ -21,28 +21,30 @@ exports[`1. comment lead and cartoon - medium 1`] = `
 exports[`2. daily universal register - medium 1`] = `
 <div>
   <div>
-    <Image
-      aspectRatio={1}
-      uri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
-    />
     <div>
-      Daily Universal Register
+      <Image
+        aspectRatio={1}
+        uri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
+      />
+      <div>
+        Daily Universal Register
+      </div>
+      <TileS />
+      <div />
+      <TileS />
+      <div />
+      <Image
+        aspectRatio={1}
+        uri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
+      />
+      <TileS />
+      <div />
+      <Image
+        aspectRatio={1}
+        uri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
+      />
+      <TileS />
     </div>
-    <TileS />
-    <div />
-    <TileS />
-    <div />
-    <Image
-      aspectRatio={1}
-      uri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
-    />
-    <TileS />
-    <div />
-    <Image
-      aspectRatio={1}
-      uri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
-    />
-    <TileS />
   </div>
 </div>
 `;
@@ -460,28 +462,30 @@ exports[`16. comment lead and cartoon - wide 1`] = `
 exports[`17. daily universal register - wide 1`] = `
 <div>
   <div>
-    <Image
-      aspectRatio={1}
-      uri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
-    />
     <div>
-      Daily Universal Register
+      <Image
+        aspectRatio={1}
+        uri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
+      />
+      <div>
+        Daily Universal Register
+      </div>
+      <TileS />
+      <div />
+      <TileS />
+      <div />
+      <Image
+        aspectRatio={1}
+        uri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
+      />
+      <TileS />
+      <div />
+      <Image
+        aspectRatio={1}
+        uri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
+      />
+      <TileS />
     </div>
-    <TileS />
-    <div />
-    <TileS />
-    <div />
-    <Image
-      aspectRatio={1}
-      uri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
-    />
-    <TileS />
-    <div />
-    <Image
-      aspectRatio={1}
-      uri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
-    />
-    <TileS />
   </div>
 </div>
 `;
@@ -899,28 +903,30 @@ exports[`31. comment lead and cartoon - huge 1`] = `
 exports[`32. daily universal register - huge 1`] = `
 <div>
   <div>
-    <Image
-      aspectRatio={1}
-      uri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
-    />
     <div>
-      Daily Universal Register
+      <Image
+        aspectRatio={1}
+        uri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
+      />
+      <div>
+        Daily Universal Register
+      </div>
+      <TileS />
+      <div />
+      <TileS />
+      <div />
+      <Image
+        aspectRatio={1}
+        uri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
+      />
+      <TileS />
+      <div />
+      <Image
+        aspectRatio={1}
+        uri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
+      />
+      <TileS />
     </div>
-    <TileS />
-    <div />
-    <TileS />
-    <div />
-    <Image
-      aspectRatio={1}
-      uri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
-    />
-    <TileS />
-    <div />
-    <Image
-      aspectRatio={1}
-      uri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
-    />
-    <TileS />
   </div>
 </div>
 `;
