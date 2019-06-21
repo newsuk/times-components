@@ -22,7 +22,7 @@ const Link = ({
     responsiveLinkStyles !== null ? RespLink(responsiveLinkStyles) : "a";
 
   const style =
-    underlined && responsiveLinkStyles !== null
+    underlined && responsiveLinkStyles
       ? { textDecoration: "underline" }
       : { textDecoration: "none" };
 
