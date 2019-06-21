@@ -72,7 +72,7 @@ function appendToUrl(uriString, key, value) {
   }
 
   return `${uriString}?${key}=${value}`;
-};
+}
 
 const PUBLICATION_NAMES = {
   SUNDAYTIMES: "The Sunday Times",
@@ -119,7 +119,11 @@ function Head({ article, paidContentClassName, faviconUrl }) {
       ? renderTreeAsText({ children: descriptionMarkup })
       : null;
   const sectionname = getSectionName(article);
-  const leadassetUrl = appendToUrl(get(leadAsset, "crop169.url", null), "resize", 685);
+  const leadassetUrl = appendToUrl(
+    get(leadAsset, "crop169.url", null),
+    "resize",
+    685
+  );
   const caption = get(leadAsset, "caption", null);
   const title = headline || shortHeadline;
   const datePublished = new Date(publishedTime).toISOString().split("T")[0];
