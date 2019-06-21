@@ -13,6 +13,7 @@ const functionalColours = {
   contrast: "#FFFFFF",
   darkSupplement: "#272D34",
   greyLabel: "#CCC",
+  gutter: "#f0f0f0",
   keyline: "#DBDBDB",
   modalBackground: "#000000",
   overlayGradientEnd: "#00000000",

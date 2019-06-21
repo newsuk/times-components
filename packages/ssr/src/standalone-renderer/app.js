@@ -2,7 +2,7 @@
 
 const express = require("express");
 const shrinkRay = require("shrink-ray");
-const { breakpoints } = require("@times-components/styleguide");
+const { breakpoints, colours } = require("@times-components/styleguide");
 
 const ssr = require("../server");
 const makeUrls = require("../lib/make-urls");
@@ -27,7 +27,7 @@ const makeHtml = (
             ${styles}
             ${responsiveStyles}
             <style>
-            body { background: #F5EFEB; }
+            body { background: ${colours.functional.gutter}; }
             #nav {
               height: 50px;
               position: fixed;

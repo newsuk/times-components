@@ -7,11 +7,9 @@ import {
   SaveShareContainer
 } from "./styles/responsive";
 
-function StickySaveAndShareBar(props) {
-  const shouldBeSticky = Sticky.mediaQuery(
-    `(max-width: ${breakpoints.huge}px)`
-  );
+const shouldBeSticky = Sticky.mediaQuery(`(max-width: ${breakpoints.huge}px)`);
 
+function StickySaveAndShareBar(props) {
   return (
     <Sticky Component={OuterSaveShareContainer} shouldBeSticky={shouldBeSticky}>
       <SaveShareContainer>
