@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.6.5](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.6.4...@times-components/article-magazine-comment@3.6.5) (2019-06-21)
+
+
+### Bug Fixes
+
+* replat 6693 twitter metadata ([#2059](https://github.com/newsuk/times-components/issues/2059)) ([29f205f](https://github.com/newsuk/times-components/commit/29f205f))
+
+
+
+
+
 ## [3.6.4](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.6.3...@times-components/article-magazine-comment@3.6.4) (2019-06-21)
 
 
