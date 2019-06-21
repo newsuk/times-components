@@ -78,13 +78,7 @@ module.exports = async (component, options) => {
   const helmetContext = {};
   const client = makeClient(options.client);
   const analyticsStream = () => {};
-
-  let app = "";
-  try {
-    app = component(client, analyticsStream, options.data, helmetContext);
-  } catch (error) {
-    throw new Error(error);
-  }
+  const app = component(client, analyticsStream, options.data, helmetContext);
 
   const { headMarkup, markup, responsiveStyles, styles } = await renderData(
     app,

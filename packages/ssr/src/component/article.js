@@ -5,7 +5,6 @@ const { ApolloProvider } = require("react-apollo");
 const { HelmetProvider } = require("react-helmet-async");
 const { ArticleProvider } = require("@times-components/provider/rnw");
 const Article = require("@times-components/article/rnw").default;
-const { TakeoverBailout } = require("@times-components/article/rnw");
 const {
   ContextProviderWithDefaults,
   defaults
@@ -29,70 +28,54 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     faviconUrl
   } = data;
 
-  let articleElement = "";
-  let element = "";
-
-  try {
-    articleElement = (article, isLoading, error, refetch) =>
-      React.createElement(Article, {
-        adConfig: mapArticleToAdConfig(article),
-        analyticsStream,
-        article,
-        error,
-        isLoading,
-        onAuthorPress: () => {},
-        onRelatedArticlePress: () => {},
-        onTopicPress: () => {},
-        refetch,
-        spotAccountId,
-        paidContentClassName,
-        faviconUrl
-      });
-  } catch (error) {
-    throw new TakeoverBailout("Aborted react render: Takeover page");
-  }
-
-  try {
-    element = React.createElement(
-      StickyProvider,
-      {},
+  return React.createElement(
+    StickyProvider,
+    {},
+    React.createElement(
+      HelmetProvider,
+      { context: helmetContext },
       React.createElement(
-        HelmetProvider,
-        { context: helmetContext },
+        ApolloProvider,
+        { client },
         React.createElement(
-          ApolloProvider,
-          { client },
-          React.createElement(
-            ArticleProvider,
-            {
-              analyticsStream,
-              debounceTimeMs,
-              id: articleId
-            },
-            ({ article, isLoading, error, refetch }) =>
-              React.createElement(
-                ContextProviderWithDefaults,
-                {
-                  value: {
-                    getCookieValue,
-                    makeArticleUrl,
-                    makeTopicUrl,
-                    theme: {
-                      ...themeFactory(article.section, article.template),
-                      scale: scale || defaults.theme.scale
-                    },
-                    user: userState
-                  }
-                },
-                articleElement(article, isLoading, error, refetch)
-              )
-          )
+          ArticleProvider,
+          {
+            analyticsStream,
+            debounceTimeMs,
+            id: articleId
+          },
+          ({ article, isLoading, error, refetch }) =>
+            React.createElement(
+              ContextProviderWithDefaults,
+              {
+                value: {
+                  getCookieValue,
+                  makeArticleUrl,
+                  makeTopicUrl,
+                  theme: {
+                    ...themeFactory(article.section, article.template),
+                    scale: scale || defaults.theme.scale
+                  },
+                  user: userState
+                }
+              },
+              React.createElement(Article, {
+                adConfig: mapArticleToAdConfig(article),
+                analyticsStream,
+                article,
+                error,
+                isLoading,
+                onAuthorPress: () => {},
+                onRelatedArticlePress: () => {},
+                onTopicPress: () => {},
+                refetch,
+                spotAccountId,
+                paidContentClassName,
+                faviconUrl
+              })
+            )
         )
       )
-    );
-  } catch (error) {
-    throw new TakeoverBailout("Aborted react render: Takeover page");
-  }
-
-  return element;
+    )
+  );
 };
