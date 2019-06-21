@@ -5,6 +5,7 @@ const { ApolloProvider } = require("react-apollo");
 const { HelmetProvider } = require("react-helmet-async");
 const { ArticleProvider } = require("@times-components/provider/rnw");
 const Article = require("@times-components/article/rnw").default;
+const { TakeoverBailout } = require("@times-components/article/rnw");
 const {
   ContextProviderWithDefaults,
   defaults
@@ -28,7 +29,32 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     faviconUrl
   } = data;
 
-  return React.createElement(
+  try {
+    console.log('55555aaaaa')
+    const artElement =  React.createElement(Article, {
+      adConfig: mapArticleToAdConfig(article),
+      analyticsStream,
+      article,
+      error,
+      isLoading,
+      onAuthorPress: () => {},
+      onRelatedArticlePress: () => {},
+      onTopicPress: () => {},
+      refetch,
+      spotAccountId,
+      paidContentClassName,
+      faviconUrl
+    })
+  }
+  catch(error) {
+    console.log('55555bvbbb Error in creating art elemengt', error)
+    throw new TakeoverBailout("Aborted react render: Takeover page") 
+  }
+
+try
+{  
+  console.log('33333333')
+  element =  React.createElement(
     StickyProvider,
     {},
     React.createElement(
@@ -59,23 +85,18 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
                   user: userState
                 }
               },
-              React.createElement(Article, {
-                adConfig: mapArticleToAdConfig(article),
-                analyticsStream,
-                article,
-                error,
-                isLoading,
-                onAuthorPress: () => {},
-                onRelatedArticlePress: () => {},
-                onTopicPress: () => {},
-                refetch,
-                spotAccountId,
-                paidContentClassName,
-                faviconUrl
-              })
+              artElement
             )
         )
       )
     )
   );
+  }
+  catch(error) 
+  {  
+    console.log('4444444error is', error)
+    throw new TakeoverBailout("Aborted react render: Takeover page")
+  }
+
+  return element;
 };

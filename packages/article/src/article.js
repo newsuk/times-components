@@ -29,7 +29,7 @@ const Article = props => {
   const { leadAsset, template = "mainstandard" } = article || {};
   let { content } = article || {};
 
-  if (article.isTakeover || true) {
+  if (article.template === 'takeoverPage') {
     throw new TakeoverBailout("Aborted react render: Takeover page")
   }
 

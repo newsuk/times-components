@@ -13,6 +13,9 @@ const { ApolloLink } = require("apollo-link");
 const safeStringify = require("./safe-stringify");
 const errorLink = require("./graphql-error-link");
 const LoggingLink = require("./graphql-logging-link");
+const article = require("../component/article");
+
+const { TakeoverBailout } = article;
 
 const makeClient = options => {
   if (!options.uri) {
@@ -74,11 +77,21 @@ const renderData = (app, helmetContext = {}) =>
     };
   });
 
+
 module.exports = async (component, options) => {
   const helmetContext = {};
   const client = makeClient(options.client);
   const analyticsStream = () => {};
+
+  try{
+    console.log("11111");
   const app = component(client, analyticsStream, options.data, helmetContext);
+  }
+  catch(error) {
+    console.log("222222", error);
+    throw new Error(error) 
+  }
+
 
   const { headMarkup, markup, responsiveStyles, styles } = await renderData(
     app,
