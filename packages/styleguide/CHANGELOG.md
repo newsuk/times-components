@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.28.27](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.28.26...@times-components/styleguide@3.28.27) (2019-06-21)
+
+
+### Bug Fixes
+
+* support full width sticky save/share bar  ([#2057](https://github.com/newsuk/times-components/issues/2057)) ([ddb1b1b](https://github.com/newsuk/times-components/commit/ddb1b1b))
+
+
+
+
+
 ## [3.28.26](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.28.25...@times-components/styleguide@3.28.26) (2019-06-18)
 
 **Note:** Version bump only for package @times-components/styleguide

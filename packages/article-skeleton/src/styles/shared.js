@@ -1,9 +1,9 @@
-import { spacing } from "@times-components/styleguide";
+import { spacing, colours } from "@times-components/styleguide";
 import { maxWidth } from "../gutter";
 
 const globalStyle = {
   articleContainer: {
-    backgroundColor: "#f0f0f0"
+    backgroundColor: colours.functional.gutter
   },
   articleMainContentRow: {
     paddingLeft: spacing(2),

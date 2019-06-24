@@ -8,7 +8,8 @@ const styles = fontSize => ({
   container: {
     flexDirection: "row",
     paddingHorizontal: spacing(4),
-    paddingVertical: spacing(2)
+    paddingTop: spacing(2),
+    paddingBottom: spacing(3)
   },
   headline: {
     ...fontFactory({

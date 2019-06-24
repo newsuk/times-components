@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.9.11](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.9.10...@times-components/article-skeleton@1.9.11) (2019-06-21)
+
+
+### Bug Fixes
+
+* support full width sticky save/share bar  ([#2057](https://github.com/newsuk/times-components/issues/2057)) ([ddb1b1b](https://github.com/newsuk/times-components/commit/ddb1b1b))
+
+
+
+
+
+## [1.9.10](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.9.9...@times-components/article-skeleton@1.9.10) (2019-06-21)
+
+
+### Bug Fixes
+
+* replat 6693 twitter metadata ([#2059](https://github.com/newsuk/times-components/issues/2059)) ([29f205f](https://github.com/newsuk/times-components/commit/29f205f))
+
+
+
+
+
+## [1.9.9](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.9.8...@times-components/article-skeleton@1.9.9) (2019-06-21)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
 ## [1.9.8](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.9.7...@times-components/article-skeleton@1.9.8) (2019-06-20)
 
 **Note:** Version bump only for package @times-components/article-skeleton

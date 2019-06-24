@@ -101,13 +101,40 @@ exports[`full article with style 1`] = `
 
 .c4 {
   position: relative;
-  padding: 0 10px;
+  margin: 0 auto;
+  height: 60px;
+}
+
+.c4:before,
+.c4:after {
+  content: "";
+  height: 1px;
+  background-color: #DBDBDB;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.c4:before {
+  top: 0;
+}
+
+.c4:after {
+  bottom: 0;
 }
 
 .c2 {
+  margin: 30px auto;
   background-color: #FFFFFF;
-  height: 55px;
-  margin: 30px 0;
+}
+
+.c2.tc-sticky {
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.3);
+}
+
+.c2.tc-sticky .c3:before,
+.c2.tc-sticky .c3:after {
+  display: none;
 }
 
 @media (min-width:768px) {
@@ -239,11 +266,15 @@ exports[`full article with style 1`] = `
   }
 }
 
+@media (max-width:767px) {
+  .c4 {
+    padding: 0 10px;
+  }
+}
+
 @media (min-width:768px) {
   .c4 {
     width: 80.8%;
-    margin-left: auto !important;
-    margin-right: auto !important;
   }
 }
 
@@ -253,69 +284,13 @@ exports[`full article with style 1`] = `
   }
 }
 
-@media (max-width:1320px) {
-  .c2 {
-    left: 0;
-    top: 0;
-    z-index: 999;
-  }
-
-  .c2.sticky {
-    width: 100% !important;
-    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.3);
-  }
-
-  .c2:not(.sticky) .c3:before,
-  .c2:not(.sticky) .c3:after {
-    content: "";
-    height: 1px;
-    background-color: #DBDBDB;
-    position: absolute;
-    left: 10px;
-    right: 10px;
-  }
-
-  .c2:not(.sticky) .c3:before {
-    top: 0;
-  }
-
-  .c2:not(.sticky) .c3:after {
-    bottom: 0;
-  }
-}
-
-@media (min-width:1321px) {
-  .c2 {
-    position: static !important;
-  }
-
-  .c2 .c3:before,
-  .c2 .c3:after {
-    content: "";
-    height: 1px;
-    background-color: #DBDBDB;
-    position: absolute;
-    left: 10px;
-    right: 10px;
-  }
-
-  .c2 .c3:before {
-    top: 0;
-  }
-
-  .c2 .c3:after {
-    bottom: 0;
-  }
-}
-
 <style>
 .IS1 {
   margin-bottom: 0;
 }
 
 .IS2 {
-  z-index: 999;
-  top: 0;
+  display: none;
 }
 
 .IS3 {
@@ -366,15 +341,22 @@ exports[`full article with style 1`] = `
   <div
     className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
   >
-    <div
-      className="tc-sticky-container c2 IS2"
-    >
+    <div>
       <div
-        className="c3 c4"
+        className="c2"
       >
-        <SaveAndShareBar />
+        <div>
+          <div
+            className="c3 c4"
+          >
+            <SaveAndShareBar />
+          </div>
+        </div>
       </div>
     </div>
+    <div
+      className="IS2"
+    />
     <div
       className="c5 responsiveweb__BodyContainer-sc-1exejum-2 c5 css-view-1dbjc4n"
     >

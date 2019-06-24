@@ -1,47 +1,103 @@
-/* eslint-disable no-shadow,react/forbid-prop-types */
+/* eslint-disable no-shadow,react/forbid-prop-types,no-param-reassign */
 /* eslint-env browser */
 
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { createGlobalStyle } from "styled-components";
-import { getTop } from "./util";
-import { withStickyContext, StickyProvider } from "./context";
+import { isOutOfView } from "./util";
+import { withStickyContext, StickyProvider, defaultContext } from "./context";
 
-const GlobalStickyStyles = createGlobalStyle`
-  .tc-sticky-container {
-    position: sticky;
-  }
-`;
-
-const isOutOfView = (node, top) => getTop(node) <= top + 1;
+export const STICKY_CLASS_NAME = "tc-sticky";
 
 class UnwrappedSticky extends Component {
   constructor(props) {
     super(props);
 
     this.updateSticky = this.updateSticky.bind(this);
-    this.containerRef = React.createRef();
+    this.updateStickyOnResize = this.updateStickyOnResize.bind(this);
+    this.createContainerRef = this.createContainerRef.bind(this);
     this.isSticky = false;
   }
 
   componentDidMount() {
     window.addEventListener("scroll", this.updateSticky);
-    window.addEventListener("resize", this.updateSticky);
+    window.addEventListener("resize", this.updateStickyOnResize);
+
+    this.updateSticky();
+  }
+
+  componentDidUpdate() {
+    if (this.isSticky) {
+      this.setSticky(false);
+    }
+
+    this.updateSticky();
   }
 
   componentWillUnmount() {
     window.removeEventListener("scroll", this.updateSticky);
-    window.removeEventListener("resize", this.updateSticky);
+    window.removeEventListener("resize", this.updateStickyOnResize);
+
+    if (this.isSticky) {
+      this.setSticky(false);
+    }
   }
 
-  setSticky(container, shouldBeSticky) {
-    const { stickyClassName } = this.props;
+  setSticky(shouldBeSticky) {
+    const { placeholder, container, component, sizer } = this;
+
+    if (!placeholder || !container || !component || !sizer) {
+      return;
+    }
+
+    const { stickyContext, zIndex } = this.props;
     this.isSticky = shouldBeSticky;
 
     if (shouldBeSticky) {
-      container.classList.add(stickyClassName);
+      const styles = window.getComputedStyle(component);
+
+      placeholder.style.cssText += `
+        margin-top: ${styles.marginTop};
+        margin-bottom: ${styles.marginBottom};
+        height: ${styles.height};
+        display: block;
+      `;
+
+      container.style.cssText += `
+        top: ${stickyContext.top}px;
+        z-index: ${zIndex};
+        position: fixed;
+        left: 0;
+        width: 100%;
+        transform: translateY(-${styles.marginTop}); 
+      `;
+
+      component.classList.add(STICKY_CLASS_NAME);
+
+      document.body.appendChild(container);
+
+      this.updateSizer();
     } else {
-      container.classList.remove(stickyClassName);
+      component.classList.remove(STICKY_CLASS_NAME);
+      placeholder.parentNode.insertBefore(container, placeholder.nextSibling);
+      placeholder.style.display = "none";
+      container.setAttribute("style", "");
+      sizer.setAttribute("style", "");
+    }
+  }
+
+  createContainerRef(node) {
+    this.container = node;
+
+    if (node) {
+      this.component = node.firstElementChild;
+      this.sizer = this.component.firstElementChild;
+      this.placeholder = this.container.nextSibling;
+
+      this.updateSticky();
+    } else {
+      delete this.component;
+      delete this.sizer;
+      delete this.placeholder;
     }
   }
 
@@ -50,38 +106,51 @@ class UnwrappedSticky extends Component {
   }
 
   updateSticky() {
-    const { stickyContext } = this.props;
-    const container = this.containerRef.current;
+    const { stickyContext, shouldBeSticky } = this.props;
+    const { container, placeholder, isSticky } = this;
 
-    if (!container) {
+    if (!container || !placeholder) {
       return;
     }
 
-    const shouldBeSticky = isOutOfView(container, stickyContext.top);
+    const shouldCurrentlyBeSticky =
+      shouldBeSticky() &&
+      isOutOfView(isSticky ? placeholder : container, stickyContext.top);
 
-    if (this.doesStickyNeedUpdating(shouldBeSticky)) {
-      this.setSticky(container, shouldBeSticky);
+    if (this.doesStickyNeedUpdating(shouldCurrentlyBeSticky)) {
+      this.setSticky(shouldCurrentlyBeSticky);
+    }
+  }
+
+  updateStickyOnResize() {
+    this.updateSticky();
+    this.updateSizer();
+  }
+
+  updateSizer() {
+    const { sizer, placeholder, isSticky } = this;
+
+    if (isSticky) {
+      const rect = placeholder.getBoundingClientRect();
+
+      sizer.style.cssText += `
+        width: ${rect.width}px;
+        margin-left: ${rect.left}px;
+      `;
     }
   }
 
   render() {
-    const {
-      Component,
-      style,
-      children,
-      className,
-      stickyContext,
-      zIndex
-    } = this.props;
+    const { Component, style, children, className } = this.props;
     return (
-      <Component
-        className={`${className} tc-sticky-container`}
-        ref={this.containerRef}
-        style={{ zIndex, ...style, top: stickyContext.top }}
-      >
-        <GlobalStickyStyles />
-        {children}
-      </Component>
+      <>
+        <div data-tc-sticky-container ref={this.createContainerRef}>
+          <Component className={className} style={style}>
+            <div data-tc-sticky-sizer>{children}</div>
+          </Component>
+        </div>
+        <div style={{ display: "none" }} data-tc-sticky-placeholder />
+      </>
     );
   }
 }
@@ -89,28 +158,38 @@ class UnwrappedSticky extends Component {
 UnwrappedSticky.displayName = "Sticky";
 
 UnwrappedSticky.propTypes = {
-  Component: PropTypes.node,
+  Component: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),
   style: PropTypes.object,
   className: PropTypes.string,
-  children: PropTypes.element,
-  stickyClassName: PropTypes.string,
+  children: PropTypes.node,
   stickyContext: PropTypes.shape({
     top: PropTypes.number.isRequired
   }),
-  zIndex: PropTypes.number
+  zIndex: PropTypes.string,
+  shouldBeSticky: PropTypes.func
 };
 
 UnwrappedSticky.defaultProps = {
   Component: "div",
   className: "",
   children: null,
+  stickyContext: { ...defaultContext },
   style: {},
-  stickyClassName: "sticky",
-  stickyContext: { top: 0 },
-  zIndex: 999
+  zIndex: "999",
+  shouldBeSticky: () => true
 };
 
 const Sticky = withStickyContext(UnwrappedSticky);
+
+const matchMedia =
+  (typeof window !== "undefined" && window.matchMedia) ||
+  (() => ({ matches: true }));
+
+Sticky.mediaQuery = query => {
+  const mql = matchMedia(query);
+
+  return () => mql.matches;
+};
 
 export { UnwrappedSticky, StickyProvider };
 

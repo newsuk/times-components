@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.6.18](https://github.com/newsuk/times-components/compare/@times-components/ad@2.6.17...@times-components/ad@2.6.18) (2019-06-21)
+
+
+### Bug Fixes
+
+* ad native ([#2065](https://github.com/newsuk/times-components/issues/2065)) ([37ebd76](https://github.com/newsuk/times-components/commit/37ebd76))
+
+
+
+
+
 ## [2.6.17](https://github.com/newsuk/times-components/compare/@times-components/ad@2.6.16...@times-components/ad@2.6.17) (2019-06-20)
 
 

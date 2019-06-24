@@ -12,6 +12,7 @@ mockNativeModules();
 
 jest.mock("@times-components/card", () => "Card");
 jest.mock("@times-components/link", () => "Link");
+jest.mock("@times-components/article-label", () => "ArticleLabel");
 
 addSerializers(
   expect,
