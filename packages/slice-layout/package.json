@@ -1,6 +1,6 @@
 {
   "name": "@times-components/slice-layout",
-  "version": "0.29.12",
+  "version": "0.29.13",
   "description": "Slice layout",
   "main": "dist/slice-layout",
   "scripts": {
@@ -38,10 +38,10 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.8.12",
-    "@times-components/jest-configurator": "2.5.12",
-    "@times-components/jest-serializer": "3.2.8",
-    "@times-components/storybook": "4.0.14",
-    "@times-components/test-utils": "2.2.43",
+    "@times-components/jest-configurator": "2.5.13",
+    "@times-components/jest-serializer": "3.2.9",
+    "@times-components/storybook": "4.0.15",
+    "@times-components/test-utils": "2.2.44",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.5",
@@ -67,7 +67,7 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/styleguide": "3.28.27",
+    "@times-components/styleguide": "3.28.28",
     "prop-types": "15.7.2",
     "styled-components": "4.2.0"
   },
