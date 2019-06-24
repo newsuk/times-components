@@ -9,7 +9,7 @@ import styles from "../styles";
 const Separator = () => <View style={styles.separator} />;
 
 const hasBylineData = bylines =>
-  Array.isArray(bylines) && bylines[0].byline && bylines[0].byline.length > 0;
+  bylines.length > 0 && bylines[0].byline && bylines[0].byline.length > 0;
 
 const ArticleMeta = ({
   bylines,

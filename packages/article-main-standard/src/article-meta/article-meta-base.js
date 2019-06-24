@@ -17,7 +17,8 @@ const ArticleMetaRow = (
   </RowWrapper>
 );
 
-const hasBylineData = bylines => Array.isArray(bylines) && bylines.length > 0;
+const hasBylineData = bylines =>
+  bylines.length > 0 && bylines[0].byline && bylines[0].byline.length > 0;
 
 const ArticleMetaBase = ({
   bylines,
