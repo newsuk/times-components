@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.4.21](https://github.com/newsuk/times-components/compare/@times-components/link@3.4.20...@times-components/link@3.4.21) (2019-06-24)
+
+
+### Bug Fixes
+
+* Backwards dropcaps on the web ([#2061](https://github.com/newsuk/times-components/issues/2061)) ([05061de](https://github.com/newsuk/times-components/commit/05061de))
+
+
+
+
+
 ## [3.4.20](https://github.com/newsuk/times-components/compare/@times-components/link@3.4.19...@times-components/link@3.4.20) (2019-06-21)
 
 **Note:** Version bump only for package @times-components/link

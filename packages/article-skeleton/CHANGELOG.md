@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.9.12](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.9.11...@times-components/article-skeleton@1.9.12) (2019-06-24)
+
+
+### Bug Fixes
+
+* Backwards dropcaps on the web ([#2061](https://github.com/newsuk/times-components/issues/2061)) ([05061de](https://github.com/newsuk/times-components/commit/05061de))
+
+
+
+
+
 ## [1.9.11](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.9.10...@times-components/article-skeleton@1.9.11) (2019-06-21)
 
 
