@@ -8,7 +8,7 @@ export default (children, template, isDropcapDisabled) => {
   );
   if (newContent.length > 0 && newContent[0].name === "dropCap") {
     // remove the wrapping paragraph
-    newContent[0].children = newContent[0].children[0].children;
+    newContent[0].children = newContent[0].children[0].children.slice(0, 1);
     newContent[1].children = [newContent[0], ...newContent[1].children];
     return newContent.slice(1);
   }

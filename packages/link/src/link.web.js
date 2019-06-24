@@ -10,12 +10,19 @@ const RespLink = responsiveLinkStyles =>
     }
   `;
 
-const Link = ({ children, onPress, responsiveLinkStyles, target, url }) => {
+const Link = ({
+  children,
+  onPress,
+  responsiveLinkStyles,
+  target,
+  url,
+  underlined
+}) => {
   const Wrapper =
     responsiveLinkStyles !== null ? RespLink(responsiveLinkStyles) : "a";
 
   const style =
-    responsiveLinkStyles !== null
+    underlined && responsiveLinkStyles
       ? { textDecoration: "underline" }
       : { textDecoration: "none" };
 
@@ -42,13 +49,15 @@ Link.propTypes = {
     medium: PropTypes.string
   }),
   target: PropTypes.string,
-  url: PropTypes.string.isRequired
+  url: PropTypes.string.isRequired,
+  underlined: PropTypes.bool
 };
 
 Link.defaultProps = {
   onPress: () => {},
   responsiveLinkStyles: null,
-  target: null
+  target: null,
+  underlined: true
 };
 
 export default Link;
