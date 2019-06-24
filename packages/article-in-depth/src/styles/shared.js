@@ -49,7 +49,7 @@ const sharedStyles = {
     marginBottom: spacing(2)
   },
   leadAsset: {
-    marginBottom: spacing(4)
+    marginBottom: spacing(0)
   },
   leadAssetTablet: {
     alignSelf: "center",

@@ -572,7 +572,7 @@ exports[`full article with style 1`] = `
           </span>
         </div>
         <div
-          className="c7 responsiveweb__MetaTextElement-jtjuw7-0 c7 css-text-76zvg2 r-borderTopColor-1ozwgwe r-borderTopWidth-5kkj8d r-paddingBottom-1inuy60 r-paddingTop-glunga S2"
+          className="c7 responsiveweb__MetaTextElement-jtjuw7-0 c7 css-text-76zvg2"
         >
           <span
             className="css-text-76zvg2 css-textHasAncestor-16my406 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S6"

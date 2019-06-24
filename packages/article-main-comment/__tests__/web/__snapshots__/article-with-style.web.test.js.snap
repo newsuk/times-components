@@ -405,7 +405,7 @@ exports[`full article with style 1`] = `
 
 .S6 {
   line-height: 15px;
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 .S7 {
@@ -549,7 +549,7 @@ exports[`full article with style 1`] = `
           className="c8 responsiveweb__Meta-tglil3-6 c8 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj"
         >
           <div
-            className="c10 responsiveweb__DatePublicationContainer-tglil3-1 c10 css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginTop-19h5ruw S6"
+            className="c10 responsiveweb__DatePublicationContainer-tglil3-1 c10 css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginTop-1g94qm0 S6"
           >
             <DatePublication />
           </div>

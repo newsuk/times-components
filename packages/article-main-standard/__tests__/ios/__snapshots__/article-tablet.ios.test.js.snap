@@ -107,16 +107,7 @@ exports[`1. article main standard - tablet 1`] = `
           <ArticleBylineWithLinks />
         </Text>
       </View>
-      <View
-        style={
-          Object {
-            "borderTopColor": "#DBDBDB",
-            "borderTopWidth": 1,
-            "paddingBottom": 4,
-            "paddingTop": 9,
-          }
-        }
-      >
+      <View>
         <Text
           style={
             Object {

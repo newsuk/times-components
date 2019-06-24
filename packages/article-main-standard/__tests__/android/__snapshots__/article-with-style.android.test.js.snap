@@ -107,16 +107,7 @@ exports[`full article with style on mobile 1`] = `
           <ArticleBylineWithLinks />
         </Text>
       </View>
-      <View
-        style={
-          Object {
-            "borderTopColor": "#DBDBDB",
-            "borderTopWidth": 1,
-            "paddingBottom": 6,
-            "paddingTop": 7,
-          }
-        }
-      >
+      <View>
         <Text
           style={
             Object {
@@ -242,16 +233,7 @@ exports[`full article with style on tablet 1`] = `
           <ArticleBylineWithLinks />
         </Text>
       </View>
-      <View
-        style={
-          Object {
-            "borderTopColor": "#DBDBDB",
-            "borderTopWidth": 1,
-            "paddingBottom": 6,
-            "paddingTop": 7,
-          }
-        }
-      >
+      <View>
         <Text
           style={
             Object {

@@ -35,7 +35,7 @@ const sharedStyles = {
       fontSize: "cardMeta"
     }),
     color: colours.functional.secondary,
-    marginTop: spacing(3)
+    marginTop: spacing(1)
   },
   datePublicationTablet: {
     marginTop: "auto"
