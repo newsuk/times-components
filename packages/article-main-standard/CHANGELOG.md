@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.7.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.6.6...@times-components/article-main-standard@3.7.0) (2019-06-24)
+
+
+### Features
+
+* article design review amends REPLAT-6102  ([#2063](https://github.com/newsuk/times-components/issues/2063)) ([cd4a050](https://github.com/newsuk/times-components/commit/cd4a050))
+
+
+
+
+
 ## [3.6.6](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.6.5...@times-components/article-main-standard@3.6.6) (2019-06-21)
 
 

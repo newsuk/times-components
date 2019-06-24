@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article",
-  "version": "7.2.45",
+  "version": "7.2.46",
   "description": "The article",
   "main": "dist/article",
   "dev": "src/article",
@@ -61,11 +61,11 @@
   },
   "dependencies": {
     "@times-components/ad": "2.6.18",
-    "@times-components/article-in-depth": "3.5.6",
+    "@times-components/article-in-depth": "3.6.0",
     "@times-components/article-magazine-comment": "3.6.6",
     "@times-components/article-magazine-standard": "3.6.6",
-    "@times-components/article-main-comment": "2.5.6",
-    "@times-components/article-main-standard": "3.6.6",
+    "@times-components/article-main-comment": "2.6.0",
+    "@times-components/article-main-standard": "3.7.0",
     "@times-components/context": "1.0.21",
     "@times-components/message-bar": "0.2.15",
     "@times-components/provider": "1.17.12",
