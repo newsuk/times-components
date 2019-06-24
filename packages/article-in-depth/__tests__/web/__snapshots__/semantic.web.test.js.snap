@@ -98,7 +98,7 @@ exports[`1. a full article 1`] = `
       height="auto"
       version="1.1"
       viewBox="145 50 108 120"
-      width="25%"
+      width="100%"
     >
       <g>
         <path
@@ -219,7 +219,7 @@ exports[`1. a full article 1`] = `
     height="auto"
     version="1.1"
     viewBox="145 50 108 120"
-    width="25%"
+    width="100%"
   >
     <g>
       <path
