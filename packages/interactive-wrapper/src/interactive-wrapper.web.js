@@ -44,30 +44,15 @@ function ensureImport(src) {
   });
 }
 
-function fetchWebComponentScripts() {
-  const promises = [];
-
-  if (!HTML_IMPORTS_SUPPORTED) {
-    promises.push(
-      ensureScript(
-        "https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.24/HTMLImports.min.js"
-      )
-    );
+function polyfillWCIfNecessary() {
+  if (!HTML_IMPORTS_SUPPORTED || !REGISTER_ELEMENT_SUPPORTED) {
+    return Promise.all([
+      ensureScript("https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.24/webcomponents-lite.min.js"),
+      new Promise(resolve => {
+        window.addEventListener("WebComponentsReady", resolve);
+      })
+    ])
   }
-
-  if (!REGISTER_ELEMENT_SUPPORTED) {
-    promises.push(
-      ensureScript(
-        "https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.24/CustomElements.min.js"
-      )
-    );
-  }
-
-  if (promises.length) {
-    return Promise.all(promises);
-  }
-
-  return Promise.resolve();
 }
 
 export default class InteractiveWrapper extends Component {
@@ -80,7 +65,7 @@ export default class InteractiveWrapper extends Component {
   }
 
   async componentDidMount() {
-    this.whenReady = fetchWebComponentScripts();
+    this.whenReady = polyfillWCIfNecessary();
 
     await this.insertComponent();
   }
