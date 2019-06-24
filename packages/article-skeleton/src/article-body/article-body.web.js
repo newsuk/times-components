@@ -111,11 +111,11 @@ const renderers = ({ observed, registerNode, paidContentClassName }) => ({
     };
   },
   link(key, attributes, children) {
-    const { href, target } = attributes;
+    const { href, target, dropCap } = attributes;
 
     return {
       element: (
-        <ArticleLink key={key} target={target} url={href}>
+        <ArticleLink dropCap={dropCap} key={key} target={target} url={href}>
           {children}
         </ArticleLink>
       )

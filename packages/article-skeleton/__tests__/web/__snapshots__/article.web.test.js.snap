@@ -122,6 +122,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
       </div>
       <Link
         target="_blank"
+        underlined={true}
         url="https://link.io"
       >
         Some Link

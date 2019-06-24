@@ -100,6 +100,7 @@ exports[`Article with user state Render full article when user has access to ful
       </div>
       <Link
         target="_blank"
+        underlined={true}
         url="https://link.io"
       >
         Some Link
@@ -426,6 +427,7 @@ exports[`Article with user state Render teaser article when user does not have a
       </div>
       <Link
         target="_blank"
+        underlined={true}
         url="https://link.io"
       >
         Some Link
