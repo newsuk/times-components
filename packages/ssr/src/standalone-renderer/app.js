@@ -1,7 +1,6 @@
 /* eslint-disable no-console */
 
 const express = require("express");
-const shrinkRay = require("shrink-ray");
 const { breakpoints, colours } = require("@times-components/styleguide");
 
 const ssr = require("../server");
@@ -11,7 +10,6 @@ const logger = require("../lib/simple-logger");
 const port = 3000;
 const server = express();
 
-server.use(shrinkRay());
 server.use(express.static("dist"));
 
 const makeHtml = (
