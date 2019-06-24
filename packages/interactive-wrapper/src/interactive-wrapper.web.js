@@ -2,46 +2,132 @@
 /* eslint-disable react/forbid-prop-types */
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import "./webcomponent-lite";
+import { Placeholder } from "@times-components/image";
+
+const HTML_IMPORTS_SUPPORTED = "import" in document.createElement("link");
+const REGISTER_ELEMENT_SUPPORTED = !!document.registerElement;
+
+function ensureElement(selector, createElement) {
+  let element = document.body.querySelector(selector);
+
+  if (element) {
+    return Promise.resolve();
+  }
+
+  element = createElement();
+
+  return new Promise((resolve, reject) => {
+    element.onload = resolve;
+    element.onerror = reject;
+
+    document.body.appendChild(element);
+  });
+}
+
+function ensureScript(src) {
+  return ensureElement(`script[src="${src}"]`, () => {
+    const script = document.createElement("script");
+    script.setAttribute("async", "async");
+    script.setAttribute("src", src);
+
+    return script;
+  });
+}
+
+function ensureImport(src) {
+  return ensureElement(`link[href="${src}"]`, () => {
+    const link = document.createElement("link");
+    link.setAttribute("href", src);
+    link.setAttribute("rel", "import");
+
+    return link;
+  });
+}
+
+function fetchWebComponentScripts() {
+  const promises = [];
+
+  if (!HTML_IMPORTS_SUPPORTED) {
+    promises.push(
+      ensureScript(
+        "https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.24/HTMLImports.min.js"
+      )
+    );
+  }
+
+  if (!REGISTER_ELEMENT_SUPPORTED) {
+    promises.push(
+      ensureScript(
+        "https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.24/CustomElements.min.js"
+      )
+    );
+  }
+
+  if (promises.length) {
+    return Promise.all(promises);
+  }
+
+  return Promise.resolve();
+}
 
 export default class InteractiveWrapper extends Component {
   constructor(props) {
     super(props);
-    this.placeholder = React.createRef(null);
 
-    this.state = {
-      webComponentsPolyfillExists: false
-    };
+    this.placeholder = React.createRef(null);
+    this.component = React.createRef(null);
+    this.whenReady = null;
   }
 
-  componentDidMount() {
-    window.addEventListener("WebComponentsReady", () => {
-      this.setState({ webComponentsPolyfillExists: true });
+  async componentDidMount() {
+    this.whenReady = fetchWebComponentScripts();
 
-      const { attributes, element, source } = this.props;
-      const placeholder = this.placeholder.current;
-      const { parentNode } = placeholder;
+    await this.insertComponent();
+  }
 
-      const newElement = document.createElement(element);
-      const link = document.createElement("link");
+  async componentDidUpdate() {
+    await this.insertComponent();
+  }
 
-      link.setAttribute("href", source);
-      link.setAttribute("rel", "import");
+  async insertComponent() {
+    await this.whenReady;
 
-      Object.keys(attributes).forEach(key =>
-        newElement.setAttribute(key, attributes[key])
-      );
+    const { attributes, element, source } = this.props;
+    const placeholder = this.placeholder.current;
+    const component = this.component.current;
 
-      parentNode.replaceChild(newElement, placeholder);
-      parentNode.insertBefore(link, newElement);
+    component.innerHTML = "";
+    placeholder.style.cssText += "display: block !important";
 
-      delete this.placeholder.current;
-    });
+    const newElement = document.createElement(element);
+
+    Object.keys(attributes).forEach(key =>
+      newElement.setAttribute(key, attributes[key])
+    );
+
+    component.appendChild(newElement);
+
+    // Do not remove this. This seems to notify polymer to correctly
+    // render the web component correctly in more circumstances
+    // specifically, its required to correctly re-render after a react re-render
+    newElement.outerHTML += "";
+
+    await ensureImport(source);
+    placeholder.style.cssText += "display: none !important";
   }
 
   render() {
-    const { webComponentsPolyfillExists } = this.state;
-    return webComponentsPolyfillExists && <div ref={this.placeholder} />;
+    return (
+      <>
+        <div
+          ref={this.placeholder}
+          style={{ height: 150, position: "relative" }}
+        >
+          <Placeholder borderRadius={false} />
+        </div>
+        <div ref={this.component} />
+      </>
+    );
   }
 }
 
