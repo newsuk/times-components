@@ -163,8 +163,8 @@ export default () => {
     {
       name: "tile s - no byline",
       test: () => {
-        delete dailyRegisterItem.byline
-        testTile(TileS, dailyRegisterItem)
+        delete dailyRegisterItem.byline;
+        testTile(TileS, dailyRegisterItem);
       }
     },
     {
