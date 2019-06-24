@@ -276,7 +276,7 @@ exports[`default styles 1`] = `
     className="css-view-1dbjc4n r-alignItems-1awozwy r-borderBottomColor-91l5k4 r-borderBottomWidth-qklmqi r-borderStyle-1phboty r-borderTopColor-1ozwgwe r-borderTopWidth-5kkj8d r-display-6koalj r-justifyContent-1777fci r-padding-1oqcu8e S2"
   >
     <h3
-      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-h1js2l r-lineHeight-1kt6imw r-paddingTop-glunga S1"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-h1js2l r-lineHeight-1kt6imw r-paddingTop-glunga S1"
     >
       Related articles
     </h3>
@@ -305,22 +305,22 @@ exports[`default styles 1`] = `
                     className="css-view-1dbjc4n r-marginBottom-p1pxzi S4"
                   >
                     <div
-                      className="css-text-76zvg2 r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-19r33im r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv S3 IS1"
+                      className="css-text-901oao r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-19r33im r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv S3 IS1"
                     >
                       TEST LABEL
                     </div>
                   </div>
                   <div
-                    className="css-text-76zvg2"
+                    className="css-text-901oao"
                   >
                     <span
-                      className="opinionBylineClass opinionBylineClass css-text-76zvg2 css-textHasAncestor-16my406 r-color-1dunems r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw S5"
+                      className="opinionBylineClass opinionBylineClass css-text-901oao css-textHasAncestor-16my406 r-color-1dunems r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw S5"
                     >
                       Sathnam Sanghera
                     </span>
                   </div>
                   <h3
-                    className="opinionHeadlineClass css-reset-4rbku5 opinionHeadlineClass css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw r-marginBottom-d0pm55 r-marginTop-1mnahxq S6"
+                    className="opinionHeadlineClass css-reset-4rbku5 opinionHeadlineClass css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw r-marginBottom-d0pm55 r-marginTop-1mnahxq S6"
                   >
                     Test Short Headline
                   </h3>
@@ -328,10 +328,10 @@ exports[`default styles 1`] = `
                     className="css-view-1dbjc4n"
                   >
                     <div
-                      className="summaryHidden opinionSummary125Class summaryHidden opinionSummary125Class css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S7"
+                      className="summaryHidden opinionSummary125Class summaryHidden opinionSummary125Class css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S7"
                     >
                       <span
-                        className="css-text-76zvg2 css-textHasAncestor-16my406"
+                        className="css-text-901oao css-textHasAncestor-16my406"
                       >
                         
                         Summary 125
@@ -339,10 +339,10 @@ exports[`default styles 1`] = `
                       </span>
                     </div>
                     <div
-                      className="summaryHidden opinionSummary160Class summaryHidden opinionSummary160Class css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S7"
+                      className="summaryHidden opinionSummary160Class summaryHidden opinionSummary160Class css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S7"
                     >
                       <span
-                        className="css-text-76zvg2 css-textHasAncestor-16my406"
+                        className="css-text-901oao css-textHasAncestor-16my406"
                       >
                         
                         Summary 160
@@ -351,7 +351,7 @@ exports[`default styles 1`] = `
                     </div>
                   </div>
                   <div
-                    className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginBottom-d0pm55 S8"
+                    className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginBottom-d0pm55 S8"
                   >
                     <time>
                       March 13 2015, 6.54pm

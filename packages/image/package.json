@@ -53,11 +53,11 @@
     "jest": "24.8.0",
     "jest-styled-components": "6.3.1",
     "prettier": "1.14.3",
-    "react": "16.6.3",
+    "react": "16.8.6",
     "react-art": "16.6.3",
-    "react-dom": "16.6.3",
-    "react-native": "0.58.6",
-    "react-native-web": "0.11.2",
+    "react-dom": "16.8.6",
+    "react-native": "0.59.9",
+    "react-native-web": "0.11.4",
     "react-test-renderer": "16.6.3",
     "stylelint": "9.4.0",
     "webpack": "4.30.0",
@@ -79,7 +79,7 @@
     "react": ">=16.5",
     "react-dom": ">=16.5",
     "react-native": ">=0.55",
-    "react-native-web": "0.11.2"
+    "react-native-web": "0.11.4"
   },
   "publishConfig": {
     "access": "public"

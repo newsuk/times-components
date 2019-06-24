@@ -94,12 +94,12 @@ exports[`different colours 1`] = `
     className="css-view-1dbjc4n r-marginBottom-ku1wi2 r-marginTop-1mnahxq S5"
   >
     <div
-      className="css-text-76zvg2 r-marginTop-1mnahxq IS1 S1"
+      className="css-text-901oao r-marginTop-1mnahxq IS1 S1"
     >
       “
     </div>
     <div
-      className="c0 responsiveweb__PullQuoteContent-sc-16yokeu-0 c0 css-text-76zvg2"
+      className="c0 responsiveweb__PullQuoteContent-sc-16yokeu-0 c0 css-text-901oao"
     >
       <cite>
         Some content
@@ -109,12 +109,12 @@ exports[`different colours 1`] = `
       className="css-view-1dbjc4n r-alignItems-1awozwy r-display-6koalj r-flexDirection-18u37iz r-height-z80fyv r-marginTop-156q2ks S4"
     >
       <div
-        className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-1akm30i r-marginBottom-p1pxzi S2"
+        className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-1akm30i r-marginBottom-p1pxzi S2"
       >
         A caption
       </div>
       <div
-        className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-1akm30i r-marginBottom-p1pxzi S2"
+        className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-1akm30i r-marginBottom-p1pxzi S2"
       >
         
       </div>

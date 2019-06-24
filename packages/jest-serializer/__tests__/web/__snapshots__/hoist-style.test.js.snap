@@ -8,7 +8,7 @@ exports[`hoist-style should hoist a style and leave existing props untouched 1`]
 </style>
 
 <div
-  className="css-text-76zvg2 IS1"
+  className="css-text-901oao IS1"
   dir="auto"
   foo="bar"
 >
@@ -24,7 +24,7 @@ exports[`hoist-style should hoist a style as well as an rnw class 1`] = `
 </style>
 
 <div
-  className="css-text-76zvg2 IS1"
+  className="css-text-901oao IS1"
   dir="auto"
   foo="bar"
 >

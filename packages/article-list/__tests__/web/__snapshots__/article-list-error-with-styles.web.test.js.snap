@@ -151,12 +151,12 @@ exports[`1. page error 1`] = `
     className="c3 responsiveweb__PageErrorContentContainer-sc-143eup1-7 c3 css-view-1dbjc4n"
   >
     <div
-      className="css-text-76zvg2 r-alignSelf-1kihuf0 r-color-1yqk5fa r-fontFamily-iirzy8 r-fontSize-yy2aun r-lineHeight-eaezby r-marginBottom-15d164r r-marginTop-1x0uki6 r-textAlign-q4m81j S2"
+      className="css-text-901oao r-alignSelf-1kihuf0 r-color-1yqk5fa r-fontFamily-iirzy8 r-fontSize-yy2aun r-lineHeight-eaezby r-marginBottom-15d164r r-marginTop-1x0uki6 r-textAlign-q4m81j S2"
     >
       Something's gone wrong
     </div>
     <div
-      className="css-text-76zvg2 r-color-1khp51w r-fontFamily-lmhck6 r-fontSize-1i10wst r-lineHeight-1kt6imw r-textAlign-q4m81j S3"
+      className="css-text-901oao r-color-1khp51w r-fontFamily-lmhck6 r-fontSize-1i10wst r-lineHeight-1kt6imw r-textAlign-q4m81j S3"
     >
       We can't load the page you have requested. Please check your network connection and retry to continue
     </div>
@@ -355,7 +355,7 @@ exports[`2. article list 1`] = `
               className="c2 resultsweb__MessageContainer-sc-1eowhty-0 c2 css-view-1dbjc4n"
             >
               <div
-                className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-a023e6 r-lineHeight-fxxt2n r-paddingTop-1h8ys4a S1"
+                className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-a023e6 r-lineHeight-fxxt2n r-paddingTop-1h8ys4a S1"
               >
                 Showing 0 - 0 of 0 results
               </div>

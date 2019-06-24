@@ -2,7 +2,7 @@
 
 exports[`1. inner component with page 1`] = `
 <div
-  className="css-text-76zvg2"
+  className="css-text-901oao"
 >
   {
   "page": 1
@@ -12,7 +12,7 @@ exports[`1. inner component with page 1`] = `
 
 exports[`does not update the page state when the history changes without a page 1`] = `
 <div
-  className="css-text-76zvg2"
+  className="css-text-901oao"
 >
   2
 </div>
@@ -20,7 +20,7 @@ exports[`does not update the page state when the history changes without a page 
 
 exports[`updates the page state when the history changes 1`] = `
 <div
-  className="css-text-76zvg2"
+  className="css-text-901oao"
 >
   4
 </div>

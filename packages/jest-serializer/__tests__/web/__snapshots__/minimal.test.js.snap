@@ -2,7 +2,7 @@
 
 exports[`The minimal serializer should for web not remove className 1`] = `
 <div
-  className="css-text-76zvg2 r-color-howw7u r-padding-ub6tad"
+  className="css-text-901oao r-color-howw7u r-padding-ub6tad"
 />
 `;
 
@@ -11,7 +11,7 @@ exports[`The minimal serializer should for web remove empty objects as props 1`]
   className="css-view-1dbjc4n"
 >
   <div
-    className="css-text-76zvg2"
+    className="css-text-901oao"
   />
 </div>
 `;
@@ -21,7 +21,7 @@ exports[`The minimal serializer should for web remove functions as props 1`] = `
   className="css-view-1dbjc4n"
 >
   <div
-    className="css-text-76zvg2"
+    className="css-text-901oao"
   />
 </div>
 `;
@@ -34,7 +34,7 @@ exports[`The minimal serializer should for web remove undefined props 1`] = `
     False={false}
     Null={null}
     Zero={0}
-    className="css-text-76zvg2"
+    className="css-text-901oao"
   />
 </div>
 `;

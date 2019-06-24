@@ -5,7 +5,7 @@ exports[`1. lead two no pic and two - small 1`] = `
   className="css-view-1dbjc4n"
 >
   <div
-    className="css-text-76zvg2"
+    className="css-text-901oao"
   >
     lead-1
   </div>
@@ -28,7 +28,7 @@ exports[`1. lead two no pic and two - small 1`] = `
     }
   />
   <div
-    className="css-text-76zvg2"
+    className="css-text-901oao"
   >
     lead-2
   </div>
@@ -51,7 +51,7 @@ exports[`1. lead two no pic and two - small 1`] = `
     }
   />
   <div
-    className="css-text-76zvg2"
+    className="css-text-901oao"
   >
     support-1
   </div>
@@ -74,7 +74,7 @@ exports[`1. lead two no pic and two - small 1`] = `
     }
   />
   <div
-    className="css-text-76zvg2"
+    className="css-text-901oao"
   >
     support-2
   </div>
@@ -109,7 +109,7 @@ exports[`2. lead two no pic and two - medium 1`] = `
     }
   >
     <div
-      className="css-text-76zvg2"
+      className="css-text-901oao"
     >
       lead-1
     </div>
@@ -132,7 +132,7 @@ exports[`2. lead two no pic and two - medium 1`] = `
       }
     />
     <div
-      className="css-text-76zvg2"
+      className="css-text-901oao"
     >
       lead-2
     </div>
@@ -164,7 +164,7 @@ exports[`2. lead two no pic and two - medium 1`] = `
     }
   >
     <div
-      className="css-text-76zvg2"
+      className="css-text-901oao"
     >
       support-1
     </div>
@@ -187,7 +187,7 @@ exports[`2. lead two no pic and two - medium 1`] = `
       }
     />
     <div
-      className="css-text-76zvg2"
+      className="css-text-901oao"
     >
       support-2
     </div>
@@ -223,7 +223,7 @@ exports[`3. lead two no pic and two - wide 1`] = `
     }
   >
     <div
-      className="css-text-76zvg2"
+      className="css-text-901oao"
     >
       lead-1
     </div>
@@ -246,7 +246,7 @@ exports[`3. lead two no pic and two - wide 1`] = `
       }
     />
     <div
-      className="css-text-76zvg2"
+      className="css-text-901oao"
     >
       lead-2
     </div>
@@ -278,7 +278,7 @@ exports[`3. lead two no pic and two - wide 1`] = `
     }
   >
     <div
-      className="css-text-76zvg2"
+      className="css-text-901oao"
     >
       support-1
     </div>
@@ -310,7 +310,7 @@ exports[`3. lead two no pic and two - wide 1`] = `
     }
   >
     <div
-      className="css-text-76zvg2"
+      className="css-text-901oao"
     >
       support-2
     </div>
@@ -346,7 +346,7 @@ exports[`4. lead two no pic and two - huge 1`] = `
     }
   >
     <div
-      className="css-text-76zvg2"
+      className="css-text-901oao"
     >
       lead-1
     </div>
@@ -369,7 +369,7 @@ exports[`4. lead two no pic and two - huge 1`] = `
       }
     />
     <div
-      className="css-text-76zvg2"
+      className="css-text-901oao"
     >
       lead-2
     </div>
@@ -401,7 +401,7 @@ exports[`4. lead two no pic and two - huge 1`] = `
     }
   >
     <div
-      className="css-text-76zvg2"
+      className="css-text-901oao"
     >
       support-1
     </div>
@@ -433,7 +433,7 @@ exports[`4. lead two no pic and two - huge 1`] = `
     }
   >
     <div
-      className="css-text-76zvg2"
+      className="css-text-901oao"
     >
       support-2
     </div>

@@ -144,7 +144,7 @@ exports[`1. renders 1`] = `
         className="c1 resultsweb__MessageContainer-sc-1eowhty-0 c1 css-view-1dbjc4n"
       >
         <div
-          className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-a023e6 r-lineHeight-fxxt2n r-paddingTop-1h8ys4a S1"
+          className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-a023e6 r-lineHeight-fxxt2n r-paddingTop-1h8ys4a S1"
           data-testid="results-message"
         >
           Showing 4 - 6 of 21 results
@@ -168,15 +168,15 @@ exports[`1. renders 1`] = `
                 data-testid="pagination-button-previous"
               >
                 <div
-                  className="css-text-76zvg2 r-color-j7kcqb r-fontFamily-j2s0nr r-fontSize-a023e6 r-height-14g73ha r-lineHeight-fxxt2n r-marginLeft-1n0xq6e r-textAlign-fdjqy7 S2"
+                  className="css-text-901oao r-color-j7kcqb r-fontFamily-j2s0nr r-fontSize-a023e6 r-height-14g73ha r-lineHeight-fxxt2n r-marginLeft-1n0xq6e r-textAlign-fdjqy7 S2"
                 >
                   <span
-                    className="css-text-76zvg2 css-textHasAncestor-16my406"
+                    className="css-text-901oao css-textHasAncestor-16my406"
                   >
                     Previous
                     <page-labelweb__ResponsiveLabel>
                       <span
-                        className="c4 page-labelweb__ResponsiveLabel-sc-1gpr097-0 c4 css-text-76zvg2 css-textHasAncestor-16my406"
+                        className="c4 page-labelweb__ResponsiveLabel-sc-1gpr097-0 c4 css-text-901oao css-textHasAncestor-16my406"
                       >
                          page
                       </span>
@@ -200,15 +200,15 @@ exports[`1. renders 1`] = `
                 data-testid="pagination-button-next"
               >
                 <div
-                  className="css-text-76zvg2 r-color-j7kcqb r-fontFamily-j2s0nr r-fontSize-a023e6 r-height-14g73ha r-lineHeight-fxxt2n r-marginRight-zso239 r-textAlign-1ff274t S4"
+                  className="css-text-901oao r-color-j7kcqb r-fontFamily-j2s0nr r-fontSize-a023e6 r-height-14g73ha r-lineHeight-fxxt2n r-marginRight-zso239 r-textAlign-1ff274t S4"
                 >
                   <span
-                    className="css-text-76zvg2 css-textHasAncestor-16my406"
+                    className="css-text-901oao css-textHasAncestor-16my406"
                   >
                     Next
                     <page-labelweb__ResponsiveLabel>
                       <span
-                        className="c4 page-labelweb__ResponsiveLabel-sc-1gpr097-0 c4 css-text-76zvg2 css-textHasAncestor-16my406"
+                        className="c4 page-labelweb__ResponsiveLabel-sc-1gpr097-0 c4 css-text-901oao css-textHasAncestor-16my406"
                       >
                          page
                       </span>

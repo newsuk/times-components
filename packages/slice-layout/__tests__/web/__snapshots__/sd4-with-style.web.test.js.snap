@@ -33,7 +33,7 @@ Array [
       }
     >
       <div
-        className="css-text-76zvg2"
+        className="css-text-901oao"
       >
         secondary-1
       </div>
@@ -65,7 +65,7 @@ Array [
       }
     >
       <div
-        className="css-text-76zvg2"
+        className="css-text-901oao"
       >
         secondary-2
       </div>
@@ -120,7 +120,7 @@ Array [
       }
     >
       <div
-        className="css-text-76zvg2"
+        className="css-text-901oao"
       >
         secondary-3
       </div>
@@ -152,7 +152,7 @@ Array [
       }
     >
       <div
-        className="css-text-76zvg2"
+        className="css-text-901oao"
       >
         secondary-4
       </div>
@@ -195,7 +195,7 @@ exports[`2. secondary four - medium 1`] = `
     }
   >
     <div
-      className="css-text-76zvg2"
+      className="css-text-901oao"
     >
       secondary-1
     </div>
@@ -237,7 +237,7 @@ exports[`2. secondary four - medium 1`] = `
     }
   >
     <div
-      className="css-text-76zvg2"
+      className="css-text-901oao"
     >
       secondary-2
     </div>
@@ -279,7 +279,7 @@ exports[`2. secondary four - medium 1`] = `
     }
   >
     <div
-      className="css-text-76zvg2"
+      className="css-text-901oao"
     >
       secondary-3
     </div>
@@ -321,7 +321,7 @@ exports[`2. secondary four - medium 1`] = `
     }
   >
     <div
-      className="css-text-76zvg2"
+      className="css-text-901oao"
     >
       secondary-4
     </div>

@@ -24,7 +24,7 @@ exports[`The React Native Web serializer should effect children 1`] = `
   className="css-view-1dbjc4n r-flex-13awgt0 S2"
 >
   <div
-    className="css-text-76zvg2 r-fontSize-qqjak8 S1"
+    className="css-text-901oao r-fontSize-qqjak8 S1"
     dir="auto"
   >
     Hello World!
@@ -64,13 +64,13 @@ exports[`The React Native Web serializer should effect multiple children 1`] = `
   className="css-view-1dbjc4n r-backgroundColor-1g6456j r-flex-13awgt0 S4"
 >
   <div
-    className="css-text-76zvg2 r-fontSize-qqjak8 S1"
+    className="css-text-901oao r-fontSize-qqjak8 S1"
     dir="auto"
   >
     child 1
   </div>
   <div
-    className="css-text-76zvg2 r-fontSize-10x49cs S2"
+    className="css-text-901oao r-fontSize-10x49cs S2"
     dir="auto"
   >
     child 2
@@ -79,7 +79,7 @@ exports[`The React Native Web serializer should effect multiple children 1`] = `
     className="css-view-1dbjc4n"
   >
     <div
-      className="css-text-76zvg2 r-fontSize-1gkfh8e S3"
+      className="css-text-901oao r-fontSize-1gkfh8e S3"
       dir="auto"
     >
       child 3
@@ -131,7 +131,7 @@ exports[`The React Native Web serializer should remove rnw-classnames and hoist 
 </style>
 
 <div
-  className="css-text-76zvg2 r-color-howw7u r-flex-13awgt0 r-fontSize-1b43r93 S1"
+  className="css-text-901oao r-color-howw7u r-flex-13awgt0 r-fontSize-1b43r93 S1"
   dir="auto"
   testFunc={[Function]}
 />
@@ -161,13 +161,13 @@ exports[`The React Native Web serializer should squash identical styles 1`] = `
   className="css-view-1dbjc4n r-backgroundColor-1g6456j r-flex-13awgt0 S2"
 >
   <div
-    className="css-text-76zvg2 r-fontSize-10x49cs S1"
+    className="css-text-901oao r-fontSize-10x49cs S1"
     dir="auto"
   >
     child 1
   </div>
   <div
-    className="css-text-76zvg2 r-fontSize-10x49cs S1"
+    className="css-text-901oao r-fontSize-10x49cs S1"
     dir="auto"
   >
     child 2
@@ -176,7 +176,7 @@ exports[`The React Native Web serializer should squash identical styles 1`] = `
     className="css-view-1dbjc4n"
   >
     <div
-      className="css-text-76zvg2 r-fontSize-10x49cs S1"
+      className="css-text-901oao r-fontSize-10x49cs S1"
       dir="auto"
     >
       child 3
