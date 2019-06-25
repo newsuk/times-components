@@ -51,7 +51,7 @@ exports[`1. tile a 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 IS1 S2"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 IS1 S2"
       role="heading"
     >
       This is tile headline
@@ -129,16 +129,16 @@ exports[`2. tile b 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
       role="heading"
     >
       This is tile headline
     </h3>
     <div
-      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
+      className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
     >
       <span
-        className="css-text-901oao css-textHasAncestor-16my406"
+        className="css-text-76zvg2 css-textHasAncestor-16my406"
       >
         
         Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
@@ -219,7 +219,7 @@ exports[`3. tile c 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S3"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S3"
       role="heading"
     >
       This is tile headline
@@ -297,11 +297,7 @@ exports[`4. tile d 1`] = `
     </div>
     <h3
       aria-level="3"
-<<<<<<< HEAD
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-15d164r IS2 S2"
-=======
       className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
->>>>>>> update web snapshots
       role="heading"
     >
       This is tile headline
@@ -379,7 +375,7 @@ exports[`5. tile e 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
       role="heading"
     >
       This is tile headline
@@ -459,23 +455,23 @@ exports[`6. tile f 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
       role="heading"
     >
       This is tile headline
     </h3>
     <h4
       aria-level="4"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khp51w r-fontFamily-4h8ur4 r-fontSize-1b6yd1w r-lineHeight-10yl4k r-paddingBottom-1mi0q7o S3"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khp51w r-fontFamily-4h8ur4 r-fontSize-1b6yd1w r-lineHeight-10yl4k r-paddingBottom-1mi0q7o S3"
       role="heading"
     >
       Three Conservative MPs resign
     </h4>
     <div
-      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S4"
+      className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S4"
     >
       <span
-        className="css-text-901oao css-textHasAncestor-16my406"
+        className="css-text-76zvg2 css-textHasAncestor-16my406"
       >
         
         Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
@@ -567,7 +563,7 @@ exports[`7. tile g 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
       role="heading"
     >
       This is tile headline
@@ -661,16 +657,16 @@ exports[`8. tile h 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-15d164r IS1 S2"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-15d164r IS1 S2"
       role="heading"
     >
       This is tile headline
     </h3>
     <div
-      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
+      className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
     >
       <span
-        className="css-text-901oao css-textHasAncestor-16my406"
+        className="css-text-76zvg2 css-textHasAncestor-16my406"
       >
         
         Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
@@ -688,15 +684,15 @@ exports[`8. tile h 1`] = `
       }
     />
     <div
-      className="css-text-901oao"
+      className="css-text-76zvg2"
     >
       <span
-        className="css-text-901oao css-textHasAncestor-16my406 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S4"
+        className="css-text-76zvg2 css-textHasAncestor-16my406 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S4"
       >
         Richard Lloyd Parry
       </span>
       <span
-        className="css-text-901oao css-textHasAncestor-16my406 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S4"
+        className="css-text-76zvg2 css-textHasAncestor-16my406 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S4"
       >
         , Hanoi
       </span>
@@ -768,7 +764,7 @@ exports[`9. tile i 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-15d164r IS2 S2"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-15d164r IS2 S2"
       role="heading"
     >
       This is tile headline
@@ -844,7 +840,7 @@ exports[`10. tile j 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-15d164r IS2 S2"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-15d164r IS2 S2"
       role="heading"
     >
       This is tile headline
@@ -919,7 +915,7 @@ exports[`11. tile k 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-15d164r IS2 S2"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-15d164r IS2 S2"
       role="heading"
     >
       This is tile headline
@@ -981,7 +977,7 @@ exports[`12. tile l 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-lineHeight-rjixqe r-marginBottom-15d164r IS1 S2"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-lineHeight-rjixqe r-marginBottom-15d164r IS1 S2"
       role="heading"
     >
       This is tile headline
@@ -1043,14 +1039,14 @@ exports[`13. tile m 1`] = `
   >
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S1"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S1"
       role="heading"
     >
       Driving Off
     </h3>
     <h4
       aria-level="4"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khp51w r-fontSize-1b43r93 r-lineHeight-rjixqe r-paddingBottom-1mi0q7o IS2 S2"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khp51w r-fontSize-1b43r93 r-lineHeight-rjixqe r-paddingBottom-1mi0q7o IS2 S2"
       role="heading"
     >
       Three Conservative MPs resign
@@ -1125,14 +1121,14 @@ exports[`14. tile n 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
+      className="css-reset-4rbku5 css-text-76zvg2 r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
       role="heading"
     >
       This is tile headline
     </h3>
     <h4
       aria-level="4"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khp51w r-fontFamily-4h8ur4 r-fontSize-1b6yd1w r-lineHeight-10yl4k r-paddingBottom-1mi0q7o S3"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khp51w r-fontFamily-4h8ur4 r-fontSize-1b6yd1w r-lineHeight-10yl4k r-paddingBottom-1mi0q7o S3"
       role="heading"
     >
       Three Conservative MPs resign
@@ -1196,7 +1192,7 @@ exports[`15. tile o 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 IS1 S2"
+      className="css-reset-4rbku5 css-text-76zvg2 r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 IS1 S2"
       role="heading"
     >
       This is tile headline
@@ -1314,18 +1310,14 @@ exports[`16. tile p 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
+      className="css-reset-4rbku5 css-text-76zvg2 r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
       role="heading"
     >
       This is tile headline
     </h3>
     <h4
       aria-level="4"
-<<<<<<< HEAD
-      className="css-reset-4rbku5 css-text-901oao r-color-1khp51w r-fontFamily-4h8ur4 r-fontSize-1b43r93 r-lineHeight-rjixqe r-paddingBottom-1mi0q7o IS3 S3"
-=======
       className="css-reset-4rbku5 css-text-76zvg2 r-color-1khp51w r-fontSize-1b43r93 r-lineHeight-rjixqe r-paddingBottom-1mi0q7o IS3 S3"
->>>>>>> update web snapshots
       role="heading"
     >
       Three Conservative MPs resign
@@ -1341,15 +1333,15 @@ exports[`16. tile p 1`] = `
       }
     />
     <div
-      className="css-text-901oao"
+      className="css-text-76zvg2"
     >
       <span
-        className="css-text-901oao css-textHasAncestor-16my406 r-flexDirection-18u37iz r-fontFamily-j2s0nr IS4 S4"
+        className="css-text-76zvg2 css-textHasAncestor-16my406 r-flexDirection-18u37iz r-fontFamily-j2s0nr IS4 S4"
       >
         Richard Lloyd Parry
       </span>
       <span
-        className="css-text-901oao css-textHasAncestor-16my406 r-flexDirection-18u37iz r-fontFamily-j2s0nr IS5 S4"
+        className="css-text-76zvg2 css-textHasAncestor-16my406 r-flexDirection-18u37iz r-fontFamily-j2s0nr IS5 S4"
       >
         , Hanoi
       </span>
@@ -1426,7 +1418,7 @@ exports[`18. tile r 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
       role="heading"
     >
       This is tile headline
@@ -1506,13 +1498,13 @@ exports[`19. tile s 1`] = `
     className="css-view-1dbjc4n IS2"
   >
     <div
-      className="css-text-901oao r-fontFamily-iirzy8 r-fontSize-evnaw IS1 S1"
+      className="css-text-76zvg2 r-fontFamily-iirzy8 r-fontSize-evnaw IS1 S1"
     >
       Nature notes
     </div>
   </div>
   <div
-    className="css-text-901oao r-color-1khp51w r-fontSize-1b43r93 r-lineHeight-rjixqe IS5 S2"
+    className="css-text-76zvg2 r-color-1khp51w r-fontSize-1b43r93 r-lineHeight-rjixqe IS5 S2"
   >
     <p>
       <b
@@ -1541,7 +1533,7 @@ exports[`19. tile s 1`] = `
     </p>
   </div>
   <div
-    className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr IS6 S3"
+    className="css-text-76zvg2 r-color-1khp51w r-fontFamily-j2s0nr IS6 S3"
   >
     <span>
       Libby Purves
@@ -1693,7 +1685,7 @@ exports[`21. tile t 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
       role="heading"
     >
       This is tile headline
@@ -1766,7 +1758,7 @@ exports[`22. tile u 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
       role="heading"
     >
       This is tile headline
@@ -1844,7 +1836,7 @@ exports[`23. tile v 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
       role="heading"
     >
       This is tile headline
@@ -1929,16 +1921,16 @@ exports[`24. tile w 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
       role="heading"
     >
       This is tile headline
     </h3>
     <div
-      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
+      className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
     >
       <span
-        className="css-text-901oao css-textHasAncestor-16my406"
+        className="css-text-76zvg2 css-textHasAncestor-16my406"
       >
         
         Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
@@ -2029,23 +2021,23 @@ exports[`25. tile x 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
       role="heading"
     >
       This is tile headline
     </h3>
     <h4
       aria-level="4"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khp51w IS2 S3"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khp51w IS2 S3"
       role="heading"
     >
       Three Conservative MPs resign
     </h4>
     <div
-      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S4"
+      className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S4"
     >
       <span
-        className="css-text-901oao css-textHasAncestor-16my406"
+        className="css-text-76zvg2 css-textHasAncestor-16my406"
       >
         
         ‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye.
@@ -2121,16 +2113,16 @@ exports[`26. tile y 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
       role="heading"
     >
       This is tile headline
     </h3>
     <div
-      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
+      className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
     >
       <span
-        className="css-text-901oao css-textHasAncestor-16my406"
+        className="css-text-76zvg2 css-textHasAncestor-16my406"
       >
         
         ‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye.
@@ -2192,7 +2184,7 @@ exports[`27. tile z 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-15d164r IS1 S2"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-15d164r IS1 S2"
       role="heading"
     >
       This is tile headline
@@ -2270,7 +2262,7 @@ exports[`28. tile aa 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
       role="heading"
     >
       This is tile headline
@@ -2364,16 +2356,16 @@ exports[`29. tile ab 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
       role="heading"
     >
       This is tile headline
     </h3>
     <div
-      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
+      className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
     >
       <span
-        className="css-text-901oao css-textHasAncestor-16my406"
+        className="css-text-76zvg2 css-textHasAncestor-16my406"
       >
         
         Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
@@ -2391,15 +2383,15 @@ exports[`29. tile ab 1`] = `
       }
     />
     <div
-      className="css-text-901oao"
+      className="css-text-76zvg2"
     >
       <span
-        className="css-text-901oao css-textHasAncestor-16my406 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S4"
+        className="css-text-76zvg2 css-textHasAncestor-16my406 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S4"
       >
         Richard Lloyd Parry
       </span>
       <span
-        className="css-text-901oao css-textHasAncestor-16my406 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S4"
+        className="css-text-76zvg2 css-textHasAncestor-16my406 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S4"
       >
         , Hanoi
       </span>
@@ -2468,16 +2460,16 @@ exports[`30. tile ae 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
       role="heading"
     >
       This is tile headline
     </h3>
     <div
-      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
+      className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
     >
       <span
-        className="css-text-901oao css-textHasAncestor-16my406"
+        className="css-text-76zvg2 css-textHasAncestor-16my406"
       >
         
         Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
@@ -2540,14 +2532,14 @@ exports[`31. tile ag 1`] = `
   >
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S1"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S1"
       role="heading"
     >
       Driving Off
     </h3>
     <h4
       aria-level="4"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khp51w r-fontSize-1b43r93 r-lineHeight-rjixqe r-paddingBottom-1mi0q7o IS2 S2"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khp51w r-fontSize-1b43r93 r-lineHeight-rjixqe r-paddingBottom-1mi0q7o IS2 S2"
       role="heading"
     >
       Three Conservative MPs resign
@@ -2600,7 +2592,7 @@ exports[`32. tile aj 1`] = `
   >
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S1"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S1"
       role="heading"
     >
       Times Concise medium No 7881
@@ -2661,7 +2653,7 @@ exports[`33. tile ak 1`] = `
   >
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S1"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S1"
       role="heading"
     >
       Times Concise medium No 7881
@@ -2740,16 +2732,16 @@ exports[`34. tile al 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw r-marginBottom-p1pxzi S2"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw r-marginBottom-p1pxzi S2"
       role="heading"
     >
       This is tile headline
     </h3>
     <div
-      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontSize-1b43r93 r-marginBottom-15d164r IS2 S3"
+      className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontSize-1b43r93 r-marginBottom-15d164r IS2 S3"
     >
       <span
-        className="css-text-901oao css-textHasAncestor-16my406"
+        className="css-text-76zvg2 css-textHasAncestor-16my406"
       >
         
         Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
@@ -2835,16 +2827,16 @@ exports[`35. tile am 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
       role="heading"
     >
       This is tile headline
     </h3>
     <div
-      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
+      className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
     >
       <span
-        className="css-text-901oao css-textHasAncestor-16my406"
+        className="css-text-76zvg2 css-textHasAncestor-16my406"
       >
         
         Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
@@ -2939,16 +2931,16 @@ exports[`36. tile an 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
       role="heading"
     >
       This is tile headline
     </h3>
     <div
-      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
+      className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
     >
       <span
-        className="css-text-901oao css-textHasAncestor-16my406"
+        className="css-text-76zvg2 css-textHasAncestor-16my406"
       >
         
         Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
@@ -3032,7 +3024,7 @@ exports[`37. tile ap 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
       role="heading"
     >
       This is tile headline
@@ -3108,7 +3100,7 @@ exports[`38. tile ad 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-lineHeight-rjixqe r-marginBottom-d0pm55 IS2 S2"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-lineHeight-rjixqe r-marginBottom-d0pm55 IS2 S2"
       role="heading"
     >
       This is tile headline
@@ -3204,7 +3196,7 @@ exports[`39. tile ac 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-15d164r IS2 S2"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-15d164r IS2 S2"
       role="heading"
     >
       This is tile headline
@@ -3294,16 +3286,16 @@ exports[`40. tile aq 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S3"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S3"
       role="heading"
     >
       This is tile headline
     </h3>
     <div
-      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S4"
+      className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S4"
     >
       <span
-        className="css-text-901oao css-textHasAncestor-16my406"
+        className="css-text-76zvg2 css-textHasAncestor-16my406"
       >
         
         Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
@@ -3390,16 +3382,16 @@ exports[`tiles that change logic based on breakpoints TileW with teaser for wide
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
       role="heading"
     >
       This is tile headline
     </h3>
     <div
-      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
+      className="css-text-76zvg2 r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
     >
       <span
-        className="css-text-901oao css-textHasAncestor-16my406"
+        className="css-text-76zvg2 css-textHasAncestor-16my406"
       >
         
         Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
@@ -3479,7 +3471,7 @@ exports[`tiles that change logic based on breakpoints TileW without teaser for t
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
+      className="css-reset-4rbku5 css-text-76zvg2 r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
       role="heading"
     >
       This is tile headline
