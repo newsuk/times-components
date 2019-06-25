@@ -99,10 +99,6 @@ exports[`2. tile b 1`] = `
   font-size: 25px;
   line-height: 25px;
 }
-
-.IS2 {
-  padding-bottom: 25px;
-}
 </style>
 
 <Link
@@ -115,7 +111,7 @@ exports[`2. tile b 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS2"
+    className="css-view-1dbjc4n"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
@@ -184,10 +180,6 @@ exports[`3. tile c 1`] = `
   line-height: 22px;
   padding-bottom: 5px;
 }
-
-.IS3 {
-  padding-bottom: 25px;
-}
 </style>
 
 <Link
@@ -209,7 +201,7 @@ exports[`3. tile c 1`] = `
     />
   </div>
   <div
-    className="css-view-1dbjc4n IS3"
+    className="css-view-1dbjc4n"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
@@ -431,10 +423,6 @@ exports[`6. tile f 1`] = `
   font-size: 35px;
   line-height: 35px;
 }
-
-.IS2 {
-  padding-bottom: 25px;
-}
 </style>
 
 <Link
@@ -447,7 +435,7 @@ exports[`6. tile f 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS2"
+    className="css-view-1dbjc4n"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
@@ -524,7 +512,6 @@ exports[`7. tile g 1`] = `
 .IS3 {
   -webkit-justify-content: center;
   justify-content: center;
-  padding-bottom: 25px;
   padding-right: 10px;
   padding-left: 10px;
   padding-top: 5px;
@@ -622,9 +609,9 @@ exports[`8. tile h 1`] = `
 }
 
 .IS2 {
-  padding-bottom: 25px;
   padding-right: 10px;
   padding-top: 10px;
+  padding-bottom: 10px;
   width: 50%;
 }
 
@@ -808,7 +795,6 @@ exports[`10. tile j 1`] = `
 }
 
 .IS3 {
-  padding-bottom: 25px;
   padding-right: 10px;
   padding-left: 10px;
   width: 60%;
@@ -886,7 +872,6 @@ exports[`11. tile k 1`] = `
 }
 
 .IS3 {
-  padding-bottom: 25px;
   width: 50%;
 }
 </style>
@@ -955,10 +940,6 @@ exports[`12. tile l 1`] = `
 .IS1 {
   font-size: 20px;
 }
-
-.IS2 {
-  padding-bottom: 25px;
-}
 </style>
 
 <Link
@@ -972,7 +953,7 @@ exports[`12. tile l 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS2"
+    className="css-view-1dbjc4n"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
@@ -1094,7 +1075,6 @@ exports[`14. tile n 1`] = `
 }
 
 .IS3 {
-  padding-bottom: 25px;
   padding-right: 10px;
   padding-left: 10px;
   width: 50%;
@@ -1175,10 +1155,6 @@ exports[`15. tile o 1`] = `
   margin-bottom: 11px;
   margin-top: 5px;
 }
-
-.IS2 {
-  padding-bottom: 25px;
-}
 </style>
 
 <Link
@@ -1192,7 +1168,7 @@ exports[`15. tile o 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS2"
+    className="css-view-1dbjc4n"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
@@ -1404,10 +1380,6 @@ exports[`18. tile r 1`] = `
   font-size: 40px;
   line-height: 40px;
 }
-
-.IS2 {
-  padding-bottom: 25px;
-}
 </style>
 
 <Link
@@ -1421,7 +1393,7 @@ exports[`18. tile r 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS2"
+    className="css-view-1dbjc4n"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
@@ -1558,7 +1530,91 @@ exports[`19. tile s 1`] = `
 </div>
 `;
 
-exports[`20. tile t 1`] = `
+exports[`20. tile s - no byline 1`] = `
+<style>
+.S1 {
+  font-family: TimesModern-Bold;
+  font-size: 22px;
+}
+
+.S2 {
+  color: rgba(105,105,105,1.00);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.IS1 {
+  color: rgba(29,29,27,1.00);
+  margin-bottom: 15px;
+}
+
+.IS2 {
+  -webkit-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+}
+
+.IS3 {
+  color: #1D1D1B;
+  font-weight: bold;
+}
+
+.IS4 {
+  color: #1D1D1B;
+  font-weight: bold;
+}
+
+.IS5 {
+  font-family: TimesDigitalW04-Regular;
+}
+</style>
+
+<div
+  className="css-view-1dbjc4n r-paddingBottom-1mi0q7o"
+>
+  <div
+    className="css-view-1dbjc4n IS2"
+  >
+    <div
+      className="css-text-901oao r-fontFamily-iirzy8 r-fontSize-evnaw IS1 S1"
+    >
+      Nature notes
+    </div>
+  </div>
+  <div
+    className="css-text-901oao r-color-1khp51w r-fontSize-1b43r93 r-lineHeight-rjixqe IS5 S2"
+  >
+    <p>
+      <b
+        className="IS3"
+      >
+        Rick Astley
+      </b>
+      , singer-songwriter, 
+      <i>
+        Never Gonna Give You Up 
+      </i>
+      (1987), 53; 
+      <b
+        className="IS4"
+      >
+        Mike Batt
+      </b>
+      , composer, songwriter, 
+      <i>
+        Wombling Free 
+      </i>
+      (1978), 
+      <i>
+        Bright Eyes 
+      </i>
+    </p>
+  </div>
+</div>
+`;
+
+exports[`21. tile t 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1581,10 +1637,10 @@ exports[`20. tile t 1`] = `
 }
 
 .IS3 {
-  padding-bottom: 25px;
   padding-right: 10px;
   padding-left: 10px;
   padding-top: 5px;
+  padding-bottom: 5px;
   width: 50%;
 }
 </style>
@@ -1636,7 +1692,7 @@ exports[`20. tile t 1`] = `
 </Link>
 `;
 
-exports[`21. tile u 1`] = `
+exports[`22. tile u 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1714,7 +1770,7 @@ exports[`21. tile u 1`] = `
 </Link>
 `;
 
-exports[`22. tile v 1`] = `
+exports[`23. tile v 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1737,10 +1793,6 @@ exports[`22. tile v 1`] = `
   line-height: 30px;
   padding-bottom: 5px;
 }
-
-.IS3 {
-  padding-bottom: 25px;
-}
 </style>
 
 <Link
@@ -1759,7 +1811,7 @@ exports[`22. tile v 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
   <div
-    className="css-view-1dbjc4n IS3"
+    className="css-view-1dbjc4n"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
@@ -1791,7 +1843,7 @@ exports[`22. tile v 1`] = `
 </Link>
 `;
 
-exports[`23. tile w 1`] = `
+exports[`24. tile w 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1892,7 +1944,7 @@ exports[`23. tile w 1`] = `
 </Link>
 `;
 
-exports[`24. tile x 1`] = `
+exports[`25. tile x 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1932,10 +1984,6 @@ exports[`24. tile x 1`] = `
   line-height: 25px;
   padding-bottom: 5px;
 }
-
-.IS3 {
-  padding-bottom: 25px;
-}
 </style>
 
 <Link
@@ -1948,7 +1996,7 @@ exports[`24. tile x 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS3"
+    className="css-view-1dbjc4n"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
@@ -1998,7 +2046,7 @@ exports[`24. tile x 1`] = `
 </Link>
 `;
 
-exports[`25. tile y 1`] = `
+exports[`26. tile y 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2083,7 +2131,7 @@ exports[`25. tile y 1`] = `
 </Link>
 `;
 
-exports[`26. tile z 1`] = `
+exports[`27. tile z 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2147,7 +2195,7 @@ exports[`26. tile z 1`] = `
 </Link>
 `;
 
-exports[`27. tile aa 1`] = `
+exports[`28. tile aa 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2170,8 +2218,8 @@ exports[`27. tile aa 1`] = `
 }
 
 .IS3 {
-  padding-bottom: 25px;
   padding-top: 5px;
+  padding-bottom: 5px;
 }
 </style>
 
@@ -2221,7 +2269,7 @@ exports[`27. tile aa 1`] = `
 </Link>
 `;
 
-exports[`28. tile ab 1`] = `
+exports[`29. tile ab 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2259,9 +2307,9 @@ exports[`28. tile ab 1`] = `
 }
 
 .IS2 {
-  padding-bottom: 25px;
   padding-right: 10px;
   padding-top: 10px;
+  padding-bottom: 10px;
   width: 50%;
 }
 
@@ -2345,7 +2393,7 @@ exports[`28. tile ab 1`] = `
 </Link>
 `;
 
-exports[`29. tile ae 1`] = `
+exports[`30. tile ae 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2374,10 +2422,6 @@ exports[`29. tile ae 1`] = `
   font-size: 30px;
   line-height: 30px;
 }
-
-.IS2 {
-  padding-bottom: 25px;
-}
 </style>
 
 <Link
@@ -2391,7 +2435,7 @@ exports[`29. tile ae 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS2"
+    className="css-view-1dbjc4n"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
@@ -2434,7 +2478,7 @@ exports[`29. tile ae 1`] = `
 </Link>
 `;
 
-exports[`30. tile ag 1`] = `
+exports[`31. tile ag 1`] = `
 <style>
 .S1 {
   color: rgba(51,51,51,1.00);
@@ -2460,10 +2504,6 @@ exports[`30. tile ag 1`] = `
   font-family: TimesDigitalW04-Regular;
   text-align: center;
 }
-
-.IS3 {
-  padding-bottom: 25px;
-}
 </style>
 
 <Link
@@ -2476,7 +2516,7 @@ exports[`30. tile ag 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS3"
+    className="css-view-1dbjc4n"
   >
     <h3
       aria-level="3"
@@ -2497,7 +2537,7 @@ exports[`30. tile ag 1`] = `
 </Link>
 `;
 
-exports[`31. tile aj 1`] = `
+exports[`32. tile aj 1`] = `
 <style>
 .S1 {
   color: rgba(51,51,51,1.00);
@@ -2555,7 +2595,7 @@ exports[`31. tile aj 1`] = `
 </Link>
 `;
 
-exports[`32. tile ak 1`] = `
+exports[`33. tile ak 1`] = `
 <style>
 .S1 {
   color: rgba(51,51,51,1.00);
@@ -2616,7 +2656,7 @@ exports[`32. tile ak 1`] = `
 </Link>
 `;
 
-exports[`33. tile al 1`] = `
+exports[`34. tile al 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2650,10 +2690,6 @@ exports[`33. tile al 1`] = `
   font-family: TimesDigitalW04-Regular;
   width: 100%;
 }
-
-.IS3 {
-  padding-bottom: 25px;
-}
 </style>
 
 <Link
@@ -2671,7 +2707,7 @@ exports[`33. tile al 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
   />
   <div
-    className="css-view-1dbjc4n IS3"
+    className="css-view-1dbjc4n"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
@@ -2714,7 +2750,7 @@ exports[`33. tile al 1`] = `
 </Link>
 `;
 
-exports[`34. tile am 1`] = `
+exports[`35. tile am 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2749,10 +2785,6 @@ exports[`34. tile am 1`] = `
   line-height: 35px;
   padding-bottom: 5px;
 }
-
-.IS3 {
-  padding-bottom: 25px;
-}
 </style>
 
 <Link
@@ -2770,7 +2802,7 @@ exports[`34. tile am 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
   <div
-    className="css-view-1dbjc4n IS3"
+    className="css-view-1dbjc4n"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
@@ -2813,7 +2845,7 @@ exports[`34. tile am 1`] = `
 </Link>
 `;
 
-exports[`35. tile an 1`] = `
+exports[`36. tile an 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2850,7 +2882,6 @@ exports[`35. tile an 1`] = `
 .IS3 {
   -webkit-justify-content: center;
   justify-content: center;
-  padding-bottom: 25px;
   padding-right: 10px;
   padding-left: 10px;
   padding-top: 10px;
@@ -2918,7 +2949,7 @@ exports[`35. tile an 1`] = `
 </Link>
 `;
 
-exports[`36. tile ap 1`] = `
+exports[`37. tile ap 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2944,7 +2975,6 @@ exports[`36. tile ap 1`] = `
 .IS3 {
   -webkit-justify-content: center;
   justify-content: center;
-  padding-bottom: 25px;
   padding-right: 10px;
   padding-left: 10px;
   padding-top: 5px;
@@ -3001,7 +3031,7 @@ exports[`36. tile ap 1`] = `
 </Link>
 `;
 
-exports[`37. tile ad 1`] = `
+exports[`38. tile ad 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3024,7 +3054,6 @@ exports[`37. tile ad 1`] = `
 }
 
 .IS3 {
-  padding-bottom: 25px;
   padding-right: 10px;
   padding-left: 10px;
   width: 70%;
@@ -3078,7 +3107,7 @@ exports[`37. tile ad 1`] = `
 </Link>
 `;
 
-exports[`38. tile ac 1`] = `
+exports[`39. tile ac 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3113,10 +3142,10 @@ exports[`38. tile ac 1`] = `
   flex-basis: 0%;
   -webkit-justify-content: center;
   justify-content: center;
-  padding-bottom: 25px;
   padding-right: 40px;
   padding-left: 40px;
   padding-top: 20px;
+  padding-bottom: 20px;
   -ms-flex-align: center;
   -webkit-box-align: center;
   -ms-flex-positive: 1;
@@ -3174,7 +3203,7 @@ exports[`38. tile ac 1`] = `
 </Link>
 `;
 
-exports[`39. tile aq 1`] = `
+exports[`40. tile aq 1`] = `
 <style>
 .S1 {
   margin-bottom: 10px;
@@ -3211,10 +3240,6 @@ exports[`39. tile aq 1`] = `
 .IS2 {
   line-height: 22px;
 }
-
-.IS3 {
-  padding-bottom: 25px;
-}
 </style>
 
 <Link
@@ -3236,7 +3261,7 @@ exports[`39. tile aq 1`] = `
     />
   </div>
   <div
-    className="css-view-1dbjc4n IS3"
+    className="css-view-1dbjc4n"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"

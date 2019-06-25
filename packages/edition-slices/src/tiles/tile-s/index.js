@@ -19,7 +19,10 @@ const TileS = ({ tile }) => (
       <Text style={styles.title}>{tile.title}</Text>
     </View>
     <Text style={styles.paragraph}>{renderAst(tile.content)}</Text>
-    <Text style={styles.byline}>{renderAst(tile.byline)}</Text>
+    {tile.byline &&
+      tile.byline.length > 0 && (
+        <Text style={styles.byline}>{renderAst(tile.byline)}</Text>
+      )}
   </View>
 );
 
