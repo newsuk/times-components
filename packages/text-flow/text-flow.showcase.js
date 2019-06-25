@@ -6,6 +6,7 @@ export default {
     {
       component: () => <TextFlow />,
       name: "TextFlow",
+      platform: "native",
       type: "story"
     }
   ],
