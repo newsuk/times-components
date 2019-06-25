@@ -6,7 +6,7 @@ export const ShareAndSaveContainer = styled.div`
   border-top-color: ${colours.functional.keyline};
   border-top-style: solid;
   border-top-width: 1px;
-  width: 80.8%;
+  width: 56.2%;
   margin: 0 auto;
 
   @media (max-width: ${breakpoints.huge}px) {
