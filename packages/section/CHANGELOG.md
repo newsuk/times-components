@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/newsuk/times-components/compare/@times-components/section@1.0.43...@times-components/section@1.1.0) (2019-06-25)
+
+
+### Features
+
+* edition slice review mobile changes ([#2058](https://github.com/newsuk/times-components/issues/2058)) ([75e175f](https://github.com/newsuk/times-components/commit/75e175f))
+
+
+
+
+
 ## [1.0.43](https://github.com/newsuk/times-components/compare/@times-components/section@1.0.42...@times-components/section@1.0.43) (2019-06-25)
 
 **Note:** Version bump only for package @times-components/section
