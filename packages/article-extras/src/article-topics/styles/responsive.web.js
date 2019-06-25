@@ -12,4 +12,8 @@ export default styled(View)`
     padding-left: 0;
     padding-right: 0;
   }
+
+  @media (min-width: ${breakpoints.wide}px) {
+    width: 56.2%;
+  }
 `;
