@@ -210,7 +210,7 @@ exports[`2. daily universal register - medium 1`] = `
         uri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
       />
       <div
-        className="css-text-76zvg2 IS2"
+        className="css-text-901oao IS2"
       >
         Daily Universal Register
       </div>
@@ -593,7 +593,7 @@ exports[`6. leaders slice - medium 1`] = `
       className="css-view-1dbjc4n IS3"
     >
       <div
-        className="css-text-76zvg2 IS2"
+        className="css-text-901oao IS2"
       >
          Leading Articles 
       </div>
@@ -2017,7 +2017,7 @@ exports[`17. daily universal register - wide 1`] = `
         uri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
       />
       <div
-        className="css-text-76zvg2 IS2"
+        className="css-text-901oao IS2"
       >
         Daily Universal Register
       </div>
@@ -2400,7 +2400,7 @@ exports[`21. leaders slice - wide 1`] = `
       className="css-view-1dbjc4n IS3"
     >
       <div
-        className="css-text-76zvg2 IS2"
+        className="css-text-901oao IS2"
       >
          Leading Articles 
       </div>
@@ -3824,7 +3824,7 @@ exports[`32. daily universal register - huge 1`] = `
         uri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
       />
       <div
-        className="css-text-76zvg2 IS2"
+        className="css-text-901oao IS2"
       >
         Daily Universal Register
       </div>
@@ -4207,7 +4207,7 @@ exports[`36. leaders slice - huge 1`] = `
       className="css-view-1dbjc4n IS3"
     >
       <div
-        className="css-text-76zvg2 IS2"
+        className="css-text-901oao IS2"
       >
          Leading Articles 
       </div>
