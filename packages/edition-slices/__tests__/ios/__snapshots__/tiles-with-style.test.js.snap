@@ -308,10 +308,7 @@ exports[`7. tile g 1`] = `
     style={
       Object {
         "justifyContent": "center",
-<<<<<<< HEAD
-=======
         "paddingBottom": 0,
->>>>>>> fix: REPLAT-6745 secondary no pic and two styling
         "paddingHorizontal": 10,
         "paddingTop": 5,
         "width": "70%",
