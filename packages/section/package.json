@@ -45,7 +45,6 @@
     "@times-components/responsive": "0.4.46",
     "@times-components/styleguide": "3.28.28",
     "@times-components/tracking": "2.4.46",
-    "memoize-one": "5.0.4",
     "prop-types": "15.7.2"
   },
   "devDependencies": {

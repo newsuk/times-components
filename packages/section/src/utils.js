@@ -1,5 +1,4 @@
 /* eslint-disable no-param-reassign */
-import memoizeOne from "memoize-one";
 import { editionBreakpoints } from "@times-components/styleguide";
 
 const withIgnoredSeperator = slice => ({ ...slice, ignoreSeparator: true });
@@ -22,7 +21,7 @@ const splitPuzzlesBySlices = (puzzles, numberOfTilesPerSlice = 3) =>
     return slices;
   }, []);
 
-const buildSliceData = memoizeOne(data =>
+const buildSliceData = data =>
   data.reduce((newSlices, oldSlice, idx) => {
     const nextSlice = data[idx + 1];
 
@@ -41,8 +40,7 @@ const buildSliceData = memoizeOne(data =>
     };
 
     return newSlices;
-  }, [])
-);
+  }, []);
 
 const getRatio = ratio => {
   const ratios = ratio.split(":").map(num => parseInt(num, 10));
