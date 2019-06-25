@@ -1530,7 +1530,91 @@ exports[`19. tile s 1`] = `
 </div>
 `;
 
-exports[`20. tile t 1`] = `
+exports[`20. tile s - no byline 1`] = `
+<style>
+.S1 {
+  font-family: TimesModern-Bold;
+  font-size: 22px;
+}
+
+.S2 {
+  color: rgba(105,105,105,1.00);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.IS1 {
+  color: rgba(29,29,27,1.00);
+  margin-bottom: 15px;
+}
+
+.IS2 {
+  -webkit-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+}
+
+.IS3 {
+  color: #1D1D1B;
+  font-weight: bold;
+}
+
+.IS4 {
+  color: #1D1D1B;
+  font-weight: bold;
+}
+
+.IS5 {
+  font-family: TimesDigitalW04-Regular;
+}
+</style>
+
+<div
+  className="css-view-1dbjc4n r-paddingBottom-1mi0q7o"
+>
+  <div
+    className="css-view-1dbjc4n IS2"
+  >
+    <div
+      className="css-text-76zvg2 r-fontFamily-iirzy8 r-fontSize-evnaw IS1 S1"
+    >
+      Nature notes
+    </div>
+  </div>
+  <div
+    className="css-text-76zvg2 r-color-1khp51w r-fontSize-1b43r93 r-lineHeight-rjixqe IS5 S2"
+  >
+    <p>
+      <b
+        className="IS3"
+      >
+        Rick Astley
+      </b>
+      , singer-songwriter, 
+      <i>
+        Never Gonna Give You Up 
+      </i>
+      (1987), 53; 
+      <b
+        className="IS4"
+      >
+        Mike Batt
+      </b>
+      , composer, songwriter, 
+      <i>
+        Wombling Free 
+      </i>
+      (1978), 
+      <i>
+        Bright Eyes 
+      </i>
+    </p>
+  </div>
+</div>
+`;
+
+exports[`21. tile t 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1608,7 +1692,7 @@ exports[`20. tile t 1`] = `
 </Link>
 `;
 
-exports[`21. tile u 1`] = `
+exports[`22. tile u 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1686,7 +1770,7 @@ exports[`21. tile u 1`] = `
 </Link>
 `;
 
-exports[`22. tile v 1`] = `
+exports[`23. tile v 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1759,7 +1843,7 @@ exports[`22. tile v 1`] = `
 </Link>
 `;
 
-exports[`23. tile w 1`] = `
+exports[`24. tile w 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1860,7 +1944,7 @@ exports[`23. tile w 1`] = `
 </Link>
 `;
 
-exports[`24. tile x 1`] = `
+exports[`25. tile x 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -1962,7 +2046,7 @@ exports[`24. tile x 1`] = `
 </Link>
 `;
 
-exports[`25. tile y 1`] = `
+exports[`26. tile y 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2047,7 +2131,7 @@ exports[`25. tile y 1`] = `
 </Link>
 `;
 
-exports[`26. tile z 1`] = `
+exports[`27. tile z 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2111,7 +2195,7 @@ exports[`26. tile z 1`] = `
 </Link>
 `;
 
-exports[`27. tile aa 1`] = `
+exports[`28. tile aa 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2185,7 +2269,7 @@ exports[`27. tile aa 1`] = `
 </Link>
 `;
 
-exports[`28. tile ab 1`] = `
+exports[`29. tile ab 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2309,7 +2393,7 @@ exports[`28. tile ab 1`] = `
 </Link>
 `;
 
-exports[`29. tile ae 1`] = `
+exports[`30. tile ae 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2394,7 +2478,7 @@ exports[`29. tile ae 1`] = `
 </Link>
 `;
 
-exports[`30. tile ag 1`] = `
+exports[`31. tile ag 1`] = `
 <style>
 .S1 {
   color: rgba(51,51,51,1.00);
@@ -2453,7 +2537,7 @@ exports[`30. tile ag 1`] = `
 </Link>
 `;
 
-exports[`31. tile aj 1`] = `
+exports[`32. tile aj 1`] = `
 <style>
 .S1 {
   color: rgba(51,51,51,1.00);
@@ -2511,7 +2595,7 @@ exports[`31. tile aj 1`] = `
 </Link>
 `;
 
-exports[`32. tile ak 1`] = `
+exports[`33. tile ak 1`] = `
 <style>
 .S1 {
   color: rgba(51,51,51,1.00);
@@ -2572,7 +2656,7 @@ exports[`32. tile ak 1`] = `
 </Link>
 `;
 
-exports[`33. tile al 1`] = `
+exports[`34. tile al 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2666,7 +2750,7 @@ exports[`33. tile al 1`] = `
 </Link>
 `;
 
-exports[`34. tile am 1`] = `
+exports[`35. tile am 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2761,7 +2845,7 @@ exports[`34. tile am 1`] = `
 </Link>
 `;
 
-exports[`35. tile an 1`] = `
+exports[`36. tile an 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2865,7 +2949,7 @@ exports[`35. tile an 1`] = `
 </Link>
 `;
 
-exports[`36. tile ap 1`] = `
+exports[`37. tile ap 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2947,7 +3031,7 @@ exports[`36. tile ap 1`] = `
 </Link>
 `;
 
-exports[`37. tile ad 1`] = `
+exports[`38. tile ad 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3023,7 +3107,7 @@ exports[`37. tile ad 1`] = `
 </Link>
 `;
 
-exports[`38. tile ac 1`] = `
+exports[`39. tile ac 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3119,7 +3203,7 @@ exports[`38. tile ac 1`] = `
 </Link>
 `;
 
-exports[`39. tile aq 1`] = `
+exports[`40. tile aq 1`] = `
 <style>
 .S1 {
   margin-bottom: 10px;

@@ -796,7 +796,40 @@ exports[`19. tile s 1`] = `
 </div>
 `;
 
-exports[`20. tile t 1`] = `
+exports[`20. tile s - no byline 1`] = `
+<div>
+  <div>
+    <div>
+      Nature notes
+    </div>
+  </div>
+  <div>
+    <p>
+      <b>
+        Rick Astley
+      </b>
+      , singer-songwriter, 
+      <i>
+        Never Gonna Give You Up 
+      </i>
+      (1987), 53; 
+      <b>
+        Mike Batt
+      </b>
+      , composer, songwriter, 
+      <i>
+        Wombling Free 
+      </i>
+      (1978), 
+      <i>
+        Bright Eyes 
+      </i>
+    </p>
+  </div>
+</div>
+`;
+
+exports[`21. tile t 1`] = `
 <Link
   linkStyle={
     Object {
@@ -838,7 +871,7 @@ exports[`20. tile t 1`] = `
 </Link>
 `;
 
-exports[`21. tile u 1`] = `
+exports[`22. tile u 1`] = `
 <Link
   linkStyle={
     Object {
@@ -881,7 +914,7 @@ exports[`21. tile u 1`] = `
 </Link>
 `;
 
-exports[`22. tile v 1`] = `
+exports[`23. tile v 1`] = `
 <Link
   linkStyle={
     Object {
@@ -924,7 +957,7 @@ exports[`22. tile v 1`] = `
 </Link>
 `;
 
-exports[`23. tile w 1`] = `
+exports[`24. tile w 1`] = `
 <Link
   linkStyle={
     Object {
@@ -975,7 +1008,7 @@ exports[`23. tile w 1`] = `
 </Link>
 `;
 
-exports[`24. tile x 1`] = `
+exports[`25. tile x 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1026,7 +1059,7 @@ exports[`24. tile x 1`] = `
 </Link>
 `;
 
-exports[`25. tile y 1`] = `
+exports[`26. tile y 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1072,7 +1105,7 @@ exports[`25. tile y 1`] = `
 </Link>
 `;
 
-exports[`26. tile z 1`] = `
+exports[`27. tile z 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1113,7 +1146,7 @@ exports[`26. tile z 1`] = `
 </Link>
 `;
 
-exports[`27. tile aa 1`] = `
+exports[`28. tile aa 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1154,7 +1187,7 @@ exports[`27. tile aa 1`] = `
 </Link>
 `;
 
-exports[`28. tile ab 1`] = `
+exports[`29. tile ab 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1211,7 +1244,7 @@ exports[`28. tile ab 1`] = `
 </Link>
 `;
 
-exports[`29. tile ae 1`] = `
+exports[`30. tile ae 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1257,7 +1290,7 @@ exports[`29. tile ae 1`] = `
 </Link>
 `;
 
-exports[`30. tile ag 1`] = `
+exports[`31. tile ag 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1285,7 +1318,7 @@ exports[`30. tile ag 1`] = `
 </Link>
 `;
 
-exports[`31. tile aj 1`] = `
+exports[`32. tile aj 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1313,7 +1346,7 @@ exports[`31. tile aj 1`] = `
 </Link>
 `;
 
-exports[`32. tile ak 1`] = `
+exports[`33. tile ak 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1343,7 +1376,7 @@ exports[`32. tile ak 1`] = `
 </Link>
 `;
 
-exports[`33. tile al 1`] = `
+exports[`34. tile al 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1392,7 +1425,7 @@ exports[`33. tile al 1`] = `
 </Link>
 `;
 
-exports[`34. tile am 1`] = `
+exports[`35. tile am 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1441,7 +1474,7 @@ exports[`34. tile am 1`] = `
 </Link>
 `;
 
-exports[`35. tile an 1`] = `
+exports[`36. tile an 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1491,7 +1524,7 @@ exports[`35. tile an 1`] = `
 </Link>
 `;
 
-exports[`36. tile ap 1`] = `
+exports[`37. tile ap 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1534,7 +1567,7 @@ exports[`36. tile ap 1`] = `
 </Link>
 `;
 
-exports[`37. tile ad 1`] = `
+exports[`38. tile ad 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1576,7 +1609,7 @@ exports[`37. tile ad 1`] = `
 </Link>
 `;
 
-exports[`38. tile ac 1`] = `
+exports[`39. tile ac 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1617,7 +1650,7 @@ exports[`38. tile ac 1`] = `
 </Link>
 `;
 
-exports[`39. tile aq 1`] = `
+exports[`40. tile aq 1`] = `
 <Link
   linkStyle={
     Object {
