@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.68](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.1.67...@times-components/article-extras@0.1.68) (2019-06-25)
+
+
+### Bug Fixes
+
+* change share-save-bar and topic-links width ([#2071](https://github.com/newsuk/times-components/issues/2071)) ([1957cb1](https://github.com/newsuk/times-components/commit/1957cb1))
+
+
+
+
+
 ## [0.1.67](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.1.66...@times-components/article-extras@0.1.67) (2019-06-25)
 
 **Note:** Version bump only for package @times-components/article-extras
