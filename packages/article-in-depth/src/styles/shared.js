@@ -66,11 +66,8 @@ const sharedStyles = {
     marginHorizontal: spacing(2),
     paddingBottom: spacing(2),
     paddingTop: spacing(2),
-    borderBottomColor: colours.functional.keyline,
-    borderBottomWidth: 1,
     borderTopColor: colours.functional.keyline,
-    borderTopWidth: 1,
-    marginBottom: spacing(4)
+    borderTopWidth: 1
   },
   metaContainerTablet: {
     alignSelf: "center",
