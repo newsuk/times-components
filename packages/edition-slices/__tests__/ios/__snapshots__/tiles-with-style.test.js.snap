@@ -151,7 +151,7 @@ exports[`4. tile d 1`] = `
       Object {
         "paddingBottom": 5,
         "paddingRight": 10,
-        "paddingTop": 10,
+        "paddingTop": 5,
         "width": "50%",
       }
     }
@@ -199,7 +199,7 @@ exports[`5. tile e 1`] = `
       Object {
         "paddingBottom": 5,
         "paddingRight": 10,
-        "paddingTop": 5,
+        "paddingTop": 10,
         "width": "50%",
       }
     }
