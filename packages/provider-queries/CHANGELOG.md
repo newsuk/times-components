@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.8](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.2.7...@times-components/provider-queries@2.2.8) (2019-06-25)
+
+
+### Bug Fixes
+
+* REPLAT-6745 section fragment query updated ([#2068](https://github.com/newsuk/times-components/issues/2068)) ([c8b2ab5](https://github.com/newsuk/times-components/commit/c8b2ab5))
+
+
+
+
+
 ## [2.2.7](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.2.6...@times-components/provider-queries@2.2.7) (2019-06-24)
 
 **Note:** Version bump only for package @times-components/provider-queries
