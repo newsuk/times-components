@@ -1,6 +1,6 @@
 {
   "name": "@times-components/pages",
-  "version": "2.0.94",
+  "version": "2.0.95",
   "main": "dist/pages",
   "dev": "src/pages",
   "scripts": {
@@ -53,7 +53,7 @@
     "webpack": "4.30.0"
   },
   "dependencies": {
-    "@times-components/article": "7.2.52",
+    "@times-components/article": "7.2.53",
     "@times-components/author-profile": "6.0.57",
     "@times-components/context": "1.0.22",
     "@times-components/provider": "1.17.15",

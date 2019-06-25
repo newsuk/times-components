@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.2.53](https://github.com/newsuk/times-components/compare/@times-components/article@7.2.52...@times-components/article@7.2.53) (2019-06-25)
+
+
+### Bug Fixes
+
+* change template name ([#2076](https://github.com/newsuk/times-components/issues/2076)) ([bb795da](https://github.com/newsuk/times-components/commit/bb795da))
+
+
+
+
+
 ## [7.2.52](https://github.com/newsuk/times-components/compare/@times-components/article@7.2.51...@times-components/article@7.2.52) (2019-06-25)
 
 **Note:** Version bump only for package @times-components/article

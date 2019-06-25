@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article",
-  "version": "7.2.52",
+  "version": "7.2.53",
   "description": "The article",
   "main": "dist/article",
   "dev": "src/article",
