@@ -17,10 +17,21 @@ export const templates = {
   mainstandard: ArticleMainStandard
 };
 
+export class TakeoverBailout extends Error {
+  constructor(message) {
+    super(message);
+    this.name = "TakeoverBailout";
+  }
+}
+
 const Article = props => {
   const { article, onImagePress } = props;
   const { leadAsset, template = "mainstandard" } = article || {};
   let { content } = article || {};
+
+  if (template === "takeoverPage") {
+    throw new TakeoverBailout("Aborted react render: Takeover page");
+  }
 
   let onImagePressArticle = null;
 

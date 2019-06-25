@@ -3,6 +3,10 @@ const runServer = require("../lib/run-server");
 const defaultAdConfig = require("../lib/ads/make-article-ad-config")
   .defaultServer;
 
+const { TakeoverBailout } = article;
+
+module.exports.TakeoverBailout = TakeoverBailout;
+
 module.exports = (
   articleId,
   headers,
@@ -62,5 +66,7 @@ module.exports = (
     name: "article"
   };
 
-  return runServer(article, options);
+  return runServer(article, options).catch(error => {
+    throw new Error(error);
+  });
 };
