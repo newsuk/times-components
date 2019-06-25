@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
   listItemSeparator: {
     backgroundColor: colours.functional.keyline,
     height: 1,
-    marginHorizontal: spacing(4)
+    marginHorizontal: spacing(2)
   },
   puzzleBarArrow: {
     paddingLeft: spacing(2),

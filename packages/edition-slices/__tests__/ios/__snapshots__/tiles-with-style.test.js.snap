@@ -151,6 +151,7 @@ exports[`4. tile d 1`] = `
       Object {
         "paddingBottom": 5,
         "paddingRight": 10,
+        "paddingTop": 5,
         "width": "50%",
       }
     }
@@ -172,7 +173,7 @@ exports[`4. tile d 1`] = `
           "fontSize": 22,
           "fontWeight": "900",
           "lineHeight": 22,
-          "marginBottom": 10,
+          "marginBottom": 5,
         }
       }
     >
@@ -198,6 +199,7 @@ exports[`5. tile e 1`] = `
       Object {
         "paddingBottom": 5,
         "paddingRight": 10,
+        "paddingTop": 10,
         "width": "50%",
       }
     }
@@ -306,6 +308,7 @@ exports[`7. tile g 1`] = `
     style={
       Object {
         "justifyContent": "center",
+        "paddingBottom": 0,
         "paddingHorizontal": 10,
         "paddingTop": 5,
         "width": "70%",
@@ -451,7 +454,7 @@ exports[`9. tile i 1`] = `
         "alignItems": "center",
         "backgroundColor": "#F0F0F0",
         "paddingBottom": 15,
-        "paddingHorizontal": 40,
+        "paddingHorizontal": 20,
         "paddingTop": 20,
       }
     }
@@ -749,6 +752,7 @@ exports[`16. tile p 1`] = `
     style={
       Object {
         "alignItems": "center",
+        "paddingBottom": 15,
         "paddingTop": 10,
       }
     }
@@ -782,7 +786,7 @@ exports[`16. tile p 1`] = `
       style={
         Object {
           "color": "#696969",
-          "fontFamily": "TimesModern-Regular",
+          "fontFamily": "TimesDigitalW04-Regular",
           "fontSize": 14,
           "lineHeight": 20,
           "paddingBottom": 10,
