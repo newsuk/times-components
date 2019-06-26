@@ -4,9 +4,6 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { Placeholder } from "@times-components/image";
 
-const HTML_IMPORTS_SUPPORTED = "import" in document.createElement("link");
-const REGISTER_ELEMENT_SUPPORTED = !!document.registerElement;
-
 function ensureElement(selector, createElement) {
   let element = document.body.querySelector(selector);
 
@@ -44,15 +41,22 @@ function ensureImport(src) {
   });
 }
 
-function polyfillWCIfNecessary() {
-  if (!HTML_IMPORTS_SUPPORTED || !REGISTER_ELEMENT_SUPPORTED) {
+export function polyfillWCIfNecessary() {
+  const htmlImportsSupported = "import" in document.createElement("link");
+  const registerElementSupported = !!document.registerElement;
+
+  if (!htmlImportsSupported || !registerElementSupported) {
     return Promise.all([
-      ensureScript("https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.24/webcomponents-lite.min.js"),
+      ensureScript(
+        "https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.24/webcomponents-lite.min.js"
+      ),
       new Promise(resolve => {
         window.addEventListener("WebComponentsReady", resolve);
       })
-    ])
+    ]);
   }
+
+  return null;
 }
 
 export default class InteractiveWrapper extends Component {
@@ -65,7 +69,9 @@ export default class InteractiveWrapper extends Component {
   }
 
   async componentDidMount() {
-    this.whenReady = polyfillWCIfNecessary();
+    const { fetchPolyfill } = this.props;
+
+    this.whenReady = fetchPolyfill();
 
     await this.insertComponent();
   }
@@ -84,6 +90,8 @@ export default class InteractiveWrapper extends Component {
     component.innerHTML = "";
     placeholder.style.cssText += "display: block !important";
 
+    await ensureImport(source);
+
     const newElement = document.createElement(element);
 
     Object.keys(attributes).forEach(key =>
@@ -97,7 +105,6 @@ export default class InteractiveWrapper extends Component {
     // specifically, its required to correctly re-render after a react re-render
     newElement.outerHTML += "";
 
-    await ensureImport(source);
     placeholder.style.cssText += "display: none !important";
   }
 
@@ -108,7 +115,7 @@ export default class InteractiveWrapper extends Component {
           ref={this.placeholder}
           style={{ height: 150, position: "relative" }}
         >
-          <Placeholder borderRadius={false} />
+          <Placeholder />
         </div>
         <div ref={this.component} />
       </>
@@ -119,8 +126,11 @@ export default class InteractiveWrapper extends Component {
 InteractiveWrapper.propTypes = {
   attributes: PropTypes.object,
   element: PropTypes.string.isRequired,
-  source: PropTypes.string.isRequired
+  source: PropTypes.string.isRequired,
+  fetchPolyfill: PropTypes.func
 };
+
 InteractiveWrapper.defaultProps = {
-  attributes: {}
+  attributes: {},
+  fetchPolyfill: polyfillWCIfNecessary
 };
