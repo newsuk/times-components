@@ -20,9 +20,7 @@ export default {
           "chapterHeading"
         );
 
-        return (
-          <InteractiveWrapper {...fixtures[value]} />
-        );
+        return <InteractiveWrapper {...fixtures[value]} />;
       },
       name: "Interactive Wrapper",
       type: "story"
