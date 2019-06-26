@@ -15,6 +15,7 @@ addDecorator(withInfo({
 }));
 addDecorator(withKnobs);
 addDecorator(withOptions({
+  addonPanelInRight: true,
   name: 'Times Components',
   hierarchySeparator: /\//
 }));
