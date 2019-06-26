@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.6](https://github.com/newsuk/times-components/compare/@times-components/text-flow@0.1.5...@times-components/text-flow@0.1.6) (2019-06-26)
+
+
+### Bug Fixes
+
+* remove textflow storyboook ([#2082](https://github.com/newsuk/times-components/issues/2082)) ([62d9a24](https://github.com/newsuk/times-components/commit/62d9a24))
+
+
+
+
+
 ## [0.1.5](https://github.com/newsuk/times-components/compare/@times-components/text-flow@0.1.4...@times-components/text-flow@0.1.5) (2019-06-25)
 
 
