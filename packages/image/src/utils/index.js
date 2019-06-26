@@ -12,7 +12,8 @@ const appendParamsToQuery = (uriString, paramMap) => {
       !(
         (item && finalUri.includes(`?${item.name}`)) ||
         finalUri.includes(`&${item.name}`)
-      )
+      ) &&
+      item.value
     ) {
       const separator = finalUri.includes("?") ? "&" : "?";
       finalUri = `${finalUri}${separator}${item.name}=${item.value}`;

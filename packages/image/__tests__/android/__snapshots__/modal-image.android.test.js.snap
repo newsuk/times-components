@@ -57,7 +57,7 @@ exports[`1. modal image 1`] = `
                 show={false}
                 source={
                   Object {
-                    "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800&offline=true&rel_height=undefined&rel_width=undefined&rel_horizontal_offset=undefined&rel_vertical_offset=undefined",
+                    "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800&offline=true",
                   }
                 }
               />
@@ -119,7 +119,7 @@ exports[`1. modal image 1`] = `
           show={false}
           source={
             Object {
-              "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800&offline=true&rel_height=undefined&rel_width=undefined&rel_horizontal_offset=undefined&rel_vertical_offset=undefined",
+              "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800&offline=true",
             }
           }
         />
@@ -337,7 +337,7 @@ exports[`3. modal image with custom highressize 1`] = `
                 show={false}
                 source={
                   Object {
-                    "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800&offline=true&rel_height=undefined&rel_width=undefined&rel_horizontal_offset=undefined&rel_vertical_offset=undefined",
+                    "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800&offline=true",
                   }
                 }
               />
@@ -399,7 +399,7 @@ exports[`3. modal image with custom highressize 1`] = `
           show={false}
           source={
             Object {
-              "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080&offline=true&rel_height=undefined&rel_width=undefined&rel_horizontal_offset=undefined&rel_vertical_offset=undefined",
+              "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080&offline=true",
             }
           }
         />
