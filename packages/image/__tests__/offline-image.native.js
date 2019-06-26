@@ -27,9 +27,7 @@ export default () => {
         const images = testInstance.root.findAll(
           node => node.type === ReactNativeImage
         );
-        expect(images[0].props.source.uri).toEqual(
-          `${uri}&offline=true`
-        );
+        expect(images[0].props.source.uri).toEqual(`${uri}&offline=true`);
         expect(images[1].props.source.uri).toEqual(uri);
       }
     }
