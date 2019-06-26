@@ -66,7 +66,7 @@ exports[`interactive-wrapper renders the placeholder correctly 1`] = `
 </InteractiveWrapper>
 `;
 
-exports[`interactive-wrapper updates the renderered interactive on update 1`] = `
+exports[`interactive-wrapper updates the rendered interactive on update 1`] = `
 <div>
   <div
     style="height: 150px; position: relative; display: none !important;"

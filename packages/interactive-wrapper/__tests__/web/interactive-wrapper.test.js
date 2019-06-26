@@ -209,4 +209,31 @@ describe("interactive-wrapper", () => {
 
     expect(container).toMatchSnapshot();
   });
+
+  it("ensure that the interactive is only ever inserted once", async () => {
+    const polyfillPromise = Promise.resolve();
+    const component = mount(<InteractiveWrapper {...props} element="test-element" fetchPolyfill={() => polyfillPromise} />, {
+      attachTo: container
+    });
+
+    const instance = component.instance();
+    const promise = instance.componentDidMount();
+
+    await polyfillPromise;
+
+    component.setProps({ element: "another-test-element" });
+
+    const promise2 = instance.componentDidUpdate();
+
+    document.querySelector("link").onload();
+    await polyfillPromise;
+
+    await Promise.all([
+      promise,
+      promise2
+    ]);
+
+    expect(container.querySelectorAll("another-test-element")).toHaveLength(1);
+    expect(container.querySelectorAll("test-element")).toHaveLength(0);
+  })
 });
