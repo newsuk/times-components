@@ -212,9 +212,16 @@ describe("interactive-wrapper", () => {
 
   it("ensure that the interactive is only ever inserted once", async () => {
     const polyfillPromise = Promise.resolve();
-    const component = mount(<InteractiveWrapper {...props} element="test-element" fetchPolyfill={() => polyfillPromise} />, {
-      attachTo: container
-    });
+    const component = mount(
+      <InteractiveWrapper
+        {...props}
+        element="test-element"
+        fetchPolyfill={() => polyfillPromise}
+      />,
+      {
+        attachTo: container
+      }
+    );
 
     const instance = component.instance();
     const promise = instance.componentDidMount();
@@ -228,12 +235,9 @@ describe("interactive-wrapper", () => {
     document.querySelector("link").onload();
     await polyfillPromise;
 
-    await Promise.all([
-      promise,
-      promise2
-    ]);
+    await Promise.all([promise, promise2]);
 
     expect(container.querySelectorAll("another-test-element")).toHaveLength(1);
     expect(container.querySelectorAll("test-element")).toHaveLength(0);
-  })
+  });
 });
