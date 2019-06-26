@@ -62,3 +62,7 @@ uploaded to maven.
 4. Copy newly built android bundle to andriod repo `cp android-app/xnative/src/main/assets/index.android.bundle ../../nu-projectd-times-smartphone-android/mobile/src/main/assets/index.android.bundle`
 5. before building, update the version in android-app/package.json to something that doesnt exist in nu-android, mobile/build.gradle change the version to match in the top level build.gradle add the local repo: `maven { url "../../times-components/android-app/repo"}`
 6. then using android studio build the app onto the device
+
+### Upgrade Times Component in the Android app
+
+see [Readme](https://github.com/newsuk/nu-projectd-times-smartphone-android/blob/develop/CONTRIBUTING.md#upgrading-to-the-latest-times-component)
