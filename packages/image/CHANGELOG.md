@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.3.0](https://github.com/newsuk/times-components/compare/@times-components/image@6.2.3...@times-components/image@6.3.0) (2019-06-26)
+
+
+### Features
+
+* ios offline images ([#1820](https://github.com/newsuk/times-components/issues/1820)) ([5a12984](https://github.com/newsuk/times-components/commit/5a12984))
+
+
+
+
+
 ## [6.2.3](https://github.com/newsuk/times-components/compare/@times-components/image@6.2.2...@times-components/image@6.2.3) (2019-06-24)
 
 **Note:** Version bump only for package @times-components/image
