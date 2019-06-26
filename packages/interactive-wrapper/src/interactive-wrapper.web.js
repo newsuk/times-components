@@ -92,6 +92,12 @@ export default class InteractiveWrapper extends Component {
 
     await ensureImport(source);
 
+    // It is possible for insertComponent to have been called again whilst the
+    // import link tag was loading. and therefore it is possible for multiple
+    // interactives to be inserted – therefore, we ensure that the interactive
+    // container is empty before inserting
+    component.innerHTML = "";
+
     const newElement = document.createElement(element);
 
     Object.keys(attributes).forEach(key =>
@@ -101,8 +107,8 @@ export default class InteractiveWrapper extends Component {
     component.appendChild(newElement);
 
     // Do not remove this. This seems to notify polymer to correctly
-    // render the web component correctly in more circumstances
-    // specifically, its required to correctly re-render after a react re-render
+    // render the web component in more circumstances, specifically,
+    // its required to correctly re-render after a react re-render
     newElement.outerHTML += "";
 
     placeholder.style.cssText += "display: none !important";
