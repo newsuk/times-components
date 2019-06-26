@@ -36,7 +36,4 @@ on-the-fly bundles for the react development.
 
 ### Upgrade Times Component in the iOS app
 
-1. clone [repo](https://github.com/newsuk/nu-digital-projectd-times-smartphone-ios)
-2. update the TimesComponents [version](https://github.com/newsuk/nu-digital-projectd-times-smartphone-ios/blob/aa53d8fb59c90291f569bc814d41859a38a2ce2f/Podfile#L61) to the latest available [here](https://github.com/newsuk/times-pod-specs/tree/master/TimesComponents)
-3. run `bundle exec pod install`, update any other dependancies that it may require using `bundle exec pod update [Package Name]`
-4. test and commit Podfile changes and the Pods then create a pull request for the app team to review
+see [Readme](https://github.com/newsuk/nu-digital-projectd-times-smartphone-ios/blob/develop/README.md)
