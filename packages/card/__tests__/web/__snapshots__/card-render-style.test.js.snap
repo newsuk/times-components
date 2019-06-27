@@ -85,6 +85,16 @@ exports[`card with default layout 1`] = `
 }
 
 .IS1 {
+  max-width: 25%;
+  max-height: 50%;
+}
+
+.IS2 {
+  max-width: 25%;
+  max-height: 50%;
+}
+
+.IS3 {
   display: table;
   height: 0;
   overflow: hidden;

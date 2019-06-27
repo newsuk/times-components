@@ -2,44 +2,139 @@
 /* eslint-disable react/forbid-prop-types */
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import { Placeholder } from "@times-components/image";
+
+function ensureElement(selector, createElement) {
+  if (document.body.querySelector(selector)) {
+    return Promise.resolve(null);
+  }
+
+  return new Promise((resolve, reject) => {
+    const element = createElement();
+
+    element.onload = resolve;
+    element.onerror = reject;
+
+    document.body.appendChild(element);
+  });
+}
+
+function ensureScript(src) {
+  return ensureElement(`script[src="${src}"]`, () => {
+    const script = document.createElement("script");
+    script.setAttribute("async", "async");
+    script.setAttribute("src", src);
+
+    return script;
+  });
+}
+
+function ensureImport(src) {
+  return ensureElement(`link[href="${src}"]`, () => {
+    const link = document.createElement("link");
+    link.setAttribute("href", src);
+    link.setAttribute("rel", "import");
+
+    return link;
+  });
+}
+
+export function polyfillWCIfNecessary() {
+  const htmlImportsSupported = "import" in document.createElement("link");
+  const registerElementSupported = !!document.registerElement;
+
+  if (!htmlImportsSupported || !registerElementSupported) {
+    return Promise.all([
+      ensureScript(
+        "https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.24/webcomponents-lite.min.js"
+      ),
+      new Promise(resolve => {
+        window.addEventListener("WebComponentsReady", resolve);
+      })
+    ]);
+  }
+
+  return null;
+}
 
 export default class InteractiveWrapper extends Component {
   constructor(props) {
     super(props);
+
     this.placeholder = React.createRef(null);
+    this.component = React.createRef(null);
+    this.whenReady = null;
   }
 
-  componentDidMount() {
+  async componentDidMount() {
+    const { fetchPolyfill } = this.props;
+
+    this.whenReady = fetchPolyfill();
+
+    await this.insertComponent();
+  }
+
+  async componentDidUpdate() {
+    await this.insertComponent();
+  }
+
+  async insertComponent() {
+    await this.whenReady;
+
     const { attributes, element, source } = this.props;
     const placeholder = this.placeholder.current;
-    const { parentNode } = placeholder;
+    const component = this.component.current;
+
+    component.innerHTML = "";
+    placeholder.style.cssText += "display: block !important";
+
+    await ensureImport(source);
+
+    // It is possible for insertComponent to have been called again whilst the
+    // import link tag was loading. and therefore it is possible for multiple
+    // interactives to be inserted – therefore, we ensure that the interactive
+    // container is empty before inserting
+    component.innerHTML = "";
 
     const newElement = document.createElement(element);
-    const link = document.createElement("link");
-
-    link.setAttribute("href", source);
-    link.setAttribute("rel", "import");
 
     Object.keys(attributes).forEach(key =>
       newElement.setAttribute(key, attributes[key])
     );
 
-    parentNode.replaceChild(newElement, placeholder);
-    parentNode.insertBefore(link, newElement);
+    component.appendChild(newElement);
 
-    delete this.placeholder.current;
+    // Do not remove this. This seems to notify polymer to correctly
+    // render the web component in more circumstances, specifically,
+    // its required to correctly re-render after a react re-render
+    newElement.outerHTML += "";
+
+    placeholder.style.cssText += "display: none !important";
   }
 
   render() {
-    return <div ref={this.placeholder} />;
+    return (
+      <>
+        <div
+          ref={this.placeholder}
+          style={{ height: 150, position: "relative" }}
+        >
+          <Placeholder />
+        </div>
+        <div ref={this.component} />
+      </>
+    );
   }
 }
 
 InteractiveWrapper.propTypes = {
   attributes: PropTypes.object,
   element: PropTypes.string.isRequired,
-  source: PropTypes.string.isRequired
+  source: PropTypes.string.isRequired,
+  fetchPolyfill: PropTypes.func
 };
+
 InteractiveWrapper.defaultProps = {
-  attributes: {}
+  attributes: {},
+  fetchPolyfill: polyfillWCIfNecessary
 };

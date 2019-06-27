@@ -107,6 +107,16 @@ exports[`1. card loading state 1`] = `
 }
 
 .IS1 {
+  max-width: 25%;
+  max-height: 50%;
+}
+
+.IS2 {
+  max-width: 25%;
+  max-height: 50%;
+}
+
+.IS3 {
   display: table;
   height: 0;
   overflow: hidden;
@@ -115,38 +125,29 @@ exports[`1. card loading state 1`] = `
   padding-bottom: 150%;
 }
 
-.IS2 {
+.IS4 {
   background-image: linear-gradient(264deg, #F9F9F9 0%, #EDEDED 100%);
 }
 
-.IS3 {
-  height: 24;
-  margin-bottom: 10px;
-  max-width: 300;
-}
-
-.IS4 {
-  height: 24;
-  margin-bottom: 10px;
-  max-width: 300;
-}
-
 .IS5 {
-  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+  height: 24;
+  margin-bottom: 10px;
+  max-width: 300;
 }
 
 .IS6 {
-  height: 10;
+  height: 24;
   margin-bottom: 10px;
+  max-width: 300;
 }
 
 .IS7 {
-  height: 10;
-  margin-bottom: 10px;
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
 }
 
 .IS8 {
-  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+  height: 10;
+  margin-bottom: 10px;
 }
 
 .IS9 {
@@ -155,21 +156,30 @@ exports[`1. card loading state 1`] = `
 }
 
 .IS10 {
+  background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
+}
+
+.IS11 {
   height: 10;
   margin-bottom: 10px;
 }
 
-.IS11 {
+.IS12 {
+  height: 10;
+  margin-bottom: 10px;
+}
+
+.IS13 {
   background-image: linear-gradient(267deg, #F9F9F9 0%, #EDEDED 100%);
 }
 
-.IS12 {
+.IS14 {
   height: 10;
   margin-bottom: 0;
   max-width: 240;
 }
 
-.IS13 {
+.IS15 {
   height: 10;
   margin-bottom: 0;
   max-width: 240;
@@ -237,25 +247,25 @@ exports[`1. card loading state 1`] = `
         >
           <_default>
             <Gradient
-              className="IS4"
+              className="IS6"
               degrees={264}
               endPoint="1"
               startPoint="0"
             />
             <Gradient
-              className="IS7"
+              className="IS9"
               degrees={267}
               endPoint="1"
               startPoint="0"
             />
             <Gradient
-              className="IS10"
+              className="IS12"
               degrees={267}
               endPoint="1"
               startPoint="0"
             />
             <Gradient
-              className="IS13"
+              className="IS15"
               degrees={267}
               endPoint="1"
               startPoint="0"
@@ -436,6 +446,16 @@ exports[`2. card with reversed loading state 1`] = `
 }
 
 .IS13 {
+  max-width: 25%;
+  max-height: 50%;
+}
+
+.IS14 {
+  max-width: 25%;
+  max-height: 50%;
+}
+
+.IS15 {
   display: table;
   height: 0;
   overflow: hidden;
