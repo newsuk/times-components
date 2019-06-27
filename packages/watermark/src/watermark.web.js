@@ -5,7 +5,7 @@ import { colours } from "@times-components/styleguide";
 const Watermark = ({ height, viewBox, width }) => (
   <span className="watermark-svg-wrapper" style={{color: colours.functional.brandColour}}>
     <svg viewBox={viewBox}  width={width} height={height}>
-      <use href="watermark.svg#watermark"></use>
+      <use href="./d/img/watermark.svg#watermark"></use>
     </svg>
   </span>
 );
