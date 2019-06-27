@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.2.0](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.1.11...@times-components/article-list@9.2.0) (2019-06-27)
+
+
+### Features
+
+* add polyfill for web components in interactive wrapper ([#2081](https://github.com/newsuk/times-components/issues/2081)) ([cde8f37](https://github.com/newsuk/times-components/commit/cde8f37))
+
+
+
+
+
 ## [9.1.11](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.1.10...@times-components/article-list@9.1.11) (2019-06-26)
 
 **Note:** Version bump only for package @times-components/article-list

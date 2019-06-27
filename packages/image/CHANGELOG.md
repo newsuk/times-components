@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.4.0](https://github.com/newsuk/times-components/compare/@times-components/image@6.3.0...@times-components/image@6.4.0) (2019-06-27)
+
+
+### Features
+
+* add polyfill for web components in interactive wrapper ([#2081](https://github.com/newsuk/times-components/issues/2081)) ([cde8f37](https://github.com/newsuk/times-components/commit/cde8f37))
+
+
+
+
+
 # [6.3.0](https://github.com/newsuk/times-components/compare/@times-components/image@6.2.3...@times-components/image@6.3.0) (2019-06-26)
 
 

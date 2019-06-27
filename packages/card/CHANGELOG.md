@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.2.0](https://github.com/newsuk/times-components/compare/@times-components/card@6.1.4...@times-components/card@6.2.0) (2019-06-27)
+
+
+### Features
+
+* add polyfill for web components in interactive wrapper ([#2081](https://github.com/newsuk/times-components/issues/2081)) ([cde8f37](https://github.com/newsuk/times-components/commit/cde8f37))
+
+
+
+
+
 ## [6.1.4](https://github.com/newsuk/times-components/compare/@times-components/card@6.1.3...@times-components/card@6.1.4) (2019-06-26)
 
 **Note:** Version bump only for package @times-components/card
