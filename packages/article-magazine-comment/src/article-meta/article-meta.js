@@ -24,7 +24,7 @@ const ArticleMeta = ({
       isTablet && styles.metaContainerTablet
     ]}
   >
-    {bylines && (
+    {bylines.length && (
       <View style={[styles.meta, isTablet && styles.metaTablet]}>
         <ArticleBylineWithLinks ast={bylines} onAuthorPress={onAuthorPress} />
       </View>

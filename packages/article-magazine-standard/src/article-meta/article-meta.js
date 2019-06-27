@@ -19,7 +19,7 @@ const ArticleMeta = ({
   publishedTime
 }) => (
   <View style={[styles.metaContainer, isTablet && styles.metaContainerTablet]}>
-    {bylines && (
+    {bylines.length && (
       <View style={[styles.meta, isTablet && styles.metaTablet]}>
         <Context.Consumer>
           {({ theme: { sectionColour } }) => (
