@@ -15,7 +15,7 @@ exports[`1. pull quote in culture magazine 1`] = `
     style={
       Object {
         "color": "#696969",
-        "fontFamily": "Flama-Bold",
+        "fontFamily": "FlamaBold",
         "fontSize": 75,
         "marginBottom": -40,
         "marginLeft": -3,

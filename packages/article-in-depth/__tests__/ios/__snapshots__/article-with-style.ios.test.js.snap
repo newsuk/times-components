@@ -170,7 +170,7 @@ exports[`full article with style in the culture magazine 1`] = `
         style={
           Object {
             "color": "rgba(255, 255, 255, 1)",
-            "fontFamily": "Flama-Bold",
+            "fontFamily": "FlamaBold",
             "fontSize": 30,
             "lineHeight": 35,
             "marginBottom": 10,
@@ -578,7 +578,7 @@ exports[`tablet full article with style in the culture magazine 1`] = `
         style={
           Object {
             "color": "rgba(255, 255, 255, 1)",
-            "fontFamily": "Flama-Bold",
+            "fontFamily": "FlamaBold",
             "fontSize": 30,
             "lineHeight": 35,
             "marginBottom": 10,

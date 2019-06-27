@@ -54,7 +54,7 @@ exports[`1. pull quote in culture magazine 1`] = `
 
 .IS1 {
   color: rgba(105,105,105,1.00);
-  font-family: Flama-Bold;
+  font-family: FlamaBold;
   font-size: 75px;
   margin-bottom: -40px;
   margin-left: -3px;

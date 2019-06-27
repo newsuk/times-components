@@ -26,7 +26,7 @@ exports[`full article with style in the culture magazine 1`] = `
       style={
         Object {
           "color": "#1D1D1B",
-          "fontFamily": "Flama-Bold",
+          "fontFamily": "FlamaBold",
           "fontSize": 30,
           "lineHeight": 35,
           "marginBottom": 10,
