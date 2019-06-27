@@ -33,3 +33,7 @@ on-the-fly bundles for the react development.
 - Run the application with Xcode.
 - Go to Settings in the app. Tap 7 times `Version`. Tap `Debug` when it appears. Enable React Native Flags.
 - Open React-Native articles and enjoy.
+
+### Upgrade Times Component in the iOS app
+
+see [Readme](https://github.com/newsuk/nu-digital-projectd-times-smartphone-ios/blob/develop/README.md)

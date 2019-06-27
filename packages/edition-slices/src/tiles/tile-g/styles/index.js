@@ -21,7 +21,8 @@ const styles = {
     justifyContent: "center",
     paddingHorizontal: spacing(2),
     paddingTop: spacing(1),
-    width: "70%"
+    width: "70%",
+    paddingBottom: 0
   }
 };
 

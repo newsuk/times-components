@@ -13,6 +13,9 @@ const styles = {
   summaryContainer: {
     marginHorizontal: spacing(2),
     marginTop: spacing(2)
+  },
+  labelLink: {
+    marginTop: spacing(1)
   }
 };
 

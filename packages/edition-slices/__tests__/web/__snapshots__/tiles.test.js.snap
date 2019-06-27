@@ -2,6 +2,11 @@
 
 exports[`1. tile a 1`] = `
 <Link
+  linkStyle={
+    Object {
+      "marginTop": "5px",
+    }
+  }
   url="/article/123"
 >
   <div>

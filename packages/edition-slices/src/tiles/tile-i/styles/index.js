@@ -17,7 +17,7 @@ const styles = {
     alignItems: "center",
     backgroundColor: colours.functional.border,
     paddingBottom: spacing(3),
-    paddingHorizontal: spacing(8),
+    paddingHorizontal: spacing(4),
     paddingTop: spacing(4)
   }
 };
