@@ -5,15 +5,13 @@ import PropTypes from "prop-types";
 import { Placeholder } from "@times-components/image";
 
 function ensureElement(selector, createElement) {
-  let element = document.body.querySelector(selector);
-
-  if (element) {
-    return Promise.resolve();
+  if (document.body.querySelector(selector)) {
+    return Promise.resolve(null);
   }
 
-  element = createElement();
-
   return new Promise((resolve, reject) => {
+    const element = createElement();
+
     element.onload = resolve;
     element.onerror = reject;
 

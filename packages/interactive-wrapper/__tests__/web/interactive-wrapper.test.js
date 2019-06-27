@@ -20,8 +20,18 @@ addSerializers(expect, enzymeTreeSerializer());
 describe("interactive-wrapper", () => {
   let container;
   let props;
+  let polyfillPromise;
+
+  async function waitForInserted() {
+    await polyfillPromise;
+    Array.from(document.querySelectorAll("link")).forEach(link =>
+      link.onload()
+    );
+  }
 
   beforeEach(() => {
+    jest.useFakeTimers();
+
     document.body.innerHTML = "";
     delete document.registerElement;
     delete HTMLLinkElement.prototype.import;
@@ -29,6 +39,7 @@ describe("interactive-wrapper", () => {
     container = document.createElement("div");
 
     document.body.appendChild(container);
+    polyfillPromise = Promise.resolve(null);
     props = {
       attributes: {
         chaptercounter: "Chapter%20one",
@@ -39,7 +50,7 @@ describe("interactive-wrapper", () => {
       id: "a0534eee-682e-4955-8e1e-84b428ef1e79",
       source:
         "//components.timesdev.tools/lib2/times-chapter-header-1.0.0/chapter-header.html",
-      fetchPolyfill: () => Promise.resolve(null)
+      fetchPolyfill: () => polyfillPromise
     };
   });
 
@@ -89,17 +100,17 @@ describe("interactive-wrapper", () => {
         hasResolved = true;
       });
 
-      await delay(0);
+      jest.runAllTicks();
       expect(hasResolved).toEqual(false);
 
       document.body.querySelector("script").onload();
 
-      await delay(0);
+      jest.runAllTicks();
       expect(hasResolved).toEqual(false);
 
       window.dispatchEvent(new Event("WebComponentsReady"));
 
-      await delay(0);
+      jest.runAllTicks();
       expect(hasResolved).toEqual(true);
 
       await promise;
@@ -131,18 +142,6 @@ describe("interactive-wrapper", () => {
     expect(fetchPolyfill).toHaveBeenCalled();
   });
 
-  it("propagates errors when fetching polyfill", async () => {
-    const error = new Error("failed to fetch polyfill");
-    const fetchPolyfill = () => Promise.reject(error);
-    const component = mount(
-      <InteractiveWrapper {...props} fetchPolyfill={fetchPolyfill} />
-    );
-
-    await expect(component.instance().componentDidMount()).rejects.toThrow(
-      error
-    );
-  });
-
   it("renders the placeholder correctly", () => {
     const component = mount(<InteractiveWrapper {...props} />);
 
@@ -152,8 +151,9 @@ describe("interactive-wrapper", () => {
   it("correctly inserts the link tag for the component only once", async () => {
     const component = mount(<InteractiveWrapper {...props} />);
 
-    await component.instance().componentDidMount();
-    await component.instance().componentDidMount();
+    component.setProps({ attributes: { another: "attribute" } });
+
+    await waitForInserted();
 
     const links = document.querySelectorAll("link");
 
@@ -162,28 +162,27 @@ describe("interactive-wrapper", () => {
   });
 
   it("renders correctly once polyfill is loaded", async () => {
-    const component = mount(<InteractiveWrapper {...props} />, {
+    mount(<InteractiveWrapper {...props} />, {
       attachTo: container
     });
 
-    await component.instance().componentDidMount();
+    await waitForInserted();
 
     expect(container).toMatchSnapshot();
   });
 
   it("re-shows the placeholder on re-render", async () => {
-    const promise = Promise.resolve(null);
+    const component = mount(<InteractiveWrapper {...props} />, {
+      attachTo: container
+    });
 
-    const component = mount(
-      <InteractiveWrapper {...props} fetchPolyfill={() => promise} />,
-      { attachTo: container }
-    );
+    await waitForInserted();
 
-    await component.instance().componentDidMount();
+    component.setProps({
+      source: "//components.timesdev.tools/new-element.html"
+    });
 
-    component.instance().componentDidUpdate();
-
-    await promise;
+    await polyfillPromise;
 
     expect(container).toMatchSnapshot();
   });
@@ -193,7 +192,7 @@ describe("interactive-wrapper", () => {
       attachTo: container
     });
 
-    await component.instance().componentDidMount();
+    await waitForInserted();
 
     component.setProps({
       attributes: {
@@ -205,37 +204,28 @@ describe("interactive-wrapper", () => {
         "//components.timesdev.tools/lib2/times-another-component-1.0.0/another-component.html"
     });
 
-    await component.instance().componentDidUpdate();
+    await waitForInserted();
 
     expect(container).toMatchSnapshot();
   });
 
   it("ensure that the interactive is only ever inserted once", async () => {
-    const polyfillPromise = Promise.resolve();
+    jest.useRealTimers();
     const component = mount(
-      <InteractiveWrapper
-        {...props}
-        element="test-element"
-        fetchPolyfill={() => polyfillPromise}
-      />,
+      <InteractiveWrapper {...props} element="test-element" />,
       {
         attachTo: container
       }
     );
 
-    const instance = component.instance();
-    const promise = instance.componentDidMount();
-
     await polyfillPromise;
 
     component.setProps({ element: "another-test-element" });
 
-    const promise2 = instance.componentDidUpdate();
-
     document.querySelector("link").onload();
     await polyfillPromise;
 
-    await Promise.all([promise, promise2]);
+    await delay(0);
 
     expect(container.querySelectorAll("another-test-element")).toHaveLength(1);
     expect(container.querySelectorAll("test-element")).toHaveLength(0);
