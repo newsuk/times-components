@@ -15,7 +15,7 @@ import styles from "../styles";
 
 const ArticleMeta = ({ bylines, publicationName, publishedTime }) => (
   <MetaContainer>
-    {bylines && (
+    {bylines.length && (
       <Fragment>
         <Meta style={styles.meta}>
           <Context.Consumer>
