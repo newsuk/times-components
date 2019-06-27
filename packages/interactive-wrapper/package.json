@@ -58,7 +58,7 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/image": "6.2.3",
+    "@times-components/image": "6.3.0",
     "prop-types": "15.7.2",
     "react-native-webview": "5.10.0"
   },
