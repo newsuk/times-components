@@ -3,14 +3,8 @@ import styled from "styled-components";
 import { breakpoints, colours, spacing } from "@times-components/styleguide";
 
 export const MetaTextElement = styled(Text)`
-  border-top: 1px solid ${colours.functional.keyline};
-
-  @media (min-width: ${breakpoints.medium}px) {
-    padding-top: ${spacing(1)};
-    padding-bottom: ${spacing(1)};
-  }
-
   @media (min-width: ${breakpoints.wide}px) {
+    border-top: 1px solid ${colours.functional.keyline};
     line-height: 18px;
     padding-bottom: ${spacing(5)};
   }
@@ -21,12 +15,13 @@ export const Meta = styled(View)`
   margin-right: ${spacing(2)};
 
   @media (min-width: ${breakpoints.medium}px) {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: ${spacing(0)};
+    margin-right: ${spacing(0)};
   }
 
   @media (min-width: ${breakpoints.wide}px) {
-    padding-top: 0px;
-    margin-bottom: 0;
+    padding-top: ${spacing(0)};
+    margin-bottom: ${spacing(0)};
+    padding-bottom: ${spacing(0)};
   }
 `;

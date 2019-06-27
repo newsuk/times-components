@@ -129,10 +129,6 @@ exports[`full article with style 1`] = `
   line-height: 30px;
 }
 
-.c7 {
-  border-top: 1px solid #DBDBDB;
-}
-
 .c6 {
   margin-left: 10px;
   margin-right: 10px;
@@ -307,15 +303,9 @@ exports[`full article with style 1`] = `
   }
 }
 
-@media (min-width:768px) {
-  .c7 {
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
-}
-
 @media (min-width:1024px) {
   .c7 {
+    border-top: 1px solid #DBDBDB;
     line-height: 18px;
     padding-bottom: 25px;
   }
@@ -323,15 +313,16 @@ exports[`full article with style 1`] = `
 
 @media (min-width:768px) {
   .c6 {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 
 @media (min-width:1024px) {
   .c6 {
     padding-top: 0px;
-    margin-bottom: 0;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
   }
 }
 
@@ -425,15 +416,16 @@ exports[`full article with style 1`] = `
 }
 
 .S7 {
-  margin-bottom: 20px;
+  padding-top: 10px;
 }
 
 .S8 {
-  line-height: 17px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .S9 {
-  padding-top: 10px;
+  line-height: 17px;
 }
 
 .IS1 {
@@ -560,10 +552,10 @@ exports[`full article with style 1`] = `
       className="c5 responsiveweb__MetaContainer-sc-1gngn7q-3 c5 css-view-1dbjc4n"
     >
       <div
-        className="c6 responsiveweb__Meta-jtjuw7-1 c6 css-view-1dbjc4n r-borderBottomColor-91l5k4 r-borderBottomWidth-qklmqi r-marginBottom-117bsoe r-marginLeft-1n0xq6e r-marginRight-zso239 r-paddingLeft-gy4na3 r-paddingRight-9aemit S7"
+        className="c6 responsiveweb__Meta-jtjuw7-1 c6 css-view-1dbjc4n r-borderBottomColor-91l5k4 r-borderBottomWidth-qklmqi r-marginBottom-117bsoe r-marginLeft-1n0xq6e r-marginRight-zso239 r-paddingBottom-1mi0q7o r-paddingLeft-gy4na3 r-paddingRight-9aemit S8"
       >
         <div
-          className="c7 responsiveweb__MetaTextElement-jtjuw7-0 c7 css-text-901oao r-borderTopColor-1ozwgwe r-borderTopWidth-5kkj8d r-paddingBottom-1inuy60 r-paddingTop-glunga S2"
+          className="c7 responsiveweb__MetaTextElement-jtjuw7-0 c7 css-text-901oao r-borderTopColor-1ozwgwe r-borderTopWidth-5kkj8d r-paddingTop-m611by S7"
         >
           <span
             className="css-text-901oao css-textHasAncestor-16my406 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S6"
@@ -572,7 +564,7 @@ exports[`full article with style 1`] = `
           </span>
         </div>
         <div
-          className="c7 responsiveweb__MetaTextElement-jtjuw7-0 c7 css-text-901oao"
+          className="c7 responsiveweb__MetaTextElement-jtjuw7-0 c7 css-text-901oao r-paddingTop-m611by S7"
         >
           <span
             className="css-text-901oao css-textHasAncestor-16my406 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S6"
@@ -672,10 +664,10 @@ exports[`full article with style 1`] = `
                 className="css-view-1dbjc4n"
               >
                 <div
-                  className="css-view-1dbjc4n r-paddingTop-m611by S9"
+                  className="css-view-1dbjc4n r-paddingTop-m611by S7"
                 >
                   <div
-                    className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0 S8"
+                    className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0 S9"
                   >
                     This is video caption
                   </div>

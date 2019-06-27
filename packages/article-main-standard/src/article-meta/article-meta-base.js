@@ -30,7 +30,9 @@ const ArticleMetaBase = ({
   const data = [
     ArticleMetaRow(
       styles.datePublication,
-      !hasBylineData(bylines) ? styles.articleMetaElement : {},
+      !hasBylineData(bylines)
+        ? styles.articleMetaElementWithBorder
+        : styles.articleMetaElement,
       <DatePublication date={publishedTime} publication={publicationName} />,
       "articleDatePublication",
       RowWrapper
@@ -41,7 +43,7 @@ const ArticleMetaBase = ({
     return [
       ArticleMetaRow(
         styles.byline,
-        styles.articleMetaElement,
+        styles.articleMetaElementWithBorder,
         <ArticleBylineWithLinks ast={bylines} onAuthorPress={onAuthorPress} />,
         "articleByline",
         RowWrapper
