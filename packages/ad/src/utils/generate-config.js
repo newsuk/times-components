@@ -21,8 +21,8 @@ const slotPositions = {
   "ad-pixelteads": 2,
   "article-sponsored-ad": 2,
   default: 0,
-  header: 0,
-  "inline-ad": 1,
+  header: 1,
+  "inline-ad": 2,
   pixel: 2,
   pixelskin: 2,
   pixelteads: 2
