@@ -12,8 +12,7 @@ const styles = StyleSheet.create({
   metaContainer: {
     alignItems: "center",
     marginHorizontal: spacing(2),
-    paddingBottom: spacing(2),
-    paddingTop: spacing(2),
+    paddingVertical: spacing(2),
     borderTopColor: colours.functional.keyline,
     borderTopWidth: 1
   }
