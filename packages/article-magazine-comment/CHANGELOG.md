@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.7.1](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.7.0...@times-components/article-magazine-comment@3.7.1) (2019-06-28)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+# [3.7.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.6.14...@times-components/article-magazine-comment@3.7.0) (2019-06-27)
+
+
+### Features
+
+* add polyfill for web components in interactive wrapper ([#2081](https://github.com/newsuk/times-components/issues/2081)) ([cde8f37](https://github.com/newsuk/times-components/commit/cde8f37))
+
+
+
+
+
+## [3.6.14](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.6.13...@times-components/article-magazine-comment@3.6.14) (2019-06-27)
+
+
+### Bug Fixes
+
+* article meta layout when bylines are empty ([#2083](https://github.com/newsuk/times-components/issues/2083)) ([4e2bc77](https://github.com/newsuk/times-components/commit/4e2bc77))
+
+
+
+
+
 ## [3.6.13](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.6.12...@times-components/article-magazine-comment@3.6.13) (2019-06-26)
 
 **Note:** Version bump only for package @times-components/article-magazine-comment

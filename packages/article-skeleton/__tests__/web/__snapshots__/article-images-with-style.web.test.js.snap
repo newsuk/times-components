@@ -49,7 +49,7 @@ exports[`1. a primary image 1`] = `
 }
 
 .c2 {
-  margin: 30px auto;
+  margin: 0px auto 30px;
   background-color: #FFFFFF;
 }
 
@@ -209,7 +209,7 @@ exports[`2. a fullwidth image 1`] = `
 }
 
 .c2 {
-  margin: 30px auto;
+  margin: 0px auto 30px;
   background-color: #FFFFFF;
 }
 
@@ -365,7 +365,7 @@ exports[`3. a secondary image 1`] = `
 }
 
 .c2 {
-  margin: 30px auto;
+  margin: 0px auto 30px;
   background-color: #FFFFFF;
 }
 
@@ -541,7 +541,7 @@ exports[`4. an inline image 1`] = `
 }
 
 .c2 {
-  margin: 30px auto;
+  margin: 0px auto 30px;
   background-color: #FFFFFF;
 }
 

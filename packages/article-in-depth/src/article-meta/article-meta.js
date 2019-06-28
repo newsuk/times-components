@@ -17,7 +17,7 @@ const ArticleMeta = ({
   publishedTime
 }) => (
   <View style={isTablet && styles.metaContainerTabletFlow}>
-    {bylines && (
+    {bylines.length && (
       <Fragment>
         <View style={styles.meta}>
           <Context.Consumer>
