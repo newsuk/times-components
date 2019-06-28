@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.4.47](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.4.46...@times-components/tracking@2.4.47) (2019-06-28)
+
+**Note:** Version bump only for package @times-components/tracking
+
+
+
+
+
 ## [2.4.46](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.4.45...@times-components/tracking@2.4.46) (2019-06-24)
 
 **Note:** Version bump only for package @times-components/tracking
