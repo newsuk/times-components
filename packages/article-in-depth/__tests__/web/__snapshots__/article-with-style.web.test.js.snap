@@ -107,7 +107,7 @@ exports[`full article with style 1`] = `
 }
 
 .c11 {
-  margin: 30px auto;
+  margin: 0px auto 30px;
   background-color: #FFFFFF;
 }
 
@@ -307,7 +307,6 @@ exports[`full article with style 1`] = `
     margin-top: 0;
     margin-left: auto !important;
     margin-right: auto !important;
-    margin-bottom: 30px;
   }
 }
 
@@ -426,9 +425,6 @@ exports[`full article with style 1`] = `
   -webkit-align-items: center;
   -webkit-box-align: center;
   align-items: center;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  padding-top: 10px;
 }
 
 .S9 {
@@ -464,7 +460,7 @@ exports[`full article with style 1`] = `
 }
 
 .IS6 {
-  margin-bottom: 0px;
+  margin-bottom: 20px;
 }
 
 .IS7 {
@@ -573,7 +569,7 @@ exports[`full article with style 1`] = `
           <ArticleFlags />
         </div>
         <h2
-          className="c5 css-reset-4rbku5 responsiveweb__StandfirstContainer-sc-1nipn43-8 c5 css-text-901oao r-fontFamily-4h8ur4 r-fontSize-adyw6z r-lineHeight-eaezby r-marginBottom-ku1wi2 r-paddingHorizontal-utggzx r-textAlign-q4m81j IS4 S4"
+          className="c5 css-reset-4rbku5 responsiveweb__StandfirstContainer-sc-1nipn43-9 c5 css-text-901oao r-fontFamily-4h8ur4 r-fontSize-adyw6z r-lineHeight-eaezby r-marginBottom-ku1wi2 r-paddingHorizontal-utggzx r-textAlign-q4m81j IS4 S4"
         >
           Some Standfirst
         </h2>
@@ -583,7 +579,7 @@ exports[`full article with style 1`] = `
       className="c6 IS6"
     />
     <div
-      className="c2 responsiveweb__HeaderContainer-sc-1nipn43-2 c2 css-view-1dbjc4n r-alignItems-1awozwy r-borderBottomColor-91l5k4 r-borderBottomWidth-qklmqi r-borderTopColor-1ozwgwe r-borderTopWidth-5kkj8d r-marginBottom-117bsoe r-marginHorizontal-vlx1xi r-paddingBottom-1mi0q7o r-paddingTop-m611by S8"
+      className="c2 responsiveweb__HeaderContainer-sc-1nipn43-2 c2 css-view-1dbjc4n r-alignItems-1awozwy r-borderTopColor-1ozwgwe r-borderTopWidth-5kkj8d r-marginHorizontal-vlx1xi r-paddingVertical-1w50u8q S8"
     >
       <div
         className="c7 responsiveweb__MetaContainer-sc-1nipn43-6 c7 css-view-1dbjc4n"
@@ -828,7 +824,7 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 .c11 {
-  margin: 30px auto;
+  margin: 0px auto 30px;
   background-color: #FFFFFF;
 }
 
@@ -1028,7 +1024,6 @@ exports[`full article with style in the culture magazine 1`] = `
     margin-top: 0;
     margin-left: auto !important;
     margin-right: auto !important;
-    margin-bottom: 30px;
   }
 }
 
@@ -1147,9 +1142,6 @@ exports[`full article with style in the culture magazine 1`] = `
   -webkit-align-items: center;
   -webkit-box-align: center;
   align-items: center;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  padding-top: 10px;
 }
 
 .S9 {
@@ -1186,7 +1178,7 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 .IS6 {
-  margin-bottom: 0px;
+  margin-bottom: 20px;
 }
 
 .IS7 {
@@ -1295,7 +1287,7 @@ exports[`full article with style in the culture magazine 1`] = `
           <ArticleFlags />
         </div>
         <h2
-          className="c5 css-reset-4rbku5 responsiveweb__StandfirstContainer-sc-1nipn43-8 c5 css-text-901oao r-fontFamily-4h8ur4 r-fontSize-adyw6z r-lineHeight-eaezby r-marginBottom-ku1wi2 r-paddingHorizontal-utggzx r-textAlign-q4m81j IS4 S4"
+          className="c5 css-reset-4rbku5 responsiveweb__StandfirstContainer-sc-1nipn43-9 c5 css-text-901oao r-fontFamily-4h8ur4 r-fontSize-adyw6z r-lineHeight-eaezby r-marginBottom-ku1wi2 r-paddingHorizontal-utggzx r-textAlign-q4m81j IS4 S4"
         >
           Some Standfirst
         </h2>
@@ -1305,7 +1297,7 @@ exports[`full article with style in the culture magazine 1`] = `
       className="c6 IS6"
     />
     <div
-      className="c2 responsiveweb__HeaderContainer-sc-1nipn43-2 c2 css-view-1dbjc4n r-alignItems-1awozwy r-borderBottomColor-91l5k4 r-borderBottomWidth-qklmqi r-borderTopColor-1ozwgwe r-borderTopWidth-5kkj8d r-marginBottom-117bsoe r-marginHorizontal-vlx1xi r-paddingBottom-1mi0q7o r-paddingTop-m611by S8"
+      className="c2 responsiveweb__HeaderContainer-sc-1nipn43-2 c2 css-view-1dbjc4n r-alignItems-1awozwy r-borderTopColor-1ozwgwe r-borderTopWidth-5kkj8d r-marginHorizontal-vlx1xi r-paddingVertical-1w50u8q S8"
     >
       <div
         className="c7 responsiveweb__MetaContainer-sc-1nipn43-6 c7 css-view-1dbjc4n"
@@ -1550,7 +1542,7 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 .c11 {
-  margin: 30px auto;
+  margin: 0px auto 30px;
   background-color: #FFFFFF;
 }
 
@@ -1750,7 +1742,6 @@ exports[`full article with style in the style magazine 1`] = `
     margin-top: 0;
     margin-left: auto !important;
     margin-right: auto !important;
-    margin-bottom: 30px;
   }
 }
 
@@ -1869,9 +1860,6 @@ exports[`full article with style in the style magazine 1`] = `
   -webkit-align-items: center;
   -webkit-box-align: center;
   align-items: center;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  padding-top: 10px;
 }
 
 .S9 {
@@ -1908,7 +1896,7 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 .IS6 {
-  margin-bottom: 0px;
+  margin-bottom: 20px;
 }
 
 .IS7 {
@@ -2017,7 +2005,7 @@ exports[`full article with style in the style magazine 1`] = `
           <ArticleFlags />
         </div>
         <h2
-          className="c5 css-reset-4rbku5 responsiveweb__StandfirstContainer-sc-1nipn43-8 c5 css-text-901oao r-fontFamily-4h8ur4 r-fontSize-adyw6z r-lineHeight-eaezby r-marginBottom-ku1wi2 r-paddingHorizontal-utggzx r-textAlign-q4m81j IS4 S4"
+          className="c5 css-reset-4rbku5 responsiveweb__StandfirstContainer-sc-1nipn43-9 c5 css-text-901oao r-fontFamily-4h8ur4 r-fontSize-adyw6z r-lineHeight-eaezby r-marginBottom-ku1wi2 r-paddingHorizontal-utggzx r-textAlign-q4m81j IS4 S4"
         >
           Some Standfirst
         </h2>
@@ -2027,7 +2015,7 @@ exports[`full article with style in the style magazine 1`] = `
       className="c6 IS6"
     />
     <div
-      className="c2 responsiveweb__HeaderContainer-sc-1nipn43-2 c2 css-view-1dbjc4n r-alignItems-1awozwy r-borderBottomColor-91l5k4 r-borderBottomWidth-qklmqi r-borderTopColor-1ozwgwe r-borderTopWidth-5kkj8d r-marginBottom-117bsoe r-marginHorizontal-vlx1xi r-paddingBottom-1mi0q7o r-paddingTop-m611by S8"
+      className="c2 responsiveweb__HeaderContainer-sc-1nipn43-2 c2 css-view-1dbjc4n r-alignItems-1awozwy r-borderTopColor-1ozwgwe r-borderTopWidth-5kkj8d r-marginHorizontal-vlx1xi r-paddingVertical-1w50u8q S8"
     >
       <div
         className="c7 responsiveweb__MetaContainer-sc-1nipn43-6 c7 css-view-1dbjc4n"
@@ -2272,7 +2260,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 .c11 {
-  margin: 30px auto;
+  margin: 0px auto 30px;
   background-color: #FFFFFF;
 }
 
@@ -2472,7 +2460,6 @@ exports[`full article with style in the sunday times magazine 1`] = `
     margin-top: 0;
     margin-left: auto !important;
     margin-right: auto !important;
-    margin-bottom: 30px;
   }
 }
 
@@ -2591,9 +2578,6 @@ exports[`full article with style in the sunday times magazine 1`] = `
   -webkit-align-items: center;
   -webkit-box-align: center;
   align-items: center;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  padding-top: 10px;
 }
 
 .S9 {
@@ -2630,7 +2614,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 .IS6 {
-  margin-bottom: 0px;
+  margin-bottom: 20px;
 }
 
 .IS7 {
@@ -2739,7 +2723,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
           <ArticleFlags />
         </div>
         <h2
-          className="c5 css-reset-4rbku5 responsiveweb__StandfirstContainer-sc-1nipn43-8 c5 css-text-901oao r-fontFamily-4h8ur4 r-fontSize-adyw6z r-lineHeight-eaezby r-marginBottom-ku1wi2 r-paddingHorizontal-utggzx r-textAlign-q4m81j IS4 S4"
+          className="c5 css-reset-4rbku5 responsiveweb__StandfirstContainer-sc-1nipn43-9 c5 css-text-901oao r-fontFamily-4h8ur4 r-fontSize-adyw6z r-lineHeight-eaezby r-marginBottom-ku1wi2 r-paddingHorizontal-utggzx r-textAlign-q4m81j IS4 S4"
         >
           Some Standfirst
         </h2>
@@ -2749,7 +2733,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
       className="c6 IS6"
     />
     <div
-      className="c2 responsiveweb__HeaderContainer-sc-1nipn43-2 c2 css-view-1dbjc4n r-alignItems-1awozwy r-borderBottomColor-91l5k4 r-borderBottomWidth-qklmqi r-borderTopColor-1ozwgwe r-borderTopWidth-5kkj8d r-marginBottom-117bsoe r-marginHorizontal-vlx1xi r-paddingBottom-1mi0q7o r-paddingTop-m611by S8"
+      className="c2 responsiveweb__HeaderContainer-sc-1nipn43-2 c2 css-view-1dbjc4n r-alignItems-1awozwy r-borderTopColor-1ozwgwe r-borderTopWidth-5kkj8d r-marginHorizontal-vlx1xi r-paddingVertical-1w50u8q S8"
     >
       <div
         className="c7 responsiveweb__MetaContainer-sc-1nipn43-6 c7 css-view-1dbjc4n"

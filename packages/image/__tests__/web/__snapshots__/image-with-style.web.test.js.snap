@@ -25,6 +25,11 @@ exports[`1. default image 1`] = `
 }
 
 .IS1 {
+  max-width: 25%;
+  max-height: 50%;
+}
+
+.IS2 {
   display: table;
   height: 0;
   overflow: hidden;
@@ -38,7 +43,7 @@ exports[`1. default image 1`] = `
   className="css-view-1dbjc4n"
 >
   <div
-    className="IS1"
+    className="IS2"
   >
     <img
       className="c0"
@@ -46,7 +51,9 @@ exports[`1. default image 1`] = `
     <div
       className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-15282we r-justifyContent-1777fci S1"
     >
-      <Svg>
+      <Svg
+        className="IS1"
+      >
         <G>
           <Path />
         </G>
@@ -81,6 +88,11 @@ exports[`2. default modal 1`] = `
 }
 
 .IS1 {
+  max-width: 25%;
+  max-height: 50%;
+}
+
+.IS2 {
   display: table;
   height: 0;
   overflow: hidden;
@@ -94,7 +106,7 @@ exports[`2. default modal 1`] = `
   className="css-view-1dbjc4n"
 >
   <div
-    className="IS1"
+    className="IS2"
   >
     <img
       className="c0"
@@ -102,7 +114,9 @@ exports[`2. default modal 1`] = `
     <div
       className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-15282we r-justifyContent-1777fci S1"
     >
-      <Svg>
+      <Svg
+        className="IS1"
+      >
         <G>
           <Path />
         </G>
