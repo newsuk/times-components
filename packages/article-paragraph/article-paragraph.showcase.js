@@ -9,16 +9,33 @@ import paragraphData from "./fixtures/paragraph-showcase.json";
 import dropCapData from "./fixtures/drop-cap-showcase.json";
 import dropCapShortTextData from "./fixtures/drop-cap-short-text-showcase.json";
 import ArticleParagraph from "./src";
+import DropCapView from "./src/drop-cap";
 
-const renderParagraphWithScale = (select, ast) => {
+const renderParagraphWithScale = ({ select, boolean }, ast) => {
   const scale = select("Scale", scales, scales.medium);
   const section = select("Section", sections, "The Times Magazine");
   const theme = themeFactory(section, "magazinestandard");
+  const enableDropcap = boolean && boolean("Enable DropCap", true);
 
   return (
     <ContextProviderWithDefaults value={{ theme: { scale } }}>
       {renderTree(ast, {
         ...coreRenderers,
+        dropCap(key, { value }) {
+          return {
+            element: enableDropcap && (
+              <DropCapView
+                {...{
+                  colour: theme.sectionColour,
+                  font: theme.dropCapFont,
+                  key,
+                  dropCap: value,
+                  scale
+                }}
+              />
+            )
+          };
+        },
         paragraph(key, attributes, children, indx, node) {
           return {
             element: (
@@ -43,24 +60,25 @@ export default {
   children: [
     {
       component: ({ select }) =>
-        renderParagraphWithScale(select, paragraphData),
+        renderParagraphWithScale({ select }, paragraphData),
       name: "Paragraph",
       platform: "native",
       type: "story"
     },
     {
-      component: ({ select }) => renderParagraphWithScale(select, dropCapData),
+      component: ({ select, boolean }) =>
+        renderParagraphWithScale({ select, boolean }, dropCapData),
       name: "Paragraph with dropcap",
       platform: "native",
       type: "story"
     },
     {
-      component: ({ select }) =>
-        renderParagraphWithScale(select, dropCapShortTextData),
+      component: ({ select, boolean }) =>
+        renderParagraphWithScale({ select, boolean }, dropCapShortTextData),
       name: "DropCap paragraph with short text",
       platform: "native",
       type: "story"
     }
   ],
-  name: "Primitives/Article Paragraph"
+  name: "Primitives/Article Paragraph|Dropcap"
 };

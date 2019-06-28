@@ -240,4 +240,5 @@ ArticleBody.propTypes = {
   section: PropTypes.string
 };
 
+export { ArticleLink };
 export default ArticleBody;
