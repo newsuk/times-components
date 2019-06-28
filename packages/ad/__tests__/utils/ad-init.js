@@ -43,18 +43,79 @@ export default () => {
     expect(mock.pubAds.refresh).toHaveBeenCalledTimes(0);
   });
 
-  it("rejects if the init hook is called twice", () => {
-    const init = adInit(initOptions);
-    init.init();
-    return init.init().then(err => {
-      expect(err).toEqual("skipped");
-    });
+  it("calls all the vender functions when initially executed", () => {
+    const init1 = adInit(initOptions);
+
+    jest.spyOn(init1.apstag, "process").mockReturnValueOnce(Promise.resolve());
+    jest.spyOn(init1.prebid, "process").mockReturnValueOnce(Promise.resolve());
+    jest.spyOn(init1.gpt, "process").mockReturnValueOnce(Promise.resolve());
+    jest.spyOn(init1.gpt, "bid").mockReturnValueOnce(Promise.resolve());
+
+    init1.init();
+
+    expect(init1.prebid.process).toHaveBeenCalledTimes(1);
+    expect(init1.apstag.process).toHaveBeenCalledTimes(1);
+    expect(init1.gpt.process).toHaveBeenCalledTimes(1);
+    expect(init1.gpt.bid).toHaveBeenCalledTimes(1);
+  });
+
+  it("calls all the vender functions only once when initialised multiple times", () => {
+    const init1 = adInit(initOptions);
+
+    jest.spyOn(init1.apstag, "process").mockReturnValueOnce(Promise.resolve());
+    jest.spyOn(init1.prebid, "process").mockReturnValueOnce(Promise.resolve());
+    jest.spyOn(init1.gpt, "process").mockReturnValueOnce(Promise.resolve());
+    jest.spyOn(init1.gpt, "bid").mockReturnValue(Promise.resolve());
+
+    init1.init();
+    init1.init();
+
+    expect(init1.prebid.process).toHaveBeenCalledTimes(1);
+    expect(init1.apstag.process).toHaveBeenCalledTimes(1);
+    expect(init1.gpt.process).toHaveBeenCalledTimes(1);
+    expect(init1.gpt.bid).toHaveBeenCalledTimes(1);
+  });
+
+  it("calls all the vender functions only once when initialised multiple times", () => {
+    const init1 = adInit(initOptions);
+
+    jest.spyOn(init1.apstag, "process").mockReturnValueOnce(Promise.resolve());
+    jest.spyOn(init1.prebid, "process").mockReturnValueOnce(Promise.resolve());
+    jest.spyOn(init1.gpt, "process").mockReturnValueOnce(Promise.resolve());
+    jest.spyOn(init1.gpt, "bid").mockReturnValue(Promise.resolve());
+
+    init1.init();
+
+    expect(init1.prebid.process).toHaveBeenCalledTimes(1);
+    expect(init1.apstag.process).toHaveBeenCalledTimes(1);
+    expect(init1.gpt.process).toHaveBeenCalledTimes(1);
+    expect(init1.gpt.bid).toHaveBeenCalledTimes(1);
+
+    const init2 = adInit(
+      merge(initOptions, {
+        window: {
+          initCalled: true
+        }
+      })
+    );
+
+    jest.spyOn(init2.apstag, "process").mockReturnValueOnce(Promise.resolve());
+    jest.spyOn(init2.prebid, "process").mockReturnValueOnce(Promise.resolve());
+    jest.spyOn(init2.gpt, "process").mockReturnValueOnce(Promise.resolve());
+    jest.spyOn(init2.gpt, "bid").mockReturnValue(Promise.resolve());
+
+    init2.init();
+
+    expect(init2.prebid.process).not.toHaveBeenCalled();
+    expect(init2.apstag.process).not.toHaveBeenCalled();
+    expect(init2.gpt.process).not.toHaveBeenCalled();
+    expect(init2.gpt.bid).toHaveBeenCalledTimes(1);
   });
 
   it("reject if ads are disabled", () => {
     const init = adInit(merge(initOptions, { data: { disableAds: true } }));
     return init.init().then(err => {
-      expect(err).toEqual("skipped");
+      expect(err).toEqual("ads disabled");
     });
   });
 };

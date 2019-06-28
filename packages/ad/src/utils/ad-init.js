@@ -24,7 +24,7 @@ export default ({ el, data, platform, eventCallback, window }) => {
     }
   };
 
-  const { Promise, document, googletag, pbjs, apstag, initCalled } = window;
+  const { Promise, document, googletag, pbjs, apstag } = window;
   let localInitCalled = false;
   const isWeb = platform === "web";
   const { timeout, bidders } = data.prebidConfig;
@@ -32,21 +32,27 @@ export default ({ el, data, platform, eventCallback, window }) => {
 
   return {
     init() {
-      if (localInitCalled || initCalled || data.disableAds) {
-        return Promise.resolve("skipped");
+      if (data.disableAds) {
+        return Promise.resolve("ads disabled");
       }
-      localInitCalled = true;
+
+      const gptReady = [Promise.resolve()];
+      if (!window.initCalled) {
+        if ((!data.bidInitialiser && isWeb) || !isWeb) {
+          this.loadScripts();
+        }
+        gptReady.push(
+          this.apstag.process(),
+          this.prebid.process(),
+          this.gpt.process()
+        );
+      }
       window.initCalled = true;
 
-      if ((!data.bidInitialiser && isWeb) || !isWeb) {
-        this.loadScripts();
+      if (!localInitCalled) {
+        gptReady.push(this.gpt.bid());
       }
-
-      const gptReady = [
-        this.apstag.process(),
-        this.prebid.process(),
-        this.gpt.process()
-      ];
+      localInitCalled = true;
 
       return Promise.all(gptReady)
         .then(() => {
@@ -121,9 +127,7 @@ export default ({ el, data, platform, eventCallback, window }) => {
               slotName
             );
             if (!slot) {
-              throw new Error(
-                `Ad slot ${slotName} could not be defined, probably it was already defined`
-              );
+              return;
             }
 
             slot.addService(googletag.pubads());
@@ -175,6 +179,7 @@ export default ({ el, data, platform, eventCallback, window }) => {
             eventCallback("error", err.stack);
           }
         });
+        return this.waitUntilReady();
       },
 
       init() {
@@ -188,13 +193,9 @@ export default ({ el, data, platform, eventCallback, window }) => {
         });
       },
 
-      bid({ pageTargeting, allSlotConfigs, config } = data) {
-        this.setPageTargeting(pageTargeting);
-        if (isWeb) {
-          allSlotConfigs.forEach(slot => this.setSlotTargeting(slot));
-        } else {
-          this.setSlotTargeting(config);
-        }
+      bid({ config } = data) {
+        this.setSlotTargeting(config);
+        return this.waitUntilReady();
       },
 
       refreshAd() {
@@ -208,9 +209,9 @@ export default ({ el, data, platform, eventCallback, window }) => {
         });
       },
 
-      process() {
+      process({ pageTargeting } = data) {
         this.init();
-        this.bid();
+        this.setPageTargeting(pageTargeting);
         return this.waitUntilReady();
       },
 
