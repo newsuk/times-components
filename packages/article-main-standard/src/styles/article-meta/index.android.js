@@ -6,9 +6,7 @@ const styles = StyleSheet.create({
   ...globalStyle,
   ...sharedStyles,
   articleMetaElement: {
-    ...sharedStyles.articleMetaElement,
-    paddingBottom: 6,
-    paddingTop: 7
+    ...sharedStyles.articleMetaElement
   },
   byline: {
     ...sharedStyles.byline,

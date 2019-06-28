@@ -8,10 +8,15 @@ const sharedStyles = {
     marginBottom: spacing(4),
     marginLeft: spacing(2),
     marginRight: spacing(2),
+    paddingBottom: spacing(2),
     paddingLeft: 0,
     paddingRight: 0
   },
   articleMetaElement: {
+    paddingTop: spacing(2)
+  },
+  articleMetaElementWithBorder: {
+    paddingTop: spacing(2),
     borderTopColor: colours.functional.keyline,
     borderTopWidth: 1
   },
