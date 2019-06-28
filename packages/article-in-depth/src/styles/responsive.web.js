@@ -35,7 +35,6 @@ export const HeaderContainer = styled(View)`
     margin-top: 0;
     margin-left: auto !important;
     margin-right: auto !important;
-    margin-bottom: ${spacing(6)};
   }
 
   @media (min-width: ${breakpoints.wide}px) {
@@ -81,6 +80,29 @@ export const Separator = styled(View)`
     height: ${spacing(3)};
     margin: 0 ${spacing(2)};
     width: 1px;
+  }
+`;
+
+export const HeaderContainerBottomBorder = styled(View)`
+  height: 1px;
+  border-bottom-color: ${colours.functional.keyline};
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: ${spacing(4)};
+
+  @media (max-width: ${breakpoints.small}px) {
+    margin-left: ${spacing(2)};
+    margin-right: ${spacing(2)};
+  }
+
+  @media (min-width: ${breakpoints.medium}px) {
+    width: 80.8%;
+  }
+
+  @media (min-width: ${breakpoints.wide}px) {
+    width: 56.2%;
   }
 `;
 

@@ -49,12 +49,13 @@ UserState.loggedInOrShared = isLoggedInOrShared;
 
 UserState.propTypes = {
   state: PropTypes.func.isRequired,
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
   fallback: PropTypes.node,
   serverRender: PropTypes.bool
 };
 
 UserState.defaultProps = {
+  children: null,
   serverRender: true,
   fallback: null
 };

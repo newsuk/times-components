@@ -66,8 +66,9 @@ export const SaveShareContainer = styled.div`
     bottom: 0;
   }
 `;
+
 export const OuterSaveShareContainer = styled.div`
-  margin: ${spacing(6)} auto;
+  margin: 0px auto ${spacing(6)};
   background-color: ${colours.functional.white};
 
   &.${STICKY_CLASS_NAME} {
