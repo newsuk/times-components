@@ -79,6 +79,7 @@ exports[`1. article main standard - tablet 1`] = `
           "marginBottom": 20,
           "marginLeft": 0,
           "marginRight": 0,
+          "paddingBottom": 10,
           "paddingLeft": 0,
           "paddingRight": 0,
         }
@@ -89,8 +90,7 @@ exports[`1. article main standard - tablet 1`] = `
           Object {
             "borderTopColor": "#DBDBDB",
             "borderTopWidth": 1,
-            "paddingBottom": 4,
-            "paddingTop": 9,
+            "paddingTop": 10,
           }
         }
       >
@@ -107,7 +107,13 @@ exports[`1. article main standard - tablet 1`] = `
           <ArticleBylineWithLinks />
         </Text>
       </View>
-      <View>
+      <View
+        style={
+          Object {
+            "paddingTop": 10,
+          }
+        }
+      >
         <Text
           style={
             Object {

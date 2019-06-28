@@ -78,6 +78,7 @@ exports[`full article with style on mobile 1`] = `
           "marginBottom": 20,
           "marginLeft": 10,
           "marginRight": 10,
+          "paddingBottom": 10,
           "paddingLeft": 0,
           "paddingRight": 0,
         }
@@ -88,8 +89,7 @@ exports[`full article with style on mobile 1`] = `
           Object {
             "borderTopColor": "#DBDBDB",
             "borderTopWidth": 1,
-            "paddingBottom": 4,
-            "paddingTop": 9,
+            "paddingTop": 10,
           }
         }
       >
@@ -106,7 +106,13 @@ exports[`full article with style on mobile 1`] = `
           <ArticleBylineWithLinks />
         </Text>
       </View>
-      <View>
+      <View
+        style={
+          Object {
+            "paddingTop": 10,
+          }
+        }
+      >
         <Text
           style={
             Object {
@@ -203,6 +209,7 @@ exports[`full article with style on tablet 1`] = `
           "marginBottom": 20,
           "marginLeft": 10,
           "marginRight": 10,
+          "paddingBottom": 10,
           "paddingLeft": 0,
           "paddingRight": 0,
         }
@@ -213,8 +220,7 @@ exports[`full article with style on tablet 1`] = `
           Object {
             "borderTopColor": "#DBDBDB",
             "borderTopWidth": 1,
-            "paddingBottom": 4,
-            "paddingTop": 9,
+            "paddingTop": 10,
           }
         }
       >
@@ -231,7 +237,13 @@ exports[`full article with style on tablet 1`] = `
           <ArticleBylineWithLinks />
         </Text>
       </View>
-      <View>
+      <View
+        style={
+          Object {
+            "paddingTop": 10,
+          }
+        }
+      >
         <Text
           style={
             Object {
