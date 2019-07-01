@@ -1,0 +1,26 @@
+{
+  "name": "paragraph",
+  "children": [
+    {
+      "name": "dropCap",
+      "attributes": {
+        "value": "%27A"
+      },
+      "children": []
+    },
+    {
+      "name": "text",
+      "attributes": {
+        "value": "lain Finkielkraut"
+      },
+      "children": []
+    },
+    {
+      "name": "text",
+      "attributes": {
+        "value": " was taking his mother-in-law home after lunch on the Left Bank in Paris last Saturday when they came across a band of yellow-vest protesters."
+      },
+      "children": []
+    }
+  ]
+}

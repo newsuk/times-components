@@ -7,7 +7,7 @@ import { spacing } from "@times-components/styleguide";
 import { withTrackScrollDepth } from "@times-components/tracking";
 import UserState from "@times-components/user-state";
 import { MessageContext } from "@times-components/message-bar";
-import ArticleBody from "./article-body/article-body";
+import ArticleBody, { ArticleLink } from "./article-body/article-body";
 import {
   articleSkeletonDefaultProps,
   articleSkeletonPropTypes
@@ -180,4 +180,5 @@ ArticleSkeleton.propTypes = {
 };
 ArticleSkeleton.defaultProps = articleSkeletonDefaultProps;
 
+export { ArticleLink };
 export default articleTrackingContext(withTrackScrollDepth(ArticleSkeleton));

@@ -1,0 +1,36 @@
+{
+  "name": "paragraph",
+  "children": [
+    {
+      "name": "link",
+      "attributes": {
+        "href": "https://www.thetimes.co.uk/article/yellow-vests-scream-antisemitic-slurs-at-the-veteran-philosopher-alain-finkielkraut-xb7hc5nx6",
+        "type": "article",
+        "canonicalId": "yellow-vests-scream-antisemitic-slurs-at-the-veteran-philosopher-alain-finkielkraut-xb7hc5nx6"
+      },
+      "children": [
+        {
+          "name": "dropCap",
+          "attributes": {
+            "value": "A"
+          },
+          "children": []
+        },
+        {
+          "name": "text",
+          "attributes": {
+            "value": "lain Finkielkraut"
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "text",
+      "attributes": {
+        "value": " was taking his mother-in-law home after lunch on the Left Bank in Paris last Saturday when they came across a band of yellow-vest protesters."
+      },
+      "children": []
+    }
+  ]
+}
