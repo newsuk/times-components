@@ -91,7 +91,7 @@ class UnwrappedSticky extends Component {
     if (node) {
       this.component = node.firstElementChild;
       this.sizer = this.component.firstElementChild;
-      this.placeholder = this.container.nextSibling;
+      this.placeholder = this.container.previousSibling;
 
       this.updateSticky();
     } else {
@@ -144,12 +144,12 @@ class UnwrappedSticky extends Component {
     const { Component, style, children, className } = this.props;
     return (
       <>
+        <div style={{ display: "none" }} data-tc-sticky-placeholder />
         <div data-tc-sticky-container ref={this.createContainerRef}>
           <Component className={className} style={style}>
             <div data-tc-sticky-sizer>{children}</div>
           </Component>
         </div>
-        <div style={{ display: "none" }} data-tc-sticky-placeholder />
       </>
     );
   }

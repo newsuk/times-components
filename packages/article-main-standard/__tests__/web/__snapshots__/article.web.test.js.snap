@@ -620,6 +620,9 @@ exports[`6. should show topics when logged in or shared 1`] = `
       </figure>
     </div>
     <div
+      data-tc-sticky-placeholder={true}
+    />
+    <div
       data-tc-sticky-container={true}
     >
       <div>
@@ -638,9 +641,6 @@ exports[`6. should show topics when logged in or shared 1`] = `
         </div>
       </div>
     </div>
-    <div
-      data-tc-sticky-placeholder={true}
-    />
     <div>
       <p>
         Some content

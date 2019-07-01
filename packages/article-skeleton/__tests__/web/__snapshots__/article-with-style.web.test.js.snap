@@ -341,6 +341,9 @@ exports[`full article with style 1`] = `
   <div
     className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
   >
+    <div
+      className="IS2"
+    />
     <div>
       <div
         className="c2"
@@ -354,9 +357,6 @@ exports[`full article with style 1`] = `
         </div>
       </div>
     </div>
-    <div
-      className="IS2"
-    />
     <div
       className="c5 responsiveweb__BodyContainer-sc-1exejum-2 c5 css-view-1dbjc4n"
     >

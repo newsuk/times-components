@@ -12,6 +12,9 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
   </div>
   <div>
     <div
+      data-tc-sticky-placeholder={true}
+    />
+    <div
       data-tc-sticky-container={true}
     >
       <div>
@@ -30,9 +33,6 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
         </div>
       </div>
     </div>
-    <div
-      data-tc-sticky-placeholder={true}
-    />
     <div>
       <p>
         <span>
@@ -364,6 +364,9 @@ exports[`2. an article with no content 1`] = `
   </div>
   <div>
     <div
+      data-tc-sticky-placeholder={true}
+    />
+    <div
       data-tc-sticky-container={true}
     >
       <div>
@@ -382,9 +385,6 @@ exports[`2. an article with no content 1`] = `
         </div>
       </div>
     </div>
-    <div
-      data-tc-sticky-placeholder={true}
-    />
     <div>
       <ArticleExtras
         articleHeadline="Some Headline"
@@ -464,6 +464,9 @@ exports[`3. an article with a nested markup in first paragraph displays a drop c
   </div>
   <div>
     <div
+      data-tc-sticky-placeholder={true}
+    />
+    <div
       data-tc-sticky-container={true}
     >
       <div>
@@ -482,9 +485,6 @@ exports[`3. an article with a nested markup in first paragraph displays a drop c
         </div>
       </div>
     </div>
-    <div
-      data-tc-sticky-placeholder={true}
-    />
     <div>
       <p>
         <span>
