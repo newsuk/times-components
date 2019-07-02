@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.9.22](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.9.21...@times-components/article-skeleton@1.9.22) (2019-07-02)
+
+
+### Bug Fixes
+
+* prevent a jump in firefox when scrolling to the sticky element ([#2092](https://github.com/newsuk/times-components/issues/2092)) ([6ceeab6](https://github.com/newsuk/times-components/commit/6ceeab6))
+
+
+
+
+
 ## [1.9.21](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.9.20...@times-components/article-skeleton@1.9.21) (2019-07-01)
 
 **Note:** Version bump only for package @times-components/article-skeleton

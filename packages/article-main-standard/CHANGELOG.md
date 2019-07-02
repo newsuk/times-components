@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.9.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.9.1...@times-components/article-main-standard@3.9.2) (2019-07-02)
+
+
+### Bug Fixes
+
+* prevent a jump in firefox when scrolling to the sticky element ([#2092](https://github.com/newsuk/times-components/issues/2092)) ([6ceeab6](https://github.com/newsuk/times-components/commit/6ceeab6))
+
+
+
+
+
 ## [3.9.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.9.0...@times-components/article-main-standard@3.9.1) (2019-07-01)
 
 **Note:** Version bump only for package @times-components/article-main-standard
