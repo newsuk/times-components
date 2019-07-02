@@ -194,6 +194,10 @@ exports[`Sticky shouldBeSticky is checked when deciding whether to become sticky
         style="width: 600px; margin: 0px auto;"
       >
         <div
+          data-tc-sticky-placeholder="true"
+          style="display: none;"
+        />
+        <div
           data-tc-sticky-container="true"
         >
           <div
@@ -205,10 +209,6 @@ exports[`Sticky shouldBeSticky is checked when deciding whether to become sticky
             />
           </div>
         </div>
-        <div
-          data-tc-sticky-placeholder="true"
-          style="display: none;"
-        />
       </div>
     </div>
   </div>

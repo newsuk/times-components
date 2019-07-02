@@ -132,6 +132,9 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
       </div>
     </div>
     <div
+      data-tc-sticky-placeholder={true}
+    />
+    <div
       data-tc-sticky-container={true}
     >
       <div>
@@ -150,9 +153,6 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
         </div>
       </div>
     </div>
-    <div
-      data-tc-sticky-placeholder={true}
-    />
     <div>
       <p>
         Some content
@@ -350,6 +350,9 @@ exports[`4. an article with ads 1`] = `
       </div>
     </div>
     <div
+      data-tc-sticky-placeholder={true}
+    />
+    <div
       data-tc-sticky-container={true}
     >
       <div>
@@ -368,9 +371,6 @@ exports[`4. an article with ads 1`] = `
         </div>
       </div>
     </div>
-    <div
-      data-tc-sticky-placeholder={true}
-    />
     <div>
       <Ad
         contextUrl="https://url.io"

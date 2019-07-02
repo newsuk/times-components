@@ -603,6 +603,9 @@ exports[`full article with style 1`] = `
         </div>
       </div>
     </div>
+    <div
+      className="IS7"
+    />
     <div>
       <div
         className="c11"
@@ -616,9 +619,6 @@ exports[`full article with style 1`] = `
         </div>
       </div>
     </div>
-    <div
-      className="IS7"
-    />
     <div
       className="c14 responsiveweb__BodyContainer-sc-1exejum-2 c14 css-view-1dbjc4n"
     >
@@ -1321,6 +1321,9 @@ exports[`full article with style in the culture magazine 1`] = `
         </div>
       </div>
     </div>
+    <div
+      className="IS7"
+    />
     <div>
       <div
         className="c11"
@@ -1334,9 +1337,6 @@ exports[`full article with style in the culture magazine 1`] = `
         </div>
       </div>
     </div>
-    <div
-      className="IS7"
-    />
     <div
       className="c14 responsiveweb__BodyContainer-sc-1exejum-2 c14 css-view-1dbjc4n"
     >
@@ -2039,6 +2039,9 @@ exports[`full article with style in the style magazine 1`] = `
         </div>
       </div>
     </div>
+    <div
+      className="IS7"
+    />
     <div>
       <div
         className="c11"
@@ -2052,9 +2055,6 @@ exports[`full article with style in the style magazine 1`] = `
         </div>
       </div>
     </div>
-    <div
-      className="IS7"
-    />
     <div
       className="c14 responsiveweb__BodyContainer-sc-1exejum-2 c14 css-view-1dbjc4n"
     >
@@ -2757,6 +2757,9 @@ exports[`full article with style in the sunday times magazine 1`] = `
         </div>
       </div>
     </div>
+    <div
+      className="IS7"
+    />
     <div>
       <div
         className="c11"
@@ -2770,9 +2773,6 @@ exports[`full article with style in the sunday times magazine 1`] = `
         </div>
       </div>
     </div>
-    <div
-      className="IS7"
-    />
     <div
       className="c14 responsiveweb__BodyContainer-sc-1exejum-2 c14 css-view-1dbjc4n"
     >

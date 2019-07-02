@@ -4,6 +4,7 @@ exports[`StickySaveAndShareBar renders 1`] = `
 <StickySaveAndShareBar>
   <WithStickyContext(Sticky)>
     <Sticky>
+      <div />
       <div>
         <responsiveweb__OuterSaveShareContainer>
           <StyledComponent
@@ -27,7 +28,6 @@ exports[`StickySaveAndShareBar renders 1`] = `
           </StyledComponent>
         </responsiveweb__OuterSaveShareContainer>
       </div>
-      <div />
     </Sticky>
   </WithStickyContext(Sticky)>
 </StickySaveAndShareBar>

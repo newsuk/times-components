@@ -136,6 +136,9 @@ exports[`1. a primary image 1`] = `
   <div
     className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
   >
+    <div
+      className="IS2"
+    />
     <div>
       <div
         className="c2"
@@ -149,9 +152,6 @@ exports[`1. a primary image 1`] = `
         </div>
       </div>
     </div>
-    <div
-      className="IS2"
-    />
     <div
       className="c5 responsiveweb__BodyContainer-sc-1exejum-2 c5 css-view-1dbjc4n"
     >
@@ -283,6 +283,9 @@ exports[`2. a fullwidth image 1`] = `
   <div
     className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
   >
+    <div
+      className="IS2"
+    />
     <div>
       <div
         className="c2"
@@ -296,9 +299,6 @@ exports[`2. a fullwidth image 1`] = `
         </div>
       </div>
     </div>
-    <div
-      className="IS2"
-    />
     <div
       className="c5 responsiveweb__BodyContainer-sc-1exejum-2 c5 css-view-1dbjc4n"
     >
@@ -454,6 +454,9 @@ exports[`3. a secondary image 1`] = `
   <div
     className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
   >
+    <div
+      className="IS2"
+    />
     <div>
       <div
         className="c2"
@@ -467,9 +470,6 @@ exports[`3. a secondary image 1`] = `
         </div>
       </div>
     </div>
-    <div
-      className="IS2"
-    />
     <div
       className="c5 responsiveweb__BodyContainer-sc-1exejum-2 c5 css-view-1dbjc4n"
     >
@@ -630,6 +630,9 @@ exports[`4. an inline image 1`] = `
   <div
     className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
   >
+    <div
+      className="IS2"
+    />
     <div>
       <div
         className="c2"
@@ -643,9 +646,6 @@ exports[`4. an inline image 1`] = `
         </div>
       </div>
     </div>
-    <div
-      className="IS2"
-    />
     <div
       className="c5 responsiveweb__BodyContainer-sc-1exejum-2 c5 css-view-1dbjc4n"
     >

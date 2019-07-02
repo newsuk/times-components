@@ -586,6 +586,9 @@ exports[`full article with style 1`] = `
     <ArticleLeadAsset
       className="c9"
     />
+    <div
+      className="IS3"
+    />
     <div>
       <div
         className="c10"
@@ -599,9 +602,6 @@ exports[`full article with style 1`] = `
         </div>
       </div>
     </div>
-    <div
-      className="IS3"
-    />
     <div
       className="c13 responsiveweb__BodyContainer-sc-1exejum-2 c13 css-view-1dbjc4n"
     >

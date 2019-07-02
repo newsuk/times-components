@@ -12,6 +12,9 @@ exports[`1. a primary image 1`] = `
   </div>
   <div>
     <div
+      data-tc-sticky-placeholder={true}
+    />
+    <div
       data-tc-sticky-container={true}
     >
       <div>
@@ -30,9 +33,6 @@ exports[`1. a primary image 1`] = `
         </div>
       </div>
     </div>
-    <div
-      data-tc-sticky-placeholder={true}
-    />
     <div>
       <div
         id="0"
@@ -84,6 +84,9 @@ exports[`2. a fullwidth image 1`] = `
   </div>
   <div>
     <div
+      data-tc-sticky-placeholder={true}
+    />
+    <div
       data-tc-sticky-container={true}
     >
       <div>
@@ -102,9 +105,6 @@ exports[`2. a fullwidth image 1`] = `
         </div>
       </div>
     </div>
-    <div
-      data-tc-sticky-placeholder={true}
-    />
     <div>
       <div
         id="0"
@@ -154,6 +154,9 @@ exports[`3. a secondary image 1`] = `
   </div>
   <div>
     <div
+      data-tc-sticky-placeholder={true}
+    />
+    <div
       data-tc-sticky-container={true}
     >
       <div>
@@ -172,9 +175,6 @@ exports[`3. a secondary image 1`] = `
         </div>
       </div>
     </div>
-    <div
-      data-tc-sticky-placeholder={true}
-    />
     <div>
       <div
         id="0"
@@ -226,6 +226,9 @@ exports[`4. an inline image 1`] = `
   </div>
   <div>
     <div
+      data-tc-sticky-placeholder={true}
+    />
+    <div
       data-tc-sticky-container={true}
     >
       <div>
@@ -244,9 +247,6 @@ exports[`4. an inline image 1`] = `
         </div>
       </div>
     </div>
-    <div
-      data-tc-sticky-placeholder={true}
-    />
     <div>
       <div
         id="0"
