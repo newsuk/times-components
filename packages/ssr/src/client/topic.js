@@ -13,7 +13,8 @@ if (window.nuk && window.nuk.ssr && window.nuk.topicPage) {
     page,
     pageSize,
     topicSlug,
-    useNewTopicDataSource
+    useNewTopicDataSource,
+    watermarkSvgPath
   } = window.nuk.topicPage;
 
   const data = {
@@ -23,7 +24,8 @@ if (window.nuk && window.nuk.ssr && window.nuk.topicPage) {
     mapTopicToAdConfig,
     page,
     pageSize,
-    topicSlug
+    topicSlug,
+    watermarkSvgPath
   };
 
   const clientOptions = {

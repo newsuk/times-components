@@ -52,7 +52,8 @@ class Ad extends Component {
       isLoading,
       section,
       slotName,
-      style
+      style,
+      watermarkSvgPath
     } = this.props;
     const { config, hasError, isAdReady } = this.state;
 
@@ -121,6 +122,7 @@ class Ad extends Component {
         height={config.maxSizes.height}
         style={styles.children}
         width={config.maxSizes.width}
+        watermarkSvgPath={watermarkSvgPath}
       />
     );
 

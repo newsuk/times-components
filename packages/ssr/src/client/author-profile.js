@@ -12,7 +12,8 @@ if (window.nuk && window.nuk.ssr && window.nuk.authorProfile) {
     authorSlug,
     debounceTimeMs,
     page,
-    pageSize
+    pageSize,
+    watermarkSvgPath
   } = window.nuk.authorProfile;
 
   const data = {
@@ -22,7 +23,8 @@ if (window.nuk && window.nuk.ssr && window.nuk.authorProfile) {
     makeTopicUrl,
     mapProfileToAdConfig,
     page,
-    pageSize
+    pageSize,
+    watermarkSvgPath
   };
 
   const clientOptions = {

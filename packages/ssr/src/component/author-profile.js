@@ -18,7 +18,8 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     makeTopicUrl,
     mapProfileToAdConfig,
     page,
-    pageSize
+    pageSize,
+    watermarkSvgPath
   } = data;
 
   return React.createElement(
@@ -53,7 +54,8 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
                 page,
                 pageSize,
                 refetch,
-                slug: authorSlug
+                slug: authorSlug,
+                watermarkSvgPath
               })
             )
         )

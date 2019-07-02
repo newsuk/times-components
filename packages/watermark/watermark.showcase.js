@@ -9,6 +9,7 @@ export default {
         <Watermark
           height={number("Height: ", 250)}
           width={number("Width: ", 300)}
+          watermarkSvgPath={'http://localhost:8000/d/img/watermark.svg'}
         />
       ),
       name: "MPU",
@@ -16,7 +17,7 @@ export default {
     },
     {
       component: () => (
-        <Watermark height={250} viewBox="0 0 1000 300" width={970} />
+        <Watermark height={250} viewBox="0 0 1000 300" width={970} watermarkSvgPath={'http://localhost:8000/d/img/watermark.svg'} />
       ),
       name: "Full",
       type: "story"

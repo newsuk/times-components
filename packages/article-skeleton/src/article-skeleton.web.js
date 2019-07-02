@@ -59,7 +59,8 @@ class ArticleSkeleton extends Component {
       saveApi,
       spotAccountId,
       paidContentClassName,
-      faviconUrl
+      faviconUrl,
+      watermarkSvgPath
     } = this.props;
 
     const {
@@ -112,6 +113,7 @@ class ArticleSkeleton extends Component {
                     section={section}
                     slotName="header"
                     style={adStyle}
+                    watermarkSvgPath={watermarkSvgPath}
                   />
                 </HeaderAdContainer>
                 <MainContainer>
@@ -145,6 +147,7 @@ class ArticleSkeleton extends Component {
                       registerNode={registerNode}
                       section={section}
                       paidContentClassName={paidContentClassName}
+                      watermarkSvgPath={watermarkSvgPath}
                     />
                     <ArticleExtras
                       analyticsStream={analyticsStream}

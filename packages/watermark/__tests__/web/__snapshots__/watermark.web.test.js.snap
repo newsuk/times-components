@@ -1,24 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. watermark 1`] = `
-<Svg
-  height={250}
-  viewBox="0 0 300 250"
-  width={300}
+<span
+  style={
+    Object {
+      "color": "#1D1D1B",
+    }
+  }
 >
-  <G
-    fill="none"
-    fillRule="evenodd"
-    id="watermark"
-    opacity="0.07"
-    stroke="none"
-    strokeWidth="1"
+  <svg
+    height={250}
+    viewBox="0 0 300 250"
+    width={300}
   >
-    <Path
-      d="53a8dae08c4e492d934bf2f094a46ab4"
-      fill="#1D1D1B"
-      id="shape"
-    />
-  </G>
-</Svg>
+    <use />
+  </svg>
+</span>
 `;

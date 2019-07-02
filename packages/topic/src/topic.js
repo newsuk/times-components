@@ -23,7 +23,8 @@ const Topic = ({
   onPrev,
   refetch,
   slug,
-  topic
+  topic,
+  watermarkSvgPath
 }) => {
   const emptyStateMessage =
     "Unfortunately, there are no articles relating to this topic";
@@ -106,6 +107,7 @@ const Topic = ({
               pageSize={pageSize}
               refetch={refetchArticles}
               showImages
+              watermarkSvgPath={watermarkSvgPath}
             />
           </Responsive>
         );

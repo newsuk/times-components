@@ -25,7 +25,7 @@ export default () => {
   );
 
   it("1. watermark", () => {
-    const wrapper = shallow(<Watermark height={250} width={300} />);
+    const wrapper = shallow(<Watermark height={250} width={300} watermarkSvgPath="./watermark.svg" />);
 
     expect(wrapper).toMatchSnapshot();
   });

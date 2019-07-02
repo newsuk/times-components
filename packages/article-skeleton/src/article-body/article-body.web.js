@@ -39,12 +39,23 @@ export const responsiveDisplayWrapper = displayType => {
   }
 };
 
-const renderers = ({ observed, registerNode, paidContentClassName }) => ({
+const renderers = ({
+  observed,
+  registerNode,
+  paidContentClassName,
+  watermarkSvgPath
+}) => ({
   ...coreRenderers,
   ad(key, attributes) {
     return {
       element: (
-        <Ad key={key} slotName="inline-ad" style={styles.ad} {...attributes} />
+        <Ad
+          key={key}
+          slotName="inline-ad"
+          style={styles.ad}
+          {...attributes}
+          watermarkSvgPath={watermarkSvgPath}
+        />
       )
     };
   },
@@ -220,11 +231,17 @@ const ArticleBody = ({
   observed,
   registerNode,
   section,
-  paidContentClassName
+  paidContentClassName,
+  watermarkSvgPath
 }) =>
   renderTrees(
     bodyContent.map(decorateAd({ contextUrl, section })),
-    renderers({ observed, registerNode, paidContentClassName })
+    renderers({
+      observed,
+      registerNode,
+      paidContentClassName,
+      watermarkSvgPath
+    })
   );
 
 ArticleBody.propTypes = {

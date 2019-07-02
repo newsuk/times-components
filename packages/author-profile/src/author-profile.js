@@ -27,7 +27,8 @@ const AuthorProfile = ({
   page,
   pageSize: initPageSize,
   refetch,
-  slug
+  slug,
+  watermarkSvgPath
 }) => {
   const emptyStateMessage =
     "Unfortunately, there are no articles relating to this author";
@@ -129,6 +130,7 @@ const AuthorProfile = ({
               pageSize={pageSize}
               refetch={refetchArticles}
               showImages={hasLeadAssets}
+              watermarkSvgPath={watermarkSvgPath}
             />
           </Responsive>
         );

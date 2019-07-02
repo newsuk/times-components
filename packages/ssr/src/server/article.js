@@ -17,7 +17,8 @@ module.exports = (
     makeTopicUrl,
     spotAccountId,
     paidContentClassName,
-    faviconUrl
+    faviconUrl,
+    watermarkSvgPath
   },
   userState
 ) => {
@@ -61,7 +62,8 @@ module.exports = (
       spotAccountId,
       userState,
       paidContentClassName,
-      faviconUrl
+      faviconUrl,
+      watermarkSvgPath
     },
     name: "article"
   };

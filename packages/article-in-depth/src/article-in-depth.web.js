@@ -82,7 +82,8 @@ class ArticlePage extends Component {
       receiveChildList,
       saveApi,
       spotAccountId,
-      faviconUrl
+      faviconUrl,
+      watermarkSvgPath
     } = this.props;
 
     if (error || isLoading) {
@@ -99,6 +100,7 @@ class ArticlePage extends Component {
         saveApi={saveApi}
         spotAccountId={spotAccountId}
         faviconUrl={faviconUrl}
+        watermarkSvgPath={watermarkSvgPath}
       />
     );
   }

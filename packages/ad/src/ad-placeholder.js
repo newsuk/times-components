@@ -4,7 +4,7 @@ import Watermark from "@times-components/watermark";
 import { propTypes, defaultProps } from "./ad-placeholder-prop-types";
 import styles, { calculateViewBox } from "./styles";
 
-const AdPlaceholder = ({ height, style, width }) => {
+const AdPlaceholder = ({ height, style, width, watermarkSvgPath }) => {
   const box = calculateViewBox({
     height,
     width
@@ -19,7 +19,12 @@ const AdPlaceholder = ({ height, style, width }) => {
         testID="ad-placeholder"
       >
         <View style={styles.watermarkContainer}>
-          <Watermark height={height} viewBox={viewBox} width={width} />
+          <Watermark
+            height={height}
+            viewBox={viewBox}
+            width={width}
+            watermarkSvgPath={watermarkSvgPath}
+          />
         </View>
         <Text style={styles.placeholderText}>ADVERTISEMENT</Text>
       </View>

@@ -54,7 +54,8 @@ class ArticleList extends Component {
       pageSize,
       receiveChildList,
       refetch,
-      showImages
+      showImages,
+      watermarkSvgPath
     } = this.props;
 
     const hasAdvertConfig = Object.keys(adConfig).length > 0;
@@ -97,6 +98,7 @@ class ArticleList extends Component {
           isLoading={articlesLoading}
           slotName="inline-ad"
           style={styles.adContainer}
+          watermarkSvgPath={watermarkSvgPath}
         />
       </AdComposer>
     );
@@ -116,7 +118,10 @@ class ArticleList extends Component {
 
     const Contents = ({ clientHasRendered, observed, registerNode }) =>
       data.length === 0 ? (
-        <ArticleListEmptyState message={emptyStateMessage} />
+        <ArticleListEmptyState
+          message={emptyStateMessage}
+          watermarkSvgPath={watermarkSvgPath}
+        />
       ) : (
         <View>
           <ListContentContainer>

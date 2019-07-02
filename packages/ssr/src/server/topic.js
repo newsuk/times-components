@@ -5,7 +5,7 @@ const defaultAdConfig = require("../lib/ads/make-topic-ad-config")
 
 module.exports = (
   { currentPage, topicSlug, useNewTopicDataSource = false },
-  { graphqlApiUrl, logger, makeArticleUrl, makeTopicUrl }
+  { graphqlApiUrl, logger, makeArticleUrl, makeTopicUrl, watermarkSvgPath }
 ) => {
   if (typeof topicSlug !== "string") {
     throw new Error(`Topic slug should be a string. Received ${topicSlug}`);
@@ -50,7 +50,8 @@ module.exports = (
       page: currentPage,
       pageSize: 20,
       topicSlug,
-      useNewTopicDataSource
+      useNewTopicDataSource,
+      watermarkSvgPath
     },
     name: "topicPage"
   };
