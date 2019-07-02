@@ -18,9 +18,9 @@ export default () => {
   });
 
   it("refresh the ads on a new breakpoint", () => {
-    const init1 = adInit(initOptions);
+    const initFirstRun = adInit(initOptions);
 
-    init1.handleBreakPointChange("huge", { matches: true });
+    initFirstRun.handleBreakPointChange("huge", { matches: true });
     mock.processGoogletagCommandQueue();
     mock.processGoogletagCommandQueue();
 
@@ -31,11 +31,11 @@ export default () => {
   });
 
   it("do not refresh the ads if the query doesn't match", () => {
-    const init1 = adInit(initOptions);
+    const initFirstRun = adInit(initOptions);
 
-    jest.spyOn(init1.gpt, "refreshAd").mockImplementation();
+    jest.spyOn(initFirstRun.gpt, "refreshAd").mockImplementation();
 
-    init1.handleBreakPointChange("huge", { matches: false });
+    initFirstRun.handleBreakPointChange("huge", { matches: false });
     mock.processGoogletagCommandQueue();
     mock.processGoogletagCommandQueue();
 
@@ -44,54 +44,54 @@ export default () => {
   });
 
   it("calls all the vender functions when initially executed", () => {
-    const init1 = adInit(initOptions);
+    const initFirstRun = adInit(initOptions);
 
-    jest.spyOn(init1.apstag, "process").mockReturnValueOnce(Promise.resolve());
-    jest.spyOn(init1.prebid, "process").mockReturnValueOnce(Promise.resolve());
-    jest.spyOn(init1.gpt, "process").mockReturnValueOnce(Promise.resolve());
-    jest.spyOn(init1.gpt, "bid").mockReturnValueOnce(Promise.resolve());
+    jest.spyOn(initFirstRun.apstag, "process").mockReturnValueOnce(Promise.resolve());
+    jest.spyOn(initFirstRun.prebid, "process").mockReturnValueOnce(Promise.resolve());
+    jest.spyOn(initFirstRun.gpt, "process").mockReturnValueOnce(Promise.resolve());
+    jest.spyOn(initFirstRun.gpt, "bid").mockReturnValueOnce(Promise.resolve());
 
-    init1.init();
+    initFirstRun.init();
 
-    expect(init1.prebid.process).toHaveBeenCalledTimes(1);
-    expect(init1.apstag.process).toHaveBeenCalledTimes(1);
-    expect(init1.gpt.process).toHaveBeenCalledTimes(1);
-    expect(init1.gpt.bid).toHaveBeenCalledTimes(1);
+    expect(initFirstRun.prebid.process).toHaveBeenCalledTimes(1);
+    expect(initFirstRun.apstag.process).toHaveBeenCalledTimes(1);
+    expect(initFirstRun.gpt.process).toHaveBeenCalledTimes(1);
+    expect(initFirstRun.gpt.bid).toHaveBeenCalledTimes(1);
   });
 
-  it("calls all the vender functions only once when initialised multiple times", () => {
-    const init1 = adInit(initOptions);
+  it("calls all the vender functions only once even when its initialised multiple times", () => {
+    const initFirstRun = adInit(initOptions);
 
-    jest.spyOn(init1.apstag, "process").mockReturnValueOnce(Promise.resolve());
-    jest.spyOn(init1.prebid, "process").mockReturnValueOnce(Promise.resolve());
-    jest.spyOn(init1.gpt, "process").mockReturnValueOnce(Promise.resolve());
-    jest.spyOn(init1.gpt, "bid").mockReturnValue(Promise.resolve());
+    jest.spyOn(initFirstRun.apstag, "process").mockReturnValueOnce(Promise.resolve());
+    jest.spyOn(initFirstRun.prebid, "process").mockReturnValueOnce(Promise.resolve());
+    jest.spyOn(initFirstRun.gpt, "process").mockReturnValueOnce(Promise.resolve());
+    jest.spyOn(initFirstRun.gpt, "bid").mockReturnValue(Promise.resolve());
 
-    init1.init();
-    init1.init();
+    initFirstRun.init();
+    initFirstRun.init();
 
-    expect(init1.prebid.process).toHaveBeenCalledTimes(1);
-    expect(init1.apstag.process).toHaveBeenCalledTimes(1);
-    expect(init1.gpt.process).toHaveBeenCalledTimes(1);
-    expect(init1.gpt.bid).toHaveBeenCalledTimes(1);
+    expect(initFirstRun.prebid.process).toHaveBeenCalledTimes(1);
+    expect(initFirstRun.apstag.process).toHaveBeenCalledTimes(1);
+    expect(initFirstRun.gpt.process).toHaveBeenCalledTimes(1);
+    expect(initFirstRun.gpt.bid).toHaveBeenCalledTimes(1);
   });
 
-  it("calls all the vender functions only once when initialised multiple times", () => {
-    const init1 = adInit(initOptions);
+  it("calls all the vender process functions only once but call gpt bid functions multiple times", () => {
+    const initFirstRun = adInit(initOptions);
 
-    jest.spyOn(init1.apstag, "process").mockReturnValueOnce(Promise.resolve());
-    jest.spyOn(init1.prebid, "process").mockReturnValueOnce(Promise.resolve());
-    jest.spyOn(init1.gpt, "process").mockReturnValueOnce(Promise.resolve());
-    jest.spyOn(init1.gpt, "bid").mockReturnValue(Promise.resolve());
+    jest.spyOn(initFirstRun.apstag, "process").mockReturnValueOnce(Promise.resolve());
+    jest.spyOn(initFirstRun.prebid, "process").mockReturnValueOnce(Promise.resolve());
+    jest.spyOn(initFirstRun.gpt, "process").mockReturnValueOnce(Promise.resolve());
+    jest.spyOn(initFirstRun.gpt, "bid").mockReturnValueOnce(Promise.resolve());
 
-    init1.init();
+    initFirstRun.init();
 
-    expect(init1.prebid.process).toHaveBeenCalledTimes(1);
-    expect(init1.apstag.process).toHaveBeenCalledTimes(1);
-    expect(init1.gpt.process).toHaveBeenCalledTimes(1);
-    expect(init1.gpt.bid).toHaveBeenCalledTimes(1);
+    expect(initFirstRun.prebid.process).toHaveBeenCalledTimes(1);
+    expect(initFirstRun.apstag.process).toHaveBeenCalledTimes(1);
+    expect(initFirstRun.gpt.process).toHaveBeenCalledTimes(1);
+    expect(initFirstRun.gpt.bid).toHaveBeenCalledTimes(1);
 
-    const init2 = adInit(
+    const initSecondRun = adInit(
       merge(initOptions, {
         window: {
           initCalled: true
@@ -99,17 +99,17 @@ export default () => {
       })
     );
 
-    jest.spyOn(init2.apstag, "process").mockReturnValueOnce(Promise.resolve());
-    jest.spyOn(init2.prebid, "process").mockReturnValueOnce(Promise.resolve());
-    jest.spyOn(init2.gpt, "process").mockReturnValueOnce(Promise.resolve());
-    jest.spyOn(init2.gpt, "bid").mockReturnValue(Promise.resolve());
+    jest.spyOn(initSecondRun.apstag, "process").mockReturnValueOnce(Promise.resolve());
+    jest.spyOn(initSecondRun.prebid, "process").mockReturnValueOnce(Promise.resolve());
+    jest.spyOn(initSecondRun.gpt, "process").mockReturnValueOnce(Promise.resolve());
+    jest.spyOn(initSecondRun.gpt, "bid").mockReturnValueOnce(Promise.resolve());
 
-    init2.init();
+    initSecondRun.init();
 
-    expect(init2.prebid.process).not.toHaveBeenCalled();
-    expect(init2.apstag.process).not.toHaveBeenCalled();
-    expect(init2.gpt.process).not.toHaveBeenCalled();
-    expect(init2.gpt.bid).toHaveBeenCalledTimes(1);
+    expect(initSecondRun.prebid.process).not.toHaveBeenCalled();
+    expect(initSecondRun.apstag.process).not.toHaveBeenCalled();
+    expect(initSecondRun.gpt.process).not.toHaveBeenCalled();
+    expect(initSecondRun.gpt.bid).toHaveBeenCalledTimes(1);
   });
 
   it("reject if ads are disabled", () => {
