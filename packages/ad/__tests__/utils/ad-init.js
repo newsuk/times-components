@@ -46,9 +46,15 @@ export default () => {
   it("calls all the vender functions when initially executed", () => {
     const initFirstRun = adInit(initOptions);
 
-    jest.spyOn(initFirstRun.apstag, "process").mockReturnValueOnce(Promise.resolve());
-    jest.spyOn(initFirstRun.prebid, "process").mockReturnValueOnce(Promise.resolve());
-    jest.spyOn(initFirstRun.gpt, "process").mockReturnValueOnce(Promise.resolve());
+    jest
+      .spyOn(initFirstRun.apstag, "process")
+      .mockReturnValueOnce(Promise.resolve());
+    jest
+      .spyOn(initFirstRun.prebid, "process")
+      .mockReturnValueOnce(Promise.resolve());
+    jest
+      .spyOn(initFirstRun.gpt, "process")
+      .mockReturnValueOnce(Promise.resolve());
     jest.spyOn(initFirstRun.gpt, "bid").mockReturnValueOnce(Promise.resolve());
 
     initFirstRun.init();
@@ -62,9 +68,15 @@ export default () => {
   it("calls all the vender functions only once even when its initialised multiple times", () => {
     const initFirstRun = adInit(initOptions);
 
-    jest.spyOn(initFirstRun.apstag, "process").mockReturnValueOnce(Promise.resolve());
-    jest.spyOn(initFirstRun.prebid, "process").mockReturnValueOnce(Promise.resolve());
-    jest.spyOn(initFirstRun.gpt, "process").mockReturnValueOnce(Promise.resolve());
+    jest
+      .spyOn(initFirstRun.apstag, "process")
+      .mockReturnValueOnce(Promise.resolve());
+    jest
+      .spyOn(initFirstRun.prebid, "process")
+      .mockReturnValueOnce(Promise.resolve());
+    jest
+      .spyOn(initFirstRun.gpt, "process")
+      .mockReturnValueOnce(Promise.resolve());
     jest.spyOn(initFirstRun.gpt, "bid").mockReturnValue(Promise.resolve());
 
     initFirstRun.init();
@@ -79,9 +91,15 @@ export default () => {
   it("calls all the vender process functions only once but call gpt bid functions multiple times", () => {
     const initFirstRun = adInit(initOptions);
 
-    jest.spyOn(initFirstRun.apstag, "process").mockReturnValueOnce(Promise.resolve());
-    jest.spyOn(initFirstRun.prebid, "process").mockReturnValueOnce(Promise.resolve());
-    jest.spyOn(initFirstRun.gpt, "process").mockReturnValueOnce(Promise.resolve());
+    jest
+      .spyOn(initFirstRun.apstag, "process")
+      .mockReturnValueOnce(Promise.resolve());
+    jest
+      .spyOn(initFirstRun.prebid, "process")
+      .mockReturnValueOnce(Promise.resolve());
+    jest
+      .spyOn(initFirstRun.gpt, "process")
+      .mockReturnValueOnce(Promise.resolve());
     jest.spyOn(initFirstRun.gpt, "bid").mockReturnValueOnce(Promise.resolve());
 
     initFirstRun.init();
@@ -99,9 +117,15 @@ export default () => {
       })
     );
 
-    jest.spyOn(initSecondRun.apstag, "process").mockReturnValueOnce(Promise.resolve());
-    jest.spyOn(initSecondRun.prebid, "process").mockReturnValueOnce(Promise.resolve());
-    jest.spyOn(initSecondRun.gpt, "process").mockReturnValueOnce(Promise.resolve());
+    jest
+      .spyOn(initSecondRun.apstag, "process")
+      .mockReturnValueOnce(Promise.resolve());
+    jest
+      .spyOn(initSecondRun.prebid, "process")
+      .mockReturnValueOnce(Promise.resolve());
+    jest
+      .spyOn(initSecondRun.gpt, "process")
+      .mockReturnValueOnce(Promise.resolve());
     jest.spyOn(initSecondRun.gpt, "bid").mockReturnValueOnce(Promise.resolve());
 
     initSecondRun.init();
