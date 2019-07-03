@@ -344,12 +344,14 @@ exports[`8. secondary one and columnist 1`] = `
   <div>
     <div>
       <TileAA
+        breakpoint="wide"
         tileName="secondary"
       />
     </div>
     <div />
     <div>
       <TileAB
+        breakpoint="wide"
         tileName="columnist"
       />
     </div>
