@@ -69,7 +69,6 @@ export const MetaContainer = styled(View)`
 /* --- Body --- */
 
 export const LeadAsset = styled(ArticleLeadAsset)`
-  order: 1;
   margin-bottom: ${spacing(4)};
 
   @media (min-width: ${breakpoints.medium}px) {
@@ -77,9 +76,7 @@ export const LeadAsset = styled(ArticleLeadAsset)`
   }
 
   @media (min-width: ${breakpoints.wide}px) {
-    width: 56.2%;
     margin: 0 auto ${spacing(6)};
-    order: 2;
   }
 `;
 

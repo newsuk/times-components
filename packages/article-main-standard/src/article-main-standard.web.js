@@ -1,13 +1,17 @@
-import React, { Component, Fragment } from "react";
-import ArticleSkeleton from "@times-components/article-skeleton";
-import { getLeadAsset, getHeadline } from "@times-components/utils";
+import React, { useContext } from "react";
+import ArticleSkeleton, {
+  ArticleKeylineContainer
+} from "@times-components/article-skeleton";
+import { getHeadline, getLeadAsset } from "@times-components/utils";
 import Caption from "@times-components/caption";
+import { ResponsiveContext } from "@times-components/responsive";
+import { breakpoints } from "@times-components/styleguide";
 import ArticleHeader from "./article-header/article-header";
 import ArticleMeta from "./article-meta/article-meta";
 import ArticleTopics from "./article-topics";
 import {
-  articlePropTypes,
-  articleDefaultProps
+  articleDefaultProps,
+  articlePropTypes
 } from "./article-prop-types/article-prop-types";
 import { LeadAssetCaptionContainer } from "./styles/article-body/responsive";
 
@@ -19,86 +23,96 @@ const renderCaption = ({ caption }) => (
   </LeadAssetCaptionContainer>
 );
 
-class ArticlePage extends Component {
-  constructor(props) {
-    super(props);
-    this.renderHeader = this.renderHeader.bind(this);
-  }
+function MainStandardHeader({ article, saveAndShareBar, width }) {
+  const {
+    bylines,
+    hasVideo,
+    headline,
+    expirableFlags,
+    label,
+    publicationName,
+    publishedTime,
+    shortHeadline,
+    standfirst,
+    topics
+  } = article;
 
-  renderHeader(parentProps) {
-    const { article } = this.props;
-    const {
-      bylines,
-      hasVideo,
-      headline,
-      expirableFlags,
-      label,
-      publicationName,
-      publishedTime,
-      shortHeadline,
-      standfirst,
-      topics
-    } = article;
-    return (
-      <Fragment>
-        <HeaderContainer>
-          <ArticleHeader
-            flags={expirableFlags}
-            hasVideo={hasVideo}
-            headline={getHeadline(headline, shortHeadline)}
-            label={label}
-            standfirst={standfirst}
-          />
-        </HeaderContainer>
-        <MetaContainer>
-          <ArticleMeta
-            bylines={bylines}
-            publicationName={publicationName}
-            publishedTime={publishedTime}
-          />
-          <ArticleTopics topics={topics} />
-        </MetaContainer>
-        <LeadAsset
-          {...getLeadAsset(article)}
-          renderCaption={renderCaption}
-          width={parentProps.width}
+  const { screenWidth } = useContext(ResponsiveContext);
+  const isWide = screenWidth >= breakpoints.wide;
+
+  const leadAsset = (
+    <LeadAsset
+      {...getLeadAsset(article)}
+      renderCaption={renderCaption}
+      width={width}
+    />
+  );
+  const articleMeta = (
+    <ArticleMeta
+      bylines={bylines}
+      publicationName={publicationName}
+      publishedTime={publishedTime}
+      isWide={isWide}
+    />
+  );
+  return (
+    <>
+      {isWide ? null : leadAsset}
+      <HeaderContainer>
+        <ArticleHeader
+          flags={expirableFlags}
+          hasVideo={hasVideo}
+          headline={getHeadline(headline, shortHeadline)}
+          label={label}
+          standfirst={standfirst}
         />
-      </Fragment>
-    );
+      </HeaderContainer>
+      {isWide ? (
+        <>
+          <MetaContainer>
+            {articleMeta}
+            {/* @todo Remove article topics media query */}
+            <ArticleTopics topics={topics} />
+          </MetaContainer>
+        </>
+      ) : null}
+      <ArticleKeylineContainer>
+        {isWide ? leadAsset : articleMeta}
+        {saveAndShareBar}
+      </ArticleKeylineContainer>
+    </>
+  );
+}
+
+function ArticlePage({
+  adConfig,
+  article,
+  analyticsStream,
+  error,
+  isLoading,
+  receiveChildList,
+  saveApi,
+  spotAccountId,
+  paidContentClassName,
+  faviconUrl
+}) {
+  if (error || isLoading) {
+    return null;
   }
 
-  render() {
-    const {
-      adConfig,
-      article,
-      analyticsStream,
-      error,
-      isLoading,
-      receiveChildList,
-      saveApi,
-      spotAccountId,
-      paidContentClassName,
-      faviconUrl
-    } = this.props;
-
-    if (error || isLoading) {
-      return null;
-    }
-
-    return (
-      <ArticleSkeleton
-        adConfig={adConfig}
-        analyticsStream={analyticsStream}
-        data={article}
-        Header={this.renderHeader}
-        receiveChildList={receiveChildList}
-        saveApi={saveApi}
-        spotAccountId={spotAccountId}
-        paidContentClassName={paidContentClassName}
-        faviconUrl={faviconUrl}
-      />
-    );
-  }
+  return (
+    <ArticleSkeleton
+      adConfig={adConfig}
+      analyticsStream={analyticsStream}
+      data={article}
+      Header={MainStandardHeader}
+      receiveChildList={receiveChildList}
+      saveApi={saveApi}
+      spotAccountId={spotAccountId}
+      paidContentClassName={paidContentClassName}
+      faviconUrl={faviconUrl}
+    />
+  );
 }
 
 ArticlePage.propTypes = articlePropTypes;

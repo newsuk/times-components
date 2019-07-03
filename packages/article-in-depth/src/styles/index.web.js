@@ -10,11 +10,7 @@ const styles = StyleSheet.create({
     marginBottom: spacing(4)
   },
   metaContainer: {
-    alignItems: "center",
-    marginHorizontal: spacing(2),
-    paddingVertical: spacing(2),
-    borderTopColor: colours.functional.keyline,
-    borderTopWidth: 1
+    paddingVertical: spacing(2)
   }
 });
 

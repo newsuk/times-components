@@ -91,6 +91,27 @@ class ArticleSkeleton extends Component {
       }
     ]);
 
+    const saveAndShareBar =
+      savingEnabled || sharingEnabled ? (
+        <UserState state={UserState.loggedInOrShared}>
+          <MessageContext.Consumer>
+            {({ showMessage }) => (
+              <StickySaveAndShareBar
+                articleId={articleId}
+                articleHeadline={headline}
+                articleUrl={url}
+                onCopyLink={() => showMessage("Article link copied")}
+                onSaveToMyArticles={() => {}}
+                onShareOnEmail={() => {}}
+                saveApi={saveApi}
+                savingEnabled={savingEnabled}
+                sharingEnabled={sharingEnabled}
+              />
+            )}
+          </MessageContext.Consumer>
+        </UserState>
+      ) : null;
+
     return (
       <article
         ref={node => {
@@ -115,28 +136,11 @@ class ArticleSkeleton extends Component {
                   />
                 </HeaderAdContainer>
                 <MainContainer>
-                  <Header width={articleWidth} />
-                  {savingEnabled || sharingEnabled ? (
-                    <UserState state={UserState.loggedInOrShared}>
-                      <MessageContext.Consumer>
-                        {({ showMessage }) => (
-                          <StickySaveAndShareBar
-                            articleId={articleId}
-                            articleHeadline={headline}
-                            articleUrl={url}
-                            onCopyLink={() =>
-                              showMessage("Article link copied")
-                            }
-                            onSaveToMyArticles={() => {}}
-                            onShareOnEmail={() => {}}
-                            saveApi={saveApi}
-                            savingEnabled={savingEnabled}
-                            sharingEnabled={sharingEnabled}
-                          />
-                        )}
-                      </MessageContext.Consumer>
-                    </UserState>
-                  ) : null}
+                  <Header
+                    article={article}
+                    width={articleWidth}
+                    saveAndShareBar={saveAndShareBar}
+                  />
                   <BodyContainer>
                     <ArticleBody
                       content={newContent}
@@ -180,5 +184,8 @@ ArticleSkeleton.propTypes = {
 };
 ArticleSkeleton.defaultProps = articleSkeletonDefaultProps;
 
+export { ArticleKeylineContainer, KeylineItem } from "./keylines";
+
 export { ArticleLink };
+
 export default articleTrackingContext(withTrackScrollDepth(ArticleSkeleton));

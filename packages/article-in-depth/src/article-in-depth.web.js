@@ -1,20 +1,18 @@
 import React, { Component, Fragment } from "react";
-import ArticleSkeleton from "@times-components/article-skeleton";
+import ArticleSkeleton, {
+  ArticleKeylineContainer,
+  KeylineItem
+} from "@times-components/article-skeleton";
 import { getHeadline, getLeadAsset } from "@times-components/utils";
 import { CentredCaption } from "@times-components/caption";
-import UserState from "@times-components/user-state";
 import Meta from "./article-meta/article-meta";
 import ArticleHeader from "./article-header/article-header";
 import {
-  articlePropTypes,
-  articleDefaultProps
+  articleDefaultProps,
+  articlePropTypes
 } from "./article-prop-types/article-prop-types";
 import styles from "./styles";
-import {
-  HeaderContainer,
-  LeadAsset,
-  HeaderContainerBottomBorder
-} from "./styles/responsive";
+import { HeaderContainer, LeadAsset } from "./styles/responsive";
 
 class ArticlePage extends Component {
   constructor(props) {
@@ -22,7 +20,7 @@ class ArticlePage extends Component {
     this.renderHeader = this.renderHeader.bind(this);
   }
 
-  renderHeader({ width }) {
+  renderHeader({ width, saveAndShareBar }) {
     const { article } = this.props;
     const {
       backgroundColour,
@@ -55,19 +53,20 @@ class ArticlePage extends Component {
           style={styles.leadAsset}
           width={width}
         />
-        <HeaderContainer style={styles.metaContainer}>
-          <Meta
-            backgroundColour={backgroundColour}
-            bylines={bylines}
-            publicationName={publicationName}
-            publishedTime={publishedTime}
-            textColour={textColour}
-          />
-        </HeaderContainer>
-        <UserState
-          state={UserState.loggedInOrShared}
-          fallback={<HeaderContainerBottomBorder />}
-        />
+        <ArticleKeylineContainer>
+          <KeylineItem>
+            <HeaderContainer style={styles.metaContainer}>
+              <Meta
+                backgroundColour={backgroundColour}
+                bylines={bylines}
+                publicationName={publicationName}
+                publishedTime={publishedTime}
+                textColour={textColour}
+              />
+            </HeaderContainer>
+          </KeylineItem>
+          {saveAndShareBar}
+        </ArticleKeylineContainer>
       </Fragment>
     );
   }

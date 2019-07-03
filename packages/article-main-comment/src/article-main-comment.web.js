@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import ArticleSkeleton from "@times-components/article-skeleton";
+import ArticleSkeleton, {
+  ArticleKeylineContainer
+} from "@times-components/article-skeleton";
 import { getHeadline } from "@times-components/utils";
 import ArticleHeader from "./article-header/article-header";
 import {
@@ -13,7 +15,7 @@ class ArticlePage extends Component {
     this.renderHeader = this.renderHeader.bind(this);
   }
 
-  renderHeader() {
+  renderHeader({ saveAndShareBar }) {
     const { article } = this.props;
     const {
       bylines,
@@ -37,17 +39,20 @@ class ArticlePage extends Component {
         : null;
 
     return (
-      <ArticleHeader
-        authorImage={authorImage}
-        bylines={bylines}
-        flags={expirableFlags}
-        hasVideo={hasVideo}
-        headline={getHeadline(headline, shortHeadline)}
-        label={label}
-        publicationName={publicationName}
-        publishedTime={publishedTime}
-        standfirst={standfirst}
-      />
+      <>
+        <ArticleHeader
+          authorImage={authorImage}
+          bylines={bylines}
+          flags={expirableFlags}
+          hasVideo={hasVideo}
+          headline={getHeadline(headline, shortHeadline)}
+          label={label}
+          publicationName={publicationName}
+          publishedTime={publishedTime}
+          standfirst={standfirst}
+        />
+        <ArticleKeylineContainer>{saveAndShareBar}</ArticleKeylineContainer>
+      </>
     );
   }
 

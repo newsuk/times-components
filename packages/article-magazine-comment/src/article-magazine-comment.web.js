@@ -1,5 +1,7 @@
 import React, { Component, Fragment } from "react";
-import ArticleSkeleton from "@times-components/article-skeleton";
+import ArticleSkeleton, {
+  ArticleKeylineContainer
+} from "@times-components/article-skeleton";
 import {
   getHeadline,
   getLeadAsset,
@@ -20,7 +22,7 @@ class ArticlePage extends Component {
     this.renderHeader = this.renderHeader.bind(this);
   }
 
-  renderHeader({ width }) {
+  renderHeader({ width, saveAndShareBar }) {
     const { article } = this.props;
     const {
       bylines,
@@ -63,6 +65,7 @@ class ArticlePage extends Component {
           style={styles.leadAssetContainer}
           width={width}
         />
+        <ArticleKeylineContainer>{saveAndShareBar}</ArticleKeylineContainer>
       </Fragment>
     );
   }
