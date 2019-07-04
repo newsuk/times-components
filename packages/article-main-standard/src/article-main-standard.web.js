@@ -68,13 +68,10 @@ function MainStandardHeader({ article, saveAndShareBar, width }) {
         />
       </HeaderContainer>
       {isWide ? (
-        <>
-          <MetaContainer>
-            {articleMeta}
-            {/* @todo Remove article topics media query */}
-            <ArticleTopics topics={topics} />
-          </MetaContainer>
-        </>
+        <MetaContainer>
+          {articleMeta}
+          <ArticleTopics topics={topics} />
+        </MetaContainer>
       ) : null}
       <ArticleKeylineContainer>
         {isWide ? leadAsset : articleMeta}
