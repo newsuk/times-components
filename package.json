@@ -164,7 +164,7 @@
     "@babel/runtime-corejs2": "7.4.4",
     "@kudo-ci/jsc-android": "241213-no-jit",
     "react-art": "16.6.3",
-    "react-native": "0.59.9",
+    "react-native": "0.60.0",
     "react-native-showcase-loader": "1.1.0"
   }
 }
