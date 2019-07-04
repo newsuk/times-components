@@ -11,11 +11,10 @@
     "start": "react-native start --config metro.config.js"
   },
   "dependencies": {
-    "@kudo-ci/jsc-android": "241213-no-jit",
     "@times-components/pages": "2.0.106",
     "prop-types": "15.7.2",
     "react": "16.8.6",
-    "react-native": "0.59.9",
+    "react-native": "0.59.10",
     "react-native-svg": "9.4.0",
     "react-native-webview": "5.10.0",
     "url-polyfill": "1.1.0"
