@@ -5,12 +5,12 @@ import Link from "@times-components/link";
 import Image from "@times-components/image";
 import { ArticleSummaryHeadline } from "@times-components/article-summary";
 import { withPuzzleTileTracking } from "../shared";
-import styles from "./styles";
+import stylesFactory from "./styles";
 
-const { puzzleContainer, header, headline, imageContainer } = styles;
-
-const TileAK = ({ id, image, onPress, title, url }) => {
+const TileAK = ({ id, image, onPress, title, url, breakpoint }) => {
   const crop = image.crop32;
+  const styles = stylesFactory(breakpoint);
+  const { puzzleContainer, header, headline, imageContainer } = styles;
 
   return (
     <Link
@@ -46,7 +46,8 @@ TileAK.propTypes = {
   }).isRequired,
   onPress: PropTypes.func.isRequired,
   title: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired
+  url: PropTypes.string.isRequired,
+  breakpoint: PropTypes.string.isRequired
 };
 
 export default withPuzzleTileTracking(TileAK);

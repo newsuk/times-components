@@ -1,14 +1,24 @@
-import { colours, spacing } from "@times-components/styleguide";
+import {
+  colours,
+  spacing,
+  editionBreakpoints
+} from "@times-components/styleguide";
 
-const styles = {
+const headlineFontSizeResolver = {
+  [editionBreakpoints.medium]: 22,
+  [editionBreakpoints.wide]: 30,
+  [editionBreakpoints.huge]: 35
+};
+
+const styles = (breakpoint = editionBreakpoints.medium) => ({
   header: {
     paddingHorizontal: spacing(2),
     paddingTop: spacing(2),
     height: 80
   },
   headline: {
-    fontSize: 22,
-    lineHeight: 22
+    fontSize: headlineFontSizeResolver[breakpoint],
+    lineHeight: headlineFontSizeResolver[breakpoint]
   },
   imageContainer: {
     alignSelf: "flex-end",
@@ -22,6 +32,6 @@ const styles = {
     height: 150,
     overflow: "hidden"
   }
-};
+});
 
 export default styles;

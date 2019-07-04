@@ -2855,6 +2855,7 @@ exports[`16. puzzle 1`] = `
       className="css-view-1dbjc4n IS1"
     >
       <TileAK
+        breakpoint="wide"
         id="0"
         image={
           Object {
@@ -2877,6 +2878,7 @@ exports[`16. puzzle 1`] = `
       className="css-view-1dbjc4n IS2"
     >
       <TileAK
+        breakpoint="wide"
         id="1"
         image={
           Object {
@@ -2899,6 +2901,7 @@ exports[`16. puzzle 1`] = `
       className="css-view-1dbjc4n IS3"
     >
       <TileAK
+        breakpoint="wide"
         id="2"
         image={
           Object {
