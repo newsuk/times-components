@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.6.22](https://github.com/newsuk/times-components/compare/@times-components/ad@2.6.21...@times-components/ad@2.6.22) (2019-07-03)
+
+
+### Bug Fixes
+
+* issue with safari browser being launch when scroll to ad ([#2095](https://github.com/newsuk/times-components/issues/2095)) ([60ba656](https://github.com/newsuk/times-components/commit/60ba656))
+
+
+
+
+
 ## [2.6.21](https://github.com/newsuk/times-components/compare/@times-components/ad@2.6.20...@times-components/ad@2.6.21) (2019-07-02)
 
 
