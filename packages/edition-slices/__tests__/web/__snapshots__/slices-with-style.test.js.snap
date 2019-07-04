@@ -1522,6 +1522,7 @@ exports[`8. secondary one and columnist 1`] = `
       className="css-view-1dbjc4n IS1"
     >
       <TileAA
+        breakpoint="wide"
         tileName="secondary"
       />
     </div>
@@ -1532,6 +1533,7 @@ exports[`8. secondary one and columnist 1`] = `
       className="css-view-1dbjc4n IS3"
     >
       <TileAB
+        breakpoint="wide"
         tileName="columnist"
       />
     </div>

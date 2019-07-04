@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Image from "@times-components/image";
+import { editionBreakpoints } from "@times-components/styleguide";
 import {
   getTileImage,
   getTileSummary,
@@ -8,9 +9,10 @@ import {
   TileSummary,
   withTileTracking
 } from "../shared";
-import styles from "./styles";
+import styleFactory from "./styles";
 
-const TileH = ({ onPress, tile }) => {
+const TileAB = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
+  const styles = styleFactory(breakpoint);
   const crop = getTileImage(tile, "crop23");
 
   return (
@@ -35,9 +37,10 @@ const TileH = ({ onPress, tile }) => {
   );
 };
 
-TileH.propTypes = {
+TileAB.propTypes = {
+  breakpoint: PropTypes.string.isRequired,
   onPress: PropTypes.func.isRequired,
   tile: PropTypes.shape({}).isRequired
 };
 
-export default withTileTracking(TileH);
+export default withTileTracking(TileAB);

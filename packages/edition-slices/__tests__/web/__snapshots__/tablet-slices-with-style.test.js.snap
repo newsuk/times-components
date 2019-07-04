@@ -1109,6 +1109,7 @@ exports[`10. secondary one and columnist - medium 1`] = `
       className="css-view-1dbjc4n IS1"
     >
       <TileAA
+        breakpoint="wide"
         tileName="secondary"
       />
     </div>
@@ -1119,6 +1120,7 @@ exports[`10. secondary one and columnist - medium 1`] = `
       className="css-view-1dbjc4n IS3"
     >
       <TileAB
+        breakpoint="wide"
         tileName="columnist"
       />
     </div>
@@ -2916,6 +2918,7 @@ exports[`25. secondary one and columnist - wide 1`] = `
       className="css-view-1dbjc4n IS1"
     >
       <TileAA
+        breakpoint="wide"
         tileName="secondary"
       />
     </div>
@@ -2926,6 +2929,7 @@ exports[`25. secondary one and columnist - wide 1`] = `
       className="css-view-1dbjc4n IS3"
     >
       <TileAB
+        breakpoint="wide"
         tileName="columnist"
       />
     </div>
@@ -4723,6 +4727,7 @@ exports[`40. secondary one and columnist - huge 1`] = `
       className="css-view-1dbjc4n IS1"
     >
       <TileAA
+        breakpoint="wide"
         tileName="secondary"
       />
     </div>
@@ -4733,6 +4738,7 @@ exports[`40. secondary one and columnist - huge 1`] = `
       className="css-view-1dbjc4n IS3"
     >
       <TileAB
+        breakpoint="wide"
         tileName="columnist"
       />
     </div>
