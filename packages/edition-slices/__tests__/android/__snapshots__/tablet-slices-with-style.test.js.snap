@@ -2578,7 +2578,7 @@ exports[`33. lead one and one - huge 1`] = `
         }
       }
     >
-      <TileC />
+      <TileAQ />
     </View>
   </View>
 </View>
