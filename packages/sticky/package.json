@@ -53,7 +53,7 @@
     "prettier": "1.14.3",
     "react": "16.8.6",
     "react-dom": "16.8.6",
-    "react-native": "0.59.9",
+    "react-native": "0.59.10",
     "stylelint": "9.4.0",
     "stylelint-config-recommended": "2.1.0",
     "stylelint-config-styled-components": "0.1.1",
