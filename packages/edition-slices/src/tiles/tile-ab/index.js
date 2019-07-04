@@ -11,7 +11,7 @@ import {
 } from "../shared";
 import styleFactory from "./styles";
 
-const TileAB = ({ onPress, tile, breakpoint }) => {
+const TileAB = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
   const styles = styleFactory(breakpoint);
   const crop = getTileImage(tile, "crop23");
 
@@ -38,13 +38,9 @@ const TileAB = ({ onPress, tile, breakpoint }) => {
 };
 
 TileAB.propTypes = {
-  breakpoint: PropTypes.string,
+  breakpoint: PropTypes.string.isRequired,
   onPress: PropTypes.func.isRequired,
   tile: PropTypes.shape({}).isRequired
-};
-
-TileAB.defaultProps = {
-  breakpoint: editionBreakpoints.small
 };
 
 export default withTileTracking(TileAB);
