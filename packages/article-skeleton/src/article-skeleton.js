@@ -303,7 +303,6 @@ class ArticleSkeleton extends Component {
     const {
       adConfig,
       analyticsStream,
-      data,
       Header,
       interactiveConfig,
       onCommentGuidelinesPress,
@@ -330,7 +329,7 @@ class ArticleSkeleton extends Component {
             }
             ListHeaderComponent={
               <Gutter>
-                <Header article={data} width={Math.min(maxWidth, width)} />
+                <Header width={Math.min(maxWidth, width)} />
               </Gutter>
             }
             nestedScrollEnabled

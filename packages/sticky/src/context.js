@@ -60,7 +60,7 @@ class StickyProvider extends Component {
 }
 
 StickyProvider.propTypes = {
-  Component: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),
+  Component: PropTypes.elementType,
   children: PropTypes.node.isRequired
 };
 

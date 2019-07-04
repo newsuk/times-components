@@ -211,7 +211,10 @@ Head.propTypes = {
     publicationName: PropTypes.string.isRequired,
     shortHeadline: PropTypes.string,
     shortIdentifier: PropTypes.string.isRequired,
-    tiles: PropTypes.array
+    tiles: PropTypes.array,
+    publishedTime: PropTypes.string,
+    updatedTime: PropTypes.string,
+    hasVideo: PropTypes.bool
   }).isRequired,
   paidContentClassName: PropTypes.string.isRequired,
   faviconUrl: PropTypes.string.isRequired

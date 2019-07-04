@@ -1,7 +1,6 @@
 import { View } from "react-native";
 import styled from "styled-components";
 import { breakpoints, colours, spacing } from "@times-components/styleguide";
-import { STICKY_CLASS_NAME } from "@times-components/sticky";
 
 export const MainContainer = styled(View)`
   display: block;

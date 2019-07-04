@@ -158,7 +158,7 @@ class UnwrappedSticky extends Component {
 UnwrappedSticky.displayName = "Sticky";
 
 UnwrappedSticky.propTypes = {
-  Component: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),
+  Component: PropTypes.elementType,
   style: PropTypes.object,
   className: PropTypes.string,
   children: PropTypes.node,
