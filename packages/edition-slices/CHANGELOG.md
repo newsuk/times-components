@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.63.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.62.5...@times-components/edition-slices@0.63.0) (2019-07-04)
+
+
+### Features
+
+* implement wide and huge tablet Second1Column ([#2094](https://github.com/newsuk/times-components/issues/2094)) ([9704061](https://github.com/newsuk/times-components/commit/9704061))
+
+
+
+
+
 ## [0.62.5](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.62.4...@times-components/edition-slices@0.62.5) (2019-06-28)
 
 **Note:** Version bump only for package @times-components/edition-slices
