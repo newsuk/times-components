@@ -38,10 +38,20 @@ class SecondaryOneAndColumnist extends Component {
       <SecondaryOneAndColumnistSlice
         breakpoint={breakpoint}
         columnist={
-          <TileAB onPress={onPress} tile={columnist} tileName="columnist" />
+          <TileAB
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={columnist}
+            tileName="columnist"
+          />
         }
         secondary={
-          <TileAA onPress={onPress} tile={secondary} tileName="secondary" />
+          <TileAA
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={secondary}
+            tileName="secondary"
+          />
         }
       />
     );
