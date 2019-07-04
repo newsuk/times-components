@@ -11,7 +11,6 @@
     "start": "react-native start --config metro.config.js"
   },
   "dependencies": {
-    "@kudo-ci/jsc-android": "241213-no-jit",
     "@times-components/pages": "2.0.106",
     "prop-types": "15.7.2",
     "react": "16.8.6",
