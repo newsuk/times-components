@@ -18,19 +18,29 @@ class Puzzle extends Component {
       slice: { puzzles }
     } = this.props;
     const { container, tileContainer } = stylesFactory(breakpoint);
-    const Tile = breakpoint === editionBreakpoints.small ? TileAJ : TileAK;
 
     return (
       <View style={container}>
         {puzzles.map(({ id, title, url, image }) => (
           <View style={tileContainer}>
-            <Tile
-              id={id}
-              image={image}
-              onPress={onPress}
-              title={title}
-              url={url}
-            />
+            {breakpoint === editionBreakpoints.small ? (
+              <TileAJ
+                id={id}
+                image={image}
+                onPress={onPress}
+                title={title}
+                url={url}
+              />
+            ) : (
+              <TileAK
+                id={id}
+                image={image}
+                onPress={onPress}
+                title={title}
+                url={url}
+                breakpoint={breakpoint}
+              />
+            )}
           </View>
         ))}
       </View>
