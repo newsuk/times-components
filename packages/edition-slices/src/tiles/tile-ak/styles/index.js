@@ -4,27 +4,10 @@ import {
   editionBreakpoints
 } from "@times-components/styleguide";
 
-const getHeadline = breakpoint => {
-  switch (breakpoint) {
-    case editionBreakpoints.wide: {
-      return {
-        fontSize: 30,
-        lineHeight: 30
-      };
-    }
-    case editionBreakpoints.huge: {
-      return {
-        fontSize: 35,
-        lineHeight: 35
-      };
-    }
-    default: {
-      return {
-        fontSize: 22,
-        lineHeight: 22
-      };
-    }
-  }
+const headlineFontSizeResolver = {
+  [editionBreakpoints.medium]: 22,
+  [editionBreakpoints.wide]: 30,
+  [editionBreakpoints.huge]: 35
 };
 
 const styles = breakpoint => ({
@@ -33,7 +16,10 @@ const styles = breakpoint => ({
     paddingTop: spacing(2),
     height: 80
   },
-  headline: getHeadline(breakpoint),
+  headline: {
+    fontSize: headlineFontSizeResolver[breakpoint],
+    lineHeight: headlineFontSizeResolver[breakpoint]
+  },
   imageContainer: {
     alignSelf: "flex-end",
     width: "85%",
