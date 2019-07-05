@@ -53,9 +53,30 @@ class LeadersSlice extends Component {
     return (
       <Leaders
         breakpoint={breakpoint}
-        leader1={<TileAG onPress={onPress} tile={leader1} tileName="leader1" />}
-        leader2={<TileAG onPress={onPress} tile={leader2} tileName="leader2" />}
-        leader3={<TileAG onPress={onPress} tile={leader3} tileName="leader3" />}
+        leader1={
+          <TileAG
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={leader1}
+            tileName="leader1"
+          />
+        }
+        leader2={
+          <TileAG
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={leader2}
+            tileName="leader2"
+          />
+        }
+        leader3={
+          <TileAG
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={leader3}
+            tileName="leader3"
+          />
+        }
       />
     );
   }
