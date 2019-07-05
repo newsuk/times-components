@@ -43,7 +43,6 @@ const styles = {
   image: {
     height: "100%",
     position: "absolute",
-    resizeMode: "contain",
     width: "100%"
   },
   imageContainer: {

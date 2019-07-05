@@ -137,6 +137,7 @@ class TimesImage extends Component {
                 <Image
                   {...defaultImageProps}
                   fadeDuration={0}
+                  resizeMode="contain"
                   source={{ uri: lowResUri }}
                   style={styles.image}
                 />
