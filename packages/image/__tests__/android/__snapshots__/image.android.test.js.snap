@@ -549,6 +549,7 @@ exports[`12. uses lowressize image as placeholder if passed 1`] = `
       <Image
         fadeDuration={0}
         fadeImageIn={false}
+        resizeMode="contain"
         source={
           Object {
             "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800",

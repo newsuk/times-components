@@ -24,7 +24,6 @@ exports[`1. default image 1`] = `
         Object {
           "height": "100%",
           "position": "absolute",
-          "resizeMode": "contain",
           "width": "100%",
         }
       }
@@ -34,7 +33,6 @@ exports[`1. default image 1`] = `
         Object {
           "height": "100%",
           "position": "absolute",
-          "resizeMode": "contain",
           "width": "100%",
         }
       }

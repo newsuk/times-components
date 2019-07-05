@@ -103,7 +103,6 @@ exports[`1. landscape default modal 1`] = `
                   Object {
                     "height": "100%",
                     "position": "absolute",
-                    "resizeMode": "contain",
                     "width": "100%",
                   }
                 }
@@ -113,7 +112,6 @@ exports[`1. landscape default modal 1`] = `
                   Object {
                     "height": "100%",
                     "position": "absolute",
-                    "resizeMode": "contain",
                     "width": "100%",
                   }
                 }
@@ -228,7 +226,6 @@ exports[`1. landscape default modal 1`] = `
             Object {
               "height": "100%",
               "position": "absolute",
-              "resizeMode": "contain",
               "width": "100%",
             }
           }
@@ -369,7 +366,6 @@ exports[`2. portrait default modal 1`] = `
                   Object {
                     "height": "100%",
                     "position": "absolute",
-                    "resizeMode": "contain",
                     "width": "100%",
                   }
                 }
@@ -379,7 +375,6 @@ exports[`2. portrait default modal 1`] = `
                   Object {
                     "height": "100%",
                     "position": "absolute",
-                    "resizeMode": "contain",
                     "width": "100%",
                   }
                 }
@@ -494,7 +489,6 @@ exports[`2. portrait default modal 1`] = `
             Object {
               "height": "100%",
               "position": "absolute",
-              "resizeMode": "contain",
               "width": "100%",
             }
           }
@@ -635,7 +629,6 @@ exports[`3. tablet landscape default modal 1`] = `
                   Object {
                     "height": "100%",
                     "position": "absolute",
-                    "resizeMode": "contain",
                     "width": "100%",
                   }
                 }
@@ -645,7 +638,6 @@ exports[`3. tablet landscape default modal 1`] = `
                   Object {
                     "height": "100%",
                     "position": "absolute",
-                    "resizeMode": "contain",
                     "width": "100%",
                   }
                 }
@@ -676,7 +668,6 @@ exports[`3. tablet landscape default modal 1`] = `
                     Object {
                       "height": "100%",
                       "position": "absolute",
-                      "resizeMode": "contain",
                       "width": "100%",
                     }
                   }
@@ -765,7 +756,6 @@ exports[`3. tablet landscape default modal 1`] = `
             Object {
               "height": "100%",
               "position": "absolute",
-              "resizeMode": "contain",
               "width": "100%",
             }
           }
@@ -796,7 +786,6 @@ exports[`3. tablet landscape default modal 1`] = `
               Object {
                 "height": "100%",
                 "position": "absolute",
-                "resizeMode": "contain",
                 "width": "100%",
               }
             }
@@ -911,7 +900,6 @@ exports[`4. tablet portrait default modal 1`] = `
                   Object {
                     "height": "100%",
                     "position": "absolute",
-                    "resizeMode": "contain",
                     "width": "100%",
                   }
                 }
@@ -921,7 +909,6 @@ exports[`4. tablet portrait default modal 1`] = `
                   Object {
                     "height": "100%",
                     "position": "absolute",
-                    "resizeMode": "contain",
                     "width": "100%",
                   }
                 }
@@ -952,7 +939,6 @@ exports[`4. tablet portrait default modal 1`] = `
                     Object {
                       "height": "100%",
                       "position": "absolute",
-                      "resizeMode": "contain",
                       "width": "100%",
                     }
                   }
@@ -1041,7 +1027,6 @@ exports[`4. tablet portrait default modal 1`] = `
             Object {
               "height": "100%",
               "position": "absolute",
-              "resizeMode": "contain",
               "width": "100%",
             }
           }
@@ -1072,7 +1057,6 @@ exports[`4. tablet portrait default modal 1`] = `
               Object {
                 "height": "100%",
                 "position": "absolute",
-                "resizeMode": "contain",
                 "width": "100%",
               }
             }
