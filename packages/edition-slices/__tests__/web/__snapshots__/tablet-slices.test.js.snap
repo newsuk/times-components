@@ -71,6 +71,7 @@ exports[`3. lead one and one - medium 1`] = `
 exports[`4. lead one full width - medium 1`] = `
 <div>
   <TileR
+    breakpoint="wide"
     tileName="lead"
   />
 </div>
@@ -521,6 +522,7 @@ exports[`18. lead one and one - wide 1`] = `
 exports[`19. lead one full width - wide 1`] = `
 <div>
   <TileR
+    breakpoint="wide"
     tileName="lead"
   />
 </div>
@@ -971,6 +973,7 @@ exports[`33. lead one and one - huge 1`] = `
 exports[`34. lead one full width - huge 1`] = `
 <div>
   <TileR
+    breakpoint="wide"
     tileName="lead"
   />
 </div>
