@@ -1,16 +1,15 @@
 import { View } from "react-native";
 import styled from "styled-components";
 import { breakpoints, colours, spacing } from "@times-components/styleguide";
+import { ArticleKeylineItem } from "../keylines";
 
 export const MainContainer = styled(View)`
-  display: block;
   @media (min-width: ${breakpoints.wide}px) {
     padding-top: ${spacing(4)};
     margin: 0 auto;
   }
 `;
 
-/* --- HeaderAd --- */
 export const HeaderAdContainer = styled(View)`
   display: none;
 
@@ -24,7 +23,15 @@ export const HeaderAdContainer = styled(View)`
   }
 `;
 
+export const HeaderContainer = styled(View)`
+  display: flex;
+
+  > ${ArticleKeylineItem} {
+    order: 3;
+  }
+`;
+
 export const BodyContainer = styled(View)`
   display: block;
-  order: 3;
+  order: 4;
 `;

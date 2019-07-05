@@ -1,7 +1,5 @@
 import React, { Component, Fragment } from "react";
-import ArticleSkeleton, {
-  ArticleKeylineContainer
-} from "@times-components/article-skeleton";
+import ArticleSkeleton from "@times-components/article-skeleton";
 import {
   getHeadline,
   getLeadAsset,
@@ -10,8 +8,8 @@ import {
 import { CentredCaption } from "@times-components/caption";
 import ArticleHeader from "./article-header/article-header";
 import {
-  articlePropTypes,
-  articleDefaultProps
+  articleDefaultProps,
+  articlePropTypes
 } from "./article-prop-types/article-prop-types";
 import styles from "./styles";
 import { LeadAsset } from "./styles/responsive.web";
@@ -65,7 +63,7 @@ class ArticlePage extends Component {
           style={styles.leadAssetContainer}
           width={width}
         />
-        <ArticleKeylineContainer>{saveAndShareBar}</ArticleKeylineContainer>
+        {saveAndShareBar}
       </Fragment>
     );
   }

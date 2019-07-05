@@ -3,7 +3,7 @@ import styled from "styled-components";
 import SaveAndShareBar from "@times-components/save-and-share-bar";
 import Sticky, { STICKY_CLASS_NAME } from "@times-components/sticky";
 import { breakpoints, colours } from "@times-components/styleguide";
-import { KeylineItem } from "./keylines";
+import { ArticleKeylineItem } from "./keylines";
 
 export const SaveShareContainer = styled.div`
   background-color: ${colours.functional.white};
@@ -18,11 +18,11 @@ const shouldBeSticky = Sticky.mediaQuery(`(max-width: ${breakpoints.huge}px)`);
 
 function StickySaveAndShareBar(props) {
   return (
-    <KeylineItem>
+    <ArticleKeylineItem>
       <Sticky Component={SaveShareContainer} shouldBeSticky={shouldBeSticky}>
         <SaveAndShareBar {...props} />
       </Sticky>
-    </KeylineItem>
+    </ArticleKeylineItem>
   );
 }
 

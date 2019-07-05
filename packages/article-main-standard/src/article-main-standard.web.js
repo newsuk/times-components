@@ -1,11 +1,9 @@
-import React, { useContext } from "react";
-import ArticleSkeleton, {
-  ArticleKeylineContainer
-} from "@times-components/article-skeleton";
+/* eslint-disable react/require-default-props */
+import React from "react";
+import PropTypes from "prop-types";
+import ArticleSkeleton from "@times-components/article-skeleton";
 import { getHeadline, getLeadAsset } from "@times-components/utils";
 import Caption from "@times-components/caption";
-import { ResponsiveContext } from "@times-components/responsive";
-import { breakpoints } from "@times-components/styleguide";
 import ArticleHeader from "./article-header/article-header";
 import ArticleMeta from "./article-meta/article-meta";
 import ArticleTopics from "./article-topics";
@@ -15,7 +13,13 @@ import {
 } from "./article-prop-types/article-prop-types";
 import { LeadAssetCaptionContainer } from "./styles/article-body/responsive";
 
-import { HeaderContainer, LeadAsset, MetaContainer } from "./styles/responsive";
+import {
+  HeaderContainer,
+  LeadAsset,
+  MetaContainer,
+  OuterHeaderContainer,
+  HeaderTopContainer
+} from "./styles/responsive.web";
 
 const renderCaption = ({ caption }) => (
   <LeadAssetCaptionContainer>
@@ -23,7 +27,7 @@ const renderCaption = ({ caption }) => (
   </LeadAssetCaptionContainer>
 );
 
-function MainStandardHeader({ article, saveAndShareBar, width }) {
+function MainStandardHeader({ article, width, saveAndShareBar = null }) {
   const {
     bylines,
     hasVideo,
@@ -37,9 +41,6 @@ function MainStandardHeader({ article, saveAndShareBar, width }) {
     topics
   } = article;
 
-  const { screenWidth } = useContext(ResponsiveContext);
-  const isWide = screenWidth >= breakpoints.wide;
-
   const leadAsset = (
     <LeadAsset
       {...getLeadAsset(article)}
@@ -47,39 +48,37 @@ function MainStandardHeader({ article, saveAndShareBar, width }) {
       width={width}
     />
   );
-  const articleMeta = (
-    <ArticleMeta
-      bylines={bylines}
-      publicationName={publicationName}
-      publishedTime={publishedTime}
-      isWide={isWide}
-    />
-  );
+  const metaProps = { bylines, publicationName, publishedTime };
+
   return (
-    <>
-      {isWide ? null : leadAsset}
-      <HeaderContainer>
-        <ArticleHeader
-          flags={expirableFlags}
-          hasVideo={hasVideo}
-          headline={getHeadline(headline, shortHeadline)}
-          label={label}
-          standfirst={standfirst}
-        />
-      </HeaderContainer>
-      {isWide ? (
+    <OuterHeaderContainer>
+      <HeaderTopContainer>
+        <HeaderContainer>
+          <ArticleHeader
+            flags={expirableFlags}
+            hasVideo={hasVideo}
+            headline={getHeadline(headline, shortHeadline)}
+            label={label}
+            standfirst={standfirst}
+          />
+        </HeaderContainer>
         <MetaContainer>
-          {articleMeta}
+          <ArticleMeta {...metaProps} />
           <ArticleTopics topics={topics} />
         </MetaContainer>
-      ) : null}
-      <ArticleKeylineContainer>
-        {isWide ? leadAsset : articleMeta}
-        {saveAndShareBar}
-      </ArticleKeylineContainer>
-    </>
+      </HeaderTopContainer>
+      {leadAsset}
+      <ArticleMeta {...metaProps} inline className="inline-meta" />
+      {saveAndShareBar}
+    </OuterHeaderContainer>
   );
 }
+
+MainStandardHeader.propTypes = {
+  article: articlePropTypes.article,
+  width: PropTypes.number.isRequired,
+  saveAndShareBar: PropTypes.element
+};
 
 function ArticlePage({
   adConfig,

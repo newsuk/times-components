@@ -1,12 +1,10 @@
 import React, { Component } from "react";
-import ArticleSkeleton, {
-  ArticleKeylineContainer
-} from "@times-components/article-skeleton";
+import ArticleSkeleton from "@times-components/article-skeleton";
 import { getHeadline } from "@times-components/utils";
 import ArticleHeader from "./article-header/article-header";
 import {
-  articlePropTypes,
-  articleDefaultProps
+  articleDefaultProps,
+  articlePropTypes
 } from "./article-prop-types/article-prop-types";
 
 class ArticlePage extends Component {
@@ -51,7 +49,7 @@ class ArticlePage extends Component {
           publishedTime={publishedTime}
           standfirst={standfirst}
         />
-        <ArticleKeylineContainer>{saveAndShareBar}</ArticleKeylineContainer>
+        {saveAndShareBar}
       </>
     );
   }

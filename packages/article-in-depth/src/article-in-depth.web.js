@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from "react";
 import ArticleSkeleton, {
-  ArticleKeylineContainer,
-  KeylineItem
+  ArticleKeylineItem
 } from "@times-components/article-skeleton";
 import { getHeadline, getLeadAsset } from "@times-components/utils";
 import { CentredCaption } from "@times-components/caption";
@@ -53,20 +52,18 @@ class ArticlePage extends Component {
           style={styles.leadAsset}
           width={width}
         />
-        <ArticleKeylineContainer>
-          <KeylineItem>
-            <HeaderContainer style={styles.metaContainer}>
-              <Meta
-                backgroundColour={backgroundColour}
-                bylines={bylines}
-                publicationName={publicationName}
-                publishedTime={publishedTime}
-                textColour={textColour}
-              />
-            </HeaderContainer>
-          </KeylineItem>
-          {saveAndShareBar}
-        </ArticleKeylineContainer>
+        <ArticleKeylineItem>
+          <HeaderContainer style={styles.metaContainer}>
+            <Meta
+              backgroundColour={backgroundColour}
+              bylines={bylines}
+              publicationName={publicationName}
+              publishedTime={publishedTime}
+              textColour={textColour}
+            />
+          </HeaderContainer>
+        </ArticleKeylineItem>
+        {saveAndShareBar}
       </Fragment>
     );
   }

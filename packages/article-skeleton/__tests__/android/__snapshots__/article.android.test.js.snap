@@ -8,7 +8,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
         <Header
           width={750}
         />
-      </Gutter>
+      </Gutter> 
     }
     initialListSize={10}
     initialNumToRender={10}
@@ -41,7 +41,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
               <Text
                 selectable={true}
               >
-                his being Black History 
+                his being Black History
               </Text>
               <Text
                 selectable={true}
@@ -219,7 +219,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 <View>
                   <View />
                   <Text>
-                    An example 
+                    An example
                     <Text
                       accessibilityRole="link"
                     >
@@ -236,9 +236,9 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 <View>
                   <View />
                   <Text>
-                    Example text 
+                    Example text
                     <Text>
-                      this is bold 
+                      this is bold
                     </Text>
                     <Text>
                       this is in italics.
@@ -329,17 +329,17 @@ exports[`3. an article with a nested markup in first paragraph displays a drop c
               <Text
                 selectable={true}
               >
-                 Some years ago I 
+                 Some years ago I
               </Text>
               <Text
                 selectable={true}
               >
-                made the decision 
+                made the decision
               </Text>
               <Text
                 selectable={true}
               >
-                to take as a friend 
+                to take as a friend
               </Text>
               <Text
                 selectable={true}

@@ -1,8 +1,13 @@
+/* eslint-disable react/require-default-props */
 import React from "react";
+import PropTypes from "prop-types";
 import { Text, View } from "react-native";
 import styled from "styled-components";
 import { breakpoints, spacing } from "@times-components/styleguide";
-import { KeylineItem } from "@times-components/article-skeleton";
+import {
+  KeylineItem,
+  ArticleKeylineItem
+} from "@times-components/article-skeleton";
 import { ArticleBylineWithLinks } from "@times-components/article-byline";
 import DatePublication from "@times-components/date-publication";
 import { defaultProps, propTypes } from "./article-meta-prop-types";
@@ -28,7 +33,8 @@ function ArticleMeta({
   publicationName,
   publishedTime,
   onAuthorPress,
-  isWide
+  inline = false,
+  className = ""
 }) {
   const bylineRow = hasBylineData(bylines) ? (
     <MetaTextElement>
@@ -46,24 +52,30 @@ function ArticleMeta({
     </MetaTextElement>
   );
 
+  const KeylineComponent = inline ? ArticleKeylineItem : KeylineItem;
+
   return (
     <>
-      {isWide ? (
-        <KeylineItem>
+      {inline ? null : (
+        <KeylineComponent className={className}>
           <View>{bylineRow}</View>
-        </KeylineItem>
-      ) : null}
-      <KeylineItem>
+        </KeylineComponent>
+      )}
+      <KeylineComponent className={className}>
         <View>
-          {isWide ? null : bylineRow}
+          {inline ? bylineRow : null}
           {publicationRow}
         </View>
-      </KeylineItem>
+      </KeylineComponent>
     </>
   );
 }
 
-ArticleMeta.propTypes = propTypes;
+ArticleMeta.propTypes = {
+  ...propTypes,
+  inline: PropTypes.bool,
+  className: PropTypes.string
+};
 ArticleMeta.defaultProps = defaultProps;
 
 export default ArticleMeta;

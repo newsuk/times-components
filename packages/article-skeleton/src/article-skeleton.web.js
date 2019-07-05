@@ -17,7 +17,8 @@ import insertDropcapIntoAST from "./dropcap-util";
 import {
   BodyContainer,
   HeaderAdContainer,
-  MainContainer
+  MainContainer,
+  HeaderContainer
 } from "./styles/responsive";
 import Head from "./head";
 import StickySaveAndShareBar from "./sticky-save-and-share-bar";
@@ -136,11 +137,13 @@ class ArticleSkeleton extends Component {
                   />
                 </HeaderAdContainer>
                 <MainContainer>
-                  <Header
-                    article={article}
-                    width={articleWidth}
-                    saveAndShareBar={saveAndShareBar}
-                  />
+                  <HeaderContainer>
+                    <Header
+                      article={article}
+                      width={articleWidth}
+                      saveAndShareBar={saveAndShareBar}
+                    />
+                  </HeaderContainer>
                   <BodyContainer>
                     <ArticleBody
                       content={newContent}
@@ -184,7 +187,7 @@ ArticleSkeleton.propTypes = {
 };
 ArticleSkeleton.defaultProps = articleSkeletonDefaultProps;
 
-export { ArticleKeylineContainer, KeylineItem } from "./keylines";
+export { KeylineItem, ArticleKeylineItem } from "./keylines";
 
 export { ArticleLink };
 

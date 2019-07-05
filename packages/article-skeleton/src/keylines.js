@@ -2,16 +2,21 @@ import styled from "styled-components";
 import { breakpoints, colours, spacing } from "@times-components/styleguide";
 
 export const KeylineItem = styled.div`
+  position: relative;
   border: solid ${colours.functional.keyline};
   border-width: 1px 0;
 
   & + & {
-    border-top-width: 0;
+    margin-top: -1px !important;
   }
 `;
 
-export const ArticleKeylineContainer = styled.div`
+export const ArticleKeylineItem = styled(KeylineItem)`
   margin: 0 auto;
+
+  &:last-child {
+    margin-bottom: ${spacing(6)};
+  }
 
   @media (min-width: ${breakpoints.medium}px) {
     width: 80.8%;
@@ -24,9 +29,5 @@ export const ArticleKeylineContainer = styled.div`
   @media (max-width: ${breakpoints.medium}px) {
     margin-left: ${spacing(2)};
     margin-right: ${spacing(2)};
-  }
-
-  > :last-child {
-    margin-bottom: ${spacing(6)};
   }
 `;
