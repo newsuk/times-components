@@ -1,4 +1,4 @@
-import { spacing, colours } from "@times-components/styleguide";
+import { spacing, colours, editionBreakpoints } from "@times-components/styleguide";
 
 const styles = {
   container: {
@@ -18,4 +18,15 @@ const styles = {
   }
 };
 
-export default styles;
+const hugeBreakpointStyles = {
+  ...styles,
+  container : {
+    ...styles.container,
+    width: "87.6%",
+    alignSelf: "center",
+  }
+}
+
+export default breakpoint => breakpoint === editionBreakpoints.huge
+  ? hugeBreakpointStyles
+  : styles
