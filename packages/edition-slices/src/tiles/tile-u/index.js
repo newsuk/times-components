@@ -1,3 +1,4 @@
+/* eslint-disable react/require-default-props */
 import React from "react";
 import PropTypes from "prop-types";
 import Image from "@times-components/image";
@@ -11,7 +12,7 @@ import {
 } from "../shared";
 import styleFactory from "./styles";
 
-const TileU = ({ onPress, tile, breakpoint }) => {
+const TileU = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
   const styles = styleFactory(breakpoint);
   const crop = getTileImage(tile, "crop32");
 
@@ -55,10 +56,6 @@ TileU.propTypes = {
   breakpoint: PropTypes.string,
   onPress: PropTypes.func.isRequired,
   tile: PropTypes.shape({}).isRequired
-};
-
-TileU.defaultProps = {
-  breakpoint: editionBreakpoints.small
 };
 
 export default withTileTracking(TileU);
