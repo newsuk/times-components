@@ -1,16 +1,35 @@
-import { fonts, spacing } from "@times-components/styleguide";
+import {
+  fonts,
+  spacing,
+  editionBreakpoints
+} from "@times-components/styleguide";
 
-const styles = {
+const headlineFontSizeResolver = {
+  [editionBreakpoints.medium]: 40,
+  [editionBreakpoints.huge]: 45,
+  [editionBreakpoints.wide]: 45
+};
+
+const defaultContainerStyle = {
+  paddingBottom: spacing(3),
+  paddingHorizontal: spacing(4),
+  paddingTop: spacing(2)
+};
+
+const hugeScreenContainerStyle = {
+  width: "87.6%",
+  paddingHorizontal: spacing(0),
+  alignSelf: "center"
+};
+
+export default breakpoint => ({
   container: {
-    paddingBottom: spacing(3),
-    paddingHorizontal: spacing(4),
-    paddingTop: spacing(2)
+    ...defaultContainerStyle,
+    ...(breakpoint === editionBreakpoints.huge ? hugeScreenContainerStyle : {})
   },
   headline: {
     fontFamily: fonts.headline,
-    fontSize: 40,
-    lineHeight: 40
+    fontSize: headlineFontSizeResolver[breakpoint],
+    lineHeight: headlineFontSizeResolver[breakpoint]
   }
-};
-
-export default styles;
+});
