@@ -51,10 +51,11 @@ export default (
       }
 
       observed.forEach(({ isIntersecting, target }) => {
-        if (isIntersecting && !this.viewed.has(target.id)) {
-          this.viewed.add(target.id);
-
-          this.onChildView(this.childData[target.id]);
+        if (isIntersecting && !this.viewed.has(target)) {
+          this.viewed.add(target);
+          this.onChildView(
+            this.childData[target.attributes["data-testid"].nodeValue]
+          );
         }
       });
     }
@@ -67,7 +68,7 @@ export default (
           ...resolveAttrs(getAttrs, childProps),
           scrollDepth: {
             itemNumber: childProps.index + 1,
-            name: childProps.name,
+            name: childProps.elementId,
             total: childProps.total
           }
         },
@@ -93,7 +94,8 @@ export default (
     }
 
     observeChild(props) {
-      const el = document.getElementById(props.elementId);
+      const el = document.querySelector(`[data-testid="${props.elementId}"]`);
+
       if (el) {
         this.observer.observe(el);
         this.childData[props.elementId] = props;
