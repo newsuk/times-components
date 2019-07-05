@@ -2,16 +2,15 @@ package com.storybooknative;
 
 import android.app.Application;
 
+import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
-import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
 import com.horcrux.svg.SvgPackage;
 import com.reactnativecommunity.webview.RNCWebViewPackage;
 import com.storybooknative.stubs.StorybookStubPackage;
 
-import java.util.Arrays;
 import java.util.List;
 
 public class MainApplication extends Application implements ReactApplication {
@@ -24,13 +23,11 @@ public class MainApplication extends Application implements ReactApplication {
 
         @Override
         protected List<ReactPackage> getPackages() {
-            return Arrays.asList(
-                    new MainReactPackage(),
-                    new ComponentsPackage(),
-                    new StorybookStubPackage(),
-                    new SvgPackage(),
-                    new RNCWebViewPackage()
-            );
+            @SuppressWarnings("UnnecessaryLocalVariable")
+    	    List<ReactPackage> packages = new PackageList(this).getPackages();
+    	    // Packages that cannot be autolinked yet can be added manually here, for example:
+    	    // packages.add(new MyReactNativePackage());
+    	    return packages;
         }
 
         @Override
