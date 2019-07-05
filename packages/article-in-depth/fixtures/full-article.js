@@ -687,132 +687,148 @@ export const videoLeadAsset = ({
 
 const defaultBylines = [
   {
-    byline: {
-      attributes: {
-        slug: "camilla-long"
-      },
-      children: [
-        {
-          attributes: {
-            value: "Camilla Long"
-          },
-          children: [],
-          name: "text"
-        }
-      ],
-      name: "author"
-    }
+    byline: [
+      {
+        attributes: {
+          slug: "camilla-long"
+        },
+        children: [
+          {
+            attributes: {
+              value: "Camilla Long"
+            },
+            children: [],
+            name: "text"
+          }
+        ],
+        name: "author"
+      }
+    ]
   },
   {
-    byline: {
-      attributes: {},
-      children: [
-        {
-          attributes: {
-            value: ", Environment Editor"
-          },
-          children: [],
-          name: "text"
-        }
-      ],
-      name: "inline"
-    }
+    byline: [
+      {
+        attributes: {},
+        children: [
+          {
+            attributes: {
+              value: ", Environment Editor"
+            },
+            children: [],
+            name: "text"
+          }
+        ],
+        name: "inline"
+      }
+    ]
   },
   {
-    byline: {
-      attributes: {
-        slug: "camilla-long"
-      },
-      children: [
-        {
-          attributes: {
-            value: "Camilla Long"
-          },
-          children: [],
-          name: "text"
-        }
-      ],
-      name: "author"
-    }
+    byline: [
+      {
+        attributes: {
+          slug: "camilla-long"
+        },
+        children: [
+          {
+            attributes: {
+              value: "Camilla Long"
+            },
+            children: [],
+            name: "text"
+          }
+        ],
+        name: "author"
+      }
+    ]
   },
   {
-    byline: {
-      attributes: {},
-      children: [
-        {
-          attributes: {
-            value: ", Environment Editor"
-          },
-          children: [],
-          name: "text"
-        }
-      ],
-      name: "inline"
-    }
+    byline: [
+      {
+        attributes: {},
+        children: [
+          {
+            attributes: {
+              value: ", Environment Editor"
+            },
+            children: [],
+            name: "text"
+          }
+        ],
+        name: "inline"
+      }
+    ]
   },
   {
-    byline: {
-      attributes: {
-        slug: "camilla-long"
-      },
-      children: [
-        {
-          attributes: {
-            value: "Camilla Long"
-          },
-          children: [],
-          name: "text"
-        }
-      ],
-      name: "author"
-    }
+    byline: [
+      {
+        attributes: {
+          slug: "camilla-long"
+        },
+        children: [
+          {
+            attributes: {
+              value: "Camilla Long"
+            },
+            children: [],
+            name: "text"
+          }
+        ],
+        name: "author"
+      }
+    ]
   },
   {
-    byline: {
-      attributes: {},
-      children: [
-        {
-          attributes: {
-            value: ", Environment Editor"
-          },
-          children: [],
-          name: "text"
-        }
-      ],
-      name: "inline"
-    }
+    byline: [
+      {
+        attributes: {},
+        children: [
+          {
+            attributes: {
+              value: ", Environment Editor"
+            },
+            children: [],
+            name: "text"
+          }
+        ],
+        name: "inline"
+      }
+    ]
   },
   {
-    byline: {
-      attributes: {
-        slug: "camilla-long"
-      },
-      children: [
-        {
-          attributes: {
-            value: "Camilla Long"
-          },
-          children: [],
-          name: "text"
-        }
-      ],
-      name: "author"
-    }
+    byline: [
+      {
+        attributes: {
+          slug: "camilla-long"
+        },
+        children: [
+          {
+            attributes: {
+              value: "Camilla Long"
+            },
+            children: [],
+            name: "text"
+          }
+        ],
+        name: "author"
+      }
+    ]
   },
   {
-    byline: {
-      attributes: {},
-      children: [
-        {
-          attributes: {
-            value: ", Environment Editor"
-          },
-          children: [],
-          name: "text"
-        }
-      ],
-      name: "inline"
-    }
+    byline: [
+      {
+        attributes: {},
+        children: [
+          {
+            attributes: {
+              value: ", Environment Editor"
+            },
+            children: [],
+            name: "text"
+          }
+        ],
+        name: "inline"
+      }
+    ]
   }
 ];
 const defaultCommentCount = 65;
@@ -2123,19 +2139,21 @@ export const testFixture = {
   backgroundColour: defaultBackgroundColour,
   bylines: [
     {
-      byline: {
-        attributes: {},
-        children: [
-          {
-            attributes: {
-              value: "Some byline"
-            },
-            children: [],
-            name: "text"
-          }
-        ],
-        name: "inline"
-      }
+      byline: [
+        {
+          attributes: {},
+          children: [
+            {
+              attributes: {
+                value: "Some byline"
+              },
+              children: [],
+              name: "text"
+            }
+          ],
+          name: "inline"
+        }
+      ]
     }
   ],
   commentCount: 65,

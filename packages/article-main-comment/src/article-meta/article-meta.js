@@ -3,13 +3,12 @@ import { Text, View } from "react-native";
 import PropTypes from "prop-types";
 import { ArticleBylineWithLinks } from "@times-components/article-byline";
 import DatePublication from "@times-components/date-publication";
+
+import hasBylineData from "./has-byline-data";
 import metaPropTypes from "./article-meta-prop-types";
 import styles from "../styles";
 
 const Separator = () => <View style={styles.separator} />;
-
-const hasBylineData = bylines =>
-  bylines.length > 0 && bylines[0].byline && bylines[0].byline.length > 0;
 
 const ArticleMeta = ({
   bylines,

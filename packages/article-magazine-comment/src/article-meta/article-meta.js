@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import { ArticleBylineWithLinks } from "@times-components/article-byline";
 import DatePublication from "@times-components/date-publication";
 
+import hasBylineData from "./has-byline-data";
 import metaPropTypes from "./article-meta-prop-types";
 import styles from "../styles";
 
@@ -24,7 +25,7 @@ const ArticleMeta = ({
       isTablet && styles.metaContainerTablet
     ]}
   >
-    {bylines.length && (
+    {hasBylineData(bylines) && (
       <View style={[styles.meta, isTablet && styles.metaTablet]}>
         <ArticleBylineWithLinks ast={bylines} onAuthorPress={onAuthorPress} />
       </View>

@@ -3,6 +3,7 @@ import { ArticleBylineWithLinks } from "@times-components/article-byline";
 import DatePublication from "@times-components/date-publication";
 
 import metaPropTypes from "./article-meta-prop-types";
+import hasBylineData from "./has-byline-data";
 import {
   DatePublicationContainer,
   Meta,
@@ -13,7 +14,7 @@ import styles from "../styles";
 
 const ArticleMeta = ({ bylines, publicationName, publishedTime }) => (
   <MetaContainer>
-    {bylines.length && (
+    {hasBylineData(bylines) && (
       <Fragment>
         <Meta style={styles.meta}>
           <ArticleBylineWithLinks ast={bylines} />

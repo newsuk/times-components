@@ -6,6 +6,7 @@ import Context from "@times-components/context";
 import DatePublication from "@times-components/date-publication";
 import { colours } from "@times-components/styleguide";
 
+import hasBylineData from "./has-byline-data";
 import metaPropTypes from "./article-meta-prop-types";
 import styles from "../styles";
 
@@ -19,7 +20,7 @@ const ArticleMeta = ({
   publishedTime
 }) => (
   <View style={[styles.metaContainer, isTablet && styles.metaContainerTablet]}>
-    {bylines.length && (
+    {hasBylineData(bylines) && (
       <View style={[styles.meta, isTablet && styles.metaTablet]}>
         <Context.Consumer>
           {({ theme: { sectionColour } }) => (
