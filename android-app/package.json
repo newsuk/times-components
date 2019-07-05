@@ -1,6 +1,6 @@
 {
   "name": "@times-components/android-app",
-  "version": "0.14.135",
+  "version": "0.14.136",
   "license": "BSD-3-Clause",
   "scripts": {
     "build": "./gradlew clean && ./gradlew generateReactArchives && ./gradlew assemble && ./gradlew publish",
