@@ -5,6 +5,7 @@ exports[`1. comment lead and cartoon - medium 1`] = `
   <View>
     <View>
       <TileAH
+        breakpoint="medium"
         tileName="lead"
       />
     </View>
@@ -466,6 +467,7 @@ exports[`16. comment lead and cartoon - wide 1`] = `
   <View>
     <View>
       <TileAH
+        breakpoint="wide"
         tileName="lead"
       />
     </View>
@@ -923,6 +925,7 @@ exports[`31. comment lead and cartoon - huge 1`] = `
   <View>
     <View>
       <TileAH
+        breakpoint="huge"
         tileName="lead"
       />
     </View>
