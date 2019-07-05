@@ -13,11 +13,12 @@ export const boxStyles = StyleSheet.create({
 });
 
 const Box = ({ children, color, id }) => (
-  <View testID={id} style={[boxStyles.box, { backgroundColor: color }]}>
-    {children}
-  </View>
+  <div id={id}>
+    <View id={id} style={[boxStyles.box, { backgroundColor: color }]}>
+      {children}
+    </View>
+  </div>
 );
-
 Box.propTypes = {
   children: PropTypes.element,
   color: PropTypes.string,
