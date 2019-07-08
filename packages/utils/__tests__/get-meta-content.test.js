@@ -1,20 +1,18 @@
 import getMetaContent from "../src/get-meta-content";
 
 const description = [
-    {
-        attributes: {value: "Chelsea is known for its "},
-        children: []
-    },
-    {
-        attributes: {},
-        children: [
-            {attributes: {value: "affluent "}}
-        ]
-    },
-    {
-        attributes: {value: "population."},
-        children: []
-    }
+  {
+    attributes: { value: "Chelsea is known for its " },
+    children: []
+  },
+  {
+    attributes: {},
+    children: [{ attributes: { value: "affluent " } }]
+  },
+  {
+    attributes: { value: "population." },
+    children: []
+  }
 ];
 
 const longDescription = [
@@ -30,17 +28,19 @@ const longDescription = [
     },
     children: []
   }
-]
+];
 
 describe("getMetaContent should", () => {
   it("formulate a string out of a topic description", () => {
-    expect(getMetaContent(description)).toEqual("Chelsea is known for its affluent population.");
+    expect(getMetaContent(description)).toEqual(
+      "Chelsea is known for its affluent population."
+    );
   });
   it("return an empty string if there is no description available", () => {
-    expect(getMetaContent([])).toEqual('');
+    expect(getMetaContent([])).toEqual("");
   });
   it("cap a strings length at 200 chars", () => {
-    const longMetaTag = getMetaContent(longDescription)
+    const longMetaTag = getMetaContent(longDescription);
     expect(longMetaTag.length).toEqual(200);
   });
 });

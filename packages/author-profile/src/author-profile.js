@@ -111,7 +111,7 @@ const AuthorProfile = ({
 
         return (
           <Responsive>
-            <Head description={biography} name={name} />
+            <Head metaContent={biography} name={name} />
             <ArticleList
               adConfig={adConfig}
               articleListHeader={articleListHeader}

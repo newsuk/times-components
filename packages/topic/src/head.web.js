@@ -6,9 +6,9 @@ import { getMetaContent } from "@times-components/utils";
 
 import { propTypes as topicHeadPropTypes } from "./topic-head-prop-types";
 
-const Head = ({ description, name, slug }) => {
-  const content = description
-    ? getMetaContent(description)
+const Head = ({ metaContent, name, slug }) => {
+  const content = metaContent
+    ? getMetaContent(metaContent)
     : `Discover expert ${name} articles from The Times and The Sunday Times.`;
   return (
     <Context.Consumer>
@@ -30,7 +30,7 @@ const Head = ({ description, name, slug }) => {
 };
 
 Head.propTypes = {
-  description: topicHeadPropTypes.description.isRequired,
+  metaContent: topicHeadPropTypes.description.isRequired,
   name: PropTypes.string.isRequired,
   slug: PropTypes.string.isRequired
 };
