@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import ArticleSkeleton from "@times-components/article-skeleton";
 import { getHeadline, getLeadAsset } from "@times-components/utils";
 import Caption from "@times-components/caption";
@@ -28,7 +28,7 @@ class ArticlePage extends Component {
     this.renderHeader = this.renderHeader.bind(this);
   }
 
-  renderHeader({ width }) {
+  renderHeader(parentProps) {
     const { article } = this.props;
     const {
       bylines,
@@ -43,17 +43,10 @@ class ArticlePage extends Component {
       topics
     } = article;
 
-    const leadAsset = (
-      <LeadAsset
-        {...getLeadAsset(article)}
-        renderCaption={renderCaption}
-        width={width}
-      />
-    );
     const metaProps = { bylines, publicationName, publishedTime };
 
     return (
-      <>
+      <Fragment>
         <HeaderTopContainer>
           <HeaderContainer>
             <ArticleHeader
@@ -69,9 +62,13 @@ class ArticlePage extends Component {
             <ArticleTopics topics={topics} />
           </MetaContainer>
         </HeaderTopContainer>
-        {leadAsset}
+        <LeadAsset
+          {...getLeadAsset(article)}
+          renderCaption={renderCaption}
+          width={parentProps.width}
+        />
         <ArticleMeta {...metaProps} inline className="inline-meta" />
-      </>
+      </Fragment>
     );
   }
 
