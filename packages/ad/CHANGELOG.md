@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.6.24](https://github.com/newsuk/times-components/compare/@times-components/ad@2.6.23...@times-components/ad@2.6.24) (2019-07-08)
+
+
+### Bug Fixes
+
+* restore fix for android unruly ads ([#2109](https://github.com/newsuk/times-components/issues/2109)) ([fb01b6e](https://github.com/newsuk/times-components/commit/fb01b6e))
+
+
+
+
+
 ## [2.6.23](https://github.com/newsuk/times-components/compare/@times-components/ad@2.6.22...@times-components/ad@2.6.23) (2019-07-04)
 
 **Note:** Version bump only for package @times-components/ad
