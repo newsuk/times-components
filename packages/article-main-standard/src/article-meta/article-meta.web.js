@@ -15,7 +15,7 @@ import { defaultProps, propTypes } from "./article-meta-prop-types";
 import styles from "../styles/article-meta";
 import { hasBylineData } from "./util";
 
-export const MetaTextElement = styled(Text)`
+const MetaTextElement = styled(Text)`
   padding-top: ${spacing(2)};
 
   &:last-child {
