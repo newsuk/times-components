@@ -26,9 +26,11 @@ export const HeaderAdContainer = styled(View)`
 export const HeaderContainer = styled(View)`
   display: flex;
 
+  /* stylelint-disable */
   > ${ArticleKeylineItem} {
     order: 3;
   }
+  /* stylelint-enable */
 `;
 
 export const BodyContainer = styled(View)`

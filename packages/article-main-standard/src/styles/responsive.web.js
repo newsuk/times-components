@@ -2,7 +2,6 @@ import { View } from "react-native";
 import styled from "styled-components";
 import { breakpoints, colours, spacing } from "@times-components/styleguide";
 import ArticleLeadAsset from "@times-components/article-lead-asset";
-import { ArticleKeylineItem } from "@times-components/article-skeleton/src/keylines";
 
 export const MainContainer = styled(View)`
   @media (min-width: ${breakpoints.wide}px) {

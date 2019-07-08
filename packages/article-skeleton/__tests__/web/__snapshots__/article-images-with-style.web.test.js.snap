@@ -10,7 +10,6 @@ exports[`1. a primary image 1`] = `
 }
 
 .c4 {
-  position: relative;
   border: solid #DBDBDB;
   border-width: 1px 0;
   margin: 0 auto;
@@ -170,7 +169,6 @@ exports[`1. a primary image 1`] = `
 
 exports[`2. a fullwidth image 1`] = `
 .c4 {
-  position: relative;
   border: solid #DBDBDB;
   border-width: 1px 0;
   margin: 0 auto;
@@ -326,7 +324,6 @@ exports[`3. a secondary image 1`] = `
 }
 
 .c4 {
-  position: relative;
   border: solid #DBDBDB;
   border-width: 1px 0;
   margin: 0 auto;
@@ -502,7 +499,6 @@ exports[`4. an inline image 1`] = `
 }
 
 .c4 {
-  position: relative;
   border: solid #DBDBDB;
   border-width: 1px 0;
   margin: 0 auto;

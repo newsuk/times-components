@@ -5,7 +5,10 @@ import Caption from "@times-components/caption";
 import ArticleHeader from "./article-header/article-header";
 import ArticleMeta from "./article-meta/article-meta";
 import ArticleTopics from "./article-topics";
-import { articleDefaultProps, articlePropTypes } from "./article-prop-types/article-prop-types";
+import {
+  articleDefaultProps,
+  articlePropTypes
+} from "./article-prop-types/article-prop-types";
 import { LeadAssetCaptionContainer } from "./styles/article-body/responsive";
 
 import {

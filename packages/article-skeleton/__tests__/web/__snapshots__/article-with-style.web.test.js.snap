@@ -85,7 +85,6 @@ exports[`full article with style 1`] = `
 }
 
 .c4 {
-  position: relative;
   border: solid #DBDBDB;
   border-width: 1px 0;
   margin: 0 auto;
