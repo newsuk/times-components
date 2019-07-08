@@ -2,11 +2,18 @@ import {
   colours,
   fonts,
   fontSizes,
-  spacing
+  spacing,
+  editionBreakpoints
 } from "@times-components/styleguide";
 import { verticalStyles } from "../../shared/styles";
 
-const styles = {
+const headlineFontSizeResolver = {
+  [editionBreakpoints.medium]: 25,
+  [editionBreakpoints.wide]: 35,
+  [editionBreakpoints.huge]: 45
+};
+
+const styles = (breakpoint = editionBreakpoints.medium) => ({
   bylineOpinion: {
     color: colours.section.comment,
     fontFamily: fonts.supporting,
@@ -23,8 +30,8 @@ const styles = {
   headline: {
     color: colours.functional.brandColour,
     fontFamily: fonts.headline,
-    fontSize: 25,
-    lineHeight: 25,
+    fontSize: headlineFontSizeResolver[breakpoint],
+    lineHeight: headlineFontSizeResolver[breakpoint],
     paddingTop: spacing(3),
     textAlign: "center"
   },
@@ -47,6 +54,6 @@ const styles = {
     alignItems: "center",
     paddingTop: spacing(1)
   }
-};
+});
 
 export default styles;

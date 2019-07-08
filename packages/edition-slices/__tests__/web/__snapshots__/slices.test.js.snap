@@ -607,6 +607,7 @@ exports[`15. comment lead and cartoon 1`] = `
   <div>
     <div>
       <TileAH
+        breakpoint="wide"
         tileName="lead"
       />
     </div>

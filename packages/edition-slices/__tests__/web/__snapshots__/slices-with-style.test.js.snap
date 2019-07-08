@@ -2782,6 +2782,7 @@ exports[`15. comment lead and cartoon 1`] = `
       className="css-view-1dbjc4n IS1"
     >
       <TileAH
+        breakpoint="wide"
         tileName="lead"
       />
     </div>
