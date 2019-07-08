@@ -164,18 +164,21 @@ exports[`2. leaders 1`] = `
     <div>
       <div>
         <TileAG
+          breakpoint="wide"
           tileName="leader2"
         />
       </div>
       <div />
       <div>
         <TileAG
+          breakpoint="wide"
           tileName="leader1"
         />
       </div>
       <div />
       <div>
         <TileAG
+          breakpoint="wide"
           tileName="leader3"
         />
       </div>
@@ -201,18 +204,21 @@ exports[`2. leaders 2`] = `
     <div>
       <div>
         <TileAG
+          breakpoint="wide"
           tileName="leader2"
         />
       </div>
       <div />
       <div>
         <TileAG
+          breakpoint="wide"
           tileName="leader1"
         />
       </div>
       <div />
       <div>
         <TileAG
+          breakpoint="wide"
           tileName="leader3"
         />
       </div>
@@ -582,18 +588,21 @@ exports[`14. leaders 1`] = `
     <div>
       <div>
         <TileAG
+          breakpoint="wide"
           tileName="leader2"
         />
       </div>
       <div />
       <div>
         <TileAG
+          breakpoint="wide"
           tileName="leader1"
         />
       </div>
       <div />
       <div>
         <TileAG
+          breakpoint="wide"
           tileName="leader3"
         />
       </div>
