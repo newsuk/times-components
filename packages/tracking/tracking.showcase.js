@@ -52,7 +52,8 @@ const BoxesWithTrackingContext = withTrackingContext(
   withTrackScrollDepth(Boxes, {
     getAttrs: props => ({
       id: props.elementId
-    })
+    }),
+    trackingName: "ColoredBox"
   }),
   { trackingObjectName: "Story" }
 );
