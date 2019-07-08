@@ -85,7 +85,7 @@ const Topic = ({
               skip: length
             }
           });
-          
+
         return (
           <Responsive>
             <Head {...{ description, name, slug }} />

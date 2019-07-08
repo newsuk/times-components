@@ -24,7 +24,7 @@ export const renderTreeAsText = (
   { attributes: { value } = {}, children, name },
   key = "0"
 ) =>
-  value ||
+  (name === "text" && value) ||
   (children
     ? children
         .map((child, index) => renderTreeAsText(child, `${key}.${index}`))
