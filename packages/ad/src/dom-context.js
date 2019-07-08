@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react";
-import { View, Linking } from "react-native";
+import { View, Linking, Platform } from "react-native";
 import { WebView } from "react-native-webview";
 import webviewEventCallbackSetup from "./utils/webview-event-callback-setup";
 import logger from "./utils/logger";
@@ -125,6 +125,9 @@ class DOMContext extends PureComponent {
         <WebView
           onMessage={this.handleMessageEvent}
           onNavigationStateChange={this.handleNavigationStateChange}
+          originWhitelist={
+            Platform.OS === "android" ? ["http://.*", "https://.*"] : undefined
+          }
           ref={ref => {
             this.webView = ref;
           }}
