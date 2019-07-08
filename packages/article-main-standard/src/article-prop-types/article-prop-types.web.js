@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import ArticleHeader from "../article-header/article-header";
 import ArticleMeta from "../article-meta/article-meta";
 
-const articlePropTypesBase = {
+const articlePropTypes = {
   adConfig: PropTypes.shape({}).isRequired,
   analyticsStream: PropTypes.func.isRequired,
   data: PropTypes.shape({
@@ -13,9 +13,9 @@ const articlePropTypesBase = {
   receiveChildList: PropTypes.func
 };
 
-const articleDefaultPropsBase = {
+const articleDefaultProps = {
   data: null,
   receiveChildList: () => {}
 };
 
-export { articlePropTypesBase, articleDefaultPropsBase };
+export { articlePropTypes, articleDefaultProps };

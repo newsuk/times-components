@@ -10,7 +10,7 @@ import { adConfig } from "./ad-mock";
 
 jest.mock("@times-components/save-and-share-bar", () => "SaveAndShareBar");
 
-export const renderArticle = (data, Header) => (
+export const renderArticle = (data, header = null) => (
   <ContextProviderWithDefaults
     value={{
       theme: { scale: scales.medium, sectionColour: "#FF0000" },
@@ -21,7 +21,7 @@ export const renderArticle = (data, Header) => (
       adConfig={adConfig}
       analyticsStream={() => {}}
       data={data}
-      Header={Header}
+      header={header}
       onAuthorPress={() => {}}
       onCommentGuidelinesPress={() => {}}
       onCommentsPress={() => {}}

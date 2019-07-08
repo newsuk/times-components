@@ -17,8 +17,8 @@ import insertDropcapIntoAST from "./dropcap-util";
 import {
   BodyContainer,
   HeaderAdContainer,
-  MainContainer,
-  HeaderContainer
+  HeaderContainer,
+  MainContainer
 } from "./styles/responsive";
 import Head from "./head";
 import StickySaveAndShareBar from "./sticky-save-and-share-bar";
@@ -92,27 +92,6 @@ class ArticleSkeleton extends Component {
       }
     ]);
 
-    const saveAndShareBar =
-      savingEnabled || sharingEnabled ? (
-        <UserState state={UserState.loggedInOrShared}>
-          <MessageContext.Consumer>
-            {({ showMessage }) => (
-              <StickySaveAndShareBar
-                articleId={articleId}
-                articleHeadline={headline}
-                articleUrl={url}
-                onCopyLink={() => showMessage("Article link copied")}
-                onSaveToMyArticles={() => {}}
-                onShareOnEmail={() => {}}
-                saveApi={saveApi}
-                savingEnabled={savingEnabled}
-                sharingEnabled={sharingEnabled}
-              />
-            )}
-          </MessageContext.Consumer>
-        </UserState>
-      ) : null;
-
     return (
       <article
         ref={node => {
@@ -138,11 +117,28 @@ class ArticleSkeleton extends Component {
                 </HeaderAdContainer>
                 <MainContainer>
                   <HeaderContainer>
-                    <Header
-                      article={article}
-                      width={articleWidth}
-                      saveAndShareBar={saveAndShareBar}
-                    />
+                    <Header article={article} width={articleWidth} />
+                    {savingEnabled || sharingEnabled ? (
+                      <UserState state={UserState.loggedInOrShared}>
+                        <MessageContext.Consumer>
+                          {({ showMessage }) => (
+                            <StickySaveAndShareBar
+                              articleId={articleId}
+                              articleHeadline={headline}
+                              articleUrl={url}
+                              onCopyLink={() =>
+                                showMessage("Article link copied")
+                              }
+                              onSaveToMyArticles={() => {}}
+                              onShareOnEmail={() => {}}
+                              saveApi={saveApi}
+                              savingEnabled={savingEnabled}
+                              sharingEnabled={sharingEnabled}
+                            />
+                          )}
+                        </MessageContext.Consumer>
+                      </UserState>
+                    ) : null}
                   </HeaderContainer>
                   <BodyContainer>
                     <ArticleBody

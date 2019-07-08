@@ -13,7 +13,7 @@ class ArticlePage extends Component {
     this.renderHeader = this.renderHeader.bind(this);
   }
 
-  renderHeader({ saveAndShareBar }) {
+  renderHeader() {
     const { article } = this.props;
     const {
       bylines,
@@ -37,20 +37,17 @@ class ArticlePage extends Component {
         : null;
 
     return (
-      <>
-        <ArticleHeader
-          authorImage={authorImage}
-          bylines={bylines}
-          flags={expirableFlags}
-          hasVideo={hasVideo}
-          headline={getHeadline(headline, shortHeadline)}
-          label={label}
-          publicationName={publicationName}
-          publishedTime={publishedTime}
-          standfirst={standfirst}
-        />
-        {saveAndShareBar}
-      </>
+      <ArticleHeader
+        authorImage={authorImage}
+        bylines={bylines}
+        flags={expirableFlags}
+        hasVideo={hasVideo}
+        headline={getHeadline(headline, shortHeadline)}
+        label={label}
+        publicationName={publicationName}
+        publishedTime={publishedTime}
+        standfirst={standfirst}
+      />
     );
   }
 

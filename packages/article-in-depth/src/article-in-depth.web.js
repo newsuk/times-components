@@ -19,7 +19,7 @@ class ArticlePage extends Component {
     this.renderHeader = this.renderHeader.bind(this);
   }
 
-  renderHeader({ width, saveAndShareBar }) {
+  renderHeader({ width }) {
     const { article } = this.props;
     const {
       backgroundColour,
@@ -63,7 +63,6 @@ class ArticlePage extends Component {
             />
           </HeaderContainer>
         </ArticleKeylineItem>
-        {saveAndShareBar}
       </Fragment>
     );
   }

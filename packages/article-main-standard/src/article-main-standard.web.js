@@ -17,7 +17,7 @@ import {
   HeaderContainer,
   LeadAsset,
   MetaContainer,
-  OuterHeaderContainer,
+  ArticleMainStandardContainer,
   HeaderTopContainer
 } from "./styles/responsive.web";
 
@@ -27,7 +27,7 @@ const renderCaption = ({ caption }) => (
   </LeadAssetCaptionContainer>
 );
 
-function MainStandardHeader({ article, width, saveAndShareBar = null }) {
+function MainStandardHeader({ article, width }) {
   const {
     bylines,
     hasVideo,
@@ -51,7 +51,7 @@ function MainStandardHeader({ article, width, saveAndShareBar = null }) {
   const metaProps = { bylines, publicationName, publishedTime };
 
   return (
-    <OuterHeaderContainer>
+    <>
       <HeaderTopContainer>
         <HeaderContainer>
           <ArticleHeader
@@ -69,15 +69,13 @@ function MainStandardHeader({ article, width, saveAndShareBar = null }) {
       </HeaderTopContainer>
       {leadAsset}
       <ArticleMeta {...metaProps} inline className="inline-meta" />
-      {saveAndShareBar}
-    </OuterHeaderContainer>
+    </>
   );
 }
 
 MainStandardHeader.propTypes = {
   article: articlePropTypes.article,
-  width: PropTypes.number.isRequired,
-  saveAndShareBar: PropTypes.element
+  width: PropTypes.number.isRequired
 };
 
 function ArticlePage({
@@ -97,17 +95,19 @@ function ArticlePage({
   }
 
   return (
-    <ArticleSkeleton
-      adConfig={adConfig}
-      analyticsStream={analyticsStream}
-      data={article}
-      Header={MainStandardHeader}
-      receiveChildList={receiveChildList}
-      saveApi={saveApi}
-      spotAccountId={spotAccountId}
-      paidContentClassName={paidContentClassName}
-      faviconUrl={faviconUrl}
-    />
+    <ArticleMainStandardContainer>
+      <ArticleSkeleton
+        adConfig={adConfig}
+        analyticsStream={analyticsStream}
+        data={article}
+        Header={MainStandardHeader}
+        receiveChildList={receiveChildList}
+        saveApi={saveApi}
+        spotAccountId={spotAccountId}
+        paidContentClassName={paidContentClassName}
+        faviconUrl={faviconUrl}
+      />
+    </ArticleMainStandardContainer>
   );
 }
 

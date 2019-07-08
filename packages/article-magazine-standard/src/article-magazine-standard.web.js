@@ -20,7 +20,7 @@ class ArticlePage extends Component {
     this.renderHeader = this.renderHeader.bind(this);
   }
 
-  renderHeader({ width, saveAndShareBar }) {
+  renderHeader({ width }) {
     const { article } = this.props;
     const {
       bylines,
@@ -53,7 +53,6 @@ class ArticlePage extends Component {
           style={styles.leadAssetContainer}
           width={width}
         />
-        {saveAndShareBar}
       </Fragment>
     );
   }

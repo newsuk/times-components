@@ -63,7 +63,7 @@ export const MetaContainer = styled(View)`
   }
 `;
 
-export const OuterHeaderContainer = styled(View)`
+export const ArticleMainStandardContainer = styled(View)`
   ${ArticleKeylineItem} {
     order: 3;
   }
