@@ -1,4 +1,4 @@
-import getMetaContent from "../src/get-meta-content";
+import convertMarkupTreeToString from "../src/get-meta-content";
 
 const description = [
   {
@@ -30,17 +30,17 @@ const longDescription = [
   }
 ];
 
-describe("getMetaContent should", () => {
+describe("convertMarkupTreeToString should", () => {
   it("formulate a string out of a topic description", () => {
-    expect(getMetaContent(description)).toEqual(
+    expect(convertMarkupTreeToString(description)).toEqual(
       "Chelsea is known for its affluent population."
     );
   });
   it("return an empty string if there is no description available", () => {
-    expect(getMetaContent([])).toEqual("");
+    expect(convertMarkupTreeToString([])).toEqual("");
   });
   it("cap a strings length at 200 chars", () => {
-    const longMetaTag = getMetaContent(longDescription);
+    const longMetaTag = convertMarkupTreeToString(longDescription);
     expect(longMetaTag.length).toEqual(200);
   });
 });

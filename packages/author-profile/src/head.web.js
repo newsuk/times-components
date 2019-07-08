@@ -1,13 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Helmet } from "react-helmet-async";
-import { getMetaContent } from "@times-components/utils";
+import { convertMarkupTreeToString } from "@times-components/utils";
 
 import { propTypes as authorProfileHeadPropTypes } from "./author-profile-head-prop-types";
 
 const Head = ({ metaContent, name }) => {
   const content = metaContent
-    ? getMetaContent(metaContent)
+    ? convertMarkupTreeToString(metaContent)
     : `Get up to date information and read all the latest articles from ${name}.`;
   return (
     <Helmet>
