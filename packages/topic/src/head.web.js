@@ -2,14 +2,15 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Helmet } from "react-helmet-async";
 import Context from "@times-components/context";
-import { convertMarkupTreeToString } from "@times-components/utils";
+import { renderTreeArrayAsText } from "@times-components/markup-forest";
 
 import { propTypes as topicHeadPropTypes } from "./topic-head-prop-types";
 
-const Head = ({ metaContent, name, slug }) => {
-  const content = metaContent
-    ? convertMarkupTreeToString(metaContent)
+const Head = ({ description, name, slug }) => {
+  const content = description && description.length
+    ? renderTreeArrayAsText(description).substring(0, 200)
     : `Discover expert ${name} articles from The Times and The Sunday Times.`;
+
   return (
     <Context.Consumer>
       {({ makeTopicUrl }) => (
@@ -24,7 +25,7 @@ const Head = ({ metaContent, name, slug }) => {
 };
 
 Head.propTypes = {
-  metaContent: topicHeadPropTypes.description.isRequired,
+  description: topicHeadPropTypes.description.isRequired,
   name: PropTypes.string.isRequired,
   slug: PropTypes.string.isRequired
 };

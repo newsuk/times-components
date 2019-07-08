@@ -3,7 +3,8 @@ import { iterator } from "@times-components/test-utils";
 import TestRenderer from "react-test-renderer";
 import renderTrees, {
   renderTree,
-  renderTreeAsText
+  renderTreeAsText,
+  renderTreeArrayAsText
 } from "../src/markup-forest";
 import bioAST from "../fixtures/bio.json";
 import mixtureAST from "../fixtures/mixture.json";
@@ -265,6 +266,14 @@ iterator([
     name: "nested tags with a text only renderer",
     test: () => {
       const output = renderTreeAsText(nestedAST);
+
+      expect(output).toMatchSnapshot();
+    }
+  },
+  {
+    name: "bio tags with a text only renderer",
+    test: () => {
+      const output = renderTreeArrayAsText(bioAST);
 
       expect(output).toMatchSnapshot();
     }

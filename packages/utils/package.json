@@ -55,7 +55,6 @@
     "apollo-cache-inmemory": "1.5.1",
     "apollo-client": "2.5.1",
     "apollo-link-http": "1.5.14",
-    "lodash.get": "4.4.2",
     "lodash.omitby": "4.6.0",
     "prop-types": "15.7.2",
     "react-native": "0.59.10",
