@@ -117,7 +117,7 @@ class ArticleSkeleton extends Component {
                 </HeaderAdContainer>
                 <MainContainer>
                   <HeaderContainer>
-                    <Header article={article} width={articleWidth} />
+                    <Header width={articleWidth} />
                     {savingEnabled || sharingEnabled ? (
                       <UserState state={UserState.loggedInOrShared}>
                         <MessageContext.Consumer>

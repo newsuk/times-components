@@ -3,8 +3,8 @@ import ArticleSkeleton from "@times-components/article-skeleton";
 import { getHeadline } from "@times-components/utils";
 import ArticleHeader from "./article-header/article-header";
 import {
-  articleDefaultProps,
-  articlePropTypes
+  articlePropTypes,
+  articleDefaultProps
 } from "./article-prop-types/article-prop-types";
 
 class ArticlePage extends Component {

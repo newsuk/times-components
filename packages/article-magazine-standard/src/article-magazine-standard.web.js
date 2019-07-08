@@ -8,8 +8,8 @@ import {
 import { CentredCaption } from "@times-components/caption";
 import ArticleHeader from "./article-header/article-header";
 import {
-  articleDefaultProps,
-  articlePropTypes
+  articlePropTypes,
+  articleDefaultProps
 } from "./article-prop-types/article-prop-types";
 import styles from "./styles";
 import { LeadAsset } from "./styles/responsive.web";
