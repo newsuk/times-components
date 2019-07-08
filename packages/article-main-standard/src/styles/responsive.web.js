@@ -64,10 +64,6 @@ export const MetaContainer = styled(View)`
 `;
 
 export const ArticleMainStandardContainer = styled(View)`
-  ${ArticleKeylineItem} {
-    order: 3;
-  }
-
   @media (min-width: ${breakpoints.wide}px) {
     .inline-meta {
       display: none;
