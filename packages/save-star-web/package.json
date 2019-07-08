@@ -1,6 +1,6 @@
 {
   "name": "@times-components/save-star-web",
-  "version": "0.2.19",
+  "version": "0.2.20",
   "description": "Save Star for Web",
   "main": "dist/save-star-web",
   "dev": "src/save-star-web",
@@ -38,7 +38,7 @@
     "@times-components/link": "3.4.24",
     "@times-components/provider-queries": "2.2.9",
     "@times-components/styleguide": "3.28.30",
-    "@times-components/tracking": "2.4.48",
+    "@times-components/tracking": "2.4.49",
     "@times-components/utils": "4.11.17",
     "prop-types": "15.7.2"
   },

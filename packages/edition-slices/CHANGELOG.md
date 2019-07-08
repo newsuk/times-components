@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.64.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.63.1...@times-components/edition-slices@0.64.0) (2019-07-08)
+
+
+### Features
+
+* leading articles slice for wide huge tablet ([#2102](https://github.com/newsuk/times-components/issues/2102)) ([282e3b1](https://github.com/newsuk/times-components/commit/282e3b1))
+
+
+
+
+
 ## [0.63.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.63.0...@times-components/edition-slices@0.63.1) (2019-07-04)
 
 **Note:** Version bump only for package @times-components/edition-slices
