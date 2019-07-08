@@ -16,10 +16,7 @@ const Head = ({ metaContent, name, slug }) => {
         <Helmet>
           <title>{name} | The Times &amp; The Sunday Times</title>
           <meta
-            content={
-              content ||
-              `Discover expert ${name} articles from The Times and The Sunday Times.`
-            }
+            content={content}
             name="description"
           />
           <link href={makeTopicUrl({ slug })} rel="canonical" />
