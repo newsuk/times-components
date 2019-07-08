@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import React from "react";
 import TestRenderer from "react-test-renderer";
 import mockDate from "mockdate";

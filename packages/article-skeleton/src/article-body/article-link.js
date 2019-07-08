@@ -36,7 +36,6 @@ ArticleLink.defaultProps = {
 
 ArticleLink.propTypes = {
   ...TextLink.propTypes,
-  // eslint-disable-next-line react/no-unused-prop-types
   linkType: PropTypes.string
 };
 export default articleLinkTrackingEvents(ArticleLink);
