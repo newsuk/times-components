@@ -11,7 +11,7 @@ const headlineFontSizeResolver = {
 };
 
 const hugeScreenContainerStyle = {
-  width: "87.6%",
+  width: "86%",
   paddingHorizontal: spacing(0),
   alignSelf: "center"
 };
