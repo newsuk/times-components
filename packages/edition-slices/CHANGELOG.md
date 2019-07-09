@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.65.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.64.0...@times-components/edition-slices@0.65.0) (2019-07-09)
+
+
+### Features
+
+* REPLAT 5482 implement wide huge breakpoints on lead 1 full width slice ([#2105](https://github.com/newsuk/times-components/issues/2105)) ([f3ef728](https://github.com/newsuk/times-components/commit/f3ef728))
+* REPLAT-5483 implement wide huge breakpoints on  lead 1 and 1 slice ([#2099](https://github.com/newsuk/times-components/issues/2099)) ([e0db1bf](https://github.com/newsuk/times-components/commit/e0db1bf))
+
+
+
+
+
 # [0.64.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.63.1...@times-components/edition-slices@0.64.0) (2019-07-08)
 
 
