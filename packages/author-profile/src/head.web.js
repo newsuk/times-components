@@ -5,7 +5,7 @@ import { renderTreeArrayAsText } from "@times-components/markup-forest";
 
 import { propTypes as authorProfileHeadPropTypes } from "./author-profile-head-prop-types";
 
-const Head = ({ description, name }) => {
+function Head({ description, name }) {
   const content =
     description && description.length
       ? renderTreeArrayAsText(description).substring(0, 200)
@@ -16,7 +16,7 @@ const Head = ({ description, name }) => {
       <meta content={content} name="description" />
     </Helmet>
   );
-};
+}
 
 Head.propTypes = {
   description: authorProfileHeadPropTypes.biography.isRequired,

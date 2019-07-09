@@ -6,7 +6,7 @@ import { renderTreeArrayAsText } from "@times-components/markup-forest";
 
 import { propTypes as topicHeadPropTypes } from "./topic-head-prop-types";
 
-const Head = ({ description, name, slug }) => {
+function Head({ description, name, slug }) {
   const content =
     description && description.length
       ? renderTreeArrayAsText(description).substring(0, 200)
@@ -23,7 +23,7 @@ const Head = ({ description, name, slug }) => {
       )}
     </Context.Consumer>
   );
-};
+}
 
 Head.propTypes = {
   description: topicHeadPropTypes.description.isRequired,
