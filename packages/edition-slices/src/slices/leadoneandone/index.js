@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { LeadOneAndOneSlice } from "@times-components/slice-layout";
-import { TileA, TileB, TileC, TileU } from "../../tiles";
+import { TileA, TileB, TileC, TileU, TileAQ } from "../../tiles";
 import { ResponsiveSlice } from "../shared";
 
 class LeadOneAndOne extends Component {
@@ -9,6 +9,7 @@ class LeadOneAndOne extends Component {
     super(props);
     this.renderSmall = this.renderSmall.bind(this);
     this.renderMedium = this.renderMedium.bind(this);
+    this.renderHuge = this.renderHuge.bind(this);
   }
 
   renderSmall(breakpoint) {
@@ -33,8 +34,36 @@ class LeadOneAndOne extends Component {
     return (
       <LeadOneAndOneSlice
         breakpoint={breakpoint}
-        lead={<TileU onPress={onPress} tile={lead} tileName="lead" />}
+        lead={
+          <TileU
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={lead}
+            tileName="lead"
+          />
+        }
         support={<TileC onPress={onPress} tile={support} tileName="support" />}
+      />
+    );
+  }
+
+  renderHuge(breakpoint) {
+    const {
+      onPress,
+      slice: { lead, support }
+    } = this.props;
+    return (
+      <LeadOneAndOneSlice
+        breakpoint={breakpoint}
+        lead={
+          <TileU
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={lead}
+            tileName="lead"
+          />
+        }
+        support={<TileAQ onPress={onPress} tile={support} tileName="support" />}
       />
     );
   }
@@ -42,8 +71,10 @@ class LeadOneAndOne extends Component {
   render() {
     return (
       <ResponsiveSlice
-        renderMedium={this.renderMedium}
         renderSmall={this.renderSmall}
+        renderMedium={this.renderMedium}
+        renderWide={this.renderMedium}
+        renderHuge={this.renderHuge}
       />
     );
   }

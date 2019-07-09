@@ -2546,9 +2546,11 @@ exports[`33. lead one and one - huge 1`] = `
   <View
     style={
       Object {
+        "alignSelf": "center",
         "flex": 1,
         "flexDirection": "row",
         "marginHorizontal": 10,
+        "width": "86%",
       }
     }
   >
@@ -2578,7 +2580,7 @@ exports[`33. lead one and one - huge 1`] = `
         }
       }
     >
-      <TileC />
+      <TileAQ />
     </View>
   </View>
 </View>

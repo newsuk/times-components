@@ -1,20 +1,17 @@
 import React, { Component, Fragment } from "react";
-import ArticleSkeleton from "@times-components/article-skeleton";
+import ArticleSkeleton, {
+  ArticleKeylineItem
+} from "@times-components/article-skeleton";
 import { getHeadline, getLeadAsset } from "@times-components/utils";
 import { CentredCaption } from "@times-components/caption";
-import UserState from "@times-components/user-state";
 import Meta from "./article-meta/article-meta";
 import ArticleHeader from "./article-header/article-header";
 import {
-  articlePropTypes,
-  articleDefaultProps
+  articleDefaultProps,
+  articlePropTypes
 } from "./article-prop-types/article-prop-types";
 import styles from "./styles";
-import {
-  HeaderContainer,
-  LeadAsset,
-  HeaderContainerBottomBorder
-} from "./styles/responsive";
+import { LeadAsset } from "./styles/responsive";
 
 class ArticlePage extends Component {
   constructor(props) {
@@ -55,7 +52,7 @@ class ArticlePage extends Component {
           style={styles.leadAsset}
           width={width}
         />
-        <HeaderContainer style={styles.metaContainer}>
+        <ArticleKeylineItem>
           <Meta
             backgroundColour={backgroundColour}
             bylines={bylines}
@@ -63,11 +60,7 @@ class ArticlePage extends Component {
             publishedTime={publishedTime}
             textColour={textColour}
           />
-        </HeaderContainer>
-        <UserState
-          state={UserState.loggedInOrShared}
-          fallback={<HeaderContainerBottomBorder />}
-        />
+        </ArticleKeylineItem>
       </Fragment>
     );
   }

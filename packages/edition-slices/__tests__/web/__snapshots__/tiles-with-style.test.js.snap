@@ -1723,6 +1723,7 @@ exports[`22. tile u 1`] = `
 
 .IS2 {
   padding-bottom: 5px;
+  padding-right: 20px;
   width: 40%;
 }
 

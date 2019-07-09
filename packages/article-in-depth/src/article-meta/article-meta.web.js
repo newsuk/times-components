@@ -15,8 +15,13 @@ import {
 import styles from "../styles";
 
 const ArticleMeta = ({ bylines, publicationName, publishedTime }) => (
+<<<<<<< HEAD
   <MetaContainer>
     {hasBylineData(bylines) && (
+=======
+  <MetaContainer style={styles.metaContainer}>
+    {bylines.length && (
+>>>>>>> master
       <Fragment>
         <Meta style={styles.meta}>
           <Context.Consumer>

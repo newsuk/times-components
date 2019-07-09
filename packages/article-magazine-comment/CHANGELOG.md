@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.7.10](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.7.9...@times-components/article-magazine-comment@3.7.10) (2019-07-09)
+
+
+### Bug Fixes
+
+* lead asset position should be responsive on the main standard article template ([#2101](https://github.com/newsuk/times-components/issues/2101)) ([2f470d1](https://github.com/newsuk/times-components/commit/2f470d1))
+
+
+
+
+
+## [3.7.9](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.7.8...@times-components/article-magazine-comment@3.7.9) (2019-07-09)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.7.8](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.7.7...@times-components/article-magazine-comment@3.7.8) (2019-07-08)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.7.7](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.7.6...@times-components/article-magazine-comment@3.7.7) (2019-07-08)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
 ## [3.7.6](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.7.5...@times-components/article-magazine-comment@3.7.6) (2019-07-04)
 
 **Note:** Version bump only for package @times-components/article-magazine-comment

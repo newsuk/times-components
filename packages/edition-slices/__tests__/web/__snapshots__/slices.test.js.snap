@@ -142,6 +142,7 @@ exports[`1. secondary one and four 2`] = `
 exports[`2. lead one full width 1`] = `
 <div>
   <TileR
+    breakpoint="wide"
     tileName="lead"
   />
 </div>
@@ -164,18 +165,21 @@ exports[`2. leaders 1`] = `
     <div>
       <div>
         <TileAG
+          breakpoint="wide"
           tileName="leader2"
         />
       </div>
       <div />
       <div>
         <TileAG
+          breakpoint="wide"
           tileName="leader1"
         />
       </div>
       <div />
       <div>
         <TileAG
+          breakpoint="wide"
           tileName="leader3"
         />
       </div>
@@ -201,18 +205,21 @@ exports[`2. leaders 2`] = `
     <div>
       <div>
         <TileAG
+          breakpoint="wide"
           tileName="leader2"
         />
       </div>
       <div />
       <div>
         <TileAG
+          breakpoint="wide"
           tileName="leader1"
         />
       </div>
       <div />
       <div>
         <TileAG
+          breakpoint="wide"
           tileName="leader3"
         />
       </div>
@@ -226,6 +233,7 @@ exports[`3. lead one and one 1`] = `
   <div>
     <div>
       <TileU
+        breakpoint="wide"
         tileName="lead"
       />
     </div>
@@ -582,18 +590,21 @@ exports[`14. leaders 1`] = `
     <div>
       <div>
         <TileAG
+          breakpoint="wide"
           tileName="leader2"
         />
       </div>
       <div />
       <div>
         <TileAG
+          breakpoint="wide"
           tileName="leader1"
         />
       </div>
       <div />
       <div>
         <TileAG
+          breakpoint="wide"
           tileName="leader3"
         />
       </div>
@@ -607,6 +618,7 @@ exports[`15. comment lead and cartoon 1`] = `
   <div>
     <div>
       <TileAH
+        breakpoint="wide"
         tileName="lead"
       />
     </div>

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.3.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.2.9...@times-components/provider-queries@2.3.0) (2019-07-09)
+
+
+### Features
+
+* REPLAT-5483 implement wide huge breakpoints on  lead 1 and 1 slice ([#2099](https://github.com/newsuk/times-components/issues/2099)) ([e0db1bf](https://github.com/newsuk/times-components/commit/e0db1bf))
+
+
+
+
+
 ## [2.2.9](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.2.8...@times-components/provider-queries@2.2.9) (2019-06-25)
 
 

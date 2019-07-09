@@ -607,6 +607,7 @@ exports[`2. lead one full width 1`] = `
   className="css-view-1dbjc4n IS1"
 >
   <TileR
+    breakpoint="wide"
     tileName="lead"
   />
 </div>
@@ -751,6 +752,7 @@ exports[`2. leaders 1`] = `
         className="css-view-1dbjc4n IS5"
       >
         <TileAG
+          breakpoint="wide"
           tileName="leader2"
         />
       </div>
@@ -761,6 +763,7 @@ exports[`2. leaders 1`] = `
         className="css-view-1dbjc4n IS7"
       >
         <TileAG
+          breakpoint="wide"
           tileName="leader1"
         />
       </div>
@@ -771,6 +774,7 @@ exports[`2. leaders 1`] = `
         className="css-view-1dbjc4n IS9"
       >
         <TileAG
+          breakpoint="wide"
           tileName="leader3"
         />
       </div>
@@ -918,6 +922,7 @@ exports[`2. leaders 2`] = `
         className="css-view-1dbjc4n IS5"
       >
         <TileAG
+          breakpoint="wide"
           tileName="leader2"
         />
       </div>
@@ -928,6 +933,7 @@ exports[`2. leaders 2`] = `
         className="css-view-1dbjc4n IS7"
       >
         <TileAG
+          breakpoint="wide"
           tileName="leader1"
         />
       </div>
@@ -938,6 +944,7 @@ exports[`2. leaders 2`] = `
         className="css-view-1dbjc4n IS9"
       >
         <TileAG
+          breakpoint="wide"
           tileName="leader3"
         />
       </div>
@@ -1011,6 +1018,7 @@ exports[`3. lead one and one 1`] = `
       className="css-view-1dbjc4n IS1"
     >
       <TileU
+        breakpoint="wide"
         tileName="lead"
       />
     </div>
@@ -2689,6 +2697,7 @@ exports[`14. leaders 1`] = `
         className="css-view-1dbjc4n IS5"
       >
         <TileAG
+          breakpoint="wide"
           tileName="leader2"
         />
       </div>
@@ -2699,6 +2708,7 @@ exports[`14. leaders 1`] = `
         className="css-view-1dbjc4n IS7"
       >
         <TileAG
+          breakpoint="wide"
           tileName="leader1"
         />
       </div>
@@ -2709,6 +2719,7 @@ exports[`14. leaders 1`] = `
         className="css-view-1dbjc4n IS9"
       >
         <TileAG
+          breakpoint="wide"
           tileName="leader3"
         />
       </div>
@@ -2782,6 +2793,7 @@ exports[`15. comment lead and cartoon 1`] = `
       className="css-view-1dbjc4n IS1"
     >
       <TileAH
+        breakpoint="wide"
         tileName="lead"
       />
     </div>

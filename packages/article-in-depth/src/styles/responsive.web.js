@@ -83,29 +83,6 @@ export const Separator = styled(View)`
   }
 `;
 
-export const HeaderContainerBottomBorder = styled(View)`
-  height: 1px;
-  border-bottom-color: ${colours.functional.keyline};
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: ${spacing(4)};
-
-  @media (max-width: ${breakpoints.small}px) {
-    margin-left: ${spacing(2)};
-    margin-right: ${spacing(2)};
-  }
-
-  @media (min-width: ${breakpoints.medium}px) {
-    width: 80.8%;
-  }
-
-  @media (min-width: ${breakpoints.wide}px) {
-    width: 56.2%;
-  }
-`;
-
 export const StandfirstContainer = styled(Text)`
   @media (min-width: ${breakpoints.medium}px) {
     font-size: ${fontSizes.infoTitle}px;

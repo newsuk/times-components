@@ -18,19 +18,28 @@ class LeadOneFullWidthSlice extends Component {
     return <TileA onPress={onPress} tile={lead} tileName="lead" />;
   }
 
-  renderMedium() {
+  renderMedium(breakpoint) {
     const {
       slice: { lead },
       onPress
     } = this.props;
-    return <TileR onPress={onPress} tile={lead} tileName="lead" />;
+    return (
+      <TileR
+        breakpoint={breakpoint}
+        onPress={onPress}
+        tile={lead}
+        tileName="lead"
+      />
+    );
   }
 
   render() {
     return (
       <ResponsiveSlice
-        renderMedium={this.renderMedium}
         renderSmall={this.renderSmall}
+        renderMedium={this.renderMedium}
+        renderWide={this.renderMedium}
+        renderHuge={this.renderMedium}
       />
     );
   }

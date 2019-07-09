@@ -73,55 +73,64 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
   <div>
     <div>
       <div>
-        <h1
-          aria-level="1"
-          role="heading"
-        >
-          Some Short Headline
-        </h1>
         <div>
-          <ArticleFlags
-            color="rgba(255, 255, 255, 1)"
-          />
-        </div>
-      </div>
-    </div>
-    <div>
-      <figure>
-        <div>
+          <h1
+            aria-level="1"
+            role="heading"
+          >
+            Some Short Headline
+          </h1>
           <div>
-            <Image
-              accessibilityLabel="Some Caption"
-              aspectRatio={1.7777777777777777}
-              highResSize={null}
-              lowResSize={100}
-              uri="https://crop169.io"
+            <ArticleFlags
+              color="rgba(255, 255, 255, 1)"
             />
           </div>
         </div>
-        <figcaption>
+      </div>
+      <div>
+        <figure>
           <div>
             <div>
-              <div>
-                Some Caption
-              </div>
-              <div>
-                SOME CREDITS
-              </div>
+              <Image
+                accessibilityLabel="Some Caption"
+                aspectRatio={1.7777777777777777}
+                highResSize={null}
+                lowResSize={100}
+                uri="https://crop169.io"
+              />
             </div>
           </div>
-        </figcaption>
-      </figure>
-    </div>
-    <div>
+          <figcaption>
+            <div>
+              <div>
+                <div>
+                  Some Caption
+                </div>
+                <div>
+                  SOME CREDITS
+                </div>
+              </div>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
       <div>
         <div>
+<<<<<<< HEAD
           <ArticleBylineWithLinks
             ast={
               Array [
                 Object {
                   "byline": Array [
                     Object {
+=======
+          <div>
+            <ArticleBylineWithLinks
+              ast={
+                Array [
+                  Object {
+                    "byline": Object {
+>>>>>>> master
                       "attributes": Object {},
                       "children": Array [
                         Object {
@@ -134,6 +143,7 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
                       ],
                       "name": "inline",
                     },
+<<<<<<< HEAD
                   ],
                 },
               ]
@@ -147,29 +157,44 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
             <DatePublication
               date="2015-03-13T18:54:58.000Z"
               publication="TIMES"
+=======
+                  },
+                ]
+              }
+              color="#1D1D1B"
+>>>>>>> master
             />
+          </div>
+          <div />
+          <div>
+            <div>
+              <DatePublication
+                date="2015-03-13T18:54:58.000Z"
+                publication="TIMES"
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div
-      data-tc-sticky-placeholder={true}
-    />
-    <div
-      data-tc-sticky-container={true}
-    >
       <div>
         <div
-          data-tc-sticky-sizer={true}
+          data-tc-sticky-placeholder={true}
+        />
+        <div
+          data-tc-sticky-container={true}
         >
           <div>
-            <SaveAndShareBar
-              articleHeadline=""
-              articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-              articleUrl="https://url.io"
-              savingEnabled={true}
-              sharingEnabled={true}
-            />
+            <div
+              data-tc-sticky-sizer={true}
+            >
+              <SaveAndShareBar
+                articleHeadline=""
+                articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+                articleUrl="https://url.io"
+                savingEnabled={true}
+                sharingEnabled={true}
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -312,55 +337,64 @@ exports[`4. an article with ads 1`] = `
   <div>
     <div>
       <div>
-        <h1
-          aria-level="1"
-          role="heading"
-        >
-          Some Headline
-        </h1>
         <div>
-          <ArticleFlags
-            color="rgba(255, 255, 255, 1)"
-          />
-        </div>
-      </div>
-    </div>
-    <div>
-      <figure>
-        <div>
+          <h1
+            aria-level="1"
+            role="heading"
+          >
+            Some Headline
+          </h1>
           <div>
-            <Image
-              accessibilityLabel="Some Caption"
-              aspectRatio={1.7777777777777777}
-              highResSize={null}
-              lowResSize={100}
-              uri="https://crop169.io"
+            <ArticleFlags
+              color="rgba(255, 255, 255, 1)"
             />
           </div>
         </div>
-        <figcaption>
+      </div>
+      <div>
+        <figure>
           <div>
             <div>
-              <div>
-                Some Caption
-              </div>
-              <div>
-                SOME CREDITS
-              </div>
+              <Image
+                accessibilityLabel="Some Caption"
+                aspectRatio={1.7777777777777777}
+                highResSize={null}
+                lowResSize={100}
+                uri="https://crop169.io"
+              />
             </div>
           </div>
-        </figcaption>
-      </figure>
-    </div>
-    <div>
+          <figcaption>
+            <div>
+              <div>
+                <div>
+                  Some Caption
+                </div>
+                <div>
+                  SOME CREDITS
+                </div>
+              </div>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
       <div>
         <div>
+<<<<<<< HEAD
           <ArticleBylineWithLinks
             ast={
               Array [
                 Object {
                   "byline": Array [
                     Object {
+=======
+          <div>
+            <ArticleBylineWithLinks
+              ast={
+                Array [
+                  Object {
+                    "byline": Object {
+>>>>>>> master
                       "attributes": Object {},
                       "children": Array [
                         Object {
@@ -373,6 +407,7 @@ exports[`4. an article with ads 1`] = `
                       ],
                       "name": "inline",
                     },
+<<<<<<< HEAD
                   ],
                 },
               ]
@@ -386,29 +421,44 @@ exports[`4. an article with ads 1`] = `
             <DatePublication
               date="2015-03-13T18:54:58.000Z"
               publication="TIMES"
+=======
+                  },
+                ]
+              }
+              color="#1D1D1B"
+>>>>>>> master
             />
+          </div>
+          <div />
+          <div>
+            <div>
+              <DatePublication
+                date="2015-03-13T18:54:58.000Z"
+                publication="TIMES"
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div
-      data-tc-sticky-placeholder={true}
-    />
-    <div
-      data-tc-sticky-container={true}
-    >
       <div>
         <div
-          data-tc-sticky-sizer={true}
+          data-tc-sticky-placeholder={true}
+        />
+        <div
+          data-tc-sticky-container={true}
         >
           <div>
-            <SaveAndShareBar
-              articleHeadline="Some Headline"
-              articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-              articleUrl="https://url.io"
-              savingEnabled={true}
-              sharingEnabled={true}
-            />
+            <div
+              data-tc-sticky-sizer={true}
+            >
+              <SaveAndShareBar
+                articleHeadline="Some Headline"
+                articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+                articleUrl="https://url.io"
+                savingEnabled={true}
+                sharingEnabled={true}
+              />
+            </div>
           </div>
         </div>
       </div>

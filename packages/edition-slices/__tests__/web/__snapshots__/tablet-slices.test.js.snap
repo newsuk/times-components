@@ -5,6 +5,7 @@ exports[`1. comment lead and cartoon - medium 1`] = `
   <div>
     <div>
       <TileAH
+        breakpoint="wide"
         tileName="lead"
       />
     </div>
@@ -54,6 +55,7 @@ exports[`3. lead one and one - medium 1`] = `
   <div>
     <div>
       <TileU
+        breakpoint="wide"
         tileName="lead"
       />
     </div>
@@ -70,6 +72,7 @@ exports[`3. lead one and one - medium 1`] = `
 exports[`4. lead one full width - medium 1`] = `
 <div>
   <TileR
+    breakpoint="wide"
     tileName="lead"
   />
 </div>
@@ -120,18 +123,21 @@ exports[`6. leaders slice - medium 1`] = `
     <div>
       <div>
         <TileAG
+          breakpoint="wide"
           tileName="leader2"
         />
       </div>
       <div />
       <div>
         <TileAG
+          breakpoint="wide"
           tileName="leader1"
         />
       </div>
       <div />
       <div>
         <TileAG
+          breakpoint="wide"
           tileName="leader3"
         />
       </div>
@@ -451,6 +457,7 @@ exports[`16. comment lead and cartoon - wide 1`] = `
   <div>
     <div>
       <TileAH
+        breakpoint="wide"
         tileName="lead"
       />
     </div>
@@ -500,6 +507,7 @@ exports[`18. lead one and one - wide 1`] = `
   <div>
     <div>
       <TileU
+        breakpoint="wide"
         tileName="lead"
       />
     </div>
@@ -516,6 +524,7 @@ exports[`18. lead one and one - wide 1`] = `
 exports[`19. lead one full width - wide 1`] = `
 <div>
   <TileR
+    breakpoint="wide"
     tileName="lead"
   />
 </div>
@@ -566,18 +575,21 @@ exports[`21. leaders slice - wide 1`] = `
     <div>
       <div>
         <TileAG
+          breakpoint="wide"
           tileName="leader2"
         />
       </div>
       <div />
       <div>
         <TileAG
+          breakpoint="wide"
           tileName="leader1"
         />
       </div>
       <div />
       <div>
         <TileAG
+          breakpoint="wide"
           tileName="leader3"
         />
       </div>
@@ -897,6 +909,7 @@ exports[`31. comment lead and cartoon - huge 1`] = `
   <div>
     <div>
       <TileAH
+        breakpoint="wide"
         tileName="lead"
       />
     </div>
@@ -946,6 +959,7 @@ exports[`33. lead one and one - huge 1`] = `
   <div>
     <div>
       <TileU
+        breakpoint="wide"
         tileName="lead"
       />
     </div>
@@ -962,6 +976,7 @@ exports[`33. lead one and one - huge 1`] = `
 exports[`34. lead one full width - huge 1`] = `
 <div>
   <TileR
+    breakpoint="wide"
     tileName="lead"
   />
 </div>
@@ -1012,18 +1027,21 @@ exports[`36. leaders slice - huge 1`] = `
     <div>
       <div>
         <TileAG
+          breakpoint="wide"
           tileName="leader2"
         />
       </div>
       <div />
       <div>
         <TileAG
+          breakpoint="wide"
           tileName="leader1"
         />
       </div>
       <div />
       <div>
         <TileAG
+          breakpoint="wide"
           tileName="leader3"
         />
       </div>

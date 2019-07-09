@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.9.29](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.9.28...@times-components/article-skeleton@1.9.29) (2019-07-09)
+
+
+### Bug Fixes
+
+* lead asset position should be responsive on the main standard article template ([#2101](https://github.com/newsuk/times-components/issues/2101)) ([2f470d1](https://github.com/newsuk/times-components/commit/2f470d1))
+
+
+
+
+
+## [1.9.28](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.9.27...@times-components/article-skeleton@1.9.28) (2019-07-09)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.9.27](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.9.26...@times-components/article-skeleton@1.9.27) (2019-07-08)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.9.26](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.9.25...@times-components/article-skeleton@1.9.26) (2019-07-08)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
 ## [1.9.25](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.9.24...@times-components/article-skeleton@1.9.25) (2019-07-04)
 
 **Note:** Version bump only for package @times-components/article-skeleton

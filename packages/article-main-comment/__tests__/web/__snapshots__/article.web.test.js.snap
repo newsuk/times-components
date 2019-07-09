@@ -73,82 +73,84 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
   <div>
     <div>
       <div>
-        <Image
-          aspectRatio={1}
-          uri="https://image.io"
-        />
-      </div>
-      <h1
-        aria-level="1"
-        role="heading"
-      >
-        Some Short Headline
-      </h1>
-      <div>
-        <ArticleFlags />
-      </div>
-      <div>
         <div>
-          <ArticleBylineWithLinks
-            ast={
-              Array [
-                Object {
-                  "byline": Array [
-                    Object {
-                      "attributes": Object {},
-                      "children": Array [
-                        Object {
-                          "attributes": Object {
-                            "value": "Some byline",
-                          },
-                          "children": Array [],
-                          "name": "text",
-                        },
-                      ],
-                      "name": "inline",
-                    },
-                  ],
-                  "image": Object {
-                    "crop": Object {
-                      "ratio": "1:1",
-                      "url": "https://image.io",
-                    },
-                    "id": "36f9b2e8-0d41-464a-9e95-921bdb6895be",
-                  },
-                },
-              ]
-            }
+          <Image
+            aspectRatio={1}
+            uri="https://image.io"
           />
         </div>
-        <div />
+        <h1
+          aria-level="1"
+          role="heading"
+        >
+          Some Short Headline
+        </h1>
+        <div>
+          <ArticleFlags />
+        </div>
         <div>
           <div>
-            <DatePublication
-              date="2015-03-13T18:54:58.000Z"
-              publication="TIMES"
+            <ArticleBylineWithLinks
+              ast={
+                Array [
+                  Object {
+                    "byline": Array [
+                      Object {
+                        "attributes": Object {},
+                        "children": Array [
+                          Object {
+                            "attributes": Object {
+                              "value": "Some byline",
+                            },
+                            "children": Array [],
+                            "name": "text",
+                          },
+                        ],
+                        "name": "inline",
+                      },
+                    ],
+                    "image": Object {
+                      "crop": Object {
+                        "ratio": "1:1",
+                        "url": "https://image.io",
+                      },
+                      "id": "36f9b2e8-0d41-464a-9e95-921bdb6895be",
+                    },
+                  },
+                ]
+              }
             />
+          </div>
+          <div />
+          <div>
+            <div>
+              <DatePublication
+                date="2015-03-13T18:54:58.000Z"
+                publication="TIMES"
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div
-      data-tc-sticky-placeholder={true}
-    />
-    <div
-      data-tc-sticky-container={true}
-    >
       <div>
         <div
-          data-tc-sticky-sizer={true}
+          data-tc-sticky-placeholder={true}
+        />
+        <div
+          data-tc-sticky-container={true}
         >
           <div>
-            <SaveAndShareBar
-              articleHeadline=""
-              articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-              articleUrl="https://url.io"
-              savingEnabled={true}
-              sharingEnabled={true}
-            />
+            <div
+              data-tc-sticky-sizer={true}
+            >
+              <SaveAndShareBar
+                articleHeadline=""
+                articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+                articleUrl="https://url.io"
+                savingEnabled={true}
+                sharingEnabled={true}
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -291,82 +293,84 @@ exports[`4. an article with ads 1`] = `
   <div>
     <div>
       <div>
-        <Image
-          aspectRatio={1}
-          uri="https://image.io"
-        />
-      </div>
-      <h1
-        aria-level="1"
-        role="heading"
-      >
-        Some Headline
-      </h1>
-      <div>
-        <ArticleFlags />
-      </div>
-      <div>
         <div>
-          <ArticleBylineWithLinks
-            ast={
-              Array [
-                Object {
-                  "byline": Array [
-                    Object {
-                      "attributes": Object {},
-                      "children": Array [
-                        Object {
-                          "attributes": Object {
-                            "value": "Some byline",
-                          },
-                          "children": Array [],
-                          "name": "text",
-                        },
-                      ],
-                      "name": "inline",
-                    },
-                  ],
-                  "image": Object {
-                    "crop": Object {
-                      "ratio": "1:1",
-                      "url": "https://image.io",
-                    },
-                    "id": "36f9b2e8-0d41-464a-9e95-921bdb6895be",
-                  },
-                },
-              ]
-            }
+          <Image
+            aspectRatio={1}
+            uri="https://image.io"
           />
         </div>
-        <div />
+        <h1
+          aria-level="1"
+          role="heading"
+        >
+          Some Headline
+        </h1>
+        <div>
+          <ArticleFlags />
+        </div>
         <div>
           <div>
-            <DatePublication
-              date="2015-03-13T18:54:58.000Z"
-              publication="TIMES"
+            <ArticleBylineWithLinks
+              ast={
+                Array [
+                  Object {
+                    "byline": Array [
+                      Object {
+                        "attributes": Object {},
+                        "children": Array [
+                          Object {
+                            "attributes": Object {
+                              "value": "Some byline",
+                            },
+                            "children": Array [],
+                            "name": "text",
+                          },
+                        ],
+                        "name": "inline",
+                      },
+                    ],
+                    "image": Object {
+                      "crop": Object {
+                        "ratio": "1:1",
+                        "url": "https://image.io",
+                      },
+                      "id": "36f9b2e8-0d41-464a-9e95-921bdb6895be",
+                    },
+                  },
+                ]
+              }
             />
+          </div>
+          <div />
+          <div>
+            <div>
+              <DatePublication
+                date="2015-03-13T18:54:58.000Z"
+                publication="TIMES"
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div
-      data-tc-sticky-placeholder={true}
-    />
-    <div
-      data-tc-sticky-container={true}
-    >
       <div>
         <div
-          data-tc-sticky-sizer={true}
+          data-tc-sticky-placeholder={true}
+        />
+        <div
+          data-tc-sticky-container={true}
         >
           <div>
-            <SaveAndShareBar
-              articleHeadline="Some Headline"
-              articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-              articleUrl="https://url.io"
-              savingEnabled={true}
-              sharingEnabled={true}
-            />
+            <div
+              data-tc-sticky-sizer={true}
+            >
+              <SaveAndShareBar
+                articleHeadline="Some Headline"
+                articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+                articleUrl="https://url.io"
+                savingEnabled={true}
+                sharingEnabled={true}
+              />
+            </div>
           </div>
         </div>
       </div>

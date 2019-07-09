@@ -73,96 +73,98 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
   <div>
     <div>
       <div>
-        <Image
-          aspectRatio={1}
-          uri={null}
-        />
-      </div>
-      <h1
-        aria-level="1"
-        role="heading"
-      >
-        Some Short Headline
-      </h1>
-      <div>
-        <ArticleFlags />
-      </div>
-      <div>
         <div>
-          <ArticleBylineWithLinks
-            ast={
-              Array [
-                Object {
-                  "byline": Array [
-                    Object {
-                      "attributes": Object {},
-                      "children": Array [
-                        Object {
-                          "attributes": Object {
-                            "value": "Some byline",
+          <Image
+            aspectRatio={1}
+            uri={null}
+          />
+        </div>
+        <h1
+          aria-level="1"
+          role="heading"
+        >
+          Some Short Headline
+        </h1>
+        <div>
+          <ArticleFlags />
+        </div>
+        <div>
+          <div>
+            <ArticleBylineWithLinks
+              ast={
+                Array [
+                  Object {
+                    "byline": Array [
+                      Object {
+                        "attributes": Object {},
+                        "children": Array [
+                          Object {
+                            "attributes": Object {
+                              "value": "Some byline",
+                            },
+                            "children": Array [],
+                            "name": "text",
                           },
-                          "children": Array [],
-                          "name": "text",
-                        },
-                      ],
-                      "name": "inline",
-                    },
-                  ],
-                },
-              ]
-            }
-          />
-        </div>
-        <div />
-        <div>
-          <div>
-            <DatePublication
-              date="2015-03-13T18:54:58.000Z"
-              publication="TIMES"
+                        ],
+                        "name": "inline",
+                      },
+                    ],
+                  },
+                ]
+              }
             />
+          </div>
+          <div />
+          <div>
+            <div>
+              <DatePublication
+                date="2015-03-13T18:54:58.000Z"
+                publication="TIMES"
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div>
-      <figure>
-        <div>
+      <div>
+        <figure>
           <div>
-            <Image
-              accessibilityLabel="Some Caption"
-              aspectRatio={1.7777777777777777}
-              highResSize={null}
-              lowResSize={100}
-              uri="https://crop169.io"
-            />
+            <div>
+              <Image
+                accessibilityLabel="Some Caption"
+                aspectRatio={1.7777777777777777}
+                highResSize={null}
+                lowResSize={100}
+                uri="https://crop169.io"
+              />
+            </div>
           </div>
-        </div>
-        <figcaption>
-          <CenteredCaption
-            credits="Some Credits"
-            text="Some Caption"
-          />
-        </figcaption>
-      </figure>
-    </div>
-    <div
-      data-tc-sticky-placeholder={true}
-    />
-    <div
-      data-tc-sticky-container={true}
-    >
+          <figcaption>
+            <CenteredCaption
+              credits="Some Credits"
+              text="Some Caption"
+            />
+          </figcaption>
+        </figure>
+      </div>
       <div>
         <div
-          data-tc-sticky-sizer={true}
+          data-tc-sticky-placeholder={true}
+        />
+        <div
+          data-tc-sticky-container={true}
         >
           <div>
-            <SaveAndShareBar
-              articleHeadline=""
-              articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-              articleUrl="https://url.io"
-              savingEnabled={true}
-              sharingEnabled={true}
-            />
+            <div
+              data-tc-sticky-sizer={true}
+            >
+              <SaveAndShareBar
+                articleHeadline=""
+                articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+                articleUrl="https://url.io"
+                savingEnabled={true}
+                sharingEnabled={true}
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -305,96 +307,98 @@ exports[`4. an article with ads 1`] = `
   <div>
     <div>
       <div>
-        <Image
-          aspectRatio={1}
-          uri={null}
-        />
-      </div>
-      <h1
-        aria-level="1"
-        role="heading"
-      >
-        Some Headline
-      </h1>
-      <div>
-        <ArticleFlags />
-      </div>
-      <div>
         <div>
-          <ArticleBylineWithLinks
-            ast={
-              Array [
-                Object {
-                  "byline": Array [
-                    Object {
-                      "attributes": Object {},
-                      "children": Array [
-                        Object {
-                          "attributes": Object {
-                            "value": "Some byline",
+          <Image
+            aspectRatio={1}
+            uri={null}
+          />
+        </div>
+        <h1
+          aria-level="1"
+          role="heading"
+        >
+          Some Headline
+        </h1>
+        <div>
+          <ArticleFlags />
+        </div>
+        <div>
+          <div>
+            <ArticleBylineWithLinks
+              ast={
+                Array [
+                  Object {
+                    "byline": Array [
+                      Object {
+                        "attributes": Object {},
+                        "children": Array [
+                          Object {
+                            "attributes": Object {
+                              "value": "Some byline",
+                            },
+                            "children": Array [],
+                            "name": "text",
                           },
-                          "children": Array [],
-                          "name": "text",
-                        },
-                      ],
-                      "name": "inline",
-                    },
-                  ],
-                },
-              ]
-            }
-          />
-        </div>
-        <div />
-        <div>
-          <div>
-            <DatePublication
-              date="2015-03-13T18:54:58.000Z"
-              publication="TIMES"
+                        ],
+                        "name": "inline",
+                      },
+                    ],
+                  },
+                ]
+              }
             />
+          </div>
+          <div />
+          <div>
+            <div>
+              <DatePublication
+                date="2015-03-13T18:54:58.000Z"
+                publication="TIMES"
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div>
-      <figure>
-        <div>
+      <div>
+        <figure>
           <div>
-            <Image
-              accessibilityLabel="Some Caption"
-              aspectRatio={1.7777777777777777}
-              highResSize={null}
-              lowResSize={100}
-              uri="https://crop169.io"
-            />
+            <div>
+              <Image
+                accessibilityLabel="Some Caption"
+                aspectRatio={1.7777777777777777}
+                highResSize={null}
+                lowResSize={100}
+                uri="https://crop169.io"
+              />
+            </div>
           </div>
-        </div>
-        <figcaption>
-          <CenteredCaption
-            credits="Some Credits"
-            text="Some Caption"
-          />
-        </figcaption>
-      </figure>
-    </div>
-    <div
-      data-tc-sticky-placeholder={true}
-    />
-    <div
-      data-tc-sticky-container={true}
-    >
+          <figcaption>
+            <CenteredCaption
+              credits="Some Credits"
+              text="Some Caption"
+            />
+          </figcaption>
+        </figure>
+      </div>
       <div>
         <div
-          data-tc-sticky-sizer={true}
+          data-tc-sticky-placeholder={true}
+        />
+        <div
+          data-tc-sticky-container={true}
         >
           <div>
-            <SaveAndShareBar
-              articleHeadline="Some Headline"
-              articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-              articleUrl="https://url.io"
-              savingEnabled={true}
-              sharingEnabled={true}
-            />
+            <div
+              data-tc-sticky-sizer={true}
+            >
+              <SaveAndShareBar
+                articleHeadline="Some Headline"
+                articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+                articleUrl="https://url.io"
+                savingEnabled={true}
+                sharingEnabled={true}
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -539,117 +543,119 @@ exports[`7. an article with no author 1`] = `
   <div>
     <div>
       <div>
-        <Image
-          aspectRatio={1}
-          uri={null}
-        />
-      </div>
-      <div>
         <div>
-          SOME LABEL
+          <Image
+            aspectRatio={1}
+            uri={null}
+          />
         </div>
-      </div>
-      <h1
-        aria-level="1"
-        role="heading"
-      >
-        Some Headline
-      </h1>
-      <div>
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2019-03-14T12:00:00.000Z",
-                "type": "NEW",
-              },
-            ]
-          }
-        />
-      </div>
-      <h2
-        aria-level="2"
-        role="heading"
-      >
-        Some Standfirst
-      </h2>
-      <div>
         <div>
-          <ArticleBylineWithLinks
-            ast={
+          <div>
+            SOME LABEL
+          </div>
+        </div>
+        <h1
+          aria-level="1"
+          role="heading"
+        >
+          Some Headline
+        </h1>
+        <div>
+          <ArticleFlags
+            flags={
               Array [
                 Object {
-                  "byline": Array [
-                    Object {
-                      "attributes": Object {},
-                      "children": Array [
-                        Object {
-                          "attributes": Object {
-                            "value": "Rick Broadbent",
-                          },
-                          "children": Array [],
-                          "name": "text",
-                        },
-                      ],
-                      "name": "inline",
-                    },
-                  ],
-                  "image": null,
+                  "expiryTime": "2019-03-14T12:00:00.000Z",
+                  "type": "NEW",
                 },
               ]
             }
           />
         </div>
-        <div />
+        <h2
+          aria-level="2"
+          role="heading"
+        >
+          Some Standfirst
+        </h2>
         <div>
           <div>
-            <DatePublication
-              date="2015-03-13T18:54:58.000Z"
-              publication="TIMES"
+            <ArticleBylineWithLinks
+              ast={
+                Array [
+                  Object {
+                    "byline": Array [
+                      Object {
+                        "attributes": Object {},
+                        "children": Array [
+                          Object {
+                            "attributes": Object {
+                              "value": "Rick Broadbent",
+                            },
+                            "children": Array [],
+                            "name": "text",
+                          },
+                        ],
+                        "name": "inline",
+                      },
+                    ],
+                    "image": null,
+                  },
+                ]
+              }
             />
+          </div>
+          <div />
+          <div>
+            <div>
+              <DatePublication
+                date="2015-03-13T18:54:58.000Z"
+                publication="TIMES"
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div>
-      <figure>
-        <div>
+      <div>
+        <figure>
           <div>
-            <Image
-              accessibilityLabel="Some Caption"
-              aspectRatio={1.7777777777777777}
-              highResSize={null}
-              lowResSize={100}
-              uri="https://crop169.io"
-            />
+            <div>
+              <Image
+                accessibilityLabel="Some Caption"
+                aspectRatio={1.7777777777777777}
+                highResSize={null}
+                lowResSize={100}
+                uri="https://crop169.io"
+              />
+            </div>
           </div>
-        </div>
-        <figcaption>
-          <CenteredCaption
-            credits="Some Credits"
-            text="Some Caption"
-          />
-        </figcaption>
-      </figure>
-    </div>
-    <div
-      data-tc-sticky-placeholder={true}
-    />
-    <div
-      data-tc-sticky-container={true}
-    >
+          <figcaption>
+            <CenteredCaption
+              credits="Some Credits"
+              text="Some Caption"
+            />
+          </figcaption>
+        </figure>
+      </div>
       <div>
         <div
-          data-tc-sticky-sizer={true}
+          data-tc-sticky-placeholder={true}
+        />
+        <div
+          data-tc-sticky-container={true}
         >
           <div>
-            <SaveAndShareBar
-              articleHeadline="Some Headline"
-              articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-              articleUrl="https://url.io"
-              savingEnabled={true}
-              sharingEnabled={true}
-            />
+            <div
+              data-tc-sticky-sizer={true}
+            >
+              <SaveAndShareBar
+                articleHeadline="Some Headline"
+                articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+                articleUrl="https://url.io"
+                savingEnabled={true}
+                sharingEnabled={true}
+              />
+            </div>
           </div>
         </div>
       </div>

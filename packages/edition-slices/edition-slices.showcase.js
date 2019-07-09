@@ -98,12 +98,12 @@ const sliceStories = [
   },
   {
     mock: mockLeadOneAndOneSlice(),
-    name: "Lead One And One (Mobile: A,B, Tablet: U,C)",
+    name: "Lead One And One (Mobile: A,B, Tablet: U,C, Wide: U,C, Huge:U,AQ)",
     Slice: LeadOneAndOneSlice
   },
   {
     mock: mockLeadOneFullWidthSlice(),
-    name: "Lead One Full Width (Mobile: A, Tablet: R)",
+    name: "Lead One Full Width (Mobile: A, Tablet/Wide/Huge: R)",
     Slice: LeadOneFullWidthSlice
   },
   {
