@@ -1,9 +1,11 @@
 import React, { Fragment } from "react";
-import { ArticleBylineWithLinks } from "@times-components/article-byline";
+import {
+  ArticleBylineWithLinks,
+  hasBylineData
+} from "@times-components/article-byline";
 import DatePublication from "@times-components/date-publication";
 
 import metaPropTypes from "./article-meta-prop-types";
-import hasBylineData from "./has-byline-data";
 import {
   DatePublicationContainer,
   Meta,

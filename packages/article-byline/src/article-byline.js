@@ -31,4 +31,5 @@ ArticleByline.defaultProps = defaultProps;
 
 export { default as ArticleBylineOpinion } from "./article-byline-opinion";
 export { default as ArticleBylineWithLinks } from "./article-byline-with-links";
+export { default as hasBylineData } from "./has-byline-data";
 export default ArticleByline;
