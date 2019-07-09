@@ -607,6 +607,7 @@ exports[`2. lead one full width 1`] = `
   className="css-view-1dbjc4n IS1"
 >
   <TileR
+    breakpoint="wide"
     tileName="lead"
   />
 </div>

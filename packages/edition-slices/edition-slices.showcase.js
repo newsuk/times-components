@@ -103,7 +103,7 @@ const sliceStories = [
   },
   {
     mock: mockLeadOneFullWidthSlice(),
-    name: "Lead One Full Width (Mobile: A, Tablet: R)",
+    name: "Lead One Full Width (Mobile: A, Tablet/Wide/Huge: R)",
     Slice: LeadOneFullWidthSlice
   },
   {

@@ -343,6 +343,7 @@ exports[`4. lead one full width - medium 1`] = `
   className="css-view-1dbjc4n IS1"
 >
   <TileR
+    breakpoint="wide"
     tileName="lead"
   />
 </div>
@@ -2160,6 +2161,7 @@ exports[`19. lead one full width - wide 1`] = `
   className="css-view-1dbjc4n IS1"
 >
   <TileR
+    breakpoint="wide"
     tileName="lead"
   />
 </div>
@@ -3977,6 +3979,7 @@ exports[`34. lead one full width - huge 1`] = `
   className="css-view-1dbjc4n IS1"
 >
   <TileR
+    breakpoint="wide"
     tileName="lead"
   />
 </div>

@@ -142,6 +142,7 @@ exports[`1. secondary one and four 2`] = `
 exports[`2. lead one full width 1`] = `
 <div>
   <TileR
+    breakpoint="wide"
     tileName="lead"
   />
 </div>
