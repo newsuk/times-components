@@ -1,19 +1,16 @@
 import React from "react";
+import PropTypes from "prop-types";
 import ArticleTopics from "@times-components/article-topics";
 import UserState from "@times-components/user-state";
-import PropTypes from "prop-types";
 import styles from "../styles/article-topics";
-import TopicsMetaContainer from "../styles/article-topics/responsive";
 
 const ShowTopics = ({ topics }) => {
   if (topics && topics.length > 0) {
     return (
       <UserState state={UserState.loggedInOrShared}>
-        <TopicsMetaContainer>
-          <nav>
-            <ArticleTopics style={styles.topicsMetaContainer} topics={topics} />
-          </nav>
-        </TopicsMetaContainer>
+        <nav>
+          <ArticleTopics style={styles.topicsMetaContainer} topics={topics} />
+        </nav>
       </UserState>
     );
   }

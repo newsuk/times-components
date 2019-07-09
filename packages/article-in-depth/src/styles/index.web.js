@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 import styleguide from "@times-components/styleguide";
 import sharedStyles from "./shared";
 
-const { spacing, colours } = styleguide();
+const { spacing } = styleguide();
 
 const styles = StyleSheet.create({
   ...sharedStyles,
@@ -10,11 +10,8 @@ const styles = StyleSheet.create({
     marginBottom: spacing(4)
   },
   metaContainer: {
-    alignItems: "center",
-    marginHorizontal: spacing(2),
-    paddingVertical: spacing(2),
-    borderTopColor: colours.functional.keyline,
-    borderTopWidth: 1
+    justifyContent: "center",
+    paddingVertical: spacing(2)
   }
 });
 

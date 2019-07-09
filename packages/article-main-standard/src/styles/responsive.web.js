@@ -30,9 +30,9 @@ export const HeaderAdContainer = styled(View)`
 export const HeaderContainer = styled(View)`
   padding-left: ${spacing(2)};
   padding-right: ${spacing(2)};
-  order: 2;
 
   @media (min-width: ${breakpoints.medium}px) {
+    order: 1;
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -48,41 +48,49 @@ export const HeaderContainer = styled(View)`
 /* --- Meta --- */
 
 export const MetaContainer = styled(View)`
-  order: 3;
+  margin-bottom: ${spacing(4)};
+  padding-right: ${spacing(4)};
+  padding-left: ${spacing(4)};
+  position: absolute;
+  left: 0;
+  width: 20.8333%;
+  z-index: 1;
+  top: 100%;
 
-  @media (min-width: ${breakpoints.medium}px) {
-    width: 80.8%;
-    margin: 0 auto;
-  }
-
-  @media (min-width: ${breakpoints.wide}px) {
-    margin-bottom: ${spacing(4)};
-    padding-right: ${spacing(4)};
-    padding-left: ${spacing(4)};
-    position: absolute;
-    left: 0;
-    width: 20.8333%;
-    z-index: 1;
+  @media (max-width: ${breakpoints.wide}px) {
+    display: none;
   }
 `;
 
-/* --- Body --- */
+export const ArticleMainStandardContainer = styled(View)`
+  @media (min-width: ${breakpoints.wide}px) {
+    .inline-meta {
+      display: none;
+    }
+  }
+`;
+
+export const HeaderTopContainer = styled.div`
+  position: relative;
+  order: 2;
+
+  @media (min-width: ${breakpoints.wide}px) {
+    order: 1;
+  }
+`;
 
 export const LeadAsset = styled(ArticleLeadAsset)`
-  order: 1;
   margin-bottom: ${spacing(4)};
+  order: 1;
 
   @media (min-width: ${breakpoints.medium}px) {
     margin-bottom: ${spacing(6)};
   }
 
   @media (min-width: ${breakpoints.wide}px) {
-    width: 56.2%;
-    margin: 0 auto ${spacing(6)};
     order: 2;
+    width: 56.2%;
+    margin-left: auto;
+    margin-right: auto;
   }
-`;
-
-export const BodyContainer = styled(View)`
-  display: block;
 `;

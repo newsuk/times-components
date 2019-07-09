@@ -1,17 +1,23 @@
 import React, { Component, Fragment } from "react";
 import ArticleSkeleton from "@times-components/article-skeleton";
-import { getLeadAsset, getHeadline } from "@times-components/utils";
+import { getHeadline, getLeadAsset } from "@times-components/utils";
 import Caption from "@times-components/caption";
 import ArticleHeader from "./article-header/article-header";
 import ArticleMeta from "./article-meta/article-meta";
 import ArticleTopics from "./article-topics";
 import {
-  articlePropTypes,
-  articleDefaultProps
+  articleDefaultProps,
+  articlePropTypes
 } from "./article-prop-types/article-prop-types";
 import { LeadAssetCaptionContainer } from "./styles/article-body/responsive";
 
-import { HeaderContainer, LeadAsset, MetaContainer } from "./styles/responsive";
+import {
+  ArticleMainStandardContainer,
+  HeaderContainer,
+  HeaderTopContainer,
+  LeadAsset,
+  MetaContainer
+} from "./styles/responsive.web";
 
 const renderCaption = ({ caption }) => (
   <LeadAssetCaptionContainer>
@@ -39,30 +45,32 @@ class ArticlePage extends Component {
       standfirst,
       topics
     } = article;
+
+    const metaProps = { bylines, publicationName, publishedTime };
+
     return (
       <Fragment>
-        <HeaderContainer>
-          <ArticleHeader
-            flags={expirableFlags}
-            hasVideo={hasVideo}
-            headline={getHeadline(headline, shortHeadline)}
-            label={label}
-            standfirst={standfirst}
-          />
-        </HeaderContainer>
-        <MetaContainer>
-          <ArticleMeta
-            bylines={bylines}
-            publicationName={publicationName}
-            publishedTime={publishedTime}
-          />
-          <ArticleTopics topics={topics} />
-        </MetaContainer>
+        <HeaderTopContainer>
+          <HeaderContainer>
+            <ArticleHeader
+              flags={expirableFlags}
+              hasVideo={hasVideo}
+              headline={getHeadline(headline, shortHeadline)}
+              label={label}
+              standfirst={standfirst}
+            />
+          </HeaderContainer>
+          <MetaContainer>
+            <ArticleMeta {...metaProps} />
+            <ArticleTopics topics={topics} />
+          </MetaContainer>
+        </HeaderTopContainer>
         <LeadAsset
           {...getLeadAsset(article)}
           renderCaption={renderCaption}
           width={parentProps.width}
         />
+        <ArticleMeta {...metaProps} inline className="inline-meta" />
       </Fragment>
     );
   }
@@ -86,17 +94,19 @@ class ArticlePage extends Component {
     }
 
     return (
-      <ArticleSkeleton
-        adConfig={adConfig}
-        analyticsStream={analyticsStream}
-        data={article}
-        Header={this.renderHeader}
-        receiveChildList={receiveChildList}
-        saveApi={saveApi}
-        spotAccountId={spotAccountId}
-        paidContentClassName={paidContentClassName}
-        faviconUrl={faviconUrl}
-      />
+      <ArticleMainStandardContainer>
+        <ArticleSkeleton
+          adConfig={adConfig}
+          analyticsStream={analyticsStream}
+          data={article}
+          Header={this.renderHeader}
+          receiveChildList={receiveChildList}
+          saveApi={saveApi}
+          spotAccountId={spotAccountId}
+          paidContentClassName={paidContentClassName}
+          faviconUrl={faviconUrl}
+        />
+      </ArticleMainStandardContainer>
     );
   }
 }

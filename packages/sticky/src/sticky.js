@@ -55,13 +55,6 @@ class UnwrappedSticky extends Component {
     if (shouldBeSticky) {
       const styles = window.getComputedStyle(component);
 
-      placeholder.style.cssText += `
-        margin-top: ${styles.marginTop};
-        margin-bottom: ${styles.marginBottom};
-        height: ${styles.height};
-        display: block;
-      `;
-
       container.style.cssText += `
         top: ${stickyContext.top}px;
         z-index: ${zIndex};
@@ -74,6 +67,13 @@ class UnwrappedSticky extends Component {
       component.classList.add(STICKY_CLASS_NAME);
 
       document.body.appendChild(container);
+
+      placeholder.style.cssText += `
+        margin-top: ${styles.marginTop};
+        margin-bottom: ${styles.marginBottom};
+        height: ${styles.height};
+        display: block;
+      `;
 
       this.updateSizer();
     } else {

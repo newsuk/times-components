@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import {
-  articlePropTypesBase,
-  articleDefaultPropsBase
+  articleDefaultProps as articleDefaultPropsBase,
+  articlePropTypes as articlePropTypesBase
 } from "./article-prop-types.web";
 
 const articlePropTypes = {

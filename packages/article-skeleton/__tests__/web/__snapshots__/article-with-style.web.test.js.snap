@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`full article with style 1`] = `
-.c6 {
+.c7 {
   color: #333333;
   display: block;
   font-family: "TimesDigitalW04-Regular";
@@ -12,13 +12,13 @@ exports[`full article with style 1`] = `
   padding-left: 10px;
 }
 
-.c6:first-of-type:after {
+.c7:first-of-type:after {
   content: "";
   clear: both;
   display: table;
 }
 
-.c7 {
+.c8 {
   float: left;
   color: #333333;
   padding-right: 10px;
@@ -29,34 +29,21 @@ exports[`full article with style 1`] = `
   font-family: "TimesModern-Regular";
 }
 
-.c14 {
+.c15 {
   padding-left: 10px;
 }
 
-.c8 {
+.c9 {
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 20px;
 }
 
-.c9 {
+.c10 {
   width: 100%;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-bottom: 25px;
-}
-
-.c10 {
-  width: 100%;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  padding-left: 10px;
-  padding-right: 10px;
   padding-bottom: 25px;
 }
 
@@ -70,75 +57,82 @@ exports[`full article with style 1`] = `
   flex-wrap: nowrap;
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 25px;
+}
+
+.c12 {
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: 0;
   display: block;
 }
 
-.c13 {
+.c14 {
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 10px;
 }
 
-.c12 {
+.c13 {
   display: block;
 }
 
-.c1 {
-  display: block;
+.c4 {
+  border: solid #DBDBDB;
+  border-width: 1px 0;
+  margin: 0 auto;
+}
+
+.c4 + .c3 {
+  margin-top: -1px !important;
+}
+
+.c4:last-child {
+  margin-bottom: 30px;
 }
 
 .c0 {
   display: none;
 }
 
-.c5 {
-  display: block;
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c2 > .c3 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
-.c4 {
-  position: relative;
-  margin: 0 auto;
+.c6 {
+  display: block;
+  -webkit-order: 4;
+  -ms-flex-order: 4;
+  order: 4;
+}
+
+.c5 {
+  background-color: #FFFFFF;
   height: 60px;
 }
 
-.c4:before,
-.c4:after {
-  content: "";
-  height: 1px;
-  background-color: #DBDBDB;
-  position: absolute;
-  left: 0;
-  right: 0;
-}
-
-.c4:before {
-  top: 0;
-}
-
-.c4:after {
-  bottom: 0;
-}
-
-.c2 {
-  margin: 0px auto 30px;
-  background-color: #FFFFFF;
-}
-
-.c2.tc-sticky {
+.c5.tc-sticky {
   box-shadow: 0 2px 8px 0 rgba(0,0,0,0.3);
 }
 
-.c2.tc-sticky .c3:before,
-.c2.tc-sticky .c3:after {
-  display: none;
-}
-
 @media (min-width:768px) {
-  .c6 {
+  .c7 {
     font-size: 18px;
     line-height: 30px;
     padding-left: 0;
@@ -148,19 +142,19 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c6 {
+  .c7 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c14 {
+  .c15 {
     padding-left: 0px;
   }
 }
 
 @media (min-width:768px) {
-  .c8 {
+  .c9 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -170,19 +164,6 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c8 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c9 {
-    width: 80.8%;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width:1024px) {
   .c9 {
     width: 56.2%;
   }
@@ -192,8 +173,6 @@ exports[`full article with style 1`] = `
   .c10 {
     width: 80.8%;
     margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
   }
 }
 
@@ -219,7 +198,22 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c13 {
+  .c12 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c12 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c14 {
     width: 50%;
     float: left;
     margin-right: 20px;
@@ -231,7 +225,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c12 {
+  .c13 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -240,8 +234,27 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c12 {
+  .c13 {
     width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c4 {
+    width: 56.2%;
+  }
+}
+
+@media (max-width:768px) {
+  .c4 {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
@@ -263,24 +276,6 @@ exports[`full article with style 1`] = `
     border-bottom-width: 1px;
     padding-top: 10px;
     padding-bottom: 10px;
-  }
-}
-
-@media (max-width:767px) {
-  .c4 {
-    padding: 0 10px;
-  }
-}
-
-@media (min-width:768px) {
-  .c4 {
-    width: 80.8%;
-  }
-}
-
-@media (min-width:1024px) {
-  .c4 {
-    width: 56.2%;
   }
 }
 
@@ -342,56 +337,60 @@ exports[`full article with style 1`] = `
     className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
   >
     <div
-      className="IS2"
-    />
-    <div>
+      className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
+    >
       <div
-        className="c2"
+        className="c3 c4"
       >
+        <div
+          className="IS2"
+        />
         <div>
           <div
-            className="c3 c4"
+            className="c5"
           >
-            <SaveAndShareBar />
+            <div>
+              <SaveAndShareBar />
+            </div>
           </div>
         </div>
       </div>
     </div>
     <div
-      className="c5 responsiveweb__BodyContainer-sc-1exejum-2 c5 css-view-1dbjc4n"
+      className="c6 responsiveweb__BodyContainer-sc-1exejum-3 c6 css-view-1dbjc4n"
     >
       <p
-        className="c6"
+        className="c7"
       >
         <span
-          className="c7 IS3"
+          className="c8 IS3"
         >
           T
         </span>
         his being Black History Month, last week
       </p>
       <div
-        className="c8"
+        className="c9"
       >
         <InteractiveWrapper />
       </div>
       <div>
         <div
-          className="c9 responsiveweb__PrimaryImg-sc-16nqyj8-5 c9 css-view-1dbjc4n"
+          className="c10 responsiveweb__PrimaryImg-sc-16nqyj8-5 c10 css-view-1dbjc4n"
         >
           <ArticleImage />
         </div>
       </div>
       <div>
         <div
-          className="c10 responsiveweb__SecondaryImg-sc-16nqyj8-6 c10 css-view-1dbjc4n"
+          className="c11 responsiveweb__SecondaryImg-sc-16nqyj8-6 c11 css-view-1dbjc4n"
         >
           <ArticleImage />
         </div>
       </div>
       <div>
         <div
-          className="c11 responsiveweb__InlineImg-sc-16nqyj8-7 c11 css-view-1dbjc4n"
+          className="c12 responsiveweb__InlineImg-sc-16nqyj8-7 c12 css-view-1dbjc4n"
         >
           <ArticleImage />
         </div>
@@ -403,15 +402,15 @@ exports[`full article with style 1`] = `
         className="paidContentClassName"
       >
         <p
-          className="c6"
+          className="c7"
         >
           Some content
         </p>
         <div
-          className="c12 responsiveweb__PullQuoteContainer-sc-16nqyj8-9 c12 css-view-1dbjc4n"
+          className="c13 responsiveweb__PullQuoteContainer-sc-16nqyj8-9 c13 css-view-1dbjc4n"
         >
           <div
-            className="c13 responsiveweb__PullQuoteResp-sc-16nqyj8-8 c13 css-view-1dbjc4n"
+            className="c14 responsiveweb__PullQuoteResp-sc-16nqyj8-8 c14 css-view-1dbjc4n"
           >
             <PullQuote>
               The pull quote content
@@ -419,7 +418,7 @@ exports[`full article with style 1`] = `
           </div>
         </div>
         <div
-          className="c9 responsiveweb__PrimaryImg-sc-16nqyj8-5 c9 css-view-1dbjc4n"
+          className="c10 responsiveweb__PrimaryImg-sc-16nqyj8-5 c10 css-view-1dbjc4n"
         >
           <figure
             className="IS9"
@@ -445,7 +444,7 @@ exports[`full article with style 1`] = `
             </div>
             <figcaption>
               <div
-                className="c14 inset-captionweb__InsetCaptionStyle-sc-8m7lci-0 c14 css-view-1dbjc4n"
+                className="c15 inset-captionweb__InsetCaptionStyle-sc-8m7lci-0 c15 css-view-1dbjc4n"
               >
                 <Caption />
               </div>
