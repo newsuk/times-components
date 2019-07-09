@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.15](https://github.com/newsuk/times-components/compare/@times-components/sticky@0.0.14...@times-components/sticky@0.0.15) (2019-07-09)
+
+
+### Bug Fixes
+
+* lead asset position should be responsive on the main standard article template ([#2101](https://github.com/newsuk/times-components/issues/2101)) ([2f470d1](https://github.com/newsuk/times-components/commit/2f470d1))
+
+
+
+
+
 ## [0.0.14](https://github.com/newsuk/times-components/compare/@times-components/sticky@0.0.13...@times-components/sticky@0.0.14) (2019-07-04)
 
 **Note:** Version bump only for package @times-components/sticky
