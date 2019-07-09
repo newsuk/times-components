@@ -67,6 +67,7 @@ exports[`3. lead one and one - medium 1`] = `
   <View>
     <View>
       <TileU
+        breakpoint="medium"
         tileName="lead"
       />
     </View>
@@ -534,6 +535,7 @@ exports[`18. lead one and one - wide 1`] = `
   <View>
     <View>
       <TileU
+        breakpoint="wide"
         tileName="lead"
       />
     </View>
@@ -1021,12 +1023,13 @@ exports[`33. lead one and one - huge 1`] = `
   <View>
     <View>
       <TileU
+        breakpoint="huge"
         tileName="lead"
       />
     </View>
     <View />
     <View>
-      <TileC
+      <TileAQ
         tileName="support"
       />
     </View>

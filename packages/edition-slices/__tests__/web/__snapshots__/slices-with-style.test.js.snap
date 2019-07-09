@@ -1017,6 +1017,7 @@ exports[`3. lead one and one 1`] = `
       className="css-view-1dbjc4n IS1"
     >
       <TileU
+        breakpoint="wide"
         tileName="lead"
       />
     </div>

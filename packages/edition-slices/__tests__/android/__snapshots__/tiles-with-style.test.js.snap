@@ -1133,6 +1133,7 @@ exports[`22. tile u 1`] = `
     style={
       Object {
         "paddingBottom": 5,
+        "paddingRight": 20,
         "width": "40%",
       }
     }
