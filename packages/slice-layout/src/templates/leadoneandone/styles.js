@@ -26,7 +26,7 @@ const hugeBreakpointStyles = {
   ...styles,
   container: {
     ...styles.container,
-    width: "87.6%",
+    width: "86%",
     alignSelf: "center"
   }
 };
