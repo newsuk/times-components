@@ -29,8 +29,15 @@ class Ad extends Component {
     this.state = {
       config: getSlotConfig(slotName, screenWidth()),
       hasError: false,
-      isAdReady: false
+      isAdReady: false,
+      isClientSide: false
     };
+  }
+
+  componentDidMount() {
+    this.setState({
+      isClientSide: true
+    });
   }
 
   setAdReady = () => {
@@ -54,9 +61,9 @@ class Ad extends Component {
       slotName,
       style
     } = this.props;
-    const { config, hasError, isAdReady } = this.state;
+    const { config, hasError, isAdReady, isClientSide } = this.state;
 
-    if (hasError) return null;
+    if (hasError || !isClientSide) return null;
 
     this.slots = adConfig.bidderSlots.map(slot =>
       getPrebidSlotConfig(
