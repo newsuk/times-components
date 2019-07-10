@@ -9,7 +9,7 @@ import withTrackEvents from "./article-link-tracking-events";
 
 const ArticleLink = ({ children, target, url, onPress, dropCap }) => (
   <Link
-    underlined={!dropCap}
+    underlined={!(dropCap && children[0].length === 1)}
     responsiveLinkStyles={dropCap ? dropCapLinkStyles : linkStyles}
     target={target}
     url={url}
