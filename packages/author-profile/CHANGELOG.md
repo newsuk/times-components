@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.68](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.0.67...@times-components/author-profile@6.0.68) (2019-07-10)
+
+
+### Bug Fixes
+
+* Update content in meta tag for journalist and topic list pages ([736a5f9](https://github.com/newsuk/times-components/commit/736a5f9))
+
+
+
+
+
 ## [6.0.67](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.0.66...@times-components/author-profile@6.0.67) (2019-07-09)
 
 **Note:** Version bump only for package @times-components/author-profile

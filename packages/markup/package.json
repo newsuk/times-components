@@ -1,6 +1,6 @@
 {
   "name": "@times-components/markup",
-  "version": "3.3.82",
+  "version": "3.3.83",
   "description": "a component which takes an HTML ast and renders the platform specific markup",
   "main": "dist/markup",
   "dev": "src/markup",
@@ -40,7 +40,7 @@
     "@times-components/eslint-config-thetimes": "0.8.12",
     "@times-components/jest-configurator": "2.5.13",
     "@times-components/jest-serializer": "3.2.9",
-    "@times-components/markup-forest": "1.7.14",
+    "@times-components/markup-forest": "1.7.15",
     "@times-components/storybook": "4.0.17",
     "@times-components/test-utils": "2.2.44",
     "@times-components/webpack-configurator": "2.0.22",

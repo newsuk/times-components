@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.7.15](https://github.com/newsuk/times-components/compare/@times-components/markup-forest@1.7.14...@times-components/markup-forest@1.7.15) (2019-07-10)
+
+
+### Bug Fixes
+
+* Update content in meta tag for journalist and topic list pages ([736a5f9](https://github.com/newsuk/times-components/commit/736a5f9))
+
+
+
+
+
 ## [1.7.14](https://github.com/newsuk/times-components/compare/@times-components/markup-forest@1.7.13...@times-components/markup-forest@1.7.14) (2019-06-24)
 
 **Note:** Version bump only for package @times-components/markup-forest
