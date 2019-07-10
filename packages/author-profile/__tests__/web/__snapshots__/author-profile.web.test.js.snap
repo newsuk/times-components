@@ -51,7 +51,7 @@ exports[`3. an article list with images 1`] = `
        | The Times & The Sunday Times
     </title>
     <meta
-      content="Get up to date information and read all the latest articles from Name."
+      content="Camilla Long"
       name="description"
     />
   </Helmet>
@@ -103,7 +103,7 @@ exports[`4. an article list without images 1`] = `
        | The Times & The Sunday Times
     </title>
     <meta
-      content="Get up to date information and read all the latest articles from Name."
+      content="Camilla Long"
       name="description"
     />
   </Helmet>
@@ -155,7 +155,7 @@ exports[`5. fetches more articles 1`] = `
        | The Times & The Sunday Times
     </title>
     <meta
-      content="Get up to date information and read all the latest articles from Name."
+      content="Camilla Long"
       name="description"
     />
   </Helmet>
@@ -212,7 +212,7 @@ exports[`6. fetches more articles and falls back to previous data if no more 1`]
        | The Times & The Sunday Times
     </title>
     <meta
-      content="Get up to date information and read all the latest articles from Name."
+      content="Camilla Long"
       name="description"
     />
   </Helmet>

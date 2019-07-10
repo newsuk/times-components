@@ -21,15 +21,18 @@ export const renderTree = (tree, renderers, key = "0", indx = 0) => {
 };
 
 export const renderTreeAsText = (
-  { attributes: { value } = {}, children },
+  { attributes: { value } = {}, children, name },
   key = "0"
 ) =>
-  value ||
+  (name === "text" && value) ||
   (children
     ? children
         .map((child, index) => renderTreeAsText(child, `${key}.${index}`))
         .join("")
     : "");
+
+export const renderTreeArrayAsText = markupTree =>
+  markupTree.map(tree => renderTreeAsText(tree)).join("");
 
 const nodeShape = {
   attributes: PropTypes.object,

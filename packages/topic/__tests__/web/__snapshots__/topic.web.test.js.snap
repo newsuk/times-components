@@ -52,7 +52,7 @@ exports[`3. an article list 1`] = `
        | The Times & The Sunday Times
     </title>
     <meta
-      content="Discover expert Test Name articles from The Times and The Sunday Times."
+      content="Test italic bold text."
       name="description"
     />
     <link
@@ -138,7 +138,7 @@ exports[`4. fetches more articles 1`] = `
        | The Times & The Sunday Times
     </title>
     <meta
-      content="Discover expert Test Name articles from The Times and The Sunday Times."
+      content="Test italic bold text."
       name="description"
     />
     <link
@@ -229,7 +229,7 @@ exports[`5. fetches more articles and falls back to previous data if no more 1`]
        | The Times & The Sunday Times
     </title>
     <meta
-      content="Discover expert Test Name articles from The Times and The Sunday Times."
+      content="Test italic bold text."
       name="description"
     />
     <link
