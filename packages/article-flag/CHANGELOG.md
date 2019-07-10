@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.6.52](https://github.com/newsuk/times-components/compare/@times-components/article-flag@2.6.51...@times-components/article-flag@2.6.52) (2019-07-10)
+
+
+### Bug Fixes
+
+* REPLAT-6627 flag mobile styling updates ([#2112](https://github.com/newsuk/times-components/issues/2112)) ([89d35fc](https://github.com/newsuk/times-components/commit/89d35fc))
+
+
+
+
+
 ## [2.6.51](https://github.com/newsuk/times-components/compare/@times-components/article-flag@2.6.50...@times-components/article-flag@2.6.51) (2019-07-04)
 
 **Note:** Version bump only for package @times-components/article-flag
