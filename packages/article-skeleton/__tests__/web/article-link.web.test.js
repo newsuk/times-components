@@ -1,6 +1,12 @@
 import React from "react";
 import { render } from "enzyme";
 
+import {
+  addSerializers,
+  compose,
+  enzymeTreeSerializer,
+  stylePrinter
+} from "@times-components/jest-serializer";
 import ArticleLink from "../../src/article-body/article-link.web";
 
 describe("Article Link", () => {
@@ -11,6 +17,8 @@ describe("Article Link", () => {
     target: "target",
     children: ["A"]
   };
+
+  addSerializers(expect, enzymeTreeSerializer(), compose(stylePrinter));
 
   it("should render with the dropCap link not underlined", () => {
     const component = render(<ArticleLink {...props} />);

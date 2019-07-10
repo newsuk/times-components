@@ -1,125 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Article Link should render with the dropCap link not underlined 1`] = `
-initialize {
-  "0": Object {
-    "attribs": Object {
-      "class": "linkweb-yfb9n-0 hNmDnn",
-      "href": "www.example.com",
-      "style": "text-decoration:none",
-      "target": "target",
-    },
-    "children": Array [
-      Object {
-        "data": "A",
-        "next": null,
-        "parent": [Circular],
-        "prev": null,
-        "type": "text",
-      },
-    ],
-    "name": "a",
-    "namespace": "http://www.w3.org/1999/xhtml",
-    "next": null,
-    "parent": null,
-    "prev": null,
-    "root": Object {
-      "attribs": Object {},
-      "children": Array [
-        [Circular],
-      ],
-      "name": "root",
-      "namespace": "http://www.w3.org/1999/xhtml",
-      "next": null,
-      "parent": null,
-      "prev": null,
-      "type": "root",
-      "x-attribsNamespace": Object {},
-      "x-attribsPrefix": Object {},
-    },
-    "type": "tag",
-    "x-attribsNamespace": Object {
-      "class": undefined,
-      "href": undefined,
-      "style": undefined,
-      "target": undefined,
-    },
-    "x-attribsPrefix": Object {
-      "class": undefined,
-      "href": undefined,
-      "style": undefined,
-      "target": undefined,
-    },
-  },
-  "_root": [Circular],
-  "length": 1,
-  "options": Object {
-    "decodeEntities": true,
-    "normalizeWhitespace": false,
-    "withDomLvl1": true,
-    "xml": false,
-  },
-}
+<a
+  class="linkweb-yfb9n-0 hNmDnn"
+  href="www.example.com"
+  style="text-decoration:none"
+  target="target"
+>
+  A
+</a>
 `;
 
 exports[`Article Link should render with the link underlined 1`] = `
-initialize {
-  "0": Object {
-    "attribs": Object {
-      "class": "linkweb-yfb9n-0 hNmDnn",
-      "href": "www.example.com",
-      "style": "text-decoration:underline",
-      "target": "target",
-    },
-    "children": Array [
-      Object {
-        "data": "a link",
-        "next": null,
-        "parent": [Circular],
-        "prev": null,
-        "type": "text",
-      },
-    ],
-    "name": "a",
-    "namespace": "http://www.w3.org/1999/xhtml",
-    "next": null,
-    "parent": null,
-    "prev": null,
-    "root": Object {
-      "attribs": Object {},
-      "children": Array [
-        [Circular],
-      ],
-      "name": "root",
-      "namespace": "http://www.w3.org/1999/xhtml",
-      "next": null,
-      "parent": null,
-      "prev": null,
-      "type": "root",
-      "x-attribsNamespace": Object {},
-      "x-attribsPrefix": Object {},
-    },
-    "type": "tag",
-    "x-attribsNamespace": Object {
-      "class": undefined,
-      "href": undefined,
-      "style": undefined,
-      "target": undefined,
-    },
-    "x-attribsPrefix": Object {
-      "class": undefined,
-      "href": undefined,
-      "style": undefined,
-      "target": undefined,
-    },
-  },
-  "_root": [Circular],
-  "length": 1,
-  "options": Object {
-    "decodeEntities": true,
-    "normalizeWhitespace": false,
-    "withDomLvl1": true,
-    "xml": false,
-  },
-}
+<a
+  class="linkweb-yfb9n-0 hNmDnn"
+  href="www.example.com"
+  style="text-decoration:underline"
+  target="target"
+>
+  a link
+</a>
 `;
