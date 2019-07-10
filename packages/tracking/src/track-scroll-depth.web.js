@@ -16,6 +16,7 @@ export default (
       super(props, context);
       this.receiveChildList = this.receiveChildList.bind(this);
       this.childData = {};
+      this.isOnScroll = false;
       this.viewed = new Set();
       if (typeof window !== "undefined" && window.IntersectionObserver) {
         this.observer = new window.IntersectionObserver(
@@ -31,6 +32,11 @@ export default (
     }
 
     componentDidMount() {
+      console.log('componentDidMount>>>>')
+      window.addEventListener("scroll", () => {
+        console.log('scroll triggered>>>>')
+        this.isOnScroll = true;
+      });
       this.observeChildren();
     }
 
@@ -51,7 +57,7 @@ export default (
       }
 
       observed.forEach(({ isIntersecting, target }) => {
-        if (isIntersecting && !this.viewed.has(target.id)) {
+        if (this.isOnScroll && isIntersecting && !this.viewed.has(target.id)) {
           this.viewed.add(target.id);
 
           this.onChildView(this.childData[target.id]);
