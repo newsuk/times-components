@@ -6,7 +6,7 @@ exports[`1. red article flag 1`] = `
     Object {
       "alignItems": "center",
       "flexDirection": "row",
-      "marginTop": -5,
+      "marginTop": -3,
     }
   }
 >
@@ -28,9 +28,9 @@ exports[`1. red article flag 1`] = `
         "fontSize": 14,
         "fontWeight": "400",
         "letterSpacing": 0.6,
-        "lineHeight": 12,
+        "lineHeight": 14,
         "marginLeft": 5,
-        "marginTop": 5,
+        "marginTop": 3,
       }
     }
   >
@@ -61,7 +61,7 @@ exports[`2. multiple article flags 1`] = `
         Object {
           "alignItems": "center",
           "flexDirection": "row",
-          "marginTop": -5,
+          "marginTop": -3,
         }
       }
     >
@@ -83,9 +83,9 @@ exports[`2. multiple article flags 1`] = `
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0.6,
-            "lineHeight": 12,
+            "lineHeight": 14,
             "marginLeft": 5,
-            "marginTop": 5,
+            "marginTop": 3,
           }
         }
       >
@@ -105,7 +105,7 @@ exports[`2. multiple article flags 1`] = `
         Object {
           "alignItems": "center",
           "flexDirection": "row",
-          "marginTop": -5,
+          "marginTop": -3,
         }
       }
     >
@@ -127,9 +127,9 @@ exports[`2. multiple article flags 1`] = `
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0.6,
-            "lineHeight": 12,
+            "lineHeight": 14,
             "marginLeft": 5,
-            "marginTop": 5,
+            "marginTop": 3,
           }
         }
       >
@@ -149,7 +149,7 @@ exports[`2. multiple article flags 1`] = `
         Object {
           "alignItems": "center",
           "flexDirection": "row",
-          "marginTop": -5,
+          "marginTop": -3,
         }
       }
     >
@@ -171,9 +171,9 @@ exports[`2. multiple article flags 1`] = `
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0.6,
-            "lineHeight": 12,
+            "lineHeight": 14,
             "marginLeft": 5,
-            "marginTop": 5,
+            "marginTop": 3,
           }
         }
       >
@@ -193,7 +193,7 @@ exports[`2. multiple article flags 1`] = `
         Object {
           "alignItems": "center",
           "flexDirection": "row",
-          "marginTop": -5,
+          "marginTop": -3,
         }
       }
     >
@@ -215,9 +215,9 @@ exports[`2. multiple article flags 1`] = `
             "fontSize": 14,
             "fontWeight": "400",
             "letterSpacing": 0.6,
-            "lineHeight": 12,
+            "lineHeight": 14,
             "marginLeft": 5,
-            "marginTop": 5,
+            "marginTop": 3,
           }
         }
       >

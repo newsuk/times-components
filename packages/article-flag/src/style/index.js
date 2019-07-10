@@ -6,11 +6,12 @@ const styles = {
   title: {
     ...sharedStyles.title,
     fontSize: fontSizes.meta,
-    marginTop: 5
+    lineHeight: fontSizes.meta,
+    marginTop: 3
   },
   view: {
     ...sharedStyles.view,
-    marginTop: -5
+    marginTop: -3
   }
 };
 
