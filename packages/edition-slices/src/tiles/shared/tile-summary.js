@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Platform } from "react-native";
+import { View } from "react-native";
 import PropTypes from "prop-types";
 import ArticleSummary, {
   ArticleSummaryContent,
@@ -69,8 +69,7 @@ class TileSummary extends Component {
       summary
     } = this.props;
 
-    const shouldAddBottomPadding =
-      Platform.OS === "android" && !withStar && !summary;
+    const shouldAddBottomPadding = isSaveSupported && !withStar && !summary;
 
     return (
       <ArticleSummaryHeadline
@@ -107,7 +106,10 @@ class TileSummary extends Component {
     } = this.props;
 
     const shouldAddBottomPadding =
-      Platform.OS === "android" && !withStar && expirableFlags && expirableFlags.length === 0;
+      isSaveSupported &&
+      !withStar &&
+      expirableFlags &&
+      expirableFlags.length === 0;
 
     return (
       <ArticleSummary
