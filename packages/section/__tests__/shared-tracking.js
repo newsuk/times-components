@@ -9,7 +9,8 @@ import Section from "../src/section";
 
 jest.mock("@times-components/icons", () => ({
   IconForwardArrow: "IconForwardArrow",
-  IconStar: "IconStar"
+  IconStar: "IconStar",
+  IconVideo: "IconVideo"
 }));
 jest.mock("react-native", () => {
   const rn = require.requireActual("react-native");
