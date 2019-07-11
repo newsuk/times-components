@@ -125,7 +125,7 @@ exports[`3. tile c 1`] = `
           "fontWeight": "400",
           "lineHeight": 22,
           "marginBottom": 5,
-          "paddingBottom": 5,
+          "paddingBottom": 15,
         }
       }
     >
@@ -174,6 +174,7 @@ exports[`4. tile d 1`] = `
           "fontWeight": "400",
           "lineHeight": 22,
           "marginBottom": 5,
+          "paddingBottom": 15,
         }
       }
     >
@@ -222,6 +223,7 @@ exports[`5. tile e 1`] = `
           "fontWeight": "400",
           "lineHeight": 22,
           "marginBottom": 5,
+          "paddingBottom": 15,
         }
       }
     >
@@ -333,7 +335,7 @@ exports[`7. tile g 1`] = `
           "fontWeight": "400",
           "lineHeight": 22,
           "marginBottom": 5,
-          "paddingBottom": 5,
+          "paddingBottom": 15,
         }
       }
     >
@@ -523,6 +525,7 @@ exports[`10. tile j 1`] = `
           "fontWeight": "400",
           "lineHeight": 22,
           "marginBottom": 10,
+          "paddingBottom": 15,
         }
       }
     >
@@ -568,6 +571,7 @@ exports[`11. tile k 1`] = `
           "fontWeight": "400",
           "lineHeight": 18,
           "marginBottom": 10,
+          "paddingBottom": 15,
         }
       }
     >
@@ -599,6 +603,7 @@ exports[`12. tile l 1`] = `
           "fontWeight": "400",
           "lineHeight": 20,
           "marginBottom": 10,
+          "paddingBottom": 15,
         }
       }
     >
@@ -683,6 +688,7 @@ exports[`14. tile n 1`] = `
           "fontWeight": "400",
           "lineHeight": 33,
           "marginBottom": 5,
+          "paddingBottom": 15,
         }
       }
     >
@@ -728,6 +734,7 @@ exports[`15. tile o 1`] = `
           "lineHeight": 22,
           "marginBottom": 11,
           "marginTop": 5,
+          "paddingBottom": 15,
         }
       }
     >
@@ -866,6 +873,7 @@ exports[`18. tile r 1`] = `
           "fontWeight": "400",
           "lineHeight": 40,
           "marginBottom": 5,
+          "paddingBottom": 15,
         }
       }
     >
@@ -1117,6 +1125,7 @@ exports[`21. tile t 1`] = `
           "fontWeight": "400",
           "lineHeight": 22,
           "marginBottom": 5,
+          "paddingBottom": 15,
         }
       }
     >
@@ -1203,7 +1212,7 @@ exports[`23. tile v 1`] = `
           "fontWeight": "400",
           "lineHeight": 30,
           "marginBottom": 5,
-          "paddingBottom": 5,
+          "paddingBottom": 15,
         }
       }
     >
@@ -1455,6 +1464,7 @@ exports[`28. tile aa 1`] = `
           "fontWeight": "400",
           "lineHeight": 30,
           "marginBottom": 5,
+          "paddingBottom": 15,
         }
       }
     >
@@ -1622,6 +1632,7 @@ exports[`31. tile ag 1`] = `
           "lineHeight": 30,
           "marginBottom": 5,
           "marginTop": 20,
+          "paddingBottom": 15,
           "textAlign": "center",
         }
       }
@@ -1938,7 +1949,7 @@ exports[`37. tile ap 1`] = `
           "fontWeight": "400",
           "lineHeight": 22,
           "marginBottom": 5,
-          "paddingBottom": 5,
+          "paddingBottom": 15,
         }
       }
     >
@@ -1984,6 +1995,7 @@ exports[`38. tile ad 1`] = `
           "fontWeight": "400",
           "lineHeight": 20,
           "marginBottom": 5,
+          "paddingBottom": 15,
         }
       }
     >
@@ -2033,6 +2045,7 @@ exports[`39. tile ac 1`] = `
           "fontWeight": "400",
           "lineHeight": 30,
           "marginBottom": 10,
+          "paddingBottom": 15,
           "textAlign": "center",
         }
       }

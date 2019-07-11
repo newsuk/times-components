@@ -17,8 +17,8 @@ const tileStar = {
   bottom: spacing(1)
 };
 
-const starPadding = {
-  paddingBottom: spacing(5)
+const starPaddingBottom = {
+  paddingBottom: spacing(3)
 };
 
 const verticalStyles = {
@@ -30,4 +30,4 @@ const verticalStyles = {
   }
 };
 
-export { horizontalStyles, verticalStyles, tileStar, starPadding };
+export { horizontalStyles, verticalStyles, tileStar, starPaddingBottom };

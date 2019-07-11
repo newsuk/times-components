@@ -9,7 +9,7 @@ import ArticleSummary, {
 import { ArticleFlags } from "@times-components/article-flag";
 import { colours } from "@times-components/styleguide";
 import TileStar from "./tile-star";
-import { horizontalStyles, starPadding } from "./styles";
+import { horizontalStyles, starPaddingBottom } from "./styles";
 import { isSaveSupported } from "./utils";
 
 class TileSummary extends Component {
@@ -64,13 +64,22 @@ class TileSummary extends Component {
         headline: tileHeadline,
         article: { headline, shortHeadline }
       },
-      headlineStyle
+      headlineStyle,
+      withStar,
+      summary
     } = this.props;
+
+    const shouldAddBottomPadding =
+      Platform.OS === "android" && !withStar && !summary;
 
     return (
       <ArticleSummaryHeadline
         headline={tileHeadline || shortHeadline || headline}
-        style={headlineStyle}
+        style={
+          shouldAddBottomPadding
+            ? [headlineStyle, starPaddingBottom]
+            : headlineStyle
+        }
       />
     );
   }
@@ -86,7 +95,7 @@ class TileSummary extends Component {
   render() {
     const {
       tile: {
-        article: { hasVideo, label, section }
+        article: { hasVideo, label, section, expirableFlags }
       },
       bylines,
       bylineStyle,
@@ -96,6 +105,9 @@ class TileSummary extends Component {
       withStar,
       labelColour
     } = this.props;
+
+    const shouldAddBottomPadding =
+      Platform.OS === "android" && !withStar && expirableFlags && expirableFlags.length === 0;
 
     return (
       <ArticleSummary
@@ -112,9 +124,7 @@ class TileSummary extends Component {
           title: label
         }}
         strapline={strapline ? this.renderStrapline() : undefined}
-        style={
-          Platform.os === "android" && !withStar ? [starPadding, style] : style
-        }
+        style={shouldAddBottomPadding ? [starPaddingBottom, style] : style}
       />
     );
   }
