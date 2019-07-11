@@ -18,7 +18,7 @@ function ArticleMeta({
 }) {
   return (
     <View style={[styles.articleMeta, isTablet && styles.articleMetaTablet]}>
-      {hasBylineData(bylines) ? (
+      {hasBylineData(bylines) && (
         <View style={styles.articleMetaElementWithBorder}>
           <Text style={styles.datePublication}>
             <ArticleBylineWithLinks
@@ -27,7 +27,7 @@ function ArticleMeta({
             />
           </Text>
         </View>
-      ) : null}
+      )}
       <View
         style={
           hasBylineData(bylines)
