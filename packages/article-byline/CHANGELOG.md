@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.91](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.1.90...@times-components/article-byline@3.1.91) (2019-07-11)
+
+
+### Bug Fixes
+
+* tighten up byline data validation ([#2106](https://github.com/newsuk/times-components/issues/2106)) ([7375062](https://github.com/newsuk/times-components/commit/7375062))
+
+
+
+
+
 ## [3.1.90](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.1.89...@times-components/article-byline@3.1.90) (2019-07-10)
 
 **Note:** Version bump only for package @times-components/article-byline
