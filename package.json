@@ -5,7 +5,7 @@
   "description": "A collection of presentational components for The Times and Sunday Times",
   "main": "index.js",
   "engines": {
-    "node": ">=8.10.0 <10",
+    "node": ">=8.10.0 <12",
     "yarn": "1.16.0"
   },
   "bin": {
@@ -142,6 +142,7 @@
     "mkdirp": "0.5.1",
     "mockdate": "2.0.2",
     "node-fetch": "2.2.0",
+    "opentype.js": "1.1.0",
     "prettier": "1.14.3",
     "prop-types": "15.7.2",
     "react": "16.8.6",

@@ -1,5 +1,6 @@
 import { MarkupFactory } from "../src/text-flow";
 import FontLoader from "../src/Text/FontLoader";
+import Roboto from "../lib/Roboto-Regular-metrics";
 
 const { Bold, Italic, Body, Link } = MarkupFactory({
   bodyFont: "TimesDigitalW04-Regular",
@@ -13,7 +14,7 @@ export default () => {
       "TimesDigitalW04-Regular",
       "TimesDigitalW04-Bold",
       "TimesDigitalW04-Italic"
-    ].forEach(name => FontLoader.loadFont(name));
+    ].forEach(name => FontLoader.loadFont(name, Roboto));
   });
 
   it("MarkupString returns characters", () => {

@@ -17,8 +17,7 @@
     "watch": "watch 'yarn bundle' ./src --ignoreDotFiles --ignoreUnreadable",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist",
-    "bundle": "NODE_ENV=production webpack -p",
-    "postinstall": "./lib/process-fonts.sh"
+    "bundle": "NODE_ENV=production webpack -p"
   },
   "repository": {
     "type": "git",
@@ -57,7 +56,8 @@
     "react": ">=16.5",
     "react-dom": ">=16.5",
     "react-native": ">=0.55",
-    "react-native-web": "0.11.4"
+    "react-native-web": "0.11.4",
+    "opentype.js": "1.1.0"
   },
   "publishConfig": {
     "access": "public"

@@ -82,9 +82,9 @@ export default class Word extends Container {
       ...(this.hasSpace
         ? [
             new Glue({
-              shrink: this.spaceOffset / 2,
-              stretch: this.spaceOffset,
-              width: this.spaceOffset
+              shrink: (this.spaceOffset * this.children[0].size) / 6,
+              stretch: (this.spaceOffset * this.children[0].size) / 9,
+              width: (this.spaceOffset * this.children[0].size)
             })
           ]
         : [])
