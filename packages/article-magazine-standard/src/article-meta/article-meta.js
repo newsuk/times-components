@@ -1,7 +1,10 @@
 import React from "react";
 import { Text, View } from "react-native";
 import PropTypes from "prop-types";
-import { ArticleBylineWithLinks } from "@times-components/article-byline";
+import {
+  ArticleBylineWithLinks,
+  hasBylineData
+} from "@times-components/article-byline";
 import Context from "@times-components/context";
 import DatePublication from "@times-components/date-publication";
 import { colours } from "@times-components/styleguide";
@@ -19,7 +22,7 @@ const ArticleMeta = ({
   publishedTime
 }) => (
   <View style={[styles.metaContainer, isTablet && styles.metaContainerTablet]}>
-    {bylines.length && (
+    {hasBylineData(bylines) && (
       <View style={[styles.meta, isTablet && styles.metaTablet]}>
         <Context.Consumer>
           {({ theme: { sectionColour } }) => (

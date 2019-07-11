@@ -111,6 +111,7 @@ exports[`1. a full article 1`] = `
       SOME CREDITS
     </figcaption>
   </figure>
+  Some byline
   <time
     dateTime="2015-03-13T18:54:58.000Z"
   >

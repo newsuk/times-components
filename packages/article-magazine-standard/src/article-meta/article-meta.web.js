@@ -1,5 +1,8 @@
 import React, { Fragment } from "react";
-import { ArticleBylineWithLinks } from "@times-components/article-byline";
+import {
+  ArticleBylineWithLinks,
+  hasBylineData
+} from "@times-components/article-byline";
 import Context from "@times-components/context";
 import DatePublication from "@times-components/date-publication";
 import { colours } from "@times-components/styleguide";
@@ -15,7 +18,7 @@ import styles from "../styles";
 
 const ArticleMeta = ({ bylines, publicationName, publishedTime }) => (
   <MetaContainer>
-    {bylines.length && (
+    {hasBylineData(bylines) && (
       <Fragment>
         <Meta style={styles.meta}>
           <Context.Consumer>
