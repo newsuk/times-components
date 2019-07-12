@@ -1,8 +1,15 @@
 /* eslint-env browser */
 import React from "react";
+import styled, { css } from "styled-components";
 import { createScopedGlobalStyle } from "@times-components/storybook";
 import { breakpoints } from "@times-components/styleguide";
-import Sticky, { StickyProvider, STICKY_CLASS_NAME } from "./src/sticky";
+import Sticky, {
+  STICKY_CLASS_NAME,
+  StickyProvider,
+  selectors,
+  computeProgressStyles,
+  mediaQuery
+} from "./src/sticky";
 
 const Styles = createScopedGlobalStyle`
   .bar {
@@ -26,7 +33,7 @@ const Styles = createScopedGlobalStyle`
     position: relative;
   }
 
-  .${STICKY_CLASS_NAME} {
+  .bar.${STICKY_CLASS_NAME} {
     background: blue;
   }
 
@@ -42,6 +49,20 @@ const Styles = createScopedGlobalStyle`
   .with-fixed .container {
     margin-top: 30px;
   }
+`;
+
+const ScrollProgressBar = styled.div`
+  height: 200px;
+  background: red;
+  margin: 30px auto;
+
+  ${selectors.sticky(css`
+    background: blue;
+  `)} ${computeProgressStyles(
+    progress => css`
+      opacity: ${1 - progress};
+    `
+  )};
 `;
 
 export default {
@@ -246,8 +267,108 @@ export default {
       type: "story"
     },
     {
+      component: () => (
+        <div className="with-fixed">
+          <Styles />
+          <div className="bar fixed" />
+          <StickyProvider className="container">
+            <h2>Scroll down…</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet
+              assumenda autem dolorem dolores eligendi error ipsam itaque
+              laborum odit officia perspiciatis praesentium provident quaerat
+              qui reiciendis, sunt vel vitae?
+            </p>
+            <Sticky Component={ScrollProgressBar}>
+              <div className="sticky-content">Content</div>
+            </Sticky>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet
+              assumenda autem dolorem dolores eligendi error ipsam itaque
+              laborum odit officia perspiciatis praesentium provident quaerat
+              qui reiciendis, sunt vel vitae?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet
+              assumenda autem dolorem dolores eligendi error ipsam itaque
+              laborum odit officia perspiciatis praesentium provident quaerat
+              qui reiciendis, sunt vel vitae?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet
+              assumenda autem dolorem dolores eligendi error ipsam itaque
+              laborum odit officia perspiciatis praesentium provident quaerat
+              qui reiciendis, sunt vel vitae?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet
+              assumenda autem dolorem dolores eligendi error ipsam itaque
+              laborum odit officia perspiciatis praesentium provident quaerat
+              qui reiciendis, sunt vel vitae?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet
+              assumenda autem dolorem dolores eligendi error ipsam itaque
+              laborum odit officia perspiciatis praesentium provident quaerat
+              qui reiciendis, sunt vel vitae?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet
+              assumenda autem dolorem dolores eligendi error ipsam itaque
+              laborum odit officia perspiciatis praesentium provident quaerat
+              qui reiciendis, sunt vel vitae?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet
+              assumenda autem dolorem dolores eligendi error ipsam itaque
+              laborum odit officia perspiciatis praesentium provident quaerat
+              qui reiciendis, sunt vel vitae?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet
+              assumenda autem dolorem dolores eligendi error ipsam itaque
+              laborum odit officia perspiciatis praesentium provident quaerat
+              qui reiciendis, sunt vel vitae?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet
+              assumenda autem dolorem dolores eligendi error ipsam itaque
+              laborum odit officia perspiciatis praesentium provident quaerat
+              qui reiciendis, sunt vel vitae?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet
+              assumenda autem dolorem dolores eligendi error ipsam itaque
+              laborum odit officia perspiciatis praesentium provident quaerat
+              qui reiciendis, sunt vel vitae?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet
+              assumenda autem dolorem dolores eligendi error ipsam itaque
+              laborum odit officia perspiciatis praesentium provident quaerat
+              qui reiciendis, sunt vel vitae?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet
+              assumenda autem dolorem dolores eligendi error ipsam itaque
+              laborum odit officia perspiciatis praesentium provident quaerat
+              qui reiciendis, sunt vel vitae?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet
+              assumenda autem dolorem dolores eligendi error ipsam itaque
+              laborum odit officia perspiciatis praesentium provident quaerat
+              qui reiciendis, sunt vel vitae?
+            </p>
+          </StickyProvider>
+        </div>
+      ),
+      name: "Sticky with scroll progress",
+      type: "story"
+    },
+    {
       component: () => {
-        const mql = window.matchMedia(`(max-width: ${breakpoints.wide}px)`);
+        const shouldBeSticky = mediaQuery(`(max-width: ${breakpoints.wide}px)`);
 
         return (
           <div className="with-fixed">
@@ -261,7 +382,7 @@ export default {
                 laborum odit officia perspiciatis praesentium provident quaerat
                 qui reiciendis, sunt vel vitae?
               </p>
-              <Sticky className="bar" shouldBeSticky={() => mql.matches}>
+              <Sticky className="bar" shouldBeSticky={shouldBeSticky}>
                 <div className="sticky-content">Content</div>
               </Sticky>
               <p>

@@ -3,10 +3,10 @@
 
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { isOutOfView } from "./util";
-import { withStickyContext, StickyProvider, defaultContext } from "./context";
-
-export const STICKY_CLASS_NAME = "tc-sticky";
+import { getTopFromBody, isOutOfView } from "./util";
+import { defaultContext, withStickyContext } from "./context";
+import { applyProgressAttr } from "./progress-styles";
+import { CONTAINS_STICKY_CLASSNAME, STICKY_CLASS_NAME } from "./selectors";
 
 class UnwrappedSticky extends Component {
   constructor(props) {
@@ -26,6 +26,8 @@ class UnwrappedSticky extends Component {
   }
 
   componentDidUpdate() {
+    delete this.placeholderBox;
+
     if (this.isSticky) {
       this.setSticky(false);
     }
@@ -69,20 +71,37 @@ class UnwrappedSticky extends Component {
       document.body.appendChild(container);
 
       placeholder.style.cssText += `
-        margin-top: ${styles.marginTop};
-        margin-bottom: ${styles.marginBottom};
-        height: ${styles.height};
+        margin-top: ${styles.marginTop || 0};
+        margin-bottom: ${styles.marginBottom || 0};
+        height: ${styles.height || 0};
         display: block;
       `;
+
+      placeholder.parentNode.classList.add(CONTAINS_STICKY_CLASSNAME);
 
       this.updateSizer();
     } else {
       component.classList.remove(STICKY_CLASS_NAME);
+      placeholder.parentNode.classList.remove(CONTAINS_STICKY_CLASSNAME);
       placeholder.parentNode.insertBefore(container, placeholder.nextSibling);
       placeholder.style.display = "none";
       container.setAttribute("style", "");
       sizer.setAttribute("style", "");
     }
+  }
+
+  setScrollProgressPercent(percent) {
+    if (percent === this.placeholderProgress) {
+      return;
+    }
+
+    this.placeholderProgress = percent;
+
+    applyProgressAttr(this.component, percent);
+  }
+
+  doesStickyNeedUpdating(shouldBeSticky) {
+    return shouldBeSticky !== this.isSticky;
   }
 
   createContainerRef(node) {
@@ -101,28 +120,53 @@ class UnwrappedSticky extends Component {
     }
   }
 
-  doesStickyNeedUpdating(shouldBeSticky) {
-    return shouldBeSticky !== this.isSticky;
-  }
-
   updateSticky() {
     const { stickyContext, shouldBeSticky } = this.props;
-    const { container, placeholder, isSticky } = this;
+    const { component, placeholder, isSticky } = this;
 
-    if (!container || !placeholder) {
+    if (!placeholder || !component) {
       return;
     }
 
     const shouldCurrentlyBeSticky =
       shouldBeSticky() &&
-      isOutOfView(isSticky ? placeholder : container, stickyContext.top);
+      isOutOfView(isSticky ? placeholder : component, stickyContext.top);
 
     if (this.doesStickyNeedUpdating(shouldCurrentlyBeSticky)) {
       this.setSticky(shouldCurrentlyBeSticky);
     }
+
+    this.trackScrollProgress();
+  }
+
+  trackScrollProgress() {
+    const { isSticky } = this;
+
+    if (!isSticky) {
+      delete this.placeholderBox;
+
+      this.setScrollProgressPercent(0);
+
+      return;
+    }
+
+    if (!this.placeholderBox) {
+      this.placeholderBox = {
+        top: Math.abs(getTopFromBody(this.placeholder)),
+        height: this.placeholder.offsetHeight
+      };
+    }
+
+    const { top, height } = this.placeholderBox;
+    const distance = window.pageYOffset - top;
+    const percent = Math.max(0, Math.min(1, distance / height));
+
+    this.setScrollProgressPercent(percent);
   }
 
   updateStickyOnResize() {
+    delete this.placeholderBox;
+
     this.updateSticky();
     this.updateSizer();
   }
@@ -136,6 +180,8 @@ class UnwrappedSticky extends Component {
       sizer.style.cssText += `
         width: ${rect.width}px;
         margin-left: ${rect.left}px;
+        height: 100%;
+        box-sizing: border-box;
       `;
     }
   }
@@ -158,7 +204,9 @@ class UnwrappedSticky extends Component {
 UnwrappedSticky.displayName = "Sticky";
 
 UnwrappedSticky.propTypes = {
-  Component: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),
+  // @todo Update prop-types and eslint to avoid needing to disable this rule
+  // eslint-disable-next-line react/no-typos
+  Component: PropTypes.elementType,
   style: PropTypes.object,
   className: PropTypes.string,
   children: PropTypes.node,
@@ -181,16 +229,11 @@ UnwrappedSticky.defaultProps = {
 
 const Sticky = withStickyContext(UnwrappedSticky);
 
-const matchMedia =
-  (typeof window !== "undefined" && window.matchMedia) ||
-  (() => ({ matches: true }));
+export { mediaQuery } from "./util";
+export { computeProgressStyles } from "./progress-styles";
+export { selectors } from "./selectors";
+export { StickyProvider } from "./context";
 
-Sticky.mediaQuery = query => {
-  const mql = matchMedia(query);
-
-  return () => mql.matches;
-};
-
-export { UnwrappedSticky, StickyProvider };
+export { UnwrappedSticky, STICKY_CLASS_NAME };
 
 export default Sticky;
