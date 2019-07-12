@@ -12,8 +12,15 @@ import "./mocks.native";
 import Responsive from "@times-components/responsive";
 import { setIsTablet } from "@times-components/mocks/dimensions";
 
+import { Text } from "@times-components/text-flow";
+import { Roboto } from "@times-components/test-utils";
 import articleFixture from "../fixtures/full-article";
 import shared, { renderArticle, fixtureArgs } from "./shared.base";
+
+Text.FontLoader.loadFont("TimesDigitalW04", Roboto);
+Text.FontLoader.loadFont("TimesModern-Regular", Roboto);
+Text.FontLoader.loadFont("TimesDigitalW04-Bold", Roboto);
+Text.FontLoader.loadFont("TimesDigitalW04-Italic", Roboto);
 
 export default () => {
   addSerializers(

@@ -10,7 +10,6 @@ import Linebreak, { infinity } from "./Linebreak";
 import Penalty from "./Penalty";
 import Glue from "./Glue";
 import Box from "./Box";
-import fonts from "./fonts"
 
 export default class Text extends Container {
   markup = [];
@@ -77,7 +76,6 @@ export default class Text extends Container {
     if (props.width) {
       this.lineWidths = [props.width];
     }
-    Object.keys(fonts).forEach(name => FontLoader.loadFont(name))
     this.layout();
   }
 
@@ -164,7 +162,7 @@ export default class Text extends Container {
     // loop over characters
     // place into words
     for (let i = 0; i < len; i += 1) {
-      const currentStyle = this.characters[i].style || defaultStyle;
+      const currentStyle = this.characters[i].style;
       // newline
       // mark word as having newline
       // create new word
@@ -186,12 +184,6 @@ export default class Text extends Container {
         continue
       }
 
-      // runtime test for font
-      if (FontLoader.isLoaded(currentStyle.font) === false) {
-        FontLoader.load(this, [currentStyle.font]);
-        return false;
-      }
-
       // create character
       char = new Character(this.characters[i].character, currentStyle, i);
       char.href = this.characters[i].href;
@@ -211,64 +203,6 @@ export default class Text extends Container {
         vPosition = char.measuredHeight;
       }
 
-      // swap character if ligature
-      // ligatures removed if tracking or this.ligatures is false
-      if (currentStyle.tracking === 0 && this.ligatures === true) {
-        // 1 char match
-        const ligTarget = [
-          this.characters[i].character,
-          this.characters[i + 1].character,
-          this.characters[i + 2].character,
-          this.characters[i + 3].character
-        ].join("");
-        if (char.fontInstance.ligatures[ligTarget.charAt(0)]) {
-          // 2 char match
-          if (
-            char.fontInstance.ligatures[ligTarget.charAt(0)][
-              ligTarget.charAt(1)
-            ]
-          ) {
-            // 3 char match
-            if (
-              char.fontInstance.ligatures[ligTarget.charAt(0)][
-                ligTarget.charAt(1)
-              ][ligTarget.charAt(2)]
-            ) {
-              // 4 char match
-              if (
-                char.fontInstance.ligatures[ligTarget.charAt(0)][
-                  ligTarget.charAt(1)
-                ][ligTarget.charAt(2)][ligTarget.charAt(3)]
-              ) {
-                // swap 4 char ligature
-                char.setGlyph(
-                  char.fontInstance.ligatures[ligTarget.charAt(0)][
-                    ligTarget.charAt(1)
-                  ][ligTarget.charAt(2)][ligTarget.charAt(3)].glyph
-                );
-                i += 3;
-              } else {
-                // swap 3 char ligature
-                char.setGlyph(
-                  char.fontInstance.ligatures[ligTarget.charAt(0)][
-                    ligTarget.charAt(1)
-                  ][ligTarget.charAt(2)].glyph
-                );
-                i += 2;
-              }
-            } else {
-              // swap 2 char ligature
-              char.setGlyph(
-                char.fontInstance.ligatures[ligTarget.charAt(0)][
-                  ligTarget.charAt(1)
-                ].glyph
-              );
-              i += 1;
-            }
-          }
-        }
-      }
-
       char.x = hPosition;
 
       // push character into word
@@ -280,7 +214,7 @@ export default class Text extends Container {
       // space character
       if (this.characters[i].character === " ") {
         currentWord.hasSpace = true;
-        currentWord.spaceOffset = char.glyph.offset * char.size;
+        currentWord.spaceOffset = char.glyph.offset;
         hPosition =
           char.x +
           char.glyph.offset * char.size +

@@ -114,6 +114,8 @@ const renderText = (block, inlined = false) => {
           return (
             <Text
               selectable
+              numberOfLines={1}
+              ellipsizeMode="clip"
               style={{
                 left: span.x,
                 ...style,
@@ -260,7 +262,7 @@ class ArticleSkeleton extends Component {
           width: Math.min(maxWidth, width)
         })
       ),
-      width: Math.min(tabletWidth, screenWidth()) - 10
+      width: Math.min(tabletWidth, screenWidth())
     });
 
     receiveChildList(articleData);

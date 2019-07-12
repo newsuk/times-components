@@ -7,9 +7,15 @@ import {
   minimaliseTransform,
   minimalNativeTransform
 } from "@times-components/jest-serializer";
-import { iterator } from "@times-components/test-utils";
+import { iterator, Roboto } from "@times-components/test-utils";
 import "./mocks.native";
+import { Text } from "@times-components/text-flow";
 import snapshotTests from "./scaling.base";
+
+Text.FontLoader.loadFont("TimesDigitalW04", Roboto);
+Text.FontLoader.loadFont("TimesModern-Regular", Roboto);
+Text.FontLoader.loadFont("TimesDigitalW04-Bold", Roboto);
+Text.FontLoader.loadFont("TimesDigitalW04-Italic", Roboto);
 
 export default () => {
   addSerializers(
