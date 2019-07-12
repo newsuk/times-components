@@ -3,6 +3,7 @@ import { View, Text } from "react-native";
 import PropTypes from "prop-types";
 import renderer from "react-test-renderer";
 import { mount } from "enzyme";
+import { delay } from "@times-components/test-utils";
 import { withTrackScrollDepth } from "../src/tracking";
 import withTestContext from "./test-tracking-context";
 import sharedTrackingTests from "./shared-tracking-tests";
@@ -95,12 +96,24 @@ class ListComponent extends Component {
 module.exports = () => {
   describe("WithTrackScrollDepth", () => {
     let realGetElementById;
+    let eventMap;
 
     beforeEach(() => {
       global.window.IntersectionObserver = FakeIntersectionObserver;
 
       realGetElementById = global.window.document.getElementById;
       global.window.document.getElementById = stubGetElementById;
+      eventMap = {};
+
+      global.window.addEventListener = jest.fn((eventName, callback) => {
+        eventMap[eventName] = callback;
+      });
+
+      global.window.removeEventListener = jest.fn(eventName => {
+        delete eventMap[eventName];
+      });
+
+      global.window.pageYOffset = 0;
     });
 
     afterEach(() => {
@@ -109,9 +122,12 @@ module.exports = () => {
       global.window.document.getElementById = realGetElementById;
 
       FakeIntersectionObserver.clearObserving();
+
+      global.window.addEventListener = global.window.addEventListener;
+      global.window.removeEventListener = global.window.removeEventListener;
     });
 
-    it("tracks scroll depth", () => {
+    it("does not tracks scroll depth without scroll", () => {
       const reporter = jest.fn();
       const ListWithChildTracking = withTestContext(
         withTrackScrollDepth(ListComponent),
@@ -149,7 +165,7 @@ module.exports = () => {
       expect(reporter.mock.calls).toMatchSnapshot();
     });
 
-    it("tracks scroll depth after update", () => {
+    it("tracks scroll depth after update", async () => {
       const reporter = jest.fn();
       const ListWithChildTracking = withTestContext(
         withTrackScrollDepth(ListComponent),
@@ -181,6 +197,12 @@ module.exports = () => {
         <ListWithChildTracking analyticsStream={reporter} items={items} />
       );
 
+      global.window.pageYOffset = 9;
+
+      await delay(1);
+
+      eventMap.scroll();
+
       FakeIntersectionObserver.dispatchObservedAll();
 
       component.setProps({
@@ -200,7 +222,7 @@ module.exports = () => {
       expect(reporter.mock.calls).toMatchSnapshot();
     });
 
-    it("accepts component name override", () => {
+    it("accepts component name override", async () => {
       const reporter = jest.fn();
       const ListWithChildTracking = withTestContext(
         withTrackScrollDepth(ListComponent, {
@@ -221,6 +243,12 @@ module.exports = () => {
         />
       );
 
+      global.window.pageYOffset = 9;
+
+      await delay(1);
+
+      eventMap.scroll();
+
       FakeIntersectionObserver.dispatchObservedAll();
 
       expect(reporter).toHaveBeenCalledWith(
@@ -230,7 +258,7 @@ module.exports = () => {
       );
     });
 
-    it("applies tracking attrs", () => {
+    it("applies tracking attrs", async () => {
       const reporter = jest.fn();
       const ListWithChildTracking = withTestContext(
         withTrackScrollDepth(ListComponent, {
@@ -248,6 +276,12 @@ module.exports = () => {
         />
       );
 
+      global.window.pageYOffset = 9;
+
+      await delay(1);
+
+      eventMap.scroll();
+
       FakeIntersectionObserver.dispatchObservedAll();
 
       expect(reporter).toHaveBeenCalledWith(
@@ -260,7 +294,7 @@ module.exports = () => {
       );
     });
 
-    it("emits events including scroll depth", () => {
+    it("emits events including scroll depth", async () => {
       const reporter = jest.fn();
       const ListWithChildTracking = withTestContext(
         withTrackScrollDepth(ListComponent)
@@ -283,6 +317,12 @@ module.exports = () => {
           ]}
         />
       );
+
+      global.window.pageYOffset = 9;
+
+      await delay(1);
+
+      eventMap.scroll();
 
       FakeIntersectionObserver.dispatchObservedAll();
 

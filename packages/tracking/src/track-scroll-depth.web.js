@@ -32,9 +32,7 @@ export default (
     }
 
     componentDidMount() {
-      console.log('componentDidMount>>>>')
       window.addEventListener("scroll", () => {
-        console.log('scroll triggered>>>>')
         this.isOnScroll = true;
       });
       this.observeChildren();
