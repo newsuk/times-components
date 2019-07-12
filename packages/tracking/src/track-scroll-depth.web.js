@@ -15,6 +15,7 @@ export default (
     constructor(props, context) {
       super(props, context);
       this.receiveChildList = this.receiveChildList.bind(this);
+      this.updateOnScroll = this.updateOnScroll.bind(this);
       this.childData = {};
       this.isOnScroll = false;
       this.viewed = new Set();
@@ -32,9 +33,7 @@ export default (
     }
 
     componentDidMount() {
-      window.addEventListener("scroll", () => {
-        this.isOnScroll = true;
-      });
+      window.addEventListener("scroll", this.updateOnScroll);
       this.observeChildren();
     }
 
@@ -43,6 +42,7 @@ export default (
     }
 
     componentWillUnmount() {
+      window.removeEventListener("scroll", this.updateOnScroll);
       if (this.observer) {
         this.observer.disconnect();
       }
@@ -77,6 +77,10 @@ export default (
         },
         component: `${trackingName || componentName}Child`
       });
+    }
+
+    updateOnScroll() {
+      this.isOnScroll = true;
     }
 
     receiveChildList(childList) {

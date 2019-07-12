@@ -3,7 +3,6 @@ import { View, Text } from "react-native";
 import PropTypes from "prop-types";
 import renderer from "react-test-renderer";
 import { mount } from "enzyme";
-import { delay } from "@times-components/test-utils";
 import { withTrackScrollDepth } from "../src/tracking";
 import withTestContext from "./test-tracking-context";
 import sharedTrackingTests from "./shared-tracking-tests";
@@ -112,8 +111,6 @@ module.exports = () => {
       global.window.removeEventListener = jest.fn(eventName => {
         delete eventMap[eventName];
       });
-
-      global.window.pageYOffset = 0;
     });
 
     afterEach(() => {
@@ -197,10 +194,6 @@ module.exports = () => {
         <ListWithChildTracking analyticsStream={reporter} items={items} />
       );
 
-      global.window.pageYOffset = 9;
-
-      await delay(1);
-
       eventMap.scroll();
 
       FakeIntersectionObserver.dispatchObservedAll();
@@ -243,10 +236,6 @@ module.exports = () => {
         />
       );
 
-      global.window.pageYOffset = 9;
-
-      await delay(1);
-
       eventMap.scroll();
 
       FakeIntersectionObserver.dispatchObservedAll();
@@ -275,10 +264,6 @@ module.exports = () => {
           items={[{ someKey: "1", someValue: "one" }]}
         />
       );
-
-      global.window.pageYOffset = 9;
-
-      await delay(1);
 
       eventMap.scroll();
 
@@ -317,10 +302,6 @@ module.exports = () => {
           ]}
         />
       );
-
-      global.window.pageYOffset = 9;
-
-      await delay(1);
 
       eventMap.scroll();
 
