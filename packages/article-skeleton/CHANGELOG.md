@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.10.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.9.33...@times-components/article-skeleton@1.10.0) (2019-07-12)
+
+
+### Features
+
+* (REPLAT-6991) remove python dependency ([#2117](https://github.com/newsuk/times-components/issues/2117)) ([b092d65](https://github.com/newsuk/times-components/commit/b092d65))
+
+
+
+
+
 ## [1.9.33](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.9.32...@times-components/article-skeleton@1.9.33) (2019-07-12)
 
 **Note:** Version bump only for package @times-components/article-skeleton

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.3.0](https://github.com/newsuk/times-components/compare/@times-components/test-utils@2.2.44...@times-components/test-utils@2.3.0) (2019-07-12)
+
+
+### Features
+
+* (REPLAT-6991) remove python dependency ([#2117](https://github.com/newsuk/times-components/issues/2117)) ([b092d65](https://github.com/newsuk/times-components/commit/b092d65))
+
+
+
+
+
 ## [2.2.44](https://github.com/newsuk/times-components/compare/@times-components/test-utils@2.2.43...@times-components/test-utils@2.2.44) (2019-06-24)
 
 **Note:** Version bump only for package @times-components/test-utils

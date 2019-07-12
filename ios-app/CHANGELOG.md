@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.7.231...@times-components/ios-app@0.8.0) (2019-07-12)
+
+
+### Features
+
+* (REPLAT-6991) remove python dependency ([#2117](https://github.com/newsuk/times-components/issues/2117)) ([b092d65](https://github.com/newsuk/times-components/commit/b092d65))
+
+
+
+
+
 ## [0.7.231](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.7.230...@times-components/ios-app@0.7.231) (2019-07-12)
 
 **Note:** Version bump only for package @times-components/ios-app
