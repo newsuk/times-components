@@ -464,8 +464,8 @@ exports[`4. iconstar renders 1`] = `
     }
   }
   title="IconStar"
-  vbHeight={20}
-  vbWidth={21}
+  vbHeight={18}
+  vbWidth={18}
   width={20}
 >
   <RNSVGGroup
@@ -509,7 +509,7 @@ exports[`4. iconstar renders 1`] = `
     y={0}
   >
     <RNSVGPath
-      d="53af37f285b7e6e57da32c1366718e90"
+      d="20db890d0ec5651ed550568cd37b5875"
       fill={
         Array [
           0,

@@ -1,80 +1,64 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`save and share bar component email icon when tokenising with loading state while network request is fetching data 1`] = `
-Array [
+<BarItem>
   <div
-    className="css-text-901oao"
+    aria-valuemax="1"
+    aria-valuemin="0"
+    className="css-view-1dbjc4n r-alignItems-1awozwy r-justifyContent-1777fci"
+    role="progressbar"
     style={
       Object {
-        "color": "rgba(105,105,105,1.00)",
-        "fontFamily": "GillSansMTStd-Medium",
-        "fontSize": "14px",
-        "lineHeight": "14px",
-        "marginRight": "10px",
+        "borderBottomLeftRadius": "9999px",
+        "borderBottomRightRadius": "9999px",
+        "borderTopLeftRadius": "9999px",
+        "borderTopRightRadius": "9999px",
+        "height": "40px",
+        "overflowX": "hidden",
+        "overflowY": "hidden",
+        "width": "40px",
       }
     }
   >
-    Share
-  </div>,
-  <BarItem>
     <div
-      aria-valuemax="1"
-      aria-valuemin="0"
-      className="css-view-1dbjc4n r-alignItems-1awozwy r-justifyContent-1777fci"
-      role="progressbar"
-      style={
-        Object {
-          "borderBottomLeftRadius": "9999px",
-          "borderBottomRightRadius": "9999px",
-          "borderTopLeftRadius": "9999px",
-          "borderTopRightRadius": "9999px",
-          "height": "40px",
-          "overflowX": "hidden",
-          "overflowY": "hidden",
-          "width": "40px",
-        }
-      }
+      className="css-view-1dbjc4n r-animationDuration-17bb2tj r-animationIterationCount-1muvv40 r-animationKeyframes-127358a r-animationTimingFunction-1ldzwu0 r-height-z80fyv r-width-19wmn03"
     >
-      <div
-        className="css-view-1dbjc4n r-animationDuration-17bb2tj r-animationIterationCount-1muvv40 r-animationKeyframes-127358a r-animationTimingFunction-1ldzwu0 r-height-z80fyv r-width-19wmn03"
+      <svg
+        height="100%"
+        viewBox="0 0 32 32"
+        width="100%"
       >
-        <svg
-          height="100%"
-          viewBox="0 0 32 32"
-          width="100%"
-        >
-          <circle
-            cx="16"
-            cy="16"
-            fill="none"
-            r="14"
-            strokeWidth="4"
-            style={
-              Object {
-                "opacity": 0.2,
-                "stroke": "#1976D2",
-              }
+        <circle
+          cx="16"
+          cy="16"
+          fill="none"
+          r="14"
+          strokeWidth="4"
+          style={
+            Object {
+              "opacity": 0.2,
+              "stroke": "#1976D2",
             }
-          />
-          <circle
-            cx="16"
-            cy="16"
-            fill="none"
-            r="14"
-            strokeWidth="4"
-            style={
-              Object {
-                "stroke": "#1976D2",
-                "strokeDasharray": 80,
-                "strokeDashoffset": 60,
-              }
+          }
+        />
+        <circle
+          cx="16"
+          cy="16"
+          fill="none"
+          r="14"
+          strokeWidth="4"
+          style={
+            Object {
+              "stroke": "#1976D2",
+              "strokeDasharray": 80,
+              "strokeDashoffset": 60,
             }
-          />
-        </svg>
-      </div>
+          }
+        />
+      </svg>
     </div>
-  </BarItem>,
-]
+  </div>
+</BarItem>
 `;
 
 exports[`save and share bar component save and share bar renders correctly when logged in 1`] = `
@@ -82,6 +66,8 @@ exports[`save and share bar component save and share bar renders correctly when 
   className="css-view-1dbjc4n"
   style={
     Object {
+      "WebkitAlignItems": "center",
+      "WebkitBoxAlign": "center",
       "WebkitBoxDirection": "normal",
       "WebkitBoxFlex": 1,
       "WebkitBoxOrient": "horizontal",
@@ -91,16 +77,21 @@ exports[`save and share bar component save and share bar renders correctly when 
       "WebkitFlexGrow": 1,
       "WebkitFlexShrink": 1,
       "WebkitJustifyContent": "space-between",
+      "alignItems": "center",
       "flexBasis": "0%",
       "flexDirection": "row",
       "flexGrow": 1,
       "flexShrink": 1,
+      "height": "100%",
       "justifyContent": "space-between",
+      "msFlexAlign": "center",
       "msFlexDirection": "row",
       "msFlexNegative": 1,
       "msFlexPack": "justify",
       "msFlexPositive": 1,
       "msFlexPreferredSize": "0%",
+      "paddingBottom": "10px",
+      "paddingTop": "10px",
     }
   }
 >
@@ -115,10 +106,9 @@ exports[`save and share bar component save and share bar renders correctly when 
         "WebkitFlexDirection": "row",
         "alignItems": "center",
         "flexDirection": "row",
+        "height": "40px",
         "msFlexAlign": "center",
         "msFlexDirection": "row",
-        "paddingBottom": "10px",
-        "paddingTop": "10px",
       }
     }
   >
@@ -126,11 +116,13 @@ exports[`save and share bar component save and share bar renders correctly when 
       className="css-text-901oao"
       style={
         Object {
+          "WebkitTransform": "translateY(9%)",
           "color": "rgba(105,105,105,1.00)",
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": "14px",
           "lineHeight": "14px",
           "marginRight": "10px",
+          "transform": "translateY(9%)",
         }
       }
     >
@@ -139,7 +131,7 @@ exports[`save and share bar component save and share bar renders correctly when 
     <BarItem>
       <IconEmail
         fillColour="currentColor"
-        height={15}
+        height={16}
         title="Share by email"
       />
     </BarItem>
@@ -149,7 +141,7 @@ exports[`save and share bar component save and share bar renders correctly when 
     >
       <IconTwitter
         fillColour="currentColor"
-        height={15}
+        height={16}
         title="Share on Twitter"
       />
     </BarItem>
@@ -169,7 +161,7 @@ exports[`save and share bar component save and share bar renders correctly when 
     >
       <IconCopyLink
         fillColour="currentColor"
-        height={15}
+        height={16}
         title="Copy link to clipboard"
       />
     </BarItem>
@@ -185,10 +177,9 @@ exports[`save and share bar component save and share bar renders correctly when 
         "WebkitFlexDirection": "row",
         "alignItems": "center",
         "flexDirection": "row",
+        "height": "40px",
         "msFlexAlign": "center",
         "msFlexDirection": "row",
-        "paddingBottom": "10px",
-        "paddingTop": "10px",
       }
     }
   >
@@ -202,6 +193,8 @@ exports[`save and share bar component save and share bar renders correctly when 
   className="css-view-1dbjc4n"
   style={
     Object {
+      "WebkitAlignItems": "center",
+      "WebkitBoxAlign": "center",
       "WebkitBoxDirection": "normal",
       "WebkitBoxFlex": 1,
       "WebkitBoxOrient": "horizontal",
@@ -211,16 +204,21 @@ exports[`save and share bar component save and share bar renders correctly when 
       "WebkitFlexGrow": 1,
       "WebkitFlexShrink": 1,
       "WebkitJustifyContent": "space-between",
+      "alignItems": "center",
       "flexBasis": "0%",
       "flexDirection": "row",
       "flexGrow": 1,
       "flexShrink": 1,
+      "height": "100%",
       "justifyContent": "space-between",
+      "msFlexAlign": "center",
       "msFlexDirection": "row",
       "msFlexNegative": 1,
       "msFlexPack": "justify",
       "msFlexPositive": 1,
       "msFlexPreferredSize": "0%",
+      "paddingBottom": "10px",
+      "paddingTop": "10px",
     }
   }
 >
@@ -235,10 +233,9 @@ exports[`save and share bar component save and share bar renders correctly when 
         "WebkitFlexDirection": "row",
         "alignItems": "center",
         "flexDirection": "row",
+        "height": "40px",
         "msFlexAlign": "center",
         "msFlexDirection": "row",
-        "paddingBottom": "10px",
-        "paddingTop": "10px",
       }
     }
   >
@@ -246,11 +243,13 @@ exports[`save and share bar component save and share bar renders correctly when 
       className="css-text-901oao"
       style={
         Object {
+          "WebkitTransform": "translateY(9%)",
           "color": "rgba(105,105,105,1.00)",
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": "14px",
           "lineHeight": "14px",
           "marginRight": "10px",
+          "transform": "translateY(9%)",
         }
       }
     >
@@ -259,7 +258,7 @@ exports[`save and share bar component save and share bar renders correctly when 
     <BarItem>
       <IconEmail
         fillColour="currentColor"
-        height={15}
+        height={16}
         title="Share by email"
       />
     </BarItem>
@@ -269,7 +268,7 @@ exports[`save and share bar component save and share bar renders correctly when 
     >
       <IconTwitter
         fillColour="currentColor"
-        height={15}
+        height={16}
         title="Share on Twitter"
       />
     </BarItem>
@@ -289,7 +288,7 @@ exports[`save and share bar component save and share bar renders correctly when 
     >
       <IconCopyLink
         fillColour="currentColor"
-        height={15}
+        height={16}
         title="Copy link to clipboard"
       />
     </BarItem>

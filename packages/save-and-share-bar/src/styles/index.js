@@ -1,10 +1,15 @@
 import { spacing, colours, fontFactory } from "@times-components/styleguide";
 
+const ICON_SIZE = 40;
+
 const styles = {
   container: {
     flex: 1,
     flexDirection: "row",
-    justifyContent: "space-between"
+    justifyContent: "space-between",
+    paddingVertical: spacing(2),
+    height: "100%",
+    alignItems: "center"
   },
   activityLoader: {
     borderRadius: 9999,
@@ -18,18 +23,22 @@ const styles = {
       fontSize: "meta"
     }),
     color: colours.functional.secondary,
-    marginRight: spacing(2)
+    marginRight: spacing(2),
+    transform: "translateY(9%)"
   },
   link: {
     base: `
       margin-left: ${spacing(1)};
-      border-radius: 9999px;
-      overflow: hidden;
-      text-align: center;
-      line-height: 45px;
-      height: 40px;
-      width: 40px;
       cursor: pointer;
+      border-radius: ${ICON_SIZE}px;
+      
+      &, > * {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: ${ICON_SIZE}px;
+        width: ${ICON_SIZE}px;
+      }
 
       &:hover {
         background-color: ${colours.functional.whiteGrey};
@@ -42,7 +51,7 @@ const styles = {
   rowItem: {
     alignItems: "center",
     flexDirection: "row",
-    paddingVertical: spacing(2)
+    height: ICON_SIZE
   },
   svgIcon: {
     fb: {
@@ -52,7 +61,7 @@ const styles = {
       height: 18
     },
     fillColour: colours.functional.secondary,
-    height: 15,
+    height: 16,
     hoverFillColour: colours.functional.brandColour,
     save: {
       fillColour: colours.functional.white,

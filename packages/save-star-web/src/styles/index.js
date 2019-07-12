@@ -1,5 +1,7 @@
 import { spacing, colours, fontFactory } from "@times-components/styleguide";
 
+const ICON_SIZE = 40;
+
 const styles = {
   activityLoader: {
     backgroundColor: colours.functional.whiteGrey,
@@ -15,18 +17,33 @@ const styles = {
       fontSize: "meta"
     }),
     color: colours.functional.secondary,
-    marginRight: spacing(2)
+    marginRight: spacing(2),
+    transform: "translateY(9%)",
+    textAlign: "right"
   },
   link: {
     base: `
       margin-left: ${spacing(1)};
-      border-radius: 9999px;
-      overflow: hidden;
-      text-align: center;
-      line-height: 45px;
-      height: 40px;
-      width: 40px;
-       &:hover {
+      cursor: pointer;
+      
+      &, > * {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: ${ICON_SIZE}px;
+        width: ${ICON_SIZE}px;
+        border-radius: ${ICON_SIZE}px;
+      }
+      
+      > * {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+      }
+
+      &:hover {
         background-color: ${colours.functional.whiteGrey};
       }
       &:active {

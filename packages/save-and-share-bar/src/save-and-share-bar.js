@@ -1,7 +1,7 @@
 /* eslint-env browser */
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { View, Clipboard } from "react-native";
+import { View, Clipboard, Text } from "react-native";
 import {
   IconFacebook,
   IconTwitter,
@@ -56,6 +56,7 @@ class SaveAndShareBar extends Component {
       <View style={styles.container}>
         {sharingEnabled && (
           <View style={styles.rowItem}>
+            <Text style={styles.label}>Share</Text>
             <SectionContext.Consumer>
               {({ publicationName }) => (
                 <UserState

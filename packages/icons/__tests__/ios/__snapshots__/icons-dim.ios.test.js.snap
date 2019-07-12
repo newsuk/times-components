@@ -37,7 +37,7 @@ exports[`4. iconstar sets a width when height is set 1`] = `
 <ARTSurfaceView
   style={
     Object {
-      "height": 47.61904761904762,
+      "height": 50,
       "width": 50,
     }
   }

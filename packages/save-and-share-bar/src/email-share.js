@@ -1,7 +1,7 @@
 /* eslint-env browser */
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { ActivityIndicator, Text } from "react-native";
+import { ActivityIndicator } from "react-native";
 import { IconEmail } from "@times-components/icons";
 import styles from "./styles";
 import BarItem from "./bar-item";
@@ -65,20 +65,17 @@ class EmailShare extends Component {
     const { isLoading } = this.state;
 
     return (
-      <Fragment>
-        <Text style={styles.label}>Share</Text>
-        <BarItem onPress={this.onShare}>
-          {isLoading ? (
-            <ActivityIndicator size="small" style={styles.activityLoader} />
-          ) : (
-            <IconEmail
-              fillColour="currentColor"
-              height={styles.svgIcon.height}
-              title="Share by email"
-            />
-          )}
-        </BarItem>
-      </Fragment>
+      <BarItem onPress={this.onShare}>
+        {isLoading ? (
+          <ActivityIndicator size="small" style={styles.activityLoader} />
+        ) : (
+          <IconEmail
+            fillColour="currentColor"
+            height={styles.svgIcon.height}
+            title="Share by email"
+          />
+        )}
+      </BarItem>
     );
   }
 }

@@ -62,14 +62,14 @@ exports[`4. iconstar renders 1`] = `
 <svg
   aria-label="[title]"
   role="img"
-  viewBox="d694bccd173b195f8a08c0256f451fd8"
+  viewBox="951cf65ef61fef616e498a37f3f5a9b1"
   width={20}
 >
   <title>
     IconStar
   </title>
   <path
-    d="53af37f285b7e6e57da32c1366718e90"
+    d="20db890d0ec5651ed550568cd37b5875"
     fill="#006699"
   />
 </svg>
