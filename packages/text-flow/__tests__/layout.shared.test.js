@@ -1,6 +1,6 @@
+import { Roboto } from "@times-components/test-utils";
 import { Text, Markup, Layout } from "../src/text-flow";
 import FontLoader from "../src/Text/FontLoader";
-import Roboto from "../lib/Roboto-Regular-metrics";
 
 export default () => {
   beforeAll(() => {

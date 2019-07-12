@@ -13,9 +13,9 @@ import Responsive from "@times-components/responsive";
 import { setIsTablet } from "@times-components/mocks/dimensions";
 
 import { Text } from "@times-components/text-flow";
+import { Roboto } from "@times-components/test-utils";
 import articleFixture from "../fixtures/full-article";
 import shared, { renderArticle, fixtureArgs } from "./shared.base";
-import Roboto from "./Roboto-Regular-metrics";
 
 Text.FontLoader.loadFont("TimesDigitalW04", Roboto);
 Text.FontLoader.loadFont("TimesModern-Regular", Roboto);

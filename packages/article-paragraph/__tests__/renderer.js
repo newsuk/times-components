@@ -7,8 +7,8 @@ import "./mock-text-measure-module";
 import { Text as FText, MarkupFactory } from "@times-components/text-flow";
 import { flow } from "@times-components/markup";
 import Responsive from "@times-components/responsive";
+import { Roboto } from "@times-components/test-utils";
 import ArticleParagraph from "../src";
-import Roboto from "./Roboto-Regular-metrics";
 
 FText.FontLoader.loadFont("TimesDigitalW04", Roboto);
 

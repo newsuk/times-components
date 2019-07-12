@@ -1,6 +1,6 @@
+import { Roboto } from "@times-components/test-utils";
 import { Text, MarkupFactory } from "../src/text-flow";
 import FontLoader from "../src/Text/FontLoader";
-import Roboto from "../lib/Roboto-Regular-metrics";
 
 const { Bold, Body } = MarkupFactory({
   bodyFont: "TimesDigitalW04-Regular",

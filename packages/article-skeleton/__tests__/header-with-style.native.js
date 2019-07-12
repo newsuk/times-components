@@ -8,8 +8,8 @@ import {
 } from "@times-components/jest-serializer";
 import "./mocks.native";
 import { Text } from "@times-components/text-flow";
+import { Roboto } from "@times-components/test-utils";
 import shared from "./header-with-style.base";
-import Roboto from "./Roboto-Regular-metrics";
 
 Text.FontLoader.loadFont("TimesDigitalW04", Roboto);
 Text.FontLoader.loadFont("TimesModern-Regular", Roboto);

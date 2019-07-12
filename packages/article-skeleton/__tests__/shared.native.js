@@ -11,12 +11,12 @@ import {
 import { TextLink } from "@times-components/link";
 import "./mocks.native";
 import { Text } from "@times-components/text-flow";
+import { Roboto } from "@times-components/test-utils";
 import shared from "./shared.base";
 import ArticleSkeleton from "../src/article-skeleton";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
 import articleSkeletonProps from "./shared-article-skeleton-props";
-import Roboto from "./Roboto-Regular-metrics";
 
 Text.FontLoader.loadFont("TimesDigitalW04", Roboto);
 Text.FontLoader.loadFont("TimesModern-Regular", Roboto);
