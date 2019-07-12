@@ -111,9 +111,19 @@ function getDailyRegister(count: number): Array<DailyUniversalRegisterItem> {
 
 function mockLeadOneAndFourSlice(): LeadOneAndFourSliceWithName {
   const tiles = getTiles(5);
+
+  const leadTile = {
+    ...tiles[0],
+    article: {
+      ...tiles[0].article,
+      hasVideo: true,
+      label: "short label centered"
+    }
+  };
+
   return <LeadOneAndFourSliceWithName>{
     name: "LeadOneAndFourSlice",
-    lead: tiles[0],
+    lead: leadTile,
     support1: tiles[1],
     support2: tiles[2],
     support3: tiles[3],

@@ -16,7 +16,7 @@ const styles = {
       font: "supporting",
       fontSize: "cardMetaMobile"
     }),
-    flex: 1,
+    flex: -1,
     fontWeight: "400",
     letterSpacing: 1.2,
     lineHeight: 11,
