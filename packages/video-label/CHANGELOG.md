@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.98](https://github.com/newsuk/times-components/compare/@times-components/video-label@2.2.97...@times-components/video-label@2.2.98) (2019-07-12)
+
+
+### Bug Fixes
+
+* REPLAT-6946 video label disappears when centred layout ([#2113](https://github.com/newsuk/times-components/issues/2113)) ([5b729dd](https://github.com/newsuk/times-components/commit/5b729dd))
+
+
+
+
+
 ## [2.2.97](https://github.com/newsuk/times-components/compare/@times-components/video-label@2.2.96...@times-components/video-label@2.2.97) (2019-07-04)
 
 **Note:** Version bump only for package @times-components/video-label

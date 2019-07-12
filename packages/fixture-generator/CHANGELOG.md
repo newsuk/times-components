@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.25.3](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.25.2...@times-components/fixture-generator@0.25.3) (2019-07-12)
+
+
+### Bug Fixes
+
+* REPLAT-6946 video label disappears when centred layout ([#2113](https://github.com/newsuk/times-components/issues/2113)) ([5b729dd](https://github.com/newsuk/times-components/commit/5b729dd))
+
+
+
+
+
 ## [0.25.2](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.25.1...@times-components/fixture-generator@0.25.2) (2019-06-24)
 
 **Note:** Version bump only for package @times-components/fixture-generator
