@@ -110,7 +110,6 @@
     "@react-native-community/eslint-config": "^0.0.5",
     "@storybook/addon-actions": "4.1.18",
     "@storybook/addon-info": "4.1.18",
-    "@storybook/addon-knobs": "4.1.18",
     "@storybook/addon-options": "4.1.18",
     "@storybook/addons": "4.1.18",
     "@storybook/react": "4.1.18",
@@ -165,7 +164,7 @@
     "@babel/runtime": "7.4.4",
     "@babel/runtime-corejs2": "7.4.4",
     "react-art": "16.6.3",
-    "react-native": "0.60.0",
+    "react-native": "0.60.2",
     "react-native-showcase-loader": "1.1.0"
   }
 }
