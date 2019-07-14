@@ -11,6 +11,10 @@ task sourceJar(type: Jar) {
     classifier "source"
 }
 
+project.ext.react = [
+    enableHermes: true
+]
+
 publishing {
     publications {
         xnative(MavenPublication) {

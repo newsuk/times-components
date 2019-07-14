@@ -15,8 +15,8 @@
     "@times-components/text-flow": "0.2.12",
     "prop-types": "15.7.2",
     "react": "16.9.0",
-    "react-native": "0.59.10",
     "react-native-device-info": "2.3.2",
+    "react-native": "0.60.2",
     "react-native-svg": "9.4.0",
     "react-native-webview": "5.10.0",
     "url-polyfill": "1.1.0"
