@@ -329,7 +329,7 @@ module.exports = () => {
       renderer
         .create(<ListWithChildTracking analyticsStream={() => {}} items={[]} />)
         .unmount();
-      
+
       expect(eventMap).toEqual({});
       expect(disconnectSpy).toHaveBeenCalled();
     });
