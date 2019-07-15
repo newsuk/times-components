@@ -77,10 +77,8 @@ const hugeBreakpointStyle = {
   },
   container: {
     alignItems: "center",
-    alignSelf: "center",
     backgroundColor: colours.functional.border,
-    flex: 1,
-    width: "86%"
+    flex: 1
   },
   rowItems: {
     flexDirection: "row",

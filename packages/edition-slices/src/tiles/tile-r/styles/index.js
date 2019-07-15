@@ -10,18 +10,11 @@ const headlineFontSizeResolver = {
   [editionBreakpoints.wide]: 45
 };
 
-const hugeScreenContainerStyle = {
-  width: "86%",
-  paddingHorizontal: spacing(0),
-  alignSelf: "center"
-};
-
 export default breakpoint => ({
   container: {
     paddingBottom: spacing(3),
     paddingHorizontal: spacing(4),
-    paddingTop: spacing(2),
-    ...(breakpoint === editionBreakpoints.huge && hugeScreenContainerStyle)
+    paddingTop: spacing(2)
   },
   headline: {
     fontFamily: fonts.headline,
