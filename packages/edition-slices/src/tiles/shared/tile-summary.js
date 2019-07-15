@@ -9,7 +9,11 @@ import ArticleSummary, {
 import { ArticleFlags } from "@times-components/article-flag";
 import { colours } from "@times-components/styleguide";
 import TileStar from "./tile-star";
-import { horizontalStyles, starPaddingBottom } from "./styles";
+import {
+  horizontalStyles,
+  starHeadlinePaddingBottom,
+  starTeaserPaddingBottom
+} from "./styles";
 import { isSaveSupported } from "./utils";
 
 class TileSummary extends Component {
@@ -76,7 +80,7 @@ class TileSummary extends Component {
         headline={tileHeadline || shortHeadline || headline}
         style={
           shouldAddBottomPadding
-            ? [headlineStyle, starPaddingBottom]
+            ? [headlineStyle, starHeadlinePaddingBottom]
             : headlineStyle
         }
       />
@@ -126,7 +130,9 @@ class TileSummary extends Component {
           title: label
         }}
         strapline={strapline ? this.renderStrapline() : undefined}
-        style={shouldAddBottomPadding ? [starPaddingBottom, style] : style}
+        style={
+          shouldAddBottomPadding ? [starTeaserPaddingBottom, style] : style
+        }
       />
     );
   }
