@@ -1,6 +1,6 @@
 import { css } from "styled-components";
 
-const PROGRESS_ATTR_NAME = "data-sticky-progress";
+export const PROGRESS_ATTR_NAME = "data-sticky-progress";
 
 export function applyProgressAttr(elem, percent) {
   if (percent) {

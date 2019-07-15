@@ -230,7 +230,7 @@ UnwrappedSticky.defaultProps = {
 const Sticky = withStickyContext(UnwrappedSticky);
 
 export { mediaQuery } from "./util";
-export { computeProgressStyles } from "./progress-styles";
+export { computeProgressStyles, PROGRESS_ATTR_NAME } from "./progress-styles";
 export { selectors } from "./selectors";
 export { StickyProvider } from "./context";
 

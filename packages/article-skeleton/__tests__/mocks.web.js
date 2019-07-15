@@ -48,6 +48,7 @@ jest.mock("@times-components/sticky", () => {
   return {
     __esModule: true,
     ...actualSticky,
-    computeProgressStyles: mockComputeProgressStyles
+    computeProgressStyles: mockComputeProgressStyles,
+    PROGRESS_ATTR_NAME: "MOCK-PROGRESS-SELECTOR"
   };
 });

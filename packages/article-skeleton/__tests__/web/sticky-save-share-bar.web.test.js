@@ -10,6 +10,9 @@ import {
   print,
   rnwTransform
 } from "@times-components/jest-serializer";
+
+import "../mocks.web";
+
 import StickySaveAndShareBar from "../../src/sticky-save-and-share-bar";
 
 window.matchMedia = jest.fn(() => ({ matches: true }));
@@ -17,10 +20,6 @@ window.matchMedia = jest.fn(() => ({ matches: true }));
 jest.mock("@times-components/save-and-share-bar", () => () =>
   "SaveAndShareBar"
 );
-jest.mock("@times-components/save-star-web", () => ({
-  __esModule: true,
-  saveApi: jest.fn()
-}));
 
 addSerializers(
   expect,

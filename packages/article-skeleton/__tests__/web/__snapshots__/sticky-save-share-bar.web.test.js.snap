@@ -11,19 +11,23 @@ exports[`StickySaveAndShareBar renders 1`] = `
           <Sticky>
             <div />
             <div>
-              <sticky-save-and-share-bar__SaveShareContainer>
-                <StyledComponent
-                  forwardedRef={null}
-                >
-                  <div>
-                    <div>
-                      <Component>
-                        SaveAndShareBar
-                      </Component>
-                    </div>
-                  </div>
-                </StyledComponent>
-              </sticky-save-and-share-bar__SaveShareContainer>
+              <SaveShareContainerWrapper>
+                <ServerClientRender>
+                  <sticky-save-and-share-bar__SaveShareContainer>
+                    <StyledComponent
+                      forwardedRef={null}
+                    >
+                      <div>
+                        <div>
+                          <Component>
+                            SaveAndShareBar
+                          </Component>
+                        </div>
+                      </div>
+                    </StyledComponent>
+                  </sticky-save-and-share-bar__SaveShareContainer>
+                </ServerClientRender>
+              </SaveShareContainerWrapper>
             </div>
           </Sticky>
         </WithStickyContext(Sticky)>
