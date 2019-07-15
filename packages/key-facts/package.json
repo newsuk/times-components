@@ -1,6 +1,6 @@
 {
   "name": "@times-components/key-facts",
-  "version": "2.0.32",
+  "version": "2.0.33",
   "description": "Bulleted list of text data",
   "main": "dist/key-facts",
   "dev": "src/key-facts",
@@ -40,8 +40,8 @@
     "@times-components/eslint-config-thetimes": "0.8.12",
     "@times-components/jest-configurator": "2.5.14",
     "@times-components/jest-serializer": "3.2.10",
-    "@times-components/mocks": "0.0.26",
-    "@times-components/storybook": "4.0.18",
+    "@times-components/mocks": "0.0.27",
+    "@times-components/storybook": "4.0.19",
     "@times-components/test-utils": "2.3.0",
     "@times-components/webpack-configurator": "2.0.22",
     "babel-core": "^7.0.0-bridge.0",
@@ -66,12 +66,12 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/context": "1.0.25",
-    "@times-components/link": "3.4.25",
-    "@times-components/markup": "3.3.84",
+    "@times-components/context": "1.0.26",
+    "@times-components/link": "3.4.26",
+    "@times-components/markup": "3.3.85",
     "@times-components/markup-forest": "1.7.16",
-    "@times-components/responsive": "0.4.49",
-    "@times-components/styleguide": "3.28.31",
+    "@times-components/responsive": "0.4.50",
+    "@times-components/styleguide": "3.28.32",
     "lodash.pick": "4.4.0",
     "prop-types": "15.7.2",
     "styled-components": "4.2.0"

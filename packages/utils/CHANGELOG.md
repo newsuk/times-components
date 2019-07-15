@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.11.19](https://github.com/newsuk/times-components/compare/@times-components/utils@4.11.18...@times-components/utils@4.11.19) (2019-07-15)
+
+
+### Bug Fixes
+
+* Fix ad placeholder size - REPLAT-4733 ([#2119](https://github.com/newsuk/times-components/issues/2119)) ([401b43e](https://github.com/newsuk/times-components/commit/401b43e))
+
+
+
+
+
 ## [4.11.18](https://github.com/newsuk/times-components/compare/@times-components/utils@4.11.17...@times-components/utils@4.11.18) (2019-07-12)
 
 **Note:** Version bump only for package @times-components/utils

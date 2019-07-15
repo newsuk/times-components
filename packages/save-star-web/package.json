@@ -1,6 +1,6 @@
 {
   "name": "@times-components/save-star-web",
-  "version": "0.2.22",
+  "version": "0.2.23",
   "description": "Save Star for Web",
   "main": "dist/save-star-web",
   "dev": "src/save-star-web",
@@ -34,19 +34,19 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
-    "@times-components/icons": "2.11.20",
-    "@times-components/link": "3.4.25",
+    "@times-components/icons": "2.11.21",
+    "@times-components/link": "3.4.26",
     "@times-components/provider-queries": "2.3.0",
-    "@times-components/styleguide": "3.28.31",
-    "@times-components/tracking": "2.4.50",
-    "@times-components/utils": "4.11.18",
+    "@times-components/styleguide": "3.28.32",
+    "@times-components/tracking": "2.4.51",
+    "@times-components/utils": "4.11.19",
     "prop-types": "15.7.2"
   },
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.8.12",
     "@times-components/jest-configurator": "2.5.14",
     "@times-components/jest-serializer": "3.2.10",
-    "@times-components/storybook": "4.0.18",
+    "@times-components/storybook": "4.0.19",
     "@times-components/test-utils": "2.3.0",
     "@times-components/webpack-configurator": "2.0.22",
     "babel-core": "^7.0.0-bridge.0",

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/caption",
-  "version": "3.0.46",
+  "version": "3.0.47",
   "description": "Media caption component",
   "main": "dist/caption",
   "dev": "src/caption",
@@ -37,14 +37,14 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
-    "@times-components/styleguide": "3.28.31",
+    "@times-components/styleguide": "3.28.32",
     "prop-types": "15.7.2"
   },
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.8.12",
     "@times-components/jest-configurator": "2.5.14",
     "@times-components/jest-serializer": "3.2.10",
-    "@times-components/storybook": "4.0.18",
+    "@times-components/storybook": "4.0.19",
     "@times-components/test-utils": "2.3.0",
     "@times-components/webpack-configurator": "2.0.22",
     "babel-core": "^7.0.0-bridge.0",
