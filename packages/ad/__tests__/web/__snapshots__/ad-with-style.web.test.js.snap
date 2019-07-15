@@ -14,23 +14,38 @@ exports[`1. multiple ad slots 1`] = `
 }
 
 .IS3 {
+  align-items: center;
+  flex: 1;
+}
+
+.IS4 {
   height: auto;
   overflow: hidden;
   width: 1;
 }
 
-.IS4 {
+.IS5 {
   align-items: center;
   flex: 1;
 }
 
-.IS5 {
+.IS6 {
+  align-items: center;
+  flex: 1;
+}
+
+.IS7 {
   height: auto;
   overflow: hidden;
   width: 970;
 }
 
-.IS6 {
+.IS8 {
+  align-items: center;
+  flex: 1;
+}
+
+.IS9 {
   align-items: center;
   flex: 1;
 }
@@ -44,23 +59,38 @@ exports[`1. multiple ad slots 1`] = `
     section="news"
     slotName="header"
   >
-    <View
-      className="IS2"
-    >
-      <div
-        className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0"
-      >
-        <DOMContext
-          baseUrl="https://www.thetimes.co.uk/"
-          height={250}
-          width={970}
+    <ServerClientRender
+      client={
+        <View
+          className="IS3"
         >
-          <div
-            className="IS1"
+          <DOMContext
+            baseUrl="https://www.thetimes.co.uk/"
+            height={250}
+            width={970}
           />
-        </DOMContext>
-      </div>
-    </View>
+        </View>
+      }
+      server={null}
+    >
+      <View
+        className="IS2"
+      >
+        <div
+          className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0"
+        >
+          <DOMContext
+            baseUrl="https://www.thetimes.co.uk/"
+            height={250}
+            width={970}
+          >
+            <div
+              className="IS1"
+            />
+          </DOMContext>
+        </div>
+      </View>
+    </ServerClientRender>
   </Ad>
   <Ad
     baseUrl="https://www.thetimes.co.uk/"
@@ -69,23 +99,38 @@ exports[`1. multiple ad slots 1`] = `
     section="news"
     slotName="pixel"
   >
-    <View
-      className="IS4"
-    >
-      <div
-        className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0"
-      >
-        <DOMContext
-          baseUrl="https://www.thetimes.co.uk/"
-          height={1}
-          width={1}
+    <ServerClientRender
+      client={
+        <View
+          className="IS6"
         >
-          <div
-            className="IS3"
+          <DOMContext
+            baseUrl="https://www.thetimes.co.uk/"
+            height={1}
+            width={1}
           />
-        </DOMContext>
-      </div>
-    </View>
+        </View>
+      }
+      server={null}
+    >
+      <View
+        className="IS5"
+      >
+        <div
+          className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0"
+        >
+          <DOMContext
+            baseUrl="https://www.thetimes.co.uk/"
+            height={1}
+            width={1}
+          >
+            <div
+              className="IS4"
+            />
+          </DOMContext>
+        </div>
+      </View>
+    </ServerClientRender>
   </Ad>
   <Ad
     baseUrl="https://www.thetimes.co.uk/"
@@ -94,23 +139,38 @@ exports[`1. multiple ad slots 1`] = `
     section="news"
     slotName="intervention"
   >
-    <View
-      className="IS6"
-    >
-      <div
-        className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0"
-      >
-        <DOMContext
-          baseUrl="https://www.thetimes.co.uk/"
-          height={250}
-          width={970}
+    <ServerClientRender
+      client={
+        <View
+          className="IS9"
         >
-          <div
-            className="IS5"
+          <DOMContext
+            baseUrl="https://www.thetimes.co.uk/"
+            height={250}
+            width={970}
           />
-        </DOMContext>
-      </div>
-    </View>
+        </View>
+      }
+      server={null}
+    >
+      <View
+        className="IS8"
+      >
+        <div
+          className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0"
+        >
+          <DOMContext
+            baseUrl="https://www.thetimes.co.uk/"
+            height={250}
+            width={970}
+          >
+            <div
+              className="IS7"
+            />
+          </DOMContext>
+        </div>
+      </View>
+    </ServerClientRender>
   </Ad>
 </AdComposer>
 `;
@@ -171,6 +231,15 @@ exports[`2. placeholder when isloading 1`] = `
   align-items: center;
   flex: 1;
 }
+
+.IS8 {
+  flex: 1;
+}
+
+.IS9 {
+  align-items: center;
+  flex: 1;
+}
 </style>
 
 <Ad
@@ -180,60 +249,75 @@ exports[`2. placeholder when isloading 1`] = `
   section="news"
   slotName="header"
 >
-  <View
-    className="IS7"
-  >
-    <div
-      className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0"
-    >
-      <AdPlaceholder
-        className="IS6"
-        height={250}
-        width={970}
+  <ServerClientRender
+    client={
+      <View
+        className="IS9"
       >
-        <View
-          className="IS5"
+        <AdPlaceholder
+          className="IS8"
+          height={250}
+          width={970}
+        />
+      </View>
+    }
+    server={null}
+  >
+    <View
+      className="IS7"
+    >
+      <div
+        className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0"
+      >
+        <AdPlaceholder
+          className="IS6"
+          height={250}
+          width={970}
         >
-          <div
-            className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0 r-justifyContent-1777fci"
+          <View
+            className="IS5"
           >
-            <View
-              className="IS4"
-              testID="ad-placeholder"
+            <div
+              className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0 r-justifyContent-1777fci"
             >
-              <div
-                className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-gbtiil r-borderColor-1kv57cf r-borderStyle-1phboty r-borderWidth-rs99b7 r-justifyContent-1777fci r-overflow-1udh08x IS3"
-                data-testid="ad-placeholder"
+              <View
+                className="IS4"
+                testID="ad-placeholder"
               >
-                <View
-                  className="IS1"
+                <div
+                  className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-gbtiil r-borderColor-1kv57cf r-borderStyle-1phboty r-borderWidth-rs99b7 r-justifyContent-1777fci r-overflow-1udh08x IS3"
+                  data-testid="ad-placeholder"
                 >
-                  <div
-                    className="css-view-1dbjc4n r-left-1d2f490 r-position-u8s1d r-top-ipm5af"
+                  <View
+                    className="IS1"
                   >
-                    <Watermark
-                      height={250}
-                      viewBox="-630 120 1200 50"
-                      width={970}
-                    />
-                  </div>
-                </View>
-                <Text
-                  className="IS2"
-                >
-                  <div
-                    className="css-text-901oao r-backgroundColor-gbtiil r-borderColor-1kv57cf r-borderStyle-1phboty r-borderWidth-rs99b7 r-color-1khp51w r-fontFamily-1feecvn r-fontSize-1gkfh8e r-letterSpacing-i933xg r-lineHeight-fxxt2n r-paddingBottom-1inuy60 r-paddingLeft-1hfyk0a r-paddingRight-1qfoi16 r-paddingTop-glunga r-zIndex-184en5c"
+                    <div
+                      className="css-view-1dbjc4n r-left-1d2f490 r-position-u8s1d r-top-ipm5af"
+                    >
+                      <Watermark
+                        height={250}
+                        viewBox="-630 120 1200 50"
+                        width={970}
+                      />
+                    </div>
+                  </View>
+                  <Text
+                    className="IS2"
                   >
-                    ADVERTISEMENT
-                  </div>
-                </Text>
-              </div>
-            </View>
-          </div>
-        </View>
-      </AdPlaceholder>
-    </div>
-  </View>
+                    <div
+                      className="css-text-901oao r-backgroundColor-gbtiil r-borderColor-1kv57cf r-borderStyle-1phboty r-borderWidth-rs99b7 r-color-1khp51w r-fontFamily-1feecvn r-fontSize-1gkfh8e r-letterSpacing-i933xg r-lineHeight-fxxt2n r-paddingBottom-1inuy60 r-paddingLeft-1hfyk0a r-paddingRight-1qfoi16 r-paddingTop-glunga r-zIndex-184en5c"
+                    >
+                      ADVERTISEMENT
+                    </div>
+                  </Text>
+                </div>
+              </View>
+            </div>
+          </View>
+        </AdPlaceholder>
+      </div>
+    </View>
+  </ServerClientRender>
 </Ad>
 `;
 
@@ -299,6 +383,15 @@ exports[`3. nothing if there is an error in the loading of scripts 1`] = `
   align-items: center;
   flex: 1;
 }
+
+.IS9 {
+  flex: 1;
+}
+
+.IS10 {
+  align-items: center;
+  flex: 1;
+}
 </style>
 
 <Ad
@@ -308,68 +401,88 @@ exports[`3. nothing if there is an error in the loading of scripts 1`] = `
   section="news"
   slotName="header"
 >
-  <View
-    className="IS8"
-  >
-    <div
-      className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0"
-    >
-      <DOMContext
-        baseUrl="https://www.thetimes.co.uk/"
-        height={0}
-        width={0}
+  <ServerClientRender
+    client={
+      <View
+        className="IS10"
       >
-        <div
-          className="IS1"
+        <DOMContext
+          baseUrl="https://www.thetimes.co.uk/"
+          height={0}
+          width={0}
         />
-      </DOMContext>
-      <AdPlaceholder
-        className="IS7"
-        height={250}
-        width={970}
+        <AdPlaceholder
+          className="IS9"
+          height={250}
+          width={970}
+        />
+      </View>
+    }
+    server={null}
+  >
+    <View
+      className="IS8"
+    >
+      <div
+        className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0"
       >
-        <View
-          className="IS6"
+        <DOMContext
+          baseUrl="https://www.thetimes.co.uk/"
+          height={0}
+          width={0}
         >
           <div
-            className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0 r-justifyContent-1777fci"
+            className="IS1"
+          />
+        </DOMContext>
+        <AdPlaceholder
+          className="IS7"
+          height={250}
+          width={970}
+        >
+          <View
+            className="IS6"
           >
-            <View
-              className="IS5"
-              testID="ad-placeholder"
+            <div
+              className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0 r-justifyContent-1777fci"
             >
-              <div
-                className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-gbtiil r-borderColor-1kv57cf r-borderStyle-1phboty r-borderWidth-rs99b7 r-justifyContent-1777fci r-overflow-1udh08x IS4"
-                data-testid="ad-placeholder"
+              <View
+                className="IS5"
+                testID="ad-placeholder"
               >
-                <View
-                  className="IS2"
+                <div
+                  className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-gbtiil r-borderColor-1kv57cf r-borderStyle-1phboty r-borderWidth-rs99b7 r-justifyContent-1777fci r-overflow-1udh08x IS4"
+                  data-testid="ad-placeholder"
                 >
-                  <div
-                    className="css-view-1dbjc4n r-left-1d2f490 r-position-u8s1d r-top-ipm5af"
+                  <View
+                    className="IS2"
                   >
-                    <Watermark
-                      height={250}
-                      viewBox="-630 120 1200 50"
-                      width={970}
-                    />
-                  </div>
-                </View>
-                <Text
-                  className="IS3"
-                >
-                  <div
-                    className="css-text-901oao r-backgroundColor-gbtiil r-borderColor-1kv57cf r-borderStyle-1phboty r-borderWidth-rs99b7 r-color-1khp51w r-fontFamily-1feecvn r-fontSize-1gkfh8e r-letterSpacing-i933xg r-lineHeight-fxxt2n r-paddingBottom-1inuy60 r-paddingLeft-1hfyk0a r-paddingRight-1qfoi16 r-paddingTop-glunga r-zIndex-184en5c"
+                    <div
+                      className="css-view-1dbjc4n r-left-1d2f490 r-position-u8s1d r-top-ipm5af"
+                    >
+                      <Watermark
+                        height={250}
+                        viewBox="-630 120 1200 50"
+                        width={970}
+                      />
+                    </div>
+                  </View>
+                  <Text
+                    className="IS3"
                   >
-                    ADVERTISEMENT
-                  </div>
-                </Text>
-              </div>
-            </View>
-          </div>
-        </View>
-      </AdPlaceholder>
-    </div>
-  </View>
+                    <div
+                      className="css-text-901oao r-backgroundColor-gbtiil r-borderColor-1kv57cf r-borderStyle-1phboty r-borderWidth-rs99b7 r-color-1khp51w r-fontFamily-1feecvn r-fontSize-1gkfh8e r-letterSpacing-i933xg r-lineHeight-fxxt2n r-paddingBottom-1inuy60 r-paddingLeft-1hfyk0a r-paddingRight-1qfoi16 r-paddingTop-glunga r-zIndex-184en5c"
+                    >
+                      ADVERTISEMENT
+                    </div>
+                  </Text>
+                </div>
+              </View>
+            </div>
+          </View>
+        </AdPlaceholder>
+      </div>
+    </View>
+  </ServerClientRender>
 </Ad>
 `;
