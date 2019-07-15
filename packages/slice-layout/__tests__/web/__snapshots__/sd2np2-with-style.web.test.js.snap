@@ -393,17 +393,23 @@ exports[`4. secondary two no pic and two - huge 1`] = `
   className="css-view-1dbjc4n"
   style={
     Object {
-      "WebkitAlignSelf": "center",
       "WebkitBoxDirection": "normal",
+      "WebkitBoxFlex": 1,
       "WebkitBoxOrient": "horizontal",
+      "WebkitFlexBasis": "0%",
       "WebkitFlexDirection": "row",
-      "alignSelf": "center",
+      "WebkitFlexGrow": 1,
+      "WebkitFlexShrink": 1,
+      "flexBasis": "0%",
       "flexDirection": "row",
+      "flexGrow": 1,
+      "flexShrink": 1,
       "marginLeft": "10px",
       "marginRight": "10px",
       "msFlexDirection": "row",
-      "msFlexItemAlign": "center",
-      "width": "86%",
+      "msFlexNegative": 1,
+      "msFlexPositive": 1,
+      "msFlexPreferredSize": "0%",
     }
   }
 >
@@ -443,8 +449,8 @@ exports[`4. secondary two no pic and two - huge 1`] = `
     className="css-view-1dbjc4n"
     style={
       Object {
-        "paddingLeft": "10px",
-        "paddingRight": "10px",
+        "paddingLeft": "5px",
+        "paddingRight": "5px",
         "width": "16.6%",
       }
     }
@@ -509,8 +515,8 @@ exports[`4. secondary two no pic and two - huge 1`] = `
     className="css-view-1dbjc4n"
     style={
       Object {
-        "paddingLeft": "10px",
-        "paddingRight": "10px",
+        "paddingLeft": "5px",
+        "paddingRight": "5px",
         "width": "16.6%",
       }
     }
