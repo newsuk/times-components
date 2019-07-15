@@ -155,10 +155,10 @@ exports[`1. a full article with an image as the lead asset 1`] = `
   >
     <svg
       aria-label="[title]"
-      height={15}
+      height={16}
       role="img"
       viewBox="0 0 22 16"
-      width={20.625}
+      width={22}
     >
       <title>
         Share by email
@@ -176,10 +176,10 @@ exports[`1. a full article with an image as the lead asset 1`] = `
   >
     <svg
       aria-label="[title]"
-      height={15}
+      height={16}
       role="img"
       viewBox="-354.2 -279.4 750 600"
-      width={18.75}
+      width={20}
     >
       <title>
         Share on Twitter
@@ -215,7 +215,7 @@ exports[`1. a full article with an image as the lead asset 1`] = `
   >
     <svg
       aria-label="[title]"
-      height={15}
+      height={16}
       role="img"
       viewBox="0 0 15 15"
       width={15}
@@ -228,7 +228,7 @@ exports[`1. a full article with an image as the lead asset 1`] = `
       />
     </svg>
   </a>
-  Save  
+  Save
   <a
     target={null}
   >
@@ -236,14 +236,14 @@ exports[`1. a full article with an image as the lead asset 1`] = `
       aria-label="[title]"
       height={18}
       role="img"
-      viewBox="0 0 21 20"
+      viewBox="0 0 18 18"
       width={18}
     >
       <title>
         Save to My Articles
       </title>
       <path
-        d="9ff663b012becce62bbdc88ff3a5e330"
+        d="305a4329b925735e74b6f9f97d84a7d7"
       />
     </svg>
   </a>
@@ -335,10 +335,10 @@ exports[`1. a full article with an image as the lead asset 1`] = `
   >
     <svg
       aria-label="[title]"
-      height={15}
+      height={16}
       role="img"
       viewBox="0 0 22 16"
-      width={20.625}
+      width={22}
     >
       <title>
         Share by email
@@ -356,10 +356,10 @@ exports[`1. a full article with an image as the lead asset 1`] = `
   >
     <svg
       aria-label="[title]"
-      height={15}
+      height={16}
       role="img"
       viewBox="-354.2 -279.4 750 600"
-      width={18.75}
+      width={20}
     >
       <title>
         Share on Twitter
@@ -395,7 +395,7 @@ exports[`1. a full article with an image as the lead asset 1`] = `
   >
     <svg
       aria-label="[title]"
-      height={15}
+      height={16}
       role="img"
       viewBox="0 0 15 15"
       width={15}
@@ -408,7 +408,7 @@ exports[`1. a full article with an image as the lead asset 1`] = `
       />
     </svg>
   </a>
-  Save  
+  Save
   <a
     target={null}
   >
@@ -416,14 +416,14 @@ exports[`1. a full article with an image as the lead asset 1`] = `
       aria-label="[title]"
       height={18}
       role="img"
-      viewBox="0 0 21 20"
+      viewBox="0 0 18 18"
       width={18}
     >
       <title>
         Save to My Articles
       </title>
       <path
-        d="9ff663b012becce62bbdc88ff3a5e330"
+        d="305a4329b925735e74b6f9f97d84a7d7"
       />
     </svg>
   </a>
