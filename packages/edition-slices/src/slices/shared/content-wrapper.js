@@ -5,15 +5,15 @@ import { sliceContentMaxWidth } from "@times-components/styleguide";
 
 const ContentWrapper = ({ children }) => (
   <View
-  style={{
-    flex:1,
-    alignSelf: "center",
-    width: sliceContentMaxWidth
-  }}
+    style={{
+      flex: 1,
+      alignSelf: "center",
+      width: sliceContentMaxWidth
+    }}
   >
     {children}
   </View>
-)
+);
 
 ContentWrapper.propTypes = {
   children: PropTypes.node.isRequired
