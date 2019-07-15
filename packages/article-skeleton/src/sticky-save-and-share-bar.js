@@ -65,7 +65,6 @@ function StickySaveAndShareBar(props) {
       <Sticky
         Component={SaveShareContainerWrapper}
         shouldBeSticky={shouldBeSticky}
-        outDelay={150}
       >
         <SaveAndShareBar {...props} />
       </Sticky>

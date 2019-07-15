@@ -12,8 +12,6 @@ export function applyProgressAttr(elem, percent) {
   }
 }
 
-// @todo Make this styles not render on the server as its impossible for
-// them to be used there and its too much to transfer over the network
 export function computeProgressStyles(computer) {
   const progressArr = new Array(101).fill(null);
 
