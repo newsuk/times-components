@@ -88,7 +88,7 @@ export default ({
       const cap = getDropCap(children, fonts[dropCapFont], height, [
         new Body(value)
       ]);
-      const capWidth = (cap.measuredWidth + 10) * fontScale;
+      const capWidth = (cap.measuredWidth + 20) * fontScale;
 
       return {
         element: new Layout.InlineBlock({
@@ -274,7 +274,7 @@ export default ({
           lineHeight: lineHeight * fontScale,
           markup: children,
           size: fontSize * fontScale,
-          width: Math.min(screenWidth(), tabletWidth) - 10
+          width: Math.min(screenWidth(), tabletWidth)
         })
       };
     },

@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@1.2.20...@times-components/article-paragraph@1.3.0) (2019-07-12)
+
+
+### Features
+
+* (REPLAT-6991) remove python dependency ([#2117](https://github.com/newsuk/times-components/issues/2117)) ([b092d65](https://github.com/newsuk/times-components/commit/b092d65))
+
+
+
+
+
+## [1.2.20](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@1.2.19...@times-components/article-paragraph@1.2.20) (2019-07-12)
+
+**Note:** Version bump only for package @times-components/article-paragraph
+
+
+
+
+
+## [1.2.19](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@1.2.18...@times-components/article-paragraph@1.2.19) (2019-07-11)
+
+**Note:** Version bump only for package @times-components/article-paragraph
+
+
+
+
+
 ## [1.2.18](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@1.2.17...@times-components/article-paragraph@1.2.18) (2019-07-10)
 
 **Note:** Version bump only for package @times-components/article-paragraph

@@ -1,6 +1,5 @@
 /* eslint-disable prefer-destructuring */
 import Positioned from "../Layout/Positioned";
-import Case from "./Case";
 import FontLoader from "./FontLoader";
 
 export default class Character extends Positioned {
@@ -18,7 +17,7 @@ export default class Character extends Positioned {
 
   index = null;
 
-  size = null;
+  size = 18;
 
   fillColor = null;
 
@@ -49,21 +48,6 @@ export default class Character extends Positioned {
     Object.assign(this, style);
     this.index = index;
 
-    let upperSmall;
-    // flip case depending on characterCase property
-    if (this.characterCase === Case.NORMAL) {
-      this.character = character;
-    } else if (this.characterCase === Case.UPPER) {
-      this.character = character.toUpperCase();
-    } else if (this.characterCase === Case.LOWER) {
-      this.character = character.toLowerCase();
-    } else if (this.characterCase === Case.SMALL_CAPS) {
-      this.character = character.toUpperCase();
-      upperSmall = !(character === this.character);
-    } else {
-      // fallback case for unknown.
-      this.character = character;
-    }
     this.characterCode = this.character.charCodeAt(0);
 
     this.fontInstance = FontLoader.getFont(this.font);
@@ -102,21 +86,12 @@ export default class Character extends Positioned {
 
     // missing glyph
     if (this.glyph === undefined) {
-      this.glyph = this.fontInstance.glyphs[42];
+      // throw new Error(`Missing glyph: '${this.character}'`)
+      this.glyph = this.fontInstance.glyphs[77];
       this.missing = true;
     }
 
-    if (this.characterCase === Case.SMALL_CAPS) {
-      if (upperSmall) {
-        this.scaleX = this.size / this.fontInstance.units * 0.8;
-        this.characterCaseOffset = -0.2 * (this.glyph.offset * this.size);
-      } else {
-        this.scaleX = this.size / this.fontInstance.units;
-      }
-    } else {
-      this.scaleX = this.size / this.fontInstance.units;
-    }
-
+    this.scaleX = this.size / this.fontInstance.units;
     this.scaleY = -this.scaleX;
 
     this.measuredHeight =

@@ -1,3 +1,4 @@
+import { Roboto } from "@times-components/test-utils";
 import { Text, Markup, Layout } from "../src/text-flow";
 import FontLoader from "../src/Text/FontLoader";
 
@@ -7,7 +8,7 @@ export default () => {
       "TimesDigitalW04-Regular",
       "TimesDigitalW04-Bold",
       "TimesDigitalW04-Italic"
-    ].forEach(name => FontLoader.loadFont(name));
+    ].forEach(name => FontLoader.loadFont(name, Roboto));
   });
 
   it("indents lines next to an inline", () => {

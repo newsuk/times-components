@@ -1,6 +1,6 @@
 {
   "name": "@times-components/mocks",
-  "version": "0.0.25",
+  "version": "0.0.26",
   "description": "Shared mocks for the tests",
   "main": "dist/index",
   "dev": "src/index",
@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
-    "@times-components/styleguide": "3.28.30"
+    "@times-components/styleguide": "3.28.31"
   },
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.8.12",

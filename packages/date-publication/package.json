@@ -1,6 +1,6 @@
 {
   "name": "@times-components/date-publication",
-  "version": "0.20.76",
+  "version": "0.20.77",
   "description": "Date and Publication properties",
   "main": "dist/date-publication",
   "dev": "src/date-publication",
@@ -38,9 +38,9 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.8.12",
-    "@times-components/jest-configurator": "2.5.13",
-    "@times-components/storybook": "4.0.17",
-    "@times-components/test-utils": "2.2.44",
+    "@times-components/jest-configurator": "2.5.14",
+    "@times-components/storybook": "4.0.18",
+    "@times-components/test-utils": "2.3.0",
     "@times-components/webpack-configurator": "2.0.22",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "24.8.0",
@@ -59,7 +59,7 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/styleguide": "3.28.30",
+    "@times-components/styleguide": "3.28.31",
     "date-fns": "1.28.5",
     "prop-types": "15.7.2"
   },

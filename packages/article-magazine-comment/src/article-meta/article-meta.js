@@ -1,7 +1,10 @@
 import React from "react";
 import { Text, View } from "react-native";
 import PropTypes from "prop-types";
-import { ArticleBylineWithLinks } from "@times-components/article-byline";
+import {
+  ArticleBylineWithLinks,
+  hasBylineData
+} from "@times-components/article-byline";
 import DatePublication from "@times-components/date-publication";
 
 import metaPropTypes from "./article-meta-prop-types";
@@ -24,7 +27,7 @@ const ArticleMeta = ({
       isTablet && styles.metaContainerTablet
     ]}
   >
-    {bylines.length && (
+    {hasBylineData(bylines) && (
       <View style={[styles.meta, isTablet && styles.metaTablet]}>
         <ArticleBylineWithLinks ast={bylines} onAuthorPress={onAuthorPress} />
       </View>

@@ -10,15 +10,6 @@ import articleProps from "./shared-article-props";
 
 jest.mock("@times-components/save-and-share-bar", () => "SaveAndShareBar");
 
-const findComponents = (testInstance, componentName) =>
-  testInstance.root.findAll(node => {
-    if (typeof node.type === "string") {
-      return node.type.includes(componentName);
-    }
-
-    return false;
-  });
-
 const emptyArticle = {
   bylines: null,
   expirableFlags: null,
@@ -157,7 +148,7 @@ const negativeTests = [
   {
     name: "an article with no byline",
     test() {
-      const testInstance = TestRenderer.create(
+      const output = TestRenderer.create(
         <ArticleMainStandard
           {...articleProps}
           adConfig={adConfig}
@@ -174,15 +165,13 @@ const negativeTests = [
         />
       );
 
-      const byline = findComponents(testInstance, "ArticleBylineWithLinks");
-
-      expect(byline).toEqual([]);
+      expect(output).toMatchSnapshot();
     }
   },
   {
     name: "an article with no label",
     test() {
-      const testInstance = TestRenderer.create(
+      const output = TestRenderer.create(
         <ArticleMainStandard
           {...articleProps}
           adConfig={adConfig}
@@ -199,9 +188,7 @@ const negativeTests = [
         />
       );
 
-      const label = findComponents(testInstance, "ArticleLabel");
-
-      expect(label).toEqual([]);
+      expect(output).toMatchSnapshot();
     }
   },
   {
