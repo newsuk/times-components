@@ -15,7 +15,9 @@ export default (
     constructor(props, context) {
       super(props, context);
       this.receiveChildList = this.receiveChildList.bind(this);
+      this.updateOnScroll = this.updateOnScroll.bind(this);
       this.childData = {};
+      this.isOnScroll = false;
       this.viewed = new Set();
       if (typeof window !== "undefined" && window.IntersectionObserver) {
         this.observer = new window.IntersectionObserver(
@@ -23,7 +25,7 @@ export default (
           {
             root: null,
             rootMargin: "0px",
-            threshold: 1.0
+            threshold: 0.5
           }
         );
       }
@@ -31,6 +33,7 @@ export default (
     }
 
     componentDidMount() {
+      window.addEventListener("scroll", this.updateOnScroll);
       this.observeChildren();
     }
 
@@ -39,6 +42,7 @@ export default (
     }
 
     componentWillUnmount() {
+      window.removeEventListener("scroll", this.updateOnScroll);
       if (this.observer) {
         this.observer.disconnect();
       }
@@ -51,7 +55,7 @@ export default (
       }
 
       observed.forEach(({ isIntersecting, target }) => {
-        if (isIntersecting && !this.viewed.has(target.id)) {
+        if (this.isOnScroll && isIntersecting && !this.viewed.has(target.id)) {
           this.viewed.add(target.id);
 
           this.onChildView(this.childData[target.id]);
@@ -73,6 +77,10 @@ export default (
         },
         component: `${trackingName || componentName}Child`
       });
+    }
+
+    updateOnScroll() {
+      this.isOnScroll = true;
     }
 
     receiveChildList(childList) {

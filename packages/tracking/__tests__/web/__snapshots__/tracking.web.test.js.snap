@@ -57,6 +57,8 @@ Array [
 
 exports[`Tracking tests on web WithTrackScrollDepth does not report missing elements 1`] = `Array []`;
 
+exports[`Tracking tests on web WithTrackScrollDepth does not tracks scroll depth without scroll 1`] = `Array []`;
+
 exports[`Tracking tests on web WithTrackScrollDepth forwards props to wrapped component 1`] = `
 <div
   className="css-text-901oao"
@@ -73,50 +75,6 @@ exports[`Tracking tests on web WithTrackScrollDepth renders when tracking contex
 >
   foo
 </div>
-`;
-
-exports[`Tracking tests on web WithTrackScrollDepth tracks scroll depth 1`] = `
-Array [
-  Array [
-    Object {
-      "action": "Scrolled",
-      "attrs": Object {
-        "scrollDepth": Object {
-          "itemNumber": 1,
-          "name": "name1",
-          "total": 3,
-        },
-      },
-      "component": "ListComponentChild",
-    },
-  ],
-  Array [
-    Object {
-      "action": "Scrolled",
-      "attrs": Object {
-        "scrollDepth": Object {
-          "itemNumber": 2,
-          "name": "name2",
-          "total": 3,
-        },
-      },
-      "component": "ListComponentChild",
-    },
-  ],
-  Array [
-    Object {
-      "action": "Scrolled",
-      "attrs": Object {
-        "scrollDepth": Object {
-          "itemNumber": 3,
-          "name": "name3",
-          "total": 3,
-        },
-      },
-      "component": "ListComponentChild",
-    },
-  ],
-]
 `;
 
 exports[`Tracking tests on web WithTrackScrollDepth tracks scroll depth after update 1`] = `

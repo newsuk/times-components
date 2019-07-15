@@ -95,12 +95,22 @@ class ListComponent extends Component {
 module.exports = () => {
   describe("WithTrackScrollDepth", () => {
     let realGetElementById;
+    let eventMap;
 
     beforeEach(() => {
       global.window.IntersectionObserver = FakeIntersectionObserver;
 
       realGetElementById = global.window.document.getElementById;
       global.window.document.getElementById = stubGetElementById;
+      eventMap = {};
+
+      global.window.addEventListener = jest.fn((eventName, callback) => {
+        eventMap[eventName] = callback;
+      });
+
+      global.window.removeEventListener = jest.fn(eventName => {
+        delete eventMap[eventName];
+      });
     });
 
     afterEach(() => {
@@ -109,9 +119,12 @@ module.exports = () => {
       global.window.document.getElementById = realGetElementById;
 
       FakeIntersectionObserver.clearObserving();
+
+      global.window.addEventListener = global.window.addEventListener;
+      global.window.removeEventListener = global.window.removeEventListener;
     });
 
-    it("tracks scroll depth", () => {
+    it("does not tracks scroll depth without scroll", () => {
       const reporter = jest.fn();
       const ListWithChildTracking = withTestContext(
         withTrackScrollDepth(ListComponent),
@@ -149,7 +162,7 @@ module.exports = () => {
       expect(reporter.mock.calls).toMatchSnapshot();
     });
 
-    it("tracks scroll depth after update", () => {
+    it("tracks scroll depth after update", async () => {
       const reporter = jest.fn();
       const ListWithChildTracking = withTestContext(
         withTrackScrollDepth(ListComponent),
@@ -181,6 +194,8 @@ module.exports = () => {
         <ListWithChildTracking analyticsStream={reporter} items={items} />
       );
 
+      eventMap.scroll();
+
       FakeIntersectionObserver.dispatchObservedAll();
 
       component.setProps({
@@ -200,7 +215,7 @@ module.exports = () => {
       expect(reporter.mock.calls).toMatchSnapshot();
     });
 
-    it("accepts component name override", () => {
+    it("accepts component name override", async () => {
       const reporter = jest.fn();
       const ListWithChildTracking = withTestContext(
         withTrackScrollDepth(ListComponent, {
@@ -221,6 +236,8 @@ module.exports = () => {
         />
       );
 
+      eventMap.scroll();
+
       FakeIntersectionObserver.dispatchObservedAll();
 
       expect(reporter).toHaveBeenCalledWith(
@@ -230,7 +247,7 @@ module.exports = () => {
       );
     });
 
-    it("applies tracking attrs", () => {
+    it("applies tracking attrs", async () => {
       const reporter = jest.fn();
       const ListWithChildTracking = withTestContext(
         withTrackScrollDepth(ListComponent, {
@@ -248,6 +265,8 @@ module.exports = () => {
         />
       );
 
+      eventMap.scroll();
+
       FakeIntersectionObserver.dispatchObservedAll();
 
       expect(reporter).toHaveBeenCalledWith(
@@ -260,7 +279,7 @@ module.exports = () => {
       );
     });
 
-    it("emits events including scroll depth", () => {
+    it("emits events including scroll depth", async () => {
       const reporter = jest.fn();
       const ListWithChildTracking = withTestContext(
         withTrackScrollDepth(ListComponent)
@@ -283,6 +302,8 @@ module.exports = () => {
           ]}
         />
       );
+
+      eventMap.scroll();
 
       FakeIntersectionObserver.dispatchObservedAll();
 
@@ -309,6 +330,7 @@ module.exports = () => {
         .create(<ListWithChildTracking analyticsStream={() => {}} items={[]} />)
         .unmount();
 
+      expect(eventMap).toEqual({});
       expect(disconnectSpy).toHaveBeenCalled();
     });
 

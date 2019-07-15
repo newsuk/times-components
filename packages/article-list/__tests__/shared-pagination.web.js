@@ -119,7 +119,6 @@ export default () => {
       test() {
         // eslint-disable-next-line prefer-destructuring
         const window = global.window;
-        delete global.window;
         jest.spyOn(window, "scroll");
 
         const onNext = jest.fn();
@@ -151,7 +150,6 @@ export default () => {
           .props()
           .onPress();
 
-        global.window = window;
         spy.mockRestore();
       }
     },
@@ -159,6 +157,7 @@ export default () => {
       name: "scrolls to top when using bottom previous pager",
       test() {
         const windowSpy = jest.spyOn(window, "scroll");
+
         const onPrev = jest.fn();
         const consoleSpy = jest.spyOn(console, "error").mockImplementation();
         const testInstance = TestRenderer.create(
@@ -195,7 +194,6 @@ export default () => {
       test() {
         // eslint-disable-next-line prefer-destructuring
         const window = global.window;
-        delete global.window;
         jest.spyOn(window, "scroll");
 
         const onPrev = jest.fn();
@@ -227,7 +225,6 @@ export default () => {
           .props()
           .onPress();
 
-        global.window = window;
         spy.mockRestore();
       }
     }
