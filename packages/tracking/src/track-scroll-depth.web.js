@@ -33,6 +33,7 @@ export default (
     }
 
     componentDidMount() {
+      console.log('componentDidMount is called');
       window.addEventListener("scroll", this.updateOnScroll);
       this.observeChildren();
     }

@@ -156,6 +156,16 @@ const tests = [
   {
     name: "should emit scroll tracking events for an article list",
     test() {
+      const eventMap = {};
+
+      window.addEventListener = jest.fn((eventName, callback) => {
+        eventMap[eventName] = callback;
+      });
+
+      window.removeEventListener = jest.fn(eventName => {
+        delete eventMap[eventName];
+      });
+
       window.IntersectionObserver = FakeIntersectionObserver;
       const reporter = jest.fn();
 
@@ -186,6 +196,8 @@ const tests = [
           target: node
         }));
 
+      eventMap.scroll();
+
       window.IntersectionObserver.dispatchEntriesForInstance(0, makeEntries);
 
       expect(reporter).toHaveBeenCalledWith(
@@ -198,6 +210,9 @@ const tests = [
           })
         })
       );
+
+      window.addEventListener = window.addEventListener;
+      window.removeEventListener = window.removeEventListener;
     }
   }
 ];
