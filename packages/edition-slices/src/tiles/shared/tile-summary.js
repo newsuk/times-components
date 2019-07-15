@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Platform } from "react-native";
+import { View } from "react-native";
 import PropTypes from "prop-types";
 import ArticleSummary, {
   ArticleSummaryContent,
@@ -9,7 +9,11 @@ import ArticleSummary, {
 import { ArticleFlags } from "@times-components/article-flag";
 import { colours } from "@times-components/styleguide";
 import TileStar from "./tile-star";
-import { horizontalStyles, starPadding } from "./styles";
+import {
+  horizontalStyles,
+  starHeadlinePaddingBottom,
+  starTeaserPaddingBottom
+} from "./styles";
 import { isSaveSupported } from "./utils";
 
 class TileSummary extends Component {
@@ -64,13 +68,21 @@ class TileSummary extends Component {
         headline: tileHeadline,
         article: { headline, shortHeadline }
       },
-      headlineStyle
+      headlineStyle,
+      withStar,
+      summary
     } = this.props;
+
+    const shouldAddBottomPadding = isSaveSupported && !withStar && !summary;
 
     return (
       <ArticleSummaryHeadline
         headline={tileHeadline || shortHeadline || headline}
-        style={headlineStyle}
+        style={
+          shouldAddBottomPadding
+            ? [headlineStyle, starHeadlinePaddingBottom]
+            : headlineStyle
+        }
       />
     );
   }
@@ -86,7 +98,7 @@ class TileSummary extends Component {
   render() {
     const {
       tile: {
-        article: { hasVideo, label, section }
+        article: { hasVideo, label, section, expirableFlags }
       },
       bylines,
       bylineStyle,
@@ -96,6 +108,12 @@ class TileSummary extends Component {
       withStar,
       labelColour
     } = this.props;
+
+    const shouldAddBottomPadding =
+      isSaveSupported &&
+      !withStar &&
+      expirableFlags &&
+      expirableFlags.length === 0;
 
     return (
       <ArticleSummary
@@ -113,7 +131,7 @@ class TileSummary extends Component {
         }}
         strapline={strapline ? this.renderStrapline() : undefined}
         style={
-          Platform.os === "android" && !withStar ? [starPadding, style] : style
+          shouldAddBottomPadding ? [starTeaserPaddingBottom, style] : style
         }
       />
     );
