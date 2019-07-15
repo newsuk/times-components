@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.65.6](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.65.5...@times-components/edition-slices@0.65.6) (2019-07-15)
+
+
+### Bug Fixes
+
+* headline overlapping save star ([#2116](https://github.com/newsuk/times-components/issues/2116)) ([545101d](https://github.com/newsuk/times-components/commit/545101d))
+
+
+
+
+
 ## [0.65.5](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.65.4...@times-components/edition-slices@0.65.5) (2019-07-12)
 
 **Note:** Version bump only for package @times-components/edition-slices
