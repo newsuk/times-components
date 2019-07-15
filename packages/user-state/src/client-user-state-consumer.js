@@ -19,7 +19,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Context from "@times-components/context";
-import ServerClientRender from "./server-client-render";
+import { ServerClientRender } from "@times-components/utils";
 
 // Using React Components for the Client/Server for performance reasons
 function Client({ children, user }) {

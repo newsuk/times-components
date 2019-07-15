@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Subscriber } from "react-broadcast";
 import { View, Platform } from "react-native";
-import { screenWidth } from "@times-components/utils";
+import { screenWidth, ServerClientRender } from "@times-components/utils";
 import { getSlotConfig, prebidConfig, getPrebidSlotConfig } from "./utils";
 import adInit from "./utils/ad-init";
 import AdPlaceholder from "./ad-placeholder";
@@ -105,6 +105,8 @@ class Ad extends Component {
               : config.maxSizes.width
         };
 
+    const isWeb = Platform.OS === "web";
+
     const AdComponent = (
       <DOMContext
         baseUrl={baseUrl}
@@ -124,11 +126,17 @@ class Ad extends Component {
       />
     );
 
-    return (
+    const AdView = (
       <View style={[styles.container, style]}>
         {isLoading ? null : AdComponent}
         {isLoading || !isAdReady ? AdPlaceholderComponent : null}
       </View>
+    );
+
+    return isWeb ? (
+      <ServerClientRender client={AdView} server={null} />
+    ) : (
+      AdView
     );
   }
 
