@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.7.18](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.7.17...@times-components/article-magazine-comment@3.7.18) (2019-07-16)
+
+
+### Bug Fixes
+
+* links should not recreate a styled component on every render ([#2114](https://github.com/newsuk/times-components/issues/2114)) ([a417084](https://github.com/newsuk/times-components/commit/a417084))
+
+
+
+
+
 ## [3.7.17](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.7.16...@times-components/article-magazine-comment@3.7.17) (2019-07-15)
 
 **Note:** Version bump only for package @times-components/article-magazine-comment

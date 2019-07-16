@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.25](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.2.24...@times-components/save-star-web@0.2.25) (2019-07-16)
+
+
+### Bug Fixes
+
+* links should not recreate a styled component on every render ([#2114](https://github.com/newsuk/times-components/issues/2114)) ([a417084](https://github.com/newsuk/times-components/commit/a417084))
+
+
+
+
+
 ## [0.2.24](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.2.23...@times-components/save-star-web@0.2.24) (2019-07-15)
 
 **Note:** Version bump only for package @times-components/save-star-web
