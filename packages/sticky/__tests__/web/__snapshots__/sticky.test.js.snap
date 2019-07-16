@@ -226,6 +226,7 @@ exports[`Sticky triggers the sticky detection on resize 1`] = `
   >
     <div
       class="tc-sticky"
+      data-sticky-progress="16"
       style="margin-top: 10px; height: 60px;"
     >
       <div

@@ -141,6 +141,7 @@ class UnwrappedSticky extends Component {
 
   trackScrollProgress() {
     const { isSticky } = this;
+    const { stickyContext } = this.props;
 
     if (!isSticky) {
       delete this.placeholderBox;
@@ -152,13 +153,13 @@ class UnwrappedSticky extends Component {
 
     if (!this.placeholderBox) {
       this.placeholderBox = {
-        top: Math.abs(getTopFromBody(this.placeholder)),
+        top: getTopFromBody(this.placeholder),
         height: this.placeholder.offsetHeight
       };
     }
 
     const { top, height } = this.placeholderBox;
-    const distance = window.pageYOffset - top;
+    const distance = (top - window.pageYOffset - stickyContext.top) * -1;
     const percent = Math.max(0, Math.min(1, distance / height));
 
     this.setScrollProgressPercent(percent);

@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { render } from "react-dom";
 import { act } from "react-dom/test-utils";
+
 import Sticky, {
   computeProgressStyles,
   selectors,
@@ -323,14 +324,14 @@ describe("Sticky", () => {
       render(
         <StickyProvider>
           <Sticky
-            style={{ marginTop: 10, height: 120 }}
+            style={{ marginTop: 15, height: 120 }}
             className="component"
           />
         </StickyProvider>,
         root
       );
 
-      scrollTo(20);
+      scrollTo(15);
       const component = document.querySelector(".component");
       expect(component.getAttributeNames()).not.toContain(
         "data-sticky-progress"
@@ -343,16 +344,16 @@ describe("Sticky", () => {
       render(
         <StickyProvider>
           <Sticky
-            style={{ marginTop: 10, height: 120 }}
+            style={{ marginTop: 15, height: 120 }}
             className="component"
           />
         </StickyProvider>,
         root
       );
 
-      scrollTo(50);
+      scrollTo(75);
       const component = document.querySelector(".component");
-      expect(component.getAttribute("data-sticky-progress")).toEqual("25");
+      expect(component.getAttribute("data-sticky-progress")).toEqual("50");
     });
 
     it("at end of scroll, scroll progress is 100", () => {
@@ -361,14 +362,14 @@ describe("Sticky", () => {
       render(
         <StickyProvider>
           <Sticky
-            style={{ marginTop: 10, height: 120 }}
+            style={{ marginTop: 15, height: 120 }}
             className="component"
           />
         </StickyProvider>,
         root
       );
 
-      scrollTo(140);
+      scrollTo(135);
       const component = document.querySelector(".component");
       expect(component.getAttribute("data-sticky-progress")).toEqual("100");
     });
@@ -394,7 +395,7 @@ describe("Sticky", () => {
       render(
         <StickyProvider>
           <Sticky
-            style={{ marginTop: 10, height: 120 }}
+            style={{ marginTop: 15, height: 120 }}
             className="component"
           />
         </StickyProvider>,
