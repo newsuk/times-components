@@ -14,6 +14,9 @@ const globalStyle = {
     backgroundColor: "#ffffff",
     maxWidth: "100%",
     width: maxWidth
+  },
+  inlineParagraphContainer: {
+    marginBottom: spacing(-2)
   }
 };
 

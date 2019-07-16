@@ -72,6 +72,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
               style={
                 Object {
                   "height": 0,
+                  "marginBottom": -10,
                 }
               }
             >
@@ -644,6 +645,7 @@ exports[`3. an article with a nested markup in first paragraph displays a drop c
               style={
                 Object {
                   "height": 0,
+                  "marginBottom": -10,
                 }
               }
             >
@@ -679,6 +681,7 @@ exports[`3. an article with a nested markup in first paragraph displays a drop c
               style={
                 Object {
                   "height": 0,
+                  "marginBottom": -10,
                 }
               }
             >
