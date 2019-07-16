@@ -2,6 +2,11 @@
 
 exports[`1. renders 1`] = `
 .c4 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c5 {
   display: none;
 }
 
@@ -56,7 +61,7 @@ exports[`1. renders 1`] = `
 }
 
 @media (min-width:768px) {
-  .c4 {
+  .c5 {
     display: inline;
   }
 }
@@ -125,14 +130,6 @@ exports[`1. renders 1`] = `
   margin-right: 10px;
   text-align: right;
 }
-
-.IS1 {
-  text-decoration: none;
-}
-
-.IS2 {
-  text-decoration: none;
-}
 </style>
 
 <pagination-containerweb__ContainerWithResults>
@@ -159,64 +156,80 @@ exports[`1. renders 1`] = `
           <div
             className="c3 responsiveweb__LinkContainer-sc-10qy9xl-0 c3 css-view-1dbjc4n"
           >
-            <a
-              className="IS1"
+            <linkweb__RespLink
               href="?mock-1"
+              responsiveLinkStyles={null}
+              target={null}
+              underlined={true}
             >
-              <div
-                className="css-view-1dbjc4n r-alignItems-1awozwy r-flexDirection-18u37iz r-paddingBottom-xd6kpl r-paddingTop-m611by S3"
-                data-testid="pagination-button-previous"
+              <a
+                className="c4"
+                href="?mock-1"
+                target={null}
               >
                 <div
-                  className="css-text-901oao r-color-j7kcqb r-fontFamily-j2s0nr r-fontSize-a023e6 r-height-14g73ha r-lineHeight-fxxt2n r-marginLeft-1n0xq6e r-textAlign-fdjqy7 S2"
+                  className="css-view-1dbjc4n r-alignItems-1awozwy r-flexDirection-18u37iz r-paddingBottom-xd6kpl r-paddingTop-m611by S3"
+                  data-testid="pagination-button-previous"
                 >
-                  <span
-                    className="css-text-901oao css-textHasAncestor-16my406"
+                  <div
+                    className="css-text-901oao r-color-j7kcqb r-fontFamily-j2s0nr r-fontSize-a023e6 r-height-14g73ha r-lineHeight-fxxt2n r-marginLeft-1n0xq6e r-textAlign-fdjqy7 S2"
                   >
-                    Previous
-                    <page-labelweb__ResponsiveLabel>
-                      <span
-                        className="c4 page-labelweb__ResponsiveLabel-sc-1gpr097-0 c4 css-text-901oao css-textHasAncestor-16my406"
-                      >
-                         page
-                      </span>
-                    </page-labelweb__ResponsiveLabel>
-                  </span>
+                    <span
+                      className="css-text-901oao css-textHasAncestor-16my406"
+                    >
+                      Previous
+                      <page-labelweb__ResponsiveLabel>
+                        <span
+                          className="c5 page-labelweb__ResponsiveLabel-sc-1gpr097-0 c5 css-text-901oao css-textHasAncestor-16my406"
+                        >
+                           page
+                        </span>
+                      </page-labelweb__ResponsiveLabel>
+                    </span>
+                  </div>
                 </div>
-              </div>
-            </a>
+              </a>
+            </linkweb__RespLink>
           </div>
         </responsiveweb__LinkContainer>
         <responsiveweb__LinkContainer>
           <div
             className="c3 responsiveweb__LinkContainer-sc-10qy9xl-0 c3 css-view-1dbjc4n"
           >
-            <a
-              className="IS2"
+            <linkweb__RespLink
               href="?mock-3"
+              responsiveLinkStyles={null}
+              target={null}
+              underlined={true}
             >
-              <div
-                className="css-view-1dbjc4n r-alignItems-1awozwy r-flexDirection-18u37iz r-paddingBottom-xd6kpl r-paddingTop-m611by S3"
-                data-testid="pagination-button-next"
+              <a
+                className="c4"
+                href="?mock-3"
+                target={null}
               >
                 <div
-                  className="css-text-901oao r-color-j7kcqb r-fontFamily-j2s0nr r-fontSize-a023e6 r-height-14g73ha r-lineHeight-fxxt2n r-marginRight-zso239 r-textAlign-1ff274t S4"
+                  className="css-view-1dbjc4n r-alignItems-1awozwy r-flexDirection-18u37iz r-paddingBottom-xd6kpl r-paddingTop-m611by S3"
+                  data-testid="pagination-button-next"
                 >
-                  <span
-                    className="css-text-901oao css-textHasAncestor-16my406"
+                  <div
+                    className="css-text-901oao r-color-j7kcqb r-fontFamily-j2s0nr r-fontSize-a023e6 r-height-14g73ha r-lineHeight-fxxt2n r-marginRight-zso239 r-textAlign-1ff274t S4"
                   >
-                    Next
-                    <page-labelweb__ResponsiveLabel>
-                      <span
-                        className="c4 page-labelweb__ResponsiveLabel-sc-1gpr097-0 c4 css-text-901oao css-textHasAncestor-16my406"
-                      >
-                         page
-                      </span>
-                    </page-labelweb__ResponsiveLabel>
-                  </span>
+                    <span
+                      className="css-text-901oao css-textHasAncestor-16my406"
+                    >
+                      Next
+                      <page-labelweb__ResponsiveLabel>
+                        <span
+                          className="c5 page-labelweb__ResponsiveLabel-sc-1gpr097-0 c5 css-text-901oao css-textHasAncestor-16my406"
+                        >
+                           page
+                        </span>
+                      </page-labelweb__ResponsiveLabel>
+                    </span>
+                  </div>
                 </div>
-              </div>
-            </a>
+              </a>
+            </linkweb__RespLink>
           </div>
         </responsiveweb__LinkContainer>
       </div>

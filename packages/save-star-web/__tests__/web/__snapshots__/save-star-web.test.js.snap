@@ -41,7 +41,9 @@ Array [
   <div>
     Saved
   </div>,
-  <a>
+  <a
+    target={null}
+  >
     <div>
       <svg
         aria-label="[title]"
@@ -69,7 +71,9 @@ Array [
   <div>
     Save  
   </div>,
-  <a>
+  <a
+    target={null}
+  >
     <div>
       <svg
         aria-label="[title]"

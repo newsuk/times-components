@@ -107,6 +107,7 @@ exports[`1. a full article with an image as the lead asset 1`] = `
   <nav>
     <a
       href="/topic/topic"
+      target={null}
     >
       Topic
     </a>
@@ -149,7 +150,9 @@ exports[`1. a full article with an image as the lead asset 1`] = `
     </span>
   </span>
   Share
-  <a>
+  <a
+    target={null}
+  >
     <svg
       aria-label="[title]"
       height={15}
@@ -207,7 +210,9 @@ exports[`1. a full article with an image as the lead asset 1`] = `
       </g>
     </svg>
   </a>
-  <a>
+  <a
+    target={null}
+  >
     <svg
       aria-label="[title]"
       height={15}
@@ -224,7 +229,9 @@ exports[`1. a full article with an image as the lead asset 1`] = `
     </svg>
   </a>
   Save  
-  <a>
+  <a
+    target={null}
+  >
     <svg
       aria-label="[title]"
       height={18}
@@ -317,12 +324,15 @@ exports[`1. a full article with an image as the lead asset 1`] = `
   <nav>
     <a
       href="/topic/topic"
+      target={null}
     >
       Topic
     </a>
   </nav>
   Share
-  <a>
+  <a
+    target={null}
+  >
     <svg
       aria-label="[title]"
       height={15}
@@ -380,7 +390,9 @@ exports[`1. a full article with an image as the lead asset 1`] = `
       </g>
     </svg>
   </a>
-  <a>
+  <a
+    target={null}
+  >
     <svg
       aria-label="[title]"
       height={15}
@@ -397,7 +409,9 @@ exports[`1. a full article with an image as the lead asset 1`] = `
     </svg>
   </a>
   Save  
-  <a>
+  <a
+    target={null}
+  >
     <svg
       aria-label="[title]"
       height={18}

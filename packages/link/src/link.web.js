@@ -1,63 +1,54 @@
+/* eslint-disable react/require-default-props */
 import React from "react";
 import styled from "styled-components";
 import { breakpoints } from "@times-components/styleguide";
 import PropTypes from "prop-types";
 
-const RespLink = responsiveLinkStyles =>
-  styled.a`
-    ${responsiveLinkStyles.base} @media (min-width: ${breakpoints.medium}px) {
-      ${responsiveLinkStyles.medium};
-    }
-  `;
+const respStylesSelector = selector => ({ responsiveLinkStyles }) =>
+  (responsiveLinkStyles && responsiveLinkStyles[selector]) || "";
+
+const RespLink = styled.a`
+  text-decoration: ${props =>
+    props.underlined && props.responsiveLinkStyles ? "underline" : "none"};
+
+  ${respStylesSelector("base")};
+
+  @media (min-width: ${breakpoints.medium}px) {
+    ${respStylesSelector("medium")};
+  }
+`;
 
 const Link = ({
   children,
-  onPress,
-  responsiveLinkStyles,
-  target,
   url,
-  underlined
+  onPress = () => {},
+  target = null,
+  underlined = true,
+  responsiveLinkStyles = null
 }) => {
-  const Wrapper =
-    responsiveLinkStyles !== null ? RespLink(responsiveLinkStyles) : "a";
-
-  const style =
-    underlined && responsiveLinkStyles
-      ? { textDecoration: "underline" }
-      : { textDecoration: "none" };
-
   const props = {
-    href: url,
-    onClick: onPress,
-    style
+    underlined,
+    target,
+    responsiveLinkStyles
   };
 
-  return target ? (
-    <Wrapper {...props} target={target}>
+  return (
+    <RespLink href={url} onClick={onPress} {...props}>
       {children}
-    </Wrapper>
-  ) : (
-    <Wrapper {...props}>{children}</Wrapper>
+    </RespLink>
   );
 };
 
 Link.propTypes = {
   children: PropTypes.node.isRequired,
+  url: PropTypes.string.isRequired,
   onPress: PropTypes.func,
+  target: PropTypes.string,
+  underlined: PropTypes.bool,
   responsiveLinkStyles: PropTypes.shape({
     base: PropTypes.string,
     medium: PropTypes.string
-  }),
-  target: PropTypes.string,
-  url: PropTypes.string.isRequired,
-  underlined: PropTypes.bool
-};
-
-Link.defaultProps = {
-  onPress: () => {},
-  responsiveLinkStyles: null,
-  target: null,
-  underlined: true
+  })
 };
 
 export default Link;

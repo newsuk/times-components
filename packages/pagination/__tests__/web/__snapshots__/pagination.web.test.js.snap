@@ -14,68 +14,84 @@ exports[`1. renders results, previous and next 1`] = `
       <div>
         <responsiveweb__LinkContainer>
           <div>
-            <a
+            <linkweb__RespLink
               href="?mock-4"
+              responsiveLinkStyles={null}
+              target={null}
+              underlined={true}
             >
-              <div>
-                <svg
-                  height={12}
-                  viewBox="42 12 60 120"
-                  width={7}
-                >
-                  <g
-                    fill="#006699"
-                  >
-                    <path
-                      d="8cd5ea7b91eea38d77fd9ad20f3573cb"
-                    />
-                  </g>
-                </svg>
+              <a
+                href="?mock-4"
+                target={null}
+              >
                 <div>
-                  <span>
-                    Previous
-                    <page-labelweb__ResponsiveLabel>
-                      <span>
-                         page
-                      </span>
-                    </page-labelweb__ResponsiveLabel>
-                  </span>
+                  <svg
+                    height={12}
+                    viewBox="42 12 60 120"
+                    width={7}
+                  >
+                    <g
+                      fill="#006699"
+                    >
+                      <path
+                        d="8cd5ea7b91eea38d77fd9ad20f3573cb"
+                      />
+                    </g>
+                  </svg>
+                  <div>
+                    <span>
+                      Previous
+                      <page-labelweb__ResponsiveLabel>
+                        <span>
+                           page
+                        </span>
+                      </page-labelweb__ResponsiveLabel>
+                    </span>
+                  </div>
                 </div>
-              </div>
-            </a>
+              </a>
+            </linkweb__RespLink>
           </div>
         </responsiveweb__LinkContainer>
         <responsiveweb__LinkContainer>
           <div>
-            <a
+            <linkweb__RespLink
               href="?mock-6"
+              responsiveLinkStyles={null}
+              target={null}
+              underlined={true}
             >
-              <div>
+              <a
+                href="?mock-6"
+                target={null}
+              >
                 <div>
-                  <span>
-                    Next
-                    <page-labelweb__ResponsiveLabel>
-                      <span>
-                         page
-                      </span>
-                    </page-labelweb__ResponsiveLabel>
-                  </span>
-                </div>
-                <svg
-                  height={12}
-                  viewBox="42 12 60 120"
-                  width={7}
-                >
-                  <g
-                    fill="#006699"
+                  <div>
+                    <span>
+                      Next
+                      <page-labelweb__ResponsiveLabel>
+                        <span>
+                           page
+                        </span>
+                      </page-labelweb__ResponsiveLabel>
+                    </span>
+                  </div>
+                  <svg
+                    height={12}
+                    viewBox="42 12 60 120"
+                    width={7}
                   >
-                    <path
-                      d="9a11f164df72df4cb9ea6a3266824472"
-                    />
-                  </g>
-                </svg>
-              </div>
-            </a>
+                    <g
+                      fill="#006699"
+                    >
+                      <path
+                        d="9a11f164df72df4cb9ea6a3266824472"
+                      />
+                    </g>
+                  </svg>
+                </div>
+              </a>
+            </linkweb__RespLink>
           </div>
         </responsiveweb__LinkContainer>
       </div>
@@ -91,68 +107,84 @@ exports[`2. renders with no results 1`] = `
       <div>
         <responsiveweb__LinkContainer>
           <div>
-            <a
+            <linkweb__RespLink
               href="?mock-4"
+              responsiveLinkStyles={null}
+              target={null}
+              underlined={true}
             >
-              <div>
-                <svg
-                  height={12}
-                  viewBox="42 12 60 120"
-                  width={7}
-                >
-                  <g
-                    fill="#006699"
-                  >
-                    <path
-                      d="8cd5ea7b91eea38d77fd9ad20f3573cb"
-                    />
-                  </g>
-                </svg>
+              <a
+                href="?mock-4"
+                target={null}
+              >
                 <div>
-                  <span>
-                    Previous
-                    <page-labelweb__ResponsiveLabel>
-                      <span>
-                         page
-                      </span>
-                    </page-labelweb__ResponsiveLabel>
-                  </span>
+                  <svg
+                    height={12}
+                    viewBox="42 12 60 120"
+                    width={7}
+                  >
+                    <g
+                      fill="#006699"
+                    >
+                      <path
+                        d="8cd5ea7b91eea38d77fd9ad20f3573cb"
+                      />
+                    </g>
+                  </svg>
+                  <div>
+                    <span>
+                      Previous
+                      <page-labelweb__ResponsiveLabel>
+                        <span>
+                           page
+                        </span>
+                      </page-labelweb__ResponsiveLabel>
+                    </span>
+                  </div>
                 </div>
-              </div>
-            </a>
+              </a>
+            </linkweb__RespLink>
           </div>
         </responsiveweb__LinkContainer>
         <responsiveweb__LinkContainer>
           <div>
-            <a
+            <linkweb__RespLink
               href="?mock-6"
+              responsiveLinkStyles={null}
+              target={null}
+              underlined={true}
             >
-              <div>
+              <a
+                href="?mock-6"
+                target={null}
+              >
                 <div>
-                  <span>
-                    Next
-                    <page-labelweb__ResponsiveLabel>
-                      <span>
-                         page
-                      </span>
-                    </page-labelweb__ResponsiveLabel>
-                  </span>
-                </div>
-                <svg
-                  height={12}
-                  viewBox="42 12 60 120"
-                  width={7}
-                >
-                  <g
-                    fill="#006699"
+                  <div>
+                    <span>
+                      Next
+                      <page-labelweb__ResponsiveLabel>
+                        <span>
+                           page
+                        </span>
+                      </page-labelweb__ResponsiveLabel>
+                    </span>
+                  </div>
+                  <svg
+                    height={12}
+                    viewBox="42 12 60 120"
+                    width={7}
                   >
-                    <path
-                      d="9a11f164df72df4cb9ea6a3266824472"
-                    />
-                  </g>
-                </svg>
-              </div>
-            </a>
+                    <g
+                      fill="#006699"
+                    >
+                      <path
+                        d="9a11f164df72df4cb9ea6a3266824472"
+                      />
+                    </g>
+                  </svg>
+                </div>
+              </a>
+            </linkweb__RespLink>
           </div>
         </responsiveweb__LinkContainer>
       </div>
@@ -199,35 +231,43 @@ exports[`4. limits the starting result to the total count 1`] = `
       <div>
         <responsiveweb__LinkContainer>
           <div>
-            <a
+            <linkweb__RespLink
               href="?mock-3"
+              responsiveLinkStyles={null}
+              target={null}
+              underlined={true}
             >
-              <div>
-                <svg
-                  height={12}
-                  viewBox="42 12 60 120"
-                  width={7}
-                >
-                  <g
-                    fill="#006699"
-                  >
-                    <path
-                      d="8cd5ea7b91eea38d77fd9ad20f3573cb"
-                    />
-                  </g>
-                </svg>
+              <a
+                href="?mock-3"
+                target={null}
+              >
                 <div>
-                  <span>
-                    Previous
-                    <page-labelweb__ResponsiveLabel>
-                      <span>
-                         page
-                      </span>
-                    </page-labelweb__ResponsiveLabel>
-                  </span>
+                  <svg
+                    height={12}
+                    viewBox="42 12 60 120"
+                    width={7}
+                  >
+                    <g
+                      fill="#006699"
+                    >
+                      <path
+                        d="8cd5ea7b91eea38d77fd9ad20f3573cb"
+                      />
+                    </g>
+                  </svg>
+                  <div>
+                    <span>
+                      Previous
+                      <page-labelweb__ResponsiveLabel>
+                        <span>
+                           page
+                        </span>
+                      </page-labelweb__ResponsiveLabel>
+                    </span>
+                  </div>
                 </div>
-              </div>
-            </a>
+              </a>
+            </linkweb__RespLink>
           </div>
         </responsiveweb__LinkContainer>
         <responsiveweb__LinkContainer>
@@ -246,35 +286,43 @@ exports[`5. renders previous and not next 1`] = `
       <div>
         <responsiveweb__LinkContainer>
           <div>
-            <a
+            <linkweb__RespLink
               href="?mock-4"
+              responsiveLinkStyles={null}
+              target={null}
+              underlined={true}
             >
-              <div>
-                <svg
-                  height={12}
-                  viewBox="42 12 60 120"
-                  width={7}
-                >
-                  <g
-                    fill="#006699"
-                  >
-                    <path
-                      d="8cd5ea7b91eea38d77fd9ad20f3573cb"
-                    />
-                  </g>
-                </svg>
+              <a
+                href="?mock-4"
+                target={null}
+              >
                 <div>
-                  <span>
-                    Previous
-                    <page-labelweb__ResponsiveLabel>
-                      <span>
-                         page
-                      </span>
-                    </page-labelweb__ResponsiveLabel>
-                  </span>
+                  <svg
+                    height={12}
+                    viewBox="42 12 60 120"
+                    width={7}
+                  >
+                    <g
+                      fill="#006699"
+                    >
+                      <path
+                        d="8cd5ea7b91eea38d77fd9ad20f3573cb"
+                      />
+                    </g>
+                  </svg>
+                  <div>
+                    <span>
+                      Previous
+                      <page-labelweb__ResponsiveLabel>
+                        <span>
+                           page
+                        </span>
+                      </page-labelweb__ResponsiveLabel>
+                    </span>
+                  </div>
                 </div>
-              </div>
-            </a>
+              </a>
+            </linkweb__RespLink>
           </div>
         </responsiveweb__LinkContainer>
         <responsiveweb__LinkContainer>
@@ -296,35 +344,43 @@ exports[`6. renders next and not previous 1`] = `
         </responsiveweb__LinkContainer>
         <responsiveweb__LinkContainer>
           <div>
-            <a
+            <linkweb__RespLink
               href="?mock-2"
+              responsiveLinkStyles={null}
+              target={null}
+              underlined={true}
             >
-              <div>
+              <a
+                href="?mock-2"
+                target={null}
+              >
                 <div>
-                  <span>
-                    Next
-                    <page-labelweb__ResponsiveLabel>
-                      <span>
-                         page
-                      </span>
-                    </page-labelweb__ResponsiveLabel>
-                  </span>
-                </div>
-                <svg
-                  height={12}
-                  viewBox="42 12 60 120"
-                  width={7}
-                >
-                  <g
-                    fill="#006699"
+                  <div>
+                    <span>
+                      Next
+                      <page-labelweb__ResponsiveLabel>
+                        <span>
+                           page
+                        </span>
+                      </page-labelweb__ResponsiveLabel>
+                    </span>
+                  </div>
+                  <svg
+                    height={12}
+                    viewBox="42 12 60 120"
+                    width={7}
                   >
-                    <path
-                      d="9a11f164df72df4cb9ea6a3266824472"
-                    />
-                  </g>
-                </svg>
-              </div>
-            </a>
+                    <g
+                      fill="#006699"
+                    >
+                      <path
+                        d="9a11f164df72df4cb9ea6a3266824472"
+                      />
+                    </g>
+                  </svg>
+                </div>
+              </a>
+            </linkweb__RespLink>
           </div>
         </responsiveweb__LinkContainer>
       </div>

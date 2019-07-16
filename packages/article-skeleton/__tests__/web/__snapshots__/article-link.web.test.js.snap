@@ -1,23 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Article Link should render with the dropCap link not underlined 1`] = `
-<a
-  class="linkweb-yfb9n-0 hNmDnn"
-  href="www.example.com"
-  style="text-decoration:none"
+<Link
   target="target"
+  underlined={false}
+  url="www.example.com"
 >
   A
-</a>
+</Link>
 `;
 
 exports[`Article Link should render with the link underlined 1`] = `
-<a
-  class="linkweb-yfb9n-0 hNmDnn"
-  href="www.example.com"
-  style="text-decoration:underline"
+<Link
   target="target"
+  underlined={true}
+  url="www.example.com"
 >
   a link
-</a>
+</Link>
 `;
