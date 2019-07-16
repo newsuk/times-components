@@ -68,10 +68,6 @@ task generateReactArchives {
         from('../node_modules/react-native/android')
         into(reactRepositoryPath)
     }
-    task jscCopy(type: Copy) {
-        from('../node_modules/@kudo-ci/jsc-android/dist')
-        into(reactRepositoryPath)
-    }
 
     //pack the graphql files in the xnative.aar library so they can be reused by the android app
     task gqlCopy(type: Copy) {
@@ -82,6 +78,5 @@ task generateReactArchives {
 
     removePreviousReactArchives.dependsOn(gqlCopy)
     reactNativeCopy.dependsOn(removePreviousReactArchives)
-    jscCopy.dependsOn(reactNativeCopy)
-    generateReactArchives.dependsOn(jscCopy)
+    generateReactArchives.dependsOn(reactNativeCopy)
 }
