@@ -321,6 +321,7 @@ class ArticleSkeleton extends Component {
     return (
       <AdComposer adConfig={adConfig}>
         <View style={styles.articleContainer}>
+          <Text>==={`${global.HermesInternal}`}===</Text>
           <FlatList
             data={content || []}
             initialListSize={listViewSize}

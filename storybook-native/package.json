@@ -30,7 +30,7 @@
     "babel-polyfill": "6.26.0",
     "prop-types": "15.7.2",
     "react": "16.8.6",
-    "react-native": "0.60.2",
+    "react-native": "0.60.3",
     "react-native-svg": "9.4.0",
     "url-polyfill": "1.1.0"
   },

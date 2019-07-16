@@ -66,12 +66,7 @@ task generateReactArchives {
         from('../node_modules/react-native/android')
         into(reactRepositoryPath)
     }
-    task jscCopy(type: Copy) {
-        from('../node_modules/@kudo-ci/jsc-android/dist')
-        into(reactRepositoryPath)
-    }
 
     reactNativeCopy.dependsOn(removePreviousReactArchives)
-    jscCopy.dependsOn(reactNativeCopy)
-    generateReactArchives.dependsOn(jscCopy)
+    generateReactArchives.dependsOn(reactNativeCopy)
 }
