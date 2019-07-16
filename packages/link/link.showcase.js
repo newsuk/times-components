@@ -38,6 +38,37 @@ export default {
       type: "story"
     },
     {
+      component: (_, { action }) => {
+        const responsiveLinkStyles = {
+          base: `
+            height: 100px;
+            width: 100px;
+            display: block;
+            background-color: red;
+            color: white;
+          `,
+          medium: `
+            background-color: blue;
+          `
+        };
+
+        return (
+          <Link
+            onPress={action("onPress")}
+            url="https://thetimes.co.uk"
+            target="_blank"
+            responsiveLinkStyles={responsiveLinkStyles}
+            underlined={false}
+          >
+            resize me
+          </Link>
+        );
+      },
+      name: "Responsive Link",
+      type: "story",
+      platform: "web"
+    },
+    {
       component: (_, { action }) => (
         <Link
           onPress={e => {

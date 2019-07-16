@@ -2,8 +2,8 @@
 
 exports[`1. with responsive styles 1`] = `
 .c0 {
-  -webkit-text-decoration: underline !important;
-  text-decoration: underline !important;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
   color: #006699;
   font-family: "TimesDigitalW04-Regular";
   font-size: 17px;
@@ -22,6 +22,7 @@ exports[`1. with responsive styles 1`] = `
 <a
   className="c0"
   href="http://thetimes.co.uk"
+  target={null}
 >
   The Times
 </a>
@@ -29,8 +30,8 @@ exports[`1. with responsive styles 1`] = `
 
 exports[`2. with a target 1`] = `
 .c0 {
-  -webkit-text-decoration: none !important;
-  text-decoration: none !important;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 <a
@@ -44,13 +45,14 @@ exports[`2. with a target 1`] = `
 
 exports[`3. renders link 1`] = `
 .c0 {
-  -webkit-text-decoration: none !important;
-  text-decoration: none !important;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 <a
   className="c0"
   href="http://thetimes.co.uk"
+  target={null}
 >
   The Times
 </a>
@@ -58,8 +60,8 @@ exports[`3. renders link 1`] = `
 
 exports[`4. renders link with target 1`] = `
 .c0 {
-  -webkit-text-decoration: none !important;
-  text-decoration: none !important;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 <a

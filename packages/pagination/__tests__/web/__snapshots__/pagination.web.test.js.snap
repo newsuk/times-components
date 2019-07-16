@@ -16,10 +16,13 @@ exports[`1. renders results, previous and next 1`] = `
           <div>
             <linkweb__RespLink
               href="?mock-4"
+              responsiveLinkStyles={null}
+              target={null}
               underlined={true}
             >
               <a
                 href="?mock-4"
+                target={null}
               >
                 <div>
                   <svg
@@ -54,10 +57,13 @@ exports[`1. renders results, previous and next 1`] = `
           <div>
             <linkweb__RespLink
               href="?mock-6"
+              responsiveLinkStyles={null}
+              target={null}
               underlined={true}
             >
               <a
                 href="?mock-6"
+                target={null}
               >
                 <div>
                   <div>
@@ -103,10 +109,13 @@ exports[`2. renders with no results 1`] = `
           <div>
             <linkweb__RespLink
               href="?mock-4"
+              responsiveLinkStyles={null}
+              target={null}
               underlined={true}
             >
               <a
                 href="?mock-4"
+                target={null}
               >
                 <div>
                   <svg
@@ -141,10 +150,13 @@ exports[`2. renders with no results 1`] = `
           <div>
             <linkweb__RespLink
               href="?mock-6"
+              responsiveLinkStyles={null}
+              target={null}
               underlined={true}
             >
               <a
                 href="?mock-6"
+                target={null}
               >
                 <div>
                   <div>
@@ -221,10 +233,13 @@ exports[`4. limits the starting result to the total count 1`] = `
           <div>
             <linkweb__RespLink
               href="?mock-3"
+              responsiveLinkStyles={null}
+              target={null}
               underlined={true}
             >
               <a
                 href="?mock-3"
+                target={null}
               >
                 <div>
                   <svg
@@ -273,10 +288,13 @@ exports[`5. renders previous and not next 1`] = `
           <div>
             <linkweb__RespLink
               href="?mock-4"
+              responsiveLinkStyles={null}
+              target={null}
               underlined={true}
             >
               <a
                 href="?mock-4"
+                target={null}
               >
                 <div>
                   <svg
@@ -328,10 +346,13 @@ exports[`6. renders next and not previous 1`] = `
           <div>
             <linkweb__RespLink
               href="?mock-2"
+              responsiveLinkStyles={null}
+              target={null}
               underlined={true}
             >
               <a
                 href="?mock-2"
+                target={null}
               >
                 <div>
                   <div>

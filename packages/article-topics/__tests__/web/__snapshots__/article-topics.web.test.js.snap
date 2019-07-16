@@ -5,6 +5,7 @@ exports[`1. group of topics 1`] = `
   <div>
     <a
       href="/topic/football"
+      target={null}
     >
       <div>
         <div
@@ -19,6 +20,7 @@ exports[`1. group of topics 1`] = `
   <div>
     <a
       href="/topic/manchester-united"
+      target={null}
     >
       <div>
         <div
@@ -33,6 +35,7 @@ exports[`1. group of topics 1`] = `
   <div>
     <a
       href="/topic/chelsea"
+      target={null}
     >
       <div>
         <div
@@ -47,6 +50,7 @@ exports[`1. group of topics 1`] = `
   <div>
     <a
       href="/topic/arsenal"
+      target={null}
     >
       <div>
         <div
@@ -61,6 +65,7 @@ exports[`1. group of topics 1`] = `
   <div>
     <a
       href="/topic/rugby-union"
+      target={null}
     >
       <div>
         <div

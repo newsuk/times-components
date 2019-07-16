@@ -9,9 +9,7 @@ const respStylesSelector = selector => ({ responsiveLinkStyles }) =>
 
 const RespLink = styled.a`
   text-decoration: ${props =>
-    props.underlined && props.responsiveLinkStyles
-      ? "underline"
-      : "none"} !important;
+    props.underlined && props.responsiveLinkStyles ? "underline" : "none"};
 
   ${respStylesSelector("base")};
 
@@ -28,11 +26,11 @@ const Link = ({
   underlined = true,
   responsiveLinkStyles = null
 }) => {
-  const props = Object.assign(
-    { underlined },
-    target ? { target } : {},
-    responsiveLinkStyles ? { responsiveLinkStyles } : {}
-  );
+  const props = {
+    underlined,
+    target,
+    responsiveLinkStyles
+  };
 
   return (
     <RespLink href={url} onClick={onPress} {...props}>

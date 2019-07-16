@@ -2,8 +2,8 @@
 
 exports[`1. renders 1`] = `
 .c4 {
-  -webkit-text-decoration: none !important;
-  text-decoration: none !important;
+  -webkit-text-decoration: none;
+  text-decoration: none;
 }
 
 .c5 {
@@ -158,11 +158,14 @@ exports[`1. renders 1`] = `
           >
             <linkweb__RespLink
               href="?mock-1"
+              responsiveLinkStyles={null}
+              target={null}
               underlined={true}
             >
               <a
                 className="c4"
                 href="?mock-1"
+                target={null}
               >
                 <div
                   className="css-view-1dbjc4n r-alignItems-1awozwy r-flexDirection-18u37iz r-paddingBottom-xd6kpl r-paddingTop-m611by S3"
@@ -195,11 +198,14 @@ exports[`1. renders 1`] = `
           >
             <linkweb__RespLink
               href="?mock-3"
+              responsiveLinkStyles={null}
+              target={null}
               underlined={true}
             >
               <a
                 className="c4"
                 href="?mock-3"
+                target={null}
               >
                 <div
                   className="css-view-1dbjc4n r-alignItems-1awozwy r-flexDirection-18u37iz r-paddingBottom-xd6kpl r-paddingTop-m611by S3"
