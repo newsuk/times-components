@@ -121,7 +121,9 @@ exports[`1. a full article 1`] = `
     </figcaption>
   </figure>
   Share
-  <a>
+  <a
+    target={null}
+  >
     <svg
       aria-label="[title]"
       height={15}
@@ -179,7 +181,9 @@ exports[`1. a full article 1`] = `
       </g>
     </svg>
   </a>
-  <a>
+  <a
+    target={null}
+  >
     <svg
       aria-label="[title]"
       height={15}
@@ -196,7 +200,9 @@ exports[`1. a full article 1`] = `
     </svg>
   </a>
   Save  
-  <a>
+  <a
+    target={null}
+  >
     <svg
       aria-label="[title]"
       height={18}
@@ -289,12 +295,15 @@ exports[`1. a full article 1`] = `
   <nav>
     <a
       href="/topic/topic"
+      target={null}
     >
       Topic
     </a>
   </nav>
   Share
-  <a>
+  <a
+    target={null}
+  >
     <svg
       aria-label="[title]"
       height={15}
@@ -352,7 +361,9 @@ exports[`1. a full article 1`] = `
       </g>
     </svg>
   </a>
-  <a>
+  <a
+    target={null}
+  >
     <svg
       aria-label="[title]"
       height={15}
@@ -369,7 +380,9 @@ exports[`1. a full article 1`] = `
     </svg>
   </a>
   Save  
-  <a>
+  <a
+    target={null}
+  >
     <svg
       aria-label="[title]"
       height={18}

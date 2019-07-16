@@ -2,9 +2,8 @@
 
 exports[`Article Link should render with the dropCap link not underlined 1`] = `
 <a
-  class="linkweb-yfb9n-0 hNmDnn"
+  class="linkweb__RespLink-yfb9n-0 dbQloS"
   href="www.example.com"
-  style="text-decoration:none"
   target="target"
 >
   A
@@ -13,9 +12,8 @@ exports[`Article Link should render with the dropCap link not underlined 1`] = `
 
 exports[`Article Link should render with the link underlined 1`] = `
 <a
-  class="linkweb-yfb9n-0 hNmDnn"
+  class="linkweb__RespLink-yfb9n-0 eiSqrz"
   href="www.example.com"
-  style="text-decoration:underline"
   target="target"
 >
   a link
