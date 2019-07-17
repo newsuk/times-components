@@ -3,7 +3,7 @@
 exports[`save star component save star loading state 1`] = `
 Array [
   <div>
-    Save  
+    Save
   </div>,
   <div
     aria-valuemax="1"
@@ -49,14 +49,14 @@ Array [
         aria-label="[title]"
         height={18}
         role="img"
-        viewBox="0 0 21 20"
+        viewBox="0 0 18 18"
         width={18}
       >
         <title>
           Remove from My Articles
         </title>
         <path
-          d="M16.0321915,18.681086 L13.9014848,12.1628241 L19.4524784,8.14270857 L12.6019503,8.15770268 L10.5,1.63105093 L8.39804966,8.15770268 L1.54752164,8.14270857 L7.09851524,12.1628241 L4.96780845,18.681086 L10.5,14.6375865 L16.0321915,18.681086 Z"
+          d="M13.616 16.644l-1.778-5.711 4.674-3.554-5.768.013L9 1.705 7.256 7.392 1.488 7.38l4.674 3.554-1.778 5.71L9 13.102l4.616 3.543z"
           fill="#006699"
           stroke="#696969"
         />
@@ -69,7 +69,7 @@ Array [
 exports[`save star component star with unsaved status renders correctly 1`] = `
 Array [
   <div>
-    Save  
+    Save
   </div>,
   <a
     target={null}
@@ -79,14 +79,14 @@ Array [
         aria-label="[title]"
         height={18}
         role="img"
-        viewBox="0 0 21 20"
+        viewBox="0 0 18 18"
         width={18}
       >
         <title>
           Save to My Articles
         </title>
         <path
-          d="M16.0321915,18.681086 L13.9014848,12.1628241 L19.4524784,8.14270857 L12.6019503,8.15770268 L10.5,1.63105093 L8.39804966,8.15770268 L1.54752164,8.14270857 L7.09851524,12.1628241 L4.96780845,18.681086 L10.5,14.6375865 L16.0321915,18.681086 Z"
+          d="M13.616 16.644l-1.778-5.711 4.674-3.554-5.768.013L9 1.705 7.256 7.392 1.488 7.38l4.674 3.554-1.778 5.71L9 13.102l4.616 3.543z"
           fill="#FFFFFF"
           stroke="#696969"
         />

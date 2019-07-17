@@ -7,6 +7,13 @@ This also supports sticking relative to a specified container using the provided
 to calculate the required offset. This can be useful if you wish to stick the
 component below another fixed element.
 
+The package also provides a number of `selectors` for use with styled components
+for selectively applying styles in certain conditions.
+
+It also provides `computeProgressStyles`, which is useful if you wish to
+to animate a transition between your non-sticky and sticky state as you scroll
+through the original component position.
+
 ## Contributing
 
 Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before contributing to this

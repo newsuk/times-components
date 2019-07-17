@@ -1,28 +1,74 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+import { rgba } from "polished";
 import SaveAndShareBar from "@times-components/save-and-share-bar";
-import Sticky, { STICKY_CLASS_NAME } from "@times-components/sticky";
+import Sticky, {
+  computeProgressStyles,
+  selectors,
+  mediaQuery
+} from "@times-components/sticky";
 import { breakpoints, colours } from "@times-components/styleguide";
+import { ServerClientRender } from "@times-components/utils";
 import { ArticleKeylineItem } from "./keylines";
 
-export const SaveShareContainer = styled.div`
+const SaveShareContainer = styled.div`
   background-color: ${colours.functional.white};
   height: 60px;
 
-  &.${STICKY_CLASS_NAME} {
-    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
-  }
+  ${props =>
+    props.isClient && [
+      selectors.sizer(css`
+        border-bottom: 1px solid transparent;
+        will-change: border-bottom-color;
+      `),
+      selectors.sticky(css`
+        will-change: height, box-shadow;
+      `),
+      computeProgressStyles(
+        progress => css`
+          height: ${60 - progress * 10}px;
+          box-shadow: 0 2px 5px 0 ${rgba(0, 0, 0, 0.2 * progress)};
+
+          ${selectors.stickySizer(css`
+            border-bottom-color: ${rgba(
+              colours.functional.keyline,
+              Math.max(0, 1 - 2 * progress)
+            )};
+          `)};
+        `
+      )
+    ]};
 `;
 
-const shouldBeSticky = Sticky.mediaQuery(`(max-width: ${breakpoints.huge}px)`);
+// This is to avoid transition styles being server side rendered which we
+// do not need. They'll be quite large and are unnecessary on initial render
+function SaveShareContainerWrapper(props) {
+  return (
+    <ServerClientRender
+      client={<SaveShareContainer isClient {...props} />}
+      server={<SaveShareContainer {...props} />}
+    />
+  );
+}
+
+const StyledKeylineItem = styled(ArticleKeylineItem)`
+  ${selectors.containsSticky(css`
+    border-bottom-color: transparent;
+  `)};
+`;
+
+const shouldBeSticky = mediaQuery(`(max-width: ${breakpoints.huge}px)`);
 
 function StickySaveAndShareBar(props) {
   return (
-    <ArticleKeylineItem>
-      <Sticky Component={SaveShareContainer} shouldBeSticky={shouldBeSticky}>
+    <StyledKeylineItem>
+      <Sticky
+        Component={SaveShareContainerWrapper}
+        shouldBeSticky={shouldBeSticky}
+      >
         <SaveAndShareBar {...props} />
       </Sticky>
-    </ArticleKeylineItem>
+    </StyledKeylineItem>
   );
 }
 

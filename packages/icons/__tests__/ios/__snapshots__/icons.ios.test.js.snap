@@ -199,7 +199,7 @@ exports[`4. iconstar renders 1`] = `
 <ARTSurfaceView
   style={
     Object {
-      "height": 19.047619047619047,
+      "height": 20,
       "width": 20,
     }
   }
@@ -207,17 +207,17 @@ exports[`4. iconstar renders 1`] = `
   <ARTGroup
     transform={
       Array [
-        0.9523809523809523,
+        1.1111111111111112,
         0,
         0,
-        0.9523809523809523,
+        1.1111111111111112,
         0,
         0,
       ]
     }
   >
     <ARTShape
-      d="4e2aaf4bf21b71962808897581776e47"
+      d="24397702a96dfdbaf6b5a92bba9c4a3b"
       fill={
         Array [
           0,

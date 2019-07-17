@@ -10,21 +10,25 @@
 
 Object.defineProperties(window.HTMLElement.prototype, {
   offsetLeft: {
+    configurable: true,
     get() {
       return parseFloat(window.getComputedStyle(this).marginLeft) || 0;
     }
   },
   offsetTop: {
+    configurable: true,
     get() {
       return parseFloat(window.getComputedStyle(this).marginTop) || 0;
     }
   },
   offsetHeight: {
+    configurable: true,
     get() {
       return parseFloat(window.getComputedStyle(this).height) || 0;
     }
   },
   offsetWidth: {
+    configurable: true,
     get() {
       return (
         parseFloat(window.getComputedStyle(this).width) ||
@@ -33,11 +37,13 @@ Object.defineProperties(window.HTMLElement.prototype, {
     }
   },
   clientWidth: {
+    configurable: true,
     get() {
       return this.offsetWidth;
     }
   },
   getBoundingClientRect: {
+    configurable: true,
     writable: true,
     value() {
       let top = -window.pageYOffset;
@@ -47,10 +53,19 @@ Object.defineProperties(window.HTMLElement.prototype, {
       while (node !== document.body) {
         top += node.offsetTop;
         left += node.offsetLeft;
+
+        while (node.previousSibling) {
+          node = node.previousSibling;
+
+          if (window.getComputedStyle(node).display !== "none") {
+            top += node.offsetTop + node.offsetHeight;
+          }
+        }
+
         node = node.parentNode;
       }
 
-      return { top, left, width: this.offsetWidth };
+      return { top, left, width: this.offsetWidth, height: this.offsetHeight };
     }
   }
 });

@@ -1,12 +1,21 @@
 /* eslint-env browser */
 import React, { Component, Fragment } from "react";
 import { ActivityIndicator, Text } from "react-native";
+import styled from "styled-components";
 import Link from "@times-components/link";
 import { HoverIcon } from "@times-components/utils";
 import PropTypes from "prop-types";
 import { IconStar } from "@times-components/icons";
 import styles, { getStyles } from "./styles";
 import withTrackEvents from "./tracking/with-track-events";
+
+const IconContainer = styled(HoverIcon)`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
 class SaveStarWeb extends Component {
@@ -83,7 +92,7 @@ class SaveStarWeb extends Component {
     const { fillColour, strokeColour } = saveStyle;
     return (
       <Link onPress={this.onSaveButtonPress} responsiveLinkStyles={styles.link}>
-        <HoverIcon colour={colour} hoverColour={hoverColour}>
+        <IconContainer colour={colour} hoverColour={hoverColour}>
           <IconStar
             fillColour={fillColour}
             strokeColour={strokeColour}
@@ -92,7 +101,7 @@ class SaveStarWeb extends Component {
             }
             height={18}
           />
-        </HoverIcon>
+        </IconContainer>
       </Link>
     );
   }
@@ -112,7 +121,7 @@ class SaveStarWeb extends Component {
 
     return (
       <Fragment>
-        <Text style={styles.label}>{savedStatus ? "Saved" : "Save  "}</Text>
+        <Text style={styles.label}>{savedStatus ? "Saved" : "Save"}</Text>
         {this.renderActivity()}
       </Fragment>
     );

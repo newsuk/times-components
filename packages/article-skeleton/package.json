@@ -102,6 +102,7 @@
     "lodash.get": "4.4.2",
     "lodash.pick": "4.4.0",
     "mockdate": "2.0.2",
+    "polished": "3.4.1",
     "prop-types": "15.7.2",
     "react-helmet-async": "1.0.2",
     "styled-components": "4.2.0"
