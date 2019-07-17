@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.101](https://github.com/newsuk/times-components/compare/@times-components/video-label@2.2.100...@times-components/video-label@2.2.101) (2019-07-17)
+
+
+### Bug Fixes
+
+* (REPLAT-6787) article video label alignment ([#2123](https://github.com/newsuk/times-components/issues/2123)) ([25598f9](https://github.com/newsuk/times-components/commit/25598f9))
+
+
+
+
+
 ## [2.2.100](https://github.com/newsuk/times-components/compare/@times-components/video-label@2.2.99...@times-components/video-label@2.2.100) (2019-07-15)
 
 **Note:** Version bump only for package @times-components/video-label
