@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
   },
   iconContainer: {
     ...sharedStyles.iconContainer,
-    paddingBottom: 3
+    paddingBottom: 2
   },
   title: {
     ...sharedStyles.title,

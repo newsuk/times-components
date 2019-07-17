@@ -3,7 +3,7 @@
 exports[`1. video label with a title 1`] = `
 <style>
 .S1 {
-  padding-bottom: 3px;
+  padding-bottom: 2px;
 }
 
 .S2 {
@@ -29,7 +29,8 @@ exports[`1. video label with a title 1`] = `
 }
 
 .IS1 {
-  padding-bottom: 3;
+  padding-bottom: 2;
+  align-self: center;
 }
 
 .IS2 {
@@ -64,7 +65,7 @@ exports[`1. video label with a title 1`] = `
     className="css-view-1dbjc4n r-alignItems-1habvwh r-flexDirection-18u37iz r-marginBottom-10sqg0u r-marginTop-19i43ro S3"
   >
     <div
-      className="css-view-1dbjc4n r-paddingBottom-3hmvjm S1"
+      className="css-view-1dbjc4n r-alignSelf-1kihuf0 r-paddingBottom-l4nmg1 S1"
     >
       <IconVideo
         fillColour="#008347"
@@ -83,7 +84,7 @@ exports[`1. video label with a title 1`] = `
 exports[`2. video label without a title shows video 1`] = `
 <style>
 .S1 {
-  padding-bottom: 3px;
+  padding-bottom: 2px;
 }
 
 .S2 {
@@ -109,7 +110,8 @@ exports[`2. video label without a title shows video 1`] = `
 }
 
 .IS1 {
-  padding-bottom: 3;
+  padding-bottom: 2;
+  align-self: center;
 }
 
 .IS2 {
@@ -144,7 +146,7 @@ exports[`2. video label without a title shows video 1`] = `
     className="css-view-1dbjc4n r-alignItems-1habvwh r-flexDirection-18u37iz r-marginBottom-10sqg0u r-marginTop-19i43ro S3"
   >
     <div
-      className="css-view-1dbjc4n r-paddingBottom-3hmvjm S1"
+      className="css-view-1dbjc4n r-alignSelf-1kihuf0 r-paddingBottom-l4nmg1 S1"
     >
       <IconVideo
         fillColour="#008347"
@@ -163,7 +165,7 @@ exports[`2. video label without a title shows video 1`] = `
 exports[`3. video label with the black default colour 1`] = `
 <style>
 .S1 {
-  padding-bottom: 3px;
+  padding-bottom: 2px;
 }
 
 .S2 {
@@ -189,7 +191,8 @@ exports[`3. video label with the black default colour 1`] = `
 }
 
 .IS1 {
-  padding-bottom: 3;
+  padding-bottom: 2;
+  align-self: center;
 }
 
 .IS2 {
@@ -224,7 +227,7 @@ exports[`3. video label with the black default colour 1`] = `
     className="css-view-1dbjc4n r-alignItems-1habvwh r-flexDirection-18u37iz r-marginBottom-10sqg0u r-marginTop-19i43ro S3"
   >
     <div
-      className="css-view-1dbjc4n r-paddingBottom-3hmvjm S1"
+      className="css-view-1dbjc4n r-alignSelf-1kihuf0 r-paddingBottom-l4nmg1 S1"
     >
       <IconVideo
         fillColour="black"
