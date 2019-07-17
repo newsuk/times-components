@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
   iconContainer: {
     ...sharedStyles.iconContainer,
     marginBottom: 3,
-    paddingBottom: 0
+    paddingBottom: 2
   },
   title: {
     ...sharedStyles.title,
