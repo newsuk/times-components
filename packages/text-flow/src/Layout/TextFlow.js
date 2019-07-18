@@ -11,6 +11,8 @@ export default class TextFlow extends Container {
 
   height = 20;
 
+  padding = 20;
+
   flow = [];
 
   // TODO: operate only on args and block, not children
@@ -86,11 +88,14 @@ export default class TextFlow extends Container {
               });
             }
           }
-          vPosition += next.measuredHeight;
-          child.addChild(next);
+          pulledLines += this.padding / next.lineHeight
+          next.block.measuredHeight += this.padding
+          next.measuredHeight += this.padding
+          vPosition += next.measuredHeight
+          child.addChild(next)
           grabbed += 1;
           next = this.flow[grabbed];
-          if (pulledLines >= elNumLines || !next) {
+          if (pulledLines >= elLines.length || !next) {
             break;
           }
         }

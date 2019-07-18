@@ -257,6 +257,7 @@ class ArticleSkeleton extends Component {
     const { fontScale } = Dimensions.get("window");
 
     const textFlow = new Layout.TextFlow({
+      padding: 20,
       flow: rows.map(rowData =>
         ArticleRowFlow({
           content: rowData,
