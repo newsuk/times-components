@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.28.33](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.28.32...@times-components/styleguide@3.28.33) (2019-07-18)
+
+
+### Bug Fixes
+
+* (REPLAT-6982) update slices width for huge breakpoint ([#2121](https://github.com/newsuk/times-components/issues/2121)) ([6fa12b3](https://github.com/newsuk/times-components/commit/6fa12b3))
+
+
+
+
+
 ## [3.28.32](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.28.31...@times-components/styleguide@3.28.32) (2019-07-15)
 
 **Note:** Version bump only for package @times-components/styleguide

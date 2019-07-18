@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.8.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.7.19...@times-components/article-magazine-standard@3.8.0) (2019-07-18)
+
+
+### Features
+
+* save and share bar styles + animated transition  ([#2120](https://github.com/newsuk/times-components/issues/2120)) ([2f81ee2](https://github.com/newsuk/times-components/commit/2f81ee2))
+
+
+
+
+
 ## [3.7.19](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.7.18...@times-components/article-magazine-standard@3.7.19) (2019-07-17)
 
 **Note:** Version bump only for package @times-components/article-magazine-standard

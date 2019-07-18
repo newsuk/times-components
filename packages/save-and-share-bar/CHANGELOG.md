@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.6.26...@times-components/save-and-share-bar@0.7.0) (2019-07-18)
+
+
+### Features
+
+* save and share bar styles + animated transition  ([#2120](https://github.com/newsuk/times-components/issues/2120)) ([2f81ee2](https://github.com/newsuk/times-components/commit/2f81ee2))
+
+
+
+
+
 ## [0.6.26](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.6.25...@times-components/save-and-share-bar@0.6.26) (2019-07-16)
 
 **Note:** Version bump only for package @times-components/save-and-share-bar
