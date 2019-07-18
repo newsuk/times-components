@@ -1,6 +1,6 @@
 {
   "name": "@times-components/ad",
-  "version": "2.6.27",
+  "version": "2.6.28",
   "description": "Ad component",
   "main": "dist/ad",
   "dev": "src/ad",
@@ -61,7 +61,7 @@
   "dependencies": {
     "@times-components/styleguide": "3.28.33",
     "@times-components/utils": "4.11.20",
-    "@times-components/watermark": "2.6.29",
+    "@times-components/watermark": "2.6.30",
     "prop-types": "15.7.2",
     "react-broadcast": "0.5.2",
     "react-native-webview": "5.10.0"
