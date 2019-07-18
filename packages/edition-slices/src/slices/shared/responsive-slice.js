@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { ResponsiveContext } from "@times-components/responsive";
 import { editionBreakpoints } from "@times-components/styleguide";
 import Gutter from "./gutter";
+import ContentWrapper from "./content-wrapper";
 
 const ResponsiveSlice = ({
   renderSmall,
@@ -27,9 +28,11 @@ const ResponsiveSlice = ({
         case editionBreakpoints.huge:
           return (
             <Gutter>
-              {(renderHuge && renderHuge(editionBreakpoint)) ||
-                (renderWide && renderWide(editionBreakpoint)) ||
-                (renderMedium && renderMedium(editionBreakpoint))}
+              <ContentWrapper>
+                {(renderHuge && renderHuge(editionBreakpoint)) ||
+                  (renderWide && renderWide(editionBreakpoint)) ||
+                  (renderMedium && renderMedium(editionBreakpoint))}
+              </ContentWrapper>
             </Gutter>
           );
         default:

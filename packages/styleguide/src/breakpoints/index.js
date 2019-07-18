@@ -11,6 +11,7 @@ const editionBreakpointWidths = {
   wide: 1024
 };
 const editionMaxWidth = editionBreakpointWidths.huge;
+const sliceContentMaxWidth = 1180;
 
 const getEditionBreakpoint = width => {
   if (width < editionBreakpointWidths.medium) {
@@ -37,5 +38,6 @@ export {
   editionBreakpoints,
   editionMaxWidth,
   getEditionBreakpoint,
-  editionBreakpointWidths
+  editionBreakpointWidths,
+  sliceContentMaxWidth
 };

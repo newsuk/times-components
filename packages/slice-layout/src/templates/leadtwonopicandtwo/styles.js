@@ -16,21 +16,13 @@ const stylesWide = {
     width: "42%"
   },
   middleTile: {
+    paddingTop: spacing(2),
     width: "16%"
   }
 };
 
-const stylesHuge = {
-  column: {
-    width: "36%"
-  },
-  middleTile: {
-    width: "14%"
-  }
-};
-
 const stylesResolver = {
-  huge: stylesHuge,
+  huge: stylesWide,
   wide: stylesWide
 };
 

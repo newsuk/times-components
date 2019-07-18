@@ -1352,6 +1352,7 @@ exports[`6. lead two no pic and two 1`] = `
 }
 
 .IS4 {
+  padding-top: 10px;
   width: 16%;
 }
 
@@ -2002,6 +2003,8 @@ exports[`11. secondary two and two 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  margin-right: 10px;
+  margin-left: 10px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;

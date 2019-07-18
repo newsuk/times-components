@@ -288,6 +288,8 @@ exports[`3. secondary two and two - wide 1`] = `
       "flexDirection": "row",
       "flexGrow": 1,
       "flexShrink": 1,
+      "marginLeft": "10px",
+      "marginRight": "10px",
       "msFlexDirection": "row",
       "msFlexNegative": 1,
       "msFlexPositive": 1,
@@ -397,15 +399,23 @@ exports[`4. secondary two and two - huge 1`] = `
 <div
   style={
     Object {
-      "WebkitAlignSelf": "center",
       "WebkitBoxDirection": "normal",
+      "WebkitBoxFlex": 1,
       "WebkitBoxOrient": "horizontal",
+      "WebkitFlexBasis": "0%",
       "WebkitFlexDirection": "row",
-      "alignSelf": "center",
+      "WebkitFlexGrow": 1,
+      "WebkitFlexShrink": 1,
+      "flexBasis": "0%",
       "flexDirection": "row",
+      "flexGrow": 1,
+      "flexShrink": 1,
+      "marginLeft": "10px",
+      "marginRight": "10px",
       "msFlexDirection": "row",
-      "msFlexItemAlign": "center",
-      "width": "86%",
+      "msFlexNegative": 1,
+      "msFlexPositive": 1,
+      "msFlexPreferredSize": "0%",
     }
   }
 >
@@ -440,8 +450,6 @@ exports[`4. secondary two and two - huge 1`] = `
   <div
     style={
       Object {
-        "paddingLeft": "10px",
-        "paddingRight": "10px",
         "width": "16.6%",
       }
     }
@@ -498,8 +506,6 @@ exports[`4. secondary two and two - huge 1`] = `
   <div
     style={
       Object {
-        "paddingLeft": "10px",
-        "paddingRight": "10px",
         "width": "16.6%",
       }
     }

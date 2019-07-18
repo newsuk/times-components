@@ -384,6 +384,7 @@ exports[`5. lead two no pic and two - medium 1`] = `
 }
 
 .IS4 {
+  padding-top: 10px;
   width: 16%;
 }
 
@@ -1204,6 +1205,8 @@ exports[`11. secondary two and two - medium 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  margin-right: 10px;
+  margin-left: 10px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -2202,6 +2205,7 @@ exports[`20. lead two no pic and two - wide 1`] = `
 }
 
 .IS4 {
+  padding-top: 10px;
   width: 16%;
 }
 
@@ -3022,6 +3026,8 @@ exports[`26. secondary two and two - wide 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  margin-right: 10px;
+  margin-left: 10px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -4020,6 +4026,7 @@ exports[`35. lead two no pic and two - huge 1`] = `
 }
 
 .IS4 {
+  padding-top: 10px;
   width: 16%;
 }
 
@@ -4840,6 +4847,8 @@ exports[`41. secondary two and two - huge 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  margin-right: 10px;
+  margin-left: 10px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;

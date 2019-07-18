@@ -273,6 +273,7 @@ exports[`3. lead two no pic and two - wide 1`] = `
     className="css-view-1dbjc4n"
     style={
       Object {
+        "paddingTop": "10px",
         "width": "16%",
       }
     }
@@ -341,7 +342,7 @@ exports[`4. lead two no pic and two - huge 1`] = `
     className="css-view-1dbjc4n"
     style={
       Object {
-        "width": "36%",
+        "width": "42%",
       }
     }
   >
@@ -396,7 +397,8 @@ exports[`4. lead two no pic and two - huge 1`] = `
     className="css-view-1dbjc4n"
     style={
       Object {
-        "width": "14%",
+        "paddingTop": "10px",
+        "width": "16%",
       }
     }
   >
@@ -428,7 +430,7 @@ exports[`4. lead two no pic and two - huge 1`] = `
     className="css-view-1dbjc4n"
     style={
       Object {
-        "width": "36%",
+        "width": "42%",
       }
     }
   >

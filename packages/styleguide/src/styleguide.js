@@ -7,7 +7,8 @@ import breakpoints, {
   editionBreakpoints,
   editionMaxWidth,
   getEditionBreakpoint,
-  editionBreakpointWidths
+  editionBreakpointWidths,
+  sliceContentMaxWidth
 } from "./breakpoints";
 import timesLineHeightsFactory from "./line-heights";
 import timesFonts from "./fonts/fonts";
@@ -44,6 +45,7 @@ export {
   editionBreakpoints,
   editionBreakpointWidths,
   editionMaxWidth,
+  sliceContentMaxWidth,
   fonts,
   fontFactory,
   fontSizes,

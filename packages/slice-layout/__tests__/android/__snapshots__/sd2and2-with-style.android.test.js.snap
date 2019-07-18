@@ -188,6 +188,7 @@ exports[`3. secondary two and two - wide 1`] = `
     Object {
       "flex": 1,
       "flexDirection": "row",
+      "marginHorizontal": 10,
     }
   }
 >
@@ -272,9 +273,9 @@ exports[`4. secondary two and two - huge 1`] = `
 <View
   style={
     Object {
-      "alignSelf": "center",
+      "flex": 1,
       "flexDirection": "row",
-      "width": "86%",
+      "marginHorizontal": 10,
     }
   }
 >
@@ -302,7 +303,6 @@ exports[`4. secondary two and two - huge 1`] = `
   <View
     style={
       Object {
-        "paddingHorizontal": 10,
         "width": "16.6%",
       }
     }
@@ -345,7 +345,6 @@ exports[`4. secondary two and two - huge 1`] = `
   <View
     style={
       Object {
-        "paddingHorizontal": 10,
         "width": "16.6%",
       }
     }

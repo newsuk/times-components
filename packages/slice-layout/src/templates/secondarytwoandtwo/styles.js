@@ -28,33 +28,19 @@ const mediumBreakpointStyles = {
 const wideBreakpointStyles = {
   container: {
     flex: 1,
-    flexDirection: "row"
-  },
-  secondaryItemContainer: {
-    width: "33.4%"
-  },
-  supportItemContainer: {
-    width: "16.6%"
-  }
-};
-
-const hugeBreakpointStyles = {
-  container: {
-    alignSelf: "center",
     flexDirection: "row",
-    width: "86%"
+    marginHorizontal: spacing(2)
   },
   secondaryItemContainer: {
     width: "33.4%"
   },
   supportItemContainer: {
-    paddingHorizontal: spacing(2),
     width: "16.6%"
   }
 };
 
 const stylesToReturn = {
-  huge: hugeBreakpointStyles,
+  huge: wideBreakpointStyles,
   medium: mediumBreakpointStyles,
   small: smallBreakpointStyles,
   wide: wideBreakpointStyles
