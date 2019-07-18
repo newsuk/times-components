@@ -27,7 +27,7 @@
     "@storybook/addons": "4.1.18",
     "@storybook/react": "4.1.18",
     "@storybook/react-native": "4.1.18",
-    "@times-components/storybook": "4.0.19",
+    "@times-components/storybook": "4.0.20",
     "babel-polyfill": "6.26.0",
     "prop-types": "15.7.2",
     "react": "16.8.6",
