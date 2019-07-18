@@ -1,18 +1,15 @@
+/**
+ * ContentWrapper restricts the content area of each slice. It is used together with the Gutter component,
+ * which sets the gutter space around the content. This component is currently used only for huge breakpoints.
+ */
+
 import React from "react";
 import PropTypes from "prop-types";
 import { View } from "react-native";
-import { sliceContentMaxWidth } from "@times-components/styleguide";
+import styles from "./styles";
 
 const ContentWrapper = ({ children }) => (
-  <View
-    style={{
-      flex: 1,
-      alignSelf: "center",
-      width: sliceContentMaxWidth
-    }}
-  >
-    {children}
-  </View>
+  <View style={styles.contentWrapperStyles}>{children}</View>
 );
 
 ContentWrapper.propTypes = {
