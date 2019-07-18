@@ -21,25 +21,18 @@ import PropTypes from "prop-types";
 import Context from "@times-components/context";
 import { ServerClientRender } from "@times-components/utils";
 
-// Using React Components for the Client/Server for performance reasons
-function Client({ children, user }) {
-  const { nuk = {} } = window;
-  const clientUser = nuk.user || {};
-
-  return children({ user: { ...user, ...clientUser } });
-}
-
-function Server({ children, user }) {
-  return children({ user });
-}
-
 function ClientUserStateConsumer({ children, serverRender = true }) {
   return (
     <Context.Consumer>
       {({ user }) => (
         <ServerClientRender
-          client={<Client {...{ children, user }} />}
-          server={serverRender ? <Server {...{ children, user }} /> : null}
+          client={() => {
+            const { nuk = {} } = window;
+            const clientUser = nuk.user || {};
+
+            return children({ user: { ...user, ...clientUser } });
+          }}
+          server={serverRender ? () => children({ user }) : null}
         />
       )}
     </Context.Consumer>
