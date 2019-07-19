@@ -32,7 +32,7 @@ const ArticleHeader = ({
   const textColour = gqlRgbaToStyle(rgbTextColour);
   return (
     <Context.Consumer>
-      {({ theme: { headlineFont } }) => (
+      {({ theme: { headlineFont, headlineCase } }) => (
         <View
           style={{ backgroundColor: backgroundColour, order: 2, width: "100%" }}
         >
@@ -44,7 +44,8 @@ const ArticleHeader = ({
               style={[
                 styles.articleHeadline,
                 { color: textColour },
-                headlineFont ? { fontFamily: fonts[headlineFont] } : null
+                headlineFont ? { fontFamily: fonts[headlineFont] } : null,
+                headlineCase ? { textTransform: headlineCase } : null
               ]}
             >
               {headline}

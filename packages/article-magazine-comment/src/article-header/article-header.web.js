@@ -32,7 +32,7 @@ const ArticleHeader = ({
   standfirst
 }) => (
   <Context.Consumer>
-    {({ theme: { headlineFont } }) => (
+    {({ theme: { headlineFont, headlineCase } }) => (
       <HeaderContainer style={styles.container}>
         <AuthorImageContainer style={styles.authorImage}>
           <Image aspectRatio={1} uri={authorImage} />
@@ -43,7 +43,8 @@ const ArticleHeader = ({
           aria-level="1"
           style={[
             styles.articleHeadline,
-            headlineFont ? { fontFamily: fonts[headlineFont] } : null
+            headlineFont ? { fontFamily: fonts[headlineFont] } : null,
+            headlineCase ? { textTransform: headlineCase } : null
           ]}
         >
           {headline}

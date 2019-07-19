@@ -27,7 +27,7 @@ const ArticleHeader = ({
   standfirst
 }) => (
   <Context.Consumer>
-    {({ theme: { headlineFont } }) => (
+    {({ theme: { headlineFont, headlineCase } }) => (
       <View style={[styles.container, isTablet && styles.tabletContainer]}>
         <Label isVideo={hasVideo} label={label} />
         <Text
@@ -38,7 +38,8 @@ const ArticleHeader = ({
                 font: headlineFont || "headline",
                 fontSize: isTablet ? "pageHeadline" : "headline"
               })
-            }
+            },
+            headlineCase ? { textTransform: headlineCase } : null
           ]}
         >
           {headline}

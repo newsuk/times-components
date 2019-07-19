@@ -29,7 +29,7 @@ const ArticleHeader = ({
   standfirst
 }) => (
   <Context.Consumer>
-    {({ theme: { headlineFont } }) => (
+    {({ theme: { headlineFont, headlineCase } }) => (
       <View style={[styles.container, isTablet && styles.containerTablet]}>
         <ModalImage
           aspectRatio={1}
@@ -45,7 +45,8 @@ const ArticleHeader = ({
                 font: headlineFont || "headline",
                 fontSize: isTablet ? "pageHeadline" : "headline"
               })
-            }
+            },
+            headlineCase ? { textTransform: headlineCase } : null
           ]}
         >
           {headline}
