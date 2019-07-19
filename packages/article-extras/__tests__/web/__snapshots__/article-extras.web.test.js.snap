@@ -14,6 +14,9 @@ Array [
       isVisible={true}
     />
   </aside>,
+  <div
+    id="sponsored-article"
+  />,
   <ArticleComments
     articleId="dummy-article-id"
     isEnabled={true}
