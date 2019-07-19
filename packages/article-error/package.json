@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-error",
-  "version": "0.2.93",
+  "version": "0.2.94",
   "description": "Article Error Template",
   "main": "dist/article-error",
   "dev": "src/article-error",
@@ -38,7 +38,7 @@
     "@times-components/eslint-config-thetimes": "0.8.12",
     "@times-components/jest-configurator": "2.5.14",
     "@times-components/jest-serializer": "3.2.10",
-    "@times-components/storybook": "4.0.20",
+    "@times-components/storybook": "4.0.21",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "24.8.0",
     "eslint": "5.9.0",
@@ -56,8 +56,8 @@
     "react-native-web": "0.11.4"
   },
   "dependencies": {
-    "@times-components/button": "2.3.93",
-    "@times-components/styleguide": "3.28.33",
+    "@times-components/button": "2.3.94",
+    "@times-components/styleguide": "3.28.34",
     "prop-types": "15.7.2"
   },
   "publishConfig": {

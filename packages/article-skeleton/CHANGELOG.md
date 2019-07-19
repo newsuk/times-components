@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.11.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.11.1...@times-components/article-skeleton@1.11.2) (2019-07-19)
+
+
+### Bug Fixes
+
+* article scroll tracking ([#2124](https://github.com/newsuk/times-components/issues/2124)) ([8fc4b5f](https://github.com/newsuk/times-components/commit/8fc4b5f))
+
+
+
+
+
 ## [1.11.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.11.0...@times-components/article-skeleton@1.11.1) (2019-07-18)
 
 **Note:** Version bump only for package @times-components/article-skeleton

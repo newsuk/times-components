@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.6.29](https://github.com/newsuk/times-components/compare/@times-components/ad@2.6.28...@times-components/ad@2.6.29) (2019-07-19)
+
+
+### Bug Fixes
+
+* article scroll tracking ([#2124](https://github.com/newsuk/times-components/issues/2124)) ([8fc4b5f](https://github.com/newsuk/times-components/commit/8fc4b5f))
+
+
+
+
+
 ## [2.6.28](https://github.com/newsuk/times-components/compare/@times-components/ad@2.6.27...@times-components/ad@2.6.28) (2019-07-18)
 
 **Note:** Version bump only for package @times-components/ad

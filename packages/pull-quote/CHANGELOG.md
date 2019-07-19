@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.4.106](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.4.105...@times-components/pull-quote@3.4.106) (2019-07-19)
+
+**Note:** Version bump only for package @times-components/pull-quote
+
+
+
+
+
 ## [3.4.105](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.4.104...@times-components/pull-quote@3.4.105) (2019-07-18)
 
 **Note:** Version bump only for package @times-components/pull-quote

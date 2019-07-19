@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.11.21](https://github.com/newsuk/times-components/compare/@times-components/utils@4.11.20...@times-components/utils@4.11.21) (2019-07-19)
+
+
+### Bug Fixes
+
+* article scroll tracking ([#2124](https://github.com/newsuk/times-components/issues/2124)) ([8fc4b5f](https://github.com/newsuk/times-components/commit/8fc4b5f))
+
+
+
+
+
 ## [4.11.20](https://github.com/newsuk/times-components/compare/@times-components/utils@4.11.19...@times-components/utils@4.11.20) (2019-07-18)
 
 **Note:** Version bump only for package @times-components/utils
