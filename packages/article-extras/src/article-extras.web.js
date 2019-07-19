@@ -53,6 +53,7 @@ const ArticleExtras = ({
         slice={relatedArticleSlice}
       />
     </aside>
+    <aside id="ad-article-sponsored"></aside>
     <ArticleComments
       articleId={articleId}
       isEnabled={commentsEnabled}
