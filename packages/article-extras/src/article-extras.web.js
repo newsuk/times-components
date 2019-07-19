@@ -53,6 +53,8 @@ const ArticleExtras = ({
         slice={relatedArticleSlice}
       />
     </aside>
+    {/* Nativo inserts Sponsored Articles in this div */}
+    <div id="sponsored-article" />
     <ArticleComments
       articleId={articleId}
       isEnabled={commentsEnabled}
