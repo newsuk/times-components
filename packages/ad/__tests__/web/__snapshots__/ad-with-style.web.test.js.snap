@@ -14,38 +14,23 @@ exports[`1. multiple ad slots 1`] = `
 }
 
 .IS3 {
-  align-items: center;
-  flex: 1;
-}
-
-.IS4 {
   height: auto;
   overflow: hidden;
   width: 1;
 }
 
+.IS4 {
+  align-items: center;
+  flex: 1;
+}
+
 .IS5 {
-  align-items: center;
-  flex: 1;
-}
-
-.IS6 {
-  align-items: center;
-  flex: 1;
-}
-
-.IS7 {
   height: auto;
   overflow: hidden;
   width: 970;
 }
 
-.IS8 {
-  align-items: center;
-  flex: 1;
-}
-
-.IS9 {
+.IS6 {
   align-items: center;
   flex: 1;
 }
@@ -59,18 +44,7 @@ exports[`1. multiple ad slots 1`] = `
     section="news"
     slotName="header"
   >
-    <ServerClientRender
-      client={
-        <View
-          className="IS3"
-        >
-          <DOMContext
-            baseUrl="https://www.thetimes.co.uk/"
-            height={250}
-            width={970}
-          />
-        </View>
-      }
+    <MockServerClientRender
       server={null}
     >
       <View
@@ -90,7 +64,7 @@ exports[`1. multiple ad slots 1`] = `
           </DOMContext>
         </div>
       </View>
-    </ServerClientRender>
+    </MockServerClientRender>
   </Ad>
   <Ad
     baseUrl="https://www.thetimes.co.uk/"
@@ -99,22 +73,11 @@ exports[`1. multiple ad slots 1`] = `
     section="news"
     slotName="pixel"
   >
-    <ServerClientRender
-      client={
-        <View
-          className="IS6"
-        >
-          <DOMContext
-            baseUrl="https://www.thetimes.co.uk/"
-            height={1}
-            width={1}
-          />
-        </View>
-      }
+    <MockServerClientRender
       server={null}
     >
       <View
-        className="IS5"
+        className="IS4"
       >
         <div
           className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0"
@@ -125,12 +88,12 @@ exports[`1. multiple ad slots 1`] = `
             width={1}
           >
             <div
-              className="IS4"
+              className="IS3"
             />
           </DOMContext>
         </div>
       </View>
-    </ServerClientRender>
+    </MockServerClientRender>
   </Ad>
   <Ad
     baseUrl="https://www.thetimes.co.uk/"
@@ -139,22 +102,11 @@ exports[`1. multiple ad slots 1`] = `
     section="news"
     slotName="intervention"
   >
-    <ServerClientRender
-      client={
-        <View
-          className="IS9"
-        >
-          <DOMContext
-            baseUrl="https://www.thetimes.co.uk/"
-            height={250}
-            width={970}
-          />
-        </View>
-      }
+    <MockServerClientRender
       server={null}
     >
       <View
-        className="IS8"
+        className="IS6"
       >
         <div
           className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0"
@@ -165,12 +117,12 @@ exports[`1. multiple ad slots 1`] = `
             width={970}
           >
             <div
-              className="IS7"
+              className="IS5"
             />
           </DOMContext>
         </div>
       </View>
-    </ServerClientRender>
+    </MockServerClientRender>
   </Ad>
 </AdComposer>
 `;
@@ -231,15 +183,6 @@ exports[`2. placeholder when isloading 1`] = `
   align-items: center;
   flex: 1;
 }
-
-.IS8 {
-  flex: 1;
-}
-
-.IS9 {
-  align-items: center;
-  flex: 1;
-}
 </style>
 
 <Ad
@@ -249,18 +192,7 @@ exports[`2. placeholder when isloading 1`] = `
   section="news"
   slotName="header"
 >
-  <ServerClientRender
-    client={
-      <View
-        className="IS9"
-      >
-        <AdPlaceholder
-          className="IS8"
-          height={250}
-          width={970}
-        />
-      </View>
-    }
+  <MockServerClientRender
     server={null}
   >
     <View
@@ -317,7 +249,7 @@ exports[`2. placeholder when isloading 1`] = `
         </AdPlaceholder>
       </div>
     </View>
-  </ServerClientRender>
+  </MockServerClientRender>
 </Ad>
 `;
 
@@ -383,15 +315,6 @@ exports[`3. nothing if there is an error in the loading of scripts 1`] = `
   align-items: center;
   flex: 1;
 }
-
-.IS9 {
-  flex: 1;
-}
-
-.IS10 {
-  align-items: center;
-  flex: 1;
-}
 </style>
 
 <Ad
@@ -401,23 +324,7 @@ exports[`3. nothing if there is an error in the loading of scripts 1`] = `
   section="news"
   slotName="header"
 >
-  <ServerClientRender
-    client={
-      <View
-        className="IS10"
-      >
-        <DOMContext
-          baseUrl="https://www.thetimes.co.uk/"
-          height={0}
-          width={0}
-        />
-        <AdPlaceholder
-          className="IS9"
-          height={250}
-          width={970}
-        />
-      </View>
-    }
+  <MockServerClientRender
     server={null}
   >
     <View
@@ -483,6 +390,6 @@ exports[`3. nothing if there is an error in the loading of scripts 1`] = `
         </AdPlaceholder>
       </div>
     </View>
-  </ServerClientRender>
+  </MockServerClientRender>
 </Ad>
 `;

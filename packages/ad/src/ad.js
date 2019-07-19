@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import { Subscriber } from "react-broadcast";
-import { View, Platform } from "react-native";
+import { Platform, View } from "react-native";
 import { screenWidth, ServerClientRender } from "@times-components/utils";
-import { getSlotConfig, prebidConfig, getPrebidSlotConfig } from "./utils";
+import { getPrebidSlotConfig, getSlotConfig, prebidConfig } from "./utils";
 import adInit from "./utils/ad-init";
 import AdPlaceholder from "./ad-placeholder";
 import DOMContext from "./dom-context";
 import AdComposer from "./ad-composer";
-import { propTypes, defaultProps } from "./ad-prop-types";
+import { defaultProps, propTypes } from "./ad-prop-types";
 import styles from "./styles";
 
 class Ad extends Component {
@@ -107,36 +107,32 @@ class Ad extends Component {
 
     const isWeb = Platform.OS === "web";
 
-    const AdComponent = (
-      <DOMContext
-        baseUrl={baseUrl}
-        data={data}
-        init={adInit}
-        onRenderComplete={this.setAdReady}
-        onRenderError={this.setAdError}
-        {...sizeProps}
-      />
-    );
-
-    const AdPlaceholderComponent = (
-      <AdPlaceholder
-        height={config.maxSizes.height}
-        style={styles.children}
-        width={config.maxSizes.width}
-      />
-    );
-
-    const AdView = (
+    const adView = (
       <View style={[styles.container, style]}>
-        {isLoading ? null : AdComponent}
-        {isLoading || !isAdReady ? AdPlaceholderComponent : null}
+        {isLoading ? null : (
+          <DOMContext
+            baseUrl={baseUrl}
+            data={data}
+            init={adInit}
+            onRenderComplete={this.setAdReady}
+            onRenderError={this.setAdError}
+            {...sizeProps}
+          />
+        )}
+        {isLoading || !isAdReady ? (
+          <AdPlaceholder
+            height={config.maxSizes.height}
+            style={styles.children}
+            width={config.maxSizes.width}
+          />
+        ) : null}
       </View>
     );
 
     return isWeb ? (
-      <ServerClientRender client={AdView} server={null} />
+      <ServerClientRender client={() => adView} server={null} />
     ) : (
-      AdView
+      adView
     );
   }
 

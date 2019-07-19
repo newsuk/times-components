@@ -28,13 +28,13 @@ class ServerClientRender extends Component {
     const { isClient } = this.state;
     const { client, server } = this.props;
 
-    return isClient ? client : server;
+    return isClient ? client && client() : server && server();
   }
 }
 
 ServerClientRender.propTypes = {
-  server: PropTypes.node,
-  client: PropTypes.node
+  server: PropTypes.func,
+  client: PropTypes.func
 };
 
 ServerClientRender.defaultProps = {

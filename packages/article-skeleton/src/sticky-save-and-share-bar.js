@@ -45,8 +45,8 @@ const SaveShareContainer = styled.div`
 function SaveShareContainerWrapper(props) {
   return (
     <ServerClientRender
-      client={<SaveShareContainer isClient {...props} />}
-      server={<SaveShareContainer {...props} />}
+      client={() => <SaveShareContainer isClient {...props} />}
+      server={() => <SaveShareContainer {...props} />}
     />
   );
 }
