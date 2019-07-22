@@ -32,10 +32,9 @@ class EmailShare extends Component {
       getTokenisedShareUrl(articleId)
         .then(res => {
           const { data } = res;
-          if (data) {
+          if (data && data.article) {
             this.setState({ isLoading: false });
-            const { url } = data.article.tokenisedUrl;
-            this.openMailClient(url);
+            this.openMailClient(data.article.tokenisedUrl);
           }
         })
         .catch(error => {
