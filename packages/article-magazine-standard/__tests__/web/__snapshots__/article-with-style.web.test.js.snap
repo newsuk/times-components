@@ -1809,6 +1809,7 @@ exports[`full article with style in the style magazine 1`] = `
 
 .IS3 {
   font-family: CenturyGothic-Bold;
+  text-transform: uppercase;
 }
 
 .IS4 {

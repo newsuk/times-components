@@ -311,6 +311,7 @@ exports[`full article with style in the style magazine 1`] = `
             "lineHeight": 35,
             "marginBottom": 10,
             "textAlign": "center",
+            "textTransform": "uppercase",
           }
         }
       >
@@ -719,6 +720,7 @@ exports[`tablet full article with style in the style magazine 1`] = `
             "lineHeight": 35,
             "marginBottom": 10,
             "textAlign": "center",
+            "textTransform": "uppercase",
           }
         }
       >

@@ -50,6 +50,12 @@ const magazineFontPicker = (
   return config[template][section] || defaultFont;
 };
 
+const headlineCasePicker = (section = "default", template = "mainstandard") =>
+  section.toLowerCase() === "style" &&
+  ["indepth", "magazinestandard", "magazinecomment"].includes(template)
+    ? "uppercase"
+    : null;
+
 const imageCaptionAlignment = {
   indepth: { primary: "center" }
 };
@@ -59,5 +65,6 @@ export default (section, template) => ({
   headlineFont: magazineFontPicker("headline", section, template),
   imageCaptionAlignment: imageCaptionAlignment[template] || {},
   pullQuoteFont: magazineFontPicker("headlineRegular", section, template),
-  sectionColour: sectionColourPicker(section, template)
+  sectionColour: sectionColourPicker(section, template),
+  headlineCase: headlineCasePicker(section, template)
 });
