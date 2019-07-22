@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.28.35](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.28.34...@times-components/styleguide@3.28.35) (2019-07-22)
+
+
+### Bug Fixes
+
+* uppercase font on style magazine templates ([#2126](https://github.com/newsuk/times-components/issues/2126)) ([ee8d359](https://github.com/newsuk/times-components/commit/ee8d359))
+
+
+
+
+
 ## [3.28.34](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.28.33...@times-components/styleguide@3.28.34) (2019-07-19)
 
 **Note:** Version bump only for package @times-components/styleguide

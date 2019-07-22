@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.8.4](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.8.3...@times-components/article-magazine-comment@3.8.4) (2019-07-22)
+
+
+### Bug Fixes
+
+* uppercase font on style magazine templates ([#2126](https://github.com/newsuk/times-components/issues/2126)) ([ee8d359](https://github.com/newsuk/times-components/commit/ee8d359))
+
+
+
+
+
 ## [3.8.3](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.8.2...@times-components/article-magazine-comment@3.8.3) (2019-07-19)
 
 **Note:** Version bump only for package @times-components/article-magazine-comment
