@@ -52,7 +52,7 @@
     "@times-components/eslint-config-thetimes": "0.8.12",
     "@times-components/jest-configurator": "2.5.14",
     "@times-components/jest-serializer": "3.2.10",
-    "@times-components/storybook": "4.0.21",
+    "@times-components/storybook": "4.0.22",
     "@times-components/test-utils": "2.3.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "24.8.0",
@@ -78,7 +78,7 @@
     "@times-components/gradient": "3.1.45",
     "@times-components/icons": "2.12.1",
     "@times-components/image": "6.4.7",
-    "@times-components/styleguide": "3.28.34",
+    "@times-components/styleguide": "3.28.35",
     "@times-components/svgs": "2.7.16",
     "prop-types": "15.7.2",
     "styled-components": "4.2.0"
