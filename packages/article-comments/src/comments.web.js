@@ -14,6 +14,9 @@ class Comments extends Component {
   constructor() {
     super();
     this.container = null;
+    this.state = {
+      showLabel: false
+    };
   }
 
   componentDidMount() {
@@ -46,7 +49,9 @@ class Comments extends Component {
     launcherScript.setAttribute("data-seo-enabled", true);
     launcherScript.setAttribute("data-livefyre-url", articleId);
     this.container.appendChild(launcherScript);
-
+    this.setState({
+      showLabel: true
+    });
     if (!isReadOnly) {
       if (window.SPOTIM && window.SPOTIM.startSSO) {
         executeSSOtransaction();
@@ -63,18 +68,24 @@ class Comments extends Component {
   }
 
   render() {
+    const { showLabel } = this.state;
+
     return (
       <CommentContainer>
-        <CommentEnabledGuidelines>
-          Comments are subject to our community guidelines, which can be viewed{" "}
-          <TextLink
-            style={styles.link}
-            url="https://www.thetimes.co.uk/article/f4024fbe-d989-11e6-9063-500e6740fc32"
-          >
-            here
-          </TextLink>
-          .
-        </CommentEnabledGuidelines>
+        {showLabel ? (
+          <CommentEnabledGuidelines>
+            Comments are subject to our community guidelines, which can be
+            viewed{" "}
+            <TextLink
+              style={styles.link}
+              url="https://www.thetimes.co.uk/article/f4024fbe-d989-11e6-9063-500e6740fc32"
+            >
+              here
+            </TextLink>
+            .
+          </CommentEnabledGuidelines>
+        ) : null}
+
         <div
           ref={el => {
             this.container = el;
