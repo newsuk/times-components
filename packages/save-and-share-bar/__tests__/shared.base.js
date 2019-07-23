@@ -137,7 +137,7 @@ export default () => {
       );
 
       const mock = await mockGetTokenisedArticleUrl(articleId);
-      const { url } = mock.data.article.tokenisedUrl;
+      const url = mock.data.article.tokenisedUrl;
 
       const mailtoUrl = `mailto:?subject=${articleHeadline} from The Times&body=I thought you would be interested in this story from The Times%0A%0A${articleHeadline}%0A%0A${url}`;
 
@@ -155,7 +155,7 @@ export default () => {
       );
 
       const mock = await mockGetTokenisedArticleUrl(articleId);
-      const { url } = mock.data.article.tokenisedUrl;
+      const url = mock.data.article.tokenisedUrl;
 
       const mailtoUrl = `mailto:?subject=${articleHeadline} from The Sunday Times&body=I thought you would be interested in this story from The Sunday Times%0A%0A${articleHeadline}%0A%0A${url}`;
 
