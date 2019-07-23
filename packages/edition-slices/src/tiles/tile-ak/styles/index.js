@@ -5,7 +5,7 @@ import {
 } from "@times-components/styleguide";
 
 const headlineFontSizeResolver = {
-  [editionBreakpoints.medium]: 22,
+  [editionBreakpoints.medium]: 20,
   [editionBreakpoints.wide]: 30,
   [editionBreakpoints.huge]: 35
 };
@@ -28,7 +28,7 @@ const styles = (breakpoint = editionBreakpoints.medium) => ({
   puzzleContainer: {
     backgroundColor: colours.functional.border,
     flex: 1,
-    marginHorizontal: spacing(1),
+    marginHorizontal: spacing(2),
     height: 150,
     overflow: "hidden"
   }
