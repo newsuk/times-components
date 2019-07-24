@@ -1,4 +1,4 @@
-/* eslint-disable prefer-destructuring,no-continue */
+/* eslint-disable prefer-destructuring,no-continue,no-underscore-dangle */
 import FontLoader from "./FontLoader";
 import Word from "./Word";
 import Character from "./Character";
@@ -50,7 +50,7 @@ export default class Text extends Container {
 
   lines = [];
 
-  block;
+  _block;
 
   missingGlyphs = null;
 
@@ -76,9 +76,14 @@ export default class Text extends Container {
     if (props.width) {
       this.lineWidths = [props.width];
     }
-    this.layout();
   }
 
+  get block() {
+    if (!this._block) {
+      this.layout()
+    }
+    return this._block
+  }
 
   layout() {
     this.words = [];
@@ -87,8 +92,8 @@ export default class Text extends Container {
     // TODO - remove composite layout
     this.removeAllChildren();
 
-    this.block = new Container();
-    this.addChild(this.block);
+    this._block = new Container();
+    this.addChild(this._block);
 
     if (this.markup.length === 0 || this.markup === undefined) {
       return;
@@ -109,7 +114,10 @@ export default class Text extends Container {
   }
 
   get idealSpans() {
-    const flatSpans = this.block.children.reduce((acc, line) => {
+    if (!this._block) {
+      this.layout()
+    }
+    const flatSpans = this._block.children.reduce((acc, line) => {
       const ideal = line.idealSpans;
       return [...acc, ...ideal];
     }, []);
@@ -308,7 +316,7 @@ export default class Text extends Container {
 
     let currentWord;
 
-    this.block.addChild(currentLine);
+    this._block.addChild(currentLine);
     let hPosition = 0;
     let vPosition = 0;
 
@@ -329,18 +337,18 @@ export default class Text extends Container {
       }
       if (breaks.includes(i) && i !== 0) {
         currentLine.measuredWidth = hPosition;
-        if (this.block.measuredWidth < hPosition) {
-          this.block.measuredWidth = hPosition;
+        if (this._block.measuredWidth < hPosition) {
+          this._block.measuredWidth = hPosition;
         }
         vPosition += this.lineHeight || currentLine.measuredHeight;
         hPosition = 0;
         currentLine = new Line();
         currentLine.y = vPosition;
         this.lines.push(currentLine);
-        this.block.addChild(currentLine);
+        this._block.addChild(currentLine);
       }
     }
-    this.block.measuredHeight = vPosition;
+    this._block.measuredHeight = vPosition;
   }
 
   lineLayout() {
@@ -391,7 +399,7 @@ export default class Text extends Container {
       this.align === a.TOP_CENTER ||
       this.align === a.TOP_RIGHT
     ) {
-      this.block.y =
+      this._block.y =
         this.lines[0].measuredHeight * fnt.ascent / fnt.units +
         this.lines[0].measuredHeight * fnt.top / fnt.units;
 
@@ -401,7 +409,7 @@ export default class Text extends Container {
       this.align === a.MIDDLE_CENTER ||
       this.align === a.MIDDLE_RIGHT
     ) {
-      this.block.y =
+      this._block.y =
         this.lines[0].measuredHeight +
         (this.height - measuredHeight) / 2 +
         this.lines[0].measuredHeight * fnt.middle / fnt.units;
@@ -412,13 +420,13 @@ export default class Text extends Container {
       this.align === a.BOTTOM_CENTER ||
       this.align === a.BOTTOM_RIGHT
     ) {
-      this.block.y =
+      this._block.y =
         this.height -
         this.lines[this.lines.length - 1].y +
         this.lines[0].measuredHeight * fnt.bottom / fnt.units;
     }
 
-    this.measuredHeight = this.block.measuredHeight;
-    this.measuredWidth = this.block.measuredWidth;
+    this.measuredHeight = this._block.measuredHeight;
+    this.measuredWidth = this._block.measuredWidth;
   }
 }

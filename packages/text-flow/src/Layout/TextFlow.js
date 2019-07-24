@@ -1,11 +1,11 @@
-/* eslint-disable no-continue */
+/* eslint-disable no-continue,no-underscore-dangle */
 import Container from "./Container";
 import Text from "../Text/Text";
 import Block from "./Block";
 import InlineBlock from "./InlineBlock";
 
 export default class TextFlow extends Container {
-  block = null;
+  _block = null;
 
   width = 100;
 
@@ -17,11 +17,17 @@ export default class TextFlow extends Container {
   constructor(props = {}) {
     super();
     Object.assign(this, props);
-    this.layout();
+  }
+
+  get block() {
+    if (!this._block) {
+      this.layout()
+    }
+    return this._block
   }
 
   layout() {
-    this.block = new Container();
+    this._block = new Container();
     let vPosition = 0;
     let i = 0;
     for (; i < this.flow.length; ) {
@@ -53,7 +59,7 @@ export default class TextFlow extends Container {
         elLines.push(this.width);
 
         child.y = vPosition;
-        this.block.addChild(child);
+        this._block.addChild(child);
         let pulledLines = 0;
         while (next) {
           if (!(next instanceof Text)) {
@@ -64,10 +70,10 @@ export default class TextFlow extends Container {
           next.width = this.width;
           next.layout();
           if (
-            this.block.measuredWidth <
+            this._block.measuredWidth <
             next.measuredWidth + child.measuredWidth
           ) {
-            this.block.measuredWidth = next.measuredWidth + child.measuredWidth;
+            this._block.measuredWidth = next.measuredWidth + child.measuredWidth;
           }
           next.y = vPosition;
           pulledLines += next.lines.length - 1;
@@ -89,21 +95,21 @@ export default class TextFlow extends Container {
           }
         }
         i = grabbed;
-        this.block.measuredHeight += child.height;
+        this._block.measuredHeight += child.height;
         continue
       }
       if (child instanceof Block || child instanceof Text) {
-        this.block.addChild(child);
-        this.block.measuredHeight += child.measuredHeight;
-        if (this.block.measuredWidth < child.measuredWidth) {
-          this.block.measuredWidth = child.measuredWidth;
+        this._block.addChild(child);
+        this._block.measuredHeight += child.measuredHeight;
+        if (this._block.measuredWidth < child.measuredWidth) {
+          this._block.measuredWidth = child.measuredWidth;
         }
         child.y = vPosition;
         vPosition += child.measuredHeight;
       }
       i += 1;
     }
-    this.measuredHeight = this.block.measuredHeight;
-    this.measuredWidth = this.block.measuredWidth;
+    this.measuredHeight = this._block.measuredHeight;
+    this.measuredWidth = this._block.measuredWidth;
   }
 }

@@ -111,7 +111,7 @@ export const getDropCap = (children, font, height, markup) => {
       markup,
       size: height
     });
-    return text.words[0].idealSpans[0];
+    return text.idealSpans;
   }
   const text = children[0];
   if (text.markup[0].style) {
@@ -120,12 +120,12 @@ export const getDropCap = (children, font, height, markup) => {
   text.font = font;
   text.lineHeight = height;
   text.size = height;
-  text.layout();
-  const value = text.words[0].idealSpans[0];
+  const value = text.idealSpans;
   return value;
 };
 
-export const getDropCapValue = node => {
+export const getDropCapValue = nodes => {
+  const node = nodes[0];
   if (node.href) {
     return node.href(node);
   }
