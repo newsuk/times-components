@@ -29,7 +29,6 @@ class Comments extends Component {
 
   initialiseComments() {
     const { articleId, isReadOnly, spotAccountId } = this.props;
-
     if (!this.container || !articleId || !spotAccountId) {
       return;
     }
@@ -49,14 +48,18 @@ class Comments extends Component {
     launcherScript.setAttribute("data-seo-enabled", true);
     launcherScript.setAttribute("data-livefyre-url", articleId);
     this.container.appendChild(launcherScript);
-    this.setState({
-      showLabel: true
-    });
+
     if (!isReadOnly) {
       if (window.SPOTIM && window.SPOTIM.startSSO) {
         executeSSOtransaction();
       } else {
-        document.addEventListener("spot-im-api-ready", executeSSOtransaction);
+        document.addEventListener("spot-im-api-ready", () =>
+          executeSSOtransaction(() => {
+            this.setState({
+              showLabel: true
+            });
+          })
+        );
       }
     }
   }
