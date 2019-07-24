@@ -153,7 +153,6 @@ const makeArticle = configuration => article => {
 class ArticleConfigurator extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
       mocks: [],
       reRendering: false
@@ -229,7 +228,8 @@ const renderArticle = ({
         backgroundColour: inDepthBackgroundColour,
         descriptionMarkup: [article.content.find(m => m.name === "paragraph")],
         template,
-        textColour: inDepthTextColour
+        textColour: inDepthTextColour,
+        section
       };
 
       return (
