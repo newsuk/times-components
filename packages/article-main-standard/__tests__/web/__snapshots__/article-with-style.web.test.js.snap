@@ -576,7 +576,7 @@ exports[`full article with style 1`] = `
                 className="c6 responsiveweb__LabelContainer-sc-1jw79sf-1 c6 css-view-1dbjc4n r-paddingBottom-1inuy60 r-paddingTop-glunga S2"
               >
                 <div
-                  className="css-text-901oao r-color-1yqk5fa r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-19r33im r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv S1"
+                  className="css-text-901oao r-color-1yqk5fa r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv S1"
                 >
                   SOME LABEL
                 </div>
