@@ -237,7 +237,6 @@ class ArticleSkeleton extends Component {
     const { width, flow } = this.state;
 
     if (flow) {
-      flow.layout();
       this.setState({
         content: [...this.rebuildRows(flow), ...others]
       });

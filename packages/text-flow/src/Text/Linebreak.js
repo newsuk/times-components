@@ -273,15 +273,31 @@ const linebreak = (nodes, lines, settings = defaults()) => {
   return lineBreaks;
 };
 
+const cache = []
+const values = []
+
 export default (nodes, lines, settings = defaults()) => {
+  const string = nodes.map(node => node.width || 0).join(" ").concat(lines.join(" "))
+  const index = cache.indexOf(string)
+  if (index >= 0) {
+    return values[index]
+  }
   let lineBreaks
-  let tolerance = 0.0
-  while (!lineBreaks || !lineBreaks.length) {
-    tolerance += 0.1
+  let tolerance = 0.1
+  let step = 0.1
+  while ((!lineBreaks || !lineBreaks.length)) {
     lineBreaks = linebreak(nodes, lines, {
       ...settings,
       tolerance
     })
+    step *= 2
+    tolerance += step
+  }
+  cache.push(string)
+  values.push(lineBreaks)
+  if (cache.length > 50) {
+    cache.shift();
+    values.shift();
   }
   return lineBreaks
 }

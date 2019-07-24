@@ -7,6 +7,9 @@ import { propTypes, defaultProps } from "./drop-cap-prop-types";
 
 const DropCap = props => {
   const { colour, dropCap, font, scale } = props;
+  if (!dropCap) {
+    return null;
+  }
   const stylesThemedAndScaled = styleFactory(font, scale);
   const { color, ...withoutColor } = stylesThemedAndScaled.dropCapTextElement;
   const value =
