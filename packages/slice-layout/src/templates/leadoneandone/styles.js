@@ -4,17 +4,17 @@ const styles = {
   container: {
     flex: 1,
     flexDirection: "row",
-    marginHorizontal: spacing(2)
+    marginHorizontal: spacing(6)
   },
   leadItem: {
-    width: "83.33%"
+    width: "75%"
   },
   keyline: {
     backgroundColor: colours.functional.keyline,
     height: 1
   },
   supportItem: {
-    width: "16.67%"
+    width: "25%"
   }
 };
 
