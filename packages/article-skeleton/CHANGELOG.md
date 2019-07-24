@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.11.5](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.11.4...@times-components/article-skeleton@1.11.5) (2019-07-24)
+
+
+### Bug Fixes
+
+* REPLAT-7145, REPLAT-7130 ([#2136](https://github.com/newsuk/times-components/issues/2136)) ([64c72b1](https://github.com/newsuk/times-components/commit/64c72b1))
+
+
+
+
+
 ## [1.11.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.11.3...@times-components/article-skeleton@1.11.4) (2019-07-22)
 
 **Note:** Version bump only for package @times-components/article-skeleton
