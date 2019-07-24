@@ -15,6 +15,9 @@ const styles = {
   },
   supportItem: {
     width: "25%"
+  },
+  colSeparatorStyle: {
+    marginVertical: spacing(3)
   }
 };
 

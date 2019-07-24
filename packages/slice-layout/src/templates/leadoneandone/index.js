@@ -23,6 +23,7 @@ const leadOneAndOneSlice = ({ breakpoint, lead, support }) => {
         { style: styles.leadItem, tile: lead },
         { style: styles.supportItem, tile: support }
       ]}
+      colSeparatorStyle={styles.colSeparatorStyle}
     />
   );
 };
