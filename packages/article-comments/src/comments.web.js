@@ -29,6 +29,7 @@ class Comments extends Component {
 
   initialiseComments() {
     const { articleId, isReadOnly, spotAccountId } = this.props;
+
     if (!this.container || !articleId || !spotAccountId) {
       return;
     }
@@ -51,7 +52,11 @@ class Comments extends Component {
 
     if (!isReadOnly) {
       if (window.SPOTIM && window.SPOTIM.startSSO) {
-        executeSSOtransaction();
+        executeSSOtransaction(() => {
+          this.setState({
+            showLabel: true
+          });
+        });
       } else {
         document.addEventListener("spot-im-api-ready", () =>
           executeSSOtransaction(() => {
