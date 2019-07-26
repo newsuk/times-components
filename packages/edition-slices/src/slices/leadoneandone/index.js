@@ -9,6 +9,7 @@ class LeadOneAndOne extends Component {
     super(props);
     this.renderSmall = this.renderSmall.bind(this);
     this.renderMedium = this.renderMedium.bind(this);
+    this.renderWide = this.renderWide.bind(this);
     this.renderHuge = this.renderHuge.bind(this);
   }
 
@@ -27,6 +28,34 @@ class LeadOneAndOne extends Component {
   }
 
   renderMedium(breakpoint) {
+    const {
+      onPress,
+      slice: { lead, support }
+    } = this.props;
+    return (
+      <LeadOneAndOneSlice
+        breakpoint={breakpoint}
+        lead={
+          <TileU
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={lead}
+            tileName="lead"
+          />
+        }
+        support={
+          <TileB
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={support}
+            tileName="support"
+          />
+        }
+      />
+    );
+  }
+
+  renderWide(breakpoint) {
     const {
       onPress,
       slice: { lead, support }
@@ -73,7 +102,7 @@ class LeadOneAndOne extends Component {
       <ResponsiveSlice
         renderSmall={this.renderSmall}
         renderMedium={this.renderMedium}
-        renderWide={this.renderMedium}
+        renderWide={this.renderWide}
         renderHuge={this.renderHuge}
       />
     );

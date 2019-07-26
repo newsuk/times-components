@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { View } from "react-native";
 import PropTypes from "prop-types";
 import ArticleSummary, {
   ArticleSummaryContent,
@@ -34,31 +33,31 @@ class TileSummary extends Component {
   renderFlags() {
     const {
       tile: {
-        article: { expirableFlags, id }
+        article: { expirableFlags }
       },
-      flagColour,
-      isDarkStar,
-      withStar,
-      starStyle
+      flagColour
     } = this.props;
 
-    if (!withStar || !isSaveSupported) {
-      return <ArticleFlags {...flagColour} flags={expirableFlags} />;
-    }
+    return <ArticleFlags {...flagColour} flags={expirableFlags} />;
+  }
+
+  renderSaveStar() {
+    const {
+      tile: {
+        article: { id }
+      },
+      isDarkStar,
+      starStyle
+    } = this.props;
 
     const tileStyle = starStyle || horizontalStyles;
 
     return (
-      <View style={tileStyle.container}>
-        <View style={tileStyle.flagStyle}>
-          <ArticleFlags {...flagColour} flags={expirableFlags} />
-        </View>
-        <TileStar
-          articleId={id}
-          isDark={isDarkStar}
-          style={tileStyle.starButton}
-        />
-      </View>
+      <TileStar
+        articleId={id}
+        isDark={isDarkStar}
+        style={tileStyle.starButton}
+      />
     );
   }
 
@@ -130,6 +129,7 @@ class TileSummary extends Component {
           title: label
         }}
         strapline={strapline ? this.renderStrapline() : undefined}
+        saveStar={withStar && isSaveSupported && this.renderSaveStar()}
         style={
           shouldAddBottomPadding ? [starTeaserPaddingBottom, style] : style
         }

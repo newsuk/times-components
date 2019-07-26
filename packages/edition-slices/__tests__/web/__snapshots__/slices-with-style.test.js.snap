@@ -956,7 +956,7 @@ exports[`2. leaders 2`] = `
 exports[`3. lead one and one 1`] = `
 <style>
 .IS1 {
-  width: 83.33%;
+  width: 75%;
 }
 
 .IS2 {
@@ -969,12 +969,12 @@ exports[`3. lead one and one 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .IS3 {
-  width: 16.67%;
+  width: 25%;
 }
 
 .IS4 {
@@ -987,8 +987,8 @@ exports[`3. lead one and one 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 30px;
+  margin-left: 30px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
