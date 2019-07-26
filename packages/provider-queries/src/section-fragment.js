@@ -321,7 +321,9 @@ export default gql`
             listingAsset {
               ...listingAsset169
             }
+            summary125: summary(maxCharCount: 125)
           }
+          teaser125: teaser(maxCharCount: 125)
         }
         secondary2 {
           headline
@@ -336,7 +338,9 @@ export default gql`
             listingAsset {
               ...listingAsset169
             }
+            summary125: summary(maxCharCount: 125)
           }
+          teaser125: teaser(maxCharCount: 125)
         }
         secondary3 {
           headline
@@ -351,7 +355,9 @@ export default gql`
             listingAsset {
               ...listingAsset169
             }
+            summary125: summary(maxCharCount: 125)
           }
+          teaser125: teaser(maxCharCount: 125)
         }
         secondary4 {
           headline
@@ -366,7 +372,9 @@ export default gql`
             listingAsset {
               ...listingAsset169
             }
+            summary125: summary(maxCharCount: 125)
           }
+          teaser125: teaser(maxCharCount: 125)
         }
       }
       ... on SecondaryOneSlice {
@@ -953,7 +961,9 @@ export default gql`
             listingAsset {
               ...listingAsset169
             }
+            summary125: summary(maxCharCount: 125)
           }
+          teaser125: teaser(maxCharCount: 125)
         }
         secondary2 {
           headline
@@ -968,7 +978,9 @@ export default gql`
             listingAsset {
               ...listingAsset169
             }
+            summary125: summary(maxCharCount: 125)
           }
+          teaser125: teaser(maxCharCount: 125)
         }
         secondary3 {
           headline
@@ -983,7 +995,9 @@ export default gql`
             listingAsset {
               ...listingAsset169
             }
+            summary125: summary(maxCharCount: 125)
           }
+          teaser125: teaser(maxCharCount: 125)
         }
         secondary4 {
           headline
@@ -998,7 +1012,9 @@ export default gql`
             listingAsset {
               ...listingAsset169
             }
+            summary125: summary(maxCharCount: 125)
           }
+          teaser125: teaser(maxCharCount: 125)
         }
       }
       ... on SecondaryOneSlice {
