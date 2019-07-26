@@ -58,6 +58,7 @@ exports[`1. inline image (landscape) with caption and credits 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
               "lineHeight": 20,
+              "marginTop": -5,
             }
           }
         >
@@ -72,6 +73,7 @@ exports[`1. inline image (landscape) with caption and credits 1`] = `
               "fontWeight": "400",
               "letterSpacing": 1,
               "lineHeight": 20,
+              "marginTop": 0,
             }
           }
         >
@@ -141,6 +143,7 @@ exports[`2. inline image (portrait) with caption and credits 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
               "lineHeight": 20,
+              "marginTop": -5,
             }
           }
         >
@@ -155,6 +158,7 @@ exports[`2. inline image (portrait) with caption and credits 1`] = `
               "fontWeight": "400",
               "letterSpacing": 1,
               "lineHeight": 20,
+              "marginTop": 0,
             }
           }
         >

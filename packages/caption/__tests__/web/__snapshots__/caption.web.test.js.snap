@@ -90,6 +90,7 @@ exports[`5. centred caption without credits 1`] = `
       className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
       style={
         Object {
+          "marginTop": "5px",
           "paddingLeft": "10px",
           "paddingRight": "10px",
           "textAlign": "center",
@@ -113,6 +114,7 @@ exports[`6. centred caption caption with credits 1`] = `
       className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
       style={
         Object {
+          "marginTop": "5px",
           "paddingLeft": "10px",
           "paddingRight": "10px",
           "textAlign": "center",
@@ -125,6 +127,7 @@ exports[`6. centred caption caption with credits 1`] = `
       className="css-text-901oao r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
       style={
         Object {
+          "marginTop": "5px",
           "paddingLeft": "10px",
           "paddingRight": "10px",
           "textAlign": "center",
@@ -148,6 +151,7 @@ exports[`7. centred caption caption with credits only 1`] = `
       className="css-text-901oao r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
       style={
         Object {
+          "marginTop": "5px",
           "paddingLeft": "10px",
           "paddingRight": "10px",
           "textAlign": "center",
@@ -176,6 +180,7 @@ exports[`8. centred caption caption with child 1`] = `
       className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
       style={
         Object {
+          "marginTop": "5px",
           "paddingLeft": "10px",
           "paddingRight": "10px",
           "textAlign": "center",
@@ -188,6 +193,7 @@ exports[`8. centred caption caption with child 1`] = `
       className="css-text-901oao r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
       style={
         Object {
+          "marginTop": "5px",
           "paddingLeft": "10px",
           "paddingRight": "10px",
           "textAlign": "center",

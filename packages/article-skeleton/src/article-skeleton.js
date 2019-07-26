@@ -8,7 +8,11 @@ import { withTrackScrollDepth } from "@times-components/tracking";
 import { screenWidth } from "@times-components/utils";
 import ArticleExtras from "@times-components/article-extras";
 import { Layout, Text as FText } from "@times-components/text-flow";
-import { tabletWidth, tabletWidthMax, colours } from "@times-components/styleguide";
+import {
+  tabletWidth,
+  tabletWidthMax,
+  colours
+} from "@times-components/styleguide";
 import ArticleRowFlow from "./article-body/article-body-row";
 import {
   articleSkeletonPropTypes,
@@ -30,7 +34,7 @@ const viewabilityConfig = {
 };
 
 const convertStyles = ({ font, size }) => ({
-  fontFamily: 'TimesDigitalW04',
+  fontFamily: "TimesDigitalW04",
   fontSize: size,
   fontStyle: font.includes("Italic") ? "italic" : "normal",
   fontWeight: font.includes("Bold") ? "bold" : "normal"

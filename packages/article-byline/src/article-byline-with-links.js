@@ -27,7 +27,12 @@ const renderAuthorComponent = (
 };
 
 const ArticleBylineWithLinks = ({ ast, centered, ...props }) =>
-  renderByline(renderAuthorComponent, ast, (centered ? [styles.text, styles.centered] : styles.text), props);
+  renderByline(
+    renderAuthorComponent,
+    ast,
+    centered ? [styles.text, styles.centered] : styles.text,
+    props
+  );
 
 ArticleBylineWithLinks.displayName = "ArticleBylineWithLinks";
 

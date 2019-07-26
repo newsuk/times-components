@@ -5,8 +5,7 @@ exports[`phone full article with style 1`] = `
   <View
     style={
       Object {
-        "marginBottom": 15,
-        "paddingBottom": 20,
+        "paddingBottom": 15,
         "paddingTop": 35,
       }
     }
@@ -135,8 +134,7 @@ exports[`tablet full article with style 1`] = `
   <View
     style={
       Object {
-        "marginBottom": 15,
-        "paddingBottom": 20,
+        "paddingBottom": 15,
         "paddingTop": 35,
       }
     }

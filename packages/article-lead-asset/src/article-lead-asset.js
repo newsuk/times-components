@@ -21,21 +21,21 @@ const ArticleLeadAssetModalImage = ({
   relativeHorizontalOffset,
   relativeVerticalOffset
 }) => (
-    <ModalImage
-      highResSize={width}
-      {...{
-        aspectRatio,
-        caption,
-        crop,
-        onImagePress,
-        uri,
-        relativeWidth,
-        relativeHeight,
-        relativeHorizontalOffset,
-        relativeVerticalOffset
-      }}
-      index={0}
-    />
+  <ModalImage
+    highResSize={width}
+    {...{
+      aspectRatio,
+      caption,
+      crop,
+      onImagePress,
+      uri,
+      relativeWidth,
+      relativeHeight,
+      relativeHorizontalOffset,
+      relativeVerticalOffset
+    }}
+    index={0}
+  />
 );
 
 const ArticleLeadAsset = ({

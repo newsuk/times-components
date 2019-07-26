@@ -426,8 +426,7 @@ exports[`full article with style 1`] = `
   -webkit-align-items: center;
   -webkit-box-align: center;
   align-items: center;
-  margin-bottom: 15px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   padding-top: 35px;
 }
 

@@ -18,8 +18,6 @@ module.exports = {
     .default,
   TimesDigitalW04: require("../dist/public/fonts/TimesDigitalW04-metrics.js")
     .default,
-  "TimesModern-Bold": require("../dist/public/fonts/TimesModern-Bold-metrics.js")
-    .default,
   "TimesModern-Regular": require("../dist/public/fonts/TimesModern-Regular-metrics.js")
     .default
 };

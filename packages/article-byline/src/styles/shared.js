@@ -9,7 +9,7 @@ const shared = {
     }),
     color: colours.functional.action,
     textDecorationLine: "none",
-    fontWeight: 'bold'
+    fontWeight: "bold"
   },
   nonLinkText: {
     ...fontFactory({
@@ -28,7 +28,7 @@ const shared = {
     fontWeight: "400"
   },
   centered: {
-    textAlign: 'center',
+    textAlign: "center"
   },
   text: {
     ...fontFactory({
