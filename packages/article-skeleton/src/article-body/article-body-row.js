@@ -88,7 +88,9 @@ export default ({
       const cap = getDropCap(children, fonts[dropCapFont], height, [
         new Body(value)
       ]);
-      const capWidth = (cap[0].measuredWidth + 20) * fontScale;
+      const dropCapGap =
+        typeof value === 'string' && ['M', 'W'].includes(value) ? 18 : 10;
+      const capWidth = (cap[0].measuredWidth + dropCapGap) * fontScale;
 
       return {
         element: new Layout.InlineBlock({
