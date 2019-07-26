@@ -1,9 +1,11 @@
 import React, { Fragment } from "react";
+import { View } from "react-native";
 import { editionBreakpoints } from "@times-components/styleguide";
 import styleFactory from "./styles";
 import { propTypes, defaultProps } from "./proptypes";
-import { ItemRowSeparator } from "../shared";
+import { ItemRowSeparator, ItemColSeparator } from "../shared";
 import HorizontalLayout from "../horizontallayout";
+import VerticalLayout from "../verticallayout";
 
 const SecondaryFourSlice = ({
   breakpoint,
@@ -12,37 +14,58 @@ const SecondaryFourSlice = ({
   secondary3,
   secondary4
 }) => {
-  const { item, itemContainer, container } = styleFactory(breakpoint);
+  const styles = styleFactory(breakpoint);
+
   if (breakpoint === editionBreakpoints.small) {
     return (
       <Fragment>
         <HorizontalLayout
-          containerStyle={itemContainer}
+          containerStyle={styles.itemContainer}
           tiles={[
-            { style: item, tile: secondary1 },
-            { style: item, tile: secondary2 }
+            { style: styles.item, tile: secondary1 },
+            { style: styles.item, tile: secondary2 }
           ]}
         />
         <ItemRowSeparator />
         <HorizontalLayout
-          containerStyle={itemContainer}
+          containerStyle={styles.itemContainer}
           tiles={[
-            { style: item, tile: secondary3 },
-            { style: item, tile: secondary4 }
+            { style: styles.item, tile: secondary3 },
+            { style: styles.item, tile: secondary4 }
           ]}
         />
       </Fragment>
     );
   }
 
+  if (breakpoint === editionBreakpoints.medium) {
+    return (
+      <View style={styles.container}>
+        <HorizontalLayout
+          containerStyle={styles.columnsContainer}
+          tiles={[
+            { style: styles.columnItem, tile: secondary1 },
+            { style: styles.columnItem, tile: secondary2 }
+          ]}
+          colSeparatorStyle={styles.colSeparatorStyle}
+        />
+        <ItemColSeparator style={styles.colSeparatorStyle} />
+        <VerticalLayout
+          style={styles.rowsContainer}
+          tiles={[secondary3, secondary4]}
+        />
+      </View>
+    );
+  }
+
   return (
     <HorizontalLayout
-      containerStyle={container}
+      containerStyle={styles.container}
       tiles={[
-        { style: item, tile: secondary1 },
-        { style: item, tile: secondary2 },
-        { style: item, tile: secondary3 },
-        { style: item, tile: secondary4 }
+        { style: styles.item, tile: secondary1 },
+        { style: styles.item, tile: secondary2 },
+        { style: styles.item, tile: secondary3 },
+        { style: styles.item, tile: secondary4 }
       ]}
     />
   );
