@@ -1,16 +1,17 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { SecondaryFourSlice } from "@times-components/slice-layout";
-import { TileC } from "../../tiles";
+import { TileC, TileAR, TileB } from "../../tiles";
 import { ResponsiveSlice } from "../shared";
 
 class SecondaryFour extends Component {
   constructor(props) {
     super(props);
-    this.renderSlice = this.renderSlice.bind(this);
+    this.renderSmall = this.renderSmall.bind(this);
+    this.renderMedium = this.renderMedium.bind(this);
   }
 
-  renderSlice(breakpoint) {
+  renderSmall(breakpoint) {
     const {
       onPress,
       slice: { secondary1, secondary2, secondary3, secondary4 }
@@ -35,11 +36,47 @@ class SecondaryFour extends Component {
     );
   }
 
+  renderMedium(breakpoint) {
+    const {
+      onPress,
+      slice: { secondary1, secondary2, secondary3, secondary4 }
+    } = this.props;
+
+    return (
+      <SecondaryFourSlice
+        breakpoint={breakpoint}
+        secondary1={
+          <TileAR onPress={onPress} tile={secondary1} tileName="secondary1" />
+        }
+        secondary2={
+          <TileAR onPress={onPress} tile={secondary2} tileName="secondary2" />
+        }
+        secondary3={
+          <TileB
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={secondary3}
+            tileName="secondary3"
+          />
+        }
+        secondary4={
+          <TileB
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={secondary4}
+            tileName="secondary4"
+          />
+        }
+      />
+    );
+  }
+
   render() {
     return (
       <ResponsiveSlice
-        renderMedium={this.renderSlice}
-        renderSmall={this.renderSlice}
+        renderSmall={this.renderSmall}
+        renderMedium={this.renderMedium}
+        renderWide={this.renderSmall}
       />
     );
   }
