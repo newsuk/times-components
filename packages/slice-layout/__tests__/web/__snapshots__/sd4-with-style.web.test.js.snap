@@ -167,12 +167,22 @@ exports[`2. secondary four - medium 1`] = `
   style={
     Object {
       "WebkitBoxDirection": "normal",
+      "WebkitBoxFlex": 1,
       "WebkitBoxOrient": "horizontal",
+      "WebkitFlexBasis": "0%",
       "WebkitFlexDirection": "row",
+      "WebkitFlexGrow": 1,
+      "WebkitFlexShrink": 1,
+      "flexBasis": "0%",
       "flexDirection": "row",
-      "marginLeft": "10px",
-      "marginRight": "10px",
+      "flexGrow": 1,
+      "flexShrink": 1,
+      "marginLeft": "20px",
+      "marginRight": "20px",
       "msFlexDirection": "row",
+      "msFlexNegative": 1,
+      "msFlexPositive": 1,
+      "msFlexPreferredSize": "0%",
     }
   }
 >
@@ -180,24 +190,87 @@ exports[`2. secondary four - medium 1`] = `
     className="css-view-1dbjc4n"
     style={
       Object {
-        "WebkitBoxFlex": 1,
+        "WebkitBoxDirection": "normal",
+        "WebkitBoxFlex": 2,
+        "WebkitBoxOrient": "horizontal",
         "WebkitFlexBasis": "0%",
-        "WebkitFlexGrow": 1,
+        "WebkitFlexDirection": "row",
+        "WebkitFlexGrow": 2,
         "WebkitFlexShrink": 1,
         "flexBasis": "0%",
-        "flexGrow": 1,
+        "flexDirection": "row",
+        "flexGrow": 2,
         "flexShrink": 1,
+        "msFlexDirection": "row",
         "msFlexNegative": 1,
-        "msFlexPositive": 1,
+        "msFlexPositive": 2,
         "msFlexPreferredSize": "0%",
-        "width": "25%",
       }
     }
   >
     <div
-      className="css-text-901oao"
+      className="css-view-1dbjc4n"
+      style={
+        Object {
+          "WebkitBoxFlex": 1,
+          "WebkitFlexBasis": "0%",
+          "WebkitFlexGrow": 1,
+          "WebkitFlexShrink": 1,
+          "flexBasis": "0%",
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "msFlexNegative": 1,
+          "msFlexPositive": 1,
+          "msFlexPreferredSize": "0%",
+        }
+      }
     >
-      secondary-1
+      <div
+        className="css-text-901oao"
+      >
+        secondary-1
+      </div>
+    </div>
+    <div
+      className="css-view-1dbjc4n"
+      style={
+        Object {
+          "borderBottomColor": "rgba(219,219,219,1.00)",
+          "borderBottomStyle": "solid",
+          "borderLeftColor": "rgba(219,219,219,1.00)",
+          "borderLeftStyle": "solid",
+          "borderRightColor": "rgba(219,219,219,1.00)",
+          "borderRightStyle": "solid",
+          "borderRightWidth": "1px",
+          "borderTopColor": "rgba(219,219,219,1.00)",
+          "borderTopStyle": "solid",
+          "marginBottom": "15px",
+          "marginTop": "15px",
+        }
+      }
+    />
+    <div
+      className="css-view-1dbjc4n"
+      style={
+        Object {
+          "WebkitBoxFlex": 1,
+          "WebkitFlexBasis": "0%",
+          "WebkitFlexGrow": 1,
+          "WebkitFlexShrink": 1,
+          "flexBasis": "0%",
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "msFlexNegative": 1,
+          "msFlexPositive": 1,
+          "msFlexPreferredSize": "0%",
+        }
+      }
+    >
+      <div
+        className="css-text-901oao"
+      >
+        secondary-2
+      </div>
     </div>
   </div>
   <div
@@ -213,8 +286,8 @@ exports[`2. secondary four - medium 1`] = `
         "borderRightWidth": "1px",
         "borderTopColor": "rgba(219,219,219,1.00)",
         "borderTopStyle": "solid",
-        "marginBottom": "10px",
-        "marginTop": "10px",
+        "marginBottom": "15px",
+        "marginTop": "15px",
       }
     }
   />
@@ -232,49 +305,6 @@ exports[`2. secondary four - medium 1`] = `
         "msFlexNegative": 1,
         "msFlexPositive": 1,
         "msFlexPreferredSize": "0%",
-        "width": "25%",
-      }
-    }
-  >
-    <div
-      className="css-text-901oao"
-    >
-      secondary-2
-    </div>
-  </div>
-  <div
-    className="css-view-1dbjc4n"
-    style={
-      Object {
-        "borderBottomColor": "rgba(219,219,219,1.00)",
-        "borderBottomStyle": "solid",
-        "borderLeftColor": "rgba(219,219,219,1.00)",
-        "borderLeftStyle": "solid",
-        "borderRightColor": "rgba(219,219,219,1.00)",
-        "borderRightStyle": "solid",
-        "borderRightWidth": "1px",
-        "borderTopColor": "rgba(219,219,219,1.00)",
-        "borderTopStyle": "solid",
-        "marginBottom": "10px",
-        "marginTop": "10px",
-      }
-    }
-  />
-  <div
-    className="css-view-1dbjc4n"
-    style={
-      Object {
-        "WebkitBoxFlex": 1,
-        "WebkitFlexBasis": "0%",
-        "WebkitFlexGrow": 1,
-        "WebkitFlexShrink": 1,
-        "flexBasis": "0%",
-        "flexGrow": 1,
-        "flexShrink": 1,
-        "msFlexNegative": 1,
-        "msFlexPositive": 1,
-        "msFlexPreferredSize": "0%",
-        "width": "25%",
       }
     }
   >
@@ -283,43 +313,24 @@ exports[`2. secondary four - medium 1`] = `
     >
       secondary-3
     </div>
-  </div>
-  <div
-    className="css-view-1dbjc4n"
-    style={
-      Object {
-        "borderBottomColor": "rgba(219,219,219,1.00)",
-        "borderBottomStyle": "solid",
-        "borderLeftColor": "rgba(219,219,219,1.00)",
-        "borderLeftStyle": "solid",
-        "borderRightColor": "rgba(219,219,219,1.00)",
-        "borderRightStyle": "solid",
-        "borderRightWidth": "1px",
-        "borderTopColor": "rgba(219,219,219,1.00)",
-        "borderTopStyle": "solid",
-        "marginBottom": "10px",
-        "marginTop": "10px",
+    <div
+      className="css-view-1dbjc4n"
+      style={
+        Object {
+          "borderBottomColor": "rgba(219,219,219,1.00)",
+          "borderBottomStyle": "solid",
+          "borderBottomWidth": "1px",
+          "borderLeftColor": "rgba(219,219,219,1.00)",
+          "borderLeftStyle": "solid",
+          "borderRightColor": "rgba(219,219,219,1.00)",
+          "borderRightStyle": "solid",
+          "borderTopColor": "rgba(219,219,219,1.00)",
+          "borderTopStyle": "solid",
+          "marginLeft": "10px",
+          "marginRight": "10px",
+        }
       }
-    }
-  />
-  <div
-    className="css-view-1dbjc4n"
-    style={
-      Object {
-        "WebkitBoxFlex": 1,
-        "WebkitFlexBasis": "0%",
-        "WebkitFlexGrow": 1,
-        "WebkitFlexShrink": 1,
-        "flexBasis": "0%",
-        "flexGrow": 1,
-        "flexShrink": 1,
-        "msFlexNegative": 1,
-        "msFlexPositive": 1,
-        "msFlexPreferredSize": "0%",
-        "width": "25%",
-      }
-    }
-  >
+    />
     <div
       className="css-text-901oao"
     >
