@@ -12,6 +12,7 @@ exports[`1. default layout 1`] = `
       relativeHorizontalOffset={0.16666666666666666}
       relativeVerticalOffset={0.2}
       relativeWidth={0.5}
+      resizeMode="center"
       source={
         Object {
           "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080&offline=true&rel_height=0.4&rel_width=0.5&rel_horizontal_offset=0.16666666666666666&rel_vertical_offset=0.2",
@@ -99,6 +100,7 @@ exports[`3. default layout without aspect ratio 1`] = `
       relativeHorizontalOffset={0.16666666666666666}
       relativeVerticalOffset={0.2}
       relativeWidth={0.5}
+      resizeMode="center"
       source={
         Object {
           "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800&offline=true&rel_height=0.4&rel_width=0.5&rel_horizontal_offset=0.16666666666666666&rel_vertical_offset=0.2",
@@ -152,6 +154,7 @@ exports[`4. rounded image 1`] = `
       relativeHorizontalOffset={0.16666666666666666}
       relativeVerticalOffset={0.2}
       relativeWidth={0.5}
+      resizeMode="center"
       source={
         Object {
           "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800&offline=true&rel_height=0.4&rel_width=0.5&rel_horizontal_offset=0.16666666666666666&rel_vertical_offset=0.2",
@@ -205,6 +208,7 @@ exports[`5. prepend https schema 1`] = `
       relativeHorizontalOffset={0.16666666666666666}
       relativeVerticalOffset={0.2}
       relativeWidth={0.5}
+      resizeMode="center"
       source={
         Object {
           "uri": "https://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080&offline=true&rel_height=0.4&rel_width=0.5&rel_horizontal_offset=0.16666666666666666&rel_vertical_offset=0.2",
@@ -258,6 +262,7 @@ exports[`6. handle onload event 1`] = `
       relativeHorizontalOffset={0.16666666666666666}
       relativeVerticalOffset={0.2}
       relativeWidth={0.5}
+      resizeMode="center"
       source={
         Object {
           "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080&offline=true&rel_height=0.4&rel_width=0.5&rel_horizontal_offset=0.16666666666666666&rel_vertical_offset=0.2",
@@ -311,6 +316,7 @@ exports[`6. handle onload event 2`] = `
       relativeHorizontalOffset={0.16666666666666666}
       relativeVerticalOffset={0.2}
       relativeWidth={0.5}
+      resizeMode="center"
       source={
         Object {
           "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080&offline=true&rel_height=0.4&rel_width=0.5&rel_horizontal_offset=0.16666666666666666&rel_vertical_offset=0.2",
@@ -346,6 +352,7 @@ exports[`7. handle onload event with disabled placeholder 1`] = `
       relativeHorizontalOffset={0.16666666666666666}
       relativeVerticalOffset={0.2}
       relativeWidth={0.5}
+      resizeMode="center"
       source={
         Object {
           "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080&offline=true&rel_height=0.4&rel_width=0.5&rel_horizontal_offset=0.16666666666666666&rel_vertical_offset=0.2",
@@ -381,6 +388,7 @@ exports[`7. handle onload event with disabled placeholder 2`] = `
       relativeHorizontalOffset={0.16666666666666666}
       relativeVerticalOffset={0.2}
       relativeWidth={0.5}
+      resizeMode="center"
       source={
         Object {
           "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080&offline=true&rel_height=0.4&rel_width=0.5&rel_horizontal_offset=0.16666666666666666&rel_vertical_offset=0.2",
@@ -416,6 +424,7 @@ exports[`8. componentwillunmount cancels animation timer 1`] = `
       relativeHorizontalOffset={0.16666666666666666}
       relativeVerticalOffset={0.2}
       relativeWidth={0.5}
+      resizeMode="center"
       source={
         Object {
           "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080&offline=true&rel_height=0.4&rel_width=0.5&rel_horizontal_offset=0.16666666666666666&rel_vertical_offset=0.2",
@@ -469,6 +478,7 @@ exports[`10. uses highressize if it exists 1`] = `
       relativeHorizontalOffset={0.16666666666666666}
       relativeVerticalOffset={0.2}
       relativeWidth={0.5}
+      resizeMode="center"
       source={
         Object {
           "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=660&offline=true&rel_height=0.4&rel_width=0.5&rel_horizontal_offset=0.16666666666666666&rel_vertical_offset=0.2",
@@ -522,6 +532,7 @@ exports[`12. uses lowressize image as placeholder if passed 1`] = `
       relativeHorizontalOffset={0.16666666666666666}
       relativeVerticalOffset={0.2}
       relativeWidth={0.5}
+      resizeMode="center"
       source={
         Object {
           "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=2308&offline=true&rel_height=0.4&rel_width=0.5&rel_horizontal_offset=0.16666666666666666&rel_vertical_offset=0.2",
@@ -572,6 +583,7 @@ exports[`13. handle layout change 1`] = `
       relativeHorizontalOffset={0.16666666666666666}
       relativeVerticalOffset={0.2}
       relativeWidth={0.5}
+      resizeMode="center"
       source={
         Object {
           "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080&offline=true&rel_height=0.4&rel_width=0.5&rel_horizontal_offset=0.16666666666666666&rel_vertical_offset=0.2",
