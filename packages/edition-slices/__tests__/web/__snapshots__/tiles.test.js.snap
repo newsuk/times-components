@@ -1360,7 +1360,7 @@ exports[`33. tile ak 1`] = `
       "backgroundColor": "#F0F0F0",
       "flex": 1,
       "height": 150,
-      "marginHorizontal": "5px",
+      "marginHorizontal": "10px",
       "overflow": "hidden",
     }
   }
