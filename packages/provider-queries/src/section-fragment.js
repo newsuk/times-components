@@ -212,9 +212,11 @@ export default gql`
             }
             summary125: summary(maxCharCount: 125)
             summary300: summary(maxCharCount: 300)
+            summary800: summary(maxCharCount: 800)
           }
           teaser125: teaser(maxCharCount: 125)
           teaser300: teaser(maxCharCount: 300)
+          teaser800: teaser(maxCharCount: 800)
         }
         support {
           headline
@@ -230,8 +232,10 @@ export default gql`
               ...listingAsset169
             }
             summary125: summary(maxCharCount: 125)
+            summary800: summary(maxCharCount: 800)
           }
           teaser125: teaser(maxCharCount: 125)
+          teaser800: teaser(maxCharCount: 800)
         }
       }
       ... on LeadOneFullWidthSlice {
@@ -270,9 +274,11 @@ export default gql`
             ...baseArticleProps
             summary125: summary(maxCharCount: 125)
             summary300: summary(maxCharCount: 300)
+            summary800: summary(maxCharCount: 800)
           }
           teaser125: teaser(maxCharCount: 125)
           teaser300: teaser(maxCharCount: 300)
+          teaser800: teaser(maxCharCount: 800)
         }
         support1 {
           headline
@@ -288,8 +294,10 @@ export default gql`
               ...listingAsset32
             }
             summary125: summary(maxCharCount: 125)
+            summary800: summary(maxCharCount: 800)
           }
           teaser125: teaser(maxCharCount: 125)
+          teaser800: teaser(maxCharCount: 800)
         }
         support2 {
           headline
@@ -392,8 +400,10 @@ export default gql`
               ...listingAsset169and32
             }
             summary125: summary(maxCharCount: 125)
+            summary800: summary(maxCharCount: 800)
           }
           teaser125: teaser(maxCharCount: 125)
+          teaser800: teaser(maxCharCount: 800)
         }
       }
       ... on SecondaryOneAndColumnistSlice {
@@ -426,8 +436,10 @@ export default gql`
               ...listingAsset23
             }
             summary125: summary(maxCharCount: 125)
+            summary800: summary(maxCharCount: 800)
           }
           teaser125: teaser(maxCharCount: 125)
+          teaser800: teaser(maxCharCount: 800)
         }
       }
       ... on SecondaryOneAndFourSlice {
@@ -481,6 +493,7 @@ export default gql`
           }
           article {
             ...baseArticleProps
+            summary800: summary(maxCharCount: 800)
             leadAsset {
               ...leadAsset169
             }
@@ -488,6 +501,7 @@ export default gql`
               ...listingAsset169
             }
           }
+          teaser800: teaser(maxCharCount: 800)
         }
         secondary2 {
           headline
@@ -496,6 +510,7 @@ export default gql`
           }
           article {
             ...baseArticleProps
+            summary800: summary(maxCharCount: 800)
             leadAsset {
               ...leadAsset169
             }
@@ -503,6 +518,7 @@ export default gql`
               ...listingAsset169
             }
           }
+          teaser800: teaser(maxCharCount: 800)
         }
         support1 {
           headline
@@ -541,16 +557,20 @@ export default gql`
           article {
             ...baseArticleProps
             summary125: summary(maxCharCount: 125)
+            summary800: summary(maxCharCount: 800)
           }
           teaser125: teaser(maxCharCount: 125)
+          teaser800: teaser(maxCharCount: 800)
         }
         secondary2 {
           headline
           article {
             ...baseArticleProps
             summary125: summary(maxCharCount: 125)
+            summary800: summary(maxCharCount: 800)
           }
           teaser125: teaser(maxCharCount: 125)
+          teaser800: teaser(maxCharCount: 800)
         }
         support1 {
           headline
@@ -598,8 +618,10 @@ export default gql`
               ...listingAsset169
             }
             summary125: summary(maxCharCount: 125)
+            summary800: summary(maxCharCount: 800)
           }
           teaser125: teaser(maxCharCount: 125)
+          teaser800: teaser(maxCharCount: 800)
         }
         lead2 {
           headline
@@ -615,8 +637,10 @@ export default gql`
               ...listingAsset169
             }
             summary125: summary(maxCharCount: 125)
+            summary800: summary(maxCharCount: 800)
           }
           teaser125: teaser(maxCharCount: 125)
+          teaser800: teaser(maxCharCount: 800)
         }
         support1 {
           headline
@@ -854,9 +878,11 @@ export default gql`
             }
             summary125: summary(maxCharCount: 125)
             summary300: summary(maxCharCount: 300)
+            summary800: summary(maxCharCount: 800)
           }
           teaser125: teaser(maxCharCount: 125)
           teaser300: teaser(maxCharCount: 300)
+          teaser800: teaser(maxCharCount: 800)
         }
         support {
           headline
@@ -872,8 +898,10 @@ export default gql`
               ...listingAsset169
             }
             summary125: summary(maxCharCount: 125)
+            summary800: summary(maxCharCount: 800)
           }
           teaser125: teaser(maxCharCount: 125)
+          teaser800: teaser(maxCharCount: 800)
         }
       }
       ... on LeadOneFullWidthSlice {
@@ -912,9 +940,11 @@ export default gql`
             ...baseArticleProps
             summary125: summary(maxCharCount: 125)
             summary300: summary(maxCharCount: 300)
+            summary800: summary(maxCharCount: 800)
           }
           teaser125: teaser(maxCharCount: 125)
           teaser300: teaser(maxCharCount: 300)
+          teaser800: teaser(maxCharCount: 800)
         }
         support1 {
           headline
@@ -929,7 +959,9 @@ export default gql`
             listingAsset {
               ...listingAsset32
             }
+            summary800: summary(maxCharCount: 800)
           }
+          teaser800: teaser(maxCharCount: 800)
         }
         support2 {
           headline
@@ -1032,8 +1064,10 @@ export default gql`
               ...listingAsset169and32
             }
             summary125: summary(maxCharCount: 125)
+            summary800: summary(maxCharCount: 800)
           }
           teaser125: teaser(maxCharCount: 125)
+          teaser800: teaser(maxCharCount: 800)
         }
       }
       ... on SecondaryOneAndColumnistSlice {
@@ -1066,8 +1100,10 @@ export default gql`
               ...listingAsset23
             }
             summary125: summary(maxCharCount: 125)
+            summary800: summary(maxCharCount: 800)
           }
           teaser125: teaser(maxCharCount: 125)
+          teaser800: teaser(maxCharCount: 800)
         }
       }
       ... on SecondaryOneAndFourSlice {
@@ -1121,6 +1157,7 @@ export default gql`
           }
           article {
             ...baseArticleProps
+            summary800: summary(maxCharCount: 800)
             leadAsset {
               ...leadAsset169
             }
@@ -1128,6 +1165,7 @@ export default gql`
               ...listingAsset169
             }
           }
+          teaser800: teaser(maxCharCount: 800)
         }
         secondary2 {
           headline
@@ -1136,6 +1174,7 @@ export default gql`
           }
           article {
             ...baseArticleProps
+            summary800: summary(maxCharCount: 800)
             leadAsset {
               ...leadAsset169
             }
@@ -1143,6 +1182,7 @@ export default gql`
               ...listingAsset169
             }
           }
+          teaser800: teaser(maxCharCount: 800)
         }
         support1 {
           headline
@@ -1181,16 +1221,20 @@ export default gql`
           article {
             ...baseArticleProps
             summary125: summary(maxCharCount: 125)
+            summary800: summary(maxCharCount: 800)
           }
           teaser125: teaser(maxCharCount: 125)
+          teaser800: teaser(maxCharCount: 800)
         }
         secondary2 {
           headline
           article {
             ...baseArticleProps
             summary125: summary(maxCharCount: 125)
+            summary800: summary(maxCharCount: 800)
           }
           teaser125: teaser(maxCharCount: 125)
+          teaser800: teaser(maxCharCount: 800)
         }
         support1 {
           headline
@@ -1238,8 +1282,10 @@ export default gql`
               ...listingAsset169
             }
             summary125: summary(maxCharCount: 125)
+            summary800: summary(maxCharCount: 800)
           }
           teaser125: teaser(maxCharCount: 125)
+          teaser800: teaser(maxCharCount: 800)
         }
         lead2 {
           headline
@@ -1255,8 +1301,10 @@ export default gql`
               ...listingAsset169
             }
             summary125: summary(maxCharCount: 125)
+            summary800: summary(maxCharCount: 800)
           }
           teaser125: teaser(maxCharCount: 125)
+          teaser800: teaser(maxCharCount: 800)
         }
         support1 {
           headline
