@@ -1735,7 +1735,7 @@ exports[`22. tile u 1`] = `
     Object {
       "flex": 1,
       "flexDirection": "row",
-      "paddingRight": "10px",
+      "paddingHorizontal": "10px",
       "paddingVertical": "15px",
     }
   }
