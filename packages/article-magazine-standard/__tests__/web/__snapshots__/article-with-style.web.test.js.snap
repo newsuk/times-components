@@ -488,195 +488,197 @@ exports[`full article with style 1`] = `
 }
 </style>
 
-<article>
-  <Helmet>
-    <title>
-      Some Headline
-       | 
-      
-      The Times
-    </title>
-    <meta />
-    <meta />
-    <meta />
-    <meta />
-    <meta />
-    <meta />
-    <meta />
-    <meta />
-    <meta />
-    <meta />
-    <meta />
-    <script>
-      {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=685","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io"}
-    </script>
-  </Helmet>
-  <div
-    className="c0 responsiveweb__HeaderAdContainer-sc-1exejum-1 c0 css-view-1dbjc4n"
-  >
-    <Ad
-      className="IS1"
-    />
-  </div>
-  <div
-    className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
-  >
+<div>
+  <article>
+    <Helmet>
+      <title>
+        Some Headline
+         | 
+        
+        The Times
+      </title>
+      <meta />
+      <meta />
+      <meta />
+      <meta />
+      <meta />
+      <meta />
+      <meta />
+      <meta />
+      <meta />
+      <meta />
+      <meta />
+      <script>
+        {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=685","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io"}
+      </script>
+    </Helmet>
     <div
-      className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
+      className="c0 responsiveweb__HeaderAdContainer-sc-1exejum-1 c0 css-view-1dbjc4n"
     >
-      <div
-        className="c3 responsiveweb__HeaderContainer-sc-1pihheg-2 c3 css-view-1dbjc4n r-alignItems-1awozwy r-marginBottom-eektet r-paddingLeft-1hfyk0a r-paddingRight-1qfoi16 r-paddingTop-elmauq S6"
-      >
-        <div
-          className="css-view-1dbjc4n r-marginBottom-15d164r S2"
-        >
-          <div
-            className="css-text-901oao r-color-1yqk5fa r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv S1"
-          >
-            SOME LABEL
-          </div>
-        </div>
-        <h1
-          className="c4 css-reset-4rbku5 responsiveweb__HeadlineContainer-sc-1pihheg-3 c4 css-text-901oao r-color-1yqk5fa r-fontFamily-iirzy8 r-fontSize-1ra0lkn r-lineHeight-1j8sj39 r-marginBottom-15d164r r-textAlign-q4m81j S3"
-        >
-          Some Headline
-        </h1>
-        <div
-          className="c5 responsiveweb__FlagsContainer-sc-1pihheg-1 c5 css-view-1dbjc4n"
-        >
-          <ArticleFlags />
-        </div>
-        <h2
-          className="c6 css-reset-4rbku5 responsiveweb__StandfirstContainer-sc-1pihheg-8 c6 css-text-901oao r-color-1khnkhu r-fontFamily-4h8ur4 r-fontSize-adyw6z r-lineHeight-eaezby r-marginBottom-ku1wi2 r-paddingHorizontal-utggzx r-textAlign-q4m81j S4"
-        >
-          Some Standfirst
-        </h2>
-        <div
-          className="c7 responsiveweb__MetaContainer-sc-1pihheg-6 c7 css-view-1dbjc4n"
-        >
-          <div
-            className="c8 responsiveweb__Meta-sc-1pihheg-5 c8 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj"
-          >
-            <ArticleBylineWithLinks />
-          </div>
-          <div
-            className="c9 responsiveweb__Separator-sc-1pihheg-7 c9 css-view-1dbjc4n"
-          />
-          <div
-            className="c8 responsiveweb__Meta-sc-1pihheg-5 c8 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj"
-          >
-            <div
-              className="c10 responsiveweb__DatePublicationContainer-sc-1pihheg-0 c10 css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginTop-19h5ruw S5"
-            >
-              <DatePublication />
-            </div>
-          </div>
-        </div>
-      </div>
-      <ArticleLeadAsset
-        className="c11 IS2"
+      <Ad
+        className="IS1"
       />
-      <div
-        className="c12 c13 c14"
-      >
-        <div
-          className="IS3"
-        />
-        <div>
-          <div
-            className="c15"
-          >
-            <div>
-              <SaveAndShareBar />
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
     <div
-      className="c16 responsiveweb__BodyContainer-sc-1exejum-3 c16 css-view-1dbjc4n"
+      className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
     >
-      <div>
-        <div
-          className="c17 responsiveweb__PrimaryImg-sc-16nqyj8-5 c17 css-view-1dbjc4n"
-        >
-          <ArticleImage />
-        </div>
-      </div>
-      <Link>
-        Some Link
-      </Link>
-      <p
-        className="c18"
-      >
-        Some content
-      </p>
       <div
-        className="c19 responsiveweb__PullQuoteContainer-sc-16nqyj8-9 c19 css-view-1dbjc4n"
+        className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
       >
         <div
-          className="c20 responsiveweb__PullQuoteResp-sc-16nqyj8-8 c20 css-view-1dbjc4n"
-        >
-          <PullQuote>
-            The pull quote content
-          </PullQuote>
-        </div>
-      </div>
-      <div
-        className="c17 responsiveweb__PrimaryImg-sc-16nqyj8-5 c17 css-view-1dbjc4n"
-      >
-        <figure
-          className="IS9"
+          className="c3 responsiveweb__HeaderContainer-sc-1pihheg-2 c3 css-view-1dbjc4n r-alignItems-1awozwy r-marginBottom-eektet r-paddingLeft-1hfyk0a r-paddingRight-1qfoi16 r-paddingTop-elmauq S6"
         >
           <div
-            className="css-view-1dbjc4n IS8"
+            className="css-view-1dbjc4n r-marginBottom-15d164r S2"
           >
             <div
-              className="css-view-1dbjc4n IS7"
+              className="css-text-901oao r-color-1yqk5fa r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv S1"
+            >
+              SOME LABEL
+            </div>
+          </div>
+          <h1
+            className="c4 css-reset-4rbku5 responsiveweb__HeadlineContainer-sc-1pihheg-3 c4 css-text-901oao r-color-1yqk5fa r-fontFamily-iirzy8 r-fontSize-1ra0lkn r-lineHeight-1j8sj39 r-marginBottom-15d164r r-textAlign-q4m81j S3"
+          >
+            Some Headline
+          </h1>
+          <div
+            className="c5 responsiveweb__FlagsContainer-sc-1pihheg-1 c5 css-view-1dbjc4n"
+          >
+            <ArticleFlags />
+          </div>
+          <h2
+            className="c6 css-reset-4rbku5 responsiveweb__StandfirstContainer-sc-1pihheg-8 c6 css-text-901oao r-color-1khnkhu r-fontFamily-4h8ur4 r-fontSize-adyw6z r-lineHeight-eaezby r-marginBottom-ku1wi2 r-paddingHorizontal-utggzx r-textAlign-q4m81j S4"
+          >
+            Some Standfirst
+          </h2>
+          <div
+            className="c7 responsiveweb__MetaContainer-sc-1pihheg-6 c7 css-view-1dbjc4n"
+          >
+            <div
+              className="c8 responsiveweb__Meta-sc-1pihheg-5 c8 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj"
+            >
+              <ArticleBylineWithLinks />
+            </div>
+            <div
+              className="c9 responsiveweb__Separator-sc-1pihheg-7 c9 css-view-1dbjc4n"
+            />
+            <div
+              className="c8 responsiveweb__Meta-sc-1pihheg-5 c8 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj"
             >
               <div
-                className="IS6"
+                className="c10 responsiveweb__DatePublicationContainer-sc-1pihheg-0 c10 css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginTop-19h5ruw S5"
               >
-                <div
-                  className="IS5"
-                >
-                  <video
-                    className="video-js IS4"
-                  />
-                </div>
+                <DatePublication />
               </div>
             </div>
           </div>
-          <figcaption>
+        </div>
+        <ArticleLeadAsset
+          className="c11 IS2"
+        />
+        <div
+          className="c12 c13 c14"
+        >
+          <div
+            className="IS3"
+          />
+          <div>
             <div
-              className="c21 inset-captionweb__InsetCaptionStyle-sc-8m7lci-0 c21 css-view-1dbjc4n"
+              className="c15"
             >
-              <Caption />
+              <div>
+                <SaveAndShareBar />
+              </div>
             </div>
-          </figcaption>
-        </figure>
-      </div>
-      <Ad
-        className="IS10"
-      />
-      <div>
-        <div
-          className="c22 responsiveweb__SecondaryImg-sc-16nqyj8-6 c22 css-view-1dbjc4n"
-        >
-          <ArticleImage />
+          </div>
         </div>
       </div>
-      <div>
-        <div
-          className="c23 responsiveweb__InlineImg-sc-16nqyj8-7 c23 css-view-1dbjc4n"
-        >
-          <ArticleImage />
+      <div
+        className="c16 responsiveweb__BodyContainer-sc-1exejum-3 c16 css-view-1dbjc4n"
+      >
+        <div>
+          <div
+            className="c17 responsiveweb__PrimaryImg-sc-16nqyj8-5 c17 css-view-1dbjc4n"
+          >
+            <ArticleImage />
+          </div>
         </div>
+        <Link>
+          Some Link
+        </Link>
+        <p
+          className="c18"
+        >
+          Some content
+        </p>
+        <div
+          className="c19 responsiveweb__PullQuoteContainer-sc-16nqyj8-9 c19 css-view-1dbjc4n"
+        >
+          <div
+            className="c20 responsiveweb__PullQuoteResp-sc-16nqyj8-8 c20 css-view-1dbjc4n"
+          >
+            <PullQuote>
+              The pull quote content
+            </PullQuote>
+          </div>
+        </div>
+        <div
+          className="c17 responsiveweb__PrimaryImg-sc-16nqyj8-5 c17 css-view-1dbjc4n"
+        >
+          <figure
+            className="IS9"
+          >
+            <div
+              className="css-view-1dbjc4n IS8"
+            >
+              <div
+                className="css-view-1dbjc4n IS7"
+              >
+                <div
+                  className="IS6"
+                >
+                  <div
+                    className="IS5"
+                  >
+                    <video
+                      className="video-js IS4"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <figcaption>
+              <div
+                className="c21 inset-captionweb__InsetCaptionStyle-sc-8m7lci-0 c21 css-view-1dbjc4n"
+              >
+                <Caption />
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <Ad
+          className="IS10"
+        />
+        <div>
+          <div
+            className="c22 responsiveweb__SecondaryImg-sc-16nqyj8-6 c22 css-view-1dbjc4n"
+          >
+            <ArticleImage />
+          </div>
+        </div>
+        <div>
+          <div
+            className="c23 responsiveweb__InlineImg-sc-16nqyj8-7 c23 css-view-1dbjc4n"
+          >
+            <ArticleImage />
+          </div>
+        </div>
+        <ArticleExtras />
       </div>
-      <ArticleExtras />
     </div>
-  </div>
-</article>
+  </article>
+</div>
 `;
 
 exports[`full article with style in the culture magazine 1`] = `
@@ -1175,195 +1177,197 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 </style>
 
-<article>
-  <Helmet>
-    <title>
-      Some Headline
-       | 
-      
-      The Times
-    </title>
-    <meta />
-    <meta />
-    <meta />
-    <meta />
-    <meta />
-    <meta />
-    <meta />
-    <meta />
-    <meta />
-    <meta />
-    <meta />
-    <script>
-      {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=685","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io"}
-    </script>
-  </Helmet>
-  <div
-    className="c0 responsiveweb__HeaderAdContainer-sc-1exejum-1 c0 css-view-1dbjc4n"
-  >
-    <Ad
-      className="IS1"
-    />
-  </div>
-  <div
-    className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
-  >
+<div>
+  <article>
+    <Helmet>
+      <title>
+        Some Headline
+         | 
+        
+        The Times
+      </title>
+      <meta />
+      <meta />
+      <meta />
+      <meta />
+      <meta />
+      <meta />
+      <meta />
+      <meta />
+      <meta />
+      <meta />
+      <meta />
+      <script>
+        {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=685","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io"}
+      </script>
+    </Helmet>
     <div
-      className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
+      className="c0 responsiveweb__HeaderAdContainer-sc-1exejum-1 c0 css-view-1dbjc4n"
     >
-      <div
-        className="c3 responsiveweb__HeaderContainer-sc-1pihheg-2 c3 css-view-1dbjc4n r-alignItems-1awozwy r-marginBottom-eektet r-paddingLeft-1hfyk0a r-paddingRight-1qfoi16 r-paddingTop-elmauq S6"
-      >
-        <div
-          className="css-view-1dbjc4n r-marginBottom-15d164r S2"
-        >
-          <div
-            className="css-text-901oao r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS2 S1"
-          >
-            SOME LABEL
-          </div>
-        </div>
-        <h1
-          className="c4 css-reset-4rbku5 responsiveweb__HeadlineContainer-sc-1pihheg-3 c4 css-text-901oao r-color-1yqk5fa r-fontSize-1ra0lkn r-lineHeight-1j8sj39 r-marginBottom-15d164r r-textAlign-q4m81j IS3 S3"
-        >
-          Some Headline
-        </h1>
-        <div
-          className="c5 responsiveweb__FlagsContainer-sc-1pihheg-1 c5 css-view-1dbjc4n"
-        >
-          <ArticleFlags />
-        </div>
-        <h2
-          className="c6 css-reset-4rbku5 responsiveweb__StandfirstContainer-sc-1pihheg-8 c6 css-text-901oao r-color-1khnkhu r-fontFamily-4h8ur4 r-fontSize-adyw6z r-lineHeight-eaezby r-marginBottom-ku1wi2 r-paddingHorizontal-utggzx r-textAlign-q4m81j S4"
-        >
-          Some Standfirst
-        </h2>
-        <div
-          className="c7 responsiveweb__MetaContainer-sc-1pihheg-6 c7 css-view-1dbjc4n"
-        >
-          <div
-            className="c8 responsiveweb__Meta-sc-1pihheg-5 c8 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj"
-          >
-            <ArticleBylineWithLinks />
-          </div>
-          <div
-            className="c9 responsiveweb__Separator-sc-1pihheg-7 c9 css-view-1dbjc4n"
-          />
-          <div
-            className="c8 responsiveweb__Meta-sc-1pihheg-5 c8 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj"
-          >
-            <div
-              className="c10 responsiveweb__DatePublicationContainer-sc-1pihheg-0 c10 css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginTop-19h5ruw S5"
-            >
-              <DatePublication />
-            </div>
-          </div>
-        </div>
-      </div>
-      <ArticleLeadAsset
-        className="c11 IS4"
+      <Ad
+        className="IS1"
       />
-      <div
-        className="c12 c13 c14"
-      >
-        <div
-          className="IS5"
-        />
-        <div>
-          <div
-            className="c15"
-          >
-            <div>
-              <SaveAndShareBar />
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
     <div
-      className="c16 responsiveweb__BodyContainer-sc-1exejum-3 c16 css-view-1dbjc4n"
+      className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
     >
-      <div>
-        <div
-          className="c17 responsiveweb__PrimaryImg-sc-16nqyj8-5 c17 css-view-1dbjc4n"
-        >
-          <ArticleImage />
-        </div>
-      </div>
-      <Link>
-        Some Link
-      </Link>
-      <p
-        className="c18"
-      >
-        Some content
-      </p>
       <div
-        className="c19 responsiveweb__PullQuoteContainer-sc-16nqyj8-9 c19 css-view-1dbjc4n"
+        className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
       >
         <div
-          className="c20 responsiveweb__PullQuoteResp-sc-16nqyj8-8 c20 css-view-1dbjc4n"
-        >
-          <PullQuote>
-            The pull quote content
-          </PullQuote>
-        </div>
-      </div>
-      <div
-        className="c17 responsiveweb__PrimaryImg-sc-16nqyj8-5 c17 css-view-1dbjc4n"
-      >
-        <figure
-          className="IS11"
+          className="c3 responsiveweb__HeaderContainer-sc-1pihheg-2 c3 css-view-1dbjc4n r-alignItems-1awozwy r-marginBottom-eektet r-paddingLeft-1hfyk0a r-paddingRight-1qfoi16 r-paddingTop-elmauq S6"
         >
           <div
-            className="css-view-1dbjc4n IS10"
+            className="css-view-1dbjc4n r-marginBottom-15d164r S2"
           >
             <div
-              className="css-view-1dbjc4n IS9"
+              className="css-text-901oao r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS2 S1"
+            >
+              SOME LABEL
+            </div>
+          </div>
+          <h1
+            className="c4 css-reset-4rbku5 responsiveweb__HeadlineContainer-sc-1pihheg-3 c4 css-text-901oao r-color-1yqk5fa r-fontSize-1ra0lkn r-lineHeight-1j8sj39 r-marginBottom-15d164r r-textAlign-q4m81j IS3 S3"
+          >
+            Some Headline
+          </h1>
+          <div
+            className="c5 responsiveweb__FlagsContainer-sc-1pihheg-1 c5 css-view-1dbjc4n"
+          >
+            <ArticleFlags />
+          </div>
+          <h2
+            className="c6 css-reset-4rbku5 responsiveweb__StandfirstContainer-sc-1pihheg-8 c6 css-text-901oao r-color-1khnkhu r-fontFamily-4h8ur4 r-fontSize-adyw6z r-lineHeight-eaezby r-marginBottom-ku1wi2 r-paddingHorizontal-utggzx r-textAlign-q4m81j S4"
+          >
+            Some Standfirst
+          </h2>
+          <div
+            className="c7 responsiveweb__MetaContainer-sc-1pihheg-6 c7 css-view-1dbjc4n"
+          >
+            <div
+              className="c8 responsiveweb__Meta-sc-1pihheg-5 c8 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj"
+            >
+              <ArticleBylineWithLinks />
+            </div>
+            <div
+              className="c9 responsiveweb__Separator-sc-1pihheg-7 c9 css-view-1dbjc4n"
+            />
+            <div
+              className="c8 responsiveweb__Meta-sc-1pihheg-5 c8 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj"
             >
               <div
-                className="IS8"
+                className="c10 responsiveweb__DatePublicationContainer-sc-1pihheg-0 c10 css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginTop-19h5ruw S5"
               >
-                <div
-                  className="IS7"
-                >
-                  <video
-                    className="video-js IS6"
-                  />
-                </div>
+                <DatePublication />
               </div>
             </div>
           </div>
-          <figcaption>
+        </div>
+        <ArticleLeadAsset
+          className="c11 IS4"
+        />
+        <div
+          className="c12 c13 c14"
+        >
+          <div
+            className="IS5"
+          />
+          <div>
             <div
-              className="c21 inset-captionweb__InsetCaptionStyle-sc-8m7lci-0 c21 css-view-1dbjc4n"
+              className="c15"
             >
-              <Caption />
+              <div>
+                <SaveAndShareBar />
+              </div>
             </div>
-          </figcaption>
-        </figure>
-      </div>
-      <Ad
-        className="IS12"
-      />
-      <div>
-        <div
-          className="c22 responsiveweb__SecondaryImg-sc-16nqyj8-6 c22 css-view-1dbjc4n"
-        >
-          <ArticleImage />
+          </div>
         </div>
       </div>
-      <div>
-        <div
-          className="c23 responsiveweb__InlineImg-sc-16nqyj8-7 c23 css-view-1dbjc4n"
-        >
-          <ArticleImage />
+      <div
+        className="c16 responsiveweb__BodyContainer-sc-1exejum-3 c16 css-view-1dbjc4n"
+      >
+        <div>
+          <div
+            className="c17 responsiveweb__PrimaryImg-sc-16nqyj8-5 c17 css-view-1dbjc4n"
+          >
+            <ArticleImage />
+          </div>
         </div>
+        <Link>
+          Some Link
+        </Link>
+        <p
+          className="c18"
+        >
+          Some content
+        </p>
+        <div
+          className="c19 responsiveweb__PullQuoteContainer-sc-16nqyj8-9 c19 css-view-1dbjc4n"
+        >
+          <div
+            className="c20 responsiveweb__PullQuoteResp-sc-16nqyj8-8 c20 css-view-1dbjc4n"
+          >
+            <PullQuote>
+              The pull quote content
+            </PullQuote>
+          </div>
+        </div>
+        <div
+          className="c17 responsiveweb__PrimaryImg-sc-16nqyj8-5 c17 css-view-1dbjc4n"
+        >
+          <figure
+            className="IS11"
+          >
+            <div
+              className="css-view-1dbjc4n IS10"
+            >
+              <div
+                className="css-view-1dbjc4n IS9"
+              >
+                <div
+                  className="IS8"
+                >
+                  <div
+                    className="IS7"
+                  >
+                    <video
+                      className="video-js IS6"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <figcaption>
+              <div
+                className="c21 inset-captionweb__InsetCaptionStyle-sc-8m7lci-0 c21 css-view-1dbjc4n"
+              >
+                <Caption />
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <Ad
+          className="IS12"
+        />
+        <div>
+          <div
+            className="c22 responsiveweb__SecondaryImg-sc-16nqyj8-6 c22 css-view-1dbjc4n"
+          >
+            <ArticleImage />
+          </div>
+        </div>
+        <div>
+          <div
+            className="c23 responsiveweb__InlineImg-sc-16nqyj8-7 c23 css-view-1dbjc4n"
+          >
+            <ArticleImage />
+          </div>
+        </div>
+        <ArticleExtras />
       </div>
-      <ArticleExtras />
     </div>
-  </div>
-</article>
+  </article>
+</div>
 `;
 
 exports[`full article with style in the style magazine 1`] = `
@@ -1863,195 +1867,197 @@ exports[`full article with style in the style magazine 1`] = `
 }
 </style>
 
-<article>
-  <Helmet>
-    <title>
-      Some Headline
-       | 
-      
-      The Times
-    </title>
-    <meta />
-    <meta />
-    <meta />
-    <meta />
-    <meta />
-    <meta />
-    <meta />
-    <meta />
-    <meta />
-    <meta />
-    <meta />
-    <script>
-      {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=685","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io"}
-    </script>
-  </Helmet>
-  <div
-    className="c0 responsiveweb__HeaderAdContainer-sc-1exejum-1 c0 css-view-1dbjc4n"
-  >
-    <Ad
-      className="IS1"
-    />
-  </div>
-  <div
-    className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
-  >
+<div>
+  <article>
+    <Helmet>
+      <title>
+        Some Headline
+         | 
+        
+        The Times
+      </title>
+      <meta />
+      <meta />
+      <meta />
+      <meta />
+      <meta />
+      <meta />
+      <meta />
+      <meta />
+      <meta />
+      <meta />
+      <meta />
+      <script>
+        {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=685","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io"}
+      </script>
+    </Helmet>
     <div
-      className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
+      className="c0 responsiveweb__HeaderAdContainer-sc-1exejum-1 c0 css-view-1dbjc4n"
     >
-      <div
-        className="c3 responsiveweb__HeaderContainer-sc-1pihheg-2 c3 css-view-1dbjc4n r-alignItems-1awozwy r-marginBottom-eektet r-paddingLeft-1hfyk0a r-paddingRight-1qfoi16 r-paddingTop-elmauq S6"
-      >
-        <div
-          className="css-view-1dbjc4n r-marginBottom-15d164r S2"
-        >
-          <div
-            className="css-text-901oao r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS2 S1"
-          >
-            SOME LABEL
-          </div>
-        </div>
-        <h1
-          className="c4 css-reset-4rbku5 responsiveweb__HeadlineContainer-sc-1pihheg-3 c4 css-text-901oao r-color-1yqk5fa r-fontSize-1ra0lkn r-lineHeight-1j8sj39 r-marginBottom-15d164r r-textAlign-q4m81j IS3 S3"
-        >
-          Some Headline
-        </h1>
-        <div
-          className="c5 responsiveweb__FlagsContainer-sc-1pihheg-1 c5 css-view-1dbjc4n"
-        >
-          <ArticleFlags />
-        </div>
-        <h2
-          className="c6 css-reset-4rbku5 responsiveweb__StandfirstContainer-sc-1pihheg-8 c6 css-text-901oao r-color-1khnkhu r-fontFamily-4h8ur4 r-fontSize-adyw6z r-lineHeight-eaezby r-marginBottom-ku1wi2 r-paddingHorizontal-utggzx r-textAlign-q4m81j S4"
-        >
-          Some Standfirst
-        </h2>
-        <div
-          className="c7 responsiveweb__MetaContainer-sc-1pihheg-6 c7 css-view-1dbjc4n"
-        >
-          <div
-            className="c8 responsiveweb__Meta-sc-1pihheg-5 c8 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj"
-          >
-            <ArticleBylineWithLinks />
-          </div>
-          <div
-            className="c9 responsiveweb__Separator-sc-1pihheg-7 c9 css-view-1dbjc4n"
-          />
-          <div
-            className="c8 responsiveweb__Meta-sc-1pihheg-5 c8 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj"
-          >
-            <div
-              className="c10 responsiveweb__DatePublicationContainer-sc-1pihheg-0 c10 css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginTop-19h5ruw S5"
-            >
-              <DatePublication />
-            </div>
-          </div>
-        </div>
-      </div>
-      <ArticleLeadAsset
-        className="c11 IS4"
+      <Ad
+        className="IS1"
       />
-      <div
-        className="c12 c13 c14"
-      >
-        <div
-          className="IS5"
-        />
-        <div>
-          <div
-            className="c15"
-          >
-            <div>
-              <SaveAndShareBar />
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
     <div
-      className="c16 responsiveweb__BodyContainer-sc-1exejum-3 c16 css-view-1dbjc4n"
+      className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
     >
-      <div>
-        <div
-          className="c17 responsiveweb__PrimaryImg-sc-16nqyj8-5 c17 css-view-1dbjc4n"
-        >
-          <ArticleImage />
-        </div>
-      </div>
-      <Link>
-        Some Link
-      </Link>
-      <p
-        className="c18"
-      >
-        Some content
-      </p>
       <div
-        className="c19 responsiveweb__PullQuoteContainer-sc-16nqyj8-9 c19 css-view-1dbjc4n"
+        className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
       >
         <div
-          className="c20 responsiveweb__PullQuoteResp-sc-16nqyj8-8 c20 css-view-1dbjc4n"
-        >
-          <PullQuote>
-            The pull quote content
-          </PullQuote>
-        </div>
-      </div>
-      <div
-        className="c17 responsiveweb__PrimaryImg-sc-16nqyj8-5 c17 css-view-1dbjc4n"
-      >
-        <figure
-          className="IS11"
+          className="c3 responsiveweb__HeaderContainer-sc-1pihheg-2 c3 css-view-1dbjc4n r-alignItems-1awozwy r-marginBottom-eektet r-paddingLeft-1hfyk0a r-paddingRight-1qfoi16 r-paddingTop-elmauq S6"
         >
           <div
-            className="css-view-1dbjc4n IS10"
+            className="css-view-1dbjc4n r-marginBottom-15d164r S2"
           >
             <div
-              className="css-view-1dbjc4n IS9"
+              className="css-text-901oao r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS2 S1"
+            >
+              SOME LABEL
+            </div>
+          </div>
+          <h1
+            className="c4 css-reset-4rbku5 responsiveweb__HeadlineContainer-sc-1pihheg-3 c4 css-text-901oao r-color-1yqk5fa r-fontSize-1ra0lkn r-lineHeight-1j8sj39 r-marginBottom-15d164r r-textAlign-q4m81j IS3 S3"
+          >
+            Some Headline
+          </h1>
+          <div
+            className="c5 responsiveweb__FlagsContainer-sc-1pihheg-1 c5 css-view-1dbjc4n"
+          >
+            <ArticleFlags />
+          </div>
+          <h2
+            className="c6 css-reset-4rbku5 responsiveweb__StandfirstContainer-sc-1pihheg-8 c6 css-text-901oao r-color-1khnkhu r-fontFamily-4h8ur4 r-fontSize-adyw6z r-lineHeight-eaezby r-marginBottom-ku1wi2 r-paddingHorizontal-utggzx r-textAlign-q4m81j S4"
+          >
+            Some Standfirst
+          </h2>
+          <div
+            className="c7 responsiveweb__MetaContainer-sc-1pihheg-6 c7 css-view-1dbjc4n"
+          >
+            <div
+              className="c8 responsiveweb__Meta-sc-1pihheg-5 c8 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj"
+            >
+              <ArticleBylineWithLinks />
+            </div>
+            <div
+              className="c9 responsiveweb__Separator-sc-1pihheg-7 c9 css-view-1dbjc4n"
+            />
+            <div
+              className="c8 responsiveweb__Meta-sc-1pihheg-5 c8 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj"
             >
               <div
-                className="IS8"
+                className="c10 responsiveweb__DatePublicationContainer-sc-1pihheg-0 c10 css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginTop-19h5ruw S5"
               >
-                <div
-                  className="IS7"
-                >
-                  <video
-                    className="video-js IS6"
-                  />
-                </div>
+                <DatePublication />
               </div>
             </div>
           </div>
-          <figcaption>
+        </div>
+        <ArticleLeadAsset
+          className="c11 IS4"
+        />
+        <div
+          className="c12 c13 c14"
+        >
+          <div
+            className="IS5"
+          />
+          <div>
             <div
-              className="c21 inset-captionweb__InsetCaptionStyle-sc-8m7lci-0 c21 css-view-1dbjc4n"
+              className="c15"
             >
-              <Caption />
+              <div>
+                <SaveAndShareBar />
+              </div>
             </div>
-          </figcaption>
-        </figure>
-      </div>
-      <Ad
-        className="IS12"
-      />
-      <div>
-        <div
-          className="c22 responsiveweb__SecondaryImg-sc-16nqyj8-6 c22 css-view-1dbjc4n"
-        >
-          <ArticleImage />
+          </div>
         </div>
       </div>
-      <div>
-        <div
-          className="c23 responsiveweb__InlineImg-sc-16nqyj8-7 c23 css-view-1dbjc4n"
-        >
-          <ArticleImage />
+      <div
+        className="c16 responsiveweb__BodyContainer-sc-1exejum-3 c16 css-view-1dbjc4n"
+      >
+        <div>
+          <div
+            className="c17 responsiveweb__PrimaryImg-sc-16nqyj8-5 c17 css-view-1dbjc4n"
+          >
+            <ArticleImage />
+          </div>
         </div>
+        <Link>
+          Some Link
+        </Link>
+        <p
+          className="c18"
+        >
+          Some content
+        </p>
+        <div
+          className="c19 responsiveweb__PullQuoteContainer-sc-16nqyj8-9 c19 css-view-1dbjc4n"
+        >
+          <div
+            className="c20 responsiveweb__PullQuoteResp-sc-16nqyj8-8 c20 css-view-1dbjc4n"
+          >
+            <PullQuote>
+              The pull quote content
+            </PullQuote>
+          </div>
+        </div>
+        <div
+          className="c17 responsiveweb__PrimaryImg-sc-16nqyj8-5 c17 css-view-1dbjc4n"
+        >
+          <figure
+            className="IS11"
+          >
+            <div
+              className="css-view-1dbjc4n IS10"
+            >
+              <div
+                className="css-view-1dbjc4n IS9"
+              >
+                <div
+                  className="IS8"
+                >
+                  <div
+                    className="IS7"
+                  >
+                    <video
+                      className="video-js IS6"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <figcaption>
+              <div
+                className="c21 inset-captionweb__InsetCaptionStyle-sc-8m7lci-0 c21 css-view-1dbjc4n"
+              >
+                <Caption />
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <Ad
+          className="IS12"
+        />
+        <div>
+          <div
+            className="c22 responsiveweb__SecondaryImg-sc-16nqyj8-6 c22 css-view-1dbjc4n"
+          >
+            <ArticleImage />
+          </div>
+        </div>
+        <div>
+          <div
+            className="c23 responsiveweb__InlineImg-sc-16nqyj8-7 c23 css-view-1dbjc4n"
+          >
+            <ArticleImage />
+          </div>
+        </div>
+        <ArticleExtras />
       </div>
-      <ArticleExtras />
     </div>
-  </div>
-</article>
+  </article>
+</div>
 `;
 
 exports[`full article with style in the sunday times magazine 1`] = `
@@ -2550,193 +2556,195 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 </style>
 
-<article>
-  <Helmet>
-    <title>
-      Some Headline
-       | 
-      
-      The Times
-    </title>
-    <meta />
-    <meta />
-    <meta />
-    <meta />
-    <meta />
-    <meta />
-    <meta />
-    <meta />
-    <meta />
-    <meta />
-    <meta />
-    <script>
-      {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=685","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io"}
-    </script>
-  </Helmet>
-  <div
-    className="c0 responsiveweb__HeaderAdContainer-sc-1exejum-1 c0 css-view-1dbjc4n"
-  >
-    <Ad
-      className="IS1"
-    />
-  </div>
-  <div
-    className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
-  >
+<div>
+  <article>
+    <Helmet>
+      <title>
+        Some Headline
+         | 
+        
+        The Times
+      </title>
+      <meta />
+      <meta />
+      <meta />
+      <meta />
+      <meta />
+      <meta />
+      <meta />
+      <meta />
+      <meta />
+      <meta />
+      <meta />
+      <script>
+        {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=685","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io"}
+      </script>
+    </Helmet>
     <div
-      className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
+      className="c0 responsiveweb__HeaderAdContainer-sc-1exejum-1 c0 css-view-1dbjc4n"
     >
-      <div
-        className="c3 responsiveweb__HeaderContainer-sc-1pihheg-2 c3 css-view-1dbjc4n r-alignItems-1awozwy r-marginBottom-eektet r-paddingLeft-1hfyk0a r-paddingRight-1qfoi16 r-paddingTop-elmauq S6"
-      >
-        <div
-          className="css-view-1dbjc4n r-marginBottom-15d164r S2"
-        >
-          <div
-            className="css-text-901oao r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS2 S1"
-          >
-            SOME LABEL
-          </div>
-        </div>
-        <h1
-          className="c4 css-reset-4rbku5 responsiveweb__HeadlineContainer-sc-1pihheg-3 c4 css-text-901oao r-color-1yqk5fa r-fontSize-1ra0lkn r-lineHeight-1j8sj39 r-marginBottom-15d164r r-textAlign-q4m81j IS3 S3"
-        >
-          Some Headline
-        </h1>
-        <div
-          className="c5 responsiveweb__FlagsContainer-sc-1pihheg-1 c5 css-view-1dbjc4n"
-        >
-          <ArticleFlags />
-        </div>
-        <h2
-          className="c6 css-reset-4rbku5 responsiveweb__StandfirstContainer-sc-1pihheg-8 c6 css-text-901oao r-color-1khnkhu r-fontFamily-4h8ur4 r-fontSize-adyw6z r-lineHeight-eaezby r-marginBottom-ku1wi2 r-paddingHorizontal-utggzx r-textAlign-q4m81j S4"
-        >
-          Some Standfirst
-        </h2>
-        <div
-          className="c7 responsiveweb__MetaContainer-sc-1pihheg-6 c7 css-view-1dbjc4n"
-        >
-          <div
-            className="c8 responsiveweb__Meta-sc-1pihheg-5 c8 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj"
-          >
-            <ArticleBylineWithLinks />
-          </div>
-          <div
-            className="c9 responsiveweb__Separator-sc-1pihheg-7 c9 css-view-1dbjc4n"
-          />
-          <div
-            className="c8 responsiveweb__Meta-sc-1pihheg-5 c8 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj"
-          >
-            <div
-              className="c10 responsiveweb__DatePublicationContainer-sc-1pihheg-0 c10 css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginTop-19h5ruw S5"
-            >
-              <DatePublication />
-            </div>
-          </div>
-        </div>
-      </div>
-      <ArticleLeadAsset
-        className="c11 IS4"
+      <Ad
+        className="IS1"
       />
-      <div
-        className="c12 c13 c14"
-      >
-        <div
-          className="IS5"
-        />
-        <div>
-          <div
-            className="c15"
-          >
-            <div>
-              <SaveAndShareBar />
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
     <div
-      className="c16 responsiveweb__BodyContainer-sc-1exejum-3 c16 css-view-1dbjc4n"
+      className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
     >
-      <div>
-        <div
-          className="c17 responsiveweb__PrimaryImg-sc-16nqyj8-5 c17 css-view-1dbjc4n"
-        >
-          <ArticleImage />
-        </div>
-      </div>
-      <Link>
-        Some Link
-      </Link>
-      <p
-        className="c18"
-      >
-        Some content
-      </p>
       <div
-        className="c19 responsiveweb__PullQuoteContainer-sc-16nqyj8-9 c19 css-view-1dbjc4n"
+        className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
       >
         <div
-          className="c20 responsiveweb__PullQuoteResp-sc-16nqyj8-8 c20 css-view-1dbjc4n"
-        >
-          <PullQuote>
-            The pull quote content
-          </PullQuote>
-        </div>
-      </div>
-      <div
-        className="c17 responsiveweb__PrimaryImg-sc-16nqyj8-5 c17 css-view-1dbjc4n"
-      >
-        <figure
-          className="IS11"
+          className="c3 responsiveweb__HeaderContainer-sc-1pihheg-2 c3 css-view-1dbjc4n r-alignItems-1awozwy r-marginBottom-eektet r-paddingLeft-1hfyk0a r-paddingRight-1qfoi16 r-paddingTop-elmauq S6"
         >
           <div
-            className="css-view-1dbjc4n IS10"
+            className="css-view-1dbjc4n r-marginBottom-15d164r S2"
           >
             <div
-              className="css-view-1dbjc4n IS9"
+              className="css-text-901oao r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS2 S1"
+            >
+              SOME LABEL
+            </div>
+          </div>
+          <h1
+            className="c4 css-reset-4rbku5 responsiveweb__HeadlineContainer-sc-1pihheg-3 c4 css-text-901oao r-color-1yqk5fa r-fontSize-1ra0lkn r-lineHeight-1j8sj39 r-marginBottom-15d164r r-textAlign-q4m81j IS3 S3"
+          >
+            Some Headline
+          </h1>
+          <div
+            className="c5 responsiveweb__FlagsContainer-sc-1pihheg-1 c5 css-view-1dbjc4n"
+          >
+            <ArticleFlags />
+          </div>
+          <h2
+            className="c6 css-reset-4rbku5 responsiveweb__StandfirstContainer-sc-1pihheg-8 c6 css-text-901oao r-color-1khnkhu r-fontFamily-4h8ur4 r-fontSize-adyw6z r-lineHeight-eaezby r-marginBottom-ku1wi2 r-paddingHorizontal-utggzx r-textAlign-q4m81j S4"
+          >
+            Some Standfirst
+          </h2>
+          <div
+            className="c7 responsiveweb__MetaContainer-sc-1pihheg-6 c7 css-view-1dbjc4n"
+          >
+            <div
+              className="c8 responsiveweb__Meta-sc-1pihheg-5 c8 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj"
+            >
+              <ArticleBylineWithLinks />
+            </div>
+            <div
+              className="c9 responsiveweb__Separator-sc-1pihheg-7 c9 css-view-1dbjc4n"
+            />
+            <div
+              className="c8 responsiveweb__Meta-sc-1pihheg-5 c8 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj"
             >
               <div
-                className="IS8"
+                className="c10 responsiveweb__DatePublicationContainer-sc-1pihheg-0 c10 css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginTop-19h5ruw S5"
               >
-                <div
-                  className="IS7"
-                >
-                  <video
-                    className="video-js IS6"
-                  />
-                </div>
+                <DatePublication />
               </div>
             </div>
           </div>
-          <figcaption>
+        </div>
+        <ArticleLeadAsset
+          className="c11 IS4"
+        />
+        <div
+          className="c12 c13 c14"
+        >
+          <div
+            className="IS5"
+          />
+          <div>
             <div
-              className="c21 inset-captionweb__InsetCaptionStyle-sc-8m7lci-0 c21 css-view-1dbjc4n"
+              className="c15"
             >
-              <Caption />
+              <div>
+                <SaveAndShareBar />
+              </div>
             </div>
-          </figcaption>
-        </figure>
-      </div>
-      <Ad
-        className="IS12"
-      />
-      <div>
-        <div
-          className="c22 responsiveweb__SecondaryImg-sc-16nqyj8-6 c22 css-view-1dbjc4n"
-        >
-          <ArticleImage />
+          </div>
         </div>
       </div>
-      <div>
-        <div
-          className="c23 responsiveweb__InlineImg-sc-16nqyj8-7 c23 css-view-1dbjc4n"
-        >
-          <ArticleImage />
+      <div
+        className="c16 responsiveweb__BodyContainer-sc-1exejum-3 c16 css-view-1dbjc4n"
+      >
+        <div>
+          <div
+            className="c17 responsiveweb__PrimaryImg-sc-16nqyj8-5 c17 css-view-1dbjc4n"
+          >
+            <ArticleImage />
+          </div>
         </div>
+        <Link>
+          Some Link
+        </Link>
+        <p
+          className="c18"
+        >
+          Some content
+        </p>
+        <div
+          className="c19 responsiveweb__PullQuoteContainer-sc-16nqyj8-9 c19 css-view-1dbjc4n"
+        >
+          <div
+            className="c20 responsiveweb__PullQuoteResp-sc-16nqyj8-8 c20 css-view-1dbjc4n"
+          >
+            <PullQuote>
+              The pull quote content
+            </PullQuote>
+          </div>
+        </div>
+        <div
+          className="c17 responsiveweb__PrimaryImg-sc-16nqyj8-5 c17 css-view-1dbjc4n"
+        >
+          <figure
+            className="IS11"
+          >
+            <div
+              className="css-view-1dbjc4n IS10"
+            >
+              <div
+                className="css-view-1dbjc4n IS9"
+              >
+                <div
+                  className="IS8"
+                >
+                  <div
+                    className="IS7"
+                  >
+                    <video
+                      className="video-js IS6"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <figcaption>
+              <div
+                className="c21 inset-captionweb__InsetCaptionStyle-sc-8m7lci-0 c21 css-view-1dbjc4n"
+              >
+                <Caption />
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <Ad
+          className="IS12"
+        />
+        <div>
+          <div
+            className="c22 responsiveweb__SecondaryImg-sc-16nqyj8-6 c22 css-view-1dbjc4n"
+          >
+            <ArticleImage />
+          </div>
+        </div>
+        <div>
+          <div
+            className="c23 responsiveweb__InlineImg-sc-16nqyj8-7 c23 css-view-1dbjc4n"
+          >
+            <ArticleImage />
+          </div>
+        </div>
+        <ArticleExtras />
       </div>
-      <ArticleExtras />
     </div>
-  </div>
-</article>
+  </article>
+</div>
 `;

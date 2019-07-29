@@ -4,6 +4,7 @@ import * as builtInKnobs from "@storybook/addon-knobs/react";
 import * as decorators from "./decorators";
 import showcaseToStoryBook from "./showcase-to-storybook";
 import sections from "./sections";
+import NewTab from "./new-tab";
 
 const {
   CenteredDecorator,
@@ -22,5 +23,6 @@ export {
   LateralSpacingDecorator,
   sections,
   showcaseConverter,
-  WhiteBgColorDecorator
+  WhiteBgColorDecorator,
+  NewTab
 };

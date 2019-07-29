@@ -28,8 +28,7 @@ class StickyProvider extends Component {
   }
 
   setTop() {
-    const { node } = this;
-    const { top } = this.state;
+    const { top, node } = this.state;
 
     if (!node) {
       return;
@@ -43,9 +42,7 @@ class StickyProvider extends Component {
   }
 
   ref(node) {
-    this.node = node;
-
-    this.setTop();
+    this.setState({ node }, this.setTop);
   }
 
   render() {

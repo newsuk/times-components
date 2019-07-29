@@ -198,8 +198,14 @@ describe("Sticky", () => {
   });
 
   it("is moved to the correct level in the tree when becoming sticky", () => {
+    const TestComponent = React.forwardRef(({ children, ...props }, ref) => (
+      <div id="sticky-provider-container" ref={ref} {...props}>
+        {children}
+      </div>
+    ));
+
     render(
-      <StickyProvider>
+      <StickyProvider Component={TestComponent}>
         <Sticky />
       </StickyProvider>,
       root
@@ -208,7 +214,7 @@ describe("Sticky", () => {
     scrollTo(0);
     expect(
       document.body.querySelector("[data-tc-sticky-container]").parentNode
-    ).toEqual(document.body);
+    ).toEqual(document.querySelector("#sticky-provider-container"));
   });
 
   it("shouldBeSticky is checked when deciding whether to become sticky", () => {

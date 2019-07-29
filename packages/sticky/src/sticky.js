@@ -52,6 +52,7 @@ class UnwrappedSticky extends Component {
     }
 
     const { stickyContext, zIndex } = this.props;
+    const { node = document.body } = stickyContext;
     this.isSticky = shouldBeSticky;
 
     if (shouldBeSticky) {
@@ -68,7 +69,7 @@ class UnwrappedSticky extends Component {
 
       component.classList.add(STICKY_CLASS_NAME);
 
-      document.body.appendChild(container);
+      node.appendChild(container);
 
       placeholder.style.cssText += `
         margin-top: ${styles.marginTop || 0};
@@ -212,7 +213,8 @@ UnwrappedSticky.propTypes = {
   className: PropTypes.string,
   children: PropTypes.node,
   stickyContext: PropTypes.shape({
-    top: PropTypes.number.isRequired
+    top: PropTypes.number.isRequired,
+    node: PropTypes.object
   }),
   zIndex: PropTypes.string,
   shouldBeSticky: PropTypes.func

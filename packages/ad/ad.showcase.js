@@ -2,6 +2,7 @@
 /* eslint-disable react/prop-types */
 import React, { Fragment } from "react";
 import { Text } from "react-native";
+import { NewTab } from "@times-components/storybook";
 import AdPlaceholder from "./src/ad-placeholder";
 import Ad, { AdComposer } from "./src/ad";
 import adConfig from "./fixtures/article-ad-config.json";
@@ -19,27 +20,14 @@ const renderAdPlaceholder = size => {
   return <AdPlaceholder height={50} width={700} />;
 };
 
-const withOpenInNewWindow = children => {
-  const link = typeof document === "object" &&
-    window !== window.top && (
-      <a
-        href={`/iframe.html${window.top.location.search}`}
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Open in new window
-      </a>
-    );
-
-  return (
-    <AdComposer adConfig={adConfig}>
-      <Fragment>
-        {link}
-        {children}
-      </Fragment>
-    </AdComposer>
-  );
-};
+const withOpenInNewWindow = children => (
+  <AdComposer adConfig={adConfig}>
+    <Fragment>
+      <NewTab />
+      {children}
+    </Fragment>
+  </AdComposer>
+);
 
 const slotNames = [
   "intervention",

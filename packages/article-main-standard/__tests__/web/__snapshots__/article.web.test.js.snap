@@ -2,287 +2,289 @@
 
 exports[`1. an article 1`] = `
 <div>
-  <article>
-    <Helmet>
-      <title>
-        Some Headline
-         | 
-        
-        The Times
-      </title>
-      <meta
-        content="Some Headline"
-        name="article:title"
-      />
-      <meta
-        content="The Times"
-        name="article:publication"
-      />
-      <meta
-        content="Some byline"
-        name="author"
-      />
-      <meta
-        content="Some Headline"
-        property="og:title"
-      />
-      <meta
-        content="article"
-        property="og:type"
-      />
-      <meta
-        content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
-        property="og:url"
-      />
-      <meta
-        content="https://crop169.io?resize=685"
-        property="og:image"
-      />
-      <meta
-        content="Some Headline"
-        name="twitter:title"
-      />
-      <meta
-        content="summary_large_image"
-        name="twitter:card"
-      />
-      <meta
-        content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
-        name="twitter:url"
-      />
-      <meta
-        content="https://crop169.io?resize=685"
-        name="twitter:image"
-      />
-      <script
-        type="application/ld+json"
-      >
-        {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=685","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io"}
-      </script>
-    </Helmet>
-    <div>
-      <Ad
-        contextUrl="https://url.io"
-        section="Some Section"
-        slotName="header"
-      />
-    </div>
-    <div>
+  <div>
+    <article>
+      <Helmet>
+        <title>
+          Some Headline
+           | 
+          
+          The Times
+        </title>
+        <meta
+          content="Some Headline"
+          name="article:title"
+        />
+        <meta
+          content="The Times"
+          name="article:publication"
+        />
+        <meta
+          content="Some byline"
+          name="author"
+        />
+        <meta
+          content="Some Headline"
+          property="og:title"
+        />
+        <meta
+          content="article"
+          property="og:type"
+        />
+        <meta
+          content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+          property="og:url"
+        />
+        <meta
+          content="https://crop169.io?resize=685"
+          property="og:image"
+        />
+        <meta
+          content="Some Headline"
+          name="twitter:title"
+        />
+        <meta
+          content="summary_large_image"
+          name="twitter:card"
+        />
+        <meta
+          content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+          name="twitter:url"
+        />
+        <meta
+          content="https://crop169.io?resize=685"
+          name="twitter:image"
+        />
+        <script
+          type="application/ld+json"
+        >
+          {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=685","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io"}
+        </script>
+      </Helmet>
+      <div>
+        <Ad
+          contextUrl="https://url.io"
+          section="Some Section"
+          slotName="header"
+        />
+      </div>
       <div>
         <div>
           <div>
             <div>
-              <div>
-                <div>
-                  SOME LABEL
-                </div>
-              </div>
-              <h1
-                aria-level="1"
-                role="heading"
-              >
-                Some Headline
-              </h1>
-              <h2
-                aria-level="2"
-                role="heading"
-              >
-                Some Standfirst
-              </h2>
-              <div>
-                <ArticleFlags
-                  flags={
-                    Array [
-                      Object {
-                        "expiryTime": "2019-03-14T12:00:00.000Z",
-                        "type": "NEW",
-                      },
-                    ]
-                  }
-                />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>
-              <div>
-                <div>
-                  <span>
-                    <ArticleBylineWithLinks
-                      ast={
-                        Array [
-                          Object {
-                            "byline": Array [
-                              Object {
-                                "attributes": Object {},
-                                "children": Array [
-                                  Object {
-                                    "attributes": Object {
-                                      "value": "Some byline",
-                                    },
-                                    "children": Array [],
-                                    "name": "text",
-                                  },
-                                ],
-                                "name": "inline",
-                              },
-                            ],
-                          },
-                        ]
-                      }
-                    />
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div>
-                <div>
-                  <span>
-                    <DatePublication
-                      date="2015-03-13T18:54:58.000Z"
-                      publication="TIMES"
-                    />
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <figure>
-            <div>
-              <div>
-                <Image
-                  accessibilityLabel="Some Caption"
-                  aspectRatio={1.7777777777777777}
-                  highResSize={null}
-                  lowResSize={100}
-                  uri="https://crop169.io"
-                />
-              </div>
-            </div>
-            <figcaption>
               <div>
                 <div>
                   <div>
-                    <div>
-                      Some Caption
-                    </div>
-                    <div>
-                      SOME CREDITS
-                    </div>
+                    SOME LABEL
+                  </div>
+                </div>
+                <h1
+                  aria-level="1"
+                  role="heading"
+                >
+                  Some Headline
+                </h1>
+                <h2
+                  aria-level="2"
+                  role="heading"
+                >
+                  Some Standfirst
+                </h2>
+                <div>
+                  <ArticleFlags
+                    flags={
+                      Array [
+                        Object {
+                          "expiryTime": "2019-03-14T12:00:00.000Z",
+                          "type": "NEW",
+                        },
+                      ]
+                    }
+                  />
+                </div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div>
+                  <div>
+                    <span>
+                      <ArticleBylineWithLinks
+                        ast={
+                          Array [
+                            Object {
+                              "byline": Array [
+                                Object {
+                                  "attributes": Object {},
+                                  "children": Array [
+                                    Object {
+                                      "attributes": Object {
+                                        "value": "Some byline",
+                                      },
+                                      "children": Array [],
+                                      "name": "text",
+                                    },
+                                  ],
+                                  "name": "inline",
+                                },
+                              ],
+                            },
+                          ]
+                        }
+                      />
+                    </span>
                   </div>
                 </div>
               </div>
-            </figcaption>
-          </figure>
-        </div>
-        <div>
+              <div>
+                <div>
+                  <div>
+                    <span>
+                      <DatePublication
+                        date="2015-03-13T18:54:58.000Z"
+                        publication="TIMES"
+                      />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <figure>
+              <div>
+                <div>
+                  <Image
+                    accessibilityLabel="Some Caption"
+                    aspectRatio={1.7777777777777777}
+                    highResSize={null}
+                    lowResSize={100}
+                    uri="https://crop169.io"
+                  />
+                </div>
+              </div>
+              <figcaption>
+                <div>
+                  <div>
+                    <div>
+                      <div>
+                        Some Caption
+                      </div>
+                      <div>
+                        SOME CREDITS
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
           <div>
             <div>
-              <span>
-                <ArticleBylineWithLinks
-                  ast={
-                    Array [
-                      Object {
-                        "byline": Array [
-                          Object {
-                            "attributes": Object {},
-                            "children": Array [
-                              Object {
-                                "attributes": Object {
-                                  "value": "Some byline",
+              <div>
+                <span>
+                  <ArticleBylineWithLinks
+                    ast={
+                      Array [
+                        Object {
+                          "byline": Array [
+                            Object {
+                              "attributes": Object {},
+                              "children": Array [
+                                Object {
+                                  "attributes": Object {
+                                    "value": "Some byline",
+                                  },
+                                  "children": Array [],
+                                  "name": "text",
                                 },
-                                "children": Array [],
-                                "name": "text",
-                              },
-                            ],
-                            "name": "inline",
-                          },
-                        ],
-                      },
-                    ]
-                  }
-                />
-              </span>
-            </div>
-            <div>
-              <span>
-                <DatePublication
-                  date="2015-03-13T18:54:58.000Z"
-                  publication="TIMES"
-                />
-              </span>
+                              ],
+                              "name": "inline",
+                            },
+                          ],
+                        },
+                      ]
+                    }
+                  />
+                </span>
+              </div>
+              <div>
+                <span>
+                  <DatePublication
+                    date="2015-03-13T18:54:58.000Z"
+                    publication="TIMES"
+                  />
+                </span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div>
-        <p>
-          Some content
-        </p>
-        <ArticleExtras
-          articleHeadline="Some Headline"
-          articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-          articleUrl="https://url.io"
-          commentsEnabled={true}
-          relatedArticleSlice={
-            Object {
-              "__typename": "StandardSlice",
-              "items": Array [
-                Object {
-                  "article": Object {
-                    "__typename": "Article",
-                    "bylines": Array [],
-                    "hasVideo": false,
-                    "headline": "RA Headline",
-                    "id": "ra-1",
-                    "label": "RA Label",
-                    "leadAsset": Object {
-                      "__typename": "Image",
-                      "crop169": Object {
-                        "__typename": "Crop",
-                        "url": "https://racrop169.io",
-                      },
-                      "crop32": Object {
-                        "__typename": "Crop",
-                        "url": "https://racrop32.io",
-                      },
-                      "title": "RA Title",
-                    },
-                    "publicationName": "TIMES",
-                    "publishedTime": "2015-03-23T19:39:39.000Z",
-                    "shortHeadline": "Headline",
-                    "shortIdentifier": "2k629tpvh",
-                    "slug": "this-is-slug",
-                    "summary105": Array [],
-                    "summary125": Array [],
-                    "summary145": Array [],
-                    "summary160": Array [],
-                    "summary175": Array [],
-                    "summary225": Array [],
-                    "url": "https://ra.io",
-                  },
-                },
-              ],
-            }
-          }
-          relatedArticlesVisible={false}
-          savingEnabled={true}
-          sharingEnabled={true}
-          topics={
-            Array [
+        <div>
+          <p>
+            Some content
+          </p>
+          <ArticleExtras
+            articleHeadline="Some Headline"
+            articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+            articleUrl="https://url.io"
+            commentsEnabled={true}
+            relatedArticleSlice={
               Object {
-                "name": "Topic",
-                "slug": "topic",
-              },
-            ]
-          }
-        />
+                "__typename": "StandardSlice",
+                "items": Array [
+                  Object {
+                    "article": Object {
+                      "__typename": "Article",
+                      "bylines": Array [],
+                      "hasVideo": false,
+                      "headline": "RA Headline",
+                      "id": "ra-1",
+                      "label": "RA Label",
+                      "leadAsset": Object {
+                        "__typename": "Image",
+                        "crop169": Object {
+                          "__typename": "Crop",
+                          "url": "https://racrop169.io",
+                        },
+                        "crop32": Object {
+                          "__typename": "Crop",
+                          "url": "https://racrop32.io",
+                        },
+                        "title": "RA Title",
+                      },
+                      "publicationName": "TIMES",
+                      "publishedTime": "2015-03-23T19:39:39.000Z",
+                      "shortHeadline": "Headline",
+                      "shortIdentifier": "2k629tpvh",
+                      "slug": "this-is-slug",
+                      "summary105": Array [],
+                      "summary125": Array [],
+                      "summary145": Array [],
+                      "summary160": Array [],
+                      "summary175": Array [],
+                      "summary225": Array [],
+                      "url": "https://ra.io",
+                    },
+                  },
+                ],
+              }
+            }
+            relatedArticlesVisible={false}
+            savingEnabled={true}
+            sharingEnabled={true}
+            topics={
+              Array [
+                Object {
+                  "name": "Topic",
+                  "slug": "topic",
+                },
+              ]
+            }
+          />
+        </div>
       </div>
-    </div>
-  </article>
+    </article>
+  </div>
 </div>
 `;
 
@@ -292,1105 +294,1115 @@ exports[`3. an error 1`] = `null`;
 
 exports[`4. an article with no headline falls back to use shortheadline 1`] = `
 <div>
-  <article>
-    <Helmet>
-      <title>
-        Some Short Headline
-         | 
-        
-        The Times
-      </title>
-      <meta
-        content="Some Short Headline"
-        name="article:title"
-      />
-      <meta
-        content="The Times"
-        name="article:publication"
-      />
-      <meta
-        content="Some Short Headline"
-        property="og:title"
-      />
-      <meta
-        content="article"
-        property="og:type"
-      />
-      <meta
-        content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
-        property="og:url"
-      />
-      <meta
-        content="Some Short Headline"
-        name="twitter:title"
-      />
-      <meta
-        content="summary_large_image"
-        name="twitter:card"
-      />
-      <meta
-        content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
-        name="twitter:url"
-      />
-      <script
-        type="application/ld+json"
-      >
-        {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Short Headline","publisher":{"@type":"Organization","name":"The Times"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":null,"caption":null},"thumbnailUrl":null}
-      </script>
-    </Helmet>
-    <div>
-      <Ad
-        contextUrl="https://url.io"
-        section="Some Section"
-        slotName="header"
-      />
-    </div>
-    <div>
+  <div>
+    <article>
+      <Helmet>
+        <title>
+          Some Short Headline
+           | 
+          
+          The Times
+        </title>
+        <meta
+          content="Some Short Headline"
+          name="article:title"
+        />
+        <meta
+          content="The Times"
+          name="article:publication"
+        />
+        <meta
+          content="Some Short Headline"
+          property="og:title"
+        />
+        <meta
+          content="article"
+          property="og:type"
+        />
+        <meta
+          content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+          property="og:url"
+        />
+        <meta
+          content="Some Short Headline"
+          name="twitter:title"
+        />
+        <meta
+          content="summary_large_image"
+          name="twitter:card"
+        />
+        <meta
+          content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+          name="twitter:url"
+        />
+        <script
+          type="application/ld+json"
+        >
+          {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Short Headline","publisher":{"@type":"Organization","name":"The Times"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":null,"caption":null},"thumbnailUrl":null}
+        </script>
+      </Helmet>
       <div>
-        <div>
-          <div>
-            <div>
-              <h1
-                aria-level="1"
-                role="heading"
-              >
-                Some Short Headline
-              </h1>
-              <div>
-                <ArticleFlags />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>
-              <div>
-                <div>
-                  <span>
-                    <ArticleBylineWithLinks />
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div>
-                <div>
-                  <span>
-                    <DatePublication
-                      date="2015-03-13T18:54:58.000Z"
-                      publication="TIMES"
-                    />
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div>
-            <div>
-              <span>
-                <ArticleBylineWithLinks />
-              </span>
-            </div>
-            <div>
-              <span>
-                <DatePublication
-                  date="2015-03-13T18:54:58.000Z"
-                  publication="TIMES"
-                />
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <p>
-          Some content
-        </p>
-        <ArticleExtras
-          articleHeadline=""
-          articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-          articleUrl="https://url.io"
-          commentsEnabled={true}
-          relatedArticlesVisible={false}
-          savingEnabled={true}
-          sharingEnabled={true}
+        <Ad
+          contextUrl="https://url.io"
+          section="Some Section"
+          slotName="header"
         />
       </div>
-    </div>
-  </article>
+      <div>
+        <div>
+          <div>
+            <div>
+              <div>
+                <h1
+                  aria-level="1"
+                  role="heading"
+                >
+                  Some Short Headline
+                </h1>
+                <div>
+                  <ArticleFlags />
+                </div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div>
+                  <div>
+                    <span>
+                      <ArticleBylineWithLinks />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <div>
+                    <span>
+                      <DatePublication
+                        date="2015-03-13T18:54:58.000Z"
+                        publication="TIMES"
+                      />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div>
+                <span>
+                  <ArticleBylineWithLinks />
+                </span>
+              </div>
+              <div>
+                <span>
+                  <DatePublication
+                    date="2015-03-13T18:54:58.000Z"
+                    publication="TIMES"
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p>
+            Some content
+          </p>
+          <ArticleExtras
+            articleHeadline=""
+            articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+            articleUrl="https://url.io"
+            commentsEnabled={true}
+            relatedArticlesVisible={false}
+            savingEnabled={true}
+            sharingEnabled={true}
+          />
+        </div>
+      </div>
+    </article>
+  </div>
 </div>
 `;
 
 exports[`5. an article with ads 1`] = `
 <div>
-  <article>
-    <Helmet>
-      <title>
-        Some Headline
-         | 
-        
-        The Times
-      </title>
-      <meta
-        content="Some Headline"
-        name="article:title"
-      />
-      <meta
-        content="The Times"
-        name="article:publication"
-      />
-      <meta
-        content="Some Headline"
-        property="og:title"
-      />
-      <meta
-        content="article"
-        property="og:type"
-      />
-      <meta
-        content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
-        property="og:url"
-      />
-      <meta
-        content="Some Headline"
-        name="twitter:title"
-      />
-      <meta
-        content="summary_large_image"
-        name="twitter:card"
-      />
-      <meta
-        content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
-        name="twitter:url"
-      />
-      <script
-        type="application/ld+json"
-      >
-        {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":null,"caption":null},"thumbnailUrl":null}
-      </script>
-    </Helmet>
-    <div>
-      <Ad
-        contextUrl="https://url.io"
-        section="Some Section"
-        slotName="header"
-      />
-    </div>
-    <div>
-      <div>
-        <div>
-          <div>
-            <div>
-              <h1
-                aria-level="1"
-                role="heading"
-              >
-                Some Headline
-              </h1>
-              <div>
-                <ArticleFlags />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>
-              <div>
-                <div>
-                  <span>
-                    <ArticleBylineWithLinks />
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div>
-                <div>
-                  <span>
-                    <DatePublication
-                      date="2015-03-13T18:54:58.000Z"
-                      publication="TIMES"
-                    />
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div>
-            <div>
-              <span>
-                <ArticleBylineWithLinks />
-              </span>
-            </div>
-            <div>
-              <span>
-                <DatePublication
-                  date="2015-03-13T18:54:58.000Z"
-                  publication="TIMES"
-                />
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
+  <div>
+    <article>
+      <Helmet>
+        <title>
+          Some Headline
+           | 
+          
+          The Times
+        </title>
+        <meta
+          content="Some Headline"
+          name="article:title"
+        />
+        <meta
+          content="The Times"
+          name="article:publication"
+        />
+        <meta
+          content="Some Headline"
+          property="og:title"
+        />
+        <meta
+          content="article"
+          property="og:type"
+        />
+        <meta
+          content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+          property="og:url"
+        />
+        <meta
+          content="Some Headline"
+          name="twitter:title"
+        />
+        <meta
+          content="summary_large_image"
+          name="twitter:card"
+        />
+        <meta
+          content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+          name="twitter:url"
+        />
+        <script
+          type="application/ld+json"
+        >
+          {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":null,"caption":null},"thumbnailUrl":null}
+        </script>
+      </Helmet>
       <div>
         <Ad
           contextUrl="https://url.io"
           section="Some Section"
-          slotName="inline-ad"
-        />
-        <ArticleExtras
-          articleHeadline="Some Headline"
-          articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-          articleUrl="https://url.io"
-          commentsEnabled={true}
-          relatedArticlesVisible={false}
-          savingEnabled={true}
-          sharingEnabled={true}
+          slotName="header"
         />
       </div>
-    </div>
-  </article>
+      <div>
+        <div>
+          <div>
+            <div>
+              <div>
+                <h1
+                  aria-level="1"
+                  role="heading"
+                >
+                  Some Headline
+                </h1>
+                <div>
+                  <ArticleFlags />
+                </div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div>
+                  <div>
+                    <span>
+                      <ArticleBylineWithLinks />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <div>
+                    <span>
+                      <DatePublication
+                        date="2015-03-13T18:54:58.000Z"
+                        publication="TIMES"
+                      />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <div>
+                <span>
+                  <ArticleBylineWithLinks />
+                </span>
+              </div>
+              <div>
+                <span>
+                  <DatePublication
+                    date="2015-03-13T18:54:58.000Z"
+                    publication="TIMES"
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <Ad
+            contextUrl="https://url.io"
+            section="Some Section"
+            slotName="inline-ad"
+          />
+          <ArticleExtras
+            articleHeadline="Some Headline"
+            articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+            articleUrl="https://url.io"
+            commentsEnabled={true}
+            relatedArticlesVisible={false}
+            savingEnabled={true}
+            sharingEnabled={true}
+          />
+        </div>
+      </div>
+    </article>
+  </div>
 </div>
 `;
 
 exports[`6. should show topics when logged in or shared 1`] = `
 <div>
-  <article>
-    <Helmet>
-      <title>
-        Some Headline
-         | 
-        
-        The Times
-      </title>
-      <meta
-        content="Some Headline"
-        name="article:title"
-      />
-      <meta
-        content="The Times"
-        name="article:publication"
-      />
-      <meta
-        content="Some byline"
-        name="author"
-      />
-      <meta
-        content="Some Headline"
-        property="og:title"
-      />
-      <meta
-        content="article"
-        property="og:type"
-      />
-      <meta
-        content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
-        property="og:url"
-      />
-      <meta
-        content="https://crop169.io?resize=685"
-        property="og:image"
-      />
-      <meta
-        content="Some Headline"
-        name="twitter:title"
-      />
-      <meta
-        content="summary_large_image"
-        name="twitter:card"
-      />
-      <meta
-        content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
-        name="twitter:url"
-      />
-      <meta
-        content="https://crop169.io?resize=685"
-        name="twitter:image"
-      />
-      <script
-        type="application/ld+json"
-      >
-        {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=685","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io"}
-      </script>
-    </Helmet>
-    <div>
-      <Ad
-        contextUrl="https://url.io"
-        section="Some Section"
-        slotName="header"
-      />
-    </div>
-    <div>
+  <div>
+    <article>
+      <Helmet>
+        <title>
+          Some Headline
+           | 
+          
+          The Times
+        </title>
+        <meta
+          content="Some Headline"
+          name="article:title"
+        />
+        <meta
+          content="The Times"
+          name="article:publication"
+        />
+        <meta
+          content="Some byline"
+          name="author"
+        />
+        <meta
+          content="Some Headline"
+          property="og:title"
+        />
+        <meta
+          content="article"
+          property="og:type"
+        />
+        <meta
+          content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+          property="og:url"
+        />
+        <meta
+          content="https://crop169.io?resize=685"
+          property="og:image"
+        />
+        <meta
+          content="Some Headline"
+          name="twitter:title"
+        />
+        <meta
+          content="summary_large_image"
+          name="twitter:card"
+        />
+        <meta
+          content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+          name="twitter:url"
+        />
+        <meta
+          content="https://crop169.io?resize=685"
+          name="twitter:image"
+        />
+        <script
+          type="application/ld+json"
+        >
+          {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=685","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io"}
+        </script>
+      </Helmet>
+      <div>
+        <Ad
+          contextUrl="https://url.io"
+          section="Some Section"
+          slotName="header"
+        />
+      </div>
       <div>
         <div>
           <div>
             <div>
-              <div>
-                <div>
-                  SOME LABEL
-                </div>
-              </div>
-              <h1
-                aria-level="1"
-                role="heading"
-              >
-                Some Headline
-              </h1>
-              <h2
-                aria-level="2"
-                role="heading"
-              >
-                Some Standfirst
-              </h2>
-              <div>
-                <ArticleFlags
-                  flags={
-                    Array [
-                      Object {
-                        "expiryTime": "2019-03-14T12:00:00.000Z",
-                        "type": "NEW",
-                      },
-                    ]
-                  }
-                />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>
-              <div>
-                <div>
-                  <span>
-                    <ArticleBylineWithLinks
-                      ast={
-                        Array [
-                          Object {
-                            "byline": Array [
-                              Object {
-                                "attributes": Object {},
-                                "children": Array [
-                                  Object {
-                                    "attributes": Object {
-                                      "value": "Some byline",
-                                    },
-                                    "children": Array [],
-                                    "name": "text",
-                                  },
-                                ],
-                                "name": "inline",
-                              },
-                            ],
-                          },
-                        ]
-                      }
-                    />
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div>
-                <div>
-                  <span>
-                    <DatePublication
-                      date="2015-03-13T18:54:58.000Z"
-                      publication="TIMES"
-                    />
-                  </span>
-                </div>
-              </div>
-            </div>
-            <nav>
-              <ArticleTopics
-                topics={
-                  Array [
-                    Object {
-                      "name": "Topic",
-                      "slug": "topic",
-                    },
-                  ]
-                }
-              />
-            </nav>
-          </div>
-        </div>
-        <div>
-          <figure>
-            <div>
-              <div>
-                <Image
-                  accessibilityLabel="Some Caption"
-                  aspectRatio={1.7777777777777777}
-                  highResSize={null}
-                  lowResSize={100}
-                  uri="https://crop169.io"
-                />
-              </div>
-            </div>
-            <figcaption>
               <div>
                 <div>
                   <div>
-                    <div>
-                      Some Caption
-                    </div>
-                    <div>
-                      SOME CREDITS
-                    </div>
+                    SOME LABEL
+                  </div>
+                </div>
+                <h1
+                  aria-level="1"
+                  role="heading"
+                >
+                  Some Headline
+                </h1>
+                <h2
+                  aria-level="2"
+                  role="heading"
+                >
+                  Some Standfirst
+                </h2>
+                <div>
+                  <ArticleFlags
+                    flags={
+                      Array [
+                        Object {
+                          "expiryTime": "2019-03-14T12:00:00.000Z",
+                          "type": "NEW",
+                        },
+                      ]
+                    }
+                  />
+                </div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div>
+                  <div>
+                    <span>
+                      <ArticleBylineWithLinks
+                        ast={
+                          Array [
+                            Object {
+                              "byline": Array [
+                                Object {
+                                  "attributes": Object {},
+                                  "children": Array [
+                                    Object {
+                                      "attributes": Object {
+                                        "value": "Some byline",
+                                      },
+                                      "children": Array [],
+                                      "name": "text",
+                                    },
+                                  ],
+                                  "name": "inline",
+                                },
+                              ],
+                            },
+                          ]
+                        }
+                      />
+                    </span>
                   </div>
                 </div>
               </div>
-            </figcaption>
-          </figure>
-        </div>
-        <div>
-          <div>
-            <div>
-              <span>
-                <ArticleBylineWithLinks
-                  ast={
+              <div>
+                <div>
+                  <div>
+                    <span>
+                      <DatePublication
+                        date="2015-03-13T18:54:58.000Z"
+                        publication="TIMES"
+                      />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <nav>
+                <ArticleTopics
+                  topics={
                     Array [
                       Object {
-                        "byline": Array [
-                          Object {
-                            "attributes": Object {},
-                            "children": Array [
-                              Object {
-                                "attributes": Object {
-                                  "value": "Some byline",
-                                },
-                                "children": Array [],
-                                "name": "text",
-                              },
-                            ],
-                            "name": "inline",
-                          },
-                        ],
+                        "name": "Topic",
+                        "slug": "topic",
                       },
                     ]
                   }
                 />
-              </span>
-            </div>
-            <div>
-              <span>
-                <DatePublication
-                  date="2015-03-13T18:54:58.000Z"
-                  publication="TIMES"
-                />
-              </span>
+              </nav>
             </div>
           </div>
-        </div>
-        <div>
-          <div
-            data-tc-sticky-placeholder={true}
-          />
-          <div
-            data-tc-sticky-container={true}
-          >
+          <div>
+            <figure>
+              <div>
+                <div>
+                  <Image
+                    accessibilityLabel="Some Caption"
+                    aspectRatio={1.7777777777777777}
+                    highResSize={null}
+                    lowResSize={100}
+                    uri="https://crop169.io"
+                  />
+                </div>
+              </div>
+              <figcaption>
+                <div>
+                  <div>
+                    <div>
+                      <div>
+                        Some Caption
+                      </div>
+                      <div>
+                        SOME CREDITS
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div>
             <div>
-              <div
-                data-tc-sticky-sizer={true}
-              >
-                <SaveAndShareBar
-                  articleHeadline="Some Headline"
-                  articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-                  articleUrl="https://url.io"
-                  savingEnabled={true}
-                  sharingEnabled={true}
-                />
+              <div>
+                <span>
+                  <ArticleBylineWithLinks
+                    ast={
+                      Array [
+                        Object {
+                          "byline": Array [
+                            Object {
+                              "attributes": Object {},
+                              "children": Array [
+                                Object {
+                                  "attributes": Object {
+                                    "value": "Some byline",
+                                  },
+                                  "children": Array [],
+                                  "name": "text",
+                                },
+                              ],
+                              "name": "inline",
+                            },
+                          ],
+                        },
+                      ]
+                    }
+                  />
+                </span>
+              </div>
+              <div>
+                <span>
+                  <DatePublication
+                    date="2015-03-13T18:54:58.000Z"
+                    publication="TIMES"
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div
+              data-tc-sticky-placeholder={true}
+            />
+            <div
+              data-tc-sticky-container={true}
+            >
+              <div>
+                <div
+                  data-tc-sticky-sizer={true}
+                >
+                  <SaveAndShareBar
+                    articleHeadline="Some Headline"
+                    articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+                    articleUrl="https://url.io"
+                    savingEnabled={true}
+                    sharingEnabled={true}
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div>
-        <p>
-          Some content
-        </p>
-        <ArticleExtras
-          articleHeadline="Some Headline"
-          articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-          articleUrl="https://url.io"
-          commentsEnabled={true}
-          relatedArticleSlice={
-            Object {
-              "__typename": "StandardSlice",
-              "items": Array [
-                Object {
-                  "article": Object {
-                    "__typename": "Article",
-                    "bylines": Array [],
-                    "hasVideo": false,
-                    "headline": "RA Headline",
-                    "id": "ra-1",
-                    "label": "RA Label",
-                    "leadAsset": Object {
-                      "__typename": "Image",
-                      "crop169": Object {
-                        "__typename": "Crop",
-                        "url": "https://racrop169.io",
-                      },
-                      "crop32": Object {
-                        "__typename": "Crop",
-                        "url": "https://racrop32.io",
-                      },
-                      "title": "RA Title",
-                    },
-                    "publicationName": "TIMES",
-                    "publishedTime": "2015-03-23T19:39:39.000Z",
-                    "shortHeadline": "Headline",
-                    "shortIdentifier": "2k629tpvh",
-                    "slug": "this-is-slug",
-                    "summary105": Array [],
-                    "summary125": Array [],
-                    "summary145": Array [],
-                    "summary160": Array [],
-                    "summary175": Array [],
-                    "summary225": Array [],
-                    "url": "https://ra.io",
-                  },
-                },
-              ],
-            }
-          }
-          relatedArticlesVisible={false}
-          savingEnabled={true}
-          sharingEnabled={true}
-          topics={
-            Array [
+        <div>
+          <p>
+            Some content
+          </p>
+          <ArticleExtras
+            articleHeadline="Some Headline"
+            articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+            articleUrl="https://url.io"
+            commentsEnabled={true}
+            relatedArticleSlice={
               Object {
-                "name": "Topic",
-                "slug": "topic",
-              },
-            ]
-          }
-        />
+                "__typename": "StandardSlice",
+                "items": Array [
+                  Object {
+                    "article": Object {
+                      "__typename": "Article",
+                      "bylines": Array [],
+                      "hasVideo": false,
+                      "headline": "RA Headline",
+                      "id": "ra-1",
+                      "label": "RA Label",
+                      "leadAsset": Object {
+                        "__typename": "Image",
+                        "crop169": Object {
+                          "__typename": "Crop",
+                          "url": "https://racrop169.io",
+                        },
+                        "crop32": Object {
+                          "__typename": "Crop",
+                          "url": "https://racrop32.io",
+                        },
+                        "title": "RA Title",
+                      },
+                      "publicationName": "TIMES",
+                      "publishedTime": "2015-03-23T19:39:39.000Z",
+                      "shortHeadline": "Headline",
+                      "shortIdentifier": "2k629tpvh",
+                      "slug": "this-is-slug",
+                      "summary105": Array [],
+                      "summary125": Array [],
+                      "summary145": Array [],
+                      "summary160": Array [],
+                      "summary175": Array [],
+                      "summary225": Array [],
+                      "url": "https://ra.io",
+                    },
+                  },
+                ],
+              }
+            }
+            relatedArticlesVisible={false}
+            savingEnabled={true}
+            sharingEnabled={true}
+            topics={
+              Array [
+                Object {
+                  "name": "Topic",
+                  "slug": "topic",
+                },
+              ]
+            }
+          />
+        </div>
       </div>
-    </div>
-  </article>
+    </article>
+  </div>
 </div>
 `;
 
 exports[`7. an article with no byline 1`] = `
 <div>
-  <article>
-    <Helmet>
-      <title>
-        Some Headline
-         | 
-        
-        The Times
-      </title>
-      <meta
-        content="Some Headline"
-        name="article:title"
-      />
-      <meta
-        content="The Times"
-        name="article:publication"
-      />
-      <meta
-        content="Some Headline"
-        property="og:title"
-      />
-      <meta
-        content="article"
-        property="og:type"
-      />
-      <meta
-        content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
-        property="og:url"
-      />
-      <meta
-        content="https://crop169.io?resize=685"
-        property="og:image"
-      />
-      <meta
-        content="Some Headline"
-        name="twitter:title"
-      />
-      <meta
-        content="summary_large_image"
-        name="twitter:card"
-      />
-      <meta
-        content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
-        name="twitter:url"
-      />
-      <meta
-        content="https://crop169.io?resize=685"
-        name="twitter:image"
-      />
-      <script
-        type="application/ld+json"
-      >
-        {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=685","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io"}
-      </script>
-    </Helmet>
-    <div>
-      <Ad
-        contextUrl="https://url.io"
-        section="Some Section"
-        slotName="header"
-      />
-    </div>
-    <div>
+  <div>
+    <article>
+      <Helmet>
+        <title>
+          Some Headline
+           | 
+          
+          The Times
+        </title>
+        <meta
+          content="Some Headline"
+          name="article:title"
+        />
+        <meta
+          content="The Times"
+          name="article:publication"
+        />
+        <meta
+          content="Some Headline"
+          property="og:title"
+        />
+        <meta
+          content="article"
+          property="og:type"
+        />
+        <meta
+          content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+          property="og:url"
+        />
+        <meta
+          content="https://crop169.io?resize=685"
+          property="og:image"
+        />
+        <meta
+          content="Some Headline"
+          name="twitter:title"
+        />
+        <meta
+          content="summary_large_image"
+          name="twitter:card"
+        />
+        <meta
+          content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+          name="twitter:url"
+        />
+        <meta
+          content="https://crop169.io?resize=685"
+          name="twitter:image"
+        />
+        <script
+          type="application/ld+json"
+        >
+          {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=685","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io"}
+        </script>
+      </Helmet>
+      <div>
+        <Ad
+          contextUrl="https://url.io"
+          section="Some Section"
+          slotName="header"
+        />
+      </div>
       <div>
         <div>
           <div>
             <div>
-              <div>
-                <div>
-                  SOME LABEL
-                </div>
-              </div>
-              <h1
-                aria-level="1"
-                role="heading"
-              >
-                Some Headline
-              </h1>
-              <h2
-                aria-level="2"
-                role="heading"
-              >
-                Some Standfirst
-              </h2>
-              <div>
-                <ArticleFlags
-                  flags={
-                    Array [
-                      Object {
-                        "expiryTime": "2019-03-14T12:00:00.000Z",
-                        "type": "NEW",
-                      },
-                    ]
-                  }
-                />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>
-              <div>
-                <div>
-                  <span>
-                    <ArticleBylineWithLinks />
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div>
-                <div>
-                  <span>
-                    <DatePublication
-                      date="2015-03-13T18:54:58.000Z"
-                      publication="TIMES"
-                    />
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <figure>
-            <div>
-              <div>
-                <Image
-                  accessibilityLabel="Some Caption"
-                  aspectRatio={1.7777777777777777}
-                  highResSize={null}
-                  lowResSize={100}
-                  uri="https://crop169.io"
-                />
-              </div>
-            </div>
-            <figcaption>
               <div>
                 <div>
                   <div>
-                    <div>
-                      Some Caption
-                    </div>
-                    <div>
-                      SOME CREDITS
-                    </div>
+                    SOME LABEL
+                  </div>
+                </div>
+                <h1
+                  aria-level="1"
+                  role="heading"
+                >
+                  Some Headline
+                </h1>
+                <h2
+                  aria-level="2"
+                  role="heading"
+                >
+                  Some Standfirst
+                </h2>
+                <div>
+                  <ArticleFlags
+                    flags={
+                      Array [
+                        Object {
+                          "expiryTime": "2019-03-14T12:00:00.000Z",
+                          "type": "NEW",
+                        },
+                      ]
+                    }
+                  />
+                </div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div>
+                  <div>
+                    <span>
+                      <ArticleBylineWithLinks />
+                    </span>
                   </div>
                 </div>
               </div>
-            </figcaption>
-          </figure>
-        </div>
-        <div>
+              <div>
+                <div>
+                  <div>
+                    <span>
+                      <DatePublication
+                        date="2015-03-13T18:54:58.000Z"
+                        publication="TIMES"
+                      />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <figure>
+              <div>
+                <div>
+                  <Image
+                    accessibilityLabel="Some Caption"
+                    aspectRatio={1.7777777777777777}
+                    highResSize={null}
+                    lowResSize={100}
+                    uri="https://crop169.io"
+                  />
+                </div>
+              </div>
+              <figcaption>
+                <div>
+                  <div>
+                    <div>
+                      <div>
+                        Some Caption
+                      </div>
+                      <div>
+                        SOME CREDITS
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
           <div>
             <div>
-              <span>
-                <ArticleBylineWithLinks />
-              </span>
-            </div>
-            <div>
-              <span>
-                <DatePublication
-                  date="2015-03-13T18:54:58.000Z"
-                  publication="TIMES"
-                />
-              </span>
+              <div>
+                <span>
+                  <ArticleBylineWithLinks />
+                </span>
+              </div>
+              <div>
+                <span>
+                  <DatePublication
+                    date="2015-03-13T18:54:58.000Z"
+                    publication="TIMES"
+                  />
+                </span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div>
-        <p>
-          Some content
-        </p>
-        <ArticleExtras
-          articleHeadline="Some Headline"
-          articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-          articleUrl="https://url.io"
-          commentsEnabled={true}
-          relatedArticleSlice={
-            Object {
-              "__typename": "StandardSlice",
-              "items": Array [
-                Object {
-                  "article": Object {
-                    "__typename": "Article",
-                    "bylines": Array [],
-                    "hasVideo": false,
-                    "headline": "RA Headline",
-                    "id": "ra-1",
-                    "label": "RA Label",
-                    "leadAsset": Object {
-                      "__typename": "Image",
-                      "crop169": Object {
-                        "__typename": "Crop",
-                        "url": "https://racrop169.io",
-                      },
-                      "crop32": Object {
-                        "__typename": "Crop",
-                        "url": "https://racrop32.io",
-                      },
-                      "title": "RA Title",
-                    },
-                    "publicationName": "TIMES",
-                    "publishedTime": "2015-03-23T19:39:39.000Z",
-                    "shortHeadline": "Headline",
-                    "shortIdentifier": "2k629tpvh",
-                    "slug": "this-is-slug",
-                    "summary105": Array [],
-                    "summary125": Array [],
-                    "summary145": Array [],
-                    "summary160": Array [],
-                    "summary175": Array [],
-                    "summary225": Array [],
-                    "url": "https://ra.io",
-                  },
-                },
-              ],
-            }
-          }
-          relatedArticlesVisible={false}
-          savingEnabled={true}
-          sharingEnabled={true}
-          topics={
-            Array [
+        <div>
+          <p>
+            Some content
+          </p>
+          <ArticleExtras
+            articleHeadline="Some Headline"
+            articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+            articleUrl="https://url.io"
+            commentsEnabled={true}
+            relatedArticleSlice={
               Object {
-                "name": "Topic",
-                "slug": "topic",
-              },
-            ]
-          }
-        />
+                "__typename": "StandardSlice",
+                "items": Array [
+                  Object {
+                    "article": Object {
+                      "__typename": "Article",
+                      "bylines": Array [],
+                      "hasVideo": false,
+                      "headline": "RA Headline",
+                      "id": "ra-1",
+                      "label": "RA Label",
+                      "leadAsset": Object {
+                        "__typename": "Image",
+                        "crop169": Object {
+                          "__typename": "Crop",
+                          "url": "https://racrop169.io",
+                        },
+                        "crop32": Object {
+                          "__typename": "Crop",
+                          "url": "https://racrop32.io",
+                        },
+                        "title": "RA Title",
+                      },
+                      "publicationName": "TIMES",
+                      "publishedTime": "2015-03-23T19:39:39.000Z",
+                      "shortHeadline": "Headline",
+                      "shortIdentifier": "2k629tpvh",
+                      "slug": "this-is-slug",
+                      "summary105": Array [],
+                      "summary125": Array [],
+                      "summary145": Array [],
+                      "summary160": Array [],
+                      "summary175": Array [],
+                      "summary225": Array [],
+                      "url": "https://ra.io",
+                    },
+                  },
+                ],
+              }
+            }
+            relatedArticlesVisible={false}
+            savingEnabled={true}
+            sharingEnabled={true}
+            topics={
+              Array [
+                Object {
+                  "name": "Topic",
+                  "slug": "topic",
+                },
+              ]
+            }
+          />
+        </div>
       </div>
-    </div>
-  </article>
+    </article>
+  </div>
 </div>
 `;
 
 exports[`8. an article with no label 1`] = `
 <div>
-  <article>
-    <Helmet>
-      <title>
-        Some Headline
-         | 
-        
-        The Times
-      </title>
-      <meta
-        content="Some Headline"
-        name="article:title"
-      />
-      <meta
-        content="The Times"
-        name="article:publication"
-      />
-      <meta
-        content="Some byline"
-        name="author"
-      />
-      <meta
-        content="Some Headline"
-        property="og:title"
-      />
-      <meta
-        content="article"
-        property="og:type"
-      />
-      <meta
-        content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
-        property="og:url"
-      />
-      <meta
-        content="https://crop169.io?resize=685"
-        property="og:image"
-      />
-      <meta
-        content="Some Headline"
-        name="twitter:title"
-      />
-      <meta
-        content="summary_large_image"
-        name="twitter:card"
-      />
-      <meta
-        content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
-        name="twitter:url"
-      />
-      <meta
-        content="https://crop169.io?resize=685"
-        name="twitter:image"
-      />
-      <script
-        type="application/ld+json"
-      >
-        {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=685","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io"}
-      </script>
-    </Helmet>
-    <div>
-      <Ad
-        contextUrl="https://url.io"
-        section="Some Section"
-        slotName="header"
-      />
-    </div>
-    <div>
+  <div>
+    <article>
+      <Helmet>
+        <title>
+          Some Headline
+           | 
+          
+          The Times
+        </title>
+        <meta
+          content="Some Headline"
+          name="article:title"
+        />
+        <meta
+          content="The Times"
+          name="article:publication"
+        />
+        <meta
+          content="Some byline"
+          name="author"
+        />
+        <meta
+          content="Some Headline"
+          property="og:title"
+        />
+        <meta
+          content="article"
+          property="og:type"
+        />
+        <meta
+          content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+          property="og:url"
+        />
+        <meta
+          content="https://crop169.io?resize=685"
+          property="og:image"
+        />
+        <meta
+          content="Some Headline"
+          name="twitter:title"
+        />
+        <meta
+          content="summary_large_image"
+          name="twitter:card"
+        />
+        <meta
+          content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+          name="twitter:url"
+        />
+        <meta
+          content="https://crop169.io?resize=685"
+          name="twitter:image"
+        />
+        <script
+          type="application/ld+json"
+        >
+          {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=685","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io"}
+        </script>
+      </Helmet>
+      <div>
+        <Ad
+          contextUrl="https://url.io"
+          section="Some Section"
+          slotName="header"
+        />
+      </div>
       <div>
         <div>
           <div>
             <div>
-              <h1
-                aria-level="1"
-                role="heading"
-              >
-                Some Headline
-              </h1>
-              <h2
-                aria-level="2"
-                role="heading"
-              >
-                Some Standfirst
-              </h2>
               <div>
-                <ArticleFlags
-                  flags={
-                    Array [
-                      Object {
-                        "expiryTime": "2019-03-14T12:00:00.000Z",
-                        "type": "NEW",
-                      },
-                    ]
-                  }
-                />
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>
-              <div>
+                <h1
+                  aria-level="1"
+                  role="heading"
+                >
+                  Some Headline
+                </h1>
+                <h2
+                  aria-level="2"
+                  role="heading"
+                >
+                  Some Standfirst
+                </h2>
                 <div>
-                  <span>
-                    <ArticleBylineWithLinks
-                      ast={
-                        Array [
-                          Object {
-                            "byline": Array [
-                              Object {
-                                "attributes": Object {},
-                                "children": Array [
-                                  Object {
-                                    "attributes": Object {
-                                      "value": "Some byline",
-                                    },
-                                    "children": Array [],
-                                    "name": "text",
-                                  },
-                                ],
-                                "name": "inline",
-                              },
-                            ],
-                          },
-                        ]
-                      }
-                    />
-                  </span>
+                  <ArticleFlags
+                    flags={
+                      Array [
+                        Object {
+                          "expiryTime": "2019-03-14T12:00:00.000Z",
+                          "type": "NEW",
+                        },
+                      ]
+                    }
+                  />
                 </div>
               </div>
             </div>
             <div>
-              <div>
-                <div>
-                  <span>
-                    <DatePublication
-                      date="2015-03-13T18:54:58.000Z"
-                      publication="TIMES"
-                    />
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <figure>
-            <div>
-              <div>
-                <Image
-                  accessibilityLabel="Some Caption"
-                  aspectRatio={1.7777777777777777}
-                  highResSize={null}
-                  lowResSize={100}
-                  uri="https://crop169.io"
-                />
-              </div>
-            </div>
-            <figcaption>
               <div>
                 <div>
                   <div>
-                    <div>
-                      Some Caption
-                    </div>
-                    <div>
-                      SOME CREDITS
-                    </div>
+                    <span>
+                      <ArticleBylineWithLinks
+                        ast={
+                          Array [
+                            Object {
+                              "byline": Array [
+                                Object {
+                                  "attributes": Object {},
+                                  "children": Array [
+                                    Object {
+                                      "attributes": Object {
+                                        "value": "Some byline",
+                                      },
+                                      "children": Array [],
+                                      "name": "text",
+                                    },
+                                  ],
+                                  "name": "inline",
+                                },
+                              ],
+                            },
+                          ]
+                        }
+                      />
+                    </span>
                   </div>
                 </div>
               </div>
-            </figcaption>
-          </figure>
-        </div>
-        <div>
+              <div>
+                <div>
+                  <div>
+                    <span>
+                      <DatePublication
+                        date="2015-03-13T18:54:58.000Z"
+                        publication="TIMES"
+                      />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <figure>
+              <div>
+                <div>
+                  <Image
+                    accessibilityLabel="Some Caption"
+                    aspectRatio={1.7777777777777777}
+                    highResSize={null}
+                    lowResSize={100}
+                    uri="https://crop169.io"
+                  />
+                </div>
+              </div>
+              <figcaption>
+                <div>
+                  <div>
+                    <div>
+                      <div>
+                        Some Caption
+                      </div>
+                      <div>
+                        SOME CREDITS
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
           <div>
             <div>
-              <span>
-                <ArticleBylineWithLinks
-                  ast={
-                    Array [
-                      Object {
-                        "byline": Array [
-                          Object {
-                            "attributes": Object {},
-                            "children": Array [
-                              Object {
-                                "attributes": Object {
-                                  "value": "Some byline",
+              <div>
+                <span>
+                  <ArticleBylineWithLinks
+                    ast={
+                      Array [
+                        Object {
+                          "byline": Array [
+                            Object {
+                              "attributes": Object {},
+                              "children": Array [
+                                Object {
+                                  "attributes": Object {
+                                    "value": "Some byline",
+                                  },
+                                  "children": Array [],
+                                  "name": "text",
                                 },
-                                "children": Array [],
-                                "name": "text",
-                              },
-                            ],
-                            "name": "inline",
-                          },
-                        ],
-                      },
-                    ]
-                  }
-                />
-              </span>
-            </div>
-            <div>
-              <span>
-                <DatePublication
-                  date="2015-03-13T18:54:58.000Z"
-                  publication="TIMES"
-                />
-              </span>
+                              ],
+                              "name": "inline",
+                            },
+                          ],
+                        },
+                      ]
+                    }
+                  />
+                </span>
+              </div>
+              <div>
+                <span>
+                  <DatePublication
+                    date="2015-03-13T18:54:58.000Z"
+                    publication="TIMES"
+                  />
+                </span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div>
-        <p>
-          Some content
-        </p>
-        <ArticleExtras
-          articleHeadline="Some Headline"
-          articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-          articleUrl="https://url.io"
-          commentsEnabled={true}
-          relatedArticleSlice={
-            Object {
-              "__typename": "StandardSlice",
-              "items": Array [
-                Object {
-                  "article": Object {
-                    "__typename": "Article",
-                    "bylines": Array [],
-                    "hasVideo": false,
-                    "headline": "RA Headline",
-                    "id": "ra-1",
-                    "label": "RA Label",
-                    "leadAsset": Object {
-                      "__typename": "Image",
-                      "crop169": Object {
-                        "__typename": "Crop",
-                        "url": "https://racrop169.io",
-                      },
-                      "crop32": Object {
-                        "__typename": "Crop",
-                        "url": "https://racrop32.io",
-                      },
-                      "title": "RA Title",
-                    },
-                    "publicationName": "TIMES",
-                    "publishedTime": "2015-03-23T19:39:39.000Z",
-                    "shortHeadline": "Headline",
-                    "shortIdentifier": "2k629tpvh",
-                    "slug": "this-is-slug",
-                    "summary105": Array [],
-                    "summary125": Array [],
-                    "summary145": Array [],
-                    "summary160": Array [],
-                    "summary175": Array [],
-                    "summary225": Array [],
-                    "url": "https://ra.io",
-                  },
-                },
-              ],
-            }
-          }
-          relatedArticlesVisible={false}
-          savingEnabled={true}
-          sharingEnabled={true}
-          topics={
-            Array [
+        <div>
+          <p>
+            Some content
+          </p>
+          <ArticleExtras
+            articleHeadline="Some Headline"
+            articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+            articleUrl="https://url.io"
+            commentsEnabled={true}
+            relatedArticleSlice={
               Object {
-                "name": "Topic",
-                "slug": "topic",
-              },
-            ]
-          }
-        />
+                "__typename": "StandardSlice",
+                "items": Array [
+                  Object {
+                    "article": Object {
+                      "__typename": "Article",
+                      "bylines": Array [],
+                      "hasVideo": false,
+                      "headline": "RA Headline",
+                      "id": "ra-1",
+                      "label": "RA Label",
+                      "leadAsset": Object {
+                        "__typename": "Image",
+                        "crop169": Object {
+                          "__typename": "Crop",
+                          "url": "https://racrop169.io",
+                        },
+                        "crop32": Object {
+                          "__typename": "Crop",
+                          "url": "https://racrop32.io",
+                        },
+                        "title": "RA Title",
+                      },
+                      "publicationName": "TIMES",
+                      "publishedTime": "2015-03-23T19:39:39.000Z",
+                      "shortHeadline": "Headline",
+                      "shortIdentifier": "2k629tpvh",
+                      "slug": "this-is-slug",
+                      "summary105": Array [],
+                      "summary125": Array [],
+                      "summary145": Array [],
+                      "summary160": Array [],
+                      "summary175": Array [],
+                      "summary225": Array [],
+                      "url": "https://ra.io",
+                    },
+                  },
+                ],
+              }
+            }
+            relatedArticlesVisible={false}
+            savingEnabled={true}
+            sharingEnabled={true}
+            topics={
+              Array [
+                Object {
+                  "name": "Topic",
+                  "slug": "topic",
+                },
+              ]
+            }
+          />
+        </div>
       </div>
-    </div>
-  </article>
+    </article>
+  </div>
 </div>
 `;

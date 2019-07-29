@@ -342,137 +342,139 @@ exports[`full article with style 1`] = `
 }
 </style>
 
-<article>
-  <Head />
-  <div
-    className="c0 responsiveweb__HeaderAdContainer-sc-1exejum-1 c0 css-view-1dbjc4n"
-  >
-    <Ad
-      className="IS1"
-    />
-  </div>
-  <div
-    className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
-  >
+<div>
+  <article>
+    <Head />
     <div
-      className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
+      className="c0 responsiveweb__HeaderAdContainer-sc-1exejum-1 c0 css-view-1dbjc4n"
+    >
+      <Ad
+        className="IS1"
+      />
+    </div>
+    <div
+      className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
     >
       <div
-        className="c3 c4 c5"
+        className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
       >
         <div
-          className="IS2"
-        />
-        <div>
+          className="c3 c4 c5"
+        >
           <div
-            className="c6"
-          >
-            <div>
-              <SaveAndShareBar />
+            className="IS2"
+          />
+          <div>
+            <div
+              className="c6"
+            >
+              <div>
+                <SaveAndShareBar />
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div
-      className="c7 responsiveweb__BodyContainer-sc-1exejum-3 c7 css-view-1dbjc4n"
-    >
-      <p
-        className="c8"
-      >
-        <span
-          className="c9 IS3"
-        >
-          T
-        </span>
-        his being Black History Month, last week
-      </p>
       <div
-        className="c10"
-      >
-        <InteractiveWrapper />
-      </div>
-      <div>
-        <div
-          className="c11 responsiveweb__PrimaryImg-sc-16nqyj8-5 c11 css-view-1dbjc4n"
-        >
-          <ArticleImage />
-        </div>
-      </div>
-      <div>
-        <div
-          className="c12 responsiveweb__SecondaryImg-sc-16nqyj8-6 c12 css-view-1dbjc4n"
-        >
-          <ArticleImage />
-        </div>
-      </div>
-      <div>
-        <div
-          className="c13 responsiveweb__InlineImg-sc-16nqyj8-7 c13 css-view-1dbjc4n"
-        >
-          <ArticleImage />
-        </div>
-      </div>
-      <Link>
-        Some Link
-      </Link>
-      <span
-        className="paidContentClassName"
+        className="c7 responsiveweb__BodyContainer-sc-1exejum-3 c7 css-view-1dbjc4n"
       >
         <p
           className="c8"
         >
-          Some content
+          <span
+            className="c9 IS3"
+          >
+            T
+          </span>
+          his being Black History Month, last week
         </p>
         <div
-          className="c14 responsiveweb__PullQuoteContainer-sc-16nqyj8-9 c14 css-view-1dbjc4n"
+          className="c10"
         >
+          <InteractiveWrapper />
+        </div>
+        <div>
           <div
-            className="c15 responsiveweb__PullQuoteResp-sc-16nqyj8-8 c15 css-view-1dbjc4n"
+            className="c11 responsiveweb__PrimaryImg-sc-16nqyj8-5 c11 css-view-1dbjc4n"
           >
-            <PullQuote>
-              The pull quote content
-            </PullQuote>
+            <ArticleImage />
           </div>
         </div>
-        <div
-          className="c11 responsiveweb__PrimaryImg-sc-16nqyj8-5 c11 css-view-1dbjc4n"
+        <div>
+          <div
+            className="c12 responsiveweb__SecondaryImg-sc-16nqyj8-6 c12 css-view-1dbjc4n"
+          >
+            <ArticleImage />
+          </div>
+        </div>
+        <div>
+          <div
+            className="c13 responsiveweb__InlineImg-sc-16nqyj8-7 c13 css-view-1dbjc4n"
+          >
+            <ArticleImage />
+          </div>
+        </div>
+        <Link>
+          Some Link
+        </Link>
+        <span
+          className="paidContentClassName"
         >
-          <figure
-            className="IS9"
+          <p
+            className="c8"
+          >
+            Some content
+          </p>
+          <div
+            className="c14 responsiveweb__PullQuoteContainer-sc-16nqyj8-9 c14 css-view-1dbjc4n"
           >
             <div
-              className="css-view-1dbjc4n IS8"
+              className="c15 responsiveweb__PullQuoteResp-sc-16nqyj8-8 c15 css-view-1dbjc4n"
+            >
+              <PullQuote>
+                The pull quote content
+              </PullQuote>
+            </div>
+          </div>
+          <div
+            className="c11 responsiveweb__PrimaryImg-sc-16nqyj8-5 c11 css-view-1dbjc4n"
+          >
+            <figure
+              className="IS9"
             >
               <div
-                className="css-view-1dbjc4n IS7"
+                className="css-view-1dbjc4n IS8"
               >
                 <div
-                  className="IS6"
+                  className="css-view-1dbjc4n IS7"
                 >
                   <div
-                    className="IS5"
+                    className="IS6"
                   >
-                    <video
-                      className="video-js IS4"
-                    />
+                    <div
+                      className="IS5"
+                    >
+                      <video
+                        className="video-js IS4"
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <figcaption>
-              <div
-                className="c16 inset-captionweb__InsetCaptionStyle-sc-8m7lci-0 c16 css-view-1dbjc4n"
-              >
-                <Caption />
-              </div>
-            </figcaption>
-          </figure>
-        </div>
-        <KeyFacts />
-      </span>
-      <ArticleExtras />
+              <figcaption>
+                <div
+                  className="c16 inset-captionweb__InsetCaptionStyle-sc-8m7lci-0 c16 css-view-1dbjc4n"
+                >
+                  <Caption />
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+          <KeyFacts />
+        </span>
+        <ArticleExtras />
+      </div>
     </div>
-  </div>
-</article>
+  </article>
+</div>
 `;
