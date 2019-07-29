@@ -22,6 +22,10 @@ export default class Text extends Container {
 
   height = 20;
 
+  _measuredHeight = 0;
+
+  _measuredWidth = 0;
+
   align = Align.TOP_LEFT;
 
   characterCase = Case.NORMAL;
@@ -83,6 +87,28 @@ export default class Text extends Container {
       this.layout()
     }
     return this._block
+  }
+
+  get measuredHeight() {
+    if (!this._block) {
+      this.layout()
+    }
+    return this._measuredHeight
+  }
+
+  get measuredWidth() {
+    if (!this._block) {
+      this.layout()
+    }
+    return this._measuredWidth
+  }
+
+  set measuredHeight(value) {
+    this._measuredHeight = value
+  }
+
+  set measuredWidth(value) {
+    this._measuredWidth = value
   }
 
   layout() {
