@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.31.0](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.30.5...@times-components/slice-layout@0.31.0) (2019-07-26)
+
+
+### Features
+
+* (REPLAT-7056) Redesign lead 1 and 1 slice for medium breakpoint ([#2134](https://github.com/newsuk/times-components/issues/2134)) ([9a4a5fd](https://github.com/newsuk/times-components/commit/9a4a5fd))
+
+
+
+
+
+## [0.30.5](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.30.4...@times-components/slice-layout@0.30.5) (2019-07-24)
+
+
+### Bug Fixes
+
+* url in share mail ([#2129](https://github.com/newsuk/times-components/issues/2129)) ([9fbc1fe](https://github.com/newsuk/times-components/commit/9fbc1fe))
+
+
+
+
+
 ## [0.30.4](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.30.3...@times-components/slice-layout@0.30.4) (2019-07-19)
 
 **Note:** Version bump only for package @times-components/slice-layout

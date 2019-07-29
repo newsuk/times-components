@@ -25,14 +25,14 @@ exports[`2. lead one and one - medium 1`] = `
     Object {
       "flex": 1,
       "flexDirection": "row",
-      "marginHorizontal": 10,
+      "marginHorizontal": 30,
     }
   }
 >
   <View
     style={
       Object {
-        "width": "83.33%",
+        "width": "75%",
       }
     }
   >
@@ -46,14 +46,14 @@ exports[`2. lead one and one - medium 1`] = `
         "borderColor": "#DBDBDB",
         "borderRightWidth": 1,
         "borderStyle": "solid",
-        "marginVertical": 10,
+        "marginVertical": 15,
       }
     }
   />
   <View
     style={
       Object {
-        "width": "16.67%",
+        "width": "25%",
       }
     }
   >

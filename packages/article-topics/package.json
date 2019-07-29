@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-topics",
-  "version": "4.0.35",
+  "version": "4.0.36",
   "description": "Map of Topics related to the Article",
   "main": "dist/article-topics",
   "dev": "src/article-topics",
@@ -63,9 +63,9 @@
   },
   "dependencies": {
     "@times-components/context": "1.0.29",
-    "@times-components/link": "3.4.29",
+    "@times-components/link": "3.4.30",
     "@times-components/styleguide": "3.28.35",
-    "@times-components/tracking": "2.4.54",
+    "@times-components/tracking": "2.4.55",
     "prop-types": "15.7.2"
   },
   "peerDependencies": {

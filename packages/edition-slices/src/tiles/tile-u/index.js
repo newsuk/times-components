@@ -12,7 +12,7 @@ import {
 } from "../shared";
 import styleFactory from "./styles";
 
-const TileU = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
+const TileU = ({ onPress, tile, breakpoint = editionBreakpoints.medium }) => {
   const styles = styleFactory(breakpoint);
   const crop = getTileImage(tile, "crop32");
 
@@ -38,6 +38,7 @@ const TileU = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
         summary={summary}
         tile={tile}
         withStar
+        starStyle={styles.star}
       />
       <Image
         aspectRatio={3 / 2}

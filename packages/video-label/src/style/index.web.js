@@ -9,6 +9,7 @@ const styles = StyleSheet.create({
   },
   iconContainer: {
     ...sharedStyles.iconContainer,
+    alignSelf: "center",
     paddingBottom: 2
   },
   title: {

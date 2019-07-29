@@ -51,6 +51,7 @@ const magazineFontPicker = (
 };
 
 const headlineCasePicker = (section = "default", template = "mainstandard") =>
+  section &&
   section.toLowerCase() === "style" &&
   ["indepth", "magazinestandard", "magazinecomment"].includes(template)
     ? "uppercase"

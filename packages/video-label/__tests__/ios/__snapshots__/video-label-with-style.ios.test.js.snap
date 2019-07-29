@@ -13,7 +13,6 @@ exports[`1. video label with a title 1`] = `
   <View
     style={
       Object {
-        "alignSelf": "center",
         "paddingBottom": 5,
       }
     }
@@ -56,7 +55,6 @@ exports[`2. video label without a title shows video 1`] = `
   <View
     style={
       Object {
-        "alignSelf": "center",
         "paddingBottom": 5,
       }
     }
@@ -99,7 +97,6 @@ exports[`3. video label with the black default colour 1`] = `
   <View
     style={
       Object {
-        "alignSelf": "center",
         "paddingBottom": 5,
       }
     }

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.4.0](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.3.97...@times-components/article-label@2.4.0) (2019-07-26)
+
+
+### Features
+
+* (REPLAT-7056) Redesign lead 1 and 1 slice for medium breakpoint ([#2134](https://github.com/newsuk/times-components/issues/2134)) ([9a4a5fd](https://github.com/newsuk/times-components/commit/9a4a5fd))
+
+
+
+
+
 ## [2.3.97](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.3.96...@times-components/article-label@2.3.97) (2019-07-22)
 
 **Note:** Version bump only for package @times-components/article-label

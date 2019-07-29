@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.1](https://github.com/newsuk/times-components/compare/@times-components/text-flow@0.2.0...@times-components/text-flow@0.2.1) (2019-07-24)
+
+
+### Bug Fixes
+
+* REPLAT-7145, REPLAT-7130 ([#2136](https://github.com/newsuk/times-components/issues/2136)) ([64c72b1](https://github.com/newsuk/times-components/commit/64c72b1))
+
+
+
+
+
 # [0.2.0](https://github.com/newsuk/times-components/compare/@times-components/text-flow@0.1.7...@times-components/text-flow@0.2.0) (2019-07-12)
 
 

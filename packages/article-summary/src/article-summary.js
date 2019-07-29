@@ -59,7 +59,8 @@ function ArticleSummary(props) {
     headline,
     labelProps,
     style,
-    strapline
+    strapline,
+    saveStar
   } = props;
 
   const { isOpinionByline = false } = bylineProps || {};
@@ -73,6 +74,7 @@ function ArticleSummary(props) {
       {strapline}
       {content}
       {flags}
+      {saveStar}
       {datePublicationProps ? (
         <Text style={styles.metaText} testID="datePublication">
           <DatePublication {...datePublicationProps} />

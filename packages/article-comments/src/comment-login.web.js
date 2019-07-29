@@ -14,9 +14,11 @@ const ssoCallback = (codeA, completeSSOCallback) => {
   xhr.send();
 };
 
-const executeSSOtransaction = () => {
+const executeSSOtransaction = callback => {
   if (window.SPOTIM && window.SPOTIM.startSSO) {
     window.SPOTIM.startSSO(ssoCallback);
+
+    callback();
   }
 };
 

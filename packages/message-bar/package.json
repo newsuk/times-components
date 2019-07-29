@@ -1,6 +1,6 @@
 {
   "name": "@times-components/message-bar",
-  "version": "0.2.22",
+  "version": "0.2.23",
   "description": "A component for showing user notifications",
   "main": "dist/index",
   "dev": "src/index",
@@ -63,7 +63,7 @@
     "react-native-web": "0.11.4"
   },
   "dependencies": {
-    "@times-components/icons": "2.12.1",
+    "@times-components/icons": "2.12.2",
     "@times-components/responsive": "0.4.53",
     "@times-components/styleguide": "3.28.35",
     "prop-types": "15.7.2"
