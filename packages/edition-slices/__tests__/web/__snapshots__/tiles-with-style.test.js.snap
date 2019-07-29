@@ -1396,8 +1396,8 @@ exports[`18. tile r 1`] = `
   linkStyle={
     Object {
       "paddingBottom": "15px",
-      "paddingHorizontal": "20px",
-      "paddingTop": "10px",
+      "paddingHorizontal": "30px",
+      "paddingTop": "15px",
     }
   }
   url="/article/123"
