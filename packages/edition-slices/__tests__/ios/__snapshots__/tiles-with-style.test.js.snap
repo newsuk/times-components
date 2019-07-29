@@ -2101,6 +2101,65 @@ exports[`40. tile aq 1`] = `
 </Link>
 `;
 
+exports[`41. tile ar 1`] = `
+<Link>
+  <View
+    style={
+      Object {
+        "marginBottom": 10,
+        "width": "100%",
+      }
+    }
+  >
+    <Image />
+  </View>
+  <View>
+    <View
+      style={
+        Object {
+          "marginBottom": 0,
+        }
+      }
+    >
+      <ArticleLabel />
+    </View>
+    <Text
+      style={
+        Object {
+          "color": "#333333",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 20,
+          "fontWeight": "900",
+          "lineHeight": 20,
+          "marginBottom": 5,
+        }
+      }
+    >
+      This is tile headline
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "#696969",
+          "flexWrap": "wrap",
+          "fontFamily": "TimesDigitalW04",
+          "fontSize": 14,
+          "lineHeight": 20,
+          "marginBottom": 10,
+        }
+      }
+    >
+      <Text>
+        
+        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+        ...
+      </Text>
+    </Text>
+    <ArticleFlags />
+  </View>
+</Link>
+`;
+
 exports[`tiles that change logic based on breakpoints TileW with teaser for wider screens 1`] = `
 <Link>
   <View

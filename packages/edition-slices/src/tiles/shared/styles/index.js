@@ -13,7 +13,7 @@ const horizontalStyles = {
 
 const tileStar = {
   position: "absolute",
-  right: 0,
+  right: spacing(1),
   bottom: spacing(2)
 };
 
