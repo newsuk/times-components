@@ -14,11 +14,11 @@ const mediumBreakpointStyles = {
   container: {
     flex: 1,
     flexDirection: "row",
-    paddingHorizontal: spacing(6),
+    paddingHorizontal: spacing(4),
     paddingTop: spacing(3)
   },
   tileContainer: {
-    width: "33%"
+    width: "33.3%"
   }
 };
 
