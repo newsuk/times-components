@@ -41,7 +41,7 @@
     "@times-components/tracking": "2.4.63",
     "@times-components/utils": "4.11.30",
     "prop-types": "15.7.2",
-    "styled-components": "4.2.0"
+    "styled-components": "4.3.2"
   },
   "devDependencies": {
     "@babel/core": "7.4.4",
