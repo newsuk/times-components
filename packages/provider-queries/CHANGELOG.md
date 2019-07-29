@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.5.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.4.0...@times-components/provider-queries@2.5.0) (2019-07-29)
+
+
+### Features
+
+* add teaser800 and summary800 ([#2142](https://github.com/newsuk/times-components/issues/2142)) ([6f40ba2](https://github.com/newsuk/times-components/commit/6f40ba2))
+
+
+
+
+
 # [2.4.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.3.0...@times-components/provider-queries@2.4.0) (2019-07-29)
 
 

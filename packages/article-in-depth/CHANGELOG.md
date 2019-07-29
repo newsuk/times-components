@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.9.3](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.9.2...@times-components/article-in-depth@3.9.3) (2019-07-29)
+
+
+### Bug Fixes
+
+* the copy link banner should appear above the save and share bar  ([#2137](https://github.com/newsuk/times-components/issues/2137)) ([39aef82](https://github.com/newsuk/times-components/commit/39aef82))
+
+
+
+
+
 ## [3.9.2](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.9.1...@times-components/article-in-depth@3.9.2) (2019-07-29)
 
 **Note:** Version bump only for package @times-components/article-in-depth
