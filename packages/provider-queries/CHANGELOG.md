@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.4.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.3.0...@times-components/provider-queries@2.4.0) (2019-07-29)
+
+
+### Features
+
+* (REPLAT-7059) Redesign secondary 4 slice for medium breakpoint ([#2139](https://github.com/newsuk/times-components/issues/2139)) ([a8be142](https://github.com/newsuk/times-components/commit/a8be142))
+
+
+
+
+
 # [2.3.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.2.9...@times-components/provider-queries@2.3.0) (2019-07-09)
 
 
