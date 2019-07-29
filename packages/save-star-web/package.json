@@ -41,7 +41,7 @@
     "@times-components/tracking": "2.4.56",
     "@times-components/utils": "4.11.23",
     "prop-types": "15.7.2",
-    "styled-components": "4.2.0"
+    "styled-components": "4.3.2"
   },
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.8.12",

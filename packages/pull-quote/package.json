@@ -71,7 +71,7 @@
     "@times-components/link": "3.4.31",
     "@times-components/styleguide": "3.28.36",
     "prop-types": "15.7.2",
-    "styled-components": "4.2.0"
+    "styled-components": "4.3.2"
   },
   "peerDependencies": {
     "react": ">=16.5",
