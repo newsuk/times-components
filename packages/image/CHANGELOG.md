@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.4.11](https://github.com/newsuk/times-components/compare/@times-components/image@6.4.10...@times-components/image@6.4.11) (2019-07-29)
+
+
+### Bug Fixes
+
+* REPLAT-6986 stop offline images being letterboxed ([#2131](https://github.com/newsuk/times-components/issues/2131)) ([b533972](https://github.com/newsuk/times-components/commit/b533972))
+
+
+
+
+
 ## [6.4.10](https://github.com/newsuk/times-components/compare/@times-components/image@6.4.9...@times-components/image@6.4.10) (2019-07-29)
 
 **Note:** Version bump only for package @times-components/image

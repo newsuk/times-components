@@ -1,6 +1,6 @@
 {
   "name": "@times-components/edition-slices",
-  "version": "0.67.2",
+  "version": "0.67.3",
   "description": "Components used in edition pages including slices and tiles",
   "main": "dist/edition-slices",
   "dev": "src/edition-slices",
@@ -41,7 +41,7 @@
     "@times-components/article-summary": "3.11.3",
     "@times-components/context": "1.0.31",
     "@times-components/icons": "2.12.4",
-    "@times-components/image": "6.4.10",
+    "@times-components/image": "6.4.11",
     "@times-components/link": "3.4.32",
     "@times-components/markup": "3.3.90",
     "@times-components/markup-forest": "1.7.16",
