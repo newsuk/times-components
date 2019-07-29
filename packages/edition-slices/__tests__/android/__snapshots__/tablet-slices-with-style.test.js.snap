@@ -1112,7 +1112,7 @@ exports[`15. puzzle - medium 1`] = `
       Object {
         "flex": 1,
         "flexDirection": "row",
-        "paddingHorizontal": 40,
+        "paddingHorizontal": 30,
         "paddingTop": 15,
       }
     }
@@ -2244,7 +2244,7 @@ exports[`30. puzzle - wide 1`] = `
       Object {
         "flex": 1,
         "flexDirection": "row",
-        "paddingHorizontal": 40,
+        "paddingHorizontal": 30,
         "paddingTop": 15,
       }
     }
@@ -3608,7 +3608,7 @@ exports[`45. puzzle - huge 1`] = `
         Object {
           "flex": 1,
           "flexDirection": "row",
-          "paddingHorizontal": 40,
+          "paddingHorizontal": 30,
           "paddingTop": 15,
         }
       }

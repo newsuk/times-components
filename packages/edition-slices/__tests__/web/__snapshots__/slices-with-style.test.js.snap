@@ -2838,8 +2838,8 @@ exports[`16. puzzle 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-right: 40px;
-  padding-left: 40px;
+  padding-right: 30px;
+  padding-left: 30px;
   padding-top: 15px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
