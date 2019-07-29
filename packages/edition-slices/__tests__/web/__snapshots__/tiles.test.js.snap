@@ -1709,6 +1709,58 @@ exports[`40. tile aq 1`] = `
 </Link>
 `;
 
+exports[`41. tile ar 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "flex": 1,
+      "paddingHorizontal": "10px",
+      "paddingVertical": "15px",
+    }
+  }
+  url="/article/123"
+>
+  <div>
+    <Image
+      aspectRatio={1.7777777777777777}
+      uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+    />
+  </div>
+  <div>
+    <div>
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
+    </div>
+    <h3
+      aria-level="3"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div>
+      <span>
+        
+        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+        ...
+      </span>
+    </div>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
+  </div>
+</Link>
+`;
+
 exports[`tiles that change logic based on breakpoints TileW with teaser for wider screens 1`] = `
 <Link
   linkStyle={

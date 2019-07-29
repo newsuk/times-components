@@ -39,3 +39,4 @@ export { default as TileAG } from "./tile-ag";
 export { default as TileAH } from "./tile-ah";
 export { default as TileAI } from "./tile-ai";
 export { default as TileAQ } from "./tile-aq";
+export { default as TileAR } from "./tile-ar";
