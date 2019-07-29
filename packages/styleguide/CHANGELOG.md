@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.28.36](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.28.35...@times-components/styleguide@3.28.36) (2019-07-29)
+
+
+### Bug Fixes
+
+* theme factory handling of null sections ([#2141](https://github.com/newsuk/times-components/issues/2141)) ([95781d5](https://github.com/newsuk/times-components/commit/95781d5))
+
+
+
+
+
 ## [3.28.35](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.28.34...@times-components/styleguide@3.28.35) (2019-07-22)
 
 
