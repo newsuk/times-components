@@ -891,28 +891,32 @@ exports[`22. tile u 1`] = `
 >
   <View>
     <View>
-      <ArticleLabel
-        color="#005B8D"
-        isVideo={false}
-        title="label"
-      />
+      <View>
+        <View>
+          <ArticleLabel
+            color="#005B8D"
+            isVideo={false}
+            title="label"
+          />
+        </View>
+        <Text
+          accessibilityRole="header"
+          aria-level="3"
+        >
+          This is tile headline
+        </Text>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+        />
+      </View>
     </View>
-    <Text
-      accessibilityRole="header"
-      aria-level="3"
-    >
-      This is tile headline
-    </Text>
-    <ArticleFlags
-      flags={
-        Array [
-          Object {
-            "expiryTime": "2030-03-14T12:00:00.000Z",
-            "type": "EXCLUSIVE",
-          },
-        ]
-      }
-    />
   </View>
   <Image
     aspectRatio={1.5}
@@ -978,35 +982,32 @@ exports[`24. tile w 1`] = `
 >
   <View>
     <View>
-      <ArticleLabel
-        color="#005B8D"
-        isVideo={false}
-        title="label"
-      />
+      <View>
+        <View>
+          <ArticleLabel
+            color="#005B8D"
+            isVideo={false}
+            title="label"
+          />
+        </View>
+        <Text
+          accessibilityRole="header"
+          aria-level="3"
+        >
+          This is tile headline
+        </Text>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+        />
+      </View>
     </View>
-    <Text
-      accessibilityRole="header"
-      aria-level="3"
-    >
-      This is tile headline
-    </Text>
-    <Text>
-      <Text>
-        
-        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-        ...
-      </Text>
-    </Text>
-    <ArticleFlags
-      flags={
-        Array [
-          Object {
-            "expiryTime": "2030-03-14T12:00:00.000Z",
-            "type": "EXCLUSIVE",
-          },
-        ]
-      }
-    />
   </View>
   <Image
     aspectRatio={1.7777777777777777}
@@ -1079,35 +1080,32 @@ exports[`26. tile y 1`] = `
 >
   <View>
     <View>
-      <ArticleLabel
-        color="#005B8D"
-        isVideo={false}
-        title="label"
-      />
+      <View>
+        <View>
+          <ArticleLabel
+            color="#005B8D"
+            isVideo={false}
+            title="label"
+          />
+        </View>
+        <Text
+          accessibilityRole="header"
+          aria-level="3"
+        >
+          This is tile headline
+        </Text>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+        />
+      </View>
     </View>
-    <Text
-      accessibilityRole="header"
-      aria-level="3"
-    >
-      This is tile headline
-    </Text>
-    <Text>
-      <Text>
-        
-        ‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye.
-        ...
-      </Text>
-    </Text>
-    <ArticleFlags
-      flags={
-        Array [
-          Object {
-            "expiryTime": "2030-03-14T12:00:00.000Z",
-            "type": "EXCLUSIVE",
-          },
-        ]
-      }
-    />
   </View>
 </Link>
 `;
@@ -1206,43 +1204,40 @@ exports[`29. tile ab 1`] = `
 >
   <View>
     <View>
-      <ArticleLabel
-        color="#005B8D"
-        isVideo={false}
-        title="label"
-      />
+      <View>
+        <View>
+          <ArticleLabel
+            color="#005B8D"
+            isVideo={false}
+            title="label"
+          />
+        </View>
+        <Text
+          accessibilityRole="header"
+          aria-level="3"
+        >
+          This is tile headline
+        </Text>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+        />
+        <Text>
+          <Text>
+            Richard Lloyd Parry
+          </Text>
+          <Text>
+            , Hanoi
+          </Text>
+        </Text>
+      </View>
     </View>
-    <Text
-      accessibilityRole="header"
-      aria-level="3"
-    >
-      This is tile headline
-    </Text>
-    <Text>
-      <Text>
-        
-        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-        ...
-      </Text>
-    </Text>
-    <ArticleFlags
-      flags={
-        Array [
-          Object {
-            "expiryTime": "2030-03-14T12:00:00.000Z",
-            "type": "EXCLUSIVE",
-          },
-        ]
-      }
-    />
-    <Text>
-      <Text>
-        Richard Lloyd Parry
-      </Text>
-      <Text>
-        , Hanoi
-      </Text>
-    </Text>
   </View>
   <Image
     aspectRatio={0.6666666666666666}
@@ -1264,35 +1259,32 @@ exports[`30. tile ae 1`] = `
 >
   <View>
     <View>
-      <ArticleLabel
-        color="#005B8D"
-        isVideo={false}
-        title="label"
-      />
+      <View>
+        <View>
+          <ArticleLabel
+            color="#005B8D"
+            isVideo={false}
+            title="label"
+          />
+        </View>
+        <Text
+          accessibilityRole="header"
+          aria-level="3"
+        >
+          This is tile headline
+        </Text>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+        />
+      </View>
     </View>
-    <Text
-      accessibilityRole="header"
-      aria-level="3"
-    >
-      This is tile headline
-    </Text>
-    <Text>
-      <Text>
-        
-        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-        ...
-      </Text>
-    </Text>
-    <ArticleFlags
-      flags={
-        Array [
-          Object {
-            "expiryTime": "2030-03-14T12:00:00.000Z",
-            "type": "EXCLUSIVE",
-          },
-        ]
-      }
-    />
   </View>
 </Link>
 `;
@@ -1387,6 +1379,7 @@ exports[`34. tile al 1`] = `
 <Link
   linkStyle={
     Object {
+      "flex": 1,
       "flexDirection": "column",
       "paddingHorizontal": 10,
     }
@@ -1399,35 +1392,32 @@ exports[`34. tile al 1`] = `
   />
   <View>
     <View>
-      <ArticleLabel
-        color="#005B8D"
-        isVideo={false}
-        title="label"
-      />
+      <View>
+        <View>
+          <ArticleLabel
+            color="#005B8D"
+            isVideo={false}
+            title="label"
+          />
+        </View>
+        <Text
+          accessibilityRole="header"
+          aria-level="3"
+        >
+          This is tile headline
+        </Text>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+        />
+      </View>
     </View>
-    <Text
-      accessibilityRole="header"
-      aria-level="3"
-    >
-      This is tile headline
-    </Text>
-    <Text>
-      <Text>
-        
-        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-        ...
-      </Text>
-    </Text>
-    <ArticleFlags
-      flags={
-        Array [
-          Object {
-            "expiryTime": "2030-03-14T12:00:00.000Z",
-            "type": "EXCLUSIVE",
-          },
-        ]
-      }
-    />
   </View>
 </Link>
 `;
@@ -1436,6 +1426,7 @@ exports[`35. tile am 1`] = `
 <Link
   linkStyle={
     Object {
+      "flex": 1,
       "paddingHorizontal": 10,
       "paddingTop": 10,
     }
@@ -1448,35 +1439,32 @@ exports[`35. tile am 1`] = `
   />
   <View>
     <View>
-      <ArticleLabel
-        color="#005B8D"
-        isVideo={false}
-        title="label"
-      />
+      <View>
+        <View>
+          <ArticleLabel
+            color="#005B8D"
+            isVideo={false}
+            title="label"
+          />
+        </View>
+        <Text
+          accessibilityRole="header"
+          aria-level="3"
+        >
+          This is tile headline
+        </Text>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+        />
+      </View>
     </View>
-    <Text
-      accessibilityRole="header"
-      aria-level="3"
-    >
-      This is tile headline
-    </Text>
-    <Text>
-      <Text>
-        
-        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-        ...
-      </Text>
-    </Text>
-    <ArticleFlags
-      flags={
-        Array [
-          Object {
-            "expiryTime": "2030-03-14T12:00:00.000Z",
-            "type": "EXCLUSIVE",
-          },
-        ]
-      }
-    />
   </View>
 </Link>
 `;
@@ -1676,35 +1664,32 @@ exports[`40. tile aq 1`] = `
   </View>
   <View>
     <View>
-      <ArticleLabel
-        color="#005B8D"
-        isVideo={false}
-        title="label"
-      />
+      <View>
+        <View>
+          <ArticleLabel
+            color="#005B8D"
+            isVideo={false}
+            title="label"
+          />
+        </View>
+        <Text
+          accessibilityRole="header"
+          aria-level="3"
+        >
+          This is tile headline
+        </Text>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+        />
+      </View>
     </View>
-    <Text
-      accessibilityRole="header"
-      aria-level="3"
-    >
-      This is tile headline
-    </Text>
-    <Text>
-      <Text>
-        
-        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-        ...
-      </Text>
-    </Text>
-    <ArticleFlags
-      flags={
-        Array [
-          Object {
-            "expiryTime": "2030-03-14T12:00:00.000Z",
-            "type": "EXCLUSIVE",
-          },
-        ]
-      }
-    />
   </View>
 </Link>
 `;
@@ -1775,35 +1760,32 @@ exports[`tiles that change logic based on breakpoints TileW with teaser for wide
 >
   <View>
     <View>
-      <ArticleLabel
-        color="#005B8D"
-        isVideo={false}
-        title="label"
-      />
+      <View>
+        <View>
+          <ArticleLabel
+            color="#005B8D"
+            isVideo={false}
+            title="label"
+          />
+        </View>
+        <Text
+          accessibilityRole="header"
+          aria-level="3"
+        >
+          This is tile headline
+        </Text>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+        />
+      </View>
     </View>
-    <Text
-      accessibilityRole="header"
-      aria-level="3"
-    >
-      This is tile headline
-    </Text>
-    <Text>
-      <Text>
-        
-        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-        ...
-      </Text>
-    </Text>
-    <ArticleFlags
-      flags={
-        Array [
-          Object {
-            "expiryTime": "2030-03-14T12:00:00.000Z",
-            "type": "EXCLUSIVE",
-          },
-        ]
-      }
-    />
   </View>
   <Image
     aspectRatio={1.7777777777777777}
@@ -1826,28 +1808,32 @@ exports[`tiles that change logic based on breakpoints TileW without teaser for t
 >
   <View>
     <View>
-      <ArticleLabel
-        color="#005B8D"
-        isVideo={false}
-        title="label"
-      />
+      <View>
+        <View>
+          <ArticleLabel
+            color="#005B8D"
+            isVideo={false}
+            title="label"
+          />
+        </View>
+        <Text
+          accessibilityRole="header"
+          aria-level="3"
+        >
+          This is tile headline
+        </Text>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+        />
+      </View>
     </View>
-    <Text
-      accessibilityRole="header"
-      aria-level="3"
-    >
-      This is tile headline
-    </Text>
-    <ArticleFlags
-      flags={
-        Array [
-          Object {
-            "expiryTime": "2030-03-14T12:00:00.000Z",
-            "type": "EXCLUSIVE",
-          },
-        ]
-      }
-    />
   </View>
   <Image
     aspectRatio={1.7777777777777777}
