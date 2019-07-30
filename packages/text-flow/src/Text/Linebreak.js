@@ -299,6 +299,5 @@ export default (nodes, lines, settings = defaults()) => {
     cache.shift();
     values.shift();
   }
-  */
   return lineBreaks
 }
