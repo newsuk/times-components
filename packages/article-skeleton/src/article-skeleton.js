@@ -8,7 +8,11 @@ import { withTrackScrollDepth } from "@times-components/tracking";
 import { screenWidth } from "@times-components/utils";
 import ArticleExtras from "@times-components/article-extras";
 import { Layout, Text as FText } from "@times-components/text-flow";
-import { tabletWidth, tabletWidthMax } from "@times-components/styleguide";
+import {
+  tabletWidth,
+  tabletWidthMax,
+  colours
+} from "@times-components/styleguide";
 import ArticleRowFlow from "./article-body/article-body-row";
 import {
   articleSkeletonPropTypes,
@@ -30,7 +34,7 @@ const viewabilityConfig = {
 };
 
 const convertStyles = ({ font, size }) => ({
-  fontFamily: font,
+  fontFamily: font.replace(/-Bold|Italic/gi, ""),
   fontSize: size,
   fontStyle: font.includes("Italic") ? "italic" : "normal",
   fontWeight: font.includes("Bold") ? "bold" : "normal"
@@ -81,7 +85,8 @@ const renderText = (block, inlined = false) => {
                 selectable
                 style={{
                   ...convertStyles(span.style),
-                  lineHeight
+                  lineHeight,
+                  color: colours.functional.black
                 }}
               >
                 {span.text}
@@ -122,7 +127,8 @@ const renderText = (block, inlined = false) => {
                 ...convertStyles(span.style),
                 lineHeight,
                 position: "absolute",
-                top: span.y
+                top: span.y,
+                color: colours.functional.black
               }}
             >
               {span.text}

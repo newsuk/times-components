@@ -29,6 +29,7 @@ const ArticleMeta = ({
                 ast={bylines}
                 color={sectionColour || colours.section.default}
                 onAuthorPress={onAuthorPress}
+                centered
               />
             )}
           </Context.Consumer>

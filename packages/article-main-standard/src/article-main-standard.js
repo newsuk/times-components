@@ -1,5 +1,4 @@
 /* eslint-disable consistent-return */
-
 import React, { Component, Fragment } from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";

@@ -8,7 +8,8 @@ const shared = {
       fontSize: "cardMeta"
     }),
     color: colours.functional.action,
-    textDecorationLine: "none"
+    textDecorationLine: "none",
+    fontWeight: "bold"
   },
   nonLinkText: {
     ...fontFactory({
@@ -25,6 +26,9 @@ const shared = {
     }),
     color: colours.section.comment,
     fontWeight: "400"
+  },
+  centered: {
+    textAlign: "center"
   },
   text: {
     ...fontFactory({

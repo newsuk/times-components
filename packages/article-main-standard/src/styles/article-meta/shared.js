@@ -13,7 +13,7 @@ const sharedStyles = {
     paddingRight: 0
   },
   articleMetaElement: {
-    paddingTop: spacing(2)
+    paddingTop: spacing(1)
   },
   articleMetaElementWithBorder: {
     paddingTop: spacing(2),

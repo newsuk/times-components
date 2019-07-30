@@ -13,7 +13,8 @@ import PullQuote from "@times-components/pull-quote";
 import styleguide, {
   colours,
   tabletWidth,
-  fonts
+  fonts,
+  spacing
 } from "@times-components/styleguide";
 import { screenWidth } from "@times-components/utils";
 import Video from "@times-components/video";
@@ -88,7 +89,8 @@ export default ({
       const cap = getDropCap(children, fonts[dropCapFont], height, [
         new Body(value)
       ]);
-      const capWidth = (cap[0].measuredWidth + 20) * fontScale;
+      const capGap = spacing(2);
+      const capWidth = (cap[0].measuredWidth + capGap) * fontScale;
 
       return {
         element: new Layout.InlineBlock({

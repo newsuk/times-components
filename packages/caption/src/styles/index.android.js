@@ -10,11 +10,13 @@ const styles = StyleSheet.create({
   },
   credits: {
     ...sharedStyles.credits,
-    lineHeight: 20
+    lineHeight: spacing(4),
+    marginTop: 0
   },
   text: {
     ...sharedStyles.text,
-    lineHeight: 20
+    lineHeight: spacing(4),
+    marginTop: -spacing(1)
   }
 });
 
