@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.67.4](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.67.3...@times-components/edition-slices@0.67.4) (2019-07-30)
+
+
+### Bug Fixes
+
+* small amendments for 768breakpoint redesign ([#2143](https://github.com/newsuk/times-components/issues/2143)) ([80ebf97](https://github.com/newsuk/times-components/commit/80ebf97))
+
+
+
+
+
 ## [0.67.3](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.67.2...@times-components/edition-slices@0.67.3) (2019-07-29)
 
 **Note:** Version bump only for package @times-components/edition-slices

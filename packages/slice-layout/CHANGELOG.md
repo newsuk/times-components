@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.32.2](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.32.1...@times-components/slice-layout@0.32.2) (2019-07-30)
+
+
+### Bug Fixes
+
+* small amendments for 768breakpoint redesign ([#2143](https://github.com/newsuk/times-components/issues/2143)) ([80ebf97](https://github.com/newsuk/times-components/commit/80ebf97))
+
+
+
+
+
 ## [0.32.1](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.32.0...@times-components/slice-layout@0.32.1) (2019-07-29)
 
 **Note:** Version bump only for package @times-components/slice-layout
