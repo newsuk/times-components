@@ -137,52 +137,54 @@ exports[`1. a primary image 1`] = `
 }
 </style>
 
-<article>
-  <Head />
-  <div
-    className="c0 responsiveweb__HeaderAdContainer-sc-1exejum-1 c0 css-view-1dbjc4n"
-  >
-    <Ad
-      className="IS1"
-    />
-  </div>
-  <div
-    className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
-  >
+<div>
+  <article>
+    <Head />
     <div
-      className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
+      className="c0 responsiveweb__HeaderAdContainer-sc-1exejum-1 c0 css-view-1dbjc4n"
+    >
+      <Ad
+        className="IS1"
+      />
+    </div>
+    <div
+      className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
     >
       <div
-        className="c3 c4 c5"
+        className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
       >
         <div
-          className="IS2"
-        />
-        <div>
+          className="c3 c4 c5"
+        >
           <div
-            className="c6"
-          >
-            <div>
-              <SaveAndShareBar />
+            className="IS2"
+          />
+          <div>
+            <div
+              className="c6"
+            >
+              <div>
+                <SaveAndShareBar />
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div
-      className="c7 responsiveweb__BodyContainer-sc-1exejum-3 c7 css-view-1dbjc4n"
-    >
-      <div>
-        <div
-          className="c8 responsiveweb__PrimaryImg-sc-16nqyj8-5 c8 css-view-1dbjc4n"
-        >
-          <ArticleImage />
+      <div
+        className="c7 responsiveweb__BodyContainer-sc-1exejum-3 c7 css-view-1dbjc4n"
+      >
+        <div>
+          <div
+            className="c8 responsiveweb__PrimaryImg-sc-16nqyj8-5 c8 css-view-1dbjc4n"
+          >
+            <ArticleImage />
+          </div>
         </div>
+        <ArticleExtras />
       </div>
-      <ArticleExtras />
     </div>
-  </div>
-</article>
+  </article>
+</div>
 `;
 
 exports[`2. a fullwidth image 1`] = `
@@ -301,48 +303,50 @@ exports[`2. a fullwidth image 1`] = `
 }
 </style>
 
-<article>
-  <Head />
-  <div
-    className="c0 responsiveweb__HeaderAdContainer-sc-1exejum-1 c0 css-view-1dbjc4n"
-  >
-    <Ad
-      className="IS1"
-    />
-  </div>
-  <div
-    className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
-  >
+<div>
+  <article>
+    <Head />
     <div
-      className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
+      className="c0 responsiveweb__HeaderAdContainer-sc-1exejum-1 c0 css-view-1dbjc4n"
+    >
+      <Ad
+        className="IS1"
+      />
+    </div>
+    <div
+      className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
     >
       <div
-        className="c3 c4 c5"
+        className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
       >
         <div
-          className="IS2"
-        />
-        <div>
+          className="c3 c4 c5"
+        >
           <div
-            className="c6"
-          >
-            <div>
-              <SaveAndShareBar />
+            className="IS2"
+          />
+          <div>
+            <div
+              className="c6"
+            >
+              <div>
+                <SaveAndShareBar />
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div
-      className="c7 responsiveweb__BodyContainer-sc-1exejum-3 c7 css-view-1dbjc4n"
-    >
-      <div>
-        <ArticleImage />
+      <div
+        className="c7 responsiveweb__BodyContainer-sc-1exejum-3 c7 css-view-1dbjc4n"
+      >
+        <div>
+          <ArticleImage />
+        </div>
+        <ArticleExtras />
       </div>
-      <ArticleExtras />
     </div>
-  </div>
-</article>
+  </article>
+</div>
 `;
 
 exports[`3. a secondary image 1`] = `
@@ -489,52 +493,54 @@ exports[`3. a secondary image 1`] = `
 }
 </style>
 
-<article>
-  <Head />
-  <div
-    className="c0 responsiveweb__HeaderAdContainer-sc-1exejum-1 c0 css-view-1dbjc4n"
-  >
-    <Ad
-      className="IS1"
-    />
-  </div>
-  <div
-    className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
-  >
+<div>
+  <article>
+    <Head />
     <div
-      className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
+      className="c0 responsiveweb__HeaderAdContainer-sc-1exejum-1 c0 css-view-1dbjc4n"
+    >
+      <Ad
+        className="IS1"
+      />
+    </div>
+    <div
+      className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
     >
       <div
-        className="c3 c4 c5"
+        className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
       >
         <div
-          className="IS2"
-        />
-        <div>
+          className="c3 c4 c5"
+        >
           <div
-            className="c6"
-          >
-            <div>
-              <SaveAndShareBar />
+            className="IS2"
+          />
+          <div>
+            <div
+              className="c6"
+            >
+              <div>
+                <SaveAndShareBar />
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div
-      className="c7 responsiveweb__BodyContainer-sc-1exejum-3 c7 css-view-1dbjc4n"
-    >
-      <div>
-        <div
-          className="c8 responsiveweb__SecondaryImg-sc-16nqyj8-6 c8 css-view-1dbjc4n"
-        >
-          <ArticleImage />
+      <div
+        className="c7 responsiveweb__BodyContainer-sc-1exejum-3 c7 css-view-1dbjc4n"
+      >
+        <div>
+          <div
+            className="c8 responsiveweb__SecondaryImg-sc-16nqyj8-6 c8 css-view-1dbjc4n"
+          >
+            <ArticleImage />
+          </div>
         </div>
+        <ArticleExtras />
       </div>
-      <ArticleExtras />
     </div>
-  </div>
-</article>
+  </article>
+</div>
 `;
 
 exports[`4. an inline image 1`] = `
@@ -682,50 +688,52 @@ exports[`4. an inline image 1`] = `
 }
 </style>
 
-<article>
-  <Head />
-  <div
-    className="c0 responsiveweb__HeaderAdContainer-sc-1exejum-1 c0 css-view-1dbjc4n"
-  >
-    <Ad
-      className="IS1"
-    />
-  </div>
-  <div
-    className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
-  >
+<div>
+  <article>
+    <Head />
     <div
-      className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
+      className="c0 responsiveweb__HeaderAdContainer-sc-1exejum-1 c0 css-view-1dbjc4n"
+    >
+      <Ad
+        className="IS1"
+      />
+    </div>
+    <div
+      className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
     >
       <div
-        className="c3 c4 c5"
+        className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
       >
         <div
-          className="IS2"
-        />
-        <div>
+          className="c3 c4 c5"
+        >
           <div
-            className="c6"
-          >
-            <div>
-              <SaveAndShareBar />
+            className="IS2"
+          />
+          <div>
+            <div
+              className="c6"
+            >
+              <div>
+                <SaveAndShareBar />
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div
-      className="c7 responsiveweb__BodyContainer-sc-1exejum-3 c7 css-view-1dbjc4n"
-    >
-      <div>
-        <div
-          className="c8 responsiveweb__InlineImg-sc-16nqyj8-7 c8 css-view-1dbjc4n"
-        >
-          <ArticleImage />
+      <div
+        className="c7 responsiveweb__BodyContainer-sc-1exejum-3 c7 css-view-1dbjc4n"
+      >
+        <div>
+          <div
+            className="c8 responsiveweb__InlineImg-sc-16nqyj8-7 c8 css-view-1dbjc4n"
+          >
+            <ArticleImage />
+          </div>
         </div>
+        <ArticleExtras />
       </div>
-      <ArticleExtras />
     </div>
-  </div>
-</article>
+  </article>
+</div>
 `;

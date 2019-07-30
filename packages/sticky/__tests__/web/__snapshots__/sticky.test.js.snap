@@ -15,20 +15,20 @@ exports[`Sticky becomes sticky and unsticky when scrolling past it 1`] = `
           style="display: block; margin-top: 10px; margin-bottom: 20px; height: 60px;"
         />
       </div>
-    </div>
-  </div>
-  <div
-    data-tc-sticky-container="true"
-    style="top: 0px; z-index: 999; position: fixed; left: 0px; width: 100%; transform: translateY(-10px);"
-  >
-    <div
-      class="tc-sticky"
-      style="margin-top: 10px; margin-bottom: 20px; height: 60px;"
-    >
       <div
-        data-tc-sticky-sizer="true"
-        style="width: 600px; margin-left: 0px; height: 100%; box-sizing: border-box;"
-      />
+        data-tc-sticky-container="true"
+        style="top: 0px; z-index: 999; position: fixed; left: 0px; width: 100%; transform: translateY(-10px);"
+      >
+        <div
+          class="tc-sticky"
+          style="margin-top: 10px; margin-bottom: 20px; height: 60px;"
+        >
+          <div
+            data-tc-sticky-sizer="true"
+            style="width: 600px; margin-left: 0px; height: 100%; box-sizing: border-box;"
+          />
+        </div>
+      </div>
     </div>
   </div>
 </body>
@@ -101,21 +101,21 @@ exports[`Sticky remains sticky when continuing scrolling 1`] = `
         data-tc-sticky-placeholder="true"
         style="display: block; margin-top: 10px; margin-bottom: 0px; height: 60px;"
       />
-    </div>
-  </div>
-  <div
-    data-tc-sticky-container="true"
-    style="top: 0px; z-index: 999; position: fixed; left: 0px; width: 100%; transform: translateY(-10px);"
-  >
-    <div
-      class="tc-sticky"
-      data-sticky-progress="5"
-      style="margin-top: 10px; height: 60px;"
-    >
       <div
-        data-tc-sticky-sizer="true"
-        style="width: 1000px; margin-left: 0px; height: 100%; box-sizing: border-box;"
-      />
+        data-tc-sticky-container="true"
+        style="top: 0px; z-index: 999; position: fixed; left: 0px; width: 100%; transform: translateY(-10px);"
+      >
+        <div
+          class="tc-sticky"
+          data-sticky-progress="5"
+          style="margin-top: 10px; height: 60px;"
+        >
+          <div
+            data-tc-sticky-sizer="true"
+            style="width: 1000px; margin-left: 0px; height: 100%; box-sizing: border-box;"
+          />
+        </div>
+      </div>
     </div>
   </div>
 </body>

@@ -1,191 +1,121 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. a primary image 1`] = `
-<article>
-  <Head />
-  <div>
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
-      slotName="header"
-    />
-  </div>
-  <div>
+<div>
+  <article>
+    <Head />
+    <div>
+      <Ad
+        contextUrl="https://url.io"
+        section="Some Section"
+        slotName="header"
+      />
+    </div>
     <div>
       <div>
-        <div
-          data-tc-sticky-placeholder={true}
-        />
-        <div
-          data-tc-sticky-container={true}
-        >
-          <div>
-            <div
-              data-tc-sticky-sizer={true}
-            >
-              <SaveAndShareBar
-                articleHeadline="Some Headline"
-                articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-                articleUrl="https://url.io"
-                savingEnabled={true}
-                sharingEnabled={true}
-              />
+        <div>
+          <div
+            data-tc-sticky-placeholder={true}
+          />
+          <div
+            data-tc-sticky-container={true}
+          >
+            <div>
+              <div
+                data-tc-sticky-sizer={true}
+              >
+                <SaveAndShareBar
+                  articleHeadline="Some Headline"
+                  articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+                  articleUrl="https://url.io"
+                  savingEnabled={true}
+                  sharingEnabled={true}
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div>
-      <div
-        id="0"
-      >
-        <div>
-          <ArticleImage
-            captionOptions={
-              Object {
-                "caption": "A Caption",
-                "credits": "Some Credits",
+      <div>
+        <div
+          id="0"
+        >
+          <div>
+            <ArticleImage
+              captionOptions={
+                Object {
+                  "caption": "A Caption",
+                  "credits": "Some Credits",
+                }
               }
-            }
-            imageOptions={
-              Object {
-                "display": "primary",
-                "highResSize": null,
-                "lowResSize": 100,
-                "ratio": "3:2",
-                "uri": "https://image-2.io",
+              imageOptions={
+                Object {
+                  "display": "primary",
+                  "highResSize": null,
+                  "lowResSize": 100,
+                  "ratio": "3:2",
+                  "uri": "https://image-2.io",
+                }
               }
-            }
-          />
+            />
+          </div>
         </div>
+        <ArticleExtras
+          articleHeadline="Some Headline"
+          articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+          articleUrl="https://url.io"
+          commentsEnabled={true}
+          relatedArticlesVisible={false}
+          savingEnabled={true}
+          sharingEnabled={true}
+          spotAccountId=""
+        />
       </div>
-      <ArticleExtras
-        articleHeadline="Some Headline"
-        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-        articleUrl="https://url.io"
-        commentsEnabled={true}
-        relatedArticlesVisible={false}
-        savingEnabled={true}
-        sharingEnabled={true}
-        spotAccountId=""
-      />
     </div>
-  </div>
-</article>
+  </article>
+</div>
 `;
 
 exports[`2. a fullwidth image 1`] = `
-<article>
-  <Head />
-  <div>
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
-      slotName="header"
-    />
-  </div>
-  <div>
+<div>
+  <article>
+    <Head />
     <div>
-      <div>
-        <div
-          data-tc-sticky-placeholder={true}
-        />
-        <div
-          data-tc-sticky-container={true}
-        >
-          <div>
-            <div
-              data-tc-sticky-sizer={true}
-            >
-              <SaveAndShareBar
-                articleHeadline="Some Headline"
-                articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-                articleUrl="https://url.io"
-                savingEnabled={true}
-                sharingEnabled={true}
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div
-        id="0"
-      >
-        <ArticleImage
-          captionOptions={
-            Object {
-              "caption": "A Caption",
-              "credits": "Some Credits",
-            }
-          }
-          imageOptions={
-            Object {
-              "display": "fullwidth",
-              "highResSize": null,
-              "lowResSize": 100,
-              "ratio": "3:2",
-              "uri": "https://image-2.io",
-            }
-          }
-        />
-      </div>
-      <ArticleExtras
-        articleHeadline="Some Headline"
-        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-        articleUrl="https://url.io"
-        commentsEnabled={true}
-        relatedArticlesVisible={false}
-        savingEnabled={true}
-        sharingEnabled={true}
-        spotAccountId=""
+      <Ad
+        contextUrl="https://url.io"
+        section="Some Section"
+        slotName="header"
       />
     </div>
-  </div>
-</article>
-`;
-
-exports[`3. a secondary image 1`] = `
-<article>
-  <Head />
-  <div>
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
-      slotName="header"
-    />
-  </div>
-  <div>
     <div>
       <div>
-        <div
-          data-tc-sticky-placeholder={true}
-        />
-        <div
-          data-tc-sticky-container={true}
-        >
-          <div>
-            <div
-              data-tc-sticky-sizer={true}
-            >
-              <SaveAndShareBar
-                articleHeadline="Some Headline"
-                articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-                articleUrl="https://url.io"
-                savingEnabled={true}
-                sharingEnabled={true}
-              />
+        <div>
+          <div
+            data-tc-sticky-placeholder={true}
+          />
+          <div
+            data-tc-sticky-container={true}
+          >
+            <div>
+              <div
+                data-tc-sticky-sizer={true}
+              >
+                <SaveAndShareBar
+                  articleHeadline="Some Headline"
+                  articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+                  articleUrl="https://url.io"
+                  savingEnabled={true}
+                  sharingEnabled={true}
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div>
-      <div
-        id="0"
-      >
-        <div>
+      <div>
+        <div
+          id="0"
+        >
           <ArticleImage
             captionOptions={
               Object {
@@ -195,7 +125,7 @@ exports[`3. a secondary image 1`] = `
             }
             imageOptions={
               Object {
-                "display": "secondary",
+                "display": "fullwidth",
                 "highResSize": null,
                 "lowResSize": 100,
                 "ratio": "3:2",
@@ -204,92 +134,170 @@ exports[`3. a secondary image 1`] = `
             }
           />
         </div>
+        <ArticleExtras
+          articleHeadline="Some Headline"
+          articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+          articleUrl="https://url.io"
+          commentsEnabled={true}
+          relatedArticlesVisible={false}
+          savingEnabled={true}
+          sharingEnabled={true}
+          spotAccountId=""
+        />
       </div>
-      <ArticleExtras
-        articleHeadline="Some Headline"
-        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-        articleUrl="https://url.io"
-        commentsEnabled={true}
-        relatedArticlesVisible={false}
-        savingEnabled={true}
-        sharingEnabled={true}
-        spotAccountId=""
-      />
     </div>
-  </div>
-</article>
+  </article>
+</div>
 `;
 
-exports[`4. an inline image 1`] = `
-<article>
-  <Head />
-  <div>
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
-      slotName="header"
-    />
-  </div>
-  <div>
+exports[`3. a secondary image 1`] = `
+<div>
+  <article>
+    <Head />
+    <div>
+      <Ad
+        contextUrl="https://url.io"
+        section="Some Section"
+        slotName="header"
+      />
+    </div>
     <div>
       <div>
-        <div
-          data-tc-sticky-placeholder={true}
-        />
-        <div
-          data-tc-sticky-container={true}
-        >
-          <div>
-            <div
-              data-tc-sticky-sizer={true}
-            >
-              <SaveAndShareBar
-                articleHeadline="Some Headline"
-                articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-                articleUrl="https://url.io"
-                savingEnabled={true}
-                sharingEnabled={true}
-              />
+        <div>
+          <div
+            data-tc-sticky-placeholder={true}
+          />
+          <div
+            data-tc-sticky-container={true}
+          >
+            <div>
+              <div
+                data-tc-sticky-sizer={true}
+              >
+                <SaveAndShareBar
+                  articleHeadline="Some Headline"
+                  articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+                  articleUrl="https://url.io"
+                  savingEnabled={true}
+                  sharingEnabled={true}
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div>
-      <div
-        id="0"
-      >
-        <div>
-          <ArticleImage
-            captionOptions={
-              Object {
-                "caption": "A Caption",
-                "credits": "Some Credits",
+      <div>
+        <div
+          id="0"
+        >
+          <div>
+            <ArticleImage
+              captionOptions={
+                Object {
+                  "caption": "A Caption",
+                  "credits": "Some Credits",
+                }
               }
-            }
-            imageOptions={
-              Object {
-                "display": "inline",
-                "highResSize": null,
-                "lowResSize": 100,
-                "ratio": "9:4",
-                "uri": "https://image-inline.io",
+              imageOptions={
+                Object {
+                  "display": "secondary",
+                  "highResSize": null,
+                  "lowResSize": 100,
+                  "ratio": "3:2",
+                  "uri": "https://image-2.io",
+                }
               }
-            }
-          />
+            />
+          </div>
         </div>
+        <ArticleExtras
+          articleHeadline="Some Headline"
+          articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+          articleUrl="https://url.io"
+          commentsEnabled={true}
+          relatedArticlesVisible={false}
+          savingEnabled={true}
+          sharingEnabled={true}
+          spotAccountId=""
+        />
       </div>
-      <ArticleExtras
-        articleHeadline="Some Headline"
-        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-        articleUrl="https://url.io"
-        commentsEnabled={true}
-        relatedArticlesVisible={false}
-        savingEnabled={true}
-        sharingEnabled={true}
-        spotAccountId=""
+    </div>
+  </article>
+</div>
+`;
+
+exports[`4. an inline image 1`] = `
+<div>
+  <article>
+    <Head />
+    <div>
+      <Ad
+        contextUrl="https://url.io"
+        section="Some Section"
+        slotName="header"
       />
     </div>
-  </div>
-</article>
+    <div>
+      <div>
+        <div>
+          <div
+            data-tc-sticky-placeholder={true}
+          />
+          <div
+            data-tc-sticky-container={true}
+          >
+            <div>
+              <div
+                data-tc-sticky-sizer={true}
+              >
+                <SaveAndShareBar
+                  articleHeadline="Some Headline"
+                  articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+                  articleUrl="https://url.io"
+                  savingEnabled={true}
+                  sharingEnabled={true}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          id="0"
+        >
+          <div>
+            <ArticleImage
+              captionOptions={
+                Object {
+                  "caption": "A Caption",
+                  "credits": "Some Credits",
+                }
+              }
+              imageOptions={
+                Object {
+                  "display": "inline",
+                  "highResSize": null,
+                  "lowResSize": 100,
+                  "ratio": "9:4",
+                  "uri": "https://image-inline.io",
+                }
+              }
+            />
+          </div>
+        </div>
+        <ArticleExtras
+          articleHeadline="Some Headline"
+          articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+          articleUrl="https://url.io"
+          commentsEnabled={true}
+          relatedArticlesVisible={false}
+          savingEnabled={true}
+          sharingEnabled={true}
+          spotAccountId=""
+        />
+      </div>
+    </div>
+  </article>
+</div>
 `;

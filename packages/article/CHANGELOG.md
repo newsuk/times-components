@@ -3,6 +3,65 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.2.90](https://github.com/newsuk/times-components/compare/@times-components/article@7.2.89...@times-components/article@7.2.90) (2019-07-30)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [7.2.89](https://github.com/newsuk/times-components/compare/@times-components/article@7.2.88...@times-components/article@7.2.89) (2019-07-29)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [7.2.88](https://github.com/newsuk/times-components/compare/@times-components/article@7.2.87...@times-components/article@7.2.88) (2019-07-29)
+
+
+### Bug Fixes
+
+* the copy link banner should appear above the save and share bar  ([#2137](https://github.com/newsuk/times-components/issues/2137)) ([39aef82](https://github.com/newsuk/times-components/commit/39aef82))
+
+
+
+
+
+## [7.2.87](https://github.com/newsuk/times-components/compare/@times-components/article@7.2.86...@times-components/article@7.2.87) (2019-07-29)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [7.2.86](https://github.com/newsuk/times-components/compare/@times-components/article@7.2.85...@times-components/article@7.2.86) (2019-07-29)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [7.2.85](https://github.com/newsuk/times-components/compare/@times-components/article@7.2.84...@times-components/article@7.2.85) (2019-07-26)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [7.2.84](https://github.com/newsuk/times-components/compare/@times-components/article@7.2.83...@times-components/article@7.2.84) (2019-07-25)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
 ## [7.2.83](https://github.com/newsuk/times-components/compare/@times-components/article@7.2.82...@times-components/article@7.2.83) (2019-07-24)
 
 **Note:** Version bump only for package @times-components/article

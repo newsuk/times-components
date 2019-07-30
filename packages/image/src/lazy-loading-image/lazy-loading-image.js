@@ -8,7 +8,8 @@ const LazyLoadingImage = props => {
     relativeWidth,
     relativeHeight,
     relativeHorizontalOffset,
-    relativeVerticalOffset
+    relativeVerticalOffset,
+    fill
   } = props;
 
   const queryArray = [
@@ -24,6 +25,7 @@ const LazyLoadingImage = props => {
       {source && source.uri && !source.uri.includes("data:image/") ? (
         <Image
           {...props}
+          resizeMode={fill ? "cover" : "center"}
           source={
             source
               ? {

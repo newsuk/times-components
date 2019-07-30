@@ -1,5 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Render comments label, when comments are loaded 1`] = `
+<div>
+  <p>
+    Comments are subject to our community guidelines, which can be viewed
+     
+    <a
+      data-focusable={true}
+      dir="auto"
+      role="link"
+    >
+      here
+    </a>
+    .
+  </p>
+  <div />
+</div>
+`;
+
 exports[`disabled comments 1`] = `
 <div>
   <p>
@@ -22,54 +40,18 @@ exports[`disabled comments 1`] = `
 
 exports[`enabled comments 1`] = `
 <div>
-  <p>
-    Comments are subject to our community guidelines, which can be viewed
-     
-    <a
-      data-focusable={true}
-      dir="auto"
-      role="link"
-    >
-      here
-    </a>
-    .
-  </p>
   <div />
 </div>
 `;
 
 exports[`single comment 1`] = `
 <div>
-  <p>
-    Comments are subject to our community guidelines, which can be viewed
-     
-    <a
-      data-focusable={true}
-      dir="auto"
-      role="link"
-    >
-      here
-    </a>
-    .
-  </p>
   <div />
 </div>
 `;
 
 exports[`zero comments 1`] = `
 <div>
-  <p>
-    Comments are subject to our community guidelines, which can be viewed
-     
-    <a
-      data-focusable={true}
-      dir="auto"
-      role="link"
-    >
-      here
-    </a>
-    .
-  </p>
   <div />
 </div>
 `;

@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.11.3](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.11.2...@times-components/article-summary@3.11.3) (2019-07-29)
+
+**Note:** Version bump only for package @times-components/article-summary
+
+
+
+
+
+## [3.11.2](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.11.1...@times-components/article-summary@3.11.2) (2019-07-29)
+
+**Note:** Version bump only for package @times-components/article-summary
+
+
+
+
+
+## [3.11.1](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.11.0...@times-components/article-summary@3.11.1) (2019-07-29)
+
+**Note:** Version bump only for package @times-components/article-summary
+
+
+
+
+
+# [3.11.0](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.10.80...@times-components/article-summary@3.11.0) (2019-07-26)
+
+
+### Features
+
+* (REPLAT-7056) Redesign lead 1 and 1 slice for medium breakpoint ([#2134](https://github.com/newsuk/times-components/issues/2134)) ([9a4a5fd](https://github.com/newsuk/times-components/commit/9a4a5fd))
+
+
+
+
+
 ## [3.10.80](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.10.79...@times-components/article-summary@3.10.80) (2019-07-24)
 
 **Note:** Version bump only for package @times-components/article-summary

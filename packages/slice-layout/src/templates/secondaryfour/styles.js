@@ -11,14 +11,42 @@ const smallBreakpointStyles = {
 };
 
 const mediumBreakpointStyles = {
-  container: { flexDirection: "row", marginHorizontal: spacing(2) },
+  container: {
+    flex: 1,
+    flexDirection: "row",
+    marginHorizontal: spacing(4)
+  },
+  columnsContainer: {
+    flex: 2,
+    flexDirection: "row"
+  },
+  columnItem: {
+    flex: 1
+  },
+  rowsContainer: {
+    flex: 1
+  },
+  colSeparatorStyle: {
+    marginVertical: spacing(3)
+  }
+};
+
+const wideBreakpointStyles = {
+  container: {
+    flexDirection: "row",
+    marginHorizontal: spacing(2)
+  },
   item: {
     flex: 1,
     width: "25%"
   }
 };
 
-export default breakpoint =>
-  breakpoint === editionBreakpoints.small
-    ? smallBreakpointStyles
-    : mediumBreakpointStyles;
+const stylesResolver = {
+  [editionBreakpoints.small]: smallBreakpointStyles,
+  [editionBreakpoints.medium]: mediumBreakpointStyles,
+  [editionBreakpoints.wide]: wideBreakpointStyles,
+  [editionBreakpoints.huge]: wideBreakpointStyles
+};
+
+export default breakpoint => stylesResolver[breakpoint];

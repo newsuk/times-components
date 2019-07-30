@@ -3,6 +3,62 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.15.18](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.15.17...@times-components/android-app@0.15.18) (2019-07-30)
+
+**Note:** Version bump only for package @times-components/android-app
+
+
+
+
+
+## [0.15.17](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.15.16...@times-components/android-app@0.15.17) (2019-07-29)
+
+**Note:** Version bump only for package @times-components/android-app
+
+
+
+
+
+## [0.15.16](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.15.15...@times-components/android-app@0.15.16) (2019-07-29)
+
+**Note:** Version bump only for package @times-components/android-app
+
+
+
+
+
+## [0.15.15](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.15.14...@times-components/android-app@0.15.15) (2019-07-29)
+
+**Note:** Version bump only for package @times-components/android-app
+
+
+
+
+
+## [0.15.14](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.15.13...@times-components/android-app@0.15.14) (2019-07-29)
+
+**Note:** Version bump only for package @times-components/android-app
+
+
+
+
+
+## [0.15.13](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.15.12...@times-components/android-app@0.15.13) (2019-07-26)
+
+**Note:** Version bump only for package @times-components/android-app
+
+
+
+
+
+## [0.15.12](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.15.11...@times-components/android-app@0.15.12) (2019-07-25)
+
+**Note:** Version bump only for package @times-components/android-app
+
+
+
+
+
 ## [0.15.11](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.15.10...@times-components/android-app@0.15.11) (2019-07-24)
 
 **Note:** Version bump only for package @times-components/android-app

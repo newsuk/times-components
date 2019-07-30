@@ -45,6 +45,7 @@ exports[`2. tile b 1`] = `
 <Link
   linkStyle={
     Object {
+      "flex": 1,
       "paddingHorizontal": 10,
       "paddingTop": 10,
     }
@@ -725,8 +726,8 @@ exports[`18. tile r 1`] = `
   linkStyle={
     Object {
       "paddingBottom": 15,
-      "paddingHorizontal": 20,
-      "paddingTop": 10,
+      "paddingHorizontal": 30,
+      "paddingTop": 15,
     }
   }
   url="/article/123"
@@ -882,7 +883,8 @@ exports[`22. tile u 1`] = `
     Object {
       "flex": 1,
       "flexDirection": "row",
-      "padding": 10,
+      "paddingHorizontal": 10,
+      "paddingVertical": 15,
     }
   }
   url="/article/123"
@@ -1358,7 +1360,7 @@ exports[`33. tile ak 1`] = `
       "backgroundColor": "#F0F0F0",
       "flex": 1,
       "height": 150,
-      "marginHorizontal": 5,
+      "marginHorizontal": 10,
       "overflow": "hidden",
     }
   }
@@ -1662,6 +1664,58 @@ exports[`40. tile aq 1`] = `
       "flex": 1,
       "paddingHorizontal": 10,
       "paddingTop": 10,
+    }
+  }
+  url="/article/123"
+>
+  <View>
+    <Image
+      aspectRatio={1.7777777777777777}
+      uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+    />
+  </View>
+  <View>
+    <View>
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
+    </View>
+    <Text
+      accessibilityRole="header"
+      aria-level="3"
+    >
+      This is tile headline
+    </Text>
+    <Text>
+      <Text>
+        
+        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+        ...
+      </Text>
+    </Text>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
+  </View>
+</Link>
+`;
+
+exports[`41. tile ar 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "flex": 1,
+      "paddingHorizontal": 10,
+      "paddingVertical": 15,
     }
   }
   url="/article/123"

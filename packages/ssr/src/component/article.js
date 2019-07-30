@@ -9,7 +9,6 @@ const {
   ContextProviderWithDefaults,
   defaults
 } = require("@times-components/context/rnw");
-const { StickyProvider } = require("@times-components/sticky/rnw");
 const { scales, themeFactory } = require("@times-components/styleguide/rnw");
 
 const scale = scales.large;
@@ -29,52 +28,48 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
   } = data;
 
   return React.createElement(
-    StickyProvider,
-    {},
+    HelmetProvider,
+    { context: helmetContext },
     React.createElement(
-      HelmetProvider,
-      { context: helmetContext },
+      ApolloProvider,
+      { client },
       React.createElement(
-        ApolloProvider,
-        { client },
-        React.createElement(
-          ArticleProvider,
-          {
-            analyticsStream,
-            debounceTimeMs,
-            id: articleId
-          },
-          ({ article, isLoading, error, refetch }) =>
-            React.createElement(
-              ContextProviderWithDefaults,
-              {
-                value: {
-                  getCookieValue,
-                  makeArticleUrl,
-                  makeTopicUrl,
-                  theme: {
-                    ...themeFactory(article.section, article.template),
-                    scale: scale || defaults.theme.scale
-                  },
-                  user: userState
-                }
-              },
-              React.createElement(Article, {
-                adConfig: mapArticleToAdConfig(article),
-                analyticsStream,
-                article,
-                error,
-                isLoading,
-                onAuthorPress: () => {},
-                onRelatedArticlePress: () => {},
-                onTopicPress: () => {},
-                refetch,
-                spotAccountId,
-                paidContentClassName,
-                faviconUrl
-              })
-            )
-        )
+        ArticleProvider,
+        {
+          analyticsStream,
+          debounceTimeMs,
+          id: articleId
+        },
+        ({ article, isLoading, error, refetch }) =>
+          React.createElement(
+            ContextProviderWithDefaults,
+            {
+              value: {
+                getCookieValue,
+                makeArticleUrl,
+                makeTopicUrl,
+                theme: {
+                  ...themeFactory(article.section, article.template),
+                  scale: scale || defaults.theme.scale
+                },
+                user: userState
+              }
+            },
+            React.createElement(Article, {
+              adConfig: mapArticleToAdConfig(article),
+              analyticsStream,
+              article,
+              error,
+              isLoading,
+              onAuthorPress: () => {},
+              onRelatedArticlePress: () => {},
+              onTopicPress: () => {},
+              refetch,
+              spotAccountId,
+              paidContentClassName,
+              faviconUrl
+            })
+          )
       )
     )
   );

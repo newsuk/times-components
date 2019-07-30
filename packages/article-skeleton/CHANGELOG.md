@@ -3,6 +3,65 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.11.12](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.11.11...@times-components/article-skeleton@1.11.12) (2019-07-30)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.11.11](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.11.10...@times-components/article-skeleton@1.11.11) (2019-07-29)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.11.10](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.11.9...@times-components/article-skeleton@1.11.10) (2019-07-29)
+
+
+### Bug Fixes
+
+* the copy link banner should appear above the save and share bar  ([#2137](https://github.com/newsuk/times-components/issues/2137)) ([39aef82](https://github.com/newsuk/times-components/commit/39aef82))
+
+
+
+
+
+## [1.11.9](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.11.8...@times-components/article-skeleton@1.11.9) (2019-07-29)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.11.8](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.11.7...@times-components/article-skeleton@1.11.8) (2019-07-29)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.11.7](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.11.6...@times-components/article-skeleton@1.11.7) (2019-07-26)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.11.6](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.11.5...@times-components/article-skeleton@1.11.6) (2019-07-25)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
 ## [1.11.5](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.11.4...@times-components/article-skeleton@1.11.5) (2019-07-24)
 
 

@@ -2,18 +2,8 @@
 /* eslint-env browser */
 import React from "react";
 import { USER_STATES } from "@times-components/user-state";
+import { NewTab } from "@times-components/storybook";
 import renderArticleConfig from "./showcase-helper";
-
-const link = typeof document === "object" &&
-  window !== window.top && (
-    <a
-      href={`/iframe.html${window.top.location.search}`}
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      Open in new window
-    </a>
-  );
 
 export default {
   children: [
@@ -24,7 +14,7 @@ export default {
           color,
           decorateAction,
           hasScaling: false,
-          link,
+          link: <NewTab />,
           select
         }),
       name: "Article with template choice",
@@ -38,7 +28,7 @@ export default {
           color,
           decorateAction,
           hasScaling: false,
-          link,
+          link: <NewTab />,
           select
         }),
       name: "Article teaser",
@@ -53,7 +43,7 @@ export default {
           color,
           decorateAction,
           hasScaling: false,
-          link,
+          link: <NewTab />,
           select
         }),
       name: "Article metered expired",

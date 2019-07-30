@@ -3,6 +3,62 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.17](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@1.3.16...@times-components/article-paragraph@1.3.17) (2019-07-30)
+
+**Note:** Version bump only for package @times-components/article-paragraph
+
+
+
+
+
+## [1.3.16](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@1.3.15...@times-components/article-paragraph@1.3.16) (2019-07-29)
+
+**Note:** Version bump only for package @times-components/article-paragraph
+
+
+
+
+
+## [1.3.15](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@1.3.14...@times-components/article-paragraph@1.3.15) (2019-07-29)
+
+**Note:** Version bump only for package @times-components/article-paragraph
+
+
+
+
+
+## [1.3.14](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@1.3.13...@times-components/article-paragraph@1.3.14) (2019-07-29)
+
+**Note:** Version bump only for package @times-components/article-paragraph
+
+
+
+
+
+## [1.3.13](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@1.3.12...@times-components/article-paragraph@1.3.13) (2019-07-29)
+
+**Note:** Version bump only for package @times-components/article-paragraph
+
+
+
+
+
+## [1.3.12](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@1.3.11...@times-components/article-paragraph@1.3.12) (2019-07-26)
+
+**Note:** Version bump only for package @times-components/article-paragraph
+
+
+
+
+
+## [1.3.11](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@1.3.10...@times-components/article-paragraph@1.3.11) (2019-07-25)
+
+**Note:** Version bump only for package @times-components/article-paragraph
+
+
+
+
+
 ## [1.3.10](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@1.3.9...@times-components/article-paragraph@1.3.10) (2019-07-24)
 
 

@@ -36,13 +36,15 @@ exports[`2. secondary four - medium 1`] = `
 <div>
   <div>
     <div>
-      secondary-1
+      <div>
+        secondary-1
+      </div>
     </div>
-  </div>
-  <div />
-  <div>
+    <div />
     <div>
-      secondary-2
+      <div>
+        secondary-2
+      </div>
     </div>
   </div>
   <div />
@@ -50,9 +52,7 @@ exports[`2. secondary four - medium 1`] = `
     <div>
       secondary-3
     </div>
-  </div>
-  <div />
-  <div>
+    <div />
     <div>
       secondary-4
     </div>

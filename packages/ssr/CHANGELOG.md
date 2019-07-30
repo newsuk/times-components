@@ -3,6 +3,65 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.70](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.3.69...@times-components/ssr@2.3.70) (2019-07-30)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.3.69](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.3.68...@times-components/ssr@2.3.69) (2019-07-29)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.3.68](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.3.67...@times-components/ssr@2.3.68) (2019-07-29)
+
+
+### Bug Fixes
+
+* the copy link banner should appear above the save and share bar  ([#2137](https://github.com/newsuk/times-components/issues/2137)) ([39aef82](https://github.com/newsuk/times-components/commit/39aef82))
+
+
+
+
+
+## [2.3.67](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.3.66...@times-components/ssr@2.3.67) (2019-07-29)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.3.66](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.3.65...@times-components/ssr@2.3.66) (2019-07-29)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.3.65](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.3.64...@times-components/ssr@2.3.65) (2019-07-26)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.3.64](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.3.63...@times-components/ssr@2.3.64) (2019-07-25)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
 ## [2.3.63](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.3.62...@times-components/ssr@2.3.63) (2019-07-24)
 
 **Note:** Version bump only for package @times-components/ssr

@@ -13,7 +13,7 @@ import {
 import styleFactory from "./styles";
 import WithoutWhiteSpace from "../shared/without-white-space";
 
-const TileU = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
+const TileU = ({ onPress, tile, breakpoint = editionBreakpoints.medium }) => {
   const styles = styleFactory(breakpoint);
   const crop = getTileImage(tile, "crop32");
 
@@ -36,6 +36,7 @@ const TileU = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
             tile={tile}
             withStar
             whiteSpaceHeight={whiteSpaceHeight}
+            starStyle={styles.star}
           />
         )}
       />

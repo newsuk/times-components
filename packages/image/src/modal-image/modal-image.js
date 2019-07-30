@@ -132,6 +132,7 @@ class ModalImage extends Component {
         <Button onPress={this.showModal}>
           <Image
             {...this.props}
+            fill
             lowResSize={lowResSize}
             onLayout={this.onLowResLayout}
           />

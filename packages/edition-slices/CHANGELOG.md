@@ -3,6 +3,63 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.67.4](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.67.3...@times-components/edition-slices@0.67.4) (2019-07-30)
+
+
+### Bug Fixes
+
+* small amendments for 768breakpoint redesign ([#2143](https://github.com/newsuk/times-components/issues/2143)) ([80ebf97](https://github.com/newsuk/times-components/commit/80ebf97))
+
+
+
+
+
+## [0.67.3](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.67.2...@times-components/edition-slices@0.67.3) (2019-07-29)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
+## [0.67.2](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.67.1...@times-components/edition-slices@0.67.2) (2019-07-29)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
+## [0.67.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.67.0...@times-components/edition-slices@0.67.1) (2019-07-29)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
+# [0.67.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.66.0...@times-components/edition-slices@0.67.0) (2019-07-29)
+
+
+### Features
+
+* (REPLAT-7059) Redesign secondary 4 slice for medium breakpoint ([#2139](https://github.com/newsuk/times-components/issues/2139)) ([a8be142](https://github.com/newsuk/times-components/commit/a8be142))
+
+
+
+
+
+# [0.66.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.65.15...@times-components/edition-slices@0.66.0) (2019-07-26)
+
+
+### Features
+
+* (REPLAT-7056) Redesign lead 1 and 1 slice for medium breakpoint ([#2134](https://github.com/newsuk/times-components/issues/2134)) ([9a4a5fd](https://github.com/newsuk/times-components/commit/9a4a5fd))
+
+
+
+
+
 ## [0.65.15](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.65.14...@times-components/edition-slices@0.65.15) (2019-07-24)
 
 **Note:** Version bump only for package @times-components/edition-slices
