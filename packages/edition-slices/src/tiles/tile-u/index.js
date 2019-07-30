@@ -17,14 +17,8 @@ const TileU = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
   const styles = styleFactory(breakpoint);
   const crop = getTileImage(tile, "crop32");
 
-  const teaserLength = {
-    [editionBreakpoints.wide]: 125,
-    [editionBreakpoints.huge]: 300
-  };
   const summary =
-    breakpoint !== editionBreakpoints.medium
-      ? getTileSummary(tile, teaserLength[breakpoint])
-      : null;
+    breakpoint !== editionBreakpoints.medium ? getTileSummary(tile, 800) : null;
 
   return (
     <TileLink

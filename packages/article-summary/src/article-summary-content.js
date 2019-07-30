@@ -5,8 +5,6 @@ import { propTypes as treePropType } from "@times-components/markup-forest";
 import { renderAst } from "./article-summary";
 import styles from "./styles";
 
-const placeholder800Characters =
-  "Britain needs to build a fleet of nuclear or carbon-capture power plants equivalent to a dozen Hinkley Point Cs to hit climate change targets, a leaked government analysis suggests.Up to 40 gigawatts of non-intermittent low carbon power stations could be needed in 2050 to reduce Britain’s emissions. Britain needs to build a fleet of nuclear or carbon-capture power plants equivalent to a dozen Hinkley Point Cs to hit climate change targets, a leaked government analysis suggests.Up to 40 gigawatts of non-intermittent low carbon power stations could be needed in 2050 to reduce Britain’s emissions. Britain needs to build a fleet of nuclear or carbon-capture power plants equivalent to a dozen Hinkley Point Cs to hit climate change targets, a leaked government analysis suggests. Up to 40 gigawatts";
 const initialLines = 2;
 
 const ArticleSummaryContent = ({ ast, className, style, whiteSpaceHeight }) => {
@@ -26,9 +24,7 @@ const ArticleSummaryContent = ({ ast, className, style, whiteSpaceHeight }) => {
       style={[styles.text, style]}
       {...numberOfLinesProp}
     >
-      {whiteSpaceHeight !== undefined
-        ? placeholder800Characters
-        : renderAst(ast)}
+      {renderAst(ast)}
     </Text>
   ) : null;
 };

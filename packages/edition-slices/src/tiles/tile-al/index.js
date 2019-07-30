@@ -34,7 +34,7 @@ const TileAL = ({ onPress, tile }) => {
         render={whiteSpaceHeight => (
           <TileSummary
             headlineStyle={styles.headline}
-            summary={getTileSummary(tile, 125)}
+            summary={getTileSummary(tile, 800)}
             summaryStyle={styles.summaryContainer}
             tile={tile}
             whiteSpaceHeight={whiteSpaceHeight}
