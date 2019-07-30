@@ -183,7 +183,7 @@ exports[`3. lead one and one - medium 1`] = `
       Object {
         "flex": 1,
         "flexDirection": "row",
-        "marginHorizontal": 30,
+        "marginHorizontal": 20,
       }
     }
   >
@@ -1112,7 +1112,7 @@ exports[`15. puzzle - medium 1`] = `
       Object {
         "flex": 1,
         "flexDirection": "row",
-        "paddingHorizontal": 30,
+        "paddingHorizontal": 20,
         "paddingTop": 15,
       }
     }
@@ -1120,7 +1120,7 @@ exports[`15. puzzle - medium 1`] = `
     <View
       style={
         Object {
-          "width": "33%",
+          "width": "33.3%",
         }
       }
     >
@@ -1129,7 +1129,7 @@ exports[`15. puzzle - medium 1`] = `
     <View
       style={
         Object {
-          "width": "33%",
+          "width": "33.3%",
         }
       }
     >
@@ -1138,7 +1138,7 @@ exports[`15. puzzle - medium 1`] = `
     <View
       style={
         Object {
-          "width": "33%",
+          "width": "33.3%",
         }
       }
     >
@@ -1331,7 +1331,7 @@ exports[`18. lead one and one - wide 1`] = `
       Object {
         "flex": 1,
         "flexDirection": "row",
-        "marginHorizontal": 30,
+        "marginHorizontal": 20,
       }
     }
   >
@@ -2244,7 +2244,7 @@ exports[`30. puzzle - wide 1`] = `
       Object {
         "flex": 1,
         "flexDirection": "row",
-        "paddingHorizontal": 30,
+        "paddingHorizontal": 20,
         "paddingTop": 15,
       }
     }
@@ -2252,7 +2252,7 @@ exports[`30. puzzle - wide 1`] = `
     <View
       style={
         Object {
-          "width": "33%",
+          "width": "33.3%",
         }
       }
     >
@@ -2261,7 +2261,7 @@ exports[`30. puzzle - wide 1`] = `
     <View
       style={
         Object {
-          "width": "33%",
+          "width": "33.3%",
         }
       }
     >
@@ -2270,7 +2270,7 @@ exports[`30. puzzle - wide 1`] = `
     <View
       style={
         Object {
-          "width": "33%",
+          "width": "33.3%",
         }
       }
     >
@@ -2575,7 +2575,7 @@ exports[`33. lead one and one - huge 1`] = `
         Object {
           "flex": 1,
           "flexDirection": "row",
-          "marginHorizontal": 30,
+          "marginHorizontal": 20,
         }
       }
     >
@@ -3608,7 +3608,7 @@ exports[`45. puzzle - huge 1`] = `
         Object {
           "flex": 1,
           "flexDirection": "row",
-          "paddingHorizontal": 30,
+          "paddingHorizontal": 20,
           "paddingTop": 15,
         }
       }
@@ -3616,7 +3616,7 @@ exports[`45. puzzle - huge 1`] = `
       <View
         style={
           Object {
-            "width": "33%",
+            "width": "33.3%",
           }
         }
       >
@@ -3625,7 +3625,7 @@ exports[`45. puzzle - huge 1`] = `
       <View
         style={
           Object {
-            "width": "33%",
+            "width": "33.3%",
           }
         }
       >
@@ -3634,7 +3634,7 @@ exports[`45. puzzle - huge 1`] = `
       <View
         style={
           Object {
-            "width": "33%",
+            "width": "33.3%",
           }
         }
       >

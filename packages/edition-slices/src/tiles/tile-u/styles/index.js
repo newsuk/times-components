@@ -28,7 +28,7 @@ const mediumBreakpointStyles = {
   container: {
     ...sharedStyles.container,
     paddingVertical: spacing(3),
-    paddingRight: spacing(2)
+    paddingHorizontal: spacing(2)
   },
   headline: {
     ...sharedStyles.headline,
@@ -44,7 +44,7 @@ const mediumBreakpointStyles = {
     starButton: {
       position: "absolute",
       right: spacing(3),
-      bottom: 0
+      bottom: -spacing(1)
     }
   }
 };

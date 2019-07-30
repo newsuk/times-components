@@ -277,8 +277,8 @@ exports[`3. lead one and one - medium 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-right: 30px;
-  margin-left: 30px;
+  margin-right: 20px;
+  margin-left: 20px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -1699,15 +1699,15 @@ exports[`14. secondary two no pic and two - medium 1`] = `
 exports[`15. puzzle - medium 1`] = `
 <style>
 .IS1 {
-  width: 33%;
+  width: 33.3%;
 }
 
 .IS2 {
-  width: 33%;
+  width: 33.3%;
 }
 
 .IS3 {
-  width: 33%;
+  width: 33.3%;
 }
 
 .IS4 {
@@ -1720,8 +1720,8 @@ exports[`15. puzzle - medium 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
   padding-top: 15px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
@@ -2098,8 +2098,8 @@ exports[`18. lead one and one - wide 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-right: 30px;
-  margin-left: 30px;
+  margin-right: 20px;
+  margin-left: 20px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -3520,15 +3520,15 @@ exports[`29. secondary two no pic and two - wide 1`] = `
 exports[`30. puzzle - wide 1`] = `
 <style>
 .IS1 {
-  width: 33%;
+  width: 33.3%;
 }
 
 .IS2 {
-  width: 33%;
+  width: 33.3%;
 }
 
 .IS3 {
-  width: 33%;
+  width: 33.3%;
 }
 
 .IS4 {
@@ -3541,8 +3541,8 @@ exports[`30. puzzle - wide 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
   padding-top: 15px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
@@ -3919,8 +3919,8 @@ exports[`33. lead one and one - huge 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-right: 30px;
-  margin-left: 30px;
+  margin-right: 20px;
+  margin-left: 20px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -5341,15 +5341,15 @@ exports[`44. secondary two no pic and two - huge 1`] = `
 exports[`45. puzzle - huge 1`] = `
 <style>
 .IS1 {
-  width: 33%;
+  width: 33.3%;
 }
 
 .IS2 {
-  width: 33%;
+  width: 33.3%;
 }
 
 .IS3 {
-  width: 33%;
+  width: 33.3%;
 }
 
 .IS4 {
@@ -5362,8 +5362,8 @@ exports[`45. puzzle - huge 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
   padding-top: 15px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;

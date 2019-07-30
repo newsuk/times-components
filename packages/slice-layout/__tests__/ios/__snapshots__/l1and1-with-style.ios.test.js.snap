@@ -25,7 +25,7 @@ exports[`2. lead one and one - medium 1`] = `
     Object {
       "flex": 1,
       "flexDirection": "row",
-      "marginHorizontal": 30,
+      "marginHorizontal": 20,
     }
   }
 >

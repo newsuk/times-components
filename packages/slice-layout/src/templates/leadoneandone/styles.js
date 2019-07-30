@@ -4,7 +4,7 @@ const styles = {
   container: {
     flex: 1,
     flexDirection: "row",
-    marginHorizontal: spacing(6)
+    marginHorizontal: spacing(4)
   },
   leadItem: {
     width: "75%"
