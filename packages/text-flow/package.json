@@ -1,6 +1,6 @@
 {
   "name": "@times-components/text-flow",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A component for flowing text around generic inline elements.",
   "main": "dist/text-flow",
   "dev": "src/text-flow",
