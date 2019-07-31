@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.68.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.67.5...@times-components/edition-slices@0.68.0) (2019-07-31)
+
+
+### Features
+
+* implement edition slices teaser rules ([#2138](https://github.com/newsuk/times-components/issues/2138)) ([1a0b893](https://github.com/newsuk/times-components/commit/1a0b893))
+
+
+
+
+
 ## [0.67.5](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.67.4...@times-components/edition-slices@0.67.5) (2019-07-30)
 
 **Note:** Version bump only for package @times-components/edition-slices
