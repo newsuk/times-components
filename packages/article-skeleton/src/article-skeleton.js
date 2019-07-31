@@ -98,7 +98,7 @@ const renderText = (block, inlined = false) => {
     ));
   }
   return block.getComponent(style => (
-    <View style={[{ height: block.measuredHeight }]}>
+    <View style={{ height: block.measuredHeight }}>
       {block.block.children.map(line =>
         line.idealSpans.map(span => {
           if (span.href) {
