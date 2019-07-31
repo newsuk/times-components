@@ -68,7 +68,7 @@ export default class TextFlow extends Container {
             // Support merging of inlines one day
             break;
           }
-          next.lineWidths = elLines.slice(pulledLines);
+          next.lineWidths = elLines.slice(Math.floor(pulledLines));
           next.width = this.width;
           next.layout();
           if (
@@ -95,8 +95,8 @@ export default class TextFlow extends Container {
           child.addChild(next)
           grabbed += 1;
           next = this.flow[grabbed];
-          if (pulledLines >= elLines.length || !next) {
-            break;
+          if (vPosition > (child.y + child.height) || !next) {
+            break
           }
         }
         i = grabbed;

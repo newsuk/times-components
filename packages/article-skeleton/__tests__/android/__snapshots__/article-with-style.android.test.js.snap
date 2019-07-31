@@ -301,7 +301,6 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                       "fontFamily": "GillSansMTStd-Medium",
                       "fontSize": 13,
                       "lineHeight": 20,
-                      "marginTop": -5,
                     }
                   }
                 >
@@ -1030,7 +1029,6 @@ exports[`4. an article skeleton with responsive items 1`] = `
                       "fontFamily": "GillSansMTStd-Medium",
                       "fontSize": 13,
                       "lineHeight": 20,
-                      "marginTop": -5,
                     }
                   }
                 >

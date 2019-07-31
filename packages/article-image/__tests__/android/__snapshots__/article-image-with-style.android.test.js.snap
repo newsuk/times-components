@@ -41,7 +41,6 @@ exports[`1. mobile primary image with caption and credits 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
               "lineHeight": 20,
-              "marginTop": -5,
             }
           }
         >
@@ -109,7 +108,6 @@ exports[`2. tablet primary image with caption and credits 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
               "lineHeight": 20,
-              "marginTop": -5,
             }
           }
         >
@@ -350,7 +348,6 @@ exports[`5. secondary image with caption and credits 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
               "lineHeight": 20,
-              "marginTop": -5,
             }
           }
         >
