@@ -10,6 +10,7 @@ import {
   withTileTracking
 } from "../shared";
 import styleFactory from "./styles";
+import WithoutWhiteSpace from "../shared/without-white-space";
 
 const TileAB = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
   const styles = styleFactory(breakpoint);
@@ -17,12 +18,17 @@ const TileAB = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
 
   return (
     <TileLink onPress={onPress} style={styles.container} tile={tile}>
-      <TileSummary
-        bylines={tile.article.bylines}
-        headlineStyle={styles.headline}
-        style={styles.summaryContainer}
-        summary={getTileSummary(tile, 125)}
-        tile={tile}
+      <WithoutWhiteSpace
+        styles={styles.summaryContainer}
+        render={whiteSpaceHeight => (
+          <TileSummary
+            bylines={tile.article.bylines}
+            headlineStyle={styles.headline}
+            summary={getTileSummary(tile, 800)}
+            tile={tile}
+            whiteSpaceHeight={whiteSpaceHeight}
+          />
+        )}
       />
       <Image
         aspectRatio={2 / 3}

@@ -1,7 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { TileLink, TileSummary, withTileTracking } from "../shared";
+import {
+  TileLink,
+  TileSummary,
+  withTileTracking,
+  getTileSummary
+} from "../shared";
 import styles from "./styles";
+import WithoutWhiteSpace from "../shared/without-white-space";
 
 const TileY = ({ onPress, tile }) => (
   <TileLink
@@ -10,11 +16,16 @@ const TileY = ({ onPress, tile }) => (
     tile={tile}
     withStar={false}
   >
-    <TileSummary
-      headlineStyle={styles.headline}
-      summary={tile.teaser300 || tile.article.summary300}
-      tile={tile}
-      withStar
+    <WithoutWhiteSpace
+      render={whiteSpaceHeight => (
+        <TileSummary
+          headlineStyle={styles.headline}
+          summary={getTileSummary(tile, 800)}
+          tile={tile}
+          withStar
+          whiteSpaceHeight={whiteSpaceHeight}
+        />
+      )}
     />
   </TileLink>
 );

@@ -10,6 +10,7 @@ import {
   withTileTracking
 } from "../shared";
 import styles from "./styles";
+import WithoutWhiteSpace from "../shared/without-white-space";
 
 const TileAQ = ({ onPress, tile }) => {
   const crop = getTileImage(tile, "crop169");
@@ -26,10 +27,15 @@ const TileAQ = ({ onPress, tile }) => {
           relativeVerticalOffset={crop.relativeVerticalOffset}
         />
       </View>
-      <TileSummary
-        headlineStyle={styles.headline}
-        summary={getTileSummary(tile, 125)}
-        tile={tile}
+      <WithoutWhiteSpace
+        render={whiteSpaceHeight => (
+          <TileSummary
+            headlineStyle={styles.headline}
+            summary={getTileSummary(tile, 800)}
+            tile={tile}
+            whiteSpaceHeight={whiteSpaceHeight}
+          />
+        )}
       />
     </TileLink>
   );

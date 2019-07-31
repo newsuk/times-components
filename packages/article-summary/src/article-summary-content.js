@@ -5,12 +5,29 @@ import { propTypes as treePropType } from "@times-components/markup-forest";
 import { renderAst } from "./article-summary";
 import styles from "./styles";
 
-const ArticleSummaryContent = ({ ast, className, style }) =>
-  ast.length > 0 ? (
-    <Text className={className} style={[styles.text, style]}>
+const initialLines = 2;
+
+const ArticleSummaryContent = ({ ast, className, style, whiteSpaceHeight }) => {
+  const lineHeight = (style && style.lineHeight) || styles.text.lineHeight;
+  const numberOfLinesToRender =
+    whiteSpaceHeight > 0
+      ? whiteSpaceHeight / lineHeight + initialLines
+      : initialLines;
+
+  const numberOfLinesProp = whiteSpaceHeight !== undefined && {
+    numberOfLines: numberOfLinesToRender
+  };
+
+  return ast.length > 0 ? (
+    <Text
+      className={className}
+      style={[styles.text, style]}
+      {...numberOfLinesProp}
+    >
       {renderAst(ast)}
     </Text>
   ) : null;
+};
 
 ArticleSummaryContent.propTypes = {
   ast: PropTypes.arrayOf(treePropType),
