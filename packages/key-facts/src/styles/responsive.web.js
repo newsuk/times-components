@@ -1,30 +1,34 @@
 import { Text, View } from "react-native";
-import styled from "styled-components";
+import {
+  responsiveStyled,
+  mediaQuery
+} from "@times-components/responsive-styled-components-native";
 import { breakpoints, spacing } from "@times-components/styleguide";
 
-export const KeyFactsResponsiveContainer = styled(View)`
+export const KeyFactsResponsiveContainer = responsiveStyled.View`
   margin: 5px 10px;
-
-  @media (min-width: ${breakpoints.medium}px) {
-    flex-direction: row;
-    margin: 10px auto;
-    width: 80.8%;
-  }
-
-  @media (min-width: ${breakpoints.wide}px) {
-    width: 56.2%;
-  }
+  
+  ${[
+    mediaQuery.minWidth.medium`
+      flex-direction: row;
+      margin: 10px auto;
+      width: 80.8%;
+    `,
+    mediaQuery.minWidth.wide`
+      width: 56.2%;
+    `
+  ]}
 `;
 
-export const KeyFactsResponsiveWrapper = styled(View)`
-  @media (min-width: ${breakpoints.medium}px) {
+export const KeyFactsResponsiveWrapper = responsiveStyled.View`
+  ${mediaQuery.minWidth.medium`
     width: 80%;
-  }
+  `}
 `;
 
-export const KeyFactsTitleResponsive = styled(Text)`
-  @media (min-width: ${breakpoints.medium}px) {
+export const KeyFactsTitleResponsive = responsiveStyled.Text`
+  ${mediaQuery.minWidth.medium`
     padding-right: ${spacing(4)};
     width: 20%;
-  }
+  `}
 `;
