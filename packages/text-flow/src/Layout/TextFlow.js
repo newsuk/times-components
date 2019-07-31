@@ -11,6 +11,8 @@ export default class TextFlow extends Container {
 
   height = 20;
 
+  padding = 20;
+
   flow = [];
 
   // TODO: operate only on args and block, not children
@@ -66,7 +68,7 @@ export default class TextFlow extends Container {
             // Support merging of inlines one day
             break;
           }
-          next.lineWidths = elLines.slice(pulledLines);
+          next.lineWidths = elLines.slice(Math.floor(pulledLines));
           next.width = this.width;
           next.layout();
           if (
@@ -86,12 +88,15 @@ export default class TextFlow extends Container {
               });
             }
           }
-          vPosition += next.measuredHeight;
-          child.addChild(next);
+          pulledLines += this.padding / next.lineHeight
+          next.block.measuredHeight += this.padding
+          next.measuredHeight += this.padding
+          vPosition += next.measuredHeight
+          child.addChild(next)
           grabbed += 1;
           next = this.flow[grabbed];
-          if (pulledLines >= elNumLines || !next) {
-            break;
+          if (vPosition > (child.y + child.height) || !next) {
+            break
           }
         }
         i = grabbed;

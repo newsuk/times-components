@@ -54,7 +54,7 @@ Array [
         "y": 0,
       },
     ],
-    "width": 1.9308355807606137,
+    "width": 1.9728082370106137,
     "x": 0,
     "y": 0,
   },
@@ -64,13 +64,6 @@ Array [
     "width": 0,
     "x": 0,
     "y": 30,
-  },
-  Object {
-    "height": 0,
-    "spans": Array [],
-    "width": 0,
-    "x": 0,
-    "y": 60,
   },
 ]
 `;
@@ -130,31 +123,16 @@ Array [
       },
     ],
     "height": 0,
-    "width": 1.9308355807606137,
+    "width": 1.9728082370106137,
     "x": 0,
     "y": 0,
-  },
-  Object {
-    "children": Array [
-      Object {
-        "children": "",
-        "height": 0,
-        "width": 0,
-        "x": 0,
-        "y": 30,
-      },
-    ],
-    "height": 0,
-    "width": 0,
-    "x": 0,
-    "y": 30,
   },
   Object {
     "children": Array [],
     "height": 0,
     "width": 0,
     "x": 0,
-    "y": 60,
+    "y": 30,
   },
 ]
 `;

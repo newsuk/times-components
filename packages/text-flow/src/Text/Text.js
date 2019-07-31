@@ -1,5 +1,4 @@
 /* eslint-disable prefer-destructuring,no-continue,no-underscore-dangle */
-import FontLoader from "./FontLoader";
 import Word from "./Word";
 import Character from "./Character";
 import Line from "./Line";
@@ -14,13 +13,13 @@ import Box from "./Box";
 export default class Text extends Container {
   markup = [];
 
-  lineHeight = null;
+  lineHeight = 30;
 
   characters = [];
 
   width = 100;
 
-  height = 20;
+  height = 30;
 
   _measuredHeight = 0;
 
@@ -136,7 +135,6 @@ export default class Text extends Container {
     }
 
     this.wordLayout();
-    this.lineLayout();
   }
 
   get idealSpans() {
@@ -316,19 +314,6 @@ export default class Text extends Container {
           flagged: 1,
           penalty: -infinity,
           width: 0
-        }),
-        new Box({
-          word: new Word()
-        }),
-        new Glue({
-          shrink: 0,
-          stretch: infinity,
-          width: 0
-        }),
-        new Penalty({
-          flagged: 1,
-          penalty: -infinity,
-          width: 0
         })
       ]);
 
@@ -375,83 +360,6 @@ export default class Text extends Container {
       }
     }
     this._block.measuredHeight = vPosition;
-  }
-
-  lineLayout() {
-    // loop over lines
-    // place into text
-    let measuredHeight = 0;
-    let line;
-    const a = Align;
-    const fnt = FontLoader.getFont(this.font);
-
-    const len = this.lines.length;
-    for (let i = 0; i < len; i += 1) {
-      line = this.lines[i];
-
-      // correct measuredWidth if last line character contains tracking
-      if (line.lastWord() !== undefined && line.lastWord().lastCharacter()) {
-        line.measuredWidth -= line
-          .lastWord()
-          .lastCharacter()
-          .trackingOffset();
-      }
-
-      measuredHeight += line.measuredHeight;
-      if (this.align === a.TOP_CENTER) {
-        // move to center
-        line.x = (this.width - line.measuredWidth) / 2;
-      } else if (this.align === a.TOP_RIGHT) {
-        // move to right
-        line.x = this.width - line.measuredWidth;
-      } else if (this.align === a.MIDDLE_CENTER) {
-        // move to center
-        line.x = (this.width - line.measuredWidth) / 2;
-      } else if (this.align === a.MIDDLE_RIGHT) {
-        // move to right
-        line.x = this.width - line.measuredWidth;
-      } else if (this.align === a.BOTTOM_CENTER) {
-        // move to center
-        line.x = (this.width - line.measuredWidth) / 2;
-      } else if (this.align === a.BOTTOM_RIGHT) {
-        // move to right
-        line.x = this.width - line.measuredWidth;
-      }
-    }
-
-    // TOP ALIGNED
-    if (
-      this.align === a.TOP_LEFT ||
-      this.align === a.TOP_CENTER ||
-      this.align === a.TOP_RIGHT
-    ) {
-      this._block.y =
-        this.lines[0].measuredHeight * fnt.ascent / fnt.units +
-        this.lines[0].measuredHeight * fnt.top / fnt.units;
-
-      // MIDDLE ALIGNED
-    } else if (
-      this.align === a.MIDDLE_LEFT ||
-      this.align === a.MIDDLE_CENTER ||
-      this.align === a.MIDDLE_RIGHT
-    ) {
-      this._block.y =
-        this.lines[0].measuredHeight +
-        (this.height - measuredHeight) / 2 +
-        this.lines[0].measuredHeight * fnt.middle / fnt.units;
-
-      // BOTTOM ALIGNED
-    } else if (
-      this.align === a.BOTTOM_LEFT ||
-      this.align === a.BOTTOM_CENTER ||
-      this.align === a.BOTTOM_RIGHT
-    ) {
-      this._block.y =
-        this.height -
-        this.lines[this.lines.length - 1].y +
-        this.lines[0].measuredHeight * fnt.bottom / fnt.units;
-    }
-
     this.measuredHeight = this._block.measuredHeight;
     this.measuredWidth = this._block.measuredWidth;
   }

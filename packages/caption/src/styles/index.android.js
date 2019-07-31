@@ -15,8 +15,7 @@ const styles = StyleSheet.create({
   },
   text: {
     ...sharedStyles.text,
-    lineHeight: spacing(4),
-    marginTop: -spacing(1)
+    lineHeight: spacing(4)
   }
 });
 

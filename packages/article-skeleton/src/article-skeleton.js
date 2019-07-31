@@ -34,7 +34,7 @@ const viewabilityConfig = {
 };
 
 const convertStyles = ({ font, size }) => ({
-  fontFamily: font.replace(/-Bold|Italic/gi, ""),
+  fontFamily: font.replace(/-Bold|-Italic/gi, ""),
   fontSize: size,
   fontStyle: font.includes("Italic") ? "italic" : "normal",
   fontWeight: font.includes("Bold") ? "bold" : "normal"
@@ -252,6 +252,7 @@ class ArticleSkeleton extends Component {
     const { fontScale } = Dimensions.get("window");
 
     const textFlow = new Layout.TextFlow({
+      padding: 20,
       flow: rows.map(rowData =>
         ArticleRowFlow({
           content: rowData,
