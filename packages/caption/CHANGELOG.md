@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.54](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.53...@times-components/caption@3.0.54) (2019-07-31)
+
+
+### Bug Fixes
+
+* paragraph with dropcap margin bottom fixed ([#2122](https://github.com/newsuk/times-components/issues/2122)) ([f76c597](https://github.com/newsuk/times-components/commit/f76c597))
+
+
+
+
+
 ## [3.0.53](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.52...@times-components/caption@3.0.53) (2019-07-30)
 
 **Note:** Version bump only for package @times-components/caption
