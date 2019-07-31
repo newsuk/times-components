@@ -66,6 +66,8 @@ const tests = [
   {
     name: "multiple ad slots",
     test: () => {
+      window.isAdBlockDisabled = true;
+
       const wrapper = mount(
         <AdComposer adConfig={adConfig}>
           <Fragment>
@@ -88,6 +90,7 @@ const tests = [
   {
     name: "placeholder when isLoading",
     test: () => {
+      window.isAdBlockDisabled = true;
       const wrapper = mount(
         <AdComposer adConfig={adConfig}>
           <Fragment>
@@ -119,6 +122,24 @@ const tests = [
         .setAdError();
 
       wrapper.update();
+
+      expect(AdComponent).toMatchSnapshot();
+    }
+  },
+  {
+    name: "returns nothing if user has AdBlock",
+    test: () => {
+      window.isAdBlockDisabled = false;
+
+      const wrapper = mount(
+        <AdComposer adConfig={adConfig}>
+          <Fragment>
+            <Ad {...props} slotName="header" />
+          </Fragment>
+        </AdComposer>
+      );
+
+      const AdComponent = wrapper.find("Ad");
 
       expect(AdComponent).toMatchSnapshot();
     }
