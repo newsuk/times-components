@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { View } from "react-native";
 import { editionBreakpoints } from "@times-components/styleguide";
 import propTypes from "./proptypes";
@@ -24,13 +24,14 @@ const SecondaryTwoNoPicAndTwoSlice = ({
 
   if (breakpoint === editionBreakpoints.medium) {
     return (
-      <Fragment>
+      <View style={styles.container}>
         <HorizontalLayout
           containerStyle={styles.itemContainer}
           tiles={[
             { style: styles.item, tile: secondary1 },
             { style: styles.item, tile: secondary2 }
           ]}
+          colSeparatorStyle={styles.secondaryColSeparator}
         />
         <ItemRowSeparator />
         <HorizontalLayout
@@ -39,8 +40,9 @@ const SecondaryTwoNoPicAndTwoSlice = ({
             { style: styles.item, tile: support1 },
             { style: styles.item, tile: support2 }
           ]}
+          colSeparatorStyle={styles.supportColSeparator}
         />
-      </Fragment>
+      </View>
     );
   }
 
