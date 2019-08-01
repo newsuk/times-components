@@ -248,9 +248,9 @@ exports[`5. lead two no pic and two - medium 1`] = `
   <View
     style={
       Object {
+        "flex": 1,
         "flexDirection": "row",
-        "justifyContent": "center",
-        "paddingHorizontal": 10,
+        "marginHorizontal": 20,
       }
     }
   >
@@ -280,7 +280,7 @@ exports[`5. lead two no pic and two - medium 1`] = `
           "borderColor": "#DBDBDB",
           "borderRightWidth": 1,
           "borderStyle": "solid",
-          "marginVertical": 10,
+          "marginVertical": 15,
         }
       }
     />
@@ -291,7 +291,7 @@ exports[`5. lead two no pic and two - medium 1`] = `
         }
       }
     >
-      <TileD />
+      <TileE />
       <View
         style={
           Object {
@@ -302,7 +302,7 @@ exports[`5. lead two no pic and two - medium 1`] = `
           }
         }
       />
-      <TileZ />
+      <TileD />
     </View>
   </View>
 </View>
@@ -1398,7 +1398,7 @@ exports[`20. lead two no pic and two - wide 1`] = `
       Object {
         "flexDirection": "row",
         "justifyContent": "center",
-        "paddingHorizontal": 10,
+        "marginHorizontal": 10,
       }
     }
   >
@@ -2662,7 +2662,7 @@ exports[`35. lead two no pic and two - huge 1`] = `
         Object {
           "flexDirection": "row",
           "justifyContent": "center",
-          "paddingHorizontal": 10,
+          "marginHorizontal": 10,
         }
       }
     >
