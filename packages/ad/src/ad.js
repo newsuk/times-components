@@ -40,7 +40,7 @@ class Ad extends Component {
   componentDidMount() {
     if (this.isWeb) {
       this.setState({
-        hasAdBlock: !window.isAdBlockDisabled
+        hasAdBlock: window.hasAdBlock
       });
     }
   }
