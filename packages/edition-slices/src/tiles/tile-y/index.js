@@ -15,20 +15,13 @@ const TileY = ({ onPress, tile, breakpoint = editionBreakpoints.medium }) => {
   const styles = stylesFactory(breakpoint);
 
   return (
-    <TileLink
-      onPress={onPress}
-      style={styles.container}
-      tile={tile}
-      // withStar={false}
-    >
+    <TileLink onPress={onPress} style={styles.container} tile={tile}>
       <WithoutWhiteSpace
         render={whiteSpaceHeight => (
           <TileSummary
             headlineStyle={styles.headline}
             summary={getTileSummary(tile, 800)}
             tile={tile}
-            // withStar
-            // starStyle={styles.star}
             whiteSpaceHeight={whiteSpaceHeight}
           />
         )}
