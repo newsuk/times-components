@@ -22,7 +22,7 @@ const TileW = ({ onPress, tile, breakpoint }) => {
       onPress={onPress}
       style={styles.container}
       tile={tile}
-      withStar={false}
+      starStyle={styles.star}
     >
       <WithoutWhiteSpace
         styles={styles.summaryContainer}
@@ -32,7 +32,6 @@ const TileW = ({ onPress, tile, breakpoint }) => {
             summary={summary}
             summaryStyle={styles.summary}
             tile={tile}
-            withStar
             whiteSpaceHeight={whiteSpaceHeight}
           />
         )}

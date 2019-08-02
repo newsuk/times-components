@@ -1939,7 +1939,7 @@ exports[`24. tile w 1`] = `
       "flexDirection": "row",
       "paddingBottom": "15px",
       "paddingHorizontal": "20px",
-      "paddingTop": "10px",
+      "paddingTop": "15px",
     }
   }
   url="/article/123"
@@ -3481,8 +3481,8 @@ exports[`tiles that change logic based on breakpoints TileW with teaser for wide
 }
 
 .IS1 {
-  font-size: 35px;
-  line-height: 35px;
+  font-size: 30px;
+  line-height: 30px;
 }
 
 .IS2 {
@@ -3512,7 +3512,7 @@ exports[`tiles that change logic based on breakpoints TileW with teaser for wide
       "flexDirection": "row",
       "paddingBottom": "15px",
       "paddingHorizontal": "20px",
-      "paddingTop": "10px",
+      "paddingTop": "15px",
     }
   }
   url="/article/123"
@@ -3606,9 +3606,10 @@ exports[`tiles that change logic based on breakpoints TileW without teaser for t
   linkStyle={
     Object {
       "flexDirection": "row",
+      "marginHorizontal": "10px",
       "paddingBottom": "15px",
       "paddingHorizontal": "20px",
-      "paddingTop": "10px",
+      "paddingTop": "15px",
     }
   }
   url="/article/123"

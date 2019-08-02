@@ -2153,9 +2153,9 @@ exports[`tiles that change logic based on breakpoints TileW with teaser for wide
             Object {
               "color": "#333333",
               "fontFamily": "TimesModern-Bold",
-              "fontSize": 35,
+              "fontSize": 30,
               "fontWeight": "900",
-              "lineHeight": 35,
+              "lineHeight": 30,
               "marginBottom": 5,
             }
           }
