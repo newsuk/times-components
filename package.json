@@ -54,7 +54,6 @@
     "postinstall": "yarn run fetch-fonts && lerna run postinstall && lerna run transpile",
     "packages:publish": "lerna publish --conventional-commits --yes --concurrency=1 --exact",
     "packages:publish-dry-run": "yarn packages:publish --no-git-tag-version --no-push",
-    "commit": "git-cz",
     "prepublishOnly": "lerna run prepublishOnly",
     "test:ios": "lerna run test:ios --stream",
     "test:android": "lerna run test:android --stream",
@@ -75,11 +74,6 @@
       "node_modules/(?!react-native|react-native-svg|@times-components)",
       "packages/?!author-profile"
     ]
-  },
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog"
-    }
   },
   "workspaces": [
     "packages/*",
@@ -121,9 +115,7 @@
     "babel-plugin-module-resolver": "3.2.0",
     "babel-preset-react-native": "4.0.1",
     "babel-runtime": "6.26.0",
-    "commitizen": "2.9.6",
     "coveralls": "2.13.1",
-    "cz-conventional-changelog": "2.1.0",
     "dashify": "0.2.2",
     "es6-promise-pool": "^2.5.0",
     "eslint": "5.9.0",
