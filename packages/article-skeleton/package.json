@@ -99,6 +99,7 @@
     "@times-components/user-state": "0.0.18",
     "@times-components/utils": "4.11.26",
     "@times-components/video": "4.7.64",
+    "@skele/components": "1.0.0-alpha.40",
     "lodash.get": "4.4.2",
     "lodash.pick": "4.4.0",
     "mockdate": "2.0.2",

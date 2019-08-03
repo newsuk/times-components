@@ -3,10 +3,10 @@
 exports[`1. multiple ad slots 1`] = `
 Array [
   <View
-    className="IS4"
+    className="IS5"
   >
     <View
-      className="IS3"
+      className="IS4"
     >
       <View
         className="IS2"
@@ -25,13 +25,17 @@ Array [
           thirdPartyCookiesEnabled={true}
         />
       </View>
+      <View
+        className="IS3"
+        inViewport={false}
+      />
     </View>
   </View>,
   <View
-    className="IS4"
+    className="IS5"
   >
     <View
-      className="IS3"
+      className="IS4"
     >
       <View
         className="IS2"
@@ -50,6 +54,10 @@ Array [
           thirdPartyCookiesEnabled={true}
         />
       </View>
+      <View
+        className="IS3"
+        inViewport={false}
+      />
     </View>
   </View>,
 ]

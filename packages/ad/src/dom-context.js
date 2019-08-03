@@ -1,9 +1,12 @@
 import React, { PureComponent } from "react";
 import { View, Linking, Platform } from "react-native";
 import { WebView } from "react-native-webview";
+import { Viewport } from "@skele/components";
 import webviewEventCallbackSetup from "./utils/webview-event-callback-setup";
 import logger from "./utils/logger";
 import { propTypes, defaultProps } from "./dom-context-prop-types";
+
+const ViewportAwareView = Viewport.Aware(View);
 
 class DOMContext extends PureComponent {
   static hasDifferentOrigin(url, baseUrl) {
@@ -33,6 +36,10 @@ class DOMContext extends PureComponent {
       case "renderFailed":
         onRenderError();
         break;
+      case "unrulyLoaded": {
+        this.startWatchingViewport();
+        break;
+      }
       case "renderComplete":
         onRenderComplete();
         break;
@@ -54,6 +61,26 @@ class DOMContext extends PureComponent {
       DOMContext.openURLInBrowser(url);
     }
   };
+
+  outViewport() {
+    this.webView.injectJavascript(`
+      if (typeof unrulyViewportStatus === "function") {
+        unrulyViewportStatus({
+          visible: false
+        })
+      }
+    `);
+  }
+
+  inViewport() {
+    this.webView.injectJavascript(`
+      if (typeof unrulyViewportStatus === "function") {
+        unrulyViewportStatus({
+          visible: true
+        })
+      };
+    `);
+  }
 
   render() {
     const { baseUrl, data, init, width, height } = this.props;
@@ -135,7 +162,17 @@ class DOMContext extends PureComponent {
             baseUrl,
             html
           }}
-          style={{ backgroundColor: "transparent" }}
+          style={{ position: "absolute" }}
+        />
+        <ViewportAwareView
+          onViewportEnter={() => this.inViewport()}
+          onViewportLeave={() => this.outViewport()}
+          style={{
+            width: 10,
+            height: height / 10,
+            top: height / 2 - height / 20,
+            position: "absolute"
+          }}
         />
       </View>
     );
