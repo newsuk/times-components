@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.69.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.68.1...@times-components/edition-slices@0.69.0) (2019-08-05)
+
+
+### Features
+
+* (REPLAT-7055) Redesign lead 2no pic and 2 slice for medium breakpoint ([#2148](https://github.com/newsuk/times-components/issues/2148)) ([b13504d](https://github.com/newsuk/times-components/commit/b13504d))
+* (REPLAT-7062) Redesign Secondary 2 no pic and 2 slice for medium breakpoint ([#2149](https://github.com/newsuk/times-components/issues/2149)) ([deb1ae0](https://github.com/newsuk/times-components/commit/deb1ae0))
+* without white space added to tileAR TileB ([#2150](https://github.com/newsuk/times-components/issues/2150)) ([c0dbe87](https://github.com/newsuk/times-components/commit/c0dbe87))
+
+
+
+
+
 ## [0.68.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.68.0...@times-components/edition-slices@0.68.1) (2019-07-31)
 
 **Note:** Version bump only for package @times-components/edition-slices

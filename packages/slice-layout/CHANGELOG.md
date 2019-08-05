@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.33.0](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.32.2...@times-components/slice-layout@0.33.0) (2019-08-05)
+
+
+### Features
+
+* (REPLAT-7055) Redesign lead 2no pic and 2 slice for medium breakpoint ([#2148](https://github.com/newsuk/times-components/issues/2148)) ([b13504d](https://github.com/newsuk/times-components/commit/b13504d))
+* (REPLAT-7062) Redesign Secondary 2 no pic and 2 slice for medium breakpoint ([#2149](https://github.com/newsuk/times-components/issues/2149)) ([deb1ae0](https://github.com/newsuk/times-components/commit/deb1ae0))
+
+
+
+
+
 ## [0.32.2](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.32.1...@times-components/slice-layout@0.32.2) (2019-07-30)
 
 
