@@ -1,6 +1,6 @@
 {
   "name": "@times-components/context",
-  "version": "1.0.31",
+  "version": "1.0.32",
   "description": "Shared context between components",
   "main": "dist/context",
   "dev": "src/context",
@@ -37,13 +37,13 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
-    "@times-components/styleguide": "3.28.37"
+    "@times-components/styleguide": "3.28.38"
   },
   "devDependencies": {
-    "@times-components/eslint-config-thetimes": "0.8.12",
-    "@times-components/jest-configurator": "2.5.14",
-    "@times-components/webpack-configurator": "2.0.22",
     "@babel/core": "7.4.4",
+    "@times-components/eslint-config-thetimes": "0.8.12",
+    "@times-components/jest-configurator": "2.5.15",
+    "@times-components/webpack-configurator": "2.0.22",
     "babel-jest": "24.8.0",
     "depcheck": "0.6.9",
     "eslint": "5.9.0",
