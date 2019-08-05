@@ -14,30 +14,31 @@ import WithoutWhiteSpace from "../shared/without-white-space";
 
 const TileW = ({ onPress, tile, breakpoint }) => {
   const styles = stylesFactory(breakpoint);
-  const crop = getTileImage(tile, "crop169");
-  const summary =
-    breakpoint !== editionBreakpoints.medium ? getTileSummary(tile, 800) : null;
+  const crop = getTileImage(tile, "crop32");
+
   return (
     <TileLink
       onPress={onPress}
       style={styles.container}
       tile={tile}
-      starStyle={styles.star}
+      withStar={false}
     >
       <WithoutWhiteSpace
         styles={styles.summaryContainer}
         render={whiteSpaceHeight => (
           <TileSummary
             headlineStyle={styles.headline}
-            summary={summary}
+            summary={getTileSummary(tile, 800)}
             summaryStyle={styles.summary}
             tile={tile}
+            withStar
             whiteSpaceHeight={whiteSpaceHeight}
+            style={{borderWidth: 1, borderColor: 'green'}}
           />
         )}
       />
       <Image
-        aspectRatio={16 / 9}
+        aspectRatio={3 / 2}
         relativeWidth={crop.relativeWidth}
         relativeHeight={crop.relativeHeight}
         relativeHorizontalOffset={crop.relativeHorizontalOffset}

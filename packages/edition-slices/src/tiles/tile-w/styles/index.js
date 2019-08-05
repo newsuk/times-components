@@ -32,16 +32,24 @@ const main = {
 
 const mediumStyles = {
   container: {
+    flex: 1,
     flexDirection: "row",
-    paddingHorizontal: spacing(4),
-    paddingTop: spacing(3),
-    paddingBottom: spacing(3),
-    marginHorizontal: spacing(2)
+    marginHorizontal: spacing(4),
+    paddingHorizontal: spacing(2),
+    paddingVertical: spacing(3)
   },
   headline: {
     fontFamily: fonts.headline,
     fontSize: 30,
-    lineHeight: 30
+    lineHeight: 30,
+    marginBottom: spacing(2)
+  },
+  summaryContainer: {
+    width: "51.5%",
+    paddingRight: spacing(4)
+  },
+  imageContainer: {
+    width: "48.5%"
   }
 };
 
