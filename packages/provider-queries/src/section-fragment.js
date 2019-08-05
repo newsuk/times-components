@@ -607,15 +607,15 @@ export default gql`
         lead1 {
           headline
           leadAsset {
-            ...leadAsset169
+            ...leadAsset169and32
           }
           article {
             ...baseArticleProps
             leadAsset {
-              ...leadAsset169
+              ...leadAsset169and32
             }
             listingAsset {
-              ...listingAsset169
+              ...listingAsset169and32
             }
             summary125: summary(maxCharCount: 125)
             summary800: summary(maxCharCount: 800)
@@ -626,15 +626,15 @@ export default gql`
         lead2 {
           headline
           leadAsset {
-            ...leadAsset169
+            ...leadAsset169and32
           }
           article {
             ...baseArticleProps
             leadAsset {
-              ...leadAsset169
+              ...leadAsset169and32
             }
             listingAsset {
-              ...listingAsset169
+              ...listingAsset169and32
             }
             summary125: summary(maxCharCount: 125)
             summary800: summary(maxCharCount: 800)
@@ -1271,15 +1271,15 @@ export default gql`
         lead1 {
           headline
           leadAsset {
-            ...leadAsset169
+            ...leadAsset169and32
           }
           article {
             ...baseArticleProps
             leadAsset {
-              ...leadAsset169
+              ...leadAsset169and32
             }
             listingAsset {
-              ...listingAsset169
+              ...listingAsset169and32
             }
             summary125: summary(maxCharCount: 125)
             summary800: summary(maxCharCount: 800)
@@ -1290,15 +1290,15 @@ export default gql`
         lead2 {
           headline
           leadAsset {
-            ...leadAsset169
+            ...leadAsset169and32
           }
           article {
             ...baseArticleProps
             leadAsset {
-              ...leadAsset169
+              ...leadAsset169and32
             }
             listingAsset {
-              ...listingAsset169
+              ...listingAsset169and32
             }
             summary125: summary(maxCharCount: 125)
             summary800: summary(maxCharCount: 800)

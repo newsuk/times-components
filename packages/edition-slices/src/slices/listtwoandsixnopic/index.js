@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { ListTwoAndSixNoPic } from "@times-components/slice-layout";
 import { ResponsiveSlice } from "../shared";
-import { TileL, TileC, TileAQ } from "../../tiles";
+import { TileL, TileC, TileAS } from "../../tiles";
 
 class ListTwoAndSixNoPicSlice extends Component {
   constructor(props) {
@@ -71,25 +71,55 @@ class ListTwoAndSixNoPicSlice extends Component {
     return (
       <ListTwoAndSixNoPic
         breakpoint={breakpoint}
-        lead1={<TileAQ onPress={onPress} tile={lead1} tileName="lead1" />}
-        lead2={<TileAQ onPress={onPress} tile={lead2} tileName="lead2" />}
+        lead1={<TileAS onPress={onPress} tile={lead1} tileName="lead1" />}
+        lead2={<TileAS onPress={onPress} tile={lead2} tileName="lead2" />}
         support1={
-          <TileL onPress={onPress} tile={support1} tileName="support1" />
+          <TileL
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={support1}
+            tileName="support1"
+          />
         }
         support2={
-          <TileL onPress={onPress} tile={support2} tileName="support2" />
+          <TileL
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={support2}
+            tileName="support2"
+          />
         }
         support3={
-          <TileL onPress={onPress} tile={support3} tileName="support3" />
+          <TileL
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={support3}
+            tileName="support3"
+          />
         }
         support4={
-          <TileL onPress={onPress} tile={support4} tileName="support4" />
+          <TileL
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={support4}
+            tileName="support4"
+          />
         }
         support5={
-          <TileL onPress={onPress} tile={support5} tileName="support5" />
+          <TileL
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={support5}
+            tileName="support5"
+          />
         }
         support6={
-          <TileL onPress={onPress} tile={support6} tileName="support6" />
+          <TileL
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={support6}
+            tileName="support6"
+          />
         }
       />
     );

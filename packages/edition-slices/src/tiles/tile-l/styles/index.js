@@ -1,6 +1,10 @@
-import { fonts, spacing } from "@times-components/styleguide";
+import {
+  fonts,
+  spacing,
+  editionBreakpoints
+} from "@times-components/styleguide";
 
-const styles = {
+const sharedStyles = {
   container: {
     flex: 1,
     paddingHorizontal: spacing(2),
@@ -14,4 +18,20 @@ const styles = {
   }
 };
 
-export default styles;
+const smallBreakpointStyles = {
+  ...sharedStyles
+};
+
+const mediumBreakpointStyles = {
+  ...sharedStyles,
+  headlineStyle: {
+    ...sharedStyles.headlineStyle,
+    fontSize: 18,
+    lineHeight: 18
+  }
+};
+
+export default breakpoint =>
+  breakpoint === editionBreakpoints.medium
+    ? mediumBreakpointStyles
+    : smallBreakpointStyles;
