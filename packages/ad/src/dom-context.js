@@ -2,6 +2,7 @@ import React, { PureComponent } from "react";
 import { View, Linking, Platform } from "react-native";
 import { WebView } from "react-native-webview";
 import { Viewport } from "@skele/components";
+import DeviceInfo from "react-native-device-info";
 import webviewEventCallbackSetup from "./utils/webview-event-callback-setup";
 import logger from "./utils/logger";
 import { propTypes, defaultProps } from "./dom-context-prop-types";
@@ -24,31 +25,16 @@ class DOMContext extends PureComponent {
       .catch(err => console.error("An error occurred", err)); // eslint-disable-line no-console
   }
 
-  handleMessageEvent = e => {
-    const { onRenderComplete, onRenderError, data } = this.props;
-    const json = e.nativeEvent.data;
-    if (json.indexOf("isTngMessage") === -1) {
-      // don't try and process postMessage events from 3rd party scripts
-      return;
-    }
-    const { type, detail } = JSON.parse(json);
-    switch (type) {
-      case "renderFailed":
-        onRenderError();
-        break;
-      case "unrulyLoaded": {
-        this.startWatchingViewport();
-        break;
-      }
-      case "renderComplete":
-        onRenderComplete();
-        break;
-      default:
-        if (data.debug) {
-          logger(type, detail);
-        }
-    }
-  };
+  componentDidMount() {
+    this.deviceInfo = {
+      applicationName: DeviceInfo.getApplicationName(),
+      buildNumber: DeviceInfo.getBuildNumber(),
+      bundleId: DeviceInfo.getBundleId(),
+      deviceId: DeviceInfo.getDeviceId(),
+      readableVersion: DeviceInfo.getReadableVersion(),
+      version: DeviceInfo.getVersion()
+    };
+  }
 
   handleNavigationStateChange = ({ url }) => {
     const { baseUrl } = this.props;
@@ -62,24 +48,51 @@ class DOMContext extends PureComponent {
     }
   };
 
-  outViewport() {
-    this.webView.injectJavascript(`
-      if (typeof unrulyViewportStatus === "function") {
-        unrulyViewportStatus({
-          visible: false
-        })
+  handleMessageEvent = e => {
+    const { onRenderComplete, onRenderError, data } = this.props;
+    const json = e.nativeEvent.data;
+    if (json.indexOf("isTngMessage") === -1) {
+      // don't try and process postMessage events from 3rd party scripts
+      return;
+    }
+    const { type, detail } = JSON.parse(json);
+    switch (type) {
+      case "renderFailed":
+        onRenderError();
+        break;
+      case "unrulyLoaded": {
+        break;
       }
-    `);
+      case "renderComplete":
+        onRenderComplete();
+        break;
+      default:
+        if (data.debug) {
+          logger(type, detail);
+        }
+    }
+  };
+
+  outViewport() {
+    this.webView.injectJavaScript(`
+        if (typeof unrulyViewportStatus === "function") {
+          unrulyViewportStatus(${JSON.stringify({
+            ...this.deviceInfo,
+            visible: false
+          })})
+        }
+      `);
   }
 
   inViewport() {
-    this.webView.injectJavascript(`
-      if (typeof unrulyViewportStatus === "function") {
-        unrulyViewportStatus({
-          visible: true
-        })
-      };
-    `);
+    this.webView.injectJavaScript(`
+        if (typeof unrulyViewportStatus === "function") {
+          unrulyViewportStatus(${JSON.stringify({
+            ...this.deviceInfo,
+            visible: true
+          })})
+        };
+      `);
   }
 
   render() {
