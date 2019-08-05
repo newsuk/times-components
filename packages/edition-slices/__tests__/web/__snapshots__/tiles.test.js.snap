@@ -979,7 +979,7 @@ exports[`24. tile w 1`] = `
       "flexDirection": "row",
       "paddingBottom": "15px",
       "paddingHorizontal": "20px",
-      "paddingTop": "10px",
+      "paddingTop": "15px",
     }
   }
   url="/article/123"
@@ -1014,8 +1014,8 @@ exports[`24. tile w 1`] = `
     </div>
   </div>
   <Image
-    aspectRatio={1.7777777777777777}
-    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+    aspectRatio={1.5}
+    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
   />
 </Link>
 `;
@@ -1751,101 +1751,5 @@ exports[`41. tile ar 1`] = `
       </div>
     </div>
   </div>
-</Link>
-`;
-
-exports[`tiles that change logic based on breakpoints TileW with teaser for wider screens 1`] = `
-<Link
-  linkStyle={
-    Object {
-      "flexDirection": "row",
-      "paddingBottom": "15px",
-      "paddingHorizontal": "20px",
-      "paddingTop": "10px",
-    }
-  }
-  url="/article/123"
->
-  <div>
-    <div>
-      <div>
-        <div>
-          <ArticleLabel
-            color="#005B8D"
-            isVideo={false}
-            title="label"
-          />
-        </div>
-        <h3
-          aria-level="3"
-          role="heading"
-        >
-          This is tile headline
-        </h3>
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
-      </div>
-    </div>
-  </div>
-  <Image
-    aspectRatio={1.7777777777777777}
-    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
-  />
-</Link>
-`;
-
-exports[`tiles that change logic based on breakpoints TileW without teaser for tablet 1`] = `
-<Link
-  linkStyle={
-    Object {
-      "flexDirection": "row",
-      "paddingBottom": "15px",
-      "paddingHorizontal": "20px",
-      "paddingTop": "10px",
-    }
-  }
-  url="/article/123"
->
-  <div>
-    <div>
-      <div>
-        <div>
-          <ArticleLabel
-            color="#005B8D"
-            isVideo={false}
-            title="label"
-          />
-        </div>
-        <h3
-          aria-level="3"
-          role="heading"
-        >
-          This is tile headline
-        </h3>
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
-      </div>
-    </div>
-  </div>
-  <Image
-    aspectRatio={1.7777777777777777}
-    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
-  />
 </Link>
 `;
