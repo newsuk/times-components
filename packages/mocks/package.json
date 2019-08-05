@@ -5,7 +5,7 @@
   "main": "dist/index",
   "dev": "src/index",
   "scripts": {
-    "depcheck": "depcheck --ignores='babel-*,depcheck,eslint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
+    "depcheck": "depcheck --ignores='@babel/*,babel-*,depcheck,eslint,jest,prettier,webpack*,react-native' --ignore-bin-package=false --skip-missing",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff && yarn depcheck",
@@ -34,8 +34,10 @@
     "@times-components/styleguide": "3.28.37"
   },
   "devDependencies": {
+    "@babel/cli": "7.4.4",
     "@times-components/eslint-config-thetimes": "0.8.12",
-    "babel-cli": "6.26.0",
+    "babel-plugin-add-react-displayname": "0.0.5",
+    "babel-plugin-styled-components": "1.10.0",
     "eslint": "5.9.0",
     "jest": "24.8.0",
     "prettier": "1.14.3",
