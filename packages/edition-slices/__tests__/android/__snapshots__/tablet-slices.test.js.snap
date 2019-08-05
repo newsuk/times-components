@@ -96,21 +96,25 @@ exports[`5. lead two no pic and two - medium 1`] = `
   <View>
     <View>
       <TileX
+        breakpoint="medium"
         tileName="lead1"
       />
       <View />
       <TileY
+        breakpoint="medium"
         tileName="lead2"
       />
     </View>
     <View />
     <View>
-      <TileD
-        tileName="support1"
+      <TileE
+        breakpoint="medium"
+        tileName="support2"
       />
       <View />
-      <TileZ
-        tileName="support2"
+      <TileD
+        breakpoint="medium"
+        tileName="support1"
       />
     </View>
   </View>

@@ -2006,6 +2006,13 @@ exports[`25. tile x 1`] = `
   line-height: 25px;
   padding-bottom: 5px;
 }
+
+.IS3 {
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 </style>
 
 <Link
@@ -2018,7 +2025,7 @@ exports[`25. tile x 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n"
+    className="css-view-1dbjc4n IS3"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"

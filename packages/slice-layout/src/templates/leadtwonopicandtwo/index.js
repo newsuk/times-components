@@ -39,17 +39,17 @@ const LeadTwoNoPicAndTwoSlice = ({
     );
   }
 
-  if (breakpoint === editionBreakpoints.small) {
-    return <VerticalLayout tiles={[lead1, lead2, support1, support2]} />;
+  if (breakpoint === editionBreakpoints.medium) {
+    return (
+      <View style={styles.container}>
+        <VerticalLayout style={styles.column} tiles={[lead1, lead2]} />
+        <ItemColSeparator style={styles.colSeparatorStyle} />
+        <VerticalLayout style={styles.column} tiles={[support1, support2]} />
+      </View>
+    );
   }
 
-  return (
-    <View style={styles.container}>
-      <VerticalLayout style={styles.column} tiles={[lead1, lead2]} />
-      <ItemColSeparator />
-      <VerticalLayout style={styles.column} tiles={[support1, support2]} />
-    </View>
-  );
+  return <VerticalLayout tiles={[lead1, lead2, support1, support2]} />;
 };
 
 LeadTwoNoPicAndTwoSlice.propTypes = propTypes;

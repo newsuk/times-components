@@ -87,16 +87,22 @@ exports[`2. lead two no pic and two - medium 1`] = `
   style={
     Object {
       "WebkitBoxDirection": "normal",
+      "WebkitBoxFlex": 1,
       "WebkitBoxOrient": "horizontal",
-      "WebkitBoxPack": "center",
+      "WebkitFlexBasis": "0%",
       "WebkitFlexDirection": "row",
-      "WebkitJustifyContent": "center",
+      "WebkitFlexGrow": 1,
+      "WebkitFlexShrink": 1,
+      "flexBasis": "0%",
       "flexDirection": "row",
-      "justifyContent": "center",
+      "flexGrow": 1,
+      "flexShrink": 1,
+      "marginLeft": "20px",
+      "marginRight": "20px",
       "msFlexDirection": "row",
-      "msFlexPack": "center",
-      "paddingLeft": "10px",
-      "paddingRight": "10px",
+      "msFlexNegative": 1,
+      "msFlexPositive": 1,
+      "msFlexPreferredSize": "0%",
     }
   }
 >
@@ -150,8 +156,8 @@ exports[`2. lead two no pic and two - medium 1`] = `
         "borderRightWidth": "1px",
         "borderTopColor": "rgba(219,219,219,1.00)",
         "borderTopStyle": "solid",
-        "marginBottom": "10px",
-        "marginTop": "10px",
+        "marginBottom": "15px",
+        "marginTop": "15px",
       }
     }
   />
@@ -207,10 +213,10 @@ exports[`3. lead two no pic and two - wide 1`] = `
       "WebkitJustifyContent": "center",
       "flexDirection": "row",
       "justifyContent": "center",
+      "marginLeft": "10px",
+      "marginRight": "10px",
       "msFlexDirection": "row",
       "msFlexPack": "center",
-      "paddingLeft": "10px",
-      "paddingRight": "10px",
     }
   }
 >
@@ -331,10 +337,10 @@ exports[`4. lead two no pic and two - huge 1`] = `
       "WebkitJustifyContent": "center",
       "flexDirection": "row",
       "justifyContent": "center",
+      "marginLeft": "10px",
+      "marginRight": "10px",
       "msFlexDirection": "row",
       "msFlexPack": "center",
-      "paddingLeft": "10px",
-      "paddingRight": "10px",
     }
   }
 >
