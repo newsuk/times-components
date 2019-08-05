@@ -12,7 +12,7 @@
     "lint": "yarn prettier:diff && yarn depcheck",
     "fmt": "prettier --write 'src/*.*'",
     "prettier:diff": "prettier --list-different 'src/*.*'",
-    "depcheck": "depcheck --ignores='babel-*,depcheck,jest,prettier,@times-components/schema,graphql-codegen-typescript-template,@types/jest,graphql-code-generator,ts-jest,typescript,typings' --ignore-bin-package=false --skip-missing"
+    "depcheck": "depcheck --ignores='@babel/*,babel-*,depcheck,jest,prettier,@times-components/schema,graphql-codegen-typescript-template,@types/jest,graphql-code-generator,ts-jest,typescript,typings' --ignore-bin-package=false --skip-missing"
   },
   "repository": {
     "type": "git",

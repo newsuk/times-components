@@ -5,7 +5,7 @@
   "main": "dist/",
   "dev": "src/",
   "scripts": {
-    "depcheck": "depcheck --ignores='babel-*,depcheck,eslint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
+    "depcheck": "depcheck --ignores='@babel/*,babel-*,depcheck,eslint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff && yarn depcheck",
@@ -55,7 +55,7 @@
     "@times-components/test-utils": "2.3.0",
     "@times-components/text-flow": "0.2.3",
     "@times-components/webpack-configurator": "2.0.22",
-    "babel-core": "^7.0.0-bridge.0",
+    "@babel/core": "7.4.4",
     "babel-jest": "24.8.0",
     "babel-plugin-styled-components": "1.10.0",
     "eslint": "5.9.0",

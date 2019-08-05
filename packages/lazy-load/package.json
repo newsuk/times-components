@@ -5,7 +5,7 @@
   "main": "dist/lazy-load",
   "dev": "src/lazy-load",
   "scripts": {
-    "depcheck": "depcheck --ignores='babel-*,depcheck,eslint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
+    "depcheck": "depcheck --ignores='@babel/*,babel-*,depcheck,eslint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
     "lint": "eslint . && yarn prettier:diff && yarn depcheck",
@@ -40,7 +40,7 @@
     "@times-components/storybook": "4.0.24",
     "@times-components/test-utils": "2.3.0",
     "@times-components/webpack-configurator": "2.0.22",
-    "babel-core": "^7.0.0-bridge.0",
+    "@babel/core": "7.4.4",
     "babel-jest": "24.8.0",
     "enzyme": "3.9.0",
     "eslint": "5.9.0",

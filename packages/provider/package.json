@@ -6,7 +6,7 @@
   "scripts": {
     "prettier:diff": "prettier --list-different '**/*.*'",
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
-    "depcheck": "depcheck --ignores='babel-*,depcheck,**/eslint*,graphql,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
+    "depcheck": "depcheck --ignores='@babel/*,babel-*,depcheck,**/eslint*,graphql,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
     "lint": "eslint . && yarn prettier:diff && yarn depcheck",
     "test:web": "jest --config='./__tests__/web/jest.config.js'",
     "test": "yarn test:web && jest --config='./__tests__/jest.config.js'",
@@ -41,7 +41,7 @@
     "@times-components/storybook": "4.0.24",
     "@times-components/test-utils": "2.3.0",
     "@times-components/webpack-configurator": "2.0.22",
-    "babel-core": "^7.0.0-bridge.0",
+    "@babel/core": "7.4.4",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.5",
     "babel-plugin-add-react-displayname": "0.0.5",
