@@ -10,7 +10,12 @@ import styles from "./styles";
 import WithoutWhiteSpace from "../shared/without-white-space";
 
 const TileAE = ({ onPress, tile }) => (
-  <TileLink onPress={onPress} style={styles.container} tile={tile}>
+  <TileLink
+    onPress={onPress}
+    style={styles.container}
+    tile={tile}
+    starStyle={styles.star}
+  >
     <WithoutWhiteSpace
       render={whiteSpaceHeight => (
         <TileSummary

@@ -378,29 +378,33 @@ exports[`14. secondary two no pic and two - medium 1`] = `
 <View>
   <View>
     <View>
-      <TileAE
-        tileName="secondary1"
-      />
+      <View>
+        <TileAE
+          tileName="secondary1"
+        />
+      </View>
+      <View />
+      <View>
+        <TileAE
+          tileName="secondary2"
+        />
+      </View>
     </View>
     <View />
     <View>
-      <TileAE
-        tileName="secondary2"
-      />
-    </View>
-  </View>
-  <View />
-  <View>
-    <View>
-      <TileG
-        tileName="support1"
-      />
-    </View>
-    <View />
-    <View>
-      <TileG
-        tileName="support2"
-      />
+      <View>
+        <TileG
+          breakpoint="medium"
+          tileName="support1"
+        />
+      </View>
+      <View />
+      <View>
+        <TileG
+          breakpoint="medium"
+          tileName="support2"
+        />
+      </View>
     </View>
   </View>
 </View>

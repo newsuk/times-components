@@ -1011,86 +1011,95 @@ exports[`14. secondary two no pic and two - medium 1`] = `
     style={
       Object {
         "flex": 1,
-        "flexDirection": "row",
-        "marginHorizontal": 10,
+        "marginHorizontal": 20,
       }
     }
   >
     <View
       style={
         Object {
-          "width": "50%",
+          "flex": 1,
+          "flexDirection": "row",
         }
       }
     >
-      <TileAE />
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <TileAE />
+      </View>
+      <View
+        style={
+          Object {
+            "borderColor": "#DBDBDB",
+            "borderRightWidth": 1,
+            "borderStyle": "solid",
+            "marginTop": 15,
+            "marginVertical": 10,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <TileAE />
+      </View>
     </View>
     <View
       style={
         Object {
+          "borderBottomWidth": 1,
           "borderColor": "#DBDBDB",
-          "borderRightWidth": 1,
           "borderStyle": "solid",
-          "marginVertical": 10,
+          "marginHorizontal": 10,
         }
       }
     />
     <View
       style={
         Object {
-          "width": "50%",
+          "flex": 1,
+          "flexDirection": "row",
         }
       }
     >
-      <TileAE />
-    </View>
-  </View>
-  <View
-    style={
-      Object {
-        "borderBottomWidth": 1,
-        "borderColor": "#DBDBDB",
-        "borderStyle": "solid",
-        "marginHorizontal": 10,
-      }
-    }
-  />
-  <View
-    style={
-      Object {
-        "flex": 1,
-        "flexDirection": "row",
-        "marginHorizontal": 10,
-      }
-    }
-  >
-    <View
-      style={
-        Object {
-          "width": "50%",
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
         }
-      }
-    >
-      <TileG />
-    </View>
-    <View
-      style={
-        Object {
-          "borderColor": "#DBDBDB",
-          "borderRightWidth": 1,
-          "borderStyle": "solid",
-          "marginVertical": 10,
+      >
+        <TileG />
+      </View>
+      <View
+        style={
+          Object {
+            "borderColor": "#DBDBDB",
+            "borderRightWidth": 1,
+            "borderStyle": "solid",
+            "marginBottom": 15,
+            "marginVertical": 10,
+          }
         }
-      }
-    />
-    <View
-      style={
-        Object {
-          "width": "50%",
+      />
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
         }
-      }
-    >
-      <TileG />
+      >
+        <TileG />
+      </View>
     </View>
   </View>
 </View>

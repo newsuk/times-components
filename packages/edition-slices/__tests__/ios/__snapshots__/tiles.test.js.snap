@@ -1252,7 +1252,7 @@ exports[`30. tile ae 1`] = `
     Object {
       "flex": 1,
       "paddingHorizontal": 10,
-      "paddingTop": 10,
+      "paddingTop": 15,
     }
   }
   url="/article/123"

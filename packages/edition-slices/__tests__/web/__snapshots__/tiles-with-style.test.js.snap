@@ -521,7 +521,6 @@ exports[`7. tile g 1`] = `
   -webkit-justify-content: center;
   justify-content: center;
   padding-bottom: 0px;
-  padding-right: 10px;
   padding-left: 10px;
   padding-top: 5px;
   width: 70%;
@@ -2425,7 +2424,7 @@ exports[`30. tile ae 1`] = `
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .IS1 {
@@ -2452,7 +2451,7 @@ exports[`30. tile ae 1`] = `
     Object {
       "flex": 1,
       "paddingHorizontal": "10px",
-      "paddingTop": "10px",
+      "paddingTop": "15px",
     }
   }
   url="/article/123"
@@ -2477,7 +2476,7 @@ exports[`30. tile ae 1`] = `
         </div>
         <h3
           aria-level="3"
-          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
+          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-15d164r IS1 S2"
           role="heading"
         >
           This is tile headline
