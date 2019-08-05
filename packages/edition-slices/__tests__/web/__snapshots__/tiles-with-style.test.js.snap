@@ -3085,14 +3085,10 @@ exports[`38. tile ad 1`] = `
 }
 
 .IS1 {
-  width: 30%;
-}
-
-.IS2 {
   font-size: 20px;
 }
 
-.IS3 {
+.IS2 {
   padding-right: 10px;
   padding-left: 10px;
   width: 70%;
@@ -3108,13 +3104,8 @@ exports[`38. tile ad 1`] = `
   }
   url="/article/123"
 >
-  <Image
-    aspectRatio={1.5}
-    className="IS1"
-    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
-  />
   <div
-    className="css-view-1dbjc4n IS3"
+    className="css-view-1dbjc4n IS2"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
@@ -3127,7 +3118,7 @@ exports[`38. tile ad 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-lineHeight-rjixqe r-marginBottom-d0pm55 IS2 S2"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-lineHeight-rjixqe r-marginBottom-d0pm55 IS1 S2"
       role="heading"
     >
       This is tile headline
@@ -3183,8 +3174,8 @@ exports[`39. tile ac 1`] = `
   justify-content: center;
   padding-right: 40px;
   padding-left: 40px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   -ms-flex-align: center;
   -webkit-box-align: center;
   -ms-flex-positive: 1;

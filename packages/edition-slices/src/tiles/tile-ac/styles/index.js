@@ -34,6 +34,6 @@ export default breakpoint => ({
     flex: 1,
     justifyContent: "center",
     paddingHorizontal: spacing(8),
-    paddingVertical: spacing(4)
+    paddingVertical: spacing(3)
   }
 });
