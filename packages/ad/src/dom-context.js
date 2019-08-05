@@ -95,26 +95,6 @@ class DOMContext extends PureComponent {
       `);
   }
 
-  outViewport() {
-    this.webView.injectJavascript(`
-      if (typeof unrulyViewportStatus === "function") {
-        unrulyViewportStatus({
-          visible: false
-        })
-      }
-    `);
-  }
-
-  inViewport() {
-    this.webView.injectJavascript(`
-      if (typeof unrulyViewportStatus === "function") {
-        unrulyViewportStatus({
-          visible: true
-        })
-      };
-    `);
-  }
-
   render() {
     const { baseUrl, data, init, width, height } = this.props;
     // NOTE: if this generated code is not working, and you don't know why
