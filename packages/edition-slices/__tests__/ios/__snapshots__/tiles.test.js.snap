@@ -54,35 +54,41 @@ exports[`2. tile b 1`] = `
 >
   <View>
     <View>
-      <ArticleLabel
-        color="#005B8D"
-        isVideo={false}
-        title="label"
-      />
+      <View>
+        <View>
+          <ArticleLabel
+            color="#005B8D"
+            isVideo={false}
+            title="label"
+          />
+        </View>
+        <Text
+          accessibilityRole="header"
+          aria-level="3"
+        >
+          This is tile headline
+        </Text>
+        <Text
+          numberOfLines={2}
+        >
+          <Text>
+            
+            Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+            ...
+          </Text>
+        </Text>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+        />
+      </View>
     </View>
-    <Text
-      accessibilityRole="header"
-      aria-level="3"
-    >
-      This is tile headline
-    </Text>
-    <Text>
-      <Text>
-        
-        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-        ...
-      </Text>
-    </Text>
-    <ArticleFlags
-      flags={
-        Array [
-          Object {
-            "expiryTime": "2030-03-14T12:00:00.000Z",
-            "type": "EXCLUSIVE",
-          },
-        ]
-      }
-    />
   </View>
 </Link>
 `;
@@ -1713,35 +1719,41 @@ exports[`41. tile ar 1`] = `
   </View>
   <View>
     <View>
-      <ArticleLabel
-        color="#005B8D"
-        isVideo={false}
-        title="label"
-      />
+      <View>
+        <View>
+          <ArticleLabel
+            color="#005B8D"
+            isVideo={false}
+            title="label"
+          />
+        </View>
+        <Text
+          accessibilityRole="header"
+          aria-level="3"
+        >
+          This is tile headline
+        </Text>
+        <Text
+          numberOfLines={2}
+        >
+          <Text>
+            
+            Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+            ...
+          </Text>
+        </Text>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+        />
+      </View>
     </View>
-    <Text
-      accessibilityRole="header"
-      aria-level="3"
-    >
-      This is tile headline
-    </Text>
-    <Text>
-      <Text>
-        
-        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-        ...
-      </Text>
-    </Text>
-    <ArticleFlags
-      flags={
-        Array [
-          Object {
-            "expiryTime": "2030-03-14T12:00:00.000Z",
-            "type": "EXCLUSIVE",
-          },
-        ]
-      }
-    />
   </View>
 </Link>
 `;

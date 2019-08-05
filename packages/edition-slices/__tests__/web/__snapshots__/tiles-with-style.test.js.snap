@@ -104,6 +104,23 @@ exports[`2. tile b 1`] = `
   font-size: 25px;
   line-height: 25px;
 }
+
+.IS2 {
+  -webkit-line-clamp: 2;
+}
+
+.IS3 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
 </style>
 
 <Link
@@ -117,45 +134,53 @@ exports[`2. tile b 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n"
+    className="css-view-1dbjc4n IS3"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+      className="css-view-1dbjc4n"
     >
-      <ArticleLabel
-        color="#005B8D"
-        isVideo={false}
-        title="label"
-      />
-    </div>
-    <h3
-      aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
-      role="heading"
-    >
-      This is tile headline
-    </h3>
-    <div
-      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
-    >
-      <span
-        className="css-text-901oao css-textHasAncestor-16my406"
+      <div
+        className="css-view-1dbjc4n"
       >
-        
-        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-        ...
-      </span>
+        <div
+          className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+        >
+          <ArticleLabel
+            color="#005B8D"
+            isVideo={false}
+            title="label"
+          />
+        </div>
+        <h3
+          aria-level="3"
+          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
+          role="heading"
+        >
+          This is tile headline
+        </h3>
+        <div
+          className="css-text-901oao css-textMultiLine-cens5h r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r IS2 S3"
+        >
+          <span
+            className="css-text-901oao css-textHasAncestor-16my406"
+          >
+            
+            Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+            ...
+          </span>
+        </div>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+        />
+      </div>
     </div>
-    <ArticleFlags
-      flags={
-        Array [
-          Object {
-            "expiryTime": "2030-03-14T12:00:00.000Z",
-            "type": "EXCLUSIVE",
-          },
-        ]
-      }
-    />
   </div>
 </Link>
 `;
@@ -3353,6 +3378,23 @@ exports[`41. tile ar 1`] = `
 .IS2 {
   font-size: 20px;
 }
+
+.IS3 {
+  -webkit-line-clamp: 2;
+}
+
+.IS4 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
 </style>
 
 <Link
@@ -3374,45 +3416,53 @@ exports[`41. tile ar 1`] = `
     />
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="css-view-1dbjc4n IS4"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
+      className="css-view-1dbjc4n"
     >
-      <ArticleLabel
-        color="#005B8D"
-        isVideo={false}
-        title="label"
-      />
-    </div>
-    <h3
-      aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-lineHeight-rjixqe r-marginBottom-d0pm55 IS2 S3"
-      role="heading"
-    >
-      This is tile headline
-    </h3>
-    <div
-      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S4"
-    >
-      <span
-        className="css-text-901oao css-textHasAncestor-16my406"
+      <div
+        className="css-view-1dbjc4n"
       >
-        
-        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-        ...
-      </span>
+        <div
+          className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
+        >
+          <ArticleLabel
+            color="#005B8D"
+            isVideo={false}
+            title="label"
+          />
+        </div>
+        <h3
+          aria-level="3"
+          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-lineHeight-rjixqe r-marginBottom-d0pm55 IS2 S3"
+          role="heading"
+        >
+          This is tile headline
+        </h3>
+        <div
+          className="css-text-901oao css-textMultiLine-cens5h r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r IS3 S4"
+        >
+          <span
+            className="css-text-901oao css-textHasAncestor-16my406"
+          >
+            
+            Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+            ...
+          </span>
+        </div>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+        />
+      </div>
     </div>
-    <ArticleFlags
-      flags={
-        Array [
-          Object {
-            "expiryTime": "2030-03-14T12:00:00.000Z",
-            "type": "EXCLUSIVE",
-          },
-        ]
-      }
-    />
   </div>
 </Link>
 `;
