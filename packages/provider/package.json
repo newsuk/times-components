@@ -1,6 +1,6 @@
 {
   "name": "@times-components/provider",
-  "version": "1.17.26",
+  "version": "1.17.27",
   "main": "dist/provider",
   "dev": "src/provider",
   "scripts": {
@@ -37,7 +37,7 @@
     "@times-components/eslint-config-thetimes": "0.8.12",
     "@times-components/jest-configurator": "2.5.14",
     "@times-components/jest-serializer": "3.2.10",
-    "@times-components/provider-test-tools": "1.17.30",
+    "@times-components/provider-test-tools": "1.17.31",
     "@times-components/storybook": "4.0.24",
     "@times-components/test-utils": "2.3.0",
     "@times-components/webpack-configurator": "2.0.22",
