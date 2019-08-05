@@ -1912,6 +1912,13 @@ exports[`37. tile ap 1`] = `
 
 exports[`38. tile ad 1`] = `
 <Link>
+  <Image
+    style={
+      Object {
+        "width": "30%",
+      }
+    }
+  />
   <View
     style={
       Object {

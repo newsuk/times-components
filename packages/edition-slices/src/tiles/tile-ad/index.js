@@ -17,7 +17,7 @@ const TileAD = ({ onPress, tile, breakpoint }) => {
 
   return (
     <TileLink onPress={onPress} style={container} tile={tile}>
-      {breakpoint === editionBreakpoints.medium && (
+      {breakpoint !== editionBreakpoints.medium && (
         <Image
           aspectRatio={3 / 2}
           relativeWidth={crop.relativeWidth}
