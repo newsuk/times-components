@@ -32,8 +32,8 @@ const TileW = ({ onPress, tile, breakpoint }) => {
             summaryStyle={styles.summary}
             tile={tile}
             withStar
+            starStyle={styles.star}
             whiteSpaceHeight={whiteSpaceHeight}
-            style={{borderWidth: 1, borderColor: 'green'}}
           />
         )}
       />

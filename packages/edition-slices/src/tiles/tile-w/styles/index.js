@@ -50,6 +50,13 @@ const mediumStyles = {
   },
   imageContainer: {
     width: "48.5%"
+  },
+  star: {
+    starButton: {
+      position: "absolute",
+      right: -spacing(1),
+      bottom: -spacing(1)
+    }
   }
 };
 
