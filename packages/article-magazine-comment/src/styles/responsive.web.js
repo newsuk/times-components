@@ -57,7 +57,7 @@ export const HeaderContainer = styled(View)`
   }
 `;
 
-export const HeadlineContainer = styled(Text)`
+export const HeadlineContainer = styled.h1`
   @media (min-width: ${breakpoints.medium}px) {
     font-size: ${fontSizes.articleHeadline}px;
     line-height: 50px;

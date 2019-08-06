@@ -7,7 +7,7 @@ import {
   fontSizes
 } from "@times-components/styleguide";
 
-export const HeadlineContainer = styled(Text)`
+export const HeadlineContainer = styled.h1`
   font-size: ${fontSizes.headline}px;
   color: ${colours.functional.brandColour};
   margin-bottom: 8px;
