@@ -17,15 +17,17 @@ const TileAD = ({ onPress, tile, breakpoint }) => {
 
   return (
     <TileLink onPress={onPress} style={container} tile={tile}>
-      <Image
-        aspectRatio={3 / 2}
-        relativeWidth={crop.relativeWidth}
-        relativeHeight={crop.relativeHeight}
-        relativeHorizontalOffset={crop.relativeHorizontalOffset}
-        relativeVerticalOffset={crop.relativeVerticalOffset}
-        style={imageContainer}
-        uri={crop.url}
-      />
+      {breakpoint !== editionBreakpoints.medium && (
+        <Image
+          aspectRatio={3 / 2}
+          relativeWidth={crop.relativeWidth}
+          relativeHeight={crop.relativeHeight}
+          relativeHorizontalOffset={crop.relativeHorizontalOffset}
+          relativeVerticalOffset={crop.relativeVerticalOffset}
+          style={imageContainer}
+          uri={crop.url}
+        />
+      )}
       <TileSummary
         headlineStyle={headline}
         style={summaryContainer}

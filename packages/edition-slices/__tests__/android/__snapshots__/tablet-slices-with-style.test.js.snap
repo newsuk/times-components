@@ -855,14 +855,14 @@ exports[`12. lead one and four slice - medium 1`] = `
       Object {
         "flex": 1,
         "flexDirection": "row",
-        "paddingHorizontal": 10,
+        "marginHorizontal": 20,
+        "paddingVertical": 5,
       }
     }
   >
     <View
       style={
         Object {
-          "padding": 10,
           "width": "50%",
         }
       }
@@ -2004,14 +2004,14 @@ exports[`27. lead one and four slice - wide 1`] = `
       Object {
         "flex": 1,
         "flexDirection": "row",
-        "paddingHorizontal": 10,
+        "marginHorizontal": 20,
+        "paddingVertical": 5,
       }
     }
   >
     <View
       style={
         Object {
-          "padding": 10,
           "width": "50%",
         }
       }
@@ -3338,14 +3338,14 @@ exports[`42. lead one and four slice - huge 1`] = `
         Object {
           "flex": 1,
           "flexDirection": "row",
-          "paddingHorizontal": 10,
+          "marginHorizontal": 20,
+          "paddingVertical": 5,
         }
       }
     >
       <View
         style={
           Object {
-            "padding": 10,
             "width": "50%",
           }
         }

@@ -1276,10 +1276,6 @@ exports[`11. secondary two and two - medium 1`] = `
 exports[`12. lead one and four slice - medium 1`] = `
 <style>
 .IS1 {
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
   width: 50%;
 }
 
@@ -1353,8 +1349,10 @@ exports[`12. lead one and four slice - medium 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-right: 10px;
-  padding-left: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -3097,10 +3095,6 @@ exports[`26. secondary two and two - wide 1`] = `
 exports[`27. lead one and four slice - wide 1`] = `
 <style>
 .IS1 {
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
   width: 50%;
 }
 
@@ -3174,8 +3168,10 @@ exports[`27. lead one and four slice - wide 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-right: 10px;
-  padding-left: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -4918,10 +4914,6 @@ exports[`41. secondary two and two - huge 1`] = `
 exports[`42. lead one and four slice - huge 1`] = `
 <style>
 .IS1 {
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
   width: 50%;
 }
 
@@ -4995,8 +4987,10 @@ exports[`42. lead one and four slice - huge 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-right: 10px;
-  padding-left: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;

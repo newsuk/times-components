@@ -3183,8 +3183,8 @@ exports[`39. tile ac 1`] = `
   justify-content: center;
   padding-right: 40px;
   padding-left: 40px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   -ms-flex-align: center;
   -webkit-box-align: center;
   -ms-flex-positive: 1;
@@ -3200,6 +3200,7 @@ exports[`39. tile ac 1`] = `
   linkStyle={
     Object {
       "flex": 1,
+      "padding": "10px",
     }
   }
   url="/article/123"

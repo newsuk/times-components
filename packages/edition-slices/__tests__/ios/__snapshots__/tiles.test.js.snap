@@ -1615,6 +1615,7 @@ exports[`39. tile ac 1`] = `
   linkStyle={
     Object {
       "flex": 1,
+      "padding": 10,
     }
   }
   url="/article/123"

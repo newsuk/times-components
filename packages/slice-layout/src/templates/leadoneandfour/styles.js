@@ -4,10 +4,10 @@ const mediumBreakpointStyles = {
   container: {
     flex: 1,
     flexDirection: "row",
-    paddingHorizontal: spacing(2)
+    marginHorizontal: spacing(4),
+    paddingVertical: spacing(1)
   },
   leadContainer: {
-    padding: spacing(2),
     width: "50%"
   },
   supportContainer: {

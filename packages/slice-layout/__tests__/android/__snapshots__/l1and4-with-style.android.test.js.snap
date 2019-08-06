@@ -58,14 +58,14 @@ exports[`2. lead one and four - medium 1`] = `
     Object {
       "flex": 1,
       "flexDirection": "row",
-      "paddingHorizontal": 10,
+      "marginHorizontal": 20,
+      "paddingVertical": 5,
     }
   }
 >
   <View
     style={
       Object {
-        "padding": 10,
         "width": "50%",
       }
     }
