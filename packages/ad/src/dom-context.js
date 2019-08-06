@@ -11,6 +11,13 @@ import { calculateViewportVisible } from "./styles/index";
 const ViewportAwareView = Viewport.Aware(View);
 
 class DOMContext extends PureComponent {
+  constructor(props) {
+    super(props)
+    this.state = {
+      loaded: false
+    }
+  }
+
   static hasDifferentOrigin(url, baseUrl) {
     return url && url.indexOf(baseUrl) === -1 && url.indexOf("://") > -1;
   }
@@ -52,7 +59,7 @@ class DOMContext extends PureComponent {
   handleMessageEvent = e => {
     const { onRenderComplete, onRenderError, data } = this.props;
     const json = e.nativeEvent.data;
-    if (json.indexOf("isTngMessage") === -1) {
+    if (json.indexOf("isTngMessage") === -1 && json.indexOf('unrulyLoaded') === -1) {
       // don't try and process postMessage events from 3rd party scripts
       return;
     }
@@ -62,6 +69,9 @@ class DOMContext extends PureComponent {
         onRenderError();
         break;
       case "unrulyLoaded": {
+        if (this.state.loaded && this.isVisible) {
+          this.inViewport()
+        }
         break;
       }
       case "renderComplete":
@@ -75,19 +85,24 @@ class DOMContext extends PureComponent {
   };
 
   outViewport = () => {
+    this.isVisible = false
     if (this.webView) {
       this.webView.injectJavaScript(`
           if (typeof unrulyViewportStatus === "function") {
-            unrulyViewportStatus(${JSON.stringify({
-              ...this.deviceInfo,
-              visible: false
-            })})
-          }
+            unrulyViewportStatus(false);
+          };
         `);
     }
   };
 
+  loadAd = () => {
+    this.setState({
+      loaded: true
+    })
+  }
+
   inViewport = () => {
+    this.isVisible = true
     if (this.webView) {
       this.webView.injectJavaScript(`
           if (typeof unrulyViewportStatus === "function") {
@@ -145,7 +160,10 @@ class DOMContext extends PureComponent {
         <body>
           <div></div>
           <script>
-            window.postMessage = function(data) {window.ReactNativeWebView.postMessage(data);};
+            window.postMessage = function(data) {
+              var message = typeof data === "string" ? data : JSON.stringify(data);
+              window.ReactNativeWebView.postMessage(message);
+            };
             (${webviewEventCallbackSetup})({window});
           </script>
           <script>
@@ -161,13 +179,14 @@ class DOMContext extends PureComponent {
       </html>
     `;
     return (
-      <View
+      <ViewportAwareView
+        onViewportEnter={this.loadAd}
         style={{
           height,
           width
         }}
       >
-        <WebView
+        {this.state.loaded && <WebView
           onMessage={this.handleMessageEvent}
           onNavigationStateChange={this.handleNavigationStateChange}
           originWhitelist={
@@ -180,14 +199,14 @@ class DOMContext extends PureComponent {
             baseUrl,
             html
           }}
-          style={{ position: "absolute" }}
-        />
-        <ViewportAwareView
+          style={{ position: "absolute", width, height }}
+        />}
+        {height !== 0 && <ViewportAwareView
           onViewportEnter={this.inViewport}
           onViewportLeave={this.outViewport}
           style={calculateViewportVisible(height)}
-        />
-      </View>
+        />}
+      </ViewportAwareView>
     );
   }
 }
