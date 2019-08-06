@@ -75,6 +75,7 @@ exports[`6. article meta uses default section colour 1`] = `
           },
         ]
       }
+      centered={true}
       color="#1D1D1B"
     />
   </View>

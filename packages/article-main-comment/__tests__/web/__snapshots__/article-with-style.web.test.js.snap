@@ -426,8 +426,7 @@ exports[`full article with style 1`] = `
   -webkit-align-items: center;
   -webkit-box-align: center;
   align-items: center;
-  margin-bottom: 15px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   padding-top: 35px;
 }
 
@@ -520,7 +519,7 @@ exports[`full article with style 1`] = `
         className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
       >
         <div
-          className="c3 responsiveweb__HeaderContainer-tglil3-3 c3 css-view-1dbjc4n r-alignItems-1awozwy r-marginBottom-ku1wi2 r-paddingBottom-k8qxaj r-paddingLeft-1hfyk0a r-paddingRight-1qfoi16 r-paddingTop-elmauq S7"
+          className="c3 responsiveweb__HeaderContainer-tglil3-3 c3 css-view-1dbjc4n r-alignItems-1awozwy r-paddingBottom-19yat4t r-paddingLeft-1hfyk0a r-paddingRight-1qfoi16 r-paddingTop-elmauq S7"
         >
           <div
             className="c4 responsiveweb__AuthorImageContainer-tglil3-0 c4 css-view-1dbjc4n r-marginBottom-eektet S1"

@@ -25,9 +25,15 @@ class TileSummary extends Component {
   }
 
   renderContent() {
-    const { summary, summaryStyle } = this.props;
+    const { summary, summaryStyle, whiteSpaceHeight } = this.props;
 
-    return <ArticleSummaryContent ast={summary} style={summaryStyle} />;
+    return (
+      <ArticleSummaryContent
+        ast={summary}
+        style={summaryStyle}
+        whiteSpaceHeight={whiteSpaceHeight}
+      />
+    );
   }
 
   renderFlags() {

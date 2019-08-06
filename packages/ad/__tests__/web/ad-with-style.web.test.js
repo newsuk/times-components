@@ -122,6 +122,24 @@ const tests = [
 
       expect(AdComponent).toMatchSnapshot();
     }
+  },
+  {
+    name: "returns nothing if user has AdBlock",
+    test: () => {
+      window.hasAdBlock = true;
+
+      const wrapper = mount(
+        <AdComposer adConfig={adConfig}>
+          <Fragment>
+            <Ad {...props} slotName="header" />
+          </Fragment>
+        </AdComposer>
+      );
+
+      const AdComponent = wrapper.find("Ad");
+
+      expect(AdComponent).toMatchSnapshot();
+    }
   }
 ];
 

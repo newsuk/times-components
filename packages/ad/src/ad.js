@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React, { Component } from "react";
 import { Subscriber } from "react-broadcast";
 import { Platform, View } from "react-native";
@@ -26,11 +27,22 @@ class Ad extends Component {
 
     this.prebidConfig = prebidConfig;
 
+    this.isWeb = Platform.OS === "web";
+
     this.state = {
       config: getSlotConfig(slotName, screenWidth()),
       hasError: false,
-      isAdReady: false
+      isAdReady: false,
+      hasAdBlock: false
     };
+  }
+
+  componentDidMount() {
+    if (this.isWeb) {
+      this.setState({
+        hasAdBlock: window.hasAdBlock
+      });
+    }
   }
 
   setAdReady = () => {
@@ -54,9 +66,10 @@ class Ad extends Component {
       slotName,
       style
     } = this.props;
-    const { config, hasError, isAdReady } = this.state;
+    const { config, hasError, isAdReady, hasAdBlock } = this.state;
+    const { isWeb } = this;
 
-    if (hasError) return null;
+    if ((isWeb && hasAdBlock) || hasError) return null;
 
     this.slots = adConfig.bidderSlots.map(slot =>
       getPrebidSlotConfig(
@@ -104,8 +117,6 @@ class Ad extends Component {
               ? screenWidth()
               : config.maxSizes.width
         };
-
-    const isWeb = Platform.OS === "web";
 
     const adView = (
       <View style={[styles.container, style]}>

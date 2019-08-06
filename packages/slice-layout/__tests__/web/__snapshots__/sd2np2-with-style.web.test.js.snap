@@ -82,7 +82,25 @@ exports[`1. secondary two no pic and two - small 1`] = `
 `;
 
 exports[`2. secondary two no pic and two - medium 1`] = `
-Array [
+<div
+  className="css-view-1dbjc4n"
+  style={
+    Object {
+      "WebkitBoxFlex": 1,
+      "WebkitFlexBasis": "0%",
+      "WebkitFlexGrow": 1,
+      "WebkitFlexShrink": 1,
+      "flexBasis": "0%",
+      "flexGrow": 1,
+      "flexShrink": 1,
+      "marginLeft": "20px",
+      "marginRight": "20px",
+      "msFlexNegative": 1,
+      "msFlexPositive": 1,
+      "msFlexPreferredSize": "0%",
+    }
+  }
+>
   <div
     className="css-view-1dbjc4n"
     style={
@@ -98,8 +116,6 @@ Array [
         "flexDirection": "row",
         "flexGrow": 1,
         "flexShrink": 1,
-        "marginLeft": "10px",
-        "marginRight": "10px",
         "msFlexDirection": "row",
         "msFlexNegative": 1,
         "msFlexPositive": 1,
@@ -111,7 +127,16 @@ Array [
       className="css-view-1dbjc4n"
       style={
         Object {
-          "width": "50%",
+          "WebkitBoxFlex": 1,
+          "WebkitFlexBasis": "0%",
+          "WebkitFlexGrow": 1,
+          "WebkitFlexShrink": 1,
+          "flexBasis": "0%",
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "msFlexNegative": 1,
+          "msFlexPositive": 1,
+          "msFlexPreferredSize": "0%",
         }
       }
     >
@@ -135,7 +160,7 @@ Array [
           "borderTopColor": "rgba(219,219,219,1.00)",
           "borderTopStyle": "solid",
           "marginBottom": "10px",
-          "marginTop": "10px",
+          "marginTop": "15px",
         }
       }
     />
@@ -143,7 +168,16 @@ Array [
       className="css-view-1dbjc4n"
       style={
         Object {
-          "width": "50%",
+          "WebkitBoxFlex": 1,
+          "WebkitFlexBasis": "0%",
+          "WebkitFlexGrow": 1,
+          "WebkitFlexShrink": 1,
+          "flexBasis": "0%",
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "msFlexNegative": 1,
+          "msFlexPositive": 1,
+          "msFlexPreferredSize": "0%",
         }
       }
     >
@@ -153,7 +187,7 @@ Array [
         secondary-2
       </div>
     </div>
-  </div>,
+  </div>
   <div
     className="css-view-1dbjc4n"
     style={
@@ -171,7 +205,7 @@ Array [
         "marginRight": "10px",
       }
     }
-  />,
+  />
   <div
     className="css-view-1dbjc4n"
     style={
@@ -187,8 +221,6 @@ Array [
         "flexDirection": "row",
         "flexGrow": 1,
         "flexShrink": 1,
-        "marginLeft": "10px",
-        "marginRight": "10px",
         "msFlexDirection": "row",
         "msFlexNegative": 1,
         "msFlexPositive": 1,
@@ -200,7 +232,16 @@ Array [
       className="css-view-1dbjc4n"
       style={
         Object {
-          "width": "50%",
+          "WebkitBoxFlex": 1,
+          "WebkitFlexBasis": "0%",
+          "WebkitFlexGrow": 1,
+          "WebkitFlexShrink": 1,
+          "flexBasis": "0%",
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "msFlexNegative": 1,
+          "msFlexPositive": 1,
+          "msFlexPreferredSize": "0%",
         }
       }
     >
@@ -223,7 +264,7 @@ Array [
           "borderRightWidth": "1px",
           "borderTopColor": "rgba(219,219,219,1.00)",
           "borderTopStyle": "solid",
-          "marginBottom": "10px",
+          "marginBottom": "15px",
           "marginTop": "10px",
         }
       }
@@ -232,7 +273,16 @@ Array [
       className="css-view-1dbjc4n"
       style={
         Object {
-          "width": "50%",
+          "WebkitBoxFlex": 1,
+          "WebkitFlexBasis": "0%",
+          "WebkitFlexGrow": 1,
+          "WebkitFlexShrink": 1,
+          "flexBasis": "0%",
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "msFlexNegative": 1,
+          "msFlexPositive": 1,
+          "msFlexPreferredSize": "0%",
         }
       }
     >
@@ -242,8 +292,8 @@ Array [
         support-2
       </div>
     </div>
-  </div>,
-]
+  </div>
+</div>
 `;
 
 exports[`3. secondary two no pic and two - wide 1`] = `

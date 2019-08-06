@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Image from "@times-components/image";
-import { editionBreakpoints } from "@times-components/styleguide";
 import {
   getTileImage,
   getTileSummary,
@@ -10,12 +9,12 @@ import {
   withTileTracking
 } from "../shared";
 import stylesFactory from "./styles";
+import WithoutWhiteSpace from "../shared/without-white-space";
 
 const TileW = ({ onPress, tile, breakpoint }) => {
   const styles = stylesFactory(breakpoint);
-  const crop = getTileImage(tile, "crop169");
-  const summary =
-    breakpoint !== editionBreakpoints.medium ? getTileSummary(tile, 125) : null;
+  const crop = getTileImage(tile, "crop32");
+
   return (
     <TileLink
       onPress={onPress}
@@ -23,16 +22,22 @@ const TileW = ({ onPress, tile, breakpoint }) => {
       tile={tile}
       withStar={false}
     >
-      <TileSummary
-        headlineStyle={styles.headline}
-        style={styles.summaryContainer}
-        summary={summary}
-        summaryStyle={styles.summary}
-        tile={tile}
-        withStar
+      <WithoutWhiteSpace
+        styles={styles.summaryContainer}
+        render={whiteSpaceHeight => (
+          <TileSummary
+            headlineStyle={styles.headline}
+            summary={getTileSummary(tile, 800)}
+            summaryStyle={styles.summary}
+            tile={tile}
+            withStar
+            starStyle={styles.star}
+            whiteSpaceHeight={whiteSpaceHeight}
+          />
+        )}
       />
       <Image
-        aspectRatio={16 / 9}
+        aspectRatio={3 / 2}
         relativeWidth={crop.relativeWidth}
         relativeHeight={crop.relativeHeight}
         relativeHorizontalOffset={crop.relativeHorizontalOffset}

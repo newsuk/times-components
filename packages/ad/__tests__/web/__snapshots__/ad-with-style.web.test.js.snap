@@ -393,3 +393,13 @@ exports[`3. nothing if there is an error in the loading of scripts 1`] = `
   </MockServerClientRender>
 </Ad>
 `;
+
+exports[`4. returns nothing if user has adblock 1`] = `
+<Ad
+  baseUrl="https://www.thetimes.co.uk/"
+  contextUrl="https://www.thetimes.co.uk"
+  isLoading={false}
+  section="news"
+  slotName="header"
+/>
+`;

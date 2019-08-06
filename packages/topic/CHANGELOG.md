@@ -3,6 +3,54 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.92](https://github.com/newsuk/times-components/compare/@times-components/topic@5.0.91...@times-components/topic@5.0.92) (2019-08-05)
+
+**Note:** Version bump only for package @times-components/topic
+
+
+
+
+
+## [5.0.91](https://github.com/newsuk/times-components/compare/@times-components/topic@5.0.90...@times-components/topic@5.0.91) (2019-08-05)
+
+**Note:** Version bump only for package @times-components/topic
+
+
+
+
+
+## [5.0.90](https://github.com/newsuk/times-components/compare/@times-components/topic@5.0.89...@times-components/topic@5.0.90) (2019-08-02)
+
+**Note:** Version bump only for package @times-components/topic
+
+
+
+
+
+## [5.0.89](https://github.com/newsuk/times-components/compare/@times-components/topic@5.0.88...@times-components/topic@5.0.89) (2019-07-31)
+
+**Note:** Version bump only for package @times-components/topic
+
+
+
+
+
+## [5.0.88](https://github.com/newsuk/times-components/compare/@times-components/topic@5.0.87...@times-components/topic@5.0.88) (2019-07-31)
+
+**Note:** Version bump only for package @times-components/topic
+
+
+
+
+
+## [5.0.87](https://github.com/newsuk/times-components/compare/@times-components/topic@5.0.86...@times-components/topic@5.0.87) (2019-07-30)
+
+**Note:** Version bump only for package @times-components/topic
+
+
+
+
+
 ## [5.0.86](https://github.com/newsuk/times-components/compare/@times-components/topic@5.0.85...@times-components/topic@5.0.86) (2019-07-29)
 
 **Note:** Version bump only for package @times-components/topic

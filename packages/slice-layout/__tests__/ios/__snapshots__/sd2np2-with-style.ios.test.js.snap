@@ -48,20 +48,26 @@ exports[`1. secondary two no pic and two - small 1`] = `
 `;
 
 exports[`2. secondary two no pic and two - medium 1`] = `
-Array [
+<View
+  style={
+    Object {
+      "flex": 1,
+      "marginHorizontal": 20,
+    }
+  }
+>
   <View
     style={
       Object {
         "flex": 1,
         "flexDirection": "row",
-        "marginHorizontal": 10,
       }
     }
   >
     <View
       style={
         Object {
-          "width": "50%",
+          "flex": 1,
         }
       }
     >
@@ -75,6 +81,7 @@ Array [
           "borderColor": "#DBDBDB",
           "borderRightWidth": 1,
           "borderStyle": "solid",
+          "marginTop": 15,
           "marginVertical": 10,
         }
       }
@@ -82,7 +89,7 @@ Array [
     <View
       style={
         Object {
-          "width": "50%",
+          "flex": 1,
         }
       }
     >
@@ -90,7 +97,7 @@ Array [
         secondary-2
       </Text>
     </View>
-  </View>,
+  </View>
   <View
     style={
       Object {
@@ -100,20 +107,19 @@ Array [
         "marginHorizontal": 10,
       }
     }
-  />,
+  />
   <View
     style={
       Object {
         "flex": 1,
         "flexDirection": "row",
-        "marginHorizontal": 10,
       }
     }
   >
     <View
       style={
         Object {
-          "width": "50%",
+          "flex": 1,
         }
       }
     >
@@ -127,6 +133,7 @@ Array [
           "borderColor": "#DBDBDB",
           "borderRightWidth": 1,
           "borderStyle": "solid",
+          "marginBottom": 15,
           "marginVertical": 10,
         }
       }
@@ -134,7 +141,7 @@ Array [
     <View
       style={
         Object {
-          "width": "50%",
+          "flex": 1,
         }
       }
     >
@@ -142,8 +149,8 @@ Array [
         support-2
       </Text>
     </View>
-  </View>,
-]
+  </View>
+</View>
 `;
 
 exports[`3. secondary two no pic and two - wide 1`] = `

@@ -21,7 +21,7 @@ exports[`1. secondary two no pic and two - small 1`] = `
 `;
 
 exports[`2. secondary two no pic and two - medium 1`] = `
-Array [
+<View>
   <View>
     <View>
       <Text>
@@ -34,8 +34,8 @@ Array [
         secondary-2
       </Text>
     </View>
-  </View>,
-  <View />,
+  </View>
+  <View />
   <View>
     <View>
       <Text>
@@ -48,8 +48,8 @@ Array [
         support-2
       </Text>
     </View>
-  </View>,
-]
+  </View>
+</View>
 `;
 
 exports[`3. secondary two no pic and two - wide 1`] = `

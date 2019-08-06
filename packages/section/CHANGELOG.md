@@ -3,6 +3,54 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.36](https://github.com/newsuk/times-components/compare/@times-components/section@1.1.35...@times-components/section@1.1.36) (2019-08-05)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
+## [1.1.35](https://github.com/newsuk/times-components/compare/@times-components/section@1.1.34...@times-components/section@1.1.35) (2019-08-05)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
+## [1.1.34](https://github.com/newsuk/times-components/compare/@times-components/section@1.1.33...@times-components/section@1.1.34) (2019-08-05)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
+## [1.1.33](https://github.com/newsuk/times-components/compare/@times-components/section@1.1.32...@times-components/section@1.1.33) (2019-07-31)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
+## [1.1.32](https://github.com/newsuk/times-components/compare/@times-components/section@1.1.31...@times-components/section@1.1.32) (2019-07-31)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
+## [1.1.31](https://github.com/newsuk/times-components/compare/@times-components/section@1.1.30...@times-components/section@1.1.31) (2019-07-30)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
 ## [1.1.30](https://github.com/newsuk/times-components/compare/@times-components/section@1.1.29...@times-components/section@1.1.30) (2019-07-30)
 
 **Note:** Version bump only for package @times-components/section

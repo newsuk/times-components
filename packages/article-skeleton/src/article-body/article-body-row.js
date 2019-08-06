@@ -13,11 +13,17 @@ import PullQuote from "@times-components/pull-quote";
 import styleguide, {
   colours,
   tabletWidth,
-  fonts
+  fonts,
+  spacing
 } from "@times-components/styleguide";
 import { screenWidth } from "@times-components/utils";
 import Video from "@times-components/video";
-import { Layout, Text, MarkupFactory } from "@times-components/text-flow";
+import {
+  Layout,
+  Text,
+  MarkupFactory,
+  Markup
+} from "@times-components/text-flow";
 import DropCap from "@times-components/article-paragraph/src/drop-cap";
 import ArticleLink from "./article-link";
 import InsetCaption from "./inset-caption";
@@ -88,7 +94,8 @@ export default ({
       const cap = getDropCap(children, fonts[dropCapFont], height, [
         new Body(value)
       ]);
-      const capWidth = (cap[0].measuredWidth + 20) * fontScale;
+      const capGap = spacing(2);
+      const capWidth = (cap[0].measuredWidth + capGap) * fontScale;
 
       return {
         element: new Layout.InlineBlock({
@@ -163,14 +170,27 @@ export default ({
         font: "supporting",
         fontSize: "caption"
       });
-      const captionText = new Text.Text({
-        font: cFontFamily,
-        lineHeight: cLineHeight * fontScale,
-        markup: [new Body(caption)],
-        size: cFontSize * fontScale,
-        width: width * 0.35
-      });
-      const captionHeight = captionText.measuredHeight;
+      let height = 0;
+      if (caption) {
+        const captionText = new Text.Text({
+          font: cFontFamily,
+          lineHeight: cLineHeight * fontScale,
+          markup: [new Body(caption)],
+          size: cFontSize * fontScale,
+          width: width * 0.35
+        });
+        height += captionText.measuredHeight;
+      }
+      if (credits && credits[0] !== "<") {
+        const creditsText = new Text.Text({
+          font: cFontFamily,
+          lineHeight: cLineHeight * fontScale,
+          markup: [new Body(credits)],
+          size: cFontSize * fontScale,
+          width: width * 0.35
+        });
+        height += creditsText.measuredHeight;
+      }
       const inline = new Layout.InlineBlock({
         getComponent() {
           return (
@@ -190,7 +210,7 @@ export default ({
             </View>
           );
         },
-        height: width * 0.35 * aspectRatio + captionHeight,
+        height: width * 0.35 * aspectRatio + height,
         layoutDone: false,
         prevHeight: 0,
         width: width * 0.35
@@ -330,11 +350,35 @@ export default ({
       const quote = new Text.Text({
         font: qFontFamily,
         lineHeight: qLineHeight * fontScale,
-        markup: [new Body(content)],
+        markup: [
+          new Body('"'),
+          new Markup.Newline(),
+          new Body(content),
+          new Markup.Newline()
+        ],
         size: qFontSize * fontScale,
         width: width * 0.35
       });
-      const height = quote.measuredHeight;
+      const {
+        fontFamily: cFontFamily,
+        fontSize: cFontSize,
+        lineHeight: cLineHeight
+      } = fontFactory({
+        font: "supporting",
+        fontSize: "caption"
+      });
+      let captionHeight = 0;
+      if (name) {
+        const caption = new Text.Text({
+          font: cFontFamily,
+          lineHeight: cLineHeight * fontScale,
+          markup: [new Markup.Newline(), new Body(name), new Markup.Newline()],
+          size: cFontSize * fontScale,
+          width: width * 0.35
+        });
+        captionHeight = caption.measuredHeight;
+      }
+      const height = quote.measuredHeight + (captionHeight + spacing(1));
       return {
         element: new Layout.InlineBlock({
           getComponent() {
@@ -362,7 +406,7 @@ export default ({
               </Context.Consumer>
             );
           },
-          height: height + lineHeight * 1.3 * fontScale,
+          height,
           width: width * 0.35
         }),
         shouldRenderChildren: false

@@ -71,14 +71,14 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
             <View
               style={
                 Object {
-                  "height": 0,
+                  "height": 20,
                 }
               }
             >
               <Text
                 style={
                   Object {
-                    "color": "#333333",
+                    "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": NaN,
                     "fontStyle": "normal",
@@ -204,6 +204,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 <Text
                   style={
                     Object {
+                      "color": "#000000",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": NaN,
                       "fontStyle": "normal",
@@ -643,15 +644,15 @@ exports[`3. an article with a nested markup in first paragraph displays a drop c
             <View
               style={
                 Object {
-                  "height": 0,
+                  "height": 20,
                 }
               }
             >
               <Text
                 style={
                   Object {
-                    "color": "#333333",
-                    "fontFamily": "TimesDigitalW04-Bold",
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
                     "fontSize": NaN,
                     "fontStyle": "normal",
                     "fontWeight": "bold",
@@ -678,15 +679,15 @@ exports[`3. an article with a nested markup in first paragraph displays a drop c
             <View
               style={
                 Object {
-                  "height": 0,
+                  "height": 20,
                 }
               }
             >
               <Text
                 style={
                   Object {
-                    "color": "#333333",
-                    "fontFamily": "TimesDigitalW04-Bold",
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
                     "fontSize": NaN,
                     "fontStyle": "normal",
                     "fontWeight": "bold",
@@ -806,6 +807,7 @@ exports[`4. an article skeleton with responsive items 1`] = `
                 <Text
                   style={
                     Object {
+                      "color": "#000000",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": NaN,
                       "fontStyle": "normal",
@@ -930,6 +932,7 @@ exports[`4. an article skeleton with responsive items 1`] = `
                 <Text
                   style={
                     Object {
+                      "color": "#000000",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": NaN,
                       "fontStyle": "normal",

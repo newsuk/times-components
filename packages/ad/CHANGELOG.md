@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.6.36](https://github.com/newsuk/times-components/compare/@times-components/ad@2.6.35...@times-components/ad@2.6.36) (2019-08-05)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.6.35](https://github.com/newsuk/times-components/compare/@times-components/ad@2.6.34...@times-components/ad@2.6.35) (2019-08-02)
+
+
+### Bug Fixes
+
+* return nothing if adblock is detected ([#2146](https://github.com/newsuk/times-components/issues/2146)) ([b8c5df6](https://github.com/newsuk/times-components/commit/b8c5df6))
+
+
+
+
+
 ## [2.6.34](https://github.com/newsuk/times-components/compare/@times-components/ad@2.6.33...@times-components/ad@2.6.34) (2019-07-29)
 
 

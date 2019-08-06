@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.12.2](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.12.1...@times-components/article-summary@3.12.2) (2019-08-05)
+
+**Note:** Version bump only for package @times-components/article-summary
+
+
+
+
+
+## [3.12.1](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.12.0...@times-components/article-summary@3.12.1) (2019-07-31)
+
+**Note:** Version bump only for package @times-components/article-summary
+
+
+
+
+
+# [3.12.0](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.11.4...@times-components/article-summary@3.12.0) (2019-07-31)
+
+
+### Features
+
+* implement edition slices teaser rules ([#2138](https://github.com/newsuk/times-components/issues/2138)) ([1a0b893](https://github.com/newsuk/times-components/commit/1a0b893))
+
+
+
+
+
+## [3.11.4](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.11.3...@times-components/article-summary@3.11.4) (2019-07-30)
+
+**Note:** Version bump only for package @times-components/article-summary
+
+
+
+
+
 ## [3.11.3](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.11.2...@times-components/article-summary@3.11.3) (2019-07-29)
 
 **Note:** Version bump only for package @times-components/article-summary

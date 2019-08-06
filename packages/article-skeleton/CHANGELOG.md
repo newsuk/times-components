@@ -3,6 +3,65 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.11.19](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.11.18...@times-components/article-skeleton@1.11.19) (2019-08-05)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.11.18](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.11.17...@times-components/article-skeleton@1.11.18) (2019-08-05)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.11.17](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.11.16...@times-components/article-skeleton@1.11.17) (2019-08-05)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.11.16](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.11.15...@times-components/article-skeleton@1.11.16) (2019-08-02)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.11.15](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.11.14...@times-components/article-skeleton@1.11.15) (2019-07-31)
+
+
+### Bug Fixes
+
+* paragraph with dropcap margin bottom fixed ([#2122](https://github.com/newsuk/times-components/issues/2122)) ([f76c597](https://github.com/newsuk/times-components/commit/f76c597))
+
+
+
+
+
+## [1.11.14](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.11.13...@times-components/article-skeleton@1.11.14) (2019-07-31)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.11.13](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.11.12...@times-components/article-skeleton@1.11.13) (2019-07-30)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
 ## [1.11.12](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.11.11...@times-components/article-skeleton@1.11.12) (2019-07-30)
 
 **Note:** Version bump only for package @times-components/article-skeleton
