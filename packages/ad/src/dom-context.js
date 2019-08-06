@@ -11,13 +11,6 @@ import { calculateViewportVisible } from "./styles/index";
 const ViewportAwareView = Viewport.Aware(View);
 
 class DOMContext extends PureComponent {
-  constructor(props) {
-    super(props)
-    this.state = {
-      loaded: false
-    }
-  }
-
   static hasDifferentOrigin(url, baseUrl) {
     return url && url.indexOf(baseUrl) === -1 && url.indexOf("://") > -1;
   }
@@ -31,6 +24,13 @@ class DOMContext extends PureComponent {
         return Linking.openURL(url);
       })
       .catch(err => console.error("An error occurred", err)); // eslint-disable-line no-console
+  }
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      loaded: false
+    };
   }
 
   componentDidMount() {
@@ -59,18 +59,23 @@ class DOMContext extends PureComponent {
   handleMessageEvent = e => {
     const { onRenderComplete, onRenderError, data } = this.props;
     const json = e.nativeEvent.data;
-    if (json.indexOf("isTngMessage") === -1 && json.indexOf('unrulyLoaded') === -1) {
+    if (
+      json.indexOf("isTngMessage") === -1 &&
+      json.indexOf("unrulyLoaded") === -1
+    ) {
       // don't try and process postMessage events from 3rd party scripts
       return;
     }
     const { type, detail } = JSON.parse(json);
+    const { loaded } = this.state;
+    const { isVisible } = this;
     switch (type) {
       case "renderFailed":
         onRenderError();
         break;
       case "unrulyLoaded": {
-        if (this.state.loaded && this.isVisible) {
-          this.inViewport()
+        if (loaded && isVisible) {
+          this.inViewport();
         }
         break;
       }
@@ -85,7 +90,7 @@ class DOMContext extends PureComponent {
   };
 
   outViewport = () => {
-    this.isVisible = false
+    this.isVisible = false;
     if (this.webView) {
       this.webView.injectJavaScript(`
           if (typeof unrulyViewportStatus === "function") {
@@ -98,11 +103,11 @@ class DOMContext extends PureComponent {
   loadAd = () => {
     this.setState({
       loaded: true
-    })
-  }
+    });
+  };
 
   inViewport = () => {
-    this.isVisible = true
+    this.isVisible = true;
     if (this.webView) {
       this.webView.injectJavaScript(`
           if (typeof unrulyViewportStatus === "function") {
@@ -178,6 +183,7 @@ class DOMContext extends PureComponent {
         </body>
       </html>
     `;
+    const { loaded } = this.state;
     return (
       <ViewportAwareView
         onViewportEnter={this.loadAd}
@@ -186,26 +192,32 @@ class DOMContext extends PureComponent {
           width
         }}
       >
-        {this.state.loaded && <WebView
-          onMessage={this.handleMessageEvent}
-          onNavigationStateChange={this.handleNavigationStateChange}
-          originWhitelist={
-            Platform.OS === "android" ? ["http://.*", "https://.*"] : undefined
-          }
-          ref={ref => {
-            this.webView = ref;
-          }}
-          source={{
-            baseUrl,
-            html
-          }}
-          style={{ position: "absolute", width, height }}
-        />}
-        {height !== 0 && <ViewportAwareView
-          onViewportEnter={this.inViewport}
-          onViewportLeave={this.outViewport}
-          style={calculateViewportVisible(height)}
-        />}
+        {loaded && (
+          <WebView
+            onMessage={this.handleMessageEvent}
+            onNavigationStateChange={this.handleNavigationStateChange}
+            originWhitelist={
+              Platform.OS === "android"
+                ? ["http://.*", "https://.*"]
+                : undefined
+            }
+            ref={ref => {
+              this.webView = ref;
+            }}
+            source={{
+              baseUrl,
+              html
+            }}
+            style={{ position: "absolute", width, height }}
+          />
+        )}
+        {height !== 0 && (
+          <ViewportAwareView
+            onViewportEnter={this.inViewport}
+            onViewportLeave={this.outViewport}
+            style={calculateViewportVisible(height)}
+          />
+        )}
       </ViewportAwareView>
     );
   }
