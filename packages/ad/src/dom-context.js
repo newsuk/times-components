@@ -6,6 +6,7 @@ import DeviceInfo from "react-native-device-info";
 import webviewEventCallbackSetup from "./utils/webview-event-callback-setup";
 import logger from "./utils/logger";
 import { propTypes, defaultProps } from "./dom-context-prop-types";
+import { calculateViewportVisible } from "./styles/index";
 
 const ViewportAwareView = Viewport.Aware(View);
 
@@ -73,27 +74,31 @@ class DOMContext extends PureComponent {
     }
   };
 
-  outViewport() {
-    this.webView.injectJavaScript(`
-        if (typeof unrulyViewportStatus === "function") {
-          unrulyViewportStatus(${JSON.stringify({
-            ...this.deviceInfo,
-            visible: false
-          })})
-        }
-      `);
-  }
+  outViewport = () => {
+    if (this.webView) {
+      this.webView.injectJavaScript(`
+          if (typeof unrulyViewportStatus === "function") {
+            unrulyViewportStatus(${JSON.stringify({
+              ...this.deviceInfo,
+              visible: false
+            })})
+          }
+        `);
+    }
+  };
 
-  inViewport() {
-    this.webView.injectJavaScript(`
-        if (typeof unrulyViewportStatus === "function") {
-          unrulyViewportStatus(${JSON.stringify({
-            ...this.deviceInfo,
-            visible: true
-          })})
-        };
-      `);
-  }
+  inViewport = () => {
+    if (this.webView) {
+      this.webView.injectJavaScript(`
+          if (typeof unrulyViewportStatus === "function") {
+            unrulyViewportStatus(${JSON.stringify({
+              ...this.deviceInfo,
+              visible: true
+            })})
+          };
+        `);
+    }
+  };
 
   render() {
     const { baseUrl, data, init, width, height } = this.props;
@@ -178,14 +183,9 @@ class DOMContext extends PureComponent {
           style={{ position: "absolute" }}
         />
         <ViewportAwareView
-          onViewportEnter={() => this.inViewport()}
-          onViewportLeave={() => this.outViewport()}
-          style={{
-            width: 10,
-            height: height / 10,
-            top: height / 2 - height / 20,
-            position: "absolute"
-          }}
+          onViewportEnter={this.inViewport}
+          onViewportLeave={this.outViewport}
+          style={calculateViewportVisible(height)}
         />
       </View>
     );
