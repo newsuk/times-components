@@ -129,7 +129,8 @@ exports[`2. list two and six no pic - medium 1`] = `
     Object {
       "flex": 1,
       "flexDirection": "row",
-      "marginHorizontal": 10,
+      "marginHorizontal": 20,
+      "marginVertical": 5,
     }
   }
 >
