@@ -45,7 +45,9 @@ const sharedStyles = {
     marginTop: spacing(1)
   },
   header: {
-    paddingBottom: spacing(3),
+    // TODO: put back after design signoff
+    marginBottom: spacing(3),
+    paddingBottom: spacing(4),
     paddingTop: spacing(7)
   },
   headerTablet: {
