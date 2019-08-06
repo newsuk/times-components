@@ -5,7 +5,7 @@ const mediumBreakpointStyles = {
     flex: 1,
     flexDirection: "row",
     marginHorizontal: spacing(4),
-    paddingVertical: spacing(1),
+    paddingVertical: spacing(1)
   },
   leadContainer: {
     width: "50%"
