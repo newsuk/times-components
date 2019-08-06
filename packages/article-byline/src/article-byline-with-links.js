@@ -1,4 +1,5 @@
 import React from "react";
+import { Platform } from "react-native";
 import { TextLink } from "@times-components/link";
 import renderByline from "./render-byline";
 import { propTypes, defaultProps } from "./article-byline-prop-types";
@@ -30,7 +31,10 @@ const ArticleBylineWithLinks = ({ ast, centered, ...props }) =>
   renderByline(
     renderAuthorComponent,
     ast,
-    centered ? [styles.text, styles.centered] : styles.text,
+    // TODO: revert platform switch after design signoff
+    centered && Platform.OS === "web"
+      ? [styles.text, styles.centered]
+      : styles.text,
     props
   );
 

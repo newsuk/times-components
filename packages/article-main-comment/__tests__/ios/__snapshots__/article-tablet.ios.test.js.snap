@@ -6,7 +6,8 @@ exports[`1. article main comment - tablet 1`] = `
     style={
       Object {
         "alignSelf": "center",
-        "paddingBottom": 15,
+        "marginBottom": 15,
+        "paddingBottom": 20,
         "paddingTop": 35,
         "width": 660,
       }
