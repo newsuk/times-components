@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.34.0](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.33.1...@times-components/slice-layout@0.34.0) (2019-08-06)
+
+
+### Features
+
+* REPLAT-7064 List 2 and 6 no pic medium ([#2154](https://github.com/newsuk/times-components/issues/2154)) ([67361dc](https://github.com/newsuk/times-components/commit/67361dc))
+
+
+
+
+
 ## [0.33.1](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.33.0...@times-components/slice-layout@0.33.1) (2019-08-05)
 
 **Note:** Version bump only for package @times-components/slice-layout

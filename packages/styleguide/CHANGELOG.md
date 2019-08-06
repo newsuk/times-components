@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.28.39](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.28.38...@times-components/styleguide@3.28.39) (2019-08-06)
+
+
+### Bug Fixes
+
+* add tests for theme factory ([#2157](https://github.com/newsuk/times-components/issues/2157)) ([292c9b1](https://github.com/newsuk/times-components/commit/292c9b1))
+
+
+
+
+
 ## [3.28.38](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.28.37...@times-components/styleguide@3.28.38) (2019-08-05)
 
 **Note:** Version bump only for package @times-components/styleguide

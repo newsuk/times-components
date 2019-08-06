@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.6.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.5.0...@times-components/provider-queries@2.6.0) (2019-08-06)
+
+
+### Features
+
+* REPLAT-7064 List 2 and 6 no pic medium ([#2154](https://github.com/newsuk/times-components/issues/2154)) ([67361dc](https://github.com/newsuk/times-components/commit/67361dc))
+
+
+
+
+
 # [2.5.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.4.0...@times-components/provider-queries@2.5.0) (2019-07-29)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-summary",
-  "version": "3.12.2",
+  "version": "3.12.3",
   "main": "dist/article-summary",
   "dev": "src/article-summary",
   "scripts": {
@@ -40,7 +40,7 @@
     "@times-components/eslint-config-thetimes": "0.8.12",
     "@times-components/jest-configurator": "2.5.15",
     "@times-components/jest-serializer": "3.2.11",
-    "@times-components/storybook": "4.0.25",
+    "@times-components/storybook": "4.0.26",
     "@times-components/test-utils": "2.3.1",
     "@times-components/webpack-configurator": "2.0.22",
     "babel-jest": "24.8.0",
@@ -61,13 +61,13 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/article-byline": "3.1.105",
-    "@times-components/article-flag": "2.6.60",
-    "@times-components/article-label": "2.4.3",
+    "@times-components/article-byline": "3.1.106",
+    "@times-components/article-flag": "2.6.61",
+    "@times-components/article-label": "2.4.4",
     "@times-components/date-publication": "0.20.84",
     "@times-components/markup": "3.3.93",
     "@times-components/markup-forest": "1.7.17",
-    "@times-components/styleguide": "3.28.38",
+    "@times-components/styleguide": "3.28.39",
     "@times-components/video-label": "2.3.3",
     "prop-types": "15.7.2"
   },
