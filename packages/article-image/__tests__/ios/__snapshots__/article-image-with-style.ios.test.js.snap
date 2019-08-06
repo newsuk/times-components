@@ -179,7 +179,6 @@ exports[`3. mobile fullwidth image with caption and credits 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
               "lineHeight": 16,
-              "marginTop": 5,
               "paddingHorizontal": 10,
               "textAlign": "center",
             }
@@ -196,7 +195,6 @@ exports[`3. mobile fullwidth image with caption and credits 1`] = `
               "fontWeight": "400",
               "letterSpacing": 1,
               "lineHeight": 16,
-              "marginTop": 5,
               "paddingHorizontal": 10,
               "textAlign": "center",
             }
@@ -257,7 +255,6 @@ exports[`4. tablet fullwidth image with caption and credits 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
               "lineHeight": 16,
-              "marginTop": 5,
               "paddingHorizontal": 10,
               "textAlign": "center",
             }
@@ -274,7 +271,6 @@ exports[`4. tablet fullwidth image with caption and credits 1`] = `
               "fontWeight": "400",
               "letterSpacing": 1,
               "lineHeight": 16,
-              "marginTop": 5,
               "paddingHorizontal": 10,
               "textAlign": "center",
             }
@@ -412,7 +408,6 @@ exports[`6. primary image with caption and credits with center caption override 
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
               "lineHeight": 16,
-              "marginTop": 5,
               "paddingHorizontal": 10,
               "textAlign": "center",
             }
@@ -429,7 +424,6 @@ exports[`6. primary image with caption and credits with center caption override 
               "fontWeight": "400",
               "letterSpacing": 1,
               "lineHeight": 16,
-              "marginTop": 5,
               "paddingHorizontal": 10,
               "textAlign": "center",
             }
@@ -501,7 +495,6 @@ exports[`7. secondary image with caption and credits with center caption overrid
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
               "lineHeight": 16,
-              "marginTop": 5,
               "paddingHorizontal": 10,
               "textAlign": "center",
             }
@@ -518,7 +511,6 @@ exports[`7. secondary image with caption and credits with center caption overrid
               "fontWeight": "400",
               "letterSpacing": 1,
               "lineHeight": 16,
-              "marginTop": 5,
               "paddingHorizontal": 10,
               "textAlign": "center",
             }
