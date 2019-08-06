@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.4.111](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.4.110...@times-components/pull-quote@3.4.111) (2019-08-06)
+
+
+### Bug Fixes
+
+* revert design changes for web ([#2161](https://github.com/newsuk/times-components/issues/2161)) ([667427f](https://github.com/newsuk/times-components/commit/667427f))
+
+
+
+
+
 ## [3.4.110](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.4.109...@times-components/pull-quote@3.4.110) (2019-08-05)
 
 **Note:** Version bump only for package @times-components/pull-quote

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.93](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.2.92...@times-components/pagination@3.2.93) (2019-08-06)
+
+
+### Bug Fixes
+
+* revert design changes for web ([#2161](https://github.com/newsuk/times-components/issues/2161)) ([667427f](https://github.com/newsuk/times-components/commit/667427f))
+
+
+
+
+
 ## [3.2.92](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.2.91...@times-components/pagination@3.2.92) (2019-08-05)
 
 **Note:** Version bump only for package @times-components/pagination

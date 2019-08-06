@@ -1,6 +1,6 @@
 {
   "name": "@times-components/topic",
-  "version": "5.0.93",
+  "version": "5.0.94",
   "description": "Topic page component",
   "main": "dist/topic",
   "dev": "src/topic",
@@ -69,15 +69,15 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/article-list": "9.2.33",
+    "@times-components/article-list": "9.2.34",
     "@times-components/context": "1.0.33",
-    "@times-components/markup": "3.3.93",
+    "@times-components/markup": "3.3.94",
     "@times-components/markup-forest": "1.7.17",
-    "@times-components/pagination": "3.2.92",
+    "@times-components/pagination": "3.2.93",
     "@times-components/provider": "1.17.29",
     "@times-components/responsive": "0.4.57",
     "@times-components/styleguide": "3.28.39",
-    "@times-components/tracking": "2.4.58",
+    "@times-components/tracking": "2.4.59",
     "@times-components/utils": "4.11.26",
     "lodash.get": "4.4.2",
     "prop-types": "15.7.2",

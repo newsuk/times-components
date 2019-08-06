@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.4.59](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.4.58...@times-components/tracking@2.4.59) (2019-08-06)
+
+
+### Bug Fixes
+
+* revert design changes for web ([#2161](https://github.com/newsuk/times-components/issues/2161)) ([667427f](https://github.com/newsuk/times-components/commit/667427f))
+
+
+
+
+
 ## [2.4.58](https://github.com/newsuk/times-components/compare/@times-components/tracking@2.4.57...@times-components/tracking@2.4.58) (2019-08-05)
 
 **Note:** Version bump only for package @times-components/tracking

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.54](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.4.53...@times-components/lazy-load@0.4.54) (2019-08-06)
+
+
+### Bug Fixes
+
+* revert design changes for web ([#2161](https://github.com/newsuk/times-components/issues/2161)) ([667427f](https://github.com/newsuk/times-components/commit/667427f))
+
+
+
+
+
 ## [0.4.53](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.4.52...@times-components/lazy-load@0.4.53) (2019-08-05)
 
 **Note:** Version bump only for package @times-components/lazy-load
