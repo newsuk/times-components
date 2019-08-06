@@ -1,17 +1,32 @@
 import { spacing } from "@times-components/styleguide";
 
-const main = {
-  column: {
-    width: "50%"
-  },
+const sharedStyles = {
   container: {
     flexDirection: "row",
     justifyContent: "center",
-    paddingHorizontal: spacing(2)
+    marginHorizontal: spacing(2)
+  },
+  column: {
+    width: "50%"
   }
 };
 
-const stylesWide = {
+const mediumBreakpointStyles = {
+  container: {
+    flex: 1,
+    flexDirection: "row",
+    marginHorizontal: spacing(4)
+  },
+  column: {
+    ...sharedStyles.column
+  },
+  colSeparatorStyle: {
+    marginVertical: spacing(3)
+  }
+};
+
+const wideBreakpointStyles = {
+  ...sharedStyles,
   column: {
     width: "42%"
   },
@@ -22,11 +37,9 @@ const stylesWide = {
 };
 
 const stylesResolver = {
-  huge: stylesWide,
-  wide: stylesWide
+  medium: mediumBreakpointStyles,
+  wide: wideBreakpointStyles,
+  huge: wideBreakpointStyles
 };
 
-export default breakpoint => ({
-  ...main,
-  ...(stylesResolver[breakpoint] || {})
-});
+export default breakpoint => stylesResolver[breakpoint] || {};

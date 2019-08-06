@@ -41,6 +41,50 @@ class LeadTwoNoPicAndTwo extends Component {
     );
   }
 
+  renderMedium(breakpoint) {
+    const {
+      onPress,
+      slice: { lead1, lead2, support1, support2 }
+    } = this.props;
+    return (
+      <LeadTwoNoPicAndTwoSlice
+        breakpoint={breakpoint}
+        lead1={
+          <TileX
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={lead1}
+            tileName="lead1"
+          />
+        }
+        lead2={
+          <TileY
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={lead2}
+            tileName="lead2"
+          />
+        }
+        support1={
+          <TileE
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={support2}
+            tileName="support2"
+          />
+        }
+        support2={
+          <TileD
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={support1}
+            tileName="support1"
+          />
+        }
+      />
+    );
+  }
+
   renderWide(breakpoint) {
     const {
       onPress,
@@ -53,26 +97,6 @@ class LeadTwoNoPicAndTwo extends Component {
         lead2={<TileY onPress={onPress} tile={lead2} tileName="lead2" />}
         support1={
           <TileAL onPress={onPress} tile={support1} tileName="support1" />
-        }
-        support2={
-          <TileZ onPress={onPress} tile={support2} tileName="support2" />
-        }
-      />
-    );
-  }
-
-  renderMedium(breakpoint) {
-    const {
-      onPress,
-      slice: { lead1, lead2, support1, support2 }
-    } = this.props;
-    return (
-      <LeadTwoNoPicAndTwoSlice
-        breakpoint={breakpoint}
-        lead1={<TileX onPress={onPress} tile={lead1} tileName="lead1" />}
-        lead2={<TileY onPress={onPress} tile={lead2} tileName="lead2" />}
-        support1={
-          <TileD onPress={onPress} tile={support1} tileName="support1" />
         }
         support2={
           <TileZ onPress={onPress} tile={support2} tileName="support2" />
