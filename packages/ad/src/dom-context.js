@@ -1,9 +1,14 @@
 import React, { PureComponent } from "react";
 import { View, Linking, Platform } from "react-native";
 import { WebView } from "react-native-webview";
+import { Viewport } from "@skele/components";
+import DeviceInfo from "react-native-device-info";
 import webviewEventCallbackSetup from "./utils/webview-event-callback-setup";
 import logger from "./utils/logger";
 import { propTypes, defaultProps } from "./dom-context-prop-types";
+import { calculateViewportVisible } from "./styles/index";
+
+const ViewportAwareView = Viewport.Aware(View);
 
 class DOMContext extends PureComponent {
   static hasDifferentOrigin(url, baseUrl) {
@@ -21,27 +26,23 @@ class DOMContext extends PureComponent {
       .catch(err => console.error("An error occurred", err)); // eslint-disable-line no-console
   }
 
-  handleMessageEvent = e => {
-    const { onRenderComplete, onRenderError, data } = this.props;
-    const json = e.nativeEvent.data;
-    if (json.indexOf("isTngMessage") === -1) {
-      // don't try and process postMessage events from 3rd party scripts
-      return;
-    }
-    const { type, detail } = JSON.parse(json);
-    switch (type) {
-      case "renderFailed":
-        onRenderError();
-        break;
-      case "renderComplete":
-        onRenderComplete();
-        break;
-      default:
-        if (data.debug) {
-          logger(type, detail);
-        }
-    }
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      loaded: false
+    };
+  }
+
+  componentDidMount() {
+    this.deviceInfo = {
+      applicationName: DeviceInfo.getApplicationName(),
+      buildNumber: DeviceInfo.getBuildNumber(),
+      bundleId: DeviceInfo.getBundleId(),
+      deviceId: DeviceInfo.getDeviceId(),
+      readableVersion: DeviceInfo.getReadableVersion(),
+      version: DeviceInfo.getVersion()
+    };
+  }
 
   handleNavigationStateChange = ({ url }) => {
     const { baseUrl } = this.props;
@@ -52,6 +53,70 @@ class DOMContext extends PureComponent {
     ) {
       this.webView.stopLoading();
       DOMContext.openURLInBrowser(url);
+    }
+  };
+
+  handleMessageEvent = e => {
+    const { onRenderComplete, onRenderError, data } = this.props;
+    const json = e.nativeEvent.data;
+    if (
+      json.indexOf("isTngMessage") === -1 &&
+      json.indexOf("unrulyLoaded") === -1
+    ) {
+      // don't try and process postMessage events from 3rd party scripts
+      return;
+    }
+    const { type, detail } = JSON.parse(json);
+    const { loaded } = this.state;
+    const { isVisible } = this;
+    switch (type) {
+      case "renderFailed":
+        onRenderError();
+        break;
+      case "unrulyLoaded": {
+        if (loaded && isVisible) {
+          this.inViewport();
+        }
+        break;
+      }
+      case "renderComplete":
+        onRenderComplete();
+        break;
+      default:
+        if (data.debug) {
+          logger(type, detail);
+        }
+    }
+  };
+
+  outViewport = () => {
+    this.isVisible = false;
+    if (this.webView) {
+      this.webView.injectJavaScript(`
+          if (typeof unrulyViewportStatus === "function") {
+            unrulyViewportStatus(false);
+          };
+        `);
+    }
+  };
+
+  loadAd = () => {
+    this.setState({
+      loaded: true
+    });
+  };
+
+  inViewport = () => {
+    this.isVisible = true;
+    if (this.webView) {
+      this.webView.injectJavaScript(`
+          if (typeof unrulyViewportStatus === "function") {
+            unrulyViewportStatus(${JSON.stringify({
+              ...this.deviceInfo,
+              visible: true
+            })})
+          };
+        `);
     }
   };
 
@@ -100,7 +165,10 @@ class DOMContext extends PureComponent {
         <body>
           <div></div>
           <script>
-            window.postMessage = function(data) {window.ReactNativeWebView.postMessage(data);};
+            window.postMessage = function(data) {
+              var message = typeof data === "string" ? data : JSON.stringify(data);
+              window.ReactNativeWebView.postMessage(message);
+            };
             (${webviewEventCallbackSetup})({window});
           </script>
           <script>
@@ -115,29 +183,42 @@ class DOMContext extends PureComponent {
         </body>
       </html>
     `;
+    const { loaded } = this.state;
     return (
-      <View
+      <ViewportAwareView
+        onViewportEnter={this.loadAd}
         style={{
           height,
           width
         }}
       >
-        <WebView
-          onMessage={this.handleMessageEvent}
-          onNavigationStateChange={this.handleNavigationStateChange}
-          originWhitelist={
-            Platform.OS === "android" ? ["http://.*", "https://.*"] : undefined
-          }
-          ref={ref => {
-            this.webView = ref;
-          }}
-          source={{
-            baseUrl,
-            html
-          }}
-          style={{ backgroundColor: "transparent" }}
-        />
-      </View>
+        {loaded && (
+          <WebView
+            onMessage={this.handleMessageEvent}
+            onNavigationStateChange={this.handleNavigationStateChange}
+            originWhitelist={
+              Platform.OS === "android"
+                ? ["http://.*", "https://.*"]
+                : undefined
+            }
+            ref={ref => {
+              this.webView = ref;
+            }}
+            source={{
+              baseUrl,
+              html
+            }}
+            style={{ position: "absolute", width, height }}
+          />
+        )}
+        {height !== 0 && (
+          <ViewportAwareView
+            onViewportEnter={this.inViewport}
+            onViewportLeave={this.outViewport}
+            style={calculateViewportVisible(height)}
+          />
+        )}
+      </ViewportAwareView>
     );
   }
 }

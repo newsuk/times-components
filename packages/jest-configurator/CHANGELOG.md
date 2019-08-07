@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.6.0](https://github.com/newsuk/times-components/compare/@times-components/jest-configurator@2.5.15...@times-components/jest-configurator@2.6.0) (2019-08-07)
+
+
+### Features
+
+* (REPLAT-6797) add viewport tracking for unruly ads ([#2111](https://github.com/newsuk/times-components/issues/2111)) ([3a329cf](https://github.com/newsuk/times-components/commit/3a329cf))
+
+
+
+
+
 ## [2.5.15](https://github.com/newsuk/times-components/compare/@times-components/jest-configurator@2.5.14...@times-components/jest-configurator@2.5.15) (2019-08-05)
 
 **Note:** Version bump only for package @times-components/jest-configurator

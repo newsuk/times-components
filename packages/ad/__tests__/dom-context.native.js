@@ -51,6 +51,45 @@ export default () => {
     expect(onRenderComplete).toHaveBeenCalledTimes(1);
   });
 
+  it("calls inViewport when it receives a unrulyLoaded event from the webview and we are loaded", () => {
+    const inViewport = jest.fn();
+    const component = new DOMContextNative(DOMContextNative.defaultProps);
+    component.state = {
+      loaded: true
+    };
+    component.isVisible = true;
+    component.inViewport = inViewport;
+
+    component.handleMessageEvent(makeMessageEvent("unrulyLoaded"));
+    expect(inViewport).toHaveBeenCalledTimes(1);
+  });
+
+  it("doesnt call inViewport when it receives a unrulyLoaded event from the webview and we are not loaded", () => {
+    const inViewport = jest.fn();
+    const component = new DOMContextNative(DOMContextNative.defaultProps);
+    component.state = {
+      loaded: false
+    };
+    component.isVisible = true;
+    component.inViewport = inViewport;
+
+    component.handleMessageEvent(makeMessageEvent("unrulyLoaded"));
+    expect(inViewport).toHaveBeenCalledTimes(0);
+  });
+
+  it("doesnt call inViewport when it receives a unrulyLoaded event from the webview and we are not visible", () => {
+    const inViewport = jest.fn();
+    const component = new DOMContextNative(DOMContextNative.defaultProps);
+    component.state = {
+      loaded: true
+    };
+    component.isVisible = false;
+    component.inViewport = inViewport;
+
+    component.handleMessageEvent(makeMessageEvent("unrulyLoaded"));
+    expect(inViewport).toHaveBeenCalledTimes(0);
+  });
+
   it("calls onRenderError when it receives a onRenderError event from the webview", () => {
     const onRenderError = jest.fn();
     const component = new DOMContextNative({

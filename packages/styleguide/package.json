@@ -1,6 +1,6 @@
 {
   "name": "@times-components/styleguide",
-  "version": "3.28.39",
+  "version": "3.28.40",
   "description": "Centralised library for common styles throughout the Times",
   "main": "dist/styleguide",
   "dev": "src/styleguide",
@@ -38,9 +38,9 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.8.12",
-    "@times-components/jest-configurator": "2.5.15",
-    "@times-components/jest-serializer": "3.2.11",
-    "@times-components/storybook": "4.0.26",
+    "@times-components/jest-configurator": "2.6.0",
+    "@times-components/jest-serializer": "3.2.12",
+    "@times-components/storybook": "4.0.27",
     "@times-components/test-utils": "2.3.1",
     "@times-components/webpack-configurator": "2.0.22",
     "babel-loader": "8.0.5",

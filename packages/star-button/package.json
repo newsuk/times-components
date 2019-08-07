@@ -1,6 +1,6 @@
 {
   "name": "@times-components/star-button",
-  "version": "0.1.64",
+  "version": "0.1.65",
   "description": "Star button",
   "main": "dist/star-button",
   "dev": "src/star-button",
@@ -39,9 +39,9 @@
   "devDependencies": {
     "@babel/core": "7.4.4",
     "@times-components/eslint-config-thetimes": "0.8.12",
-    "@times-components/jest-configurator": "2.5.15",
-    "@times-components/jest-serializer": "3.2.11",
-    "@times-components/storybook": "4.0.26",
+    "@times-components/jest-configurator": "2.6.0",
+    "@times-components/jest-serializer": "3.2.12",
+    "@times-components/storybook": "4.0.27",
     "@times-components/test-utils": "2.3.1",
     "@times-components/webpack-configurator": "2.0.22",
     "babel-jest": "24.8.0",
@@ -56,9 +56,9 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/icons": "2.12.6",
-    "@times-components/link": "3.4.34",
-    "@times-components/styleguide": "3.28.39",
+    "@times-components/icons": "2.12.7",
+    "@times-components/link": "3.4.35",
+    "@times-components/styleguide": "3.28.40",
     "prop-types": "15.7.2"
   },
   "peerDependencies": {
