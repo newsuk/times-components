@@ -4,7 +4,9 @@ import PropTypes from "prop-types";
 import { SectionContext } from "@times-components/context";
 import { IconForwardArrow } from "@times-components/icons";
 import { colours } from "@times-components/styleguide";
-import styles from "./styles";
+import styleFactory from "./styles";
+
+const styles = styleFactory();
 
 const PuzzleBar = ({ onPress }) => (
   <SectionContext.Consumer>
