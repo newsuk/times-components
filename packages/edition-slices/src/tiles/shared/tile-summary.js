@@ -7,13 +7,8 @@ import ArticleSummary, {
 } from "@times-components/article-summary";
 import { ArticleFlags } from "@times-components/article-flag";
 import { colours } from "@times-components/styleguide";
-import TileStar from "./tile-star";
-import {
-  horizontalStyles,
-  starHeadlinePaddingBottom,
-  starTeaserPaddingBottom
-} from "./styles";
-import { isSaveSupported } from "./utils";
+// import { horizontalStyles } from "./styles";
+import PositionedTileStar from "./positioned-tile-star";
 
 class TileSummary extends Component {
   constructor(props) {
@@ -52,17 +47,19 @@ class TileSummary extends Component {
       tile: {
         article: { id }
       },
+      isAfterContentStar,
+      isCenteredStar,
       isDarkStar,
       starStyle
     } = this.props;
 
-    const tileStyle = starStyle || horizontalStyles;
-
     return (
-      <TileStar
+      <PositionedTileStar
         articleId={id}
-        isDark={isDarkStar}
-        style={tileStyle.starButton}
+        isDarkStar={isDarkStar}
+        isCenteredStar={isCenteredStar}
+        isAfterContentStar={isAfterContentStar}
+        style={starStyle}
       />
     );
   }
@@ -73,21 +70,13 @@ class TileSummary extends Component {
         headline: tileHeadline,
         article: { headline, shortHeadline }
       },
-      headlineStyle,
-      withStar,
-      summary
+      headlineStyle
     } = this.props;
-
-    const shouldAddBottomPadding = isSaveSupported && !withStar && !summary;
 
     return (
       <ArticleSummaryHeadline
         headline={tileHeadline || shortHeadline || headline}
-        style={
-          shouldAddBottomPadding
-            ? [headlineStyle, starHeadlinePaddingBottom]
-            : headlineStyle
-        }
+        style={headlineStyle}
       />
     );
   }
@@ -103,7 +92,7 @@ class TileSummary extends Component {
   render() {
     const {
       tile: {
-        article: { hasVideo, label, section, expirableFlags }
+        article: { hasVideo, label, section }
       },
       bylines,
       bylineStyle,
@@ -113,12 +102,6 @@ class TileSummary extends Component {
       withStar,
       labelColour
     } = this.props;
-
-    const shouldAddBottomPadding =
-      isSaveSupported &&
-      !withStar &&
-      expirableFlags &&
-      expirableFlags.length === 0;
 
     return (
       <ArticleSummary
@@ -135,10 +118,8 @@ class TileSummary extends Component {
           title: label
         }}
         strapline={strapline ? this.renderStrapline() : undefined}
-        saveStar={withStar && isSaveSupported && this.renderSaveStar()}
-        style={
-          shouldAddBottomPadding ? [starTeaserPaddingBottom, style] : style
-        }
+        saveStar={withStar && this.renderSaveStar()}
+        style={style}
       />
     );
   }
@@ -148,7 +129,6 @@ TileSummary.propTypes = {
   bylineStyle: PropTypes.shape({}),
   flagColour: PropTypes.shape({}),
   headlineStyle: PropTypes.shape({}),
-  isDarkStar: PropTypes.bool,
   labelColour: PropTypes.string,
   strapline: PropTypes.string,
   straplineStyle: PropTypes.shape({}),
@@ -156,21 +136,28 @@ TileSummary.propTypes = {
   summary: PropTypes.arrayOf(PropTypes.shape({})),
   summaryStyle: PropTypes.shape({}),
   tile: PropTypes.shape({}).isRequired,
-  withStar: PropTypes.bool
+  withStar: PropTypes.bool,
+  isAfterContentStar: PropTypes.bool,
+  isCenteredStar: PropTypes.bool,
+  isDarkStar: PropTypes.bool,
+  starStyle: PropTypes.shape({})
 };
 
 TileSummary.defaultProps = {
   bylineStyle: null,
   flagColour: {},
   headlineStyle: null,
-  isDarkStar: false,
   labelColour: null,
   strapline: null,
   straplineStyle: null,
   style: null,
   summary: null,
   summaryStyle: null,
-  withStar: false
+  withStar: true,
+  isAfterContentStar: false,
+  isCenteredStar: false,
+  isDarkStar: false,
+  starStyle: null
 };
 
 export default TileSummary;
