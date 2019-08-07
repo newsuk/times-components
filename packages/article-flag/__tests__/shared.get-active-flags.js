@@ -36,6 +36,17 @@ export default () => {
       }
     },
     {
+      name: "returns flags when expiry time is null",
+      test: () => {
+        const flags = [
+          { expiryTime: null, type: "UPDATED" },
+          { expiryTime: null, type: "EXCLUSIVE" }
+        ];
+
+        expect(getActiveFlags(flags)).toEqual(flags);
+      }
+    },
+    {
       name: "returns no flags when no flags are provided",
       test: () => {
         expect(getActiveFlags([])).toEqual([]);

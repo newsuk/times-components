@@ -3,7 +3,10 @@ const getActiveArticleFlags = flags => {
   return flags
     .map(
       flag =>
-        new Date().getTime() < new Date(flag.expiryTime).getTime() ? flag : null
+        flag.expiryTime === null ||
+        new Date().getTime() < new Date(flag.expiryTime).getTime()
+          ? flag
+          : null
     )
     .filter(flag => flag !== null);
 };
