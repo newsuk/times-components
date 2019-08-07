@@ -13,6 +13,7 @@ import {
   tabletWidthMax,
   colours
 } from "@times-components/styleguide";
+import { Viewport } from "@skele/components";
 import ArticleRowFlow from "./article-body/article-body-row";
 import {
   articleSkeletonPropTypes,
@@ -327,40 +328,42 @@ class ArticleSkeleton extends Component {
     return (
       <AdComposer adConfig={adConfig}>
         <View style={styles.articleContainer}>
-          <FlatList
-            data={content || []}
-            initialListSize={listViewSize}
-            removeClippedSubviews
-            interactiveConfig={interactiveConfig}
-            keyExtractor={item =>
-              item.index ? `${item.type}.${item.index}` : item.type
-            }
-            ListHeaderComponent={
-              <Gutter>
-                <Header width={Math.min(maxWidth, width)} />
-              </Gutter>
-            }
-            nestedScrollEnabled
-            onViewableItemsChanged={
-              onViewed ? this.onViewableItemsChanged : null
-            }
-            pageSize={listViewPageSize}
-            renderItem={({ item }) => (
-              <Gutter>
-                {renderRow(
-                  item,
-                  onCommentsPress,
-                  onCommentGuidelinesPress,
-                  onRelatedArticlePress,
-                  onTopicPress,
-                  analyticsStream
-                )}
-              </Gutter>
-            )}
-            scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
-            testID="flat-list-article"
-            viewabilityConfig={viewabilityConfig}
-          />
+          <Viewport.Tracker>
+            <FlatList
+              data={content || []}
+              initialListSize={listViewSize}
+              removeClippedSubviews
+              interactiveConfig={interactiveConfig}
+              keyExtractor={item =>
+                item.index ? `${item.type}.${item.index}` : item.type
+              }
+              ListHeaderComponent={
+                <Gutter>
+                  <Header width={Math.min(maxWidth, width)} />
+                </Gutter>
+              }
+              nestedScrollEnabled
+              onViewableItemsChanged={
+                onViewed ? this.onViewableItemsChanged : null
+              }
+              pageSize={listViewPageSize}
+              renderItem={({ item }) => (
+                <Gutter>
+                  {renderRow(
+                    item,
+                    onCommentsPress,
+                    onCommentGuidelinesPress,
+                    onRelatedArticlePress,
+                    onTopicPress,
+                    analyticsStream
+                  )}
+                </Gutter>
+              )}
+              scrollRenderAheadDistance={listViewScrollRenderAheadDistance}
+              testID="flat-list-article"
+              viewabilityConfig={viewabilityConfig}
+            />
+          </Viewport.Tracker>
         </View>
       </AdComposer>
     );

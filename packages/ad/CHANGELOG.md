@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.7.0](https://github.com/newsuk/times-components/compare/@times-components/ad@2.6.38...@times-components/ad@2.7.0) (2019-08-07)
+
+
+### Features
+
+* (REPLAT-6797) add viewport tracking for unruly ads ([#2111](https://github.com/newsuk/times-components/issues/2111)) ([3a329cf](https://github.com/newsuk/times-components/commit/3a329cf))
+
+
+
+
+
 ## [2.6.38](https://github.com/newsuk/times-components/compare/@times-components/ad@2.6.37...@times-components/ad@2.6.38) (2019-08-06)
 
 **Note:** Version bump only for package @times-components/ad
