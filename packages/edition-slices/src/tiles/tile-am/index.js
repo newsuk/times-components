@@ -1,4 +1,5 @@
 import React from "react";
+import { View } from "react-native";
 import PropTypes from "prop-types";
 import Image from "@times-components/image";
 import {
@@ -10,6 +11,7 @@ import {
 } from "../shared";
 import styles from "./styles";
 import WithoutWhiteSpace from "../shared/without-white-space";
+import PositionedTileStar from "../shared/positioned-tile-star";
 
 const TileAM = ({ onPress, tile }) => {
   const crop = getTileImage(tile, "crop169");
@@ -26,16 +28,20 @@ const TileAM = ({ onPress, tile }) => {
         uri={crop.url}
         fill
       />
-      <WithoutWhiteSpace
-        render={whiteSpaceHeight => (
-          <TileSummary
-            headlineStyle={styles.headline}
-            summary={getTileSummary(tile, 800)}
-            tile={tile}
-            whiteSpaceHeight={whiteSpaceHeight}
-          />
-        )}
-      />
+      <View style={styles.summaryContainer}>
+        <WithoutWhiteSpace
+          render={whiteSpaceHeight => (
+            <TileSummary
+              headlineStyle={styles.headline}
+              summary={getTileSummary(tile, 800)}
+              tile={tile}
+              whiteSpaceHeight={whiteSpaceHeight}
+              withStar={false}
+            />
+          )}
+        />
+        <PositionedTileStar articleId={tile.article.id} />
+      </View>
     </TileLink>
   );
 };

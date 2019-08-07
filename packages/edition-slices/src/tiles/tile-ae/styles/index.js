@@ -4,7 +4,7 @@ import { fullHeightSummaryContainer } from "../../shared/styles";
 const styles = {
   container: {
     flex: 1,
-    paddingHorizontal: spacing(2),
+    padding: spacing(2),
     paddingTop: spacing(3)
   },
   headline: {

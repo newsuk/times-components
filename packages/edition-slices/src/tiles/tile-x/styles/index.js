@@ -30,8 +30,7 @@ const mediumBreakpointStyles = {
 const wideBreakpointStyles = {
   container: {
     flex: 1,
-    paddingHorizontal: spacing(2),
-    paddingTop: spacing(2)
+    padding: spacing(2)
   },
   headline: {
     fontFamily: fonts.headline,
@@ -46,8 +45,7 @@ const wideBreakpointStyles = {
     paddingBottom: spacing(1)
   },
   summaryContainer: {
-    marginHorizontal: spacing(2),
-    marginVertical: spacing(1)
+    marginHorizontal: spacing(2)
   }
 };
 

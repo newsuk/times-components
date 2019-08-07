@@ -20,14 +20,8 @@ const main = {
   summaryContainer: {
     paddingBottom: spacing(1),
     paddingRight: spacing(4),
-    width: "33.33%"
-  },
-  star: {
-    alignItems: "flex-start",
-    flex: 1,
-    marginTop: spacing(-1),
-    marginLeft: spacing(5),
-    width: "75%"
+    width: "33.33%",
+    ...fullHeightSummaryContainer
   }
 };
 
@@ -56,16 +50,15 @@ const mediumStyles = {
 };
 
 const wideStyles = {
-  star: {
-    alignItems: "flex-start",
-    flex: 1,
-    marginTop: spacing(-1),
-    width: "72%"
-  },
   headline: {
     fontFamily: fonts.headline,
     fontSize: 35,
     lineHeight: 35
+  },
+  summaryContainer: {
+    width: "33.33%",
+    paddingRight: spacing(4),
+    ...fullHeightSummaryContainer
   }
 };
 
@@ -74,12 +67,6 @@ const hugeStyles = {
     fontFamily: fonts.headline,
     fontSize: 35,
     lineHeight: 35
-  },
-  star: {
-    alignItems: "flex-start",
-    flex: 1,
-    marginTop: spacing(-1),
-    width: "72%"
   }
 };
 

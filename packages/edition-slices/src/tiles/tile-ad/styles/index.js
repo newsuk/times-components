@@ -27,7 +27,6 @@ const styles = breakpoint => ({
     width: "30%"
   },
   summaryContainer: {
-    paddingHorizontal: spacing(2),
     width: "70%"
   }
 });
@@ -42,6 +41,6 @@ const mediumBreakpointStyles = {
 };
 
 export default breakpoint =>
-  breakpoint === editionBreakpoints.small
-    ? styles(breakpoint)
-    : { ...styles(breakpoint), ...mediumBreakpointStyles };
+  breakpoint === editionBreakpoints.medium
+    ? { ...styles(breakpoint), ...mediumBreakpointStyles }
+    : styles(breakpoint);

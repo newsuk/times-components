@@ -1,10 +1,10 @@
 import { fonts, spacing } from "@times-components/styleguide";
+import { fullHeightSummaryContainer } from "../../shared/styles";
 
 const styles = {
   container: {
     flex: 1,
-    paddingHorizontal: spacing(2),
-    paddingTop: spacing(2)
+    padding: spacing(2)
   },
   headline: {
     fontFamily: fonts.headline,
@@ -15,6 +15,9 @@ const styles = {
   imageContainer: {
     marginBottom: spacing(2),
     width: "100%"
+  },
+  summaryContainer: {
+    ...fullHeightSummaryContainer
   }
 };
 
