@@ -1039,10 +1039,6 @@ exports[`3. lead one and one 1`] = `
 exports[`4. lead one and four 1`] = `
 <style>
 .IS1 {
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
   width: 50%;
 }
 
@@ -1116,8 +1112,10 @@ exports[`4. lead one and four 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-right: 10px;
-  padding-left: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;

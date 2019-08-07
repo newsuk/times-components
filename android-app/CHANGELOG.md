@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.16.0](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.15.28...@times-components/android-app@0.16.0) (2019-08-07)
+
+
+### Features
+
+* (REPLAT-6797) add viewport tracking for unruly ads ([#2111](https://github.com/newsuk/times-components/issues/2111)) ([3a329cf](https://github.com/newsuk/times-components/commit/3a329cf))
+
+
+
+
+
+## [0.15.28](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.15.27...@times-components/android-app@0.15.28) (2019-08-06)
+
+**Note:** Version bump only for package @times-components/android-app
+
+
+
+
+
+## [0.15.27](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.15.26...@times-components/android-app@0.15.27) (2019-08-06)
+
+**Note:** Version bump only for package @times-components/android-app
+
+
+
+
+
 ## [0.15.26](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.15.25...@times-components/android-app@0.15.26) (2019-08-05)
 
 **Note:** Version bump only for package @times-components/android-app

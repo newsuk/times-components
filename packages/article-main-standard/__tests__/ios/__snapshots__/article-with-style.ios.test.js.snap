@@ -109,7 +109,7 @@ exports[`full article with style on mobile 1`] = `
       <View
         style={
           Object {
-            "paddingTop": 5,
+            "paddingTop": 10,
           }
         }
       >
@@ -240,7 +240,7 @@ exports[`full article with style on tablet 1`] = `
       <View
         style={
           Object {
-            "paddingTop": 5,
+            "paddingTop": 10,
           }
         }
       >

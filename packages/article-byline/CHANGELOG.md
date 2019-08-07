@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.108](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.1.107...@times-components/article-byline@3.1.108) (2019-08-07)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.1.107](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.1.106...@times-components/article-byline@3.1.107) (2019-08-06)
+
+
+### Bug Fixes
+
+* revert design changes for web ([#2161](https://github.com/newsuk/times-components/issues/2161)) ([667427f](https://github.com/newsuk/times-components/commit/667427f))
+
+
+
+
+
+## [3.1.106](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.1.105...@times-components/article-byline@3.1.106) (2019-08-06)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
 ## [3.1.105](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.1.104...@times-components/article-byline@3.1.105) (2019-08-05)
 
 **Note:** Version bump only for package @times-components/article-byline

@@ -1,50 +1,48 @@
 import React from "react";
+import { View } from "react-native";
 import PropTypes from "prop-types";
-import { editionBreakpoints } from "@times-components/styleguide";
 import Image from "@times-components/image";
 import {
   getTileImage,
+  getTileSummary,
   TileLink,
   TileSummary,
   withTileTracking
 } from "../shared";
-import styleFactory from "./styles";
+import styles from "./styles";
 
-const TileAD = ({ onPress, tile, breakpoint }) => {
-  const styles = styleFactory(breakpoint);
-  const { container, headline, imageContainer, summaryContainer } = styles;
+const TileAS = ({ onPress, tile }) => {
   const crop = getTileImage(tile, "crop32");
 
   return (
-    <TileLink onPress={onPress} style={container} tile={tile}>
-      {breakpoint !== editionBreakpoints.medium && (
+    <TileLink
+      onPress={onPress}
+      style={styles.container}
+      tile={tile}
+      starStyle={styles.star}
+    >
+      <View style={styles.imageContainer}>
         <Image
           aspectRatio={3 / 2}
+          uri={crop.url}
           relativeWidth={crop.relativeWidth}
           relativeHeight={crop.relativeHeight}
           relativeHorizontalOffset={crop.relativeHorizontalOffset}
           relativeVerticalOffset={crop.relativeVerticalOffset}
-          style={imageContainer}
-          uri={crop.url}
         />
-      )}
+      </View>
       <TileSummary
-        headlineStyle={headline}
-        style={summaryContainer}
+        headlineStyle={styles.headline}
+        summary={getTileSummary(tile, 125)}
         tile={tile}
       />
     </TileLink>
   );
 };
 
-TileAD.propTypes = {
-  breakpoint: PropTypes.string,
+TileAS.propTypes = {
   onPress: PropTypes.func.isRequired,
   tile: PropTypes.shape({}).isRequired
 };
 
-TileAD.defaultProps = {
-  breakpoint: editionBreakpoints.small
-};
-
-export default withTileTracking(TileAD);
+export default withTileTracking(TileAS);

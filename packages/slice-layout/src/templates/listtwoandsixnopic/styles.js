@@ -32,7 +32,8 @@ const mediumBreakpointStyles = {
   container: {
     flex: 1,
     flexDirection: "row",
-    marginHorizontal: spacing(2)
+    marginHorizontal: spacing(4),
+    marginVertical: spacing(1)
   }
 };
 

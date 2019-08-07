@@ -15,7 +15,8 @@ const headlineFontSizeResolver = {
 
 export default breakpoint => ({
   container: {
-    flex: 1
+    flex: 1,
+    padding: spacing(2)
   },
   headline: {
     fontFamily: fonts.headline,
@@ -34,6 +35,6 @@ export default breakpoint => ({
     flex: 1,
     justifyContent: "center",
     paddingHorizontal: spacing(8),
-    paddingVertical: spacing(4)
+    paddingVertical: spacing(3)
   }
 });

@@ -17,7 +17,7 @@ exports[`2. with the author in the begining 1`] = `
   className="css-view-1dbjc4n"
 >
   <a
-    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-fontWeight-vw2c0b r-lineHeight-fxxt2n r-textDecorationLine-13wfysu"
+    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-13wfysu"
     href="/profile/camilla-long"
     role="link"
   >
@@ -41,7 +41,7 @@ exports[`3. with the author at the end 1`] = `
     RBS Six Nations, 
   </div>
   <a
-    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-fontWeight-vw2c0b r-lineHeight-fxxt2n r-textDecorationLine-13wfysu"
+    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-13wfysu"
     href="/profile/mike-atherton"
     role="link"
   >
@@ -55,7 +55,7 @@ exports[`4. with multiple authors separated by a pipe 1`] = `
   className="css-view-1dbjc4n"
 >
   <a
-    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-fontWeight-vw2c0b r-lineHeight-fxxt2n r-textDecorationLine-13wfysu"
+    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-13wfysu"
     href="/profile/camilla-long"
     role="link"
   >
@@ -67,7 +67,7 @@ exports[`4. with multiple authors separated by a pipe 1`] = `
      | 
   </div>
   <a
-    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-fontWeight-vw2c0b r-lineHeight-fxxt2n r-textDecorationLine-13wfysu"
+    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-13wfysu"
     href="/profile/mike-atherton"
     role="link"
   >
@@ -79,7 +79,7 @@ exports[`4. with multiple authors separated by a pipe 1`] = `
      | 
   </div>
   <a
-    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-fontWeight-vw2c0b r-lineHeight-fxxt2n r-textDecorationLine-13wfysu"
+    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-13wfysu"
     href="/profile/alexandra-frean"
     role="link"
   >
@@ -93,7 +93,7 @@ exports[`5. with multiple authors separated by text with commas 1`] = `
   className="css-view-1dbjc4n"
 >
   <a
-    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-fontWeight-vw2c0b r-lineHeight-fxxt2n r-textDecorationLine-13wfysu"
+    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-13wfysu"
     href="/profile/camilla-long"
     role="link"
   >
@@ -105,7 +105,7 @@ exports[`5. with multiple authors separated by text with commas 1`] = `
     , 
   </div>
   <a
-    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-fontWeight-vw2c0b r-lineHeight-fxxt2n r-textDecorationLine-13wfysu"
+    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-13wfysu"
     href="/profile/mike-atherton"
     role="link"
   >
@@ -117,7 +117,7 @@ exports[`5. with multiple authors separated by text with commas 1`] = `
     , 
   </div>
   <a
-    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-fontWeight-vw2c0b r-lineHeight-fxxt2n r-textDecorationLine-13wfysu"
+    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-13wfysu"
     href="/profile/alexandra-frean"
     role="link"
   >
@@ -131,7 +131,7 @@ exports[`6. with multiple authors separated by spaces 1`] = `
   className="css-view-1dbjc4n"
 >
   <a
-    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-fontWeight-vw2c0b r-lineHeight-fxxt2n r-textDecorationLine-13wfysu"
+    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-13wfysu"
     href="/profile/camilla-long"
     role="link"
   >
@@ -143,14 +143,14 @@ exports[`6. with multiple authors separated by spaces 1`] = `
      
   </div>
   <a
-    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-fontWeight-vw2c0b r-lineHeight-fxxt2n r-textDecorationLine-13wfysu"
+    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-13wfysu"
     href="/profile/mike-atherton"
     role="link"
   >
     Mike Atherton
   </a>
   <a
-    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-fontWeight-vw2c0b r-lineHeight-fxxt2n r-textDecorationLine-13wfysu"
+    className="css-reset-4rbku5 css-cursor-18t94o4 css-text-901oao r-color-j7kcqb r-cursor-1loqt21 r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-textDecorationLine-13wfysu"
     href="/profile/alexandra-frean"
     role="link"
   >

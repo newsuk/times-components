@@ -110,7 +110,7 @@ exports[`1. article main standard - tablet 1`] = `
       <View
         style={
           Object {
-            "paddingTop": 5,
+            "paddingTop": 10,
           }
         }
       >

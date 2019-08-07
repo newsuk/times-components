@@ -5,7 +5,7 @@
   "description": "A collection of presentational components for The Times and Sunday Times",
   "main": "index.js",
   "engines": {
-    "node": ">=8.10.0 <12",
+    "node": ">=8.10.0 <13",
     "yarn": "1.16.0"
   },
   "bin": {
@@ -138,7 +138,6 @@
     "react-dom": "16.8.6",
     "react-native-web": "0.11.4",
     "react-native-web-image-loader": "0.0.6",
-    "react-scripts": "3.0.1",
     "rimraf": "2.6.1",
     "sort-pkg": "1.1.0",
     "url": "0.11.0",
@@ -153,6 +152,7 @@
     "@babel/runtime-corejs2": "7.4.4",
     "react-art": "16.6.3",
     "react-native": "0.59.10",
+    "react-native-device-info": "2.3.2",
     "react-native-showcase-loader": "1.1.0"
   }
 }

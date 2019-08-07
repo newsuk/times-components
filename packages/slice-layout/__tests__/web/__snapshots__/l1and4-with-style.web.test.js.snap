@@ -104,12 +104,14 @@ exports[`2. lead one and four - medium 1`] = `
       "flexDirection": "row",
       "flexGrow": 1,
       "flexShrink": 1,
+      "marginLeft": "20px",
+      "marginRight": "20px",
       "msFlexDirection": "row",
       "msFlexNegative": 1,
       "msFlexPositive": 1,
       "msFlexPreferredSize": "0%",
-      "paddingLeft": "10px",
-      "paddingRight": "10px",
+      "paddingBottom": "5px",
+      "paddingTop": "5px",
     }
   }
 >
@@ -117,10 +119,6 @@ exports[`2. lead one and four - medium 1`] = `
     className="css-view-1dbjc4n"
     style={
       Object {
-        "paddingBottom": "10px",
-        "paddingLeft": "10px",
-        "paddingRight": "10px",
-        "paddingTop": "10px",
         "width": "50%",
       }
     }
