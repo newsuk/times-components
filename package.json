@@ -144,7 +144,6 @@
     "react-dom": "16.8.6",
     "react-native-web": "0.11.4",
     "react-native-web-image-loader": "0.0.6",
-    "react-scripts": "3.0.1",
     "rimraf": "2.6.1",
     "sort-pkg": "1.1.0",
     "subcommander": "1.0.0",
