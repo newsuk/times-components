@@ -113,6 +113,7 @@
     "@storybook/react": "4.1.18",
     "@storybook/react-native": "4.1.18",
     "@times-components/depend": "*",
+    "babel-eslint": "10.0.2",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.5",
     "babel-plugin-module-resolver": "3.2.0",
