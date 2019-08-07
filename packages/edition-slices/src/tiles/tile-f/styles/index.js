@@ -2,8 +2,7 @@ import { fontFactory, spacing } from "@times-components/styleguide";
 
 const styles = {
   container: {
-    paddingHorizontal: spacing(2),
-    paddingTop: spacing(2)
+    padding: spacing(2)
   },
   headline: {
     ...fontFactory({
@@ -12,7 +11,7 @@ const styles = {
     })
   },
   summaryContainer: {
-    marginHorizontal: spacing(2),
+    marginHorizontal: spacing(8),
     marginVertical: spacing(1)
   }
 };

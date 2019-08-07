@@ -3,7 +3,6 @@ import {
   spacing,
   editionBreakpoints
 } from "@times-components/styleguide";
-import { verticalStyles } from "../../shared/styles";
 
 const headlineFontSizeResolver = {
   [editionBreakpoints.huge]: 35,
@@ -23,7 +22,6 @@ export default breakpoint => ({
     marginTop: spacing(4),
     textAlign: "center"
   },
-  star: verticalStyles,
   strapline: {
     fontFamily: fonts.bodyRegular,
     fontSize: 14,

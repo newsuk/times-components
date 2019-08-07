@@ -11,18 +11,13 @@ import styles from "./styles";
 
 const TileA = ({ onPress, tile }) => {
   const crop = getTileImage(tile, "crop169");
+
   return (
-    <TileLink
-      onPress={onPress}
-      tile={tile}
-      withStar={false}
-      style={styles.labelLink}
-    >
+    <TileLink onPress={onPress} tile={tile}>
       <TileSummary
         headlineStyle={styles.headline}
         style={styles.summaryContainer}
         tile={tile}
-        withStar
       />
       <Image
         aspectRatio={16 / 9}

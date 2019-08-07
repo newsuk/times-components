@@ -23,11 +23,13 @@ const styles = {
     width: "30%"
   },
   summaryContainer: {
-    justifyContent: "center",
     paddingLeft: spacing(2),
-    paddingTop: spacing(1),
     width: "70%",
-    paddingBottom: 0
+    ...fullHeightSummaryContainer
+  },
+  summaryContent: {
+    justifyContent: "center",
+    flex: 1
   }
 };
 
@@ -42,15 +44,6 @@ const mediumBreakpointStyles = {
     fontFamily: fonts.headline,
     fontSize: 20,
     lineHeight: 20
-  },
-  summaryContainer: {
-    paddingLeft: spacing(2),
-    width: "70%",
-    ...fullHeightSummaryContainer
-  },
-  summaryContent: {
-    justifyContent: "center",
-    flex: 1
   }
 };
 

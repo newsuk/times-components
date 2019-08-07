@@ -26,7 +26,11 @@ const TileC = ({ onPress, tile }) => {
           relativeVerticalOffset={crop.relativeVerticalOffset}
         />
       </View>
-      <TileSummary headlineStyle={styles.headline} tile={tile} />
+      <TileSummary
+        headlineStyle={styles.headline}
+        tile={tile}
+        style={styles.summaryContainer}
+      />
     </TileLink>
   );
 };

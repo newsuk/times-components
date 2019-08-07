@@ -11,11 +11,7 @@ const styles = {
     width: "100%"
   },
   summaryContainer: {
-    marginHorizontal: spacing(2),
-    marginTop: spacing(2)
-  },
-  labelLink: {
-    marginTop: spacing(1)
+    margin: spacing(2)
   }
 };
 

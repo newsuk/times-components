@@ -28,7 +28,7 @@ const styles = fontSize => ({
     color: colours.functional.greyLabel
   },
   summaryContainer: {
-    paddingHorizontal: spacing(2),
+    paddingLeft: spacing(2),
     width: "50%"
   }
 });
