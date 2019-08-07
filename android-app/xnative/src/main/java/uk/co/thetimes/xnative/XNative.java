@@ -1,6 +1,7 @@
 package uk.co.thetimes.xnative;
 
 import com.facebook.common.internal.ImmutableList;
+import com.learnium.RNDeviceInfo.RNDeviceInfo;
 import com.facebook.react.ReactPackage;
 import com.horcrux.svg.SvgPackage;
 import com.reactnativecommunity.webview.RNCWebViewPackage;
@@ -12,7 +13,8 @@ public class XNative {
         return ImmutableList.of(
                 new ComponentsPackage(),
                 new SvgPackage(),
-                new RNCWebViewPackage()
+                new RNCWebViewPackage(),
+                new RNDeviceInfo()
         );
     }
 }

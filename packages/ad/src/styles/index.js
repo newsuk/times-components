@@ -1,6 +1,8 @@
 import { StyleSheet } from "react-native";
 import styleguide from "@times-components/styleguide";
 
+const { colours, fontFactory, spacing } = styleguide();
+
 export const calculateViewBox = ({ height, width }) => {
   if (height >= 90 && width >= 728) {
     return {
@@ -28,7 +30,27 @@ export const calculateViewBox = ({ height, width }) => {
   };
 };
 
-const { colours, fontFactory, spacing } = styleguide();
+export const calculateViewportVisible = height => {
+  const middle = height / 2;
+  const middleOffset = 5;
+  const minWidth = 10; // must be some width to render
+  const minHeight = 10; // must be some height to render
+  /*
+  It should look like this:
+  ---------AD----------
+  ---------AD----------
+  =======MARKER========
+  ---------AD----------
+  ---------AD----------
+  */
+  return {
+    width: minWidth,
+    height: minHeight,
+    top: middle - middleOffset,
+    position: "absolute"
+  };
+};
+
 const styles = StyleSheet.create({
   children: {
     flex: 1
