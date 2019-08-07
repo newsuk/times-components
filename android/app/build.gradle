@@ -153,7 +153,8 @@ repositories {
 }
 
 dependencies {
-    implementation "com.facebook.react:react-native:0.58.6"  // From node_modules
+    implementation "com.facebook.react:react-native:0.59.10"  // From node_modules
+    implementation project(':react-native-device-info')
     implementation project(':react-native-svg')
     implementation project(':react-native-webview')
     implementation "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"
