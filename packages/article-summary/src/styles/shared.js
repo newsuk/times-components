@@ -36,7 +36,6 @@ const sharedStyles = {
   text: {
     color: colours.functional.secondary,
     flexWrap: "wrap",
-    marginBottom: spacing(2),
     ...fontFactory({
       font: "body",
       fontSize: "teaser"
