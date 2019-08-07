@@ -1,13 +1,8 @@
-import {
-  colours,
-  fonts,
-  spacing,
-  editionBreakpoints
-} from "@times-components/styleguide";
-import { verticalStyles } from "../../shared/styles";
+import { colours, fonts, spacing, editionBreakpoints } from "@times-components/styleguide";
 
 const smallBreakpointStyles = {
   container: {
+    flex: 1,
     paddingBottom: spacing(2)
   },
   headline: {
@@ -18,7 +13,9 @@ const smallBreakpointStyles = {
     marginTop: spacing(4),
     textAlign: "center"
   },
-  star: verticalStyles,
+  summaryContainer: {
+    flex: 1
+  },
   strapline: {
     color: colours.functional.secondary,
     fontFamily: fonts.bodyRegular,

@@ -33,12 +33,15 @@ const styles = breakpoint => ({
 });
 
 const mediumBreakpointStyles = {
+  imageContainer: {
+    width: "100%"
+  },
   summaryContainer: {
     width: "100%"
   }
 };
 
 export default breakpoint =>
-  breakpoint === editionBreakpoints.medium
-    ? { ...styles(breakpoint), ...mediumBreakpointStyles }
-    : styles(breakpoint);
+  breakpoint === editionBreakpoints.small
+    ? styles(breakpoint)
+    : { ...styles(breakpoint), ...mediumBreakpointStyles };

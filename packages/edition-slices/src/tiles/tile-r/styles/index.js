@@ -20,5 +20,8 @@ export default breakpoint => ({
     fontFamily: fonts.headline,
     fontSize: headlineFontSizeResolver[breakpoint],
     lineHeight: headlineFontSizeResolver[breakpoint]
+  },
+  summaryContainer: {
+    paddingBottom: spacing(2)
   }
 });

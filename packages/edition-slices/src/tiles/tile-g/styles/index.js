@@ -4,6 +4,7 @@ import {
   spacing,
   editionBreakpoints
 } from "@times-components/styleguide";
+import { fullHeightSummaryContainer } from "../../shared/styles";
 
 const styles = {
   container: {
@@ -15,8 +16,7 @@ const styles = {
     ...fontFactory({
       font: "headline",
       fontSize: "infoTitle"
-    }),
-    paddingBottom: spacing(1)
+    })
   },
   imageContainer: {
     overflow: "hidden",
@@ -39,10 +39,18 @@ const mediumBreakpointStyles = {
     paddingBottom: spacing(3)
   },
   headline: {
-    ...styles.headline,
     fontFamily: fonts.headline,
     fontSize: 20,
     lineHeight: 20
+  },
+  summaryContainer: {
+    paddingLeft: spacing(2),
+    width: "70%",
+    ...fullHeightSummaryContainer
+  },
+  summaryContent: {
+    justifyContent: "center",
+    flex: 1
   }
 };
 

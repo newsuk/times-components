@@ -4,7 +4,6 @@ import {
   spacing,
   editionBreakpoints
 } from "@times-components/styleguide";
-import { verticalStyles } from "../../shared/styles";
 
 const headlineFontSizeResolver = {
   [editionBreakpoints.huge]: 35,
@@ -29,13 +28,12 @@ export default breakpoint => ({
   imageContainer: {
     width: "100%"
   },
-  star: verticalStyles,
   summaryContainer: {
-    alignItems: "center",
-    backgroundColor: colours.functional.border,
     flex: 1,
+    alignItems: "center",
     justifyContent: "center",
-    paddingHorizontal: spacing(8),
+    backgroundColor: colours.functional.border,
+    paddingHorizontal: spacing(4),
     paddingVertical: spacing(3)
   }
 });

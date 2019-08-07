@@ -15,12 +15,7 @@ const TileAS = ({ onPress, tile }) => {
   const crop = getTileImage(tile, "crop32");
 
   return (
-    <TileLink
-      onPress={onPress}
-      style={styles.container}
-      tile={tile}
-      starStyle={styles.star}
-    >
+    <TileLink onPress={onPress} style={styles.container} tile={tile}>
       <View style={styles.imageContainer}>
         <Image
           aspectRatio={3 / 2}
@@ -35,6 +30,7 @@ const TileAS = ({ onPress, tile }) => {
       <TileSummary
         headlineStyle={styles.headline}
         summary={getTileSummary(tile, 125)}
+        style={styles.summaryContainer}
         tile={tile}
       />
     </TileLink>

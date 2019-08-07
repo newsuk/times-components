@@ -1,4 +1,5 @@
 import { fontFactory, spacing, fonts } from "@times-components/styleguide";
+import { fullHeightSummaryContainer } from "../../shared/styles";
 
 const main = {
   container: {
@@ -46,17 +47,11 @@ const mediumStyles = {
   },
   summaryContainer: {
     width: "51.5%",
-    paddingRight: spacing(4)
+    paddingRight: spacing(4),
+    ...fullHeightSummaryContainer
   },
   imageContainer: {
     width: "48.5%"
-  },
-  star: {
-    starButton: {
-      position: "absolute",
-      right: -spacing(1),
-      bottom: -spacing(1)
-    }
   }
 };
 

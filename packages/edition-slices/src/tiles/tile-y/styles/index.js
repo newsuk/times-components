@@ -3,6 +3,7 @@ import {
   spacing,
   editionBreakpoints
 } from "@times-components/styleguide";
+import { fullHeightSummaryContainer } from "../../shared/styles";
 
 const mediumBreakpointStyles = {
   container: {
@@ -16,12 +17,8 @@ const mediumBreakpointStyles = {
     lineHeight: 30,
     marginBottom: spacing(2)
   },
-  star: {
-    starButton: {
-      position: "absolute",
-      right: spacing(3),
-      bottom: 0
-    }
+  summaryContainer: {
+    ...fullHeightSummaryContainer
   }
 };
 

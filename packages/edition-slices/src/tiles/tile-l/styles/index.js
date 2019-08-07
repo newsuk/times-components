@@ -7,14 +7,16 @@ import {
 const sharedStyles = {
   container: {
     flex: 1,
-    paddingHorizontal: spacing(2),
-    paddingTop: spacing(2)
+    padding: spacing(2)
   },
   headlineStyle: {
     fontFamily: fonts.headline,
     fontSize: 20,
     lineHeight: 20,
     marginBottom: spacing(2)
+  },
+  summaryContainer: {
+    flex: 1
   }
 };
 
@@ -27,7 +29,8 @@ const mediumBreakpointStyles = {
   headlineStyle: {
     ...sharedStyles.headlineStyle,
     fontSize: 18,
-    lineHeight: 18
+    lineHeight: 18,
+    marginBottom: spacing(1)
   }
 };
 

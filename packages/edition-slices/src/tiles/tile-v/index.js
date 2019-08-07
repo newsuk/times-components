@@ -24,7 +24,11 @@ const TileV = ({ onPress, tile }) => {
         uri={crop.url}
         fill
       />
-      <TileSummary headlineStyle={styles.headline} tile={tile} />
+      <TileSummary
+        headlineStyle={styles.headline}
+        tile={tile}
+        style={styles.summaryContainer}
+      />
     </TileLink>
   );
 };

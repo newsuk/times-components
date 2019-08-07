@@ -10,7 +10,10 @@ const styles = {
     fontFamily: fonts.headline,
     fontSize: 30,
     lineHeight: 30,
-    paddingBottom: spacing(1)
+    marginBottom: spacing(2)
+  },
+  summaryContainer: {
+    flex: 1
   },
   imageContainer: {
     marginBottom: spacing(2),

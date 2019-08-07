@@ -11,17 +11,13 @@ import {
 } from "../shared";
 import styles from "./styles";
 import WithoutWhiteSpace from "../shared/without-white-space";
+import PositionedTileStar from "../shared/positioned-tile-star";
 
 const TileAR = ({ onPress, tile }) => {
   const crop = getTileImage(tile, "crop169");
 
   return (
-    <TileLink
-      onPress={onPress}
-      style={styles.container}
-      tile={tile}
-      starStyle={styles.star}
-    >
+    <TileLink onPress={onPress} style={styles.container} tile={tile}>
       <View style={styles.imageContainer}>
         <Image
           aspectRatio={16 / 9}
@@ -33,16 +29,21 @@ const TileAR = ({ onPress, tile }) => {
           relativeVerticalOffset={crop.relativeVerticalOffset}
         />
       </View>
-      <WithoutWhiteSpace
-        render={whiteSpaceHeight => (
-          <TileSummary
-            headlineStyle={styles.headline}
-            summary={getTileSummary(tile, 125)}
-            tile={tile}
-            whiteSpaceHeight={whiteSpaceHeight}
-          />
-        )}
-      />
+      <View style={styles.summaryContainer}>
+        <WithoutWhiteSpace
+          render={whiteSpaceHeight => (
+            <TileSummary
+              headlineStyle={styles.headline}
+              summary={getTileSummary(tile, 125)}
+              tile={tile}
+              whiteSpaceHeight={whiteSpaceHeight}
+              withStar={false}
+            />
+          )}
+        />
+
+        <PositionedTileStar articleId={tile.article.id} />
+      </View>
     </TileLink>
   );
 };

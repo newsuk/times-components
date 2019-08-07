@@ -1,5 +1,6 @@
 /* eslint-disable react/require-default-props */
 import React from "react";
+import { View } from "react-native";
 import PropTypes from "prop-types";
 import Image from "@times-components/image";
 import editionBreakpoints from "@times-components/styleguide";
@@ -10,6 +11,7 @@ import {
   withTileTracking
 } from "../shared";
 import stylesFactory from "./styles";
+import PositionedTileStar from "../shared/positioned-tile-star";
 
 const TileG = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
   const crop = getTileImage(tile, "crop11");
@@ -29,11 +31,15 @@ const TileG = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
         rounded
         resizeMode="cover"
       />
-      <TileSummary
-        headlineStyle={styles.headline}
-        style={styles.summaryContainer}
-        tile={tile}
-      />
+      <View style={styles.summaryContainer}>
+        <TileSummary
+          headlineStyle={styles.headline}
+          style={styles.summaryContent}
+          tile={tile}
+          withStar={false}
+        />
+        <PositionedTileStar articleId={tile.article.id} />
+      </View>
     </TileLink>
   );
 };

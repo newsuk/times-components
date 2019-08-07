@@ -1,4 +1,5 @@
 import { spacing } from "@times-components/styleguide";
+// import { fullHeightSummaryContainer } from '../../shared/styles';
 
 const styles = {
   container: {
@@ -7,10 +8,6 @@ const styles = {
   },
   imageContainer: {
     width: "100%"
-  },
-  starButton: {
-    marginTop: spacing(2),
-    textAlign: "center"
   }
 };
 

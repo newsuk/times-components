@@ -1,5 +1,6 @@
 /* eslint-disable react/require-default-props */
 import React from "react";
+import { View } from "react-native";
 import PropTypes from "prop-types";
 import Image from "@times-components/image";
 import { editionBreakpoints } from "@times-components/styleguide";
@@ -12,6 +13,7 @@ import {
 } from "../shared";
 import styleFactory from "./styles";
 import WithoutWhiteSpace from "../shared/without-white-space";
+import PositionedTileStar from "../shared/positioned-tile-star";
 
 const TileU = ({ onPress, tile, breakpoint = editionBreakpoints.medium }) => {
   const styles = styleFactory(breakpoint);
@@ -21,25 +23,22 @@ const TileU = ({ onPress, tile, breakpoint = editionBreakpoints.medium }) => {
     breakpoint !== editionBreakpoints.medium ? getTileSummary(tile, 800) : null;
 
   return (
-    <TileLink
-      onPress={onPress}
-      style={styles.container}
-      tile={tile}
-      withStar={false}
-    >
-      <WithoutWhiteSpace
-        styles={styles.summaryContainer}
-        render={whiteSpaceHeight => (
-          <TileSummary
-            headlineStyle={styles.headline}
-            summary={summary}
-            tile={tile}
-            withStar
-            whiteSpaceHeight={whiteSpaceHeight}
-            starStyle={styles.star}
-          />
-        )}
-      />
+    <TileLink onPress={onPress} style={styles.container} tile={tile}>
+      <View style={styles.summaryContainer}>
+        <WithoutWhiteSpace
+          render={whiteSpaceHeight => (
+            <TileSummary
+              headlineStyle={styles.headline}
+              summary={summary}
+              tile={tile}
+              whiteSpaceHeight={whiteSpaceHeight}
+              withStar={false}
+            />
+          )}
+        />
+        <PositionedTileStar articleId={tile.article.id} />
+      </View>
+
       <Image
         aspectRatio={3 / 2}
         relativeWidth={crop.relativeWidth}

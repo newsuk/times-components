@@ -3,6 +3,7 @@ import {
   spacing,
   editionBreakpoints
 } from "@times-components/styleguide";
+import { fullHeightSummaryContainer } from "../../shared/styles";
 
 const sharedStyles = {
   container: {
@@ -36,6 +37,9 @@ const mediumBreakpointStyles = {
     ...sharedStyles.headline,
     fontSize: 20,
     lineHeight: 20
+  },
+  summaryContainer: {
+    ...fullHeightSummaryContainer
   }
 };
 
