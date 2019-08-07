@@ -24,6 +24,7 @@ const TileAA = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
         relativeVerticalOffset={crop.relativeVerticalOffset}
         style={styles.imageContainer}
         uri={crop.url}
+        fill
       />
       <TileSummary
         headlineStyle={styles.headline}

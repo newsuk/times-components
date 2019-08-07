@@ -36,6 +36,7 @@ exports[`1. tile a 1`] = `
   </div>
   <Image
     aspectRatio={1.7777777777777777}
+    fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
 </Link>
@@ -105,6 +106,7 @@ exports[`3. tile c 1`] = `
   <div>
     <Image
       aspectRatio={1.7777777777777777}
+      fill={true}
       uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
     />
   </div>
@@ -148,6 +150,7 @@ exports[`4. tile d 1`] = `
 >
   <Image
     aspectRatio={1.5}
+    fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
   />
   <div>
@@ -190,6 +193,7 @@ exports[`5. tile e 1`] = `
 >
   <Image
     aspectRatio={0.8}
+    fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1434%2C1792%2C627%2C0"
   />
   <div>
@@ -284,6 +288,7 @@ exports[`7. tile g 1`] = `
 >
   <Image
     aspectRatio={1}
+    fill={true}
     resizeMode="cover"
     rounded={true}
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
@@ -368,6 +373,7 @@ exports[`8. tile h 1`] = `
   </div>
   <Image
     aspectRatio={0.6666666666666666}
+    fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1195%2C1792%2C747%2C0"
   />
 </Link>
@@ -379,6 +385,7 @@ exports[`9. tile i 1`] = `
 >
   <Image
     aspectRatio={1.7777777777777777}
+    fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
   <div>
@@ -421,6 +428,7 @@ exports[`10. tile j 1`] = `
 >
   <Image
     aspectRatio={1.5}
+    fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
   />
   <div>
@@ -463,6 +471,7 @@ exports[`11. tile k 1`] = `
 >
   <Image
     aspectRatio={1.5}
+    fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
   />
   <div>
@@ -572,6 +581,7 @@ exports[`14. tile n 1`] = `
 >
   <Image
     aspectRatio={1}
+    fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
   />
   <div>
@@ -662,6 +672,7 @@ exports[`16. tile p 1`] = `
 >
   <Image
     aspectRatio={1}
+    fill={true}
     resizeMode="cover"
     rounded={true}
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
@@ -720,6 +731,7 @@ exports[`17. tile q 1`] = `
 >
   <Image
     aspectRatio={1.5}
+    fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
   />
 </Link>
@@ -763,6 +775,7 @@ exports[`18. tile r 1`] = `
   </div>
   <Image
     aspectRatio={1.7777777777777777}
+    fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
 </Link>
@@ -851,6 +864,7 @@ exports[`21. tile t 1`] = `
 >
   <Image
     aspectRatio={1.7777777777777777}
+    fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
   <div>
@@ -924,6 +938,7 @@ exports[`22. tile u 1`] = `
   </div>
   <Image
     aspectRatio={1.5}
+    fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
   />
 </Link>
@@ -942,6 +957,7 @@ exports[`23. tile v 1`] = `
 >
   <Image
     aspectRatio={1.7777777777777777}
+    fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
   <div>
@@ -1015,6 +1031,7 @@ exports[`24. tile w 1`] = `
   </div>
   <Image
     aspectRatio={1.5}
+    fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
   />
 </Link>
@@ -1150,6 +1167,7 @@ exports[`27. tile z 1`] = `
   </div>
   <Image
     aspectRatio={0.8}
+    fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1434%2C1792%2C627%2C0"
   />
 </Link>
@@ -1166,6 +1184,7 @@ exports[`28. tile aa 1`] = `
 >
   <Image
     aspectRatio={1.7777777777777777}
+    fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
   <div>
@@ -1245,6 +1264,7 @@ exports[`29. tile ab 1`] = `
   </div>
   <Image
     aspectRatio={0.6666666666666666}
+    fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1195%2C1792%2C747%2C0"
   />
 </Link>
@@ -1344,6 +1364,7 @@ exports[`32. tile aj 1`] = `
   <Image
     aspectRatio={1.5}
     disablePlaceholder={true}
+    fill={true}
     uri="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
   />
 </Link>
@@ -1374,6 +1395,7 @@ exports[`33. tile ak 1`] = `
   <Image
     aspectRatio={1.5}
     disablePlaceholder={true}
+    fill={true}
     uri="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
   />
 </Link>
@@ -1392,6 +1414,7 @@ exports[`34. tile al 1`] = `
 >
   <Image
     aspectRatio={1.5}
+    fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
   />
   <div>
@@ -1439,6 +1462,7 @@ exports[`35. tile am 1`] = `
 >
   <Image
     aspectRatio={1.7777777777777777}
+    fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
   <div>
@@ -1484,6 +1508,7 @@ exports[`36. tile an 1`] = `
 >
   <Image
     aspectRatio={1}
+    fill={true}
     resizeMode="cover"
     rounded={true}
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
@@ -1534,6 +1559,7 @@ exports[`37. tile ap 1`] = `
 >
   <Image
     aspectRatio={1}
+    fill={true}
     resizeMode="cover"
     rounded={true}
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
@@ -1578,6 +1604,7 @@ exports[`38. tile ad 1`] = `
 >
   <Image
     aspectRatio={1.5}
+    fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
   />
   <div>
@@ -1620,6 +1647,7 @@ exports[`39. tile ac 1`] = `
 >
   <Image
     aspectRatio={1.7777777777777777}
+    fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
   <div>
@@ -1664,6 +1692,7 @@ exports[`40. tile aq 1`] = `
   <div>
     <Image
       aspectRatio={1.7777777777777777}
+      fill={true}
       uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
     />
   </div>
@@ -1713,6 +1742,7 @@ exports[`41. tile ar 1`] = `
   <div>
     <Image
       aspectRatio={1.7777777777777777}
+      fill={true}
       uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
     />
   </div>
@@ -1769,6 +1799,7 @@ exports[`42. tile as 1`] = `
   <div>
     <Image
       aspectRatio={1.5}
+      fill={true}
       uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
     />
   </div>
