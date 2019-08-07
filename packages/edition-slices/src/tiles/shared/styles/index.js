@@ -11,20 +11,6 @@ const horizontalStyles = {
   }
 };
 
-const tileStar = {
-  position: "absolute",
-  right: spacing(1),
-  bottom: spacing(2)
-};
-
-const starHeadlinePaddingBottom = {
-  paddingBottom: spacing(3)
-};
-
-const starTeaserPaddingBottom = {
-  paddingBottom: spacing(5)
-};
-
 const verticalStyles = {
   container: {
     flexDirection: "column"
@@ -34,10 +20,29 @@ const verticalStyles = {
   }
 };
 
+const starDefaultPosition = {
+  marginTop: "auto",
+  alignItems: "flex-end",
+  paddingTop: spacing(1)
+};
+
+const starCenterPosition = {
+  alignItems: "center"
+};
+
+const starAfterContentPosition = {
+  marginTop: 0
+};
+
+const fullHeightSummaryContainer = {
+  flex: 1
+};
+
 export {
   horizontalStyles,
   verticalStyles,
-  tileStar,
-  starHeadlinePaddingBottom,
-  starTeaserPaddingBottom
+  starDefaultPosition,
+  starCenterPosition,
+  starAfterContentPosition,
+  fullHeightSummaryContainer
 };
