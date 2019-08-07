@@ -2,6 +2,7 @@
 import React, { Component } from "react";
 import { propTypes, defaultProps } from "./dom-context-prop-types";
 import logger from "./utils/logger";
+import "whatwg-fetch";
 
 class DOMContext extends Component {
   eventQueue = [];

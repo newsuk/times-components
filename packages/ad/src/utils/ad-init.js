@@ -24,7 +24,7 @@ export default ({ el, data, platform, eventCallback, window }) => {
     }
   };
 
-  const { Promise, document, googletag, pbjs, apstag } = window;
+  const { Promise, document, googletag, pbjs, apstag, Set } = window;
   let localInitCalled = false;
   const isWeb = platform === "web";
   const { timeout, bidders } = data.prebidConfig;
@@ -72,11 +72,26 @@ export default ({ el, data, platform, eventCallback, window }) => {
       }
       this.utils.loadScript(this.gpt.url);
       this.utils.loadScript(this.apstag.url);
-      this.utils
-        .loadScript(this.grapeshot.url)
-        .then(() => {
+      window
+        .fetch(this.grapeshot.url)
+        .then(response => response.json())
+        .then(body => {
           this.gpt.setPageTargeting({
-            gs_cat: window.gs_channels
+            gs_cat: body.channels.map(channel => channel.name).join(",")
+          });
+        })
+        .catch(err => {
+          eventCallback("error", err.stack);
+        });
+      window
+        .fetch(this.admantx.url)
+        .then(response => response.json())
+        .then(body => {
+          this.gpt.setPageTargeting({
+            admantx_bs: this.admantx.extractNames(body.admants),
+            admantx_cat: this.admantx.extractNames(body.categories),
+            admantx_emotion: this.admantx.extractNames(body.feelings),
+            admantx_ents: this.admantx.extractNames(body.entities)
           });
         })
         .catch(err => {
@@ -225,9 +240,38 @@ export default ({ el, data, platform, eventCallback, window }) => {
     },
 
     grapeshot: {
-      url: `https://newscorp.grapeshot.co.uk/thetimes/channels.cgi?url=${encodeURIComponent(
+      url: `https://newscorp.grapeshot.co.uk/thetimes/channels-json.cgi?url=${encodeURIComponent(
         data.contextUrl
       )}`
+    },
+
+    admantx: {
+      url: `https://euasync01.admantx.com/admantx/service?request=${encodeURIComponent(
+        JSON.stringify({
+          key:
+            "f1694ae18c17dc1475ee187e4996ad2b484217b1a436cb04b7ac3dd4902180b6",
+          method: "descriptor",
+          mode: "async",
+          decorator: "json",
+          filter: "default",
+          type: "URL",
+          body: data.contextUrl
+        })
+      )}`,
+
+      extractNames: values => {
+        const cleansedValues = new Set(
+          values.map(value =>
+            value.name
+              .toLowerCase()
+              .trim()
+              .replace(/\s+/g, "_")
+              .replace(/["'=!+#*~;^()<>[\],&]/g, "")
+          )
+        );
+
+        return [...cleansedValues].join(",");
+      }
     },
 
     prebid: {

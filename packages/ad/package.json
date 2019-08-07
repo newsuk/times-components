@@ -64,7 +64,8 @@
     "@times-components/watermark": "2.6.36",
     "prop-types": "15.7.2",
     "react-broadcast": "0.5.2",
-    "react-native-webview": "5.10.0"
+    "react-native-webview": "5.10.0",
+    "whatwg-fetch": "3.0.0"
   },
   "peerDependencies": {
     "react": ">=16.5",

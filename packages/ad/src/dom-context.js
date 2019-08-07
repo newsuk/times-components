@@ -103,6 +103,7 @@ class DOMContext extends PureComponent {
             window.postMessage = function(data) {window.ReactNativeWebView.postMessage(data);};
             (${webviewEventCallbackSetup})({window});
           </script>
+          <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@3.0.0/dist/fetch.umd.min.js" />
           <script>
           (${init})({
             el: document.getElementsByTagName("div")[0],

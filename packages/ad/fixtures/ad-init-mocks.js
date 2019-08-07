@@ -7,6 +7,15 @@ export const makeAdInitMocks = (withHeaderBidding = false) => {
   window.matchMedia = jest.fn().mockImplementation(() => ({
     addListener: jest.fn()
   }));
+  window.fetch = jest.fn().mockResolvedValue({
+    json: jest.fn().mockResolvedValue({
+      channels: [],
+      admants: [],
+      categories: [],
+      feelings: [],
+      entities: []
+    })
+  });
   const pubAds = {
     addEventListener: jest.fn(),
     collapseEmptyDivs: jest.fn(),
