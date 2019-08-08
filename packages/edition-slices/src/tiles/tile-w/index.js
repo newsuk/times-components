@@ -44,6 +44,7 @@ const TileW = ({ onPress, tile, breakpoint }) => {
         relativeVerticalOffset={crop.relativeVerticalOffset}
         style={styles.imageContainer}
         uri={crop.url}
+        fill
       />
     </TileLink>
   );

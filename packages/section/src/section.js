@@ -8,8 +8,10 @@ import withTrackingContext from "./section-tracking-context";
 import PuzzleBar from "./puzzle-bar";
 import MagazineCover from "./magazine-cover";
 import Slice from "./slice";
-import styles from "./styles";
+import styleFactory from "./styles";
 import { buildSliceData, createPuzzleData } from "./utils";
+
+const styles = styleFactory();
 
 class Section extends Component {
   constructor(props) {
@@ -66,7 +68,7 @@ class Section extends Component {
     );
   }
 
-  renderItemSeperator({ leadingItem }) {
+  renderItemSeperator({ leadingItem }, editionBreakpoint) {
     const {
       section: { name }
     } = this.props;
@@ -79,7 +81,7 @@ class Section extends Component {
 
     return (
       <View style={styles.listItemSeparatorContainer}>
-        <SectionItemSeparator />
+        <SectionItemSeparator breakpoint={editionBreakpoint} />
       </View>
     );
   }
@@ -109,7 +111,9 @@ class Section extends Component {
                 removeClippedSubviews
                 data={data}
                 initialNumToRender={isTablet ? 5 : 2}
-                ItemSeparatorComponent={this.renderItemSeperator}
+                ItemSeparatorComponent={leadingItem =>
+                  this.renderItemSeperator(leadingItem, editionBreakpoint)
+                }
                 keyExtractor={item => item.elementId}
                 ListHeaderComponent={this.getHeaderComponent(
                   isPuzzle,
