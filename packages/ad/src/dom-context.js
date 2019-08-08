@@ -83,13 +83,11 @@ class DOMContext extends PureComponent {
 
   outViewport = () => {
     this.isVisible = false;
-    if (this.webView) {
-      this.webView.injectJavaScript(`
-          if (typeof unrulyViewportStatus === "function") {
-            unrulyViewportStatus(false);
-          };
-        `);
-    }
+    this.webView.injectJavaScript(`
+        if (typeof unrulyViewportStatus === "function") {
+          unrulyViewportStatus(false);
+        };
+      `);
   };
 
   loadAd = () => {
@@ -100,16 +98,14 @@ class DOMContext extends PureComponent {
 
   inViewport = () => {
     this.isVisible = true;
-    if (this.webView) {
-      this.webView.injectJavaScript(`
-          if (typeof unrulyViewportStatus === "function") {
-            unrulyViewportStatus(${JSON.stringify({
-              ...this.deviceInfo,
-              visible: true
-            })})
-          };
-        `);
-    }
+    this.webView.injectJavaScript(`
+        if (typeof unrulyViewportStatus === "function") {
+          unrulyViewportStatus(${JSON.stringify({
+            ...this.deviceInfo,
+            visible: true
+          })})
+        };
+      `);
   };
 
   render() {
