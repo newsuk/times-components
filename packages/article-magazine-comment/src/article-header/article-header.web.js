@@ -39,7 +39,7 @@ const ArticleHeader = ({
         </AuthorImageContainer>
         <Label isVideo={hasVideo} label={label} />
         <HeadlineContainer
-          role="header"
+          role="heading"
           aria-level="1"
           style={[
             styles.articleHeadline,
