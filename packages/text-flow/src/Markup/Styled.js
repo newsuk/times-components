@@ -3,7 +3,11 @@ import TextStyle from "./TextStyle";
 import Markup from "./Markup";
 
 export default class StyledText extends Markup {
-  style = new TextStyle();
+  constructor({ style, children }) {
+    super()
+    this.children = children || []
+    this.style = style || new TextStyle()
+  }
 
   characters(textStyle) {
     if (!this.style.size) this.style.size = textStyle.size;
