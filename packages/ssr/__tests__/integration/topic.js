@@ -43,4 +43,10 @@ describe("The Topic Page", () => {
     cy.goToPreviousArticle();
     cy.url().should("include", "?page=1");
   });
+
+  it("should pass basic a11y test", () => {
+    cy.injectAxe();
+    cy.wait(1000);
+    cy.checkA11y();
+  });
 });
