@@ -1,5 +1,6 @@
 import React from "react";
 import { NativeModules, Platform } from "react-native";
+import { ThemeProvider, LightTheme } from 'news-design-system-poc/themes';
 import Article from "@times-components/article";
 import {
   ContextProviderWithDefaults,
@@ -58,38 +59,40 @@ const ArticleBase = ({
   };
 
   return (
-    <ContextProviderWithDefaults value={{ theme }}>
-      <Article
-        adConfig={adConfig}
-        analyticsStream={trackArticle}
-        article={article}
-        error={omitErrors ? null : error}
-        interactiveConfig={interactiveConfig}
-        isLoading={isLoading || (omitErrors && error)}
-        onAuthorPress={(event, { slug }) => onAuthorPress(slug)}
-        onCommentGuidelinesPress={() => onCommentGuidelinesPress()}
-        onCommentsPress={(event, { articleId: id, url }) =>
-          onCommentsPress(id, url)
-        }
-        onImagePress={onImagePress}
-        onLinkPress={(event, { type, url }) => {
-          if (type === "article") {
-            onArticlePress(url);
-          } else if (type === "topic") {
-            onTopicPress(url);
-          } else {
-            onLinkPress(url);
+    <ThemeProvider theme={LightTheme}>
+      <ContextProviderWithDefaults value={{ theme }}>
+        <Article
+          adConfig={adConfig}
+          analyticsStream={trackArticle}
+          article={article}
+          error={omitErrors ? null : error}
+          interactiveConfig={interactiveConfig}
+          isLoading={isLoading || (omitErrors && error)}
+          onAuthorPress={(event, { slug }) => onAuthorPress(slug)}
+          onCommentGuidelinesPress={() => onCommentGuidelinesPress()}
+          onCommentsPress={(event, { articleId: id, url }) =>
+            onCommentsPress(id, url)
           }
-        }}
-        onRelatedArticlePress={(event, { url }) => onArticlePress(url)}
-        onTopicPress={(event, { slug }) => onTopicPress(slug)}
-        onTwitterLinkPress={(_, { url }) => onLinkPress(url)}
-        onVideoPress={(event, info) => onVideoPress(info)}
-        pageSection={pageSection}
-        referralUrl={referralUrl}
-        refetch={refetch}
-      />
-    </ContextProviderWithDefaults>
+          onImagePress={onImagePress}
+          onLinkPress={(event, { type, url }) => {
+            if (type === "article") {
+              onArticlePress(url);
+            } else if (type === "topic") {
+              onTopicPress(url);
+            } else {
+              onLinkPress(url);
+            }
+          }}
+          onRelatedArticlePress={(event, { url }) => onArticlePress(url)}
+          onTopicPress={(event, { slug }) => onTopicPress(slug)}
+          onTwitterLinkPress={(_, { url }) => onLinkPress(url)}
+          onVideoPress={(event, info) => onVideoPress(info)}
+          pageSection={pageSection}
+          referralUrl={referralUrl}
+          refetch={refetch}
+        />
+      </ContextProviderWithDefaults>
+    </ThemeProvider>
   );
 };
 

@@ -161,6 +161,7 @@
     "react-art": "16.6.3",
     "react-native": "0.59.10",
     "react-native-device-info": "2.3.2",
+    "news-design-system-poc": "*",
     "react-native-showcase-loader": "1.1.0"
   }
 }
