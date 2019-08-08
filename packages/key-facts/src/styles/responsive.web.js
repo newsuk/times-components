@@ -1,23 +1,20 @@
-import { Text, View } from "react-native";
-import {
-  responsiveStyled,
+import responsiveStyled, {
   mediaQuery
 } from "@times-components/responsive-styled-components-native";
-import { breakpoints, spacing } from "@times-components/styleguide";
+import { spacing } from "@times-components/styleguide";
 
 export const KeyFactsResponsiveContainer = responsiveStyled.View`
   margin: 5px 10px;
   
-  ${[
-    mediaQuery.minWidth.medium`
-      flex-direction: row;
-      margin: 10px auto;
-      width: 80.8%;
-    `,
-    mediaQuery.minWidth.wide`
-      width: 56.2%;
-    `
-  ]}
+  ${mediaQuery.minWidth.medium`
+    flex-direction: row;
+    margin: 10px auto;
+    width: 80.8%;
+  `};
+  
+  ${mediaQuery.minWidth.wide`
+    width: 56.2%;
+  `};
 `;
 
 export const KeyFactsResponsiveWrapper = responsiveStyled.View`

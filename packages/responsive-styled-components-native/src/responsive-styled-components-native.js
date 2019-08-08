@@ -59,28 +59,28 @@ function responsiveStyled(Type) {
 
   // Need to ensure the screen width prop isn't passed through to the Type (e.g, View) or it
   // will cause warnings for unrecognised DOM attributes
-  const ResponsiveStyledComponent = forwardRef(
+  const ResponsiveTypeWrapper = forwardRef(
     ({ [SCREEN_WIDTH_PROP]: _, ...props }, ref) => <Type {...props} ref={ref} />
   );
 
-  ResponsiveStyledComponent.displayName = `ResponsiveStyledComponent`;
+  ResponsiveTypeWrapper.displayName = `ResponsiveTypeWrapper(${typeName})`;
 
-  const styledTag = styled(ResponsiveStyledComponent);
+  const styledTag = styled(ResponsiveTypeWrapper);
 
   function responsiveStyledTag(...args) {
-    const StyledComponent = styledTag(...args);
+    const Styled = styledTag(...args);
 
-    const ResponsiveStyledComponent = forwardRef((props, ref) => {
+    const ResponsiveStyled = forwardRef((props, ref) => {
       const screenWidth = useScreenWidth();
       const passedProps = { ...props, [SCREEN_WIDTH_PROP]: screenWidth };
 
-      return <StyledComponent {...passedProps} ref={ref} />;
+      return <Styled {...passedProps} ref={ref} />;
     });
 
-    ResponsiveStyledComponent.displayName = `ResponsiveStyled(${typeName})`;
-    StyledComponent.displayName = `Styled(${typeName})`;
+    ResponsiveStyled.displayName = `ResponsiveStyled(${typeName})`;
+    Styled.displayName = `Styled(${typeName})`;
 
-    return ResponsiveStyledComponent;
+    return ResponsiveStyled;
   }
 
   return responsiveStyledTag;
@@ -102,4 +102,6 @@ mediaQuery.minWidth.wide = mediaQuery.minWidth(breakpoints.wide);
 responsiveStyled.View = responsiveStyled(View);
 responsiveStyled.Text = responsiveStyled(Text);
 
-export { responsiveStyled, mediaQuery };
+export { mediaQuery, css };
+
+export default responsiveStyled;
