@@ -1,3 +1,4 @@
+import React from 'react';
 import { Text, View } from "react-native";
 import styled from "styled-components";
 import {
@@ -54,13 +55,24 @@ export const HeaderContainer = styled(View)`
   }
 `;
 
-export const HeadlineContainer = styled.h1`
-  @media (min-width: ${breakpoints.medium}px) {
-    font-size: ${fontSizes.articleHeadline}px;
-    line-height: 50px;
-    margin-bottom: ${spacing(1)};
-  }
-`;
+export const HeadlineContainer = ({ style, children, ...props }) => {
+  const H1 = styled.h1`
+    font-size: ${style.fontSize}px;
+    font-family: ${style.fontFamily};
+    line-height: ${style.lineHeight}px;
+    text-align: ${style.textAlign};
+    margin-bottom: ${style.marginBottom};
+    color: ${style.color};
+
+    @media (min-width: ${breakpoints.medium}px) {
+      font-size: ${fontSizes.articleHeadline}px;
+      line-height: 50px;
+      margin-bottom: ${spacing(1)};
+    }
+  `;
+
+  return <H1 {...props}>{children}</H1>;
+};
 
 export const LabelContainer = styled(View)`
   @media (min-width: ${breakpoints.wide}px) {
