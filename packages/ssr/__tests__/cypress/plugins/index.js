@@ -7,6 +7,7 @@ module.exports = on => {
     },
     stopMockServer() {
       return mockTpa.stop();
-    }
+    },
+    failed: require('cypress-failed-log/src/failed')()
   });
 };
