@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.72.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.72.0...@times-components/edition-slices@0.72.1) (2019-08-08)
+
+
+### Bug Fixes
+
+* REPLAT-7295 images on tiles being letterboxed ([#2165](https://github.com/newsuk/times-components/issues/2165)) ([e668cf6](https://github.com/newsuk/times-components/commit/e668cf6))
+
+
+
+
+
 # [0.72.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.71.3...@times-components/edition-slices@0.72.0) (2019-08-08)
 
 

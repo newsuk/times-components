@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.7.2](https://github.com/newsuk/times-components/compare/@times-components/ad@2.7.1...@times-components/ad@2.7.2) (2019-08-08)
+
+
+### Bug Fixes
+
+* REPLAT-7374 disable RNDeviceInfo on ios ([#2169](https://github.com/newsuk/times-components/issues/2169)) ([efdba1d](https://github.com/newsuk/times-components/commit/efdba1d))
+
+
+
+
+
 ## [2.7.1](https://github.com/newsuk/times-components/compare/@times-components/ad@2.7.0...@times-components/ad@2.7.1) (2019-08-07)
 
 **Note:** Version bump only for package @times-components/ad

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/markup",
-  "version": "3.3.96",
+  "version": "3.3.97",
   "description": "a component which takes an HTML ast and renders the platform specific markup",
   "main": "dist/markup",
   "dev": "src/markup",
@@ -65,7 +65,7 @@
   },
   "dependencies": {
     "@times-components/styleguide": "3.28.41",
-    "@times-components/text-flow": "0.2.6"
+    "@times-components/text-flow": "0.2.7"
   },
   "peerDependencies": {
     "react": ">=16.5",
