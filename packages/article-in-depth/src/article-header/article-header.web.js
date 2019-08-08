@@ -39,7 +39,7 @@ const ArticleHeader = ({
           <HeaderContainer style={styles.container}>
             <Label color={textColour} isVideo={hasVideo} label={label} />
             <HeadlineContainer
-              accessibilityRole="header"
+              role="header"
               aria-level="1"
               style={[
                 styles.articleHeadline,
