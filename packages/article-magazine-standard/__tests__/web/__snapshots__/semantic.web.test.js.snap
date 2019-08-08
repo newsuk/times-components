@@ -78,7 +78,7 @@ exports[`1. a full article 1`] = `
   SOME LABEL
   <h1
     aria-level="1"
-    role="heading"
+    role="header"
   >
     Some Headline
   </h1>
