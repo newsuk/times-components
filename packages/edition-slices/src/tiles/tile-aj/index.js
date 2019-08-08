@@ -32,6 +32,7 @@ const TileAJ = ({ id, image, onPress, title, url }) => {
         relativeVerticalOffset={crop.relativeVerticalOffset}
         style={imageContainer}
         uri={crop.url}
+        fill
       />
     </Link>
   );

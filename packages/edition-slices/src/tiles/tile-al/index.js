@@ -29,6 +29,7 @@ const TileAL = ({ onPress, tile }) => {
         relativeVerticalOffset={crop.relativeVerticalOffset}
         style={styles.imageContainer}
         uri={crop.url}
+        fill
       />
       <WithoutWhiteSpace
         render={whiteSpaceHeight => (

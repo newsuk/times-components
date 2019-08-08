@@ -25,6 +25,7 @@ const TileAS = ({ onPress, tile }) => {
         <Image
           aspectRatio={3 / 2}
           uri={crop.url}
+          fill
           relativeWidth={crop.relativeWidth}
           relativeHeight={crop.relativeHeight}
           relativeHorizontalOffset={crop.relativeHorizontalOffset}
