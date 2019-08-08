@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { Text, View } from "react-native";
 import styled from "styled-components";
 import {
@@ -59,7 +59,9 @@ export const HeaderContainer = styled(View)`
 `;
 
 export const HeadlineContainer = ({ style, children, ...props }) => {
-  const css = style.filter(el => !!el).reduce((acc, cur) => Object.assign(acc, cur), {});
+  const css = style
+    .filter(el => !!el)
+    .reduce((acc, cur) => Object.assign(acc, cur), {});
   const H1 = styled.h1`
     font-size: ${css.fontSize}px;
     font-family: ${css.fontFamily};

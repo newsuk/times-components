@@ -43,8 +43,10 @@ export const HeaderContainer = styled(View)`
   }
 `;
 
-export const HeadlineContainer = ({style, children, ...props}) => {
-  const css = style.filter(el => !!el).reduce((acc, cur) => Object.assign(acc, cur), {});
+export const HeadlineContainer = ({ style, children, ...props }) => {
+  const css = style
+    .filter(el => !!el)
+    .reduce((acc, cur) => Object.assign(acc, cur), {});
   const H1 = styled.h1`
     font-size: ${css.fontSize}px;
     font-family: ${css.fontFamily};

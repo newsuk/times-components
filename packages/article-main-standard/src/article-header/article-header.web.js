@@ -21,11 +21,7 @@ const ArticleHeader = ({
 }) => (
   <View style={style}>
     <HeaderLabel isVideo={hasVideo} label={label} />
-    <HeadlineContainer
-      accessibilityRole="header"
-      aria-level="1"
-      style={styles.articleHeadLineText}
-    >
+    <HeadlineContainer role="heading" aria-level="1">
       {headline}
     </HeadlineContainer>
     <HeaderStandfirst standfirst={standfirst} />
