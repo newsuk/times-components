@@ -1,5 +1,4 @@
 import { Markup, Text } from "@times-components/text-flow";
-import { subscriptMap, superscriptMap } from "./sub-sup";
 
 export default ({ fontFamily, Bold, Italic, Body }) => ({
   block(key, attributes, renderedChildren) {
@@ -62,13 +61,6 @@ export default ({ fontFamily, Bold, Italic, Body }) => ({
     };
   },
   subscript(key, attributes, renderedChildren) {
-    const chars = renderedChildren.toString().split("");
-
-    if (chars.every(char => char in subscriptMap)) {
-      return {
-        element: new Body(chars.map(char => subscriptMap[char].join("")))
-      };
-    }
     return {
       element: new Markup.Styled({
         children: renderedChildren,
@@ -79,13 +71,6 @@ export default ({ fontFamily, Bold, Italic, Body }) => ({
     };
   },
   superscript(key, attributes, renderedChildren) {
-    const chars = renderedChildren.toString().split("");
-
-    if (chars.every(char => char in superscriptMap)) {
-      return {
-        element: new Body(chars.map(char => superscriptMap[char]).join(""))
-      };
-    }
     return {
       element: new Markup.Styled({
         children: renderedChildren,

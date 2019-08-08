@@ -13,7 +13,7 @@ export default class TextStyle {
 
   strokeWidth = null;
 
-  constructor(props = {}) {
+  constructor(props) {
     Object.assign(this, props);
   }
 }
