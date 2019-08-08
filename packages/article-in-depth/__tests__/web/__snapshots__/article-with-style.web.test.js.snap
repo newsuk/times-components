@@ -184,6 +184,12 @@ exports[`full article with style 1`] = `
   order: 2;
 }
 
+.c4 {
+  font-size: px;
+  line-height: px;
+  color: rgba(255,255,255,1);
+}
+
 @media (min-width:768px) {
   .c19 {
     font-size: 18px;
@@ -363,14 +369,6 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c4 {
-    font-size: 45px;
-    line-height: 50px;
-    margin-bottom: 5px;
-  }
-}
-
-@media (min-width:768px) {
   .c11 {
     margin-top: 0;
   }
@@ -422,6 +420,14 @@ exports[`full article with style 1`] = `
   }
 }
 
+@media (min-width:768px) {
+  .c4 {
+    font-size: 45px;
+    line-height: 50px;
+    margin-bottom: 5px;
+  }
+}
+
 <style>
 .S1 {
   font-weight: 400;
@@ -436,16 +442,11 @@ exports[`full article with style 1`] = `
 }
 
 .S3 {
-  line-height: 33px;
-  margin-bottom: 10px;
-}
-
-.S4 {
   line-height: 26px;
   margin-bottom: 15px;
 }
 
-.S5 {
+.S4 {
   -ms-flex-align: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -454,23 +455,23 @@ exports[`full article with style 1`] = `
   padding-top: 60px;
 }
 
-.S6 {
+.S5 {
   -ms-flex-pack: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
 }
 
-.S7 {
+.S6 {
   line-height: 15px;
   margin-top: 5px;
 }
 
-.S8 {
+.S7 {
   line-height: 17px;
 }
 
-.S9 {
+.S8 {
   padding-top: 10px;
 }
 
@@ -487,10 +488,6 @@ exports[`full article with style 1`] = `
 }
 
 .IS4 {
-  color: rgba(255,255,255,1.00);
-}
-
-.IS5 {
   background-color: rgba(60,129,190,1.00);
   -webkit-order: 2;
   order: 2;
@@ -498,46 +495,46 @@ exports[`full article with style 1`] = `
   -ms-flex-order: 2;
 }
 
-.IS6 {
+.IS5 {
   margin-bottom: 20px;
 }
 
-.IS7 {
+.IS6 {
   display: none;
+}
+
+.IS7 {
+  height: 100%;
+  width: 100%;
 }
 
 .IS8 {
   height: 100%;
   width: 100%;
+  position: relative;
 }
 
 .IS9 {
   height: 100%;
   width: 100%;
-  position: relative;
 }
 
 .IS10 {
-  height: 100%;
-  width: 100%;
-}
-
-.IS11 {
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
-.IS12 {
+.IS11 {
   padding-bottom: 56.25%;
   position: relative;
 }
 
-.IS13 {
+.IS12 {
   margin: 0;
 }
 
-.IS14 {
+.IS13 {
   border-bottom-color: #DBDBDB;
   border-bottom-width: 1;
   border-top-color: #DBDBDB;
@@ -587,10 +584,10 @@ exports[`full article with style 1`] = `
         className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
       >
         <div
-          className="css-view-1dbjc4n IS5"
+          className="css-view-1dbjc4n IS4"
         >
           <div
-            className="c3 responsiveweb__HeaderContainer-sc-1nipn43-2 c3 css-view-1dbjc4n r-alignItems-1awozwy r-paddingBottom-2o15sn r-paddingHorizontal-d9fdf6 r-paddingTop-u04ygo S5"
+            className="c3 responsiveweb__HeaderContainer-sc-1nipn43-2 c3 css-view-1dbjc4n r-alignItems-1awozwy r-paddingBottom-2o15sn r-paddingHorizontal-d9fdf6 r-paddingTop-u04ygo S4"
           >
             <div
               className="css-view-1dbjc4n r-marginBottom-15d164r S2"
@@ -602,7 +599,7 @@ exports[`full article with style 1`] = `
               </div>
             </div>
             <h1
-              className="c4 css-reset-4rbku5 responsiveweb__HeadlineContainer-sc-1nipn43-3 c4 css-text-901oao r-fontFamily-iirzy8 r-fontSize-1ra0lkn r-lineHeight-1j8sj39 r-marginBottom-15d164r r-textAlign-q4m81j IS3 S3"
+              className="c4"
             >
               Some Headline
             </h1>
@@ -612,23 +609,23 @@ exports[`full article with style 1`] = `
               <ArticleFlags />
             </div>
             <h2
-              className="c6 css-reset-4rbku5 responsiveweb__StandfirstContainer-sc-1nipn43-8 c6 css-text-901oao r-fontFamily-4h8ur4 r-fontSize-adyw6z r-lineHeight-eaezby r-marginBottom-ku1wi2 r-paddingHorizontal-utggzx r-textAlign-q4m81j IS4 S4"
+              className="c6 css-reset-4rbku5 responsiveweb__StandfirstContainer-sc-1nipn43-8 c6 css-text-901oao r-fontFamily-4h8ur4 r-fontSize-adyw6z r-lineHeight-eaezby r-marginBottom-ku1wi2 r-paddingHorizontal-utggzx r-textAlign-q4m81j IS3 S3"
             >
               Some Standfirst
             </h2>
           </div>
         </div>
         <ArticleLeadAsset
-          className="c7 IS6"
+          className="c7 IS5"
         />
         <div
           className="c8 c9"
         >
           <div
-            className="c10 responsiveweb__MetaContainer-sc-1nipn43-6 c10 css-view-1dbjc4n r-justifyContent-1777fci r-paddingVertical-1w50u8q S6"
+            className="c10 responsiveweb__MetaContainer-sc-1nipn43-6 c10 css-view-1dbjc4n r-justifyContent-1777fci r-paddingVertical-1w50u8q S5"
           >
             <div
-              className="c11 responsiveweb__Meta-sc-1nipn43-5 c11 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj r-justifyContent-1777fci S6"
+              className="c11 responsiveweb__Meta-sc-1nipn43-5 c11 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj r-justifyContent-1777fci S5"
             >
               <ArticleBylineWithLinks />
             </div>
@@ -636,10 +633,10 @@ exports[`full article with style 1`] = `
               className="c12 responsiveweb__Separator-sc-1nipn43-7 c12 css-view-1dbjc4n"
             />
             <div
-              className="c11 responsiveweb__Meta-sc-1nipn43-5 c11 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj r-justifyContent-1777fci S6"
+              className="c11 responsiveweb__Meta-sc-1nipn43-5 c11 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj r-justifyContent-1777fci S5"
             >
               <div
-                className="c13 responsiveweb__DatePublicationContainer-sc-1nipn43-0 c13 css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginTop-1g94qm0 S7"
+                className="c13 responsiveweb__DatePublicationContainer-sc-1nipn43-0 c13 css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginTop-1g94qm0 S6"
               >
                 <DatePublication />
               </div>
@@ -650,7 +647,7 @@ exports[`full article with style 1`] = `
           className="c8 c14 c15"
         >
           <div
-            className="IS7"
+            className="IS6"
           />
           <div>
             <div
@@ -696,22 +693,22 @@ exports[`full article with style 1`] = `
           className="c18 responsiveweb__PrimaryImg-sc-16nqyj8-5 c18 css-view-1dbjc4n"
         >
           <figure
-            className="IS13"
+            className="IS12"
           >
             <div
-              className="css-view-1dbjc4n IS12"
+              className="css-view-1dbjc4n IS11"
             >
               <div
-                className="css-view-1dbjc4n IS11"
+                className="css-view-1dbjc4n IS10"
               >
                 <div
-                  className="IS10"
+                  className="IS9"
                 >
                   <div
-                    className="IS9"
+                    className="IS8"
                   >
                     <video
-                      className="video-js IS8"
+                      className="video-js IS7"
                     />
                   </div>
                 </div>
@@ -725,10 +722,10 @@ exports[`full article with style 1`] = `
                   className="css-view-1dbjc4n"
                 >
                   <div
-                    className="css-view-1dbjc4n r-paddingTop-m611by S9"
+                    className="css-view-1dbjc4n r-paddingTop-m611by S8"
                   >
                     <div
-                      className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0 S8"
+                      className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0 S7"
                     >
                       This is video caption
                     </div>
@@ -739,7 +736,7 @@ exports[`full article with style 1`] = `
           </figure>
         </div>
         <Ad
-          className="IS14"
+          className="IS13"
         />
         <div>
           <div
@@ -946,6 +943,13 @@ exports[`full article with style in the culture magazine 1`] = `
   order: 2;
 }
 
+.c4 {
+  font-size: px;
+  font-family: Flama-Bold;
+  line-height: px;
+  color: rgba(255,255,255,1);
+}
+
 @media (min-width:768px) {
   .c19 {
     font-size: 18px;
@@ -1125,14 +1129,6 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c4 {
-    font-size: 45px;
-    line-height: 50px;
-    margin-bottom: 5px;
-  }
-}
-
-@media (min-width:768px) {
   .c11 {
     margin-top: 0;
   }
@@ -1184,6 +1180,14 @@ exports[`full article with style in the culture magazine 1`] = `
   }
 }
 
+@media (min-width:768px) {
+  .c4 {
+    font-size: 45px;
+    line-height: 50px;
+    margin-bottom: 5px;
+  }
+}
+
 <style>
 .S1 {
   font-weight: 400;
@@ -1198,16 +1202,11 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 .S3 {
-  line-height: 33px;
-  margin-bottom: 10px;
-}
-
-.S4 {
   line-height: 26px;
   margin-bottom: 15px;
 }
 
-.S5 {
+.S4 {
   -ms-flex-align: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1216,23 +1215,23 @@ exports[`full article with style in the culture magazine 1`] = `
   padding-top: 60px;
 }
 
-.S6 {
+.S5 {
   -ms-flex-pack: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
 }
 
-.S7 {
+.S6 {
   line-height: 15px;
   margin-top: 5px;
 }
 
-.S8 {
+.S7 {
   line-height: 17px;
 }
 
-.S9 {
+.S8 {
   padding-top: 10px;
 }
 
@@ -1246,14 +1245,9 @@ exports[`full article with style in the culture magazine 1`] = `
 
 .IS3 {
   color: rgba(255,255,255,1.00);
-  font-family: Flama-Bold;
 }
 
 .IS4 {
-  color: rgba(255,255,255,1.00);
-}
-
-.IS5 {
   background-color: rgba(60,129,190,1.00);
   -webkit-order: 2;
   order: 2;
@@ -1261,46 +1255,46 @@ exports[`full article with style in the culture magazine 1`] = `
   -ms-flex-order: 2;
 }
 
-.IS6 {
+.IS5 {
   margin-bottom: 20px;
 }
 
-.IS7 {
+.IS6 {
   display: none;
+}
+
+.IS7 {
+  height: 100%;
+  width: 100%;
 }
 
 .IS8 {
   height: 100%;
   width: 100%;
+  position: relative;
 }
 
 .IS9 {
   height: 100%;
   width: 100%;
-  position: relative;
 }
 
 .IS10 {
-  height: 100%;
-  width: 100%;
-}
-
-.IS11 {
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
-.IS12 {
+.IS11 {
   padding-bottom: 56.25%;
   position: relative;
 }
 
-.IS13 {
+.IS12 {
   margin: 0;
 }
 
-.IS14 {
+.IS13 {
   border-bottom-color: #DBDBDB;
   border-bottom-width: 1;
   border-top-color: #DBDBDB;
@@ -1350,10 +1344,10 @@ exports[`full article with style in the culture magazine 1`] = `
         className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
       >
         <div
-          className="css-view-1dbjc4n IS5"
+          className="css-view-1dbjc4n IS4"
         >
           <div
-            className="c3 responsiveweb__HeaderContainer-sc-1nipn43-2 c3 css-view-1dbjc4n r-alignItems-1awozwy r-paddingBottom-2o15sn r-paddingHorizontal-d9fdf6 r-paddingTop-u04ygo S5"
+            className="c3 responsiveweb__HeaderContainer-sc-1nipn43-2 c3 css-view-1dbjc4n r-alignItems-1awozwy r-paddingBottom-2o15sn r-paddingHorizontal-d9fdf6 r-paddingTop-u04ygo S4"
           >
             <div
               className="css-view-1dbjc4n r-marginBottom-15d164r S2"
@@ -1365,7 +1359,7 @@ exports[`full article with style in the culture magazine 1`] = `
               </div>
             </div>
             <h1
-              className="c4 css-reset-4rbku5 responsiveweb__HeadlineContainer-sc-1nipn43-3 c4 css-text-901oao r-fontSize-1ra0lkn r-lineHeight-1j8sj39 r-marginBottom-15d164r r-textAlign-q4m81j IS3 S3"
+              className="c4"
             >
               Some Headline
             </h1>
@@ -1375,23 +1369,23 @@ exports[`full article with style in the culture magazine 1`] = `
               <ArticleFlags />
             </div>
             <h2
-              className="c6 css-reset-4rbku5 responsiveweb__StandfirstContainer-sc-1nipn43-8 c6 css-text-901oao r-fontFamily-4h8ur4 r-fontSize-adyw6z r-lineHeight-eaezby r-marginBottom-ku1wi2 r-paddingHorizontal-utggzx r-textAlign-q4m81j IS4 S4"
+              className="c6 css-reset-4rbku5 responsiveweb__StandfirstContainer-sc-1nipn43-8 c6 css-text-901oao r-fontFamily-4h8ur4 r-fontSize-adyw6z r-lineHeight-eaezby r-marginBottom-ku1wi2 r-paddingHorizontal-utggzx r-textAlign-q4m81j IS3 S3"
             >
               Some Standfirst
             </h2>
           </div>
         </div>
         <ArticleLeadAsset
-          className="c7 IS6"
+          className="c7 IS5"
         />
         <div
           className="c8 c9"
         >
           <div
-            className="c10 responsiveweb__MetaContainer-sc-1nipn43-6 c10 css-view-1dbjc4n r-justifyContent-1777fci r-paddingVertical-1w50u8q S6"
+            className="c10 responsiveweb__MetaContainer-sc-1nipn43-6 c10 css-view-1dbjc4n r-justifyContent-1777fci r-paddingVertical-1w50u8q S5"
           >
             <div
-              className="c11 responsiveweb__Meta-sc-1nipn43-5 c11 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj r-justifyContent-1777fci S6"
+              className="c11 responsiveweb__Meta-sc-1nipn43-5 c11 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj r-justifyContent-1777fci S5"
             >
               <ArticleBylineWithLinks />
             </div>
@@ -1399,10 +1393,10 @@ exports[`full article with style in the culture magazine 1`] = `
               className="c12 responsiveweb__Separator-sc-1nipn43-7 c12 css-view-1dbjc4n"
             />
             <div
-              className="c11 responsiveweb__Meta-sc-1nipn43-5 c11 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj r-justifyContent-1777fci S6"
+              className="c11 responsiveweb__Meta-sc-1nipn43-5 c11 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj r-justifyContent-1777fci S5"
             >
               <div
-                className="c13 responsiveweb__DatePublicationContainer-sc-1nipn43-0 c13 css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginTop-1g94qm0 S7"
+                className="c13 responsiveweb__DatePublicationContainer-sc-1nipn43-0 c13 css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginTop-1g94qm0 S6"
               >
                 <DatePublication />
               </div>
@@ -1413,7 +1407,7 @@ exports[`full article with style in the culture magazine 1`] = `
           className="c8 c14 c15"
         >
           <div
-            className="IS7"
+            className="IS6"
           />
           <div>
             <div
@@ -1459,22 +1453,22 @@ exports[`full article with style in the culture magazine 1`] = `
           className="c18 responsiveweb__PrimaryImg-sc-16nqyj8-5 c18 css-view-1dbjc4n"
         >
           <figure
-            className="IS13"
+            className="IS12"
           >
             <div
-              className="css-view-1dbjc4n IS12"
+              className="css-view-1dbjc4n IS11"
             >
               <div
-                className="css-view-1dbjc4n IS11"
+                className="css-view-1dbjc4n IS10"
               >
                 <div
-                  className="IS10"
+                  className="IS9"
                 >
                   <div
-                    className="IS9"
+                    className="IS8"
                   >
                     <video
-                      className="video-js IS8"
+                      className="video-js IS7"
                     />
                   </div>
                 </div>
@@ -1488,10 +1482,10 @@ exports[`full article with style in the culture magazine 1`] = `
                   className="css-view-1dbjc4n"
                 >
                   <div
-                    className="css-view-1dbjc4n r-paddingTop-m611by S9"
+                    className="css-view-1dbjc4n r-paddingTop-m611by S8"
                   >
                     <div
-                      className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0 S8"
+                      className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0 S7"
                     >
                       This is video caption
                     </div>
@@ -1502,7 +1496,7 @@ exports[`full article with style in the culture magazine 1`] = `
           </figure>
         </div>
         <Ad
-          className="IS14"
+          className="IS13"
         />
         <div>
           <div
@@ -1709,6 +1703,13 @@ exports[`full article with style in the style magazine 1`] = `
   order: 2;
 }
 
+.c4 {
+  font-size: px;
+  font-family: CenturyGothic-Bold;
+  line-height: px;
+  color: rgba(255,255,255,1);
+}
+
 @media (min-width:768px) {
   .c19 {
     font-size: 18px;
@@ -1888,14 +1889,6 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c4 {
-    font-size: 45px;
-    line-height: 50px;
-    margin-bottom: 5px;
-  }
-}
-
-@media (min-width:768px) {
   .c11 {
     margin-top: 0;
   }
@@ -1947,6 +1940,14 @@ exports[`full article with style in the style magazine 1`] = `
   }
 }
 
+@media (min-width:768px) {
+  .c4 {
+    font-size: 45px;
+    line-height: 50px;
+    margin-bottom: 5px;
+  }
+}
+
 <style>
 .S1 {
   font-weight: 400;
@@ -1961,16 +1962,11 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 .S3 {
-  line-height: 33px;
-  margin-bottom: 10px;
-}
-
-.S4 {
   line-height: 26px;
   margin-bottom: 15px;
 }
 
-.S5 {
+.S4 {
   -ms-flex-align: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -1979,23 +1975,23 @@ exports[`full article with style in the style magazine 1`] = `
   padding-top: 60px;
 }
 
-.S6 {
+.S5 {
   -ms-flex-pack: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
 }
 
-.S7 {
+.S6 {
   line-height: 15px;
   margin-top: 5px;
 }
 
-.S8 {
+.S7 {
   line-height: 17px;
 }
 
-.S9 {
+.S8 {
   padding-top: 10px;
 }
 
@@ -2009,15 +2005,9 @@ exports[`full article with style in the style magazine 1`] = `
 
 .IS3 {
   color: rgba(255,255,255,1.00);
-  font-family: CenturyGothic-Bold;
-  text-transform: uppercase;
 }
 
 .IS4 {
-  color: rgba(255,255,255,1.00);
-}
-
-.IS5 {
   background-color: rgba(60,129,190,1.00);
   -webkit-order: 2;
   order: 2;
@@ -2025,46 +2015,46 @@ exports[`full article with style in the style magazine 1`] = `
   -ms-flex-order: 2;
 }
 
-.IS6 {
+.IS5 {
   margin-bottom: 20px;
 }
 
-.IS7 {
+.IS6 {
   display: none;
+}
+
+.IS7 {
+  height: 100%;
+  width: 100%;
 }
 
 .IS8 {
   height: 100%;
   width: 100%;
+  position: relative;
 }
 
 .IS9 {
   height: 100%;
   width: 100%;
-  position: relative;
 }
 
 .IS10 {
-  height: 100%;
-  width: 100%;
-}
-
-.IS11 {
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
-.IS12 {
+.IS11 {
   padding-bottom: 56.25%;
   position: relative;
 }
 
-.IS13 {
+.IS12 {
   margin: 0;
 }
 
-.IS14 {
+.IS13 {
   border-bottom-color: #DBDBDB;
   border-bottom-width: 1;
   border-top-color: #DBDBDB;
@@ -2114,10 +2104,10 @@ exports[`full article with style in the style magazine 1`] = `
         className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
       >
         <div
-          className="css-view-1dbjc4n IS5"
+          className="css-view-1dbjc4n IS4"
         >
           <div
-            className="c3 responsiveweb__HeaderContainer-sc-1nipn43-2 c3 css-view-1dbjc4n r-alignItems-1awozwy r-paddingBottom-2o15sn r-paddingHorizontal-d9fdf6 r-paddingTop-u04ygo S5"
+            className="c3 responsiveweb__HeaderContainer-sc-1nipn43-2 c3 css-view-1dbjc4n r-alignItems-1awozwy r-paddingBottom-2o15sn r-paddingHorizontal-d9fdf6 r-paddingTop-u04ygo S4"
           >
             <div
               className="css-view-1dbjc4n r-marginBottom-15d164r S2"
@@ -2129,7 +2119,7 @@ exports[`full article with style in the style magazine 1`] = `
               </div>
             </div>
             <h1
-              className="c4 css-reset-4rbku5 responsiveweb__HeadlineContainer-sc-1nipn43-3 c4 css-text-901oao r-fontSize-1ra0lkn r-lineHeight-1j8sj39 r-marginBottom-15d164r r-textAlign-q4m81j IS3 S3"
+              className="c4"
             >
               Some Headline
             </h1>
@@ -2139,23 +2129,23 @@ exports[`full article with style in the style magazine 1`] = `
               <ArticleFlags />
             </div>
             <h2
-              className="c6 css-reset-4rbku5 responsiveweb__StandfirstContainer-sc-1nipn43-8 c6 css-text-901oao r-fontFamily-4h8ur4 r-fontSize-adyw6z r-lineHeight-eaezby r-marginBottom-ku1wi2 r-paddingHorizontal-utggzx r-textAlign-q4m81j IS4 S4"
+              className="c6 css-reset-4rbku5 responsiveweb__StandfirstContainer-sc-1nipn43-8 c6 css-text-901oao r-fontFamily-4h8ur4 r-fontSize-adyw6z r-lineHeight-eaezby r-marginBottom-ku1wi2 r-paddingHorizontal-utggzx r-textAlign-q4m81j IS3 S3"
             >
               Some Standfirst
             </h2>
           </div>
         </div>
         <ArticleLeadAsset
-          className="c7 IS6"
+          className="c7 IS5"
         />
         <div
           className="c8 c9"
         >
           <div
-            className="c10 responsiveweb__MetaContainer-sc-1nipn43-6 c10 css-view-1dbjc4n r-justifyContent-1777fci r-paddingVertical-1w50u8q S6"
+            className="c10 responsiveweb__MetaContainer-sc-1nipn43-6 c10 css-view-1dbjc4n r-justifyContent-1777fci r-paddingVertical-1w50u8q S5"
           >
             <div
-              className="c11 responsiveweb__Meta-sc-1nipn43-5 c11 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj r-justifyContent-1777fci S6"
+              className="c11 responsiveweb__Meta-sc-1nipn43-5 c11 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj r-justifyContent-1777fci S5"
             >
               <ArticleBylineWithLinks />
             </div>
@@ -2163,10 +2153,10 @@ exports[`full article with style in the style magazine 1`] = `
               className="c12 responsiveweb__Separator-sc-1nipn43-7 c12 css-view-1dbjc4n"
             />
             <div
-              className="c11 responsiveweb__Meta-sc-1nipn43-5 c11 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj r-justifyContent-1777fci S6"
+              className="c11 responsiveweb__Meta-sc-1nipn43-5 c11 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj r-justifyContent-1777fci S5"
             >
               <div
-                className="c13 responsiveweb__DatePublicationContainer-sc-1nipn43-0 c13 css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginTop-1g94qm0 S7"
+                className="c13 responsiveweb__DatePublicationContainer-sc-1nipn43-0 c13 css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginTop-1g94qm0 S6"
               >
                 <DatePublication />
               </div>
@@ -2177,7 +2167,7 @@ exports[`full article with style in the style magazine 1`] = `
           className="c8 c14 c15"
         >
           <div
-            className="IS7"
+            className="IS6"
           />
           <div>
             <div
@@ -2223,22 +2213,22 @@ exports[`full article with style in the style magazine 1`] = `
           className="c18 responsiveweb__PrimaryImg-sc-16nqyj8-5 c18 css-view-1dbjc4n"
         >
           <figure
-            className="IS13"
+            className="IS12"
           >
             <div
-              className="css-view-1dbjc4n IS12"
+              className="css-view-1dbjc4n IS11"
             >
               <div
-                className="css-view-1dbjc4n IS11"
+                className="css-view-1dbjc4n IS10"
               >
                 <div
-                  className="IS10"
+                  className="IS9"
                 >
                   <div
-                    className="IS9"
+                    className="IS8"
                   >
                     <video
-                      className="video-js IS8"
+                      className="video-js IS7"
                     />
                   </div>
                 </div>
@@ -2252,10 +2242,10 @@ exports[`full article with style in the style magazine 1`] = `
                   className="css-view-1dbjc4n"
                 >
                   <div
-                    className="css-view-1dbjc4n r-paddingTop-m611by S9"
+                    className="css-view-1dbjc4n r-paddingTop-m611by S8"
                   >
                     <div
-                      className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0 S8"
+                      className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0 S7"
                     >
                       This is video caption
                     </div>
@@ -2266,7 +2256,7 @@ exports[`full article with style in the style magazine 1`] = `
           </figure>
         </div>
         <Ad
-          className="IS14"
+          className="IS13"
         />
         <div>
           <div
@@ -2473,6 +2463,13 @@ exports[`full article with style in the sunday times magazine 1`] = `
   order: 2;
 }
 
+.c4 {
+  font-size: px;
+  font-family: Tiempos-Headline-Bold;
+  line-height: px;
+  color: rgba(255,255,255,1);
+}
+
 @media (min-width:768px) {
   .c19 {
     font-size: 18px;
@@ -2652,14 +2649,6 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 @media (min-width:768px) {
-  .c4 {
-    font-size: 45px;
-    line-height: 50px;
-    margin-bottom: 5px;
-  }
-}
-
-@media (min-width:768px) {
   .c11 {
     margin-top: 0;
   }
@@ -2711,6 +2700,14 @@ exports[`full article with style in the sunday times magazine 1`] = `
   }
 }
 
+@media (min-width:768px) {
+  .c4 {
+    font-size: 45px;
+    line-height: 50px;
+    margin-bottom: 5px;
+  }
+}
+
 <style>
 .S1 {
   font-weight: 400;
@@ -2725,16 +2722,11 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 .S3 {
-  line-height: 33px;
-  margin-bottom: 10px;
-}
-
-.S4 {
   line-height: 26px;
   margin-bottom: 15px;
 }
 
-.S5 {
+.S4 {
   -ms-flex-align: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -2743,23 +2735,23 @@ exports[`full article with style in the sunday times magazine 1`] = `
   padding-top: 60px;
 }
 
-.S6 {
+.S5 {
   -ms-flex-pack: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
 }
 
-.S7 {
+.S6 {
   line-height: 15px;
   margin-top: 5px;
 }
 
-.S8 {
+.S7 {
   line-height: 17px;
 }
 
-.S9 {
+.S8 {
   padding-top: 10px;
 }
 
@@ -2773,14 +2765,9 @@ exports[`full article with style in the sunday times magazine 1`] = `
 
 .IS3 {
   color: rgba(255,255,255,1.00);
-  font-family: Tiempos-Headline-Bold;
 }
 
 .IS4 {
-  color: rgba(255,255,255,1.00);
-}
-
-.IS5 {
   background-color: rgba(60,129,190,1.00);
   -webkit-order: 2;
   order: 2;
@@ -2788,46 +2775,46 @@ exports[`full article with style in the sunday times magazine 1`] = `
   -ms-flex-order: 2;
 }
 
-.IS6 {
+.IS5 {
   margin-bottom: 20px;
 }
 
-.IS7 {
+.IS6 {
   display: none;
+}
+
+.IS7 {
+  height: 100%;
+  width: 100%;
 }
 
 .IS8 {
   height: 100%;
   width: 100%;
+  position: relative;
 }
 
 .IS9 {
   height: 100%;
   width: 100%;
-  position: relative;
 }
 
 .IS10 {
-  height: 100%;
-  width: 100%;
-}
-
-.IS11 {
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
-.IS12 {
+.IS11 {
   padding-bottom: 56.25%;
   position: relative;
 }
 
-.IS13 {
+.IS12 {
   margin: 0;
 }
 
-.IS14 {
+.IS13 {
   border-bottom-color: #DBDBDB;
   border-bottom-width: 1;
   border-top-color: #DBDBDB;
@@ -2877,10 +2864,10 @@ exports[`full article with style in the sunday times magazine 1`] = `
         className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
       >
         <div
-          className="css-view-1dbjc4n IS5"
+          className="css-view-1dbjc4n IS4"
         >
           <div
-            className="c3 responsiveweb__HeaderContainer-sc-1nipn43-2 c3 css-view-1dbjc4n r-alignItems-1awozwy r-paddingBottom-2o15sn r-paddingHorizontal-d9fdf6 r-paddingTop-u04ygo S5"
+            className="c3 responsiveweb__HeaderContainer-sc-1nipn43-2 c3 css-view-1dbjc4n r-alignItems-1awozwy r-paddingBottom-2o15sn r-paddingHorizontal-d9fdf6 r-paddingTop-u04ygo S4"
           >
             <div
               className="css-view-1dbjc4n r-marginBottom-15d164r S2"
@@ -2892,7 +2879,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
               </div>
             </div>
             <h1
-              className="c4 css-reset-4rbku5 responsiveweb__HeadlineContainer-sc-1nipn43-3 c4 css-text-901oao r-fontSize-1ra0lkn r-lineHeight-1j8sj39 r-marginBottom-15d164r r-textAlign-q4m81j IS3 S3"
+              className="c4"
             >
               Some Headline
             </h1>
@@ -2902,23 +2889,23 @@ exports[`full article with style in the sunday times magazine 1`] = `
               <ArticleFlags />
             </div>
             <h2
-              className="c6 css-reset-4rbku5 responsiveweb__StandfirstContainer-sc-1nipn43-8 c6 css-text-901oao r-fontFamily-4h8ur4 r-fontSize-adyw6z r-lineHeight-eaezby r-marginBottom-ku1wi2 r-paddingHorizontal-utggzx r-textAlign-q4m81j IS4 S4"
+              className="c6 css-reset-4rbku5 responsiveweb__StandfirstContainer-sc-1nipn43-8 c6 css-text-901oao r-fontFamily-4h8ur4 r-fontSize-adyw6z r-lineHeight-eaezby r-marginBottom-ku1wi2 r-paddingHorizontal-utggzx r-textAlign-q4m81j IS3 S3"
             >
               Some Standfirst
             </h2>
           </div>
         </div>
         <ArticleLeadAsset
-          className="c7 IS6"
+          className="c7 IS5"
         />
         <div
           className="c8 c9"
         >
           <div
-            className="c10 responsiveweb__MetaContainer-sc-1nipn43-6 c10 css-view-1dbjc4n r-justifyContent-1777fci r-paddingVertical-1w50u8q S6"
+            className="c10 responsiveweb__MetaContainer-sc-1nipn43-6 c10 css-view-1dbjc4n r-justifyContent-1777fci r-paddingVertical-1w50u8q S5"
           >
             <div
-              className="c11 responsiveweb__Meta-sc-1nipn43-5 c11 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj r-justifyContent-1777fci S6"
+              className="c11 responsiveweb__Meta-sc-1nipn43-5 c11 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj r-justifyContent-1777fci S5"
             >
               <ArticleBylineWithLinks />
             </div>
@@ -2926,10 +2913,10 @@ exports[`full article with style in the sunday times magazine 1`] = `
               className="c12 responsiveweb__Separator-sc-1nipn43-7 c12 css-view-1dbjc4n"
             />
             <div
-              className="c11 responsiveweb__Meta-sc-1nipn43-5 c11 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj r-justifyContent-1777fci S6"
+              className="c11 responsiveweb__Meta-sc-1nipn43-5 c11 css-view-1dbjc4n r-flexDirection-18u37iz r-flexWrap-1w6e6rj r-justifyContent-1777fci S5"
             >
               <div
-                className="c13 responsiveweb__DatePublicationContainer-sc-1nipn43-0 c13 css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginTop-1g94qm0 S7"
+                className="c13 responsiveweb__DatePublicationContainer-sc-1nipn43-0 c13 css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginTop-1g94qm0 S6"
               >
                 <DatePublication />
               </div>
@@ -2940,7 +2927,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
           className="c8 c14 c15"
         >
           <div
-            className="IS7"
+            className="IS6"
           />
           <div>
             <div
@@ -2986,22 +2973,22 @@ exports[`full article with style in the sunday times magazine 1`] = `
           className="c18 responsiveweb__PrimaryImg-sc-16nqyj8-5 c18 css-view-1dbjc4n"
         >
           <figure
-            className="IS13"
+            className="IS12"
           >
             <div
-              className="css-view-1dbjc4n IS12"
+              className="css-view-1dbjc4n IS11"
             >
               <div
-                className="css-view-1dbjc4n IS11"
+                className="css-view-1dbjc4n IS10"
               >
                 <div
-                  className="IS10"
+                  className="IS9"
                 >
                   <div
-                    className="IS9"
+                    className="IS8"
                   >
                     <video
-                      className="video-js IS8"
+                      className="video-js IS7"
                     />
                   </div>
                 </div>
@@ -3015,10 +3002,10 @@ exports[`full article with style in the sunday times magazine 1`] = `
                   className="css-view-1dbjc4n"
                 >
                   <div
-                    className="css-view-1dbjc4n r-paddingTop-m611by S9"
+                    className="css-view-1dbjc4n r-paddingTop-m611by S8"
                   >
                     <div
-                      className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0 S8"
+                      className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0 S7"
                     >
                       This is video caption
                     </div>
@@ -3029,7 +3016,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
           </figure>
         </div>
         <Ad
-          className="IS14"
+          className="IS13"
         />
         <div>
           <div
