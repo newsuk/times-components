@@ -47,6 +47,14 @@ describe("The Topic Page", () => {
   it("should pass basic a11y test", () => {
     cy.injectAxe();
     cy.wait(1000);
+    cy.configureAxe({
+      rules: [
+        {
+          id: 'color-contrast',
+          enabled: false,
+        }
+      ]
+    });
     cy.checkA11y();
   });
 });
