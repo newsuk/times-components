@@ -8,7 +8,7 @@ import {
 import { verticalStyles } from "../../shared/styles";
 
 const headlineFontSizeResolver = {
-  [editionBreakpoints.medium]: 25,
+  [editionBreakpoints.medium]: 30,
   [editionBreakpoints.wide]: 35,
   [editionBreakpoints.huge]: 45
 };
@@ -37,7 +37,7 @@ const styles = (breakpoint = editionBreakpoints.medium) => ({
   },
   imageContainer: {
     overflow: "hidden",
-    width: "40%"
+    width: "10%"
   },
   star: {
     ...verticalStyles.starButton,
