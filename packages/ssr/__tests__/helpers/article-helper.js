@@ -100,11 +100,10 @@ const articleTemplateTest = template =>
     });
 
     it("should pass basic a11y test", () => {
-      cy
-        .task("startMockServerWith", {
-          Article: sundayTimesArticleWithThreeRelatedArticles,
-          User: userWithBookmarks
-        })
+      cy.task("startMockServerWith", {
+        Article: sundayTimesArticleWithThreeRelatedArticles,
+        User: userWithBookmarks
+      })
         .visit("/article/8763d1a0-ca57-11e8-bde6-fae32479843d")
         .wait(1000)
         .injectAxe()
@@ -112,24 +111,16 @@ const articleTemplateTest = template =>
         .configureAxe({
           rules: [
             {
-              id: 'color-contrast',
-              enabled: false,
+              id: "color-contrast",
+              enabled: false
             },
             {
-              id: 'frame-title-unique',
-              enabled: false,
+              id: "frame-title-unique",
+              enabled: false
             },
             {
-              id: 'landmark-banner-is-top-level',
-              enabled: false,
-            },
-            {
-              id: 'landmark-complementary-is-top-level',
-              enabled: false,
-            },
-            {
-              id: 'region',
-              enabled: false,
+              id: "region",
+              enabled: false
             }
           ]
         })

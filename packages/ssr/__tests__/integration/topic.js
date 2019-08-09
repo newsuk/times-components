@@ -50,8 +50,8 @@ describe("The Topic Page", () => {
     cy.configureAxe({
       rules: [
         {
-          id: 'color-contrast',
-          enabled: false,
+          id: "color-contrast",
+          enabled: false
         }
       ]
     });

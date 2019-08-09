@@ -46,8 +46,12 @@ describe("AuthorProfile", () => {
     cy.configureAxe({
       rules: [
         {
-          id: 'color-contrast',
-          enabled: false,
+          id: "color-contrast",
+          enabled: false
+        },
+        {
+          id: "region",
+          enabled: false
         }
       ]
     });
