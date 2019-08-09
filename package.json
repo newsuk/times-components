@@ -117,6 +117,7 @@
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.5",
     "babel-plugin-module-resolver": "3.2.0",
+    "babel-plugin-transform-react-remove-prop-types": "0.4.24",
     "commitizen": "2.9.6",
     "coveralls": "2.13.1",
     "cz-conventional-changelog": "2.1.0",
