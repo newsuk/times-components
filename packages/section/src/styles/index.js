@@ -1,7 +1,11 @@
-import { StyleSheet } from "react-native";
-import { colours, fonts, spacing } from "@times-components/styleguide";
+import {
+  colours,
+  fonts,
+  spacing,
+  editionBreakpoints
+} from "@times-components/styleguide";
 
-const styles = StyleSheet.create({
+export default breakpoint => ({
   listItemContainer: {
     paddingHorizontal: spacing(2),
     paddingVertical: spacing(2)
@@ -9,7 +13,8 @@ const styles = StyleSheet.create({
   listItemSeparator: {
     backgroundColor: colours.functional.keyline,
     height: 1,
-    marginHorizontal: spacing(2)
+    marginHorizontal:
+      breakpoint === editionBreakpoints.medium ? spacing(8) : spacing(2)
   },
   puzzleBarArrow: {
     paddingLeft: spacing(2),
@@ -31,5 +36,3 @@ const styles = StyleSheet.create({
     paddingTop: spacing(2)
   }
 });
-
-export default styles;

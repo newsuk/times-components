@@ -30,6 +30,7 @@ const TileAC = ({ onPress, tile, breakpoint }) => {
         relativeVerticalOffset={crop.relativeVerticalOffset}
         style={imageContainer}
         uri={crop.url}
+        fill
       />
       <TileSummary
         headlineStyle={headline}

@@ -27,6 +27,7 @@ const TileZ = ({ onPress, tile }) => {
         relativeHorizontalOffset={crop.relativeHorizontalOffset}
         relativeVerticalOffset={crop.relativeVerticalOffset}
         uri={crop.url}
+        fill
       />
     </TileLink>
   );

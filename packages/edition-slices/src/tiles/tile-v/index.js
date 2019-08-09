@@ -22,6 +22,7 @@ const TileV = ({ onPress, tile }) => {
         relativeVerticalOffset={crop.relativeVerticalOffset}
         style={styles.imageContainer}
         uri={crop.url}
+        fill
       />
       <TileSummary headlineStyle={styles.headline} tile={tile} />
     </TileLink>

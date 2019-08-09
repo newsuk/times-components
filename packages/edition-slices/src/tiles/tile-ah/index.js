@@ -29,6 +29,7 @@ const TileAH = ({ onPress, tile, breakpoint }) => {
         relativeVerticalOffset={crop.relativeVerticalOffset}
         style={styles.imageContainer}
         uri={crop.url}
+        fill
         rounded
         resizeMode="cover"
       />

@@ -1,6 +1,5 @@
 import React from "react";
 import { Text, StyleSheet, View } from "react-native";
-import { subscriptMap, superscriptMap } from "./sub-sup";
 
 const styles = StyleSheet.create({
   bold: {
@@ -75,17 +74,6 @@ export default {
     };
   },
   subscript(key, attributes, renderedChildren) {
-    const chars = renderedChildren.toString().split("");
-
-    if (chars.every(char => char in subscriptMap)) {
-      return {
-        element: (
-          <Text key={key}>
-            {chars.map(char => subscriptMap[char]).join("")}
-          </Text>
-        )
-      };
-    }
     return {
       element: (
         <Text key={key} style={styles.subscript}>
@@ -95,17 +83,6 @@ export default {
     };
   },
   superscript(key, attributes, renderedChildren) {
-    const chars = renderedChildren.toString().split("");
-
-    if (chars.every(char => char in superscriptMap)) {
-      return {
-        element: (
-          <Text key={key}>
-            {chars.map(char => superscriptMap[char]).join("")}
-          </Text>
-        )
-      };
-    }
     return {
       element: (
         <Text key={key} style={styles.superscript}>
