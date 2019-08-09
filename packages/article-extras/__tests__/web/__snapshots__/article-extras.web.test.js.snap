@@ -7,13 +7,13 @@ Array [
       <ArticleTopics />
     </nav>
   </div>,
-  <aside
+  <div
     id="related-articles"
   >
     <RelatedArticles
       isVisible={true}
     />
-  </aside>,
+  </div>,
   <div
     id="sponsored-article"
   />,
