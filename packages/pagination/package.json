@@ -1,6 +1,6 @@
 {
   "name": "@times-components/pagination",
-  "version": "3.2.95",
+  "version": "3.2.96",
   "main": "dist/pagination",
   "dev": "src/pagination",
   "scripts": {
@@ -38,12 +38,12 @@
   "devDependencies": {
     "@babel/core": "7.4.4",
     "@times-components/eslint-config-thetimes": "0.8.13",
-    "@times-components/jest-configurator": "2.6.1",
-    "@times-components/jest-serializer": "3.2.13",
-    "@times-components/storybook": "4.0.28",
-    "@times-components/tealium-utils": "0.7.57",
-    "@times-components/test-utils": "2.3.2",
-    "@times-components/webpack-configurator": "2.0.23",
+    "@times-components/jest-configurator": "2.6.2",
+    "@times-components/jest-serializer": "3.2.14",
+    "@times-components/storybook": "4.0.29",
+    "@times-components/tealium-utils": "0.7.58",
+    "@times-components/test-utils": "2.3.3",
+    "@times-components/webpack-configurator": "2.0.24",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.5",
     "babel-plugin-add-react-displayname": "0.0.5",
@@ -68,10 +68,10 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/link": "3.4.36",
-    "@times-components/styleguide": "3.28.41",
-    "@times-components/svgs": "2.7.19",
-    "@times-components/tracking": "2.4.61",
+    "@times-components/link": "3.4.37",
+    "@times-components/styleguide": "3.28.42",
+    "@times-components/svgs": "2.7.20",
+    "@times-components/tracking": "2.4.62",
     "prop-types": "15.7.2",
     "react-display-name": "0.2.3",
     "styled-components": "4.2.0"
