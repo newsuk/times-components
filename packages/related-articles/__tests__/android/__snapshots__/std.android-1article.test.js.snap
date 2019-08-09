@@ -24,6 +24,7 @@ exports[`1. a single related article 1`] = `
           <View>
             <Card
               highResSize={null}
+              imageAccessibilityLabel="Test Short Headline"
               imageRatio={1.7777777777777777}
               imageUri="https://crop.io"
               isReversed={false}

@@ -43,4 +43,26 @@ describe("The Topic Page", () => {
     cy.goToPreviousArticle();
     cy.url().should("include", "?page=1");
   });
+
+  it("should pass basic a11y test", () => {
+    cy.injectAxe();
+    cy.wait(1000);
+    cy.configureAxe({
+      rules: [
+        {
+          id: "color-contrast",
+          enabled: false
+        },
+        {
+          id: "region",
+          enabled: false
+        },
+        {
+          id: "heading-order",
+          enabled: false
+        }
+      ]
+    });
+    cy.checkA11y();
+  });
 });

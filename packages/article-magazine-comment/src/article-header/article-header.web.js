@@ -35,7 +35,11 @@ const ArticleHeader = ({
     {({ theme: { headlineFont, headlineCase } }) => (
       <HeaderContainer style={styles.container}>
         <AuthorImageContainer style={styles.authorImage}>
-          <Image aspectRatio={1} uri={authorImage} />
+          <Image
+            aspectRatio={1}
+            uri={authorImage}
+            accessibilityLabel="author-image"
+          />
         </AuthorImageContainer>
         <Label isVideo={hasVideo} label={label} />
         <HeadlineContainer

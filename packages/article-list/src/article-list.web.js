@@ -186,7 +186,7 @@ class ArticleList extends Component {
     return (
       <LazyLoad rootMargin={spacing(10)} threshold={0.5}>
         {({ clientHasRendered, observed, registerNode }) => (
-          <View>
+          <View accessibilityRole="main">
             {articleListHeader}
             {error
               ? ErrorComponent

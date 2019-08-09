@@ -24,6 +24,7 @@ exports[`1. two related articles 1`] = `
           <View>
             <Card
               highResSize={null}
+              imageAccessibilityLabel="First Short Headline"
               imageRatio={1.7777777777777777}
               imageUri="https://crop1.io"
               isReversed={false}
@@ -79,6 +80,7 @@ exports[`1. two related articles 1`] = `
           <View>
             <Card
               highResSize={null}
+              imageAccessibilityLabel="Second Short Headline"
               imageRatio={1.7777777777777777}
               imageUri="https://crop2.io"
               isReversed={false}

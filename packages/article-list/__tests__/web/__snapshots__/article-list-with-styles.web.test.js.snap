@@ -116,7 +116,7 @@ exports[`1. article list 1`] = `
 }
 </style>
 
-<div
+<main
   className="css-view-1dbjc4n"
 >
   <div
@@ -286,5 +286,5 @@ exports[`1. article list 1`] = `
       </div>
     </div>
   </div>
-</div>
+</main>
 `;

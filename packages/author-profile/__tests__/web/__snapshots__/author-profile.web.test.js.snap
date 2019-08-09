@@ -262,6 +262,7 @@ exports[`7. an article list header 1`] = `
     <div>
       <div>
         <Image
+          accessibilityLabel="author-image"
           aspectRatio={1}
           uri="https://image.io"
         />
@@ -309,6 +310,7 @@ exports[`8. an article list header with no bio, job title, name or twitter 1`] =
     <div>
       <div>
         <Image
+          accessibilityLabel="author-image"
           aspectRatio={1}
           uri="https://image.io"
         />

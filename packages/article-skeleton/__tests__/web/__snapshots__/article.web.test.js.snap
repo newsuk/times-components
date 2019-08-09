@@ -11,7 +11,9 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
         slotName="header"
       />
     </div>
-    <div>
+    <main
+      role="main"
+    >
       <div>
         <div>
           <div
@@ -36,7 +38,9 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
           </div>
         </div>
       </div>
-      <div>
+      <article
+        role="article"
+      >
         <p>
           <span>
             T
@@ -350,8 +354,8 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
             ]
           }
         />
-      </div>
-    </div>
+      </article>
+    </main>
   </article>
 </div>
 `;
@@ -367,7 +371,9 @@ exports[`2. an article with no content 1`] = `
         slotName="header"
       />
     </div>
-    <div>
+    <main
+      role="main"
+    >
       <div>
         <div>
           <div
@@ -392,7 +398,9 @@ exports[`2. an article with no content 1`] = `
           </div>
         </div>
       </div>
-      <div>
+      <article
+        role="article"
+      >
         <ArticleExtras
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
@@ -454,8 +462,8 @@ exports[`2. an article with no content 1`] = `
             ]
           }
         />
-      </div>
-    </div>
+      </article>
+    </main>
   </article>
 </div>
 `;
@@ -471,7 +479,9 @@ exports[`3. an article with a nested markup in first paragraph displays a drop c
         slotName="header"
       />
     </div>
-    <div>
+    <main
+      role="main"
+    >
       <div>
         <div>
           <div
@@ -496,7 +506,9 @@ exports[`3. an article with a nested markup in first paragraph displays a drop c
           </div>
         </div>
       </div>
-      <div>
+      <article
+        role="article"
+      >
         <p>
           <span>
             <b>
@@ -522,8 +534,8 @@ exports[`3. an article with a nested markup in first paragraph displays a drop c
           sharingEnabled={true}
           spotAccountId=""
         />
-      </div>
-    </div>
+      </article>
+    </main>
   </article>
 </div>
 `;

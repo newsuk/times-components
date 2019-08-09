@@ -558,7 +558,7 @@ exports[`full article with style 1`] = `
           className="IS1"
         />
       </div>
-      <div
+      <main
         className="c2 responsiveweb__MainContainer-sc-1exejum-0 c2 css-view-1dbjc4n"
       >
         <div
@@ -689,7 +689,7 @@ exports[`full article with style 1`] = `
             </div>
           </div>
         </div>
-        <div
+        <article
           className="c18 responsiveweb__BodyContainer-sc-1exejum-3 c18 css-view-1dbjc4n"
         >
           <div>
@@ -782,8 +782,8 @@ exports[`full article with style 1`] = `
             </div>
           </div>
           <ArticleExtras />
-        </div>
-      </div>
+        </article>
+      </main>
     </article>
   </div>
 </div>
