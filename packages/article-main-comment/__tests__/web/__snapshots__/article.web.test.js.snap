@@ -71,8 +71,12 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
         slotName="header"
       />
     </div>
-    <div>
-      <div>
+    <main
+      role="main"
+    >
+      <header
+        role="banner"
+      >
         <div>
           <div>
             <Image
@@ -155,8 +159,10 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
             </div>
           </div>
         </div>
-      </div>
-      <div>
+      </header>
+      <article
+        role="article"
+      >
         <p>
           Some content
         </p>
@@ -220,8 +226,8 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
             ]
           }
         />
-      </div>
-    </div>
+      </article>
+    </main>
   </article>
 </div>
 `;
@@ -293,8 +299,12 @@ exports[`4. an article with ads 1`] = `
         slotName="header"
       />
     </div>
-    <div>
-      <div>
+    <main
+      role="main"
+    >
+      <header
+        role="banner"
+      >
         <div>
           <div>
             <Image
@@ -377,8 +387,10 @@ exports[`4. an article with ads 1`] = `
             </div>
           </div>
         </div>
-      </div>
-      <div>
+      </header>
+      <article
+        role="article"
+      >
         <Ad
           contextUrl="https://url.io"
           section="Some Section"
@@ -444,8 +456,8 @@ exports[`4. an article with ads 1`] = `
             ]
           }
         />
-      </div>
-    </div>
+      </article>
+    </main>
   </article>
 </div>
 `;
