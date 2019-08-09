@@ -32,7 +32,8 @@ describe("webpack-configurator", () => {
     expect(plugins).toEqual([
       "transform-es2015-modules-commonjs",
       "syntax-object-rest-spread",
-      ["react-native-web", { commonjs: true }]
+      ["react-native-web", { commonjs: true }],
+      "transform-react-remove-prop-types"
     ]);
   });
 
@@ -60,7 +61,8 @@ describe("webpack-configurator", () => {
           {
             commonjs: true
           }
-        ]
+        ],
+        "transform-react-remove-prop-types"
       ]
     });
   });
