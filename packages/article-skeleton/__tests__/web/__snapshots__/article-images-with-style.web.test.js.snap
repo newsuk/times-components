@@ -150,7 +150,7 @@ exports[`1. a primary image 1`] = `
     <main
       className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
     >
-      <header
+      <div
         className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
       >
         <div
@@ -169,7 +169,7 @@ exports[`1. a primary image 1`] = `
             </div>
           </div>
         </div>
-      </header>
+      </div>
       <article
         className="c7 responsiveweb__BodyContainer-sc-1exejum-3 c7 css-view-1dbjc4n"
       >
@@ -316,7 +316,7 @@ exports[`2. a fullwidth image 1`] = `
     <main
       className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
     >
-      <header
+      <div
         className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
       >
         <div
@@ -335,7 +335,7 @@ exports[`2. a fullwidth image 1`] = `
             </div>
           </div>
         </div>
-      </header>
+      </div>
       <article
         className="c7 responsiveweb__BodyContainer-sc-1exejum-3 c7 css-view-1dbjc4n"
       >
@@ -506,7 +506,7 @@ exports[`3. a secondary image 1`] = `
     <main
       className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
     >
-      <header
+      <div
         className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
       >
         <div
@@ -525,7 +525,7 @@ exports[`3. a secondary image 1`] = `
             </div>
           </div>
         </div>
-      </header>
+      </div>
       <article
         className="c7 responsiveweb__BodyContainer-sc-1exejum-3 c7 css-view-1dbjc4n"
       >
@@ -701,7 +701,7 @@ exports[`4. an inline image 1`] = `
     <main
       className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
     >
-      <header
+      <div
         className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
       >
         <div
@@ -720,7 +720,7 @@ exports[`4. an inline image 1`] = `
             </div>
           </div>
         </div>
-      </header>
+      </div>
       <article
         className="c7 responsiveweb__BodyContainer-sc-1exejum-3 c7 css-view-1dbjc4n"
       >

@@ -118,7 +118,7 @@ class ArticleSkeleton extends Component {
                     />
                   </HeaderAdContainer>
                   <MainContainer accessibilityRole="main">
-                    <HeaderContainer accessibilityRole="banner">
+                    <HeaderContainer>
                       <Header width={articleWidth} />
                       {savingEnabled || sharingEnabled ? (
                         <UserState state={UserState.loggedInOrShared}>

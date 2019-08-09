@@ -14,9 +14,7 @@ exports[`1. a primary image 1`] = `
     <main
       role="main"
     >
-      <header
-        role="banner"
-      >
+      <div>
         <div>
           <div
             data-tc-sticky-placeholder={true}
@@ -39,7 +37,7 @@ exports[`1. a primary image 1`] = `
             </div>
           </div>
         </div>
-      </header>
+      </div>
       <article
         role="article"
       >
@@ -96,9 +94,7 @@ exports[`2. a fullwidth image 1`] = `
     <main
       role="main"
     >
-      <header
-        role="banner"
-      >
+      <div>
         <div>
           <div
             data-tc-sticky-placeholder={true}
@@ -121,7 +117,7 @@ exports[`2. a fullwidth image 1`] = `
             </div>
           </div>
         </div>
-      </header>
+      </div>
       <article
         role="article"
       >
@@ -176,9 +172,7 @@ exports[`3. a secondary image 1`] = `
     <main
       role="main"
     >
-      <header
-        role="banner"
-      >
+      <div>
         <div>
           <div
             data-tc-sticky-placeholder={true}
@@ -201,7 +195,7 @@ exports[`3. a secondary image 1`] = `
             </div>
           </div>
         </div>
-      </header>
+      </div>
       <article
         role="article"
       >
@@ -258,9 +252,7 @@ exports[`4. an inline image 1`] = `
     <main
       role="main"
     >
-      <header
-        role="banner"
-      >
+      <div>
         <div>
           <div
             data-tc-sticky-placeholder={true}
@@ -283,7 +275,7 @@ exports[`4. an inline image 1`] = `
             </div>
           </div>
         </div>
-      </header>
+      </div>
       <article
         role="article"
       >

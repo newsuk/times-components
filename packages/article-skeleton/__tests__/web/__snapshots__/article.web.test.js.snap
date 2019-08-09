@@ -14,9 +14,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
     <main
       role="main"
     >
-      <header
-        role="banner"
-      >
+      <div>
         <div>
           <div
             data-tc-sticky-placeholder={true}
@@ -39,7 +37,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
             </div>
           </div>
         </div>
-      </header>
+      </div>
       <article
         role="article"
       >
@@ -376,9 +374,7 @@ exports[`2. an article with no content 1`] = `
     <main
       role="main"
     >
-      <header
-        role="banner"
-      >
+      <div>
         <div>
           <div
             data-tc-sticky-placeholder={true}
@@ -401,7 +397,7 @@ exports[`2. an article with no content 1`] = `
             </div>
           </div>
         </div>
-      </header>
+      </div>
       <article
         role="article"
       >
@@ -486,9 +482,7 @@ exports[`3. an article with a nested markup in first paragraph displays a drop c
     <main
       role="main"
     >
-      <header
-        role="banner"
-      >
+      <div>
         <div>
           <div
             data-tc-sticky-placeholder={true}
@@ -511,7 +505,7 @@ exports[`3. an article with a nested markup in first paragraph displays a drop c
             </div>
           </div>
         </div>
-      </header>
+      </div>
       <article
         role="article"
       >

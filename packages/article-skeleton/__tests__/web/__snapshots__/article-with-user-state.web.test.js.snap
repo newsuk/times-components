@@ -14,9 +14,7 @@ exports[`Article with user state Render full article when user has access to ful
     <main
       role="main"
     >
-      <header
-        role="banner"
-      />
+      <div />
       <article
         role="article"
       >
@@ -350,9 +348,7 @@ exports[`Article with user state Render teaser article when user does not have a
     <main
       role="main"
     >
-      <header
-        role="banner"
-      />
+      <div />
       <article
         role="article"
       >
