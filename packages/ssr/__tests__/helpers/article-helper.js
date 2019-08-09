@@ -106,23 +106,34 @@ const articleTemplateTest = template =>
           User: userWithBookmarks
         })
         .visit("/article/8763d1a0-ca57-11e8-bde6-fae32479843d")
-        .then(() => {
-          cy.injectAxe();
-          cy.wait(1000);
-          cy.configureAxe({
-            rules: [
-              {
-                id: 'color-contrast',
-                enabled: false,
-              },
-              {
-                id: 'frame-title-unique',
-                enabled: false,
-              }
-            ]
-          });
-          cy.checkA11y();
-        });
+        .wait(1000)
+        .injectAxe()
+        .wait(200)
+        .configureAxe({
+          rules: [
+            {
+              id: 'color-contrast',
+              enabled: false,
+            },
+            {
+              id: 'frame-title-unique',
+              enabled: false,
+            },
+            {
+              id: 'landmark-banner-is-top-level',
+              enabled: false,
+            },
+            {
+              id: 'landmark-complementary-is-top-level',
+              enabled: false,
+            },
+            {
+              id: 'region',
+              enabled: false,
+            }
+          ]
+        })
+        .checkA11y();
     });
   });
 
