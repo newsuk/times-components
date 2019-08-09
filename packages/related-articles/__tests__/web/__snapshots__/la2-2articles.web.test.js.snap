@@ -25,6 +25,7 @@ exports[`1. one lead and one support related article 1`] = `
             <div>
               <Card
                 highResSize={null}
+                imageAccessibilityLabel="First Short Headline"
                 imageRatio={1.7777777777777777}
                 imageUri="https://crop169-1.io"
                 isReversed={false}
@@ -84,6 +85,7 @@ exports[`1. one lead and one support related article 1`] = `
               <div>
                 <Card
                   highResSize={null}
+                  imageAccessibilityLabel="Second Short Headline"
                   imageRatio={1.7777777777777777}
                   imageUri="https://crop169-2.io"
                   isReversed={false}

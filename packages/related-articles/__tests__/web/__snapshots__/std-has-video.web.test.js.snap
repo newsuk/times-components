@@ -25,6 +25,7 @@ exports[`1. has video 1`] = `
             <div>
               <Card
                 highResSize={null}
+                imageAccessibilityLabel=""
                 imageRatio={1.7777777777777777}
                 imageUri="https://crop169.io"
                 isReversed={false}
