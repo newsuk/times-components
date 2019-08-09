@@ -74,9 +74,7 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
     <main
       role="main"
     >
-      <header
-        role="banner"
-      >
+      <div>
         <div>
           <div>
             <h1
@@ -180,7 +178,7 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
             </div>
           </div>
         </div>
-      </header>
+      </div>
       <article
         role="article"
       >
@@ -323,9 +321,7 @@ exports[`4. an article with ads 1`] = `
     <main
       role="main"
     >
-      <header
-        role="banner"
-      >
+      <div>
         <div>
           <div>
             <h1
@@ -429,7 +425,7 @@ exports[`4. an article with ads 1`] = `
             </div>
           </div>
         </div>
-      </header>
+      </div>
       <article
         role="article"
       >

@@ -399,9 +399,6 @@ exports[`1. a full article 1`] = `
           />
         </svg>
       </a>
-      <aside
-        id="related-articles"
-      />
     </article>
   </main>
 </article>

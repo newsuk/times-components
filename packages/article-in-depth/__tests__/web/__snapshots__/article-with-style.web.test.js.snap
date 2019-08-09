@@ -583,7 +583,7 @@ exports[`full article with style 1`] = `
     <main
       className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
     >
-      <header
+      <div
         className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
       >
         <div
@@ -662,7 +662,7 @@ exports[`full article with style 1`] = `
             </div>
           </div>
         </div>
-      </header>
+      </div>
       <article
         className="c17 responsiveweb__BodyContainer-sc-1exejum-3 c17 css-view-1dbjc4n"
       >
@@ -1346,7 +1346,7 @@ exports[`full article with style in the culture magazine 1`] = `
     <main
       className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
     >
-      <header
+      <div
         className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
       >
         <div
@@ -1425,7 +1425,7 @@ exports[`full article with style in the culture magazine 1`] = `
             </div>
           </div>
         </div>
-      </header>
+      </div>
       <article
         className="c17 responsiveweb__BodyContainer-sc-1exejum-3 c17 css-view-1dbjc4n"
       >
@@ -2110,7 +2110,7 @@ exports[`full article with style in the style magazine 1`] = `
     <main
       className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
     >
-      <header
+      <div
         className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
       >
         <div
@@ -2189,7 +2189,7 @@ exports[`full article with style in the style magazine 1`] = `
             </div>
           </div>
         </div>
-      </header>
+      </div>
       <article
         className="c17 responsiveweb__BodyContainer-sc-1exejum-3 c17 css-view-1dbjc4n"
       >
@@ -2873,7 +2873,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
     <main
       className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
     >
-      <header
+      <div
         className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
       >
         <div
@@ -2952,7 +2952,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
             </div>
           </div>
         </div>
-      </header>
+      </div>
       <article
         className="c17 responsiveweb__BodyContainer-sc-1exejum-3 c17 css-view-1dbjc4n"
       >
