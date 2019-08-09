@@ -52,6 +52,14 @@ describe("The Topic Page", () => {
         {
           id: "color-contrast",
           enabled: false
+        },
+        {
+          id: "region",
+          enabled: false
+        },
+        {
+          id: "heading-order",
+          enabled: false
         }
       ]
     });
