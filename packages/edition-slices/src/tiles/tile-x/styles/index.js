@@ -7,6 +7,7 @@ import {
 
 const mediumBreakpointStyles = {
   container: {
+    flex: 1,
     padding: spacing(2),
     paddingTop: spacing(3)
   },
@@ -28,6 +29,7 @@ const mediumBreakpointStyles = {
 
 const wideBreakpointStyles = {
   container: {
+    flex: 1,
     paddingHorizontal: spacing(2),
     paddingTop: spacing(2)
   },

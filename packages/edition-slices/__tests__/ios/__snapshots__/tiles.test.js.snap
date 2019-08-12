@@ -1043,57 +1043,6 @@ exports[`25. tile x 1`] = `
 <Link
   linkStyle={
     Object {
-      "paddingHorizontal": 10,
-      "paddingTop": 10,
-    }
-  }
-  url="/article/123"
->
-  <View>
-    <View>
-      <ArticleLabel
-        color="#005B8D"
-        isVideo={false}
-        title="label"
-      />
-    </View>
-    <Text
-      accessibilityRole="header"
-      aria-level="3"
-    >
-      This is tile headline
-    </Text>
-    <Text
-      accessibilityRole="header"
-      aria-level="4"
-    >
-      Three Conservative MPs resign
-    </Text>
-    <Text>
-      <Text>
-        
-        ‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye.
-        ...
-      </Text>
-    </Text>
-    <ArticleFlags
-      flags={
-        Array [
-          Object {
-            "expiryTime": "2030-03-14T12:00:00.000Z",
-            "type": "EXCLUSIVE",
-          },
-        ]
-      }
-    />
-  </View>
-</Link>
-`;
-
-exports[`26. tile y 1`] = `
-<Link
-  linkStyle={
-    Object {
       "flex": 1,
       "paddingHorizontal": 10,
       "paddingTop": 10,
@@ -1117,6 +1066,12 @@ exports[`26. tile y 1`] = `
         >
           This is tile headline
         </Text>
+        <Text
+          accessibilityRole="header"
+          aria-level="4"
+        >
+          Three Conservative MPs resign
+        </Text>
         <ArticleFlags
           flags={
             Array [
@@ -1129,6 +1084,51 @@ exports[`26. tile y 1`] = `
         />
       </View>
     </View>
+  </View>
+</Link>
+`;
+
+exports[`26. tile y 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "paddingHorizontal": 10,
+      "paddingTop": 10,
+    }
+  }
+  url="/article/123"
+>
+  <View>
+    <View>
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
+    </View>
+    <Text
+      accessibilityRole="header"
+      aria-level="3"
+    >
+      This is tile headline
+    </Text>
+    <Text>
+      <Text>
+        
+        ‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye.
+        ...
+      </Text>
+    </Text>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
   </View>
 </Link>
 `;
