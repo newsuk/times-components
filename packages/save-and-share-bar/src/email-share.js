@@ -5,7 +5,6 @@ import { ActivityIndicator } from "react-native";
 import { IconEmail } from "@times-components/icons";
 import styles from "./styles";
 import BarItem from "./bar-item";
-import withTrackEvents from "./tracking/with-track-events";
 
 class EmailShare extends Component {
   constructor(props) {
@@ -93,4 +92,4 @@ EmailShare.defaultProps = {
   publicationName: "TIMES"
 };
 
-export default withTrackEvents(EmailShare);
+export default EmailShare;
