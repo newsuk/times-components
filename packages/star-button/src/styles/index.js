@@ -4,8 +4,8 @@ const styles = {
     height: 28,
     overflow: "hidden",
     width: 28,
-    alignItems: 'center',
-    justifyContent: 'center'
+    alignItems: "center",
+    justifyContent: "center"
   }
 };
 
