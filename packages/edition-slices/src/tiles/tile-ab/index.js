@@ -1,4 +1,5 @@
 import React from "react";
+import { View } from "react-native";
 import PropTypes from "prop-types";
 import Image from "@times-components/image";
 import { editionBreakpoints } from "@times-components/styleguide";
@@ -11,6 +12,7 @@ import {
 } from "../shared";
 import styleFactory from "./styles";
 import WithoutWhiteSpace from "../shared/without-white-space";
+import PositionedTileStar from "../shared/positioned-tile-star";
 
 const TileAB = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
   const styles = styleFactory(breakpoint);

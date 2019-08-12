@@ -56,7 +56,6 @@ const wideBreakpointStyles = {
   },
   summaryContainer: {
     ...sharedStyles.summaryContainer,
-    paddingBottom: spacing(1),
     paddingRight: spacing(4)
   }
 };

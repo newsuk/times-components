@@ -27,7 +27,8 @@ const styles = breakpoint => ({
     width: "30%"
   },
   summaryContainer: {
-    width: "70%"
+    width: "70%",
+    paddingLeft: spacing(2)
   }
 });
 

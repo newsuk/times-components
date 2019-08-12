@@ -62,18 +62,10 @@ const wideStyles = {
   }
 };
 
-const hugeStyles = {
-  headline: {
-    fontFamily: fonts.headline,
-    fontSize: 35,
-    lineHeight: 35
-  }
-};
-
 const stylesResolver = {
   medium: mediumStyles,
   wide: wideStyles,
-  huge: hugeStyles
+  huge: wideStyles
 };
 
 export default breakpoint => ({

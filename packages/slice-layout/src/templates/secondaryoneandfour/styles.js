@@ -20,6 +20,9 @@ const mediumBreakpointStyles = {
   itemContainer: {
     width: "25%"
   },
+  item: {
+    flex: 1
+  },
   secondaryItemContainer: {
     width: "50%"
   },

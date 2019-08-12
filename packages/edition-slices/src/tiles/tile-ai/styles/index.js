@@ -1,5 +1,4 @@
 import { spacing } from "@times-components/styleguide";
-// import { fullHeightSummaryContainer } from '../../shared/styles';
 
 const styles = {
   container: {

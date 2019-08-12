@@ -7,7 +7,6 @@ import ArticleSummary, {
 } from "@times-components/article-summary";
 import { ArticleFlags } from "@times-components/article-flag";
 import { colours } from "@times-components/styleguide";
-// import { horizontalStyles } from "./styles";
 import PositionedTileStar from "./positioned-tile-star";
 
 class TileSummary extends Component {

@@ -11,6 +11,7 @@ const TileO = ({ isDarkStar, onPress, tile }) => (
       headlineStyle={styles.headlineStyle}
       labelColour={colours.functional.greyLabel}
       tile={tile}
+      style={styles.summaryContainer}
       isDarkStar={isDarkStar}
     />
   </TileLink>

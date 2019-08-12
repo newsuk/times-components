@@ -41,7 +41,6 @@ const TileAR = ({ onPress, tile }) => {
             />
           )}
         />
-
         <PositionedTileStar articleId={tile.article.id} />
       </View>
     </TileLink>

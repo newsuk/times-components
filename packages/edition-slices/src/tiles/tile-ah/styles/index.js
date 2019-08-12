@@ -43,7 +43,8 @@ const styles = (breakpoint = editionBreakpoints.medium) => ({
   },
   summaryContainer: {
     flex: 1,
-    paddingTop: spacing(1)
+    paddingTop: spacing(1),
+    alignItems: "center"
   }
 });
 

@@ -3,6 +3,7 @@ import {
   spacing,
   editionBreakpoints
 } from "@times-components/styleguide";
+import { fullHeightSummaryContainer } from "../../shared/styles";
 
 const headlineFontSizeResolver = {
   [editionBreakpoints.huge]: 45,
@@ -13,6 +14,7 @@ const headlineFontSizeResolver = {
 
 export default breakpoint => ({
   container: {
+    flex: 1,
     flexDirection: "row",
     paddingHorizontal: spacing(2),
     paddingVertical:
