@@ -386,7 +386,6 @@ exports[`5. lead two no pic and two - medium 1`] = `
 }
 
 .IS4 {
-  padding-top: 10px;
   width: 16%;
 }
 
@@ -694,6 +693,19 @@ exports[`7. secondary one and four - medium 1`] = `
 }
 
 .IS5 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
+
+.IS6 {
   border-bottom-width: 1px;
   border-top-color: rgba(77,77,77,1.00);
   border-right-color: rgba(77,77,77,1.00);
@@ -707,11 +719,24 @@ exports[`7. secondary one and four - medium 1`] = `
   margin-left: 10px;
 }
 
-.IS6 {
+.IS7 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
+
+.IS8 {
   width: 25%;
 }
 
-.IS7 {
+.IS9 {
   border-top-color: rgba(77,77,77,1.00);
   border-right-color: rgba(77,77,77,1.00);
   border-bottom-color: rgba(77,77,77,1.00);
@@ -725,7 +750,20 @@ exports[`7. secondary one and four - medium 1`] = `
   margin-bottom: 10px;
 }
 
-.IS8 {
+.IS10 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
+
+.IS11 {
   border-bottom-width: 1px;
   border-top-color: rgba(77,77,77,1.00);
   border-right-color: rgba(77,77,77,1.00);
@@ -739,11 +777,24 @@ exports[`7. secondary one and four - medium 1`] = `
   margin-left: 10px;
 }
 
-.IS9 {
+.IS12 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
+
+.IS13 {
   width: 25%;
 }
 
-.IS10 {
+.IS14 {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -751,13 +802,13 @@ exports[`7. secondary one and four - medium 1`] = `
   -webkit-box-direction: normal;
 }
 
-.IS11 {
+.IS15 {
   background-color: rgba(39,45,52,1.00);
   padding-right: 10px;
   padding-left: 10px;
 }
 
-.IS12 {
+.IS16 {
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
@@ -767,19 +818,19 @@ exports[`7. secondary one and four - medium 1`] = `
   -ms-flex-item-align: center;
 }
 
-.IS13 {
+.IS17 {
   background-color: rgba(39,45,52,1.00);
 }
 </style>
 
 <div
-  className="css-view-1dbjc4n IS13"
+  className="css-view-1dbjc4n IS17"
 >
   <div
-    className="css-view-1dbjc4n IS12"
+    className="css-view-1dbjc4n IS16"
   >
     <div
-      className="css-view-1dbjc4n IS11"
+      className="css-view-1dbjc4n IS15"
     >
       <div
         className="css-view-1dbjc4n IS1"
@@ -793,7 +844,7 @@ exports[`7. secondary one and four - medium 1`] = `
         className="css-view-1dbjc4n IS2"
       />
       <div
-        className="css-view-1dbjc4n IS10"
+        className="css-view-1dbjc4n IS14"
       >
         <div
           className="css-view-1dbjc4n IS3"
@@ -811,20 +862,20 @@ exports[`7. secondary one and four - medium 1`] = `
           className="css-view-1dbjc4n IS4"
         />
         <div
-          className="css-view-1dbjc4n IS6"
+          className="css-view-1dbjc4n IS8"
         >
           <div
-            className="css-view-1dbjc4n"
+            className="css-view-1dbjc4n IS5"
           >
             <TileO
               tileName="support1"
             />
           </div>
           <div
-            className="css-view-1dbjc4n IS5"
+            className="css-view-1dbjc4n IS6"
           />
           <div
-            className="css-view-1dbjc4n"
+            className="css-view-1dbjc4n IS7"
           >
             <TileO
               tileName="support3"
@@ -832,23 +883,23 @@ exports[`7. secondary one and four - medium 1`] = `
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n IS7"
+          className="css-view-1dbjc4n IS9"
         />
         <div
-          className="css-view-1dbjc4n IS9"
+          className="css-view-1dbjc4n IS13"
         >
           <div
-            className="css-view-1dbjc4n"
+            className="css-view-1dbjc4n IS10"
           >
             <TileO
               tileName="support2"
             />
           </div>
           <div
-            className="css-view-1dbjc4n IS8"
+            className="css-view-1dbjc4n IS11"
           />
           <div
-            className="css-view-1dbjc4n"
+            className="css-view-1dbjc4n IS12"
           >
             <TileO
               tileName="support4"
@@ -2206,7 +2257,6 @@ exports[`20. lead two no pic and two - wide 1`] = `
 }
 
 .IS4 {
-  padding-top: 10px;
   width: 16%;
 }
 
@@ -2514,6 +2564,19 @@ exports[`22. secondary one and four - wide 1`] = `
 }
 
 .IS5 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
+
+.IS6 {
   border-bottom-width: 1px;
   border-top-color: rgba(77,77,77,1.00);
   border-right-color: rgba(77,77,77,1.00);
@@ -2527,11 +2590,24 @@ exports[`22. secondary one and four - wide 1`] = `
   margin-left: 10px;
 }
 
-.IS6 {
+.IS7 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
+
+.IS8 {
   width: 25%;
 }
 
-.IS7 {
+.IS9 {
   border-top-color: rgba(77,77,77,1.00);
   border-right-color: rgba(77,77,77,1.00);
   border-bottom-color: rgba(77,77,77,1.00);
@@ -2545,7 +2621,20 @@ exports[`22. secondary one and four - wide 1`] = `
   margin-bottom: 10px;
 }
 
-.IS8 {
+.IS10 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
+
+.IS11 {
   border-bottom-width: 1px;
   border-top-color: rgba(77,77,77,1.00);
   border-right-color: rgba(77,77,77,1.00);
@@ -2559,11 +2648,24 @@ exports[`22. secondary one and four - wide 1`] = `
   margin-left: 10px;
 }
 
-.IS9 {
+.IS12 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
+
+.IS13 {
   width: 25%;
 }
 
-.IS10 {
+.IS14 {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -2571,13 +2673,13 @@ exports[`22. secondary one and four - wide 1`] = `
   -webkit-box-direction: normal;
 }
 
-.IS11 {
+.IS15 {
   background-color: rgba(39,45,52,1.00);
   padding-right: 10px;
   padding-left: 10px;
 }
 
-.IS12 {
+.IS16 {
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
@@ -2587,19 +2689,19 @@ exports[`22. secondary one and four - wide 1`] = `
   -ms-flex-item-align: center;
 }
 
-.IS13 {
+.IS17 {
   background-color: rgba(39,45,52,1.00);
 }
 </style>
 
 <div
-  className="css-view-1dbjc4n IS13"
+  className="css-view-1dbjc4n IS17"
 >
   <div
-    className="css-view-1dbjc4n IS12"
+    className="css-view-1dbjc4n IS16"
   >
     <div
-      className="css-view-1dbjc4n IS11"
+      className="css-view-1dbjc4n IS15"
     >
       <div
         className="css-view-1dbjc4n IS1"
@@ -2613,7 +2715,7 @@ exports[`22. secondary one and four - wide 1`] = `
         className="css-view-1dbjc4n IS2"
       />
       <div
-        className="css-view-1dbjc4n IS10"
+        className="css-view-1dbjc4n IS14"
       >
         <div
           className="css-view-1dbjc4n IS3"
@@ -2631,20 +2733,20 @@ exports[`22. secondary one and four - wide 1`] = `
           className="css-view-1dbjc4n IS4"
         />
         <div
-          className="css-view-1dbjc4n IS6"
+          className="css-view-1dbjc4n IS8"
         >
           <div
-            className="css-view-1dbjc4n"
+            className="css-view-1dbjc4n IS5"
           >
             <TileO
               tileName="support1"
             />
           </div>
           <div
-            className="css-view-1dbjc4n IS5"
+            className="css-view-1dbjc4n IS6"
           />
           <div
-            className="css-view-1dbjc4n"
+            className="css-view-1dbjc4n IS7"
           >
             <TileO
               tileName="support3"
@@ -2652,23 +2754,23 @@ exports[`22. secondary one and four - wide 1`] = `
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n IS7"
+          className="css-view-1dbjc4n IS9"
         />
         <div
-          className="css-view-1dbjc4n IS9"
+          className="css-view-1dbjc4n IS13"
         >
           <div
-            className="css-view-1dbjc4n"
+            className="css-view-1dbjc4n IS10"
           >
             <TileO
               tileName="support2"
             />
           </div>
           <div
-            className="css-view-1dbjc4n IS8"
+            className="css-view-1dbjc4n IS11"
           />
           <div
-            className="css-view-1dbjc4n"
+            className="css-view-1dbjc4n IS12"
           >
             <TileO
               tileName="support4"
@@ -4026,7 +4128,6 @@ exports[`35. lead two no pic and two - huge 1`] = `
 }
 
 .IS4 {
-  padding-top: 10px;
   width: 16%;
 }
 
@@ -4334,6 +4435,19 @@ exports[`37. secondary one and four - huge 1`] = `
 }
 
 .IS5 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
+
+.IS6 {
   border-bottom-width: 1px;
   border-top-color: rgba(77,77,77,1.00);
   border-right-color: rgba(77,77,77,1.00);
@@ -4347,11 +4461,24 @@ exports[`37. secondary one and four - huge 1`] = `
   margin-left: 10px;
 }
 
-.IS6 {
+.IS7 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
+
+.IS8 {
   width: 25%;
 }
 
-.IS7 {
+.IS9 {
   border-top-color: rgba(77,77,77,1.00);
   border-right-color: rgba(77,77,77,1.00);
   border-bottom-color: rgba(77,77,77,1.00);
@@ -4365,7 +4492,20 @@ exports[`37. secondary one and four - huge 1`] = `
   margin-bottom: 10px;
 }
 
-.IS8 {
+.IS10 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
+
+.IS11 {
   border-bottom-width: 1px;
   border-top-color: rgba(77,77,77,1.00);
   border-right-color: rgba(77,77,77,1.00);
@@ -4379,11 +4519,24 @@ exports[`37. secondary one and four - huge 1`] = `
   margin-left: 10px;
 }
 
-.IS9 {
+.IS12 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
+
+.IS13 {
   width: 25%;
 }
 
-.IS10 {
+.IS14 {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
@@ -4391,13 +4544,13 @@ exports[`37. secondary one and four - huge 1`] = `
   -webkit-box-direction: normal;
 }
 
-.IS11 {
+.IS15 {
   background-color: rgba(39,45,52,1.00);
   padding-right: 10px;
   padding-left: 10px;
 }
 
-.IS12 {
+.IS16 {
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
@@ -4407,19 +4560,19 @@ exports[`37. secondary one and four - huge 1`] = `
   -ms-flex-item-align: center;
 }
 
-.IS13 {
+.IS17 {
   background-color: rgba(39,45,52,1.00);
 }
 </style>
 
 <div
-  className="css-view-1dbjc4n IS13"
+  className="css-view-1dbjc4n IS17"
 >
   <div
-    className="css-view-1dbjc4n IS12"
+    className="css-view-1dbjc4n IS16"
   >
     <div
-      className="css-view-1dbjc4n IS11"
+      className="css-view-1dbjc4n IS15"
     >
       <div
         className="css-view-1dbjc4n IS1"
@@ -4433,7 +4586,7 @@ exports[`37. secondary one and four - huge 1`] = `
         className="css-view-1dbjc4n IS2"
       />
       <div
-        className="css-view-1dbjc4n IS10"
+        className="css-view-1dbjc4n IS14"
       >
         <div
           className="css-view-1dbjc4n IS3"
@@ -4451,20 +4604,20 @@ exports[`37. secondary one and four - huge 1`] = `
           className="css-view-1dbjc4n IS4"
         />
         <div
-          className="css-view-1dbjc4n IS6"
+          className="css-view-1dbjc4n IS8"
         >
           <div
-            className="css-view-1dbjc4n"
+            className="css-view-1dbjc4n IS5"
           >
             <TileO
               tileName="support1"
             />
           </div>
           <div
-            className="css-view-1dbjc4n IS5"
+            className="css-view-1dbjc4n IS6"
           />
           <div
-            className="css-view-1dbjc4n"
+            className="css-view-1dbjc4n IS7"
           >
             <TileO
               tileName="support3"
@@ -4472,23 +4625,23 @@ exports[`37. secondary one and four - huge 1`] = `
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n IS7"
+          className="css-view-1dbjc4n IS9"
         />
         <div
-          className="css-view-1dbjc4n IS9"
+          className="css-view-1dbjc4n IS13"
         >
           <div
-            className="css-view-1dbjc4n"
+            className="css-view-1dbjc4n IS10"
           >
             <TileO
               tileName="support2"
             />
           </div>
           <div
-            className="css-view-1dbjc4n IS8"
+            className="css-view-1dbjc4n IS11"
           />
           <div
-            className="css-view-1dbjc4n"
+            className="css-view-1dbjc4n IS12"
           >
             <TileO
               tileName="support4"

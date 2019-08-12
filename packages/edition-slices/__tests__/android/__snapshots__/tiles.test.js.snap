@@ -2,11 +2,6 @@
 
 exports[`1. tile a 1`] = `
 <Link
-  linkStyle={
-    Object {
-      "marginTop": 5,
-    }
-  }
   url="/article/123"
 >
   <View>
@@ -47,8 +42,7 @@ exports[`2. tile b 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "paddingHorizontal": 10,
-      "paddingTop": 10,
+      "padding": 10,
     }
   }
   url="/article/123"
@@ -57,37 +51,39 @@ exports[`2. tile b 1`] = `
     <View>
       <View>
         <View>
-          <ArticleLabel
-            color="#005B8D"
-            isVideo={false}
-            title="label"
+          <View>
+            <ArticleLabel
+              color="#005B8D"
+              isVideo={false}
+              title="label"
+            />
+          </View>
+          <Text
+            accessibilityRole="header"
+            aria-level="3"
+          >
+            This is tile headline
+          </Text>
+          <Text
+            numberOfLines={2}
+          >
+            <Text>
+              
+              Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+              ...
+            </Text>
+          </Text>
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </View>
-        <Text
-          accessibilityRole="header"
-          aria-level="3"
-        >
-          This is tile headline
-        </Text>
-        <Text
-          numberOfLines={2}
-        >
-          <Text>
-            
-            Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-            ...
-          </Text>
-        </Text>
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
       </View>
     </View>
   </View>
@@ -99,8 +95,7 @@ exports[`3. tile c 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "paddingHorizontal": 10,
-      "paddingTop": 10,
+      "padding": 10,
     }
   }
   url="/article/123"
@@ -230,8 +225,7 @@ exports[`6. tile f 1`] = `
 <Link
   linkStyle={
     Object {
-      "paddingHorizontal": 10,
-      "paddingTop": 10,
+      "padding": 10,
     }
   }
   url="/article/123"
@@ -297,28 +291,30 @@ exports[`7. tile g 1`] = `
   />
   <View>
     <View>
-      <ArticleLabel
-        color="#005B8D"
-        isVideo={false}
-        title="label"
+      <View>
+        <ArticleLabel
+          color="#005B8D"
+          isVideo={false}
+          title="label"
+        />
+      </View>
+      <Text
+        accessibilityRole="header"
+        aria-level="3"
+      >
+        This is tile headline
+      </Text>
+      <ArticleFlags
+        flags={
+          Array [
+            Object {
+              "expiryTime": "2030-03-14T12:00:00.000Z",
+              "type": "EXCLUSIVE",
+            },
+          ]
+        }
       />
     </View>
-    <Text
-      accessibilityRole="header"
-      aria-level="3"
-    >
-      This is tile headline
-    </Text>
-    <ArticleFlags
-      flags={
-        Array [
-          Object {
-            "expiryTime": "2030-03-14T12:00:00.000Z",
-            "type": "EXCLUSIVE",
-          },
-        ]
-      }
-    />
   </View>
 </Link>
 `;
@@ -328,7 +324,7 @@ exports[`8. tile h 1`] = `
   linkStyle={
     Object {
       "flexDirection": "row",
-      "paddingHorizontal": 10,
+      "padding": 10,
     }
   }
   url="/article/123"
@@ -509,8 +505,7 @@ exports[`12. tile l 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "paddingHorizontal": 10,
-      "paddingTop": 10,
+      "padding": 10,
     }
   }
   url="/article/123"
@@ -547,6 +542,7 @@ exports[`13. tile m 1`] = `
 <Link
   linkStyle={
     Object {
+      "flex": 1,
       "paddingBottom": 10,
     }
   }
@@ -626,6 +622,7 @@ exports[`15. tile o 1`] = `
   linkStyle={
     Object {
       "backgroundColor": "#272D34",
+      "flex": 1,
       "paddingHorizontal": 12,
       "paddingVertical": 10,
     }
@@ -725,7 +722,6 @@ exports[`17. tile q 1`] = `
 <Link
   linkStyle={
     Object {
-      "alignItems": "center",
       "paddingVertical": 10,
     }
   }
@@ -913,28 +909,30 @@ exports[`22. tile u 1`] = `
     <View>
       <View>
         <View>
-          <ArticleLabel
-            color="#005B8D"
-            isVideo={false}
-            title="label"
+          <View>
+            <ArticleLabel
+              color="#005B8D"
+              isVideo={false}
+              title="label"
+            />
+          </View>
+          <Text
+            accessibilityRole="header"
+            aria-level="3"
+          >
+            This is tile headline
+          </Text>
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </View>
-        <Text
-          accessibilityRole="header"
-          aria-level="3"
-        >
-          This is tile headline
-        </Text>
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
       </View>
     </View>
   </View>
@@ -1006,28 +1004,30 @@ exports[`24. tile w 1`] = `
     <View>
       <View>
         <View>
-          <ArticleLabel
-            color="#005B8D"
-            isVideo={false}
-            title="label"
+          <View>
+            <ArticleLabel
+              color="#005B8D"
+              isVideo={false}
+              title="label"
+            />
+          </View>
+          <Text
+            accessibilityRole="header"
+            aria-level="3"
+          >
+            This is tile headline
+          </Text>
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </View>
-        <Text
-          accessibilityRole="header"
-          aria-level="3"
-        >
-          This is tile headline
-        </Text>
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
       </View>
     </View>
   </View>
@@ -1044,8 +1044,7 @@ exports[`25. tile x 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "paddingHorizontal": 10,
-      "paddingTop": 10,
+      "padding": 10,
     }
   }
   url="/article/123"
@@ -1054,10 +1053,28 @@ exports[`25. tile x 1`] = `
     <View>
       <View>
         <View>
-          <ArticleLabel
-            color="#005B8D"
-            isVideo={false}
-            title="label"
+          <View>
+            <ArticleLabel
+              color="#005B8D"
+              isVideo={false}
+              title="label"
+            />
+          </View>
+          <Text
+            accessibilityRole="header"
+            aria-level="3"
+          >
+            This is tile headline
+          </Text>
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </View>
         <Text
@@ -1179,6 +1196,7 @@ exports[`28. tile ab 1`] = `
 <Link
   linkStyle={
     Object {
+      "flex": 1,
       "flexDirection": "row",
       "paddingHorizontal": 10,
       "paddingVertical": 10,
@@ -1195,36 +1213,38 @@ exports[`28. tile ab 1`] = `
     <View>
       <View>
         <View>
-          <ArticleLabel
-            color="#005B8D"
-            isVideo={false}
-            title="label"
+          <View>
+            <ArticleLabel
+              color="#005B8D"
+              isVideo={false}
+              title="label"
+            />
+          </View>
+          <Text
+            accessibilityRole="header"
+            aria-level="3"
+          >
+            This is tile headline
+          </Text>
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
+          <Text>
+            <Text>
+              Richard Lloyd Parry
+            </Text>
+            <Text>
+              , Hanoi
+            </Text>
+          </Text>
         </View>
-        <Text
-          accessibilityRole="header"
-          aria-level="3"
-        >
-          This is tile headline
-        </Text>
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
-        <Text>
-          <Text>
-            Richard Lloyd Parry
-          </Text>
-          <Text>
-            , Hanoi
-          </Text>
-        </Text>
       </View>
     </View>
   </View>
@@ -1236,7 +1256,7 @@ exports[`29. tile ae 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "paddingHorizontal": 10,
+      "padding": 10,
       "paddingTop": 15,
     }
   }
@@ -1246,28 +1266,30 @@ exports[`29. tile ae 1`] = `
     <View>
       <View>
         <View>
-          <ArticleLabel
-            color="#005B8D"
-            isVideo={false}
-            title="label"
+          <View>
+            <ArticleLabel
+              color="#005B8D"
+              isVideo={false}
+              title="label"
+            />
+          </View>
+          <Text
+            accessibilityRole="header"
+            aria-level="3"
+          >
+            This is tile headline
+          </Text>
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </View>
-        <Text
-          accessibilityRole="header"
-          aria-level="3"
-        >
-          This is tile headline
-        </Text>
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
       </View>
     </View>
   </View>
@@ -1278,6 +1300,7 @@ exports[`30. tile ag 1`] = `
 <Link
   linkStyle={
     Object {
+      "flex": 1,
       "paddingBottom": 10,
       "paddingHorizontal": 20,
     }
@@ -1369,6 +1392,7 @@ exports[`33. tile al 1`] = `
       "flex": 1,
       "flexDirection": "column",
       "paddingHorizontal": 10,
+      "paddingVertical": 10,
     }
   }
   url="/article/123"
@@ -1382,28 +1406,30 @@ exports[`33. tile al 1`] = `
     <View>
       <View>
         <View>
-          <ArticleLabel
-            color="#005B8D"
-            isVideo={false}
-            title="label"
+          <View>
+            <ArticleLabel
+              color="#005B8D"
+              isVideo={false}
+              title="label"
+            />
+          </View>
+          <Text
+            accessibilityRole="header"
+            aria-level="3"
+          >
+            This is tile headline
+          </Text>
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </View>
-        <Text
-          accessibilityRole="header"
-          aria-level="3"
-        >
-          This is tile headline
-        </Text>
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
       </View>
     </View>
   </View>
@@ -1415,8 +1441,7 @@ exports[`34. tile am 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "paddingHorizontal": 10,
-      "paddingTop": 10,
+      "padding": 10,
     }
   }
   url="/article/123"
@@ -1430,28 +1455,30 @@ exports[`34. tile am 1`] = `
     <View>
       <View>
         <View>
-          <ArticleLabel
-            color="#005B8D"
-            isVideo={false}
-            title="label"
+          <View>
+            <ArticleLabel
+              color="#005B8D"
+              isVideo={false}
+              title="label"
+            />
+          </View>
+          <Text
+            accessibilityRole="header"
+            aria-level="3"
+          >
+            This is tile headline
+          </Text>
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </View>
-        <Text
-          accessibilityRole="header"
-          aria-level="3"
-        >
-          This is tile headline
-        </Text>
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
       </View>
     </View>
   </View>
@@ -1462,6 +1489,7 @@ exports[`35. tile an 1`] = `
 <Link
   linkStyle={
     Object {
+      "flex": 1,
       "padding": 10,
     }
   }
@@ -1513,6 +1541,7 @@ exports[`36. tile ap 1`] = `
 <Link
   linkStyle={
     Object {
+      "flex": 1,
       "padding": 10,
     }
   }
@@ -1645,8 +1674,7 @@ exports[`39. tile aq 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "paddingHorizontal": 10,
-      "paddingTop": 10,
+      "padding": 10,
     }
   }
   url="/article/123"
@@ -1662,28 +1690,30 @@ exports[`39. tile aq 1`] = `
     <View>
       <View>
         <View>
-          <ArticleLabel
-            color="#005B8D"
-            isVideo={false}
-            title="label"
+          <View>
+            <ArticleLabel
+              color="#005B8D"
+              isVideo={false}
+              title="label"
+            />
+          </View>
+          <Text
+            accessibilityRole="header"
+            aria-level="3"
+          >
+            This is tile headline
+          </Text>
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </View>
-        <Text
-          accessibilityRole="header"
-          aria-level="3"
-        >
-          This is tile headline
-        </Text>
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
       </View>
     </View>
   </View>
@@ -1712,37 +1742,39 @@ exports[`40. tile ar 1`] = `
     <View>
       <View>
         <View>
-          <ArticleLabel
-            color="#005B8D"
-            isVideo={false}
-            title="label"
+          <View>
+            <ArticleLabel
+              color="#005B8D"
+              isVideo={false}
+              title="label"
+            />
+          </View>
+          <Text
+            accessibilityRole="header"
+            aria-level="3"
+          >
+            This is tile headline
+          </Text>
+          <Text
+            numberOfLines={2}
+          >
+            <Text>
+              
+              Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+              ...
+            </Text>
+          </Text>
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </View>
-        <Text
-          accessibilityRole="header"
-          aria-level="3"
-        >
-          This is tile headline
-        </Text>
-        <Text
-          numberOfLines={2}
-        >
-          <Text>
-            
-            Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-            ...
-          </Text>
-        </Text>
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
       </View>
     </View>
   </View>

@@ -508,7 +508,13 @@ exports[`7. secondary one and four - medium 1`] = `
             }
           }
         >
-          <View>
+          <View
+            style={
+              Object {
+                "flex": 1,
+              }
+            }
+          >
             <TileO />
           </View>
           <View
@@ -521,7 +527,13 @@ exports[`7. secondary one and four - medium 1`] = `
               }
             }
           />
-          <View>
+          <View
+            style={
+              Object {
+                "flex": 1,
+              }
+            }
+          >
             <TileO />
           </View>
         </View>
@@ -542,7 +554,13 @@ exports[`7. secondary one and four - medium 1`] = `
             }
           }
         >
-          <View>
+          <View
+            style={
+              Object {
+                "flex": 1,
+              }
+            }
+          >
             <TileO />
           </View>
           <View
@@ -555,7 +573,13 @@ exports[`7. secondary one and four - medium 1`] = `
               }
             }
           />
-          <View>
+          <View
+            style={
+              Object {
+                "flex": 1,
+              }
+            }
+          >
             <TileO />
           </View>
         </View>
@@ -1429,7 +1453,6 @@ exports[`20. lead two no pic and two - wide 1`] = `
     <View
       style={
         Object {
-          "paddingTop": 10,
           "width": "16%",
         }
       }
@@ -1664,7 +1687,13 @@ exports[`22. secondary one and four - wide 1`] = `
             }
           }
         >
-          <View>
+          <View
+            style={
+              Object {
+                "flex": 1,
+              }
+            }
+          >
             <TileO />
           </View>
           <View
@@ -1677,7 +1706,13 @@ exports[`22. secondary one and four - wide 1`] = `
               }
             }
           />
-          <View>
+          <View
+            style={
+              Object {
+                "flex": 1,
+              }
+            }
+          >
             <TileO />
           </View>
         </View>
@@ -1698,7 +1733,13 @@ exports[`22. secondary one and four - wide 1`] = `
             }
           }
         >
-          <View>
+          <View
+            style={
+              Object {
+                "flex": 1,
+              }
+            }
+          >
             <TileO />
           </View>
           <View
@@ -1711,7 +1752,13 @@ exports[`22. secondary one and four - wide 1`] = `
               }
             }
           />
-          <View>
+          <View
+            style={
+              Object {
+                "flex": 1,
+              }
+            }
+          >
             <TileO />
           </View>
         </View>
@@ -2683,7 +2730,6 @@ exports[`35. lead two no pic and two - huge 1`] = `
       <View
         style={
           Object {
-            "paddingTop": 10,
             "width": "16%",
           }
         }
@@ -2938,7 +2984,13 @@ exports[`37. secondary one and four - huge 1`] = `
               }
             }
           >
-            <View>
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            >
               <TileO />
             </View>
             <View
@@ -2951,7 +3003,13 @@ exports[`37. secondary one and four - huge 1`] = `
                 }
               }
             />
-            <View>
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            >
               <TileO />
             </View>
           </View>
@@ -2972,7 +3030,13 @@ exports[`37. secondary one and four - huge 1`] = `
               }
             }
           >
-            <View>
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            >
               <TileO />
             </View>
             <View
@@ -2985,7 +3049,13 @@ exports[`37. secondary one and four - huge 1`] = `
                 }
               }
             />
-            <View>
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            >
               <TileO />
             </View>
           </View>
