@@ -109,17 +109,17 @@ exports[`5. lead two no pic and two - medium 1`] = `
 exports[`6. leaders slice - medium 1`] = `
 <div>
   <div>
-    <Image
-      aspectRatio={5.74}
-      uri="https://www.thetimes.co.uk/d/img/leaders-masthead-d17db00289.png"
-    />
     <div>
+      <Image
+        aspectRatio={5.74}
+        uri="https://www.thetimes.co.uk/d/img/leaders-masthead-d17db00289.png"
+      />
       <div>
-         Leading Articles 
+        <div>
+           Leading Articles 
+        </div>
       </div>
     </div>
-  </div>
-  <div>
     <div>
       <div>
         <TileAG
@@ -561,17 +561,17 @@ exports[`20. lead two no pic and two - wide 1`] = `
 exports[`21. leaders slice - wide 1`] = `
 <div>
   <div>
-    <Image
-      aspectRatio={5.74}
-      uri="https://www.thetimes.co.uk/d/img/leaders-masthead-d17db00289.png"
-    />
     <div>
+      <Image
+        aspectRatio={5.74}
+        uri="https://www.thetimes.co.uk/d/img/leaders-masthead-d17db00289.png"
+      />
       <div>
-         Leading Articles 
+        <div>
+           Leading Articles 
+        </div>
       </div>
     </div>
-  </div>
-  <div>
     <div>
       <div>
         <TileAG
@@ -1013,17 +1013,17 @@ exports[`35. lead two no pic and two - huge 1`] = `
 exports[`36. leaders slice - huge 1`] = `
 <div>
   <div>
-    <Image
-      aspectRatio={5.74}
-      uri="https://www.thetimes.co.uk/d/img/leaders-masthead-d17db00289.png"
-    />
     <div>
+      <Image
+        aspectRatio={5.74}
+        uri="https://www.thetimes.co.uk/d/img/leaders-masthead-d17db00289.png"
+      />
       <div>
-         Leading Articles 
+        <div>
+           Leading Articles 
+        </div>
       </div>
     </div>
-  </div>
-  <div>
     <div>
       <div>
         <TileAG

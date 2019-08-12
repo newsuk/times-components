@@ -124,36 +124,39 @@ exports[`5. lead two no pic and two - medium 1`] = `
 exports[`6. leaders slice - medium 1`] = `
 <View>
   <View>
-    <Image
-      resizeMode="contain"
-      source={
-        Object {
-          "testUri": "../../../packages/edition-slices/assets/times-leading-header.png",
-        }
-      }
-    />
     <View>
-      <Text>
-         Leading Articles 
-      </Text>
+      <Image
+        resizeMode="contain"
+        source={
+          Object {
+            "testUri": "../../../packages/edition-slices/assets/times-leading-header.png",
+          }
+        }
+      />
+      <View>
+        <Text>
+           Leading Articles 
+        </Text>
+      </View>
     </View>
-  </View>
-  <View>
     <View>
       <View>
         <TileM
+          breakpoint="medium"
           tileName="leader2"
         />
       </View>
       <View />
       <View>
         <TileM
+          breakpoint="medium"
           tileName="leader1"
         />
       </View>
       <View />
       <View>
         <TileM
+          breakpoint="medium"
           tileName="leader3"
         />
       </View>
@@ -601,21 +604,21 @@ exports[`20. lead two no pic and two - wide 1`] = `
 exports[`21. leaders slice - wide 1`] = `
 <View>
   <View>
-    <Image
-      resizeMode="contain"
-      source={
-        Object {
-          "testUri": "../../../packages/edition-slices/assets/times-leading-header.png",
-        }
-      }
-    />
     <View>
-      <Text>
-         Leading Articles 
-      </Text>
+      <Image
+        resizeMode="contain"
+        source={
+          Object {
+            "testUri": "../../../packages/edition-slices/assets/times-leading-header.png",
+          }
+        }
+      />
+      <View>
+        <Text>
+           Leading Articles 
+        </Text>
+      </View>
     </View>
-  </View>
-  <View>
     <View>
       <View>
         <TileAG
@@ -1100,22 +1103,22 @@ exports[`35. lead two no pic and two - huge 1`] = `
 exports[`36. leaders slice - huge 1`] = `
 <View>
   <View>
-    <Image
-      resizeMode="contain"
-      source={
-        Object {
-          "testUri": "../../../packages/edition-slices/assets/times-leading-header.png",
-        }
-      }
-    />
     <View>
-      <Text>
-         Leading Articles 
-      </Text>
-    </View>
-  </View>
-  <View>
-    <View>
+      <View>
+        <Image
+          resizeMode="contain"
+          source={
+            Object {
+              "testUri": "../../../packages/edition-slices/assets/times-leading-header.png",
+            }
+          }
+        />
+        <View>
+          <Text>
+             Leading Articles 
+          </Text>
+        </View>
+      </View>
       <View>
         <View>
           <TileAG

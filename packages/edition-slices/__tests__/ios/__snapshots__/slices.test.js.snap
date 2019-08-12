@@ -148,14 +148,17 @@ exports[`2. leaders 1`] = `
   </View>
   <View>
     <TileM
+      breakpoint="small"
       tileName="leader1"
     />
     <View />
     <TileM
+      breakpoint="small"
       tileName="leader2"
     />
     <View />
     <TileM
+      breakpoint="small"
       tileName="leader3"
     />
   </View>
@@ -181,14 +184,17 @@ exports[`2. leaders 2`] = `
   </View>
   <View>
     <TileM
+      breakpoint="small"
       tileName="leader1"
     />
     <View />
     <TileM
+      breakpoint="small"
       tileName="leader2"
     />
     <View />
     <TileM
+      breakpoint="small"
       tileName="leader3"
     />
   </View>
@@ -480,14 +486,17 @@ exports[`14. leaders 1`] = `
   </View>
   <View>
     <TileM
+      breakpoint="small"
       tileName="leader1"
     />
     <View />
     <TileM
+      breakpoint="small"
       tileName="leader2"
     />
     <View />
     <TileM
+      breakpoint="small"
       tileName="leader3"
     />
   </View>

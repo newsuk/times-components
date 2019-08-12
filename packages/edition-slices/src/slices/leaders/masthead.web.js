@@ -1,12 +1,13 @@
 import React from "react";
 import Image from "@times-components/image";
-import styles from "./styles";
+import styleFactory from "./styles";
 import propTypes from "./proptypes";
 
-const MastHead = ({ publicationName }) => {
+const MastHead = ({ publicationName, breakpoint }) => {
   let uri = "https://www.thetimes.co.uk/d/img/leaders-masthead-d17db00289.png";
   let aspectRatio = 1435 / 250;
   let style = "mastheadStyleTimes";
+  const styles = styleFactory(breakpoint);
 
   if (publicationName !== "TIMES") {
     style = "mastheadStyleST";
