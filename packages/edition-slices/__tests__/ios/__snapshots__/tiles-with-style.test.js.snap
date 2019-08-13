@@ -46,58 +46,56 @@ exports[`1. tile a 1`] = `
 
 exports[`2. tile b 1`] = `
 <Link>
-  <View>
-    <View
-      style={
-        Object {
-          "flex": 1,
-        }
+  <View
+    style={
+      Object {
+        "flex": 1,
       }
-    >
+    }
+  >
+    <View>
       <View>
-        <View>
-          <View
-            style={
-              Object {
-                "marginBottom": 0,
-              }
+        <View
+          style={
+            Object {
+              "marginBottom": 0,
             }
-          >
-            <ArticleLabel />
-          </View>
-          <Text
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 25,
-                "fontWeight": "900",
-                "lineHeight": 25,
-                "marginBottom": 5,
-              }
-            }
-          >
-            This is tile headline
-          </Text>
-          <Text
-            style={
-              Object {
-                "color": "#696969",
-                "flexWrap": "wrap",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 14,
-                "lineHeight": 20,
-              }
-            }
-          >
-            <Text>
-              
-              Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-              ...
-            </Text>
-          </Text>
-          <ArticleFlags />
+          }
+        >
+          <ArticleLabel />
         </View>
+        <Text
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 25,
+              "fontWeight": "900",
+              "lineHeight": 25,
+              "marginBottom": 5,
+            }
+          }
+        >
+          This is tile headline
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#696969",
+              "flexWrap": "wrap",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 14,
+              "lineHeight": 20,
+            }
+          }
+        >
+          <Text>
+            
+            Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+            ...
+          </Text>
+        </Text>
+        <ArticleFlags />
       </View>
     </View>
   </View>
@@ -1545,40 +1543,32 @@ exports[`29. tile ae 1`] = `
       }
     }
   >
-    <View
-      style={
-        Object {
-          "flex": 1,
-        }
-      }
-    >
+    <View>
       <View>
-        <View>
-          <View
-            style={
-              Object {
-                "marginBottom": 0,
-              }
+        <View
+          style={
+            Object {
+              "marginBottom": 0,
             }
-          >
-            <ArticleLabel />
-          </View>
-          <Text
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 30,
-                "fontWeight": "900",
-                "lineHeight": 30,
-                "marginBottom": 10,
-              }
-            }
-          >
-            This is tile headline
-          </Text>
-          <ArticleFlags />
+          }
+        >
+          <ArticleLabel />
         </View>
+        <Text
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 30,
+              "fontWeight": "900",
+              "lineHeight": 30,
+              "marginBottom": 10,
+            }
+          }
+        >
+          This is tile headline
+        </Text>
+        <ArticleFlags />
       </View>
     </View>
   </View>
@@ -1717,48 +1707,35 @@ exports[`33. tile al 1`] = `
     style={
       Object {
         "flex": 1,
-        "fontFamily": "TimesDigitalW04-Regular",
-        "fontSize": 14,
-        "lineHeight": undefined,
-        "paddingTop": 10,
-        "width": "100%",
       }
     }
   >
-    <View
-      style={
-        Object {
-          "flex": 1,
-        }
-      }
-    >
+    <View>
       <View>
-        <View>
-          <View
-            style={
-              Object {
-                "marginBottom": 0,
-              }
+        <View
+          style={
+            Object {
+              "marginBottom": 0,
             }
-          >
-            <ArticleLabel />
-          </View>
-          <Text
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 22,
-                "fontWeight": "900",
-                "lineHeight": 27,
-                "marginBottom": 0,
-              }
-            }
-          >
-            This is tile headline
-          </Text>
-          <ArticleFlags />
+          }
+        >
+          <ArticleLabel />
         </View>
+        <Text
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 22,
+              "fontWeight": "900",
+              "lineHeight": 27,
+              "marginBottom": 0,
+            }
+          }
+        >
+          This is tile headline
+        </Text>
+        <ArticleFlags />
       </View>
     </View>
   </View>
@@ -1782,41 +1759,33 @@ exports[`34. tile am 1`] = `
       }
     }
   >
-    <View
-      style={
-        Object {
-          "flex": 1,
-        }
-      }
-    >
+    <View>
       <View>
-        <View>
-          <View
-            style={
-              Object {
-                "marginBottom": 0,
-              }
+        <View
+          style={
+            Object {
+              "marginBottom": 0,
             }
-          >
-            <ArticleLabel />
-          </View>
-          <Text
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 35,
-                "fontWeight": "900",
-                "lineHeight": 35,
-                "marginBottom": 5,
-                "paddingBottom": 5,
-              }
-            }
-          >
-            This is tile headline
-          </Text>
-          <ArticleFlags />
+          }
+        >
+          <ArticleLabel />
         </View>
+        <Text
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 35,
+              "fontWeight": "900",
+              "lineHeight": 35,
+              "marginBottom": 5,
+              "paddingBottom": 5,
+            }
+          }
+        >
+          This is tile headline
+        </Text>
+        <ArticleFlags />
       </View>
     </View>
   </View>
@@ -2047,40 +2016,32 @@ exports[`39. tile aq 1`] = `
       }
     }
   >
-    <View
-      style={
-        Object {
-          "flex": 1,
-        }
-      }
-    >
+    <View>
       <View>
-        <View>
-          <View
-            style={
-              Object {
-                "marginBottom": 0,
-              }
+        <View
+          style={
+            Object {
+              "marginBottom": 0,
             }
-          >
-            <ArticleLabel />
-          </View>
-          <Text
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 22,
-                "fontWeight": "900",
-                "lineHeight": 22,
-                "marginBottom": 5,
-              }
-            }
-          >
-            This is tile headline
-          </Text>
-          <ArticleFlags />
+          }
+        >
+          <ArticleLabel />
         </View>
+        <Text
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 22,
+              "fontWeight": "900",
+              "lineHeight": 22,
+              "marginBottom": 5,
+            }
+          }
+        >
+          This is tile headline
+        </Text>
+        <ArticleFlags />
       </View>
     </View>
   </View>
@@ -2106,57 +2067,49 @@ exports[`40. tile ar 1`] = `
       }
     }
   >
-    <View
-      style={
-        Object {
-          "flex": 1,
-        }
-      }
-    >
+    <View>
       <View>
-        <View>
-          <View
-            style={
-              Object {
-                "marginBottom": 0,
-              }
+        <View
+          style={
+            Object {
+              "marginBottom": 0,
             }
-          >
-            <ArticleLabel />
-          </View>
-          <Text
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 20,
-                "fontWeight": "900",
-                "lineHeight": 20,
-                "marginBottom": 5,
-              }
-            }
-          >
-            This is tile headline
-          </Text>
-          <Text
-            style={
-              Object {
-                "color": "#696969",
-                "flexWrap": "wrap",
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 14,
-                "lineHeight": 20,
-              }
-            }
-          >
-            <Text>
-              
-              Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-              ...
-            </Text>
-          </Text>
-          <ArticleFlags />
+          }
+        >
+          <ArticleLabel />
         </View>
+        <Text
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 20,
+              "fontWeight": "900",
+              "lineHeight": 20,
+              "marginBottom": 5,
+            }
+          }
+        >
+          This is tile headline
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#696969",
+              "flexWrap": "wrap",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 14,
+              "lineHeight": 20,
+            }
+          }
+        >
+          <Text>
+            
+            Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+            ...
+          </Text>
+        </Text>
+        <ArticleFlags />
       </View>
     </View>
   </View>
