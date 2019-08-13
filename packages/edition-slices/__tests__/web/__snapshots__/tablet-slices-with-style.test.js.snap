@@ -1053,9 +1053,7 @@ exports[`9. secondary four - medium 1`] = `
 exports[`10. secondary one and columnist - medium 1`] = `
 <style>
 .IS1 {
-  padding-left: 10px;
-  padding-top: 10px;
-  width: 33%;
+  width: 73%;
 }
 
 .IS2 {
@@ -1073,8 +1071,7 @@ exports[`10. secondary one and columnist - medium 1`] = `
 }
 
 .IS3 {
-  padding-right: 10px;
-  width: 67%;
+  width: 27%;
 }
 
 .IS4 {
@@ -1087,6 +1084,8 @@ exports[`10. secondary one and columnist - medium 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  padding-right: 20px;
+  padding-left: 20px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -1115,9 +1114,9 @@ exports[`10. secondary one and columnist - medium 1`] = `
     <div
       className="css-view-1dbjc4n IS1"
     >
-      <TileAA
+      <TileAB
         breakpoint="wide"
-        tileName="secondary"
+        tileName="columnist"
       />
     </div>
     <div
@@ -1126,9 +1125,9 @@ exports[`10. secondary one and columnist - medium 1`] = `
     <div
       className="css-view-1dbjc4n IS3"
     >
-      <TileAB
+      <TileB
         breakpoint="wide"
-        tileName="columnist"
+        tileName="secondary"
       />
     </div>
   </div>
@@ -2872,9 +2871,7 @@ exports[`24. secondary four - wide 1`] = `
 exports[`25. secondary one and columnist - wide 1`] = `
 <style>
 .IS1 {
-  padding-left: 10px;
-  padding-top: 10px;
-  width: 33%;
+  width: 73%;
 }
 
 .IS2 {
@@ -2892,8 +2889,7 @@ exports[`25. secondary one and columnist - wide 1`] = `
 }
 
 .IS3 {
-  padding-right: 10px;
-  width: 67%;
+  width: 27%;
 }
 
 .IS4 {
@@ -2906,6 +2902,8 @@ exports[`25. secondary one and columnist - wide 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  padding-right: 20px;
+  padding-left: 20px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -2934,9 +2932,9 @@ exports[`25. secondary one and columnist - wide 1`] = `
     <div
       className="css-view-1dbjc4n IS1"
     >
-      <TileAA
+      <TileAB
         breakpoint="wide"
-        tileName="secondary"
+        tileName="columnist"
       />
     </div>
     <div
@@ -2945,9 +2943,9 @@ exports[`25. secondary one and columnist - wide 1`] = `
     <div
       className="css-view-1dbjc4n IS3"
     >
-      <TileAB
+      <TileB
         breakpoint="wide"
-        tileName="columnist"
+        tileName="secondary"
       />
     </div>
   </div>
@@ -4691,9 +4689,7 @@ exports[`39. secondary four - huge 1`] = `
 exports[`40. secondary one and columnist - huge 1`] = `
 <style>
 .IS1 {
-  padding-left: 10px;
-  padding-top: 10px;
-  width: 33%;
+  width: 73%;
 }
 
 .IS2 {
@@ -4711,8 +4707,7 @@ exports[`40. secondary one and columnist - huge 1`] = `
 }
 
 .IS3 {
-  padding-right: 10px;
-  width: 67%;
+  width: 27%;
 }
 
 .IS4 {
@@ -4725,6 +4720,8 @@ exports[`40. secondary one and columnist - huge 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  padding-right: 20px;
+  padding-left: 20px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -4753,9 +4750,9 @@ exports[`40. secondary one and columnist - huge 1`] = `
     <div
       className="css-view-1dbjc4n IS1"
     >
-      <TileAA
+      <TileAB
         breakpoint="wide"
-        tileName="secondary"
+        tileName="columnist"
       />
     </div>
     <div
@@ -4764,9 +4761,9 @@ exports[`40. secondary one and columnist - huge 1`] = `
     <div
       className="css-view-1dbjc4n IS3"
     >
-      <TileAB
+      <TileB
         breakpoint="wide"
-        tileName="columnist"
+        tileName="secondary"
       />
     </div>
   </div>

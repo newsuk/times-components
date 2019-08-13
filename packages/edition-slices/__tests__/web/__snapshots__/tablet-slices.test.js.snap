@@ -243,16 +243,16 @@ exports[`10. secondary one and columnist - medium 1`] = `
 <div>
   <div>
     <div>
-      <TileAA
+      <TileAB
         breakpoint="wide"
-        tileName="secondary"
+        tileName="columnist"
       />
     </div>
     <div />
     <div>
-      <TileAB
+      <TileB
         breakpoint="wide"
-        tileName="columnist"
+        tileName="secondary"
       />
     </div>
   </div>
@@ -695,16 +695,16 @@ exports[`25. secondary one and columnist - wide 1`] = `
 <div>
   <div>
     <div>
-      <TileAA
+      <TileAB
         breakpoint="wide"
-        tileName="secondary"
+        tileName="columnist"
       />
     </div>
     <div />
     <div>
-      <TileAB
+      <TileB
         breakpoint="wide"
-        tileName="columnist"
+        tileName="secondary"
       />
     </div>
   </div>
@@ -1147,16 +1147,16 @@ exports[`40. secondary one and columnist - huge 1`] = `
 <div>
   <div>
     <div>
-      <TileAA
+      <TileAB
         breakpoint="wide"
-        tileName="secondary"
+        tileName="columnist"
       />
     </div>
     <div />
     <div>
-      <TileAB
+      <TileB
         breakpoint="wide"
-        tileName="columnist"
+        tileName="secondary"
       />
     </div>
   </div>
