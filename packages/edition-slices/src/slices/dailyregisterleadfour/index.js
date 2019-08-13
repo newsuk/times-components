@@ -1,16 +1,20 @@
 import React, { Component } from "react";
 import { View, Text } from "react-native";
 import PropTypes from "prop-types";
-import { ItemRowSeparator } from "@times-components/slice-layout";
+import {
+  ItemRowSeparator,
+  ItemColSeparator
+} from "@times-components/slice-layout";
 import { ResponsiveSlice } from "../shared";
-import { TileS } from "../../tiles";
-import styleFactory, { backgroundColour } from "./styles";
+import { TileS, TileAT } from "../../tiles";
+import styleFactory from "./styles";
 import Logo from "./logo";
 
 class DailyRegisterLeadFour extends Component {
   constructor(props) {
     super(props);
     this.renderSlice = this.renderSlice.bind(this);
+    this.renderMedium = this.renderMedium.bind(this);
     this.renderHuge = this.renderHuge.bind(this);
   }
 
@@ -48,6 +52,56 @@ class DailyRegisterLeadFour extends Component {
           type="birthdays"
         />
         <TileS tile={birthdaysToday} />
+      </View>
+    );
+  }
+
+  renderMedium(breakpoint) {
+    const {
+      slice: { birthdaysToday, briefing, natureNotes, onThisDay }
+    } = this.props;
+    const styles = styleFactory(breakpoint);
+
+    const natureLogo = (
+      <Logo
+        imageUri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
+        ratio={1 / 1}
+        style={styles.imageWrapper}
+        type="nature notes"
+      />
+    );
+
+    const birthdayLogo = (
+      <Logo
+        imageUri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
+        ratio={1 / 1}
+        style={styles.imageWrapper}
+        type="birthdays"
+      />
+    );
+
+    return (
+      <View style={styles.container}>
+        <Logo
+          imageUri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
+          ratio={1}
+          style={styles.mastheadLogo}
+          type="logo"
+        />
+        <Text style={styles.title}>Daily Universal Register</Text>
+        <View style={styles.itemsContainer}>
+          <View style={styles.column}>
+            <TileAT tile={briefing} />
+            <ItemRowSeparator style={styles.rowSeparator} />
+            <TileAT tile={natureNotes} logo={natureLogo} />
+          </View>
+          <ItemColSeparator style={styles.colSeparator} />
+          <View style={styles.column}>
+            <TileAT tile={onThisDay} />
+            <ItemRowSeparator style={styles.rowSeparator} />
+            <TileAT tile={birthdaysToday} logo={birthdayLogo} />
+          </View>
+        </View>
       </View>
     );
   }
@@ -114,14 +168,12 @@ class DailyRegisterLeadFour extends Component {
 
   render() {
     return (
-      <View style={backgroundColour}>
-        <ResponsiveSlice
-          renderHuge={this.renderHuge}
-          renderMedium={this.renderSlice}
-          renderSmall={this.renderSlice}
-          renderWide={this.renderSlice}
-        />
-      </View>
+      <ResponsiveSlice
+        renderHuge={this.renderHuge}
+        renderMedium={this.renderMedium}
+        renderSmall={this.renderSlice}
+        renderWide={this.renderSlice}
+      />
     );
   }
 }

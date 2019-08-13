@@ -16,10 +16,12 @@ import ListTwoAndSixNoPic from "./templates/listtwoandsixnopic";
 import Leaders from "./templates/leaders";
 import CommentLeadAndCartoon from "./templates/commentleadandcartoon";
 import VerticalLayout from "./templates/verticallayout";
+import HorizontalLayout from "./templates/horizontallayout";
 import { ItemColSeparator, ItemRowSeparator } from "./templates/shared";
 
 export {
   VerticalLayout,
+  HorizontalLayout,
   CommentLeadAndCartoon,
   StandardSlice,
   standardRoles,
