@@ -28,7 +28,7 @@ const TileM = ({ onPress, tile, breakpoint }) => {
         straplineStyle={styles.strapline}
         tile={tileWithoutLabelAndFlags}
         style={styles.summaryContainer}
-        isCenteredStar
+        centeredStar
       />
     </TileLink>
   );

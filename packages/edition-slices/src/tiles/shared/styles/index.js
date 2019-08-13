@@ -20,29 +20,26 @@ const verticalStyles = {
   }
 };
 
-const starDefaultPosition = {
+const starDefaultStyles = {
   marginTop: "auto",
   alignItems: "flex-end",
-  paddingTop: spacing(1)
+  paddingTop: spacing(1),
+  borderWidth: 1,
+  borderColor: "purple"
 };
 
-const starCenterPosition = {
+const starCenterStyles = {
   alignItems: "center"
 };
 
-const starAfterContentPosition = {
+const starUnderneathTextStyles = {
   marginTop: 0
-};
-
-const fullHeightSummaryContainer = {
-  flex: 1
 };
 
 export {
   horizontalStyles,
   verticalStyles,
-  starDefaultPosition,
-  starCenterPosition,
-  starAfterContentPosition,
-  fullHeightSummaryContainer
+  starDefaultStyles,
+  starCenterStyles,
+  starUnderneathTextStyles
 };

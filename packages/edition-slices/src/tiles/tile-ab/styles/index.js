@@ -3,7 +3,6 @@ import {
   spacing,
   editionBreakpoints
 } from "@times-components/styleguide";
-import { fullHeightSummaryContainer } from "../../shared/styles";
 
 const headlineFontSizeResolver = {
   [editionBreakpoints.huge]: 45,

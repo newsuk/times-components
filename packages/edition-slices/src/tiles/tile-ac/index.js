@@ -35,8 +35,8 @@ const TileAC = ({ onPress, tile, breakpoint }) => {
         headlineStyle={styles.headline}
         style={styles.summaryContainer}
         tile={tile}
-        isCenteredStar
-        isAfterContentStar
+        centeredStar
+        underneathTextStar
       />
     </TileLink>
   );

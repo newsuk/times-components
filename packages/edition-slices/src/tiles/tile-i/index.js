@@ -29,8 +29,8 @@ const TileI = ({ onPress, tile }) => {
         starStyle={styles.star}
         style={styles.summaryContainer}
         tile={tile}
-        isCenteredStar
-        isAfterContentStar
+        centeredStar
+        underneathTextStar
       />
     </TileLink>
   );

@@ -1,6 +1,5 @@
 /* eslint-disable react/require-default-props */
 import React from "react";
-import { View } from "react-native";
 import PropTypes from "prop-types";
 import { editionBreakpoints } from "@times-components/styleguide";
 import {
@@ -18,20 +17,19 @@ const TileB = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
 
   return (
     <TileLink onPress={onPress} style={styles.container} tile={tile}>
-      <View style={styles.summaryContainer}>
-        <WithoutWhiteSpace
-          render={whiteSpaceHeight => (
-            <TileSummary
-              headlineStyle={styles.headline}
-              summary={getTileSummary(tile, 125)}
-              tile={tile}
-              whiteSpaceHeight={whiteSpaceHeight}
-              withStar={false}
-            />
-          )}
-        />
-        <PositionedTileStar articleId={tile.article.id} />
-      </View>
+      <WithoutWhiteSpace
+        style={styles.summaryContainer}
+        render={whiteSpaceHeight => (
+          <TileSummary
+            headlineStyle={styles.headline}
+            summary={getTileSummary(tile, 125)}
+            tile={tile}
+            whiteSpaceHeight={whiteSpaceHeight}
+            withStar={false}
+          />
+        )}
+      />
+      <PositionedTileStar articleId={tile.article.id} />
     </TileLink>
   );
 };

@@ -37,10 +37,8 @@ const mediumBreakpointStyles = {
     lineHeight: 20
   },
   imageContainer: {
-    width: "100%"
-  },
-  summaryContainer: {
-    paddingTop: spacing(2)
+    width: "100%",
+    marginBottom: spacing(2)
   }
 };
 

@@ -1,5 +1,4 @@
 import { fonts, spacing } from "@times-components/styleguide";
-import { fullHeightSummaryContainer } from "../../shared/styles";
 
 const styles = {
   container: {
@@ -12,9 +11,6 @@ const styles = {
     fontSize: 30,
     lineHeight: 30,
     marginBottom: spacing(2)
-  },
-  summaryContainer: {
-    ...fullHeightSummaryContainer
   }
 };
 

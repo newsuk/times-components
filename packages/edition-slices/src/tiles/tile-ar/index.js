@@ -29,20 +29,18 @@ const TileAR = ({ onPress, tile }) => {
           relativeVerticalOffset={crop.relativeVerticalOffset}
         />
       </View>
-      <View style={styles.summaryContainer}>
-        <WithoutWhiteSpace
-          render={whiteSpaceHeight => (
-            <TileSummary
-              headlineStyle={styles.headline}
-              summary={getTileSummary(tile, 125)}
-              tile={tile}
-              whiteSpaceHeight={whiteSpaceHeight}
-              withStar={false}
-            />
-          )}
-        />
-        <PositionedTileStar articleId={tile.article.id} />
-      </View>
+      <WithoutWhiteSpace
+        render={whiteSpaceHeight => (
+          <TileSummary
+            headlineStyle={styles.headline}
+            summary={getTileSummary(tile, 125)}
+            tile={tile}
+            whiteSpaceHeight={whiteSpaceHeight}
+            withStar={false}
+          />
+        )}
+      />
+      <PositionedTileStar articleId={tile.article.id} />
     </TileLink>
   );
 };

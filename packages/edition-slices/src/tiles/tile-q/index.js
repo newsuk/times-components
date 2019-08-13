@@ -20,7 +20,7 @@ const TileQ = ({ onPress, tile }) => {
         uri={crop.url}
         fill
       />
-      <PositionedTileStar articleId={tile.article.id} isCenteredStar />
+      <PositionedTileStar articleId={tile.article.id} centeredStar />
     </TileLink>
   );
 };

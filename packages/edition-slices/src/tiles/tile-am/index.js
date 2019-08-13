@@ -1,5 +1,4 @@
 import React from "react";
-import { View } from "react-native";
 import PropTypes from "prop-types";
 import Image from "@times-components/image";
 import {
@@ -28,20 +27,18 @@ const TileAM = ({ onPress, tile }) => {
         uri={crop.url}
         fill
       />
-      <View style={styles.summaryContainer}>
-        <WithoutWhiteSpace
-          render={whiteSpaceHeight => (
-            <TileSummary
-              headlineStyle={styles.headline}
-              summary={getTileSummary(tile, 800)}
-              tile={tile}
-              whiteSpaceHeight={whiteSpaceHeight}
-              withStar={false}
-            />
-          )}
-        />
-        <PositionedTileStar articleId={tile.article.id} />
-      </View>
+      <WithoutWhiteSpace
+        render={whiteSpaceHeight => (
+          <TileSummary
+            headlineStyle={styles.headline}
+            summary={getTileSummary(tile, 800)}
+            tile={tile}
+            whiteSpaceHeight={whiteSpaceHeight}
+            withStar={false}
+          />
+        )}
+      />
+      <PositionedTileStar articleId={tile.article.id} />
     </TileLink>
   );
 };

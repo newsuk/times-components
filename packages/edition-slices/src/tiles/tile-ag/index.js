@@ -29,7 +29,7 @@ const TileAG = ({ onPress, tile, breakpoint = editionBreakpoints.wide }) => {
         straplineStyle={styles.strapline}
         style={styles.summaryContainer}
         tile={tileWithoutLabelAndFlags}
-        isCenteredStar
+        centeredStar
       />
     </TileLink>
   );

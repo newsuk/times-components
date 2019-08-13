@@ -46,8 +46,8 @@ class TileSummary extends Component {
       tile: {
         article: { id }
       },
-      isAfterContentStar,
-      isCenteredStar,
+      underneathTextStar,
+      centeredStar,
       isDarkStar,
       starStyle
     } = this.props;
@@ -56,8 +56,8 @@ class TileSummary extends Component {
       <PositionedTileStar
         articleId={id}
         isDarkStar={isDarkStar}
-        isCenteredStar={isCenteredStar}
-        isAfterContentStar={isAfterContentStar}
+        centeredStar={centeredStar}
+        underneathTextStar={underneathTextStar}
         style={starStyle}
       />
     );
@@ -136,8 +136,8 @@ TileSummary.propTypes = {
   summaryStyle: PropTypes.shape({}),
   tile: PropTypes.shape({}).isRequired,
   withStar: PropTypes.bool,
-  isAfterContentStar: PropTypes.bool,
-  isCenteredStar: PropTypes.bool,
+  underneathTextStar: PropTypes.bool,
+  centeredStar: PropTypes.bool,
   isDarkStar: PropTypes.bool,
   starStyle: PropTypes.shape({})
 };
@@ -153,8 +153,8 @@ TileSummary.defaultProps = {
   summary: null,
   summaryStyle: null,
   withStar: true,
-  isAfterContentStar: false,
-  isCenteredStar: false,
+  underneathTextStar: false,
+  centeredStar: false,
   isDarkStar: false,
   starStyle: null
 };

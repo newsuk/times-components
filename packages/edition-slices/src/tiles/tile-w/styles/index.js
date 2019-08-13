@@ -1,5 +1,4 @@
 import { fontFactory, spacing, fonts } from "@times-components/styleguide";
-import { fullHeightSummaryContainer } from "../../shared/styles";
 
 const main = {
   container: {
@@ -18,10 +17,10 @@ const main = {
     width: "66.66%"
   },
   summaryContainer: {
+    flex: 1,
     paddingBottom: spacing(1),
     paddingRight: spacing(4),
-    width: "33.33%",
-    ...fullHeightSummaryContainer
+    width: "33.33%"
   }
 };
 
@@ -40,9 +39,9 @@ const mediumStyles = {
     marginBottom: spacing(2)
   },
   summaryContainer: {
+    flex: 1,
     width: "51.5%",
-    paddingRight: spacing(4),
-    ...fullHeightSummaryContainer
+    paddingRight: spacing(4)
   },
   imageContainer: {
     width: "48.5%"
@@ -56,9 +55,9 @@ const wideStyles = {
     lineHeight: 35
   },
   summaryContainer: {
+    flex: 1,
     width: "33.33%",
-    paddingRight: spacing(4),
-    ...fullHeightSummaryContainer
+    paddingRight: spacing(4)
   }
 };
 

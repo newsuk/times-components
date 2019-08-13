@@ -4,7 +4,6 @@ import {
   spacing,
   editionBreakpoints
 } from "@times-components/styleguide";
-import { fullHeightSummaryContainer } from "../../shared/styles";
 
 const styles = {
   container: {
@@ -23,9 +22,9 @@ const styles = {
     width: "30%"
   },
   summaryContainer: {
+    flex: 1,
     paddingLeft: spacing(2),
-    width: "70%",
-    ...fullHeightSummaryContainer
+    width: "70%"
   },
   summaryContent: {
     justifyContent: "center",

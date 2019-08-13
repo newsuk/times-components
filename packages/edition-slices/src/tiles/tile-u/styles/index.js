@@ -3,7 +3,6 @@ import {
   spacing,
   editionBreakpoints
 } from "@times-components/styleguide";
-import { fullHeightSummaryContainer } from "../../shared/styles";
 
 const sharedStyles = {
   container: {
@@ -39,8 +38,8 @@ const mediumBreakpointStyles = {
   },
   summaryContainer: {
     ...sharedStyles.summaryContainer,
-    paddingRight: spacing(4),
-    ...fullHeightSummaryContainer
+    flex: 1,
+    paddingRight: spacing(4)
   }
 };
 

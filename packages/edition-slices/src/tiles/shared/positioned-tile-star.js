@@ -7,37 +7,35 @@ import TileStar from "./tile-star";
 import { isSaveSupported } from "./utils";
 
 import {
-  starDefaultPosition,
-  starCenterPosition,
-  starAfterContentPosition
+  starDefaultStyles,
+  starCenterStyles,
+  starUnderneathTextStyles
 } from "./styles";
 
 const PositionedTileStar = ({
-  articleId,
-  isAfterContentStar = false,
-  isCenteredStar = false,
-  isDarkStar = false,
-  starStyle = {}
+  centeredStar = false,
+  underneathTextStar = false,
+  ...props
 }) => {
   if (!isSaveSupported) return null;
 
-  const starPositionStyles = {
-    ...starDefaultPosition,
-    ...(isCenteredStar && starCenterPosition),
-    ...(isAfterContentStar && starAfterContentPosition)
-  };
-
   return (
-    <View style={starPositionStyles}>
-      <TileStar articleId={articleId} isDark={isDarkStar} style={starStyle} />
+    <View
+      style={[
+        starDefaultStyles,
+        centeredStar && starCenterStyles,
+        underneathTextStar && starUnderneathTextStyles
+      ]}
+    >
+      <TileStar {...props} />
     </View>
   );
 };
 
 PositionedTileStar.propTypes = {
   articleId: PropTypes.string.isRequired,
-  isAfterContentStar: PropTypes.bool,
-  isCenteredStar: PropTypes.bool,
+  underneathTextStar: PropTypes.bool,
+  centeredStar: PropTypes.bool,
   isDarkStar: PropTypes.bool,
   starStyle: PropTypes.shape({})
 };

@@ -1,12 +1,9 @@
 import { fontFactory, spacing } from "@times-components/styleguide";
-import { fullHeightSummaryContainer } from "../../shared/styles";
 
 const styles = {
   container: {
     flex: 1,
-    flexDirection: "column",
-    paddingHorizontal: spacing(2),
-    paddingVertical: spacing(2)
+    padding: spacing(2)
   },
   headline: {
     marginBottom: 0,
@@ -25,8 +22,7 @@ const styles = {
     ...fontFactory({
       font: "bodyRegular",
       fontSize: "teaser"
-    }),
-    ...fullHeightSummaryContainer
+    })
   }
 };
 

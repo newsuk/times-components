@@ -35,7 +35,7 @@ const TileP = ({ onPress, tile }) => {
         straplineStyle={styles.strapline}
         style={styles.summaryContainer}
         tile={tile}
-        isCenteredStar
+        centeredStar
       />
     </TileLink>
   );

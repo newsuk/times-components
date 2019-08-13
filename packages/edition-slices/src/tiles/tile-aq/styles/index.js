@@ -1,5 +1,4 @@
 import { fonts, spacing } from "@times-components/styleguide";
-import { fullHeightSummaryContainer } from "../../shared/styles";
 
 const styles = {
   container: {
@@ -14,9 +13,6 @@ const styles = {
   imageContainer: {
     marginBottom: spacing(2),
     width: "100%"
-  },
-  summaryContainer: {
-    ...fullHeightSummaryContainer
   }
 };
 
