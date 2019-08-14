@@ -861,7 +861,7 @@ exports[`12. lead one and four slice - medium 1`] = `
     <View
       style={
         Object {
-          "width": "50%",
+          "width": "60%",
         }
       }
     >
@@ -880,7 +880,7 @@ exports[`12. lead one and four slice - medium 1`] = `
     <View
       style={
         Object {
-          "width": "50%",
+          "width": "40%",
         }
       }
     >
@@ -2008,7 +2008,7 @@ exports[`27. lead one and four slice - wide 1`] = `
     <View
       style={
         Object {
-          "width": "50%",
+          "width": "60%",
         }
       }
     >
@@ -2027,7 +2027,7 @@ exports[`27. lead one and four slice - wide 1`] = `
     <View
       style={
         Object {
-          "width": "50%",
+          "width": "40%",
         }
       }
     >
@@ -3340,7 +3340,7 @@ exports[`42. lead one and four slice - huge 1`] = `
       <View
         style={
           Object {
-            "width": "50%",
+            "width": "60%",
           }
         }
       >
@@ -3359,7 +3359,7 @@ exports[`42. lead one and four slice - huge 1`] = `
       <View
         style={
           Object {
-            "width": "50%",
+            "width": "40%",
           }
         }
       >

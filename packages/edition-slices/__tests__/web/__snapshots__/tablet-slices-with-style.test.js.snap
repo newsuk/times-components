@@ -1275,7 +1275,7 @@ exports[`11. secondary two and two - medium 1`] = `
 exports[`12. lead one and four slice - medium 1`] = `
 <style>
 .IS1 {
-  width: 50%;
+  width: 60%;
 }
 
 .IS2 {
@@ -1335,7 +1335,7 @@ exports[`12. lead one and four slice - medium 1`] = `
 }
 
 .IS6 {
-  width: 50%;
+  width: 40%;
 }
 
 .IS7 {
@@ -3093,7 +3093,7 @@ exports[`26. secondary two and two - wide 1`] = `
 exports[`27. lead one and four slice - wide 1`] = `
 <style>
 .IS1 {
-  width: 50%;
+  width: 60%;
 }
 
 .IS2 {
@@ -3153,7 +3153,7 @@ exports[`27. lead one and four slice - wide 1`] = `
 }
 
 .IS6 {
-  width: 50%;
+  width: 40%;
 }
 
 .IS7 {
@@ -4911,7 +4911,7 @@ exports[`41. secondary two and two - huge 1`] = `
 exports[`42. lead one and four slice - huge 1`] = `
 <style>
 .IS1 {
-  width: 50%;
+  width: 60%;
 }
 
 .IS2 {
@@ -4971,7 +4971,7 @@ exports[`42. lead one and four slice - huge 1`] = `
 }
 
 .IS6 {
-  width: 50%;
+  width: 40%;
 }
 
 .IS7 {

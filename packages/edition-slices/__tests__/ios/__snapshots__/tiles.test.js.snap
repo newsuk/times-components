@@ -1557,6 +1557,7 @@ exports[`37. tile ad 1`] = `
 <Link
   linkStyle={
     Object {
+      "flex": 1,
       "flexDirection": "row",
       "padding": 10,
     }

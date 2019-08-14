@@ -19,10 +19,11 @@ export default breakpoint => ({
     padding: spacing(2)
   },
   headline: {
+    color: colours.functional.brandColour,
     fontFamily: fonts.headline,
     fontSize: headlineFontSizeResolver[breakpoint],
     lineHeight: headlineFontSizeResolver[breakpoint],
-    marginBottom: spacing(2),
+    marginBottom: 0,
     textAlign: "center"
   },
   imageContainer: {
