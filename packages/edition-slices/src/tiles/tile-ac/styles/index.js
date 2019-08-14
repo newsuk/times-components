@@ -22,7 +22,7 @@ export default breakpoint => ({
     fontFamily: fonts.headline,
     fontSize: headlineFontSizeResolver[breakpoint],
     lineHeight: headlineFontSizeResolver[breakpoint],
-    paddingBottom: spacing(2),
+    marginBottom: spacing(2),
     textAlign: "center"
   },
   imageContainer: {
