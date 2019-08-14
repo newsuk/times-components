@@ -31,13 +31,14 @@ const styles = (breakpoint = editionBreakpoints.medium) => ({
     fontFamily: fonts.headline,
     fontSize: headlineFontSizeResolver[breakpoint],
     lineHeight: headlineFontSizeResolver[breakpoint],
-    paddingTop: spacing(2),
-    textAlign: "center"
+    paddingVertical: spacing(2),
+    textAlign: "center",
+    marginBottom: 0
   },
   imageContainer: {
     overflow: "hidden",
     width: "40%",
-    paddingBottom: spacing(1)
+    marginBottom: spacing(1)
   },
   star: {
     ...verticalStyles.starButton,
