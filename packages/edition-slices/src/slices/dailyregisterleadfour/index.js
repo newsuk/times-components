@@ -6,7 +6,7 @@ import {
   ItemColSeparator
 } from "@times-components/slice-layout";
 import { ResponsiveSlice } from "../shared";
-import { TileS, TileAT } from "../../tiles";
+import { TileS } from "../../tiles";
 import styleFactory from "./styles";
 import Logo from "./logo";
 
@@ -33,25 +33,25 @@ class DailyRegisterLeadFour extends Component {
           type="logo"
         />
         <Text style={styles.title}>Daily Universal Register</Text>
-        <TileS tile={briefing} />
+        <TileS tile={briefing} breakpoint={breakpoint} />
         <ItemRowSeparator style={styles.separator} />
-        <TileS tile={onThisDay} />
+        <TileS tile={onThisDay} breakpoint={breakpoint} />
         <ItemRowSeparator style={styles.separator} />
         <Logo
           imageUri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
-          ratio={1 / 1}
+          ratio={1}
           style={styles.imageWrapper}
           type="nature notes"
         />
-        <TileS tile={natureNotes} />
+        <TileS tile={natureNotes} breakpoint={breakpoint} />
         <ItemRowSeparator style={styles.separator} />
         <Logo
           imageUri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
-          ratio={1 / 1}
+          ratio={1}
           style={styles.imageWrapper}
           type="birthdays"
         />
-        <TileS tile={birthdaysToday} />
+        <TileS tile={birthdaysToday} breakpoint={breakpoint} />
       </View>
     );
   }
@@ -65,7 +65,7 @@ class DailyRegisterLeadFour extends Component {
     const natureLogo = (
       <Logo
         imageUri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
-        ratio={1 / 1}
+        ratio={1}
         style={styles.imageWrapper}
         type="nature notes"
       />
@@ -74,7 +74,7 @@ class DailyRegisterLeadFour extends Component {
     const birthdayLogo = (
       <Logo
         imageUri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
-        ratio={1 / 1}
+        ratio={1}
         style={styles.imageWrapper}
         type="birthdays"
       />
@@ -91,15 +91,23 @@ class DailyRegisterLeadFour extends Component {
         <Text style={styles.title}>Daily Universal Register</Text>
         <View style={styles.itemsContainer}>
           <View style={styles.column}>
-            <TileAT tile={briefing} />
+            <TileS tile={briefing} breakpoint={breakpoint} />
             <ItemRowSeparator style={styles.rowSeparator} />
-            <TileAT tile={natureNotes} logo={natureLogo} />
+            <TileS
+              tile={natureNotes}
+              breakpoint={breakpoint}
+              logo={natureLogo}
+            />
           </View>
           <ItemColSeparator style={styles.colSeparator} />
           <View style={styles.column}>
-            <TileAT tile={onThisDay} />
+            <TileS tile={onThisDay} breakpoint={breakpoint} />
             <ItemRowSeparator style={styles.rowSeparator} />
-            <TileAT tile={birthdaysToday} logo={birthdayLogo} />
+            <TileS
+              tile={birthdaysToday}
+              breakpoint={breakpoint}
+              logo={birthdayLogo}
+            />
           </View>
         </View>
       </View>
@@ -121,18 +129,17 @@ class DailyRegisterLeadFour extends Component {
           type="logo"
         />
         <Text style={styles.title}>Daily Universal Register</Text>
-
         <View style={styles.rowItems}>
           <View style={styles.columnItems}>
             <ItemRowSeparator style={styles.separator} />
             <View style={styles.item}>
-              <TileS tile={briefing} />
+              <TileS tile={briefing} breakpoint={breakpoint} />
             </View>
           </View>
           <View style={styles.columnItems}>
             <ItemRowSeparator style={styles.separator} />
             <View style={styles.item}>
-              <TileS tile={onThisDay} />
+              <TileS tile={onThisDay} breakpoint={breakpoint} />
             </View>
           </View>
         </View>
@@ -146,7 +153,7 @@ class DailyRegisterLeadFour extends Component {
               type="nature notes"
             />
             <View style={styles.item}>
-              <TileS tile={natureNotes} />
+              <TileS tile={natureNotes} breakpoint={breakpoint} />
             </View>
           </View>
           <View style={styles.columnItems}>
@@ -158,7 +165,7 @@ class DailyRegisterLeadFour extends Component {
               type="birthdays"
             />
             <View style={styles.item}>
-              <TileS tile={birthdaysToday} />
+              <TileS tile={birthdaysToday} breakpoint={breakpoint} />
             </View>
           </View>
         </View>

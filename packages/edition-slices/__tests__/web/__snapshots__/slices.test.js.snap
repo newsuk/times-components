@@ -10,21 +10,29 @@ exports[`1. daily universal register 1`] = `
     <div>
       Daily Universal Register
     </div>
-    <TileS />
+    <TileS
+      breakpoint="wide"
+    />
     <div />
-    <TileS />
+    <TileS
+      breakpoint="wide"
+    />
     <div />
     <Image
       aspectRatio={1}
       uri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
     />
-    <TileS />
+    <TileS
+      breakpoint="wide"
+    />
     <div />
     <Image
       aspectRatio={1}
       uri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
     />
-    <TileS />
+    <TileS
+      breakpoint="wide"
+    />
   </div>
 </div>
 `;

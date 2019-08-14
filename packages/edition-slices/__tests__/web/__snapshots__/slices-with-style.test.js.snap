@@ -125,11 +125,15 @@ exports[`1. daily universal register 1`] = `
     >
       Daily Universal Register
     </div>
-    <TileS />
+    <TileS
+      breakpoint="wide"
+    />
     <div
       className="css-view-1dbjc4n IS3"
     />
-    <TileS />
+    <TileS
+      breakpoint="wide"
+    />
     <div
       className="css-view-1dbjc4n IS4"
     />
@@ -138,7 +142,9 @@ exports[`1. daily universal register 1`] = `
       className="IS5"
       uri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
     />
-    <TileS />
+    <TileS
+      breakpoint="wide"
+    />
     <div
       className="css-view-1dbjc4n IS6"
     />
@@ -147,7 +153,9 @@ exports[`1. daily universal register 1`] = `
       className="IS7"
       uri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
     />
-    <TileS />
+    <TileS
+      breakpoint="wide"
+    />
   </div>
 </div>
 `;

@@ -13,9 +13,13 @@ exports[`1. daily universal register 1`] = `
   <Text>
     Daily Universal Register
   </Text>
-  <TileS />
+  <TileS
+    breakpoint="small"
+  />
   <View />
-  <TileS />
+  <TileS
+    breakpoint="small"
+  />
   <View />
   <Image
     resizeMode="contain"
@@ -25,7 +29,9 @@ exports[`1. daily universal register 1`] = `
       }
     }
   />
-  <TileS />
+  <TileS
+    breakpoint="small"
+  />
   <View />
   <Image
     resizeMode="contain"
@@ -35,7 +41,9 @@ exports[`1. daily universal register 1`] = `
       }
     }
   />
-  <TileS />
+  <TileS
+    breakpoint="small"
+  />
 </View>
 `;
 

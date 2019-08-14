@@ -35,9 +35,12 @@ exports[`2. daily universal register - medium 1`] = `
     </Text>
     <View>
       <View>
-        <TileAT />
+        <TileS
+          breakpoint="medium"
+        />
         <View />
-        <TileAT
+        <TileS
+          breakpoint="medium"
           logo={
             <Logo
               imageUri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
@@ -49,9 +52,12 @@ exports[`2. daily universal register - medium 1`] = `
       </View>
       <View />
       <View>
-        <TileAT />
+        <TileS
+          breakpoint="medium"
+        />
         <View />
-        <TileAT
+        <TileS
+          breakpoint="medium"
           logo={
             <Logo
               imageUri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
@@ -517,9 +523,13 @@ exports[`17. daily universal register - wide 1`] = `
     <Text>
       Daily Universal Register
     </Text>
-    <TileS />
+    <TileS
+      breakpoint="wide"
+    />
     <View />
-    <TileS />
+    <TileS
+      breakpoint="wide"
+    />
     <View />
     <Image
       resizeMode="contain"
@@ -529,7 +539,9 @@ exports[`17. daily universal register - wide 1`] = `
         }
       }
     />
-    <TileS />
+    <TileS
+      breakpoint="wide"
+    />
     <View />
     <Image
       resizeMode="contain"
@@ -539,7 +551,9 @@ exports[`17. daily universal register - wide 1`] = `
         }
       }
     />
-    <TileS />
+    <TileS
+      breakpoint="wide"
+    />
   </View>
 </View>
 `;
@@ -990,13 +1004,17 @@ exports[`32. daily universal register - huge 1`] = `
         <View>
           <View />
           <View>
-            <TileS />
+            <TileS
+              breakpoint="huge"
+            />
           </View>
         </View>
         <View>
           <View />
           <View>
-            <TileS />
+            <TileS
+              breakpoint="huge"
+            />
           </View>
         </View>
       </View>
@@ -1012,7 +1030,9 @@ exports[`32. daily universal register - huge 1`] = `
             }
           />
           <View>
-            <TileS />
+            <TileS
+              breakpoint="huge"
+            />
           </View>
         </View>
         <View>
@@ -1026,7 +1046,9 @@ exports[`32. daily universal register - huge 1`] = `
             }
           />
           <View>
-            <TileS />
+            <TileS
+              breakpoint="huge"
+            />
           </View>
         </View>
       </View>
