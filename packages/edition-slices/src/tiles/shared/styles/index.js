@@ -23,9 +23,7 @@ const verticalStyles = {
 const starDefaultStyles = {
   marginTop: "auto",
   alignItems: "flex-end",
-  paddingTop: spacing(1),
-  borderWidth: 1,
-  borderColor: "purple"
+  paddingTop: spacing(1)
 };
 
 const starCenterStyles = {
