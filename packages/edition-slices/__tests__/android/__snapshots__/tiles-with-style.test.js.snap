@@ -1283,11 +1283,65 @@ exports[`25. tile x 1`] = `
   <View
     style={
       Object {
-        "marginHorizontal": 10,
-        "marginVertical": 5,
+        "flex": 1,
       }
     }
   >
+    <View>
+      <View
+        style={
+          Object {
+            "marginHorizontal": 10,
+            "marginVertical": 5,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 5,
+            }
+          }
+        >
+          <ArticleLabel />
+        </View>
+        <Text
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 40,
+              "fontWeight": "400",
+              "lineHeight": 40,
+              "marginBottom": 5,
+            }
+          }
+        >
+          This is tile headline
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#696969",
+              "fontFamily": "TimesDigitalW04-Regular",
+              "fontSize": 25,
+              "lineHeight": 25,
+              "paddingBottom": 5,
+            }
+          }
+        >
+          Three Conservative MPs resign
+        </Text>
+        <ArticleFlags />
+      </View>
+    </View>
+  </View>
+</Link>
+`;
+
+exports[`26. tile y 1`] = `
+<Link>
+  <View>
     <View
       style={
         Object {
@@ -1302,27 +1356,14 @@ exports[`25. tile x 1`] = `
         Object {
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 40,
+          "fontSize": 30,
           "fontWeight": "400",
-          "lineHeight": 40,
+          "lineHeight": 30,
           "marginBottom": 5,
         }
       }
     >
       This is tile headline
-    </Text>
-    <Text
-      style={
-        Object {
-          "color": "#696969",
-          "fontFamily": "TimesDigitalW04-Regular",
-          "fontSize": 25,
-          "lineHeight": 25,
-          "paddingBottom": 5,
-        }
-      }
-    >
-      Three Conservative MPs resign
     </Text>
     <Text
       style={
@@ -1343,47 +1384,6 @@ exports[`25. tile x 1`] = `
       </Text>
     </Text>
     <ArticleFlags />
-  </View>
-</Link>
-`;
-
-exports[`26. tile y 1`] = `
-<Link>
-  <View
-    style={
-      Object {
-        "flex": 1,
-      }
-    }
-  >
-    <View>
-      <View>
-        <View
-          style={
-            Object {
-              "marginBottom": 5,
-            }
-          }
-        >
-          <ArticleLabel />
-        </View>
-        <Text
-          style={
-            Object {
-              "color": "#333333",
-              "fontFamily": "TimesModern-Bold",
-              "fontSize": 30,
-              "fontWeight": "400",
-              "lineHeight": 30,
-              "marginBottom": 5,
-            }
-          }
-        >
-          This is tile headline
-        </Text>
-        <ArticleFlags />
-      </View>
-    </View>
   </View>
 </Link>
 `;

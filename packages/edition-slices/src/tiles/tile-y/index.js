@@ -9,22 +9,16 @@ import {
   getTileSummary
 } from "../shared";
 import stylesFactory from "./styles";
-import WithoutWhiteSpace from "../shared/without-white-space";
 
 const TileY = ({ onPress, tile, breakpoint = editionBreakpoints.medium }) => {
   const styles = stylesFactory(breakpoint);
 
   return (
     <TileLink onPress={onPress} style={styles.container} tile={tile}>
-      <WithoutWhiteSpace
-        render={whiteSpaceHeight => (
-          <TileSummary
-            headlineStyle={styles.headline}
-            summary={getTileSummary(tile, 800)}
-            tile={tile}
-            whiteSpaceHeight={whiteSpaceHeight}
-          />
-        )}
+      <TileSummary
+        headlineStyle={styles.headline}
+        summary={getTileSummary(tile, 300)}
+        tile={tile}
       />
     </TileLink>
   );
