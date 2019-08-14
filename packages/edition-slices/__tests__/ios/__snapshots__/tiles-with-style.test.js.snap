@@ -1947,7 +1947,8 @@ exports[`38. tile ac 1`] = `
           "fontSize": 30,
           "fontWeight": "900",
           "lineHeight": 30,
-          "marginBottom": 10,
+          "marginBottom": 5,
+          "paddingBottom": 10,
           "textAlign": "center",
         }
       }

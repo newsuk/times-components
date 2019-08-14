@@ -31,12 +31,13 @@ const styles = (breakpoint = editionBreakpoints.medium) => ({
     fontFamily: fonts.headline,
     fontSize: headlineFontSizeResolver[breakpoint],
     lineHeight: headlineFontSizeResolver[breakpoint],
-    paddingTop: spacing(3),
+    paddingTop: spacing(2),
     textAlign: "center"
   },
   imageContainer: {
     overflow: "hidden",
-    width: "40%"
+    width: "40%",
+    paddingBottom: spacing(1)
   },
   star: {
     ...verticalStyles.starButton,
@@ -45,6 +46,7 @@ const styles = (breakpoint = editionBreakpoints.medium) => ({
   },
   strapline: {
     color: colours.functional.secondary,
+    fontFamily: fonts.bodyRegular,
     fontSize: fontSizes.meta,
     lineHeight: 20,
     textAlign: "center"
