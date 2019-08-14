@@ -1466,9 +1466,7 @@ exports[`7. secondary one 1`] = `
 exports[`8. secondary one and columnist 1`] = `
 <style>
 .IS1 {
-  padding-left: 10px;
-  padding-top: 10px;
-  width: 33%;
+  width: 73%;
 }
 
 .IS2 {
@@ -1486,8 +1484,7 @@ exports[`8. secondary one and columnist 1`] = `
 }
 
 .IS3 {
-  padding-right: 10px;
-  width: 67%;
+  width: 27%;
 }
 
 .IS4 {
@@ -1500,6 +1497,8 @@ exports[`8. secondary one and columnist 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  padding-right: 20px;
+  padding-left: 20px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -1528,9 +1527,9 @@ exports[`8. secondary one and columnist 1`] = `
     <div
       className="css-view-1dbjc4n IS1"
     >
-      <TileAA
+      <TileAB
         breakpoint="wide"
-        tileName="secondary"
+        tileName="columnist"
       />
     </div>
     <div
@@ -1539,9 +1538,9 @@ exports[`8. secondary one and columnist 1`] = `
     <div
       className="css-view-1dbjc4n IS3"
     >
-      <TileAB
+      <TileB
         breakpoint="wide"
-        tileName="columnist"
+        tileName="secondary"
       />
     </div>
   </div>

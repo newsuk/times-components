@@ -1173,58 +1173,22 @@ exports[`27. tile z 1`] = `
 </Link>
 `;
 
-exports[`28. tile aa 1`] = `
-<Link
-  linkStyle={
-    Object {
-      "paddingHorizontal": "10px",
-    }
-  }
-  url="/article/123"
->
-  <Image
-    aspectRatio={1.7777777777777777}
-    fill={true}
-    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
-  />
-  <div>
-    <div>
-      <ArticleLabel
-        color="#005B8D"
-        isVideo={false}
-        title="label"
-      />
-    </div>
-    <h3
-      aria-level="3"
-      role="heading"
-    >
-      This is tile headline
-    </h3>
-    <ArticleFlags
-      flags={
-        Array [
-          Object {
-            "expiryTime": "2030-03-14T12:00:00.000Z",
-            "type": "EXCLUSIVE",
-          },
-        ]
-      }
-    />
-  </div>
-</Link>
-`;
-
-exports[`29. tile ab 1`] = `
+exports[`28. tile ab 1`] = `
 <Link
   linkStyle={
     Object {
       "flexDirection": "row",
       "paddingHorizontal": "10px",
+      "paddingVertical": "10px",
     }
   }
   url="/article/123"
 >
+  <Image
+    aspectRatio={0.6666666666666666}
+    fill={true}
+    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1195%2C1792%2C747%2C0"
+  />
   <div>
     <div>
       <div>
@@ -1262,15 +1226,10 @@ exports[`29. tile ab 1`] = `
       </div>
     </div>
   </div>
-  <Image
-    aspectRatio={0.6666666666666666}
-    fill={true}
-    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1195%2C1792%2C747%2C0"
-  />
 </Link>
 `;
 
-exports[`30. tile ae 1`] = `
+exports[`29. tile ae 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1313,7 +1272,7 @@ exports[`30. tile ae 1`] = `
 </Link>
 `;
 
-exports[`31. tile ag 1`] = `
+exports[`30. tile ag 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1341,7 +1300,7 @@ exports[`31. tile ag 1`] = `
 </Link>
 `;
 
-exports[`32. tile aj 1`] = `
+exports[`31. tile aj 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1370,7 +1329,7 @@ exports[`32. tile aj 1`] = `
 </Link>
 `;
 
-exports[`33. tile ak 1`] = `
+exports[`32. tile ak 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1401,7 +1360,7 @@ exports[`33. tile ak 1`] = `
 </Link>
 `;
 
-exports[`34. tile al 1`] = `
+exports[`33. tile al 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1449,7 +1408,7 @@ exports[`34. tile al 1`] = `
 </Link>
 `;
 
-exports[`35. tile am 1`] = `
+exports[`34. tile am 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1497,7 +1456,7 @@ exports[`35. tile am 1`] = `
 </Link>
 `;
 
-exports[`36. tile an 1`] = `
+exports[`35. tile an 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1548,7 +1507,7 @@ exports[`36. tile an 1`] = `
 </Link>
 `;
 
-exports[`37. tile ap 1`] = `
+exports[`36. tile ap 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1592,7 +1551,7 @@ exports[`37. tile ap 1`] = `
 </Link>
 `;
 
-exports[`38. tile ad 1`] = `
+exports[`37. tile ad 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1635,7 +1594,7 @@ exports[`38. tile ad 1`] = `
 </Link>
 `;
 
-exports[`39. tile ac 1`] = `
+exports[`38. tile ac 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1678,7 +1637,7 @@ exports[`39. tile ac 1`] = `
 </Link>
 `;
 
-exports[`40. tile aq 1`] = `
+exports[`39. tile aq 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1728,7 +1687,7 @@ exports[`40. tile aq 1`] = `
 </Link>
 `;
 
-exports[`41. tile ar 1`] = `
+exports[`40. tile ar 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1785,7 +1744,7 @@ exports[`41. tile ar 1`] = `
 </Link>
 `;
 
-exports[`42. tile as 1`] = `
+exports[`41. tile as 1`] = `
 <Link
   linkStyle={
     Object {

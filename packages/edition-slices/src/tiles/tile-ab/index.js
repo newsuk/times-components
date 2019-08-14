@@ -18,6 +18,16 @@ const TileAB = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
 
   return (
     <TileLink onPress={onPress} style={styles.container} tile={tile}>
+      <Image
+        aspectRatio={2 / 3}
+        relativeWidth={crop.relativeWidth}
+        relativeHeight={crop.relativeHeight}
+        relativeHorizontalOffset={crop.relativeHorizontalOffset}
+        relativeVerticalOffset={crop.relativeVerticalOffset}
+        style={styles.imageContainer}
+        uri={crop.url}
+        fill
+      />
       <WithoutWhiteSpace
         styles={styles.summaryContainer}
         render={whiteSpaceHeight => (
@@ -29,16 +39,6 @@ const TileAB = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
             whiteSpaceHeight={whiteSpaceHeight}
           />
         )}
-      />
-      <Image
-        aspectRatio={2 / 3}
-        relativeWidth={crop.relativeWidth}
-        relativeHeight={crop.relativeHeight}
-        relativeHorizontalOffset={crop.relativeHorizontalOffset}
-        relativeVerticalOffset={crop.relativeVerticalOffset}
-        style={styles.imageContainer}
-        uri={crop.url}
-        fill
       />
     </TileLink>
   );

@@ -20,6 +20,8 @@ exports[`1. secondary one and columnist - small 1`] = `
       "msFlexNegative": 1,
       "msFlexPositive": 1,
       "msFlexPreferredSize": "0%",
+      "paddingLeft": "20px",
+      "paddingRight": "20px",
     }
   }
 >
@@ -27,16 +29,14 @@ exports[`1. secondary one and columnist - small 1`] = `
     className="css-view-1dbjc4n"
     style={
       Object {
-        "paddingLeft": "10px",
-        "paddingTop": "10px",
-        "width": "33%",
+        "width": "73%",
       }
     }
   >
     <div
       className="css-text-901oao"
     >
-      secondary
+      columnist
     </div>
   </div>
   <div
@@ -61,15 +61,14 @@ exports[`1. secondary one and columnist - small 1`] = `
     className="css-view-1dbjc4n"
     style={
       Object {
-        "paddingRight": "10px",
-        "width": "67%",
+        "width": "27%",
       }
     }
   >
     <div
       className="css-text-901oao"
     >
-      columnist
+      secondary
     </div>
   </div>
 </div>
@@ -95,6 +94,8 @@ exports[`2. secondary one and columnist - medium 1`] = `
       "msFlexNegative": 1,
       "msFlexPositive": 1,
       "msFlexPreferredSize": "0%",
+      "paddingLeft": "20px",
+      "paddingRight": "20px",
     }
   }
 >
@@ -102,16 +103,14 @@ exports[`2. secondary one and columnist - medium 1`] = `
     className="css-view-1dbjc4n"
     style={
       Object {
-        "paddingLeft": "10px",
-        "paddingTop": "10px",
-        "width": "33%",
+        "width": "73%",
       }
     }
   >
     <div
       className="css-text-901oao"
     >
-      secondary
+      columnist
     </div>
   </div>
   <div
@@ -136,15 +135,14 @@ exports[`2. secondary one and columnist - medium 1`] = `
     className="css-view-1dbjc4n"
     style={
       Object {
-        "paddingRight": "10px",
-        "width": "67%",
+        "width": "27%",
       }
     }
   >
     <div
       className="css-text-901oao"
     >
-      columnist
+      secondary
     </div>
   </div>
 </div>

@@ -6,20 +6,19 @@ exports[`1. secondary one and columnist - small 1`] = `
     Object {
       "flex": 1,
       "flexDirection": "row",
+      "paddingHorizontal": 20,
     }
   }
 >
   <View
     style={
       Object {
-        "paddingLeft": 10,
-        "paddingTop": 10,
-        "width": "33%",
+        "width": "73%",
       }
     }
   >
     <Text>
-      secondary
+      columnist
     </Text>
   </View>
   <View
@@ -35,13 +34,12 @@ exports[`1. secondary one and columnist - small 1`] = `
   <View
     style={
       Object {
-        "paddingRight": 10,
-        "width": "67%",
+        "width": "27%",
       }
     }
   >
     <Text>
-      columnist
+      secondary
     </Text>
   </View>
 </View>
@@ -53,20 +51,19 @@ exports[`2. secondary one and columnist - medium 1`] = `
     Object {
       "flex": 1,
       "flexDirection": "row",
+      "paddingHorizontal": 20,
     }
   }
 >
   <View
     style={
       Object {
-        "paddingLeft": 10,
-        "paddingTop": 10,
-        "width": "33%",
+        "width": "73%",
       }
     }
   >
     <Text>
-      secondary
+      columnist
     </Text>
   </View>
   <View
@@ -82,13 +79,12 @@ exports[`2. secondary one and columnist - medium 1`] = `
   <View
     style={
       Object {
-        "paddingRight": 10,
-        "width": "67%",
+        "width": "27%",
       }
     }
   >
     <Text>
-      columnist
+      secondary
     </Text>
   </View>
 </View>

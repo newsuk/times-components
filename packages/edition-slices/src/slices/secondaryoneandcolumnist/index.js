@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { SecondaryOneAndColumnistSlice } from "@times-components/slice-layout";
-import { TileH, TileT, TileAA, TileAB } from "../../tiles";
+import { TileH, TileT, TileAB, TileB } from "../../tiles";
 import { ResponsiveSlice } from "../shared";
 
 class SecondaryOneAndColumnist extends Component {
@@ -46,7 +46,7 @@ class SecondaryOneAndColumnist extends Component {
           />
         }
         secondary={
-          <TileAA
+          <TileB
             breakpoint={breakpoint}
             onPress={onPress}
             tile={secondary}

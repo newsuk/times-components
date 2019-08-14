@@ -1420,58 +1420,22 @@ exports[`27. tile z 1`] = `
 </Link>
 `;
 
-exports[`28. tile aa 1`] = `
+exports[`28. tile ab 1`] = `
 <Link>
   <Image
     style={
       Object {
-        "paddingBottom": 5,
+        "flexDirection": "column",
+        "justifyContent": "flex-end",
+        "width": "50%",
       }
     }
   />
   <View
     style={
       Object {
-        "paddingVertical": 5,
-      }
-    }
-  >
-    <View
-      style={
-        Object {
-          "marginBottom": 5,
-        }
-      }
-    >
-      <ArticleLabel />
-    </View>
-    <Text
-      style={
-        Object {
-          "color": "#333333",
-          "fontFamily": "TimesModern-Bold",
-          "fontSize": 30,
-          "fontWeight": "400",
-          "lineHeight": 30,
-          "marginBottom": 5,
-        }
-      }
-    >
-      This is tile headline
-    </Text>
-    <ArticleFlags />
-  </View>
-</Link>
-`;
-
-exports[`29. tile ab 1`] = `
-<Link>
-  <View
-    style={
-      Object {
         "flex": 1,
-        "paddingRight": 10,
-        "paddingVertical": 10,
+        "paddingLeft": 20,
         "width": "50%",
       }
     }
@@ -1533,20 +1497,10 @@ exports[`29. tile ab 1`] = `
       </View>
     </View>
   </View>
-  <Image
-    style={
-      Object {
-        "flexDirection": "column",
-        "justifyContent": "flex-end",
-        "paddingTop": 10,
-        "width": "50%",
-      }
-    }
-  />
 </Link>
 `;
 
-exports[`30. tile ae 1`] = `
+exports[`29. tile ae 1`] = `
 <Link>
   <View
     style={
@@ -1587,7 +1541,7 @@ exports[`30. tile ae 1`] = `
 </Link>
 `;
 
-exports[`31. tile ag 1`] = `
+exports[`30. tile ag 1`] = `
 <Link>
   <View>
     <Text
@@ -1625,7 +1579,7 @@ exports[`31. tile ag 1`] = `
 </Link>
 `;
 
-exports[`32. tile aj 1`] = `
+exports[`31. tile aj 1`] = `
 <Link>
   <View
     style={
@@ -1662,7 +1616,7 @@ exports[`32. tile aj 1`] = `
 </Link>
 `;
 
-exports[`33. tile ak 1`] = `
+exports[`32. tile ak 1`] = `
 <Link>
   <View
     style={
@@ -1700,7 +1654,7 @@ exports[`33. tile ak 1`] = `
 </Link>
 `;
 
-exports[`34. tile al 1`] = `
+exports[`33. tile al 1`] = `
 <Link>
   <Image
     style={
@@ -1749,7 +1703,7 @@ exports[`34. tile al 1`] = `
 </Link>
 `;
 
-exports[`35. tile am 1`] = `
+exports[`34. tile am 1`] = `
 <Link>
   <Image
     style={
@@ -1799,7 +1753,7 @@ exports[`35. tile am 1`] = `
 </Link>
 `;
 
-exports[`36. tile an 1`] = `
+exports[`35. tile an 1`] = `
 <Link>
   <Image
     style={
@@ -1863,7 +1817,7 @@ exports[`36. tile an 1`] = `
 </Link>
 `;
 
-exports[`37. tile ap 1`] = `
+exports[`36. tile ap 1`] = `
 <Link>
   <Image
     style={
@@ -1910,7 +1864,7 @@ exports[`37. tile ap 1`] = `
 </Link>
 `;
 
-exports[`38. tile ad 1`] = `
+exports[`37. tile ad 1`] = `
 <Link>
   <Image
     style={
@@ -1955,7 +1909,7 @@ exports[`38. tile ad 1`] = `
 </Link>
 `;
 
-exports[`39. tile ac 1`] = `
+exports[`38. tile ac 1`] = `
 <Link>
   <Image
     style={
@@ -2005,7 +1959,7 @@ exports[`39. tile ac 1`] = `
 </Link>
 `;
 
-exports[`40. tile aq 1`] = `
+exports[`39. tile aq 1`] = `
 <Link>
   <View
     style={
@@ -2056,7 +2010,7 @@ exports[`40. tile aq 1`] = `
 </Link>
 `;
 
-exports[`41. tile ar 1`] = `
+exports[`40. tile ar 1`] = `
 <Link>
   <View
     style={
@@ -2125,7 +2079,7 @@ exports[`41. tile ar 1`] = `
 </Link>
 `;
 
-exports[`42. tile as 1`] = `
+exports[`41. tile as 1`] = `
 <Link>
   <View
     style={
