@@ -4,13 +4,13 @@ exports[`1. secondary one and columnist - small 1`] = `
 <div>
   <div>
     <div>
-      secondary
+      columnist
     </div>
   </div>
   <div />
   <div>
     <div>
-      columnist
+      secondary
     </div>
   </div>
 </div>
@@ -20,13 +20,13 @@ exports[`2. secondary one and columnist - medium 1`] = `
 <div>
   <div>
     <div>
-      secondary
+      columnist
     </div>
   </div>
   <div />
   <div>
     <div>
-      columnist
+      secondary
     </div>
   </div>
 </div>

@@ -4,13 +4,13 @@ exports[`1. secondary one and columnist - small 1`] = `
 <View>
   <View>
     <Text>
-      secondary
+      columnist
     </Text>
   </View>
   <View />
   <View>
     <Text>
-      columnist
+      secondary
     </Text>
   </View>
 </View>
@@ -20,13 +20,13 @@ exports[`2. secondary one and columnist - medium 1`] = `
 <View>
   <View>
     <Text>
-      secondary
+      columnist
     </Text>
   </View>
   <View />
   <View>
     <Text>
-      columnist
+      secondary
     </Text>
   </View>
 </View>
