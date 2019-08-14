@@ -6,10 +6,14 @@ export default Component =>
       {
         actionName: "Pressed",
         eventName: "onSaveButtonPress",
-        getAttrs: ({ articleId, articleHeadline }) => ({
-          articleId,
-          articleHeadline
-        }),
+        getAttrs: props => {
+          const { articleId, articleHeadline, savedStatus } = props;
+          return {
+            articleId,
+            articleHeadline,
+            savedStatus: !savedStatus
+          };
+        },
         trackingName: "ArticleSaveToMyArticles"
       }
     ]

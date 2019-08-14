@@ -59,6 +59,7 @@ export default (WrappedComponent, { analyticsEvents = [] } = {}) => {
         ) => {
           const funcWrapped = (...args) => {
             const attrs = resolveAttrs(getAttrs, this.props, args);
+            console.log('attrs are:', attrs)
             tracking(attrs, actionName, trackingName);
             return this.props[eventName] && this.props[eventName](...args); // eslint-disable-line react/destructuring-assignment
           };

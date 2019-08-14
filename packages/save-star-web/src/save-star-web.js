@@ -1,129 +1,45 @@
 /* eslint-env browser */
-import React, { Component, Fragment } from "react";
-import { ActivityIndicator, Text } from "react-native";
-import styled from "styled-components";
-import Link from "@times-components/link";
-import { HoverIcon } from "@times-components/utils";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { IconStar } from "@times-components/icons";
-import styles, { getStyles } from "./styles";
-import withTrackEvents from "./tracking/with-track-events";
-
-const IconContainer = styled(HoverIcon)`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
+import styles from "./styles";
+import SaveStarWithTracking from "./save-star-with-tracking";
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
 class SaveStarWeb extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      loadingState: null,
       savedStatus: false
     };
-    this.onSaveButtonPress = this.onSaveButtonPress.bind(this);
-    this.save = this.save.bind(this);
-    this.renderSaveButton = this.renderSaveButton.bind(this);
+    this.updateSavedStatus = this.updateSavedStatus.bind(this);
   }
 
-  componentDidMount() {
-    const { articleId, saveApi } = this.props;
-
-    this.getBookmarks(articleId, saveApi);
-  }
-
-  onSaveButtonPress(e) {
-    const { onSaveButtonPress } = this.props;
-    onSaveButtonPress(this.save, e);
-  }
-
-  getBookmarks(articleId, saveApi) {
-    saveApi
-      .getBookmarks()
-      .then(response => {
-        const { loading, data } = response;
-        if (loading) {
-          this.setState({ loadingState: true });
-        } else {
-          const savedArticles = data.viewer.bookmarks.bookmarks.map(
-            item => item.id
-          );
-
-          this.setState({
-            loadingState: false,
-            savedStatus: !!savedArticles.find(item => item === articleId)
-          });
-        }
-      })
-      .catch(error => {
-        this.setState({ loadingState: false, savedStatus: false });
-        console.error(error);
-      });
-  }
-
-  save() {
-    this.setState({ loadingState: true });
-
-    const { savedStatus } = this.state;
-    const { articleId: id, saveApi } = this.props;
-
-    const saveMethod = savedStatus ? saveApi.unBookmark : saveApi.bookmark;
-    saveMethod(id)
-      .then(() => {
-        this.setState({
-          loadingState: false,
-          savedStatus: !savedStatus
-        });
-      })
-      .catch(error => {
-        this.setState({ loadingState: false, savedStatus });
-        console.error("Error in connecting to api", error);
-      });
-  }
-
-  renderSaveButton() {
-    const { colour, hoverColour } = this.props;
-    const { savedStatus } = this.state;
-    const saveStyle = getStyles({ saveStatus: savedStatus });
-    const { fillColour, strokeColour } = saveStyle;
-    return (
-      <Link onPress={this.onSaveButtonPress} responsiveLinkStyles={styles.link}>
-        <IconContainer colour={colour} hoverColour={hoverColour}>
-          <IconStar
-            fillColour={fillColour}
-            strokeColour={strokeColour}
-            title={
-              savedStatus ? "Remove from My Articles" : "Save to My Articles"
-            }
-            height={18}
-          />
-        </IconContainer>
-      </Link>
-    );
-  }
-
-  renderActivity() {
-    const { loadingState } = this.state;
-
-    if (loadingState) {
-      return <ActivityIndicator size="small" style={styles.activityLoader} />;
-    }
-
-    return this.renderSaveButton();
+  updateSavedStatus(savedStatus) {
+    this.setState({
+      savedStatus
+    });
   }
 
   render() {
     const { savedStatus } = this.state;
+    const {
+      colour,
+      hoverColour,
+      articleId,
+      saveApi,
+      onSaveButtonPress
+    } = this.props;
 
     return (
-      <Fragment>
-        <Text style={styles.label}>{savedStatus ? "Saved" : "Save"}</Text>
-        {this.renderActivity()}
-      </Fragment>
+      <SaveStarWithTracking
+        colour={colour}
+        hoverColour={hoverColour}
+        articleId={articleId}
+        saveApi={saveApi}
+        savedStatus={savedStatus}
+        updateSavedStatus={this.updateSavedStatus}
+        onSaveButtonPress={onSaveButtonPress}
+      />
     );
   }
 }
@@ -145,5 +61,5 @@ SaveStarWeb.defaultProps = {
   hoverColour: styles.svgIcon.hoverFillColour
 };
 
-export default withTrackEvents(SaveStarWeb);
+export default SaveStarWeb;
 export { default as saveApi } from "./save-api";
