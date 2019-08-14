@@ -3,6 +3,62 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.9.21](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.9.20...@times-components/article-in-depth@3.9.21) (2019-08-14)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.9.20](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.9.19...@times-components/article-in-depth@3.9.20) (2019-08-09)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.9.19](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.9.18...@times-components/article-in-depth@3.9.19) (2019-08-09)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.9.18](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.9.17...@times-components/article-in-depth@3.9.18) (2019-08-08)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.9.17](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.9.16...@times-components/article-in-depth@3.9.17) (2019-08-08)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.9.16](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.9.15...@times-components/article-in-depth@3.9.16) (2019-08-07)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
+## [3.9.15](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.9.14...@times-components/article-in-depth@3.9.15) (2019-08-07)
+
+**Note:** Version bump only for package @times-components/article-in-depth
+
+
+
+
+
 ## [3.9.14](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.9.13...@times-components/article-in-depth@3.9.14) (2019-08-06)
 
 **Note:** Version bump only for package @times-components/article-in-depth

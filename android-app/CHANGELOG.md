@@ -3,6 +3,65 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.16.6](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.16.5...@times-components/android-app@0.16.6) (2019-08-14)
+
+**Note:** Version bump only for package @times-components/android-app
+
+
+
+
+
+## [0.16.5](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.16.4...@times-components/android-app@0.16.5) (2019-08-09)
+
+**Note:** Version bump only for package @times-components/android-app
+
+
+
+
+
+## [0.16.4](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.16.3...@times-components/android-app@0.16.4) (2019-08-09)
+
+**Note:** Version bump only for package @times-components/android-app
+
+
+
+
+
+## [0.16.3](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.16.2...@times-components/android-app@0.16.3) (2019-08-08)
+
+**Note:** Version bump only for package @times-components/android-app
+
+
+
+
+
+## [0.16.2](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.16.1...@times-components/android-app@0.16.2) (2019-08-08)
+
+**Note:** Version bump only for package @times-components/android-app
+
+
+
+
+
+## [0.16.1](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.16.0...@times-components/android-app@0.16.1) (2019-08-07)
+
+**Note:** Version bump only for package @times-components/android-app
+
+
+
+
+
+# [0.16.0](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.15.28...@times-components/android-app@0.16.0) (2019-08-07)
+
+
+### Features
+
+* (REPLAT-6797) add viewport tracking for unruly ads ([#2111](https://github.com/newsuk/times-components/issues/2111)) ([3a329cf](https://github.com/newsuk/times-components/commit/3a329cf))
+
+
+
+
+
 ## [0.15.28](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.15.27...@times-components/android-app@0.15.28) (2019-08-06)
 
 **Note:** Version bump only for package @times-components/android-app

@@ -3,6 +3,44 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.7.3](https://github.com/newsuk/times-components/compare/@times-components/ad@2.7.2...@times-components/ad@2.7.3) (2019-08-09)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.7.2](https://github.com/newsuk/times-components/compare/@times-components/ad@2.7.1...@times-components/ad@2.7.2) (2019-08-08)
+
+
+### Bug Fixes
+
+* REPLAT-7374 disable RNDeviceInfo on ios ([#2169](https://github.com/newsuk/times-components/issues/2169)) ([efdba1d](https://github.com/newsuk/times-components/commit/efdba1d))
+
+
+
+
+
+## [2.7.1](https://github.com/newsuk/times-components/compare/@times-components/ad@2.7.0...@times-components/ad@2.7.1) (2019-08-07)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+# [2.7.0](https://github.com/newsuk/times-components/compare/@times-components/ad@2.6.38...@times-components/ad@2.7.0) (2019-08-07)
+
+
+### Features
+
+* (REPLAT-6797) add viewport tracking for unruly ads ([#2111](https://github.com/newsuk/times-components/issues/2111)) ([3a329cf](https://github.com/newsuk/times-components/commit/3a329cf))
+
+
+
+
+
 ## [2.6.38](https://github.com/newsuk/times-components/compare/@times-components/ad@2.6.37...@times-components/ad@2.6.38) (2019-08-06)
 
 **Note:** Version bump only for package @times-components/ad

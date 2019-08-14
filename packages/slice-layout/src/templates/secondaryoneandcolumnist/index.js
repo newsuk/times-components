@@ -19,8 +19,8 @@ const SecondaryOneAndColumnistSlice = ({
     <HorizontalLayout
       containerStyle={styles.container}
       tiles={[
-        { style: styles.secondaryContainer, tile: secondary },
-        { style: styles.columnistContainer, tile: columnist }
+        { style: styles.columnistContainer, tile: columnist },
+        { style: styles.secondaryContainer, tile: secondary }
       ]}
     />
   );

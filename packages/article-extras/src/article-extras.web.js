@@ -46,13 +46,13 @@ const ArticleExtras = ({
         </MessageContext.Consumer>
       </UserState>
     )}
-    <aside id="related-articles" ref={node => registerNode(node)}>
+    <div id="related-articles" ref={node => registerNode(node)}>
       <RelatedArticles
         analyticsStream={analyticsStream}
         isVisible={relatedArticlesVisible}
         slice={relatedArticleSlice}
       />
-    </aside>
+    </div>
     {/* Nativo inserts Sponsored Articles in this div */}
     <div id="sponsored-article" />
     <ArticleComments

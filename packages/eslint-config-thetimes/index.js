@@ -1,10 +1,6 @@
 module.exports = {
-  extends: [
-    "plugin:flowtype/recommended",
-    "airbnb",
-    "prettier",
-    "prettier/react"
-  ],
+  extends: ["airbnb", "prettier", "prettier/react"],
+  parser: "babel-eslint",
   rules: {
     "react/jsx-filename-extension": [1, { extensions: [".js"] }],
     "import/extensions": "off",

@@ -98,6 +98,34 @@ const articleTemplateTest = template =>
 
       cy.get("script[data-spotim-module]").should("not.exist");
     });
+
+    it("should pass basic a11y test", () => {
+      cy.task("startMockServerWith", {
+        Article: sundayTimesArticleWithThreeRelatedArticles,
+        User: userWithBookmarks
+      })
+        .visit("/article/8763d1a0-ca57-11e8-bde6-fae32479843d")
+        .wait(1000)
+        .injectAxe()
+        .wait(200)
+        .configureAxe({
+          rules: [
+            {
+              id: "color-contrast",
+              enabled: false
+            },
+            {
+              id: "frame-title-unique",
+              enabled: false
+            },
+            {
+              id: "region",
+              enabled: false
+            }
+          ]
+        })
+        .checkA11y();
+    });
   });
 
 export default articleTemplateTest;

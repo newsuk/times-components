@@ -81,4 +81,7 @@ dependencies {
     api("react-repo:react-native-webview:${packageInfo.dependencies.'react-native-webview'}") {	
         exclude group: "com.facebook.react"	
     }
+    api("react-repo:react-native-device-info:${packageInfo.dependencies.'react-native-device-info'}") {
+        exclude group: "com.facebook.react"
+    }
 }

@@ -5,7 +5,7 @@
   "description": "A collection of presentational components for The Times and Sunday Times",
   "main": "index.js",
   "engines": {
-    "node": ">=8.10.0 <12",
+    "node": ">=8.10.0 <13",
     "yarn": "1.16.0"
   },
   "bin": {
@@ -113,9 +113,11 @@
     "@storybook/react": "4.1.18",
     "@storybook/react-native": "4.1.18",
     "@times-components/depend": "*",
+    "babel-eslint": "10.0.2",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.5",
     "babel-plugin-module-resolver": "3.2.0",
+    "babel-plugin-transform-react-remove-prop-types": "0.4.24",
     "commitizen": "2.9.6",
     "coveralls": "2.13.1",
     "cz-conventional-changelog": "2.1.0",
@@ -160,6 +162,7 @@
     "@babel/runtime-corejs2": "7.4.4",
     "react-art": "16.6.3",
     "react-native": "0.59.10",
+    "react-native-device-info": "2.3.2",
     "react-native-showcase-loader": "1.1.0"
   }
 }

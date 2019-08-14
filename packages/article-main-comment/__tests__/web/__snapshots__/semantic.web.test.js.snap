@@ -75,325 +75,331 @@ exports[`1. a full article 1`] = `
     </g>
   </svg>
   ADVERTISEMENT
-  <img
-    src="https://image.io"
-  />
-  <svg
-    height="auto"
-    version="1.1"
-    viewBox="145 50 108 120"
-    width="100%"
+  <main
+    role="main"
   >
-    <g>
-      <path
-        d="6a6c07166e9c40e4f62e57af2b507822"
-      />
-    </g>
-  </svg>
-  SOME LABEL
-  <h1
-    aria-level="1"
-    role="heading"
-  >
-    Some Headline
-  </h1>
-  new
-  <h2
-    aria-level="2"
-    data-testid="standfirst"
-    role="heading"
-  >
-    Some Standfirst
-  </h2>
-  Some byline
-  <time
-    dateTime="2015-03-13T18:54:58.000Z"
-  >
-    Friday March 13 2015, 6.54pm
-  </time>
-  <span>
-    , The Times
-  </span>
-  Share
-  <a
-    target={null}
-  >
-    <svg
-      aria-label="[title]"
-      height={16}
-      role="img"
-      viewBox="0 0 22 16"
-      width={22}
-    >
-      <title>
-        Share by email
-      </title>
-      <g>
-        <path
-          d="7662b27a9a5411e756afc5097a4eb94d"
-        />
-      </g>
-    </svg>
-  </a>
-  <a
-    href="https://twitter.com/intent/tweet?text=https://url.io"
-    target="_blank"
-  >
-    <svg
-      aria-label="[title]"
-      height={16}
-      role="img"
-      viewBox="-354.2 -279.4 750 600"
-      width={20}
-    >
-      <title>
-        Share on Twitter
-      </title>
-      <path
-        d="ebf51b280a2c9ea0e632fdbf86606550"
-      />
-    </svg>
-  </a>
-  <a
-    href="https://www.facebook.com/sharer/sharer.php?u=https://url.io"
-    target="_blank"
-  >
-    <svg
-      aria-label="[title]"
-      height={18}
-      role="img"
-      viewBox="14 10 10.592460632324219 20.397258758544922"
-      width={9}
-    >
-      <title>
-        Share on Facebook
-      </title>
-      <g>
-        <path
-          d="8f9b8bbdce60b96352628d3dbf6e37a0"
-        />
-      </g>
-    </svg>
-  </a>
-  <a
-    target={null}
-  >
-    <svg
-      aria-label="[title]"
-      height={16}
-      role="img"
-      viewBox="0 0 15 15"
-      width={15}
-    >
-      <title>
-        Copy link to clipboard
-      </title>
-      <path
-        d="f65af77b7574644b0c2e60934732135f"
-      />
-    </svg>
-  </a>
-  Save
-  <a
-    target={null}
-  >
-    <svg
-      aria-label="[title]"
-      height={18}
-      role="img"
-      viewBox="0 0 18 18"
-      width={18}
-    >
-      <title>
-        Save to My Articles
-      </title>
-      <path
-        d="305a4329b925735e74b6f9f97d84a7d7"
-      />
-    </svg>
-  </a>
-  <img
-    alt="An image caption"
-    src="https://image.io?resize=100"
-  />
-  <svg
-    height="auto"
-    version="1.1"
-    viewBox="145 50 108 120"
-    width="100%"
-  >
-    <g>
-      <path
-        d="6a6c07166e9c40e4f62e57af2b507822"
-      />
-    </g>
-  </svg>
-  An image caption
-  THE IMAGE CREDITS
-  <a
-    href="https://link.io"
-    target="_blank"
-  >
-    Some Link
-  </a>
-  <p>
-    Some content
-  </p>
-  <blockquote
-    url="https://twitter.com/@AName"
-  >
-    “
-    <cite>
-      The pull quote content
-    </cite>
-    AName
-    , a text
-    <svg
-      aria-label="[title]"
-      height={10}
-      role="img"
-      viewBox="-354.2 -279.4 750 600"
-      width={11}
-    >
-      <title>
-        Twitter Icon
-      </title>
-      <path
-        d="ebf51b280a2c9ea0e632fdbf86606550"
-      />
-    </svg>
-    <a
-      href="https://twitter.com/@AName"
-      rel=" noopener noreferrer"
-      role="link"
-      target="_blank"
-    >
-      @AName
-    </a>
-  </blockquote>
-  <figure>
-    <video
-      controls={true}
-      data-account="57838016001"
-      data-application-id={true}
-      data-embed="default"
-      data-player="default"
-      data-video-id="4084164751001"
-      id="4084164751001-57838016001-3dbfe6b8-680b-11e9-b277-88f3d445182c"
-      poster="https://image.io"
+    <img
+      alt="author-image"
+      src="https://image.io"
     />
-    <figcaption>
-      This is video caption
-    </figcaption>
-  </figure>
-  <nav>
+    <svg
+      height="auto"
+      version="1.1"
+      viewBox="145 50 108 120"
+      width="100%"
+    >
+      <g>
+        <path
+          d="6a6c07166e9c40e4f62e57af2b507822"
+        />
+      </g>
+    </svg>
+    SOME LABEL
+    <h1
+      aria-level="1"
+      role="heading"
+    >
+      Some Headline
+    </h1>
+    new
+    <h2
+      aria-level="2"
+      data-testid="standfirst"
+      role="heading"
+    >
+      Some Standfirst
+    </h2>
+    Some byline
+    <time
+      dateTime="2015-03-13T18:54:58.000Z"
+    >
+      Friday March 13 2015, 6.54pm
+    </time>
+    <span>
+      , The Times
+    </span>
+    Share
     <a
-      href="/topic/topic"
       target={null}
     >
-      Topic
+      <svg
+        aria-label="[title]"
+        height={16}
+        role="img"
+        viewBox="0 0 22 16"
+        width={22}
+      >
+        <title>
+          Share by email
+        </title>
+        <g>
+          <path
+            d="7662b27a9a5411e756afc5097a4eb94d"
+          />
+        </g>
+      </svg>
     </a>
-  </nav>
-  Share
-  <a
-    target={null}
-  >
-    <svg
-      aria-label="[title]"
-      height={16}
-      role="img"
-      viewBox="0 0 22 16"
-      width={22}
+    <a
+      href="https://twitter.com/intent/tweet?text=https://url.io"
+      target="_blank"
     >
-      <title>
-        Share by email
-      </title>
-      <g>
+      <svg
+        aria-label="[title]"
+        height={16}
+        role="img"
+        viewBox="-354.2 -279.4 750 600"
+        width={20}
+      >
+        <title>
+          Share on Twitter
+        </title>
         <path
-          d="7662b27a9a5411e756afc5097a4eb94d"
+          d="ebf51b280a2c9ea0e632fdbf86606550"
         />
-      </g>
-    </svg>
-  </a>
-  <a
-    href="https://twitter.com/intent/tweet?text=https://url.io"
-    target="_blank"
-  >
-    <svg
-      aria-label="[title]"
-      height={16}
-      role="img"
-      viewBox="-354.2 -279.4 750 600"
-      width={20}
+      </svg>
+    </a>
+    <a
+      href="https://www.facebook.com/sharer/sharer.php?u=https://url.io"
+      target="_blank"
     >
-      <title>
-        Share on Twitter
-      </title>
-      <path
-        d="ebf51b280a2c9ea0e632fdbf86606550"
-      />
-    </svg>
-  </a>
-  <a
-    href="https://www.facebook.com/sharer/sharer.php?u=https://url.io"
-    target="_blank"
-  >
-    <svg
-      aria-label="[title]"
-      height={18}
-      role="img"
-      viewBox="14 10 10.592460632324219 20.397258758544922"
-      width={9}
+      <svg
+        aria-label="[title]"
+        height={18}
+        role="img"
+        viewBox="14 10 10.592460632324219 20.397258758544922"
+        width={9}
+      >
+        <title>
+          Share on Facebook
+        </title>
+        <g>
+          <path
+            d="8f9b8bbdce60b96352628d3dbf6e37a0"
+          />
+        </g>
+      </svg>
+    </a>
+    <a
+      target={null}
     >
-      <title>
-        Share on Facebook
-      </title>
-      <g>
+      <svg
+        aria-label="[title]"
+        height={16}
+        role="img"
+        viewBox="0 0 15 15"
+        width={15}
+      >
+        <title>
+          Copy link to clipboard
+        </title>
         <path
-          d="8f9b8bbdce60b96352628d3dbf6e37a0"
+          d="f65af77b7574644b0c2e60934732135f"
         />
-      </g>
-    </svg>
-  </a>
-  <a
-    target={null}
-  >
-    <svg
-      aria-label="[title]"
-      height={16}
-      role="img"
-      viewBox="0 0 15 15"
-      width={15}
+      </svg>
+    </a>
+    Save
+    <a
+      target={null}
     >
-      <title>
-        Copy link to clipboard
-      </title>
-      <path
-        d="f65af77b7574644b0c2e60934732135f"
-      />
-    </svg>
-  </a>
-  Save
-  <a
-    target={null}
-  >
-    <svg
-      aria-label="[title]"
-      height={18}
-      role="img"
-      viewBox="0 0 18 18"
-      width={18}
+      <svg
+        aria-label="[title]"
+        height={18}
+        role="img"
+        viewBox="0 0 18 18"
+        width={18}
+      >
+        <title>
+          Save to My Articles
+        </title>
+        <path
+          d="305a4329b925735e74b6f9f97d84a7d7"
+        />
+      </svg>
+    </a>
+    <article
+      role="article"
     >
-      <title>
-        Save to My Articles
-      </title>
-      <path
-        d="305a4329b925735e74b6f9f97d84a7d7"
+      <img
+        alt="An image caption"
+        src="https://image.io?resize=100"
       />
-    </svg>
-  </a>
-  <aside
-    id="related-articles"
-  />
+      <svg
+        height="auto"
+        version="1.1"
+        viewBox="145 50 108 120"
+        width="100%"
+      >
+        <g>
+          <path
+            d="6a6c07166e9c40e4f62e57af2b507822"
+          />
+        </g>
+      </svg>
+      An image caption
+      THE IMAGE CREDITS
+      <a
+        href="https://link.io"
+        target="_blank"
+      >
+        Some Link
+      </a>
+      <p>
+        Some content
+      </p>
+      <blockquote
+        url="https://twitter.com/@AName"
+      >
+        “
+        <cite>
+          The pull quote content
+        </cite>
+        AName
+        , a text
+        <svg
+          aria-label="[title]"
+          height={10}
+          role="img"
+          viewBox="-354.2 -279.4 750 600"
+          width={11}
+        >
+          <title>
+            Twitter Icon
+          </title>
+          <path
+            d="ebf51b280a2c9ea0e632fdbf86606550"
+          />
+        </svg>
+        <a
+          href="https://twitter.com/@AName"
+          rel=" noopener noreferrer"
+          role="link"
+          target="_blank"
+        >
+          @AName
+        </a>
+      </blockquote>
+      <figure>
+        <video
+          controls={true}
+          data-account="57838016001"
+          data-application-id={true}
+          data-embed="default"
+          data-player="default"
+          data-video-id="4084164751001"
+          id="4084164751001-57838016001-3dbfe6b8-680b-11e9-b277-88f3d445182c"
+          poster="https://image.io"
+        />
+        <figcaption>
+          This is video caption
+        </figcaption>
+      </figure>
+      <nav>
+        <a
+          href="/topic/topic"
+          target={null}
+        >
+          Topic
+        </a>
+      </nav>
+      Share
+      <a
+        target={null}
+      >
+        <svg
+          aria-label="[title]"
+          height={16}
+          role="img"
+          viewBox="0 0 22 16"
+          width={22}
+        >
+          <title>
+            Share by email
+          </title>
+          <g>
+            <path
+              d="7662b27a9a5411e756afc5097a4eb94d"
+            />
+          </g>
+        </svg>
+      </a>
+      <a
+        href="https://twitter.com/intent/tweet?text=https://url.io"
+        target="_blank"
+      >
+        <svg
+          aria-label="[title]"
+          height={16}
+          role="img"
+          viewBox="-354.2 -279.4 750 600"
+          width={20}
+        >
+          <title>
+            Share on Twitter
+          </title>
+          <path
+            d="ebf51b280a2c9ea0e632fdbf86606550"
+          />
+        </svg>
+      </a>
+      <a
+        href="https://www.facebook.com/sharer/sharer.php?u=https://url.io"
+        target="_blank"
+      >
+        <svg
+          aria-label="[title]"
+          height={18}
+          role="img"
+          viewBox="14 10 10.592460632324219 20.397258758544922"
+          width={9}
+        >
+          <title>
+            Share on Facebook
+          </title>
+          <g>
+            <path
+              d="8f9b8bbdce60b96352628d3dbf6e37a0"
+            />
+          </g>
+        </svg>
+      </a>
+      <a
+        target={null}
+      >
+        <svg
+          aria-label="[title]"
+          height={16}
+          role="img"
+          viewBox="0 0 15 15"
+          width={15}
+        >
+          <title>
+            Copy link to clipboard
+          </title>
+          <path
+            d="f65af77b7574644b0c2e60934732135f"
+          />
+        </svg>
+      </a>
+      Save
+      <a
+        target={null}
+      >
+        <svg
+          aria-label="[title]"
+          height={18}
+          role="img"
+          viewBox="0 0 18 18"
+          width={18}
+        >
+          <title>
+            Save to My Articles
+          </title>
+          <path
+            d="305a4329b925735e74b6f9f97d84a7d7"
+          />
+        </svg>
+      </a>
+    </article>
+  </main>
 </article>
 `;

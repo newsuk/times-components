@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.36.0](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.35.1...@times-components/slice-layout@0.36.0) (2019-08-14)
+
+
+### Features
+
+* Secondary1AndColumnist new design for 768px ([#2182](https://github.com/newsuk/times-components/issues/2182)) ([37e6404](https://github.com/newsuk/times-components/commit/37e6404))
+
+
+
+
+
+## [0.35.1](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.35.0...@times-components/slice-layout@0.35.1) (2019-08-09)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+# [0.35.0](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.34.2...@times-components/slice-layout@0.35.0) (2019-08-08)
+
+
+### Features
+
+* REPLAT-7350 section item separator spacing for medium breakpoint ([#2167](https://github.com/newsuk/times-components/issues/2167)) ([6706d2f](https://github.com/newsuk/times-components/commit/6706d2f))
+
+
+
+
+
+## [0.34.2](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.34.1...@times-components/slice-layout@0.34.2) (2019-08-07)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.34.1](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.34.0...@times-components/slice-layout@0.34.1) (2019-08-07)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
 # [0.34.0](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.33.1...@times-components/slice-layout@0.34.0) (2019-08-06)
 
 

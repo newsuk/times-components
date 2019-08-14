@@ -107,6 +107,7 @@ class RelatedArticleItem extends Component {
             contentContainerClass={contentContainerClass}
             highResSize={highResSize}
             imageContainerClass={imageContainerClass}
+            imageAccessibilityLabel={shortHeadline}
             imageRatio={imageRatio}
             imageStyle={imageStyle}
             imageUri={imageUri}

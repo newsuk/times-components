@@ -3,6 +3,62 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.151](https://github.com/newsuk/times-components/compare/@times-components/pages@2.0.150...@times-components/pages@2.0.151) (2019-08-14)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+## [2.0.150](https://github.com/newsuk/times-components/compare/@times-components/pages@2.0.149...@times-components/pages@2.0.150) (2019-08-09)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+## [2.0.149](https://github.com/newsuk/times-components/compare/@times-components/pages@2.0.148...@times-components/pages@2.0.149) (2019-08-09)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+## [2.0.148](https://github.com/newsuk/times-components/compare/@times-components/pages@2.0.147...@times-components/pages@2.0.148) (2019-08-08)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+## [2.0.147](https://github.com/newsuk/times-components/compare/@times-components/pages@2.0.146...@times-components/pages@2.0.147) (2019-08-08)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+## [2.0.146](https://github.com/newsuk/times-components/compare/@times-components/pages@2.0.145...@times-components/pages@2.0.146) (2019-08-07)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+## [2.0.145](https://github.com/newsuk/times-components/compare/@times-components/pages@2.0.144...@times-components/pages@2.0.145) (2019-08-07)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
 ## [2.0.144](https://github.com/newsuk/times-components/compare/@times-components/pages@2.0.143...@times-components/pages@2.0.144) (2019-08-06)
 
 **Note:** Version bump only for package @times-components/pages

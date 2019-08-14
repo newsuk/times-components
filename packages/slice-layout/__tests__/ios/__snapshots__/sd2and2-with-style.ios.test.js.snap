@@ -81,7 +81,7 @@ exports[`2. secondary two and two - medium 1`] = `
   style={
     Object {
       "flex": 1,
-      "marginHorizontal": 10,
+      "marginHorizontal": 20,
     }
   }
 >

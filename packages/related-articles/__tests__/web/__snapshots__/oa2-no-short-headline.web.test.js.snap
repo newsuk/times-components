@@ -25,6 +25,7 @@ exports[`1. no short headline 1`] = `
             <div>
               <Card
                 highResSize={null}
+                imageAccessibilityLabel=""
                 imageRatio={0.6135458167330677}
                 imageUri="https://crop23.io"
                 isReversed={true}

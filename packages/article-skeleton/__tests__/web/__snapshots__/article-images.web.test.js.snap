@@ -11,7 +11,9 @@ exports[`1. a primary image 1`] = `
         slotName="header"
       />
     </div>
-    <div>
+    <main
+      role="main"
+    >
       <div>
         <div>
           <div
@@ -36,7 +38,9 @@ exports[`1. a primary image 1`] = `
           </div>
         </div>
       </div>
-      <div>
+      <article
+        role="article"
+      >
         <div
           id="0"
         >
@@ -70,8 +74,8 @@ exports[`1. a primary image 1`] = `
           sharingEnabled={true}
           spotAccountId=""
         />
-      </div>
-    </div>
+      </article>
+    </main>
   </article>
 </div>
 `;
@@ -87,7 +91,9 @@ exports[`2. a fullwidth image 1`] = `
         slotName="header"
       />
     </div>
-    <div>
+    <main
+      role="main"
+    >
       <div>
         <div>
           <div
@@ -112,7 +118,9 @@ exports[`2. a fullwidth image 1`] = `
           </div>
         </div>
       </div>
-      <div>
+      <article
+        role="article"
+      >
         <div
           id="0"
         >
@@ -144,8 +152,8 @@ exports[`2. a fullwidth image 1`] = `
           sharingEnabled={true}
           spotAccountId=""
         />
-      </div>
-    </div>
+      </article>
+    </main>
   </article>
 </div>
 `;
@@ -161,7 +169,9 @@ exports[`3. a secondary image 1`] = `
         slotName="header"
       />
     </div>
-    <div>
+    <main
+      role="main"
+    >
       <div>
         <div>
           <div
@@ -186,7 +196,9 @@ exports[`3. a secondary image 1`] = `
           </div>
         </div>
       </div>
-      <div>
+      <article
+        role="article"
+      >
         <div
           id="0"
         >
@@ -220,8 +232,8 @@ exports[`3. a secondary image 1`] = `
           sharingEnabled={true}
           spotAccountId=""
         />
-      </div>
-    </div>
+      </article>
+    </main>
   </article>
 </div>
 `;
@@ -237,7 +249,9 @@ exports[`4. an inline image 1`] = `
         slotName="header"
       />
     </div>
-    <div>
+    <main
+      role="main"
+    >
       <div>
         <div>
           <div
@@ -262,7 +276,9 @@ exports[`4. an inline image 1`] = `
           </div>
         </div>
       </div>
-      <div>
+      <article
+        role="article"
+      >
         <div
           id="0"
         >
@@ -296,8 +312,8 @@ exports[`4. an inline image 1`] = `
           sharingEnabled={true}
           spotAccountId=""
         />
-      </div>
-    </div>
+      </article>
+    </main>
   </article>
 </div>
 `;

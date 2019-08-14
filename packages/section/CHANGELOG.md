@@ -3,6 +3,57 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.3](https://github.com/newsuk/times-components/compare/@times-components/section@1.2.2...@times-components/section@1.2.3) (2019-08-14)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
+## [1.2.2](https://github.com/newsuk/times-components/compare/@times-components/section@1.2.1...@times-components/section@1.2.2) (2019-08-09)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
+## [1.2.1](https://github.com/newsuk/times-components/compare/@times-components/section@1.2.0...@times-components/section@1.2.1) (2019-08-08)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
+# [1.2.0](https://github.com/newsuk/times-components/compare/@times-components/section@1.1.40...@times-components/section@1.2.0) (2019-08-08)
+
+
+### Features
+
+* REPLAT-7350 section item separator spacing for medium breakpoint ([#2167](https://github.com/newsuk/times-components/issues/2167)) ([6706d2f](https://github.com/newsuk/times-components/commit/6706d2f))
+
+
+
+
+
+## [1.1.40](https://github.com/newsuk/times-components/compare/@times-components/section@1.1.39...@times-components/section@1.1.40) (2019-08-07)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
+## [1.1.39](https://github.com/newsuk/times-components/compare/@times-components/section@1.1.38...@times-components/section@1.1.39) (2019-08-07)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
 ## [1.1.38](https://github.com/newsuk/times-components/compare/@times-components/section@1.1.37...@times-components/section@1.1.38) (2019-08-06)
 
 **Note:** Version bump only for package @times-components/section

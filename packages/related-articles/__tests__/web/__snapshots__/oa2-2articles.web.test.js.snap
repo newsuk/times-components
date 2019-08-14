@@ -25,6 +25,7 @@ exports[`1. one opinion and one support related article 1`] = `
             <div>
               <Card
                 highResSize={null}
+                imageAccessibilityLabel="First Short Headline"
                 imageRatio={0.6135458167330677}
                 imageUri="https://crop23-1.io"
                 isReversed={true}
@@ -98,6 +99,7 @@ exports[`1. one opinion and one support related article 1`] = `
               <div>
                 <Card
                   highResSize={null}
+                  imageAccessibilityLabel="Second Short Headline"
                   imageRatio={1.7777777777777777}
                   imageUri="https://crop169-2.io"
                   isReversed={false}

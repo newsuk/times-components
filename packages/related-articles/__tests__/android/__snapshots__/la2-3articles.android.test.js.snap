@@ -24,6 +24,7 @@ exports[`1. one lead and two support related articles 1`] = `
           <View>
             <Card
               highResSize={null}
+              imageAccessibilityLabel="First Short Headline"
               imageRatio={1.7777777777777777}
               imageUri="https://crop169-1.io"
               isReversed={false}
@@ -79,6 +80,7 @@ exports[`1. one lead and two support related articles 1`] = `
           <View>
             <Card
               highResSize={null}
+              imageAccessibilityLabel="Second Short Headline"
               imageRatio={1.7777777777777777}
               imageUri="https://crop169-2.io"
               isReversed={false}
@@ -125,6 +127,7 @@ exports[`1. one lead and two support related articles 1`] = `
           <View>
             <Card
               highResSize={null}
+              imageAccessibilityLabel="Third Short Headline"
               imageRatio={1.7777777777777777}
               imageUri="https://crop169-3.io"
               isReversed={false}

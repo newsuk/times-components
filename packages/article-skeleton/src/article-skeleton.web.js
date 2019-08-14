@@ -117,7 +117,7 @@ class ArticleSkeleton extends Component {
                       style={adStyle}
                     />
                   </HeaderAdContainer>
-                  <MainContainer>
+                  <MainContainer accessibilityRole="main">
                     <HeaderContainer>
                       <Header width={articleWidth} />
                       {savingEnabled || sharingEnabled ? (
@@ -142,7 +142,7 @@ class ArticleSkeleton extends Component {
                         </UserState>
                       ) : null}
                     </HeaderContainer>
-                    <BodyContainer>
+                    <BodyContainer accessibilityRole="article">
                       <ArticleBody
                         content={newContent}
                         contextUrl={url}

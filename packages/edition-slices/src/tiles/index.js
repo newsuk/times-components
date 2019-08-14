@@ -33,7 +33,6 @@ export { default as TileW } from "./tile-w";
 export { default as TileX } from "./tile-x";
 export { default as TileY } from "./tile-y";
 export { default as TileZ } from "./tile-z";
-export { default as TileAA } from "./tile-aa";
 export { default as TileAB } from "./tile-ab";
 export { default as TileAG } from "./tile-ag";
 export { default as TileAH } from "./tile-ah";

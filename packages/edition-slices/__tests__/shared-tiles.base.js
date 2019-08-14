@@ -35,7 +35,6 @@ import {
   TileX,
   TileY,
   TileZ,
-  TileAA,
   TileAB,
   TileAG,
   TileAJ,
@@ -195,10 +194,6 @@ export default () => {
     {
       name: "tile z",
       test: () => testTile(TileZ)
-    },
-    {
-      name: "tile aa",
-      test: () => testTile(TileAA)
     },
     {
       name: "tile ab",

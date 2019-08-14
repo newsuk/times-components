@@ -2,6 +2,7 @@ import React, { PureComponent } from "react";
 import { View, Linking, Platform } from "react-native";
 import { WebView } from "react-native-webview";
 import { Viewport } from "@skele/components";
+import DeviceInfo from "react-native-device-info";
 import webviewEventCallbackSetup from "./utils/webview-event-callback-setup";
 import logger from "./utils/logger";
 import { propTypes, defaultProps } from "./dom-context-prop-types";
@@ -33,7 +34,14 @@ class DOMContext extends PureComponent {
   }
 
   componentDidMount() {
-    this.deviceInfo = {};
+    this.deviceInfo = {
+      applicationName: DeviceInfo.getApplicationName(),
+      buildNumber: DeviceInfo.getBuildNumber(),
+      bundleId: DeviceInfo.getBundleId(),
+      deviceId: DeviceInfo.getDeviceId(),
+      readableVersion: DeviceInfo.getReadableVersion(),
+      version: DeviceInfo.getVersion()
+    };
   }
 
   handleNavigationStateChange = ({ url }) => {
@@ -99,13 +107,13 @@ class DOMContext extends PureComponent {
   inViewport = () => {
     this.isVisible = true;
     this.webView.injectJavaScript(`
-        if (typeof unrulyViewportStatus === "function") {
-          unrulyViewportStatus(${JSON.stringify({
-            ...this.deviceInfo,
-            visible: true
-          })})
-        };
-      `);
+          if (typeof unrulyViewportStatus === "function") {
+            unrulyViewportStatus(${JSON.stringify({
+              ...this.deviceInfo,
+              visible: true
+            })})
+          };
+        `);
   };
 
   render() {

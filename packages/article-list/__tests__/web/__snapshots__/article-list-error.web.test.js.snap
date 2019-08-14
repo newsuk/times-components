@@ -46,7 +46,9 @@ exports[`1. page error 1`] = `
 `;
 
 exports[`2. article list 1`] = `
-<div>
+<main
+  role="main"
+>
   <div>
     <div>
       <div>
@@ -88,5 +90,5 @@ exports[`2. article list 1`] = `
       </div>
     </div>
   </div>
-</div>
+</main>
 `;

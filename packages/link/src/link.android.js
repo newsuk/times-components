@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 const Link = ({ children, linkStyle, onPress, disabled }) => (
   <TouchableNativeFeedback
-    delayPressIn={0}
+    delayPressIn={100}
     disabled={disabled}
     onPress={onPress}
     useForeground={TouchableNativeFeedback.canUseNativeForeground()}

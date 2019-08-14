@@ -4,7 +4,12 @@ import Image from "@times-components/image";
 import styles from "./styles";
 
 const AuthorProfileHeadImage = ({ uri }) => (
-  <Image aspectRatio={1} style={styles.authorPhoto} uri={uri} />
+  <Image
+    aspectRatio={1}
+    style={styles.authorPhoto}
+    uri={uri}
+    accessibilityLabel="author-image"
+  />
 );
 
 AuthorProfileHeadImage.propTypes = {

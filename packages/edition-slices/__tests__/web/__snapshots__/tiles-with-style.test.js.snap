@@ -70,6 +70,7 @@ exports[`1. tile a 1`] = `
   <Image
     aspectRatio={1.7777777777777777}
     className="IS3"
+    fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
 </Link>
@@ -228,6 +229,7 @@ exports[`3. tile c 1`] = `
   >
     <Image
       aspectRatio={1.7777777777777777}
+      fill={true}
       uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
     />
   </div>
@@ -307,6 +309,7 @@ exports[`4. tile d 1`] = `
   <Image
     aspectRatio={1.5}
     className="IS1"
+    fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
   />
   <div
@@ -385,6 +388,7 @@ exports[`5. tile e 1`] = `
   <Image
     aspectRatio={0.8}
     className="IS1"
+    fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1434%2C1792%2C627%2C0"
   />
   <div
@@ -567,6 +571,7 @@ exports[`7. tile g 1`] = `
   <Image
     aspectRatio={1}
     className="IS1"
+    fill={true}
     resizeMode="cover"
     rounded={true}
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
@@ -723,6 +728,7 @@ exports[`8. tile h 1`] = `
   <Image
     aspectRatio={0.6666666666666666}
     className="IS3"
+    fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1195%2C1792%2C747%2C0"
   />
 </Link>
@@ -770,6 +776,7 @@ exports[`9. tile i 1`] = `
   <Image
     aspectRatio={1.7777777777777777}
     className="IS1"
+    fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
   <div
@@ -846,6 +853,7 @@ exports[`10. tile j 1`] = `
   <Image
     aspectRatio={1.5}
     className="IS1"
+    fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
   />
   <div
@@ -921,6 +929,7 @@ exports[`11. tile k 1`] = `
   <Image
     aspectRatio={1.5}
     className="IS1"
+    fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
   />
   <div
@@ -1127,6 +1136,7 @@ exports[`14. tile n 1`] = `
   <Image
     aspectRatio={1}
     className="IS1"
+    fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
   />
   <div
@@ -1314,6 +1324,7 @@ exports[`16. tile p 1`] = `
   <Image
     aspectRatio={1}
     className="IS1"
+    fill={true}
     resizeMode="cover"
     rounded={true}
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
@@ -1392,6 +1403,7 @@ exports[`17. tile q 1`] = `
   <Image
     aspectRatio={1.5}
     className="IS1"
+    fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
   />
 </Link>
@@ -1458,6 +1470,7 @@ exports[`18. tile r 1`] = `
   </div>
   <Image
     aspectRatio={1.7777777777777777}
+    fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
 </Link>
@@ -1691,6 +1704,7 @@ exports[`21. tile t 1`] = `
   <Image
     aspectRatio={1.7777777777777777}
     className="IS1"
+    fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
   <div
@@ -1816,6 +1830,7 @@ exports[`22. tile u 1`] = `
   <Image
     aspectRatio={1.5}
     className="IS3"
+    fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
   />
 </Link>
@@ -1859,6 +1874,7 @@ exports[`23. tile v 1`] = `
   <Image
     aspectRatio={1.7777777777777777}
     className="IS1"
+    fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
   <div
@@ -1985,6 +2001,7 @@ exports[`24. tile w 1`] = `
   <Image
     aspectRatio={1.5}
     className="IS3"
+    fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
   />
 </Link>
@@ -2007,18 +2024,6 @@ exports[`25. tile x 1`] = `
   color: rgba(105,105,105,1.00);
 }
 
-.S4 {
-  color: rgba(105,105,105,1.00);
-  -ms-flex-wrap: wrap;
-  -webkit-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  font-family: TimesDigitalW04;
-  font-size: 14px;
-  line-height: 20px;
-  margin-bottom: 10px;
-}
-
 .IS1 {
   font-size: 40px;
   line-height: 40px;
@@ -2037,87 +2042,8 @@ exports[`25. tile x 1`] = `
   margin-top: 5px;
   margin-bottom: 5px;
 }
-</style>
 
-<Link
-  linkStyle={
-    Object {
-      "paddingHorizontal": "10px",
-      "paddingTop": "10px",
-    }
-  }
-  url="/article/123"
->
-  <div
-    className="css-view-1dbjc4n IS3"
-  >
-    <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
-    >
-      <ArticleLabel
-        color="#005B8D"
-        isVideo={false}
-        title="label"
-      />
-    </div>
-    <h3
-      aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
-      role="heading"
-    >
-      This is tile headline
-    </h3>
-    <h4
-      aria-level="4"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khp51w IS2 S3"
-      role="heading"
-    >
-      Three Conservative MPs resign
-    </h4>
-    <div
-      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S4"
-    >
-      <span
-        className="css-text-901oao css-textHasAncestor-16my406"
-      >
-        
-        ‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye.
-        ...
-      </span>
-    </div>
-    <ArticleFlags
-      flags={
-        Array [
-          Object {
-            "expiryTime": "2030-03-14T12:00:00.000Z",
-            "type": "EXCLUSIVE",
-          },
-        ]
-      }
-    />
-  </div>
-</Link>
-`;
-
-exports[`26. tile y 1`] = `
-<style>
-.S1 {
-  margin-bottom: 0px;
-}
-
-.S2 {
-  color: rgba(51,51,51,1.00);
-  font-family: TimesModern-Bold;
-  font-weight: 400;
-  margin-bottom: 5px;
-}
-
-.IS1 {
-  font-size: 30px;
-  line-height: 30px;
-}
-
-.IS2 {
+.IS4 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   -webkit-flex-shrink: 1;
@@ -2142,13 +2068,13 @@ exports[`26. tile y 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS2"
+    className="css-view-1dbjc4n IS4"
   >
     <div
       className="css-view-1dbjc4n"
     >
       <div
-        className="css-view-1dbjc4n"
+        className="css-view-1dbjc4n IS3"
       >
         <div
           className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
@@ -2166,6 +2092,13 @@ exports[`26. tile y 1`] = `
         >
           This is tile headline
         </h3>
+        <h4
+          aria-level="4"
+          className="css-reset-4rbku5 css-text-901oao r-color-1khp51w IS2 S3"
+          role="heading"
+        >
+          Three Conservative MPs resign
+        </h4>
         <ArticleFlags
           flags={
             Array [
@@ -2178,6 +2111,90 @@ exports[`26. tile y 1`] = `
         />
       </div>
     </div>
+  </div>
+</Link>
+`;
+
+exports[`26. tile y 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.S2 {
+  color: rgba(51,51,51,1.00);
+  font-family: TimesModern-Bold;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.S3 {
+  color: rgba(105,105,105,1.00);
+  -ms-flex-wrap: wrap;
+  -webkit-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-family: TimesDigitalW04;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.IS1 {
+  font-size: 30px;
+  line-height: 30px;
+}
+</style>
+
+<Link
+  linkStyle={
+    Object {
+      "paddingHorizontal": "10px",
+      "paddingTop": "10px",
+    }
+  }
+  url="/article/123"
+>
+  <div
+    className="css-view-1dbjc4n"
+  >
+    <div
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+    >
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
+    </div>
+    <h3
+      aria-level="3"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <div
+      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
+    >
+      <span
+        className="css-text-901oao css-textHasAncestor-16my406"
+      >
+        
+        ‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye.
+        ...
+      </span>
+    </div>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
   </div>
 </Link>
 `;
@@ -2241,86 +2258,13 @@ exports[`27. tile z 1`] = `
   </div>
   <Image
     aspectRatio={0.8}
+    fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1434%2C1792%2C627%2C0"
   />
 </Link>
 `;
 
-exports[`28. tile aa 1`] = `
-<style>
-.S1 {
-  margin-bottom: 0px;
-}
-
-.S2 {
-  color: rgba(51,51,51,1.00);
-  font-family: TimesModern-Bold;
-  font-weight: 400;
-  margin-bottom: 5px;
-}
-
-.IS1 {
-  padding-bottom: 5px;
-}
-
-.IS2 {
-  font-size: 30px;
-  line-height: 30px;
-}
-
-.IS3 {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-</style>
-
-<Link
-  linkStyle={
-    Object {
-      "paddingHorizontal": "10px",
-    }
-  }
-  url="/article/123"
->
-  <Image
-    aspectRatio={1.7777777777777777}
-    className="IS1"
-    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
-  />
-  <div
-    className="css-view-1dbjc4n IS3"
-  >
-    <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
-    >
-      <ArticleLabel
-        color="#005B8D"
-        isVideo={false}
-        title="label"
-      />
-    </div>
-    <h3
-      aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
-      role="heading"
-    >
-      This is tile headline
-    </h3>
-    <ArticleFlags
-      flags={
-        Array [
-          Object {
-            "expiryTime": "2030-03-14T12:00:00.000Z",
-            "type": "EXCLUSIVE",
-          },
-        ]
-      }
-    />
-  </div>
-</Link>
-`;
-
-exports[`29. tile ab 1`] = `
+exports[`28. tile ab 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2341,32 +2285,29 @@ exports[`29. tile ab 1`] = `
 }
 
 .IS1 {
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.IS2 {
   font-size: 30px;
   line-height: 30px;
 }
 
-.IS2 {
+.IS3 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   -webkit-flex-shrink: 1;
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  padding-right: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-left: 20px;
   width: 50%;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
   -ms-flex-preferred-size: 0%;
-}
-
-.IS3 {
-  flex-direction: column;
-  justify-content: flex-end;
-  padding-top: 10px;
-  width: 50%;
 }
 </style>
 
@@ -2375,12 +2316,19 @@ exports[`29. tile ab 1`] = `
     Object {
       "flexDirection": "row",
       "paddingHorizontal": "10px",
+      "paddingVertical": "10px",
     }
   }
   url="/article/123"
 >
+  <Image
+    aspectRatio={0.6666666666666666}
+    className="IS1"
+    fill={true}
+    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1195%2C1792%2C747%2C0"
+  />
   <div
-    className="css-view-1dbjc4n IS2"
+    className="css-view-1dbjc4n IS3"
   >
     <div
       className="css-view-1dbjc4n"
@@ -2399,7 +2347,7 @@ exports[`29. tile ab 1`] = `
         </div>
         <h3
           aria-level="3"
-          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
+          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
           role="heading"
         >
           This is tile headline
@@ -2431,15 +2379,10 @@ exports[`29. tile ab 1`] = `
       </div>
     </div>
   </div>
-  <Image
-    aspectRatio={0.6666666666666666}
-    className="IS3"
-    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1195%2C1792%2C747%2C0"
-  />
 </Link>
 `;
 
-exports[`30. tile ae 1`] = `
+exports[`29. tile ae 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2522,7 +2465,7 @@ exports[`30. tile ae 1`] = `
 </Link>
 `;
 
-exports[`31. tile ag 1`] = `
+exports[`30. tile ag 1`] = `
 <style>
 .S1 {
   color: rgba(51,51,51,1.00);
@@ -2581,7 +2524,7 @@ exports[`31. tile ag 1`] = `
 </Link>
 `;
 
-exports[`32. tile aj 1`] = `
+exports[`31. tile aj 1`] = `
 <style>
 .S1 {
   color: rgba(51,51,51,1.00);
@@ -2634,12 +2577,13 @@ exports[`32. tile aj 1`] = `
     aspectRatio={1.5}
     className="IS3"
     disablePlaceholder={true}
+    fill={true}
     uri="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
   />
 </Link>
 `;
 
-exports[`33. tile ak 1`] = `
+exports[`32. tile ak 1`] = `
 <style>
 .S1 {
   color: rgba(51,51,51,1.00);
@@ -2695,12 +2639,13 @@ exports[`33. tile ak 1`] = `
     aspectRatio={1.5}
     className="IS3"
     disablePlaceholder={true}
+    fill={true}
     uri="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
   />
 </Link>
 `;
 
-exports[`34. tile al 1`] = `
+exports[`33. tile al 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2747,6 +2692,7 @@ exports[`34. tile al 1`] = `
   <Image
     aspectRatio={1.5}
     className="IS1"
+    fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
   />
   <div
@@ -2790,7 +2736,7 @@ exports[`34. tile al 1`] = `
 </Link>
 `;
 
-exports[`35. tile am 1`] = `
+exports[`34. tile am 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2841,6 +2787,7 @@ exports[`35. tile am 1`] = `
   <Image
     aspectRatio={1.7777777777777777}
     className="IS1"
+    fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
   <div
@@ -2884,7 +2831,7 @@ exports[`35. tile am 1`] = `
 </Link>
 `;
 
-exports[`36. tile an 1`] = `
+exports[`35. tile an 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2940,6 +2887,7 @@ exports[`36. tile an 1`] = `
   <Image
     aspectRatio={1}
     className="IS1"
+    fill={true}
     resizeMode="cover"
     rounded={true}
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
@@ -2988,7 +2936,7 @@ exports[`36. tile an 1`] = `
 </Link>
 `;
 
-exports[`37. tile ap 1`] = `
+exports[`36. tile ap 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3033,6 +2981,7 @@ exports[`37. tile ap 1`] = `
   <Image
     aspectRatio={1}
     className="IS1"
+    fill={true}
     resizeMode="cover"
     rounded={true}
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
@@ -3070,7 +3019,7 @@ exports[`37. tile ap 1`] = `
 </Link>
 `;
 
-exports[`38. tile ad 1`] = `
+exports[`37. tile ad 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3111,6 +3060,7 @@ exports[`38. tile ad 1`] = `
   <Image
     aspectRatio={1.5}
     className="IS1"
+    fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
   />
   <div
@@ -3146,7 +3096,7 @@ exports[`38. tile ad 1`] = `
 </Link>
 `;
 
-exports[`39. tile ac 1`] = `
+exports[`38. tile ac 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3208,6 +3158,7 @@ exports[`39. tile ac 1`] = `
   <Image
     aspectRatio={1.7777777777777777}
     className="IS1"
+    fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
   <div
@@ -3243,7 +3194,7 @@ exports[`39. tile ac 1`] = `
 </Link>
 `;
 
-exports[`40. tile aq 1`] = `
+exports[`39. tile aq 1`] = `
 <style>
 .S1 {
   margin-bottom: 10px;
@@ -3298,6 +3249,7 @@ exports[`40. tile aq 1`] = `
   >
     <Image
       aspectRatio={1.7777777777777777}
+      fill={true}
       uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
     />
   </div>
@@ -3342,7 +3294,7 @@ exports[`40. tile aq 1`] = `
 </Link>
 `;
 
-exports[`41. tile ar 1`] = `
+exports[`40. tile ar 1`] = `
 <style>
 .S1 {
   margin-bottom: 10px;
@@ -3413,6 +3365,7 @@ exports[`41. tile ar 1`] = `
   >
     <Image
       aspectRatio={1.7777777777777777}
+      fill={true}
       uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
     />
   </div>
@@ -3468,7 +3421,7 @@ exports[`41. tile ar 1`] = `
 </Link>
 `;
 
-exports[`42. tile as 1`] = `
+exports[`41. tile as 1`] = `
 <style>
 .S1 {
   margin-bottom: 10px;
@@ -3522,6 +3475,7 @@ exports[`42. tile as 1`] = `
   >
     <Image
       aspectRatio={1.5}
+      fill={true}
       uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
     />
   </div>

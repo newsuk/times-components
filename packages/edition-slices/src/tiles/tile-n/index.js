@@ -30,6 +30,7 @@ const TileN = ({ isDarkStar, onPress, tile, breakpoint }) => {
         relativeVerticalOffset={crop.relativeVerticalOffset}
         style={styles.imageContainer}
         uri={crop.url}
+        fill
       />
       <TileSummary
         flagColour={styles.flagColour}

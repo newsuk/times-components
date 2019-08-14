@@ -552,7 +552,7 @@ exports[`full article with style 1`] = `
         className="IS1"
       />
     </div>
-    <div
+    <main
       className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
     >
       <div
@@ -649,7 +649,7 @@ exports[`full article with style 1`] = `
           </div>
         </div>
       </div>
-      <div
+      <article
         className="c17 responsiveweb__BodyContainer-sc-1exejum-3 c17 css-view-1dbjc4n"
       >
         <div>
@@ -730,8 +730,8 @@ exports[`full article with style 1`] = `
           </div>
         </div>
         <ArticleExtras />
-      </div>
-    </div>
+      </article>
+    </main>
   </article>
 </div>
 `;
@@ -1296,7 +1296,7 @@ exports[`full article with style in the culture magazine 1`] = `
         className="IS1"
       />
     </div>
-    <div
+    <main
       className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
     >
       <div
@@ -1393,7 +1393,7 @@ exports[`full article with style in the culture magazine 1`] = `
           </div>
         </div>
       </div>
-      <div
+      <article
         className="c17 responsiveweb__BodyContainer-sc-1exejum-3 c17 css-view-1dbjc4n"
       >
         <div>
@@ -1474,8 +1474,8 @@ exports[`full article with style in the culture magazine 1`] = `
           </div>
         </div>
         <ArticleExtras />
-      </div>
-    </div>
+      </article>
+    </main>
   </article>
 </div>
 `;
@@ -2041,7 +2041,7 @@ exports[`full article with style in the style magazine 1`] = `
         className="IS1"
       />
     </div>
-    <div
+    <main
       className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
     >
       <div
@@ -2138,7 +2138,7 @@ exports[`full article with style in the style magazine 1`] = `
           </div>
         </div>
       </div>
-      <div
+      <article
         className="c17 responsiveweb__BodyContainer-sc-1exejum-3 c17 css-view-1dbjc4n"
       >
         <div>
@@ -2219,8 +2219,8 @@ exports[`full article with style in the style magazine 1`] = `
           </div>
         </div>
         <ArticleExtras />
-      </div>
-    </div>
+      </article>
+    </main>
   </article>
 </div>
 `;
@@ -2785,7 +2785,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
         className="IS1"
       />
     </div>
-    <div
+    <main
       className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
     >
       <div
@@ -2882,7 +2882,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
           </div>
         </div>
       </div>
-      <div
+      <article
         className="c17 responsiveweb__BodyContainer-sc-1exejum-3 c17 css-view-1dbjc4n"
       >
         <div>
@@ -2963,8 +2963,8 @@ exports[`full article with style in the sunday times magazine 1`] = `
           </div>
         </div>
         <ArticleExtras />
-      </div>
-    </div>
+      </article>
+    </main>
   </article>
 </div>
 `;
