@@ -45,7 +45,6 @@ const mediumBreakpointStyles = {
   star: verticalStyles,
   strapline: {
     color: colours.functional.primary,
-    fontFamily: "TimesModern-Regular",
     fontSize: 16,
     lineHeight: 19,
     textAlign: "center",
