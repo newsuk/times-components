@@ -7,8 +7,8 @@ const styles = {
   container: {
     flex: 1,
     flexDirection: "row",
-    paddingRight: spacing(6),
-    paddingTop: spacing(3)
+    paddingHorizontal: spacing(6),
+    paddingVertical: spacing(1)
   },
   lead: {
     width: "33.3%"

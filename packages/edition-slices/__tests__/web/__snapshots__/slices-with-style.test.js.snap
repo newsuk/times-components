@@ -2763,7 +2763,9 @@ exports[`15. comment lead and cartoon 1`] = `
   -ms-flex-direction: row;
   flex-direction: row;
   padding-right: 30px;
-  padding-top: 15px;
+  padding-left: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;

@@ -23,9 +23,8 @@ const styles = (breakpoint = editionBreakpoints.medium) => ({
   },
   container: {
     alignItems: "center",
-    paddingBottom: spacing(3),
-    paddingHorizontal: spacing(4),
-    paddingTop: spacing(2)
+    marginRight: spacing(2),
+    paddingVertical: spacing(2)
   },
   headline: {
     color: colours.functional.brandColour,
@@ -37,7 +36,7 @@ const styles = (breakpoint = editionBreakpoints.medium) => ({
   },
   imageContainer: {
     overflow: "hidden",
-    width: "10%"
+    width: "40%"
   },
   star: {
     ...verticalStyles.starButton,
