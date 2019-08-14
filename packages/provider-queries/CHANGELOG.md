@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.7.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.6.2...@times-components/provider-queries@2.7.0) (2019-08-14)
+
+
+### Features
+
+* update LeadTwoNoPicAndTwoSlice ([#2179](https://github.com/newsuk/times-components/issues/2179)) ([fe2558e](https://github.com/newsuk/times-components/commit/fe2558e))
+
+
+
+
+
 ## [2.6.2](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.6.1...@times-components/provider-queries@2.6.2) (2019-08-09)
 
 **Note:** Version bump only for package @times-components/provider-queries

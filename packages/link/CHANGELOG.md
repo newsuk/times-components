@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.4.38](https://github.com/newsuk/times-components/compare/@times-components/link@3.4.37...@times-components/link@3.4.38) (2019-08-14)
+
+
+### Bug Fixes
+
+* REPLAT-7036 delay android animation when scrolling ([#2177](https://github.com/newsuk/times-components/issues/2177)) ([d6d51bf](https://github.com/newsuk/times-components/commit/d6d51bf))
+
+
+
+
+
 ## [3.4.37](https://github.com/newsuk/times-components/compare/@times-components/link@3.4.36...@times-components/link@3.4.37) (2019-08-09)
 
 **Note:** Version bump only for package @times-components/link

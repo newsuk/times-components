@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.73.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.72.2...@times-components/edition-slices@0.73.0) (2019-08-14)
+
+
+### Features
+
+* Secondary1AndColumnist new design for 768px ([#2182](https://github.com/newsuk/times-components/issues/2182)) ([37e6404](https://github.com/newsuk/times-components/commit/37e6404))
+* update LeadTwoNoPicAndTwoSlice ([#2179](https://github.com/newsuk/times-components/issues/2179)) ([fe2558e](https://github.com/newsuk/times-components/commit/fe2558e))
+
+
+
+
+
 ## [0.72.2](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.72.1...@times-components/edition-slices@0.72.2) (2019-08-09)
 
 **Note:** Version bump only for package @times-components/edition-slices

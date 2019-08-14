@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.36.0](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.35.1...@times-components/slice-layout@0.36.0) (2019-08-14)
+
+
+### Features
+
+* Secondary1AndColumnist new design for 768px ([#2182](https://github.com/newsuk/times-components/issues/2182)) ([37e6404](https://github.com/newsuk/times-components/commit/37e6404))
+
+
+
+
+
 ## [0.35.1](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.35.0...@times-components/slice-layout@0.35.1) (2019-08-09)
 
 **Note:** Version bump only for package @times-components/slice-layout
