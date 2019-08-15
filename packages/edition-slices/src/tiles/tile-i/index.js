@@ -26,7 +26,6 @@ const TileI = ({ onPress, tile }) => {
       />
       <TileSummary
         headlineStyle={styles.headline}
-        starStyle={styles.star}
         style={styles.summaryContainer}
         tile={tile}
         centeredStar

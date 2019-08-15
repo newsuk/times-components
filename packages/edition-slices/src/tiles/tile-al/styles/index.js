@@ -13,10 +13,10 @@ const styles = {
     })
   },
   imageContainer: {
-    width: "100%"
+    width: "100%",
+    marginBottom: spacing(2)
   },
   summaryContainer: {
-    paddingTop: spacing(2),
     lineHeight: 1.43,
     width: "100%",
     ...fontFactory({

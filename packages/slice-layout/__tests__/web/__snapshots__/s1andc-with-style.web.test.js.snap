@@ -16,12 +16,12 @@ exports[`1. secondary one and columnist - small 1`] = `
       "flexDirection": "row",
       "flexGrow": 1,
       "flexShrink": 1,
+      "marginLeft": "20px",
+      "marginRight": "20px",
       "msFlexDirection": "row",
       "msFlexNegative": 1,
       "msFlexPositive": 1,
       "msFlexPreferredSize": "0%",
-      "paddingLeft": "20px",
-      "paddingRight": "20px",
     }
   }
 >
@@ -52,8 +52,8 @@ exports[`1. secondary one and columnist - small 1`] = `
         "borderRightWidth": "1px",
         "borderTopColor": "rgba(219,219,219,1.00)",
         "borderTopStyle": "solid",
-        "marginBottom": "10px",
-        "marginTop": "10px",
+        "marginBottom": "15px",
+        "marginTop": "15px",
       }
     }
   />
@@ -90,12 +90,12 @@ exports[`2. secondary one and columnist - medium 1`] = `
       "flexDirection": "row",
       "flexGrow": 1,
       "flexShrink": 1,
+      "marginLeft": "20px",
+      "marginRight": "20px",
       "msFlexDirection": "row",
       "msFlexNegative": 1,
       "msFlexPositive": 1,
       "msFlexPreferredSize": "0%",
-      "paddingLeft": "20px",
-      "paddingRight": "20px",
     }
   }
 >
@@ -126,8 +126,8 @@ exports[`2. secondary one and columnist - medium 1`] = `
         "borderRightWidth": "1px",
         "borderTopColor": "rgba(219,219,219,1.00)",
         "borderTopStyle": "solid",
-        "marginBottom": "10px",
-        "marginTop": "10px",
+        "marginBottom": "15px",
+        "marginTop": "15px",
       }
     }
   />

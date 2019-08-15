@@ -30,18 +30,21 @@ const TileAB = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
         uri={crop.url}
         fill
       />
-      <WithoutWhiteSpace
-        styles={styles.summaryContainer}
-        render={whiteSpaceHeight => (
-          <TileSummary
-            bylines={tile.article.bylines}
-            headlineStyle={styles.headline}
-            summary={getTileSummary(tile, 800)}
-            tile={tile}
-            whiteSpaceHeight={whiteSpaceHeight}
-          />
-        )}
-      />
+      <View style={styles.summaryContainer}>
+        <WithoutWhiteSpace
+          render={whiteSpaceHeight => (
+            <TileSummary
+              bylines={tile.article.bylines}
+              headlineStyle={styles.headline}
+              summary={getTileSummary(tile, 800)}
+              tile={tile}
+              whiteSpaceHeight={whiteSpaceHeight}
+              withStar={false}
+            />
+          )}
+        />
+        <PositionedTileStar articleId={tile.article.id} />
+      </View>
     </TileLink>
   );
 };

@@ -22,6 +22,7 @@ const SecondaryOneAndColumnistSlice = ({
         { style: styles.columnistContainer, tile: columnist },
         { style: styles.secondaryContainer, tile: secondary }
       ]}
+      colSeparatorStyle={styles.colSeparator}
     />
   );
 };

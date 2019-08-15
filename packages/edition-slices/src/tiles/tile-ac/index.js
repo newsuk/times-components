@@ -15,12 +15,7 @@ const TileAC = ({ onPress, tile, breakpoint }) => {
   const crop = getTileImage(tile, "crop169");
 
   return (
-    <TileLink
-      onPress={onPress}
-      style={styles.container}
-      tile={tile}
-      starStyle={styles.star}
-    >
+    <TileLink onPress={onPress} style={styles.container} tile={tile}>
       <Image
         aspectRatio={16 / 9}
         relativeWidth={crop.relativeWidth}

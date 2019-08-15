@@ -1119,8 +1119,8 @@ exports[`10. secondary one and columnist - medium 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .IS3 {
@@ -1137,8 +1137,8 @@ exports[`10. secondary one and columnist - medium 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-right: 20px;
-  padding-left: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -2990,8 +2990,8 @@ exports[`25. secondary one and columnist - wide 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .IS3 {
@@ -3008,8 +3008,8 @@ exports[`25. secondary one and columnist - wide 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-right: 20px;
-  padding-left: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -4861,8 +4861,8 @@ exports[`40. secondary one and columnist - huge 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .IS3 {
@@ -4879,8 +4879,8 @@ exports[`40. secondary one and columnist - huge 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-right: 20px;
-  padding-left: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;

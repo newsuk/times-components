@@ -6,7 +6,7 @@ exports[`1. secondary one and columnist - small 1`] = `
     Object {
       "flex": 1,
       "flexDirection": "row",
-      "paddingHorizontal": 20,
+      "marginHorizontal": 20,
     }
   }
 >
@@ -27,7 +27,7 @@ exports[`1. secondary one and columnist - small 1`] = `
         "borderColor": "#DBDBDB",
         "borderRightWidth": 1,
         "borderStyle": "solid",
-        "marginVertical": 10,
+        "marginVertical": 15,
       }
     }
   />
@@ -51,7 +51,7 @@ exports[`2. secondary one and columnist - medium 1`] = `
     Object {
       "flex": 1,
       "flexDirection": "row",
-      "paddingHorizontal": 20,
+      "marginHorizontal": 20,
     }
   }
 >
@@ -72,7 +72,7 @@ exports[`2. secondary one and columnist - medium 1`] = `
         "borderColor": "#DBDBDB",
         "borderRightWidth": 1,
         "borderStyle": "solid",
-        "marginVertical": 10,
+        "marginVertical": 15,
       }
     }
   />

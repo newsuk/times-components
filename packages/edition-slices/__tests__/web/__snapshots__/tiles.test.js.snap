@@ -735,9 +735,8 @@ exports[`18. tile r 1`] = `
 <Link
   linkStyle={
     Object {
-      "paddingBottom": "15px",
-      "paddingHorizontal": "30px",
-      "paddingTop": "15px",
+      "flex": 1,
+      "padding": "10px",
     }
   }
   url="/article/123"
@@ -1087,8 +1086,7 @@ exports[`26. tile y 1`] = `
 <Link
   linkStyle={
     Object {
-      "paddingHorizontal": "10px",
-      "paddingTop": "10px",
+      "padding": "10px",
     }
   }
   url="/article/123"
@@ -1132,7 +1130,7 @@ exports[`27. tile z 1`] = `
 <Link
   linkStyle={
     Object {
-      "margin": "10px",
+      "padding": "10px",
     }
   }
   url="/article/123"

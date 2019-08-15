@@ -112,15 +112,12 @@ class LeadersSlice extends Component {
 
   render() {
     return (
-      <View style={styles.container}>
-        {renderHead()}
-        <ResponsiveSlice
-          renderHuge={this.renderWide}
-          renderMedium={this.renderSmall}
-          renderSmall={this.renderSmall}
-          renderWide={this.renderWide}
-        />
-      </View>
+      <ResponsiveSlice
+        renderHuge={this.renderWide}
+        renderMedium={this.renderSmall}
+        renderSmall={this.renderSmall}
+        renderWide={this.renderWide}
+      />
     );
   }
 }
