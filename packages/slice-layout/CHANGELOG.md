@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.37.0](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.36.0...@times-components/slice-layout@0.37.0) (2019-08-15)
+
+
+### Features
+
+* (REPLAT-7091) redesign dailyregister slice for medium breakpoint ([#2181](https://github.com/newsuk/times-components/issues/2181)) ([ac6e1c0](https://github.com/newsuk/times-components/commit/ac6e1c0))
+* REPLAT-7068 Leaders slice redesigned for medium breakpoint ([#2178](https://github.com/newsuk/times-components/issues/2178)) ([cec48c7](https://github.com/newsuk/times-components/commit/cec48c7))
+* REPLAT-7421 lead1and4 styling tablet ([#2183](https://github.com/newsuk/times-components/issues/2183)) ([f0eac52](https://github.com/newsuk/times-components/commit/f0eac52))
+
+
+
+
+
 # [0.36.0](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.35.1...@times-components/slice-layout@0.36.0) (2019-08-14)
 
 
