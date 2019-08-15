@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`the tree has the correct structure and display names 1`] = `
+<ResponsiveStyled(View)>
+  <Styled(View)
+    @times-components/responsive-styled-components-native/screen-width={400}
+  >
+    <StyledNativeComponent
+      @times-components/responsive-styled-components-native/screen-width={400}
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "displayName": "Styled(View)",
+          "inlineStyle": InlineStyle {
+            "rules": Array [],
+          },
+          "render": [Function],
+          "styledComponentId": "StyledNativeComponent",
+          "target": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "displayName": "ResponsiveTypeWrapper(View)",
+            "render": [Function],
+          },
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+    >
+      <ResponsiveTypeWrapper(View)
+        @times-components/responsive-styled-components-native/screen-width={400}
+      >
+        <View>
+          <div />
+        </View>
+      </ResponsiveTypeWrapper(View)>
+    </StyledNativeComponent>
+  </Styled(View)>
+</ResponsiveStyled(View)>
+`;
