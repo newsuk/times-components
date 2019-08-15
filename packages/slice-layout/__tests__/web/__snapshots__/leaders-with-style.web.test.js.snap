@@ -4,97 +4,52 @@ exports[`1. leaders - small 1`] = `
 <div
   style={
     Object {
-      "WebkitBoxDirection": "normal",
-      "WebkitBoxFlex": 1,
-      "WebkitBoxOrient": "horizontal",
-      "WebkitFlexBasis": "0%",
-      "WebkitFlexDirection": "row",
-      "WebkitFlexGrow": 1,
-      "WebkitFlexShrink": 1,
-      "flexBasis": "0%",
-      "flexDirection": "row",
-      "flexGrow": 1,
-      "flexShrink": 1,
-      "msFlexDirection": "row",
-      "msFlexNegative": 1,
-      "msFlexPositive": 1,
-      "msFlexPreferredSize": "0%",
       "paddingBottom": "5px",
     }
   }
 >
-  <div
-    style={
-      Object {
-        "paddingLeft": "10px",
-        "paddingRight": "10px",
-        "width": "33%",
-      }
-    }
-  >
-    <div>
-      leader-2
-    </div>
+  <div>
+    leader-1
   </div>
   <div
     style={
       Object {
         "borderBottomColor": "rgba(219,219,219,1.00)",
         "borderBottomStyle": "solid",
+        "borderBottomWidth": "1px",
         "borderLeftColor": "rgba(219,219,219,1.00)",
         "borderLeftStyle": "solid",
         "borderRightColor": "rgba(219,219,219,1.00)",
         "borderRightStyle": "solid",
-        "borderRightWidth": "1px",
         "borderTopColor": "rgba(219,219,219,1.00)",
         "borderTopStyle": "solid",
-        "marginBottom": "10px",
-        "marginTop": "10px",
+        "marginLeft": "10px",
+        "marginRight": "10px",
       }
     }
   />
-  <div
-    style={
-      Object {
-        "paddingLeft": "10px",
-        "paddingRight": "10px",
-        "width": "33%",
-      }
-    }
-  >
-    <div>
-      leader-1
-    </div>
+  <div>
+    leader-2
   </div>
   <div
     style={
       Object {
         "borderBottomColor": "rgba(219,219,219,1.00)",
         "borderBottomStyle": "solid",
+        "borderBottomWidth": "1px",
         "borderLeftColor": "rgba(219,219,219,1.00)",
         "borderLeftStyle": "solid",
         "borderRightColor": "rgba(219,219,219,1.00)",
         "borderRightStyle": "solid",
-        "borderRightWidth": "1px",
         "borderTopColor": "rgba(219,219,219,1.00)",
         "borderTopStyle": "solid",
-        "marginBottom": "10px",
-        "marginTop": "10px",
+        "marginLeft": "10px",
+        "marginRight": "10px",
       }
     }
   />
-  <div
-    style={
-      Object {
-        "paddingLeft": "10px",
-        "paddingRight": "10px",
-        "width": "33%",
-      }
-    }
-  >
-    <div>
-      leader-3
-    </div>
+  <div>
+    leader-3
   </div>
 </div>
 `;
@@ -118,15 +73,16 @@ exports[`2. leaders - medium 1`] = `
       "msFlexNegative": 1,
       "msFlexPositive": 1,
       "msFlexPreferredSize": "0%",
-      "paddingBottom": "5px",
+      "paddingLeft": "5px",
+      "paddingRight": "5px",
     }
   }
 >
   <div
     style={
       Object {
-        "paddingLeft": "10px",
-        "paddingRight": "10px",
+        "paddingLeft": "15px",
+        "paddingRight": "15px",
         "width": "33%",
       }
     }
@@ -147,16 +103,16 @@ exports[`2. leaders - medium 1`] = `
         "borderRightWidth": "1px",
         "borderTopColor": "rgba(219,219,219,1.00)",
         "borderTopStyle": "solid",
-        "marginBottom": "10px",
-        "marginTop": "10px",
+        "marginBottom": "30px",
+        "marginTop": "30px",
       }
     }
   />
   <div
     style={
       Object {
-        "paddingLeft": "10px",
-        "paddingRight": "10px",
+        "paddingLeft": "15px",
+        "paddingRight": "15px",
         "width": "33%",
       }
     }
@@ -177,16 +133,16 @@ exports[`2. leaders - medium 1`] = `
         "borderRightWidth": "1px",
         "borderTopColor": "rgba(219,219,219,1.00)",
         "borderTopStyle": "solid",
-        "marginBottom": "10px",
-        "marginTop": "10px",
+        "marginBottom": "30px",
+        "marginTop": "30px",
       }
     }
   />
   <div
     style={
       Object {
-        "paddingLeft": "10px",
-        "paddingRight": "10px",
+        "paddingLeft": "15px",
+        "paddingRight": "15px",
         "width": "33%",
       }
     }

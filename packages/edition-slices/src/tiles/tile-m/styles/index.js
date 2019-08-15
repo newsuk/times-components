@@ -1,7 +1,12 @@
-import { colours, fonts, spacing } from "@times-components/styleguide";
+import {
+  colours,
+  fonts,
+  spacing,
+  editionBreakpoints
+} from "@times-components/styleguide";
 import { verticalStyles } from "../../shared/styles";
 
-const styles = {
+const smallBreakpointStyles = {
   container: {
     paddingBottom: spacing(2)
   },
@@ -24,4 +29,30 @@ const styles = {
   }
 };
 
-export default styles;
+const mediumBreakpointStyles = {
+  container: {
+    paddingBottom: spacing(6)
+  },
+  headline: {
+    color: colours.functional.brandColour,
+    fontFamily: fonts.headline,
+    fontSize: 20,
+    lineHeight: 20,
+    marginBottom: spacing(1),
+    marginTop: spacing(6),
+    textAlign: "center"
+  },
+  star: verticalStyles,
+  strapline: {
+    color: colours.functional.primary,
+    fontSize: 16,
+    lineHeight: 19,
+    textAlign: "center",
+    paddingBottom: spacing(1)
+  }
+};
+
+export default breakpoint =>
+  breakpoint === editionBreakpoints.medium
+    ? mediumBreakpointStyles
+    : smallBreakpointStyles;

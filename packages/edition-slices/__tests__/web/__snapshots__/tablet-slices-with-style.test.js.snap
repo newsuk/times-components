@@ -567,6 +567,11 @@ exports[`6. leaders slice - medium 1`] = `
 }
 
 .IS11 {
+  background-color: rgba(240,240,240,1.00);
+  padding-top: 20px;
+}
+
+.IS12 {
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
@@ -575,37 +580,32 @@ exports[`6. leaders slice - medium 1`] = `
   width: 1366px;
   -ms-flex-item-align: center;
 }
-
-.IS12 {
-  background-color: rgba(240,240,240,1.00);
-  padding-top: 20px;
-}
 </style>
 
 <div
   className="css-view-1dbjc4n IS12"
 >
   <div
-    className="css-view-1dbjc4n IS4"
-  >
-    <Image
-      aspectRatio={5.74}
-      className="IS1"
-      uri="https://www.thetimes.co.uk/d/img/leaders-masthead-d17db00289.png"
-    />
-    <div
-      className="css-view-1dbjc4n IS3"
-    >
-      <div
-        className="css-text-901oao IS2"
-      >
-         Leading Articles 
-      </div>
-    </div>
-  </div>
-  <div
     className="css-view-1dbjc4n IS11"
   >
+    <div
+      className="css-view-1dbjc4n IS4"
+    >
+      <Image
+        aspectRatio={5.74}
+        className="IS1"
+        uri="https://www.thetimes.co.uk/d/img/leaders-masthead-d17db00289.png"
+      />
+      <div
+        className="css-view-1dbjc4n IS3"
+      >
+        <div
+          className="css-text-901oao IS2"
+        >
+           Leading Articles 
+        </div>
+      </div>
+    </div>
     <div
       className="css-view-1dbjc4n IS10"
     >
@@ -2385,6 +2385,11 @@ exports[`21. leaders slice - wide 1`] = `
 }
 
 .IS11 {
+  background-color: rgba(240,240,240,1.00);
+  padding-top: 20px;
+}
+
+.IS12 {
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
@@ -2393,37 +2398,32 @@ exports[`21. leaders slice - wide 1`] = `
   width: 1366px;
   -ms-flex-item-align: center;
 }
-
-.IS12 {
-  background-color: rgba(240,240,240,1.00);
-  padding-top: 20px;
-}
 </style>
 
 <div
   className="css-view-1dbjc4n IS12"
 >
   <div
-    className="css-view-1dbjc4n IS4"
-  >
-    <Image
-      aspectRatio={5.74}
-      className="IS1"
-      uri="https://www.thetimes.co.uk/d/img/leaders-masthead-d17db00289.png"
-    />
-    <div
-      className="css-view-1dbjc4n IS3"
-    >
-      <div
-        className="css-text-901oao IS2"
-      >
-         Leading Articles 
-      </div>
-    </div>
-  </div>
-  <div
     className="css-view-1dbjc4n IS11"
   >
+    <div
+      className="css-view-1dbjc4n IS4"
+    >
+      <Image
+        aspectRatio={5.74}
+        className="IS1"
+        uri="https://www.thetimes.co.uk/d/img/leaders-masthead-d17db00289.png"
+      />
+      <div
+        className="css-view-1dbjc4n IS3"
+      >
+        <div
+          className="css-text-901oao IS2"
+        >
+           Leading Articles 
+        </div>
+      </div>
+    </div>
     <div
       className="css-view-1dbjc4n IS10"
     >
@@ -4203,6 +4203,11 @@ exports[`36. leaders slice - huge 1`] = `
 }
 
 .IS11 {
+  background-color: rgba(240,240,240,1.00);
+  padding-top: 20px;
+}
+
+.IS12 {
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
@@ -4211,37 +4216,32 @@ exports[`36. leaders slice - huge 1`] = `
   width: 1366px;
   -ms-flex-item-align: center;
 }
-
-.IS12 {
-  background-color: rgba(240,240,240,1.00);
-  padding-top: 20px;
-}
 </style>
 
 <div
   className="css-view-1dbjc4n IS12"
 >
   <div
-    className="css-view-1dbjc4n IS4"
-  >
-    <Image
-      aspectRatio={5.74}
-      className="IS1"
-      uri="https://www.thetimes.co.uk/d/img/leaders-masthead-d17db00289.png"
-    />
-    <div
-      className="css-view-1dbjc4n IS3"
-    >
-      <div
-        className="css-text-901oao IS2"
-      >
-         Leading Articles 
-      </div>
-    </div>
-  </div>
-  <div
     className="css-view-1dbjc4n IS11"
   >
+    <div
+      className="css-view-1dbjc4n IS4"
+    >
+      <Image
+        aspectRatio={5.74}
+        className="IS1"
+        uri="https://www.thetimes.co.uk/d/img/leaders-masthead-d17db00289.png"
+      />
+      <div
+        className="css-view-1dbjc4n IS3"
+      >
+        <div
+          className="css-text-901oao IS2"
+        >
+           Leading Articles 
+        </div>
+      </div>
+    </div>
     <div
       className="css-view-1dbjc4n IS10"
     >

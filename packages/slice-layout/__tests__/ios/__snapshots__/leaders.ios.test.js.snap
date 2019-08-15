@@ -2,23 +2,17 @@
 
 exports[`1. leaders - small 1`] = `
 <View>
-  <View>
-    <Text>
-      leader-2
-    </Text>
-  </View>
+  <Text>
+    leader-1
+  </Text>
   <View />
-  <View>
-    <Text>
-      leader-1
-    </Text>
-  </View>
+  <Text>
+    leader-2
+  </Text>
   <View />
-  <View>
-    <Text>
-      leader-3
-    </Text>
-  </View>
+  <Text>
+    leader-3
+  </Text>
 </View>
 `;
 

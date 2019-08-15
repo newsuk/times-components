@@ -4,68 +4,39 @@ exports[`1. leaders - small 1`] = `
 <View
   style={
     Object {
-      "flex": 1,
-      "flexDirection": "row",
       "paddingBottom": 5,
     }
   }
 >
+  <Text>
+    leader-1
+  </Text>
   <View
     style={
       Object {
-        "paddingHorizontal": 10,
-        "width": "33%",
-      }
-    }
-  >
-    <Text>
-      leader-2
-    </Text>
-  </View>
-  <View
-    style={
-      Object {
+        "borderBottomWidth": 1,
         "borderColor": "#DBDBDB",
-        "borderRightWidth": 1,
         "borderStyle": "solid",
-        "marginVertical": 10,
+        "marginHorizontal": 10,
       }
     }
   />
+  <Text>
+    leader-2
+  </Text>
   <View
     style={
       Object {
-        "paddingHorizontal": 10,
-        "width": "33%",
-      }
-    }
-  >
-    <Text>
-      leader-1
-    </Text>
-  </View>
-  <View
-    style={
-      Object {
+        "borderBottomWidth": 1,
         "borderColor": "#DBDBDB",
-        "borderRightWidth": 1,
         "borderStyle": "solid",
-        "marginVertical": 10,
+        "marginHorizontal": 10,
       }
     }
   />
-  <View
-    style={
-      Object {
-        "paddingHorizontal": 10,
-        "width": "33%",
-      }
-    }
-  >
-    <Text>
-      leader-3
-    </Text>
-  </View>
+  <Text>
+    leader-3
+  </Text>
 </View>
 `;
 
@@ -75,14 +46,14 @@ exports[`2. leaders - medium 1`] = `
     Object {
       "flex": 1,
       "flexDirection": "row",
-      "paddingBottom": 5,
+      "paddingHorizontal": 5,
     }
   }
 >
   <View
     style={
       Object {
-        "paddingHorizontal": 10,
+        "paddingHorizontal": 15,
         "width": "33%",
       }
     }
@@ -97,14 +68,14 @@ exports[`2. leaders - medium 1`] = `
         "borderColor": "#DBDBDB",
         "borderRightWidth": 1,
         "borderStyle": "solid",
-        "marginVertical": 10,
+        "marginVertical": 30,
       }
     }
   />
   <View
     style={
       Object {
-        "paddingHorizontal": 10,
+        "paddingHorizontal": 15,
         "width": "33%",
       }
     }
@@ -119,14 +90,14 @@ exports[`2. leaders - medium 1`] = `
         "borderColor": "#DBDBDB",
         "borderRightWidth": 1,
         "borderStyle": "solid",
-        "marginVertical": 10,
+        "marginVertical": 30,
       }
     }
   />
   <View
     style={
       Object {
-        "paddingHorizontal": 10,
+        "paddingHorizontal": 15,
         "width": "33%",
       }
     }

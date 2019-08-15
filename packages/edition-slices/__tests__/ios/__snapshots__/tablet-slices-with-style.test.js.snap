@@ -312,72 +312,73 @@ exports[`6. leaders slice - medium 1`] = `
 <View
   style={
     Object {
-      "backgroundColor": "#F0F0F0",
-      "paddingTop": 20,
+      "alignSelf": "center",
+      "maxWidth": "100%",
+      "paddingHorizontal": 10,
+      "width": 1366,
     }
   }
 >
   <View
     style={
       Object {
-        "alignItems": "center",
+        "backgroundColor": "#F0F0F0",
+        "marginHorizontal": 30,
+        "marginVertical": 15,
+        "paddingTop": 30,
       }
     }
   >
-    <Image
-      style={
-        Object {
-          "height": 51,
-          "width": 283,
-        }
-      }
-    />
     <View
       style={
         Object {
-          "paddingBottom": 5,
-          "paddingTop": 10,
+          "alignItems": "center",
         }
       }
     >
-      <Text
+      <Image
         style={
           Object {
-            "color": "#850029",
-            "fontFamily": "TimesDigitalW04-Regular",
-            "fontSize": 16,
-            "lineHeight": 18,
-            "textAlign": "center",
+            "height": 42,
+            "width": 227,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "paddingTop": 10,
           }
         }
       >
-         Leading Articles 
-      </Text>
+        <Text
+          style={
+            Object {
+              "color": "#850029",
+              "fontFamily": "TimesDigitalW04-Regular",
+              "fontSize": 15,
+              "lineHeight": 15,
+              "textAlign": "center",
+            }
+          }
+        >
+           Leading Articles 
+        </Text>
+      </View>
     </View>
-  </View>
-  <View
-    style={
-      Object {
-        "alignSelf": "center",
-        "maxWidth": "100%",
-        "paddingHorizontal": 10,
-        "width": 1366,
-      }
-    }
-  >
     <View
       style={
         Object {
           "flex": 1,
           "flexDirection": "row",
-          "paddingBottom": 5,
+          "paddingHorizontal": 5,
         }
       }
     >
       <View
         style={
           Object {
-            "paddingHorizontal": 10,
+            "paddingHorizontal": 15,
             "width": "33%",
           }
         }
@@ -390,14 +391,14 @@ exports[`6. leaders slice - medium 1`] = `
             "borderColor": "#DBDBDB",
             "borderRightWidth": 1,
             "borderStyle": "solid",
-            "marginVertical": 10,
+            "marginVertical": 30,
           }
         }
       />
       <View
         style={
           Object {
-            "paddingHorizontal": 10,
+            "paddingHorizontal": 15,
             "width": "33%",
           }
         }
@@ -410,14 +411,14 @@ exports[`6. leaders slice - medium 1`] = `
             "borderColor": "#DBDBDB",
             "borderRightWidth": 1,
             "borderStyle": "solid",
-            "marginVertical": 10,
+            "marginVertical": 30,
           }
         }
       />
       <View
         style={
           Object {
-            "paddingHorizontal": 10,
+            "paddingHorizontal": 15,
             "width": "33%",
           }
         }
@@ -1476,59 +1477,59 @@ exports[`21. leaders slice - wide 1`] = `
 <View
   style={
     Object {
-      "backgroundColor": "#F0F0F0",
-      "paddingTop": 20,
+      "alignSelf": "center",
+      "maxWidth": "100%",
+      "paddingHorizontal": 10,
+      "width": 1366,
     }
   }
 >
   <View
     style={
       Object {
-        "alignItems": "center",
+        "backgroundColor": "#F0F0F0",
+        "paddingTop": 20,
       }
     }
   >
-    <Image
-      style={
-        Object {
-          "height": 51,
-          "width": 283,
-        }
-      }
-    />
     <View
       style={
         Object {
-          "paddingBottom": 5,
-          "paddingTop": 10,
+          "alignItems": "center",
         }
       }
     >
-      <Text
+      <Image
         style={
           Object {
-            "color": "#850029",
-            "fontFamily": "TimesDigitalW04-Regular",
-            "fontSize": 16,
-            "lineHeight": 18,
-            "textAlign": "center",
+            "height": 51,
+            "width": 283,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "paddingBottom": 5,
+            "paddingTop": 10,
           }
         }
       >
-         Leading Articles 
-      </Text>
+        <Text
+          style={
+            Object {
+              "color": "#850029",
+              "fontFamily": "TimesDigitalW04-Regular",
+              "fontSize": 16,
+              "lineHeight": 18,
+              "textAlign": "center",
+            }
+          }
+        >
+           Leading Articles 
+        </Text>
+      </View>
     </View>
-  </View>
-  <View
-    style={
-      Object {
-        "alignSelf": "center",
-        "maxWidth": "100%",
-        "paddingHorizontal": 10,
-        "width": 1366,
-      }
-    }
-  >
     <View
       style={
         Object {
@@ -2739,68 +2740,68 @@ exports[`36. leaders slice - huge 1`] = `
 <View
   style={
     Object {
-      "backgroundColor": "#F0F0F0",
-      "paddingTop": 20,
+      "alignSelf": "center",
+      "maxWidth": "100%",
+      "paddingHorizontal": 10,
+      "width": 1366,
     }
   }
 >
   <View
     style={
       Object {
-        "alignItems": "center",
+        "alignSelf": "center",
+        "flex": 1,
+        "width": 1180,
       }
     }
   >
-    <Image
-      style={
-        Object {
-          "height": 51,
-          "width": 283,
-        }
-      }
-    />
     <View
       style={
         Object {
-          "paddingBottom": 5,
-          "paddingTop": 10,
+          "backgroundColor": "#F0F0F0",
+          "paddingTop": 20,
         }
       }
     >
-      <Text
+      <View
         style={
           Object {
-            "color": "#850029",
-            "fontFamily": "TimesDigitalW04-Regular",
-            "fontSize": 16,
-            "lineHeight": 18,
-            "textAlign": "center",
+            "alignItems": "center",
           }
         }
       >
-         Leading Articles 
-      </Text>
-    </View>
-  </View>
-  <View
-    style={
-      Object {
-        "alignSelf": "center",
-        "maxWidth": "100%",
-        "paddingHorizontal": 10,
-        "width": 1366,
-      }
-    }
-  >
-    <View
-      style={
-        Object {
-          "alignSelf": "center",
-          "flex": 1,
-          "width": 1180,
-        }
-      }
-    >
+        <Image
+          style={
+            Object {
+              "height": 51,
+              "width": 283,
+            }
+          }
+        />
+        <View
+          style={
+            Object {
+              "paddingBottom": 5,
+              "paddingTop": 10,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#850029",
+                "fontFamily": "TimesDigitalW04-Regular",
+                "fontSize": 16,
+                "lineHeight": 18,
+                "textAlign": "center",
+              }
+            }
+          >
+             Leading Articles 
+          </Text>
+        </View>
+      </View>
       <View
         style={
           Object {

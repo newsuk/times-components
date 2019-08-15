@@ -25,6 +25,7 @@ const Leaders = ({ leader1, leader2, leader3, breakpoint }) => {
         { style: styles.columnItems, tile: leader1 },
         { style: styles.columnItems, tile: leader3 }
       ]}
+      colSeparatorStyle={styles.itemColSeparator}
     />
   );
 };

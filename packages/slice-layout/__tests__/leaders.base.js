@@ -11,6 +11,7 @@ export default renderComponent => {
       test() {
         const output = renderComponent(
           <Leaders
+            breakpoint={editionBreakpoints.small}
             leader1={createItem("leader-1")}
             leader2={createItem("leader-2")}
             leader3={createItem("leader-3")}
