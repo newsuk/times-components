@@ -267,8 +267,6 @@ exports[`1. secondary one and four 1`] = `
 
 .IS11 {
   background-color: rgba(39,45,52,1.00);
-  padding-right: 10px;
-  padding-left: 10px;
 }
 
 .IS12 {
@@ -283,6 +281,10 @@ exports[`1. secondary one and four 1`] = `
 
 .IS13 {
   background-color: rgba(39,45,52,1.00);
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 </style>
 
@@ -482,8 +484,6 @@ exports[`1. secondary one and four 2`] = `
 
 .IS11 {
   background-color: rgba(39,45,52,1.00);
-  padding-right: 10px;
-  padding-left: 10px;
 }
 
 .IS12 {
@@ -498,6 +498,10 @@ exports[`1. secondary one and four 2`] = `
 
 .IS13 {
   background-color: rgba(39,45,52,1.00);
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 </style>
 
@@ -1822,8 +1826,6 @@ exports[`10. secondary one and four 1`] = `
 
 .IS11 {
   background-color: rgba(39,45,52,1.00);
-  padding-right: 10px;
-  padding-left: 10px;
 }
 
 .IS12 {
@@ -1838,6 +1840,10 @@ exports[`10. secondary one and four 1`] = `
 
 .IS13 {
   background-color: rgba(39,45,52,1.00);
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 </style>
 

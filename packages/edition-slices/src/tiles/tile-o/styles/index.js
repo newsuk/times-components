@@ -12,8 +12,8 @@ const styles = {
   headlineStyle: {
     color: colours.functional.white,
     fontFamily: fonts.headline,
-    fontSize: 22,
-    lineHeight: 22,
+    fontSize: 18,
+    lineHeight: 18,
     marginBottom: 11,
     marginTop: spacing(1)
   }

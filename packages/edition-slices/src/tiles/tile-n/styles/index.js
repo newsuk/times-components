@@ -27,6 +27,9 @@ const styles = fontSize => ({
   summary: {
     color: colours.functional.greyLabel
   },
+  strapline: {
+    fontSize: 14
+  },
   summaryContainer: {
     paddingHorizontal: spacing(2),
     width: "50%"
@@ -37,7 +40,7 @@ export default breakpoint => {
   const fontSize =
     breakpoint === editionBreakpoints.small ||
     breakpoint === editionBreakpoints.medium
-      ? "infoTitle"
+      ? "body"
       : "headline";
   return styles(fontSize);
 };

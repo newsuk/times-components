@@ -703,7 +703,7 @@ exports[`14. tile n 1`] = `
         Object {
           "color": "#696969",
           "fontFamily": "TimesModern-Regular",
-          "fontSize": 19,
+          "fontSize": 14,
           "lineHeight": 21,
           "paddingBottom": 10,
         }
@@ -733,9 +733,9 @@ exports[`15. tile o 1`] = `
         Object {
           "color": "#FFFFFF",
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 22,
+          "fontSize": 18,
           "fontWeight": "900",
-          "lineHeight": 22,
+          "lineHeight": 18,
           "marginBottom": 11,
           "marginTop": 5,
         }
