@@ -1802,6 +1802,7 @@ exports[`42. tile ah 1`] = `
   linkStyle={
     Object {
       "alignItems": "center",
+      "flex": 1,
       "marginRight": "10px",
       "paddingVertical": "10px",
     }
@@ -1845,14 +1846,24 @@ exports[`42. tile ah 1`] = `
         ]
       }
     />
-    <div>
-      <span>
-        Richard Lloyd Parry
-      </span>
-      <span>
-        , Hanoi
-      </span>
-    </div>
   </div>
+</Link>
+`;
+
+exports[`43. tile ai 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "alignItems": "center",
+      "paddingVertical": "10px",
+    }
+  }
+  url="/article/123"
+>
+  <Image
+    aspectRatio={1.5}
+    fill={true}
+    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
+  />
 </Link>
 `;

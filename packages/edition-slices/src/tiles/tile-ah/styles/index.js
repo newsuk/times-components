@@ -14,14 +14,8 @@ const headlineFontSizeResolver = {
 };
 
 const styles = (breakpoint = editionBreakpoints.medium) => ({
-  bylineOpinion: {
-    color: colours.section.comment,
-    fontFamily: fonts.supporting,
-    fontSize: fontSizes.cardMetaMobile,
-    letterSpacing: 0.6,
-    lineHeight: 12
-  },
   container: {
+    flex: 1,
     alignItems: "center",
     marginRight: spacing(2),
     paddingVertical: spacing(2)
@@ -50,7 +44,8 @@ const styles = (breakpoint = editionBreakpoints.medium) => ({
     fontFamily: fonts.bodyRegular,
     fontSize: fontSizes.meta,
     lineHeight: 20,
-    textAlign: "center"
+    textAlign: "center",
+    paddingBottom: spacing(1)
   },
   summaryContainer: {
     alignItems: "center",

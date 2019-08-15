@@ -2189,7 +2189,7 @@ exports[`42. tile ah 1`] = `
           "fontFamily": "TimesDigitalW04-Regular",
           "fontSize": 14,
           "lineHeight": 20,
-          "paddingBottom": 10,
+          "paddingBottom": 5,
           "textAlign": "center",
         }
       }
@@ -2197,36 +2197,18 @@ exports[`42. tile ah 1`] = `
       Three Conservative MPs resign
     </Text>
     <ArticleFlags />
-    <Text>
-      <Text
-        style={
-          Object {
-            "color": "#850029",
-            "flexDirection": "row",
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 12,
-            "letterSpacing": 0.6,
-            "lineHeight": 12,
-          }
-        }
-      >
-        Richard Lloyd Parry
-      </Text>
-      <Text
-        style={
-          Object {
-            "color": "#850029",
-            "flexDirection": "row",
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 12,
-            "letterSpacing": 0.6,
-            "lineHeight": 12,
-          }
-        }
-      >
-        , Hanoi
-      </Text>
-    </Text>
   </View>
+</Link>
+`;
+
+exports[`43. tile ai 1`] = `
+<Link>
+  <Image
+    style={
+      Object {
+        "width": "100%",
+      }
+    }
+  />
 </Link>
 `;
