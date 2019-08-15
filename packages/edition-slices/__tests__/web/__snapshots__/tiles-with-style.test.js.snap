@@ -1507,20 +1507,10 @@ exports[`19. tile s 1`] = `
 }
 
 .IS3 {
-  color: #1D1D1B;
-  font-weight: bold;
-}
-
-.IS4 {
-  color: #1D1D1B;
-  font-weight: bold;
-}
-
-.IS5 {
   font-family: TimesDigitalW04-Regular;
 }
 
-.IS6 {
+.IS4 {
   font-size: 12px;
   margin-top: 10px;
 }
@@ -1539,12 +1529,10 @@ exports[`19. tile s 1`] = `
     </div>
   </div>
   <div
-    className="css-text-901oao r-color-1khp51w r-fontSize-1b43r93 r-lineHeight-rjixqe IS5 S2"
+    className="css-text-901oao r-color-1khp51w r-fontSize-1b43r93 r-lineHeight-rjixqe IS3 S2"
   >
     <p>
-      <b
-        className="IS3"
-      >
+      <b>
         Rick Astley
       </b>
       , singer-songwriter, 
@@ -1552,9 +1540,7 @@ exports[`19. tile s 1`] = `
         Never Gonna Give You Up 
       </i>
       (1987), 53; 
-      <b
-        className="IS4"
-      >
+      <b>
         Mike Batt
       </b>
       , composer, songwriter, 
@@ -1568,7 +1554,7 @@ exports[`19. tile s 1`] = `
     </p>
   </div>
   <div
-    className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr IS6 S3"
+    className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr IS4 S3"
   >
     <span>
       Libby Purves
@@ -1603,16 +1589,6 @@ exports[`20. tile s - no byline 1`] = `
 }
 
 .IS3 {
-  color: #1D1D1B;
-  font-weight: bold;
-}
-
-.IS4 {
-  color: #1D1D1B;
-  font-weight: bold;
-}
-
-.IS5 {
   font-family: TimesDigitalW04-Regular;
 }
 </style>
@@ -1630,12 +1606,10 @@ exports[`20. tile s - no byline 1`] = `
     </div>
   </div>
   <div
-    className="css-text-901oao r-color-1khp51w r-fontSize-1b43r93 r-lineHeight-rjixqe IS5 S2"
+    className="css-text-901oao r-color-1khp51w r-fontSize-1b43r93 r-lineHeight-rjixqe IS3 S2"
   >
     <p>
-      <b
-        className="IS3"
-      >
+      <b>
         Rick Astley
       </b>
       , singer-songwriter, 
@@ -1643,9 +1617,7 @@ exports[`20. tile s - no byline 1`] = `
         Never Gonna Give You Up 
       </i>
       (1987), 53; 
-      <b
-        className="IS4"
-      >
+      <b>
         Mike Batt
       </b>
       , composer, songwriter, 

@@ -2,42 +2,48 @@
 
 exports[`1. daily universal register 1`] = `
 <View>
-  <View>
-    <Image
-      resizeMode="contain"
-      source={
-        Object {
-          "testUri": "../../../packages/edition-slices/assets/daily-universal-register.png",
-        }
+  <Image
+    resizeMode="contain"
+    source={
+      Object {
+        "testUri": "../../../packages/edition-slices/assets/daily-universal-register.png",
       }
-    />
-    <Text>
-      Daily Universal Register
-    </Text>
-    <TileS />
-    <View />
-    <TileS />
-    <View />
-    <Image
-      resizeMode="contain"
-      source={
-        Object {
-          "testUri": "../../../packages/edition-slices/assets/leaves.png",
-        }
+    }
+  />
+  <Text>
+    Daily Universal Register
+  </Text>
+  <TileS
+    breakpoint="small"
+  />
+  <View />
+  <TileS
+    breakpoint="small"
+  />
+  <View />
+  <Image
+    resizeMode="contain"
+    source={
+      Object {
+        "testUri": "../../../packages/edition-slices/assets/leaves.png",
       }
-    />
-    <TileS />
-    <View />
-    <Image
-      resizeMode="contain"
-      source={
-        Object {
-          "testUri": "../../../packages/edition-slices/assets/cake.png",
-        }
+    }
+  />
+  <TileS
+    breakpoint="small"
+  />
+  <View />
+  <Image
+    resizeMode="contain"
+    source={
+      Object {
+        "testUri": "../../../packages/edition-slices/assets/cake.png",
       }
-    />
-    <TileS />
-  </View>
+    }
+  />
+  <TileS
+    breakpoint="small"
+  />
 </View>
 `;
 

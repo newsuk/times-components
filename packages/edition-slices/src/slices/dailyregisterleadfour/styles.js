@@ -45,16 +45,40 @@ const smallBreakpointStyles = {
 
 const mediumBreakpointStyles = {
   container: {
+    flex: 1,
     alignItems: "center",
     backgroundColor: colours.functional.border,
+    marginHorizontal: spacing(6),
+    marginVertical: spacing(3),
+    padding: spacing(3)
+  },
+  itemsContainer: {
     flex: 1,
-    paddingHorizontal: "20%",
-    paddingVertical: spacing(2)
+    flexDirection: "row"
+  },
+  column: {
+    flex: 1
+  },
+  colSeparator: {
+    marginVertical: spacing(3)
+  },
+  rowSeparator: {
+    marginHorizontal: spacing(3)
   },
   mastheadLogo: {
-    height: 97,
-    width: 380,
-    marginVertical: spacing(2)
+    height: 60,
+    width: 237,
+    marginVertical: spacing(2),
+    marginTop: spacing(3)
+  },
+  imageWrapper: {
+    height: 45,
+    width: 60,
+    marginRight: spacing(2)
+  },
+  title: {
+    ...main.title,
+    marginBottom: spacing(3)
   }
 };
 
