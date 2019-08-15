@@ -8,10 +8,10 @@ const mediumBreakpointStyles = {
     paddingVertical: spacing(1)
   },
   leadContainer: {
-    width: "50%"
+    width: "60%"
   },
   supportContainer: {
-    width: "50%"
+    width: "40%"
   }
 };
 

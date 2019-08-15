@@ -66,7 +66,7 @@ exports[`2. lead one and four - medium 1`] = `
   <View
     style={
       Object {
-        "width": "50%",
+        "width": "60%",
       }
     }
   >
@@ -87,7 +87,7 @@ exports[`2. lead one and four - medium 1`] = `
   <View
     style={
       Object {
-        "width": "50%",
+        "width": "40%",
       }
     }
   >

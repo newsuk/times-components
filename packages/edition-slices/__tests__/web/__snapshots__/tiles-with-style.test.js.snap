@@ -3002,7 +3002,7 @@ exports[`37. tile ad 1`] = `
   font-family: TimesModern-Bold;
   font-weight: 400;
   line-height: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
 }
 
 .IS1 {
@@ -3023,6 +3023,7 @@ exports[`37. tile ad 1`] = `
 <Link
   linkStyle={
     Object {
+      "flex": 1,
       "flexDirection": "row",
       "padding": "10px",
     }
@@ -3049,7 +3050,7 @@ exports[`37. tile ad 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-lineHeight-rjixqe r-marginBottom-d0pm55 IS2 S2"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-lineHeight-rjixqe r-marginBottom-p1pxzi IS2 S2"
       role="heading"
     >
       This is tile headline
@@ -3075,10 +3076,9 @@ exports[`38. tile ac 1`] = `
 }
 
 .S2 {
-  color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .IS1 {
@@ -3086,6 +3086,7 @@ exports[`38. tile ac 1`] = `
 }
 
 .IS2 {
+  color: rgba(29,29,27,1.00);
   font-size: 30px;
   line-height: 30px;
   text-align: center;
@@ -3147,7 +3148,7 @@ exports[`38. tile ac 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-15d164r IS2 S2"
+      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS2 S2"
       role="heading"
     >
       This is tile headline

@@ -1039,7 +1039,7 @@ exports[`3. lead one and one 1`] = `
 exports[`4. lead one and four 1`] = `
 <style>
 .IS1 {
-  width: 50%;
+  width: 60%;
 }
 
 .IS2 {
@@ -1099,7 +1099,7 @@ exports[`4. lead one and four 1`] = `
 }
 
 .IS6 {
-  width: 50%;
+  width: 40%;
 }
 
 .IS7 {

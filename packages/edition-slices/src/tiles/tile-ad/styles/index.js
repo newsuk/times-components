@@ -11,15 +11,17 @@ const headlineFontSizeResolver = {
   [editionBreakpoints.medium]: 20
 };
 
-export default breakpoint => ({
+const styles = breakpoint => ({
   container: {
+    flex: 1,
     flexDirection: "row",
     padding: spacing(2)
   },
   headline: {
     fontFamily: fonts.headline,
     fontSize: headlineFontSizeResolver[breakpoint],
-    lineHeight: headlineFontSizeResolver[breakpoint]
+    lineHeight: headlineFontSizeResolver[breakpoint],
+    marginBottom: 0
   },
   imageContainer: {
     width: "30%"
@@ -29,3 +31,14 @@ export default breakpoint => ({
     width: "70%"
   }
 });
+
+const mediumBreakpointStyles = {
+  summaryContainer: {
+    width: "100%"
+  }
+};
+
+export default breakpoint =>
+  breakpoint === editionBreakpoints.medium
+    ? { ...styles(breakpoint), ...mediumBreakpointStyles }
+    : styles(breakpoint);
