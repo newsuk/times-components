@@ -9,7 +9,8 @@ exports[`1. with a single author 1`] = `
         "color": "#006699",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
-        "lineHeight": 19,
+        "fontWeight": "bold",
+        "lineHeight": 13,
         "textDecorationLine": "none",
       }
     }
@@ -28,7 +29,8 @@ exports[`2. with a very long byline 1`] = `
         "color": "#006699",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
-        "lineHeight": 19,
+        "fontWeight": "bold",
+        "lineHeight": 13,
         "textDecorationLine": "none",
       }
     }
@@ -42,7 +44,7 @@ exports[`2. with a very long byline 1`] = `
         "flexDirection": "row",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
-        "lineHeight": 19,
+        "lineHeight": 13,
       }
     }
   >
@@ -55,7 +57,8 @@ exports[`2. with a very long byline 1`] = `
         "color": "#006699",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
-        "lineHeight": 19,
+        "fontWeight": "bold",
+        "lineHeight": 13,
         "textDecorationLine": "none",
       }
     }
@@ -69,7 +72,7 @@ exports[`2. with a very long byline 1`] = `
         "flexDirection": "row",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
-        "lineHeight": 19,
+        "lineHeight": 13,
       }
     }
   >
@@ -82,7 +85,8 @@ exports[`2. with a very long byline 1`] = `
         "color": "#006699",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
-        "lineHeight": 19,
+        "fontWeight": "bold",
+        "lineHeight": 13,
         "textDecorationLine": "none",
       }
     }
@@ -96,7 +100,7 @@ exports[`2. with a very long byline 1`] = `
         "flexDirection": "row",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
-        "lineHeight": 19,
+        "lineHeight": 13,
       }
     }
   >

@@ -9,8 +9,6 @@ const shared = {
     }),
     color: colours.functional.action,
     textDecorationLine: "none"
-    // TODO: put back after design signoff
-    // fontWeight: "bold"
   },
   nonLinkText: {
     ...fontFactory({

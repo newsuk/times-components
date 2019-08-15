@@ -42,7 +42,7 @@ exports[`1. article magazine comment - tablet 1`] = `
           "fontFamily": "TimesModern-Bold",
           "fontSize": 40,
           "lineHeight": 40,
-          "marginBottom": 15,
+          "marginBottom": 10,
           "textAlign": "center",
         }
       }
@@ -119,7 +119,7 @@ exports[`1. article magazine comment - tablet 1`] = `
               "color": "#696969",
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
-              "lineHeight": 15,
+              "lineHeight": 13,
               "marginTop": "auto",
             }
           }

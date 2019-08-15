@@ -2,24 +2,22 @@ import { StyleSheet } from "react-native";
 import { spacing } from "@times-components/styleguide";
 import sharedStyles from "./shared";
 
-const nativeStyles = {
+const styles = StyleSheet.create({
   ...sharedStyles,
   container: {
     ...sharedStyles.container,
-    paddingTop: spacing(9)
+    paddingTop: spacing(1)
   },
-  standFirst: {
-    ...sharedStyles.standFirst,
-    lineHeight: 25,
-    marginBottom: 0
+  credits: {
+    ...sharedStyles.credits,
+    lineHeight: spacing(4),
+    marginTop: 0
   },
-  leadAsset: {
-    marginBottom: spacing(4)
+  text: {
+    ...sharedStyles.text,
+    lineHeight: spacing(4),
+    marginTop: spacing(1)
   }
-};
-
-const styles = StyleSheet.create({
-  ...nativeStyles
 });
 
 export default styles;
