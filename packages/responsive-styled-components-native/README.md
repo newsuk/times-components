@@ -1,6 +1,38 @@
-# ResponsiveStyledComponentsNative
+# Responsive Styled Components Native
 
-<!-- Add the description of the package here. -->
+This package allows you to create responsive styled components when using
+styled components native. It is designed to work with both React Native and React
+Native Web.
+
+Usage is very similar to styled components, except we provide a
+mediaQuery tag which is similar to the CSS tag styled-components provides.
+
+```js
+import { View } from "react-native";
+import responsiveStyled, { mediaQuery } from "@times-components/responsive-styled-components-native";
+
+const ResponsiveView = responsiveStyled(View)`
+    ${mediaQuery(screenWidth => screenWidth > 100)`
+      /* styles here will only be applied on screens wider than 100px
+      background-color: blue;
+    `}
+`;
+```
+
+We also provide `responsiveStyled.View` and `responsiveStyled.Text` to avoid needing
+to import React Native just to wrap these components.
+
+As well as being able to pass custom matcher functions to `mediaQuery`, we also
+provide pre-defined matchers for `minWidth` and `maxWidth`, and predefined matchers
+for all of the breakpoints defined in `@times-components/styleguide`.
+
+```js
+mediaQuery.minWidth(400)`/* styles only apply when screen is equal to or wider than 400px`;
+mediaQuery.maxWidth(400)`/* styles only apply when screen is equal to or less wide than 400px`;
+
+mediaQuery.maxWidth.medium`/* styles only apply on the medium breakpoint or less wide */`;
+mediaQuery.minWidth.small`/* styles only apply on the small breakpoint or wider */`;
+``` 
 
 ## Contributing
 
