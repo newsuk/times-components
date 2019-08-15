@@ -1,0 +1,7 @@
+query ArticleQuery($id: ID!) {
+	article(id: $id) {
+		...articlePageProps
+	}
+}
+
+# import "./article_page_props.graphql"
