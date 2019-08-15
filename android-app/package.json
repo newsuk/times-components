@@ -1,6 +1,6 @@
 {
   "name": "@times-components/android-app",
-  "version": "0.16.7",
+  "version": "0.16.8",
   "license": "BSD-3-Clause",
   "scripts": {
     "build": "./gradlew clean && ./gradlew generateReactArchives && ./gradlew assemble && ./gradlew publish",
@@ -11,7 +11,7 @@
     "start": "react-native start --config metro.config.js"
   },
   "dependencies": {
-    "@times-components/pages": "2.0.152",
+    "@times-components/pages": "2.0.153",
     "@times-components/text-flow": "0.2.8",
     "prop-types": "15.7.2",
     "react": "16.8.6",
