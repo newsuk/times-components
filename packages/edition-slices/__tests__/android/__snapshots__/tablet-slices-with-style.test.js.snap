@@ -16,8 +16,8 @@ exports[`1. comment lead and cartoon - medium 1`] = `
       Object {
         "flex": 1,
         "flexDirection": "row",
-        "paddingRight": 20,
-        "paddingTop": 10,
+        "paddingHorizontal": 30,
+        "paddingVertical": 5,
       }
     }
   >
@@ -1166,8 +1166,8 @@ exports[`16. comment lead and cartoon - wide 1`] = `
       Object {
         "flex": 1,
         "flexDirection": "row",
-        "paddingRight": 20,
-        "paddingTop": 10,
+        "paddingHorizontal": 30,
+        "paddingVertical": 5,
       }
     }
   >
@@ -2297,8 +2297,8 @@ exports[`31. comment lead and cartoon - huge 1`] = `
         Object {
           "flex": 1,
           "flexDirection": "row",
-          "paddingRight": 20,
-          "paddingTop": 10,
+          "paddingHorizontal": 30,
+          "paddingVertical": 5,
         }
       }
     >

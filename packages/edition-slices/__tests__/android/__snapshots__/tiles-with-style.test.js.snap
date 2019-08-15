@@ -2109,3 +2109,78 @@ exports[`41. tile as 1`] = `
   </View>
 </Link>
 `;
+
+exports[`42. tile ah 1`] = `
+<Link>
+  <Image
+    style={
+      Object {
+        "marginBottom": 5,
+        "overflow": "hidden",
+        "width": "40%",
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "paddingTop": 5,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "marginBottom": 5,
+        }
+      }
+    >
+      <ArticleLabel />
+    </View>
+    <Text
+      style={
+        Object {
+          "color": "#1D1D1B",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 30,
+          "fontWeight": "400",
+          "lineHeight": 30,
+          "marginBottom": 0,
+          "paddingVertical": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      This is tile headline
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "#696969",
+          "fontFamily": "TimesDigitalW04-Regular",
+          "fontSize": 14,
+          "lineHeight": 20,
+          "paddingBottom": 5,
+          "textAlign": "center",
+        }
+      }
+    >
+      Three Conservative MPs resign
+    </Text>
+    <ArticleFlags />
+  </View>
+</Link>
+`;
+
+exports[`43. tile ai 1`] = `
+<Link>
+  <Image
+    style={
+      Object {
+        "width": "100%",
+      }
+    }
+  />
+</Link>
+`;

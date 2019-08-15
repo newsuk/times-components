@@ -212,7 +212,7 @@ const tileStories = [
   },
   {
     name:
-      "Tile AH - Profile roundel image, 25pt headline, no teaser, central aligned summary",
+      "Tile AH - Profile roundel image, 30pt headline, no teaser, central aligned summary",
     Tile: TileAH
   },
   {

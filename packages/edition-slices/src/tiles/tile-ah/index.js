@@ -34,8 +34,6 @@ const TileAH = ({ onPress, tile, breakpoint }) => {
         resizeMode="cover"
       />
       <TileSummary
-        bylines={tile.article.bylines}
-        bylineStyle={styles.bylineOpinion}
         headlineStyle={styles.headline}
         strapline={getTileStrapline(tile)}
         straplineStyle={styles.strapline}

@@ -19,8 +19,10 @@ exports[`1. comment lead and cartoon - small 1`] = `
       "msFlexNegative": 1,
       "msFlexPositive": 1,
       "msFlexPreferredSize": "0%",
-      "paddingRight": "20px",
-      "paddingTop": "10px",
+      "paddingBottom": "5px",
+      "paddingLeft": "30px",
+      "paddingRight": "30px",
+      "paddingTop": "5px",
     }
   }
 >
@@ -85,8 +87,10 @@ exports[`2. comment lead and cartoon - medium 1`] = `
       "msFlexNegative": 1,
       "msFlexPositive": 1,
       "msFlexPreferredSize": "0%",
-      "paddingRight": "20px",
-      "paddingTop": "10px",
+      "paddingBottom": "5px",
+      "paddingLeft": "30px",
+      "paddingRight": "30px",
+      "paddingTop": "5px",
     }
   }
 >
