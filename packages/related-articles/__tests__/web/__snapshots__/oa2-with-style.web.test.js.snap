@@ -253,7 +253,6 @@ exports[`default styles 1`] = `
   font-family: TimesDigitalW04;
   font-size: 14px;
   line-height: 20px;
-  margin-bottom: 10px;
 }
 
 .S8 {
@@ -328,7 +327,7 @@ exports[`default styles 1`] = `
                     className="css-view-1dbjc4n"
                   >
                     <div
-                      className="summaryHidden opinionSummary125Class summaryHidden opinionSummary125Class css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S7"
+                      className="summaryHidden opinionSummary125Class summaryHidden opinionSummary125Class css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe S7"
                     >
                       <span
                         className="css-text-901oao css-textHasAncestor-16my406"
@@ -339,7 +338,7 @@ exports[`default styles 1`] = `
                       </span>
                     </div>
                     <div
-                      className="summaryHidden opinionSummary160Class summaryHidden opinionSummary160Class css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S7"
+                      className="summaryHidden opinionSummary160Class summaryHidden opinionSummary160Class css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe S7"
                     >
                       <span
                         className="css-text-901oao css-textHasAncestor-16my406"
