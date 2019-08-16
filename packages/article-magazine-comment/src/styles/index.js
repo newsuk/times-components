@@ -6,14 +6,19 @@ const styles = StyleSheet.create({
   ...nativeStyles,
   articleHeadline: {
     ...nativeStyles.articleHeadline,
-    marginBottom: spacing(1)
+    lineHeight: nativeStyles.articleHeadline.fontSize
   },
-  flags: {
-    ...nativeStyles.flags,
-    marginTop: spacing(2)
+  metaTablet: {
+    ...nativeStyles.metaTablet,
+    paddingTop: "auto"
   },
-  metaSpacer: {
-    marginTop: spacing(2)
+  standFirst: {
+    ...nativeStyles.standFirst,
+    marginBottom: spacing(2.5)
+  },
+  datePublication: {
+    ...nativeStyles.datePublication,
+    lineHeight: nativeStyles.datePublication.fontSize
   }
 });
 

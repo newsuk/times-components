@@ -18,7 +18,7 @@ exports[`1. paragraph with a drop cap 1`] = `
           "fontSize": 17,
           "fontStyle": "normal",
           "lineHeight": 30,
-          "marginBottom": 20,
+          "marginBottom": 25,
         }
       }
     >
@@ -50,7 +50,7 @@ exports[`2. responsive tablet paragraph 1`] = `
           "fontSize": 17,
           "fontStyle": "normal",
           "lineHeight": 30,
-          "marginBottom": 20,
+          "marginBottom": 25,
         }
       }
     >
@@ -82,7 +82,7 @@ exports[`3. responsive tablet paragraph with a drop cap 1`] = `
           "fontSize": 17,
           "fontStyle": "normal",
           "lineHeight": 30,
-          "marginBottom": 20,
+          "marginBottom": 25,
         }
       }
     >

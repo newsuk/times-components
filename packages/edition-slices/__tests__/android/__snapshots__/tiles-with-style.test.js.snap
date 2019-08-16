@@ -418,7 +418,7 @@ exports[`8. tile h 1`] = `
             "flexDirection": "row",
             "fontFamily": "GillSansMTStd-Medium",
             "fontSize": 13,
-            "lineHeight": 19,
+            "lineHeight": 13,
           }
         }
       >
@@ -431,7 +431,7 @@ exports[`8. tile h 1`] = `
             "flexDirection": "row",
             "fontFamily": "GillSansMTStd-Medium",
             "fontSize": 13,
-            "lineHeight": 19,
+            "lineHeight": 13,
           }
         }
       >
@@ -1495,7 +1495,7 @@ exports[`28. tile ab 1`] = `
                   "flexDirection": "row",
                   "fontFamily": "GillSansMTStd-Medium",
                   "fontSize": 13,
-                  "lineHeight": 19,
+                  "lineHeight": 13,
                 }
               }
             >
@@ -1508,7 +1508,7 @@ exports[`28. tile ab 1`] = `
                   "flexDirection": "row",
                   "fontFamily": "GillSansMTStd-Medium",
                   "fontSize": 13,
-                  "lineHeight": 19,
+                  "lineHeight": 13,
                 }
               }
             >

@@ -85,7 +85,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                     "fontWeight": "normal",
                     "left": 0,
                     "lineHeight": NaN,
-                    "marginBottom": 20,
+                    "marginBottom": 25,
                     "position": "absolute",
                     "top": 0,
                   }
@@ -197,7 +197,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                     "fontSize": 17,
                     "fontStyle": "normal",
                     "lineHeight": 30,
-                    "marginBottom": 20,
+                    "marginBottom": 25,
                   }
                 }
               >
@@ -301,6 +301,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                       "fontFamily": "GillSansMTStd-Medium",
                       "fontSize": 13,
                       "lineHeight": 20,
+                      "marginTop": 5,
                     }
                   }
                 >
@@ -658,7 +659,7 @@ exports[`3. an article with a nested markup in first paragraph displays a drop c
                     "fontWeight": "bold",
                     "left": 0,
                     "lineHeight": NaN,
-                    "marginBottom": 20,
+                    "marginBottom": 25,
                     "position": "absolute",
                     "top": 0,
                   }
@@ -693,7 +694,7 @@ exports[`3. an article with a nested markup in first paragraph displays a drop c
                     "fontWeight": "bold",
                     "left": 0,
                     "lineHeight": NaN,
-                    "marginBottom": 20,
+                    "marginBottom": 25,
                     "position": "absolute",
                     "top": 0,
                   }
@@ -800,7 +801,7 @@ exports[`4. an article skeleton with responsive items 1`] = `
                     "fontSize": 17,
                     "fontStyle": "normal",
                     "lineHeight": 30,
-                    "marginBottom": 20,
+                    "marginBottom": 25,
                   }
                 }
               >
@@ -925,7 +926,7 @@ exports[`4. an article skeleton with responsive items 1`] = `
                     "fontSize": 17,
                     "fontStyle": "normal",
                     "lineHeight": 30,
-                    "marginBottom": 20,
+                    "marginBottom": 25,
                   }
                 }
               >
@@ -1029,6 +1030,7 @@ exports[`4. an article skeleton with responsive items 1`] = `
                       "fontFamily": "GillSansMTStd-Medium",
                       "fontSize": 13,
                       "lineHeight": 20,
+                      "marginTop": 5,
                     }
                   }
                 >

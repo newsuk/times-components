@@ -48,8 +48,9 @@ exports[`1. scaled medium full article 1`] = `
                     "color": "#333333",
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 17,
+                    "fontStyle": "normal",
                     "lineHeight": 30,
-                    "marginBottom": 20,
+                    "marginBottom": 25,
                   }
                 }
               >
@@ -175,8 +176,9 @@ exports[`2. scaled large full article 1`] = `
                     "color": "#333333",
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 21,
+                    "fontStyle": "normal",
                     "lineHeight": 31,
-                    "marginBottom": 20,
+                    "marginBottom": 25,
                   }
                 }
               >
@@ -302,8 +304,9 @@ exports[`3. scaled xlarge full article 1`] = `
                     "color": "#333333",
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 23,
+                    "fontStyle": "normal",
                     "lineHeight": 33,
-                    "marginBottom": 20,
+                    "marginBottom": 25,
                   }
                 }
               >

@@ -17,6 +17,7 @@ exports[`1. caption with container and text styles 1`] = `
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 13,
           "lineHeight": 20,
+          "marginTop": 5,
         }
       }
     >
@@ -58,6 +59,7 @@ exports[`2. caption with container, caption, and credit styles 1`] = `
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 10,
           "lineHeight": 20,
+          "marginTop": 5,
         }
       }
     >
@@ -99,6 +101,7 @@ exports[`3. caption with only container styles 1`] = `
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 13,
           "lineHeight": 20,
+          "marginTop": 5,
         }
       }
     >

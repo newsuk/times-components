@@ -11,7 +11,7 @@ exports[`Article Label test on android renders ArticleLabel 1`] = `
       "letterSpacing": 1,
       "lineHeight": 12,
       "marginBottom": 0,
-      "marginTop": -1,
+      "marginTop": 0,
       "paddingTop": 0,
     }
   }
@@ -31,7 +31,7 @@ exports[`Article Label test on android renders ArticleLabel with GraphQL Colour 
       "letterSpacing": 1,
       "lineHeight": 12,
       "marginBottom": 0,
-      "marginTop": -1,
+      "marginTop": 0,
       "paddingTop": 0,
     }
   }
