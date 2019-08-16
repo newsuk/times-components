@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.12.11](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.12.10...@times-components/article-summary@3.12.11) (2019-08-16)
+
+
+### Bug Fixes
+
+* (REPLAT-7336) save star alignment ([#2171](https://github.com/newsuk/times-components/issues/2171)) ([c075863](https://github.com/newsuk/times-components/commit/c075863))
+
+
+
+
+
 ## [3.12.10](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.12.9...@times-components/article-summary@3.12.10) (2019-08-14)
 
 **Note:** Version bump only for package @times-components/article-summary

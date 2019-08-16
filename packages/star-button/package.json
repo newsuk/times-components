@@ -1,6 +1,6 @@
 {
   "name": "@times-components/star-button",
-  "version": "0.1.68",
+  "version": "0.1.69",
   "description": "Star button",
   "main": "dist/star-button",
   "dev": "src/star-button",

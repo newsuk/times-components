@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.69](https://github.com/newsuk/times-components/compare/@times-components/star-button@0.1.68...@times-components/star-button@0.1.69) (2019-08-16)
+
+
+### Bug Fixes
+
+* (REPLAT-7336) save star alignment ([#2171](https://github.com/newsuk/times-components/issues/2171)) ([c075863](https://github.com/newsuk/times-components/commit/c075863))
+
+
+
+
+
 ## [0.1.68](https://github.com/newsuk/times-components/compare/@times-components/star-button@0.1.67...@times-components/star-button@0.1.68) (2019-08-14)
 
 **Note:** Version bump only for package @times-components/star-button

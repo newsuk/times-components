@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.6.66](https://github.com/newsuk/times-components/compare/@times-components/article-flag@2.6.65...@times-components/article-flag@2.6.66) (2019-08-16)
+
+
+### Bug Fixes
+
+* (REPLAT-7336) save star alignment ([#2171](https://github.com/newsuk/times-components/issues/2171)) ([c075863](https://github.com/newsuk/times-components/commit/c075863))
+
+
+
+
+
 ## [2.6.65](https://github.com/newsuk/times-components/compare/@times-components/article-flag@2.6.64...@times-components/article-flag@2.6.65) (2019-08-09)
 
 **Note:** Version bump only for package @times-components/article-flag
