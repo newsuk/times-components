@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.75.2](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.75.1...@times-components/edition-slices@0.75.2) (2019-08-16)
+
+
+### Bug Fixes
+
+* REPLAT-7444 design changes ([#2186](https://github.com/newsuk/times-components/issues/2186)) ([9605503](https://github.com/newsuk/times-components/commit/9605503))
+
+
+
+
+
 ## [0.75.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.75.0...@times-components/edition-slices@0.75.1) (2019-08-16)
 
 

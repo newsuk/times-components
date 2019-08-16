@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.113](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.1.112...@times-components/article-byline@3.1.113) (2019-08-16)
+
+
+### Bug Fixes
+
+* REPLAT-7444 design changes ([#2186](https://github.com/newsuk/times-components/issues/2186)) ([9605503](https://github.com/newsuk/times-components/commit/9605503))
+
+
+
+
+
 ## [3.1.112](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.1.111...@times-components/article-byline@3.1.112) (2019-08-14)
 
 **Note:** Version bump only for package @times-components/article-byline

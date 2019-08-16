@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.4.8](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.4.7...@times-components/article-label@2.4.8) (2019-08-16)
+
+
+### Bug Fixes
+
+* REPLAT-7444 design changes ([#2186](https://github.com/newsuk/times-components/issues/2186)) ([9605503](https://github.com/newsuk/times-components/commit/9605503))
+
+
+
+
+
 ## [2.4.7](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.4.6...@times-components/article-label@2.4.7) (2019-08-09)
 
 **Note:** Version bump only for package @times-components/article-label
