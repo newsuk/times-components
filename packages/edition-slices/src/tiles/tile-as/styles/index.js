@@ -11,6 +11,9 @@ const styles = {
     fontSize: 18,
     lineHeight: 18
   },
+  summaryContainer: {
+    flex: 1
+  },
   imageContainer: {
     marginBottom: spacing(2),
     width: "100%"

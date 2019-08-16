@@ -53,10 +53,20 @@ class SecondaryTwoAndTwo extends Component {
           <TileV onPress={onPress} tile={secondary2} tileName="secondary2" />
         }
         support1={
-          <TileG onPress={onPress} tile={support1} tileName="support1" />
+          <TileG
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={support1}
+            tileName="support1"
+          />
         }
         support2={
-          <TileG onPress={onPress} tile={support2} tileName="support2" />
+          <TileG
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={support2}
+            tileName="support2"
+          />
         }
       />
     );

@@ -15,19 +15,20 @@ const styles = {
     ...fontFactory({
       font: "headline",
       fontSize: "infoTitle"
-    }),
-    paddingBottom: spacing(1)
+    })
   },
   imageContainer: {
     overflow: "hidden",
     width: "30%"
   },
   summaryContainer: {
-    justifyContent: "center",
+    flex: 1,
     paddingLeft: spacing(2),
-    paddingTop: spacing(1),
-    width: "70%",
-    paddingBottom: 0
+    width: "70%"
+  },
+  summaryContent: {
+    justifyContent: "center",
+    flex: 1
   }
 };
 
@@ -39,7 +40,6 @@ const mediumBreakpointStyles = {
     paddingBottom: spacing(3)
   },
   headline: {
-    ...styles.headline,
     fontFamily: fonts.headline,
     fontSize: 20,
     lineHeight: 20

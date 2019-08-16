@@ -3,8 +3,7 @@ import { fontFactory, spacing } from "@times-components/styleguide";
 const styles = {
   container: {
     flex: 1,
-    flexDirection: "column",
-    paddingHorizontal: spacing(2)
+    padding: spacing(2)
   },
   headline: {
     marginBottom: 0,
@@ -14,8 +13,8 @@ const styles = {
     })
   },
   imageContainer: {
-    paddingVertical: spacing(2),
-    width: "100%"
+    width: "100%",
+    marginBottom: spacing(2)
   },
   summaryContainer: {
     lineHeight: 1.43,

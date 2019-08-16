@@ -1,19 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Image from "@times-components/image";
-import { getTileImage, TileLink, TileStar, withTileTracking } from "../shared";
+import { getTileImage, TileLink, withTileTracking } from "../shared";
 import styles from "./styles";
+import PositionedTileStar from "../shared/positioned-tile-star";
 
 const TileQ = ({ onPress, tile }) => {
   const crop = getTileImage(tile, "crop32");
 
   return (
-    <TileLink
-      onPress={onPress}
-      style={styles.container}
-      tile={tile}
-      withStar={false}
-    >
+    <TileLink onPress={onPress} style={styles.container} tile={tile}>
       <Image
         aspectRatio={3 / 2}
         relativeWidth={crop.relativeWidth}
@@ -24,7 +20,7 @@ const TileQ = ({ onPress, tile }) => {
         uri={crop.url}
         fill
       />
-      <TileStar articleId={tile.article.id} style={styles.starButton} />
+      <PositionedTileStar articleId={tile.article.id} centeredStar />
     </TileLink>
   );
 };

@@ -19,9 +19,10 @@ exports[`1. tile a 1`] = `
 }
 
 .IS2 {
-  margin-right: 10px;
-  margin-left: 10px;
   margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
 }
 
 .IS3 {
@@ -30,11 +31,6 @@ exports[`1. tile a 1`] = `
 </style>
 
 <Link
-  linkStyle={
-    Object {
-      "marginTop": "5px",
-    }
-  }
   url="/article/123"
 >
   <div
@@ -98,7 +94,6 @@ exports[`2. tile b 1`] = `
   font-family: TimesDigitalW04;
   font-size: 14px;
   line-height: 20px;
-  margin-bottom: 10px;
 }
 
 .IS1 {
@@ -128,8 +123,7 @@ exports[`2. tile b 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "paddingHorizontal": "10px",
-      "paddingTop": "10px",
+      "padding": "10px",
     }
   }
   url="/article/123"
@@ -160,7 +154,7 @@ exports[`2. tile b 1`] = `
           This is tile headline
         </h3>
         <div
-          className="css-text-901oao css-textMultiLine-cens5h r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r IS2 S3"
+          className="css-text-901oao css-textMultiLine-cens5h r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe IS2 S3"
         >
           <span
             className="css-text-901oao css-textHasAncestor-16my406"
@@ -189,14 +183,10 @@ exports[`2. tile b 1`] = `
 exports[`3. tile c 1`] = `
 <style>
 .S1 {
-  margin-bottom: 10px;
-}
-
-.S2 {
   margin-bottom: 0px;
 }
 
-.S3 {
+.S2 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-size: 22px;
@@ -205,6 +195,7 @@ exports[`3. tile c 1`] = `
 }
 
 .IS1 {
+  margin-bottom: 10px;
   width: 100%;
 }
 
@@ -212,20 +203,32 @@ exports[`3. tile c 1`] = `
   line-height: 22px;
   padding-bottom: 5px;
 }
+
+.IS3 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
 </style>
 
 <Link
   linkStyle={
     Object {
       "flex": 1,
-      "paddingHorizontal": "10px",
-      "paddingTop": "10px",
+      "padding": "10px",
     }
   }
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n r-marginBottom-15d164r IS1 S1"
+    className="css-view-1dbjc4n IS1"
   >
     <Image
       aspectRatio={1.7777777777777777}
@@ -234,10 +237,10 @@ exports[`3. tile c 1`] = `
     />
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="css-view-1dbjc4n IS3"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
     >
       <ArticleLabel
         color="#005B8D"
@@ -247,7 +250,7 @@ exports[`3. tile c 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S3"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
       role="heading"
     >
       This is tile headline
@@ -282,7 +285,6 @@ exports[`4. tile d 1`] = `
 
 .IS1 {
   width: 50%;
-  padding-right: 10px;
 }
 
 .IS2 {
@@ -291,8 +293,7 @@ exports[`4. tile d 1`] = `
 
 .IS3 {
   padding-bottom: 5px;
-  padding-right: 10px;
-  padding-top: 5px;
+  padding-left: 10px;
   width: 50%;
 }
 </style>
@@ -361,7 +362,6 @@ exports[`5. tile e 1`] = `
 
 .IS1 {
   width: 50%;
-  padding-right: 10px;
 }
 
 .IS2 {
@@ -370,8 +370,7 @@ exports[`5. tile e 1`] = `
 
 .IS3 {
   padding-bottom: 5px;
-  padding-right: 10px;
-  padding-top: 10px;
+  padding-left: 10px;
   width: 50%;
 }
 </style>
@@ -453,7 +452,6 @@ exports[`6. tile f 1`] = `
   font-family: TimesDigitalW04;
   font-size: 14px;
   line-height: 20px;
-  margin-bottom: 10px;
 }
 
 .IS1 {
@@ -465,8 +463,7 @@ exports[`6. tile f 1`] = `
 <Link
   linkStyle={
     Object {
-      "paddingHorizontal": "10px",
-      "paddingTop": "10px",
+      "padding": "10px",
     }
   }
   url="/article/123"
@@ -498,7 +495,7 @@ exports[`6. tile f 1`] = `
       Three Conservative MPs resign
     </h4>
     <div
-      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S4"
+      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe S4"
     >
       <span
         className="css-text-901oao css-textHasAncestor-16my406"
@@ -543,18 +540,38 @@ exports[`7. tile g 1`] = `
 
 .IS2 {
   line-height: 22px;
-  padding-bottom: 5px;
 }
 
 .IS3 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
   -webkit-justify-content: center;
   justify-content: center;
-  padding-bottom: 0px;
-  padding-left: 10px;
-  padding-top: 5px;
-  width: 70%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
   -ms-flex-pack: center;
   -webkit-box-pack: center;
+}
+
+.IS4 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  padding-left: 10px;
+  width: 70%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
 }
 </style>
 
@@ -577,34 +594,38 @@ exports[`7. tile g 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
   />
   <div
-    className="css-view-1dbjc4n IS3"
+    className="css-view-1dbjc4n IS4"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+      className="css-view-1dbjc4n IS3"
     >
-      <ArticleLabel
-        color="#005B8D"
-        isVideo={false}
-        title="label"
+      <div
+        className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+      >
+        <ArticleLabel
+          color="#005B8D"
+          isVideo={false}
+          title="label"
+        />
+      </div>
+      <h3
+        aria-level="3"
+        className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
+        role="heading"
+      >
+        This is tile headline
+      </h3>
+      <ArticleFlags
+        flags={
+          Array [
+            Object {
+              "expiryTime": "2030-03-14T12:00:00.000Z",
+              "type": "EXCLUSIVE",
+            },
+          ]
+        }
       />
     </div>
-    <h3
-      aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
-      role="heading"
-    >
-      This is tile headline
-    </h3>
-    <ArticleFlags
-      flags={
-        Array [
-          Object {
-            "expiryTime": "2030-03-14T12:00:00.000Z",
-            "type": "EXCLUSIVE",
-          },
-        ]
-      }
-    />
   </div>
 </Link>
 `;
@@ -620,7 +641,6 @@ exports[`8. tile h 1`] = `
   font-family: TimesModern-Bold;
   font-size: 22px;
   font-weight: 400;
-  margin-bottom: 10px;
 }
 
 .S3 {
@@ -632,7 +652,6 @@ exports[`8. tile h 1`] = `
   font-family: TimesDigitalW04;
   font-size: 14px;
   line-height: 20px;
-  margin-bottom: 10px;
 }
 
 .S4 {
@@ -644,19 +663,17 @@ exports[`8. tile h 1`] = `
 
 .IS1 {
   line-height: 22px;
+  margin-bottom: 10px;
 }
 
 .IS2 {
   padding-right: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
   width: 50%;
 }
 
 .IS3 {
   flex-direction: column;
   justify-content: flex-end;
-  padding-top: 10px;
   width: 50%;
 }
 </style>
@@ -665,7 +682,7 @@ exports[`8. tile h 1`] = `
   linkStyle={
     Object {
       "flexDirection": "row",
-      "paddingHorizontal": "10px",
+      "padding": "10px",
     }
   }
   url="/article/123"
@@ -684,13 +701,13 @@ exports[`8. tile h 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-15d164r IS1 S2"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 IS1 S2"
       role="heading"
     >
       This is tile headline
     </h3>
     <div
-      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
+      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe S3"
     >
       <span
         className="css-text-901oao css-textHasAncestor-16my406"
@@ -744,7 +761,6 @@ exports[`9. tile i 1`] = `
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
-  margin-bottom: 10px;
 }
 
 .IS1 {
@@ -754,6 +770,7 @@ exports[`9. tile i 1`] = `
 .IS2 {
   font-size: 35px;
   line-height: 35px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -793,7 +810,7 @@ exports[`9. tile i 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-15d164r IS2 S2"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 IS2 S2"
       role="heading"
     >
       This is tile headline
@@ -823,7 +840,6 @@ exports[`10. tile j 1`] = `
   font-family: TimesModern-Bold;
   font-size: 22px;
   font-weight: 400;
-  margin-bottom: 10px;
 }
 
 .IS1 {
@@ -832,10 +848,10 @@ exports[`10. tile j 1`] = `
 
 .IS2 {
   line-height: 22px;
+  margin-bottom: 10px;
 }
 
 .IS3 {
-  padding-right: 10px;
   padding-left: 10px;
   width: 60%;
 }
@@ -870,7 +886,7 @@ exports[`10. tile j 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-15d164r IS2 S2"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 IS2 S2"
       role="heading"
     >
       This is tile headline
@@ -899,7 +915,6 @@ exports[`11. tile k 1`] = `
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
-  margin-bottom: 10px;
 }
 
 .IS1 {
@@ -910,6 +925,7 @@ exports[`11. tile k 1`] = `
 .IS2 {
   font-size: 18px;
   line-height: 18px;
+  margin-bottom: 10px;
 }
 
 .IS3 {
@@ -946,7 +962,7 @@ exports[`11. tile k 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-15d164r IS2 S2"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 IS2 S2"
       role="heading"
     >
       This is tile headline
@@ -976,11 +992,24 @@ exports[`12. tile l 1`] = `
   font-family: TimesModern-Bold;
   font-weight: 400;
   line-height: 20px;
-  margin-bottom: 10px;
 }
 
 .IS1 {
   font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.IS2 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
 }
 </style>
 
@@ -988,14 +1017,13 @@ exports[`12. tile l 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "paddingHorizontal": "10px",
-      "paddingTop": "10px",
+      "padding": "10px",
     }
   }
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n"
+    className="css-view-1dbjc4n IS2"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
@@ -1008,7 +1036,7 @@ exports[`12. tile l 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-lineHeight-rjixqe r-marginBottom-15d164r IS1 S2"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-lineHeight-rjixqe IS1 S2"
       role="heading"
     >
       This is tile headline
@@ -1055,18 +1083,32 @@ exports[`13. tile m 1`] = `
   padding-left: 40px;
   text-align: center;
 }
+
+.IS3 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
 </style>
 
 <Link
   linkStyle={
     Object {
+      "flex": 1,
       "paddingBottom": "10px",
     }
   }
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n"
+    className="css-view-1dbjc4n IS3"
   >
     <h3
       aria-level="3"
@@ -1117,7 +1159,6 @@ exports[`14. tile n 1`] = `
 }
 
 .IS3 {
-  padding-right: 10px;
   padding-left: 10px;
   width: 50%;
 }
@@ -1198,12 +1239,26 @@ exports[`15. tile o 1`] = `
   margin-bottom: 11px;
   margin-top: 5px;
 }
+
+.IS2 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
 </style>
 
 <Link
   linkStyle={
     Object {
       "backgroundColor": "#272D34",
+      "flex": 1,
       "paddingHorizontal": 12,
       "paddingVertical": "10px",
     }
@@ -1211,7 +1266,7 @@ exports[`15. tile o 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n"
+    className="css-view-1dbjc4n IS2"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
@@ -1394,7 +1449,6 @@ exports[`17. tile q 1`] = `
 <Link
   linkStyle={
     Object {
-      "alignItems": "center",
       "paddingVertical": "10px",
     }
   }
@@ -1426,20 +1480,32 @@ exports[`18. tile r 1`] = `
   font-size: 40px;
   line-height: 40px;
 }
+
+.IS2 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
 </style>
 
 <Link
   linkStyle={
     Object {
-      "paddingBottom": "15px",
-      "paddingHorizontal": "30px",
-      "paddingTop": "15px",
+      "flex": 1,
+      "padding": "10px",
     }
   }
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n"
+    className="css-view-1dbjc4n IS2"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
@@ -1656,10 +1722,8 @@ exports[`21. tile t 1`] = `
 }
 
 .IS3 {
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-top: 5px;
   padding-bottom: 5px;
+  padding-left: 10px;
   width: 50%;
 }
 </style>
@@ -1722,15 +1786,28 @@ exports[`22. tile u 1`] = `
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
-  margin-bottom: 10px;
 }
 
 .IS1 {
   font-size: 30px;
   line-height: 30px;
+  margin-bottom: 10px;
 }
 
 .IS2 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
+
+.IS3 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   -webkit-flex-shrink: 1;
@@ -1745,7 +1822,7 @@ exports[`22. tile u 1`] = `
   -ms-flex-preferred-size: 0%;
 }
 
-.IS3 {
+.IS4 {
   width: 60%;
 }
 </style>
@@ -1762,46 +1839,50 @@ exports[`22. tile u 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS2"
+    className="css-view-1dbjc4n IS3"
   >
     <div
-      className="css-view-1dbjc4n"
+      className="css-view-1dbjc4n IS2"
     >
       <div
         className="css-view-1dbjc4n"
       >
         <div
-          className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+          className="css-view-1dbjc4n"
         >
-          <ArticleLabel
-            color="#005B8D"
-            isVideo={false}
-            title="label"
+          <div
+            className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+          >
+            <ArticleLabel
+              color="#005B8D"
+              isVideo={false}
+              title="label"
+            />
+          </div>
+          <h3
+            aria-level="3"
+            className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 IS1 S2"
+            role="heading"
+          >
+            This is tile headline
+          </h3>
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
-        <h3
-          aria-level="3"
-          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-15d164r IS1 S2"
-          role="heading"
-        >
-          This is tile headline
-        </h3>
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
       </div>
     </div>
   </div>
   <Image
     aspectRatio={1.5}
-    className="IS3"
+    className="IS4"
     fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
   />
@@ -1818,7 +1899,6 @@ exports[`23. tile v 1`] = `
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
-  margin-bottom: 5px;
 }
 
 .IS1 {
@@ -1829,7 +1909,20 @@ exports[`23. tile v 1`] = `
 .IS2 {
   font-size: 30px;
   line-height: 30px;
-  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.IS3 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
 }
 </style>
 
@@ -1850,7 +1943,7 @@ exports[`23. tile v 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
   <div
-    className="css-view-1dbjc4n"
+    className="css-view-1dbjc4n IS3"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
@@ -1863,7 +1956,7 @@ exports[`23. tile v 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 IS2 S2"
       role="heading"
     >
       This is tile headline
@@ -1907,6 +2000,19 @@ exports[`24. tile w 1`] = `
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
+
+.IS3 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
   padding-bottom: 5px;
   padding-right: 20px;
   width: 33.33%;
@@ -1916,7 +2022,7 @@ exports[`24. tile w 1`] = `
   -ms-flex-preferred-size: 0%;
 }
 
-.IS3 {
+.IS4 {
   width: 66.66%;
 }
 </style>
@@ -1933,46 +2039,50 @@ exports[`24. tile w 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS2"
+    className="css-view-1dbjc4n IS3"
   >
     <div
-      className="css-view-1dbjc4n"
+      className="css-view-1dbjc4n IS2"
     >
       <div
         className="css-view-1dbjc4n"
       >
         <div
-          className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+          className="css-view-1dbjc4n"
         >
-          <ArticleLabel
-            color="#005B8D"
-            isVideo={false}
-            title="label"
+          <div
+            className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+          >
+            <ArticleLabel
+              color="#005B8D"
+              isVideo={false}
+              title="label"
+            />
+          </div>
+          <h3
+            aria-level="3"
+            className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
+            role="heading"
+          >
+            This is tile headline
+          </h3>
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
-        <h3
-          aria-level="3"
-          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
-          role="heading"
-        >
-          This is tile headline
-        </h3>
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
       </div>
     </div>
   </div>
   <Image
     aspectRatio={1.5}
-    className="IS3"
+    className="IS4"
     fill={true}
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
   />
@@ -2009,13 +2119,6 @@ exports[`25. tile x 1`] = `
 }
 
 .IS3 {
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-.IS4 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   -webkit-flex-shrink: 1;
@@ -2033,20 +2136,19 @@ exports[`25. tile x 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "paddingHorizontal": "10px",
-      "paddingTop": "10px",
+      "padding": "10px",
     }
   }
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS4"
+    className="css-view-1dbjc4n IS3"
   >
     <div
       className="css-view-1dbjc4n"
     >
       <div
-        className="css-view-1dbjc4n IS3"
+        className="css-view-1dbjc4n"
       >
         <div
           className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
@@ -2109,7 +2211,6 @@ exports[`26. tile y 1`] = `
   font-family: TimesDigitalW04;
   font-size: 14px;
   line-height: 20px;
-  margin-bottom: 10px;
 }
 
 .IS1 {
@@ -2121,8 +2222,7 @@ exports[`26. tile y 1`] = `
 <Link
   linkStyle={
     Object {
-      "paddingHorizontal": "10px",
-      "paddingTop": "10px",
+      "padding": "10px",
     }
   }
   url="/article/123"
@@ -2147,7 +2247,7 @@ exports[`26. tile y 1`] = `
       This is tile headline
     </h3>
     <div
-      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
+      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe S3"
     >
       <span
         className="css-text-901oao css-textHasAncestor-16my406"
@@ -2181,25 +2281,29 @@ exports[`27. tile z 1`] = `
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
-  margin-bottom: 10px;
 }
 
 .IS1 {
   font-size: 25px;
   line-height: 25px;
+  margin-bottom: 10px;
+}
+
+.IS2 {
+  margin-bottom: 10px;
 }
 </style>
 
 <Link
   linkStyle={
     Object {
-      "margin": "10px",
+      "padding": "10px",
     }
   }
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n"
+    className="css-view-1dbjc4n IS2"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
@@ -2212,7 +2316,7 @@ exports[`27. tile z 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-15d164r IS1 S2"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 IS1 S2"
       role="heading"
     >
       This is tile headline
@@ -2257,9 +2361,7 @@ exports[`28. tile ab 1`] = `
 }
 
 .IS1 {
-  flex-direction: column;
-  justify-content: flex-end;
-  width: 50%;
+  flex: 1;
 }
 
 .IS2 {
@@ -2274,8 +2376,20 @@ exports[`28. tile ab 1`] = `
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
+
+.IS4 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
   padding-left: 20px;
-  width: 50%;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -2286,6 +2400,7 @@ exports[`28. tile ab 1`] = `
 <Link
   linkStyle={
     Object {
+      "flex": 1,
       "flexDirection": "row",
       "paddingHorizontal": "10px",
       "paddingVertical": "10px",
@@ -2300,53 +2415,57 @@ exports[`28. tile ab 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1195%2C1792%2C747%2C0"
   />
   <div
-    className="css-view-1dbjc4n IS3"
+    className="css-view-1dbjc4n IS4"
   >
     <div
-      className="css-view-1dbjc4n"
+      className="css-view-1dbjc4n IS3"
     >
       <div
         className="css-view-1dbjc4n"
       >
         <div
-          className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+          className="css-view-1dbjc4n"
         >
-          <ArticleLabel
-            color="#005B8D"
-            isVideo={false}
-            title="label"
+          <div
+            className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+          >
+            <ArticleLabel
+              color="#005B8D"
+              isVideo={false}
+              title="label"
+            />
+          </div>
+          <h3
+            aria-level="3"
+            className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
+            role="heading"
+          >
+            This is tile headline
+          </h3>
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
-        </div>
-        <h3
-          aria-level="3"
-          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
-          role="heading"
-        >
-          This is tile headline
-        </h3>
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
-        <div
-          className="css-text-901oao"
-        >
-          <span
-            className="css-text-901oao css-textHasAncestor-16my406 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S3"
+          <div
+            className="css-text-901oao"
           >
-            Richard Lloyd Parry
-          </span>
-          <span
-            className="css-text-901oao css-textHasAncestor-16my406 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S3"
-          >
-            , Hanoi
-          </span>
+            <span
+              className="css-text-901oao css-textHasAncestor-16my406 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S3"
+            >
+              Richard Lloyd Parry
+            </span>
+            <span
+              className="css-text-901oao css-textHasAncestor-16my406 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S3"
+            >
+              , Hanoi
+            </span>
+          </div>
         </div>
       </div>
     </div>
@@ -2364,12 +2483,12 @@ exports[`29. tile ae 1`] = `
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
-  margin-bottom: 10px;
 }
 
 .IS1 {
   font-size: 30px;
   line-height: 30px;
+  margin-bottom: 10px;
 }
 
 .IS2 {
@@ -2390,7 +2509,7 @@ exports[`29. tile ae 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "paddingHorizontal": "10px",
+      "padding": "10px",
       "paddingTop": "15px",
     }
   }
@@ -2416,7 +2535,7 @@ exports[`29. tile ae 1`] = `
         </div>
         <h3
           aria-level="3"
-          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-15d164r IS1 S2"
+          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 IS1 S2"
           role="heading"
         >
           This is tile headline
@@ -2463,11 +2582,25 @@ exports[`30. tile ag 1`] = `
   font-family: TimesDigitalW04-Regular;
   text-align: center;
 }
+
+.IS3 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
 </style>
 
 <Link
   linkStyle={
     Object {
+      "flex": 1,
       "paddingBottom": "10px",
       "paddingHorizontal": "20px",
     }
@@ -2475,7 +2608,7 @@ exports[`30. tile ag 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n"
+    className="css-view-1dbjc4n IS3"
   >
     <h3
       aria-level="3"
@@ -2633,8 +2766,8 @@ exports[`33. tile al 1`] = `
 }
 
 .IS1 {
-  padding-vertical: 10px;
   width: 100%;
+  margin-bottom: 10px;
 }
 
 .IS2 {
@@ -2655,8 +2788,7 @@ exports[`33. tile al 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "flexDirection": "column",
-      "paddingHorizontal": "10px",
+      "padding": "10px",
     }
   }
   url="/article/123"
@@ -2750,8 +2882,7 @@ exports[`34. tile am 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "paddingHorizontal": "10px",
-      "paddingTop": "10px",
+      "padding": "10px",
     }
   }
   url="/article/123"
@@ -2826,7 +2957,6 @@ exports[`35. tile an 1`] = `
   font-family: TimesDigitalW04;
   font-size: 14px;
   line-height: 20px;
-  margin-bottom: 10px;
 }
 
 .IS1 {
@@ -2838,11 +2968,19 @@ exports[`35. tile an 1`] = `
 }
 
 .IS3 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
   -webkit-justify-content: center;
   justify-content: center;
-  padding-right: 10px;
-  padding-left: 10px;
   padding-top: 10px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
   -ms-flex-pack: center;
   -webkit-box-pack: center;
 }
@@ -2851,6 +2989,7 @@ exports[`35. tile an 1`] = `
 <Link
   linkStyle={
     Object {
+      "flex": 1,
       "padding": "10px",
     }
   }
@@ -2884,7 +3023,7 @@ exports[`35. tile an 1`] = `
       This is tile headline
     </h3>
     <div
-      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
+      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe S3"
     >
       <span
         className="css-text-901oao css-textHasAncestor-16my406"
@@ -2932,11 +3071,19 @@ exports[`36. tile ap 1`] = `
 }
 
 .IS3 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
   -webkit-justify-content: center;
   justify-content: center;
-  padding-right: 10px;
-  padding-left: 10px;
   padding-top: 5px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
   -ms-flex-pack: center;
   -webkit-box-pack: center;
 }
@@ -2945,6 +3092,7 @@ exports[`36. tile ap 1`] = `
 <Link
   linkStyle={
     Object {
+      "flex": 1,
       "padding": "10px",
     }
   }
@@ -3014,7 +3162,6 @@ exports[`37. tile ad 1`] = `
 }
 
 .IS3 {
-  padding-right: 10px;
   padding-left: 10px;
   width: 70%;
 }
@@ -3104,8 +3251,8 @@ exports[`38. tile ac 1`] = `
   flex-basis: 0%;
   -webkit-justify-content: center;
   justify-content: center;
-  padding-right: 40px;
-  padding-left: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
   -ms-flex-align: center;
@@ -3170,14 +3317,10 @@ exports[`38. tile ac 1`] = `
 exports[`39. tile aq 1`] = `
 <style>
 .S1 {
-  margin-bottom: 10px;
-}
-
-.S2 {
   margin-bottom: 0px;
 }
 
-.S3 {
+.S2 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-size: 22px;
@@ -3186,6 +3329,7 @@ exports[`39. tile aq 1`] = `
 }
 
 .IS1 {
+  margin-bottom: 10px;
   width: 100%;
 }
 
@@ -3211,14 +3355,13 @@ exports[`39. tile aq 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "paddingHorizontal": "10px",
-      "paddingTop": "10px",
+      "padding": "10px",
     }
   }
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n r-marginBottom-15d164r IS1 S1"
+    className="css-view-1dbjc4n IS1"
   >
     <Image
       aspectRatio={1.7777777777777777}
@@ -3236,7 +3379,7 @@ exports[`39. tile aq 1`] = `
         className="css-view-1dbjc4n"
       >
         <div
-          className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
+          className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
         >
           <ArticleLabel
             color="#005B8D"
@@ -3246,7 +3389,7 @@ exports[`39. tile aq 1`] = `
         </div>
         <h3
           aria-level="3"
-          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S3"
+          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
           role="heading"
         >
           This is tile headline
@@ -3270,14 +3413,10 @@ exports[`39. tile aq 1`] = `
 exports[`40. tile ar 1`] = `
 <style>
 .S1 {
-  margin-bottom: 10px;
-}
-
-.S2 {
   margin-bottom: 0px;
 }
 
-.S3 {
+.S2 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
@@ -3285,7 +3424,7 @@ exports[`40. tile ar 1`] = `
   margin-bottom: 5px;
 }
 
-.S4 {
+.S3 {
   color: rgba(105,105,105,1.00);
   -ms-flex-wrap: wrap;
   -webkit-box-lines: multiple;
@@ -3294,10 +3433,10 @@ exports[`40. tile ar 1`] = `
   font-family: TimesDigitalW04;
   font-size: 14px;
   line-height: 20px;
-  margin-bottom: 10px;
 }
 
 .IS1 {
+  margin-bottom: 10px;
   width: 100%;
 }
 
@@ -3334,7 +3473,7 @@ exports[`40. tile ar 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n r-marginBottom-15d164r IS1 S1"
+    className="css-view-1dbjc4n IS1"
   >
     <Image
       aspectRatio={1.7777777777777777}
@@ -3352,7 +3491,7 @@ exports[`40. tile ar 1`] = `
         className="css-view-1dbjc4n"
       >
         <div
-          className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
+          className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
         >
           <ArticleLabel
             color="#005B8D"
@@ -3362,13 +3501,13 @@ exports[`40. tile ar 1`] = `
         </div>
         <h3
           aria-level="3"
-          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-lineHeight-rjixqe r-marginBottom-d0pm55 IS2 S3"
+          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-lineHeight-rjixqe r-marginBottom-d0pm55 IS2 S2"
           role="heading"
         >
           This is tile headline
         </h3>
         <div
-          className="css-text-901oao css-textMultiLine-cens5h r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r IS3 S4"
+          className="css-text-901oao css-textMultiLine-cens5h r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe IS3 S3"
         >
           <span
             className="css-text-901oao css-textHasAncestor-16my406"
@@ -3397,21 +3536,17 @@ exports[`40. tile ar 1`] = `
 exports[`41. tile as 1`] = `
 <style>
 .S1 {
-  margin-bottom: 10px;
-}
-
-.S2 {
   margin-bottom: 0px;
 }
 
-.S3 {
+.S2 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
   margin-bottom: 5px;
 }
 
-.S4 {
+.S3 {
   color: rgba(105,105,105,1.00);
   -ms-flex-wrap: wrap;
   -webkit-box-lines: multiple;
@@ -3420,16 +3555,29 @@ exports[`41. tile as 1`] = `
   font-family: TimesDigitalW04;
   font-size: 14px;
   line-height: 20px;
-  margin-bottom: 10px;
 }
 
 .IS1 {
+  margin-bottom: 10px;
   width: 100%;
 }
 
 .IS2 {
   font-size: 18px;
   line-height: 18px;
+}
+
+.IS3 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
 }
 </style>
 
@@ -3444,7 +3592,7 @@ exports[`41. tile as 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n r-marginBottom-15d164r IS1 S1"
+    className="css-view-1dbjc4n IS1"
   >
     <Image
       aspectRatio={1.5}
@@ -3453,10 +3601,10 @@ exports[`41. tile as 1`] = `
     />
   </div>
   <div
-    className="css-view-1dbjc4n"
+    className="css-view-1dbjc4n IS3"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
     >
       <ArticleLabel
         color="#005B8D"
@@ -3466,13 +3614,13 @@ exports[`41. tile as 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S3"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
       role="heading"
     >
       This is tile headline
     </h3>
     <div
-      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S4"
+      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe S3"
     >
       <span
         className="css-text-901oao css-textHasAncestor-16my406"
@@ -3538,9 +3686,19 @@ exports[`42. tile ah 1`] = `
 .IS4 {
   -webkit-align-items: center;
   align-items: center;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
   padding-top: 5px;
   -ms-flex-align: center;
   -webkit-box-align: center;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
 }
 </style>
 

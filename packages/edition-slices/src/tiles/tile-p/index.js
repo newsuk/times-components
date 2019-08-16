@@ -14,12 +14,7 @@ const TileP = ({ onPress, tile }) => {
   const crop = getTileImage(tile, "crop11");
 
   return (
-    <TileLink
-      onPress={onPress}
-      style={styles.container}
-      tile={tile}
-      withStar={false}
-    >
+    <TileLink onPress={onPress} style={styles.container} tile={tile}>
       <Image
         aspectRatio={1}
         relativeWidth={crop.relativeWidth}
@@ -39,9 +34,8 @@ const TileP = ({ onPress, tile }) => {
         strapline={getTileStrapline(tile)}
         straplineStyle={styles.strapline}
         style={styles.summaryContainer}
-        starStyle={styles.star}
         tile={tile}
-        withStar
+        centeredStar
       />
     </TileLink>
   );

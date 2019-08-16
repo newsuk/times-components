@@ -12,11 +12,10 @@ import styleFactory from "./styles";
 
 const TileAD = ({ onPress, tile, breakpoint }) => {
   const styles = styleFactory(breakpoint);
-  const { container, headline, imageContainer, summaryContainer } = styles;
   const crop = getTileImage(tile, "crop32");
 
   return (
-    <TileLink onPress={onPress} style={container} tile={tile}>
+    <TileLink onPress={onPress} style={styles.container} tile={tile}>
       {breakpoint !== editionBreakpoints.medium && (
         <Image
           aspectRatio={3 / 2}
@@ -24,14 +23,14 @@ const TileAD = ({ onPress, tile, breakpoint }) => {
           relativeHeight={crop.relativeHeight}
           relativeHorizontalOffset={crop.relativeHorizontalOffset}
           relativeVerticalOffset={crop.relativeVerticalOffset}
-          style={imageContainer}
+          style={styles.imageContainer}
           uri={crop.url}
           fill
         />
       )}
       <TileSummary
-        headlineStyle={headline}
-        style={summaryContainer}
+        headlineStyle={styles.headline}
+        style={styles.summaryContainer}
         tile={tile}
       />
     </TileLink>

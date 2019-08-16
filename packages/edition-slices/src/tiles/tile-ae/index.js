@@ -8,14 +8,10 @@ import {
 } from "../shared";
 import styles from "./styles";
 import WithoutWhiteSpace from "../shared/without-white-space";
+import PositionedTileStar from "../shared/positioned-tile-star";
 
 const TileAE = ({ onPress, tile }) => (
-  <TileLink
-    onPress={onPress}
-    style={styles.container}
-    tile={tile}
-    starStyle={styles.star}
-  >
+  <TileLink onPress={onPress} style={styles.container} tile={tile}>
     <WithoutWhiteSpace
       render={whiteSpaceHeight => (
         <TileSummary
@@ -23,9 +19,11 @@ const TileAE = ({ onPress, tile }) => (
           summary={getTileSummary(tile, 800)}
           tile={tile}
           whiteSpaceHeight={whiteSpaceHeight}
+          withStar={false}
         />
       )}
     />
+    <PositionedTileStar articleId={tile.article.id} />
   </TileLink>
 );
 

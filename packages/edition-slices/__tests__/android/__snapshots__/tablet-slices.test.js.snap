@@ -310,12 +310,14 @@ exports[`11. secondary two and two - medium 1`] = `
     <View>
       <View>
         <TileG
+          breakpoint="medium"
           tileName="support1"
         />
       </View>
       <View />
       <View>
         <TileG
+          breakpoint="medium"
           tileName="support2"
         />
       </View>

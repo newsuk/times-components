@@ -27,12 +27,15 @@ const styles = breakpoint => ({
     width: "30%"
   },
   summaryContainer: {
-    paddingHorizontal: spacing(2),
-    width: "70%"
+    width: "70%",
+    paddingLeft: spacing(2)
   }
 });
 
 const mediumBreakpointStyles = {
+  imageContainer: {
+    width: "100%"
+  },
   summaryContainer: {
     width: "100%"
   }

@@ -1,4 +1,5 @@
 import React from "react";
+import { View } from "react-native";
 import PropTypes from "prop-types";
 import Image from "@times-components/image";
 import { editionBreakpoints } from "@times-components/styleguide";
@@ -11,6 +12,7 @@ import {
 } from "../shared";
 import styleFactory from "./styles";
 import WithoutWhiteSpace from "../shared/without-white-space";
+import PositionedTileStar from "../shared/positioned-tile-star";
 
 const TileAB = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
   const styles = styleFactory(breakpoint);
@@ -28,18 +30,21 @@ const TileAB = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
         uri={crop.url}
         fill
       />
-      <WithoutWhiteSpace
-        styles={styles.summaryContainer}
-        render={whiteSpaceHeight => (
-          <TileSummary
-            bylines={tile.article.bylines}
-            headlineStyle={styles.headline}
-            summary={getTileSummary(tile, 800)}
-            tile={tile}
-            whiteSpaceHeight={whiteSpaceHeight}
-          />
-        )}
-      />
+      <View style={styles.summaryContainer}>
+        <WithoutWhiteSpace
+          render={whiteSpaceHeight => (
+            <TileSummary
+              bylines={tile.article.bylines}
+              headlineStyle={styles.headline}
+              summary={getTileSummary(tile, 800)}
+              tile={tile}
+              whiteSpaceHeight={whiteSpaceHeight}
+              withStar={false}
+            />
+          )}
+        />
+        <PositionedTileStar articleId={tile.article.id} />
+      </View>
     </TileLink>
   );
 };

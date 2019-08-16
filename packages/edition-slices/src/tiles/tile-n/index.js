@@ -16,12 +16,7 @@ const TileN = ({ isDarkStar, onPress, tile, breakpoint }) => {
   const crop = getTileImage(tile, "crop11");
 
   return (
-    <TileLink
-      onPress={onPress}
-      style={styles.container}
-      tile={tile}
-      isDarkStar={isDarkStar}
-    >
+    <TileLink onPress={onPress} style={styles.container} tile={tile}>
       <Image
         aspectRatio={1}
         relativeWidth={crop.relativeWidth}
@@ -40,6 +35,7 @@ const TileN = ({ isDarkStar, onPress, tile, breakpoint }) => {
         straplineStyle={styles.strapline}
         style={styles.summaryContainer}
         tile={tile}
+        isDarkStar={isDarkStar}
       />
     </TileLink>
   );

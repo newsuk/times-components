@@ -25,7 +25,7 @@ class LeadersSlice extends Component {
   constructor(props) {
     super(props);
     this.renderSmall = this.renderSmall.bind(this);
-    this.renderHuge = this.renderHuge.bind(this);
+    this.renderWide = this.renderWide.bind(this);
   }
 
   renderSmall(breakpoint) {
@@ -69,7 +69,7 @@ class LeadersSlice extends Component {
     );
   }
 
-  renderHuge(breakpoint) {
+  renderWide(breakpoint) {
     const {
       onPress,
       slice: { leader1, leader2, leader3 }
@@ -113,10 +113,10 @@ class LeadersSlice extends Component {
   render() {
     return (
       <ResponsiveSlice
-        renderHuge={this.renderHuge}
+        renderHuge={this.renderWide}
         renderMedium={this.renderSmall}
         renderSmall={this.renderSmall}
-        renderWide={this.renderHuge}
+        renderWide={this.renderWide}
       />
     );
   }

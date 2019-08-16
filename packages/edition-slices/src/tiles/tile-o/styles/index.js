@@ -2,6 +2,7 @@ import { fonts, spacing, colours } from "@times-components/styleguide";
 
 const styles = {
   container: {
+    flex: 1,
     backgroundColor: colours.functional.darkSupplement,
     paddingHorizontal: 12,
     paddingVertical: spacing(2)
@@ -16,6 +17,9 @@ const styles = {
     lineHeight: 18,
     marginBottom: 11,
     marginTop: spacing(1)
+  },
+  summaryContainer: {
+    flex: 1
   }
 };
 

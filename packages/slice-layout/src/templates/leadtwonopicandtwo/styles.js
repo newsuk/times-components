@@ -31,7 +31,6 @@ const wideBreakpointStyles = {
     width: "42%"
   },
   middleTile: {
-    paddingTop: spacing(2),
     width: "16%"
   }
 };

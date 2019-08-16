@@ -9,7 +9,11 @@ const TileL = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
 
   return (
     <TileLink onPress={onPress} style={styles.container} tile={tile}>
-      <TileSummary headlineStyle={styles.headlineStyle} tile={tile} />
+      <TileSummary
+        headlineStyle={styles.headlineStyle}
+        tile={tile}
+        style={styles.summaryContainer}
+      />
     </TileLink>
   );
 };

@@ -34,7 +34,6 @@ const SecondaryOneAndFourSlice = ({
         <View>{secondary}</View>
       </View>
       <ItemColSeparator style={styles.separator} />
-
       <View style={styles.itemContainer}>
         <View style={styles.item}>{support1}</View>
         <ItemRowSeparator style={styles.separator} />

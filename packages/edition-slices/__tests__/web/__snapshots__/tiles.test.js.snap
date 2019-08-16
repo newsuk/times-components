@@ -2,11 +2,6 @@
 
 exports[`1. tile a 1`] = `
 <Link
-  linkStyle={
-    Object {
-      "marginTop": "5px",
-    }
-  }
   url="/article/123"
 >
   <div>
@@ -47,8 +42,7 @@ exports[`2. tile b 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "paddingHorizontal": "10px",
-      "paddingTop": "10px",
+      "padding": "10px",
     }
   }
   url="/article/123"
@@ -97,8 +91,7 @@ exports[`3. tile c 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "paddingHorizontal": "10px",
-      "paddingTop": "10px",
+      "padding": "10px",
     }
   }
   url="/article/123"
@@ -228,8 +221,7 @@ exports[`6. tile f 1`] = `
 <Link
   linkStyle={
     Object {
-      "paddingHorizontal": "10px",
-      "paddingTop": "10px",
+      "padding": "10px",
     }
   }
   url="/article/123"
@@ -295,28 +287,30 @@ exports[`7. tile g 1`] = `
   />
   <div>
     <div>
-      <ArticleLabel
-        color="#005B8D"
-        isVideo={false}
-        title="label"
+      <div>
+        <ArticleLabel
+          color="#005B8D"
+          isVideo={false}
+          title="label"
+        />
+      </div>
+      <h3
+        aria-level="3"
+        role="heading"
+      >
+        This is tile headline
+      </h3>
+      <ArticleFlags
+        flags={
+          Array [
+            Object {
+              "expiryTime": "2030-03-14T12:00:00.000Z",
+              "type": "EXCLUSIVE",
+            },
+          ]
+        }
       />
     </div>
-    <h3
-      aria-level="3"
-      role="heading"
-    >
-      This is tile headline
-    </h3>
-    <ArticleFlags
-      flags={
-        Array [
-          Object {
-            "expiryTime": "2030-03-14T12:00:00.000Z",
-            "type": "EXCLUSIVE",
-          },
-        ]
-      }
-    />
   </div>
 </Link>
 `;
@@ -326,7 +320,7 @@ exports[`8. tile h 1`] = `
   linkStyle={
     Object {
       "flexDirection": "row",
-      "paddingHorizontal": "10px",
+      "padding": "10px",
     }
   }
   url="/article/123"
@@ -507,8 +501,7 @@ exports[`12. tile l 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "paddingHorizontal": "10px",
-      "paddingTop": "10px",
+      "padding": "10px",
     }
   }
   url="/article/123"
@@ -545,6 +538,7 @@ exports[`13. tile m 1`] = `
 <Link
   linkStyle={
     Object {
+      "flex": 1,
       "paddingBottom": "10px",
     }
   }
@@ -624,6 +618,7 @@ exports[`15. tile o 1`] = `
   linkStyle={
     Object {
       "backgroundColor": "#272D34",
+      "flex": 1,
       "paddingHorizontal": 12,
       "paddingVertical": "10px",
     }
@@ -723,7 +718,6 @@ exports[`17. tile q 1`] = `
 <Link
   linkStyle={
     Object {
-      "alignItems": "center",
       "paddingVertical": "10px",
     }
   }
@@ -741,9 +735,8 @@ exports[`18. tile r 1`] = `
 <Link
   linkStyle={
     Object {
-      "paddingBottom": "15px",
-      "paddingHorizontal": "30px",
-      "paddingTop": "15px",
+      "flex": 1,
+      "padding": "10px",
     }
   }
   url="/article/123"
@@ -911,28 +904,30 @@ exports[`22. tile u 1`] = `
     <div>
       <div>
         <div>
-          <ArticleLabel
-            color="#005B8D"
-            isVideo={false}
-            title="label"
+          <div>
+            <ArticleLabel
+              color="#005B8D"
+              isVideo={false}
+              title="label"
+            />
+          </div>
+          <h3
+            aria-level="3"
+            role="heading"
+          >
+            This is tile headline
+          </h3>
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
-        <h3
-          aria-level="3"
-          role="heading"
-        >
-          This is tile headline
-        </h3>
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
       </div>
     </div>
   </div>
@@ -1004,28 +999,30 @@ exports[`24. tile w 1`] = `
     <div>
       <div>
         <div>
-          <ArticleLabel
-            color="#005B8D"
-            isVideo={false}
-            title="label"
+          <div>
+            <ArticleLabel
+              color="#005B8D"
+              isVideo={false}
+              title="label"
+            />
+          </div>
+          <h3
+            aria-level="3"
+            role="heading"
+          >
+            This is tile headline
+          </h3>
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
         </div>
-        <h3
-          aria-level="3"
-          role="heading"
-        >
-          This is tile headline
-        </h3>
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
       </div>
     </div>
   </div>
@@ -1042,8 +1039,7 @@ exports[`25. tile x 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "paddingHorizontal": "10px",
-      "paddingTop": "10px",
+      "padding": "10px",
     }
   }
   url="/article/123"
@@ -1090,8 +1086,7 @@ exports[`26. tile y 1`] = `
 <Link
   linkStyle={
     Object {
-      "paddingHorizontal": "10px",
-      "paddingTop": "10px",
+      "padding": "10px",
     }
   }
   url="/article/123"
@@ -1135,7 +1130,7 @@ exports[`27. tile z 1`] = `
 <Link
   linkStyle={
     Object {
-      "margin": "10px",
+      "padding": "10px",
     }
   }
   url="/article/123"
@@ -1177,6 +1172,7 @@ exports[`28. tile ab 1`] = `
 <Link
   linkStyle={
     Object {
+      "flex": 1,
       "flexDirection": "row",
       "paddingHorizontal": "10px",
       "paddingVertical": "10px",
@@ -1193,35 +1189,37 @@ exports[`28. tile ab 1`] = `
     <div>
       <div>
         <div>
-          <ArticleLabel
-            color="#005B8D"
-            isVideo={false}
-            title="label"
+          <div>
+            <ArticleLabel
+              color="#005B8D"
+              isVideo={false}
+              title="label"
+            />
+          </div>
+          <h3
+            aria-level="3"
+            role="heading"
+          >
+            This is tile headline
+          </h3>
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
           />
-        </div>
-        <h3
-          aria-level="3"
-          role="heading"
-        >
-          This is tile headline
-        </h3>
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
-        <div>
-          <span>
-            Richard Lloyd Parry
-          </span>
-          <span>
-            , Hanoi
-          </span>
+          <div>
+            <span>
+              Richard Lloyd Parry
+            </span>
+            <span>
+              , Hanoi
+            </span>
+          </div>
         </div>
       </div>
     </div>
@@ -1234,7 +1232,7 @@ exports[`29. tile ae 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "paddingHorizontal": "10px",
+      "padding": "10px",
       "paddingTop": "15px",
     }
   }
@@ -1276,6 +1274,7 @@ exports[`30. tile ag 1`] = `
 <Link
   linkStyle={
     Object {
+      "flex": 1,
       "paddingBottom": "10px",
       "paddingHorizontal": "20px",
     }
@@ -1365,8 +1364,7 @@ exports[`33. tile al 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "flexDirection": "column",
-      "paddingHorizontal": "10px",
+      "padding": "10px",
     }
   }
   url="/article/123"
@@ -1413,8 +1411,7 @@ exports[`34. tile am 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "paddingHorizontal": "10px",
-      "paddingTop": "10px",
+      "padding": "10px",
     }
   }
   url="/article/123"
@@ -1460,6 +1457,7 @@ exports[`35. tile an 1`] = `
 <Link
   linkStyle={
     Object {
+      "flex": 1,
       "padding": "10px",
     }
   }
@@ -1511,6 +1509,7 @@ exports[`36. tile ap 1`] = `
 <Link
   linkStyle={
     Object {
+      "flex": 1,
       "padding": "10px",
     }
   }
@@ -1643,8 +1642,7 @@ exports[`39. tile aq 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "paddingHorizontal": "10px",
-      "paddingTop": "10px",
+      "padding": "10px",
     }
   }
   url="/article/123"

@@ -21,17 +21,13 @@ const mediumBreakpointStyles = {
     fontFamily: fonts.headlineRegular,
     fontSize: 24,
     lineHeight: 26
-  },
-  star: {
-    bottom: spacing(1)
   }
 };
 
 const wideBreakpointStyles = {
   container: {
     flex: 1,
-    paddingHorizontal: spacing(2),
-    paddingTop: spacing(2)
+    padding: spacing(2)
   },
   headline: {
     fontFamily: fonts.headline,
@@ -44,10 +40,6 @@ const wideBreakpointStyles = {
       fontSize: "pageComponentHeadline"
     }),
     paddingBottom: spacing(1)
-  },
-  summaryContainer: {
-    marginHorizontal: spacing(2),
-    marginVertical: spacing(1)
   }
 };
 

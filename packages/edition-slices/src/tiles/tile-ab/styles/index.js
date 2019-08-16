@@ -13,6 +13,7 @@ const headlineFontSizeResolver = {
 
 export default breakpoint => ({
   container: {
+    flex: 1,
     flexDirection: "row",
     paddingHorizontal: spacing(2),
     paddingVertical:
@@ -21,19 +22,13 @@ export default breakpoint => ({
   headline: {
     fontFamily: fonts.headline,
     fontSize: headlineFontSizeResolver[breakpoint],
-    lineHeight: headlineFontSizeResolver[breakpoint],
-    marginBottom: spacing(1)
-  },
-  image: {
-    alignSelf: "flex-end"
+    lineHeight: headlineFontSizeResolver[breakpoint]
   },
   imageContainer: {
-    flexDirection: "column",
-    justifyContent: "flex-end",
-    width: "50%"
+    flex: 1
   },
   summaryContainer: {
-    paddingLeft: spacing(4),
-    width: "50%"
+    flex: 1,
+    paddingLeft: spacing(4)
   }
 });

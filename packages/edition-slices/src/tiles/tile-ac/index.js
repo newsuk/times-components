@@ -12,30 +12,26 @@ import styleFactory from "./styles";
 
 const TileAC = ({ onPress, tile, breakpoint }) => {
   const styles = styleFactory(breakpoint);
-  const { container, headline, imageContainer, summaryContainer } = styles;
   const crop = getTileImage(tile, "crop169");
 
   return (
-    <TileLink
-      onPress={onPress}
-      style={container}
-      tile={tile}
-      starStyle={styles.star}
-    >
+    <TileLink onPress={onPress} style={styles.container} tile={tile}>
       <Image
         aspectRatio={16 / 9}
         relativeWidth={crop.relativeWidth}
         relativeHeight={crop.relativeHeight}
         relativeHorizontalOffset={crop.relativeHorizontalOffset}
         relativeVerticalOffset={crop.relativeVerticalOffset}
-        style={imageContainer}
+        style={styles.imageContainer}
         uri={crop.url}
         fill
       />
       <TileSummary
-        headlineStyle={headline}
-        style={summaryContainer}
+        headlineStyle={styles.headline}
+        style={styles.summaryContainer}
         tile={tile}
+        centeredStar
+        underneathTextStar
       />
     </TileLink>
   );

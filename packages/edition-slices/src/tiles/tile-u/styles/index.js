@@ -38,14 +38,8 @@ const mediumBreakpointStyles = {
   },
   summaryContainer: {
     ...sharedStyles.summaryContainer,
+    flex: 1,
     paddingRight: spacing(4)
-  },
-  star: {
-    starButton: {
-      position: "absolute",
-      right: spacing(3),
-      bottom: -spacing(1)
-    }
   }
 };
 
@@ -61,7 +55,6 @@ const wideBreakpointStyles = {
   },
   summaryContainer: {
     ...sharedStyles.summaryContainer,
-    paddingBottom: spacing(1),
     paddingRight: spacing(4)
   }
 };

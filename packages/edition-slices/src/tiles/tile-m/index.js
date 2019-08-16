@@ -20,15 +20,14 @@ const TileM = ({ onPress, tile, breakpoint }) => {
       onPress={onPress}
       style={styles.container}
       tile={tileWithoutLabelAndFlags}
-      withStar={false}
     >
       <TileSummary
         headlineStyle={styles.headline}
-        starStyle={styles.star}
         strapline={getTileStrapline(tile)}
         straplineStyle={styles.strapline}
+        style={styles.summaryContainer}
         tile={tileWithoutLabelAndFlags}
-        withStar
+        centeredStar
       />
     </TileLink>
   );

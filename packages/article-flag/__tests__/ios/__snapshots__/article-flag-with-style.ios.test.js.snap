@@ -45,7 +45,7 @@ exports[`2. multiple article flags 1`] = `
     Object {
       "flexDirection": "row",
       "flexWrap": "wrap",
-      "marginBottom": 10,
+      "marginTop": 10,
     }
   }
 >

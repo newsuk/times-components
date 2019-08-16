@@ -17,16 +17,10 @@ const main = {
     width: "66.66%"
   },
   summaryContainer: {
+    flex: 1,
     paddingBottom: spacing(1),
     paddingRight: spacing(4),
     width: "33.33%"
-  },
-  star: {
-    alignItems: "flex-start",
-    flex: 1,
-    marginTop: spacing(-1),
-    marginLeft: spacing(5),
-    width: "75%"
   }
 };
 
@@ -45,53 +39,32 @@ const mediumStyles = {
     marginBottom: spacing(2)
   },
   summaryContainer: {
+    flex: 1,
     width: "51.5%",
     paddingRight: spacing(4)
   },
   imageContainer: {
     width: "48.5%"
-  },
-  star: {
-    starButton: {
-      position: "absolute",
-      right: -spacing(1),
-      bottom: -spacing(1)
-    }
   }
 };
 
 const wideStyles = {
-  star: {
-    alignItems: "flex-start",
-    flex: 1,
-    marginTop: spacing(-1),
-    width: "72%"
-  },
-  headline: {
-    fontFamily: fonts.headline,
-    fontSize: 35,
-    lineHeight: 35
-  }
-};
-
-const hugeStyles = {
   headline: {
     fontFamily: fonts.headline,
     fontSize: 35,
     lineHeight: 35
   },
-  star: {
-    alignItems: "flex-start",
+  summaryContainer: {
     flex: 1,
-    marginTop: spacing(-1),
-    width: "72%"
+    width: "33.33%",
+    paddingRight: spacing(4)
   }
 };
 
 const stylesResolver = {
   medium: mediumStyles,
   wide: wideStyles,
-  huge: hugeStyles
+  huge: wideStyles
 };
 
 export default breakpoint => ({

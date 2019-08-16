@@ -31,7 +31,7 @@ const styles = fontSize => ({
     fontSize: 14
   },
   summaryContainer: {
-    paddingHorizontal: spacing(2),
+    paddingLeft: spacing(2),
     width: "50%"
   }
 });

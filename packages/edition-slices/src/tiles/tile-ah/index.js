@@ -15,12 +15,7 @@ const TileAH = ({ onPress, tile, breakpoint }) => {
   const styles = stylesFactory(breakpoint);
 
   return (
-    <TileLink
-      onPress={onPress}
-      style={styles.container}
-      tile={tile}
-      starStyle={styles.star}
-    >
+    <TileLink onPress={onPress} style={styles.container} tile={tile}>
       <Image
         aspectRatio={1}
         relativeWidth={crop.relativeWidth}
@@ -39,6 +34,7 @@ const TileAH = ({ onPress, tile, breakpoint }) => {
         straplineStyle={styles.strapline}
         style={styles.summaryContainer}
         tile={tile}
+        centeredStar
       />
     </TileLink>
   );

@@ -165,7 +165,6 @@ exports[`3. lead two no pic and two - wide 1`] = `
   <View
     style={
       Object {
-        "paddingTop": 10,
         "width": "16%",
       }
     }
@@ -245,7 +244,6 @@ exports[`4. lead two no pic and two - huge 1`] = `
   <View
     style={
       Object {
-        "paddingTop": 10,
         "width": "16%",
       }
     }

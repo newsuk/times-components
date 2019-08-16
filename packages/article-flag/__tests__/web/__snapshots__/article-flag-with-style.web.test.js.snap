@@ -202,7 +202,7 @@ exports[`2. multiple article flags 1`] = `
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-bottom: 10px;
+  margin-top: 10px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-box-lines: multiple;

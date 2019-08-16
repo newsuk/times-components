@@ -3,19 +3,19 @@ import { editionBreakpoints, spacing } from "@times-components/styleguide";
 const smallBreakpointStyles = {};
 
 const mediumBreakpointStyles = {
-  columnistContainer: {
-    width: "73%"
-  },
   container: {
     flex: 1,
     flexDirection: "row",
-    paddingHorizontal: spacing(4)
+    marginHorizontal: spacing(4)
+  },
+  columnistContainer: {
+    width: "73%"
   },
   secondaryContainer: {
     width: "27%"
   },
-  separator: {
-    marginBottom: 0
+  colSeparator: {
+    marginVertical: spacing(3)
   }
 };
 

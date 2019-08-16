@@ -14,11 +14,6 @@ const styles = {
   imageContainer: {
     marginBottom: spacing(2),
     width: "100%"
-  },
-  star: {
-    starButton: {
-      right: spacing(1)
-    }
   }
 };
 

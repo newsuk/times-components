@@ -5,8 +5,7 @@ exports[`1. tile a 1`] = `
   <View
     style={
       Object {
-        "marginHorizontal": 10,
-        "marginTop": 10,
+        "margin": 10,
       }
     }
   >
@@ -87,7 +86,6 @@ exports[`2. tile b 1`] = `
               "fontFamily": "TimesDigitalW04",
               "fontSize": 14,
               "lineHeight": 20,
-              "marginBottom": 10,
             }
           }
         >
@@ -116,7 +114,13 @@ exports[`3. tile c 1`] = `
   >
     <Image />
   </View>
-  <View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
     <View
       style={
         Object {
@@ -151,7 +155,6 @@ exports[`4. tile d 1`] = `
   <Image
     style={
       Object {
-        "paddingRight": 10,
         "width": "50%",
       }
     }
@@ -160,8 +163,7 @@ exports[`4. tile d 1`] = `
     style={
       Object {
         "paddingBottom": 5,
-        "paddingRight": 10,
-        "paddingTop": 5,
+        "paddingLeft": 10,
         "width": "50%",
       }
     }
@@ -199,7 +201,6 @@ exports[`5. tile e 1`] = `
   <Image
     style={
       Object {
-        "paddingRight": 10,
         "width": "50%",
       }
     }
@@ -208,8 +209,7 @@ exports[`5. tile e 1`] = `
     style={
       Object {
         "paddingBottom": 5,
-        "paddingRight": 10,
-        "paddingTop": 10,
+        "paddingLeft": 10,
         "width": "50%",
       }
     }
@@ -289,7 +289,6 @@ exports[`6. tile f 1`] = `
           "fontFamily": "TimesDigitalW04",
           "fontSize": 14,
           "lineHeight": 20,
-          "marginBottom": 10,
         }
       }
     >
@@ -317,10 +316,8 @@ exports[`7. tile g 1`] = `
   <View
     style={
       Object {
-        "justifyContent": "center",
-        "paddingBottom": 0,
+        "flex": 1,
         "paddingLeft": 10,
-        "paddingTop": 5,
         "width": "70%",
       }
     }
@@ -328,28 +325,36 @@ exports[`7. tile g 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 0,
+          "flex": 1,
+          "justifyContent": "center",
         }
       }
     >
-      <ArticleLabel />
+      <View
+        style={
+          Object {
+            "marginBottom": 0,
+          }
+        }
+      >
+        <ArticleLabel />
+      </View>
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "fontFamily": "TimesModern-Bold",
+            "fontSize": 22,
+            "fontWeight": "900",
+            "lineHeight": 22,
+            "marginBottom": 5,
+          }
+        }
+      >
+        This is tile headline
+      </Text>
+      <ArticleFlags />
     </View>
-    <Text
-      style={
-        Object {
-          "color": "#333333",
-          "fontFamily": "TimesModern-Bold",
-          "fontSize": 22,
-          "fontWeight": "900",
-          "lineHeight": 22,
-          "marginBottom": 5,
-          "paddingBottom": 5,
-        }
-      }
-    >
-      This is tile headline
-    </Text>
-    <ArticleFlags />
   </View>
 </Link>
 `;
@@ -360,7 +365,6 @@ exports[`8. tile h 1`] = `
     style={
       Object {
         "paddingRight": 10,
-        "paddingVertical": 10,
         "width": "50%",
       }
     }
@@ -396,7 +400,6 @@ exports[`8. tile h 1`] = `
           "fontFamily": "TimesDigitalW04",
           "fontSize": 14,
           "lineHeight": 20,
-          "marginBottom": 10,
         }
       }
     >
@@ -441,7 +444,6 @@ exports[`8. tile h 1`] = `
       Object {
         "flexDirection": "column",
         "justifyContent": "flex-end",
-        "paddingTop": 10,
         "width": "50%",
       }
     }
@@ -510,7 +512,7 @@ exports[`10. tile j 1`] = `
   <View
     style={
       Object {
-        "paddingHorizontal": 10,
+        "paddingLeft": 10,
         "width": "60%",
       }
     }
@@ -590,7 +592,13 @@ exports[`11. tile k 1`] = `
 
 exports[`12. tile l 1`] = `
 <Link>
-  <View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
     <View
       style={
         Object {
@@ -621,7 +629,13 @@ exports[`12. tile l 1`] = `
 
 exports[`13. tile m 1`] = `
 <Link>
-  <View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
     <Text
       style={
         Object {
@@ -670,7 +684,7 @@ exports[`14. tile n 1`] = `
   <View
     style={
       Object {
-        "paddingHorizontal": 10,
+        "paddingLeft": 10,
         "width": "50%",
       }
     }
@@ -718,7 +732,13 @@ exports[`14. tile n 1`] = `
 
 exports[`15. tile o 1`] = `
 <Link>
-  <View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
     <View
       style={
         Object {
@@ -857,7 +877,13 @@ exports[`17. tile q 1`] = `
 
 exports[`18. tile r 1`] = `
 <Link>
-  <View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
     <View
       style={
         Object {
@@ -1075,8 +1101,8 @@ exports[`21. tile t 1`] = `
   <View
     style={
       Object {
-        "paddingHorizontal": 10,
-        "paddingVertical": 5,
+        "paddingBottom": 5,
+        "paddingLeft": 10,
         "width": "50%",
       }
     }
@@ -1120,32 +1146,40 @@ exports[`22. tile u 1`] = `
       }
     }
   >
-    <View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
       <View>
-        <View
-          style={
-            Object {
-              "marginBottom": 0,
+        <View>
+          <View
+            style={
+              Object {
+                "marginBottom": 0,
+              }
             }
-          }
-        >
-          <ArticleLabel />
+          >
+            <ArticleLabel />
+          </View>
+          <Text
+            style={
+              Object {
+                "color": "#333333",
+                "fontFamily": "TimesModern-Bold",
+                "fontSize": 30,
+                "fontWeight": "900",
+                "lineHeight": 30,
+                "marginBottom": 10,
+              }
+            }
+          >
+            This is tile headline
+          </Text>
+          <ArticleFlags />
         </View>
-        <Text
-          style={
-            Object {
-              "color": "#333333",
-              "fontFamily": "TimesModern-Bold",
-              "fontSize": 30,
-              "fontWeight": "900",
-              "lineHeight": 30,
-              "marginBottom": 10,
-            }
-          }
-        >
-          This is tile headline
-        </Text>
-        <ArticleFlags />
       </View>
     </View>
   </View>
@@ -1169,7 +1203,13 @@ exports[`23. tile v 1`] = `
       }
     }
   />
-  <View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
     <View
       style={
         Object {
@@ -1187,8 +1227,7 @@ exports[`23. tile v 1`] = `
           "fontSize": 30,
           "fontWeight": "900",
           "lineHeight": 30,
-          "marginBottom": 5,
-          "paddingBottom": 5,
+          "marginBottom": 10,
         }
       }
     >
@@ -1211,32 +1250,40 @@ exports[`24. tile w 1`] = `
       }
     }
   >
-    <View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
       <View>
-        <View
-          style={
-            Object {
-              "marginBottom": 0,
+        <View>
+          <View
+            style={
+              Object {
+                "marginBottom": 0,
+              }
             }
-          }
-        >
-          <ArticleLabel />
+          >
+            <ArticleLabel />
+          </View>
+          <Text
+            style={
+              Object {
+                "color": "#333333",
+                "fontFamily": "TimesModern-Bold",
+                "fontSize": 35,
+                "fontWeight": "900",
+                "lineHeight": 35,
+                "marginBottom": 5,
+              }
+            }
+          >
+            This is tile headline
+          </Text>
+          <ArticleFlags />
         </View>
-        <Text
-          style={
-            Object {
-              "color": "#333333",
-              "fontFamily": "TimesModern-Bold",
-              "fontSize": 35,
-              "fontWeight": "900",
-              "lineHeight": 35,
-              "marginBottom": 5,
-            }
-          }
-        >
-          This is tile headline
-        </Text>
-        <ArticleFlags />
       </View>
     </View>
   </View>
@@ -1260,14 +1307,7 @@ exports[`25. tile x 1`] = `
     }
   >
     <View>
-      <View
-        style={
-          Object {
-            "marginHorizontal": 10,
-            "marginVertical": 5,
-          }
-        }
-      >
+      <View>
         <View
           style={
             Object {
@@ -1345,7 +1385,6 @@ exports[`26. tile y 1`] = `
           "fontFamily": "TimesDigitalW04",
           "fontSize": 14,
           "lineHeight": 20,
-          "marginBottom": 10,
         }
       }
     >
@@ -1362,7 +1401,13 @@ exports[`26. tile y 1`] = `
 
 exports[`27. tile z 1`] = `
 <Link>
-  <View>
+  <View
+    style={
+      Object {
+        "marginBottom": 10,
+      }
+    }
+  >
     <View
       style={
         Object {
@@ -1397,9 +1442,7 @@ exports[`28. tile ab 1`] = `
   <Image
     style={
       Object {
-        "flexDirection": "column",
-        "justifyContent": "flex-end",
-        "width": "50%",
+        "flex": 1,
       }
     }
   />
@@ -1408,64 +1451,71 @@ exports[`28. tile ab 1`] = `
       Object {
         "flex": 1,
         "paddingLeft": 20,
-        "width": "50%",
       }
     }
   >
-    <View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
       <View>
-        <View
-          style={
-            Object {
-              "marginBottom": 0,
+        <View>
+          <View
+            style={
+              Object {
+                "marginBottom": 0,
+              }
             }
-          }
-        >
-          <ArticleLabel />
+          >
+            <ArticleLabel />
+          </View>
+          <Text
+            style={
+              Object {
+                "color": "#333333",
+                "fontFamily": "TimesModern-Bold",
+                "fontSize": 30,
+                "fontWeight": "900",
+                "lineHeight": 30,
+                "marginBottom": 5,
+              }
+            }
+          >
+            This is tile headline
+          </Text>
+          <ArticleFlags />
+          <Text>
+            <Text
+              style={
+                Object {
+                  "color": "#333333",
+                  "flexDirection": "row",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 13,
+                  "lineHeight": 15,
+                }
+              }
+            >
+              Richard Lloyd Parry
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#333333",
+                  "flexDirection": "row",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 13,
+                  "lineHeight": 15,
+                }
+              }
+            >
+              , Hanoi
+            </Text>
+          </Text>
         </View>
-        <Text
-          style={
-            Object {
-              "color": "#333333",
-              "fontFamily": "TimesModern-Bold",
-              "fontSize": 30,
-              "fontWeight": "900",
-              "lineHeight": 30,
-              "marginBottom": 5,
-            }
-          }
-        >
-          This is tile headline
-        </Text>
-        <ArticleFlags />
-        <Text>
-          <Text
-            style={
-              Object {
-                "color": "#333333",
-                "flexDirection": "row",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 13,
-                "lineHeight": 15,
-              }
-            }
-          >
-            Richard Lloyd Parry
-          </Text>
-          <Text
-            style={
-              Object {
-                "color": "#333333",
-                "flexDirection": "row",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 13,
-                "lineHeight": 15,
-              }
-            }
-          >
-            , Hanoi
-          </Text>
-        </Text>
       </View>
     </View>
   </View>
@@ -1515,7 +1565,13 @@ exports[`29. tile ae 1`] = `
 
 exports[`30. tile ag 1`] = `
 <Link>
-  <View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
     <Text
       style={
         Object {
@@ -1631,7 +1687,7 @@ exports[`33. tile al 1`] = `
   <Image
     style={
       Object {
-        "paddingVertical": 10,
+        "marginBottom": 10,
         "width": "100%",
       }
     }
@@ -1737,8 +1793,8 @@ exports[`35. tile an 1`] = `
   <View
     style={
       Object {
+        "flex": 1,
         "justifyContent": "center",
-        "paddingHorizontal": 10,
         "paddingTop": 10,
       }
     }
@@ -1774,7 +1830,6 @@ exports[`35. tile an 1`] = `
           "fontFamily": "TimesDigitalW04",
           "fontSize": 14,
           "lineHeight": 20,
-          "marginBottom": 10,
         }
       }
     >
@@ -1801,8 +1856,8 @@ exports[`36. tile ap 1`] = `
   <View
     style={
       Object {
+        "flex": 1,
         "justifyContent": "center",
-        "paddingHorizontal": 10,
         "paddingTop": 5,
       }
     }
@@ -1848,7 +1903,7 @@ exports[`37. tile ad 1`] = `
   <View
     style={
       Object {
-        "paddingHorizontal": 10,
+        "paddingLeft": 10,
         "width": "70%",
       }
     }
@@ -1897,7 +1952,7 @@ exports[`38. tile ac 1`] = `
         "backgroundColor": "#F0F0F0",
         "flex": 1,
         "justifyContent": "center",
-        "paddingHorizontal": 40,
+        "paddingHorizontal": 20,
         "paddingVertical": 15,
       }
     }
@@ -2034,7 +2089,6 @@ exports[`40. tile ar 1`] = `
               "fontFamily": "TimesDigitalW04",
               "fontSize": 14,
               "lineHeight": 20,
-              "marginBottom": 10,
             }
           }
         >
@@ -2063,7 +2117,13 @@ exports[`41. tile as 1`] = `
   >
     <Image />
   </View>
-  <View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
     <View
       style={
         Object {
@@ -2095,7 +2155,6 @@ exports[`41. tile as 1`] = `
           "fontFamily": "TimesDigitalW04",
           "fontSize": 14,
           "lineHeight": 20,
-          "marginBottom": 10,
         }
       }
     >
@@ -2125,6 +2184,7 @@ exports[`42. tile ah 1`] = `
     style={
       Object {
         "alignItems": "center",
+        "flex": 1,
         "paddingTop": 5,
       }
     }

@@ -10,6 +10,7 @@ import {
 } from "../shared";
 import stylesFactory from "./styles";
 import WithoutWhiteSpace from "../shared/without-white-space";
+import PositionedTileStar from "../shared/positioned-tile-star";
 
 const TileB = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
   const styles = stylesFactory(breakpoint);
@@ -17,15 +18,18 @@ const TileB = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
   return (
     <TileLink onPress={onPress} style={styles.container} tile={tile}>
       <WithoutWhiteSpace
+        style={styles.summaryContainer}
         render={whiteSpaceHeight => (
           <TileSummary
             headlineStyle={styles.headline}
             summary={getTileSummary(tile, 125)}
             tile={tile}
             whiteSpaceHeight={whiteSpaceHeight}
+            withStar={false}
           />
         )}
       />
+      <PositionedTileStar articleId={tile.article.id} />
     </TileLink>
   );
 };

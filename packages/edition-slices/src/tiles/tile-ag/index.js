@@ -22,13 +22,14 @@ const TileAG = ({ onPress, tile, breakpoint = editionBreakpoints.wide }) => {
       onPress={onPress}
       style={styles.container}
       tile={tileWithoutLabelAndFlags}
-      starStyle={styles.star}
     >
       <TileSummary
         headlineStyle={styles.headline}
         strapline={getTileStrapline(tile)}
         straplineStyle={styles.strapline}
+        style={styles.summaryContainer}
         tile={tileWithoutLabelAndFlags}
+        centeredStar
       />
     </TileLink>
   );

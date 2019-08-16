@@ -5,7 +5,6 @@ import {
   spacing,
   editionBreakpoints
 } from "@times-components/styleguide";
-import { verticalStyles } from "../../shared/styles";
 
 const headlineFontSizeResolver = {
   [editionBreakpoints.medium]: 30,
@@ -34,11 +33,6 @@ const styles = (breakpoint = editionBreakpoints.medium) => ({
     width: "40%",
     marginBottom: spacing(1)
   },
-  star: {
-    ...verticalStyles.starButton,
-    position: "relative",
-    right: "auto"
-  },
   strapline: {
     color: colours.functional.secondary,
     fontFamily: fonts.bodyRegular,
@@ -48,8 +42,9 @@ const styles = (breakpoint = editionBreakpoints.medium) => ({
     paddingBottom: spacing(1)
   },
   summaryContainer: {
-    alignItems: "center",
-    paddingTop: spacing(1)
+    flex: 1,
+    paddingTop: spacing(1),
+    alignItems: "center"
   }
 });
 

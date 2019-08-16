@@ -15,20 +15,12 @@ const mediumBreakpointStyles = {
     fontSize: 30,
     lineHeight: 30,
     marginBottom: spacing(2)
-  },
-  star: {
-    starButton: {
-      position: "absolute",
-      right: spacing(3),
-      bottom: 0
-    }
   }
 };
 
 const wideBreakpointStyles = {
   container: {
-    paddingHorizontal: spacing(2),
-    paddingTop: spacing(2)
+    padding: spacing(2)
   },
   headline: {
     fontFamily: fonts.headline,
@@ -36,8 +28,7 @@ const wideBreakpointStyles = {
     lineHeight: 30
   },
   summaryContainer: {
-    marginHorizontal: spacing(2),
-    marginVertical: spacing(1)
+    marginHorizontal: spacing(2)
   }
 };
 

@@ -16,7 +16,11 @@ const TileR = ({ onPress, tile, breakpoint = editionBreakpoints.medium }) => {
 
   return (
     <TileLink onPress={onPress} style={styles.container} tile={tile}>
-      <TileSummary headlineStyle={styles.headline} tile={tile} />
+      <TileSummary
+        headlineStyle={styles.headline}
+        tile={tile}
+        style={styles.summaryContainer}
+      />
       <Image
         aspectRatio={16 / 9}
         uri={crop.url}

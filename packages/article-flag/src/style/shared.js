@@ -13,7 +13,7 @@ const styles = {
   flags: {
     flexDirection: "row",
     flexWrap: "wrap",
-    marginBottom: spacing(2)
+    marginTop: spacing(2)
   },
   title: {
     ...fontFactory({
