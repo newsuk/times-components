@@ -6,9 +6,10 @@ export default Component =>
       {
         actionName: "Pressed",
         eventName: "onPress",
-        getAttrs: ({ target, url }) => ({
+        getAttrs: ({ target, url, children }) => ({
           url,
-          target
+          target,
+          linkText: children[0]
         }),
         trackingName: "ArticleLink"
       }
