@@ -8,7 +8,7 @@ import {
   ItemRowSeparator
 } from "@times-components/slice-layout";
 import { TileO, TileN } from "../../tiles";
-import styleFactory, { darkBackgroundColour } from "./styles";
+import styleFactory from "./styles";
 import { ResponsiveSlice } from "../shared";
 
 class SecondaryOneAndFour extends Component {
@@ -22,11 +22,13 @@ class SecondaryOneAndFour extends Component {
       onPress,
       slice: { secondary, support1, support2, support3, support4 }
     } = this.props;
+
     const styles = styleFactory(breakpoint);
+
     return (
       <SectionContext.Consumer>
         {({ publicationName }) => (
-          <View style={styles.sliceWrapper}>
+          <View style={styles.container}>
             <View style={styles.logoContainer}>
               {publicationName === "TIMES" ? (
                 <TheTimesLogo height={40} width={42} />
@@ -65,8 +67,10 @@ class SecondaryOneAndFour extends Component {
   }
 
   render() {
+    const { breakpoint } = this.props;
+
     return (
-      <View style={darkBackgroundColour}>
+      <View style={styleFactory(breakpoint).sliceWrapper}>
         <ResponsiveSlice
           renderSmall={this.renderSlice}
           renderMedium={this.renderSlice}
@@ -84,7 +88,8 @@ SecondaryOneAndFour.propTypes = {
     support2: PropTypes.shape({}).isRequired,
     support3: PropTypes.shape({}).isRequired,
     support4: PropTypes.shape({}).isRequired
-  }).isRequired
+  }).isRequired,
+  breakpoint: PropTypes.string.isRequired
 };
 
 export default SecondaryOneAndFour;

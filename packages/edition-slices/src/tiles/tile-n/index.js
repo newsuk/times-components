@@ -37,6 +37,7 @@ const TileN = ({ isDarkStar, onPress, tile, breakpoint }) => {
         headlineStyle={styles.headline}
         labelColour={colours.functional.greyLabel}
         strapline={getTileStrapline(tile)}
+        straplineStyle={styles.strapline}
         style={styles.summaryContainer}
         tile={tile}
       />

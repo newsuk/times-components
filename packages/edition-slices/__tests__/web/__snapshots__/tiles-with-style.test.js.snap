@@ -1102,7 +1102,7 @@ exports[`14. tile n 1`] = `
 .S3 {
   color: rgba(105,105,105,1.00);
   font-family: TimesModern-Regular;
-  font-size: 19px;
+  font-size: 14px;
   line-height: 21px;
 }
 
@@ -1160,7 +1160,7 @@ exports[`14. tile n 1`] = `
     </h3>
     <h4
       aria-level="4"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khp51w r-fontFamily-4h8ur4 r-fontSize-1b6yd1w r-lineHeight-10yl4k r-paddingBottom-1mi0q7o S3"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khp51w r-fontFamily-4h8ur4 r-fontSize-1b43r93 r-lineHeight-10yl4k r-paddingBottom-1mi0q7o S3"
       role="heading"
     >
       Three Conservative MPs resign
@@ -1188,13 +1188,13 @@ exports[`15. tile o 1`] = `
 
 .S2 {
   font-family: TimesModern-Bold;
-  font-size: 22px;
   font-weight: 400;
 }
 
 .IS1 {
   color: rgba(255,255,255,1.00);
-  line-height: 22px;
+  font-size: 18px;
+  line-height: 18px;
   margin-bottom: 11px;
   margin-top: 5px;
 }
@@ -1224,7 +1224,7 @@ exports[`15. tile o 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 IS1 S2"
+      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 IS1 S2"
       role="heading"
     >
       This is tile headline

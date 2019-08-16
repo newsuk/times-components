@@ -18,15 +18,22 @@ const smallBreakpointStyles = {
   separator: {
     borderBottomColor: colours.functional.tertiary
   },
+  container: {
+    ...darkBackgroundColour
+  },
   sliceWrapper: {
     ...darkBackgroundColour
   }
 };
 
 const mediumBreakpointStyles = {
+  container: {
+    ...darkBackgroundColour
+  },
   sliceWrapper: {
     ...darkBackgroundColour,
-    paddingHorizontal: spacing(2)
+    marginVertical: spacing(3),
+    marginHorizontal: spacing(6)
   }
 };
 
