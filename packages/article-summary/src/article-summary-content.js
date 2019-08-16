@@ -5,9 +5,13 @@ import { propTypes as treePropType } from "@times-components/markup-forest";
 import { renderAst } from "./article-summary";
 import styles from "./styles";
 
-const initialLines = 2;
-
-const ArticleSummaryContent = ({ ast, className, style, whiteSpaceHeight }) => {
+const ArticleSummaryContent = ({
+  ast,
+  className,
+  style,
+  whiteSpaceHeight,
+  initialLines = 2
+}) => {
   const lineHeight = (style && style.lineHeight) || styles.text.lineHeight;
   const numberOfLinesToRender =
     whiteSpaceHeight > 0
