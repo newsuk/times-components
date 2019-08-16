@@ -9,7 +9,9 @@ mediaQuery tag which is similar to the CSS tag styled-components provides.
 
 ```js
 import { View } from "react-native";
-import responsiveStyled, { mediaQuery } from "@times-components/responsive-styled-components-native";
+import responsiveStyled, {
+  mediaQuery
+} from "@times-components/responsive-styled-components-native";
 
 const ResponsiveView = responsiveStyled(View)`
     ${mediaQuery(screenWidth => screenWidth > 100)`
@@ -27,12 +29,18 @@ provide pre-defined matchers for `minWidth` and `maxWidth`, and predefined match
 for all of the breakpoints defined in `@times-components/styleguide`.
 
 ```js
-mediaQuery.minWidth(400)`/* styles only apply when screen is equal to or wider than 400px`;
-mediaQuery.maxWidth(400)`/* styles only apply when screen is equal to or less wide than 400px`;
+mediaQuery.minWidth(
+  400
+)`/* styles only apply when screen is equal to or wider than 400px`;
+mediaQuery.maxWidth(
+  400
+)`/* styles only apply when screen is equal to or less wide than 400px`;
 
-mediaQuery.maxWidth.medium`/* styles only apply on the medium breakpoint or less wide */`;
-mediaQuery.minWidth.small`/* styles only apply on the small breakpoint or wider */`;
-``` 
+mediaQuery.maxWidth
+  .medium`/* styles only apply on the medium breakpoint or less wide */`;
+mediaQuery.minWidth
+  .small`/* styles only apply on the small breakpoint or wider */`;
+```
 
 ## Contributing
 
