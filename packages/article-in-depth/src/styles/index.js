@@ -14,6 +14,7 @@ const nativeStyles = {
     marginBottom: 0
   },
   leadAsset: {
+    ...sharedStyles.leadAsset,
     marginBottom: spacing(4)
   }
 };

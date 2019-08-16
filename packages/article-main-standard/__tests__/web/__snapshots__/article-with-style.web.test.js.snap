@@ -458,14 +458,18 @@ exports[`full article with style 1`] = `
 }
 
 .S6 {
-  line-height: 15px;
+  line-height: 21px;
 }
 
 .S7 {
-  line-height: 17px;
+  line-height: 13px;
 }
 
 .S8 {
+  line-height: 17px;
+}
+
+.S9 {
   padding-top: 10px;
 }
 
@@ -612,7 +616,7 @@ exports[`full article with style 1`] = `
                     className="c11 article-metaweb__MetaTextElement-sc-15fsa1p-0 c11 css-text-901oao"
                   >
                     <span
-                      className="css-text-901oao css-textHasAncestor-16my406 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S6"
+                      className="css-text-901oao css-textHasAncestor-16my406 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-10yl4k S6"
                     >
                       <ArticleBylineWithLinks />
                     </span>
@@ -629,7 +633,7 @@ exports[`full article with style 1`] = `
                     className="c11 article-metaweb__MetaTextElement-sc-15fsa1p-0 c11 css-text-901oao"
                   >
                     <span
-                      className="css-text-901oao css-textHasAncestor-16my406 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S6"
+                      className="css-text-901oao css-textHasAncestor-16my406 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-1akm30i S7"
                     >
                       <DatePublication />
                     </span>
@@ -656,7 +660,7 @@ exports[`full article with style 1`] = `
                 className="c11 article-metaweb__MetaTextElement-sc-15fsa1p-0 c11 css-text-901oao"
               >
                 <span
-                  className="css-text-901oao css-textHasAncestor-16my406 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S6"
+                  className="css-text-901oao css-textHasAncestor-16my406 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-10yl4k S6"
                 >
                   <ArticleBylineWithLinks />
                 </span>
@@ -665,7 +669,7 @@ exports[`full article with style 1`] = `
                 className="c11 article-metaweb__MetaTextElement-sc-15fsa1p-0 c11 css-text-901oao"
               >
                 <span
-                  className="css-text-901oao css-textHasAncestor-16my406 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S6"
+                  className="css-text-901oao css-textHasAncestor-16my406 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-1akm30i S7"
                 >
                   <DatePublication />
                 </span>
@@ -751,10 +755,10 @@ exports[`full article with style 1`] = `
                     className="css-view-1dbjc4n"
                   >
                     <div
-                      className="css-view-1dbjc4n r-paddingTop-m611by S8"
+                      className="css-view-1dbjc4n r-paddingTop-m611by S9"
                     >
                       <div
-                        className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0 S7"
+                        className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0 S8"
                       >
                         This is video caption
                       </div>
