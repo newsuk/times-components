@@ -1,5 +1,5 @@
 import omitBy from "lodash.omitby";
-import { ID_ATTR } from "@times-components/responsive-styled-components-native";
+import { serialise } from "@times-components/responsive-styled-components-native";
 import traverse from "./traverse";
 import print from "./printers";
 
@@ -14,7 +14,7 @@ export const minimaliseTransform = excludeProps => (
   node,
   props: omitBy(
     props,
-    (value, key) => key !== ID_ATTR && excludeProps(value, key)
+    (value, key) => !serialise.isSecretProp(key) && excludeProps(value, key)
   )
 });
 

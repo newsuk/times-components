@@ -1,6 +1,16 @@
+/* eslint-disable global-require */
+import { Platform } from "react-native";
 import { css } from "styled-components/native";
 import { breakpoints } from "@times-components/styleguide";
-import { SCREEN_WIDTH_PROP, MEDIA_QUERY_PROP_MAPPER_TAG } from "./shared";
+import { SCREEN_WIDTH_PROP } from "./shared";
+
+const { markupMediaQuery } =
+  process.env.NODE_ENV === "test"
+    ? Platform.select({
+        web: () => require("./serialise.web"),
+        native: () => require("./serialise")
+      })
+    : {};
 
 // Creates a template tag which you can use inside our Responsive styled-components
 // wrapper to selectively apply styles based on screen width.
@@ -8,7 +18,7 @@ function mediaQuery(shouldApplyStyles, tagInfo = {}) {
   function mediaQueryTag(...templateStringArguments) {
     const styles = css(...templateStringArguments);
 
-    function styledComponentPropMapper(componentProps = {}) {
+    let styledComponentPropMapper = (componentProps = {}) => {
       const currentScreenWidth = componentProps[SCREEN_WIDTH_PROP];
 
       if (typeof currentScreenWidth === "undefined") {
@@ -17,18 +27,17 @@ function mediaQuery(shouldApplyStyles, tagInfo = {}) {
         );
       }
 
-      // @todo Update tests for this
-      return process.env.NODE_ENV !== "test" &&
-        shouldApplyStyles(currentScreenWidth)
-        ? styles
-        : "";
-    }
-
-    styledComponentPropMapper[MEDIA_QUERY_PROP_MAPPER_TAG] = {
-      args: "[custom-matcher]",
-      styles,
-      ...tagInfo
+      return shouldApplyStyles(currentScreenWidth) ? styles : "";
     };
+
+    // @todo Update tests for this
+    if (process.env.NODE_ENV === "test") {
+      styledComponentPropMapper = markupMediaQuery(styledComponentPropMapper, {
+        args: "[custom-matcher]",
+        styles,
+        ...tagInfo
+      });
+    }
 
     return styledComponentPropMapper;
   }

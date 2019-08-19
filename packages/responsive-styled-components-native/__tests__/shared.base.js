@@ -9,6 +9,14 @@ import responsiveStyled, {
 import { SCREEN_WIDTH_PROP } from "../src/shared";
 
 export default () => {
+  beforeEach(() => {
+    process.env.RESPONSIVE_NATIVE_STYLED_COMPONENTS_NATIVE_TESTS = true;
+  });
+
+  afterEach(() => {
+    delete process.env.RESPONSIVE_NATIVE_STYLED_COMPONENTS_NATIVE_TESTS;
+  });
+
   it("responsive has pre-wrapped View component", () => {
     expect(responsiveStyled.View``.displayName).toEqual(
       "ResponsiveStyled(View)"

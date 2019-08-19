@@ -4,7 +4,7 @@ import isEqual from "lodash.isequal";
 import traverse from "./traverse";
 import { stylePrinter } from "./printers";
 
-import { getMediaQueries, ID_ATTR } from "@times-components/responsive-styled-components-native";
+import { serialise } from "@times-components/responsive-styled-components-native";
 
 const cleanClassNames = names => {
   const className = (names || "")
@@ -133,7 +133,7 @@ const updateMap = (cssStyles, styleMap, classNames) => {
 
 
 const withMediaQueries = (accum, node) => {
-  const mediaQueries = getMediaQueries(node);
+  const mediaQueries = serialise.getMediaQueries(node);
 
   if (!mediaQueries || !mediaQueries.length) {
     return accum;
@@ -167,10 +167,8 @@ export const rnwTransform = (AppRegistry, includeStyleProps) => (
   const filteredNames = filterNames(className, new Set(includeStyleProps));
   const updatedMap = withMediaQueries(updateMap(cssStyles, accum, filteredNames), { props });
 
-  delete other[ID_ATTR];
-
   const newProps = {
-    ...other,
+    ...serialise.withoutSecretProps(other),
     ...cleanClassNames(className)
   };
 
