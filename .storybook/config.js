@@ -1,8 +1,8 @@
 import { Text, View } from 'react-native';
-import { configure, addDecorator } from "@storybook/react";
+import { configure, addDecorator, addParameters } from "@storybook/react";
 import { withInfo } from '@storybook/addon-info';
-import { withOptions } from '@storybook/addon-options';
 import { withKnobs } from '@storybook/addon-knobs';
+import { create } from '@storybook/theming';
 
 const req = require.context(
   "../packages",
@@ -14,11 +14,19 @@ addDecorator(withInfo({
   propTablesExclude: [Text, View]
 }));
 addDecorator(withKnobs);
-addDecorator(withOptions({
-  addonPanelInRight: true,
-  name: 'Times Components',
-  hierarchySeparator: /\//
-}));
+addParameters({
+  options: {
+    theme: create({
+      base: 'dark',
+      brandTitle: 'Times Components',
+    }),
+    isFullscreen: false,
+    panelPosition: 'right',
+    isToolshown: true,
+    hierarchyRootSeparator: null,
+    hierarchySeparator: /\//
+  },
+});
 
 const loadStories = () => req.keys().filter(k => k.indexOf("brightcove-video") === -1).forEach(filename => req(filename));
 

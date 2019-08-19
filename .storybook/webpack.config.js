@@ -1,7 +1,7 @@
 const path = require("path");
 const webpack = require("webpack");
 
-module.exports = async (baseConfig, env, defaultConfig) => {
+module.exports = async ({ config: baseConfig }) => {
   baseConfig.devtool = "eval-source-map"
   baseConfig.resolve = {
     ...baseConfig.resolve,
@@ -28,6 +28,11 @@ module.exports = async (baseConfig, env, defaultConfig) => {
       test: /\.mjs$/,
       include: /node_modules/,
       type: 'javascript/auto'
+    },
+    {
+      test: /\.stories\.js?$/,
+      loaders: [require.resolve('@storybook/addon-storysource/loader')],
+      enforce: 'pre',
     }
   );
 
