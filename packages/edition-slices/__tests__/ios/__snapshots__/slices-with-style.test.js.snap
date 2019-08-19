@@ -99,8 +99,6 @@ exports[`1. secondary one and four 1`] = `
   style={
     Object {
       "backgroundColor": "#272D34",
-      "marginHorizontal": 30,
-      "marginVertical": 15,
     }
   }
 >
@@ -117,7 +115,6 @@ exports[`1. secondary one and four 1`] = `
           "backgroundColor": "#272D34",
           "flexDirection": "row",
           "margin": 10,
-          "marginBottom": 10,
         }
       }
     >
@@ -199,8 +196,6 @@ exports[`1. secondary one and four 2`] = `
   style={
     Object {
       "backgroundColor": "#272D34",
-      "marginHorizontal": 30,
-      "marginVertical": 15,
     }
   }
 >
@@ -217,7 +212,6 @@ exports[`1. secondary one and four 2`] = `
           "backgroundColor": "#272D34",
           "flexDirection": "row",
           "margin": 10,
-          "marginBottom": 10,
         }
       }
     >
@@ -717,8 +711,6 @@ exports[`10. secondary one and four 1`] = `
   style={
     Object {
       "backgroundColor": "#272D34",
-      "marginHorizontal": 30,
-      "marginVertical": 15,
     }
   }
 >
@@ -735,7 +727,6 @@ exports[`10. secondary one and four 1`] = `
           "backgroundColor": "#272D34",
           "flexDirection": "row",
           "margin": 10,
-          "marginBottom": 10,
         }
       }
     >

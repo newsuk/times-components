@@ -48,16 +48,36 @@ class SecondaryOneAndFour extends Component {
                 />
               }
               support1={
-                <TileO onPress={onPress} tile={support1} tileName="support1" />
+                <TileO
+                  onPress={onPress}
+                  tile={support1}
+                  tileName="support1"
+                  breakpoint={breakpoint}
+                />
               }
               support2={
-                <TileO onPress={onPress} tile={support2} tileName="support2" />
+                <TileO
+                  onPress={onPress}
+                  tile={support2}
+                  tileName="support2"
+                  breakpoint={breakpoint}
+                />
               }
               support3={
-                <TileO onPress={onPress} tile={support3} tileName="support3" />
+                <TileO
+                  onPress={onPress}
+                  tile={support3}
+                  tileName="support3"
+                  breakpoint={breakpoint}
+                />
               }
               support4={
-                <TileO onPress={onPress} tile={support4} tileName="support4" />
+                <TileO
+                  onPress={onPress}
+                  tile={support4}
+                  tileName="support4"
+                  breakpoint={breakpoint}
+                />
               }
             />
           </View>

@@ -1154,8 +1154,6 @@ exports[`14. tile n 1`] = `
 
 .IS2 {
   color: rgba(255,255,255,1.00);
-  font-size: 30px;
-  line-height: 33px;
 }
 
 .IS3 {
@@ -1169,6 +1167,7 @@ exports[`14. tile n 1`] = `
     Object {
       "backgroundColor": "#272D34",
       "flexDirection": "row",
+      "marginLeft": "5px",
       "padding": "10px",
     }
   }
@@ -1234,10 +1233,7 @@ exports[`15. tile o 1`] = `
 
 .IS1 {
   color: rgba(255,255,255,1.00);
-  font-size: 18px;
-  line-height: 18px;
   margin-bottom: 11px;
-  margin-top: 5px;
 }
 
 .IS2 {
@@ -1259,6 +1255,7 @@ exports[`15. tile o 1`] = `
     Object {
       "backgroundColor": "#272D34",
       "flex": 1,
+      "marginRight": "5px",
       "paddingHorizontal": 12,
       "paddingVertical": "10px",
     }

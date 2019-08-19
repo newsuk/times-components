@@ -570,6 +570,7 @@ exports[`14. tile n 1`] = `
     Object {
       "backgroundColor": "#272D34",
       "flexDirection": "row",
+      "marginLeft": 5,
       "padding": 10,
     }
   }
@@ -621,6 +622,7 @@ exports[`15. tile o 1`] = `
     Object {
       "backgroundColor": "#272D34",
       "flex": 1,
+      "marginRight": 5,
       "paddingHorizontal": 12,
       "paddingVertical": 10,
     }

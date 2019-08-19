@@ -176,12 +176,14 @@ exports[`7. secondary one and four - medium 1`] = `
         <div>
           <div>
             <TileO
+              breakpoint="wide"
               tileName="support1"
             />
           </div>
           <div />
           <div>
             <TileO
+              breakpoint="wide"
               tileName="support3"
             />
           </div>
@@ -190,12 +192,14 @@ exports[`7. secondary one and four - medium 1`] = `
         <div>
           <div>
             <TileO
+              breakpoint="wide"
               tileName="support2"
             />
           </div>
           <div />
           <div>
             <TileO
+              breakpoint="wide"
               tileName="support4"
             />
           </div>
@@ -634,12 +638,14 @@ exports[`22. secondary one and four - wide 1`] = `
         <div>
           <div>
             <TileO
+              breakpoint="wide"
               tileName="support1"
             />
           </div>
           <div />
           <div>
             <TileO
+              breakpoint="wide"
               tileName="support3"
             />
           </div>
@@ -648,12 +654,14 @@ exports[`22. secondary one and four - wide 1`] = `
         <div>
           <div>
             <TileO
+              breakpoint="wide"
               tileName="support2"
             />
           </div>
           <div />
           <div>
             <TileO
+              breakpoint="wide"
               tileName="support4"
             />
           </div>
@@ -1092,12 +1100,14 @@ exports[`37. secondary one and four - huge 1`] = `
         <div>
           <div>
             <TileO
+              breakpoint="wide"
               tileName="support1"
             />
           </div>
           <div />
           <div>
             <TileO
+              breakpoint="wide"
               tileName="support3"
             />
           </div>
@@ -1106,12 +1116,14 @@ exports[`37. secondary one and four - huge 1`] = `
         <div>
           <div>
             <TileO
+              breakpoint="wide"
               tileName="support2"
             />
           </div>
           <div />
           <div>
             <TileO
+              breakpoint="wide"
               tileName="support4"
             />
           </div>
