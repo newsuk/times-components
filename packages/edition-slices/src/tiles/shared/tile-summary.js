@@ -23,7 +23,7 @@ class TileSummary extends Component {
       summary,
       summaryStyle,
       whiteSpaceHeight,
-      linesOfTeserToRender
+      linesOfTeaserToRender
     } = this.props;
 
     return (
@@ -31,7 +31,7 @@ class TileSummary extends Component {
         ast={summary}
         style={summaryStyle}
         whiteSpaceHeight={whiteSpaceHeight}
-        initialLines={linesOfTeserToRender}
+        initialLines={linesOfTeaserToRender}
       />
     );
   }
