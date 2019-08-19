@@ -7,9 +7,9 @@ import { SCREEN_WIDTH_PROP } from "./shared";
 const serialise =
   process.env.NODE_ENV === "test"
     ? Platform.select({
-        web: require("./serialise.web"),
-        native: require("./serialise")
-      })
+        web: () => require("./serialise.web"),
+        native: () => require("./serialise")
+      })()
     : {};
 
 function useScreenWidth() {

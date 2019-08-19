@@ -9,7 +9,7 @@ const { markupMediaQuery } =
     ? Platform.select({
         web: () => require("./serialise.web"),
         native: () => require("./serialise")
-      })
+      })()
     : {};
 
 // Creates a template tag which you can use inside our Responsive styled-components

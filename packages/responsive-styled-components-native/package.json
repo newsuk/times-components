@@ -38,8 +38,7 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
     "@times-components/styleguide": "3.28.42",
-    "styled-components": "4.3.2",
-    "uuid": "3.3.2"
+    "styled-components": "4.3.2"
   },
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.8.13",

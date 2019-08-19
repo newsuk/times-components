@@ -1,44 +1,52 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`key facts with title 1`] = `
-.c0 {
-  margin: 5px 10px;
-}
-
+<style>
 @media (min-width:768px) {
-  .c0 {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    margin: 10px auto;
-    width: 80.8%;
-  }
-}
-
-@media (min-width:1024px) {
-  .c0 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    width: 80%;
-  }
-}
-
-@media (min-width:768px) {
-  .c1 {
+  .mq0 {
     padding-right: 20px;
     width: 20%;
   }
 }
 
-<div>
-  <div>
+@media (min-width:768px) {
+  .mq1 {
+    width: 80%;
+  }
+}
+
+@media (min-width:768px) {
+  .mq2 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 80.8%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+  }
+}
+
+@media (min-width:1024px) {
+  .mq2 {
+    width: 56.2%;
+  }
+}
+</style>
+<div
+  className="mq2"
+>
+  <div
+    className="mq0"
+  >
     EXAMPLE TITLE
   </div>
-  <div>
+  <div
+    className="mq1"
+  >
     <div>
       <div />
       <div>
@@ -77,39 +85,6 @@ exports[`key facts with title 1`] = `
 `;
 
 exports[`key facts with title and context theme 1`] = `
-.c0 {
-  margin: 5px 10px;
-}
-
-@media (min-width:768px) {
-  .c0 {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    margin: 10px auto;
-    width: 80.8%;
-  }
-}
-
-@media (min-width:1024px) {
-  .c0 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    width: 80%;
-  }
-}
-
-@media (min-width:768px) {
-  .c1 {
-    padding-right: 20px;
-    width: 20%;
-  }
-}
-
 <div>
   <div>
     EXAMPLE TITLE

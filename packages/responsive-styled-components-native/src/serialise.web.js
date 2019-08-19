@@ -4,7 +4,6 @@ import nativeStyled from "styled-components/native";
 import webStyled from "styled-components";
 import { StyleSheet, View } from "react-native";
 import { inline } from "react-native-web/dist/cjs/exports/StyleSheet/compile";
-import uuid from "uuid/v4";
 
 const ID_ATTR = "data-responsive-styled-components-native-id";
 
@@ -14,19 +13,22 @@ function getHash() {
   let hash;
 
   while (!hash || INTERNALS.mediaQueries[hash]) {
-    hash = uuid();
+    hash = Math.random()
+      .toString(36)
+      .substring(7);
   }
 
   return hash;
 }
 
 export function markupMediaQuery(propMapper, info) {
-  // eslint-disable-next-line no-param-reassign
-  propMapper[MEDIA_QUERY_PROP_MAPPER_TAG] = info;
+  const fn = process.env.RESPONSIVE_NATIVE_STYLED_COMPONENTS_NATIVE_TESTS
+    ? propMapper
+    : () => "";
 
-  return !process.env.RESPONSIVE_NATIVE_STYLED_COMPONENTS_NATIVE_TESTS
-    ? () => ""
-    : propMapper;
+  // eslint-disable-next-line no-param-reassign
+  fn[MEDIA_QUERY_PROP_MAPPER_TAG] = info;
+  return fn;
 }
 
 export function markup(Component, args) {
