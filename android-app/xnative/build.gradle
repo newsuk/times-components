@@ -63,14 +63,6 @@ publishing {
 }
 
 android {
-   sourceSets {
-    main {
-        resources {
-            srcDirs = ["res"]
-            includes = ["**/*.gql"]
-        }
-    }
-}
     compileSdkVersion 28
     defaultConfig {
         minSdkVersion 16
