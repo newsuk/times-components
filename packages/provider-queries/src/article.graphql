@@ -1,4 +1,4 @@
-# import "./article_page_props.graphql"
+#import "./article_page_props.graphql"
 
 query ArticleQuery($id: ID!) {
 	article(id: $id) {
