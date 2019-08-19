@@ -111,6 +111,48 @@ Follow these steps [here](https://github.com/newsuk/cps-content-render#locally-m
 | Visual Regression tool (Dextrose)          | :white_check_mark: | Not automated                                                 |
 | Functional Regression tool (Fructose)      | :white_check_mark: | Not automated                                                 |
 
+## Debugging the tests
+
+Tests are currently using [jest](https://jestjs.io/) to run so if you want to debug any test follow these steps:
+
+1. (FIND YOUR TEST COMMAND) `jest --config="./packages/provider/__tests__/jest.config.js"`. Depending on what directory we start the tests from, the `--config` directory may differ. My currenct directory is at the repo root: `times-components`.
+
+2. See your test command from the `package.json` for the speciffic package you want to check out.
+
+>NOTE: If you don't have jest installed globally, you can use it locally from the `node_modules/.bin/jest`
+
+3. (START TESTS IN DEBUG MODE) We need to start the same command but through node while in debug mode like so:
+`node --inspect-brk ./node_modules/.bin/jest --config="./packages/provider/__tests__/jest.config.js" --runInBand`
+
+>NOTE: `--runInBand` is a `jest` flag that runs all tests serially in the current process. If we don't add this flag, only the node process that started `jest` will be debuggable.
+
+4. (ADD DEBUG STATEMENTS) Normaly we would add breakpoints, but when remote debugging that's not always possible, because the files we need to put the breakpoints on aren't loaded yet by `jest`. So in order to make the debugger stop where we want it to, we need to add [`debugger;`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/debugger) statements instead of breakpoints in the code and re-transpile if necessary.
+
+5. (ATTACH TO WEB SOCKET) Once we've started the tests in debug mode, we need to attach to it:
+  * (RECOMMENDED) use chrome remote debug for node:
+    1. open `chrome://inspect` in chrome address bar
+    2. `Open dedicated DevTools for Node` button
+    3. If you've started the tests with the aforementioned command it should automatically connect, but if it doesn't go to the `Connection` tab of the pop-up window and add connection `localhost:9229` or whatever your port is
+    4. The debugger should stop on the first line because of the `--inspect-brk` flag and once you press the play button (resume execution) it should stop on your `debugger;` statement
+
+    >NOTE: once it stops you may see all of your code is bundled up in one line. There's an easy fix for that: at the bottom of the debug window near the `Line: 1 Column: 1` labels you should see a `{}` button that will prettify your code and you will still be able to debug properly.
+
+  * (Use VSCode) Config should look close to this:
+  ```json
+  ...
+      "configurations": [
+        {
+            "localRoot": "${workspaceFolder}/packages/provider", //change this depending on what test you're debugging
+            "remoteRoot": "${workspaceFolder}/packages/provider", //change this depending on what test you're debugging
+            "type": "node",
+            "request": "attach",
+            "name": "Attach to Server on 9229",
+            "address": "127.0.0.1",
+            "port": 9229
+        }
+    ]
+  ```
+
 ## Contributing
 
 See the [CONTRIBUTING.md](.github/CONTRIBUTING.md) for an extensive breakdown of
