@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.13.0](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.12.12...@times-components/article-summary@3.13.0) (2019-08-19)
+
+
+### Features
+
+* update secondary2NoPicAnd2 for 768px ([#2187](https://github.com/newsuk/times-components/issues/2187)) ([a02bf6a](https://github.com/newsuk/times-components/commit/a02bf6a))
+
+
+
+
+
 ## [3.12.12](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.12.11...@times-components/article-summary@3.12.12) (2019-08-16)
 
 **Note:** Version bump only for package @times-components/article-summary
