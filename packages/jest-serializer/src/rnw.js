@@ -4,6 +4,8 @@ import isEqual from "lodash.isequal";
 import traverse from "./traverse";
 import { stylePrinter } from "./printers";
 
+import { getMediaQueries, ID_ATTR } from "@times-components/responsive-styled-components-native";
+
 const cleanClassNames = names => {
   const className = (names || "")
     .replace(/rn-[^-^ ]+-[^-^ ]+/g, "")
@@ -129,6 +131,31 @@ const updateMap = (cssStyles, styleMap, classNames) => {
   };
 };
 
+
+const withMediaQueries = (accum, node) => {
+  const mediaQueries = getMediaQueries(node);
+
+  if (!mediaQueries || !mediaQueries.length) {
+    return accum;
+  }
+
+  const existingMediaQueries = accum.styleMap.mediaQueries || {};
+  const mqClass = `mq${Object.keys(existingMediaQueries).length}`;
+  const newKey = accum.key ? `${accum.key} ${mqClass}` : mqClass;
+
+  return {
+    ...accum,
+    key: newKey,
+    styleMap: {
+      ...accum.styleMap,
+      mediaQueries: {
+        ...existingMediaQueries,
+        [mqClass]: mediaQueries
+      }
+    }
+  }
+};
+
 export const rnwTransform = (AppRegistry, includeStyleProps) => (
   accum,
   node,
@@ -136,11 +163,11 @@ export const rnwTransform = (AppRegistry, includeStyleProps) => (
   children
 ) => {
   const { className, ...other } = props;
-
   const cssStyles = classNamesToStyles(AppRegistry, className);
-
   const filteredNames = filterNames(className, new Set(includeStyleProps));
-  const updatedMap = updateMap(cssStyles, accum, filteredNames);
+  const updatedMap = withMediaQueries(updateMap(cssStyles, accum, filteredNames), { props });
+
+  delete other[ID_ATTR];
 
   const newProps = {
     ...other,

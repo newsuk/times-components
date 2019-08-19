@@ -5,13 +5,13 @@ import { spacing } from "@times-components/styleguide";
 
 export const KeyFactsResponsiveContainer = responsiveStyled.View`
   margin: 5px 10px;
-  
+
   ${mediaQuery.minWidth.medium`
     flex-direction: row;
     margin: 10px auto;
     width: 80.8%;
   `};
-  
+
   ${mediaQuery.minWidth.wide`
     width: 56.2%;
   `};

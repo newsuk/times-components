@@ -1,11 +1,13 @@
 import { css } from "styled-components/native";
 import { breakpoints } from "@times-components/styleguide";
-import { SCREEN_WIDTH_PROP } from "./shared";
+import { SCREEN_WIDTH_PROP, MEDIA_QUERY_PROP_MAPPER_TAG } from "./shared";
 
 // Creates a template tag which you can use inside our Responsive styled-components
 // wrapper to selectively apply styles based on screen width.
-function mediaQuery(shouldApplyStyles) {
+function mediaQuery(shouldApplyStyles, tagInfo = {}) {
   function mediaQueryTag(...templateStringArguments) {
+    const styles = css(...templateStringArguments);
+
     function styledComponentPropMapper(componentProps = {}) {
       const currentScreenWidth = componentProps[SCREEN_WIDTH_PROP];
 
@@ -15,10 +17,18 @@ function mediaQuery(shouldApplyStyles) {
         );
       }
 
-      return shouldApplyStyles(currentScreenWidth)
-        ? css(...templateStringArguments)
+      // @todo Update tests for this
+      return process.env.NODE_ENV !== "test" &&
+        shouldApplyStyles(currentScreenWidth)
+        ? styles
         : "";
     }
+
+    styledComponentPropMapper[MEDIA_QUERY_PROP_MAPPER_TAG] = {
+      args: "[custom-matcher]",
+      styles,
+      ...tagInfo
+    };
 
     return styledComponentPropMapper;
   }
@@ -26,8 +36,10 @@ function mediaQuery(shouldApplyStyles) {
   return mediaQueryTag;
 }
 
-mediaQuery.minWidth = min => mediaQuery(width => width >= min);
-mediaQuery.maxWidth = max => mediaQuery(width => width <= max);
+mediaQuery.minWidth = min =>
+  mediaQuery(width => width >= min, { args: `min-width:${min}px` });
+mediaQuery.maxWidth = max =>
+  mediaQuery(width => width <= max, { args: `max-width:${max}px` });
 
 // Not using a loop for code intelligence reasons.
 mediaQuery.maxWidth.huge = mediaQuery.maxWidth(breakpoints.huge);

@@ -6,3 +6,7 @@
 // https://github.com/facebook/react/issues/7552
 export const SCREEN_WIDTH_PROP =
   "@times-components/responsive-styled-components-native/screen-width";
+
+export const MEDIA_QUERY_PROP_MAPPER_TAG = Symbol.for(
+  "@times-components/responsive-styled-components-native/mediaQuery/info"
+);

@@ -25,19 +25,47 @@ const getStylesheetAst = jss => ({
 
 const stringifyJss = jss => css.stringify(getStylesheetAst(jss));
 
+const stringifyMqs = mediaQueries =>
+  Object.entries(mediaQueries)
+    .map(([key, mqs]) =>
+      mqs
+        .map(
+          mq => `@media (${mq.args}) {
+  .${key} {
+    ${mq.rules.join("\n    ")}
+  }
+}`
+        )
+        .join("\n\n")
+    )
+    .join("\n\n");
+
 export const stylePrinter = (serialize, accum, element) => {
+  const { mediaQueries = {} } = accum;
+
   const mergedStyles = {
     ...(accum.rnw || {}),
     ...(accum.inlineStyles || {})
   };
-  const styleBlock =
-    Object.keys(mergedStyles).length > 0
-      ? `<style>
-${stringifyJss(mergedStyles)}
-</style>
 
+  const styleContents = [];
+
+  if (Object.keys(mergedStyles).length > 0) {
+    styleContents.push(stringifyJss(mergedStyles));
+  }
+
+  if (Object.keys(mediaQueries).length > 0) {
+    styleContents.push(stringifyMqs(mediaQueries));
+  }
+
+  const filteredStyleContents = styleContents.filter(style => !!style);
+
+  const styleBlock = filteredStyleContents.length
+    ? `<style>
+${filteredStyleContents.join("\n")}
+</style>
 `
-      : "";
+    : "";
 
   return `${styleBlock}${serialize(element)}`;
 };

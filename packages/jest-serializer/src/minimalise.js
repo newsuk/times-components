@@ -1,4 +1,5 @@
 import omitBy from "lodash.omitby";
+import { ID_ATTR } from "@times-components/responsive-styled-components-native";
 import traverse from "./traverse";
 import print from "./printers";
 
@@ -11,7 +12,10 @@ export const minimaliseTransform = excludeProps => (
   accum,
   children,
   node,
-  props: omitBy(props, excludeProps)
+  props: omitBy(
+    props,
+    (value, key) => key !== ID_ATTR && excludeProps(value, key)
+  )
 });
 
 export default excludeProps =>
