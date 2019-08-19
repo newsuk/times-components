@@ -52,7 +52,6 @@
     "graphql": "14.2.1",
     "graphql-tag": "2.10.1",
     "jest": "24.8.0",
-    "jest-transform-graphql": "2.1.0",
     "lodash.omit": "4.4.0",
     "prettier": "1.14.3",
     "react": "16.8.6",
