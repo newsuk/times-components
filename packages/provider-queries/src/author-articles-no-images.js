@@ -1,7 +1,7 @@
-import { addTypenameToDocument } from "apollo-utilities"
-import authorArticlesNoImagesQuery from "./author_articles_no_images.graphql"
+import { addTypenameToDocument } from "apollo-utilities";
+import authorArticlesNoImagesQuery from "./author_articles_no_images.graphql";
 
-export default addTypenameToDocument(authorArticlesNoImagesQuery)
+export default addTypenameToDocument(authorArticlesNoImagesQuery);
 
 export const propsToVariables = ({
   longSummaryLength,

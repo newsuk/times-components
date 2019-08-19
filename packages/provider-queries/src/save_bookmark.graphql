@@ -1,5 +1,5 @@
 mutation SaveBookmark($id: UUID!) {
-	saveBookmarks(bookmarks: [{ id: $id }]) {
-		id
-	}
+  saveBookmarks(bookmarks: [{ id: $id }]) {
+    id
+  }
 }

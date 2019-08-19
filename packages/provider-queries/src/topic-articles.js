@@ -1,7 +1,7 @@
 import { addTypenameToDocument } from "apollo-utilities";
-import topicArticles from "./topic_articles.graphql"
+import topicArticles from "./topic_articles.graphql";
 
-export default addTypenameToDocument(topicArticles)
+export default addTypenameToDocument(topicArticles);
 
 export const propsToVariables = ({
   articleImageRatio = "3:2",

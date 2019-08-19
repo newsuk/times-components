@@ -1,4 +1,4 @@
-import { addTypenameToDocument } from "apollo-utilities"
-import nativeEdition from "./native_edition.graphql"
+import { addTypenameToDocument } from "apollo-utilities";
+import nativeEdition from "./native_edition.graphql";
 
-export default addTypenameToDocument(nativeEdition)
+export default addTypenameToDocument(nativeEdition);

@@ -1,4 +1,4 @@
-import { addTypenameToDocument } from "apollo-utilities"
-import unsaveBookmark from "./unsave_bookmark.graphql"
+import { addTypenameToDocument } from "apollo-utilities";
+import unsaveBookmark from "./unsave_bookmark.graphql";
 
-export default addTypenameToDocument(unsaveBookmark)
+export default addTypenameToDocument(unsaveBookmark);

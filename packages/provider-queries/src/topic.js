@@ -1,4 +1,4 @@
-import { addTypenameToDocument } from "apollo-utilities"
-import topic from "./topic.graphql"
+import { addTypenameToDocument } from "apollo-utilities";
+import topic from "./topic.graphql";
 
-export default addTypenameToDocument(topic)
+export default addTypenameToDocument(topic);

@@ -1,3 +1,3 @@
-import sectionFragment from "./section_fragment.graphql"
+import sectionFragment from "./section_fragment.graphql";
 
-export default sectionFragment
+export default sectionFragment;

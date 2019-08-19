@@ -1,7 +1,7 @@
 import { addTypenameToDocument } from "apollo-utilities";
-import authorArticlesWithImages from "./author_articles_with_images.graphql"
+import authorArticlesWithImages from "./author_articles_with_images.graphql";
 
-export default addTypenameToDocument(authorArticlesWithImages)
+export default addTypenameToDocument(authorArticlesWithImages);
 
 export const propsToVariables = ({
   slug,
