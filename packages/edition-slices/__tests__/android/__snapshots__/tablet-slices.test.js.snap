@@ -83,8 +83,7 @@ exports[`3. lead one and one - medium 1`] = `
     </View>
     <View />
     <View>
-      <TileB
-        breakpoint="medium"
+      <TileAA
         tileName="support"
       />
     </View>
