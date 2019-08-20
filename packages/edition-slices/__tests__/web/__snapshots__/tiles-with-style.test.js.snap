@@ -3661,7 +3661,7 @@ exports[`42. tile ah 1`] = `
 
 .IS1 {
   overflow: hidden;
-  width: 40%;
+  width: 97;
   margin-bottom: 5px;
 }
 

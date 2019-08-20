@@ -29,7 +29,7 @@ const styles = (breakpoint = editionBreakpoints.medium) => ({
   },
   imageContainer: {
     overflow: "hidden",
-    width: "40%",
+    width: 97,
     marginBottom: spacing(1)
   },
   strapline: {
