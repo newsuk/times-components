@@ -91,6 +91,7 @@ export default (platform, cwd, options = {}) => {
       "^.+\\.(bmp|gif|jpg|jpeg|mp4|png|psd|svg|webp)$":
         "<rootDir>/node_modules/react-native/jest/assetFileTransformer.js",
       "^.+\\.js$": path.resolve(__dirname, "source-loader.js"),
+      // used to make jest understand graphql files once they're loaded
       "\\.(gql|graphql)$": "jest-transform-graphql",
       "^.+\\.graphql": "babel-jest"
     },
