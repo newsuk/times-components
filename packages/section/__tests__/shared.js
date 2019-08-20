@@ -1,6 +1,7 @@
 import React from "react";
 import { MockEdition } from "@times-components/fixture-generator";
 import { SectionContext } from "@times-components/context";
+import { editionBreakpoints } from "@times-components/styleguide";
 import {
   addSerializers,
   compose,
@@ -10,6 +11,7 @@ import {
   print
 } from "@times-components/jest-serializer";
 import TestRenderer from "react-test-renderer";
+import SectionItemSeparator from "../src/section-item-separator";
 import Section from "../src/section";
 import PuzzleBar from "../src/puzzle-bar";
 
@@ -121,6 +123,38 @@ export default () => {
           publicationName="SUNDAY TIMES"
           section={edition.sections[4]}
         />
+      ).toJSON()
+    ).toMatchSnapshot();
+  });
+
+  it("section item separator - small", () => {
+    expect(
+      TestRenderer.create(
+        <SectionItemSeparator breakpoint={editionBreakpoints.small} />
+      ).toJSON()
+    ).toMatchSnapshot();
+  });
+
+  it("section item separator - medium", () => {
+    expect(
+      TestRenderer.create(
+        <SectionItemSeparator breakpoint={editionBreakpoints.medium} />
+      ).toJSON()
+    ).toMatchSnapshot();
+  });
+
+  it("section item separator - wide", () => {
+    expect(
+      TestRenderer.create(
+        <SectionItemSeparator breakpoint={editionBreakpoints.wide} />
+      ).toJSON()
+    ).toMatchSnapshot();
+  });
+
+  it("section item separator - huge", () => {
+    expect(
+      TestRenderer.create(
+        <SectionItemSeparator breakpoint={editionBreakpoints.huge} />
       ).toJSON()
     ).toMatchSnapshot();
   });
