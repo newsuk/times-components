@@ -12,8 +12,7 @@ const smallBreakpointStyles = {
   logoContainer: {
     ...darkBackgroundColour,
     flexDirection: "row",
-    margin: spacing(2),
-    marginBottom: spacing(2)
+    margin: spacing(2)
   },
   separator: {
     borderBottomColor: colours.functional.tertiary
@@ -27,17 +26,43 @@ const smallBreakpointStyles = {
 };
 
 const mediumBreakpointStyles = {
-  container: {
-    ...darkBackgroundColour
+  logoContainer: {
+    ...darkBackgroundColour,
+    flexDirection: "row",
+    margin: spacing(3)
+  },
+  separator: {
+    borderBottomColor: colours.functional.tertiary,
+    marginHorizontal: spacing(3)
   },
   sliceWrapper: {
-    ...darkBackgroundColour,
     marginVertical: spacing(3),
     marginHorizontal: spacing(6)
   }
 };
 
+const wideBreakpointStyles = {
+  logoContainer: {
+    ...darkBackgroundColour,
+    flexDirection: "row",
+    margin: spacing(3)
+  },
+  separator: {
+    borderBottomColor: colours.functional.tertiary,
+    marginHorizontal: spacing(3)
+  },
+  sliceWrapper: {
+    marginVertical: spacing(3),
+    marginHorizontal: spacing(4)
+  }
+};
+
+const stylesResolver = {
+  [editionBreakpoints.small]: smallBreakpointStyles,
+  [editionBreakpoints.medium]: mediumBreakpointStyles,
+  [editionBreakpoints.wide]: wideBreakpointStyles,
+  [editionBreakpoints.huge]: wideBreakpointStyles
+};
+
 export default breakpoint =>
-  breakpoint === editionBreakpoints.small
-    ? smallBreakpointStyles
-    : { ...smallBreakpointStyles, ...mediumBreakpointStyles };
+  Object.assign(smallBreakpointStyles, stylesResolver[breakpoint]);

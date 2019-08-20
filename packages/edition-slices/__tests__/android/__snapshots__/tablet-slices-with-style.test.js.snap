@@ -429,8 +429,6 @@ exports[`7. secondary one and four - medium 1`] = `
   style={
     Object {
       "backgroundColor": "#272D34",
-      "marginHorizontal": 30,
-      "marginVertical": 15,
     }
   }
 >
@@ -456,8 +454,7 @@ exports[`7. secondary one and four - medium 1`] = `
           Object {
             "backgroundColor": "#272D34",
             "flexDirection": "row",
-            "margin": 10,
-            "marginBottom": 10,
+            "margin": 15,
           }
         }
       >
@@ -470,7 +467,7 @@ exports[`7. secondary one and four - medium 1`] = `
             "borderBottomWidth": 1,
             "borderColor": "#DBDBDB",
             "borderStyle": "solid",
-            "marginHorizontal": 10,
+            "marginHorizontal": 15,
           }
         }
       />
@@ -1608,7 +1605,6 @@ exports[`22. secondary one and four - wide 1`] = `
 <View
   style={
     Object {
-      "backgroundColor": "#272D34",
       "marginHorizontal": 30,
       "marginVertical": 15,
     }
@@ -1636,8 +1632,7 @@ exports[`22. secondary one and four - wide 1`] = `
           Object {
             "backgroundColor": "#272D34",
             "flexDirection": "row",
-            "margin": 10,
-            "marginBottom": 10,
+            "margin": 15,
           }
         }
       >
@@ -1650,7 +1645,7 @@ exports[`22. secondary one and four - wide 1`] = `
             "borderBottomWidth": 1,
             "borderColor": "#DBDBDB",
             "borderStyle": "solid",
-            "marginHorizontal": 10,
+            "marginHorizontal": 15,
           }
         }
       />
@@ -2897,8 +2892,7 @@ exports[`37. secondary one and four - huge 1`] = `
 <View
   style={
     Object {
-      "backgroundColor": "#272D34",
-      "marginHorizontal": 30,
+      "marginHorizontal": 20,
       "marginVertical": 15,
     }
   }
@@ -2934,8 +2928,7 @@ exports[`37. secondary one and four - huge 1`] = `
             Object {
               "backgroundColor": "#272D34",
               "flexDirection": "row",
-              "margin": 10,
-              "marginBottom": 10,
+              "margin": 15,
             }
           }
         >
@@ -2948,7 +2941,7 @@ exports[`37. secondary one and four - huge 1`] = `
               "borderBottomWidth": 1,
               "borderColor": "#DBDBDB",
               "borderStyle": "solid",
-              "marginHorizontal": 10,
+              "marginHorizontal": 15,
             }
           }
         />

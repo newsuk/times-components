@@ -167,10 +167,10 @@ exports[`1. secondary one and four 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-top: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
@@ -185,8 +185,8 @@ exports[`1. secondary one and four 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
 .IS3 {
@@ -332,9 +332,8 @@ exports[`1. secondary one and four 1`] = `
 }
 
 .IS17 {
-  background-color: rgba(39,45,52,1.00);
-  margin-right: 30px;
-  margin-left: 30px;
+  margin-right: 20px;
+  margin-left: 20px;
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -385,6 +384,7 @@ exports[`1. secondary one and four 1`] = `
             className="css-view-1dbjc4n IS5"
           >
             <TileO
+              breakpoint="wide"
               tileName="support1"
             />
           </div>
@@ -395,6 +395,7 @@ exports[`1. secondary one and four 1`] = `
             className="css-view-1dbjc4n IS7"
           >
             <TileO
+              breakpoint="wide"
               tileName="support3"
             />
           </div>
@@ -409,6 +410,7 @@ exports[`1. secondary one and four 1`] = `
             className="css-view-1dbjc4n IS10"
           >
             <TileO
+              breakpoint="wide"
               tileName="support2"
             />
           </div>
@@ -419,6 +421,7 @@ exports[`1. secondary one and four 1`] = `
             className="css-view-1dbjc4n IS12"
           >
             <TileO
+              breakpoint="wide"
               tileName="support4"
             />
           </div>
@@ -436,10 +439,10 @@ exports[`1. secondary one and four 2`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-top: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
@@ -454,8 +457,8 @@ exports[`1. secondary one and four 2`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
 .IS3 {
@@ -601,9 +604,8 @@ exports[`1. secondary one and four 2`] = `
 }
 
 .IS17 {
-  background-color: rgba(39,45,52,1.00);
-  margin-right: 30px;
-  margin-left: 30px;
+  margin-right: 20px;
+  margin-left: 20px;
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -654,6 +656,7 @@ exports[`1. secondary one and four 2`] = `
             className="css-view-1dbjc4n IS5"
           >
             <TileO
+              breakpoint="wide"
               tileName="support1"
             />
           </div>
@@ -664,6 +667,7 @@ exports[`1. secondary one and four 2`] = `
             className="css-view-1dbjc4n IS7"
           >
             <TileO
+              breakpoint="wide"
               tileName="support3"
             />
           </div>
@@ -678,6 +682,7 @@ exports[`1. secondary one and four 2`] = `
             className="css-view-1dbjc4n IS10"
           >
             <TileO
+              breakpoint="wide"
               tileName="support2"
             />
           </div>
@@ -688,6 +693,7 @@ exports[`1. secondary one and four 2`] = `
             className="css-view-1dbjc4n IS12"
           >
             <TileO
+              breakpoint="wide"
               tileName="support4"
             />
           </div>
@@ -1829,10 +1835,10 @@ exports[`10. secondary one and four 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-top: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
@@ -1847,8 +1853,8 @@ exports[`10. secondary one and four 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
 .IS3 {
@@ -1995,10 +2001,6 @@ exports[`10. secondary one and four 1`] = `
 
 .IS17 {
   background-color: rgba(39,45,52,1.00);
-  margin-right: 30px;
-  margin-left: 30px;
-  margin-top: 15px;
-  margin-bottom: 15px;
 }
 </style>
 
@@ -2047,6 +2049,7 @@ exports[`10. secondary one and four 1`] = `
             className="css-view-1dbjc4n IS5"
           >
             <TileO
+              breakpoint="wide"
               tileName="support1"
             />
           </div>
@@ -2057,6 +2060,7 @@ exports[`10. secondary one and four 1`] = `
             className="css-view-1dbjc4n IS7"
           >
             <TileO
+              breakpoint="wide"
               tileName="support3"
             />
           </div>
@@ -2071,6 +2075,7 @@ exports[`10. secondary one and four 1`] = `
             className="css-view-1dbjc4n IS10"
           >
             <TileO
+              breakpoint="wide"
               tileName="support2"
             />
           </div>
@@ -2081,6 +2086,7 @@ exports[`10. secondary one and four 1`] = `
             className="css-view-1dbjc4n IS12"
           >
             <TileO
+              breakpoint="wide"
               tileName="support4"
             />
           </div>

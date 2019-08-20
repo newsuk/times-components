@@ -5,20 +5,28 @@ import {
   editionBreakpoints
 } from "@times-components/styleguide";
 
-const styles = fontSize => ({
+const fontSizeResolver = {
+  [editionBreakpoints.small]: 18,
+  [editionBreakpoints.medium]: 18,
+  [editionBreakpoints.wide]: 28,
+  [editionBreakpoints.huge]: 45
+};
+
+export default breakpoint => ({
   container: {
     backgroundColor: colours.functional.darkSupplement,
     flexDirection: "row",
-    padding: spacing(2)
+    padding: spacing(2),
+    marginLeft: spacing(1)
   },
   flagColour: {
     color: colours.functional.greyLabel
   },
   headline: {
     ...fontFactory({
-      font: "headline",
-      fontSize
+      font: "headline"
     }),
+    fontSize: fontSizeResolver[breakpoint],
     color: colours.functional.white
   },
   imageContainer: {
@@ -35,12 +43,3 @@ const styles = fontSize => ({
     width: "50%"
   }
 });
-
-export default breakpoint => {
-  const fontSize =
-    breakpoint === editionBreakpoints.small ||
-    breakpoint === editionBreakpoints.medium
-      ? "body"
-      : "headline";
-  return styles(fontSize);
-};

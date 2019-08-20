@@ -68,18 +68,22 @@ exports[`1. secondary one and four 1`] = `
       </View>
       <View>
         <TileO
+          breakpoint="small"
           tileName="support1"
         />
         <View />
         <TileO
+          breakpoint="small"
           tileName="support2"
         />
         <View />
         <TileO
+          breakpoint="small"
           tileName="support3"
         />
         <View />
         <TileO
+          breakpoint="small"
           tileName="support4"
         />
       </View>
@@ -109,18 +113,22 @@ exports[`1. secondary one and four 2`] = `
       </View>
       <View>
         <TileO
+          breakpoint="small"
           tileName="support1"
         />
         <View />
         <TileO
+          breakpoint="small"
           tileName="support2"
         />
         <View />
         <TileO
+          breakpoint="small"
           tileName="support3"
         />
         <View />
         <TileO
+          breakpoint="small"
           tileName="support4"
         />
       </View>
@@ -359,18 +367,22 @@ exports[`10. secondary one and four 1`] = `
       </View>
       <View>
         <TileO
+          breakpoint="small"
           tileName="support1"
         />
         <View />
         <TileO
+          breakpoint="small"
           tileName="support2"
         />
         <View />
         <TileO
+          breakpoint="small"
           tileName="support3"
         />
         <View />
         <TileO
+          breakpoint="small"
           tileName="support4"
         />
       </View>
