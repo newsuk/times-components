@@ -26,20 +26,22 @@ const sharedStyles = {
 const mediumBreakpointStyles = {
   ...sharedStyles,
   container: {
-    ...sharedStyles.container,
+    flex: 1,
     paddingVertical: spacing(3),
     paddingHorizontal: spacing(2)
   },
-  headline: {
-    ...sharedStyles.headline,
-    fontSize: 30,
-    lineHeight: 30,
-    marginBottom: spacing(2)
+  imageContainer: {
+    width: "100%"
   },
   summaryContainer: {
-    ...sharedStyles.summaryContainer,
-    flex: 1,
-    paddingRight: spacing(4)
+    width: "100%",
+    paddingBottom: spacing(2)
+  },
+  headline: {
+    ...sharedStyles.headline,
+    fontSize: 40,
+    lineHeight: 40,
+    marginBottom: spacing(2)
   }
 };
 
