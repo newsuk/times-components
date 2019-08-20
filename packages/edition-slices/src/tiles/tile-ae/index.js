@@ -20,6 +20,7 @@ const TileAE = ({ onPress, tile }) => (
           tile={tile}
           whiteSpaceHeight={whiteSpaceHeight}
           withStar={false}
+          linesOfTeaserToRender={5}
         />
       )}
     />
