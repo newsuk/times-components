@@ -219,7 +219,7 @@ export default ({
         element: inline
       };
     },
-    interactive(key, { id }) {
+    interactive(key, { id, display }) {
       return {
         element: new Layout.Block({
           getComponent() {
@@ -228,7 +228,9 @@ export default ({
                 key={key}
                 style={[
                   styles.interactiveContainer,
-                  isTablet && styles.interactiveContainerTablet
+                  isTablet && styles.interactiveContainerTablet,
+                  display === "fullwidth" &&
+                    styles.interactiveContainerFullWidth
                 ]}
               >
                 <InteractiveWrapper config={interactiveConfig} id={id} />

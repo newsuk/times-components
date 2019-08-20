@@ -24,6 +24,7 @@ const makeHtml = (
             ${styles}
             ${responsiveStyles}
             <style>
+            * { box-sizing: border-box; }
             #nav {
               height: 50px;
               position: fixed;

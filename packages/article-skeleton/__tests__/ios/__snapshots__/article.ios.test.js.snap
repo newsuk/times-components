@@ -252,7 +252,74 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
 </View>
 `;
 
-exports[`2. an article with no content 1`] = `
+exports[`2. an article with interactives 1`] = `
+<View>
+  <RCTScrollView
+    ListHeaderComponent={
+      <Gutter>
+        <Header
+          width={750}
+        />
+      </Gutter>
+    }
+    initialListSize={10}
+    initialNumToRender={10}
+    maxToRenderPerBatch={10}
+    nestedScrollEnabled={true}
+    numColumns={1}
+    onEndReachedThreshold={2}
+    pageSize={1}
+    removeClippedSubviews={true}
+    scrollEventThrottle={50}
+    scrollRenderAheadDistance={10}
+    updateCellsBatchingPeriod={50}
+    windowSize={21}
+  >
+    <View>
+      <View>
+        <View />
+      </View>
+      <View>
+        <View>
+          <View>
+            <InteractiveWrapper
+              id="d2f83305-d558-4f78-f582-32115c659355"
+            />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View>
+          <View>
+            <InteractiveWrapper
+              id="abc"
+            />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View />
+      </View>
+      <View>
+        <View />
+      </View>
+      <View>
+        <View />
+      </View>
+      <View>
+        <View>
+          <ArticleExtras
+            articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+            articleUrl="https://url.io"
+          />
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
+
+exports[`3. an article with no content 1`] = `
 <View>
   <RCTScrollView
     ListHeaderComponent={
@@ -284,7 +351,7 @@ exports[`2. an article with no content 1`] = `
 </View>
 `;
 
-exports[`3. an article with a nested markup in first paragraph displays a drop cap 1`] = `
+exports[`4. an article with a nested markup in first paragraph displays a drop cap 1`] = `
 <View>
   <RCTScrollView
     ListHeaderComponent={
@@ -361,7 +428,7 @@ exports[`3. an article with a nested markup in first paragraph displays a drop c
 </View>
 `;
 
-exports[`5. an inline link reports analytics event on press 1`] = `
+exports[`6. an inline link reports analytics event on press 1`] = `
 Object {
   "action": "Pressed",
   "attrs": Object {
