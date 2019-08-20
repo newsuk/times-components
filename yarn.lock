@@ -12676,11 +12676,6 @@ jest-styled-components@6.3.1:
   dependencies:
     css "^2.2.4"
 
-jest-transform-graphql@2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/jest-transform-graphql/-/jest-transform-graphql-2.1.0.tgz#903cb66bb27bc2772fd3e5dd4f7e9b57230f5829"
-  integrity sha1-kDy2a7J7wncv0+XdT36bVyMPWCk=
-
 jest-util@^24.5.0, jest-util@^24.8.0:
   version "24.8.0"
   resolved "https://registry.yarnpkg.com/jest-util/-/jest-util-24.8.0.tgz#41f0e945da11df44cc76d64ffb915d0716f46cd1"
