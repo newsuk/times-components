@@ -18,7 +18,7 @@
     "url-polyfill": "1.1.0"
   },
   "devDependencies": {
-    "metro-react-native-babel-preset": "0.53.1",
+    "metro-react-native-babel-preset": "0.56.0",
     "prettier": "1.14.3",
     "webpack": "4.30.0"
   },

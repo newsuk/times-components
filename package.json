@@ -135,7 +135,7 @@
     "jest": "24.8.0",
     "lcov-result-merger": "1.2.0",
     "lerna": "3.2.1",
-    "metro-react-native-babel-preset": "0.53.1",
+    "metro-react-native-babel-preset": "0.56.0",
     "mkdirp": "0.5.1",
     "mockdate": "2.0.2",
     "node-fetch": "2.2.0",
@@ -157,8 +157,7 @@
   },
   "dependencies": {
     "@babel/core": "7.4.4",
-    "@babel/preset-env": "^7.0.0",
-    "@babel/runtime": "7.4.4",
+    "@babel/preset-env": "7.4.4",
     "@babel/runtime-corejs2": "7.4.4",
     "react-art": "16.6.3",
     "react-native": "0.59.10",

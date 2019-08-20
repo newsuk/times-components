@@ -1,4 +1,5 @@
-import "babel-polyfill";
+/* eslint-disable import/no-unresolved */
+import "@babel/polyfill";
 import { AppRegistry } from "react-native";
 import StorybookUIRoot from "./storybook";
 

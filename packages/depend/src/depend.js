@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 import "@babel/polyfill";
 import minimatch from "minimatch";
 
