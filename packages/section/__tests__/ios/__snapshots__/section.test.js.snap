@@ -321,6 +321,54 @@ exports[`puzzle bar with one puzzle 1`] = `
 </View>
 `;
 
+exports[`section item separator - huge 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#DBDBDB",
+      "height": 1,
+      "marginHorizontal": 113,
+    }
+  }
+/>
+`;
+
+exports[`section item separator - medium 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#DBDBDB",
+      "height": 1,
+      "marginHorizontal": 40,
+    }
+  }
+/>
+`;
+
+exports[`section item separator - small 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#DBDBDB",
+      "height": 1,
+      "marginHorizontal": 10,
+    }
+  }
+/>
+`;
+
+exports[`section item separator - wide 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#DBDBDB",
+      "height": 1,
+      "marginHorizontal": 50,
+    }
+  }
+/>
+`;
+
 exports[`section page 1`] = `
 <RCTScrollView
   style={
