@@ -2690,8 +2690,8 @@ exports[`22. secondary one and four - wide 1`] = `
 }
 
 .IS17 {
-  margin-right: 40px;
-  margin-left: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -4566,8 +4566,8 @@ exports[`37. secondary one and four - huge 1`] = `
 }
 
 .IS17 {
-  margin-right: 40px;
-  margin-left: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
   margin-top: 15px;
   margin-bottom: 15px;
 }

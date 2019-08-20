@@ -2892,7 +2892,7 @@ exports[`37. secondary one and four - huge 1`] = `
 <View
   style={
     Object {
-      "marginHorizontal": 40,
+      "marginHorizontal": 20,
       "marginVertical": 15,
     }
   }

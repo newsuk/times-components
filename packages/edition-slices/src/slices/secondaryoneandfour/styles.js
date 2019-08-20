@@ -53,7 +53,7 @@ const wideBreakpointStyles = {
   },
   sliceWrapper: {
     marginVertical: spacing(3),
-    marginHorizontal: spacing(8)
+    marginHorizontal: spacing(4)
   }
 };
 

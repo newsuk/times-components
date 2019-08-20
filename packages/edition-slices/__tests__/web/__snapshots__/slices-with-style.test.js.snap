@@ -332,8 +332,8 @@ exports[`1. secondary one and four 1`] = `
 }
 
 .IS17 {
-  margin-right: 40px;
-  margin-left: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -604,8 +604,8 @@ exports[`1. secondary one and four 2`] = `
 }
 
 .IS17 {
-  margin-right: 40px;
-  margin-left: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
   margin-top: 15px;
   margin-bottom: 15px;
 }
