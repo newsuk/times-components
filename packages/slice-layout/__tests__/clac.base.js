@@ -11,6 +11,7 @@ export default renderComponent => {
       test() {
         const output = renderComponent(
           <CommentLeadAndCartoon
+            breakpoint={editionBreakpoints.small}
             cartoon={createItem("cartoon-1")}
             lead={createItem("lead-1")}
           />

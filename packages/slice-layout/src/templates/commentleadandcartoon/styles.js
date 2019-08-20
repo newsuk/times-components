@@ -7,7 +7,7 @@ const styles = {
   container: {
     flex: 1,
     flexDirection: "row",
-    paddingHorizontal: spacing(6),
+    paddingHorizontal: spacing(4),
     paddingVertical: spacing(1)
   },
   lead: {
