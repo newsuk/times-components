@@ -16,8 +16,7 @@ const styles = (breakpoint = editionBreakpoints.medium) => ({
   container: {
     flex: 1,
     alignItems: "center",
-    marginRight: spacing(2),
-    paddingVertical: spacing(2)
+    padding: spacing(2)
   },
   headline: {
     color: colours.functional.brandColour,
