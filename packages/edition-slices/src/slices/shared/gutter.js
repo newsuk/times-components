@@ -2,22 +2,15 @@ import React from "react";
 import PropTypes from "prop-types";
 import { View } from "react-native";
 import { ResponsiveContext } from "@times-components/responsive";
-import { editionMaxWidth, spacing } from "@times-components/styleguide";
+import styleFactory from "./styles";
 
 const Gutter = ({ children }) => (
   <ResponsiveContext.Consumer>
-    {({ isTablet }) => (
-      <View
-        style={{
-          alignSelf: "center",
-          maxWidth: "100%",
-          paddingHorizontal: isTablet ? spacing(2) : 0,
-          width: editionMaxWidth
-        }}
-      >
-        {children}
-      </View>
-    )}
+    {({ isTablet, editionBreakpoint }) => {
+      const styles = styleFactory(isTablet, editionBreakpoint);
+
+      return <View style={styles.gutterStyles}>{children}</View>;
+    }}
   </ResponsiveContext.Consumer>
 );
 

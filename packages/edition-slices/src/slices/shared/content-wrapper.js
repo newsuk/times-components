@@ -6,7 +6,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { View } from "react-native";
-import styles from "./styles";
+import styleFactory from "./styles";
+
+const styles = styleFactory();
 
 const ContentWrapper = ({ children }) => (
   <View style={styles.contentWrapperStyles}>{children}</View>

@@ -1178,7 +1178,7 @@ exports[`16. comment lead and cartoon - wide 1`] = `
     Object {
       "alignSelf": "center",
       "maxWidth": "100%",
-      "paddingHorizontal": 10,
+      "paddingHorizontal": 30,
       "width": 1366,
     }
   }
@@ -1231,7 +1231,7 @@ exports[`17. daily universal register - wide 1`] = `
     Object {
       "alignSelf": "center",
       "maxWidth": "100%",
-      "paddingHorizontal": 10,
+      "paddingHorizontal": 30,
       "width": 1366,
     }
   }
@@ -1337,7 +1337,7 @@ exports[`18. lead one and one - wide 1`] = `
     Object {
       "alignSelf": "center",
       "maxWidth": "100%",
-      "paddingHorizontal": 10,
+      "paddingHorizontal": 30,
       "width": 1366,
     }
   }
@@ -1389,7 +1389,7 @@ exports[`19. lead one full width - wide 1`] = `
     Object {
       "alignSelf": "center",
       "maxWidth": "100%",
-      "paddingHorizontal": 10,
+      "paddingHorizontal": 30,
       "width": 1366,
     }
   }
@@ -1404,7 +1404,7 @@ exports[`20. lead two no pic and two - wide 1`] = `
     Object {
       "alignSelf": "center",
       "maxWidth": "100%",
-      "paddingHorizontal": 10,
+      "paddingHorizontal": 30,
       "width": 1366,
     }
   }
@@ -1486,7 +1486,7 @@ exports[`21. leaders slice - wide 1`] = `
     Object {
       "alignSelf": "center",
       "maxWidth": "100%",
-      "paddingHorizontal": 10,
+      "paddingHorizontal": 30,
       "width": 1366,
     }
   }
@@ -1615,7 +1615,7 @@ exports[`22. secondary one and four - wide 1`] = `
       Object {
         "alignSelf": "center",
         "maxWidth": "100%",
-        "paddingHorizontal": 10,
+        "paddingHorizontal": 30,
         "width": 1366,
       }
     }
@@ -1771,7 +1771,7 @@ exports[`23. secondary one - wide 1`] = `
     Object {
       "alignSelf": "center",
       "maxWidth": "100%",
-      "paddingHorizontal": 10,
+      "paddingHorizontal": 30,
       "width": 1366,
     }
   }
@@ -1786,7 +1786,7 @@ exports[`24. secondary four - wide 1`] = `
     Object {
       "alignSelf": "center",
       "maxWidth": "100%",
-      "paddingHorizontal": 10,
+      "paddingHorizontal": 30,
       "width": 1366,
     }
   }
@@ -1879,7 +1879,7 @@ exports[`25. secondary one and columnist - wide 1`] = `
     Object {
       "alignSelf": "center",
       "maxWidth": "100%",
-      "paddingHorizontal": 10,
+      "paddingHorizontal": 30,
       "width": 1366,
     }
   }
@@ -1931,7 +1931,7 @@ exports[`26. secondary two and two - wide 1`] = `
     Object {
       "alignSelf": "center",
       "maxWidth": "100%",
-      "paddingHorizontal": 10,
+      "paddingHorizontal": 30,
       "width": 1366,
     }
   }
@@ -2021,7 +2021,7 @@ exports[`27. lead one and four slice - wide 1`] = `
     Object {
       "alignSelf": "center",
       "maxWidth": "100%",
-      "paddingHorizontal": 10,
+      "paddingHorizontal": 30,
       "width": 1366,
     }
   }
@@ -2107,7 +2107,7 @@ exports[`28. standard slice - wide 1`] = `
     Object {
       "alignSelf": "center",
       "maxWidth": "100%",
-      "paddingHorizontal": 10,
+      "paddingHorizontal": 30,
       "width": 1366,
     }
   }
@@ -2178,7 +2178,7 @@ exports[`29. secondary two no pic and two - wide 1`] = `
     Object {
       "alignSelf": "center",
       "maxWidth": "100%",
-      "paddingHorizontal": 10,
+      "paddingHorizontal": 30,
       "width": 1366,
     }
   }
@@ -2270,7 +2270,7 @@ exports[`30. puzzle - wide 1`] = `
     Object {
       "alignSelf": "center",
       "maxWidth": "100%",
-      "paddingHorizontal": 10,
+      "paddingHorizontal": 30,
       "width": 1366,
     }
   }
