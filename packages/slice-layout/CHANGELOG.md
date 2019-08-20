@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.37.3](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.37.2...@times-components/slice-layout@0.37.3) (2019-08-20)
+
+
+### Bug Fixes
+
+* lead one and cartoon styling fixes 768 ([#2193](https://github.com/newsuk/times-components/issues/2193)) ([1b95da3](https://github.com/newsuk/times-components/commit/1b95da3))
+
+
+
+
+
 ## [0.37.2](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.37.1...@times-components/slice-layout@0.37.2) (2019-08-16)
 
 
