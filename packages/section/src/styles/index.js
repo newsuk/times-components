@@ -5,6 +5,13 @@ import {
   editionBreakpoints
 } from "@times-components/styleguide";
 
+const separatorSpacingResolver = {
+  [editionBreakpoints.small]: spacing(2),
+  [editionBreakpoints.medium]: spacing(8),
+  [editionBreakpoints.wide]: spacing(10),
+  [editionBreakpoints.huge]: spacing(22.6)
+};
+
 export default breakpoint => ({
   listItemContainer: {
     paddingHorizontal: spacing(2),
@@ -13,8 +20,7 @@ export default breakpoint => ({
   listItemSeparator: {
     backgroundColor: colours.functional.keyline,
     height: 1,
-    marginHorizontal:
-      breakpoint === editionBreakpoints.medium ? spacing(8) : spacing(2)
+    marginHorizontal: separatorSpacingResolver[breakpoint]
   },
   puzzleBarArrow: {
     paddingLeft: spacing(2),

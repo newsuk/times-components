@@ -2,22 +2,36 @@ import React from "react";
 import PropTypes from "prop-types";
 import { View } from "react-native";
 import { ResponsiveContext } from "@times-components/responsive";
-import { editionMaxWidth, spacing } from "@times-components/styleguide";
+import {
+  editionMaxWidth,
+  spacing,
+  editionBreakpoints
+} from "@times-components/styleguide";
 
 const Gutter = ({ children }) => (
   <ResponsiveContext.Consumer>
-    {({ isTablet }) => (
-      <View
-        style={{
-          alignSelf: "center",
-          maxWidth: "100%",
-          paddingHorizontal: isTablet ? spacing(2) : 0,
-          width: editionMaxWidth
-        }}
-      >
-        {children}
-      </View>
-    )}
+    {({ isTablet, editionBreakpoint }) => {
+      const tabletPaddingHorizontalResolver = {
+        [editionBreakpoints.medium]: spacing(2),
+        [editionBreakpoints.wide]: spacing(6),
+        [editionBreakpoints.huge]: spacing(2)
+      };
+
+      return (
+        <View
+          style={{
+            alignSelf: "center",
+            maxWidth: "100%",
+            paddingHorizontal: isTablet
+              ? tabletPaddingHorizontalResolver[editionBreakpoint]
+              : 0,
+            width: editionMaxWidth
+          }}
+        >
+          {children}
+        </View>
+      );
+    }}
   </ResponsiveContext.Consumer>
 );
 
