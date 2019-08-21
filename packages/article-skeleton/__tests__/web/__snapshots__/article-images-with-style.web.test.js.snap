@@ -59,7 +59,8 @@ exports[`1. a primary image 1`] = `
 .c5 {
   border: solid #DBDBDB;
   border-width: 1px 0;
-  margin: 0 auto;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .c5 + .c4 {
@@ -110,6 +111,12 @@ exports[`1. a primary image 1`] = `
 
 @media (min-width:768px) {
   .c5 {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
     width: 80.8%;
   }
 }
@@ -117,13 +124,6 @@ exports[`1. a primary image 1`] = `
 @media (min-width:1024px) {
   .c5 {
     width: 56.2%;
-  }
-}
-
-@media (max-width:768px) {
-  .c5 {
-    margin-left: 10px;
-    margin-right: 10px;
   }
 }
 
@@ -238,7 +238,8 @@ exports[`2. a fullwidth image 1`] = `
 .c5 {
   border: solid #DBDBDB;
   border-width: 1px 0;
-  margin: 0 auto;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .c5 + .c4 {
@@ -276,6 +277,12 @@ exports[`2. a fullwidth image 1`] = `
 
 @media (min-width:768px) {
   .c5 {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
     width: 80.8%;
   }
 }
@@ -283,13 +290,6 @@ exports[`2. a fullwidth image 1`] = `
 @media (min-width:1024px) {
   .c5 {
     width: 56.2%;
-  }
-}
-
-@media (max-width:768px) {
-  .c5 {
-    margin-left: 10px;
-    margin-right: 10px;
   }
 }
 
@@ -413,7 +413,8 @@ exports[`3. a secondary image 1`] = `
 .c5 {
   border: solid #DBDBDB;
   border-width: 1px 0;
-  margin: 0 auto;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .c5 + .c4 {
@@ -466,6 +467,12 @@ exports[`3. a secondary image 1`] = `
 
 @media (min-width:768px) {
   .c5 {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
     width: 80.8%;
   }
 }
@@ -473,13 +480,6 @@ exports[`3. a secondary image 1`] = `
 @media (min-width:1024px) {
   .c5 {
     width: 56.2%;
-  }
-}
-
-@media (max-width:768px) {
-  .c5 {
-    margin-left: 10px;
-    margin-right: 10px;
   }
 }
 
@@ -608,7 +608,8 @@ exports[`4. an inline image 1`] = `
 .c5 {
   border: solid #DBDBDB;
   border-width: 1px 0;
-  margin: 0 auto;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .c5 + .c4 {
@@ -661,6 +662,12 @@ exports[`4. an inline image 1`] = `
 
 @media (min-width:768px) {
   .c5 {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:768px) {
+  .c5 {
     width: 80.8%;
   }
 }
@@ -668,13 +675,6 @@ exports[`4. an inline image 1`] = `
 @media (min-width:1024px) {
   .c5 {
     width: 56.2%;
-  }
-}
-
-@media (max-width:768px) {
-  .c5 {
-    margin-left: 10px;
-    margin-right: 10px;
   }
 }
 

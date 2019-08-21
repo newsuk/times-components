@@ -9,6 +9,7 @@ import {
 } from "./styles/responsive";
 import executeSSOtransaction from "./comment-login";
 import styles from "./styles";
+import withTrackEvents from "./tracking/with-track-events";
 
 class Comments extends Component {
   constructor() {
@@ -28,7 +29,13 @@ class Comments extends Component {
   }
 
   initialiseComments() {
-    const { articleId, isReadOnly, spotAccountId } = this.props;
+    const {
+      articleId,
+      isReadOnly,
+      spotAccountId,
+      onCommentStart,
+      onCommentPost
+    } = this.props;
 
     if (!this.container || !articleId || !spotAccountId) {
       return;
@@ -49,6 +56,15 @@ class Comments extends Component {
     launcherScript.setAttribute("data-seo-enabled", true);
     launcherScript.setAttribute("data-livefyre-url", articleId);
     this.container.appendChild(launcherScript);
+
+    document.addEventListener(
+      "spot-im-current-user-typing-start",
+      onCommentStart
+    );
+    document.addEventListener(
+      "spot-im-current-user-sent-message",
+      onCommentPost
+    );
 
     if (!isReadOnly) {
       if (window.SPOTIM && window.SPOTIM.startSSO) {
@@ -77,9 +93,13 @@ class Comments extends Component {
 
   render() {
     const { showLabel } = this.state;
+    const { onCommentStart, onCommentPost } = this.props;
 
     return (
-      <CommentContainer>
+      <CommentContainer
+        onCommentStart={onCommentStart}
+        onCommentPost={onCommentPost}
+      >
         {showLabel ? (
           <CommentEnabledGuidelines>
             Comments are subject to our community guidelines, which can be
@@ -107,7 +127,15 @@ class Comments extends Component {
 Comments.propTypes = {
   articleId: PropTypes.string.isRequired,
   isReadOnly: PropTypes.bool.isRequired,
-  spotAccountId: PropTypes.string.isRequired
+  spotAccountId: PropTypes.string.isRequired,
+  onCommentStart: PropTypes.func,
+  onCommentPost: PropTypes.func
 };
 
-export default Comments;
+// onCommentStart and onCommentPost are added as props in order to allow this events to be tracked by analytics.
+Comments.defaultProps = {
+  onCommentStart: () => {},
+  onCommentPost: () => {}
+};
+
+export default withTrackEvents(Comments);
