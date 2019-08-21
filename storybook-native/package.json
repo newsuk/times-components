@@ -1,6 +1,6 @@
 {
   "name": "@times-components/storybook-native",
-  "version": "0.0.25",
+  "version": "0.0.26",
   "license": "BSD-3-Clause",
   "scripts": {
     "fmt": "prettier --write '**/*.*'",
@@ -19,7 +19,6 @@
     }
   },
   "dependencies": {
-    "core-js": "^2.6.5",
     "@storybook/addon-actions": "4.1.18",
     "@storybook/addon-info": "4.1.18",
     "@storybook/addon-knobs": "4.1.18",
@@ -29,11 +28,12 @@
     "@storybook/react": "4.1.18",
     "@storybook/react-native": "4.1.18",
     "@times-components/storybook": "4.0.29",
+    "core-js": "^2.6.5",
     "prop-types": "15.7.2",
     "react": "16.8.6",
     "react-native": "0.59.10",
-    "regenerator-runtime": "0.13.2",
     "react-native-svg": "9.4.0",
+    "regenerator-runtime": "0.13.2",
     "url-polyfill": "1.1.0"
   },
   "devDependencies": {
