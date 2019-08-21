@@ -19,9 +19,6 @@ const TileU = ({ onPress, tile, breakpoint = editionBreakpoints.medium }) => {
   const styles = styleFactory(breakpoint);
   const crop = getTileImage(tile, "crop32");
 
-  const summary =
-    breakpoint !== editionBreakpoints.medium ? getTileSummary(tile, 800) : null;
-
   return (
     <TileLink onPress={onPress} style={styles.container} tile={tile}>
       <View style={styles.summaryContainer}>
@@ -29,9 +26,10 @@ const TileU = ({ onPress, tile, breakpoint = editionBreakpoints.medium }) => {
           render={whiteSpaceHeight => (
             <TileSummary
               headlineStyle={styles.headline}
-              summary={summary}
+              summary={getTileSummary(tile, 800)}
               tile={tile}
               whiteSpaceHeight={whiteSpaceHeight}
+              linesOfTeaserToRender={3}
               withStar={false}
             />
           )}

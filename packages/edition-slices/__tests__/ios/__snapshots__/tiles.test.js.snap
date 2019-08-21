@@ -897,7 +897,6 @@ exports[`22. tile u 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "flexDirection": "row",
       "paddingHorizontal": 10,
       "paddingVertical": 15,
     }
@@ -1808,8 +1807,7 @@ exports[`42. tile ah 1`] = `
     Object {
       "alignItems": "center",
       "flex": 1,
-      "marginRight": 10,
-      "paddingVertical": 10,
+      "padding": 10,
     }
   }
   url="/article/123"
@@ -1860,7 +1858,7 @@ exports[`43. tile ai 1`] = `
   linkStyle={
     Object {
       "alignItems": "center",
-      "paddingVertical": 10,
+      "padding": 10,
     }
   }
   url="/article/123"
