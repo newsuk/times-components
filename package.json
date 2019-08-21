@@ -104,7 +104,9 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@babel/cli": "7.4.4",
-    "@babel/plugin-proposal-decorators": "7.4.4",
+    "@babel/core": "7.4.4",
+    "@babel/preset-env": "7.4.4",
+    "@babel/plugin-transform-runtime": "7.4.4",
     "@storybook/addon-actions": "4.1.18",
     "@storybook/addon-info": "4.1.18",
     "@storybook/addon-knobs": "4.1.18",
@@ -116,7 +118,6 @@
     "babel-eslint": "10.0.2",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.5",
-    "babel-plugin-module-resolver": "3.2.0",
     "babel-plugin-transform-react-remove-prop-types": "0.4.24",
     "commitizen": "2.9.6",
     "coveralls": "2.13.1",
@@ -156,9 +157,6 @@
     "webpack": "4.30.0"
   },
   "dependencies": {
-    "@babel/core": "7.4.4",
-    "@babel/preset-env": "^7.0.0",
-    "@babel/runtime": "7.4.4",
     "@babel/runtime-corejs2": "7.4.4",
     "react-art": "16.6.3",
     "react-native": "0.59.10",
