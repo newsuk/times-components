@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.13.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.13.0...@times-components/article-skeleton@1.13.1) (2019-08-21)
+
+
+### Bug Fixes
+
+* keylines margin ([#2201](https://github.com/newsuk/times-components/issues/2201)) ([90d0c2d](https://github.com/newsuk/times-components/commit/90d0c2d))
+
+
+
+
+
 # [1.13.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.12.14...@times-components/article-skeleton@1.13.0) (2019-08-21)
 
 
