@@ -8,7 +8,6 @@ exports[`1. default layout 1`] = `
     <Image
       fadeDuration={0}
       fadeImageIn={false}
-      lowResSize={null}
       relativeHeight={0.4}
       relativeHorizontalOffset={0.16666666666666666}
       relativeVerticalOffset={0.2}
@@ -23,7 +22,6 @@ exports[`1. default layout 1`] = `
     <Image
       fadeDuration={0}
       fadeImageIn={false}
-      lowResSize={null}
       relativeHeight={0.4}
       relativeHorizontalOffset={0.16666666666666666}
       relativeVerticalOffset={0.2}
@@ -64,7 +62,6 @@ exports[`2. default layout without uri 1`] = `
     <Image
       fadeDuration={0}
       fadeImageIn={false}
-      lowResSize={null}
       relativeHeight={0.4}
       relativeHorizontalOffset={0.16666666666666666}
       relativeVerticalOffset={0.2}
@@ -99,7 +96,6 @@ exports[`3. default layout without aspect ratio 1`] = `
     <Image
       fadeDuration={0}
       fadeImageIn={false}
-      lowResSize={null}
       relativeHeight={0.4}
       relativeHorizontalOffset={0.16666666666666666}
       relativeVerticalOffset={0.2}
@@ -114,7 +110,6 @@ exports[`3. default layout without aspect ratio 1`] = `
     <Image
       fadeDuration={0}
       fadeImageIn={false}
-      lowResSize={null}
       relativeHeight={0.4}
       relativeHorizontalOffset={0.16666666666666666}
       relativeVerticalOffset={0.2}
@@ -155,7 +150,6 @@ exports[`4. rounded image 1`] = `
     <Image
       fadeDuration={0}
       fadeImageIn={false}
-      lowResSize={null}
       relativeHeight={0.4}
       relativeHorizontalOffset={0.16666666666666666}
       relativeVerticalOffset={0.2}
@@ -170,7 +164,6 @@ exports[`4. rounded image 1`] = `
     <Image
       fadeDuration={0}
       fadeImageIn={false}
-      lowResSize={null}
       relativeHeight={0.4}
       relativeHorizontalOffset={0.16666666666666666}
       relativeVerticalOffset={0.2}
@@ -211,7 +204,6 @@ exports[`5. prepend https schema 1`] = `
     <Image
       fadeDuration={0}
       fadeImageIn={false}
-      lowResSize={null}
       relativeHeight={0.4}
       relativeHorizontalOffset={0.16666666666666666}
       relativeVerticalOffset={0.2}
@@ -226,7 +218,6 @@ exports[`5. prepend https schema 1`] = `
     <Image
       fadeDuration={0}
       fadeImageIn={false}
-      lowResSize={null}
       relativeHeight={0.4}
       relativeHorizontalOffset={0.16666666666666666}
       relativeVerticalOffset={0.2}
@@ -267,7 +258,6 @@ exports[`6. handle onload event 1`] = `
     <Image
       fadeDuration={0}
       fadeImageIn={false}
-      lowResSize={null}
       relativeHeight={0.4}
       relativeHorizontalOffset={0.16666666666666666}
       relativeVerticalOffset={0.2}
@@ -282,7 +272,6 @@ exports[`6. handle onload event 1`] = `
     <Image
       fadeDuration={0}
       fadeImageIn={false}
-      lowResSize={null}
       relativeHeight={0.4}
       relativeHorizontalOffset={0.16666666666666666}
       relativeVerticalOffset={0.2}
@@ -323,7 +312,6 @@ exports[`6. handle onload event 2`] = `
     <Image
       fadeDuration={0}
       fadeImageIn={false}
-      lowResSize={null}
       relativeHeight={0.4}
       relativeHorizontalOffset={0.16666666666666666}
       relativeVerticalOffset={0.2}
@@ -338,7 +326,6 @@ exports[`6. handle onload event 2`] = `
     <Image
       fadeDuration={0}
       fadeImageIn={false}
-      lowResSize={null}
       relativeHeight={0.4}
       relativeHorizontalOffset={0.16666666666666666}
       relativeVerticalOffset={0.2}
@@ -361,7 +348,6 @@ exports[`7. handle onload event with disabled placeholder 1`] = `
     <Image
       fadeDuration={0}
       fadeImageIn={false}
-      lowResSize={null}
       relativeHeight={0.4}
       relativeHorizontalOffset={0.16666666666666666}
       relativeVerticalOffset={0.2}
@@ -376,7 +362,6 @@ exports[`7. handle onload event with disabled placeholder 1`] = `
     <Image
       fadeDuration={0}
       fadeImageIn={false}
-      lowResSize={null}
       relativeHeight={0.4}
       relativeHorizontalOffset={0.16666666666666666}
       relativeVerticalOffset={0.2}
@@ -399,7 +384,6 @@ exports[`7. handle onload event with disabled placeholder 2`] = `
     <Image
       fadeDuration={0}
       fadeImageIn={false}
-      lowResSize={null}
       relativeHeight={0.4}
       relativeHorizontalOffset={0.16666666666666666}
       relativeVerticalOffset={0.2}
@@ -414,7 +398,6 @@ exports[`7. handle onload event with disabled placeholder 2`] = `
     <Image
       fadeDuration={0}
       fadeImageIn={false}
-      lowResSize={null}
       relativeHeight={0.4}
       relativeHorizontalOffset={0.16666666666666666}
       relativeVerticalOffset={0.2}
@@ -437,7 +420,6 @@ exports[`8. componentwillunmount cancels animation timer 1`] = `
     <Image
       fadeDuration={0}
       fadeImageIn={false}
-      lowResSize={null}
       relativeHeight={0.4}
       relativeHorizontalOffset={0.16666666666666666}
       relativeVerticalOffset={0.2}
@@ -452,7 +434,6 @@ exports[`8. componentwillunmount cancels animation timer 1`] = `
     <Image
       fadeDuration={0}
       fadeImageIn={false}
-      lowResSize={null}
       relativeHeight={0.4}
       relativeHorizontalOffset={0.16666666666666666}
       relativeVerticalOffset={0.2}
@@ -493,7 +474,6 @@ exports[`10. uses highressize if it exists 1`] = `
     <Image
       fadeDuration={0}
       fadeImageIn={false}
-      lowResSize={null}
       relativeHeight={0.4}
       relativeHorizontalOffset={0.16666666666666666}
       relativeVerticalOffset={0.2}
@@ -508,7 +488,6 @@ exports[`10. uses highressize if it exists 1`] = `
     <Image
       fadeDuration={0}
       fadeImageIn={false}
-      lowResSize={null}
       relativeHeight={0.4}
       relativeHorizontalOffset={0.16666666666666666}
       relativeVerticalOffset={0.2}
@@ -549,7 +528,6 @@ exports[`12. uses lowressize image as placeholder if passed 1`] = `
     <Image
       fadeDuration={0}
       fadeImageIn={false}
-      lowResSize={800}
       relativeHeight={0.4}
       relativeHorizontalOffset={0.16666666666666666}
       relativeVerticalOffset={0.2}
@@ -564,7 +542,6 @@ exports[`12. uses lowressize image as placeholder if passed 1`] = `
     <Image
       fadeDuration={0}
       fadeImageIn={false}
-      lowResSize={800}
       relativeHeight={0.4}
       relativeHorizontalOffset={0.16666666666666666}
       relativeVerticalOffset={0.2}
@@ -583,7 +560,6 @@ exports[`12. uses lowressize image as placeholder if passed 1`] = `
       <Image
         fadeDuration={0}
         fadeImageIn={false}
-        lowResSize={800}
         source={
           Object {
             "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800",
@@ -603,7 +579,6 @@ exports[`13. handle layout change 1`] = `
     <Image
       fadeDuration={0}
       fadeImageIn={false}
-      lowResSize={null}
       relativeHeight={0.4}
       relativeHorizontalOffset={0.16666666666666666}
       relativeVerticalOffset={0.2}
@@ -618,7 +593,6 @@ exports[`13. handle layout change 1`] = `
     <Image
       fadeDuration={0}
       fadeImageIn={false}
-      lowResSize={null}
       relativeHeight={0.4}
       relativeHorizontalOffset={0.16666666666666666}
       relativeVerticalOffset={0.2}

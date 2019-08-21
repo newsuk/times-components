@@ -20,6 +20,12 @@ const LazyLoadingImage = props => {
     rel_vertical_offset: relativeVerticalOffset
   };
 
+  Object.keys(queryObject).forEach(k => {
+    if (!queryObject[k]) {
+      delete queryObject[k]
+    }
+  })
+
   return (
     <Fragment>
       {source && source.uri && !source.uri.includes("data:image/") ? (
