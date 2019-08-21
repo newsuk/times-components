@@ -4,7 +4,6 @@ module.exports = (async () => {
   const root = path.resolve(__dirname, "../");
   return {
     resolver: {
-      providesModuleNodeModules: ["react-native"],
       resolverMainFields: ["react-native", "dev", "browser", "main"],
       hasteImplModulePath: path.join(
         root,
