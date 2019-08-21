@@ -1786,8 +1786,8 @@ exports[`22. tile u 1`] = `
 }
 
 .IS1 {
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 40px;
+  line-height: 40px;
   margin-bottom: 10px;
 }
 
@@ -1805,22 +1805,11 @@ exports[`22. tile u 1`] = `
 }
 
 .IS3 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  padding-right: 20px;
-  width: 40%;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
+  width: 100%;
 }
 
 .IS4 {
-  width: 60%;
+  width: 100%;
 }
 </style>
 
@@ -1828,7 +1817,6 @@ exports[`22. tile u 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "flexDirection": "row",
       "paddingHorizontal": "10px",
       "paddingVertical": "15px",
     }
@@ -1836,7 +1824,7 @@ exports[`22. tile u 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS3"
+    className="css-view-1dbjc4n r-paddingBottom-1mi0q7o IS3"
   >
     <div
       className="css-view-1dbjc4n IS2"

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.4.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.3.94...@times-components/ssr@2.4.0) (2019-08-21)
+
+
+### Features
+
+* full width interactives ([#2198](https://github.com/newsuk/times-components/issues/2198)) ([d8a8f88](https://github.com/newsuk/times-components/commit/d8a8f88))
+
+
+
+
+
 ## [2.3.94](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.3.93...@times-components/ssr@2.3.94) (2019-08-20)
 
 **Note:** Version bump only for package @times-components/ssr

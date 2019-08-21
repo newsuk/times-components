@@ -207,7 +207,7 @@ exports[`3. lead one and one - medium 1`] = `
         }
       }
     >
-      <TileB />
+      <TileAA />
     </View>
   </View>
 </View>

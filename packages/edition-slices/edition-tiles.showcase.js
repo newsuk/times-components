@@ -35,6 +35,7 @@ import {
   TileX,
   TileY,
   TileZ,
+  TileAA,
   TileAB,
   TileAG,
   TileAH,
@@ -195,6 +196,10 @@ const tileStories = [
   {
     name: "Tile Z - 35pt Headline, no teaser, 4:5 image",
     Tile: TileZ
+  },
+  {
+    name: "Tile AA - No image, 20pt headline, with teaser",
+    Tile: TileAA
   },
   {
     name:

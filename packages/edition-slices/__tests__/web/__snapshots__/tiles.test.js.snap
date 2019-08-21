@@ -895,7 +895,6 @@ exports[`22. tile u 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "flexDirection": "row",
       "paddingHorizontal": "10px",
       "paddingVertical": "15px",
     }
