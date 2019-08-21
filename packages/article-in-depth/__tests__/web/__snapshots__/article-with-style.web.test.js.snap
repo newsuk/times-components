@@ -70,7 +70,8 @@ exports[`full article with style 1`] = `
 .c9 {
   border: solid #DBDBDB;
   border-width: 1px 0;
-  margin: 0 auto;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .c9 + .c8 {
@@ -131,7 +132,8 @@ exports[`full article with style 1`] = `
 .c15 {
   border: solid #DBDBDB;
   border-width: 1px 0;
-  margin: 0 auto;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .c15 + .c14 {
@@ -278,6 +280,12 @@ exports[`full article with style 1`] = `
 
 @media (min-width:768px) {
   .c9 {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:768px) {
+  .c9 {
     width: 80.8%;
   }
 }
@@ -285,13 +293,6 @@ exports[`full article with style 1`] = `
 @media (min-width:1024px) {
   .c9 {
     width: 56.2%;
-  }
-}
-
-@media (max-width:768px) {
-  .c9 {
-    margin-left: 10px;
-    margin-right: 10px;
   }
 }
 
@@ -318,6 +319,12 @@ exports[`full article with style 1`] = `
 
 @media (min-width:768px) {
   .c15 {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:768px) {
+  .c15 {
     width: 80.8%;
   }
 }
@@ -325,13 +332,6 @@ exports[`full article with style 1`] = `
 @media (min-width:1024px) {
   .c15 {
     width: 56.2%;
-  }
-}
-
-@media (max-width:768px) {
-  .c15 {
-    margin-left: 10px;
-    margin-right: 10px;
   }
 }
 
@@ -832,7 +832,8 @@ exports[`full article with style in the culture magazine 1`] = `
 .c9 {
   border: solid #DBDBDB;
   border-width: 1px 0;
-  margin: 0 auto;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .c9 + .c8 {
@@ -893,7 +894,8 @@ exports[`full article with style in the culture magazine 1`] = `
 .c15 {
   border: solid #DBDBDB;
   border-width: 1px 0;
-  margin: 0 auto;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .c15 + .c14 {
@@ -1040,6 +1042,12 @@ exports[`full article with style in the culture magazine 1`] = `
 
 @media (min-width:768px) {
   .c9 {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:768px) {
+  .c9 {
     width: 80.8%;
   }
 }
@@ -1047,13 +1055,6 @@ exports[`full article with style in the culture magazine 1`] = `
 @media (min-width:1024px) {
   .c9 {
     width: 56.2%;
-  }
-}
-
-@media (max-width:768px) {
-  .c9 {
-    margin-left: 10px;
-    margin-right: 10px;
   }
 }
 
@@ -1080,6 +1081,12 @@ exports[`full article with style in the culture magazine 1`] = `
 
 @media (min-width:768px) {
   .c15 {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:768px) {
+  .c15 {
     width: 80.8%;
   }
 }
@@ -1087,13 +1094,6 @@ exports[`full article with style in the culture magazine 1`] = `
 @media (min-width:1024px) {
   .c15 {
     width: 56.2%;
-  }
-}
-
-@media (max-width:768px) {
-  .c15 {
-    margin-left: 10px;
-    margin-right: 10px;
   }
 }
 
@@ -1595,7 +1595,8 @@ exports[`full article with style in the style magazine 1`] = `
 .c9 {
   border: solid #DBDBDB;
   border-width: 1px 0;
-  margin: 0 auto;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .c9 + .c8 {
@@ -1656,7 +1657,8 @@ exports[`full article with style in the style magazine 1`] = `
 .c15 {
   border: solid #DBDBDB;
   border-width: 1px 0;
-  margin: 0 auto;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .c15 + .c14 {
@@ -1803,6 +1805,12 @@ exports[`full article with style in the style magazine 1`] = `
 
 @media (min-width:768px) {
   .c9 {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:768px) {
+  .c9 {
     width: 80.8%;
   }
 }
@@ -1810,13 +1818,6 @@ exports[`full article with style in the style magazine 1`] = `
 @media (min-width:1024px) {
   .c9 {
     width: 56.2%;
-  }
-}
-
-@media (max-width:768px) {
-  .c9 {
-    margin-left: 10px;
-    margin-right: 10px;
   }
 }
 
@@ -1843,6 +1844,12 @@ exports[`full article with style in the style magazine 1`] = `
 
 @media (min-width:768px) {
   .c15 {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:768px) {
+  .c15 {
     width: 80.8%;
   }
 }
@@ -1850,13 +1857,6 @@ exports[`full article with style in the style magazine 1`] = `
 @media (min-width:1024px) {
   .c15 {
     width: 56.2%;
-  }
-}
-
-@media (max-width:768px) {
-  .c15 {
-    margin-left: 10px;
-    margin-right: 10px;
   }
 }
 
@@ -2359,7 +2359,8 @@ exports[`full article with style in the sunday times magazine 1`] = `
 .c9 {
   border: solid #DBDBDB;
   border-width: 1px 0;
-  margin: 0 auto;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .c9 + .c8 {
@@ -2420,7 +2421,8 @@ exports[`full article with style in the sunday times magazine 1`] = `
 .c15 {
   border: solid #DBDBDB;
   border-width: 1px 0;
-  margin: 0 auto;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .c15 + .c14 {
@@ -2567,6 +2569,12 @@ exports[`full article with style in the sunday times magazine 1`] = `
 
 @media (min-width:768px) {
   .c9 {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:768px) {
+  .c9 {
     width: 80.8%;
   }
 }
@@ -2574,13 +2582,6 @@ exports[`full article with style in the sunday times magazine 1`] = `
 @media (min-width:1024px) {
   .c9 {
     width: 56.2%;
-  }
-}
-
-@media (max-width:768px) {
-  .c9 {
-    margin-left: 10px;
-    margin-right: 10px;
   }
 }
 
@@ -2607,6 +2608,12 @@ exports[`full article with style in the sunday times magazine 1`] = `
 
 @media (min-width:768px) {
   .c15 {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:768px) {
+  .c15 {
     width: 80.8%;
   }
 }
@@ -2614,13 +2621,6 @@ exports[`full article with style in the sunday times magazine 1`] = `
 @media (min-width:1024px) {
   .c15 {
     width: 56.2%;
-  }
-}
-
-@media (max-width:768px) {
-  .c15 {
-    margin-left: 10px;
-    margin-right: 10px;
   }
 }
 
