@@ -72,7 +72,11 @@ it("should track ArticleLink clicks in analytics", () => {
     }
 
     render() {
-      return <ArticleLink key="t-key" target="t-target" url="test.io" />;
+      return (
+        <ArticleLink key="t-key" target="t-target" url="test.io">
+          {["test link text"]}
+        </ArticleLink>
+      );
     }
   }
 

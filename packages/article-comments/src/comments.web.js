@@ -29,7 +29,13 @@ class Comments extends Component {
   }
 
   initialiseComments() {
-    const { articleId, isReadOnly, spotAccountId, onCommentStart, onCommentPost } = this.props;
+    const {
+      articleId,
+      isReadOnly,
+      spotAccountId,
+      onCommentStart,
+      onCommentPost
+    } = this.props;
 
     if (!this.container || !articleId || !spotAccountId) {
       return;
@@ -51,8 +57,14 @@ class Comments extends Component {
     launcherScript.setAttribute("data-livefyre-url", articleId);
     this.container.appendChild(launcherScript);
 
-    document.addEventListener('spot-im-current-user-typing-start', onCommentStart);
-    document.addEventListener('spot-im-current-user-sent-message', onCommentPost);
+    document.addEventListener(
+      "spot-im-current-user-typing-start",
+      onCommentStart
+    );
+    document.addEventListener(
+      "spot-im-current-user-sent-message",
+      onCommentPost
+    );
 
     if (!isReadOnly) {
       if (window.SPOTIM && window.SPOTIM.startSSO) {
