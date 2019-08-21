@@ -24,10 +24,10 @@ const wideBreakpointStyles = {
     marginHorizontal: spacing(2)
   },
   columnistContainer: {
-    width: "73%"
+    width: "67%"
   },
   secondaryContainer: {
-    width: "27%"
+    width: "33%"
   },
   colSeparator: {
     marginVertical: spacing(3)
