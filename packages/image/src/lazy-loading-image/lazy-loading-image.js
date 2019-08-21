@@ -21,7 +21,7 @@ const LazyLoadingImage = props => {
   };
 
   Object.keys(queryObject).forEach(k => {
-    if (!queryObject[k]) {
+    if (queryObject[k] === undefined) {
       delete queryObject[k];
     }
   });

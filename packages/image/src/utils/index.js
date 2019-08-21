@@ -8,10 +8,7 @@ const appendParamsToQuery = (uriString, paramMap) => {
 
   const uri = url.parse(uriString, true);
   uri.search = undefined;
-  uri.query = {
-    ...uri.query,
-    ...paramMap
-  };
+  Object.assign(uri.query, paramMap);
   return url.format(uri);
 };
 
