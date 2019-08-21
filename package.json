@@ -135,7 +135,7 @@
     "jest": "24.8.0",
     "lcov-result-merger": "1.2.0",
     "lerna": "3.2.1",
-    "metro-react-native-babel-preset": "0.53.1",
+    "metro-react-native-babel-preset": "0.55.0",
     "mkdirp": "0.5.1",
     "mockdate": "2.0.2",
     "node-fetch": "2.2.0",
