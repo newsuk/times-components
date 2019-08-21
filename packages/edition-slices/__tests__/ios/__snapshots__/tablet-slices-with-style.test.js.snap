@@ -1377,7 +1377,7 @@ exports[`18. lead one and one - wide 1`] = `
         }
       }
     >
-      <TileC />
+      <TileAA />
     </View>
   </View>
 </View>
@@ -2633,7 +2633,7 @@ exports[`33. lead one and one - huge 1`] = `
           }
         }
       >
-        <TileAQ />
+        <TileAA />
       </View>
     </View>
   </View>

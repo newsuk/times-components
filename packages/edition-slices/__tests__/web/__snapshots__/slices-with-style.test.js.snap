@@ -1142,7 +1142,8 @@ exports[`3. lead one and one 1`] = `
     <div
       className="css-view-1dbjc4n IS3"
     >
-      <TileC
+      <TileAA
+        breakpoint="wide"
         tileName="support"
       />
     </div>
