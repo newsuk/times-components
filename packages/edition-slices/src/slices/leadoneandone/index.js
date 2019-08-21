@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { LeadOneAndOneSlice } from "@times-components/slice-layout";
-import { TileA, TileB, TileC, TileU, TileAQ } from "../../tiles";
+import { TileA, TileB, TileC, TileU, TileAA, TileAQ } from "../../tiles";
 import { ResponsiveSlice } from "../shared";
 
 class LeadOneAndOne extends Component {
@@ -43,14 +43,7 @@ class LeadOneAndOne extends Component {
             tileName="lead"
           />
         }
-        support={
-          <TileB
-            breakpoint={breakpoint}
-            onPress={onPress}
-            tile={support}
-            tileName="support"
-          />
-        }
+        support={<TileAA onPress={onPress} tile={support} tileName="support" />}
       />
     );
   }
