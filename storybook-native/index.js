@@ -1,5 +1,5 @@
-/* eslint-disable import/no-unresolved */
-import "@babel/polyfill";
+import "core-js/core";
+import "regenerator-runtime/runtime";
 import { AppRegistry } from "react-native";
 import StorybookUIRoot from "./storybook";
 
