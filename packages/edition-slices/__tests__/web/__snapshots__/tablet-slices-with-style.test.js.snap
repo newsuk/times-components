@@ -279,8 +279,8 @@ exports[`3. lead one and one - medium 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -2153,8 +2153,8 @@ exports[`18. lead one and one - wide 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -4030,8 +4030,8 @@ exports[`33. lead one and one - huge 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
