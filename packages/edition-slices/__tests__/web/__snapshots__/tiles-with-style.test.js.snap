@@ -3671,19 +3671,9 @@ exports[`42. tile ah 1`] = `
 .IS4 {
   -webkit-align-items: center;
   align-items: center;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
   padding-top: 5px;
   -ms-flex-align: center;
   -webkit-box-align: center;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
 }
 </style>
 
@@ -3692,6 +3682,7 @@ exports[`42. tile ah 1`] = `
     Object {
       "alignItems": "center",
       "flex": 1,
+      "justifyContent": "center",
       "padding": "10px",
     }
   }

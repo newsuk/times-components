@@ -1,6 +1,6 @@
-import { spacing } from "@times-components/styleguide";
+import { editionBreakpoints, spacing } from "@times-components/styleguide";
 
-const styles = {
+const defaultBreakpointStyles = {
   cartoon: {
     width: "66.7%"
   },
@@ -15,4 +15,20 @@ const styles = {
   }
 };
 
-export default styles;
+const wideBreakpointStyles = {
+  ...defaultBreakpointStyles,
+  container: {
+    flex: 1,
+    flexDirection: "row",
+    paddingHorizontal: spacing(2),
+    paddingVertical: spacing(1)
+  }
+};
+
+const stylesResolver = {
+  [editionBreakpoints.medium]: defaultBreakpointStyles,
+  [editionBreakpoints.wide]: wideBreakpointStyles,
+  [editionBreakpoints.huge]: defaultBreakpointStyles
+};
+
+export default breakpoint => stylesResolver[breakpoint];
