@@ -12,7 +12,7 @@
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
     "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
     "test:web": "jest --config='./__tests__/web/jest.config.js'",
-    "test:all": "yarn test:android --coverage && yarn test:ios --coverage && yarn test:ios --coverage",
+    "test:all": "yarn test:android --coverage && yarn test:ios --coverage && yarn test:web --coverage",
     "prepublishOnly": "yarn transpile && yarn bundle",
     "watch": "watch 'yarn bundle' ./src --ignoreDotFiles --ignoreUnreadable",
     "cleanup-dist": "rm -rf dist",
@@ -41,6 +41,7 @@
     "@times-components/context": "1.0.36",
     "@times-components/link": "3.4.38",
     "@times-components/styleguide": "3.28.42",
+    "@times-components/tracking": "2.4.62",
     "prop-types": "15.7.2",
     "styled-components": "4.2.0"
   },
