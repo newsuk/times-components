@@ -93,9 +93,13 @@ class Comments extends Component {
 
   render() {
     const { showLabel } = this.state;
+    const { onCommentStart, onCommentPost } = this.props;
 
     return (
-      <CommentContainer>
+      <CommentContainer
+        onCommentStart={onCommentStart}
+        onCommentPost={onCommentPost}
+      >
         {showLabel ? (
           <CommentEnabledGuidelines>
             Comments are subject to our community guidelines, which can be
