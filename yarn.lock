@@ -1513,7 +1513,7 @@
     js-levenshtein "^1.1.3"
     semver "^5.5.0"
 
-"@babel/preset-env@^7.1.6":
+"@babel/preset-env@7.4.4", "@babel/preset-env@^7.1.6":
   version "7.4.4"
   resolved "https://registry.yarnpkg.com/@babel/preset-env/-/preset-env-7.4.4.tgz#b6f6825bfb27b3e1394ca3de4f926482722c1d6f"
   integrity sha512-FU1H+ACWqZZqfw1x2G1tgtSSYSfxJLkpaUQL37CenULFARDo+h4xJoVHzRoHbK+85ViLciuI7ME4WTIhFRBBlw==
@@ -3255,7 +3255,7 @@
     webpack-dev-middleware "^3.7.0"
     webpack-hot-middleware "^2.25.0"
 
-"@storybook/node-logger@5.1.11", "@storybook/node-logger@^5.1.1":
+"@storybook/node-logger@5.1.11":
   version "5.1.11"
   resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-5.1.11.tgz#bbf5ad0d148e6c9a9b7cf6f62ad4df4e9fa19e5d"
   integrity sha512-LG0KM4lzb9LEffcO3Ps9FcHHsVgQUc/oG+kz3p0u9fljFoL3cJHF1Mb4o+HrSydtdWZs/spwZ/BLEo5n/AByDw==
@@ -3265,13 +3265,6 @@
     npmlog "^4.1.2"
     pretty-hrtime "^1.0.3"
     regenerator-runtime "^0.12.1"
-
-"@storybook/preset-create-react-app@1.0.0-beta.2":
-  version "1.0.0-beta.2"
-  resolved "https://registry.yarnpkg.com/@storybook/preset-create-react-app/-/preset-create-react-app-1.0.0-beta.2.tgz#7042214ae59dbc96191cdaddf88762437e6bcd59"
-  integrity sha512-VCHn/C0L11tw9hpwDmM8d/rIlyRfX7bKpbAIjbw+LKNHgt77zAI8YKwnQvXcfS3VwRBHVdl98k8nL2a0tOGPRQ==
-  dependencies:
-    "@storybook/node-logger" "^5.1.1"
 
 "@storybook/react-native-server@5.1.11":
   version "5.1.11"
