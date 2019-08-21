@@ -89,11 +89,11 @@ const renderers = ({ observed, registerNode, paidContentClassName }) => ({
       )
     };
   },
-  interactive(key, { url, element }) {
+  interactive(key, { url, element, display }) {
     const { attributes, value } = element;
     return {
       element: (
-        <InteractiveContainer key={key}>
+        <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
           <InteractiveWrapper
             attributes={attributes}
             element={value}

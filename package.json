@@ -106,6 +106,7 @@
     "@babel/cli": "7.4.4",
     "@babel/core": "7.4.4",
     "@babel/preset-env": "7.4.4",
+    "@babel/plugin-transform-runtime": "7.4.4",
     "@emotion/core": "10.0.16",
     "@emotion/styled": "10.0.15",
     "@storybook/addon-a11y": "5.1.11",

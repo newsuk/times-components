@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.13.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.13.1...@times-components/article-skeleton@1.13.2) (2019-08-21)
+
+
+### Bug Fixes
+
+* seo logo ([#2207](https://github.com/newsuk/times-components/issues/2207)) ([fbbd910](https://github.com/newsuk/times-components/commit/fbbd910))
+
+
+
+
+
+## [1.13.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.13.0...@times-components/article-skeleton@1.13.1) (2019-08-21)
+
+
+### Bug Fixes
+
+* keylines margin ([#2201](https://github.com/newsuk/times-components/issues/2201)) ([90d0c2d](https://github.com/newsuk/times-components/commit/90d0c2d))
+
+
+
+
+
+# [1.13.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.12.14...@times-components/article-skeleton@1.13.0) (2019-08-21)
+
+
+### Features
+
+* full width interactives ([#2198](https://github.com/newsuk/times-components/issues/2198)) ([d8a8f88](https://github.com/newsuk/times-components/commit/d8a8f88))
+
+
+
+
+
 ## [1.12.14](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.12.13...@times-components/article-skeleton@1.12.14) (2019-08-20)
 
 **Note:** Version bump only for package @times-components/article-skeleton
