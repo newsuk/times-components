@@ -3661,7 +3661,7 @@ exports[`42. tile ah 1`] = `
 
 .IS1 {
   overflow: hidden;
-  width: 40%;
+  width: 97;
   margin-bottom: 5px;
 }
 
@@ -3704,8 +3704,7 @@ exports[`42. tile ah 1`] = `
     Object {
       "alignItems": "center",
       "flex": 1,
-      "marginRight": "10px",
-      "paddingVertical": "10px",
+      "padding": "10px",
     }
   }
   url="/article/123"
@@ -3769,7 +3768,7 @@ exports[`43. tile ai 1`] = `
   linkStyle={
     Object {
       "alignItems": "center",
-      "paddingVertical": "10px",
+      "padding": "10px",
     }
   }
   url="/article/123"
