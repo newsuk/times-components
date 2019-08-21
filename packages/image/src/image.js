@@ -34,12 +34,10 @@ class TimesImage extends Component {
 
     this.state = {
       isLoaded: false,
-      width: null,
-      lowResSize: null
+      width: null
     };
     this.handleLoad = this.handleLoad.bind(this);
     this.onImageLayout = this.onImageLayout.bind(this);
-    this.getLowRes = this.getLowRes.bind(this);
     this.fadeAnim = new Animated.Value(1);
   }
 
@@ -58,12 +56,6 @@ class TimesImage extends Component {
     if (onLayout) {
       onLayout(evt);
     }
-  }
-
-  getLowRes(evt) {
-    this.setState({
-      lowResSize: evt.nativeEvent.layout.width
-    });
   }
 
   handleLoad() {
@@ -101,14 +93,10 @@ class TimesImage extends Component {
       relativeHeight,
       relativeHorizontalOffset,
       relativeVerticalOffset,
+      lowResSize,
       ...defaultImageProps
     } = this.props;
     const { isLoaded, width } = this.state;
-    let { lowResSize } = this.props;
-    if (!lowResSize) {
-      const { lowResSize: lrz } = this.state;
-      lowResSize = lrz; // always-destructure lint is stupid
-    }
     const renderedRes = highResSize || width;
     const srcUri = getUriAtRes(uri, renderedRes);
     const lowResUri = lowResSize
@@ -117,7 +105,7 @@ class TimesImage extends Component {
     const radius = width ? width / 2 : 9999;
     const borderRadius = rounded ? radius : 0;
     const placeholder = disablePlaceholder ? null : (
-      <Placeholder borderRadius={borderRadius} onLayout={this.getLowRes} />
+      <Placeholder borderRadius={borderRadius} />
     );
 
     return (
