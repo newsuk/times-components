@@ -8,8 +8,7 @@ const nativeSpecific = platform => ({
   haste: {
     defaultPlatform: platform,
     platforms: [platform],
-    hasteImplModulePath:
-      "<rootDir>/node_modules/react-native/jest/hasteImpl.js",
+    hasteImplModulePath: "<rootDir>/node_modules/react-native/jest/hasteImpl.js"
   }
 });
 
