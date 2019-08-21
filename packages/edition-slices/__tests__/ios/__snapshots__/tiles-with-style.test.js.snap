@@ -1478,41 +1478,13 @@ exports[`28. tile ab 1`] = `
                 "fontSize": 30,
                 "fontWeight": "900",
                 "lineHeight": 30,
-                "marginBottom": 5,
+                "marginBottom": 10,
               }
             }
           >
             This is tile headline
           </Text>
           <ArticleFlags />
-          <Text>
-            <Text
-              style={
-                Object {
-                  "color": "#333333",
-                  "flexDirection": "row",
-                  "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 13,
-                  "lineHeight": 13,
-                }
-              }
-            >
-              Richard Lloyd Parry
-            </Text>
-            <Text
-              style={
-                Object {
-                  "color": "#333333",
-                  "flexDirection": "row",
-                  "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 13,
-                  "lineHeight": 13,
-                }
-              }
-            >
-              , Hanoi
-            </Text>
-          </Text>
         </View>
       </View>
     </View>

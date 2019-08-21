@@ -1215,14 +1215,6 @@ exports[`28. tile ab 1`] = `
               ]
             }
           />
-          <Text>
-            <Text>
-              Richard Lloyd Parry
-            </Text>
-            <Text>
-              , Hanoi
-            </Text>
-          </Text>
         </View>
       </View>
     </View>
