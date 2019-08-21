@@ -1,48 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. comment lead and cartoon - small 1`] = `
-<View
-  style={
-    Object {
-      "flex": 1,
-      "flexDirection": "row",
-      "paddingHorizontal": 30,
-      "paddingVertical": 5,
-    }
-  }
->
+<View>
+  <Text>
+    lead-1
+  </Text>
   <View
     style={
       Object {
-        "width": "33.3%",
-      }
-    }
-  >
-    <Text>
-      lead-1
-    </Text>
-  </View>
-  <View
-    style={
-      Object {
+        "borderBottomWidth": 1,
         "borderColor": "#DBDBDB",
-        "borderRightWidth": 1,
         "borderStyle": "solid",
-        "marginVertical": 10,
+        "marginHorizontal": 10,
       }
     }
   />
-  <View
-    style={
-      Object {
-        "width": "66.7%",
-      }
-    }
-  >
-    <Text>
-      cartoon-1
-    </Text>
-  </View>
+  <Text>
+    cartoon-1
+  </Text>
 </View>
 `;
 
@@ -52,7 +27,7 @@ exports[`2. comment lead and cartoon - medium 1`] = `
     Object {
       "flex": 1,
       "flexDirection": "row",
-      "paddingHorizontal": 30,
+      "paddingHorizontal": 20,
       "paddingVertical": 5,
     }
   }

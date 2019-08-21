@@ -3,15 +3,11 @@
 exports[`1. comment lead and cartoon - small 1`] = `
 <div>
   <div>
-    <div>
-      lead-1
-    </div>
+    lead-1
   </div>
   <div />
   <div>
-    <div>
-      cartoon-1
-    </div>
+    cartoon-1
   </div>
 </div>
 `;
