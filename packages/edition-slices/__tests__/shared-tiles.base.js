@@ -9,7 +9,6 @@ import {
 
 import {
   TileA,
-  TileAE,
   TileB,
   TileC,
   TileD,
@@ -35,21 +34,22 @@ import {
   TileX,
   TileY,
   TileZ,
+  TileAA,
   TileAB,
+  TileAC,
+  TileAD,
+  TileAE,
   TileAG,
+  TileAH,
+  TileAI,
   TileAJ,
   TileAK,
   TileAL,
   TileAM,
   TileAN,
   TileAP,
-  TileAD,
-  TileAC,
-  TileAQ,
   TileAR,
-  TileAS,
-  TileAH,
-  TileAI
+  TileAS
 } from "../src/tiles";
 
 jest.mock("@times-components/article-flag", () => ({
@@ -242,8 +242,8 @@ export default () => {
       test: () => testTile(TileAC)
     },
     {
-      name: "tile aq",
-      test: () => testTile(TileAQ)
+      name: "tile aa",
+      test: () => testTile(TileAA)
     },
     {
       name: "tile ar",
