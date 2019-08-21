@@ -1772,8 +1772,8 @@ exports[`15. puzzle - medium 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
   padding-top: 15px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
@@ -3648,8 +3648,8 @@ exports[`30. puzzle - wide 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
   padding-top: 15px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
@@ -5524,8 +5524,8 @@ exports[`45. puzzle - huge 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
   padding-top: 15px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
