@@ -22,9 +22,9 @@ const LazyLoadingImage = props => {
 
   Object.keys(queryObject).forEach(k => {
     if (!queryObject[k]) {
-      delete queryObject[k]
+      delete queryObject[k];
     }
-  })
+  });
 
   return (
     <Fragment>
