@@ -38,7 +38,7 @@ const SecondaryFourSlice = ({
     );
   }
 
-  if (breakpoint === editionBreakpoints.medium) {
+  if (breakpoint === editionBreakpoints.medium || breakpoint === editionBreakpoints.wide) {
     return (
       <View style={styles.container}>
         <HorizontalLayout
