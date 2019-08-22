@@ -946,7 +946,6 @@ exports[`9. secondary four - medium 1`] = `
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  width: 25%;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -963,8 +962,8 @@ exports[`9. secondary four - medium 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .IS3 {
@@ -974,7 +973,6 @@ exports[`9. secondary four - medium 1`] = `
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  width: 25%;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -982,34 +980,24 @@ exports[`9. secondary four - medium 1`] = `
 }
 
 .IS4 {
-  border-top-color: rgba(219,219,219,1.00);
-  border-right-color: rgba(219,219,219,1.00);
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-left-color: rgba(219,219,219,1.00);
-  border-right-width: 1px;
-  border-top-style: solid;
-  border-right-style: solid;
-  border-bottom-style: solid;
-  border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.IS5 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
+  -webkit-flex-grow: 2;
+  flex-grow: 2;
   -webkit-flex-shrink: 1;
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  width: 25%;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-positive: 2;
+  -webkit-box-flex: 2;
   -ms-flex-negative: 1;
   -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
 }
 
-.IS6 {
+.IS5 {
   border-top-color: rgba(219,219,219,1.00);
   border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
@@ -1019,8 +1007,22 @@ exports[`9. secondary four - medium 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.IS6 {
+  border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .IS7 {
@@ -1030,7 +1032,6 @@ exports[`9. secondary four - medium 1`] = `
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  width: 25%;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -1038,11 +1039,21 @@ exports[`9. secondary four - medium 1`] = `
 }
 
 .IS8 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
   margin-right: 10px;
   margin-left: 10px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
@@ -1065,39 +1076,53 @@ exports[`9. secondary four - medium 1`] = `
     className="css-view-1dbjc4n IS8"
   >
     <div
-      className="css-view-1dbjc4n IS1"
-    >
-      <TileC
-        tileName="secondary1"
-      />
-    </div>
-    <div
-      className="css-view-1dbjc4n IS2"
-    />
-    <div
-      className="css-view-1dbjc4n IS3"
-    >
-      <TileC
-        tileName="secondary2"
-      />
-    </div>
-    <div
       className="css-view-1dbjc4n IS4"
-    />
+    >
+      <div
+        className="css-view-1dbjc4n IS1"
+      >
+        <TileAR
+          tileName="secondary1"
+        />
+      </div>
+      <div
+        className="css-view-1dbjc4n IS2"
+      />
+      <div
+        className="css-view-1dbjc4n IS3"
+      >
+        <TileAR
+          tileName="secondary2"
+        />
+      </div>
+    </div>
     <div
       className="css-view-1dbjc4n IS5"
-    >
-      <TileC
-        tileName="secondary3"
-      />
-    </div>
-    <div
-      className="css-view-1dbjc4n IS6"
     />
     <div
       className="css-view-1dbjc4n IS7"
     >
-      <TileC
+      <TileB
+        additionalHeadlineStyles={
+          Object {
+            "fontSize": 20,
+            "lineHeight": 20,
+          }
+        }
+        breakpoint="wide"
+        tileName="secondary3"
+      />
+      <div
+        className="css-view-1dbjc4n IS6"
+      />
+      <TileB
+        additionalHeadlineStyles={
+          Object {
+            "fontSize": 20,
+            "lineHeight": 20,
+          }
+        }
+        breakpoint="wide"
         tileName="secondary4"
       />
     </div>
@@ -2822,7 +2847,6 @@ exports[`24. secondary four - wide 1`] = `
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  width: 25%;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -2839,8 +2863,8 @@ exports[`24. secondary four - wide 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .IS3 {
@@ -2850,7 +2874,6 @@ exports[`24. secondary four - wide 1`] = `
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  width: 25%;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -2858,34 +2881,24 @@ exports[`24. secondary four - wide 1`] = `
 }
 
 .IS4 {
-  border-top-color: rgba(219,219,219,1.00);
-  border-right-color: rgba(219,219,219,1.00);
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-left-color: rgba(219,219,219,1.00);
-  border-right-width: 1px;
-  border-top-style: solid;
-  border-right-style: solid;
-  border-bottom-style: solid;
-  border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.IS5 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
+  -webkit-flex-grow: 2;
+  flex-grow: 2;
   -webkit-flex-shrink: 1;
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  width: 25%;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-positive: 2;
+  -webkit-box-flex: 2;
   -ms-flex-negative: 1;
   -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
 }
 
-.IS6 {
+.IS5 {
   border-top-color: rgba(219,219,219,1.00);
   border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
@@ -2895,8 +2908,22 @@ exports[`24. secondary four - wide 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.IS6 {
+  border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .IS7 {
@@ -2906,7 +2933,6 @@ exports[`24. secondary four - wide 1`] = `
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  width: 25%;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -2914,11 +2940,21 @@ exports[`24. secondary four - wide 1`] = `
 }
 
 .IS8 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
   margin-right: 10px;
   margin-left: 10px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
@@ -2941,39 +2977,53 @@ exports[`24. secondary four - wide 1`] = `
     className="css-view-1dbjc4n IS8"
   >
     <div
-      className="css-view-1dbjc4n IS1"
-    >
-      <TileC
-        tileName="secondary1"
-      />
-    </div>
-    <div
-      className="css-view-1dbjc4n IS2"
-    />
-    <div
-      className="css-view-1dbjc4n IS3"
-    >
-      <TileC
-        tileName="secondary2"
-      />
-    </div>
-    <div
       className="css-view-1dbjc4n IS4"
-    />
+    >
+      <div
+        className="css-view-1dbjc4n IS1"
+      >
+        <TileAR
+          tileName="secondary1"
+        />
+      </div>
+      <div
+        className="css-view-1dbjc4n IS2"
+      />
+      <div
+        className="css-view-1dbjc4n IS3"
+      >
+        <TileAR
+          tileName="secondary2"
+        />
+      </div>
+    </div>
     <div
       className="css-view-1dbjc4n IS5"
-    >
-      <TileC
-        tileName="secondary3"
-      />
-    </div>
-    <div
-      className="css-view-1dbjc4n IS6"
     />
     <div
       className="css-view-1dbjc4n IS7"
     >
-      <TileC
+      <TileB
+        additionalHeadlineStyles={
+          Object {
+            "fontSize": 20,
+            "lineHeight": 20,
+          }
+        }
+        breakpoint="wide"
+        tileName="secondary3"
+      />
+      <div
+        className="css-view-1dbjc4n IS6"
+      />
+      <TileB
+        additionalHeadlineStyles={
+          Object {
+            "fontSize": 20,
+            "lineHeight": 20,
+          }
+        }
+        breakpoint="wide"
         tileName="secondary4"
       />
     </div>
@@ -4698,7 +4748,6 @@ exports[`39. secondary four - huge 1`] = `
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  width: 25%;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -4715,8 +4764,8 @@ exports[`39. secondary four - huge 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .IS3 {
@@ -4726,7 +4775,6 @@ exports[`39. secondary four - huge 1`] = `
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  width: 25%;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -4734,34 +4782,24 @@ exports[`39. secondary four - huge 1`] = `
 }
 
 .IS4 {
-  border-top-color: rgba(219,219,219,1.00);
-  border-right-color: rgba(219,219,219,1.00);
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-left-color: rgba(219,219,219,1.00);
-  border-right-width: 1px;
-  border-top-style: solid;
-  border-right-style: solid;
-  border-bottom-style: solid;
-  border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.IS5 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
+  -webkit-flex-grow: 2;
+  flex-grow: 2;
   -webkit-flex-shrink: 1;
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  width: 25%;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-positive: 2;
+  -webkit-box-flex: 2;
   -ms-flex-negative: 1;
   -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
 }
 
-.IS6 {
+.IS5 {
   border-top-color: rgba(219,219,219,1.00);
   border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
@@ -4771,8 +4809,22 @@ exports[`39. secondary four - huge 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.IS6 {
+  border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .IS7 {
@@ -4782,7 +4834,6 @@ exports[`39. secondary four - huge 1`] = `
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  width: 25%;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -4790,11 +4841,21 @@ exports[`39. secondary four - huge 1`] = `
 }
 
 .IS8 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
   margin-right: 10px;
   margin-left: 10px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
@@ -4817,39 +4878,53 @@ exports[`39. secondary four - huge 1`] = `
     className="css-view-1dbjc4n IS8"
   >
     <div
-      className="css-view-1dbjc4n IS1"
-    >
-      <TileC
-        tileName="secondary1"
-      />
-    </div>
-    <div
-      className="css-view-1dbjc4n IS2"
-    />
-    <div
-      className="css-view-1dbjc4n IS3"
-    >
-      <TileC
-        tileName="secondary2"
-      />
-    </div>
-    <div
       className="css-view-1dbjc4n IS4"
-    />
+    >
+      <div
+        className="css-view-1dbjc4n IS1"
+      >
+        <TileAR
+          tileName="secondary1"
+        />
+      </div>
+      <div
+        className="css-view-1dbjc4n IS2"
+      />
+      <div
+        className="css-view-1dbjc4n IS3"
+      >
+        <TileAR
+          tileName="secondary2"
+        />
+      </div>
+    </div>
     <div
       className="css-view-1dbjc4n IS5"
-    >
-      <TileC
-        tileName="secondary3"
-      />
-    </div>
-    <div
-      className="css-view-1dbjc4n IS6"
     />
     <div
       className="css-view-1dbjc4n IS7"
     >
-      <TileC
+      <TileB
+        additionalHeadlineStyles={
+          Object {
+            "fontSize": 20,
+            "lineHeight": 20,
+          }
+        }
+        breakpoint="wide"
+        tileName="secondary3"
+      />
+      <div
+        className="css-view-1dbjc4n IS6"
+      />
+      <TileB
+        additionalHeadlineStyles={
+          Object {
+            "fontSize": 20,
+            "lineHeight": 20,
+          }
+        }
+        breakpoint="wide"
         tileName="secondary4"
       />
     </div>

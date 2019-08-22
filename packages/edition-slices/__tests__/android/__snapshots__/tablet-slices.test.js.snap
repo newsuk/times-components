@@ -738,25 +738,39 @@ exports[`24. secondary four - wide 1`] = `
 <View>
   <View>
     <View>
-      <TileC
-        tileName="secondary1"
-      />
+      <View>
+        <TileAR
+          tileName="secondary1"
+        />
+      </View>
+      <View />
+      <View>
+        <TileAR
+          tileName="secondary2"
+        />
+      </View>
     </View>
     <View />
     <View>
-      <TileC
-        tileName="secondary2"
-      />
-    </View>
-    <View />
-    <View>
-      <TileC
+      <TileB
+        additionalHeadlineStyles={
+          Object {
+            "fontSize": 20,
+            "lineHeight": 20,
+          }
+        }
+        breakpoint="wide"
         tileName="secondary3"
       />
-    </View>
-    <View />
-    <View>
-      <TileC
+      <View />
+      <TileB
+        additionalHeadlineStyles={
+          Object {
+            "fontSize": 20,
+            "lineHeight": 20,
+          }
+        }
+        breakpoint="wide"
         tileName="secondary4"
       />
     </View>
@@ -1254,25 +1268,27 @@ exports[`39. secondary four - huge 1`] = `
   <View>
     <View>
       <View>
-        <TileC
-          tileName="secondary1"
-        />
+        <View>
+          <TileAR
+            tileName="secondary1"
+          />
+        </View>
+        <View />
+        <View>
+          <TileAR
+            tileName="secondary2"
+          />
+        </View>
       </View>
       <View />
       <View>
-        <TileC
-          tileName="secondary2"
-        />
-      </View>
-      <View />
-      <View>
-        <TileC
+        <TileB
+          breakpoint="huge"
           tileName="secondary3"
         />
-      </View>
-      <View />
-      <View>
-        <TileC
+        <View />
+        <TileB
+          breakpoint="huge"
           tileName="secondary4"
         />
       </View>

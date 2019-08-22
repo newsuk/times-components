@@ -39,22 +39,11 @@ const wideBreakpointStyles = {
   }
 };
 
-const hugeBreakpointStyles = {
-  container: {
-    flexDirection: "row",
-    marginHorizontal: spacing(2)
-  },
-  item: {
-    flex: 1,
-    width: "25%"
-  }
-};
-
 const stylesResolver = {
   [editionBreakpoints.small]: smallBreakpointStyles,
   [editionBreakpoints.medium]: defaultBreakpointStyles,
   [editionBreakpoints.wide]: wideBreakpointStyles,
-  [editionBreakpoints.huge]: hugeBreakpointStyles 
+  [editionBreakpoints.huge]: wideBreakpointStyles
 };
 
 export default breakpoint => stylesResolver[breakpoint];
