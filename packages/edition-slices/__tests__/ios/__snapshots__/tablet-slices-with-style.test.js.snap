@@ -1896,7 +1896,7 @@ exports[`25. secondary one and columnist - wide 1`] = `
     <View
       style={
         Object {
-          "width": "73%",
+          "width": "67%",
         }
       }
     >
@@ -1915,7 +1915,7 @@ exports[`25. secondary one and columnist - wide 1`] = `
     <View
       style={
         Object {
-          "width": "27%",
+          "width": "33%",
         }
       }
     >
@@ -3222,7 +3222,7 @@ exports[`40. secondary one and columnist - huge 1`] = `
       <View
         style={
           Object {
-            "width": "73%",
+            "width": "67%",
           }
         }
       >
@@ -3241,7 +3241,7 @@ exports[`40. secondary one and columnist - huge 1`] = `
       <View
         style={
           Object {
-            "width": "27%",
+            "width": "33%",
           }
         }
       >

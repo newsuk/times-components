@@ -17,7 +17,10 @@ export default breakpoint => ({
     flexDirection: "row",
     paddingHorizontal: spacing(2),
     paddingVertical:
-      breakpoint === editionBreakpoints.medium ? spacing(3) : spacing(2)
+      breakpoint === editionBreakpoints.medium ||
+      breakpoint === editionBreakpoints.wide
+        ? spacing(3)
+        : spacing(2)
   },
   headline: {
     fontFamily: fonts.headline,
