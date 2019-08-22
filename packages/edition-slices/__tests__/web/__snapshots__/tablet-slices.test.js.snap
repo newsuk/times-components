@@ -67,7 +67,8 @@ exports[`3. lead one and one - medium 1`] = `
     </div>
     <div />
     <div>
-      <TileC
+      <TileAA
+        breakpoint="wide"
         tileName="support"
       />
     </div>
@@ -529,7 +530,8 @@ exports[`18. lead one and one - wide 1`] = `
     </div>
     <div />
     <div>
-      <TileC
+      <TileAA
+        breakpoint="wide"
         tileName="support"
       />
     </div>
@@ -991,7 +993,8 @@ exports[`33. lead one and one - huge 1`] = `
     </div>
     <div />
     <div>
-      <TileC
+      <TileAA
+        breakpoint="wide"
         tileName="support"
       />
     </div>

@@ -3,9 +3,11 @@ import { View } from "react-native";
 import { editionBreakpoints } from "@times-components/styleguide";
 import { defaultProps, propTypes } from "./proptypes";
 import HorizontalLayout from "../horizontallayout";
-import styles from "./styles";
+import styleFactory from "./styles";
 
 const leadOneAndOneSlice = ({ breakpoint, lead, support }) => {
+  const styles = styleFactory(breakpoint);
+
   if (breakpoint === editionBreakpoints.small) {
     return (
       <View>

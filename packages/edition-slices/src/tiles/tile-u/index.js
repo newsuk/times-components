@@ -11,13 +11,14 @@ import {
   TileSummary,
   withTileTracking
 } from "../shared";
-import styleFactory from "./styles";
+import styles from "./styles";
 import WithoutWhiteSpace from "../shared/without-white-space";
 import PositionedTileStar from "../shared/positioned-tile-star";
 
 const TileU = ({ onPress, tile, breakpoint = editionBreakpoints.medium }) => {
-  const styles = styleFactory(breakpoint);
-  const crop = getTileImage(tile, "crop32");
+  const crop = getTileImage(tile, "crop169");
+  const summary =
+    breakpoint === editionBreakpoints.medium ? getTileSummary(tile, 300) : null;
 
   return (
     <TileLink onPress={onPress} style={styles.container} tile={tile}>
@@ -26,7 +27,7 @@ const TileU = ({ onPress, tile, breakpoint = editionBreakpoints.medium }) => {
           render={whiteSpaceHeight => (
             <TileSummary
               headlineStyle={styles.headline}
-              summary={getTileSummary(tile, 800)}
+              summary={summary}
               tile={tile}
               whiteSpaceHeight={whiteSpaceHeight}
               linesOfTeaserToRender={3}
@@ -38,7 +39,7 @@ const TileU = ({ onPress, tile, breakpoint = editionBreakpoints.medium }) => {
       </View>
 
       <Image
-        aspectRatio={3 / 2}
+        aspectRatio={16 / 9}
         relativeWidth={crop.relativeWidth}
         relativeHeight={crop.relativeHeight}
         relativeHorizontalOffset={crop.relativeHorizontalOffset}
