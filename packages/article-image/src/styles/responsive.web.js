@@ -61,7 +61,6 @@ export const InsetCaptionStyle = styled(View)`
 export const FullWidthCaptionStyle = styled(View)`
   padding-left: ${spacing(2)};
   padding-right: ${spacing(2)};
-  width: 100%;
   margin: auto;
   text-align: center;
 
