@@ -30,7 +30,6 @@
     "@storybook/react-native": "5.1.11",
     "@storybook/react-native-server": "5.1.11",
     "@times-components/storybook": "4.0.29",
-    "core-js": "^2.6.5",
     "prop-types": "15.7.2",
     "react": "16.8.6",
     "react-native": "0.59.10",
