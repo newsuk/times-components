@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.13.5](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.13.4...@times-components/article-skeleton@1.13.5) (2019-08-22)
+
+
+### Bug Fixes
+
+* replat-7475 Fix font scaling using native font scale ([#2215](https://github.com/newsuk/times-components/issues/2215)) ([4c768df](https://github.com/newsuk/times-components/commit/4c768df))
+
+
+
+
+
 ## [1.13.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.13.3...@times-components/article-skeleton@1.13.4) (2019-08-22)
 
 **Note:** Version bump only for package @times-components/article-skeleton
