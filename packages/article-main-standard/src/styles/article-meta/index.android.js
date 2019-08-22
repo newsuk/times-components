@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
   },
   datePublication: {
     ...sharedStyles.datePublication,
-    lineHeight: sharedStyles.datePublication.fontSize
+    lineHeight: 21
   }
 });
 

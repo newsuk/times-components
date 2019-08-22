@@ -100,7 +100,7 @@ exports[`full article with style on mobile 1`] = `
               "color": "#696969",
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
-              "lineHeight": 13,
+              "lineHeight": 21,
             }
           }
         >
@@ -110,7 +110,7 @@ exports[`full article with style on mobile 1`] = `
       <View
         style={
           Object {
-            "paddingTop": 5,
+            "paddingTop": 10,
           }
         }
       >
@@ -120,7 +120,7 @@ exports[`full article with style on mobile 1`] = `
               "color": "#696969",
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
-              "lineHeight": 13,
+              "lineHeight": 21,
             }
           }
         >
@@ -232,7 +232,7 @@ exports[`full article with style on tablet 1`] = `
               "color": "#696969",
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
-              "lineHeight": 13,
+              "lineHeight": 21,
             }
           }
         >
@@ -242,7 +242,7 @@ exports[`full article with style on tablet 1`] = `
       <View
         style={
           Object {
-            "paddingTop": 5,
+            "paddingTop": 10,
           }
         }
       >
@@ -252,7 +252,7 @@ exports[`full article with style on tablet 1`] = `
               "color": "#696969",
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
-              "lineHeight": 13,
+              "lineHeight": 21,
             }
           }
         >

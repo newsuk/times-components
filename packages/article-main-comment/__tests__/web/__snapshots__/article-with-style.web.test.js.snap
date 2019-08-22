@@ -403,7 +403,7 @@ exports[`full article with style 1`] = `
 }
 
 .S3 {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .S4 {
@@ -426,6 +426,7 @@ exports[`full article with style 1`] = `
   -webkit-align-items: center;
   -webkit-box-align: center;
   align-items: center;
+  margin-bottom: 15px;
   padding-bottom: 20px;
   padding-top: 35px;
 }
@@ -519,7 +520,7 @@ exports[`full article with style 1`] = `
         className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
       >
         <div
-          className="c3 responsiveweb__HeaderContainer-tglil3-3 c3 css-view-1dbjc4n r-alignItems-1awozwy r-paddingBottom-k8qxaj r-paddingLeft-1hfyk0a r-paddingRight-1qfoi16 r-paddingTop-elmauq S7"
+          className="c3 responsiveweb__HeaderContainer-tglil3-3 c3 css-view-1dbjc4n r-alignItems-1awozwy r-marginBottom-ku1wi2 r-paddingBottom-k8qxaj r-paddingLeft-1hfyk0a r-paddingRight-1qfoi16 r-paddingTop-elmauq S7"
         >
           <div
             className="c4 responsiveweb__AuthorImageContainer-tglil3-0 c4 css-view-1dbjc4n r-marginBottom-eektet S1"
@@ -527,7 +528,7 @@ exports[`full article with style 1`] = `
             <Image />
           </div>
           <div
-            className="css-view-1dbjc4n r-marginBottom-ku1wi2 S3"
+            className="css-view-1dbjc4n r-marginBottom-15d164r S3"
           >
             <div
               className="css-text-901oao r-color-1yqk5fa r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv S2"

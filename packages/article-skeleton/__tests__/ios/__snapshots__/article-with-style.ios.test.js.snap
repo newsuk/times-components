@@ -85,7 +85,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                     "fontWeight": "normal",
                     "left": 0,
                     "lineHeight": NaN,
-                    "marginBottom": 25,
+                    "marginBottom": 20,
                     "position": "absolute",
                     "top": 0,
                   }
@@ -194,9 +194,8 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                     "color": "#333333",
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 17,
-                    "fontStyle": "normal",
                     "lineHeight": 30,
-                    "marginBottom": 25,
+                    "marginBottom": 20,
                   }
                 }
               >
@@ -289,7 +288,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 style={
                   Object {
                     "paddingLeft": 10,
-                    "paddingTop": 5,
+                    "paddingTop": 10,
                   }
                 }
               >
@@ -299,8 +298,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                       "color": "#696969",
                       "fontFamily": "GillSansMTStd-Medium",
                       "fontSize": 13,
-                      "lineHeight": 20,
-                      "marginTop": 5,
+                      "lineHeight": 16,
                     }
                   }
                 >
@@ -782,7 +780,7 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                     "fontWeight": "bold",
                     "left": 0,
                     "lineHeight": NaN,
-                    "marginBottom": 25,
+                    "marginBottom": 20,
                     "position": "absolute",
                     "top": 0,
                   }
@@ -817,7 +815,7 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                     "fontWeight": "bold",
                     "left": 0,
                     "lineHeight": NaN,
-                    "marginBottom": 25,
+                    "marginBottom": 20,
                     "position": "absolute",
                     "top": 0,
                   }
@@ -922,9 +920,8 @@ exports[`5. an article skeleton with responsive items 1`] = `
                     "color": "#333333",
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 17,
-                    "fontStyle": "normal",
                     "lineHeight": 30,
-                    "marginBottom": 25,
+                    "marginBottom": 20,
                   }
                 }
               >
@@ -1046,9 +1043,8 @@ exports[`5. an article skeleton with responsive items 1`] = `
                     "color": "#333333",
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 17,
-                    "fontStyle": "normal",
                     "lineHeight": 30,
-                    "marginBottom": 25,
+                    "marginBottom": 20,
                   }
                 }
               >
@@ -1141,7 +1137,7 @@ exports[`5. an article skeleton with responsive items 1`] = `
                 style={
                   Object {
                     "paddingLeft": 10,
-                    "paddingTop": 5,
+                    "paddingTop": 10,
                   }
                 }
               >
@@ -1151,8 +1147,7 @@ exports[`5. an article skeleton with responsive items 1`] = `
                       "color": "#696969",
                       "fontFamily": "GillSansMTStd-Medium",
                       "fontSize": 13,
-                      "lineHeight": 20,
-                      "marginTop": 5,
+                      "lineHeight": 16,
                     }
                   }
                 >

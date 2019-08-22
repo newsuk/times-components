@@ -12,13 +12,19 @@ const LazyLoadingImage = props => {
     fill
   } = props;
 
-  const queryArray = [
-    { name: "offline", value: true },
-    { name: "rel_height", value: relativeHeight },
-    { name: "rel_width", value: relativeWidth },
-    { name: "rel_horizontal_offset", value: relativeHorizontalOffset },
-    { name: "rel_vertical_offset", value: relativeVerticalOffset }
-  ];
+  const queryObject = {
+    offline: true,
+    rel_height: relativeHeight,
+    rel_width: relativeWidth,
+    rel_horizontal_offset: relativeHorizontalOffset,
+    rel_vertical_offset: relativeVerticalOffset
+  };
+
+  Object.keys(queryObject).forEach(k => {
+    if (queryObject[k] === undefined) {
+      delete queryObject[k];
+    }
+  });
 
   return (
     <Fragment>
@@ -26,13 +32,7 @@ const LazyLoadingImage = props => {
         <Image
           {...props}
           resizeMode={fill ? "cover" : "center"}
-          source={
-            source
-              ? {
-                  uri: appendParamsToQuery(source.uri, queryArray)
-                }
-              : null
-          }
+          source={{ uri: appendParamsToQuery(source.uri, queryObject) }}
         />
       ) : null}
       <Image {...props} />
