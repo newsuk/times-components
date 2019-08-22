@@ -222,7 +222,6 @@ exports[`3. mobile fullwidth image with caption and credits 1`] = `
 .c1 {
   padding-left: 10px;
   padding-right: 10px;
-  width: 100%;
   margin: auto;
   text-align: center;
 }
@@ -282,7 +281,7 @@ Array [
                 "10px",
                 ";padding-right:",
                 "10px",
-                ";width:100%;margin:auto;text-align:center;@media (min-width:",
+                ";margin:auto;text-align:center;@media (min-width:",
                 "768",
                 "px){padding-left:0px;padding-right:0px;width:80.8%;}@media (min-width:",
                 "1024",
@@ -343,7 +342,6 @@ exports[`4. tablet fullwidth image with caption and credits 1`] = `
 .c1 {
   padding-left: 10px;
   padding-right: 10px;
-  width: 100%;
   margin: auto;
   text-align: center;
 }
@@ -403,7 +401,7 @@ Array [
                 "10px",
                 ";padding-right:",
                 "10px",
-                ";width:100%;margin:auto;text-align:center;@media (min-width:",
+                ";margin:auto;text-align:center;@media (min-width:",
                 "768",
                 "px){padding-left:0px;padding-right:0px;width:80.8%;}@media (min-width:",
                 "1024",
