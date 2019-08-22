@@ -1176,7 +1176,7 @@ exports[`28. tile ab 1`] = `
       "flex": 1,
       "flexDirection": "row",
       "paddingHorizontal": "10px",
-      "paddingVertical": "10px",
+      "paddingVertical": "15px",
     }
   }
   url="/article/123"
