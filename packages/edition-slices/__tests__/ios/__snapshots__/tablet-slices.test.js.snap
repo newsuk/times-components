@@ -288,6 +288,7 @@ exports[`10. secondary one and columnist - medium 1`] = `
       <TileB
         breakpoint="medium"
         tileName="secondary"
+        withMoreTeaser={true}
       />
     </View>
   </View>
@@ -779,6 +780,7 @@ exports[`25. secondary one and columnist - wide 1`] = `
       <TileB
         breakpoint="wide"
         tileName="secondary"
+        withMoreTeaser={true}
       />
     </View>
   </View>
@@ -1298,6 +1300,7 @@ exports[`40. secondary one and columnist - huge 1`] = `
         <TileB
           breakpoint="huge"
           tileName="secondary"
+          withMoreTeaser={true}
         />
       </View>
     </View>
