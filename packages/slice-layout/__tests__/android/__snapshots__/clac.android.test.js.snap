@@ -27,3 +27,19 @@ exports[`2. comment lead and cartoon - medium 1`] = `
   </View>
 </View>
 `;
+
+exports[`3. comment lead and cartoon - wide 1`] = `
+<View>
+  <View>
+    <Text>
+      lead-1
+    </Text>
+  </View>
+  <View />
+  <View>
+    <Text>
+      cartoon-1
+    </Text>
+  </View>
+</View>
+`;
