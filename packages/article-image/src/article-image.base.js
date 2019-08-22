@@ -6,6 +6,7 @@ import { ModalImage } from "@times-components/image";
 import InsetCaption from "./inset-caption";
 import InsetCenteredCaption from "./inset-centered-caption";
 import InlineImage from "./inline-image";
+import FullWidthCaption from "./fullwidth-caption";
 import { propTypes, defaultPropTypes } from "./article-image-prop-types";
 import styles from "./styles";
 
@@ -24,7 +25,11 @@ function getCaptionComponent(display, { imageCaptionAlignment = {} }) {
       : InsetCaption;
   }
 
-  if (display === "fullwidth" || imageCaptionAlignment[display] === "center") {
+  if (display === "fullwidth") {
+    return FullWidthCaption;
+  }
+
+  if (imageCaptionAlignment[display] === "center") {
     return CentredCaption;
   }
 
@@ -34,7 +39,17 @@ function getCaptionComponent(display, { imageCaptionAlignment = {} }) {
 const renderCaption = (caption, credits, display, theme) => {
   const CaptionComponent = getCaptionComponent(display, theme);
 
-  return caption || credits ? (
+  if (!caption && !credits) {
+    return null;
+  }
+
+  return display === "fullwidth" ? (
+    <CaptionComponent
+      credits={credits}
+      style={captionStyle[display]}
+      text={caption}
+    />
+  ) : (
     <View style={styles[`${display}Caption`]}>
       <CaptionComponent
         credits={credits}
@@ -42,7 +57,7 @@ const renderCaption = (caption, credits, display, theme) => {
         text={caption}
       />
     </View>
-  ) : null;
+  );
 };
 
 const ArticleImage = ({ imageOptions, captionOptions, onImagePress }) => {

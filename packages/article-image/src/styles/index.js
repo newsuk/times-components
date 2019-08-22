@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
   },
   fullwidthCaption: {
     alignSelf: "center",
-    width: "100%"
+    maxWidth: tabletWidth - tabletRowPadding
   },
   fullwidthContainer: {
     marginBottom: spacing(2),

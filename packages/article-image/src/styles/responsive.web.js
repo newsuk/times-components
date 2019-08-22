@@ -57,3 +57,21 @@ export const InsetCaptionStyle = styled(View)`
     padding-left: 0px;
   }
 `;
+
+export const FullWidthCaptionStyle = styled(View)`
+  padding-left: ${spacing(2)};
+  padding-right: ${spacing(2)};
+  width: 100%;
+  margin: auto;
+  text-align: center;
+
+  @media (min-width: ${breakpoints.medium}px) {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 80.8%;
+  }
+
+  @media (min-width: ${breakpoints.wide}px) {
+    width: 56.2%;
+  }
+`;
