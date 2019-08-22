@@ -119,7 +119,7 @@ class DailyRegisterLeadFour extends Component {
         renderSmall={this.renderSmall}
         renderMedium={this.renderMedium}
         renderWide={this.renderMedium}
-        renderHuge={this.renderHuge}
+        renderHuge={this.renderMedium}
       />
     );
   }
