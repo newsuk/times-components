@@ -34,7 +34,6 @@ const TileAB = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
         <WithoutWhiteSpace
           render={whiteSpaceHeight => (
             <TileSummary
-              bylines={tile.article.bylines}
               headlineStyle={styles.headline}
               summary={getTileSummary(tile, 800)}
               tile={tile}

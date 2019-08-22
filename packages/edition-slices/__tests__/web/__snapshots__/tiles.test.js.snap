@@ -1184,7 +1184,7 @@ exports[`28. tile ab 1`] = `
       "flex": 1,
       "flexDirection": "row",
       "paddingHorizontal": "10px",
-      "paddingVertical": "10px",
+      "paddingVertical": "15px",
     }
   }
   url="/article/123"
@@ -1221,14 +1221,6 @@ exports[`28. tile ab 1`] = `
               ]
             }
           />
-          <div>
-            <span>
-              Richard Lloyd Parry
-            </span>
-            <span>
-              , Hanoi
-            </span>
-          </div>
         </div>
       </div>
     </div>

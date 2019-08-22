@@ -1889,14 +1889,14 @@ exports[`25. secondary one and columnist - wide 1`] = `
       Object {
         "flex": 1,
         "flexDirection": "row",
-        "marginHorizontal": 20,
+        "marginHorizontal": 10,
       }
     }
   >
     <View
       style={
         Object {
-          "width": "73%",
+          "width": "67%",
         }
       }
     >
@@ -1915,7 +1915,7 @@ exports[`25. secondary one and columnist - wide 1`] = `
     <View
       style={
         Object {
-          "width": "27%",
+          "width": "33%",
         }
       }
     >
@@ -2892,7 +2892,7 @@ exports[`37. secondary one and four - huge 1`] = `
 <View
   style={
     Object {
-      "marginHorizontal": 40,
+      "marginHorizontal": 20,
       "marginVertical": 15,
     }
   }
@@ -3215,14 +3215,14 @@ exports[`40. secondary one and columnist - huge 1`] = `
         Object {
           "flex": 1,
           "flexDirection": "row",
-          "marginHorizontal": 20,
+          "marginHorizontal": 10,
         }
       }
     >
       <View
         style={
           Object {
-            "width": "73%",
+            "width": "67%",
           }
         }
       >
@@ -3241,7 +3241,7 @@ exports[`40. secondary one and columnist - huge 1`] = `
       <View
         style={
           Object {
-            "width": "27%",
+            "width": "33%",
           }
         }
       >

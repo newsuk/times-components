@@ -1109,7 +1109,7 @@ exports[`9. secondary four - medium 1`] = `
 exports[`10. secondary one and columnist - medium 1`] = `
 <style>
 .IS1 {
-  width: 73%;
+  width: 67%;
 }
 
 .IS2 {
@@ -1127,7 +1127,7 @@ exports[`10. secondary one and columnist - medium 1`] = `
 }
 
 .IS3 {
-  width: 27%;
+  width: 33%;
 }
 
 .IS4 {
@@ -1140,8 +1140,8 @@ exports[`10. secondary one and columnist - medium 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -1184,6 +1184,7 @@ exports[`10. secondary one and columnist - medium 1`] = `
       <TileB
         breakpoint="wide"
         tileName="secondary"
+        withMoreTeaser={true}
       />
     </div>
   </div>
@@ -2692,8 +2693,8 @@ exports[`22. secondary one and four - wide 1`] = `
 }
 
 .IS17 {
-  margin-right: 40px;
-  margin-left: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -2986,7 +2987,7 @@ exports[`24. secondary four - wide 1`] = `
 exports[`25. secondary one and columnist - wide 1`] = `
 <style>
 .IS1 {
-  width: 73%;
+  width: 67%;
 }
 
 .IS2 {
@@ -3004,7 +3005,7 @@ exports[`25. secondary one and columnist - wide 1`] = `
 }
 
 .IS3 {
-  width: 27%;
+  width: 33%;
 }
 
 .IS4 {
@@ -3017,8 +3018,8 @@ exports[`25. secondary one and columnist - wide 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -3061,6 +3062,7 @@ exports[`25. secondary one and columnist - wide 1`] = `
       <TileB
         breakpoint="wide"
         tileName="secondary"
+        withMoreTeaser={true}
       />
     </div>
   </div>
@@ -4569,8 +4571,8 @@ exports[`37. secondary one and four - huge 1`] = `
 }
 
 .IS17 {
-  margin-right: 40px;
-  margin-left: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -4863,7 +4865,7 @@ exports[`39. secondary four - huge 1`] = `
 exports[`40. secondary one and columnist - huge 1`] = `
 <style>
 .IS1 {
-  width: 73%;
+  width: 67%;
 }
 
 .IS2 {
@@ -4881,7 +4883,7 @@ exports[`40. secondary one and columnist - huge 1`] = `
 }
 
 .IS3 {
-  width: 27%;
+  width: 33%;
 }
 
 .IS4 {
@@ -4894,8 +4896,8 @@ exports[`40. secondary one and columnist - huge 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -4938,6 +4940,7 @@ exports[`40. secondary one and columnist - huge 1`] = `
       <TileB
         breakpoint="wide"
         tileName="secondary"
+        withMoreTeaser={true}
       />
     </div>
   </div>

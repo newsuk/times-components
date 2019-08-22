@@ -1496,7 +1496,7 @@ exports[`28. tile ab 1`] = `
                 "fontSize": 30,
                 "fontWeight": "900",
                 "lineHeight": 30,
-                "marginBottom": 5,
+                "marginBottom": 10,
               }
             }
           >
