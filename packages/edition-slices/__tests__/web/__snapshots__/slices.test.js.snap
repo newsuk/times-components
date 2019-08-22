@@ -376,6 +376,7 @@ exports[`8. secondary one and columnist 1`] = `
       <TileB
         breakpoint="wide"
         tileName="secondary"
+        withMoreTeaser={true}
       />
     </div>
   </div>
