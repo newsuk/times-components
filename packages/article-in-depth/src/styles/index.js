@@ -12,10 +12,6 @@ const nativeStyles = {
     ...sharedStyles.standFirst,
     lineHeight: 25,
     marginBottom: 0
-  },
-  leadAsset: {
-    ...sharedStyles.leadAsset,
-    marginBottom: spacing(4)
   }
 };
 

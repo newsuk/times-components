@@ -20,7 +20,7 @@ function ArticleMeta({
     <View style={[styles.articleMeta, isTablet && styles.articleMetaTablet]}>
       {hasBylineData(bylines) && (
         <View style={styles.articleMetaElementWithBorder}>
-          <Text style={styles.byline}>
+          <Text style={styles.datePublication}>
             <ArticleBylineWithLinks
               ast={bylines}
               onAuthorPress={onAuthorPress}

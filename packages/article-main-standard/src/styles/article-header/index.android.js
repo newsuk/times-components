@@ -1,13 +1,16 @@
 import { StyleSheet } from "react-native";
-import { spacing } from "@times-components/styleguide";
+import { fontSizes, spacing } from "@times-components/styleguide";
 import globalStyle from "../shared";
 import sharedStyles from "./shared";
 
-const nativeStyles = {
+const androidStyles = {
   ...sharedStyles,
   articleHeadLineText: {
     ...sharedStyles.articleHeadLineText,
-    fontWeight: "700",
+    fontSize: fontSizes.headline,
+    fontWeight: "400",
+    lineHeight: 33,
+    marginBottom: spacing(2),
     marginTop: spacing(1)
   },
   articleLabelWrapper: {
@@ -16,7 +19,9 @@ const nativeStyles = {
   },
   standFirst: {
     ...sharedStyles.standFirst,
-    lineHeight: 25
+    lineHeight: 28,
+    marginTop: -2,
+    paddingBottom: 12
   },
   standFirstWithoutFlags: {
     paddingBottom: spacing(4)
@@ -25,7 +30,7 @@ const nativeStyles = {
 
 const styles = StyleSheet.create({
   ...globalStyle,
-  ...nativeStyles
+  ...androidStyles
 });
 
 export default styles;
