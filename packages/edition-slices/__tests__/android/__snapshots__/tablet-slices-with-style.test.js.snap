@@ -2280,7 +2280,7 @@ exports[`30. puzzle - wide 1`] = `
       Object {
         "flex": 1,
         "flexDirection": "row",
-        "paddingHorizontal": 20,
+        "paddingHorizontal": 10,
         "paddingTop": 15,
       }
     }

@@ -6,7 +6,7 @@ import {
 
 const headlineFontSizeResolver = {
   [editionBreakpoints.medium]: 20,
-  [editionBreakpoints.wide]: 30,
+  [editionBreakpoints.wide]: 20,
   [editionBreakpoints.huge]: 35
 };
 
