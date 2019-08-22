@@ -33,6 +33,20 @@ export default renderComponent => {
 
         expect(output).toMatchSnapshot();
       }
+    },
+    {
+      name: "comment lead and cartoon - wide",
+      test() {
+        const output = renderComponent(
+          <CommentLeadAndCartoon
+            breakpoint={editionBreakpoints.wide}
+            cartoon={createItem("cartoon-1")}
+            lead={createItem("lead-1")}
+          />
+        );
+
+        expect(output).toMatchSnapshot();
+      }
     }
   ];
 
