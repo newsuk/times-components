@@ -11,11 +11,12 @@ import {
   TileSummary,
   withTileTracking
 } from "../shared";
-import styles from "./styles";
+import stylesFactory from "./styles";
 import WithoutWhiteSpace from "../shared/without-white-space";
 import PositionedTileStar from "../shared/positioned-tile-star";
 
 const TileU = ({ onPress, tile, breakpoint = editionBreakpoints.medium }) => {
+  const styles = stylesFactory(breakpoint);
   const crop = getTileImage(tile, "crop169");
   const summary =
     breakpoint === editionBreakpoints.medium ? getTileSummary(tile, 300) : null;
