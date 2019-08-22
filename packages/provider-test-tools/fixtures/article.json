@@ -107,7 +107,7 @@
       "name": "image",
       "attributes": {
         "display": "secondary",
-        "caption": "Iron man: Thomas at home. We are sitting at an elegant dining table in a crimson room that mixes old and new. Oil paintings in gold frames adorn the walls. Oil paintings in gold frames adorn the walls",
+        "caption": "Iron man: Thomas at home",
         "credits": "GARETH PHILLIPS",
         "ratio": "1200:1500",
         "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fea2622be-a79f-11e8-b7c2-058fb57c563b.jpg?crop=1300%2C1625%2C0%2C0",
@@ -598,11 +598,11 @@
     {
       "name": "image",
       "attributes": {
-        "display": "fullwidth",
-        "caption": "Iron man: Thomas at home. We are sitting at an elegant dining table in a crimson room that mixes old and new. Oil paintings in gold frames adorn the walls. Oil paintings in gold frames adorn the walls. Oil paintings in gold frames adorn the walls",
+        "display": "secondary",
+        "caption": "Iron man: Thomas at home",
         "credits": "GARETH PHILLIPS",
-        "ratio": "1500:1000",
-        "url": "https://www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fddd3ab78-c35d-11e9-b964-2cc1b53edc70.jpg?crop=1399%2C933%2C55%2C34",
+        "ratio": "1200:1500",
+        "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2Fea2622be-a79f-11e8-b7c2-058fb57c563b.jpg?crop=1300%2C1625%2C0%2C0",
         "relativeHeight": 0.4,
         "relativeHorizontalOffset": 0.16666666666666666,
         "relativeVerticalOffset": 0.2,
