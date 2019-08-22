@@ -22,7 +22,8 @@ const wideBreakpointStyles = {
   headline: {
     fontFamily: fonts.headline,
     fontSize: 28,
-    lineHeight: 28
+    lineHeight: 28,
+    marginBottom: spacing(2)
   }
 };
 
