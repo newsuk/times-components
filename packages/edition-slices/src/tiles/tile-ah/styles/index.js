@@ -8,7 +8,7 @@ import {
 
 const headlineFontSizeResolver = {
   [editionBreakpoints.medium]: 30,
-  [editionBreakpoints.wide]: 35,
+  [editionBreakpoints.wide]: 40,
   [editionBreakpoints.huge]: 45
 };
 
@@ -16,6 +16,7 @@ const styles = (breakpoint = editionBreakpoints.medium) => ({
   container: {
     flex: 1,
     alignItems: "center",
+    justifyContent: "center",
     padding: spacing(2)
   },
   headline: {
@@ -41,7 +42,6 @@ const styles = (breakpoint = editionBreakpoints.medium) => ({
     paddingBottom: spacing(1)
   },
   summaryContainer: {
-    flex: 1,
     paddingTop: spacing(1),
     alignItems: "center"
   }
