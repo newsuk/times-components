@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { LeadOneAndOneSlice } from "@times-components/slice-layout";
-import { TileA, TileB, TileC, TileU, TileAA, TileAQ } from "../../tiles";
+import { TileA, TileB, TileU, TileAA } from "../../tiles";
 import { ResponsiveSlice } from "../shared";
 
 class LeadOneAndOne extends Component {
@@ -9,8 +9,6 @@ class LeadOneAndOne extends Component {
     super(props);
     this.renderSmall = this.renderSmall.bind(this);
     this.renderMedium = this.renderMedium.bind(this);
-    this.renderWide = this.renderWide.bind(this);
-    this.renderHuge = this.renderHuge.bind(this);
   }
 
   renderSmall(breakpoint) {
@@ -43,49 +41,14 @@ class LeadOneAndOne extends Component {
             tileName="lead"
           />
         }
-        support={<TileAA onPress={onPress} tile={support} tileName="support" />}
-      />
-    );
-  }
-
-  renderWide(breakpoint) {
-    const {
-      onPress,
-      slice: { lead, support }
-    } = this.props;
-    return (
-      <LeadOneAndOneSlice
-        breakpoint={breakpoint}
-        lead={
-          <TileU
+        support={
+          <TileAA
             breakpoint={breakpoint}
             onPress={onPress}
-            tile={lead}
-            tileName="lead"
+            tile={support}
+            tileName="support"
           />
         }
-        support={<TileC onPress={onPress} tile={support} tileName="support" />}
-      />
-    );
-  }
-
-  renderHuge(breakpoint) {
-    const {
-      onPress,
-      slice: { lead, support }
-    } = this.props;
-    return (
-      <LeadOneAndOneSlice
-        breakpoint={breakpoint}
-        lead={
-          <TileU
-            breakpoint={breakpoint}
-            onPress={onPress}
-            tile={lead}
-            tileName="lead"
-          />
-        }
-        support={<TileAQ onPress={onPress} tile={support} tileName="support" />}
       />
     );
   }
@@ -95,8 +58,8 @@ class LeadOneAndOne extends Component {
       <ResponsiveSlice
         renderSmall={this.renderSmall}
         renderMedium={this.renderMedium}
-        renderWide={this.renderWide}
-        renderHuge={this.renderHuge}
+        renderWide={this.renderMedium}
+        renderHuge={this.renderMedium}
       />
     );
   }
