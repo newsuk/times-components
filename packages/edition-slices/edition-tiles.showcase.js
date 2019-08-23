@@ -43,7 +43,6 @@ import {
   TileAL,
   TileAM,
   TileAN,
-  TileAP,
   TileAR,
   TileAS
 } from "./src/tiles";
@@ -230,10 +229,6 @@ const tileStories = [
   {
     name: "Tile AN - Roundel image, 22pt headline, with teaser",
     Tile: TileAN
-  },
-  {
-    name: "Tile AP - Vertical Aligned - Roundel Img on top of Article Summary",
-    Tile: TileAP
   },
   {
     name: "Tile AR - Top image 16:9, 20pt headline, with teaser",

@@ -2187,7 +2187,6 @@ exports[`29. secondary two no pic and two - wide 1`] = `
     style={
       Object {
         "flex": 1,
-        "flexDirection": "row",
         "marginHorizontal": 10,
       }
     }
@@ -2195,70 +2194,88 @@ exports[`29. secondary two no pic and two - wide 1`] = `
     <View
       style={
         Object {
-          "width": "33.4%",
+          "flex": 1,
+          "flexDirection": "row",
         }
       }
     >
-      <TileAE />
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <TileAE />
+      </View>
+      <View
+        style={
+          Object {
+            "borderColor": "#DBDBDB",
+            "borderRightWidth": 1,
+            "borderStyle": "solid",
+            "marginTop": 15,
+            "marginVertical": 10,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <TileAE />
+      </View>
     </View>
     <View
       style={
         Object {
+          "borderBottomWidth": 1,
           "borderColor": "#DBDBDB",
-          "borderRightWidth": 1,
           "borderStyle": "solid",
-          "marginVertical": 10,
+          "marginHorizontal": 10,
         }
       }
     />
     <View
       style={
         Object {
-          "paddingHorizontal": 5,
-          "width": "16.6%",
+          "flex": 1,
+          "flexDirection": "row",
         }
       }
     >
-      <TileAP />
-    </View>
-    <View
-      style={
-        Object {
-          "borderColor": "#DBDBDB",
-          "borderRightWidth": 1,
-          "borderStyle": "solid",
-          "marginVertical": 10,
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
         }
-      }
-    />
-    <View
-      style={
-        Object {
-          "width": "33.4%",
+      >
+        <TileG />
+      </View>
+      <View
+        style={
+          Object {
+            "borderColor": "#DBDBDB",
+            "borderRightWidth": 1,
+            "borderStyle": "solid",
+            "marginBottom": 15,
+            "marginVertical": 10,
+          }
         }
-      }
-    >
-      <TileAE />
-    </View>
-    <View
-      style={
-        Object {
-          "borderColor": "#DBDBDB",
-          "borderRightWidth": 1,
-          "borderStyle": "solid",
-          "marginVertical": 10,
+      />
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
         }
-      }
-    />
-    <View
-      style={
-        Object {
-          "paddingHorizontal": 5,
-          "width": "16.6%",
-        }
-      }
-    >
-      <TileAP />
+      >
+        <TileG />
+      </View>
     </View>
   </View>
 </View>
@@ -3553,7 +3570,6 @@ exports[`44. secondary two no pic and two - huge 1`] = `
       style={
         Object {
           "flex": 1,
-          "flexDirection": "row",
           "marginHorizontal": 10,
         }
       }
@@ -3561,70 +3577,88 @@ exports[`44. secondary two no pic and two - huge 1`] = `
       <View
         style={
           Object {
-            "width": "33.4%",
+            "flex": 1,
+            "flexDirection": "row",
           }
         }
       >
-        <TileAE />
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        >
+          <TileAE />
+        </View>
+        <View
+          style={
+            Object {
+              "borderColor": "#DBDBDB",
+              "borderRightWidth": 1,
+              "borderStyle": "solid",
+              "marginTop": 15,
+              "marginVertical": 10,
+            }
+          }
+        />
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        >
+          <TileAE />
+        </View>
       </View>
       <View
         style={
           Object {
+            "borderBottomWidth": 1,
             "borderColor": "#DBDBDB",
-            "borderRightWidth": 1,
             "borderStyle": "solid",
-            "marginVertical": 10,
+            "marginHorizontal": 10,
           }
         }
       />
       <View
         style={
           Object {
-            "paddingHorizontal": 5,
-            "width": "16.6%",
+            "flex": 1,
+            "flexDirection": "row",
           }
         }
       >
-        <TileAP />
-      </View>
-      <View
-        style={
-          Object {
-            "borderColor": "#DBDBDB",
-            "borderRightWidth": 1,
-            "borderStyle": "solid",
-            "marginVertical": 10,
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
           }
-        }
-      />
-      <View
-        style={
-          Object {
-            "width": "33.4%",
+        >
+          <TileG />
+        </View>
+        <View
+          style={
+            Object {
+              "borderColor": "#DBDBDB",
+              "borderRightWidth": 1,
+              "borderStyle": "solid",
+              "marginBottom": 15,
+              "marginVertical": 10,
+            }
           }
-        }
-      >
-        <TileAE />
-      </View>
-      <View
-        style={
-          Object {
-            "borderColor": "#DBDBDB",
-            "borderRightWidth": 1,
-            "borderStyle": "solid",
-            "marginVertical": 10,
+        />
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
           }
-        }
-      />
-      <View
-        style={
-          Object {
-            "paddingHorizontal": 5,
-            "width": "16.6%",
-          }
-        }
-      >
-        <TileAP />
+        >
+          <TileG />
+        </View>
       </View>
     </View>
   </View>
