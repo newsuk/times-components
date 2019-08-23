@@ -3,6 +3,10 @@ import sharedStyles from "./shared";
 
 const styles = {
   ...sharedStyles,
+  flags: {
+    marginBottom: 0,
+    marginTop: spacing(2)
+  },
   title: {
     ...sharedStyles.title,
     fontSize: fontSizes.meta,
