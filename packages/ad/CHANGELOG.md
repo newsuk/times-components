@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.7.5](https://github.com/newsuk/times-components/compare/@times-components/ad@2.7.4...@times-components/ad@2.7.5) (2019-08-23)
+
+
+### Bug Fixes
+
+* Prevent ad from overlapping title ([#2220](https://github.com/newsuk/times-components/issues/2220)) ([4c049ea](https://github.com/newsuk/times-components/commit/4c049ea))
+
+
+
+
+
 ## [2.7.4](https://github.com/newsuk/times-components/compare/@times-components/ad@2.7.3...@times-components/ad@2.7.4) (2019-08-20)
 
 **Note:** Version bump only for package @times-components/ad
