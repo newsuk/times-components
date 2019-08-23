@@ -34,12 +34,15 @@ const viewabilityConfig = {
   waitForInteraction: false
 };
 
-const convertStyles = ({ font, size }) => ({
-  fontFamily: font.replace(/-Bold|-Italic/gi, ""),
-  fontSize: size,
-  fontStyle: font.includes("Italic") ? "italic" : "normal",
-  fontWeight: font.includes("Bold") ? "bold" : "normal"
-});
+const convertStyles = ({ font, size }) => {
+  const { fontScale } = Dimensions.get("window");
+  return {
+    fontFamily: font.replace(/-Bold|-Italic/gi, ""),
+    fontSize: size / fontScale,
+    fontStyle: font.includes("Italic") ? "italic" : "normal",
+    fontWeight: font.includes("Bold") ? "bold" : "normal"
+  };
+};
 
 const renderRow = (
   rowData,

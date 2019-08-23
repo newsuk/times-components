@@ -1,6 +1,6 @@
 {
   "name": "@times-components/caption",
-  "version": "3.0.61",
+  "version": "3.0.62",
   "description": "Media caption component",
   "main": "dist/caption",
   "dev": "src/caption",
