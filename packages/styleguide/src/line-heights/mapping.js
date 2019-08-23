@@ -15,6 +15,10 @@ const mapping = ({ scale }) => {
           button: 17,
           keyFactsTitle: 20,
           link: 16
+        },
+        headline: {
+          ...mappingBase.headline,
+          headline: 36
         }
       };
     case scales.xlarge:
@@ -29,10 +33,20 @@ const mapping = ({ scale }) => {
           button: 18,
           keyFactsTitle: 22,
           link: 17
+        },
+        headline: {
+          ...mappingBase.headline,
+          headline: 36
         }
       };
     default:
-      return mappingBase;
+      return {
+        ...mappingBase,
+        headline: {
+          ...mappingBase.headline,
+          headline: 36
+        }
+      };
   }
 };
 
