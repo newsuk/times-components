@@ -43,20 +43,18 @@ const renderCaption = (caption, credits, display, theme) => {
     return null;
   }
 
-  return display === "fullwidth" ? (
+  const captionComponent = (
     <CaptionComponent
       credits={credits}
       style={captionStyle[display]}
       text={caption}
     />
+  );
+
+  return display === "fullwidth" ? (
+    captionComponent
   ) : (
-    <View style={styles[`${display}Caption`]}>
-      <CaptionComponent
-        credits={credits}
-        style={captionStyle[display]}
-        text={caption}
-      />
-    </View>
+    <View style={styles[`${display}Caption`]}>{captionComponent}</View>
   );
 };
 
