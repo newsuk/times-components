@@ -334,7 +334,7 @@ exports[`6. leaders slice - medium 1`] = `
         style={
           Object {
             "height": 42,
-            "width": 227,
+            "width": 237,
           }
         }
       />
@@ -1497,7 +1497,9 @@ exports[`21. leaders slice - wide 1`] = `
     style={
       Object {
         "backgroundColor": "#F0F0F0",
-        "paddingTop": 20,
+        "marginHorizontal": 20,
+        "marginVertical": 15,
+        "paddingTop": 30,
       }
     }
   >
@@ -1511,15 +1513,14 @@ exports[`21. leaders slice - wide 1`] = `
       <Image
         style={
           Object {
-            "height": 51,
-            "width": 283,
+            "height": 42,
+            "width": 237,
           }
         }
       />
       <View
         style={
           Object {
-            "paddingBottom": 5,
             "paddingTop": 10,
           }
         }
@@ -1529,8 +1530,8 @@ exports[`21. leaders slice - wide 1`] = `
             Object {
               "color": "#850029",
               "fontFamily": "TimesDigitalW04-Regular",
-              "fontSize": 16,
-              "lineHeight": 18,
+              "fontSize": 15,
+              "lineHeight": 15,
               "textAlign": "center",
             }
           }
@@ -1544,19 +1545,18 @@ exports[`21. leaders slice - wide 1`] = `
         Object {
           "flex": 1,
           "flexDirection": "row",
-          "paddingBottom": 5,
         }
       }
     >
       <View
         style={
           Object {
-            "paddingHorizontal": 10,
+            "paddingHorizontal": 20,
             "width": "33%",
           }
         }
       >
-        <TileAG />
+        <TileM />
       </View>
       <View
         style={
@@ -1564,6 +1564,8 @@ exports[`21. leaders slice - wide 1`] = `
             "borderColor": "#DBDBDB",
             "borderRightWidth": 1,
             "borderStyle": "solid",
+            "marginBottom": 60,
+            "marginTop": 30,
             "marginVertical": 10,
           }
         }
@@ -1571,12 +1573,12 @@ exports[`21. leaders slice - wide 1`] = `
       <View
         style={
           Object {
-            "paddingHorizontal": 10,
+            "paddingHorizontal": 20,
             "width": "33%",
           }
         }
       >
-        <TileAG />
+        <TileM />
       </View>
       <View
         style={
@@ -1584,6 +1586,8 @@ exports[`21. leaders slice - wide 1`] = `
             "borderColor": "#DBDBDB",
             "borderRightWidth": 1,
             "borderStyle": "solid",
+            "marginBottom": 60,
+            "marginTop": 30,
             "marginVertical": 10,
           }
         }
@@ -1591,12 +1595,12 @@ exports[`21. leaders slice - wide 1`] = `
       <View
         style={
           Object {
-            "paddingHorizontal": 10,
+            "paddingHorizontal": 20,
             "width": "33%",
           }
         }
       >
-        <TileAG />
+        <TileM />
       </View>
     </View>
   </View>
@@ -2719,7 +2723,9 @@ exports[`36. leaders slice - huge 1`] = `
       style={
         Object {
           "backgroundColor": "#F0F0F0",
-          "paddingTop": 20,
+          "marginHorizontal": 20,
+          "marginVertical": 15,
+          "paddingTop": 30,
         }
       }
     >
@@ -2733,15 +2739,14 @@ exports[`36. leaders slice - huge 1`] = `
         <Image
           style={
             Object {
-              "height": 51,
-              "width": 283,
+              "height": 42,
+              "width": 237,
             }
           }
         />
         <View
           style={
             Object {
-              "paddingBottom": 5,
               "paddingTop": 10,
             }
           }
@@ -2751,8 +2756,8 @@ exports[`36. leaders slice - huge 1`] = `
               Object {
                 "color": "#850029",
                 "fontFamily": "TimesDigitalW04-Regular",
-                "fontSize": 16,
-                "lineHeight": 18,
+                "fontSize": 15,
+                "lineHeight": 15,
                 "textAlign": "center",
               }
             }
@@ -2766,19 +2771,18 @@ exports[`36. leaders slice - huge 1`] = `
           Object {
             "flex": 1,
             "flexDirection": "row",
-            "paddingBottom": 5,
           }
         }
       >
         <View
           style={
             Object {
-              "paddingHorizontal": 10,
+              "paddingHorizontal": 20,
               "width": "33%",
             }
           }
         >
-          <TileAG />
+          <TileM />
         </View>
         <View
           style={
@@ -2786,6 +2790,8 @@ exports[`36. leaders slice - huge 1`] = `
               "borderColor": "#DBDBDB",
               "borderRightWidth": 1,
               "borderStyle": "solid",
+              "marginBottom": 60,
+              "marginTop": 30,
               "marginVertical": 10,
             }
           }
@@ -2793,12 +2799,12 @@ exports[`36. leaders slice - huge 1`] = `
         <View
           style={
             Object {
-              "paddingHorizontal": 10,
+              "paddingHorizontal": 20,
               "width": "33%",
             }
           }
         >
-          <TileAG />
+          <TileM />
         </View>
         <View
           style={
@@ -2806,6 +2812,8 @@ exports[`36. leaders slice - huge 1`] = `
               "borderColor": "#DBDBDB",
               "borderRightWidth": 1,
               "borderStyle": "solid",
+              "marginBottom": 60,
+              "marginTop": 30,
               "marginVertical": 10,
             }
           }
@@ -2813,12 +2821,12 @@ exports[`36. leaders slice - huge 1`] = `
         <View
           style={
             Object {
-              "paddingHorizontal": 10,
+              "paddingHorizontal": 20,
               "width": "33%",
             }
           }
         >
-          <TileAG />
+          <TileM />
         </View>
       </View>
     </View>

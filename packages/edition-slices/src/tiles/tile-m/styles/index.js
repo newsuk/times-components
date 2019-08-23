@@ -53,7 +53,18 @@ const mediumBreakpointStyles = {
   }
 };
 
-export default breakpoint =>
-  breakpoint === editionBreakpoints.medium
-    ? mediumBreakpointStyles
-    : smallBreakpointStyles;
+const wideBreakpointStyles = {
+  ...mediumBreakpointStyles,
+  container: {
+    paddingBottom: spacing(12)
+  }
+};
+
+const breakPointsStyles = {
+  [editionBreakpoints.small]: smallBreakpointStyles,
+  [editionBreakpoints.medium]: mediumBreakpointStyles,
+  [editionBreakpoints.wide]: wideBreakpointStyles,
+  [editionBreakpoints.huge]: wideBreakpointStyles
+};
+
+export default breakpoint => breakPointsStyles[breakpoint];

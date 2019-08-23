@@ -2547,80 +2547,7 @@ exports[`29. tile ae 1`] = `
 </Link>
 `;
 
-exports[`30. tile ag 1`] = `
-<style>
-.S1 {
-  color: rgba(51,51,51,1.00);
-  font-family: TimesModern-Bold;
-  font-weight: 400;
-  margin-bottom: 5px;
-}
-
-.S2 {
-  color: rgba(105,105,105,1.00);
-  font-size: 14px;
-  line-height: 20px;
-}
-
-.IS1 {
-  font-size: 30px;
-  line-height: 30px;
-  margin-top: 20px;
-  text-align: center;
-}
-
-.IS2 {
-  font-family: TimesDigitalW04-Regular;
-  text-align: center;
-}
-
-.IS3 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-</style>
-
-<Link
-  linkStyle={
-    Object {
-      "flex": 1,
-      "paddingBottom": "10px",
-      "paddingHorizontal": "20px",
-    }
-  }
-  url="/article/123"
->
-  <div
-    className="css-view-1dbjc4n IS3"
-  >
-    <h3
-      aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S1"
-      role="heading"
-    >
-      Driving Off
-    </h3>
-    <h4
-      aria-level="4"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khp51w r-fontSize-1b43r93 r-lineHeight-rjixqe r-paddingBottom-1mi0q7o IS2 S2"
-      role="heading"
-    >
-      Three Conservative MPs resign
-    </h4>
-    <ArticleFlags />
-  </div>
-</Link>
-`;
-
-exports[`31. tile aj 1`] = `
+exports[`30. tile aj 1`] = `
 <style>
 .S1 {
   color: rgba(51,51,51,1.00);
@@ -2679,7 +2606,7 @@ exports[`31. tile aj 1`] = `
 </Link>
 `;
 
-exports[`32. tile ak 1`] = `
+exports[`31. tile ak 1`] = `
 <style>
 .S1 {
   color: rgba(51,51,51,1.00);
@@ -2741,7 +2668,7 @@ exports[`32. tile ak 1`] = `
 </Link>
 `;
 
-exports[`33. tile al 1`] = `
+exports[`32. tile al 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2831,7 +2758,7 @@ exports[`33. tile al 1`] = `
 </Link>
 `;
 
-exports[`34. tile am 1`] = `
+exports[`33. tile am 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2925,7 +2852,7 @@ exports[`34. tile am 1`] = `
 </Link>
 `;
 
-exports[`35. tile an 1`] = `
+exports[`34. tile an 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;

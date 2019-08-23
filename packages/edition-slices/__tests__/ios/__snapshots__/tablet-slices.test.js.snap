@@ -649,21 +649,21 @@ exports[`21. leaders slice - wide 1`] = `
     </View>
     <View>
       <View>
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader2"
         />
       </View>
       <View />
       <View>
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader1"
         />
       </View>
       <View />
       <View>
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader3"
         />
@@ -1150,21 +1150,21 @@ exports[`36. leaders slice - huge 1`] = `
       </View>
       <View>
         <View>
-          <TileAG
+          <TileM
             breakpoint="huge"
             tileName="leader2"
           />
         </View>
         <View />
         <View>
-          <TileAG
+          <TileM
             breakpoint="huge"
             tileName="leader1"
           />
         </View>
         <View />
         <View>
-          <TileAG
+          <TileM
             breakpoint="huge"
             tileName="leader3"
           />

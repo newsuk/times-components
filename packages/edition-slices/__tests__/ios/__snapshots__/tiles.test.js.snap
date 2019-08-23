@@ -1276,36 +1276,7 @@ exports[`29. tile ae 1`] = `
 </Link>
 `;
 
-exports[`30. tile ag 1`] = `
-<Link
-  linkStyle={
-    Object {
-      "flex": 1,
-      "paddingBottom": 10,
-      "paddingHorizontal": 20,
-    }
-  }
-  url="/article/123"
->
-  <View>
-    <Text
-      accessibilityRole="header"
-      aria-level="3"
-    >
-      Driving Off
-    </Text>
-    <Text
-      accessibilityRole="header"
-      aria-level="4"
-    >
-      Three Conservative MPs resign
-    </Text>
-    <ArticleFlags />
-  </View>
-</Link>
-`;
-
-exports[`31. tile aj 1`] = `
+exports[`30. tile aj 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1334,7 +1305,7 @@ exports[`31. tile aj 1`] = `
 </Link>
 `;
 
-exports[`32. tile ak 1`] = `
+exports[`31. tile ak 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1365,7 +1336,7 @@ exports[`32. tile ak 1`] = `
 </Link>
 `;
 
-exports[`33. tile al 1`] = `
+exports[`32. tile al 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1412,7 +1383,7 @@ exports[`33. tile al 1`] = `
 </Link>
 `;
 
-exports[`34. tile am 1`] = `
+exports[`33. tile am 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1459,7 +1430,7 @@ exports[`34. tile am 1`] = `
 </Link>
 `;
 
-exports[`35. tile an 1`] = `
+exports[`34. tile an 1`] = `
 <Link
   linkStyle={
     Object {

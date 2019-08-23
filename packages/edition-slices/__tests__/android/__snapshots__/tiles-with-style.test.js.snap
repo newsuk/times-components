@@ -1549,51 +1549,7 @@ exports[`29. tile ae 1`] = `
 </Link>
 `;
 
-exports[`30. tile ag 1`] = `
-<Link>
-  <View
-    style={
-      Object {
-        "flex": 1,
-      }
-    }
-  >
-    <Text
-      style={
-        Object {
-          "color": "#333333",
-          "fontFamily": "TimesModern-Bold",
-          "fontSize": 30,
-          "fontWeight": "400",
-          "lineHeight": 30,
-          "marginBottom": 5,
-          "marginTop": 20,
-          "textAlign": "center",
-        }
-      }
-    >
-      Driving Off
-    </Text>
-    <Text
-      style={
-        Object {
-          "color": "#696969",
-          "fontFamily": "TimesDigitalW04-Regular",
-          "fontSize": 14,
-          "lineHeight": 20,
-          "paddingBottom": 10,
-          "textAlign": "center",
-        }
-      }
-    >
-      Three Conservative MPs resign
-    </Text>
-    <ArticleFlags />
-  </View>
-</Link>
-`;
-
-exports[`31. tile aj 1`] = `
+exports[`30. tile aj 1`] = `
 <Link>
   <View
     style={
@@ -1630,7 +1586,7 @@ exports[`31. tile aj 1`] = `
 </Link>
 `;
 
-exports[`32. tile ak 1`] = `
+exports[`31. tile ak 1`] = `
 <Link>
   <View
     style={
@@ -1668,7 +1624,7 @@ exports[`32. tile ak 1`] = `
 </Link>
 `;
 
-exports[`33. tile al 1`] = `
+exports[`32. tile al 1`] = `
 <Link>
   <Image
     style={
@@ -1717,7 +1673,7 @@ exports[`33. tile al 1`] = `
 </Link>
 `;
 
-exports[`34. tile am 1`] = `
+exports[`33. tile am 1`] = `
 <Link>
   <Image
     style={
@@ -1767,7 +1723,7 @@ exports[`34. tile am 1`] = `
 </Link>
 `;
 
-exports[`35. tile an 1`] = `
+exports[`34. tile an 1`] = `
 <Link>
   <Image
     style={
