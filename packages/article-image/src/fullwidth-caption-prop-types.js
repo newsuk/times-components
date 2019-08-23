@@ -1,15 +1,12 @@
-import PropTypes from "prop-types";
-import Caption, {
+import {
   propTypes as captionPropTypes,
   defaultProps as captionDefaultProps
 } from "@times-components/caption";
 
 export const propTypes = {
-  ...captionPropTypes,
-  CaptionComponent: PropTypes.func.isRequired
+  ...captionPropTypes
 };
 
 export const defaultProps = {
-  ...captionDefaultProps,
-  CaptionComponent: Caption
+  ...captionDefaultProps
 };

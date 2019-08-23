@@ -1,10 +1,11 @@
 import React from "react";
+import Caption from "@times-components/caption";
 import { propTypes, defaultProps } from "./fullwidth-caption-prop-types";
 import { FullWidthCaptionStyle } from "./styles/responsive";
 
-const FullWidthCaptionWeb = ({ text, credits, CaptionComponent }) => (
+const FullWidthCaptionWeb = ({ text, credits }) => (
   <FullWidthCaptionStyle>
-    <CaptionComponent credits={credits} text={text} />
+    <Caption credits={credits} text={text} />
   </FullWidthCaptionStyle>
 );
 

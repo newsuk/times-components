@@ -1,7 +1,7 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { View } from "react-native";
 import { CentredCaption } from "@times-components/caption";
+import { propTypes, defaultProps } from "./fullwidth-caption-prop-types";
 import styles from "./styles";
 
 const FullWidthCaption = ({ text, credits }) => (
@@ -10,14 +10,7 @@ const FullWidthCaption = ({ text, credits }) => (
   </View>
 );
 
-FullWidthCaption.propTypes = {
-  credits: PropTypes.string,
-  text: PropTypes.string
-};
-
-FullWidthCaption.defaultProps = {
-  credits: "",
-  text: ""
-};
+FullWidthCaption.propTypes = propTypes;
+FullWidthCaption.defaultProps = defaultProps;
 
 export default FullWidthCaption;
