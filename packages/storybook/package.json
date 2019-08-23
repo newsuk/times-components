@@ -52,7 +52,7 @@
     "apollo-client": "2.5.1",
     "apollo-link-http": "1.5.14",
     "prop-types": "15.7.2",
-    "react": "16.8.6",
+    "react": "16.9.0",
     "react-apollo": "2.5.5",
     "react-helmet-async": "1.0.2",
     "react-test-renderer": "16.6.3",

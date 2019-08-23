@@ -175,9 +175,11 @@ class SafeView extends Component {
     this._isMounted = false;
   }
 
-  componentWillReceiveProps() {
+  /* eslint-disable */
+  UNSAFE_componentWillReceiveProps() {
     this._onLayout();
   }
+  /* eslint-enable */
 
   render() {
     const { forceInset = false, isLandscape, style, ...props } = this.props;

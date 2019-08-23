@@ -22,9 +22,11 @@ class Responsive extends Component {
     this.state = calculateState(width, fontScale);
   }
 
-  componentWillMount() {
+  /* eslint-disable */
+  UNSAFE_componentWillMount() {
     Dimensions.addEventListener("change", this.onDimensionChange);
   }
+  /* eslint-enable */
 
   componentWillUnmount() {
     Dimensions.removeEventListener("change", this.onDimensionChange);

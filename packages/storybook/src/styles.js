@@ -15,9 +15,11 @@ export function createScopedGlobalStyle(strings, ...attrs) {
 
   const InnerStyleComponent = createGlobalStyle(copiedStrings, ...attrs);
   class GlobalStyle extends Component {
-    componentWillMount() {
+    /* eslint-disable */
+    UNSAFE_componentWillMount() {
       document.documentElement.classList.add(className);
     }
+    /* eslint-enable */
 
     componentWillUnmount() {
       document.documentElement.classList.remove(className);

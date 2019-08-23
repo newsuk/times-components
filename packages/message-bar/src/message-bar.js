@@ -27,7 +27,8 @@ class MessageBar extends Component {
     }, delay);
   }
 
-  componentWillReceiveProps(props) {
+  /* eslint-disable */
+  UNSAFE_componentWillReceiveProps(props) {
     const { message, delay, close } = props;
     const { message: oldMessage } = this.props;
 
@@ -40,6 +41,7 @@ class MessageBar extends Component {
       }, delay);
     }
   }
+  /* eslint-enable */
 
   componentWillUnmount() {
     if (this.timeout) {

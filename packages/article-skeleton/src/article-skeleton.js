@@ -1,4 +1,4 @@
-/* eslint-disable consistent-return,no-param-reassign */
+/* eslint-disable consistent-return,no-param-reassign,camelcase,react/sort-comp */
 import React, { Component, Fragment } from "react";
 import { View, FlatList, Text, Dimensions } from "react-native";
 import PropTypes from "prop-types";
@@ -162,7 +162,7 @@ class ArticleSkeleton extends Component {
     }
   }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     this.updateData();
   }
 
