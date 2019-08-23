@@ -1,5 +1,5 @@
-/* eslint-disable consistent-return,no-param-reassign */
-import React, { Component, Fragment } from "react";
+/* eslint-disable consistent-return,no-param-reassign,camelcase,react/sort-comp */
+import React, { PureComponent, Fragment } from "react";
 import { View, FlatList, Text, Dimensions } from "react-native";
 import PropTypes from "prop-types";
 import { AdComposer } from "@times-components/ad";
@@ -14,6 +14,7 @@ import {
   colours
 } from "@times-components/styleguide";
 import { Viewport } from "@skele/components";
+import memoize from "memoize-one";
 import ArticleRowFlow from "./article-body/article-body-row";
 import {
   articleSkeletonPropTypes,
@@ -144,47 +145,54 @@ const renderText = (block, inlined = false) => {
   ));
 };
 
-class ArticleSkeleton extends Component {
+const renderInlineBlock = block => (
+  <ResponsiveContext.Consumer>
+    {() => {
+      const textLeftPadding = 5;
+      const gutterWidth = Math.min(screenWidth(), tabletWidthMax);
+      const textContainerWidth = Math.min(screenWidth(), tabletWidth);
+      const style = {
+        height: block.height,
+        left: (gutterWidth - textContainerWidth) / 2 + textLeftPadding,
+        position: "absolute",
+        top: 0,
+        width: Math.min(maxWidth, screenWidth()) * 0.35,
+        zIndex: 1
+      };
+      return (
+        <Fragment>
+          <View style={style}>{block.getComponent()}</View>
+          {block.children.map(subBlock => renderText(subBlock, true))}
+        </Fragment>
+      );
+    }}
+  </ResponsiveContext.Consumer>
+);
+
+class ArticleSkeleton extends PureComponent {
   constructor(props) {
     super(props);
     this.onViewableItemsChanged = this.onViewableItemsChanged.bind(this);
-
-    if (props.data) {
-      this.state = {
-        content: null,
-        dataSource: props.data,
-        width: screenWidth()
-      };
-    } else {
-      this.state = {
-        dataSource: {}
-      };
-    }
-  }
-
-  componentWillMount() {
-    this.updateData();
   }
 
   onViewableItemsChanged(info) {
     if (!info.changed.length) return [];
 
-    const { onViewed } = this.props;
-    const { dataSource } = this.state;
+    const { onViewed, data } = this.props;
 
     return info.changed
       .filter(viewableItem => viewableItem.isViewable)
-      .map(viewableItem => onViewed(viewableItem.item, dataSource));
+      .map(viewableItem => onViewed(viewableItem.item, data));
   }
 
-  rebuildRows(textFlow) {
-    return textFlow.block.children.map((block, i) => {
+  rebuildRows = textFlow =>
+    textFlow.block.children.map((block, i) => {
       let data;
       if (block instanceof Layout.Block) {
         data = block.getComponent();
       }
       if (block instanceof Layout.InlineBlock) {
-        data = this.renderInlineBlock(block);
+        data = renderInlineBlock(block);
       }
       if (block instanceof FText.Text) {
         data = renderText(block);
@@ -195,14 +203,13 @@ class ArticleSkeleton extends Component {
         type: "articleBodyRow"
       };
     });
-  }
 
-  updateData() {
-    const { dataSource } = this.state;
-    const { dropcapsDisabled, template } = dataSource;
-    if (!dataSource.content) {
-      return null;
+  updateData = memoize(dataSource => {
+    if (!dataSource || !dataSource.content || !dataSource.content.length) {
+      return [];
     }
+
+    const { dropcapsDisabled, template } = dataSource;
 
     let newContent = [...dataSource.content];
     if (newContent && newContent.length > 0) {
@@ -224,13 +231,13 @@ class ArticleSkeleton extends Component {
       .map(({ data }) => data);
 
     if (!rows.length) {
-      return null;
+      return [];
     }
 
     const others = articleData.filter(row => row.type !== "articleBodyRow");
 
-    this.layoutIfNeeded(rows, articleData, others);
-  }
+    return this.layoutIfNeeded(rows, articleData, others);
+  });
 
   layoutIfNeeded(rows, articleData, others) {
     const {
@@ -244,15 +251,6 @@ class ArticleSkeleton extends Component {
       dropCapFont,
       scale
     } = this.props;
-    const { width, flow } = this.state;
-
-    if (flow) {
-      this.setState({
-        content: [...this.rebuildRows(flow), ...others]
-      });
-      return;
-    }
-
     const { fontScale } = Dimensions.get("window");
 
     const textFlow = new Layout.TextFlow({
@@ -269,7 +267,7 @@ class ArticleSkeleton extends Component {
           onVideoPress,
           dropCapFont,
           scale,
-          width: Math.min(maxWidth, width)
+          width: Math.min(maxWidth, screenWidth())
         })
       ),
       width: Math.min(tabletWidth, screenWidth())
@@ -277,38 +275,7 @@ class ArticleSkeleton extends Component {
 
     receiveChildList(articleData);
 
-    this.setState({
-      content: [...this.rebuildRows(textFlow), ...others],
-      flow: textFlow
-    });
-  }
-
-  renderInlineBlock(block) {
-    return (
-      <ResponsiveContext.Consumer>
-        {() => {
-          const { width } = this.state;
-
-          const textLeftPadding = 5;
-          const gutterWidth = Math.min(screenWidth(), tabletWidthMax);
-          const textContainerWidth = Math.min(screenWidth(), tabletWidth);
-          const style = {
-            height: block.height,
-            left: (gutterWidth - textContainerWidth) / 2 + textLeftPadding,
-            position: "absolute",
-            top: 0,
-            width: Math.min(maxWidth, width) * 0.35,
-            zIndex: 1
-          };
-          return (
-            <Fragment>
-              <View style={style}>{block.getComponent()}</View>
-              {block.children.map(subBlock => renderText(subBlock, true))}
-            </Fragment>
-          );
-        }}
-      </ResponsiveContext.Consumer>
-    );
+    return [...this.rebuildRows(textFlow), ...others];
   }
 
   render() {
@@ -321,10 +288,11 @@ class ArticleSkeleton extends Component {
       onCommentsPress,
       onRelatedArticlePress,
       onTopicPress,
-      onViewed
+      onViewed,
+      data
     } = this.props;
-    const { width, content, dataSource } = this.state;
-    if (!dataSource.content) {
+    const content = this.updateData(data);
+    if (!content.length) {
       return null;
     }
 
@@ -333,7 +301,7 @@ class ArticleSkeleton extends Component {
         <View style={styles.articleContainer}>
           <Viewport.Tracker>
             <FlatList
-              data={content || []}
+              data={content && content.length ? content : []}
               initialListSize={listViewSize}
               removeClippedSubviews
               interactiveConfig={interactiveConfig}
@@ -342,7 +310,7 @@ class ArticleSkeleton extends Component {
               }
               ListHeaderComponent={
                 <Gutter>
-                  <Header width={Math.min(maxWidth, width)} />
+                  <Header width={Math.min(maxWidth, screenWidth())} />
                 </Gutter>
               }
               nestedScrollEnabled

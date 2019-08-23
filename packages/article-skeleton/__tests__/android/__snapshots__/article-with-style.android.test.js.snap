@@ -669,32 +669,7 @@ exports[`2. an article with interactives 1`] = `
 </View>
 `;
 
-exports[`3. an article with no content 1`] = `
-<View
-  style={
-    Object {
-      "backgroundColor": "#f0f0f0",
-    }
-  }
->
-  <RCTScrollView>
-    <View>
-      <View>
-        <View
-          style={
-            Object {
-              "alignSelf": "center",
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "width": 1194,
-            }
-          }
-        />
-      </View>
-    </View>
-  </RCTScrollView>
-</View>
-`;
+exports[`3. an article with no content 1`] = `null`;
 
 exports[`4. an article with a nested markup in first paragraph displays a drop cap 1`] = `
 <View

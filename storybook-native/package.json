@@ -30,7 +30,7 @@
     "@times-components/storybook": "4.0.33",
     "core-js": "^2.6.5",
     "prop-types": "15.7.2",
-    "react": "16.8.6",
+    "react": "16.9.0",
     "react-native": "0.59.10",
     "react-native-svg": "9.4.0",
     "regenerator-runtime": "0.13.2",
