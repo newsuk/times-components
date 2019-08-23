@@ -43,8 +43,7 @@ exports[`2. multiple article flags 1`] = `
 <View
   style={
     Object {
-      "flexDirection": "row",
-      "flexWrap": "wrap",
+      "marginBottom": 0,
       "marginTop": 10,
     }
   }

@@ -33,11 +33,7 @@ exports[`1. article summary component with a single paragraph 1`] = `
   <Text
     style={
       Object {
-        "color": "#696969",
-        "flexWrap": "wrap",
-        "fontFamily": "TimesDigitalW04",
-        "fontSize": 14,
-        "lineHeight": 20,
+        "marginBottom": 0,
       }
     }
   >
@@ -120,11 +116,7 @@ exports[`2. article summary content component with the given style 1`] = `
 <Text
   style={
     Object {
-      "color": "#696969",
-      "flexWrap": "wrap",
-      "fontFamily": "TimesDigitalW04",
-      "fontSize": 14,
-      "lineHeight": 20,
+      "marginBottom": 0,
     }
   }
 >
