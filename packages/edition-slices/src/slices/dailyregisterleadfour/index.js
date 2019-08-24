@@ -13,12 +13,11 @@ import Logo from "./logo";
 class DailyRegisterLeadFour extends Component {
   constructor(props) {
     super(props);
-    this.renderSlice = this.renderSlice.bind(this);
+    this.renderSmall = this.renderSmall.bind(this);
     this.renderMedium = this.renderMedium.bind(this);
-    this.renderHuge = this.renderHuge.bind(this);
   }
 
-  renderSlice(breakpoint) {
+  renderSmall(breakpoint) {
     const {
       slice: { birthdaysToday, briefing, natureNotes, onThisDay }
     } = this.props;
@@ -114,72 +113,13 @@ class DailyRegisterLeadFour extends Component {
     );
   }
 
-  renderHuge(breakpoint) {
-    const {
-      slice: { birthdaysToday, briefing, natureNotes, onThisDay }
-    } = this.props;
-    const styles = styleFactory(breakpoint);
-
-    return (
-      <View style={styles.container}>
-        <Logo
-          imageUri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
-          ratio={1}
-          style={styles.mastheadLogo}
-          type="logo"
-        />
-        <Text style={styles.title}>Daily Universal Register</Text>
-        <View style={styles.rowItems}>
-          <View style={styles.columnItems}>
-            <ItemRowSeparator style={styles.separator} />
-            <View style={styles.item}>
-              <TileS tile={briefing} breakpoint={breakpoint} />
-            </View>
-          </View>
-          <View style={styles.columnItems}>
-            <ItemRowSeparator style={styles.separator} />
-            <View style={styles.item}>
-              <TileS tile={onThisDay} breakpoint={breakpoint} />
-            </View>
-          </View>
-        </View>
-        <View style={styles.rowItems}>
-          <View style={styles.columnItems}>
-            <ItemRowSeparator style={styles.separator} />
-            <Logo
-              imageUri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
-              ratio={1 / 1}
-              style={styles.imageWrapper}
-              type="nature notes"
-            />
-            <View style={styles.item}>
-              <TileS tile={natureNotes} breakpoint={breakpoint} />
-            </View>
-          </View>
-          <View style={styles.columnItems}>
-            <ItemRowSeparator style={styles.separator} />
-            <Logo
-              imageUri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
-              ratio={1 / 1}
-              style={styles.imageWrapper}
-              type="birthdays"
-            />
-            <View style={styles.item}>
-              <TileS tile={birthdaysToday} breakpoint={breakpoint} />
-            </View>
-          </View>
-        </View>
-      </View>
-    );
-  }
-
   render() {
     return (
       <ResponsiveSlice
-        renderHuge={this.renderHuge}
+        renderSmall={this.renderSmall}
         renderMedium={this.renderMedium}
-        renderSmall={this.renderSlice}
-        renderWide={this.renderSlice}
+        renderWide={this.renderMedium}
+        renderHuge={this.renderMedium}
       />
     );
   }

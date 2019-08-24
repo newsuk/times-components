@@ -6,7 +6,7 @@ import {
   colours
 } from "@times-components/styleguide";
 
-const styles = {
+const smallBreakpointStyles = {
   bold: {
     color: colours.functional.brandColour,
     fontWeight: "bold"
@@ -61,14 +61,16 @@ const mediumBreakpointStyles = {
     color: colours.functional.brandColour,
     fontFamily: fonts.headline,
     fontSize: 20,
-    lineHeight: 20
+    lineHeight: 20,
+    marginBottom: spacing(2)
   },
   titleWrapper: {
     flexDirection: "row",
-    alignItems: "center",
-    marginBottom: spacing(2)
+    alignItems: "center"
   }
 };
 
 export default breakpoint =>
-  breakpoint === editionBreakpoints.medium ? mediumBreakpointStyles : styles;
+  breakpoint === editionBreakpoints.small
+    ? smallBreakpointStyles
+    : mediumBreakpointStyles;
