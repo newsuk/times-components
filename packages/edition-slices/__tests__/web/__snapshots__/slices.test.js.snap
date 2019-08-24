@@ -10,29 +10,41 @@ exports[`1. daily universal register 1`] = `
     <div>
       Daily Universal Register
     </div>
-    <TileS
-      breakpoint="wide"
-    />
-    <div />
-    <TileS
-      breakpoint="wide"
-    />
-    <div />
-    <Image
-      aspectRatio={1}
-      uri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
-    />
-    <TileS
-      breakpoint="wide"
-    />
-    <div />
-    <Image
-      aspectRatio={1}
-      uri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
-    />
-    <TileS
-      breakpoint="wide"
-    />
+    <div>
+      <div>
+        <TileS
+          breakpoint="wide"
+        />
+        <div />
+        <TileS
+          breakpoint="wide"
+          logo={
+            <Logo
+              imageUri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
+              ratio={1}
+              type="nature notes"
+            />
+          }
+        />
+      </div>
+      <div />
+      <div>
+        <TileS
+          breakpoint="wide"
+        />
+        <div />
+        <TileS
+          breakpoint="wide"
+          logo={
+            <Logo
+              imageUri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
+              ratio={1}
+              type="birthdays"
+            />
+          }
+        />
+      </div>
+    </div>
   </div>
 </div>
 `;
