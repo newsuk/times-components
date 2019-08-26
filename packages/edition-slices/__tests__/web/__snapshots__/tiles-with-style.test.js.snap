@@ -2499,8 +2499,9 @@ exports[`29. tile ae 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "padding": "10px",
+      "paddingHorizontal": "10px",
       "paddingTop": "15px",
+      "paddingVertical": "15px",
     }
   }
   url="/article/123"
@@ -3037,99 +3038,7 @@ exports[`35. tile an 1`] = `
 </Link>
 `;
 
-exports[`36. tile ap 1`] = `
-<style>
-.S1 {
-  margin-bottom: 0px;
-}
-
-.S2 {
-  color: rgba(51,51,51,1.00);
-  font-family: TimesModern-Bold;
-  font-size: 22px;
-  font-weight: 400;
-  margin-bottom: 5px;
-}
-
-.IS1 {
-  overflow: hidden;
-}
-
-.IS2 {
-  line-height: 22px;
-  padding-bottom: 5px;
-}
-
-.IS3 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -webkit-justify-content: center;
-  justify-content: center;
-  padding-top: 5px;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
-}
-</style>
-
-<Link
-  linkStyle={
-    Object {
-      "flex": 1,
-      "padding": "10px",
-    }
-  }
-  url="/article/123"
->
-  <Image
-    aspectRatio={1}
-    className="IS1"
-    fill={true}
-    resizeMode="cover"
-    rounded={true}
-    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
-  />
-  <div
-    className="css-view-1dbjc4n IS3"
-  >
-    <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
-    >
-      <ArticleLabel
-        color="#005B8D"
-        isVideo={false}
-        title="label"
-      />
-    </div>
-    <h3
-      aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
-      role="heading"
-    >
-      This is tile headline
-    </h3>
-    <ArticleFlags
-      flags={
-        Array [
-          Object {
-            "expiryTime": "2030-03-14T12:00:00.000Z",
-            "type": "EXCLUSIVE",
-          },
-        ]
-      }
-    />
-  </div>
-</Link>
-`;
-
-exports[`37. tile ad 1`] = `
+exports[`36. tile ad 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3206,7 +3115,7 @@ exports[`37. tile ad 1`] = `
 </Link>
 `;
 
-exports[`38. tile ac 1`] = `
+exports[`37. tile ac 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3304,7 +3213,7 @@ exports[`38. tile ac 1`] = `
 </Link>
 `;
 
-exports[`39. tile aa 1`] = `
+exports[`38. tile aa 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3387,7 +3296,7 @@ exports[`39. tile aa 1`] = `
 </Link>
 `;
 
-exports[`40. tile ar 1`] = `
+exports[`39. tile ar 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3510,7 +3419,7 @@ exports[`40. tile ar 1`] = `
 </Link>
 `;
 
-exports[`41. tile as 1`] = `
+exports[`40. tile as 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3621,7 +3530,7 @@ exports[`41. tile as 1`] = `
 </Link>
 `;
 
-exports[`42. tile ah 1`] = `
+exports[`41. tile ah 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3728,7 +3637,7 @@ exports[`42. tile ah 1`] = `
 </Link>
 `;
 
-exports[`43. tile ai 1`] = `
+exports[`42. tile ai 1`] = `
 <style>
 .IS1 {
   width: 100%;

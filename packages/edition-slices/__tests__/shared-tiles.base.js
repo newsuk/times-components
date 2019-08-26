@@ -47,7 +47,6 @@ import {
   TileAL,
   TileAM,
   TileAN,
-  TileAP,
   TileAR,
   TileAS
 } from "../src/tiles";
@@ -228,10 +227,6 @@ export default () => {
     {
       name: "tile an",
       test: () => testTile(TileAN)
-    },
-    {
-      name: "tile ap",
-      test: () => testTile(TileAP)
     },
     {
       name: "tile ad",
