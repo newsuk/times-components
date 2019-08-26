@@ -48,7 +48,6 @@ class LeadOneAndFour extends Component {
         breakpoint={breakpoint}
         lead={
           <TileAC
-            breakpoint={breakpoint}
             onPress={onPress}
             tile={lead}
             tileName="lead"
@@ -56,7 +55,6 @@ class LeadOneAndFour extends Component {
         }
         support1={
           <TileAD
-            breakpoint={breakpoint}
             onPress={onPress}
             tile={support1}
             tileName="support1"
@@ -64,7 +62,6 @@ class LeadOneAndFour extends Component {
         }
         support2={
           <TileAD
-            breakpoint={breakpoint}
             onPress={onPress}
             tile={support2}
             tileName="support2"
@@ -72,7 +69,6 @@ class LeadOneAndFour extends Component {
         }
         support3={
           <TileAD
-            breakpoint={breakpoint}
             onPress={onPress}
             tile={support3}
             tileName="support3"
@@ -80,7 +76,6 @@ class LeadOneAndFour extends Component {
         }
         support4={
           <TileAD
-            breakpoint={breakpoint}
             onPress={onPress}
             tile={support4}
             tileName="support4"
