@@ -420,7 +420,9 @@ export default gql`
             listingAsset {
               ...listingAsset169
             }
+            summary800: summary(maxCharCount: 800)
           }
+          teaser800: teaser(maxCharCount: 800)
         }
         columnist {
           headline
@@ -1084,7 +1086,9 @@ export default gql`
             listingAsset {
               ...listingAsset169
             }
+            summary800: summary(maxCharCount: 800)
           }
+          teaser800: teaser(maxCharCount: 800)
         }
         columnist {
           headline

@@ -46,16 +46,17 @@ const wideBreakpointStyles = {
   },
   headline: {
     ...sharedStyles.headline,
-    fontSize: 25,
-    lineHeight: 25
+    marginBottom: spacing(2),
+    fontSize: 30,
+    lineHeight: 30
   }
 };
 
-const breakpointStyles = {
+const stylesResolver = {
   [editionBreakpoints.small]: smallBreakpointStyles,
   [editionBreakpoints.medium]: mediumBreakpointStyles,
   [editionBreakpoints.wide]: wideBreakpointStyles,
   [editionBreakpoints.huge]: wideBreakpointStyles
 };
 
-export default breakpoint => breakpointStyles[breakpoint];
+export default breakpoint => stylesResolver[breakpoint];

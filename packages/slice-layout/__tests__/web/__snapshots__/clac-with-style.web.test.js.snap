@@ -1,6 +1,34 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. comment lead and cartoon - small 1`] = `
+<div>
+  <div>
+    lead-1
+  </div>
+  <div
+    style={
+      Object {
+        "borderBottomColor": "rgba(219,219,219,1.00)",
+        "borderBottomStyle": "solid",
+        "borderBottomWidth": "1px",
+        "borderLeftColor": "rgba(219,219,219,1.00)",
+        "borderLeftStyle": "solid",
+        "borderRightColor": "rgba(219,219,219,1.00)",
+        "borderRightStyle": "solid",
+        "borderTopColor": "rgba(219,219,219,1.00)",
+        "borderTopStyle": "solid",
+        "marginLeft": "10px",
+        "marginRight": "10px",
+      }
+    }
+  />
+  <div>
+    cartoon-1
+  </div>
+</div>
+`;
+
+exports[`2. comment lead and cartoon - medium 1`] = `
 <div
   style={
     Object {
@@ -20,8 +48,8 @@ exports[`1. comment lead and cartoon - small 1`] = `
       "msFlexPositive": 1,
       "msFlexPreferredSize": "0%",
       "paddingBottom": "5px",
-      "paddingLeft": "30px",
-      "paddingRight": "30px",
+      "paddingLeft": "20px",
+      "paddingRight": "20px",
       "paddingTop": "5px",
     }
   }
@@ -68,7 +96,7 @@ exports[`1. comment lead and cartoon - small 1`] = `
 </div>
 `;
 
-exports[`2. comment lead and cartoon - medium 1`] = `
+exports[`3. comment lead and cartoon - wide 1`] = `
 <div
   style={
     Object {
@@ -88,8 +116,8 @@ exports[`2. comment lead and cartoon - medium 1`] = `
       "msFlexPositive": 1,
       "msFlexPreferredSize": "0%",
       "paddingBottom": "5px",
-      "paddingLeft": "30px",
-      "paddingRight": "30px",
+      "paddingLeft": "10px",
+      "paddingRight": "10px",
       "paddingTop": "5px",
     }
   }

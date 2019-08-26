@@ -8,7 +8,7 @@ import {
 
 const headlineFontSizeResolver = {
   [editionBreakpoints.medium]: 30,
-  [editionBreakpoints.wide]: 35,
+  [editionBreakpoints.wide]: 40,
   [editionBreakpoints.huge]: 45
 };
 
@@ -16,8 +16,8 @@ const styles = (breakpoint = editionBreakpoints.medium) => ({
   container: {
     flex: 1,
     alignItems: "center",
-    marginRight: spacing(2),
-    paddingVertical: spacing(2)
+    justifyContent: "center",
+    padding: spacing(2)
   },
   headline: {
     color: colours.functional.brandColour,
@@ -30,7 +30,7 @@ const styles = (breakpoint = editionBreakpoints.medium) => ({
   },
   imageContainer: {
     overflow: "hidden",
-    width: "40%",
+    width: 97,
     marginBottom: spacing(1)
   },
   strapline: {
@@ -42,7 +42,6 @@ const styles = (breakpoint = editionBreakpoints.medium) => ({
     paddingBottom: spacing(1)
   },
   summaryContainer: {
-    flex: 1,
     paddingTop: spacing(1),
     alignItems: "center"
   }

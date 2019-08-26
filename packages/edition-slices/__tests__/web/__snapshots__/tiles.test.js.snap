@@ -895,7 +895,6 @@ exports[`22. tile u 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "flexDirection": "row",
       "paddingHorizontal": "10px",
       "paddingVertical": "15px",
     }
@@ -919,6 +918,13 @@ exports[`22. tile u 1`] = `
           >
             This is tile headline
           </h3>
+          <div>
+            <span>
+              
+              ‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye.
+              ...
+            </span>
+          </div>
           <ArticleFlags
             flags={
               Array [
@@ -934,9 +940,9 @@ exports[`22. tile u 1`] = `
     </div>
   </div>
   <Image
-    aspectRatio={1.5}
+    aspectRatio={1.7777777777777777}
     fill={true}
-    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
 </Link>
 `;
@@ -1177,7 +1183,7 @@ exports[`28. tile ab 1`] = `
       "flex": 1,
       "flexDirection": "row",
       "paddingHorizontal": "10px",
-      "paddingVertical": "10px",
+      "paddingVertical": "15px",
     }
   }
   url="/article/123"
@@ -1214,14 +1220,6 @@ exports[`28. tile ab 1`] = `
               ]
             }
           />
-          <div>
-            <span>
-              Richard Lloyd Parry
-            </span>
-            <span>
-              , Hanoi
-            </span>
-          </div>
         </div>
       </div>
     </div>
@@ -1639,23 +1637,17 @@ exports[`38. tile ac 1`] = `
 </Link>
 `;
 
-exports[`39. tile aq 1`] = `
+exports[`39. tile aa 1`] = `
 <Link
   linkStyle={
     Object {
       "flex": 1,
-      "padding": "10px",
+      "paddingHorizontal": "10px",
+      "paddingVertical": "15px",
     }
   }
   url="/article/123"
 >
-  <div>
-    <Image
-      aspectRatio={1.7777777777777777}
-      fill={true}
-      uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
-    />
-  </div>
   <div>
     <div>
       <div>
@@ -1804,8 +1796,8 @@ exports[`42. tile ah 1`] = `
     Object {
       "alignItems": "center",
       "flex": 1,
-      "marginRight": "10px",
-      "paddingVertical": "10px",
+      "justifyContent": "center",
+      "padding": "10px",
     }
   }
   url="/article/123"
@@ -1856,7 +1848,7 @@ exports[`43. tile ai 1`] = `
   linkStyle={
     Object {
       "alignItems": "center",
-      "paddingVertical": "10px",
+      "padding": "10px",
     }
   }
   url="/article/123"

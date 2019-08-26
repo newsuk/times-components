@@ -3,9 +3,11 @@ import { editionBreakpoints } from "@times-components/styleguide";
 import VerticalLayout from "../verticallayout";
 import HorizontalLayout from "../horizontallayout";
 import propTypes from "./proptypes";
-import styles from "./styles";
+import styleFactory from "./styles";
 
 const CommentLeadAndCartoon = ({ breakpoint, lead, cartoon }) => {
+  const styles = styleFactory(breakpoint);
+
   if (breakpoint === editionBreakpoints.small) {
     return <VerticalLayout tiles={[lead, cartoon]} />;
   }

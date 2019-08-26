@@ -16,7 +16,7 @@ exports[`1. comment lead and cartoon - medium 1`] = `
       Object {
         "flex": 1,
         "flexDirection": "row",
-        "paddingHorizontal": 30,
+        "paddingHorizontal": 20,
         "paddingVertical": 5,
       }
     }
@@ -207,7 +207,7 @@ exports[`3. lead one and one - medium 1`] = `
         }
       }
     >
-      <TileB />
+      <TileAA />
     </View>
   </View>
 </View>
@@ -1188,7 +1188,7 @@ exports[`16. comment lead and cartoon - wide 1`] = `
       Object {
         "flex": 1,
         "flexDirection": "row",
-        "paddingHorizontal": 30,
+        "paddingHorizontal": 10,
         "paddingVertical": 5,
       }
     }
@@ -1242,17 +1242,19 @@ exports[`17. daily universal register - wide 1`] = `
         "alignItems": "center",
         "backgroundColor": "#F0F0F0",
         "flex": 1,
-        "paddingHorizontal": "25%",
-        "paddingVertical": 10,
+        "marginHorizontal": 20,
+        "marginVertical": 15,
+        "padding": 15,
       }
     }
   >
     <Image
       style={
         Object {
-          "height": 73,
+          "height": 60,
+          "marginTop": 15,
           "marginVertical": 10,
-          "width": 285,
+          "width": 237,
         }
       }
     />
@@ -1262,71 +1264,71 @@ exports[`17. daily universal register - wide 1`] = `
           "color": "#850029",
           "fontFamily": "TimesDigitalW04",
           "fontSize": 16,
-          "marginBottom": 25,
+          "marginBottom": 15,
         }
       }
     >
       Daily Universal Register
     </Text>
-    <TileS />
     <View
       style={
         Object {
-          "borderBottomColor": "#DBDBDB",
-          "borderBottomWidth": 1,
-          "borderColor": "#DBDBDB",
-          "borderStyle": "solid",
-          "marginHorizontal": 10,
-          "marginVertical": 25,
-          "width": "100%",
+          "flex": 1,
+          "flexDirection": "row",
         }
       }
-    />
-    <TileS />
-    <View
-      style={
-        Object {
-          "borderBottomColor": "#DBDBDB",
-          "borderBottomWidth": 1,
-          "borderColor": "#DBDBDB",
-          "borderStyle": "solid",
-          "marginHorizontal": 10,
-          "marginVertical": 25,
-          "width": "100%",
+    >
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
         }
-      }
-    />
-    <Image
-      style={
-        Object {
-          "height": 45,
-          "width": 60,
+      >
+        <TileS />
+        <View
+          style={
+            Object {
+              "borderBottomWidth": 1,
+              "borderColor": "#DBDBDB",
+              "borderStyle": "solid",
+              "marginHorizontal": 15,
+            }
+          }
+        />
+        <TileS />
+      </View>
+      <View
+        style={
+          Object {
+            "borderColor": "#DBDBDB",
+            "borderRightWidth": 1,
+            "borderStyle": "solid",
+            "marginVertical": 15,
+          }
         }
-      }
-    />
-    <TileS />
-    <View
-      style={
-        Object {
-          "borderBottomColor": "#DBDBDB",
-          "borderBottomWidth": 1,
-          "borderColor": "#DBDBDB",
-          "borderStyle": "solid",
-          "marginHorizontal": 10,
-          "marginVertical": 25,
-          "width": "100%",
+      />
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
         }
-      }
-    />
-    <Image
-      style={
-        Object {
-          "height": 45,
-          "width": 60,
-        }
-      }
-    />
-    <TileS />
+      >
+        <TileS />
+        <View
+          style={
+            Object {
+              "borderBottomWidth": 1,
+              "borderColor": "#DBDBDB",
+              "borderStyle": "solid",
+              "marginHorizontal": 15,
+            }
+          }
+        />
+        <TileS />
+      </View>
+    </View>
   </View>
 </View>
 `;
@@ -1347,7 +1349,7 @@ exports[`18. lead one and one - wide 1`] = `
       Object {
         "flex": 1,
         "flexDirection": "row",
-        "marginHorizontal": 20,
+        "marginHorizontal": 10,
       }
     }
   >
@@ -1377,7 +1379,7 @@ exports[`18. lead one and one - wide 1`] = `
         }
       }
     >
-      <TileC />
+      <TileAA />
     </View>
   </View>
 </View>
@@ -1887,14 +1889,14 @@ exports[`25. secondary one and columnist - wide 1`] = `
       Object {
         "flex": 1,
         "flexDirection": "row",
-        "marginHorizontal": 20,
+        "marginHorizontal": 10,
       }
     }
   >
     <View
       style={
         Object {
-          "width": "73%",
+          "width": "67%",
         }
       }
     >
@@ -1913,7 +1915,7 @@ exports[`25. secondary one and columnist - wide 1`] = `
     <View
       style={
         Object {
-          "width": "27%",
+          "width": "33%",
         }
       }
     >
@@ -2278,7 +2280,7 @@ exports[`30. puzzle - wide 1`] = `
       Object {
         "flex": 1,
         "flexDirection": "row",
-        "paddingHorizontal": 20,
+        "paddingHorizontal": 10,
         "paddingTop": 15,
       }
     }
@@ -2339,7 +2341,7 @@ exports[`31. comment lead and cartoon - huge 1`] = `
         Object {
           "flex": 1,
           "flexDirection": "row",
-          "paddingHorizontal": 30,
+          "paddingHorizontal": 20,
           "paddingVertical": 5,
         }
       }
@@ -2403,15 +2405,19 @@ exports[`32. daily universal register - huge 1`] = `
           "alignItems": "center",
           "backgroundColor": "#F0F0F0",
           "flex": 1,
+          "marginHorizontal": 20,
+          "marginVertical": 15,
+          "padding": 15,
         }
       }
     >
       <Image
         style={
           Object {
-            "height": 73,
+            "height": 60,
+            "marginTop": 15,
             "marginVertical": 10,
-            "width": 285,
+            "width": 237,
           }
         }
       />
@@ -2421,7 +2427,7 @@ exports[`32. daily universal register - huge 1`] = `
             "color": "#850029",
             "fontFamily": "TimesDigitalW04",
             "fontSize": 16,
-            "marginBottom": 25,
+            "marginBottom": 15,
           }
         }
       >
@@ -2430,145 +2436,60 @@ exports[`32. daily universal register - huge 1`] = `
       <View
         style={
           Object {
+            "flex": 1,
             "flexDirection": "row",
-            "paddingHorizontal": "8%",
-            "width": "100%",
           }
         }
       >
         <View
           style={
             Object {
-              "alignItems": "center",
               "flex": 1,
-              "flexDirection": "column",
-              "paddingHorizontal": 25,
             }
           }
         >
+          <TileS />
           <View
             style={
               Object {
-                "borderBottomColor": "#DBDBDB",
                 "borderBottomWidth": 1,
                 "borderColor": "#DBDBDB",
                 "borderStyle": "solid",
-                "marginHorizontal": 10,
-                "marginVertical": 25,
-                "width": "100%",
+                "marginHorizontal": 15,
               }
             }
           />
-          <View>
-            <TileS />
-          </View>
+          <TileS />
         </View>
         <View
           style={
             Object {
-              "alignItems": "center",
-              "flex": 1,
-              "flexDirection": "column",
-              "paddingHorizontal": 25,
+              "borderColor": "#DBDBDB",
+              "borderRightWidth": 1,
+              "borderStyle": "solid",
+              "marginVertical": 15,
             }
           }
-        >
-          <View
-            style={
-              Object {
-                "borderBottomColor": "#DBDBDB",
-                "borderBottomWidth": 1,
-                "borderColor": "#DBDBDB",
-                "borderStyle": "solid",
-                "marginHorizontal": 10,
-                "marginVertical": 25,
-                "width": "100%",
-              }
-            }
-          />
-          <View>
-            <TileS />
-          </View>
-        </View>
-      </View>
-      <View
-        style={
-          Object {
-            "flexDirection": "row",
-            "paddingHorizontal": "8%",
-            "width": "100%",
-          }
-        }
-      >
+        />
         <View
           style={
             Object {
-              "alignItems": "center",
               "flex": 1,
-              "flexDirection": "column",
-              "paddingHorizontal": 25,
             }
           }
         >
+          <TileS />
           <View
             style={
               Object {
-                "borderBottomColor": "#DBDBDB",
                 "borderBottomWidth": 1,
                 "borderColor": "#DBDBDB",
                 "borderStyle": "solid",
-                "marginHorizontal": 10,
-                "marginVertical": 25,
-                "width": "100%",
+                "marginHorizontal": 15,
               }
             }
           />
-          <Image
-            style={
-              Object {
-                "height": 45,
-                "width": 60,
-              }
-            }
-          />
-          <View>
-            <TileS />
-          </View>
-        </View>
-        <View
-          style={
-            Object {
-              "alignItems": "center",
-              "flex": 1,
-              "flexDirection": "column",
-              "paddingHorizontal": 25,
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "borderBottomColor": "#DBDBDB",
-                "borderBottomWidth": 1,
-                "borderColor": "#DBDBDB",
-                "borderStyle": "solid",
-                "marginHorizontal": 10,
-                "marginVertical": 25,
-                "width": "100%",
-              }
-            }
-          />
-          <Image
-            style={
-              Object {
-                "height": 45,
-                "width": 60,
-              }
-            }
-          />
-          <View>
-            <TileS />
-          </View>
+          <TileS />
         </View>
       </View>
     </View>
@@ -2601,7 +2522,7 @@ exports[`33. lead one and one - huge 1`] = `
         Object {
           "flex": 1,
           "flexDirection": "row",
-          "marginHorizontal": 20,
+          "marginHorizontal": 10,
         }
       }
     >
@@ -2631,7 +2552,7 @@ exports[`33. lead one and one - huge 1`] = `
           }
         }
       >
-        <TileAQ />
+        <TileAA />
       </View>
     </View>
   </View>
@@ -2890,7 +2811,7 @@ exports[`37. secondary one and four - huge 1`] = `
 <View
   style={
     Object {
-      "marginHorizontal": 40,
+      "marginHorizontal": 20,
       "marginVertical": 15,
     }
   }
@@ -3211,14 +3132,14 @@ exports[`40. secondary one and columnist - huge 1`] = `
         Object {
           "flex": 1,
           "flexDirection": "row",
-          "marginHorizontal": 20,
+          "marginHorizontal": 10,
         }
       }
     >
       <View
         style={
           Object {
-            "width": "73%",
+            "width": "67%",
           }
         }
       >
@@ -3237,7 +3158,7 @@ exports[`40. secondary one and columnist - huge 1`] = `
       <View
         style={
           Object {
-            "width": "27%",
+            "width": "33%",
           }
         }
       >

@@ -1139,9 +1139,8 @@ exports[`22. tile u 1`] = `
   <View
     style={
       Object {
-        "flex": 1,
-        "paddingRight": 20,
-        "width": "40%",
+        "paddingBottom": 10,
+        "width": "100%",
       }
     }
   >
@@ -1168,14 +1167,31 @@ exports[`22. tile u 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesModern-Bold",
-                "fontSize": 30,
+                "fontSize": 40,
                 "fontWeight": "400",
-                "lineHeight": 30,
+                "lineHeight": 40,
                 "marginBottom": 10,
               }
             }
           >
             This is tile headline
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#696969",
+                "flexWrap": "wrap",
+                "fontFamily": "TimesDigitalW04",
+                "fontSize": 14,
+                "lineHeight": 20,
+              }
+            }
+          >
+            <Text>
+              
+              ‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye.
+              ...
+            </Text>
           </Text>
           <ArticleFlags />
         </View>
@@ -1185,7 +1201,7 @@ exports[`22. tile u 1`] = `
   <Image
     style={
       Object {
-        "width": "60%",
+        "width": "100%",
       }
     }
   />
@@ -1479,41 +1495,13 @@ exports[`28. tile ab 1`] = `
                 "fontSize": 30,
                 "fontWeight": "400",
                 "lineHeight": 30,
-                "marginBottom": 5,
+                "marginBottom": 10,
               }
             }
           >
             This is tile headline
           </Text>
           <ArticleFlags />
-          <Text>
-            <Text
-              style={
-                Object {
-                  "color": "#333333",
-                  "flexDirection": "row",
-                  "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 13,
-                  "lineHeight": 13,
-                }
-              }
-            >
-              Richard Lloyd Parry
-            </Text>
-            <Text
-              style={
-                Object {
-                  "color": "#333333",
-                  "flexDirection": "row",
-                  "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 13,
-                  "lineHeight": 13,
-                }
-              }
-            >
-              , Hanoi
-            </Text>
-          </Text>
         </View>
       </View>
     </View>
@@ -1985,18 +1973,8 @@ exports[`38. tile ac 1`] = `
 </Link>
 `;
 
-exports[`39. tile aq 1`] = `
+exports[`39. tile aa 1`] = `
 <Link>
-  <View
-    style={
-      Object {
-        "marginBottom": 10,
-        "width": "100%",
-      }
-    }
-  >
-    <Image />
-  </View>
   <View
     style={
       Object {
@@ -2020,9 +1998,9 @@ exports[`39. tile aq 1`] = `
             Object {
               "color": "#333333",
               "fontFamily": "TimesModern-Bold",
-              "fontSize": 22,
+              "fontSize": 20,
               "fontWeight": "400",
-              "lineHeight": 22,
+              "lineHeight": 20,
               "marginBottom": 5,
             }
           }
@@ -2175,7 +2153,7 @@ exports[`42. tile ah 1`] = `
       Object {
         "marginBottom": 5,
         "overflow": "hidden",
-        "width": "40%",
+        "width": 97,
       }
     }
   />
@@ -2183,7 +2161,6 @@ exports[`42. tile ah 1`] = `
     style={
       Object {
         "alignItems": "center",
-        "flex": 1,
         "paddingTop": 5,
       }
     }

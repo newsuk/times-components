@@ -16,6 +16,7 @@ const TileB = ({
   onPress,
   tile,
   breakpoint = editionBreakpoints.small,
+  withMoreTeaser = false,
   additionalHeadlineStyles = {}
 }) => {
   const styles = stylesFactory(breakpoint);
@@ -31,7 +32,7 @@ const TileB = ({
         render={whiteSpaceHeight => (
           <TileSummary
             headlineStyle={headLineStyles}
-            summary={getTileSummary(tile, 125)}
+            summary={getTileSummary(tile, withMoreTeaser ? 800 : 125)}
             tile={tile}
             whiteSpaceHeight={whiteSpaceHeight}
             withStar={false}
@@ -47,6 +48,7 @@ TileB.propTypes = {
   onPress: PropTypes.func.isRequired,
   tile: PropTypes.shape({}).isRequired,
   breakpoint: PropTypes.string,
+  withMoreTeaser: PropTypes.bool,
   additionalHeadlineStyles: PropTypes.shape({})
 };
 

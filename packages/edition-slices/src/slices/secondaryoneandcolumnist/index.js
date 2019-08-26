@@ -51,6 +51,7 @@ class SecondaryOneAndColumnist extends Component {
             onPress={onPress}
             tile={secondary}
             tileName="secondary"
+            withMoreTeaser
           />
         }
       />

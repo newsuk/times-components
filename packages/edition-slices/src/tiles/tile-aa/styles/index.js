@@ -10,26 +10,20 @@ const mediumBreakpointStyles = {
     paddingVertical: spacing(3),
     paddingHorizontal: spacing(2)
   },
-  imageContainer: {
-    width: "100%"
-  },
-  summaryContainer: {
-    width: "100%",
-    paddingBottom: spacing(2)
-  },
   headline: {
     fontFamily: fonts.headline,
-    fontSize: 40,
-    lineHeight: 40,
-    marginBottom: spacing(2)
+    fontSize: 20,
+    lineHeight: 20
   }
 };
 
 const wideBreakpointStyles = {
   ...mediumBreakpointStyles,
   headline: {
-    ...mediumBreakpointStyles.headline,
-    marginBottom: 0
+    fontFamily: fonts.headline,
+    fontSize: 28,
+    lineHeight: 28,
+    marginBottom: spacing(2)
   }
 };
 
