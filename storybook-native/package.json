@@ -28,12 +28,11 @@
     "@storybook/react": "4.1.18",
     "@storybook/react-native": "4.1.18",
     "@times-components/storybook": "4.0.30",
-    "core-js": "^2.6.5",
+    "babel-polyfill": "6.26.0",
     "prop-types": "15.7.2",
     "react": "16.8.6",
     "react-native": "0.59.10",
     "react-native-svg": "9.4.0",
-    "regenerator-runtime": "0.13.2",
     "url-polyfill": "1.1.0"
   },
   "devDependencies": {

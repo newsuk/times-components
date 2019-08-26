@@ -6,7 +6,8 @@ module.exports = api => {
       "babel-plugin-styled-components",
       "@babel/plugin-transform-react-display-name",
       "@babel/plugin-transform-runtime",
-      "@babel/plugin-proposal-export-default-from"
+      "@babel/plugin-proposal-export-default-from",
+      ["@babel/plugin-proposal-decorators", { legacy: true }]
     ]
   };
 };

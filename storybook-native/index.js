@@ -1,5 +1,4 @@
-import "core-js";
-import "regenerator-runtime/runtime";
+import "babel-polyfill";
 import { AppRegistry } from "react-native";
 import StorybookUIRoot from "./storybook";
 
