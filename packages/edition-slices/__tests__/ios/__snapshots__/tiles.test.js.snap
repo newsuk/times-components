@@ -1000,10 +1000,11 @@ exports[`24. tile w 1`] = `
 <Link
   linkStyle={
     Object {
+      "flex": 1,
       "flexDirection": "row",
-      "paddingBottom": 15,
-      "paddingHorizontal": 20,
-      "paddingTop": 15,
+      "marginHorizontal": 20,
+      "paddingHorizontal": 10,
+      "paddingVertical": 15,
     }
   }
   url="/article/123"
