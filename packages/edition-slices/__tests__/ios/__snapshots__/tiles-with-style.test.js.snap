@@ -1860,54 +1860,7 @@ exports[`35. tile an 1`] = `
 </Link>
 `;
 
-exports[`36. tile ap 1`] = `
-<Link>
-  <Image
-    style={
-      Object {
-        "overflow": "hidden",
-      }
-    }
-  />
-  <View
-    style={
-      Object {
-        "flex": 1,
-        "justifyContent": "center",
-        "paddingTop": 5,
-      }
-    }
-  >
-    <View
-      style={
-        Object {
-          "marginBottom": 0,
-        }
-      }
-    >
-      <ArticleLabel />
-    </View>
-    <Text
-      style={
-        Object {
-          "color": "#333333",
-          "fontFamily": "TimesModern-Bold",
-          "fontSize": 22,
-          "fontWeight": "900",
-          "lineHeight": 22,
-          "marginBottom": 5,
-          "paddingBottom": 5,
-        }
-      }
-    >
-      This is tile headline
-    </Text>
-    <ArticleFlags />
-  </View>
-</Link>
-`;
-
-exports[`37. tile ad 1`] = `
+exports[`36. tile ad 1`] = `
 <Link>
   <Image
     style={
@@ -1952,7 +1905,7 @@ exports[`37. tile ad 1`] = `
 </Link>
 `;
 
-exports[`38. tile ac 1`] = `
+exports[`37. tile ac 1`] = `
 <Link>
   <Image
     style={
@@ -2002,7 +1955,7 @@ exports[`38. tile ac 1`] = `
 </Link>
 `;
 
-exports[`39. tile aa 1`] = `
+exports[`38. tile aa 1`] = `
 <Link>
   <View
     style={
@@ -2043,7 +1996,7 @@ exports[`39. tile aa 1`] = `
 </Link>
 `;
 
-exports[`40. tile ar 1`] = `
+exports[`39. tile ar 1`] = `
 <Link>
   <View
     style={
@@ -2111,7 +2064,7 @@ exports[`40. tile ar 1`] = `
 </Link>
 `;
 
-exports[`41. tile as 1`] = `
+exports[`40. tile as 1`] = `
 <Link>
   <View
     style={
@@ -2175,7 +2128,7 @@ exports[`41. tile as 1`] = `
 </Link>
 `;
 
-exports[`42. tile ah 1`] = `
+exports[`41. tile ah 1`] = `
 <Link>
   <Image
     style={
@@ -2238,7 +2191,7 @@ exports[`42. tile ah 1`] = `
 </Link>
 `;
 
-exports[`43. tile ai 1`] = `
+exports[`42. tile ai 1`] = `
 <Link>
   <Image
     style={
