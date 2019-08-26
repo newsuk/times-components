@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.15.47](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.15.46...@times-components/ios-app@0.15.47) (2019-08-26)
+
+
+### Bug Fixes
+
+* metro config updated for ios-app ([#2223](https://github.com/newsuk/times-components/issues/2223)) ([89584ec](https://github.com/newsuk/times-components/commit/89584ec))
+
+
+
+
+
 ## [0.15.46](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.15.45...@times-components/ios-app@0.15.46) (2019-08-26)
 
 **Note:** Version bump only for package @times-components/ios-app
