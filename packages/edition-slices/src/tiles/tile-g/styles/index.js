@@ -5,7 +5,7 @@ import {
   editionBreakpoints
 } from "@times-components/styleguide";
 
-const styles = {
+const defaultStyles = {
   container: {
     flex: 1,
     flexDirection: "row",
@@ -33,11 +33,10 @@ const styles = {
 };
 
 const mediumBreakpointStyles = {
-  ...styles,
   container: {
-    ...styles.container,
-    padding: spacing(2),
-    paddingBottom: spacing(3)
+    ...defaultStyles.container,
+    paddingHorizontal: spacing(2),
+    paddingVertical: spacing(3)
   },
   headline: {
     fontFamily: fonts.headline,
@@ -46,5 +45,11 @@ const mediumBreakpointStyles = {
   }
 };
 
+const stylesResolver = {
+  [editionBreakpoints.medium]: mediumBreakpointStyles,
+  [editionBreakpoints.wide]: mediumBreakpointStyles,
+  [editionBreakpoints.huge]: mediumBreakpointStyles
+};
+
 export default breakpoint =>
-  breakpoint === editionBreakpoints.medium ? mediumBreakpointStyles : styles;
+  Object.assign(defaultStyles, stylesResolver[breakpoint] || {});

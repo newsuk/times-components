@@ -1237,8 +1237,9 @@ exports[`29. tile ae 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "padding": 10,
+      "paddingHorizontal": 10,
       "paddingTop": 15,
+      "paddingVertical": 15,
     }
   }
   url="/article/123"
@@ -1510,52 +1511,7 @@ exports[`35. tile an 1`] = `
 </Link>
 `;
 
-exports[`36. tile ap 1`] = `
-<Link
-  linkStyle={
-    Object {
-      "flex": 1,
-      "padding": 10,
-    }
-  }
-  url="/article/123"
->
-  <Image
-    aspectRatio={1}
-    fill={true}
-    resizeMode="cover"
-    rounded={true}
-    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
-  />
-  <View>
-    <View>
-      <ArticleLabel
-        color="#005B8D"
-        isVideo={false}
-        title="label"
-      />
-    </View>
-    <Text
-      accessibilityRole="header"
-      aria-level="3"
-    >
-      This is tile headline
-    </Text>
-    <ArticleFlags
-      flags={
-        Array [
-          Object {
-            "expiryTime": "2030-03-14T12:00:00.000Z",
-            "type": "EXCLUSIVE",
-          },
-        ]
-      }
-    />
-  </View>
-</Link>
-`;
-
-exports[`37. tile ad 1`] = `
+exports[`36. tile ad 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1599,7 +1555,7 @@ exports[`37. tile ad 1`] = `
 </Link>
 `;
 
-exports[`38. tile ac 1`] = `
+exports[`37. tile ac 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1642,7 +1598,7 @@ exports[`38. tile ac 1`] = `
 </Link>
 `;
 
-exports[`39. tile aa 1`] = `
+exports[`38. tile aa 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1685,7 +1641,7 @@ exports[`39. tile aa 1`] = `
 </Link>
 `;
 
-exports[`40. tile ar 1`] = `
+exports[`39. tile ar 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1744,7 +1700,7 @@ exports[`40. tile ar 1`] = `
 </Link>
 `;
 
-exports[`41. tile as 1`] = `
+exports[`40. tile as 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1797,7 +1753,7 @@ exports[`41. tile as 1`] = `
 </Link>
 `;
 
-exports[`42. tile ah 1`] = `
+exports[`41. tile ah 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1850,7 +1806,7 @@ exports[`42. tile ah 1`] = `
 </Link>
 `;
 
-exports[`43. tile ai 1`] = `
+exports[`42. tile ai 1`] = `
 <Link
   linkStyle={
     Object {

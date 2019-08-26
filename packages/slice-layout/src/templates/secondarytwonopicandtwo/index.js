@@ -3,7 +3,7 @@ import { View } from "react-native";
 import { editionBreakpoints } from "@times-components/styleguide";
 import propTypes from "./proptypes";
 import styleFactory from "./styles";
-import { ItemColSeparator, ItemRowSeparator } from "../shared";
+import { ItemRowSeparator } from "../shared";
 import VerticalLayout from "../verticallayout";
 import HorizontalLayout from "../horizontallayout";
 
@@ -22,45 +22,25 @@ const SecondaryTwoNoPicAndTwoSlice = ({
     );
   }
 
-  if (breakpoint === editionBreakpoints.medium) {
-    return (
-      <View style={styles.container}>
-        <HorizontalLayout
-          containerStyle={styles.itemContainer}
-          tiles={[
-            { style: styles.item, tile: secondary1 },
-            { style: styles.item, tile: secondary2 }
-          ]}
-          colSeparatorStyle={styles.secondaryColSeparator}
-        />
-        <ItemRowSeparator />
-        <HorizontalLayout
-          containerStyle={styles.itemContainer}
-          tiles={[
-            { style: styles.item, tile: support1 },
-            { style: styles.item, tile: support2 }
-          ]}
-          colSeparatorStyle={styles.supportColSeparator}
-        />
-      </View>
-    );
-  }
-
   return (
     <View style={styles.container}>
-      <VerticalLayout
-        style={styles.secondaryItemContainer}
-        tiles={[secondary1]}
+      <HorizontalLayout
+        containerStyle={styles.itemContainer}
+        tiles={[
+          { style: styles.item, tile: secondary1 },
+          { style: styles.item, tile: secondary2 }
+        ]}
+        colSeparatorStyle={styles.secondaryColSeparator}
       />
-      <ItemColSeparator />
-      <VerticalLayout style={styles.supportItemContainer} tiles={[support1]} />
-      <ItemColSeparator />
-      <VerticalLayout
-        style={styles.secondaryItemContainer}
-        tiles={[secondary2]}
+      <ItemRowSeparator />
+      <HorizontalLayout
+        containerStyle={styles.itemContainer}
+        tiles={[
+          { style: styles.item, tile: support1 },
+          { style: styles.item, tile: support2 }
+        ]}
+        colSeparatorStyle={styles.supportColSeparator}
       />
-      <ItemColSeparator />
-      <VerticalLayout style={styles.supportItemContainer} tiles={[support2]} />
     </View>
   );
 };

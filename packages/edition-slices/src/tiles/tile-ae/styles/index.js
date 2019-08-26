@@ -3,7 +3,8 @@ import { fonts, spacing } from "@times-components/styleguide";
 const styles = {
   container: {
     flex: 1,
-    padding: spacing(2),
+    paddingHorizontal: spacing(2),
+    paddingVertical: spacing(3),
     paddingTop: spacing(3)
   },
   headline: {
