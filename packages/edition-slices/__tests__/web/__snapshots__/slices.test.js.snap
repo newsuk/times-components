@@ -547,13 +547,15 @@ exports[`13. list two and six no pic 1`] = `
 <div>
   <div>
     <div>
-      <TileC
+      <TileAS
+        breakpoint="wide"
         tileName="lead1"
       />
     </div>
     <div />
     <div>
-      <TileC
+      <TileAS
+        breakpoint="wide"
         tileName="lead2"
       />
     </div>
@@ -562,12 +564,14 @@ exports[`13. list two and six no pic 1`] = `
       <div>
         <div>
           <TileL
+            breakpoint="wide"
             tileName="support1"
           />
         </div>
         <div />
         <div>
           <TileL
+            breakpoint="wide"
             tileName="support2"
           />
         </div>
@@ -576,12 +580,14 @@ exports[`13. list two and six no pic 1`] = `
       <div>
         <div>
           <TileL
+            breakpoint="wide"
             tileName="support3"
           />
         </div>
         <div />
         <div>
           <TileL
+            breakpoint="wide"
             tileName="support4"
           />
         </div>
@@ -590,12 +596,14 @@ exports[`13. list two and six no pic 1`] = `
       <div>
         <div>
           <TileL
+            breakpoint="wide"
             tileName="support5"
           />
         </div>
         <div />
         <div>
           <TileL
+            breakpoint="wide"
             tileName="support6"
           />
         </div>

@@ -71,8 +71,22 @@ class ListTwoAndSixNoPicSlice extends Component {
     return (
       <ListTwoAndSixNoPic
         breakpoint={breakpoint}
-        lead1={<TileAS onPress={onPress} tile={lead1} tileName="lead1" />}
-        lead2={<TileAS onPress={onPress} tile={lead2} tileName="lead2" />}
+        lead1={
+          <TileAS
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={lead1}
+            tileName="lead1"
+          />
+        }
+        lead2={
+          <TileAS
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={lead2}
+            tileName="lead2"
+          />
+        }
         support1={
           <TileL
             breakpoint={breakpoint}
@@ -128,7 +142,7 @@ class ListTwoAndSixNoPicSlice extends Component {
   render() {
     return (
       <ResponsiveSlice
-        renderWide={this.renderSlice}
+        renderWide={this.renderMedium}
         renderMedium={this.renderMedium}
         renderSmall={this.renderSlice}
       />
