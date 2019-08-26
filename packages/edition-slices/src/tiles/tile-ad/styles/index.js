@@ -24,8 +24,7 @@ const styles = {
     marginBottom: 0
   },
   summaryContainer: {
-    width: "100%",
-    paddingLeft: spacing(2)
+    width: "100%"
   }
 };
 

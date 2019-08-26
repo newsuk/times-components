@@ -5,7 +5,7 @@ const defaultBreakpointStyles =  {
     flex: 1,
     flexDirection: "row",
     marginHorizontal: spacing(4),
-    paddingVertical: spacing(3)
+    paddingVertical: spacing(1)
   },
   leadContainer: {
     width: "60%"
@@ -19,7 +19,6 @@ const wideBreakpointStyles = {
   container: {
     ...defaultBreakpointStyles.container,
     marginHorizontal: spacing(2),
-    paddingVertical: spacing(3)
   },
   leadContainer: {
     ...defaultBreakpointStyles.leadContainer

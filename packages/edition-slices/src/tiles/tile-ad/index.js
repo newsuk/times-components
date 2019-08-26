@@ -1,24 +1,27 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { editionBreakpoints } from "@times-components/styleguide";
 import {
-  getTileImage,
   TileLink,
   TileSummary,
-  withTileTracking
+  withTileTracking,
+  getTileSummary
 } from "../shared";
 import styles from "./styles";
+import WithoutWhiteSpace from "../shared/without-white-space";
 
 const TileAD = ({ onPress, tile}) => {
-
-
   return (
     <TileLink onPress={onPress} style={styles.container} tile={tile}>
-      <TileSummary
-        headlineStyle={styles.headline}
-        style={styles.summaryContainer}
-        tile={tile}
-      />
+      <WithoutWhiteSpace style={styles.summaryContainer} render={
+        whiteSpaceHeight =>
+        <TileSummary
+            headlineStyle={styles.headline}
+            summary={getTileSummary(tile, 125)}
+            tile={tile}
+            whiteSpaceHeight={whiteSpaceHeight}
+            linesOfTeaserToRender={2}
+          />
+      }/>
     </TileLink>
   );
 };
