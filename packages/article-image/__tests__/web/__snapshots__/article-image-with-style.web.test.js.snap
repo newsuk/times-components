@@ -219,67 +219,25 @@ exports[`3. mobile fullwidth image with caption and credits 1`] = `
   z-index: 2;
 }
 
-Array [
-  <div
-    className="css-view-1dbjc4n"
-  >
-    <TimesImage
-      accessibilityLabel="Some caption"
-      aspectRatio={1.25}
-      caption={
-        <Caption
-          credits="Some credits"
-          text="Some caption"
-        />
-      }
-      disablePlaceholder={false}
-      fadeImageIn={false}
-      highResSize={null}
-      lowResSize={null}
-      onImagePress={null}
-      rounded={false}
-      uri="https://img/someImage"
-    />
-  </div>,
-  <div
-    className="css-view-1dbjc4n r-alignSelf-1kihuf0 r-maxWidth-1cmskyw"
-  >
-    <CentredCaption
-      credits="Some credits"
-      text="Some caption"
-    >
-      <div
-        className="css-view-1dbjc4n"
-      >
-        <div
-          className="css-view-1dbjc4n r-paddingTop-m611by"
-        >
-          <div
-            className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
-          >
-            Some caption
-          </div>
-          <div
-            className="css-text-901oao r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
-          >
-            SOME CREDITS
-          </div>
-        </div>
-      </div>
-    </CentredCaption>
-  </div>,
-]
-`;
+.c1 {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: auto;
+  text-align: center;
+}
 
-exports[`4. tablet fullwidth image with caption and credits 1`] = `
-.c0 {
-  display: block;
-  opacity: 0;
-  position: absolute;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
-  width: 100%;
-  z-index: 2;
+@media (min-width:768px) {
+  .c1 {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c1 {
+    width: 56.2%;
+  }
 }
 
 Array [
@@ -304,33 +262,189 @@ Array [
       uri="https://img/someImage"
     />
   </div>,
-  <div
-    className="css-view-1dbjc4n r-alignSelf-1kihuf0 r-maxWidth-1cmskyw"
+  <FullWidthCaptionWeb
+    credits="Some credits"
+    text="Some caption"
   >
-    <CentredCaption
-      credits="Some credits"
-      text="Some caption"
-    >
-      <div
-        className="css-view-1dbjc4n"
+    <responsiveweb__FullWidthCaptionContainer>
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "responsiveweb__FullWidthCaptionContainer-sc-1gt1h9z-3",
+              "isStatic": true,
+              "lastClassName": "c1",
+              "rules": Array [
+                "padding-left:",
+                "10px",
+                ";padding-right:",
+                "10px",
+                ";margin:auto;text-align:center;@media (min-width:",
+                "768",
+                "px){padding-left:0px;padding-right:0px;width:80.8%;}@media (min-width:",
+                "1024",
+                "px){width:56.2%;}",
+              ],
+            },
+            "displayName": "responsiveweb__FullWidthCaptionContainer",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "responsiveweb__FullWidthCaptionContainer-sc-1gt1h9z-3",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
       >
         <div
-          className="css-view-1dbjc4n r-paddingTop-m611by"
+          className="c1"
         >
           <div
-            className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+            className="css-view-1dbjc4n"
           >
-            Some caption
-          </div>
-          <div
-            className="css-text-901oao r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
-          >
-            SOME CREDITS
+            <div
+              className="css-view-1dbjc4n r-paddingTop-m611by"
+            >
+              <div
+                className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+              >
+                Some caption
+              </div>
+              <div
+                className="css-text-901oao r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
+              >
+                SOME CREDITS
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </CentredCaption>
+      </StyledComponent>
+    </responsiveweb__FullWidthCaptionContainer>
+  </FullWidthCaptionWeb>,
+]
+`;
+
+exports[`4. tablet fullwidth image with caption and credits 1`] = `
+.c0 {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  width: 100%;
+  z-index: 2;
+}
+
+.c1 {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: auto;
+  text-align: center;
+}
+
+@media (min-width:768px) {
+  .c1 {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c1 {
+    width: 56.2%;
+  }
+}
+
+Array [
+  <div
+    className="css-view-1dbjc4n"
+  >
+    <TimesImage
+      accessibilityLabel="Some caption"
+      aspectRatio={1.25}
+      caption={
+        <Caption
+          credits="Some credits"
+          text="Some caption"
+        />
+      }
+      disablePlaceholder={false}
+      fadeImageIn={false}
+      highResSize={null}
+      lowResSize={null}
+      onImagePress={null}
+      rounded={false}
+      uri="https://img/someImage"
+    />
   </div>,
+  <FullWidthCaptionWeb
+    credits="Some credits"
+    text="Some caption"
+  >
+    <responsiveweb__FullWidthCaptionContainer>
+      <StyledComponent
+        forwardedComponent={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "responsiveweb__FullWidthCaptionContainer-sc-1gt1h9z-3",
+              "isStatic": true,
+              "lastClassName": "c1",
+              "rules": Array [
+                "padding-left:",
+                "10px",
+                ";padding-right:",
+                "10px",
+                ";margin:auto;text-align:center;@media (min-width:",
+                "768",
+                "px){padding-left:0px;padding-right:0px;width:80.8%;}@media (min-width:",
+                "1024",
+                "px){width:56.2%;}",
+              ],
+            },
+            "displayName": "responsiveweb__FullWidthCaptionContainer",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "responsiveweb__FullWidthCaptionContainer-sc-1gt1h9z-3",
+            "target": "div",
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+          }
+        }
+        forwardedRef={null}
+      >
+        <div
+          className="c1"
+        >
+          <div
+            className="css-view-1dbjc4n"
+          >
+            <div
+              className="css-view-1dbjc4n r-paddingTop-m611by"
+            >
+              <div
+                className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0"
+              >
+                Some caption
+              </div>
+              <div
+                className="css-text-901oao r-color-1khnkhu r-fontFamily-j2s0nr r-fontSize-qqjak8 r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-5fcqz0"
+              >
+                SOME CREDITS
+              </div>
+            </div>
+          </div>
+        </div>
+      </StyledComponent>
+    </responsiveweb__FullWidthCaptionContainer>
+  </FullWidthCaptionWeb>,
 ]
 `;
 
