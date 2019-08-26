@@ -60,7 +60,12 @@ describe("Jest Configurator Tests", () => {
 
     it("should have the correct module name extensions", () => {
       const config = jestConfigurator("web", dir);
-      expect(config.moduleFileExtensions).toEqual(["web.js", "js", "json"]);
+      expect(config.moduleFileExtensions).toEqual([
+        "graphql",
+        "web.js",
+        "js",
+        "json"
+      ]);
     });
   });
 
