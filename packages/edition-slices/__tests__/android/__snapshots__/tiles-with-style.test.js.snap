@@ -1259,9 +1259,8 @@ exports[`24. tile w 1`] = `
     style={
       Object {
         "flex": 1,
-        "paddingBottom": 5,
         "paddingRight": 20,
-        "width": "33.33%",
+        "width": "51.5%",
       }
     }
   >
@@ -1288,10 +1287,10 @@ exports[`24. tile w 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesModern-Bold",
-                "fontSize": 35,
+                "fontSize": 30,
                 "fontWeight": "400",
-                "lineHeight": 35,
-                "marginBottom": 5,
+                "lineHeight": 30,
+                "marginBottom": 10,
               }
             }
           >
@@ -1305,7 +1304,7 @@ exports[`24. tile w 1`] = `
   <Image
     style={
       Object {
-        "width": "66.66%",
+        "width": "48.5%",
       }
     }
   />
