@@ -9,7 +9,7 @@ const headlineFontSize = {
   [editionBreakpoints.wide]: 20
 };
 
-export default breakpont => ({
+export default breakpoint => ({
   container: {
     flex: 1,
     paddingVertical: spacing(2),
@@ -17,8 +17,8 @@ export default breakpont => ({
   },
   headline: {
     fontFamily: fonts.headline,
-    fontSize: headlineFontSize[breakpont],
-    lineHeight: headlineFontSize[breakpont]
+    fontSize: headlineFontSize[breakpoint],
+    lineHeight: headlineFontSize[breakpoint]
   },
   summaryContainer: {
     flex: 1
