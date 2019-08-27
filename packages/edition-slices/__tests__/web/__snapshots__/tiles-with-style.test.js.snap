@@ -1470,7 +1470,7 @@ exports[`18. tile r 1`] = `
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
 }
 
 .IS1 {
@@ -1496,13 +1496,14 @@ exports[`18. tile r 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "padding": "10px",
+      "paddingHorizontal": "30px",
+      "paddingVertical": "15px",
     }
   }
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS2"
+    className="css-view-1dbjc4n r-paddingBottom-1mi0q7o IS2"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
@@ -1515,7 +1516,7 @@ exports[`18. tile r 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS1 S2"
       role="heading"
     >
       This is tile headline
