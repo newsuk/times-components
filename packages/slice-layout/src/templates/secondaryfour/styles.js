@@ -10,7 +10,7 @@ const smallBreakpointStyles = {
   }
 };
 
-const mediumBreakpointStyles = {
+const defaultBreakpointStyles = {
   container: {
     flex: 1,
     flexDirection: "row",
@@ -32,19 +32,16 @@ const mediumBreakpointStyles = {
 };
 
 const wideBreakpointStyles = {
+  ...defaultBreakpointStyles,
   container: {
-    flexDirection: "row",
+    ...defaultBreakpointStyles.container,
     marginHorizontal: spacing(2)
-  },
-  item: {
-    flex: 1,
-    width: "25%"
   }
 };
 
 const stylesResolver = {
   [editionBreakpoints.small]: smallBreakpointStyles,
-  [editionBreakpoints.medium]: mediumBreakpointStyles,
+  [editionBreakpoints.medium]: defaultBreakpointStyles,
   [editionBreakpoints.wide]: wideBreakpointStyles,
   [editionBreakpoints.huge]: wideBreakpointStyles
 };
