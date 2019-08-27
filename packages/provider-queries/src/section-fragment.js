@@ -133,9 +133,7 @@ export default gql`
             listingAsset {
               ...listingAsset169
             }
-            summary125: summary(maxCharCount: 125)
           }
-          teaser125: teaser(maxCharCount: 125)
         }
         support1 {
           headline
@@ -150,7 +148,9 @@ export default gql`
             listingAsset {
               ...listingAsset32
             }
+            summary125: summary(maxCharCount: 125)
           }
+          teaser125: teaser(maxCharCount: 125)
         }
         support2 {
           headline
@@ -165,7 +165,9 @@ export default gql`
             listingAsset {
               ...listingAsset32
             }
+            summary125: summary(maxCharCount: 125)
           }
+          teaser125: teaser(maxCharCount: 125)
         }
         support3 {
           headline
@@ -180,7 +182,9 @@ export default gql`
             listingAsset {
               ...listingAsset32
             }
+            summary125: summary(maxCharCount: 125)
           }
+          teaser125: teaser(maxCharCount: 125)
         }
         support4 {
           headline
@@ -195,7 +199,9 @@ export default gql`
             listingAsset {
               ...listingAsset32
             }
+            summary125: summary(maxCharCount: 125)
           }
+          teaser125: teaser(maxCharCount: 125)
         }
       }
       ... on LeadOneAndOneSlice {
@@ -803,9 +809,7 @@ export default gql`
             listingAsset {
               ...listingAsset169
             }
-            summary125: summary(maxCharCount: 125)
           }
-          teaser125: teaser(maxCharCount: 125)
         }
         support1 {
           headline
@@ -820,7 +824,9 @@ export default gql`
             listingAsset {
               ...listingAsset32
             }
+            summary125: summary(maxCharCount: 125)
           }
+          teaser125: teaser(maxCharCount: 125)
         }
         support2 {
           headline
@@ -835,7 +841,9 @@ export default gql`
             listingAsset {
               ...listingAsset32
             }
+            summary125: summary(maxCharCount: 125)
           }
+          teaser125: teaser(maxCharCount: 125)
         }
         support3 {
           headline
@@ -850,7 +858,9 @@ export default gql`
             listingAsset {
               ...listingAsset32
             }
+            summary125: summary(maxCharCount: 125)
           }
+          teaser125: teaser(maxCharCount: 125)
         }
         support4 {
           headline
@@ -865,7 +875,9 @@ export default gql`
             listingAsset {
               ...listingAsset32
             }
+            summary125: summary(maxCharCount: 125)
           }
+          teaser125: teaser(maxCharCount: 125)
         }
       }
       ... on LeadOneAndOneSlice {

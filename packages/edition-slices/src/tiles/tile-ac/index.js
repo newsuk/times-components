@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { editionBreakpoints } from "@times-components/styleguide";
 import Image from "@times-components/image";
 import {
   getTileImage,
@@ -42,6 +41,5 @@ TileAC.propTypes = {
   tile: PropTypes.shape({}).isRequired,
   breakpoint: PropTypes.string.isRequired
 };
-
 
 export default withTileTracking(TileAC);

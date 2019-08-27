@@ -6,7 +6,6 @@ import { ItemColSeparator } from "../shared";
 import VerticalLayout from "../verticallayout";
 import stylesFactory from "./styles";
 
-
 const leadOneAndFourSlice = ({
   breakpoint,
   lead,

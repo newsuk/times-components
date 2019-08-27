@@ -9,27 +9,25 @@ import {
 import styles from "./styles";
 import WithoutWhiteSpace from "../shared/without-white-space";
 
-const TileAD = ({ onPress, tile}) => {
-  return (
-    <TileLink onPress={onPress} style={styles.container} tile={tile}>
-      <WithoutWhiteSpace style={styles.summaryContainer} render={
-        whiteSpaceHeight =>
+const TileAD = ({ onPress, tile }) => (
+  <TileLink onPress={onPress} style={styles.container} tile={tile}>
+    <WithoutWhiteSpace
+      style={styles.summaryContainer}
+      render={whiteSpaceHeight => (
         <TileSummary
-            headlineStyle={styles.headline}
-            summary={getTileSummary(tile, 125)}
-            tile={tile}
-            whiteSpaceHeight={whiteSpaceHeight}
-            linesOfTeaserToRender={2}
-          />
-      }/>
-    </TileLink>
-  );
-};
+          headlineStyle={styles.headline}
+          summary={getTileSummary(tile, 125)}
+          tile={tile}
+          whiteSpaceHeight={whiteSpaceHeight}
+        />
+      )}
+    />
+  </TileLink>
+);
 
 TileAD.propTypes = {
   onPress: PropTypes.func.isRequired,
   tile: PropTypes.shape({}).isRequired
 };
-
 
 export default withTileTracking(TileAD);

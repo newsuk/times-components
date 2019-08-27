@@ -1467,8 +1467,8 @@ exports[`12. lead one and four slice - medium 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
   -ms-flex-positive: 1;
@@ -1511,28 +1511,24 @@ exports[`12. lead one and four slice - medium 1`] = `
       className="css-view-1dbjc4n IS6"
     >
       <TileAD
-        breakpoint="wide"
         tileName="support1"
       />
       <div
         className="css-view-1dbjc4n IS3"
       />
       <TileAD
-        breakpoint="wide"
         tileName="support2"
       />
       <div
         className="css-view-1dbjc4n IS4"
       />
       <TileAD
-        breakpoint="wide"
         tileName="support3"
       />
       <div
         className="css-view-1dbjc4n IS5"
       />
       <TileAD
-        breakpoint="wide"
         tileName="support4"
       />
     </div>
@@ -3407,8 +3403,8 @@ exports[`27. lead one and four slice - wide 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
   -ms-flex-positive: 1;
@@ -3451,28 +3447,24 @@ exports[`27. lead one and four slice - wide 1`] = `
       className="css-view-1dbjc4n IS6"
     >
       <TileAD
-        breakpoint="wide"
         tileName="support1"
       />
       <div
         className="css-view-1dbjc4n IS3"
       />
       <TileAD
-        breakpoint="wide"
         tileName="support2"
       />
       <div
         className="css-view-1dbjc4n IS4"
       />
       <TileAD
-        breakpoint="wide"
         tileName="support3"
       />
       <div
         className="css-view-1dbjc4n IS5"
       />
       <TileAD
-        breakpoint="wide"
         tileName="support4"
       />
     </div>
@@ -5347,8 +5339,8 @@ exports[`42. lead one and four slice - huge 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
   -ms-flex-positive: 1;
@@ -5391,28 +5383,24 @@ exports[`42. lead one and four slice - huge 1`] = `
       className="css-view-1dbjc4n IS6"
     >
       <TileAD
-        breakpoint="wide"
         tileName="support1"
       />
       <div
         className="css-view-1dbjc4n IS3"
       />
       <TileAD
-        breakpoint="wide"
         tileName="support2"
       />
       <div
         className="css-view-1dbjc4n IS4"
       />
       <TileAD
-        breakpoint="wide"
         tileName="support3"
       />
       <div
         className="css-view-1dbjc4n IS5"
       />
       <TileAD
-        breakpoint="wide"
         tileName="support4"
       />
     </div>

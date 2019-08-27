@@ -6,10 +6,11 @@ import {
 } from "@times-components/styleguide";
 
 const paddingVertical = {
+  [editionBreakpoints.small]: spacing(3),
   [editionBreakpoints.medium]: spacing(3),
   [editionBreakpoints.wide]: spacing(6),
-  [editionBreakpoints.huge]: spacing(6),
-}
+  [editionBreakpoints.huge]: spacing(6)
+};
 
 export default breakpont => ({
   container: {

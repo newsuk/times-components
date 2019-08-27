@@ -1,15 +1,4 @@
-import {
-  fonts,
-  spacing,
-  editionBreakpoints
-} from "@times-components/styleguide";
-
-const headlineFontSizeResolver = {
-  [editionBreakpoints.huge]: 22,
-  [editionBreakpoints.wide]: 22,
-  [editionBreakpoints.small]: 20,
-  [editionBreakpoints.medium]: 20
-};
+import { fonts, spacing } from "@times-components/styleguide";
 
 const styles = {
   container: {
@@ -28,4 +17,4 @@ const styles = {
   }
 };
 
-export default styles
+export default styles;
