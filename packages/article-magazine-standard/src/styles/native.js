@@ -1,5 +1,5 @@
+import { spacing } from "@times-components/styleguide";
 import sharedStyles from "./shared";
-import { spacing } from "@times-components/styleguide"
 
 const nativeStyles = {
   ...sharedStyles,
