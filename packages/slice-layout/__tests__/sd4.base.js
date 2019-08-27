@@ -42,7 +42,7 @@ export default renderComponent => {
       test() {
         const output = renderComponent(
           <SecondaryFourSlice
-           breakpoint={editionBreakpoints.wide}
+            breakpoint={editionBreakpoints.wide}
             secondary1={createItem("secondary-1")}
             secondary2={createItem("secondary-2")}
             secondary3={createItem("secondary-3")}
