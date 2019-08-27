@@ -2768,7 +2768,8 @@ exports[`13. list two and six no pic 1`] = `
     <div
       className="css-view-1dbjc4n IS1"
     >
-      <TileC
+      <TileAS
+        breakpoint="wide"
         tileName="lead1"
       />
     </div>
@@ -2778,7 +2779,8 @@ exports[`13. list two and six no pic 1`] = `
     <div
       className="css-view-1dbjc4n IS3"
     >
-      <TileC
+      <TileAS
+        breakpoint="wide"
         tileName="lead2"
       />
     </div>
@@ -2795,6 +2797,7 @@ exports[`13. list two and six no pic 1`] = `
           className="css-view-1dbjc4n IS5"
         >
           <TileL
+            breakpoint="wide"
             tileName="support1"
           />
         </div>
@@ -2805,6 +2808,7 @@ exports[`13. list two and six no pic 1`] = `
           className="css-view-1dbjc4n IS7"
         >
           <TileL
+            breakpoint="wide"
             tileName="support2"
           />
         </div>
@@ -2819,6 +2823,7 @@ exports[`13. list two and six no pic 1`] = `
           className="css-view-1dbjc4n IS10"
         >
           <TileL
+            breakpoint="wide"
             tileName="support3"
           />
         </div>
@@ -2829,6 +2834,7 @@ exports[`13. list two and six no pic 1`] = `
           className="css-view-1dbjc4n IS12"
         >
           <TileL
+            breakpoint="wide"
             tileName="support4"
           />
         </div>
@@ -2843,6 +2849,7 @@ exports[`13. list two and six no pic 1`] = `
           className="css-view-1dbjc4n IS15"
         >
           <TileL
+            breakpoint="wide"
             tileName="support5"
           />
         </div>
@@ -2853,6 +2860,7 @@ exports[`13. list two and six no pic 1`] = `
           className="css-view-1dbjc4n IS17"
         >
           <TileL
+            breakpoint="wide"
             tileName="support6"
           />
         </div>

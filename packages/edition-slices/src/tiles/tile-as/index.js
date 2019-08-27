@@ -9,10 +9,11 @@ import {
   TileSummary,
   withTileTracking
 } from "../shared";
-import styles from "./styles";
+import stylesFactory from "./styles";
 
-const TileAS = ({ onPress, tile }) => {
+const TileAS = ({ onPress, tile, breakpoint }) => {
   const crop = getTileImage(tile, "crop32");
+  const styles = stylesFactory(breakpoint);
 
   return (
     <TileLink onPress={onPress} style={styles.container} tile={tile}>
@@ -39,7 +40,8 @@ const TileAS = ({ onPress, tile }) => {
 
 TileAS.propTypes = {
   onPress: PropTypes.func.isRequired,
-  tile: PropTypes.shape({}).isRequired
+  tile: PropTypes.shape({}).isRequired,
+  breakpoint: PropTypes.string.isRequired
 };
 
 export default withTileTracking(TileAS);
