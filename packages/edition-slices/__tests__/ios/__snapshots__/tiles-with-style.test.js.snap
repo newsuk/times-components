@@ -880,6 +880,7 @@ exports[`18. tile r 1`] = `
     style={
       Object {
         "flex": 1,
+        "paddingBottom": 10,
       }
     }
   >
@@ -900,7 +901,7 @@ exports[`18. tile r 1`] = `
           "fontSize": 40,
           "fontWeight": "900",
           "lineHeight": 40,
-          "marginBottom": 5,
+          "marginBottom": 0,
         }
       }
     >
