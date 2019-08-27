@@ -133,7 +133,9 @@ export default gql`
             listingAsset {
               ...listingAsset169
             }
+            summary125: summary(maxCharCount: 125)
           }
+          teaser125: teaser(maxCharCount: 125)
         }
         support1 {
           headline
@@ -801,7 +803,9 @@ export default gql`
             listingAsset {
               ...listingAsset169
             }
+            summary125: summary(maxCharCount: 125)
           }
+          teaser125: teaser(maxCharCount: 125)
         }
         support1 {
           headline
