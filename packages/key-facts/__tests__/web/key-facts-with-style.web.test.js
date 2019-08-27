@@ -69,3 +69,4 @@ it("key facts with title and context theme", () => {
 
 // eslint-disable-next-line global-require
 require("jest-styled-components");
+require("@times-components/responsive-styled-components-native/serializer");

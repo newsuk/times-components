@@ -8,10 +8,4 @@ export function markup(Component) {
   return Component;
 }
 
-export function withoutSecretProps(props) {
-  return props;
-}
-
-export function isSecretProp() {
-  return false;
-}
+export const serializer = null;
