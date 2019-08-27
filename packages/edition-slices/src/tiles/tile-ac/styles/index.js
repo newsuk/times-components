@@ -1,10 +1,17 @@
 import {
   colours,
   fonts,
-  spacing
+  spacing,
+  editionBreakpoints
 } from "@times-components/styleguide";
 
-const styles = {
+const paddingVertical = {
+  [editionBreakpoints.medium]: spacing(3),
+  [editionBreakpoints.wide]: spacing(6),
+  [editionBreakpoints.huge]: spacing(6),
+}
+
+export default breakpont => ({
   container: {
     flex: 1,
     padding: spacing(2)
@@ -26,8 +33,6 @@ const styles = {
     justifyContent: "center",
     backgroundColor: colours.functional.border,
     paddingHorizontal: spacing(4),
-    paddingVertical: spacing(3)
+    paddingVertical: paddingVertical[breakpont]
   }
-};
-
-export default styles;
+});

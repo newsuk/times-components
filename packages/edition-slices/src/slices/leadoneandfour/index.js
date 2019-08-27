@@ -51,6 +51,7 @@ class LeadOneAndFour extends Component {
             onPress={onPress}
             tile={lead}
             tileName="lead"
+            breakpoint={breakpoint}
           />
         }
         support1={
