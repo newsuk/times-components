@@ -1,4 +1,5 @@
 import {
+  colours,
   fonts,
   spacing,
   editionBreakpoints
@@ -18,6 +19,7 @@ const mediumBreakpointStyles = {
   },
   strapline: {
     fontFamily: fonts.headlineRegular,
+    color: colours.functional.primary,
     fontSize: 24,
     lineHeight: 26
   }

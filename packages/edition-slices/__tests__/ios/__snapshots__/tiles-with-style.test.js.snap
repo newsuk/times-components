@@ -1353,7 +1353,7 @@ exports[`25. tile x 1`] = `
         <Text
           style={
             Object {
-              "color": "#696969",
+              "color": "#333333",
               "fontFamily": "TimesModern-Regular",
               "fontSize": 24,
               "lineHeight": 26,
