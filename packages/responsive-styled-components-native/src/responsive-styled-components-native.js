@@ -73,7 +73,7 @@ function responsiveStyled(Type) {
 responsiveStyled.View = responsiveStyled(View);
 responsiveStyled.Text = responsiveStyled(Text);
 
-export { css, serialise };
+export { css };
 export { default as mediaQuery } from "./media-query";
 
 export default responsiveStyled;

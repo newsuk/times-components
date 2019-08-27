@@ -1,8 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`key facts with title 1`] = `
+.nc0 {
+  margin-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
 @media (min-width:768px) {
-  .m0 {
+  .nc0 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -17,20 +24,20 @@ exports[`key facts with title 1`] = `
 }
 
 @media (min-width:1024px) {
-  .m0 {
+  .nc0 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .m1 {
+  .nc1 {
     padding-right: 20px;
     width: 20%;
   }
 }
 
 @media (min-width:768px) {
-  .m2 {
+  .nc2 {
     width: 80%;
   }
 }
@@ -78,8 +85,15 @@ exports[`key facts with title 1`] = `
 `;
 
 exports[`key facts with title and context theme 1`] = `
+.nc0 {
+  margin-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
 @media (min-width:768px) {
-  .m0 {
+  .nc0 {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -94,20 +108,20 @@ exports[`key facts with title and context theme 1`] = `
 }
 
 @media (min-width:1024px) {
-  .m0 {
+  .nc0 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .m1 {
+  .nc1 {
     padding-right: 20px;
     width: 20%;
   }
 }
 
 @media (min-width:768px) {
-  .m2 {
+  .nc2 {
     width: 80%;
   }
 }
