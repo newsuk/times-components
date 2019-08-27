@@ -1796,6 +1796,7 @@ exports[`24. secondary four - wide 1`] = `
   <View
     style={
       Object {
+        "flex": 1,
         "flexDirection": "row",
         "marginHorizontal": 10,
       }
@@ -1804,12 +1805,39 @@ exports[`24. secondary four - wide 1`] = `
     <View
       style={
         Object {
-          "flex": 1,
-          "width": "25%",
+          "flex": 2,
+          "flexDirection": "row",
         }
       }
     >
-      <TileC />
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <TileAR />
+      </View>
+      <View
+        style={
+          Object {
+            "borderColor": "#DBDBDB",
+            "borderRightWidth": 1,
+            "borderStyle": "solid",
+            "marginVertical": 15,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <TileAR />
+      </View>
     </View>
     <View
       style={
@@ -1817,7 +1845,7 @@ exports[`24. secondary four - wide 1`] = `
           "borderColor": "#DBDBDB",
           "borderRightWidth": 1,
           "borderStyle": "solid",
-          "marginVertical": 10,
+          "marginVertical": 15,
         }
       }
     />
@@ -1825,51 +1853,21 @@ exports[`24. secondary four - wide 1`] = `
       style={
         Object {
           "flex": 1,
-          "width": "25%",
         }
       }
     >
-      <TileC />
-    </View>
-    <View
-      style={
-        Object {
-          "borderColor": "#DBDBDB",
-          "borderRightWidth": 1,
-          "borderStyle": "solid",
-          "marginVertical": 10,
+      <TileB />
+      <View
+        style={
+          Object {
+            "borderBottomWidth": 1,
+            "borderColor": "#DBDBDB",
+            "borderStyle": "solid",
+            "marginHorizontal": 10,
+          }
         }
-      }
-    />
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "width": "25%",
-        }
-      }
-    >
-      <TileC />
-    </View>
-    <View
-      style={
-        Object {
-          "borderColor": "#DBDBDB",
-          "borderRightWidth": 1,
-          "borderStyle": "solid",
-          "marginVertical": 10,
-        }
-      }
-    />
-    <View
-      style={
-        Object {
-          "flex": 1,
-          "width": "25%",
-        }
-      }
-    >
-      <TileC />
+      />
+      <TileB />
     </View>
   </View>
 </View>
@@ -3048,6 +3046,7 @@ exports[`39. secondary four - huge 1`] = `
     <View
       style={
         Object {
+          "flex": 1,
           "flexDirection": "row",
           "marginHorizontal": 10,
         }
@@ -3056,12 +3055,39 @@ exports[`39. secondary four - huge 1`] = `
       <View
         style={
           Object {
-            "flex": 1,
-            "width": "25%",
+            "flex": 2,
+            "flexDirection": "row",
           }
         }
       >
-        <TileC />
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        >
+          <TileAR />
+        </View>
+        <View
+          style={
+            Object {
+              "borderColor": "#DBDBDB",
+              "borderRightWidth": 1,
+              "borderStyle": "solid",
+              "marginVertical": 15,
+            }
+          }
+        />
+        <View
+          style={
+            Object {
+              "flex": 1,
+            }
+          }
+        >
+          <TileAR />
+        </View>
       </View>
       <View
         style={
@@ -3069,7 +3095,7 @@ exports[`39. secondary four - huge 1`] = `
             "borderColor": "#DBDBDB",
             "borderRightWidth": 1,
             "borderStyle": "solid",
-            "marginVertical": 10,
+            "marginVertical": 15,
           }
         }
       />
@@ -3077,51 +3103,21 @@ exports[`39. secondary four - huge 1`] = `
         style={
           Object {
             "flex": 1,
-            "width": "25%",
           }
         }
       >
-        <TileC />
-      </View>
-      <View
-        style={
-          Object {
-            "borderColor": "#DBDBDB",
-            "borderRightWidth": 1,
-            "borderStyle": "solid",
-            "marginVertical": 10,
+        <TileB />
+        <View
+          style={
+            Object {
+              "borderBottomWidth": 1,
+              "borderColor": "#DBDBDB",
+              "borderStyle": "solid",
+              "marginHorizontal": 10,
+            }
           }
-        }
-      />
-      <View
-        style={
-          Object {
-            "flex": 1,
-            "width": "25%",
-          }
-        }
-      >
-        <TileC />
-      </View>
-      <View
-        style={
-          Object {
-            "borderColor": "#DBDBDB",
-            "borderRightWidth": 1,
-            "borderStyle": "solid",
-            "marginVertical": 10,
-          }
-        }
-      />
-      <View
-        style={
-          Object {
-            "flex": 1,
-            "width": "25%",
-          }
-        }
-      >
-        <TileC />
+        />
+        <TileB />
       </View>
     </View>
   </View>

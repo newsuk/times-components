@@ -399,25 +399,41 @@ exports[`9. secondary four 1`] = `
 <div>
   <div>
     <div>
-      <TileC
-        tileName="secondary1"
-      />
+      <div>
+        <TileAR
+          tileName="secondary1"
+        />
+      </div>
+      <div />
+      <div>
+        <TileAR
+          tileName="secondary2"
+        />
+      </div>
     </div>
     <div />
     <div>
-      <TileC
-        tileName="secondary2"
-      />
-    </div>
-    <div />
-    <div>
-      <TileC
+      <TileB
+        additionalHeadlineStyles={
+          Object {
+            "fontSize": 20,
+            "lineHeight": 20,
+            "marginBottom": "5px",
+          }
+        }
+        breakpoint="wide"
         tileName="secondary3"
       />
-    </div>
-    <div />
-    <div>
-      <TileC
+      <div />
+      <TileB
+        additionalHeadlineStyles={
+          Object {
+            "fontSize": 20,
+            "lineHeight": 20,
+            "marginBottom": "5px",
+          }
+        }
+        breakpoint="wide"
         tileName="secondary4"
       />
     </div>
