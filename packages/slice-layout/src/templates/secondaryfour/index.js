@@ -38,36 +38,22 @@ const SecondaryFourSlice = ({
     );
   }
 
-  if (breakpoint === editionBreakpoints.medium) {
-    return (
-      <View style={styles.container}>
-        <HorizontalLayout
-          containerStyle={styles.columnsContainer}
-          tiles={[
-            { style: styles.columnItem, tile: secondary1 },
-            { style: styles.columnItem, tile: secondary2 }
-          ]}
-          colSeparatorStyle={styles.colSeparatorStyle}
-        />
-        <ItemColSeparator style={styles.colSeparatorStyle} />
-        <VerticalLayout
-          style={styles.rowsContainer}
-          tiles={[secondary3, secondary4]}
-        />
-      </View>
-    );
-  }
-
   return (
-    <HorizontalLayout
-      containerStyle={styles.container}
-      tiles={[
-        { style: styles.item, tile: secondary1 },
-        { style: styles.item, tile: secondary2 },
-        { style: styles.item, tile: secondary3 },
-        { style: styles.item, tile: secondary4 }
-      ]}
-    />
+    <View style={styles.container}>
+      <HorizontalLayout
+        containerStyle={styles.columnsContainer}
+        tiles={[
+          { style: styles.columnItem, tile: secondary1 },
+          { style: styles.columnItem, tile: secondary2 }
+        ]}
+        colSeparatorStyle={styles.colSeparatorStyle}
+      />
+      <ItemColSeparator style={styles.colSeparatorStyle} />
+      <VerticalLayout
+        style={styles.rowsContainer}
+        tiles={[secondary3, secondary4]}
+      />
+    </View>
   );
 };
 

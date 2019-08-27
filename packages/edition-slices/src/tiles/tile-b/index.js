@@ -16,9 +16,14 @@ const TileB = ({
   onPress,
   tile,
   breakpoint = editionBreakpoints.small,
-  withMoreTeaser = false
+  withMoreTeaser = false,
+  additionalHeadlineStyles = {}
 }) => {
   const styles = stylesFactory(breakpoint);
+  const headLineStyles = {
+    ...styles.headline,
+    ...additionalHeadlineStyles
+  };
 
   return (
     <TileLink onPress={onPress} style={styles.container} tile={tile}>
@@ -26,7 +31,7 @@ const TileB = ({
         style={styles.summaryContainer}
         render={whiteSpaceHeight => (
           <TileSummary
-            headlineStyle={styles.headline}
+            headlineStyle={headLineStyles}
             summary={getTileSummary(tile, withMoreTeaser ? 800 : 125)}
             tile={tile}
             whiteSpaceHeight={whiteSpaceHeight}
@@ -43,7 +48,8 @@ TileB.propTypes = {
   onPress: PropTypes.func.isRequired,
   tile: PropTypes.shape({}).isRequired,
   breakpoint: PropTypes.string,
-  withMoreTeaser: PropTypes.bool
+  withMoreTeaser: PropTypes.bool,
+  additionalHeadlineStyles: PropTypes.shape({})
 };
 
 export default withTileTracking(TileB);
