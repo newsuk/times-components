@@ -2118,6 +2118,7 @@ exports[`25. tile x 1`] = `
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
+  margin-bottom: 10px;
 }
 
 .S3 {
@@ -2128,7 +2129,6 @@ exports[`25. tile x 1`] = `
 .IS1 {
   font-size: 40px;
   line-height: 40px;
-  margin-bottom: 10px;
 }
 
 .IS2 {
@@ -2180,7 +2180,7 @@ exports[`25. tile x 1`] = `
         </div>
         <h3
           aria-level="3"
-          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 IS1 S2"
+          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-15d164r IS1 S2"
           role="heading"
         >
           This is tile headline
@@ -2218,6 +2218,7 @@ exports[`26. tile y 1`] = `
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
+  margin-bottom: 10px;
 }
 
 .S3 {
@@ -2235,7 +2236,6 @@ exports[`26. tile y 1`] = `
 .IS1 {
   font-size: 30px;
   line-height: 30px;
-  margin-bottom: 10px;
 }
 </style>
 
@@ -2263,7 +2263,7 @@ exports[`26. tile y 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 IS1 S2"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-15d164r IS1 S2"
       role="heading"
     >
       This is tile headline
@@ -2293,76 +2293,7 @@ exports[`26. tile y 1`] = `
 </Link>
 `;
 
-exports[`27. tile z 1`] = `
-<style>
-.S1 {
-  margin-bottom: 0px;
-}
-
-.S2 {
-  color: rgba(51,51,51,1.00);
-  font-family: TimesModern-Bold;
-  font-weight: 400;
-  margin-bottom: 10px;
-}
-
-.S3 {
-  margin-bottom: 10px;
-}
-
-.IS1 {
-  font-size: 25px;
-  line-height: 25px;
-}
-</style>
-
-<Link
-  linkStyle={
-    Object {
-      "padding": "10px",
-    }
-  }
-  url="/article/123"
->
-  <div
-    className="css-view-1dbjc4n r-marginBottom-15d164r S3"
-  >
-    <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
-    >
-      <ArticleLabel
-        color="#005B8D"
-        isVideo={false}
-        title="label"
-      />
-    </div>
-    <h3
-      aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-15d164r IS1 S2"
-      role="heading"
-    >
-      This is tile headline
-    </h3>
-    <ArticleFlags
-      flags={
-        Array [
-          Object {
-            "expiryTime": "2030-03-14T12:00:00.000Z",
-            "type": "EXCLUSIVE",
-          },
-        ]
-      }
-    />
-  </div>
-  <Image
-    aspectRatio={0.8}
-    fill={true}
-    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1434%2C1792%2C627%2C0"
-  />
-</Link>
-`;
-
-exports[`28. tile ab 1`] = `
+exports[`27. tile ab 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2474,7 +2405,7 @@ exports[`28. tile ab 1`] = `
 </Link>
 `;
 
-exports[`29. tile ae 1`] = `
+exports[`28. tile ae 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2558,7 +2489,7 @@ exports[`29. tile ae 1`] = `
 </Link>
 `;
 
-exports[`30. tile aj 1`] = `
+exports[`29. tile aj 1`] = `
 <style>
 .S1 {
   color: rgba(51,51,51,1.00);
@@ -2617,7 +2548,7 @@ exports[`30. tile aj 1`] = `
 </Link>
 `;
 
-exports[`31. tile ak 1`] = `
+exports[`30. tile ak 1`] = `
 <style>
 .S1 {
   color: rgba(51,51,51,1.00);
@@ -2679,7 +2610,7 @@ exports[`31. tile ak 1`] = `
 </Link>
 `;
 
-exports[`32. tile al 1`] = `
+exports[`31. tile al 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2720,7 +2651,8 @@ exports[`32. tile al 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "padding": "10px",
+      "paddingHorizontal": "10px",
+      "paddingVertical": "15px",
     }
   }
   url="/article/123"
@@ -2772,7 +2704,7 @@ exports[`32. tile al 1`] = `
 </Link>
 `;
 
-exports[`33. tile am 1`] = `
+exports[`32. tile am 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2814,8 +2746,7 @@ exports[`33. tile am 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "paddingHorizontal": "10px",
-      "paddingVertical": "15px",
+      "padding": "10px",
     }
   }
   url="/article/123"
@@ -2867,7 +2798,7 @@ exports[`33. tile am 1`] = `
 </Link>
 `;
 
-exports[`34. tile an 1`] = `
+exports[`33. tile an 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2981,7 +2912,7 @@ exports[`34. tile an 1`] = `
 </Link>
 `;
 
-exports[`35. tile ad 1`] = `
+exports[`34. tile ad 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3058,7 +2989,7 @@ exports[`35. tile ad 1`] = `
 </Link>
 `;
 
-exports[`36. tile ac 1`] = `
+exports[`35. tile ac 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3156,7 +3087,7 @@ exports[`36. tile ac 1`] = `
 </Link>
 `;
 
-exports[`37. tile aa 1`] = `
+exports[`36. tile aa 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3239,7 +3170,7 @@ exports[`37. tile aa 1`] = `
 </Link>
 `;
 
-exports[`38. tile ar 1`] = `
+exports[`37. tile ar 1`] = `
 <style>
 .S1 {
   margin-bottom: 10px;
@@ -3366,7 +3297,7 @@ exports[`38. tile ar 1`] = `
 </Link>
 `;
 
-exports[`39. tile as 1`] = `
+exports[`38. tile as 1`] = `
 <style>
 .S1 {
   margin-bottom: 10px;
@@ -3476,7 +3407,7 @@ exports[`39. tile as 1`] = `
 </Link>
 `;
 
-exports[`40. tile ah 1`] = `
+exports[`39. tile ah 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3583,7 +3514,7 @@ exports[`40. tile ah 1`] = `
 </Link>
 `;
 
-exports[`41. tile ai 1`] = `
+exports[`40. tile ai 1`] = `
 <style>
 .IS1 {
   width: 100%;
