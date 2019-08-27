@@ -16,7 +16,11 @@ function Head({ description, name, slug }) {
     <Context.Consumer>
       {({ makeTopicUrl }) => (
         <Helmet>
-          <link rel="preload" href="/assets/optimizely/16079460199.js" as="script" />
+          <link
+            as="script"
+            href="/assets/optimizely/16079460199.js"
+            rel="preload"
+          />
           <script src="/assets/optimizely/16079460199.js" />
           <title>{name} | The Times &amp; The Sunday Times</title>
           <meta content={content} name="description" />
