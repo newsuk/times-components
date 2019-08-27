@@ -1054,6 +1054,7 @@ exports[`25. tile x 1`] = `
     Object {
       "flex": 1,
       "padding": 10,
+      "paddingTop": 15,
     }
   }
   url="/article/123"
@@ -1100,7 +1101,9 @@ exports[`26. tile y 1`] = `
 <Link
   linkStyle={
     Object {
-      "padding": 10,
+      "paddingBottom": 15,
+      "paddingHorizontal": 10,
+      "paddingTop": 10,
     }
   }
   url="/article/123"
@@ -1389,7 +1392,8 @@ exports[`33. tile am 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "padding": 10,
+      "paddingHorizontal": 10,
+      "paddingVertical": 15,
     }
   }
   url="/article/123"

@@ -122,8 +122,8 @@ exports[`3. lead two no pic and two - wide 1`] = `
 <View
   style={
     Object {
+      "flex": 1,
       "flexDirection": "row",
-      "justifyContent": "center",
       "marginHorizontal": 10,
     }
   }
@@ -158,14 +158,14 @@ exports[`3. lead two no pic and two - wide 1`] = `
         "borderColor": "#DBDBDB",
         "borderRightWidth": 1,
         "borderStyle": "solid",
-        "marginVertical": 10,
+        "marginVertical": 15,
       }
     }
   />
   <View
     style={
       Object {
-        "width": "16%",
+        "width": "42%",
       }
     }
   >
@@ -179,14 +179,14 @@ exports[`3. lead two no pic and two - wide 1`] = `
         "borderColor": "#DBDBDB",
         "borderRightWidth": 1,
         "borderStyle": "solid",
-        "marginVertical": 10,
+        "marginVertical": 15,
       }
     }
   />
   <View
     style={
       Object {
-        "width": "42%",
+        "width": "16%",
       }
     }
   >
@@ -201,8 +201,8 @@ exports[`4. lead two no pic and two - huge 1`] = `
 <View
   style={
     Object {
+      "flex": 1,
       "flexDirection": "row",
-      "justifyContent": "center",
       "marginHorizontal": 10,
     }
   }
@@ -237,14 +237,14 @@ exports[`4. lead two no pic and two - huge 1`] = `
         "borderColor": "#DBDBDB",
         "borderRightWidth": 1,
         "borderStyle": "solid",
-        "marginVertical": 10,
+        "marginVertical": 15,
       }
     }
   />
   <View
     style={
       Object {
-        "width": "16%",
+        "width": "42%",
       }
     }
   >
@@ -258,14 +258,14 @@ exports[`4. lead two no pic and two - huge 1`] = `
         "borderColor": "#DBDBDB",
         "borderRightWidth": 1,
         "borderStyle": "solid",
-        "marginVertical": 10,
+        "marginVertical": 15,
       }
     }
   />
   <View
     style={
       Object {
-        "width": "42%",
+        "width": "16%",
       }
     }
   >

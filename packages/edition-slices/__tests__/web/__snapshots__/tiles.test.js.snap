@@ -1050,6 +1050,7 @@ exports[`25. tile x 1`] = `
     Object {
       "flex": 1,
       "padding": "10px",
+      "paddingTop": "15px",
     }
   }
   url="/article/123"
@@ -1096,7 +1097,9 @@ exports[`26. tile y 1`] = `
 <Link
   linkStyle={
     Object {
-      "padding": "10px",
+      "paddingBottom": "15px",
+      "paddingHorizontal": "10px",
+      "paddingTop": "10px",
     }
   }
   url="/article/123"
@@ -1385,7 +1388,8 @@ exports[`33. tile am 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "padding": "10px",
+      "paddingHorizontal": "10px",
+      "paddingVertical": "15px",
     }
   }
   url="/article/123"

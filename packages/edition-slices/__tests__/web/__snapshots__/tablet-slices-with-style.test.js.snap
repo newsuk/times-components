@@ -444,12 +444,12 @@ exports[`5. lead two no pic and two - medium 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .IS4 {
-  width: 16%;
+  width: 42%;
 }
 
 .IS5 {
@@ -462,26 +462,32 @@ exports[`5. lead two no pic and two - medium 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .IS6 {
-  width: 42%;
+  width: 16%;
 }
 
 .IS7 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-justify-content: center;
-  justify-content: center;
   margin-right: 10px;
   margin-left: 10px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
 }
 
 .IS8 {
@@ -520,7 +526,8 @@ exports[`5. lead two no pic and two - medium 1`] = `
     <div
       className="css-view-1dbjc4n IS4"
     >
-      <TileAL
+      <TileE
+        breakpoint="wide"
         tileName="support1"
       />
     </div>
@@ -530,7 +537,7 @@ exports[`5. lead two no pic and two - medium 1`] = `
     <div
       className="css-view-1dbjc4n IS6"
     >
-      <TileZ
+      <TileAL
         tileName="support2"
       />
     </div>
@@ -2483,12 +2490,12 @@ exports[`20. lead two no pic and two - wide 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .IS4 {
-  width: 16%;
+  width: 42%;
 }
 
 .IS5 {
@@ -2501,26 +2508,32 @@ exports[`20. lead two no pic and two - wide 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .IS6 {
-  width: 42%;
+  width: 16%;
 }
 
 .IS7 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-justify-content: center;
-  justify-content: center;
   margin-right: 10px;
   margin-left: 10px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
 }
 
 .IS8 {
@@ -2559,7 +2572,8 @@ exports[`20. lead two no pic and two - wide 1`] = `
     <div
       className="css-view-1dbjc4n IS4"
     >
-      <TileAL
+      <TileE
+        breakpoint="wide"
         tileName="support1"
       />
     </div>
@@ -2569,7 +2583,7 @@ exports[`20. lead two no pic and two - wide 1`] = `
     <div
       className="css-view-1dbjc4n IS6"
     >
-      <TileZ
+      <TileAL
         tileName="support2"
       />
     </div>
@@ -4525,12 +4539,12 @@ exports[`35. lead two no pic and two - huge 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .IS4 {
-  width: 16%;
+  width: 42%;
 }
 
 .IS5 {
@@ -4543,26 +4557,32 @@ exports[`35. lead two no pic and two - huge 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .IS6 {
-  width: 42%;
+  width: 16%;
 }
 
 .IS7 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-justify-content: center;
-  justify-content: center;
   margin-right: 10px;
   margin-left: 10px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
 }
 
 .IS8 {
@@ -4601,7 +4621,8 @@ exports[`35. lead two no pic and two - huge 1`] = `
     <div
       className="css-view-1dbjc4n IS4"
     >
-      <TileAL
+      <TileE
+        breakpoint="wide"
         tileName="support1"
       />
     </div>
@@ -4611,7 +4632,7 @@ exports[`35. lead two no pic and two - huge 1`] = `
     <div
       className="css-view-1dbjc4n IS6"
     >
-      <TileZ
+      <TileAL
         tileName="support2"
       />
     </div>

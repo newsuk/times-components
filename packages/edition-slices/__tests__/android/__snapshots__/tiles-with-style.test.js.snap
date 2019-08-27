@@ -1344,7 +1344,7 @@ exports[`25. tile x 1`] = `
               "fontSize": 40,
               "fontWeight": "400",
               "lineHeight": 40,
-              "marginBottom": 5,
+              "marginBottom": 10,
             }
           }
         >
@@ -1354,10 +1354,10 @@ exports[`25. tile x 1`] = `
           style={
             Object {
               "color": "#696969",
-              "fontFamily": "TimesDigitalW04-Regular",
-              "fontSize": 25,
-              "lineHeight": 25,
-              "paddingBottom": 5,
+              "fontFamily": "TimesModern-Regular",
+              "fontSize": 24,
+              "lineHeight": 26,
+              "paddingBottom": 10,
             }
           }
         >
@@ -1390,7 +1390,7 @@ exports[`26. tile y 1`] = `
           "fontSize": 30,
           "fontWeight": "400",
           "lineHeight": 30,
-          "marginBottom": 5,
+          "marginBottom": 10,
         }
       }
     >
@@ -1663,10 +1663,10 @@ exports[`32. tile al 1`] = `
             Object {
               "color": "#333333",
               "fontFamily": "TimesModern-Bold",
-              "fontSize": 22,
+              "fontSize": 20,
               "fontWeight": "400",
-              "lineHeight": 27,
-              "marginBottom": 0,
+              "lineHeight": 20,
+              "marginBottom": 5,
             }
           }
         >
