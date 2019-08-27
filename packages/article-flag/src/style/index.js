@@ -4,6 +4,7 @@ import sharedStyles from "./shared";
 const styles = {
   ...sharedStyles,
   flags: {
+    ...sharedStyles.flags,
     marginBottom: 0,
     marginTop: spacing(2)
   },

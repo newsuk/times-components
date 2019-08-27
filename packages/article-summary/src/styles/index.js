@@ -8,6 +8,7 @@ const styles = StyleSheet.create({
     lineHeight: 25
   },
   text: {
+    ...sharedStyles.text,
     marginBottom: 0
   }
 });
