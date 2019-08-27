@@ -1,6 +1,6 @@
 {
   "name": "@times-components/section",
-  "version": "1.2.15",
+  "version": "1.2.16",
   "description": "Section Page",
   "main": "dist/section",
   "dev": "src/section",
@@ -38,7 +38,7 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
     "@times-components/context": "1.0.37",
-    "@times-components/edition-slices": "0.77.3",
+    "@times-components/edition-slices": "0.77.4",
     "@times-components/icons": "2.12.10",
     "@times-components/image": "6.4.19",
     "@times-components/link": "3.4.39",
