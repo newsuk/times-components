@@ -9,7 +9,7 @@ import {
 } from "../shared";
 import styleFactory from "./styles";
 
-const TileM = ({ onPress, tile, breakpoint = editionBreakpoints.small}) => {
+const TileM = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
   const {
     article: { id, shortHeadline, url }
   } = tile;
