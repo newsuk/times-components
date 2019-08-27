@@ -28,7 +28,6 @@ const TileAL = ({ onPress, tile }) => {
         fill
       />
       <WithoutWhiteSpace
-        style={styles.summaryContainer}
         render={whiteSpaceHeight => (
           <TileSummary
             headlineStyle={styles.headline}
