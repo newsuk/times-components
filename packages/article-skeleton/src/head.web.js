@@ -135,10 +135,10 @@ function Head({ article, paidContentClassName, faviconUrl }) {
     "@context": "http://schema.org",
     "@type": "NewsArticle",
     headline: title,
-    logo: faviconUrl,
     publisher: {
       "@type": "Organization",
-      name: publication
+      name: publication,
+      logo: faviconUrl
     },
     mainEntityOfPage: {
       "@type": "WebPage"

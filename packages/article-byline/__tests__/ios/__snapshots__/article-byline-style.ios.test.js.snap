@@ -9,7 +9,7 @@ exports[`1. with a single author 1`] = `
         "flexDirection": "row",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
-        "lineHeight": 13,
+        "lineHeight": 15,
       }
     }
   >
@@ -27,7 +27,7 @@ exports[`2. with a very long byline 1`] = `
         "flexDirection": "row",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
-        "lineHeight": 13,
+        "lineHeight": 15,
       }
     }
   >
@@ -40,7 +40,7 @@ exports[`2. with a very long byline 1`] = `
         "flexDirection": "row",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
-        "lineHeight": 13,
+        "lineHeight": 15,
       }
     }
   >
@@ -53,7 +53,7 @@ exports[`2. with a very long byline 1`] = `
         "flexDirection": "row",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
-        "lineHeight": 13,
+        "lineHeight": 15,
       }
     }
   >
@@ -66,7 +66,7 @@ exports[`2. with a very long byline 1`] = `
         "flexDirection": "row",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
-        "lineHeight": 13,
+        "lineHeight": 15,
       }
     }
   >
@@ -79,7 +79,7 @@ exports[`2. with a very long byline 1`] = `
         "flexDirection": "row",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
-        "lineHeight": 13,
+        "lineHeight": 15,
       }
     }
   >
@@ -92,7 +92,7 @@ exports[`2. with a very long byline 1`] = `
         "flexDirection": "row",
         "fontFamily": "GillSansMTStd-Medium",
         "fontSize": 13,
-        "lineHeight": 13,
+        "lineHeight": 15,
       }
     }
   >

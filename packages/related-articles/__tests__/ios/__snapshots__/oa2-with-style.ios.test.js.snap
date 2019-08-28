@@ -68,7 +68,7 @@ exports[`default styles 1`] = `
                         "fontFamily": "TimesModern-Bold",
                         "fontSize": 22,
                         "fontWeight": "400",
-                        "lineHeight": 22,
+                        "lineHeight": 27,
                       }
                     }
                   >
@@ -106,6 +106,7 @@ exports[`default styles 1`] = `
                         "fontFamily": "TimesDigitalW04",
                         "fontSize": 14,
                         "lineHeight": 20,
+                        "marginBottom": 0,
                       }
                     }
                   >

@@ -1,0 +1,10 @@
+query GetSavedBookamrks {
+  viewer {
+    bookmarks {
+      bookmarks {
+        id
+      }
+      total
+    }
+  }
+}

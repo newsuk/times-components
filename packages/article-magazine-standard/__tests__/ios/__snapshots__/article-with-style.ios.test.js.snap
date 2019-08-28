@@ -40,7 +40,7 @@ exports[`full article with style in the culture magazine 1`] = `
       style={
         Object {
           "marginBottom": 15,
-          "marginTop": 10,
+          "marginTop": 5,
         }
       }
     >
@@ -156,7 +156,7 @@ exports[`full article with style in the style magazine 1`] = `
       style={
         Object {
           "marginBottom": 15,
-          "marginTop": 10,
+          "marginTop": 5,
         }
       }
     >
@@ -271,7 +271,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
       style={
         Object {
           "marginBottom": 15,
-          "marginTop": 10,
+          "marginTop": 5,
         }
       }
     >
@@ -386,7 +386,7 @@ exports[`phone full article with style 1`] = `
       style={
         Object {
           "marginBottom": 15,
-          "marginTop": 10,
+          "marginTop": 5,
         }
       }
     >
@@ -501,7 +501,7 @@ exports[`tablet full article with style 1`] = `
       style={
         Object {
           "marginBottom": 15,
-          "marginTop": 10,
+          "marginTop": 5,
         }
       }
     >

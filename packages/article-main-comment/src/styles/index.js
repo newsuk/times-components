@@ -6,8 +6,7 @@ const nativeStyles = {
   ...sharedStyles,
   articleHeadline: {
     ...sharedStyles.articleHeadline,
-    lineHeight: sharedStyles.articleHeadline.fontSize,
-    marginBottom: spacing(4)
+    marginBottom: spacing(2.5)
   },
   authorImage: {
     ...sharedStyles.authorImage,
@@ -16,17 +15,12 @@ const nativeStyles = {
     overflow: "hidden",
     width: 100
   },
+  metaFlagSpacer: {
+    marginTop: spacing(1)
+  },
   standFirst: {
     ...sharedStyles.standFirst,
     lineHeight: 25
-  },
-  datePublication: {
-    ...sharedStyles.datePublication,
-    lineHeight: sharedStyles.datePublication.fontSize
-  },
-  header: {
-    ...sharedStyles.header,
-    marginBottom: spacing(0)
   }
 };
 

@@ -5,7 +5,7 @@ exports[`phone full article with style 1`] = `
   <View
     style={
       Object {
-        "marginBottom": 0,
+        "marginBottom": 15,
         "paddingBottom": 20,
         "paddingTop": 35,
       }
@@ -46,8 +46,8 @@ exports[`phone full article with style 1`] = `
             "color": "#1D1D1B",
             "fontFamily": "TimesModern-Bold",
             "fontSize": 30,
-            "lineHeight": 30,
-            "marginBottom": 20,
+            "lineHeight": 33,
+            "marginBottom": 13.75,
             "textAlign": "center",
           }
         }
@@ -116,7 +116,7 @@ exports[`phone full article with style 1`] = `
                 "color": "#696969",
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 13,
-                "lineHeight": 13,
+                "lineHeight": 15,
                 "marginTop": 5,
               }
             }
@@ -135,7 +135,7 @@ exports[`tablet full article with style 1`] = `
   <View
     style={
       Object {
-        "marginBottom": 0,
+        "marginBottom": 15,
         "paddingBottom": 20,
         "paddingTop": 35,
       }
@@ -176,8 +176,8 @@ exports[`tablet full article with style 1`] = `
             "color": "#1D1D1B",
             "fontFamily": "TimesModern-Bold",
             "fontSize": 30,
-            "lineHeight": 30,
-            "marginBottom": 20,
+            "lineHeight": 33,
+            "marginBottom": 13.75,
             "textAlign": "center",
           }
         }
@@ -246,7 +246,7 @@ exports[`tablet full article with style 1`] = `
                 "color": "#696969",
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 13,
-                "lineHeight": 13,
+                "lineHeight": 15,
                 "marginTop": 5,
               }
             }

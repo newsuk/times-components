@@ -3,6 +3,94 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.173](https://github.com/newsuk/times-components/compare/@times-components/pages@2.0.172...@times-components/pages@2.0.173) (2019-08-28)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+## [2.0.172](https://github.com/newsuk/times-components/compare/@times-components/pages@2.0.171...@times-components/pages@2.0.172) (2019-08-27)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+## [2.0.171](https://github.com/newsuk/times-components/compare/@times-components/pages@2.0.170...@times-components/pages@2.0.171) (2019-08-26)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+## [2.0.170](https://github.com/newsuk/times-components/compare/@times-components/pages@2.0.169...@times-components/pages@2.0.170) (2019-08-26)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+## [2.0.169](https://github.com/newsuk/times-components/compare/@times-components/pages@2.0.168...@times-components/pages@2.0.169) (2019-08-23)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+## [2.0.168](https://github.com/newsuk/times-components/compare/@times-components/pages@2.0.167...@times-components/pages@2.0.168) (2019-08-22)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+## [2.0.167](https://github.com/newsuk/times-components/compare/@times-components/pages@2.0.166...@times-components/pages@2.0.167) (2019-08-22)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+## [2.0.166](https://github.com/newsuk/times-components/compare/@times-components/pages@2.0.165...@times-components/pages@2.0.166) (2019-08-21)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+## [2.0.165](https://github.com/newsuk/times-components/compare/@times-components/pages@2.0.164...@times-components/pages@2.0.165) (2019-08-21)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+## [2.0.164](https://github.com/newsuk/times-components/compare/@times-components/pages@2.0.163...@times-components/pages@2.0.164) (2019-08-21)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+## [2.0.163](https://github.com/newsuk/times-components/compare/@times-components/pages@2.0.162...@times-components/pages@2.0.163) (2019-08-21)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
 ## [2.0.162](https://github.com/newsuk/times-components/compare/@times-components/pages@2.0.161...@times-components/pages@2.0.162) (2019-08-21)
 
 **Note:** Version bump only for package @times-components/pages

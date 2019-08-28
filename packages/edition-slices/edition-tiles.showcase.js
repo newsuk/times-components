@@ -157,7 +157,7 @@ const tileStories = [
     Tile: TileQ
   },
   {
-    name: "Tile R - Bottom image, 45pt headline, no teaser",
+    name: "Tile R - Bottom image, 40pt headline, no teaser",
     Tile: TileR
   },
   {

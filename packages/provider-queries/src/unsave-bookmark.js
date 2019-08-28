@@ -1,8 +1,4 @@
 import { addTypenameToDocument } from "apollo-utilities";
-import gql from "graphql-tag";
+import unsaveBookmark from "./unsave_bookmark.graphql";
 
-export default addTypenameToDocument(gql`
-  mutation UnsaveBookmark($id: UUID!) {
-    unsaveBookmarks(bookmarks: [{ id: $id }])
-  }
-`);
+export default addTypenameToDocument(unsaveBookmark);

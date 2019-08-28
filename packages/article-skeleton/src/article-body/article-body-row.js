@@ -94,7 +94,7 @@ export default ({
       const cap = getDropCap(children, fonts[dropCapFont], height, [
         new Body(value)
       ]);
-      const capGap = spacing(4);
+      const capGap = spacing(2);
       const capWidth = (cap[0].measuredWidth + capGap) * fontScale;
 
       return {
@@ -219,7 +219,7 @@ export default ({
         element: inline
       };
     },
-    interactive(key, { id }) {
+    interactive(key, { id, display }) {
       return {
         element: new Layout.Block({
           getComponent() {
@@ -228,7 +228,9 @@ export default ({
                 key={key}
                 style={[
                   styles.interactiveContainer,
-                  isTablet && styles.interactiveContainerTablet
+                  isTablet && styles.interactiveContainerTablet,
+                  display === "fullwidth" &&
+                    styles.interactiveContainerFullWidth
                 ]}
               >
                 <InteractiveWrapper config={interactiveConfig} id={id} />

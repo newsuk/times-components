@@ -111,6 +111,22 @@ export default () => {
         },
         {
           attributes: {
+            display: "fullwidth",
+            element: {
+              attributes: {
+                "chart-id": "csmgb"
+              },
+              value: "times-datawrapper"
+            },
+            id: "d2f83305-d558-4f78-f582-32115c659355",
+            url:
+              "//components.timesdev.tools/lib2/times-datawrapper-1.1.0/times-datawrapper.html"
+          },
+          children: [],
+          name: "interactive"
+        },
+        {
+          attributes: {
             caption: "An image caption",
             credits: "The image credits",
             display: "primary",

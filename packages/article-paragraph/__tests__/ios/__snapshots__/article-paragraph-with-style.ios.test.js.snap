@@ -16,9 +16,8 @@ exports[`1. paragraph with a drop cap 1`] = `
           "color": "#333333",
           "fontFamily": "TimesDigitalW04",
           "fontSize": 17,
-          "fontStyle": "normal",
           "lineHeight": 30,
-          "marginBottom": 25,
+          "marginBottom": 20,
         }
       }
     >
@@ -48,9 +47,8 @@ exports[`2. responsive tablet paragraph 1`] = `
           "color": "#333333",
           "fontFamily": "TimesDigitalW04",
           "fontSize": 17,
-          "fontStyle": "normal",
           "lineHeight": 30,
-          "marginBottom": 25,
+          "marginBottom": 20,
         }
       }
     >
@@ -80,9 +78,8 @@ exports[`3. responsive tablet paragraph with a drop cap 1`] = `
           "color": "#333333",
           "fontFamily": "TimesDigitalW04",
           "fontSize": 17,
-          "fontStyle": "normal",
           "lineHeight": 30,
-          "marginBottom": 25,
+          "marginBottom": 20,
         }
       }
     >
