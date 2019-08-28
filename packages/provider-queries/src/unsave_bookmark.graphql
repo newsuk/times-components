@@ -1,0 +1,3 @@
+mutation UnsaveBookmark($id: UUID!) {
+  unsaveBookmarks(bookmarks: [{ id: $id }])
+}

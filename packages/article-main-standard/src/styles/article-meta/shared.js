@@ -13,6 +13,8 @@ const sharedStyles = {
     paddingRight: 0
   },
   articleMetaElement: {
+    // TODO: put back after design signoff
+    // paddingTop: spacing(1)
     paddingTop: spacing(2)
   },
   articleMetaElementWithBorder: {

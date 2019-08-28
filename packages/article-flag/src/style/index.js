@@ -1,8 +1,13 @@
-import { fontSizes } from "@times-components/styleguide";
+import { fontSizes, spacing } from "@times-components/styleguide";
 import sharedStyles from "./shared";
 
 const styles = {
   ...sharedStyles,
+  flags: {
+    ...sharedStyles.flags,
+    marginBottom: 0,
+    marginTop: spacing(2)
+  },
   title: {
     ...sharedStyles.title,
     fontSize: fontSizes.meta,

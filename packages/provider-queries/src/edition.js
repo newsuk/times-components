@@ -1,23 +1,4 @@
 import { addTypenameToDocument } from "apollo-utilities";
-import gql from "graphql-tag";
-import sectionFragment from "./section-fragment";
+import edition from "./edition.graphql";
 
-export default addTypenameToDocument(
-  gql`
-    query EditionQuery($id: ID!) {
-      edition(id: $id) {
-        id
-        publishedTime
-        publicationName
-        updateText
-        sections {
-          id
-          title
-          ...sectionPageProps
-        }
-      }
-    }
-
-    ${sectionFragment}
-  `
-);
+export default addTypenameToDocument(edition);

@@ -86,7 +86,6 @@ class TimesImage extends Component {
       aspectRatio,
       disablePlaceholder,
       highResSize,
-      lowResSize,
       style,
       uri,
       rounded,
@@ -94,6 +93,7 @@ class TimesImage extends Component {
       relativeHeight,
       relativeHorizontalOffset,
       relativeVerticalOffset,
+      lowResSize,
       ...defaultImageProps
     } = this.props;
     const { isLoaded, width } = this.state;

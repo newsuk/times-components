@@ -45,12 +45,15 @@ const sharedStyles = scale => {
     },
     interactiveContainer: {
       marginBottom: spacing(4),
-      paddingLeft: spacing(2),
-      paddingRight: spacing(2)
+      paddingHorizontal: spacing(2)
     },
     interactiveContainerTablet: {
       alignSelf: "center",
       width: tabletWidth
+    },
+    interactiveContainerFullWidth: {
+      width: "100%",
+      paddingHorizontal: 0
     },
     leadAsset: {
       marginBottom: spacing(2)

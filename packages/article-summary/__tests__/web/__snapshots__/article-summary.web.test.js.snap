@@ -20,7 +20,7 @@ exports[`1. article summary component with a single paragraph 1`] = `
     Test Headline
   </h3>
   <div
-    className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe"
+    className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
   >
     <span
       className="css-text-901oao css-textHasAncestor-16my406"
@@ -141,7 +141,7 @@ exports[`2. article summary with opinion byline 1`] = `
     Test Headline
   </h3>
   <div
-    className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe"
+    className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
   >
     <span
       className="css-text-901oao css-textHasAncestor-16my406"
@@ -174,7 +174,7 @@ exports[`3. article summary component with multiple paragraphs 1`] = `
     Test Headline
   </h3>
   <div
-    className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe"
+    className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
   >
     <span
       className="css-text-901oao css-textHasAncestor-16my406"
@@ -233,7 +233,7 @@ exports[`4. article summary component with content including line breaks 1`] = `
   className="css-view-1dbjc4n"
 >
   <div
-    className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe"
+    className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
   >
     <span
       className="css-text-901oao css-textHasAncestor-16my406"
@@ -290,7 +290,7 @@ exports[`5. article summary component containing links 1`] = `
     Test Headline
   </h3>
   <div
-    className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe"
+    className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
   >
     <span
       className="css-text-901oao css-textHasAncestor-16my406"
@@ -372,7 +372,7 @@ exports[`7. article summary component with empty content at the end trimmed 1`] 
     Test Headline
   </h3>
   <div
-    className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe"
+    className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
   >
     <span
       className="css-text-901oao css-textHasAncestor-16my406"
@@ -443,7 +443,7 @@ exports[`8. article summary component with no byline 1`] = `
     Test Headline
   </h3>
   <div
-    className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe"
+    className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
   >
     <span
       className="css-text-901oao css-textHasAncestor-16my406"
@@ -476,7 +476,7 @@ exports[`9. article summary component with no label 1`] = `
     Test Headline
   </h3>
   <div
-    className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe"
+    className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
   >
     <span
       className="css-text-901oao css-textHasAncestor-16my406"
@@ -537,7 +537,7 @@ exports[`10. article summary component with no headline 1`] = `
     />
   </div>
   <div
-    className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe"
+    className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
   >
     <span
       className="css-text-901oao css-textHasAncestor-16my406"
@@ -578,7 +578,7 @@ exports[`11. article summary component with no date publication 1`] = `
     Test Headline
   </h3>
   <div
-    className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe"
+    className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
   >
     <span
       className="css-text-901oao css-textHasAncestor-16my406"
@@ -639,7 +639,7 @@ exports[`12. article summary component with a video label 1`] = `
     Test Headline
   </h3>
   <div
-    className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe"
+    className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
   >
     <span
       className="css-text-901oao css-textHasAncestor-16my406"
@@ -714,7 +714,7 @@ exports[`13. article summary component with a strapline 1`] = `
     Test Strapline
   </h4>
   <div
-    className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe"
+    className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
   >
     <span
       className="css-text-901oao css-textHasAncestor-16my406"

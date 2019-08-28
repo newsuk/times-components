@@ -173,6 +173,7 @@ exports[`2. placeholder when isloading 1`] = `
   align-items: center;
   flex: 1;
   justify-content: center;
+  min-height: auto;
 }
 
 .IS6 {
@@ -210,7 +211,7 @@ exports[`2. placeholder when isloading 1`] = `
             className="IS5"
           >
             <div
-              className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0 r-justifyContent-1777fci"
+              className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0 r-justifyContent-1777fci r-minHeight-tv6buo"
             >
               <View
                 className="IS4"
@@ -305,6 +306,7 @@ exports[`3. nothing if there is an error in the loading of scripts 1`] = `
   align-items: center;
   flex: 1;
   justify-content: center;
+  min-height: auto;
 }
 
 .IS7 {
@@ -351,7 +353,7 @@ exports[`3. nothing if there is an error in the loading of scripts 1`] = `
             className="IS6"
           >
             <div
-              className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0 r-justifyContent-1777fci"
+              className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0 r-justifyContent-1777fci r-minHeight-tv6buo"
             >
               <View
                 className="IS5"

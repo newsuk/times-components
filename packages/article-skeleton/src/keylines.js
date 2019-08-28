@@ -11,7 +11,9 @@ export const KeylineItem = styled.div`
 `;
 
 export const ArticleKeylineItem = styled(KeylineItem)`
-  margin: 0 auto;
+  @media (min-width: ${breakpoints.medium}px) {
+    margin: 0 auto;
+  }
 
   &:last-child {
     margin-bottom: ${spacing(6)};
@@ -25,8 +27,6 @@ export const ArticleKeylineItem = styled(KeylineItem)`
     width: 56.2%;
   }
 
-  @media (max-width: ${breakpoints.medium}px) {
-    margin-left: ${spacing(2)};
-    margin-right: ${spacing(2)};
-  }
+  margin-left: ${spacing(2)};
+  margin-right: ${spacing(2)};
 `;

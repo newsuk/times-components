@@ -1,0 +1,13 @@
+query AuthorQuery($slug: Slug!) {
+  author(slug: $slug) {
+    articles {
+      count
+    }
+    biography
+    hasLeadAssets
+    image
+    jobTitle
+    name
+    twitter
+  }
+}

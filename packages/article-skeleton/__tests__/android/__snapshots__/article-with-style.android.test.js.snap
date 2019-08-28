@@ -85,7 +85,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                     "fontWeight": "normal",
                     "left": 0,
                     "lineHeight": NaN,
-                    "marginBottom": 25,
+                    "marginBottom": 20,
                     "position": "absolute",
                     "top": 0,
                   }
@@ -112,8 +112,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
             style={
               Object {
                 "marginBottom": 20,
-                "paddingLeft": 10,
-                "paddingRight": 10,
+                "paddingHorizontal": 10,
               }
             }
           >
@@ -197,7 +196,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                     "fontSize": 17,
                     "fontStyle": "normal",
                     "lineHeight": 30,
-                    "marginBottom": 25,
+                    "marginBottom": 20,
                   }
                 }
               >
@@ -301,7 +300,6 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                       "fontFamily": "GillSansMTStd-Medium",
                       "fontSize": 13,
                       "lineHeight": 20,
-                      "marginTop": 5,
                     }
                   }
                 >
@@ -547,7 +545,131 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
 </View>
 `;
 
-exports[`2. an article with no content 1`] = `
+exports[`2. an article with interactives 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#f0f0f0",
+    }
+  }
+>
+  <RCTScrollView>
+    <View>
+      <View>
+        <View
+          style={
+            Object {
+              "alignSelf": "center",
+              "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
+              "width": 1194,
+            }
+          }
+        />
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "alignSelf": "center",
+              "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
+              "width": 1194,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "marginBottom": 20,
+                "paddingHorizontal": 10,
+              }
+            }
+          >
+            <InteractiveWrapper />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "alignSelf": "center",
+              "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
+              "width": 1194,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "marginBottom": 20,
+                "paddingHorizontal": 0,
+                "width": "100%",
+              }
+            }
+          >
+            <InteractiveWrapper />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "alignSelf": "center",
+              "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
+              "width": 1194,
+            }
+          }
+        />
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "alignSelf": "center",
+              "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
+              "width": 1194,
+            }
+          }
+        />
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "alignSelf": "center",
+              "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
+              "width": 1194,
+            }
+          }
+        />
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "alignSelf": "center",
+              "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
+              "width": 1194,
+            }
+          }
+        >
+          <ArticleExtras />
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
+
+exports[`3. an article with no content 1`] = `
 <View
   style={
     Object {
@@ -574,7 +696,7 @@ exports[`2. an article with no content 1`] = `
 </View>
 `;
 
-exports[`3. an article with a nested markup in first paragraph displays a drop cap 1`] = `
+exports[`4. an article with a nested markup in first paragraph displays a drop cap 1`] = `
 <View
   style={
     Object {
@@ -659,7 +781,7 @@ exports[`3. an article with a nested markup in first paragraph displays a drop c
                     "fontWeight": "bold",
                     "left": 0,
                     "lineHeight": NaN,
-                    "marginBottom": 25,
+                    "marginBottom": 20,
                     "position": "absolute",
                     "top": 0,
                   }
@@ -694,7 +816,7 @@ exports[`3. an article with a nested markup in first paragraph displays a drop c
                     "fontWeight": "bold",
                     "left": 0,
                     "lineHeight": NaN,
-                    "marginBottom": 25,
+                    "marginBottom": 20,
                     "position": "absolute",
                     "top": 0,
                   }
@@ -749,7 +871,7 @@ exports[`3. an article with a nested markup in first paragraph displays a drop c
 </View>
 `;
 
-exports[`4. an article skeleton with responsive items 1`] = `
+exports[`5. an article skeleton with responsive items 1`] = `
 <View
   style={
     Object {
@@ -801,7 +923,7 @@ exports[`4. an article skeleton with responsive items 1`] = `
                     "fontSize": 17,
                     "fontStyle": "normal",
                     "lineHeight": 30,
-                    "marginBottom": 25,
+                    "marginBottom": 20,
                   }
                 }
               >
@@ -839,8 +961,7 @@ exports[`4. an article skeleton with responsive items 1`] = `
             style={
               Object {
                 "marginBottom": 20,
-                "paddingLeft": 10,
-                "paddingRight": 10,
+                "paddingHorizontal": 10,
               }
             }
           >
@@ -926,7 +1047,7 @@ exports[`4. an article skeleton with responsive items 1`] = `
                     "fontSize": 17,
                     "fontStyle": "normal",
                     "lineHeight": 30,
-                    "marginBottom": 25,
+                    "marginBottom": 20,
                   }
                 }
               >
@@ -1030,7 +1151,6 @@ exports[`4. an article skeleton with responsive items 1`] = `
                       "fontFamily": "GillSansMTStd-Medium",
                       "fontSize": 13,
                       "lineHeight": 20,
-                      "marginTop": 5,
                     }
                   }
                 >

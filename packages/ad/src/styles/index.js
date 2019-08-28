@@ -62,7 +62,8 @@ const styles = StyleSheet.create({
   placeholderContainer: {
     alignItems: "center",
     flex: 1,
-    justifyContent: "center"
+    justifyContent: "center",
+    minHeight: "auto" // Prevent flex shrinking it
   },
   placeholderText: {
     backgroundColor: colours.functional.backgroundPrimary,

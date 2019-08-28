@@ -3,6 +3,89 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.9.39](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.9.38...@times-components/article-main-comment@2.9.39) (2019-08-28)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.9.38](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.9.37...@times-components/article-main-comment@2.9.38) (2019-08-26)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.9.37](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.9.36...@times-components/article-main-comment@2.9.37) (2019-08-26)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.9.36](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.9.35...@times-components/article-main-comment@2.9.36) (2019-08-23)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.9.35](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.9.34...@times-components/article-main-comment@2.9.35) (2019-08-22)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.9.34](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.9.33...@times-components/article-main-comment@2.9.34) (2019-08-22)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.9.33](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.9.32...@times-components/article-main-comment@2.9.33) (2019-08-21)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.9.32](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.9.31...@times-components/article-main-comment@2.9.32) (2019-08-21)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.9.31](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.9.30...@times-components/article-main-comment@2.9.31) (2019-08-21)
+
+
+### Bug Fixes
+
+* keylines margin ([#2201](https://github.com/newsuk/times-components/issues/2201)) ([90d0c2d](https://github.com/newsuk/times-components/commit/90d0c2d))
+
+
+
+
+
+## [2.9.30](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.9.29...@times-components/article-main-comment@2.9.30) (2019-08-21)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
 ## [2.9.29](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.9.28...@times-components/article-main-comment@2.9.29) (2019-08-20)
 
 **Note:** Version bump only for package @times-components/article-main-comment

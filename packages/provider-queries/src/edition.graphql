@@ -1,0 +1,15 @@
+#import "./section_fragment.graphql"
+
+query EditionQuery($id: ID!) {
+  edition(id: $id) {
+    id
+    publishedTime
+    publicationName
+    updateText
+    sections {
+      id
+      title
+      ...sectionPageProps
+    }
+  }
+}

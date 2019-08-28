@@ -128,6 +128,7 @@ exports[`advert placeholder 1`] = `
   align-items: center;
   flex: 1;
   justify-content: center;
+  min-height: auto;
   background-color: red;
 }
 
@@ -145,7 +146,7 @@ exports[`advert placeholder 1`] = `
     className="IS6"
   >
     <div
-      className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0 r-justifyContent-1777fci IS5 S4"
+      className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0 r-justifyContent-1777fci r-minHeight-tv6buo IS5 S4"
     >
       <View
         className="IS4"

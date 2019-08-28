@@ -10,6 +10,8 @@ const CentredCaption = ({ children, credits, style, text }) => (
       ...style,
       text: {
         ...style.text,
+        // TODO: put back after design signoff
+        // marginTop: spacing(1),
         paddingHorizontal: spacing(2),
         textAlign: "center"
       }

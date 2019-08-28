@@ -3,6 +3,98 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.13.9](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.13.8...@times-components/article-skeleton@1.13.9) (2019-08-28)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.13.8](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.13.7...@times-components/article-skeleton@1.13.8) (2019-08-26)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.13.7](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.13.6...@times-components/article-skeleton@1.13.7) (2019-08-26)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.13.6](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.13.5...@times-components/article-skeleton@1.13.6) (2019-08-23)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.13.5](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.13.4...@times-components/article-skeleton@1.13.5) (2019-08-22)
+
+
+### Bug Fixes
+
+* replat-7475 Fix font scaling using native font scale ([#2215](https://github.com/newsuk/times-components/issues/2215)) ([4c768df](https://github.com/newsuk/times-components/commit/4c768df))
+
+
+
+
+
+## [1.13.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.13.3...@times-components/article-skeleton@1.13.4) (2019-08-22)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.13.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.13.2...@times-components/article-skeleton@1.13.3) (2019-08-21)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.13.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.13.1...@times-components/article-skeleton@1.13.2) (2019-08-21)
+
+
+### Bug Fixes
+
+* seo logo ([#2207](https://github.com/newsuk/times-components/issues/2207)) ([fbbd910](https://github.com/newsuk/times-components/commit/fbbd910))
+
+
+
+
+
+## [1.13.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.13.0...@times-components/article-skeleton@1.13.1) (2019-08-21)
+
+
+### Bug Fixes
+
+* keylines margin ([#2201](https://github.com/newsuk/times-components/issues/2201)) ([90d0c2d](https://github.com/newsuk/times-components/commit/90d0c2d))
+
+
+
+
+
+# [1.13.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.12.14...@times-components/article-skeleton@1.13.0) (2019-08-21)
+
+
+### Features
+
+* full width interactives ([#2198](https://github.com/newsuk/times-components/issues/2198)) ([d8a8f88](https://github.com/newsuk/times-components/commit/d8a8f88))
+
+
+
+
+
 ## [1.12.14](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.12.13...@times-components/article-skeleton@1.12.14) (2019-08-20)
 
 **Note:** Version bump only for package @times-components/article-skeleton
