@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should track Comment post (complete) event  1`] = `
+Object {
+  "action": "navigation",
+  "attrs": Object {},
+  "component": "spot im : comment : complete",
+}
+`;
+
+exports[`should track Comment start event  1`] = `
+Object {
+  "action": "navigation",
+  "attrs": Object {},
+  "component": "spot im : comment : start",
+}
+`;

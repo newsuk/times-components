@@ -17,6 +17,13 @@ const mediumBreakpointStyles = {
     width: "100%",
     paddingBottom: spacing(2)
   },
+  imageContainer: {
+    width: "100%"
+  },
+  summaryContainer: {
+    width: "100%",
+    paddingBottom: spacing(2)
+  },
   headline: {
     fontFamily: fonts.headline,
     fontSize: 40,

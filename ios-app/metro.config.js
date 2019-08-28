@@ -6,6 +6,7 @@ module.exports = (async () => {
     resolver: {
       providesModuleNodeModules: ["react-native"],
       resolverMainFields: ["react-native", "dev", "browser", "main"],
+      sourceExts: ["js", "gql", "graphql"],
       hasteImplModulePath: path.join(
         root,
         "node_modules/react-native/jest/hasteImpl.js"
@@ -13,7 +14,9 @@ module.exports = (async () => {
       blacklistRE: /(.*\/__fixtures__\/.*|node_modules[\/\\]react[\/\\]dist[\/\\].*|website\/node_modules\/.*|heapCapture\/bundle\.js|.*\/__tests__\/.*)$/
     },
     transformer: {
-      babelTransformerPath: require.resolve("metro-babel-transformer")
+      babelTransformerPath: require.resolve(
+        "@bam.tech/react-native-graphql-transformer"
+      )
     },
     serializer: {
       getModulesRunBeforeMainModule: () => [

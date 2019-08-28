@@ -6,7 +6,7 @@ exports[`1. article main comment - tablet 1`] = `
     style={
       Object {
         "alignSelf": "center",
-        "marginBottom": 0,
+        "marginBottom": 15,
         "paddingBottom": 20,
         "paddingTop": 35,
         "width": 660,
@@ -51,7 +51,7 @@ exports[`1. article main comment - tablet 1`] = `
             "fontFamily": "TimesModern-Bold",
             "fontSize": 45,
             "lineHeight": 45,
-            "marginBottom": 20,
+            "marginBottom": 13.75,
             "textAlign": "center",
           }
         }
@@ -132,7 +132,7 @@ exports[`1. article main comment - tablet 1`] = `
                 "color": "#696969",
                 "fontFamily": "GillSansMTStd-Medium",
                 "fontSize": 13,
-                "lineHeight": 13,
+                "lineHeight": 15,
                 "marginTop": "auto",
               }
             }

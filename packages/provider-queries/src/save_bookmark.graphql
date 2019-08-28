@@ -1,0 +1,5 @@
+mutation SaveBookmark($id: UUID!) {
+  saveBookmarks(bookmarks: [{ id: $id }]) {
+    id
+  }
+}

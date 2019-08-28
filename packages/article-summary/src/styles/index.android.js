@@ -11,6 +11,10 @@ const styles = StyleSheet.create({
   labelWrapper: {
     ...sharedStyles.labelWrapper,
     marginBottom: spacing(1)
+  },
+  text: {
+    ...sharedStyles.text,
+    marginBottom: 0
   }
 });
 

@@ -28,6 +28,12 @@ module.exports = async (baseConfig, env, defaultConfig) => {
       test: /\.mjs$/,
       include: /node_modules/,
       type: 'javascript/auto'
+    },
+    {
+      test: /\.(graphql|gql)$/,
+      use: {
+        loader: "graphql-tag/loader"
+      }
     }
   );
 

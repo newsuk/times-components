@@ -1,15 +1,4 @@
 import { addTypenameToDocument } from "apollo-utilities";
-import gql from "graphql-tag";
-import articleFragment from "./article-fragment";
+import articleFragment from "./article.graphql";
 
-export default addTypenameToDocument(
-  gql`
-    query ArticleQuery($id: ID!) {
-      article(id: $id) {
-        ...articlePageProps
-      }
-    }
-
-    ${articleFragment}
-  `
-);
+export default addTypenameToDocument(articleFragment);

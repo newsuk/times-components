@@ -6,8 +6,13 @@ rules in one place
 
 ## How to use
 
-Simply import a query which is produced with
-[graphql-tag](https://github.com/apollographql/graphql-tag). Typically you would
+Simply import a query `.graphql` file:
+
+```javascript
+import exampleImport from "./example.graphql";
+```
+
+This is possible by using the [`babel-plugin-import-graphql`](https://www.npmjs.com/package/babel-plugin-import-graphql) plugin. Typically you would
 pass this into an Apollo GraphQL HOC such as `connect` from the `provider`
 package. They can also be used for testing and generating fixtures.
 

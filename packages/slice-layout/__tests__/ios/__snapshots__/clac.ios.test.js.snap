@@ -20,11 +20,9 @@ exports[`2. comment lead and cartoon - medium 1`] = `
     </Text>
   </View>
   <View />
-  <View>
-    <Text>
-      cartoon-1
-    </Text>
-  </View>
+  <Text>
+    cartoon-1
+  </Text>
 </View>
 `;
 
