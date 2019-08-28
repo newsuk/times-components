@@ -46,7 +46,7 @@ exports[`phone full article with style 1`] = `
             "color": "#1D1D1B",
             "fontFamily": "TimesModern-Bold",
             "fontSize": 30,
-            "lineHeight": 33,
+            "lineHeight": 36,
             "marginBottom": 13.75,
             "textAlign": "center",
           }
@@ -87,6 +87,7 @@ exports[`phone full article with style 1`] = `
             "borderBottomWidth": 1,
             "borderTopColor": "#DBDBDB",
             "borderTopWidth": 1,
+            "marginTop": 20,
             "paddingVertical": 10,
             "width": "100%",
           }
@@ -176,7 +177,7 @@ exports[`tablet full article with style 1`] = `
             "color": "#1D1D1B",
             "fontFamily": "TimesModern-Bold",
             "fontSize": 30,
-            "lineHeight": 33,
+            "lineHeight": 36,
             "marginBottom": 13.75,
             "textAlign": "center",
           }
@@ -217,6 +218,7 @@ exports[`tablet full article with style 1`] = `
             "borderBottomWidth": 1,
             "borderTopColor": "#DBDBDB",
             "borderTopWidth": 1,
+            "marginTop": 20,
             "paddingVertical": 10,
             "width": "100%",
           }

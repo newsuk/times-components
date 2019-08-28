@@ -97,6 +97,7 @@ exports[`1. article in depth - tablet 1`] = `
         "borderTopWidth": 1,
         "marginBottom": 20,
         "marginHorizontal": 10,
+        "marginTop": 20,
         "paddingBottom": 10,
         "paddingTop": 10,
         "width": 660,

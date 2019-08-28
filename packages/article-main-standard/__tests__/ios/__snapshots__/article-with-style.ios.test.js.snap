@@ -39,7 +39,7 @@ exports[`full article with style on mobile 1`] = `
             "fontFamily": "TimesModern-Bold",
             "fontSize": 30,
             "fontWeight": "700",
-            "lineHeight": 33,
+            "lineHeight": 36,
             "marginBottom": 7,
             "marginTop": 5,
           }
@@ -170,7 +170,7 @@ exports[`full article with style on tablet 1`] = `
             "fontFamily": "TimesModern-Bold",
             "fontSize": 30,
             "fontWeight": "700",
-            "lineHeight": 33,
+            "lineHeight": 36,
             "marginBottom": 7,
             "marginTop": 5,
           }
