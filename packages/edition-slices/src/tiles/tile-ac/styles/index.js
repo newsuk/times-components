@@ -12,7 +12,7 @@ const paddingVertical = {
   [editionBreakpoints.huge]: spacing(6)
 };
 
-export default breakpont => ({
+export default breakpoint => ({
   container: {
     flex: 1,
     padding: spacing(2)
@@ -34,6 +34,6 @@ export default breakpont => ({
     justifyContent: "center",
     backgroundColor: colours.functional.border,
     paddingHorizontal: spacing(4),
-    paddingVertical: paddingVertical[breakpont]
+    paddingVertical: paddingVertical[breakpoint] || spacing(3)
   }
 });

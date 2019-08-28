@@ -1953,7 +1953,7 @@ exports[`38. tile ac 1`] = `
         "flex": 1,
         "justifyContent": "center",
         "paddingHorizontal": 20,
-        "paddingVertical": undefined,
+        "paddingVertical": 15,
       }
     }
   >
