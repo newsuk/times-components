@@ -94,6 +94,7 @@ exports[`2. tile b 1`] = `
   font-family: TimesDigitalW04;
   font-size: 14px;
   line-height: 20px;
+  margin-bottom: 10px;
 }
 
 .IS1 {
@@ -154,7 +155,7 @@ exports[`2. tile b 1`] = `
           This is tile headline
         </h3>
         <div
-          className="css-text-901oao css-textMultiLine-cens5h r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe IS2 S3"
+          className="css-text-901oao css-textMultiLine-cens5h r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r IS2 S3"
         >
           <span
             className="css-text-901oao css-textHasAncestor-16my406"
@@ -183,10 +184,14 @@ exports[`2. tile b 1`] = `
 exports[`3. tile c 1`] = `
 <style>
 .S1 {
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 
 .S2 {
+  margin-bottom: 0px;
+}
+
+.S3 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-size: 22px;
@@ -195,7 +200,6 @@ exports[`3. tile c 1`] = `
 }
 
 .IS1 {
-  margin-bottom: 10px;
   width: 100%;
 }
 
@@ -228,7 +232,7 @@ exports[`3. tile c 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS1"
+    className="css-view-1dbjc4n r-marginBottom-15d164r IS1 S1"
   >
     <Image
       aspectRatio={1.7777777777777777}
@@ -240,7 +244,7 @@ exports[`3. tile c 1`] = `
     className="css-view-1dbjc4n IS3"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
     >
       <ArticleLabel
         color="#005B8D"
@@ -250,7 +254,7 @@ exports[`3. tile c 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S3"
       role="heading"
     >
       This is tile headline
@@ -452,6 +456,7 @@ exports[`6. tile f 1`] = `
   font-family: TimesDigitalW04;
   font-size: 14px;
   line-height: 20px;
+  margin-bottom: 10px;
 }
 
 .IS1 {
@@ -495,7 +500,7 @@ exports[`6. tile f 1`] = `
       Three Conservative MPs resign
     </h4>
     <div
-      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe S4"
+      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S4"
     >
       <span
         className="css-text-901oao css-textHasAncestor-16my406"
@@ -641,6 +646,7 @@ exports[`8. tile h 1`] = `
   font-family: TimesModern-Bold;
   font-size: 22px;
   font-weight: 400;
+  margin-bottom: 10px;
 }
 
 .S3 {
@@ -652,6 +658,7 @@ exports[`8. tile h 1`] = `
   font-family: TimesDigitalW04;
   font-size: 14px;
   line-height: 20px;
+  margin-bottom: 10px;
 }
 
 .S4 {
@@ -663,7 +670,6 @@ exports[`8. tile h 1`] = `
 
 .IS1 {
   line-height: 22px;
-  margin-bottom: 10px;
 }
 
 .IS2 {
@@ -701,13 +707,13 @@ exports[`8. tile h 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 IS1 S2"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-15d164r IS1 S2"
       role="heading"
     >
       This is tile headline
     </h3>
     <div
-      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe S3"
+      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
     >
       <span
         className="css-text-901oao css-textHasAncestor-16my406"
@@ -761,6 +767,7 @@ exports[`9. tile i 1`] = `
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
+  margin-bottom: 10px;
 }
 
 .IS1 {
@@ -770,7 +777,6 @@ exports[`9. tile i 1`] = `
 .IS2 {
   font-size: 35px;
   line-height: 35px;
-  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -810,7 +816,7 @@ exports[`9. tile i 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 IS2 S2"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-15d164r IS2 S2"
       role="heading"
     >
       This is tile headline
@@ -840,6 +846,7 @@ exports[`10. tile j 1`] = `
   font-family: TimesModern-Bold;
   font-size: 22px;
   font-weight: 400;
+  margin-bottom: 10px;
 }
 
 .IS1 {
@@ -848,7 +855,6 @@ exports[`10. tile j 1`] = `
 
 .IS2 {
   line-height: 22px;
-  margin-bottom: 10px;
 }
 
 .IS3 {
@@ -886,7 +892,7 @@ exports[`10. tile j 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 IS2 S2"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-15d164r IS2 S2"
       role="heading"
     >
       This is tile headline
@@ -915,6 +921,7 @@ exports[`11. tile k 1`] = `
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
+  margin-bottom: 10px;
 }
 
 .IS1 {
@@ -925,7 +932,6 @@ exports[`11. tile k 1`] = `
 .IS2 {
   font-size: 18px;
   line-height: 18px;
-  margin-bottom: 10px;
 }
 
 .IS3 {
@@ -962,7 +968,7 @@ exports[`11. tile k 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 IS2 S2"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-15d164r IS2 S2"
       role="heading"
     >
       This is tile headline
@@ -992,11 +998,11 @@ exports[`12. tile l 1`] = `
   font-family: TimesModern-Bold;
   font-weight: 400;
   line-height: 20px;
+  margin-bottom: 10px;
 }
 
 .IS1 {
   font-size: 20px;
-  margin-bottom: 10px;
 }
 
 .IS2 {
@@ -1036,7 +1042,7 @@ exports[`12. tile l 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-lineHeight-rjixqe IS1 S2"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-lineHeight-rjixqe r-marginBottom-15d164r IS1 S2"
       role="heading"
     >
       This is tile headline
@@ -1784,12 +1790,12 @@ exports[`22. tile u 1`] = `
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
+  margin-bottom: 10px;
 }
 
 .IS1 {
   font-size: 40px;
   line-height: 40px;
-  margin-bottom: 10px;
 }
 
 .IS2 {
@@ -1847,7 +1853,7 @@ exports[`22. tile u 1`] = `
           </div>
           <h3
             aria-level="3"
-            className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 IS1 S2"
+            className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-15d164r IS1 S2"
             role="heading"
           >
             This is tile headline
@@ -1885,6 +1891,7 @@ exports[`23. tile v 1`] = `
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
+  margin-bottom: 10px;
 }
 
 .IS1 {
@@ -1895,7 +1902,6 @@ exports[`23. tile v 1`] = `
 .IS2 {
   font-size: 30px;
   line-height: 30px;
-  margin-bottom: 10px;
 }
 
 .IS3 {
@@ -1942,7 +1948,7 @@ exports[`23. tile v 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 IS2 S2"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-15d164r IS2 S2"
       role="heading"
     >
       This is tile headline
@@ -2197,6 +2203,7 @@ exports[`26. tile y 1`] = `
   font-family: TimesDigitalW04;
   font-size: 14px;
   line-height: 20px;
+  margin-bottom: 10px;
 }
 
 .IS1 {
@@ -2233,7 +2240,7 @@ exports[`26. tile y 1`] = `
       This is tile headline
     </h3>
     <div
-      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe S3"
+      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
     >
       <span
         className="css-text-901oao css-textHasAncestor-16my406"
@@ -2267,16 +2274,16 @@ exports[`27. tile z 1`] = `
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.S3 {
+  margin-bottom: 10px;
 }
 
 .IS1 {
   font-size: 25px;
   line-height: 25px;
-  margin-bottom: 10px;
-}
-
-.IS2 {
-  margin-bottom: 10px;
 }
 </style>
 
@@ -2289,7 +2296,7 @@ exports[`27. tile z 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS2"
+    className="css-view-1dbjc4n r-marginBottom-15d164r S3"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
@@ -2302,7 +2309,7 @@ exports[`27. tile z 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 IS1 S2"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-15d164r IS1 S2"
       role="heading"
     >
       This is tile headline
@@ -2469,12 +2476,12 @@ exports[`29. tile ae 1`] = `
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
+  margin-bottom: 10px;
 }
 
 .IS1 {
   font-size: 30px;
   line-height: 30px;
-  margin-bottom: 10px;
 }
 
 .IS2 {
@@ -2521,7 +2528,7 @@ exports[`29. tile ae 1`] = `
         </div>
         <h3
           aria-level="3"
-          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 IS1 S2"
+          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-15d164r IS1 S2"
           role="heading"
         >
           This is tile headline
@@ -2943,6 +2950,7 @@ exports[`35. tile an 1`] = `
   font-family: TimesDigitalW04;
   font-size: 14px;
   line-height: 20px;
+  margin-bottom: 10px;
 }
 
 .IS1 {
@@ -3009,7 +3017,7 @@ exports[`35. tile an 1`] = `
       This is tile headline
     </h3>
     <div
-      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe S3"
+      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
     >
       <span
         className="css-text-901oao css-textHasAncestor-16my406"
@@ -3303,10 +3311,14 @@ exports[`38. tile ac 1`] = `
 exports[`39. tile aq 1`] = `
 <style>
 .S1 {
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 
 .S2 {
+  margin-bottom: 0px;
+}
+
+.S3 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-size: 22px;
@@ -3315,7 +3327,6 @@ exports[`39. tile aq 1`] = `
 }
 
 .IS1 {
-  margin-bottom: 10px;
   width: 100%;
 }
 
@@ -3347,7 +3358,7 @@ exports[`39. tile aq 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS1"
+    className="css-view-1dbjc4n r-marginBottom-15d164r IS1 S1"
   >
     <Image
       aspectRatio={1.7777777777777777}
@@ -3365,7 +3376,7 @@ exports[`39. tile aq 1`] = `
         className="css-view-1dbjc4n"
       >
         <div
-          className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+          className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
         >
           <ArticleLabel
             color="#005B8D"
@@ -3375,7 +3386,7 @@ exports[`39. tile aq 1`] = `
         </div>
         <h3
           aria-level="3"
-          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
+          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S3"
           role="heading"
         >
           This is tile headline
@@ -3399,10 +3410,14 @@ exports[`39. tile aq 1`] = `
 exports[`40. tile ar 1`] = `
 <style>
 .S1 {
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 
 .S2 {
+  margin-bottom: 0px;
+}
+
+.S3 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
@@ -3410,7 +3425,7 @@ exports[`40. tile ar 1`] = `
   margin-bottom: 5px;
 }
 
-.S3 {
+.S4 {
   color: rgba(105,105,105,1.00);
   -ms-flex-wrap: wrap;
   -webkit-box-lines: multiple;
@@ -3419,10 +3434,10 @@ exports[`40. tile ar 1`] = `
   font-family: TimesDigitalW04;
   font-size: 14px;
   line-height: 20px;
+  margin-bottom: 10px;
 }
 
 .IS1 {
-  margin-bottom: 10px;
   width: 100%;
 }
 
@@ -3459,7 +3474,7 @@ exports[`40. tile ar 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS1"
+    className="css-view-1dbjc4n r-marginBottom-15d164r IS1 S1"
   >
     <Image
       aspectRatio={1.7777777777777777}
@@ -3477,7 +3492,7 @@ exports[`40. tile ar 1`] = `
         className="css-view-1dbjc4n"
       >
         <div
-          className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+          className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
         >
           <ArticleLabel
             color="#005B8D"
@@ -3487,13 +3502,13 @@ exports[`40. tile ar 1`] = `
         </div>
         <h3
           aria-level="3"
-          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-lineHeight-rjixqe r-marginBottom-d0pm55 IS2 S2"
+          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-lineHeight-rjixqe r-marginBottom-d0pm55 IS2 S3"
           role="heading"
         >
           This is tile headline
         </h3>
         <div
-          className="css-text-901oao css-textMultiLine-cens5h r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe IS3 S3"
+          className="css-text-901oao css-textMultiLine-cens5h r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r IS3 S4"
         >
           <span
             className="css-text-901oao css-textHasAncestor-16my406"
@@ -3522,17 +3537,21 @@ exports[`40. tile ar 1`] = `
 exports[`41. tile as 1`] = `
 <style>
 .S1 {
-  margin-bottom: 0px;
+  margin-bottom: 10px;
 }
 
 .S2 {
+  margin-bottom: 0px;
+}
+
+.S3 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
   margin-bottom: 5px;
 }
 
-.S3 {
+.S4 {
   color: rgba(105,105,105,1.00);
   -ms-flex-wrap: wrap;
   -webkit-box-lines: multiple;
@@ -3541,10 +3560,10 @@ exports[`41. tile as 1`] = `
   font-family: TimesDigitalW04;
   font-size: 14px;
   line-height: 20px;
+  margin-bottom: 10px;
 }
 
 .IS1 {
-  margin-bottom: 10px;
   width: 100%;
 }
 
@@ -3578,7 +3597,7 @@ exports[`41. tile as 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS1"
+    className="css-view-1dbjc4n r-marginBottom-15d164r IS1 S1"
   >
     <Image
       aspectRatio={1.5}
@@ -3590,7 +3609,7 @@ exports[`41. tile as 1`] = `
     className="css-view-1dbjc4n IS3"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
     >
       <ArticleLabel
         color="#005B8D"
@@ -3600,13 +3619,13 @@ exports[`41. tile as 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S3"
       role="heading"
     >
       This is tile headline
     </h3>
     <div
-      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe S3"
+      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S4"
     >
       <span
         className="css-text-901oao css-textHasAncestor-16my406"

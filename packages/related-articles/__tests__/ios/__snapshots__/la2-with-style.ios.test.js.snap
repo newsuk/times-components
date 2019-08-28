@@ -83,6 +83,7 @@ exports[`default styles 1`] = `
                         "fontFamily": "TimesDigitalW04",
                         "fontSize": 14,
                         "lineHeight": 20,
+                        "marginBottom": 0,
                       }
                     }
                   >

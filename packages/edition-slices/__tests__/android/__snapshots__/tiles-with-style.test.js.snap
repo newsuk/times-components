@@ -86,6 +86,7 @@ exports[`2. tile b 1`] = `
               "fontFamily": "TimesDigitalW04",
               "fontSize": 14,
               "lineHeight": 20,
+              "marginBottom": 0,
             }
           }
         >
@@ -289,6 +290,7 @@ exports[`6. tile f 1`] = `
           "fontFamily": "TimesDigitalW04",
           "fontSize": 14,
           "lineHeight": 20,
+          "marginBottom": 0,
         }
       }
     >
@@ -400,6 +402,7 @@ exports[`8. tile h 1`] = `
           "fontFamily": "TimesDigitalW04",
           "fontSize": 14,
           "lineHeight": 20,
+          "marginBottom": 0,
         }
       }
     >
@@ -1384,6 +1387,7 @@ exports[`26. tile y 1`] = `
           "fontFamily": "TimesDigitalW04",
           "fontSize": 14,
           "lineHeight": 20,
+          "marginBottom": 0,
         }
       }
     >
@@ -1829,6 +1833,7 @@ exports[`35. tile an 1`] = `
           "fontFamily": "TimesDigitalW04",
           "fontSize": 14,
           "lineHeight": 20,
+          "marginBottom": 0,
         }
       }
     >
@@ -2088,6 +2093,7 @@ exports[`40. tile ar 1`] = `
               "fontFamily": "TimesDigitalW04",
               "fontSize": 14,
               "lineHeight": 20,
+              "marginBottom": 0,
             }
           }
         >
@@ -2154,6 +2160,7 @@ exports[`41. tile as 1`] = `
           "fontFamily": "TimesDigitalW04",
           "fontSize": 14,
           "lineHeight": 20,
+          "marginBottom": 0,
         }
       }
     >

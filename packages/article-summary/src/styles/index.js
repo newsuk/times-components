@@ -6,6 +6,10 @@ const styles = StyleSheet.create({
   headlineWrapper: {
     ...sharedStyles.headlineWrapper,
     lineHeight: 25
+  },
+  text: {
+    ...sharedStyles.text,
+    marginBottom: 0
   }
 });
 
