@@ -16,6 +16,10 @@ function Head({ description, name, slug }) {
     <Context.Consumer>
       {({ makeTopicUrl }) => (
         <Helmet>
+          {/**
+            @todo: Remove this script tag and the corresponding proxy in Akamai
+            after the PoC is done.
+          */}
           <link
             as="script"
             href="/assets/optimizely/16079460199.js"
