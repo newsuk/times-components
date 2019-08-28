@@ -541,20 +541,19 @@ exports[`5. lead two no pic and two - medium 1`] = `
 exports[`6. leaders slice - medium 1`] = `
 <style>
 .IS1 {
-  height: 51;
-  width: 283;
+  height: 42;
+  width: 237;
 }
 
 .IS2 {
   color: rgba(133,0,41,1.00);
   font-family: TimesDigitalW04-Regular;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 15px;
+  line-height: 15px;
   text-align: center;
 }
 
 .IS3 {
-  padding-bottom: 5px;
   padding-top: 10px;
 }
 
@@ -566,8 +565,8 @@ exports[`6. leaders slice - medium 1`] = `
 }
 
 .IS5 {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 33%;
 }
 
@@ -581,13 +580,13 @@ exports[`6. leaders slice - medium 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 60px;
+  margin-top: 30px;
 }
 
 .IS7 {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 33%;
 }
 
@@ -601,13 +600,13 @@ exports[`6. leaders slice - medium 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 60px;
+  margin-top: 30px;
 }
 
 .IS9 {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 33%;
 }
 
@@ -621,7 +620,6 @@ exports[`6. leaders slice - medium 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-bottom: 5px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -632,7 +630,11 @@ exports[`6. leaders slice - medium 1`] = `
 
 .IS11 {
   background-color: rgba(240,240,240,1.00);
-  padding-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 30px;
 }
 
 .IS12 {
@@ -676,7 +678,7 @@ exports[`6. leaders slice - medium 1`] = `
       <div
         className="css-view-1dbjc4n IS5"
       >
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader2"
         />
@@ -687,7 +689,7 @@ exports[`6. leaders slice - medium 1`] = `
       <div
         className="css-view-1dbjc4n IS7"
       >
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader1"
         />
@@ -698,7 +700,7 @@ exports[`6. leaders slice - medium 1`] = `
       <div
         className="css-view-1dbjc4n IS9"
       >
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader3"
         />
@@ -2578,20 +2580,19 @@ exports[`20. lead two no pic and two - wide 1`] = `
 exports[`21. leaders slice - wide 1`] = `
 <style>
 .IS1 {
-  height: 51;
-  width: 283;
+  height: 42;
+  width: 237;
 }
 
 .IS2 {
   color: rgba(133,0,41,1.00);
   font-family: TimesDigitalW04-Regular;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 15px;
+  line-height: 15px;
   text-align: center;
 }
 
 .IS3 {
-  padding-bottom: 5px;
   padding-top: 10px;
 }
 
@@ -2603,8 +2604,8 @@ exports[`21. leaders slice - wide 1`] = `
 }
 
 .IS5 {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 33%;
 }
 
@@ -2618,13 +2619,13 @@ exports[`21. leaders slice - wide 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 60px;
+  margin-top: 30px;
 }
 
 .IS7 {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 33%;
 }
 
@@ -2638,13 +2639,13 @@ exports[`21. leaders slice - wide 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 60px;
+  margin-top: 30px;
 }
 
 .IS9 {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 33%;
 }
 
@@ -2658,7 +2659,6 @@ exports[`21. leaders slice - wide 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-bottom: 5px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -2669,7 +2669,11 @@ exports[`21. leaders slice - wide 1`] = `
 
 .IS11 {
   background-color: rgba(240,240,240,1.00);
-  padding-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 30px;
 }
 
 .IS12 {
@@ -2713,7 +2717,7 @@ exports[`21. leaders slice - wide 1`] = `
       <div
         className="css-view-1dbjc4n IS5"
       >
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader2"
         />
@@ -2724,7 +2728,7 @@ exports[`21. leaders slice - wide 1`] = `
       <div
         className="css-view-1dbjc4n IS7"
       >
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader1"
         />
@@ -2735,7 +2739,7 @@ exports[`21. leaders slice - wide 1`] = `
       <div
         className="css-view-1dbjc4n IS9"
       >
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader3"
         />
@@ -4618,20 +4622,19 @@ exports[`35. lead two no pic and two - huge 1`] = `
 exports[`36. leaders slice - huge 1`] = `
 <style>
 .IS1 {
-  height: 51;
-  width: 283;
+  height: 42;
+  width: 237;
 }
 
 .IS2 {
   color: rgba(133,0,41,1.00);
   font-family: TimesDigitalW04-Regular;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 15px;
+  line-height: 15px;
   text-align: center;
 }
 
 .IS3 {
-  padding-bottom: 5px;
   padding-top: 10px;
 }
 
@@ -4643,8 +4646,8 @@ exports[`36. leaders slice - huge 1`] = `
 }
 
 .IS5 {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 33%;
 }
 
@@ -4658,13 +4661,13 @@ exports[`36. leaders slice - huge 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 60px;
+  margin-top: 30px;
 }
 
 .IS7 {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 33%;
 }
 
@@ -4678,13 +4681,13 @@ exports[`36. leaders slice - huge 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 60px;
+  margin-top: 30px;
 }
 
 .IS9 {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 33%;
 }
 
@@ -4698,7 +4701,6 @@ exports[`36. leaders slice - huge 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-bottom: 5px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -4709,7 +4711,11 @@ exports[`36. leaders slice - huge 1`] = `
 
 .IS11 {
   background-color: rgba(240,240,240,1.00);
-  padding-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 30px;
 }
 
 .IS12 {
@@ -4753,7 +4759,7 @@ exports[`36. leaders slice - huge 1`] = `
       <div
         className="css-view-1dbjc4n IS5"
       >
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader2"
         />
@@ -4764,7 +4770,7 @@ exports[`36. leaders slice - huge 1`] = `
       <div
         className="css-view-1dbjc4n IS7"
       >
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader1"
         />
@@ -4775,7 +4781,7 @@ exports[`36. leaders slice - huge 1`] = `
       <div
         className="css-view-1dbjc4n IS9"
       >
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader3"
         />

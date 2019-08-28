@@ -792,20 +792,19 @@ exports[`2. lead one full width 1`] = `
 exports[`2. leaders 1`] = `
 <style>
 .IS1 {
-  height: 54;
-  width: 283;
+  height: 42;
+  width: 227;
 }
 
 .IS2 {
   color: rgba(133,0,41,1.00);
   font-family: TimesDigitalW04-Regular;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 15px;
+  line-height: 15px;
   text-align: center;
 }
 
 .IS3 {
-  padding-bottom: 5px;
   padding-top: 10px;
 }
 
@@ -817,8 +816,8 @@ exports[`2. leaders 1`] = `
 }
 
 .IS5 {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 33%;
 }
 
@@ -832,13 +831,13 @@ exports[`2. leaders 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 60px;
+  margin-top: 30px;
 }
 
 .IS7 {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 33%;
 }
 
@@ -852,13 +851,13 @@ exports[`2. leaders 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 60px;
+  margin-top: 30px;
 }
 
 .IS9 {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 33%;
 }
 
@@ -872,7 +871,6 @@ exports[`2. leaders 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-bottom: 5px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -883,7 +881,11 @@ exports[`2. leaders 1`] = `
 
 .IS11 {
   background-color: rgba(240,240,240,1.00);
-  padding-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 30px;
 }
 
 .IS12 {
@@ -927,7 +929,7 @@ exports[`2. leaders 1`] = `
       <div
         className="css-view-1dbjc4n IS5"
       >
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader2"
         />
@@ -938,7 +940,7 @@ exports[`2. leaders 1`] = `
       <div
         className="css-view-1dbjc4n IS7"
       >
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader1"
         />
@@ -949,7 +951,7 @@ exports[`2. leaders 1`] = `
       <div
         className="css-view-1dbjc4n IS9"
       >
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader3"
         />
@@ -962,20 +964,19 @@ exports[`2. leaders 1`] = `
 exports[`2. leaders 2`] = `
 <style>
 .IS1 {
-  height: 51;
-  width: 283;
+  height: 42;
+  width: 237;
 }
 
 .IS2 {
   color: rgba(133,0,41,1.00);
   font-family: TimesDigitalW04-Regular;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 15px;
+  line-height: 15px;
   text-align: center;
 }
 
 .IS3 {
-  padding-bottom: 5px;
   padding-top: 10px;
 }
 
@@ -987,8 +988,8 @@ exports[`2. leaders 2`] = `
 }
 
 .IS5 {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 33%;
 }
 
@@ -1002,13 +1003,13 @@ exports[`2. leaders 2`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 60px;
+  margin-top: 30px;
 }
 
 .IS7 {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 33%;
 }
 
@@ -1022,13 +1023,13 @@ exports[`2. leaders 2`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 60px;
+  margin-top: 30px;
 }
 
 .IS9 {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 33%;
 }
 
@@ -1042,7 +1043,6 @@ exports[`2. leaders 2`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-bottom: 5px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -1053,7 +1053,11 @@ exports[`2. leaders 2`] = `
 
 .IS11 {
   background-color: rgba(240,240,240,1.00);
-  padding-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 30px;
 }
 
 .IS12 {
@@ -1097,7 +1101,7 @@ exports[`2. leaders 2`] = `
       <div
         className="css-view-1dbjc4n IS5"
       >
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader2"
         />
@@ -1108,7 +1112,7 @@ exports[`2. leaders 2`] = `
       <div
         className="css-view-1dbjc4n IS7"
       >
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader1"
         />
@@ -1119,7 +1123,7 @@ exports[`2. leaders 2`] = `
       <div
         className="css-view-1dbjc4n IS9"
       >
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader3"
         />
@@ -2900,20 +2904,19 @@ exports[`13. list two and six no pic 1`] = `
 exports[`14. leaders 1`] = `
 <style>
 .IS1 {
-  height: 51;
-  width: 283;
+  height: 42;
+  width: 237;
 }
 
 .IS2 {
   color: rgba(133,0,41,1.00);
   font-family: TimesDigitalW04-Regular;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 15px;
+  line-height: 15px;
   text-align: center;
 }
 
 .IS3 {
-  padding-bottom: 5px;
   padding-top: 10px;
 }
 
@@ -2925,8 +2928,8 @@ exports[`14. leaders 1`] = `
 }
 
 .IS5 {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 33%;
 }
 
@@ -2940,13 +2943,13 @@ exports[`14. leaders 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 60px;
+  margin-top: 30px;
 }
 
 .IS7 {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 33%;
 }
 
@@ -2960,13 +2963,13 @@ exports[`14. leaders 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 60px;
+  margin-top: 30px;
 }
 
 .IS9 {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 33%;
 }
 
@@ -2980,7 +2983,6 @@ exports[`14. leaders 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-bottom: 5px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -2991,7 +2993,11 @@ exports[`14. leaders 1`] = `
 
 .IS11 {
   background-color: rgba(240,240,240,1.00);
-  padding-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 30px;
 }
 
 .IS12 {
@@ -3035,7 +3041,7 @@ exports[`14. leaders 1`] = `
       <div
         className="css-view-1dbjc4n IS5"
       >
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader2"
         />
@@ -3046,7 +3052,7 @@ exports[`14. leaders 1`] = `
       <div
         className="css-view-1dbjc4n IS7"
       >
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader1"
         />
@@ -3057,7 +3063,7 @@ exports[`14. leaders 1`] = `
       <div
         className="css-view-1dbjc4n IS9"
       >
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader3"
         />

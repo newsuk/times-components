@@ -1277,36 +1277,7 @@ exports[`29. tile ae 1`] = `
 </Link>
 `;
 
-exports[`30. tile ag 1`] = `
-<Link
-  linkStyle={
-    Object {
-      "flex": 1,
-      "paddingBottom": 10,
-      "paddingHorizontal": 20,
-    }
-  }
-  url="/article/123"
->
-  <View>
-    <Text
-      accessibilityRole="header"
-      aria-level="3"
-    >
-      Driving Off
-    </Text>
-    <Text
-      accessibilityRole="header"
-      aria-level="4"
-    >
-      Three Conservative MPs resign
-    </Text>
-    <ArticleFlags />
-  </View>
-</Link>
-`;
-
-exports[`31. tile aj 1`] = `
+exports[`30. tile aj 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1335,7 +1306,7 @@ exports[`31. tile aj 1`] = `
 </Link>
 `;
 
-exports[`32. tile ak 1`] = `
+exports[`31. tile ak 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1366,7 +1337,7 @@ exports[`32. tile ak 1`] = `
 </Link>
 `;
 
-exports[`33. tile al 1`] = `
+exports[`32. tile al 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1413,7 +1384,7 @@ exports[`33. tile al 1`] = `
 </Link>
 `;
 
-exports[`34. tile am 1`] = `
+exports[`33. tile am 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1460,7 +1431,7 @@ exports[`34. tile am 1`] = `
 </Link>
 `;
 
-exports[`35. tile an 1`] = `
+exports[`34. tile an 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1512,7 +1483,7 @@ exports[`35. tile an 1`] = `
 </Link>
 `;
 
-exports[`36. tile ad 1`] = `
+exports[`35. tile ad 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1556,7 +1527,7 @@ exports[`36. tile ad 1`] = `
 </Link>
 `;
 
-exports[`37. tile ac 1`] = `
+exports[`36. tile ac 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1599,7 +1570,7 @@ exports[`37. tile ac 1`] = `
 </Link>
 `;
 
-exports[`38. tile aa 1`] = `
+exports[`37. tile aa 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1642,7 +1613,7 @@ exports[`38. tile aa 1`] = `
 </Link>
 `;
 
-exports[`39. tile ar 1`] = `
+exports[`38. tile ar 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1701,7 +1672,7 @@ exports[`39. tile ar 1`] = `
 </Link>
 `;
 
-exports[`40. tile as 1`] = `
+exports[`39. tile as 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1754,7 +1725,7 @@ exports[`40. tile as 1`] = `
 </Link>
 `;
 
-exports[`41. tile ah 1`] = `
+exports[`40. tile ah 1`] = `
 <Link
   linkStyle={
     Object {
@@ -1807,7 +1778,7 @@ exports[`41. tile ah 1`] = `
 </Link>
 `;
 
-exports[`42. tile ai 1`] = `
+exports[`41. tile ai 1`] = `
 <Link
   linkStyle={
     Object {

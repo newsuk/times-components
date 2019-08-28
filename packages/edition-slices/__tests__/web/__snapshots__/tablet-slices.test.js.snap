@@ -141,21 +141,21 @@ exports[`6. leaders slice - medium 1`] = `
     </div>
     <div>
       <div>
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader2"
         />
       </div>
       <div />
       <div>
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader1"
         />
       </div>
       <div />
       <div>
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader3"
         />
@@ -639,21 +639,21 @@ exports[`21. leaders slice - wide 1`] = `
     </div>
     <div>
       <div>
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader2"
         />
       </div>
       <div />
       <div>
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader1"
         />
       </div>
       <div />
       <div>
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader3"
         />
@@ -1137,21 +1137,21 @@ exports[`36. leaders slice - huge 1`] = `
     </div>
     <div>
       <div>
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader2"
         />
       </div>
       <div />
       <div>
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader1"
         />
       </div>
       <div />
       <div>
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader3"
         />

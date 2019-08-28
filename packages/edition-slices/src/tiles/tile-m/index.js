@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { editionBreakpoints } from "@times-components/styleguide";
 import {
   getTileStrapline,
   TileLink,
@@ -8,7 +9,7 @@ import {
 } from "../shared";
 import styleFactory from "./styles";
 
-const TileM = ({ onPress, tile, breakpoint }) => {
+const TileM = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
   const {
     article: { id, shortHeadline, url }
   } = tile;

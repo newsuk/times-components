@@ -30,13 +30,19 @@ const mediumBreakpointStyles = {
 
 const wideBreakpointStyles = {
   columnItems: {
-    paddingHorizontal: spacing(2),
+    paddingHorizontal: spacing(4),
     width: "33%"
   },
   container: {
     flex: 1,
-    flexDirection: "row",
-    paddingBottom: spacing(1)
+    flexDirection: "row"
+  },
+  itemColSeparator: {
+    borderColor: colours.functional.keyline,
+    borderRightWidth: 1,
+    borderStyle: "solid",
+    marginTop: spacing(6),
+    marginBottom: spacing(12)
   }
 };
 

@@ -108,3 +108,75 @@ exports[`2. leaders - medium 1`] = `
   </View>
 </View>
 `;
+
+exports[`3. leaders - wide 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "paddingHorizontal": 20,
+        "width": "33%",
+      }
+    }
+  >
+    <Text>
+      leader-2
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "borderColor": "#DBDBDB",
+        "borderRightWidth": 1,
+        "borderStyle": "solid",
+        "marginBottom": 60,
+        "marginTop": 30,
+        "marginVertical": 10,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "paddingHorizontal": 20,
+        "width": "33%",
+      }
+    }
+  >
+    <Text>
+      leader-1
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "borderColor": "#DBDBDB",
+        "borderRightWidth": 1,
+        "borderStyle": "solid",
+        "marginBottom": 60,
+        "marginTop": 30,
+        "marginVertical": 10,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "paddingHorizontal": 20,
+        "width": "33%",
+      }
+    }
+  >
+    <Text>
+      leader-3
+    </Text>
+  </View>
+</View>
+`;
