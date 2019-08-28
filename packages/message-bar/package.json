@@ -42,7 +42,7 @@
     "@times-components/eslint-config-thetimes": "0.8.13",
     "@times-components/jest-configurator": "2.6.3",
     "@times-components/jest-serializer": "3.2.15",
-    "@times-components/storybook": "4.0.30",
+    "@times-components/storybook": "4.0.31",
     "@times-components/test-utils": "2.3.3",
     "@times-components/webpack-configurator": "2.0.24",
     "enzyme": "3.9.0",
@@ -64,8 +64,8 @@
   },
   "dependencies": {
     "@times-components/icons": "2.12.10",
-    "@times-components/responsive": "0.4.61",
-    "@times-components/styleguide": "3.28.43",
+    "@times-components/responsive": "0.4.62",
+    "@times-components/styleguide": "3.28.44",
     "prop-types": "15.7.2"
   },
   "publishConfig": {
