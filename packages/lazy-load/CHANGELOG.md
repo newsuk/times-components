@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.59](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.4.58...@times-components/lazy-load@0.4.59) (2019-08-28)
+
+
+### Bug Fixes
+
+* REPLAT-7826 changes to related articles for editorial (native) ([#2236](https://github.com/newsuk/times-components/issues/2236)) ([39691d2](https://github.com/newsuk/times-components/commit/39691d2))
+
+
+
+
+
 ## [0.4.58](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.4.57...@times-components/lazy-load@0.4.58) (2019-08-26)
 
 **Note:** Version bump only for package @times-components/lazy-load

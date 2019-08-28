@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.12.11](https://github.com/newsuk/times-components/compare/@times-components/icons@2.12.10...@times-components/icons@2.12.11) (2019-08-28)
+
+
+### Bug Fixes
+
+* REPLAT-7826 changes to related articles for editorial (native) ([#2236](https://github.com/newsuk/times-components/issues/2236)) ([39691d2](https://github.com/newsuk/times-components/commit/39691d2))
+
+
+
+
+
 ## [2.12.10](https://github.com/newsuk/times-components/compare/@times-components/icons@2.12.9...@times-components/icons@2.12.10) (2019-08-26)
 
 **Note:** Version bump only for package @times-components/icons

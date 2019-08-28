@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.1.31](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.1.30...@times-components/related-articles@6.1.31) (2019-08-28)
+
+
+### Bug Fixes
+
+* REPLAT-7826 changes to related articles for editorial (native) ([#2236](https://github.com/newsuk/times-components/issues/2236)) ([39691d2](https://github.com/newsuk/times-components/commit/39691d2))
+
+
+
+
+
 ## [6.1.30](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.1.29...@times-components/related-articles@6.1.30) (2019-08-28)
 
 **Note:** Version bump only for package @times-components/related-articles

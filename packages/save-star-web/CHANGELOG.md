@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.16](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.3.15...@times-components/save-star-web@0.3.16) (2019-08-28)
+
+
+### Bug Fixes
+
+* REPLAT-7826 changes to related articles for editorial (native) ([#2236](https://github.com/newsuk/times-components/issues/2236)) ([39691d2](https://github.com/newsuk/times-components/commit/39691d2))
+
+
+
+
+
 ## [0.3.15](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.3.14...@times-components/save-star-web@0.3.15) (2019-08-26)
 
 **Note:** Version bump only for package @times-components/save-star-web

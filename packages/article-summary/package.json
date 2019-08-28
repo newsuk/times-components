@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-summary",
-  "version": "3.13.4",
+  "version": "3.13.5",
   "main": "dist/article-summary",
   "dev": "src/article-summary",
   "scripts": {
@@ -61,14 +61,14 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/article-byline": "3.1.116",
+    "@times-components/article-byline": "3.1.117",
     "@times-components/article-flag": "2.6.69",
     "@times-components/article-label": "2.4.11",
-    "@times-components/date-publication": "0.20.89",
-    "@times-components/markup": "3.3.99",
+    "@times-components/date-publication": "0.20.90",
+    "@times-components/markup": "3.3.100",
     "@times-components/markup-forest": "1.7.21",
     "@times-components/styleguide": "3.28.44",
-    "@times-components/video-label": "2.3.8",
+    "@times-components/video-label": "2.3.9",
     "prop-types": "15.7.2"
   },
   "peerDependencies": {
