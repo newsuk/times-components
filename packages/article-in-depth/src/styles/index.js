@@ -12,6 +12,10 @@ const nativeStyles = {
     ...sharedStyles.standFirst,
     lineHeight: 25,
     marginBottom: 0
+  },
+  metaContainer: {
+    ...sharedStyles.metaContainer,
+    marginTop: spacing(4)
   }
 };
 

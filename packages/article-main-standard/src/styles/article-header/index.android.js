@@ -25,6 +25,10 @@ const androidStyles = {
   },
   standFirstWithoutFlags: {
     paddingBottom: spacing(4)
+  },
+  metaContainer: {
+    ...sharedStyles.metaContainer,
+    marginTop: spacing(4)
   }
 };
 

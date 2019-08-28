@@ -93,6 +93,7 @@ exports[`1. article main comment - tablet 1`] = `
             "borderTopWidth": 1,
             "flexDirection": "row",
             "justifyContent": "center",
+            "marginTop": 20,
             "paddingVertical": 10,
             "width": "100%",
           }
