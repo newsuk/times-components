@@ -1,8 +1,11 @@
 module.exports = {
   extends: ["airbnb", "prettier", "prettier/react"],
+  plugins: ["react-hooks"],
   parser: "babel-eslint",
   rules: {
     "react/jsx-filename-extension": [1, { extensions: [".js"] }],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
     "import/extensions": "off",
     "import/no-extraneous-dependencies": [
       "error",
