@@ -8,7 +8,7 @@ const { markupMediaQuery } =
   process.env.NODE_ENV === "test"
     ? Platform.select({
         web: () => require("./serialise.web"),
-        native: () => require("./serialise")
+        native: () => ({})
       })()
     : {};
 
@@ -31,7 +31,7 @@ function mediaQuery(shouldApplyStyles, tagInfo = {}) {
     };
 
     // @todo Update tests for this
-    if (process.env.NODE_ENV === "test") {
+    if (process.env.NODE_ENV === "test" && markupMediaQuery) {
       styledComponentPropMapper = markupMediaQuery(styledComponentPropMapper, {
         args: "[custom-matcher]",
         styles,

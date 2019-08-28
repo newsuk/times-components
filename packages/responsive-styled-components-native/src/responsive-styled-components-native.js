@@ -4,11 +4,11 @@ import { Dimensions, Platform, Text, View } from "react-native";
 import styled, { css } from "styled-components/native";
 import { SCREEN_WIDTH_PROP } from "./shared";
 
-const serialise =
+const { createPropMarker } =
   process.env.NODE_ENV === "test"
     ? Platform.select({
         web: () => require("./serialise.web"),
-        native: () => require("./serialise")
+        native: () => ({})
       })()
     : {};
 
@@ -48,18 +48,16 @@ function responsiveStyled(Type) {
   function responsiveStyledTag(...args) {
     const Styled = styledTag(...args);
 
-    let ResponsiveStyled = forwardRef((props, ref) => {
+    const markupProps = process.env.NODE_ENV === "test" && createPropMarker ? createPropMarker(args) : props => props;
+
+    const ResponsiveStyled = forwardRef((props, ref) => {
       const screenWidth = useScreenWidth();
       const passedProps = {
-        ...props,
+        ...markupProps(props),
         [SCREEN_WIDTH_PROP]: screenWidth
       };
       return <Styled {...passedProps} ref={ref} />;
     });
-
-    if (process.env.NODE_ENV === "test") {
-      ResponsiveStyled = serialise.markup(ResponsiveStyled, args);
-    }
 
     ResponsiveStyled.displayName = `ResponsiveStyled(${typeName})`;
     Styled.displayName = `Styled(${typeName})`;

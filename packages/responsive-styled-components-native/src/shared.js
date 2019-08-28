@@ -1,12 +1,13 @@
-/* eslint-disable import/prefer-default-export */
+// This is used as part of a DOM attribute and needs to not use disallowed characters
+const SHORT_NAME = "responsive-styled-components-native";
+const FULL_NAME = `@times-components/${SHORT_NAME}`;
 
-// This needs to be sufficiently long and "unique" that it won't
-// clash with any props used by the consumers.
-// I would use a Symbol but not currently supported.
-// https://github.com/facebook/react/issues/7552
-export const SCREEN_WIDTH_PROP =
-  "@times-components/responsive-styled-components-native/screen-width";
+export const ID_ATTR = `data-${SHORT_NAME}-id`;
 
-export const MEDIA_QUERY_PROP_MAPPER_TAG = Symbol.for(
-  "@times-components/responsive-styled-components-native/mediaQuery/info"
-);
+export const SCREEN_WIDTH_PROP = `${FULL_NAME}/screen-width`;
+export const MEDIA_QUERY_PROP_MAPPER_TAG = `${FULL_NAME}/mediaQuery/info`;
+export const SERIALIZER_MARKER = `${FULL_NAME}/serialization-marker`;
+
+export const INTERNALS = {
+  serializer: {}
+};
