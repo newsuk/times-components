@@ -70,6 +70,7 @@ exports[`1. article summary component with a single paragraph 1`] = `
         "fontSize": 13,
         "lineHeight": 15,
         "marginBottom": 5,
+        "marginTop": 5,
       }
     }
   >

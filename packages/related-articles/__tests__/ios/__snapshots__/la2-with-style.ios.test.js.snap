@@ -63,10 +63,10 @@ exports[`default styles 1`] = `
                   style={
                     Object {
                       "color": "#333333",
-                      "fontFamily": "TimesModern-Bold",
+                      "fontFamily": "TimesModern-Regular",
                       "fontSize": 22,
-                      "fontWeight": "400",
-                      "lineHeight": 25,
+                      "fontWeight": "100",
+                      "lineHeight": 28,
                       "marginBottom": 5,
                       "marginTop": 0,
                     }
@@ -102,6 +102,7 @@ exports[`default styles 1`] = `
                       "fontSize": 13,
                       "lineHeight": 15,
                       "marginBottom": 5,
+                      "marginTop": 5,
                     }
                   }
                 >

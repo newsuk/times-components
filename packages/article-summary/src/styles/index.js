@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { spacing } from "@times-components/styleguide";
 import sharedStyles from "./shared";
 
 const styles = StyleSheet.create({
@@ -10,6 +11,10 @@ const styles = StyleSheet.create({
   text: {
     ...sharedStyles.text,
     marginBottom: 0
+  },
+  metaText: {
+    ...sharedStyles.metaText,
+    marginTop: spacing(1)
   }
 });
 
