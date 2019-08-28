@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.11.40](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.11.39...@times-components/article-main-standard@3.11.40) (2019-08-28)
+
+
+### Bug Fixes
+
+* REPLAT-7822 changes requested by editorial for native articles ([#2235](https://github.com/newsuk/times-components/issues/2235)) ([b3d9647](https://github.com/newsuk/times-components/commit/b3d9647))
+
+
+
+
+
 ## [3.11.39](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.11.38...@times-components/article-main-standard@3.11.39) (2019-08-28)
 
 **Note:** Version bump only for package @times-components/article-main-standard

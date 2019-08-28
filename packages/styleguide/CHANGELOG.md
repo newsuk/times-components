@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.28.44](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.28.43...@times-components/styleguide@3.28.44) (2019-08-28)
+
+
+### Bug Fixes
+
+* REPLAT-7822 changes requested by editorial for native articles ([#2235](https://github.com/newsuk/times-components/issues/2235)) ([b3d9647](https://github.com/newsuk/times-components/commit/b3d9647))
+
+
+
+
+
 ## [3.28.43](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.28.42...@times-components/styleguide@3.28.43) (2019-08-26)
 
 **Note:** Version bump only for package @times-components/styleguide

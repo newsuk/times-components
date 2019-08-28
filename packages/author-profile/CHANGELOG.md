@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.111](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.0.110...@times-components/author-profile@6.0.111) (2019-08-28)
+
+
+### Bug Fixes
+
+* REPLAT-7822 changes requested by editorial for native articles ([#2235](https://github.com/newsuk/times-components/issues/2235)) ([b3d9647](https://github.com/newsuk/times-components/commit/b3d9647))
+
+
+
+
+
 ## [6.0.110](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.0.109...@times-components/author-profile@6.0.110) (2019-08-28)
 
 **Note:** Version bump only for package @times-components/author-profile
