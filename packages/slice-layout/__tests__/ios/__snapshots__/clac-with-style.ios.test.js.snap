@@ -46,16 +46,24 @@ exports[`2. comment lead and cartoon - medium 1`] = `
   <View
     style={
       Object {
-        "borderBottomWidth": 1,
         "borderColor": "#DBDBDB",
+        "borderRightWidth": 1,
         "borderStyle": "solid",
-        "marginHorizontal": 10,
+        "marginVertical": 10,
       }
     }
   />
-  <Text>
-    cartoon-1
-  </Text>
+  <View
+    style={
+      Object {
+        "width": "66.7%",
+      }
+    }
+  >
+    <Text>
+      cartoon-1
+    </Text>
+  </View>
 </View>
 `;
 

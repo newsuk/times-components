@@ -21,7 +21,9 @@ exports[`2. comment lead and cartoon - medium 1`] = `
   </div>
   <div />
   <div>
-    cartoon-1
+    <div>
+      cartoon-1
+    </div>
   </div>
 </div>
 `;
