@@ -15,6 +15,10 @@ const styles = StyleSheet.create({
   text: {
     ...sharedStyles.text,
     marginBottom: 0
+  },
+  metaText: {
+    ...sharedStyles.metaText,
+    marginTop: spacing(1)
   }
 });
 
