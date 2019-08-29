@@ -104,6 +104,8 @@ exports[`2. secondary one and columnist - medium 1`] = `
     className="css-view-1dbjc4n"
     style={
       Object {
+        "paddingBottom": "5px",
+        "paddingTop": "5px",
         "width": "27%",
       }
     }

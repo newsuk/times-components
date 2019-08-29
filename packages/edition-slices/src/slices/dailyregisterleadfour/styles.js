@@ -68,6 +68,7 @@ const mediumBreakpointStyles = {
   },
   title: {
     ...smallBreakpointStyles.title,
+    fontSize: 15,
     marginBottom: spacing(3)
   }
 };

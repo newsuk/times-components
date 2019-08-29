@@ -10,7 +10,8 @@ const mediumBreakpointStyles = {
     width: "73%"
   },
   secondaryContainer: {
-    width: "27%"
+    width: "27%",
+    paddingVertical: spacing(1)
   },
   colSeparator: {
     marginVertical: spacing(3)
@@ -27,7 +28,8 @@ const wideBreakpointStyles = {
     width: "67%"
   },
   secondaryContainer: {
-    width: "33%"
+    width: "33%",
+    paddingVertical: spacing(1)
   },
   colSeparator: {
     marginVertical: spacing(3)

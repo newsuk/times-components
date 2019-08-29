@@ -305,6 +305,8 @@ exports[`2. secondary four - medium 1`] = `
         "msFlexNegative": 1,
         "msFlexPositive": 1,
         "msFlexPreferredSize": "0%",
+        "paddingBottom": "5px",
+        "paddingTop": "5px",
       }
     }
   >
@@ -484,6 +486,8 @@ exports[`3. secondary four - wide 1`] = `
         "msFlexNegative": 1,
         "msFlexPositive": 1,
         "msFlexPreferredSize": "0%",
+        "paddingBottom": "5px",
+        "paddingTop": "5px",
       }
     }
   >

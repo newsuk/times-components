@@ -59,6 +59,7 @@ exports[`2. secondary one and columnist - medium 1`] = `
   <View
     style={
       Object {
+        "paddingVertical": 5,
         "width": "27%",
       }
     }

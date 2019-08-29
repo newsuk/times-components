@@ -28,7 +28,7 @@ const smallBreakpointStyles = {
 const mediumBreakpointStyles = {
   container: {
     ...sharedStyles.container,
-    paddingVertical: spacing(3),
+    paddingVertical: spacing(2),
     paddingHorizontal: spacing(2)
   },
   headline: {

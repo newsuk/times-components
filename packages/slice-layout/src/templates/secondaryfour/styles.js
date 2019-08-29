@@ -24,7 +24,8 @@ const defaultBreakpointStyles = {
     flex: 1
   },
   rowsContainer: {
-    flex: 1
+    flex: 1,
+    paddingVertical: spacing(1)
   },
   colSeparatorStyle: {
     marginVertical: spacing(3)
