@@ -8,27 +8,44 @@ import {
 const defaultStyles = {
   container: {
     flex: 1,
-    flexDirection: "row",
     padding: spacing(2)
   },
-  headline: {
-    ...fontFactory({
-      font: "headline",
-      fontSize: "infoTitle"
-    })
+  outerWrapper: {
+    flex: 1
+  },
+  innerWrapper: {
+    flexDirection: "row"
   },
   imageContainer: {
     overflow: "hidden",
     width: "30%"
   },
   summaryContainer: {
-    flex: 1,
-    paddingLeft: spacing(2),
-    width: "70%"
+    width: "70%",
+    justifyContent: "center"
   },
   summaryContent: {
-    justifyContent: "center",
-    flex: 1
+    paddingLeft: spacing(2)
+  },
+  nopadding: {
+    paddingTop: 0
+  },
+  customPosition: {
+    width: "100%",
+    position: "absolute",
+    bottom: 0,
+    right: 0
+  },
+  customStar: {
+    height: 25,
+    width: 25
+  },
+  headline: {
+    ...fontFactory({
+      font: "headline",
+      fontSize: "infoTitle"
+    }),
+    marginBottom: 0
   }
 };
 
@@ -41,7 +58,8 @@ const mediumBreakpointStyles = {
   headline: {
     fontFamily: fonts.headline,
     fontSize: 20,
-    lineHeight: 20
+    lineHeight: 20,
+    marginBottom: 0
   }
 };
 

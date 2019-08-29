@@ -15,6 +15,8 @@ import {
 const PositionedTileStar = ({
   centeredStar = false,
   underneathTextStar = false,
+  customPosition = {},
+  starStyle = {},
   ...props
 }) => {
   if (!isSaveSupported) return null;
@@ -24,10 +26,11 @@ const PositionedTileStar = ({
       style={[
         starDefaultStyles,
         centeredStar && starCenterStyles,
-        underneathTextStar && starUnderneathTextStyles
+        underneathTextStar && starUnderneathTextStyles,
+        customPosition
       ]}
     >
-      <TileStar {...props} />
+      <TileStar style={starStyle} {...props} />
     </View>
   );
 };
