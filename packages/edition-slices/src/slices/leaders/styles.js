@@ -56,19 +56,31 @@ const mediumBreakpointStyles = {
     alignItems: "center"
   },
   mastheadStyleST: {
-    height: 54,
-    width: 283
+    height: 42,
+    width: 227
   },
   mastheadStyleTimes: {
     height: 42,
-    width: 227
+    width: 237
   },
   text: {
     textAlign: "center"
   }
 };
 
-export default breakpoint =>
-  breakpoint === editionBreakpoints.medium
-    ? mediumBreakpointStyles
-    : smallBreakpointStyles;
+const wideBreakpointStyles = {
+  ...mediumBreakpointStyles,
+  container: {
+    ...mediumBreakpointStyles.container,
+    marginHorizontal: spacing(4)
+  }
+};
+
+const breakPointsStyles = {
+  [editionBreakpoints.small]: smallBreakpointStyles,
+  [editionBreakpoints.medium]: mediumBreakpointStyles,
+  [editionBreakpoints.wide]: wideBreakpointStyles,
+  [editionBreakpoints.huge]: wideBreakpointStyles
+};
+
+export default breakpoint => breakPointsStyles[breakpoint];

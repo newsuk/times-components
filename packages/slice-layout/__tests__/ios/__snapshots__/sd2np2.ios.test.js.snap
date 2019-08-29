@@ -55,27 +55,31 @@ exports[`2. secondary two no pic and two - medium 1`] = `
 exports[`3. secondary two no pic and two - wide 1`] = `
 <View>
   <View>
-    <Text>
-      secondary-1
-    </Text>
+    <View>
+      <Text>
+        secondary-1
+      </Text>
+    </View>
+    <View />
+    <View>
+      <Text>
+        secondary-2
+      </Text>
+    </View>
   </View>
   <View />
   <View>
-    <Text>
-      support-1
-    </Text>
-  </View>
-  <View />
-  <View>
-    <Text>
-      secondary-2
-    </Text>
-  </View>
-  <View />
-  <View>
-    <Text>
-      support-2
-    </Text>
+    <View>
+      <Text>
+        support-1
+      </Text>
+    </View>
+    <View />
+    <View>
+      <Text>
+        support-2
+      </Text>
+    </View>
   </View>
 </View>
 `;
@@ -83,27 +87,31 @@ exports[`3. secondary two no pic and two - wide 1`] = `
 exports[`4. secondary two no pic and two - huge 1`] = `
 <View>
   <View>
-    <Text>
-      secondary-1
-    </Text>
+    <View>
+      <Text>
+        secondary-1
+      </Text>
+    </View>
+    <View />
+    <View>
+      <Text>
+        secondary-2
+      </Text>
+    </View>
   </View>
   <View />
   <View>
-    <Text>
-      support-1
-    </Text>
-  </View>
-  <View />
-  <View>
-    <Text>
-      secondary-2
-    </Text>
-  </View>
-  <View />
-  <View>
-    <Text>
-      support-2
-    </Text>
+    <View>
+      <Text>
+        support-1
+      </Text>
+    </View>
+    <View />
+    <View>
+      <Text>
+        support-2
+      </Text>
+    </View>
   </View>
 </View>
 `;

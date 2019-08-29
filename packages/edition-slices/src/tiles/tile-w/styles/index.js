@@ -1,30 +1,6 @@
-import { fontFactory, spacing, fonts } from "@times-components/styleguide";
+import { spacing, fonts } from "@times-components/styleguide";
 
-const main = {
-  container: {
-    flexDirection: "row",
-    paddingHorizontal: spacing(4),
-    paddingTop: spacing(3),
-    paddingBottom: spacing(3)
-  },
-  headline: {
-    ...fontFactory({
-      font: "headline",
-      fontSize: "tileLeadHeadline"
-    })
-  },
-  imageContainer: {
-    width: "66.66%"
-  },
-  summaryContainer: {
-    flex: 1,
-    paddingBottom: spacing(1),
-    paddingRight: spacing(4),
-    width: "33.33%"
-  }
-};
-
-const mediumStyles = {
+const mediumBreakpointStyles = {
   container: {
     flex: 1,
     flexDirection: "row",
@@ -48,26 +24,18 @@ const mediumStyles = {
   }
 };
 
-const wideStyles = {
-  headline: {
-    fontFamily: fonts.headline,
-    fontSize: 35,
-    lineHeight: 35
-  },
-  summaryContainer: {
-    flex: 1,
-    width: "33.33%",
-    paddingRight: spacing(4)
+const wideBreakpointStyles = {
+  ...mediumBreakpointStyles,
+  container: {
+    ...mediumBreakpointStyles.container,
+    marginHorizontal: spacing(2)
   }
 };
 
 const stylesResolver = {
-  medium: mediumStyles,
-  wide: wideStyles,
-  huge: wideStyles
+  medium: mediumBreakpointStyles,
+  wide: wideBreakpointStyles,
+  huge: wideBreakpointStyles
 };
 
-export default breakpoint => ({
-  ...main,
-  ...(stylesResolver[breakpoint] || {})
-});
+export default breakpoint => stylesResolver[breakpoint];

@@ -292,6 +292,49 @@ export const snapshotTests = renderComponent => [
     }
   },
   {
+    name: "an article with interactives",
+    test() {
+      const article = articleFixture({
+        ...fixtureArgs,
+        content: [
+          {
+            attributes: {
+              display: "secondary",
+              element: {
+                attributes: {
+                  "chart-id": "csmgb"
+                },
+                value: "times-datawrapper"
+              },
+              id: "d2f83305-d558-4f78-f582-32115c659355",
+              url: "https://interactive.io"
+            },
+            children: [],
+            name: "interactive"
+          },
+          {
+            attributes: {
+              display: "fullwidth",
+              element: {
+                attributes: {
+                  "chart-id": "csmgb"
+                },
+                value: "times-datawrapper"
+              },
+              id: "abc",
+              url: "https://interactive.io"
+            },
+            children: [],
+            name: "interactive"
+          }
+        ]
+      });
+      const output = renderComponent(renderArticle(article));
+
+      expect(output).toMatchSnapshot();
+    }
+  },
+  {
     name: "an article with no content",
     test() {
       const article = articleFixture({ ...fixtureArgs, content: [] });

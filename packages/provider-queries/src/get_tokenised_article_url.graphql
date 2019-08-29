@@ -1,0 +1,5 @@
+query GetTokenisedArticleUrl($id: ID!) {
+  article(id: $id) {
+    tokenisedUrl
+  }
+}

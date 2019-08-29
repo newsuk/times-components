@@ -792,20 +792,19 @@ exports[`2. lead one full width 1`] = `
 exports[`2. leaders 1`] = `
 <style>
 .IS1 {
-  height: 54;
-  width: 283;
+  height: 42;
+  width: 227;
 }
 
 .IS2 {
   color: rgba(133,0,41,1.00);
   font-family: TimesDigitalW04-Regular;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 15px;
+  line-height: 15px;
   text-align: center;
 }
 
 .IS3 {
-  padding-bottom: 5px;
   padding-top: 10px;
 }
 
@@ -817,8 +816,8 @@ exports[`2. leaders 1`] = `
 }
 
 .IS5 {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 33%;
 }
 
@@ -832,13 +831,13 @@ exports[`2. leaders 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 60px;
+  margin-top: 30px;
 }
 
 .IS7 {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 33%;
 }
 
@@ -852,13 +851,13 @@ exports[`2. leaders 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 60px;
+  margin-top: 30px;
 }
 
 .IS9 {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 33%;
 }
 
@@ -872,7 +871,6 @@ exports[`2. leaders 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-bottom: 5px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -883,7 +881,11 @@ exports[`2. leaders 1`] = `
 
 .IS11 {
   background-color: rgba(240,240,240,1.00);
-  padding-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 30px;
 }
 
 .IS12 {
@@ -927,7 +929,7 @@ exports[`2. leaders 1`] = `
       <div
         className="css-view-1dbjc4n IS5"
       >
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader2"
         />
@@ -938,7 +940,7 @@ exports[`2. leaders 1`] = `
       <div
         className="css-view-1dbjc4n IS7"
       >
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader1"
         />
@@ -949,7 +951,7 @@ exports[`2. leaders 1`] = `
       <div
         className="css-view-1dbjc4n IS9"
       >
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader3"
         />
@@ -962,20 +964,19 @@ exports[`2. leaders 1`] = `
 exports[`2. leaders 2`] = `
 <style>
 .IS1 {
-  height: 51;
-  width: 283;
+  height: 42;
+  width: 237;
 }
 
 .IS2 {
   color: rgba(133,0,41,1.00);
   font-family: TimesDigitalW04-Regular;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 15px;
+  line-height: 15px;
   text-align: center;
 }
 
 .IS3 {
-  padding-bottom: 5px;
   padding-top: 10px;
 }
 
@@ -987,8 +988,8 @@ exports[`2. leaders 2`] = `
 }
 
 .IS5 {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 33%;
 }
 
@@ -1002,13 +1003,13 @@ exports[`2. leaders 2`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 60px;
+  margin-top: 30px;
 }
 
 .IS7 {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 33%;
 }
 
@@ -1022,13 +1023,13 @@ exports[`2. leaders 2`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 60px;
+  margin-top: 30px;
 }
 
 .IS9 {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 33%;
 }
 
@@ -1042,7 +1043,6 @@ exports[`2. leaders 2`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-bottom: 5px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -1053,7 +1053,11 @@ exports[`2. leaders 2`] = `
 
 .IS11 {
   background-color: rgba(240,240,240,1.00);
-  padding-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 30px;
 }
 
 .IS12 {
@@ -1097,7 +1101,7 @@ exports[`2. leaders 2`] = `
       <div
         className="css-view-1dbjc4n IS5"
       >
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader2"
         />
@@ -1108,7 +1112,7 @@ exports[`2. leaders 2`] = `
       <div
         className="css-view-1dbjc4n IS7"
       >
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader1"
         />
@@ -1119,7 +1123,7 @@ exports[`2. leaders 2`] = `
       <div
         className="css-view-1dbjc4n IS9"
       >
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader3"
         />
@@ -1729,7 +1733,6 @@ exports[`9. secondary four 1`] = `
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  width: 25%;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -1746,8 +1749,8 @@ exports[`9. secondary four 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .IS3 {
@@ -1757,7 +1760,6 @@ exports[`9. secondary four 1`] = `
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  width: 25%;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -1765,34 +1767,24 @@ exports[`9. secondary four 1`] = `
 }
 
 .IS4 {
-  border-top-color: rgba(219,219,219,1.00);
-  border-right-color: rgba(219,219,219,1.00);
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-left-color: rgba(219,219,219,1.00);
-  border-right-width: 1px;
-  border-top-style: solid;
-  border-right-style: solid;
-  border-bottom-style: solid;
-  border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.IS5 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
+  -webkit-flex-grow: 2;
+  flex-grow: 2;
   -webkit-flex-shrink: 1;
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  width: 25%;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-positive: 2;
+  -webkit-box-flex: 2;
   -ms-flex-negative: 1;
   -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
 }
 
-.IS6 {
+.IS5 {
   border-top-color: rgba(219,219,219,1.00);
   border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
@@ -1802,8 +1794,22 @@ exports[`9. secondary four 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.IS6 {
+  border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .IS7 {
@@ -1813,7 +1819,6 @@ exports[`9. secondary four 1`] = `
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  width: 25%;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -1821,11 +1826,21 @@ exports[`9. secondary four 1`] = `
 }
 
 .IS8 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
   margin-right: 10px;
   margin-left: 10px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
@@ -1848,39 +1863,55 @@ exports[`9. secondary four 1`] = `
     className="css-view-1dbjc4n IS8"
   >
     <div
-      className="css-view-1dbjc4n IS1"
-    >
-      <TileC
-        tileName="secondary1"
-      />
-    </div>
-    <div
-      className="css-view-1dbjc4n IS2"
-    />
-    <div
-      className="css-view-1dbjc4n IS3"
-    >
-      <TileC
-        tileName="secondary2"
-      />
-    </div>
-    <div
       className="css-view-1dbjc4n IS4"
-    />
+    >
+      <div
+        className="css-view-1dbjc4n IS1"
+      >
+        <TileAR
+          tileName="secondary1"
+        />
+      </div>
+      <div
+        className="css-view-1dbjc4n IS2"
+      />
+      <div
+        className="css-view-1dbjc4n IS3"
+      >
+        <TileAR
+          tileName="secondary2"
+        />
+      </div>
+    </div>
     <div
       className="css-view-1dbjc4n IS5"
-    >
-      <TileC
-        tileName="secondary3"
-      />
-    </div>
-    <div
-      className="css-view-1dbjc4n IS6"
     />
     <div
       className="css-view-1dbjc4n IS7"
     >
-      <TileC
+      <TileB
+        additionalHeadlineStyles={
+          Object {
+            "fontSize": 20,
+            "lineHeight": 20,
+            "marginBottom": "5px",
+          }
+        }
+        breakpoint="wide"
+        tileName="secondary3"
+      />
+      <div
+        className="css-view-1dbjc4n IS6"
+      />
+      <TileB
+        additionalHeadlineStyles={
+          Object {
+            "fontSize": 20,
+            "lineHeight": 20,
+            "marginBottom": "5px",
+          }
+        }
+        breakpoint="wide"
         tileName="secondary4"
       />
     </div>
@@ -2298,7 +2329,16 @@ exports[`11. secondary two and two 1`] = `
 exports[`12. secondary two no pic and two 1`] = `
 <style>
 .IS1 {
-  width: 33.4%;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
 }
 
 .IS2 {
@@ -2311,55 +2351,24 @@ exports[`12. secondary two no pic and two 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
+  margin-top: 15px;
   margin-bottom: 10px;
 }
 
 .IS3 {
-  padding-right: 5px;
-  padding-left: 5px;
-  width: 16.6%;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
 }
 
 .IS4 {
-  border-top-color: rgba(219,219,219,1.00);
-  border-right-color: rgba(219,219,219,1.00);
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-left-color: rgba(219,219,219,1.00);
-  border-right-width: 1px;
-  border-top-style: solid;
-  border-right-style: solid;
-  border-bottom-style: solid;
-  border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.IS5 {
-  width: 33.4%;
-}
-
-.IS6 {
-  border-top-color: rgba(219,219,219,1.00);
-  border-right-color: rgba(219,219,219,1.00);
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-left-color: rgba(219,219,219,1.00);
-  border-right-width: 1px;
-  border-top-style: solid;
-  border-right-style: solid;
-  border-bottom-style: solid;
-  border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.IS7 {
-  padding-right: 5px;
-  padding-left: 5px;
-  width: 16.6%;
-}
-
-.IS8 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   -webkit-flex-shrink: 1;
@@ -2369,8 +2378,6 @@ exports[`12. secondary two no pic and two 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-right: 10px;
-  margin-left: 10px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -2379,7 +2386,94 @@ exports[`12. secondary two no pic and two 1`] = `
   -webkit-box-direction: normal;
 }
 
+.IS5 {
+  border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS6 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
+
+.IS7 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.IS8 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
+
 .IS9 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS10 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  margin-right: 10px;
+  margin-left: 10px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
+
+.IS11 {
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
@@ -2391,47 +2485,57 @@ exports[`12. secondary two no pic and two 1`] = `
 </style>
 
 <div
-  className="css-view-1dbjc4n IS9"
+  className="css-view-1dbjc4n IS11"
 >
   <div
-    className="css-view-1dbjc4n IS8"
+    className="css-view-1dbjc4n IS10"
   >
     <div
-      className="css-view-1dbjc4n IS1"
-    >
-      <TileAE
-        tileName="secondary1"
-      />
-    </div>
-    <div
-      className="css-view-1dbjc4n IS2"
-    />
-    <div
-      className="css-view-1dbjc4n IS3"
-    >
-      <TileAP
-        tileName="support1"
-      />
-    </div>
-    <div
       className="css-view-1dbjc4n IS4"
-    />
+    >
+      <div
+        className="css-view-1dbjc4n IS1"
+      >
+        <TileAE
+          tileName="secondary1"
+        />
+      </div>
+      <div
+        className="css-view-1dbjc4n IS2"
+      />
+      <div
+        className="css-view-1dbjc4n IS3"
+      >
+        <TileAE
+          tileName="secondary2"
+        />
+      </div>
+    </div>
     <div
       className="css-view-1dbjc4n IS5"
-    >
-      <TileAE
-        tileName="secondary2"
-      />
-    </div>
-    <div
-      className="css-view-1dbjc4n IS6"
     />
     <div
-      className="css-view-1dbjc4n IS7"
+      className="css-view-1dbjc4n IS9"
     >
-      <TileAP
-        tileName="support2"
+      <div
+        className="css-view-1dbjc4n IS6"
+      >
+        <TileG
+          breakpoint="wide"
+          tileName="support1"
+        />
+      </div>
+      <div
+        className="css-view-1dbjc4n IS7"
       />
+      <div
+        className="css-view-1dbjc4n IS8"
+      >
+        <TileG
+          breakpoint="wide"
+          tileName="support2"
+        />
+      </div>
     </div>
   </div>
 </div>
@@ -2691,7 +2795,8 @@ exports[`13. list two and six no pic 1`] = `
     <div
       className="css-view-1dbjc4n IS1"
     >
-      <TileC
+      <TileAS
+        breakpoint="wide"
         tileName="lead1"
       />
     </div>
@@ -2701,7 +2806,8 @@ exports[`13. list two and six no pic 1`] = `
     <div
       className="css-view-1dbjc4n IS3"
     >
-      <TileC
+      <TileAS
+        breakpoint="wide"
         tileName="lead2"
       />
     </div>
@@ -2718,6 +2824,7 @@ exports[`13. list two and six no pic 1`] = `
           className="css-view-1dbjc4n IS5"
         >
           <TileL
+            breakpoint="wide"
             tileName="support1"
           />
         </div>
@@ -2728,6 +2835,7 @@ exports[`13. list two and six no pic 1`] = `
           className="css-view-1dbjc4n IS7"
         >
           <TileL
+            breakpoint="wide"
             tileName="support2"
           />
         </div>
@@ -2742,6 +2850,7 @@ exports[`13. list two and six no pic 1`] = `
           className="css-view-1dbjc4n IS10"
         >
           <TileL
+            breakpoint="wide"
             tileName="support3"
           />
         </div>
@@ -2752,6 +2861,7 @@ exports[`13. list two and six no pic 1`] = `
           className="css-view-1dbjc4n IS12"
         >
           <TileL
+            breakpoint="wide"
             tileName="support4"
           />
         </div>
@@ -2766,6 +2876,7 @@ exports[`13. list two and six no pic 1`] = `
           className="css-view-1dbjc4n IS15"
         >
           <TileL
+            breakpoint="wide"
             tileName="support5"
           />
         </div>
@@ -2776,6 +2887,7 @@ exports[`13. list two and six no pic 1`] = `
           className="css-view-1dbjc4n IS17"
         >
           <TileL
+            breakpoint="wide"
             tileName="support6"
           />
         </div>
@@ -2788,20 +2900,19 @@ exports[`13. list two and six no pic 1`] = `
 exports[`14. leaders 1`] = `
 <style>
 .IS1 {
-  height: 51;
-  width: 283;
+  height: 42;
+  width: 237;
 }
 
 .IS2 {
   color: rgba(133,0,41,1.00);
   font-family: TimesDigitalW04-Regular;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 15px;
+  line-height: 15px;
   text-align: center;
 }
 
 .IS3 {
-  padding-bottom: 5px;
   padding-top: 10px;
 }
 
@@ -2813,8 +2924,8 @@ exports[`14. leaders 1`] = `
 }
 
 .IS5 {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 33%;
 }
 
@@ -2828,13 +2939,13 @@ exports[`14. leaders 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 60px;
+  margin-top: 30px;
 }
 
 .IS7 {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 33%;
 }
 
@@ -2848,13 +2959,13 @@ exports[`14. leaders 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 60px;
+  margin-top: 30px;
 }
 
 .IS9 {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 33%;
 }
 
@@ -2868,7 +2979,6 @@ exports[`14. leaders 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-bottom: 5px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -2879,7 +2989,11 @@ exports[`14. leaders 1`] = `
 
 .IS11 {
   background-color: rgba(240,240,240,1.00);
-  padding-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 30px;
 }
 
 .IS12 {
@@ -2923,7 +3037,7 @@ exports[`14. leaders 1`] = `
       <div
         className="css-view-1dbjc4n IS5"
       >
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader2"
         />
@@ -2934,7 +3048,7 @@ exports[`14. leaders 1`] = `
       <div
         className="css-view-1dbjc4n IS7"
       >
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader1"
         />
@@ -2945,7 +3059,7 @@ exports[`14. leaders 1`] = `
       <div
         className="css-view-1dbjc4n IS9"
       >
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader3"
         />

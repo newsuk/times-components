@@ -1,10 +1,4 @@
 import { addTypenameToDocument } from "apollo-utilities";
-import gql from "graphql-tag";
+import getTokenisedArticleUrl from "./get_tokenised_article_url.graphql";
 
-export default addTypenameToDocument(gql`
-  query GetTokenisedArticleUrl($id: ID!) {
-    article(id: $id) {
-      tokenisedUrl
-    }
-  }
-`);
+export default addTypenameToDocument(getTokenisedArticleUrl);

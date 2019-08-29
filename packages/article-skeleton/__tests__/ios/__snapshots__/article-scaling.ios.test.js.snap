@@ -48,9 +48,8 @@ exports[`1. scaled medium full article 1`] = `
                     "color": "#333333",
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 17,
-                    "fontStyle": "normal",
                     "lineHeight": 30,
-                    "marginBottom": 25,
+                    "marginBottom": 20,
                   }
                 }
               >
@@ -59,7 +58,7 @@ exports[`1. scaled medium full article 1`] = `
                     Object {
                       "color": "#000000",
                       "fontFamily": "TimesDigitalW04",
-                      "fontSize": 34,
+                      "fontSize": 17,
                       "fontStyle": "normal",
                       "fontWeight": "normal",
                       "lineHeight": 60,
@@ -176,9 +175,8 @@ exports[`2. scaled large full article 1`] = `
                     "color": "#333333",
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 21,
-                    "fontStyle": "normal",
                     "lineHeight": 31,
-                    "marginBottom": 25,
+                    "marginBottom": 20,
                   }
                 }
               >
@@ -187,7 +185,7 @@ exports[`2. scaled large full article 1`] = `
                     Object {
                       "color": "#000000",
                       "fontFamily": "TimesDigitalW04",
-                      "fontSize": 34,
+                      "fontSize": 17,
                       "fontStyle": "normal",
                       "fontWeight": "normal",
                       "lineHeight": 60,
@@ -304,9 +302,8 @@ exports[`3. scaled xlarge full article 1`] = `
                     "color": "#333333",
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 23,
-                    "fontStyle": "normal",
                     "lineHeight": 33,
-                    "marginBottom": 25,
+                    "marginBottom": 20,
                   }
                 }
               >
@@ -315,7 +312,7 @@ exports[`3. scaled xlarge full article 1`] = `
                     Object {
                       "color": "#000000",
                       "fontFamily": "TimesDigitalW04",
-                      "fontSize": 34,
+                      "fontSize": 17,
                       "fontStyle": "normal",
                       "fontWeight": "normal",
                       "lineHeight": 60,

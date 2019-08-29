@@ -4,27 +4,38 @@ import {
   editionBreakpoints
 } from "@times-components/styleguide";
 
-const headlineFontSizeResolver = {
-  [editionBreakpoints.medium]: 40,
-  [editionBreakpoints.huge]: 45,
-  [editionBreakpoints.wide]: 45
-};
-
-export default breakpoint => ({
+const mediumBreakpointStyles = {
   container: {
     flex: 1,
-    padding: spacing(2)
+    paddingVertical: spacing(3),
+    paddingHorizontal: spacing(6)
   },
   headline: {
     fontFamily: fonts.headline,
-    fontSize: headlineFontSizeResolver[breakpoint],
-    lineHeight: headlineFontSizeResolver[breakpoint]
+    fontSize: 40,
+    lineHeight: 40,
+    marginBottom: 0
   },
   imageContainer: {
     width: "100%",
     marginBottom: spacing(2)
   },
   summaryContainer: {
-    flex: 1
+    flex: 1,
+    paddingBottom: spacing(2)
   }
-});
+};
+
+const wideBreakpointStyles = {
+  ...mediumBreakpointStyles,
+  container: {
+    flex: 1,
+    paddingVertical: spacing(3),
+    paddingHorizontal: spacing(4)
+  }
+};
+
+export default breakpoint =>
+  breakpoint === editionBreakpoints.medium
+    ? mediumBreakpointStyles
+    : wideBreakpointStyles;

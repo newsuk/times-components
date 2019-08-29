@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.77.5](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.77.4...@times-components/edition-slices@0.77.5) (2019-08-28)
+
+
+### Bug Fixes
+
+* broken flags and article summary ([#2222](https://github.com/newsuk/times-components/issues/2222)) ([38549d8](https://github.com/newsuk/times-components/commit/38549d8))
+
+
+
+
+
+## [0.77.4](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.77.3...@times-components/edition-slices@0.77.4) (2019-08-27)
+
+
+### Bug Fixes
+
+* lead one will width 768 spacing updates ([#2226](https://github.com/newsuk/times-components/issues/2226)) ([4fc6962](https://github.com/newsuk/times-components/commit/4fc6962))
+
+
+
+
+
+## [0.77.3](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.77.2...@times-components/edition-slices@0.77.3) (2019-08-26)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
+## [0.77.2](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.77.1...@times-components/edition-slices@0.77.2) (2019-08-22)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
+## [0.77.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.77.0...@times-components/edition-slices@0.77.1) (2019-08-21)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
 # [0.77.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.76.2...@times-components/edition-slices@0.77.0) (2019-08-21)
 
 

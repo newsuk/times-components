@@ -30,7 +30,7 @@ exports[`1. mobile primary image with caption and credits 1`] = `
         style={
           Object {
             "paddingHorizontal": 10,
-            "paddingTop": 5,
+            "paddingTop": 10,
           }
         }
       >
@@ -40,8 +40,7 @@ exports[`1. mobile primary image with caption and credits 1`] = `
               "color": "#696969",
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
-              "lineHeight": 20,
-              "marginTop": 5,
+              "lineHeight": 16,
             }
           }
         >
@@ -55,8 +54,7 @@ exports[`1. mobile primary image with caption and credits 1`] = `
               "fontSize": 9,
               "fontWeight": "400",
               "letterSpacing": 1,
-              "lineHeight": 20,
-              "marginTop": 0,
+              "lineHeight": 16,
             }
           }
         >
@@ -98,7 +96,7 @@ exports[`2. tablet primary image with caption and credits 1`] = `
       <View
         style={
           Object {
-            "paddingTop": 5,
+            "paddingTop": 10,
           }
         }
       >
@@ -108,8 +106,7 @@ exports[`2. tablet primary image with caption and credits 1`] = `
               "color": "#696969",
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
-              "lineHeight": 20,
-              "marginTop": 5,
+              "lineHeight": 16,
             }
           }
         >
@@ -123,8 +120,7 @@ exports[`2. tablet primary image with caption and credits 1`] = `
               "fontSize": 9,
               "fontWeight": "400",
               "letterSpacing": 1,
-              "lineHeight": 20,
-              "marginTop": 0,
+              "lineHeight": 16,
             }
           }
         >
@@ -172,7 +168,7 @@ exports[`3. mobile fullwidth image with caption and credits 1`] = `
       <View
         style={
           Object {
-            "paddingTop": 5,
+            "paddingTop": 10,
           }
         }
       >
@@ -182,8 +178,7 @@ exports[`3. mobile fullwidth image with caption and credits 1`] = `
               "color": "#696969",
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
-              "lineHeight": 20,
-              "marginTop": 5,
+              "lineHeight": 16,
               "paddingHorizontal": 10,
               "textAlign": "center",
             }
@@ -199,8 +194,7 @@ exports[`3. mobile fullwidth image with caption and credits 1`] = `
               "fontSize": 9,
               "fontWeight": "400",
               "letterSpacing": 1,
-              "lineHeight": 20,
-              "marginTop": 0,
+              "lineHeight": 16,
               "paddingHorizontal": 10,
               "textAlign": "center",
             }
@@ -250,7 +244,7 @@ exports[`4. tablet fullwidth image with caption and credits 1`] = `
       <View
         style={
           Object {
-            "paddingTop": 5,
+            "paddingTop": 10,
           }
         }
       >
@@ -260,8 +254,7 @@ exports[`4. tablet fullwidth image with caption and credits 1`] = `
               "color": "#696969",
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
-              "lineHeight": 20,
-              "marginTop": 5,
+              "lineHeight": 16,
               "paddingHorizontal": 10,
               "textAlign": "center",
             }
@@ -277,8 +270,7 @@ exports[`4. tablet fullwidth image with caption and credits 1`] = `
               "fontSize": 9,
               "fontWeight": "400",
               "letterSpacing": 1,
-              "lineHeight": 20,
-              "marginTop": 0,
+              "lineHeight": 16,
               "paddingHorizontal": 10,
               "textAlign": "center",
             }
@@ -349,8 +341,7 @@ exports[`5. secondary image with caption and credits 1`] = `
               "color": "#696969",
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
-              "lineHeight": 20,
-              "marginTop": 5,
+              "lineHeight": 16,
             }
           }
         >
@@ -364,8 +355,7 @@ exports[`5. secondary image with caption and credits 1`] = `
               "fontSize": 9,
               "fontWeight": "400",
               "letterSpacing": 1,
-              "lineHeight": 20,
-              "marginTop": 0,
+              "lineHeight": 16,
             }
           }
         >
@@ -407,7 +397,7 @@ exports[`6. primary image with caption and credits with center caption override 
       <View
         style={
           Object {
-            "paddingTop": 5,
+            "paddingTop": 10,
           }
         }
       >
@@ -417,8 +407,7 @@ exports[`6. primary image with caption and credits with center caption override 
               "color": "#696969",
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
-              "lineHeight": 20,
-              "marginTop": 5,
+              "lineHeight": 16,
               "paddingHorizontal": 10,
               "textAlign": "center",
             }
@@ -434,8 +423,7 @@ exports[`6. primary image with caption and credits with center caption override 
               "fontSize": 9,
               "fontWeight": "400",
               "letterSpacing": 1,
-              "lineHeight": 20,
-              "marginTop": 0,
+              "lineHeight": 16,
               "paddingHorizontal": 10,
               "textAlign": "center",
             }
@@ -506,8 +494,7 @@ exports[`7. secondary image with caption and credits with center caption overrid
               "color": "#696969",
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
-              "lineHeight": 20,
-              "marginTop": 5,
+              "lineHeight": 16,
               "paddingHorizontal": 10,
               "textAlign": "center",
             }
@@ -523,8 +510,7 @@ exports[`7. secondary image with caption and credits with center caption overrid
               "fontSize": 9,
               "fontWeight": "400",
               "letterSpacing": 1,
-              "lineHeight": 20,
-              "marginTop": 0,
+              "lineHeight": 16,
               "paddingHorizontal": 10,
               "textAlign": "center",
             }

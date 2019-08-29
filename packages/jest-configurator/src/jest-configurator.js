@@ -15,7 +15,7 @@ const nativeSpecific = platform => ({
 });
 
 const webSpecific = {
-  moduleFileExtensions: ["web.js", "js", "json"],
+  moduleFileExtensions: ["graphql", "web.js", "js", "json"],
   moduleNameMapper: {
     "\\.(png)$": "identity-obj-proxy",
     "^react-native$": "react-native-web"
@@ -90,7 +90,10 @@ export default (platform, cwd, options = {}) => {
       // @todo Remove this when upgrading to above react 0.56.0 (blocked by expo-sdk as of 2018/10/18)
       "^.+\\.(bmp|gif|jpg|jpeg|mp4|png|psd|svg|webp)$":
         "<rootDir>/node_modules/react-native/jest/assetFileTransformer.js",
-      "^.+\\.js$": path.resolve(__dirname, "source-loader.js")
+      "^.+\\.js$": path.resolve(__dirname, "source-loader.js"),
+      // used to make jest understand graphql files once they're loaded
+      "\\.(gql|graphql)$": "jest-transform-graphql",
+      "^.+\\.graphql": "babel-jest"
     },
     transformIgnorePatterns: [
       "node_modules/(?!(react-native|react-native-svg|react-native-webview|react-native-iphone-x-helper|@times-components|@storybook/react-native|react-native-swipe-gestures|react-native-device-info)/)"

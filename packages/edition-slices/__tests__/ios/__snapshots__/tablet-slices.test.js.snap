@@ -645,21 +645,21 @@ exports[`21. leaders slice - wide 1`] = `
     </View>
     <View>
       <View>
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader2"
         />
       </View>
       <View />
       <View>
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader1"
         />
       </View>
       <View />
       <View>
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader3"
         />
@@ -740,25 +740,41 @@ exports[`24. secondary four - wide 1`] = `
 <View>
   <View>
     <View>
-      <TileC
-        tileName="secondary1"
-      />
+      <View>
+        <TileAR
+          tileName="secondary1"
+        />
+      </View>
+      <View />
+      <View>
+        <TileAR
+          tileName="secondary2"
+        />
+      </View>
     </View>
     <View />
     <View>
-      <TileC
-        tileName="secondary2"
-      />
-    </View>
-    <View />
-    <View>
-      <TileC
+      <TileB
+        additionalHeadlineStyles={
+          Object {
+            "fontSize": 20,
+            "lineHeight": 20,
+            "marginBottom": 5,
+          }
+        }
+        breakpoint="wide"
         tileName="secondary3"
       />
-    </View>
-    <View />
-    <View>
-      <TileC
+      <View />
+      <TileB
+        additionalHeadlineStyles={
+          Object {
+            "fontSize": 20,
+            "lineHeight": 20,
+            "marginBottom": 5,
+          }
+        }
+        breakpoint="wide"
         tileName="secondary4"
       />
     </View>
@@ -880,27 +896,33 @@ exports[`29. secondary two no pic and two - wide 1`] = `
 <View>
   <View>
     <View>
-      <TileAE
-        tileName="secondary1"
-      />
+      <View>
+        <TileAE
+          tileName="secondary1"
+        />
+      </View>
+      <View />
+      <View>
+        <TileAE
+          tileName="secondary2"
+        />
+      </View>
     </View>
     <View />
     <View>
-      <TileAP
-        tileName="support1"
-      />
-    </View>
-    <View />
-    <View>
-      <TileAE
-        tileName="secondary2"
-      />
-    </View>
-    <View />
-    <View>
-      <TileAP
-        tileName="support2"
-      />
+      <View>
+        <TileG
+          breakpoint="wide"
+          tileName="support1"
+        />
+      </View>
+      <View />
+      <View>
+        <TileG
+          breakpoint="wide"
+          tileName="support2"
+        />
+      </View>
     </View>
   </View>
 </View>
@@ -1136,21 +1158,21 @@ exports[`36. leaders slice - huge 1`] = `
       </View>
       <View>
         <View>
-          <TileAG
+          <TileM
             breakpoint="huge"
             tileName="leader2"
           />
         </View>
         <View />
         <View>
-          <TileAG
+          <TileM
             breakpoint="huge"
             tileName="leader1"
           />
         </View>
         <View />
         <View>
-          <TileAG
+          <TileM
             breakpoint="huge"
             tileName="leader3"
           />
@@ -1237,25 +1259,27 @@ exports[`39. secondary four - huge 1`] = `
   <View>
     <View>
       <View>
-        <TileC
-          tileName="secondary1"
-        />
+        <View>
+          <TileAR
+            tileName="secondary1"
+          />
+        </View>
+        <View />
+        <View>
+          <TileAR
+            tileName="secondary2"
+          />
+        </View>
       </View>
       <View />
       <View>
-        <TileC
-          tileName="secondary2"
-        />
-      </View>
-      <View />
-      <View>
-        <TileC
+        <TileB
+          breakpoint="huge"
           tileName="secondary3"
         />
-      </View>
-      <View />
-      <View>
-        <TileC
+        <View />
+        <TileB
+          breakpoint="huge"
           tileName="secondary4"
         />
       </View>
@@ -1387,27 +1411,33 @@ exports[`44. secondary two no pic and two - huge 1`] = `
   <View>
     <View>
       <View>
-        <TileAE
-          tileName="secondary1"
-        />
+        <View>
+          <TileAE
+            tileName="secondary1"
+          />
+        </View>
+        <View />
+        <View>
+          <TileAE
+            tileName="secondary2"
+          />
+        </View>
       </View>
       <View />
       <View>
-        <TileAP
-          tileName="support1"
-        />
-      </View>
-      <View />
-      <View>
-        <TileAE
-          tileName="secondary2"
-        />
-      </View>
-      <View />
-      <View>
-        <TileAP
-          tileName="support2"
-        />
+        <View>
+          <TileG
+            breakpoint="huge"
+            tileName="support1"
+          />
+        </View>
+        <View />
+        <View>
+          <TileG
+            breakpoint="huge"
+            tileName="support2"
+          />
+        </View>
       </View>
     </View>
   </View>

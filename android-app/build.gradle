@@ -17,6 +17,7 @@ buildscript {
 }
 
 def reactRepositoryPath = "$rootDir/repo"
+def graphQlFilesPath = './xnative/src/main/res/raw'
 
 allprojects {
     repositories {
@@ -31,6 +32,7 @@ allprojects {
 
 task clean(type: Delete) {
     delete rootProject.buildDir
+    delete graphQlFilesPath
 }
 
 
@@ -71,6 +73,14 @@ task generateReactArchives {
         into(reactRepositoryPath)
     }
 
+    //pack the graphql files in the xnative.aar library so they can be reused by the android app
+    task gqlCopy(type: Copy) {
+        from('../packages/provider-queries/src/')
+        include "**/*.graphql"
+        into(graphQlFilesPath)
+    }
+
+    removePreviousReactArchives.dependsOn(gqlCopy)
     reactNativeCopy.dependsOn(removePreviousReactArchives)
     jscCopy.dependsOn(reactNativeCopy)
     generateReactArchives.dependsOn(jscCopy)

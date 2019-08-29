@@ -36,6 +36,22 @@ export default renderComponent => {
 
         expect(output).toMatchSnapshot();
       }
+    },
+    {
+      name: "secondary four - wide",
+      test() {
+        const output = renderComponent(
+          <SecondaryFourSlice
+            breakpoint={editionBreakpoints.wide}
+            secondary1={createItem("secondary-1")}
+            secondary2={createItem("secondary-2")}
+            secondary3={createItem("secondary-3")}
+            secondary4={createItem("secondary-4")}
+          />
+        );
+
+        expect(output).toMatchSnapshot();
+      }
     }
   ];
 

@@ -6,7 +6,7 @@ exports[`1. caption with container and text styles 1`] = `
     style={
       Object {
         "backgroundColor": "red",
-        "paddingTop": 5,
+        "paddingTop": 10,
       }
     }
   >
@@ -16,8 +16,7 @@ exports[`1. caption with container and text styles 1`] = `
           "color": "green",
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 13,
-          "lineHeight": 20,
-          "marginTop": 5,
+          "lineHeight": 16,
         }
       }
     >
@@ -31,8 +30,7 @@ exports[`1. caption with container and text styles 1`] = `
           "fontSize": 9,
           "fontWeight": "400",
           "letterSpacing": 1,
-          "lineHeight": 20,
-          "marginTop": 0,
+          "lineHeight": 16,
         }
       }
     >
@@ -48,7 +46,7 @@ exports[`2. caption with container, caption, and credit styles 1`] = `
     style={
       Object {
         "backgroundColor": "red",
-        "paddingTop": 5,
+        "paddingTop": 10,
       }
     }
   >
@@ -58,8 +56,7 @@ exports[`2. caption with container, caption, and credit styles 1`] = `
           "color": "green",
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 10,
-          "lineHeight": 20,
-          "marginTop": 5,
+          "lineHeight": 16,
         }
       }
     >
@@ -73,8 +70,7 @@ exports[`2. caption with container, caption, and credit styles 1`] = `
           "fontSize": 8,
           "fontWeight": "400",
           "letterSpacing": 1,
-          "lineHeight": 20,
-          "marginTop": 0,
+          "lineHeight": 16,
         }
       }
     >
@@ -90,7 +86,7 @@ exports[`3. caption with only container styles 1`] = `
     style={
       Object {
         "backgroundColor": "blue",
-        "paddingTop": 5,
+        "paddingTop": 10,
       }
     }
   >
@@ -100,8 +96,7 @@ exports[`3. caption with only container styles 1`] = `
           "color": "#696969",
           "fontFamily": "GillSansMTStd-Medium",
           "fontSize": 13,
-          "lineHeight": 20,
-          "marginTop": 5,
+          "lineHeight": 16,
         }
       }
     >
@@ -115,8 +110,7 @@ exports[`3. caption with only container styles 1`] = `
           "fontSize": 9,
           "fontWeight": "400",
           "letterSpacing": 1,
-          "lineHeight": 20,
-          "marginTop": 0,
+          "lineHeight": 16,
         }
       }
     >

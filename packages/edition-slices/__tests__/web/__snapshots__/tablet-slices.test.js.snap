@@ -141,21 +141,21 @@ exports[`6. leaders slice - medium 1`] = `
     </div>
     <div>
       <div>
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader2"
         />
       </div>
       <div />
       <div>
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader1"
         />
       </div>
       <div />
       <div>
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader3"
         />
@@ -236,25 +236,41 @@ exports[`9. secondary four - medium 1`] = `
 <div>
   <div>
     <div>
-      <TileC
-        tileName="secondary1"
-      />
+      <div>
+        <TileAR
+          tileName="secondary1"
+        />
+      </div>
+      <div />
+      <div>
+        <TileAR
+          tileName="secondary2"
+        />
+      </div>
     </div>
     <div />
     <div>
-      <TileC
-        tileName="secondary2"
-      />
-    </div>
-    <div />
-    <div>
-      <TileC
+      <TileB
+        additionalHeadlineStyles={
+          Object {
+            "fontSize": 20,
+            "lineHeight": 20,
+            "marginBottom": "5px",
+          }
+        }
+        breakpoint="wide"
         tileName="secondary3"
       />
-    </div>
-    <div />
-    <div>
-      <TileC
+      <div />
+      <TileB
+        additionalHeadlineStyles={
+          Object {
+            "fontSize": 20,
+            "lineHeight": 20,
+            "marginBottom": "5px",
+          }
+        }
+        breakpoint="wide"
         tileName="secondary4"
       />
     </div>
@@ -376,27 +392,33 @@ exports[`14. secondary two no pic and two - medium 1`] = `
 <div>
   <div>
     <div>
-      <TileAE
-        tileName="secondary1"
-      />
+      <div>
+        <TileAE
+          tileName="secondary1"
+        />
+      </div>
+      <div />
+      <div>
+        <TileAE
+          tileName="secondary2"
+        />
+      </div>
     </div>
     <div />
     <div>
-      <TileAP
-        tileName="support1"
-      />
-    </div>
-    <div />
-    <div>
-      <TileAE
-        tileName="secondary2"
-      />
-    </div>
-    <div />
-    <div>
-      <TileAP
-        tileName="support2"
-      />
+      <div>
+        <TileG
+          breakpoint="wide"
+          tileName="support1"
+        />
+      </div>
+      <div />
+      <div>
+        <TileG
+          breakpoint="wide"
+          tileName="support2"
+        />
+      </div>
     </div>
   </div>
 </div>
@@ -613,21 +635,21 @@ exports[`21. leaders slice - wide 1`] = `
     </div>
     <div>
       <div>
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader2"
         />
       </div>
       <div />
       <div>
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader1"
         />
       </div>
       <div />
       <div>
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader3"
         />
@@ -708,25 +730,41 @@ exports[`24. secondary four - wide 1`] = `
 <div>
   <div>
     <div>
-      <TileC
-        tileName="secondary1"
-      />
+      <div>
+        <TileAR
+          tileName="secondary1"
+        />
+      </div>
+      <div />
+      <div>
+        <TileAR
+          tileName="secondary2"
+        />
+      </div>
     </div>
     <div />
     <div>
-      <TileC
-        tileName="secondary2"
-      />
-    </div>
-    <div />
-    <div>
-      <TileC
+      <TileB
+        additionalHeadlineStyles={
+          Object {
+            "fontSize": 20,
+            "lineHeight": 20,
+            "marginBottom": "5px",
+          }
+        }
+        breakpoint="wide"
         tileName="secondary3"
       />
-    </div>
-    <div />
-    <div>
-      <TileC
+      <div />
+      <TileB
+        additionalHeadlineStyles={
+          Object {
+            "fontSize": 20,
+            "lineHeight": 20,
+            "marginBottom": "5px",
+          }
+        }
+        breakpoint="wide"
         tileName="secondary4"
       />
     </div>
@@ -848,27 +886,33 @@ exports[`29. secondary two no pic and two - wide 1`] = `
 <div>
   <div>
     <div>
-      <TileAE
-        tileName="secondary1"
-      />
+      <div>
+        <TileAE
+          tileName="secondary1"
+        />
+      </div>
+      <div />
+      <div>
+        <TileAE
+          tileName="secondary2"
+        />
+      </div>
     </div>
     <div />
     <div>
-      <TileAP
-        tileName="support1"
-      />
-    </div>
-    <div />
-    <div>
-      <TileAE
-        tileName="secondary2"
-      />
-    </div>
-    <div />
-    <div>
-      <TileAP
-        tileName="support2"
-      />
+      <div>
+        <TileG
+          breakpoint="wide"
+          tileName="support1"
+        />
+      </div>
+      <div />
+      <div>
+        <TileG
+          breakpoint="wide"
+          tileName="support2"
+        />
+      </div>
     </div>
   </div>
 </div>
@@ -1085,21 +1129,21 @@ exports[`36. leaders slice - huge 1`] = `
     </div>
     <div>
       <div>
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader2"
         />
       </div>
       <div />
       <div>
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader1"
         />
       </div>
       <div />
       <div>
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader3"
         />
@@ -1180,25 +1224,41 @@ exports[`39. secondary four - huge 1`] = `
 <div>
   <div>
     <div>
-      <TileC
-        tileName="secondary1"
-      />
+      <div>
+        <TileAR
+          tileName="secondary1"
+        />
+      </div>
+      <div />
+      <div>
+        <TileAR
+          tileName="secondary2"
+        />
+      </div>
     </div>
     <div />
     <div>
-      <TileC
-        tileName="secondary2"
-      />
-    </div>
-    <div />
-    <div>
-      <TileC
+      <TileB
+        additionalHeadlineStyles={
+          Object {
+            "fontSize": 20,
+            "lineHeight": 20,
+            "marginBottom": "5px",
+          }
+        }
+        breakpoint="wide"
         tileName="secondary3"
       />
-    </div>
-    <div />
-    <div>
-      <TileC
+      <div />
+      <TileB
+        additionalHeadlineStyles={
+          Object {
+            "fontSize": 20,
+            "lineHeight": 20,
+            "marginBottom": "5px",
+          }
+        }
+        breakpoint="wide"
         tileName="secondary4"
       />
     </div>
@@ -1320,27 +1380,33 @@ exports[`44. secondary two no pic and two - huge 1`] = `
 <div>
   <div>
     <div>
-      <TileAE
-        tileName="secondary1"
-      />
+      <div>
+        <TileAE
+          tileName="secondary1"
+        />
+      </div>
+      <div />
+      <div>
+        <TileAE
+          tileName="secondary2"
+        />
+      </div>
     </div>
     <div />
     <div>
-      <TileAP
-        tileName="support1"
-      />
-    </div>
-    <div />
-    <div>
-      <TileAE
-        tileName="secondary2"
-      />
-    </div>
-    <div />
-    <div>
-      <TileAP
-        tileName="support2"
-      />
+      <div>
+        <TileG
+          breakpoint="wide"
+          tileName="support1"
+        />
+      </div>
+      <div />
+      <div>
+        <TileG
+          breakpoint="wide"
+          tileName="support2"
+        />
+      </div>
     </div>
   </div>
 </div>

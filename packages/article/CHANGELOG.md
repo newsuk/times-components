@@ -3,6 +3,86 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.2.124](https://github.com/newsuk/times-components/compare/@times-components/article@7.2.123...@times-components/article@7.2.124) (2019-08-28)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [7.2.123](https://github.com/newsuk/times-components/compare/@times-components/article@7.2.122...@times-components/article@7.2.123) (2019-08-26)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [7.2.122](https://github.com/newsuk/times-components/compare/@times-components/article@7.2.121...@times-components/article@7.2.122) (2019-08-26)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [7.2.121](https://github.com/newsuk/times-components/compare/@times-components/article@7.2.120...@times-components/article@7.2.121) (2019-08-23)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [7.2.120](https://github.com/newsuk/times-components/compare/@times-components/article@7.2.119...@times-components/article@7.2.120) (2019-08-22)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [7.2.119](https://github.com/newsuk/times-components/compare/@times-components/article@7.2.118...@times-components/article@7.2.119) (2019-08-22)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [7.2.118](https://github.com/newsuk/times-components/compare/@times-components/article@7.2.117...@times-components/article@7.2.118) (2019-08-21)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [7.2.117](https://github.com/newsuk/times-components/compare/@times-components/article@7.2.116...@times-components/article@7.2.117) (2019-08-21)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [7.2.116](https://github.com/newsuk/times-components/compare/@times-components/article@7.2.115...@times-components/article@7.2.116) (2019-08-21)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
+## [7.2.115](https://github.com/newsuk/times-components/compare/@times-components/article@7.2.114...@times-components/article@7.2.115) (2019-08-21)
+
+**Note:** Version bump only for package @times-components/article
+
+
+
+
+
 ## [7.2.114](https://github.com/newsuk/times-components/compare/@times-components/article@7.2.113...@times-components/article@7.2.114) (2019-08-20)
 
 **Note:** Version bump only for package @times-components/article

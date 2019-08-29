@@ -39,7 +39,6 @@ import {
   TileAC,
   TileAD,
   TileAE,
-  TileAG,
   TileAH,
   TileAI,
   TileAJ,
@@ -47,7 +46,6 @@ import {
   TileAL,
   TileAM,
   TileAN,
-  TileAP,
   TileAR,
   TileAS
 } from "../src/tiles";
@@ -206,10 +204,6 @@ export default () => {
       test: () => testTile(TileAE)
     },
     {
-      name: "tile ag",
-      test: () => testTile(TileAG)
-    },
-    {
       name: "tile aj",
       test: () => testPuzzleTile(TileAJ)
     },
@@ -228,10 +222,6 @@ export default () => {
     {
       name: "tile an",
       test: () => testTile(TileAN)
-    },
-    {
-      name: "tile ap",
-      test: () => testTile(TileAP)
     },
     {
       name: "tile ad",

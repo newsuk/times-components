@@ -1,4 +1,5 @@
-import "@babel/polyfill";
+import "core-js/fn/array/flat-map";
+import "regenerator-runtime/runtime";
 import minimatch from "minimatch";
 
 const { keys, values, entries } = Object;

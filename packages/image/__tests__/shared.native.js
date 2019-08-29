@@ -13,6 +13,7 @@ import { hash } from "@times-components/test-utils";
 import "./mocks";
 import Image from "../src";
 import shared from "./shared.base";
+import { appendParamsToQuery } from "../src/utils";
 
 const getLayoutEventForWidth = width => ({
   nativeEvent: { layout: { height: width / 2, width } }
@@ -197,6 +198,27 @@ export default () => {
         testRenderer.getInstance().onImageLayout(getLayoutEventForWidth(600));
 
         expect(testRenderer).toMatchSnapshot();
+      }
+    },
+    {
+      name: "builds a valid query string",
+      test() {
+        const uri =
+          "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=100";
+
+        const queryObject = {
+          offline: true,
+          rel_height: 200,
+          rel_width: 100,
+          rel_horizontal_offset: 10,
+          rel_vertical_offset: 10
+        };
+
+        const result = appendParamsToQuery(uri, queryObject);
+
+        expect(result).toEqual(
+          "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=100&offline=true&rel_height=200&rel_width=100&rel_horizontal_offset=10&rel_vertical_offset=10"
+        );
       }
     }
   ];
