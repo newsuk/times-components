@@ -419,7 +419,7 @@ fragment standardSection on StandardSection {
           }
           summary800: summary(maxCharCount: 800)
         }
-        summary800: summary(maxCharCount: 800)
+        teaser800: teaser(maxCharCount: 800)
       }
       columnist {
         headline
@@ -976,8 +976,8 @@ fragment magazineSection on MagazineSection {
           summary125: summary(maxCharCount: 125)
           summary800: summary(maxCharCount: 800)
         }
-        summary125: summary(maxCharCount: 125)
-        summary800: summary(maxCharCount: 800)
+        teaser125: teaser(maxCharCount: 125)
+        teaser800: teaser(maxCharCount: 800)
       }
     }
     ... on SecondaryFourSlice {
@@ -1087,7 +1087,7 @@ fragment magazineSection on MagazineSection {
           }
           summary800: summary(maxCharCount: 800)
         }
-        summary800: summary(maxCharCount: 800)
+        teaser800: teaser(maxCharCount: 800)
       }
       columnist {
         headline
