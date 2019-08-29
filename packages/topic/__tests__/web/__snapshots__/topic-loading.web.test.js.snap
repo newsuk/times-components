@@ -3,6 +3,14 @@
 exports[`1. an article list loading 1`] = `
 <topicArticlesProvider>
   <Helmet>
+    <link
+      as="script"
+      href="/assets/optimizely/16079460199.js"
+      rel="preload"
+    />
+    <script
+      src="/assets/optimizely/16079460199.js"
+    />
     <title>
       
        | The Times & The Sunday Times

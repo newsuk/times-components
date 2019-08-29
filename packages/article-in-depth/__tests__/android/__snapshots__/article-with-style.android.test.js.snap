@@ -36,7 +36,7 @@ exports[`full article with style 1`] = `
             "color": "rgba(255, 255, 255, 1)",
             "fontFamily": "TimesModern-Bold",
             "fontSize": 30,
-            "lineHeight": 33,
+            "lineHeight": 36,
             "marginBottom": 10,
             "textAlign": "center",
           }
@@ -91,6 +91,7 @@ exports[`full article with style 1`] = `
         "borderTopWidth": 1,
         "marginBottom": 20,
         "marginHorizontal": 10,
+        "marginTop": 20,
         "paddingBottom": 10,
         "paddingTop": 10,
       }
@@ -227,6 +228,7 @@ exports[`full article with style in the culture magazine 1`] = `
         "borderTopWidth": 1,
         "marginBottom": 20,
         "marginHorizontal": 10,
+        "marginTop": 20,
         "paddingBottom": 10,
         "paddingTop": 10,
       }
@@ -364,6 +366,7 @@ exports[`full article with style in the style magazine 1`] = `
         "borderTopWidth": 1,
         "marginBottom": 20,
         "marginHorizontal": 10,
+        "marginTop": 20,
         "paddingBottom": 10,
         "paddingTop": 10,
       }
@@ -500,6 +503,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
         "borderTopWidth": 1,
         "marginBottom": 20,
         "marginHorizontal": 10,
+        "marginTop": 20,
         "paddingBottom": 10,
         "paddingTop": 10,
       }
@@ -636,6 +640,7 @@ exports[`tablet full article with style in the culture magazine 1`] = `
         "borderTopWidth": 1,
         "marginBottom": 20,
         "marginHorizontal": 10,
+        "marginTop": 20,
         "paddingBottom": 10,
         "paddingTop": 10,
       }
@@ -773,6 +778,7 @@ exports[`tablet full article with style in the style magazine 1`] = `
         "borderTopWidth": 1,
         "marginBottom": 20,
         "marginHorizontal": 10,
+        "marginTop": 20,
         "paddingBottom": 10,
         "paddingTop": 10,
       }
@@ -909,6 +915,7 @@ exports[`tablet full article with style in the sunday times magazine 1`] = `
         "borderTopWidth": 1,
         "marginBottom": 20,
         "marginHorizontal": 10,
+        "marginTop": 20,
         "paddingBottom": 10,
         "paddingTop": 10,
       }

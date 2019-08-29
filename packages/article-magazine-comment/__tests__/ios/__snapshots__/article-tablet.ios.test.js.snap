@@ -80,6 +80,7 @@ exports[`1. article magazine comment - tablet 1`] = `
           "alignItems": "center",
           "flexDirection": "row",
           "justifyContent": "center",
+          "marginTop": 20,
         }
       }
     >

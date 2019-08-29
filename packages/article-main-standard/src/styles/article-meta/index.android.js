@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
   },
   byline: {
     ...sharedStyles.byline,
-    lineHeight: 21
+    lineHeight: 26
   },
   datePublication: {
     ...sharedStyles.datePublication,

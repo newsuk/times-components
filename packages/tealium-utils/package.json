@@ -1,6 +1,6 @@
 {
   "name": "@times-components/tealium-utils",
-  "version": "0.7.59",
+  "version": "0.7.60",
   "description": "React tealium helpers for Times Components",
   "main": "dist",
   "dev": "src",
@@ -26,7 +26,7 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@babel/core": "7.4.4",
-    "@times-components/eslint-config-thetimes": "0.8.13",
+    "@times-components/eslint-config-thetimes": "0.8.14",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.5",
     "babel-plugin-add-react-displayname": "0.0.5",
@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "@storybook/addon-actions": "4.1.18",
-    "@times-components/tealium": "1.13.21"
+    "@times-components/tealium": "1.13.22"
   },
   "peerDependencies": {
     "react": ">=16.5",

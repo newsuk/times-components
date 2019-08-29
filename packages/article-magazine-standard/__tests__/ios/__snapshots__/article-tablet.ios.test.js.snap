@@ -69,6 +69,7 @@ exports[`1. article magazine standard - tablet 1`] = `
           "alignItems": "center",
           "flexDirection": "row",
           "justifyContent": "center",
+          "marginTop": 20,
         }
       }
     >
