@@ -145,8 +145,11 @@ fragment standardSection on StandardSection {
           listingAsset {
             ...listingAsset32
           }
+          summary125: summary(maxCharCount: 125)
         }
+        teaser125: teaser(maxCharCount: 125)
       }
+
       support2 {
         headline
         leadAsset {
@@ -160,7 +163,9 @@ fragment standardSection on StandardSection {
           listingAsset {
             ...listingAsset32
           }
+          summary125: summary(maxCharCount: 125)
         }
+        teaser125: teaser(maxCharCount: 125)
       }
       support3 {
         headline
@@ -175,7 +180,9 @@ fragment standardSection on StandardSection {
           listingAsset {
             ...listingAsset32
           }
+          summary125: summary(maxCharCount: 125)
         }
+        teaser125: teaser(maxCharCount: 125)
       }
       support4 {
         headline
@@ -190,7 +197,9 @@ fragment standardSection on StandardSection {
           listingAsset {
             ...listingAsset32
           }
+          summary125: summary(maxCharCount: 125)
         }
+        teaser125: teaser(maxCharCount: 125)
       }
     }
     ... on LeadOneAndOneSlice {
@@ -811,7 +820,9 @@ fragment magazineSection on MagazineSection {
           listingAsset {
             ...listingAsset32
           }
+          summary125: summary(maxCharCount: 125)
         }
+        teaser125: teaser(maxCharCount: 125)
       }
       support2 {
         headline
@@ -826,7 +837,9 @@ fragment magazineSection on MagazineSection {
           listingAsset {
             ...listingAsset32
           }
+          summary125: summary(maxCharCount: 125)
         }
+        teaser125: teaser(maxCharCount: 125)
       }
       support3 {
         headline
@@ -841,7 +854,9 @@ fragment magazineSection on MagazineSection {
           listingAsset {
             ...listingAsset32
           }
+          summary125: summary(maxCharCount: 125)
         }
+        teaser125: teaser(maxCharCount: 125)
       }
       support4 {
         headline
@@ -856,7 +871,9 @@ fragment magazineSection on MagazineSection {
           listingAsset {
             ...listingAsset32
           }
+          summary125: summary(maxCharCount: 125)
         }
+        teaser125: teaser(maxCharCount: 125)
       }
     }
     ... on LeadOneAndOneSlice {

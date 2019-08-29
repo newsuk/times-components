@@ -1795,45 +1795,59 @@ exports[`34. tile an 1`] = `
 
 exports[`35. tile ad 1`] = `
 <Link>
-  <Image
-    style={
-      Object {
-        "width": "30%",
-      }
-    }
-  />
   <View
     style={
       Object {
-        "paddingLeft": 10,
-        "width": "70%",
+        "flex": 1,
       }
     }
   >
-    <View
-      style={
-        Object {
-          "marginBottom": 5,
-        }
-      }
-    >
-      <ArticleLabel />
+    <View>
+      <View>
+        <View
+          style={
+            Object {
+              "marginBottom": 5,
+            }
+          }
+        >
+          <ArticleLabel />
+        </View>
+        <Text
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 20,
+              "fontWeight": "400",
+              "lineHeight": 20,
+              "marginBottom": 0,
+            }
+          }
+        >
+          This is tile headline
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#696969",
+              "flexWrap": "wrap",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 14,
+              "lineHeight": 20,
+              "marginBottom": 0,
+            }
+          }
+        >
+          <Text>
+            
+            Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+            ...
+          </Text>
+        </Text>
+        <ArticleFlags />
+      </View>
     </View>
-    <Text
-      style={
-        Object {
-          "color": "#333333",
-          "fontFamily": "TimesModern-Bold",
-          "fontSize": 20,
-          "fontWeight": "400",
-          "lineHeight": 20,
-          "marginBottom": 0,
-        }
-      }
-    >
-      This is tile headline
-    </Text>
-    <ArticleFlags />
   </View>
 </Link>
 `;

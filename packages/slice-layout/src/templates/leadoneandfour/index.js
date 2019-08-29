@@ -4,7 +4,7 @@ import { editionBreakpoints } from "@times-components/styleguide";
 import { defaultProps, propTypes } from "./proptypes";
 import { ItemColSeparator } from "../shared";
 import VerticalLayout from "../verticallayout";
-import styles from "./styles";
+import stylesFactory from "./styles";
 
 const leadOneAndFourSlice = ({
   breakpoint,
@@ -14,6 +14,7 @@ const leadOneAndFourSlice = ({
   support3,
   support4
 }) => {
+  const styles = stylesFactory(breakpoint);
   const { container, leadContainer, supportContainer } = styles;
 
   if (editionBreakpoints.small === breakpoint) {
