@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.72](https://github.com/newsuk/times-components/compare/@times-components/star-button@0.1.71...@times-components/star-button@0.1.72) (2019-08-29)
+
+**Note:** Version bump only for package @times-components/star-button
+
+
+
+
+
 ## [0.1.71](https://github.com/newsuk/times-components/compare/@times-components/star-button@0.1.70...@times-components/star-button@0.1.71) (2019-08-28)
 
 

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.24](https://github.com/newsuk/times-components/compare/@times-components/depend@2.1.23...@times-components/depend@2.1.24) (2019-08-29)
+
+**Note:** Version bump only for package @times-components/depend
+
+
+
+
+
 ## [2.1.23](https://github.com/newsuk/times-components/compare/@times-components/depend@2.1.22...@times-components/depend@2.1.23) (2019-08-21)
 
 **Note:** Version bump only for package @times-components/depend
