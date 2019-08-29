@@ -34,17 +34,13 @@ import {
   TileW,
   TileX,
   TileY,
-  TileZ,
   TileAA,
   TileAB,
-  TileAG,
   TileAH,
   TileAI,
   TileAL,
   TileAM,
   TileAN,
-  TileAP,
-  TileAQ,
   TileAR,
   TileAS
 } from "./src/tiles";
@@ -194,10 +190,6 @@ const tileStories = [
     Tile: TileY
   },
   {
-    name: "Tile Z - 35pt Headline, no teaser, 4:5 image",
-    Tile: TileZ
-  },
-  {
     name: "Tile AA - No image, 20pt headline, with teaser",
     Tile: TileAA
   },
@@ -209,11 +201,6 @@ const tileStories = [
   {
     name: "Tile AE - 35pt headline, 125 teaser, no image",
     Tile: TileAE
-  },
-  {
-    name:
-      "Tile AG - No image, 30pt headline, no teaser, comment article, center align",
-    Tile: TileAG
   },
   {
     name:
@@ -231,14 +218,6 @@ const tileStories = [
   {
     name: "Tile AN - Roundel image, 22pt headline, with teaser",
     Tile: TileAN
-  },
-  {
-    name: "Tile AP - Vertical Aligned - Roundel Img on top of Article Summary",
-    Tile: TileAP
-  },
-  {
-    name: "Tile AQ - Top image 16:9, 22pt headline, with teaser",
-    Tile: TileAQ
   },
   {
     name: "Tile AR - Top image 16:9, 20pt headline, with teaser",
