@@ -163,7 +163,7 @@ fragment standardSection on StandardSection {
           listingAsset {
             ...listingAsset32
           }
-        summary125: summary(maxCharCount: 125)
+          summary125: summary(maxCharCount: 125)
         }
         teaser125: teaser(maxCharCount: 125)
       }
@@ -180,7 +180,7 @@ fragment standardSection on StandardSection {
           listingAsset {
             ...listingAsset32
           }
-        summary125: summary(maxCharCount: 125)
+          summary125: summary(maxCharCount: 125)
         }
         teaser125: teaser(maxCharCount: 125)
       }
@@ -197,7 +197,7 @@ fragment standardSection on StandardSection {
           listingAsset {
             ...listingAsset32
           }
-        summary125: summary(maxCharCount: 125)
+          summary125: summary(maxCharCount: 125)
         }
         teaser125: teaser(maxCharCount: 125)
       }
@@ -820,7 +820,7 @@ fragment magazineSection on MagazineSection {
           listingAsset {
             ...listingAsset32
           }
-        summary125: summary(maxCharCount: 125)
+          summary125: summary(maxCharCount: 125)
         }
         teaser125: teaser(maxCharCount: 125)
       }
@@ -837,7 +837,7 @@ fragment magazineSection on MagazineSection {
           listingAsset {
             ...listingAsset32
           }
-        summary125: summary(maxCharCount: 125)
+          summary125: summary(maxCharCount: 125)
         }
         teaser125: teaser(maxCharCount: 125)
       }
@@ -854,7 +854,7 @@ fragment magazineSection on MagazineSection {
           listingAsset {
             ...listingAsset32
           }
-        summary125: summary(maxCharCount: 125)
+          summary125: summary(maxCharCount: 125)
         }
         teaser125: teaser(maxCharCount: 125)
       }
@@ -871,7 +871,7 @@ fragment magazineSection on MagazineSection {
           listingAsset {
             ...listingAsset32
           }
-        summary125: summary(maxCharCount: 125)
+          summary125: summary(maxCharCount: 125)
         }
         teaser125: teaser(maxCharCount: 125)
       }
