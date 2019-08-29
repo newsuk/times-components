@@ -119,3 +119,63 @@ exports[`2. list two and six no pic - medium 1`] = `
   </View>
 </View>
 `;
+
+exports[`3. list two and six no pic - wide 1`] = `
+<View>
+  <View>
+    <Text>
+      lead-1
+    </Text>
+  </View>
+  <View />
+  <View>
+    <Text>
+      lead-2
+    </Text>
+  </View>
+  <View />
+  <View>
+    <View>
+      <View>
+        <Text>
+          support-1
+        </Text>
+      </View>
+      <View />
+      <View>
+        <Text>
+          support-2
+        </Text>
+      </View>
+    </View>
+    <View />
+    <View>
+      <View>
+        <Text>
+          support-3
+        </Text>
+      </View>
+      <View />
+      <View>
+        <Text>
+          support-4
+        </Text>
+      </View>
+    </View>
+    <View />
+    <View>
+      <View>
+        <Text>
+          support-5
+        </Text>
+      </View>
+      <View />
+      <View>
+        <Text>
+          support-6
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;

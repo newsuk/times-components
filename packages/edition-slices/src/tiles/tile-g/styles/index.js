@@ -42,6 +42,10 @@ const mediumBreakpointStyles = {
     fontFamily: fonts.headline,
     fontSize: 20,
     lineHeight: 20
+  },
+  imageContainer: {
+    overflow: "hidden",
+    width: 97
   }
 };
 
