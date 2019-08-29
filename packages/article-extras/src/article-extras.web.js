@@ -13,7 +13,6 @@ const ArticleExtras = ({
   articleId,
   commentsEnabled,
   registerNode,
-  saveApi,
   savingEnabled,
   sharingEnabled,
   articleUrl,
@@ -37,7 +36,6 @@ const ArticleExtras = ({
                 onCopyLink={() => showMessage("Article link copied")}
                 onSaveToMyArticles={() => {}}
                 onShareOnEmail={() => {}}
-                saveApi={saveApi}
                 savingEnabled={savingEnabled}
                 sharingEnabled={sharingEnabled}
               />
@@ -69,11 +67,6 @@ ArticleExtras.propTypes = {
   articleUrl: PropTypes.string.isRequired,
   articleHeadline: PropTypes.string.isRequired,
   commentsEnabled: PropTypes.bool.isRequired,
-  saveApi: PropTypes.shape({
-    bookmark: PropTypes.func.isRequired,
-    getBookmarks: PropTypes.func.isRequired,
-    unBookmark: PropTypes.func.isRequired
-  }).isRequired,
   registerNode: PropTypes.func.isRequired,
   relatedArticleSlice: PropTypes.shape({}),
   relatedArticlesVisible: PropTypes.bool.isRequired,

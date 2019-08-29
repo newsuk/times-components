@@ -5,7 +5,7 @@ export default Component =>
     analyticsEvents: [
       {
         actionName: "Pressed",
-        eventName: "onSaveButtonPress",
+        eventName: "onSave",
         getAttrs: ({ articleId, savedStatus }) => ({
           articleId,
           savedStatus: !savedStatus

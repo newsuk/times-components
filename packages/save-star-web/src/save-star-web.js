@@ -1,59 +1,31 @@
 /* eslint-env browser */
-import React, { Component } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import styles from "./styles";
 import SaveStarWithTracking from "./save-star-with-tracking";
+import SaveAPI from "./save-api";
 
-/* eslint-disable jsx-a11y/anchor-is-valid */
-class SaveStarWeb extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      savedStatus: false
-    };
-    this.updateSavedStatus = this.updateSavedStatus.bind(this);
-  }
-
-  updateSavedStatus(savedStatus) {
-    this.setState({
-      savedStatus
-    });
-  }
-
-  render() {
-    const { savedStatus } = this.state;
-    const {
-      colour,
-      hoverColour,
-      articleId,
-      saveApi,
-      onSaveButtonPress
-    } = this.props;
-
-    return (
-      <SaveStarWithTracking
-        colour={colour}
-        hoverColour={hoverColour}
-        articleId={articleId}
-        saveApi={saveApi}
-        savedStatus={savedStatus}
-        updateSavedStatus={this.updateSavedStatus}
-        onSaveButtonPress={onSaveButtonPress}
-      />
-    );
-  }
+function SaveStarWeb({ colour, hoverColour, articleId }) {
+  return (
+    <SaveAPI articleId={articleId}>
+      {({ isLoading, toggleSaved, savedStatus }) => (
+        <SaveStarWithTracking
+          colour={colour}
+          hoverColour={hoverColour}
+          articleId={articleId}
+          savedStatus={savedStatus}
+          onSave={toggleSaved}
+          isLoading={isLoading}
+        />
+      )}
+    </SaveAPI>
+  );
 }
 
 SaveStarWeb.propTypes = {
   articleId: PropTypes.string.isRequired,
   colour: PropTypes.string,
-  hoverColour: PropTypes.string,
-  saveApi: PropTypes.shape({
-    bookmark: PropTypes.func.isRequired,
-    getBookmarks: PropTypes.func.isRequired,
-    unBookmark: PropTypes.func.isRequired
-  }).isRequired,
-  onSaveButtonPress: PropTypes.func.isRequired
+  hoverColour: PropTypes.string
 };
 
 SaveStarWeb.defaultProps = {
@@ -62,4 +34,3 @@ SaveStarWeb.defaultProps = {
 };
 
 export default SaveStarWeb;
-export { default as saveApi } from "./save-api";

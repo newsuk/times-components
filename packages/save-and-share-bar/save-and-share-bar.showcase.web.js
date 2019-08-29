@@ -1,5 +1,4 @@
 import React from "react";
-import saveApi from "@times-components/save-star-web/mock-save-api-showcase";
 import { scales } from "@times-components/styleguide";
 import { MessageManager, MessageContext } from "@times-components/message-bar";
 import SaveAndShareBar from "./src/save-and-share-bar";
@@ -32,7 +31,6 @@ export default {
                 articleUrl="https://www.thetimes.co.uk/"
                 onCopyLink={() => showMessage("Article link copied")}
                 getTokenisedShareUrl={mockGetTokenisedArticleUrl}
-                saveApi={saveApi}
                 savingEnabled
                 sharingEnabled
               />

@@ -7,7 +7,7 @@ import mm from "./make-mocks";
 
 const makeMocks = mm(schema);
 
-const makeQuery = ({ defaults, delay, error, query, variables }) =>
+const makeQuery = ({ defaults, delay, error, query, variables, repeatable }) =>
   graphql(makeMocks(defaults), print(query), null, null, variables).then(
     mock => ({
       defaults,
@@ -15,19 +15,28 @@ const makeQuery = ({ defaults, delay, error, query, variables }) =>
       error,
       mock,
       query,
-      variables
+      variables,
+      repeatable
     })
   );
 
-const toResponse = ({ delay, error, mock, query, variables }) => ({
-  delay,
-  error,
-  request: {
-    query,
-    variables
-  },
-  result: mock
-});
+const toResponse = ({ delay, error, mock, query, variables, repeatable }) => {
+  const response = {
+    delay,
+    error,
+    request: {
+      query,
+      variables
+    },
+    result: mock
+  };
+
+  if (repeatable) {
+    response.newData = () => response.result;
+  }
+
+  return response;
+};
 
 export const schemaToMocks = params =>
   Promise.all(params.map(makeQuery)).then(([...mocks]) =>

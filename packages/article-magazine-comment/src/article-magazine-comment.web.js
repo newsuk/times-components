@@ -75,7 +75,6 @@ class ArticlePage extends Component {
       error,
       isLoading,
       receiveChildList,
-      saveApi,
       spotAccountId,
       paidContentClassName,
       faviconUrl
@@ -92,7 +91,6 @@ class ArticlePage extends Component {
         data={article}
         Header={this.renderHeader}
         receiveChildList={receiveChildList}
-        saveApi={saveApi}
         spotAccountId={spotAccountId}
         paidContentClassName={paidContentClassName}
         faviconUrl={faviconUrl}

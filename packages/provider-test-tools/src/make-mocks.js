@@ -3,7 +3,8 @@ import { printSchema, buildClientSchema } from "graphql/utilities";
 
 export default ({ data: { __schema } }) => ({
   types: defaultTypes,
-  values: defaultValues
+  values: defaultValues,
+  mutationValues: defaultMutationValues
 } = {}) => {
   const schemaSDL = printSchema(buildClientSchema({ __schema }));
 
@@ -11,6 +12,9 @@ export default ({ data: { __schema } }) => ({
     resolvers: {
       Query: {
         ...defaultValues
+      },
+      Mutation: {
+        ...defaultMutationValues
       }
     },
     resolverValidationOptions: {

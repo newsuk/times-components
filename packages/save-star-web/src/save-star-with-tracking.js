@@ -21,79 +21,19 @@ const IconContainer = styled(HoverIcon)`
 class SaveStar extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      loadingState: null
-    };
     this.onSaveButtonPress = this.onSaveButtonPress.bind(this);
-    this.save = this.save.bind(this);
-    this.renderSaveButton = this.renderSaveButton.bind(this);
-  }
-
-  componentDidMount() {
-    const { articleId, saveApi, updateSavedStatus } = this.props;
-
-    this.getBookmarks(articleId, saveApi, updateSavedStatus);
   }
 
   onSaveButtonPress(e) {
-    const { onSaveButtonPress } = this.props;
-    onSaveButtonPress(this.save, e);
-  }
+    const { onSave, articleId, savedStatus } = this.props;
 
-  getBookmarks(articleId, saveApi, updateSavedStatus) {
-    saveApi
-      .getBookmarks()
-      .then(response => {
-        const { loading, data } = response;
-        if (loading) {
-          this.setState({ loadingState: true });
-        } else {
-          const savedArticles = data.viewer.bookmarks.bookmarks.map(
-            item => item.id
-          );
-
-          this.setState({
-            loadingState: false
-          });
-          updateSavedStatus(!!savedArticles.find(item => item === articleId));
-        }
-      })
-      .catch(error => {
-        this.setState({ loadingState: false });
-        updateSavedStatus(false);
-        console.error(error);
-      });
-  }
-
-  save() {
-    this.setState({ loadingState: true });
-
-    const {
-      articleId: id,
-      saveApi,
-      savedStatus,
-      updateSavedStatus
-    } = this.props;
-
-    const saveMethod = savedStatus ? saveApi.unBookmark : saveApi.bookmark;
-    saveMethod(id)
-      .then(() => {
-        this.setState({
-          loadingState: false
-        });
-        updateSavedStatus(!savedStatus);
-      })
-      .catch(error => {
-        this.setState({ loadingState: false });
-        updateSavedStatus(savedStatus);
-        console.error("Error in connecting to api", error);
-      });
+    e.preventDefault();
+    onSave({ articleId, savedStatus });
   }
 
   renderSaveButton() {
     const { colour, hoverColour, savedStatus } = this.props;
-    const saveStyle = getStyles({ saveStatus: savedStatus });
-    const { fillColour, strokeColour } = saveStyle;
+    const { fillColour, strokeColour } = getStyles({ saveStatus: savedStatus });
     return (
       <Link onPress={this.onSaveButtonPress} responsiveLinkStyles={styles.link}>
         <IconContainer colour={colour} hoverColour={hoverColour}>
@@ -111,9 +51,9 @@ class SaveStar extends Component {
   }
 
   renderActivity() {
-    const { loadingState } = this.state;
+    const { isLoading } = this.props;
 
-    if (loadingState) {
+    if (isLoading) {
       return <ActivityIndicator size="small" style={styles.activityLoader} />;
     }
 
@@ -135,14 +75,9 @@ SaveStar.propTypes = {
   articleId: PropTypes.string.isRequired,
   colour: PropTypes.string,
   hoverColour: PropTypes.string,
-  saveApi: PropTypes.shape({
-    bookmark: PropTypes.func.isRequired,
-    getBookmarks: PropTypes.func.isRequired,
-    unBookmark: PropTypes.func.isRequired
-  }).isRequired,
   savedStatus: PropTypes.bool.isRequired,
-  onSaveButtonPress: PropTypes.func.isRequired,
-  updateSavedStatus: PropTypes.func.isRequired
+  onSave: PropTypes.func.isRequired,
+  isLoading: PropTypes.bool.isRequired
 };
 
 SaveStar.defaultProps = {

@@ -8,11 +8,11 @@ import {
 import { ArticleProvider } from "@times-components/provider";
 import {
   article as makeParams,
+  bookmarks as makeBookmarksParams,
   fixtures,
   MockedProvider,
   schemaToMocks
 } from "@times-components/provider-test-tools";
-import saveArticleApi from "@times-components/save-star-web/mock-save-api-showcase";
 import { sections } from "@times-components/storybook";
 import { scales, themeFactory } from "@times-components/styleguide";
 import storybookReporter from "@times-components/tealium-utils";
@@ -160,36 +160,41 @@ class ArticleConfigurator extends Component {
   }
 
   componentDidMount() {
-    const { configuration, id } = this.props;
-    schemaToMocks(
-      makeParams({
-        makeArticle: makeArticle(configuration),
-        variables: () => ({
-          id
-        })
-      })
-    ).then(mocks => this.setState({ mocks }));
+    this.setMocks();
   }
 
   componentDidUpdate(prevProps) {
-    const { configuration, id } = this.props;
+    const { configuration } = this.props;
     if (configuration !== prevProps.configuration) {
       // eslint-disable-next-line react/no-did-update-set-state
       this.setState(
         {
           reRendering: true
         },
-        () =>
-          schemaToMocks(
-            makeParams({
-              makeArticle: makeArticle(configuration),
-              variables: () => ({
-                id
-              })
-            })
-          ).then(mocks => this.setState({ mocks, reRendering: false }))
+        () => this.setMocks()
       );
     }
+  }
+
+  setMocks() {
+    const { configuration, id } = this.props;
+
+    Promise.all([
+      schemaToMocks(
+        makeParams({
+          makeArticle: makeArticle(configuration),
+          variables: () => ({
+            id
+          })
+        })
+      ),
+      schemaToMocks(makeBookmarksParams({ id }))
+    ]).then(([articleMocks, bookmarkMocks]) => {
+      return this.setState({
+        mocks: [...articleMocks, ...bookmarkMocks],
+        reRendering: false
+      });
+    });
   }
 
   render() {
@@ -210,7 +215,6 @@ const renderArticle = ({
   id,
   inDepthBackgroundColour,
   inDepthTextColour,
-  saveApi = saveArticleApi,
   scale,
   section,
   template,
@@ -273,7 +277,6 @@ const renderArticle = ({
             onVideoPress={preventDefaultedAction(decorateAction)(
               "onVideoPress"
             )}
-            saveApi={saveApi}
             refetch={refetch}
           />
         </ContextProviderWithDefaults>
@@ -354,7 +357,6 @@ const renderArticleConfig = ({
             inDepthTextColour,
             isTeaser,
             isMeteredExpired,
-            saveApi: saveArticleApi,
             scale,
             section,
             template

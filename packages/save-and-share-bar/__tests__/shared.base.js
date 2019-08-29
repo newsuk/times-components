@@ -2,7 +2,7 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
 import { Clipboard } from "react-native";
-import SaveStarWeb, { saveApi } from "@times-components/save-star-web";
+import SaveStarWeb from "@times-components/save-star-web";
 import { UserState } from "./mocks";
 import mockGetTokenisedArticleUrl from "./mock-get-tokenised-article-url";
 import BarItem from "../src/bar-item";
@@ -11,8 +11,7 @@ import EmailShare from "../src/email-share";
 
 jest.mock("@times-components/save-star-web", () => ({
   default: () => "SaveStarWeb",
-  __esModule: true,
-  saveApi: jest.fn()
+  __esModule: true
 }));
 
 export default () => {
@@ -29,7 +28,6 @@ export default () => {
       onCopyLink,
       onShareEmail,
       getTokenisedShareUrl: mockGetTokenisedArticleUrl,
-      saveApi,
       sharingEnabled: true,
       savingEnabled: true
     };
