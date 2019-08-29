@@ -12,7 +12,7 @@ exports[`1. daily universal register 1`] = `
 .IS2 {
   color: rgba(133,0,41,1.00);
   font-family: TimesDigitalW04;
-  font-size: 16px;
+  font-size: 15px;
   margin-bottom: 15px;
 }
 
@@ -1667,6 +1667,8 @@ exports[`8. secondary one and columnist 1`] = `
 }
 
 .IS3 {
+  padding-top: 5px;
+  padding-bottom: 5px;
   width: 33%;
 }
 
@@ -1826,6 +1828,8 @@ exports[`9. secondary four 1`] = `
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
+  padding-top: 5px;
+  padding-bottom: 5px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
