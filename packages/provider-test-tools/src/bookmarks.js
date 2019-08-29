@@ -5,52 +5,47 @@ import {
   unsaveBookmarks
 } from "@times-components/provider-queries";
 
-export default ({ id, error = () => {} } = {}) => {
-  return [
-    {
-      defaults: {
-        types: {
-          Bookmark: () => ({
-            id
-          }),
-          PageOfBookmarks: () => ({
-            bookmarks: [],
-            total: 0
-          })
-        }
-      },
-      error: error(),
-      query: getBookmarks,
-      variables: {},
-      delay: 1000
+export default ({ id } = {}) => [
+  {
+    defaults: {
+      types: {
+        Bookmark: () => ({
+          id
+        }),
+        PageOfBookmarks: () => ({
+          bookmarks: [],
+          total: 0
+        })
+      }
     },
-    {
-      query: saveBookmarks,
-      error: error(),
-      variables: {
-        id
-      },
-      defaults: {
-        mutationValues: {
-          saveBookmarks: () => [{ id, __typename: "Bookmark" }]
-        }
-      },
-      repeatable: true,
-      delay: 1000
+    query: getBookmarks,
+    variables: {},
+    delay: 1000
+  },
+  {
+    query: saveBookmarks,
+    variables: {
+      id
     },
-    {
-      query: unsaveBookmarks,
-      error: error(),
-      variables: {
-        id
-      },
-      defaults: {
-        mutationValues: {
-          unsaveBookmarks: () => [id]
-        }
-      },
-      repeatable: true,
-      delay: 1000
-    }
-  ];
-};
+    defaults: {
+      mutationValues: {
+        saveBookmarks: () => [{ id, __typename: "Bookmark" }]
+      }
+    },
+    repeatable: true,
+    delay: 1000
+  },
+  {
+    query: unsaveBookmarks,
+    variables: {
+      id
+    },
+    defaults: {
+      mutationValues: {
+        unsaveBookmarks: () => [id]
+      }
+    },
+    repeatable: true,
+    delay: 1000
+  }
+];

@@ -8,7 +8,6 @@ import {
 import { ArticleProvider } from "@times-components/provider";
 import {
   article as makeParams,
-  bookmarks as makeBookmarksParams,
   fixtures,
   MockedProvider,
   schemaToMocks
@@ -160,41 +159,36 @@ class ArticleConfigurator extends Component {
   }
 
   componentDidMount() {
-    this.setMocks();
+    const { configuration, id } = this.props;
+    schemaToMocks(
+      makeParams({
+        makeArticle: makeArticle(configuration),
+        variables: () => ({
+          id
+        })
+      })
+    ).then(mocks => this.setState({ mocks }));
   }
 
   componentDidUpdate(prevProps) {
-    const { configuration } = this.props;
+    const { configuration, id } = this.props;
     if (configuration !== prevProps.configuration) {
       // eslint-disable-next-line react/no-did-update-set-state
       this.setState(
         {
           reRendering: true
         },
-        () => this.setMocks()
+        () =>
+          schemaToMocks(
+            makeParams({
+              makeArticle: makeArticle(configuration),
+              variables: () => ({
+                id
+              })
+            })
+          ).then(mocks => this.setState({ mocks, reRendering: false }))
       );
     }
-  }
-
-  setMocks() {
-    const { configuration, id } = this.props;
-
-    Promise.all([
-      schemaToMocks(
-        makeParams({
-          makeArticle: makeArticle(configuration),
-          variables: () => ({
-            id
-          })
-        })
-      ),
-      schemaToMocks(makeBookmarksParams({ id }))
-    ]).then(([articleMocks, bookmarkMocks]) => {
-      return this.setState({
-        mocks: [...articleMocks, ...bookmarkMocks],
-        reRendering: false
-      });
-    });
   }
 
   render() {
