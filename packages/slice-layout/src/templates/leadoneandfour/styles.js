@@ -20,12 +20,8 @@ const wideBreakpointStyles = {
     ...defaultBreakpointStyles.container,
     marginHorizontal: spacing(2)
   },
-  leadContainer: {
-    ...defaultBreakpointStyles.leadContainer
-  },
-  supportContainer: {
-    ...defaultBreakpointStyles.supportContainer
-  }
+  leadContainer: defaultBreakpointStyles.leadContainer,
+  supportContainer: defaultBreakpointStyles.supportContainer
 };
 
 const styleResolver = {
