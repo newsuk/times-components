@@ -2653,8 +2653,6 @@ exports[`13. list two and six no pic 1`] = `
   border-left-style: solid;
   margin-right: 10px;
   margin-left: 10px;
-  margin-top: 5px;
-  margin-bottom: 5px;
 }
 
 .IS10 {
@@ -2709,8 +2707,6 @@ exports[`13. list two and six no pic 1`] = `
   border-left-style: solid;
   margin-right: 10px;
   margin-left: 10px;
-  margin-top: 5px;
-  margin-bottom: 5px;
 }
 
 .IS15 {

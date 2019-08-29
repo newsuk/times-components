@@ -30,11 +30,25 @@ const mediumBreakpointStyles = {
     ...sharedStyles.headlineStyle,
     fontSize: 18,
     lineHeight: 18,
-    marginBottom: spacing(1)
+    marginBottom: 0
   }
 };
 
-export default breakpoint =>
-  breakpoint === editionBreakpoints.medium
-    ? mediumBreakpointStyles
-    : smallBreakpointStyles;
+const wideBreakpointStyles = {
+  ...sharedStyles,
+  headlineStyle: {
+    ...sharedStyles.headlineStyle,
+    fontSize: 20,
+    lineHeight: 20,
+    marginBottom: 0
+  }
+};
+
+const stylesResolver = {
+  [editionBreakpoints.small]: smallBreakpointStyles,
+  [editionBreakpoints.medium]: mediumBreakpointStyles,
+  [editionBreakpoints.wide]: wideBreakpointStyles,
+  [editionBreakpoints.huge]: wideBreakpointStyles
+};
+
+export default breakpoint => stylesResolver[breakpoint];
