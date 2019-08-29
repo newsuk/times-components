@@ -1,16 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { LeadTwoNoPicAndTwoSlice } from "@times-components/slice-layout";
-import {
-  TileB,
-  TileD,
-  TileE,
-  TileF,
-  TileX,
-  TileY,
-  TileZ,
-  TileAL
-} from "../../tiles";
+import { TileB, TileD, TileE, TileF, TileX, TileY, TileAL } from "../../tiles";
 import { ResponsiveSlice } from "../shared";
 
 class LeadTwoNoPicAndTwo extends Component {
@@ -69,16 +60,16 @@ class LeadTwoNoPicAndTwo extends Component {
           <TileE
             breakpoint={breakpoint}
             onPress={onPress}
-            tile={support2}
-            tileName="support2"
+            tile={support1}
+            tileName="support1"
           />
         }
         support2={
           <TileD
             breakpoint={breakpoint}
             onPress={onPress}
-            tile={support1}
-            tileName="support1"
+            tile={support2}
+            tileName="support2"
           />
         }
       />
@@ -90,16 +81,22 @@ class LeadTwoNoPicAndTwo extends Component {
       onPress,
       slice: { lead1, lead2, support1, support2 }
     } = this.props;
+
     return (
       <LeadTwoNoPicAndTwoSlice
         breakpoint={breakpoint}
         lead1={<TileX onPress={onPress} tile={lead1} tileName="lead1" />}
         lead2={<TileY onPress={onPress} tile={lead2} tileName="lead2" />}
         support1={
-          <TileAL onPress={onPress} tile={support1} tileName="support1" />
+          <TileE
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={support1}
+            tileName="support1"
+          />
         }
         support2={
-          <TileZ onPress={onPress} tile={support2} tileName="support2" />
+          <TileAL onPress={onPress} tile={support2} tileName="support2" />
         }
       />
     );
@@ -108,10 +105,10 @@ class LeadTwoNoPicAndTwo extends Component {
   render() {
     return (
       <ResponsiveSlice
-        renderHuge={this.renderWide}
-        renderMedium={this.renderMedium}
         renderSmall={this.renderSmall}
+        renderMedium={this.renderMedium}
         renderWide={this.renderWide}
+        renderHuge={this.renderWide}
       />
     );
   }

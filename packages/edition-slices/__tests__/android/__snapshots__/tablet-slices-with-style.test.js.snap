@@ -1414,8 +1414,8 @@ exports[`20. lead two no pic and two - wide 1`] = `
   <View
     style={
       Object {
+        "flex": 1,
         "flexDirection": "row",
-        "justifyContent": "center",
         "marginHorizontal": 10,
       }
     }
@@ -1446,7 +1446,26 @@ exports[`20. lead two no pic and two - wide 1`] = `
           "borderColor": "#DBDBDB",
           "borderRightWidth": 1,
           "borderStyle": "solid",
-          "marginVertical": 10,
+          "marginVertical": 15,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "width": "42%",
+        }
+      }
+    >
+      <TileE />
+    </View>
+    <View
+      style={
+        Object {
+          "borderColor": "#DBDBDB",
+          "borderRightWidth": 1,
+          "borderStyle": "solid",
+          "marginVertical": 15,
         }
       }
     />
@@ -1458,25 +1477,6 @@ exports[`20. lead two no pic and two - wide 1`] = `
       }
     >
       <TileAL />
-    </View>
-    <View
-      style={
-        Object {
-          "borderColor": "#DBDBDB",
-          "borderRightWidth": 1,
-          "borderStyle": "solid",
-          "marginVertical": 10,
-        }
-      }
-    />
-    <View
-      style={
-        Object {
-          "width": "42%",
-        }
-      }
-    >
-      <TileZ />
     </View>
   </View>
 </View>
@@ -2628,8 +2628,8 @@ exports[`35. lead two no pic and two - huge 1`] = `
     <View
       style={
         Object {
+          "flex": 1,
           "flexDirection": "row",
-          "justifyContent": "center",
           "marginHorizontal": 10,
         }
       }
@@ -2660,7 +2660,26 @@ exports[`35. lead two no pic and two - huge 1`] = `
             "borderColor": "#DBDBDB",
             "borderRightWidth": 1,
             "borderStyle": "solid",
-            "marginVertical": 10,
+            "marginVertical": 15,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "width": "42%",
+          }
+        }
+      >
+        <TileE />
+      </View>
+      <View
+        style={
+          Object {
+            "borderColor": "#DBDBDB",
+            "borderRightWidth": 1,
+            "borderStyle": "solid",
+            "marginVertical": 15,
           }
         }
       />
@@ -2672,25 +2691,6 @@ exports[`35. lead two no pic and two - huge 1`] = `
         }
       >
         <TileAL />
-      </View>
-      <View
-        style={
-          Object {
-            "borderColor": "#DBDBDB",
-            "borderRightWidth": 1,
-            "borderStyle": "solid",
-            "marginVertical": 10,
-          }
-        }
-      />
-      <View
-        style={
-          Object {
-            "width": "42%",
-          }
-        }
-      >
-        <TileZ />
       </View>
     </View>
   </View>

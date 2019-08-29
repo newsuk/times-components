@@ -1,7 +1,7 @@
 import {
+  colours,
   fonts,
   spacing,
-  fontFactory,
   editionBreakpoints
 } from "@times-components/styleguide";
 
@@ -19,28 +19,14 @@ const mediumBreakpointStyles = {
   },
   strapline: {
     fontFamily: fonts.headlineRegular,
+    color: colours.functional.primary,
     fontSize: 24,
     lineHeight: 26
   }
 };
 
 const wideBreakpointStyles = {
-  container: {
-    flex: 1,
-    padding: spacing(2)
-  },
-  headline: {
-    fontFamily: fonts.headline,
-    fontSize: 40,
-    lineHeight: 40
-  },
-  strapline: {
-    ...fontFactory({
-      font: "bodyRegular",
-      fontSize: "pageComponentHeadline"
-    }),
-    paddingBottom: spacing(1)
-  }
+  ...mediumBreakpointStyles
 };
 
 export default breakpoint =>

@@ -289,6 +289,21 @@ fragment standardSection on StandardSection {
       support1 {
         headline
         leadAsset {
+          ...leadAsset45
+        }
+        article {
+          ...baseArticleProps
+          leadAsset {
+            ...leadAsset45
+          }
+          listingAsset {
+            ...listingAsset45
+          }
+        }
+      }
+      support2 {
+        headline
+        leadAsset {
           ...leadAsset32
         }
         article {
@@ -304,21 +319,6 @@ fragment standardSection on StandardSection {
         }
         teaser125: teaser(maxCharCount: 125)
         teaser800: teaser(maxCharCount: 800)
-      }
-      support2 {
-        headline
-        leadAsset {
-          ...leadAsset45
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset45
-          }
-          listingAsset {
-            ...listingAsset45
-          }
-        }
       }
     }
     ... on SecondaryFourSlice {
@@ -426,7 +426,9 @@ fragment standardSection on StandardSection {
           listingAsset {
             ...listingAsset169
           }
+          summary800: summary(maxCharCount: 800)
         }
+        teaser800: teaser(maxCharCount: 800)
       }
       columnist {
         headline
@@ -963,23 +965,6 @@ fragment magazineSection on MagazineSection {
       support1 {
         headline
         leadAsset {
-          ...leadAsset32
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset32
-          }
-          listingAsset {
-            ...listingAsset32
-          }
-          summary800: summary(maxCharCount: 800)
-        }
-        teaser800: teaser(maxCharCount: 800)
-      }
-      support2 {
-        headline
-        leadAsset {
           ...leadAsset45
         }
         article {
@@ -991,6 +976,25 @@ fragment magazineSection on MagazineSection {
             ...listingAsset45
           }
         }
+      }
+      support2 {
+        headline
+        leadAsset {
+          ...leadAsset32
+        }
+        article {
+          ...baseArticleProps
+          leadAsset {
+            ...leadAsset32
+          }
+          listingAsset {
+            ...listingAsset32
+          }
+          summary125: summary(maxCharCount: 125)
+          summary800: summary(maxCharCount: 800)
+        }
+        teaser125: teaser(maxCharCount: 125)
+        teaser800: teaser(maxCharCount: 800)
       }
     }
     ... on SecondaryFourSlice {
@@ -1098,7 +1102,9 @@ fragment magazineSection on MagazineSection {
           listingAsset {
             ...listingAsset169
           }
+          summary800: summary(maxCharCount: 800)
         }
+        teaser800: teaser(maxCharCount: 800)
       }
       columnist {
         headline
