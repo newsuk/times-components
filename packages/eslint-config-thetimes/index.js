@@ -4,6 +4,7 @@ module.exports = {
   parser: "babel-eslint",
   rules: {
     "react/jsx-filename-extension": [1, { extensions: [".js"] }],
+    "react/no-deprecated": "warn",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "import/extensions": "off",
