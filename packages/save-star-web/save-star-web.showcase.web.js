@@ -18,16 +18,14 @@ const styles = {
   }
 };
 
-const articleId = "5504b5a8-b1c0-11e8-a553-a0ee9be48bc6";
-
-function BookmarksMockProvider({ children }) {
+function BookmarksMockProvider({ children, articleId }) {
   const [mocks, setMocks] = React.useState([]);
 
   React.useEffect(() => {
     schemaToMocks(bookmarks({ id: articleId })).then(bookmarkMocks =>
       setMocks(bookmarkMocks)
     );
-  }, []);
+  }, [articleId]);
 
   if (!mocks.length) {
     return null;
@@ -40,12 +38,12 @@ export default {
   children: [
     {
       component: () => (
-        <BookmarksMockProvider>
+        <BookmarksMockProvider articleId="5504b5a8-b1c0-11e8-a553-a0ee9be48bc6">
           <View style={styles.star}>
             <SaveStarWeb
               colour={colours.functional.secondary}
               hoverColour={colours.functional.brandColour}
-              articleId={articleId}
+              articleId="5504b5a8-b1c0-11e8-a553-a0ee9be48bc6"
             />
           </View>
         </BookmarksMockProvider>
