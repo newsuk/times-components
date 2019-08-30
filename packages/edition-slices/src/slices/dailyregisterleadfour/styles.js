@@ -5,21 +5,21 @@ import {
   fontSizes
 } from "@times-components/styleguide";
 
-const main = {
+const smallBreakpointStyles = {
   container: {
+    flex: 1,
     alignItems: "center",
     backgroundColor: colours.functional.border,
-    flex: 1,
     padding: spacing(2)
   },
   imageWrapper: {
-    height: 45,
-    width: 60
+    width: 60,
+    height: 45
   },
   mastheadLogo: {
+    width: 285,
     height: 73,
-    marginVertical: spacing(2),
-    width: 285
+    marginVertical: spacing(2)
   },
   separator: {
     borderBottomColor: colours.functional.keyline,
@@ -34,30 +34,19 @@ const main = {
   }
 };
 
-const smallBreakpointStyles = {
-  container: {
-    alignItems: "center",
-    backgroundColor: colours.functional.border,
-    flex: 1,
-    padding: spacing(2)
-  }
-};
-
 const mediumBreakpointStyles = {
   container: {
-    flex: 1,
-    alignItems: "center",
-    backgroundColor: colours.functional.border,
+    ...smallBreakpointStyles.container,
     marginHorizontal: spacing(6),
     marginVertical: spacing(3),
     padding: spacing(3)
   },
+  column: {
+    flex: 1
+  },
   itemsContainer: {
     flex: 1,
     flexDirection: "row"
-  },
-  column: {
-    flex: 1
   },
   colSeparator: {
     marginVertical: spacing(3)
@@ -66,63 +55,42 @@ const mediumBreakpointStyles = {
     marginHorizontal: spacing(3)
   },
   mastheadLogo: {
-    height: 60,
     width: 237,
+    height: 60,
     marginVertical: spacing(2),
     marginTop: spacing(3)
   },
   imageWrapper: {
-    height: 45,
     width: 60,
-    marginRight: spacing(2)
+    height: 45,
+    marginRight: spacing(2),
+    marginBottom: spacing(1)
   },
   title: {
-    ...main.title,
+    ...smallBreakpointStyles.title,
+    fontSize: 15,
     marginBottom: spacing(3)
   }
 };
 
 const wideBreakpointStyle = {
+  ...mediumBreakpointStyles,
   container: {
-    alignItems: "center",
-    backgroundColor: colours.functional.border,
-    flex: 1,
-    paddingHorizontal: "25%",
-    paddingVertical: spacing(2)
-  }
-};
-
-const hugeBreakpointStyle = {
-  columnItems: {
-    alignItems: "center",
-    flex: 1,
-    flexDirection: "column",
-    paddingHorizontal: spacing(5)
+    ...mediumBreakpointStyles.container,
+    marginHorizontal: spacing(4)
   },
-  container: {
-    alignItems: "center",
-    backgroundColor: colours.functional.border,
-    flex: 1
-  },
-  rowItems: {
-    flexDirection: "row",
-    paddingHorizontal: "8%",
-    width: "100%"
+  imageWrapper: {
+    ...mediumBreakpointStyles.imageWrapper,
+    marginRight: spacing(3),
+    marginBottom: spacing(2)
   }
 };
 
 const stylesResolver = {
-  huge: hugeBreakpointStyle,
-  medium: mediumBreakpointStyles,
   small: smallBreakpointStyles,
-  wide: wideBreakpointStyle
+  medium: mediumBreakpointStyles,
+  wide: wideBreakpointStyle,
+  huge: wideBreakpointStyle
 };
 
-export default breakpoint => ({
-  ...main,
-  ...(stylesResolver[breakpoint] || {})
-});
-
-export const backgroundColour = {
-  backgroundColor: main.container.backgroundColor
-};
+export default breakpoint => stylesResolver[breakpoint];

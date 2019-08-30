@@ -2,23 +2,18 @@ import { spacing } from "@times-components/styleguide";
 
 const sharedStyles = {
   container: {
-    flexDirection: "row",
-    justifyContent: "center",
-    marginHorizontal: spacing(2)
-  },
-  column: {
-    width: "50%"
+    flex: 1,
+    flexDirection: "row"
   }
 };
 
 const mediumBreakpointStyles = {
   container: {
-    flex: 1,
-    flexDirection: "row",
+    ...sharedStyles.container,
     marginHorizontal: spacing(4)
   },
   column: {
-    ...sharedStyles.column
+    width: "50%"
   },
   colSeparatorStyle: {
     marginVertical: spacing(3)
@@ -26,12 +21,18 @@ const mediumBreakpointStyles = {
 };
 
 const wideBreakpointStyles = {
-  ...sharedStyles,
+  container: {
+    ...sharedStyles.container,
+    marginHorizontal: spacing(2)
+  },
   column: {
     width: "42%"
   },
   middleTile: {
     width: "16%"
+  },
+  colSeparatorStyle: {
+    marginVertical: spacing(3)
   }
 };
 

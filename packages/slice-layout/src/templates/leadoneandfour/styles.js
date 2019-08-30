@@ -1,6 +1,6 @@
-import { spacing } from "@times-components/styleguide";
+import { editionBreakpoints, spacing } from "@times-components/styleguide";
 
-const mediumBreakpointStyles = {
+const defaultBreakpointStyles = {
   container: {
     flex: 1,
     flexDirection: "row",
@@ -15,4 +15,20 @@ const mediumBreakpointStyles = {
   }
 };
 
-export default mediumBreakpointStyles;
+const wideBreakpointStyles = {
+  container: {
+    ...defaultBreakpointStyles.container,
+    marginHorizontal: spacing(2)
+  },
+  leadContainer: defaultBreakpointStyles.leadContainer,
+  supportContainer: defaultBreakpointStyles.supportContainer
+};
+
+const styleResolver = {
+  [editionBreakpoints.small]: defaultBreakpointStyles,
+  [editionBreakpoints.medium]: defaultBreakpointStyles,
+  [editionBreakpoints.wide]: wideBreakpointStyles,
+  [editionBreakpoints.huge]: wideBreakpointStyles
+};
+
+export default breakpoint => styleResolver[breakpoint];

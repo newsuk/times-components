@@ -44,10 +44,6 @@ const wideBreakpointStyles = {
     flexDirection: "row",
     marginHorizontal: spacing(2),
     marginVertical: spacing(1)
-  },
-
-  separator: {
-    marginVertical: spacing(1)
   }
 };
 

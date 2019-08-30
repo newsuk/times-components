@@ -12,8 +12,18 @@ import stylesFactory from "./styles";
 import WithoutWhiteSpace from "../shared/without-white-space";
 import PositionedTileStar from "../shared/positioned-tile-star";
 
-const TileB = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
+const TileB = ({
+  onPress,
+  tile,
+  breakpoint = editionBreakpoints.small,
+  withMoreTeaser = false,
+  additionalHeadlineStyles = {}
+}) => {
   const styles = stylesFactory(breakpoint);
+  const headLineStyles = {
+    ...styles.headline,
+    ...additionalHeadlineStyles
+  };
 
   return (
     <TileLink onPress={onPress} style={styles.container} tile={tile}>
@@ -21,8 +31,8 @@ const TileB = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
         style={styles.summaryContainer}
         render={whiteSpaceHeight => (
           <TileSummary
-            headlineStyle={styles.headline}
-            summary={getTileSummary(tile, 125)}
+            headlineStyle={headLineStyles}
+            summary={getTileSummary(tile, withMoreTeaser ? 800 : 125)}
             tile={tile}
             whiteSpaceHeight={whiteSpaceHeight}
             withStar={false}
@@ -37,7 +47,9 @@ const TileB = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
 TileB.propTypes = {
   onPress: PropTypes.func.isRequired,
   tile: PropTypes.shape({}).isRequired,
-  breakpoint: PropTypes.string
+  breakpoint: PropTypes.string,
+  withMoreTeaser: PropTypes.bool,
+  additionalHeadlineStyles: PropTypes.shape({})
 };
 
 export default withTileTracking(TileB);

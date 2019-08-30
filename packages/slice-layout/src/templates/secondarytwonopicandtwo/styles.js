@@ -1,4 +1,4 @@
-import { spacing } from "@times-components/styleguide";
+import { spacing, editionBreakpoints } from "@times-components/styleguide";
 
 const mediumBreakpointStyles = {
   container: {
@@ -23,23 +23,15 @@ const mediumBreakpointStyles = {
 const wideBreakpointStyles = {
   container: {
     flex: 1,
-    flexDirection: "row",
     marginHorizontal: spacing(2)
-  },
-  secondaryItemContainer: {
-    width: "33.4%"
-  },
-  supportItemContainer: {
-    paddingHorizontal: spacing(1),
-    width: "16.6%"
   }
 };
 
-const stylesToreturn = {
-  huge: wideBreakpointStyles,
-  medium: mediumBreakpointStyles,
-  wide: wideBreakpointStyles
+const stylesResolver = {
+  [editionBreakpoints.medium]: mediumBreakpointStyles,
+  [editionBreakpoints.wide]: wideBreakpointStyles,
+  [editionBreakpoints.huge]: wideBreakpointStyles
 };
 
 export default breakpoint =>
-  stylesToreturn[breakpoint] || mediumBreakpointStyles;
+  Object.assign(mediumBreakpointStyles, stylesResolver[breakpoint] || {});

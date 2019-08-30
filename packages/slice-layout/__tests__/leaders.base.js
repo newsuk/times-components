@@ -35,6 +35,21 @@ export default renderComponent => {
 
         expect(output).toMatchSnapshot();
       }
+    },
+    {
+      name: "leaders - wide",
+      test() {
+        const output = renderComponent(
+          <Leaders
+            breakpoint={editionBreakpoints.wide}
+            leader1={createItem("leader-1")}
+            leader2={createItem("leader-2")}
+            leader3={createItem("leader-3")}
+          />
+        );
+
+        expect(output).toMatchSnapshot();
+      }
     }
   ];
 

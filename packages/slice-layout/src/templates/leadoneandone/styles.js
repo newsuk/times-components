@@ -21,4 +21,18 @@ const styles = {
   }
 };
 
-export default styles;
+const wideBreakpointStyles = {
+  ...styles,
+  container: {
+    ...styles.container,
+    marginHorizontal: spacing(2)
+  }
+};
+
+const stylesToreturn = {
+  medium: styles,
+  huge: wideBreakpointStyles,
+  wide: wideBreakpointStyles
+};
+
+export default breakpoint => stylesToreturn[breakpoint] || styles;

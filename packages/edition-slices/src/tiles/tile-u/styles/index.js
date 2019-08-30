@@ -1,30 +1,10 @@
 import {
-  fontFactory,
+  fonts,
   spacing,
   editionBreakpoints
 } from "@times-components/styleguide";
 
-const sharedStyles = {
-  container: {
-    flex: 1,
-    flexDirection: "row"
-  },
-  headline: {
-    ...fontFactory({
-      font: "headline",
-      fontSize: "tileLeadHeadline"
-    })
-  },
-  imageContainer: {
-    width: "60%"
-  },
-  summaryContainer: {
-    width: "40%"
-  }
-};
-
 const mediumBreakpointStyles = {
-  ...sharedStyles,
   container: {
     flex: 1,
     paddingVertical: spacing(3),
@@ -38,7 +18,7 @@ const mediumBreakpointStyles = {
     paddingBottom: spacing(2)
   },
   headline: {
-    ...sharedStyles.headline,
+    fontFamily: fonts.headline,
     fontSize: 40,
     lineHeight: 40,
     marginBottom: spacing(2)
@@ -46,36 +26,14 @@ const mediumBreakpointStyles = {
 };
 
 const wideBreakpointStyles = {
-  ...sharedStyles,
-  container: {
-    ...sharedStyles.container,
-    padding: spacing(2)
-  },
+  ...mediumBreakpointStyles,
   headline: {
-    ...sharedStyles.headline,
-    paddingVertical: spacing(1)
-  },
-  summaryContainer: {
-    ...sharedStyles.summaryContainer,
-    paddingRight: spacing(4)
+    ...mediumBreakpointStyles.headline,
+    marginBottom: 0
   }
 };
 
-const hugeBreakpointStyles = {
-  ...wideBreakpointStyles,
-  headline: {
-    ...wideBreakpointStyles.headline,
-    ...fontFactory({
-      font: "headline",
-      fontSize: "articleHeadline"
-    })
-  }
-};
-
-const stylesResolver = {
-  [editionBreakpoints.medium]: mediumBreakpointStyles,
-  [editionBreakpoints.wide]: wideBreakpointStyles,
-  [editionBreakpoints.huge]: hugeBreakpointStyles
-};
-
-export default breakpoint => stylesResolver[breakpoint];
+export default breakpoint =>
+  breakpoint === editionBreakpoints.medium
+    ? mediumBreakpointStyles
+    : wideBreakpointStyles;

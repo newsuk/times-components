@@ -34,8 +34,8 @@ exports[`1. comment lead and cartoon - medium 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
   -ms-flex-positive: 1;
@@ -88,80 +88,120 @@ exports[`1. comment lead and cartoon - medium 1`] = `
 exports[`2. daily universal register - medium 1`] = `
 <style>
 .IS1 {
-  height: 73;
+  width: 237;
+  height: 60;
   margin-vertical: 10px;
-  width: 285;
+  margin-top: 15px;
 }
 
 .IS2 {
   color: rgba(133,0,41,1.00);
   font-family: TimesDigitalW04;
-  font-size: 16px;
-  margin-bottom: 25px;
+  font-size: 15px;
+  margin-bottom: 15px;
 }
 
 .IS3 {
-  border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
   border-top-color: rgba(219,219,219,1.00);
   border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
   border-top-style: solid;
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  width: 100%;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
 .IS4 {
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-bottom-width: 1px;
-  border-top-color: rgba(219,219,219,1.00);
-  border-right-color: rgba(219,219,219,1.00);
-  border-left-color: rgba(219,219,219,1.00);
-  border-top-style: solid;
-  border-right-style: solid;
-  border-bottom-style: solid;
-  border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  width: 100%;
+  width: 60;
+  height: 45;
+  margin-right: 15px;
+  margin-bottom: 10px;
 }
 
 .IS5 {
-  height: 45;
-  width: 60;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
 }
 
 .IS6 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.IS7 {
   border-bottom-width: 1px;
   border-top-color: rgba(219,219,219,1.00);
   border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
   border-top-style: solid;
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  width: 100%;
-}
-
-.IS7 {
-  height: 45;
-  width: 60;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
 .IS8 {
+  width: 60;
+  height: 45;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+.IS9 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
+
+.IS10 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS11 {
   -webkit-align-items: center;
   align-items: center;
   background-color: rgba(240,240,240,1.00);
@@ -171,10 +211,14 @@ exports[`2. daily universal register - medium 1`] = `
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  padding-right: 25%;
-  padding-left: 25%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
   -ms-flex-align: center;
   -webkit-box-align: center;
   -ms-flex-positive: 1;
@@ -183,7 +227,7 @@ exports[`2. daily universal register - medium 1`] = `
   -ms-flex-preferred-size: 0%;
 }
 
-.IS9 {
+.IS12 {
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
@@ -195,10 +239,10 @@ exports[`2. daily universal register - medium 1`] = `
 </style>
 
 <div
-  className="css-view-1dbjc4n IS9"
+  className="css-view-1dbjc4n IS12"
 >
   <div
-    className="css-view-1dbjc4n IS8"
+    className="css-view-1dbjc4n IS11"
   >
     <Image
       aspectRatio={1}
@@ -210,37 +254,55 @@ exports[`2. daily universal register - medium 1`] = `
     >
       Daily Universal Register
     </div>
-    <TileS
-      breakpoint="wide"
-    />
     <div
-      className="css-view-1dbjc4n IS3"
-    />
-    <TileS
-      breakpoint="wide"
-    />
-    <div
-      className="css-view-1dbjc4n IS4"
-    />
-    <Image
-      aspectRatio={1}
-      className="IS5"
-      uri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
-    />
-    <TileS
-      breakpoint="wide"
-    />
-    <div
-      className="css-view-1dbjc4n IS6"
-    />
-    <Image
-      aspectRatio={1}
-      className="IS7"
-      uri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
-    />
-    <TileS
-      breakpoint="wide"
-    />
+      className="css-view-1dbjc4n IS10"
+    >
+      <div
+        className="css-view-1dbjc4n IS5"
+      >
+        <TileS
+          breakpoint="wide"
+        />
+        <div
+          className="css-view-1dbjc4n IS3"
+        />
+        <TileS
+          breakpoint="wide"
+          logo={
+            <Logo
+              className="IS4"
+              imageUri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
+              ratio={1}
+              type="nature notes"
+            />
+          }
+        />
+      </div>
+      <div
+        className="css-view-1dbjc4n IS6"
+      />
+      <div
+        className="css-view-1dbjc4n IS9"
+      >
+        <TileS
+          breakpoint="wide"
+        />
+        <div
+          className="css-view-1dbjc4n IS7"
+        />
+        <TileS
+          breakpoint="wide"
+          logo={
+            <Logo
+              className="IS8"
+              imageUri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
+              ratio={1}
+              type="birthdays"
+            />
+          }
+        />
+      </div>
+    </div>
   </div>
 </div>
 `;
@@ -279,8 +341,8 @@ exports[`3. lead one and one - medium 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -320,7 +382,8 @@ exports[`3. lead one and one - medium 1`] = `
     <div
       className="css-view-1dbjc4n IS3"
     >
-      <TileC
+      <TileAA
+        breakpoint="wide"
         tileName="support"
       />
     </div>
@@ -381,12 +444,12 @@ exports[`5. lead two no pic and two - medium 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .IS4 {
-  width: 16%;
+  width: 42%;
 }
 
 .IS5 {
@@ -399,26 +462,32 @@ exports[`5. lead two no pic and two - medium 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .IS6 {
-  width: 42%;
+  width: 16%;
 }
 
 .IS7 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-justify-content: center;
-  justify-content: center;
   margin-right: 10px;
   margin-left: 10px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
 }
 
 .IS8 {
@@ -457,7 +526,8 @@ exports[`5. lead two no pic and two - medium 1`] = `
     <div
       className="css-view-1dbjc4n IS4"
     >
-      <TileAL
+      <TileE
+        breakpoint="wide"
         tileName="support1"
       />
     </div>
@@ -467,7 +537,7 @@ exports[`5. lead two no pic and two - medium 1`] = `
     <div
       className="css-view-1dbjc4n IS6"
     >
-      <TileZ
+      <TileAL
         tileName="support2"
       />
     </div>
@@ -478,20 +548,19 @@ exports[`5. lead two no pic and two - medium 1`] = `
 exports[`6. leaders slice - medium 1`] = `
 <style>
 .IS1 {
-  height: 51;
-  width: 283;
+  height: 42;
+  width: 237;
 }
 
 .IS2 {
   color: rgba(133,0,41,1.00);
   font-family: TimesDigitalW04-Regular;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 15px;
+  line-height: 15px;
   text-align: center;
 }
 
 .IS3 {
-  padding-bottom: 5px;
   padding-top: 10px;
 }
 
@@ -503,8 +572,8 @@ exports[`6. leaders slice - medium 1`] = `
 }
 
 .IS5 {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 33%;
 }
 
@@ -518,13 +587,13 @@ exports[`6. leaders slice - medium 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 60px;
+  margin-top: 30px;
 }
 
 .IS7 {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 33%;
 }
 
@@ -538,13 +607,13 @@ exports[`6. leaders slice - medium 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 60px;
+  margin-top: 30px;
 }
 
 .IS9 {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 33%;
 }
 
@@ -558,7 +627,6 @@ exports[`6. leaders slice - medium 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-bottom: 5px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -569,7 +637,11 @@ exports[`6. leaders slice - medium 1`] = `
 
 .IS11 {
   background-color: rgba(240,240,240,1.00);
-  padding-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 30px;
 }
 
 .IS12 {
@@ -613,7 +685,7 @@ exports[`6. leaders slice - medium 1`] = `
       <div
         className="css-view-1dbjc4n IS5"
       >
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader2"
         />
@@ -624,7 +696,7 @@ exports[`6. leaders slice - medium 1`] = `
       <div
         className="css-view-1dbjc4n IS7"
       >
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader1"
         />
@@ -635,7 +707,7 @@ exports[`6. leaders slice - medium 1`] = `
       <div
         className="css-view-1dbjc4n IS9"
       >
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader3"
         />
@@ -946,7 +1018,6 @@ exports[`9. secondary four - medium 1`] = `
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  width: 25%;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -963,8 +1034,8 @@ exports[`9. secondary four - medium 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .IS3 {
@@ -974,7 +1045,6 @@ exports[`9. secondary four - medium 1`] = `
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  width: 25%;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -982,34 +1052,24 @@ exports[`9. secondary four - medium 1`] = `
 }
 
 .IS4 {
-  border-top-color: rgba(219,219,219,1.00);
-  border-right-color: rgba(219,219,219,1.00);
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-left-color: rgba(219,219,219,1.00);
-  border-right-width: 1px;
-  border-top-style: solid;
-  border-right-style: solid;
-  border-bottom-style: solid;
-  border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.IS5 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
+  -webkit-flex-grow: 2;
+  flex-grow: 2;
   -webkit-flex-shrink: 1;
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  width: 25%;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-positive: 2;
+  -webkit-box-flex: 2;
   -ms-flex-negative: 1;
   -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
 }
 
-.IS6 {
+.IS5 {
   border-top-color: rgba(219,219,219,1.00);
   border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
@@ -1019,8 +1079,22 @@ exports[`9. secondary four - medium 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.IS6 {
+  border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .IS7 {
@@ -1030,7 +1104,8 @@ exports[`9. secondary four - medium 1`] = `
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  width: 25%;
+  padding-top: 5px;
+  padding-bottom: 5px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -1038,11 +1113,21 @@ exports[`9. secondary four - medium 1`] = `
 }
 
 .IS8 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
   margin-right: 10px;
   margin-left: 10px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
@@ -1065,39 +1150,55 @@ exports[`9. secondary four - medium 1`] = `
     className="css-view-1dbjc4n IS8"
   >
     <div
-      className="css-view-1dbjc4n IS1"
-    >
-      <TileC
-        tileName="secondary1"
-      />
-    </div>
-    <div
-      className="css-view-1dbjc4n IS2"
-    />
-    <div
-      className="css-view-1dbjc4n IS3"
-    >
-      <TileC
-        tileName="secondary2"
-      />
-    </div>
-    <div
       className="css-view-1dbjc4n IS4"
-    />
+    >
+      <div
+        className="css-view-1dbjc4n IS1"
+      >
+        <TileAR
+          tileName="secondary1"
+        />
+      </div>
+      <div
+        className="css-view-1dbjc4n IS2"
+      />
+      <div
+        className="css-view-1dbjc4n IS3"
+      >
+        <TileAR
+          tileName="secondary2"
+        />
+      </div>
+    </div>
     <div
       className="css-view-1dbjc4n IS5"
-    >
-      <TileC
-        tileName="secondary3"
-      />
-    </div>
-    <div
-      className="css-view-1dbjc4n IS6"
     />
     <div
       className="css-view-1dbjc4n IS7"
     >
-      <TileC
+      <TileB
+        additionalHeadlineStyles={
+          Object {
+            "fontSize": 20,
+            "lineHeight": 20,
+            "marginBottom": "5px",
+          }
+        }
+        breakpoint="wide"
+        tileName="secondary3"
+      />
+      <div
+        className="css-view-1dbjc4n IS6"
+      />
+      <TileB
+        additionalHeadlineStyles={
+          Object {
+            "fontSize": 20,
+            "lineHeight": 20,
+            "marginBottom": "5px",
+          }
+        }
+        breakpoint="wide"
         tileName="secondary4"
       />
     </div>
@@ -1108,7 +1209,7 @@ exports[`9. secondary four - medium 1`] = `
 exports[`10. secondary one and columnist - medium 1`] = `
 <style>
 .IS1 {
-  width: 73%;
+  width: 67%;
 }
 
 .IS2 {
@@ -1126,7 +1227,9 @@ exports[`10. secondary one and columnist - medium 1`] = `
 }
 
 .IS3 {
-  width: 27%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 33%;
 }
 
 .IS4 {
@@ -1139,8 +1242,8 @@ exports[`10. secondary one and columnist - medium 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -1183,6 +1286,7 @@ exports[`10. secondary one and columnist - medium 1`] = `
       <TileB
         breakpoint="wide"
         tileName="secondary"
+        withMoreTeaser={true}
       />
     </div>
   </div>
@@ -1403,8 +1507,8 @@ exports[`12. lead one and four slice - medium 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
   -ms-flex-positive: 1;
@@ -1447,28 +1551,24 @@ exports[`12. lead one and four slice - medium 1`] = `
       className="css-view-1dbjc4n IS6"
     >
       <TileAD
-        breakpoint="wide"
         tileName="support1"
       />
       <div
         className="css-view-1dbjc4n IS3"
       />
       <TileAD
-        breakpoint="wide"
         tileName="support2"
       />
       <div
         className="css-view-1dbjc4n IS4"
       />
       <TileAD
-        breakpoint="wide"
         tileName="support3"
       />
       <div
         className="css-view-1dbjc4n IS5"
       />
       <TileAD
-        breakpoint="wide"
         tileName="support4"
       />
     </div>
@@ -1609,7 +1709,16 @@ exports[`13. standard slice - medium 1`] = `
 exports[`14. secondary two no pic and two - medium 1`] = `
 <style>
 .IS1 {
-  width: 33.4%;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
 }
 
 .IS2 {
@@ -1622,55 +1731,24 @@ exports[`14. secondary two no pic and two - medium 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
+  margin-top: 15px;
   margin-bottom: 10px;
 }
 
 .IS3 {
-  padding-right: 5px;
-  padding-left: 5px;
-  width: 16.6%;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
 }
 
 .IS4 {
-  border-top-color: rgba(219,219,219,1.00);
-  border-right-color: rgba(219,219,219,1.00);
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-left-color: rgba(219,219,219,1.00);
-  border-right-width: 1px;
-  border-top-style: solid;
-  border-right-style: solid;
-  border-bottom-style: solid;
-  border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.IS5 {
-  width: 33.4%;
-}
-
-.IS6 {
-  border-top-color: rgba(219,219,219,1.00);
-  border-right-color: rgba(219,219,219,1.00);
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-left-color: rgba(219,219,219,1.00);
-  border-right-width: 1px;
-  border-top-style: solid;
-  border-right-style: solid;
-  border-bottom-style: solid;
-  border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.IS7 {
-  padding-right: 5px;
-  padding-left: 5px;
-  width: 16.6%;
-}
-
-.IS8 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   -webkit-flex-shrink: 1;
@@ -1680,8 +1758,6 @@ exports[`14. secondary two no pic and two - medium 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-right: 10px;
-  margin-left: 10px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -1690,7 +1766,94 @@ exports[`14. secondary two no pic and two - medium 1`] = `
   -webkit-box-direction: normal;
 }
 
+.IS5 {
+  border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS6 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
+
+.IS7 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.IS8 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
+
 .IS9 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS10 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  margin-right: 10px;
+  margin-left: 10px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
+
+.IS11 {
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
@@ -1702,47 +1865,57 @@ exports[`14. secondary two no pic and two - medium 1`] = `
 </style>
 
 <div
-  className="css-view-1dbjc4n IS9"
+  className="css-view-1dbjc4n IS11"
 >
   <div
-    className="css-view-1dbjc4n IS8"
+    className="css-view-1dbjc4n IS10"
   >
     <div
-      className="css-view-1dbjc4n IS1"
-    >
-      <TileAE
-        tileName="secondary1"
-      />
-    </div>
-    <div
-      className="css-view-1dbjc4n IS2"
-    />
-    <div
-      className="css-view-1dbjc4n IS3"
-    >
-      <TileAP
-        tileName="support1"
-      />
-    </div>
-    <div
       className="css-view-1dbjc4n IS4"
-    />
+    >
+      <div
+        className="css-view-1dbjc4n IS1"
+      >
+        <TileAE
+          tileName="secondary1"
+        />
+      </div>
+      <div
+        className="css-view-1dbjc4n IS2"
+      />
+      <div
+        className="css-view-1dbjc4n IS3"
+      >
+        <TileAE
+          tileName="secondary2"
+        />
+      </div>
+    </div>
     <div
       className="css-view-1dbjc4n IS5"
-    >
-      <TileAE
-        tileName="secondary2"
-      />
-    </div>
-    <div
-      className="css-view-1dbjc4n IS6"
     />
     <div
-      className="css-view-1dbjc4n IS7"
+      className="css-view-1dbjc4n IS9"
     >
-      <TileAP
-        tileName="support2"
+      <div
+        className="css-view-1dbjc4n IS6"
+      >
+        <TileG
+          breakpoint="wide"
+          tileName="support1"
+        />
+      </div>
+      <div
+        className="css-view-1dbjc4n IS7"
       />
+      <div
+        className="css-view-1dbjc4n IS8"
+      >
+        <TileG
+          breakpoint="wide"
+          tileName="support2"
+        />
+      </div>
     </div>
   </div>
 </div>
@@ -1772,8 +1945,8 @@ exports[`15. puzzle - medium 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
   padding-top: 15px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
@@ -1907,8 +2080,8 @@ exports[`16. comment lead and cartoon - wide 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
   -ms-flex-positive: 1;
@@ -1961,80 +2134,120 @@ exports[`16. comment lead and cartoon - wide 1`] = `
 exports[`17. daily universal register - wide 1`] = `
 <style>
 .IS1 {
-  height: 73;
+  width: 237;
+  height: 60;
   margin-vertical: 10px;
-  width: 285;
+  margin-top: 15px;
 }
 
 .IS2 {
   color: rgba(133,0,41,1.00);
   font-family: TimesDigitalW04;
-  font-size: 16px;
-  margin-bottom: 25px;
+  font-size: 15px;
+  margin-bottom: 15px;
 }
 
 .IS3 {
-  border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
   border-top-color: rgba(219,219,219,1.00);
   border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
   border-top-style: solid;
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  width: 100%;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
 .IS4 {
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-bottom-width: 1px;
-  border-top-color: rgba(219,219,219,1.00);
-  border-right-color: rgba(219,219,219,1.00);
-  border-left-color: rgba(219,219,219,1.00);
-  border-top-style: solid;
-  border-right-style: solid;
-  border-bottom-style: solid;
-  border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  width: 100%;
+  width: 60;
+  height: 45;
+  margin-right: 15px;
+  margin-bottom: 10px;
 }
 
 .IS5 {
-  height: 45;
-  width: 60;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
 }
 
 .IS6 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.IS7 {
   border-bottom-width: 1px;
   border-top-color: rgba(219,219,219,1.00);
   border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
   border-top-style: solid;
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  width: 100%;
-}
-
-.IS7 {
-  height: 45;
-  width: 60;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
 .IS8 {
+  width: 60;
+  height: 45;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+.IS9 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
+
+.IS10 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS11 {
   -webkit-align-items: center;
   align-items: center;
   background-color: rgba(240,240,240,1.00);
@@ -2044,10 +2257,14 @@ exports[`17. daily universal register - wide 1`] = `
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  padding-right: 25%;
-  padding-left: 25%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
   -ms-flex-align: center;
   -webkit-box-align: center;
   -ms-flex-positive: 1;
@@ -2056,7 +2273,7 @@ exports[`17. daily universal register - wide 1`] = `
   -ms-flex-preferred-size: 0%;
 }
 
-.IS9 {
+.IS12 {
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
@@ -2068,10 +2285,10 @@ exports[`17. daily universal register - wide 1`] = `
 </style>
 
 <div
-  className="css-view-1dbjc4n IS9"
+  className="css-view-1dbjc4n IS12"
 >
   <div
-    className="css-view-1dbjc4n IS8"
+    className="css-view-1dbjc4n IS11"
   >
     <Image
       aspectRatio={1}
@@ -2083,37 +2300,55 @@ exports[`17. daily universal register - wide 1`] = `
     >
       Daily Universal Register
     </div>
-    <TileS
-      breakpoint="wide"
-    />
     <div
-      className="css-view-1dbjc4n IS3"
-    />
-    <TileS
-      breakpoint="wide"
-    />
-    <div
-      className="css-view-1dbjc4n IS4"
-    />
-    <Image
-      aspectRatio={1}
-      className="IS5"
-      uri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
-    />
-    <TileS
-      breakpoint="wide"
-    />
-    <div
-      className="css-view-1dbjc4n IS6"
-    />
-    <Image
-      aspectRatio={1}
-      className="IS7"
-      uri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
-    />
-    <TileS
-      breakpoint="wide"
-    />
+      className="css-view-1dbjc4n IS10"
+    >
+      <div
+        className="css-view-1dbjc4n IS5"
+      >
+        <TileS
+          breakpoint="wide"
+        />
+        <div
+          className="css-view-1dbjc4n IS3"
+        />
+        <TileS
+          breakpoint="wide"
+          logo={
+            <Logo
+              className="IS4"
+              imageUri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
+              ratio={1}
+              type="nature notes"
+            />
+          }
+        />
+      </div>
+      <div
+        className="css-view-1dbjc4n IS6"
+      />
+      <div
+        className="css-view-1dbjc4n IS9"
+      >
+        <TileS
+          breakpoint="wide"
+        />
+        <div
+          className="css-view-1dbjc4n IS7"
+        />
+        <TileS
+          breakpoint="wide"
+          logo={
+            <Logo
+              className="IS8"
+              imageUri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
+              ratio={1}
+              type="birthdays"
+            />
+          }
+        />
+      </div>
+    </div>
   </div>
 </div>
 `;
@@ -2152,8 +2387,8 @@ exports[`18. lead one and one - wide 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -2193,7 +2428,8 @@ exports[`18. lead one and one - wide 1`] = `
     <div
       className="css-view-1dbjc4n IS3"
     >
-      <TileC
+      <TileAA
+        breakpoint="wide"
         tileName="support"
       />
     </div>
@@ -2254,12 +2490,12 @@ exports[`20. lead two no pic and two - wide 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .IS4 {
-  width: 16%;
+  width: 42%;
 }
 
 .IS5 {
@@ -2272,26 +2508,32 @@ exports[`20. lead two no pic and two - wide 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .IS6 {
-  width: 42%;
+  width: 16%;
 }
 
 .IS7 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-justify-content: center;
-  justify-content: center;
   margin-right: 10px;
   margin-left: 10px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
 }
 
 .IS8 {
@@ -2330,7 +2572,8 @@ exports[`20. lead two no pic and two - wide 1`] = `
     <div
       className="css-view-1dbjc4n IS4"
     >
-      <TileAL
+      <TileE
+        breakpoint="wide"
         tileName="support1"
       />
     </div>
@@ -2340,7 +2583,7 @@ exports[`20. lead two no pic and two - wide 1`] = `
     <div
       className="css-view-1dbjc4n IS6"
     >
-      <TileZ
+      <TileAL
         tileName="support2"
       />
     </div>
@@ -2351,20 +2594,19 @@ exports[`20. lead two no pic and two - wide 1`] = `
 exports[`21. leaders slice - wide 1`] = `
 <style>
 .IS1 {
-  height: 51;
-  width: 283;
+  height: 42;
+  width: 237;
 }
 
 .IS2 {
   color: rgba(133,0,41,1.00);
   font-family: TimesDigitalW04-Regular;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 15px;
+  line-height: 15px;
   text-align: center;
 }
 
 .IS3 {
-  padding-bottom: 5px;
   padding-top: 10px;
 }
 
@@ -2376,8 +2618,8 @@ exports[`21. leaders slice - wide 1`] = `
 }
 
 .IS5 {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 33%;
 }
 
@@ -2391,13 +2633,13 @@ exports[`21. leaders slice - wide 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 60px;
+  margin-top: 30px;
 }
 
 .IS7 {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 33%;
 }
 
@@ -2411,13 +2653,13 @@ exports[`21. leaders slice - wide 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 60px;
+  margin-top: 30px;
 }
 
 .IS9 {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 33%;
 }
 
@@ -2431,7 +2673,6 @@ exports[`21. leaders slice - wide 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-bottom: 5px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -2442,7 +2683,11 @@ exports[`21. leaders slice - wide 1`] = `
 
 .IS11 {
   background-color: rgba(240,240,240,1.00);
-  padding-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 30px;
 }
 
 .IS12 {
@@ -2486,7 +2731,7 @@ exports[`21. leaders slice - wide 1`] = `
       <div
         className="css-view-1dbjc4n IS5"
       >
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader2"
         />
@@ -2497,7 +2742,7 @@ exports[`21. leaders slice - wide 1`] = `
       <div
         className="css-view-1dbjc4n IS7"
       >
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader1"
         />
@@ -2508,7 +2753,7 @@ exports[`21. leaders slice - wide 1`] = `
       <div
         className="css-view-1dbjc4n IS9"
       >
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader3"
         />
@@ -2822,7 +3067,6 @@ exports[`24. secondary four - wide 1`] = `
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  width: 25%;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -2839,8 +3083,8 @@ exports[`24. secondary four - wide 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .IS3 {
@@ -2850,7 +3094,6 @@ exports[`24. secondary four - wide 1`] = `
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  width: 25%;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -2858,34 +3101,24 @@ exports[`24. secondary four - wide 1`] = `
 }
 
 .IS4 {
-  border-top-color: rgba(219,219,219,1.00);
-  border-right-color: rgba(219,219,219,1.00);
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-left-color: rgba(219,219,219,1.00);
-  border-right-width: 1px;
-  border-top-style: solid;
-  border-right-style: solid;
-  border-bottom-style: solid;
-  border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.IS5 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
+  -webkit-flex-grow: 2;
+  flex-grow: 2;
   -webkit-flex-shrink: 1;
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  width: 25%;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-positive: 2;
+  -webkit-box-flex: 2;
   -ms-flex-negative: 1;
   -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
 }
 
-.IS6 {
+.IS5 {
   border-top-color: rgba(219,219,219,1.00);
   border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
@@ -2895,8 +3128,22 @@ exports[`24. secondary four - wide 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.IS6 {
+  border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .IS7 {
@@ -2906,7 +3153,8 @@ exports[`24. secondary four - wide 1`] = `
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  width: 25%;
+  padding-top: 5px;
+  padding-bottom: 5px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -2914,11 +3162,21 @@ exports[`24. secondary four - wide 1`] = `
 }
 
 .IS8 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
   margin-right: 10px;
   margin-left: 10px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
@@ -2941,39 +3199,55 @@ exports[`24. secondary four - wide 1`] = `
     className="css-view-1dbjc4n IS8"
   >
     <div
-      className="css-view-1dbjc4n IS1"
-    >
-      <TileC
-        tileName="secondary1"
-      />
-    </div>
-    <div
-      className="css-view-1dbjc4n IS2"
-    />
-    <div
-      className="css-view-1dbjc4n IS3"
-    >
-      <TileC
-        tileName="secondary2"
-      />
-    </div>
-    <div
       className="css-view-1dbjc4n IS4"
-    />
+    >
+      <div
+        className="css-view-1dbjc4n IS1"
+      >
+        <TileAR
+          tileName="secondary1"
+        />
+      </div>
+      <div
+        className="css-view-1dbjc4n IS2"
+      />
+      <div
+        className="css-view-1dbjc4n IS3"
+      >
+        <TileAR
+          tileName="secondary2"
+        />
+      </div>
+    </div>
     <div
       className="css-view-1dbjc4n IS5"
-    >
-      <TileC
-        tileName="secondary3"
-      />
-    </div>
-    <div
-      className="css-view-1dbjc4n IS6"
     />
     <div
       className="css-view-1dbjc4n IS7"
     >
-      <TileC
+      <TileB
+        additionalHeadlineStyles={
+          Object {
+            "fontSize": 20,
+            "lineHeight": 20,
+            "marginBottom": "5px",
+          }
+        }
+        breakpoint="wide"
+        tileName="secondary3"
+      />
+      <div
+        className="css-view-1dbjc4n IS6"
+      />
+      <TileB
+        additionalHeadlineStyles={
+          Object {
+            "fontSize": 20,
+            "lineHeight": 20,
+            "marginBottom": "5px",
+          }
+        }
+        breakpoint="wide"
         tileName="secondary4"
       />
     </div>
@@ -2984,7 +3258,7 @@ exports[`24. secondary four - wide 1`] = `
 exports[`25. secondary one and columnist - wide 1`] = `
 <style>
 .IS1 {
-  width: 73%;
+  width: 67%;
 }
 
 .IS2 {
@@ -3002,7 +3276,9 @@ exports[`25. secondary one and columnist - wide 1`] = `
 }
 
 .IS3 {
-  width: 27%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 33%;
 }
 
 .IS4 {
@@ -3015,8 +3291,8 @@ exports[`25. secondary one and columnist - wide 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -3059,6 +3335,7 @@ exports[`25. secondary one and columnist - wide 1`] = `
       <TileB
         breakpoint="wide"
         tileName="secondary"
+        withMoreTeaser={true}
       />
     </div>
   </div>
@@ -3279,8 +3556,8 @@ exports[`27. lead one and four slice - wide 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
   -ms-flex-positive: 1;
@@ -3323,28 +3600,24 @@ exports[`27. lead one and four slice - wide 1`] = `
       className="css-view-1dbjc4n IS6"
     >
       <TileAD
-        breakpoint="wide"
         tileName="support1"
       />
       <div
         className="css-view-1dbjc4n IS3"
       />
       <TileAD
-        breakpoint="wide"
         tileName="support2"
       />
       <div
         className="css-view-1dbjc4n IS4"
       />
       <TileAD
-        breakpoint="wide"
         tileName="support3"
       />
       <div
         className="css-view-1dbjc4n IS5"
       />
       <TileAD
-        breakpoint="wide"
         tileName="support4"
       />
     </div>
@@ -3485,7 +3758,16 @@ exports[`28. standard slice - wide 1`] = `
 exports[`29. secondary two no pic and two - wide 1`] = `
 <style>
 .IS1 {
-  width: 33.4%;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
 }
 
 .IS2 {
@@ -3498,55 +3780,24 @@ exports[`29. secondary two no pic and two - wide 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
+  margin-top: 15px;
   margin-bottom: 10px;
 }
 
 .IS3 {
-  padding-right: 5px;
-  padding-left: 5px;
-  width: 16.6%;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
 }
 
 .IS4 {
-  border-top-color: rgba(219,219,219,1.00);
-  border-right-color: rgba(219,219,219,1.00);
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-left-color: rgba(219,219,219,1.00);
-  border-right-width: 1px;
-  border-top-style: solid;
-  border-right-style: solid;
-  border-bottom-style: solid;
-  border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.IS5 {
-  width: 33.4%;
-}
-
-.IS6 {
-  border-top-color: rgba(219,219,219,1.00);
-  border-right-color: rgba(219,219,219,1.00);
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-left-color: rgba(219,219,219,1.00);
-  border-right-width: 1px;
-  border-top-style: solid;
-  border-right-style: solid;
-  border-bottom-style: solid;
-  border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.IS7 {
-  padding-right: 5px;
-  padding-left: 5px;
-  width: 16.6%;
-}
-
-.IS8 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   -webkit-flex-shrink: 1;
@@ -3556,8 +3807,6 @@ exports[`29. secondary two no pic and two - wide 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-right: 10px;
-  margin-left: 10px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -3566,7 +3815,94 @@ exports[`29. secondary two no pic and two - wide 1`] = `
   -webkit-box-direction: normal;
 }
 
+.IS5 {
+  border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS6 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
+
+.IS7 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.IS8 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
+
 .IS9 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS10 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  margin-right: 10px;
+  margin-left: 10px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
+
+.IS11 {
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
@@ -3578,47 +3914,57 @@ exports[`29. secondary two no pic and two - wide 1`] = `
 </style>
 
 <div
-  className="css-view-1dbjc4n IS9"
+  className="css-view-1dbjc4n IS11"
 >
   <div
-    className="css-view-1dbjc4n IS8"
+    className="css-view-1dbjc4n IS10"
   >
     <div
-      className="css-view-1dbjc4n IS1"
-    >
-      <TileAE
-        tileName="secondary1"
-      />
-    </div>
-    <div
-      className="css-view-1dbjc4n IS2"
-    />
-    <div
-      className="css-view-1dbjc4n IS3"
-    >
-      <TileAP
-        tileName="support1"
-      />
-    </div>
-    <div
       className="css-view-1dbjc4n IS4"
-    />
+    >
+      <div
+        className="css-view-1dbjc4n IS1"
+      >
+        <TileAE
+          tileName="secondary1"
+        />
+      </div>
+      <div
+        className="css-view-1dbjc4n IS2"
+      />
+      <div
+        className="css-view-1dbjc4n IS3"
+      >
+        <TileAE
+          tileName="secondary2"
+        />
+      </div>
+    </div>
     <div
       className="css-view-1dbjc4n IS5"
-    >
-      <TileAE
-        tileName="secondary2"
-      />
-    </div>
-    <div
-      className="css-view-1dbjc4n IS6"
     />
     <div
-      className="css-view-1dbjc4n IS7"
+      className="css-view-1dbjc4n IS9"
     >
-      <TileAP
-        tileName="support2"
+      <div
+        className="css-view-1dbjc4n IS6"
+      >
+        <TileG
+          breakpoint="wide"
+          tileName="support1"
+        />
+      </div>
+      <div
+        className="css-view-1dbjc4n IS7"
       />
+      <div
+        className="css-view-1dbjc4n IS8"
+      >
+        <TileG
+          breakpoint="wide"
+          tileName="support2"
+        />
+      </div>
     </div>
   </div>
 </div>
@@ -3648,8 +3994,8 @@ exports[`30. puzzle - wide 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
   padding-top: 15px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
@@ -3783,8 +4129,8 @@ exports[`31. comment lead and cartoon - huge 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
   -ms-flex-positive: 1;
@@ -3837,80 +4183,120 @@ exports[`31. comment lead and cartoon - huge 1`] = `
 exports[`32. daily universal register - huge 1`] = `
 <style>
 .IS1 {
-  height: 73;
+  width: 237;
+  height: 60;
   margin-vertical: 10px;
-  width: 285;
+  margin-top: 15px;
 }
 
 .IS2 {
   color: rgba(133,0,41,1.00);
   font-family: TimesDigitalW04;
-  font-size: 16px;
-  margin-bottom: 25px;
+  font-size: 15px;
+  margin-bottom: 15px;
 }
 
 .IS3 {
-  border-bottom-color: rgba(219,219,219,1.00);
   border-bottom-width: 1px;
   border-top-color: rgba(219,219,219,1.00);
   border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
   border-top-style: solid;
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  width: 100%;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
 .IS4 {
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-bottom-width: 1px;
-  border-top-color: rgba(219,219,219,1.00);
-  border-right-color: rgba(219,219,219,1.00);
-  border-left-color: rgba(219,219,219,1.00);
-  border-top-style: solid;
-  border-right-style: solid;
-  border-bottom-style: solid;
-  border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  width: 100%;
+  width: 60;
+  height: 45;
+  margin-right: 15px;
+  margin-bottom: 10px;
 }
 
 .IS5 {
-  height: 45;
-  width: 60;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
 }
 
 .IS6 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.IS7 {
   border-bottom-width: 1px;
   border-top-color: rgba(219,219,219,1.00);
   border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
   border-top-style: solid;
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  width: 100%;
-}
-
-.IS7 {
-  height: 45;
-  width: 60;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
 .IS8 {
+  width: 60;
+  height: 45;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+.IS9 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
+
+.IS10 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS11 {
   -webkit-align-items: center;
   align-items: center;
   background-color: rgba(240,240,240,1.00);
@@ -3920,10 +4306,14 @@ exports[`32. daily universal register - huge 1`] = `
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  padding-right: 25%;
-  padding-left: 25%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
   -ms-flex-align: center;
   -webkit-box-align: center;
   -ms-flex-positive: 1;
@@ -3932,7 +4322,7 @@ exports[`32. daily universal register - huge 1`] = `
   -ms-flex-preferred-size: 0%;
 }
 
-.IS9 {
+.IS12 {
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
@@ -3944,10 +4334,10 @@ exports[`32. daily universal register - huge 1`] = `
 </style>
 
 <div
-  className="css-view-1dbjc4n IS9"
+  className="css-view-1dbjc4n IS12"
 >
   <div
-    className="css-view-1dbjc4n IS8"
+    className="css-view-1dbjc4n IS11"
   >
     <Image
       aspectRatio={1}
@@ -3959,37 +4349,55 @@ exports[`32. daily universal register - huge 1`] = `
     >
       Daily Universal Register
     </div>
-    <TileS
-      breakpoint="wide"
-    />
     <div
-      className="css-view-1dbjc4n IS3"
-    />
-    <TileS
-      breakpoint="wide"
-    />
-    <div
-      className="css-view-1dbjc4n IS4"
-    />
-    <Image
-      aspectRatio={1}
-      className="IS5"
-      uri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
-    />
-    <TileS
-      breakpoint="wide"
-    />
-    <div
-      className="css-view-1dbjc4n IS6"
-    />
-    <Image
-      aspectRatio={1}
-      className="IS7"
-      uri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
-    />
-    <TileS
-      breakpoint="wide"
-    />
+      className="css-view-1dbjc4n IS10"
+    >
+      <div
+        className="css-view-1dbjc4n IS5"
+      >
+        <TileS
+          breakpoint="wide"
+        />
+        <div
+          className="css-view-1dbjc4n IS3"
+        />
+        <TileS
+          breakpoint="wide"
+          logo={
+            <Logo
+              className="IS4"
+              imageUri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
+              ratio={1}
+              type="nature notes"
+            />
+          }
+        />
+      </div>
+      <div
+        className="css-view-1dbjc4n IS6"
+      />
+      <div
+        className="css-view-1dbjc4n IS9"
+      >
+        <TileS
+          breakpoint="wide"
+        />
+        <div
+          className="css-view-1dbjc4n IS7"
+        />
+        <TileS
+          breakpoint="wide"
+          logo={
+            <Logo
+              className="IS8"
+              imageUri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
+              ratio={1}
+              type="birthdays"
+            />
+          }
+        />
+      </div>
+    </div>
   </div>
 </div>
 `;
@@ -4028,8 +4436,8 @@ exports[`33. lead one and one - huge 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -4069,7 +4477,8 @@ exports[`33. lead one and one - huge 1`] = `
     <div
       className="css-view-1dbjc4n IS3"
     >
-      <TileC
+      <TileAA
+        breakpoint="wide"
         tileName="support"
       />
     </div>
@@ -4130,12 +4539,12 @@ exports[`35. lead two no pic and two - huge 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .IS4 {
-  width: 16%;
+  width: 42%;
 }
 
 .IS5 {
@@ -4148,26 +4557,32 @@ exports[`35. lead two no pic and two - huge 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .IS6 {
-  width: 42%;
+  width: 16%;
 }
 
 .IS7 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-justify-content: center;
-  justify-content: center;
   margin-right: 10px;
   margin-left: 10px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
 }
 
 .IS8 {
@@ -4206,7 +4621,8 @@ exports[`35. lead two no pic and two - huge 1`] = `
     <div
       className="css-view-1dbjc4n IS4"
     >
-      <TileAL
+      <TileE
+        breakpoint="wide"
         tileName="support1"
       />
     </div>
@@ -4216,7 +4632,7 @@ exports[`35. lead two no pic and two - huge 1`] = `
     <div
       className="css-view-1dbjc4n IS6"
     >
-      <TileZ
+      <TileAL
         tileName="support2"
       />
     </div>
@@ -4227,20 +4643,19 @@ exports[`35. lead two no pic and two - huge 1`] = `
 exports[`36. leaders slice - huge 1`] = `
 <style>
 .IS1 {
-  height: 51;
-  width: 283;
+  height: 42;
+  width: 237;
 }
 
 .IS2 {
   color: rgba(133,0,41,1.00);
   font-family: TimesDigitalW04-Regular;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 15px;
+  line-height: 15px;
   text-align: center;
 }
 
 .IS3 {
-  padding-bottom: 5px;
   padding-top: 10px;
 }
 
@@ -4252,8 +4667,8 @@ exports[`36. leaders slice - huge 1`] = `
 }
 
 .IS5 {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 33%;
 }
 
@@ -4267,13 +4682,13 @@ exports[`36. leaders slice - huge 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 60px;
+  margin-top: 30px;
 }
 
 .IS7 {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 33%;
 }
 
@@ -4287,13 +4702,13 @@ exports[`36. leaders slice - huge 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 60px;
+  margin-top: 30px;
 }
 
 .IS9 {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 33%;
 }
 
@@ -4307,7 +4722,6 @@ exports[`36. leaders slice - huge 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-bottom: 5px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -4318,7 +4732,11 @@ exports[`36. leaders slice - huge 1`] = `
 
 .IS11 {
   background-color: rgba(240,240,240,1.00);
-  padding-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 30px;
 }
 
 .IS12 {
@@ -4362,7 +4780,7 @@ exports[`36. leaders slice - huge 1`] = `
       <div
         className="css-view-1dbjc4n IS5"
       >
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader2"
         />
@@ -4373,7 +4791,7 @@ exports[`36. leaders slice - huge 1`] = `
       <div
         className="css-view-1dbjc4n IS7"
       >
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader1"
         />
@@ -4384,7 +4802,7 @@ exports[`36. leaders slice - huge 1`] = `
       <div
         className="css-view-1dbjc4n IS9"
       >
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader3"
         />
@@ -4698,7 +5116,6 @@ exports[`39. secondary four - huge 1`] = `
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  width: 25%;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -4715,8 +5132,8 @@ exports[`39. secondary four - huge 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .IS3 {
@@ -4726,7 +5143,6 @@ exports[`39. secondary four - huge 1`] = `
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  width: 25%;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -4734,34 +5150,24 @@ exports[`39. secondary four - huge 1`] = `
 }
 
 .IS4 {
-  border-top-color: rgba(219,219,219,1.00);
-  border-right-color: rgba(219,219,219,1.00);
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-left-color: rgba(219,219,219,1.00);
-  border-right-width: 1px;
-  border-top-style: solid;
-  border-right-style: solid;
-  border-bottom-style: solid;
-  border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.IS5 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
+  -webkit-flex-grow: 2;
+  flex-grow: 2;
   -webkit-flex-shrink: 1;
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  width: 25%;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-positive: 2;
+  -webkit-box-flex: 2;
   -ms-flex-negative: 1;
   -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
 }
 
-.IS6 {
+.IS5 {
   border-top-color: rgba(219,219,219,1.00);
   border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
@@ -4771,8 +5177,22 @@ exports[`39. secondary four - huge 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.IS6 {
+  border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .IS7 {
@@ -4782,7 +5202,8 @@ exports[`39. secondary four - huge 1`] = `
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  width: 25%;
+  padding-top: 5px;
+  padding-bottom: 5px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -4790,11 +5211,21 @@ exports[`39. secondary four - huge 1`] = `
 }
 
 .IS8 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
   margin-right: 10px;
   margin-left: 10px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
@@ -4817,39 +5248,55 @@ exports[`39. secondary four - huge 1`] = `
     className="css-view-1dbjc4n IS8"
   >
     <div
-      className="css-view-1dbjc4n IS1"
-    >
-      <TileC
-        tileName="secondary1"
-      />
-    </div>
-    <div
-      className="css-view-1dbjc4n IS2"
-    />
-    <div
-      className="css-view-1dbjc4n IS3"
-    >
-      <TileC
-        tileName="secondary2"
-      />
-    </div>
-    <div
       className="css-view-1dbjc4n IS4"
-    />
+    >
+      <div
+        className="css-view-1dbjc4n IS1"
+      >
+        <TileAR
+          tileName="secondary1"
+        />
+      </div>
+      <div
+        className="css-view-1dbjc4n IS2"
+      />
+      <div
+        className="css-view-1dbjc4n IS3"
+      >
+        <TileAR
+          tileName="secondary2"
+        />
+      </div>
+    </div>
     <div
       className="css-view-1dbjc4n IS5"
-    >
-      <TileC
-        tileName="secondary3"
-      />
-    </div>
-    <div
-      className="css-view-1dbjc4n IS6"
     />
     <div
       className="css-view-1dbjc4n IS7"
     >
-      <TileC
+      <TileB
+        additionalHeadlineStyles={
+          Object {
+            "fontSize": 20,
+            "lineHeight": 20,
+            "marginBottom": "5px",
+          }
+        }
+        breakpoint="wide"
+        tileName="secondary3"
+      />
+      <div
+        className="css-view-1dbjc4n IS6"
+      />
+      <TileB
+        additionalHeadlineStyles={
+          Object {
+            "fontSize": 20,
+            "lineHeight": 20,
+            "marginBottom": "5px",
+          }
+        }
+        breakpoint="wide"
         tileName="secondary4"
       />
     </div>
@@ -4860,7 +5307,7 @@ exports[`39. secondary four - huge 1`] = `
 exports[`40. secondary one and columnist - huge 1`] = `
 <style>
 .IS1 {
-  width: 73%;
+  width: 67%;
 }
 
 .IS2 {
@@ -4878,7 +5325,9 @@ exports[`40. secondary one and columnist - huge 1`] = `
 }
 
 .IS3 {
-  width: 27%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 33%;
 }
 
 .IS4 {
@@ -4891,8 +5340,8 @@ exports[`40. secondary one and columnist - huge 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -4935,6 +5384,7 @@ exports[`40. secondary one and columnist - huge 1`] = `
       <TileB
         breakpoint="wide"
         tileName="secondary"
+        withMoreTeaser={true}
       />
     </div>
   </div>
@@ -5155,8 +5605,8 @@ exports[`42. lead one and four slice - huge 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
   -ms-flex-positive: 1;
@@ -5199,28 +5649,24 @@ exports[`42. lead one and four slice - huge 1`] = `
       className="css-view-1dbjc4n IS6"
     >
       <TileAD
-        breakpoint="wide"
         tileName="support1"
       />
       <div
         className="css-view-1dbjc4n IS3"
       />
       <TileAD
-        breakpoint="wide"
         tileName="support2"
       />
       <div
         className="css-view-1dbjc4n IS4"
       />
       <TileAD
-        breakpoint="wide"
         tileName="support3"
       />
       <div
         className="css-view-1dbjc4n IS5"
       />
       <TileAD
-        breakpoint="wide"
         tileName="support4"
       />
     </div>
@@ -5361,7 +5807,16 @@ exports[`43. standard slice - huge 1`] = `
 exports[`44. secondary two no pic and two - huge 1`] = `
 <style>
 .IS1 {
-  width: 33.4%;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
 }
 
 .IS2 {
@@ -5374,55 +5829,24 @@ exports[`44. secondary two no pic and two - huge 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
+  margin-top: 15px;
   margin-bottom: 10px;
 }
 
 .IS3 {
-  padding-right: 5px;
-  padding-left: 5px;
-  width: 16.6%;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
 }
 
 .IS4 {
-  border-top-color: rgba(219,219,219,1.00);
-  border-right-color: rgba(219,219,219,1.00);
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-left-color: rgba(219,219,219,1.00);
-  border-right-width: 1px;
-  border-top-style: solid;
-  border-right-style: solid;
-  border-bottom-style: solid;
-  border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.IS5 {
-  width: 33.4%;
-}
-
-.IS6 {
-  border-top-color: rgba(219,219,219,1.00);
-  border-right-color: rgba(219,219,219,1.00);
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-left-color: rgba(219,219,219,1.00);
-  border-right-width: 1px;
-  border-top-style: solid;
-  border-right-style: solid;
-  border-bottom-style: solid;
-  border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.IS7 {
-  padding-right: 5px;
-  padding-left: 5px;
-  width: 16.6%;
-}
-
-.IS8 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   -webkit-flex-shrink: 1;
@@ -5432,8 +5856,6 @@ exports[`44. secondary two no pic and two - huge 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-right: 10px;
-  margin-left: 10px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -5442,7 +5864,94 @@ exports[`44. secondary two no pic and two - huge 1`] = `
   -webkit-box-direction: normal;
 }
 
+.IS5 {
+  border-bottom-width: 1px;
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.IS6 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
+
+.IS7 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.IS8 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
+
 .IS9 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS10 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  margin-right: 10px;
+  margin-left: 10px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
+
+.IS11 {
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
@@ -5454,47 +5963,57 @@ exports[`44. secondary two no pic and two - huge 1`] = `
 </style>
 
 <div
-  className="css-view-1dbjc4n IS9"
+  className="css-view-1dbjc4n IS11"
 >
   <div
-    className="css-view-1dbjc4n IS8"
+    className="css-view-1dbjc4n IS10"
   >
     <div
-      className="css-view-1dbjc4n IS1"
-    >
-      <TileAE
-        tileName="secondary1"
-      />
-    </div>
-    <div
-      className="css-view-1dbjc4n IS2"
-    />
-    <div
-      className="css-view-1dbjc4n IS3"
-    >
-      <TileAP
-        tileName="support1"
-      />
-    </div>
-    <div
       className="css-view-1dbjc4n IS4"
-    />
+    >
+      <div
+        className="css-view-1dbjc4n IS1"
+      >
+        <TileAE
+          tileName="secondary1"
+        />
+      </div>
+      <div
+        className="css-view-1dbjc4n IS2"
+      />
+      <div
+        className="css-view-1dbjc4n IS3"
+      >
+        <TileAE
+          tileName="secondary2"
+        />
+      </div>
+    </div>
     <div
       className="css-view-1dbjc4n IS5"
-    >
-      <TileAE
-        tileName="secondary2"
-      />
-    </div>
-    <div
-      className="css-view-1dbjc4n IS6"
     />
     <div
-      className="css-view-1dbjc4n IS7"
+      className="css-view-1dbjc4n IS9"
     >
-      <TileAP
-        tileName="support2"
+      <div
+        className="css-view-1dbjc4n IS6"
+      >
+        <TileG
+          breakpoint="wide"
+          tileName="support1"
+        />
+      </div>
+      <div
+        className="css-view-1dbjc4n IS7"
       />
+      <div
+        className="css-view-1dbjc4n IS8"
+      >
+        <TileG
+          breakpoint="wide"
+          tileName="support2"
+        />
+      </div>
     </div>
   </div>
 </div>
@@ -5524,8 +6043,8 @@ exports[`45. puzzle - huge 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
   padding-top: 15px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;

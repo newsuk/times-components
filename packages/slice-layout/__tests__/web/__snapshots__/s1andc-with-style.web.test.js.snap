@@ -3,35 +3,9 @@
 exports[`1. secondary one and columnist - small 1`] = `
 <div
   className="css-view-1dbjc4n"
-  style={
-    Object {
-      "WebkitBoxDirection": "normal",
-      "WebkitBoxFlex": 1,
-      "WebkitBoxOrient": "horizontal",
-      "WebkitFlexBasis": "0%",
-      "WebkitFlexDirection": "row",
-      "WebkitFlexGrow": 1,
-      "WebkitFlexShrink": 1,
-      "flexBasis": "0%",
-      "flexDirection": "row",
-      "flexGrow": 1,
-      "flexShrink": 1,
-      "marginLeft": "20px",
-      "marginRight": "20px",
-      "msFlexDirection": "row",
-      "msFlexNegative": 1,
-      "msFlexPositive": 1,
-      "msFlexPreferredSize": "0%",
-    }
-  }
 >
   <div
     className="css-view-1dbjc4n"
-    style={
-      Object {
-        "width": "73%",
-      }
-    }
   >
     <div
       className="css-text-901oao"
@@ -52,18 +26,13 @@ exports[`1. secondary one and columnist - small 1`] = `
         "borderRightWidth": "1px",
         "borderTopColor": "rgba(219,219,219,1.00)",
         "borderTopStyle": "solid",
-        "marginBottom": "15px",
-        "marginTop": "15px",
+        "marginBottom": "10px",
+        "marginTop": "10px",
       }
     }
   />
   <div
     className="css-view-1dbjc4n"
-    style={
-      Object {
-        "width": "27%",
-      }
-    }
   >
     <div
       className="css-text-901oao"
@@ -135,6 +104,8 @@ exports[`2. secondary one and columnist - medium 1`] = `
     className="css-view-1dbjc4n"
     style={
       Object {
+        "paddingBottom": "5px",
+        "paddingTop": "5px",
         "width": "27%",
       }
     }

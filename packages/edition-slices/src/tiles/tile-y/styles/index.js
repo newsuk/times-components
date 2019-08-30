@@ -19,17 +19,7 @@ const mediumBreakpointStyles = {
 };
 
 const wideBreakpointStyles = {
-  container: {
-    padding: spacing(2)
-  },
-  headline: {
-    fontFamily: fonts.headline,
-    fontSize: 30,
-    lineHeight: 30
-  },
-  summaryContainer: {
-    marginHorizontal: spacing(2)
-  }
+  ...mediumBreakpointStyles
 };
 
 export default breakpoint =>

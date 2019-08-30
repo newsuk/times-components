@@ -1246,9 +1246,8 @@ exports[`24. tile w 1`] = `
     style={
       Object {
         "flex": 1,
-        "paddingBottom": 5,
         "paddingRight": 20,
-        "width": "33.33%",
+        "width": "51.5%",
       }
     }
   >
@@ -1275,10 +1274,10 @@ exports[`24. tile w 1`] = `
               Object {
                 "color": "#333333",
                 "fontFamily": "TimesModern-Bold",
-                "fontSize": 35,
+                "fontSize": 30,
                 "fontWeight": "900",
-                "lineHeight": 35,
-                "marginBottom": 5,
+                "lineHeight": 30,
+                "marginBottom": 10,
               }
             }
           >
@@ -1292,7 +1291,7 @@ exports[`24. tile w 1`] = `
   <Image
     style={
       Object {
-        "width": "66.66%",
+        "width": "48.5%",
       }
     }
   />
@@ -1327,7 +1326,7 @@ exports[`25. tile x 1`] = `
               "fontSize": 40,
               "fontWeight": "900",
               "lineHeight": 40,
-              "marginBottom": 5,
+              "marginBottom": 10,
             }
           }
         >
@@ -1336,11 +1335,11 @@ exports[`25. tile x 1`] = `
         <Text
           style={
             Object {
-              "color": "#696969",
-              "fontFamily": "TimesDigitalW04-Regular",
-              "fontSize": 25,
-              "lineHeight": 25,
-              "paddingBottom": 5,
+              "color": "#333333",
+              "fontFamily": "TimesModern-Regular",
+              "fontSize": 24,
+              "lineHeight": 26,
+              "paddingBottom": 10,
             }
           }
         >
@@ -1373,7 +1372,7 @@ exports[`26. tile y 1`] = `
           "fontSize": 30,
           "fontWeight": "900",
           "lineHeight": 30,
-          "marginBottom": 5,
+          "marginBottom": 10,
         }
       }
     >
@@ -1402,45 +1401,7 @@ exports[`26. tile y 1`] = `
 </Link>
 `;
 
-exports[`27. tile z 1`] = `
-<Link>
-  <View
-    style={
-      Object {
-        "marginBottom": 10,
-      }
-    }
-  >
-    <View
-      style={
-        Object {
-          "marginBottom": 0,
-        }
-      }
-    >
-      <ArticleLabel />
-    </View>
-    <Text
-      style={
-        Object {
-          "color": "#333333",
-          "fontFamily": "TimesModern-Bold",
-          "fontSize": 25,
-          "fontWeight": "900",
-          "lineHeight": 25,
-          "marginBottom": 10,
-        }
-      }
-    >
-      This is tile headline
-    </Text>
-    <ArticleFlags />
-  </View>
-  <Image />
-</Link>
-`;
-
-exports[`28. tile ab 1`] = `
+exports[`27. tile ab 1`] = `
 <Link>
   <Image
     style={
@@ -1483,41 +1444,13 @@ exports[`28. tile ab 1`] = `
                 "fontSize": 30,
                 "fontWeight": "900",
                 "lineHeight": 30,
-                "marginBottom": 5,
+                "marginBottom": 10,
               }
             }
           >
             This is tile headline
           </Text>
           <ArticleFlags />
-          <Text>
-            <Text
-              style={
-                Object {
-                  "color": "#333333",
-                  "flexDirection": "row",
-                  "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 13,
-                  "lineHeight": 15,
-                }
-              }
-            >
-              Richard Lloyd Parry
-            </Text>
-            <Text
-              style={
-                Object {
-                  "color": "#333333",
-                  "flexDirection": "row",
-                  "fontFamily": "GillSansMTStd-Medium",
-                  "fontSize": 13,
-                  "lineHeight": 15,
-                }
-              }
-            >
-              , Hanoi
-            </Text>
-          </Text>
         </View>
       </View>
     </View>
@@ -1525,7 +1458,7 @@ exports[`28. tile ab 1`] = `
 </Link>
 `;
 
-exports[`29. tile ae 1`] = `
+exports[`28. tile ae 1`] = `
 <Link>
   <View
     style={
@@ -1566,51 +1499,7 @@ exports[`29. tile ae 1`] = `
 </Link>
 `;
 
-exports[`30. tile ag 1`] = `
-<Link>
-  <View
-    style={
-      Object {
-        "flex": 1,
-      }
-    }
-  >
-    <Text
-      style={
-        Object {
-          "color": "#333333",
-          "fontFamily": "TimesModern-Bold",
-          "fontSize": 30,
-          "fontWeight": "900",
-          "lineHeight": 30,
-          "marginBottom": 5,
-          "marginTop": 20,
-          "textAlign": "center",
-        }
-      }
-    >
-      Driving Off
-    </Text>
-    <Text
-      style={
-        Object {
-          "color": "#696969",
-          "fontFamily": "TimesDigitalW04-Regular",
-          "fontSize": 14,
-          "lineHeight": 20,
-          "paddingBottom": 10,
-          "textAlign": "center",
-        }
-      }
-    >
-      Three Conservative MPs resign
-    </Text>
-    <ArticleFlags />
-  </View>
-</Link>
-`;
-
-exports[`31. tile aj 1`] = `
+exports[`29. tile aj 1`] = `
 <Link>
   <View
     style={
@@ -1647,7 +1536,7 @@ exports[`31. tile aj 1`] = `
 </Link>
 `;
 
-exports[`32. tile ak 1`] = `
+exports[`30. tile ak 1`] = `
 <Link>
   <View
     style={
@@ -1685,7 +1574,7 @@ exports[`32. tile ak 1`] = `
 </Link>
 `;
 
-exports[`33. tile al 1`] = `
+exports[`31. tile al 1`] = `
 <Link>
   <Image
     style={
@@ -1718,10 +1607,10 @@ exports[`33. tile al 1`] = `
             Object {
               "color": "#333333",
               "fontFamily": "TimesModern-Bold",
-              "fontSize": 22,
+              "fontSize": 20,
               "fontWeight": "900",
-              "lineHeight": 27,
-              "marginBottom": 0,
+              "lineHeight": 20,
+              "marginBottom": 5,
             }
           }
         >
@@ -1734,7 +1623,7 @@ exports[`33. tile al 1`] = `
 </Link>
 `;
 
-exports[`34. tile am 1`] = `
+exports[`32. tile am 1`] = `
 <Link>
   <Image
     style={
@@ -1784,7 +1673,7 @@ exports[`34. tile am 1`] = `
 </Link>
 `;
 
-exports[`35. tile an 1`] = `
+exports[`33. tile an 1`] = `
 <Link>
   <Image
     style={
@@ -1848,99 +1737,66 @@ exports[`35. tile an 1`] = `
 </Link>
 `;
 
-exports[`36. tile ap 1`] = `
+exports[`34. tile ad 1`] = `
 <Link>
-  <Image
-    style={
-      Object {
-        "overflow": "hidden",
-      }
-    }
-  />
   <View
     style={
       Object {
         "flex": 1,
-        "justifyContent": "center",
-        "paddingTop": 5,
       }
     }
   >
-    <View
-      style={
-        Object {
-          "marginBottom": 0,
-        }
-      }
-    >
-      <ArticleLabel />
+    <View>
+      <View>
+        <View
+          style={
+            Object {
+              "marginBottom": 0,
+            }
+          }
+        >
+          <ArticleLabel />
+        </View>
+        <Text
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 20,
+              "fontWeight": "900",
+              "lineHeight": 20,
+              "marginBottom": 0,
+            }
+          }
+        >
+          This is tile headline
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "#696969",
+              "flexWrap": "wrap",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 14,
+              "lineHeight": 20,
+              "marginBottom": 0,
+            }
+          }
+        >
+          <Text>
+            
+            Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+            ...
+          </Text>
+        </Text>
+        <ArticleFlags />
+      </View>
     </View>
-    <Text
-      style={
-        Object {
-          "color": "#333333",
-          "fontFamily": "TimesModern-Bold",
-          "fontSize": 22,
-          "fontWeight": "900",
-          "lineHeight": 22,
-          "marginBottom": 5,
-          "paddingBottom": 5,
-        }
-      }
-    >
-      This is tile headline
-    </Text>
-    <ArticleFlags />
   </View>
 </Link>
 `;
 
-exports[`37. tile ad 1`] = `
-<Link>
-  <Image
-    style={
-      Object {
-        "width": "30%",
-      }
-    }
-  />
-  <View
-    style={
-      Object {
-        "paddingLeft": 10,
-        "width": "70%",
-      }
-    }
-  >
-    <View
-      style={
-        Object {
-          "marginBottom": 0,
-        }
-      }
-    >
-      <ArticleLabel />
-    </View>
-    <Text
-      style={
-        Object {
-          "color": "#333333",
-          "fontFamily": "TimesModern-Bold",
-          "fontSize": 20,
-          "fontWeight": "900",
-          "lineHeight": 20,
-          "marginBottom": 0,
-        }
-      }
-    >
-      This is tile headline
-    </Text>
-    <ArticleFlags />
-  </View>
-</Link>
-`;
-
-exports[`38. tile ac 1`] = `
+exports[`35. tile ac 1`] = `
 <Link>
   <Image
     style={
@@ -1990,18 +1846,8 @@ exports[`38. tile ac 1`] = `
 </Link>
 `;
 
-exports[`39. tile aq 1`] = `
+exports[`36. tile aa 1`] = `
 <Link>
-  <View
-    style={
-      Object {
-        "marginBottom": 10,
-        "width": "100%",
-      }
-    }
-  >
-    <Image />
-  </View>
   <View
     style={
       Object {
@@ -2025,9 +1871,9 @@ exports[`39. tile aq 1`] = `
             Object {
               "color": "#333333",
               "fontFamily": "TimesModern-Bold",
-              "fontSize": 22,
+              "fontSize": 20,
               "fontWeight": "900",
-              "lineHeight": 22,
+              "lineHeight": 20,
               "marginBottom": 5,
             }
           }
@@ -2041,7 +1887,7 @@ exports[`39. tile aq 1`] = `
 </Link>
 `;
 
-exports[`40. tile ar 1`] = `
+exports[`37. tile ar 1`] = `
 <Link>
   <View
     style={
@@ -2110,7 +1956,7 @@ exports[`40. tile ar 1`] = `
 </Link>
 `;
 
-exports[`41. tile as 1`] = `
+exports[`38. tile as 1`] = `
 <Link>
   <View
     style={
@@ -2143,9 +1989,9 @@ exports[`41. tile as 1`] = `
         Object {
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 18,
+          "fontSize": undefined,
           "fontWeight": "900",
-          "lineHeight": 18,
+          "lineHeight": undefined,
           "marginBottom": 5,
         }
       }
@@ -2175,7 +2021,7 @@ exports[`41. tile as 1`] = `
 </Link>
 `;
 
-exports[`42. tile ah 1`] = `
+exports[`39. tile ah 1`] = `
 <Link>
   <Image
     style={
@@ -2190,7 +2036,6 @@ exports[`42. tile ah 1`] = `
     style={
       Object {
         "alignItems": "center",
-        "flex": 1,
         "paddingTop": 5,
       }
     }
@@ -2239,7 +2084,7 @@ exports[`42. tile ah 1`] = `
 </Link>
 `;
 
-exports[`43. tile ai 1`] = `
+exports[`40. tile ai 1`] = `
 <Link>
   <Image
     style={

@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { SecondaryFourSlice } from "@times-components/slice-layout";
 import { TileC, TileAR, TileB } from "../../tiles";
 import { ResponsiveSlice } from "../shared";
+import stylesFactory from "./styles";
 
 class SecondaryFour extends Component {
   constructor(props) {
@@ -57,6 +58,7 @@ class SecondaryFour extends Component {
             onPress={onPress}
             tile={secondary3}
             tileName="secondary3"
+            additionalHeadlineStyles={stylesFactory(breakpoint)}
           />
         }
         secondary4={
@@ -65,6 +67,7 @@ class SecondaryFour extends Component {
             onPress={onPress}
             tile={secondary4}
             tileName="secondary4"
+            additionalHeadlineStyles={stylesFactory(breakpoint)}
           />
         }
       />
@@ -76,7 +79,6 @@ class SecondaryFour extends Component {
       <ResponsiveSlice
         renderSmall={this.renderSmall}
         renderMedium={this.renderMedium}
-        renderWide={this.renderSmall}
       />
     );
   }

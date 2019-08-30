@@ -1977,12 +1977,12 @@ exports[`24. tile w 1`] = `
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .IS1 {
-  font-size: 35px;
-  line-height: 35px;
+  font-size: 30px;
+  line-height: 30px;
 }
 
 .IS2 {
@@ -2005,9 +2005,8 @@ exports[`24. tile w 1`] = `
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  padding-bottom: 5px;
   padding-right: 20px;
-  width: 33.33%;
+  width: 51.5%;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -2015,17 +2014,18 @@ exports[`24. tile w 1`] = `
 }
 
 .IS4 {
-  width: 66.66%;
+  width: 48.5%;
 }
 </style>
 
 <Link
   linkStyle={
     Object {
+      "flex": 1,
       "flexDirection": "row",
-      "paddingBottom": "15px",
-      "paddingHorizontal": "20px",
-      "paddingTop": "15px",
+      "marginHorizontal": "20px",
+      "paddingHorizontal": "10px",
+      "paddingVertical": "15px",
     }
   }
   url="/article/123"
@@ -2053,7 +2053,7 @@ exports[`24. tile w 1`] = `
           </div>
           <h3
             aria-level="3"
-            className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
+            className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-15d164r IS1 S2"
             role="heading"
           >
             This is tile headline
@@ -2091,11 +2091,12 @@ exports[`25. tile x 1`] = `
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .S3 {
-  color: rgba(105,105,105,1.00);
+  color: rgba(51,51,51,1.00);
+  font-family: TimesModern-Regular;
 }
 
 .IS1 {
@@ -2104,10 +2105,8 @@ exports[`25. tile x 1`] = `
 }
 
 .IS2 {
-  font-family: TimesDigitalW04-Regular;
-  font-size: 25px;
-  line-height: 25px;
-  padding-bottom: 5px;
+  font-size: 24px;
+  line-height: 26px;
 }
 
 .IS3 {
@@ -2129,6 +2128,7 @@ exports[`25. tile x 1`] = `
     Object {
       "flex": 1,
       "padding": "10px",
+      "paddingTop": "15px",
     }
   }
   url="/article/123"
@@ -2153,14 +2153,14 @@ exports[`25. tile x 1`] = `
         </div>
         <h3
           aria-level="3"
-          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
+          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-15d164r IS1 S2"
           role="heading"
         >
           This is tile headline
         </h3>
         <h4
           aria-level="4"
-          className="css-reset-4rbku5 css-text-901oao r-color-1khp51w IS2 S3"
+          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-4h8ur4 r-paddingBottom-1mi0q7o IS2 S3"
           role="heading"
         >
           Three Conservative MPs resign
@@ -2191,7 +2191,7 @@ exports[`26. tile y 1`] = `
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .S3 {
@@ -2215,7 +2215,9 @@ exports[`26. tile y 1`] = `
 <Link
   linkStyle={
     Object {
-      "padding": "10px",
+      "paddingBottom": "15px",
+      "paddingHorizontal": "10px",
+      "paddingTop": "10px",
     }
   }
   url="/article/123"
@@ -2234,7 +2236,7 @@ exports[`26. tile y 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-15d164r IS1 S2"
       role="heading"
     >
       This is tile headline
@@ -2264,7 +2266,7 @@ exports[`26. tile y 1`] = `
 </Link>
 `;
 
-exports[`27. tile z 1`] = `
+exports[`27. tile ab 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2275,82 +2277,6 @@ exports[`27. tile z 1`] = `
   font-family: TimesModern-Bold;
   font-weight: 400;
   margin-bottom: 10px;
-}
-
-.S3 {
-  margin-bottom: 10px;
-}
-
-.IS1 {
-  font-size: 25px;
-  line-height: 25px;
-}
-</style>
-
-<Link
-  linkStyle={
-    Object {
-      "padding": "10px",
-    }
-  }
-  url="/article/123"
->
-  <div
-    className="css-view-1dbjc4n r-marginBottom-15d164r S3"
-  >
-    <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
-    >
-      <ArticleLabel
-        color="#005B8D"
-        isVideo={false}
-        title="label"
-      />
-    </div>
-    <h3
-      aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-15d164r IS1 S2"
-      role="heading"
-    >
-      This is tile headline
-    </h3>
-    <ArticleFlags
-      flags={
-        Array [
-          Object {
-            "expiryTime": "2030-03-14T12:00:00.000Z",
-            "type": "EXCLUSIVE",
-          },
-        ]
-      }
-    />
-  </div>
-  <Image
-    aspectRatio={0.8}
-    fill={true}
-    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1434%2C1792%2C627%2C0"
-  />
-</Link>
-`;
-
-exports[`28. tile ab 1`] = `
-<style>
-.S1 {
-  margin-bottom: 0px;
-}
-
-.S2 {
-  color: rgba(51,51,51,1.00);
-  font-family: TimesModern-Bold;
-  font-weight: 400;
-  margin-bottom: 5px;
-}
-
-.S3 {
-  color: rgba(51,51,51,1.00);
-  font-family: GillSansMTStd-Medium;
-  font-size: 13px;
-  line-height: 15px;
 }
 
 .IS1 {
@@ -2396,7 +2322,7 @@ exports[`28. tile ab 1`] = `
       "flex": 1,
       "flexDirection": "row",
       "paddingHorizontal": "10px",
-      "paddingVertical": "10px",
+      "paddingVertical": "15px",
     }
   }
   url="/article/123"
@@ -2430,7 +2356,7 @@ exports[`28. tile ab 1`] = `
           </div>
           <h3
             aria-level="3"
-            className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
+            className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-15d164r IS2 S2"
             role="heading"
           >
             This is tile headline
@@ -2445,20 +2371,6 @@ exports[`28. tile ab 1`] = `
               ]
             }
           />
-          <div
-            className="css-text-901oao"
-          >
-            <span
-              className="css-text-901oao css-textHasAncestor-16my406 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S3"
-            >
-              Richard Lloyd Parry
-            </span>
-            <span
-              className="css-text-901oao css-textHasAncestor-16my406 r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S3"
-            >
-              , Hanoi
-            </span>
-          </div>
         </div>
       </div>
     </div>
@@ -2466,7 +2378,7 @@ exports[`28. tile ab 1`] = `
 </Link>
 `;
 
-exports[`29. tile ae 1`] = `
+exports[`28. tile ae 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2502,8 +2414,9 @@ exports[`29. tile ae 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "padding": "10px",
+      "paddingHorizontal": "10px",
       "paddingTop": "15px",
+      "paddingVertical": "15px",
     }
   }
   url="/article/123"
@@ -2549,80 +2462,7 @@ exports[`29. tile ae 1`] = `
 </Link>
 `;
 
-exports[`30. tile ag 1`] = `
-<style>
-.S1 {
-  color: rgba(51,51,51,1.00);
-  font-family: TimesModern-Bold;
-  font-weight: 400;
-  margin-bottom: 5px;
-}
-
-.S2 {
-  color: rgba(105,105,105,1.00);
-  font-size: 14px;
-  line-height: 20px;
-}
-
-.IS1 {
-  font-size: 30px;
-  line-height: 30px;
-  margin-top: 20px;
-  text-align: center;
-}
-
-.IS2 {
-  font-family: TimesDigitalW04-Regular;
-  text-align: center;
-}
-
-.IS3 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-</style>
-
-<Link
-  linkStyle={
-    Object {
-      "flex": 1,
-      "paddingBottom": "10px",
-      "paddingHorizontal": "20px",
-    }
-  }
-  url="/article/123"
->
-  <div
-    className="css-view-1dbjc4n IS3"
-  >
-    <h3
-      aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S1"
-      role="heading"
-    >
-      Driving Off
-    </h3>
-    <h4
-      aria-level="4"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khp51w r-fontSize-1b43r93 r-lineHeight-rjixqe r-paddingBottom-1mi0q7o IS2 S2"
-      role="heading"
-    >
-      Three Conservative MPs resign
-    </h4>
-    <ArticleFlags />
-  </div>
-</Link>
-`;
-
-exports[`31. tile aj 1`] = `
+exports[`29. tile aj 1`] = `
 <style>
 .S1 {
   color: rgba(51,51,51,1.00);
@@ -2681,7 +2521,7 @@ exports[`31. tile aj 1`] = `
 </Link>
 `;
 
-exports[`32. tile ak 1`] = `
+exports[`30. tile ak 1`] = `
 <style>
 .S1 {
   color: rgba(51,51,51,1.00);
@@ -2743,7 +2583,7 @@ exports[`32. tile ak 1`] = `
 </Link>
 `;
 
-exports[`33. tile al 1`] = `
+exports[`31. tile al 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2752,10 +2592,9 @@ exports[`33. tile al 1`] = `
 .S2 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
-  font-size: 22px;
   font-weight: 400;
-  line-height: 27px;
-  margin-bottom: 0px;
+  line-height: 20px;
+  margin-bottom: 5px;
 }
 
 .IS1 {
@@ -2764,6 +2603,10 @@ exports[`33. tile al 1`] = `
 }
 
 .IS2 {
+  font-size: 20px;
+}
+
+.IS3 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   -webkit-flex-shrink: 1;
@@ -2781,7 +2624,8 @@ exports[`33. tile al 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "padding": "10px",
+      "paddingHorizontal": "10px",
+      "paddingVertical": "15px",
     }
   }
   url="/article/123"
@@ -2793,7 +2637,7 @@ exports[`33. tile al 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
   />
   <div
-    className="css-view-1dbjc4n IS2"
+    className="css-view-1dbjc4n IS3"
   >
     <div
       className="css-view-1dbjc4n"
@@ -2812,7 +2656,7 @@ exports[`33. tile al 1`] = `
         </div>
         <h3
           aria-level="3"
-          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw r-marginBottom-p1pxzi S2"
+          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-lineHeight-rjixqe r-marginBottom-d0pm55 IS2 S2"
           role="heading"
         >
           This is tile headline
@@ -2833,7 +2677,7 @@ exports[`33. tile al 1`] = `
 </Link>
 `;
 
-exports[`34. tile am 1`] = `
+exports[`32. tile am 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -2927,7 +2771,7 @@ exports[`34. tile am 1`] = `
 </Link>
 `;
 
-exports[`35. tile an 1`] = `
+exports[`33. tile an 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3041,99 +2885,7 @@ exports[`35. tile an 1`] = `
 </Link>
 `;
 
-exports[`36. tile ap 1`] = `
-<style>
-.S1 {
-  margin-bottom: 0px;
-}
-
-.S2 {
-  color: rgba(51,51,51,1.00);
-  font-family: TimesModern-Bold;
-  font-size: 22px;
-  font-weight: 400;
-  margin-bottom: 5px;
-}
-
-.IS1 {
-  overflow: hidden;
-}
-
-.IS2 {
-  line-height: 22px;
-  padding-bottom: 5px;
-}
-
-.IS3 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -webkit-justify-content: center;
-  justify-content: center;
-  padding-top: 5px;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
-}
-</style>
-
-<Link
-  linkStyle={
-    Object {
-      "flex": 1,
-      "padding": "10px",
-    }
-  }
-  url="/article/123"
->
-  <Image
-    aspectRatio={1}
-    className="IS1"
-    fill={true}
-    resizeMode="cover"
-    rounded={true}
-    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
-  />
-  <div
-    className="css-view-1dbjc4n IS3"
-  >
-    <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
-    >
-      <ArticleLabel
-        color="#005B8D"
-        isVideo={false}
-        title="label"
-      />
-    </div>
-    <h3
-      aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
-      role="heading"
-    >
-      This is tile headline
-    </h3>
-    <ArticleFlags
-      flags={
-        Array [
-          Object {
-            "expiryTime": "2030-03-14T12:00:00.000Z",
-            "type": "EXCLUSIVE",
-          },
-        ]
-      }
-    />
-  </div>
-</Link>
-`;
-
-exports[`37. tile ad 1`] = `
+exports[`34. tile ad 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3147,17 +2899,37 @@ exports[`37. tile ad 1`] = `
   margin-bottom: 0px;
 }
 
-.IS1 {
-  width: 30%;
+.S3 {
+  color: rgba(105,105,105,1.00);
+  -ms-flex-wrap: wrap;
+  -webkit-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-family: TimesDigitalW04;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
 }
 
-.IS2 {
+.IS1 {
   font-size: 20px;
 }
 
+.IS2 {
+  -webkit-line-clamp: 2;
+}
+
 .IS3 {
-  padding-left: 10px;
-  width: 70%;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
 }
 </style>
 
@@ -3171,46 +2943,59 @@ exports[`37. tile ad 1`] = `
   }
   url="/article/123"
 >
-  <Image
-    aspectRatio={1.5}
-    className="IS1"
-    fill={true}
-    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
-  />
   <div
     className="css-view-1dbjc4n IS3"
   >
     <div
-      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+      className="css-view-1dbjc4n"
     >
-      <ArticleLabel
-        color="#005B8D"
-        isVideo={false}
-        title="label"
-      />
+      <div
+        className="css-view-1dbjc4n"
+      >
+        <div
+          className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+        >
+          <ArticleLabel
+            color="#005B8D"
+            isVideo={false}
+            title="label"
+          />
+        </div>
+        <h3
+          aria-level="3"
+          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-lineHeight-rjixqe r-marginBottom-p1pxzi IS1 S2"
+          role="heading"
+        >
+          This is tile headline
+        </h3>
+        <div
+          className="css-text-901oao css-textMultiLine-cens5h r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r IS2 S3"
+        >
+          <span
+            className="css-text-901oao css-textHasAncestor-16my406"
+          >
+            
+            Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+            ...
+          </span>
+        </div>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+        />
+      </div>
     </div>
-    <h3
-      aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-lineHeight-rjixqe r-marginBottom-p1pxzi IS2 S2"
-      role="heading"
-    >
-      This is tile headline
-    </h3>
-    <ArticleFlags
-      flags={
-        Array [
-          Object {
-            "expiryTime": "2030-03-14T12:00:00.000Z",
-            "type": "EXCLUSIVE",
-          },
-        ]
-      }
-    />
   </div>
 </Link>
 `;
 
-exports[`38. tile ac 1`] = `
+exports[`35. tile ac 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3308,33 +3093,25 @@ exports[`38. tile ac 1`] = `
 </Link>
 `;
 
-exports[`39. tile aq 1`] = `
+exports[`36. tile aa 1`] = `
 <style>
 .S1 {
-  margin-bottom: 10px;
-}
-
-.S2 {
   margin-bottom: 0px;
 }
 
-.S3 {
+.S2 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
-  font-size: 22px;
   font-weight: 400;
+  line-height: 20px;
   margin-bottom: 5px;
 }
 
 .IS1 {
-  width: 100%;
+  font-size: 20px;
 }
 
 .IS2 {
-  line-height: 22px;
-}
-
-.IS3 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   -webkit-flex-shrink: 1;
@@ -3352,22 +3129,14 @@ exports[`39. tile aq 1`] = `
   linkStyle={
     Object {
       "flex": 1,
-      "padding": "10px",
+      "paddingHorizontal": "10px",
+      "paddingVertical": "15px",
     }
   }
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n r-marginBottom-15d164r IS1 S1"
-  >
-    <Image
-      aspectRatio={1.7777777777777777}
-      fill={true}
-      uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
-    />
-  </div>
-  <div
-    className="css-view-1dbjc4n IS3"
+    className="css-view-1dbjc4n IS2"
   >
     <div
       className="css-view-1dbjc4n"
@@ -3376,7 +3145,7 @@ exports[`39. tile aq 1`] = `
         className="css-view-1dbjc4n"
       >
         <div
-          className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
+          className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
         >
           <ArticleLabel
             color="#005B8D"
@@ -3386,7 +3155,7 @@ exports[`39. tile aq 1`] = `
         </div>
         <h3
           aria-level="3"
-          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S3"
+          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-lineHeight-rjixqe r-marginBottom-d0pm55 IS1 S2"
           role="heading"
         >
           This is tile headline
@@ -3407,7 +3176,7 @@ exports[`39. tile aq 1`] = `
 </Link>
 `;
 
-exports[`40. tile ar 1`] = `
+exports[`37. tile ar 1`] = `
 <style>
 .S1 {
   margin-bottom: 10px;
@@ -3534,7 +3303,7 @@ exports[`40. tile ar 1`] = `
 </Link>
 `;
 
-exports[`41. tile as 1`] = `
+exports[`38. tile as 1`] = `
 <style>
 .S1 {
   margin-bottom: 10px;
@@ -3568,11 +3337,6 @@ exports[`41. tile as 1`] = `
 }
 
 .IS2 {
-  font-size: 18px;
-  line-height: 18px;
-}
-
-.IS3 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   -webkit-flex-shrink: 1;
@@ -3606,7 +3370,7 @@ exports[`41. tile as 1`] = `
     />
   </div>
   <div
-    className="css-view-1dbjc4n IS3"
+    className="css-view-1dbjc4n IS2"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
@@ -3619,7 +3383,7 @@ exports[`41. tile as 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S3"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 S3"
       role="heading"
     >
       This is tile headline
@@ -3649,7 +3413,7 @@ exports[`41. tile as 1`] = `
 </Link>
 `;
 
-exports[`42. tile ah 1`] = `
+exports[`39. tile ah 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -3691,19 +3455,9 @@ exports[`42. tile ah 1`] = `
 .IS4 {
   -webkit-align-items: center;
   align-items: center;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
   padding-top: 5px;
   -ms-flex-align: center;
   -webkit-box-align: center;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
 }
 </style>
 
@@ -3712,6 +3466,7 @@ exports[`42. tile ah 1`] = `
     Object {
       "alignItems": "center",
       "flex": 1,
+      "justifyContent": "center",
       "padding": "10px",
     }
   }
@@ -3765,7 +3520,7 @@ exports[`42. tile ah 1`] = `
 </Link>
 `;
 
-exports[`43. tile ai 1`] = `
+exports[`40. tile ai 1`] = `
 <style>
 .IS1 {
   width: 100%;

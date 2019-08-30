@@ -153,3 +153,101 @@ exports[`2. leaders - medium 1`] = `
   </div>
 </div>
 `;
+
+exports[`3. leaders - wide 1`] = `
+<div
+  style={
+    Object {
+      "WebkitBoxDirection": "normal",
+      "WebkitBoxFlex": 1,
+      "WebkitBoxOrient": "horizontal",
+      "WebkitFlexBasis": "0%",
+      "WebkitFlexDirection": "row",
+      "WebkitFlexGrow": 1,
+      "WebkitFlexShrink": 1,
+      "flexBasis": "0%",
+      "flexDirection": "row",
+      "flexGrow": 1,
+      "flexShrink": 1,
+      "msFlexDirection": "row",
+      "msFlexNegative": 1,
+      "msFlexPositive": 1,
+      "msFlexPreferredSize": "0%",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "paddingLeft": "20px",
+        "paddingRight": "20px",
+        "width": "33%",
+      }
+    }
+  >
+    <div>
+      leader-2
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "borderBottomColor": "rgba(219,219,219,1.00)",
+        "borderBottomStyle": "solid",
+        "borderLeftColor": "rgba(219,219,219,1.00)",
+        "borderLeftStyle": "solid",
+        "borderRightColor": "rgba(219,219,219,1.00)",
+        "borderRightStyle": "solid",
+        "borderRightWidth": "1px",
+        "borderTopColor": "rgba(219,219,219,1.00)",
+        "borderTopStyle": "solid",
+        "marginBottom": "60px",
+        "marginTop": "30px",
+      }
+    }
+  />
+  <div
+    style={
+      Object {
+        "paddingLeft": "20px",
+        "paddingRight": "20px",
+        "width": "33%",
+      }
+    }
+  >
+    <div>
+      leader-1
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "borderBottomColor": "rgba(219,219,219,1.00)",
+        "borderBottomStyle": "solid",
+        "borderLeftColor": "rgba(219,219,219,1.00)",
+        "borderLeftStyle": "solid",
+        "borderRightColor": "rgba(219,219,219,1.00)",
+        "borderRightStyle": "solid",
+        "borderRightWidth": "1px",
+        "borderTopColor": "rgba(219,219,219,1.00)",
+        "borderTopStyle": "solid",
+        "marginBottom": "60px",
+        "marginTop": "30px",
+      }
+    }
+  />
+  <div
+    style={
+      Object {
+        "paddingLeft": "20px",
+        "paddingRight": "20px",
+        "width": "33%",
+      }
+    }
+  >
+    <div>
+      leader-3
+    </div>
+  </div>
+</div>
+`;

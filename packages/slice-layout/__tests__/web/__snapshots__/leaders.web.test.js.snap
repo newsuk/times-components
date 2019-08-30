@@ -37,3 +37,25 @@ exports[`2. leaders - medium 1`] = `
   </div>
 </div>
 `;
+
+exports[`3. leaders - wide 1`] = `
+<div>
+  <div>
+    <div>
+      leader-2
+    </div>
+  </div>
+  <div />
+  <div>
+    <div>
+      leader-1
+    </div>
+  </div>
+  <div />
+  <div>
+    <div>
+      leader-3
+    </div>
+  </div>
+</div>
+`;

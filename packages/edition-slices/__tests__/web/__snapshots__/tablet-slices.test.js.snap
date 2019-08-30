@@ -29,29 +29,41 @@ exports[`2. daily universal register - medium 1`] = `
     <div>
       Daily Universal Register
     </div>
-    <TileS
-      breakpoint="wide"
-    />
-    <div />
-    <TileS
-      breakpoint="wide"
-    />
-    <div />
-    <Image
-      aspectRatio={1}
-      uri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
-    />
-    <TileS
-      breakpoint="wide"
-    />
-    <div />
-    <Image
-      aspectRatio={1}
-      uri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
-    />
-    <TileS
-      breakpoint="wide"
-    />
+    <div>
+      <div>
+        <TileS
+          breakpoint="wide"
+        />
+        <div />
+        <TileS
+          breakpoint="wide"
+          logo={
+            <Logo
+              imageUri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
+              ratio={1}
+              type="nature notes"
+            />
+          }
+        />
+      </div>
+      <div />
+      <div>
+        <TileS
+          breakpoint="wide"
+        />
+        <div />
+        <TileS
+          breakpoint="wide"
+          logo={
+            <Logo
+              imageUri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
+              ratio={1}
+              type="birthdays"
+            />
+          }
+        />
+      </div>
+    </div>
   </div>
 </div>
 `;
@@ -67,7 +79,8 @@ exports[`3. lead one and one - medium 1`] = `
     </div>
     <div />
     <div>
-      <TileC
+      <TileAA
+        breakpoint="wide"
         tileName="support"
       />
     </div>
@@ -98,13 +111,14 @@ exports[`5. lead two no pic and two - medium 1`] = `
     </div>
     <div />
     <div>
-      <TileAL
+      <TileE
+        breakpoint="wide"
         tileName="support1"
       />
     </div>
     <div />
     <div>
-      <TileZ
+      <TileAL
         tileName="support2"
       />
     </div>
@@ -128,21 +142,21 @@ exports[`6. leaders slice - medium 1`] = `
     </div>
     <div>
       <div>
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader2"
         />
       </div>
       <div />
       <div>
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader1"
         />
       </div>
       <div />
       <div>
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader3"
         />
@@ -223,25 +237,41 @@ exports[`9. secondary four - medium 1`] = `
 <div>
   <div>
     <div>
-      <TileC
-        tileName="secondary1"
-      />
+      <div>
+        <TileAR
+          tileName="secondary1"
+        />
+      </div>
+      <div />
+      <div>
+        <TileAR
+          tileName="secondary2"
+        />
+      </div>
     </div>
     <div />
     <div>
-      <TileC
-        tileName="secondary2"
-      />
-    </div>
-    <div />
-    <div>
-      <TileC
+      <TileB
+        additionalHeadlineStyles={
+          Object {
+            "fontSize": 20,
+            "lineHeight": 20,
+            "marginBottom": "5px",
+          }
+        }
+        breakpoint="wide"
         tileName="secondary3"
       />
-    </div>
-    <div />
-    <div>
-      <TileC
+      <div />
+      <TileB
+        additionalHeadlineStyles={
+          Object {
+            "fontSize": 20,
+            "lineHeight": 20,
+            "marginBottom": "5px",
+          }
+        }
+        breakpoint="wide"
         tileName="secondary4"
       />
     </div>
@@ -263,6 +293,7 @@ exports[`10. secondary one and columnist - medium 1`] = `
       <TileB
         breakpoint="wide"
         tileName="secondary"
+        withMoreTeaser={true}
       />
     </div>
   </div>
@@ -311,22 +342,18 @@ exports[`12. lead one and four slice - medium 1`] = `
     <div />
     <div>
       <TileAD
-        breakpoint="wide"
         tileName="support1"
       />
       <div />
       <TileAD
-        breakpoint="wide"
         tileName="support2"
       />
       <div />
       <TileAD
-        breakpoint="wide"
         tileName="support3"
       />
       <div />
       <TileAD
-        breakpoint="wide"
         tileName="support4"
       />
     </div>
@@ -366,27 +393,33 @@ exports[`14. secondary two no pic and two - medium 1`] = `
 <div>
   <div>
     <div>
-      <TileAE
-        tileName="secondary1"
-      />
+      <div>
+        <TileAE
+          tileName="secondary1"
+        />
+      </div>
+      <div />
+      <div>
+        <TileAE
+          tileName="secondary2"
+        />
+      </div>
     </div>
     <div />
     <div>
-      <TileAP
-        tileName="support1"
-      />
-    </div>
-    <div />
-    <div>
-      <TileAE
-        tileName="secondary2"
-      />
-    </div>
-    <div />
-    <div>
-      <TileAP
-        tileName="support2"
-      />
+      <div>
+        <TileG
+          breakpoint="wide"
+          tileName="support1"
+        />
+      </div>
+      <div />
+      <div>
+        <TileG
+          breakpoint="wide"
+          tileName="support2"
+        />
+      </div>
     </div>
   </div>
 </div>
@@ -491,29 +524,41 @@ exports[`17. daily universal register - wide 1`] = `
     <div>
       Daily Universal Register
     </div>
-    <TileS
-      breakpoint="wide"
-    />
-    <div />
-    <TileS
-      breakpoint="wide"
-    />
-    <div />
-    <Image
-      aspectRatio={1}
-      uri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
-    />
-    <TileS
-      breakpoint="wide"
-    />
-    <div />
-    <Image
-      aspectRatio={1}
-      uri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
-    />
-    <TileS
-      breakpoint="wide"
-    />
+    <div>
+      <div>
+        <TileS
+          breakpoint="wide"
+        />
+        <div />
+        <TileS
+          breakpoint="wide"
+          logo={
+            <Logo
+              imageUri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
+              ratio={1}
+              type="nature notes"
+            />
+          }
+        />
+      </div>
+      <div />
+      <div>
+        <TileS
+          breakpoint="wide"
+        />
+        <div />
+        <TileS
+          breakpoint="wide"
+          logo={
+            <Logo
+              imageUri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
+              ratio={1}
+              type="birthdays"
+            />
+          }
+        />
+      </div>
+    </div>
   </div>
 </div>
 `;
@@ -529,7 +574,8 @@ exports[`18. lead one and one - wide 1`] = `
     </div>
     <div />
     <div>
-      <TileC
+      <TileAA
+        breakpoint="wide"
         tileName="support"
       />
     </div>
@@ -560,13 +606,14 @@ exports[`20. lead two no pic and two - wide 1`] = `
     </div>
     <div />
     <div>
-      <TileAL
+      <TileE
+        breakpoint="wide"
         tileName="support1"
       />
     </div>
     <div />
     <div>
-      <TileZ
+      <TileAL
         tileName="support2"
       />
     </div>
@@ -590,21 +637,21 @@ exports[`21. leaders slice - wide 1`] = `
     </div>
     <div>
       <div>
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader2"
         />
       </div>
       <div />
       <div>
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader1"
         />
       </div>
       <div />
       <div>
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader3"
         />
@@ -685,25 +732,41 @@ exports[`24. secondary four - wide 1`] = `
 <div>
   <div>
     <div>
-      <TileC
-        tileName="secondary1"
-      />
+      <div>
+        <TileAR
+          tileName="secondary1"
+        />
+      </div>
+      <div />
+      <div>
+        <TileAR
+          tileName="secondary2"
+        />
+      </div>
     </div>
     <div />
     <div>
-      <TileC
-        tileName="secondary2"
-      />
-    </div>
-    <div />
-    <div>
-      <TileC
+      <TileB
+        additionalHeadlineStyles={
+          Object {
+            "fontSize": 20,
+            "lineHeight": 20,
+            "marginBottom": "5px",
+          }
+        }
+        breakpoint="wide"
         tileName="secondary3"
       />
-    </div>
-    <div />
-    <div>
-      <TileC
+      <div />
+      <TileB
+        additionalHeadlineStyles={
+          Object {
+            "fontSize": 20,
+            "lineHeight": 20,
+            "marginBottom": "5px",
+          }
+        }
+        breakpoint="wide"
         tileName="secondary4"
       />
     </div>
@@ -725,6 +788,7 @@ exports[`25. secondary one and columnist - wide 1`] = `
       <TileB
         breakpoint="wide"
         tileName="secondary"
+        withMoreTeaser={true}
       />
     </div>
   </div>
@@ -773,22 +837,18 @@ exports[`27. lead one and four slice - wide 1`] = `
     <div />
     <div>
       <TileAD
-        breakpoint="wide"
         tileName="support1"
       />
       <div />
       <TileAD
-        breakpoint="wide"
         tileName="support2"
       />
       <div />
       <TileAD
-        breakpoint="wide"
         tileName="support3"
       />
       <div />
       <TileAD
-        breakpoint="wide"
         tileName="support4"
       />
     </div>
@@ -828,27 +888,33 @@ exports[`29. secondary two no pic and two - wide 1`] = `
 <div>
   <div>
     <div>
-      <TileAE
-        tileName="secondary1"
-      />
+      <div>
+        <TileAE
+          tileName="secondary1"
+        />
+      </div>
+      <div />
+      <div>
+        <TileAE
+          tileName="secondary2"
+        />
+      </div>
     </div>
     <div />
     <div>
-      <TileAP
-        tileName="support1"
-      />
-    </div>
-    <div />
-    <div>
-      <TileAE
-        tileName="secondary2"
-      />
-    </div>
-    <div />
-    <div>
-      <TileAP
-        tileName="support2"
-      />
+      <div>
+        <TileG
+          breakpoint="wide"
+          tileName="support1"
+        />
+      </div>
+      <div />
+      <div>
+        <TileG
+          breakpoint="wide"
+          tileName="support2"
+        />
+      </div>
     </div>
   </div>
 </div>
@@ -953,29 +1019,41 @@ exports[`32. daily universal register - huge 1`] = `
     <div>
       Daily Universal Register
     </div>
-    <TileS
-      breakpoint="wide"
-    />
-    <div />
-    <TileS
-      breakpoint="wide"
-    />
-    <div />
-    <Image
-      aspectRatio={1}
-      uri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
-    />
-    <TileS
-      breakpoint="wide"
-    />
-    <div />
-    <Image
-      aspectRatio={1}
-      uri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
-    />
-    <TileS
-      breakpoint="wide"
-    />
+    <div>
+      <div>
+        <TileS
+          breakpoint="wide"
+        />
+        <div />
+        <TileS
+          breakpoint="wide"
+          logo={
+            <Logo
+              imageUri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
+              ratio={1}
+              type="nature notes"
+            />
+          }
+        />
+      </div>
+      <div />
+      <div>
+        <TileS
+          breakpoint="wide"
+        />
+        <div />
+        <TileS
+          breakpoint="wide"
+          logo={
+            <Logo
+              imageUri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
+              ratio={1}
+              type="birthdays"
+            />
+          }
+        />
+      </div>
+    </div>
   </div>
 </div>
 `;
@@ -991,7 +1069,8 @@ exports[`33. lead one and one - huge 1`] = `
     </div>
     <div />
     <div>
-      <TileC
+      <TileAA
+        breakpoint="wide"
         tileName="support"
       />
     </div>
@@ -1022,13 +1101,14 @@ exports[`35. lead two no pic and two - huge 1`] = `
     </div>
     <div />
     <div>
-      <TileAL
+      <TileE
+        breakpoint="wide"
         tileName="support1"
       />
     </div>
     <div />
     <div>
-      <TileZ
+      <TileAL
         tileName="support2"
       />
     </div>
@@ -1052,21 +1132,21 @@ exports[`36. leaders slice - huge 1`] = `
     </div>
     <div>
       <div>
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader2"
         />
       </div>
       <div />
       <div>
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader1"
         />
       </div>
       <div />
       <div>
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader3"
         />
@@ -1147,25 +1227,41 @@ exports[`39. secondary four - huge 1`] = `
 <div>
   <div>
     <div>
-      <TileC
-        tileName="secondary1"
-      />
+      <div>
+        <TileAR
+          tileName="secondary1"
+        />
+      </div>
+      <div />
+      <div>
+        <TileAR
+          tileName="secondary2"
+        />
+      </div>
     </div>
     <div />
     <div>
-      <TileC
-        tileName="secondary2"
-      />
-    </div>
-    <div />
-    <div>
-      <TileC
+      <TileB
+        additionalHeadlineStyles={
+          Object {
+            "fontSize": 20,
+            "lineHeight": 20,
+            "marginBottom": "5px",
+          }
+        }
+        breakpoint="wide"
         tileName="secondary3"
       />
-    </div>
-    <div />
-    <div>
-      <TileC
+      <div />
+      <TileB
+        additionalHeadlineStyles={
+          Object {
+            "fontSize": 20,
+            "lineHeight": 20,
+            "marginBottom": "5px",
+          }
+        }
+        breakpoint="wide"
         tileName="secondary4"
       />
     </div>
@@ -1187,6 +1283,7 @@ exports[`40. secondary one and columnist - huge 1`] = `
       <TileB
         breakpoint="wide"
         tileName="secondary"
+        withMoreTeaser={true}
       />
     </div>
   </div>
@@ -1235,22 +1332,18 @@ exports[`42. lead one and four slice - huge 1`] = `
     <div />
     <div>
       <TileAD
-        breakpoint="wide"
         tileName="support1"
       />
       <div />
       <TileAD
-        breakpoint="wide"
         tileName="support2"
       />
       <div />
       <TileAD
-        breakpoint="wide"
         tileName="support3"
       />
       <div />
       <TileAD
-        breakpoint="wide"
         tileName="support4"
       />
     </div>
@@ -1290,27 +1383,33 @@ exports[`44. secondary two no pic and two - huge 1`] = `
 <div>
   <div>
     <div>
-      <TileAE
-        tileName="secondary1"
-      />
+      <div>
+        <TileAE
+          tileName="secondary1"
+        />
+      </div>
+      <div />
+      <div>
+        <TileAE
+          tileName="secondary2"
+        />
+      </div>
     </div>
     <div />
     <div>
-      <TileAP
-        tileName="support1"
-      />
-    </div>
-    <div />
-    <div>
-      <TileAE
-        tileName="secondary2"
-      />
-    </div>
-    <div />
-    <div>
-      <TileAP
-        tileName="support2"
-      />
+      <div>
+        <TileG
+          breakpoint="wide"
+          tileName="support1"
+        />
+      </div>
+      <div />
+      <div>
+        <TileG
+          breakpoint="wide"
+          tileName="support2"
+        />
+      </div>
     </div>
   </div>
 </div>

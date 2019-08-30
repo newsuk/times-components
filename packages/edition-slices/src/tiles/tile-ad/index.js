@@ -1,50 +1,33 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { editionBreakpoints } from "@times-components/styleguide";
-import Image from "@times-components/image";
 import {
-  getTileImage,
   TileLink,
   TileSummary,
-  withTileTracking
+  withTileTracking,
+  getTileSummary
 } from "../shared";
-import styleFactory from "./styles";
+import styles from "./styles";
+import WithoutWhiteSpace from "../shared/without-white-space";
 
-const TileAD = ({ onPress, tile, breakpoint }) => {
-  const styles = styleFactory(breakpoint);
-  const crop = getTileImage(tile, "crop32");
-
-  return (
-    <TileLink onPress={onPress} style={styles.container} tile={tile}>
-      {breakpoint !== editionBreakpoints.medium && (
-        <Image
-          aspectRatio={3 / 2}
-          relativeWidth={crop.relativeWidth}
-          relativeHeight={crop.relativeHeight}
-          relativeHorizontalOffset={crop.relativeHorizontalOffset}
-          relativeVerticalOffset={crop.relativeVerticalOffset}
-          style={styles.imageContainer}
-          uri={crop.url}
-          fill
+const TileAD = ({ onPress, tile }) => (
+  <TileLink onPress={onPress} style={styles.container} tile={tile}>
+    <WithoutWhiteSpace
+      style={styles.summaryContainer}
+      render={whiteSpaceHeight => (
+        <TileSummary
+          headlineStyle={styles.headline}
+          summary={getTileSummary(tile, 125)}
+          tile={tile}
+          whiteSpaceHeight={whiteSpaceHeight}
         />
       )}
-      <TileSummary
-        headlineStyle={styles.headline}
-        style={styles.summaryContainer}
-        tile={tile}
-      />
-    </TileLink>
-  );
-};
+    />
+  </TileLink>
+);
 
 TileAD.propTypes = {
-  breakpoint: PropTypes.string,
   onPress: PropTypes.func.isRequired,
   tile: PropTypes.shape({}).isRequired
-};
-
-TileAD.defaultProps = {
-  breakpoint: editionBreakpoints.small
 };
 
 export default withTileTracking(TileAD);
