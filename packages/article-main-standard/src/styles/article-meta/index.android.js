@@ -4,7 +4,8 @@ import sharedStyles from "./shared";
 const styles = StyleSheet.create({
   ...sharedStyles,
   articleMetaElement: {
-    ...sharedStyles.articleMetaElement
+    ...sharedStyles.articleMetaElement,
+    paddingTop: 0
   },
   byline: {
     ...sharedStyles.byline,
@@ -12,7 +13,8 @@ const styles = StyleSheet.create({
   },
   datePublication: {
     ...sharedStyles.datePublication,
-    lineHeight: 21
+    lineHeight: 21,
+    marginTop: 0
   }
 });
 

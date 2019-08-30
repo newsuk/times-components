@@ -101,6 +101,7 @@ exports[`full article with style on mobile 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
               "lineHeight": 21,
+              "marginTop": 0,
             }
           }
         >
@@ -110,7 +111,7 @@ exports[`full article with style on mobile 1`] = `
       <View
         style={
           Object {
-            "paddingTop": 10,
+            "paddingTop": 0,
           }
         }
       >
@@ -121,6 +122,7 @@ exports[`full article with style on mobile 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
               "lineHeight": 21,
+              "marginTop": 0,
             }
           }
         >
@@ -233,6 +235,7 @@ exports[`full article with style on tablet 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
               "lineHeight": 21,
+              "marginTop": 0,
             }
           }
         >
@@ -242,7 +245,7 @@ exports[`full article with style on tablet 1`] = `
       <View
         style={
           Object {
-            "paddingTop": 10,
+            "paddingTop": 0,
           }
         }
       >
@@ -253,6 +256,7 @@ exports[`full article with style on tablet 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
               "lineHeight": 21,
+              "marginTop": 0,
             }
           }
         >

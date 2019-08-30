@@ -18,7 +18,7 @@ exports[`1. paragraph with a drop cap in culture magazine 1`] = `
           "color": "#333333",
           "fontFamily": "TimesDigitalW04",
           "fontSize": 17,
-          "lineHeight": 30,
+          "lineHeight": 28,
           "marginBottom": 20,
         }
       }
@@ -49,7 +49,7 @@ exports[`2. paragraph with a drop cap in style magazine 1`] = `
           "color": "#333333",
           "fontFamily": "TimesDigitalW04",
           "fontSize": 17,
-          "lineHeight": 30,
+          "lineHeight": 28,
           "marginBottom": 20,
         }
       }
@@ -80,7 +80,7 @@ exports[`3. paragraph with a drop cap in the sunday times magazine 1`] = `
           "color": "#333333",
           "fontFamily": "TimesDigitalW04",
           "fontSize": 17,
-          "lineHeight": 30,
+          "lineHeight": 28,
           "marginBottom": 20,
         }
       }

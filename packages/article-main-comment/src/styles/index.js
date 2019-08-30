@@ -24,7 +24,11 @@ const nativeStyles = {
   },
   metaContainer: {
     ...sharedStyles.metaContainer,
-    marginTop: spacing(4)
+    marginTop: spacing(1)
+  },
+  header: {
+    ...sharedStyles.header,
+    marginBottom: spacing(0)
   }
 };
 
