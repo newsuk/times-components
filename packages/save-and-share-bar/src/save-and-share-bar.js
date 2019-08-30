@@ -22,13 +22,6 @@ class SaveAndShareBar extends Component {
   constructor(props) {
     super(props);
     this.copyToClipboard = this.copyToClipboard.bind(this);
-    this.onSaveButtonPress = this.onSaveButtonPress.bind(this);
-  }
-
-  /* eslint-disable class-methods-use-this */
-  onSaveButtonPress(callback, event) {
-    event.preventDefault();
-    callback();
   }
 
   copyToClipboard() {
@@ -115,7 +108,6 @@ class SaveAndShareBar extends Component {
                 hoverColor={styles.svgIcon.hoverFillColour}
                 articleId={articleId}
                 height={styles.svgIcon.star.height}
-                onSaveButtonPress={this.onSaveButtonPress}
               />
             </View>
           </UserState>
