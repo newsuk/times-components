@@ -53,9 +53,10 @@ function onUnsaveMutationUpdate(cache, { data }) {
   updateCache(cache, { type: "remove", ids: data.unsaveBookmarks });
 }
 
-const hasViewerBookmarkedArticle = (viewer, articleId) => get(viewer, "bookmarks.bookmarks", []).some(
-  bookmark => bookmark.id === articleId
-);
+const hasViewerBookmarkedArticle = (viewer, articleId) =>
+  get(viewer, "bookmarks.bookmarks", []).some(
+    bookmark => bookmark.id === articleId
+  );
 
 function SaveAPI({ articleId, children }) {
   return (
@@ -68,7 +69,10 @@ function SaveAPI({ articleId, children }) {
               update={onUnsaveMutationUpdate}
             >
               {(unsave, { loading: unsaveMutationLoading }) => {
-                const savedStatus = hasViewerBookmarkedArticle(viewer, articleId);
+                const savedStatus = hasViewerBookmarkedArticle(
+                  viewer,
+                  articleId
+                );
 
                 return children({
                   savedStatus,
