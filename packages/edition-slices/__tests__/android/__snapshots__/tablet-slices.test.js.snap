@@ -84,6 +84,7 @@ exports[`3. lead one and one - medium 1`] = `
     <View />
     <View>
       <TileAA
+        breakpoint="medium"
         tileName="support"
       />
     </View>
@@ -118,12 +119,12 @@ exports[`5. lead two no pic and two - medium 1`] = `
     <View>
       <TileE
         breakpoint="medium"
-        tileName="support2"
+        tileName="support1"
       />
       <View />
       <TileD
         breakpoint="medium"
-        tileName="support1"
+        tileName="support2"
       />
     </View>
   </View>
@@ -287,6 +288,7 @@ exports[`10. secondary one and columnist - medium 1`] = `
       <TileB
         breakpoint="medium"
         tileName="secondary"
+        withMoreTeaser={true}
       />
     </View>
   </View>
@@ -341,22 +343,18 @@ exports[`12. lead one and four slice - medium 1`] = `
     <View />
     <View>
       <TileAD
-        breakpoint="medium"
         tileName="support1"
       />
       <View />
       <TileAD
-        breakpoint="medium"
         tileName="support2"
       />
       <View />
       <TileAD
-        breakpoint="medium"
         tileName="support3"
       />
       <View />
       <TileAD
-        breakpoint="medium"
         tileName="support4"
       />
     </View>
@@ -531,37 +529,41 @@ exports[`17. daily universal register - wide 1`] = `
     <Text>
       Daily Universal Register
     </Text>
-    <TileS
-      breakpoint="wide"
-    />
-    <View />
-    <TileS
-      breakpoint="wide"
-    />
-    <View />
-    <Image
-      resizeMode="contain"
-      source={
-        Object {
-          "testUri": "../../../packages/edition-slices/assets/leaves.png",
-        }
-      }
-    />
-    <TileS
-      breakpoint="wide"
-    />
-    <View />
-    <Image
-      resizeMode="contain"
-      source={
-        Object {
-          "testUri": "../../../packages/edition-slices/assets/cake.png",
-        }
-      }
-    />
-    <TileS
-      breakpoint="wide"
-    />
+    <View>
+      <View>
+        <TileS
+          breakpoint="wide"
+        />
+        <View />
+        <TileS
+          breakpoint="wide"
+          logo={
+            <Logo
+              imageUri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
+              ratio={1}
+              type="nature notes"
+            />
+          }
+        />
+      </View>
+      <View />
+      <View>
+        <TileS
+          breakpoint="wide"
+        />
+        <View />
+        <TileS
+          breakpoint="wide"
+          logo={
+            <Logo
+              imageUri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
+              ratio={1}
+              type="birthdays"
+            />
+          }
+        />
+      </View>
+    </View>
   </View>
 </View>
 `;
@@ -577,7 +579,8 @@ exports[`18. lead one and one - wide 1`] = `
     </View>
     <View />
     <View>
-      <TileC
+      <TileAA
+        breakpoint="wide"
         tileName="support"
       />
     </View>
@@ -608,13 +611,14 @@ exports[`20. lead two no pic and two - wide 1`] = `
     </View>
     <View />
     <View>
-      <TileAL
+      <TileE
+        breakpoint="wide"
         tileName="support1"
       />
     </View>
     <View />
     <View>
-      <TileZ
+      <TileAL
         tileName="support2"
       />
     </View>
@@ -642,21 +646,21 @@ exports[`21. leaders slice - wide 1`] = `
     </View>
     <View>
       <View>
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader2"
         />
       </View>
       <View />
       <View>
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader1"
         />
       </View>
       <View />
       <View>
-        <TileAG
+        <TileM
           breakpoint="wide"
           tileName="leader3"
         />
@@ -737,25 +741,41 @@ exports[`24. secondary four - wide 1`] = `
 <View>
   <View>
     <View>
-      <TileC
-        tileName="secondary1"
-      />
+      <View>
+        <TileAR
+          tileName="secondary1"
+        />
+      </View>
+      <View />
+      <View>
+        <TileAR
+          tileName="secondary2"
+        />
+      </View>
     </View>
     <View />
     <View>
-      <TileC
-        tileName="secondary2"
-      />
-    </View>
-    <View />
-    <View>
-      <TileC
+      <TileB
+        additionalHeadlineStyles={
+          Object {
+            "fontSize": 20,
+            "lineHeight": 20,
+            "marginBottom": 5,
+          }
+        }
+        breakpoint="wide"
         tileName="secondary3"
       />
-    </View>
-    <View />
-    <View>
-      <TileC
+      <View />
+      <TileB
+        additionalHeadlineStyles={
+          Object {
+            "fontSize": 20,
+            "lineHeight": 20,
+            "marginBottom": 5,
+          }
+        }
+        breakpoint="wide"
         tileName="secondary4"
       />
     </View>
@@ -777,6 +797,7 @@ exports[`25. secondary one and columnist - wide 1`] = `
       <TileB
         breakpoint="wide"
         tileName="secondary"
+        withMoreTeaser={true}
       />
     </View>
   </View>
@@ -825,22 +846,18 @@ exports[`27. lead one and four slice - wide 1`] = `
     <View />
     <View>
       <TileAD
-        breakpoint="wide"
         tileName="support1"
       />
       <View />
       <TileAD
-        breakpoint="wide"
         tileName="support2"
       />
       <View />
       <TileAD
-        breakpoint="wide"
         tileName="support3"
       />
       <View />
       <TileAD
-        breakpoint="wide"
         tileName="support4"
       />
     </View>
@@ -880,27 +897,33 @@ exports[`29. secondary two no pic and two - wide 1`] = `
 <View>
   <View>
     <View>
-      <TileAE
-        tileName="secondary1"
-      />
+      <View>
+        <TileAE
+          tileName="secondary1"
+        />
+      </View>
+      <View />
+      <View>
+        <TileAE
+          tileName="secondary2"
+        />
+      </View>
     </View>
     <View />
     <View>
-      <TileAP
-        tileName="support1"
-      />
-    </View>
-    <View />
-    <View>
-      <TileAE
-        tileName="secondary2"
-      />
-    </View>
-    <View />
-    <View>
-      <TileAP
-        tileName="support2"
-      />
+      <View>
+        <TileG
+          breakpoint="wide"
+          tileName="support1"
+        />
+      </View>
+      <View />
+      <View>
+        <TileG
+          breakpoint="wide"
+          tileName="support2"
+        />
+      </View>
     </View>
   </View>
 </View>
@@ -1014,54 +1037,37 @@ exports[`32. daily universal register - huge 1`] = `
       </Text>
       <View>
         <View>
+          <TileS
+            breakpoint="huge"
+          />
           <View />
-          <View>
-            <TileS
-              breakpoint="huge"
-            />
-          </View>
-        </View>
-        <View>
-          <View />
-          <View>
-            <TileS
-              breakpoint="huge"
-            />
-          </View>
-        </View>
-      </View>
-      <View>
-        <View>
-          <View />
-          <Image
-            resizeMode="contain"
-            source={
-              Object {
-                "testUri": "../../../packages/edition-slices/assets/leaves.png",
-              }
+          <TileS
+            breakpoint="huge"
+            logo={
+              <Logo
+                imageUri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
+                ratio={1}
+                type="nature notes"
+              />
             }
           />
-          <View>
-            <TileS
-              breakpoint="huge"
-            />
-          </View>
         </View>
+        <View />
         <View>
+          <TileS
+            breakpoint="huge"
+          />
           <View />
-          <Image
-            resizeMode="contain"
-            source={
-              Object {
-                "testUri": "../../../packages/edition-slices/assets/cake.png",
-              }
+          <TileS
+            breakpoint="huge"
+            logo={
+              <Logo
+                imageUri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
+                ratio={1}
+                type="birthdays"
+              />
             }
           />
-          <View>
-            <TileS
-              breakpoint="huge"
-            />
-          </View>
         </View>
       </View>
     </View>
@@ -1081,7 +1087,8 @@ exports[`33. lead one and one - huge 1`] = `
       </View>
       <View />
       <View>
-        <TileAQ
+        <TileAA
+          breakpoint="huge"
           tileName="support"
         />
       </View>
@@ -1116,13 +1123,14 @@ exports[`35. lead two no pic and two - huge 1`] = `
       </View>
       <View />
       <View>
-        <TileAL
+        <TileE
+          breakpoint="huge"
           tileName="support1"
         />
       </View>
       <View />
       <View>
-        <TileZ
+        <TileAL
           tileName="support2"
         />
       </View>
@@ -1152,21 +1160,21 @@ exports[`36. leaders slice - huge 1`] = `
       </View>
       <View>
         <View>
-          <TileAG
+          <TileM
             breakpoint="huge"
             tileName="leader2"
           />
         </View>
         <View />
         <View>
-          <TileAG
+          <TileM
             breakpoint="huge"
             tileName="leader1"
           />
         </View>
         <View />
         <View>
-          <TileAG
+          <TileM
             breakpoint="huge"
             tileName="leader3"
           />
@@ -1253,25 +1261,27 @@ exports[`39. secondary four - huge 1`] = `
   <View>
     <View>
       <View>
-        <TileC
-          tileName="secondary1"
-        />
+        <View>
+          <TileAR
+            tileName="secondary1"
+          />
+        </View>
+        <View />
+        <View>
+          <TileAR
+            tileName="secondary2"
+          />
+        </View>
       </View>
       <View />
       <View>
-        <TileC
-          tileName="secondary2"
-        />
-      </View>
-      <View />
-      <View>
-        <TileC
+        <TileB
+          breakpoint="huge"
           tileName="secondary3"
         />
-      </View>
-      <View />
-      <View>
-        <TileC
+        <View />
+        <TileB
+          breakpoint="huge"
           tileName="secondary4"
         />
       </View>
@@ -1295,6 +1305,7 @@ exports[`40. secondary one and columnist - huge 1`] = `
         <TileB
           breakpoint="huge"
           tileName="secondary"
+          withMoreTeaser={true}
         />
       </View>
     </View>
@@ -1347,22 +1358,18 @@ exports[`42. lead one and four slice - huge 1`] = `
       <View />
       <View>
         <TileAD
-          breakpoint="huge"
           tileName="support1"
         />
         <View />
         <TileAD
-          breakpoint="huge"
           tileName="support2"
         />
         <View />
         <TileAD
-          breakpoint="huge"
           tileName="support3"
         />
         <View />
         <TileAD
-          breakpoint="huge"
           tileName="support4"
         />
       </View>
@@ -1406,27 +1413,33 @@ exports[`44. secondary two no pic and two - huge 1`] = `
   <View>
     <View>
       <View>
-        <TileAE
-          tileName="secondary1"
-        />
+        <View>
+          <TileAE
+            tileName="secondary1"
+          />
+        </View>
+        <View />
+        <View>
+          <TileAE
+            tileName="secondary2"
+          />
+        </View>
       </View>
       <View />
       <View>
-        <TileAP
-          tileName="support1"
-        />
-      </View>
-      <View />
-      <View>
-        <TileAE
-          tileName="secondary2"
-        />
-      </View>
-      <View />
-      <View>
-        <TileAP
-          tileName="support2"
-        />
+        <View>
+          <TileG
+            breakpoint="huge"
+            tileName="support1"
+          />
+        </View>
+        <View />
+        <View>
+          <TileG
+            breakpoint="huge"
+            tileName="support2"
+          />
+        </View>
       </View>
     </View>
   </View>
