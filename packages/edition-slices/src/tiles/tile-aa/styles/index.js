@@ -3,6 +3,7 @@ import {
   spacing,
   editionBreakpoints
 } from "@times-components/styleguide";
+
 const mediumBreakpointStyles = {
   container: {
     flex: 1,
