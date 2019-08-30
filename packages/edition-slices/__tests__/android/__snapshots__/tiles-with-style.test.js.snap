@@ -2036,7 +2036,6 @@ exports[`39. tile ah 1`] = `
     style={
       Object {
         "alignItems": "center",
-        "flex": 1,
         "paddingTop": 5,
       }
     }
