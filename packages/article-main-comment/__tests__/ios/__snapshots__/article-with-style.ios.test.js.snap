@@ -5,7 +5,7 @@ exports[`phone full article with style 1`] = `
   <View
     style={
       Object {
-        "marginBottom": 15,
+        "marginBottom": 0,
         "paddingBottom": 20,
         "paddingTop": 35,
       }
@@ -87,7 +87,7 @@ exports[`phone full article with style 1`] = `
             "borderBottomWidth": 1,
             "borderTopColor": "#DBDBDB",
             "borderTopWidth": 1,
-            "marginTop": 20,
+            "marginTop": 5,
             "paddingVertical": 10,
             "width": "100%",
           }
@@ -136,7 +136,7 @@ exports[`tablet full article with style 1`] = `
   <View
     style={
       Object {
-        "marginBottom": 15,
+        "marginBottom": 0,
         "paddingBottom": 20,
         "paddingTop": 35,
       }
@@ -218,7 +218,7 @@ exports[`tablet full article with style 1`] = `
             "borderBottomWidth": 1,
             "borderTopColor": "#DBDBDB",
             "borderTopWidth": 1,
-            "marginTop": 20,
+            "marginTop": 5,
             "paddingVertical": 10,
             "width": "100%",
           }

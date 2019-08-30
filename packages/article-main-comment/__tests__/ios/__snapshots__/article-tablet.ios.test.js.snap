@@ -6,7 +6,7 @@ exports[`1. article main comment - tablet 1`] = `
     style={
       Object {
         "alignSelf": "center",
-        "marginBottom": 15,
+        "marginBottom": 0,
         "paddingBottom": 20,
         "paddingTop": 35,
         "width": 660,
@@ -93,7 +93,7 @@ exports[`1. article main comment - tablet 1`] = `
             "borderTopWidth": 1,
             "flexDirection": "row",
             "justifyContent": "center",
-            "marginTop": 20,
+            "marginTop": 5,
             "paddingVertical": 10,
             "width": "100%",
           }

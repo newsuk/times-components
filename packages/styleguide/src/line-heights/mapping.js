@@ -42,6 +42,10 @@ const mapping = ({ scale }) => {
     default:
       return {
         ...mappingBase,
+        body: {
+          ...mappingBase.body,
+          bodyMobile: 28
+        },
         headline: {
           ...mappingBase.headline,
           headline: 36

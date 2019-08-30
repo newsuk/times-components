@@ -94,7 +94,7 @@ export default ({
       const cap = getDropCap(children, fonts[dropCapFont], height, [
         new Body(value)
       ]);
-      const capGap = spacing(2);
+      const capGap = cap[0].measuredWidth * 0.3;
       const capWidth = (cap[0].measuredWidth + capGap) * fontScale;
 
       return {
