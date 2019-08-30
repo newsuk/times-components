@@ -57,9 +57,7 @@ const headlineCasePicker = (section = "default", template = "mainstandard") =>
     ? "uppercase"
     : null;
 
-const imageCaptionAlignment = {
-  indepth: { primary: "center" }
-};
+const imageCaptionAlignment = {};
 
 export default (section, template) => ({
   dropCapFont: magazineFontPicker("dropCap", section, template),
