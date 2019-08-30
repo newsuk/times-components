@@ -17,25 +17,23 @@ const IconContainer = styled(HoverIcon)`
   justify-content: center;
 `;
 
-/* eslint-disable jsx-a11y/anchor-is-valid */
-class SaveStar extends Component {
-  constructor(props) {
-    super(props);
-    this.onSaveButtonPress = this.onSaveButtonPress.bind(this);
-  }
-
-  onSaveButtonPress(e) {
-    const { onSave, articleId, savedStatus } = this.props;
-
+function SaveStar({
+  onSave,
+  articleId,
+  savedStatus,
+  colour,
+  hoverColour,
+  isLoading
+}) {
+  function onSaveButtonPress(e) {
     e.preventDefault();
     onSave({ articleId, savedStatus });
   }
 
-  renderSaveButton() {
-    const { colour, hoverColour, savedStatus } = this.props;
+  function renderSaveButton() {
     const { fillColour, strokeColour } = getStyles({ saveStatus: savedStatus });
     return (
-      <Link onPress={this.onSaveButtonPress} responsiveLinkStyles={styles.link}>
+      <Link onPress={onSaveButtonPress} responsiveLinkStyles={styles.link}>
         <IconContainer colour={colour} hoverColour={hoverColour}>
           <IconStar
             fillColour={fillColour}
@@ -50,25 +48,20 @@ class SaveStar extends Component {
     );
   }
 
-  renderActivity() {
-    const { isLoading } = this.props;
-
+  function renderActivity() {
     if (isLoading) {
       return <ActivityIndicator size="small" style={styles.activityLoader} />;
     }
 
-    return this.renderSaveButton();
+    return renderSaveButton();
   }
 
-  render() {
-    const { savedStatus } = this.props;
-    return (
-      <Fragment>
-        <Text style={styles.label}>{savedStatus ? "Saved" : "Save"}</Text>
-        {this.renderActivity()}
-      </Fragment>
-    );
-  }
+  return (
+    <Fragment>
+      <Text style={styles.label}>{savedStatus ? "Saved" : "Save"}</Text>
+      {renderActivity()}
+    </Fragment>
+  );
 }
 
 SaveStar.propTypes = {
