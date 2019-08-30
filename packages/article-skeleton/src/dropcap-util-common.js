@@ -73,32 +73,36 @@ const findFirstTextNode = children => {
 };
 
 const insertDropcapIntoAST = (children, template, isDropcapDisabled) => {
-  if (
-    template &&
-    templateWithDropCaps.includes(template) &&
-    !isDropcapDisabled &&
-    children.length > 0 &&
-    children[0].name === "paragraph" &&
-    children[0].children.length > 0
-  ) {
-    const withCap = splitNode(children[0]);
-    const withoutCap = splitNode(children[0]);
+  try {
+    if (
+      template &&
+      templateWithDropCaps.includes(template) &&
+      !isDropcapDisabled &&
+      children.length > 0 &&
+      children[0].name === "paragraph" &&
+      children[0].children.length > 0
+    ) {
+      const withCap = splitNode(children[0]);
+      const withoutCap = splitNode(children[0]);
 
-    const newCapChildren = findFirstTextNode(withCap.children);
-    newCapChildren.splice(1);
+      const newCapChildren = findFirstTextNode(withCap.children);
+      newCapChildren.splice(1);
 
-    const newChildren = findFirstTextNode(withoutCap.children);
-    newChildren.splice(0, 1);
+      const newChildren = findFirstTextNode(withoutCap.children);
+      newChildren.splice(0, 1);
 
-    return [
-      {
-        name: "dropCap",
-        attributes: {},
-        children: [withCap]
-      },
-      withoutCap,
-      ...children.slice(1)
-    ];
+      return [
+        {
+          name: "dropCap",
+          attributes: {},
+          children: [withCap]
+        },
+        withoutCap,
+        ...children.slice(1)
+      ];
+    }
+  } catch (error) {
+    return children;
   }
   return children;
 };
