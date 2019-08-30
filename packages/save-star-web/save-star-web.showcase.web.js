@@ -21,11 +21,14 @@ const styles = {
 function BookmarksMockProvider({ children, articleId }) {
   const [mocks, setMocks] = React.useState([]);
 
-  React.useEffect(() => {
-    schemaToMocks(bookmarks({ id: articleId })).then(bookmarkMocks =>
-      setMocks(bookmarkMocks)
-    );
-  }, [articleId]);
+  React.useEffect(
+    () => {
+      schemaToMocks(bookmarks({ id: articleId })).then(bookmarkMocks =>
+        setMocks(bookmarkMocks)
+      );
+    },
+    [articleId]
+  );
 
   if (!mocks.length) {
     return null;
