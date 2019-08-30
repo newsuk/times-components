@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.55](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@1.3.54...@times-components/article-paragraph@1.3.55) (2019-08-30)
+
+
+### Bug Fixes
+
+* make leading tighter on body content, tighten meta box leading (native) ([#2245](https://github.com/newsuk/times-components/issues/2245)) ([97872a8](https://github.com/newsuk/times-components/commit/97872a8))
+
+
+
+
+
 ## [1.3.54](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@1.3.53...@times-components/article-paragraph@1.3.54) (2019-08-29)
 
 **Note:** Version bump only for package @times-components/article-paragraph
