@@ -19,7 +19,7 @@ const makeClient = options => {
 
   const networkInterfaceOptions = {
     fetch,
-    headers: options.headers || {},
+    headers: options.headers ? { ...options.headers } : {},
     uri: options.uri
   };
 
@@ -27,6 +27,13 @@ const makeClient = options => {
     networkInterfaceOptions.headers["content-type"] =
       "application/x-www-form-urlencoded";
     networkInterfaceOptions.useGETForQueries = true;
+  }
+
+  if (typeof window !== "undefined" && window.nuk) {
+    const acsTnlCookie = window.nuk.getCookieValue("acs_tnl");
+    const sacsTnlCookie = window.nuk.getCookieValue("sacs_tnl");
+
+    networkInterfaceOptions.headers.Authorization = `Cookie acs_tnl=${acsTnlCookie};sacs_tnl=${sacsTnlCookie}`;
   }
 
   return new ApolloClient({

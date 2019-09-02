@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import TestRenderer from "react-test-renderer";
 import PropTypes from "prop-types";
 import Link from "@times-components/link";
-import mockSaveApi from "../mock-save-api";
-import SaveStarWeb from "../src/save-star-web";
+import SaveStarWebWithTracking from "../src/save-star-with-tracking";
 
 class WithTrackingContext extends Component {
   getChildContext() {
@@ -16,7 +15,7 @@ class WithTrackingContext extends Component {
   }
 
   render() {
-    return <SaveStarWeb {...this.props} />;
+    return <SaveStarWebWithTracking {...this.props} />;
   }
 }
 
@@ -26,39 +25,25 @@ WithTrackingContext.childContextTypes = {
   })
 };
 
-WithTrackingContext.propTypes = {
-  analyticsStream: PropTypes.func.isRequired,
-  articleId: PropTypes.string.isRequired,
-  saveApi: PropTypes.shape({
-    bookmark: PropTypes.func.isRequired,
-    getBookmarks: PropTypes.func.isRequired,
-    unBookmark: PropTypes.func.isRequired
-  }).isRequired,
-  onSaveButtonPress: PropTypes.func.isRequired
-};
-
 export default () => {
   describe("save star tracking events", () => {
-    const articleId = "id-123";
-    const articleHeadline = "Article-headline";
     const stream = jest.fn();
-    const onSaveButtonPress = jest.fn();
 
     const testInstance = TestRenderer.create(
       <WithTrackingContext
         analyticsStream={stream}
-        articleId={articleId}
-        articleHeadline={articleHeadline}
-        saveApi={mockSaveApi}
-        onSaveButtonPress={onSaveButtonPress}
+        articleId="id-123"
+        onSave={() => {}}
+        savedStatus={false}
+        isLoading={false}
       />
     );
 
     it("when press save star", async () => {
       const [saveStarLink] = testInstance.root.findAllByType(Link);
-      await saveStarLink.props.onPress();
+      await saveStarLink.props.onPress({ preventDefault() {} });
 
-      const [[call]] = stream.mock.calls;
+      const call = stream.mock.calls[0][0];
       expect(call).toMatchSnapshot();
     });
   });

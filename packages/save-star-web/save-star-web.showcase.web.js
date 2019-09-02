@@ -1,8 +1,9 @@
 import React from "react";
 import { View } from "react-native";
 import { spacing, colours } from "@times-components/styleguide";
+import { MockBookmarksProvider } from "@times-components/provider-test-tools";
+
 import SaveStarWeb from "./src/save-star-web";
-import mockSaveApi from "./mock-save-api-showcase";
 
 const styles = {
   star: {
@@ -16,14 +17,18 @@ export default {
   children: [
     {
       component: () => (
-        <View style={styles.star}>
-          <SaveStarWeb
-            colour={colours.functional.secondary}
-            hoverColour={colours.functional.brandColour}
-            articleId="5504b5a8-b1c0-11e8-a553-a0ee9be48bc6"
-            saveApi={mockSaveApi}
-          />
-        </View>
+        <MockBookmarksProvider
+          articleId="5504b5a8-b1c0-11e8-a553-a0ee9be48bc6"
+          delay={1000}
+        >
+          <View style={styles.star}>
+            <SaveStarWeb
+              colour={colours.functional.secondary}
+              hoverColour={colours.functional.brandColour}
+              articleId="5504b5a8-b1c0-11e8-a553-a0ee9be48bc6"
+            />
+          </View>
+        </MockBookmarksProvider>
       ),
       name: "SaveStarWeb",
       type: "story"

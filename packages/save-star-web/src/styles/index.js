@@ -18,7 +18,7 @@ const styles = {
     }),
     color: colours.functional.secondary,
     marginRight: spacing(2),
-    transform: "translateY(9%)",
+    transform: [{ translateY: "9%" }],
     textAlign: "right"
   },
   link: {

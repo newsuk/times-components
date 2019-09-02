@@ -1,8 +1,10 @@
 import React from "react";
-import saveApi from "@times-components/save-star-web/mock-save-api-showcase";
 import { scales } from "@times-components/styleguide";
 import { MessageManager, MessageContext } from "@times-components/message-bar";
+import { MockBookmarksProvider } from "@times-components/provider-test-tools";
 import SaveAndShareBar from "./src/save-and-share-bar";
+
+const articleId = "5504b5a8-b1c0-11e8-a553-a0ee9be48bc6";
 
 const mockGetTokenisedArticleUrl = id =>
   new Promise(resolve =>
@@ -23,22 +25,23 @@ export default {
   children: [
     {
       component: () => (
-        <MessageManager animate delay={3000} scale={scales.medium}>
-          <MessageContext.Consumer>
-            {({ showMessage }) => (
-              <SaveAndShareBar
-                articleId="9bd029d2-49a1-11e9-b472-f58a50a13bbb"
-                articleHeadline="test-headline"
-                articleUrl="https://www.thetimes.co.uk/"
-                onCopyLink={() => showMessage("Article link copied")}
-                getTokenisedShareUrl={mockGetTokenisedArticleUrl}
-                saveApi={saveApi}
-                savingEnabled
-                sharingEnabled
-              />
-            )}
-          </MessageContext.Consumer>
-        </MessageManager>
+        <MockBookmarksProvider delay={1000} articleId={articleId}>
+          <MessageManager animate delay={3000} scale={scales.medium}>
+            <MessageContext.Consumer>
+              {({ showMessage }) => (
+                <SaveAndShareBar
+                  articleId={articleId}
+                  articleHeadline="test-headline"
+                  articleUrl="https://www.thetimes.co.uk/"
+                  onCopyLink={() => showMessage("Article link copied")}
+                  getTokenisedShareUrl={mockGetTokenisedArticleUrl}
+                  savingEnabled
+                  sharingEnabled
+                />
+              )}
+            </MessageContext.Consumer>
+          </MessageManager>
+        </MockBookmarksProvider>
       ),
       name: "Save and Share bar",
       type: "story"

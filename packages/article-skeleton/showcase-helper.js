@@ -3,11 +3,12 @@ import React from "react";
 import { Text, View } from "react-native";
 import pick from "lodash.pick";
 import { sections } from "@times-components/storybook";
-import saveApi from "@times-components/save-star-web/mock-save-api-showcase";
 import articleAdConfig from "@times-components/ad/fixtures/article-ad-config.json";
 import { ContextProviderWithDefaults } from "@times-components/context";
 import { colours, scales } from "@times-components/styleguide";
 import storybookReporter from "@times-components/tealium-utils";
+import { MockBookmarksProvider } from "@times-components/provider-test-tools";
+
 import fullArticleFixture from "./fixtures/full-article";
 import ArticleSkeleton from "./src/article-skeleton";
 
@@ -60,32 +61,35 @@ const renderArticleSkeleton = ({
   const showHeader = header ? () => <TestHeader /> : () => null;
 
   return (
-    <ContextProviderWithDefaults value={{ theme: { scale, sectionColour } }}>
-      <ArticleSkeleton
-        adConfig={articleAdConfig}
-        analyticsStream={storybookReporter}
-        data={data}
-        Header={showHeader}
-        onAuthorPress={preventDefaultedAction(decorateAction)("onAuthorPress")}
-        onCommentGuidelinesPress={preventDefaultedAction(decorateAction)(
-          "onCommentGuidelinesPress"
-        )}
-        onCommentsPress={preventDefaultedAction(decorateAction)(
-          "onCommentsPress"
-        )}
-        onLinkPress={preventDefaultedAction(decorateAction)("onLinkPress")}
-        onRelatedArticlePress={preventDefaultedAction(decorateAction)(
-          "onRelatedArticlePress"
-        )}
-        onTopicPress={preventDefaultedAction(decorateAction)("onTopicPress")}
-        onTwitterLinkPress={preventDefaultedAction(decorateAction)(
-          "onTwitterLinkPress"
-        )}
-        onVideoPress={preventDefaultedAction(decorateAction)("onVideoPress")}
-        onViewableItemsChanged={() => null}
-        saveApi={saveApi}
-      />
-    </ContextProviderWithDefaults>
+    <MockBookmarksProvider delay={1000} articleId={data.id}>
+      <ContextProviderWithDefaults value={{ theme: { scale, sectionColour } }}>
+        <ArticleSkeleton
+          adConfig={articleAdConfig}
+          analyticsStream={storybookReporter}
+          data={data}
+          Header={showHeader}
+          onAuthorPress={preventDefaultedAction(decorateAction)(
+            "onAuthorPress"
+          )}
+          onCommentGuidelinesPress={preventDefaultedAction(decorateAction)(
+            "onCommentGuidelinesPress"
+          )}
+          onCommentsPress={preventDefaultedAction(decorateAction)(
+            "onCommentsPress"
+          )}
+          onLinkPress={preventDefaultedAction(decorateAction)("onLinkPress")}
+          onRelatedArticlePress={preventDefaultedAction(decorateAction)(
+            "onRelatedArticlePress"
+          )}
+          onTopicPress={preventDefaultedAction(decorateAction)("onTopicPress")}
+          onTwitterLinkPress={preventDefaultedAction(decorateAction)(
+            "onTwitterLinkPress"
+          )}
+          onVideoPress={preventDefaultedAction(decorateAction)("onVideoPress")}
+          onViewableItemsChanged={() => null}
+        />
+      </ContextProviderWithDefaults>
+    </MockBookmarksProvider>
   );
 };
 

@@ -7,6 +7,7 @@ import ArticleExtrasProvider from "./article-extras";
 import EditionProvider from "./edition";
 import TopicProvider from "./topic";
 import TopicArticlesProvider from "./topic-articles";
+import Bookmarks from "./bookmarks";
 
 export default connect;
 
@@ -19,5 +20,6 @@ export {
   EditionProvider,
   TopicProvider,
   TopicArticlesProvider,
-  QueryProvider
+  QueryProvider,
+  Bookmarks
 };

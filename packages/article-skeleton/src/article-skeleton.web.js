@@ -58,7 +58,6 @@ class ArticleSkeleton extends Component {
       data: article,
       Header,
       receiveChildList,
-      saveApi,
       spotAccountId,
       paidContentClassName,
       faviconUrl
@@ -133,7 +132,6 @@ class ArticleSkeleton extends Component {
                                 }
                                 onSaveToMyArticles={() => {}}
                                 onShareOnEmail={() => {}}
-                                saveApi={saveApi}
                                 savingEnabled={savingEnabled}
                                 sharingEnabled={sharingEnabled}
                               />
@@ -156,7 +154,6 @@ class ArticleSkeleton extends Component {
                         articleId={articleId}
                         articleHeadline={headline}
                         articleUrl={url}
-                        saveApi={saveApi}
                         savingEnabled={savingEnabled}
                         sharingEnabled={sharingEnabled}
                         commentsEnabled={commentsEnabled}

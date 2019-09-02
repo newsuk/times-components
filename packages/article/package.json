@@ -70,7 +70,6 @@
     "@times-components/message-bar": "0.2.34",
     "@times-components/provider": "1.17.37",
     "@times-components/responsive": "0.4.64",
-    "@times-components/save-star-web": "0.3.18",
     "@times-components/styleguide": "3.28.46"
   },
   "peerDependencies": {

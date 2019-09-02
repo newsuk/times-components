@@ -12,7 +12,6 @@ import {
   MockedProvider,
   schemaToMocks
 } from "@times-components/provider-test-tools";
-import saveArticleApi from "@times-components/save-star-web/mock-save-api-showcase";
 import { sections } from "@times-components/storybook";
 import { scales, themeFactory } from "@times-components/styleguide";
 import storybookReporter from "@times-components/tealium-utils";
@@ -210,7 +209,6 @@ const renderArticle = ({
   id,
   inDepthBackgroundColour,
   inDepthTextColour,
-  saveApi = saveArticleApi,
   scale,
   section,
   template,
@@ -273,7 +271,6 @@ const renderArticle = ({
             onVideoPress={preventDefaultedAction(decorateAction)(
               "onVideoPress"
             )}
-            saveApi={saveApi}
             refetch={refetch}
           />
         </ContextProviderWithDefaults>
@@ -354,7 +351,6 @@ const renderArticleConfig = ({
             inDepthTextColour,
             isTeaser,
             isMeteredExpired,
-            saveApi: saveArticleApi,
             scale,
             section,
             template

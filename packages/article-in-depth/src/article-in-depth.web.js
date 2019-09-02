@@ -73,7 +73,6 @@ class ArticlePage extends Component {
       error,
       isLoading,
       receiveChildList,
-      saveApi,
       spotAccountId,
       faviconUrl
     } = this.props;
@@ -89,7 +88,6 @@ class ArticlePage extends Component {
         data={article}
         Header={this.renderHeader}
         receiveChildList={receiveChildList}
-        saveApi={saveApi}
         spotAccountId={spotAccountId}
         faviconUrl={faviconUrl}
       />

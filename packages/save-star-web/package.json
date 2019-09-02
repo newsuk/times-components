@@ -36,10 +36,13 @@
   "dependencies": {
     "@times-components/icons": "2.12.13",
     "@times-components/link": "3.4.42",
+    "@times-components/provider": "1.17.37",
     "@times-components/provider-queries": "2.7.2",
     "@times-components/styleguide": "3.28.46",
     "@times-components/tracking": "2.4.66",
     "@times-components/utils": "4.11.33",
+    "lodash.get": "4.4.2",
+    "react-apollo": "2.5.5",
     "prop-types": "15.7.2",
     "styled-components": "4.2.0"
   },
@@ -48,6 +51,7 @@
     "@times-components/eslint-config-thetimes": "0.8.14",
     "@times-components/jest-configurator": "2.6.4",
     "@times-components/jest-serializer": "3.2.16",
+    "@times-components/provider-test-tools": "1.17.38",
     "@times-components/storybook": "4.0.33",
     "@times-components/test-utils": "2.3.4",
     "@times-components/webpack-configurator": "2.0.25",

@@ -7,9 +7,7 @@ import {
   IconTwitter,
   IconCopyLink
 } from "@times-components/icons";
-import SaveStar, {
-  saveApi as saveArticleApi
-} from "@times-components/save-star-web";
+import SaveStar from "@times-components/save-star-web";
 import UserState from "@times-components/user-state";
 import { SectionContext } from "@times-components/context";
 import getTokenisedArticleUrlApi from "./get-tokenised-article-url-api";
@@ -24,13 +22,6 @@ class SaveAndShareBar extends Component {
   constructor(props) {
     super(props);
     this.copyToClipboard = this.copyToClipboard.bind(this);
-    this.onSaveButtonPress = this.onSaveButtonPress.bind(this);
-  }
-
-  /* eslint-disable class-methods-use-this */
-  onSaveButtonPress(callback, event) {
-    event.preventDefault();
-    callback();
   }
 
   copyToClipboard() {
@@ -46,11 +37,8 @@ class SaveAndShareBar extends Component {
       savingEnabled,
       sharingEnabled,
       onShareOnFB,
-      onShareOnTwitter,
-      saveApi
+      onShareOnTwitter
     } = this.props;
-
-    const api = saveApi && saveApi.bookmark ? saveApi : saveArticleApi;
 
     return (
       <View style={styles.container}>
@@ -119,9 +107,7 @@ class SaveAndShareBar extends Component {
                 colour={styles.svgIcon.save.strokeColour}
                 hoverColor={styles.svgIcon.hoverFillColour}
                 articleId={articleId}
-                saveApi={api}
                 height={styles.svgIcon.star.height}
-                onSaveButtonPress={this.onSaveButtonPress}
               />
             </View>
           </UserState>
@@ -141,11 +127,6 @@ SaveAndShareBar.propTypes = {
   onShareOnFB: PropTypes.func,
   onShareEmail: PropTypes.func,
   onShareOnTwitter: PropTypes.func,
-  saveApi: PropTypes.shape({
-    bookmark: PropTypes.func.isRequired,
-    getBookmarks: PropTypes.func.isRequired,
-    unBookmark: PropTypes.func.isRequired
-  }).isRequired,
   savingEnabled: PropTypes.bool.isRequired,
   sharingEnabled: PropTypes.bool.isRequired
 };
