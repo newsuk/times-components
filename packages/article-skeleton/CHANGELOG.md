@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.13.15](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.13.14...@times-components/article-skeleton@1.13.15) (2019-09-02)
+
+
+### Bug Fixes
+
+* save star sync ([#2247](https://github.com/newsuk/times-components/issues/2247)) ([4935110](https://github.com/newsuk/times-components/commit/4935110))
+
+
+
+
+
 ## [1.13.14](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.13.13...@times-components/article-skeleton@1.13.14) (2019-09-02)
 
 **Note:** Version bump only for package @times-components/article-skeleton

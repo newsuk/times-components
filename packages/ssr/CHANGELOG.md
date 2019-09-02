@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.4.15](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.4.14...@times-components/ssr@2.4.15) (2019-09-02)
+
+
+### Bug Fixes
+
+* save star sync ([#2247](https://github.com/newsuk/times-components/issues/2247)) ([4935110](https://github.com/newsuk/times-components/commit/4935110))
+
+
+
+
+
 ## [2.4.14](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.4.13...@times-components/ssr@2.4.14) (2019-09-02)
 
 **Note:** Version bump only for package @times-components/ssr

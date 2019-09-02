@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.17.39](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.17.38...@times-components/provider-test-tools@1.17.39) (2019-09-02)
+
+
+### Bug Fixes
+
+* save star sync ([#2247](https://github.com/newsuk/times-components/issues/2247)) ([4935110](https://github.com/newsuk/times-components/commit/4935110))
+
+
+
+
+
 ## [1.17.38](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.17.37...@times-components/provider-test-tools@1.17.38) (2019-08-29)
 
 **Note:** Version bump only for package @times-components/provider-test-tools

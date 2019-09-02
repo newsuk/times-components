@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.11.45](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.11.44...@times-components/article-main-standard@3.11.45) (2019-09-02)
+
+
+### Bug Fixes
+
+* save star sync ([#2247](https://github.com/newsuk/times-components/issues/2247)) ([4935110](https://github.com/newsuk/times-components/commit/4935110))
+
+
+
+
+
 ## [3.11.44](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.11.43...@times-components/article-main-standard@3.11.44) (2019-09-02)
 
 **Note:** Version bump only for package @times-components/article-main-standard
