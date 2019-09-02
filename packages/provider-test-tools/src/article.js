@@ -89,6 +89,6 @@ export default ({
       query: articleQuery,
       variables: queryVariables
     },
-    ...bookmarks({ id: queryVariables.id })
+    ...bookmarks({ id: queryVariables.id }, 1000)
   ];
 };

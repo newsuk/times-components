@@ -9,7 +9,7 @@ import {
 import MockedProvider from "./mocked-provider";
 import { schemaToMocks } from "./mock-fixture";
 
-const createBookmarkMocks = ({ id } = {}) => [
+const createBookmarkMocks = ({ id } = {}, delay) => [
   {
     defaults: {
       types: {
@@ -23,7 +23,8 @@ const createBookmarkMocks = ({ id } = {}) => [
       }
     },
     query: getBookmarks,
-    variables: {}
+    variables: {},
+    delay
   },
   {
     query: saveBookmarks,
@@ -35,7 +36,8 @@ const createBookmarkMocks = ({ id } = {}) => [
         saveBookmarks: () => [{ id, __typename: "Bookmark" }]
       }
     },
-    repeatable: true
+    repeatable: true,
+    delay
   },
   {
     query: unsaveBookmarks,
@@ -47,13 +49,10 @@ const createBookmarkMocks = ({ id } = {}) => [
         unsaveBookmarks: () => [id]
       }
     },
-    repeatable: true
+    repeatable: true,
+    delay
   }
 ];
-
-function setDelay(mocks, delay) {
-   return delay ? mocks.map(mock => ({ ...mock, delay })) : mocks;
-}
 
 class MockBookmarksProvider extends Component {
   state = { mocks: [] };
@@ -72,7 +71,7 @@ class MockBookmarksProvider extends Component {
 
   setMocks() {
     const { articleId, delay } = this.props;
-    const mocks = setDelay(createBookmarkMocks({ id: articleId }), delay);
+    const mocks = createBookmarkMocks({ id: articleId }, delay);
 
     return schemaToMocks(mocks).then(bookmarkMocks =>
       this.setState({ mocks: bookmarkMocks })
