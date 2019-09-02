@@ -28,6 +28,11 @@ exports[`1. article list 1`] = `
                       "publication": "TIMES",
                     }
                   }
+                  headline={
+                    <ArticleSummaryHeadline
+                      headline="ShortHeadline 1"
+                    />
+                  }
                   labelProps={
                     Object {
                       "color": "#636C17",
@@ -90,6 +95,11 @@ exports[`1. article list 1`] = `
                       "publication": "SUNDAYTIMES",
                     }
                   }
+                  headline={
+                    <ArticleSummaryHeadline
+                      headline="ShortHeadline 2"
+                    />
+                  }
                   labelProps={
                     Object {
                       "color": "#1D1D1B",
@@ -148,6 +158,11 @@ exports[`2. article list with no images 1`] = `
                       "date": "2017-11-17T00:01:00.000Z",
                       "publication": "TIMES",
                     }
+                  }
+                  headline={
+                    <ArticleSummaryHeadline
+                      headline="ShortHeadline 1"
+                    />
                   }
                   labelProps={
                     Object {
@@ -208,6 +223,11 @@ exports[`3. a retry button when load more fails 1`] = `
                       "publication": "TIMES",
                     }
                   }
+                  headline={
+                    <ArticleSummaryHeadline
+                      headline="ShortHeadline 1"
+                    />
+                  }
                   labelProps={
                     Object {
                       "color": "#636C17",
@@ -263,6 +283,11 @@ exports[`4. no footer with data equalling the count 1`] = `
                       "date": "2017-11-17T00:01:00.000Z",
                       "publication": "TIMES",
                     }
+                  }
+                  headline={
+                    <ArticleSummaryHeadline
+                      headline="ShortHeadline 1"
+                    />
                   }
                   labelProps={
                     Object {
@@ -444,6 +469,11 @@ exports[`6. removes the retry button when successfully pressed 1`] = `
                       "date": "2017-11-17T00:01:00.000Z",
                       "publication": "TIMES",
                     }
+                  }
+                  headline={
+                    <ArticleSummaryHeadline
+                      headline="ShortHeadline 1"
+                    />
                   }
                   labelProps={
                     Object {
