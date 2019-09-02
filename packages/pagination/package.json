@@ -40,7 +40,7 @@
     "@times-components/eslint-config-thetimes": "0.8.14",
     "@times-components/jest-configurator": "2.6.4",
     "@times-components/jest-serializer": "3.2.16",
-    "@times-components/storybook": "4.0.32",
+    "@times-components/storybook": "4.0.33",
     "@times-components/tealium-utils": "0.7.60",
     "@times-components/test-utils": "2.3.4",
     "@times-components/webpack-configurator": "2.0.25",
@@ -69,7 +69,7 @@
   },
   "dependencies": {
     "@times-components/link": "3.4.41",
-    "@times-components/styleguide": "3.28.45",
+    "@times-components/styleguide": "3.28.46",
     "@times-components/svgs": "2.7.22",
     "@times-components/tracking": "2.4.65",
     "prop-types": "15.7.2",
