@@ -8,6 +8,5 @@ export ArticleExtrasProvider from "./article-extras";
 export EditionProvider from "./edition";
 export TopicProvider from "./topic";
 export TopicArticlesProvider from "./topic-articles";
-export Bookmarks from "./bookmarks";
 
 export default from "./connect";
