@@ -36,7 +36,7 @@
   "dependencies": {
     "@times-components/icons": "2.12.13",
     "@times-components/link": "3.4.42",
-    "@times-components/provider": "1.17.36",
+    "@times-components/provider": "1.17.37",
     "@times-components/provider-queries": "2.7.2",
     "@times-components/styleguide": "3.28.46",
     "@times-components/tracking": "2.4.66",
