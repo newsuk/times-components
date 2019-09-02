@@ -5,7 +5,13 @@ import { getRegistrationType, getSharedStatus } from "../data-helper";
 export default Component =>
   withTrackingContext(Component, {
     getAttrs: ({ data, pageSection, navigationMode, referralUrl = "" }) => {
-      const {isMyArticles, isPastSixDays} = navigationMode
+      const {isMyArticles, isPastSixDays} = navigationMode;
+      let editionType = "";
+      if(isMyArticles) {
+        editionType = "my articles"
+      } else {
+        editionType = isPastSixDays ? "past 6 days": "current edition";
+      }
       return {
       articleId: get(data, "id", ""),
       article_topic_tags: get(data, "topics", []).map(topic => topic.name),
@@ -17,7 +23,7 @@ export default Component =>
       headline: get(data, "headline", ""),
       label: get(data, "label", ""),
       pageName: `${get(data, "slug", "")}-${get(data, "shortIdentifier", "")}`,
-      edition_type: isMyArticles? "my articles": (isPastSixDays? "past 6 days": "current edition"),
+      edition_type: editionType,
       publishedTime: get(data, "publishedTime", ""),
       parent_site: get(data, "publicationName", ""),
       referralUrl,
