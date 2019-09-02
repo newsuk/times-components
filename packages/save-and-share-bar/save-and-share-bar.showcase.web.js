@@ -2,8 +2,8 @@
 import React from "react";
 import { scales } from "@times-components/styleguide";
 import { MessageManager, MessageContext } from "@times-components/message-bar";
-import SaveAndShareBar from "./src/save-and-share-bar";
 import { MockBookmarksProvider } from "@times-components/provider-test-tools";
+import SaveAndShareBar from "./src/save-and-share-bar";
 
 const articleId = "5504b5a8-b1c0-11e8-a553-a0ee9be48bc6";
 

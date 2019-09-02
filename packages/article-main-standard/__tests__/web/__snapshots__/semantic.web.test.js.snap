@@ -231,25 +231,12 @@ exports[`1. a full article with an image as the lead asset 1`] = `
         />
       </svg>
     </a>
-    Save
-    <a
-      target={null}
-    >
-      <svg
-        aria-label="[title]"
-        height={18}
-        role="img"
-        viewBox="0 0 18 18"
-        width={18}
-      >
-        <title>
-          Save to My Articles
-        </title>
-        <path
-          d="305a4329b925735e74b6f9f97d84a7d7"
-        />
-      </svg>
-    </a>
+    <SaveStarWeb
+      articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+      colour="#696969"
+      height={18}
+      hoverColor="#1D1D1B"
+    />
     <article
       role="article"
     >
@@ -414,25 +401,12 @@ exports[`1. a full article with an image as the lead asset 1`] = `
           />
         </svg>
       </a>
-      Save
-      <a
-        target={null}
-      >
-        <svg
-          aria-label="[title]"
-          height={18}
-          role="img"
-          viewBox="0 0 18 18"
-          width={18}
-        >
-          <title>
-            Save to My Articles
-          </title>
-          <path
-            d="305a4329b925735e74b6f9f97d84a7d7"
-          />
-        </svg>
-      </a>
+      <SaveStarWeb
+        articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+        colour="#696969"
+        height={18}
+        hoverColor="#1D1D1B"
+      />
     </article>
   </main>
 </article>

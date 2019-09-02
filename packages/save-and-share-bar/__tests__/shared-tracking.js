@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import TestRenderer from "react-test-renderer";
-import mockSaveApi from "@times-components/save-star-web/mock-save-api";
 import PropTypes from "prop-types";
 import mockGetTokenisedArticleUrl from "./mock-get-tokenised-article-url";
 import "./mocks";
@@ -62,7 +61,6 @@ export default () => {
           onCopyLink={onCopyLink}
           onShareOnFB={onShareOnFB}
           onShareOnTwitter={onShareOnTwitter}
-          saveApi={mockSaveApi}
           getTokenisedShareUrl={getTokenisedShareUrl}
           onShareEmail={onShareEmail}
           sharingEnabled
