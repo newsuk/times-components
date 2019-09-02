@@ -1,6 +1,6 @@
 {
   "name": "@times-components/video",
-  "version": "4.7.72",
+  "version": "4.7.73",
   "main": "dist/video",
   "dev": "src/video",
   "scripts": {
@@ -74,10 +74,10 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/error-view": "2.2.90",
-    "@times-components/gradient": "3.1.56",
-    "@times-components/icons": "2.12.12",
-    "@times-components/image": "6.4.21",
+    "@times-components/error-view": "2.2.91",
+    "@times-components/gradient": "3.1.57",
+    "@times-components/icons": "2.12.13",
+    "@times-components/image": "6.4.22",
     "@times-components/styleguide": "3.28.46",
     "@times-components/svgs": "2.7.22",
     "prop-types": "15.7.2",

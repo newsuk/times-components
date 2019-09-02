@@ -1,6 +1,6 @@
 {
   "name": "@times-components/gradient",
-  "version": "3.1.56",
+  "version": "3.1.57",
   "description": "Renders a gradient background",
   "main": "dist/gradient",
   "dev": "src/gradient",

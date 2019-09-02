@@ -1,6 +1,6 @@
 {
   "name": "@times-components/ad",
-  "version": "2.7.10",
+  "version": "2.7.11",
   "description": "Ad component",
   "main": "dist/ad",
   "dev": "src/ad",
@@ -62,7 +62,7 @@
     "@skele/components": "1.0.0-alpha.40",
     "@times-components/styleguide": "3.28.46",
     "@times-components/utils": "4.11.33",
-    "@times-components/watermark": "2.6.42",
+    "@times-components/watermark": "2.6.43",
     "prop-types": "15.7.2",
     "react-broadcast": "0.5.2",
     "react-native-device-info": "2.3.2",

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.20.92](https://github.com/newsuk/times-components/compare/@times-components/date-publication@0.20.91...@times-components/date-publication@0.20.92) (2019-09-02)
+
+
+### Bug Fixes
+
+* deps ([#2248](https://github.com/newsuk/times-components/issues/2248)) ([6263bbf](https://github.com/newsuk/times-components/commit/6263bbf))
+
+
+
+
+
 ## [0.20.91](https://github.com/newsuk/times-components/compare/@times-components/date-publication@0.20.90...@times-components/date-publication@0.20.91) (2019-08-29)
 
 **Note:** Version bump only for package @times-components/date-publication
