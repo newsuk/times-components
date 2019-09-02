@@ -76,13 +76,13 @@ function SaveAPI({ articleId, children }) {
 
                 return children({
                   savedStatus,
-                  toggleSaved() {
+                  async toggleSaved() {
                     const args = { variables: { id: articleId } };
 
                     if (savedStatus) {
-                      unsave(args);
+                      await unsave(args);
                     } else {
-                      save(args);
+                      await save(args);
                     }
                   },
                   isLoading:

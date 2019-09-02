@@ -1,5 +1,5 @@
 /* eslint-env browser */
-import React, { Component, Fragment } from "react";
+import React, { Fragment } from "react";
 import { ActivityIndicator, Text } from "react-native";
 import styled from "styled-components";
 import Link from "@times-components/link";
@@ -33,6 +33,7 @@ function SaveStar({
   function renderSaveButton() {
     const { fillColour, strokeColour } = getStyles({ saveStatus: savedStatus });
     return (
+      // eslint-disable-next-line jsx-a11y/anchor-is-valid
       <Link onPress={onSaveButtonPress} responsiveLinkStyles={styles.link}>
         <IconContainer colour={colour} hoverColour={hoverColour}>
           <IconStar

@@ -36,10 +36,13 @@
   "dependencies": {
     "@times-components/icons": "2.12.13",
     "@times-components/link": "3.4.42",
+    "@times-components/provider": "1.17.36",
     "@times-components/provider-queries": "2.7.2",
     "@times-components/styleguide": "3.28.46",
     "@times-components/tracking": "2.4.66",
     "@times-components/utils": "4.11.33",
+    "lodash.get": "4.4.2",
+    "react-apollo": "2.5.5",
     "prop-types": "15.7.2",
     "styled-components": "4.2.0"
   },

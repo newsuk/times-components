@@ -41,7 +41,7 @@ const Link = ({
 
 Link.propTypes = {
   children: PropTypes.node.isRequired,
-  url: PropTypes.string.isRequired,
+  url: PropTypes.string,
   onPress: PropTypes.func,
   target: PropTypes.string,
   underlined: PropTypes.bool,

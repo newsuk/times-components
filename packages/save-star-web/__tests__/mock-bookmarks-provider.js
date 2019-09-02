@@ -6,6 +6,10 @@ import {
   schemaToMocks
 } from "@times-components/provider-test-tools";
 
+function setDelay(mocks, delay) {
+  return mocks.map(mock => ({ ...mock, delay }));
+}
+
 class MockBookmarksProvider extends Component {
   state = { mocks: [] };
 
@@ -14,17 +18,18 @@ class MockBookmarksProvider extends Component {
   }
 
   componentDidUpdate(prevProps) {
-    const { articleId } = this.props;
+    const { articleId, delay } = this.props;
 
-    if (prevProps.articleId !== articleId) {
+    if (prevProps.articleId !== articleId || prevProps.delay !== delay) {
       this.setMocks();
     }
   }
 
   setMocks() {
-    const { articleId } = this.props;
+    const { articleId, delay } = this.props;
+    const mocks = setDelay(bookmarks({ id: articleId }), delay);
 
-    schemaToMocks(bookmarks({ id: articleId })).then(bookmarkMocks =>
+    return schemaToMocks(mocks).then(bookmarkMocks =>
       this.setState({ mocks: bookmarkMocks })
     );
   }
@@ -40,5 +45,9 @@ class MockBookmarksProvider extends Component {
     return <MockedProvider mocks={mocks}>{children}</MockedProvider>;
   }
 }
+
+MockBookmarksProvider.defaultProps = {
+  delay: 0
+};
 
 export default MockBookmarksProvider;
