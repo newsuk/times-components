@@ -256,7 +256,7 @@ exports[`3. a retry button when load more fails 1`] = `
 </RCTScrollView>
 `;
 
-exports[`4. no footer with data equalling the count 1`] = `
+exports[`5. no footer with data equalling the count 1`] = `
 <RCTScrollView
   nestedScrollEnabled={true}
   removeClippedSubviews={true}
@@ -308,7 +308,7 @@ exports[`4. no footer with data equalling the count 1`] = `
 </RCTScrollView>
 `;
 
-exports[`5. onviewed is called with changed items 1`] = `
+exports[`6. onviewed is called with changed items 1`] = `
 Array [
   Array [
     Object {
@@ -442,7 +442,7 @@ Array [
 ]
 `;
 
-exports[`6. removes the retry button when successfully pressed 1`] = `
+exports[`7. removes the retry button when successfully pressed 1`] = `
 <RCTScrollView
   nestedScrollEnabled={true}
   removeClippedSubviews={true}

@@ -13,6 +13,7 @@ import { omitNative as omitProps } from "./utils";
 import ArticleList from "../src/article-list";
 import articlesFixture from "../fixtures/articles.json";
 import shared from "./shared.base.native";
+import ArticleSummaryHeadline from "@times-components/article-summary"
 
 export default () => {
   addSerializers(
@@ -25,6 +26,24 @@ export default () => {
   );
 
   const tests = [
+    {
+      name: 'headlines should render',
+      test() {
+        const testInstance = TestRenderer.create(
+          <ArticleList
+            articles={articlesFixture.slice(0, 1)}
+            count={1}
+            emptyStateMessage="Empty state"
+            onArticlePress={() => {}}
+            pageSize={3}
+            refetch={() => {}}
+          />
+        );
+
+        const headline = testInstance.root.findByType(ArticleSummaryHeadline);
+        expect(headline).toBeDefined();
+      }
+    },
     {
       name: "no footer with data equalling the count",
       test() {
