@@ -25,3 +25,16 @@ Object {
   },
 }
 `;
+
+exports[`3. custom mutation value result 1`] = `
+Object {
+  "data": Object {
+    "saveBookmarks": Array [
+      Object {
+        "__typename": "Bookmark",
+        "id": "1234",
+      },
+    ],
+  },
+}
+`;

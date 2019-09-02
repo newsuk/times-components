@@ -72,6 +72,29 @@ const tests = [
 
       expect(result).toMatchSnapshot();
     }
+  },
+  {
+    name: "custom mutation value result",
+    async test() {
+      const query = addTypenameToDocument(gql`
+        mutation {
+          saveBookmarks(bookmarks: [{ id: "1234" }]) {
+            id
+          }
+        }
+      `);
+
+      const mockedSchema = makeMocks({
+        types: defaultTypes,
+        values: defaultValues,
+        mutationValues: {
+          saveBookmarks: () => [{ id: "1234", __typename: "Bookmark" }]
+        }
+      });
+      const result = await graphql(mockedSchema, print(query));
+
+      expect(result).toMatchSnapshot();
+    }
   }
 ];
 

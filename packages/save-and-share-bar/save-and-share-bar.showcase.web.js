@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import React from "react";
 import { scales } from "@times-components/styleguide";
 import { MessageManager, MessageContext } from "@times-components/message-bar";

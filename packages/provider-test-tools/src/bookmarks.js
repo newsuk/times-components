@@ -55,27 +55,52 @@ const createBookmarkMocks = ({ id } = {}, delay) => [
 ];
 
 class MockBookmarksProvider extends Component {
-  state = { mocks: [] };
+  static getMocks({ articleId, delay }) {
+    const mocks = createBookmarkMocks({ id: articleId }, delay);
 
-  componentDidMount() {
-    this.setMocks();
+    return schemaToMocks(mocks);
   }
 
-  componentDidUpdate(prevProps) {
+  static cache = null;
+
+  static async prepareCache({ articleId, delay }) {
+    const mocks = await this.getMocks({ articleId, delay });
+
+    this.cache = { delay, articleId, mocks };
+  }
+
+  static destroyCache() {
+    this.cache = null;
+  }
+
+  static isCacheValid({ articleId, delay }) {
+    const { cache } = this;
+
+    return cache && cache.articleId === articleId && cache.delay === delay;
+  }
+
+  state = { mocks: [] };
+
+  async componentDidMount() {
+    await this.setMocks();
+  }
+
+  async componentDidUpdate(prevProps) {
     const { articleId, delay } = this.props;
 
     if (prevProps.articleId !== articleId || prevProps.delay !== delay) {
-      this.setMocks();
+      await this.setMocks();
     }
   }
 
-  setMocks() {
+  async setMocks() {
     const { articleId, delay } = this.props;
-    const mocks = createBookmarkMocks({ id: articleId }, delay);
 
-    return schemaToMocks(mocks).then(bookmarkMocks =>
-      this.setState({ mocks: bookmarkMocks })
-    );
+    this.setState({
+      mocks: MockBookmarksProvider.isCacheValid({ articleId, delay })
+        ? MockBookmarksProvider.cache.mocks
+        : await MockBookmarksProvider.getMocks({ articleId, delay })
+    });
   }
 
   render() {

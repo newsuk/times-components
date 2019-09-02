@@ -1,26 +1,27 @@
-/* eslint-disable react/prop-types,react/no-unused-state */
 import React from "react";
 import TestRenderer from "react-test-renderer";
 import { delay } from "@times-components/test-utils";
 import { MockBookmarksProvider } from "@times-components/provider-test-tools";
 import SaveAPI from "../src/save-api";
 
-async function waitForMocks(renderer) {
-  await renderer.getInstance().setMocks();
-}
-
 export default () => {
   const articleId = "abc-123";
 
-  it("provides a function to toggle current saved state", async () => {
+  beforeAll(async () => {
+    await MockBookmarksProvider.prepareCache({ articleId });
+  });
+
+  afterAll(() => {
+    MockBookmarksProvider.destroyCache();
+  });
+
+  it("provides a function to toggle current saved state", () => {
     const children = jest.fn(() => null);
 
-    await waitForMocks(
-      TestRenderer.create(
-        <MockBookmarksProvider articleId={articleId}>
-          <SaveAPI articleId={articleId}>{children}</SaveAPI>
-        </MockBookmarksProvider>
-      )
+    TestRenderer.create(
+      <MockBookmarksProvider articleId={articleId}>
+        <SaveAPI articleId={articleId}>{children}</SaveAPI>
+      </MockBookmarksProvider>
     );
 
     expect(children).toHaveBeenLastCalledWith(
@@ -30,15 +31,13 @@ export default () => {
     );
   });
 
-  it("it calls children with loading true whilst mock requests are loading", async () => {
+  it("it calls children with loading true whilst mock requests are loading", () => {
     const children = jest.fn(() => null);
 
-    await waitForMocks(
-      TestRenderer.create(
-        <MockBookmarksProvider articleId={articleId}>
-          <SaveAPI articleId={articleId}>{children}</SaveAPI>
-        </MockBookmarksProvider>
-      )
+    TestRenderer.create(
+      <MockBookmarksProvider articleId={articleId}>
+        <SaveAPI articleId={articleId}>{children}</SaveAPI>
+      </MockBookmarksProvider>
     );
 
     expect(children).toHaveBeenLastCalledWith(
@@ -51,12 +50,10 @@ export default () => {
   it("updates loading state once bookmarks have loaded", async () => {
     const children = jest.fn(() => null);
 
-    await waitForMocks(
-      TestRenderer.create(
-        <MockBookmarksProvider articleId={articleId}>
-          <SaveAPI articleId={articleId}>{children}</SaveAPI>
-        </MockBookmarksProvider>
-      )
+    TestRenderer.create(
+      <MockBookmarksProvider articleId={articleId}>
+        <SaveAPI articleId={articleId}>{children}</SaveAPI>
+      </MockBookmarksProvider>
     );
 
     await delay(0);
@@ -76,12 +73,10 @@ export default () => {
       return null;
     });
 
-    await waitForMocks(
-      TestRenderer.create(
-        <MockBookmarksProvider articleId={articleId}>
-          <SaveAPI articleId={articleId}>{children}</SaveAPI>
-        </MockBookmarksProvider>
-      )
+    TestRenderer.create(
+      <MockBookmarksProvider articleId={articleId}>
+        <SaveAPI articleId={articleId}>{children}</SaveAPI>
+      </MockBookmarksProvider>
     );
 
     await delay(0);
@@ -105,12 +100,10 @@ export default () => {
       return null;
     });
 
-    await waitForMocks(
-      TestRenderer.create(
-        <MockBookmarksProvider articleId={articleId}>
-          <SaveAPI articleId={articleId}>{children}</SaveAPI>
-        </MockBookmarksProvider>
-      )
+    TestRenderer.create(
+      <MockBookmarksProvider articleId={articleId}>
+        <SaveAPI articleId={articleId}>{children}</SaveAPI>
+      </MockBookmarksProvider>
     );
 
     await delay(0);
@@ -131,12 +124,10 @@ export default () => {
       return null;
     });
 
-    await waitForMocks(
-      TestRenderer.create(
-        <MockBookmarksProvider articleId={articleId}>
-          <SaveAPI articleId={articleId}>{children}</SaveAPI>
-        </MockBookmarksProvider>
-      )
+    TestRenderer.create(
+      <MockBookmarksProvider articleId={articleId}>
+        <SaveAPI articleId={articleId}>{children}</SaveAPI>
+      </MockBookmarksProvider>
     );
 
     await delay(0);
@@ -161,12 +152,10 @@ export default () => {
       return null;
     });
 
-    await waitForMocks(
-      TestRenderer.create(
-        <MockBookmarksProvider articleId={articleId}>
-          <SaveAPI articleId={articleId}>{children}</SaveAPI>
-        </MockBookmarksProvider>
-      )
+    TestRenderer.create(
+      <MockBookmarksProvider articleId={articleId}>
+        <SaveAPI articleId={articleId}>{children}</SaveAPI>
+      </MockBookmarksProvider>
     );
 
     await delay(0);

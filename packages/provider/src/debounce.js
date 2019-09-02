@@ -51,14 +51,10 @@ export class Debounce extends Component {
 
     clearTimeout(this.debounceTimeout);
 
-    if (nextProps.debounceTimeMs) {
-      this.debounceTimeout = setTimeout(
-        this.handleDebounceTimer,
-        nextProps.debounceTimeMs
-      );
-    } else {
-      this.handleDebounceTimer();
-    }
+    this.debounceTimeout = setTimeout(
+      this.handleDebounceTimer,
+      nextProps.debounceTimeMs
+    );
   }
 
   componentWillUnmount() {
