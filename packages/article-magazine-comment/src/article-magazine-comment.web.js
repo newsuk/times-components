@@ -74,6 +74,7 @@ class ArticlePage extends Component {
       analyticsStream,
       error,
       isLoading,
+      navigationMode,
       receiveChildList,
       spotAccountId,
       paidContentClassName,
@@ -91,6 +92,7 @@ class ArticlePage extends Component {
         data={article}
         Header={this.renderHeader}
         receiveChildList={receiveChildList}
+        navigationMode={navigationMode}
         spotAccountId={spotAccountId}
         paidContentClassName={paidContentClassName}
         faviconUrl={faviconUrl}

@@ -5,6 +5,7 @@ const articleSkeletonPropTypes = {
   analyticsStream: PropTypes.func.isRequired,
   data: PropTypes.shape({}),
   Header: PropTypes.func.isRequired,
+  navigationMode: PropTypes.shape({}),
   receiveChildList: PropTypes.func,
   spotAccountId: PropTypes.string
 };

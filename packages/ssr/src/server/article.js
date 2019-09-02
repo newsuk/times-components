@@ -15,6 +15,7 @@ module.exports = (
     logger,
     makeArticleUrl,
     makeTopicUrl,
+    navigationMode,
     spotAccountId,
     paidContentClassName,
     faviconUrl
@@ -58,6 +59,7 @@ module.exports = (
       makeArticleUrl,
       makeTopicUrl,
       mapArticleToAdConfig: defaultAdConfig,
+      navigationMode,
       spotAccountId,
       userState,
       paidContentClassName,

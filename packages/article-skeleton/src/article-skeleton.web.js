@@ -57,6 +57,7 @@ class ArticleSkeleton extends Component {
       analyticsStream,
       data: article,
       Header,
+      navigationMode,
       receiveChildList,
       spotAccountId,
       paidContentClassName,

@@ -4,7 +4,9 @@ import { getRegistrationType, getSharedStatus } from "../data-helper";
 
 export default Component =>
   withTrackingContext(Component, {
-    getAttrs: ({ data, pageSection, referralUrl = "" }) => ({
+    getAttrs: ({ data, pageSection, navigationMode, referralUrl = "" }) => {
+      const {isMyArticles, isPastSixDays} = navigationMode
+      return {
       articleId: get(data, "id", ""),
       article_topic_tags: get(data, "topics", []).map(topic => topic.name),
       bylines: get(
@@ -15,6 +17,7 @@ export default Component =>
       headline: get(data, "headline", ""),
       label: get(data, "label", ""),
       pageName: `${get(data, "slug", "")}-${get(data, "shortIdentifier", "")}`,
+      edition_type: isMyArticles? "my articles": (isPastSixDays? "past 6 days": "current edition"),
       publishedTime: get(data, "publishedTime", ""),
       parent_site: get(data, "publicationName", ""),
       referralUrl,
@@ -22,6 +25,7 @@ export default Component =>
       template: get(data, "template", "Default"),
       registrationType: getRegistrationType(),
       shared: getSharedStatus()
-    }),
+    }
+  },
     trackingObjectName: "Article"
   });

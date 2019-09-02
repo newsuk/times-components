@@ -10,7 +10,8 @@ const articlePropTypes = {
     ...ArticleMeta.propTypes
     // Could have more here
   }),
-  receiveChildList: PropTypes.func
+  receiveChildList: PropTypes.func,
+  navigationMode: PropTypes.shape({}).isRequired
 };
 
 const articleDefaultProps = {

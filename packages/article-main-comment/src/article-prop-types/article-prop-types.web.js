@@ -4,7 +4,8 @@ import {
 } from "./article-prop-types.base";
 
 const articlePropTypes = {
-  ...articlePagePropTypes
+  ...articlePagePropTypes,
+  navigationMode: PropTypes.shape({}).isRequired,
 };
 
 const articleDefaultProps = {
