@@ -45,8 +45,8 @@ class ArticleListItem extends Component {
   }
 
   renderHeadline() {
-    const { article = {} } = this.props;
-    const { headline, shortHeadline } = article;
+    const { article } = this.props;
+    const { headline, shortHeadline } = article || {};
     return (
       <ArticleSummaryHeadline headline={getHeadline(headline, shortHeadline)} />
     );
@@ -107,7 +107,7 @@ class ArticleListItem extends Component {
                         date: publishedTime,
                         publication: publicationName
                       }}
-                      headline={this.renderHeadline}
+                      headline={this.renderHeadline()}
                       labelProps={{
                         color:
                           colours.section[section] || colours.section.default,

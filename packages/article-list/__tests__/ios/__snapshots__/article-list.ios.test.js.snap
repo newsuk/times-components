@@ -28,6 +28,11 @@ exports[`1. article list 1`] = `
                       "publication": "TIMES",
                     }
                   }
+                  headline={
+                    <ArticleSummaryHeadline
+                      headline="ShortHeadline 1"
+                    />
+                  }
                   labelProps={
                     Object {
                       "color": "#636C17",
@@ -90,6 +95,11 @@ exports[`1. article list 1`] = `
                       "publication": "SUNDAYTIMES",
                     }
                   }
+                  headline={
+                    <ArticleSummaryHeadline
+                      headline="ShortHeadline 2"
+                    />
+                  }
                   labelProps={
                     Object {
                       "color": "#1D1D1B",
@@ -148,6 +158,11 @@ exports[`2. article list with no images 1`] = `
                       "date": "2017-11-17T00:01:00.000Z",
                       "publication": "TIMES",
                     }
+                  }
+                  headline={
+                    <ArticleSummaryHeadline
+                      headline="ShortHeadline 1"
+                    />
                   }
                   labelProps={
                     Object {
@@ -208,6 +223,11 @@ exports[`3. a retry button when load more fails 1`] = `
                       "publication": "TIMES",
                     }
                   }
+                  headline={
+                    <ArticleSummaryHeadline
+                      headline="ShortHeadline 1"
+                    />
+                  }
                   labelProps={
                     Object {
                       "color": "#636C17",
@@ -236,7 +256,7 @@ exports[`3. a retry button when load more fails 1`] = `
 </RCTScrollView>
 `;
 
-exports[`4. no footer with data equalling the count 1`] = `
+exports[`5. no footer with data equalling the count 1`] = `
 <RCTScrollView
   nestedScrollEnabled={true}
   removeClippedSubviews={true}
@@ -264,6 +284,11 @@ exports[`4. no footer with data equalling the count 1`] = `
                       "publication": "TIMES",
                     }
                   }
+                  headline={
+                    <ArticleSummaryHeadline
+                      headline="ShortHeadline 1"
+                    />
+                  }
                   labelProps={
                     Object {
                       "color": "#636C17",
@@ -283,7 +308,7 @@ exports[`4. no footer with data equalling the count 1`] = `
 </RCTScrollView>
 `;
 
-exports[`5. onviewed is called with changed items 1`] = `
+exports[`6. onviewed is called with changed items 1`] = `
 Array [
   Array [
     Object {
@@ -417,7 +442,7 @@ Array [
 ]
 `;
 
-exports[`6. removes the retry button when successfully pressed 1`] = `
+exports[`7. removes the retry button when successfully pressed 1`] = `
 <RCTScrollView
   nestedScrollEnabled={true}
   removeClippedSubviews={true}
@@ -444,6 +469,11 @@ exports[`6. removes the retry button when successfully pressed 1`] = `
                       "date": "2017-11-17T00:01:00.000Z",
                       "publication": "TIMES",
                     }
+                  }
+                  headline={
+                    <ArticleSummaryHeadline
+                      headline="ShortHeadline 1"
+                    />
                   }
                   labelProps={
                     Object {

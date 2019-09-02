@@ -69,7 +69,9 @@ exports[`4. loading state 1`] = `
                 isLoading={true}
                 showImage={true}
               >
-                <ArticleSummary />
+                <ArticleSummary
+                  headline={<ArticleSummaryHeadline />}
+                />
               </Card>
             </View>
           </Link>
@@ -91,7 +93,9 @@ exports[`4. loading state 1`] = `
                 isLoading={true}
                 showImage={true}
               >
-                <ArticleSummary />
+                <ArticleSummary
+                  headline={<ArticleSummaryHeadline />}
+                />
               </Card>
             </View>
           </Link>
@@ -113,7 +117,9 @@ exports[`4. loading state 1`] = `
                 isLoading={true}
                 showImage={true}
               >
-                <ArticleSummary />
+                <ArticleSummary
+                  headline={<ArticleSummaryHeadline />}
+                />
               </Card>
             </View>
           </Link>
