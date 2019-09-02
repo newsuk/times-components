@@ -2,84 +2,71 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Mutation } from "react-apollo";
-import get from "lodash.get";
-import { Bookmarks } from "@times-components/provider";
+import { ArticleBookmarked } from "@times-components/provider";
 import {
-  getBookmarks,
   saveBookmarks,
-  unsaveBookmarks
+  unsaveBookmarks,
+  articleBookmarked
 } from "@times-components/provider-queries";
 
-function cacheReducer(state, action) {
-  switch (action.type) {
-    case "add":
-      return [...state, ...action.bookmarks];
-
-    case "remove":
-      return state.filter(bookmark => !action.ids.includes(bookmark.id));
-
-    default:
-      return state;
-  }
-}
-
-function updateCache(cache, action) {
+function updateCache(cache, { id, isBookmarked }) {
   const cached = cache.readQuery({
-    query: getBookmarks
+    query: articleBookmarked,
+    variables: { id }
   });
 
-  const updated = cacheReducer(cached.viewer.bookmarks.bookmarks, action);
-
   cache.writeQuery({
-    query: getBookmarks,
+    query: articleBookmarked,
+    variables: { id },
     data: {
-      viewer: {
-        ...cached.viewer,
-        bookmarks: {
-          ...cached.viewer.bookmarks,
-          total: updated.length,
-          bookmarks: updated
-        }
+      ...cached,
+      article: {
+        ...cached.article,
+        isBookmarked
       }
     }
   });
 }
 
-function onSaveMutationUpdate(cache, { data }) {
-  updateCache(cache, { type: "add", bookmarks: data.saveBookmarks });
+function addBookmark(cache, id) {
+  updateCache(cache, { id, isBookmarked: true });
 }
 
-function onUnsaveMutationUpdate(cache, { data }) {
-  updateCache(cache, { type: "remove", ids: data.unsaveBookmarks });
+function removeBookmark(cache, id) {
+  updateCache(cache, { id, isBookmarked: false });
 }
 
-const hasViewerBookmarkedArticle = (viewer, articleId) =>
-  get(viewer, "bookmarks.bookmarks", []).some(
-    bookmark => bookmark.id === articleId
-  );
+function onSaveMutationUpdate(
+  cache,
+  { data: { saveBookmarks: bookmarks = [] } }
+) {
+  bookmarks.forEach(bookmark => addBookmark(cache, bookmark.id));
+}
+
+function onUnsaveMutationUpdate(
+  cache,
+  { data: { unsaveBookmarks: ids = [] } }
+) {
+  ids.forEach(articleId => removeBookmark(cache, articleId));
+}
 
 function SaveAPI({ articleId, children }) {
   return (
-    <Bookmarks debounceTimeMs={0}>
-      {({ isLoading, viewer }) => (
+    <ArticleBookmarked id={articleId} debounceTimeMs={0}>
+      {({ isLoading, article: { isBookmarked = false } = {} }) => (
         <Mutation mutation={saveBookmarks} update={onSaveMutationUpdate}>
           {(save, { loading: saveMutationLoading }) => (
             <Mutation
               mutation={unsaveBookmarks}
               update={onUnsaveMutationUpdate}
             >
-              {(unsave, { loading: unsaveMutationLoading }) => {
-                const savedStatus = hasViewerBookmarkedArticle(
-                  viewer,
-                  articleId
-                );
-
-                return children({
-                  savedStatus,
+              {(unsave, { loading: unsaveMutationLoading }) =>
+                children({
+                  savedStatus: isBookmarked,
                   async toggleSaved() {
                     const args = { variables: { id: articleId } };
 
-                    if (savedStatus) {
+                    if (isBookmarked) {
                       await unsave(args);
                     } else {
                       await save(args);
@@ -87,13 +74,13 @@ function SaveAPI({ articleId, children }) {
                   },
                   isLoading:
                     isLoading || saveMutationLoading || unsaveMutationLoading
-                });
-              }}
+                })
+              }
             </Mutation>
           )}
         </Mutation>
       )}
-    </Bookmarks>
+    </ArticleBookmarked>
   );
 }
 

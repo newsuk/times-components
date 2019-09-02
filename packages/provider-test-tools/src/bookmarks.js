@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
 import React, { Component } from "react";
 import {
-  getBookmarks,
   saveBookmarks,
-  unsaveBookmarks
+  unsaveBookmarks,
+  articleBookmarked
 } from "@times-components/provider-queries";
 
 import MockedProvider from "./mocked-provider";
@@ -13,17 +13,16 @@ const createBookmarkMocks = ({ id } = {}, delay) => [
   {
     defaults: {
       types: {
-        Bookmark: () => ({
-          id
-        }),
-        PageOfBookmarks: () => ({
-          bookmarks: [],
-          total: 0
+        Article: () => ({
+          __typename: "Article",
+          id,
+          isBookmarked: false
         })
       }
     },
-    query: getBookmarks,
-    variables: {},
+    query: articleBookmarked,
+    variables: { id },
+    repeatable: true,
     delay
   },
   {

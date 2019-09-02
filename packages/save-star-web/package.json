@@ -41,7 +41,7 @@
     "@times-components/styleguide": "3.28.46",
     "@times-components/tracking": "2.4.66",
     "@times-components/utils": "4.11.33",
-    "lodash.get": "4.4.2",
+    "react-apollo": "2.5.5",
     "prop-types": "15.7.2",
     "react-apollo": "2.5.5",
     "styled-components": "4.2.0"
