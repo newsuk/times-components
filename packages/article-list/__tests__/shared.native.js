@@ -9,11 +9,11 @@ import {
 } from "@times-components/jest-serializer";
 import TestRenderer from "react-test-renderer";
 import "./mocks";
+import ArticleSummaryHeadline from "@times-components/article-summary";
 import { omitNative as omitProps } from "./utils";
 import ArticleList from "../src/article-list";
 import articlesFixture from "../fixtures/articles.json";
 import shared from "./shared.base.native";
-import ArticleSummaryHeadline from "@times-components/article-summary"
 
 export default () => {
   addSerializers(
@@ -27,7 +27,7 @@ export default () => {
 
   const tests = [
     {
-      name: 'headlines should render',
+      name: "headlines should render",
       test() {
         const testInstance = TestRenderer.create(
           <ArticleList
