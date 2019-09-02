@@ -7,33 +7,10 @@ import articleAdConfig from "@times-components/ad/fixtures/article-ad-config.jso
 import { ContextProviderWithDefaults } from "@times-components/context";
 import { colours, scales } from "@times-components/styleguide";
 import storybookReporter from "@times-components/tealium-utils";
-import {
-  bookmarks,
-  MockedProvider,
-  schemaToMocks
-} from "@times-components/provider-test-tools";
+import { MockBookmarksProvider } from "@times-components/provider-test-tools";
 
 import fullArticleFixture from "./fixtures/full-article";
 import ArticleSkeleton from "./src/article-skeleton";
-
-function BookmarksMockProvider({ children, articleId }) {
-  const [mocks, setMocks] = React.useState([]);
-
-  React.useEffect(
-    () => {
-      schemaToMocks(bookmarks({ id: articleId })).then(bookmarkMocks =>
-        setMocks(bookmarkMocks)
-      );
-    },
-    [articleId]
-  );
-
-  if (!mocks.length) {
-    return null;
-  }
-
-  return <MockedProvider mocks={mocks}>{children}</MockedProvider>;
-}
 
 const TestHeader = () => (
   <View
@@ -84,7 +61,7 @@ const renderArticleSkeleton = ({
   const showHeader = header ? () => <TestHeader /> : () => null;
 
   return (
-    <BookmarksMockProvider articleId={data.id}>
+    <MockBookmarksProvider delay={1000} articleId={data.id}>
       <ContextProviderWithDefaults value={{ theme: { scale, sectionColour } }}>
         <ArticleSkeleton
           adConfig={articleAdConfig}
@@ -112,7 +89,7 @@ const renderArticleSkeleton = ({
           onViewableItemsChanged={() => null}
         />
       </ContextProviderWithDefaults>
-    </BookmarksMockProvider>
+    </MockBookmarksProvider>
   );
 };
 

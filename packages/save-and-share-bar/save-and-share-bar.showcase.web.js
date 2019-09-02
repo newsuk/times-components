@@ -3,29 +3,9 @@ import React from "react";
 import { scales } from "@times-components/styleguide";
 import { MessageManager, MessageContext } from "@times-components/message-bar";
 import SaveAndShareBar from "./src/save-and-share-bar";
-import {
-  bookmarks,
-  MockedProvider,
-  schemaToMocks
-} from "@times-components/provider-test-tools";
+import { MockBookmarksProvider } from "@times-components/provider-test-tools";
 
 const articleId = "5504b5a8-b1c0-11e8-a553-a0ee9be48bc6";
-
-function BookmarksMockProvider({ children }) {
-  const [mocks, setMocks] = React.useState([]);
-
-  React.useEffect(() => {
-    schemaToMocks(bookmarks({ id: articleId })).then(bookmarkMocks =>
-      setMocks(bookmarkMocks)
-    );
-  }, []);
-
-  if (!mocks.length) {
-    return null;
-  }
-
-  return <MockedProvider mocks={mocks}>{children}</MockedProvider>;
-}
 
 const mockGetTokenisedArticleUrl = id =>
   new Promise(resolve =>
@@ -46,7 +26,7 @@ export default {
   children: [
     {
       component: () => (
-        <BookmarksMockProvider>
+        <MockBookmarksProvider delay={1000} articleId={articleId}>
           <MessageManager animate delay={3000} scale={scales.medium}>
             <MessageContext.Consumer>
               {({ showMessage }) => (
@@ -62,7 +42,7 @@ export default {
               )}
             </MessageContext.Consumer>
           </MessageManager>
-        </BookmarksMockProvider>
+        </MockBookmarksProvider>
       ),
       name: "Save and Share bar",
       type: "story"

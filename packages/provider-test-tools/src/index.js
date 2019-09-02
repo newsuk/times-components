@@ -21,7 +21,7 @@ import pullQuote from "./fixtures/pull-quote.json";
 import topicArticles from "./fixtures/topic-articles.json";
 import topicHead from "./fixtures/topic.json";
 import video from "../fixtures/video.json";
-import bookmarks from "./bookmarks";
+import bookmarks, { MockBookmarksProvider } from "./bookmarks";
 
 const fixtures = {
   articleListNoImages,
@@ -54,5 +54,6 @@ export {
   providerTester,
   schemaToMocks,
   topic,
-  bookmarks
+  bookmarks,
+  MockBookmarksProvider
 };

@@ -2,9 +2,9 @@
 import React from "react";
 import { View } from "react-native";
 import { spacing, colours } from "@times-components/styleguide";
-import SaveStarWeb from "./src/save-star-web";
+import { MockBookmarksProvider } from "@times-components/provider-test-tools";
 
-import MockBookmarksProvider from "./__tests__/mock-bookmarks-provider";
+import SaveStarWeb from "./src/save-star-web";
 
 const styles = {
   star: {

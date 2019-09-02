@@ -1,11 +1,15 @@
-import { MockList } from "graphql-tools";
+/* eslint-disable react/prop-types */
+import React, { Component } from "react";
 import {
   getBookmarks,
   saveBookmarks,
   unsaveBookmarks
 } from "@times-components/provider-queries";
 
-export default ({ id } = {}) => [
+import MockedProvider from "./mocked-provider";
+import { schemaToMocks } from "./mock-fixture";
+
+const createBookmarkMocks = ({ id } = {}) => [
   {
     defaults: {
       types: {
@@ -19,8 +23,7 @@ export default ({ id } = {}) => [
       }
     },
     query: getBookmarks,
-    variables: {},
-    delay: 1000
+    variables: {}
   },
   {
     query: saveBookmarks,
@@ -32,8 +35,7 @@ export default ({ id } = {}) => [
         saveBookmarks: () => [{ id, __typename: "Bookmark" }]
       }
     },
-    repeatable: true,
-    delay: 1000
+    repeatable: true
   },
   {
     query: unsaveBookmarks,
@@ -45,7 +47,50 @@ export default ({ id } = {}) => [
         unsaveBookmarks: () => [id]
       }
     },
-    repeatable: true,
-    delay: 1000
+    repeatable: true
   }
 ];
+
+function setDelay(mocks, delay) {
+   return delay ? mocks.map(mock => ({ ...mock, delay })) : mocks;
+}
+
+class MockBookmarksProvider extends Component {
+  state = { mocks: [] };
+
+  componentDidMount() {
+    this.setMocks();
+  }
+
+  componentDidUpdate(prevProps) {
+    const { articleId, delay } = this.props;
+
+    if (prevProps.articleId !== articleId || prevProps.delay !== delay) {
+      this.setMocks();
+    }
+  }
+
+  setMocks() {
+    const { articleId, delay } = this.props;
+    const mocks = setDelay(createBookmarkMocks({ id: articleId }), delay);
+
+    return schemaToMocks(mocks).then(bookmarkMocks =>
+      this.setState({ mocks: bookmarkMocks })
+    );
+  }
+
+  render() {
+    const { mocks } = this.state;
+    const { children } = this.props;
+
+    if (!mocks.length) {
+      return null;
+    }
+
+    return <MockedProvider mocks={mocks}>{children}</MockedProvider>;
+  }
+}
+
+export { MockBookmarksProvider };
+
+export default createBookmarkMocks;

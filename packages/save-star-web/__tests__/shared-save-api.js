@@ -2,8 +2,8 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
 import { delay } from "@times-components/test-utils";
+import { MockBookmarksProvider } from "@times-components/provider-test-tools";
 import SaveAPI from "../src/save-api";
-import MockBookmarksProvider from "./mock-bookmarks-provider";
 
 async function waitForMocks(renderer) {
   await renderer.getInstance().setMocks();
