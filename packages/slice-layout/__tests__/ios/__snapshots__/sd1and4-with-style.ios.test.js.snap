@@ -4,14 +4,15 @@ exports[`1. secondary one and four - small 1`] = `
 <View
   style={
     Object {
-      "flexDirection": "row",
+      "backgroundColor": "#272D34",
+      "flex": 1,
     }
   }
 >
   <View
     style={
       Object {
-        "width": "50%",
+        "flexDirection": "row",
       }
     }
   >
@@ -21,105 +22,49 @@ exports[`1. secondary one and four - small 1`] = `
       </Text>
     </View>
   </View>
-  <View
-    style={
-      Object {
-        "borderColor": "#4D4D4D",
-        "borderRightWidth": 1,
-        "borderStyle": "solid",
-        "marginVertical": 10,
-      }
-    }
-  />
-  <View
-    style={
-      Object {
-        "width": "25%",
-      }
-    }
-  >
-    <View
-      style={
-        Object {
-          "flex": 1,
-        }
-      }
-    >
-      <Text>
-        support-1
-      </Text>
-    </View>
+  <View>
+    <Text>
+      support-1
+    </Text>
     <View
       style={
         Object {
           "borderBottomWidth": 1,
-          "borderColor": "#4D4D4D",
+          "borderColor": "#DBDBDB",
           "borderStyle": "solid",
           "marginHorizontal": 10,
         }
       }
     />
-    <View
-      style={
-        Object {
-          "flex": 1,
-        }
-      }
-    >
-      <Text>
-        support-3
-      </Text>
-    </View>
-  </View>
-  <View
-    style={
-      Object {
-        "borderColor": "#4D4D4D",
-        "borderRightWidth": 1,
-        "borderStyle": "solid",
-        "marginVertical": 10,
-      }
-    }
-  />
-  <View
-    style={
-      Object {
-        "width": "25%",
-      }
-    }
-  >
-    <View
-      style={
-        Object {
-          "flex": 1,
-        }
-      }
-    >
-      <Text>
-        support-2
-      </Text>
-    </View>
+    <Text>
+      support-2
+    </Text>
     <View
       style={
         Object {
           "borderBottomWidth": 1,
-          "borderColor": "#4D4D4D",
+          "borderColor": "#DBDBDB",
           "borderStyle": "solid",
           "marginHorizontal": 10,
         }
       }
     />
+    <Text>
+      support-3
+    </Text>
     <View
       style={
         Object {
-          "flex": 1,
+          "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
+          "borderStyle": "solid",
+          "marginHorizontal": 10,
         }
       }
-    >
-      <Text>
-        support-4
-      </Text>
-    </View>
+    />
+    <Text>
+      support-4
+    </Text>
   </View>
 </View>
 `;

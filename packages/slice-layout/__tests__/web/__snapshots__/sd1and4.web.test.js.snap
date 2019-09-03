@@ -11,40 +11,29 @@ exports[`1. secondary one and four - small 1`] = `
       </div>
     </div>
   </div>
-  <div />
   <div>
-    <div>
-      <div
-        dir="auto"
-      >
-        support-1
-      </div>
+    <div
+      dir="auto"
+    >
+      support-1
     </div>
     <div />
-    <div>
-      <div
-        dir="auto"
-      >
-        support-3
-      </div>
-    </div>
-  </div>
-  <div />
-  <div>
-    <div>
-      <div
-        dir="auto"
-      >
-        support-2
-      </div>
+    <div
+      dir="auto"
+    >
+      support-2
     </div>
     <div />
-    <div>
-      <div
-        dir="auto"
-      >
-        support-4
-      </div>
+    <div
+      dir="auto"
+    >
+      support-3
+    </div>
+    <div />
+    <div
+      dir="auto"
+    >
+      support-4
     </div>
   </div>
 </div>
