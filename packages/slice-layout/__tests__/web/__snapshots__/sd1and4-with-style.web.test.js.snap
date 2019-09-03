@@ -4,18 +4,28 @@ exports[`1. secondary one and four - small 1`] = `
 <div
   style={
     Object {
-      "WebkitBoxDirection": "normal",
-      "WebkitBoxOrient": "horizontal",
-      "WebkitFlexDirection": "row",
-      "flexDirection": "row",
-      "msFlexDirection": "row",
+      "WebkitBoxFlex": 1,
+      "WebkitFlexBasis": "0%",
+      "WebkitFlexGrow": 1,
+      "WebkitFlexShrink": 1,
+      "backgroundColor": "rgba(39,45,52,1.00)",
+      "flexBasis": "0%",
+      "flexGrow": 1,
+      "flexShrink": 1,
+      "msFlexNegative": 1,
+      "msFlexPositive": 1,
+      "msFlexPreferredSize": "0%",
     }
   }
 >
   <div
     style={
       Object {
-        "width": "50%",
+        "WebkitBoxDirection": "normal",
+        "WebkitBoxOrient": "horizontal",
+        "WebkitFlexDirection": "row",
+        "flexDirection": "row",
+        "msFlexDirection": "row",
       }
     }
   >
@@ -25,168 +35,69 @@ exports[`1. secondary one and four - small 1`] = `
       </div>
     </div>
   </div>
-  <div
-    style={
-      Object {
-        "borderBottomColor": "rgba(77,77,77,1.00)",
-        "borderBottomStyle": "solid",
-        "borderLeftColor": "rgba(77,77,77,1.00)",
-        "borderLeftStyle": "solid",
-        "borderRightColor": "rgba(77,77,77,1.00)",
-        "borderRightStyle": "solid",
-        "borderRightWidth": "1px",
-        "borderTopColor": "rgba(77,77,77,1.00)",
-        "borderTopStyle": "solid",
-        "marginBottom": "10px",
-        "marginTop": "10px",
-      }
-    }
-  />
-  <div
-    style={
-      Object {
-        "width": "25%",
-      }
-    }
-  >
-    <div
-      style={
-        Object {
-          "WebkitBoxFlex": 1,
-          "WebkitFlexBasis": "0%",
-          "WebkitFlexGrow": 1,
-          "WebkitFlexShrink": 1,
-          "flexBasis": "0%",
-          "flexGrow": 1,
-          "flexShrink": 1,
-          "msFlexNegative": 1,
-          "msFlexPositive": 1,
-          "msFlexPreferredSize": "0%",
-        }
-      }
-    >
-      <div>
-        support-1
-      </div>
+  <div>
+    <div>
+      support-1
     </div>
     <div
       style={
         Object {
-          "borderBottomColor": "rgba(77,77,77,1.00)",
+          "borderBottomColor": "rgba(219,219,219,1.00)",
           "borderBottomStyle": "solid",
           "borderBottomWidth": "1px",
-          "borderLeftColor": "rgba(77,77,77,1.00)",
+          "borderLeftColor": "rgba(219,219,219,1.00)",
           "borderLeftStyle": "solid",
-          "borderRightColor": "rgba(77,77,77,1.00)",
+          "borderRightColor": "rgba(219,219,219,1.00)",
           "borderRightStyle": "solid",
-          "borderTopColor": "rgba(77,77,77,1.00)",
+          "borderTopColor": "rgba(219,219,219,1.00)",
           "borderTopStyle": "solid",
           "marginLeft": "10px",
           "marginRight": "10px",
         }
       }
     />
-    <div
-      style={
-        Object {
-          "WebkitBoxFlex": 1,
-          "WebkitFlexBasis": "0%",
-          "WebkitFlexGrow": 1,
-          "WebkitFlexShrink": 1,
-          "flexBasis": "0%",
-          "flexGrow": 1,
-          "flexShrink": 1,
-          "msFlexNegative": 1,
-          "msFlexPositive": 1,
-          "msFlexPreferredSize": "0%",
-        }
-      }
-    >
-      <div>
-        support-3
-      </div>
-    </div>
-  </div>
-  <div
-    style={
-      Object {
-        "borderBottomColor": "rgba(77,77,77,1.00)",
-        "borderBottomStyle": "solid",
-        "borderLeftColor": "rgba(77,77,77,1.00)",
-        "borderLeftStyle": "solid",
-        "borderRightColor": "rgba(77,77,77,1.00)",
-        "borderRightStyle": "solid",
-        "borderRightWidth": "1px",
-        "borderTopColor": "rgba(77,77,77,1.00)",
-        "borderTopStyle": "solid",
-        "marginBottom": "10px",
-        "marginTop": "10px",
-      }
-    }
-  />
-  <div
-    style={
-      Object {
-        "width": "25%",
-      }
-    }
-  >
-    <div
-      style={
-        Object {
-          "WebkitBoxFlex": 1,
-          "WebkitFlexBasis": "0%",
-          "WebkitFlexGrow": 1,
-          "WebkitFlexShrink": 1,
-          "flexBasis": "0%",
-          "flexGrow": 1,
-          "flexShrink": 1,
-          "msFlexNegative": 1,
-          "msFlexPositive": 1,
-          "msFlexPreferredSize": "0%",
-        }
-      }
-    >
-      <div>
-        support-2
-      </div>
+    <div>
+      support-2
     </div>
     <div
       style={
         Object {
-          "borderBottomColor": "rgba(77,77,77,1.00)",
+          "borderBottomColor": "rgba(219,219,219,1.00)",
           "borderBottomStyle": "solid",
           "borderBottomWidth": "1px",
-          "borderLeftColor": "rgba(77,77,77,1.00)",
+          "borderLeftColor": "rgba(219,219,219,1.00)",
           "borderLeftStyle": "solid",
-          "borderRightColor": "rgba(77,77,77,1.00)",
+          "borderRightColor": "rgba(219,219,219,1.00)",
           "borderRightStyle": "solid",
-          "borderTopColor": "rgba(77,77,77,1.00)",
+          "borderTopColor": "rgba(219,219,219,1.00)",
           "borderTopStyle": "solid",
           "marginLeft": "10px",
           "marginRight": "10px",
         }
       }
     />
+    <div>
+      support-3
+    </div>
     <div
       style={
         Object {
-          "WebkitBoxFlex": 1,
-          "WebkitFlexBasis": "0%",
-          "WebkitFlexGrow": 1,
-          "WebkitFlexShrink": 1,
-          "flexBasis": "0%",
-          "flexGrow": 1,
-          "flexShrink": 1,
-          "msFlexNegative": 1,
-          "msFlexPositive": 1,
-          "msFlexPreferredSize": "0%",
+          "borderBottomColor": "rgba(219,219,219,1.00)",
+          "borderBottomStyle": "solid",
+          "borderBottomWidth": "1px",
+          "borderLeftColor": "rgba(219,219,219,1.00)",
+          "borderLeftStyle": "solid",
+          "borderRightColor": "rgba(219,219,219,1.00)",
+          "borderRightStyle": "solid",
+          "borderTopColor": "rgba(219,219,219,1.00)",
+          "borderTopStyle": "solid",
+          "marginLeft": "10px",
+          "marginRight": "10px",
         }
       }
-    >
-      <div>
-        support-4
-      </div>
+    />
+    <div>
+      support-4
     </div>
   </div>
 </div>
@@ -237,28 +148,69 @@ exports[`2. secondary one and four - medium 1`] = `
   <div
     style={
       Object {
-        "width": "25%",
+        "width": "50%",
       }
     }
   >
     <div
       style={
         Object {
+          "WebkitBoxDirection": "normal",
           "WebkitBoxFlex": 1,
+          "WebkitBoxOrient": "horizontal",
           "WebkitFlexBasis": "0%",
+          "WebkitFlexDirection": "row",
           "WebkitFlexGrow": 1,
           "WebkitFlexShrink": 1,
           "flexBasis": "0%",
+          "flexDirection": "row",
           "flexGrow": 1,
           "flexShrink": 1,
+          "msFlexDirection": "row",
           "msFlexNegative": 1,
           "msFlexPositive": 1,
           "msFlexPreferredSize": "0%",
         }
       }
     >
-      <div>
-        support-1
+      <div
+        style={
+          Object {
+            "width": "50%",
+          }
+        }
+      >
+        <div>
+          support-1
+        </div>
+      </div>
+      <div
+        style={
+          Object {
+            "borderBottomColor": "rgba(77,77,77,1.00)",
+            "borderBottomStyle": "solid",
+            "borderLeftColor": "rgba(77,77,77,1.00)",
+            "borderLeftStyle": "solid",
+            "borderRightColor": "rgba(77,77,77,1.00)",
+            "borderRightStyle": "solid",
+            "borderRightWidth": "1px",
+            "borderTopColor": "rgba(77,77,77,1.00)",
+            "borderTopStyle": "solid",
+            "marginBottom": "10px",
+            "marginTop": "10px",
+          }
+        }
+      />
+      <div
+        style={
+          Object {
+            "width": "50%",
+          }
+        }
+      >
+        <div>
+          support-2
+        </div>
       </div>
     </div>
     <div
@@ -281,21 +233,90 @@ exports[`2. secondary one and four - medium 1`] = `
     <div
       style={
         Object {
+          "WebkitBoxDirection": "normal",
           "WebkitBoxFlex": 1,
+          "WebkitBoxOrient": "horizontal",
           "WebkitFlexBasis": "0%",
+          "WebkitFlexDirection": "row",
           "WebkitFlexGrow": 1,
           "WebkitFlexShrink": 1,
           "flexBasis": "0%",
+          "flexDirection": "row",
           "flexGrow": 1,
           "flexShrink": 1,
+          "msFlexDirection": "row",
           "msFlexNegative": 1,
           "msFlexPositive": 1,
           "msFlexPreferredSize": "0%",
         }
       }
     >
+      <div
+        style={
+          Object {
+            "width": "50%",
+          }
+        }
+      >
+        <div>
+          support-3
+        </div>
+      </div>
+      <div
+        style={
+          Object {
+            "borderBottomColor": "rgba(77,77,77,1.00)",
+            "borderBottomStyle": "solid",
+            "borderLeftColor": "rgba(77,77,77,1.00)",
+            "borderLeftStyle": "solid",
+            "borderRightColor": "rgba(77,77,77,1.00)",
+            "borderRightStyle": "solid",
+            "borderRightWidth": "1px",
+            "borderTopColor": "rgba(77,77,77,1.00)",
+            "borderTopStyle": "solid",
+            "marginBottom": "10px",
+            "marginTop": "10px",
+          }
+        }
+      />
+      <div
+        style={
+          Object {
+            "width": "50%",
+          }
+        }
+      >
+        <div>
+          support-4
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`3. secondary one and four - wide 1`] = `
+<div
+  style={
+    Object {
+      "WebkitBoxDirection": "normal",
+      "WebkitBoxOrient": "horizontal",
+      "WebkitFlexDirection": "row",
+      "flexDirection": "row",
+      "msFlexDirection": "row",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "width": "50%",
+      }
+    }
+  >
+    <div>
       <div>
-        support-3
+        secondary-1
       </div>
     </div>
   </div>
@@ -319,28 +340,69 @@ exports[`2. secondary one and four - medium 1`] = `
   <div
     style={
       Object {
-        "width": "25%",
+        "width": "50%",
       }
     }
   >
     <div
       style={
         Object {
+          "WebkitBoxDirection": "normal",
           "WebkitBoxFlex": 1,
+          "WebkitBoxOrient": "horizontal",
           "WebkitFlexBasis": "0%",
+          "WebkitFlexDirection": "row",
           "WebkitFlexGrow": 1,
           "WebkitFlexShrink": 1,
           "flexBasis": "0%",
+          "flexDirection": "row",
           "flexGrow": 1,
           "flexShrink": 1,
+          "msFlexDirection": "row",
           "msFlexNegative": 1,
           "msFlexPositive": 1,
           "msFlexPreferredSize": "0%",
         }
       }
     >
-      <div>
-        support-2
+      <div
+        style={
+          Object {
+            "width": "50%",
+          }
+        }
+      >
+        <div>
+          support-1
+        </div>
+      </div>
+      <div
+        style={
+          Object {
+            "borderBottomColor": "rgba(77,77,77,1.00)",
+            "borderBottomStyle": "solid",
+            "borderLeftColor": "rgba(77,77,77,1.00)",
+            "borderLeftStyle": "solid",
+            "borderRightColor": "rgba(77,77,77,1.00)",
+            "borderRightStyle": "solid",
+            "borderRightWidth": "1px",
+            "borderTopColor": "rgba(77,77,77,1.00)",
+            "borderTopStyle": "solid",
+            "marginBottom": "10px",
+            "marginTop": "10px",
+          }
+        }
+      />
+      <div
+        style={
+          Object {
+            "width": "50%",
+          }
+        }
+      >
+        <div>
+          support-2
+        </div>
       </div>
     </div>
     <div
@@ -363,21 +425,62 @@ exports[`2. secondary one and four - medium 1`] = `
     <div
       style={
         Object {
+          "WebkitBoxDirection": "normal",
           "WebkitBoxFlex": 1,
+          "WebkitBoxOrient": "horizontal",
           "WebkitFlexBasis": "0%",
+          "WebkitFlexDirection": "row",
           "WebkitFlexGrow": 1,
           "WebkitFlexShrink": 1,
           "flexBasis": "0%",
+          "flexDirection": "row",
           "flexGrow": 1,
           "flexShrink": 1,
+          "msFlexDirection": "row",
           "msFlexNegative": 1,
           "msFlexPositive": 1,
           "msFlexPreferredSize": "0%",
         }
       }
     >
-      <div>
-        support-4
+      <div
+        style={
+          Object {
+            "width": "50%",
+          }
+        }
+      >
+        <div>
+          support-3
+        </div>
+      </div>
+      <div
+        style={
+          Object {
+            "borderBottomColor": "rgba(77,77,77,1.00)",
+            "borderBottomStyle": "solid",
+            "borderLeftColor": "rgba(77,77,77,1.00)",
+            "borderLeftStyle": "solid",
+            "borderRightColor": "rgba(77,77,77,1.00)",
+            "borderRightStyle": "solid",
+            "borderRightWidth": "1px",
+            "borderTopColor": "rgba(77,77,77,1.00)",
+            "borderTopStyle": "solid",
+            "marginBottom": "10px",
+            "marginTop": "10px",
+          }
+        }
+      />
+      <div
+        style={
+          Object {
+            "width": "50%",
+          }
+        }
+      >
+        <div>
+          support-4
+        </div>
       </div>
     </div>
   </div>

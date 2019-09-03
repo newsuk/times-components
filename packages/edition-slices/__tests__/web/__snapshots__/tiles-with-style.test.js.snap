@@ -1160,6 +1160,7 @@ exports[`14. tile n 1`] = `
 
 .IS2 {
   color: rgba(255,255,255,1.00);
+  font-size: 18px;
 }
 
 .IS3 {

@@ -1,5 +1,6 @@
 import {
   colours,
+  fonts,
   fontFactory,
   spacing,
   editionBreakpoints
@@ -12,7 +13,7 @@ const fontSizeResolver = {
   [editionBreakpoints.huge]: 45
 };
 
-export default breakpoint => ({
+const smallBreakpointStyles = breakpoint => ({
   container: {
     backgroundColor: colours.functional.darkSupplement,
     flexDirection: "row",
@@ -43,3 +44,28 @@ export default breakpoint => ({
     width: "50%"
   }
 });
+
+const mediumBreakpointStyles = breakpoint => ({
+  ...smallBreakpointStyles(breakpoint),
+  headline: {
+    ...fontFactory({
+      font: "headline"
+    }),
+    fontSize: fontSizeResolver[breakpoint],
+    color: colours.functional.white,
+    marginBottom: 0
+  },
+  strapline: {
+    fontFamily: fonts.bodyRegular,
+    fontSize: 14,
+    lineHeight: 20,
+    color: colours.functional.greyLabel,
+    paddingTop: spacing(1),
+    paddingBottom: 0
+  }
+});
+
+export default breakpoint =>
+  breakpoint === editionBreakpoints.small
+    ? smallBreakpointStyles(breakpoint)
+    : mediumBreakpointStyles(breakpoint);
