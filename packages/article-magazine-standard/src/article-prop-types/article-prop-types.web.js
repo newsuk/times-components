@@ -6,7 +6,7 @@ import {
 
 const articlePropTypes = {
   ...articlePagePropTypes,
-  navigationMode: PropTypes.shape({}).isRequired,
+  navigationMode: PropTypes.shape({}).isRequired
 };
 
 const articleDefaultProps = {

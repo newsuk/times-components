@@ -7,7 +7,7 @@ import {
 const articlePropTypes = {
   ...articlePagePropTypes,
   spotAccountId: PropTypes.string.isRequired,
-  navigationMode: PropTypes.shape({}).isRequired,
+  navigationMode: PropTypes.shape({}).isRequired
 };
 
 const articleDefaultProps = {

@@ -127,7 +127,12 @@ const tests = [
           }
         ]
       });
-
+      const navigationMode = {
+        isCurrentEdition: true,
+        isPastSixDays: false,
+        isMyArticles: false,
+        isStateless: false
+      };
       const scale = scales.large;
       const sectionColour = "#FFFFFF";
       const testRenderer = TestRenderer.create(
@@ -148,6 +153,7 @@ const tests = [
             onRelatedArticlePress={() => {}}
             onTopicPress={() => {}}
             onVideoPress={() => {}}
+            navigationMode={navigationMode}
             receiveChildList={() => {}}
           />
         </ContextProviderWithDefaults>
