@@ -11,10 +11,15 @@ import {
 } from "../shared";
 import styleFactory from "./styles";
 
-const TileN = ({ isDarkStar, onPress, tile, breakpoint = editionBreakpoints.small }) => {
+const TileN = ({
+  isDarkStar,
+  onPress,
+  tile,
+  breakpoint = editionBreakpoints.small
+}) => {
   const styles = styleFactory(breakpoint);
   const crop = getTileImage(tile, "crop11");
-  
+
   return (
     <TileLink onPress={onPress} style={styles.container} tile={tile}>
       <Image
