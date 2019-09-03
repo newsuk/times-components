@@ -1,7 +1,7 @@
 import insertDropcapIntoAST from "../../src/dropcap-util";
 
 const child = {
-  attributes: [],
+  attributes: {},
   children: [
     {
       attributes: {
@@ -15,8 +15,26 @@ const child = {
   name: "paragraph"
 };
 
+const invalidChild = {
+  attributes: {},
+  children: [
+    {
+      name: "break"
+    },
+    {
+      attributes: {
+        value:
+          "As I follow Chris Reynolds Gordon down the first f…fty Shades of Grey but, he says, “I’m living it.”"
+      },
+      children: [],
+      name: "text"
+    }
+  ],
+  name: "paragraph"
+};
+
 const childWithMarkup = {
-  attributes: [],
+  attributes: {},
   children: [
     {
       attributes: {},
@@ -80,7 +98,7 @@ const childWithDropCapAndMarkup = [
     attributes: {},
     children: [
       {
-        attributes: [],
+        attributes: {},
         children: [
           {
             attributes: {
@@ -104,7 +122,7 @@ const childWithDropCapAndMarkup = [
     ]
   },
   {
-    attributes: [],
+    attributes: {},
     children: [
       {
         attributes: {
@@ -132,6 +150,13 @@ describe("insertDropcapIntoAST", () => {
   it("should insert dropcap if it belongs to the right template", () => {
     const template = "indepth";
     expect(insertDropcapIntoAST([child], template)).toEqual(childWithDropCap);
+  });
+
+  it("should fall back to no dropcap if the markup is invalid", () => {
+    const template = "indepth";
+    expect(insertDropcapIntoAST([invalidChild], template)).toEqual([
+      invalidChild
+    ]);
   });
 
   it("should insert dropcap if it belongs to the right template with markup", () => {
