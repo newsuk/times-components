@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.1.132...@times-components/article-extras@0.2.0) (2019-09-03)
+
+
+### Features
+
+* REPLAT-7557 add sponsored-article div for all user states of... ([#2253](https://github.com/newsuk/times-components/issues/2253)) ([ebeb51f](https://github.com/newsuk/times-components/commit/ebeb51f))
+
+
+
+
+
 ## [0.1.132](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.1.131...@times-components/article-extras@0.1.132) (2019-09-03)
 
 **Note:** Version bump only for package @times-components/article-extras

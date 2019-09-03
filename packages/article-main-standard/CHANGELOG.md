@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.12.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.11.46...@times-components/article-main-standard@3.12.0) (2019-09-03)
+
+
+### Features
+
+* add missing tracking attribute ([#2251](https://github.com/newsuk/times-components/issues/2251)) ([b6856aa](https://github.com/newsuk/times-components/commit/b6856aa))
+
+
+
+
+
 ## [3.11.46](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.11.45...@times-components/article-main-standard@3.11.46) (2019-09-03)
 
 **Note:** Version bump only for package @times-components/article-main-standard
