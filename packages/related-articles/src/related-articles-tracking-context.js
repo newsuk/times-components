@@ -1,10 +1,10 @@
 import { withTrackingContext } from "@times-components/tracking";
+import getHeadline from "./utils";
 import {
   standardRoles,
-  leadOneAndTwoRoles,
-  opinionOneAndTwoRoles
-} from "@times-components/slice-layout";
-import getHeadline from "./utils";
+  opinionOneAndTwoRoles,
+  leadOneAndTwoRoles
+} from "./roles";
 
 export default Component =>
   withTrackingContext(Component, {
