@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.17.40](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.17.39...@times-components/provider-test-tools@1.17.40) (2019-09-03)
+
+
+### Bug Fixes
+
+* show correct saved status when user has more than 20 saved articles ([#2250](https://github.com/newsuk/times-components/issues/2250)) ([04dcefa](https://github.com/newsuk/times-components/commit/04dcefa))
+
+
+
+
+
 ## [1.17.39](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.17.38...@times-components/provider-test-tools@1.17.39) (2019-09-02)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.20](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.3.19...@times-components/save-star-web@0.3.20) (2019-09-03)
+
+
+### Bug Fixes
+
+* show correct saved status when user has more than 20 saved articles ([#2250](https://github.com/newsuk/times-components/issues/2250)) ([04dcefa](https://github.com/newsuk/times-components/commit/04dcefa))
+
+
+
+
+
 ## [0.3.19](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.3.18...@times-components/save-star-web@0.3.19) (2019-09-02)
 
 
