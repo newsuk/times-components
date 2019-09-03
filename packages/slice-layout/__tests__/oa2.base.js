@@ -79,7 +79,7 @@ export default renderComponent => {
       }
     },
     {
-      name: "test getSupportContainer styles with supportCount 2 and index 0",
+      name: "test getSupportContainer styles with supportCount 3 and index 0",
       test() {
         expect(
           getSupportContainer({ index: 0, supportCount: 3 })

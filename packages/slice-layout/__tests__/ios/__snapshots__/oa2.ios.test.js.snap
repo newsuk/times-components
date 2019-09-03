@@ -222,7 +222,7 @@ Object {
 }
 `;
 
-exports[`7. test getsupportcontainer styles with supportcount 2 and index 0 1`] = `
+exports[`7. test getsupportcontainer styles with supportcount 3 and index 0 1`] = `
 Object {
   "$$typeof": Symbol(react.forward_ref),
   "attrs": Array [],
