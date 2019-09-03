@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 import UserState from "@times-components/user-state";
 import ArticleComments from "@times-components/article-comments";
@@ -22,43 +22,49 @@ const ArticleExtras = ({
   spotAccountId,
   topics
 }) => (
-  <UserState state={UserState.fullArticle}>
-    <ArticleTopics topics={topics} />
-    {(savingEnabled || sharingEnabled) && (
-      <UserState state={UserState.loggedInOrShared}>
-        <MessageContext.Consumer>
-          {({ showMessage }) => (
-            <ShareAndSaveContainer showBottomBorder={!relatedArticleSlice}>
-              <SaveAndShareBar
-                articleId={articleId}
-                articleHeadline={articleHeadline}
-                articleUrl={articleUrl}
-                onCopyLink={() => showMessage("Article link copied")}
-                onSaveToMyArticles={() => {}}
-                onShareOnEmail={() => {}}
-                savingEnabled={savingEnabled}
-                sharingEnabled={sharingEnabled}
-              />
-            </ShareAndSaveContainer>
-          )}
-        </MessageContext.Consumer>
-      </UserState>
-    )}
-    <div id="related-articles" ref={node => registerNode(node)}>
-      <RelatedArticles
-        analyticsStream={analyticsStream}
-        isVisible={relatedArticlesVisible}
-        slice={relatedArticleSlice}
-      />
-    </div>
+  <Fragment>
+    <UserState state={UserState.fullArticle}>
+      <ArticleTopics topics={topics} />
+      {(savingEnabled || sharingEnabled) && (
+        <UserState state={UserState.loggedInOrShared}>
+          <MessageContext.Consumer>
+            {({ showMessage }) => (
+              <ShareAndSaveContainer showBottomBorder={!relatedArticleSlice}>
+                <SaveAndShareBar
+                  articleId={articleId}
+                  articleHeadline={articleHeadline}
+                  articleUrl={articleUrl}
+                  onCopyLink={() => showMessage("Article link copied")}
+                  onSaveToMyArticles={() => {}}
+                  onShareOnEmail={() => {}}
+                  savingEnabled={savingEnabled}
+                  sharingEnabled={sharingEnabled}
+                />
+              </ShareAndSaveContainer>
+            )}
+          </MessageContext.Consumer>
+        </UserState>
+      )}
+      <div id="related-articles" ref={node => registerNode(node)}>
+        <RelatedArticles
+          analyticsStream={analyticsStream}
+          isVisible={relatedArticlesVisible}
+          slice={relatedArticleSlice}
+        />
+      </div>
+    </UserState>
+
     {/* Nativo inserts Sponsored Articles in this div */}
     <div id="sponsored-article" />
-    <ArticleComments
-      articleId={articleId}
-      isEnabled={commentsEnabled}
-      spotAccountId={spotAccountId}
-    />
-  </UserState>
+
+    <UserState state={UserState.fullArticle}>
+      <ArticleComments
+        articleId={articleId}
+        isEnabled={commentsEnabled}
+        spotAccountId={spotAccountId}
+      />
+    </UserState>
+  </Fragment>
 );
 
 ArticleExtras.propTypes = {

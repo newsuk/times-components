@@ -25,4 +25,8 @@ Array [
 ]
 `;
 
-exports[`2. no related articles, topics and comments when user not logged in 1`] = `null`;
+exports[`2. no related articles, topics and comments when user not logged in, only sponsored div 1`] = `
+<div
+  id="sponsored-article"
+/>
+`;
