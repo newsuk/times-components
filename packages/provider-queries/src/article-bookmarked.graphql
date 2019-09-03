@@ -1,0 +1,7 @@
+query ArticleBookmarkedQuery($id: ID!) {
+  article(id: $id) {
+    __typename
+    id
+    isBookmarked
+  }
+}
