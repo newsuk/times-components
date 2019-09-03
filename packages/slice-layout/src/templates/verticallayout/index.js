@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { View } from "react-native";
-import propTypes from "./proptypes";
+import PropTypes from "prop-types";
 import { ItemRowSeparator } from "../shared";
 
 const VerticalLayout = ({ style, tiles }) => (
@@ -14,6 +14,13 @@ const VerticalLayout = ({ style, tiles }) => (
   </View>
 );
 
-VerticalLayout.propTypes = propTypes;
+VerticalLayout.propTypes = {
+  style: PropTypes.shape({}),
+  tiles: PropTypes.arrayOf(PropTypes.node).isRequired
+};
+
+VerticalLayout.defaultProps = {
+  style: {}
+};
 
 export default VerticalLayout;

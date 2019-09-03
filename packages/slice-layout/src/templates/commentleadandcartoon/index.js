@@ -1,8 +1,8 @@
 import React from "react";
 import { editionBreakpoints } from "@times-components/styleguide";
+import PropTypes from "prop-types";
 import VerticalLayout from "../verticallayout";
 import HorizontalLayout from "../horizontallayout";
-import propTypes from "./proptypes";
 import styleFactory from "./styles";
 
 const CommentLeadAndCartoon = ({ breakpoint, lead, cartoon }) => {
@@ -23,6 +23,14 @@ const CommentLeadAndCartoon = ({ breakpoint, lead, cartoon }) => {
   );
 };
 
-CommentLeadAndCartoon.propTypes = propTypes;
+CommentLeadAndCartoon.propTypes = {
+  breakpoint: PropTypes.string,
+  cartoon: PropTypes.node.isRequired,
+  lead: PropTypes.node.isRequired
+};
+
+CommentLeadAndCartoon.defaultProps = {
+  breakpoint: editionBreakpoints.small
+};
 
 export default CommentLeadAndCartoon;

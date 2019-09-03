@@ -1,7 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 import { editionBreakpoints } from "@times-components/styleguide";
-import { defaultProps, propTypes } from "./proptypes";
+import PropTypes from "prop-types";
 import HorizontalLayout from "../horizontallayout";
 import styleFactory from "./styles";
 
@@ -30,7 +30,14 @@ const leadOneAndOneSlice = ({ breakpoint, lead, support }) => {
   );
 };
 
-leadOneAndOneSlice.propTypes = propTypes;
-leadOneAndOneSlice.defaultProps = defaultProps;
+leadOneAndOneSlice.propTypes = {
+  breakpoint: PropTypes.string,
+  lead: PropTypes.node.isRequired,
+  support: PropTypes.node.isRequired
+};
+
+leadOneAndOneSlice.defaultProps = {
+  breakpoint: editionBreakpoints.small
+};
 
 export default leadOneAndOneSlice;

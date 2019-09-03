@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { View } from "react-native";
-import propTypes from "./proptypes";
+import PropTypes from "prop-types";
 import { ItemColSeparator } from "../shared";
 
 const HorizontalLayout = ({ containerStyle, tiles, colSeparatorStyle }) => (
@@ -16,6 +16,20 @@ const HorizontalLayout = ({ containerStyle, tiles, colSeparatorStyle }) => (
   </View>
 );
 
-HorizontalLayout.propTypes = propTypes;
+HorizontalLayout.propTypes = {
+  containerStyle: PropTypes.shape({}),
+  colSeparatorStyle: PropTypes.shape({}),
+  tiles: PropTypes.arrayOf(
+    PropTypes.shape({
+      style: PropTypes.object,
+      tile: PropTypes.node.isRequired
+    })
+  ).isRequired
+};
+
+HorizontalLayout.defaultProps = {
+  containerStyle: {},
+  colSeparatorStyle: {}
+};
 
 export default HorizontalLayout;

@@ -1,8 +1,8 @@
 import React from "react";
 import { View } from "react-native";
 import { editionBreakpoints } from "@times-components/styleguide";
+import PropTypes from "prop-types";
 import styleFactory from "./styles";
-import propTypes from "./proptypes";
 import VerticalLayout from "../verticallayout";
 import { ItemColSeparator, ItemRowSeparator } from "../shared";
 
@@ -49,6 +49,17 @@ const SecondaryOneAndFourSlice = ({
   );
 };
 
-SecondaryOneAndFourSlice.propTypes = propTypes;
+SecondaryOneAndFourSlice.propTypes = {
+  breakpoint: PropTypes.string,
+  secondary: PropTypes.node.isRequired,
+  support1: PropTypes.node.isRequired,
+  support2: PropTypes.node.isRequired,
+  support3: PropTypes.node.isRequired,
+  support4: PropTypes.node.isRequired
+};
+
+SecondaryOneAndFourSlice.defaultProps = {
+  breakpoint: editionBreakpoints.small
+};
 
 export default SecondaryOneAndFourSlice;
