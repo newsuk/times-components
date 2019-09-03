@@ -11,6 +11,7 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
   const {
     articleId,
     debounceTimeMs,
+    navigationMode,
     spotAccountId,
     paidContentClassName,
     userState
@@ -22,6 +23,7 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     debounceTimeMs,
     makeArticleUrl,
     makeTopicUrl,
+    navigationMode,
     getCookieValue,
     mapArticleToAdConfig,
     spotAccountId,
