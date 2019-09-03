@@ -21,45 +21,50 @@ const ArticleExtras = ({
   relatedArticlesVisible,
   spotAccountId,
   topics
-}) => (
-  <UserState state={UserState.fullArticle}>
-    <ArticleTopics topics={topics} />
-    {(savingEnabled || sharingEnabled) && (
-      <UserState state={UserState.loggedInOrShared}>
-        <MessageContext.Consumer>
-          {({ showMessage }) => (
-            <ShareAndSaveContainer showBottomBorder={!relatedArticleSlice}>
-              <SaveAndShareBar
-                articleId={articleId}
-                articleHeadline={articleHeadline}
-                articleUrl={articleUrl}
-                onCopyLink={() => showMessage("Article link copied")}
-                onSaveToMyArticles={() => {}}
-                onShareOnEmail={() => {}}
-                savingEnabled={savingEnabled}
-                sharingEnabled={sharingEnabled}
-              />
-            </ShareAndSaveContainer>
-          )}
-        </MessageContext.Consumer>
-      </UserState>
-    )}
-    <div id="related-articles" ref={node => registerNode(node)}>
-      <RelatedArticles
-        analyticsStream={analyticsStream}
-        isVisible={relatedArticlesVisible}
-        slice={relatedArticleSlice}
+}) => {
+  /* Nativo inserts Sponsored Articles in this div */
+  const sponsoredArticle = (
+    <div id="sponsored-article" key="sponsored-article" />
+  );
+  return (
+    <UserState state={UserState.fullArticle} fallback={sponsoredArticle}>
+      <ArticleTopics topics={topics} />
+      {(savingEnabled || sharingEnabled) && (
+        <UserState state={UserState.loggedInOrShared}>
+          <MessageContext.Consumer>
+            {({ showMessage }) => (
+              <ShareAndSaveContainer showBottomBorder={!relatedArticleSlice}>
+                <SaveAndShareBar
+                  articleId={articleId}
+                  articleHeadline={articleHeadline}
+                  articleUrl={articleUrl}
+                  onCopyLink={() => showMessage("Article link copied")}
+                  onSaveToMyArticles={() => {}}
+                  onShareOnEmail={() => {}}
+                  savingEnabled={savingEnabled}
+                  sharingEnabled={sharingEnabled}
+                />
+              </ShareAndSaveContainer>
+            )}
+          </MessageContext.Consumer>
+        </UserState>
+      )}
+      <div id="related-articles" ref={node => registerNode(node)}>
+        <RelatedArticles
+          analyticsStream={analyticsStream}
+          isVisible={relatedArticlesVisible}
+          slice={relatedArticleSlice}
+        />
+      </div>
+      {sponsoredArticle}
+      <ArticleComments
+        articleId={articleId}
+        isEnabled={commentsEnabled}
+        spotAccountId={spotAccountId}
       />
-    </div>
-    {/* Nativo inserts Sponsored Articles in this div */}
-    <div id="sponsored-article" />
-    <ArticleComments
-      articleId={articleId}
-      isEnabled={commentsEnabled}
-      spotAccountId={spotAccountId}
-    />
-  </UserState>
-);
+    </UserState>
+  );
+};
 
 ArticleExtras.propTypes = {
   analyticsStream: PropTypes.func.isRequired,

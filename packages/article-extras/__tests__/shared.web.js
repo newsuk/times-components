@@ -51,7 +51,8 @@ export default () => {
       }
     },
     {
-      name: "no related articles, topics and comments when user not logged in",
+      name:
+        "no related articles, topics and comments when user not logged in, only sponsored div",
       test: () => {
         UserState.mockStates = [];
         const testInstance = TestRenderer.create(
