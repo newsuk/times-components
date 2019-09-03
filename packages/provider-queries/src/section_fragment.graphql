@@ -280,36 +280,36 @@ fragment standardSection on StandardSection {
       support1 {
         headline
         leadAsset {
-          ...leadAsset32
+          ...leadAsset32and45
         }
         article {
           ...baseArticleProps
           leadAsset {
-            ...leadAsset32
+            ...leadAsset32and45
           }
           listingAsset {
-            ...listingAsset32
+            ...listingAsset32and45
+          }
+        }
+      }
+      support2 {
+        headline
+        leadAsset {
+          ...leadAsset32and45
+        }
+        article {
+          ...baseArticleProps
+          leadAsset {
+            ...leadAsset32and45
+          }
+          listingAsset {
+            ...listingAsset32and45
           }
           summary125: summary(maxCharCount: 125)
           summary800: summary(maxCharCount: 800)
         }
         teaser125: teaser(maxCharCount: 125)
         teaser800: teaser(maxCharCount: 800)
-      }
-      support2 {
-        headline
-        leadAsset {
-          ...leadAsset45
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset45
-          }
-          listingAsset {
-            ...listingAsset45
-          }
-        }
       }
     }
     ... on SecondaryFourSlice {
@@ -417,7 +417,9 @@ fragment standardSection on StandardSection {
           listingAsset {
             ...listingAsset169
           }
+          summary800: summary(maxCharCount: 800)
         }
+        teaser800: teaser(maxCharCount: 800)
       }
       columnist {
         headline
@@ -946,34 +948,36 @@ fragment magazineSection on MagazineSection {
       support1 {
         headline
         leadAsset {
-          ...leadAsset32
+          ...leadAsset32and45
         }
         article {
           ...baseArticleProps
           leadAsset {
-            ...leadAsset32
+            ...leadAsset32and45
           }
           listingAsset {
-            ...listingAsset32
+            ...listingAsset32and45
           }
-          summary800: summary(maxCharCount: 800)
         }
-        teaser800: teaser(maxCharCount: 800)
       }
       support2 {
         headline
         leadAsset {
-          ...leadAsset45
+          ...leadAsset32and45
         }
         article {
           ...baseArticleProps
           leadAsset {
-            ...leadAsset45
+            ...leadAsset32and45
           }
           listingAsset {
-            ...listingAsset45
+            ...listingAsset32and45
           }
+          summary125: summary(maxCharCount: 125)
+          summary800: summary(maxCharCount: 800)
         }
+        teaser125: teaser(maxCharCount: 125)
+        teaser800: teaser(maxCharCount: 800)
       }
     }
     ... on SecondaryFourSlice {
@@ -1081,7 +1085,9 @@ fragment magazineSection on MagazineSection {
           listingAsset {
             ...listingAsset169
           }
+          summary800: summary(maxCharCount: 800)
         }
+        teaser800: teaser(maxCharCount: 800)
       }
       columnist {
         headline
@@ -1577,6 +1583,50 @@ fragment leadAsset169and32 on Media {
       ...sectionCropProps
     }
     crop169: crop(ratio: "16:9") {
+      ...sectionCropProps
+    }
+  }
+}
+
+fragment leadAsset32and45 on Media {
+  __typename
+  ... on Video {
+    posterImage {
+      crop32: crop(ratio: "3:2") {
+        ...sectionCropProps
+      }
+      crop45: crop(ratio: "4:5") {
+        ...sectionCropProps
+      }
+    }
+  }
+  ... on Image {
+    crop32: crop(ratio: "3:2") {
+      ...sectionCropProps
+    }
+    crop45: crop(ratio: "4:5") {
+      ...sectionCropProps
+    }
+  }
+}
+
+fragment listingAsset32and45 on Media {
+  __typename
+  ... on Video {
+    posterImage {
+      crop32: crop(ratio: "3:2") {
+        ...sectionCropProps
+      }
+      crop45: crop(ratio: "4:5") {
+        ...sectionCropProps
+      }
+    }
+  }
+  ... on Image {
+    crop32: crop(ratio: "3:2") {
+      ...sectionCropProps
+    }
+    crop45: crop(ratio: "4:5") {
       ...sectionCropProps
     }
   }
