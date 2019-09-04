@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.77.12](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.77.11...@times-components/edition-slices@0.77.12) (2019-09-04)
+
+
+### Bug Fixes
+
+* REPLAT-8116 supplement 1 and 4 styling tablet ([#2252](https://github.com/newsuk/times-components/issues/2252)) ([0f0a82b](https://github.com/newsuk/times-components/commit/0f0a82b))
+
+
+
+
+
 ## [0.77.11](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.77.10...@times-components/edition-slices@0.77.11) (2019-09-02)
 
 **Note:** Version bump only for package @times-components/edition-slices

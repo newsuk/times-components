@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.7.4](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.7.3...@times-components/provider-queries@2.7.4) (2019-09-04)
+
+
+### Bug Fixes
+
+* section fragment l-2-no-pic-and-2 updated ([#2256](https://github.com/newsuk/times-components/issues/2256)) ([95cb990](https://github.com/newsuk/times-components/commit/95cb990))
+
+
+
+
+
 ## [2.7.3](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.7.2...@times-components/provider-queries@2.7.3) (2019-09-03)
 
 
