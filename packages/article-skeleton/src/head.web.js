@@ -120,7 +120,11 @@ function Head({ article, paidContentClassName, faviconUrl }) {
       : null;
   const sectionname = getSectionName(article);
   const leadassetUrl = appendToUrl(
-    get(leadAsset, "crop169.url", null),
+    get(
+      hasVideo ? get(leadAsset, "posterImage", null) : leadAsset,
+      "crop169.url",
+      null
+    ),
     "resize",
     685
   );
