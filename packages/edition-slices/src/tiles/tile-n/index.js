@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { colours } from "@times-components/styleguide";
+import { colours, editionBreakpoints } from "@times-components/styleguide";
 import Image from "@times-components/image";
 import {
   getTileImage,
@@ -11,7 +11,12 @@ import {
 } from "../shared";
 import styleFactory from "./styles";
 
-const TileN = ({ isDarkStar, onPress, tile, breakpoint }) => {
+const TileN = ({
+  isDarkStar,
+  onPress,
+  tile,
+  breakpoint = editionBreakpoints.small
+}) => {
   const styles = styleFactory(breakpoint);
   const crop = getTileImage(tile, "crop11");
 

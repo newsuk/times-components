@@ -1,10 +1,11 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { View } from "react-native";
 import { editionBreakpoints } from "@times-components/styleguide";
 import styleFactory from "./styles";
-import propTypes from "./proptypes";
 import VerticalLayout from "../verticallayout";
 import { ItemColSeparator, ItemRowSeparator } from "../shared";
+import HorizontalLayout from "../horizontallayout";
 
 const SecondaryOneAndFourSlice = ({
   breakpoint,
@@ -34,21 +35,40 @@ const SecondaryOneAndFourSlice = ({
         <View>{secondary}</View>
       </View>
       <ItemColSeparator style={styles.separator} />
-      <View style={styles.itemContainer}>
-        <View style={styles.item}>{support1}</View>
+      <View style={styles.supportsWrapper}>
+        <HorizontalLayout
+          containerStyle={styles.supportContainer}
+          tiles={[
+            { style: styles.supportItem, tile: support1 },
+            { style: styles.supportItem, tile: support2 }
+          ]}
+          colSeparatorStyle={styles.separator}
+        />
         <ItemRowSeparator style={styles.separator} />
-        <View style={styles.item}>{support3}</View>
-      </View>
-      <ItemColSeparator style={styles.separator} />
-      <View style={styles.itemContainer}>
-        <View style={styles.item}>{support2}</View>
-        <ItemRowSeparator style={styles.separator} />
-        <View style={styles.item}>{support4}</View>
+        <HorizontalLayout
+          containerStyle={styles.supportContainer}
+          tiles={[
+            { style: styles.supportItem, tile: support3 },
+            { style: styles.supportItem, tile: support4 }
+          ]}
+          colSeparatorStyle={styles.separator}
+        />
       </View>
     </View>
   );
 };
 
-SecondaryOneAndFourSlice.propTypes = propTypes;
+SecondaryOneAndFourSlice.propTypes = {
+  breakpoint: PropTypes.string,
+  secondary: PropTypes.node.isRequired,
+  support1: PropTypes.node.isRequired,
+  support2: PropTypes.node.isRequired,
+  support3: PropTypes.node.isRequired,
+  support4: PropTypes.node.isRequired
+};
+
+SecondaryOneAndFourSlice.defaultProps = {
+  breakpoint: editionBreakpoints.small
+};
 
 export default SecondaryOneAndFourSlice;

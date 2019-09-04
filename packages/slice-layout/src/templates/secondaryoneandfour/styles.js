@@ -17,17 +17,24 @@ const mediumBreakpointStyles = {
   container: {
     flexDirection: "row"
   },
-  itemContainer: {
-    width: "25%"
-  },
-  item: {
-    flex: 1
-  },
   secondaryItemContainer: {
     width: "50%"
   },
   separator: {
     borderColor: colours.functional.tertiary
+  },
+
+  supportsWrapper: {
+    width: "50%"
+  },
+
+  supportContainer: {
+    flex: 1,
+    flexDirection: "row"
+  },
+
+  supportItem: {
+    width: "50%"
   }
 };
 

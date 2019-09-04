@@ -198,33 +198,35 @@ exports[`7. secondary one and four - medium 1`] = `
         <View />
         <View>
           <View>
-            <TileO
-              breakpoint="medium"
-              tileName="support1"
-            />
+            <View>
+              <TileO
+                breakpoint="medium"
+                tileName="support1"
+              />
+            </View>
+            <View />
+            <View>
+              <TileO
+                breakpoint="medium"
+                tileName="support2"
+              />
+            </View>
           </View>
           <View />
           <View>
-            <TileO
-              breakpoint="medium"
-              tileName="support3"
-            />
-          </View>
-        </View>
-        <View />
-        <View>
-          <View>
-            <TileO
-              breakpoint="medium"
-              tileName="support2"
-            />
-          </View>
-          <View />
-          <View>
-            <TileO
-              breakpoint="medium"
-              tileName="support4"
-            />
+            <View>
+              <TileO
+                breakpoint="medium"
+                tileName="support3"
+              />
+            </View>
+            <View />
+            <View>
+              <TileO
+                breakpoint="medium"
+                tileName="support4"
+              />
+            </View>
           </View>
         </View>
       </View>
@@ -693,33 +695,35 @@ exports[`22. secondary one and four - wide 1`] = `
         <View />
         <View>
           <View>
-            <TileO
-              breakpoint="wide"
-              tileName="support1"
-            />
+            <View>
+              <TileO
+                breakpoint="wide"
+                tileName="support1"
+              />
+            </View>
+            <View />
+            <View>
+              <TileO
+                breakpoint="wide"
+                tileName="support2"
+              />
+            </View>
           </View>
           <View />
           <View>
-            <TileO
-              breakpoint="wide"
-              tileName="support3"
-            />
-          </View>
-        </View>
-        <View />
-        <View>
-          <View>
-            <TileO
-              breakpoint="wide"
-              tileName="support2"
-            />
-          </View>
-          <View />
-          <View>
-            <TileO
-              breakpoint="wide"
-              tileName="support4"
-            />
+            <View>
+              <TileO
+                breakpoint="wide"
+                tileName="support3"
+              />
+            </View>
+            <View />
+            <View>
+              <TileO
+                breakpoint="wide"
+                tileName="support4"
+              />
+            </View>
           </View>
         </View>
       </View>
@@ -1209,33 +1213,35 @@ exports[`37. secondary one and four - huge 1`] = `
           <View />
           <View>
             <View>
-              <TileO
-                breakpoint="huge"
-                tileName="support1"
-              />
+              <View>
+                <TileO
+                  breakpoint="huge"
+                  tileName="support1"
+                />
+              </View>
+              <View />
+              <View>
+                <TileO
+                  breakpoint="huge"
+                  tileName="support2"
+                />
+              </View>
             </View>
             <View />
             <View>
-              <TileO
-                breakpoint="huge"
-                tileName="support3"
-              />
-            </View>
-          </View>
-          <View />
-          <View>
-            <View>
-              <TileO
-                breakpoint="huge"
-                tileName="support2"
-              />
-            </View>
-            <View />
-            <View>
-              <TileO
-                breakpoint="huge"
-                tileName="support4"
-              />
+              <View>
+                <TileO
+                  breakpoint="huge"
+                  tileName="support3"
+                />
+              </View>
+              <View />
+              <View>
+                <TileO
+                  breakpoint="huge"
+                  tileName="support4"
+                />
+              </View>
             </View>
           </View>
         </View>
