@@ -24,11 +24,21 @@ const defaultStyles = {
   summaryContainer: {
     flex: 1,
     paddingLeft: spacing(2),
-    width: "70%"
+    width: "70%",
+    justifyContent: "center"
   },
-  summaryContent: {
-    justifyContent: "center",
+  outerContainer: {
+    flexDirection: "column",
     flex: 1
+  },
+  innerContainer: {
+    flexDirection: "row",
+    flex: 1
+  },
+  customStarPosition: {
+    position: "relative",
+    bottom: 10,
+    marginBottom: -15
   }
 };
 
@@ -41,7 +51,8 @@ const mediumBreakpointStyles = {
   headline: {
     fontFamily: fonts.headline,
     fontSize: 20,
-    lineHeight: 20
+    lineHeight: 20,
+    marginBottom: 0
   },
   imageContainer: {
     overflow: "hidden",

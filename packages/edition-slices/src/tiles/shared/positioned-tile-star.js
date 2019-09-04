@@ -15,6 +15,7 @@ import {
 const PositionedTileStar = ({
   centeredStar = false,
   underneathTextStar = false,
+  customStyles = {},
   ...props
 }) => {
   if (!isSaveSupported) return null;
@@ -22,6 +23,7 @@ const PositionedTileStar = ({
   return (
     <View
       style={[
+        customStyles,
         starDefaultStyles,
         centeredStar && starCenterStyles,
         underneathTextStar && starUnderneathTextStyles
@@ -37,7 +39,8 @@ PositionedTileStar.propTypes = {
   underneathTextStar: PropTypes.bool,
   centeredStar: PropTypes.bool,
   isDarkStar: PropTypes.bool,
-  starStyle: PropTypes.shape({})
+  starStyle: PropTypes.shape({}),
+  customStyles: PropTypes.shape({})
 };
 
 export default PositionedTileStar;

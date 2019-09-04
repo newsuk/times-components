@@ -278,38 +278,40 @@ exports[`7. tile g 1`] = `
   }
   url="/article/123"
 >
-  <Image
-    aspectRatio={1}
-    fill={true}
-    resizeMode="cover"
-    rounded={true}
-    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
-  />
   <div>
     <div>
+      <Image
+        aspectRatio={1}
+        fill={true}
+        resizeMode="cover"
+        rounded={true}
+        uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
+      />
       <div>
-        <ArticleLabel
-          color="#005B8D"
-          isVideo={false}
-          title="label"
+        <div>
+          <ArticleLabel
+            color="#005B8D"
+            isVideo={false}
+            title="label"
+          />
+        </div>
+        <h3
+          aria-level="3"
+          role="heading"
+        >
+          This is tile headline
+        </h3>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
         />
       </div>
-      <h3
-        aria-level="3"
-        role="heading"
-      >
-        This is tile headline
-      </h3>
-      <ArticleFlags
-        flags={
-          Array [
-            Object {
-              "expiryTime": "2030-03-14T12:00:00.000Z",
-              "type": "EXCLUSIVE",
-            },
-          ]
-        }
-      />
     </div>
   </div>
 </Link>
