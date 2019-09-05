@@ -7,7 +7,6 @@ export default {
       : "",
   makeTopicUrl: ({ slug }) => `/topic/${slug}`,
   theme: {
-    imageCaptionAlignment: {},
     scale: scales.medium
   },
   user: {
