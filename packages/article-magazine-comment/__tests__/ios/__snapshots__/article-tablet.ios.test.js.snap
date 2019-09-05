@@ -42,7 +42,7 @@ exports[`1. article magazine comment - tablet 1`] = `
           "fontFamily": "TimesModern-Bold",
           "fontSize": 40,
           "lineHeight": 40,
-          "marginBottom": 5,
+          "marginBottom": 15,
           "textAlign": "center",
         }
       }
@@ -53,7 +53,7 @@ exports[`1. article magazine comment - tablet 1`] = `
       style={
         Object {
           "marginBottom": 15,
-          "marginTop": 10,
+          "marginTop": 5,
         }
       }
     >
@@ -66,7 +66,7 @@ exports[`1. article magazine comment - tablet 1`] = `
           "fontFamily": "TimesModern-Regular",
           "fontSize": 20,
           "lineHeight": 25,
-          "marginBottom": 15,
+          "marginBottom": 12.5,
           "paddingHorizontal": 10,
           "textAlign": "center",
         }
@@ -89,7 +89,7 @@ exports[`1. article magazine comment - tablet 1`] = `
           Object {
             "flexDirection": "row",
             "flexWrap": "wrap",
-            "paddingTop": 5,
+            "paddingTop": "auto",
           }
         }
       >
@@ -110,7 +110,7 @@ exports[`1. article magazine comment - tablet 1`] = `
           Object {
             "flexDirection": "row",
             "flexWrap": "wrap",
-            "paddingTop": 5,
+            "paddingTop": "auto",
           }
         }
       >

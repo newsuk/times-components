@@ -51,7 +51,7 @@ exports[`1. article main comment - tablet 1`] = `
             "fontFamily": "TimesModern-Bold",
             "fontSize": 45,
             "lineHeight": 45,
-            "marginBottom": 12.5,
+            "marginBottom": 13.75,
             "textAlign": "center",
           }
         }
