@@ -37,8 +37,8 @@ const defaultStyles = {
   },
   customStarPosition: {
     position: "relative",
-    bottom: 10,
-    marginBottom: -15
+    bottom: spacing(2),
+    marginBottom: spacing(-3)
   }
 };
 
