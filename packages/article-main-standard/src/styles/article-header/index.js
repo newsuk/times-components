@@ -3,7 +3,7 @@ import { fontSizes, spacing } from "@times-components/styleguide";
 import globalStyle from "../shared";
 import sharedStyles from "./shared";
 
-const androidStyles = {
+const appStyles = {
   ...sharedStyles,
   articleHeadLineText: {
     ...sharedStyles.articleHeadLineText,
