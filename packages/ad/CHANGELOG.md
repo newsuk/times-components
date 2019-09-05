@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.7.12](https://github.com/newsuk/times-components/compare/@times-components/ad@2.7.11...@times-components/ad@2.7.12) (2019-09-05)
+
+
+### Bug Fixes
+
+* REPLAT-7354 unruly expect an object always ([#2255](https://github.com/newsuk/times-components/issues/2255)) ([4206e62](https://github.com/newsuk/times-components/commit/4206e62))
+
+
+
+
+
 ## [2.7.11](https://github.com/newsuk/times-components/compare/@times-components/ad@2.7.10...@times-components/ad@2.7.11) (2019-09-02)
 
 **Note:** Version bump only for package @times-components/ad
