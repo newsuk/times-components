@@ -34,7 +34,7 @@ const appStyles = {
 
 const styles = StyleSheet.create({
   ...globalStyle,
-  ...androidStyles
+  ...appStyles
 });
 
 export default styles;
