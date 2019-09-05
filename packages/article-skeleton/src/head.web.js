@@ -79,8 +79,16 @@ const PUBLICATION_NAMES = {
   TIMES: "The Times"
 };
 
-const getThumbnailUrlFromVideo = article =>
-  get(article.leadAsset.posterImage, "crop169.url", null);
+const get169CropUrl = asset => get(asset, "crop169.url", null);
+
+const getVideoLeadAssetUrl = article =>
+  get169CropUrl(get(article, "leadAsset.posterImage", null));
+
+const getImageLeadAssetUrl = article =>
+  get169CropUrl(get(article, "leadAsset", null));
+
+const getArticleLeadAssetUrl = article =>
+  (article.hasVideo ? getVideoLeadAssetUrl : getImageLeadAssetUrl)(article);
 
 const getThumbnailUrlFromImage = article => {
   const tileUrl =
@@ -120,7 +128,7 @@ function Head({ article, paidContentClassName, faviconUrl }) {
       : null;
   const sectionname = getSectionName(article);
   const leadassetUrl = appendToUrl(
-    get(leadAsset, "crop169.url", null),
+    getArticleLeadAssetUrl(article),
     "resize",
     685
   );
@@ -128,7 +136,7 @@ function Head({ article, paidContentClassName, faviconUrl }) {
   const title = headline || shortHeadline;
   const datePublished = new Date(publishedTime).toISOString().split("T")[0];
   const thumbnailUrl = hasVideo
-    ? getThumbnailUrlFromVideo(article)
+    ? getVideoLeadAssetUrl(article)
     : getThumbnailUrlFromImage(article);
 
   const jsonLD = {
