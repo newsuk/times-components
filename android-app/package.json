@@ -14,7 +14,7 @@
     "@times-components/pages": "2.0.183",
     "@times-components/text-flow": "0.2.10",
     "prop-types": "15.7.2",
-    "react": "16.8.6",
+    "react": "16.9.0",
     "react-native": "0.59.10",
     "react-native-device-info": "2.3.2",
     "react-native-svg": "9.4.0",

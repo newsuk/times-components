@@ -27,11 +27,11 @@ class MessageBar extends Component {
     }, delay);
   }
 
-  componentWillReceiveProps(props) {
-    const { message, delay, close } = props;
-    const { message: oldMessage } = this.props;
+  componentDidUpdate(prevProps) {
+    const { message: newMessage } = this.props;
+    const { message, delay, close } = prevProps;
 
-    if (message === oldMessage) {
+    if (message === newMessage) {
       clearTimeout(this.timeout);
       this.timeout = setTimeout(() => {
         this.animateClosed(() => {
