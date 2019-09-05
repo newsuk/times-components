@@ -4,7 +4,7 @@ exports[`Sunday Times magazine section 1`] = `
 <RCTScrollView
   style={
     Object {
-      "paddingTop": 10,
+      "marginTop": 10,
     }
   }
 >
@@ -126,7 +126,7 @@ exports[`Times magazine section 1`] = `
 <RCTScrollView
   style={
     Object {
-      "paddingTop": 10,
+      "marginTop": 10,
     }
   }
 >
@@ -373,7 +373,7 @@ exports[`section page 1`] = `
 <RCTScrollView
   style={
     Object {
-      "paddingTop": 10,
+      "marginTop": 10,
     }
   }
 >

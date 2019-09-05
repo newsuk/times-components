@@ -39,6 +39,6 @@ export default breakpoint => ({
     fontSize: 20
   },
   tabletSpacing: {
-    paddingTop: spacing(2)
+    marginTop: spacing(2)
   }
 });
