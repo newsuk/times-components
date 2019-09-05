@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.27](https://github.com/newsuk/times-components/compare/@times-components/section@1.2.26...@times-components/section@1.2.27) (2019-09-05)
+
+
+### Bug Fixes
+
+* cutting of the last slice on tablet ([#2265](https://github.com/newsuk/times-components/issues/2265)) ([f6e20c7](https://github.com/newsuk/times-components/commit/f6e20c7))
+
+
+
+
+
 ## [1.2.26](https://github.com/newsuk/times-components/compare/@times-components/section@1.2.25...@times-components/section@1.2.26) (2019-09-05)
 
 **Note:** Version bump only for package @times-components/section

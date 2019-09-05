@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.78.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.77.14...@times-components/edition-slices@0.78.0) (2019-09-05)
+
+
+### Features
+
+* REPLAT-8279 comment lead and cartoon 1024 ([#2266](https://github.com/newsuk/times-components/issues/2266)) ([c599797](https://github.com/newsuk/times-components/commit/c599797))
+
+
+
+
+
 ## [0.77.14](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.77.13...@times-components/edition-slices@0.77.14) (2019-09-05)
 
 
