@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 import { spacing } from "@times-components/styleguide";
 import nativeStyles from "./native";
 
-const androidStyles = {
+const appStyles = {
   ...nativeStyles,
   articleHeadline: {
     ...nativeStyles.articleHeadline,
