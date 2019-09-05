@@ -12,12 +12,19 @@ const headlineFontSizeResolver = {
   [editionBreakpoints.huge]: 45
 };
 
+const keylinePadding = {
+  [editionBreakpoints.medium]: spacing(2),
+  [editionBreakpoints.wide]: spacing(3),
+  [editionBreakpoints.huge]: spacing(3)
+};
+
 const styles = (breakpoint = editionBreakpoints.medium) => ({
   container: {
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
-    padding: spacing(2)
+    padding: spacing(2),
+    paddingRight: keylinePadding[breakpoint]
   },
   headline: {
     color: colours.functional.brandColour,

@@ -78,6 +78,7 @@ exports[`1. comment lead and cartoon - medium 1`] = `
       className="css-view-1dbjc4n IS3"
     >
       <TileAI
+        breakpoint="wide"
         tileName="cartoon"
       />
     </div>
@@ -2124,6 +2125,7 @@ exports[`16. comment lead and cartoon - wide 1`] = `
       className="css-view-1dbjc4n IS3"
     >
       <TileAI
+        breakpoint="wide"
         tileName="cartoon"
       />
     </div>
@@ -4173,6 +4175,7 @@ exports[`31. comment lead and cartoon - huge 1`] = `
       className="css-view-1dbjc4n IS3"
     >
       <TileAI
+        breakpoint="wide"
         tileName="cartoon"
       />
     </div>

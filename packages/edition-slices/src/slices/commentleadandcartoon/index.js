@@ -35,7 +35,14 @@ class CommentLeadAndCartoonSlice extends Component {
     return (
       <CommentLeadAndCartoon
         breakpoint={editionBreakpoint}
-        cartoon={<TileAI onPress={onPress} tile={cartoon} tileName="cartoon" />}
+        cartoon={
+          <TileAI
+            onPress={onPress}
+            tile={cartoon}
+            tileName="cartoon"
+            breakpoint={editionBreakpoint}
+          />
+        }
         lead={
           <TileAH
             onPress={onPress}

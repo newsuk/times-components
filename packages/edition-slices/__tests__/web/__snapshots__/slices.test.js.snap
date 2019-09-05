@@ -690,6 +690,7 @@ exports[`15. comment lead and cartoon 1`] = `
     <div />
     <div>
       <TileAI
+        breakpoint="wide"
         tileName="cartoon"
       />
     </div>

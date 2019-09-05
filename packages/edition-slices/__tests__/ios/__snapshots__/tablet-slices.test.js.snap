@@ -12,6 +12,7 @@ exports[`1. comment lead and cartoon - medium 1`] = `
     <View />
     <View>
       <TileAI
+        breakpoint="medium"
         tileName="cartoon"
       />
     </View>
@@ -510,6 +511,7 @@ exports[`16. comment lead and cartoon - wide 1`] = `
     <View />
     <View>
       <TileAI
+        breakpoint="wide"
         tileName="cartoon"
       />
     </View>
@@ -1016,6 +1018,7 @@ exports[`31. comment lead and cartoon - huge 1`] = `
       <View />
       <View>
         <TileAI
+          breakpoint="huge"
           tileName="cartoon"
         />
       </View>
