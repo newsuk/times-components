@@ -1,4 +1,4 @@
 import { addTypenameToDocument } from "apollo-utilities";
-import articleBookmarkedFragment from "./article-bookmarked.graphql";
+import articleBookmarkedFragment from "./article_bookmarked.graphql";
 
 export default addTypenameToDocument(articleBookmarkedFragment);
