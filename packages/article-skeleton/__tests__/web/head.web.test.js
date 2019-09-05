@@ -11,7 +11,10 @@ import {
 } from "@times-components/jest-serializer";
 
 import Head from "../../src/head.web";
-import articleFixture, { testFixture, videoLeadAsset } from "../../fixtures/full-article";
+import articleFixture, {
+  testFixture,
+  videoLeadAsset
+} from "../../fixtures/full-article";
 
 jest.mock("react-helmet-async", () => ({ Helmet: "Helmet" }));
 
