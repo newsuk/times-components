@@ -3,7 +3,7 @@ import {
   leadOneAndTwoRoles,
   opinionOneAndTwoRoles,
   standardRoles
-} from "../src/slice-layout";
+} from "../src/roles";
 
 const tests = [
   {

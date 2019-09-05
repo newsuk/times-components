@@ -3,6 +3,7 @@ import { editionBreakpoints } from "@times-components/styleguide";
 import { iterator } from "@times-components/test-utils";
 import createItem from "./utils";
 import { SecondaryTwoAndTwoSlice } from "../src/slice-layout";
+import styles from "../src/templates/secondarytwoandtwo/styles";
 
 export default renderComponent => {
   const tests = [
@@ -67,6 +68,14 @@ export default renderComponent => {
         );
 
         expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "secondary two and two - wrong breakpoint",
+      test() {
+        expect(styles("wrong-breakpoint")).toEqual(
+          styles(editionBreakpoints.small)
+        );
       }
     }
   ];

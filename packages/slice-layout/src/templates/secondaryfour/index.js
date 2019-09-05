@@ -1,8 +1,8 @@
 import React, { Fragment } from "react";
 import { View } from "react-native";
 import { editionBreakpoints } from "@times-components/styleguide";
+import PropTypes from "prop-types";
 import styleFactory from "./styles";
-import { propTypes, defaultProps } from "./proptypes";
 import { ItemRowSeparator, ItemColSeparator } from "../shared";
 import HorizontalLayout from "../horizontallayout";
 import VerticalLayout from "../verticallayout";
@@ -57,7 +57,16 @@ const SecondaryFourSlice = ({
   );
 };
 
-SecondaryFourSlice.propTypes = propTypes;
-SecondaryFourSlice.defaultProps = defaultProps;
+SecondaryFourSlice.propTypes = {
+  breakpoint: PropTypes.string,
+  secondary1: PropTypes.node.isRequired,
+  secondary2: PropTypes.node.isRequired,
+  secondary3: PropTypes.node.isRequired,
+  secondary4: PropTypes.node.isRequired
+};
+
+SecondaryFourSlice.defaultProps = {
+  breakpoint: editionBreakpoints.small
+};
 
 export default SecondaryFourSlice;

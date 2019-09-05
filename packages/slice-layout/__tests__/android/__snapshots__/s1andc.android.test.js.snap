@@ -2,17 +2,13 @@
 
 exports[`1. secondary one and columnist - small 1`] = `
 <View>
-  <View>
-    <Text>
-      columnist
-    </Text>
-  </View>
+  <Text>
+    secondary
+  </Text>
   <View />
-  <View>
-    <Text>
-      secondary
-    </Text>
-  </View>
+  <Text>
+    columnist
+  </Text>
 </View>
 `;
 

@@ -1,10 +1,10 @@
 import React, { Fragment } from "react";
 import { View } from "react-native";
 import { editionBreakpoints } from "@times-components/styleguide";
+import PropTypes from "prop-types";
 import styleFactory from "./styles";
 import { ItemRowSeparator, ItemColSeparator } from "../shared";
 import HorizontalLayout from "../horizontallayout";
-import propTypes from "./proptypes";
 import VerticalLayout from "../verticallayout";
 
 const ListTwoAndSixNoPic = ({
@@ -79,6 +79,20 @@ const ListTwoAndSixNoPic = ({
   );
 };
 
-ListTwoAndSixNoPic.propTypes = propTypes;
+ListTwoAndSixNoPic.propTypes = {
+  breakpoint: PropTypes.string,
+  lead1: PropTypes.node.isRequired,
+  lead2: PropTypes.node.isRequired,
+  support1: PropTypes.node.isRequired,
+  support2: PropTypes.node.isRequired,
+  support3: PropTypes.node.isRequired,
+  support4: PropTypes.node.isRequired,
+  support5: PropTypes.node.isRequired,
+  support6: PropTypes.node.isRequired
+};
+
+ListTwoAndSixNoPic.defaultProps = {
+  breakpoint: editionBreakpoints.small
+};
 
 export default ListTwoAndSixNoPic;

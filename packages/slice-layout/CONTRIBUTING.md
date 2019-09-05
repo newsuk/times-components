@@ -52,8 +52,7 @@ An example template looks like this:
     ├── index.js
     ├── index.web.js
     ├── proptypes.js
-    ├── responsive.web.js
-    └── roles.js
+    └── responsive.web.js
 ```
 
 ### Image placeholder rules

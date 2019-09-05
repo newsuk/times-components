@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import propTypes from "./proptypes";
+import PropTypes from "prop-types";
 import { getSeparator, SliceContainer } from "../styles/responsive";
 import { getChildrenContainer, ChildContainer } from "./responsive";
 import { getConfig, getConfigWrapper } from "./config.web";
@@ -49,6 +49,9 @@ class StandardSlice extends Component {
   }
 }
 
-StandardSlice.propTypes = propTypes;
+StandardSlice.propTypes = {
+  itemCount: PropTypes.number.isRequired,
+  renderItems: PropTypes.func.isRequired
+};
 
 export default StandardSlice;

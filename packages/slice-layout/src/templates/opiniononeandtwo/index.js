@@ -1,8 +1,8 @@
 import React from "react";
 import { View } from "react-native";
+import PropTypes from "prop-types";
 import styles from "../styles";
 import { opinionConfig, supportConfig } from "./config";
-import propTypes from "./proptypes";
 import opinionStyles from "./styles";
 
 const OpinionOneAndTwoSlice = ({
@@ -44,6 +44,10 @@ const OpinionOneAndTwoSlice = ({
   );
 };
 
-OpinionOneAndTwoSlice.propTypes = propTypes;
+OpinionOneAndTwoSlice.propTypes = {
+  renderOpinion: PropTypes.func.isRequired,
+  renderSupport1: PropTypes.func.isRequired,
+  renderSupport2: PropTypes.func.isRequired
+};
 
 export default OpinionOneAndTwoSlice;
