@@ -1,10 +1,9 @@
 import React, { Fragment } from "react";
 import { View } from "react-native";
-import Caption, { CentredCaption } from "@times-components/caption";
+import Caption from "@times-components/caption";
 import Context from "@times-components/context";
 import { ModalImage } from "@times-components/image";
 import InsetCaption from "./inset-caption";
-import InsetCenteredCaption from "./inset-centered-caption";
 import InlineImage from "./inline-image";
 import FullWidthCaption from "./fullwidth-caption";
 import { propTypes, defaultPropTypes } from "./article-image-prop-types";

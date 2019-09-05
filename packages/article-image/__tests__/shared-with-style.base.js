@@ -1,6 +1,5 @@
 import React from "react";
 import { setIsTablet } from "@times-components/mocks/dimensions";
-import { ContextProviderWithDefaults } from "@times-components/context";
 import { iterator } from "@times-components/test-utils";
 import ArticleImage from "../src/article-image";
 import primaryImageFixture from "../fixtures/primary-image";
