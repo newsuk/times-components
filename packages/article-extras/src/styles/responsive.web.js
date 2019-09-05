@@ -1,6 +1,7 @@
 /* eslint-disable import/prefer-default-export */
 import styled from "styled-components";
 import { breakpoints, colours } from "@times-components/styleguide";
+import {TagList} from "newskit";
 
 export const ShareAndSaveContainer = styled.div`
   border-top-color: ${colours.functional.keyline};
@@ -18,4 +19,8 @@ export const ShareAndSaveContainer = styled.div`
     `border-bottom-color: ${colours.functional.keyline};
      border-bottom-style: solid;
      border-bottom-width: 1px;`};
+`;
+
+export const ArticleTopicsList = styled(TagList)`
+  text-align: center;
 `;

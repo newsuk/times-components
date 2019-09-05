@@ -5,8 +5,9 @@ import ArticleComments from "@times-components/article-comments";
 import RelatedArticles from "@times-components/related-articles";
 import { MessageContext } from "@times-components/message-bar";
 import SaveAndShareBar from "@times-components/save-and-share-bar";
-import ArticleTopics from "./article-topics";
-import { ShareAndSaveContainer } from "./styles/responsive";
+import {TagSize, BorderRadiusShape, ThemeProvider, lightTheme} from "newskit";
+import { ShareAndSaveContainer, ArticleTopicsList } from "./styles/responsive";
+import Context from "@times-components/context";
 
 const ArticleExtras = ({
   analyticsStream,
@@ -28,7 +29,19 @@ const ArticleExtras = ({
   );
   return (
     <UserState state={UserState.fullArticle} fallback={sponsoredArticle}>
-      <ArticleTopics topics={topics} />
+      <ThemeProvider theme={lightTheme}>
+        <Context.Consumer>
+          {({ makeTopicUrl }) => (
+            <ArticleTopicsList
+              size={TagSize.Medium}
+              shape={BorderRadiusShape.Squares} 
+              tagData={topics.map(topic => ({
+                label: topic.name,
+                href: makeTopicUrl(topic)
+              }))} />
+          )}
+      </Context.Consumer>
+    </ThemeProvider>
       {(savingEnabled || sharingEnabled) && (
         <UserState state={UserState.loggedInOrShared}>
           <MessageContext.Consumer>
