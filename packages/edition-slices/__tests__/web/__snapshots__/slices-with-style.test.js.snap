@@ -3154,6 +3154,7 @@ exports[`15. comment lead and cartoon 1`] = `
       className="css-view-1dbjc4n IS3"
     >
       <TileAI
+        breakpoint="wide"
         tileName="cartoon"
       />
     </div>

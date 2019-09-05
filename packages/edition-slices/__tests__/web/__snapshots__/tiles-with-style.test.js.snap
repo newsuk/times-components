@@ -3496,6 +3496,7 @@ exports[`39. tile ah 1`] = `
       "flex": 1,
       "justifyContent": "center",
       "padding": "10px",
+      "paddingRight": "10px",
     }
   }
   url="/article/123"
@@ -3560,6 +3561,7 @@ exports[`40. tile ai 1`] = `
     Object {
       "alignItems": "center",
       "padding": "10px",
+      "paddingLeft": "10px",
     }
   }
   url="/article/123"
