@@ -18,19 +18,13 @@ const captionStyle = {
   }
 };
 
-function getCaptionComponent(display, { imageCaptionAlignment = {} }) {
+function getCaptionComponent(display) {
   if (display === "primary") {
-    return imageCaptionAlignment.primary === "center"
-      ? InsetCenteredCaption
-      : InsetCaption;
+    return InsetCaption;
   }
 
   if (display === "fullwidth") {
     return FullWidthCaption;
-  }
-
-  if (imageCaptionAlignment[display] === "center") {
-    return CentredCaption;
   }
 
   return Caption;
