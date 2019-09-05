@@ -73,6 +73,8 @@ class LeadersSlice extends Component {
       <ResponsiveSlice
         renderSmall={this.renderSlice}
         renderMedium={this.renderSlice}
+        renderWide={this.renderSlice}
+        renderHuge={this.renderSlice}
       />
     );
   }

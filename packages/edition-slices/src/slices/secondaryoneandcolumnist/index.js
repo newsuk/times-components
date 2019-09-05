@@ -61,8 +61,10 @@ class SecondaryOneAndColumnist extends Component {
   render() {
     return (
       <ResponsiveSlice
-        renderMedium={this.renderMedium}
         renderSmall={this.renderSmall}
+        renderMedium={this.renderMedium}
+        renderWide={this.renderMedium}
+        renderHuge={this.renderMedium}
       />
     );
   }
