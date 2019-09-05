@@ -1,7 +1,7 @@
 import React from "react";
 import { View } from "react-native";
+import PropTypes from "prop-types";
 import { leadConfig, supportConfig } from "./config";
-import propTypes from "./proptypes";
 import styles from "../styles";
 
 const LeadOneAndTwoSlice = ({ renderLead, renderSupport1, renderSupport2 }) => {
@@ -37,6 +37,10 @@ const LeadOneAndTwoSlice = ({ renderLead, renderSupport1, renderSupport2 }) => {
   );
 };
 
-LeadOneAndTwoSlice.propTypes = propTypes;
+LeadOneAndTwoSlice.propTypes = {
+  renderLead: PropTypes.func.isRequired,
+  renderSupport1: PropTypes.func.isRequired,
+  renderSupport2: PropTypes.func.isRequired
+};
 
 export default LeadOneAndTwoSlice;

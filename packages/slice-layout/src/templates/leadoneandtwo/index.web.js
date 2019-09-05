@@ -1,5 +1,5 @@
 import React from "react";
-import propTypes from "./proptypes";
+import PropTypes from "prop-types";
 import { getSeparator, SliceContainer } from "../styles/responsive";
 import {
   getContainer,
@@ -57,6 +57,10 @@ const LeadOneAndTwoSlice = ({ renderLead, renderSupport1, renderSupport2 }) => {
   );
 };
 
-LeadOneAndTwoSlice.propTypes = propTypes;
+LeadOneAndTwoSlice.propTypes = {
+  renderLead: PropTypes.func.isRequired,
+  renderSupport1: PropTypes.func.isRequired,
+  renderSupport2: PropTypes.func.isRequired
+};
 
 export default LeadOneAndTwoSlice;

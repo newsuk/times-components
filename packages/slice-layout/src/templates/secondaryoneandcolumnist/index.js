@@ -1,9 +1,9 @@
 import React from "react";
 import { editionBreakpoints } from "@times-components/styleguide";
+import PropTypes from "prop-types";
 import VerticalLayout from "../verticallayout";
 import HorizontalLayout from "../horizontallayout";
 import styleFactory from "./styles";
-import propTypes from "./proptypes";
 
 const SecondaryOneAndColumnistSlice = ({
   breakpoint,
@@ -27,6 +27,14 @@ const SecondaryOneAndColumnistSlice = ({
   );
 };
 
-SecondaryOneAndColumnistSlice.propTypes = propTypes;
+SecondaryOneAndColumnistSlice.propTypes = {
+  breakpoint: PropTypes.string,
+  columnist: PropTypes.node.isRequired,
+  secondary: PropTypes.node.isRequired
+};
+
+SecondaryOneAndColumnistSlice.defaultProps = {
+  breakpoint: editionBreakpoints.small
+};
 
 export default SecondaryOneAndColumnistSlice;

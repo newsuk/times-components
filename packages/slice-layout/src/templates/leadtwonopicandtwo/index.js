@@ -1,8 +1,8 @@
 import React from "react";
 import { View } from "react-native";
+import PropTypes from "prop-types";
 import { editionBreakpoints } from "@times-components/styleguide";
 import { ItemColSeparator } from "../shared";
-import { propTypes, defaultProps } from "./proptypes";
 import styleFactory from "./styles";
 import VerticalLayout from "../verticallayout";
 
@@ -43,7 +43,16 @@ const LeadTwoNoPicAndTwoSlice = ({
   return <VerticalLayout tiles={[lead1, lead2, support1, support2]} />;
 };
 
-LeadTwoNoPicAndTwoSlice.propTypes = propTypes;
-LeadTwoNoPicAndTwoSlice.defaultProps = defaultProps;
+LeadTwoNoPicAndTwoSlice.propTypes = {
+  breakpoint: PropTypes.string,
+  lead1: PropTypes.node.isRequired,
+  lead2: PropTypes.node.isRequired,
+  support1: PropTypes.node.isRequired,
+  support2: PropTypes.node.isRequired
+};
+
+LeadTwoNoPicAndTwoSlice.defaultProps = {
+  breakpoint: editionBreakpoints.small
+};
 
 export default LeadTwoNoPicAndTwoSlice;

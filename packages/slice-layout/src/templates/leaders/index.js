@@ -1,9 +1,9 @@
 import React from "react";
 import { editionBreakpoints } from "@times-components/styleguide";
+import PropTypes from "prop-types";
 import styleFactory from "./styles";
 import VerticalLayout from "../verticallayout";
 import HorizontalLayout from "../horizontallayout";
-import propTypes from "./proptypes";
 
 const Leaders = ({ leader1, leader2, leader3, breakpoint }) => {
   const styles = styleFactory(breakpoint);
@@ -30,6 +30,11 @@ const Leaders = ({ leader1, leader2, leader3, breakpoint }) => {
   );
 };
 
-Leaders.propTypes = propTypes;
+Leaders.propTypes = {
+  leader1: PropTypes.node.isRequired,
+  leader2: PropTypes.node.isRequired,
+  leader3: PropTypes.node.isRequired,
+  breakpoint: PropTypes.node.isRequired
+};
 
 export default Leaders;

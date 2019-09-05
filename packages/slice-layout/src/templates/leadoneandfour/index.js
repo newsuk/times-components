@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { View } from "react-native";
+import PropTypes from "prop-types";
 import { editionBreakpoints } from "@times-components/styleguide";
-import { defaultProps, propTypes } from "./proptypes";
 import { ItemColSeparator } from "../shared";
 import VerticalLayout from "../verticallayout";
 import stylesFactory from "./styles";
@@ -38,7 +38,17 @@ const leadOneAndFourSlice = ({
   );
 };
 
-leadOneAndFourSlice.propTypes = propTypes;
-leadOneAndFourSlice.defaultProps = defaultProps;
+leadOneAndFourSlice.propTypes = {
+  breakpoint: PropTypes.string,
+  lead: PropTypes.node.isRequired,
+  support1: PropTypes.node.isRequired,
+  support2: PropTypes.node.isRequired,
+  support3: PropTypes.node.isRequired,
+  support4: PropTypes.node.isRequired
+};
+
+leadOneAndFourSlice.defaultProps = {
+  breakpoint: editionBreakpoints.small
+};
 
 export default leadOneAndFourSlice;

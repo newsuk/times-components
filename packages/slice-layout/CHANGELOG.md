@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.37.9](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.37.8...@times-components/slice-layout@0.37.9) (2019-09-05)
+
+
+### Bug Fixes
+
+* lint in slice-layout ([#2261](https://github.com/newsuk/times-components/issues/2261)) ([f9a0ebe](https://github.com/newsuk/times-components/commit/f9a0ebe))
+
+
+
+
+
 ## [0.37.8](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.37.7...@times-components/slice-layout@0.37.8) (2019-09-04)
 
 
