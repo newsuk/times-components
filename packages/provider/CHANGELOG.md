@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.17.42](https://github.com/newsuk/times-components/compare/@times-components/provider@1.17.41...@times-components/provider@1.17.42) (2019-09-06)
+
+
+### Bug Fixes
+
+* broken querys ([#2267](https://github.com/newsuk/times-components/issues/2267)) ([de6fffb](https://github.com/newsuk/times-components/commit/de6fffb))
+
+
+
+
+
 ## [1.17.41](https://github.com/newsuk/times-components/compare/@times-components/provider@1.17.40...@times-components/provider@1.17.41) (2019-09-05)
 
 **Note:** Version bump only for package @times-components/provider

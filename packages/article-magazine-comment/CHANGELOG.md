@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.10.4](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.10.3...@times-components/article-magazine-comment@3.10.4) (2019-09-06)
+
+
+### Bug Fixes
+
+* headlines should be the same on all native platforms ([#2257](https://github.com/newsuk/times-components/issues/2257)) ([c068e29](https://github.com/newsuk/times-components/commit/c068e29))
+
+
+
+
+
 ## [3.10.3](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.10.2...@times-components/article-magazine-comment@3.10.3) (2019-09-05)
 
 **Note:** Version bump only for package @times-components/article-magazine-comment
