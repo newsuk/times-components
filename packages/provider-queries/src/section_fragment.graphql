@@ -1432,22 +1432,6 @@ fragment listingAsset11 on Media {
   }
 }
 
-fragment listingAsset45 on Media {
-  __typename
-  ... on Video {
-    posterImage {
-      crop45: crop(ratio: "4:5") {
-        ...sectionCropProps
-      }
-    }
-  }
-  ... on Image {
-    crop45: crop(ratio: "4:5") {
-      ...sectionCropProps
-    }
-  }
-}
-
 fragment listingAsset23 on Media {
   __typename
   ... on Video {
@@ -1513,22 +1497,6 @@ fragment leadAsset11 on Media {
   }
   ... on Image {
     crop11: crop(ratio: "1:1") {
-      ...sectionCropProps
-    }
-  }
-}
-
-fragment leadAsset45 on Media {
-  __typename
-  ... on Video {
-    posterImage {
-      crop45: crop(ratio: "4:5") {
-        ...sectionCropProps
-      }
-    }
-  }
-  ... on Image {
-    crop45: crop(ratio: "4:5") {
       ...sectionCropProps
     }
   }
