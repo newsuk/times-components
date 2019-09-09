@@ -29,6 +29,12 @@ const wideBreakpointStyles = {
   container: {
     ...mediumBreakpointStyles.container,
     marginHorizontal: spacing(2)
+  },
+  headline: {
+    fontFamily: fonts.headline,
+    fontSize: 40,
+    lineHeight: 40,
+    marginBottom: spacing(2)
   }
 };
 
