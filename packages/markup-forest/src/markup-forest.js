@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 export const renderTree = (tree, renderers, key = "0", indx = 0) => {
   const { name, attributes, children } = tree;
 
-  const renderer = renderers[name];
+  const renderer = renderers[name] || renderers.unknown;
 
   if (!renderer) return null;
 
