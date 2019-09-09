@@ -1,6 +1,6 @@
 {
   "name": "@times-components/section",
-  "version": "1.2.28",
+  "version": "1.2.29",
   "description": "Section Page",
   "main": "dist/section",
   "dev": "src/section",

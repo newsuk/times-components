@@ -1,6 +1,6 @@
 {
   "name": "@times-components/pages",
-  "version": "2.0.187",
+  "version": "2.0.188",
   "main": "dist/pages",
   "dev": "src/pages",
   "scripts": {
@@ -58,7 +58,7 @@
     "@times-components/context": "1.0.41",
     "@times-components/provider": "1.17.42",
     "@times-components/schema": "0.6.20",
-    "@times-components/section": "1.2.28",
+    "@times-components/section": "1.2.29",
     "@times-components/styleguide": "3.28.47",
     "@times-components/topic": "5.0.120",
     "apollo-cache-inmemory": "1.5.1",
