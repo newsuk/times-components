@@ -280,14 +280,16 @@ exports[`1. a full article 1`] = `
           This is video caption
         </figcaption>
       </figure>
-      <nav>
-        <a
-          href="/topic/topic"
-          target={null}
-        >
-          Topic
-        </a>
-      </nav>
+      <ul>
+        <li>
+          <a
+            href="/topic/topic"
+            size="medium"
+          >
+            Topic
+          </a>
+        </li>
+      </ul>
       Share
       <a
         target={null}

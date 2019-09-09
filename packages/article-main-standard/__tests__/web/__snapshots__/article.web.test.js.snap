@@ -150,6 +150,16 @@ exports[`1. an article 1`] = `
                   </div>
                 </div>
               </div>
+              <ul>
+                <li>
+                  <a
+                    href="/topic/topic"
+                    size="medium"
+                  >
+                    Topic
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
           <div>
@@ -724,18 +734,16 @@ exports[`6. should show topics when logged in or shared 1`] = `
                   </div>
                 </div>
               </div>
-              <nav>
-                <ArticleTopics
-                  topics={
-                    Array [
-                      Object {
-                        "name": "Topic",
-                        "slug": "topic",
-                      },
-                    ]
-                  }
-                />
-              </nav>
+              <ul>
+                <li>
+                  <a
+                    href="/topic/topic"
+                    size="medium"
+                  >
+                    Topic
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
           <div>
@@ -1024,6 +1032,16 @@ exports[`7. an article with no byline 1`] = `
                   </div>
                 </div>
               </div>
+              <ul>
+                <li>
+                  <a
+                    href="/topic/topic"
+                    size="medium"
+                  >
+                    Topic
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
           <div>
@@ -1289,6 +1307,16 @@ exports[`8. an article with no label 1`] = `
                   </div>
                 </div>
               </div>
+              <ul>
+                <li>
+                  <a
+                    href="/topic/topic"
+                    size="medium"
+                  >
+                    Topic
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
           <div>

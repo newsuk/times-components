@@ -474,45 +474,41 @@ exports[`full article with style 1`] = `
 }
 
 .IS2 {
-  justify-content: flex-start;
+  display: none;
 }
 
 .IS3 {
-  display: none;
+  height: 100%;
+  width: 100%;
 }
 
 .IS4 {
   height: 100%;
   width: 100%;
+  position: relative;
 }
 
 .IS5 {
   height: 100%;
   width: 100%;
-  position: relative;
 }
 
 .IS6 {
-  height: 100%;
-  width: 100%;
-}
-
-.IS7 {
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
-.IS8 {
+.IS7 {
   padding-bottom: 56.25%;
   position: relative;
 }
 
-.IS9 {
+.IS8 {
   margin: 0;
 }
 
-.IS10 {
+.IS9 {
   border-bottom-color: #DBDBDB;
   border-bottom-width: 1;
   border-top-color: #DBDBDB;
@@ -636,11 +632,19 @@ exports[`full article with style 1`] = `
                   </div>
                 </div>
               </div>
-              <nav>
-                <ArticleTopics
-                  className="IS2"
-                />
-              </nav>
+              <ul
+                className="css-1sct6h1"
+              >
+                <li
+                  className="css-cd6gss"
+                >
+                  <a
+                    className="css-701kgn"
+                  >
+                    Topic
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
           <ArticleLeadAsset
@@ -676,7 +680,7 @@ exports[`full article with style 1`] = `
             className="c9 c13 c15 c16"
           >
             <div
-              className="IS3"
+              className="IS2"
             />
             <div>
               <div
@@ -722,22 +726,22 @@ exports[`full article with style 1`] = `
             className="c19 responsiveweb__PrimaryImg-sc-16nqyj8-5 c19 css-view-1dbjc4n"
           >
             <figure
-              className="IS9"
+              className="IS8"
             >
               <div
-                className="css-view-1dbjc4n IS8"
+                className="css-view-1dbjc4n IS7"
               >
                 <div
-                  className="css-view-1dbjc4n IS7"
+                  className="css-view-1dbjc4n IS6"
                 >
                   <div
-                    className="IS6"
+                    className="IS5"
                   >
                     <div
-                      className="IS5"
+                      className="IS4"
                     >
                       <video
-                        className="video-js IS4"
+                        className="video-js IS3"
                       />
                     </div>
                   </div>
@@ -765,7 +769,7 @@ exports[`full article with style 1`] = `
             </figure>
           </div>
           <Ad
-            className="IS10"
+            className="IS9"
           />
           <div>
             <div
