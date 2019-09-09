@@ -124,7 +124,6 @@ class Section extends Component {
                   onViewed ? this.onViewableItemsChanged : null
                 }
                 renderItem={this.renderItem}
-                style={isTablet ? styles.tabletSpacing : null}
                 windowSize={3}
               />
             );
