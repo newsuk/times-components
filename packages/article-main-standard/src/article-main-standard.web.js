@@ -4,7 +4,7 @@ import { getHeadline, getLeadAsset } from "@times-components/utils";
 import Caption from "@times-components/caption";
 import ArticleHeader from "./article-header/article-header";
 import ArticleMeta from "./article-meta/article-meta";
-import {TagList,TagSize, BorderRadiusShape, ThemeProvider, lightTheme} from "newskit";
+import {TagList, TagSize, BorderRadiusShape, ThemeProvider, lightTheme} from "newskit";
 import {
   articleDefaultProps,
   articlePropTypes
