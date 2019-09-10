@@ -158,3 +158,87 @@ exports[`3. group of topics at xlarge scale 1`] = `
   </View>
 </View>
 `;
+
+exports[`4. article topic with style 1`] = `
+<View
+  style={
+    Object {
+      "marginRight": 10,
+      "marginTop": 10,
+    }
+  }
+>
+  <View>
+    <View
+      style={
+        Object {
+          "borderColor": "#DBDBDB",
+          "borderRadius": 2,
+          "borderWidth": 1,
+          "paddingBottom": 10,
+          "paddingLeft": 15,
+          "paddingRight": 15,
+          "paddingTop": 10,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#696969",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 17,
+            "lineHeight": 20,
+            "position": "relative",
+            "top": 1,
+          }
+        }
+      >
+        Test
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`5. article topic with no additional style 1`] = `
+<View
+  style={
+    Object {
+      "marginRight": 10,
+      "marginTop": 10,
+    }
+  }
+>
+  <View>
+    <View
+      style={
+        Object {
+          "borderColor": "#DBDBDB",
+          "borderRadius": 2,
+          "borderWidth": 1,
+          "paddingBottom": 10,
+          "paddingLeft": 15,
+          "paddingRight": 15,
+          "paddingTop": 10,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#696969",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 13,
+            "lineHeight": 13,
+            "position": "relative",
+            "top": 1,
+          }
+        }
+      >
+        Test
+      </Text>
+    </View>
+  </View>
+</View>
+`;

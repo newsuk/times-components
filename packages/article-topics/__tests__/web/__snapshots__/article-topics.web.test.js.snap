@@ -118,3 +118,21 @@ Array [
   ],
 ]
 `;
+
+exports[`4. article topic 1`] = `
+<div>
+  <a
+    href="/topic/test-slug"
+    target={null}
+  >
+    <div>
+      <div
+        role="button"
+        tabIndex="0"
+      >
+        Test
+      </div>
+    </div>
+  </a>
+</div>
+`;

@@ -652,3 +652,45 @@ exports[`13. article summary component with a strapline 1`] = `
 `;
 
 exports[`14. article summary content component without an ast to render null 1`] = `null`;
+
+exports[`16. article summary component with no headline and no label title 1`] = `
+<View>
+  <Text>
+    <Text>
+      
+      Test paragraph
+      ...
+    </Text>
+  </Text>
+  <Text>
+    <DatePublication
+      date="2017-07-01T14:32:00.000Z"
+      publication="SUNDAYTIMES"
+    />
+  </Text>
+</View>
+`;
+
+exports[`17. article summary content component with white space height 1`] = `
+<Text
+  numberOfLines={5}
+>
+  <Text>
+    
+    Test paragraph
+    ...
+  </Text>
+</Text>
+`;
+
+exports[`18. article summary content component without white space height 1`] = `
+<Text
+  numberOfLines={2}
+>
+  <Text>
+    
+    Test paragraph
+    ...
+  </Text>
+</Text>
+`;

@@ -218,3 +218,111 @@ exports[`3. group of topics at xlarge scale 1`] = `
   </div>
 </div>
 `;
+
+exports[`4. article topic with style 1`] = `
+<style>
+.S1 {
+  color: rgba(105,105,105,1.00);
+  font-family: GillSansMTStd-Medium;
+}
+
+.S2 {
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-top-color: rgba(219,219,219,1.00);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-top-width: 1px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+}
+
+.S3 {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.IS1 {
+  font-size: 17px;
+  line-height: 20px;
+}
+</style>
+
+<div
+  className="css-view-1dbjc4n r-marginRight-zso239 r-marginTop-156q2ks S3"
+>
+  <a
+    className="linkweb__RespLink-yfb9n-0 cCCShB"
+  >
+    <div
+      className="css-view-1dbjc4n r-borderColor-1kv57cf r-borderRadius-1jkafct r-borderWidth-rs99b7 r-paddingBottom-1mi0q7o r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-paddingTop-m611by S2"
+    >
+      <div
+        className="css-cursor-18t94o4 css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-position-bnwqim r-top-o9xkwf IS1 S1"
+      >
+        Test
+      </div>
+    </div>
+  </a>
+</div>
+`;
+
+exports[`5. article topic with no additional style 1`] = `
+<style>
+.S1 {
+  color: rgba(105,105,105,1.00);
+  font-family: GillSansMTStd-Medium;
+  font-size: 13px;
+}
+
+.S2 {
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-top-color: rgba(219,219,219,1.00);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-top-width: 1px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+}
+
+.S3 {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+</style>
+
+<div
+  className="css-view-1dbjc4n r-marginRight-zso239 r-marginTop-156q2ks S3"
+>
+  <a
+    className="linkweb__RespLink-yfb9n-0 cCCShB"
+  >
+    <div
+      className="css-view-1dbjc4n r-borderColor-1kv57cf r-borderRadius-1jkafct r-borderWidth-rs99b7 r-paddingBottom-1mi0q7o r-paddingLeft-1yt7n81 r-paddingRight-ry3cjt r-paddingTop-m611by S2"
+    >
+      <div
+        className="css-cursor-18t94o4 css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-1akm30i r-position-bnwqim r-top-o9xkwf S1"
+      >
+        Test
+      </div>
+    </div>
+  </a>
+</div>
+`;
