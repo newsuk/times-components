@@ -189,7 +189,7 @@ exports[`3. article summary content component with white space height and linehe
 </div>
 `;
 
-exports[`5. article summary content component without white space height 1`] = `
+exports[`4. article summary content component without white space height 1`] = `
 <style>
 .S1 {
   color: rgba(105,105,105,1.00);

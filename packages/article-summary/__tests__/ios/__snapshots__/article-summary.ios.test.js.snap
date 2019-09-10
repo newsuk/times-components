@@ -683,7 +683,7 @@ exports[`17. article summary content component with white space height 1`] = `
 </Text>
 `;
 
-exports[`19. article summary content component without white space height 1`] = `
+exports[`18. article summary content component without white space height 1`] = `
 <Text
   numberOfLines={2}
 >
