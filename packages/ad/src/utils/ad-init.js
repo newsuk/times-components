@@ -24,7 +24,17 @@ export default ({ el, data, platform, eventCallback, window }) => {
     }
   };
 
-  const { Promise, document, location, googletag, pbjs, apstag } = window;
+  const {
+    apstag,
+    document,
+    encodeURIComponent,
+    googletag,
+    location,
+    pbjs,
+    Promise,
+    Set,
+    XMLHttpRequest
+  } = window;
   let localInitCalled = false;
   const isWeb = platform === "web";
   const { timeout, bidders } = data.prebidConfig;

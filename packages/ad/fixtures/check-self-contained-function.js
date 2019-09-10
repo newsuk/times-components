@@ -10,7 +10,7 @@ export const getSelfContainedFunctionErrors = f => {
     })
     .filter(e => !/'cov_\w+' is not defined./.test(e.message))
     .filter(e => !/'console' is not defined./.test(e.message))
-    .filter(e => !/'_toConsumableArray' is not defined./.test(e.message))
+    .filter(e => !/'_toConsumableArray2' is not defined./.test(e.message))
     .filter(e => !/'Promise' is not defined./.test(e.message));
 };
 
