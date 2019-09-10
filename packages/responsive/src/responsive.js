@@ -22,7 +22,7 @@ class Responsive extends Component {
     this.state = calculateState(width, fontScale);
   }
 
-  componentWillMount() {
+  componentDidMount() {
     Dimensions.addEventListener("change", this.onDimensionChange);
   }
 

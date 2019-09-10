@@ -1,8 +1,8 @@
 import React from "react";
 import { View } from "react-native";
+import PropTypes from "prop-types";
 import styles from "../styles";
 import config from "./config";
-import propTypes from "./proptypes";
 
 const StandardSlice = ({ itemCount, renderItems }) => {
   if (itemCount === 0) {
@@ -27,6 +27,9 @@ const StandardSlice = ({ itemCount, renderItems }) => {
   );
 };
 
-StandardSlice.propTypes = propTypes;
+StandardSlice.propTypes = {
+  itemCount: PropTypes.number.isRequired,
+  renderItems: PropTypes.func.isRequired
+};
 
 export default StandardSlice;

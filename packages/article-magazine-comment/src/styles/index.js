@@ -2,19 +2,24 @@ import { StyleSheet } from "react-native";
 import { spacing } from "@times-components/styleguide";
 import nativeStyles from "./native";
 
-const styles = StyleSheet.create({
+const appStyles = {
   ...nativeStyles,
   articleHeadline: {
     ...nativeStyles.articleHeadline,
-    marginBottom: spacing(1)
+    marginBottom: spacing(3)
   },
-  flags: {
-    ...nativeStyles.flags,
-    marginTop: spacing(2)
+  metaTablet: {
+    ...nativeStyles.metaTablet,
+    paddingTop: "auto"
   },
-  metaSpacer: {
-    marginTop: spacing(2)
+  standFirst: {
+    ...nativeStyles.standFirst,
+    marginBottom: spacing(2.5)
   }
+};
+
+const styles = StyleSheet.create({
+  ...appStyles
 });
 
 export default styles;

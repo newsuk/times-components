@@ -6,6 +6,7 @@ import { iterator } from "@times-components/test-utils";
 import Link from "@times-components/link";
 import { withTrackingContext } from "@times-components/tracking";
 import ArticleTopics from "../src/article-topics";
+import ArticleTopic from "../src/article-topic";
 import topicData from "../fixtures/topics";
 
 mockNativeModules();
@@ -67,6 +68,21 @@ export default () => {
         link.props.onPress("event");
 
         expect(analyticsStream.mock.calls).toMatchSnapshot();
+      }
+    },
+    {
+      name: "article topic",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <ArticleTopic
+            key="test-slug"
+            name="Test"
+            onPress={() => {}}
+            slug="test-slug"
+          />
+        );
+
+        expect(testInstance).toMatchSnapshot();
       }
     }
   ];

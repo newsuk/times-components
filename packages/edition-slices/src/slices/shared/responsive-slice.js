@@ -43,10 +43,15 @@ const ResponsiveSlice = ({
 );
 
 ResponsiveSlice.propTypes = {
-  renderHuge: PropTypes.func.isRequired,
-  renderMedium: PropTypes.func.isRequired,
   renderSmall: PropTypes.func.isRequired,
-  renderWide: PropTypes.func.isRequired
+  renderMedium: PropTypes.func.isRequired,
+  renderWide: PropTypes.func,
+  renderHuge: PropTypes.func
+};
+
+ResponsiveSlice.defaultProps = {
+  renderWide: null,
+  renderHuge: null
 };
 
 export default ResponsiveSlice;

@@ -1,7 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 import { editionBreakpoints } from "@times-components/styleguide";
-import propTypes from "./proptypes";
+import PropTypes from "prop-types";
 import styleFactory from "./styles";
 import { ItemRowSeparator } from "../shared";
 import VerticalLayout from "../verticallayout";
@@ -45,6 +45,16 @@ const SecondaryTwoNoPicAndTwoSlice = ({
   );
 };
 
-SecondaryTwoNoPicAndTwoSlice.propTypes = propTypes;
+SecondaryTwoNoPicAndTwoSlice.propTypes = {
+  breakpoint: PropTypes.string,
+  secondary1: PropTypes.node.isRequired,
+  secondary2: PropTypes.node.isRequired,
+  support1: PropTypes.node.isRequired,
+  support2: PropTypes.node.isRequired
+};
+
+SecondaryTwoNoPicAndTwoSlice.defaultProps = {
+  breakpoint: editionBreakpoints.small
+};
 
 export default SecondaryTwoNoPicAndTwoSlice;

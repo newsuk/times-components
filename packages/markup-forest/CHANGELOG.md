@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.7.23](https://github.com/newsuk/times-components/compare/@times-components/markup-forest@1.7.22...@times-components/markup-forest@1.7.23) (2019-09-05)
+
+**Note:** Version bump only for package @times-components/markup-forest
+
+
+
+
+
 ## [1.7.22](https://github.com/newsuk/times-components/compare/@times-components/markup-forest@1.7.21...@times-components/markup-forest@1.7.22) (2019-08-29)
 
 **Note:** Version bump only for package @times-components/markup-forest

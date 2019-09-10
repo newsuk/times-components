@@ -796,3 +796,57 @@ exports[`13. article summary component with a strapline 1`] = `
 `;
 
 exports[`14. article summary content component without an ast to render null 1`] = `null`;
+
+exports[`16. article summary component with no headline and no label title 1`] = `
+<div
+  className="css-view-1dbjc4n"
+>
+  <div
+    className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
+  >
+    <span
+      className="css-text-901oao css-textHasAncestor-16my406"
+    >
+      
+      Test paragraph
+      ...
+    </span>
+  </div>
+  <div
+    className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginBottom-d0pm55"
+  >
+    <DatePublication
+      date="2017-07-01T14:32:00.000Z"
+      publication="SUNDAYTIMES"
+    />
+  </div>
+</div>
+`;
+
+exports[`17. article summary content component with white space height 1`] = `
+<div
+  className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
+>
+  <span
+    className="css-text-901oao css-textHasAncestor-16my406"
+  >
+    
+    Test paragraph
+    ...
+  </span>
+</div>
+`;
+
+exports[`18. article summary content component without white space height 1`] = `
+<div
+  className="css-text-901oao css-textMultiLine-cens5h r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
+>
+  <span
+    className="css-text-901oao css-textHasAncestor-16my406"
+  >
+    
+    Test paragraph
+    ...
+  </span>
+</div>
+`;

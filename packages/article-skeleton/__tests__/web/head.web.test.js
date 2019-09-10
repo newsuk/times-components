@@ -11,7 +11,10 @@ import {
 } from "@times-components/jest-serializer";
 
 import Head from "../../src/head.web";
-import articleFixture, { testFixture } from "../../fixtures/full-article";
+import articleFixture, {
+  testFixture,
+  videoLeadAsset
+} from "../../fixtures/full-article";
 
 jest.mock("react-helmet-async", () => ({ Helmet: "Helmet" }));
 
@@ -33,6 +36,12 @@ addSerializers(
 );
 
 const article = articleFixture({ ...testFixture });
+const videoArticle = articleFixture({
+  ...testFixture,
+  hasVideo: true,
+  leadAsset: videoLeadAsset()
+});
+
 const paidContentClassName = "class-name";
 const faviconUrl = "https://www.thetimes.co.uk/d/img/icons/favicon.ico";
 
@@ -41,6 +50,18 @@ describe("Head", () => {
     const testRenderer = TestRenderer.create(
       <Head
         article={article}
+        paidContentClassName={paidContentClassName}
+        faviconUrl={faviconUrl}
+      />
+    );
+
+    expect(testRenderer).toMatchSnapshot();
+  });
+
+  it("outputs correct metadata for a video article", () => {
+    const testRenderer = TestRenderer.create(
+      <Head
+        article={videoArticle}
         paidContentClassName={paidContentClassName}
         faviconUrl={faviconUrl}
       />

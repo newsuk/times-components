@@ -30,7 +30,10 @@ const renderComponent = child => {
 
 describe("Edition provider", () => {
   it("returns query result", done => {
-    renderComponent(({ isLoading, edition }) => {
+    renderComponent(({ isLoading, edition, error }) => {
+      if (error) {
+        throw error;
+      }
       if (!isLoading) {
         expect(edition).toMatchSnapshot();
         done();

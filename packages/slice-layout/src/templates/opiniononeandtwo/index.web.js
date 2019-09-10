@@ -1,5 +1,5 @@
 import React from "react";
-import propTypes from "./proptypes";
+import PropTypes from "prop-types";
 import { SliceContainer } from "../styles/responsive";
 import {
   getSeparator,
@@ -66,6 +66,10 @@ const OpinionOneAndTwoSlice = ({
   );
 };
 
-OpinionOneAndTwoSlice.propTypes = propTypes;
+OpinionOneAndTwoSlice.propTypes = {
+  renderOpinion: PropTypes.func.isRequired,
+  renderSupport1: PropTypes.func.isRequired,
+  renderSupport2: PropTypes.func.isRequired
+};
 
 export default OpinionOneAndTwoSlice;

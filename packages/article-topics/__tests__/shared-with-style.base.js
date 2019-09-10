@@ -4,6 +4,7 @@ import { ContextProviderWithDefaults } from "@times-components/context";
 import { scales } from "@times-components/styleguide";
 import { iterator } from "@times-components/test-utils";
 import ArticleTopics from "../src/article-topics";
+import ArticleTopic from "../src/article-topic";
 import topicData from "../fixtures/topics";
 
 export default () => {
@@ -42,6 +43,38 @@ export default () => {
           <ContextProviderWithDefaults value={{ theme: { scale } }}>
             <ArticleTopics onPress={() => {}} topics={topicData.slice(0, 1)} />
           </ContextProviderWithDefaults>
+        );
+
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "article topic with style",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <ArticleTopic
+            fontSize={17}
+            key="test-slug"
+            lineHeight={20}
+            name="Test"
+            onPress={() => {}}
+            slug="test-slug"
+          />
+        );
+
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "article topic with no additional style",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <ArticleTopic
+            key="test-slug"
+            name="Test"
+            onPress={() => {}}
+            slug="test-slug"
+          />
         );
 
         expect(testInstance).toMatchSnapshot();

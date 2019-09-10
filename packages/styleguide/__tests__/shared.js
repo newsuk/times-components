@@ -137,18 +137,6 @@ const tests = [
     }
   },
   {
-    name:
-      "Theme Factory - imageCaptionAlignment should return the correct caption alignment",
-    test: () => {
-      expect(themeFactory("", "indepth").imageCaptionAlignment).toStrictEqual({
-        primary: "center"
-      });
-      expect(
-        themeFactory("", "maincomment").imageCaptionAlignment
-      ).toStrictEqual({});
-    }
-  },
-  {
     name: "Theme Factory - pullQuoteFont should return the correct font",
     test: () => {
       expect(themeFactory("default", "indepth").pullQuoteFont).toEqual(

@@ -15,7 +15,7 @@ export function createScopedGlobalStyle(strings, ...attrs) {
 
   const InnerStyleComponent = createGlobalStyle(copiedStrings, ...attrs);
   class GlobalStyle extends Component {
-    componentWillMount() {
+    componentDidMount() {
       document.documentElement.classList.add(className);
     }
 

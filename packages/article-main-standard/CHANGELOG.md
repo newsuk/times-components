@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.12.5](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.12.4...@times-components/article-main-standard@3.12.5) (2019-09-10)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.12.4](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.12.3...@times-components/article-main-standard@3.12.4) (2019-09-06)
+
+
+### Bug Fixes
+
+* headlines should be the same on all native platforms ([#2257](https://github.com/newsuk/times-components/issues/2257)) ([c068e29](https://github.com/newsuk/times-components/commit/c068e29))
+
+
+
+
+
+## [3.12.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.12.2...@times-components/article-main-standard@3.12.3) (2019-09-05)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.12.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.12.1...@times-components/article-main-standard@3.12.2) (2019-09-05)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
 ## [3.12.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.12.0...@times-components/article-main-standard@3.12.1) (2019-09-04)
 
 **Note:** Version bump only for package @times-components/article-main-standard

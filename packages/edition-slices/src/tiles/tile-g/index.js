@@ -19,26 +19,31 @@ const TileG = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
 
   return (
     <TileLink onPress={onPress} style={styles.container} tile={tile}>
-      <Image
-        aspectRatio={1}
-        relativeWidth={crop.relativeWidth}
-        relativeHeight={crop.relativeHeight}
-        relativeHorizontalOffset={crop.relativeHorizontalOffset}
-        relativeVerticalOffset={crop.relativeVerticalOffset}
-        style={styles.imageContainer}
-        uri={crop.url}
-        fill
-        rounded
-        resizeMode="cover"
-      />
-      <View style={styles.summaryContainer}>
-        <TileSummary
-          headlineStyle={styles.headline}
-          style={styles.summaryContent}
-          tile={tile}
-          withStar={false}
+      <View style={styles.outerContainer}>
+        <View style={styles.innerContainer}>
+          <Image
+            aspectRatio={1}
+            relativeWidth={crop.relativeWidth}
+            relativeHeight={crop.relativeHeight}
+            relativeHorizontalOffset={crop.relativeHorizontalOffset}
+            relativeVerticalOffset={crop.relativeVerticalOffset}
+            style={styles.imageContainer}
+            uri={crop.url}
+            fill
+            rounded
+            resizeMode="cover"
+          />
+          <TileSummary
+            headlineStyle={styles.headline}
+            style={styles.summaryContainer}
+            tile={tile}
+            withStar={false}
+          />
+        </View>
+        <PositionedTileStar
+          customStyles={styles.customStarPosition}
+          articleId={tile.article.id}
         />
-        <PositionedTileStar articleId={tile.article.id} />
       </View>
     </TileLink>
   );

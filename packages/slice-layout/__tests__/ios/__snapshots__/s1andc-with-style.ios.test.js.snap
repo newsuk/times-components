@@ -2,26 +2,22 @@
 
 exports[`1. secondary one and columnist - small 1`] = `
 <View>
-  <View>
-    <Text>
-      columnist
-    </Text>
-  </View>
+  <Text>
+    secondary
+  </Text>
   <View
     style={
       Object {
+        "borderBottomWidth": 1,
         "borderColor": "#DBDBDB",
-        "borderRightWidth": 1,
         "borderStyle": "solid",
-        "marginVertical": 10,
+        "marginHorizontal": 10,
       }
     }
   />
-  <View>
-    <Text>
-      secondary
-    </Text>
-  </View>
+  <Text>
+    columnist
+  </Text>
 </View>
 `;
 

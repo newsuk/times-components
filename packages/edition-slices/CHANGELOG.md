@@ -3,6 +3,55 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.79.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.79.0...@times-components/edition-slices@0.79.1) (2019-09-10)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
+# [0.79.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.78.0...@times-components/edition-slices@0.79.0) (2019-09-09)
+
+
+### Features
+
+* REPLAT-8278 Secondary 1 styling for 1024 ([#2262](https://github.com/newsuk/times-components/issues/2262)) ([9932691](https://github.com/newsuk/times-components/commit/9932691))
+
+
+
+
+
+# [0.78.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.77.14...@times-components/edition-slices@0.78.0) (2019-09-05)
+
+
+### Features
+
+* REPLAT-8279 comment lead and cartoon 1024 ([#2266](https://github.com/newsuk/times-components/issues/2266)) ([c599797](https://github.com/newsuk/times-components/commit/c599797))
+
+
+
+
+
+## [0.77.14](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.77.13...@times-components/edition-slices@0.77.14) (2019-09-05)
+
+
+### Bug Fixes
+
+* vertically center text in secondary2nopicand2 ([#2259](https://github.com/newsuk/times-components/issues/2259)) ([7d51090](https://github.com/newsuk/times-components/commit/7d51090))
+
+
+
+
+
+## [0.77.13](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.77.12...@times-components/edition-slices@0.77.13) (2019-09-05)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
 ## [0.77.12](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.77.11...@times-components/edition-slices@0.77.12) (2019-09-04)
 
 

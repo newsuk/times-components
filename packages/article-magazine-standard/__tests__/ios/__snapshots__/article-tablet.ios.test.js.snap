@@ -42,7 +42,7 @@ exports[`1. article magazine standard - tablet 1`] = `
       style={
         Object {
           "marginBottom": 15,
-          "marginTop": 5,
+          "marginTop": 10,
         }
       }
     >
@@ -78,7 +78,7 @@ exports[`1. article magazine standard - tablet 1`] = `
           Object {
             "flexDirection": "row",
             "flexWrap": "wrap",
-            "paddingTop": 5,
+            "paddingTop": "auto",
           }
         }
       >
@@ -99,7 +99,7 @@ exports[`1. article magazine standard - tablet 1`] = `
           Object {
             "flexDirection": "row",
             "flexWrap": "wrap",
-            "paddingTop": 5,
+            "paddingTop": "auto",
           }
         }
       >

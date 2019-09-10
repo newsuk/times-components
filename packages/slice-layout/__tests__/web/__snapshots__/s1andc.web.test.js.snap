@@ -3,15 +3,11 @@
 exports[`1. secondary one and columnist - small 1`] = `
 <div>
   <div>
-    <div>
-      columnist
-    </div>
+    secondary
   </div>
   <div />
   <div>
-    <div>
-      secondary
-    </div>
+    columnist
   </div>
 </div>
 `;

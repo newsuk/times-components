@@ -156,3 +156,67 @@ exports[`2. article summary content component with the given style 1`] = `
   </span>
 </div>
 `;
+
+exports[`3. article summary content component with white space height and lineheight 1`] = `
+<style>
+.S1 {
+  color: rgba(105,105,105,1.00);
+  -ms-flex-wrap: wrap;
+  -webkit-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-family: TimesDigitalW04;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.IS1 {
+  -webkit-line-clamp: 4;
+  line-height: 30px;
+}
+</style>
+
+<div
+  className="css-text-901oao css-textMultiLine-cens5h r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-marginBottom-15d164r IS1 S1"
+>
+  <span
+    className="css-text-901oao css-textHasAncestor-16my406"
+  >
+    
+    Test
+    ...
+  </span>
+</div>
+`;
+
+exports[`4. article summary content component without white space height 1`] = `
+<style>
+.S1 {
+  color: rgba(105,105,105,1.00);
+  -ms-flex-wrap: wrap;
+  -webkit-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-family: TimesDigitalW04;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.IS1 {
+  -webkit-line-clamp: 2;
+}
+</style>
+
+<div
+  className="css-text-901oao css-textMultiLine-cens5h r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r IS1 S1"
+>
+  <span
+    className="css-text-901oao css-textHasAncestor-16my406"
+  >
+    
+    Test
+    ...
+  </span>
+</div>
+`;

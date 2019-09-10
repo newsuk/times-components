@@ -85,7 +85,10 @@ class DOMContext extends PureComponent {
     this.isVisible = false;
     this.webView.injectJavaScript(`
         if (typeof unrulyViewportStatus === "function") {
-          unrulyViewportStatus(false);
+          unrulyViewportStatus(${JSON.stringify({
+            ...this.deviceInfo,
+            visible: false
+          })})
         };
       `);
   };
