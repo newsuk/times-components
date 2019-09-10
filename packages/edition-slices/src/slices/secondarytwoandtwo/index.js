@@ -100,9 +100,8 @@ class SecondaryTwoAndTwo extends Component {
   render() {
     return (
       <ResponsiveSlice
-        renderHuge={this.renderWide}
-        renderMedium={this.renderMedium}
         renderSmall={this.renderSmall}
+        renderMedium={this.renderMedium}
         renderWide={this.renderWide}
       />
     );

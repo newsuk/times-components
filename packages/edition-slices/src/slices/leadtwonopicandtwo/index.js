@@ -108,7 +108,6 @@ class LeadTwoNoPicAndTwo extends Component {
         renderSmall={this.renderSmall}
         renderMedium={this.renderMedium}
         renderWide={this.renderWide}
-        renderHuge={this.renderWide}
       />
     );
   }

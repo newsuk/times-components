@@ -144,8 +144,6 @@ class ListTwoAndSixNoPicSlice extends Component {
       <ResponsiveSlice
         renderSmall={this.renderSlice}
         renderMedium={this.renderMedium}
-        renderWide={this.renderMedium}
-        renderHuge={this.renderMedium}
       />
     );
   }

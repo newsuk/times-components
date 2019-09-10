@@ -52,8 +52,6 @@ class Puzzle extends Component {
       <ResponsiveSlice
         renderSmall={this.renderPuzzles}
         renderMedium={this.renderPuzzles}
-        renderWide={this.renderPuzzles}
-        renderHuge={this.renderPuzzles}
       />
     );
   }
