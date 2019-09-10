@@ -16,6 +16,21 @@ export default () => {
   const headline = "Test Headline";
   const label = "Test label";
   const paragraph = "Test paragraph";
+  const ast = [
+    {
+      attributes: {},
+      children: [
+        {
+          attributes: {
+            value: "Test"
+          },
+          children: [],
+          name: "text"
+        }
+      ],
+      name: "paragraph"
+    }
+  ];
 
   const tests = [
     {
@@ -37,24 +52,33 @@ export default () => {
     {
       name: "article summary content component with the given style",
       test: () => {
-        const ast = [
-          {
-            attributes: {},
-            children: [
-              {
-                attributes: {
-                  value: "Test"
-                },
-                children: [],
-                name: "text"
-              }
-            ],
-            name: "paragraph"
-          }
-        ];
-
         const testInstance = TestRenderer.create(
           <ArticleSummaryContent ast={ast} />
+        );
+
+        expect(testInstance.toJSON()).toMatchSnapshot();
+      }
+    },
+    {
+      name:
+        "article summary content component with white space height and lineHeight",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <ArticleSummaryContent
+            ast={ast}
+            style={{ lineHeight: 30 }}
+            whiteSpaceHeight={60}
+          />
+        );
+
+        expect(testInstance.toJSON()).toMatchSnapshot();
+      }
+    },
+    {
+      name: "article summary content component without white space height",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <ArticleSummaryContent ast={ast} whiteSpaceHeight={0} />
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();

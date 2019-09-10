@@ -108,3 +108,19 @@ Array [
   ],
 ]
 `;
+
+exports[`4. article topic 1`] = `
+<View>
+  <View>
+    <View>
+      <Text
+        accessibilityComponentType="button"
+        accessibilityRole="button"
+        accessibilityTraits="button"
+      >
+        Test
+      </Text>
+    </View>
+  </View>
+</View>
+`;

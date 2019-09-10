@@ -43,6 +43,21 @@ export default () => {
   const paragraph1 = "Test paragraph 1.";
   const paragraph2 = "Test paragraph 2";
   const strapline = "Test Strapline";
+  const defaultContent = [
+    {
+      attributes: {},
+      children: [
+        {
+          attributes: {
+            value: paragraph
+          },
+          children: [],
+          name: "text"
+        }
+      ],
+      name: "paragraph"
+    }
+  ];
 
   const tests = [
     {
@@ -256,6 +271,36 @@ export default () => {
       test: () => {
         expect(renderAst([])).toEqual([]);
         expect(renderAst()).toEqual([]);
+      }
+    },
+    {
+      name: "article summary component with no headline and no label title",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <ArticleSummary {...noHeadline({ label: null, paragraph })} />
+        );
+
+        expect(testInstance.toJSON()).toMatchSnapshot();
+      }
+    },
+    {
+      name: "article summary content component with white space height",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <ArticleSummaryContent ast={defaultContent} whiteSpaceHeight={60} />
+        );
+
+        expect(testInstance.toJSON()).toMatchSnapshot();
+      }
+    },
+    {
+      name: "article summary content component without white space height",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <ArticleSummaryContent ast={defaultContent} whiteSpaceHeight={0} />
+        );
+
+        expect(testInstance.toJSON()).toMatchSnapshot();
       }
     }
   ];
