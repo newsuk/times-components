@@ -60,9 +60,18 @@ const mediumBreakpointStyles = {
   }
 };
 
+const wideBreakpointStyles = {
+  ...mediumBreakpointStyles,
+  container: {
+    ...defaultStyles.container,
+    paddingHorizontal: spacing(2),
+    paddingVertical: spacing(2)
+  }
+};
+
 const stylesResolver = {
   [editionBreakpoints.medium]: mediumBreakpointStyles,
-  [editionBreakpoints.wide]: mediumBreakpointStyles,
+  [editionBreakpoints.wide]: wideBreakpointStyles,
   [editionBreakpoints.huge]: mediumBreakpointStyles
 };
 

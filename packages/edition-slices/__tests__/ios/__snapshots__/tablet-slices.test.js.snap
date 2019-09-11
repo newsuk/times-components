@@ -917,19 +917,15 @@ exports[`29. secondary two no pic and two - wide 1`] = `
     </View>
     <View />
     <View>
-      <View>
-        <TileG
-          breakpoint="wide"
-          tileName="support1"
-        />
-      </View>
+      <TileG
+        breakpoint="wide"
+        tileName="support1"
+      />
       <View />
-      <View>
-        <TileG
-          breakpoint="wide"
-          tileName="support2"
-        />
-      </View>
+      <TileG
+        breakpoint="wide"
+        tileName="support2"
+      />
     </View>
   </View>
 </View>
@@ -1436,19 +1432,15 @@ exports[`44. secondary two no pic and two - huge 1`] = `
       </View>
       <View />
       <View>
-        <View>
-          <TileG
-            breakpoint="huge"
-            tileName="support1"
-          />
-        </View>
+        <TileG
+          breakpoint="huge"
+          tileName="support1"
+        />
         <View />
-        <View>
-          <TileG
-            breakpoint="huge"
-            tileName="support2"
-          />
-        </View>
+        <TileG
+          breakpoint="huge"
+          tileName="support2"
+        />
       </View>
     </View>
   </View>
