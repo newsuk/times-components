@@ -26,6 +26,12 @@ const wideBreakpointStyles = {
   container: {
     ...styles.container,
     marginHorizontal: spacing(2)
+  },
+  leadItem: {
+    width: "84%"
+  },
+  supportItem: {
+    width: "16%"
   }
 };
 

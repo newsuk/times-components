@@ -1754,3 +1754,97 @@ exports[`40. tile ai 1`] = `
   />
 </Link>
 `;
+
+exports[`41. tile z 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "flex": 1,
+      "flexDirection": "row",
+      "paddingHorizontal": "10px",
+      "paddingVertical": "15px",
+    }
+  }
+  url="/article/123"
+>
+  <div>
+    <div>
+      <div>
+        <div>
+          <div>
+            <ArticleLabel
+              color="#005B8D"
+              isVideo={false}
+              title="label"
+            />
+          </div>
+          <h3
+            aria-level="3"
+            role="heading"
+          >
+            This is tile headline
+          </h3>
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <Image
+    aspectRatio={1.5}
+    fill={true}
+    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
+  />
+</Link>
+`;
+
+exports[`42. tile af 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "flex": 1,
+      "paddingHorizontal": "10px",
+      "paddingVertical": "15px",
+    }
+  }
+  url="/article/123"
+>
+  <div>
+    <div>
+      <div>
+        <div>
+          <ArticleLabel
+            color="#005B8D"
+            isVideo={false}
+            title="label"
+          />
+        </div>
+        <h3
+          aria-level="3"
+          role="heading"
+        >
+          This is tile headline
+        </h3>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+        />
+      </div>
+    </div>
+  </div>
+</Link>
+`;

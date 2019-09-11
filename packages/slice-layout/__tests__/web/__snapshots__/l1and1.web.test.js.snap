@@ -27,3 +27,35 @@ exports[`2. lead one and one - medium 1`] = `
   </div>
 </div>
 `;
+
+exports[`3. lead one and one - wide 1`] = `
+<div>
+  <div>
+    <div>
+      lead
+    </div>
+  </div>
+  <div />
+  <div>
+    <div>
+      support
+    </div>
+  </div>
+</div>
+`;
+
+exports[`4. lead one and one - huge 1`] = `
+<div>
+  <div>
+    <div>
+      lead
+    </div>
+  </div>
+  <div />
+  <div>
+    <div>
+      support
+    </div>
+  </div>
+</div>
+`;
