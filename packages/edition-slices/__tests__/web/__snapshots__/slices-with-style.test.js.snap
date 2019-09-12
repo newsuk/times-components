@@ -2457,6 +2457,7 @@ exports[`12. secondary two no pic and two 1`] = `
         className="css-view-1dbjc4n IS1"
       >
         <TileAE
+          breakpoint="wide"
           tileName="secondary1"
         />
       </div>
@@ -2467,6 +2468,7 @@ exports[`12. secondary two no pic and two 1`] = `
         className="css-view-1dbjc4n IS3"
       >
         <TileAE
+          breakpoint="wide"
           tileName="secondary2"
         />
       </div>

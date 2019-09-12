@@ -398,12 +398,14 @@ exports[`14. secondary two no pic and two - medium 1`] = `
     <div>
       <div>
         <TileAE
+          breakpoint="wide"
           tileName="secondary1"
         />
       </div>
       <div />
       <div>
         <TileAE
+          breakpoint="wide"
           tileName="secondary2"
         />
       </div>
@@ -892,12 +894,14 @@ exports[`29. secondary two no pic and two - wide 1`] = `
     <div>
       <div>
         <TileAE
+          breakpoint="wide"
           tileName="secondary1"
         />
       </div>
       <div />
       <div>
         <TileAE
+          breakpoint="wide"
           tileName="secondary2"
         />
       </div>
@@ -1386,12 +1390,14 @@ exports[`44. secondary two no pic and two - huge 1`] = `
     <div>
       <div>
         <TileAE
+          breakpoint="wide"
           tileName="secondary1"
         />
       </div>
       <div />
       <div>
         <TileAE
+          breakpoint="wide"
           tileName="secondary2"
         />
       </div>

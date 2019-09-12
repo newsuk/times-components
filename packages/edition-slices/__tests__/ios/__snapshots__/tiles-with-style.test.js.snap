@@ -1493,9 +1493,9 @@ exports[`28. tile ae 1`] = `
             Object {
               "color": "#333333",
               "fontFamily": "TimesModern-Bold",
-              "fontSize": 30,
+              "fontSize": undefined,
               "fontWeight": "900",
-              "lineHeight": 30,
+              "lineHeight": undefined,
               "marginBottom": 10,
             }
           }

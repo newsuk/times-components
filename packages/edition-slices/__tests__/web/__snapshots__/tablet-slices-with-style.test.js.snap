@@ -1827,6 +1827,7 @@ exports[`14. secondary two no pic and two - medium 1`] = `
         className="css-view-1dbjc4n IS1"
       >
         <TileAE
+          breakpoint="wide"
           tileName="secondary1"
         />
       </div>
@@ -1837,6 +1838,7 @@ exports[`14. secondary two no pic and two - medium 1`] = `
         className="css-view-1dbjc4n IS3"
       >
         <TileAE
+          breakpoint="wide"
           tileName="secondary2"
         />
       </div>
@@ -3818,6 +3820,7 @@ exports[`29. secondary two no pic and two - wide 1`] = `
         className="css-view-1dbjc4n IS1"
       >
         <TileAE
+          breakpoint="wide"
           tileName="secondary1"
         />
       </div>
@@ -3828,6 +3831,7 @@ exports[`29. secondary two no pic and two - wide 1`] = `
         className="css-view-1dbjc4n IS3"
       >
         <TileAE
+          breakpoint="wide"
           tileName="secondary2"
         />
       </div>
@@ -5809,6 +5813,7 @@ exports[`44. secondary two no pic and two - huge 1`] = `
         className="css-view-1dbjc4n IS1"
       >
         <TileAE
+          breakpoint="wide"
           tileName="secondary1"
         />
       </div>
@@ -5819,6 +5824,7 @@ exports[`44. secondary two no pic and two - huge 1`] = `
         className="css-view-1dbjc4n IS3"
       >
         <TileAE
+          breakpoint="wide"
           tileName="secondary2"
         />
       </div>
