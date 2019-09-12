@@ -56,7 +56,7 @@ const SecondaryTwoNoPicAndTwoSlice = ({
         ]}
         colSeparatorStyle={styles.secondaryColSeparator}
       />
-      <ItemColSeparator />
+      <ItemColSeparator style={styles.secondaryColSeparator} />
       <VerticalLayout
         style={styles.supportContainer}
         tiles={[support1, support2]}

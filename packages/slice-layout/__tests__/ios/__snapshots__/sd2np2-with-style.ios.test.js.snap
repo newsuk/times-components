@@ -211,6 +211,7 @@ exports[`3. secondary two no pic and two - wide 1`] = `
         "borderColor": "#DBDBDB",
         "borderRightWidth": 1,
         "borderStyle": "solid",
+        "marginTop": 15,
         "marginVertical": 10,
       }
     }
@@ -301,6 +302,7 @@ exports[`4. secondary two no pic and two - huge 1`] = `
         "borderColor": "#DBDBDB",
         "borderRightWidth": 1,
         "borderStyle": "solid",
+        "marginTop": 15,
         "marginVertical": 10,
       }
     }
