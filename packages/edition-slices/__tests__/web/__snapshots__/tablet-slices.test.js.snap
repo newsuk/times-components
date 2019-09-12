@@ -410,19 +410,15 @@ exports[`14. secondary two no pic and two - medium 1`] = `
     </div>
     <div />
     <div>
-      <div>
-        <TileG
-          breakpoint="wide"
-          tileName="support1"
-        />
-      </div>
+      <TileG
+        breakpoint="wide"
+        tileName="support1"
+      />
       <div />
-      <div>
-        <TileG
-          breakpoint="wide"
-          tileName="support2"
-        />
-      </div>
+      <TileG
+        breakpoint="wide"
+        tileName="support2"
+      />
     </div>
   </div>
 </div>
@@ -908,19 +904,15 @@ exports[`29. secondary two no pic and two - wide 1`] = `
     </div>
     <div />
     <div>
-      <div>
-        <TileG
-          breakpoint="wide"
-          tileName="support1"
-        />
-      </div>
+      <TileG
+        breakpoint="wide"
+        tileName="support1"
+      />
       <div />
-      <div>
-        <TileG
-          breakpoint="wide"
-          tileName="support2"
-        />
-      </div>
+      <TileG
+        breakpoint="wide"
+        tileName="support2"
+      />
     </div>
   </div>
 </div>
@@ -1406,19 +1398,15 @@ exports[`44. secondary two no pic and two - huge 1`] = `
     </div>
     <div />
     <div>
-      <div>
-        <TileG
-          breakpoint="wide"
-          tileName="support1"
-        />
-      </div>
+      <TileG
+        breakpoint="wide"
+        tileName="support1"
+      />
       <div />
-      <div>
-        <TileG
-          breakpoint="wide"
-          tileName="support2"
-        />
-      </div>
+      <TileG
+        breakpoint="wide"
+        tileName="support2"
+      />
     </div>
   </div>
 </div>

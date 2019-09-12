@@ -2340,16 +2340,7 @@ exports[`11. secondary two and two 1`] = `
 exports[`12. secondary two no pic and two 1`] = `
 <style>
 .IS1 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
+  width: 50%;
 }
 
 .IS2 {
@@ -2363,41 +2354,37 @@ exports[`12. secondary two no pic and two 1`] = `
   border-bottom-style: solid;
   border-left-style: solid;
   margin-top: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .IS3 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
+  width: 50%;
 }
 
 .IS4 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
+  width: 65%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
 
 .IS5 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.IS6 {
   border-bottom-width: 1px;
   border-top-color: rgba(219,219,219,1.00);
   border-right-color: rgba(219,219,219,1.00);
@@ -2411,31 +2398,19 @@ exports[`12. secondary two no pic and two 1`] = `
   margin-left: 10px;
 }
 
-.IS6 {
+.IS7 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   -webkit-flex-shrink: 1;
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
+  margin-top: 5px;
+  margin-bottom: 5px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
   -ms-flex-preferred-size: 0%;
-}
-
-.IS7 {
-  border-top-color: rgba(219,219,219,1.00);
-  border-right-color: rgba(219,219,219,1.00);
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-left-color: rgba(219,219,219,1.00);
-  border-right-width: 1px;
-  border-top-style: solid;
-  border-right-style: solid;
-  border-bottom-style: solid;
-  border-left-style: solid;
-  margin-bottom: 15px;
-  margin-top: 10px;
 }
 
 .IS8 {
@@ -2445,22 +2420,11 @@ exports[`12. secondary two no pic and two 1`] = `
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS9 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  margin-right: 10px;
+  margin-left: 10px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -2469,22 +2433,7 @@ exports[`12. secondary two no pic and two 1`] = `
   -webkit-box-direction: normal;
 }
 
-.IS10 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  margin-right: 10px;
-  margin-left: 10px;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS11 {
+.IS9 {
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
@@ -2496,10 +2445,10 @@ exports[`12. secondary two no pic and two 1`] = `
 </style>
 
 <div
-  className="css-view-1dbjc4n IS11"
+  className="css-view-1dbjc4n IS9"
 >
   <div
-    className="css-view-1dbjc4n IS10"
+    className="css-view-1dbjc4n IS8"
   >
     <div
       className="css-view-1dbjc4n IS4"
@@ -2526,27 +2475,19 @@ exports[`12. secondary two no pic and two 1`] = `
       className="css-view-1dbjc4n IS5"
     />
     <div
-      className="css-view-1dbjc4n IS9"
+      className="css-view-1dbjc4n IS7"
     >
-      <div
-        className="css-view-1dbjc4n IS6"
-      >
-        <TileG
-          breakpoint="wide"
-          tileName="support1"
-        />
-      </div>
-      <div
-        className="css-view-1dbjc4n IS7"
+      <TileG
+        breakpoint="wide"
+        tileName="support1"
       />
       <div
-        className="css-view-1dbjc4n IS8"
-      >
-        <TileG
-          breakpoint="wide"
-          tileName="support2"
-        />
-      </div>
+        className="css-view-1dbjc4n IS6"
+      />
+      <TileG
+        breakpoint="wide"
+        tileName="support2"
+      />
     </div>
   </div>
 </div>

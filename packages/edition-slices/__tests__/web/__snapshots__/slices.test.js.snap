@@ -550,19 +550,15 @@ exports[`12. secondary two no pic and two 1`] = `
     </div>
     <div />
     <div>
-      <div>
-        <TileG
-          breakpoint="wide"
-          tileName="support1"
-        />
-      </div>
+      <TileG
+        breakpoint="wide"
+        tileName="support1"
+      />
       <div />
-      <div>
-        <TileG
-          breakpoint="wide"
-          tileName="support2"
-        />
-      </div>
+      <TileG
+        breakpoint="wide"
+        tileName="support2"
+      />
     </div>
   </div>
 </div>

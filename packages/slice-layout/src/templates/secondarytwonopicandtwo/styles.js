@@ -13,7 +13,7 @@ const mediumBreakpointStyles = {
     flex: 1
   },
   secondaryColSeparator: {
-    marginTop: spacing(3)
+    marginVertical: spacing(3)
   },
   supportColSeparator: {
     marginBottom: spacing(3)
@@ -21,9 +21,21 @@ const mediumBreakpointStyles = {
 };
 
 const wideBreakpointStyles = {
-  container: {
+  rowContainer: {
     flex: 1,
+    flexDirection: "row",
     marginHorizontal: spacing(2)
+  },
+  secondaryContainer: {
+    width: "65%",
+    flexDirection: "row"
+  },
+  supportContainer: {
+    flex: 1,
+    marginVertical: spacing(1)
+  },
+  item: {
+    width: "50%"
   }
 };
 

@@ -81,8 +81,7 @@ exports[`2. secondary two no pic and two - medium 1`] = `
           "borderColor": "#DBDBDB",
           "borderRightWidth": 1,
           "borderStyle": "solid",
-          "marginTop": 15,
-          "marginVertical": 10,
+          "marginVertical": 15,
         }
       }
     />
@@ -158,6 +157,7 @@ exports[`3. secondary two no pic and two - wide 1`] = `
   style={
     Object {
       "flex": 1,
+      "flexDirection": "row",
       "marginHorizontal": 10,
     }
   }
@@ -165,15 +165,15 @@ exports[`3. secondary two no pic and two - wide 1`] = `
   <View
     style={
       Object {
-        "flex": 1,
         "flexDirection": "row",
+        "width": "65%",
       }
     }
   >
     <View
       style={
         Object {
-          "flex": 1,
+          "width": "50%",
         }
       }
     >
@@ -187,15 +187,14 @@ exports[`3. secondary two no pic and two - wide 1`] = `
           "borderColor": "#DBDBDB",
           "borderRightWidth": 1,
           "borderStyle": "solid",
-          "marginTop": 15,
-          "marginVertical": 10,
+          "marginVertical": 15,
         }
       }
     />
     <View
       style={
         Object {
-          "flex": 1,
+          "width": "50%",
         }
       }
     >
@@ -207,10 +206,10 @@ exports[`3. secondary two no pic and two - wide 1`] = `
   <View
     style={
       Object {
-        "borderBottomWidth": 1,
         "borderColor": "#DBDBDB",
+        "borderRightWidth": 1,
         "borderStyle": "solid",
-        "marginHorizontal": 10,
+        "marginVertical": 15,
       }
     }
   />
@@ -218,43 +217,26 @@ exports[`3. secondary two no pic and two - wide 1`] = `
     style={
       Object {
         "flex": 1,
-        "flexDirection": "row",
+        "marginVertical": 5,
       }
     }
   >
+    <Text>
+      support-1
+    </Text>
     <View
       style={
         Object {
-          "flex": 1,
-        }
-      }
-    >
-      <Text>
-        support-1
-      </Text>
-    </View>
-    <View
-      style={
-        Object {
+          "borderBottomWidth": 1,
           "borderColor": "#DBDBDB",
-          "borderRightWidth": 1,
           "borderStyle": "solid",
-          "marginBottom": 15,
-          "marginVertical": 10,
+          "marginHorizontal": 10,
         }
       }
     />
-    <View
-      style={
-        Object {
-          "flex": 1,
-        }
-      }
-    >
-      <Text>
-        support-2
-      </Text>
-    </View>
+    <Text>
+      support-2
+    </Text>
   </View>
 </View>
 `;
@@ -264,6 +246,7 @@ exports[`4. secondary two no pic and two - huge 1`] = `
   style={
     Object {
       "flex": 1,
+      "flexDirection": "row",
       "marginHorizontal": 10,
     }
   }
@@ -271,15 +254,15 @@ exports[`4. secondary two no pic and two - huge 1`] = `
   <View
     style={
       Object {
-        "flex": 1,
         "flexDirection": "row",
+        "width": "65%",
       }
     }
   >
     <View
       style={
         Object {
-          "flex": 1,
+          "width": "50%",
         }
       }
     >
@@ -293,15 +276,14 @@ exports[`4. secondary two no pic and two - huge 1`] = `
           "borderColor": "#DBDBDB",
           "borderRightWidth": 1,
           "borderStyle": "solid",
-          "marginTop": 15,
-          "marginVertical": 10,
+          "marginVertical": 15,
         }
       }
     />
     <View
       style={
         Object {
-          "flex": 1,
+          "width": "50%",
         }
       }
     >
@@ -313,10 +295,10 @@ exports[`4. secondary two no pic and two - huge 1`] = `
   <View
     style={
       Object {
-        "borderBottomWidth": 1,
         "borderColor": "#DBDBDB",
+        "borderRightWidth": 1,
         "borderStyle": "solid",
-        "marginHorizontal": 10,
+        "marginVertical": 15,
       }
     }
   />
@@ -324,43 +306,26 @@ exports[`4. secondary two no pic and two - huge 1`] = `
     style={
       Object {
         "flex": 1,
-        "flexDirection": "row",
+        "marginVertical": 5,
       }
     }
   >
+    <Text>
+      support-1
+    </Text>
     <View
       style={
         Object {
-          "flex": 1,
-        }
-      }
-    >
-      <Text>
-        support-1
-      </Text>
-    </View>
-    <View
-      style={
-        Object {
+          "borderBottomWidth": 1,
           "borderColor": "#DBDBDB",
-          "borderRightWidth": 1,
           "borderStyle": "solid",
-          "marginBottom": 15,
-          "marginVertical": 10,
+          "marginHorizontal": 10,
         }
       }
     />
-    <View
-      style={
-        Object {
-          "flex": 1,
-        }
-      }
-    >
-      <Text>
-        support-2
-      </Text>
-    </View>
+    <Text>
+      support-2
+    </Text>
   </View>
 </View>
 `;
