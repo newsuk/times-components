@@ -1724,7 +1724,7 @@ exports[`14. secondary two no pic and two - medium 1`] = `
   border-bottom-style: solid;
   border-left-style: solid;
   margin-top: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .IS3 {
@@ -1750,8 +1750,8 @@ exports[`14. secondary two no pic and two - medium 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .IS6 {
@@ -3715,7 +3715,7 @@ exports[`29. secondary two no pic and two - wide 1`] = `
   border-bottom-style: solid;
   border-left-style: solid;
   margin-top: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .IS3 {
@@ -3741,8 +3741,8 @@ exports[`29. secondary two no pic and two - wide 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .IS6 {
@@ -5706,7 +5706,7 @@ exports[`44. secondary two no pic and two - huge 1`] = `
   border-bottom-style: solid;
   border-left-style: solid;
   margin-top: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .IS3 {
@@ -5732,8 +5732,8 @@ exports[`44. secondary two no pic and two - huge 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .IS6 {

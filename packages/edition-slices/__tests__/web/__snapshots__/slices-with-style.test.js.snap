@@ -2354,7 +2354,7 @@ exports[`12. secondary two no pic and two 1`] = `
   border-bottom-style: solid;
   border-left-style: solid;
   margin-top: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .IS3 {
@@ -2380,8 +2380,8 @@ exports[`12. secondary two no pic and two 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .IS6 {
