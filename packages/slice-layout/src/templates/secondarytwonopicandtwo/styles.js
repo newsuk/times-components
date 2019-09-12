@@ -13,7 +13,7 @@ const mediumBreakpointStyles = {
     flex: 1
   },
   secondaryColSeparator: {
-    marginTop: spacing(3)
+    marginVertical: spacing(3)
   },
   supportColSeparator: {
     marginBottom: spacing(3)

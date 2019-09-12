@@ -159,7 +159,7 @@ exports[`2. secondary two no pic and two - medium 1`] = `
           "borderRightWidth": "1px",
           "borderTopColor": "rgba(219,219,219,1.00)",
           "borderTopStyle": "solid",
-          "marginBottom": "10px",
+          "marginBottom": "15px",
           "marginTop": "15px",
         }
       }
@@ -361,7 +361,7 @@ exports[`3. secondary two no pic and two - wide 1`] = `
           "borderRightWidth": "1px",
           "borderTopColor": "rgba(219,219,219,1.00)",
           "borderTopStyle": "solid",
-          "marginBottom": "10px",
+          "marginBottom": "15px",
           "marginTop": "15px",
         }
       }
@@ -394,7 +394,7 @@ exports[`3. secondary two no pic and two - wide 1`] = `
         "borderRightWidth": "1px",
         "borderTopColor": "rgba(219,219,219,1.00)",
         "borderTopStyle": "solid",
-        "marginBottom": "10px",
+        "marginBottom": "15px",
         "marginTop": "15px",
       }
     }
@@ -515,7 +515,7 @@ exports[`4. secondary two no pic and two - huge 1`] = `
           "borderRightWidth": "1px",
           "borderTopColor": "rgba(219,219,219,1.00)",
           "borderTopStyle": "solid",
-          "marginBottom": "10px",
+          "marginBottom": "15px",
           "marginTop": "15px",
         }
       }
@@ -548,7 +548,7 @@ exports[`4. secondary two no pic and two - huge 1`] = `
         "borderRightWidth": "1px",
         "borderTopColor": "rgba(219,219,219,1.00)",
         "borderTopStyle": "solid",
-        "marginBottom": "10px",
+        "marginBottom": "15px",
         "marginTop": "15px",
       }
     }
