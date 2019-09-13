@@ -2,15 +2,21 @@ import React, { Component, Fragment } from "react";
 import ArticleSkeleton from "@times-components/article-skeleton";
 import { getHeadline, getLeadAsset } from "@times-components/utils";
 import Caption from "@times-components/caption";
+import {
+  TagList,
+  TagSize,
+  BorderRadiusShape,
+  ThemeProvider,
+  lightTheme
+} from "newskit";
+import Context from "@times-components/context";
 import ArticleHeader from "./article-header/article-header";
 import ArticleMeta from "./article-meta/article-meta";
-import {TagList, TagSize, BorderRadiusShape, ThemeProvider, lightTheme} from "newskit";
 import {
   articleDefaultProps,
   articlePropTypes
 } from "./article-prop-types/article-prop-types";
 import { LeadAssetCaptionContainer } from "./styles/article-body/responsive";
-import Context from "@times-components/context";
 
 import {
   ArticleMainStandardContainer,
@@ -65,17 +71,20 @@ class ArticlePage extends Component {
             <ArticleMeta {...metaProps} />
             <ThemeProvider theme={lightTheme}>
               <Context.Consumer>
-                {({ makeTopicUrl }) => (
-                  topics && <TagList
-                    size={TagSize.Medium}
-                    shape={BorderRadiusShape.Squares} 
-                    tagData={topics.map(topic => ({
-                      label: topic.name,
-                      href: makeTopicUrl(topic)
-                    }))} />
-                )}
-            </Context.Consumer>
-          </ThemeProvider>
+                {({ makeTopicUrl }) =>
+                  topics && (
+                    <TagList
+                      size={TagSize.Medium}
+                      shape={BorderRadiusShape.Squares}
+                      tagData={topics.map(topic => ({
+                        label: topic.name,
+                        href: makeTopicUrl(topic)
+                      }))}
+                    />
+                  )
+                }
+              </Context.Consumer>
+            </ThemeProvider>
           </MetaContainer>
         </HeaderTopContainer>
         <LeadAsset

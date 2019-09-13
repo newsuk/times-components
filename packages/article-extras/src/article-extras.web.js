@@ -5,9 +5,9 @@ import ArticleComments from "@times-components/article-comments";
 import RelatedArticles from "@times-components/related-articles";
 import { MessageContext } from "@times-components/message-bar";
 import SaveAndShareBar from "@times-components/save-and-share-bar";
-import {TagSize, BorderRadiusShape, ThemeProvider, lightTheme} from "newskit";
-import { ShareAndSaveContainer, ArticleTopicsList } from "./styles/responsive";
+import { TagSize, BorderRadiusShape, ThemeProvider, lightTheme } from "newskit";
 import Context from "@times-components/context";
+import { ShareAndSaveContainer, ArticleTopicsList } from "./styles/responsive";
 
 const ArticleExtras = ({
   analyticsStream,
@@ -34,14 +34,15 @@ const ArticleExtras = ({
           {({ makeTopicUrl }) => (
             <ArticleTopicsList
               size={TagSize.Medium}
-              shape={BorderRadiusShape.Squares} 
+              shape={BorderRadiusShape.Squares}
               tagData={topics.map(topic => ({
                 label: topic.name,
                 href: makeTopicUrl(topic)
-              }))} />
+              }))}
+            />
           )}
-      </Context.Consumer>
-    </ThemeProvider>
+        </Context.Consumer>
+      </ThemeProvider>
       {(savingEnabled || sharingEnabled) && (
         <UserState state={UserState.loggedInOrShared}>
           <MessageContext.Consumer>
