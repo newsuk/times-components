@@ -2420,6 +2420,11 @@ exports[`28. tile ae 1`] = `
 }
 
 .IS1 {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.IS2 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   -webkit-flex-shrink: 1;
@@ -2445,7 +2450,7 @@ exports[`28. tile ae 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS1"
+    className="css-view-1dbjc4n IS2"
   >
     <div
       className="css-view-1dbjc4n"
@@ -2464,7 +2469,7 @@ exports[`28. tile ae 1`] = `
         </div>
         <h3
           aria-level="3"
-          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-15d164r S2"
+          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-15d164r IS1 S2"
           role="heading"
         >
           This is tile headline
