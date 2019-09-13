@@ -35,7 +35,20 @@ const wideBreakpointStyles = {
   }
 };
 
-export default breakpoint =>
-  breakpoint === editionBreakpoints.medium
-    ? mediumBreakpointStyles
-    : wideBreakpointStyles;
+const hugeBreakpointStyles = {
+  ...wideBreakpointStyles,
+  headline: {
+    fontFamily: fonts.headline,
+    fontSize: 45,
+    lineHeight: 45,
+    marginBottom: 0
+  }
+};
+
+const stylesResolver = {
+  [editionBreakpoints.medium]: mediumBreakpointStyles,
+  [editionBreakpoints.wide]: wideBreakpointStyles,
+  [editionBreakpoints.huge]: hugeBreakpointStyles
+};
+
+export default breakpoint => stylesResolver[breakpoint] || {};
