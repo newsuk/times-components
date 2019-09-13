@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.38.0](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.37.10...@times-components/slice-layout@0.38.0) (2019-09-12)
+
+
+### Features
+
+* update secondary2nopicand2 for 1024 ([#2276](https://github.com/newsuk/times-components/issues/2276)) ([0b204a5](https://github.com/newsuk/times-components/commit/0b204a5))
+
+
+
+
+
 ## [0.37.10](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.37.9...@times-components/slice-layout@0.37.10) (2019-09-05)
 
 **Note:** Version bump only for package @times-components/slice-layout

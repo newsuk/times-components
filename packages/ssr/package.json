@@ -54,7 +54,7 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/article": "7.2.137",
+    "@times-components/article": "7.2.138",
     "@times-components/author-profile": "6.0.121",
     "@times-components/context": "1.0.41",
     "@times-components/provider": "1.17.42",

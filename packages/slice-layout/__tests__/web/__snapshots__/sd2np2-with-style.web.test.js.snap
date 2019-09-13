@@ -159,7 +159,7 @@ exports[`2. secondary two no pic and two - medium 1`] = `
           "borderRightWidth": "1px",
           "borderTopColor": "rgba(219,219,219,1.00)",
           "borderTopStyle": "solid",
-          "marginBottom": "10px",
+          "marginBottom": "15px",
           "marginTop": "15px",
         }
       }
@@ -301,15 +301,20 @@ exports[`3. secondary two no pic and two - wide 1`] = `
   className="css-view-1dbjc4n"
   style={
     Object {
+      "WebkitBoxDirection": "normal",
       "WebkitBoxFlex": 1,
+      "WebkitBoxOrient": "horizontal",
       "WebkitFlexBasis": "0%",
+      "WebkitFlexDirection": "row",
       "WebkitFlexGrow": 1,
       "WebkitFlexShrink": 1,
       "flexBasis": "0%",
+      "flexDirection": "row",
       "flexGrow": 1,
       "flexShrink": 1,
       "marginLeft": "10px",
       "marginRight": "10px",
+      "msFlexDirection": "row",
       "msFlexNegative": 1,
       "msFlexPositive": 1,
       "msFlexPreferredSize": "0%",
@@ -321,20 +326,11 @@ exports[`3. secondary two no pic and two - wide 1`] = `
     style={
       Object {
         "WebkitBoxDirection": "normal",
-        "WebkitBoxFlex": 1,
         "WebkitBoxOrient": "horizontal",
-        "WebkitFlexBasis": "0%",
         "WebkitFlexDirection": "row",
-        "WebkitFlexGrow": 1,
-        "WebkitFlexShrink": 1,
-        "flexBasis": "0%",
         "flexDirection": "row",
-        "flexGrow": 1,
-        "flexShrink": 1,
         "msFlexDirection": "row",
-        "msFlexNegative": 1,
-        "msFlexPositive": 1,
-        "msFlexPreferredSize": "0%",
+        "width": "65%",
       }
     }
   >
@@ -342,16 +338,7 @@ exports[`3. secondary two no pic and two - wide 1`] = `
       className="css-view-1dbjc4n"
       style={
         Object {
-          "WebkitBoxFlex": 1,
-          "WebkitFlexBasis": "0%",
-          "WebkitFlexGrow": 1,
-          "WebkitFlexShrink": 1,
-          "flexBasis": "0%",
-          "flexGrow": 1,
-          "flexShrink": 1,
-          "msFlexNegative": 1,
-          "msFlexPositive": 1,
-          "msFlexPreferredSize": "0%",
+          "width": "50%",
         }
       }
     >
@@ -374,7 +361,7 @@ exports[`3. secondary two no pic and two - wide 1`] = `
           "borderRightWidth": "1px",
           "borderTopColor": "rgba(219,219,219,1.00)",
           "borderTopStyle": "solid",
-          "marginBottom": "10px",
+          "marginBottom": "15px",
           "marginTop": "15px",
         }
       }
@@ -383,16 +370,7 @@ exports[`3. secondary two no pic and two - wide 1`] = `
       className="css-view-1dbjc4n"
       style={
         Object {
-          "WebkitBoxFlex": 1,
-          "WebkitFlexBasis": "0%",
-          "WebkitFlexGrow": 1,
-          "WebkitFlexShrink": 1,
-          "flexBasis": "0%",
-          "flexGrow": 1,
-          "flexShrink": 1,
-          "msFlexNegative": 1,
-          "msFlexPositive": 1,
-          "msFlexPreferredSize": "0%",
+          "width": "50%",
         }
       }
     >
@@ -409,15 +387,15 @@ exports[`3. secondary two no pic and two - wide 1`] = `
       Object {
         "borderBottomColor": "rgba(219,219,219,1.00)",
         "borderBottomStyle": "solid",
-        "borderBottomWidth": "1px",
         "borderLeftColor": "rgba(219,219,219,1.00)",
         "borderLeftStyle": "solid",
         "borderRightColor": "rgba(219,219,219,1.00)",
         "borderRightStyle": "solid",
+        "borderRightWidth": "1px",
         "borderTopColor": "rgba(219,219,219,1.00)",
         "borderTopStyle": "solid",
-        "marginLeft": "10px",
-        "marginRight": "10px",
+        "marginBottom": "15px",
+        "marginTop": "15px",
       }
     }
   />
@@ -425,18 +403,15 @@ exports[`3. secondary two no pic and two - wide 1`] = `
     className="css-view-1dbjc4n"
     style={
       Object {
-        "WebkitBoxDirection": "normal",
         "WebkitBoxFlex": 1,
-        "WebkitBoxOrient": "horizontal",
         "WebkitFlexBasis": "0%",
-        "WebkitFlexDirection": "row",
         "WebkitFlexGrow": 1,
         "WebkitFlexShrink": 1,
         "flexBasis": "0%",
-        "flexDirection": "row",
         "flexGrow": 1,
         "flexShrink": 1,
-        "msFlexDirection": "row",
+        "marginBottom": "5px",
+        "marginTop": "5px",
         "msFlexNegative": 1,
         "msFlexPositive": 1,
         "msFlexPreferredSize": "0%",
@@ -444,27 +419,9 @@ exports[`3. secondary two no pic and two - wide 1`] = `
     }
   >
     <div
-      className="css-view-1dbjc4n"
-      style={
-        Object {
-          "WebkitBoxFlex": 1,
-          "WebkitFlexBasis": "0%",
-          "WebkitFlexGrow": 1,
-          "WebkitFlexShrink": 1,
-          "flexBasis": "0%",
-          "flexGrow": 1,
-          "flexShrink": 1,
-          "msFlexNegative": 1,
-          "msFlexPositive": 1,
-          "msFlexPreferredSize": "0%",
-        }
-      }
+      className="css-text-901oao"
     >
-      <div
-        className="css-text-901oao"
-      >
-        support-1
-      </div>
+      support-1
     </div>
     <div
       className="css-view-1dbjc4n"
@@ -472,40 +429,22 @@ exports[`3. secondary two no pic and two - wide 1`] = `
         Object {
           "borderBottomColor": "rgba(219,219,219,1.00)",
           "borderBottomStyle": "solid",
+          "borderBottomWidth": "1px",
           "borderLeftColor": "rgba(219,219,219,1.00)",
           "borderLeftStyle": "solid",
           "borderRightColor": "rgba(219,219,219,1.00)",
           "borderRightStyle": "solid",
-          "borderRightWidth": "1px",
           "borderTopColor": "rgba(219,219,219,1.00)",
           "borderTopStyle": "solid",
-          "marginBottom": "15px",
-          "marginTop": "10px",
+          "marginLeft": "10px",
+          "marginRight": "10px",
         }
       }
     />
     <div
-      className="css-view-1dbjc4n"
-      style={
-        Object {
-          "WebkitBoxFlex": 1,
-          "WebkitFlexBasis": "0%",
-          "WebkitFlexGrow": 1,
-          "WebkitFlexShrink": 1,
-          "flexBasis": "0%",
-          "flexGrow": 1,
-          "flexShrink": 1,
-          "msFlexNegative": 1,
-          "msFlexPositive": 1,
-          "msFlexPreferredSize": "0%",
-        }
-      }
+      className="css-text-901oao"
     >
-      <div
-        className="css-text-901oao"
-      >
-        support-2
-      </div>
+      support-2
     </div>
   </div>
 </div>
@@ -516,15 +455,20 @@ exports[`4. secondary two no pic and two - huge 1`] = `
   className="css-view-1dbjc4n"
   style={
     Object {
+      "WebkitBoxDirection": "normal",
       "WebkitBoxFlex": 1,
+      "WebkitBoxOrient": "horizontal",
       "WebkitFlexBasis": "0%",
+      "WebkitFlexDirection": "row",
       "WebkitFlexGrow": 1,
       "WebkitFlexShrink": 1,
       "flexBasis": "0%",
+      "flexDirection": "row",
       "flexGrow": 1,
       "flexShrink": 1,
       "marginLeft": "10px",
       "marginRight": "10px",
+      "msFlexDirection": "row",
       "msFlexNegative": 1,
       "msFlexPositive": 1,
       "msFlexPreferredSize": "0%",
@@ -536,20 +480,11 @@ exports[`4. secondary two no pic and two - huge 1`] = `
     style={
       Object {
         "WebkitBoxDirection": "normal",
-        "WebkitBoxFlex": 1,
         "WebkitBoxOrient": "horizontal",
-        "WebkitFlexBasis": "0%",
         "WebkitFlexDirection": "row",
-        "WebkitFlexGrow": 1,
-        "WebkitFlexShrink": 1,
-        "flexBasis": "0%",
         "flexDirection": "row",
-        "flexGrow": 1,
-        "flexShrink": 1,
         "msFlexDirection": "row",
-        "msFlexNegative": 1,
-        "msFlexPositive": 1,
-        "msFlexPreferredSize": "0%",
+        "width": "65%",
       }
     }
   >
@@ -557,16 +492,7 @@ exports[`4. secondary two no pic and two - huge 1`] = `
       className="css-view-1dbjc4n"
       style={
         Object {
-          "WebkitBoxFlex": 1,
-          "WebkitFlexBasis": "0%",
-          "WebkitFlexGrow": 1,
-          "WebkitFlexShrink": 1,
-          "flexBasis": "0%",
-          "flexGrow": 1,
-          "flexShrink": 1,
-          "msFlexNegative": 1,
-          "msFlexPositive": 1,
-          "msFlexPreferredSize": "0%",
+          "width": "50%",
         }
       }
     >
@@ -589,7 +515,7 @@ exports[`4. secondary two no pic and two - huge 1`] = `
           "borderRightWidth": "1px",
           "borderTopColor": "rgba(219,219,219,1.00)",
           "borderTopStyle": "solid",
-          "marginBottom": "10px",
+          "marginBottom": "15px",
           "marginTop": "15px",
         }
       }
@@ -598,16 +524,7 @@ exports[`4. secondary two no pic and two - huge 1`] = `
       className="css-view-1dbjc4n"
       style={
         Object {
-          "WebkitBoxFlex": 1,
-          "WebkitFlexBasis": "0%",
-          "WebkitFlexGrow": 1,
-          "WebkitFlexShrink": 1,
-          "flexBasis": "0%",
-          "flexGrow": 1,
-          "flexShrink": 1,
-          "msFlexNegative": 1,
-          "msFlexPositive": 1,
-          "msFlexPreferredSize": "0%",
+          "width": "50%",
         }
       }
     >
@@ -624,15 +541,15 @@ exports[`4. secondary two no pic and two - huge 1`] = `
       Object {
         "borderBottomColor": "rgba(219,219,219,1.00)",
         "borderBottomStyle": "solid",
-        "borderBottomWidth": "1px",
         "borderLeftColor": "rgba(219,219,219,1.00)",
         "borderLeftStyle": "solid",
         "borderRightColor": "rgba(219,219,219,1.00)",
         "borderRightStyle": "solid",
+        "borderRightWidth": "1px",
         "borderTopColor": "rgba(219,219,219,1.00)",
         "borderTopStyle": "solid",
-        "marginLeft": "10px",
-        "marginRight": "10px",
+        "marginBottom": "15px",
+        "marginTop": "15px",
       }
     }
   />
@@ -640,18 +557,15 @@ exports[`4. secondary two no pic and two - huge 1`] = `
     className="css-view-1dbjc4n"
     style={
       Object {
-        "WebkitBoxDirection": "normal",
         "WebkitBoxFlex": 1,
-        "WebkitBoxOrient": "horizontal",
         "WebkitFlexBasis": "0%",
-        "WebkitFlexDirection": "row",
         "WebkitFlexGrow": 1,
         "WebkitFlexShrink": 1,
         "flexBasis": "0%",
-        "flexDirection": "row",
         "flexGrow": 1,
         "flexShrink": 1,
-        "msFlexDirection": "row",
+        "marginBottom": "5px",
+        "marginTop": "5px",
         "msFlexNegative": 1,
         "msFlexPositive": 1,
         "msFlexPreferredSize": "0%",
@@ -659,27 +573,9 @@ exports[`4. secondary two no pic and two - huge 1`] = `
     }
   >
     <div
-      className="css-view-1dbjc4n"
-      style={
-        Object {
-          "WebkitBoxFlex": 1,
-          "WebkitFlexBasis": "0%",
-          "WebkitFlexGrow": 1,
-          "WebkitFlexShrink": 1,
-          "flexBasis": "0%",
-          "flexGrow": 1,
-          "flexShrink": 1,
-          "msFlexNegative": 1,
-          "msFlexPositive": 1,
-          "msFlexPreferredSize": "0%",
-        }
-      }
+      className="css-text-901oao"
     >
-      <div
-        className="css-text-901oao"
-      >
-        support-1
-      </div>
+      support-1
     </div>
     <div
       className="css-view-1dbjc4n"
@@ -687,40 +583,22 @@ exports[`4. secondary two no pic and two - huge 1`] = `
         Object {
           "borderBottomColor": "rgba(219,219,219,1.00)",
           "borderBottomStyle": "solid",
+          "borderBottomWidth": "1px",
           "borderLeftColor": "rgba(219,219,219,1.00)",
           "borderLeftStyle": "solid",
           "borderRightColor": "rgba(219,219,219,1.00)",
           "borderRightStyle": "solid",
-          "borderRightWidth": "1px",
           "borderTopColor": "rgba(219,219,219,1.00)",
           "borderTopStyle": "solid",
-          "marginBottom": "15px",
-          "marginTop": "10px",
+          "marginLeft": "10px",
+          "marginRight": "10px",
         }
       }
     />
     <div
-      className="css-view-1dbjc4n"
-      style={
-        Object {
-          "WebkitBoxFlex": 1,
-          "WebkitFlexBasis": "0%",
-          "WebkitFlexGrow": 1,
-          "WebkitFlexShrink": 1,
-          "flexBasis": "0%",
-          "flexGrow": 1,
-          "flexShrink": 1,
-          "msFlexNegative": 1,
-          "msFlexPositive": 1,
-          "msFlexPreferredSize": "0%",
-        }
-      }
+      className="css-text-901oao"
     >
-      <div
-        className="css-text-901oao"
-      >
-        support-2
-      </div>
+      support-2
     </div>
   </div>
 </div>

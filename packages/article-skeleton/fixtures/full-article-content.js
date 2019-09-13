@@ -231,6 +231,26 @@ export default [
     name: "paragraph"
   },
   {
+    attributes: {},
+    children: [
+      {
+        attributes: {},
+        children: [
+          {
+            attributes: {
+              value:
+                "Baroness Thatcher, LG, OM, PC, FRS, Prime Minister, 1979-90, was born on October 13, 1925. She died on April 8, 2013, aged 87."
+            },
+            children: [],
+            name: "text"
+          }
+        ],
+        name: "unknown"
+      }
+    ],
+    name: "paragraph"
+  },
+  {
     attributes: {
       brightcoveAccountId: "5436121857001",
       brightcovePolicyKey: "1.2.3.4",

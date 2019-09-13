@@ -69,17 +69,13 @@ exports[`3. secondary two no pic and two - wide 1`] = `
   </View>
   <View />
   <View>
-    <View>
-      <Text>
-        support-1
-      </Text>
-    </View>
+    <Text>
+      support-1
+    </Text>
     <View />
-    <View>
-      <Text>
-        support-2
-      </Text>
-    </View>
+    <Text>
+      support-2
+    </Text>
   </View>
 </View>
 `;
@@ -101,17 +97,13 @@ exports[`4. secondary two no pic and two - huge 1`] = `
   </View>
   <View />
   <View>
-    <View>
-      <Text>
-        support-1
-      </Text>
-    </View>
+    <Text>
+      support-1
+    </Text>
     <View />
-    <View>
-      <Text>
-        support-2
-      </Text>
-    </View>
+    <Text>
+      support-2
+    </Text>
   </View>
 </View>
 `;

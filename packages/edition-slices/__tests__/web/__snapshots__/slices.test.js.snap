@@ -262,15 +262,13 @@ exports[`3. lead one and one 1`] = `
 <div>
   <div>
     <div>
-      <TileU
-        breakpoint="wide"
+      <TileZ
         tileName="lead"
       />
     </div>
     <div />
     <div>
-      <TileAA
-        breakpoint="wide"
+      <TileAF
         tileName="support"
       />
     </div>
@@ -550,19 +548,15 @@ exports[`12. secondary two no pic and two 1`] = `
     </div>
     <div />
     <div>
-      <div>
-        <TileG
-          breakpoint="wide"
-          tileName="support1"
-        />
-      </div>
+      <TileG
+        breakpoint="wide"
+        tileName="support1"
+      />
       <div />
-      <div>
-        <TileG
-          breakpoint="wide"
-          tileName="support2"
-        />
-      </div>
+      <TileG
+        breakpoint="wide"
+        tileName="support2"
+      />
     </div>
   </div>
 </div>

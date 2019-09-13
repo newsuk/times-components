@@ -576,15 +576,13 @@ exports[`18. lead one and one - wide 1`] = `
 <View>
   <View>
     <View>
-      <TileU
-        breakpoint="wide"
+      <TileZ
         tileName="lead"
       />
     </View>
     <View />
     <View>
-      <TileAA
-        breakpoint="wide"
+      <TileAF
         tileName="support"
       />
     </View>
@@ -917,19 +915,15 @@ exports[`29. secondary two no pic and two - wide 1`] = `
     </View>
     <View />
     <View>
-      <View>
-        <TileG
-          breakpoint="wide"
-          tileName="support1"
-        />
-      </View>
+      <TileG
+        breakpoint="wide"
+        tileName="support1"
+      />
       <View />
-      <View>
-        <TileG
-          breakpoint="wide"
-          tileName="support2"
-        />
-      </View>
+      <TileG
+        breakpoint="wide"
+        tileName="support2"
+      />
     </View>
   </View>
 </View>
@@ -1087,15 +1081,13 @@ exports[`33. lead one and one - huge 1`] = `
   <View>
     <View>
       <View>
-        <TileU
-          breakpoint="huge"
+        <TileZ
           tileName="lead"
         />
       </View>
       <View />
       <View>
-        <TileAA
-          breakpoint="huge"
+        <TileAF
           tileName="support"
         />
       </View>
@@ -1436,19 +1428,15 @@ exports[`44. secondary two no pic and two - huge 1`] = `
       </View>
       <View />
       <View>
-        <View>
-          <TileG
-            breakpoint="huge"
-            tileName="support1"
-          />
-        </View>
+        <TileG
+          breakpoint="huge"
+          tileName="support1"
+        />
         <View />
-        <View>
-          <TileG
-            breakpoint="huge"
-            tileName="support2"
-          />
-        </View>
+        <TileG
+          breakpoint="huge"
+          tileName="support2"
+        />
       </View>
     </View>
   </View>
