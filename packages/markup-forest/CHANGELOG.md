@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.7.24](https://github.com/newsuk/times-components/compare/@times-components/markup-forest@1.7.23...@times-components/markup-forest@1.7.24) (2019-09-13)
+
+
+### Bug Fixes
+
+* REPLAT-8453 unknown nodes no longer crash ([#2272](https://github.com/newsuk/times-components/issues/2272)) ([df28213](https://github.com/newsuk/times-components/commit/df28213))
+
+
+
+
+
 ## [1.7.23](https://github.com/newsuk/times-components/compare/@times-components/markup-forest@1.7.22...@times-components/markup-forest@1.7.23) (2019-09-05)
 
 **Note:** Version bump only for package @times-components/markup-forest
