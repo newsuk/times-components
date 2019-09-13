@@ -311,7 +311,7 @@ exports[`2. daily universal register - medium 1`] = `
 exports[`3. lead one and one - medium 1`] = `
 <style>
 .IS1 {
-  width: 75%;
+  width: 84%;
 }
 
 .IS2 {
@@ -329,7 +329,7 @@ exports[`3. lead one and one - medium 1`] = `
 }
 
 .IS3 {
-  width: 25%;
+  width: 16%;
 }
 
 .IS4 {
@@ -372,8 +372,7 @@ exports[`3. lead one and one - medium 1`] = `
     <div
       className="css-view-1dbjc4n IS1"
     >
-      <TileU
-        breakpoint="wide"
+      <TileZ
         tileName="lead"
       />
     </div>
@@ -383,8 +382,7 @@ exports[`3. lead one and one - medium 1`] = `
     <div
       className="css-view-1dbjc4n IS3"
     >
-      <TileAA
-        breakpoint="wide"
+      <TileAF
         tileName="support"
       />
     </div>
@@ -2299,7 +2297,7 @@ exports[`17. daily universal register - wide 1`] = `
 exports[`18. lead one and one - wide 1`] = `
 <style>
 .IS1 {
-  width: 75%;
+  width: 84%;
 }
 
 .IS2 {
@@ -2317,7 +2315,7 @@ exports[`18. lead one and one - wide 1`] = `
 }
 
 .IS3 {
-  width: 25%;
+  width: 16%;
 }
 
 .IS4 {
@@ -2360,8 +2358,7 @@ exports[`18. lead one and one - wide 1`] = `
     <div
       className="css-view-1dbjc4n IS1"
     >
-      <TileU
-        breakpoint="wide"
+      <TileZ
         tileName="lead"
       />
     </div>
@@ -2371,8 +2368,7 @@ exports[`18. lead one and one - wide 1`] = `
     <div
       className="css-view-1dbjc4n IS3"
     >
-      <TileAA
-        breakpoint="wide"
+      <TileAF
         tileName="support"
       />
     </div>
@@ -4290,7 +4286,7 @@ exports[`32. daily universal register - huge 1`] = `
 exports[`33. lead one and one - huge 1`] = `
 <style>
 .IS1 {
-  width: 75%;
+  width: 84%;
 }
 
 .IS2 {
@@ -4308,7 +4304,7 @@ exports[`33. lead one and one - huge 1`] = `
 }
 
 .IS3 {
-  width: 25%;
+  width: 16%;
 }
 
 .IS4 {
@@ -4351,8 +4347,7 @@ exports[`33. lead one and one - huge 1`] = `
     <div
       className="css-view-1dbjc4n IS1"
     >
-      <TileU
-        breakpoint="wide"
+      <TileZ
         tileName="lead"
       />
     </div>
@@ -4362,8 +4357,7 @@ exports[`33. lead one and one - huge 1`] = `
     <div
       className="css-view-1dbjc4n IS3"
     >
-      <TileAA
-        breakpoint="wide"
+      <TileAF
         tileName="support"
       />
     </div>

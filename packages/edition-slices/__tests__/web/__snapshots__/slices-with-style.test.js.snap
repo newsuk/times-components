@@ -1136,7 +1136,7 @@ exports[`2. leaders 2`] = `
 exports[`3. lead one and one 1`] = `
 <style>
 .IS1 {
-  width: 75%;
+  width: 84%;
 }
 
 .IS2 {
@@ -1154,7 +1154,7 @@ exports[`3. lead one and one 1`] = `
 }
 
 .IS3 {
-  width: 25%;
+  width: 16%;
 }
 
 .IS4 {
@@ -1197,8 +1197,7 @@ exports[`3. lead one and one 1`] = `
     <div
       className="css-view-1dbjc4n IS1"
     >
-      <TileU
-        breakpoint="wide"
+      <TileZ
         tileName="lead"
       />
     </div>
@@ -1208,8 +1207,7 @@ exports[`3. lead one and one 1`] = `
     <div
       className="css-view-1dbjc4n IS3"
     >
-      <TileAA
-        breakpoint="wide"
+      <TileAF
         tileName="support"
       />
     </div>

@@ -32,6 +32,34 @@ export default renderComponent => {
 
         expect(output).toMatchSnapshot();
       }
+    },
+    {
+      name: "lead one and one - wide",
+      test() {
+        const output = renderComponent(
+          <LeadOneAndOneSlice
+            breakpoint={editionBreakpoints.wide}
+            lead={createItem("lead")}
+            support={createItem("support")}
+          />
+        );
+
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "lead one and one - huge",
+      test() {
+        const output = renderComponent(
+          <LeadOneAndOneSlice
+            breakpoint={editionBreakpoints.huge}
+            lead={createItem("lead")}
+            support={createItem("support")}
+          />
+        );
+
+        expect(output).toMatchSnapshot();
+      }
     }
   ];
 

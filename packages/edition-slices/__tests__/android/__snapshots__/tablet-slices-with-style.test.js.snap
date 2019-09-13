@@ -1367,11 +1367,11 @@ exports[`18. lead one and one - wide 1`] = `
     <View
       style={
         Object {
-          "width": "75%",
+          "width": "84%",
         }
       }
     >
-      <TileU />
+      <TileZ />
     </View>
     <View
       style={
@@ -1386,11 +1386,11 @@ exports[`18. lead one and one - wide 1`] = `
     <View
       style={
         Object {
-          "width": "25%",
+          "width": "16%",
         }
       }
     >
-      <TileAA />
+      <TileAF />
     </View>
   </View>
 </View>
@@ -2556,11 +2556,11 @@ exports[`33. lead one and one - huge 1`] = `
       <View
         style={
           Object {
-            "width": "75%",
+            "width": "84%",
           }
         }
       >
-        <TileU />
+        <TileZ />
       </View>
       <View
         style={
@@ -2575,11 +2575,11 @@ exports[`33. lead one and one - huge 1`] = `
       <View
         style={
           Object {
-            "width": "25%",
+            "width": "16%",
           }
         }
       >
-        <TileAA />
+        <TileAF />
       </View>
     </View>
   </View>

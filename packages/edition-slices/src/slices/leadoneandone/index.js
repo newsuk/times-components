@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { LeadOneAndOneSlice } from "@times-components/slice-layout";
-import { TileA, TileB, TileU, TileAA } from "../../tiles";
+import { TileA, TileB, TileU, TileAA, TileZ, TileAF } from "../../tiles";
 import { ResponsiveSlice } from "../shared";
 
 class LeadOneAndOne extends Component {
@@ -9,6 +9,7 @@ class LeadOneAndOne extends Component {
     super(props);
     this.renderSmall = this.renderSmall.bind(this);
     this.renderMedium = this.renderMedium.bind(this);
+    this.renderWide = this.renderWide.bind(this);
   }
 
   renderSmall(breakpoint) {
@@ -53,11 +54,26 @@ class LeadOneAndOne extends Component {
     );
   }
 
+  renderWide(breakpoint) {
+    const {
+      onPress,
+      slice: { lead, support }
+    } = this.props;
+    return (
+      <LeadOneAndOneSlice
+        breakpoint={breakpoint}
+        lead={<TileZ onPress={onPress} tile={lead} tileName="lead" />}
+        support={<TileAF onPress={onPress} tile={support} tileName="support" />}
+      />
+    );
+  }
+
   render() {
     return (
       <ResponsiveSlice
         renderSmall={this.renderSmall}
         renderMedium={this.renderMedium}
+        renderWide={this.renderWide}
       />
     );
   }

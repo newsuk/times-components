@@ -63,3 +63,93 @@ exports[`2. lead one and one - medium 1`] = `
   </View>
 </View>
 `;
+
+exports[`3. lead one and one - wide 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "flexDirection": "row",
+      "marginHorizontal": 10,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "width": "84%",
+      }
+    }
+  >
+    <Text>
+      lead
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "borderColor": "#DBDBDB",
+        "borderRightWidth": 1,
+        "borderStyle": "solid",
+        "marginVertical": 15,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "width": "16%",
+      }
+    }
+  >
+    <Text>
+      support
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`4. lead one and one - huge 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "flexDirection": "row",
+      "marginHorizontal": 10,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "width": "84%",
+      }
+    }
+  >
+    <Text>
+      lead
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "borderColor": "#DBDBDB",
+        "borderRightWidth": 1,
+        "borderStyle": "solid",
+        "marginVertical": 15,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "width": "16%",
+      }
+    }
+  >
+    <Text>
+      support
+    </Text>
+  </View>
+</View>
+`;
