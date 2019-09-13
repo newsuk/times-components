@@ -275,6 +275,12 @@ export default ({
       };
     },
     paragraph(key, attributes, children, indx, node) {
+      const flatChildren = children.reduce((acc, child) => {
+        if (Array.isArray(child)) {
+          return [...acc, ...child];
+        }
+        return [...acc, child];
+      }, []);
       return {
         element: new Text.Text({
           font: fontFamily,
@@ -294,10 +300,15 @@ export default ({
             );
           },
           lineHeight: lineHeight * fontScale,
-          markup: children,
+          markup: flatChildren,
           size: fontSize * fontScale,
           width: Math.min(screenWidth(), tabletWidth)
         })
+      };
+    },
+    unknown(key, attributes, children) {
+      return {
+        element: children
       };
     },
     pullQuote(
