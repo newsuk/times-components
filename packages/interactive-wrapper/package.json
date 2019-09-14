@@ -60,7 +60,7 @@
   "dependencies": {
     "@times-components/image": "6.4.25",
     "prop-types": "15.7.2",
-    "react-native-webview": "5.10.0"
+    "react-native-webview": "7.0.5"
   },
   "peerDependencies": {
     "react": ">=16.5",

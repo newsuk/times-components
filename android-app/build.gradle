@@ -3,13 +3,13 @@ import groovy.json.JsonSlurper
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
-    
+
     repositories {
         google()
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.4.0'
+        classpath 'com.android.tools.build:gradle:3.4.1'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -18,6 +18,10 @@ buildscript {
 
 def reactRepositoryPath = "$rootDir/repo"
 def graphQlFilesPath = './xnative/src/main/res/raw'
+def assetsPath = './xnative/src/main/assets'
+def valuesPath = './xnative/src/main/res/values'
+def resPath = './xnative/src/main/res'
+
 
 allprojects {
     repositories {
@@ -33,6 +37,9 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
     delete graphQlFilesPath
+    delete assetsPath
+    delete valuesPath
+    delete resPath
 }
 
 
@@ -64,9 +71,25 @@ task generateReactArchives {
             generateReactArchives.dependsOn(generateReactArchive)
         }
     }
+
     task reactNativeCopy(type: Copy) {
         from('../node_modules/react-native/android')
         into(reactRepositoryPath)
+    }
+
+    task valuesCopy(type: Copy) {
+        from('./app/build/generated/res/resValues/release/values')
+        into(valuesPath)
+    }
+
+    task bundleCopy(type: Copy) {
+        from('./app/build/generated/assets/react/release')
+        into(assetsPath)
+    }
+
+    task resCopy(type: Copy) {
+        from('./app/build/generated/res/react/release')
+        into(resPath)
     }
 
     //pack the graphql files in the xnative.aar library so they can be reused by the android app
@@ -76,6 +99,9 @@ task generateReactArchives {
         into(graphQlFilesPath)
     }
 
+    valuesCopy.dependsOn(resCopy)
+    bundleCopy.dependsOn(valuesCopy)
+    gqlCopy.dependsOn(bundleCopy)
     removePreviousReactArchives.dependsOn(gqlCopy)
     reactNativeCopy.dependsOn(removePreviousReactArchives)
     generateReactArchives.dependsOn(reactNativeCopy)

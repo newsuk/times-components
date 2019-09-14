@@ -1,6 +1,7 @@
+include ':app'
 include ':xnative'
 
-include ':react-native-svg'	
+include ':react-native-svg'
 project(':react-native-svg').projectDir = new File(settingsDir, '../node_modules/react-native-svg/android')
 
 include ':react-native-webview'

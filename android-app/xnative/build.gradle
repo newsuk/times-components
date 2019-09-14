@@ -11,10 +11,6 @@ task sourceJar(type: Jar) {
     classifier "source"
 }
 
-project.ext.react = [
-    enableHermes: true
-]
-
 publishing {
     publications {
         xnative(MavenPublication) {
@@ -58,6 +54,22 @@ publishing {
                 configurations.implementation.getAllDependencies().each { dep -> addDependency(dep, "runtime") }
             }
         }
+
+        hermes(MavenPublication) {
+            groupId 'react-repo'
+            artifactId 'hermes'
+            version packageInfo.version
+            artifact(sourceJar)
+            artifact("../../node_modules/hermesvm/android/hermes-release.aar")
+        }
+
+        hermesDebug(MavenPublication) {
+            groupId 'react-repo'
+            artifactId 'hermes-debug'
+            version packageInfo.version
+            artifact(sourceJar)
+            artifact("../../node_modules/hermesvm/android/hermes-debug.aar")
+        }
     }
     repositories {
         maven {
@@ -69,22 +81,29 @@ publishing {
 android {
     compileSdkVersion 28
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
         versionName packageInfo.version
         consumerProguardFiles 'proguard-rules.pro'
     }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
 }
 
 dependencies {
     api "com.facebook.react:react-native:${packageInfo.dependencies.'react-native'}"
-    api("react-repo:react-native-svg:${packageInfo.dependencies.'react-native-svg'}") {	
-        exclude group: "com.facebook.react"	
+    api("react-repo:react-native-svg:${packageInfo.dependencies.'react-native-svg'}") {
+        exclude group: "com.facebook.react"
     }
-    api("react-repo:react-native-webview:${packageInfo.dependencies.'react-native-webview'}") {	
-        exclude group: "com.facebook.react"	
+    api("react-repo:react-native-webview:${packageInfo.dependencies.'react-native-webview'}") {
+        exclude group: "com.facebook.react"
     }
+
     api("react-repo:react-native-device-info:${packageInfo.dependencies.'react-native-device-info'}") {
         exclude group: "com.facebook.react"
     }

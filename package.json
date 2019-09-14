@@ -41,9 +41,7 @@
     "android": "react-native run-android --no-packager",
     "android:logs": "yarn android && react-native log-android",
     "android:app": "react-native start --config ./android-app/metro.config.js",
-    "android:build-lib:bc": "node ./lib/hermes",
-    "android:build-lib": "yarn android:build-lib:js && cd android-app && yarn build && cd .. && yarn android:build-lib:bc",
-    "android:build-lib:js": "mkdir -p android-app/xnative/src/main/assets/ && mkdir -p android-app/xnative/src/main/res/ && react-native bundle --platform android --dev false --entry-file android-app/index.android.js --bundle-output android-app/xnative/src/main/assets/index.android.bundle --assets-dest android-app/xnative/src/main/res/",
+    "android:build-lib": "cd android-app && yarn build && ./gradlew clean assembleRelease ",
     "android:device": "./lib/setup_device_connections.sh && yarn android",
     "android:publish-lib": "lerna run --scope @times-components/android-app publish-library --stream",
     "prefmt": "prettier --write '**/*.{js,json}'",
@@ -161,7 +159,7 @@
     "@babel/runtime-corejs2": "7.4.4",
     "newskit": "0.0.0-70b3f4d2c",
     "react-art": "16.6.3",
-    "react-native-device-info": "2.3.2",
+    "react-native-device-info": "3.0.0",
     "react-native": "0.60.4",
     "react-native-showcase-loader": "1.1.0"
   }
