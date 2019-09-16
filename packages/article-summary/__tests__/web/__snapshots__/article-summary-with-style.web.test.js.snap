@@ -90,42 +90,7 @@ exports[`1. article summary component with a single paragraph 1`] = `
   </div>
   <div
     className="css-text-901oao"
-  >
-    <ArticleByline
-      ast={
-        Array [
-          Object {
-            "attributes": Object {
-              "slug": "camilla-long",
-            },
-            "children": Array [
-              Object {
-                "attributes": Object {
-                  "value": "Camilla Long",
-                },
-                "children": Array [],
-                "name": "text",
-              },
-            ],
-            "name": "author",
-          },
-          Object {
-            "attributes": Object {},
-            "children": Array [
-              Object {
-                "attributes": Object {
-                  "value": ", Environment Editor",
-                },
-                "children": Array [],
-                "name": "text",
-              },
-            ],
-            "name": "inline",
-          },
-        ]
-      }
-    />
-  </div>
+  />
 </div>
 `;
 

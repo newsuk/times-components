@@ -4,7 +4,6 @@ import { iterator } from "@times-components/test-utils";
 import ArticleSummary, { ArticleSummaryContent } from "../src/article-summary";
 import defaultFixture from "../fixtures/default";
 
-jest.mock("@times-components/article-byline", () => "ArticleByline");
 jest.mock("@times-components/article-flag", () => ({
   ArticleFlags: "ArticleFlags"
 }));

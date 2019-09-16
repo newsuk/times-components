@@ -8,7 +8,6 @@ jest.mock(
   () => "mockErrorHandler"
 );
 jest.mock("../src/utils/ad-init", () => {});
-jest.mock("WebView", () => "WebView"); // https://github.com/facebook/react-native/issues/12440
 
 export default () => {
   afterEach(() => {

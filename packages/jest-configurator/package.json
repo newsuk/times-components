@@ -54,9 +54,9 @@
     ]
   },
   "dependencies": {
-    "@babel/core": "7.4.4",
+    "@babel/core": "7.6.0",
     "@times-components/test-utils": "2.3.5",
-    "babel-jest": "24.8.0",
+    "babel-jest": "24.9.0",
     "babel-plugin-istanbul": "5.1.3",
     "babel-preset-jest": "24.6.0",
     "enzyme": "3.9.0",

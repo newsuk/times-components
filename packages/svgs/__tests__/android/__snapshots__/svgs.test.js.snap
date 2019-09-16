@@ -15,6 +15,7 @@ exports[`1. an svg, g, path 1`] = `
       "borderWidth": 0,
       "flex": 0,
       "height": 100,
+      "opacity": 1,
       "width": 100,
     }
   }
