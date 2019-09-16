@@ -1,6 +1,6 @@
 {
   "name": "@times-components/ad",
-  "version": "2.7.12",
+  "version": "2.7.13",
   "description": "Ad component",
   "main": "dist/ad",
   "dev": "src/ad",

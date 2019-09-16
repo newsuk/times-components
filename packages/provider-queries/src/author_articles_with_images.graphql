@@ -16,6 +16,7 @@ query ArticleListQuery(
         shortIdentifier
         leadAsset {
           ... on Image {
+            caption
             crop(ratio: $imageRatio) {
               url
             }
@@ -24,6 +25,7 @@ query ArticleListQuery(
           }
           ... on Video {
             posterImage {
+              caption
               crop(ratio: $imageRatio) {
                 url
               }

@@ -18,7 +18,7 @@ export default () => {
     ({ mock, initOptions } = makeAdInitMocks());
   });
 
-  it("does not sets up Amazon bidding if amazon account ID is not set", () => {
+  it("does not set up Amazon bidding if amazon account ID is not set", () => {
     const init = adInit(
       merge(initOptions, {
         data: { prebidConfig: { bidders: { amazon: {} } } }
@@ -33,7 +33,7 @@ export default () => {
     expect(init.apstag.bid).not.toHaveBeenCalled();
   });
 
-  it("does not sets up Amazon bidding if amazon account ID is not set", () => {
+  it("does set up Amazon bidding if amazon account ID is set", () => {
     const init = adInit(merge(initOptions, amazonInitExtension));
     jest.spyOn(init.apstag, "process");
     jest.spyOn(init.apstag, "init");

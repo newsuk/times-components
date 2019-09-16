@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.82.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.81.0...@times-components/edition-slices@0.82.0) (2019-09-16)
+
+
+### Features
+
+* REPLAT-8552 Lead 1 Full width 1366 styling ([#2282](https://github.com/newsuk/times-components/issues/2282)) ([bc860fb](https://github.com/newsuk/times-components/commit/bc860fb))
+* secondary2nopicand2 for 1366 huge tablet ([#2280](https://github.com/newsuk/times-components/issues/2280)) ([f4ba9e7](https://github.com/newsuk/times-components/commit/f4ba9e7))
+
+
+
+
+
 # [0.81.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.80.0...@times-components/edition-slices@0.81.0) (2019-09-13)
 
 

@@ -24,7 +24,17 @@ export default ({ el, data, platform, eventCallback, window }) => {
     }
   };
 
-  const { Promise, document, googletag, pbjs, apstag } = window;
+  const {
+    apstag,
+    document,
+    encodeURIComponent,
+    googletag,
+    location,
+    pbjs,
+    Promise,
+    Set,
+    XMLHttpRequest
+  } = window;
   let localInitCalled = false;
   const isWeb = platform === "web";
   const { timeout, bidders } = data.prebidConfig;
@@ -72,16 +82,7 @@ export default ({ el, data, platform, eventCallback, window }) => {
       }
       this.utils.loadScript(this.gpt.url);
       this.utils.loadScript(this.apstag.url);
-      this.utils
-        .loadScript(this.grapeshot.url)
-        .then(() => {
-          this.gpt.setPageTargeting({
-            gs_cat: window.gs_channels
-          });
-        })
-        .catch(err => {
-          eventCallback("error", err.stack);
-        });
+      this.admantx.init();
     },
 
     breakpoints() {
@@ -108,6 +109,75 @@ export default ({ el, data, platform, eventCallback, window }) => {
           refresh: "true"
         });
         googletag.cmd.push(() => googletag.pubads().refresh());
+      }
+    },
+
+    admantx: {
+      extractNames(values) {
+        const cleansedValues = new Set(
+          values.map(value =>
+            value.name
+              .toLowerCase()
+              .trim()
+              .replace(/\s+/g, "_")
+              .replace(/["'=!+#*~;^()<>[\],&]/g, "")
+          )
+        );
+
+        return [...cleansedValues].join(",");
+      },
+
+      getUrl() {
+        const baseUrl = "https://euasync01.admantx.com/admantx/service";
+        const queryParams = encodeURIComponent(
+          JSON.stringify({
+            key:
+              "f1694ae18c17dc1475ee187e4996ad2b484217b1a436cb04b7ac3dd4902180b6",
+            method: "descriptor",
+            mode: "async",
+            decorator: "json",
+            filter: "default",
+            type: "URL",
+            body: location.href
+          })
+        );
+
+        return `${baseUrl}?request=${queryParams}`;
+      },
+
+      init() {
+        // We can't use fetch as not supported by IE11
+        const xhr = new XMLHttpRequest();
+        xhr.open("GET", this.getUrl());
+        xhr.send();
+
+        xhr.onload = () => {
+          if (xhr.status !== 200) {
+            eventCallback(`Error: ${xhr.status}: ${xhr.statusText}`);
+          } else {
+            const { response } = xhr;
+
+            const hasUseableData =
+              response.admants ||
+              response.categories ||
+              response.entities ||
+              response.feelings;
+
+            if (hasUseableData) {
+              const option = {
+                admantx_bs: this.extractNames(response.admants),
+                admantx_cat: this.extractNames(response.categories),
+                admantx_emotion: this.extractNames(response.feelings),
+                admantx_ents: this.extractNames(response.entities)
+              };
+              googletag.cmd.push(() => this.gpt.setPageTargeting(option));
+            }
+          }
+        };
+
+        xhr.onerror = () => {
+          eventCallback("Error in ADmantx request");
+        };
       }
     },
 
@@ -222,12 +292,6 @@ export default ({ el, data, platform, eventCallback, window }) => {
           })
         );
       }
-    },
-
-    grapeshot: {
-      url: `https://newscorp.grapeshot.co.uk/thetimes/channels.cgi?url=${encodeURIComponent(
-        data.contextUrl
-      )}`
     },
 
     prebid: {
