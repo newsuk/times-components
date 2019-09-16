@@ -263,12 +263,14 @@ exports[`3. lead one and one 1`] = `
   <div>
     <div>
       <TileZ
+        breakpoint="wide"
         tileName="lead"
       />
     </div>
     <div />
     <div>
       <TileAF
+        breakpoint="wide"
         tileName="support"
       />
     </div>
