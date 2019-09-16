@@ -9,6 +9,7 @@ export default {
   theme: {
     scale: scales.medium
   },
+  newskit: false,
   user: {
     isLoggedIn: false,
     isMetered: false,
