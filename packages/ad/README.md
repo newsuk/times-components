@@ -58,20 +58,15 @@ This mechanism helps us to determine if a certain Ad should not be shown on a
 particular page (e.g. because it contains terror or hate speech related
 content).
 
-### Web - With Grapeshot
+### Web - With ADmantx
 
-We use grapeshot as a Times brand safety mechanism. We send a request to the
-Grapeshot service with the article url and in response we get an array of
-category ids for that page which we then pass to GPT, using the `gs_cat` page
-targeting key.
+We use ADmantx as a Times brand safety mechanism. We send a uri to ADmantx, which crawls the page and returns an object of key value pairs they associate with that web page. The object has the follow keys: `admants`, `categories`, `feelings`, `entities`.
 
-For web we send a uri to grapeshot, who scan the page and return a list of
-categories they associate with that web page. These categories are then passed
-to the DFP code via page targeting, which determines whether to show ads or not.
+This object is then passed to the DFP code via page targeting, which determines whether to show ads or not.
 
 ### Mobile
 
-For native we do not use grapeshot. Instead, we pass a string of comma-seperated
+For native we do not use ADmantx. Instead, we pass a string of comma-seperated
 keywords that typically come from TPA. These keywords are then passed to DFP
 using page targeting, and DFP determines whether to show the page from this
 "list".
@@ -95,7 +90,7 @@ positions uniquely from DFP. Each ad slot allows for certain fixed ad sizes.
 - Pixelskin - TBD
 - Pixelteads - TBD
 
-## Testing GPT and Grapeshot
+## Testing GPT and ADmantx
 
 To test Ads in general, follow below steps:
 
@@ -108,8 +103,8 @@ To test Ads in general, follow below steps:
 5. In the ads request, the config is sent as query params, the `cust_params` key
    has the page level config values and `prev_scp` has the slot level config
    values.
-6. On the network panel, filter for grapeshot, the second request has the key
-   values that we get from grapeshot.
+6. On the network panel, filter for `euasync01.admantx.com` to see the key
+   values that we get from ADmantx.
 
 ## Header bidding
 
