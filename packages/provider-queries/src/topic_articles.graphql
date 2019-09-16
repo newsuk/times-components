@@ -31,6 +31,7 @@ query TopicArticlesQuery(
         shortIdentifier
         leadAsset {
           ... on Image {
+            caption
             crop(ratio: $imageRatio) {
               url
             }
@@ -39,6 +40,7 @@ query TopicArticlesQuery(
           }
           ... on Video {
             posterImage {
+              caption
               crop(ratio: $imageRatio) {
                 url
               }
