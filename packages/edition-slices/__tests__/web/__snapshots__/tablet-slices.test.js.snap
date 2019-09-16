@@ -171,54 +171,52 @@ exports[`7. secondary one and four - medium 1`] = `
 <div>
   <div>
     <div>
+      <TheTimesLogo
+        height={40}
+        width={42}
+      />
+    </div>
+    <div />
+    <div>
       <div>
-        <TheTimesLogo
-          height={40}
-          width={42}
-        />
+        <div>
+          <TileN
+            breakpoint="wide"
+            tileName="secondary"
+          />
+        </div>
       </div>
       <div />
       <div>
         <div>
           <div>
-            <TileN
+            <TileO
               breakpoint="wide"
-              tileName="secondary"
+              tileName="support1"
+            />
+          </div>
+          <div />
+          <div>
+            <TileO
+              breakpoint="wide"
+              tileName="support2"
             />
           </div>
         </div>
         <div />
         <div>
           <div>
-            <div>
-              <TileO
-                breakpoint="wide"
-                tileName="support1"
-              />
-            </div>
-            <div />
-            <div>
-              <TileO
-                breakpoint="wide"
-                tileName="support2"
-              />
-            </div>
+            <TileO
+              breakpoint="wide"
+              tileName="support3"
+            />
           </div>
           <div />
           <div>
-            <div>
-              <TileO
-                breakpoint="wide"
-                tileName="support3"
-              />
-            </div>
-            <div />
-            <div>
-              <TileO
-                breakpoint="wide"
-                tileName="support4"
-              />
-            </div>
+            <TileO
+              breakpoint="wide"
+              tileName="support4"
+            />
           </div>
         </div>
       </div>
@@ -376,22 +374,27 @@ exports[`13. standard slice - medium 1`] = `
     <div>
       <TileK
         breakpoint="wide"
+        tileName="standardItem1"
       />
       <div />
       <TileK
         breakpoint="wide"
+        tileName="standardItem2"
       />
       <div />
       <TileK
         breakpoint="wide"
+        tileName="standardItem3"
       />
       <div />
       <TileK
         breakpoint="wide"
+        tileName="standardItem4"
       />
       <div />
       <TileK
         breakpoint="wide"
+        tileName="standardItem5"
       />
     </div>
   </div>
@@ -673,54 +676,52 @@ exports[`22. secondary one and four - wide 1`] = `
 <div>
   <div>
     <div>
+      <TheTimesLogo
+        height={40}
+        width={42}
+      />
+    </div>
+    <div />
+    <div>
       <div>
-        <TheTimesLogo
-          height={40}
-          width={42}
-        />
+        <div>
+          <TileN
+            breakpoint="wide"
+            tileName="secondary"
+          />
+        </div>
       </div>
       <div />
       <div>
         <div>
           <div>
-            <TileN
+            <TileO
               breakpoint="wide"
-              tileName="secondary"
+              tileName="support1"
+            />
+          </div>
+          <div />
+          <div>
+            <TileO
+              breakpoint="wide"
+              tileName="support2"
             />
           </div>
         </div>
         <div />
         <div>
           <div>
-            <div>
-              <TileO
-                breakpoint="wide"
-                tileName="support1"
-              />
-            </div>
-            <div />
-            <div>
-              <TileO
-                breakpoint="wide"
-                tileName="support2"
-              />
-            </div>
+            <TileO
+              breakpoint="wide"
+              tileName="support3"
+            />
           </div>
           <div />
           <div>
-            <div>
-              <TileO
-                breakpoint="wide"
-                tileName="support3"
-              />
-            </div>
-            <div />
-            <div>
-              <TileO
-                breakpoint="wide"
-                tileName="support4"
-              />
-            </div>
+            <TileO
+              breakpoint="wide"
+              tileName="support4"
+            />
           </div>
         </div>
       </div>
@@ -878,22 +879,27 @@ exports[`28. standard slice - wide 1`] = `
     <div>
       <TileK
         breakpoint="wide"
+        tileName="standardItem1"
       />
       <div />
       <TileK
         breakpoint="wide"
+        tileName="standardItem2"
       />
       <div />
       <TileK
         breakpoint="wide"
+        tileName="standardItem3"
       />
       <div />
       <TileK
         breakpoint="wide"
+        tileName="standardItem4"
       />
       <div />
       <TileK
         breakpoint="wide"
+        tileName="standardItem5"
       />
     </div>
   </div>
@@ -1175,54 +1181,52 @@ exports[`37. secondary one and four - huge 1`] = `
 <div>
   <div>
     <div>
+      <TheTimesLogo
+        height={40}
+        width={42}
+      />
+    </div>
+    <div />
+    <div>
       <div>
-        <TheTimesLogo
-          height={40}
-          width={42}
-        />
+        <div>
+          <TileN
+            breakpoint="wide"
+            tileName="secondary"
+          />
+        </div>
       </div>
       <div />
       <div>
         <div>
           <div>
-            <TileN
+            <TileO
               breakpoint="wide"
-              tileName="secondary"
+              tileName="support1"
+            />
+          </div>
+          <div />
+          <div>
+            <TileO
+              breakpoint="wide"
+              tileName="support2"
             />
           </div>
         </div>
         <div />
         <div>
           <div>
-            <div>
-              <TileO
-                breakpoint="wide"
-                tileName="support1"
-              />
-            </div>
-            <div />
-            <div>
-              <TileO
-                breakpoint="wide"
-                tileName="support2"
-              />
-            </div>
+            <TileO
+              breakpoint="wide"
+              tileName="support3"
+            />
           </div>
           <div />
           <div>
-            <div>
-              <TileO
-                breakpoint="wide"
-                tileName="support3"
-              />
-            </div>
-            <div />
-            <div>
-              <TileO
-                breakpoint="wide"
-                tileName="support4"
-              />
-            </div>
+            <TileO
+              breakpoint="wide"
+              tileName="support4"
+            />
           </div>
         </div>
       </div>
@@ -1380,22 +1384,27 @@ exports[`43. standard slice - huge 1`] = `
     <div>
       <TileK
         breakpoint="wide"
+        tileName="standardItem1"
       />
       <div />
       <TileK
         breakpoint="wide"
+        tileName="standardItem2"
       />
       <div />
       <TileK
         breakpoint="wide"
+        tileName="standardItem3"
       />
       <div />
       <TileK
         breakpoint="wide"
+        tileName="standardItem4"
       />
       <div />
       <TileK
         breakpoint="wide"
+        tileName="standardItem5"
       />
     </div>
   </div>

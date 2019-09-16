@@ -1,0 +1,126 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tile p without breakpoint 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "alignItems": "center",
+      "paddingBottom": 10,
+      "paddingTop": 20,
+    }
+  }
+  url="/article/123"
+>
+  <Image
+    aspectRatio={1}
+    fill={true}
+    resizeMode="cover"
+    rounded={true}
+    style={
+      Object {
+        "overflow": "hidden",
+        "width": "30%",
+      }
+    }
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
+  />
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "paddingBottom": 15,
+        "paddingTop": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "marginBottom": 5,
+        }
+      }
+    >
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
+    </View>
+    <Text
+      accessibilityRole="header"
+      aria-level="3"
+      style={
+        Object {
+          "color": "#1D1D1B",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 35,
+          "fontWeight": "400",
+          "lineHeight": 35,
+          "marginBottom": 5,
+          "paddingHorizontal": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      This is tile headline
+    </Text>
+    <Text
+      accessibilityRole="header"
+      aria-level="4"
+      style={
+        Object {
+          "color": "#696969",
+          "fontFamily": "TimesDigitalW04-Regular",
+          "fontSize": 14,
+          "lineHeight": 20,
+          "paddingBottom": 10,
+          "paddingHorizontal": 40,
+          "textAlign": "center",
+        }
+      }
+    >
+      Three Conservative MPs resign
+    </Text>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
+    <Text>
+      <Text
+        style={
+          Object {
+            "color": "#850029",
+            "flexDirection": "row",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 12,
+            "letterSpacing": 0.6,
+            "lineHeight": 12,
+          }
+        }
+      >
+        Richard Lloyd Parry
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "#850029",
+            "flexDirection": "row",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 12,
+            "letterSpacing": 0.6,
+            "lineHeight": 12,
+          }
+        }
+      >
+        , Hanoi
+      </Text>
+    </Text>
+  </View>
+</Link>
+`;

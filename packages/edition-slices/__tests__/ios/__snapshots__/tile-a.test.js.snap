@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tile a without breakpoint 1`] = `
+<Link
+  url="/article/123"
+>
+  <View
+    style={
+      Object {
+        "margin": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "marginBottom": 0,
+        }
+      }
+    >
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
+    </View>
+    <Text
+      accessibilityRole="header"
+      aria-level="3"
+      style={
+        Object {
+          "color": "#333333",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 35,
+          "fontWeight": "900",
+          "lineHeight": 35,
+          "marginBottom": 10,
+        }
+      }
+    >
+      This is tile headline
+    </Text>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
+  </View>
+  <Image
+    aspectRatio={1.7777777777777777}
+    fill={true}
+    style={
+      Object {
+        "width": "100%",
+      }
+    }
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+  />
+</Link>
+`;

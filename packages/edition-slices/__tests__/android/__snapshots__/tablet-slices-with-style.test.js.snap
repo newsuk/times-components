@@ -428,17 +428,19 @@ exports[`7. secondary one and four - medium 1`] = `
 <View
   style={
     Object {
-      "backgroundColor": "#272D34",
+      "alignSelf": "center",
+      "maxWidth": "100%",
+      "paddingHorizontal": 10,
+      "width": 1366,
     }
   }
 >
   <View
     style={
       Object {
-        "alignSelf": "center",
-        "maxWidth": "100%",
-        "paddingHorizontal": 10,
-        "width": 1366,
+        "backgroundColor": "#272D34",
+        "marginHorizontal": 30,
+        "marginVertical": 15,
       }
     }
   >
@@ -446,149 +448,141 @@ exports[`7. secondary one and four - medium 1`] = `
       style={
         Object {
           "backgroundColor": "#272D34",
+          "flexDirection": "row",
+          "margin": 15,
+        }
+      }
+    >
+      <TheTimesLogo />
+    </View>
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#4D4D4D",
+          "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
+          "borderStyle": "solid",
+          "marginHorizontal": 15,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
         }
       }
     >
       <View
         style={
           Object {
-            "backgroundColor": "#272D34",
-            "flexDirection": "row",
-            "margin": 15,
+            "width": "50%",
           }
         }
       >
-        <TheTimesLogo />
+        <View>
+          <TileN />
+        </View>
       </View>
       <View
         style={
           Object {
-            "borderBottomColor": "#4D4D4D",
-            "borderBottomWidth": 1,
-            "borderColor": "#DBDBDB",
+            "borderColor": "#4D4D4D",
+            "borderRightWidth": 1,
             "borderStyle": "solid",
-            "marginHorizontal": 15,
+            "marginVertical": 10,
           }
         }
       />
       <View
         style={
           Object {
-            "flexDirection": "row",
+            "width": "50%",
           }
         }
       >
         <View
           style={
             Object {
-              "width": "50%",
-            }
-          }
-        >
-          <View>
-            <TileN />
-          </View>
-        </View>
-        <View
-          style={
-            Object {
-              "borderColor": "#4D4D4D",
-              "borderRightWidth": 1,
-              "borderStyle": "solid",
-              "marginVertical": 10,
-            }
-          }
-        />
-        <View
-          style={
-            Object {
-              "width": "50%",
+              "flex": 1,
+              "flexDirection": "row",
             }
           }
         >
           <View
             style={
               Object {
-                "flex": 1,
-                "flexDirection": "row",
+                "width": "50%",
               }
             }
           >
-            <View
-              style={
-                Object {
-                  "width": "50%",
-                }
-              }
-            >
-              <TileO />
-            </View>
-            <View
-              style={
-                Object {
-                  "borderColor": "#4D4D4D",
-                  "borderRightWidth": 1,
-                  "borderStyle": "solid",
-                  "marginVertical": 10,
-                }
-              }
-            />
-            <View
-              style={
-                Object {
-                  "width": "50%",
-                }
-              }
-            >
-              <TileO />
-            </View>
+            <TileO />
           </View>
           <View
             style={
               Object {
-                "borderBottomWidth": 1,
                 "borderColor": "#4D4D4D",
+                "borderRightWidth": 1,
                 "borderStyle": "solid",
-                "marginHorizontal": 10,
+                "marginVertical": 10,
               }
             }
           />
           <View
             style={
               Object {
-                "flex": 1,
-                "flexDirection": "row",
+                "width": "50%",
               }
             }
           >
-            <View
-              style={
-                Object {
-                  "width": "50%",
-                }
+            <TileO />
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "borderBottomWidth": 1,
+              "borderColor": "#4D4D4D",
+              "borderStyle": "solid",
+              "marginHorizontal": 10,
+            }
+          }
+        />
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "flexDirection": "row",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "width": "50%",
               }
-            >
-              <TileO />
-            </View>
-            <View
-              style={
-                Object {
-                  "borderColor": "#4D4D4D",
-                  "borderRightWidth": 1,
-                  "borderStyle": "solid",
-                  "marginVertical": 10,
-                }
+            }
+          >
+            <TileO />
+          </View>
+          <View
+            style={
+              Object {
+                "borderColor": "#4D4D4D",
+                "borderRightWidth": 1,
+                "borderStyle": "solid",
+                "marginVertical": 10,
               }
-            />
-            <View
-              style={
-                Object {
-                  "width": "50%",
-                }
+            }
+          />
+          <View
+            style={
+              Object {
+                "width": "50%",
               }
-            >
-              <TileO />
-            </View>
+            }
+          >
+            <TileO />
           </View>
         </View>
       </View>
@@ -1622,18 +1616,19 @@ exports[`22. secondary one and four - wide 1`] = `
 <View
   style={
     Object {
-      "marginHorizontal": 30,
-      "marginVertical": 15,
+      "alignSelf": "center",
+      "maxWidth": "100%",
+      "paddingHorizontal": 30,
+      "width": 1366,
     }
   }
 >
   <View
     style={
       Object {
-        "alignSelf": "center",
-        "maxWidth": "100%",
-        "paddingHorizontal": 30,
-        "width": 1366,
+        "backgroundColor": "#272D34",
+        "marginHorizontal": 20,
+        "marginVertical": 15,
       }
     }
   >
@@ -1641,149 +1636,141 @@ exports[`22. secondary one and four - wide 1`] = `
       style={
         Object {
           "backgroundColor": "#272D34",
+          "flexDirection": "row",
+          "margin": 15,
+        }
+      }
+    >
+      <TheTimesLogo />
+    </View>
+    <View
+      style={
+        Object {
+          "borderBottomColor": "#4D4D4D",
+          "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
+          "borderStyle": "solid",
+          "marginHorizontal": 15,
+        }
+      }
+    />
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
         }
       }
     >
       <View
         style={
           Object {
-            "backgroundColor": "#272D34",
-            "flexDirection": "row",
-            "margin": 15,
+            "width": "50%",
           }
         }
       >
-        <TheTimesLogo />
+        <View>
+          <TileN />
+        </View>
       </View>
       <View
         style={
           Object {
-            "borderBottomColor": "#4D4D4D",
-            "borderBottomWidth": 1,
-            "borderColor": "#DBDBDB",
+            "borderColor": "#4D4D4D",
+            "borderRightWidth": 1,
             "borderStyle": "solid",
-            "marginHorizontal": 15,
+            "marginVertical": 10,
           }
         }
       />
       <View
         style={
           Object {
-            "flexDirection": "row",
+            "width": "50%",
           }
         }
       >
         <View
           style={
             Object {
-              "width": "50%",
-            }
-          }
-        >
-          <View>
-            <TileN />
-          </View>
-        </View>
-        <View
-          style={
-            Object {
-              "borderColor": "#4D4D4D",
-              "borderRightWidth": 1,
-              "borderStyle": "solid",
-              "marginVertical": 10,
-            }
-          }
-        />
-        <View
-          style={
-            Object {
-              "width": "50%",
+              "flex": 1,
+              "flexDirection": "row",
             }
           }
         >
           <View
             style={
               Object {
-                "flex": 1,
-                "flexDirection": "row",
+                "width": "50%",
               }
             }
           >
-            <View
-              style={
-                Object {
-                  "width": "50%",
-                }
-              }
-            >
-              <TileO />
-            </View>
-            <View
-              style={
-                Object {
-                  "borderColor": "#4D4D4D",
-                  "borderRightWidth": 1,
-                  "borderStyle": "solid",
-                  "marginVertical": 10,
-                }
-              }
-            />
-            <View
-              style={
-                Object {
-                  "width": "50%",
-                }
-              }
-            >
-              <TileO />
-            </View>
+            <TileO />
           </View>
           <View
             style={
               Object {
-                "borderBottomWidth": 1,
                 "borderColor": "#4D4D4D",
+                "borderRightWidth": 1,
                 "borderStyle": "solid",
-                "marginHorizontal": 10,
+                "marginVertical": 10,
               }
             }
           />
           <View
             style={
               Object {
-                "flex": 1,
-                "flexDirection": "row",
+                "width": "50%",
               }
             }
           >
-            <View
-              style={
-                Object {
-                  "width": "50%",
-                }
+            <TileO />
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "borderBottomWidth": 1,
+              "borderColor": "#4D4D4D",
+              "borderStyle": "solid",
+              "marginHorizontal": 10,
+            }
+          }
+        />
+        <View
+          style={
+            Object {
+              "flex": 1,
+              "flexDirection": "row",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "width": "50%",
               }
-            >
-              <TileO />
-            </View>
-            <View
-              style={
-                Object {
-                  "borderColor": "#4D4D4D",
-                  "borderRightWidth": 1,
-                  "borderStyle": "solid",
-                  "marginVertical": 10,
-                }
+            }
+          >
+            <TileO />
+          </View>
+          <View
+            style={
+              Object {
+                "borderColor": "#4D4D4D",
+                "borderRightWidth": 1,
+                "borderStyle": "solid",
+                "marginVertical": 10,
               }
-            />
-            <View
-              style={
-                Object {
-                  "width": "50%",
-                }
+            }
+          />
+          <View
+            style={
+              Object {
+                "width": "50%",
               }
-            >
-              <TileO />
-            </View>
+            }
+          >
+            <TileO />
           </View>
         </View>
       </View>
@@ -2842,8 +2829,10 @@ exports[`37. secondary one and four - huge 1`] = `
 <View
   style={
     Object {
-      "marginHorizontal": 20,
-      "marginVertical": 15,
+      "alignSelf": "center",
+      "maxWidth": "100%",
+      "paddingHorizontal": 10,
+      "width": 1366,
     }
   }
 >
@@ -2851,18 +2840,17 @@ exports[`37. secondary one and four - huge 1`] = `
     style={
       Object {
         "alignSelf": "center",
-        "maxWidth": "100%",
-        "paddingHorizontal": 10,
-        "width": 1366,
+        "flex": 1,
+        "width": 1180,
       }
     }
   >
     <View
       style={
         Object {
-          "alignSelf": "center",
-          "flex": 1,
-          "width": 1180,
+          "backgroundColor": "#272D34",
+          "marginHorizontal": 20,
+          "marginVertical": 15,
         }
       }
     >
@@ -2870,149 +2858,141 @@ exports[`37. secondary one and four - huge 1`] = `
         style={
           Object {
             "backgroundColor": "#272D34",
+            "flexDirection": "row",
+            "margin": 15,
+          }
+        }
+      >
+        <TheTimesLogo />
+      </View>
+      <View
+        style={
+          Object {
+            "borderBottomColor": "#4D4D4D",
+            "borderBottomWidth": 1,
+            "borderColor": "#DBDBDB",
+            "borderStyle": "solid",
+            "marginHorizontal": 15,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
           }
         }
       >
         <View
           style={
             Object {
-              "backgroundColor": "#272D34",
-              "flexDirection": "row",
-              "margin": 15,
+              "width": "50%",
             }
           }
         >
-          <TheTimesLogo />
+          <View>
+            <TileN />
+          </View>
         </View>
         <View
           style={
             Object {
-              "borderBottomColor": "#4D4D4D",
-              "borderBottomWidth": 1,
-              "borderColor": "#DBDBDB",
+              "borderColor": "#4D4D4D",
+              "borderRightWidth": 1,
               "borderStyle": "solid",
-              "marginHorizontal": 15,
+              "marginVertical": 10,
             }
           }
         />
         <View
           style={
             Object {
-              "flexDirection": "row",
+              "width": "50%",
             }
           }
         >
           <View
             style={
               Object {
-                "width": "50%",
-              }
-            }
-          >
-            <View>
-              <TileN />
-            </View>
-          </View>
-          <View
-            style={
-              Object {
-                "borderColor": "#4D4D4D",
-                "borderRightWidth": 1,
-                "borderStyle": "solid",
-                "marginVertical": 10,
-              }
-            }
-          />
-          <View
-            style={
-              Object {
-                "width": "50%",
+                "flex": 1,
+                "flexDirection": "row",
               }
             }
           >
             <View
               style={
                 Object {
-                  "flex": 1,
-                  "flexDirection": "row",
+                  "width": "50%",
                 }
               }
             >
-              <View
-                style={
-                  Object {
-                    "width": "50%",
-                  }
-                }
-              >
-                <TileO />
-              </View>
-              <View
-                style={
-                  Object {
-                    "borderColor": "#4D4D4D",
-                    "borderRightWidth": 1,
-                    "borderStyle": "solid",
-                    "marginVertical": 10,
-                  }
-                }
-              />
-              <View
-                style={
-                  Object {
-                    "width": "50%",
-                  }
-                }
-              >
-                <TileO />
-              </View>
+              <TileO />
             </View>
             <View
               style={
                 Object {
-                  "borderBottomWidth": 1,
                   "borderColor": "#4D4D4D",
+                  "borderRightWidth": 1,
                   "borderStyle": "solid",
-                  "marginHorizontal": 10,
+                  "marginVertical": 10,
                 }
               }
             />
             <View
               style={
                 Object {
-                  "flex": 1,
-                  "flexDirection": "row",
+                  "width": "50%",
                 }
               }
             >
-              <View
-                style={
-                  Object {
-                    "width": "50%",
-                  }
+              <TileO />
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "borderBottomWidth": 1,
+                "borderColor": "#4D4D4D",
+                "borderStyle": "solid",
+                "marginHorizontal": 10,
+              }
+            }
+          />
+          <View
+            style={
+              Object {
+                "flex": 1,
+                "flexDirection": "row",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "width": "50%",
                 }
-              >
-                <TileO />
-              </View>
-              <View
-                style={
-                  Object {
-                    "borderColor": "#4D4D4D",
-                    "borderRightWidth": 1,
-                    "borderStyle": "solid",
-                    "marginVertical": 10,
-                  }
+              }
+            >
+              <TileO />
+            </View>
+            <View
+              style={
+                Object {
+                  "borderColor": "#4D4D4D",
+                  "borderRightWidth": 1,
+                  "borderStyle": "solid",
+                  "marginVertical": 10,
                 }
-              />
-              <View
-                style={
-                  Object {
-                    "width": "50%",
-                  }
+              }
+            />
+            <View
+              style={
+                Object {
+                  "width": "50%",
                 }
-              >
-                <TileO />
-              </View>
+              }
+            >
+              <TileO />
             </View>
           </View>
         </View>
