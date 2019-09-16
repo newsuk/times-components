@@ -159,10 +159,6 @@ android {
     }
 }
 
-repositories {
-    jcenter()
-}
-
 dependencies {
     implementation "com.facebook.react:react-native:0.60.4"  // From node_modules
 
