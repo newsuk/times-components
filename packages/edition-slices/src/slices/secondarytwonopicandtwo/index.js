@@ -46,10 +46,20 @@ class SecondaryTwoNoPicAndTwo extends Component {
       <SecondaryTwoNoPicAndTwoSlice
         breakpoint={breakpoint}
         secondary1={
-          <TileAE onPress={onPress} tile={secondary1} tileName="secondary1" />
+          <TileAE
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={secondary1}
+            tileName="secondary1"
+          />
         }
         secondary2={
-          <TileAE onPress={onPress} tile={secondary2} tileName="secondary2" />
+          <TileAE
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={secondary2}
+            tileName="secondary2"
+          />
         }
         support1={
           <TileG

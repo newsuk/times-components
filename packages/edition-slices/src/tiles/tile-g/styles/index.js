@@ -69,10 +69,20 @@ const wideBreakpointStyles = {
   }
 };
 
+const hugeBreakpointStyles = {
+  ...wideBreakpointStyles,
+  headline: {
+    fontFamily: fonts.headline,
+    fontSize: 22,
+    lineHeight: 22,
+    marginBottom: 0
+  }
+};
+
 const stylesResolver = {
   [editionBreakpoints.medium]: mediumBreakpointStyles,
   [editionBreakpoints.wide]: wideBreakpointStyles,
-  [editionBreakpoints.huge]: mediumBreakpointStyles
+  [editionBreakpoints.huge]: hugeBreakpointStyles
 };
 
 export default breakpoint =>

@@ -536,12 +536,14 @@ exports[`12. secondary two no pic and two 1`] = `
     <div>
       <div>
         <TileAE
+          breakpoint="wide"
           tileName="secondary1"
         />
       </div>
       <div />
       <div>
         <TileAE
+          breakpoint="wide"
           tileName="secondary2"
         />
       </div>
