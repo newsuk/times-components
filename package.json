@@ -41,7 +41,7 @@
     "android": "react-native run-android --no-packager",
     "android:logs": "yarn android && react-native log-android",
     "android:app": "react-native start --config ./android-app/metro.config.js",
-    "android:build-lib": "cd android-app && yarn build && ./gradlew clean assembleRelease ",
+    "android:build-lib": "cd android-app && yarn build",
     "android:device": "./lib/setup_device_connections.sh && yarn android",
     "android:publish-lib": "lerna run --scope @times-components/android-app publish-library --stream",
     "prefmt": "prettier --write '**/*.{js,json}'",

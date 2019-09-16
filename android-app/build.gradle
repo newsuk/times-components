@@ -17,10 +17,10 @@ buildscript {
 }
 
 def reactRepositoryPath = "$rootDir/repo"
-def graphQlFilesPath = './xnative/src/main/res/raw'
-def assetsPath = './xnative/src/main/assets'
-def valuesPath = './xnative/src/main/res/values'
 def resPath = './xnative/src/main/res'
+def graphQlFilesPath = './xnative/src/main/res/raw'
+def valuesPath = './xnative/src/main/res/values'
+def assetsPath = './xnative/src/main/assets'
 
 
 allprojects {
