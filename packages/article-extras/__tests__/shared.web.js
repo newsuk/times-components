@@ -11,6 +11,7 @@ import { iterator } from "@times-components/test-utils";
 import { UserState } from "./mocks";
 import ArticleExtras from "../src/article-extras";
 import { relatedArticleSlice, topics } from "../fixtures/article-extras";
+import { ContextProviderWithDefaults } from "@times-components/context";
 
 export default () => {
   addSerializers(
@@ -45,6 +46,32 @@ export default () => {
             spotAccountId="dummy-spot-id"
             topics={topics}
           />
+        );
+
+        expect(testInstance.toJSON()).toMatchSnapshot();
+      }
+    },
+    {
+      name: "renders correctly with newskit",
+      test: () => {
+        UserState.mockStates = [UserState.fullArticle];
+        const testInstance = TestRenderer.create(
+          <ContextProviderWithDefaults
+            value={{
+              newskit: true
+            }}
+          >
+            <ArticleExtras
+              analyticsStream={() => {}}
+              articleId="dummy-article-id"
+              commentsEnabled
+              registerNode={() => {}}
+              relatedArticleSlice={relatedArticleSlice}
+              relatedArticlesVisible
+              spotAccountId="dummy-spot-id"
+              topics={topics}
+            />
+          </ContextProviderWithDefaults>
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();
