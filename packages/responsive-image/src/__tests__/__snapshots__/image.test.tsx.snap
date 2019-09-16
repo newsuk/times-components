@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image calculates height 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#EDEDED",
+        "width": "100%",
+      },
+      Object {
+        "height": 150,
+        "width": 100,
+      },
+      undefined,
+    ]
+  }
+>
+  <Image
+    defaultSource={
+      Object {
+        "uri": "http://foo.com/bar.png?offline=true",
+      }
+    }
+    progressiveRenderingEnabled={true}
+    source={
+      Object {
+        "uri": "http://foo.com/bar.png?offline=true",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "resizeMode": "cover",
+          "width": "100%",
+        },
+        Object {
+          "height": 150,
+          "width": 100,
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`Image calculates width 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#EDEDED",
+        "width": "100%",
+      },
+      Object {
+        "height": 150,
+        "width": 100,
+      },
+      undefined,
+    ]
+  }
+>
+  <Image
+    defaultSource={
+      Object {
+        "uri": "http://foo.com/bar.png?offline=true",
+      }
+    }
+    progressiveRenderingEnabled={true}
+    source={
+      Object {
+        "uri": "http://foo.com/bar.png?offline=true",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "resizeMode": "cover",
+          "width": "100%",
+        },
+        Object {
+          "height": 150,
+          "width": 100,
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`Image renders 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#EDEDED",
+        "width": "100%",
+      },
+      Object {
+        "height": 150,
+        "width": 100,
+      },
+      undefined,
+    ]
+  }
+>
+  <Image
+    defaultSource={
+      Object {
+        "uri": "http://foo.com/bar.png?offline=true",
+      }
+    }
+    progressiveRenderingEnabled={true}
+    source={
+      Object {
+        "uri": "http://foo.com/bar.png?offline=true",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "resizeMode": "cover",
+          "width": "100%",
+        },
+        Object {
+          "height": 150,
+          "width": 100,
+        },
+      ]
+    }
+  />
+</View>
+`;

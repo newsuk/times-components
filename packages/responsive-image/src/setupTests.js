@@ -1,0 +1,1 @@
+jest.mock('../assets/t.png', () => 0)
