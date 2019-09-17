@@ -12,5 +12,9 @@ export default () => {
     it("medium", () => {
       testTile(TileD, editionBreakpoints.medium);
     });
+
+    it("without breakpoint should be like small", () => {
+      testTile(TileD);
+    });
   });
 };

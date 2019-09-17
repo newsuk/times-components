@@ -8,6 +8,7 @@ import {
 
 export const tile = mockEditionSlice(1).items[0];
 export const dailyRegisterItem = mockDailyRegisterSlice().birthdaysToday;
+export const puzzle = mockPuzzleSlice();
 
 export const testTile = (Tile, breakpoint, mockTile = tile) => {
   const output = TestRenderer.create(
@@ -17,7 +18,6 @@ export const testTile = (Tile, breakpoint, mockTile = tile) => {
 };
 
 export const testPuzzleTile = (Tile, breakpoint) => {
-  const puzzle = mockPuzzleSlice();
   const output = TestRenderer.create(
     <Tile
       id={puzzle.id}

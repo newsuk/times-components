@@ -23,6 +23,10 @@ export default () => {
       testTile(TileB, editionBreakpoints.huge);
     });
 
+    it("without breakpoint should be like small", () => {
+      testTile(TileB);
+    });
+
     it("with more teaser", () => {
       const output = TestRenderer.create(
         <TileB

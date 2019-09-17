@@ -10,7 +10,7 @@ const headlineFontSizeResolver = {
   [editionBreakpoints.huge]: 35
 };
 
-const styles = (breakpoint = editionBreakpoints.medium) => ({
+const styles = breakpoint => ({
   header: {
     paddingHorizontal: spacing(2),
     paddingTop: spacing(2),

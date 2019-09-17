@@ -20,5 +20,9 @@ export default () => {
     it("huge", () => {
       testTile(TileE, editionBreakpoints.huge);
     });
+
+    it("without breakpoint should be like small", () => {
+      testTile(TileE);
+    });
   });
 };

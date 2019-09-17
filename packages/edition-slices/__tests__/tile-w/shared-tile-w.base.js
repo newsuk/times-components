@@ -16,5 +16,9 @@ export default () => {
     it("huge", () => {
       testTile(TileW, editionBreakpoints.huge);
     });
+
+    it("without breakpoint should be like medium", () => {
+      testTile(TileW);
+    });
   });
 };

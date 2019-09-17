@@ -18,7 +18,7 @@ const keylinePadding = {
   [editionBreakpoints.huge]: spacing(3)
 };
 
-const styles = (breakpoint = editionBreakpoints.medium) => ({
+const styles = breakpoint => ({
   container: {
     flex: 1,
     alignItems: "center",

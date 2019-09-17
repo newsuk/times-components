@@ -1,3 +1,4 @@
+/* eslint-disable react/require-default-props */
 import React from "react";
 import PropTypes from "prop-types";
 import Image from "@times-components/image";
@@ -35,7 +36,7 @@ const TileR = ({ onPress, tile, breakpoint = editionBreakpoints.medium }) => {
 };
 
 TileR.propTypes = {
-  breakpoint: PropTypes.string.isRequired,
+  breakpoint: PropTypes.string,
   onPress: PropTypes.func.isRequired,
   tile: PropTypes.shape({}).isRequired
 };
