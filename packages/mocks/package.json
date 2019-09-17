@@ -45,11 +45,12 @@
     "react-native": "0.59.10"
   },
   "resolutions": {
-    "react": "16.9.0"
+    "react": "16.9.0",
+    "react-dom": "16.9.0"
   },
   "peerDependencies": {
     "react": ">=16.5",
-    "react-native": ">=0.55",
+    "react-native": ">=0.59",
     "react-native-web": "0.11.4"
   },
   "publishConfig": {
