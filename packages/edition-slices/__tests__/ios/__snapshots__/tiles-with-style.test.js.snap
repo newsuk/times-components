@@ -626,9 +626,9 @@ exports[`12. tile l 1`] = `
         Object {
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 20,
+          "fontSize": 18,
           "fontWeight": "900",
-          "lineHeight": 20,
+          "lineHeight": 18,
           "marginBottom": 10,
         }
       }
