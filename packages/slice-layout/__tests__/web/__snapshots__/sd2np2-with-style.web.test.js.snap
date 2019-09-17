@@ -330,7 +330,7 @@ exports[`3. secondary two no pic and two - wide 1`] = `
         "WebkitFlexDirection": "row",
         "flexDirection": "row",
         "msFlexDirection": "row",
-        "width": "65%",
+        "width": "66.6%",
       }
     }
   >
@@ -484,7 +484,7 @@ exports[`4. secondary two no pic and two - huge 1`] = `
         "WebkitFlexDirection": "row",
         "flexDirection": "row",
         "msFlexDirection": "row",
-        "width": "65%",
+        "width": "66.6%",
       }
     }
   >
