@@ -48,7 +48,7 @@
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.5",
     "babel-plugin-add-react-displayname": "0.0.5",
-    "babel-plugin-styled-components": "1.10.0",
+    "babel-plugin-styled-components": "1.10.6",
     "depcheck": "0.6.9",
     "enzyme": "3.9.0",
     "eslint": "5.9.0",
@@ -75,7 +75,7 @@
     "@times-components/responsive": "0.4.65",
     "@times-components/styleguide": "3.28.47",
     "prop-types": "15.7.2",
-    "styled-components": "4.2.0"
+    "styled-components": "4.3.2"
   },
   "peerDependencies": {
     "react": ">=16.5",

@@ -89,7 +89,7 @@
     "@times-components/watermark": "2.6.44",
     "lodash.get": "4.4.2",
     "prop-types": "15.7.2",
-    "styled-components": "4.2.0"
+    "styled-components": "4.3.2"
   },
   "peerDependencies": {
     "react": ">=16",
