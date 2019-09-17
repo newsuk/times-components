@@ -56,15 +56,9 @@ const articleTemplateTest = template =>
         .visit("/article/8763d1a0-ca57-11e8-bde6-fae32479843d?newskit=1")
         .get("[data-cy=topic-tags]")
         .scrollIntoView()
-        .then(() => {
-          cy.wait(2000);
-
-          cy.get("[data-cy=topic-tags] li").as("taglist");
-
-          cy.get("@taglist")
-            .its("length")
-            .should("eq", 2);
-        }));
+        .contains("Hello World")
+        .should("be.visible")
+        .should("not.be.empty"));
 
     it("loads all the required article ads", () => {
       cy.task("startMockServerWith", {
