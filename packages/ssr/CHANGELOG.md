@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.6.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.5.10...@times-components/ssr@2.6.0) (2019-09-17)
+
+
+### Features
+
+* ppdsc 180 init newskit feature flag ([#2284](https://github.com/newsuk/times-components/issues/2284)) ([bfaa852](https://github.com/newsuk/times-components/commit/bfaa852))
+
+
+
+
+
 ## [2.5.10](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.5.9...@times-components/ssr@2.5.10) (2019-09-17)
 
 **Note:** Version bump only for package @times-components/ssr
