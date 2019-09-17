@@ -1,6 +1,7 @@
 import React from "react";
 import ArticleTopics from "@times-components/article-topics";
 import Context from "@times-components/context";
+import styled from "styled-components";
 import PropTypes from "prop-types";
 import {
   ThemeProvider,
@@ -12,6 +13,10 @@ import {
 import TopicsContainer from "./styles/responsive";
 import styles from "./styles";
 
+const NewArticleTopics = styled(TagList)`
+  text-align: center;
+`;
+
 const ShowTopics = ({ topics }) => {
   if (topics && topics.length > 0) {
     return (
@@ -22,7 +27,7 @@ const ShowTopics = ({ topics }) => {
               if (newskit) {
                 return (
                   <ThemeProvider theme={lightTheme}>
-                    <TagList
+                    <NewArticleTopics
                       size={TagSize.Medium}
                       shape={BorderRadiusShape.Squares}
                       tagData={topics.map(topic => ({
