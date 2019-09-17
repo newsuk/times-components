@@ -47,30 +47,23 @@ const articleTemplateTest = template =>
           });
         }));
 
-    it("loads hi-res images for related articles", () =>
+    it("renders via newskit components correctly", () =>
       cy
         .task("startMockServerWith", {
           Article: sundayTimesArticleWithThreeRelatedArticles,
           User: userWithBookmarks
         })
         .visit("/article/8763d1a0-ca57-11e8-bde6-fae32479843d?newskit=1")
-        .get("#related-articles")
+        .get("[data-cy=topic-tags]")
         .scrollIntoView()
         .then(() => {
-          // wait for the image to transition and be removed (unfortunately Cypress doesn't auto wait for this)
           cy.wait(2000);
 
-          cy.get("#related-articles img").as("raImages");
+          cy.get("[data-cy=topic-tags] li").as("taglist");
 
-          cy.get("@raImages")
+          cy.get("@taglist")
             .its("length")
-            .should("eq", relatedArticleCount);
-
-          cy.get("@raImages").each(item => {
-            const url = new URL(item.attr("src"));
-            const initialResize = "100";
-            expect(url.searchParams.get("resize")).to.not.equal(initialResize);
-          });
+            .should("eq", 2);
         }));
 
     it("loads all the required article ads", () => {

@@ -21,7 +21,7 @@ const ShowTopics = ({ topics }) => {
   if (topics && topics.length > 0) {
     return (
       <TopicsContainer>
-        <nav>
+        <nav data-cy="topic-tags">
           <Context.Consumer>
             {({ newskit, makeTopicUrl }) => {
               if (newskit) {
