@@ -1,6 +1,6 @@
 {
   "name": "@times-components/provider-test-tools",
-  "version": "1.17.43",
+  "version": "1.17.44",
   "description": "utillity for testing apollo-client's behaviour",
   "main": "dist/index",
   "dev": "src/index",
@@ -56,7 +56,7 @@
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.5",
     "babel-plugin-add-react-displayname": "0.0.5",
-    "babel-plugin-styled-components": "1.10.0",
+    "babel-plugin-styled-components": "1.10.6",
     "depcheck": "0.6.9",
     "eslint": "5.9.0",
     "eslint-plugin-graphql": "2.1.1",
@@ -67,7 +67,7 @@
   },
   "dependencies": {
     "@times-components/fixture-generator": "0.25.9",
-    "@times-components/provider-queries": "2.7.5",
+    "@times-components/provider-queries": "2.8.0",
     "@times-components/schema": "0.6.20",
     "apollo-cache-inmemory": "1.5.1",
     "apollo-client": "2.5.1",

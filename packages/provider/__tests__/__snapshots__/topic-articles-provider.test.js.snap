@@ -16,6 +16,7 @@ Object {
         "label": "Test Label 1",
         "leadAsset": Object {
           "__typename": "Image",
+          "caption": "Hello World",
           "crop": Object {
             "__typename": "Crop",
             "url": "https://placeimg.com/300/200/tech",

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.18.0](https://github.com/newsuk/times-components/compare/@times-components/provider@1.17.42...@times-components/provider@1.18.0) (2019-09-16)
+
+
+### Features
+
+* REPLAT-8247 add caption to lead images query ([#2283](https://github.com/newsuk/times-components/issues/2283)) ([cce79c4](https://github.com/newsuk/times-components/commit/cce79c4))
+
+
+
+
+
 ## [1.17.42](https://github.com/newsuk/times-components/compare/@times-components/provider@1.17.41...@times-components/provider@1.17.42) (2019-09-06)
 
 
