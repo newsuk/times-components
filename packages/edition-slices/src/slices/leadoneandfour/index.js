@@ -55,16 +55,36 @@ class LeadOneAndFour extends Component {
           />
         }
         support1={
-          <TileAD onPress={onPress} tile={support1} tileName="support1" />
+          <TileAD
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={support1}
+            tileName="support1"
+          />
         }
         support2={
-          <TileAD onPress={onPress} tile={support2} tileName="support2" />
+          <TileAD
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={support2}
+            tileName="support2"
+          />
         }
         support3={
-          <TileAD onPress={onPress} tile={support3} tileName="support3" />
+          <TileAD
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={support3}
+            tileName="support3"
+          />
         }
         support4={
-          <TileAD onPress={onPress} tile={support4} tileName="support4" />
+          <TileAD
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={support4}
+            tileName="support4"
+          />
         }
       />
     );
@@ -73,8 +93,8 @@ class LeadOneAndFour extends Component {
   render() {
     return (
       <ResponsiveSlice
-        renderSmall={this.renderSmall}
         renderMedium={this.renderMedium}
+        renderSmall={this.renderSmall}
       />
     );
   }

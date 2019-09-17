@@ -1772,10 +1772,10 @@ exports[`34. tile ad 1`] = `
             Object {
               "color": "#333333",
               "fontFamily": "TimesModern-Bold",
-              "fontSize": 20,
+              "fontSize": undefined,
               "fontWeight": "400",
-              "lineHeight": 20,
-              "marginBottom": 0,
+              "lineHeight": undefined,
+              "marginBottom": 5,
             }
           }
         >
@@ -1795,7 +1795,7 @@ exports[`34. tile ad 1`] = `
         >
           <Text>
             
-            Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+            ‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye.
             ...
           </Text>
         </Text>
@@ -1841,9 +1841,9 @@ exports[`35. tile ac 1`] = `
         Object {
           "color": "#1D1D1B",
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 30,
+          "fontSize": undefined,
           "fontWeight": "400",
-          "lineHeight": 30,
+          "lineHeight": undefined,
           "marginBottom": 0,
           "textAlign": "center",
         }
