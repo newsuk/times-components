@@ -16,6 +16,7 @@ const scale = scales.large;
 module.exports = (client, analyticsStream, data, helmetContext) => {
   const {
     articleId,
+    enableNewskit,
     debounceTimeMs,
     makeArticleUrl,
     makeTopicUrl,
@@ -49,6 +50,7 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
                 getCookieValue,
                 makeArticleUrl,
                 makeTopicUrl,
+                newskit: enableNewskit,
                 theme: {
                   ...themeFactory(article.section, article.template),
                   scale: scale || defaults.theme.scale
