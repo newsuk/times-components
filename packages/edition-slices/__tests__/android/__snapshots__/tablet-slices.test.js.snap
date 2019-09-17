@@ -579,12 +579,14 @@ exports[`18. lead one and one - wide 1`] = `
   <View>
     <View>
       <TileZ
+        breakpoint="wide"
         tileName="lead"
       />
     </View>
     <View />
     <View>
       <TileAF
+        breakpoint="wide"
         tileName="support"
       />
     </View>
@@ -1086,12 +1088,14 @@ exports[`33. lead one and one - huge 1`] = `
     <View>
       <View>
         <TileZ
+          breakpoint="huge"
           tileName="lead"
         />
       </View>
       <View />
       <View>
         <TileAF
+          breakpoint="huge"
           tileName="support"
         />
       </View>

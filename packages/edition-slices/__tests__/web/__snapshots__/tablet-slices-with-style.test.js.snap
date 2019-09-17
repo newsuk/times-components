@@ -311,7 +311,7 @@ exports[`2. daily universal register - medium 1`] = `
 exports[`3. lead one and one - medium 1`] = `
 <style>
 .IS1 {
-  width: 84%;
+  width: 83.5%;
 }
 
 .IS2 {
@@ -329,7 +329,7 @@ exports[`3. lead one and one - medium 1`] = `
 }
 
 .IS3 {
-  width: 16%;
+  width: 16.5%;
 }
 
 .IS4 {
@@ -373,6 +373,7 @@ exports[`3. lead one and one - medium 1`] = `
       className="css-view-1dbjc4n IS1"
     >
       <TileZ
+        breakpoint="wide"
         tileName="lead"
       />
     </div>
@@ -383,6 +384,7 @@ exports[`3. lead one and one - medium 1`] = `
       className="css-view-1dbjc4n IS3"
     >
       <TileAF
+        breakpoint="wide"
         tileName="support"
       />
     </div>
@@ -2299,7 +2301,7 @@ exports[`17. daily universal register - wide 1`] = `
 exports[`18. lead one and one - wide 1`] = `
 <style>
 .IS1 {
-  width: 84%;
+  width: 83.5%;
 }
 
 .IS2 {
@@ -2317,7 +2319,7 @@ exports[`18. lead one and one - wide 1`] = `
 }
 
 .IS3 {
-  width: 16%;
+  width: 16.5%;
 }
 
 .IS4 {
@@ -2361,6 +2363,7 @@ exports[`18. lead one and one - wide 1`] = `
       className="css-view-1dbjc4n IS1"
     >
       <TileZ
+        breakpoint="wide"
         tileName="lead"
       />
     </div>
@@ -2371,6 +2374,7 @@ exports[`18. lead one and one - wide 1`] = `
       className="css-view-1dbjc4n IS3"
     >
       <TileAF
+        breakpoint="wide"
         tileName="support"
       />
     </div>
@@ -4290,7 +4294,7 @@ exports[`32. daily universal register - huge 1`] = `
 exports[`33. lead one and one - huge 1`] = `
 <style>
 .IS1 {
-  width: 84%;
+  width: 83.5%;
 }
 
 .IS2 {
@@ -4308,7 +4312,7 @@ exports[`33. lead one and one - huge 1`] = `
 }
 
 .IS3 {
-  width: 16%;
+  width: 16.5%;
 }
 
 .IS4 {
@@ -4352,6 +4356,7 @@ exports[`33. lead one and one - huge 1`] = `
       className="css-view-1dbjc4n IS1"
     >
       <TileZ
+        breakpoint="wide"
         tileName="lead"
       />
     </div>
@@ -4362,6 +4367,7 @@ exports[`33. lead one and one - huge 1`] = `
       className="css-view-1dbjc4n IS3"
     >
       <TileAF
+        breakpoint="wide"
         tileName="support"
       />
     </div>

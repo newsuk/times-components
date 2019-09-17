@@ -3614,7 +3614,7 @@ exports[`41. tile z 1`] = `
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
   padding-right: 20px;
-  width: 40%;
+  width: 41%;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -3622,7 +3622,7 @@ exports[`41. tile z 1`] = `
 }
 
 .IS4 {
-  width: 60%;
+  width: 59%;
 }
 </style>
 
