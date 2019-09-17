@@ -1781,24 +1781,6 @@ exports[`34. tile ad 1`] = `
         >
           This is tile headline
         </Text>
-        <Text
-          style={
-            Object {
-              "color": "#696969",
-              "flexWrap": "wrap",
-              "fontFamily": "TimesDigitalW04",
-              "fontSize": 14,
-              "lineHeight": 20,
-              "marginBottom": 0,
-            }
-          }
-        >
-          <Text>
-            
-            ‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye.
-            ...
-          </Text>
-        </Text>
         <ArticleFlags />
       </View>
     </View>

@@ -1,3 +1,4 @@
+/* eslint-disable react/require-default-props */
 import React from "react";
 import PropTypes from "prop-types";
 import { editionBreakpoints } from "@times-components/styleguide";
@@ -10,7 +11,7 @@ import {
 import stylesFactory from "./styles";
 import WithoutWhiteSpace from "../shared/without-white-space";
 
-const TileAD = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
+const TileAD = ({ onPress, tile, breakpoint = editionBreakpoints.medium }) => {
   const styles = stylesFactory(breakpoint);
   const showSummary = breakpoint !== editionBreakpoints.medium;
   return (
@@ -33,7 +34,7 @@ const TileAD = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
 TileAD.propTypes = {
   onPress: PropTypes.func.isRequired,
   tile: PropTypes.shape({}).isRequired,
-  breakpoint: PropTypes.string.isRequired
+  breakpoint: PropTypes.string
 };
 
 export default withTileTracking(TileAD);
