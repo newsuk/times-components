@@ -1367,7 +1367,7 @@ exports[`18. lead one and one - wide 1`] = `
     <View
       style={
         Object {
-          "width": "84%",
+          "width": "83.5%",
         }
       }
     >
@@ -1386,7 +1386,7 @@ exports[`18. lead one and one - wide 1`] = `
     <View
       style={
         Object {
-          "width": "16%",
+          "width": "16.5%",
         }
       }
     >
@@ -2556,7 +2556,7 @@ exports[`33. lead one and one - huge 1`] = `
       <View
         style={
           Object {
-            "width": "84%",
+            "width": "83.5%",
           }
         }
       >
@@ -2575,7 +2575,7 @@ exports[`33. lead one and one - huge 1`] = `
       <View
         style={
           Object {
-            "width": "16%",
+            "width": "16.5%",
           }
         }
       >
