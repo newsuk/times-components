@@ -28,10 +28,10 @@ const wideBreakpointStyles = {
     marginHorizontal: spacing(2)
   },
   leadItem: {
-    width: "84%"
+    width: "83.5%"
   },
   supportItem: {
-    width: "16%"
+    width: "16.5%"
   }
 };
 

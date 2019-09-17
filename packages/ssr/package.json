@@ -1,7 +1,7 @@
 {
   "name": "@times-components/ssr",
   "main": "src",
-  "version": "2.5.9",
+  "version": "2.5.10",
   "scripts": {
     "bundle:dev": "yarn cleanup-dist && webpack --config=webpack.config.js",
     "bundle:prod": "yarn cleanup-dist && NODE_ENV=production webpack --config=webpack.config.js -p",
@@ -54,7 +54,7 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/article": "7.2.141",
+    "@times-components/article": "7.2.142",
     "@times-components/author-profile": "6.0.124",
     "@times-components/context": "1.0.41",
     "@times-components/provider": "1.18.0",
@@ -75,7 +75,7 @@
     "react-helmet-async": "1.0.2",
     "react-native": "0.59.10",
     "react-native-web": "0.11.4",
-    "styled-components": "4.2.0",
+    "styled-components": "4.3.2",
     "unfetch": "^3.0.0"
   },
   "publishConfig": {

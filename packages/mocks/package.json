@@ -37,7 +37,7 @@
     "@babel/cli": "7.4.4",
     "@times-components/eslint-config-thetimes": "0.8.14",
     "babel-plugin-add-react-displayname": "0.0.5",
-    "babel-plugin-styled-components": "1.10.0",
+    "babel-plugin-styled-components": "1.10.6",
     "eslint": "5.9.0",
     "jest": "24.8.0",
     "prettier": "1.14.3",

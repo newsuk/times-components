@@ -62,8 +62,22 @@ class LeadOneAndOne extends Component {
     return (
       <LeadOneAndOneSlice
         breakpoint={breakpoint}
-        lead={<TileZ onPress={onPress} tile={lead} tileName="lead" />}
-        support={<TileAF onPress={onPress} tile={support} tileName="support" />}
+        lead={
+          <TileZ
+            onPress={onPress}
+            tile={lead}
+            breakpoint={breakpoint}
+            tileName="lead"
+          />
+        }
+        support={
+          <TileAF
+            onPress={onPress}
+            tile={support}
+            breakpoint={breakpoint}
+            tileName="support"
+          />
+        }
       />
     );
   }
