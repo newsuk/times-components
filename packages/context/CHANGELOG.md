@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/newsuk/times-components/compare/@times-components/context@1.0.41...@times-components/context@1.1.0) (2019-09-17)
+
+
+### Features
+
+* ppdsc 180 init newskit feature flag ([#2284](https://github.com/newsuk/times-components/issues/2284)) ([bfaa852](https://github.com/newsuk/times-components/commit/bfaa852))
+
+
+
+
+
 ## [1.0.41](https://github.com/newsuk/times-components/compare/@times-components/context@1.0.40...@times-components/context@1.0.41) (2019-09-05)
 
 **Note:** Version bump only for package @times-components/context
