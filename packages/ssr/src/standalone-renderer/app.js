@@ -92,7 +92,7 @@ server.get("/article/:id", (request, response) => {
       headers,
       {
         ...makeUrls,
-        enableNewskit: request.param('newskit'),
+        enableNewskit: request.param("newskit"),
         graphqlApiUrl,
         logger,
         spotAccountId
