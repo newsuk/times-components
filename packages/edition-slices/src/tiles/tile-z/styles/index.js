@@ -1,6 +1,15 @@
-import { spacing, fonts } from "@times-components/styleguide";
+import {
+  spacing,
+  fonts,
+  editionBreakpoints
+} from "@times-components/styleguide";
 
-const styles = {
+const fontSizeResolver = {
+  [editionBreakpoints.wide]: 40,
+  [editionBreakpoints.huge]: 45
+};
+
+export default breakpoint => ({
   container: {
     flex: 1,
     flexDirection: "row",
@@ -9,18 +18,16 @@ const styles = {
   },
   headline: {
     fontFamily: fonts.headline,
-    fontSize: 40,
-    lineHeight: 40,
+    fontSize: fontSizeResolver[breakpoint],
+    lineHeight: fontSizeResolver[breakpoint],
     marginBottom: spacing(2)
   },
   summaryContainer: {
     flex: 1,
-    width: "40%",
+    width: "41%",
     paddingRight: spacing(4)
   },
   imageContainer: {
-    width: "60%"
+    width: "59%"
   }
-};
-
-export default styles;
+});

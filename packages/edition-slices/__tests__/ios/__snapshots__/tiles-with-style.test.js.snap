@@ -2113,7 +2113,7 @@ exports[`41. tile z 1`] = `
       Object {
         "flex": 1,
         "paddingRight": 20,
-        "width": "40%",
+        "width": "41%",
       }
     }
   >
@@ -2157,7 +2157,7 @@ exports[`41. tile z 1`] = `
   <Image
     style={
       Object {
-        "width": "60%",
+        "width": "59%",
       }
     }
   />

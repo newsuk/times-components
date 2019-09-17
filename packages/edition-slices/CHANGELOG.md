@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.83.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.82.0...@times-components/edition-slices@0.83.0) (2019-09-17)
+
+
+### Features
+
+* Lead1And1 styling for 1366 and 1024 updates ([#2286](https://github.com/newsuk/times-components/issues/2286)) ([55d2030](https://github.com/newsuk/times-components/commit/55d2030))
+
+
+
+
+
 # [0.82.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.81.0...@times-components/edition-slices@0.82.0) (2019-09-16)
 
 
