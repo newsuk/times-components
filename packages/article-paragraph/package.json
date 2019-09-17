@@ -43,7 +43,7 @@
     "@times-components/responsive": "0.4.65",
     "@times-components/styleguide": "3.28.47",
     "prop-types": "15.7.2",
-    "styled-components": "4.2.0"
+    "styled-components": "4.3.2"
   },
   "devDependencies": {
     "@babel/core": "7.4.4",
@@ -57,7 +57,7 @@
     "@times-components/text-flow": "0.2.11",
     "@times-components/webpack-configurator": "2.0.25",
     "babel-jest": "24.8.0",
-    "babel-plugin-styled-components": "1.10.0",
+    "babel-plugin-styled-components": "1.10.6",
     "eslint": "5.9.0",
     "jest": "24.8.0",
     "jest-styled-components": "6.3.1",

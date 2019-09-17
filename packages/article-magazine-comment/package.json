@@ -78,7 +78,7 @@
     "@times-components/utils": "4.11.34",
     "@times-components/video-label": "2.3.12",
     "prop-types": "15.7.2",
-    "styled-components": "4.2.0"
+    "styled-components": "4.3.2"
   },
   "peerDependencies": {
     "react": ">=16.5",
