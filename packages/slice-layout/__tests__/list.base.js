@@ -1,15 +1,16 @@
 import React from "react";
 import { iterator } from "@times-components/test-utils";
-import { View } from "react-native";
 import createItem from "./utils";
-import { VerticalLayout } from "../src/slice-layout";
+import { ListVerticalLayout } from "../src/slice-layout";
 
 export default renderComponent => {
   const tests = [
     {
       name: "no child elements",
       test() {
-        const wrapper = renderComponent(<VerticalLayout tiles={[]} />);
+        const wrapper = renderComponent(
+          <ListVerticalLayout tiles={[]} />
+        );
 
         expect(wrapper).toMatchSnapshot();
       }
@@ -18,28 +19,39 @@ export default renderComponent => {
       name: "a single child element",
       test() {
         const wrapper = renderComponent(
-          <VerticalLayout tiles={[createItem("standard-1")]} />
+          <ListVerticalLayout
+            tiles={[createItem("standard-1")]}
+          />
         );
 
         expect(wrapper).toMatchSnapshot();
       }
     },
     {
-      name: "ten child elements",
+      name: "two child elements",
       test() {
         const wrapper = renderComponent(
-          <VerticalLayout
+          <ListVerticalLayout
             tiles={[
-              <View tile={{ article: { id: "testId" } }} />,
+              <test tile={{ article: { id: 'testId'}}} />,
+              createItem("standard-1"),
+              createItem("standard-2")
+            ]}
+          />
+        );
+
+        expect(wrapper).toMatchSnapshot();
+      }
+    },
+    {
+      name: "three child elements",
+      test() {
+        const wrapper = renderComponent(
+          <ListVerticalLayout
+            tiles={[
               createItem("standard-1"),
               createItem("standard-2"),
-              createItem("standard-3"),
-              createItem("standard-4"),
-              createItem("standard-5"),
-              createItem("standard-6"),
-              createItem("standard-7"),
-              createItem("standard-8"),
-              createItem("standard-9")
+              createItem("standard-3")
             ]}
           />
         );

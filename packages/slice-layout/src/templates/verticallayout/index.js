@@ -1,14 +1,18 @@
-import React from "react";
+import React, { Fragment } from "react";
+import { View } from "react-native";
 import PropTypes from "prop-types";
-import ListVerticalLayout from "./list";
-import SimpleVerticalLayout from "./simple";
+import { ItemRowSeparator } from "../shared";
 
-const VerticalLayout = ({ style, tiles }) =>
-  tiles.length >= 10 ? (
-    <ListVerticalLayout style={style} tiles={tiles} />
-  ) : (
-    <SimpleVerticalLayout style={style} tiles={tiles} />
-  );
+const VerticalLayout = ({ style, tiles }) => (
+  <View style={style}>
+    {tiles.map((tile, index) => (
+      <Fragment key={`${tile.props.tileName}`}>
+        {tile}
+        {index !== tiles.length - 1 ? <ItemRowSeparator /> : null}
+      </Fragment>
+    ))}
+  </View>
+);
 
 VerticalLayout.propTypes = {
   style: PropTypes.shape({}),
