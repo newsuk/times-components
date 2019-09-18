@@ -251,12 +251,14 @@ exports[`9. secondary four - medium 1`] = `
     <View>
       <View>
         <TileAR
+          breakpoint="medium"
           tileName="secondary1"
         />
       </View>
       <View />
       <View>
         <TileAR
+          breakpoint="medium"
           tileName="secondary2"
         />
       </View>
@@ -755,12 +757,14 @@ exports[`24. secondary four - wide 1`] = `
     <View>
       <View>
         <TileAR
+          breakpoint="wide"
           tileName="secondary1"
         />
       </View>
       <View />
       <View>
         <TileAR
+          breakpoint="wide"
           tileName="secondary2"
         />
       </View>
@@ -1280,12 +1284,14 @@ exports[`39. secondary four - huge 1`] = `
       <View>
         <View>
           <TileAR
+            breakpoint="huge"
             tileName="secondary1"
           />
         </View>
         <View />
         <View>
           <TileAR
+            breakpoint="huge"
             tileName="secondary2"
           />
         </View>
@@ -1293,11 +1299,25 @@ exports[`39. secondary four - huge 1`] = `
       <View />
       <View>
         <TileB
+          additionalHeadlineStyles={
+            Object {
+              "fontSize": 22,
+              "lineHeight": 22,
+              "marginBottom": 5,
+            }
+          }
           breakpoint="huge"
           tileName="secondary3"
         />
         <View />
         <TileB
+          additionalHeadlineStyles={
+            Object {
+              "fontSize": 22,
+              "lineHeight": 22,
+              "marginBottom": 5,
+            }
+          }
           breakpoint="huge"
           tileName="secondary4"
         />

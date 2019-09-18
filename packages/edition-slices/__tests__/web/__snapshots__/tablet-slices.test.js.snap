@@ -242,12 +242,14 @@ exports[`9. secondary four - medium 1`] = `
     <div>
       <div>
         <TileAR
+          breakpoint="wide"
           tileName="secondary1"
         />
       </div>
       <div />
       <div>
         <TileAR
+          breakpoint="wide"
           tileName="secondary2"
         />
       </div>
@@ -742,12 +744,14 @@ exports[`24. secondary four - wide 1`] = `
     <div>
       <div>
         <TileAR
+          breakpoint="wide"
           tileName="secondary1"
         />
       </div>
       <div />
       <div>
         <TileAR
+          breakpoint="wide"
           tileName="secondary2"
         />
       </div>
@@ -1242,12 +1246,14 @@ exports[`39. secondary four - huge 1`] = `
     <div>
       <div>
         <TileAR
+          breakpoint="wide"
           tileName="secondary1"
         />
       </div>
       <div />
       <div>
         <TileAR
+          breakpoint="wide"
           tileName="secondary2"
         />
       </div>

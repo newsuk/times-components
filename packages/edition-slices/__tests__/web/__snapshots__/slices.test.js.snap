@@ -406,12 +406,14 @@ exports[`9. secondary four 1`] = `
     <div>
       <div>
         <TileAR
+          breakpoint="wide"
           tileName="secondary1"
         />
       </div>
       <div />
       <div>
         <TileAR
+          breakpoint="wide"
           tileName="secondary2"
         />
       </div>

@@ -1884,6 +1884,7 @@ exports[`9. secondary four 1`] = `
         className="css-view-1dbjc4n IS1"
       >
         <TileAR
+          breakpoint="wide"
           tileName="secondary1"
         />
       </div>
@@ -1894,6 +1895,7 @@ exports[`9. secondary four 1`] = `
         className="css-view-1dbjc4n IS3"
       >
         <TileAR
+          breakpoint="wide"
           tileName="secondary2"
         />
       </div>
