@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.9.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.8.0...@times-components/provider-queries@2.9.0) (2019-09-18)
+
+
+### Features
+
+* leadOneAndFour for 1366px ([#2291](https://github.com/newsuk/times-components/issues/2291)) ([cd2585a](https://github.com/newsuk/times-components/commit/cd2585a))
+
+
+
+
+
 # [2.8.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.7.5...@times-components/provider-queries@2.8.0) (2019-09-16)
 
 
