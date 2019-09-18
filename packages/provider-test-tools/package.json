@@ -80,7 +80,7 @@
     "prop-types": "15.7.2",
     "react": "16.9.0",
     "react-apollo": "2.5.5",
-    "react-test-renderer": "16.6.3",
+    "react-test-renderer": "16.9.0",
     "zen-observable": "0.8.11"
   },
   "peerDependencies": {
