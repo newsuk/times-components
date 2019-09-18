@@ -1772,9 +1772,9 @@ exports[`34. tile ad 1`] = `
             Object {
               "color": "#333333",
               "fontFamily": "TimesModern-Bold",
-              "fontSize": undefined,
+              "fontSize": 20,
               "fontWeight": "900",
-              "lineHeight": undefined,
+              "lineHeight": 20,
               "marginBottom": 5,
             }
           }
