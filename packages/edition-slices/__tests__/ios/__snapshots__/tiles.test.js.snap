@@ -1465,15 +1465,6 @@ exports[`34. tile ad 1`] = `
         >
           This is tile headline
         </Text>
-        <Text
-          numberOfLines={2}
-        >
-          <Text>
-            
-            Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-            ...
-          </Text>
-        </Text>
         <ArticleFlags
           flags={
             Array [

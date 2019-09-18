@@ -345,18 +345,22 @@ exports[`12. lead one and four slice - medium 1`] = `
     <div />
     <div>
       <TileAD
+        breakpoint="wide"
         tileName="support1"
       />
       <div />
       <TileAD
+        breakpoint="wide"
         tileName="support2"
       />
       <div />
       <TileAD
+        breakpoint="wide"
         tileName="support3"
       />
       <div />
       <TileAD
+        breakpoint="wide"
         tileName="support4"
       />
     </div>
@@ -841,18 +845,22 @@ exports[`27. lead one and four slice - wide 1`] = `
     <div />
     <div>
       <TileAD
+        breakpoint="wide"
         tileName="support1"
       />
       <div />
       <TileAD
+        breakpoint="wide"
         tileName="support2"
       />
       <div />
       <TileAD
+        breakpoint="wide"
         tileName="support3"
       />
       <div />
       <TileAD
+        breakpoint="wide"
         tileName="support4"
       />
     </div>
@@ -1337,18 +1345,22 @@ exports[`42. lead one and four slice - huge 1`] = `
     <div />
     <div>
       <TileAD
+        breakpoint="wide"
         tileName="support1"
       />
       <div />
       <TileAD
+        breakpoint="wide"
         tileName="support2"
       />
       <div />
       <TileAD
+        breakpoint="wide"
         tileName="support3"
       />
       <div />
       <TileAD
+        breakpoint="wide"
         tileName="support4"
       />
     </div>

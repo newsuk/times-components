@@ -1775,29 +1775,11 @@ exports[`34. tile ad 1`] = `
               "fontSize": 20,
               "fontWeight": "900",
               "lineHeight": 20,
-              "marginBottom": 0,
+              "marginBottom": 5,
             }
           }
         >
           This is tile headline
-        </Text>
-        <Text
-          style={
-            Object {
-              "color": "#696969",
-              "flexWrap": "wrap",
-              "fontFamily": "TimesDigitalW04",
-              "fontSize": 14,
-              "lineHeight": 20,
-              "marginBottom": 0,
-            }
-          }
-        >
-          <Text>
-            
-            Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-            ...
-          </Text>
         </Text>
         <ArticleFlags />
       </View>
@@ -1841,9 +1823,9 @@ exports[`35. tile ac 1`] = `
         Object {
           "color": "#1D1D1B",
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 30,
+          "fontSize": undefined,
           "fontWeight": "900",
-          "lineHeight": 30,
+          "lineHeight": undefined,
           "marginBottom": 0,
           "textAlign": "center",
         }
