@@ -20,7 +20,7 @@ export default breakpoint => ({
     fontFamily: fonts.headline,
     fontSize: fontSizeResolver[breakpoint],
     lineHeight: fontSizeResolver[breakpoint],
-    marginBottom: spacing(2)
+    marginBottom: 0
   },
   summaryContainer: {
     flex: 1
