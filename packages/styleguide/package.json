@@ -7,7 +7,7 @@
   "scripts": {
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
-    "depcheck": "depcheck --ignores='@babel/*,babel-*,depcheck,eslint,jest,prettier,react-art,stylelint*,webpack*' --ignore-bin-package=false --skip-missing",
+    "depcheck": "depcheck --ignores='@babel/*,babel-*,depcheck,eslint,jest,prettier,stylelint*,webpack*' --ignore-bin-package=false --skip-missing",
     "lint": "eslint . && stylelint . && yarn prettier:diff && yarn depcheck",
     "test:all": "yarn test:android --coverage && yarn test:ios --coverage && yarn test:web --coverage",
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
@@ -52,7 +52,6 @@
     "jest-styled-components": "6.3.1",
     "prettier": "1.14.3",
     "react": "16.9.0",
-    "react-art": "16.6.3",
     "react-dom": "16.9.0",
     "react-native": "0.59.10",
     "react-native-web": "0.11.4",

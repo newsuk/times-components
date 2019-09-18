@@ -4531,7 +4531,7 @@ arrify@^1.0.0, arrify@^1.0.1:
   resolved "https://registry.yarnpkg.com/arrify/-/arrify-1.0.1.tgz#898508da2226f380df904728456849c1501a4b0d"
   integrity sha1-iYUI2iIm84DfkEcoRWhJwVAaSw0=
 
-art@^0.10.0, art@^0.10.1:
+art@^0.10.0:
   version "0.10.3"
   resolved "https://registry.yarnpkg.com/art/-/art-0.10.3.tgz#b01d84a968ccce6208df55a733838c96caeeaea2"
   integrity sha512-HXwbdofRTiJT6qZX/FnchtldzJjS3vkLJxQilc3Xj+ma2MXjY4UAyQ0ls1XZYVnDvVIBiFZbC6QsvtW86TD6tQ==
@@ -17264,18 +17264,6 @@ react-app-polyfill@^1.0.1:
     raf "3.4.1"
     regenerator-runtime "0.13.2"
     whatwg-fetch "3.0.0"
-
-react-art@16.6.3:
-  version "16.6.3"
-  resolved "https://registry.yarnpkg.com/react-art/-/react-art-16.6.3.tgz#05bbc83fabe8f9e1dea425008e9af744e637c56f"
-  integrity sha512-L4mhwVTI3x96b9iuySVsIvWcbLfld9d6SShEbhuuPkNzR3xap5EwnoZzckKTbF9oJQUlS41xCeyuc7uUDZ6TTA==
-  dependencies:
-    art "^0.10.1"
-    create-react-class "^15.6.2"
-    loose-envify "^1.1.0"
-    object-assign "^4.1.1"
-    prop-types "^15.6.2"
-    scheduler "^0.11.2"
 
 react-broadcast@0.5.2:
   version "0.5.2"

@@ -7,7 +7,7 @@
   "scripts": {
     "fmt": "eslint . --fix && prettier --write '**/*.*'",
     "prettier:diff": "prettier --list-different '**/*.*'",
-    "depcheck": "depcheck --ignores='@babel/*,babel-*,depcheck,eslint,jest,prettier,react-art,webpack*' --ignore-bin-package=false --skip-missing",
+    "depcheck": "depcheck --ignores='@babel/*,babel-*,depcheck,eslint,jest,prettier,webpack*' --ignore-bin-package=false --skip-missing",
     "lint": "eslint . && yarn prettier:diff && yarn depcheck",
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
     "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
@@ -37,7 +37,7 @@
     "eslint": "5.9.0",
     "jest": "24.8.0",
     "prettier": "1.14.3",
-    "react-art": "16.6.3",
+
     "react-native-web": "0.11.4",
     "react-test-renderer": "16.6.3"
   },
