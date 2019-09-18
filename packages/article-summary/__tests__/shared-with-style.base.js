@@ -4,6 +4,13 @@ import { iterator } from "@times-components/test-utils";
 import ArticleSummary, { ArticleSummaryContent } from "../src/article-summary";
 import defaultFixture from "../fixtures/default";
 
+// Babel is generating the wrong mock factory here for automocking :(
+jest.mock("@times-components/article-byline", () => ({
+  __esModule: true,
+  default: "ArticleByline",
+  ArticleBylineOpinion: "ArticleBylineOpinion",
+  articleBylinePropTypes: "articleBylinePropTypes"
+}));
 jest.mock("@times-components/article-flag", () => ({
   ArticleFlags: "ArticleFlags"
 }));
