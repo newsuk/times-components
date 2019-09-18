@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-extras",
-  "version": "0.2.11",
+  "version": "0.3.0",
   "description": "Extra information components at the bottom of the articles, such as topics, related articles and comments",
   "main": "dist/index",
   "dev": "src/index",

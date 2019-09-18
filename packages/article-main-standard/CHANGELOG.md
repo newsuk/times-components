@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.13.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.12.12...@times-components/article-main-standard@3.13.0) (2019-09-18)
+
+
+### Features
+
+* ppdsc 180 add newskit tags for article extras ([#2285](https://github.com/newsuk/times-components/issues/2285)) ([cef5b40](https://github.com/newsuk/times-components/commit/cef5b40))
+
+
+
+
+
 ## [3.12.12](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.12.11...@times-components/article-main-standard@3.12.12) (2019-09-18)
 
 **Note:** Version bump only for package @times-components/article-main-standard
