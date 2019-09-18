@@ -285,7 +285,9 @@ exports[`1. a full article 1`] = `
           This is video caption
         </figcaption>
       </figure>
-      <nav>
+      <nav
+        data-cy="topic-tags"
+      >
         <a
           href="/topic/topic"
           target={null}
