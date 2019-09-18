@@ -2924,19 +2924,7 @@ exports[`34. tile ad 1`] = `
   font-family: TimesModern-Bold;
   font-weight: 400;
   line-height: 20px;
-  margin-bottom: 0px;
-}
-
-.S3 {
-  color: rgba(105,105,105,1.00);
-  -ms-flex-wrap: wrap;
-  -webkit-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  font-family: TimesDigitalW04;
-  font-size: 14px;
-  line-height: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .IS1 {
@@ -2944,10 +2932,6 @@ exports[`34. tile ad 1`] = `
 }
 
 .IS2 {
-  -webkit-line-clamp: 2;
-}
-
-.IS3 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   -webkit-flex-shrink: 1;
@@ -2972,7 +2956,7 @@ exports[`34. tile ad 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS3"
+    className="css-view-1dbjc4n IS2"
   >
     <div
       className="css-view-1dbjc4n"
@@ -2991,22 +2975,11 @@ exports[`34. tile ad 1`] = `
         </div>
         <h3
           aria-level="3"
-          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-lineHeight-rjixqe r-marginBottom-p1pxzi IS1 S2"
+          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-lineHeight-rjixqe r-marginBottom-d0pm55 IS1 S2"
           role="heading"
         >
           This is tile headline
         </h3>
-        <div
-          className="css-text-901oao css-textMultiLine-cens5h r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r IS2 S3"
-        >
-          <span
-            className="css-text-901oao css-textHasAncestor-16my406"
-          >
-            
-            Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-            ...
-          </span>
-        </div>
         <ArticleFlags
           flags={
             Array [
@@ -3041,8 +3014,6 @@ exports[`35. tile ac 1`] = `
 
 .IS2 {
   color: rgba(29,29,27,1.00);
-  font-size: 30px;
-  line-height: 30px;
   text-align: center;
 }
 

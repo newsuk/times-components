@@ -1337,24 +1337,28 @@ exports[`4. lead one and four 1`] = `
       className="css-view-1dbjc4n IS6"
     >
       <TileAD
+        breakpoint="wide"
         tileName="support1"
       />
       <div
         className="css-view-1dbjc4n IS3"
       />
       <TileAD
+        breakpoint="wide"
         tileName="support2"
       />
       <div
         className="css-view-1dbjc4n IS4"
       />
       <TileAD
+        breakpoint="wide"
         tileName="support3"
       />
       <div
         className="css-view-1dbjc4n IS5"
       />
       <TileAD
+        breakpoint="wide"
         tileName="support4"
       />
     </div>
