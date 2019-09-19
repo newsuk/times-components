@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.85.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.84.0...@times-components/edition-slices@0.85.0) (2019-09-19)
+
+
+### Features
+
+* secondary4 for 1366px ([#2298](https://github.com/newsuk/times-components/issues/2298)) ([b950906](https://github.com/newsuk/times-components/commit/b950906))
+
+
+
+
+
 # [0.84.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.83.1...@times-components/edition-slices@0.84.0) (2019-09-18)
 
 
