@@ -43,13 +43,13 @@
     "prop-types": "15.7.2"
   },
   "devDependencies": {
-    "@babel/core": "7.6.0",
+    "@babel/core": "7.4.4",
     "@times-components/eslint-config-thetimes": "0.8.14",
     "@times-components/jest-configurator": "2.6.6",
     "@times-components/jest-serializer": "3.2.18",
     "@times-components/storybook": "4.0.35",
     "@times-components/webpack-configurator": "2.0.25",
-    "babel-jest": "24.9.0",
+    "babel-jest": "24.8.0",
     "babel-loader": "8.0.6",
     "babel-plugin-add-react-displayname": "0.0.5",
     "babel-plugin-styled-components": "1.10.6",
