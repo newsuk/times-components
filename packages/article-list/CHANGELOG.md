@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.3.0](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.2.66...@times-components/article-list@9.3.0) (2019-09-19)
+
+
+### Features
+
+* REPLAT-8755 add a switch to disable autoscroll on web articlelist ([#2295](https://github.com/newsuk/times-components/issues/2295)) ([a896acf](https://github.com/newsuk/times-components/commit/a896acf))
+
+
+
+
+
 ## [9.2.66](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.2.65...@times-components/article-list@9.2.66) (2019-09-18)
 
 **Note:** Version bump only for package @times-components/article-list
