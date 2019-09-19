@@ -256,7 +256,7 @@ exports[`tile ac without breakpoint should be like medium 1`] = `
         "flex": 1,
         "justifyContent": "center",
         "paddingHorizontal": 20,
-        "paddingVertical": undefined,
+        "paddingVertical": 40,
       }
     }
   >
@@ -280,9 +280,9 @@ exports[`tile ac without breakpoint should be like medium 1`] = `
         Object {
           "color": "#1D1D1B",
           "fontFamily": "TimesModern-Bold",
-          "fontSize": undefined,
+          "fontSize": 30,
           "fontWeight": "900",
-          "lineHeight": undefined,
+          "lineHeight": 30,
           "marginBottom": 0,
           "textAlign": "center",
         }

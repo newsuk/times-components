@@ -312,6 +312,8 @@ exports[`tile ac without breakpoint should be like medium 1`] = `
 
 .IS2 {
   color: rgba(29,29,27,1.00);
+  font-size: 30px;
+  line-height: 30px;
   text-align: center;
 }
 
@@ -329,6 +331,8 @@ exports[`tile ac without breakpoint should be like medium 1`] = `
   justify-content: center;
   padding-right: 20px;
   padding-left: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   -ms-flex-align: center;
   -webkit-box-align: center;
   -ms-flex-positive: 1;
