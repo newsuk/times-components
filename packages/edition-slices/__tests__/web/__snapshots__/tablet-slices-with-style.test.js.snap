@@ -91,7 +91,7 @@ exports[`2. daily universal register - medium 1`] = `
 .IS1 {
   width: 237;
   height: 60;
-  margin-vertical: 10px;
+  margin-bottom: 10px;
   margin-top: 15px;
 }
 
@@ -99,6 +99,7 @@ exports[`2. daily universal register - medium 1`] = `
   color: rgba(133,0,41,1.00);
   font-family: TimesDigitalW04;
   font-size: 15px;
+  line-height: 21px;
   margin-bottom: 15px;
 }
 
@@ -120,7 +121,6 @@ exports[`2. daily universal register - medium 1`] = `
   width: 60;
   height: 45;
   margin-right: 15px;
-  margin-bottom: 10px;
 }
 
 .IS5 {
@@ -168,7 +168,6 @@ exports[`2. daily universal register - medium 1`] = `
   width: 60;
   height: 45;
   margin-right: 15px;
-  margin-bottom: 10px;
 }
 
 .IS9 {
@@ -2443,7 +2442,7 @@ exports[`18. daily universal register - wide 1`] = `
 .IS1 {
   width: 237;
   height: 60;
-  margin-vertical: 10px;
+  margin-bottom: 10px;
   margin-top: 15px;
 }
 
@@ -2451,6 +2450,7 @@ exports[`18. daily universal register - wide 1`] = `
   color: rgba(133,0,41,1.00);
   font-family: TimesDigitalW04;
   font-size: 15px;
+  line-height: 21px;
   margin-bottom: 15px;
 }
 
@@ -2472,7 +2472,6 @@ exports[`18. daily universal register - wide 1`] = `
   width: 60;
   height: 45;
   margin-right: 15px;
-  margin-bottom: 10px;
 }
 
 .IS5 {
@@ -2520,7 +2519,6 @@ exports[`18. daily universal register - wide 1`] = `
   width: 60;
   height: 45;
   margin-right: 15px;
-  margin-bottom: 10px;
 }
 
 .IS9 {
@@ -4795,7 +4793,7 @@ exports[`34. daily universal register - huge 1`] = `
 .IS1 {
   width: 237;
   height: 60;
-  margin-vertical: 10px;
+  margin-bottom: 10px;
   margin-top: 15px;
 }
 
@@ -4803,6 +4801,7 @@ exports[`34. daily universal register - huge 1`] = `
   color: rgba(133,0,41,1.00);
   font-family: TimesDigitalW04;
   font-size: 15px;
+  line-height: 21px;
   margin-bottom: 15px;
 }
 
@@ -4824,7 +4823,6 @@ exports[`34. daily universal register - huge 1`] = `
   width: 60;
   height: 45;
   margin-right: 15px;
-  margin-bottom: 10px;
 }
 
 .IS5 {
@@ -4872,7 +4870,6 @@ exports[`34. daily universal register - huge 1`] = `
   width: 60;
   height: 45;
   margin-right: 15px;
-  margin-bottom: 10px;
 }
 
 .IS9 {
