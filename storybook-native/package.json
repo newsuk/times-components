@@ -31,13 +31,13 @@
     "core-js": "^2.6.5",
     "prop-types": "15.7.2",
     "react": "16.9.0",
-    "react-native": "0.60.4",
+    "react-native": "0.60.5",
     "react-native-svg": "9.9.3",
     "regenerator-runtime": "0.13.2",
     "url-polyfill": "1.1.0"
   },
   "devDependencies": {
-    "metro-react-native-babel-preset": "0.53.1",
+    "metro-react-native-babel-preset": "0.54.1",
     "prettier": "1.14.3",
     "react-native-storybook-loader": "1.8.0",
     "webpack": "4.30.0"

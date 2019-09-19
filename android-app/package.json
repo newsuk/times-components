@@ -16,14 +16,14 @@
     "prop-types": "15.7.2",
     "react": "16.9.0",
     "react-native-device-info": "3.0.0",
-    "react-native": "0.60.4",
+    "react-native": "0.60.5",
     "react-native-svg": "9.9.3",
     "react-native-webview": "7.0.5",
     "url-polyfill": "1.1.0"
   },
   "devDependencies": {
     "@bam.tech/react-native-graphql-transformer": "0.1.5",
-    "metro-react-native-babel-preset": "0.53.1",
+    "metro-react-native-babel-preset": "0.54.1",
     "prettier": "1.14.3",
     "webpack": "4.30.0"
   },

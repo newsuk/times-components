@@ -39,7 +39,7 @@
     "prettier": "1.14.3",
     "react-art": "16.6.3",
     "react-native-web": "0.11.4",
-    "react-native": "0.60.4"
+    "react-native": "0.60.5"
   },
   "dependencies": {
     "@babel/core": "7.4.4",
