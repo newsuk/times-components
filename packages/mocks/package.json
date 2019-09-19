@@ -44,6 +44,9 @@
     "react": "16.9.0",
     "react-native": "0.59.10"
   },
+  "resolutions": {
+    "react": "16.9.0"
+  },
   "peerDependencies": {
     "react": ">=16.5",
     "react-native": ">=0.55",

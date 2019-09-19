@@ -108,6 +108,9 @@
     "react-helmet-async": "1.0.2",
     "styled-components": "4.3.2"
   },
+  "resolutions": {
+    "react": "16.9.0"
+  },
   "peerDependencies": {
     "react": ">=16.5",
     "react-dom": ">=16.5",

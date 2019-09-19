@@ -61,6 +61,9 @@
     "styled-components": "4.3.2",
     "unfetch": "^3.0.0"
   },
+  "resolutions": {
+    "react": "16.9.0"
+  },
   "peerDependencies": {
     "react": ">=16.5",
     "react-dom": ">=16.5",

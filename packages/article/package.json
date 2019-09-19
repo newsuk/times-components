@@ -72,6 +72,9 @@
     "@times-components/responsive": "0.4.66",
     "@times-components/styleguide": "3.28.48"
   },
+  "resolutions": {
+    "react": "16.9.0"
+  },
   "peerDependencies": {
     "react": ">=16.5",
     "react-dom": ">=16.5",

@@ -76,6 +76,9 @@
     "jest-transform-graphql": "2.1.0",
     "prettier": "1.14.3"
   },
+  "resolutions": {
+    "react": "16.9.0"
+  },
   "peerDependencies": {
     "react": ">=16.5",
     "react-dom": ">=16.5",

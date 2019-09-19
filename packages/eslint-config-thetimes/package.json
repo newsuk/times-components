@@ -30,6 +30,9 @@
     "eslint-plugin-react-hooks": "2.0.1",
     "prettier": "1.14.3"
   },
+  "resolutions": {
+    "react": "16.9.0"
+  },
   "peerDependencies": {
     "eslint": "5.9.0"
   },

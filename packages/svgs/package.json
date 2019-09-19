@@ -74,6 +74,9 @@
     "react-native-svg": "9.4.0",
     "svgs": "3.2.1"
   },
+  "resolutions": {
+    "react": "16.9.0"
+  },
   "peerDependencies": {
     "react": ">=16.5",
     "react-dom": ">=16.5",

@@ -67,6 +67,9 @@
     "@times-components/styleguide": "3.28.48",
     "@times-components/text-flow": "0.2.12"
   },
+  "resolutions": {
+    "react": "16.9.0"
+  },
   "peerDependencies": {
     "react": ">=16.5",
     "react-dom": ">=16.5",
