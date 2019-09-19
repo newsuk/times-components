@@ -74,6 +74,7 @@ import com.android.build.OutputFile
  */
 
 project.ext.react = [
+        entryFile   : "fructose/index.js",
         enableHermes: true,
 ]
 
