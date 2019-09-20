@@ -377,6 +377,10 @@ exports[`1. secondary one and four 1`] = `
 
 .IS16 {
   background-color: rgba(39,45,52,1.00);
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .IS17 {
@@ -388,104 +392,93 @@ exports[`1. secondary one and four 1`] = `
   width: 1366px;
   -ms-flex-item-align: center;
 }
-
-.IS18 {
-  margin-right: 20px;
-  margin-left: 20px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
 </style>
 
 <div
-  className="css-view-1dbjc4n IS18"
+  className="css-view-1dbjc4n IS17"
 >
   <div
-    className="css-view-1dbjc4n IS17"
+    className="css-view-1dbjc4n IS16"
   >
     <div
-      className="css-view-1dbjc4n IS16"
+      className="css-view-1dbjc4n IS1"
+    >
+      <TheSTLogo
+        height={40}
+        width={60}
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n IS2"
+    />
+    <div
+      className="css-view-1dbjc4n IS15"
     >
       <div
-        className="css-view-1dbjc4n IS1"
-      >
-        <TheSTLogo
-          height={40}
-          width={60}
-        />
-      </div>
-      <div
-        className="css-view-1dbjc4n IS2"
-      />
-      <div
-        className="css-view-1dbjc4n IS15"
+        className="css-view-1dbjc4n IS3"
       >
         <div
-          className="css-view-1dbjc4n IS3"
+          className="css-view-1dbjc4n"
+        >
+          <TileN
+            breakpoint="wide"
+            tileName="secondary"
+          />
+        </div>
+      </div>
+      <div
+        className="css-view-1dbjc4n IS4"
+      />
+      <div
+        className="css-view-1dbjc4n IS14"
+      >
+        <div
+          className="css-view-1dbjc4n IS8"
         >
           <div
-            className="css-view-1dbjc4n"
+            className="css-view-1dbjc4n IS5"
           >
-            <TileN
+            <TileO
               breakpoint="wide"
-              tileName="secondary"
+              tileName="support1"
+            />
+          </div>
+          <div
+            className="css-view-1dbjc4n IS6"
+          />
+          <div
+            className="css-view-1dbjc4n IS7"
+          >
+            <TileO
+              breakpoint="wide"
+              tileName="support2"
             />
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n IS4"
+          className="css-view-1dbjc4n IS9"
         />
         <div
-          className="css-view-1dbjc4n IS14"
+          className="css-view-1dbjc4n IS13"
         >
           <div
-            className="css-view-1dbjc4n IS8"
+            className="css-view-1dbjc4n IS10"
           >
-            <div
-              className="css-view-1dbjc4n IS5"
-            >
-              <TileO
-                breakpoint="wide"
-                tileName="support1"
-              />
-            </div>
-            <div
-              className="css-view-1dbjc4n IS6"
+            <TileO
+              breakpoint="wide"
+              tileName="support3"
             />
-            <div
-              className="css-view-1dbjc4n IS7"
-            >
-              <TileO
-                breakpoint="wide"
-                tileName="support2"
-              />
-            </div>
           </div>
           <div
-            className="css-view-1dbjc4n IS9"
+            className="css-view-1dbjc4n IS11"
           />
           <div
-            className="css-view-1dbjc4n IS13"
+            className="css-view-1dbjc4n IS12"
           >
-            <div
-              className="css-view-1dbjc4n IS10"
-            >
-              <TileO
-                breakpoint="wide"
-                tileName="support3"
-              />
-            </div>
-            <div
-              className="css-view-1dbjc4n IS11"
+            <TileO
+              breakpoint="wide"
+              tileName="support4"
             />
-            <div
-              className="css-view-1dbjc4n IS12"
-            >
-              <TileO
-                breakpoint="wide"
-                tileName="support4"
-              />
-            </div>
           </div>
         </div>
       </div>
@@ -649,6 +642,10 @@ exports[`1. secondary one and four 2`] = `
 
 .IS16 {
   background-color: rgba(39,45,52,1.00);
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .IS17 {
@@ -660,104 +657,93 @@ exports[`1. secondary one and four 2`] = `
   width: 1366px;
   -ms-flex-item-align: center;
 }
-
-.IS18 {
-  margin-right: 20px;
-  margin-left: 20px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
 </style>
 
 <div
-  className="css-view-1dbjc4n IS18"
+  className="css-view-1dbjc4n IS17"
 >
   <div
-    className="css-view-1dbjc4n IS17"
+    className="css-view-1dbjc4n IS16"
   >
     <div
-      className="css-view-1dbjc4n IS16"
+      className="css-view-1dbjc4n IS1"
+    >
+      <TheTimesLogo
+        height={40}
+        width={42}
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n IS2"
+    />
+    <div
+      className="css-view-1dbjc4n IS15"
     >
       <div
-        className="css-view-1dbjc4n IS1"
-      >
-        <TheTimesLogo
-          height={40}
-          width={42}
-        />
-      </div>
-      <div
-        className="css-view-1dbjc4n IS2"
-      />
-      <div
-        className="css-view-1dbjc4n IS15"
+        className="css-view-1dbjc4n IS3"
       >
         <div
-          className="css-view-1dbjc4n IS3"
+          className="css-view-1dbjc4n"
+        >
+          <TileN
+            breakpoint="wide"
+            tileName="secondary"
+          />
+        </div>
+      </div>
+      <div
+        className="css-view-1dbjc4n IS4"
+      />
+      <div
+        className="css-view-1dbjc4n IS14"
+      >
+        <div
+          className="css-view-1dbjc4n IS8"
         >
           <div
-            className="css-view-1dbjc4n"
+            className="css-view-1dbjc4n IS5"
           >
-            <TileN
+            <TileO
               breakpoint="wide"
-              tileName="secondary"
+              tileName="support1"
+            />
+          </div>
+          <div
+            className="css-view-1dbjc4n IS6"
+          />
+          <div
+            className="css-view-1dbjc4n IS7"
+          >
+            <TileO
+              breakpoint="wide"
+              tileName="support2"
             />
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n IS4"
+          className="css-view-1dbjc4n IS9"
         />
         <div
-          className="css-view-1dbjc4n IS14"
+          className="css-view-1dbjc4n IS13"
         >
           <div
-            className="css-view-1dbjc4n IS8"
+            className="css-view-1dbjc4n IS10"
           >
-            <div
-              className="css-view-1dbjc4n IS5"
-            >
-              <TileO
-                breakpoint="wide"
-                tileName="support1"
-              />
-            </div>
-            <div
-              className="css-view-1dbjc4n IS6"
+            <TileO
+              breakpoint="wide"
+              tileName="support3"
             />
-            <div
-              className="css-view-1dbjc4n IS7"
-            >
-              <TileO
-                breakpoint="wide"
-                tileName="support2"
-              />
-            </div>
           </div>
           <div
-            className="css-view-1dbjc4n IS9"
+            className="css-view-1dbjc4n IS11"
           />
           <div
-            className="css-view-1dbjc4n IS13"
+            className="css-view-1dbjc4n IS12"
           >
-            <div
-              className="css-view-1dbjc4n IS10"
-            >
-              <TileO
-                breakpoint="wide"
-                tileName="support3"
-              />
-            </div>
-            <div
-              className="css-view-1dbjc4n IS11"
+            <TileO
+              breakpoint="wide"
+              tileName="support4"
             />
-            <div
-              className="css-view-1dbjc4n IS12"
-            >
-              <TileO
-                breakpoint="wide"
-                tileName="support4"
-              />
-            </div>
           </div>
         </div>
       </div>
@@ -1466,30 +1452,35 @@ exports[`5. standard 1`] = `
     >
       <TileK
         breakpoint="wide"
+        tileName="standardItem1"
       />
       <div
         className="css-view-1dbjc4n IS1"
       />
       <TileK
         breakpoint="wide"
+        tileName="standardItem2"
       />
       <div
         className="css-view-1dbjc4n IS2"
       />
       <TileK
         breakpoint="wide"
+        tileName="standardItem3"
       />
       <div
         className="css-view-1dbjc4n IS3"
       />
       <TileK
         breakpoint="wide"
+        tileName="standardItem4"
       />
       <div
         className="css-view-1dbjc4n IS4"
       />
       <TileK
         breakpoint="wide"
+        tileName="standardItem5"
       />
     </div>
   </div>
@@ -2091,6 +2082,10 @@ exports[`10. secondary one and four 1`] = `
 
 .IS16 {
   background-color: rgba(39,45,52,1.00);
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .IS17 {
@@ -2102,101 +2097,93 @@ exports[`10. secondary one and four 1`] = `
   width: 1366px;
   -ms-flex-item-align: center;
 }
-
-.IS18 {
-  background-color: rgba(39,45,52,1.00);
-}
 </style>
 
 <div
-  className="css-view-1dbjc4n IS18"
+  className="css-view-1dbjc4n IS17"
 >
   <div
-    className="css-view-1dbjc4n IS17"
+    className="css-view-1dbjc4n IS16"
   >
     <div
-      className="css-view-1dbjc4n IS16"
+      className="css-view-1dbjc4n IS1"
+    >
+      <TheTimesLogo
+        height={40}
+        width={42}
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n IS2"
+    />
+    <div
+      className="css-view-1dbjc4n IS15"
     >
       <div
-        className="css-view-1dbjc4n IS1"
-      >
-        <TheTimesLogo
-          height={40}
-          width={42}
-        />
-      </div>
-      <div
-        className="css-view-1dbjc4n IS2"
-      />
-      <div
-        className="css-view-1dbjc4n IS15"
+        className="css-view-1dbjc4n IS3"
       >
         <div
-          className="css-view-1dbjc4n IS3"
+          className="css-view-1dbjc4n"
+        >
+          <TileN
+            breakpoint="wide"
+            tileName="secondary"
+          />
+        </div>
+      </div>
+      <div
+        className="css-view-1dbjc4n IS4"
+      />
+      <div
+        className="css-view-1dbjc4n IS14"
+      >
+        <div
+          className="css-view-1dbjc4n IS8"
         >
           <div
-            className="css-view-1dbjc4n"
+            className="css-view-1dbjc4n IS5"
           >
-            <TileN
+            <TileO
               breakpoint="wide"
-              tileName="secondary"
+              tileName="support1"
+            />
+          </div>
+          <div
+            className="css-view-1dbjc4n IS6"
+          />
+          <div
+            className="css-view-1dbjc4n IS7"
+          >
+            <TileO
+              breakpoint="wide"
+              tileName="support2"
             />
           </div>
         </div>
         <div
-          className="css-view-1dbjc4n IS4"
+          className="css-view-1dbjc4n IS9"
         />
         <div
-          className="css-view-1dbjc4n IS14"
+          className="css-view-1dbjc4n IS13"
         >
           <div
-            className="css-view-1dbjc4n IS8"
+            className="css-view-1dbjc4n IS10"
           >
-            <div
-              className="css-view-1dbjc4n IS5"
-            >
-              <TileO
-                breakpoint="wide"
-                tileName="support1"
-              />
-            </div>
-            <div
-              className="css-view-1dbjc4n IS6"
+            <TileO
+              breakpoint="wide"
+              tileName="support3"
             />
-            <div
-              className="css-view-1dbjc4n IS7"
-            >
-              <TileO
-                breakpoint="wide"
-                tileName="support2"
-              />
-            </div>
           </div>
           <div
-            className="css-view-1dbjc4n IS9"
+            className="css-view-1dbjc4n IS11"
           />
           <div
-            className="css-view-1dbjc4n IS13"
+            className="css-view-1dbjc4n IS12"
           >
-            <div
-              className="css-view-1dbjc4n IS10"
-            >
-              <TileO
-                breakpoint="wide"
-                tileName="support3"
-              />
-            </div>
-            <div
-              className="css-view-1dbjc4n IS11"
+            <TileO
+              breakpoint="wide"
+              tileName="support4"
             />
-            <div
-              className="css-view-1dbjc4n IS12"
-            >
-              <TileO
-                breakpoint="wide"
-                tileName="support4"
-              />
-            </div>
           </div>
         </div>
       </div>

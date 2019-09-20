@@ -1,0 +1,424 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tile s huge 1`] = `
+<style>
+.IS1 {
+  color: rgba(29,29,27,1.00);
+  font-family: TimesModern-Bold;
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.IS2 {
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS3 {
+  color: rgba(105,105,105,1.00);
+  font-family: TimesDigitalW04-Regular;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.IS4 {
+  color: rgba(105,105,105,1.00);
+  font-family: GillSansMTStd-Medium;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.IS5 {
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
+</style>
+
+<div
+  className="css-view-1dbjc4n IS5"
+>
+  <div
+    className="css-view-1dbjc4n IS2"
+  >
+    <div
+      className="css-text-901oao IS1"
+    >
+      Nature notes
+    </div>
+  </div>
+  <div
+    className="css-text-901oao IS3"
+  >
+    <p>
+      <b>
+        Rick Astley
+      </b>
+      , singer-songwriter, 
+      <i>
+        Never Gonna Give You Up 
+      </i>
+      (1987), 53; 
+      <b>
+        Mike Batt
+      </b>
+      , composer, songwriter, 
+      <i>
+        Wombling Free 
+      </i>
+      (1978), 
+      <i>
+        Bright Eyes 
+      </i>
+    </p>
+  </div>
+  <div
+    className="css-text-901oao IS4"
+  >
+    <span>
+      Libby Purves
+    </span>
+  </div>
+</div>
+`;
+
+exports[`tile s medium 1`] = `
+<style>
+.IS1 {
+  color: rgba(29,29,27,1.00);
+  font-family: TimesModern-Bold;
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.IS2 {
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS3 {
+  color: rgba(105,105,105,1.00);
+  font-family: TimesDigitalW04-Regular;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.IS4 {
+  color: rgba(105,105,105,1.00);
+  font-family: GillSansMTStd-Medium;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.IS5 {
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
+</style>
+
+<div
+  className="css-view-1dbjc4n IS5"
+>
+  <div
+    className="css-view-1dbjc4n IS2"
+  >
+    <div
+      className="css-text-901oao IS1"
+    >
+      Nature notes
+    </div>
+  </div>
+  <div
+    className="css-text-901oao IS3"
+  >
+    <p>
+      <b>
+        Rick Astley
+      </b>
+      , singer-songwriter, 
+      <i>
+        Never Gonna Give You Up 
+      </i>
+      (1987), 53; 
+      <b>
+        Mike Batt
+      </b>
+      , composer, songwriter, 
+      <i>
+        Wombling Free 
+      </i>
+      (1978), 
+      <i>
+        Bright Eyes 
+      </i>
+    </p>
+  </div>
+  <div
+    className="css-text-901oao IS4"
+  >
+    <span>
+      Libby Purves
+    </span>
+  </div>
+</div>
+`;
+
+exports[`tile s no byline 1`] = `
+<style>
+.IS1 {
+  color: rgba(29,29,27,1.00);
+  font-family: TimesModern-Bold;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.IS2 {
+  -webkit-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+}
+
+.IS3 {
+  color: rgba(105,105,105,1.00);
+  font-family: TimesDigitalW04-Regular;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.IS4 {
+  padding-bottom: 10px;
+}
+</style>
+
+<div
+  className="css-view-1dbjc4n IS4"
+>
+  <div
+    className="css-view-1dbjc4n IS2"
+  >
+    <div
+      className="css-text-901oao IS1"
+    >
+      Nature notes
+    </div>
+  </div>
+  <div
+    className="css-text-901oao IS3"
+  >
+    <p>
+      <b>
+        Rick Astley
+      </b>
+      , singer-songwriter, 
+      <i>
+        Never Gonna Give You Up 
+      </i>
+      (1987), 53; 
+      <b>
+        Mike Batt
+      </b>
+      , composer, songwriter, 
+      <i>
+        Wombling Free 
+      </i>
+      (1978), 
+      <i>
+        Bright Eyes 
+      </i>
+    </p>
+  </div>
+</div>
+`;
+
+exports[`tile s small 1`] = `
+<style>
+.IS1 {
+  color: rgba(29,29,27,1.00);
+  font-family: TimesModern-Bold;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.IS2 {
+  -webkit-align-items: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+}
+
+.IS3 {
+  color: rgba(105,105,105,1.00);
+  font-family: TimesDigitalW04-Regular;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.IS4 {
+  color: rgba(105,105,105,1.00);
+  font-family: GillSansMTStd-Medium;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.IS5 {
+  padding-bottom: 10px;
+}
+</style>
+
+<div
+  className="css-view-1dbjc4n IS5"
+>
+  <div
+    className="css-view-1dbjc4n IS2"
+  >
+    <div
+      className="css-text-901oao IS1"
+    >
+      Nature notes
+    </div>
+  </div>
+  <div
+    className="css-text-901oao IS3"
+  >
+    <p>
+      <b>
+        Rick Astley
+      </b>
+      , singer-songwriter, 
+      <i>
+        Never Gonna Give You Up 
+      </i>
+      (1987), 53; 
+      <b>
+        Mike Batt
+      </b>
+      , composer, songwriter, 
+      <i>
+        Wombling Free 
+      </i>
+      (1978), 
+      <i>
+        Bright Eyes 
+      </i>
+    </p>
+  </div>
+  <div
+    className="css-text-901oao IS4"
+  >
+    <span>
+      Libby Purves
+    </span>
+  </div>
+</div>
+`;
+
+exports[`tile s wide 1`] = `
+<style>
+.IS1 {
+  color: rgba(29,29,27,1.00);
+  font-family: TimesModern-Bold;
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.IS2 {
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS3 {
+  color: rgba(105,105,105,1.00);
+  font-family: TimesDigitalW04-Regular;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.IS4 {
+  color: rgba(105,105,105,1.00);
+  font-family: GillSansMTStd-Medium;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.IS5 {
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
+</style>
+
+<div
+  className="css-view-1dbjc4n IS5"
+>
+  <div
+    className="css-view-1dbjc4n IS2"
+  >
+    <div
+      className="css-text-901oao IS1"
+    >
+      Nature notes
+    </div>
+  </div>
+  <div
+    className="css-text-901oao IS3"
+  >
+    <p>
+      <b>
+        Rick Astley
+      </b>
+      , singer-songwriter, 
+      <i>
+        Never Gonna Give You Up 
+      </i>
+      (1987), 53; 
+      <b>
+        Mike Batt
+      </b>
+      , composer, songwriter, 
+      <i>
+        Wombling Free 
+      </i>
+      (1978), 
+      <i>
+        Bright Eyes 
+      </i>
+    </p>
+  </div>
+  <div
+    className="css-text-901oao IS4"
+  >
+    <span>
+      Libby Purves
+    </span>
+  </div>
+</div>
+`;

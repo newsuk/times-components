@@ -1,0 +1,225 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tile ak huge 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "backgroundColor": "#F0F0F0",
+      "flex": 1,
+      "height": 150,
+      "marginHorizontal": 10,
+      "overflow": "hidden",
+    }
+  }
+  url="/crossword/123"
+  withStar={false}
+>
+  <View
+    style={
+      Object {
+        "height": 80,
+        "paddingHorizontal": 10,
+        "paddingTop": 10,
+      }
+    }
+  >
+    <Text
+      accessibilityRole="header"
+      aria-level="3"
+      style={
+        Object {
+          "color": "#333333",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 35,
+          "fontWeight": "400",
+          "lineHeight": 35,
+          "marginBottom": 5,
+        }
+      }
+    >
+      Times Concise medium No 7881
+    </Text>
+  </View>
+  <Image
+    aspectRatio={1.5}
+    disablePlaceholder={true}
+    fill={true}
+    style={
+      Object {
+        "alignSelf": "flex-end",
+        "marginTop": -25,
+        "width": "85%",
+      }
+    }
+    uri="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+  />
+</Link>
+`;
+
+exports[`tile ak medium 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "backgroundColor": "#F0F0F0",
+      "flex": 1,
+      "height": 150,
+      "marginHorizontal": 10,
+      "overflow": "hidden",
+    }
+  }
+  url="/crossword/123"
+  withStar={false}
+>
+  <View
+    style={
+      Object {
+        "height": 80,
+        "paddingHorizontal": 10,
+        "paddingTop": 10,
+      }
+    }
+  >
+    <Text
+      accessibilityRole="header"
+      aria-level="3"
+      style={
+        Object {
+          "color": "#333333",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 20,
+          "fontWeight": "400",
+          "lineHeight": 20,
+          "marginBottom": 5,
+        }
+      }
+    >
+      Times Concise medium No 7881
+    </Text>
+  </View>
+  <Image
+    aspectRatio={1.5}
+    disablePlaceholder={true}
+    fill={true}
+    style={
+      Object {
+        "alignSelf": "flex-end",
+        "marginTop": -25,
+        "width": "85%",
+      }
+    }
+    uri="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+  />
+</Link>
+`;
+
+exports[`tile ak wide 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "backgroundColor": "#F0F0F0",
+      "flex": 1,
+      "height": 150,
+      "marginHorizontal": 10,
+      "overflow": "hidden",
+    }
+  }
+  url="/crossword/123"
+  withStar={false}
+>
+  <View
+    style={
+      Object {
+        "height": 80,
+        "paddingHorizontal": 10,
+        "paddingTop": 10,
+      }
+    }
+  >
+    <Text
+      accessibilityRole="header"
+      aria-level="3"
+      style={
+        Object {
+          "color": "#333333",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 20,
+          "fontWeight": "400",
+          "lineHeight": 20,
+          "marginBottom": 5,
+        }
+      }
+    >
+      Times Concise medium No 7881
+    </Text>
+  </View>
+  <Image
+    aspectRatio={1.5}
+    disablePlaceholder={true}
+    fill={true}
+    style={
+      Object {
+        "alignSelf": "flex-end",
+        "marginTop": -25,
+        "width": "85%",
+      }
+    }
+    uri="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+  />
+</Link>
+`;
+
+exports[`tile ak without breakpoint should be like medium 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "backgroundColor": "#F0F0F0",
+      "flex": 1,
+      "height": 150,
+      "marginHorizontal": 10,
+      "overflow": "hidden",
+    }
+  }
+  url="/crossword/123"
+  withStar={false}
+>
+  <View
+    style={
+      Object {
+        "height": 80,
+        "paddingHorizontal": 10,
+        "paddingTop": 10,
+      }
+    }
+  >
+    <Text
+      accessibilityRole="header"
+      aria-level="3"
+      style={
+        Object {
+          "color": "#333333",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 20,
+          "fontWeight": "400",
+          "lineHeight": 20,
+          "marginBottom": 5,
+        }
+      }
+    >
+      Times Concise medium No 7881
+    </Text>
+  </View>
+  <Image
+    aspectRatio={1.5}
+    disablePlaceholder={true}
+    fill={true}
+    style={
+      Object {
+        "alignSelf": "flex-end",
+        "marginTop": -25,
+        "width": "85%",
+      }
+    }
+    uri="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+  />
+</Link>
+`;

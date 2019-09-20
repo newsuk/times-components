@@ -22,7 +22,7 @@ class Puzzle extends Component {
     return (
       <View style={container}>
         {puzzles.map(({ id, title, url, image }) => (
-          <View style={tileContainer}>
+          <View style={tileContainer} key={`puzzleItem-${id}`}>
             {breakpoint === editionBreakpoints.small ? (
               <TileAJ
                 id={id}

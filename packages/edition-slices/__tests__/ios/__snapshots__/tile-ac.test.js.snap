@@ -1,0 +1,305 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tile ac huge 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "flex": 1,
+      "padding": 10,
+    }
+  }
+  url="/article/123"
+>
+  <Image
+    aspectRatio={1.7777777777777777}
+    fill={true}
+    style={
+      Object {
+        "width": "100%",
+      }
+    }
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+  />
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#F0F0F0",
+        "flex": 1,
+        "justifyContent": "center",
+        "paddingHorizontal": 20,
+        "paddingVertical": 70,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "marginBottom": 0,
+        }
+      }
+    >
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
+    </View>
+    <Text
+      accessibilityRole="header"
+      aria-level="3"
+      style={
+        Object {
+          "color": "#1D1D1B",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 35,
+          "fontWeight": "900",
+          "lineHeight": 35,
+          "marginBottom": 0,
+          "textAlign": "center",
+        }
+      }
+    >
+      This is tile headline
+    </Text>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
+  </View>
+</Link>
+`;
+
+exports[`tile ac medium 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "flex": 1,
+      "padding": 10,
+    }
+  }
+  url="/article/123"
+>
+  <Image
+    aspectRatio={1.7777777777777777}
+    fill={true}
+    style={
+      Object {
+        "width": "100%",
+      }
+    }
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+  />
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#F0F0F0",
+        "flex": 1,
+        "justifyContent": "center",
+        "paddingHorizontal": 20,
+        "paddingVertical": 40,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "marginBottom": 0,
+        }
+      }
+    >
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
+    </View>
+    <Text
+      accessibilityRole="header"
+      aria-level="3"
+      style={
+        Object {
+          "color": "#1D1D1B",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 30,
+          "fontWeight": "900",
+          "lineHeight": 30,
+          "marginBottom": 0,
+          "textAlign": "center",
+        }
+      }
+    >
+      This is tile headline
+    </Text>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
+  </View>
+</Link>
+`;
+
+exports[`tile ac wide 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "flex": 1,
+      "padding": 10,
+    }
+  }
+  url="/article/123"
+>
+  <Image
+    aspectRatio={1.7777777777777777}
+    fill={true}
+    style={
+      Object {
+        "width": "100%",
+      }
+    }
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+  />
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#F0F0F0",
+        "flex": 1,
+        "justifyContent": "center",
+        "paddingHorizontal": 20,
+        "paddingVertical": 30,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "marginBottom": 0,
+        }
+      }
+    >
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
+    </View>
+    <Text
+      accessibilityRole="header"
+      aria-level="3"
+      style={
+        Object {
+          "color": "#1D1D1B",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 30,
+          "fontWeight": "900",
+          "lineHeight": 30,
+          "marginBottom": 0,
+          "textAlign": "center",
+        }
+      }
+    >
+      This is tile headline
+    </Text>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
+  </View>
+</Link>
+`;
+
+exports[`tile ac without breakpoint should be like medium 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "flex": 1,
+      "padding": 10,
+    }
+  }
+  url="/article/123"
+>
+  <Image
+    aspectRatio={1.7777777777777777}
+    fill={true}
+    style={
+      Object {
+        "width": "100%",
+      }
+    }
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+  />
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#F0F0F0",
+        "flex": 1,
+        "justifyContent": "center",
+        "paddingHorizontal": 20,
+        "paddingVertical": 40,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "marginBottom": 0,
+        }
+      }
+    >
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
+    </View>
+    <Text
+      accessibilityRole="header"
+      aria-level="3"
+      style={
+        Object {
+          "color": "#1D1D1B",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 30,
+          "fontWeight": "900",
+          "lineHeight": 30,
+          "marginBottom": 0,
+          "textAlign": "center",
+        }
+      }
+    >
+      This is tile headline
+    </Text>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
+  </View>
+</Link>
+`;
