@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tile j without breakpoint 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.S2 {
+  color: rgba(51,51,51,1.00);
+  font-family: TimesModern-Bold;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.IS1 {
+  width: 40%;
+}
+
+.IS2 {
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+
+.IS3 {
+  padding-left: 10px;
+  width: 60%;
+}
+</style>
+
+<Link
+  linkStyle={
+    Object {
+      "flexDirection": "row",
+      "padding": "10px",
+    }
+  }
+  url="/article/123"
+>
+  <Image
+    aspectRatio={1.5}
+    className="IS1"
+    fill={true}
+    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
+  />
+  <div
+    className="css-view-1dbjc4n IS3"
+  >
+    <div
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+    >
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
+    </div>
+    <h3
+      aria-level="3"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 IS2 S2"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
+  </div>
+</Link>
+`;

@@ -1,0 +1,538 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tile n huge 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "backgroundColor": "#272D34",
+      "flexDirection": "row",
+      "marginLeft": 5,
+      "padding": 10,
+    }
+  }
+  url="/article/123"
+>
+  <Image
+    aspectRatio={1}
+    fill={true}
+    style={
+      Object {
+        "width": "50%",
+      }
+    }
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
+  />
+  <View
+    style={
+      Object {
+        "paddingLeft": 10,
+        "width": "50%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "marginBottom": 0,
+        }
+      }
+    >
+      <ArticleLabel
+        color="#CCC"
+        isVideo={false}
+        title="label"
+      />
+    </View>
+    <Text
+      accessibilityRole="header"
+      aria-level="3"
+      style={
+        Object {
+          "color": "#FFFFFF",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 45,
+          "fontWeight": "900",
+          "lineHeight": 45,
+          "marginBottom": 0,
+        }
+      }
+    >
+      This is tile headline
+    </Text>
+    <Text
+      accessibilityRole="header"
+      aria-level="4"
+      style={
+        Object {
+          "color": "#CCC",
+          "fontFamily": "TimesDigitalW04-Regular",
+          "fontSize": 14,
+          "lineHeight": 20,
+          "paddingBottom": 0,
+          "paddingTop": 5,
+        }
+      }
+    >
+      Three Conservative MPs resign
+    </Text>
+    <ArticleFlags
+      color="#CCC"
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
+  </View>
+</Link>
+`;
+
+exports[`tile n medium 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "backgroundColor": "#272D34",
+      "flexDirection": "row",
+      "marginLeft": 5,
+      "padding": 10,
+    }
+  }
+  url="/article/123"
+>
+  <Image
+    aspectRatio={1}
+    fill={true}
+    style={
+      Object {
+        "width": "50%",
+      }
+    }
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
+  />
+  <View
+    style={
+      Object {
+        "paddingLeft": 10,
+        "width": "50%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "marginBottom": 0,
+        }
+      }
+    >
+      <ArticleLabel
+        color="#CCC"
+        isVideo={false}
+        title="label"
+      />
+    </View>
+    <Text
+      accessibilityRole="header"
+      aria-level="3"
+      style={
+        Object {
+          "color": "#FFFFFF",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 18,
+          "fontWeight": "900",
+          "lineHeight": 18,
+          "marginBottom": 0,
+        }
+      }
+    >
+      This is tile headline
+    </Text>
+    <Text
+      accessibilityRole="header"
+      aria-level="4"
+      style={
+        Object {
+          "color": "#CCC",
+          "fontFamily": "TimesDigitalW04-Regular",
+          "fontSize": 14,
+          "lineHeight": 20,
+          "paddingBottom": 0,
+          "paddingTop": 5,
+        }
+      }
+    >
+      Three Conservative MPs resign
+    </Text>
+    <ArticleFlags
+      color="#CCC"
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
+  </View>
+</Link>
+`;
+
+exports[`tile n small 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "backgroundColor": "#272D34",
+      "flexDirection": "row",
+      "marginLeft": 5,
+      "padding": 10,
+    }
+  }
+  url="/article/123"
+>
+  <Image
+    aspectRatio={1}
+    fill={true}
+    style={
+      Object {
+        "width": "50%",
+      }
+    }
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
+  />
+  <View
+    style={
+      Object {
+        "paddingLeft": 10,
+        "width": "50%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "marginBottom": 0,
+        }
+      }
+    >
+      <ArticleLabel
+        color="#CCC"
+        isVideo={false}
+        title="label"
+      />
+    </View>
+    <Text
+      accessibilityRole="header"
+      aria-level="3"
+      style={
+        Object {
+          "color": "#FFFFFF",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 18,
+          "fontWeight": "900",
+          "lineHeight": 18,
+          "marginBottom": 5,
+        }
+      }
+    >
+      This is tile headline
+    </Text>
+    <Text
+      accessibilityRole="header"
+      aria-level="4"
+      style={
+        Object {
+          "color": "#696969",
+          "fontFamily": "TimesModern-Regular",
+          "fontSize": 14,
+          "lineHeight": 21,
+          "paddingBottom": 10,
+        }
+      }
+    >
+      Three Conservative MPs resign
+    </Text>
+    <ArticleFlags
+      color="#CCC"
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
+  </View>
+</Link>
+`;
+
+exports[`tile n wide 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "backgroundColor": "#272D34",
+      "flexDirection": "row",
+      "marginLeft": 5,
+      "padding": 10,
+    }
+  }
+  url="/article/123"
+>
+  <Image
+    aspectRatio={1}
+    fill={true}
+    style={
+      Object {
+        "width": "50%",
+      }
+    }
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
+  />
+  <View
+    style={
+      Object {
+        "paddingLeft": 10,
+        "width": "50%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "marginBottom": 0,
+        }
+      }
+    >
+      <ArticleLabel
+        color="#CCC"
+        isVideo={false}
+        title="label"
+      />
+    </View>
+    <Text
+      accessibilityRole="header"
+      aria-level="3"
+      style={
+        Object {
+          "color": "#FFFFFF",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 28,
+          "fontWeight": "900",
+          "lineHeight": 28,
+          "marginBottom": 0,
+        }
+      }
+    >
+      This is tile headline
+    </Text>
+    <Text
+      accessibilityRole="header"
+      aria-level="4"
+      style={
+        Object {
+          "color": "#CCC",
+          "fontFamily": "TimesDigitalW04-Regular",
+          "fontSize": 14,
+          "lineHeight": 20,
+          "paddingBottom": 0,
+          "paddingTop": 5,
+        }
+      }
+    >
+      Three Conservative MPs resign
+    </Text>
+    <ArticleFlags
+      color="#CCC"
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
+  </View>
+</Link>
+`;
+
+exports[`tile n with default star 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "backgroundColor": "#272D34",
+      "flexDirection": "row",
+      "marginLeft": 5,
+      "padding": 10,
+    }
+  }
+  url="/article/123"
+>
+  <Image
+    aspectRatio={1}
+    fill={true}
+    style={
+      Object {
+        "width": "50%",
+      }
+    }
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
+  />
+  <View
+    style={
+      Object {
+        "paddingLeft": 10,
+        "width": "50%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "marginBottom": 0,
+        }
+      }
+    >
+      <ArticleLabel
+        color="#CCC"
+        isVideo={false}
+        title="label"
+      />
+    </View>
+    <Text
+      accessibilityRole="header"
+      aria-level="3"
+      style={
+        Object {
+          "color": "#FFFFFF",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 18,
+          "fontWeight": "900",
+          "lineHeight": 18,
+          "marginBottom": 5,
+        }
+      }
+    >
+      This is tile headline
+    </Text>
+    <Text
+      accessibilityRole="header"
+      aria-level="4"
+      style={
+        Object {
+          "color": "#696969",
+          "fontFamily": "TimesModern-Regular",
+          "fontSize": 14,
+          "lineHeight": 21,
+          "paddingBottom": 10,
+        }
+      }
+    >
+      Three Conservative MPs resign
+    </Text>
+    <ArticleFlags
+      color="#CCC"
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
+  </View>
+</Link>
+`;
+
+exports[`tile n without breakpoint should be like small 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "backgroundColor": "#272D34",
+      "flexDirection": "row",
+      "marginLeft": 5,
+      "padding": 10,
+    }
+  }
+  url="/article/123"
+>
+  <Image
+    aspectRatio={1}
+    fill={true}
+    style={
+      Object {
+        "width": "50%",
+      }
+    }
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
+  />
+  <View
+    style={
+      Object {
+        "paddingLeft": 10,
+        "width": "50%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "marginBottom": 0,
+        }
+      }
+    >
+      <ArticleLabel
+        color="#CCC"
+        isVideo={false}
+        title="label"
+      />
+    </View>
+    <Text
+      accessibilityRole="header"
+      aria-level="3"
+      style={
+        Object {
+          "color": "#FFFFFF",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 18,
+          "fontWeight": "900",
+          "lineHeight": 18,
+          "marginBottom": 5,
+        }
+      }
+    >
+      This is tile headline
+    </Text>
+    <Text
+      accessibilityRole="header"
+      aria-level="4"
+      style={
+        Object {
+          "color": "#696969",
+          "fontFamily": "TimesModern-Regular",
+          "fontSize": 14,
+          "lineHeight": 21,
+          "paddingBottom": 10,
+        }
+      }
+    >
+      Three Conservative MPs resign
+    </Text>
+    <ArticleFlags
+      color="#CCC"
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
+  </View>
+</Link>
+`;

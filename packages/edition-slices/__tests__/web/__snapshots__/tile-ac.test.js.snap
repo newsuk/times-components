@@ -1,0 +1,393 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tile ac huge 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.S2 {
+  font-family: TimesModern-Bold;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  width: 100%;
+}
+
+.IS2 {
+  color: rgba(29,29,27,1.00);
+  font-size: 35px;
+  line-height: 35px;
+  text-align: center;
+}
+
+.IS3 {
+  -webkit-align-items: center;
+  align-items: center;
+  background-color: rgba(240,240,240,1.00);
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-justify-content: center;
+  justify-content: center;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+}
+</style>
+
+<Link
+  linkStyle={
+    Object {
+      "flex": 1,
+      "padding": "10px",
+    }
+  }
+  url="/article/123"
+>
+  <Image
+    aspectRatio={1.7777777777777777}
+    className="IS1"
+    fill={true}
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+  />
+  <div
+    className="css-view-1dbjc4n IS3"
+  >
+    <div
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+    >
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
+    </div>
+    <h3
+      aria-level="3"
+      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS2 S2"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
+  </div>
+</Link>
+`;
+
+exports[`tile ac medium 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.S2 {
+  font-family: TimesModern-Bold;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  width: 100%;
+}
+
+.IS2 {
+  color: rgba(29,29,27,1.00);
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.IS3 {
+  -webkit-align-items: center;
+  align-items: center;
+  background-color: rgba(240,240,240,1.00);
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-justify-content: center;
+  justify-content: center;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+}
+</style>
+
+<Link
+  linkStyle={
+    Object {
+      "flex": 1,
+      "padding": "10px",
+    }
+  }
+  url="/article/123"
+>
+  <Image
+    aspectRatio={1.7777777777777777}
+    className="IS1"
+    fill={true}
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+  />
+  <div
+    className="css-view-1dbjc4n IS3"
+  >
+    <div
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+    >
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
+    </div>
+    <h3
+      aria-level="3"
+      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS2 S2"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
+  </div>
+</Link>
+`;
+
+exports[`tile ac wide 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.S2 {
+  font-family: TimesModern-Bold;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  width: 100%;
+}
+
+.IS2 {
+  color: rgba(29,29,27,1.00);
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.IS3 {
+  -webkit-align-items: center;
+  align-items: center;
+  background-color: rgba(240,240,240,1.00);
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-justify-content: center;
+  justify-content: center;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+}
+</style>
+
+<Link
+  linkStyle={
+    Object {
+      "flex": 1,
+      "padding": "10px",
+    }
+  }
+  url="/article/123"
+>
+  <Image
+    aspectRatio={1.7777777777777777}
+    className="IS1"
+    fill={true}
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+  />
+  <div
+    className="css-view-1dbjc4n IS3"
+  >
+    <div
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+    >
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
+    </div>
+    <h3
+      aria-level="3"
+      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS2 S2"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
+  </div>
+</Link>
+`;
+
+exports[`tile ac without breakpoint should be like medium 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.S2 {
+  font-family: TimesModern-Bold;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  width: 100%;
+}
+
+.IS2 {
+  color: rgba(29,29,27,1.00);
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.IS3 {
+  -webkit-align-items: center;
+  align-items: center;
+  background-color: rgba(240,240,240,1.00);
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-justify-content: center;
+  justify-content: center;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+}
+</style>
+
+<Link
+  linkStyle={
+    Object {
+      "flex": 1,
+      "padding": "10px",
+    }
+  }
+  url="/article/123"
+>
+  <Image
+    aspectRatio={1.7777777777777777}
+    className="IS1"
+    fill={true}
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+  />
+  <div
+    className="css-view-1dbjc4n IS3"
+  >
+    <div
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+    >
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
+    </div>
+    <h3
+      aria-level="3"
+      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS2 S2"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
+  </div>
+</Link>
+`;

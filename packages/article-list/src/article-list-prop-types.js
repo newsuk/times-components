@@ -7,7 +7,11 @@ import {
 export const propTypes = {
   ...basePropTypes,
   onArticlePress: PropTypes.func.isRequired,
-  onViewed: PropTypes.func
+  onViewed: PropTypes.func,
+  scrollToTop: PropTypes.bool
 };
 
-export const defaultProps = baseDefaultProps;
+export const defaultProps = {
+  ...baseDefaultProps,
+  scrollToTop: true
+};

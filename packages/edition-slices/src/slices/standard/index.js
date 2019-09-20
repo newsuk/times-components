@@ -20,12 +20,13 @@ class Standard extends Component {
       onPress
     } = this.props;
 
-    return items.map(tile => (
+    return items.map((tile, index) => (
       <TileK
         breakpoint={breakpoint}
         key={tile.articleId}
         onPress={onPress}
         tile={tile}
+        tileName={`standardItem${index + 1}`}
       />
     ));
   }

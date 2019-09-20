@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tile aj without breakpoint 1`] = `
+<style>
+.S1 {
+  color: rgba(51,51,51,1.00);
+  font-family: TimesModern-Bold;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.IS1 {
+  font-size: 25px;
+  line-height: 25px;
+}
+
+.IS2 {
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 15px;
+  width: 85%;
+}
+
+.IS3 {
+  align-self: flex-end;
+  width: 85%;
+}
+</style>
+
+<Link
+  linkStyle={
+    Object {
+      "backgroundColor": "#F0F0F0",
+      "flex": 1,
+      "marginTop": "10px",
+    }
+  }
+  url="/crossword/123"
+  withStar={false}
+>
+  <div
+    className="css-view-1dbjc4n IS2"
+  >
+    <h3
+      aria-level="3"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S1"
+      role="heading"
+    >
+      Times Concise medium No 7881
+    </h3>
+  </div>
+  <Image
+    aspectRatio={1.5}
+    className="IS3"
+    disablePlaceholder={true}
+    fill={true}
+    uri="https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0"
+  />
+</Link>
+`;
