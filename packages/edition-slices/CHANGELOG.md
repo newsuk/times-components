@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.86.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.85.0...@times-components/edition-slices@0.86.0) (2019-09-20)
+
+
+### Features
+
+* (REPLAT-8110) Add tile tests for corresponding breakpoints  ([#2288](https://github.com/newsuk/times-components/issues/2288)) ([6a808c9](https://github.com/newsuk/times-components/commit/6a808c9))
+* lead one and cartoon padding updates ([#2297](https://github.com/newsuk/times-components/issues/2297)) ([26613d3](https://github.com/newsuk/times-components/commit/26613d3))
+
+
+
+
+
 # [0.85.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.84.0...@times-components/edition-slices@0.85.0) (2019-09-19)
 
 
