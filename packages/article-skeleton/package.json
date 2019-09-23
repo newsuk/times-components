@@ -101,6 +101,7 @@
     "@times-components/video": "4.7.77",
     "lodash.get": "4.4.2",
     "lodash.pick": "4.4.0",
+    "luxon": "1.18.0",
     "memoize-one": "5.1.1",
     "mockdate": "2.0.2",
     "polished": "3.4.1",

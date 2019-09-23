@@ -45,6 +45,8 @@
     "@times-components/responsive": "0.4.67",
     "@times-components/styleguide": "3.28.49",
     "@times-components/tracking": "2.4.69",
+    "lodash.get": "4.4.2",
+    "luxon": "1.18.0",
     "memoize-one": "5.1.1",
     "prop-types": "15.7.2"
   },

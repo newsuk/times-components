@@ -17,4 +17,6 @@ const RelatedArticleItem = props => (
   </RelatedArticleItemBase>
 );
 
+RelatedArticleItem.displayName = "RelatedArticleItem";
+
 export default relatedArticlesItemTrackingEvents(RelatedArticleItem);
