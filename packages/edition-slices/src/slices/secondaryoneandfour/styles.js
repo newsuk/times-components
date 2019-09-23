@@ -19,9 +19,6 @@ const smallBreakpointStyles = {
   },
   container: {
     ...darkBackgroundColour
-  },
-  sliceWrapper: {
-    ...darkBackgroundColour
   }
 };
 
@@ -35,7 +32,8 @@ const mediumBreakpointStyles = {
     borderBottomColor: colours.functional.tertiary,
     marginHorizontal: spacing(3)
   },
-  sliceWrapper: {
+  container: {
+    ...darkBackgroundColour,
     marginVertical: spacing(3),
     marginHorizontal: spacing(6)
   }
@@ -51,7 +49,8 @@ const wideBreakpointStyles = {
     borderBottomColor: colours.functional.tertiary,
     marginHorizontal: spacing(3)
   },
-  sliceWrapper: {
+  container: {
+    ...darkBackgroundColour,
     marginVertical: spacing(3),
     marginHorizontal: spacing(4)
   }

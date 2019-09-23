@@ -47,10 +47,20 @@ class SecondaryFour extends Component {
       <SecondaryFourSlice
         breakpoint={breakpoint}
         secondary1={
-          <TileAR onPress={onPress} tile={secondary1} tileName="secondary1" />
+          <TileAR
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={secondary1}
+            tileName="secondary1"
+          />
         }
         secondary2={
-          <TileAR onPress={onPress} tile={secondary2} tileName="secondary2" />
+          <TileAR
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={secondary2}
+            tileName="secondary2"
+          />
         }
         secondary3={
           <TileB

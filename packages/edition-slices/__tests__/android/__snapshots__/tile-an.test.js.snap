@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tile an without breakpoint 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "flex": 1,
+      "padding": 10,
+    }
+  }
+  url="/article/123"
+>
+  <Image
+    aspectRatio={1}
+    fill={true}
+    resizeMode="cover"
+    rounded={true}
+    style={
+      Object {
+        "overflow": "hidden",
+      }
+    }
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
+  />
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "justifyContent": "center",
+        "paddingTop": 10,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "marginBottom": 5,
+        }
+      }
+    >
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
+    </View>
+    <Text
+      accessibilityRole="header"
+      aria-level="3"
+      style={
+        Object {
+          "color": "#333333",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 22,
+          "fontWeight": "400",
+          "lineHeight": 22,
+          "marginBottom": 5,
+        }
+      }
+    >
+      This is tile headline
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "#696969",
+          "flexWrap": "wrap",
+          "fontFamily": "TimesDigitalW04",
+          "fontSize": 14,
+          "lineHeight": 20,
+          "marginBottom": 0,
+        }
+      }
+    >
+      <Text>
+        
+        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+        ...
+      </Text>
+    </Text>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
+  </View>
+</Link>
+`;

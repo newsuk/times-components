@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tile f without breakpoint 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.S2 {
+  color: rgba(51,51,51,1.00);
+  font-family: TimesModern-Bold;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.S3 {
+  color: rgba(105,105,105,1.00);
+  font-family: TimesModern-Regular;
+  font-size: 19px;
+  line-height: 21px;
+}
+
+.S4 {
+  color: rgba(105,105,105,1.00);
+  -ms-flex-wrap: wrap;
+  -webkit-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-family: TimesDigitalW04;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.IS1 {
+  font-size: 35px;
+  line-height: 35px;
+}
+</style>
+
+<Link
+  linkStyle={
+    Object {
+      "padding": "10px",
+    }
+  }
+  url="/article/123"
+>
+  <div
+    className="css-view-1dbjc4n"
+  >
+    <div
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+    >
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
+    </div>
+    <h3
+      aria-level="3"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <h4
+      aria-level="4"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khp51w r-fontFamily-4h8ur4 r-fontSize-1b6yd1w r-lineHeight-10yl4k r-paddingBottom-1mi0q7o S3"
+      role="heading"
+    >
+      Three Conservative MPs resign
+    </h4>
+    <div
+      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S4"
+    >
+      <span
+        className="css-text-901oao css-textHasAncestor-16my406"
+      >
+        
+        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+        ...
+      </span>
+    </div>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
+  </div>
+</Link>
+`;

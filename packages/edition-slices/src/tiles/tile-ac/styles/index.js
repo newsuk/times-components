@@ -6,7 +6,6 @@ import {
 } from "@times-components/styleguide";
 
 const paddingVerticalResolver = {
-  [editionBreakpoints.small]: spacing(3),
   [editionBreakpoints.medium]: spacing(8),
   [editionBreakpoints.wide]: spacing(6),
   [editionBreakpoints.huge]: spacing(14)
@@ -40,6 +39,6 @@ export default breakpoint => ({
     justifyContent: "center",
     backgroundColor: colours.functional.border,
     paddingHorizontal: spacing(4),
-    paddingVertical: paddingVerticalResolver[breakpoint] || spacing(3)
+    paddingVertical: paddingVerticalResolver[breakpoint]
   }
 });
