@@ -35,7 +35,7 @@ class ArticleList extends Component {
 
   shouldComponentUpdate(nextProps) {
     const { page } = this.props;
-    return page === nextProps.page;
+    return page !== nextProps.page;
   }
 
   render() {
@@ -50,6 +50,7 @@ class ArticleList extends Component {
       imageRatio,
       onNext,
       onPrev,
+      scrollToTop = true,
       page = 0,
       pageSize,
       receiveChildList,
@@ -177,7 +178,7 @@ class ArticleList extends Component {
                 </Fragment>
               );
             })}
-          {paginationComponent({ autoScroll: true, hideResults: true })}
+          {paginationComponent({ autoScroll: scrollToTop, hideResults: true })}
         </View>
       );
 

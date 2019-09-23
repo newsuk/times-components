@@ -1,3 +1,4 @@
+/* eslint-disable react/require-default-props */
 import React from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
@@ -14,7 +15,7 @@ import styleFactory from "./styles";
 import WithoutWhiteSpace from "../shared/without-white-space";
 import PositionedTileStar from "../shared/positioned-tile-star";
 
-const TileAB = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
+const TileAB = ({ onPress, tile, breakpoint = editionBreakpoints.medium }) => {
   const styles = styleFactory(breakpoint);
   const crop = getTileImage(tile, "crop23");
 
@@ -49,7 +50,7 @@ const TileAB = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
 };
 
 TileAB.propTypes = {
-  breakpoint: PropTypes.string.isRequired,
+  breakpoint: PropTypes.string,
   onPress: PropTypes.func.isRequired,
   tile: PropTypes.shape({}).isRequired
 };

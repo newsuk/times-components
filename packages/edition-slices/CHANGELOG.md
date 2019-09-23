@@ -3,6 +3,40 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.87.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.86.0...@times-components/edition-slices@0.87.0) (2019-09-20)
+
+
+### Features
+
+* list2and6nopic for 1366px tablet ([#2294](https://github.com/newsuk/times-components/issues/2294)) ([4993e95](https://github.com/newsuk/times-components/commit/4993e95))
+
+
+
+
+
+# [0.86.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.85.0...@times-components/edition-slices@0.86.0) (2019-09-20)
+
+
+### Features
+
+* (REPLAT-8110) Add tile tests for corresponding breakpoints  ([#2288](https://github.com/newsuk/times-components/issues/2288)) ([6a808c9](https://github.com/newsuk/times-components/commit/6a808c9))
+* lead one and cartoon padding updates ([#2297](https://github.com/newsuk/times-components/issues/2297)) ([26613d3](https://github.com/newsuk/times-components/commit/26613d3))
+
+
+
+
+
+# [0.85.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.84.0...@times-components/edition-slices@0.85.0) (2019-09-19)
+
+
+### Features
+
+* secondary4 for 1366px ([#2298](https://github.com/newsuk/times-components/issues/2298)) ([b950906](https://github.com/newsuk/times-components/commit/b950906))
+
+
+
+
+
 # [0.84.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.83.1...@times-components/edition-slices@0.84.0) (2019-09-18)
 
 
