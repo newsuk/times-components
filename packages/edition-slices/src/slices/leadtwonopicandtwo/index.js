@@ -85,8 +85,22 @@ class LeadTwoNoPicAndTwo extends Component {
     return (
       <LeadTwoNoPicAndTwoSlice
         breakpoint={breakpoint}
-        lead1={<TileX onPress={onPress} tile={lead1} tileName="lead1" />}
-        lead2={<TileY onPress={onPress} tile={lead2} tileName="lead2" />}
+        lead1={
+          <TileX
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={lead1}
+            tileName="lead1"
+          />
+        }
+        lead2={
+          <TileY
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={lead2}
+            tileName="lead2"
+          />
+        }
         support1={
           <TileE
             breakpoint={breakpoint}
@@ -96,7 +110,12 @@ class LeadTwoNoPicAndTwo extends Component {
           />
         }
         support2={
-          <TileAL onPress={onPress} tile={support2} tileName="support2" />
+          <TileAL
+            breakpoint={breakpoint}
+            onPress={onPress}
+            tile={support2}
+            tileName="support2"
+          />
         }
       />
     );

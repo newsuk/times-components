@@ -51,9 +51,9 @@ exports[`tile al without breakpoint 1`] = `
             Object {
               "color": "#333333",
               "fontFamily": "TimesModern-Bold",
-              "fontSize": 20,
+              "fontSize": undefined,
               "fontWeight": "400",
-              "lineHeight": 20,
+              "lineHeight": undefined,
               "marginBottom": 5,
             }
           }

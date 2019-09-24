@@ -32,9 +32,9 @@ exports[`tile y huge 1`] = `
         Object {
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 30,
+          "fontSize": 35,
           "fontWeight": "400",
-          "lineHeight": 30,
+          "lineHeight": 35,
           "marginBottom": 10,
         }
       }
@@ -251,9 +251,9 @@ exports[`tile y without breakpoint should be like medium 1`] = `
         Object {
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 30,
+          "fontSize": undefined,
           "fontWeight": "400",
-          "lineHeight": 30,
+          "lineHeight": undefined,
           "marginBottom": 10,
         }
       }

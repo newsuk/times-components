@@ -347,10 +347,12 @@ exports[`6. lead two no pic and two 1`] = `
   <div>
     <div>
       <TileX
+        breakpoint="wide"
         tileName="lead1"
       />
       <div />
       <TileY
+        breakpoint="wide"
         tileName="lead2"
       />
     </div>
@@ -364,6 +366,7 @@ exports[`6. lead two no pic and two 1`] = `
     <div />
     <div>
       <TileAL
+        breakpoint="wide"
         tileName="support2"
       />
     </div>

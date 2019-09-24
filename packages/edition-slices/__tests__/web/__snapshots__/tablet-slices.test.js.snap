@@ -103,10 +103,12 @@ exports[`5. lead two no pic and two - medium 1`] = `
   <div>
     <div>
       <TileX
+        breakpoint="wide"
         tileName="lead1"
       />
       <div />
       <TileY
+        breakpoint="wide"
         tileName="lead2"
       />
     </div>
@@ -120,6 +122,7 @@ exports[`5. lead two no pic and two - medium 1`] = `
     <div />
     <div>
       <TileAL
+        breakpoint="wide"
         tileName="support2"
       />
     </div>
@@ -608,10 +611,12 @@ exports[`20. lead two no pic and two - wide 1`] = `
   <div>
     <div>
       <TileX
+        breakpoint="wide"
         tileName="lead1"
       />
       <div />
       <TileY
+        breakpoint="wide"
         tileName="lead2"
       />
     </div>
@@ -625,6 +630,7 @@ exports[`20. lead two no pic and two - wide 1`] = `
     <div />
     <div>
       <TileAL
+        breakpoint="wide"
         tileName="support2"
       />
     </div>
@@ -1113,10 +1119,12 @@ exports[`35. lead two no pic and two - huge 1`] = `
   <div>
     <div>
       <TileX
+        breakpoint="wide"
         tileName="lead1"
       />
       <div />
       <TileY
+        breakpoint="wide"
         tileName="lead2"
       />
     </div>
@@ -1130,6 +1138,7 @@ exports[`35. lead two no pic and two - huge 1`] = `
     <div />
     <div>
       <TileAL
+        breakpoint="wide"
         tileName="support2"
       />
     </div>

@@ -26,8 +26,8 @@ exports[`tile y huge 1`] = `
 }
 
 .IS1 {
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 35px;
+  line-height: 35px;
 }
 </style>
 
@@ -279,11 +279,6 @@ exports[`tile y without breakpoint should be like medium 1`] = `
   line-height: 20px;
   margin-bottom: 10px;
 }
-
-.IS1 {
-  font-size: 30px;
-  line-height: 30px;
-}
 </style>
 
 <Link
@@ -310,7 +305,7 @@ exports[`tile y without breakpoint should be like medium 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-15d164r IS1 S2"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-15d164r S2"
       role="heading"
     >
       This is tile headline
