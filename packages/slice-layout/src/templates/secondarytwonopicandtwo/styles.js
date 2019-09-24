@@ -27,7 +27,7 @@ const wideBreakpointStyles = {
     marginHorizontal: spacing(2)
   },
   secondaryContainer: {
-    width: "65%",
+    width: "66.6%",
     flexDirection: "row"
   },
   supportContainer: {

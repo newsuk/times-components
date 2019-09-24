@@ -2210,7 +2210,7 @@ exports[`29. secondary two no pic and two - wide 1`] = `
       style={
         Object {
           "flexDirection": "row",
-          "width": "65%",
+          "width": "66.6%",
         }
       }
     >
@@ -3502,7 +3502,7 @@ exports[`44. secondary two no pic and two - huge 1`] = `
         style={
           Object {
             "flexDirection": "row",
-            "width": "65%",
+            "width": "66.6%",
           }
         }
       >

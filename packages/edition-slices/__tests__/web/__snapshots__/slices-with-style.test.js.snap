@@ -2358,7 +2358,7 @@ exports[`12. secondary two no pic and two 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  width: 65%;
+  width: 66.6%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }

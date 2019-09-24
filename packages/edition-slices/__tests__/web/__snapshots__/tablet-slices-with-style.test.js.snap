@@ -1742,7 +1742,7 @@ exports[`14. secondary two no pic and two - medium 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  width: 65%;
+  width: 66.6%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
@@ -3739,7 +3739,7 @@ exports[`29. secondary two no pic and two - wide 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  width: 65%;
+  width: 66.6%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
@@ -5736,7 +5736,7 @@ exports[`44. secondary two no pic and two - huge 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  width: 65%;
+  width: 66.6%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
