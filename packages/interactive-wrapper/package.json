@@ -62,6 +62,9 @@
     "prop-types": "15.7.2",
     "react-native-webview": "5.10.0"
   },
+  "resolutions": {
+    "react": "16.9.0"
+  },
   "peerDependencies": {
     "react": ">=16.5",
     "react-dom": ">=16.5",

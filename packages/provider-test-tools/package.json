@@ -83,6 +83,9 @@
     "react-test-renderer": "16.6.3",
     "zen-observable": "0.8.11"
   },
+  "resolutions": {
+    "react": "16.9.0"
+  },
   "peerDependencies": {
     "react": ">=16.5",
     "react-dom": ">=16.5",

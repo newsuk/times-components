@@ -46,6 +46,9 @@
     "jest": "24.8.0",
     "prettier": "1.14.3"
   },
+  "resolutions": {
+    "react": "16.9.0"
+  },
   "peerDependencies": {
     "babel-loader": "8.0.5",
     "react-native-web": "0.11.4",

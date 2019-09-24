@@ -42,6 +42,9 @@
     "@storybook/addon-actions": "4.1.18",
     "@times-components/tealium": "1.13.24"
   },
+  "resolutions": {
+    "react": "16.9.0"
+  },
   "peerDependencies": {
     "react": ">=16.5",
     "react-dom": ">=16.5",
