@@ -1,6 +1,6 @@
 {
   "name": "@times-components/utils",
-  "version": "4.11.35",
+  "version": "4.11.36",
   "description": "A set of helpers and/or workarounds to be shared across packages",
   "main": "dist",
   "dev": "src",
@@ -33,10 +33,10 @@
   },
   "devDependencies": {
     "@babel/core": "7.4.4",
-    "@times-components/eslint-config-thetimes": "0.8.14",
-    "@times-components/jest-configurator": "2.6.6",
-    "@times-components/jest-serializer": "3.2.18",
-    "@times-components/webpack-configurator": "2.0.25",
+    "@times-components/eslint-config-thetimes": "0.8.15",
+    "@times-components/jest-configurator": "2.6.7",
+    "@times-components/jest-serializer": "3.2.19",
+    "@times-components/webpack-configurator": "2.0.26",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.5",
     "babel-plugin-add-react-displayname": "0.0.5",
@@ -50,8 +50,8 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/schema": "0.6.20",
-    "@times-components/styleguide": "3.28.48",
+    "@times-components/schema": "0.6.21",
+    "@times-components/styleguide": "3.28.49",
     "apollo-cache-inmemory": "1.5.1",
     "apollo-client": "2.5.1",
     "apollo-link-http": "1.5.14",

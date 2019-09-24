@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.2.149](https://github.com/newsuk/times-components/compare/@times-components/article@7.2.148...@times-components/article@7.2.149) (2019-09-24)
+
+
+### Bug Fixes
+
+* react resolution ([#2299](https://github.com/newsuk/times-components/issues/2299)) ([dba85bb](https://github.com/newsuk/times-components/commit/dba85bb))
+
+
+
+
+
 ## [7.2.148](https://github.com/newsuk/times-components/compare/@times-components/article@7.2.147...@times-components/article@7.2.148) (2019-09-24)
 
 **Note:** Version bump only for package @times-components/article

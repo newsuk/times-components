@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/newsuk/times-components/compare/@times-components/context@1.1.0...@times-components/context@1.1.1) (2019-09-24)
+
+
+### Bug Fixes
+
+* react resolution ([#2299](https://github.com/newsuk/times-components/issues/2299)) ([dba85bb](https://github.com/newsuk/times-components/commit/dba85bb))
+
+
+
+
+
 # [1.1.0](https://github.com/newsuk/times-components/compare/@times-components/context@1.0.41...@times-components/context@1.1.0) (2019-09-17)
 
 

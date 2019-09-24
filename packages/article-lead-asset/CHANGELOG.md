@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.41](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.3.40...@times-components/article-lead-asset@1.3.41) (2019-09-24)
+
+
+### Bug Fixes
+
+* react resolution ([#2299](https://github.com/newsuk/times-components/issues/2299)) ([dba85bb](https://github.com/newsuk/times-components/commit/dba85bb))
+
+
+
+
+
 ## [1.3.40](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.3.39...@times-components/article-lead-asset@1.3.40) (2019-09-17)
 
 **Note:** Version bump only for package @times-components/article-lead-asset
