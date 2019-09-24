@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tile am without breakpoint 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.S2 {
+  color: rgba(51,51,51,1.00);
+  font-family: TimesModern-Bold;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.IS1 {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.IS2 {
+  font-size: 35px;
+  line-height: 35px;
+  padding-bottom: 5px;
+}
+
+.IS3 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+}
+</style>
+
+<Link
+  linkStyle={
+    Object {
+      "flex": 1,
+      "padding": "10px",
+    }
+  }
+  url="/article/123"
+>
+  <Image
+    aspectRatio={1.7777777777777777}
+    className="IS1"
+    fill={true}
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+  />
+  <div
+    className="css-view-1dbjc4n IS3"
+  >
+    <div
+      className="css-view-1dbjc4n"
+    >
+      <div
+        className="css-view-1dbjc4n"
+      >
+        <div
+          className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+        >
+          <ArticleLabel
+            color="#005B8D"
+            isVideo={false}
+            title="label"
+          />
+        </div>
+        <h3
+          aria-level="3"
+          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
+          role="heading"
+        >
+          This is tile headline
+        </h3>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+        />
+      </div>
+    </div>
+  </div>
+</Link>
+`;

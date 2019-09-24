@@ -87,15 +87,11 @@ class SecondaryOneAndFour extends Component {
   }
 
   render() {
-    const { breakpoint } = this.props;
-
     return (
-      <View style={styleFactory(breakpoint).sliceWrapper}>
-        <ResponsiveSlice
-          renderSmall={this.renderSlice}
-          renderMedium={this.renderSlice}
-        />
-      </View>
+      <ResponsiveSlice
+        renderSmall={this.renderSlice}
+        renderMedium={this.renderSlice}
+      />
     );
   }
 }
@@ -108,8 +104,7 @@ SecondaryOneAndFour.propTypes = {
     support2: PropTypes.shape({}).isRequired,
     support3: PropTypes.shape({}).isRequired,
     support4: PropTypes.shape({}).isRequired
-  }).isRequired,
-  breakpoint: PropTypes.string.isRequired
+  }).isRequired
 };
 
 export default SecondaryOneAndFour;

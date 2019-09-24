@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tile ai huge 1`] = `
+<style>
+.IS1 {
+  width: 100%;
+}
+</style>
+
+<Link
+  linkStyle={
+    Object {
+      "alignItems": "center",
+      "padding": "10px",
+      "paddingLeft": "15px",
+    }
+  }
+  url="/article/123"
+>
+  <Image
+    aspectRatio={1.5}
+    className="IS1"
+    fill={true}
+    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
+  />
+</Link>
+`;
+
+exports[`tile ai medium 1`] = `
+<style>
+.IS1 {
+  width: 100%;
+}
+</style>
+
+<Link
+  linkStyle={
+    Object {
+      "alignItems": "center",
+      "padding": "10px",
+      "paddingLeft": "10px",
+    }
+  }
+  url="/article/123"
+>
+  <Image
+    aspectRatio={1.5}
+    className="IS1"
+    fill={true}
+    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
+  />
+</Link>
+`;
+
+exports[`tile ai wide 1`] = `
+<style>
+.IS1 {
+  width: 100%;
+}
+</style>
+
+<Link
+  linkStyle={
+    Object {
+      "alignItems": "center",
+      "padding": "10px",
+      "paddingLeft": "15px",
+    }
+  }
+  url="/article/123"
+>
+  <Image
+    aspectRatio={1.5}
+    className="IS1"
+    fill={true}
+    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
+  />
+</Link>
+`;
+
+exports[`tile ai without breakpoint should be like medium 1`] = `
+<style>
+.IS1 {
+  width: 100%;
+}
+</style>
+
+<Link
+  linkStyle={
+    Object {
+      "alignItems": "center",
+      "padding": "10px",
+      "paddingLeft": "10px",
+    }
+  }
+  url="/article/123"
+>
+  <Image
+    aspectRatio={1.5}
+    className="IS1"
+    fill={true}
+    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
+  />
+</Link>
+`;

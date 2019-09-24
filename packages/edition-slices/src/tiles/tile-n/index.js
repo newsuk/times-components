@@ -1,3 +1,4 @@
+/* eslint-disable react/require-default-props */
 import React from "react";
 import PropTypes from "prop-types";
 import { colours, editionBreakpoints } from "@times-components/styleguide";
@@ -49,7 +50,7 @@ const TileN = ({
 TileN.propTypes = {
   isDarkStar: PropTypes.bool,
   onPress: PropTypes.func.isRequired,
-  breakpoint: PropTypes.string.isRequired,
+  breakpoint: PropTypes.string,
   tile: PropTypes.shape({}).isRequired
 };
 

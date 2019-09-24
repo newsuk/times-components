@@ -21,7 +21,7 @@ const TileAD = ({ onPress, tile, breakpoint = editionBreakpoints.medium }) => {
         render={whiteSpaceHeight => (
           <TileSummary
             headlineStyle={styles.headline}
-            summary={showSummary && getTileSummary(tile, 300)}
+            summary={showSummary ? getTileSummary(tile, 300) : null}
             tile={tile}
             whiteSpaceHeight={whiteSpaceHeight}
           />

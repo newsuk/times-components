@@ -1,0 +1,265 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tile ae huge 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "flex": 1,
+      "paddingHorizontal": 10,
+      "paddingTop": 15,
+      "paddingVertical": 15,
+    }
+  }
+  url="/article/123"
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View>
+      <View>
+        <View
+          style={
+            Object {
+              "marginBottom": 5,
+            }
+          }
+        >
+          <ArticleLabel
+            color="#005B8D"
+            isVideo={false}
+            title="label"
+          />
+        </View>
+        <Text
+          accessibilityRole="header"
+          aria-level="3"
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 35,
+              "fontWeight": "400",
+              "lineHeight": 35,
+              "marginBottom": 10,
+            }
+          }
+        >
+          This is tile headline
+        </Text>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+        />
+      </View>
+    </View>
+  </View>
+</Link>
+`;
+
+exports[`tile ae medium 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "flex": 1,
+      "paddingHorizontal": 10,
+      "paddingTop": 15,
+      "paddingVertical": 15,
+    }
+  }
+  url="/article/123"
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View>
+      <View>
+        <View
+          style={
+            Object {
+              "marginBottom": 5,
+            }
+          }
+        >
+          <ArticleLabel
+            color="#005B8D"
+            isVideo={false}
+            title="label"
+          />
+        </View>
+        <Text
+          accessibilityRole="header"
+          aria-level="3"
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 30,
+              "fontWeight": "400",
+              "lineHeight": 30,
+              "marginBottom": 10,
+            }
+          }
+        >
+          This is tile headline
+        </Text>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+        />
+      </View>
+    </View>
+  </View>
+</Link>
+`;
+
+exports[`tile ae wide 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "flex": 1,
+      "paddingHorizontal": 10,
+      "paddingTop": 15,
+      "paddingVertical": 15,
+    }
+  }
+  url="/article/123"
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View>
+      <View>
+        <View
+          style={
+            Object {
+              "marginBottom": 5,
+            }
+          }
+        >
+          <ArticleLabel
+            color="#005B8D"
+            isVideo={false}
+            title="label"
+          />
+        </View>
+        <Text
+          accessibilityRole="header"
+          aria-level="3"
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 30,
+              "fontWeight": "400",
+              "lineHeight": 30,
+              "marginBottom": 10,
+            }
+          }
+        >
+          This is tile headline
+        </Text>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+        />
+      </View>
+    </View>
+  </View>
+</Link>
+`;
+
+exports[`tile ae without breakpoint should be like medium 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "flex": 1,
+      "paddingHorizontal": 10,
+      "paddingTop": 15,
+      "paddingVertical": 15,
+    }
+  }
+  url="/article/123"
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View>
+      <View>
+        <View
+          style={
+            Object {
+              "marginBottom": 5,
+            }
+          }
+        >
+          <ArticleLabel
+            color="#005B8D"
+            isVideo={false}
+            title="label"
+          />
+        </View>
+        <Text
+          accessibilityRole="header"
+          aria-level="3"
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 30,
+              "fontWeight": "400",
+              "lineHeight": 30,
+              "marginBottom": 10,
+            }
+          }
+        >
+          This is tile headline
+        </Text>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+        />
+      </View>
+    </View>
+  </View>
+</Link>
+`;

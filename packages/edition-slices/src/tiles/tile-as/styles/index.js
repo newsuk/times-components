@@ -6,7 +6,8 @@ import {
 
 const headlineFontSize = {
   [editionBreakpoints.medium]: 18,
-  [editionBreakpoints.wide]: 20
+  [editionBreakpoints.wide]: 20,
+  [editionBreakpoints.huge]: 22
 };
 
 export default breakpoint => ({

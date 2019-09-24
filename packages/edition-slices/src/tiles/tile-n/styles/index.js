@@ -28,6 +28,7 @@ const smallBreakpointStyles = breakpoint => ({
       font: "headline"
     }),
     fontSize: fontSizeResolver[breakpoint],
+    lineHeight: fontSizeResolver[breakpoint],
     color: colours.functional.white
   },
   imageContainer: {
@@ -52,6 +53,7 @@ const mediumBreakpointStyles = breakpoint => ({
       font: "headline"
     }),
     fontSize: fontSizeResolver[breakpoint],
+    lineHeight: fontSizeResolver[breakpoint],
     color: colours.functional.white,
     marginBottom: 0
   },

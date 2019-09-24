@@ -1,0 +1,480 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tile b huge 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "flex": 1,
+      "padding": 10,
+    }
+  }
+  url="/article/123"
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View>
+      <View>
+        <View
+          style={
+            Object {
+              "marginBottom": 5,
+            }
+          }
+        >
+          <ArticleLabel
+            color="#005B8D"
+            isVideo={false}
+            title="label"
+          />
+        </View>
+        <Text
+          accessibilityRole="header"
+          aria-level="3"
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 30,
+              "fontWeight": "400",
+              "lineHeight": 30,
+              "marginBottom": 10,
+            }
+          }
+        >
+          This is tile headline
+        </Text>
+        <Text
+          numberOfLines={2}
+          style={
+            Object {
+              "color": "#696969",
+              "flexWrap": "wrap",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 14,
+              "lineHeight": 20,
+              "marginBottom": 0,
+            }
+          }
+        >
+          <Text>
+            
+            Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+            ...
+          </Text>
+        </Text>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+        />
+      </View>
+    </View>
+  </View>
+</Link>
+`;
+
+exports[`tile b medium 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "flex": 1,
+      "padding": 10,
+    }
+  }
+  url="/article/123"
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View>
+      <View>
+        <View
+          style={
+            Object {
+              "marginBottom": 5,
+            }
+          }
+        >
+          <ArticleLabel
+            color="#005B8D"
+            isVideo={false}
+            title="label"
+          />
+        </View>
+        <Text
+          accessibilityRole="header"
+          aria-level="3"
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 20,
+              "fontWeight": "400",
+              "lineHeight": 20,
+              "marginBottom": 5,
+            }
+          }
+        >
+          This is tile headline
+        </Text>
+        <Text
+          numberOfLines={2}
+          style={
+            Object {
+              "color": "#696969",
+              "flexWrap": "wrap",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 14,
+              "lineHeight": 20,
+              "marginBottom": 0,
+            }
+          }
+        >
+          <Text>
+            
+            Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+            ...
+          </Text>
+        </Text>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+        />
+      </View>
+    </View>
+  </View>
+</Link>
+`;
+
+exports[`tile b small 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "flex": 1,
+      "padding": 10,
+    }
+  }
+  url="/article/123"
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View>
+      <View>
+        <View
+          style={
+            Object {
+              "marginBottom": 5,
+            }
+          }
+        >
+          <ArticleLabel
+            color="#005B8D"
+            isVideo={false}
+            title="label"
+          />
+        </View>
+        <Text
+          accessibilityRole="header"
+          aria-level="3"
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 25,
+              "fontWeight": "400",
+              "lineHeight": 25,
+              "marginBottom": 5,
+            }
+          }
+        >
+          This is tile headline
+        </Text>
+        <Text
+          numberOfLines={2}
+          style={
+            Object {
+              "color": "#696969",
+              "flexWrap": "wrap",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 14,
+              "lineHeight": 20,
+              "marginBottom": 0,
+            }
+          }
+        >
+          <Text>
+            
+            Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+            ...
+          </Text>
+        </Text>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+        />
+      </View>
+    </View>
+  </View>
+</Link>
+`;
+
+exports[`tile b wide 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "flex": 1,
+      "padding": 10,
+    }
+  }
+  url="/article/123"
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View>
+      <View>
+        <View
+          style={
+            Object {
+              "marginBottom": 5,
+            }
+          }
+        >
+          <ArticleLabel
+            color="#005B8D"
+            isVideo={false}
+            title="label"
+          />
+        </View>
+        <Text
+          accessibilityRole="header"
+          aria-level="3"
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 30,
+              "fontWeight": "400",
+              "lineHeight": 30,
+              "marginBottom": 10,
+            }
+          }
+        >
+          This is tile headline
+        </Text>
+        <Text
+          numberOfLines={2}
+          style={
+            Object {
+              "color": "#696969",
+              "flexWrap": "wrap",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 14,
+              "lineHeight": 20,
+              "marginBottom": 0,
+            }
+          }
+        >
+          <Text>
+            
+            Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+            ...
+          </Text>
+        </Text>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+        />
+      </View>
+    </View>
+  </View>
+</Link>
+`;
+
+exports[`tile b with more teaser 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "flex": 1,
+      "padding": 10,
+    }
+  }
+  url="/article/123"
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View>
+      <View>
+        <View
+          style={
+            Object {
+              "marginBottom": 5,
+            }
+          }
+        >
+          <ArticleLabel
+            color="#005B8D"
+            isVideo={false}
+            title="label"
+          />
+        </View>
+        <Text
+          accessibilityRole="header"
+          aria-level="3"
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 20,
+              "fontWeight": "400",
+              "lineHeight": 20,
+              "marginBottom": 5,
+            }
+          }
+        >
+          This is tile headline
+        </Text>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+        />
+      </View>
+    </View>
+  </View>
+</Link>
+`;
+
+exports[`tile b without breakpoint should be like small 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "flex": 1,
+      "padding": 10,
+    }
+  }
+  url="/article/123"
+>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View>
+      <View>
+        <View
+          style={
+            Object {
+              "marginBottom": 5,
+            }
+          }
+        >
+          <ArticleLabel
+            color="#005B8D"
+            isVideo={false}
+            title="label"
+          />
+        </View>
+        <Text
+          accessibilityRole="header"
+          aria-level="3"
+          style={
+            Object {
+              "color": "#333333",
+              "fontFamily": "TimesModern-Bold",
+              "fontSize": 25,
+              "fontWeight": "400",
+              "lineHeight": 25,
+              "marginBottom": 5,
+            }
+          }
+        >
+          This is tile headline
+        </Text>
+        <Text
+          numberOfLines={2}
+          style={
+            Object {
+              "color": "#696969",
+              "flexWrap": "wrap",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 14,
+              "lineHeight": 20,
+              "marginBottom": 0,
+            }
+          }
+        >
+          <Text>
+            
+            Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+            ...
+          </Text>
+        </Text>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+        />
+      </View>
+    </View>
+  </View>
+</Link>
+`;
