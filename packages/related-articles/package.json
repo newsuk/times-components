@@ -1,6 +1,6 @@
 {
   "name": "@times-components/related-articles",
-  "version": "6.1.44",
+  "version": "6.1.45",
   "description": "related articles of an article",
   "main": "dist/related-articles",
   "dev": "src/related-articles",
@@ -73,7 +73,7 @@
     "@times-components/context": "1.1.0",
     "@times-components/link": "3.4.45",
     "@times-components/markup-forest": "1.7.25",
-    "@times-components/slice-layout": "0.41.0",
+    "@times-components/slice-layout": "0.41.1",
     "@times-components/styleguide": "3.28.48",
     "@times-components/tracking": "2.4.68",
     "lodash.get": "4.4.2",

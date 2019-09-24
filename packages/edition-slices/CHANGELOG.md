@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.88.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.88.0...@times-components/edition-slices@0.88.1) (2019-09-24)
+
+
+### Bug Fixes
+
+* secondary 2 no pic and 2 slice minor styling ([#2293](https://github.com/newsuk/times-components/issues/2293)) ([5033c21](https://github.com/newsuk/times-components/commit/5033c21))
+
+
+
+
+
 # [0.88.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.87.0...@times-components/edition-slices@0.88.0) (2019-09-24)
 
 
