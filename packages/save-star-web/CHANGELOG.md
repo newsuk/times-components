@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.28](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.3.27...@times-components/save-star-web@0.3.28) (2019-09-24)
+
+
+### Bug Fixes
+
+* react resolution ([#2299](https://github.com/newsuk/times-components/issues/2299)) ([dba85bb](https://github.com/newsuk/times-components/commit/dba85bb))
+
+
+
+
+
 ## [0.3.27](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.3.26...@times-components/save-star-web@0.3.27) (2019-09-19)
 
 **Note:** Version bump only for package @times-components/save-star-web

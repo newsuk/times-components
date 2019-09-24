@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.44](https://github.com/newsuk/times-components/compare/@times-components/mocks@0.0.43...@times-components/mocks@0.0.44) (2019-09-24)
+
+
+### Bug Fixes
+
+* react resolution ([#2299](https://github.com/newsuk/times-components/issues/2299)) ([dba85bb](https://github.com/newsuk/times-components/commit/dba85bb))
+
+
+
+
+
 ## [0.0.43](https://github.com/newsuk/times-components/compare/@times-components/mocks@0.0.42...@times-components/mocks@0.0.43) (2019-09-17)
 
 **Note:** Version bump only for package @times-components/mocks

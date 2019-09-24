@@ -16,11 +16,10 @@ const mediumBreakpointStyles = {
   },
   summaryContainer: {
     flex: 1,
-    width: "51.5%",
     paddingRight: spacing(4)
   },
   imageContainer: {
-    width: "48.5%"
+    flex: 1
   }
 };
 
@@ -31,17 +30,25 @@ const wideBreakpointStyles = {
     marginHorizontal: spacing(2)
   },
   headline: {
-    fontFamily: fonts.headline,
+    ...mediumBreakpointStyles.headline,
     fontSize: 40,
-    lineHeight: 40,
-    marginBottom: spacing(2)
+    lineHeight: 40
+  }
+};
+
+const hugeBreakpointStyles = {
+  ...wideBreakpointStyles,
+  headline: {
+    ...wideBreakpointStyles.headline,
+    fontSize: 45,
+    lineHeight: 45
   }
 };
 
 const stylesResolver = {
   medium: mediumBreakpointStyles,
   wide: wideBreakpointStyles,
-  huge: wideBreakpointStyles
+  huge: hugeBreakpointStyles
 };
 
 export default breakpoint => stylesResolver[breakpoint];
