@@ -19,7 +19,8 @@ module.exports = (
     navigationMode,
     spotAccountId,
     paidContentClassName,
-    faviconUrl
+    faviconUrl,
+    testSwitches
   },
   userState
 ) => {
@@ -65,7 +66,8 @@ module.exports = (
       spotAccountId,
       userState,
       paidContentClassName,
-      faviconUrl
+      faviconUrl,
+      testSwitches
     },
     name: "article"
   };

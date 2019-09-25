@@ -95,7 +95,8 @@ server.get("/article/:id", (request, response) => {
         enableNewskit: request.param("newskit"),
         graphqlApiUrl,
         logger,
-        spotAccountId
+        spotAccountId,
+        testSwitches: {}
       },
       userState
     )
