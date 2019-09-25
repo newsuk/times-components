@@ -26,7 +26,7 @@ const TileS = ({
     <View style={styles.container}>
       <View style={styles.titleWrapper}>
         {logo}
-        <Text style={[styles.title, styles.noMargin]}>{tile.title}</Text>
+        <Text style={styles.title}>{tile.title}</Text>
       </View>
       <Text style={styles.paragraph}>{renderAst(tile.content)}</Text>
       {tile.byline &&
