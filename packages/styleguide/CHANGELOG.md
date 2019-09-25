@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.28.49](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.28.48...@times-components/styleguide@3.28.49) (2019-09-24)
+
+
+### Bug Fixes
+
+* react resolution ([#2299](https://github.com/newsuk/times-components/issues/2299)) ([dba85bb](https://github.com/newsuk/times-components/commit/dba85bb))
+
+
+
+
+
 ## [3.28.48](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.28.47...@times-components/styleguide@3.28.48) (2019-09-17)
 
 **Note:** Version bump only for package @times-components/styleguide

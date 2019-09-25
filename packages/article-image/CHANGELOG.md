@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.3.37](https://github.com/newsuk/times-components/compare/@times-components/article-image@7.3.36...@times-components/article-image@7.3.37) (2019-09-24)
+
+
+### Bug Fixes
+
+* react resolution ([#2299](https://github.com/newsuk/times-components/issues/2299)) ([dba85bb](https://github.com/newsuk/times-components/commit/dba85bb))
+
+
+
+
+
 ## [7.3.36](https://github.com/newsuk/times-components/compare/@times-components/article-image@7.3.35...@times-components/article-image@7.3.36) (2019-09-17)
 
 **Note:** Version bump only for package @times-components/article-image

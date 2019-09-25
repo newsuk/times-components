@@ -3,6 +3,40 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.89.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.88.2...@times-components/edition-slices@0.89.0) (2019-09-24)
+
+
+### Features
+
+* (REPLAT-8564) Leader slice redesigned for huge breakpoint ([#2307](https://github.com/newsuk/times-components/issues/2307)) ([86ef8e8](https://github.com/newsuk/times-components/commit/86ef8e8))
+* increase test coverage for slices (Mobile only !)  ([#2305](https://github.com/newsuk/times-components/issues/2305)) ([1afef01](https://github.com/newsuk/times-components/commit/1afef01))
+
+
+
+
+
+## [0.88.2](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.88.1...@times-components/edition-slices@0.88.2) (2019-09-24)
+
+
+### Bug Fixes
+
+* react resolution ([#2299](https://github.com/newsuk/times-components/issues/2299)) ([dba85bb](https://github.com/newsuk/times-components/commit/dba85bb))
+
+
+
+
+
+## [0.88.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.88.0...@times-components/edition-slices@0.88.1) (2019-09-24)
+
+
+### Bug Fixes
+
+* secondary 2 no pic and 2 slice minor styling ([#2293](https://github.com/newsuk/times-components/issues/2293)) ([5033c21](https://github.com/newsuk/times-components/commit/5033c21))
+
+
+
+
+
 # [0.88.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.87.0...@times-components/edition-slices@0.88.0) (2019-09-24)
 
 

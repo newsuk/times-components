@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.60](https://github.com/newsuk/times-components/compare/@times-components/gestures@4.1.59...@times-components/gestures@4.1.60) (2019-09-24)
+
+
+### Bug Fixes
+
+* react resolution ([#2299](https://github.com/newsuk/times-components/issues/2299)) ([dba85bb](https://github.com/newsuk/times-components/commit/dba85bb))
+
+
+
+
+
 ## [4.1.59](https://github.com/newsuk/times-components/compare/@times-components/gestures@4.1.58...@times-components/gestures@4.1.59) (2019-09-17)
 
 **Note:** Version bump only for package @times-components/gestures

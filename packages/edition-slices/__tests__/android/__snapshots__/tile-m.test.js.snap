@@ -17,10 +17,10 @@ exports[`tile m huge 1`] = `
         Object {
           "color": "#1D1D1B",
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 20,
+          "fontSize": 24,
           "fontWeight": "400",
-          "lineHeight": 20,
-          "marginBottom": 5,
+          "lineHeight": 24,
+          "marginBottom": 10,
           "marginTop": 30,
           "textAlign": "center",
         }
@@ -172,9 +172,9 @@ exports[`tile m wide 1`] = `
         Object {
           "color": "#1D1D1B",
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 20,
+          "fontSize": 24,
           "fontWeight": "400",
-          "lineHeight": 20,
+          "lineHeight": 24,
           "marginBottom": 5,
           "marginTop": 30,
           "textAlign": "center",
