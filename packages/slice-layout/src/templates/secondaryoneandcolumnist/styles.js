@@ -11,7 +11,7 @@ const sharedStyles = {
   secondaryContainer: {
     paddingVertical: spacing(1)
   }
-}
+};
 
 const mediumBreakpointStyles = {
   ...sharedStyles,
