@@ -2,6 +2,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Image from "@times-components/image";
+import { editionBreakpoints } from "@times-components/styleguide";
 import {
   getTileImage,
   getTileSummary,
@@ -13,7 +14,7 @@ import stylesFactory from "./styles";
 import WithoutWhiteSpace from "../shared/without-white-space";
 import PositionedTileStar from "../shared/positioned-tile-star";
 
-const TileAL = ({ onPress, tile, breakpoint }) => {
+const TileAL = ({ onPress, tile, breakpoint = editionBreakpoints.wide }) => {
   const crop = getTileImage(tile, "crop32");
   const styles = stylesFactory(breakpoint);
 
