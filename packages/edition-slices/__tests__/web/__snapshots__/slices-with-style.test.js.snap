@@ -1647,7 +1647,7 @@ exports[`7. secondary one 1`] = `
 exports[`8. secondary one and columnist 1`] = `
 <style>
 .IS1 {
-  width: 67%;
+  width: 66.7%;
 }
 
 .IS2 {
@@ -1667,7 +1667,7 @@ exports[`8. secondary one and columnist 1`] = `
 .IS3 {
   padding-top: 5px;
   padding-bottom: 5px;
-  width: 33%;
+  width: 33.3%;
 }
 
 .IS4 {

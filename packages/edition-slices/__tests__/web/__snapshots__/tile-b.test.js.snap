@@ -26,8 +26,8 @@ exports[`tile b huge 1`] = `
 }
 
 .IS1 {
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 35px;
+  line-height: 35px;
 }
 
 .IS2 {
