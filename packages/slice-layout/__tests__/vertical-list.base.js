@@ -8,9 +8,7 @@ export default renderComponent => {
     {
       name: "no child elements",
       test() {
-        const wrapper = renderComponent(
-          <ListVerticalLayout tiles={[]} />
-        );
+        const wrapper = renderComponent(<ListVerticalLayout tiles={[]} />);
 
         expect(wrapper).toMatchSnapshot();
       }
@@ -19,9 +17,7 @@ export default renderComponent => {
       name: "a single child element",
       test() {
         const wrapper = renderComponent(
-          <ListVerticalLayout
-            tiles={[createItem("standard-1")]}
-          />
+          <ListVerticalLayout tiles={[createItem("standard-1")]} />
         );
 
         expect(wrapper).toMatchSnapshot();
@@ -33,7 +29,7 @@ export default renderComponent => {
         const wrapper = renderComponent(
           <ListVerticalLayout
             tiles={[
-              <test tile={{ article: { id: 'testId'}}} />,
+              <test tile={{ article: { id: "testId" } }} />,
               createItem("standard-1"),
               createItem("standard-2")
             ]}

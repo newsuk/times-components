@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
-import { VerticalLayout, ListVerticalLayout } from "@times-components/slice-layout";
+import {
+  VerticalLayout,
+  ListVerticalLayout
+} from "@times-components/slice-layout";
 import { TileK } from "../../tiles";
 import { ResponsiveSlice } from "../shared";
 import styles from "./styles";
