@@ -40,9 +40,9 @@ exports[`tile x huge 1`] = `
             Object {
               "color": "#333333",
               "fontFamily": "TimesModern-Bold",
-              "fontSize": 40,
+              "fontSize": 45,
               "fontWeight": "900",
-              "lineHeight": 40,
+              "lineHeight": 45,
               "marginBottom": 10,
             }
           }

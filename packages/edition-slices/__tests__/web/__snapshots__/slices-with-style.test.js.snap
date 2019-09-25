@@ -1584,12 +1584,14 @@ exports[`6. lead two no pic and two 1`] = `
       className="css-view-1dbjc4n IS2"
     >
       <TileX
+        breakpoint="wide"
         tileName="lead1"
       />
       <div
         className="css-view-1dbjc4n IS1"
       />
       <TileY
+        breakpoint="wide"
         tileName="lead2"
       />
     </div>
@@ -1611,6 +1613,7 @@ exports[`6. lead two no pic and two 1`] = `
       className="css-view-1dbjc4n IS6"
     >
       <TileAL
+        breakpoint="wide"
         tileName="support2"
       />
     </div>
