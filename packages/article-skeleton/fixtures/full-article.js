@@ -897,6 +897,7 @@ const defaultFlags = ["NEW", "EXCLUSIVE"];
 const defaultHasVideo = false;
 const defaultHeadline =
   "Caribbean islands devastated by Hurricane Irma, the worst Atlantic storm on record";
+const defaultReferralUrl = "referralUrl.com";
 const defaultKeywords = ["Supplement", "In", "Depth", "Template", "Style"];
 const defaultLabel = "HURRICANE IRMA";
 const defaultLeadAsset = {
@@ -1642,6 +1643,7 @@ const makeDefaultConfig = ({
   flags = defaultFlags,
   hasVideo = defaultHasVideo,
   headline = defaultHeadline,
+  referralUrl = defaultReferralUrl,
   keywords = defaultKeywords,
   label = defaultLabel,
   leadAsset = defaultLeadAsset,
@@ -1667,6 +1669,7 @@ const makeDefaultConfig = ({
   flags,
   hasVideo,
   headline,
+  referralUrl,
   keywords,
   label,
   leadAsset,
