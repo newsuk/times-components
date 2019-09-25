@@ -679,7 +679,7 @@ exports[`6. leaders slice - medium 1`] = `
         <div
           className="css-text-901oao IS2"
         >
-           Leading Articles
+           Leading Articles 
         </div>
       </div>
     </div>
@@ -2416,25 +2416,7 @@ exports[`17. comment lead and cartoon - wide 1`] = `
     className="css-view-1dbjc4n IS4"
   >
     <div
-      className="css-view-1dbjc4n IS2"
-    >
-      <TileX
-        breakpoint="wide"
-        tileName="lead1"
-      />
-      <div
-        className="css-view-1dbjc4n IS1"
-      />
-      <TileY
-        breakpoint="wide"
-        tileName="lead2"
-      />
-    </div>
-    <div
-      className="css-view-1dbjc4n IS3"
-    />
-    <div
-      className="css-view-1dbjc4n IS4"
+      className="css-view-1dbjc4n IS1"
     >
       <TileAH
         breakpoint="wide"
@@ -2447,9 +2429,9 @@ exports[`17. comment lead and cartoon - wide 1`] = `
     <div
       className="css-view-1dbjc4n IS3"
     >
-      <TileAL
+      <TileAI
         breakpoint="wide"
-        tileName="support2"
+        tileName="cartoon"
       />
     </div>
   </div>
@@ -2882,12 +2864,14 @@ exports[`21. lead two no pic and two - wide 1`] = `
       className="css-view-1dbjc4n IS2"
     >
       <TileX
+        breakpoint="wide"
         tileName="lead1"
       />
       <div
         className="css-view-1dbjc4n IS1"
       />
       <TileY
+        breakpoint="wide"
         tileName="lead2"
       />
     </div>
@@ -2909,6 +2893,7 @@ exports[`21. lead two no pic and two - wide 1`] = `
       className="css-view-1dbjc4n IS6"
     >
       <TileAL
+        breakpoint="wide"
         tileName="support2"
       />
     </div>
@@ -3046,7 +3031,7 @@ exports[`22. leaders slice - wide 1`] = `
         <div
           className="css-text-901oao IS2"
         >
-           Leading Articles
+           Leading Articles 
         </div>
       </div>
     </div>
@@ -4200,10 +4185,6 @@ exports[`30. secondary two no pic and two - wide 1`] = `
     <div
       className="css-view-1dbjc4n IS4"
     >
-      <TileX
-        breakpoint="wide"
-        tileName="lead1"
-      />
       <div
         className="css-view-1dbjc4n IS1"
       >
@@ -4215,10 +4196,14 @@ exports[`30. secondary two no pic and two - wide 1`] = `
       <div
         className="css-view-1dbjc4n IS2"
       />
-      <TileY
-        breakpoint="wide"
-        tileName="lead2"
-      />
+      <div
+        className="css-view-1dbjc4n IS3"
+      >
+        <TileAE
+          breakpoint="wide"
+          tileName="secondary2"
+        />
+      </div>
     </div>
     <div
       className="css-view-1dbjc4n IS5"
@@ -4230,14 +4215,10 @@ exports[`30. secondary two no pic and two - wide 1`] = `
         breakpoint="wide"
         tileName="support1"
       />
-    </div>
-    <div
-      className="css-view-1dbjc4n IS5"
-    />
-    <div
-      className="css-view-1dbjc4n IS6"
-    >
-      <TileAL
+      <div
+        className="css-view-1dbjc4n IS6"
+      />
+      <TileG
         breakpoint="wide"
         tileName="support2"
       />
@@ -5235,12 +5216,14 @@ exports[`37. lead two no pic and two - huge 1`] = `
       className="css-view-1dbjc4n IS2"
     >
       <TileX
+        breakpoint="wide"
         tileName="lead1"
       />
       <div
         className="css-view-1dbjc4n IS1"
       />
       <TileY
+        breakpoint="wide"
         tileName="lead2"
       />
     </div>
@@ -5262,6 +5245,7 @@ exports[`37. lead two no pic and two - huge 1`] = `
       className="css-view-1dbjc4n IS6"
     >
       <TileAL
+        breakpoint="wide"
         tileName="support2"
       />
     </div>
@@ -5399,7 +5383,7 @@ exports[`38. leaders slice - huge 1`] = `
         <div
           className="css-text-901oao IS2"
         >
-           Leading Articles
+           Leading Articles 
         </div>
       </div>
     </div>
