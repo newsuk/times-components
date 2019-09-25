@@ -67,6 +67,9 @@ const mediumBreakpointStyles = {
     flexDirection: "row",
     alignItems: "center",
     marginBottom: spacing(1)
+  },
+  noMargin: {
+    marginBottom: 0
   }
 };
 

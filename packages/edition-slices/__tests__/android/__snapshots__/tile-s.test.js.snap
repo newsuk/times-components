@@ -122,7 +122,7 @@ exports[`tile s medium 1`] = `
           "fontFamily": "TimesModern-Bold",
           "fontSize": 20,
           "lineHeight": 20,
-          "marginBottom": 5,
+          "marginBottom": 0,
         }
       }
     >

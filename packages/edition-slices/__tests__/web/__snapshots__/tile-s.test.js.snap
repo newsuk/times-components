@@ -99,7 +99,7 @@ exports[`tile s medium 1`] = `
   font-family: TimesModern-Bold;
   font-size: 20px;
   line-height: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
 }
 
 .IS2 {
