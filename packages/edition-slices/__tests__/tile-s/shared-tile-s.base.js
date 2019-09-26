@@ -28,7 +28,7 @@ export default () => {
       testTile(TileS, undefined, dailyRegisterItemNoByline);
     });
 
-    it("with logo", () => {
+    it("with logo for medium breakpoint", () => {
       const Logo = () => "LOGO";
 
       const output = TestRenderer.create(

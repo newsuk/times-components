@@ -424,14 +424,14 @@ exports[`tile s wide 1`] = `
 </div>
 `;
 
-exports[`tile s with logo 1`] = `
+exports[`tile s with logo for medium breakpoint 1`] = `
 <style>
 .IS1 {
   color: rgba(29,29,27,1.00);
   font-family: TimesModern-Bold;
   font-size: 20px;
   line-height: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
 }
 
 .IS2 {

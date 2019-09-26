@@ -57,11 +57,16 @@ const mediumBreakpointStyles = {
     lineHeight: 20
   },
   title: {
-    color: colours.functional.brandColour,
-    fontFamily: fonts.headline,
+    ...smallBreakpointStyles.title,
     fontSize: 20,
     lineHeight: 20,
     marginBottom: spacing(1)
+  },
+  titleWithoutMargin: {
+    ...smallBreakpointStyles.title,
+    fontSize: 20,
+    lineHeight: 20,
+    marginBottom: 0
   },
   titleWrapper: {
     flexDirection: "row",
