@@ -1,3 +1,4 @@
+/* eslint-disable react/require-default-props */
 import React, { Fragment } from "react";
 import { View } from "react-native";
 import { editionBreakpoints } from "@times-components/styleguide";
@@ -8,7 +9,8 @@ import HorizontalLayout from "../horizontallayout";
 import VerticalLayout from "../verticallayout";
 
 const SecondaryFourSlice = ({
-  breakpoint,
+  isConsecutive = false,
+  breakpoint = editionBreakpoints.small,
   secondary1,
   secondary2,
   secondary3,
@@ -40,33 +42,50 @@ const SecondaryFourSlice = ({
 
   return (
     <View style={styles.container}>
-      <HorizontalLayout
-        containerStyle={styles.columnsContainer}
-        tiles={[
-          { style: styles.columnItem, tile: secondary1 },
-          { style: styles.columnItem, tile: secondary2 }
-        ]}
-        colSeparatorStyle={styles.colSeparatorStyle}
-      />
-      <ItemColSeparator style={styles.colSeparatorStyle} />
-      <VerticalLayout
-        style={styles.rowsContainer}
-        tiles={[secondary3, secondary4]}
-      />
+      {isConsecutive ? (
+        <Fragment>
+          <VerticalLayout
+            style={styles.rowsContainer}
+            tiles={[secondary3, secondary4]}
+          />
+          <ItemColSeparator style={styles.colSeparatorStyle} />
+          <HorizontalLayout
+            containerStyle={styles.columnsContainer}
+            tiles={[
+              { style: styles.columnItem, tile: secondary1 },
+              { style: styles.columnItem, tile: secondary2 }
+            ]}
+            colSeparatorStyle={styles.colSeparatorStyle}
+          />
+        </Fragment>
+      ) : (
+        <Fragment>
+          <HorizontalLayout
+            containerStyle={styles.columnsContainer}
+            tiles={[
+              { style: styles.columnItem, tile: secondary1 },
+              { style: styles.columnItem, tile: secondary2 }
+            ]}
+            colSeparatorStyle={styles.colSeparatorStyle}
+          />
+          <ItemColSeparator style={styles.colSeparatorStyle} />
+          <VerticalLayout
+            style={styles.rowsContainer}
+            tiles={[secondary3, secondary4]}
+          />
+        </Fragment>
+      )}
     </View>
   );
 };
 
 SecondaryFourSlice.propTypes = {
+  isConsecutive: PropTypes.bool,
   breakpoint: PropTypes.string,
   secondary1: PropTypes.node.isRequired,
   secondary2: PropTypes.node.isRequired,
   secondary3: PropTypes.node.isRequired,
   secondary4: PropTypes.node.isRequired
-};
-
-SecondaryFourSlice.defaultProps = {
-  breakpoint: editionBreakpoints.small
 };
 
 export default SecondaryFourSlice;

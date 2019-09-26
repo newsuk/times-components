@@ -38,10 +38,44 @@ export default renderComponent => {
       }
     },
     {
+      name: "secondary four - medium - with isConsecutive",
+      test() {
+        const output = renderComponent(
+          <SecondaryFourSlice
+            breakpoint={editionBreakpoints.medium}
+            isConsecutive
+            secondary1={createItem("secondary-1")}
+            secondary2={createItem("secondary-2")}
+            secondary3={createItem("secondary-3")}
+            secondary4={createItem("secondary-4")}
+          />
+        );
+
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
       name: "secondary four - wide",
       test() {
         const output = renderComponent(
           <SecondaryFourSlice
+            breakpoint={editionBreakpoints.wide}
+            secondary1={createItem("secondary-1")}
+            secondary2={createItem("secondary-2")}
+            secondary3={createItem("secondary-3")}
+            secondary4={createItem("secondary-4")}
+          />
+        );
+
+        expect(output).toMatchSnapshot();
+      }
+    },
+    {
+      name: "secondary four - wide - with isConsecutive",
+      test() {
+        const output = renderComponent(
+          <SecondaryFourSlice
+            isConsecutive
             breakpoint={editionBreakpoints.wide}
             secondary1={createItem("secondary-1")}
             secondary2={createItem("secondary-2")}

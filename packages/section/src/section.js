@@ -9,7 +9,10 @@ import PuzzleBar from "./puzzle-bar";
 import MagazineCover from "./magazine-cover";
 import Slice from "./slice";
 import styleFactory from "./styles";
-import { buildSliceData, createPuzzleData } from "./utils";
+import {
+  prepareSlicesForRender,
+  createPuzzleData
+} from "./utils";
 
 const styles = styleFactory();
 
@@ -102,7 +105,7 @@ class Section extends Component {
           {({ isTablet, editionBreakpoint }) => {
             const data = isPuzzle
               ? createPuzzleData(slices, editionBreakpoint)
-              : buildSliceData(slices);
+              : prepareSlicesForRender(slices);
 
             if (slices) receiveChildList(data);
 
