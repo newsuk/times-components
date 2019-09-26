@@ -1211,7 +1211,7 @@ exports[`9. secondary four - medium 1`] = `
 exports[`10. secondary one and columnist - medium 1`] = `
 <style>
 .IS1 {
-  width: 67%;
+  width: 66.7%;
 }
 
 .IS2 {
@@ -1231,7 +1231,7 @@ exports[`10. secondary one and columnist - medium 1`] = `
 .IS3 {
   padding-top: 5px;
   padding-bottom: 5px;
-  width: 33%;
+  width: 33.3%;
 }
 
 .IS4 {
@@ -3563,7 +3563,7 @@ exports[`25. secondary four - wide 1`] = `
 exports[`26. secondary one and columnist - wide 1`] = `
 <style>
 .IS1 {
-  width: 67%;
+  width: 66.7%;
 }
 
 .IS2 {
@@ -3583,7 +3583,7 @@ exports[`26. secondary one and columnist - wide 1`] = `
 .IS3 {
   padding-top: 5px;
   padding-bottom: 5px;
-  width: 33%;
+  width: 33.3%;
 }
 
 .IS4 {
@@ -5915,7 +5915,7 @@ exports[`41. secondary four - huge 1`] = `
 exports[`42. secondary one and columnist - huge 1`] = `
 <style>
 .IS1 {
-  width: 67%;
+  width: 66.7%;
 }
 
 .IS2 {
@@ -5935,7 +5935,7 @@ exports[`42. secondary one and columnist - huge 1`] = `
 .IS3 {
   padding-top: 5px;
   padding-bottom: 5px;
-  width: 33%;
+  width: 33.3%;
 }
 
 .IS4 {

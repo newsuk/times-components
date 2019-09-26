@@ -50,11 +50,20 @@ const wideBreakpointStyles = {
   }
 };
 
+const hugeBreakpointStyles = {
+  ...wideBreakpointStyles,
+  headline: {
+    ...wideBreakpointStyles.headline,
+    fontSize: 35,
+    lineHeight: 35
+  }
+};
+
 const stylesResolver = {
   [editionBreakpoints.small]: smallBreakpointStyles,
   [editionBreakpoints.medium]: mediumBreakpointStyles,
   [editionBreakpoints.wide]: wideBreakpointStyles,
-  [editionBreakpoints.huge]: wideBreakpointStyles
+  [editionBreakpoints.huge]: hugeBreakpointStyles
 };
 
 export default breakpoint => stylesResolver[breakpoint];

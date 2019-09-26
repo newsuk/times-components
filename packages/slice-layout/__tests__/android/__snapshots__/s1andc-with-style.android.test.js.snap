@@ -34,7 +34,7 @@ exports[`2. secondary one and columnist - medium 1`] = `
   <View
     style={
       Object {
-        "width": "73%",
+        "width": "75%",
       }
     }
   >
@@ -56,7 +56,7 @@ exports[`2. secondary one and columnist - medium 1`] = `
     style={
       Object {
         "paddingVertical": 5,
-        "width": "27%",
+        "width": "25%",
       }
     }
   >

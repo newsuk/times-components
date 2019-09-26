@@ -4,14 +4,7 @@ import {
   editionBreakpoints
 } from "@times-components/styleguide";
 
-const headlineFontSizeResolver = {
-  [editionBreakpoints.huge]: 45,
-  [editionBreakpoints.wide]: 40,
-  [editionBreakpoints.small]: 30,
-  [editionBreakpoints.medium]: 30
-};
-
-export default breakpoint => ({
+const mediumBreakpointStyles = {
   container: {
     flex: 1,
     flexDirection: "row",
@@ -20,15 +13,55 @@ export default breakpoint => ({
   },
   headline: {
     fontFamily: fonts.headline,
-    fontSize: headlineFontSizeResolver[breakpoint],
-    lineHeight: headlineFontSizeResolver[breakpoint],
+    fontSize: 30,
+    lineHeight: 30,
     marginBottom: spacing(2)
   },
+  imageContainer: {
+    flex: 0.44
+  },
+  summaryContainer: {
+    flex: 0.56,
+    paddingRight: spacing(4)
+  }
+};
+
+const wideBreakpointStyles = {
+  ...mediumBreakpointStyles,
   imageContainer: {
     flex: 1
   },
   summaryContainer: {
     flex: 1,
-    paddingLeft: spacing(4)
+    paddingRight: spacing(4)
+  },
+  headline: {
+    ...mediumBreakpointStyles.headline,
+    fontSize: 40,
+    lineHeight: 40
   }
-});
+};
+
+const hugeBreakpointStyles = {
+  ...mediumBreakpointStyles,
+  imageContainer: {
+    flex: 0.26
+  },
+  summaryContainer: {
+    flex: 0.74,
+    paddingRight: spacing(4)
+  },
+  headline: {
+    ...mediumBreakpointStyles.headline,
+    fontSize: 45,
+    lineHeight: 45
+  }
+};
+
+const stylesResolver = {
+  [editionBreakpoints.medium]: mediumBreakpointStyles,
+  [editionBreakpoints.wide]: wideBreakpointStyles,
+  [editionBreakpoints.huge]: hugeBreakpointStyles
+};
+
+export default breakpoint => stylesResolver[breakpoint];

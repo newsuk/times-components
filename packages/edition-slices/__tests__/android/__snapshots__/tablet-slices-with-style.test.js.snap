@@ -721,7 +721,7 @@ exports[`10. secondary one and columnist - medium 1`] = `
     <View
       style={
         Object {
-          "width": "73%",
+          "width": "75%",
         }
       }
     >
@@ -741,7 +741,7 @@ exports[`10. secondary one and columnist - medium 1`] = `
       style={
         Object {
           "paddingVertical": 5,
-          "width": "27%",
+          "width": "25%",
         }
       }
     >
@@ -2111,7 +2111,7 @@ exports[`26. secondary one and columnist - wide 1`] = `
     <View
       style={
         Object {
-          "width": "67%",
+          "width": "66.7%",
         }
       }
     >
@@ -2131,7 +2131,7 @@ exports[`26. secondary one and columnist - wide 1`] = `
       style={
         Object {
           "paddingVertical": 5,
-          "width": "33%",
+          "width": "33.3%",
         }
       }
     >
@@ -3565,7 +3565,7 @@ exports[`42. secondary one and columnist - huge 1`] = `
       <View
         style={
           Object {
-            "width": "67%",
+            "width": "58%",
           }
         }
       >
@@ -3585,7 +3585,7 @@ exports[`42. secondary one and columnist - huge 1`] = `
         style={
           Object {
             "paddingVertical": 5,
-            "width": "33%",
+            "width": "42%",
           }
         }
       >
