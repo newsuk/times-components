@@ -411,7 +411,7 @@ Object {
     "linkUrl": "https://link.io",
     "pageName": "this-is-slug-2k629tpvh",
     "publishedTime": "2015-03-13T18:54:58.000Z",
-    "referralUrl": "",
+    "referralUrl": "referralUrl.com",
     "section": "Some Section",
     "template": "mainstandard",
   },

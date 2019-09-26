@@ -14,7 +14,7 @@ export default Component =>
       label: get(data, "label", ""),
       pageName: `${get(data, "slug", "")}-${get(data, "shortIdentifier", "")}`,
       publishedTime: get(data, "publishedTime", ""),
-      referralUrl,
+      referralUrl: referralUrl || get(data, "referralUrl", ""),
       section: pageSection || get(data, "section", ""),
       template: get(data, "template", "Default")
     }),
