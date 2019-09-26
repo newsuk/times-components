@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.91.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.91.0...@times-components/edition-slices@0.91.1) (2019-09-26)
+
+
+### Bug Fixes
+
+* REPLAT-8454 fix slow scrolling on magazine sections ([#2278](https://github.com/newsuk/times-components/issues/2278)) ([2ac2ea2](https://github.com/newsuk/times-components/commit/2ac2ea2))
+
+
+
+
+
 # [0.91.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.90.0...@times-components/edition-slices@0.91.0) (2019-09-26)
 
 
