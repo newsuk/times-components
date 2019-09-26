@@ -13,6 +13,7 @@ exports[`tile s huge 1`] = `
       Object {
         "alignItems": "center",
         "flexDirection": "row",
+        "marginBottom": 10,
       }
     }
   >
@@ -23,7 +24,7 @@ exports[`tile s huge 1`] = `
           "fontFamily": "TimesModern-Bold",
           "fontSize": 20,
           "lineHeight": 20,
-          "marginBottom": 10,
+          "marginBottom": 0,
         }
       }
     >
@@ -110,6 +111,7 @@ exports[`tile s medium 1`] = `
       Object {
         "alignItems": "center",
         "flexDirection": "row",
+        "marginBottom": 5,
       }
     }
   >
@@ -120,7 +122,7 @@ exports[`tile s medium 1`] = `
           "fontFamily": "TimesModern-Bold",
           "fontSize": 20,
           "lineHeight": 20,
-          "marginBottom": 10,
+          "marginBottom": 5,
         }
       }
     >
@@ -215,7 +217,6 @@ exports[`tile s no byline 1`] = `
           "color": "#1D1D1B",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 22,
-          "marginBottom": 15,
         }
       }
     >
@@ -296,7 +297,6 @@ exports[`tile s small 1`] = `
           "color": "#1D1D1B",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 22,
-          "marginBottom": 15,
         }
       }
     >
@@ -383,6 +383,7 @@ exports[`tile s wide 1`] = `
       Object {
         "alignItems": "center",
         "flexDirection": "row",
+        "marginBottom": 10,
       }
     }
   >
@@ -393,7 +394,106 @@ exports[`tile s wide 1`] = `
           "fontFamily": "TimesModern-Bold",
           "fontSize": 20,
           "lineHeight": 20,
-          "marginBottom": 10,
+          "marginBottom": 0,
+        }
+      }
+    >
+      Nature notes
+    </Text>
+  </View>
+  <Text
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "TimesDigitalW04-Regular",
+        "fontSize": 14,
+        "lineHeight": 20,
+      }
+    }
+  >
+    <Text>
+      <Text>
+        Rick Astley
+      </Text>
+      , singer-songwriter, 
+      <Text
+        style={
+          Object {
+            "fontStyle": "italic",
+          }
+        }
+      >
+        Never Gonna Give You Up 
+      </Text>
+      (1987), 53; 
+      <Text>
+        Mike Batt
+      </Text>
+      , composer, songwriter, 
+      <Text
+        style={
+          Object {
+            "fontStyle": "italic",
+          }
+        }
+      >
+        Wombling Free 
+      </Text>
+      (1978), 
+      <Text
+        style={
+          Object {
+            "fontStyle": "italic",
+          }
+        }
+      >
+        Bright Eyes 
+      </Text>
+    </Text>
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "#696969",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 12,
+        "marginTop": 10,
+      }
+    }
+  >
+    <Text>
+      Libby Purves
+    </Text>
+  </Text>
+</View>
+`;
+
+exports[`tile s with logo for medium breakpoint 1`] = `
+<View
+  style={
+    Object {
+      "padding": 15,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "marginBottom": 5,
+      }
+    }
+  >
+    LOGO
+    <Text
+      style={
+        Object {
+          "color": "#1D1D1B",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 20,
+          "lineHeight": 20,
+          "marginBottom": 0,
         }
       }
     >

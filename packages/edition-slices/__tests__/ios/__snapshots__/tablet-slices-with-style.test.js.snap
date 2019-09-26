@@ -80,8 +80,8 @@ exports[`2. daily universal register - medium 1`] = `
       style={
         Object {
           "height": 60,
+          "marginBottom": 10,
           "marginTop": 15,
-          "marginVertical": 10,
           "width": 237,
         }
       }
@@ -92,6 +92,7 @@ exports[`2. daily universal register - medium 1`] = `
           "color": "#850029",
           "fontFamily": "TimesDigitalW04",
           "fontSize": 15,
+          "lineHeight": 21,
           "marginBottom": 15,
         }
       }
@@ -1459,8 +1460,8 @@ exports[`18. daily universal register - wide 1`] = `
       style={
         Object {
           "height": 60,
+          "marginBottom": 10,
           "marginTop": 15,
-          "marginVertical": 10,
           "width": 237,
         }
       }
@@ -1471,6 +1472,7 @@ exports[`18. daily universal register - wide 1`] = `
           "color": "#850029",
           "fontFamily": "TimesDigitalW04",
           "fontSize": 15,
+          "lineHeight": 21,
           "marginBottom": 15,
         }
       }
@@ -2833,8 +2835,8 @@ exports[`34. daily universal register - huge 1`] = `
         style={
           Object {
             "height": 60,
+            "marginBottom": 10,
             "marginTop": 15,
-            "marginVertical": 10,
             "width": 237,
           }
         }
@@ -2845,6 +2847,7 @@ exports[`34. daily universal register - huge 1`] = `
             "color": "#850029",
             "fontFamily": "TimesDigitalW04",
             "fontSize": 15,
+            "lineHeight": 21,
             "marginBottom": 15,
           }
         }

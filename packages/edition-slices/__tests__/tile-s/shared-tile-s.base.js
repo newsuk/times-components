@@ -1,3 +1,5 @@
+import React from "react";
+import TestRenderer from "react-test-renderer";
 import "../mocks-tiles";
 import { editionBreakpoints } from "@times-components/styleguide";
 import { testTile, dailyRegisterItem } from "../shared-tile-utils";
@@ -24,6 +26,20 @@ export default () => {
     it("no byline", () => {
       const { byline, ...dailyRegisterItemNoByline } = dailyRegisterItem;
       testTile(TileS, undefined, dailyRegisterItemNoByline);
+    });
+
+    it("with logo for medium breakpoint", () => {
+      const Logo = () => "LOGO";
+
+      const output = TestRenderer.create(
+        <TileS
+          onPress={() => {}}
+          tile={dailyRegisterItem}
+          breakpoint={editionBreakpoints.medium}
+          logo={<Logo />}
+        />
+      );
+      expect(output).toMatchSnapshot();
     });
   });
 };

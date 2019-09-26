@@ -57,18 +57,18 @@ const mediumBreakpointStyles = {
   mastheadLogo: {
     width: 237,
     height: 60,
-    marginVertical: spacing(2),
+    marginBottom: spacing(2),
     marginTop: spacing(3)
   },
   imageWrapper: {
     width: 60,
     height: 45,
-    marginRight: spacing(2),
-    marginBottom: spacing(1)
+    marginRight: spacing(2)
   },
   title: {
     ...smallBreakpointStyles.title,
     fontSize: 15,
+    lineHeight: 21,
     marginBottom: spacing(3)
   }
 };
@@ -81,8 +81,7 @@ const wideBreakpointStyle = {
   },
   imageWrapper: {
     ...mediumBreakpointStyles.imageWrapper,
-    marginRight: spacing(3),
-    marginBottom: spacing(2)
+    marginRight: spacing(3)
   }
 };
 

@@ -7,7 +7,7 @@ exports[`tile s huge 1`] = `
   font-family: TimesModern-Bold;
   font-size: 20px;
   line-height: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .IS2 {
@@ -16,6 +16,7 @@ exports[`tile s huge 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  margin-bottom: 10px;
   -ms-flex-align: center;
   -webkit-box-align: center;
   -webkit-box-orient: horizontal;
@@ -98,7 +99,7 @@ exports[`tile s medium 1`] = `
   font-family: TimesModern-Bold;
   font-size: 20px;
   line-height: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .IS2 {
@@ -107,6 +108,7 @@ exports[`tile s medium 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  margin-bottom: 5px;
   -ms-flex-align: center;
   -webkit-box-align: center;
   -webkit-box-orient: horizontal;
@@ -188,7 +190,6 @@ exports[`tile s no byline 1`] = `
   color: rgba(29,29,27,1.00);
   font-family: TimesModern-Bold;
   font-size: 22px;
-  margin-bottom: 15px;
 }
 
 .IS2 {
@@ -256,7 +257,6 @@ exports[`tile s small 1`] = `
   color: rgba(29,29,27,1.00);
   font-family: TimesModern-Bold;
   font-size: 22px;
-  margin-bottom: 15px;
 }
 
 .IS2 {
@@ -339,7 +339,7 @@ exports[`tile s wide 1`] = `
   font-family: TimesModern-Bold;
   font-size: 20px;
   line-height: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .IS2 {
@@ -348,6 +348,7 @@ exports[`tile s wide 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  margin-bottom: 10px;
   -ms-flex-align: center;
   -webkit-box-align: center;
   -webkit-box-orient: horizontal;
@@ -382,6 +383,99 @@ exports[`tile s wide 1`] = `
   <div
     className="css-view-1dbjc4n IS2"
   >
+    <div
+      className="css-text-901oao IS1"
+    >
+      Nature notes
+    </div>
+  </div>
+  <div
+    className="css-text-901oao IS3"
+  >
+    <p>
+      <b>
+        Rick Astley
+      </b>
+      , singer-songwriter, 
+      <i>
+        Never Gonna Give You Up 
+      </i>
+      (1987), 53; 
+      <b>
+        Mike Batt
+      </b>
+      , composer, songwriter, 
+      <i>
+        Wombling Free 
+      </i>
+      (1978), 
+      <i>
+        Bright Eyes 
+      </i>
+    </p>
+  </div>
+  <div
+    className="css-text-901oao IS4"
+  >
+    <span>
+      Libby Purves
+    </span>
+  </div>
+</div>
+`;
+
+exports[`tile s with logo for medium breakpoint 1`] = `
+<style>
+.IS1 {
+  color: rgba(29,29,27,1.00);
+  font-family: TimesModern-Bold;
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 0px;
+}
+
+.IS2 {
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-bottom: 5px;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS3 {
+  color: rgba(105,105,105,1.00);
+  font-family: TimesDigitalW04-Regular;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.IS4 {
+  color: rgba(105,105,105,1.00);
+  font-family: GillSansMTStd-Medium;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.IS5 {
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
+</style>
+
+<div
+  className="css-view-1dbjc4n IS5"
+>
+  <div
+    className="css-view-1dbjc4n IS2"
+  >
+    LOGO
     <div
       className="css-text-901oao IS1"
     >
