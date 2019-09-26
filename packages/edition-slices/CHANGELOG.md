@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.91.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.90.0...@times-components/edition-slices@0.91.0) (2019-09-26)
+
+
+### Bug Fixes
+
+* (REPLAT-8560) secondary 1 and columnist rearrange ([#2311](https://github.com/newsuk/times-components/issues/2311)) ([bd9c228](https://github.com/newsuk/times-components/commit/bd9c228))
+
+
+### Features
+
+* daily register for 1366px ([#2302](https://github.com/newsuk/times-components/issues/2302)) ([0a82295](https://github.com/newsuk/times-components/commit/0a82295))
+
+
+
+
+
 # [0.90.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.89.0...@times-components/edition-slices@0.90.0) (2019-09-25)
 
 

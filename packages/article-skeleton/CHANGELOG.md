@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.14.18](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.14.17...@times-components/article-skeleton@1.14.18) (2019-09-26)
+
+
+### Bug Fixes
+
+* REPLAT-7797 fix referral url passing ([#2303](https://github.com/newsuk/times-components/issues/2303)) ([db3e0a0](https://github.com/newsuk/times-components/commit/db3e0a0))
+
+
+
+
+
 ## [1.14.17](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.14.16...@times-components/article-skeleton@1.14.17) (2019-09-24)
 
 

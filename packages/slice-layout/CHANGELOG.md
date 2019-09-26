@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.41.3](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.41.2...@times-components/slice-layout@0.41.3) (2019-09-26)
+
+
+### Bug Fixes
+
+* (REPLAT-8560) secondary 1 and columnist rearrange ([#2311](https://github.com/newsuk/times-components/issues/2311)) ([bd9c228](https://github.com/newsuk/times-components/commit/bd9c228))
+
+
+
+
+
 ## [0.41.2](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.41.1...@times-components/slice-layout@0.41.2) (2019-09-24)
 
 
