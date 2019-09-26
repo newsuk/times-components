@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`1. no child elements 1`] = `
+<div>
+  <div />
+</div>
+`;
+
+exports[`2. a single child element 1`] = `
+<div>
+  <div>
+    <div>
+      <div>
+        <div>
+          standard-1
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`3. two child elements 1`] = `
+<div>
+  <div>
+    <div>
+      <div>
+        <test
+          tile={
+            Object {
+              "article": Object {
+                "id": "testId",
+              },
+            }
+          }
+        />
+        <div />
+      </div>
+    </div>
+    <div>
+      <div>
+        <div>
+          standard-1
+        </div>
+        <div />
+      </div>
+    </div>
+    <div>
+      <div>
+        <div>
+          standard-2
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`4. three child elements 1`] = `
+<div>
+  <div>
+    <div>
+      <div>
+        <div>
+          standard-1
+        </div>
+        <div />
+      </div>
+    </div>
+    <div>
+      <div>
+        <div>
+          standard-2
+        </div>
+        <div />
+      </div>
+    </div>
+    <div>
+      <div>
+        <div>
+          standard-3
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
