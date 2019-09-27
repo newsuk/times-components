@@ -21,7 +21,8 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     mapTopicToAdConfig,
     page,
     pageSize,
-    topicSlug
+    topicSlug,
+    testSwitches
   } = data;
 
   return React.createElement(
@@ -59,7 +60,8 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
               pageSize,
               refetch,
               slug: topicSlug,
-              topic
+              topic,
+              testSwitches
             })
           )
       )

@@ -23,7 +23,8 @@ const Topic = ({
   onPrev,
   refetch,
   slug,
-  topic
+  topic,
+  testSwitches
 }) => {
   const emptyStateMessage =
     "Unfortunately, there are no articles relating to this topic";
@@ -44,6 +45,7 @@ const Topic = ({
       description={description}
       isLoading={isHeaderLoading}
       name={name}
+      testSwitches={testSwitches}
     />
   );
 

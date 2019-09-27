@@ -11,7 +11,29 @@ import {
 } from "./styles/responsive";
 import styles from "./styles";
 
-const TopicHead = ({ name, description, isLoading }) => {
+function getTopicDescription(oldDescription = [], switches) {
+  const options = {
+    "1": [],
+    "2": oldDescription,
+    defaut: oldDescription
+  };
+
+  const variant = switches["hide-topic-description"];
+  if (variant) {
+    return options[variant];
+  }
+
+  return options.defaut;
+}
+
+const TopicHead = ({
+  name,
+  description: oldDescription,
+  isLoading,
+  testSwitches
+}) => {
+  const description = getTopicDescription(oldDescription, testSwitches);
+
   const Container = description.length
     ? HeadContainerWithDescription
     : HeadContainer;

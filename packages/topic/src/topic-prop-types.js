@@ -6,9 +6,13 @@ import {
 
 export const propTypes = {
   ...basePropTypes,
-  onArticlePress: PropTypes.func.isRequired
+  onArticlePress: PropTypes.func.isRequired,
+  testSwitches: PropTypes.shape({
+    [PropTypes.string]: PropTypes.string
+  }).isRequired
 };
 
 export const defaultProps = {
-  ...baseDefaultProps
+  ...baseDefaultProps,
+  testSwitches: {}
 };
