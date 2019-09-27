@@ -2,7 +2,12 @@
 import memoizeOne from "memoize-one";
 import { editionBreakpoints } from "@times-components/styleguide";
 
+const composeSliceBuilders = (firstBuilder, secondBuilder) => slices =>
+  secondBuilder(firstBuilder(slices));
+
 const withIgnoredSeperator = slice => ({ ...slice, ignoreSeparator: true });
+
+const withIsConsecutive = slice => ({ ...slice, isConsecutive: true });
 
 const shouldIgnoreSeperator = ({ name }) =>
   name === "LeadersSlice" || name === "DailyUniversalRegister";
@@ -44,6 +49,24 @@ const buildSliceData = memoizeOne(data =>
   }, [])
 );
 
+const consecutiveItemsFlagger = memoizeOne(slices =>
+  slices.reduce(
+    (acc, curr, i) =>
+      acc.length > 0 &&
+      curr.name &&
+      acc[i - 1].name &&
+      curr.name === acc[i - 1].name
+        ? [...acc, withIsConsecutive(curr)]
+        : [...acc, curr],
+    []
+  )
+);
+
+const prepareSlicesForRender = composeSliceBuilders(
+  buildSliceData,
+  consecutiveItemsFlagger
+);
+
 const getRatio = ratio => {
   const ratios = ratio.split(":").map(num => parseInt(num, 10));
 
@@ -75,6 +98,9 @@ const createPuzzleData = (puzzles, editionBreakpoint) => {
 };
 
 export {
+  composeSliceBuilders,
+  prepareSlicesForRender,
+  consecutiveItemsFlagger,
   buildSliceData,
   getImage,
   createPuzzleData,

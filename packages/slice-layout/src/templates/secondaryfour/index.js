@@ -1,3 +1,4 @@
+/* eslint-disable react/require-default-props */
 import React, { Fragment } from "react";
 import { View } from "react-native";
 import { editionBreakpoints } from "@times-components/styleguide";
@@ -8,13 +9,18 @@ import HorizontalLayout from "../horizontallayout";
 import VerticalLayout from "../verticallayout";
 
 const SecondaryFourSlice = ({
-  breakpoint,
+  isConsecutive = false,
+  breakpoint = editionBreakpoints.small,
   secondary1,
   secondary2,
   secondary3,
   secondary4
 }) => {
   const styles = styleFactory(breakpoint);
+  const containerStyles =
+    isConsecutive && breakpoint !== editionBreakpoints.small
+      ? { ...styles.container, flexDirection: "row-reverse" }
+      : styles.container;
 
   if (breakpoint === editionBreakpoints.small) {
     return (
@@ -39,7 +45,7 @@ const SecondaryFourSlice = ({
   }
 
   return (
-    <View style={styles.container}>
+    <View style={containerStyles}>
       <HorizontalLayout
         containerStyle={styles.columnsContainer}
         tiles={[
@@ -58,15 +64,12 @@ const SecondaryFourSlice = ({
 };
 
 SecondaryFourSlice.propTypes = {
+  isConsecutive: PropTypes.bool,
   breakpoint: PropTypes.string,
   secondary1: PropTypes.node.isRequired,
   secondary2: PropTypes.node.isRequired,
   secondary3: PropTypes.node.isRequired,
   secondary4: PropTypes.node.isRequired
-};
-
-SecondaryFourSlice.defaultProps = {
-  breakpoint: editionBreakpoints.small
 };
 
 export default SecondaryFourSlice;

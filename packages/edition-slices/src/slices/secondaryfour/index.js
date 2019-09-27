@@ -40,12 +40,13 @@ class SecondaryFour extends Component {
   renderMedium(breakpoint) {
     const {
       onPress,
-      slice: { secondary1, secondary2, secondary3, secondary4 }
+      slice: { isConsecutive, secondary1, secondary2, secondary3, secondary4 }
     } = this.props;
 
     return (
       <SecondaryFourSlice
         breakpoint={breakpoint}
+        isConsecutive={isConsecutive}
         secondary1={
           <TileAR
             breakpoint={breakpoint}
@@ -97,6 +98,7 @@ class SecondaryFour extends Component {
 SecondaryFour.propTypes = {
   onPress: PropTypes.func.isRequired,
   slice: PropTypes.shape({
+    isConsecutive: PropTypes.bool,
     secondary1: PropTypes.shape({}).isRequired,
     secondary2: PropTypes.shape({}).isRequired,
     secondary3: PropTypes.shape({}).isRequired,

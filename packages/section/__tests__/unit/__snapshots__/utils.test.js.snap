@@ -74,6 +74,61 @@ Array [
 ]
 `;
 
+exports[`consecutiveItemsFlagger should add isConsecutive property on the second consecutive slice 1`] = `
+Array [
+  Object {
+    "id": "a",
+    "name": "LeadersSlice",
+  },
+  Object {
+    "id": "b",
+    "name": "DailyUniversalRegister",
+  },
+  Object {
+    "id": "c",
+    "name": "OtherSlice",
+  },
+  Object {
+    "id": "d",
+    "name": "LeadersSlice",
+  },
+  Object {
+    "id": "e",
+    "name": "DailyUniversalRegister",
+  },
+  Object {
+    "id": "f",
+    "name": "SecondaryFourSlice",
+  },
+  Object {
+    "id": "g",
+    "isConsecutive": true,
+    "name": "SecondaryFourSlice",
+  },
+  Object {
+    "id": "h",
+    "name": "LeadersSlice",
+  },
+  Object {
+    "id": "i",
+    "name": "OtherSlice",
+  },
+  Object {
+    "id": "j",
+    "name": "SecondaryFourSlice",
+  },
+  Object {
+    "id": "k",
+    "name": "DailyUniversalRegister",
+  },
+  Object {
+    "id": "l",
+    "isConsecutive": true,
+    "name": "DailyUniversalRegister",
+  },
+]
+`;
+
 exports[`createPuzzleData should create puzzle data and return 2 rows of puzzles 1`] = `
 Array [
   Object {
