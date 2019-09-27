@@ -98,6 +98,7 @@ const createPuzzleData = (puzzles, editionBreakpoint) => {
 };
 
 export {
+  composeSliceBuilders,
   prepareSlicesForRender,
   consecutiveItemsFlagger,
   buildSliceData,

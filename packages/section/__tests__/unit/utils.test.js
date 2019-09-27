@@ -6,7 +6,8 @@ import {
   consecutiveItemsFlagger,
   getImage,
   filterPuzzles,
-  createPuzzleData
+  createPuzzleData,
+  composeSliceBuilders
 } from "../../src/utils";
 
 describe("splitPuzzlesBySlices", () => {
@@ -39,6 +40,55 @@ describe("splitPuzzlesBySlices", () => {
     const chunked = splitPuzzlesBySlices(puzzles);
 
     expect(chunked.length).toBe(0);
+  });
+});
+
+describe("composeSliceBuilders", () => {
+  it("should invoke the two passed functions", () => {
+    const builderOne = jest.fn();
+    const builderTwo = jest.fn();
+    const originalData = [
+      { id: "a", name: "LeadersSlice" },
+      { id: "b", name: "DailyUniversalRegister" },
+      { id: "c", name: "OtherSlice" },
+      { id: "d", name: "LeadersSlice" },
+      { id: "e", name: "DailyUniversalRegister" },
+      { id: "f", name: "OtherSlice" },
+      { id: "g", name: "OtherSlice" },
+      { id: "h", name: "LeadersSlice" },
+      { id: "i", name: "OtherSlice" },
+      { id: "j", name: "OtherSlice" },
+      { id: "k", name: "OtherSlice" },
+      { id: "l", name: "DailyUniversalRegister" }
+    ];
+
+    const buildData = composeSliceBuilders(builderOne, builderTwo);
+    buildData(originalData);
+    expect(builderOne).toHaveBeenCalled();
+    expect(builderTwo).toHaveBeenCalled();
+  });
+
+  it("should invoke the second function with the result of the first being applied", () => {
+    const builderOne = jest.fn();
+    const builderTwo = jest.fn();
+    const originalData = [
+      { id: "a", name: "LeadersSlice" },
+      { id: "b", name: "DailyUniversalRegister" },
+      { id: "c", name: "OtherSlice" },
+      { id: "d", name: "LeadersSlice" },
+      { id: "e", name: "DailyUniversalRegister" },
+      { id: "f", name: "OtherSlice" },
+      { id: "g", name: "OtherSlice" },
+      { id: "h", name: "LeadersSlice" },
+      { id: "i", name: "OtherSlice" },
+      { id: "j", name: "OtherSlice" },
+      { id: "k", name: "OtherSlice" },
+      { id: "l", name: "DailyUniversalRegister" }
+    ];
+
+    const buildData = composeSliceBuilders(builderOne, builderTwo);
+    buildData(originalData);
+    expect(builderTwo).toHaveBeenCalledWith(builderOne(originalData));
   });
 });
 
