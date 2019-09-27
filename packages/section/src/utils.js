@@ -2,11 +2,12 @@
 import memoizeOne from "memoize-one";
 import { editionBreakpoints } from "@times-components/styleguide";
 
-const composeSliceBuilders = (firstBuilder, secondBuilder) => slices => secondBuilder(firstBuilder(slices));
+const composeSliceBuilders = (firstBuilder, secondBuilder) => slices =>
+  secondBuilder(firstBuilder(slices));
 
 const withIgnoredSeperator = slice => ({ ...slice, ignoreSeparator: true });
 
-const withIsConsecutive = slice => ({...slice, isConsecutive: true});
+const withIsConsecutive = slice => ({ ...slice, isConsecutive: true });
 
 const shouldIgnoreSeperator = ({ name }) =>
   name === "LeadersSlice" || name === "DailyUniversalRegister";
@@ -61,7 +62,10 @@ const consecutiveItemsFlagger = memoizeOne(slices =>
   )
 );
 
-const prepareSlicesForRender = composeSliceBuilders(buildSliceData, consecutiveItemsFlagger);
+const prepareSlicesForRender = composeSliceBuilders(
+  buildSliceData,
+  consecutiveItemsFlagger
+);
 
 const getRatio = ratio => {
   const ratios = ratio.split(":").map(num => parseInt(num, 10));

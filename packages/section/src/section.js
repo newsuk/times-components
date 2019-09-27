@@ -9,10 +9,7 @@ import PuzzleBar from "./puzzle-bar";
 import MagazineCover from "./magazine-cover";
 import Slice from "./slice";
 import styleFactory from "./styles";
-import {
-  prepareSlicesForRender,
-  createPuzzleData
-} from "./utils";
+import { prepareSlicesForRender, createPuzzleData } from "./utils";
 
 const styles = styleFactory();
 
