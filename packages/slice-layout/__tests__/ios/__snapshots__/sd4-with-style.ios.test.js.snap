@@ -191,46 +191,11 @@ exports[`3. secondary four - medium - with isconsecutive 1`] = `
   style={
     Object {
       "flex": 1,
-      "flexDirection": "row",
+      "flexDirection": "row-reverse",
       "marginHorizontal": 20,
     }
   }
 >
-  <View
-    style={
-      Object {
-        "flex": 1,
-        "paddingVertical": 5,
-      }
-    }
-  >
-    <Text>
-      secondary-3
-    </Text>
-    <View
-      style={
-        Object {
-          "borderBottomWidth": 1,
-          "borderColor": "#DBDBDB",
-          "borderStyle": "solid",
-          "marginHorizontal": 10,
-        }
-      }
-    />
-    <Text>
-      secondary-4
-    </Text>
-  </View>
-  <View
-    style={
-      Object {
-        "borderColor": "#DBDBDB",
-        "borderRightWidth": 1,
-        "borderStyle": "solid",
-        "marginVertical": 15,
-      }
-    }
-  />
   <View
     style={
       Object {
@@ -271,6 +236,41 @@ exports[`3. secondary four - medium - with isconsecutive 1`] = `
         secondary-2
       </Text>
     </View>
+  </View>
+  <View
+    style={
+      Object {
+        "borderColor": "#DBDBDB",
+        "borderRightWidth": 1,
+        "borderStyle": "solid",
+        "marginVertical": 15,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "paddingVertical": 5,
+      }
+    }
+  >
+    <Text>
+      secondary-3
+    </Text>
+    <View
+      style={
+        Object {
+          "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
+          "borderStyle": "solid",
+          "marginHorizontal": 10,
+        }
+      }
+    />
+    <Text>
+      secondary-4
+    </Text>
   </View>
 </View>
 `;
@@ -369,46 +369,11 @@ exports[`5. secondary four - wide - with isconsecutive 1`] = `
   style={
     Object {
       "flex": 1,
-      "flexDirection": "row",
+      "flexDirection": "row-reverse",
       "marginHorizontal": 10,
     }
   }
 >
-  <View
-    style={
-      Object {
-        "flex": 1,
-        "paddingVertical": 5,
-      }
-    }
-  >
-    <Text>
-      secondary-3
-    </Text>
-    <View
-      style={
-        Object {
-          "borderBottomWidth": 1,
-          "borderColor": "#DBDBDB",
-          "borderStyle": "solid",
-          "marginHorizontal": 10,
-        }
-      }
-    />
-    <Text>
-      secondary-4
-    </Text>
-  </View>
-  <View
-    style={
-      Object {
-        "borderColor": "#DBDBDB",
-        "borderRightWidth": 1,
-        "borderStyle": "solid",
-        "marginVertical": 15,
-      }
-    }
-  />
   <View
     style={
       Object {
@@ -449,6 +414,41 @@ exports[`5. secondary four - wide - with isconsecutive 1`] = `
         secondary-2
       </Text>
     </View>
+  </View>
+  <View
+    style={
+      Object {
+        "borderColor": "#DBDBDB",
+        "borderRightWidth": 1,
+        "borderStyle": "solid",
+        "marginVertical": 15,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "flex": 1,
+        "paddingVertical": 5,
+      }
+    }
+  >
+    <Text>
+      secondary-3
+    </Text>
+    <View
+      style={
+        Object {
+          "borderBottomWidth": 1,
+          "borderColor": "#DBDBDB",
+          "borderStyle": "solid",
+          "marginHorizontal": 10,
+        }
+      }
+    />
+    <Text>
+      secondary-4
+    </Text>
   </View>
 </View>
 `;

@@ -17,6 +17,10 @@ const SecondaryFourSlice = ({
   secondary4
 }) => {
   const styles = styleFactory(breakpoint);
+  const containerStyles =
+    isConsecutive && breakpoint !== editionBreakpoints.small
+      ? { ...styles.container, flexDirection: "row-reverse" }
+      : styles.container;
 
   if (breakpoint === editionBreakpoints.small) {
     return (
@@ -41,40 +45,20 @@ const SecondaryFourSlice = ({
   }
 
   return (
-    <View style={styles.container}>
-      {isConsecutive ? (
-        <Fragment>
-          <VerticalLayout
-            style={styles.rowsContainer}
-            tiles={[secondary3, secondary4]}
-          />
-          <ItemColSeparator style={styles.colSeparatorStyle} />
-          <HorizontalLayout
-            containerStyle={styles.columnsContainer}
-            tiles={[
-              { style: styles.columnItem, tile: secondary1 },
-              { style: styles.columnItem, tile: secondary2 }
-            ]}
-            colSeparatorStyle={styles.colSeparatorStyle}
-          />
-        </Fragment>
-      ) : (
-        <Fragment>
-          <HorizontalLayout
-            containerStyle={styles.columnsContainer}
-            tiles={[
-              { style: styles.columnItem, tile: secondary1 },
-              { style: styles.columnItem, tile: secondary2 }
-            ]}
-            colSeparatorStyle={styles.colSeparatorStyle}
-          />
-          <ItemColSeparator style={styles.colSeparatorStyle} />
-          <VerticalLayout
-            style={styles.rowsContainer}
-            tiles={[secondary3, secondary4]}
-          />
-        </Fragment>
-      )}
+    <View style={containerStyles}>
+      <HorizontalLayout
+        containerStyle={styles.columnsContainer}
+        tiles={[
+          { style: styles.columnItem, tile: secondary1 },
+          { style: styles.columnItem, tile: secondary2 }
+        ]}
+        colSeparatorStyle={styles.colSeparatorStyle}
+      />
+      <ItemColSeparator style={styles.colSeparatorStyle} />
+      <VerticalLayout
+        style={styles.rowsContainer}
+        tiles={[secondary3, secondary4]}
+      />
     </View>
   );
 };

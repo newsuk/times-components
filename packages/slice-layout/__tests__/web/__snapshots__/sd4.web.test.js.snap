@@ -64,16 +64,6 @@ exports[`3. secondary four - medium - with isconsecutive 1`] = `
 <div>
   <div>
     <div>
-      secondary-3
-    </div>
-    <div />
-    <div>
-      secondary-4
-    </div>
-  </div>
-  <div />
-  <div>
-    <div>
       <div>
         secondary-1
       </div>
@@ -83,6 +73,16 @@ exports[`3. secondary four - medium - with isconsecutive 1`] = `
       <div>
         secondary-2
       </div>
+    </div>
+  </div>
+  <div />
+  <div>
+    <div>
+      secondary-3
+    </div>
+    <div />
+    <div>
+      secondary-4
     </div>
   </div>
 </div>
@@ -120,16 +120,6 @@ exports[`5. secondary four - wide - with isconsecutive 1`] = `
 <div>
   <div>
     <div>
-      secondary-3
-    </div>
-    <div />
-    <div>
-      secondary-4
-    </div>
-  </div>
-  <div />
-  <div>
-    <div>
       <div>
         secondary-1
       </div>
@@ -139,6 +129,16 @@ exports[`5. secondary four - wide - with isconsecutive 1`] = `
       <div>
         secondary-2
       </div>
+    </div>
+  </div>
+  <div />
+  <div>
+    <div>
+      secondary-3
+    </div>
+    <div />
+    <div>
+      secondary-4
     </div>
   </div>
 </div>
