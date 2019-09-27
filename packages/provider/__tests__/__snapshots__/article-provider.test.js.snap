@@ -172,6 +172,18 @@ Object {
       "red": 0,
     },
   },
+  "topics": Array [
+    Object {
+      "__typename": "Topic",
+      "name": "Islington",
+      "slug": "islington",
+    },
+    Object {
+      "__typename": "Topic",
+      "name": "Chelsea",
+      "slug": "chelsea",
+    },
+  ],
   "url": "https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s",
 }
 `;
