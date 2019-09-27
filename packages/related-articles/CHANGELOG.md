@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.2.0](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.1.48...@times-components/related-articles@6.2.0) (2019-09-27)
+
+
+### Features
+
+* REPLAT-8765 add more tracking ([#2306](https://github.com/newsuk/times-components/issues/2306)) ([1459a3e](https://github.com/newsuk/times-components/commit/1459a3e))
+
+
+
+
+
 ## [6.1.48](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.1.47...@times-components/related-articles@6.1.48) (2019-09-26)
 
 **Note:** Version bump only for package @times-components/related-articles

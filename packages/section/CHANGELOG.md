@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/newsuk/times-components/compare/@times-components/section@1.2.47...@times-components/section@1.3.0) (2019-09-27)
+
+
+### Features
+
+* REPLAT-8765 add more tracking ([#2306](https://github.com/newsuk/times-components/issues/2306)) ([1459a3e](https://github.com/newsuk/times-components/commit/1459a3e))
+* reverse tiles consecutive secondary4 slices ([#2312](https://github.com/newsuk/times-components/issues/2312)) ([e4e5393](https://github.com/newsuk/times-components/commit/e4e5393))
+
+
+
+
+
 ## [1.2.47](https://github.com/newsuk/times-components/compare/@times-components/section@1.2.46...@times-components/section@1.2.47) (2019-09-26)
 
 **Note:** Version bump only for package @times-components/section

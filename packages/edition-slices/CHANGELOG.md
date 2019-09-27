@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.92.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.91.1...@times-components/edition-slices@0.92.0) (2019-09-27)
+
+
+### Features
+
+* reverse tiles consecutive secondary4 slices ([#2312](https://github.com/newsuk/times-components/issues/2312)) ([e4e5393](https://github.com/newsuk/times-components/commit/e4e5393))
+
+
+
+
+
 ## [0.91.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.91.0...@times-components/edition-slices@0.91.1) (2019-09-26)
 
 
