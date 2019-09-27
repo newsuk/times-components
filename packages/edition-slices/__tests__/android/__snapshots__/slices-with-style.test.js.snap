@@ -494,53 +494,75 @@ Array [
 `;
 
 exports[`5. standard 1`] = `
-<View>
-  <TileK />
-  <View
-    style={
-      Object {
-        "borderBottomWidth": 1,
-        "borderColor": "#DBDBDB",
-        "borderStyle": "solid",
-        "marginHorizontal": 10,
-      }
-    }
-  />
-  <TileK />
-  <View
-    style={
-      Object {
-        "borderBottomWidth": 1,
-        "borderColor": "#DBDBDB",
-        "borderStyle": "solid",
-        "marginHorizontal": 10,
-      }
-    }
-  />
-  <TileK />
-  <View
-    style={
-      Object {
-        "borderBottomWidth": 1,
-        "borderColor": "#DBDBDB",
-        "borderStyle": "solid",
-        "marginHorizontal": 10,
-      }
-    }
-  />
-  <TileK />
-  <View
-    style={
-      Object {
-        "borderBottomWidth": 1,
-        "borderColor": "#DBDBDB",
-        "borderStyle": "solid",
-        "marginHorizontal": 10,
-      }
-    }
-  />
-  <TileK />
-</View>
+<RCTScrollView>
+  <View>
+    <View>
+      <View>
+        <TileK />
+        <View
+          style={
+            Object {
+              "borderBottomWidth": 1,
+              "borderColor": "#DBDBDB",
+              "borderStyle": "solid",
+              "marginHorizontal": 10,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View>
+      <View>
+        <TileK />
+        <View
+          style={
+            Object {
+              "borderBottomWidth": 1,
+              "borderColor": "#DBDBDB",
+              "borderStyle": "solid",
+              "marginHorizontal": 10,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View>
+      <View>
+        <TileK />
+        <View
+          style={
+            Object {
+              "borderBottomWidth": 1,
+              "borderColor": "#DBDBDB",
+              "borderStyle": "solid",
+              "marginHorizontal": 10,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View>
+      <View>
+        <TileK />
+        <View
+          style={
+            Object {
+              "borderBottomWidth": 1,
+              "borderColor": "#DBDBDB",
+              "borderStyle": "solid",
+              "marginHorizontal": 10,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View>
+      <View>
+        <TileK />
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
 `;
 
 exports[`6. lead two no pic and two 1`] = `
