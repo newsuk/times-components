@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.43.0](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.42.0...@times-components/slice-layout@0.43.0) (2019-09-30)
+
+
+### Features
+
+* (REPLAT-8561) Supplement secondary 1 and 4 for 1366px ([#2314](https://github.com/newsuk/times-components/issues/2314)) ([8d4e745](https://github.com/newsuk/times-components/commit/8d4e745))
+
+
+
+
+
 # [0.42.0](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.41.4...@times-components/slice-layout@0.42.0) (2019-09-27)
 
 

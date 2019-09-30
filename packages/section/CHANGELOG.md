@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/newsuk/times-components/compare/@times-components/section@1.3.0...@times-components/section@1.4.0) (2019-09-30)
+
+
+### Features
+
+* puzzles for 1366px ([#2315](https://github.com/newsuk/times-components/issues/2315)) ([b561f23](https://github.com/newsuk/times-components/commit/b561f23))
+
+
+
+
+
 # [1.3.0](https://github.com/newsuk/times-components/compare/@times-components/section@1.2.47...@times-components/section@1.3.0) (2019-09-27)
 
 

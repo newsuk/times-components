@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.93.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.92.0...@times-components/edition-slices@0.93.0) (2019-09-30)
+
+
+### Features
+
+* (REPLAT-8561) Supplement secondary 1 and 4 for 1366px ([#2314](https://github.com/newsuk/times-components/issues/2314)) ([8d4e745](https://github.com/newsuk/times-components/commit/8d4e745))
+* puzzles for 1366px ([#2315](https://github.com/newsuk/times-components/issues/2315)) ([b561f23](https://github.com/newsuk/times-components/commit/b561f23))
+
+
+
+
+
 # [0.92.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.91.1...@times-components/edition-slices@0.92.0) (2019-09-27)
 
 
