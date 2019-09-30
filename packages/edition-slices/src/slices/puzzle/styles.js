@@ -10,7 +10,7 @@ const smallBreakpointStyles = {
   }
 };
 
-const defaultBreakpointStyles = {
+const mediumBreakpointStyles = {
   container: {
     flex: 1,
     flexDirection: "row",
@@ -23,20 +23,18 @@ const defaultBreakpointStyles = {
 };
 
 const wideBreakpointStyles = {
+  ...mediumBreakpointStyles,
   container: {
-    ...defaultBreakpointStyles.container,
+    ...mediumBreakpointStyles.container,
     paddingHorizontal: spacing(2)
-  },
-  tileContainer: {
-    ...defaultBreakpointStyles.tileContainer
   }
 };
 
 const breakPointsStyles = {
   [editionBreakpoints.small]: smallBreakpointStyles,
-  [editionBreakpoints.medium]: defaultBreakpointStyles,
+  [editionBreakpoints.medium]: mediumBreakpointStyles,
   [editionBreakpoints.wide]: wideBreakpointStyles,
-  [editionBreakpoints.huge]: defaultBreakpointStyles
+  [editionBreakpoints.huge]: wideBreakpointStyles
 };
 
 export default breakpoint => breakPointsStyles[breakpoint];

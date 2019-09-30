@@ -108,6 +108,9 @@ class Section extends Component {
 
             return (
               <FlatList
+                contentContainerStyle={
+                  isTablet && isPuzzle && styles.additionalContainerPadding
+                }
                 removeClippedSubviews
                 data={data}
                 initialNumToRender={isTablet ? 5 : 2}
