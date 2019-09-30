@@ -37,5 +37,8 @@ export default breakpoint => ({
     color: colours.functional.brandColour,
     fontFamily: fonts.headlineRegular,
     fontSize: 20
+  },
+  additionalContainerPadding: {
+    paddingBottom: spacing(3)
   }
 });
