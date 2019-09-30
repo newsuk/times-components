@@ -134,7 +134,7 @@ function Head({ article, paidContentClassName, faviconUrl }) {
   );
   const caption = get(leadAsset, "caption", null);
   const title = headline || shortHeadline;
-  const datePublished = new Date(publishedTime).toISOString().split("T")[0];
+  const datePublished = new Date(publishedTime).toISOString();
   const thumbnailUrl = hasVideo
     ? getVideoLeadAssetUrl(article)
     : getThumbnailUrlFromImage(article);
