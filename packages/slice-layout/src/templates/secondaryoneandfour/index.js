@@ -31,9 +31,7 @@ const SecondaryOneAndFourSlice = ({
 
   return (
     <View style={styles.container}>
-      <View style={styles.secondaryItemContainer}>
-        <View>{secondary}</View>
-      </View>
+      <View style={styles.secondaryItemContainer}>{secondary}</View>
       <ItemColSeparator style={styles.separator} />
       <View style={styles.supportsWrapper}>
         <HorizontalLayout
