@@ -82,7 +82,7 @@ const wideBreakpointStyles = {
   headline: {
     ...sharedStyles.headline,
     fontSize: fontSizeResolver[editionBreakpoints.wide],
-    lineHeight: fontSizeResolver[editionBreakpoints.wide],
+    lineHeight: fontSizeResolver[editionBreakpoints.wide]
   }
 };
 
