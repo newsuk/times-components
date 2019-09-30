@@ -451,6 +451,7 @@ exports[`7. secondary one and four - medium 1`] = `
           "backgroundColor": "#272D34",
           "flexDirection": "row",
           "margin": 15,
+          "marginBottom": 10,
         }
       }
     >
@@ -470,7 +471,10 @@ exports[`7. secondary one and four - medium 1`] = `
     <View
       style={
         Object {
+          "flex": 1,
           "flexDirection": "row",
+          "padding": 5,
+          "paddingTop": 0,
         }
       }
     >
@@ -481,9 +485,7 @@ exports[`7. secondary one and four - medium 1`] = `
           }
         }
       >
-        <View>
-          <TileN />
-        </View>
+        <TileN />
       </View>
       <View
         style={
@@ -1842,6 +1844,7 @@ exports[`23. secondary one and four - wide 1`] = `
           "backgroundColor": "#272D34",
           "flexDirection": "row",
           "margin": 15,
+          "marginBottom": 10,
         }
       }
     >
@@ -1861,7 +1864,10 @@ exports[`23. secondary one and four - wide 1`] = `
     <View
       style={
         Object {
+          "flex": 1,
           "flexDirection": "row",
+          "padding": 5,
+          "paddingTop": 0,
         }
       }
     >
@@ -1872,9 +1878,7 @@ exports[`23. secondary one and four - wide 1`] = `
           }
         }
       >
-        <View>
-          <TileN />
-        </View>
+        <TileN />
       </View>
       <View
         style={
@@ -3267,6 +3271,7 @@ exports[`39. secondary one and four - huge 1`] = `
             "backgroundColor": "#272D34",
             "flexDirection": "row",
             "margin": 15,
+            "marginBottom": 10,
           }
         }
       >
@@ -3286,7 +3291,10 @@ exports[`39. secondary one and four - huge 1`] = `
       <View
         style={
           Object {
+            "flex": 1,
             "flexDirection": "row",
+            "padding": 5,
+            "paddingTop": 0,
           }
         }
       >
@@ -3297,9 +3305,7 @@ exports[`39. secondary one and four - huge 1`] = `
             }
           }
         >
-          <View>
-            <TileN />
-          </View>
+          <TileN />
         </View>
         <View
           style={

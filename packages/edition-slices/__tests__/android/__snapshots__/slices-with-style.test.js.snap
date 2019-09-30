@@ -132,13 +132,7 @@ exports[`1. secondary one and four 1`] = `
       }
     }
   >
-    <View
-      style={
-        Object {
-          "flexDirection": "row",
-        }
-      }
-    >
+    <View>
       <View>
         <TileN />
       </View>
@@ -221,13 +215,7 @@ exports[`1. secondary one and four 2`] = `
       }
     }
   >
-    <View
-      style={
-        Object {
-          "flexDirection": "row",
-        }
-      }
-    >
+    <View>
       <View>
         <TileN />
       </View>
@@ -750,13 +738,7 @@ exports[`10. secondary one and four 1`] = `
       }
     }
   >
-    <View
-      style={
-        Object {
-          "flexDirection": "row",
-        }
-      }
-    >
+    <View>
       <View>
         <TileN />
       </View>

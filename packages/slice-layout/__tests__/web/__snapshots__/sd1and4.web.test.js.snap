@@ -42,12 +42,10 @@ exports[`1. secondary one and four - small 1`] = `
 exports[`2. secondary one and four - medium 1`] = `
 <div>
   <div>
-    <div>
-      <div
-        dir="auto"
-      >
-        secondary-1
-      </div>
+    <div
+      dir="auto"
+    >
+      secondary-1
     </div>
   </div>
   <div />
@@ -94,12 +92,10 @@ exports[`2. secondary one and four - medium 1`] = `
 exports[`3. secondary one and four - wide 1`] = `
 <div>
   <div>
-    <div>
-      <div
-        dir="auto"
-      >
-        secondary-1
-      </div>
+    <div
+      dir="auto"
+    >
+      secondary-1
     </div>
   </div>
   <div />

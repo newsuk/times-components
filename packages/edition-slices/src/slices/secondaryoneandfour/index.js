@@ -31,7 +31,7 @@ class SecondaryOneAndFour extends Component {
           <View style={styles.container}>
             <View style={styles.logoContainer}>
               {publicationName === "TIMES" ? (
-                <TheTimesLogo height={40} width={42} />
+                <TheTimesLogo height={37} width={35} />
               ) : (
                 <TheSTLogo height={40} width={60} />
               )}

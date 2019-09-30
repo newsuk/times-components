@@ -6,9 +6,7 @@ exports[`tile n huge 1`] = `
     Object {
       "backgroundColor": "#272D34",
       "flex": 1,
-      "marginRight": 5,
-      "paddingHorizontal": 12,
-      "paddingVertical": 10,
+      "padding": 10,
     }
   }
   url="/article/123"
@@ -40,10 +38,11 @@ exports[`tile n huge 1`] = `
         Object {
           "color": "#FFFFFF",
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 20,
+          "fontSize": 22,
           "fontWeight": "900",
-          "lineHeight": 20,
-          "marginBottom": 11,
+          "lineHeight": 22,
+          "marginBottom": 5,
+          "marginTop": 5,
         }
       }
     >
@@ -70,9 +69,7 @@ exports[`tile n medium 1`] = `
     Object {
       "backgroundColor": "#272D34",
       "flex": 1,
-      "marginRight": 5,
-      "paddingHorizontal": 12,
-      "paddingVertical": 10,
+      "padding": 10,
     }
   }
   url="/article/123"
@@ -107,7 +104,8 @@ exports[`tile n medium 1`] = `
           "fontSize": 18,
           "fontWeight": "900",
           "lineHeight": 18,
-          "marginBottom": 11,
+          "marginBottom": 5,
+          "marginTop": 0,
         }
       }
     >
@@ -135,8 +133,8 @@ exports[`tile n small 1`] = `
       "backgroundColor": "#272D34",
       "flex": 1,
       "marginRight": 5,
+      "padding": 10,
       "paddingHorizontal": 12,
-      "paddingVertical": 10,
     }
   }
   url="/article/123"
@@ -198,9 +196,7 @@ exports[`tile n wide 1`] = `
     Object {
       "backgroundColor": "#272D34",
       "flex": 1,
-      "marginRight": 5,
-      "paddingHorizontal": 12,
-      "paddingVertical": 10,
+      "padding": 10,
     }
   }
   url="/article/123"
@@ -235,7 +231,8 @@ exports[`tile n wide 1`] = `
           "fontSize": 20,
           "fontWeight": "900",
           "lineHeight": 20,
-          "marginBottom": 11,
+          "marginBottom": 5,
+          "marginTop": 0,
         }
       }
     >
@@ -263,8 +260,8 @@ exports[`tile n with default star 1`] = `
       "backgroundColor": "#272D34",
       "flex": 1,
       "marginRight": 5,
+      "padding": 10,
       "paddingHorizontal": 12,
-      "paddingVertical": 10,
     }
   }
   url="/article/123"

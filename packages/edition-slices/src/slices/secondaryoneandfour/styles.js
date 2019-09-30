@@ -26,7 +26,8 @@ const mediumBreakpointStyles = {
   logoContainer: {
     ...darkBackgroundColour,
     flexDirection: "row",
-    margin: spacing(3)
+    margin: spacing(3),
+    marginBottom: spacing(2)
   },
   separator: {
     borderBottomColor: colours.functional.tertiary,
@@ -40,15 +41,7 @@ const mediumBreakpointStyles = {
 };
 
 const wideBreakpointStyles = {
-  logoContainer: {
-    ...darkBackgroundColour,
-    flexDirection: "row",
-    margin: spacing(3)
-  },
-  separator: {
-    borderBottomColor: colours.functional.tertiary,
-    marginHorizontal: spacing(3)
-  },
+  ...mediumBreakpointStyles,
   container: {
     ...darkBackgroundColour,
     marginVertical: spacing(3),

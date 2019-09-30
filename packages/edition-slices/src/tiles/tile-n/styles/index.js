@@ -10,15 +10,17 @@ const fontSizeResolver = {
   [editionBreakpoints.small]: 18,
   [editionBreakpoints.medium]: 18,
   [editionBreakpoints.wide]: 28,
-  [editionBreakpoints.huge]: 45
+  [editionBreakpoints.huge]: 35
 };
 
-const smallBreakpointStyles = breakpoint => ({
+const sharedStyles = {
   container: {
     backgroundColor: colours.functional.darkSupplement,
-    flexDirection: "row",
-    padding: spacing(2),
-    marginLeft: spacing(1)
+    flex: 1,
+    padding: spacing(2)
+  },
+  content: {
+    flexDirection: "row"
   },
   flagColour: {
     color: colours.functional.greyLabel
@@ -27,12 +29,11 @@ const smallBreakpointStyles = breakpoint => ({
     ...fontFactory({
       font: "headline"
     }),
-    fontSize: fontSizeResolver[breakpoint],
-    lineHeight: fontSizeResolver[breakpoint],
-    color: colours.functional.white
+    color: colours.functional.white,
+    marginBottom: 0
   },
   imageContainer: {
-    width: "50%"
+    flex: 1
   },
   summary: {
     color: colours.functional.greyLabel
@@ -42,20 +43,29 @@ const smallBreakpointStyles = breakpoint => ({
   },
   summaryContainer: {
     paddingLeft: spacing(2),
-    width: "50%"
+    flex: 1
   }
-});
+};
 
-const mediumBreakpointStyles = breakpoint => ({
-  ...smallBreakpointStyles(breakpoint),
+const smallBreakpointStyles = {
+  ...sharedStyles,
+  container: {
+    ...sharedStyles.container,
+    marginLeft: spacing(1)
+  },
   headline: {
-    ...fontFactory({
-      font: "headline"
-    }),
-    fontSize: fontSizeResolver[breakpoint],
-    lineHeight: fontSizeResolver[breakpoint],
-    color: colours.functional.white,
-    marginBottom: 0
+    ...sharedStyles.headline,
+    fontSize: fontSizeResolver[editionBreakpoints.small],
+    lineHeight: fontSizeResolver[editionBreakpoints.small]
+  }
+};
+
+const mediumBreakpointStyles = {
+  ...sharedStyles,
+  headline: {
+    ...sharedStyles.headline,
+    fontSize: fontSizeResolver[editionBreakpoints.medium],
+    lineHeight: fontSizeResolver[editionBreakpoints.medium]
   },
   strapline: {
     fontFamily: fonts.bodyRegular,
@@ -65,9 +75,32 @@ const mediumBreakpointStyles = breakpoint => ({
     paddingTop: spacing(1),
     paddingBottom: 0
   }
-});
+};
 
-export default breakpoint =>
-  breakpoint === editionBreakpoints.small
-    ? smallBreakpointStyles(breakpoint)
-    : mediumBreakpointStyles(breakpoint);
+const wideBreakpointStyles = {
+  ...mediumBreakpointStyles,
+  headline: {
+    ...sharedStyles.headline,
+    fontSize: fontSizeResolver[editionBreakpoints.wide],
+    lineHeight: fontSizeResolver[editionBreakpoints.wide]
+  }
+};
+
+const hugeBreakpointStyles = {
+  ...mediumBreakpointStyles,
+  headline: {
+    ...sharedStyles.headline,
+    fontSize: fontSizeResolver[editionBreakpoints.huge],
+    lineHeight: fontSizeResolver[editionBreakpoints.huge],
+    marginTop: spacing(1)
+  }
+};
+
+const styleResolver = {
+  [editionBreakpoints.small]: smallBreakpointStyles,
+  [editionBreakpoints.medium]: mediumBreakpointStyles,
+  [editionBreakpoints.wide]: wideBreakpointStyles,
+  [editionBreakpoints.huge]: hugeBreakpointStyles
+};
+
+export default breakpoint => styleResolver[breakpoint];
