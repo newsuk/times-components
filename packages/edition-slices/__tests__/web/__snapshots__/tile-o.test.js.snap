@@ -8,14 +8,15 @@ exports[`tile n huge 1`] = `
 
 .S2 {
   font-family: TimesModern-Bold;
+  font-size: 22px;
   font-weight: 400;
+  margin-bottom: 5px;
 }
 
 .IS1 {
   color: rgba(255,255,255,1.00);
-  font-size: 20px;
-  line-height: 20px;
-  margin-bottom: 11px;
+  line-height: 22px;
+  margin-top: 5px;
 }
 
 .IS2 {
@@ -37,9 +38,7 @@ exports[`tile n huge 1`] = `
     Object {
       "backgroundColor": "#272D34",
       "flex": 1,
-      "marginRight": "5px",
-      "paddingHorizontal": 12,
-      "paddingVertical": "10px",
+      "padding": "10px",
     }
   }
   url="/article/123"
@@ -58,7 +57,7 @@ exports[`tile n huge 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 IS1 S2"
+      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
       role="heading"
     >
       This is tile headline
@@ -87,13 +86,14 @@ exports[`tile n medium 1`] = `
 .S2 {
   font-family: TimesModern-Bold;
   font-weight: 400;
+  margin-bottom: 5px;
 }
 
 .IS1 {
   color: rgba(255,255,255,1.00);
   font-size: 18px;
   line-height: 18px;
-  margin-bottom: 11px;
+  margin-top: 0px;
 }
 
 .IS2 {
@@ -115,9 +115,7 @@ exports[`tile n medium 1`] = `
     Object {
       "backgroundColor": "#272D34",
       "flex": 1,
-      "marginRight": "5px",
-      "paddingHorizontal": 12,
-      "paddingVertical": "10px",
+      "padding": "10px",
     }
   }
   url="/article/123"
@@ -136,7 +134,7 @@ exports[`tile n medium 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 IS1 S2"
+      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
       role="heading"
     >
       This is tile headline
@@ -194,8 +192,8 @@ exports[`tile n small 1`] = `
       "backgroundColor": "#272D34",
       "flex": 1,
       "marginRight": "5px",
+      "padding": "10px",
       "paddingHorizontal": 12,
-      "paddingVertical": "10px",
     }
   }
   url="/article/123"
@@ -243,13 +241,14 @@ exports[`tile n wide 1`] = `
 .S2 {
   font-family: TimesModern-Bold;
   font-weight: 400;
+  margin-bottom: 5px;
 }
 
 .IS1 {
   color: rgba(255,255,255,1.00);
   font-size: 20px;
   line-height: 20px;
-  margin-bottom: 11px;
+  margin-top: 0px;
 }
 
 .IS2 {
@@ -271,9 +270,7 @@ exports[`tile n wide 1`] = `
     Object {
       "backgroundColor": "#272D34",
       "flex": 1,
-      "marginRight": "5px",
-      "paddingHorizontal": 12,
-      "paddingVertical": "10px",
+      "padding": "10px",
     }
   }
   url="/article/123"
@@ -292,7 +289,7 @@ exports[`tile n wide 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 IS1 S2"
+      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
       role="heading"
     >
       This is tile headline
@@ -350,8 +347,8 @@ exports[`tile n with default star 1`] = `
       "backgroundColor": "#272D34",
       "flex": 1,
       "marginRight": "5px",
+      "padding": "10px",
       "paddingHorizontal": 12,
-      "paddingVertical": "10px",
     }
   }
   url="/article/123"

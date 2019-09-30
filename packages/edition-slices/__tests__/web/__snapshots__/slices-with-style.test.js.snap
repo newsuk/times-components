@@ -230,8 +230,8 @@ exports[`1. secondary one and four 1`] = `
   flex-direction: row;
   margin-top: 15px;
   margin-right: 15px;
-  margin-bottom: 15px;
   margin-left: 15px;
+  margin-bottom: 10px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
@@ -367,9 +367,23 @@ exports[`1. secondary one and four 1`] = `
 }
 
 .IS15 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-top: 0px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
@@ -416,14 +430,10 @@ exports[`1. secondary one and four 1`] = `
       <div
         className="css-view-1dbjc4n IS3"
       >
-        <div
-          className="css-view-1dbjc4n"
-        >
-          <TileN
-            breakpoint="wide"
-            tileName="secondary"
-          />
-        </div>
+        <TileN
+          breakpoint="wide"
+          tileName="secondary"
+        />
       </div>
       <div
         className="css-view-1dbjc4n IS4"
@@ -495,8 +505,8 @@ exports[`1. secondary one and four 2`] = `
   flex-direction: row;
   margin-top: 15px;
   margin-right: 15px;
-  margin-bottom: 15px;
   margin-left: 15px;
+  margin-bottom: 10px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
@@ -632,9 +642,23 @@ exports[`1. secondary one and four 2`] = `
 }
 
 .IS15 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-top: 0px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
@@ -668,8 +692,8 @@ exports[`1. secondary one and four 2`] = `
       className="css-view-1dbjc4n IS1"
     >
       <TheTimesLogo
-        height={40}
-        width={42}
+        height={37}
+        width={35}
       />
     </div>
     <div
@@ -681,14 +705,10 @@ exports[`1. secondary one and four 2`] = `
       <div
         className="css-view-1dbjc4n IS3"
       >
-        <div
-          className="css-view-1dbjc4n"
-        >
-          <TileN
-            breakpoint="wide"
-            tileName="secondary"
-          />
-        </div>
+        <TileN
+          breakpoint="wide"
+          tileName="secondary"
+        />
       </div>
       <div
         className="css-view-1dbjc4n IS4"
@@ -1938,8 +1958,8 @@ exports[`10. secondary one and four 1`] = `
   flex-direction: row;
   margin-top: 15px;
   margin-right: 15px;
-  margin-bottom: 15px;
   margin-left: 15px;
+  margin-bottom: 10px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
@@ -2075,9 +2095,23 @@ exports[`10. secondary one and four 1`] = `
 }
 
 .IS15 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-top: 0px;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
@@ -2111,8 +2145,8 @@ exports[`10. secondary one and four 1`] = `
       className="css-view-1dbjc4n IS1"
     >
       <TheTimesLogo
-        height={40}
-        width={42}
+        height={37}
+        width={35}
       />
     </div>
     <div
@@ -2124,14 +2158,10 @@ exports[`10. secondary one and four 1`] = `
       <div
         className="css-view-1dbjc4n IS3"
       >
-        <div
-          className="css-view-1dbjc4n"
-        >
-          <TileN
-            breakpoint="wide"
-            tileName="secondary"
-          />
-        </div>
+        <TileN
+          breakpoint="wide"
+          tileName="secondary"
+        />
       </div>
       <div
         className="css-view-1dbjc4n IS4"

@@ -61,12 +61,10 @@ exports[`1. secondary one and four 1`] = `
     <div />
     <div>
       <div>
-        <div>
-          <TileN
-            breakpoint="wide"
-            tileName="secondary"
-          />
-        </div>
+        <TileN
+          breakpoint="wide"
+          tileName="secondary"
+        />
       </div>
       <div />
       <div>
@@ -112,19 +110,17 @@ exports[`1. secondary one and four 2`] = `
   <div>
     <div>
       <TheTimesLogo
-        height={40}
-        width={42}
+        height={37}
+        width={35}
       />
     </div>
     <div />
     <div>
       <div>
-        <div>
-          <TileN
-            breakpoint="wide"
-            tileName="secondary"
-          />
-        </div>
+        <TileN
+          breakpoint="wide"
+          tileName="secondary"
+        />
       </div>
       <div />
       <div>
@@ -457,19 +453,17 @@ exports[`10. secondary one and four 1`] = `
   <div>
     <div>
       <TheTimesLogo
-        height={40}
-        width={42}
+        height={37}
+        width={35}
       />
     </div>
     <div />
     <div>
       <div>
-        <div>
-          <TileN
-            breakpoint="wide"
-            tileName="secondary"
-          />
-        </div>
+        <TileN
+          breakpoint="wide"
+          tileName="secondary"
+        />
       </div>
       <div />
       <div>

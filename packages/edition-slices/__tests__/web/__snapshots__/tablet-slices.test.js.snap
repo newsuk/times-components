@@ -175,19 +175,17 @@ exports[`7. secondary one and four - medium 1`] = `
   <div>
     <div>
       <TheTimesLogo
-        height={40}
-        width={42}
+        height={37}
+        width={35}
       />
     </div>
     <div />
     <div>
       <div>
-        <div>
-          <TileN
-            breakpoint="wide"
-            tileName="secondary"
-          />
-        </div>
+        <TileN
+          breakpoint="wide"
+          tileName="secondary"
+        />
       </div>
       <div />
       <div>
@@ -753,19 +751,17 @@ exports[`23. secondary one and four - wide 1`] = `
   <div>
     <div>
       <TheTimesLogo
-        height={40}
-        width={42}
+        height={37}
+        width={35}
       />
     </div>
     <div />
     <div>
       <div>
-        <div>
-          <TileN
-            breakpoint="wide"
-            tileName="secondary"
-          />
-        </div>
+        <TileN
+          breakpoint="wide"
+          tileName="secondary"
+        />
       </div>
       <div />
       <div>
@@ -1331,19 +1327,17 @@ exports[`39. secondary one and four - huge 1`] = `
   <div>
     <div>
       <TheTimesLogo
-        height={40}
-        width={42}
+        height={37}
+        width={35}
       />
     </div>
     <div />
     <div>
       <div>
-        <div>
-          <TileN
-            breakpoint="wide"
-            tileName="secondary"
-          />
-        </div>
+        <TileN
+          breakpoint="wide"
+          tileName="secondary"
+        />
       </div>
       <div />
       <div>
