@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.16.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.15.1...@times-components/article-skeleton@1.16.0) (2019-10-01)
+
+
+### Features
+
+* add time to date published metadata REPLAT-8272 ([#2317](https://github.com/newsuk/times-components/issues/2317)) ([b8d1fb0](https://github.com/newsuk/times-components/commit/b8d1fb0))
+
+
+
+
+
 ## [1.15.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.15.0...@times-components/article-skeleton@1.15.1) (2019-09-30)
 
 **Note:** Version bump only for package @times-components/article-skeleton
