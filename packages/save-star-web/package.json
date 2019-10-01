@@ -1,6 +1,6 @@
 {
   "name": "@times-components/save-star-web",
-  "version": "0.3.29",
+  "version": "0.3.30",
   "description": "Save Star for Web",
   "main": "dist/save-star-web",
   "dev": "src/save-star-web",
@@ -36,8 +36,8 @@
   "dependencies": {
     "@times-components/icons": "2.12.16",
     "@times-components/link": "3.4.46",
-    "@times-components/provider": "1.19.0",
-    "@times-components/provider-queries": "2.10.0",
+    "@times-components/provider": "1.19.1",
+    "@times-components/provider-queries": "2.10.1",
     "@times-components/styleguide": "3.28.49",
     "@times-components/tracking": "2.4.69",
     "@times-components/utils": "4.11.36",
@@ -50,7 +50,7 @@
     "@times-components/eslint-config-thetimes": "0.8.15",
     "@times-components/jest-configurator": "2.6.7",
     "@times-components/jest-serializer": "3.2.19",
-    "@times-components/provider-test-tools": "1.17.49",
+    "@times-components/provider-test-tools": "1.17.50",
     "@times-components/storybook": "4.0.36",
     "@times-components/test-utils": "2.3.6",
     "@times-components/webpack-configurator": "2.0.26",

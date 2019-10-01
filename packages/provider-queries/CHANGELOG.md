@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.10.1](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.10.0...@times-components/provider-queries@2.10.1) (2019-10-01)
+
+
+### Bug Fixes
+
+* (REPLAT-9284) move topics query out of edition ([#2318](https://github.com/newsuk/times-components/issues/2318)) ([1023513](https://github.com/newsuk/times-components/commit/1023513))
+
+
+
+
+
 # [2.10.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.9.2...@times-components/provider-queries@2.10.0) (2019-09-27)
 
 
