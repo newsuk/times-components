@@ -1,5 +1,5 @@
 import React from "react";
-import { Text } from "react-native";
+import { Text, Platform } from "react-native";
 import PropTypes from "prop-types";
 import styles from "./styles";
 
@@ -9,6 +9,7 @@ const ArticleSummaryHeadline = ({ className, headline, style }) => (
   <Text
     accessibilityRole="header"
     aria-level="3"
+    allowFontScaling={Platform.OS === "ios"}
     className={className}
     style={[styles.headline, styles.headlineWrapper, style]}
   >
