@@ -1,6 +1,6 @@
 {
   "name": "@times-components/edition-slices",
-  "version": "0.93.0",
+  "version": "0.93.1",
   "description": "Components used in edition pages including slices and tiles",
   "main": "dist/edition-slices",
   "dev": "src/edition-slices",
@@ -38,12 +38,12 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
     "@times-components/article-flag": "2.6.74",
-    "@times-components/article-summary": "3.13.14",
+    "@times-components/article-summary": "3.13.15",
     "@times-components/context": "1.1.1",
     "@times-components/icons": "2.12.16",
     "@times-components/image": "6.4.26",
     "@times-components/link": "3.4.46",
-    "@times-components/markup": "3.3.106",
+    "@times-components/markup": "3.3.107",
     "@times-components/markup-forest": "1.7.26",
     "@times-components/responsive": "0.4.67",
     "@times-components/slice-layout": "0.43.0",

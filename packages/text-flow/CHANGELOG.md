@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.14](https://github.com/newsuk/times-components/compare/@times-components/text-flow@0.2.13...@times-components/text-flow@0.2.14) (2019-10-02)
+
+
+### Bug Fixes
+
+* (REPLAT-9274) fix missing text in some article paragraphs ([#2320](https://github.com/newsuk/times-components/issues/2320)) ([aaaf033](https://github.com/newsuk/times-components/commit/aaaf033))
+
+
+
+
+
 ## [0.2.13](https://github.com/newsuk/times-components/compare/@times-components/text-flow@0.2.12...@times-components/text-flow@0.2.13) (2019-09-24)
 
 
