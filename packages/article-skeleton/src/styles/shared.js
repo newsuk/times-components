@@ -10,7 +10,6 @@ const globalStyle = {
     paddingRight: spacing(2)
   },
   gutter: {
-    alignSelf: "center",
     backgroundColor: "#ffffff",
     maxWidth: "100%",
     width: maxWidth

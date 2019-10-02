@@ -3,14 +3,18 @@ import React from "react";
 import PropTypes from "prop-types";
 import ArticleParagraph from "./article-paragraph";
 
-const ArticleParagraphWrapper = ({ ast, children, uid }) => {
+const ArticleParagraphWrapper = ({ ast, children, uid, height }) => {
   const { children: astChildren } = ast;
   if (!astChildren || astChildren.length === 0) {
     return null;
   }
 
   return (
-    <ArticleParagraph key={`paragraph-${uid}`} testID={`paragraph-${uid}`}>
+    <ArticleParagraph
+      height={height}
+      key={`paragraph-${uid}`}
+      testID={`paragraph-${uid}`}
+    >
       {children}
     </ArticleParagraph>
   );
@@ -18,8 +22,9 @@ const ArticleParagraphWrapper = ({ ast, children, uid }) => {
 
 ArticleParagraphWrapper.propTypes = {
   ast: PropTypes.object.isRequired,
-  children: PropTypes.oneOf([PropTypes.node, PropTypes.func]).isRequired,
-  uid: PropTypes.number.isRequired
+  children: PropTypes.node.isRequired,
+  uid: PropTypes.number.isRequired,
+  height: PropTypes.number.isRequired
 };
 
 export default ArticleParagraphWrapper;

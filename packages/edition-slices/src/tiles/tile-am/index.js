@@ -15,6 +15,10 @@ import PositionedTileStar from "../shared/positioned-tile-star";
 const TileAM = ({ onPress, tile }) => {
   const crop = getTileImage(tile, "crop169");
 
+  if (!crop) {
+    return null;
+  }
+
   return (
     <TileLink onPress={onPress} style={styles.container} tile={tile}>
       <Image

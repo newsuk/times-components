@@ -12,6 +12,10 @@ const { puzzleContainer, header, headline, imageContainer } = styles;
 const TileAJ = ({ id, image, onPress, title, url }) => {
   const crop = image.crop32;
 
+  if (!crop) {
+    return null;
+  }
+
   return (
     <Link
       key={id}

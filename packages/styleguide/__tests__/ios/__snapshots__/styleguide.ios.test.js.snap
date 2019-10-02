@@ -37,17 +37,3 @@ exports[`4. animations should have a fadein animation wrapper component 1`] = `
   </Text>
 </View>
 `;
-
-exports[`4. animations should have a fadein animation wrapper component 2`] = `
-<View
-  style={
-    Object {
-      "opacity": 0,
-    }
-  }
->
-  <Text>
-    Hello World
-  </Text>
-</View>
-`;

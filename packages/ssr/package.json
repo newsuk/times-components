@@ -73,7 +73,7 @@
     "react-art": "16.6.3",
     "react-dom": "16.9.0",
     "react-helmet-async": "1.0.2",
-    "react-native": "0.59.10",
+    "react-native": "0.61.1",
     "react-native-web": "0.11.4",
     "styled-components": "4.3.2",
     "unfetch": "^3.0.0"

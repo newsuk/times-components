@@ -9,17 +9,15 @@ const renderAuthorComponent = (
   key,
   attributes,
   { className, bylineStyle }
-) => ({
-  element: (
-    <Text
-      className={className}
-      key={key}
-      style={[styles.nonLinkText, bylineStyle]}
-    >
-      {children}
-    </Text>
-  )
-});
+) => (
+  <Text
+    className={className}
+    key={key}
+    style={[styles.nonLinkText, bylineStyle]}
+  >
+    {children}
+  </Text>
+);
 
 const ArticleByline = ({ ast, ...props }) =>
   renderByline(renderAuthorComponent, ast, styles.nonLinkText, props);

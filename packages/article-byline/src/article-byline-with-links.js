@@ -12,19 +12,17 @@ const renderAuthorComponent = (
   { onAuthorPress, className }
 ) => {
   const url = `/profile/${attributes.slug}`;
-  return {
-    element: (
-      <TextLink
-        className={className}
-        key={key}
-        onPress={e => onAuthorPress(e, { slug: attributes.slug, url })}
-        style={styles.link}
-        url={url}
-      >
-        {children}
-      </TextLink>
-    )
-  };
+  return (
+    <TextLink
+      className={className}
+      key={key}
+      onPress={e => onAuthorPress(e, { slug: attributes.slug, url })}
+      style={styles.link}
+      url={url}
+    >
+      {children}
+    </TextLink>
+  );
 };
 
 const ArticleBylineWithLinks = ({ ast, centered, ...props }) =>

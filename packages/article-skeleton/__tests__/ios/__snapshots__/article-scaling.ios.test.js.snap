@@ -14,10 +14,9 @@ exports[`1. scaled medium full article 1`] = `
         <View
           style={
             Object {
-              "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1194,
+              "width": undefined,
             }
           }
         />
@@ -26,16 +25,17 @@ exports[`1. scaled medium full article 1`] = `
         <View
           style={
             Object {
-              "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1194,
+              "width": undefined,
             }
           }
         >
           <View
             style={
               Object {
+                "height": 28,
+                "marginBottom": 20,
                 "paddingLeft": 10,
                 "paddingRight": 10,
               }
@@ -45,29 +45,53 @@ exports[`1. scaled medium full article 1`] = `
               <Text
                 style={
                   Object {
-                    "color": "#333333",
+                    "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 17,
-                    "height": 56,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                    "left": 0,
                     "lineHeight": 28,
-                    "marginBottom": 20,
+                    "position": "absolute",
+                    "top": 0,
                   }
                 }
               >
-                <Text
-                  style={
-                    Object {
-                      "color": "#000000",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 17,
-                      "fontStyle": "normal",
-                      "fontWeight": "normal",
-                      "lineHeight": 56,
-                    }
+                Some
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 17,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                    "left": 47,
+                    "lineHeight": 28,
+                    "position": "absolute",
+                    "top": 0,
                   }
-                >
-                  Some content
-                </Text>
+                }
+              >
+                con
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 17,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                    "left": 75,
+                    "lineHeight": 28,
+                    "position": "absolute",
+                    "top": 0,
+                  }
+                }
+              >
+                tent
               </Text>
             </View>
           </View>
@@ -77,46 +101,9 @@ exports[`1. scaled medium full article 1`] = `
         <View
           style={
             Object {
-              "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1194,
-            }
-          }
-        />
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "alignSelf": "center",
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "width": 1194,
-            }
-          }
-        />
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "alignSelf": "center",
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "width": 1194,
-            }
-          }
-        />
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "alignSelf": "center",
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "width": 1194,
+              "width": undefined,
             }
           }
         >
@@ -142,10 +129,9 @@ exports[`2. scaled large full article 1`] = `
         <View
           style={
             Object {
-              "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1194,
+              "width": undefined,
             }
           }
         />
@@ -154,16 +140,17 @@ exports[`2. scaled large full article 1`] = `
         <View
           style={
             Object {
-              "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1194,
+              "width": undefined,
             }
           }
         >
           <View
             style={
               Object {
+                "height": 28,
+                "marginBottom": 20,
                 "paddingLeft": 10,
                 "paddingRight": 10,
               }
@@ -173,29 +160,53 @@ exports[`2. scaled large full article 1`] = `
               <Text
                 style={
                   Object {
-                    "color": "#333333",
+                    "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
-                    "fontSize": 21,
-                    "height": 56,
-                    "lineHeight": 31,
-                    "marginBottom": 20,
+                    "fontSize": 17,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                    "left": 0,
+                    "lineHeight": 28,
+                    "position": "absolute",
+                    "top": 0,
                   }
                 }
               >
-                <Text
-                  style={
-                    Object {
-                      "color": "#000000",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 17,
-                      "fontStyle": "normal",
-                      "fontWeight": "normal",
-                      "lineHeight": 56,
-                    }
+                Some
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 17,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                    "left": 47,
+                    "lineHeight": 28,
+                    "position": "absolute",
+                    "top": 0,
                   }
-                >
-                  Some content
-                </Text>
+                }
+              >
+                con
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 17,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                    "left": 75,
+                    "lineHeight": 28,
+                    "position": "absolute",
+                    "top": 0,
+                  }
+                }
+              >
+                tent
               </Text>
             </View>
           </View>
@@ -205,46 +216,9 @@ exports[`2. scaled large full article 1`] = `
         <View
           style={
             Object {
-              "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1194,
-            }
-          }
-        />
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "alignSelf": "center",
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "width": 1194,
-            }
-          }
-        />
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "alignSelf": "center",
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "width": 1194,
-            }
-          }
-        />
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "alignSelf": "center",
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "width": 1194,
+              "width": undefined,
             }
           }
         >
@@ -270,10 +244,9 @@ exports[`3. scaled xlarge full article 1`] = `
         <View
           style={
             Object {
-              "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1194,
+              "width": undefined,
             }
           }
         />
@@ -282,16 +255,17 @@ exports[`3. scaled xlarge full article 1`] = `
         <View
           style={
             Object {
-              "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1194,
+              "width": undefined,
             }
           }
         >
           <View
             style={
               Object {
+                "height": 28,
+                "marginBottom": 20,
                 "paddingLeft": 10,
                 "paddingRight": 10,
               }
@@ -301,29 +275,53 @@ exports[`3. scaled xlarge full article 1`] = `
               <Text
                 style={
                   Object {
-                    "color": "#333333",
+                    "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
-                    "fontSize": 23,
-                    "height": 56,
-                    "lineHeight": 33,
-                    "marginBottom": 20,
+                    "fontSize": 17,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                    "left": 0,
+                    "lineHeight": 28,
+                    "position": "absolute",
+                    "top": 0,
                   }
                 }
               >
-                <Text
-                  style={
-                    Object {
-                      "color": "#000000",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 17,
-                      "fontStyle": "normal",
-                      "fontWeight": "normal",
-                      "lineHeight": 56,
-                    }
+                Some
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 17,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                    "left": 47,
+                    "lineHeight": 28,
+                    "position": "absolute",
+                    "top": 0,
                   }
-                >
-                  Some content
-                </Text>
+                }
+              >
+                con
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 17,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                    "left": 75,
+                    "lineHeight": 28,
+                    "position": "absolute",
+                    "top": 0,
+                  }
+                }
+              >
+                tent
               </Text>
             </View>
           </View>
@@ -333,46 +331,9 @@ exports[`3. scaled xlarge full article 1`] = `
         <View
           style={
             Object {
-              "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1194,
-            }
-          }
-        />
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "alignSelf": "center",
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "width": 1194,
-            }
-          }
-        />
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "alignSelf": "center",
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "width": 1194,
-            }
-          }
-        />
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "alignSelf": "center",
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "width": 1194,
+              "width": undefined,
             }
           }
         >

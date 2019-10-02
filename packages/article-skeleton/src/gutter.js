@@ -6,10 +6,21 @@ import styles from "./styles/shared";
 
 export const maxWidth = tabletWidthMax;
 
-const Gutter = ({ children }) => <View style={styles.gutter}>{children}</View>;
+const Gutter = ({ children, style }) => (
+  <View style={[style, styles.gutter]}>{children}</View>
+);
 
 Gutter.propTypes = {
-  children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired,
+  style: PropTypes.objectOf({
+    overflow: PropTypes.string
+  })
+};
+
+Gutter.defaultProps = {
+  style: {
+    overflow: "hidden"
+  }
 };
 
 export default Gutter;

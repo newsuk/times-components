@@ -3,27 +3,61 @@
 exports[`1. multiple ad slots 1`] = `
 Array [
   <View
-    className="IS3"
+    className="IS5"
   >
     <View
-      className="IS2"
+      className="IS4"
       inViewport={false}
     >
       <View
-        className="IS1"
+        className="IS2"
+      >
+        <RNCWebView
+          allowFileAccess={false}
+          allowsFullscreenVideo={false}
+          androidHardwareAccelerationDisabled={false}
+          cacheEnabled={true}
+          className="IS1"
+          javaScriptEnabled={true}
+          messagingEnabled={true}
+          overScrollMode="always"
+          saveFormDataDisabled={false}
+          scalesPageToFit={true}
+          thirdPartyCookiesEnabled={true}
+        />
+      </View>
+      <View
+        className="IS3"
         inViewport={false}
       />
     </View>
   </View>,
   <View
-    className="IS3"
+    className="IS5"
   >
     <View
-      className="IS2"
+      className="IS4"
       inViewport={false}
     >
       <View
-        className="IS1"
+        className="IS2"
+      >
+        <RNCWebView
+          allowFileAccess={false}
+          allowsFullscreenVideo={false}
+          androidHardwareAccelerationDisabled={false}
+          cacheEnabled={true}
+          className="IS1"
+          javaScriptEnabled={true}
+          messagingEnabled={true}
+          overScrollMode="always"
+          saveFormDataDisabled={false}
+          scalesPageToFit={true}
+          thirdPartyCookiesEnabled={true}
+        />
+      </View>
+      <View
+        className="IS3"
         inViewport={false}
       />
     </View>

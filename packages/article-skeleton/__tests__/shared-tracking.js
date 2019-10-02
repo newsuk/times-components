@@ -1,12 +1,24 @@
+/* eslint-disable global-require */
 import "./mocks.native";
 
-import { Text } from "@times-components/text-flow";
-import { Roboto } from "@times-components/test-utils";
+import { FontStorage } from "@times-components/typeset";
 import shared from "./shared-tracking.base";
 
-Text.FontLoader.loadFont("TimesDigitalW04", Roboto);
-Text.FontLoader.loadFont("TimesModern-Regular", Roboto);
-Text.FontLoader.loadFont("TimesDigitalW04-Bold", Roboto);
-Text.FontLoader.loadFont("TimesDigitalW04-Italic", Roboto);
+FontStorage.registerFont(
+  "TimesDigitalW04-Normal",
+  () => require("@times-components/test-utils").TestFont
+);
+FontStorage.registerFont(
+  "TimesDigitalW04-Bold",
+  () => require("@times-components/test-utils").TestFont
+);
+FontStorage.registerFont(
+  "TimesDigitalW04-Italic",
+  () => require("@times-components/test-utils").TestFont
+);
+FontStorage.registerFont(
+  "TimesModern-Regular",
+  () => require("@times-components/test-utils").TestFont
+);
 
 export default shared;

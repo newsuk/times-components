@@ -46,10 +46,6 @@ const tests = [
       );
 
       expect(testInstance.toJSON()).toMatchSnapshot();
-
-      jest.runTimersToTime();
-
-      expect(testInstance.toJSON()).toMatchSnapshot();
     }
   },
   // Non snapshot tests

@@ -27,6 +27,16 @@ allprojects {
         maven {
             url "$reactRepositoryPath"
         }
+
+
+        maven {
+            // Replace AAR from original RN with AAR from react-native-v8
+            url("$rootDir/../node_modules/react-native-v8/dist")
+        }
+        maven {
+            // prebuilt libv8.so
+            url("$rootDir/../node_modules/v8-android/dist")
+        }
     }
 }
 
@@ -65,11 +75,11 @@ task generateReactArchives {
         }
     }
     task reactNativeCopy(type: Copy) {
-        from('../node_modules/react-native/android')
+        from('../node_modules/react-native-v8/dist')
         into(reactRepositoryPath)
     }
-    task jscCopy(type: Copy) {
-        from('../node_modules/@kudo-ci/jsc-android/dist')
+    task v8Copy(type: Copy) {
+        from('../node_modules/v8-android/dist')
         into(reactRepositoryPath)
     }
 
@@ -82,6 +92,6 @@ task generateReactArchives {
 
     removePreviousReactArchives.dependsOn(gqlCopy)
     reactNativeCopy.dependsOn(removePreviousReactArchives)
-    jscCopy.dependsOn(reactNativeCopy)
-    generateReactArchives.dependsOn(jscCopy)
+    v8Copy.dependsOn(reactNativeCopy)
+    generateReactArchives.dependsOn(v8Copy)
 }

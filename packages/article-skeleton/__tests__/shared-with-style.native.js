@@ -1,3 +1,4 @@
+/* eslint-disable global-require */
 import React from "react";
 import TestRenderer from "react-test-renderer";
 import {
@@ -11,16 +12,26 @@ import {
 import "./mocks.native";
 import Responsive from "@times-components/responsive";
 import { setIsTablet } from "@times-components/mocks/dimensions";
-
-import { Text } from "@times-components/text-flow";
-import { Roboto } from "@times-components/test-utils";
+import { FontStorage } from "@times-components/typeset";
 import articleFixture from "../fixtures/full-article";
 import shared, { renderArticle, fixtureArgs } from "./shared.base";
 
-Text.FontLoader.loadFont("TimesDigitalW04", Roboto);
-Text.FontLoader.loadFont("TimesModern-Regular", Roboto);
-Text.FontLoader.loadFont("TimesDigitalW04-Bold", Roboto);
-Text.FontLoader.loadFont("TimesDigitalW04-Italic", Roboto);
+FontStorage.registerFont(
+  "TimesDigitalW04-Normal",
+  () => require("@times-components/test-utils").TestFont
+);
+FontStorage.registerFont(
+  "TimesDigitalW04-Bold",
+  () => require("@times-components/test-utils").TestFont
+);
+FontStorage.registerFont(
+  "TimesDigitalW04-Italic",
+  () => require("@times-components/test-utils").TestFont
+);
+FontStorage.registerFont(
+  "TimesModern-Regular",
+  () => require("@times-components/test-utils").TestFont
+);
 
 export default () => {
   addSerializers(

@@ -1,6 +1,4 @@
 /* eslint-disable no-param-reassign */
-import { Text } from "@times-components/text-flow";
-
 const templateWithDropCaps = [
   "indepth",
   "maincomment",
@@ -105,35 +103,6 @@ const insertDropcapIntoAST = (children, template, isDropcapDisabled) => {
     return children;
   }
   return children;
-};
-
-export const getDropCap = (children, font, height, markup) => {
-  if (children.length === 0) {
-    const text = new Text.Text({
-      font,
-      lineHeight: height,
-      markup,
-      size: height
-    });
-    return text.idealSpans;
-  }
-  const text = children[0];
-  if (text.markup[0].style) {
-    text.markup[0].style.size = height;
-  }
-  text.font = font;
-  text.lineHeight = height;
-  text.size = height;
-  const value = text.idealSpans;
-  return value;
-};
-
-export const getDropCapValue = nodes => {
-  const node = nodes[0];
-  if (node.href) {
-    return node.href(node);
-  }
-  return node.text;
 };
 
 export default insertDropcapIntoAST;

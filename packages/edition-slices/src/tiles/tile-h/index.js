@@ -13,6 +13,10 @@ import styles from "./styles";
 const TileH = ({ onPress, tile }) => {
   const crop = getTileImage(tile, "crop23");
 
+  if (!crop) {
+    return null;
+  }
+
   return (
     <TileLink onPress={onPress} style={styles.container} tile={tile}>
       <TileSummary
