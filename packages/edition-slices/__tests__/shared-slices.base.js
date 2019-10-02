@@ -2,6 +2,7 @@ import React from "react";
 import TestRenderer from "react-test-renderer";
 import { SectionContext } from "@times-components/context";
 import { iterator } from "@times-components/test-utils";
+import { getDimentions } from "@times-components/utils";
 import {
   mockCommentLeadAndCartoonSlice,
   mockDailyRegisterSlice,
@@ -137,6 +138,16 @@ const slicesWithPubLogo = [
   }
 ];
 
+jest.mock("@times-components/utils", () => {
+  // eslint-disable-next-line global-require
+  const actualUtils = jest.requireActual("@times-components/utils");
+
+  return {
+    ...actualUtils,
+    getDimentions: jest.fn(() => ({ height: 700, width: 500 }))
+  };
+});
+
 const testsWithPublictaion = publicationName =>
   slicesWithPubLogo.map(({ mock, name, Slice }) => ({
     name,
@@ -144,7 +155,7 @@ const testsWithPublictaion = publicationName =>
       const output = TestRenderer.create(
         <Responsive>
           <SectionContext.Provider value={{ publicationName }}>
-            <Slice onPress={() => {}} slice={mock} />
+            <Slice onPress={() => { }} slice={mock} />
           </SectionContext.Provider>
         </Responsive>
       );
@@ -159,7 +170,7 @@ export default () => {
     test: () => {
       const output = TestRenderer.create(
         <Responsive>
-          <Slice onPress={() => {}} slice={mock} />
+          <Slice onPress={() => { }} slice={mock} />
         </Responsive>
       );
 
