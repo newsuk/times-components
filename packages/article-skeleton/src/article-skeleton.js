@@ -80,7 +80,7 @@ const renderText = (block, inlined = false) => {
   if (!inlined) {
     return block.getComponent(style => (
       <View>
-        <Text selectable style={style}>
+        <Text selectable style={[style, { height: block.measuredHeight }]}>
           {block.idealSpans.map(span => {
             if (span.href) {
               return span.href(span);

@@ -194,6 +194,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                     "color": "#333333",
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 17,
+                    "height": 0,
                     "lineHeight": 28,
                     "marginBottom": 20,
                   }
@@ -895,6 +896,7 @@ exports[`5. an article skeleton with responsive items 1`] = `
                     "color": "#333333",
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 17,
+                    "height": 0,
                     "lineHeight": 28,
                     "marginBottom": 20,
                   }
@@ -1018,6 +1020,7 @@ exports[`5. an article skeleton with responsive items 1`] = `
                     "color": "#333333",
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 17,
+                    "height": 0,
                     "lineHeight": 28,
                     "marginBottom": 20,
                   }

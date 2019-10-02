@@ -48,6 +48,7 @@ exports[`1. scaled medium full article 1`] = `
                     "color": "#333333",
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 17,
+                    "height": 56,
                     "lineHeight": 28,
                     "marginBottom": 20,
                   }
@@ -175,6 +176,7 @@ exports[`2. scaled large full article 1`] = `
                     "color": "#333333",
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 21,
+                    "height": 56,
                     "lineHeight": 31,
                     "marginBottom": 20,
                   }
@@ -302,6 +304,7 @@ exports[`3. scaled xlarge full article 1`] = `
                     "color": "#333333",
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 23,
+                    "height": 56,
                     "lineHeight": 33,
                     "marginBottom": 20,
                   }

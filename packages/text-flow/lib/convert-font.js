@@ -32,8 +32,8 @@ const convert = (filename, target) => {
     });
   });
   const fontObj = {
-    ascent: font.acender,
-    descent: font.decender,
+    ascent: font.ascender,
+    descent: font.descender,
     units: font.unitsPerEm,
     glyphs,
     kerning,
