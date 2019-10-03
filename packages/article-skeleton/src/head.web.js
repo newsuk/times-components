@@ -135,6 +135,7 @@ function Head({ article, paidContentClassName, faviconUrl }) {
   const caption = get(leadAsset, "caption", null);
   const title = headline || shortHeadline;
   const datePublished = new Date(publishedTime).toISOString();
+  const dateModified = updatedTime || datePublished;
   const thumbnailUrl = hasVideo
     ? getVideoLeadAssetUrl(article)
     : getThumbnailUrlFromImage(article);
@@ -164,7 +165,8 @@ function Head({ article, paidContentClassName, faviconUrl }) {
       url: leadassetUrl,
       caption
     },
-    thumbnailUrl
+    thumbnailUrl,
+    dateModified
   };
 
   if (updatedTime) {
