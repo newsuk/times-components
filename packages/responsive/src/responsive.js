@@ -5,7 +5,7 @@ import {
   tabletWidth
 } from "@times-components/styleguide";
 import {
-  getDimentions,
+  getDimensions,
   addDimensionsListener,
   removeDimensionsListener
 } from "@times-components/utils";
@@ -22,7 +22,7 @@ class Responsive extends Component {
   constructor(props) {
     super(props);
     this.onDimensionChange = this.onDimensionChange.bind(this);
-    const { fontScale, width } = getDimentions();
+    const { fontScale, width } = getDimensions();
     this.state = calculateState(width, fontScale);
   }
 

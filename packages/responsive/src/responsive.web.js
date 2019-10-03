@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { getEditionBreakpoint } from "@times-components/styleguide";
-import { getDimentions } from "@times-components/utils";
+import { getDimensions } from "@times-components/utils";
 import ResponsiveContext from "./context";
 
 const Responsive = ({ children }) => {
-  const { width } = getDimentions();
+  const { width } = getDimensions();
 
   return (
     <ResponsiveContext.Provider

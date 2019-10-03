@@ -1,6 +1,6 @@
 import { Dimensions } from "react-native";
 
-export const getDimentions = (
+export const getDimensions = (
   width = Dimensions.get("window").width,
   height = Dimensions.get("window").height,
   fontScale = Dimensions.get("window").fontScale

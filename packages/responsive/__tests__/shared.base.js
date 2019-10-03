@@ -8,7 +8,7 @@ jest.mock("@times-components/utils", () => {
 
   return {
     ...actualUtils,
-    getDimentions: jest.fn(() => ({ height: 700, width: 500 })),
+    getDimensions: jest.fn(() => ({ height: 700, width: 500 })),
     addDimensionsListener: jest.fn(),
     removeDimensionsListener: jest.fn()
   };

@@ -2,7 +2,7 @@ import React from "react";
 import TestRenderer from "react-test-renderer";
 import { editionBreakpointWidths } from "@times-components/styleguide";
 import { iterator } from "@times-components/test-utils";
-import { getDimentions } from "@times-components/utils";
+import { getDimensions } from "@times-components/utils";
 import {
   mockCommentLeadAndCartoonSlice,
   mockDailyRegisterSlice,
@@ -131,7 +131,7 @@ jest.mock("@times-components/utils", () => {
 
   return {
     ...actualUtils,
-    getDimentions: jest.fn()
+    getDimensions: jest.fn()
   };
 });
 
@@ -139,7 +139,7 @@ const tabletTester = type =>
   slices.map(({ mock, name, Slice }) => ({
     name: `${name} - ${type}`,
     test: () => {
-      getDimentions.mockImplementation(() => ({
+      getDimensions.mockImplementation(() => ({
         width: editionBreakpointWidths[type]
       }));
       const output = TestRenderer.create(
