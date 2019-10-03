@@ -2,7 +2,6 @@ import React from "react";
 import TestRenderer from "react-test-renderer";
 import { SectionContext } from "@times-components/context";
 import { iterator } from "@times-components/test-utils";
-import { getDimentions } from "@times-components/utils";
 import {
   mockCommentLeadAndCartoonSlice,
   mockDailyRegisterSlice,
@@ -155,7 +154,7 @@ const testsWithPublictaion = publicationName =>
       const output = TestRenderer.create(
         <Responsive>
           <SectionContext.Provider value={{ publicationName }}>
-            <Slice onPress={() => { }} slice={mock} />
+            <Slice onPress={() => {}} slice={mock} />
           </SectionContext.Provider>
         </Responsive>
       );
@@ -170,7 +169,7 @@ export default () => {
     test: () => {
       const output = TestRenderer.create(
         <Responsive>
-          <Slice onPress={() => { }} slice={mock} />
+          <Slice onPress={() => {}} slice={mock} />
         </Responsive>
       );
 
