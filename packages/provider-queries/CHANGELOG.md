@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.11.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.10.1...@times-components/provider-queries@2.11.0) (2019-10-04)
+
+
+### Features
+
+* add dateModified to schema REPLAT-7845 ([#2325](https://github.com/newsuk/times-components/issues/2325)) ([911a6b8](https://github.com/newsuk/times-components/commit/911a6b8))
+
+
+
+
+
 ## [2.10.1](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.10.0...@times-components/provider-queries@2.10.1) (2019-10-01)
 
 

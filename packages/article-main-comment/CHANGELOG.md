@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.13.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.12.2...@times-components/article-main-comment@2.13.0) (2019-10-04)
+
+
+### Features
+
+* add dateModified to schema REPLAT-7845 ([#2325](https://github.com/newsuk/times-components/issues/2325)) ([911a6b8](https://github.com/newsuk/times-components/commit/911a6b8))
+
+
+
+
+
 ## [2.12.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.12.1...@times-components/article-main-comment@2.12.2) (2019-10-02)
 
 **Note:** Version bump only for package @times-components/article-main-comment

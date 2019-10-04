@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.94.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.93.1...@times-components/edition-slices@0.94.0) (2019-10-04)
+
+
+### Bug Fixes
+
+* increase test coverage for slices on web ([#2324](https://github.com/newsuk/times-components/issues/2324)) ([4087b7f](https://github.com/newsuk/times-components/commit/4087b7f))
+
+
+### Features
+
+* REPLAT-9112 lead 1 and 1 tile U updated ([#2322](https://github.com/newsuk/times-components/issues/2322)) ([d685fe6](https://github.com/newsuk/times-components/commit/d685fe6))
+
+
+
+
+
 ## [0.93.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.93.0...@times-components/edition-slices@0.93.1) (2019-10-02)
 
 **Note:** Version bump only for package @times-components/edition-slices

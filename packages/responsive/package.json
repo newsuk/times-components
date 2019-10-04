@@ -1,6 +1,6 @@
 {
   "name": "@times-components/responsive",
-  "version": "0.4.67",
+  "version": "0.4.68",
   "description": "Responsive",
   "main": "dist/responsive",
   "dev": "src/responsive",
@@ -35,8 +35,8 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
-    "@times-components/styleguide": "3.28.49",
-    "@times-components/utils": "4.11.36",
+    "@times-components/styleguide": "3.28.50",
+    "@times-components/utils": "4.11.37",
     "prop-types": "15.7.2"
   },
   "devDependencies": {

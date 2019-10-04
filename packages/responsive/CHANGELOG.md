@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.68](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.4.67...@times-components/responsive@0.4.68) (2019-10-04)
+
+
+### Bug Fixes
+
+* increase test coverage for slices on web ([#2324](https://github.com/newsuk/times-components/issues/2324)) ([4087b7f](https://github.com/newsuk/times-components/commit/4087b7f))
+
+
+
+
+
 ## [0.4.67](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.4.66...@times-components/responsive@0.4.67) (2019-09-24)
 
 
