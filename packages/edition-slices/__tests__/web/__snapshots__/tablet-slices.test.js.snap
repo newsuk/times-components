@@ -683,16 +683,16 @@ exports[`21. lead two no pic and two - wide 1`] = `
     </div>
     <div />
     <div>
-      <TileE
+      <TileAL
         breakpoint="wide"
-        tileName="support1"
+        tileName="support2"
       />
     </div>
     <div />
     <div>
-      <TileAL
+      <TileE
         breakpoint="wide"
-        tileName="support2"
+        tileName="support1"
       />
     </div>
   </div>
@@ -1268,16 +1268,16 @@ exports[`37. lead two no pic and two - huge 1`] = `
       </div>
       <div />
       <div>
-        <TileE
+        <TileAL
           breakpoint="huge"
-          tileName="support1"
+          tileName="support2"
         />
       </div>
       <div />
       <div>
-        <TileAL
+        <TileE
           breakpoint="huge"
-          tileName="support2"
+          tileName="support1"
         />
       </div>
     </div>

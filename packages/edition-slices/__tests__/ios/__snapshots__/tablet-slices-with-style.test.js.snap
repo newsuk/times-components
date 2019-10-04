@@ -1664,11 +1664,11 @@ exports[`21. lead two no pic and two - wide 1`] = `
     <View
       style={
         Object {
-          "width": "42%",
+          "width": "16%",
         }
       }
     >
-      <TileE />
+      <TileAL />
     </View>
     <View
       style={
@@ -1683,11 +1683,11 @@ exports[`21. lead two no pic and two - wide 1`] = `
     <View
       style={
         Object {
-          "width": "16%",
+          "width": "42%",
         }
       }
     >
-      <TileAL />
+      <TileE />
     </View>
   </View>
 </View>
@@ -3071,11 +3071,11 @@ exports[`37. lead two no pic and two - huge 1`] = `
       <View
         style={
           Object {
-            "width": "42%",
+            "width": "16%",
           }
         }
       >
-        <TileE />
+        <TileAL />
       </View>
       <View
         style={
@@ -3090,11 +3090,11 @@ exports[`37. lead two no pic and two - huge 1`] = `
       <View
         style={
           Object {
-            "width": "16%",
+            "width": "42%",
           }
         }
       >
-        <TileAL />
+        <TileE />
       </View>
     </View>
   </View>

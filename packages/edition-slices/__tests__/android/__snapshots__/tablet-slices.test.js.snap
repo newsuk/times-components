@@ -695,16 +695,16 @@ exports[`21. lead two no pic and two - wide 1`] = `
     </View>
     <View />
     <View>
-      <TileE
+      <TileAL
         breakpoint="wide"
-        tileName="support1"
+        tileName="support2"
       />
     </View>
     <View />
     <View>
-      <TileAL
+      <TileE
         breakpoint="wide"
-        tileName="support2"
+        tileName="support1"
       />
     </View>
   </View>
@@ -1288,16 +1288,16 @@ exports[`37. lead two no pic and two - huge 1`] = `
       </View>
       <View />
       <View>
-        <TileE
+        <TileAL
           breakpoint="huge"
-          tileName="support1"
+          tileName="support2"
         />
       </View>
       <View />
       <View>
-        <TileAL
+        <TileE
           breakpoint="huge"
-          tileName="support2"
+          tileName="support1"
         />
       </View>
     </View>
