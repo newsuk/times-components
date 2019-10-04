@@ -169,10 +169,6 @@ function Head({ article, paidContentClassName, faviconUrl }) {
     dateModified
   };
 
-  if (updatedTime) {
-    jsonLD.dateUpdated = updatedTime;
-  }
-
   return (
     <Context.Consumer>
       {({ makeArticleUrl }) => {
