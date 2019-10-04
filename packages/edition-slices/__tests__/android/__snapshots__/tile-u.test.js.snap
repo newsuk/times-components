@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`tile u huge 1`] = `
+exports[`tile u without breakpoint 1`] = `
 <Link
   linkStyle={
     Object {
@@ -11,327 +11,57 @@ exports[`tile u huge 1`] = `
   }
   url="/article/123"
 >
-  <View
-    style={
-      Object {
-        "paddingBottom": 10,
-        "width": "100%",
-      }
-    }
-  >
-    <View
-      style={
-        Object {
-          "flex": 1,
-        }
-      }
-    >
-      <View>
-        <View>
-          <View
-            style={
-              Object {
-                "marginBottom": 5,
-              }
-            }
-          >
-            <ArticleLabel
-              color="#005B8D"
-              isVideo={false}
-              title="label"
-            />
-          </View>
-          <Text
-            accessibilityRole="header"
-            aria-level="3"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 40,
-                "fontWeight": "400",
-                "lineHeight": 40,
-                "marginBottom": 0,
-              }
-            }
-          >
-            This is tile headline
-          </Text>
-          <ArticleFlags
-            flags={
-              Array [
-                Object {
-                  "expiryTime": "2030-03-14T12:00:00.000Z",
-                  "type": "EXCLUSIVE",
-                },
-              ]
-            }
-          />
-        </View>
-      </View>
-    </View>
-  </View>
   <Image
-    aspectRatio={1.5}
+    aspectRatio={1.7777777777777777}
     fill={true}
     style={
       Object {
+        "marginBottom": 10,
         "width": "100%",
       }
     }
-    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
-</Link>
-`;
-
-exports[`tile u medium 1`] = `
-<Link
-  linkStyle={
-    Object {
-      "flex": 1,
-      "paddingHorizontal": 10,
-      "paddingVertical": 15,
-    }
-  }
-  url="/article/123"
->
-  <View
-    style={
-      Object {
-        "paddingBottom": 10,
-        "width": "100%",
-      }
-    }
-  >
+  <View>
     <View
       style={
         Object {
-          "flex": 1,
+          "marginBottom": 5,
         }
       }
     >
-      <View>
-        <View>
-          <View
-            style={
-              Object {
-                "marginBottom": 5,
-              }
-            }
-          >
-            <ArticleLabel
-              color="#005B8D"
-              isVideo={false}
-              title="label"
-            />
-          </View>
-          <Text
-            accessibilityRole="header"
-            aria-level="3"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 40,
-                "fontWeight": "400",
-                "lineHeight": 40,
-                "marginBottom": 10,
-              }
-            }
-          >
-            This is tile headline
-          </Text>
-          <ArticleFlags
-            flags={
-              Array [
-                Object {
-                  "expiryTime": "2030-03-14T12:00:00.000Z",
-                  "type": "EXCLUSIVE",
-                },
-              ]
-            }
-          />
-        </View>
-      </View>
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
     </View>
-  </View>
-  <Image
-    aspectRatio={1.5}
-    fill={true}
-    style={
-      Object {
-        "width": "100%",
-      }
-    }
-    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
-  />
-</Link>
-`;
-
-exports[`tile u wide 1`] = `
-<Link
-  linkStyle={
-    Object {
-      "flex": 1,
-      "paddingHorizontal": 10,
-      "paddingVertical": 15,
-    }
-  }
-  url="/article/123"
->
-  <View
-    style={
-      Object {
-        "paddingBottom": 10,
-        "width": "100%",
-      }
-    }
-  >
-    <View
+    <Text
+      accessibilityRole="header"
+      aria-level="3"
       style={
         Object {
-          "flex": 1,
+          "color": "#333333",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 40,
+          "fontWeight": "400",
+          "lineHeight": 40,
+          "marginBottom": 0,
         }
       }
     >
-      <View>
-        <View>
-          <View
-            style={
-              Object {
-                "marginBottom": 5,
-              }
-            }
-          >
-            <ArticleLabel
-              color="#005B8D"
-              isVideo={false}
-              title="label"
-            />
-          </View>
-          <Text
-            accessibilityRole="header"
-            aria-level="3"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 40,
-                "fontWeight": "400",
-                "lineHeight": 40,
-                "marginBottom": 0,
-              }
-            }
-          >
-            This is tile headline
-          </Text>
-          <ArticleFlags
-            flags={
-              Array [
-                Object {
-                  "expiryTime": "2030-03-14T12:00:00.000Z",
-                  "type": "EXCLUSIVE",
-                },
-              ]
-            }
-          />
-        </View>
-      </View>
-    </View>
+      This is tile headline
+    </Text>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
   </View>
-  <Image
-    aspectRatio={1.5}
-    fill={true}
-    style={
-      Object {
-        "width": "100%",
-      }
-    }
-    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
-  />
-</Link>
-`;
-
-exports[`tile u without breakpoint should be like medium 1`] = `
-<Link
-  linkStyle={
-    Object {
-      "flex": 1,
-      "paddingHorizontal": 10,
-      "paddingVertical": 15,
-    }
-  }
-  url="/article/123"
->
-  <View
-    style={
-      Object {
-        "paddingBottom": 10,
-        "width": "100%",
-      }
-    }
-  >
-    <View
-      style={
-        Object {
-          "flex": 1,
-        }
-      }
-    >
-      <View>
-        <View>
-          <View
-            style={
-              Object {
-                "marginBottom": 5,
-              }
-            }
-          >
-            <ArticleLabel
-              color="#005B8D"
-              isVideo={false}
-              title="label"
-            />
-          </View>
-          <Text
-            accessibilityRole="header"
-            aria-level="3"
-            style={
-              Object {
-                "color": "#333333",
-                "fontFamily": "TimesModern-Bold",
-                "fontSize": 40,
-                "fontWeight": "400",
-                "lineHeight": 40,
-                "marginBottom": 10,
-              }
-            }
-          >
-            This is tile headline
-          </Text>
-          <ArticleFlags
-            flags={
-              Array [
-                Object {
-                  "expiryTime": "2030-03-14T12:00:00.000Z",
-                  "type": "EXCLUSIVE",
-                },
-              ]
-            }
-          />
-        </View>
-      </View>
-    </View>
-  </View>
-  <Image
-    aspectRatio={1.5}
-    fill={true}
-    style={
-      Object {
-        "width": "100%",
-      }
-    }
-    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
-  />
 </Link>
 `;
