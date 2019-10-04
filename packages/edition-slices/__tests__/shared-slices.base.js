@@ -137,6 +137,16 @@ const slicesWithPubLogo = [
   }
 ];
 
+jest.mock("@times-components/utils", () => {
+  // eslint-disable-next-line global-require
+  const actualUtils = jest.requireActual("@times-components/utils");
+
+  return {
+    ...actualUtils,
+    getDimensions: jest.fn(() => ({ height: 700, width: 500 }))
+  };
+});
+
 const testsWithPublictaion = publicationName =>
   slicesWithPubLogo.map(({ mock, name, Slice }) => ({
     name,

@@ -1,5 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`with default values 1`] = `"{\\"editionBreakpoint\\":\\"small\\",\\"isTablet\\":false,\\"screenWidth\\":500}"`;
+exports[`width values should update on device rotation 1`] = `"{\\"editionBreakpoint\\":\\"small\\",\\"isTablet\\":false,\\"screenWidth\\":500}"`;
 
-exports[`with default values: after width update 1`] = `"{\\"editionBreakpoint\\":\\"medium\\",\\"isTablet\\":true,\\"screenWidth\\":1000}"`;
+exports[`width values should update on device rotation: after width update 1`] = `"{\\"editionBreakpoint\\":\\"medium\\",\\"isTablet\\":true,\\"screenWidth\\":1000}"`;
+
+exports[`with default values 1`] = `"{\\"editionBreakpoint\\":\\"small\\",\\"isTablet\\":false,\\"screenWidth\\":500}"`;

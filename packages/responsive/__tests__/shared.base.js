@@ -1,7 +1,18 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
-import { setDimension } from "@times-components/mocks/dimensions";
 import Responsive, { ResponsiveContext } from "../src/responsive";
+
+jest.mock("@times-components/utils", () => {
+  // eslint-disable-next-line global-require
+  const actualUtils = jest.requireActual("@times-components/utils");
+
+  return {
+    ...actualUtils,
+    getDimensions: jest.fn(() => ({ height: 700, width: 500 })),
+    addDimensionsListener: jest.fn(),
+    removeDimensionsListener: jest.fn()
+  };
+});
 
 export default () => {
   it("with default values", () => {
@@ -14,8 +25,5 @@ export default () => {
     );
 
     expect(testInstance).toMatchSnapshot();
-
-    setDimension({ height: 500, width: 1000 });
-    expect(testInstance).toMatchSnapshot("after width update");
   });
 };

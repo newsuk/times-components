@@ -1,10 +1,14 @@
 import React, { Component } from "react";
-import { Dimensions } from "react-native";
 import PropTypes from "prop-types";
 import {
   getEditionBreakpoint,
   tabletWidth
 } from "@times-components/styleguide";
+import {
+  getDimensions,
+  addDimensionsListener,
+  removeDimensionsListener
+} from "@times-components/utils";
 import ResponsiveContext from "./context";
 
 const calculateState = (width, fontScale) => ({
@@ -18,16 +22,16 @@ class Responsive extends Component {
   constructor(props) {
     super(props);
     this.onDimensionChange = this.onDimensionChange.bind(this);
-    const { fontScale, width } = Dimensions.get("window");
+    const { fontScale, width } = getDimensions();
     this.state = calculateState(width, fontScale);
   }
 
   componentDidMount() {
-    Dimensions.addEventListener("change", this.onDimensionChange);
+    addDimensionsListener("change", this.onDimensionChange);
   }
 
   componentWillUnmount() {
-    Dimensions.removeEventListener("change", this.onDimensionChange);
+    removeDimensionsListener("change", this.onDimensionChange);
   }
 
   onDimensionChange({ window: { fontScale, width } }) {
