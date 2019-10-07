@@ -1,6 +1,6 @@
 {
   "name": "@times-components/lazy-load",
-  "version": "0.4.66",
+  "version": "0.4.67",
   "description": "Use IntersectionObserver to lazy load resources",
   "main": "dist/lazy-load",
   "dev": "src/lazy-load",
@@ -38,7 +38,7 @@
     "@times-components/eslint-config-thetimes": "0.8.15",
     "@times-components/jest-configurator": "2.6.7",
     "@times-components/jest-serializer": "3.2.19",
-    "@times-components/storybook": "4.0.38",
+    "@times-components/storybook": "4.0.39",
     "@times-components/test-utils": "2.3.6",
     "@times-components/webpack-configurator": "2.0.26",
     "babel-jest": "24.8.0",
