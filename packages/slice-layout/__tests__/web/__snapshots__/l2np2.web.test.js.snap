@@ -58,13 +58,13 @@ exports[`3. lead two no pic and two - wide 1`] = `
   <div />
   <div>
     <div>
-      support-1
+      support-2
     </div>
   </div>
   <div />
   <div>
     <div>
-      support-2
+      support-1
     </div>
   </div>
 </div>
@@ -84,13 +84,13 @@ exports[`4. lead two no pic and two - huge 1`] = `
   <div />
   <div>
     <div>
-      support-1
+      support-2
     </div>
   </div>
   <div />
   <div>
     <div>
-      support-2
+      support-1
     </div>
   </div>
 </div>

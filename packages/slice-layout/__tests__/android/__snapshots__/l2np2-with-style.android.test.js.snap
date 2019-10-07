@@ -165,12 +165,12 @@ exports[`3. lead two no pic and two - wide 1`] = `
   <View
     style={
       Object {
-        "width": "42%",
+        "width": "16%",
       }
     }
   >
     <Text>
-      support-1
+      support-2
     </Text>
   </View>
   <View
@@ -186,12 +186,12 @@ exports[`3. lead two no pic and two - wide 1`] = `
   <View
     style={
       Object {
-        "width": "16%",
+        "width": "42%",
       }
     }
   >
     <Text>
-      support-2
+      support-1
     </Text>
   </View>
 </View>
@@ -244,12 +244,12 @@ exports[`4. lead two no pic and two - huge 1`] = `
   <View
     style={
       Object {
-        "width": "42%",
+        "width": "16%",
       }
     }
   >
     <Text>
-      support-1
+      support-2
     </Text>
   </View>
   <View
@@ -265,12 +265,12 @@ exports[`4. lead two no pic and two - huge 1`] = `
   <View
     style={
       Object {
-        "width": "16%",
+        "width": "42%",
       }
     }
   >
     <Text>
-      support-2
+      support-1
     </Text>
   </View>
 </View>

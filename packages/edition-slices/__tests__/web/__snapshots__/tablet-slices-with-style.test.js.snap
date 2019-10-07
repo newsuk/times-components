@@ -2891,7 +2891,7 @@ exports[`21. lead two no pic and two - wide 1`] = `
 }
 
 .IS4 {
-  width: 42%;
+  width: 16%;
 }
 
 .IS5 {
@@ -2909,7 +2909,7 @@ exports[`21. lead two no pic and two - wide 1`] = `
 }
 
 .IS6 {
-  width: 16%;
+  width: 42%;
 }
 
 .IS7 {
@@ -2970,9 +2970,9 @@ exports[`21. lead two no pic and two - wide 1`] = `
     <div
       className="css-view-1dbjc4n IS4"
     >
-      <TileE
+      <TileAL
         breakpoint="wide"
-        tileName="support1"
+        tileName="support2"
       />
     </div>
     <div
@@ -2981,9 +2981,9 @@ exports[`21. lead two no pic and two - wide 1`] = `
     <div
       className="css-view-1dbjc4n IS6"
     >
-      <TileAL
+      <TileE
         breakpoint="wide"
-        tileName="support2"
+        tileName="support1"
       />
     </div>
   </div>
@@ -5336,7 +5336,7 @@ exports[`37. lead two no pic and two - huge 1`] = `
 }
 
 .IS4 {
-  width: 42%;
+  width: 16%;
 }
 
 .IS5 {
@@ -5354,7 +5354,7 @@ exports[`37. lead two no pic and two - huge 1`] = `
 }
 
 .IS6 {
-  width: 16%;
+  width: 42%;
 }
 
 .IS7 {
@@ -5435,9 +5435,9 @@ exports[`37. lead two no pic and two - huge 1`] = `
       <div
         className="css-view-1dbjc4n IS4"
       >
-        <TileE
+        <TileAL
           breakpoint="huge"
-          tileName="support1"
+          tileName="support2"
         />
       </div>
       <div
@@ -5446,9 +5446,9 @@ exports[`37. lead two no pic and two - huge 1`] = `
       <div
         className="css-view-1dbjc4n IS6"
       >
-        <TileAL
+        <TileE
           breakpoint="huge"
-          tileName="support2"
+          tileName="support1"
         />
       </div>
     </div>
