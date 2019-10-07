@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.17.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.17.0...@times-components/article-skeleton@1.17.1) (2019-10-07)
+
+
+### Bug Fixes
+
+* remove dateUpdated from schema REPLAT-8272 ([#2329](https://github.com/newsuk/times-components/issues/2329)) ([2ed6709](https://github.com/newsuk/times-components/commit/2ed6709))
+
+
+
+
+
 # [1.17.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.16.2...@times-components/article-skeleton@1.17.0) (2019-10-04)
 
 

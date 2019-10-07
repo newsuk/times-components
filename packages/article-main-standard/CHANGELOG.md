@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.15.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.15.0...@times-components/article-main-standard@3.15.1) (2019-10-07)
+
+
+### Bug Fixes
+
+* REPLAT-9338 headline font weight removed ([#2327](https://github.com/newsuk/times-components/issues/2327)) ([7ce7253](https://github.com/newsuk/times-components/commit/7ce7253))
+
+
+
+
+
 # [3.15.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.14.2...@times-components/article-main-standard@3.15.0) (2019-10-04)
 
 

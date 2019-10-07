@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.95.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.94.0...@times-components/edition-slices@0.95.0) (2019-10-07)
+
+
+### Features
+
+* REPLAT-9308 lead 2 no pic 2 tiles swapped for 1024 and 1366 ([#2326](https://github.com/newsuk/times-components/issues/2326)) ([5a57885](https://github.com/newsuk/times-components/commit/5a57885))
+
+
+
+
+
 # [0.94.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.93.1...@times-components/edition-slices@0.94.0) (2019-10-04)
 
 
