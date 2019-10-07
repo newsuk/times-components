@@ -16,7 +16,7 @@ exports[`tile r huge 1`] = `
     fill={true}
     style={
       Object {
-        "marginBottom": 10,
+        "marginBottom": 15,
         "width": "100%",
       }
     }
@@ -148,7 +148,7 @@ exports[`tile r wide 1`] = `
     fill={true}
     style={
       Object {
-        "marginBottom": 10,
+        "marginBottom": 15,
         "width": "100%",
       }
     }

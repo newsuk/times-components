@@ -28,6 +28,10 @@ const wideBreakpointStyles = {
     flex: 1,
     paddingVertical: spacing(3),
     paddingHorizontal: spacing(4)
+  },
+  imageContainer: {
+    width: "100%",
+    marginBottom: spacing(3)
   }
 };
 
