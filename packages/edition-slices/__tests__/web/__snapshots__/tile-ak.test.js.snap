@@ -33,7 +33,7 @@ exports[`tile ak huge 1`] = `
     Object {
       "backgroundColor": "#F0F0F0",
       "flex": 1,
-      "height": 150,
+      "height": 243,
       "marginHorizontal": "10px",
       "overflow": "hidden",
     }
@@ -95,7 +95,7 @@ exports[`tile ak medium 1`] = `
     Object {
       "backgroundColor": "#F0F0F0",
       "flex": 1,
-      "height": 150,
+      "height": 143,
       "marginHorizontal": "10px",
       "overflow": "hidden",
     }
@@ -157,7 +157,7 @@ exports[`tile ak wide 1`] = `
     Object {
       "backgroundColor": "#F0F0F0",
       "flex": 1,
-      "height": 150,
+      "height": 195,
       "marginHorizontal": "10px",
       "overflow": "hidden",
     }
@@ -219,7 +219,7 @@ exports[`tile ak without breakpoint should be like medium 1`] = `
     Object {
       "backgroundColor": "#F0F0F0",
       "flex": 1,
-      "height": 150,
+      "height": 143,
       "marginHorizontal": "10px",
       "overflow": "hidden",
     }
