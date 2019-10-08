@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.46](https://github.com/newsuk/times-components/compare/@times-components/mocks@0.0.45...@times-components/mocks@0.0.46) (2019-10-08)
+
+
+### Bug Fixes
+
+* deps ([#2333](https://github.com/newsuk/times-components/issues/2333)) ([2af292c](https://github.com/newsuk/times-components/commit/2af292c))
+
+
+
+
+
 ## [0.0.45](https://github.com/newsuk/times-components/compare/@times-components/mocks@0.0.44...@times-components/mocks@0.0.45) (2019-10-07)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.13.19](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.13.18...@times-components/article-summary@3.13.19) (2019-10-08)
+
+
+### Bug Fixes
+
+* (REPLAT-9280) disable fontSizing on article headlines ([#2319](https://github.com/newsuk/times-components/issues/2319)) ([da61e2d](https://github.com/newsuk/times-components/commit/da61e2d))
+
+
+
+
+
 ## [3.13.18](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.13.17...@times-components/article-summary@3.13.18) (2019-10-07)
 
 **Note:** Version bump only for package @times-components/article-summary
