@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.41](https://github.com/newsuk/times-components/compare/@times-components/storybook@4.0.40...@times-components/storybook@4.0.41) (2019-10-09)
+
+**Note:** Version bump only for package @times-components/storybook
+
+
+
+
+
 ## [4.0.40](https://github.com/newsuk/times-components/compare/@times-components/storybook@4.0.39...@times-components/storybook@4.0.40) (2019-10-08)
 
 **Note:** Version bump only for package @times-components/storybook
