@@ -1,12 +1,14 @@
 /* eslint-env browser */
 import React from "react";
 import TestRenderer from "react-test-renderer";
-import { Clipboard } from "react-native";
+import Clipboard from "../src/clipboard";
 import { UserState } from "./mocks";
 import mockGetTokenisedArticleUrl from "./mock-get-tokenised-article-url";
 import BarItem from "../src/bar-item";
 import SaveAndShareBar from "../src/save-and-share-bar";
 import EmailShare from "../src/email-share";
+
+jest.mock("../src/clipboard");
 
 export default () => {
   describe("save and share bar component", () => {

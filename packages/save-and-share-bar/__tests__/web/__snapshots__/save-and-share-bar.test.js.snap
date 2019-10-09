@@ -63,64 +63,33 @@ exports[`save and share bar component email icon when tokenising with loading st
 
 exports[`save and share bar component save and share bar renders correctly when logged in 1`] = `
 <div
-  className="css-view-1dbjc4n"
   style={
     Object {
-      "WebkitAlignItems": "center",
-      "WebkitBoxAlign": "center",
-      "WebkitBoxDirection": "normal",
-      "WebkitBoxFlex": 1,
-      "WebkitBoxOrient": "horizontal",
-      "WebkitBoxPack": "justify",
-      "WebkitFlexBasis": "0%",
-      "WebkitFlexDirection": "row",
-      "WebkitFlexGrow": 1,
-      "WebkitFlexShrink": 1,
-      "WebkitJustifyContent": "space-between",
       "alignItems": "center",
-      "flexBasis": "0%",
+      "flex": 1,
       "flexDirection": "row",
-      "flexGrow": 1,
-      "flexShrink": 1,
       "height": "100%",
       "justifyContent": "space-between",
-      "msFlexAlign": "center",
-      "msFlexDirection": "row",
-      "msFlexNegative": 1,
-      "msFlexPack": "justify",
-      "msFlexPositive": 1,
-      "msFlexPreferredSize": "0%",
-      "paddingBottom": "10px",
-      "paddingTop": "10px",
+      "paddingVertical": "10px",
     }
   }
 >
   <div
-    className="css-view-1dbjc4n"
     style={
       Object {
-        "WebkitAlignItems": "center",
-        "WebkitBoxAlign": "center",
-        "WebkitBoxDirection": "normal",
-        "WebkitBoxOrient": "horizontal",
-        "WebkitFlexDirection": "row",
         "alignItems": "center",
         "flexDirection": "row",
-        "height": "40px",
-        "msFlexAlign": "center",
-        "msFlexDirection": "row",
+        "height": 40,
       }
     }
   >
     <div
-      className="css-text-901oao"
       style={
         Object {
-          "WebkitTransform": "translateY(9%)",
-          "color": "rgba(105,105,105,1.00)",
+          "color": "#696969",
           "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": "14px",
-          "lineHeight": "14px",
+          "fontSize": 14,
+          "lineHeight": 14,
           "marginRight": "10px",
           "transform": "translateY(9%)",
         }
@@ -167,19 +136,11 @@ exports[`save and share bar component save and share bar renders correctly when 
     </BarItem>
   </div>
   <div
-    className="css-view-1dbjc4n"
     style={
       Object {
-        "WebkitAlignItems": "center",
-        "WebkitBoxAlign": "center",
-        "WebkitBoxDirection": "normal",
-        "WebkitBoxOrient": "horizontal",
-        "WebkitFlexDirection": "row",
         "alignItems": "center",
         "flexDirection": "row",
-        "height": "40px",
-        "msFlexAlign": "center",
-        "msFlexDirection": "row",
+        "height": 40,
       }
     }
   >
@@ -195,64 +156,33 @@ exports[`save and share bar component save and share bar renders correctly when 
 
 exports[`save and share bar component save and share bar renders correctly when not logged in 1`] = `
 <div
-  className="css-view-1dbjc4n"
   style={
     Object {
-      "WebkitAlignItems": "center",
-      "WebkitBoxAlign": "center",
-      "WebkitBoxDirection": "normal",
-      "WebkitBoxFlex": 1,
-      "WebkitBoxOrient": "horizontal",
-      "WebkitBoxPack": "justify",
-      "WebkitFlexBasis": "0%",
-      "WebkitFlexDirection": "row",
-      "WebkitFlexGrow": 1,
-      "WebkitFlexShrink": 1,
-      "WebkitJustifyContent": "space-between",
       "alignItems": "center",
-      "flexBasis": "0%",
+      "flex": 1,
       "flexDirection": "row",
-      "flexGrow": 1,
-      "flexShrink": 1,
       "height": "100%",
       "justifyContent": "space-between",
-      "msFlexAlign": "center",
-      "msFlexDirection": "row",
-      "msFlexNegative": 1,
-      "msFlexPack": "justify",
-      "msFlexPositive": 1,
-      "msFlexPreferredSize": "0%",
-      "paddingBottom": "10px",
-      "paddingTop": "10px",
+      "paddingVertical": "10px",
     }
   }
 >
   <div
-    className="css-view-1dbjc4n"
     style={
       Object {
-        "WebkitAlignItems": "center",
-        "WebkitBoxAlign": "center",
-        "WebkitBoxDirection": "normal",
-        "WebkitBoxOrient": "horizontal",
-        "WebkitFlexDirection": "row",
         "alignItems": "center",
         "flexDirection": "row",
-        "height": "40px",
-        "msFlexAlign": "center",
-        "msFlexDirection": "row",
+        "height": 40,
       }
     }
   >
     <div
-      className="css-text-901oao"
       style={
         Object {
-          "WebkitTransform": "translateY(9%)",
-          "color": "rgba(105,105,105,1.00)",
+          "color": "#696969",
           "fontFamily": "GillSansMTStd-Medium",
-          "fontSize": "14px",
-          "lineHeight": "14px",
+          "fontSize": 14,
+          "lineHeight": 14,
           "marginRight": "10px",
           "transform": "translateY(9%)",
         }
