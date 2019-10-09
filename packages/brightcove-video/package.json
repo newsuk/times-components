@@ -69,7 +69,7 @@
   "dependencies": {
     "@times-components/styleguide": "3.28.53",
     "@times-components/svgs": "2.7.25",
-    "@times-components/utils": "4.11.38",
+    "@times-components/utils": "5.0.0",
     "prop-types": "15.7.2"
   },
   "resolutions": {

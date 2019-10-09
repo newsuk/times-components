@@ -61,7 +61,7 @@
   "dependencies": {
     "@skele/components": "1.0.0-alpha.40",
     "@times-components/styleguide": "3.28.53",
-    "@times-components/utils": "4.11.38",
+    "@times-components/utils": "5.0.0",
     "@times-components/watermark": "2.6.48",
     "prop-types": "15.7.2",
     "react-broadcast": "0.5.2",
