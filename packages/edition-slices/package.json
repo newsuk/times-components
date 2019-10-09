@@ -60,7 +60,7 @@
     "@times-components/jest-serializer": "3.2.19",
     "@times-components/storybook": "4.0.40",
     "@times-components/test-utils": "2.3.6",
-    "@times-components/utils": "4.11.38",
+    "@times-components/utils": "5.0.0",
     "@times-components/webpack-configurator": "2.0.26",
     "babel-jest": "24.8.0",
     "eslint": "5.9.0",

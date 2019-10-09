@@ -40,7 +40,7 @@
     "@times-components/provider-queries": "2.11.0",
     "@times-components/styleguide": "3.28.53",
     "@times-components/tracking": "2.4.73",
-    "@times-components/utils": "4.11.38",
+    "@times-components/utils": "5.0.0",
     "prop-types": "15.7.2",
     "react-apollo": "2.5.5",
     "styled-components": "4.3.2"
