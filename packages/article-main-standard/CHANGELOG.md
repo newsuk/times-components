@@ -3,6 +3,173 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.15.4](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.15.3...@times-components/article-main-standard@3.15.4) (2019-10-09)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.15.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.15.2...@times-components/article-main-standard@3.15.3) (2019-10-08)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.15.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.15.1...@times-components/article-main-standard@3.15.2) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.15.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.15.0...@times-components/article-main-standard@3.15.1) (2019-10-07)
+
+
+### Bug Fixes
+
+* REPLAT-9338 headline font weight removed ([#2327](https://github.com/newsuk/times-components/issues/2327)) ([7ce7253](https://github.com/newsuk/times-components/commit/7ce7253))
+
+
+
+
+
+# [3.15.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.14.2...@times-components/article-main-standard@3.15.0) (2019-10-04)
+
+
+### Features
+
+* add dateModified to schema REPLAT-7845 ([#2325](https://github.com/newsuk/times-components/issues/2325)) ([911a6b8](https://github.com/newsuk/times-components/commit/911a6b8))
+
+
+
+
+
+## [3.14.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.14.1...@times-components/article-main-standard@3.14.2) (2019-10-02)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.14.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.14.0...@times-components/article-main-standard@3.14.1) (2019-10-01)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+# [3.14.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.13.8...@times-components/article-main-standard@3.14.0) (2019-10-01)
+
+
+### Features
+
+* add time to date published metadata REPLAT-8272 ([#2317](https://github.com/newsuk/times-components/issues/2317)) ([b8d1fb0](https://github.com/newsuk/times-components/commit/b8d1fb0))
+
+
+
+
+
+## [3.13.8](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.13.7...@times-components/article-main-standard@3.13.8) (2019-09-30)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.13.7](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.13.6...@times-components/article-main-standard@3.13.7) (2019-09-27)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.13.6](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.13.5...@times-components/article-main-standard@3.13.6) (2019-09-26)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.13.5](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.13.4...@times-components/article-main-standard@3.13.5) (2019-09-26)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.13.4](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.13.3...@times-components/article-main-standard@3.13.4) (2019-09-24)
+
+
+### Bug Fixes
+
+* react resolution ([#2299](https://github.com/newsuk/times-components/issues/2299)) ([dba85bb](https://github.com/newsuk/times-components/commit/dba85bb))
+
+
+
+
+
+## [3.13.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.13.2...@times-components/article-main-standard@3.13.3) (2019-09-24)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.13.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.13.1...@times-components/article-main-standard@3.13.2) (2019-09-20)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.13.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.13.0...@times-components/article-main-standard@3.13.1) (2019-09-19)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+# [3.13.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.12.12...@times-components/article-main-standard@3.13.0) (2019-09-18)
+
+
+### Features
+
+* ppdsc 180 add newskit tags for article extras ([#2285](https://github.com/newsuk/times-components/issues/2285)) ([cef5b40](https://github.com/newsuk/times-components/commit/cef5b40))
+
+
+
+
+
+## [3.12.12](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.12.11...@times-components/article-main-standard@3.12.12) (2019-09-18)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.12.11](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.12.10...@times-components/article-main-standard@3.12.11) (2019-09-17)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
 ## [3.12.10](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.12.9...@times-components/article-main-standard@3.12.10) (2019-09-17)
 
 **Note:** Version bump only for package @times-components/article-main-standard

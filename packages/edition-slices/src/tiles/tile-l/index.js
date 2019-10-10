@@ -1,3 +1,4 @@
+/* eslint-disable react/require-default-props */
 import React from "react";
 import PropTypes from "prop-types";
 import { editionBreakpoints } from "@times-components/styleguide";
@@ -22,10 +23,6 @@ TileL.propTypes = {
   onPress: PropTypes.func.isRequired,
   tile: PropTypes.shape({}).isRequired,
   breakpoint: PropTypes.string
-};
-
-TileL.defaultProps = {
-  breakpoint: editionBreakpoints.small
 };
 
 export default withTileTracking(TileL);

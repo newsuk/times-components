@@ -38,5 +38,44 @@ export default () => {
       );
       expect(stream.mock.calls).toMatchSnapshot();
     });
+
+    it("should get the referralUrl if its passed in", () => {
+      renderer.create(
+        <ArticleSkeleton
+          {...articleSkeletonProps}
+          analyticsStream={stream}
+          data={articleFixture()}
+          referralUrl="from-props.com"
+          Header={() => null}
+          onAuthorPress={() => {}}
+          onCommentGuidelinesPress={() => {}}
+          onCommentsPress={() => {}}
+          onLinkPress={() => {}}
+          onRelatedArticlePress={() => {}}
+          onTwitterLinkPress={() => {}}
+          onVideoPress={() => {}}
+        />
+      );
+      expect(stream.mock.calls).toMatchSnapshot();
+    });
+
+    it("should get the referralUrl from data if it's not passed in", () => {
+      renderer.create(
+        <ArticleSkeleton
+          {...articleSkeletonProps}
+          analyticsStream={stream}
+          data={articleFixture({ withAds: true, referralUrl: "from-data.com" })}
+          Header={() => null}
+          onAuthorPress={() => {}}
+          onCommentGuidelinesPress={() => {}}
+          onCommentsPress={() => {}}
+          onLinkPress={() => {}}
+          onRelatedArticlePress={() => {}}
+          onTwitterLinkPress={() => {}}
+          onVideoPress={() => {}}
+        />
+      );
+      expect(stream.mock.calls).toMatchSnapshot();
+    });
   });
 };

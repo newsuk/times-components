@@ -1,6 +1,8 @@
+/* eslint-disable react/require-default-props */
 import React from "react";
 import PropTypes from "prop-types";
 import Image from "@times-components/image";
+import { editionBreakpoints } from "@times-components/styleguide";
 import {
   getTileImage,
   getTileStrapline,
@@ -10,7 +12,7 @@ import {
 } from "../shared";
 import stylesFactory from "./styles";
 
-const TileAH = ({ onPress, tile, breakpoint }) => {
+const TileAH = ({ onPress, tile, breakpoint = editionBreakpoints.medium }) => {
   const crop = getTileImage(tile, "crop11");
   const styles = stylesFactory(breakpoint);
 
@@ -43,7 +45,7 @@ const TileAH = ({ onPress, tile, breakpoint }) => {
 TileAH.propTypes = {
   onPress: PropTypes.func.isRequired,
   tile: PropTypes.shape({}).isRequired,
-  breakpoint: PropTypes.string.isRequired
+  breakpoint: PropTypes.string
 };
 
 export default withTileTracking(TileAH);

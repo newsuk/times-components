@@ -3,6 +3,65 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.82](https://github.com/newsuk/times-components/compare/@times-components/star-button@0.1.81...@times-components/star-button@0.1.82) (2019-10-09)
+
+**Note:** Version bump only for package @times-components/star-button
+
+
+
+
+
+## [0.1.81](https://github.com/newsuk/times-components/compare/@times-components/star-button@0.1.80...@times-components/star-button@0.1.81) (2019-10-08)
+
+**Note:** Version bump only for package @times-components/star-button
+
+
+
+
+
+## [0.1.80](https://github.com/newsuk/times-components/compare/@times-components/star-button@0.1.79...@times-components/star-button@0.1.80) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/star-button
+
+
+
+
+
+## [0.1.79](https://github.com/newsuk/times-components/compare/@times-components/star-button@0.1.78...@times-components/star-button@0.1.79) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/star-button
+
+
+
+
+
+## [0.1.78](https://github.com/newsuk/times-components/compare/@times-components/star-button@0.1.77...@times-components/star-button@0.1.78) (2019-10-04)
+
+**Note:** Version bump only for package @times-components/star-button
+
+
+
+
+
+## [0.1.77](https://github.com/newsuk/times-components/compare/@times-components/star-button@0.1.76...@times-components/star-button@0.1.77) (2019-09-24)
+
+
+### Bug Fixes
+
+* react resolution ([#2299](https://github.com/newsuk/times-components/issues/2299)) ([dba85bb](https://github.com/newsuk/times-components/commit/dba85bb))
+
+
+
+
+
+## [0.1.76](https://github.com/newsuk/times-components/compare/@times-components/star-button@0.1.75...@times-components/star-button@0.1.76) (2019-09-17)
+
+**Note:** Version bump only for package @times-components/star-button
+
+
+
+
+
 ## [0.1.75](https://github.com/newsuk/times-components/compare/@times-components/star-button@0.1.74...@times-components/star-button@0.1.75) (2019-09-05)
 
 **Note:** Version bump only for package @times-components/star-button

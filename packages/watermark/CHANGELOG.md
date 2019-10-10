@@ -3,6 +3,55 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.6.49](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.6.48...@times-components/watermark@2.6.49) (2019-10-09)
+
+**Note:** Version bump only for package @times-components/watermark
+
+
+
+
+
+## [2.6.48](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.6.47...@times-components/watermark@2.6.48) (2019-10-08)
+
+
+### Bug Fixes
+
+* deps ([#2333](https://github.com/newsuk/times-components/issues/2333)) ([2af292c](https://github.com/newsuk/times-components/commit/2af292c))
+
+
+
+
+
+## [2.6.47](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.6.46...@times-components/watermark@2.6.47) (2019-10-07)
+
+
+### Bug Fixes
+
+* remove dateUpdated from schema REPLAT-8272 ([#2329](https://github.com/newsuk/times-components/issues/2329)) ([2ed6709](https://github.com/newsuk/times-components/commit/2ed6709))
+
+
+
+
+
+## [2.6.46](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.6.45...@times-components/watermark@2.6.46) (2019-09-24)
+
+
+### Bug Fixes
+
+* react resolution ([#2299](https://github.com/newsuk/times-components/issues/2299)) ([dba85bb](https://github.com/newsuk/times-components/commit/dba85bb))
+
+
+
+
+
+## [2.6.45](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.6.44...@times-components/watermark@2.6.45) (2019-09-17)
+
+**Note:** Version bump only for package @times-components/watermark
+
+
+
+
+
 ## [2.6.44](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.6.43...@times-components/watermark@2.6.44) (2019-09-05)
 
 **Note:** Version bump only for package @times-components/watermark

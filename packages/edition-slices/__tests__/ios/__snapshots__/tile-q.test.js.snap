@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tile q without breakpoint 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "paddingVertical": 10,
+    }
+  }
+  url="/article/123"
+>
+  <Image
+    aspectRatio={1.5}
+    fill={true}
+    style={
+      Object {
+        "marginBottom": 10,
+        "width": "100%",
+      }
+    }
+    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=2688%2C1792%2C0%2C0"
+  />
+</Link>
+`;

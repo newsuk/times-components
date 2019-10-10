@@ -3,6 +3,134 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.44.3](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.44.2...@times-components/slice-layout@0.44.3) (2019-10-09)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.44.2](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.44.1...@times-components/slice-layout@0.44.2) (2019-10-08)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+## [0.44.1](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.44.0...@times-components/slice-layout@0.44.1) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+# [0.44.0](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.43.1...@times-components/slice-layout@0.44.0) (2019-10-07)
+
+
+### Features
+
+* REPLAT-9308 lead 2 no pic 2 tiles swapped for 1024 and 1366 ([#2326](https://github.com/newsuk/times-components/issues/2326)) ([5a57885](https://github.com/newsuk/times-components/commit/5a57885))
+
+
+
+
+
+## [0.43.1](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.43.0...@times-components/slice-layout@0.43.1) (2019-10-04)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
+# [0.43.0](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.42.0...@times-components/slice-layout@0.43.0) (2019-09-30)
+
+
+### Features
+
+* (REPLAT-8561) Supplement secondary 1 and 4 for 1366px ([#2314](https://github.com/newsuk/times-components/issues/2314)) ([8d4e745](https://github.com/newsuk/times-components/commit/8d4e745))
+
+
+
+
+
+# [0.42.0](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.41.4...@times-components/slice-layout@0.42.0) (2019-09-27)
+
+
+### Features
+
+* reverse tiles consecutive secondary4 slices ([#2312](https://github.com/newsuk/times-components/issues/2312)) ([e4e5393](https://github.com/newsuk/times-components/commit/e4e5393))
+
+
+
+
+
+## [0.41.4](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.41.3...@times-components/slice-layout@0.41.4) (2019-09-26)
+
+
+### Bug Fixes
+
+* REPLAT-8454 fix slow scrolling on magazine sections ([#2278](https://github.com/newsuk/times-components/issues/2278)) ([2ac2ea2](https://github.com/newsuk/times-components/commit/2ac2ea2))
+
+
+
+
+
+## [0.41.3](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.41.2...@times-components/slice-layout@0.41.3) (2019-09-26)
+
+
+### Bug Fixes
+
+* (REPLAT-8560) secondary 1 and columnist rearrange ([#2311](https://github.com/newsuk/times-components/issues/2311)) ([bd9c228](https://github.com/newsuk/times-components/commit/bd9c228))
+
+
+
+
+
+## [0.41.2](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.41.1...@times-components/slice-layout@0.41.2) (2019-09-24)
+
+
+### Bug Fixes
+
+* react resolution ([#2299](https://github.com/newsuk/times-components/issues/2299)) ([dba85bb](https://github.com/newsuk/times-components/commit/dba85bb))
+
+
+
+
+
+## [0.41.1](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.41.0...@times-components/slice-layout@0.41.1) (2019-09-24)
+
+
+### Bug Fixes
+
+* secondary 2 no pic and 2 slice minor styling ([#2293](https://github.com/newsuk/times-components/issues/2293)) ([5033c21](https://github.com/newsuk/times-components/commit/5033c21))
+
+
+
+
+
+# [0.41.0](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.40.1...@times-components/slice-layout@0.41.0) (2019-09-20)
+
+
+### Features
+
+* lead one and cartoon padding updates ([#2297](https://github.com/newsuk/times-components/issues/2297)) ([26613d3](https://github.com/newsuk/times-components/commit/26613d3))
+
+
+
+
+
+## [0.40.1](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.40.0...@times-components/slice-layout@0.40.1) (2019-09-17)
+
+**Note:** Version bump only for package @times-components/slice-layout
+
+
+
+
+
 # [0.40.0](https://github.com/newsuk/times-components/compare/@times-components/slice-layout@0.39.0...@times-components/slice-layout@0.40.0) (2019-09-17)
 
 

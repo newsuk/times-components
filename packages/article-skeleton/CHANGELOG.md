@@ -3,6 +3,179 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.17.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.17.3...@times-components/article-skeleton@1.17.4) (2019-10-09)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.17.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.17.2...@times-components/article-skeleton@1.17.3) (2019-10-08)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.17.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.17.1...@times-components/article-skeleton@1.17.2) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.17.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.17.0...@times-components/article-skeleton@1.17.1) (2019-10-07)
+
+
+### Bug Fixes
+
+* remove dateUpdated from schema REPLAT-8272 ([#2329](https://github.com/newsuk/times-components/issues/2329)) ([2ed6709](https://github.com/newsuk/times-components/commit/2ed6709))
+
+
+
+
+
+# [1.17.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.16.2...@times-components/article-skeleton@1.17.0) (2019-10-04)
+
+
+### Features
+
+* add dateModified to schema REPLAT-7845 ([#2325](https://github.com/newsuk/times-components/issues/2325)) ([911a6b8](https://github.com/newsuk/times-components/commit/911a6b8))
+
+
+
+
+
+## [1.16.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.16.1...@times-components/article-skeleton@1.16.2) (2019-10-02)
+
+
+### Bug Fixes
+
+* (REPLAT-9274) fix missing text in some article paragraphs ([#2320](https://github.com/newsuk/times-components/issues/2320)) ([aaaf033](https://github.com/newsuk/times-components/commit/aaaf033))
+
+
+
+
+
+## [1.16.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.16.0...@times-components/article-skeleton@1.16.1) (2019-10-01)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.16.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.15.1...@times-components/article-skeleton@1.16.0) (2019-10-01)
+
+
+### Features
+
+* add time to date published metadata REPLAT-8272 ([#2317](https://github.com/newsuk/times-components/issues/2317)) ([b8d1fb0](https://github.com/newsuk/times-components/commit/b8d1fb0))
+
+
+
+
+
+## [1.15.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.15.0...@times-components/article-skeleton@1.15.1) (2019-09-30)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.15.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.14.19...@times-components/article-skeleton@1.15.0) (2019-09-27)
+
+
+### Features
+
+* REPLAT-8765 add more tracking ([#2306](https://github.com/newsuk/times-components/issues/2306)) ([1459a3e](https://github.com/newsuk/times-components/commit/1459a3e))
+
+
+
+
+
+## [1.14.19](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.14.18...@times-components/article-skeleton@1.14.19) (2019-09-26)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.14.18](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.14.17...@times-components/article-skeleton@1.14.18) (2019-09-26)
+
+
+### Bug Fixes
+
+* REPLAT-7797 fix referral url passing ([#2303](https://github.com/newsuk/times-components/issues/2303)) ([db3e0a0](https://github.com/newsuk/times-components/commit/db3e0a0))
+
+
+
+
+
+## [1.14.17](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.14.16...@times-components/article-skeleton@1.14.17) (2019-09-24)
+
+
+### Bug Fixes
+
+* react resolution ([#2299](https://github.com/newsuk/times-components/issues/2299)) ([dba85bb](https://github.com/newsuk/times-components/commit/dba85bb))
+
+
+
+
+
+## [1.14.16](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.14.15...@times-components/article-skeleton@1.14.16) (2019-09-24)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.14.15](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.14.14...@times-components/article-skeleton@1.14.15) (2019-09-20)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.14.14](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.14.13...@times-components/article-skeleton@1.14.14) (2019-09-19)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.14.13](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.14.12...@times-components/article-skeleton@1.14.13) (2019-09-18)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.14.12](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.14.11...@times-components/article-skeleton@1.14.12) (2019-09-18)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.14.11](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.14.10...@times-components/article-skeleton@1.14.11) (2019-09-17)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
 ## [1.14.10](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.14.9...@times-components/article-skeleton@1.14.10) (2019-09-17)
 
 **Note:** Version bump only for package @times-components/article-skeleton

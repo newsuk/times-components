@@ -9,13 +9,7 @@ exports[`1. secondary one and four - small 1`] = `
     }
   }
 >
-  <View
-    style={
-      Object {
-        "flexDirection": "row",
-      }
-    }
-  >
+  <View>
     <View>
       <Text>
         secondary-1
@@ -73,7 +67,10 @@ exports[`2. secondary one and four - medium 1`] = `
 <View
   style={
     Object {
+      "flex": 1,
       "flexDirection": "row",
+      "padding": 5,
+      "paddingTop": 0,
     }
   }
 >
@@ -84,11 +81,9 @@ exports[`2. secondary one and four - medium 1`] = `
       }
     }
   >
-    <View>
-      <Text>
-        secondary-1
-      </Text>
-    </View>
+    <Text>
+      secondary-1
+    </Text>
   </View>
   <View
     style={
@@ -207,7 +202,10 @@ exports[`3. secondary one and four - wide 1`] = `
 <View
   style={
     Object {
+      "flex": 1,
       "flexDirection": "row",
+      "padding": 5,
+      "paddingTop": 0,
     }
   }
 >
@@ -218,11 +216,9 @@ exports[`3. secondary one and four - wide 1`] = `
       }
     }
   >
-    <View>
-      <Text>
-        secondary-1
-      </Text>
-    </View>
+    <Text>
+      secondary-1
+    </Text>
   </View>
   <View
     style={

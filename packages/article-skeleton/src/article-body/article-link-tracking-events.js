@@ -9,7 +9,8 @@ export default Component =>
         getAttrs: ({ linkType, url }) => ({
           linkType,
           linkUrl: url
-        })
+        }),
+        trackingName: "ArticleLink"
       }
     ]
   });

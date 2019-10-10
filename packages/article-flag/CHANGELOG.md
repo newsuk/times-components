@@ -3,6 +3,65 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.6.79](https://github.com/newsuk/times-components/compare/@times-components/article-flag@2.6.78...@times-components/article-flag@2.6.79) (2019-10-09)
+
+**Note:** Version bump only for package @times-components/article-flag
+
+
+
+
+
+## [2.6.78](https://github.com/newsuk/times-components/compare/@times-components/article-flag@2.6.77...@times-components/article-flag@2.6.78) (2019-10-08)
+
+**Note:** Version bump only for package @times-components/article-flag
+
+
+
+
+
+## [2.6.77](https://github.com/newsuk/times-components/compare/@times-components/article-flag@2.6.76...@times-components/article-flag@2.6.77) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/article-flag
+
+
+
+
+
+## [2.6.76](https://github.com/newsuk/times-components/compare/@times-components/article-flag@2.6.75...@times-components/article-flag@2.6.76) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/article-flag
+
+
+
+
+
+## [2.6.75](https://github.com/newsuk/times-components/compare/@times-components/article-flag@2.6.74...@times-components/article-flag@2.6.75) (2019-10-04)
+
+**Note:** Version bump only for package @times-components/article-flag
+
+
+
+
+
+## [2.6.74](https://github.com/newsuk/times-components/compare/@times-components/article-flag@2.6.73...@times-components/article-flag@2.6.74) (2019-09-24)
+
+
+### Bug Fixes
+
+* react resolution ([#2299](https://github.com/newsuk/times-components/issues/2299)) ([dba85bb](https://github.com/newsuk/times-components/commit/dba85bb))
+
+
+
+
+
+## [2.6.73](https://github.com/newsuk/times-components/compare/@times-components/article-flag@2.6.72...@times-components/article-flag@2.6.73) (2019-09-17)
+
+**Note:** Version bump only for package @times-components/article-flag
+
+
+
+
+
 ## [2.6.72](https://github.com/newsuk/times-components/compare/@times-components/article-flag@2.6.71...@times-components/article-flag@2.6.72) (2019-09-05)
 
 **Note:** Version bump only for package @times-components/article-flag

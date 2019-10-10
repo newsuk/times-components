@@ -3,6 +3,65 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.65](https://github.com/newsuk/times-components/compare/@times-components/gradient@3.1.64...@times-components/gradient@3.1.65) (2019-10-09)
+
+**Note:** Version bump only for package @times-components/gradient
+
+
+
+
+
+## [3.1.64](https://github.com/newsuk/times-components/compare/@times-components/gradient@3.1.63...@times-components/gradient@3.1.64) (2019-10-08)
+
+**Note:** Version bump only for package @times-components/gradient
+
+
+
+
+
+## [3.1.63](https://github.com/newsuk/times-components/compare/@times-components/gradient@3.1.62...@times-components/gradient@3.1.63) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/gradient
+
+
+
+
+
+## [3.1.62](https://github.com/newsuk/times-components/compare/@times-components/gradient@3.1.61...@times-components/gradient@3.1.62) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/gradient
+
+
+
+
+
+## [3.1.61](https://github.com/newsuk/times-components/compare/@times-components/gradient@3.1.60...@times-components/gradient@3.1.61) (2019-10-04)
+
+**Note:** Version bump only for package @times-components/gradient
+
+
+
+
+
+## [3.1.60](https://github.com/newsuk/times-components/compare/@times-components/gradient@3.1.59...@times-components/gradient@3.1.60) (2019-09-24)
+
+
+### Bug Fixes
+
+* react resolution ([#2299](https://github.com/newsuk/times-components/issues/2299)) ([dba85bb](https://github.com/newsuk/times-components/commit/dba85bb))
+
+
+
+
+
+## [3.1.59](https://github.com/newsuk/times-components/compare/@times-components/gradient@3.1.58...@times-components/gradient@3.1.59) (2019-09-17)
+
+**Note:** Version bump only for package @times-components/gradient
+
+
+
+
+
 ## [3.1.58](https://github.com/newsuk/times-components/compare/@times-components/gradient@3.1.57...@times-components/gradient@3.1.58) (2019-09-05)
 
 **Note:** Version bump only for package @times-components/gradient

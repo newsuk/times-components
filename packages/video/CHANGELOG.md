@@ -3,6 +3,65 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.7.82](https://github.com/newsuk/times-components/compare/@times-components/video@4.7.81...@times-components/video@4.7.82) (2019-10-09)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.7.81](https://github.com/newsuk/times-components/compare/@times-components/video@4.7.80...@times-components/video@4.7.81) (2019-10-08)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.7.80](https://github.com/newsuk/times-components/compare/@times-components/video@4.7.79...@times-components/video@4.7.80) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.7.79](https://github.com/newsuk/times-components/compare/@times-components/video@4.7.78...@times-components/video@4.7.79) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.7.78](https://github.com/newsuk/times-components/compare/@times-components/video@4.7.77...@times-components/video@4.7.78) (2019-10-04)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.7.77](https://github.com/newsuk/times-components/compare/@times-components/video@4.7.76...@times-components/video@4.7.77) (2019-09-24)
+
+
+### Bug Fixes
+
+* react resolution ([#2299](https://github.com/newsuk/times-components/issues/2299)) ([dba85bb](https://github.com/newsuk/times-components/commit/dba85bb))
+
+
+
+
+
+## [4.7.76](https://github.com/newsuk/times-components/compare/@times-components/video@4.7.75...@times-components/video@4.7.76) (2019-09-17)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
 ## [4.7.75](https://github.com/newsuk/times-components/compare/@times-components/video@4.7.74...@times-components/video@4.7.75) (2019-09-05)
 
 **Note:** Version bump only for package @times-components/video

@@ -3,6 +3,65 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.99](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.2.98...@times-components/error-view@2.2.99) (2019-10-09)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.2.98](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.2.97...@times-components/error-view@2.2.98) (2019-10-08)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.2.97](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.2.96...@times-components/error-view@2.2.97) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.2.96](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.2.95...@times-components/error-view@2.2.96) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.2.95](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.2.94...@times-components/error-view@2.2.95) (2019-10-04)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
+## [2.2.94](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.2.93...@times-components/error-view@2.2.94) (2019-09-24)
+
+
+### Bug Fixes
+
+* react resolution ([#2299](https://github.com/newsuk/times-components/issues/2299)) ([dba85bb](https://github.com/newsuk/times-components/commit/dba85bb))
+
+
+
+
+
+## [2.2.93](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.2.92...@times-components/error-view@2.2.93) (2019-09-17)
+
+**Note:** Version bump only for package @times-components/error-view
+
+
+
+
+
 ## [2.2.92](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.2.91...@times-components/error-view@2.2.92) (2019-09-05)
 
 **Note:** Version bump only for package @times-components/error-view

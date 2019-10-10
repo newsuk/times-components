@@ -3,6 +3,65 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.33](https://github.com/newsuk/times-components/compare/@times-components/user-state@0.0.32...@times-components/user-state@0.0.33) (2019-10-09)
+
+**Note:** Version bump only for package @times-components/user-state
+
+
+
+
+
+## [0.0.32](https://github.com/newsuk/times-components/compare/@times-components/user-state@0.0.31...@times-components/user-state@0.0.32) (2019-10-08)
+
+**Note:** Version bump only for package @times-components/user-state
+
+
+
+
+
+## [0.0.31](https://github.com/newsuk/times-components/compare/@times-components/user-state@0.0.30...@times-components/user-state@0.0.31) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/user-state
+
+
+
+
+
+## [0.0.30](https://github.com/newsuk/times-components/compare/@times-components/user-state@0.0.29...@times-components/user-state@0.0.30) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/user-state
+
+
+
+
+
+## [0.0.29](https://github.com/newsuk/times-components/compare/@times-components/user-state@0.0.28...@times-components/user-state@0.0.29) (2019-10-04)
+
+**Note:** Version bump only for package @times-components/user-state
+
+
+
+
+
+## [0.0.28](https://github.com/newsuk/times-components/compare/@times-components/user-state@0.0.27...@times-components/user-state@0.0.28) (2019-09-24)
+
+
+### Bug Fixes
+
+* react resolution ([#2299](https://github.com/newsuk/times-components/issues/2299)) ([dba85bb](https://github.com/newsuk/times-components/commit/dba85bb))
+
+
+
+
+
+## [0.0.27](https://github.com/newsuk/times-components/compare/@times-components/user-state@0.0.26...@times-components/user-state@0.0.27) (2019-09-17)
+
+**Note:** Version bump only for package @times-components/user-state
+
+
+
+
+
 ## [0.0.26](https://github.com/newsuk/times-components/compare/@times-components/user-state@0.0.25...@times-components/user-state@0.0.26) (2019-09-05)
 
 **Note:** Version bump only for package @times-components/user-state

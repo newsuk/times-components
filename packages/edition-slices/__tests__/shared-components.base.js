@@ -7,8 +7,11 @@ import { ArticleSummaryHeadline } from "@times-components/article-summary";
 import { iterator } from "@times-components/test-utils";
 import { mockEditionSlice } from "@times-components/fixture-generator";
 import StarButton from "@times-components/star-button";
+import { ResponsiveContext } from "@times-components/responsive";
+import { editionBreakpoints } from "@times-components/styleguide";
 import { TileH, TileX } from "../src/tiles";
 import { TileLink, TileStar, TileSummary } from "../src/tiles/shared";
+import { ResponsiveSlice } from "../src/slices/shared";
 
 jest.mock("@times-components/article-flag", () => ({
   ArticleFlags: "ArticleFlags"
@@ -323,6 +326,189 @@ export default () => {
         );
 
         expect(output.root.findByType(StarButton).props.isDark).toEqual(true);
+      }
+    },
+    {
+      name: "Responsive Slice renders small layout if no breakpoint",
+      test: () => {
+        const renderSmallMock = jest.fn();
+        const renderMediumMock = jest.fn();
+        const renderWideMock = jest.fn();
+        const renderHugeMock = jest.fn();
+
+        TestRenderer.create(
+          <ResponsiveContext.Provider value={{}}>
+            <ResponsiveSlice
+              renderSmall={renderSmallMock}
+              renderMedium={renderMediumMock}
+              renderWide={renderWideMock}
+              renderHuge={renderHugeMock}
+            />
+          </ResponsiveContext.Provider>
+        );
+
+        expect(renderSmallMock).toHaveBeenCalled();
+      }
+    },
+    {
+      name: "Responsive Slice renders huge layout when in huge breakpoint",
+      test: () => {
+        const renderSmallMock = jest.fn();
+        const renderMediumMock = jest.fn();
+        const renderWideMock = jest.fn();
+        const renderHugeMock = jest.fn();
+
+        TestRenderer.create(
+          <ResponsiveContext.Provider
+            value={{ editionBreakpoint: editionBreakpoints.huge }}
+          >
+            <ResponsiveSlice
+              renderSmall={renderSmallMock}
+              renderMedium={renderMediumMock}
+              renderWide={renderWideMock}
+              renderHuge={renderHugeMock}
+            />
+          </ResponsiveContext.Provider>
+        );
+
+        expect(renderHugeMock).toHaveBeenCalled();
+      }
+    },
+    {
+      name:
+        "Responsive Slice fallbacks to wide layout when in huge breakpoint but renderHuge method is undefined",
+      test: () => {
+        const renderSmallMock = jest.fn();
+        const renderMediumMock = jest.fn();
+        const renderWideMock = jest.fn();
+
+        TestRenderer.create(
+          <ResponsiveContext.Provider
+            value={{ editionBreakpoint: editionBreakpoints.huge }}
+          >
+            <ResponsiveSlice
+              renderSmall={renderSmallMock}
+              renderMedium={renderMediumMock}
+              renderWide={renderWideMock}
+            />
+          </ResponsiveContext.Provider>
+        );
+
+        expect(renderWideMock).toHaveBeenCalled();
+      }
+    },
+    {
+      name:
+        "Responsive Slice fallbacks to medium layout when in huge breakpoint but renderHuge and renderWide methods are undefined",
+      test: () => {
+        const renderSmallMock = jest.fn();
+        const renderMediumMock = jest.fn();
+
+        TestRenderer.create(
+          <ResponsiveContext.Provider
+            value={{ editionBreakpoint: editionBreakpoints.huge }}
+          >
+            <ResponsiveSlice
+              renderSmall={renderSmallMock}
+              renderMedium={renderMediumMock}
+            />
+          </ResponsiveContext.Provider>
+        );
+
+        expect(renderMediumMock).toHaveBeenCalled();
+      }
+    },
+    {
+      name: "Responsive Slice renders wide layout when in wide breakpoint",
+      test: () => {
+        const renderSmallMock = jest.fn();
+        const renderMediumMock = jest.fn();
+        const renderWideMock = jest.fn();
+        const renderHugeMock = jest.fn();
+
+        TestRenderer.create(
+          <ResponsiveContext.Provider
+            value={{ editionBreakpoint: editionBreakpoints.wide }}
+          >
+            <ResponsiveSlice
+              renderSmall={renderSmallMock}
+              renderMedium={renderMediumMock}
+              renderWide={renderWideMock}
+              renderHuge={renderHugeMock}
+            />
+          </ResponsiveContext.Provider>
+        );
+
+        expect(renderWideMock).toHaveBeenCalled();
+      }
+    },
+    {
+      name:
+        "Responsive Slice fallbacks to medium layout when in wide breakpoint but renderWide method is undefined",
+      test: () => {
+        const renderSmallMock = jest.fn();
+        const renderMediumMock = jest.fn();
+
+        TestRenderer.create(
+          <ResponsiveContext.Provider
+            value={{ editionBreakpoint: editionBreakpoints.wide }}
+          >
+            <ResponsiveSlice
+              renderSmall={renderSmallMock}
+              renderMedium={renderMediumMock}
+            />
+          </ResponsiveContext.Provider>
+        );
+
+        expect(renderMediumMock).toHaveBeenCalled();
+      }
+    },
+    {
+      name: "Responsive Slice renders medium layout when in medium breakpoint",
+      test: () => {
+        const renderSmallMock = jest.fn();
+        const renderMediumMock = jest.fn();
+        const renderWideMock = jest.fn();
+        const renderHugeMock = jest.fn();
+
+        TestRenderer.create(
+          <ResponsiveContext.Provider
+            value={{ editionBreakpoint: editionBreakpoints.medium }}
+          >
+            <ResponsiveSlice
+              renderSmall={renderSmallMock}
+              renderMedium={renderMediumMock}
+              renderWide={renderWideMock}
+              renderHuge={renderHugeMock}
+            />
+          </ResponsiveContext.Provider>
+        );
+
+        expect(renderMediumMock).toHaveBeenCalled();
+      }
+    },
+    {
+      name: "Responsive Slice renders small layout when in small breakpoint",
+      test: () => {
+        const renderSmallMock = jest.fn();
+        const renderMediumMock = jest.fn();
+        const renderWideMock = jest.fn();
+        const renderHugeMock = jest.fn();
+
+        TestRenderer.create(
+          <ResponsiveContext.Provider
+            value={{ editionBreakpoint: editionBreakpoints.small }}
+          >
+            <ResponsiveSlice
+              renderSmall={renderSmallMock}
+              renderMedium={renderMediumMock}
+              renderWide={renderWideMock}
+              renderHuge={renderHugeMock}
+            />
+          </ResponsiveContext.Provider>
+        );
+
+        expect(renderSmallMock).toHaveBeenCalled();
       }
     }
   ];

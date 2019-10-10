@@ -3,6 +3,55 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.47](https://github.com/newsuk/times-components/compare/@times-components/mocks@0.0.46...@times-components/mocks@0.0.47) (2019-10-09)
+
+**Note:** Version bump only for package @times-components/mocks
+
+
+
+
+
+## [0.0.46](https://github.com/newsuk/times-components/compare/@times-components/mocks@0.0.45...@times-components/mocks@0.0.46) (2019-10-08)
+
+
+### Bug Fixes
+
+* deps ([#2333](https://github.com/newsuk/times-components/issues/2333)) ([2af292c](https://github.com/newsuk/times-components/commit/2af292c))
+
+
+
+
+
+## [0.0.45](https://github.com/newsuk/times-components/compare/@times-components/mocks@0.0.44...@times-components/mocks@0.0.45) (2019-10-07)
+
+
+### Bug Fixes
+
+* remove dateUpdated from schema REPLAT-8272 ([#2329](https://github.com/newsuk/times-components/issues/2329)) ([2ed6709](https://github.com/newsuk/times-components/commit/2ed6709))
+
+
+
+
+
+## [0.0.44](https://github.com/newsuk/times-components/compare/@times-components/mocks@0.0.43...@times-components/mocks@0.0.44) (2019-09-24)
+
+
+### Bug Fixes
+
+* react resolution ([#2299](https://github.com/newsuk/times-components/issues/2299)) ([dba85bb](https://github.com/newsuk/times-components/commit/dba85bb))
+
+
+
+
+
+## [0.0.43](https://github.com/newsuk/times-components/compare/@times-components/mocks@0.0.42...@times-components/mocks@0.0.43) (2019-09-17)
+
+**Note:** Version bump only for package @times-components/mocks
+
+
+
+
+
 ## [0.0.42](https://github.com/newsuk/times-components/compare/@times-components/mocks@0.0.41...@times-components/mocks@0.0.42) (2019-09-05)
 
 **Note:** Version bump only for package @times-components/mocks

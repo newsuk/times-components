@@ -3,6 +3,65 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.41](https://github.com/newsuk/times-components/compare/@times-components/storybook@4.0.40...@times-components/storybook@4.0.41) (2019-10-09)
+
+**Note:** Version bump only for package @times-components/storybook
+
+
+
+
+
+## [4.0.40](https://github.com/newsuk/times-components/compare/@times-components/storybook@4.0.39...@times-components/storybook@4.0.40) (2019-10-08)
+
+**Note:** Version bump only for package @times-components/storybook
+
+
+
+
+
+## [4.0.39](https://github.com/newsuk/times-components/compare/@times-components/storybook@4.0.38...@times-components/storybook@4.0.39) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/storybook
+
+
+
+
+
+## [4.0.38](https://github.com/newsuk/times-components/compare/@times-components/storybook@4.0.37...@times-components/storybook@4.0.38) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/storybook
+
+
+
+
+
+## [4.0.37](https://github.com/newsuk/times-components/compare/@times-components/storybook@4.0.36...@times-components/storybook@4.0.37) (2019-10-04)
+
+**Note:** Version bump only for package @times-components/storybook
+
+
+
+
+
+## [4.0.36](https://github.com/newsuk/times-components/compare/@times-components/storybook@4.0.35...@times-components/storybook@4.0.36) (2019-09-24)
+
+
+### Bug Fixes
+
+* react resolution ([#2299](https://github.com/newsuk/times-components/issues/2299)) ([dba85bb](https://github.com/newsuk/times-components/commit/dba85bb))
+
+
+
+
+
+## [4.0.35](https://github.com/newsuk/times-components/compare/@times-components/storybook@4.0.34...@times-components/storybook@4.0.35) (2019-09-17)
+
+**Note:** Version bump only for package @times-components/storybook
+
+
+
+
+
 ## [4.0.34](https://github.com/newsuk/times-components/compare/@times-components/storybook@4.0.33...@times-components/storybook@4.0.34) (2019-09-05)
 
 **Note:** Version bump only for package @times-components/storybook

@@ -3,6 +3,65 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.20.100](https://github.com/newsuk/times-components/compare/@times-components/date-publication@0.20.99...@times-components/date-publication@0.20.100) (2019-10-09)
+
+**Note:** Version bump only for package @times-components/date-publication
+
+
+
+
+
+## [0.20.99](https://github.com/newsuk/times-components/compare/@times-components/date-publication@0.20.98...@times-components/date-publication@0.20.99) (2019-10-08)
+
+**Note:** Version bump only for package @times-components/date-publication
+
+
+
+
+
+## [0.20.98](https://github.com/newsuk/times-components/compare/@times-components/date-publication@0.20.97...@times-components/date-publication@0.20.98) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/date-publication
+
+
+
+
+
+## [0.20.97](https://github.com/newsuk/times-components/compare/@times-components/date-publication@0.20.96...@times-components/date-publication@0.20.97) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/date-publication
+
+
+
+
+
+## [0.20.96](https://github.com/newsuk/times-components/compare/@times-components/date-publication@0.20.95...@times-components/date-publication@0.20.96) (2019-10-04)
+
+**Note:** Version bump only for package @times-components/date-publication
+
+
+
+
+
+## [0.20.95](https://github.com/newsuk/times-components/compare/@times-components/date-publication@0.20.94...@times-components/date-publication@0.20.95) (2019-09-24)
+
+
+### Bug Fixes
+
+* react resolution ([#2299](https://github.com/newsuk/times-components/issues/2299)) ([dba85bb](https://github.com/newsuk/times-components/commit/dba85bb))
+
+
+
+
+
+## [0.20.94](https://github.com/newsuk/times-components/compare/@times-components/date-publication@0.20.93...@times-components/date-publication@0.20.94) (2019-09-17)
+
+**Note:** Version bump only for package @times-components/date-publication
+
+
+
+
+
 ## [0.20.93](https://github.com/newsuk/times-components/compare/@times-components/date-publication@0.20.92...@times-components/date-publication@0.20.93) (2019-09-05)
 
 **Note:** Version bump only for package @times-components/date-publication

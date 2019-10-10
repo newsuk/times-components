@@ -1,6 +1,6 @@
 {
   "name": "@times-components/eslint-config-thetimes",
-  "version": "0.8.14",
+  "version": "0.8.15",
   "description": "The eslint config for Times Components",
   "main": "index.js",
   "scripts": {
@@ -29,6 +29,9 @@
     "eslint-plugin-react": "7.11.1",
     "eslint-plugin-react-hooks": "2.0.1",
     "prettier": "1.14.3"
+  },
+  "resolutions": {
+    "react": "16.9.0"
   },
   "peerDependencies": {
     "eslint": "5.9.0"

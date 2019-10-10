@@ -3,6 +3,58 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.4](https://github.com/newsuk/times-components/compare/@times-components/context@1.1.3...@times-components/context@1.1.4) (2019-10-09)
+
+**Note:** Version bump only for package @times-components/context
+
+
+
+
+
+## [1.1.3](https://github.com/newsuk/times-components/compare/@times-components/context@1.1.2...@times-components/context@1.1.3) (2019-10-08)
+
+
+### Bug Fixes
+
+* deps ([#2333](https://github.com/newsuk/times-components/issues/2333)) ([2af292c](https://github.com/newsuk/times-components/commit/2af292c))
+
+
+
+
+
+## [1.1.2](https://github.com/newsuk/times-components/compare/@times-components/context@1.1.1...@times-components/context@1.1.2) (2019-10-07)
+
+
+### Bug Fixes
+
+* remove dateUpdated from schema REPLAT-8272 ([#2329](https://github.com/newsuk/times-components/issues/2329)) ([2ed6709](https://github.com/newsuk/times-components/commit/2ed6709))
+
+
+
+
+
+## [1.1.1](https://github.com/newsuk/times-components/compare/@times-components/context@1.1.0...@times-components/context@1.1.1) (2019-09-24)
+
+
+### Bug Fixes
+
+* react resolution ([#2299](https://github.com/newsuk/times-components/issues/2299)) ([dba85bb](https://github.com/newsuk/times-components/commit/dba85bb))
+
+
+
+
+
+# [1.1.0](https://github.com/newsuk/times-components/compare/@times-components/context@1.0.41...@times-components/context@1.1.0) (2019-09-17)
+
+
+### Features
+
+* ppdsc 180 init newskit feature flag ([#2284](https://github.com/newsuk/times-components/issues/2284)) ([bfaa852](https://github.com/newsuk/times-components/commit/bfaa852))
+
+
+
+
+
 ## [1.0.41](https://github.com/newsuk/times-components/compare/@times-components/context@1.0.40...@times-components/context@1.0.41) (2019-09-05)
 
 **Note:** Version bump only for package @times-components/context

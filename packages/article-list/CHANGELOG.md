@@ -3,6 +3,116 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.3.10](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.3.9...@times-components/article-list@9.3.10) (2019-10-09)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.3.9](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.3.8...@times-components/article-list@9.3.9) (2019-10-08)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.3.8](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.3.7...@times-components/article-list@9.3.8) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.3.7](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.3.6...@times-components/article-list@9.3.7) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.3.6](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.3.5...@times-components/article-list@9.3.6) (2019-10-04)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.3.5](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.3.4...@times-components/article-list@9.3.5) (2019-10-02)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.3.4](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.3.3...@times-components/article-list@9.3.4) (2019-10-01)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.3.3](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.3.2...@times-components/article-list@9.3.3) (2019-09-27)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.3.2](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.3.1...@times-components/article-list@9.3.2) (2019-09-24)
+
+
+### Bug Fixes
+
+* react resolution ([#2299](https://github.com/newsuk/times-components/issues/2299)) ([dba85bb](https://github.com/newsuk/times-components/commit/dba85bb))
+
+
+
+
+
+## [9.3.1](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.3.0...@times-components/article-list@9.3.1) (2019-09-19)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+# [9.3.0](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.2.66...@times-components/article-list@9.3.0) (2019-09-19)
+
+
+### Features
+
+* REPLAT-8755 add a switch to disable autoscroll on web articlelist ([#2295](https://github.com/newsuk/times-components/issues/2295)) ([a896acf](https://github.com/newsuk/times-components/commit/a896acf))
+
+
+
+
+
+## [9.2.66](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.2.65...@times-components/article-list@9.2.66) (2019-09-18)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.2.65](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.2.64...@times-components/article-list@9.2.65) (2019-09-17)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
 ## [9.2.64](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.2.63...@times-components/article-list@9.2.64) (2019-09-16)
 
 **Note:** Version bump only for package @times-components/article-list

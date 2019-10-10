@@ -3,6 +3,65 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.7.20](https://github.com/newsuk/times-components/compare/@times-components/ad@2.7.19...@times-components/ad@2.7.20) (2019-10-09)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.7.19](https://github.com/newsuk/times-components/compare/@times-components/ad@2.7.18...@times-components/ad@2.7.19) (2019-10-08)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.7.18](https://github.com/newsuk/times-components/compare/@times-components/ad@2.7.17...@times-components/ad@2.7.18) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.7.17](https://github.com/newsuk/times-components/compare/@times-components/ad@2.7.16...@times-components/ad@2.7.17) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.7.16](https://github.com/newsuk/times-components/compare/@times-components/ad@2.7.15...@times-components/ad@2.7.16) (2019-10-04)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.7.15](https://github.com/newsuk/times-components/compare/@times-components/ad@2.7.14...@times-components/ad@2.7.15) (2019-09-24)
+
+
+### Bug Fixes
+
+* react resolution ([#2299](https://github.com/newsuk/times-components/issues/2299)) ([dba85bb](https://github.com/newsuk/times-components/commit/dba85bb))
+
+
+
+
+
+## [2.7.14](https://github.com/newsuk/times-components/compare/@times-components/ad@2.7.13...@times-components/ad@2.7.14) (2019-09-17)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
 ## [2.7.13](https://github.com/newsuk/times-components/compare/@times-components/ad@2.7.12...@times-components/ad@2.7.13) (2019-09-16)
 
 **Note:** Version bump only for package @times-components/ad

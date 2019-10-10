@@ -195,6 +195,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 17,
                     "fontStyle": "normal",
+                    "height": 0,
                     "lineHeight": 28,
                     "marginBottom": 20,
                   }
@@ -897,6 +898,7 @@ exports[`5. an article skeleton with responsive items 1`] = `
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 17,
                     "fontStyle": "normal",
+                    "height": 0,
                     "lineHeight": 28,
                     "marginBottom": 20,
                   }
@@ -1021,6 +1023,7 @@ exports[`5. an article skeleton with responsive items 1`] = `
                     "fontFamily": "TimesDigitalW04",
                     "fontSize": 17,
                     "fontStyle": "normal",
+                    "height": 0,
                     "lineHeight": 28,
                     "marginBottom": 20,
                   }

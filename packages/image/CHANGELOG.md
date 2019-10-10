@@ -3,6 +3,65 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.4.31](https://github.com/newsuk/times-components/compare/@times-components/image@6.4.30...@times-components/image@6.4.31) (2019-10-09)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.4.30](https://github.com/newsuk/times-components/compare/@times-components/image@6.4.29...@times-components/image@6.4.30) (2019-10-08)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.4.29](https://github.com/newsuk/times-components/compare/@times-components/image@6.4.28...@times-components/image@6.4.29) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.4.28](https://github.com/newsuk/times-components/compare/@times-components/image@6.4.27...@times-components/image@6.4.28) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.4.27](https://github.com/newsuk/times-components/compare/@times-components/image@6.4.26...@times-components/image@6.4.27) (2019-10-04)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.4.26](https://github.com/newsuk/times-components/compare/@times-components/image@6.4.25...@times-components/image@6.4.26) (2019-09-24)
+
+
+### Bug Fixes
+
+* react resolution ([#2299](https://github.com/newsuk/times-components/issues/2299)) ([dba85bb](https://github.com/newsuk/times-components/commit/dba85bb))
+
+
+
+
+
+## [6.4.25](https://github.com/newsuk/times-components/compare/@times-components/image@6.4.24...@times-components/image@6.4.25) (2019-09-17)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
 ## [6.4.24](https://github.com/newsuk/times-components/compare/@times-components/image@6.4.23...@times-components/image@6.4.24) (2019-09-05)
 
 **Note:** Version bump only for package @times-components/image

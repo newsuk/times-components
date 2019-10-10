@@ -3,6 +3,65 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.69](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.4.68...@times-components/lazy-load@0.4.69) (2019-10-09)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.4.68](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.4.67...@times-components/lazy-load@0.4.68) (2019-10-08)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.4.67](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.4.66...@times-components/lazy-load@0.4.67) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.4.66](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.4.65...@times-components/lazy-load@0.4.66) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.4.65](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.4.64...@times-components/lazy-load@0.4.65) (2019-10-04)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
+## [0.4.64](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.4.63...@times-components/lazy-load@0.4.64) (2019-09-24)
+
+
+### Bug Fixes
+
+* react resolution ([#2299](https://github.com/newsuk/times-components/issues/2299)) ([dba85bb](https://github.com/newsuk/times-components/commit/dba85bb))
+
+
+
+
+
+## [0.4.63](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.4.62...@times-components/lazy-load@0.4.63) (2019-09-17)
+
+**Note:** Version bump only for package @times-components/lazy-load
+
+
+
+
+
 ## [0.4.62](https://github.com/newsuk/times-components/compare/@times-components/lazy-load@0.4.61...@times-components/lazy-load@0.4.62) (2019-09-05)
 
 **Note:** Version bump only for package @times-components/lazy-load

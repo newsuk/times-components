@@ -7,10 +7,16 @@ import {
 const headlineFontSizeResolver = {
   [editionBreakpoints.medium]: 20,
   [editionBreakpoints.wide]: 20,
-  [editionBreakpoints.huge]: 35
+  [editionBreakpoints.huge]: 22
 };
 
-const styles = (breakpoint = editionBreakpoints.medium) => ({
+const containerHeightResolver = {
+  [editionBreakpoints.medium]: 143,
+  [editionBreakpoints.wide]: 195,
+  [editionBreakpoints.huge]: 243
+};
+
+const styles = breakpoint => ({
   header: {
     paddingHorizontal: spacing(2),
     paddingTop: spacing(2),
@@ -29,7 +35,7 @@ const styles = (breakpoint = editionBreakpoints.medium) => ({
     backgroundColor: colours.functional.border,
     flex: 1,
     marginHorizontal: spacing(2),
-    height: 150,
+    height: containerHeightResolver[breakpoint],
     overflow: "hidden"
   }
 });

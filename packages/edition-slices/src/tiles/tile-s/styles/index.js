@@ -29,8 +29,7 @@ const smallBreakpointStyles = {
   title: {
     color: colours.functional.brandColour,
     fontFamily: fonts.headline,
-    fontSize: fontSizes.smallHeadline,
-    marginBottom: spacing(3)
+    fontSize: fontSizes.smallHeadline
   },
   titleWrapper: {
     alignItems: "center"
@@ -58,19 +57,41 @@ const mediumBreakpointStyles = {
     lineHeight: 20
   },
   title: {
-    color: colours.functional.brandColour,
-    fontFamily: fonts.headline,
+    ...smallBreakpointStyles.title,
     fontSize: 20,
     lineHeight: 20,
-    marginBottom: spacing(2)
+    marginBottom: spacing(1)
+  },
+  titleWithoutMargin: {
+    ...smallBreakpointStyles.title,
+    fontSize: 20,
+    lineHeight: 20,
+    marginBottom: 0
   },
   titleWrapper: {
     flexDirection: "row",
-    alignItems: "center"
+    alignItems: "center",
+    marginBottom: spacing(1)
   }
 };
 
-export default breakpoint =>
-  breakpoint === editionBreakpoints.small
-    ? smallBreakpointStyles
-    : mediumBreakpointStyles;
+const wideBreakpointStyle = {
+  ...mediumBreakpointStyles,
+  title: {
+    ...mediumBreakpointStyles.title,
+    marginBottom: 0
+  },
+  titleWrapper: {
+    ...mediumBreakpointStyles.titleWrapper,
+    marginBottom: spacing(2)
+  }
+};
+
+const styleResolver = {
+  [editionBreakpoints.small]: smallBreakpointStyles,
+  [editionBreakpoints.medium]: mediumBreakpointStyles,
+  [editionBreakpoints.wide]: wideBreakpointStyle,
+  [editionBreakpoints.huge]: wideBreakpointStyle
+};
+
+export default breakpoint => styleResolver[breakpoint];

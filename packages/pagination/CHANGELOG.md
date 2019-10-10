@@ -3,6 +3,65 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.110](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.2.109...@times-components/pagination@3.2.110) (2019-10-09)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.2.109](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.2.108...@times-components/pagination@3.2.109) (2019-10-08)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.2.108](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.2.107...@times-components/pagination@3.2.108) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.2.107](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.2.106...@times-components/pagination@3.2.107) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.2.106](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.2.105...@times-components/pagination@3.2.106) (2019-10-04)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.2.105](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.2.104...@times-components/pagination@3.2.105) (2019-09-24)
+
+
+### Bug Fixes
+
+* react resolution ([#2299](https://github.com/newsuk/times-components/issues/2299)) ([dba85bb](https://github.com/newsuk/times-components/commit/dba85bb))
+
+
+
+
+
+## [3.2.104](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.2.103...@times-components/pagination@3.2.104) (2019-09-17)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
 ## [3.2.103](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.2.102...@times-components/pagination@3.2.103) (2019-09-05)
 
 **Note:** Version bump only for package @times-components/pagination

@@ -3,6 +3,66 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.11.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.10.1...@times-components/provider-queries@2.11.0) (2019-10-04)
+
+
+### Features
+
+* add dateModified to schema REPLAT-7845 ([#2325](https://github.com/newsuk/times-components/issues/2325)) ([911a6b8](https://github.com/newsuk/times-components/commit/911a6b8))
+
+
+
+
+
+## [2.10.1](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.10.0...@times-components/provider-queries@2.10.1) (2019-10-01)
+
+
+### Bug Fixes
+
+* (REPLAT-9284) move topics query out of edition ([#2318](https://github.com/newsuk/times-components/issues/2318)) ([1023513](https://github.com/newsuk/times-components/commit/1023513))
+
+
+
+
+
+# [2.10.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.9.2...@times-components/provider-queries@2.10.0) (2019-09-27)
+
+
+### Features
+
+* REPLAT-8765 add more tracking ([#2306](https://github.com/newsuk/times-components/issues/2306)) ([1459a3e](https://github.com/newsuk/times-components/commit/1459a3e))
+
+
+
+
+
+## [2.9.2](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.9.1...@times-components/provider-queries@2.9.2) (2019-09-24)
+
+**Note:** Version bump only for package @times-components/provider-queries
+
+
+
+
+
+## [2.9.1](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.9.0...@times-components/provider-queries@2.9.1) (2019-09-19)
+
+**Note:** Version bump only for package @times-components/provider-queries
+
+
+
+
+
+# [2.9.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.8.0...@times-components/provider-queries@2.9.0) (2019-09-18)
+
+
+### Features
+
+* leadOneAndFour for 1366px ([#2291](https://github.com/newsuk/times-components/issues/2291)) ([cd2585a](https://github.com/newsuk/times-components/commit/cd2585a))
+
+
+
+
+
 # [2.8.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.7.5...@times-components/provider-queries@2.8.0) (2019-09-16)
 
 

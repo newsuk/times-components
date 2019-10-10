@@ -3,6 +3,73 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.3.112](https://github.com/newsuk/times-components/compare/@times-components/markup@3.3.111...@times-components/markup@3.3.112) (2019-10-09)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.3.111](https://github.com/newsuk/times-components/compare/@times-components/markup@3.3.110...@times-components/markup@3.3.111) (2019-10-08)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.3.110](https://github.com/newsuk/times-components/compare/@times-components/markup@3.3.109...@times-components/markup@3.3.110) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.3.109](https://github.com/newsuk/times-components/compare/@times-components/markup@3.3.108...@times-components/markup@3.3.109) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.3.108](https://github.com/newsuk/times-components/compare/@times-components/markup@3.3.107...@times-components/markup@3.3.108) (2019-10-04)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.3.107](https://github.com/newsuk/times-components/compare/@times-components/markup@3.3.106...@times-components/markup@3.3.107) (2019-10-02)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
+## [3.3.106](https://github.com/newsuk/times-components/compare/@times-components/markup@3.3.105...@times-components/markup@3.3.106) (2019-09-24)
+
+
+### Bug Fixes
+
+* react resolution ([#2299](https://github.com/newsuk/times-components/issues/2299)) ([dba85bb](https://github.com/newsuk/times-components/commit/dba85bb))
+
+
+
+
+
+## [3.3.105](https://github.com/newsuk/times-components/compare/@times-components/markup@3.3.104...@times-components/markup@3.3.105) (2019-09-17)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
 ## [3.3.104](https://github.com/newsuk/times-components/compare/@times-components/markup@3.3.103...@times-components/markup@3.3.104) (2019-09-13)
 
 **Note:** Version bump only for package @times-components/markup

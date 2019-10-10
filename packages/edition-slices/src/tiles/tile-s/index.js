@@ -21,12 +21,16 @@ const TileS = ({
   logo = null
 }) => {
   const styles = styleFactory(breakpoint);
+  const headLineStyles =
+    breakpoint === editionBreakpoints.medium && logo
+      ? styles.titleWithoutMargin
+      : styles.title;
 
   return (
     <View style={styles.container}>
       <View style={styles.titleWrapper}>
         {logo}
-        <Text style={styles.title}>{tile.title}</Text>
+        <Text style={headLineStyles}>{tile.title}</Text>
       </View>
       <Text style={styles.paragraph}>{renderAst(tile.content)}</Text>
       {tile.byline &&

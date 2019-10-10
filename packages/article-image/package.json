@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-image",
-  "version": "7.3.35",
+  "version": "7.3.42",
   "description": "Article Image",
   "main": "dist/article-image",
   "dev": "src/article-image",
@@ -38,13 +38,13 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@babel/core": "7.4.4",
-    "@times-components/eslint-config-thetimes": "0.8.14",
-    "@times-components/jest-configurator": "2.6.5",
-    "@times-components/jest-serializer": "3.2.17",
-    "@times-components/mocks": "0.0.42",
-    "@times-components/storybook": "4.0.34",
-    "@times-components/test-utils": "2.3.5",
-    "@times-components/webpack-configurator": "2.0.25",
+    "@times-components/eslint-config-thetimes": "0.8.15",
+    "@times-components/jest-configurator": "2.6.7",
+    "@times-components/jest-serializer": "3.2.19",
+    "@times-components/mocks": "0.0.47",
+    "@times-components/storybook": "4.0.41",
+    "@times-components/test-utils": "2.3.6",
+    "@times-components/webpack-configurator": "2.0.26",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.5",
     "babel-plugin-add-react-displayname": "0.0.5",
@@ -69,13 +69,16 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/caption": "3.0.67",
-    "@times-components/context": "1.0.41",
-    "@times-components/image": "6.4.24",
-    "@times-components/responsive": "0.4.65",
-    "@times-components/styleguide": "3.28.47",
+    "@times-components/caption": "3.0.74",
+    "@times-components/context": "1.1.4",
+    "@times-components/image": "6.4.31",
+    "@times-components/responsive": "0.4.72",
+    "@times-components/styleguide": "3.28.54",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"
+  },
+  "resolutions": {
+    "react": "16.9.0"
   },
   "peerDependencies": {
     "react": ">=16.5",

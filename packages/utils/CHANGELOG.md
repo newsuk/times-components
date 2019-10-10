@@ -3,6 +3,55 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.1](https://github.com/newsuk/times-components/compare/@times-components/utils@4.11.38...@times-components/utils@5.0.1) (2019-10-09)
+
+**Note:** Version bump only for package @times-components/utils
+
+
+
+
+
+## [4.11.38](https://github.com/newsuk/times-components/compare/@times-components/utils@4.11.37...@times-components/utils@4.11.38) (2019-10-07)
+
+
+### Bug Fixes
+
+* deps ([#2331](https://github.com/newsuk/times-components/issues/2331)) ([b6d8344](https://github.com/newsuk/times-components/commit/b6d8344))
+
+
+
+
+
+## [4.11.37](https://github.com/newsuk/times-components/compare/@times-components/utils@4.11.36...@times-components/utils@4.11.37) (2019-10-04)
+
+
+### Bug Fixes
+
+* increase test coverage for slices on web ([#2324](https://github.com/newsuk/times-components/issues/2324)) ([4087b7f](https://github.com/newsuk/times-components/commit/4087b7f))
+
+
+
+
+
+## [4.11.36](https://github.com/newsuk/times-components/compare/@times-components/utils@4.11.35...@times-components/utils@4.11.36) (2019-09-24)
+
+
+### Bug Fixes
+
+* react resolution ([#2299](https://github.com/newsuk/times-components/issues/2299)) ([dba85bb](https://github.com/newsuk/times-components/commit/dba85bb))
+
+
+
+
+
+## [4.11.35](https://github.com/newsuk/times-components/compare/@times-components/utils@4.11.34...@times-components/utils@4.11.35) (2019-09-17)
+
+**Note:** Version bump only for package @times-components/utils
+
+
+
+
+
 ## [4.11.34](https://github.com/newsuk/times-components/compare/@times-components/utils@4.11.33...@times-components/utils@4.11.34) (2019-09-05)
 
 **Note:** Version bump only for package @times-components/utils

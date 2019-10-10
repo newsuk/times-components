@@ -115,6 +115,42 @@ export default () => {
     },
     {
       name:
+        "does not scroll to top when using bottom next pager and scroll is disabled",
+      test() {
+        const windowSpy = jest.spyOn(window, "scroll");
+        const onNext = jest.fn();
+        const consoleSpy = jest.spyOn(console, "error").mockImplementation();
+        const testInstance = TestRenderer.create(
+          <ArticleList
+            adConfig={adConfig}
+            articles={articlesFixture}
+            scrollToTop={false}
+            count={5}
+            emptyStateMessage="Empty state"
+            onNext={onNext}
+            page={1}
+            pageSize={3}
+            refetch={() => {}}
+          />
+        );
+
+        const [, nextPage] = testInstance.root.findAll(
+          node => node.props.testID === "page-next"
+        );
+
+        nextPage.props.onPress();
+
+        expect(window.scroll).not.toHaveBeenCalledWith({
+          left: 0,
+          top: 0
+        });
+
+        windowSpy.mockRestore();
+        consoleSpy.mockRestore();
+      }
+    },
+    {
+      name:
         "does not throw when using bottom next pager if window does not exist",
       test() {
         // eslint-disable-next-line prefer-destructuring

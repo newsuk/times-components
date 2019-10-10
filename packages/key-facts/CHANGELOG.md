@@ -3,6 +3,73 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.69](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.0.68...@times-components/key-facts@2.0.69) (2019-10-09)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.0.68](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.0.67...@times-components/key-facts@2.0.68) (2019-10-08)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.0.67](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.0.66...@times-components/key-facts@2.0.67) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.0.66](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.0.65...@times-components/key-facts@2.0.66) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.0.65](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.0.64...@times-components/key-facts@2.0.65) (2019-10-04)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.0.64](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.0.63...@times-components/key-facts@2.0.64) (2019-10-02)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
+## [2.0.63](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.0.62...@times-components/key-facts@2.0.63) (2019-09-24)
+
+
+### Bug Fixes
+
+* react resolution ([#2299](https://github.com/newsuk/times-components/issues/2299)) ([dba85bb](https://github.com/newsuk/times-components/commit/dba85bb))
+
+
+
+
+
+## [2.0.62](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.0.61...@times-components/key-facts@2.0.62) (2019-09-17)
+
+**Note:** Version bump only for package @times-components/key-facts
+
+
+
+
+
 ## [2.0.61](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.0.60...@times-components/key-facts@2.0.61) (2019-09-13)
 
 **Note:** Version bump only for package @times-components/key-facts

@@ -40,7 +40,6 @@ const mediumBreakpointStyles = {
     fontFamily: fonts.headline,
     fontSize: 20,
     lineHeight: 20,
-    marginBottom: spacing(1),
     marginTop: spacing(6),
     textAlign: "center"
   },
@@ -57,6 +56,19 @@ const wideBreakpointStyles = {
   ...mediumBreakpointStyles,
   container: {
     paddingBottom: spacing(12)
+  },
+  headline: {
+    ...mediumBreakpointStyles.headline,
+    fontSize: 24,
+    lineHeight: 24
+  }
+};
+
+const hugeBreakpointStyle = {
+  ...wideBreakpointStyles,
+  headline: {
+    ...wideBreakpointStyles.headline,
+    marginBottom: spacing(2)
   }
 };
 
@@ -64,7 +76,7 @@ const breakPointsStyles = {
   [editionBreakpoints.small]: smallBreakpointStyles,
   [editionBreakpoints.medium]: mediumBreakpointStyles,
   [editionBreakpoints.wide]: wideBreakpointStyles,
-  [editionBreakpoints.huge]: wideBreakpointStyles
+  [editionBreakpoints.huge]: hugeBreakpointStyle
 };
 
 export default breakpoint => breakPointsStyles[breakpoint];

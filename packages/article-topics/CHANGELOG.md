@@ -3,6 +3,65 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.62](https://github.com/newsuk/times-components/compare/@times-components/article-topics@4.0.61...@times-components/article-topics@4.0.62) (2019-10-09)
+
+**Note:** Version bump only for package @times-components/article-topics
+
+
+
+
+
+## [4.0.61](https://github.com/newsuk/times-components/compare/@times-components/article-topics@4.0.60...@times-components/article-topics@4.0.61) (2019-10-08)
+
+**Note:** Version bump only for package @times-components/article-topics
+
+
+
+
+
+## [4.0.60](https://github.com/newsuk/times-components/compare/@times-components/article-topics@4.0.59...@times-components/article-topics@4.0.60) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/article-topics
+
+
+
+
+
+## [4.0.59](https://github.com/newsuk/times-components/compare/@times-components/article-topics@4.0.58...@times-components/article-topics@4.0.59) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/article-topics
+
+
+
+
+
+## [4.0.58](https://github.com/newsuk/times-components/compare/@times-components/article-topics@4.0.57...@times-components/article-topics@4.0.58) (2019-10-04)
+
+**Note:** Version bump only for package @times-components/article-topics
+
+
+
+
+
+## [4.0.57](https://github.com/newsuk/times-components/compare/@times-components/article-topics@4.0.56...@times-components/article-topics@4.0.57) (2019-09-24)
+
+
+### Bug Fixes
+
+* react resolution ([#2299](https://github.com/newsuk/times-components/issues/2299)) ([dba85bb](https://github.com/newsuk/times-components/commit/dba85bb))
+
+
+
+
+
+## [4.0.56](https://github.com/newsuk/times-components/compare/@times-components/article-topics@4.0.55...@times-components/article-topics@4.0.56) (2019-09-17)
+
+**Note:** Version bump only for package @times-components/article-topics
+
+
+
+
+
 ## [4.0.55](https://github.com/newsuk/times-components/compare/@times-components/article-topics@4.0.54...@times-components/article-topics@4.0.55) (2019-09-10)
 
 **Note:** Version bump only for package @times-components/article-topics

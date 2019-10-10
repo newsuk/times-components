@@ -3,6 +3,65 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.42](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.2.41...@times-components/message-bar@0.2.42) (2019-10-09)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
+## [0.2.41](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.2.40...@times-components/message-bar@0.2.41) (2019-10-08)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
+## [0.2.40](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.2.39...@times-components/message-bar@0.2.40) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
+## [0.2.39](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.2.38...@times-components/message-bar@0.2.39) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
+## [0.2.38](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.2.37...@times-components/message-bar@0.2.38) (2019-10-04)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
+## [0.2.37](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.2.36...@times-components/message-bar@0.2.37) (2019-09-24)
+
+
+### Bug Fixes
+
+* react resolution ([#2299](https://github.com/newsuk/times-components/issues/2299)) ([dba85bb](https://github.com/newsuk/times-components/commit/dba85bb))
+
+
+
+
+
+## [0.2.36](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.2.35...@times-components/message-bar@0.2.36) (2019-09-17)
+
+**Note:** Version bump only for package @times-components/message-bar
+
+
+
+
+
 ## [0.2.35](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.2.34...@times-components/message-bar@0.2.35) (2019-09-05)
 
 **Note:** Version bump only for package @times-components/message-bar

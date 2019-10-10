@@ -3,6 +3,97 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.35](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.3.34...@times-components/save-star-web@0.3.35) (2019-10-09)
+
+**Note:** Version bump only for package @times-components/save-star-web
+
+
+
+
+
+## [0.3.34](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.3.33...@times-components/save-star-web@0.3.34) (2019-10-08)
+
+**Note:** Version bump only for package @times-components/save-star-web
+
+
+
+
+
+## [0.3.33](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.3.32...@times-components/save-star-web@0.3.33) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/save-star-web
+
+
+
+
+
+## [0.3.32](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.3.31...@times-components/save-star-web@0.3.32) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/save-star-web
+
+
+
+
+
+## [0.3.31](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.3.30...@times-components/save-star-web@0.3.31) (2019-10-04)
+
+**Note:** Version bump only for package @times-components/save-star-web
+
+
+
+
+
+## [0.3.30](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.3.29...@times-components/save-star-web@0.3.30) (2019-10-01)
+
+**Note:** Version bump only for package @times-components/save-star-web
+
+
+
+
+
+## [0.3.29](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.3.28...@times-components/save-star-web@0.3.29) (2019-09-27)
+
+**Note:** Version bump only for package @times-components/save-star-web
+
+
+
+
+
+## [0.3.28](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.3.27...@times-components/save-star-web@0.3.28) (2019-09-24)
+
+
+### Bug Fixes
+
+* react resolution ([#2299](https://github.com/newsuk/times-components/issues/2299)) ([dba85bb](https://github.com/newsuk/times-components/commit/dba85bb))
+
+
+
+
+
+## [0.3.27](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.3.26...@times-components/save-star-web@0.3.27) (2019-09-19)
+
+**Note:** Version bump only for package @times-components/save-star-web
+
+
+
+
+
+## [0.3.26](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.3.25...@times-components/save-star-web@0.3.26) (2019-09-18)
+
+**Note:** Version bump only for package @times-components/save-star-web
+
+
+
+
+
+## [0.3.25](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.3.24...@times-components/save-star-web@0.3.25) (2019-09-17)
+
+**Note:** Version bump only for package @times-components/save-star-web
+
+
+
+
+
 ## [0.3.24](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.3.23...@times-components/save-star-web@0.3.24) (2019-09-16)
 
 **Note:** Version bump only for package @times-components/save-star-web

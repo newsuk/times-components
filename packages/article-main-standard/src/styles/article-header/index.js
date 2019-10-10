@@ -8,7 +8,6 @@ const appStyles = {
   articleHeadLineText: {
     ...sharedStyles.articleHeadLineText,
     fontSize: fontSizes.headline,
-    fontWeight: "400",
     lineHeight: 33,
     marginBottom: spacing(2),
     marginTop: spacing(1)

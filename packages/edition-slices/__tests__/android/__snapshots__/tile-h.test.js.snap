@@ -1,0 +1,120 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tile h without breakpoint 1`] = `
+<Link
+  linkStyle={
+    Object {
+      "flexDirection": "row",
+      "padding": 10,
+    }
+  }
+  url="/article/123"
+>
+  <View
+    style={
+      Object {
+        "paddingRight": 10,
+        "width": "50%",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "marginBottom": 5,
+        }
+      }
+    >
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
+    </View>
+    <Text
+      accessibilityRole="header"
+      aria-level="3"
+      style={
+        Object {
+          "color": "#333333",
+          "fontFamily": "TimesModern-Bold",
+          "fontSize": 22,
+          "fontWeight": "400",
+          "lineHeight": 22,
+          "marginBottom": 10,
+        }
+      }
+    >
+      This is tile headline
+    </Text>
+    <Text
+      style={
+        Object {
+          "color": "#696969",
+          "flexWrap": "wrap",
+          "fontFamily": "TimesDigitalW04",
+          "fontSize": 14,
+          "lineHeight": 20,
+          "marginBottom": 0,
+        }
+      }
+    >
+      <Text>
+        
+        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+        ...
+      </Text>
+    </Text>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
+    <Text>
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "flexDirection": "row",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 13,
+            "lineHeight": 19,
+          }
+        }
+      >
+        Richard Lloyd Parry
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "#333333",
+            "flexDirection": "row",
+            "fontFamily": "GillSansMTStd-Medium",
+            "fontSize": 13,
+            "lineHeight": 19,
+          }
+        }
+      >
+        , Hanoi
+      </Text>
+    </Text>
+  </View>
+  <Image
+    aspectRatio={0.6666666666666666}
+    fill={true}
+    style={
+      Object {
+        "flexDirection": "column",
+        "justifyContent": "flex-end",
+        "width": "50%",
+      }
+    }
+    uri="//www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5a14c64e-06db-11e9-abe2-4909b2eb0130.jpg?crop=1195%2C1792%2C747%2C0"
+  />
+</Link>
+`;

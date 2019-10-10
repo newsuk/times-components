@@ -3,6 +3,100 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.19.6](https://github.com/newsuk/times-components/compare/@times-components/provider@1.19.5...@times-components/provider@1.19.6) (2019-10-09)
+
+**Note:** Version bump only for package @times-components/provider
+
+
+
+
+
+## [1.19.5](https://github.com/newsuk/times-components/compare/@times-components/provider@1.19.4...@times-components/provider@1.19.5) (2019-10-08)
+
+**Note:** Version bump only for package @times-components/provider
+
+
+
+
+
+## [1.19.4](https://github.com/newsuk/times-components/compare/@times-components/provider@1.19.3...@times-components/provider@1.19.4) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/provider
+
+
+
+
+
+## [1.19.3](https://github.com/newsuk/times-components/compare/@times-components/provider@1.19.2...@times-components/provider@1.19.3) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/provider
+
+
+
+
+
+## [1.19.2](https://github.com/newsuk/times-components/compare/@times-components/provider@1.19.1...@times-components/provider@1.19.2) (2019-10-04)
+
+**Note:** Version bump only for package @times-components/provider
+
+
+
+
+
+## [1.19.1](https://github.com/newsuk/times-components/compare/@times-components/provider@1.19.0...@times-components/provider@1.19.1) (2019-10-01)
+
+**Note:** Version bump only for package @times-components/provider
+
+
+
+
+
+# [1.19.0](https://github.com/newsuk/times-components/compare/@times-components/provider@1.18.4...@times-components/provider@1.19.0) (2019-09-27)
+
+
+### Features
+
+* REPLAT-8765 add more tracking ([#2306](https://github.com/newsuk/times-components/issues/2306)) ([1459a3e](https://github.com/newsuk/times-components/commit/1459a3e))
+
+
+
+
+
+## [1.18.4](https://github.com/newsuk/times-components/compare/@times-components/provider@1.18.3...@times-components/provider@1.18.4) (2019-09-24)
+
+
+### Bug Fixes
+
+* react resolution ([#2299](https://github.com/newsuk/times-components/issues/2299)) ([dba85bb](https://github.com/newsuk/times-components/commit/dba85bb))
+
+
+
+
+
+## [1.18.3](https://github.com/newsuk/times-components/compare/@times-components/provider@1.18.2...@times-components/provider@1.18.3) (2019-09-19)
+
+**Note:** Version bump only for package @times-components/provider
+
+
+
+
+
+## [1.18.2](https://github.com/newsuk/times-components/compare/@times-components/provider@1.18.1...@times-components/provider@1.18.2) (2019-09-18)
+
+**Note:** Version bump only for package @times-components/provider
+
+
+
+
+
+## [1.18.1](https://github.com/newsuk/times-components/compare/@times-components/provider@1.18.0...@times-components/provider@1.18.1) (2019-09-17)
+
+**Note:** Version bump only for package @times-components/provider
+
+
+
+
+
 # [1.18.0](https://github.com/newsuk/times-components/compare/@times-components/provider@1.17.42...@times-components/provider@1.18.0) (2019-09-16)
 
 

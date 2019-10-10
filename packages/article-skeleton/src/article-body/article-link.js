@@ -29,6 +29,8 @@ const ArticleLink = props => (
   </Context.Consumer>
 );
 
+ArticleLink.displayName = "ArticleLink";
+
 ArticleLink.defaultProps = {
   ...TextLink.defaultProps,
   linkType: ""

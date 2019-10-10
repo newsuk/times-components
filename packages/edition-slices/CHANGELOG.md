@@ -3,6 +3,240 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.96.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.95.3...@times-components/edition-slices@0.96.0) (2019-10-10)
+
+
+### Bug Fixes
+
+* REPLAT-9305 puzzle tiles height increased ([#2332](https://github.com/newsuk/times-components/issues/2332)) ([566bad5](https://github.com/newsuk/times-components/commit/566bad5))
+
+
+### Features
+
+* REPLAT-9309 lead 1 full width structure updated  ([#2321](https://github.com/newsuk/times-components/issues/2321)) ([3d79c22](https://github.com/newsuk/times-components/commit/3d79c22))
+
+
+
+
+
+## [0.95.3](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.95.2...@times-components/edition-slices@0.95.3) (2019-10-09)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
+## [0.95.2](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.95.1...@times-components/edition-slices@0.95.2) (2019-10-08)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
+## [0.95.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.95.0...@times-components/edition-slices@0.95.1) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
+# [0.95.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.94.0...@times-components/edition-slices@0.95.0) (2019-10-07)
+
+
+### Features
+
+* REPLAT-9308 lead 2 no pic 2 tiles swapped for 1024 and 1366 ([#2326](https://github.com/newsuk/times-components/issues/2326)) ([5a57885](https://github.com/newsuk/times-components/commit/5a57885))
+
+
+
+
+
+# [0.94.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.93.1...@times-components/edition-slices@0.94.0) (2019-10-04)
+
+
+### Bug Fixes
+
+* increase test coverage for slices on web ([#2324](https://github.com/newsuk/times-components/issues/2324)) ([4087b7f](https://github.com/newsuk/times-components/commit/4087b7f))
+
+
+### Features
+
+* REPLAT-9112 lead 1 and 1 tile U updated ([#2322](https://github.com/newsuk/times-components/issues/2322)) ([d685fe6](https://github.com/newsuk/times-components/commit/d685fe6))
+
+
+
+
+
+## [0.93.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.93.0...@times-components/edition-slices@0.93.1) (2019-10-02)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
+# [0.93.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.92.0...@times-components/edition-slices@0.93.0) (2019-09-30)
+
+
+### Features
+
+* (REPLAT-8561) Supplement secondary 1 and 4 for 1366px ([#2314](https://github.com/newsuk/times-components/issues/2314)) ([8d4e745](https://github.com/newsuk/times-components/commit/8d4e745))
+* puzzles for 1366px ([#2315](https://github.com/newsuk/times-components/issues/2315)) ([b561f23](https://github.com/newsuk/times-components/commit/b561f23))
+
+
+
+
+
+# [0.92.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.91.1...@times-components/edition-slices@0.92.0) (2019-09-27)
+
+
+### Features
+
+* reverse tiles consecutive secondary4 slices ([#2312](https://github.com/newsuk/times-components/issues/2312)) ([e4e5393](https://github.com/newsuk/times-components/commit/e4e5393))
+
+
+
+
+
+## [0.91.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.91.0...@times-components/edition-slices@0.91.1) (2019-09-26)
+
+
+### Bug Fixes
+
+* REPLAT-8454 fix slow scrolling on magazine sections ([#2278](https://github.com/newsuk/times-components/issues/2278)) ([2ac2ea2](https://github.com/newsuk/times-components/commit/2ac2ea2))
+
+
+
+
+
+# [0.91.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.90.0...@times-components/edition-slices@0.91.0) (2019-09-26)
+
+
+### Bug Fixes
+
+* (REPLAT-8560) secondary 1 and columnist rearrange ([#2311](https://github.com/newsuk/times-components/issues/2311)) ([bd9c228](https://github.com/newsuk/times-components/commit/bd9c228))
+
+
+### Features
+
+* daily register for 1366px ([#2302](https://github.com/newsuk/times-components/issues/2302)) ([0a82295](https://github.com/newsuk/times-components/commit/0a82295))
+
+
+
+
+
+# [0.90.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.89.0...@times-components/edition-slices@0.90.0) (2019-09-25)
+
+
+### Features
+
+* lead2-no-pic-and2 for 1366px ([#2310](https://github.com/newsuk/times-components/issues/2310)) ([0f089b6](https://github.com/newsuk/times-components/commit/0f089b6))
+
+
+
+
+
+# [0.89.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.88.2...@times-components/edition-slices@0.89.0) (2019-09-24)
+
+
+### Features
+
+* (REPLAT-8564) Leader slice redesigned for huge breakpoint ([#2307](https://github.com/newsuk/times-components/issues/2307)) ([86ef8e8](https://github.com/newsuk/times-components/commit/86ef8e8))
+* increase test coverage for slices (Mobile only !)  ([#2305](https://github.com/newsuk/times-components/issues/2305)) ([1afef01](https://github.com/newsuk/times-components/commit/1afef01))
+
+
+
+
+
+## [0.88.2](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.88.1...@times-components/edition-slices@0.88.2) (2019-09-24)
+
+
+### Bug Fixes
+
+* react resolution ([#2299](https://github.com/newsuk/times-components/issues/2299)) ([dba85bb](https://github.com/newsuk/times-components/commit/dba85bb))
+
+
+
+
+
+## [0.88.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.88.0...@times-components/edition-slices@0.88.1) (2019-09-24)
+
+
+### Bug Fixes
+
+* secondary 2 no pic and 2 slice minor styling ([#2293](https://github.com/newsuk/times-components/issues/2293)) ([5033c21](https://github.com/newsuk/times-components/commit/5033c21))
+
+
+
+
+
+# [0.88.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.87.0...@times-components/edition-slices@0.88.0) (2019-09-24)
+
+
+### Features
+
+* secondary1 for 1366px ([#2304](https://github.com/newsuk/times-components/issues/2304)) ([f73fb5a](https://github.com/newsuk/times-components/commit/f73fb5a))
+
+
+
+
+
+# [0.87.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.86.0...@times-components/edition-slices@0.87.0) (2019-09-20)
+
+
+### Features
+
+* list2and6nopic for 1366px tablet ([#2294](https://github.com/newsuk/times-components/issues/2294)) ([4993e95](https://github.com/newsuk/times-components/commit/4993e95))
+
+
+
+
+
+# [0.86.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.85.0...@times-components/edition-slices@0.86.0) (2019-09-20)
+
+
+### Features
+
+* (REPLAT-8110) Add tile tests for corresponding breakpoints  ([#2288](https://github.com/newsuk/times-components/issues/2288)) ([6a808c9](https://github.com/newsuk/times-components/commit/6a808c9))
+* lead one and cartoon padding updates ([#2297](https://github.com/newsuk/times-components/issues/2297)) ([26613d3](https://github.com/newsuk/times-components/commit/26613d3))
+
+
+
+
+
+# [0.85.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.84.0...@times-components/edition-slices@0.85.0) (2019-09-19)
+
+
+### Features
+
+* secondary4 for 1366px ([#2298](https://github.com/newsuk/times-components/issues/2298)) ([b950906](https://github.com/newsuk/times-components/commit/b950906))
+
+
+
+
+
+# [0.84.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.83.1...@times-components/edition-slices@0.84.0) (2019-09-18)
+
+
+### Features
+
+* leadOneAndFour for 1366px ([#2291](https://github.com/newsuk/times-components/issues/2291)) ([cd2585a](https://github.com/newsuk/times-components/commit/cd2585a))
+
+
+
+
+
+## [0.83.1](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.83.0...@times-components/edition-slices@0.83.1) (2019-09-17)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
 # [0.83.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.82.0...@times-components/edition-slices@0.83.0) (2019-09-17)
 
 

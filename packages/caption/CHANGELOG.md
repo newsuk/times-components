@@ -3,6 +3,65 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.74](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.73...@times-components/caption@3.0.74) (2019-10-09)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.73](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.72...@times-components/caption@3.0.73) (2019-10-08)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.72](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.71...@times-components/caption@3.0.72) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.71](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.70...@times-components/caption@3.0.71) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.70](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.69...@times-components/caption@3.0.70) (2019-10-04)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.69](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.68...@times-components/caption@3.0.69) (2019-09-24)
+
+
+### Bug Fixes
+
+* react resolution ([#2299](https://github.com/newsuk/times-components/issues/2299)) ([dba85bb](https://github.com/newsuk/times-components/commit/dba85bb))
+
+
+
+
+
+## [3.0.68](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.67...@times-components/caption@3.0.68) (2019-09-17)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
 ## [3.0.67](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.66...@times-components/caption@3.0.67) (2019-09-05)
 
 **Note:** Version bump only for package @times-components/caption

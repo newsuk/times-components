@@ -3,6 +3,124 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.2.7](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.2.6...@times-components/related-articles@6.2.7) (2019-10-09)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.2.6](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.2.5...@times-components/related-articles@6.2.6) (2019-10-08)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.2.5](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.2.4...@times-components/related-articles@6.2.5) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.2.4](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.2.3...@times-components/related-articles@6.2.4) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.2.3](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.2.2...@times-components/related-articles@6.2.3) (2019-10-04)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.2.2](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.2.1...@times-components/related-articles@6.2.2) (2019-10-02)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.2.1](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.2.0...@times-components/related-articles@6.2.1) (2019-09-30)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+# [6.2.0](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.1.48...@times-components/related-articles@6.2.0) (2019-09-27)
+
+
+### Features
+
+* REPLAT-8765 add more tracking ([#2306](https://github.com/newsuk/times-components/issues/2306)) ([1459a3e](https://github.com/newsuk/times-components/commit/1459a3e))
+
+
+
+
+
+## [6.1.48](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.1.47...@times-components/related-articles@6.1.48) (2019-09-26)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.1.47](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.1.46...@times-components/related-articles@6.1.47) (2019-09-26)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.1.46](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.1.45...@times-components/related-articles@6.1.46) (2019-09-24)
+
+
+### Bug Fixes
+
+* react resolution ([#2299](https://github.com/newsuk/times-components/issues/2299)) ([dba85bb](https://github.com/newsuk/times-components/commit/dba85bb))
+
+
+
+
+
+## [6.1.45](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.1.44...@times-components/related-articles@6.1.45) (2019-09-24)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.1.44](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.1.43...@times-components/related-articles@6.1.44) (2019-09-20)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
+## [6.1.43](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.1.42...@times-components/related-articles@6.1.43) (2019-09-17)
+
+**Note:** Version bump only for package @times-components/related-articles
+
+
+
+
+
 ## [6.1.42](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.1.41...@times-components/related-articles@6.1.42) (2019-09-17)
 
 **Note:** Version bump only for package @times-components/related-articles

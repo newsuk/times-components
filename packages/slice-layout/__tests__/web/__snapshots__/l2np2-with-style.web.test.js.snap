@@ -285,14 +285,14 @@ exports[`3. lead two no pic and two - wide 1`] = `
     className="css-view-1dbjc4n"
     style={
       Object {
-        "width": "42%",
+        "width": "16%",
       }
     }
   >
     <div
       className="css-text-901oao"
     >
-      support-1
+      support-2
     </div>
   </div>
   <div
@@ -317,14 +317,14 @@ exports[`3. lead two no pic and two - wide 1`] = `
     className="css-view-1dbjc4n"
     style={
       Object {
-        "width": "16%",
+        "width": "42%",
       }
     }
   >
     <div
       className="css-text-901oao"
     >
-      support-2
+      support-1
     </div>
   </div>
 </div>
@@ -414,14 +414,14 @@ exports[`4. lead two no pic and two - huge 1`] = `
     className="css-view-1dbjc4n"
     style={
       Object {
-        "width": "42%",
+        "width": "16%",
       }
     }
   >
     <div
       className="css-text-901oao"
     >
-      support-1
+      support-2
     </div>
   </div>
   <div
@@ -446,14 +446,14 @@ exports[`4. lead two no pic and two - huge 1`] = `
     className="css-view-1dbjc4n"
     style={
       Object {
-        "width": "16%",
+        "width": "42%",
       }
     }
   >
     <div
       className="css-text-901oao"
     >
-      support-2
+      support-1
     </div>
   </div>
 </div>

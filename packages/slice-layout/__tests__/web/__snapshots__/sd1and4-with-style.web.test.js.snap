@@ -18,17 +18,7 @@ exports[`1. secondary one and four - small 1`] = `
     }
   }
 >
-  <div
-    style={
-      Object {
-        "WebkitBoxDirection": "normal",
-        "WebkitBoxOrient": "horizontal",
-        "WebkitFlexDirection": "row",
-        "flexDirection": "row",
-        "msFlexDirection": "row",
-      }
-    }
-  >
+  <div>
     <div>
       <div>
         secondary-1
@@ -108,10 +98,24 @@ exports[`2. secondary one and four - medium 1`] = `
   style={
     Object {
       "WebkitBoxDirection": "normal",
+      "WebkitBoxFlex": 1,
       "WebkitBoxOrient": "horizontal",
+      "WebkitFlexBasis": "0%",
       "WebkitFlexDirection": "row",
+      "WebkitFlexGrow": 1,
+      "WebkitFlexShrink": 1,
+      "flexBasis": "0%",
       "flexDirection": "row",
+      "flexGrow": 1,
+      "flexShrink": 1,
       "msFlexDirection": "row",
+      "msFlexNegative": 1,
+      "msFlexPositive": 1,
+      "msFlexPreferredSize": "0%",
+      "paddingBottom": "5px",
+      "paddingLeft": "5px",
+      "paddingRight": "5px",
+      "paddingTop": "0px",
     }
   }
 >
@@ -123,9 +127,7 @@ exports[`2. secondary one and four - medium 1`] = `
     }
   >
     <div>
-      <div>
-        secondary-1
-      </div>
+      secondary-1
     </div>
   </div>
   <div
@@ -300,10 +302,24 @@ exports[`3. secondary one and four - wide 1`] = `
   style={
     Object {
       "WebkitBoxDirection": "normal",
+      "WebkitBoxFlex": 1,
       "WebkitBoxOrient": "horizontal",
+      "WebkitFlexBasis": "0%",
       "WebkitFlexDirection": "row",
+      "WebkitFlexGrow": 1,
+      "WebkitFlexShrink": 1,
+      "flexBasis": "0%",
       "flexDirection": "row",
+      "flexGrow": 1,
+      "flexShrink": 1,
       "msFlexDirection": "row",
+      "msFlexNegative": 1,
+      "msFlexPositive": 1,
+      "msFlexPreferredSize": "0%",
+      "paddingBottom": "5px",
+      "paddingLeft": "5px",
+      "paddingRight": "5px",
+      "paddingTop": "0px",
     }
   }
 >
@@ -315,9 +331,7 @@ exports[`3. secondary one and four - wide 1`] = `
     }
   >
     <div>
-      <div>
-        secondary-1
-      </div>
+      secondary-1
     </div>
   </div>
   <div

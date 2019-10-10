@@ -2,7 +2,7 @@ import React from "react";
 import TestRenderer from "react-test-renderer";
 import { editionBreakpointWidths } from "@times-components/styleguide";
 import { iterator } from "@times-components/test-utils";
-import { setDimension } from "@times-components/mocks/dimensions";
+import { getDimensions } from "@times-components/utils";
 import {
   mockCommentLeadAndCartoonSlice,
   mockDailyRegisterSlice,
@@ -18,7 +18,8 @@ import {
   mockSecondaryTwoAndTwoSlice,
   mockStandardSlice,
   getPuzzleSlices,
-  mockSecondaryOneAndFourSlice
+  mockSecondaryOneAndFourSlice,
+  mockListTwoAndSixNoPicSlice
 } from "@times-components/fixture-generator";
 import Responsive from "@times-components/responsive";
 import "./mocks";
@@ -37,7 +38,8 @@ import {
   SecondaryTwoNoPicAndTwoSlice,
   SecondaryOneAndColumnistSlice,
   SecondaryTwoAndTwoSlice,
-  StandardSlice
+  StandardSlice,
+  ListTwoAndSixNoPicSlice
 } from "../src/slices";
 
 const slices = [
@@ -112,17 +114,34 @@ const slices = [
     Slice: SecondaryTwoNoPicAndTwoSlice
   },
   {
+    mock: mockListTwoAndSixNoPicSlice(),
+    name: "list two and six no pic",
+    Slice: ListTwoAndSixNoPicSlice
+  },
+  {
     mock: { puzzles: getPuzzleSlices(3) },
     name: "puzzle",
     Slice: PuzzleSlice
   }
 ];
 
+jest.mock("@times-components/utils", () => {
+  // eslint-disable-next-line global-require
+  const actualUtils = jest.requireActual("@times-components/utils");
+
+  return {
+    ...actualUtils,
+    getDimensions: jest.fn()
+  };
+});
+
 const tabletTester = type =>
   slices.map(({ mock, name, Slice }) => ({
     name: `${name} - ${type}`,
     test: () => {
-      setDimension({ width: editionBreakpointWidths[type] });
+      getDimensions.mockImplementation(() => ({
+        width: editionBreakpointWidths[type]
+      }));
       const output = TestRenderer.create(
         <Responsive>
           <Slice onPress={() => {}} slice={mock} />
@@ -134,6 +153,10 @@ const tabletTester = type =>
   }));
 
 export default () => {
+  beforeEach(() => {
+    jest.resetAllMocks();
+  });
+
   const tests = [
     ...tabletTester("medium"),
     ...tabletTester("wide"),

@@ -1,3 +1,4 @@
+/* eslint-disable react/require-default-props */
 import React from "react";
 import PropTypes from "prop-types";
 import Image from "@times-components/image";
@@ -16,11 +17,6 @@ const TileR = ({ onPress, tile, breakpoint = editionBreakpoints.medium }) => {
 
   return (
     <TileLink onPress={onPress} style={styles.container} tile={tile}>
-      <TileSummary
-        headlineStyle={styles.headline}
-        tile={tile}
-        style={styles.summaryContainer}
-      />
       <Image
         aspectRatio={16 / 9}
         uri={crop.url}
@@ -29,13 +25,15 @@ const TileR = ({ onPress, tile, breakpoint = editionBreakpoints.medium }) => {
         relativeHeight={crop.relativeHeight}
         relativeHorizontalOffset={crop.relativeHorizontalOffset}
         relativeVerticalOffset={crop.relativeVerticalOffset}
+        style={styles.imageContainer}
       />
+      <TileSummary headlineStyle={styles.headline} tile={tile} />
     </TileLink>
   );
 };
 
 TileR.propTypes = {
-  breakpoint: PropTypes.string.isRequired,
+  breakpoint: PropTypes.string,
   onPress: PropTypes.func.isRequired,
   tile: PropTypes.shape({}).isRequired
 };

@@ -3,6 +3,183 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.8.9](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.8.8...@times-components/ssr@2.8.9) (2019-10-09)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.8.8](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.8.7...@times-components/ssr@2.8.8) (2019-10-08)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.8.7](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.8.6...@times-components/ssr@2.8.7) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.8.6](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.8.5...@times-components/ssr@2.8.6) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.8.5](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.8.4...@times-components/ssr@2.8.5) (2019-10-04)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.8.4](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.8.3...@times-components/ssr@2.8.4) (2019-10-02)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.8.3](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.8.2...@times-components/ssr@2.8.3) (2019-10-01)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.8.2](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.8.1...@times-components/ssr@2.8.2) (2019-10-01)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.8.1](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.8.0...@times-components/ssr@2.8.1) (2019-09-30)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+# [2.8.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.7.8...@times-components/ssr@2.8.0) (2019-09-30)
+
+
+### Features
+
+* client side newskit feature flag ([#2309](https://github.com/newsuk/times-components/issues/2309)) ([bc9b2d9](https://github.com/newsuk/times-components/commit/bc9b2d9))
+
+
+
+
+
+## [2.7.8](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.7.7...@times-components/ssr@2.7.8) (2019-09-27)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.7.7](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.7.6...@times-components/ssr@2.7.7) (2019-09-26)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.7.6](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.7.5...@times-components/ssr@2.7.6) (2019-09-26)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.7.5](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.7.4...@times-components/ssr@2.7.5) (2019-09-24)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.7.4](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.7.3...@times-components/ssr@2.7.4) (2019-09-24)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.7.3](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.7.2...@times-components/ssr@2.7.3) (2019-09-20)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.7.2](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.7.1...@times-components/ssr@2.7.2) (2019-09-19)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.7.1](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.7.0...@times-components/ssr@2.7.1) (2019-09-19)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+# [2.7.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.6.1...@times-components/ssr@2.7.0) (2019-09-18)
+
+
+### Features
+
+* ppdsc 180 add newskit tags for article extras ([#2285](https://github.com/newsuk/times-components/issues/2285)) ([cef5b40](https://github.com/newsuk/times-components/commit/cef5b40))
+
+
+
+
+
+## [2.6.1](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.6.0...@times-components/ssr@2.6.1) (2019-09-18)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+# [2.6.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.5.10...@times-components/ssr@2.6.0) (2019-09-17)
+
+
+### Features
+
+* ppdsc 180 init newskit feature flag ([#2284](https://github.com/newsuk/times-components/issues/2284)) ([bfaa852](https://github.com/newsuk/times-components/commit/bfaa852))
+
+
+
+
+
 ## [2.5.10](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.5.9...@times-components/ssr@2.5.10) (2019-09-17)
 
 **Note:** Version bump only for package @times-components/ssr

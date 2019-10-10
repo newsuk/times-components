@@ -1,0 +1,433 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tile ah huge 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.S2 {
+  font-family: TimesModern-Bold;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.S3 {
+  color: rgba(105,105,105,1.00);
+}
+
+.IS1 {
+  overflow: hidden;
+  width: 97;
+  margin-bottom: 5px;
+}
+
+.IS2 {
+  color: rgba(29,29,27,1.00);
+  font-size: 45px;
+  line-height: 45px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.IS3 {
+  font-family: TimesDigitalW04-Regular;
+  font-size: 14px;
+  line-height: 20px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+.IS4 {
+  -webkit-align-items: center;
+  align-items: center;
+  padding-top: 5px;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+}
+</style>
+
+<Link
+  linkStyle={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+      "padding": "10px",
+      "paddingRight": "15px",
+    }
+  }
+  url="/article/123"
+>
+  <Image
+    aspectRatio={1}
+    className="IS1"
+    fill={true}
+    resizeMode="cover"
+    rounded={true}
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
+  />
+  <div
+    className="css-view-1dbjc4n IS4"
+  >
+    <div
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+    >
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
+    </div>
+    <h3
+      aria-level="3"
+      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS2 S2"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <h4
+      aria-level="4"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khp51w IS3 S3"
+      role="heading"
+    >
+      Three Conservative MPs resign
+    </h4>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
+  </div>
+</Link>
+`;
+
+exports[`tile ah medium 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.S2 {
+  font-family: TimesModern-Bold;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.S3 {
+  color: rgba(105,105,105,1.00);
+}
+
+.IS1 {
+  overflow: hidden;
+  width: 97;
+  margin-bottom: 5px;
+}
+
+.IS2 {
+  color: rgba(29,29,27,1.00);
+  font-size: 30px;
+  line-height: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.IS3 {
+  font-family: TimesDigitalW04-Regular;
+  font-size: 14px;
+  line-height: 20px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+.IS4 {
+  -webkit-align-items: center;
+  align-items: center;
+  padding-top: 5px;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+}
+</style>
+
+<Link
+  linkStyle={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+      "padding": "10px",
+      "paddingRight": "10px",
+    }
+  }
+  url="/article/123"
+>
+  <Image
+    aspectRatio={1}
+    className="IS1"
+    fill={true}
+    resizeMode="cover"
+    rounded={true}
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
+  />
+  <div
+    className="css-view-1dbjc4n IS4"
+  >
+    <div
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+    >
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
+    </div>
+    <h3
+      aria-level="3"
+      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS2 S2"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <h4
+      aria-level="4"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khp51w IS3 S3"
+      role="heading"
+    >
+      Three Conservative MPs resign
+    </h4>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
+  </div>
+</Link>
+`;
+
+exports[`tile ah wide 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.S2 {
+  font-family: TimesModern-Bold;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.S3 {
+  color: rgba(105,105,105,1.00);
+}
+
+.IS1 {
+  overflow: hidden;
+  width: 97;
+  margin-bottom: 5px;
+}
+
+.IS2 {
+  color: rgba(29,29,27,1.00);
+  font-size: 40px;
+  line-height: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.IS3 {
+  font-family: TimesDigitalW04-Regular;
+  font-size: 14px;
+  line-height: 20px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+.IS4 {
+  -webkit-align-items: center;
+  align-items: center;
+  padding-top: 5px;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+}
+</style>
+
+<Link
+  linkStyle={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+      "padding": "10px",
+      "paddingRight": "15px",
+    }
+  }
+  url="/article/123"
+>
+  <Image
+    aspectRatio={1}
+    className="IS1"
+    fill={true}
+    resizeMode="cover"
+    rounded={true}
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
+  />
+  <div
+    className="css-view-1dbjc4n IS4"
+  >
+    <div
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+    >
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
+    </div>
+    <h3
+      aria-level="3"
+      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS2 S2"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <h4
+      aria-level="4"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khp51w IS3 S3"
+      role="heading"
+    >
+      Three Conservative MPs resign
+    </h4>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
+  </div>
+</Link>
+`;
+
+exports[`tile ah without breakpoint should be like medium 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.S2 {
+  font-family: TimesModern-Bold;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.S3 {
+  color: rgba(105,105,105,1.00);
+}
+
+.IS1 {
+  overflow: hidden;
+  width: 97;
+  margin-bottom: 5px;
+}
+
+.IS2 {
+  color: rgba(29,29,27,1.00);
+  font-size: 30px;
+  line-height: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.IS3 {
+  font-family: TimesDigitalW04-Regular;
+  font-size: 14px;
+  line-height: 20px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+.IS4 {
+  -webkit-align-items: center;
+  align-items: center;
+  padding-top: 5px;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+}
+</style>
+
+<Link
+  linkStyle={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+      "padding": "10px",
+      "paddingRight": "10px",
+    }
+  }
+  url="/article/123"
+>
+  <Image
+    aspectRatio={1}
+    className="IS1"
+    fill={true}
+    resizeMode="cover"
+    rounded={true}
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
+  />
+  <div
+    className="css-view-1dbjc4n IS4"
+  >
+    <div
+      className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+    >
+      <ArticleLabel
+        color="#005B8D"
+        isVideo={false}
+        title="label"
+      />
+    </div>
+    <h3
+      aria-level="3"
+      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS2 S2"
+      role="heading"
+    >
+      This is tile headline
+    </h3>
+    <h4
+      aria-level="4"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khp51w IS3 S3"
+      role="heading"
+    >
+      Three Conservative MPs resign
+    </h4>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
+  </div>
+</Link>
+`;

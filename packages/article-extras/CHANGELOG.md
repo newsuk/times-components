@@ -3,6 +3,156 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.15](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.3.14...@times-components/article-extras@0.3.15) (2019-10-09)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.3.14](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.3.13...@times-components/article-extras@0.3.14) (2019-10-08)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.3.13](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.3.12...@times-components/article-extras@0.3.13) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.3.12](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.3.11...@times-components/article-extras@0.3.12) (2019-10-07)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.3.11](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.3.10...@times-components/article-extras@0.3.11) (2019-10-04)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.3.10](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.3.9...@times-components/article-extras@0.3.10) (2019-10-02)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.3.9](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.3.8...@times-components/article-extras@0.3.9) (2019-10-01)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.3.8](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.3.7...@times-components/article-extras@0.3.8) (2019-09-30)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.3.7](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.3.6...@times-components/article-extras@0.3.7) (2019-09-27)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.3.6](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.3.5...@times-components/article-extras@0.3.6) (2019-09-26)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.3.5](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.3.4...@times-components/article-extras@0.3.5) (2019-09-26)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.3.4](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.3.3...@times-components/article-extras@0.3.4) (2019-09-24)
+
+
+### Bug Fixes
+
+* react resolution ([#2299](https://github.com/newsuk/times-components/issues/2299)) ([dba85bb](https://github.com/newsuk/times-components/commit/dba85bb))
+
+
+
+
+
+## [0.3.3](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.3.2...@times-components/article-extras@0.3.3) (2019-09-24)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.3.2](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.3.1...@times-components/article-extras@0.3.2) (2019-09-20)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.3.1](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.3.0...@times-components/article-extras@0.3.1) (2019-09-19)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+# [0.3.0](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.2.11...@times-components/article-extras@0.3.0) (2019-09-18)
+
+
+### Features
+
+* ppdsc 180 add newskit tags for article extras ([#2285](https://github.com/newsuk/times-components/issues/2285)) ([cef5b40](https://github.com/newsuk/times-components/commit/cef5b40))
+
+
+
+
+
+## [0.2.11](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.2.10...@times-components/article-extras@0.2.11) (2019-09-18)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.2.10](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.2.9...@times-components/article-extras@0.2.10) (2019-09-17)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
 ## [0.2.9](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.2.8...@times-components/article-extras@0.2.9) (2019-09-17)
 
 **Note:** Version bump only for package @times-components/article-extras

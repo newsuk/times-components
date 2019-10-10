@@ -19,9 +19,6 @@ const smallBreakpointStyles = {
   },
   container: {
     ...darkBackgroundColour
-  },
-  sliceWrapper: {
-    ...darkBackgroundColour
   }
 };
 
@@ -29,29 +26,24 @@ const mediumBreakpointStyles = {
   logoContainer: {
     ...darkBackgroundColour,
     flexDirection: "row",
-    margin: spacing(3)
+    margin: spacing(3),
+    marginBottom: spacing(2)
   },
   separator: {
     borderBottomColor: colours.functional.tertiary,
     marginHorizontal: spacing(3)
   },
-  sliceWrapper: {
+  container: {
+    ...darkBackgroundColour,
     marginVertical: spacing(3),
     marginHorizontal: spacing(6)
   }
 };
 
 const wideBreakpointStyles = {
-  logoContainer: {
+  ...mediumBreakpointStyles,
+  container: {
     ...darkBackgroundColour,
-    flexDirection: "row",
-    margin: spacing(3)
-  },
-  separator: {
-    borderBottomColor: colours.functional.tertiary,
-    marginHorizontal: spacing(3)
-  },
-  sliceWrapper: {
     marginVertical: spacing(3),
     marginHorizontal: spacing(4)
   }
