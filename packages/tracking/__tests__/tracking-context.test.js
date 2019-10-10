@@ -220,6 +220,7 @@ module.exports = () => {
       });
       const reporter = jest.fn();
       global.Date = jest.fn(() => new RealDate("2017-09-26T15:25:56.206Z"));
+      global.Date.now = jest.fn(() => new RealDate("2017-09-26T15:25:56.206Z"));
 
       renderer.create(<WithTrackingAndContext analyticsStream={reporter} />);
 
