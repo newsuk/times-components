@@ -19,10 +19,6 @@ const mediumBreakpointStyles = {
   imageContainer: {
     width: "100%",
     marginBottom: spacing(2)
-  },
-  summaryContainer: {
-    flex: 1,
-    paddingBottom: spacing(2)
   }
 };
 
@@ -32,6 +28,10 @@ const wideBreakpointStyles = {
     flex: 1,
     paddingVertical: spacing(3),
     paddingHorizontal: spacing(4)
+  },
+  imageContainer: {
+    width: "100%",
+    marginBottom: spacing(3)
   }
 };
 

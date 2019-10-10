@@ -14,22 +14,13 @@ exports[`tile r huge 1`] = `
 }
 
 .IS1 {
-  font-size: 45px;
-  line-height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
 }
 
 .IS2 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  padding-bottom: 10px;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
+  font-size: 45px;
+  line-height: 45px;
 }
 </style>
 
@@ -43,8 +34,14 @@ exports[`tile r huge 1`] = `
   }
   url="/article/123"
 >
+  <Image
+    aspectRatio={1.7777777777777777}
+    className="IS1"
+    fill={true}
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+  />
   <div
-    className="css-view-1dbjc4n IS2"
+    className="css-view-1dbjc4n"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
@@ -57,7 +54,7 @@ exports[`tile r huge 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS1 S2"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS2 S2"
       role="heading"
     >
       This is tile headline
@@ -73,11 +70,6 @@ exports[`tile r huge 1`] = `
       }
     />
   </div>
-  <Image
-    aspectRatio={1.7777777777777777}
-    fill={true}
-    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
-  />
 </Link>
 `;
 
@@ -95,22 +87,13 @@ exports[`tile r medium 1`] = `
 }
 
 .IS1 {
-  font-size: 40px;
-  line-height: 40px;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .IS2 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  padding-bottom: 10px;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
+  font-size: 40px;
+  line-height: 40px;
 }
 </style>
 
@@ -124,8 +107,14 @@ exports[`tile r medium 1`] = `
   }
   url="/article/123"
 >
+  <Image
+    aspectRatio={1.7777777777777777}
+    className="IS1"
+    fill={true}
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+  />
   <div
-    className="css-view-1dbjc4n IS2"
+    className="css-view-1dbjc4n"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
@@ -138,7 +127,7 @@ exports[`tile r medium 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS1 S2"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS2 S2"
       role="heading"
     >
       This is tile headline
@@ -154,11 +143,6 @@ exports[`tile r medium 1`] = `
       }
     />
   </div>
-  <Image
-    aspectRatio={1.7777777777777777}
-    fill={true}
-    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
-  />
 </Link>
 `;
 
@@ -176,22 +160,13 @@ exports[`tile r wide 1`] = `
 }
 
 .IS1 {
-  font-size: 40px;
-  line-height: 40px;
+  width: 100%;
+  margin-bottom: 15px;
 }
 
 .IS2 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  padding-bottom: 10px;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
+  font-size: 40px;
+  line-height: 40px;
 }
 </style>
 
@@ -205,8 +180,14 @@ exports[`tile r wide 1`] = `
   }
   url="/article/123"
 >
+  <Image
+    aspectRatio={1.7777777777777777}
+    className="IS1"
+    fill={true}
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+  />
   <div
-    className="css-view-1dbjc4n IS2"
+    className="css-view-1dbjc4n"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
@@ -219,7 +200,7 @@ exports[`tile r wide 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS1 S2"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS2 S2"
       role="heading"
     >
       This is tile headline
@@ -235,11 +216,6 @@ exports[`tile r wide 1`] = `
       }
     />
   </div>
-  <Image
-    aspectRatio={1.7777777777777777}
-    fill={true}
-    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
-  />
 </Link>
 `;
 
@@ -257,22 +233,13 @@ exports[`tile r without breakpoint should be like medium 1`] = `
 }
 
 .IS1 {
-  font-size: 40px;
-  line-height: 40px;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .IS2 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  padding-bottom: 10px;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
+  font-size: 40px;
+  line-height: 40px;
 }
 </style>
 
@@ -286,8 +253,14 @@ exports[`tile r without breakpoint should be like medium 1`] = `
   }
   url="/article/123"
 >
+  <Image
+    aspectRatio={1.7777777777777777}
+    className="IS1"
+    fill={true}
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+  />
   <div
-    className="css-view-1dbjc4n IS2"
+    className="css-view-1dbjc4n"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
@@ -300,7 +273,7 @@ exports[`tile r without breakpoint should be like medium 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS1 S2"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS2 S2"
       role="heading"
     >
       This is tile headline
@@ -316,10 +289,5 @@ exports[`tile r without breakpoint should be like medium 1`] = `
       }
     />
   </div>
-  <Image
-    aspectRatio={1.7777777777777777}
-    fill={true}
-    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
-  />
 </Link>
 `;

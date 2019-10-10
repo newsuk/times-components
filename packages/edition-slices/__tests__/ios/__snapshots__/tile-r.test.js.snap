@@ -11,14 +11,18 @@ exports[`tile r huge 1`] = `
   }
   url="/article/123"
 >
-  <View
+  <Image
+    aspectRatio={1.7777777777777777}
+    fill={true}
     style={
       Object {
-        "flex": 1,
-        "paddingBottom": 10,
+        "marginBottom": 15,
+        "width": "100%",
       }
     }
-  >
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+  />
+  <View>
     <View
       style={
         Object {
@@ -59,11 +63,6 @@ exports[`tile r huge 1`] = `
       }
     />
   </View>
-  <Image
-    aspectRatio={1.7777777777777777}
-    fill={true}
-    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
-  />
 </Link>
 `;
 
@@ -78,14 +77,18 @@ exports[`tile r medium 1`] = `
   }
   url="/article/123"
 >
-  <View
+  <Image
+    aspectRatio={1.7777777777777777}
+    fill={true}
     style={
       Object {
-        "flex": 1,
-        "paddingBottom": 10,
+        "marginBottom": 10,
+        "width": "100%",
       }
     }
-  >
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+  />
+  <View>
     <View
       style={
         Object {
@@ -126,11 +129,6 @@ exports[`tile r medium 1`] = `
       }
     />
   </View>
-  <Image
-    aspectRatio={1.7777777777777777}
-    fill={true}
-    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
-  />
 </Link>
 `;
 
@@ -145,14 +143,18 @@ exports[`tile r wide 1`] = `
   }
   url="/article/123"
 >
-  <View
+  <Image
+    aspectRatio={1.7777777777777777}
+    fill={true}
     style={
       Object {
-        "flex": 1,
-        "paddingBottom": 10,
+        "marginBottom": 15,
+        "width": "100%",
       }
     }
-  >
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+  />
+  <View>
     <View
       style={
         Object {
@@ -193,11 +195,6 @@ exports[`tile r wide 1`] = `
       }
     />
   </View>
-  <Image
-    aspectRatio={1.7777777777777777}
-    fill={true}
-    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
-  />
 </Link>
 `;
 
@@ -212,14 +209,18 @@ exports[`tile r without breakpoint should be like medium 1`] = `
   }
   url="/article/123"
 >
-  <View
+  <Image
+    aspectRatio={1.7777777777777777}
+    fill={true}
     style={
       Object {
-        "flex": 1,
-        "paddingBottom": 10,
+        "marginBottom": 10,
+        "width": "100%",
       }
     }
-  >
+    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
+  />
+  <View>
     <View
       style={
         Object {
@@ -260,10 +261,5 @@ exports[`tile r without breakpoint should be like medium 1`] = `
       }
     />
   </View>
-  <Image
-    aspectRatio={1.7777777777777777}
-    fill={true}
-    uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
-  />
 </Link>
 `;
