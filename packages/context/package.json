@@ -57,7 +57,8 @@
     "webpack-cli": "3.3.1"
   },
   "resolutions": {
-    "react": "16.9.0"
+    "react": "16.9.0",
+    "react-dom": "16.9.0"
   },
   "peerDependencies": {
     "react": ">=16",

@@ -75,11 +75,12 @@
     "svgs": "3.2.1"
   },
   "resolutions": {
-    "react": "16.9.0"
+    "react": "16.9.0",
+    "react-dom": "16.9.0"
   },
   "peerDependencies": {
-    "react": ">=16.5",
-    "react-dom": ">=16.5",
+    "react": ">=16.9",
+    "react-dom": ">=16.9",
     "react-native": ">=0.55",
     "react-native-web": "0.11.4"
   },

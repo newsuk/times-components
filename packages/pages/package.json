@@ -69,7 +69,8 @@
     "react-apollo": "2.5.5"
   },
   "resolutions": {
-    "react": "16.9.0"
+    "react": "16.9.0",
+    "react-dom": "16.9.0"
   },
   "peerDependencies": {
     "react": ">=16",

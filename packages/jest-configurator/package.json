@@ -80,8 +80,8 @@
     "minimatch": "3.0.4"
   },
   "peerDependencies": {
-    "react": ">=16.5",
-    "react-dom": ">=16.5",
+    "react": ">=16.9",
+    "react-dom": ">=16.9",
     "react-native": ">=0.55",
     "react-native-web": "0.11.4"
   }

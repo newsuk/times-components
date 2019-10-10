@@ -47,7 +47,8 @@
     "prettier": "1.14.3"
   },
   "resolutions": {
-    "react": "16.9.0"
+    "react": "16.9.0",
+    "react-dom": "16.9.0"
   },
   "peerDependencies": {
     "babel-loader": "8.0.5",
