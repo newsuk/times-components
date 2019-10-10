@@ -10,6 +10,12 @@ const headlineFontSizeResolver = {
   [editionBreakpoints.huge]: 22
 };
 
+const containerHeightResolver = {
+  [editionBreakpoints.medium]: 143,
+  [editionBreakpoints.wide]: 195,
+  [editionBreakpoints.huge]: 243
+};
+
 const styles = breakpoint => ({
   header: {
     paddingHorizontal: spacing(2),
@@ -29,7 +35,7 @@ const styles = breakpoint => ({
     backgroundColor: colours.functional.border,
     flex: 1,
     marginHorizontal: spacing(2),
-    height: 150,
+    height: containerHeightResolver[breakpoint],
     overflow: "hidden"
   }
 });
