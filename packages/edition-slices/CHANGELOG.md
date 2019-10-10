@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.96.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.95.3...@times-components/edition-slices@0.96.0) (2019-10-10)
+
+
+### Bug Fixes
+
+* REPLAT-9305 puzzle tiles height increased ([#2332](https://github.com/newsuk/times-components/issues/2332)) ([566bad5](https://github.com/newsuk/times-components/commit/566bad5))
+
+
+### Features
+
+* REPLAT-9309 lead 1 full width structure updated  ([#2321](https://github.com/newsuk/times-components/issues/2321)) ([3d79c22](https://github.com/newsuk/times-components/commit/3d79c22))
+
+
+
+
+
 ## [0.95.3](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.95.2...@times-components/edition-slices@0.95.3) (2019-10-09)
 
 **Note:** Version bump only for package @times-components/edition-slices
