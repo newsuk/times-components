@@ -75,7 +75,7 @@
   "peerDependencies": {
     "react": ">=16.9",
     "react-dom": ">=16.9",
-    "react-native": ">=0.55",
+    "react-native": ">=0.59",
     "react-native-web": "0.11.4"
   },
   "publishConfig": {
