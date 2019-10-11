@@ -60,7 +60,7 @@
     "react-dom": "16.9.0",
     "react-native": "0.59.10",
     "react-native-web": "0.11.4",
-    "react-test-renderer": "16.6.3",
+    "react-test-renderer": "16.9.0",
     "stylelint": "9.4.0",
     "stylelint-config-recommended": "2.1.0",
     "stylelint-config-styled-components": "0.1.1",
@@ -78,12 +78,13 @@
     "styled-components": "4.3.2"
   },
   "resolutions": {
-    "react": "16.9.0"
+    "react": "16.9.0",
+    "react-dom": "16.9.0"
   },
   "peerDependencies": {
-    "react": ">=16.5",
-    "react-dom": ">=16.5",
-    "react-native": ">=0.55",
+    "react": ">=16.9",
+    "react-dom": ">=16.9",
+    "react-native": ">=0.59",
     "react-native-web": "0.11.4"
   },
   "publishConfig": {
