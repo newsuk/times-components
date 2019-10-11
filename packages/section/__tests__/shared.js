@@ -18,7 +18,8 @@ import PuzzleBar from "../src/puzzle-bar";
 
 jest.mock("@times-components/edition-slices", () => {
   const slicesMock = {};
-  const slicesMap = require.requireActual("@times-components/edition-slices").default;
+  const slicesMap = require.requireActual("@times-components/edition-slices")
+    .default;
 
   Object.keys(slicesMap).forEach(key => {
     slicesMock[key] = slicesMap[key].name;
@@ -27,7 +28,7 @@ jest.mock("@times-components/edition-slices", () => {
   return {
     ...slicesMock,
     LeadOneAndTwoSlice: "LeadOneAndTwoSlice"
-  }
+  };
 });
 
 jest.mock("@times-components/icons", () => ({
@@ -66,7 +67,7 @@ export default () => {
       ).toJSON()
     ).toMatchSnapshot();
   });
-  
+
   it("should render Secondary 2 No Pic and 2 instead of Secondary 2 and 2 for tablet", () => {
     const edition = new MockEdition().get();
 
@@ -99,22 +100,21 @@ export default () => {
       };
     });
 
-
     const SectionWithUpdatedDimensions = require("../src/section").default;
 
     const edition = new MockEdition().get();
-    
+
     expect(
       TestRenderer.create(
-          <SectionWithUpdatedDimensions
-            analyticsStream={() => {}}
-            onArticlePress={() => {}}
-            onPuzzleBarPress={() => {}}
-            onPuzzlePress={() => {}}
-            publicationName="TIMES"
-            recentlyOpenedPuzzleCount={1}
-            section={edition.sections[5]}
-          />
+        <SectionWithUpdatedDimensions
+          analyticsStream={() => {}}
+          onArticlePress={() => {}}
+          onPuzzleBarPress={() => {}}
+          onPuzzlePress={() => {}}
+          publicationName="TIMES"
+          recentlyOpenedPuzzleCount={1}
+          section={edition.sections[5]}
+        />
       ).toJSON()
     ).toMatchSnapshot();
   });
