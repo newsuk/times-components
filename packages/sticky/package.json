@@ -52,8 +52,8 @@
     "eslint": "5.9.0",
     "jest": "24.8.0",
     "prettier": "1.14.3",
-    "react": "16.9.0",
-    "react-dom": "16.9.0",
+    "react": "16.10.2",
+    "react-dom": "16.10.2",
     "react-native": "0.59.10",
     "stylelint": "9.4.0",
     "stylelint-config-recommended": "2.1.0",
@@ -63,12 +63,12 @@
     "webpack-cli": "3.3.1"
   },
   "resolutions": {
-    "react": "16.9.0",
-    "react-dom": "16.9.0"
+    "react": "16.10.2",
+    "react-dom": "16.10.2"
   },
   "peerDependencies": {
-    "react": ">=16.9",
-    "react-dom": ">=16.9",
+    "react": ">=16.10",
+    "react-dom": ">=16.10",
     "react-native": ">=0.59",
     "react-native-web": "0.11.4"
   },
