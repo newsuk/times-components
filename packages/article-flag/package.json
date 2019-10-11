@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-flag",
-  "version": "2.6.79",
+  "version": "2.6.80",
   "description": "The article flag (sponsored, new, updated, etc)",
   "main": "dist/article-flag.js",
   "dev": "src/article-flag.js",
@@ -38,12 +38,12 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "devDependencies": {
     "@babel/core": "7.4.4",
-    "@times-components/eslint-config-thetimes": "0.8.15",
-    "@times-components/jest-configurator": "2.6.7",
-    "@times-components/jest-serializer": "3.2.19",
-    "@times-components/storybook": "4.0.41",
-    "@times-components/test-utils": "2.3.6",
-    "@times-components/webpack-configurator": "2.0.26",
+    "@times-components/eslint-config-thetimes": "0.8.16",
+    "@times-components/jest-configurator": "2.6.8",
+    "@times-components/jest-serializer": "3.2.20",
+    "@times-components/storybook": "4.0.42",
+    "@times-components/test-utils": "2.3.7",
+    "@times-components/webpack-configurator": "2.0.27",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.5",
     "babel-plugin-add-react-displayname": "0.0.5",
@@ -62,8 +62,8 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/styleguide": "3.28.54",
-    "@times-components/utils": "5.0.1",
+    "@times-components/styleguide": "3.28.55",
+    "@times-components/utils": "5.0.2",
     "mockdate": "2.0.2",
     "prop-types": "15.7.2"
   },

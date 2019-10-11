@@ -1,6 +1,6 @@
 {
   "name": "@times-components/message-bar",
-  "version": "0.2.42",
+  "version": "0.2.43",
   "description": "A component for showing user notifications",
   "main": "dist/index",
   "dev": "src/index",
@@ -39,12 +39,12 @@
   "devDependencies": {
     "@babel/core": "7.4.4",
     "@thetimes/jest-lint": "*",
-    "@times-components/eslint-config-thetimes": "0.8.15",
-    "@times-components/jest-configurator": "2.6.7",
-    "@times-components/jest-serializer": "3.2.19",
-    "@times-components/storybook": "4.0.41",
-    "@times-components/test-utils": "2.3.6",
-    "@times-components/webpack-configurator": "2.0.26",
+    "@times-components/eslint-config-thetimes": "0.8.16",
+    "@times-components/jest-configurator": "2.6.8",
+    "@times-components/jest-serializer": "3.2.20",
+    "@times-components/storybook": "4.0.42",
+    "@times-components/test-utils": "2.3.7",
+    "@times-components/webpack-configurator": "2.0.27",
     "enzyme": "3.9.0",
     "eslint": "5.9.0",
     "jest": "24.8.0",
@@ -67,9 +67,9 @@
     "react-native-web": "0.11.4"
   },
   "dependencies": {
-    "@times-components/icons": "2.12.21",
-    "@times-components/responsive": "0.4.72",
-    "@times-components/styleguide": "3.28.54",
+    "@times-components/icons": "2.12.22",
+    "@times-components/responsive": "0.4.73",
+    "@times-components/styleguide": "3.28.55",
     "prop-types": "15.7.2"
   },
   "publishConfig": {
