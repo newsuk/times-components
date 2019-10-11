@@ -14,7 +14,7 @@ Array [
         "sectionName": "News",
         "sliceDepth": Object {
           "itemNumber": 1,
-          "total": 9,
+          "total": 10,
         },
         "sliceName": "LeadOneAndFourSlice",
       },
@@ -34,7 +34,7 @@ Array [
         "sectionName": "News",
         "sliceDepth": Object {
           "itemNumber": 1,
-          "total": 9,
+          "total": 10,
         },
         "sliceName": "LeadOneAndFourSlice",
       },
@@ -58,7 +58,7 @@ Object {
     "sectionName": "News",
     "sliceDepth": Object {
       "itemNumber": 1,
-      "total": 9,
+      "total": 10,
     },
     "sliceName": "LeadOneAndFourSlice",
     "tileName": "lead",

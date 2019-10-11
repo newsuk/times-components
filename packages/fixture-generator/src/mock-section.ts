@@ -14,6 +14,7 @@ import {
   mockPuzzleSlice,
   mockSecondaryOneSlice,
   mockSecondaryFourSlice,
+  mockSecondaryTwoAndTwoSlice,
   mockSecondaryTwoNoPicAndTwoSlice,
   mockStandardSlice,
   mockListTwoAndSixNoPicSlice
@@ -28,9 +29,14 @@ function getSlices(): Array<ArticleSlice> {
     mockLeadTwoNoPicAndTwoSlice(),
     mockSecondaryOneSlice(),
     mockSecondaryFourSlice(),
+    mockSecondaryTwoAndTwoSlice(),
     mockSecondaryTwoNoPicAndTwoSlice(),
     mockListTwoAndSixNoPicSlice()
   ];
+}
+
+function getSecondaryTwoSlices(): Array<ArticleSlice> {
+  return [mockSecondaryTwoAndTwoSlice(), mockSecondaryTwoNoPicAndTwoSlice()];
 }
 
 function getMagazineSlices(): Array<ArticleSlice> {
@@ -68,6 +74,26 @@ function mockStandardSection(title: string): StandardSectionWithName {
     id: "dummy-section-id",
     name: "StandardSection",
     slices: getSlices(),
+    slug: "dummy-section-slug",
+    title
+  };
+}
+
+function mockStandardSectionWithSecondaryTwoSlices(
+  title: string
+): StandardSectionWithName {
+  return {
+    colour: {
+      rgba: {
+        alpha: 1,
+        blue: 255,
+        green: 255,
+        red: 255
+      }
+    },
+    id: "dummy-section-id",
+    name: "StandardSection",
+    slices: getSecondaryTwoSlices(),
     slug: "dummy-section-slug",
     title
   };
@@ -123,5 +149,6 @@ export {
   getPuzzleSlices,
   mockMagazineSection,
   mockPuzzleSection,
-  mockStandardSection
+  mockStandardSection,
+  mockStandardSectionWithSecondaryTwoSlices
 };

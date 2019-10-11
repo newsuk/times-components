@@ -111,7 +111,9 @@ exports[`Sunday Times magazine section 1`] = `
         </View>
       </View>
     </View>
-    <View />
+    <View>
+      <Standard />
+    </View>
   </View>
 </RCTScrollView>
 `;
@@ -227,7 +229,9 @@ exports[`Times magazine section 1`] = `
         </View>
       </View>
     </View>
-    <View />
+    <View>
+      <Standard />
+    </View>
   </View>
 </RCTScrollView>
 `;
@@ -361,7 +365,7 @@ exports[`section page 1`] = `
 <RCTScrollView>
   <View>
     <View>
-      <LeadOneAndFourSlice />
+      <LeadOneAndFour />
       <View>
         <View
           style={
@@ -389,7 +393,7 @@ exports[`section page 1`] = `
       </View>
     </View>
     <View>
-      <LeadOneAndOneSlice />
+      <LeadOneAndOne />
       <View>
         <View
           style={
@@ -417,7 +421,7 @@ exports[`section page 1`] = `
       </View>
     </View>
     <View>
-      <LeadTwoNoPicAndTwoSlice />
+      <LeadTwoNoPicAndTwo />
       <View>
         <View
           style={
@@ -437,6 +441,54 @@ exports[`section page 1`] = `
         }
       }
     />
+  </View>
+</RCTScrollView>
+`;
+
+exports[`should render Secondary 2 No Pic and 2 instead of Secondary 2 and 2 for tablet 1`] = `
+<RCTScrollView>
+  <View>
+    <View>
+      <SecondaryTwoNoPicAndTwo />
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
+              "marginHorizontal": 10,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View>
+      <SecondaryTwoNoPicAndTwo />
+    </View>
+  </View>
+</RCTScrollView>
+`;
+
+exports[`should render secondary 2 and 2 for mobile (small breakpoint) 1`] = `
+<RCTScrollView>
+  <View>
+    <View>
+      <SecondaryTwoAndTwo />
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#DBDBDB",
+              "height": 1,
+              "marginHorizontal": 10,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View>
+      <SecondaryTwoNoPicAndTwo />
+    </View>
   </View>
 </RCTScrollView>
 `;

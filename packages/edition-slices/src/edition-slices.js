@@ -1,3 +1,5 @@
+import { getDimensions } from "@times-components/utils";
+import { tabletWidth } from "@times-components/styleguide";
 import {
   CommentLeadAndCartoonSlice,
   DailyRegisterLeadFourSlice,
@@ -17,6 +19,12 @@ import {
   PuzzleSlice
 } from "./slices";
 
+const { width } = getDimensions();
+const isTablet = width > tabletWidth;
+const SecondaryTwoAndTwoMapper = isTablet
+  ? SecondaryTwoNoPicAndTwoSlice
+  : SecondaryTwoAndTwoSlice;
+
 const sliceMap = {
   CommentLeadAndCartoonSlice,
   DailyUniversalRegister: DailyRegisterLeadFourSlice,
@@ -30,7 +38,7 @@ const sliceMap = {
   SecondaryOneAndColumnistSlice,
   SecondaryOneAndFourSlice,
   SecondaryOneSlice,
-  SecondaryTwoAndTwoSlice,
+  SecondaryTwoAndTwoSlice: SecondaryTwoAndTwoMapper,
   SecondaryTwoNoPicAndTwoSlice,
   StandardSlice,
   TwoPicAndSixNoPicSlice: ListTwoAndSixNoPicSlice

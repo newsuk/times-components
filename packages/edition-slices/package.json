@@ -50,6 +50,7 @@
     "@times-components/star-button": "0.1.83",
     "@times-components/styleguide": "3.28.55",
     "@times-components/tracking": "2.4.75",
+    "@times-components/utils": "5.0.2",
     "prop-types": "15.7.2"
   },
   "devDependencies": {
@@ -60,7 +61,6 @@
     "@times-components/jest-serializer": "3.2.20",
     "@times-components/storybook": "4.0.42",
     "@times-components/test-utils": "2.3.7",
-    "@times-components/utils": "5.0.2",
     "@times-components/webpack-configurator": "2.0.27",
     "babel-jest": "24.8.0",
     "eslint": "5.9.0",

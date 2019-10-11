@@ -2,7 +2,8 @@ import { Edition, PublicationName, Section } from "./types";
 import {
   mockMagazineSection,
   mockPuzzleSection,
-  mockStandardSection
+  mockStandardSection,
+  mockStandardSectionWithSecondaryTwoSlices
 } from "./mock-section";
 
 class MockEdition {
@@ -24,7 +25,8 @@ class MockEdition {
       mockStandardSection("Comment"),
       mockStandardSection("World"),
       mockPuzzleSection("Puzzles"),
-      mockMagazineSection("Culture")
+      mockMagazineSection("Culture"),
+      mockStandardSectionWithSecondaryTwoSlices("Comment")
     ];
   }
 
