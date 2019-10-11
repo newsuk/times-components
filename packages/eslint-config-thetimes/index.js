@@ -3,6 +3,7 @@ module.exports = {
   plugins: ["react-hooks"],
   parser: "babel-eslint",
   rules: {
+    "react/require-default-props": 0,
     "react/jsx-filename-extension": [1, { extensions: [".js"] }],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",

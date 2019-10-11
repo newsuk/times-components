@@ -1,4 +1,4 @@
-/* eslint-disable react/require-default-props */
+
 import React, { Fragment } from "react";
 import { View } from "react-native";
 import { editionBreakpoints } from "@times-components/styleguide";
