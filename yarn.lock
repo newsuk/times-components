@@ -14961,10 +14961,10 @@ nested-object-assign@^1.0.1:
   resolved "https://registry.yarnpkg.com/nested-object-assign/-/nested-object-assign-1.0.3.tgz#5aca69390d9affe5a612152b5f0843ae399ac597"
   integrity sha512-kgq1CuvLyUcbcIuTiCA93cQ2IJFSlRwXcN+hLcb2qLJwC2qrePHGZZa7IipyWqaWF6tQjdax2pQnVxdq19Zzwg==
 
-newskit@0.0.0-70b3f4d2c:
-  version "0.0.0-70b3f4d2c"
-  resolved "https://registry.yarnpkg.com/newskit/-/newskit-0.0.0-70b3f4d2c.tgz#a34d824a12ae63a33bf820d917a325501fa7bfc2"
-  integrity sha512-4bnYfN2ubqO9mvCNghO710h80N7t3x1E7P0oTOUFRKmx+e/AqST1YWMNivIBy04dfQpXfkj7AYqgBI+Mvau4uw==
+newskit@0.1.0-alpha-15:
+  version "0.1.0-alpha-15"
+  resolved "https://registry.yarnpkg.com/newskit/-/newskit-0.1.0-alpha-15.tgz#8351df22fda4abbf0d9521ea39cf25e58f24dc17"
+  integrity sha512-BlX0mIa0Eh0zwFOIisD9TT6UB0BzUKysRonE9K3PComPR4+Kw8UsS7P0ov0KcBOiE0ws3GE4huIq+DT7oQyhTQ==
   dependencies:
     "@emotion/core" "^10.0.15"
     "@emotion/styled" "^10.0.15"

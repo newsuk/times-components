@@ -1,81 +1,59 @@
 /* eslint-env browser */
-import React, { Component } from "react";
+/* eslint-disable react/require-default-props */
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { ActivityIndicator } from "react-native";
 import { IconEmail } from "@times-components/icons";
 import styles from "./styles";
 import BarItem from "./bar-item";
 
-class EmailShare extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { isLoading: false };
-    this.onShare = this.onShare.bind(this);
-  }
-
-  onShare() {
-    const {
-      articleId,
-      getTokenisedShareUrl,
-      shouldTokenise,
-      articleUrl,
-      onShareEmail,
-      articleHeadline
-    } = this.props;
-
+function EmailShare({
+  articleId,
+  getTokenisedShareUrl,
+  shouldTokenise,
+  articleUrl,
+  onShareEmail,
+  articleHeadline,
+  publicationName = "TIMES"
+}) {
+  const [isLoading, setIsLoading] = useState(false);
+  const onShare = async () => {
     onShareEmail({ articleId, articleUrl, articleHeadline });
+    const matches = window.location.search.match(/[?&]shareToken=([^&]+)/);
+    let url = matches ? `${articleUrl}?shareToken=${matches[1]}` : articleUrl;
 
     if (shouldTokenise) {
-      this.setState({ isLoading: true });
-
-      getTokenisedShareUrl(articleId)
-        .then(res => {
-          const { data } = res;
-          if (data && data.article) {
-            this.setState({ isLoading: false });
-            this.openMailClient(data.article.tokenisedUrl);
-          }
-        })
-        .catch(error => {
-          this.setState({ isLoading: false });
-          console.error("Error in connecting to api", error);
-        });
-    } else {
-      const matches = window.location.search.match(/[?&]shareToken=([^&]+)/);
-
-      this.openMailClient(
-        matches ? `${articleUrl}?shareToken=${matches[1]}` : articleUrl
-      );
+      setIsLoading(true);
+      try {
+        const { data } = await getTokenisedShareUrl(articleId);
+        if (data && data.article && data.article.tokenisedUrl) {
+          url = data.article.tokenisedUrl;
+        }
+      } catch (e) {
+        console.error("Error in connecting to api", e); // eslint-disable-line no-console
+      }
+      setIsLoading(false);
     }
-  }
 
-  openMailClient(url) {
-    const { articleHeadline, publicationName } = this.props;
     const publication =
       publicationName !== "TIMES" ? "The Sunday Times" : "The Times";
-
     const mailtoEmailUrl = `mailto:?subject=${articleHeadline} from ${publication}&body=I thought you would be interested in this story from ${publication}%0A%0A${articleHeadline}%0A%0A${url}`;
-
     window.location.assign(mailtoEmailUrl);
-  }
+  };
 
-  render() {
-    const { isLoading } = this.state;
-
-    return (
-      <BarItem onPress={this.onShare}>
-        {isLoading ? (
-          <ActivityIndicator size="small" style={styles.activityLoader} />
-        ) : (
-          <IconEmail
-            fillColour="currentColor"
-            height={styles.svgIcon.height}
-            title="Share by email"
-          />
-        )}
-      </BarItem>
-    );
-  }
+  return (
+    <BarItem onPress={onShare}>
+      {isLoading ? (
+        <ActivityIndicator size="small" style={styles.activityLoader} />
+      ) : (
+        <IconEmail
+          fillColour="currentColor"
+          height={styles.svgIcon.height}
+          title="Share by email"
+        />
+      )}
+    </BarItem>
+  );
 }
 
 EmailShare.propTypes = {
@@ -86,10 +64,6 @@ EmailShare.propTypes = {
   articleId: PropTypes.string.isRequired,
   shouldTokenise: PropTypes.bool.isRequired,
   publicationName: PropTypes.string
-};
-
-EmailShare.defaultProps = {
-  publicationName: "TIMES"
 };
 
 export default EmailShare;

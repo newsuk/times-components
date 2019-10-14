@@ -1,7 +1,7 @@
 import React from "react";
 import Svg, { Path } from "@times-components/svgs";
-import { clean } from "@times-components/utils";
 import PropTypes from "prop-types";
+import { clean } from "../clean";
 
 const IconClose = ({ height, width }) => (
   <Svg

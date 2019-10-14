@@ -1,5 +1,6 @@
 /* eslint-env browser */
-import React, { Component } from "react";
+/* eslint-disable jsx-a11y/anchor-is-valid, react/require-default-props */
+import React, { useContext } from "react";
 import PropTypes from "prop-types";
 import { View, Clipboard, Text } from "react-native";
 import {
@@ -7,117 +8,120 @@ import {
   IconTwitter,
   IconCopyLink
 } from "@times-components/icons";
-import SaveStar from "@times-components/save-star-web";
 import UserState from "@times-components/user-state";
-import { SectionContext } from "@times-components/context";
+import Context, { SectionContext } from "@times-components/context";
 import getTokenisedArticleUrlApi from "./get-tokenised-article-url-api";
 import withTrackEvents from "./tracking/with-track-events";
 import SharingApiUrls from "./constants";
 import styles from "./styles";
 import BarItem from "./bar-item";
 import EmailShare from "./email-share";
+import NewskitShareBar from "./newskit-share-bar";
+import SaveStarIcon from "./save-star";
 
-/* eslint-disable jsx-a11y/anchor-is-valid */
-class SaveAndShareBar extends Component {
-  constructor(props) {
-    super(props);
-    this.copyToClipboard = this.copyToClipboard.bind(this);
-  }
-
-  copyToClipboard() {
-    const { onCopyLink, articleUrl } = this.props;
+function SaveAndShareBar({
+  articleId,
+  articleUrl,
+  savingEnabled,
+  sharingEnabled,
+  articleHeadline,
+  onCopyLink,
+  onShareOnFB = () => {},
+  onShareOnTwitter = () => {},
+  onShareEmail = () => {},
+  getTokenisedShareUrl = getTokenisedArticleUrlApi
+}) {
+  const { publicationName } = useContext(SectionContext);
+  const { newskit } = useContext(Context);
+  const copyLinkAction = () => {
     Clipboard.setString(articleUrl);
     onCopyLink();
-  }
+  };
 
-  render() {
-    const {
-      articleId,
-      articleUrl,
-      savingEnabled,
-      sharingEnabled,
-      onShareOnFB,
-      onShareOnTwitter
-    } = this.props;
-
+  if (newskit) {
     return (
-      <View style={styles.container}>
-        {sharingEnabled && (
-          <View style={styles.rowItem}>
-            <Text style={styles.label}>Share</Text>
-            <SectionContext.Consumer>
-              {({ publicationName }) => (
-                <UserState
-                  state={UserState.subscriber}
-                  fallback={
-                    <EmailShare
-                      {...this.props}
-                      shouldTokenise={false}
-                      publicationName={publicationName}
-                    />
-                  }
-                >
-                  <EmailShare
-                    {...this.props}
-                    shouldTokenise
-                    publicationName={publicationName}
-                  />
-                </UserState>
-              )}
-            </SectionContext.Consumer>
-            <BarItem
-              onPress={onShareOnTwitter}
-              target="_blank"
-              url={`${SharingApiUrls.twitter}?text=${articleUrl}`}
-            >
-              <IconTwitter
-                fillColour="currentColor"
-                height={styles.svgIcon.height}
-                title="Share on Twitter"
-              />
-            </BarItem>
-            <BarItem
-              onPress={onShareOnFB}
-              target="_blank"
-              url={`${SharingApiUrls.facebook}?u=${articleUrl}`}
-            >
-              <IconFacebook
-                fillColour="currentColor"
-                height={styles.svgIcon.fb.height}
-                title="Share on Facebook"
-              />
-            </BarItem>
-            <BarItem
-              color={styles.svgIcon.save.strokeColour}
-              hoverColor={styles.svgIcon.hoverFillColour}
-              onPress={this.copyToClipboard}
-            >
-              <IconCopyLink
-                fillColour="currentColor"
-                height={styles.svgIcon.height}
-                title="Copy link to clipboard"
-              />
-            </BarItem>
-          </View>
-        )}
-        {savingEnabled ? (
-          <UserState state={UserState.loggedIn} serverRender={false}>
-            <View style={styles.rowItem}>
-              <SaveStar
-                colour={styles.svgIcon.save.strokeColour}
-                hoverColor={styles.svgIcon.hoverFillColour}
-                articleId={articleId}
-                height={styles.svgIcon.star.height}
-              />
-            </View>
-          </UserState>
-        ) : null}
-      </View>
+      <NewskitShareBar
+        articleId={articleId}
+        articleUrl={articleUrl}
+        articleHeadline={articleHeadline}
+        onCopyLink={copyLinkAction}
+        savingEnabled={savingEnabled}
+        sharingEnabled={sharingEnabled}
+        publicationName={publicationName}
+        onShareEmail={onShareEmail}
+      />
     );
   }
+
+  return (
+    <View style={styles.container}>
+      {sharingEnabled && (
+        <View style={styles.rowItem}>
+          <Text style={styles.label}>Share</Text>
+          <UserState
+            state={UserState.subscriber}
+            fallback={
+              <EmailShare
+                shouldTokenise={false}
+                publicationName={publicationName}
+                onShareEmail={onShareEmail}
+                getTokenisedShareUrl={getTokenisedShareUrl}
+                articleId={articleId}
+                articleUrl={articleUrl}
+                articleHeadline={articleHeadline}
+              />
+            }
+          >
+            <EmailShare
+              shouldTokenise
+              publicationName={publicationName}
+              onShareEmail={onShareEmail}
+              getTokenisedShareUrl={getTokenisedShareUrl}
+              articleId={articleId}
+              articleUrl={articleUrl}
+              articleHeadline={articleHeadline}
+            />
+          </UserState>
+          <BarItem
+            onPress={onShareOnTwitter}
+            target="_blank"
+            url={`${SharingApiUrls.twitter}?text=${articleUrl}`}
+          >
+            <IconTwitter
+              fillColour="currentColor"
+              height={styles.svgIcon.height}
+              title="Share on Twitter"
+            />
+          </BarItem>
+          <BarItem
+            onPress={onShareOnFB}
+            target="_blank"
+            url={`${SharingApiUrls.facebook}?u=${articleUrl}`}
+          >
+            <IconFacebook
+              fillColour="currentColor"
+              height={styles.svgIcon.fb.height}
+              title="Share on Facebook"
+            />
+          </BarItem>
+          <BarItem
+            color={styles.svgIcon.save.strokeColour}
+            hoverColor={styles.svgIcon.hoverFillColour}
+            onPress={copyLinkAction}
+          >
+            <IconCopyLink
+              fillColour="currentColor"
+              height={styles.svgIcon.height}
+              title="Copy link to clipboard"
+            />
+          </BarItem>
+        </View>
+      )}
+      {savingEnabled ? <SaveStarIcon articleId={articleId} /> : null}
+    </View>
+  );
 }
 
-/* eslint-disable react/no-unused-prop-types */
 SaveAndShareBar.propTypes = {
   articleId: PropTypes.string.isRequired,
   articleUrl: PropTypes.string.isRequired,
@@ -129,14 +133,6 @@ SaveAndShareBar.propTypes = {
   onShareOnTwitter: PropTypes.func,
   savingEnabled: PropTypes.bool.isRequired,
   sharingEnabled: PropTypes.bool.isRequired
-};
-
-/* Serves as an indication when share links are clicked for tracking and analytics */
-SaveAndShareBar.defaultProps = {
-  onShareOnFB: () => {},
-  onShareOnTwitter: () => {},
-  onShareEmail: () => {},
-  getTokenisedShareUrl: getTokenisedArticleUrlApi
 };
 
 export default withTrackEvents(SaveAndShareBar);
