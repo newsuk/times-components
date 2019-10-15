@@ -40,7 +40,8 @@ module.exports = {
   entry: {
     article: path.resolve(__dirname, "./src/client/article.js"),
     "author-profile": path.resolve(__dirname, "./src/client/author-profile.js"),
-    topic: path.resolve(__dirname, "./src/client/topic.js")
+    topic: path.resolve(__dirname, "./src/client/topic.js"),
+    "home-page": path.resolve(__dirname, "./src/client/home-page.js")
   },
   module: {
     rules: [babelConfig]

@@ -185,6 +185,38 @@ server.get("/topic/:slug", (request, response) => {
     );
 });
 
+server.get("/", (request, response) => {
+  const {
+    query: { react }
+  } = request;
+
+  if (react) {
+    const graphqlApiUrl = process.env.GRAPHQL_ENDPOINT;
+    const editionId = "b9d398c6-e2e0-11e9-bc3e-661ff0438ed9";
+    ssr
+      .homePage({ editionId }, { ...makeUrls, graphqlApiUrl, logger })
+      .then(
+        ({
+          initialProps,
+          initialState,
+          headMarkup,
+          markup,
+          responsiveStyles,
+          styles
+        }) =>
+          response.send(
+            makeHtml(initialState, initialProps, {
+              bundleName: "home-page",
+              headMarkup,
+              markup,
+              responsiveStyles,
+              styles
+            })
+          )
+      );
+  }
+});
+
 const serviceName = "Stand-alone renderer server";
 
 const App = server.listen(port, () =>
