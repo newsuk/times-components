@@ -9,7 +9,7 @@ const HomePage = ({ id }) => (
 );
 
 HomePage.propTypes = {
-  id: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired
 };
 
 export default HomePage;

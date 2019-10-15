@@ -36,6 +36,9 @@
     "url": "https://github.com/newsuk/times-components/issues"
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
+  "dependencies": {
+    "prop-types": "15.7.2"
+  },
   "devDependencies": {
     "@times-components/eslint-config-thetimes": "0.8.16",
     "@times-components/jest-configurator": "2.6.8",
