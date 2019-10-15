@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/newsuk/times-components/compare/@times-components/section@1.4.8...@times-components/section@1.5.0) (2019-10-15)
+
+
+### Features
+
+* REPLAT-7556 tablet slices mapping modified ([#2338](https://github.com/newsuk/times-components/issues/2338)) ([4dee347](https://github.com/newsuk/times-components/commit/4dee347))
+
+
+
+
+
 ## [1.4.8](https://github.com/newsuk/times-components/compare/@times-components/section@1.4.7...@times-components/section@1.4.8) (2019-10-11)
 
 **Note:** Version bump only for package @times-components/section
