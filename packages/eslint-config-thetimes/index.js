@@ -31,19 +31,6 @@ module.exports = {
         specialLink: ["url"],
         aspects: ["noHref", "invalidHref", "preferButton"]
       }
-    ],
-    "no-restricted-properties": [
-      2,
-      {
-        object: "React",
-        property: "Component",
-        message: "Please destruct Component from React."
-      },
-      {
-        object: "React",
-        property: "PureComponent",
-        message: "Please destruct PureComponent from React."
-      }
     ]
   },
   settings: {
