@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.29.0](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.28.55...@times-components/styleguide@3.29.0) (2019-10-16)
+
+
+### Features
+
+* ppdsc 388 newskit sharebar ([#2339](https://github.com/newsuk/times-components/issues/2339)) ([e54dadf](https://github.com/newsuk/times-components/commit/e54dadf))
+
+
+
+
+
 ## [3.28.55](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.28.54...@times-components/styleguide@3.28.55) (2019-10-11)
 
 **Note:** Version bump only for package @times-components/styleguide
