@@ -2,17 +2,19 @@ import React from "react";
 import TestRenderer from "react-test-renderer";
 import Responsive, { ResponsiveContext } from "../src/responsive";
 
-jest.mock("@times-components/utils", () => {
-  // eslint-disable-next-line global-require
-  const actualUtils = jest.requireActual("@times-components/utils");
-
+jest.mock('react-native', () => {
+  let dims = { width: 480, height: 640, fontScale: 1.0 }
+  const RN = jest.requireActual('react-native')
   return {
-    ...actualUtils,
-    getDimensions: jest.fn(() => ({ height: 700, width: 500 })),
-    addDimensionsListener: jest.fn(),
-    removeDimensionsListener: jest.fn()
-  };
-});
+    ...RN,
+    Dimensions: {
+      get: () => dims,
+      set: ({window}) => dims = window,
+      addEventListener: jest.fn(),
+      removeEventListener: jest.fn()
+    }
+  }
+})
 
 export default () => {
   it("with default values", () => {

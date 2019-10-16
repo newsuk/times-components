@@ -5,6 +5,7 @@ exports[`1. an svg, g, path 1`] = `
   align="xMidYMid"
   bbHeight={100}
   bbWidth={100}
+  focusable={false}
   height={100}
   meetOrSlice={0}
   minX={145}
@@ -15,6 +16,7 @@ exports[`1. an svg, g, path 1`] = `
       "borderWidth": 0,
       "flex": 0,
       "height": 100,
+      "opacity": 1,
       "width": 100,
     }
   }
@@ -268,8 +270,6 @@ exports[`4. a rect 1`] = `
     ]
   }
   rotation={0}
-  rx={0}
-  ry={0}
   scaleX={1}
   scaleY={1}
   skewX={0}

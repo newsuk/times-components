@@ -1,6 +1,4 @@
 /* eslint-disable global-require */
-import * as opentype from "opentype.js";
-
 const fonts = {
   "CenturyGothic-Bold": () =>
     require("../dist/public/fonts/CenturyGothic-Bold.js").default,

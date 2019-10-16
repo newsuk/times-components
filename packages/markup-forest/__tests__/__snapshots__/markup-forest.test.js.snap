@@ -42,7 +42,12 @@ exports[`4. ignore children of nested tags 1`] = `
         and in here
       </span>
     </div>
-    <special />
+    <special>
+      text of a special element
+      <span>
+        inline text of a special element
+      </span>
+    </special>
      after it too
   </div>
    and here
@@ -88,7 +93,16 @@ Array [
         </div>,
       ],
     ],
-    Array [],
+    Array [
+      <div>
+        special: {"name":"text","attributes":{"value":"text of a special element"},"children":[]}
+      </div>,
+      Array [
+        <div>
+          special: {"name":"text","attributes":{"value":"inline text of a special element"},"children":[]}
+        </div>,
+      ],
+    ],
     <div>
       special: {"name":"text","attributes":{"value":" after it too"},"children":[]}
     </div>,
@@ -118,7 +132,16 @@ Array [
         </div>,
       ],
     ],
-    Array [],
+    Array [
+      <div>
+        0
+      </div>,
+      Array [
+        <div>
+          0
+        </div>,
+      ],
+    ],
     <div>
       0
     </div>,

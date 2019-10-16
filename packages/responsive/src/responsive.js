@@ -4,11 +4,7 @@ import {
   getEditionBreakpoint,
   tabletWidth
 } from "@times-components/styleguide";
-import {
-  getDimensions,
-  addDimensionsListener,
-  removeDimensionsListener
-} from "@times-components/utils";
+import { Dimensions } from 'react-native'
 import ResponsiveContext from "./context";
 
 const calculateState = (width, fontScale) => ({
@@ -22,16 +18,16 @@ class Responsive extends Component {
   constructor(props) {
     super(props);
     this.onDimensionChange = this.onDimensionChange.bind(this);
-    const { fontScale, width } = getDimensions();
+    const { fontScale, width } = Dimensions.get('window');
     this.state = calculateState(width, fontScale);
   }
 
   componentDidMount() {
-    addDimensionsListener("change", this.onDimensionChange);
+    Dimensions.addEventListener("change", this.onDimensionChange);
   }
 
   componentWillUnmount() {
-    removeDimensionsListener("change", this.onDimensionChange);
+    Dimensions.removeEventListener("change", this.onDimensionChange);
   }
 
   onDimensionChange({ window: { fontScale, width } }) {

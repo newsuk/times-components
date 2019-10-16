@@ -1,15 +1,36 @@
 /* eslint-disable global-require */
 import React from "react";
 import TestRenderer from "react-test-renderer";
-import { setDimension } from "@times-components/mocks/dimensions";
+import { Dimensions } from 'react-native';
 import Responsive, { ResponsiveContext } from "../src/responsive";
-import shared from "./shared.base";
+
+jest.mock('react-native', () => {
+  let dims = { width: 480, height: 640, fontScale: 1.0 }
+  return {
+    Dimensions: {
+      get: () => dims,
+      set: ({window}) => dims = window,
+      addEventListener: jest.fn(),
+      removeEventListener: jest.fn()
+    }
+  }
+})
 
 export default () => {
-  shared();
-
   beforeEach(() => {
     jest.resetModules();
+  });
+
+  it("with default values", () => {
+    const testInstance = TestRenderer.create(
+      <Responsive>
+        <ResponsiveContext.Consumer>
+          {context => JSON.stringify(context)}
+        </ResponsiveContext.Consumer>
+      </Responsive>
+    );
+
+    expect(testInstance).toMatchSnapshot();
   });
 
   it("width values should update on device rotation", () => {
@@ -22,23 +43,12 @@ export default () => {
     );
 
     expect(testInstance).toMatchSnapshot();
-    setDimension({ height: 500, width: 1000 });
+    Dimensions.set({ window: { height: 500, width: 1000, fontScale: 1.0 }});
     expect(testInstance).toMatchSnapshot("after width update");
   });
 
   it("addDimensionListener is called on mount", () => {
-    jest.doMock("@times-components/utils", () => {
-      const actualUtils = jest.requireActual("@times-components/utils");
-
-      return {
-        ...actualUtils,
-        __esModule: true,
-        addDimensionsListener: jest.fn().mockImplementation(() => {}),
-        removeDimensionsListener: jest.fn()
-      };
-    });
-
-    const { addDimensionsListener } = require("@times-components/utils");
+    const { Dimensions } = require("react-native");
     // eslint-disable-next-line no-shadow
     const Responsive = require("../src/responsive").default;
 
@@ -50,22 +60,11 @@ export default () => {
       </Responsive>
     );
 
-    expect(addDimensionsListener).toBeCalled();
+    expect(Dimensions.addEventListener).toBeCalled();
   });
 
   it("removeDimensionListener is called on unmount", () => {
-    jest.doMock("@times-components/utils", () => {
-      const actualUtils = jest.requireActual("@times-components/utils");
-
-      return {
-        ...actualUtils,
-        __esModule: true,
-        addDimensionsListener: jest.fn(),
-        removeDimensionsListener: jest.fn().mockImplementation(() => {})
-      };
-    });
-
-    const { removeDimensionsListener } = require("@times-components/utils");
+    const { Dimensions } = require("react-native");
     // eslint-disable-next-line no-shadow
     const Responsive = require("../src/responsive").default;
 
@@ -79,6 +78,6 @@ export default () => {
 
     testInstance.unmount();
 
-    expect(removeDimensionsListener).toBeCalled();
+    expect(Dimensions.removeEventListener).toBeCalled();
   });
 };
