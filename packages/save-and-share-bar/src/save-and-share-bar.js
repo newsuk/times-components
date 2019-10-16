@@ -17,7 +17,6 @@ import styles from "./styles";
 import BarItem from "./bar-item";
 import EmailShare from "./email-share";
 
-/* eslint-disable jsx-a11y/anchor-is-valid */
 class SaveAndShareBar extends Component {
   constructor(props) {
     super(props);

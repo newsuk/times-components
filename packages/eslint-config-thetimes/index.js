@@ -23,14 +23,6 @@ module.exports = {
         ],
         optionalDependencies: false
       }
-    ],
-    "jsx-a11y/anchor-is-valid": [
-      "error",
-      {
-        components: ["Link"],
-        specialLink: ["url"],
-        aspects: ["noHref", "invalidHref", "preferButton"]
-      }
     ]
   },
   settings: {

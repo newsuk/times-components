@@ -11,7 +11,6 @@ const StarButton = ({ disabled, height, isDark, onPress, selected, style }) => {
   const { fillColour, opacity, strokeColour } = stars[starState];
 
   return (
-    // eslint-disable-next-line jsx-a11y/anchor-is-valid
     <Link
       disabled={disabled}
       linkStyle={[styles.container, style]}

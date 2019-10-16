@@ -4,7 +4,7 @@ import Link from "@times-components/link";
 import PropTypes from "prop-types";
 import styles from "./styles";
 
-/* eslint-disable jsx-a11y/anchor-is-valid, react/require-default-props */
+/* eslint-disable react/require-default-props */
 const BarItem = ({
   children,
   colour = styles.svgIcon.fillColour,
