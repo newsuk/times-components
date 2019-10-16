@@ -1,7 +1,7 @@
 import React from "react";
 import { colours } from "@times-components/styleguide";
 import Svg, { G, Path } from "@times-components/svgs";
-import { clean } from "@times-components/utils";
+import { clean } from "../clean";
 import propTypes from "./prop-types";
 
 const viewBox = "14 10 10.592460632324219 20.397258758544922";

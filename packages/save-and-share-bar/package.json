@@ -70,6 +70,7 @@
     "react-dom": "16.9.0"
   },
   "peerDependencies": {
+    "newskit": "0.1.0-alpha-15",
     "react": ">=16.9",
     "react-dom": ">=16.9",
     "react-native": ">=0.59",

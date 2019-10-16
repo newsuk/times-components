@@ -37,7 +37,6 @@ Array [
         <li>
           <a
             href="/topic/football"
-            size="medium"
           >
             Football
           </a>
@@ -45,7 +44,6 @@ Array [
         <li>
           <a
             href="/topic/manchester-united"
-            size="medium"
           >
             Manchester United FC
           </a>
@@ -53,7 +51,6 @@ Array [
         <li>
           <a
             href="/topic/chelsea"
-            size="medium"
           >
             Chelsea FC
           </a>
@@ -61,7 +58,6 @@ Array [
         <li>
           <a
             href="/topic/arsenal"
-            size="medium"
           >
             Arsenal
           </a>
@@ -69,7 +65,6 @@ Array [
         <li>
           <a
             href="/topic/rugby-union"
-            size="medium"
           >
             Rugby Union
           </a>

@@ -68,7 +68,7 @@
     "@times-components/save-and-share-bar": "0.7.40",
     "@times-components/styleguide": "3.28.55",
     "@times-components/user-state": "0.0.34",
-    "newskit": "0.0.0-70b3f4d2c",
+    "@times-components/utils": "5.0.2",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"
   },
@@ -77,6 +77,7 @@
     "react-dom": "16.9.0"
   },
   "peerDependencies": {
+    "newskit": "0.1.0-alpha-15",
     "react": ">=16.9",
     "react-dom": ">=16.9",
     "react-native": ">=0.59",

@@ -15,7 +15,6 @@ import timesFonts from "./fonts/fonts";
 import timesFontSizes from "./fonts/font-sizes";
 import timesFontFactory from "./fonts/font-factory";
 import themeFactory from "./theme/theme-factory";
-
 import scales from "./scales";
 import spacing from "./spacing";
 
