@@ -96,34 +96,36 @@ const Paragraph = ({
     !dropcapsDisabled && index === 1
       ? makeDropCap(scale, colours.section[data.section], dropCapFont, str)
       : false;
-  
+
+  const [inlineExclusion, setInlineExclusion] = useState(false);
+
   if (!inline && !dropCap) {
-    return <ArticleParagraph
-      ast={tree}
-      key={key}
-      uid={key}
-    >
-      <Text>
-        {children.map(child => {
-          const attribute = child.attributes[0];
-          const style = attribute ? attribute.tag.settings : defaultFont;
-          const href = attribute ? attribute.tag.href : null;
-          const type = href ? attribute.tag.type : null;
-          const canonicalId = href ? attribute.tag.canonicalId : null;
-          if (href) {
-            return (
-              <ArticleLink
-                url={href}
-                onPress={e => onLinkPress(e, { canonicalId, type, url: href })}
-              >
-                {child.string}
-              </ArticleLink>
-            );
-          }
-          return <Text style={style}>{child.string}</Text>
-        })}
-      </Text>
-    </ArticleParagraph>
+    return (
+      <ArticleParagraph ast={tree} key={key} uid={key}>
+        <Text>
+          {children.map(child => {
+            const attribute = child.attributes[0];
+            const style = attribute ? attribute.tag.settings : defaultFont;
+            const href = attribute ? attribute.tag.href : null;
+            const type = href ? attribute.tag.type : null;
+            const canonicalId = href ? attribute.tag.canonicalId : null;
+            if (href) {
+              return (
+                <ArticleLink
+                  url={href}
+                  onPress={e =>
+                    onLinkPress(e, { canonicalId, type, url: href })
+                  }
+                >
+                  {child.string}
+                </ArticleLink>
+              );
+            }
+            return <Text style={style}>{child.string}</Text>;
+          })}
+        </Text>
+      </ArticleParagraph>
+    );
   }
 
   const contentWidth = Math.min(screenWidth(), tabletWidth);
@@ -136,8 +138,6 @@ const Paragraph = ({
     0,
     dropCap ? [dropCap.exclusion] : []
   );
-
-  const [inlineExclusion, setInlineExclusion] = useState(false);
 
   const manager = new LayoutManager(
     dropCap ? str.slice(1) : str,

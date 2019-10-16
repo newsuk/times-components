@@ -94,9 +94,9 @@ class DOMContext extends PureComponent {
     this.webView.injectJavaScript(`
         if (typeof unrulyViewportStatus === "function") {
           unrulyViewportStatus(${JSON.stringify({
-      ...this.deviceInfo,
-      visible: false
-    })});
+            ...this.deviceInfo,
+            visible: false
+          })});
         };
       `);
   };
@@ -112,9 +112,9 @@ class DOMContext extends PureComponent {
     this.webView.injectJavaScript(`
           if (typeof unrulyViewportStatus === "function") {
             unrulyViewportStatus(${JSON.stringify({
-      ...this.deviceInfo,
-      visible: true
-    })})
+              ...this.deviceInfo,
+              visible: true
+            })})
           };
         `);
   };

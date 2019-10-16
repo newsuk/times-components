@@ -1,5 +1,5 @@
 /* eslint-disable global-require */
-import * as opentype from "opentype.js"
+import * as opentype from "opentype.js";
 
 const fonts = {
   "CenturyGothic-Bold": () =>
