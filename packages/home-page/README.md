@@ -1,6 +1,6 @@
 # HomePage
 
-<!-- Add the description of the package here. -->
+React version of the main render page visible on the home route. Used to render all the sections in the edition.
 
 ## Contributing
 
@@ -33,21 +33,5 @@ To link the package to render project run `yarn watch`, make some code change an
 Testing can be done on each platform individually
 
 ```
-yarn test:android
-yarn test:ios
 yarn test:web
 ```
-
-Or the tests for all platforms can be run
-
-```
-yarn test:all
-```
-
-Visit the official
-
-<!-- Add the storybook link here. -->
-
-## Future
-
-<!-- Add details of future development here. -->
