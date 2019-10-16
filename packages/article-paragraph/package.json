@@ -39,6 +39,7 @@
   "dependencies": {
     "@times-components/article-skeleton": "1.17.6",
     "@times-components/context": "1.1.5",
+    "@times-components/utils": "5.0.2",
     "@times-components/markup-forest": "1.7.27",
     "@times-components/responsive": "0.4.73",
     "@times-components/styleguide": "3.28.55",
@@ -74,6 +75,7 @@
     "react-dom": "16.9.0"
   },
   "peerDependencies": {
+    "newskit": "0.1.0-alpha-15",
     "react": ">=16.9",
     "react-dom": ">=16.9",
     "react-native": ">=0.59",

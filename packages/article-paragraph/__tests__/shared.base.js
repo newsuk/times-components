@@ -15,6 +15,15 @@ export default () => [
     }
   },
   {
+    name: "paragraph using newskit",
+    test: async () => {
+      const testInstance = TestRenderer.create(
+        renderParagraph(paragraphData, "default", true)
+      );
+      expect(testInstance).toMatchSnapshot();
+    }
+  },
+  {
     name: "empty paragraph",
     test: async () => {
       const testInstance = TestRenderer.create(

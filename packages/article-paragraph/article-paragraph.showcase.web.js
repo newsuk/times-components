@@ -4,6 +4,9 @@ import coreRenderers from "@times-components/markup";
 import { renderTree } from "@times-components/markup-forest";
 import { colours, themeFactory } from "@times-components/styleguide";
 import { ArticleLink } from "@times-components/article-skeleton";
+import { ContextProviderWithDefaults } from "@times-components/context";
+import { newskitTheme } from "@times-components/utils";
+import { ThemeProvider } from "newskit";
 import paragraphData from "./fixtures/paragraph-showcase.json";
 import dropCapData from "./fixtures/drop-cap-showcase.json";
 import dropCapShortTextData from "./fixtures/drop-cap-short-text-showcase.json";
@@ -63,6 +66,18 @@ export default {
     {
       component: ({ select }) => renderParagraph({ select }, paragraphData),
       name: "Paragraph",
+      platform: "web",
+      type: "story"
+    },
+    {
+      component: ({ select }) => (
+        <ThemeProvider theme={newskitTheme}>
+          <ContextProviderWithDefaults value={{ newskit: true }}>
+            {renderParagraph({ select }, paragraphData)}
+          </ContextProviderWithDefaults>
+        </ThemeProvider>
+      ),
+      name: "Paragraph via Newskit",
       platform: "web",
       type: "story"
     },

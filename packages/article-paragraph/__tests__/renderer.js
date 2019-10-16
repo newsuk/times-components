@@ -1,5 +1,6 @@
 import React from "react";
 import { View, Text } from "react-native";
+import { ThemeProvider } from "newskit";
 import Context from "@times-components/context";
 import styleguide, { scales, themeFactory } from "@times-components/styleguide";
 import { renderTree } from "@times-components/markup-forest";
@@ -8,6 +9,7 @@ import { Text as FText, MarkupFactory } from "@times-components/text-flow";
 import { flow } from "@times-components/markup";
 import Responsive from "@times-components/responsive";
 import { Roboto } from "@times-components/test-utils";
+import { newskitTheme } from "@times-components/utils";
 import ArticleParagraph from "../src";
 
 FText.FontLoader.loadFont("TimesDigitalW04", Roboto);
@@ -25,7 +27,7 @@ const { Bold, Italic, Link, Body } = MarkupFactory({
   linkFont: fontFamily
 });
 
-export default (ast, section = "default") => {
+export default (ast, section = "default", newskit = false) => {
   const theme = themeFactory(section, "magazinestandard");
   const rendered = renderTree(ast, {
     ...flow({
@@ -74,12 +76,15 @@ export default (ast, section = "default") => {
   return (
     <Context.Provider
       value={{
+        newskit,
         theme: {
           scale: scales.medium
         }
       }}
     >
-      <Responsive>{internals}</Responsive>
+      <ThemeProvider theme={newskitTheme || {}}>
+        <Responsive>{internals}</Responsive>
+      </ThemeProvider>
     </Context.Provider>
   );
 };

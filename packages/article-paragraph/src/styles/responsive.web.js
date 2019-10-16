@@ -1,5 +1,10 @@
 import styled, { css } from "styled-components";
 import {
+  Paragraph as NewsKitParagraph,
+  styled as emotionStyled,
+  getBreakpointFromTheme
+} from "newskit";
+import {
   breakpoints,
   colours,
   fonts,
@@ -28,6 +33,35 @@ const dropCapMargins = {
   styleMagazine: -0.01
 };
 
+export const ThemedParagraph = emotionStyled(NewsKitParagraph)`
+  color: ${colours.functional.primary};
+  display: block;
+  font-family: "${fonts.bodyRegular}";
+  line-height: 26px;
+  font-size: ${fontSizes.bodyMobile}px;
+  margin: 0 auto ${spacing(5)};
+  padding-right: ${spacing(2)};
+  padding-left: ${spacing(2)};
+
+  &:first-of-type:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  @media screen and (min-width: ${getBreakpointFromTheme("medium")}px) {
+    font-size: ${fontSizes.body}px;
+    line-height: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 80.8%;
+  }
+
+  @media screen and (min-width: ${getBreakpointFromTheme("large")}px) {
+    width: 56.2%;
+  }
+`;
+
 export const Paragraph = styled.p`
   color: ${colours.functional.primary};
   display: block;
@@ -37,7 +71,7 @@ export const Paragraph = styled.p`
   margin: 0 auto ${spacing(5)};
   padding-right: ${spacing(2)};
   padding-left: ${spacing(2)};
-   
+
   // Clear fix for floated dropcap
   &:first-of-type:after {
     content: "";

@@ -77,6 +77,23 @@ const articleTemplateTest = template =>
         .should("not.be.empty");
     });
 
+    it("loads all the required article ads with newskit", () => {
+      cy.task("startMockServerWith", {
+        Article: sundayTimesArticleWithThreeRelatedArticles,
+        User: userWithBookmarks
+      })
+        .visit("/article/8763d1a0-ca57-11e8-bde6-fae32479843d?newskit=1")
+        .wait(2000);
+
+      cy.get("#header")
+        .should("be.visible")
+        .should("not.be.empty");
+
+      cy.get("#header")
+        .get("googleQueryId")
+        .should("not.be.empty");
+    });
+
     it("has SpotIM comment tag when article comments are enabled", () => {
       const articleWithCommentsEnabled = new MockArticle()
         .sundayTimes()
@@ -118,6 +135,34 @@ const articleTemplateTest = template =>
         User: userWithBookmarks
       })
         .visit("/article/8763d1a0-ca57-11e8-bde6-fae32479843d")
+        .wait(1000)
+        .injectAxe()
+        .wait(200)
+        .configureAxe({
+          rules: [
+            {
+              id: "color-contrast",
+              enabled: false
+            },
+            {
+              id: "frame-title-unique",
+              enabled: false
+            },
+            {
+              id: "region",
+              enabled: false
+            }
+          ]
+        })
+        .checkA11y();
+    });
+
+    it("should pass basic a11y test with newskit", () => {
+      cy.task("startMockServerWith", {
+        Article: sundayTimesArticleWithThreeRelatedArticles,
+        User: userWithBookmarks
+      })
+        .visit("/article/8763d1a0-ca57-11e8-bde6-fae32479843d?newskit=1")
         .wait(1000)
         .injectAxe()
         .wait(200)
