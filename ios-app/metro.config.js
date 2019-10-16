@@ -1,5 +1,4 @@
 const path = require("path");
-const modulePaths = require("./modulePaths");
 const resolve = require("path").resolve;
 const fs = require("fs");
 
