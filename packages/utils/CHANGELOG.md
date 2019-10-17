@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.1](https://github.com/newsuk/times-components/compare/@times-components/utils@5.1.0...@times-components/utils@5.1.1) (2019-10-17)
+
+
+### Bug Fixes
+
+* Revert "feat: ppdsc 388 newskit sharebar ([#2339](https://github.com/newsuk/times-components/issues/2339))" ([#2343](https://github.com/newsuk/times-components/issues/2343)) ([099c685](https://github.com/newsuk/times-components/commit/099c685))
+
+
+
+
+
 # [5.1.0](https://github.com/newsuk/times-components/compare/@times-components/utils@5.0.2...@times-components/utils@5.1.0) (2019-10-16)
 
 
