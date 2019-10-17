@@ -3,10 +3,8 @@
 const React = require("react");
 const { ApolloProvider } = require("react-apollo");
 const { HelmetProvider } = require("react-helmet-async");
-const { ThemeProvider } = require("newskit");
 const { ArticleProvider } = require("@times-components/provider/rnw");
 const Article = require("@times-components/article/rnw").default;
-const { newskitTheme } = require("@times-components/utils/rnw");
 const {
   ContextProviderWithDefaults,
   defaults
@@ -60,27 +58,21 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
                 user: userState
               }
             },
-            React.createElement(
-              ThemeProvider,
-              {
-                theme: newskitTheme
-              },
-              React.createElement(Article, {
-                adConfig: mapArticleToAdConfig(article),
-                analyticsStream,
-                article,
-                error,
-                isLoading,
-                navigationMode,
-                onAuthorPress: () => {},
-                onRelatedArticlePress: () => {},
-                onTopicPress: () => {},
-                refetch,
-                spotAccountId,
-                paidContentClassName,
-                faviconUrl
-              })
-            )
+            React.createElement(Article, {
+              adConfig: mapArticleToAdConfig(article),
+              analyticsStream,
+              article,
+              error,
+              isLoading,
+              navigationMode,
+              onAuthorPress: () => {},
+              onRelatedArticlePress: () => {},
+              onTopicPress: () => {},
+              refetch,
+              spotAccountId,
+              paidContentClassName,
+              faviconUrl
+            })
           )
       )
     )

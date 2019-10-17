@@ -1,7 +1,7 @@
 import React from "react";
 import { colours } from "@times-components/styleguide";
 import Svg, { Path } from "@times-components/svgs";
-import { clean } from "../clean";
+import { clean } from "@times-components/utils";
 import propTypes from "./prop-types";
 
 const ratio = 75 / 60;

@@ -1,4 +1,4 @@
-import { clean } from "../src/clean";
+import { clean } from "..";
 
 describe("clean", () => {
   it("should remove undefined props", () => {

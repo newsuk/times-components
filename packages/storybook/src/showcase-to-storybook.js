@@ -3,8 +3,6 @@ import { HelmetProvider } from "react-helmet-async";
 import PropTypes from "prop-types";
 import { Platform } from "react-native";
 import { addUserStateKnobs } from "@times-components/user-state";
-import { ThemeProvider } from "newskit";
-import { newskitTheme } from "@times-components/utils";
 
 React.Fragment = ({ children }) => children;
 React.Fragment.propTypes = {
@@ -15,9 +13,7 @@ React.Fragment.displayName = "React.Fragment";
 // eslint-disable-next-line react/prop-types
 export const StrictWrapper = ({ children }) => (
   <StrictMode>
-    <HelmetProvider context={{}}>
-      <ThemeProvider theme={newskitTheme || {}}>{children}</ThemeProvider>
-    </HelmetProvider>
+    <HelmetProvider context={{}}>{children}</HelmetProvider>
   </StrictMode>
 );
 
