@@ -48,7 +48,6 @@
     "@storybook/react-native": "4.1.18",
     "@times-components/schema": "0.6.22",
     "@times-components/user-state": "0.0.35",
-    "@times-components/utils": "5.1.0",
     "apollo-cache-inmemory": "1.5.1",
     "apollo-client": "2.5.1",
     "apollo-link-http": "1.5.14",
@@ -64,7 +63,6 @@
     "react-dom": "16.9.0"
   },
   "peerDependencies": {
-    "newskit": "0.1.0-alpha-15",
     "react": ">=16.9",
     "react-dom": ">=16.9",
     "react-native": ">=0.59",

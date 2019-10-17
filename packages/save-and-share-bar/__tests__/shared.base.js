@@ -2,14 +2,11 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
 import { Clipboard } from "react-native";
-import { ThemeProvider, theTimesTheme } from "newskit";
 import { UserState } from "./mocks";
 import mockGetTokenisedArticleUrl from "./mock-get-tokenised-article-url";
 import BarItem from "../src/bar-item";
 import SaveAndShareBar from "../src/save-and-share-bar";
 import EmailShare from "../src/email-share";
-import NewskitShareBar from "../src/newskit-share-bar";
-import SaveStarIcon from "../src/save-star";
 
 export default () => {
   describe("save and share bar component", () => {
@@ -80,142 +77,79 @@ export default () => {
       ).toEqual(false);
     });
 
-    it("renders save star web correctly", () => {
+    it("email icon when tokenising with loading state while network request is fetching data", async () => {
+      const apiMock = () =>
+        Promise.resolve({
+          loading: true
+        });
+
       const testInstance = TestRenderer.create(
-        <SaveStarIcon articleId={props.articleId} />
+        <EmailShare
+          {...props}
+          getTokenisedShareUrl={apiMock}
+          shouldTokenise
+          publicationName="TIMES"
+        />
       );
-      expect(testInstance.toJSON()).toMatchSnapshot();
+      await testInstance.root.findByType(BarItem).props.onPress();
+
+      expect(testInstance).toMatchSnapshot();
     });
 
-    describe("EmailShare", () => {
-      it("email icon when tokenising with loading state while network request is fetching data", async () => {
-        const apiMock = () =>
-          Promise.resolve({
-            loading: true
-          });
-
-        const testInstance = TestRenderer.create(
-          <EmailShare
-            {...props}
-            getTokenisedShareUrl={apiMock}
-            shouldTokenise
-            publicationName="TIMES"
-          />
-        );
-        await testInstance.root.findByType(BarItem).props.onPress();
-
-        expect(testInstance).toMatchSnapshot();
-      });
-
-      it("when tokenising, email icon fetches tokenised article url and change window.location (The Times)", async () => {
-        const testInstance = TestRenderer.create(
-          <EmailShare {...props} shouldTokenise publicationName="TIMES" />
-        );
-
-        const mock = await mockGetTokenisedArticleUrl(articleId);
-        const url = mock.data.article.tokenisedUrl;
-
-        const mailtoUrl = `mailto:?subject=${articleHeadline} from The Times&body=I thought you would be interested in this story from The Times%0A%0A${articleHeadline}%0A%0A${url}`;
-
-        await testInstance.root.findAllByType(BarItem)[0].props.onPress();
-        expect(window.location.assign).toBeCalledWith(mailtoUrl);
-      });
-
-      it("when tokenising, email icon fetches tokenised article url and change window.location (The Sunday Times)", async () => {
-        const testInstance = TestRenderer.create(
-          <EmailShare
-            {...props}
-            shouldTokenise
-            publicationName="THE SUNDAY TIMES"
-          />
-        );
-
-        const mock = await mockGetTokenisedArticleUrl(articleId);
-        const url = mock.data.article.tokenisedUrl;
-
-        const mailtoUrl = `mailto:?subject=${articleHeadline} from The Sunday Times&body=I thought you would be interested in this story from The Sunday Times%0A%0A${articleHeadline}%0A%0A${url}`;
-
-        await testInstance.root.findAllByType(BarItem)[0].props.onPress();
-        expect(window.location.assign).toBeCalledWith(mailtoUrl);
-      });
-
-      it("when not tokenising, but using existing tokenised article, email icon uses existing tokenised article url and change window.location", async () => {
-        window.location.search = "?shareToken=foo";
-        const testInstance = TestRenderer.create(
-          <EmailShare
-            {...props}
-            shouldTokenise={false}
-            publicationName="TIMES"
-          />
-        );
-
-        const url = `${articleUrl}?shareToken=foo`;
-        const mailtoUrl = `mailto:?subject=${articleHeadline} from The Times&body=I thought you would be interested in this story from The Times%0A%0A${articleHeadline}%0A%0A${url}`;
-
-        await testInstance.root.findAllByType(BarItem)[0].props.onPress();
-        expect(window.location.assign).toBeCalledWith(mailtoUrl);
-      });
-
-      it("when not tokenising email icon uses article url and change window.location", async () => {
-        const testInstance = TestRenderer.create(
-          <EmailShare
-            {...props}
-            shouldTokenise={false}
-            publicationName="TIMES"
-          />
-        );
-
-        const mailtoUrl = `mailto:?subject=${articleHeadline} from The Times&body=I thought you would be interested in this story from The Times%0A%0A${articleHeadline}%0A%0A${articleUrl}`;
-
-        await testInstance.root.findAllByType(BarItem)[0].props.onPress();
-        expect(window.location.assign).toBeCalledWith(mailtoUrl);
-      });
-    });
-
-    describe("Newskit ShareBar", () => {
-      const renderShareBar = prop => (
-        <ThemeProvider theme={theTimesTheme}>
-          <NewskitShareBar {...prop} />
-        </ThemeProvider>
+    it("when tokenising, email icon fetches tokenised article url and change window.location (The Times)", async () => {
+      const testInstance = TestRenderer.create(
+        <EmailShare {...props} shouldTokenise publicationName="TIMES" />
       );
 
-      it("does not render when savingEnabled and sharingEnabled is false", () => {
-        const testInstance = TestRenderer.create(renderShareBar(props));
-        expect(testInstance.toJSON()).toMatchSnapshot();
-      });
+      const mock = await mockGetTokenisedArticleUrl(articleId);
+      const url = mock.data.article.tokenisedUrl;
 
-      it("does not render share icons when savingEnabled is false", () => {
-        const testInstance = TestRenderer.create(
-          renderShareBar({
-            ...props,
-            sharingEnabled: true,
-            savingEnabled: false
-          })
-        );
-        expect(testInstance.toJSON()).toMatchSnapshot();
-      });
+      const mailtoUrl = `mailto:?subject=${articleHeadline} from The Times&body=I thought you would be interested in this story from The Times%0A%0A${articleHeadline}%0A%0A${url}`;
 
-      it("does not render share icons when sharingEnabled is false", () => {
-        const testInstance = TestRenderer.create(
-          renderShareBar({
-            ...props,
-            sharingEnabled: false,
-            savingEnabled: true
-          })
-        );
-        expect(testInstance.toJSON()).toMatchSnapshot();
-      });
+      await testInstance.root.findAllByType(BarItem)[0].props.onPress();
+      expect(window.location.assign).toBeCalledWith(mailtoUrl);
+    });
 
-      it("does not render share icons when sharingEnabled is false", () => {
-        const testInstance = TestRenderer.create(
-          renderShareBar({
-            ...props,
-            sharingEnabled: true,
-            savingEnabled: true
-          })
-        );
-        expect(testInstance.toJSON()).toMatchSnapshot();
-      });
+    it("when tokenising, email icon fetches tokenised article url and change window.location (The Sunday Times)", async () => {
+      const testInstance = TestRenderer.create(
+        <EmailShare
+          {...props}
+          shouldTokenise
+          publicationName="THE SUNDAY TIMES"
+        />
+      );
+
+      const mock = await mockGetTokenisedArticleUrl(articleId);
+      const url = mock.data.article.tokenisedUrl;
+
+      const mailtoUrl = `mailto:?subject=${articleHeadline} from The Sunday Times&body=I thought you would be interested in this story from The Sunday Times%0A%0A${articleHeadline}%0A%0A${url}`;
+
+      await testInstance.root.findAllByType(BarItem)[0].props.onPress();
+      expect(window.location.assign).toBeCalledWith(mailtoUrl);
+    });
+
+    it("when not tokenising, but using existing tokenised article, email icon uses existing tokenised article url and change window.location", async () => {
+      window.location.search = "?shareToken=foo";
+      const testInstance = TestRenderer.create(
+        <EmailShare {...props} shouldTokenise={false} publicationName="TIMES" />
+      );
+
+      const url = `${articleUrl}?shareToken=foo`;
+      const mailtoUrl = `mailto:?subject=${articleHeadline} from The Times&body=I thought you would be interested in this story from The Times%0A%0A${articleHeadline}%0A%0A${url}`;
+
+      await testInstance.root.findAllByType(BarItem)[0].props.onPress();
+      expect(window.location.assign).toBeCalledWith(mailtoUrl);
+    });
+
+    it("when not tokenising email icon uses article url and change window.location", async () => {
+      const testInstance = TestRenderer.create(
+        <EmailShare {...props} shouldTokenise={false} publicationName="TIMES" />
+      );
+
+      const mailtoUrl = `mailto:?subject=${articleHeadline} from The Times&body=I thought you would be interested in this story from The Times%0A%0A${articleHeadline}%0A%0A${articleUrl}`;
+
+      await testInstance.root.findAllByType(BarItem)[0].props.onPress();
+      expect(window.location.assign).toBeCalledWith(mailtoUrl);
     });
   });
 };

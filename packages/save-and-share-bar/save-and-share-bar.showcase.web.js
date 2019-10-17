@@ -1,7 +1,6 @@
 import React from "react";
 import { scales } from "@times-components/styleguide";
 import { MessageManager, MessageContext } from "@times-components/message-bar";
-import { ContextProviderWithDefaults } from "@times-components/context";
 import { MockBookmarksProvider } from "@times-components/provider-test-tools";
 import SaveAndShareBar from "./src/save-and-share-bar";
 
@@ -45,35 +44,6 @@ export default {
         </MockBookmarksProvider>
       ),
       name: "Save and Share bar",
-      type: "story"
-    },
-    {
-      component: () => (
-        <ContextProviderWithDefaults
-          value={{
-            newskit: true
-          }}
-        >
-          <MockBookmarksProvider delay={1000} articleId={articleId}>
-            <MessageManager animate delay={3000} scale={scales.medium}>
-              <MessageContext.Consumer>
-                {({ showMessage }) => (
-                  <SaveAndShareBar
-                    articleId={articleId}
-                    articleHeadline="test-headline"
-                    articleUrl="https://www.thetimes.co.uk/"
-                    onCopyLink={() => showMessage("Article link copied")}
-                    getTokenisedShareUrl={mockGetTokenisedArticleUrl}
-                    savingEnabled
-                    sharingEnabled
-                  />
-                )}
-              </MessageContext.Consumer>
-            </MessageManager>
-          </MockBookmarksProvider>
-        </ContextProviderWithDefaults>
-      ),
-      name: "NewsKit Share bar",
       type: "story"
     }
   ],

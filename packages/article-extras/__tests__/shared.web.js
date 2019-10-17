@@ -1,7 +1,5 @@
 import React from "react";
 import TestRenderer from "react-test-renderer";
-import { ThemeProvider } from "newskit";
-import { newskitTheme } from "@times-components/utils";
 import {
   addSerializers,
   compose,
@@ -63,18 +61,16 @@ export default () => {
               newskit: true
             }}
           >
-            <ThemeProvider theme={newskitTheme}>
-              <ArticleExtras
-                analyticsStream={() => {}}
-                articleId="dummy-article-id"
-                commentsEnabled
-                registerNode={() => {}}
-                relatedArticleSlice={relatedArticleSlice}
-                relatedArticlesVisible
-                spotAccountId="dummy-spot-id"
-                topics={topics}
-              />
-            </ThemeProvider>
+            <ArticleExtras
+              analyticsStream={() => {}}
+              articleId="dummy-article-id"
+              commentsEnabled
+              registerNode={() => {}}
+              relatedArticleSlice={relatedArticleSlice}
+              relatedArticlesVisible
+              spotAccountId="dummy-spot-id"
+              topics={topics}
+            />
           </ContextProviderWithDefaults>
         );
 

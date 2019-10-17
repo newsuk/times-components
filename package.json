@@ -159,7 +159,7 @@
   },
   "dependencies": {
     "@babel/runtime-corejs2": "7.4.4",
-    "newskit": "0.1.0-alpha-15",
+    "newskit": "0.0.0-70b3f4d2c",
     "react-art": "16.6.3",
     "react-native": "0.59.10",
     "react-native-device-info": "2.3.2",
