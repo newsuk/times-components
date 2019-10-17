@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.7.40...@times-components/save-and-share-bar@0.8.0) (2019-10-16)
+
+
+### Features
+
+* ppdsc 388 newskit sharebar ([#2339](https://github.com/newsuk/times-components/issues/2339)) ([e54dadf](https://github.com/newsuk/times-components/commit/e54dadf))
+
+
+
+
+
 ## [0.7.40](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.7.39...@times-components/save-and-share-bar@0.7.40) (2019-10-15)
 
 **Note:** Version bump only for package @times-components/save-and-share-bar

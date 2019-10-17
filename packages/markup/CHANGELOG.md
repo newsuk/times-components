@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.3.114](https://github.com/newsuk/times-components/compare/@times-components/markup@3.3.113...@times-components/markup@3.3.114) (2019-10-16)
+
+**Note:** Version bump only for package @times-components/markup
+
+
+
+
+
 ## [3.3.113](https://github.com/newsuk/times-components/compare/@times-components/markup@3.3.112...@times-components/markup@3.3.113) (2019-10-11)
 
 **Note:** Version bump only for package @times-components/markup
