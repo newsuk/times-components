@@ -34,13 +34,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 numberOfLines={1}
                 selectable={true}
               >
-                be
-              </Text>
-              <Text
-                numberOfLines={1}
-                selectable={true}
-              >
-                ing
+                being
               </Text>
               <Text
                 numberOfLines={1}
@@ -52,13 +46,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 numberOfLines={1}
                 selectable={true}
               >
-                His
-              </Text>
-              <Text
-                numberOfLines={1}
-                selectable={true}
-              >
-                tory
+                History
               </Text>
               <Text
                 numberOfLines={1}
@@ -232,13 +220,7 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                 numberOfLines={1}
                 selectable={true}
               >
-                de
-              </Text>
-              <Text
-                numberOfLines={1}
-                selectable={true}
-              >
-                cision
+                decision
               </Text>
               <Text
                 numberOfLines={1}
@@ -280,13 +262,7 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                 numberOfLines={1}
                 selectable={true}
               >
-                wo
-              </Text>
-              <Text
-                numberOfLines={1}
-                selectable={true}
-              >
-                man
+                woman
               </Text>
               <Text
                 numberOfLines={1}
@@ -310,25 +286,7 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                 numberOfLines={1}
                 selectable={true}
               >
-                opin
-              </Text>
-              <Text
-                numberOfLines={1}
-                selectable={true}
-              >
-                ion
-              </Text>
-              <Text
-                numberOfLines={1}
-                selectable={true}
-              >
-                -
-              </Text>
-              <Text
-                numberOfLines={1}
-                selectable={true}
-              >
-                ated.
+                opinionated.
               </Text>
             </View>
           </View>
@@ -338,77 +296,10 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
         <View>
           <View>
             <View>
-              <Text
-                numberOfLines={1}
-                selectable={true}
-              >
-                When
-              </Text>
-              <Text
-                numberOfLines={1}
-                selectable={true}
-              >
-                she
-              </Text>
-              <Text
-                numberOfLines={1}
-                selectable={true}
-              >
-                does
-              </Text>
-              <Text
-                numberOfLines={1}
-                selectable={true}
-              >
-                come
-              </Text>
-              <Text
-                numberOfLines={1}
-                selectable={true}
-              >
-                to
-              </Text>
-              <Text
-                numberOfLines={1}
-                selectable={true}
-              >
-                so
-              </Text>
-              <Text
-                numberOfLines={1}
-                selectable={true}
-              >
-                cial
-              </Text>
-              <Text
-                numberOfLines={1}
-                selectable={true}
-              >
-                events,
-              </Text>
-              <Text
-                numberOfLines={1}
-                selectable={true}
-              >
-                she
-              </Text>
-              <Text
-                numberOfLines={1}
-                selectable={true}
-              >
-                dom
-              </Text>
-              <Text
-                numberOfLines={1}
-                selectable={true}
-              >
-                in
-              </Text>
-              <Text
-                numberOfLines={1}
-                selectable={true}
-              >
-                ates.
+              <Text>
+                <Text>
+                  When she does come to social events, she dominates.
+                </Text>
               </Text>
             </View>
           </View>

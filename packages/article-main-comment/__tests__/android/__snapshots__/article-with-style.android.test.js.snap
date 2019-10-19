@@ -1,263 +1,1833 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`phone full article with style 1`] = `
-<ArticleSkeleton>
-  <View
-    style={
-      Object {
-        "marginBottom": 0,
-        "paddingBottom": 20,
-        "paddingTop": 35,
-      }
+<View
+  style={
+    Object {
+      "backgroundColor": "#f0f0f0",
     }
-  >
-    <View
-      style={
-        Object {
-          "alignItems": "center",
-          "paddingLeft": 10,
-          "paddingRight": 10,
-        }
-      }
-    >
-      <ModalImage
-        style={
-          Object {
-            "borderRadius": 50,
-            "height": 100,
-            "marginBottom": 25,
-            "overflow": "hidden",
-            "width": 100,
-          }
-        }
-      />
-      <View
-        style={
-          Object {
-            "marginBottom": 10,
-          }
-        }
-      >
-        <ArticleLabel />
-      </View>
-      <Text
-        style={
-          Object {
-            "color": "#1D1D1B",
-            "fontFamily": "TimesModern-Bold",
-            "fontSize": 30,
-            "lineHeight": 36,
-            "marginBottom": 13.75,
-            "textAlign": "center",
-          }
-        }
-      >
-        Some Headline
-      </Text>
-      <View
-        style={
-          Object {
-            "marginBottom": 15,
-            "marginTop": 5,
-          }
-        }
-      >
-        <ArticleFlags />
-      </View>
-      <Text
-        style={
-          Object {
-            "color": "#333333",
-            "fontFamily": "TimesModern-Regular",
-            "fontSize": 20,
-            "lineHeight": 25,
-            "marginBottom": 15,
-            "paddingHorizontal": 10,
-            "textAlign": "center",
-          }
-        }
-      >
-        Some Standfirst
-      </Text>
-      <View
-        style={
-          Object {
-            "alignItems": "center",
-            "borderBottomColor": "#DBDBDB",
-            "borderBottomWidth": 1,
-            "borderTopColor": "#DBDBDB",
-            "borderTopWidth": 1,
-            "marginTop": 5,
-            "paddingVertical": 10,
-            "width": "100%",
-          }
-        }
-      >
+  }
+>
+  <RCTScrollView>
+    <View>
+      <View>
         <View
           style={
             Object {
-              "flexDirection": "row",
-              "flexWrap": "wrap",
+              "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "width": undefined,
             }
           }
         >
-          <ArticleBylineWithLinks />
-        </View>
-        <View
-          style={
-            Object {
-              "flexDirection": "row",
-              "flexWrap": "wrap",
-            }
-          }
-        >
-          <Text
+          <View
             style={
               Object {
-                "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 13,
-                "lineHeight": 15,
-                "marginTop": 5,
+                "marginBottom": 0,
+                "paddingBottom": 20,
+                "paddingTop": 35,
               }
             }
           >
-            Friday March 13 2015, 6.54pm, The Times
-          </Text>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "paddingLeft": 10,
+                  "paddingRight": 10,
+                }
+              }
+            >
+              <View>
+                <Modal>
+                  <View
+                    style={
+                      Object {
+                        "backgroundColor": "#000000",
+                        "flexDirection": "column",
+                        "height": "100%",
+                        "justifyContent": "space-between",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "backgroundColor": "#000000",
+                          "flex": 0,
+                          "paddingBottom": 0,
+                          "paddingLeft": 0,
+                          "paddingRight": 0,
+                          "paddingTop": 0,
+                        }
+                      }
+                    />
+                    <View
+                      style={
+                        Object {
+                          "padding": 15,
+                          "position": "relative",
+                          "zIndex": 2,
+                        }
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "alignItems": "center",
+                            "backgroundColor": "rgba(0, 0, 0, 0.5)",
+                            "borderRadius": 25,
+                            "height": 25,
+                            "justifyContent": "center",
+                            "width": 25,
+                          }
+                        }
+                      >
+                        <Image
+                          style={
+                            Object {
+                              "height": "85%",
+                              "width": "85%",
+                            }
+                          }
+                        />
+                      </View>
+                    </View>
+                    <View
+                      style={
+                        Object {
+                          "bottom": 0,
+                          "height": "100%",
+                          "left": 0,
+                          "paddingBottom": 0,
+                          "paddingLeft": 0,
+                          "paddingRight": 0,
+                          "paddingTop": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": "100%",
+                          "zIndex": 1,
+                        }
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "height": "100%",
+                            "width": "100%",
+                          }
+                        }
+                      >
+                        <View
+                          style={
+                            Object {
+                              "flexGrow": 1,
+                              "transform": Array [
+                                Object {
+                                  "translateX": -0,
+                                },
+                                Object {
+                                  "translateY": -0,
+                                },
+                                Object {
+                                  "translateX": 0,
+                                },
+                                Object {
+                                  "translateY": 0,
+                                },
+                                Object {
+                                  "scale": 1,
+                                },
+                                Object {
+                                  "translateX": -0,
+                                },
+                                Object {
+                                  "translateY": -0,
+                                },
+                                Object {
+                                  "translateX": 0,
+                                },
+                                Object {
+                                  "translateY": 0,
+                                },
+                                Object {
+                                  "rotate": "0 deg",
+                                },
+                                Object {
+                                  "perspective": 1000,
+                                },
+                              ],
+                            }
+                          }
+                        >
+                          <View
+                            style={
+                              Object {
+                                "alignItems": "center",
+                                "height": "100%",
+                                "justifyContent": "center",
+                                "position": "absolute",
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            <View
+                              style={
+                                Object {
+                                  "borderRadius": 0,
+                                  "height": "100%",
+                                  "overflow": "hidden",
+                                  "position": "absolute",
+                                  "width": "100%",
+                                }
+                              }
+                            >
+                              <Image
+                                style={
+                                  Object {
+                                    "height": "100%",
+                                    "position": "absolute",
+                                    "resizeMode": "contain",
+                                    "width": "100%",
+                                  }
+                                }
+                              />
+                            </View>
+                            <View
+                              style={
+                                Object {
+                                  "height": "100%",
+                                  "opacity": 1,
+                                  "width": "100%",
+                                }
+                              }
+                            >
+                              <View
+                                style={
+                                  Object {
+                                    "alignItems": "center",
+                                    "backgroundColor": "#EDEDED",
+                                    "justifyContent": "center",
+                                  }
+                                }
+                              >
+                                <Image
+                                  style={
+                                    Object {
+                                      "width": "25%",
+                                    }
+                                  }
+                                />
+                              </View>
+                            </View>
+                          </View>
+                        </View>
+                      </View>
+                    </View>
+                    <View
+                      style={
+                        Object {
+                          "backgroundColor": "#000000B3",
+                          "flex": 0,
+                          "marginTop": "auto",
+                          "position": "relative",
+                          "width": "100%",
+                          "zIndex": 2,
+                        }
+                      }
+                    />
+                  </View>
+                </Modal>
+                <View>
+                  <View
+                    style={
+                      Object {
+                        "borderRadius": 50,
+                        "height": 100,
+                        "marginBottom": 25,
+                        "overflow": "hidden",
+                        "position": "relative",
+                        "width": 100,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "borderRadius": 0,
+                          "height": "100%",
+                          "overflow": "hidden",
+                          "position": "absolute",
+                          "width": "100%",
+                        }
+                      }
+                    >
+                      <Image
+                        style={
+                          Object {
+                            "height": "100%",
+                            "position": "absolute",
+                            "resizeMode": "contain",
+                            "width": "100%",
+                          }
+                        }
+                      />
+                    </View>
+                    <View
+                      style={
+                        Object {
+                          "height": "100%",
+                          "opacity": 1,
+                          "width": "100%",
+                        }
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "alignItems": "center",
+                            "backgroundColor": "#EDEDED",
+                            "justifyContent": "center",
+                          }
+                        }
+                      >
+                        <Image
+                          style={
+                            Object {
+                              "width": "25%",
+                            }
+                          }
+                        />
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  Object {
+                    "marginBottom": 10,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#1D1D1B",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 12,
+                      "fontWeight": "400",
+                      "letterSpacing": 1,
+                      "lineHeight": 12,
+                      "marginBottom": 0,
+                      "marginTop": -1,
+                      "paddingTop": 0,
+                    }
+                  }
+                >
+                  SOME LABEL
+                </Text>
+              </View>
+              <Text
+                style={
+                  Object {
+                    "color": "#1D1D1B",
+                    "fontFamily": "TimesModern-Bold",
+                    "fontSize": 30,
+                    "lineHeight": 36,
+                    "marginBottom": 13.75,
+                    "textAlign": "center",
+                  }
+                }
+              >
+                Some Headline
+              </Text>
+              <View
+                style={
+                  Object {
+                    "marginBottom": 15,
+                    "marginTop": 5,
+                  }
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "flexDirection": "row",
+                      "flexWrap": "wrap",
+                      "marginBottom": 0,
+                      "marginTop": 10,
+                    }
+                  }
+                >
+                  <View>
+                    <View
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "flexDirection": "row",
+                          "marginTop": -3,
+                        }
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "backgroundColor": "#E34605",
+                            "borderRadius": 2.5,
+                            "height": 5,
+                            "width": 5,
+                          }
+                        }
+                      />
+                      <Text
+                        style={
+                          Object {
+                            "color": "#E34605",
+                            "fontFamily": "TimesDigitalW04-RegularSC",
+                            "fontSize": 14,
+                            "fontWeight": "400",
+                            "letterSpacing": 0.6,
+                            "lineHeight": 14,
+                            "marginLeft": 5,
+                            "marginTop": 3,
+                          }
+                        }
+                      >
+                        new
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+              </View>
+              <Text
+                style={
+                  Object {
+                    "color": "#333333",
+                    "fontFamily": "TimesModern-Regular",
+                    "fontSize": 20,
+                    "lineHeight": 25,
+                    "marginBottom": 15,
+                    "paddingHorizontal": 10,
+                    "textAlign": "center",
+                  }
+                }
+              >
+                Some Standfirst
+              </Text>
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "borderBottomColor": "#DBDBDB",
+                    "borderBottomWidth": 1,
+                    "borderTopColor": "#DBDBDB",
+                    "borderTopWidth": 1,
+                    "marginTop": 5,
+                    "paddingVertical": 10,
+                    "width": "100%",
+                  }
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "flexDirection": "row",
+                      "flexWrap": "wrap",
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      Object {
+                        "color": "#696969",
+                        "flexDirection": "row",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 19,
+                      }
+                    }
+                  >
+                    Some byline
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "flexDirection": "row",
+                      "flexWrap": "wrap",
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                        "marginTop": 5,
+                      }
+                    }
+                  >
+                    Friday March 13 2015, 6.54pm GMT, The Times
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
         </View>
       </View>
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "width": undefined,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flexDirection": "column",
+                "paddingBottom": 15,
+                "width": "100%",
+              }
+            }
+          >
+            <View>
+              <View>
+                <Modal>
+                  <View
+                    style={
+                      Object {
+                        "backgroundColor": "#000000",
+                        "flexDirection": "column",
+                        "height": "100%",
+                        "justifyContent": "space-between",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "backgroundColor": "#000000",
+                          "flex": 0,
+                          "paddingBottom": 0,
+                          "paddingLeft": 0,
+                          "paddingRight": 0,
+                          "paddingTop": 0,
+                        }
+                      }
+                    />
+                    <View
+                      style={
+                        Object {
+                          "padding": 15,
+                          "position": "relative",
+                          "zIndex": 2,
+                        }
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "alignItems": "center",
+                            "backgroundColor": "rgba(0, 0, 0, 0.5)",
+                            "borderRadius": 25,
+                            "height": 25,
+                            "justifyContent": "center",
+                            "width": 25,
+                          }
+                        }
+                      >
+                        <Image
+                          style={
+                            Object {
+                              "height": "85%",
+                              "width": "85%",
+                            }
+                          }
+                        />
+                      </View>
+                    </View>
+                    <View
+                      style={
+                        Object {
+                          "bottom": 0,
+                          "height": "100%",
+                          "left": 0,
+                          "paddingBottom": 0,
+                          "paddingLeft": 0,
+                          "paddingRight": 0,
+                          "paddingTop": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": "100%",
+                          "zIndex": 1,
+                        }
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "height": "100%",
+                            "width": "100%",
+                          }
+                        }
+                      >
+                        <View
+                          style={
+                            Object {
+                              "flexGrow": 1,
+                              "transform": Array [
+                                Object {
+                                  "translateX": -0,
+                                },
+                                Object {
+                                  "translateY": -0,
+                                },
+                                Object {
+                                  "translateX": 0,
+                                },
+                                Object {
+                                  "translateY": 0,
+                                },
+                                Object {
+                                  "scale": 1,
+                                },
+                                Object {
+                                  "translateX": -0,
+                                },
+                                Object {
+                                  "translateY": -0,
+                                },
+                                Object {
+                                  "translateX": 0,
+                                },
+                                Object {
+                                  "translateY": 0,
+                                },
+                                Object {
+                                  "rotate": "0 deg",
+                                },
+                                Object {
+                                  "perspective": 1000,
+                                },
+                              ],
+                            }
+                          }
+                        >
+                          <View
+                            style={
+                              Object {
+                                "alignItems": "center",
+                                "height": "100%",
+                                "justifyContent": "center",
+                                "position": "absolute",
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            <View
+                              style={
+                                Object {
+                                  "borderRadius": 0,
+                                  "height": "100%",
+                                  "overflow": "hidden",
+                                  "position": "absolute",
+                                  "width": "100%",
+                                }
+                              }
+                            >
+                              <Image
+                                style={
+                                  Object {
+                                    "height": "100%",
+                                    "position": "absolute",
+                                    "resizeMode": "contain",
+                                    "width": "100%",
+                                  }
+                                }
+                              />
+                            </View>
+                            <View
+                              style={
+                                Object {
+                                  "height": "100%",
+                                  "opacity": 1,
+                                  "width": "100%",
+                                }
+                              }
+                            >
+                              <View
+                                style={
+                                  Object {
+                                    "alignItems": "center",
+                                    "backgroundColor": "#EDEDED",
+                                    "justifyContent": "center",
+                                  }
+                                }
+                              >
+                                <Image
+                                  style={
+                                    Object {
+                                      "width": "25%",
+                                    }
+                                  }
+                                />
+                              </View>
+                            </View>
+                          </View>
+                        </View>
+                      </View>
+                    </View>
+                    <View
+                      style={
+                        Object {
+                          "backgroundColor": "#000000B3",
+                          "flex": 0,
+                          "marginTop": "auto",
+                          "position": "relative",
+                          "width": "100%",
+                          "zIndex": 2,
+                        }
+                      }
+                    >
+                      <View>
+                        <View
+                          style={
+                            Object {
+                              "margin": 15,
+                              "paddingTop": 5,
+                            }
+                          }
+                        >
+                          <Text
+                            style={
+                              Object {
+                                "color": "#FFFFFF",
+                                "fontFamily": "GillSansMTStd-Medium",
+                                "fontSize": 15,
+                                "lineHeight": 15,
+                              }
+                            }
+                          >
+                            An image caption
+                          </Text>
+                          <Text
+                            style={
+                              Object {
+                                "color": "#FFFFFF",
+                                "fontFamily": "GillSansMTStd-Medium",
+                                "fontSize": 10,
+                                "fontWeight": "400",
+                                "letterSpacing": 1,
+                                "lineHeight": 10,
+                                "marginTop": 5,
+                              }
+                            }
+                          >
+                            THE IMAGE CREDITS
+                          </Text>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                </Modal>
+                <View>
+                  <View
+                    style={
+                      Object {
+                        "position": "relative",
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "borderRadius": 0,
+                          "height": "100%",
+                          "overflow": "hidden",
+                          "position": "absolute",
+                          "width": "100%",
+                        }
+                      }
+                    >
+                      <Image
+                        style={
+                          Object {
+                            "height": "100%",
+                            "position": "absolute",
+                            "resizeMode": "contain",
+                            "width": "100%",
+                          }
+                        }
+                      />
+                    </View>
+                    <View
+                      style={
+                        Object {
+                          "height": "100%",
+                          "opacity": 1,
+                          "width": "100%",
+                        }
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "alignItems": "center",
+                            "backgroundColor": "#EDEDED",
+                            "justifyContent": "center",
+                          }
+                        }
+                      >
+                        <Image
+                          style={
+                            Object {
+                              "width": "25%",
+                            }
+                          }
+                        />
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+            <View>
+              <View>
+                <View
+                  style={
+                    Object {
+                      "paddingHorizontal": 10,
+                      "paddingTop": 5,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 20,
+                      }
+                    }
+                  >
+                    An image caption
+                  </Text>
+                  <Text
+                    style={
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 9,
+                        "fontWeight": "400",
+                        "letterSpacing": 1,
+                        "lineHeight": 20,
+                        "marginTop": 0,
+                      }
+                    }
+                  >
+                    THE IMAGE CREDITS
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "width": undefined,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "height": undefined,
+                "marginBottom": 20,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+              }
+            }
+          >
+            <View>
+              <Text>
+                <Text
+                  style={
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 17,
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                      "lineHeight": 28,
+                    }
+                  }
+                >
+                  Some content
+                </Text>
+                <Text
+                  style={
+                    Object {
+                      "color": "#006699",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 17,
+                      "lineHeight": 28,
+                      "marginBottom": 25,
+                      "marginTop": 0,
+                      "textDecorationLine": "underline",
+                    }
+                  }
+                >
+                  Some Link
+                </Text>
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "height": 0,
+          }
+        }
+      />
     </View>
-  </View>
-</ArticleSkeleton>
+  </RCTScrollView>
+</View>
 `;
 
 exports[`tablet full article with style 1`] = `
-<ArticleSkeleton>
-  <View
-    style={
-      Object {
-        "marginBottom": 0,
-        "paddingBottom": 20,
-        "paddingTop": 35,
-      }
+<View
+  style={
+    Object {
+      "backgroundColor": "#f0f0f0",
     }
-  >
-    <View
-      style={
-        Object {
-          "alignItems": "center",
-          "paddingLeft": 10,
-          "paddingRight": 10,
-        }
-      }
-    >
-      <ModalImage
-        style={
-          Object {
-            "borderRadius": 50,
-            "height": 100,
-            "marginBottom": 25,
-            "overflow": "hidden",
-            "width": 100,
-          }
-        }
-      />
-      <View
-        style={
-          Object {
-            "marginBottom": 10,
-          }
-        }
-      >
-        <ArticleLabel />
-      </View>
-      <Text
-        style={
-          Object {
-            "color": "#1D1D1B",
-            "fontFamily": "TimesModern-Bold",
-            "fontSize": 30,
-            "lineHeight": 36,
-            "marginBottom": 13.75,
-            "textAlign": "center",
-          }
-        }
-      >
-        Some Headline
-      </Text>
-      <View
-        style={
-          Object {
-            "marginBottom": 15,
-            "marginTop": 5,
-          }
-        }
-      >
-        <ArticleFlags />
-      </View>
-      <Text
-        style={
-          Object {
-            "color": "#333333",
-            "fontFamily": "TimesModern-Regular",
-            "fontSize": 20,
-            "lineHeight": 25,
-            "marginBottom": 15,
-            "paddingHorizontal": 10,
-            "textAlign": "center",
-          }
-        }
-      >
-        Some Standfirst
-      </Text>
-      <View
-        style={
-          Object {
-            "alignItems": "center",
-            "borderBottomColor": "#DBDBDB",
-            "borderBottomWidth": 1,
-            "borderTopColor": "#DBDBDB",
-            "borderTopWidth": 1,
-            "marginTop": 5,
-            "paddingVertical": 10,
-            "width": "100%",
-          }
-        }
-      >
+  }
+>
+  <RCTScrollView>
+    <View>
+      <View>
         <View
           style={
             Object {
-              "flexDirection": "row",
-              "flexWrap": "wrap",
+              "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "width": undefined,
             }
           }
         >
-          <ArticleBylineWithLinks />
-        </View>
-        <View
-          style={
-            Object {
-              "flexDirection": "row",
-              "flexWrap": "wrap",
-            }
-          }
-        >
-          <Text
+          <View
             style={
               Object {
-                "color": "#696969",
-                "fontFamily": "GillSansMTStd-Medium",
-                "fontSize": 13,
-                "lineHeight": 15,
-                "marginTop": 5,
+                "marginBottom": 0,
+                "paddingBottom": 20,
+                "paddingTop": 35,
               }
             }
           >
-            Friday March 13 2015, 6.54pm, The Times
-          </Text>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "paddingLeft": 10,
+                  "paddingRight": 10,
+                }
+              }
+            >
+              <View>
+                <Modal>
+                  <View
+                    style={
+                      Object {
+                        "backgroundColor": "#000000",
+                        "flexDirection": "column",
+                        "height": "100%",
+                        "justifyContent": "space-between",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "backgroundColor": "#000000",
+                          "flex": 0,
+                          "paddingBottom": 0,
+                          "paddingLeft": 0,
+                          "paddingRight": 0,
+                          "paddingTop": 0,
+                        }
+                      }
+                    />
+                    <View
+                      style={
+                        Object {
+                          "padding": 15,
+                          "position": "relative",
+                          "zIndex": 2,
+                        }
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "alignItems": "center",
+                            "backgroundColor": "rgba(0, 0, 0, 0.5)",
+                            "borderRadius": 25,
+                            "height": 25,
+                            "justifyContent": "center",
+                            "width": 25,
+                          }
+                        }
+                      >
+                        <Image
+                          style={
+                            Object {
+                              "height": "85%",
+                              "width": "85%",
+                            }
+                          }
+                        />
+                      </View>
+                    </View>
+                    <View
+                      style={
+                        Object {
+                          "bottom": 0,
+                          "height": "100%",
+                          "left": 0,
+                          "paddingBottom": 0,
+                          "paddingLeft": 0,
+                          "paddingRight": 0,
+                          "paddingTop": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": "100%",
+                          "zIndex": 1,
+                        }
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "height": "100%",
+                            "width": "100%",
+                          }
+                        }
+                      >
+                        <View
+                          style={
+                            Object {
+                              "flexGrow": 1,
+                              "transform": Array [
+                                Object {
+                                  "translateX": -0,
+                                },
+                                Object {
+                                  "translateY": -0,
+                                },
+                                Object {
+                                  "translateX": 0,
+                                },
+                                Object {
+                                  "translateY": 0,
+                                },
+                                Object {
+                                  "scale": 1,
+                                },
+                                Object {
+                                  "translateX": -0,
+                                },
+                                Object {
+                                  "translateY": -0,
+                                },
+                                Object {
+                                  "translateX": 0,
+                                },
+                                Object {
+                                  "translateY": 0,
+                                },
+                                Object {
+                                  "rotate": "0 deg",
+                                },
+                                Object {
+                                  "perspective": 1000,
+                                },
+                              ],
+                            }
+                          }
+                        >
+                          <View
+                            style={
+                              Object {
+                                "alignItems": "center",
+                                "height": "100%",
+                                "justifyContent": "center",
+                                "position": "absolute",
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            <View
+                              style={
+                                Object {
+                                  "borderRadius": 0,
+                                  "height": "100%",
+                                  "overflow": "hidden",
+                                  "position": "absolute",
+                                  "width": "100%",
+                                }
+                              }
+                            >
+                              <Image
+                                style={
+                                  Object {
+                                    "height": "100%",
+                                    "position": "absolute",
+                                    "resizeMode": "contain",
+                                    "width": "100%",
+                                  }
+                                }
+                              />
+                            </View>
+                            <View
+                              style={
+                                Object {
+                                  "height": "100%",
+                                  "opacity": 1,
+                                  "width": "100%",
+                                }
+                              }
+                            >
+                              <View
+                                style={
+                                  Object {
+                                    "alignItems": "center",
+                                    "backgroundColor": "#EDEDED",
+                                    "justifyContent": "center",
+                                  }
+                                }
+                              >
+                                <Image
+                                  style={
+                                    Object {
+                                      "width": "25%",
+                                    }
+                                  }
+                                />
+                              </View>
+                            </View>
+                          </View>
+                        </View>
+                      </View>
+                    </View>
+                    <View
+                      style={
+                        Object {
+                          "backgroundColor": "#000000B3",
+                          "flex": 0,
+                          "marginTop": "auto",
+                          "position": "relative",
+                          "width": "100%",
+                          "zIndex": 2,
+                        }
+                      }
+                    />
+                  </View>
+                </Modal>
+                <View>
+                  <View
+                    style={
+                      Object {
+                        "borderRadius": 50,
+                        "height": 100,
+                        "marginBottom": 25,
+                        "overflow": "hidden",
+                        "position": "relative",
+                        "width": 100,
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "borderRadius": 0,
+                          "height": "100%",
+                          "overflow": "hidden",
+                          "position": "absolute",
+                          "width": "100%",
+                        }
+                      }
+                    >
+                      <Image
+                        style={
+                          Object {
+                            "height": "100%",
+                            "position": "absolute",
+                            "resizeMode": "contain",
+                            "width": "100%",
+                          }
+                        }
+                      />
+                    </View>
+                    <View
+                      style={
+                        Object {
+                          "height": "100%",
+                          "opacity": 1,
+                          "width": "100%",
+                        }
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "alignItems": "center",
+                            "backgroundColor": "#EDEDED",
+                            "justifyContent": "center",
+                          }
+                        }
+                      >
+                        <Image
+                          style={
+                            Object {
+                              "width": "25%",
+                            }
+                          }
+                        />
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  Object {
+                    "marginBottom": 10,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "#1D1D1B",
+                      "fontFamily": "GillSansMTStd-Medium",
+                      "fontSize": 12,
+                      "fontWeight": "400",
+                      "letterSpacing": 1,
+                      "lineHeight": 12,
+                      "marginBottom": 0,
+                      "marginTop": -1,
+                      "paddingTop": 0,
+                    }
+                  }
+                >
+                  SOME LABEL
+                </Text>
+              </View>
+              <Text
+                style={
+                  Object {
+                    "color": "#1D1D1B",
+                    "fontFamily": "TimesModern-Bold",
+                    "fontSize": 30,
+                    "lineHeight": 36,
+                    "marginBottom": 13.75,
+                    "textAlign": "center",
+                  }
+                }
+              >
+                Some Headline
+              </Text>
+              <View
+                style={
+                  Object {
+                    "marginBottom": 15,
+                    "marginTop": 5,
+                  }
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "flexDirection": "row",
+                      "flexWrap": "wrap",
+                      "marginBottom": 0,
+                      "marginTop": 10,
+                    }
+                  }
+                >
+                  <View>
+                    <View
+                      style={
+                        Object {
+                          "alignItems": "center",
+                          "flexDirection": "row",
+                          "marginTop": -3,
+                        }
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "backgroundColor": "#E34605",
+                            "borderRadius": 2.5,
+                            "height": 5,
+                            "width": 5,
+                          }
+                        }
+                      />
+                      <Text
+                        style={
+                          Object {
+                            "color": "#E34605",
+                            "fontFamily": "TimesDigitalW04-RegularSC",
+                            "fontSize": 14,
+                            "fontWeight": "400",
+                            "letterSpacing": 0.6,
+                            "lineHeight": 14,
+                            "marginLeft": 5,
+                            "marginTop": 3,
+                          }
+                        }
+                      >
+                        new
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+              </View>
+              <Text
+                style={
+                  Object {
+                    "color": "#333333",
+                    "fontFamily": "TimesModern-Regular",
+                    "fontSize": 20,
+                    "lineHeight": 25,
+                    "marginBottom": 15,
+                    "paddingHorizontal": 10,
+                    "textAlign": "center",
+                  }
+                }
+              >
+                Some Standfirst
+              </Text>
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "borderBottomColor": "#DBDBDB",
+                    "borderBottomWidth": 1,
+                    "borderTopColor": "#DBDBDB",
+                    "borderTopWidth": 1,
+                    "marginTop": 5,
+                    "paddingVertical": 10,
+                    "width": "100%",
+                  }
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "flexDirection": "row",
+                      "flexWrap": "wrap",
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      Object {
+                        "color": "#696969",
+                        "flexDirection": "row",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 19,
+                      }
+                    }
+                  >
+                    Some byline
+                  </Text>
+                </View>
+                <View
+                  style={
+                    Object {
+                      "flexDirection": "row",
+                      "flexWrap": "wrap",
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 15,
+                        "marginTop": 5,
+                      }
+                    }
+                  >
+                    Friday March 13 2015, 6.54pm GMT, The Times
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
         </View>
       </View>
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "width": undefined,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flexDirection": "column",
+                "paddingBottom": 15,
+                "width": "100%",
+              }
+            }
+          >
+            <View>
+              <View>
+                <Modal>
+                  <View
+                    style={
+                      Object {
+                        "backgroundColor": "#000000",
+                        "flexDirection": "column",
+                        "height": "100%",
+                        "justifyContent": "space-between",
+                        "width": "100%",
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "backgroundColor": "#000000",
+                          "flex": 0,
+                          "paddingBottom": 0,
+                          "paddingLeft": 0,
+                          "paddingRight": 0,
+                          "paddingTop": 0,
+                        }
+                      }
+                    />
+                    <View
+                      style={
+                        Object {
+                          "padding": 15,
+                          "position": "relative",
+                          "zIndex": 2,
+                        }
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "alignItems": "center",
+                            "backgroundColor": "rgba(0, 0, 0, 0.5)",
+                            "borderRadius": 25,
+                            "height": 25,
+                            "justifyContent": "center",
+                            "width": 25,
+                          }
+                        }
+                      >
+                        <Image
+                          style={
+                            Object {
+                              "height": "85%",
+                              "width": "85%",
+                            }
+                          }
+                        />
+                      </View>
+                    </View>
+                    <View
+                      style={
+                        Object {
+                          "bottom": 0,
+                          "height": "100%",
+                          "left": 0,
+                          "paddingBottom": 0,
+                          "paddingLeft": 0,
+                          "paddingRight": 0,
+                          "paddingTop": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": "100%",
+                          "zIndex": 1,
+                        }
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "height": "100%",
+                            "width": "100%",
+                          }
+                        }
+                      >
+                        <View
+                          style={
+                            Object {
+                              "flexGrow": 1,
+                              "transform": Array [
+                                Object {
+                                  "translateX": -0,
+                                },
+                                Object {
+                                  "translateY": -0,
+                                },
+                                Object {
+                                  "translateX": 0,
+                                },
+                                Object {
+                                  "translateY": 0,
+                                },
+                                Object {
+                                  "scale": 1,
+                                },
+                                Object {
+                                  "translateX": -0,
+                                },
+                                Object {
+                                  "translateY": -0,
+                                },
+                                Object {
+                                  "translateX": 0,
+                                },
+                                Object {
+                                  "translateY": 0,
+                                },
+                                Object {
+                                  "rotate": "0 deg",
+                                },
+                                Object {
+                                  "perspective": 1000,
+                                },
+                              ],
+                            }
+                          }
+                        >
+                          <View
+                            style={
+                              Object {
+                                "alignItems": "center",
+                                "height": "100%",
+                                "justifyContent": "center",
+                                "position": "absolute",
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            <View
+                              style={
+                                Object {
+                                  "borderRadius": 0,
+                                  "height": "100%",
+                                  "overflow": "hidden",
+                                  "position": "absolute",
+                                  "width": "100%",
+                                }
+                              }
+                            >
+                              <Image
+                                style={
+                                  Object {
+                                    "height": "100%",
+                                    "position": "absolute",
+                                    "resizeMode": "contain",
+                                    "width": "100%",
+                                  }
+                                }
+                              />
+                            </View>
+                            <View
+                              style={
+                                Object {
+                                  "height": "100%",
+                                  "opacity": 1,
+                                  "width": "100%",
+                                }
+                              }
+                            >
+                              <View
+                                style={
+                                  Object {
+                                    "alignItems": "center",
+                                    "backgroundColor": "#EDEDED",
+                                    "justifyContent": "center",
+                                  }
+                                }
+                              >
+                                <Image
+                                  style={
+                                    Object {
+                                      "width": "25%",
+                                    }
+                                  }
+                                />
+                              </View>
+                            </View>
+                          </View>
+                        </View>
+                      </View>
+                    </View>
+                    <View
+                      style={
+                        Object {
+                          "backgroundColor": "#000000B3",
+                          "flex": 0,
+                          "marginTop": "auto",
+                          "position": "relative",
+                          "width": "100%",
+                          "zIndex": 2,
+                        }
+                      }
+                    >
+                      <View>
+                        <View
+                          style={
+                            Object {
+                              "margin": 15,
+                              "paddingTop": 5,
+                            }
+                          }
+                        >
+                          <Text
+                            style={
+                              Object {
+                                "color": "#FFFFFF",
+                                "fontFamily": "GillSansMTStd-Medium",
+                                "fontSize": 15,
+                                "lineHeight": 15,
+                              }
+                            }
+                          >
+                            An image caption
+                          </Text>
+                          <Text
+                            style={
+                              Object {
+                                "color": "#FFFFFF",
+                                "fontFamily": "GillSansMTStd-Medium",
+                                "fontSize": 10,
+                                "fontWeight": "400",
+                                "letterSpacing": 1,
+                                "lineHeight": 10,
+                                "marginTop": 5,
+                              }
+                            }
+                          >
+                            THE IMAGE CREDITS
+                          </Text>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                </Modal>
+                <View>
+                  <View
+                    style={
+                      Object {
+                        "position": "relative",
+                      }
+                    }
+                  >
+                    <View
+                      style={
+                        Object {
+                          "borderRadius": 0,
+                          "height": "100%",
+                          "overflow": "hidden",
+                          "position": "absolute",
+                          "width": "100%",
+                        }
+                      }
+                    >
+                      <Image
+                        style={
+                          Object {
+                            "height": "100%",
+                            "position": "absolute",
+                            "resizeMode": "contain",
+                            "width": "100%",
+                          }
+                        }
+                      />
+                    </View>
+                    <View
+                      style={
+                        Object {
+                          "height": "100%",
+                          "opacity": 1,
+                          "width": "100%",
+                        }
+                      }
+                    >
+                      <View
+                        style={
+                          Object {
+                            "alignItems": "center",
+                            "backgroundColor": "#EDEDED",
+                            "justifyContent": "center",
+                          }
+                        }
+                      >
+                        <Image
+                          style={
+                            Object {
+                              "width": "25%",
+                            }
+                          }
+                        />
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </View>
+            </View>
+            <View>
+              <View>
+                <View
+                  style={
+                    Object {
+                      "paddingHorizontal": 10,
+                      "paddingTop": 5,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      Object {
+                        "color": "#696969",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 13,
+                        "lineHeight": 20,
+                      }
+                    }
+                  >
+                    An image caption
+                  </Text>
+                  <Text
+                    style={
+                      Object {
+                        "color": "#333333",
+                        "fontFamily": "GillSansMTStd-Medium",
+                        "fontSize": 9,
+                        "fontWeight": "400",
+                        "letterSpacing": 1,
+                        "lineHeight": 20,
+                        "marginTop": 0,
+                      }
+                    }
+                  >
+                    THE IMAGE CREDITS
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "width": undefined,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "height": undefined,
+                "marginBottom": 20,
+                "paddingLeft": 10,
+                "paddingRight": 10,
+              }
+            }
+          >
+            <View>
+              <Text>
+                <Text
+                  style={
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 17,
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                      "lineHeight": 28,
+                    }
+                  }
+                >
+                  Some content
+                </Text>
+                <Text
+                  style={
+                    Object {
+                      "color": "#006699",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 17,
+                      "lineHeight": 28,
+                      "marginBottom": 25,
+                      "marginTop": 0,
+                      "textDecorationLine": "underline",
+                    }
+                  }
+                >
+                  Some Link
+                </Text>
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "height": 0,
+          }
+        }
+      />
     </View>
-  </View>
-</ArticleSkeleton>
+  </RCTScrollView>
+</View>
 `;

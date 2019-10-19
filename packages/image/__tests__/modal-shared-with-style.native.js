@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { Text, View, Dimensions } from "react-native";
 import TestRenderer from "react-test-renderer";
 import {
   addSerializers,
@@ -11,8 +11,7 @@ import {
 } from "@times-components/jest-serializer";
 import { iterator } from "@times-components/test-utils";
 import Responsive from "@times-components/responsive";
-import { setIsTablet } from "./mocks";
-
+import { tabletWidth } from "@times-components/styleguide";
 import ModalImage from "../src/modal-image";
 
 // eslint-disable-next-line react/prop-types
@@ -73,7 +72,12 @@ export default () => {
     {
       name: "tablet landscape default modal",
       test: () => {
-        setIsTablet(true);
+        Dimensions.set({
+          window: {
+            width: tabletWidth,
+            height: 650
+          }
+        });
         const testRenderer = TestRenderer.create(
           <Responsive>
             <ModalImage {...props} aspectRatio={2} />
@@ -88,7 +92,12 @@ export default () => {
     {
       name: "tablet portrait default modal",
       test: () => {
-        setIsTablet(true);
+        Dimensions.set({
+          window: {
+            width: tabletWidth,
+            height: 650
+          }
+        });
         const testRenderer = TestRenderer.create(
           <Responsive>
             <ModalImage {...props} aspectRatio={0.5} />

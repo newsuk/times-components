@@ -3,6 +3,7 @@
 exports[`1. video 1`] = `
 <View
   accessibilityLabel="Video Splash"
+  focusable={true}
   testID="splash-component"
 >
   <View>
@@ -48,6 +49,7 @@ exports[`1. video 1`] = `
 exports[`2. video without a poster image 1`] = `
 <View
   accessibilityLabel="Video Splash"
+  focusable={true}
   testID="splash-component"
 >
   <View>
@@ -90,6 +92,7 @@ exports[`2. video without a poster image 1`] = `
 exports[`3. sky sports video 1`] = `
 <View
   accessibilityLabel="Video Splash"
+  focusable={true}
   testID="splash-component"
 >
   <View>
@@ -145,6 +148,7 @@ exports[`3. sky sports video 1`] = `
 exports[`4. 360 video 1`] = `
 <View
   accessibilityLabel="Video Splash"
+  focusable={true}
   testID="splash-component"
 >
   <View>

@@ -95,7 +95,7 @@ exports[`3. card loading state 1`] = `
 <View
   style={
     Object {
-      "opacity": 0,
+      "opacity": 1,
     }
   }
 >
@@ -184,7 +184,7 @@ exports[`4. card reversed loading state 1`] = `
 <View
   style={
     Object {
-      "opacity": 0,
+      "opacity": 1,
     }
   }
 >

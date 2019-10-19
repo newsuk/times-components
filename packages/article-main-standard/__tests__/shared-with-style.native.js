@@ -8,7 +8,8 @@ import {
   minimalNativeTransform,
   print
 } from "@times-components/jest-serializer";
-import { setIsTablet } from "./mocks.native";
+import { Dimensions } from "react-native";
+import { tabletWidth } from "@times-components/styleguide";
 import ArticleMainStandard from "../src/article-main-standard";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
@@ -41,22 +42,6 @@ export default () => {
           name: "image"
         },
         {
-          attributes: {
-            href: "https://link.io",
-            target: "_blank"
-          },
-          children: [
-            {
-              attributes: {
-                value: "Some Link"
-              },
-              children: [],
-              name: "text"
-            }
-          ],
-          name: "link"
-        },
-        {
           attributes: {},
           children: [
             {
@@ -65,6 +50,22 @@ export default () => {
               },
               children: [],
               name: "text"
+            },
+            {
+              attributes: {
+                href: "https://link.io",
+                target: "_blank"
+              },
+              children: [
+                {
+                  attributes: {
+                    value: "Some Link"
+                  },
+                  children: [],
+                  name: "text"
+                }
+              ],
+              name: "link"
             }
           ],
           name: "paragraph"
@@ -154,7 +155,12 @@ export default () => {
   });
 
   it("full article with style on tablet", () => {
-    setIsTablet(true);
+    Dimensions.set({
+      window: {
+        width: tabletWidth,
+        height: 640
+      }
+    });
 
     const article = articleFixture({
       ...testFixture,
@@ -171,29 +177,30 @@ export default () => {
           name: "image"
         },
         {
-          attributes: {
-            href: "https://link.io",
-            target: "_blank"
-          },
-          children: [
-            {
-              attributes: {
-                value: "Some Link"
-              },
-              children: [],
-              name: "text"
-            }
-          ],
-          name: "link"
-        },
-        {
           attributes: {},
           children: [
             {
               attributes: {
                 value: "Some content"
               },
-              children: [],
+              children: [
+                {
+                  attributes: {
+                    href: "https://link.io",
+                    target: "_blank"
+                  },
+                  children: [
+                    {
+                      attributes: {
+                        value: "Some Link"
+                      },
+                      children: [],
+                      name: "text"
+                    }
+                  ],
+                  name: "link"
+                }
+              ],
               name: "text"
             }
           ],

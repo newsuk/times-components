@@ -316,12 +316,12 @@ exports[`6. an article list header 1`] = `
     <div />
     <div>
       Test 
-      <i>
+      <span>
         italic 
-      </i>
-      <b>
+      </span>
+      <span>
         bold
-      </b>
+      </span>
        text.
     </div>
   </div>

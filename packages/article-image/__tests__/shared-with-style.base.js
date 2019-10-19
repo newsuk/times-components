@@ -1,6 +1,7 @@
 import React from "react";
-import { setIsTablet } from "@times-components/mocks/dimensions";
+import { Dimensions } from "react-native";
 import { iterator } from "@times-components/test-utils";
+import { tabletWidth } from "@times-components/styleguide";
 import ArticleImage from "../src/article-image";
 import primaryImageFixture from "../fixtures/primary-image";
 import secondaryImageFixture from "../fixtures/secondary-image";
@@ -41,7 +42,13 @@ export default makeTest => {
     {
       name: "tablet primary image with caption and credits",
       test: () => {
-        setIsTablet(true);
+        Dimensions.set({
+          window: {
+            width: tabletWidth,
+            height: 640
+          }
+        });
+
         expect(
           makeTest(
             <ArticleImage
@@ -68,7 +75,12 @@ export default makeTest => {
     {
       name: "tablet fullwidth image with caption and credits",
       test: () => {
-        setIsTablet(true);
+        Dimensions.set({
+          window: {
+            width: tabletWidth,
+            height: 640
+          }
+        });
         expect(
           makeTest(
             <ArticleImage

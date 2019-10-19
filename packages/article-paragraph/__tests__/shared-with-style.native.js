@@ -10,7 +10,8 @@ import {
 } from "@times-components/jest-serializer";
 import Responsive from "@times-components/responsive";
 import { iterator } from "@times-components/test-utils";
-import { setIsTablet } from "@times-components/mocks/dimensions";
+import { Dimensions } from "react-native";
+import { tabletWidth } from "@times-components/styleguide";
 
 import renderParagraph from "./renderer";
 import dropCapData from "./fixtures/drop-cap-showcase.json";
@@ -38,7 +39,12 @@ export default () => {
     {
       name: "responsive tablet paragraph",
       test: async () => {
-        setIsTablet(true);
+        Dimensions.set({
+          window: {
+            width: tabletWidth,
+            height: 640
+          }
+        });
         const testInstance = TestRenderer.create(
           <Responsive>{renderParagraph(paragraphData)}</Responsive>
         );
@@ -48,7 +54,12 @@ export default () => {
     {
       name: "responsive tablet paragraph with a drop cap",
       test: async () => {
-        setIsTablet(true);
+        Dimensions.set({
+          window: {
+            width: tabletWidth,
+            height: 640
+          }
+        });
         const testInstance = TestRenderer.create(
           <Responsive>{renderParagraph(dropCapData)}</Responsive>
         );

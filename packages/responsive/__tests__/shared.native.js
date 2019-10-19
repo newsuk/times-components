@@ -1,26 +1,24 @@
 /* eslint-disable global-require */
 import React from "react";
 import TestRenderer from "react-test-renderer";
-import { Dimensions } from 'react-native';
+import { Dimensions } from "react-native";
 import Responsive, { ResponsiveContext } from "../src/responsive";
 
-jest.mock('react-native', () => {
-  let dims = { width: 480, height: 640, fontScale: 1.0 }
+jest.mock("react-native", () => {
+  let dims = { width: 480, height: 640, fontScale: 1.0 };
   return {
     Dimensions: {
       get: () => dims,
-      set: ({window}) => dims = window,
+      set: ({ window }) => {
+        dims = window;
+      },
       addEventListener: jest.fn(),
       removeEventListener: jest.fn()
     }
-  }
-})
+  };
+});
 
 export default () => {
-  beforeEach(() => {
-    jest.resetModules();
-  });
-
   it("with default values", () => {
     const testInstance = TestRenderer.create(
       <Responsive>
@@ -43,12 +41,11 @@ export default () => {
     );
 
     expect(testInstance).toMatchSnapshot();
-    Dimensions.set({ window: { height: 500, width: 1000, fontScale: 1.0 }});
+    Dimensions.set({ window: { height: 500, width: 1000, fontScale: 1.0 } });
     expect(testInstance).toMatchSnapshot("after width update");
   });
 
   it("addDimensionListener is called on mount", () => {
-    const { Dimensions } = require("react-native");
     // eslint-disable-next-line no-shadow
     const Responsive = require("../src/responsive").default;
 
@@ -64,7 +61,6 @@ export default () => {
   });
 
   it("removeDimensionListener is called on unmount", () => {
-    const { Dimensions } = require("react-native");
     // eslint-disable-next-line no-shadow
     const Responsive = require("../src/responsive").default;
 

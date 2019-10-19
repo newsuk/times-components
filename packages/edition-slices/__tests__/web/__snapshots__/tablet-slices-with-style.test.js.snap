@@ -34,8 +34,8 @@ exports[`1. comment lead and cartoon - medium 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
   -ms-flex-positive: 1;
@@ -67,7 +67,7 @@ exports[`1. comment lead and cartoon - medium 1`] = `
       className="css-view-1dbjc4n IS1"
     >
       <TileAH
-        breakpoint="medium"
+        breakpoint="wide"
         tileName="lead"
       />
     </div>
@@ -78,7 +78,7 @@ exports[`1. comment lead and cartoon - medium 1`] = `
       className="css-view-1dbjc4n IS3"
     >
       <TileAI
-        breakpoint="medium"
+        breakpoint="wide"
         tileName="cartoon"
       />
     </div>
@@ -120,7 +120,7 @@ exports[`2. daily universal register - medium 1`] = `
 .IS4 {
   width: 60;
   height: 45;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 .IS5 {
@@ -167,7 +167,7 @@ exports[`2. daily universal register - medium 1`] = `
 .IS8 {
   width: 60;
   height: 45;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 .IS9 {
@@ -211,8 +211,8 @@ exports[`2. daily universal register - medium 1`] = `
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  margin-right: 30px;
-  margin-left: 30px;
+  margin-right: 20px;
+  margin-left: 20px;
   margin-top: 15px;
   margin-bottom: 15px;
   padding-top: 15px;
@@ -261,13 +261,13 @@ exports[`2. daily universal register - medium 1`] = `
         className="css-view-1dbjc4n IS5"
       >
         <TileS
-          breakpoint="medium"
+          breakpoint="wide"
         />
         <div
           className="css-view-1dbjc4n IS3"
         />
         <TileS
-          breakpoint="medium"
+          breakpoint="wide"
           logo={
             <Logo
               className="IS4"
@@ -285,13 +285,13 @@ exports[`2. daily universal register - medium 1`] = `
         className="css-view-1dbjc4n IS9"
       >
         <TileS
-          breakpoint="medium"
+          breakpoint="wide"
         />
         <div
           className="css-view-1dbjc4n IS7"
         />
         <TileS
-          breakpoint="medium"
+          breakpoint="wide"
           logo={
             <Logo
               className="IS8"
@@ -310,7 +310,7 @@ exports[`2. daily universal register - medium 1`] = `
 exports[`3. lead one and one - medium 1`] = `
 <style>
 .IS1 {
-  width: 75%;
+  width: 83.5%;
 }
 
 .IS2 {
@@ -328,7 +328,7 @@ exports[`3. lead one and one - medium 1`] = `
 }
 
 .IS3 {
-  width: 25%;
+  width: 16.5%;
 }
 
 .IS4 {
@@ -341,8 +341,8 @@ exports[`3. lead one and one - medium 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -371,7 +371,8 @@ exports[`3. lead one and one - medium 1`] = `
     <div
       className="css-view-1dbjc4n IS1"
     >
-      <TileU
+      <TileZ
+        breakpoint="wide"
         tileName="lead"
       />
     </div>
@@ -381,8 +382,8 @@ exports[`3. lead one and one - medium 1`] = `
     <div
       className="css-view-1dbjc4n IS3"
     >
-      <TileAA
-        breakpoint="medium"
+      <TileAF
+        breakpoint="wide"
         tileName="support"
       />
     </div>
@@ -407,7 +408,7 @@ exports[`4. lead one full width - medium 1`] = `
   className="css-view-1dbjc4n IS1"
 >
   <TileR
-    breakpoint="medium"
+    breakpoint="wide"
     tileName="lead"
   />
 </div>
@@ -430,7 +431,7 @@ exports[`5. lead two no pic and two - medium 1`] = `
 }
 
 .IS2 {
-  width: 50%;
+  width: 42%;
 }
 
 .IS3 {
@@ -448,24 +449,28 @@ exports[`5. lead two no pic and two - medium 1`] = `
 }
 
 .IS4 {
-  border-bottom-width: 1px;
+  width: 16%;
+}
+
+.IS5 {
   border-top-color: rgba(219,219,219,1.00);
   border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
   border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
   border-top-style: solid;
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.IS5 {
-  width: 50%;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .IS6 {
+  width: 42%;
+}
+
+.IS7 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   -webkit-flex-shrink: 1;
@@ -475,8 +480,8 @@ exports[`5. lead two no pic and two - medium 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -485,7 +490,7 @@ exports[`5. lead two no pic and two - medium 1`] = `
   -webkit-box-direction: normal;
 }
 
-.IS7 {
+.IS8 {
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
@@ -497,23 +502,23 @@ exports[`5. lead two no pic and two - medium 1`] = `
 </style>
 
 <div
-  className="css-view-1dbjc4n IS7"
+  className="css-view-1dbjc4n IS8"
 >
   <div
-    className="css-view-1dbjc4n IS6"
+    className="css-view-1dbjc4n IS7"
   >
     <div
       className="css-view-1dbjc4n IS2"
     >
       <TileX
-        breakpoint="medium"
+        breakpoint="wide"
         tileName="lead1"
       />
       <div
         className="css-view-1dbjc4n IS1"
       />
       <TileY
-        breakpoint="medium"
+        breakpoint="wide"
         tileName="lead2"
       />
     </div>
@@ -521,18 +526,22 @@ exports[`5. lead two no pic and two - medium 1`] = `
       className="css-view-1dbjc4n IS3"
     />
     <div
+      className="css-view-1dbjc4n IS4"
+    >
+      <TileAL
+        breakpoint="wide"
+        tileName="support2"
+      />
+    </div>
+    <div
       className="css-view-1dbjc4n IS5"
+    />
+    <div
+      className="css-view-1dbjc4n IS6"
     >
       <TileE
-        breakpoint="medium"
+        breakpoint="wide"
         tileName="support1"
-      />
-      <div
-        className="css-view-1dbjc4n IS4"
-      />
-      <TileD
-        breakpoint="medium"
-        tileName="support2"
       />
     </div>
   </div>
@@ -566,8 +575,8 @@ exports[`6. leaders slice - medium 1`] = `
 }
 
 .IS5 {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 33%;
 }
 
@@ -581,13 +590,13 @@ exports[`6. leaders slice - medium 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
+  margin-bottom: 60px;
   margin-top: 30px;
-  margin-bottom: 30px;
 }
 
 .IS7 {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 33%;
 }
 
@@ -601,13 +610,13 @@ exports[`6. leaders slice - medium 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
+  margin-bottom: 60px;
   margin-top: 30px;
-  margin-bottom: 30px;
 }
 
 .IS9 {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
   width: 33%;
 }
 
@@ -621,8 +630,6 @@ exports[`6. leaders slice - medium 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-right: 5px;
-  padding-left: 5px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -633,8 +640,8 @@ exports[`6. leaders slice - medium 1`] = `
 
 .IS11 {
   background-color: rgba(240,240,240,1.00);
-  margin-right: 30px;
-  margin-left: 30px;
+  margin-right: 20px;
+  margin-left: 20px;
   margin-top: 15px;
   margin-bottom: 15px;
   padding-top: 30px;
@@ -682,7 +689,7 @@ exports[`6. leaders slice - medium 1`] = `
         className="css-view-1dbjc4n IS5"
       >
         <TileM
-          breakpoint="medium"
+          breakpoint="wide"
           tileName="leader2"
         />
       </div>
@@ -693,7 +700,7 @@ exports[`6. leaders slice - medium 1`] = `
         className="css-view-1dbjc4n IS7"
       >
         <TileM
-          breakpoint="medium"
+          breakpoint="wide"
           tileName="leader1"
         />
       </div>
@@ -704,7 +711,7 @@ exports[`6. leaders slice - medium 1`] = `
         className="css-view-1dbjc4n IS9"
       >
         <TileM
-          breakpoint="medium"
+          breakpoint="wide"
           tileName="leader3"
         />
       </div>
@@ -882,8 +889,8 @@ exports[`7. secondary one and four - medium 1`] = `
 
 .IS16 {
   background-color: rgba(39,45,52,1.00);
-  margin-right: 30px;
-  margin-left: 30px;
+  margin-right: 20px;
+  margin-left: 20px;
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -923,7 +930,7 @@ exports[`7. secondary one and four - medium 1`] = `
         className="css-view-1dbjc4n IS3"
       >
         <TileN
-          breakpoint="medium"
+          breakpoint="wide"
           tileName="secondary"
         />
       </div>
@@ -940,7 +947,7 @@ exports[`7. secondary one and four - medium 1`] = `
             className="css-view-1dbjc4n IS5"
           >
             <TileO
-              breakpoint="medium"
+              breakpoint="wide"
               tileName="support1"
             />
           </div>
@@ -951,7 +958,7 @@ exports[`7. secondary one and four - medium 1`] = `
             className="css-view-1dbjc4n IS7"
           >
             <TileO
-              breakpoint="medium"
+              breakpoint="wide"
               tileName="support2"
             />
           </div>
@@ -966,7 +973,7 @@ exports[`7. secondary one and four - medium 1`] = `
             className="css-view-1dbjc4n IS10"
           >
             <TileO
-              breakpoint="medium"
+              breakpoint="wide"
               tileName="support3"
             />
           </div>
@@ -977,7 +984,7 @@ exports[`7. secondary one and four - medium 1`] = `
             className="css-view-1dbjc4n IS12"
           >
             <TileO
-              breakpoint="medium"
+              breakpoint="wide"
               tileName="support4"
             />
           </div>
@@ -1005,7 +1012,7 @@ exports[`8. secondary one - medium 1`] = `
   className="css-view-1dbjc4n IS1"
 >
   <TileW
-    breakpoint="medium"
+    breakpoint="wide"
     tileName="secondary"
   />
 </div>
@@ -1124,8 +1131,8 @@ exports[`9. secondary four - medium 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -1158,7 +1165,7 @@ exports[`9. secondary four - medium 1`] = `
         className="css-view-1dbjc4n IS1"
       >
         <TileAR
-          breakpoint="medium"
+          breakpoint="wide"
           tileName="secondary1"
         />
       </div>
@@ -1169,7 +1176,7 @@ exports[`9. secondary four - medium 1`] = `
         className="css-view-1dbjc4n IS3"
       >
         <TileAR
-          breakpoint="medium"
+          breakpoint="wide"
           tileName="secondary2"
         />
       </div>
@@ -1181,14 +1188,28 @@ exports[`9. secondary four - medium 1`] = `
       className="css-view-1dbjc4n IS7"
     >
       <TileB
-        breakpoint="medium"
+        additionalHeadlineStyles={
+          Object {
+            "fontSize": 20,
+            "lineHeight": 20,
+            "marginBottom": "5px",
+          }
+        }
+        breakpoint="wide"
         tileName="secondary3"
       />
       <div
         className="css-view-1dbjc4n IS6"
       />
       <TileB
-        breakpoint="medium"
+        additionalHeadlineStyles={
+          Object {
+            "fontSize": 20,
+            "lineHeight": 20,
+            "marginBottom": "5px",
+          }
+        }
+        breakpoint="wide"
         tileName="secondary4"
       />
     </div>
@@ -1199,7 +1220,7 @@ exports[`9. secondary four - medium 1`] = `
 exports[`10. secondary one and columnist - medium 1`] = `
 <style>
 .IS1 {
-  width: 75%;
+  width: 66.7%;
 }
 
 .IS2 {
@@ -1219,7 +1240,7 @@ exports[`10. secondary one and columnist - medium 1`] = `
 .IS3 {
   padding-top: 5px;
   padding-bottom: 5px;
-  width: 25%;
+  width: 33.3%;
 }
 
 .IS4 {
@@ -1232,8 +1253,8 @@ exports[`10. secondary one and columnist - medium 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -1263,7 +1284,7 @@ exports[`10. secondary one and columnist - medium 1`] = `
       className="css-view-1dbjc4n IS1"
     >
       <TileAB
-        breakpoint="medium"
+        breakpoint="wide"
         tileName="columnist"
       />
     </div>
@@ -1274,7 +1295,7 @@ exports[`10. secondary one and columnist - medium 1`] = `
       className="css-view-1dbjc4n IS3"
     >
       <TileB
-        breakpoint="medium"
+        breakpoint="wide"
         tileName="secondary"
         withMoreTeaser={true}
       />
@@ -1286,7 +1307,7 @@ exports[`10. secondary one and columnist - medium 1`] = `
 exports[`11. secondary two and two - medium 1`] = `
 <style>
 .IS1 {
-  width: 50%;
+  width: 33.4%;
 }
 
 .IS2 {
@@ -1304,47 +1325,10 @@ exports[`11. secondary two and two - medium 1`] = `
 }
 
 .IS3 {
-  width: 50%;
+  width: 16.6%;
 }
 
 .IS4 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  padding-bottom: 5px;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-}
-
-.IS5 {
-  border-bottom-width: 1px;
-  border-top-color: rgba(219,219,219,1.00);
-  border-right-color: rgba(219,219,219,1.00);
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-left-color: rgba(219,219,219,1.00);
-  border-top-style: solid;
-  border-right-style: solid;
-  border-bottom-style: solid;
-  border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
-}
-
-.IS6 {
-  width: 50%;
-}
-
-.IS7 {
   border-top-color: rgba(219,219,219,1.00);
   border-right-color: rgba(219,219,219,1.00);
   border-bottom-color: rgba(219,219,219,1.00);
@@ -1358,11 +1342,29 @@ exports[`11. secondary two and two - medium 1`] = `
   margin-bottom: 10px;
 }
 
-.IS8 {
-  width: 50%;
+.IS5 {
+  width: 33.4%;
 }
 
-.IS9 {
+.IS6 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.IS7 {
+  width: 16.6%;
+}
+
+.IS8 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   -webkit-flex-shrink: 1;
@@ -1372,7 +1374,8 @@ exports[`11. secondary two and two - medium 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-bottom: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -1381,22 +1384,7 @@ exports[`11. secondary two and two - medium 1`] = `
   -webkit-box-direction: normal;
 }
 
-.IS10 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  margin-right: 20px;
-  margin-left: 20px;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS11 {
+.IS9 {
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
@@ -1408,57 +1396,47 @@ exports[`11. secondary two and two - medium 1`] = `
 </style>
 
 <div
-  className="css-view-1dbjc4n IS11"
+  className="css-view-1dbjc4n IS9"
 >
   <div
-    className="css-view-1dbjc4n IS10"
+    className="css-view-1dbjc4n IS8"
   >
     <div
-      className="css-view-1dbjc4n IS4"
+      className="css-view-1dbjc4n IS1"
     >
-      <div
-        className="css-view-1dbjc4n IS1"
-      >
-        <TileV
-          tileName="secondary1"
-        />
-      </div>
-      <div
-        className="css-view-1dbjc4n IS2"
+      <TileAM
+        tileName="secondary1"
       />
-      <div
-        className="css-view-1dbjc4n IS3"
-      >
-        <TileV
-          tileName="secondary2"
-        />
-      </div>
     </div>
     <div
-      className="css-view-1dbjc4n IS5"
+      className="css-view-1dbjc4n IS2"
     />
     <div
-      className="css-view-1dbjc4n IS9"
+      className="css-view-1dbjc4n IS3"
     >
-      <div
-        className="css-view-1dbjc4n IS6"
-      >
-        <TileG
-          breakpoint="medium"
-          tileName="support1"
-        />
-      </div>
-      <div
-        className="css-view-1dbjc4n IS7"
+      <TileAN
+        tileName="support1"
       />
-      <div
-        className="css-view-1dbjc4n IS8"
-      >
-        <TileG
-          breakpoint="medium"
-          tileName="support2"
-        />
-      </div>
+    </div>
+    <div
+      className="css-view-1dbjc4n IS4"
+    />
+    <div
+      className="css-view-1dbjc4n IS5"
+    >
+      <TileAM
+        tileName="secondary2"
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n IS6"
+    />
+    <div
+      className="css-view-1dbjc4n IS7"
+    >
+      <TileAN
+        tileName="support2"
+      />
     </div>
   </div>
 </div>
@@ -1540,8 +1518,8 @@ exports[`12. lead one and four slice - medium 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
   -ms-flex-positive: 1;
@@ -1573,7 +1551,7 @@ exports[`12. lead one and four slice - medium 1`] = `
       className="css-view-1dbjc4n IS1"
     >
       <TileAC
-        breakpoint="medium"
+        breakpoint="wide"
         tileName="lead"
       />
     </div>
@@ -1584,28 +1562,28 @@ exports[`12. lead one and four slice - medium 1`] = `
       className="css-view-1dbjc4n IS6"
     >
       <TileAD
-        breakpoint="medium"
+        breakpoint="wide"
         tileName="support1"
       />
       <div
         className="css-view-1dbjc4n IS3"
       />
       <TileAD
-        breakpoint="medium"
+        breakpoint="wide"
         tileName="support2"
       />
       <div
         className="css-view-1dbjc4n IS4"
       />
       <TileAD
-        breakpoint="medium"
+        breakpoint="wide"
         tileName="support3"
       />
       <div
         className="css-view-1dbjc4n IS5"
       />
       <TileAD
-        breakpoint="medium"
+        breakpoint="wide"
         tileName="support4"
       />
     </div>
@@ -1712,35 +1690,35 @@ exports[`13. standard slice - medium 1`] = `
       className="css-view-1dbjc4n"
     >
       <TileK
-        breakpoint="medium"
+        breakpoint="wide"
         tileName="standardItem1"
       />
       <div
         className="css-view-1dbjc4n IS1"
       />
       <TileK
-        breakpoint="medium"
+        breakpoint="wide"
         tileName="standardItem2"
       />
       <div
         className="css-view-1dbjc4n IS2"
       />
       <TileK
-        breakpoint="medium"
+        breakpoint="wide"
         tileName="standardItem3"
       />
       <div
         className="css-view-1dbjc4n IS3"
       />
       <TileK
-        breakpoint="medium"
+        breakpoint="wide"
         tileName="standardItem4"
       />
       <div
         className="css-view-1dbjc4n IS4"
       />
       <TileK
-        breakpoint="medium"
+        breakpoint="wide"
         tileName="standardItem5"
       />
     </div>
@@ -1751,16 +1729,7 @@ exports[`13. standard slice - medium 1`] = `
 exports[`14. secondary two no pic and two - medium 1`] = `
 <style>
 .IS1 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
+  width: 50%;
 }
 
 .IS2 {
@@ -1778,37 +1747,33 @@ exports[`14. secondary two no pic and two - medium 1`] = `
 }
 
 .IS3 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
+  width: 50%;
 }
 
 .IS4 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
+  width: 66.6%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
 }
 
 .IS5 {
+  border-top-color: rgba(219,219,219,1.00);
+  border-right-color: rgba(219,219,219,1.00);
+  border-bottom-color: rgba(219,219,219,1.00);
+  border-left-color: rgba(219,219,219,1.00);
+  border-right-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.IS6 {
   border-bottom-width: 1px;
   border-top-color: rgba(219,219,219,1.00);
   border-right-color: rgba(219,219,219,1.00);
@@ -1822,31 +1787,19 @@ exports[`14. secondary two no pic and two - medium 1`] = `
   margin-left: 10px;
 }
 
-.IS6 {
+.IS7 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   -webkit-flex-shrink: 1;
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
+  margin-top: 5px;
+  margin-bottom: 5px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
   -ms-flex-preferred-size: 0%;
-}
-
-.IS7 {
-  border-top-color: rgba(219,219,219,1.00);
-  border-right-color: rgba(219,219,219,1.00);
-  border-bottom-color: rgba(219,219,219,1.00);
-  border-left-color: rgba(219,219,219,1.00);
-  border-right-width: 1px;
-  border-top-style: solid;
-  border-right-style: solid;
-  border-bottom-style: solid;
-  border-left-style: solid;
-  margin-bottom: 15px;
-  margin-top: 10px;
 }
 
 .IS8 {
@@ -1856,22 +1809,11 @@ exports[`14. secondary two no pic and two - medium 1`] = `
   flex-shrink: 1;
   -webkit-flex-basis: 0%;
   flex-basis: 0%;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS9 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  margin-right: 10px;
+  margin-left: 10px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -ms-flex-negative: 1;
@@ -1880,22 +1822,7 @@ exports[`14. secondary two no pic and two - medium 1`] = `
   -webkit-box-direction: normal;
 }
 
-.IS10 {
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  margin-right: 20px;
-  margin-left: 20px;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS11 {
+.IS9 {
   -webkit-align-self: center;
   align-self: center;
   max-width: 100%;
@@ -1907,10 +1834,10 @@ exports[`14. secondary two no pic and two - medium 1`] = `
 </style>
 
 <div
-  className="css-view-1dbjc4n IS11"
+  className="css-view-1dbjc4n IS9"
 >
   <div
-    className="css-view-1dbjc4n IS10"
+    className="css-view-1dbjc4n IS8"
   >
     <div
       className="css-view-1dbjc4n IS4"
@@ -1919,7 +1846,7 @@ exports[`14. secondary two no pic and two - medium 1`] = `
         className="css-view-1dbjc4n IS1"
       >
         <TileAE
-          breakpoint="medium"
+          breakpoint="wide"
           tileName="secondary1"
         />
       </div>
@@ -1930,7 +1857,7 @@ exports[`14. secondary two no pic and two - medium 1`] = `
         className="css-view-1dbjc4n IS3"
       >
         <TileAE
-          breakpoint="medium"
+          breakpoint="wide"
           tileName="secondary2"
         />
       </div>
@@ -1939,27 +1866,19 @@ exports[`14. secondary two no pic and two - medium 1`] = `
       className="css-view-1dbjc4n IS5"
     />
     <div
-      className="css-view-1dbjc4n IS9"
+      className="css-view-1dbjc4n IS7"
     >
-      <div
-        className="css-view-1dbjc4n IS6"
-      >
-        <TileG
-          breakpoint="medium"
-          tileName="support1"
-        />
-      </div>
-      <div
-        className="css-view-1dbjc4n IS7"
+      <TileG
+        breakpoint="wide"
+        tileName="support1"
       />
       <div
-        className="css-view-1dbjc4n IS8"
-      >
-        <TileG
-          breakpoint="medium"
-          tileName="support2"
-        />
-      </div>
+        className="css-view-1dbjc4n IS6"
+      />
+      <TileG
+        breakpoint="wide"
+        tileName="support2"
+      />
     </div>
   </div>
 </div>
@@ -2183,8 +2102,8 @@ exports[`15. list two and six no pic - medium 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   margin-top: 5px;
   margin-bottom: 5px;
   -ms-flex-positive: 1;
@@ -2216,7 +2135,7 @@ exports[`15. list two and six no pic - medium 1`] = `
       className="css-view-1dbjc4n IS1"
     >
       <TileAS
-        breakpoint="medium"
+        breakpoint="wide"
         tileName="lead1"
       />
     </div>
@@ -2227,7 +2146,7 @@ exports[`15. list two and six no pic - medium 1`] = `
       className="css-view-1dbjc4n IS3"
     >
       <TileAS
-        breakpoint="medium"
+        breakpoint="wide"
         tileName="lead2"
       />
     </div>
@@ -2244,7 +2163,7 @@ exports[`15. list two and six no pic - medium 1`] = `
           className="css-view-1dbjc4n IS5"
         >
           <TileL
-            breakpoint="medium"
+            breakpoint="wide"
             tileName="support1"
           />
         </div>
@@ -2255,7 +2174,7 @@ exports[`15. list two and six no pic - medium 1`] = `
           className="css-view-1dbjc4n IS7"
         >
           <TileL
-            breakpoint="medium"
+            breakpoint="wide"
             tileName="support2"
           />
         </div>
@@ -2270,7 +2189,7 @@ exports[`15. list two and six no pic - medium 1`] = `
           className="css-view-1dbjc4n IS10"
         >
           <TileL
-            breakpoint="medium"
+            breakpoint="wide"
             tileName="support3"
           />
         </div>
@@ -2281,7 +2200,7 @@ exports[`15. list two and six no pic - medium 1`] = `
           className="css-view-1dbjc4n IS12"
         >
           <TileL
-            breakpoint="medium"
+            breakpoint="wide"
             tileName="support4"
           />
         </div>
@@ -2296,7 +2215,7 @@ exports[`15. list two and six no pic - medium 1`] = `
           className="css-view-1dbjc4n IS15"
         >
           <TileL
-            breakpoint="medium"
+            breakpoint="wide"
             tileName="support5"
           />
         </div>
@@ -2307,7 +2226,7 @@ exports[`15. list two and six no pic - medium 1`] = `
           className="css-view-1dbjc4n IS17"
         >
           <TileL
-            breakpoint="medium"
+            breakpoint="wide"
             tileName="support6"
           />
         </div>
@@ -2341,8 +2260,8 @@ exports[`16. puzzle - medium 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
   padding-top: 15px;
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
@@ -2373,7 +2292,7 @@ exports[`16. puzzle - medium 1`] = `
       className="css-view-1dbjc4n IS1"
     >
       <TileAK
-        breakpoint="medium"
+        breakpoint="wide"
         id="0"
         image={
           Object {
@@ -2396,7 +2315,7 @@ exports[`16. puzzle - medium 1`] = `
       className="css-view-1dbjc4n IS2"
     >
       <TileAK
-        breakpoint="medium"
+        breakpoint="wide"
         id="1"
         image={
           Object {
@@ -2419,7 +2338,7 @@ exports[`16. puzzle - medium 1`] = `
       className="css-view-1dbjc4n IS3"
     >
       <TileAK
-        breakpoint="medium"
+        breakpoint="wide"
         id="2"
         image={
           Object {
@@ -4852,23 +4771,6 @@ exports[`33. comment lead and cartoon - huge 1`] = `
 .IS5 {
   -webkit-align-self: center;
   align-self: center;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  width: 1180px;
-  -ms-flex-item-align: center;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS6 {
-  -webkit-align-self: center;
-  align-self: center;
   max-width: 100%;
   padding-right: 0px;
   padding-left: 0px;
@@ -4878,33 +4780,29 @@ exports[`33. comment lead and cartoon - huge 1`] = `
 </style>
 
 <div
-  className="css-view-1dbjc4n IS6"
+  className="css-view-1dbjc4n IS5"
 >
   <div
-    className="css-view-1dbjc4n IS5"
+    className="css-view-1dbjc4n IS4"
   >
     <div
-      className="css-view-1dbjc4n IS4"
+      className="css-view-1dbjc4n IS1"
     >
-      <div
-        className="css-view-1dbjc4n IS1"
-      >
-        <TileAH
-          breakpoint="huge"
-          tileName="lead"
-        />
-      </div>
-      <div
-        className="css-view-1dbjc4n IS2"
+      <TileAH
+        breakpoint="wide"
+        tileName="lead"
       />
-      <div
-        className="css-view-1dbjc4n IS3"
-      >
-        <TileAI
-          breakpoint="huge"
-          tileName="cartoon"
-        />
-      </div>
+    </div>
+    <div
+      className="css-view-1dbjc4n IS2"
+    />
+    <div
+      className="css-view-1dbjc4n IS3"
+    >
+      <TileAI
+        breakpoint="wide"
+        tileName="cartoon"
+      />
     </div>
   </div>
 </div>
@@ -5054,23 +4952,6 @@ exports[`34. daily universal register - huge 1`] = `
 .IS12 {
   -webkit-align-self: center;
   align-self: center;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  width: 1180px;
-  -ms-flex-item-align: center;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS13 {
-  -webkit-align-self: center;
-  align-self: center;
   max-width: 100%;
   padding-right: 0px;
   padding-left: 0px;
@@ -5080,72 +4961,68 @@ exports[`34. daily universal register - huge 1`] = `
 </style>
 
 <div
-  className="css-view-1dbjc4n IS13"
+  className="css-view-1dbjc4n IS12"
 >
   <div
-    className="css-view-1dbjc4n IS12"
+    className="css-view-1dbjc4n IS11"
   >
+    <Image
+      aspectRatio={1}
+      className="IS1"
+      uri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
+    />
     <div
-      className="css-view-1dbjc4n IS11"
+      className="css-text-901oao IS2"
     >
-      <Image
-        aspectRatio={1}
-        className="IS1"
-        uri="https://www.thetimes.co.uk/d/img/DUR-masthead-40fe00731f.png"
-      />
+      Daily Universal Register
+    </div>
+    <div
+      className="css-view-1dbjc4n IS10"
+    >
       <div
-        className="css-text-901oao IS2"
+        className="css-view-1dbjc4n IS5"
       >
-        Daily Universal Register
-      </div>
-      <div
-        className="css-view-1dbjc4n IS10"
-      >
-        <div
-          className="css-view-1dbjc4n IS5"
-        >
-          <TileS
-            breakpoint="huge"
-          />
-          <div
-            className="css-view-1dbjc4n IS3"
-          />
-          <TileS
-            breakpoint="huge"
-            logo={
-              <Logo
-                className="IS4"
-                imageUri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
-                ratio={1}
-                type="nature notes"
-              />
-            }
-          />
-        </div>
-        <div
-          className="css-view-1dbjc4n IS6"
+        <TileS
+          breakpoint="wide"
         />
         <div
-          className="css-view-1dbjc4n IS9"
-        >
-          <TileS
-            breakpoint="huge"
-          />
-          <div
-            className="css-view-1dbjc4n IS7"
-          />
-          <TileS
-            breakpoint="huge"
-            logo={
-              <Logo
-                className="IS8"
-                imageUri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
-                ratio={1}
-                type="birthdays"
-              />
-            }
-          />
-        </div>
+          className="css-view-1dbjc4n IS3"
+        />
+        <TileS
+          breakpoint="wide"
+          logo={
+            <Logo
+              className="IS4"
+              imageUri="https://www.thetimes.co.uk/d/img/DUR-nature-80d36dd1cd.png"
+              ratio={1}
+              type="nature notes"
+            />
+          }
+        />
+      </div>
+      <div
+        className="css-view-1dbjc4n IS6"
+      />
+      <div
+        className="css-view-1dbjc4n IS9"
+      >
+        <TileS
+          breakpoint="wide"
+        />
+        <div
+          className="css-view-1dbjc4n IS7"
+        />
+        <TileS
+          breakpoint="wide"
+          logo={
+            <Logo
+              className="IS8"
+              imageUri="https://www.thetimes.co.uk/d/img/DUR-birthdays-94b2272911.png"
+              ratio={1}
+              type="birthdays"
+            />
+          }
+        />
       </div>
     </div>
   </div>
@@ -5199,23 +5076,6 @@ exports[`35. lead one and one - huge 1`] = `
 .IS5 {
   -webkit-align-self: center;
   align-self: center;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  width: 1180px;
-  -ms-flex-item-align: center;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS6 {
-  -webkit-align-self: center;
-  align-self: center;
   max-width: 100%;
   padding-right: 0px;
   padding-left: 0px;
@@ -5225,33 +5085,29 @@ exports[`35. lead one and one - huge 1`] = `
 </style>
 
 <div
-  className="css-view-1dbjc4n IS6"
+  className="css-view-1dbjc4n IS5"
 >
   <div
-    className="css-view-1dbjc4n IS5"
+    className="css-view-1dbjc4n IS4"
   >
     <div
-      className="css-view-1dbjc4n IS4"
+      className="css-view-1dbjc4n IS1"
     >
-      <div
-        className="css-view-1dbjc4n IS1"
-      >
-        <TileZ
-          breakpoint="huge"
-          tileName="lead"
-        />
-      </div>
-      <div
-        className="css-view-1dbjc4n IS2"
+      <TileZ
+        breakpoint="wide"
+        tileName="lead"
       />
-      <div
-        className="css-view-1dbjc4n IS3"
-      >
-        <TileAF
-          breakpoint="huge"
-          tileName="support"
-        />
-      </div>
+    </div>
+    <div
+      className="css-view-1dbjc4n IS2"
+    />
+    <div
+      className="css-view-1dbjc4n IS3"
+    >
+      <TileAF
+        breakpoint="wide"
+        tileName="support"
+      />
     </div>
   </div>
 </div>
@@ -5262,23 +5118,6 @@ exports[`36. lead one full width - huge 1`] = `
 .IS1 {
   -webkit-align-self: center;
   align-self: center;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  width: 1180px;
-  -ms-flex-item-align: center;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS2 {
-  -webkit-align-self: center;
-  align-self: center;
   max-width: 100%;
   padding-right: 0px;
   padding-left: 0px;
@@ -5288,16 +5127,12 @@ exports[`36. lead one full width - huge 1`] = `
 </style>
 
 <div
-  className="css-view-1dbjc4n IS2"
+  className="css-view-1dbjc4n IS1"
 >
-  <div
-    className="css-view-1dbjc4n IS1"
-  >
-    <TileR
-      breakpoint="huge"
-      tileName="lead"
-    />
-  </div>
+  <TileR
+    breakpoint="wide"
+    tileName="lead"
+  />
 </div>
 `;
 
@@ -5380,23 +5215,6 @@ exports[`37. lead two no pic and two - huge 1`] = `
 .IS8 {
   -webkit-align-self: center;
   align-self: center;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  width: 1180px;
-  -ms-flex-item-align: center;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS9 {
-  -webkit-align-self: center;
-  align-self: center;
   max-width: 100%;
   padding-right: 0px;
   padding-left: 0px;
@@ -5406,51 +5224,47 @@ exports[`37. lead two no pic and two - huge 1`] = `
 </style>
 
 <div
-  className="css-view-1dbjc4n IS9"
+  className="css-view-1dbjc4n IS8"
 >
   <div
-    className="css-view-1dbjc4n IS8"
+    className="css-view-1dbjc4n IS7"
   >
     <div
-      className="css-view-1dbjc4n IS7"
+      className="css-view-1dbjc4n IS2"
     >
-      <div
-        className="css-view-1dbjc4n IS2"
-      >
-        <TileX
-          breakpoint="huge"
-          tileName="lead1"
-        />
-        <div
-          className="css-view-1dbjc4n IS1"
-        />
-        <TileY
-          breakpoint="huge"
-          tileName="lead2"
-        />
-      </div>
-      <div
-        className="css-view-1dbjc4n IS3"
+      <TileX
+        breakpoint="wide"
+        tileName="lead1"
       />
       <div
-        className="css-view-1dbjc4n IS4"
-      >
-        <TileAL
-          breakpoint="huge"
-          tileName="support2"
-        />
-      </div>
-      <div
-        className="css-view-1dbjc4n IS5"
+        className="css-view-1dbjc4n IS1"
       />
-      <div
-        className="css-view-1dbjc4n IS6"
-      >
-        <TileE
-          breakpoint="huge"
-          tileName="support1"
-        />
-      </div>
+      <TileY
+        breakpoint="wide"
+        tileName="lead2"
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n IS3"
+    />
+    <div
+      className="css-view-1dbjc4n IS4"
+    >
+      <TileAL
+        breakpoint="wide"
+        tileName="support2"
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n IS5"
+    />
+    <div
+      className="css-view-1dbjc4n IS6"
+    >
+      <TileE
+        breakpoint="wide"
+        tileName="support1"
+      />
     </div>
   </div>
 </div>
@@ -5558,23 +5372,6 @@ exports[`38. leaders slice - huge 1`] = `
 .IS12 {
   -webkit-align-self: center;
   align-self: center;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  width: 1180px;
-  -ms-flex-item-align: center;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS13 {
-  -webkit-align-self: center;
-  align-self: center;
   max-width: 100%;
   padding-right: 0px;
   padding-left: 0px;
@@ -5584,65 +5381,61 @@ exports[`38. leaders slice - huge 1`] = `
 </style>
 
 <div
-  className="css-view-1dbjc4n IS13"
+  className="css-view-1dbjc4n IS12"
 >
   <div
-    className="css-view-1dbjc4n IS12"
+    className="css-view-1dbjc4n IS11"
   >
     <div
-      className="css-view-1dbjc4n IS11"
+      className="css-view-1dbjc4n IS4"
     >
+      <Image
+        aspectRatio={5.74}
+        className="IS1"
+        uri="https://www.thetimes.co.uk/d/img/leaders-masthead-d17db00289.png"
+      />
       <div
-        className="css-view-1dbjc4n IS4"
+        className="css-view-1dbjc4n IS3"
       >
-        <Image
-          aspectRatio={5.74}
-          className="IS1"
-          uri="https://www.thetimes.co.uk/d/img/leaders-masthead-d17db00289.png"
-        />
         <div
-          className="css-view-1dbjc4n IS3"
+          className="css-text-901oao IS2"
         >
-          <div
-            className="css-text-901oao IS2"
-          >
-             Leading Articles 
-          </div>
+           Leading Articles 
         </div>
       </div>
+    </div>
+    <div
+      className="css-view-1dbjc4n IS10"
+    >
       <div
-        className="css-view-1dbjc4n IS10"
+        className="css-view-1dbjc4n IS5"
       >
-        <div
-          className="css-view-1dbjc4n IS5"
-        >
-          <TileM
-            breakpoint="huge"
-            tileName="leader2"
-          />
-        </div>
-        <div
-          className="css-view-1dbjc4n IS6"
+        <TileM
+          breakpoint="wide"
+          tileName="leader2"
         />
-        <div
-          className="css-view-1dbjc4n IS7"
-        >
-          <TileM
-            breakpoint="huge"
-            tileName="leader1"
-          />
-        </div>
-        <div
-          className="css-view-1dbjc4n IS8"
+      </div>
+      <div
+        className="css-view-1dbjc4n IS6"
+      />
+      <div
+        className="css-view-1dbjc4n IS7"
+      >
+        <TileM
+          breakpoint="wide"
+          tileName="leader1"
         />
-        <div
-          className="css-view-1dbjc4n IS9"
-        >
-          <TileM
-            breakpoint="huge"
-            tileName="leader3"
-          />
-        </div>
+      </div>
+      <div
+        className="css-view-1dbjc4n IS8"
+      />
+      <div
+        className="css-view-1dbjc4n IS9"
+      >
+        <TileM
+          breakpoint="wide"
+          tileName="leader3"
+        />
       </div>
     </div>
   </div>
@@ -5827,23 +5620,6 @@ exports[`39. secondary one and four - huge 1`] = `
 .IS17 {
   -webkit-align-self: center;
   align-self: center;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  width: 1180px;
-  -ms-flex-item-align: center;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS18 {
-  -webkit-align-self: center;
-  align-self: center;
   max-width: 100%;
   padding-right: 0px;
   padding-left: 0px;
@@ -5853,90 +5629,86 @@ exports[`39. secondary one and four - huge 1`] = `
 </style>
 
 <div
-  className="css-view-1dbjc4n IS18"
+  className="css-view-1dbjc4n IS17"
 >
   <div
-    className="css-view-1dbjc4n IS17"
+    className="css-view-1dbjc4n IS16"
   >
     <div
-      className="css-view-1dbjc4n IS16"
+      className="css-view-1dbjc4n IS1"
+    >
+      <TheTimesLogo
+        height={37}
+        width={35}
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n IS2"
+    />
+    <div
+      className="css-view-1dbjc4n IS15"
     >
       <div
-        className="css-view-1dbjc4n IS1"
+        className="css-view-1dbjc4n IS3"
       >
-        <TheTimesLogo
-          height={37}
-          width={35}
+        <TileN
+          breakpoint="wide"
+          tileName="secondary"
         />
       </div>
       <div
-        className="css-view-1dbjc4n IS2"
+        className="css-view-1dbjc4n IS4"
       />
       <div
-        className="css-view-1dbjc4n IS15"
+        className="css-view-1dbjc4n IS14"
       >
         <div
-          className="css-view-1dbjc4n IS3"
-        >
-          <TileN
-            breakpoint="huge"
-            tileName="secondary"
-          />
-        </div>
-        <div
-          className="css-view-1dbjc4n IS4"
-        />
-        <div
-          className="css-view-1dbjc4n IS14"
+          className="css-view-1dbjc4n IS8"
         >
           <div
-            className="css-view-1dbjc4n IS8"
+            className="css-view-1dbjc4n IS5"
           >
-            <div
-              className="css-view-1dbjc4n IS5"
-            >
-              <TileO
-                breakpoint="huge"
-                tileName="support1"
-              />
-            </div>
-            <div
-              className="css-view-1dbjc4n IS6"
+            <TileO
+              breakpoint="wide"
+              tileName="support1"
             />
-            <div
-              className="css-view-1dbjc4n IS7"
-            >
-              <TileO
-                breakpoint="huge"
-                tileName="support2"
-              />
-            </div>
           </div>
           <div
-            className="css-view-1dbjc4n IS9"
+            className="css-view-1dbjc4n IS6"
           />
           <div
-            className="css-view-1dbjc4n IS13"
+            className="css-view-1dbjc4n IS7"
           >
-            <div
-              className="css-view-1dbjc4n IS10"
-            >
-              <TileO
-                breakpoint="huge"
-                tileName="support3"
-              />
-            </div>
-            <div
-              className="css-view-1dbjc4n IS11"
+            <TileO
+              breakpoint="wide"
+              tileName="support2"
             />
-            <div
-              className="css-view-1dbjc4n IS12"
-            >
-              <TileO
-                breakpoint="huge"
-                tileName="support4"
-              />
-            </div>
+          </div>
+        </div>
+        <div
+          className="css-view-1dbjc4n IS9"
+        />
+        <div
+          className="css-view-1dbjc4n IS13"
+        >
+          <div
+            className="css-view-1dbjc4n IS10"
+          >
+            <TileO
+              breakpoint="wide"
+              tileName="support3"
+            />
+          </div>
+          <div
+            className="css-view-1dbjc4n IS11"
+          />
+          <div
+            className="css-view-1dbjc4n IS12"
+          >
+            <TileO
+              breakpoint="wide"
+              tileName="support4"
+            />
           </div>
         </div>
       </div>
@@ -5950,23 +5722,6 @@ exports[`40. secondary one - huge 1`] = `
 .IS1 {
   -webkit-align-self: center;
   align-self: center;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  width: 1180px;
-  -ms-flex-item-align: center;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS2 {
-  -webkit-align-self: center;
-  align-self: center;
   max-width: 100%;
   padding-right: 0px;
   padding-left: 0px;
@@ -5976,16 +5731,12 @@ exports[`40. secondary one - huge 1`] = `
 </style>
 
 <div
-  className="css-view-1dbjc4n IS2"
+  className="css-view-1dbjc4n IS1"
 >
-  <div
-    className="css-view-1dbjc4n IS1"
-  >
-    <TileW
-      breakpoint="huge"
-      tileName="secondary"
-    />
-  </div>
+  <TileW
+    breakpoint="wide"
+    tileName="secondary"
+  />
 </div>
 `;
 
@@ -6115,23 +5866,6 @@ exports[`41. secondary four - huge 1`] = `
 .IS9 {
   -webkit-align-self: center;
   align-self: center;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  width: 1180px;
-  -ms-flex-item-align: center;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS10 {
-  -webkit-align-self: center;
-  align-self: center;
   max-width: 100%;
   padding-right: 0px;
   padding-left: 0px;
@@ -6141,69 +5875,65 @@ exports[`41. secondary four - huge 1`] = `
 </style>
 
 <div
-  className="css-view-1dbjc4n IS10"
+  className="css-view-1dbjc4n IS9"
 >
   <div
-    className="css-view-1dbjc4n IS9"
+    className="css-view-1dbjc4n IS8"
   >
     <div
-      className="css-view-1dbjc4n IS8"
+      className="css-view-1dbjc4n IS4"
     >
       <div
-        className="css-view-1dbjc4n IS4"
+        className="css-view-1dbjc4n IS1"
       >
-        <div
-          className="css-view-1dbjc4n IS1"
-        >
-          <TileAR
-            breakpoint="huge"
-            tileName="secondary1"
-          />
-        </div>
-        <div
-          className="css-view-1dbjc4n IS2"
+        <TileAR
+          breakpoint="wide"
+          tileName="secondary1"
         />
-        <div
-          className="css-view-1dbjc4n IS3"
-        >
-          <TileAR
-            breakpoint="huge"
-            tileName="secondary2"
-          />
-        </div>
       </div>
       <div
-        className="css-view-1dbjc4n IS5"
+        className="css-view-1dbjc4n IS2"
       />
       <div
-        className="css-view-1dbjc4n IS7"
+        className="css-view-1dbjc4n IS3"
       >
-        <TileB
-          additionalHeadlineStyles={
-            Object {
-              "fontSize": 22,
-              "lineHeight": 22,
-              "marginBottom": "5px",
-            }
-          }
-          breakpoint="huge"
-          tileName="secondary3"
-        />
-        <div
-          className="css-view-1dbjc4n IS6"
-        />
-        <TileB
-          additionalHeadlineStyles={
-            Object {
-              "fontSize": 22,
-              "lineHeight": 22,
-              "marginBottom": "5px",
-            }
-          }
-          breakpoint="huge"
-          tileName="secondary4"
+        <TileAR
+          breakpoint="wide"
+          tileName="secondary2"
         />
       </div>
+    </div>
+    <div
+      className="css-view-1dbjc4n IS5"
+    />
+    <div
+      className="css-view-1dbjc4n IS7"
+    >
+      <TileB
+        additionalHeadlineStyles={
+          Object {
+            "fontSize": 20,
+            "lineHeight": 20,
+            "marginBottom": "5px",
+          }
+        }
+        breakpoint="wide"
+        tileName="secondary3"
+      />
+      <div
+        className="css-view-1dbjc4n IS6"
+      />
+      <TileB
+        additionalHeadlineStyles={
+          Object {
+            "fontSize": 20,
+            "lineHeight": 20,
+            "marginBottom": "5px",
+          }
+        }
+        breakpoint="wide"
+        tileName="secondary4"
+      />
     </div>
   </div>
 </div>
@@ -6212,7 +5942,7 @@ exports[`41. secondary four - huge 1`] = `
 exports[`42. secondary one and columnist - huge 1`] = `
 <style>
 .IS1 {
-  width: 58%;
+  width: 66.7%;
 }
 
 .IS2 {
@@ -6232,7 +5962,7 @@ exports[`42. secondary one and columnist - huge 1`] = `
 .IS3 {
   padding-top: 5px;
   padding-bottom: 5px;
-  width: 42%;
+  width: 33.3%;
 }
 
 .IS4 {
@@ -6258,23 +5988,6 @@ exports[`42. secondary one and columnist - huge 1`] = `
 .IS5 {
   -webkit-align-self: center;
   align-self: center;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  width: 1180px;
-  -ms-flex-item-align: center;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS6 {
-  -webkit-align-self: center;
-  align-self: center;
   max-width: 100%;
   padding-right: 0px;
   padding-left: 0px;
@@ -6284,34 +5997,30 @@ exports[`42. secondary one and columnist - huge 1`] = `
 </style>
 
 <div
-  className="css-view-1dbjc4n IS6"
+  className="css-view-1dbjc4n IS5"
 >
   <div
-    className="css-view-1dbjc4n IS5"
+    className="css-view-1dbjc4n IS4"
   >
     <div
-      className="css-view-1dbjc4n IS4"
+      className="css-view-1dbjc4n IS1"
     >
-      <div
-        className="css-view-1dbjc4n IS1"
-      >
-        <TileAB
-          breakpoint="huge"
-          tileName="columnist"
-        />
-      </div>
-      <div
-        className="css-view-1dbjc4n IS2"
+      <TileAB
+        breakpoint="wide"
+        tileName="columnist"
       />
-      <div
-        className="css-view-1dbjc4n IS3"
-      >
-        <TileB
-          breakpoint="huge"
-          tileName="secondary"
-          withMoreTeaser={true}
-        />
-      </div>
+    </div>
+    <div
+      className="css-view-1dbjc4n IS2"
+    />
+    <div
+      className="css-view-1dbjc4n IS3"
+    >
+      <TileB
+        breakpoint="wide"
+        tileName="secondary"
+        withMoreTeaser={true}
+      />
     </div>
   </div>
 </div>
@@ -6400,23 +6109,6 @@ exports[`43. secondary two and two - huge 1`] = `
 .IS9 {
   -webkit-align-self: center;
   align-self: center;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  width: 1180px;
-  -ms-flex-item-align: center;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS10 {
-  -webkit-align-self: center;
-  align-self: center;
   max-width: 100%;
   padding-right: 0px;
   padding-left: 0px;
@@ -6426,51 +6118,47 @@ exports[`43. secondary two and two - huge 1`] = `
 </style>
 
 <div
-  className="css-view-1dbjc4n IS10"
+  className="css-view-1dbjc4n IS9"
 >
   <div
-    className="css-view-1dbjc4n IS9"
+    className="css-view-1dbjc4n IS8"
   >
     <div
-      className="css-view-1dbjc4n IS8"
+      className="css-view-1dbjc4n IS1"
     >
-      <div
-        className="css-view-1dbjc4n IS1"
-      >
-        <TileAM
-          tileName="secondary1"
-        />
-      </div>
-      <div
-        className="css-view-1dbjc4n IS2"
+      <TileAM
+        tileName="secondary1"
       />
-      <div
-        className="css-view-1dbjc4n IS3"
-      >
-        <TileAN
-          tileName="support1"
-        />
-      </div>
-      <div
-        className="css-view-1dbjc4n IS4"
+    </div>
+    <div
+      className="css-view-1dbjc4n IS2"
+    />
+    <div
+      className="css-view-1dbjc4n IS3"
+    >
+      <TileAN
+        tileName="support1"
       />
-      <div
-        className="css-view-1dbjc4n IS5"
-      >
-        <TileAM
-          tileName="secondary2"
-        />
-      </div>
-      <div
-        className="css-view-1dbjc4n IS6"
+    </div>
+    <div
+      className="css-view-1dbjc4n IS4"
+    />
+    <div
+      className="css-view-1dbjc4n IS5"
+    >
+      <TileAM
+        tileName="secondary2"
       />
-      <div
-        className="css-view-1dbjc4n IS7"
-      >
-        <TileAN
-          tileName="support2"
-        />
-      </div>
+    </div>
+    <div
+      className="css-view-1dbjc4n IS6"
+    />
+    <div
+      className="css-view-1dbjc4n IS7"
+    >
+      <TileAN
+        tileName="support2"
+      />
     </div>
   </div>
 </div>
@@ -6567,23 +6255,6 @@ exports[`44. lead one and four slice - huge 1`] = `
 .IS8 {
   -webkit-align-self: center;
   align-self: center;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  width: 1180px;
-  -ms-flex-item-align: center;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS9 {
-  -webkit-align-self: center;
-  align-self: center;
   max-width: 100%;
   padding-right: 0px;
   padding-left: 0px;
@@ -6593,54 +6264,50 @@ exports[`44. lead one and four slice - huge 1`] = `
 </style>
 
 <div
-  className="css-view-1dbjc4n IS9"
+  className="css-view-1dbjc4n IS8"
 >
   <div
-    className="css-view-1dbjc4n IS8"
+    className="css-view-1dbjc4n IS7"
   >
     <div
-      className="css-view-1dbjc4n IS7"
+      className="css-view-1dbjc4n IS1"
     >
-      <div
-        className="css-view-1dbjc4n IS1"
-      >
-        <TileAC
-          breakpoint="huge"
-          tileName="lead"
-        />
-      </div>
-      <div
-        className="css-view-1dbjc4n IS2"
+      <TileAC
+        breakpoint="wide"
+        tileName="lead"
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n IS2"
+    />
+    <div
+      className="css-view-1dbjc4n IS6"
+    >
+      <TileAD
+        breakpoint="wide"
+        tileName="support1"
       />
       <div
-        className="css-view-1dbjc4n IS6"
-      >
-        <TileAD
-          breakpoint="huge"
-          tileName="support1"
-        />
-        <div
-          className="css-view-1dbjc4n IS3"
-        />
-        <TileAD
-          breakpoint="huge"
-          tileName="support2"
-        />
-        <div
-          className="css-view-1dbjc4n IS4"
-        />
-        <TileAD
-          breakpoint="huge"
-          tileName="support3"
-        />
-        <div
-          className="css-view-1dbjc4n IS5"
-        />
-        <TileAD
-          breakpoint="huge"
-          tileName="support4"
-        />
-      </div>
+        className="css-view-1dbjc4n IS3"
+      />
+      <TileAD
+        breakpoint="wide"
+        tileName="support2"
+      />
+      <div
+        className="css-view-1dbjc4n IS4"
+      />
+      <TileAD
+        breakpoint="wide"
+        tileName="support3"
+      />
+      <div
+        className="css-view-1dbjc4n IS5"
+      />
+      <TileAD
+        breakpoint="wide"
+        tileName="support4"
+      />
     </div>
   </div>
 </div>
@@ -6727,23 +6394,6 @@ exports[`45. standard slice - huge 1`] = `
 .IS6 {
   -webkit-align-self: center;
   align-self: center;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  width: 1180px;
-  -ms-flex-item-align: center;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS7 {
-  -webkit-align-self: center;
-  align-self: center;
   max-width: 100%;
   padding-right: 0px;
   padding-left: 0px;
@@ -6753,50 +6403,46 @@ exports[`45. standard slice - huge 1`] = `
 </style>
 
 <div
-  className="css-view-1dbjc4n IS7"
+  className="css-view-1dbjc4n IS6"
 >
   <div
-    className="css-view-1dbjc4n IS6"
+    className="css-view-1dbjc4n IS5"
   >
     <div
-      className="css-view-1dbjc4n IS5"
+      className="css-view-1dbjc4n"
     >
+      <TileK
+        breakpoint="wide"
+        tileName="standardItem1"
+      />
       <div
-        className="css-view-1dbjc4n"
-      >
-        <TileK
-          breakpoint="huge"
-          tileName="standardItem1"
-        />
-        <div
-          className="css-view-1dbjc4n IS1"
-        />
-        <TileK
-          breakpoint="huge"
-          tileName="standardItem2"
-        />
-        <div
-          className="css-view-1dbjc4n IS2"
-        />
-        <TileK
-          breakpoint="huge"
-          tileName="standardItem3"
-        />
-        <div
-          className="css-view-1dbjc4n IS3"
-        />
-        <TileK
-          breakpoint="huge"
-          tileName="standardItem4"
-        />
-        <div
-          className="css-view-1dbjc4n IS4"
-        />
-        <TileK
-          breakpoint="huge"
-          tileName="standardItem5"
-        />
-      </div>
+        className="css-view-1dbjc4n IS1"
+      />
+      <TileK
+        breakpoint="wide"
+        tileName="standardItem2"
+      />
+      <div
+        className="css-view-1dbjc4n IS2"
+      />
+      <TileK
+        breakpoint="wide"
+        tileName="standardItem3"
+      />
+      <div
+        className="css-view-1dbjc4n IS3"
+      />
+      <TileK
+        breakpoint="wide"
+        tileName="standardItem4"
+      />
+      <div
+        className="css-view-1dbjc4n IS4"
+      />
+      <TileK
+        breakpoint="wide"
+        tileName="standardItem5"
+      />
     </div>
   </div>
 </div>
@@ -6901,23 +6547,6 @@ exports[`46. secondary two no pic and two - huge 1`] = `
 .IS9 {
   -webkit-align-self: center;
   align-self: center;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  width: 1180px;
-  -ms-flex-item-align: center;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS10 {
-  -webkit-align-self: center;
-  align-self: center;
   max-width: 100%;
   padding-right: 0px;
   padding-left: 0px;
@@ -6927,55 +6556,51 @@ exports[`46. secondary two no pic and two - huge 1`] = `
 </style>
 
 <div
-  className="css-view-1dbjc4n IS10"
+  className="css-view-1dbjc4n IS9"
 >
   <div
-    className="css-view-1dbjc4n IS9"
+    className="css-view-1dbjc4n IS8"
   >
     <div
-      className="css-view-1dbjc4n IS8"
+      className="css-view-1dbjc4n IS4"
     >
       <div
-        className="css-view-1dbjc4n IS4"
+        className="css-view-1dbjc4n IS1"
       >
-        <div
-          className="css-view-1dbjc4n IS1"
-        >
-          <TileAE
-            breakpoint="huge"
-            tileName="secondary1"
-          />
-        </div>
-        <div
-          className="css-view-1dbjc4n IS2"
+        <TileAE
+          breakpoint="wide"
+          tileName="secondary1"
         />
-        <div
-          className="css-view-1dbjc4n IS3"
-        >
-          <TileAE
-            breakpoint="huge"
-            tileName="secondary2"
-          />
-        </div>
       </div>
       <div
-        className="css-view-1dbjc4n IS5"
+        className="css-view-1dbjc4n IS2"
       />
       <div
-        className="css-view-1dbjc4n IS7"
+        className="css-view-1dbjc4n IS3"
       >
-        <TileG
-          breakpoint="huge"
-          tileName="support1"
-        />
-        <div
-          className="css-view-1dbjc4n IS6"
-        />
-        <TileG
-          breakpoint="huge"
-          tileName="support2"
+        <TileAE
+          breakpoint="wide"
+          tileName="secondary2"
         />
       </div>
+    </div>
+    <div
+      className="css-view-1dbjc4n IS5"
+    />
+    <div
+      className="css-view-1dbjc4n IS7"
+    >
+      <TileG
+        breakpoint="wide"
+        tileName="support1"
+      />
+      <div
+        className="css-view-1dbjc4n IS6"
+      />
+      <TileG
+        breakpoint="wide"
+        tileName="support2"
+      />
     </div>
   </div>
 </div>
@@ -7214,23 +6839,6 @@ exports[`47. list two and six no pic - huge 1`] = `
 .IS21 {
   -webkit-align-self: center;
   align-self: center;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  width: 1180px;
-  -ms-flex-item-align: center;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS22 {
-  -webkit-align-self: center;
-  align-self: center;
   max-width: 100%;
   padding-right: 0px;
   padding-left: 0px;
@@ -7240,113 +6848,109 @@ exports[`47. list two and six no pic - huge 1`] = `
 </style>
 
 <div
-  className="css-view-1dbjc4n IS22"
+  className="css-view-1dbjc4n IS21"
 >
   <div
-    className="css-view-1dbjc4n IS21"
+    className="css-view-1dbjc4n IS20"
   >
     <div
-      className="css-view-1dbjc4n IS20"
+      className="css-view-1dbjc4n IS1"
+    >
+      <TileAS
+        breakpoint="wide"
+        tileName="lead1"
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n IS2"
+    />
+    <div
+      className="css-view-1dbjc4n IS3"
+    >
+      <TileAS
+        breakpoint="wide"
+        tileName="lead2"
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n IS4"
+    />
+    <div
+      className="css-view-1dbjc4n IS19"
     >
       <div
-        className="css-view-1dbjc4n IS1"
-      >
-        <TileAS
-          breakpoint="huge"
-          tileName="lead1"
-        />
-      </div>
-      <div
-        className="css-view-1dbjc4n IS2"
-      />
-      <div
-        className="css-view-1dbjc4n IS3"
-      >
-        <TileAS
-          breakpoint="huge"
-          tileName="lead2"
-        />
-      </div>
-      <div
-        className="css-view-1dbjc4n IS4"
-      />
-      <div
-        className="css-view-1dbjc4n IS19"
+        className="css-view-1dbjc4n IS8"
       >
         <div
-          className="css-view-1dbjc4n IS8"
+          className="css-view-1dbjc4n IS5"
         >
-          <div
-            className="css-view-1dbjc4n IS5"
-          >
-            <TileL
-              breakpoint="huge"
-              tileName="support1"
-            />
-          </div>
-          <div
-            className="css-view-1dbjc4n IS6"
+          <TileL
+            breakpoint="wide"
+            tileName="support1"
           />
-          <div
-            className="css-view-1dbjc4n IS7"
-          >
-            <TileL
-              breakpoint="huge"
-              tileName="support2"
-            />
-          </div>
         </div>
         <div
-          className="css-view-1dbjc4n IS9"
+          className="css-view-1dbjc4n IS6"
         />
         <div
-          className="css-view-1dbjc4n IS13"
+          className="css-view-1dbjc4n IS7"
         >
-          <div
-            className="css-view-1dbjc4n IS10"
-          >
-            <TileL
-              breakpoint="huge"
-              tileName="support3"
-            />
-          </div>
-          <div
-            className="css-view-1dbjc4n IS11"
+          <TileL
+            breakpoint="wide"
+            tileName="support2"
           />
-          <div
-            className="css-view-1dbjc4n IS12"
-          >
-            <TileL
-              breakpoint="huge"
-              tileName="support4"
-            />
-          </div>
+        </div>
+      </div>
+      <div
+        className="css-view-1dbjc4n IS9"
+      />
+      <div
+        className="css-view-1dbjc4n IS13"
+      >
+        <div
+          className="css-view-1dbjc4n IS10"
+        >
+          <TileL
+            breakpoint="wide"
+            tileName="support3"
+          />
         </div>
         <div
-          className="css-view-1dbjc4n IS14"
+          className="css-view-1dbjc4n IS11"
         />
         <div
-          className="css-view-1dbjc4n IS18"
+          className="css-view-1dbjc4n IS12"
         >
-          <div
-            className="css-view-1dbjc4n IS15"
-          >
-            <TileL
-              breakpoint="huge"
-              tileName="support5"
-            />
-          </div>
-          <div
-            className="css-view-1dbjc4n IS16"
+          <TileL
+            breakpoint="wide"
+            tileName="support4"
           />
-          <div
-            className="css-view-1dbjc4n IS17"
-          >
-            <TileL
-              breakpoint="huge"
-              tileName="support6"
-            />
-          </div>
+        </div>
+      </div>
+      <div
+        className="css-view-1dbjc4n IS14"
+      />
+      <div
+        className="css-view-1dbjc4n IS18"
+      >
+        <div
+          className="css-view-1dbjc4n IS15"
+        >
+          <TileL
+            breakpoint="wide"
+            tileName="support5"
+          />
+        </div>
+        <div
+          className="css-view-1dbjc4n IS16"
+        />
+        <div
+          className="css-view-1dbjc4n IS17"
+        >
+          <TileL
+            breakpoint="wide"
+            tileName="support6"
+          />
         </div>
       </div>
     </div>
@@ -7392,23 +6996,6 @@ exports[`48. puzzle - huge 1`] = `
 .IS5 {
   -webkit-align-self: center;
   align-self: center;
-  -webkit-flex-grow: 1;
-  flex-grow: 1;
-  -webkit-flex-shrink: 1;
-  flex-shrink: 1;
-  -webkit-flex-basis: 0%;
-  flex-basis: 0%;
-  width: 1180px;
-  -ms-flex-item-align: center;
-  -ms-flex-positive: 1;
-  -webkit-box-flex: 1;
-  -ms-flex-negative: 1;
-  -ms-flex-preferred-size: 0%;
-}
-
-.IS6 {
-  -webkit-align-self: center;
-  align-self: center;
   max-width: 100%;
   padding-right: 0px;
   padding-left: 0px;
@@ -7418,83 +7005,79 @@ exports[`48. puzzle - huge 1`] = `
 </style>
 
 <div
-  className="css-view-1dbjc4n IS6"
+  className="css-view-1dbjc4n IS5"
 >
   <div
-    className="css-view-1dbjc4n IS5"
+    className="css-view-1dbjc4n IS4"
   >
     <div
-      className="css-view-1dbjc4n IS4"
+      className="css-view-1dbjc4n IS1"
     >
-      <div
-        className="css-view-1dbjc4n IS1"
-      >
-        <TileAK
-          breakpoint="huge"
-          id="0"
-          image={
-            Object {
-              "crop11": null,
-              "crop169": null,
-              "crop23": null,
-              "crop32": Object {
-                "url": "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0",
-              },
-              "crop45": null,
-              "crops": Array [],
-              "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
-            }
+      <TileAK
+        breakpoint="wide"
+        id="0"
+        image={
+          Object {
+            "crop11": null,
+            "crop169": null,
+            "crop23": null,
+            "crop32": Object {
+              "url": "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0",
+            },
+            "crop45": null,
+            "crops": Array [],
+            "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
           }
-          title="Times Concise medium No 7881"
-          url="/crossword/123"
-        />
-      </div>
-      <div
-        className="css-view-1dbjc4n IS2"
-      >
-        <TileAK
-          breakpoint="huge"
-          id="1"
-          image={
-            Object {
-              "crop11": null,
-              "crop169": null,
-              "crop23": null,
-              "crop32": Object {
-                "url": "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0",
-              },
-              "crop45": null,
-              "crops": Array [],
-              "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
-            }
+        }
+        title="Times Concise medium No 7881"
+        url="/crossword/123"
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n IS2"
+    >
+      <TileAK
+        breakpoint="wide"
+        id="1"
+        image={
+          Object {
+            "crop11": null,
+            "crop169": null,
+            "crop23": null,
+            "crop32": Object {
+              "url": "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0",
+            },
+            "crop45": null,
+            "crops": Array [],
+            "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
           }
-          title="Times Concise medium No 7881"
-          url="/crossword/123"
-        />
-      </div>
-      <div
-        className="css-view-1dbjc4n IS3"
-      >
-        <TileAK
-          breakpoint="huge"
-          id="2"
-          image={
-            Object {
-              "crop11": null,
-              "crop169": null,
-              "crop23": null,
-              "crop32": Object {
-                "url": "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0",
-              },
-              "crop45": null,
-              "crops": Array [],
-              "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
-            }
+        }
+        title="Times Concise medium No 7881"
+        url="/crossword/123"
+      />
+    </div>
+    <div
+      className="css-view-1dbjc4n IS3"
+    >
+      <TileAK
+        breakpoint="wide"
+        id="2"
+        image={
+          Object {
+            "crop11": null,
+            "crop169": null,
+            "crop23": null,
+            "crop32": Object {
+              "url": "https://www.thetimes.co.uk/imageserver/image/%2Fpuzzles%2Ficons%2F33b27655-dcc9-421f-906f-b2b10dd26865.png?crop=1250%2C833%2C0%2C0",
+            },
+            "crop45": null,
+            "crops": Array [],
+            "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
           }
-          title="Times Concise medium No 7881"
-          url="/crossword/123"
-        />
-      </div>
+        }
+        title="Times Concise medium No 7881"
+        url="/crossword/123"
+      />
     </div>
   </div>
 </div>

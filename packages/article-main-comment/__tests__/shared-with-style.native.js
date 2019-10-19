@@ -8,7 +8,8 @@ import {
   minimalNativeTransform,
   print
 } from "@times-components/jest-serializer";
-import { setIsTablet } from "./mocks.native";
+import { Dimensions } from "react-native";
+import { tabletWidth } from "@times-components/styleguide";
 import ArticleMainComment from "../src/article-main-comment";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import sharedProps from "./shared-props";
@@ -43,22 +44,6 @@ export default () => {
           name: "image"
         },
         {
-          attributes: {
-            href: "https://link.io",
-            target: "_blank"
-          },
-          children: [
-            {
-              attributes: {
-                value: "Some Link"
-              },
-              children: [],
-              name: "text"
-            }
-          ],
-          name: "link"
-        },
-        {
           attributes: {},
           children: [
             {
@@ -67,6 +52,22 @@ export default () => {
               },
               children: [],
               name: "text"
+            },
+            {
+              attributes: {
+                href: "https://link.io",
+                target: "_blank"
+              },
+              children: [
+                {
+                  attributes: {
+                    value: "Some Link"
+                  },
+                  children: [],
+                  name: "text"
+                }
+              ],
+              name: "link"
             }
           ],
           name: "paragraph"
@@ -143,7 +144,12 @@ export default () => {
   });
 
   it("tablet full article with style", () => {
-    setIsTablet(true);
+    Dimensions.set({
+      window: {
+        width: tabletWidth,
+        height: 640
+      }
+    });
     const article = articleFixture({
       ...testFixture,
       author: {
@@ -162,22 +168,6 @@ export default () => {
           name: "image"
         },
         {
-          attributes: {
-            href: "https://link.io",
-            target: "_blank"
-          },
-          children: [
-            {
-              attributes: {
-                value: "Some Link"
-              },
-              children: [],
-              name: "text"
-            }
-          ],
-          name: "link"
-        },
-        {
           attributes: {},
           children: [
             {
@@ -186,6 +176,22 @@ export default () => {
               },
               children: [],
               name: "text"
+            },
+            {
+              attributes: {
+                href: "https://link.io",
+                target: "_blank"
+              },
+              children: [
+                {
+                  attributes: {
+                    value: "Some Link"
+                  },
+                  children: [],
+                  name: "text"
+                }
+              ],
+              name: "link"
             }
           ],
           name: "paragraph"

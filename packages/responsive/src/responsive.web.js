@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { getEditionBreakpoint } from "@times-components/styleguide";
-import { Dimensions } from 'react-native'
+import { Dimensions } from "react-native";
 import ResponsiveContext from "./context";
 
 const Responsive = ({ children }) => {
-  const { width } = Dimensions.get('window');
+  const { width } = Dimensions.get("window");
 
   return (
     <ResponsiveContext.Provider

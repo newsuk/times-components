@@ -1,5 +1,5 @@
 import React from "react";
-import { Modal, Text, View } from "react-native";
+import { Modal, Text, View, Dimensions } from "react-native";
 import TestRenderer from "react-test-renderer";
 import Link from "@times-components/link";
 import {
@@ -12,7 +12,7 @@ import {
 } from "@times-components/jest-serializer";
 import { hash, iterator } from "@times-components/test-utils";
 import Responsive from "@times-components/responsive";
-import { Gestures, setDimension } from "./mocks";
+import { Gestures } from "./mocks";
 import Image, { ModalImage } from "../src";
 
 // eslint-disable-next-line react/prop-types
@@ -108,7 +108,7 @@ export default () => {
           </Responsive>
         );
 
-        setDimension({ width, height: width / 2 });
+        Dimensions.set({ window: { width, height: width / 2 } });
 
         const modalImage = testInstance.root.findAllByType(Image)[0];
 

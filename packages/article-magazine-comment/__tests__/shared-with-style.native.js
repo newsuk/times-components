@@ -9,8 +9,8 @@ import {
   minimalNativeTransform,
   print
 } from "@times-components/jest-serializer";
-import { themeFactory } from "@times-components/styleguide";
-import { setIsTablet } from "@times-components/mocks/dimensions";
+import { themeFactory, tabletWidth } from "@times-components/styleguide";
+import { Dimensions } from "react-native";
 import "./mocks.native";
 import ArticleMagazineComment from "../src/article-magazine-comment";
 import articleFixture, { testFixture } from "../fixtures/full-article";
@@ -185,7 +185,12 @@ export default () => {
   });
 
   it("tablet full article with style in the culture magazine", () => {
-    setIsTablet(true);
+    Dimensions.set({
+      window: {
+        width: tabletWidth,
+        height: 640
+      }
+    });
     const testRenderer = TestRenderer.create(
       <ContextProviderWithDefaults value={themeForSection("culture")}>
         <ArticleMagazineComment {...sharedProps} article={article} />
@@ -196,7 +201,12 @@ export default () => {
   });
 
   it("tablet full article with style in the style magazine", () => {
-    setIsTablet(true);
+    Dimensions.set({
+      window: {
+        width: tabletWidth,
+        height: 640
+      }
+    });
     const testRenderer = TestRenderer.create(
       <ContextProviderWithDefaults value={themeForSection("style")}>
         <ArticleMagazineComment {...sharedProps} article={article} />
@@ -207,7 +217,12 @@ export default () => {
   });
 
   it("tablet full article with style in the sunday times magazine", () => {
-    setIsTablet(true);
+    Dimensions.set({
+      window: {
+        width: tabletWidth,
+        height: 640
+      }
+    });
     const testRenderer = TestRenderer.create(
       <ContextProviderWithDefaults
         value={themeForSection("thesundaytimesmagazine")}

@@ -9,8 +9,8 @@ import {
   minimalNativeTransform,
   print
 } from "@times-components/jest-serializer";
-import { themeFactory } from "@times-components/styleguide";
-import { setIsTablet } from "@times-components/mocks/dimensions";
+import { themeFactory, tabletWidth } from "@times-components/styleguide";
+import { Dimensions } from "react-native";
 import "./mocks.native";
 import ArticleInDepth from "../src/article-in-depth";
 import articleFixture, { testFixture } from "../fixtures/full-article";
@@ -31,22 +31,6 @@ const article = articleFixture({
       name: "image"
     },
     {
-      attributes: {
-        href: "https://link.io",
-        target: "_blank"
-      },
-      children: [
-        {
-          attributes: {
-            value: "Some Link"
-          },
-          children: [],
-          name: "text"
-        }
-      ],
-      name: "link"
-    },
-    {
       attributes: {},
       children: [
         {
@@ -55,6 +39,22 @@ const article = articleFixture({
           },
           children: [],
           name: "text"
+        },
+        {
+          attributes: {
+            href: "https://link.io",
+            target: "_blank"
+          },
+          children: [
+            {
+              attributes: {
+                value: "Some Link"
+              },
+              children: [],
+              name: "text"
+            }
+          ],
+          name: "link"
         }
       ],
       name: "paragraph"
@@ -182,7 +182,12 @@ export default () => {
   });
 
   it("tablet full article with style in the culture magazine", () => {
-    setIsTablet(true);
+    Dimensions.set({
+      window: {
+        width: tabletWidth,
+        height: 640
+      }
+    });
     const testRenderer = TestRenderer.create(
       <ContextProviderWithDefaults value={themeForSection("culture")}>
         <ArticleInDepth {...sharedProps} article={article} />
@@ -193,7 +198,12 @@ export default () => {
   });
 
   it("tablet full article with style in the style magazine", () => {
-    setIsTablet(true);
+    Dimensions.set({
+      window: {
+        width: tabletWidth,
+        height: 640
+      }
+    });
     const testRenderer = TestRenderer.create(
       <ContextProviderWithDefaults value={themeForSection("style")}>
         <ArticleInDepth {...sharedProps} article={article} />
@@ -204,7 +214,12 @@ export default () => {
   });
 
   it("tablet full article with style in the sunday times magazine", () => {
-    setIsTablet(true);
+    Dimensions.set({
+      window: {
+        width: tabletWidth,
+        height: 640
+      }
+    });
     const testRenderer = TestRenderer.create(
       <ContextProviderWithDefaults
         value={themeForSection("thesundaytimesmagazine")}

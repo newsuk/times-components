@@ -16,6 +16,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
             Object {
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
+              "overflow": "hidden",
               "width": undefined,
             }
           }
@@ -27,6 +28,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
             Object {
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
+              "overflow": "hidden",
               "width": undefined,
             }
           }
@@ -37,7 +39,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 "color": undefined,
                 "fontFamily": "TimesModern-Regular",
                 "fontSize": 112.19999999999999,
-                "left": 10.1435546875,
+                "left": 55.1435546875,
                 "lineHeight": 112.19999999999999,
                 "position": "absolute",
                 "top": -8.5,
@@ -89,24 +91,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                   }
                 }
               >
-                be
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 17,
-                    "fontStyle": "normal",
-                    "fontWeight": "normal",
-                    "left": 117,
-                    "lineHeight": 28,
-                    "position": "absolute",
-                    "top": 0,
-                  }
-                }
-              >
-                ing
+                being
               </Text>
               <Text
                 style={
@@ -140,24 +125,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                   }
                 }
               >
-                His
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 17,
-                    "fontStyle": "normal",
-                    "fontWeight": "normal",
-                    "left": 214,
-                    "lineHeight": 28,
-                    "position": "absolute",
-                    "top": 0,
-                  }
-                }
-              >
-                tory
+                History
               </Text>
               <Text
                 style={
@@ -220,6 +188,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
             Object {
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
+              "overflow": "hidden",
               "width": undefined,
             }
           }
@@ -264,6 +233,7 @@ exports[`2. an article with interactives 1`] = `
             Object {
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
+              "overflow": "hidden",
               "width": undefined,
             }
           }
@@ -275,6 +245,7 @@ exports[`2. an article with interactives 1`] = `
             Object {
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
+              "overflow": "hidden",
               "width": undefined,
             }
           }
@@ -297,6 +268,7 @@ exports[`2. an article with interactives 1`] = `
             Object {
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
+              "overflow": "hidden",
               "width": undefined,
             }
           }
@@ -342,6 +314,7 @@ exports[`3. an article with no content 1`] = `
             Object {
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
+              "overflow": "hidden",
               "width": undefined,
             }
           }
@@ -353,6 +326,7 @@ exports[`3. an article with no content 1`] = `
             Object {
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
+              "overflow": "hidden",
               "width": undefined,
             }
           }
@@ -381,6 +355,7 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
             Object {
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
+              "overflow": "hidden",
               "width": undefined,
             }
           }
@@ -392,6 +367,7 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
             Object {
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
+              "overflow": "hidden",
               "width": undefined,
             }
           }
@@ -402,7 +378,7 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                 "color": undefined,
                 "fontFamily": "TimesModern-Regular",
                 "fontSize": 112.19999999999999,
-                "left": 11.6875,
+                "left": 56.6875,
                 "lineHeight": 112.19999999999999,
                 "position": "absolute",
                 "top": -8.5,
@@ -539,24 +515,7 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                   }
                 }
               >
-                de
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 17,
-                    "fontStyle": "normal",
-                    "fontWeight": "bold",
-                    "left": 305,
-                    "lineHeight": 28,
-                    "position": "absolute",
-                    "top": 0,
-                  }
-                }
-              >
-                cision
+                decision
               </Text>
               <Text
                 style={
@@ -634,10 +593,10 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                     "fontSize": 17,
                     "fontStyle": "normal",
                     "fontWeight": "bold",
-                    "left": 77,
+                    "left": 445,
                     "lineHeight": 28,
                     "position": "absolute",
-                    "top": 28,
+                    "top": 0,
                   }
                 }
               >
@@ -651,10 +610,10 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                     "fontSize": 17,
                     "fontStyle": "normal",
                     "fontWeight": "bold",
-                    "left": 124,
+                    "left": 493,
                     "lineHeight": 28,
                     "position": "absolute",
-                    "top": 28,
+                    "top": 0,
                   }
                 }
               >
@@ -668,14 +627,14 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                     "fontSize": 17,
                     "fontStyle": "normal",
                     "fontWeight": "bold",
-                    "left": 138,
+                    "left": 507,
                     "lineHeight": 28,
                     "position": "absolute",
-                    "top": 28,
+                    "top": 0,
                   }
                 }
               >
-                wo
+                woman
               </Text>
               <Text
                 style={
@@ -685,27 +644,10 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                     "fontSize": 17,
                     "fontStyle": "normal",
                     "fontWeight": "bold",
-                    "left": 160,
+                    "left": 567,
                     "lineHeight": 28,
                     "position": "absolute",
-                    "top": 28,
-                  }
-                }
-              >
-                man
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 17,
-                    "fontStyle": "normal",
-                    "fontWeight": "bold",
-                    "left": 198,
-                    "lineHeight": 28,
-                    "position": "absolute",
-                    "top": 28,
+                    "top": 0,
                   }
                 }
               >
@@ -719,10 +661,10 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                     "fontSize": 17,
                     "fontStyle": "normal",
                     "fontWeight": "bold",
-                    "left": 234,
+                    "left": 603,
                     "lineHeight": 28,
                     "position": "absolute",
-                    "top": 28,
+                    "top": 0,
                   }
                 }
               >
@@ -736,10 +678,10 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                     "fontSize": 17,
                     "fontStyle": "normal",
                     "fontWeight": "bold",
-                    "left": 251,
+                    "left": 620,
                     "lineHeight": 28,
                     "position": "absolute",
-                    "top": 28,
+                    "top": 0,
                   }
                 }
               >
@@ -753,48 +695,14 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                     "fontSize": 17,
                     "fontStyle": "normal",
                     "fontWeight": "bold",
-                    "left": 287,
+                    "left": 77,
                     "lineHeight": 28,
                     "position": "absolute",
                     "top": 28,
                   }
                 }
               >
-                opin
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 17,
-                    "fontStyle": "normal",
-                    "fontWeight": "bold",
-                    "left": 319,
-                    "lineHeight": 28,
-                    "position": "absolute",
-                    "top": 28,
-                  }
-                }
-              >
-                ion
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 17,
-                    "fontStyle": "normal",
-                    "fontWeight": "bold",
-                    "left": 342,
-                    "lineHeight": 28,
-                    "position": "absolute",
-                    "top": 28,
-                  }
-                }
-              >
-                ated.
+                opinionated.
               </Text>
             </View>
           </View>
@@ -806,6 +714,7 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
             Object {
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
+              "overflow": "hidden",
               "width": undefined,
             }
           }
@@ -813,7 +722,7 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
           <View
             style={
               Object {
-                "height": 28,
+                "height": undefined,
                 "marginBottom": 20,
                 "paddingLeft": 10,
                 "paddingRight": 10,
@@ -821,209 +730,21 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
             }
           >
             <View>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 17,
-                    "fontStyle": "normal",
-                    "fontWeight": "bold",
-                    "left": 0,
-                    "lineHeight": 28,
-                    "position": "absolute",
-                    "top": 0,
+              <Text>
+                <Text
+                  style={
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 17,
+                      "fontStyle": "normal",
+                      "fontWeight": "bold",
+                      "lineHeight": 28,
+                    }
                   }
-                }
-              >
-                When
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 17,
-                    "fontStyle": "normal",
-                    "fontWeight": "bold",
-                    "left": 47,
-                    "lineHeight": 28,
-                    "position": "absolute",
-                    "top": 0,
-                  }
-                }
-              >
-                she
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 17,
-                    "fontStyle": "normal",
-                    "fontWeight": "bold",
-                    "left": 78,
-                    "lineHeight": 28,
-                    "position": "absolute",
-                    "top": 0,
-                  }
-                }
-              >
-                does
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 17,
-                    "fontStyle": "normal",
-                    "fontWeight": "bold",
-                    "left": 119,
-                    "lineHeight": 28,
-                    "position": "absolute",
-                    "top": 0,
-                  }
-                }
-              >
-                come
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 17,
-                    "fontStyle": "normal",
-                    "fontWeight": "bold",
-                    "left": 166,
-                    "lineHeight": 28,
-                    "position": "absolute",
-                    "top": 0,
-                  }
-                }
-              >
-                to
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 17,
-                    "fontStyle": "normal",
-                    "fontWeight": "bold",
-                    "left": 185,
-                    "lineHeight": 28,
-                    "position": "absolute",
-                    "top": 0,
-                  }
-                }
-              >
-                so
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 17,
-                    "fontStyle": "normal",
-                    "fontWeight": "bold",
-                    "left": 204,
-                    "lineHeight": 28,
-                    "position": "absolute",
-                    "top": 0,
-                  }
-                }
-              >
-                cial
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 17,
-                    "fontStyle": "normal",
-                    "fontWeight": "bold",
-                    "left": 234,
-                    "lineHeight": 28,
-                    "position": "absolute",
-                    "top": 0,
-                  }
-                }
-              >
-                events,
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 17,
-                    "fontStyle": "normal",
-                    "fontWeight": "bold",
-                    "left": 291,
-                    "lineHeight": 28,
-                    "position": "absolute",
-                    "top": 0,
-                  }
-                }
-              >
-                she
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 17,
-                    "fontStyle": "normal",
-                    "fontWeight": "bold",
-                    "left": 323,
-                    "lineHeight": 28,
-                    "position": "absolute",
-                    "top": 0,
-                  }
-                }
-              >
-                dom
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 17,
-                    "fontStyle": "normal",
-                    "fontWeight": "bold",
-                    "left": 357,
-                    "lineHeight": 28,
-                    "position": "absolute",
-                    "top": 0,
-                  }
-                }
-              >
-                in
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 17,
-                    "fontStyle": "normal",
-                    "fontWeight": "bold",
-                    "left": 371,
-                    "lineHeight": 28,
-                    "position": "absolute",
-                    "top": 0,
-                  }
-                }
-              >
-                ates.
+                >
+                  When she does come to social events, she dominates.
+                </Text>
               </Text>
             </View>
           </View>
@@ -1057,6 +778,7 @@ exports[`5. an article skeleton with responsive items 1`] = `
             Object {
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
+              "overflow": "hidden",
               "width": undefined,
             }
           }
@@ -1068,6 +790,7 @@ exports[`5. an article skeleton with responsive items 1`] = `
             Object {
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
+              "overflow": "hidden",
               "width": undefined,
             }
           }
@@ -1075,168 +798,29 @@ exports[`5. an article skeleton with responsive items 1`] = `
           <View
             style={
               Object {
-                "alignSelf": "center",
-                "height": 28,
+                "height": undefined,
                 "marginBottom": 20,
                 "paddingLeft": 10,
                 "paddingRight": 10,
-                "width": 660,
               }
             }
           >
             <View>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 17,
-                    "fontStyle": "normal",
-                    "fontWeight": "normal",
-                    "left": 0,
-                    "lineHeight": 28,
-                    "position": "absolute",
-                    "top": 0,
+              <Text>
+                <Text
+                  style={
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 17,
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                      "lineHeight": 28,
+                    }
                   }
-                }
-              >
-                This
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 17,
-                    "fontStyle": "normal",
-                    "fontWeight": "normal",
-                    "left": 36,
-                    "lineHeight": 28,
-                    "position": "absolute",
-                    "top": 0,
-                  }
-                }
-              >
-                be
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 17,
-                    "fontStyle": "normal",
-                    "fontWeight": "normal",
-                    "left": 55,
-                    "lineHeight": 28,
-                    "position": "absolute",
-                    "top": 0,
-                  }
-                }
-              >
-                ing
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 17,
-                    "fontStyle": "normal",
-                    "fontWeight": "normal",
-                    "left": 82,
-                    "lineHeight": 28,
-                    "position": "absolute",
-                    "top": 0,
-                  }
-                }
-              >
-                Black
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 17,
-                    "fontStyle": "normal",
-                    "fontWeight": "normal",
-                    "left": 128,
-                    "lineHeight": 28,
-                    "position": "absolute",
-                    "top": 0,
-                  }
-                }
-              >
-                His
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 17,
-                    "fontStyle": "normal",
-                    "fontWeight": "normal",
-                    "left": 153,
-                    "lineHeight": 28,
-                    "position": "absolute",
-                    "top": 0,
-                  }
-                }
-              >
-                tory
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 17,
-                    "fontStyle": "normal",
-                    "fontWeight": "normal",
-                    "left": 186,
-                    "lineHeight": 28,
-                    "position": "absolute",
-                    "top": 0,
-                  }
-                }
-              >
-                Month,
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 17,
-                    "fontStyle": "normal",
-                    "fontWeight": "normal",
-                    "left": 242,
-                    "lineHeight": 28,
-                    "position": "absolute",
-                    "top": 0,
-                  }
-                }
-              >
-                last
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 17,
-                    "fontStyle": "normal",
-                    "fontWeight": "normal",
-                    "left": 274,
-                    "lineHeight": 28,
-                    "position": "absolute",
-                    "top": 0,
-                  }
-                }
-              >
-                week
+                >
+                  This being Black History Month, last week
+                </Text>
               </Text>
             </View>
           </View>
@@ -1248,6 +832,7 @@ exports[`5. an article skeleton with responsive items 1`] = `
             Object {
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
+              "overflow": "hidden",
               "width": undefined,
             }
           }

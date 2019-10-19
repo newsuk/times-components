@@ -16,6 +16,7 @@ exports[`1. scaled medium full article 1`] = `
             Object {
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
+              "overflow": "hidden",
               "width": undefined,
             }
           }
@@ -27,6 +28,7 @@ exports[`1. scaled medium full article 1`] = `
             Object {
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
+              "overflow": "hidden",
               "width": undefined,
             }
           }
@@ -34,7 +36,7 @@ exports[`1. scaled medium full article 1`] = `
           <View
             style={
               Object {
-                "height": 28,
+                "height": undefined,
                 "marginBottom": 20,
                 "paddingLeft": 10,
                 "paddingRight": 10,
@@ -42,56 +44,21 @@ exports[`1. scaled medium full article 1`] = `
             }
           >
             <View>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 17,
-                    "fontStyle": "normal",
-                    "fontWeight": "normal",
-                    "left": 0,
-                    "lineHeight": 28,
-                    "position": "absolute",
-                    "top": 0,
+              <Text>
+                <Text
+                  style={
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 17,
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                      "lineHeight": 28,
+                    }
                   }
-                }
-              >
-                Some
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 17,
-                    "fontStyle": "normal",
-                    "fontWeight": "normal",
-                    "left": 47,
-                    "lineHeight": 28,
-                    "position": "absolute",
-                    "top": 0,
-                  }
-                }
-              >
-                con
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 17,
-                    "fontStyle": "normal",
-                    "fontWeight": "normal",
-                    "left": 75,
-                    "lineHeight": 28,
-                    "position": "absolute",
-                    "top": 0,
-                  }
-                }
-              >
-                tent
+                >
+                  Some content
+                </Text>
               </Text>
             </View>
           </View>
@@ -103,6 +70,7 @@ exports[`1. scaled medium full article 1`] = `
             Object {
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
+              "overflow": "hidden",
               "width": undefined,
             }
           }
@@ -131,6 +99,7 @@ exports[`2. scaled large full article 1`] = `
             Object {
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
+              "overflow": "hidden",
               "width": undefined,
             }
           }
@@ -142,6 +111,7 @@ exports[`2. scaled large full article 1`] = `
             Object {
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
+              "overflow": "hidden",
               "width": undefined,
             }
           }
@@ -149,7 +119,7 @@ exports[`2. scaled large full article 1`] = `
           <View
             style={
               Object {
-                "height": 28,
+                "height": undefined,
                 "marginBottom": 20,
                 "paddingLeft": 10,
                 "paddingRight": 10,
@@ -157,56 +127,21 @@ exports[`2. scaled large full article 1`] = `
             }
           >
             <View>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 17,
-                    "fontStyle": "normal",
-                    "fontWeight": "normal",
-                    "left": 0,
-                    "lineHeight": 28,
-                    "position": "absolute",
-                    "top": 0,
+              <Text>
+                <Text
+                  style={
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 17,
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                      "lineHeight": 28,
+                    }
                   }
-                }
-              >
-                Some
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 17,
-                    "fontStyle": "normal",
-                    "fontWeight": "normal",
-                    "left": 47,
-                    "lineHeight": 28,
-                    "position": "absolute",
-                    "top": 0,
-                  }
-                }
-              >
-                con
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 17,
-                    "fontStyle": "normal",
-                    "fontWeight": "normal",
-                    "left": 75,
-                    "lineHeight": 28,
-                    "position": "absolute",
-                    "top": 0,
-                  }
-                }
-              >
-                tent
+                >
+                  Some content
+                </Text>
               </Text>
             </View>
           </View>
@@ -218,6 +153,7 @@ exports[`2. scaled large full article 1`] = `
             Object {
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
+              "overflow": "hidden",
               "width": undefined,
             }
           }
@@ -246,6 +182,7 @@ exports[`3. scaled xlarge full article 1`] = `
             Object {
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
+              "overflow": "hidden",
               "width": undefined,
             }
           }
@@ -257,6 +194,7 @@ exports[`3. scaled xlarge full article 1`] = `
             Object {
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
+              "overflow": "hidden",
               "width": undefined,
             }
           }
@@ -264,7 +202,7 @@ exports[`3. scaled xlarge full article 1`] = `
           <View
             style={
               Object {
-                "height": 28,
+                "height": undefined,
                 "marginBottom": 20,
                 "paddingLeft": 10,
                 "paddingRight": 10,
@@ -272,56 +210,21 @@ exports[`3. scaled xlarge full article 1`] = `
             }
           >
             <View>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 17,
-                    "fontStyle": "normal",
-                    "fontWeight": "normal",
-                    "left": 0,
-                    "lineHeight": 28,
-                    "position": "absolute",
-                    "top": 0,
+              <Text>
+                <Text
+                  style={
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 17,
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                      "lineHeight": 28,
+                    }
                   }
-                }
-              >
-                Some
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 17,
-                    "fontStyle": "normal",
-                    "fontWeight": "normal",
-                    "left": 47,
-                    "lineHeight": 28,
-                    "position": "absolute",
-                    "top": 0,
-                  }
-                }
-              >
-                con
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 17,
-                    "fontStyle": "normal",
-                    "fontWeight": "normal",
-                    "left": 75,
-                    "lineHeight": 28,
-                    "position": "absolute",
-                    "top": 0,
-                  }
-                }
-              >
-                tent
+                >
+                  Some content
+                </Text>
               </Text>
             </View>
           </View>
@@ -333,6 +236,7 @@ exports[`3. scaled xlarge full article 1`] = `
             Object {
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
+              "overflow": "hidden",
               "width": undefined,
             }
           }

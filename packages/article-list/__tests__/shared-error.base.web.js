@@ -14,7 +14,6 @@ jest.mock("../src/article-list-item", () => ({ article }) => {
 
   return "ArticleListItem";
 });
-jest.mock("Image", () => "Image");
 
 beforeAll(() => {
   this.spy = jest.spyOn(console, "error").mockImplementation();

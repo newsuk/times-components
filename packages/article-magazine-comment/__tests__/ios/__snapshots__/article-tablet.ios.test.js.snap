@@ -6,12 +6,10 @@ exports[`1. article magazine comment - tablet 1`] = `
     style={
       Object {
         "alignItems": "center",
-        "alignSelf": "center",
         "marginBottom": 25,
         "marginLeft": 10,
         "marginRight": 10,
         "paddingTop": 35,
-        "width": 660,
       }
     }
   >
@@ -19,10 +17,10 @@ exports[`1. article magazine comment - tablet 1`] = `
       style={
         Object {
           "borderRadius": 50,
-          "height": 108,
+          "height": 100,
           "marginBottom": 25,
           "overflow": "hidden",
-          "width": 108,
+          "width": 100,
         }
       }
     />
@@ -40,8 +38,8 @@ exports[`1. article magazine comment - tablet 1`] = `
         Object {
           "color": "#1D1D1B",
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 40,
-          "lineHeight": 40,
+          "fontSize": 30,
+          "lineHeight": 36,
           "marginBottom": 15,
           "textAlign": "center",
         }
@@ -78,8 +76,6 @@ exports[`1. article magazine comment - tablet 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "flexDirection": "row",
-          "justifyContent": "center",
           "marginTop": 20,
         }
       }
@@ -89,7 +85,6 @@ exports[`1. article magazine comment - tablet 1`] = `
           Object {
             "flexDirection": "row",
             "flexWrap": "wrap",
-            "paddingTop": "auto",
           }
         }
       >
@@ -98,19 +93,8 @@ exports[`1. article magazine comment - tablet 1`] = `
       <View
         style={
           Object {
-            "borderRightColor": "#DBDBDB",
-            "borderRightWidth": 1,
-            "height": 15,
-            "marginHorizontal": 10,
-          }
-        }
-      />
-      <View
-        style={
-          Object {
             "flexDirection": "row",
             "flexWrap": "wrap",
-            "paddingTop": "auto",
           }
         }
       >
@@ -121,7 +105,7 @@ exports[`1. article magazine comment - tablet 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
               "lineHeight": 15,
-              "marginTop": "auto",
+              "marginTop": 15,
             }
           }
         >
@@ -133,9 +117,7 @@ exports[`1. article magazine comment - tablet 1`] = `
   <View
     style={
       Object {
-        "alignSelf": "center",
         "marginBottom": 20,
-        "width": 640,
       }
     }
   >

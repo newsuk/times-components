@@ -13,7 +13,6 @@ jest.mock("../src/article-list-item", () => ({ article }) => {
 
   return "ArticleListItem";
 });
-jest.mock("Image", () => "Image");
 
 export default () => {
   const tests = [

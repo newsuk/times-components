@@ -21,12 +21,10 @@ exports[`2. responsive tablet paragraph 1`] = `
 <View
   style={
     Object {
-      "alignSelf": "center",
       "height": undefined,
       "marginBottom": 20,
       "paddingLeft": 10,
       "paddingRight": 10,
-      "width": 660,
     }
   }
 >
@@ -40,12 +38,10 @@ exports[`3. responsive tablet paragraph with a drop cap 1`] = `
 <View
   style={
     Object {
-      "alignSelf": "center",
       "height": undefined,
       "marginBottom": 20,
       "paddingLeft": 10,
       "paddingRight": 10,
-      "width": 660,
     }
   }
 >

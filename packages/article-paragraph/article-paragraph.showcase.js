@@ -22,34 +22,30 @@ const renderParagraphWithScale = ({ select, boolean }, ast) => {
       {renderTree(ast, {
         ...coreRenderers,
         dropCap(key, { value }) {
-          return {
-            element: enableDropcap && (
-              <DropCapView
-                {...{
-                  colour: theme.sectionColour,
-                  font: theme.dropCapFont,
-                  key,
-                  dropCap: value,
-                  scale
-                }}
-              />
-            )
-          };
+          return enableDropcap && (
+            <DropCapView
+              {...{
+                colour: theme.sectionColour,
+                font: theme.dropCapFont,
+                key,
+                dropCap: value,
+                scale
+              }}
+            />
+          )
         },
         paragraph(key, attributes, children, indx, node) {
-          return {
-            element: (
-              <ArticleParagraph
-                ast={node}
-                dropCapColour={theme.sectionColour}
-                dropCapFont={theme.dropCapFont}
-                key={indx}
-                uid={indx}
-              >
-                {children}
-              </ArticleParagraph>
-            )
-          };
+          return (
+            <ArticleParagraph
+              ast={node}
+              dropCapColour={theme.sectionColour}
+              dropCapFont={theme.dropCapFont}
+              key={indx}
+              uid={indx}
+            >
+              {children}
+            </ArticleParagraph>
+          )
         }
       })}
     </ContextProviderWithDefaults>
