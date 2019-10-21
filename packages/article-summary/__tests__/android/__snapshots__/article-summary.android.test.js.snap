@@ -694,3 +694,177 @@ exports[`18. article summary content component without white space height 1`] = 
   </Text>
 </Text>
 `;
+
+exports[`19. article summary component with a single paragraph and flag on tablet 1`] = `
+<View>
+  <View>
+    <ArticleLabel
+      color="#333333"
+      title="Camilla Long"
+    />
+  </View>
+  <Text
+    accessibilityRole="header"
+    aria-level="3"
+  >
+    Test Headline
+  </Text>
+  <ArticleFlags
+    flags={
+      Array [
+        Object {
+          "expiryTime": "2020-03-13T12:00:00.000Z",
+          "type": "UPDATED",
+        },
+        Object {
+          "expiryTime": "2019-03-14T12:00:00.000Z",
+          "type": "EXCLUSIVE",
+        },
+      ]
+    }
+  />
+  <Text>
+    <Text>
+      
+      Test paragraph
+      ...
+    </Text>
+  </Text>
+  <Text>
+    <DatePublication
+      date="2017-11-17T00:01:00.000Z"
+      publication="TIMES"
+    />
+  </Text>
+  <Text>
+    <ArticleByline
+      ast={
+        Array [
+          Object {
+            "attributes": Object {
+              "slug": "camilla-long",
+            },
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "Camilla Long",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "author",
+          },
+          Object {
+            "attributes": Object {},
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": ", Environment Editor",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "inline",
+          },
+        ]
+      }
+    />
+  </Text>
+</View>
+`;
+
+exports[`20. article summary component with a strapline and flag on tablet 1`] = `
+<View>
+  <View>
+    <ArticleLabel
+      color="#333333"
+      title="Camilla Long"
+    />
+  </View>
+  <Text
+    accessibilityRole="header"
+    aria-level="3"
+  >
+    Test Headline
+  </Text>
+  <Text
+    accessibilityRole="header"
+    aria-level="4"
+  >
+    Test Strapline
+  </Text>
+  <ArticleFlags
+    flags={
+      Array [
+        Object {
+          "expiryTime": "2020-03-13T12:00:00.000Z",
+          "type": "UPDATED",
+        },
+        Object {
+          "expiryTime": "2019-03-14T12:00:00.000Z",
+          "type": "EXCLUSIVE",
+        },
+      ]
+    }
+  />
+  <Text>
+    <Text>
+      
+      Test paragraph
+      ...
+    </Text>
+  </Text>
+  <Text>
+    <DatePublication
+      date="2017-11-17T00:01:00.000Z"
+      publication="TIMES"
+    />
+  </Text>
+  <Text>
+    <ArticleByline
+      ast={
+        Array [
+          Object {
+            "byline": Array [
+              Object {
+                "attributes": Object {
+                  "slug": "camilla-long",
+                },
+                "children": Array [
+                  Object {
+                    "attributes": Object {
+                      "value": "Camilla Long",
+                    },
+                    "children": Array [],
+                    "name": "text",
+                  },
+                ],
+                "name": "author",
+              },
+            ],
+          },
+          Object {
+            "byline": Array [
+              Object {
+                "attributes": Object {},
+                "children": Array [
+                  Object {
+                    "attributes": Object {
+                      "value": ", Environment Editor",
+                    },
+                    "children": Array [],
+                    "name": "text",
+                  },
+                ],
+                "name": "inline",
+              },
+            ],
+          },
+        ]
+      }
+    />
+  </Text>
+</View>
+`;

@@ -7,6 +7,7 @@ import ArticleSummary, {
 } from "@times-components/article-summary";
 import { ArticleFlags } from "@times-components/article-flag";
 import { colours } from "@times-components/styleguide";
+import { ResponsiveContext } from "@times-components/responsive";
 import PositionedTileStar from "./positioned-tile-star";
 
 class TileSummary extends Component {
@@ -44,7 +45,12 @@ class TileSummary extends Component {
       flagColour
     } = this.props;
 
-    return <ArticleFlags {...flagColour} flags={expirableFlags} />;
+    return <ArticleFlags {...flagColour} flags={
+        [{
+            expiryTime:"2019-12-28T11:00:00.000Z",
+            type:"NEW" 
+        }]  
+      } />;
   }
 
   renderSaveStar() {
@@ -107,25 +113,30 @@ class TileSummary extends Component {
       withStar,
       labelColour
     } = this.props;
-
     return (
-      <ArticleSummary
-        bylineProps={bylines ? { ast: bylines, bylineStyle } : null}
-        content={summary ? this.renderContent() : undefined}
-        flags={this.renderFlags()}
-        headline={this.renderHeadline()}
-        label={label}
-        labelProps={{
-          color:
-            labelColour ||
-            (colours.section[section] || colours.section.default),
-          isVideo: hasVideo,
-          title: label
-        }}
-        strapline={strapline ? this.renderStrapline() : undefined}
-        saveStar={withStar && this.renderSaveStar()}
-        style={style}
-      />
+      <ResponsiveContext.Consumer>
+        {({ isTablet }) => {
+        return (
+          <ArticleSummary
+            bylineProps={bylines ? { ast: bylines, bylineStyle } : null}
+            content={summary ? this.renderContent() : undefined}
+            flags={this.renderFlags()}
+            headline={this.renderHeadline()}
+            label={label}
+            labelProps={{
+              color:
+                labelColour ||
+                (colours.section[section] || colours.section.default),
+              isVideo: hasVideo,
+              title: label
+            }}
+            strapline={strapline ? this.renderStrapline() : undefined}
+            saveStar={withStar && this.renderSaveStar()}
+            style={style}
+            isTablet={isTablet}
+          />
+        )}}
+      </ResponsiveContext.Consumer>
     );
   }
 }

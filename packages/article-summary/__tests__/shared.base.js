@@ -58,6 +58,7 @@ export default () => {
       name: "paragraph"
     }
   ];
+  const isTablet = true;
 
   const tests = [
     {
@@ -298,6 +299,42 @@ export default () => {
       test: () => {
         const testInstance = TestRenderer.create(
           <ArticleSummaryContent ast={defaultContent} whiteSpaceHeight={0} />
+        );
+
+        expect(testInstance.toJSON()).toMatchSnapshot();
+      }
+    },
+    {
+      name:
+        "article summary component with a single paragraph and flag on tablet",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <ArticleSummary
+            {...defaultFixture({
+              flags,
+              headline,
+              paragraph
+            })}
+            isTablet={isTablet}
+          />
+        );
+
+        expect(testInstance.toJSON()).toMatchSnapshot();
+      }
+    },
+    {
+      name: "article summary component with a strapline and flag on tablet",
+      test: () => {
+        const testInstance = TestRenderer.create(
+          <ArticleSummary
+            {...straplineFixture({
+              flags,
+              headline,
+              paragraph,
+              strapline
+            })}
+            isTablet={isTablet}
+          />
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();
