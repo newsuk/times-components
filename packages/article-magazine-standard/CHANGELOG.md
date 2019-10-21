@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.14.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.13.8...@times-components/article-magazine-standard@3.14.0) (2019-10-21)
+
+
+### Features
+
+* author name in schema ([#2345](https://github.com/newsuk/times-components/issues/2345)) ([ac50a42](https://github.com/newsuk/times-components/commit/ac50a42))
+
+
+
+
+
 ## [3.13.8](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.13.7...@times-components/article-magazine-standard@3.13.8) (2019-10-17)
 
 **Note:** Version bump only for package @times-components/article-magazine-standard
