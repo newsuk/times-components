@@ -1,4 +1,4 @@
-import { Dimensions } from 'react-native'
+import { Dimensions } from "react-native";
 import { tabletWidth } from "@times-components/styleguide";
 import {
   CommentLeadAndCartoonSlice,

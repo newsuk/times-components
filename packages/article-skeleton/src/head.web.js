@@ -160,6 +160,7 @@ function Head({ article, paidContentClassName, faviconUrl }) {
       isAccessibleForFree: false,
       cssSelector: `.${paidContentClassName}`
     },
+    author: authorName || "",
     image: {
       "@type": "ImageObject",
       url: leadassetUrl,
