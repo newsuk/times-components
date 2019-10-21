@@ -41,7 +41,7 @@ export default animate => [
 
       const button = testInstance.find(TouchableOpacity);
       button.simulate("press");
-      await delay(1);
+      await delay(10);
       expect(closed).toBeCalled();
     }
   },

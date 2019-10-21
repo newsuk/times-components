@@ -22,7 +22,11 @@ const buildConfig = dir => {
     },
     collectCoverage: true,
     coverageReporters: ["json", "html", "lcov", "text"],
-    coverageDirectory: path.join(dir, "coverage")
+    coverageDirectory: path.join(dir, "coverage"),
+    collectCoverageFrom: [
+      "<rootDir>/packages/typeset/src/*.ts",
+      "!<rootDir>/node_modules/"
+    ]
   }
 }
 

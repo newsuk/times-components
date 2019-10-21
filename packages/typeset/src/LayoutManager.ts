@@ -17,24 +17,14 @@ function isFontTag(value: AttributeTag | null): value is FontTag {
 
 const getLeading = (str: AttributedString) => {
   const fontAttrs: FontTag[] = str.attributes
-    .map(({ tag }) => {
-      if (tag.tag === 'FONT' || tag.tag === 'LINK') {
-        return tag;
-      }
-      return null;
-    })
+    .map(({ tag }) => tag)
     .filter(isFontTag);
   return Math.max(...fontAttrs.map(tag => tag.settings.lineHeight));
 };
 
 const getSettings = (str: AttributedString) => {
   const fontAttrs: FontTag[] = str.attributes
-    .map(({ tag }) => {
-      if (tag.tag === 'FONT' || tag.tag === 'LINK') {
-        return tag;
-      }
-      return null;
-    })
+    .map(({ tag }) => tag)
     .filter(isFontTag);
   if (!fontAttrs.length) {
     throw new Error(`String with no font setting: ${str.string}`);
@@ -201,7 +191,7 @@ const makeHyphenator = (() => {
   let dictionary: any = null;
   return () => {
     if (!dictionary) {
-      dictionary = createHyphenator(require('hyphenation.en-gb').default);
+      dictionary = createHyphenator(require('hyphenation.en-gb'));
     }
     return dictionary;
   };

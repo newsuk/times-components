@@ -1,6 +1,6 @@
 import { Attribute, AttributedString } from '../src';
 
-const makeAttribute = (start: number, length: number): Attribute => ({
+export const makeAttribute = (start: number, length: number): Attribute => ({
   length,
   start,
   tag: {

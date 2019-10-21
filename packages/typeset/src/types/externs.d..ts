@@ -9,6 +9,10 @@ declare module 'parse-svg-path' {
   type SimplePath = SimpleSegment[];
 }
 
+declare module '@times-components/test-utils' {
+  export const TestFont: any;
+}
+
 declare module 'abs-svg-path' {
   export default function(path: SimplePath): SimplePath;
 
