@@ -12,7 +12,7 @@ const articleSkeletonPropTypes = {
 
 const articleSkeletonDefaultProps = {
   adConfig: {},
-  data: null,
+  data: { content: [] },
   Header: () => null,
   receiveChildList: () => {}
 };

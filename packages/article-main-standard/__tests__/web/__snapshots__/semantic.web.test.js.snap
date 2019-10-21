@@ -92,7 +92,11 @@ exports[`1. a full article with an image as the lead asset 1`] = `
     >
       Some Standfirst
     </h2>
-    <span />
+    <span>
+      <span>
+        Some byline
+      </span>
+    </span>
     <span>
       <time
         dateTime="2015-03-13T18:54:58.000Z"
@@ -133,7 +137,11 @@ exports[`1. a full article with an image as the lead asset 1`] = `
         SOME CREDITS
       </figcaption>
     </figure>
-    <span />
+    <span>
+      <span>
+        Some byline
+      </span>
+    </span>
     <span>
       <time
         dateTime="2015-03-13T18:54:58.000Z"

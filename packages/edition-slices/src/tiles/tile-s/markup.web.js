@@ -7,6 +7,6 @@ export default {
       <b key={key} style={styles.bold}>
         {renderedChildren}
       </b>
-    )
+    );
   }
 };

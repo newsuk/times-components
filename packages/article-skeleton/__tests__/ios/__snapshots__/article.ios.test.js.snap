@@ -126,35 +126,7 @@ exports[`2. an article with interactives 1`] = `
 </View>
 `;
 
-exports[`3. an article with no content 1`] = `
-<View>
-  <RCTScrollView
-    initialNumToRender={3}
-    maxToRenderPerBatch={10}
-    nestedScrollEnabled={true}
-    onEndReachedThreshold={2}
-    removeClippedSubviews={true}
-    scrollEventThrottle={50}
-    showsVerticalScrollIndicator={false}
-    updateCellsBatchingPeriod={50}
-    windowSize={3}
-  >
-    <View>
-      <View>
-        <View />
-      </View>
-      <View>
-        <View>
-          <ArticleExtras
-            articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-            articleUrl="https://url.io"
-          />
-        </View>
-      </View>
-    </View>
-  </RCTScrollView>
-</View>
-`;
+exports[`3. an article with no content 1`] = `null`;
 
 exports[`4. an article with a nested markup in first paragraph displays a drop cap 1`] = `
 <View>

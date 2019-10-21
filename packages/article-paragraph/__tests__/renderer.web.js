@@ -24,14 +24,14 @@ export default (ast, section = "default") => {
             <DropCapView font={theme.dropCapFont} key={key}>
               {value}
             </DropCapView>
-          )
+          );
         },
         paragraph(key, attributes, children, indx, node) {
           return (
             <ArticleParagraph ast={node} key={indx} uid={indx}>
               {children}
             </ArticleParagraph>
-          )
+          );
         }
       })}
     </ContextProviderWithDefaults>

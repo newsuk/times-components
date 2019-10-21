@@ -173,7 +173,8 @@ const raggedRight = (positioned: PositionedItem[], spaceWidth: number) => {
       break;
     }
     if (
-      (current.text.text.parent && current.text.text.parent === next.text.text.parent &&
+      (current.text.text.parent &&
+        current.text.text.parent === next.text.text.parent &&
         current.position.line === next.position.line) ||
       next.text.text.string === '-'
     ) {
@@ -197,14 +198,14 @@ const raggedRight = (positioned: PositionedItem[], spaceWidth: number) => {
 };
 
 const makeHyphenator = (() => {
-  let dictionary: any = null
+  let dictionary: any = null;
   return () => {
     if (!dictionary) {
-      dictionary = createHyphenator(require('hyphenation.en-gb').default)
+      dictionary = createHyphenator(require('hyphenation.en-gb').default);
     }
-    return dictionary
-  }
-})()
+    return dictionary;
+  };
+})();
 
 export default class LayoutManager {
   public text: AttributedString;
@@ -223,11 +224,14 @@ export default class LayoutManager {
     this.exclusions = exclusions;
   }
 
-  public layout(justify: boolean = false, hyphenate: boolean = false): PositionedItem[] {
+  public layout(
+    justify: boolean = false,
+    hyphenate: boolean = false
+  ): PositionedItem[] {
     let spans: Span[] = [];
-    let hyphenator: any
+    let hyphenator: any;
     if (hyphenate) {
-      hyphenator = makeHyphenator()
+      hyphenator = makeHyphenator();
     }
     const leading = getLeading(this.text);
     for (const container of this.containers) {
@@ -254,7 +258,11 @@ export default class LayoutManager {
       }
       return stringies;
     };
-    const items = layoutItemsFromString(this.text, measure, hyphenate ? hyphenateFn : undefined);
+    const items = layoutItemsFromString(
+      this.text,
+      measure,
+      hyphenate ? hyphenateFn : undefined
+    );
     const widths = spans.map((span: Span) => span.end.x - span.start.x);
     const breakpoints = breakLines(items, widths, defaultOptions);
     const positioned = positionItems(items, widths, breakpoints);

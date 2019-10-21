@@ -22,7 +22,7 @@ const renderAuthorComponent = (
     >
       {children}
     </TextLink>
-  )
+  );
 };
 
 const ArticleBylineWithLinks = ({ ast, centered, ...props }) =>

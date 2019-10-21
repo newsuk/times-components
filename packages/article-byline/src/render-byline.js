@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 import { Text } from "react-native";
 import renderTrees from "@times-components/markup-forest";
@@ -10,15 +11,12 @@ const bylineRenderers = (renderAuthorComponent, textStyle, props = {}) => ({
   },
 
   inline(key, attributes, children) {
+    const { className, bylineStyle } = props;
     return (
-      <Text
-        className={props.className}
-        key={key}
-        style={[textStyle, props.bylineStyle]}
-      >
+      <Text className={className} key={key} style={[textStyle, bylineStyle]}>
         {children}
       </Text>
-    )
+    );
   }
 });
 

@@ -52,7 +52,15 @@ const ArticleSkeleton = props => {
       .map(viewableItem => onViewed(viewableItem.item, data));
   };
 
+  if (!data) {
+    return null;
+  }
+
   const { id, url, content } = data;
+
+  if (!content || !content.length) {
+    return null;
+  }
 
   const header = <Header width={Math.min(maxWidth, screenWidth())} />;
 

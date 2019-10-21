@@ -641,18 +641,18 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
       >
         <p>
           <span>
-            <b>
+            <div>
               Q
-            </b>
+            </div>
           </span>
-          <b>
+          <div>
              Some years ago I made the decision to take as a friend a woman who is very opinionated.
-          </b>
+          </div>
         </p>
         <p>
-          <b>
+          <div>
             When she does come to social events, she dominates.
-          </b>
+          </div>
         </p>
         <ArticleExtras
           articleHeadline="Some Headline"

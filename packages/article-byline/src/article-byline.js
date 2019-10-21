@@ -17,7 +17,7 @@ const renderAuthorComponent = (
   >
     {children}
   </Text>
-)
+);
 
 const ArticleByline = ({ ast, ...props }) =>
   renderByline(renderAuthorComponent, ast, styles.nonLinkText, props);
