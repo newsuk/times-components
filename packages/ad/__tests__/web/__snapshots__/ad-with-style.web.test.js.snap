@@ -11,7 +11,6 @@ exports[`1. multiple ad slots 1`] = `
 .IS2 {
   align-items: center;
   flex: 1;
-  margin-bottom: 20px;
 }
 
 .IS3 {
@@ -23,7 +22,6 @@ exports[`1. multiple ad slots 1`] = `
 .IS4 {
   align-items: center;
   flex: 1;
-  margin-bottom: 20px;
 }
 
 .IS5 {
@@ -35,7 +33,6 @@ exports[`1. multiple ad slots 1`] = `
 .IS6 {
   align-items: center;
   flex: 1;
-  margin-bottom: 20px;
 }
 </style>
 
@@ -54,7 +51,7 @@ exports[`1. multiple ad slots 1`] = `
         className="IS2"
       >
         <div
-          className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0 r-marginBottom-117bsoe"
+          className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0"
         >
           <DOMContext
             baseUrl="https://www.thetimes.co.uk/"
@@ -83,7 +80,7 @@ exports[`1. multiple ad slots 1`] = `
         className="IS4"
       >
         <div
-          className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0 r-marginBottom-117bsoe"
+          className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0"
         >
           <DOMContext
             baseUrl="https://www.thetimes.co.uk/"
@@ -112,7 +109,7 @@ exports[`1. multiple ad slots 1`] = `
         className="IS6"
       >
         <div
-          className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0 r-marginBottom-117bsoe"
+          className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0"
         >
           <DOMContext
             baseUrl="https://www.thetimes.co.uk/"
@@ -186,7 +183,6 @@ exports[`2. placeholder when isloading 1`] = `
 .IS7 {
   align-items: center;
   flex: 1;
-  margin-bottom: 20px;
 }
 </style>
 
@@ -204,7 +200,7 @@ exports[`2. placeholder when isloading 1`] = `
       className="IS7"
     >
       <div
-        className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0 r-marginBottom-117bsoe"
+        className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0"
       >
         <AdPlaceholder
           className="IS6"
@@ -320,7 +316,6 @@ exports[`3. nothing if there is an error in the loading of scripts 1`] = `
 .IS8 {
   align-items: center;
   flex: 1;
-  margin-bottom: 20px;
 }
 </style>
 
@@ -338,7 +333,7 @@ exports[`3. nothing if there is an error in the loading of scripts 1`] = `
       className="IS8"
     >
       <div
-        className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0 r-marginBottom-117bsoe"
+        className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0"
       >
         <DOMContext
           baseUrl="https://www.thetimes.co.uk/"
