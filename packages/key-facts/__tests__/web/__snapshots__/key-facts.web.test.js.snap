@@ -34,12 +34,12 @@ exports[`1. key facts with title 1`] = `
       <div />
       <div>
         Example text 
-        <span>
+        <b>
           this is bold 
-        </span>
-        <span>
+        </b>
+        <i>
           this is in italics.
-        </span>
+        </i>
       </div>
     </div>
   </div>
@@ -77,12 +77,12 @@ exports[`2. key facts without title 1`] = `
       <div />
       <div>
         Example text 
-        <span>
+        <b>
           this is bold 
-        </span>
-        <span>
+        </b>
+        <i>
           this is in italics.
-        </span>
+        </i>
       </div>
     </div>
   </div>

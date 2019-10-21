@@ -102,16 +102,12 @@ exports[`1. an article list header 1`] = `
       className="css-text-901oao r-color-1khnkhu r-fontFamily-1feecvn r-fontSize-a023e6 r-lineHeight-eaezby r-paddingBottom-19yat4t r-textAlign-q4m81j S1"
     >
       Test 
-      <span
-        className="css-text-901oao css-textHasAncestor-16my406 r-fontStyle-36ujnk"
-      >
+      <i>
         italic 
-      </span>
-      <span
-        className="css-text-901oao css-textHasAncestor-16my406 r-fontWeight-vw2c0b"
-      >
+      </i>
+      <b>
         bold
-      </span>
+      </b>
        text.
     </div>
   </div>

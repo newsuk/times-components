@@ -60,42 +60,32 @@ exports[`tile s huge 1`] = `
   <div
     className="css-text-901oao IS3"
   >
-    <span
-      className="css-text-901oao css-textHasAncestor-16my406"
-    >
+    <p>
       <b>
         Rick Astley
       </b>
       , singer-songwriter, 
-      <span
-        className="css-text-901oao css-textHasAncestor-16my406 r-fontStyle-36ujnk"
-      >
+      <i>
         Never Gonna Give You Up 
-      </span>
+      </i>
       (1987), 53; 
       <b>
         Mike Batt
       </b>
       , composer, songwriter, 
-      <span
-        className="css-text-901oao css-textHasAncestor-16my406 r-fontStyle-36ujnk"
-      >
+      <i>
         Wombling Free 
-      </span>
+      </i>
       (1978), 
-      <span
-        className="css-text-901oao css-textHasAncestor-16my406 r-fontStyle-36ujnk"
-      >
+      <i>
         Bright Eyes 
-      </span>
-    </span>
+      </i>
+    </p>
   </div>
   <div
     className="css-text-901oao IS4"
   >
-    <span
-      className="css-text-901oao css-textHasAncestor-16my406"
-    >
+    <span>
       Libby Purves
     </span>
   </div>
@@ -162,42 +152,32 @@ exports[`tile s medium 1`] = `
   <div
     className="css-text-901oao IS3"
   >
-    <span
-      className="css-text-901oao css-textHasAncestor-16my406"
-    >
+    <p>
       <b>
         Rick Astley
       </b>
       , singer-songwriter, 
-      <span
-        className="css-text-901oao css-textHasAncestor-16my406 r-fontStyle-36ujnk"
-      >
+      <i>
         Never Gonna Give You Up 
-      </span>
+      </i>
       (1987), 53; 
       <b>
         Mike Batt
       </b>
       , composer, songwriter, 
-      <span
-        className="css-text-901oao css-textHasAncestor-16my406 r-fontStyle-36ujnk"
-      >
+      <i>
         Wombling Free 
-      </span>
+      </i>
       (1978), 
-      <span
-        className="css-text-901oao css-textHasAncestor-16my406 r-fontStyle-36ujnk"
-      >
+      <i>
         Bright Eyes 
-      </span>
-    </span>
+      </i>
+    </p>
   </div>
   <div
     className="css-text-901oao IS4"
   >
-    <span
-      className="css-text-901oao css-textHasAncestor-16my406"
-    >
+    <span>
       Libby Purves
     </span>
   </div>
@@ -246,35 +226,27 @@ exports[`tile s no byline 1`] = `
   <div
     className="css-text-901oao IS3"
   >
-    <span
-      className="css-text-901oao css-textHasAncestor-16my406"
-    >
+    <p>
       <b>
         Rick Astley
       </b>
       , singer-songwriter, 
-      <span
-        className="css-text-901oao css-textHasAncestor-16my406 r-fontStyle-36ujnk"
-      >
+      <i>
         Never Gonna Give You Up 
-      </span>
+      </i>
       (1987), 53; 
       <b>
         Mike Batt
       </b>
       , composer, songwriter, 
-      <span
-        className="css-text-901oao css-textHasAncestor-16my406 r-fontStyle-36ujnk"
-      >
+      <i>
         Wombling Free 
-      </span>
+      </i>
       (1978), 
-      <span
-        className="css-text-901oao css-textHasAncestor-16my406 r-fontStyle-36ujnk"
-      >
+      <i>
         Bright Eyes 
-      </span>
-    </span>
+      </i>
+    </p>
   </div>
 </div>
 `;
@@ -328,42 +300,32 @@ exports[`tile s small 1`] = `
   <div
     className="css-text-901oao IS3"
   >
-    <span
-      className="css-text-901oao css-textHasAncestor-16my406"
-    >
+    <p>
       <b>
         Rick Astley
       </b>
       , singer-songwriter, 
-      <span
-        className="css-text-901oao css-textHasAncestor-16my406 r-fontStyle-36ujnk"
-      >
+      <i>
         Never Gonna Give You Up 
-      </span>
+      </i>
       (1987), 53; 
       <b>
         Mike Batt
       </b>
       , composer, songwriter, 
-      <span
-        className="css-text-901oao css-textHasAncestor-16my406 r-fontStyle-36ujnk"
-      >
+      <i>
         Wombling Free 
-      </span>
+      </i>
       (1978), 
-      <span
-        className="css-text-901oao css-textHasAncestor-16my406 r-fontStyle-36ujnk"
-      >
+      <i>
         Bright Eyes 
-      </span>
-    </span>
+      </i>
+    </p>
   </div>
   <div
     className="css-text-901oao IS4"
   >
-    <span
-      className="css-text-901oao css-textHasAncestor-16my406"
-    >
+    <span>
       Libby Purves
     </span>
   </div>
@@ -430,42 +392,32 @@ exports[`tile s wide 1`] = `
   <div
     className="css-text-901oao IS3"
   >
-    <span
-      className="css-text-901oao css-textHasAncestor-16my406"
-    >
+    <p>
       <b>
         Rick Astley
       </b>
       , singer-songwriter, 
-      <span
-        className="css-text-901oao css-textHasAncestor-16my406 r-fontStyle-36ujnk"
-      >
+      <i>
         Never Gonna Give You Up 
-      </span>
+      </i>
       (1987), 53; 
       <b>
         Mike Batt
       </b>
       , composer, songwriter, 
-      <span
-        className="css-text-901oao css-textHasAncestor-16my406 r-fontStyle-36ujnk"
-      >
+      <i>
         Wombling Free 
-      </span>
+      </i>
       (1978), 
-      <span
-        className="css-text-901oao css-textHasAncestor-16my406 r-fontStyle-36ujnk"
-      >
+      <i>
         Bright Eyes 
-      </span>
-    </span>
+      </i>
+    </p>
   </div>
   <div
     className="css-text-901oao IS4"
   >
-    <span
-      className="css-text-901oao css-textHasAncestor-16my406"
-    >
+    <span>
       Libby Purves
     </span>
   </div>
@@ -533,42 +485,32 @@ exports[`tile s with logo for medium breakpoint 1`] = `
   <div
     className="css-text-901oao IS3"
   >
-    <span
-      className="css-text-901oao css-textHasAncestor-16my406"
-    >
+    <p>
       <b>
         Rick Astley
       </b>
       , singer-songwriter, 
-      <span
-        className="css-text-901oao css-textHasAncestor-16my406 r-fontStyle-36ujnk"
-      >
+      <i>
         Never Gonna Give You Up 
-      </span>
+      </i>
       (1987), 53; 
       <b>
         Mike Batt
       </b>
       , composer, songwriter, 
-      <span
-        className="css-text-901oao css-textHasAncestor-16my406 r-fontStyle-36ujnk"
-      >
+      <i>
         Wombling Free 
-      </span>
+      </i>
       (1978), 
-      <span
-        className="css-text-901oao css-textHasAncestor-16my406 r-fontStyle-36ujnk"
-      >
+      <i>
         Bright Eyes 
-      </span>
-    </span>
+      </i>
+    </p>
   </div>
   <div
     className="css-text-901oao IS4"
   >
-    <span
-      className="css-text-901oao css-textHasAncestor-16my406"
-    >
+    <span>
       Libby Purves
     </span>
   </div>
