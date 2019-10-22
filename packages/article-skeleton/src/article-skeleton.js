@@ -58,7 +58,7 @@ const ArticleSkeleton = props => {
 
   const { id, url, content } = data;
 
-  if (!content || !content.length) {
+  if (!content) {
     return null;
   }
 
