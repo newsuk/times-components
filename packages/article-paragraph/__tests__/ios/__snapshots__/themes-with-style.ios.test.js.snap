@@ -4,7 +4,6 @@ exports[`1. paragraph with a drop cap in culture magazine 1`] = `
 <View
   style={
     Object {
-      "height": undefined,
       "marginBottom": 20,
       "paddingLeft": 10,
       "paddingRight": 10,
@@ -21,7 +20,6 @@ exports[`2. paragraph with a drop cap in style magazine 1`] = `
 <View
   style={
     Object {
-      "height": undefined,
       "marginBottom": 20,
       "paddingLeft": 10,
       "paddingRight": 10,
@@ -38,7 +36,6 @@ exports[`3. paragraph with a drop cap in the sunday times magazine 1`] = `
 <View
   style={
     Object {
-      "height": undefined,
       "marginBottom": 20,
       "paddingLeft": 10,
       "paddingRight": 10,
