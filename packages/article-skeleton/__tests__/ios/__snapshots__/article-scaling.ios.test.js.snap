@@ -36,7 +36,6 @@ exports[`1. scaled medium full article 1`] = `
           <View
             style={
               Object {
-                "height": undefined,
                 "marginBottom": 20,
                 "paddingLeft": 10,
                 "paddingRight": 10,
@@ -119,7 +118,6 @@ exports[`2. scaled large full article 1`] = `
           <View
             style={
               Object {
-                "height": undefined,
                 "marginBottom": 20,
                 "paddingLeft": 10,
                 "paddingRight": 10,
@@ -202,7 +200,6 @@ exports[`3. scaled xlarge full article 1`] = `
           <View
             style={
               Object {
-                "height": undefined,
                 "marginBottom": 20,
                 "paddingLeft": 10,
                 "paddingRight": 10,
