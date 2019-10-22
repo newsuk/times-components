@@ -8,8 +8,7 @@ import {
   minimalNativeTransform,
   print
 } from "@times-components/jest-serializer";
-import { Dimensions } from "react-native";
-import { tabletWidth } from "@times-components/styleguide";
+import { setIsTablet } from "./mocks.native";
 import ArticleMainStandard from "../src/article-main-standard";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
@@ -155,12 +154,7 @@ export default () => {
   });
 
   it("full article with style on tablet", () => {
-    Dimensions.set({
-      window: {
-        width: tabletWidth,
-        height: 640
-      }
-    });
+    setIsTablet(true);
 
     const article = articleFixture({
       ...testFixture,
@@ -183,25 +177,24 @@ export default () => {
               attributes: {
                 value: "Some content"
               },
+              children: [],
+              name: "text"
+            },
+            {
+              attributes: {
+                href: "https://link.io",
+                target: "_blank"
+              },
               children: [
                 {
                   attributes: {
-                    href: "https://link.io",
-                    target: "_blank"
+                    value: "Some Link"
                   },
-                  children: [
-                    {
-                      attributes: {
-                        value: "Some Link"
-                      },
-                      children: [],
-                      name: "text"
-                    }
-                  ],
-                  name: "link"
+                  children: [],
+                  name: "text"
                 }
               ],
-              name: "text"
+              name: "link"
             }
           ],
           name: "paragraph"

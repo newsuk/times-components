@@ -1,5 +1,4 @@
 import React from "react";
-import { Dimensions } from "react-native";
 import TestRenderer from "react-test-renderer";
 import { ContextProviderWithDefaults } from "@times-components/context";
 import {
@@ -10,7 +9,8 @@ import {
   minimalNativeTransform,
   print
 } from "@times-components/jest-serializer";
-import { scales, tabletWidth } from "@times-components/styleguide";
+import { scales } from "@times-components/styleguide";
+import { setIsTablet } from "@times-components/mocks/dimensions";
 import KeyFacts from "../src/key-facts";
 import dataWithTitle from "../fixtures/key-facts-test.json";
 import dataWithoutTitle from "../fixtures/key-facts-no-title-test.json";
@@ -35,12 +35,7 @@ export default () => {
   });
 
   it("key facts with title on tablet", () => {
-    Dimensions.set({
-      window: {
-        width: tabletWidth,
-        height: 640
-      }
-    });
+    setIsTablet(true);
     const testInstance = TestRenderer.create(
       <KeyFacts ast={dataWithTitle} onLinkPress={() => {}} />
     );
@@ -57,12 +52,7 @@ export default () => {
   });
 
   it("key facts without title on tablet", () => {
-    Dimensions.set({
-      window: {
-        width: tabletWidth,
-        height: 640
-      }
-    });
+    setIsTablet(true);
     const testInstance = TestRenderer.create(
       <KeyFacts ast={dataWithoutTitle} onLinkPress={() => {}} />
     );

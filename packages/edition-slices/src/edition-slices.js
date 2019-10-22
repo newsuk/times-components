@@ -1,4 +1,4 @@
-import { Dimensions } from "react-native";
+import { getDimensions } from "@times-components/utils";
 import { tabletWidth } from "@times-components/styleguide";
 import {
   CommentLeadAndCartoonSlice,
@@ -19,7 +19,7 @@ import {
   PuzzleSlice
 } from "./slices";
 
-const { width } = Dimensions.get("window");
+const { width } = getDimensions();
 const isTablet = width > tabletWidth;
 const SecondaryTwoAndTwoMapper = isTablet
   ? SecondaryTwoNoPicAndTwoSlice

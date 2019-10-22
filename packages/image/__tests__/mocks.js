@@ -1,5 +1,10 @@
 // eslint-disable-next-line import/prefer-default-export
+export { setIsTablet, setDimension } from "@times-components/mocks/dimensions";
 export { default as Gestures } from "@times-components/gestures";
+
+jest.mock("NativeAnimatedHelper", () => "NativeAnimatedHelper", {
+  virtual: true
+});
 
 jest.mock("../src/safeAreaView", () => "SafeAreaView");
 

@@ -9,8 +9,8 @@ import {
   minimalNativeTransform,
   print
 } from "@times-components/jest-serializer";
-import { themeFactory, tabletWidth } from "@times-components/styleguide";
-import { Dimensions } from "react-native";
+import { themeFactory } from "@times-components/styleguide";
+import { setIsTablet } from "./mocks.native";
 import ArticleMagazineStandard from "../src/article-magazine-standard";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import sharedProps from "./shared-props";
@@ -36,25 +36,24 @@ const article = articleFixture({
           attributes: {
             value: "Some content"
           },
+          children: [],
+          name: "text"
+        },
+        {
+          attributes: {
+            href: "https://link.io",
+            target: "_blank"
+          },
           children: [
             {
               attributes: {
-                href: "https://link.io",
-                target: "_blank"
+                value: "Some Link"
               },
-              children: [
-                {
-                  attributes: {
-                    value: "Some Link"
-                  },
-                  children: [],
-                  name: "text"
-                }
-              ],
-              name: "link"
+              children: [],
+              name: "text"
             }
           ],
-          name: "text"
+          name: "link"
         }
       ],
       name: "paragraph"
@@ -150,12 +149,7 @@ export default () => {
   });
 
   it("tablet full article with style", () => {
-    Dimensions.set({
-      window: {
-        width: tabletWidth,
-        height: 640
-      }
-    });
+    setIsTablet(true);
     const testRenderer = TestRenderer.create(
       <ArticleMagazineStandard {...sharedProps} article={article} />
     );

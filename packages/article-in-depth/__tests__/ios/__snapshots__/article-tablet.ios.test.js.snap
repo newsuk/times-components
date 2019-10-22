@@ -6,7 +6,9 @@ exports[`1. article in depth - tablet 1`] = `
     style={
       Object {
         "alignItems": "center",
+        "alignSelf": "center",
         "backgroundColor": "rgba(60, 129, 190, 1)",
+        "maxWidth": 1194,
         "paddingBottom": 45,
         "paddingHorizontal": 20,
         "paddingTop": 45,
@@ -18,6 +20,7 @@ exports[`1. article in depth - tablet 1`] = `
       style={
         Object {
           "alignItems": "center",
+          "width": 660,
         }
       }
     >
@@ -35,8 +38,8 @@ exports[`1. article in depth - tablet 1`] = `
           Object {
             "color": "rgba(255, 255, 255, 1)",
             "fontFamily": "TimesModern-Bold",
-            "fontSize": 30,
-            "lineHeight": 36,
+            "fontSize": 40,
+            "lineHeight": 40,
             "marginBottom": 10,
             "textAlign": "center",
           }
@@ -74,7 +77,10 @@ exports[`1. article in depth - tablet 1`] = `
   <View
     style={
       Object {
+        "alignSelf": "center",
         "marginBottom": 0,
+        "maxWidth": 1194,
+        "width": "100%",
       }
     }
   >
@@ -84,6 +90,7 @@ exports[`1. article in depth - tablet 1`] = `
     style={
       Object {
         "alignItems": "center",
+        "alignSelf": "center",
         "borderBottomColor": "#DBDBDB",
         "borderBottomWidth": 1,
         "borderTopColor": "#DBDBDB",
@@ -93,10 +100,20 @@ exports[`1. article in depth - tablet 1`] = `
         "marginTop": 20,
         "paddingBottom": 10,
         "paddingTop": 10,
+        "width": 660,
       }
     }
   >
-    <View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "width": "100%",
+        }
+      }
+    >
       <View
         style={
           Object {
@@ -108,6 +125,17 @@ exports[`1. article in depth - tablet 1`] = `
       >
         <ArticleBylineWithLinks />
       </View>
+      <View
+        style={
+          Object {
+            "borderRightColor": "#DBDBDB",
+            "borderRightWidth": 1,
+            "height": 15,
+            "marginRight": 10,
+            "paddingLeft": 10,
+          }
+        }
+      />
       <View
         style={
           Object {
@@ -124,7 +152,7 @@ exports[`1. article in depth - tablet 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
               "lineHeight": 15,
-              "marginTop": 5,
+              "marginTop": 0,
             }
           }
         >

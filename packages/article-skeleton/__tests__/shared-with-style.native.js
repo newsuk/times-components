@@ -11,8 +11,7 @@ import {
 } from "@times-components/jest-serializer";
 import "./mocks.native";
 import Responsive from "@times-components/responsive";
-import { Dimensions } from "react-native";
-import { tabletWidth } from "@times-components/styleguide";
+import { setIsTablet } from "@times-components/mocks/dimensions";
 import { FontStorage } from "@times-components/typeset";
 import articleFixture from "../fixtures/full-article";
 import shared, { renderArticle, fixtureArgs } from "./shared.base";
@@ -49,12 +48,7 @@ export default () => {
     {
       name: "an Article Skeleton with responsive items",
       test() {
-        Dimensions.set({
-          window: {
-            width: tabletWidth,
-            height: 640
-          }
-        });
+        setIsTablet(true);
 
         const article = articleFixture({ ...fixtureArgs });
         const testInstance = TestRenderer.create(

@@ -28,6 +28,9 @@ import ArticleLink from "./article-link";
 
 const makeDropCap = (scale, color, dropCapFont, paragraph) => {
   const letter = paragraph.slice(0, 1);
+  if (!letter.attributes.length) {
+    return false;
+  }
   const baseStyle = letter.attributes[0].tag.settings;
   const fontSize = baseStyle.fontSize * 6.6;
   const fontSettings = {
@@ -133,7 +136,7 @@ const Paragraph = ({
 
   const container = new TextContainer(
     isTablet ? contentWidth : screenWidth() - spacing(4),
-    1000,
+    10000,
     0,
     0,
     dropCap ? [dropCap.exclusion] : []

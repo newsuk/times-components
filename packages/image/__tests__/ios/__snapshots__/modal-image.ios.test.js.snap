@@ -700,7 +700,7 @@ exports[`10. re-shows elements when tapping on the image a second time 1`] = `
         height={140}
         pointerEvents="none"
         startPoint="0.35714285714285715"
-        width={1200}
+        width={750}
       >
         <SafeAreaView
           forceInset={

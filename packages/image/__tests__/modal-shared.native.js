@@ -1,5 +1,5 @@
 import React from "react";
-import { Modal, Text, View, Dimensions } from "react-native";
+import { Modal, Text, View } from "react-native";
 import TestRenderer from "react-test-renderer";
 import Link from "@times-components/link";
 import {
@@ -12,7 +12,7 @@ import {
 } from "@times-components/jest-serializer";
 import { hash, iterator } from "@times-components/test-utils";
 import Responsive from "@times-components/responsive";
-import { Gestures } from "./mocks";
+import { Gestures, setDimension } from "./mocks";
 import Image, { ModalImage } from "../src";
 
 // eslint-disable-next-line react/prop-types
@@ -101,14 +101,14 @@ export default () => {
     {
       name: "modal image uses screen width to set highResSize",
       test: () => {
-        const width = 1200;
+        const width = 750;
         const testInstance = TestRenderer.create(
           <Responsive>
             <ModalImage {...props} />
           </Responsive>
         );
 
-        Dimensions.set({ window: { width, height: width / 2 } });
+        setDimension({ width, height: width / 2 });
 
         const modalImage = testInstance.root.findAllByType(Image)[0];
 

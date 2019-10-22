@@ -8,8 +8,7 @@ import {
   minimalNativeTransform,
   print
 } from "@times-components/jest-serializer";
-import { Dimensions } from "react-native";
-import { tabletWidth } from "@times-components/styleguide";
+import { setIsTablet } from "./mocks.native";
 import ArticleMainComment from "../src/article-main-comment";
 import articleFixture, { testFixture } from "../fixtures/full-article";
 import sharedProps from "./shared-props";
@@ -144,12 +143,7 @@ export default () => {
   });
 
   it("tablet full article with style", () => {
-    Dimensions.set({
-      window: {
-        width: tabletWidth,
-        height: 640
-      }
-    });
+    setIsTablet(true);
     const article = articleFixture({
       ...testFixture,
       author: {

@@ -473,7 +473,7 @@ exports[`should render secondary 2 and 2 for mobile (small breakpoint) 1`] = `
 <RCTScrollView>
   <View>
     <View>
-      <SecondaryTwoNoPicAndTwo />
+      <SecondaryTwoAndTwo />
       <View>
         <View
           style={

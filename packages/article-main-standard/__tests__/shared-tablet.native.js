@@ -11,8 +11,7 @@ import {
 import "./mocks.native";
 import Responsive from "@times-components/responsive";
 import { iterator } from "@times-components/test-utils";
-import { Dimensions } from "react-native";
-import { tabletWidth } from "@times-components/styleguide";
+import { setIsTablet } from "@times-components/mocks/dimensions";
 
 import ArticleMainStandard from "../src/article-main-standard";
 import articleProps from "./shared-article-props";
@@ -33,12 +32,7 @@ export default () => {
     {
       name: "Article Main Standard - Tablet",
       test() {
-        Dimensions.set({
-          window: {
-            width: tabletWidth,
-            height: 640
-          }
-        });
+        setIsTablet(true);
 
         const testInstance = TestRenderer.create(
           <Responsive>

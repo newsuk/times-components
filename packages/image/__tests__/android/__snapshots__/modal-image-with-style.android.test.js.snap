@@ -14,15 +14,11 @@ exports[`1. landscape default modal 1`] = `
         }
       }
     >
-      <View
+      <SafeAreaView
         style={
           Object {
             "backgroundColor": "#000000",
             "flex": 0,
-            "paddingBottom": 0,
-            "paddingLeft": 0,
-            "paddingRight": 0,
-            "paddingTop": 0,
           }
         }
       />
@@ -57,16 +53,12 @@ exports[`1. landscape default modal 1`] = `
           />
         </View>
       </View>
-      <View
+      <SafeAreaView
         style={
           Object {
             "bottom": 0,
             "height": "100%",
             "left": 0,
-            "paddingBottom": 0,
-            "paddingLeft": 0,
-            "paddingRight": 0,
-            "paddingTop": 0,
             "position": "absolute",
             "right": 0,
             "top": 0,
@@ -75,7 +67,7 @@ exports[`1. landscape default modal 1`] = `
           }
         }
       >
-        <View
+        <Gestures
           style={
             Object {
               "height": "100%",
@@ -86,52 +78,51 @@ exports[`1. landscape default modal 1`] = `
           <View
             style={
               Object {
-                "flexGrow": 1,
-                "transform": Array [
-                  Object {
-                    "translateX": -0,
-                  },
-                  Object {
-                    "translateY": -0,
-                  },
-                  Object {
-                    "translateX": 0,
-                  },
-                  Object {
-                    "translateY": 0,
-                  },
-                  Object {
-                    "scale": 1,
-                  },
-                  Object {
-                    "translateX": -0,
-                  },
-                  Object {
-                    "translateY": -0,
-                  },
-                  Object {
-                    "translateX": 0,
-                  },
-                  Object {
-                    "translateY": 0,
-                  },
-                  Object {
-                    "rotate": "0 deg",
-                  },
-                  Object {
-                    "perspective": 1000,
-                  },
-                ],
+                "alignItems": "center",
+                "height": "100%",
+                "justifyContent": "center",
+                "position": "absolute",
+                "width": "100%",
               }
             }
           >
             <View
               style={
                 Object {
-                  "alignItems": "center",
+                  "borderRadius": 0,
                   "height": "100%",
-                  "justifyContent": "center",
+                  "overflow": "hidden",
                   "position": "absolute",
+                  "width": "100%",
+                }
+              }
+            >
+              <Image
+                style={
+                  Object {
+                    "height": "100%",
+                    "position": "absolute",
+                    "resizeMode": "contain",
+                    "width": "100%",
+                  }
+                }
+              />
+              <Image
+                style={
+                  Object {
+                    "height": "100%",
+                    "position": "absolute",
+                    "resizeMode": "contain",
+                    "width": "100%",
+                  }
+                }
+              />
+            </View>
+            <View
+              style={
+                Object {
+                  "height": "100%",
+                  "opacity": 1,
                   "width": "100%",
                 }
               }
@@ -139,66 +130,24 @@ exports[`1. landscape default modal 1`] = `
               <View
                 style={
                   Object {
-                    "borderRadius": 0,
-                    "height": "100%",
-                    "overflow": "hidden",
-                    "position": "absolute",
-                    "width": "100%",
+                    "alignItems": "center",
+                    "backgroundColor": "#EDEDED",
+                    "justifyContent": "center",
                   }
                 }
               >
                 <Image
                   style={
                     Object {
-                      "height": "100%",
-                      "position": "absolute",
-                      "resizeMode": "contain",
-                      "width": "100%",
+                      "width": "25%",
                     }
                   }
                 />
-                <Image
-                  style={
-                    Object {
-                      "height": "100%",
-                      "position": "absolute",
-                      "resizeMode": "contain",
-                      "width": "100%",
-                    }
-                  }
-                />
-              </View>
-              <View
-                style={
-                  Object {
-                    "height": "100%",
-                    "opacity": 1,
-                    "width": "100%",
-                  }
-                }
-              >
-                <View
-                  style={
-                    Object {
-                      "alignItems": "center",
-                      "backgroundColor": "#EDEDED",
-                      "justifyContent": "center",
-                    }
-                  }
-                >
-                  <Image
-                    style={
-                      Object {
-                        "width": "25%",
-                      }
-                    }
-                  />
-                </View>
               </View>
             </View>
           </View>
-        </View>
-      </View>
+        </Gestures>
+      </SafeAreaView>
       <View
         style={
           Object {
@@ -321,15 +270,11 @@ exports[`2. portrait default modal 1`] = `
         }
       }
     >
-      <View
+      <SafeAreaView
         style={
           Object {
             "backgroundColor": "#000000",
             "flex": 0,
-            "paddingBottom": 0,
-            "paddingLeft": 0,
-            "paddingRight": 0,
-            "paddingTop": 0,
           }
         }
       />
@@ -364,16 +309,12 @@ exports[`2. portrait default modal 1`] = `
           />
         </View>
       </View>
-      <View
+      <SafeAreaView
         style={
           Object {
             "bottom": 0,
             "height": "100%",
             "left": 0,
-            "paddingBottom": 0,
-            "paddingLeft": 0,
-            "paddingRight": 0,
-            "paddingTop": 0,
             "position": "absolute",
             "right": 0,
             "top": 0,
@@ -382,7 +323,7 @@ exports[`2. portrait default modal 1`] = `
           }
         }
       >
-        <View
+        <Gestures
           style={
             Object {
               "height": "100%",
@@ -393,52 +334,51 @@ exports[`2. portrait default modal 1`] = `
           <View
             style={
               Object {
-                "flexGrow": 1,
-                "transform": Array [
-                  Object {
-                    "translateX": -0,
-                  },
-                  Object {
-                    "translateY": -0,
-                  },
-                  Object {
-                    "translateX": 0,
-                  },
-                  Object {
-                    "translateY": 0,
-                  },
-                  Object {
-                    "scale": 1,
-                  },
-                  Object {
-                    "translateX": -0,
-                  },
-                  Object {
-                    "translateY": -0,
-                  },
-                  Object {
-                    "translateX": 0,
-                  },
-                  Object {
-                    "translateY": 0,
-                  },
-                  Object {
-                    "rotate": "0 deg",
-                  },
-                  Object {
-                    "perspective": 1000,
-                  },
-                ],
+                "alignItems": "center",
+                "height": "100%",
+                "justifyContent": "center",
+                "position": "absolute",
+                "width": "100%",
               }
             }
           >
             <View
               style={
                 Object {
-                  "alignItems": "center",
+                  "borderRadius": 0,
                   "height": "100%",
-                  "justifyContent": "center",
+                  "overflow": "hidden",
                   "position": "absolute",
+                  "width": "100%",
+                }
+              }
+            >
+              <Image
+                style={
+                  Object {
+                    "height": "100%",
+                    "position": "absolute",
+                    "resizeMode": "contain",
+                    "width": "100%",
+                  }
+                }
+              />
+              <Image
+                style={
+                  Object {
+                    "height": "100%",
+                    "position": "absolute",
+                    "resizeMode": "contain",
+                    "width": "100%",
+                  }
+                }
+              />
+            </View>
+            <View
+              style={
+                Object {
+                  "height": "100%",
+                  "opacity": 1,
                   "width": "100%",
                 }
               }
@@ -446,66 +386,24 @@ exports[`2. portrait default modal 1`] = `
               <View
                 style={
                   Object {
-                    "borderRadius": 0,
-                    "height": "100%",
-                    "overflow": "hidden",
-                    "position": "absolute",
-                    "width": "100%",
+                    "alignItems": "center",
+                    "backgroundColor": "#EDEDED",
+                    "justifyContent": "center",
                   }
                 }
               >
                 <Image
                   style={
                     Object {
-                      "height": "100%",
-                      "position": "absolute",
-                      "resizeMode": "contain",
-                      "width": "100%",
+                      "width": "25%",
                     }
                   }
                 />
-                <Image
-                  style={
-                    Object {
-                      "height": "100%",
-                      "position": "absolute",
-                      "resizeMode": "contain",
-                      "width": "100%",
-                    }
-                  }
-                />
-              </View>
-              <View
-                style={
-                  Object {
-                    "height": "100%",
-                    "opacity": 1,
-                    "width": "100%",
-                  }
-                }
-              >
-                <View
-                  style={
-                    Object {
-                      "alignItems": "center",
-                      "backgroundColor": "#EDEDED",
-                      "justifyContent": "center",
-                    }
-                  }
-                >
-                  <Image
-                    style={
-                      Object {
-                        "width": "25%",
-                      }
-                    }
-                  />
-                </View>
               </View>
             </View>
           </View>
-        </View>
-      </View>
+        </Gestures>
+      </SafeAreaView>
       <View
         style={
           Object {
@@ -628,22 +526,18 @@ exports[`3. tablet landscape default modal 1`] = `
         }
       }
     >
-      <View
+      <SafeAreaView
         style={
           Object {
             "backgroundColor": "#000000",
             "flex": 0,
-            "paddingBottom": 0,
-            "paddingLeft": 0,
-            "paddingRight": 0,
-            "paddingTop": 0,
           }
         }
       />
       <View
         style={
           Object {
-            "padding": 15,
+            "padding": 20,
             "position": "relative",
             "zIndex": 2,
           }
@@ -654,10 +548,10 @@ exports[`3. tablet landscape default modal 1`] = `
             Object {
               "alignItems": "center",
               "backgroundColor": "rgba(0, 0, 0, 0.5)",
-              "borderRadius": 25,
-              "height": 25,
+              "borderRadius": 30,
+              "height": 30,
               "justifyContent": "center",
-              "width": 25,
+              "width": 30,
             }
           }
         >
@@ -671,16 +565,12 @@ exports[`3. tablet landscape default modal 1`] = `
           />
         </View>
       </View>
-      <View
+      <SafeAreaView
         style={
           Object {
             "bottom": 0,
             "height": "100%",
             "left": 0,
-            "paddingBottom": 0,
-            "paddingLeft": 0,
-            "paddingRight": 0,
-            "paddingTop": 0,
             "position": "absolute",
             "right": 0,
             "top": 0,
@@ -689,7 +579,7 @@ exports[`3. tablet landscape default modal 1`] = `
           }
         }
       >
-        <View
+        <Gestures
           style={
             Object {
               "height": "100%",
@@ -700,52 +590,51 @@ exports[`3. tablet landscape default modal 1`] = `
           <View
             style={
               Object {
-                "flexGrow": 1,
-                "transform": Array [
-                  Object {
-                    "translateX": -0,
-                  },
-                  Object {
-                    "translateY": -0,
-                  },
-                  Object {
-                    "translateX": 0,
-                  },
-                  Object {
-                    "translateY": 0,
-                  },
-                  Object {
-                    "scale": 1,
-                  },
-                  Object {
-                    "translateX": -0,
-                  },
-                  Object {
-                    "translateY": -0,
-                  },
-                  Object {
-                    "translateX": 0,
-                  },
-                  Object {
-                    "translateY": 0,
-                  },
-                  Object {
-                    "rotate": "0 deg",
-                  },
-                  Object {
-                    "perspective": 1000,
-                  },
-                ],
+                "alignItems": "center",
+                "height": "100%",
+                "justifyContent": "center",
+                "position": "absolute",
+                "width": "100%",
               }
             }
           >
             <View
               style={
                 Object {
-                  "alignItems": "center",
+                  "borderRadius": 0,
                   "height": "100%",
-                  "justifyContent": "center",
+                  "overflow": "hidden",
                   "position": "absolute",
+                  "width": "100%",
+                }
+              }
+            >
+              <Image
+                style={
+                  Object {
+                    "height": "100%",
+                    "position": "absolute",
+                    "resizeMode": "contain",
+                    "width": "100%",
+                  }
+                }
+              />
+              <Image
+                style={
+                  Object {
+                    "height": "100%",
+                    "position": "absolute",
+                    "resizeMode": "contain",
+                    "width": "100%",
+                  }
+                }
+              />
+            </View>
+            <View
+              style={
+                Object {
+                  "height": "100%",
+                  "opacity": 1,
                   "width": "100%",
                 }
               }
@@ -771,53 +660,11 @@ exports[`3. tablet landscape default modal 1`] = `
                     }
                   }
                 />
-                <Image
-                  style={
-                    Object {
-                      "height": "100%",
-                      "position": "absolute",
-                      "resizeMode": "contain",
-                      "width": "100%",
-                    }
-                  }
-                />
-              </View>
-              <View
-                style={
-                  Object {
-                    "height": "100%",
-                    "opacity": 1,
-                    "width": "100%",
-                  }
-                }
-              >
-                <View
-                  style={
-                    Object {
-                      "borderRadius": 0,
-                      "height": "100%",
-                      "overflow": "hidden",
-                      "position": "absolute",
-                      "width": "100%",
-                    }
-                  }
-                >
-                  <Image
-                    style={
-                      Object {
-                        "height": "100%",
-                        "position": "absolute",
-                        "resizeMode": "contain",
-                        "width": "100%",
-                      }
-                    }
-                  />
-                </View>
               </View>
             </View>
           </View>
-        </View>
-      </View>
+        </Gestures>
+      </SafeAreaView>
       <View
         style={
           Object {
@@ -833,7 +680,7 @@ exports[`3. tablet landscape default modal 1`] = `
         <View
           style={
             Object {
-              "margin": 15,
+              "margin": 20,
             }
           }
         >
@@ -945,22 +792,18 @@ exports[`4. tablet portrait default modal 1`] = `
         }
       }
     >
-      <View
+      <SafeAreaView
         style={
           Object {
             "backgroundColor": "#000000",
             "flex": 0,
-            "paddingBottom": 0,
-            "paddingLeft": 0,
-            "paddingRight": 0,
-            "paddingTop": 0,
           }
         }
       />
       <View
         style={
           Object {
-            "padding": 15,
+            "padding": 20,
             "position": "relative",
             "zIndex": 2,
           }
@@ -971,10 +814,10 @@ exports[`4. tablet portrait default modal 1`] = `
             Object {
               "alignItems": "center",
               "backgroundColor": "rgba(0, 0, 0, 0.5)",
-              "borderRadius": 25,
-              "height": 25,
+              "borderRadius": 30,
+              "height": 30,
               "justifyContent": "center",
-              "width": 25,
+              "width": 30,
             }
           }
         >
@@ -988,16 +831,12 @@ exports[`4. tablet portrait default modal 1`] = `
           />
         </View>
       </View>
-      <View
+      <SafeAreaView
         style={
           Object {
             "bottom": 0,
             "height": "100%",
             "left": 0,
-            "paddingBottom": 0,
-            "paddingLeft": 0,
-            "paddingRight": 0,
-            "paddingTop": 0,
             "position": "absolute",
             "right": 0,
             "top": 0,
@@ -1006,7 +845,7 @@ exports[`4. tablet portrait default modal 1`] = `
           }
         }
       >
-        <View
+        <Gestures
           style={
             Object {
               "height": "100%",
@@ -1017,52 +856,51 @@ exports[`4. tablet portrait default modal 1`] = `
           <View
             style={
               Object {
-                "flexGrow": 1,
-                "transform": Array [
-                  Object {
-                    "translateX": -0,
-                  },
-                  Object {
-                    "translateY": -0,
-                  },
-                  Object {
-                    "translateX": 0,
-                  },
-                  Object {
-                    "translateY": 0,
-                  },
-                  Object {
-                    "scale": 1,
-                  },
-                  Object {
-                    "translateX": -0,
-                  },
-                  Object {
-                    "translateY": -0,
-                  },
-                  Object {
-                    "translateX": 0,
-                  },
-                  Object {
-                    "translateY": 0,
-                  },
-                  Object {
-                    "rotate": "0 deg",
-                  },
-                  Object {
-                    "perspective": 1000,
-                  },
-                ],
+                "alignItems": "center",
+                "height": "100%",
+                "justifyContent": "center",
+                "position": "absolute",
+                "width": "100%",
               }
             }
           >
             <View
               style={
                 Object {
-                  "alignItems": "center",
+                  "borderRadius": 0,
                   "height": "100%",
-                  "justifyContent": "center",
+                  "overflow": "hidden",
                   "position": "absolute",
+                  "width": "100%",
+                }
+              }
+            >
+              <Image
+                style={
+                  Object {
+                    "height": "100%",
+                    "position": "absolute",
+                    "resizeMode": "contain",
+                    "width": "100%",
+                  }
+                }
+              />
+              <Image
+                style={
+                  Object {
+                    "height": "100%",
+                    "position": "absolute",
+                    "resizeMode": "contain",
+                    "width": "100%",
+                  }
+                }
+              />
+            </View>
+            <View
+              style={
+                Object {
+                  "height": "100%",
+                  "opacity": 1,
                   "width": "100%",
                 }
               }
@@ -1088,53 +926,11 @@ exports[`4. tablet portrait default modal 1`] = `
                     }
                   }
                 />
-                <Image
-                  style={
-                    Object {
-                      "height": "100%",
-                      "position": "absolute",
-                      "resizeMode": "contain",
-                      "width": "100%",
-                    }
-                  }
-                />
-              </View>
-              <View
-                style={
-                  Object {
-                    "height": "100%",
-                    "opacity": 1,
-                    "width": "100%",
-                  }
-                }
-              >
-                <View
-                  style={
-                    Object {
-                      "borderRadius": 0,
-                      "height": "100%",
-                      "overflow": "hidden",
-                      "position": "absolute",
-                      "width": "100%",
-                    }
-                  }
-                >
-                  <Image
-                    style={
-                      Object {
-                        "height": "100%",
-                        "position": "absolute",
-                        "resizeMode": "contain",
-                        "width": "100%",
-                      }
-                    }
-                  />
-                </View>
               </View>
             </View>
           </View>
-        </View>
-      </View>
+        </Gestures>
+      </SafeAreaView>
       <View
         style={
           Object {
@@ -1150,7 +946,7 @@ exports[`4. tablet portrait default modal 1`] = `
         <View
           style={
             Object {
-              "margin": 15,
+              "margin": 20,
             }
           }
         >
