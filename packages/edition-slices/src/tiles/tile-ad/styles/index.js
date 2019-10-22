@@ -1,7 +1,8 @@
 import {
   fonts,
   spacing,
-  editionBreakpoints
+  editionBreakpoints,
+  globalSpacingStyles
 } from "@times-components/styleguide";
 
 const fontSizeResolver = {
@@ -17,12 +18,15 @@ export default breakpoint => ({
     padding: spacing(2)
   },
   headline: {
+    ...globalSpacingStyles.tabletHeadline,
     fontFamily: fonts.headline,
     fontSize: fontSizeResolver[breakpoint],
-    lineHeight: fontSizeResolver[breakpoint],
-    marginBottom: spacing(1)
+    lineHeight: fontSizeResolver[breakpoint]
   },
   summaryContainer: {
     width: "100%"
+  },
+  summary: {
+    ...globalSpacingStyles.tabletTeaser
   }
 });

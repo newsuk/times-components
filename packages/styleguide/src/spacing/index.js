@@ -1,12 +1,4 @@
-import spacing from "./base";
+import spacing, { globalSpacingStyles } from "./base";
 
-export const globalSpacingStyles = {
-    tabletHeadline: {
-        marginBottom: 0
-    },
-    tabletTeaser: {
-        marginTop: spacing(2)
-    }
-};
-
+export { globalSpacingStyles };
 export default spacing;

@@ -24,6 +24,7 @@ const TileX = ({ onPress, tile, breakpoint = editionBreakpoints.medium }) => {
             strapline={getTileStrapline(tile)}
             straplineStyle={styles.strapline}
             summary={getTileSummary(tile, 800)}
+            summaryStyle={styles.summary}
             tile={tile}
             whiteSpaceHeight={whiteSpaceHeight}
             withStar={false}
