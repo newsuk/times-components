@@ -51,6 +51,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
           <View
             style={
               Object {
+                "height": 84,
                 "marginBottom": 20,
                 "paddingLeft": 10,
                 "paddingRight": 10,
@@ -389,6 +390,7 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
           <View
             style={
               Object {
+                "height": 84,
                 "marginBottom": 20,
                 "paddingLeft": 10,
                 "paddingRight": 10,
