@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.95](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@1.3.94...@times-components/article-paragraph@1.3.95) (2019-10-23)
+
+
+### Bug Fixes
+
+* paragraph heights not correct ([#2347](https://github.com/newsuk/times-components/issues/2347)) ([fae9ded](https://github.com/newsuk/times-components/commit/fae9ded))
+
+
+
+
+
 ## [1.3.94](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@1.3.93...@times-components/article-paragraph@1.3.94) (2019-10-23)
 
 

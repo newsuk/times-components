@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.18.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.18.1...@times-components/article-skeleton@1.18.2) (2019-10-23)
+
+
+### Bug Fixes
+
+* paragraph heights not correct ([#2347](https://github.com/newsuk/times-components/issues/2347)) ([fae9ded](https://github.com/newsuk/times-components/commit/fae9ded))
+
+
+
+
+
 ## [1.18.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.18.0...@times-components/article-skeleton@1.18.1) (2019-10-23)
 
 
