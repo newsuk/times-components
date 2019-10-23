@@ -30,7 +30,7 @@ const isDropcapsDisabled = ({ template, dropcapsDisabled }) => {
   return !templateWithDropCaps.includes(template);
 };
 
-const ArticleSkeleton = props => {
+const ArticleSkeleton = memo(props => {
   const {
     adConfig,
     Header,
@@ -156,7 +156,7 @@ const ArticleSkeleton = props => {
       </View>
     </AdComposer>
   );
-};
+});
 
 ArticleSkeleton.displayName = "ArticleSkeleton";
 

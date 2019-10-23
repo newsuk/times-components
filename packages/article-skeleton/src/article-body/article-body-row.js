@@ -136,7 +136,7 @@ const Paragraph = ({
 
   const container = new TextContainer(
     isTablet ? contentWidth : screenWidth() - spacing(4),
-    5000,
+    1000,
     0,
     0,
     dropCap ? [dropCap.exclusion] : []
