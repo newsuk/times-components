@@ -71,10 +71,16 @@ android {
         versionName packageInfo.version
         consumerProguardFiles 'proguard-rules.pro'
     }
+
+    packagingOptions {
+        exclude "**/libjsc.so"
+    }
 }
 
 dependencies {
     api "com.facebook.react:react-native:${packageInfo.dependencies.'react-native'}"
+    api "org.chromium:v8-android:${packageInfo.dependencies.'v8-android'}"
+
     api("react-repo:react-native-svg:${packageInfo.dependencies.'react-native-svg'}") {	
         exclude group: "com.facebook.react"	
     }

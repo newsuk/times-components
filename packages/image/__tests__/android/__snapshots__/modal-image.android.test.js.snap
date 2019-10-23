@@ -25,7 +25,9 @@ exports[`1. modal image 1`] = `
         }
       />
       <View>
-        <View>
+        <View
+          focusable={true}
+        >
           <Image
             resizeMode="contain"
             source={
@@ -107,7 +109,9 @@ exports[`1. modal image 1`] = `
       </View>
     </View>
   </Modal>
-  <View>
+  <View
+    focusable={true}
+  >
     <View
       aspectRatio={2}
     >
@@ -189,7 +193,9 @@ exports[`2. modal image with no caption 1`] = `
         }
       />
       <View>
-        <View>
+        <View
+          focusable={true}
+        >
           <Image
             resizeMode="contain"
             source={
@@ -248,7 +254,9 @@ exports[`2. modal image with no caption 1`] = `
       />
     </View>
   </Modal>
-  <View>
+  <View
+    focusable={true}
+  >
     <View
       aspectRatio={2}
     >
@@ -311,7 +319,9 @@ exports[`3. modal image with custom highressize 1`] = `
         }
       />
       <View>
-        <View>
+        <View
+          focusable={true}
+        >
           <Image
             resizeMode="contain"
             source={
@@ -393,7 +403,9 @@ exports[`3. modal image with custom highressize 1`] = `
       </View>
     </View>
   </Modal>
-  <View>
+  <View
+    focusable={true}
+  >
     <View
       aspectRatio={2}
     >
@@ -520,7 +532,9 @@ exports[`9. hides elements when tapping on the image 1`] = `
       </SafeAreaView>
     </View>
   </Modal>
-  <View>
+  <View
+    focusable={true}
+  >
     <View
       aspectRatio={2}
     >
@@ -583,7 +597,9 @@ exports[`10. re-shows elements when tapping on the image a second time 1`] = `
         }
       />
       <View>
-        <View>
+        <View
+          focusable={true}
+        >
           <Image
             resizeMode="contain"
             source={
@@ -648,7 +664,9 @@ exports[`10. re-shows elements when tapping on the image a second time 1`] = `
       </View>
     </View>
   </Modal>
-  <View>
+  <View
+    focusable={true}
+  >
     <View
       aspectRatio={2}
     >

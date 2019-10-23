@@ -3,25 +3,15 @@
 exports[`1. article with header 1`] = `
 <View>
   <RCTScrollView
-    ListHeaderComponent={
-      <Gutter>
-        <Header
-          width={750}
-        />
-      </Gutter>
-    }
-    initialListSize={10}
-    initialNumToRender={10}
+    initialNumToRender={3}
     maxToRenderPerBatch={10}
     nestedScrollEnabled={true}
-    numColumns={1}
     onEndReachedThreshold={2}
-    pageSize={1}
     removeClippedSubviews={true}
     scrollEventThrottle={50}
-    scrollRenderAheadDistance={10}
+    showsVerticalScrollIndicator={false}
     updateCellsBatchingPeriod={50}
-    windowSize={21}
+    windowSize={3}
   >
     <View>
       <View>
@@ -82,12 +72,8 @@ exports[`1. article with header 1`] = `
         <View>
           <View>
             <View>
-              <Text
-                selectable={true}
-              >
-                <Text
-                  selectable={true}
-                >
+              <Text>
+                <Text>
                   Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
                 </Text>
                 <Text
@@ -95,172 +81,14 @@ exports[`1. article with header 1`] = `
                 >
                   police disclosure of evidence
                 </Text>
-                <Text
-                  selectable={true}
-                >
+                <Text>
                    Telegraph 
                 </Text>
-                <Text
-                  selectable={true}
-                >
+                <Text>
                   last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
                 </Text>
-                <Text
-                  selectable={true}
-                >
+                <Text>
                   When Thatcher joined the campaign trail for the 2001 general election...
-                </Text>
-              </Text>
-            </View>
-          </View>
-        </View>
-      </View>
-      <View>
-        <View>
-          <View>
-            <Video
-              accountId="5436121857001"
-              height={421.875}
-              policyKey="1.2.3.4"
-              poster={
-                Object {
-                  "uri": "http://placekitten.com/1000/1000",
-                }
-              }
-              videoId="5831024132001"
-              width={750}
-            />
-            <View>
-              <View>
-                <Text>
-                  This is video caption
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
-      <View>
-        <View>
-          <View>
-            <View>
-              <Text
-                selectable={true}
-              >
-                <Text
-                  selectable={true}
-                >
-                  Baroness Thatcher, LG, OM, PC, FRS, Prime Minister, 1979-90, was born on October 13, 1925. She died on April 8, 2013, aged 87.
-                </Text>
-              </Text>
-            </View>
-          </View>
-        </View>
-      </View>
-      <View>
-        <View>
-          <View>
-            <View>
-              <Text
-                selectable={true}
-              >
-                <Text
-                  selectable={true}
-                >
-                  Baroness Thatcher, LG, OM, PC, FRS, Prime Minister, 1979-90, was born on October 13, 1925. She died on April 8, 2013, aged 87.
-                </Text>
-              </Text>
-            </View>
-          </View>
-        </View>
-      </View>
-      <View>
-        <View>
-          <View>
-            <Video
-              accountId="5436121857001"
-              height={421.875}
-              policyKey="1.2.3.4"
-              poster={
-                Object {
-                  "uri": "http://placekitten.com/500/500",
-                }
-              }
-              videoId="5831024132001"
-              width={750}
-            />
-            <View>
-              <View>
-                <Text>
-                  This is video caption secondary
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
-      <View>
-        <View>
-          <View>
-            <ArticleImage
-              captionOptions={
-                Object {
-                  "caption": "All the latest stories in culture and books.",
-                  "credits": "The credits",
-                }
-              }
-              imageOptions={
-                Object {
-                  "display": "primary",
-                  "ratio": "1500:1000",
-                  "relativeHeight": undefined,
-                  "relativeHorizontalOffset": undefined,
-                  "relativeVerticalOffset": undefined,
-                  "relativeWidth": undefined,
-                  "uri": "http://image.io",
-                }
-              }
-            />
-          </View>
-        </View>
-      </View>
-      <View>
-        <View>
-          <View>
-            <View>
-              <Text
-                selectable={true}
-              >
-                <Text
-                  selectable={true}
-                >
-                  When Thatcher joined the campaign trail for the 2001 general election, she was followed closely by the media. After several minor strokes, however, it was announced in 2002 that she would cut back her heavy schedule. 
-                </Text>
-              </Text>
-            </View>
-          </View>
-        </View>
-      </View>
-      <View>
-        <View>
-          <View>
-            <InteractiveWrapper
-              id="d2f83305-d558-4f78-f582-32115c659355"
-            />
-          </View>
-        </View>
-      </View>
-      <View>
-        <View>
-          <View>
-            <View>
-              <Text
-                selectable={true}
-              >
-                <Text
-                  selectable={true}
-                >
-                  Thatcher plainly admired the style and determination of Tony Blair, who crushed John Major’s Conservatives in the 1997 election, and he for his part seemed content from time to time to be compared with her as a strong leader. She regularly revisited some of the issues that had dominated her years in office; for example she gave strong support to the development of democracy and the protection of the rule of law in Hong Kong as promised in the treaty she had signed with China. In 1999, in her first conference speech since her resignation as leader, she defended General Augusto Pinochet, the former dictator of Chile, who was held in Britain after his arrest in 1998. 
                 </Text>
               </Text>
             </View>

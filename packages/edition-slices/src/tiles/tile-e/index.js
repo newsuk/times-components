@@ -15,6 +15,10 @@ const TileE = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
   const crop = getTileImage(tile, "crop45");
   const styles = stylesFactory(breakpoint);
 
+  if (!crop) {
+    return null;
+  }
+
   return (
     <TileLink onPress={onPress} style={styles.container} tile={tile}>
       <Image

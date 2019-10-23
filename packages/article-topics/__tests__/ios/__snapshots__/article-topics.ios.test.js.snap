@@ -3,7 +3,9 @@
 exports[`1. group of topics 1`] = `
 <View>
   <View>
-    <View>
+    <View
+      focusable={true}
+    >
       <View>
         <Text
           accessibilityComponentType="button"
@@ -16,7 +18,9 @@ exports[`1. group of topics 1`] = `
     </View>
   </View>
   <View>
-    <View>
+    <View
+      focusable={true}
+    >
       <View>
         <Text
           accessibilityComponentType="button"
@@ -29,7 +33,9 @@ exports[`1. group of topics 1`] = `
     </View>
   </View>
   <View>
-    <View>
+    <View
+      focusable={true}
+    >
       <View>
         <Text
           accessibilityComponentType="button"
@@ -42,7 +48,9 @@ exports[`1. group of topics 1`] = `
     </View>
   </View>
   <View>
-    <View>
+    <View
+      focusable={true}
+    >
       <View>
         <Text
           accessibilityComponentType="button"
@@ -55,7 +63,9 @@ exports[`1. group of topics 1`] = `
     </View>
   </View>
   <View>
-    <View>
+    <View
+      focusable={true}
+    >
       <View>
         <Text
           accessibilityComponentType="button"
@@ -111,7 +121,9 @@ Array [
 
 exports[`4. article topic 1`] = `
 <View>
-  <View>
+  <View
+    focusable={true}
+  >
     <View>
       <Text
         accessibilityComponentType="button"

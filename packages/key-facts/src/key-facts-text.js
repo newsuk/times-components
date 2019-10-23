@@ -15,24 +15,22 @@ const KeyFactsText = ({ item, listIndex, onLinkPress, fontStyle }) => (
           ...coreRenderers,
           link(key, attributes, renderedChildren) {
             const { canonicalId, href: url, type } = attributes;
-            return {
-              element: (
-                <TextLink
-                  key={key}
-                  onPress={e =>
-                    onLinkPress(e, {
-                      canonicalId,
-                      type,
-                      url
-                    })
-                  }
-                  style={styles.link}
-                  url={url}
-                >
-                  {renderedChildren}
-                </TextLink>
-              )
-            };
+            return (
+              <TextLink
+                key={key}
+                onPress={e =>
+                  onLinkPress(e, {
+                    canonicalId,
+                    type,
+                    url
+                  })
+                }
+                style={styles.link}
+                url={url}
+              >
+                {renderedChildren}
+              </TextLink>
+            );
           }
         },
         `key-facts-${listIndex}-${listItemIndex}`

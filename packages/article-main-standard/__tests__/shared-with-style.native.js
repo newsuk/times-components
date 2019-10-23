@@ -41,22 +41,6 @@ export default () => {
           name: "image"
         },
         {
-          attributes: {
-            href: "https://link.io",
-            target: "_blank"
-          },
-          children: [
-            {
-              attributes: {
-                value: "Some Link"
-              },
-              children: [],
-              name: "text"
-            }
-          ],
-          name: "link"
-        },
-        {
           attributes: {},
           children: [
             {
@@ -65,6 +49,22 @@ export default () => {
               },
               children: [],
               name: "text"
+            },
+            {
+              attributes: {
+                href: "https://link.io",
+                target: "_blank"
+              },
+              children: [
+                {
+                  attributes: {
+                    value: "Some Link"
+                  },
+                  children: [],
+                  name: "text"
+                }
+              ],
+              name: "link"
             }
           ],
           name: "paragraph"
@@ -171,22 +171,6 @@ export default () => {
           name: "image"
         },
         {
-          attributes: {
-            href: "https://link.io",
-            target: "_blank"
-          },
-          children: [
-            {
-              attributes: {
-                value: "Some Link"
-              },
-              children: [],
-              name: "text"
-            }
-          ],
-          name: "link"
-        },
-        {
           attributes: {},
           children: [
             {
@@ -195,6 +179,22 @@ export default () => {
               },
               children: [],
               name: "text"
+            },
+            {
+              attributes: {
+                href: "https://link.io",
+                target: "_blank"
+              },
+              children: [
+                {
+                  attributes: {
+                    value: "Some Link"
+                  },
+                  children: [],
+                  name: "text"
+                }
+              ],
+              name: "link"
             }
           ],
           name: "paragraph"

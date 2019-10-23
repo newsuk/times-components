@@ -3,36 +3,37 @@
 exports[`1. scale correctly when spreading fingers 1`] = `
 <View>
   <View
+    focusable={true}
     style={
       Object {
         "flexGrow": 1,
         "transform": Array [
           Object {
-            "translateX": -0,
+            "translateX": -15,
           },
           Object {
-            "translateY": -0,
+            "translateY": -25,
           },
           Object {
-            "translateX": 0,
+            "translateX": 55,
           },
           Object {
-            "translateY": 0,
+            "translateY": 15,
           },
           Object {
-            "scale": 1,
+            "scale": 3,
           },
           Object {
-            "translateX": -0,
+            "translateX": -55,
           },
           Object {
-            "translateY": -0,
+            "translateY": -15,
           },
           Object {
-            "translateX": 0,
+            "translateX": 15,
           },
           Object {
-            "translateY": 0,
+            "translateY": 25,
           },
           Object {
             "rotate": "0 deg",
@@ -54,39 +55,40 @@ exports[`1. scale correctly when spreading fingers 1`] = `
 exports[`2. rotate anti-clockwise when turning fingers 1`] = `
 <View>
   <View
+    focusable={true}
     style={
       Object {
         "flexGrow": 1,
         "transform": Array [
           Object {
-            "translateX": -0,
+            "translateX": -15,
           },
           Object {
-            "translateY": -0,
+            "translateY": -25,
           },
           Object {
-            "translateX": 0,
+            "translateX": 30,
           },
           Object {
-            "translateY": 0,
+            "translateY": 15,
           },
           Object {
             "scale": 1,
           },
           Object {
-            "translateX": -0,
+            "translateX": -30,
           },
           Object {
-            "translateY": -0,
+            "translateY": -15,
           },
           Object {
-            "translateX": 0,
+            "translateX": 15,
           },
           Object {
-            "translateY": 0,
+            "translateY": 25,
           },
           Object {
-            "rotate": "0 deg",
+            "rotate": "90 deg",
           },
           Object {
             "perspective": 1000,
@@ -105,39 +107,40 @@ exports[`2. rotate anti-clockwise when turning fingers 1`] = `
 exports[`3. rotate clockwise when turning fingers 1`] = `
 <View>
   <View
+    focusable={true}
     style={
       Object {
         "flexGrow": 1,
         "transform": Array [
           Object {
-            "translateX": -0,
+            "translateX": -15,
           },
           Object {
-            "translateY": -0,
+            "translateY": -25,
           },
           Object {
-            "translateX": 0,
+            "translateX": 30,
           },
           Object {
-            "translateY": 0,
+            "translateY": 15,
           },
           Object {
             "scale": 1,
           },
           Object {
-            "translateX": -0,
+            "translateX": -30,
           },
           Object {
-            "translateY": -0,
+            "translateY": -15,
           },
           Object {
-            "translateX": 0,
+            "translateX": 15,
           },
           Object {
-            "translateY": 0,
+            "translateY": 25,
           },
           Object {
-            "rotate": "0 deg",
+            "rotate": "270 deg",
           },
           Object {
             "perspective": 1000,
@@ -156,39 +159,40 @@ exports[`3. rotate clockwise when turning fingers 1`] = `
 exports[`4. scale and rotate when spreading and rotating fingers 1`] = `
 <View>
   <View
+    focusable={true}
     style={
       Object {
         "flexGrow": 1,
         "transform": Array [
           Object {
-            "translateX": -0,
+            "translateX": -15,
           },
           Object {
-            "translateY": -0,
+            "translateY": -25,
           },
           Object {
-            "translateX": 0,
+            "translateX": 90,
           },
           Object {
-            "translateY": 0,
+            "translateY": 45,
           },
           Object {
-            "scale": 1,
+            "scale": 2.9154759474226504,
           },
           Object {
-            "translateX": -0,
+            "translateX": -90,
           },
           Object {
-            "translateY": -0,
+            "translateY": -45,
           },
           Object {
-            "translateX": 0,
+            "translateX": 15,
           },
           Object {
-            "translateY": 0,
+            "translateY": 25,
           },
           Object {
-            "rotate": "0 deg",
+            "rotate": "-5.906141113770502 deg",
           },
           Object {
             "perspective": 1000,
@@ -207,36 +211,37 @@ exports[`4. scale and rotate when spreading and rotating fingers 1`] = `
 exports[`5. do nothing if a finger is removed while interacting 1`] = `
 <View>
   <View
+    focusable={true}
     style={
       Object {
         "flexGrow": 1,
         "transform": Array [
           Object {
-            "translateX": -0,
+            "translateX": -15,
           },
           Object {
-            "translateY": -0,
+            "translateY": -25,
           },
           Object {
-            "translateX": 0,
+            "translateX": -20,
           },
           Object {
-            "translateY": 0,
+            "translateY": -60,
           },
           Object {
             "scale": 1,
           },
           Object {
-            "translateX": -0,
+            "translateX": 20,
           },
           Object {
-            "translateY": -0,
+            "translateY": 60,
           },
           Object {
-            "translateX": 0,
+            "translateX": 15,
           },
           Object {
-            "translateY": 0,
+            "translateY": 25,
           },
           Object {
             "rotate": "0 deg",

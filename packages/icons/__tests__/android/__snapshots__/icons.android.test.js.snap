@@ -4,6 +4,7 @@ exports[`1. iconemail renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   bbWidth={20}
+  focusable={false}
   meetOrSlice={0}
   minX={0}
   minY={0}
@@ -12,6 +13,7 @@ exports[`1. iconemail renders 1`] = `
     Object {
       "backgroundColor": "transparent",
       "borderWidth": 0,
+      "opacity": 1,
     }
   }
   title="IconEmail"
@@ -153,6 +155,7 @@ exports[`2. iconfacebook renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   bbWidth={20}
+  focusable={false}
   meetOrSlice={0}
   minX={14}
   minY={10}
@@ -161,6 +164,7 @@ exports[`2. iconfacebook renders 1`] = `
     Object {
       "backgroundColor": "transparent",
       "borderWidth": 0,
+      "opacity": 1,
     }
   }
   title="IconFacebook"
@@ -303,6 +307,7 @@ exports[`3. iconforwardarrow renders 1`] = `
   align="xMidYMid"
   bbHeight={12}
   bbWidth={7}
+  focusable={false}
   height={12}
   meetOrSlice={0}
   minX={42}
@@ -313,6 +318,7 @@ exports[`3. iconforwardarrow renders 1`] = `
       "borderWidth": 0,
       "flex": 0,
       "height": 12,
+      "opacity": 1,
       "width": 7,
     }
   }
@@ -453,6 +459,7 @@ exports[`4. iconstar renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   bbWidth={20}
+  focusable={false}
   meetOrSlice={0}
   minX={0}
   minY={0}
@@ -461,6 +468,7 @@ exports[`4. iconstar renders 1`] = `
     Object {
       "backgroundColor": "transparent",
       "borderWidth": 0,
+      "opacity": 1,
     }
   }
   title="IconStar"
@@ -561,6 +569,7 @@ exports[`5. iconcopylink renders 1`] = `
   align="xMidYMid"
   bbHeight={15}
   bbWidth={20}
+  focusable={false}
   height={15}
   meetOrSlice={0}
   minX={0}
@@ -572,6 +581,7 @@ exports[`5. iconcopylink renders 1`] = `
       "borderWidth": 0,
       "flex": 0,
       "height": 15,
+      "opacity": 1,
       "width": 20,
     }
   }
@@ -673,6 +683,7 @@ exports[`6. iconsavebookmark renders 1`] = `
   align="xMidYMid"
   bbHeight={16}
   bbWidth={20}
+  focusable={false}
   height={16}
   meetOrSlice={0}
   minX={0}
@@ -684,6 +695,7 @@ exports[`6. iconsavebookmark renders 1`] = `
       "borderWidth": 0,
       "flex": 0,
       "height": 16,
+      "opacity": 1,
       "width": 20,
     }
   }
@@ -784,6 +796,7 @@ exports[`7. icontwitter renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   bbWidth={20}
+  focusable={false}
   meetOrSlice={0}
   minX={-354.2}
   minY={-279.4}
@@ -792,6 +805,7 @@ exports[`7. icontwitter renders 1`] = `
     Object {
       "backgroundColor": "transparent",
       "borderWidth": 0,
+      "opacity": 1,
     }
   }
   title="IconTwitter"
@@ -891,6 +905,7 @@ exports[`8. iconvideo renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   bbWidth={20}
+  focusable={false}
   meetOrSlice={0}
   minX={0}
   minY={0}
@@ -899,6 +914,7 @@ exports[`8. iconvideo renders 1`] = `
     Object {
       "backgroundColor": "transparent",
       "borderWidth": 0,
+      "opacity": 1,
     }
   }
   title="IconVideo"
@@ -974,8 +990,6 @@ exports[`8. iconvideo renders 1`] = `
         ]
       }
       rotation={0}
-      rx={0}
-      ry={0}
       scaleX={1}
       scaleY={1}
       skewX={0}
@@ -1045,6 +1059,7 @@ exports[`9. iconvideo360player renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   bbWidth={20}
+  focusable={false}
   meetOrSlice={0}
   minX={0}
   minY={0}
@@ -1053,6 +1068,7 @@ exports[`9. iconvideo360player renders 1`] = `
     Object {
       "backgroundColor": "transparent",
       "borderWidth": 0,
+      "opacity": 1,
     }
   }
   title="IconVideo360Player"
@@ -1152,6 +1168,7 @@ exports[`10. thestlogo renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   bbWidth={20}
+  focusable={false}
   meetOrSlice={0}
   minX={0}
   minY={0}
@@ -1160,6 +1177,7 @@ exports[`10. thestlogo renders 1`] = `
     Object {
       "backgroundColor": "transparent",
       "borderWidth": 0,
+      "opacity": 1,
     }
   }
   title="TheSTLogo"
@@ -1259,6 +1277,7 @@ exports[`11. thetimeslogo renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
   bbWidth={20}
+  focusable={false}
   meetOrSlice={0}
   minX={0}
   minY={0}
@@ -1267,6 +1286,7 @@ exports[`11. thetimeslogo renders 1`] = `
     Object {
       "backgroundColor": "transparent",
       "borderWidth": 0,
+      "opacity": 1,
     }
   }
   title="TheTimesLogo"
@@ -1367,6 +1387,7 @@ exports[`12. closeicon renders 1`] = `
   align="xMidYMid"
   bbHeight={28}
   bbWidth={20}
+  focusable={false}
   height={28}
   meetOrSlice={0}
   minX={0}
@@ -1378,6 +1399,7 @@ exports[`12. closeicon renders 1`] = `
       "borderWidth": 0,
       "flex": 0,
       "height": 28,
+      "opacity": 1,
       "width": 20,
     }
   }

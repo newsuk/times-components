@@ -25,6 +25,10 @@ const TileN = ({
   const strapline =
     breakpoint !== editionBreakpoints.huge ? getTileStrapline(tile) : null;
 
+  if (!crop) {
+    return null;
+  }
+
   return (
     <TileLink onPress={onPress} style={styles.container} tile={tile}>
       <View style={styles.content}>

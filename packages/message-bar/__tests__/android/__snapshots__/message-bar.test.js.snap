@@ -8,11 +8,14 @@ exports[`1. renders correctly 1`] = `
         test message
       </Text>
       <View>
-        <View>
+        <View
+          focusable={true}
+        >
           <RNSVGSvgView
             align="xMidYMid"
             bbHeight="28"
             bbWidth="28"
+            focusable={false}
             height="28"
             meetOrSlice={0}
             minX={0}

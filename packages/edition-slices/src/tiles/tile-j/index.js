@@ -12,6 +12,10 @@ import styles from "./styles";
 const TileJ = ({ onPress, tile }) => {
   const crop = getTileImage(tile, "crop32");
 
+  if (!crop) {
+    return null;
+  }
+
   return (
     <TileLink onPress={onPress} style={styles.container} tile={tile}>
       <Image

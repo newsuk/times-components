@@ -25,7 +25,9 @@ exports[`1. modal image 1`] = `
         }
       />
       <View>
-        <View>
+        <View
+          focusable={true}
+        >
           <Image
             resizeMode="contain"
             source={
@@ -101,7 +103,7 @@ exports[`1. modal image 1`] = `
         height={140}
         pointerEvents="none"
         startPoint="0.35714285714285715"
-        width={500}
+        width={750}
       >
         <SafeAreaView
           forceInset={
@@ -121,7 +123,9 @@ exports[`1. modal image 1`] = `
       </OverlayGradient>
     </View>
   </Modal>
-  <View>
+  <View
+    focusable={true}
+  >
     <View
       aspectRatio={2}
     >
@@ -203,7 +207,9 @@ exports[`2. modal image with no caption 1`] = `
         }
       />
       <View>
-        <View>
+        <View
+          focusable={true}
+        >
           <Image
             resizeMode="contain"
             source={
@@ -262,7 +268,7 @@ exports[`2. modal image with no caption 1`] = `
         height={140}
         pointerEvents="none"
         startPoint="0.35714285714285715"
-        width={500}
+        width={750}
       >
         <SafeAreaView
           forceInset={
@@ -276,7 +282,9 @@ exports[`2. modal image with no caption 1`] = `
       </OverlayGradient>
     </View>
   </Modal>
-  <View>
+  <View
+    focusable={true}
+  >
     <View
       aspectRatio={2}
     >
@@ -339,7 +347,9 @@ exports[`3. modal image with custom highressize 1`] = `
         }
       />
       <View>
-        <View>
+        <View
+          focusable={true}
+        >
           <Image
             resizeMode="contain"
             source={
@@ -415,7 +425,7 @@ exports[`3. modal image with custom highressize 1`] = `
         height={140}
         pointerEvents="none"
         startPoint="0.35714285714285715"
-        width={500}
+        width={750}
       >
         <SafeAreaView
           forceInset={
@@ -435,7 +445,9 @@ exports[`3. modal image with custom highressize 1`] = `
       </OverlayGradient>
     </View>
   </Modal>
-  <View>
+  <View
+    focusable={true}
+  >
     <View
       aspectRatio={2}
     >
@@ -562,7 +574,9 @@ exports[`9. hides elements when tapping on the image 1`] = `
       </SafeAreaView>
     </View>
   </Modal>
-  <View>
+  <View
+    focusable={true}
+  >
     <View
       aspectRatio={2}
     >
@@ -625,7 +639,9 @@ exports[`10. re-shows elements when tapping on the image a second time 1`] = `
         }
       />
       <View>
-        <View>
+        <View
+          focusable={true}
+        >
           <Image
             resizeMode="contain"
             source={
@@ -684,7 +700,7 @@ exports[`10. re-shows elements when tapping on the image a second time 1`] = `
         height={140}
         pointerEvents="none"
         startPoint="0.35714285714285715"
-        width={1200}
+        width={750}
       >
         <SafeAreaView
           forceInset={
@@ -704,7 +720,9 @@ exports[`10. re-shows elements when tapping on the image a second time 1`] = `
       </OverlayGradient>
     </View>
   </Modal>
-  <View>
+  <View
+    focusable={true}
+  >
     <View
       aspectRatio={2}
     >

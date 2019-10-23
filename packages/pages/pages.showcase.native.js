@@ -1,8 +1,12 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import { sections } from "@times-components/storybook";
-import { Article, AuthorProfile, Topic } from "./src/pages";
+import Page from "./src/pages";
 import Section from "./section-showcase-helper";
+
+const Article = Page("Article");
+const AuthorProfile = Page("AuthorProfile");
+const Topic = Page("Topic");
 
 export default {
   children: [

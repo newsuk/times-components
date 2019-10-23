@@ -6,6 +6,7 @@ const styles = StyleSheet.create({
   ...sharedStyles,
   container: {
     ...sharedStyles.container,
+    marginBottom: spacing(2),
     paddingLeft: spacing(2),
     paddingRight: spacing(2)
   },

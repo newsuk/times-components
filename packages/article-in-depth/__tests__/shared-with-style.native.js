@@ -31,22 +31,6 @@ const article = articleFixture({
       name: "image"
     },
     {
-      attributes: {
-        href: "https://link.io",
-        target: "_blank"
-      },
-      children: [
-        {
-          attributes: {
-            value: "Some Link"
-          },
-          children: [],
-          name: "text"
-        }
-      ],
-      name: "link"
-    },
-    {
       attributes: {},
       children: [
         {
@@ -55,6 +39,22 @@ const article = articleFixture({
           },
           children: [],
           name: "text"
+        },
+        {
+          attributes: {
+            href: "https://link.io",
+            target: "_blank"
+          },
+          children: [
+            {
+              attributes: {
+                value: "Some Link"
+              },
+              children: [],
+              name: "text"
+            }
+          ],
+          name: "link"
         }
       ],
       name: "paragraph"

@@ -3,25 +3,15 @@
 exports[`1. a full article with all content items with dropcap template 1`] = `
 <View>
   <RCTScrollView
-    ListHeaderComponent={
-      <Gutter>
-        <Header
-          width={750}
-        />
-      </Gutter>
-    }
-    initialListSize={10}
-    initialNumToRender={10}
+    initialNumToRender={3}
     maxToRenderPerBatch={10}
     nestedScrollEnabled={true}
-    numColumns={1}
     onEndReachedThreshold={2}
-    pageSize={1}
     removeClippedSubviews={true}
     scrollEventThrottle={50}
-    scrollRenderAheadDistance={10}
+    showsVerticalScrollIndicator={false}
     updateCellsBatchingPeriod={50}
-    windowSize={21}
+    windowSize={3}
   >
     <View>
       <View>
@@ -29,20 +19,52 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
       </View>
       <View>
         <View>
-          <View>
-            <Text
-              selectable={true}
-            >
-              T
-            </Text>
-          </View>
+          <Text>
+            T
+          </Text>
           <View>
             <View>
               <Text
                 numberOfLines={1}
                 selectable={true}
               >
-                his being Black History Month, last week
+                his
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+              >
+                being
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+              >
+                Black
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+              >
+                History
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+              >
+                Month,
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+              >
+                last
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+              >
+                week
               </Text>
             </View>
           </View>
@@ -57,195 +79,6 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
           </View>
         </View>
       </View>
-      <View>
-        <View>
-          <View>
-            <ArticleImage
-              captionOptions={
-                Object {
-                  "caption": "An image caption",
-                  "credits": "The image credits",
-                }
-              }
-              imageOptions={
-                Object {
-                  "display": "primary",
-                  "ratio": "1500:1000",
-                  "relativeHeight": undefined,
-                  "relativeHorizontalOffset": undefined,
-                  "relativeVerticalOffset": undefined,
-                  "relativeWidth": undefined,
-                  "uri": "https://image.io",
-                }
-              }
-            />
-          </View>
-        </View>
-      </View>
-      <View>
-        <View>
-          <View>
-            <ArticleImage
-              captionOptions={
-                Object {
-                  "caption": "A secondary image caption",
-                  "credits": "The secondary image credits",
-                }
-              }
-              imageOptions={
-                Object {
-                  "display": "secondary",
-                  "ratio": "1500:1000",
-                  "relativeHeight": undefined,
-                  "relativeHorizontalOffset": undefined,
-                  "relativeVerticalOffset": undefined,
-                  "relativeWidth": undefined,
-                  "uri": "https://image.io/secondary",
-                }
-              }
-            />
-          </View>
-        </View>
-      </View>
-      <View>
-        <View>
-          <View>
-            <ArticleImage
-              captionOptions={
-                Object {
-                  "caption": "An inline image caption",
-                  "credits": "The inline image credits",
-                }
-              }
-              imageOptions={
-                Object {
-                  "display": "secondary",
-                  "ratio": "1500:1000",
-                  "relativeHeight": undefined,
-                  "relativeHorizontalOffset": undefined,
-                  "relativeVerticalOffset": undefined,
-                  "relativeWidth": undefined,
-                  "uri": "https://image.io/inline",
-                }
-              }
-            />
-          </View>
-        </View>
-      </View>
-      <View>
-        <View>
-          <View>
-            <View>
-              <Text
-                selectable={true}
-              >
-                <Text
-                  selectable={true}
-                >
-                  Some content
-                </Text>
-              </Text>
-            </View>
-          </View>
-        </View>
-      </View>
-      <View>
-        <View>
-          <Ad
-            contextUrl="https://url.io"
-            section="Some Section"
-            slotName="native-inline-ad"
-          />
-        </View>
-      </View>
-      <View>
-        <View>
-          <View>
-            <PullQuote
-              caption="AName"
-              quoteColour="#FF0000"
-              text="a text"
-              twitter="@AName"
-            >
-              The pull quote content
-            </PullQuote>
-          </View>
-        </View>
-      </View>
-      <View>
-        <View>
-          <View>
-            <Video
-              accountId="57838016001"
-              height={421.875}
-              policyKey="1.2.3.4"
-              poster={
-                Object {
-                  "uri": "https://image.io",
-                }
-              }
-              skySports={false}
-              videoId="4084164751001"
-              width={750}
-            />
-            <View>
-              <View>
-                <Text>
-                  This is video caption
-                </Text>
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
-      <View>
-        <View>
-          <View>
-            <View>
-              <Text>
-                EXAMPLE TITLE
-              </Text>
-              <View>
-                <View>
-                  <View />
-                  <Text>
-                    Example bullet text
-                  </Text>
-                </View>
-                <View>
-                  <View />
-                  <Text>
-                    An example 
-                    <Text
-                      accessibilityRole="link"
-                    >
-                      link
-                    </Text>
-                  </Text>
-                </View>
-                <View>
-                  <View />
-                  <Text>
-                    More example text.
-                  </Text>
-                </View>
-                <View>
-                  <View />
-                  <Text>
-                    Example text 
-                    <Text>
-                      this is bold 
-                    </Text>
-                    <Text>
-                      this is in italics.
-                    </Text>
-                  </Text>
-                </View>
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
       <View />
     </View>
   </RCTScrollView>
@@ -255,25 +88,15 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
 exports[`2. an article with interactives 1`] = `
 <View>
   <RCTScrollView
-    ListHeaderComponent={
-      <Gutter>
-        <Header
-          width={750}
-        />
-      </Gutter>
-    }
-    initialListSize={10}
-    initialNumToRender={10}
+    initialNumToRender={3}
     maxToRenderPerBatch={10}
     nestedScrollEnabled={true}
-    numColumns={1}
     onEndReachedThreshold={2}
-    pageSize={1}
     removeClippedSubviews={true}
     scrollEventThrottle={50}
-    scrollRenderAheadDistance={10}
+    showsVerticalScrollIndicator={false}
     updateCellsBatchingPeriod={50}
-    windowSize={21}
+    windowSize={3}
   >
     <View>
       <View>
@@ -297,12 +120,26 @@ exports[`2. an article with interactives 1`] = `
           </View>
         </View>
       </View>
-      <View>
-        <View />
-      </View>
-      <View>
-        <View />
-      </View>
+      <View />
+    </View>
+  </RCTScrollView>
+</View>
+`;
+
+exports[`3. an article with no content 1`] = `
+<View>
+  <RCTScrollView
+    initialNumToRender={3}
+    maxToRenderPerBatch={10}
+    nestedScrollEnabled={true}
+    onEndReachedThreshold={2}
+    removeClippedSubviews={true}
+    scrollEventThrottle={50}
+    showsVerticalScrollIndicator={false}
+    updateCellsBatchingPeriod={50}
+    windowSize={3}
+  >
+    <View>
       <View>
         <View />
       </View>
@@ -319,30 +156,18 @@ exports[`2. an article with interactives 1`] = `
 </View>
 `;
 
-exports[`3. an article with no content 1`] = `null`;
-
 exports[`4. an article with a nested markup in first paragraph displays a drop cap 1`] = `
 <View>
   <RCTScrollView
-    ListHeaderComponent={
-      <Gutter>
-        <Header
-          width={750}
-        />
-      </Gutter>
-    }
-    initialListSize={10}
-    initialNumToRender={10}
+    initialNumToRender={3}
     maxToRenderPerBatch={10}
     nestedScrollEnabled={true}
-    numColumns={1}
     onEndReachedThreshold={2}
-    pageSize={1}
     removeClippedSubviews={true}
     scrollEventThrottle={50}
-    scrollRenderAheadDistance={10}
+    showsVerticalScrollIndicator={false}
     updateCellsBatchingPeriod={50}
-    windowSize={21}
+    windowSize={3}
   >
     <View>
       <View>
@@ -350,49 +175,137 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
       </View>
       <View>
         <View>
-          <View>
-            <Text
-              selectable={true}
-            >
-              Q
-            </Text>
-          </View>
+          <Text>
+            Q
+          </Text>
           <View>
             <View>
               <Text
                 numberOfLines={1}
                 selectable={true}
               >
-                 Some years ago I made the decision to take as a friend a woman who is very opinionated.
+                Some
               </Text>
-            </View>
-          </View>
-          <View>
-            <View>
               <Text
                 numberOfLines={1}
                 selectable={true}
               >
-                When she does come to social events, she dominates.
+                years
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+              >
+                ago
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+              >
+                I
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+              >
+                made
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+              >
+                the
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+              >
+                decision
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+              >
+                to
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+              >
+                take
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+              >
+                as
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+              >
+                a
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+              >
+                friend
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+              >
+                a
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+              >
+                woman
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+              >
+                who
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+              >
+                is
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+              >
+                very
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+              >
+                opinionated.
               </Text>
             </View>
           </View>
         </View>
-      </View>
-      <View>
-        <View />
-      </View>
-      <View>
-        <View />
       </View>
       <View>
         <View>
-          <ArticleExtras
-            articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-            articleUrl="https://url.io"
-          />
+          <View>
+            <View>
+              <Text>
+                <Text>
+                  When she does come to social events, she dominates.
+                </Text>
+              </Text>
+            </View>
+          </View>
         </View>
       </View>
+      <View />
     </View>
   </RCTScrollView>
 </View>

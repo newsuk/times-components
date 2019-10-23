@@ -1,8 +1,10 @@
 import React from "react";
 import { scales } from "@times-components/styleguide";
 import "./mocks";
-import { Article } from "../src/pages";
+import Page from "../src/pages";
 import getAdTargetingConfig from "../src/article/ad-targeting-config";
+
+const Article = Page("Article");
 
 export default makeTest => {
   it("article page", () => {

@@ -1,3 +1,4 @@
+/* eslint-disable global-require */
 import TestRenderer from "react-test-renderer";
 import {
   addSerializers,
@@ -7,15 +8,27 @@ import {
   minimaliseTransform,
   minimalNativeTransform
 } from "@times-components/jest-serializer";
-import { iterator, Roboto } from "@times-components/test-utils";
+import { iterator } from "@times-components/test-utils";
 import "./mocks.native";
-import { Text } from "@times-components/text-flow";
+import { FontStorage } from "@times-components/typeset";
 import snapshotTests from "./scaling.base";
 
-Text.FontLoader.loadFont("TimesDigitalW04", Roboto);
-Text.FontLoader.loadFont("TimesModern-Regular", Roboto);
-Text.FontLoader.loadFont("TimesDigitalW04-Bold", Roboto);
-Text.FontLoader.loadFont("TimesDigitalW04-Italic", Roboto);
+FontStorage.registerFont(
+  "TimesDigitalW04-Normal",
+  () => require("@times-components/test-utils").TestFont
+);
+FontStorage.registerFont(
+  "TimesDigitalW04-Bold",
+  () => require("@times-components/test-utils").TestFont
+);
+FontStorage.registerFont(
+  "TimesDigitalW04-Italic",
+  () => require("@times-components/test-utils").TestFont
+);
+FontStorage.registerFont(
+  "TimesModern-Regular",
+  () => require("@times-components/test-utils").TestFont
+);
 
 export default () => {
   addSerializers(

@@ -34,6 +34,7 @@ exports[`enabled comments 1`] = `
   <View
     accessibilityLabel="View comments"
     accessibilityRole="button"
+    focusable={true}
   >
     <Text
       title="View comments"
@@ -60,6 +61,7 @@ exports[`single comment 1`] = `
   <View
     accessibilityLabel="View comments"
     accessibilityRole="button"
+    focusable={true}
   >
     <Text
       title="View comments"
@@ -86,6 +88,7 @@ exports[`zero comments 1`] = `
   <View
     accessibilityLabel="Post a comment"
     accessibilityRole="button"
+    focusable={true}
   >
     <Text
       title="Post a comment"

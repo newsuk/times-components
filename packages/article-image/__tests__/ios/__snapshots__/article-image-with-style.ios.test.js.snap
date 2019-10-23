@@ -4,9 +4,10 @@ exports[`1. mobile primary image with caption and credits 1`] = `
 <View
   style={
     Object {
+      "alignSelf": "center",
       "flexDirection": "column",
       "paddingBottom": 15,
-      "width": "100%",
+      "width": 640,
     }
   }
 >
@@ -29,7 +30,6 @@ exports[`1. mobile primary image with caption and credits 1`] = `
       <View
         style={
           Object {
-            "paddingHorizontal": 10,
             "paddingTop": 10,
           }
         }

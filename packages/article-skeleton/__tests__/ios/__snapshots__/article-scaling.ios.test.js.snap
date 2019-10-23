@@ -14,10 +14,10 @@ exports[`1. scaled medium full article 1`] = `
         <View
           style={
             Object {
-              "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1194,
+              "overflow": "hidden",
+              "width": undefined,
             }
           }
         />
@@ -26,34 +26,24 @@ exports[`1. scaled medium full article 1`] = `
         <View
           style={
             Object {
-              "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1194,
+              "overflow": "hidden",
+              "width": undefined,
             }
           }
         >
           <View
             style={
               Object {
+                "marginBottom": 20,
                 "paddingLeft": 10,
                 "paddingRight": 10,
               }
             }
           >
             <View>
-              <Text
-                style={
-                  Object {
-                    "color": "#333333",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 17,
-                    "height": 56,
-                    "lineHeight": 28,
-                    "marginBottom": 20,
-                  }
-                }
-              >
+              <Text>
                 <Text
                   style={
                     Object {
@@ -62,7 +52,7 @@ exports[`1. scaled medium full article 1`] = `
                       "fontSize": 17,
                       "fontStyle": "normal",
                       "fontWeight": "normal",
-                      "lineHeight": 56,
+                      "lineHeight": 28,
                     }
                   }
                 >
@@ -77,46 +67,10 @@ exports[`1. scaled medium full article 1`] = `
         <View
           style={
             Object {
-              "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1194,
-            }
-          }
-        />
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "alignSelf": "center",
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "width": 1194,
-            }
-          }
-        />
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "alignSelf": "center",
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "width": 1194,
-            }
-          }
-        />
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "alignSelf": "center",
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "width": 1194,
+              "overflow": "hidden",
+              "width": undefined,
             }
           }
         >
@@ -142,10 +96,10 @@ exports[`2. scaled large full article 1`] = `
         <View
           style={
             Object {
-              "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1194,
+              "overflow": "hidden",
+              "width": undefined,
             }
           }
         />
@@ -154,34 +108,24 @@ exports[`2. scaled large full article 1`] = `
         <View
           style={
             Object {
-              "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1194,
+              "overflow": "hidden",
+              "width": undefined,
             }
           }
         >
           <View
             style={
               Object {
+                "marginBottom": 20,
                 "paddingLeft": 10,
                 "paddingRight": 10,
               }
             }
           >
             <View>
-              <Text
-                style={
-                  Object {
-                    "color": "#333333",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 21,
-                    "height": 56,
-                    "lineHeight": 31,
-                    "marginBottom": 20,
-                  }
-                }
-              >
+              <Text>
                 <Text
                   style={
                     Object {
@@ -190,7 +134,7 @@ exports[`2. scaled large full article 1`] = `
                       "fontSize": 17,
                       "fontStyle": "normal",
                       "fontWeight": "normal",
-                      "lineHeight": 56,
+                      "lineHeight": 28,
                     }
                   }
                 >
@@ -205,46 +149,10 @@ exports[`2. scaled large full article 1`] = `
         <View
           style={
             Object {
-              "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1194,
-            }
-          }
-        />
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "alignSelf": "center",
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "width": 1194,
-            }
-          }
-        />
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "alignSelf": "center",
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "width": 1194,
-            }
-          }
-        />
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "alignSelf": "center",
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "width": 1194,
+              "overflow": "hidden",
+              "width": undefined,
             }
           }
         >
@@ -270,10 +178,10 @@ exports[`3. scaled xlarge full article 1`] = `
         <View
           style={
             Object {
-              "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1194,
+              "overflow": "hidden",
+              "width": undefined,
             }
           }
         />
@@ -282,34 +190,24 @@ exports[`3. scaled xlarge full article 1`] = `
         <View
           style={
             Object {
-              "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1194,
+              "overflow": "hidden",
+              "width": undefined,
             }
           }
         >
           <View
             style={
               Object {
+                "marginBottom": 20,
                 "paddingLeft": 10,
                 "paddingRight": 10,
               }
             }
           >
             <View>
-              <Text
-                style={
-                  Object {
-                    "color": "#333333",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 23,
-                    "height": 56,
-                    "lineHeight": 33,
-                    "marginBottom": 20,
-                  }
-                }
-              >
+              <Text>
                 <Text
                   style={
                     Object {
@@ -318,7 +216,7 @@ exports[`3. scaled xlarge full article 1`] = `
                       "fontSize": 17,
                       "fontStyle": "normal",
                       "fontWeight": "normal",
-                      "lineHeight": 56,
+                      "lineHeight": 28,
                     }
                   }
                 >
@@ -333,46 +231,10 @@ exports[`3. scaled xlarge full article 1`] = `
         <View
           style={
             Object {
-              "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1194,
-            }
-          }
-        />
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "alignSelf": "center",
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "width": 1194,
-            }
-          }
-        />
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "alignSelf": "center",
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "width": 1194,
-            }
-          }
-        />
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "alignSelf": "center",
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "width": 1194,
+              "overflow": "hidden",
+              "width": undefined,
             }
           }
         >

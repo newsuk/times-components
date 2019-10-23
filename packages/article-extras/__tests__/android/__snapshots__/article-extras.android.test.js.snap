@@ -28,6 +28,7 @@ exports[`2. article extras error 1`] = `
   <View
     accessibilityLabel="Retry"
     accessibilityRole="button"
+    focusable={true}
   >
     <Text
       title="Retry"

@@ -42,6 +42,7 @@ export default makeTest => {
       name: "tablet primary image with caption and credits",
       test: () => {
         setIsTablet(true);
+
         expect(
           makeTest(
             <ArticleImage

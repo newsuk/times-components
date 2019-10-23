@@ -2,7 +2,9 @@
 export { setIsTablet, setDimension } from "@times-components/mocks/dimensions";
 export { default as Gestures } from "@times-components/gestures";
 
-jest.mock("NativeAnimatedHelper");
+jest.mock("NativeAnimatedHelper", () => "NativeAnimatedHelper", {
+  virtual: true
+});
 
 jest.mock("../src/safeAreaView", () => "SafeAreaView");
 

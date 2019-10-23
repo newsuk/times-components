@@ -64,6 +64,7 @@ exports[`renders correctly with style 1`] = `
       <View
         accessibilityLabel="Retry"
         accessibilityRole="button"
+        focusable={true}
         style={
           Object {
             "alignItems": "center",

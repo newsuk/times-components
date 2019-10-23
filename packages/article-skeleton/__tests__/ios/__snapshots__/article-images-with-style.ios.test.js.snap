@@ -14,10 +14,10 @@ exports[`1. a primary image 1`] = `
         <View
           style={
             Object {
-              "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1194,
+              "overflow": "hidden",
+              "width": undefined,
             }
           }
         />
@@ -26,50 +26,24 @@ exports[`1. a primary image 1`] = `
         <View
           style={
             Object {
-              "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1194,
+              "overflow": "hidden",
+              "width": undefined,
             }
           }
         >
-          <View>
-            <ArticleImage />
-          </View>
+          <ArticleImage />
         </View>
       </View>
       <View>
         <View
           style={
             Object {
-              "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1194,
-            }
-          }
-        />
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "alignSelf": "center",
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "width": 1194,
-            }
-          }
-        />
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "alignSelf": "center",
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "width": 1194,
+              "overflow": "hidden",
+              "width": undefined,
             }
           }
         >
@@ -95,10 +69,10 @@ exports[`2. a fullwidth image 1`] = `
         <View
           style={
             Object {
-              "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1194,
+              "overflow": "hidden",
+              "width": undefined,
             }
           }
         />
@@ -107,50 +81,24 @@ exports[`2. a fullwidth image 1`] = `
         <View
           style={
             Object {
-              "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1194,
+              "overflow": "hidden",
+              "width": undefined,
             }
           }
         >
-          <View>
-            <ArticleImage />
-          </View>
+          <ArticleImage />
         </View>
       </View>
       <View>
         <View
           style={
             Object {
-              "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1194,
-            }
-          }
-        />
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "alignSelf": "center",
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "width": 1194,
-            }
-          }
-        />
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "alignSelf": "center",
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "width": 1194,
+              "overflow": "hidden",
+              "width": undefined,
             }
           }
         >
@@ -176,10 +124,10 @@ exports[`3. a secondary image 1`] = `
         <View
           style={
             Object {
-              "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1194,
+              "overflow": "hidden",
+              "width": undefined,
             }
           }
         />
@@ -188,50 +136,24 @@ exports[`3. a secondary image 1`] = `
         <View
           style={
             Object {
-              "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1194,
+              "overflow": "hidden",
+              "width": undefined,
             }
           }
         >
-          <View>
-            <ArticleImage />
-          </View>
+          <ArticleImage />
         </View>
       </View>
       <View>
         <View
           style={
             Object {
-              "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1194,
-            }
-          }
-        />
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "alignSelf": "center",
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "width": 1194,
-            }
-          }
-        />
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "alignSelf": "center",
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "width": 1194,
+              "overflow": "hidden",
+              "width": undefined,
             }
           }
         >
@@ -257,10 +179,10 @@ exports[`4. an inline image 1`] = `
         <View
           style={
             Object {
-              "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1194,
+              "overflow": "hidden",
+              "width": undefined,
             }
           }
         />
@@ -269,50 +191,24 @@ exports[`4. an inline image 1`] = `
         <View
           style={
             Object {
-              "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1194,
+              "overflow": "hidden",
+              "width": undefined,
             }
           }
         >
-          <View>
-            <ArticleImage />
-          </View>
+          <ArticleImage />
         </View>
       </View>
       <View>
         <View
           style={
             Object {
-              "alignSelf": "center",
               "backgroundColor": "#ffffff",
               "maxWidth": "100%",
-              "width": 1194,
-            }
-          }
-        />
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "alignSelf": "center",
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "width": 1194,
-            }
-          }
-        />
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "alignSelf": "center",
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "width": 1194,
+              "overflow": "hidden",
+              "width": undefined,
             }
           }
         >

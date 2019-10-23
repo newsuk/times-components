@@ -4,12 +4,10 @@ import styles from "./styles";
 
 export default {
   bold(key, attributes, renderedChildren) {
-    return {
-      element: (
-        <Text key={key} style={styles.bold}>
-          {renderedChildren}
-        </Text>
-      )
-    };
+    return (
+      <Text key={key} style={styles.bold}>
+        {renderedChildren}
+      </Text>
+    );
   }
 };

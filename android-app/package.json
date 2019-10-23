@@ -11,14 +11,16 @@
     "start": "react-native start --config metro.config.js"
   },
   "dependencies": {
+    "@times-components/typeset": "0.0.1",
     "@times-components/pages": "2.0.227",
-    "@times-components/text-flow": "0.2.15",
     "prop-types": "15.7.2",
     "react": "16.9.0",
-    "react-native": "0.59.10",
-    "react-native-device-info": "2.3.2",
-    "react-native-svg": "9.4.0",
-    "react-native-webview": "5.10.0",
+    "react-native": "0.61.1",
+    "react-native-device-info": "3.0.0",
+    "react-native-svg": "9.11.1",
+    "react-native-v8": "latest",
+    "v8-android": "7.5.1",
+    "react-native-webview": "7.0.5",
     "url-polyfill": "1.1.0"
   },
   "devDependencies": {

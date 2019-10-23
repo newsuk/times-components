@@ -60,25 +60,6 @@ exports[`3. break 1`] = `
 </Text>
 `;
 
-exports[`3. subscript with fallback (flow) 1`] = `
-StyledText {
-  "children": Array [
-    MarkupString {
-      "text": "without unicode support",
-    },
-  ],
-  "style": TextStyle {
-    "characterCase": null,
-    "fillColor": null,
-    "font": null,
-    "size": 10,
-    "strokeColor": null,
-    "strokeWidth": null,
-    "tracking": null,
-  },
-}
-`;
-
 exports[`4. emphasis 1`] = `
 <Text
   style={
@@ -89,25 +70,6 @@ exports[`4. emphasis 1`] = `
 >
   some emphasised text here
 </Text>
-`;
-
-exports[`4. superscript with fallback (flow) 1`] = `
-StyledText {
-  "children": Array [
-    MarkupString {
-      "text": "without unicode support",
-    },
-  ],
-  "style": TextStyle {
-    "characterCase": null,
-    "fillColor": null,
-    "font": null,
-    "size": 10,
-    "strokeColor": null,
-    "strokeWidth": null,
-    "tracking": null,
-  },
-}
 `;
 
 exports[`5. image tag 1`] = `<View />`;

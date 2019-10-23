@@ -25,7 +25,7 @@ exports[`1. landscape default modal 1`] = `
       <View
         style={
           Object {
-            "padding": 15,
+            "padding": 20,
             "position": "relative",
             "zIndex": 2,
           }
@@ -36,11 +36,11 @@ exports[`1. landscape default modal 1`] = `
             Object {
               "alignItems": "center",
               "backgroundColor": "rgba(0, 0, 0, 0.5)",
-              "borderRadius": 25,
-              "height": 25,
+              "borderRadius": 30,
+              "height": 30,
               "justifyContent": "center",
               "opacity": 1,
-              "width": 25,
+              "width": 30,
             }
           }
         >
@@ -166,7 +166,7 @@ exports[`1. landscape default modal 1`] = `
           <View
             style={
               Object {
-                "margin": 15,
+                "margin": 20,
               }
             }
           >
@@ -291,7 +291,7 @@ exports[`2. portrait default modal 1`] = `
       <View
         style={
           Object {
-            "padding": 15,
+            "padding": 20,
             "position": "relative",
             "zIndex": 2,
           }
@@ -302,11 +302,11 @@ exports[`2. portrait default modal 1`] = `
             Object {
               "alignItems": "center",
               "backgroundColor": "rgba(0, 0, 0, 0.5)",
-              "borderRadius": 25,
-              "height": 25,
+              "borderRadius": 30,
+              "height": 30,
               "justifyContent": "center",
               "opacity": 1,
-              "width": 25,
+              "width": 30,
             }
           }
         >
@@ -432,7 +432,7 @@ exports[`2. portrait default modal 1`] = `
           <View
             style={
               Object {
-                "margin": 15,
+                "margin": 20,
               }
             }
           >

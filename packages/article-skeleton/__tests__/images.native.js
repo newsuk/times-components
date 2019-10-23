@@ -1,3 +1,4 @@
+/* eslint-disable global-require */
 import {
   addSerializers,
   compose,
@@ -6,7 +7,25 @@ import {
   minimalNativeTransform
 } from "@times-components/jest-serializer";
 import "./mocks.native";
+import { FontStorage } from "@times-components/typeset";
 import shared from "./images.base";
+
+FontStorage.registerFont(
+  "TimesDigitalW04-Normal",
+  () => require("@times-components/test-utils").TestFont
+);
+FontStorage.registerFont(
+  "TimesDigitalW04-Bold",
+  () => require("@times-components/test-utils").TestFont
+);
+FontStorage.registerFont(
+  "TimesDigitalW04-Italic",
+  () => require("@times-components/test-utils").TestFont
+);
+FontStorage.registerFont(
+  "TimesModern-Regular",
+  () => require("@times-components/test-utils").TestFont
+);
 
 const omitKeys = new Set([
   "data",

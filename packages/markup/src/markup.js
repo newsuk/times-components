@@ -18,84 +18,60 @@ const styles = StyleSheet.create({
 
 export default {
   block(key, attributes, renderedChildren) {
-    return {
-      element: <View key={key}>{renderedChildren}</View>
-    };
+    return <View key={key}>{renderedChildren}</View>;
   },
   bold(key, attributes, renderedChildren) {
-    return {
-      element: (
-        <Text key={key} style={styles.bold}>
-          {renderedChildren}
-        </Text>
-      )
-    };
+    return (
+      <Text key={key} style={styles.bold}>
+        {renderedChildren}
+      </Text>
+    );
   },
   break(key) {
-    return {
-      element: <Text key={key}>{"\n"}</Text>
-    };
+    return <Text key={key}>{"\n"}</Text>;
   },
   emphasis(key, attributes, renderedChildren) {
-    return {
-      element: (
-        <Text key={key} style={styles.italic}>
-          {renderedChildren}
-        </Text>
-      )
-    };
+    return (
+      <Text key={key} style={styles.italic}>
+        {renderedChildren}
+      </Text>
+    );
   },
   inline(key, attributes, renderedChildren) {
-    return {
-      element: <Text key={key}>{renderedChildren}</Text>
-    };
+    return <Text key={key}>{renderedChildren}</Text>;
   },
   italic(key, attributes, renderedChildren) {
-    return {
-      element: (
-        <Text key={key} style={styles.italic}>
-          {renderedChildren}
-        </Text>
-      )
-    };
+    return (
+      <Text key={key} style={styles.italic}>
+        {renderedChildren}
+      </Text>
+    );
   },
   paragraph(key, attributes, renderedChildren) {
-    return {
-      element: <Text key={key}>{renderedChildren}</Text>
-    };
+    return <Text key={key}>{renderedChildren}</Text>;
   },
   strong(key, attributes, renderedChildren) {
-    return {
-      element: (
-        <Text key={key} style={styles.bold}>
-          {renderedChildren}
-        </Text>
-      )
-    };
+    return (
+      <Text key={key} style={styles.bold}>
+        {renderedChildren}
+      </Text>
+    );
   },
   subscript(key, attributes, renderedChildren) {
-    return {
-      element: (
-        <Text key={key} style={styles.subscript}>
-          {renderedChildren}
-        </Text>
-      )
-    };
+    return (
+      <Text key={key} style={styles.subscript}>
+        {renderedChildren}
+      </Text>
+    );
   },
   superscript(key, attributes, renderedChildren) {
-    return {
-      element: (
-        <Text key={key} style={styles.superscript}>
-          {renderedChildren}
-        </Text>
-      )
-    };
+    return (
+      <Text key={key} style={styles.superscript}>
+        {renderedChildren}
+      </Text>
+    );
   },
   text(key, { value }) {
-    return {
-      element: value
-    };
+    return value;
   }
 };
-
-export { default as flow } from "./markup-flow";

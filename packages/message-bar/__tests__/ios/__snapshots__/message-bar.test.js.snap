@@ -8,7 +8,9 @@ exports[`1. renders correctly 1`] = `
         test message
       </Text>
       <View>
-        <View>
+        <View
+          focusable={true}
+        >
           <ARTSurfaceView>
             <ARTGroup
               opacity={1}

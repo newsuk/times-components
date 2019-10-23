@@ -27,33 +27,29 @@ const renderParagraph = ({ select, boolean }, ast) => {
   return renderTree(ast || dropCapAst, {
     ...coreRenderers,
     dropCap(key, { value }) {
-      return {
-        element: enableDropcap && (
+      return (
+        enableDropcap && (
           <DropCapView {...{ colour, font, key }}>
             {unescape(value)}
           </DropCapView>
         )
-      };
+      );
     },
     paragraph(key, attributes, children, indx, node) {
-      return {
-        element: (
-          <ArticleParagraph ast={node} key={indx} uid={indx}>
-            {children}
-          </ArticleParagraph>
-        )
-      };
+      return (
+        <ArticleParagraph ast={node} key={indx} uid={indx}>
+          {children}
+        </ArticleParagraph>
+      );
     },
     link(key, attributes, children) {
       const { href, target, dropCap } = attributes;
 
-      return {
-        element: (
-          <ArticleLink dropCap={dropCap} key={key} target={target} url={href}>
-            {children}
-          </ArticleLink>
-        )
-      };
+      return (
+        <ArticleLink dropCap={dropCap} key={key} target={target} url={href}>
+          {children}
+        </ArticleLink>
+      );
     }
   });
 };

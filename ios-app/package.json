@@ -11,11 +11,12 @@
   },
   "dependencies": {
     "@times-components/pages": "2.0.227",
-    "@times-components/text-flow": "0.2.15",
+    "@times-components/typeset": "0.0.1",
     "prop-types": "15.7.2",
     "react": "16.9.0",
-    "react-native": "0.59.10",
-    "url-polyfill": "1.1.0"
+    "react-native": "0.61.1",
+    "url-polyfill": "1.1.0",
+    "opentype.js": "1.1.0"
   },
   "devDependencies": {
     "metro-react-native-babel-preset": "0.53.1",

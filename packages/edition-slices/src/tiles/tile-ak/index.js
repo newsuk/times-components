@@ -21,6 +21,10 @@ const TileAK = ({
   const styles = stylesFactory(breakpoint);
   const { puzzleContainer, header, headline, imageContainer } = styles;
 
+  if (!crop) {
+    return null;
+  }
+
   return (
     <Link
       key={id}

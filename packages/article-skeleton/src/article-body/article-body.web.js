@@ -42,98 +42,81 @@ export const responsiveDisplayWrapper = displayType => {
 const renderers = ({ observed, registerNode, paidContentClassName }) => ({
   ...coreRenderers,
   ad(key, attributes) {
-    return {
-      element: (
-        <Ad key={key} slotName="inline-ad" style={styles.ad} {...attributes} />
-      )
-    };
+    return (
+      <Ad key={key} slotName="inline-ad" style={styles.ad} {...attributes} />
+    );
   },
   dropCap(key, attrs, children) {
-    return {
-      element: (
-        <Context.Consumer key={key}>
-          {({
-            theme: { dropCapFont, sectionColour = colours.section.default }
-          }) => (
-            <DropCapView colour={sectionColour} font={dropCapFont}>
-              {children}
-            </DropCapView>
-          )}
-        </Context.Consumer>
-      )
-    };
+    return (
+      <Context.Consumer key={key}>
+        {({
+          theme: { dropCapFont, sectionColour = colours.section.default }
+        }) => (
+          <DropCapView colour={sectionColour} font={dropCapFont}>
+            {children}
+          </DropCapView>
+        )}
+      </Context.Consumer>
+    );
   },
   image(key, { display, ratio, url, caption, credits }) {
     const MediaWrapper = responsiveDisplayWrapper(display);
-    return {
-      element: (
-        <div id={key} key={key} ref={node => registerNode(node)}>
-          <MediaWrapper>
-            <ArticleImage
-              captionOptions={{
-                caption,
-                credits
-              }}
-              imageOptions={{
-                display,
-                highResSize: observed.get(key)
-                  ? observed.get(key).clientWidth
-                  : null,
-                lowResSize: 100,
-                ratio,
-                uri: url
-              }}
-            />
-          </MediaWrapper>
-        </div>
-      )
-    };
+    return (
+      <div id={key} key={key} ref={node => registerNode(node)}>
+        <MediaWrapper>
+          <ArticleImage
+            captionOptions={{
+              caption,
+              credits
+            }}
+            imageOptions={{
+              display,
+              highResSize: observed.get(key)
+                ? observed.get(key).clientWidth
+                : null,
+              lowResSize: 100,
+              ratio,
+              uri: url
+            }}
+          />
+        </MediaWrapper>
+      </div>
+    );
   },
   interactive(key, { url, element, display }) {
     const { attributes, value } = element;
-    return {
-      element: (
-        <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
-          <InteractiveWrapper
-            attributes={attributes}
-            element={value}
-            key={key}
-            source={url}
-          />
-        </InteractiveContainer>
-      )
-    };
+    return (
+      <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
+        <InteractiveWrapper
+          attributes={attributes}
+          element={value}
+          key={key}
+          source={url}
+        />
+      </InteractiveContainer>
+    );
   },
   keyFacts(key, attributes, renderedChildren, indx, node) {
-    return {
-      element: <KeyFacts ast={node} key={key} />,
-      shouldRenderChildren: false
-    };
+    return <KeyFacts ast={node} key={key} />;
   },
   link(key, attributes, children) {
     const { href, target, dropCap } = attributes;
 
-    return {
-      element: (
-        <ArticleLink dropCap={dropCap} key={key} target={target} url={href}>
-          {children}
-        </ArticleLink>
-      )
-    };
+    return (
+      <ArticleLink dropCap={dropCap} key={key} target={target} url={href}>
+        {children}
+      </ArticleLink>
+    );
   },
   paragraph(key, attributes, children) {
-    return {
-      element: <ArticleParagraph key={key}>{children}</ArticleParagraph>
-    };
+    return <ArticleParagraph key={key}>{children}</ArticleParagraph>;
   },
   paywall(key, attributes, children) {
-    return {
-      element: (
-        <span className={paidContentClassName} key={key}>
-          {children}
-        </span>
-      )
-    };
+    return (
+      <span className={paidContentClassName} key={key}>
+        {children}
+      </span>
+    );
   },
   pullQuote(
     key,
@@ -142,29 +125,27 @@ const renderers = ({ observed, registerNode, paidContentClassName }) => ({
     },
     children
   ) {
-    return {
-      element: (
-        <Context.Consumer key={key}>
-          {({
-            theme: { pullQuoteFont, sectionColour = colours.section.default }
-          }) => (
-            <PullQuoteContainer>
-              <PullQuoteResp>
-                <PullQuote
-                  caption={name}
-                  font={pullQuoteFont}
-                  quoteColour={sectionColour}
-                  text={text}
-                  twitter={twitter}
-                >
-                  {children}
-                </PullQuote>
-              </PullQuoteResp>
-            </PullQuoteContainer>
-          )}
-        </Context.Consumer>
-      )
-    };
+    return (
+      <Context.Consumer key={key}>
+        {({
+          theme: { pullQuoteFont, sectionColour = colours.section.default }
+        }) => (
+          <PullQuoteContainer>
+            <PullQuoteResp>
+              <PullQuote
+                caption={name}
+                font={pullQuoteFont}
+                quoteColour={sectionColour}
+                text={text}
+                twitter={twitter}
+              >
+                {children}
+              </PullQuote>
+            </PullQuoteResp>
+          </PullQuoteContainer>
+        )}
+      </Context.Consumer>
+    );
   },
   video(
     key,
@@ -181,31 +162,29 @@ const renderers = ({ observed, registerNode, paidContentClassName }) => ({
     }
   ) {
     const MediaWrapper = responsiveDisplayWrapper("primary");
-    return {
-      element: (
-        <MediaWrapper key={key}>
-          <figure style={{ margin: 0 }}>
-            <AspectRatioContainer aspectRatio="16:9">
-              <Video
-                id={id}
-                is360={is360}
-                accountId={brightcoveAccountId}
-                height="100%"
-                playerId={brightcovePlayerId}
-                policyKey={brightcovePolicyKey}
-                poster={{ uri: posterImageUrl }}
-                skySports={skysports}
-                videoId={brightcoveVideoId}
-                width="100%"
-              />
-            </AspectRatioContainer>
-            <figcaption>
-              <InsetCaption caption={caption} />
-            </figcaption>
-          </figure>
-        </MediaWrapper>
-      )
-    };
+    return (
+      <MediaWrapper key={key}>
+        <figure style={{ margin: 0 }}>
+          <AspectRatioContainer aspectRatio="16:9">
+            <Video
+              id={id}
+              is360={is360}
+              accountId={brightcoveAccountId}
+              height="100%"
+              playerId={brightcovePlayerId}
+              policyKey={brightcovePolicyKey}
+              poster={{ uri: posterImageUrl }}
+              skySports={skysports}
+              videoId={brightcoveVideoId}
+              width="100%"
+            />
+          </AspectRatioContainer>
+          <figcaption>
+            <InsetCaption caption={caption} />
+          </figcaption>
+        </figure>
+      </MediaWrapper>
+    );
   }
 });
 

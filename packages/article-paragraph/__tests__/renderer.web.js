@@ -20,22 +20,18 @@ export default (ast, section = "default") => {
       {renderTree(ast, {
         ...coreRenderers,
         dropCap(key, { value }) {
-          return {
-            element: (
-              <DropCapView font={theme.dropCapFont} key={key}>
-                {value}
-              </DropCapView>
-            )
-          };
+          return (
+            <DropCapView font={theme.dropCapFont} key={key}>
+              {value}
+            </DropCapView>
+          );
         },
         paragraph(key, attributes, children, indx, node) {
-          return {
-            element: (
-              <ArticleParagraph ast={node} key={indx} uid={indx}>
-                {children}
-              </ArticleParagraph>
-            )
-          };
+          return (
+            <ArticleParagraph ast={node} key={indx} uid={indx}>
+              {children}
+            </ArticleParagraph>
+          );
         }
       })}
     </ContextProviderWithDefaults>

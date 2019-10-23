@@ -3,25 +3,15 @@
 exports[`1. a primary image 1`] = `
 <View>
   <RCTScrollView
-    ListHeaderComponent={
-      <Gutter>
-        <Header
-          width={750}
-        />
-      </Gutter>
-    }
-    initialListSize={10}
-    initialNumToRender={10}
+    initialNumToRender={3}
     maxToRenderPerBatch={10}
     nestedScrollEnabled={true}
-    numColumns={1}
     onEndReachedThreshold={2}
-    pageSize={1}
     removeClippedSubviews={true}
     scrollEventThrottle={50}
-    scrollRenderAheadDistance={10}
+    showsVerticalScrollIndicator={false}
     updateCellsBatchingPeriod={50}
-    windowSize={21}
+    windowSize={3}
   >
     <View>
       <View>
@@ -29,34 +19,26 @@ exports[`1. a primary image 1`] = `
       </View>
       <View>
         <View>
-          <View>
-            <ArticleImage
-              captionOptions={
-                Object {
-                  "caption": "A Caption",
-                  "credits": "Some Credits",
-                }
+          <ArticleImage
+            captionOptions={
+              Object {
+                "caption": "A Caption",
+                "credits": "Some Credits",
               }
-              imageOptions={
-                Object {
-                  "display": "primary",
-                  "ratio": "3:2",
-                  "relativeHeight": undefined,
-                  "relativeHorizontalOffset": undefined,
-                  "relativeVerticalOffset": undefined,
-                  "relativeWidth": undefined,
-                  "uri": "https://image-2.io",
-                }
+            }
+            imageOptions={
+              Object {
+                "display": "primary",
+                "ratio": "3:2",
+                "relativeHeight": undefined,
+                "relativeHorizontalOffset": undefined,
+                "relativeVerticalOffset": undefined,
+                "relativeWidth": undefined,
+                "uri": "https://image-2.io",
               }
-            />
-          </View>
+            }
+          />
         </View>
-      </View>
-      <View>
-        <View />
-      </View>
-      <View>
-        <View />
       </View>
       <View>
         <View>
@@ -74,25 +56,15 @@ exports[`1. a primary image 1`] = `
 exports[`2. a fullwidth image 1`] = `
 <View>
   <RCTScrollView
-    ListHeaderComponent={
-      <Gutter>
-        <Header
-          width={750}
-        />
-      </Gutter>
-    }
-    initialListSize={10}
-    initialNumToRender={10}
+    initialNumToRender={3}
     maxToRenderPerBatch={10}
     nestedScrollEnabled={true}
-    numColumns={1}
     onEndReachedThreshold={2}
-    pageSize={1}
     removeClippedSubviews={true}
     scrollEventThrottle={50}
-    scrollRenderAheadDistance={10}
+    showsVerticalScrollIndicator={false}
     updateCellsBatchingPeriod={50}
-    windowSize={21}
+    windowSize={3}
   >
     <View>
       <View>
@@ -100,34 +72,26 @@ exports[`2. a fullwidth image 1`] = `
       </View>
       <View>
         <View>
-          <View>
-            <ArticleImage
-              captionOptions={
-                Object {
-                  "caption": "A Caption",
-                  "credits": "Some Credits",
-                }
+          <ArticleImage
+            captionOptions={
+              Object {
+                "caption": "A Caption",
+                "credits": "Some Credits",
               }
-              imageOptions={
-                Object {
-                  "display": "fullwidth",
-                  "ratio": "3:2",
-                  "relativeHeight": undefined,
-                  "relativeHorizontalOffset": undefined,
-                  "relativeVerticalOffset": undefined,
-                  "relativeWidth": undefined,
-                  "uri": "https://image-2.io",
-                }
+            }
+            imageOptions={
+              Object {
+                "display": "fullwidth",
+                "ratio": "3:2",
+                "relativeHeight": undefined,
+                "relativeHorizontalOffset": undefined,
+                "relativeVerticalOffset": undefined,
+                "relativeWidth": undefined,
+                "uri": "https://image-2.io",
               }
-            />
-          </View>
+            }
+          />
         </View>
-      </View>
-      <View>
-        <View />
-      </View>
-      <View>
-        <View />
       </View>
       <View>
         <View>
@@ -145,25 +109,15 @@ exports[`2. a fullwidth image 1`] = `
 exports[`3. a secondary image 1`] = `
 <View>
   <RCTScrollView
-    ListHeaderComponent={
-      <Gutter>
-        <Header
-          width={750}
-        />
-      </Gutter>
-    }
-    initialListSize={10}
-    initialNumToRender={10}
+    initialNumToRender={3}
     maxToRenderPerBatch={10}
     nestedScrollEnabled={true}
-    numColumns={1}
     onEndReachedThreshold={2}
-    pageSize={1}
     removeClippedSubviews={true}
     scrollEventThrottle={50}
-    scrollRenderAheadDistance={10}
+    showsVerticalScrollIndicator={false}
     updateCellsBatchingPeriod={50}
-    windowSize={21}
+    windowSize={3}
   >
     <View>
       <View>
@@ -171,34 +125,26 @@ exports[`3. a secondary image 1`] = `
       </View>
       <View>
         <View>
-          <View>
-            <ArticleImage
-              captionOptions={
-                Object {
-                  "caption": "A Caption",
-                  "credits": "Some Credits",
-                }
+          <ArticleImage
+            captionOptions={
+              Object {
+                "caption": "A Caption",
+                "credits": "Some Credits",
               }
-              imageOptions={
-                Object {
-                  "display": "secondary",
-                  "ratio": "3:2",
-                  "relativeHeight": undefined,
-                  "relativeHorizontalOffset": undefined,
-                  "relativeVerticalOffset": undefined,
-                  "relativeWidth": undefined,
-                  "uri": "https://image-2.io",
-                }
+            }
+            imageOptions={
+              Object {
+                "display": "secondary",
+                "ratio": "3:2",
+                "relativeHeight": undefined,
+                "relativeHorizontalOffset": undefined,
+                "relativeVerticalOffset": undefined,
+                "relativeWidth": undefined,
+                "uri": "https://image-2.io",
               }
-            />
-          </View>
+            }
+          />
         </View>
-      </View>
-      <View>
-        <View />
-      </View>
-      <View>
-        <View />
       </View>
       <View>
         <View>
@@ -216,25 +162,15 @@ exports[`3. a secondary image 1`] = `
 exports[`4. an inline image 1`] = `
 <View>
   <RCTScrollView
-    ListHeaderComponent={
-      <Gutter>
-        <Header
-          width={750}
-        />
-      </Gutter>
-    }
-    initialListSize={10}
-    initialNumToRender={10}
+    initialNumToRender={3}
     maxToRenderPerBatch={10}
     nestedScrollEnabled={true}
-    numColumns={1}
     onEndReachedThreshold={2}
-    pageSize={1}
     removeClippedSubviews={true}
     scrollEventThrottle={50}
-    scrollRenderAheadDistance={10}
+    showsVerticalScrollIndicator={false}
     updateCellsBatchingPeriod={50}
-    windowSize={21}
+    windowSize={3}
   >
     <View>
       <View>
@@ -242,34 +178,26 @@ exports[`4. an inline image 1`] = `
       </View>
       <View>
         <View>
-          <View>
-            <ArticleImage
-              captionOptions={
-                Object {
-                  "caption": "A Caption",
-                  "credits": "Some Credits",
-                }
+          <ArticleImage
+            captionOptions={
+              Object {
+                "caption": "A Caption",
+                "credits": "Some Credits",
               }
-              imageOptions={
-                Object {
-                  "display": "secondary",
-                  "ratio": "9:4",
-                  "relativeHeight": undefined,
-                  "relativeHorizontalOffset": undefined,
-                  "relativeVerticalOffset": undefined,
-                  "relativeWidth": undefined,
-                  "uri": "https://image-inline.io",
-                }
+            }
+            imageOptions={
+              Object {
+                "display": "inline",
+                "ratio": "9:4",
+                "relativeHeight": undefined,
+                "relativeHorizontalOffset": undefined,
+                "relativeVerticalOffset": undefined,
+                "relativeWidth": undefined,
+                "uri": "https://image-inline.io",
               }
-            />
-          </View>
+            }
+          />
         </View>
-      </View>
-      <View>
-        <View />
-      </View>
-      <View>
-        <View />
       </View>
       <View>
         <View>

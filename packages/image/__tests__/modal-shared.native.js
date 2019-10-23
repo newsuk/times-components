@@ -101,7 +101,7 @@ export default () => {
     {
       name: "modal image uses screen width to set highResSize",
       test: () => {
-        const width = 1200;
+        const width = 750;
         const testInstance = TestRenderer.create(
           <Responsive>
             <ModalImage {...props} />

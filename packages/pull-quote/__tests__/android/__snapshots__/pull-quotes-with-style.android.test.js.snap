@@ -4,7 +4,7 @@ exports[`different colours 1`] = `
 <View
   style={
     Object {
-      "marginBottom": 30,
+      "marginBottom": 10,
       "marginTop": 0,
       "paddingLeft": 10,
       "paddingRight": 10,

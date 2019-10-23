@@ -1,7 +1,6 @@
 import React from "react";
-import { View, Text } from "react-native";
+import { View } from "react-native";
 import PropTypes from "prop-types";
-import Context from "@times-components/context";
 import { ResponsiveContext } from "@times-components/responsive";
 import styleFactory from "./styles";
 
@@ -13,27 +12,18 @@ const BodyParagraph = props => (
       <View
         style={[
           styles.articleMainContentRow,
+          styles.articleTextElement,
           isTablet && styles.articleMainContentRowTablet
         ]}
       >
-        <Context.Consumer>
-          {({ theme: { dropCapFont, scale } }) => {
-            const stylesScaled = styleFactory(dropCapFont, scale);
-
-            if (typeof props.children === "function") {
-              return props.children(stylesScaled.articleTextElement);
-            }
-
-            return <Text selectable>{props.children}</Text>;
-          }}
-        </Context.Consumer>
+        <View>{props.children}</View>
       </View>
     )}
   </ResponsiveContext.Consumer>
 );
 
 BodyParagraph.propTypes = {
-  children: PropTypes.func.isRequired
+  children: PropTypes.node.isRequired
 };
 
 export default BodyParagraph;

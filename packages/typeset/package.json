@@ -1,0 +1,96 @@
+{
+  "name": "@times-components/typeset",
+  "version": "0.0.1",
+  "description": "A package for markup layout with arbitrary shapes",
+  "main": "build/main/index.js",
+  "typings": "build/main/index.d.ts",
+  "module": "build/module/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newsuk/times-components.git"
+  },
+  "keywords": [],
+  "author": "News UK & Ireland Ltd",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/newsuk/times-components/issues"
+  },
+  "homepage": "https://github.com/newsuk/times-components#readme",
+  "scripts": {
+    "describe": "npm-scripts-info",
+    "transpile": "run-s build",
+    "build": "run-s clean && run-p build:*",
+    "build:main": "tsc -p tsconfig.json",
+    "build:module": "tsc -p tsconfig.module.json",
+    "fix": "run-s fix:*",
+    "fix:prettier": "prettier \"src/**/*.ts\" \"__tests__/**/*.ts\" --write",
+    "fix:tslint": "tslint --fix --project .",
+    "test": "jest",
+    "test:lint": "tslint --project . && prettier \"src/**/*.ts\" --list-different",
+    "test:unit": "jest --coverage",
+    "watch": "run-s clean build:main && run-p \"build:main -- -w\" \"test:unit -- --watch\"",
+    "doc": "run-s doc:html && open-cli build/docs/index.html",
+    "doc:publish": "gh-pages -m \"[ci skip] Updates\" -d build/docs",
+    "version": "standard-version",
+    "reset": "git clean -dfx && git reset --hard && npm i",
+    "clean": "trash build test"
+  },
+  "scripts-info": {
+    "info": "Display information about the package scripts",
+    "build": "Clean and rebuild the project",
+    "fix": "Try to automatically fix any linting problems",
+    "test": "Lint and unit test the project",
+    "watch": "Watch and rebuild the project on save, then rerun relevant tests",
+    "cov": "Rebuild, run tests, then create and open the coverage report",
+    "version": "Bump package.json version, update CHANGELOG.md, tag release",
+    "reset": "Delete all untracked files and reset the repo to the last commit",
+    "prepare-release": "One-step: clean, build, test, publish docs, and prep a release"
+  },
+  "engines": {
+    "node": ">=8.9"
+  },
+  "dependencies": {
+    "@simple-dom/document": "1.4.0",
+    "@simple-dom/parser": "1.4.0",
+    "@simple-dom/void-map": "1.4.0",
+    "abs-svg-path": "0.1.1",
+    "hyphenation.en-gb": "0.2.1",
+    "opentype.js": "1.1.0",
+    "parse-svg-path": "0.1.2",
+    "point-in-polygon": "1.0.1",
+    "simple-html-tokenizer": "0.5.8",
+    "simplify-geometry": "0.0.2",
+    "svg-path-properties": "0.5.2",
+    "tex-linebreak": "0.5.2"
+  },
+  "devDependencies": {
+    "@bitjson/npm-scripts-info": "1.0.0",
+    "@istanbuljs/nyc-config-typescript": "0.1.3",
+    "@simple-dom/interface": "1.4.0",
+    "@times-components/test-utils": "2.3.7",
+    "@types/point-in-polygon": "1.0.0",
+    "@types/react-test-renderer": "16.9.0",
+    "@types/node": "12.7.12",
+    "codecov": "3.6.1",
+    "cz-conventional-changelog": "2.1.0",
+    "gh-pages": "2.0.1",
+    "jest": "24.8.0",
+    "npm-run-all": "4.1.5",
+    "open-cli": "5.0.0",
+    "prettier": "1.14.3",
+    "standard-version": "6.0.1",
+    "trash-cli": "3.0.0",
+    "tslint": "5.18.0",
+    "tslint-config-prettier": "1.18.0",
+    "tslint-immutable": "6.0.1",
+    "typescript": "3.5.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "prettier": {
+    "singleQuote": true
+  }
+}

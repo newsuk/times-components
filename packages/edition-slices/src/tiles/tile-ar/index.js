@@ -19,6 +19,10 @@ const TileAR = ({ onPress, tile, breakpoint = editionBreakpoints.medium }) => {
   const crop = getTileImage(tile, "crop169");
   const styles = stylesResolver(breakpoint);
 
+  if (!crop) {
+    return null;
+  }
+
   return (
     <TileLink onPress={onPress} style={styles.container} tile={tile}>
       <View style={styles.imageContainer}>

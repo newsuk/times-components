@@ -182,7 +182,6 @@ class DOMContext extends PureComponent {
         </body>
       </html>
     `;
-    const { loaded } = this.state;
     return (
       <ViewportAwareView
         onViewportEnter={this.loadAd}
@@ -191,25 +190,21 @@ class DOMContext extends PureComponent {
           width
         }}
       >
-        {loaded && (
-          <WebView
-            onMessage={this.handleMessageEvent}
-            onNavigationStateChange={this.handleNavigationStateChange}
-            originWhitelist={
-              Platform.OS === "android"
-                ? ["http://.*", "https://.*"]
-                : undefined
-            }
-            ref={ref => {
-              this.webView = ref;
-            }}
-            source={{
-              baseUrl,
-              html
-            }}
-            style={{ position: "absolute", width, height }}
-          />
-        )}
+        <WebView
+          onMessage={this.handleMessageEvent}
+          onNavigationStateChange={this.handleNavigationStateChange}
+          originWhitelist={
+            Platform.OS === "android" ? ["http://.*", "https://.*"] : undefined
+          }
+          ref={ref => {
+            this.webView = ref;
+          }}
+          source={{
+            baseUrl,
+            html
+          }}
+          style={{ position: "absolute", width, height }}
+        />
         {height !== 0 && (
           <ViewportAwareView
             onViewportEnter={this.inViewport}

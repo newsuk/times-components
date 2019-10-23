@@ -42,23 +42,17 @@ iterator([
     test: () => {
       const output = renderTree(mixtureAST, {
         block(key, attributes, renderedChildren) {
-          return {
-            element: <div key={key}>{renderedChildren}</div>
-          };
+          return <div key={key}>{renderedChildren}</div>;
         },
         link(key, attributes, renderedChildren) {
-          return {
-            element: (
-              <a href={attributes.href} key={key}>
-                {renderedChildren}
-              </a>
-            )
-          };
+          return (
+            <a href={attributes.href} key={key}>
+              {renderedChildren}
+            </a>
+          );
         },
         text(key, { value }) {
-          return {
-            element: value
-          };
+          return value;
         }
       });
 
@@ -70,19 +64,13 @@ iterator([
     test: () => {
       const output = renderTree(nestedAST, {
         block(key, attributes, renderedChildren) {
-          return {
-            element: <div key={key}>{renderedChildren}</div>
-          };
+          return <div key={key}>{renderedChildren}</div>;
         },
         inline(key, attributes, renderedChildren) {
-          return {
-            element: <span key={key}>{renderedChildren}</span>
-          };
+          return <span key={key}>{renderedChildren}</span>;
         },
         text(key, { value }) {
-          return {
-            element: value
-          };
+          return value;
         }
       });
 
@@ -94,25 +82,16 @@ iterator([
     test: () => {
       const output = renderTree(nestedAST, {
         block(key, attributes, renderedChildren) {
-          return {
-            element: <div key={key}>{renderedChildren}</div>
-          };
+          return <div key={key}>{renderedChildren}</div>;
         },
         inline(key, attributes, renderedChildren) {
-          return {
-            element: <span key={key}>{renderedChildren}</span>
-          };
+          return <span key={key}>{renderedChildren}</span>;
         },
         specialElement(key, attributes, renderedChildren) {
-          return {
-            element: <special key={key}>{renderedChildren}</special>,
-            shouldRenderChildren: false
-          };
+          return <special key={key}>{renderedChildren}</special>;
         },
         text(key, { value }) {
-          return {
-            element: value
-          };
+          return value;
         }
       });
 
@@ -124,27 +103,18 @@ iterator([
     test: () => {
       const output = renderTree(nestedAST, {
         block(key, attributes, renderedChildren) {
-          return {
-            element: renderedChildren
-          };
+          return renderedChildren;
         },
         inline(key, attributes, renderedChildren) {
-          return {
-            element: renderedChildren
-          };
+          return renderedChildren;
         },
         specialElement(key, attributes, renderedChildren, indx, node) {
-          return {
-            element: (
-              <special key={key}>{`special: ${JSON.stringify(node)}`}</special>
-            ),
-            shouldRenderChildren: false
-          };
+          return (
+            <special key={key}>{`special: ${JSON.stringify(node)}`}</special>
+          );
         },
         text(key, attributes, renderedChildren) {
-          return {
-            element: renderedChildren
-          };
+          return renderedChildren;
         }
       });
 
@@ -156,25 +126,16 @@ iterator([
     test: () => {
       const output = renderTree(nestedAST, {
         block(key, attributes, renderedChildren) {
-          return {
-            element: renderedChildren
-          };
+          return renderedChildren;
         },
         inline(key, attributes, renderedChildren) {
-          return {
-            element: renderedChildren
-          };
+          return renderedChildren;
         },
         specialElement(key, attributes, renderedChildren) {
-          return {
-            element: renderedChildren,
-            shouldRenderChildren: false
-          };
+          return renderedChildren;
         },
         text(key, attributes, renderedChildren, indx, node) {
-          return {
-            element: <div key={key}>{`special: ${JSON.stringify(node)}`}</div>
-          };
+          return <div key={key}>{`special: ${JSON.stringify(node)}`}</div>;
         }
       });
 
@@ -186,25 +147,16 @@ iterator([
     test: () => {
       const output = renderTree(nestedAST, {
         block(key, attributes, renderedChildren) {
-          return {
-            element: renderedChildren
-          };
+          return renderedChildren;
         },
         inline(key, attributes, renderedChildren) {
-          return {
-            element: renderedChildren
-          };
+          return renderedChildren;
         },
         specialElement(key, attributes, renderedChildren) {
-          return {
-            element: renderedChildren,
-            shouldRenderChildren: false
-          };
+          return renderedChildren;
         },
         text(key, attributes, renderedChildren) {
-          return {
-            element: <div key={key}>{renderedChildren.length}</div>
-          };
+          return <div key={key}>{renderedChildren.length}</div>;
         }
       });
 
@@ -218,19 +170,13 @@ iterator([
         <div>
           {renderTrees(bioAST, {
             bold(key, attributes, renderedChildren) {
-              return {
-                element: <strong key={key}>{renderedChildren}</strong>
-              };
+              return <strong key={key}>{renderedChildren}</strong>;
             },
             italic(key, attributes, renderedChildren) {
-              return {
-                element: <em key={key}>{renderedChildren}</em>
-              };
+              return <em key={key}>{renderedChildren}</em>;
             },
             text(key, { value }) {
-              return {
-                element: value
-              };
+              return value;
             }
           })}
         </div>
@@ -246,14 +192,10 @@ iterator([
         <div>
           {renderTrees(paragraphAST, {
             paragraph(key, attributes, renderedChildren) {
-              return {
-                element: <p key={key}>{renderedChildren}</p>
-              };
+              return <p key={key}>{renderedChildren}</p>;
             },
             text(key, { value }) {
-              return {
-                element: value
-              };
+              return value;
             }
           })}
         </div>

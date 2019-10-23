@@ -4,7 +4,7 @@ exports[`1. pull quote in culture magazine 1`] = `
 <View
   style={
     Object {
-      "marginBottom": 30,
+      "marginBottom": 10,
       "marginTop": 0,
       "paddingLeft": 10,
       "paddingRight": 10,
@@ -82,7 +82,7 @@ exports[`2. pull quote in style magazine 1`] = `
 <View
   style={
     Object {
-      "marginBottom": 30,
+      "marginBottom": 10,
       "marginTop": 0,
       "paddingLeft": 10,
       "paddingRight": 10,
@@ -160,7 +160,7 @@ exports[`3. pull quote in the sunday times magazine 1`] = `
 <View
   style={
     Object {
-      "marginBottom": 30,
+      "marginBottom": 10,
       "marginTop": 0,
       "paddingLeft": 10,
       "paddingRight": 10,

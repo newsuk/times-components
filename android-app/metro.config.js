@@ -1,4 +1,7 @@
 const path = require("path");
+const modulePaths = require("./modulePaths");
+const resolve = require("path").resolve;
+const fs = require("fs");
 
 module.exports = (async () => {
   const root = path.resolve(__dirname, "../");
@@ -6,17 +9,25 @@ module.exports = (async () => {
     resolver: {
       providesModuleNodeModules: ["react-native"],
       resolverMainFields: ["react-native", "dev", "browser", "main"],
-      sourceExts: ["js", "gql", "graphql"],
-      hasteImplModulePath: path.join(
-        root,
-        "node_modules/react-native/jest/hasteImpl.js"
-      ),
+      sourceExts: ["tsx", "ts", "js", "gql", "graphql"],
       blacklistRE: /(.*\/__fixtures__\/.*|node_modules[\/\\]react[\/\\]dist[\/\\].*|website\/node_modules\/.*|heapCapture\/bundle\.js|.*\/__tests__\/.*)$/
     },
     transformer: {
       babelTransformerPath: require.resolve(
         "@bam.tech/react-native-graphql-transformer"
-      )
+      ),
+      getTransformOptions: () => {
+        const moduleMap = {};
+        modulePaths.forEach(path => {
+          if (fs.existsSync(path)) {
+            moduleMap[resolve(path)] = true;
+          }
+        });
+        return {
+          preloadedModules: moduleMap,
+          transform: { inlineRequires: { blacklist: moduleMap } }
+        };
+      }
     },
     serializer: {
       getModulesRunBeforeMainModule: () => [

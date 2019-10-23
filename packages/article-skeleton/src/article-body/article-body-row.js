@@ -1,122 +1,352 @@
 /* eslint-disable prefer-destructuring */
-import React from "react";
-import { View } from "react-native";
-import ArticleImage from "@times-components/article-image";
-import ArticleParagraph from "@times-components/article-paragraph";
-import Ad from "@times-components/ad";
-import Context from "@times-components/context";
-import InteractiveWrapper from "@times-components/interactive-wrapper";
-import KeyFacts from "@times-components/key-facts";
-import { renderTree } from "@times-components/markup-forest";
-import { flow } from "@times-components/markup";
-import PullQuote from "@times-components/pull-quote";
+import React, { useState } from "react";
+import { View, Text } from "react-native";
 import styleguide, {
   colours,
   tabletWidth,
-  fonts,
-  spacing
+  fonts
 } from "@times-components/styleguide";
-import { screenWidth } from "@times-components/utils";
-import Video from "@times-components/video";
 import {
-  Layout,
-  Text,
-  MarkupFactory,
-  Markup
-} from "@times-components/text-flow";
-import DropCap from "@times-components/article-paragraph/src/drop-cap";
-import ArticleLink from "./article-link";
+  FontStorage,
+  AttributedString,
+  LayoutManager,
+  TextContainer,
+  BoxExclusion
+} from "@times-components/typeset";
+import { screenWidth } from "@times-components/utils";
+import Ad from "@times-components/ad";
+import ArticleImage from "@times-components/article-image";
+import InteractiveWrapper from "@times-components/interactive-wrapper";
+import KeyFacts from "@times-components/key-facts";
+import PullQuote from "@times-components/pull-quote";
+import Video from "@times-components/video";
+import ArticleParagraph from "@times-components/article-paragraph";
+import Context from "@times-components/context";
 import InsetCaption from "./inset-caption";
 import styleFactory from "../styles/article-body";
-import { getDropCap, getDropCapValue } from "../dropcap-util-common";
+import ArticleLink from "./article-link";
+
+const makeDropCap = (scale, color, dropCapFont, paragraph) => {
+  const letter = paragraph.slice(0, 1);
+  if (!letter.attributes.length) {
+    return false;
+  }
+  const baseStyle = letter.attributes[0].tag.settings;
+  const fontSize = baseStyle.fontSize * 6.6;
+  const fontSettings = {
+    fontFamily: fonts[dropCapFont],
+    fontStyle: "",
+    fontWeight: "",
+    fontSize,
+    color
+  };
+  const font = FontStorage.getFont(fontSettings);
+  const glyph = font.charToGlyph(letter.string);
+  const { x1, x2, y1, y2 } = glyph.getBoundingBox();
+  const width =
+    (x2 * fontSize) / font.unitsPerEm - (x1 * fontSize) / font.unitsPerEm;
+  const advance = font.getAdvanceWidth(letter.string, baseStyle.fontSize);
+  const height =
+    (y2 * fontSize) / font.unitsPerEm - (y1 * fontSize) / font.unitsPerEm;
+  const gutters = (screenWidth() - Math.min(screenWidth(), tabletWidth)) / 2;
+  const exclusion = new BoxExclusion(0, 0, width + advance, height);
+  const element = (
+    <Text
+      style={[
+        {
+          position: "absolute",
+          left: gutters + advance,
+          fontSize,
+          lineHeight: fontSize,
+          top: -(baseStyle.fontSize / 2),
+          fontFamily: fonts[dropCapFont],
+          color: fontSettings.color
+        }
+      ]}
+    >
+      {letter.string}
+    </Text>
+  );
+  return {
+    exclusion,
+    element
+  };
+};
+
+const Paragraph = ({
+  key,
+  children,
+  index,
+  tree,
+  scale,
+  dropcapsDisabled,
+  isTablet,
+  defaultFont,
+  onLinkPress,
+  data,
+  dropCapFont
+}) => {
+  const str = AttributedString.join(
+    children.filter(child => child instanceof AttributedString)
+  );
+  const [inline] = children.filter(
+    child => !(child instanceof AttributedString)
+  );
+
+  const { spacing } = styleguide({ scale });
+
+  const dropCap =
+    !dropcapsDisabled && index === 1
+      ? makeDropCap(scale, colours.section[data.section], dropCapFont, str)
+      : false;
+
+  const [inlineExclusion, setInlineExclusion] = useState(false);
+
+  if (!inline && !dropCap) {
+    return (
+      <ArticleParagraph ast={tree} key={key} uid={key}>
+        <Text>
+          {children.map(child => {
+            const attribute = child.attributes[0];
+            const style = attribute ? attribute.tag.settings : defaultFont;
+            const href = attribute ? attribute.tag.href : null;
+            const type = href ? attribute.tag.type : null;
+            const canonicalId = href ? attribute.tag.canonicalId : null;
+            if (href) {
+              return (
+                <ArticleLink
+                  url={href}
+                  onPress={e =>
+                    onLinkPress(e, { canonicalId, type, url: href })
+                  }
+                >
+                  {child.string}
+                </ArticleLink>
+              );
+            }
+            return <Text style={style}>{child.string}</Text>;
+          })}
+        </Text>
+      </ArticleParagraph>
+    );
+  }
+
+  const contentWidth = Math.min(screenWidth(), tabletWidth);
+  const gutters = (screenWidth() - contentWidth) / 2 + spacing(2);
+
+  const container = new TextContainer(
+    isTablet ? contentWidth : screenWidth() - spacing(4),
+    10000,
+    0,
+    0,
+    dropCap ? [dropCap.exclusion] : []
+  );
+
+  const manager = new LayoutManager(
+    dropCap ? str.slice(1) : str,
+    [container],
+    inlineExclusion ? [inlineExclusion.exclusion] : []
+  );
+
+  const positioned = manager.layout(false);
+
+  const lines = positioned[positioned.length - 1].position.line + 1;
+  return [
+    dropCap && dropCap.element,
+    inline && (
+      <View
+        style={{
+          position: "absolute",
+          left: gutters,
+          width: contentWidth * 0.35
+        }}
+        onLayout={e => {
+          const { height } = e.nativeEvent.layout;
+          if (!inlineExclusion) {
+            setInlineExclusion({
+              exclusion: new BoxExclusion(
+                0,
+                0,
+                contentWidth * 0.35 + spacing(2),
+                height + spacing(2)
+              ),
+              height
+            });
+          }
+        }}
+      >
+        {inline}
+      </View>
+    ),
+    <ArticleParagraph
+      ast={tree}
+      key={key}
+      uid={key}
+      height={Math.max(
+        dropCap ? defaultFont.lineHeight * 3 : 0,
+        defaultFont.lineHeight * lines,
+        inlineExclusion ? inlineExclusion.height : 0
+      )}
+      accessibilityLabel={positioned.map(p => p.text.text.string).join(" ")}
+    >
+      {positioned.map(p => {
+        const attribute = p.text.text.attributes[0];
+        const style = attribute ? attribute.tag.settings : defaultFont;
+        const href = attribute ? attribute.tag.href : null;
+        const type = href ? attribute.tag.type : null;
+        const canonicalId = href ? attribute.tag.canonicalId : null;
+        if (href) {
+          return (
+            <ArticleLink
+              url={href}
+              onPress={e => onLinkPress(e, { canonicalId, type, url: href })}
+              style={{
+                position: "absolute",
+                left: Math.floor(p.position.xOffset),
+                top: Math.floor(defaultFont.lineHeight * p.position.line)
+              }}
+            >
+              {p.text.text.string}
+            </ArticleLink>
+          );
+        }
+        return (
+          <Text
+            selectable
+            numberOfLines={1}
+            style={[
+              {
+                position: "absolute",
+                left: Math.floor(p.position.xOffset),
+                top: Math.floor(defaultFont.lineHeight * p.position.line)
+              },
+              style
+            ]}
+          >
+            {p.text.text.string}
+          </Text>
+        );
+      })}
+    </ArticleParagraph>
+  ];
+};
 
 export default ({
-  content: data,
+  data,
   interactiveConfig,
   onLinkPress,
   onTwitterLinkPress,
   onVideoPress,
-  onImagePress,
-  width,
-  fontScale,
+  // onImagePress,
+  // fontScale,
   isTablet,
+  dropcapsDisabled,
   dropCapFont = "dropCap",
   scale
 }) => {
   const styles = styleFactory(scale);
   const { fontFactory } = styleguide({ scale });
-  const { fontFamily, fontSize, lineHeight } = fontFactory({
-    font: "body",
-    fontSize: "bodyMobile"
-  });
-  const boldFont = `${fontFamily}-Bold`;
-  const italicFont = `${fontFamily}-Italic`;
-  const { Bold, Italic, Link, Body } = MarkupFactory({
-    boldFont,
-    italicFont,
-    linkFont: fontFamily
-  });
-  return renderTree(data, {
-    ...flow({
-      Body,
-      Bold,
-      fontFamily,
-      Italic,
-      Link
+
+  const defaultFont = {
+    ...fontFactory({
+      font: "body",
+      fontSize: "bodyMobile"
     }),
-    ad(key, attributes) {
-      return {
-        element: new Layout.Block({
-          getComponent() {
-            return (
-              <Ad
-                key={key}
-                slotName="native-inline-ad"
-                style={styles.ad}
-                {...attributes}
-              />
-            );
-          }
-        })
-      };
+    fontStyle: "normal",
+    fontWeight: "normal",
+    color: colours.functional.black
+  };
+
+  const fontConfig = {
+    body: defaultFont,
+    bold: {
+      ...defaultFont,
+      fontFamily: "TimesDigitalW04",
+      fontWeight: "bold"
     },
-    dropCap(key, attributes, children, indx, node) {
-      let value = node;
-      while (typeof value !== "string") {
-        if (value.name === "text") {
-          value = value.attributes.value;
-        } else {
-          value = value.children[0];
-        }
-      }
-      const height = lineHeight * 3 * fontScale;
+    italic: {
+      ...defaultFont,
+      fontFamily: "TimesDigitalW04",
+      fontStyle: "italic"
+    },
+    link: defaultFont
+  };
 
-      const cap = getDropCap(children, fonts[dropCapFont], height, [
-        new Body(value)
-      ]);
-      const capGap = cap[0].measuredWidth * 0.3;
-      const capWidth = (cap[0].measuredWidth + capGap) * fontScale;
-
-      return {
-        element: new Layout.InlineBlock({
-          getComponent() {
-            return (
-              <Context.Consumer key={key}>
-                {({ theme: { sectionColour = colours.section.default } }) => (
-                  <DropCap
-                    colour={sectionColour}
-                    dropCap={getDropCapValue(cap)}
-                    font={dropCapFont}
-                    scale={scale}
-                  />
-                )}
-              </Context.Consumer>
-            );
-          },
-          height,
-          width: capWidth
-        })
+  return {
+    text(key, attributes) {
+      const attr = {
+        length: attributes.value.length,
+        start: 0,
+        tag: { tag: "FONT", settings: fontConfig.body }
       };
+      return new AttributedString(attributes.value, [attr]);
+    },
+    bold(key, attributes, children) {
+      const childStr = AttributedString.join(children);
+      const attr = {
+        length: childStr.string.length,
+        start: 0,
+        tag: { tag: "FONT", settings: fontConfig.bold }
+      };
+      return new AttributedString(childStr.string, [attr]);
+    },
+    italic(key, attributes, children) {
+      const childStr = AttributedString.join(children);
+      const attr = {
+        length: childStr.string.length,
+        start: 0,
+        tag: { tag: "FONT", settings: fontConfig.italic }
+      };
+      return new AttributedString(childStr.string, [attr]);
+    },
+    link(key, { href, canonicalId, type }, children) {
+      const childStr = AttributedString.join(children);
+      const attr = {
+        length: childStr.string.length,
+        start: 0,
+        tag: { tag: "LINK", href, canonicalId, type, settings: fontConfig.body }
+      };
+      return new AttributedString(childStr.string, [attr]);
+    },
+    subscript(key, attributes, children) {
+      const childStr = AttributedString.join(children);
+      const attr = {
+        length: childStr.string.length,
+        start: 0,
+        tag: { tag: "FONT", settings: fontConfig.body }
+      };
+      return new AttributedString(childStr.string, [attr]);
+    },
+    superscript(key, attributes, children) {
+      const childStr = AttributedString.join(children);
+      const attr = {
+        length: childStr.string.length,
+        start: 0,
+        tag: { tag: "FONT", settings: fontConfig.body }
+      };
+      return new AttributedString(childStr.string, [attr]);
+    },
+    paragraph(key, attributes, children, index, tree) {
+      return (
+        <Paragraph
+          key={key}
+          attributes={attributes}
+          index={index}
+          tree={tree}
+          scale={scale}
+          dropcapsDisabled={dropcapsDisabled}
+          isTablet={isTablet}
+          defaultFont={defaultFont}
+          onLinkPress={onLinkPress}
+          data={data}
+          dropCapFont={dropCapFont}
+        >
+          {children}
+        </Paragraph>
+      );
+    },
+    ad(key, attributes) {
+      return <Ad key={key} slotName="native-inline-ad" {...attributes} />;
     },
     image(
       key,
@@ -132,298 +362,83 @@ export default ({
         relativeVerticalOffset
       }
     ) {
-      const [ratioWidth, ratioHeight] = ratio.split(":");
-      const aspectRatio = ratioHeight / ratioWidth;
-      if (display !== "inline" || !isTablet) {
-        return {
-          element: new Layout.Block({
-            getComponent() {
-              return (
-                <View key={key}>
-                  <ArticleImage
-                    captionOptions={{
-                      caption,
-                      credits
-                    }}
-                    imageOptions={{
-                      display: display === "inline" ? "secondary" : display,
-                      ratio,
-                      uri: url,
-                      relativeWidth,
-                      relativeHeight,
-                      relativeHorizontalOffset,
-                      relativeVerticalOffset
-                    }}
-                    onImagePress={onImagePress}
-                  />
-                </View>
-              );
-            }
-          })
-        };
-      }
-      const {
-        fontFamily: cFontFamily,
-        fontSize: cFontSize,
-        lineHeight: cLineHeight
-      } = fontFactory({
-        font: "supporting",
-        fontSize: "caption"
-      });
-      let height = 0;
-      if (caption) {
-        const captionText = new Text.Text({
-          font: cFontFamily,
-          lineHeight: cLineHeight * fontScale,
-          markup: [new Body(caption)],
-          size: cFontSize * fontScale,
-          width: width * 0.35
-        });
-        height += captionText.measuredHeight;
-      }
-      if (credits && credits[0] !== "<") {
-        const creditsText = new Text.Text({
-          font: cFontFamily,
-          lineHeight: cLineHeight * fontScale,
-          markup: [new Body(credits)],
-          size: cFontSize * fontScale,
-          width: width * 0.35
-        });
-        height += creditsText.measuredHeight;
-      }
-      const inline = new Layout.InlineBlock({
-        getComponent() {
-          return (
-            <View key={key}>
-              <ArticleImage
-                captionOptions={{
-                  caption,
-                  credits
-                }}
-                imageOptions={{
-                  display,
-                  ratio,
-                  uri: url
-                }}
-                onImagePress={onImagePress}
-              />
-            </View>
-          );
-        },
-        height: width * 0.35 * aspectRatio + height,
-        layoutDone: false,
-        prevHeight: 0,
-        width: width * 0.35
-      });
-      return {
-        element: inline
-      };
+      return (
+        <ArticleImage
+          captionOptions={{
+            caption,
+            credits
+          }}
+          key={key}
+          imageOptions={{
+            display,
+            ratio,
+            uri: url,
+            relativeWidth,
+            relativeHeight,
+            relativeHorizontalOffset,
+            relativeVerticalOffset
+          }}
+        />
+      );
     },
     interactive(key, { id, display }) {
-      return {
-        element: new Layout.Block({
-          getComponent() {
-            return (
-              <View
-                key={key}
-                style={[
-                  styles.interactiveContainer,
-                  isTablet && styles.interactiveContainerTablet,
-                  display === "fullwidth" &&
-                    styles.interactiveContainerFullWidth
-                ]}
-              >
-                <InteractiveWrapper config={interactiveConfig} id={id} />
-              </View>
-            );
-          }
-        })
-      };
+      return (
+        <View
+          key={key}
+          style={[
+            styles.interactiveContainer,
+            isTablet && styles.interactiveContainerTablet,
+            display === "fullwidth" && styles.interactiveContainerFullWidth
+          ]}
+        >
+          <InteractiveWrapper config={interactiveConfig} id={id} key={key} />
+        </View>
+      );
     },
-    keyFacts(key, attributes, renderedChildren, indx, node) {
-      return {
-        element: new Layout.Block({
-          getComponent() {
-            return (
-              <View style={isTablet && styles.containerTablet}>
-                <KeyFacts ast={node} key={key} onLinkPress={onLinkPress} />
-              </View>
-            );
-          }
-        })
+    break() {
+      const attr = {
+        length: 1,
+        start: 0,
+        tag: { tag: "FONT", settings: fontConfig.body }
       };
+      return new AttributedString("\n", [attr]);
     },
-    link(key, attributes, children) {
-      const { canonicalId, href: url, type } = attributes;
-      const link = new Link({
-        children,
-        href(span) {
-          return (
-            <ArticleLink
-              key={key}
-              linkType={attributes.type}
-              onPress={e => onLinkPress(e, { canonicalId, type, url })}
-              url={url}
-            >
-              {span.text}
-            </ArticleLink>
-          );
-        }
-      });
-      return {
-        element: link
-      };
-    },
-    paragraph(key, attributes, children, indx, node) {
-      const flatChildren = children.reduce((acc, child) => {
-        if (Array.isArray(child)) {
-          return [...acc, ...child];
-        }
-        return [...acc, child];
-      }, []);
-      return {
-        element: new Text.Text({
-          font: fontFamily,
-          getComponent(spans) {
-            return (
-              <Context.Consumer key={key}>
-                {({ theme: { sectionColour = colours.section.default } }) => (
-                  <ArticleParagraph
-                    ast={node}
-                    dropCapColour={sectionColour}
-                    dropCapFont={dropCapFont}
-                  >
-                    {spans}
-                  </ArticleParagraph>
-                )}
-              </Context.Consumer>
-            );
-          },
-          lineHeight: lineHeight * fontScale,
-          markup: flatChildren,
-          size: fontSize * fontScale,
-          width: Math.min(screenWidth(), tabletWidth)
-        })
-      };
-    },
-    unknown(key, attributes, children) {
-      return {
-        element: children
-      };
+    keyFacts(key, attributes, children, index, tree) {
+      return (
+        <View style={isTablet && styles.containerTablet}>
+          <KeyFacts ast={tree} key={key} onLinkPress={onLinkPress} />
+        </View>
+      );
     },
     pullQuote(
       key,
       {
         caption: { name, text, twitter }
       },
-      children,
-      indx,
-      node
+      children
     ) {
-      const content = node.children[0].attributes.value;
-      if (!isTablet) {
-        return {
-          element: new Layout.Block({
-            getComponent() {
-              return (
-                <Context.Consumer key={key}>
-                  {({
-                    theme: {
-                      pullQuoteFont,
-                      sectionColour = colours.section.default
-                    }
-                  }) => (
-                    <View style={isTablet && styles.containerTablet}>
-                      <PullQuote
-                        caption={name}
-                        font={pullQuoteFont}
-                        onTwitterLinkPress={onTwitterLinkPress}
-                        quoteColour={sectionColour}
-                        text={text}
-                        twitter={twitter}
-                      >
-                        {content}
-                      </PullQuote>
-                    </View>
-                  )}
-                </Context.Consumer>
-              );
-            }
-          })
-        };
-      }
-      const {
-        fontFamily: qFontFamily,
-        fontSize: qFontSize,
-        lineHeight: qLineHeight
-      } = fontFactory({
-        font: "headlineRegular",
-        fontSize: "pageComponentHeadline"
-      });
-      const quote = new Text.Text({
-        font: qFontFamily,
-        lineHeight: qLineHeight * fontScale,
-        markup: [
-          new Body('"'),
-          new Markup.Newline(),
-          new Body(content),
-          new Markup.Newline()
-        ],
-        size: qFontSize * fontScale,
-        width: width * 0.35
-      });
-      const {
-        fontFamily: cFontFamily,
-        fontSize: cFontSize,
-        lineHeight: cLineHeight
-      } = fontFactory({
-        font: "supporting",
-        fontSize: "caption"
-      });
-      let captionHeight = 0;
-      if (name) {
-        const caption = new Text.Text({
-          font: cFontFamily,
-          lineHeight: cLineHeight * fontScale,
-          markup: [new Markup.Newline(), new Body(name), new Markup.Newline()],
-          size: cFontSize * fontScale,
-          width: width * 0.35
-        });
-        captionHeight = caption.measuredHeight;
-      }
-      const height = quote.measuredHeight + (captionHeight + spacing(1));
-      return {
-        element: new Layout.InlineBlock({
-          getComponent() {
-            return (
-              <Context.Consumer key={key}>
-                {({
-                  theme: {
-                    pullQuoteFont,
-                    sectionColour = colours.section.default
-                  }
-                }) => (
-                  <View style={isTablet && styles.containerTablet}>
-                    <PullQuote
-                      caption={name}
-                      font={pullQuoteFont}
-                      onTwitterLinkPress={onTwitterLinkPress}
-                      quoteColour={sectionColour}
-                      text={text}
-                      twitter={twitter}
-                    >
-                      {content}
-                    </PullQuote>
-                  </View>
-                )}
-              </Context.Consumer>
-            );
-          },
-          height,
-          width: width * 0.35
-        }),
-        shouldRenderChildren: false
-      };
+      const content = children[0].string;
+      const contentWidth = Math.min(screenWidth(), tabletWidth);
+      return (
+        <Context.Consumer key={key}>
+          {({
+            theme: { pullQuoteFont, sectionColour = colours.section.default }
+          }) => (
+            <View style={[isTablet && { width: contentWidth * 0.35 }]}>
+              <PullQuote
+                caption={name}
+                font={pullQuoteFont}
+                onTwitterLinkPress={onTwitterLinkPress}
+                quoteColour={sectionColour}
+                text={text}
+                twitter={twitter}
+              >
+                {content}
+              </PullQuote>
+            </View>
+          )}
+        </Context.Consumer>
+      );
     },
     video(
       key,
@@ -436,36 +451,32 @@ export default ({
         skySports
       }
     ) {
-      return {
-        element: new Layout.Block({
-          getComponent() {
-            const aspectRatio = 16 / 9;
-            const screenW = screenWidth(isTablet);
-            const height = width / aspectRatio;
-            return (
-              <View
-                key={key}
-                style={[
-                  styles.primaryContainer,
-                  isTablet && styles.containerTablet
-                ]}
-              >
-                <Video
-                  accountId={brightcoveAccountId}
-                  height={height}
-                  onVideoPress={onVideoPress}
-                  policyKey={brightcovePolicyKey}
-                  poster={{ uri: posterImageUrl }}
-                  skySports={skySports}
-                  videoId={brightcoveVideoId}
-                  width={screenW}
-                />
-                <InsetCaption caption={caption} />
-              </View>
-            );
-          }
-        })
-      };
+      const aspectRatio = 16 / 9;
+      const screenW = screenWidth(isTablet);
+      const height = screenW / aspectRatio;
+      return (
+        <View
+          key={key}
+          style={[styles.primaryContainer, isTablet && styles.containerTablet]}
+        >
+          <Video
+            accountId={brightcoveAccountId}
+            height={height}
+            onVideoPress={onVideoPress}
+            policyKey={brightcovePolicyKey}
+            poster={{ uri: posterImageUrl }}
+            skySports={skySports}
+            videoId={brightcoveVideoId}
+            width={screenW}
+          />
+          <InsetCaption caption={caption} />
+        </View>
+      );
+    },
+    unknown(key, attributes, children, index, tree) {
+      return new AttributedString(JSON.stringify(tree, null, 2), []);
     }
-  });
+  };
 };
+
+// TODO: missing node types

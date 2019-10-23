@@ -2,6 +2,7 @@
 
 exports[`1. renders link 1`] = `
 <View
+  focusable={true}
   style={
     Object {
       "opacity": 1,
@@ -14,6 +15,7 @@ exports[`1. renders link 1`] = `
 
 exports[`2. renders link with target 1`] = `
 <View
+  focusable={true}
   style={
     Object {
       "opacity": 1,
