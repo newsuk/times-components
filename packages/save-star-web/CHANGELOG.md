@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.40](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.3.39...@times-components/save-star-web@0.3.40) (2019-10-23)
+
+
+### Bug Fixes
+
+* (REPLAT-9346) fix cut off article paragraphs ([#2330](https://github.com/newsuk/times-components/issues/2330)) ([35cee66](https://github.com/newsuk/times-components/commit/35cee66))
+
+
+
+
+
 ## [0.3.39](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.3.38...@times-components/save-star-web@0.3.39) (2019-10-17)
 
 **Note:** Version bump only for package @times-components/save-star-web

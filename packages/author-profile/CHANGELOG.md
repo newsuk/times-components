@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.142](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.0.141...@times-components/author-profile@6.0.142) (2019-10-23)
+
+
+### Bug Fixes
+
+* (REPLAT-9346) fix cut off article paragraphs ([#2330](https://github.com/newsuk/times-components/issues/2330)) ([35cee66](https://github.com/newsuk/times-components/commit/35cee66))
+
+
+
+
+
 ## [6.0.141](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.0.140...@times-components/author-profile@6.0.141) (2019-10-17)
 
 **Note:** Version bump only for package @times-components/author-profile

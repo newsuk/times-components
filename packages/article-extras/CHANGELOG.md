@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.2](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.4.1...@times-components/article-extras@0.4.2) (2019-10-23)
+
+
+### Bug Fixes
+
+* (REPLAT-9346) fix cut off article paragraphs ([#2330](https://github.com/newsuk/times-components/issues/2330)) ([35cee66](https://github.com/newsuk/times-components/commit/35cee66))
+
+
+
+
+
 ## [0.4.1](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.4.0...@times-components/article-extras@0.4.1) (2019-10-17)
 
 

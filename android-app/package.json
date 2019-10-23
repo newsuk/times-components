@@ -1,6 +1,6 @@
 {
   "name": "@times-components/android-app",
-  "version": "0.16.82",
+  "version": "0.16.83",
   "license": "BSD-3-Clause",
   "scripts": {
     "build": "./gradlew clean && ./gradlew generateReactArchives && ./gradlew assemble && ./gradlew publish",
@@ -11,17 +11,17 @@
     "start": "react-native start --config metro.config.js"
   },
   "dependencies": {
-    "@times-components/typeset": "0.0.1",
-    "@times-components/pages": "2.0.227",
+    "@times-components/pages": "2.0.228",
+    "@times-components/typeset": "0.0.2",
     "prop-types": "15.7.2",
     "react": "16.9.0",
     "react-native": "0.61.1",
     "react-native-device-info": "3.0.0",
     "react-native-svg": "9.11.1",
     "react-native-v8": "latest",
-    "v8-android": "7.5.1",
     "react-native-webview": "7.0.5",
-    "url-polyfill": "1.1.0"
+    "url-polyfill": "1.1.0",
+    "v8-android": "7.5.1"
   },
   "devDependencies": {
     "@bam.tech/react-native-graphql-transformer": "0.1.5",

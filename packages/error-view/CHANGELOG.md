@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.103](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.2.102...@times-components/error-view@2.2.103) (2019-10-23)
+
+
+### Bug Fixes
+
+* (REPLAT-9346) fix cut off article paragraphs ([#2330](https://github.com/newsuk/times-components/issues/2330)) ([35cee66](https://github.com/newsuk/times-components/commit/35cee66))
+
+
+
+
+
 ## [2.2.102](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.2.101...@times-components/error-view@2.2.102) (2019-10-17)
 
 **Note:** Version bump only for package @times-components/error-view

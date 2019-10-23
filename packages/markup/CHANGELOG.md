@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.3.116](https://github.com/newsuk/times-components/compare/@times-components/markup@3.3.115...@times-components/markup@3.3.116) (2019-10-23)
+
+
+### Bug Fixes
+
+* (REPLAT-9346) fix cut off article paragraphs ([#2330](https://github.com/newsuk/times-components/issues/2330)) ([35cee66](https://github.com/newsuk/times-components/commit/35cee66))
+
+
+
+
+
 ## [3.3.115](https://github.com/newsuk/times-components/compare/@times-components/markup@3.3.114...@times-components/markup@3.3.115) (2019-10-17)
 
 **Note:** Version bump only for package @times-components/markup

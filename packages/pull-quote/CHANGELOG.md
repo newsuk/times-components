@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.4.132](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.4.131...@times-components/pull-quote@3.4.132) (2019-10-23)
+
+
+### Bug Fixes
+
+* (REPLAT-9346) fix cut off article paragraphs ([#2330](https://github.com/newsuk/times-components/issues/2330)) ([35cee66](https://github.com/newsuk/times-components/commit/35cee66))
+
+
+
+
+
 ## [3.4.131](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.4.130...@times-components/pull-quote@3.4.131) (2019-10-17)
 
 **Note:** Version bump only for package @times-components/pull-quote

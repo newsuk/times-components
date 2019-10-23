@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.2.167](https://github.com/newsuk/times-components/compare/@times-components/article@7.2.166...@times-components/article@7.2.167) (2019-10-23)
+
+
+### Bug Fixes
+
+* (REPLAT-9346) fix cut off article paragraphs ([#2330](https://github.com/newsuk/times-components/issues/2330)) ([35cee66](https://github.com/newsuk/times-components/commit/35cee66))
+
+
+
+
+
 ## [7.2.166](https://github.com/newsuk/times-components/compare/@times-components/article@7.2.165...@times-components/article@7.2.166) (2019-10-21)
 
 **Note:** Version bump only for package @times-components/article

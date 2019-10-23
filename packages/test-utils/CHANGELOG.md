@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.8](https://github.com/newsuk/times-components/compare/@times-components/test-utils@2.3.7...@times-components/test-utils@2.3.8) (2019-10-23)
+
+
+### Bug Fixes
+
+* (REPLAT-9346) fix cut off article paragraphs ([#2330](https://github.com/newsuk/times-components/issues/2330)) ([35cee66](https://github.com/newsuk/times-components/commit/35cee66))
+
+
+
+
+
 ## [2.3.7](https://github.com/newsuk/times-components/compare/@times-components/test-utils@2.3.6...@times-components/test-utils@2.3.7) (2019-10-11)
 
 **Note:** Version bump only for package @times-components/test-utils

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/ios-app",
-  "version": "0.15.103",
+  "version": "0.15.104",
   "license": "BSD-3-Clause",
   "scripts": {
     "build": "cat package.json | grep version | head -1 | sed 's/[\",\t ]//g' | awk -F: '{ print \"Bundle Version: \" $2 }' > ios-assets/js/version.meta",
@@ -10,13 +10,13 @@
     "start": "react-native start --config metro.config.js"
   },
   "dependencies": {
-    "@times-components/pages": "2.0.227",
-    "@times-components/typeset": "0.0.1",
+    "@times-components/pages": "2.0.228",
+    "@times-components/typeset": "0.0.2",
+    "opentype.js": "1.1.0",
     "prop-types": "15.7.2",
     "react": "16.9.0",
     "react-native": "0.61.1",
-    "url-polyfill": "1.1.0",
-    "opentype.js": "1.1.0"
+    "url-polyfill": "1.1.0"
   },
   "devDependencies": {
     "metro-react-native-babel-preset": "0.53.1",

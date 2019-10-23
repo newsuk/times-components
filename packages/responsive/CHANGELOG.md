@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.76](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.4.75...@times-components/responsive@0.4.76) (2019-10-23)
+
+
+### Bug Fixes
+
+* (REPLAT-9346) fix cut off article paragraphs ([#2330](https://github.com/newsuk/times-components/issues/2330)) ([35cee66](https://github.com/newsuk/times-components/commit/35cee66))
+
+
+
+
+
 ## [0.4.75](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.4.74...@times-components/responsive@0.4.75) (2019-10-17)
 
 **Note:** Version bump only for package @times-components/responsive
