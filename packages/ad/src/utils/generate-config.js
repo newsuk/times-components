@@ -25,7 +25,7 @@ const slotPositions = {
   pixel: 2,
   pixelskin: 2,
   pixelteads: 2,
-  customMPU: 3,
+  customMPU: 3
 };
 
 const sizeMap = {
@@ -40,7 +40,7 @@ const sizeMap = {
   pixel: sizes.pixel,
   pixelskin: sizes.pixel,
   pixelteads: sizes.pixel,
-  customMPU: sizes.customMPU,
+  customMPU: sizes.customMPU
 };
 
 const getAdSizes = (adSizeMap, width) => {
