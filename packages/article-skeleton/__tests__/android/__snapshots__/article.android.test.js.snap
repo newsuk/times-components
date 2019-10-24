@@ -338,3 +338,502 @@ Object {
   "object": "Article",
 }
 `;
+
+exports[`7. breaks up malformed huge paragraphs 1`] = `
+Array [
+  Object {
+    "attributes": Object {},
+    "children": Array [
+      Object {
+        "attributes": Object {
+          "value": "Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the ",
+        },
+        "children": Array [],
+        "name": "text",
+      },
+      Object {
+        "attributes": Object {},
+        "children": Array [
+          Object {
+            "attributes": Object {
+              "value": "Telegraph ",
+            },
+            "children": Array [],
+            "name": "text",
+          },
+        ],
+        "name": "italic",
+      },
+      Object {
+        "attributes": Object {
+          "value": "last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”",
+        },
+        "children": Array [],
+        "name": "text",
+      },
+      Object {
+        "attributes": Object {},
+        "children": Array [
+          Object {
+            "attributes": Object {
+              "value": "When Thatcher joined the campaign trail for the 2001 general election...",
+            },
+            "children": Array [],
+            "name": "text",
+          },
+        ],
+        "name": "bold",
+      },
+    ],
+    "name": "paragraph",
+  },
+  Object {
+    "attributes": Object {},
+    "children": Array [
+      Object {
+        "attributes": Object {},
+        "children": Array [
+          Object {
+            "attributes": Object {
+              "value": "Baroness Thatcher, LG, OM, PC, FRS, Prime Minister, 1979-90, was born on October 13, 1925. She died on April 8, 2013, aged 87.",
+            },
+            "children": Array [],
+            "name": "text",
+          },
+        ],
+        "name": "bold",
+      },
+    ],
+    "name": "paragraph",
+  },
+  Object {
+    "attributes": Object {},
+    "children": Array [
+      Object {
+        "attributes": Object {
+          "value": "When Thatcher joined the campaign trail for the 2001 general election, she was followed closely by the media. After several minor strokes, however, it was announced in 2002 that she would cut back her heavy schedule. ",
+        },
+        "children": Array [],
+        "name": "text",
+      },
+    ],
+    "name": "paragraph",
+  },
+  Object {
+    "attributes": Object {},
+    "children": Array [
+      Object {
+        "attributes": Object {
+          "value": "Thatcher plainly admired the style and determination of Tony Blair, who crushed John Major’s Conservatives in the 1997 election, and he for his part seemed content from time to time to be compared with her as a strong leader. She regularly revisited some of the issues that had dominated her years in office; for example she gave strong support to the development of democracy and the protection of the rule of law in Hong Kong as promised in the treaty she had signed with China. In 1999, in her first conference speech since her resignation as leader, she defended General Augusto Pinochet, the former dictator of Chile, who was held in Britain after his arrest in 1998. ",
+        },
+        "children": Array [],
+        "name": "text",
+      },
+    ],
+    "name": "paragraph",
+  },
+  Object {
+    "attributes": Object {},
+    "children": Array [
+      Object {
+        "attributes": Object {
+          "value": "By this time she was set to have a permanent place in the House of Commons, after the a rule change meant that an 8ft marble statue, for which she posed with her familiar handbag, could be placed there during her lifetime. When on display at Guildhall, however, it was decapitated by a man with a cricket bat, and so was withdrawn from public view. It was to be placed outside the House of Commons chamber, opposite Winston Churchill. ",
+        },
+        "children": Array [],
+        "name": "text",
+      },
+    ],
+    "name": "paragraph",
+  },
+  Object {
+    "attributes": Object {},
+    "children": Array [
+      Object {
+        "attributes": Object {
+          "value": "She was driven by those beliefs to tackle the task of halting and reversing her country’s decline and to ensure that it played its full part in defending the freedoms of the democratic West. Her record and her personality will be the subject of continuing controversy. But no one will ever doubt her sincerity and her courage, and most will concede that the far-reaching changes she made would have been impossible without her. ",
+        },
+        "children": Array [],
+        "name": "text",
+      },
+    ],
+    "name": "paragraph",
+  },
+  Object {
+    "attributes": Object {},
+    "children": Array [
+      Object {
+        "attributes": Object {
+          "value": "Margaret Thatcher was one of the greatest British politicians of the 20th century. The first woman prime minister in Europe, she held the job for 11 years. In the 20th century no other prime minister had been in office for such a long unbroken period, and no one since Lord Liverpool (1812-27) had had such a long continuous run as Prime Minister. ",
+        },
+        "children": Array [],
+        "name": "text",
+      },
+    ],
+    "name": "paragraph",
+  },
+  Object {
+    "attributes": Object {},
+    "children": Array [
+      Object {
+        "attributes": Object {
+          "value": "She led the Conservative Party for 15 years, won three general elections in succession, and never lost a significant vote in the House of Commons. Since Walpole in effect invented the role, only six men have served for longer than her as prime minister: Walpole himself, Pitt, Lord Liverpool, Lord Salisbury, Gladstone and Lord North. She fully earned her place in this company. ",
+        },
+        "children": Array [],
+        "name": "text",
+      },
+    ],
+    "name": "paragraph",
+  },
+  Object {
+    "attributes": Object {},
+    "children": Array [
+      Object {
+        "attributes": Object {
+          "value": "Thatcher set out, first as party leader and then as prime minister, to overturn the consensus that had shaped postwar British politics and to replace it with a more competitive ethos of free enterprise. She wanted to rescue Britain from the debilitated state to which she believed it had been reduced by socialism and, in the words of her last bravura speech as Prime Minister to the House of Commons, to give back “control to people over their own lives and over their livelihood”. ",
+        },
+        "children": Array [],
+        "name": "text",
+      },
+    ],
+    "name": "paragraph",
+  },
+  Object {
+    "attributes": Object {},
+    "children": Array [
+      Object {
+        "attributes": Object {
+          "value": "It was time to depart, and she announced this to a meeting of the Cabinet on November 22. With typical courage she then went to the House of Commons to speak in a confidence debate. It was a rousing performance, a reminder of her gallantry, flair and conviction. She had not tired of her mission, but those whom she had led had tired of her. ",
+        },
+        "children": Array [],
+        "name": "text",
+      },
+    ],
+    "name": "paragraph",
+  },
+  Object {
+    "attributes": Object {},
+    "children": Array [
+      Object {
+        "attributes": Object {
+          "value": "Thatcher resigned as Prime Minister on November 28, leaving Downing Street, a little tearfully, though with the partial satisfaction of knowing that she was not to be succeeded by Heseltine but by her own favourite, Major, who had defeated Heseltine and Hurd in the parliamentary ballot to follow her. ",
+        },
+        "children": Array [],
+        "name": "text",
+      },
+    ],
+    "name": "paragraph",
+  },
+  Object {
+    "attributes": Object {},
+    "children": Array [
+      Object {
+        "attributes": Object {
+          "value": "Life out of office was initially miserable. Like her predecessor, Heath, she seemed disorientated by the loss of power. But with typical gumption she threw herself into establishing a foundation (named after her) to support business training projects in Eastern Europe and the former Soviet Union and the establishment of a chair of Enterprise Studies at Cambridge University. She toured the world, speaking for large fees in the foundation’s name and to its great financial benefit. She remained immensely popular in several countries, particularly the US, Japan and Eastern Europe. She was the symbol of the defeat of communism and the triumph in the 1980s of market economics. ",
+        },
+        "children": Array [],
+        "name": "text",
+      },
+    ],
+    "name": "paragraph",
+  },
+  Object {
+    "attributes": Object {},
+    "children": Array [
+      Object {
+        "attributes": Object {
+          "value": "She returned sporadically, and not always helpfully, to the political fray. Her support for Major waned as he set out on a more pragmatic European policy than her own. She allowed her own more nationalist opinions to seep out into the public domain, and became ever more forceful, outspoken and extreme in her denunciations of the moves towards political and monetary union in Europe. ",
+        },
+        "children": Array [],
+        "name": "text",
+      },
+    ],
+    "name": "paragraph",
+  },
+  Object {
+    "attributes": Object {},
+    "children": Array [
+      Object {
+        "attributes": Object {
+          "value": "The division over Europe that had helped to end her years in office yawned ever wider within the Conservative Party, which had once regarded itself as the pro-Europe party.",
+        },
+        "children": Array [],
+        "name": "text",
+      },
+    ],
+    "name": "paragraph",
+  },
+  Object {
+    "attributes": Object {},
+    "children": Array [
+      Object {
+        "attributes": Object {
+          "value": "Thatcher plainly admired the style and determination of Tony Blair, who crushed John Major’s Conservatives in the 1997 election, and he for his part seemed content from time to time to be compared with her as a strong leader. She regularly revisited some of the issues that had dominated her years in office; for example she gave strong support to the development of democracy and the protection of the rule of law in Hong Kong as promised in the treaty she had signed with China. In 1999, in her first conference speech since her resignation as leader, she defended General Augusto Pinochet, the former dictator of Chile, who was held in Britain after his arrest in 1998.",
+        },
+        "children": Array [],
+        "name": "text",
+      },
+    ],
+    "name": "paragraph",
+  },
+  Object {
+    "attributes": Object {},
+    "children": Array [
+      Object {
+        "attributes": Object {
+          "value": "When Thatcher joined the campaign trail for the 2001 general election, she was followed closely by the media. After several minor strokes, however, it was announced in 2002 that she would cut back her heavy schedule.",
+        },
+        "children": Array [],
+        "name": "text",
+      },
+    ],
+    "name": "paragraph",
+  },
+  Object {
+    "attributes": Object {},
+    "children": Array [
+      Object {
+        "attributes": Object {
+          "value": "By this time she was set to have a permanent place in the House of Commons, after the a rule change meant that an 8ft marble statue, for which she posed with her familiar handbag, could be placed there during her lifetime. When on display at Guildhall, however, it was decapitated by a man with a cricket bat, and so was withdrawn from public view. It was to be placed outside the House of Commons chamber, opposite Winston Churchill.",
+        },
+        "children": Array [],
+        "name": "text",
+      },
+    ],
+    "name": "paragraph",
+  },
+  Object {
+    "attributes": Object {},
+    "children": Array [
+      Object {
+        "attributes": Object {
+          "value": "Thatcher received all the greatest honours that her country could bestow. She became a Fellow of the Royal Society in 1983, received the Order of Merit in 1990, was made a Baroness in 1992 and joined the Garter as a Lady of that Order in 1995.",
+        },
+        "children": Array [],
+        "name": "text",
+      },
+    ],
+    "name": "paragraph",
+  },
+  Object {
+    "attributes": Object {},
+    "children": Array [
+      Object {
+        "attributes": Object {
+          "value": "She remained a political star until deep into her retirement from full-time politics. Like the greatest divas she could be temperamental and difficult but she was always able to rise to the great occasions, not because of her ability as an orator but because of the passionate strength of her convictions.",
+        },
+        "children": Array [],
+        "name": "text",
+      },
+    ],
+    "name": "paragraph",
+  },
+  Object {
+    "attributes": Object {},
+    "children": Array [
+      Object {
+        "attributes": Object {
+          "value": "She was driven by those beliefs to tackle the task of halting and reversing her country’s decline and to ensure that it played its full part in defending the freedoms of the democratic West. Her record and her personality will be the subject of continuing controversy. But no one will ever doubt her sincerity and her courage, and most will concede that the far-reaching changes she made would have been impossible without her.",
+        },
+        "children": Array [],
+        "name": "text",
+      },
+    ],
+    "name": "paragraph",
+  },
+  Object {
+    "attributes": Object {},
+    "children": Array [
+      Object {
+        "attributes": Object {
+          "value": "Her husband predeceased her. She is survived by their twin children, her daughter Carol and her son Mark, who has inherited his father’s baronetcy.",
+        },
+        "children": Array [],
+        "name": "text",
+      },
+    ],
+    "name": "paragraph",
+  },
+  Object {
+    "attributes": Object {},
+    "children": Array [
+      Object {
+        "attributes": Object {
+          "value": "The new Parliament was remarkable for the radicalism of the Government’s domestic programme. There were privatisations of steel (1988), water (1989) and electricity (1990-91), and the ailing Rover car firm was sold to British Aerospace. Of the core utilities only rail and coal remained in public ownership. The privatisation measures were largely responsible for extending share ownership from seven per cent to 21 per cent of adults.",
+        },
+        "children": Array [],
+        "name": "text",
+      },
+    ],
+    "name": "paragraph",
+  },
+  Object {
+    "attributes": Object {},
+    "children": Array [
+      Object {
+        "attributes": Object {
+          "value": "Her fall from this political peak three years later had three principal causes. First, learning from the mistakes of the previous Parliament, the new Government embarked on a sweeping programme of reform; yet the flagship of this programme — the launching of the poll tax — was to prove the single most unpopular domestic policy initiative taken by any postwar government. Secondly, Thatcher’s own concerns about developments within the EU, and particularly about moves towards monetary union, put her increasingly at odds with many of her own ministers and MPs. Thirdly, her style of political management brought her into collision with two senior ministers, and after his resignation following illness in 1988 she no longer had her loyal and politically astute deputy Willie Whitelaw to rescue her from the consequences of high-handed rashness in personal dealings.",
+        },
+        "children": Array [],
+        "name": "text",
+      },
+    ],
+    "name": "paragraph",
+  },
+  Object {
+    "attributes": Object {},
+    "children": Array [
+      Object {
+        "attributes": Object {
+          "value": "On June 11 the Government was returned with a majority of 102 seats over all other parties. Thatcher was the first leader since Lord Liverpool in the 1820s to score three successive general election victories. She was granted a prospect given to no other 20th-century prime minister — a third full term and a clear parliamentary majority. She seemed to be more dominant than ever.",
+        },
+        "children": Array [],
+        "name": "text",
+      },
+    ],
+    "name": "paragraph",
+  },
+  Object {
+    "attributes": Object {},
+    "children": Array [
+      Object {
+        "attributes": Object {
+          "value": "With a comfortable lead in the polls, a Conservative victory never seemed in doubt, but the Conservative campaign was not a happy one. Labour fought with a new vigour and confidence, and the Conservative team was divided and mutually suspicious. Thatcher had become increasingly concerned that Tebbit, whom she had made party chairman, was trying to promote himself not her, and she inserted her trusted ally, Lord Young, into Conservative Central Office to keep an eye on its chairman. The result was predictable. Backbiting and indecision exploded into a full-scale row on “wobbly Thursday”, a week before polling day, when anxieties about the election’s outcome led to unnecessary expenditure on advertising.",
+        },
+        "children": Array [],
+        "name": "text",
+      },
+    ],
+    "name": "paragraph",
+  },
+  Object {
+    "attributes": Object {},
+    "children": Array [
+      Object {
+        "attributes": Object {
+          "value": "In the wake of this visit Thatcher faced the prospect of an imminent election with quiet confidence. She had made a major mark on the international scene and, despite a muddled record of domestic reform, she was seen to have presided over a steady economic recovery. Public spending had been increased in the autumn of 1986, taxes were cut in the spring Budget of 1987, and shortly afterwards the Conservatives did well in the local elections. Thatcher asked for a dissolution of Parliament in May.",
+        },
+        "children": Array [],
+        "name": "text",
+      },
+    ],
+    "name": "paragraph",
+  },
+  Object {
+    "attributes": Object {},
+    "children": Array [
+      Object {
+        "attributes": Object {
+          "value": "But it was as an influential and outspoken western alliance leader that she played her most prominent international role. She remained a loyal ally of President Reagan and the US, and earned Washington’s warm approval for her politically brave decision to allow US military bases in Britain to be used for bombing raids on Libya in 1986. Her loyalty to the alliance earned her the right to express forcefully to the US Administration European concerns about disarmament and the Strategic Defence Initiative before and after Reagan’s summit at Reykjavik with the Soviet leader, Mikhail Gorbachev. She journeyed herself to Moscow to meet Gorbachev in March 1987.",
+        },
+        "children": Array [],
+        "name": "text",
+      },
+    ],
+    "name": "paragraph",
+  },
+  Object {
+    "attributes": Object {},
+    "children": Array [
+      Object {
+        "attributes": Object {
+          "value": "The Anglo-Irish agreement of 1985 improved relations between the UK and the Republic of Ireland, increased nationalist acceptance of the institutions of Northern Ireland and enhanced understanding and co-operation over Irish policy — not least in relation to terrorists in the US and elsewhere. However, the agreement was criticised by Unionists who refused to accept that its references to the principle of consent served to confirm the constitutional status of the Province. Thatcher, who had been in many respects the most Unionist of Conservative prime ministers, never much cared for this agreement and was to disavow it in her retirement.",
+        },
+        "children": Array [],
+        "name": "text",
+      },
+    ],
+    "name": "paragraph",
+  },
+  Object {
+    "attributes": Object {},
+    "children": Array [
+      Object {
+        "attributes": Object {
+          "value": "Five people were killed in the blast and 34 were injured. Among the dead were Sir Anthony Berry, an MP, and Roberta Wakeham, whose husband John was Tory chief whip. Margaret Tebbit, whose husband Norman was a former Trade and Industry Secretary, was left paralysed and confined to a wheelchair.",
+        },
+        "children": Array [],
+        "name": "text",
+      },
+    ],
+    "name": "paragraph",
+  },
+  Object {
+    "attributes": Object {},
+    "children": Array [
+      Object {
+        "attributes": Object {
+          "value": "“The bomb attack . . . was an attempt not only to disrupt and terminate our conference. It was an attempt to cripple Her Majesty’s democratically elected Government. That is the scale of the outrage in which we have all shared. And the fact that we are gathered here now, shocked but composed and determined, is a sign not only that this attack has failed, but that all attempts to destroy democracy by terrorism will fail.”",
+        },
+        "children": Array [],
+        "name": "text",
+      },
+    ],
+    "name": "paragraph",
+  },
+  Object {
+    "attributes": Object {},
+    "children": Array [
+      Object {
+        "attributes": Object {
+          "value": "“I knew that far more important than what I said was the fact that I, as Prime Minister, was still able to say it. I did not dwell long in the speech on what had happened. But I tried to sum up the feelings of all of us.",
+        },
+        "children": Array [],
+        "name": "text",
+      },
+    ],
+    "name": "paragraph",
+  },
+  Object {
+    "attributes": Object {},
+    "children": Array [
+      Object {
+        "attributes": Object {
+          "value": "In her autobiography, The Downing Street Years (1993), she recalled: “At 2.54am a loud thud shook the room. There were a few seconds’ silence and then there was a second slightly different noise, in fact created by falling masonry. I knew immediately that it was a bomb — perhaps two bombs, a large followed by a smaller device — but at this stage I did not know that the explosion had taken place inside the hotel. Glass from the windows of my sitting room was strewn across the carpet. But I thought that it might be a car bomb outside. (I only realised that the bomb had exploded above us when Penny, John Gummer’s wife, appeared a little later from upstairs, still in her night clothes.) The adjoining bathroom was more severely damaged, though the worst I would have suffered had I been in there were minor cuts. Those who had sought to kill me had placed the bomb in the wrong place.”",
+        },
+        "children": Array [],
+        "name": "text",
+      },
+    ],
+    "name": "paragraph",
+  },
+  Object {
+    "attributes": Object {},
+    "children": Array [
+      Object {
+        "attributes": Object {
+          "value": "The same could be said of the Anglo-Irish agreement concluded at Hillsborough in the same year with Dr Garret Fitzgerald’s Fine Gael-Labour Party Government. On October 12, 1984, at the Conservative Party conference in Brighton, Thatcher had almost been killed by an IRA bomb at the Grand Hotel.",
+        },
+        "children": Array [],
+        "name": "text",
+      },
+    ],
+    "name": "paragraph",
+  },
+  Object {
+    "attributes": Object {},
+    "children": Array [
+      Object {
+        "attributes": Object {
+          "value": "Inevitably the longer that Thatcher remained in office, the more she became a significant figure on the world stage. In Europe she continued to battle successfully for reductions in Britain’s net contributions to the Community. She presided over an improvement in relations with Spain, which led to an agreement over Gibraltar in 1985, and she brought to a successful conclusion discussions with the Chinese over the future of Hong Kong. The Sino-British Joint Declaration, which was ratified in May 1985, represented the pragmatic side of her foreign policy.",
+        },
+        "children": Array [],
+        "name": "text",
+      },
+    ],
+    "name": "paragraph",
+  },
+  Object {
+    "attributes": Object {},
+    "children": Array [
+      Object {
+        "attributes": Object {
+          "value": "On the economic front, in the meantime, Thatcher continued to pursue fiscally cautious policies with what seemed to be growing success. Nigel Lawson, whom she had appointed to the Treasury in 1983, was able to point to steady economic growth, low inflation and public borrowing and growing investment. As the Parliament drew towards its end, the Chancellor was able to offer the prospect of increased public spending in areas such as health and education, reductions in taxation and an easing of interest rates. Moreover, in industrial relations, ministers were able to note that disputes were at their lowest level for 50 years.",
+        },
+        "children": Array [],
+        "name": "text",
+      },
+    ],
+    "name": "paragraph",
+  },
+]
+`;
