@@ -32,8 +32,9 @@ const makeClient = options => {
   if (typeof window !== "undefined" && window.nuk) {
     const acsTnlCookie = window.nuk.getCookieValue("acs_tnl");
     const sacsTnlCookie = window.nuk.getCookieValue("sacs_tnl");
-
-    networkInterfaceOptions.headers.Authorization = `Cookie acs_tnl=${acsTnlCookie};sacs_tnl=${sacsTnlCookie}`;
+    if (acsTnlCookie && sacsTnlCookie) {
+      networkInterfaceOptions.headers.Authorization = `Cookie acs_tnl=${acsTnlCookie};sacs_tnl=${sacsTnlCookie}`;
+    }
   }
 
   return new ApolloClient({
