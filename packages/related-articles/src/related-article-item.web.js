@@ -2,12 +2,14 @@ import React from "react";
 import Context from "@times-components/context";
 import Link from "@times-components/link";
 import RelatedArticleItem from "./related-article-item.base";
+import relatedArticlesItemTrackingEvents from "./related-articles-item-tracking-events";
 
-export default props => (
+const RelatedArticleItemWeb = props => (
   <RelatedArticleItem {...props}>
     {({ article, card }) => (
       <Context.Consumer>
         {({ makeArticleUrl }) => (
+          // I need to add some on press stuff here:
           <Link linkStyle={{ padding: 10 }} url={makeArticleUrl(article)}>
             {card}
           </Link>
@@ -16,3 +18,5 @@ export default props => (
     )}
   </RelatedArticleItem>
 );
+
+export default relatedArticlesItemTrackingEvents(RelatedArticleItemWeb)
