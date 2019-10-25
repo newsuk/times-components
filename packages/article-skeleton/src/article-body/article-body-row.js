@@ -1,6 +1,6 @@
 /* eslint-disable prefer-destructuring */
 import React, { useState } from "react";
-import { View, Text } from "react-native";
+import { View, Text, Dimensions } from "react-native";
 import styleguide, {
   colours,
   tabletWidth,
@@ -52,6 +52,7 @@ const makeDropCap = (scale, color, dropCapFont, paragraph) => {
   const exclusion = new BoxExclusion(0, 0, width + advance, height);
   const element = (
     <Text
+      allowFontScaling={false}
       style={[
         {
           position: "absolute",
@@ -105,7 +106,7 @@ const Paragraph = ({
   if (!inline && !dropCap) {
     return (
       <ArticleParagraph ast={tree} key={key} uid={key}>
-        <Text>
+        <Text allowFontScaling={false}>
           {children.map(child => {
             const attribute = child.attributes[0];
             const style = attribute ? attribute.tag.settings : defaultFont;
@@ -212,6 +213,7 @@ const Paragraph = ({
         }
         return (
           <Text
+            allowFontScaling={false}
             selectable
             numberOfLines={1}
             style={[
@@ -238,7 +240,6 @@ export default ({
   onTwitterLinkPress,
   onVideoPress,
   // onImagePress,
-  // fontScale,
   isTablet,
   dropcapsDisabled,
   dropCapFont = "dropCap",
@@ -256,6 +257,10 @@ export default ({
     fontWeight: "normal",
     color: colours.functional.black
   };
+
+  const { fontScale } = Dimensions.get("window");
+  defaultFont.fontSize *= fontScale;
+  defaultFont.lineHeight *= fontScale;
 
   const fontConfig = {
     body: defaultFont,
