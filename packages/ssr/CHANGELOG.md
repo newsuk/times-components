@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.9.5](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.9.4...@times-components/ssr@2.9.5) (2019-10-25)
+
+
+### Bug Fixes
+
+* only add acs and sacs cookies if they exist ([#2351](https://github.com/newsuk/times-components/issues/2351)) ([b979cea](https://github.com/newsuk/times-components/commit/b979cea))
+
+
+
+
+
 ## [2.9.4](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.9.3...@times-components/ssr@2.9.4) (2019-10-23)
 
 **Note:** Version bump only for package @times-components/ssr
