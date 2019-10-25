@@ -84,7 +84,6 @@ exports[`3. lead one and one - medium 1`] = `
     <View />
     <View>
       <TileAA
-        breakpoint="medium"
         tileName="support"
       />
     </View>
@@ -845,7 +844,6 @@ exports[`25. secondary four - wide 1`] = `
           Object {
             "fontSize": 20,
             "lineHeight": 20,
-            "marginBottom": 5,
           }
         }
         breakpoint="wide"
@@ -857,7 +855,6 @@ exports[`25. secondary four - wide 1`] = `
           Object {
             "fontSize": 20,
             "lineHeight": 20,
-            "marginBottom": 5,
           }
         }
         breakpoint="wide"
@@ -1446,7 +1443,6 @@ exports[`41. secondary four - huge 1`] = `
             Object {
               "fontSize": 22,
               "lineHeight": 22,
-              "marginBottom": 5,
             }
           }
           breakpoint="huge"
@@ -1458,7 +1454,6 @@ exports[`41. secondary four - huge 1`] = `
             Object {
               "fontSize": 22,
               "lineHeight": 22,
-              "marginBottom": 5,
             }
           }
           breakpoint="huge"

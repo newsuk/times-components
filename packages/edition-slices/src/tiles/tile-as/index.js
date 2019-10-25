@@ -35,6 +35,7 @@ const TileAS = ({ onPress, tile, breakpoint }) => {
       <TileSummary
         headlineStyle={styles.headline}
         summary={getTileSummary(tile, 125)}
+        summaryStyle={styles.summary}
         style={styles.summaryContainer}
         tile={tile}
       />
