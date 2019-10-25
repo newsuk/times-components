@@ -9,7 +9,6 @@ const RelatedArticleItemWeb = props => (
     {({ article, card }) => (
       <Context.Consumer>
         {({ makeArticleUrl }) => (
-          // I need to add some on press stuff here:
           <Link linkStyle={{ padding: 10 }} url={makeArticleUrl(article)}>
             {card}
           </Link>
