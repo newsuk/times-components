@@ -1,7 +1,8 @@
 import {
   fonts,
   spacing,
-  editionBreakpoints
+  editionBreakpoints,
+  globalSpacingStyles
 } from "@times-components/styleguide";
 
 const sharedStyles = {
@@ -9,6 +10,7 @@ const sharedStyles = {
     flex: 1
   },
   headline: {
+    ...globalSpacingStyles.tabletHeadline,
     fontFamily: fonts.headline
   }
 };
@@ -21,7 +23,8 @@ const smallBreakpointStyles = {
   headline: {
     ...sharedStyles.headline,
     fontSize: 25,
-    lineHeight: 25
+    lineHeight: 25,
+    marginBottom: spacing(1)
   }
 };
 
@@ -34,6 +37,9 @@ const mediumBreakpointStyles = {
     ...sharedStyles.headline,
     fontSize: 20,
     lineHeight: 20
+  },
+  summary: {
+    ...globalSpacingStyles.tabletTeaser
   }
 };
 
@@ -44,9 +50,11 @@ const wideBreakpointStyles = {
   },
   headline: {
     ...sharedStyles.headline,
-    marginBottom: spacing(2),
     fontSize: 30,
     lineHeight: 30
+  },
+  summary: {
+    ...globalSpacingStyles.tabletTeaser
   }
 };
 

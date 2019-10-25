@@ -41,6 +41,7 @@ const TileAR = ({ onPress, tile, breakpoint = editionBreakpoints.medium }) => {
           <TileSummary
             headlineStyle={styles.headline}
             summary={getTileSummary(tile, 125)}
+            summaryStyle={styles.summary}
             tile={tile}
             whiteSpaceHeight={whiteSpaceHeight}
             withStar={false}

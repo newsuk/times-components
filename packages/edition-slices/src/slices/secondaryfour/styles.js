@@ -1,15 +1,13 @@
-import { editionBreakpoints, spacing } from "@times-components/styleguide";
+import { editionBreakpoints } from "@times-components/styleguide";
 
 const wideBreakpointHeadlineStyles = {
   fontSize: 20,
-  lineHeight: 20,
-  marginBottom: spacing(1)
+  lineHeight: 20
 };
 
 const hugeBreakpointHeadlineStyles = {
   fontSize: 22,
-  lineHeight: 22,
-  marginBottom: spacing(1)
+  lineHeight: 22
 };
 
 const styleResolver = {
