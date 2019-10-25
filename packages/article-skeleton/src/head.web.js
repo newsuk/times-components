@@ -108,7 +108,7 @@ const getThumbnailUrlFromImage = article => {
   return get(article.leadAsset, "crop169.url", null);
 };
 
-function Head({ article, paidContentClassName, faviconUrl }) {
+function Head({ article, logoUrl, paidContentClassName }) {
   const {
     descriptionMarkup,
     headline,
@@ -147,7 +147,7 @@ function Head({ article, paidContentClassName, faviconUrl }) {
     publisher: {
       "@type": "Organization",
       name: publication,
-      logo: faviconUrl
+      logo: logoUrl
     },
     mainEntityOfPage: {
       "@type": "WebPage"
@@ -220,8 +220,8 @@ Head.propTypes = {
     shortIdentifier: PropTypes.string.isRequired,
     tiles: PropTypes.array
   }).isRequired,
-  paidContentClassName: PropTypes.string.isRequired,
-  faviconUrl: PropTypes.string.isRequired
+  logoUrl: PropTypes.string.isRequired,
+  paidContentClassName: PropTypes.string.isRequired
 };
 
 export default Head;

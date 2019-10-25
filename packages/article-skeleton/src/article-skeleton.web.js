@@ -57,10 +57,10 @@ class ArticleSkeleton extends Component {
       analyticsStream,
       data: article,
       Header,
+      logoUrl,
       receiveChildList,
       spotAccountId,
-      paidContentClassName,
-      faviconUrl
+      paidContentClassName
     } = this.props;
 
     const {
@@ -101,8 +101,8 @@ class ArticleSkeleton extends Component {
         >
           <Head
             article={article}
+            logoUrl={logoUrl}
             paidContentClassName={paidContentClassName}
-            faviconUrl={faviconUrl}
           />
           <AdComposer adConfig={adConfig}>
             <LazyLoad rootMargin={spacing(10)} threshold={0.5}>

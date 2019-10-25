@@ -58,11 +58,11 @@ class ArticlePage extends Component {
       analyticsStream,
       error,
       isLoading,
+      logoUrl,
       navigationMode,
       receiveChildList,
       spotAccountId,
-      paidContentClassName,
-      faviconUrl
+      paidContentClassName
     } = this.props;
 
     if (error || isLoading) {
@@ -75,11 +75,11 @@ class ArticlePage extends Component {
         analyticsStream={analyticsStream}
         data={article}
         Header={this.renderHeader}
+        logoUrl={logoUrl}
         receiveChildList={receiveChildList}
         navigationMode={navigationMode}
         spotAccountId={spotAccountId}
         paidContentClassName={paidContentClassName}
-        faviconUrl={faviconUrl}
       />
     );
   }
