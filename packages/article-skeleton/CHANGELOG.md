@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.18.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.18.2...@times-components/article-skeleton@1.18.3) (2019-10-26)
+
+
+### Bug Fixes
+
+* edge case with huge paragraphs ([#2350](https://github.com/newsuk/times-components/issues/2350)) ([1bb9f43](https://github.com/newsuk/times-components/commit/1bb9f43))
+
+
+
+
+
 ## [1.18.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.18.1...@times-components/article-skeleton@1.18.2) (2019-10-23)
 
 
