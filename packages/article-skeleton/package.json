@@ -99,6 +99,7 @@
     "@times-components/user-state": "0.0.37",
     "@times-components/utils": "5.1.2",
     "@times-components/video": "4.7.86",
+    "memoize-one": "5.1.1",
     "lodash.get": "4.4.2",
     "lodash.pick": "4.4.0",
     "luxon": "1.18.0",

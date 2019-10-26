@@ -15,6 +15,7 @@ import articleTrackingContext from "./tracking/article-tracking-context";
 import Gutter, { maxWidth } from "./gutter";
 import styles from "./styles/shared";
 import renderers from "./article-body/article-body-row";
+import fixup from "./body-utils";
 
 const templateWithDropCaps = [
   "indepth",
@@ -83,47 +84,14 @@ const ArticleSkeleton = props => {
     renderChild(item, index.toString(), index)
   );
 
-  const collapsed = !isTablet
-    ? content
-    : content.reduceRight((acc, node) => {
-        // backwards
-        if (
-          (node.name === "image" && node.attributes.display === "inline") ||
-          node.name === "pullQuote"
-        ) {
-          // forwards
-          let i;
-          let children = [node];
-          for (i = 0; i < acc.length; i += 1) {
-            const next = acc[i];
-            if (next && next.name === "paragraph") {
-              children = [
-                ...children,
-                ...next.children,
-                { name: "break", children: [] },
-                { name: "break", children: [] }
-              ];
-            } else {
-              break;
-            }
-          }
-          return [
-            {
-              ...acc[0],
-              children
-            },
-            ...acc.slice(i)
-          ];
-        }
-        return [node, ...acc];
-      }, []);
+  const fixedContent = fixup(isTablet, content);
 
   return (
     <AdComposer adConfig={adConfig}>
       <View style={styles.articleContainer}>
         <Viewport.Tracker>
           <VirtualizedList
-            data={collapsed}
+            data={fixedContent}
             showsVerticalScrollIndicator={false}
             getItemCount={d => (d ? d.length + 2 : 0)}
             getItem={(d, i) => {

@@ -12,9 +12,13 @@ import {
 import { TextLink } from "@times-components/link";
 import "./mocks.native";
 import { FontStorage } from "@times-components/typeset";
+import { VirtualizedList } from "react-native";
 import shared from "./shared.base";
 import ArticleSkeleton from "../src/article-skeleton";
-import articleFixture, { testFixture } from "../fixtures/full-article";
+import articleFixture, {
+  testFixture,
+  nestedContent
+} from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
 import articleSkeletonProps from "./shared-article-skeleton-props";
 
@@ -106,6 +110,26 @@ export default () => {
     />
   );
 
+  const renderNestedArticle = () => (
+    <ArticleSkeleton
+      {...articleSkeletonProps}
+      adConfig={adConfig}
+      analyticsStream={() => {}}
+      data={articleFixture({
+        ...testFixture,
+        content: nestedContent
+      })}
+      onAuthorPress={() => {}}
+      onCommentGuidelinesPress={() => {}}
+      onCommentsPress={() => {}}
+      onLinkPress={() => {}}
+      onRelatedArticlePress={() => {}}
+      onTopicPress={() => {}}
+      onTwitterLinkPress={() => {}}
+      onVideoPress={() => {}}
+    />
+  );
+
   const tests = [
     {
       name: "an inline link uses the given onPress",
@@ -137,6 +161,16 @@ export default () => {
         const [, [call]] = stream.mock.calls;
 
         expect(call).toMatchSnapshot();
+      }
+    },
+    {
+      name: "breaks up malformed huge paragraphs",
+      test() {
+        const testInstance = TestRenderer.create(renderNestedArticle());
+
+        const [list] = testInstance.root.findAllByType(VirtualizedList);
+
+        expect(list.props.data).toMatchSnapshot();
       }
     }
   ];
