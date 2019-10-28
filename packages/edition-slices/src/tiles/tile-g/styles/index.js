@@ -2,7 +2,8 @@ import {
   fonts,
   fontFactory,
   spacing,
-  editionBreakpoints
+  editionBreakpoints,
+  globalSpacingStyles
 } from "@times-components/styleguide";
 
 const defaultStyles = {
@@ -49,10 +50,10 @@ const mediumBreakpointStyles = {
     paddingVertical: spacing(3)
   },
   headline: {
+    ...globalSpacingStyles.tabletHeadline,
     fontFamily: fonts.headline,
     fontSize: 20,
-    lineHeight: 20,
-    marginBottom: 0
+    lineHeight: 20
   },
   imageContainer: {
     overflow: "hidden",

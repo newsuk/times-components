@@ -35,7 +35,7 @@ exports[`tile y huge 1`] = `
           "fontSize": 35,
           "fontWeight": "900",
           "lineHeight": 35,
-          "marginBottom": 10,
+          "marginBottom": 0,
         }
       }
     >
@@ -50,6 +50,7 @@ exports[`tile y huge 1`] = `
           "fontSize": 14,
           "lineHeight": 20,
           "marginBottom": 0,
+          "marginTop": 10,
         }
       }
     >
@@ -108,7 +109,7 @@ exports[`tile y medium 1`] = `
           "fontSize": 30,
           "fontWeight": "900",
           "lineHeight": 30,
-          "marginBottom": 10,
+          "marginBottom": 0,
         }
       }
     >
@@ -123,6 +124,7 @@ exports[`tile y medium 1`] = `
           "fontSize": 14,
           "lineHeight": 20,
           "marginBottom": 0,
+          "marginTop": 10,
         }
       }
     >
@@ -181,7 +183,7 @@ exports[`tile y wide 1`] = `
           "fontSize": 30,
           "fontWeight": "900",
           "lineHeight": 30,
-          "marginBottom": 10,
+          "marginBottom": 0,
         }
       }
     >
@@ -196,6 +198,7 @@ exports[`tile y wide 1`] = `
           "fontSize": 14,
           "lineHeight": 20,
           "marginBottom": 0,
+          "marginTop": 10,
         }
       }
     >
@@ -254,7 +257,7 @@ exports[`tile y without breakpoint should be like medium 1`] = `
           "fontSize": 30,
           "fontWeight": "900",
           "lineHeight": 30,
-          "marginBottom": 10,
+          "marginBottom": 0,
         }
       }
     >
@@ -269,6 +272,7 @@ exports[`tile y without breakpoint should be like medium 1`] = `
           "fontSize": 14,
           "lineHeight": 20,
           "marginBottom": 0,
+          "marginTop": 10,
         }
       }
     >

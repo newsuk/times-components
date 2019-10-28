@@ -55,7 +55,7 @@ exports[`tile as huge 1`] = `
           "fontSize": 22,
           "fontWeight": "900",
           "lineHeight": 22,
-          "marginBottom": 5,
+          "marginBottom": 0,
         }
       }
     >
@@ -70,6 +70,7 @@ exports[`tile as huge 1`] = `
           "fontSize": 14,
           "lineHeight": 20,
           "marginBottom": 0,
+          "marginTop": 10,
         }
       }
     >
@@ -148,7 +149,7 @@ exports[`tile as medium 1`] = `
           "fontSize": 18,
           "fontWeight": "900",
           "lineHeight": 18,
-          "marginBottom": 5,
+          "marginBottom": 0,
         }
       }
     >
@@ -163,6 +164,7 @@ exports[`tile as medium 1`] = `
           "fontSize": 14,
           "lineHeight": 20,
           "marginBottom": 0,
+          "marginTop": 10,
         }
       }
     >
@@ -241,7 +243,7 @@ exports[`tile as wide 1`] = `
           "fontSize": 20,
           "fontWeight": "900",
           "lineHeight": 20,
-          "marginBottom": 5,
+          "marginBottom": 0,
         }
       }
     >
@@ -256,6 +258,7 @@ exports[`tile as wide 1`] = `
           "fontSize": 14,
           "lineHeight": 20,
           "marginBottom": 0,
+          "marginTop": 10,
         }
       }
     >

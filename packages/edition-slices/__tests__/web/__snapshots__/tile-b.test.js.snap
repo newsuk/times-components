@@ -10,7 +10,7 @@ exports[`tile b huge 1`] = `
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .S3 {
@@ -32,6 +32,7 @@ exports[`tile b huge 1`] = `
 
 .IS2 {
   -webkit-line-clamp: 2;
+  margin-top: 10px;
 }
 
 .IS3 {
@@ -77,7 +78,7 @@ exports[`tile b huge 1`] = `
         </div>
         <h3
           aria-level="3"
-          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-15d164r IS1 S2"
+          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS1 S2"
           role="heading"
         >
           This is tile headline
@@ -120,7 +121,7 @@ exports[`tile b medium 1`] = `
   font-family: TimesModern-Bold;
   font-weight: 400;
   line-height: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
 }
 
 .S3 {
@@ -141,6 +142,7 @@ exports[`tile b medium 1`] = `
 
 .IS2 {
   -webkit-line-clamp: 2;
+  margin-top: 10px;
 }
 
 .IS3 {
@@ -186,7 +188,7 @@ exports[`tile b medium 1`] = `
         </div>
         <h3
           aria-level="3"
-          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-lineHeight-rjixqe r-marginBottom-d0pm55 IS1 S2"
+          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-lineHeight-rjixqe r-marginBottom-p1pxzi IS1 S2"
           role="heading"
         >
           This is tile headline
@@ -337,7 +339,7 @@ exports[`tile b wide 1`] = `
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .S3 {
@@ -359,6 +361,7 @@ exports[`tile b wide 1`] = `
 
 .IS2 {
   -webkit-line-clamp: 2;
+  margin-top: 10px;
 }
 
 .IS3 {
@@ -404,7 +407,7 @@ exports[`tile b wide 1`] = `
         </div>
         <h3
           aria-level="3"
-          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-15d164r IS1 S2"
+          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS1 S2"
           role="heading"
         >
           This is tile headline
@@ -447,7 +450,19 @@ exports[`tile b with more teaser 1`] = `
   font-family: TimesModern-Bold;
   font-weight: 400;
   line-height: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
+}
+
+.S3 {
+  color: rgba(105,105,105,1.00);
+  -ms-flex-wrap: wrap;
+  -webkit-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-family: TimesDigitalW04;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
 }
 
 .IS1 {
@@ -455,6 +470,11 @@ exports[`tile b with more teaser 1`] = `
 }
 
 .IS2 {
+  -webkit-line-clamp: 2;
+  margin-top: 10px;
+}
+
+.IS3 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   -webkit-flex-shrink: 1;
@@ -478,7 +498,7 @@ exports[`tile b with more teaser 1`] = `
   url="/article/123"
 >
   <div
-    className="css-view-1dbjc4n IS2"
+    className="css-view-1dbjc4n IS3"
   >
     <div
       className="css-view-1dbjc4n"
@@ -497,11 +517,22 @@ exports[`tile b with more teaser 1`] = `
         </div>
         <h3
           aria-level="3"
-          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-lineHeight-rjixqe r-marginBottom-d0pm55 IS1 S2"
+          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-lineHeight-rjixqe r-marginBottom-p1pxzi IS1 S2"
           role="heading"
         >
           This is tile headline
         </h3>
+        <div
+          className="css-text-901oao css-textMultiLine-cens5h r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r IS2 S3"
+        >
+          <span
+            className="css-text-901oao css-textHasAncestor-16my406"
+          >
+            
+            Senior ministers accused Labour today of trying to “frustrate and cancel Brexit” after the party announced plans to hijack Boris Johnson’s deal with amendments for a second referendum and customs union with the EU. Rishi Sunak, the chief secretary to the Treasury, warned that any attempt by MPs to add a customs union to the government’s Brexit deal would be “procedural tricks” intended to frustrate departure. His comments came as ministers announced that they planned to publish the legislation that would formally take Britain out of the European Union today. They will also apply to the Speaker to hold another so-called meaningful vote on the deal following Mr Johnson’s decision to comply with the Benn act, which forces the prime minister to request a Brexit
+            ...
+          </span>
+        </div>
         <ArticleFlags
           flags={
             Array [

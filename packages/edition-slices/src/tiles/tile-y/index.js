@@ -18,6 +18,7 @@ const TileY = ({ onPress, tile, breakpoint = editionBreakpoints.medium }) => {
       <TileSummary
         headlineStyle={styles.headline}
         summary={getTileSummary(tile, 300)}
+        summaryStyle={styles.summary}
         tile={tile}
       />
     </TileLink>

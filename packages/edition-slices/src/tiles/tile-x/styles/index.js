@@ -2,7 +2,8 @@ import {
   colours,
   fonts,
   spacing,
-  editionBreakpoints
+  editionBreakpoints,
+  globalSpacingStyles
 } from "@times-components/styleguide";
 
 const fontSizeResolver = {
@@ -18,15 +19,20 @@ export default breakpoint => ({
     paddingTop: spacing(3)
   },
   headline: {
+    ...globalSpacingStyles.tabletHeadline,
     fontFamily: fonts.headline,
     fontSize: fontSizeResolver[breakpoint],
-    lineHeight: fontSizeResolver[breakpoint],
-    marginBottom: spacing(2)
+    lineHeight: fontSizeResolver[breakpoint]
   },
   strapline: {
     fontFamily: fonts.headlineRegular,
     color: colours.functional.primary,
     fontSize: 24,
-    lineHeight: 26
+    lineHeight: 26,
+    paddingTop: spacing(2),
+    paddingBottom: 0
+  },
+  summary: {
+    ...globalSpacingStyles.tabletTeaser
   }
 });

@@ -850,3 +850,204 @@ exports[`18. article summary content component without white space height 1`] = 
   </span>
 </div>
 `;
+
+exports[`19. article summary component with a single paragraph and flag on tablet 1`] = `
+<div
+  className="css-view-1dbjc4n"
+>
+  <div
+    className="css-view-1dbjc4n r-marginBottom-p1pxzi"
+  >
+    <ArticleLabel
+      color="#333333"
+      title="Camilla Long"
+    />
+  </div>
+  <h3
+    aria-level="3"
+    className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw r-marginBottom-d0pm55"
+    role="heading"
+  >
+    Test Headline
+  </h3>
+  <ArticleFlags
+    flags={
+      Array [
+        Object {
+          "expiryTime": "2020-03-13T12:00:00.000Z",
+          "type": "UPDATED",
+        },
+        Object {
+          "expiryTime": "2019-03-14T12:00:00.000Z",
+          "type": "EXCLUSIVE",
+        },
+      ]
+    }
+  />
+  <div
+    className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
+  >
+    <span
+      className="css-text-901oao css-textHasAncestor-16my406"
+    >
+      
+      Test paragraph
+      ...
+    </span>
+  </div>
+  <div
+    className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginBottom-d0pm55"
+  >
+    <DatePublication
+      date="2017-11-17T00:01:00.000Z"
+      publication="TIMES"
+    />
+  </div>
+  <div
+    className="css-text-901oao"
+  >
+    <ArticleByline
+      ast={
+        Array [
+          Object {
+            "attributes": Object {
+              "slug": "camilla-long",
+            },
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": "Camilla Long",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "author",
+          },
+          Object {
+            "attributes": Object {},
+            "children": Array [
+              Object {
+                "attributes": Object {
+                  "value": ", Environment Editor",
+                },
+                "children": Array [],
+                "name": "text",
+              },
+            ],
+            "name": "inline",
+          },
+        ]
+      }
+    />
+  </div>
+</div>
+`;
+
+exports[`20. article summary component with a strapline and flag on tablet 1`] = `
+<div
+  className="css-view-1dbjc4n"
+>
+  <div
+    className="css-view-1dbjc4n r-marginBottom-p1pxzi"
+  >
+    <ArticleLabel
+      color="#333333"
+      title="Camilla Long"
+    />
+  </div>
+  <h3
+    aria-level="3"
+    className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw r-marginBottom-d0pm55"
+    role="heading"
+  >
+    Test Headline
+  </h3>
+  <h4
+    aria-level="4"
+    className="css-reset-4rbku5 css-text-901oao r-color-1khp51w r-fontFamily-4h8ur4 r-fontSize-1b6yd1w r-lineHeight-10yl4k r-paddingBottom-1mi0q7o"
+    role="heading"
+  >
+    Test Strapline
+  </h4>
+  <ArticleFlags
+    flags={
+      Array [
+        Object {
+          "expiryTime": "2020-03-13T12:00:00.000Z",
+          "type": "UPDATED",
+        },
+        Object {
+          "expiryTime": "2019-03-14T12:00:00.000Z",
+          "type": "EXCLUSIVE",
+        },
+      ]
+    }
+  />
+  <div
+    className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r"
+  >
+    <span
+      className="css-text-901oao css-textHasAncestor-16my406"
+    >
+      
+      Test paragraph
+      ...
+    </span>
+  </div>
+  <div
+    className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n r-marginBottom-d0pm55"
+  >
+    <DatePublication
+      date="2017-11-17T00:01:00.000Z"
+      publication="TIMES"
+    />
+  </div>
+  <div
+    className="css-text-901oao"
+  >
+    <ArticleByline
+      ast={
+        Array [
+          Object {
+            "byline": Array [
+              Object {
+                "attributes": Object {
+                  "slug": "camilla-long",
+                },
+                "children": Array [
+                  Object {
+                    "attributes": Object {
+                      "value": "Camilla Long",
+                    },
+                    "children": Array [],
+                    "name": "text",
+                  },
+                ],
+                "name": "author",
+              },
+            ],
+          },
+          Object {
+            "byline": Array [
+              Object {
+                "attributes": Object {},
+                "children": Array [
+                  Object {
+                    "attributes": Object {
+                      "value": ", Environment Editor",
+                    },
+                    "children": Array [],
+                    "name": "text",
+                  },
+                ],
+                "name": "inline",
+              },
+            ],
+          },
+        ]
+      }
+    />
+  </div>
+</div>
+`;

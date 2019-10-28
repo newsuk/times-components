@@ -43,7 +43,7 @@ exports[`tile ad huge 1`] = `
               "fontSize": 22,
               "fontWeight": "400",
               "lineHeight": 22,
-              "marginBottom": 5,
+              "marginBottom": 0,
             }
           }
         >
@@ -59,6 +59,7 @@ exports[`tile ad huge 1`] = `
               "fontSize": 14,
               "lineHeight": 20,
               "marginBottom": 0,
+              "marginTop": 10,
             }
           }
         >
@@ -127,7 +128,7 @@ exports[`tile ad medium 1`] = `
               "fontSize": 20,
               "fontWeight": "400",
               "lineHeight": 20,
-              "marginBottom": 5,
+              "marginBottom": 0,
             }
           }
         >
@@ -192,7 +193,7 @@ exports[`tile ad wide 1`] = `
               "fontSize": 20,
               "fontWeight": "400",
               "lineHeight": 20,
-              "marginBottom": 5,
+              "marginBottom": 0,
             }
           }
         >
@@ -208,6 +209,7 @@ exports[`tile ad wide 1`] = `
               "fontSize": 14,
               "lineHeight": 20,
               "marginBottom": 0,
+              "marginTop": 10,
             }
           }
         >
@@ -276,7 +278,7 @@ exports[`tile ad without breakpoint should be like medium 1`] = `
               "fontSize": 20,
               "fontWeight": "400",
               "lineHeight": 20,
-              "marginBottom": 5,
+              "marginBottom": 0,
             }
           }
         >

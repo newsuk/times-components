@@ -1,4 +1,8 @@
-import { spacing, fonts } from "@times-components/styleguide";
+import {
+  spacing,
+  fonts,
+  globalSpacingStyles
+} from "@times-components/styleguide";
 
 const mediumBreakpointStyles = {
   container: {
@@ -9,10 +13,10 @@ const mediumBreakpointStyles = {
     paddingVertical: spacing(3)
   },
   headline: {
+    ...globalSpacingStyles.tabletHeadline,
     fontFamily: fonts.headline,
     fontSize: 30,
-    lineHeight: 30,
-    marginBottom: spacing(2)
+    lineHeight: 30
   },
   summaryContainer: {
     flex: 1,
@@ -20,6 +24,9 @@ const mediumBreakpointStyles = {
   },
   imageContainer: {
     flex: 1
+  },
+  summary: {
+    ...globalSpacingStyles.tabletTeaser
   }
 };
 

@@ -12,12 +12,19 @@ import reviewFixture from "./fixtures/review";
 import straplineFixture from "./fixtures/strapline";
 
 const story = m => <View style={{ padding: 20 }}>{m}</View>;
+const isTablet = true;
 
 export default {
   children: [
     {
       component: () => story(<ArticleSummary {...defaultFixture()} />),
       name: "Default",
+      type: "story"
+    },
+    {
+      component: () =>
+        story(<ArticleSummary {...defaultFixture()} isTablet={isTablet} />),
+      name: "Default on tablet",
       type: "story"
     },
     {

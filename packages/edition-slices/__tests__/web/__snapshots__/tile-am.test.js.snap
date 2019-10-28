@@ -13,6 +13,18 @@ exports[`tile am without breakpoint 1`] = `
   margin-bottom: 5px;
 }
 
+.S3 {
+  color: rgba(105,105,105,1.00);
+  -ms-flex-wrap: wrap;
+  -webkit-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-family: TimesDigitalW04;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
 .IS1 {
   margin-bottom: 10px;
   width: 100%;
@@ -25,6 +37,10 @@ exports[`tile am without breakpoint 1`] = `
 }
 
 .IS3 {
+  -webkit-line-clamp: 2;
+}
+
+.IS4 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   -webkit-flex-shrink: 1;
@@ -54,7 +70,7 @@ exports[`tile am without breakpoint 1`] = `
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32"
   />
   <div
-    className="css-view-1dbjc4n IS3"
+    className="css-view-1dbjc4n IS4"
   >
     <div
       className="css-view-1dbjc4n"
@@ -78,6 +94,17 @@ exports[`tile am without breakpoint 1`] = `
         >
           This is tile headline
         </h3>
+        <div
+          className="css-text-901oao css-textMultiLine-cens5h r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r IS3 S3"
+        >
+          <span
+            className="css-text-901oao css-textHasAncestor-16my406"
+          >
+            
+            Senior ministers accused Labour today of trying to “frustrate and cancel Brexit” after the party announced plans to hijack Boris Johnson’s deal with amendments for a second referendum and customs union with the EU. Rishi Sunak, the chief secretary to the Treasury, warned that any attempt by MPs to add a customs union to the government’s Brexit deal would be “procedural tricks” intended to frustrate departure. His comments came as ministers announced that they planned to publish the legislation that would formally take Britain out of the European Union today. They will also apply to the Speaker to hold another so-called meaningful vote on the deal following Mr Johnson’s decision to comply with the Benn act, which forces the prime minister to request a Brexit
+            ...
+          </span>
+        </div>
         <ArticleFlags
           flags={
             Array [

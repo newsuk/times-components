@@ -619,6 +619,21 @@ exports[`5. standard 1`] = `
                   "name": "paragraph",
                 },
               ],
+              "summary800": Array [
+                Object {
+                  "attributes": Object {},
+                  "children": Array [
+                    Object {
+                      "attributes": Object {
+                        "value": "Senior ministers accused Labour today of trying to “frustrate and cancel Brexit” after the party announced plans to hijack Boris Johnson’s deal with amendments for a second referendum and customs union with the EU. Rishi Sunak, the chief secretary to the Treasury, warned that any attempt by MPs to add a customs union to the government’s Brexit deal would be “procedural tricks” intended to frustrate departure. His comments came as ministers announced that they planned to publish the legislation that would formally take Britain out of the European Union today. They will also apply to the Speaker to hold another so-called meaningful vote on the deal following Mr Johnson’s decision to comply with the Benn act, which forces the prime minister to request a Brexit",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                  ],
+                  "name": "paragraph",
+                },
+              ],
               "synonyms": Object {
                 "edges": Array [],
                 "nodes": Array [],
@@ -1030,6 +1045,21 @@ exports[`5. standard 1`] = `
                     Object {
                       "attributes": Object {
                         "value": "‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye.",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                  ],
+                  "name": "paragraph",
+                },
+              ],
+              "summary800": Array [
+                Object {
+                  "attributes": Object {},
+                  "children": Array [
+                    Object {
+                      "attributes": Object {
+                        "value": "Senior ministers accused Labour today of trying to “frustrate and cancel Brexit” after the party announced plans to hijack Boris Johnson’s deal with amendments for a second referendum and customs union with the EU. Rishi Sunak, the chief secretary to the Treasury, warned that any attempt by MPs to add a customs union to the government’s Brexit deal would be “procedural tricks” intended to frustrate departure. His comments came as ministers announced that they planned to publish the legislation that would formally take Britain out of the European Union today. They will also apply to the Speaker to hold another so-called meaningful vote on the deal following Mr Johnson’s decision to comply with the Benn act, which forces the prime minister to request a Brexit",
                       },
                       "children": Array [],
                       "name": "text",
@@ -1457,6 +1487,21 @@ exports[`5. standard 1`] = `
                   "name": "paragraph",
                 },
               ],
+              "summary800": Array [
+                Object {
+                  "attributes": Object {},
+                  "children": Array [
+                    Object {
+                      "attributes": Object {
+                        "value": "Senior ministers accused Labour today of trying to “frustrate and cancel Brexit” after the party announced plans to hijack Boris Johnson’s deal with amendments for a second referendum and customs union with the EU. Rishi Sunak, the chief secretary to the Treasury, warned that any attempt by MPs to add a customs union to the government’s Brexit deal would be “procedural tricks” intended to frustrate departure. His comments came as ministers announced that they planned to publish the legislation that would formally take Britain out of the European Union today. They will also apply to the Speaker to hold another so-called meaningful vote on the deal following Mr Johnson’s decision to comply with the Benn act, which forces the prime minister to request a Brexit",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                  ],
+                  "name": "paragraph",
+                },
+              ],
               "synonyms": Object {
                 "edges": Array [],
                 "nodes": Array [],
@@ -1876,6 +1921,21 @@ exports[`5. standard 1`] = `
                   "name": "paragraph",
                 },
               ],
+              "summary800": Array [
+                Object {
+                  "attributes": Object {},
+                  "children": Array [
+                    Object {
+                      "attributes": Object {
+                        "value": "Senior ministers accused Labour today of trying to “frustrate and cancel Brexit” after the party announced plans to hijack Boris Johnson’s deal with amendments for a second referendum and customs union with the EU. Rishi Sunak, the chief secretary to the Treasury, warned that any attempt by MPs to add a customs union to the government’s Brexit deal would be “procedural tricks” intended to frustrate departure. His comments came as ministers announced that they planned to publish the legislation that would formally take Britain out of the European Union today. They will also apply to the Speaker to hold another so-called meaningful vote on the deal following Mr Johnson’s decision to comply with the Benn act, which forces the prime minister to request a Brexit",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                  ],
+                  "name": "paragraph",
+                },
+              ],
               "synonyms": Object {
                 "edges": Array [],
                 "nodes": Array [],
@@ -2287,6 +2347,21 @@ exports[`5. standard 1`] = `
                     Object {
                       "attributes": Object {
                         "value": "‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye.",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                  ],
+                  "name": "paragraph",
+                },
+              ],
+              "summary800": Array [
+                Object {
+                  "attributes": Object {},
+                  "children": Array [
+                    Object {
+                      "attributes": Object {
+                        "value": "Senior ministers accused Labour today of trying to “frustrate and cancel Brexit” after the party announced plans to hijack Boris Johnson’s deal with amendments for a second referendum and customs union with the EU. Rishi Sunak, the chief secretary to the Treasury, warned that any attempt by MPs to add a customs union to the government’s Brexit deal would be “procedural tricks” intended to frustrate departure. His comments came as ministers announced that they planned to publish the legislation that would formally take Britain out of the European Union today. They will also apply to the Speaker to hold another so-called meaningful vote on the deal following Mr Johnson’s decision to comply with the Benn act, which forces the prime minister to request a Brexit",
                       },
                       "children": Array [],
                       "name": "text",

@@ -86,7 +86,6 @@ class SecondaryTwoNoPicAndTwo extends Component {
       <ResponsiveSlice
         renderSmall={this.renderSmall}
         renderMedium={this.renderMedium}
-        renderWide={this.renderMedium}
       />
     );
   }

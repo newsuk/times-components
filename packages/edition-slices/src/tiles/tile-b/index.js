@@ -33,6 +33,7 @@ const TileB = ({
           <TileSummary
             headlineStyle={headLineStyles}
             summary={getTileSummary(tile, withMoreTeaser ? 800 : 125)}
+            summaryStyle={styles.summary}
             tile={tile}
             whiteSpaceHeight={whiteSpaceHeight}
             withStar={false}

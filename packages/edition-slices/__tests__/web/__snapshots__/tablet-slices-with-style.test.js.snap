@@ -382,7 +382,6 @@ exports[`3. lead one and one - medium 1`] = `
       className="css-view-1dbjc4n IS3"
     >
       <TileAA
-        breakpoint="medium"
         tileName="support"
       />
     </div>
@@ -3634,7 +3633,6 @@ exports[`25. secondary four - wide 1`] = `
           Object {
             "fontSize": 20,
             "lineHeight": 20,
-            "marginBottom": "5px",
           }
         }
         breakpoint="wide"
@@ -3648,7 +3646,6 @@ exports[`25. secondary four - wide 1`] = `
           Object {
             "fontSize": 20,
             "lineHeight": 20,
-            "marginBottom": "5px",
           }
         }
         breakpoint="wide"
@@ -6183,7 +6180,6 @@ exports[`41. secondary four - huge 1`] = `
             Object {
               "fontSize": 22,
               "lineHeight": 22,
-              "marginBottom": "5px",
             }
           }
           breakpoint="huge"
@@ -6197,7 +6193,6 @@ exports[`41. secondary four - huge 1`] = `
             Object {
               "fontSize": 22,
               "lineHeight": 22,
-              "marginBottom": "5px",
             }
           }
           breakpoint="huge"

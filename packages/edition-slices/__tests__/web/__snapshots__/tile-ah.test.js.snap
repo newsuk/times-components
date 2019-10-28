@@ -26,8 +26,7 @@ exports[`tile ah huge 1`] = `
   color: rgba(29,29,27,1.00);
   font-size: 45px;
   line-height: 45px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 5px;
   text-align: center;
 }
 
@@ -35,7 +34,7 @@ exports[`tile ah huge 1`] = `
   font-family: TimesDigitalW04-Regular;
   font-size: 14px;
   line-height: 20px;
-  padding-bottom: 5px;
+  padding-bottom: 0px;
   text-align: center;
 }
 
@@ -82,7 +81,7 @@ exports[`tile ah huge 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS2 S2"
+      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi r-paddingBottom-1mi0q7o IS2 S2"
       role="heading"
     >
       This is tile headline
@@ -134,8 +133,8 @@ exports[`tile ah medium 1`] = `
   color: rgba(29,29,27,1.00);
   font-size: 30px;
   line-height: 30px;
-  padding-top: 10px;
   padding-bottom: 10px;
+  padding-top: 5px;
   text-align: center;
 }
 
@@ -143,7 +142,7 @@ exports[`tile ah medium 1`] = `
   font-family: TimesDigitalW04-Regular;
   font-size: 14px;
   line-height: 20px;
-  padding-bottom: 5px;
+  padding-bottom: 0px;
   text-align: center;
 }
 
@@ -242,8 +241,7 @@ exports[`tile ah wide 1`] = `
   color: rgba(29,29,27,1.00);
   font-size: 40px;
   line-height: 40px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 5px;
   text-align: center;
 }
 
@@ -251,7 +249,7 @@ exports[`tile ah wide 1`] = `
   font-family: TimesDigitalW04-Regular;
   font-size: 14px;
   line-height: 20px;
-  padding-bottom: 5px;
+  padding-bottom: 0px;
   text-align: center;
 }
 
@@ -298,7 +296,7 @@ exports[`tile ah wide 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS2 S2"
+      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi r-paddingBottom-1mi0q7o IS2 S2"
       role="heading"
     >
       This is tile headline
@@ -350,8 +348,7 @@ exports[`tile ah without breakpoint should be like medium 1`] = `
   color: rgba(29,29,27,1.00);
   font-size: 30px;
   line-height: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 5px;
   text-align: center;
 }
 
@@ -359,7 +356,7 @@ exports[`tile ah without breakpoint should be like medium 1`] = `
   font-family: TimesDigitalW04-Regular;
   font-size: 14px;
   line-height: 20px;
-  padding-bottom: 5px;
+  padding-bottom: 0px;
   text-align: center;
 }
 
@@ -406,7 +403,7 @@ exports[`tile ah without breakpoint should be like medium 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS2 S2"
+      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi r-paddingBottom-1mi0q7o IS2 S2"
       role="heading"
     >
       This is tile headline

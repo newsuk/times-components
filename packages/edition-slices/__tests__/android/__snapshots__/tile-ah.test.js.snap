@@ -59,7 +59,8 @@ exports[`tile ah huge 1`] = `
           "fontWeight": "400",
           "lineHeight": 45,
           "marginBottom": 0,
-          "paddingVertical": 10,
+          "paddingBottom": 10,
+          "paddingTop": 5,
           "textAlign": "center",
         }
       }
@@ -75,7 +76,7 @@ exports[`tile ah huge 1`] = `
           "fontFamily": "TimesDigitalW04-Regular",
           "fontSize": 14,
           "lineHeight": 20,
-          "paddingBottom": 5,
+          "paddingBottom": 0,
           "textAlign": "center",
         }
       }
@@ -155,7 +156,8 @@ exports[`tile ah medium 1`] = `
           "fontWeight": "400",
           "lineHeight": 30,
           "marginBottom": 0,
-          "paddingVertical": 10,
+          "paddingBottom": 10,
+          "paddingTop": 5,
           "textAlign": "center",
         }
       }
@@ -171,7 +173,7 @@ exports[`tile ah medium 1`] = `
           "fontFamily": "TimesDigitalW04-Regular",
           "fontSize": 14,
           "lineHeight": 20,
-          "paddingBottom": 5,
+          "paddingBottom": 0,
           "textAlign": "center",
         }
       }
@@ -251,7 +253,8 @@ exports[`tile ah wide 1`] = `
           "fontWeight": "400",
           "lineHeight": 40,
           "marginBottom": 0,
-          "paddingVertical": 10,
+          "paddingBottom": 10,
+          "paddingTop": 5,
           "textAlign": "center",
         }
       }
@@ -267,7 +270,7 @@ exports[`tile ah wide 1`] = `
           "fontFamily": "TimesDigitalW04-Regular",
           "fontSize": 14,
           "lineHeight": 20,
-          "paddingBottom": 5,
+          "paddingBottom": 0,
           "textAlign": "center",
         }
       }
@@ -347,7 +350,8 @@ exports[`tile ah without breakpoint should be like medium 1`] = `
           "fontWeight": "400",
           "lineHeight": 30,
           "marginBottom": 0,
-          "paddingVertical": 10,
+          "paddingBottom": 10,
+          "paddingTop": 5,
           "textAlign": "center",
         }
       }
@@ -363,7 +367,7 @@ exports[`tile ah without breakpoint should be like medium 1`] = `
           "fontFamily": "TimesDigitalW04-Regular",
           "fontSize": 14,
           "lineHeight": 20,
-          "paddingBottom": 5,
+          "paddingBottom": 0,
           "textAlign": "center",
         }
       }
