@@ -18,4 +18,4 @@ const RelatedArticleItemWeb = props => (
   </RelatedArticleItem>
 );
 
-export default relatedArticlesItemTrackingEvents(RelatedArticleItemWeb)
+export default relatedArticlesItemTrackingEvents(RelatedArticleItemWeb);
