@@ -43,15 +43,16 @@ const videoArticle = articleFixture({
 });
 
 const paidContentClassName = "class-name";
-const faviconUrl = "https://www.thetimes.co.uk/d/img/icons/favicon.ico";
+const logoUrl =
+  "https://www.thetimes.co.uk/d/img/dual-masthead-placeholder-16x9-6a9822c61a.png";
 
 describe("Head", () => {
   it("outputs correct metadata", () => {
     const testRenderer = TestRenderer.create(
       <Head
         article={article}
+        logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
-        faviconUrl={faviconUrl}
       />
     );
 
@@ -62,8 +63,8 @@ describe("Head", () => {
     const testRenderer = TestRenderer.create(
       <Head
         article={videoArticle}
+        logoUrl={logoUrl}
         paidContentClassName={paidContentClassName}
-        faviconUrl={faviconUrl}
       />
     );
 

@@ -18,6 +18,7 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     articleId,
     enableNewskit,
     debounceTimeMs,
+    logoUrl,
     makeArticleUrl,
     makeTopicUrl,
     mapArticleToAdConfig,
@@ -25,8 +26,7 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     spotAccountId,
     getCookieValue,
     userState,
-    paidContentClassName,
-    faviconUrl
+    paidContentClassName
   } = data;
 
   return React.createElement(
@@ -64,14 +64,14 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
               article,
               error,
               isLoading,
+              logoUrl,
               navigationMode,
               onAuthorPress: () => {},
               onRelatedArticlePress: () => {},
               onTopicPress: () => {},
               refetch,
               spotAccountId,
-              paidContentClassName,
-              faviconUrl
+              paidContentClassName
             })
           )
       )

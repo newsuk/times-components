@@ -14,12 +14,12 @@ module.exports = (
     enableNewskit,
     graphqlApiUrl,
     logger,
+    logoUrl,
     makeArticleUrl,
     makeTopicUrl,
     navigationMode,
     spotAccountId,
-    paidContentClassName,
-    faviconUrl
+    paidContentClassName
   },
   userState
 ) => {
@@ -58,14 +58,14 @@ module.exports = (
       articleId,
       enableNewskit,
       debounceTimeMs: 0,
+      logoUrl,
       makeArticleUrl,
       makeTopicUrl,
       mapArticleToAdConfig: defaultAdConfig,
       navigationMode,
       spotAccountId,
       userState,
-      paidContentClassName,
-      faviconUrl
+      paidContentClassName
     },
     name: "article"
   };
