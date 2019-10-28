@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.14.0](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.13.24...@times-components/article-summary@3.14.0) (2019-10-28)
+
+
+### Features
+
+* REPLAT-9113 moving flags for tablet beneath the headline or standfirst text ([#2346](https://github.com/newsuk/times-components/issues/2346)) ([fce1bb5](https://github.com/newsuk/times-components/commit/fce1bb5))
+
+
+
+
+
 ## [3.13.24](https://github.com/newsuk/times-components/compare/@times-components/article-summary@3.13.23...@times-components/article-summary@3.13.24) (2019-10-23)
 
 
