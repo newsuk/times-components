@@ -22,7 +22,8 @@ export default {
       type: "story"
     },
     {
-      component: () => story(<ArticleSummary {...defaultFixture()} isTablet={isTablet} />),
+      component: () =>
+        story(<ArticleSummary {...defaultFixture()} isTablet={isTablet} />),
       name: "Default on tablet",
       type: "story"
     },
