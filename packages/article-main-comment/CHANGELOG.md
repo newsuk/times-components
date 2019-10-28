@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.14.4](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.14.3...@times-components/article-main-comment@2.14.4) (2019-10-28)
+
+
+### Bug Fixes
+
+* Logo for seo ([#2354](https://github.com/newsuk/times-components/issues/2354)) ([8f58486](https://github.com/newsuk/times-components/commit/8f58486))
+
+
+
+
+
 ## [2.14.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.14.2...@times-components/article-main-comment@2.14.3) (2019-10-26)
 
 **Note:** Version bump only for package @times-components/article-main-comment

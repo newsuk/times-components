@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.18.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.18.3...@times-components/article-skeleton@1.18.4) (2019-10-28)
+
+
+### Bug Fixes
+
+* Logo for seo ([#2354](https://github.com/newsuk/times-components/issues/2354)) ([8f58486](https://github.com/newsuk/times-components/commit/8f58486))
+
+
+
+
+
 ## [1.18.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.18.2...@times-components/article-skeleton@1.18.3) (2019-10-26)
 
 
