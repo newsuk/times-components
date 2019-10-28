@@ -45,12 +45,7 @@ class TileSummary extends Component {
       flagColour
     } = this.props;
 
-    return <ArticleFlags {...flagColour} flags={
-        [{
-            expiryTime:"2019-12-28T11:00:00.000Z",
-            type:"NEW" 
-        }]  
-      } />;
+    return <ArticleFlags {...flagColour} flags={expirableFlags} />;
   }
 
   renderSaveStar() {
@@ -115,8 +110,7 @@ class TileSummary extends Component {
     } = this.props;
     return (
       <ResponsiveContext.Consumer>
-        {({ isTablet }) => {
-        return (
+        {({ isTablet }) => (
           <ArticleSummary
             bylineProps={bylines ? { ast: bylines, bylineStyle } : null}
             content={summary ? this.renderContent() : undefined}
@@ -135,7 +129,7 @@ class TileSummary extends Component {
             style={style}
             isTablet={isTablet}
           />
-        )}}
+        )}
       </ResponsiveContext.Consumer>
     );
   }
