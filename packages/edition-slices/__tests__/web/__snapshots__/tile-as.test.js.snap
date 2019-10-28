@@ -15,7 +15,7 @@ exports[`tile as huge 1`] = `
   font-family: TimesModern-Bold;
   font-size: 22px;
   font-weight: 400;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
 }
 
 .S4 {
@@ -39,6 +39,10 @@ exports[`tile as huge 1`] = `
 }
 
 .IS3 {
+  margin-top: 10px;
+}
+
+.IS4 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   -webkit-flex-shrink: 1;
@@ -72,7 +76,7 @@ exports[`tile as huge 1`] = `
     />
   </div>
   <div
-    className="css-view-1dbjc4n IS3"
+    className="css-view-1dbjc4n IS4"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
@@ -85,13 +89,13 @@ exports[`tile as huge 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S3"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-p1pxzi IS2 S3"
       role="heading"
     >
       This is tile headline
     </h3>
     <div
-      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S4"
+      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r IS3 S4"
     >
       <span
         className="css-text-901oao css-textHasAncestor-16my406"
@@ -125,7 +129,7 @@ exports[`tile as medium 1`] = `
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
 }
 
 .S3 {
@@ -151,6 +155,10 @@ exports[`tile as medium 1`] = `
 }
 
 .IS3 {
+  margin-top: 10px;
+}
+
+.IS4 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   -webkit-flex-shrink: 1;
@@ -184,7 +192,7 @@ exports[`tile as medium 1`] = `
     />
   </div>
   <div
-    className="css-view-1dbjc4n IS3"
+    className="css-view-1dbjc4n IS4"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
@@ -197,13 +205,13 @@ exports[`tile as medium 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS2 S2"
       role="heading"
     >
       This is tile headline
     </h3>
     <div
-      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
+      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r IS3 S3"
     >
       <span
         className="css-text-901oao css-textHasAncestor-16my406"
@@ -242,7 +250,7 @@ exports[`tile as wide 1`] = `
   font-family: TimesModern-Bold;
   font-weight: 400;
   line-height: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
 }
 
 .S4 {
@@ -266,6 +274,10 @@ exports[`tile as wide 1`] = `
 }
 
 .IS3 {
+  margin-top: 10px;
+}
+
+.IS4 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   -webkit-flex-shrink: 1;
@@ -299,7 +311,7 @@ exports[`tile as wide 1`] = `
     />
   </div>
   <div
-    className="css-view-1dbjc4n IS3"
+    className="css-view-1dbjc4n IS4"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S2"
@@ -312,13 +324,13 @@ exports[`tile as wide 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-lineHeight-rjixqe r-marginBottom-d0pm55 IS2 S3"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-lineHeight-rjixqe r-marginBottom-p1pxzi IS2 S3"
       role="heading"
     >
       This is tile headline
     </h3>
     <div
-      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S4"
+      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r IS3 S4"
     >
       <span
         className="css-text-901oao css-textHasAncestor-16my406"

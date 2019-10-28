@@ -1,5 +1,145 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`tile g huge 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.S2 {
+  color: rgba(51,51,51,1.00);
+  font-family: TimesModern-Bold;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  overflow: hidden;
+  width: 97;
+}
+
+.IS2 {
+  line-height: 22px;
+}
+
+.IS3 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-justify-content: center;
+  justify-content: center;
+  padding-left: 10px;
+  width: 70%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+}
+
+.IS4 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS5 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+}
+</style>
+
+<Link
+  linkStyle={
+    Object {
+      "flex": 1,
+      "flexDirection": "row",
+      "padding": "10px",
+      "paddingHorizontal": "10px",
+      "paddingVertical": "10px",
+    }
+  }
+  url="/article/123"
+>
+  <div
+    className="css-view-1dbjc4n IS5"
+  >
+    <div
+      className="css-view-1dbjc4n IS4"
+    >
+      <Image
+        aspectRatio={1}
+        className="IS1"
+        fill={true}
+        resizeMode="cover"
+        rounded={true}
+        uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
+      />
+      <div
+        className="css-view-1dbjc4n IS3"
+      >
+        <div
+          className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+        >
+          <ArticleLabel
+            color="#005B8D"
+            isVideo={false}
+            title="label"
+          />
+        </div>
+        <h3
+          aria-level="3"
+          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-p1pxzi IS2 S2"
+          role="heading"
+        >
+          This is tile headline
+        </h3>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+        />
+      </div>
+    </div>
+  </div>
+</Link>
+`;
+
 exports[`tile g medium 1`] = `
 <style>
 .S1 {
@@ -278,7 +418,7 @@ exports[`tile g small 1`] = `
 </Link>
 `;
 
-exports[`tile g without breakpoint should be like small 1`] = `
+exports[`tile g wide 1`] = `
 <style>
 .S1 {
   margin-bottom: 0px;
@@ -364,7 +504,7 @@ exports[`tile g without breakpoint should be like small 1`] = `
       "flexDirection": "row",
       "padding": "10px",
       "paddingHorizontal": "10px",
-      "paddingVertical": "15px",
+      "paddingVertical": "10px",
     }
   }
   url="/article/123"
@@ -398,6 +538,146 @@ exports[`tile g without breakpoint should be like small 1`] = `
         <h3
           aria-level="3"
           className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS2 S2"
+          role="heading"
+        >
+          This is tile headline
+        </h3>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+        />
+      </div>
+    </div>
+  </div>
+</Link>
+`;
+
+exports[`tile g without breakpoint should be like small 1`] = `
+<style>
+.S1 {
+  margin-bottom: 0px;
+}
+
+.S2 {
+  color: rgba(51,51,51,1.00);
+  font-family: TimesModern-Bold;
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.IS1 {
+  overflow: hidden;
+  width: 97;
+}
+
+.IS2 {
+  line-height: 22px;
+}
+
+.IS3 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-justify-content: center;
+  justify-content: center;
+  padding-left: 10px;
+  width: 70%;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+}
+
+.IS4 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+}
+
+.IS5 {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: 0%;
+  flex-basis: 0%;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+  -ms-flex-negative: 1;
+  -ms-flex-preferred-size: 0%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+}
+</style>
+
+<Link
+  linkStyle={
+    Object {
+      "flex": 1,
+      "flexDirection": "row",
+      "padding": "10px",
+      "paddingHorizontal": "10px",
+      "paddingVertical": "10px",
+    }
+  }
+  url="/article/123"
+>
+  <div
+    className="css-view-1dbjc4n IS5"
+  >
+    <div
+      className="css-view-1dbjc4n IS4"
+    >
+      <Image
+        aspectRatio={1}
+        className="IS1"
+        fill={true}
+        resizeMode="cover"
+        rounded={true}
+        uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
+      />
+      <div
+        className="css-view-1dbjc4n IS3"
+      >
+        <div
+          className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
+        >
+          <ArticleLabel
+            color="#005B8D"
+            isVideo={false}
+            title="label"
+          />
+        </div>
+        <h3
+          aria-level="3"
+          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-p1pxzi IS2 S2"
           role="heading"
         >
           This is tile headline
