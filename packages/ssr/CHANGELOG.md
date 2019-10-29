@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.9.10](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.9.9...@times-components/ssr@2.9.10) (2019-10-29)
+
+
+### Bug Fixes
+
+* revert cookie pagination fix ([#2358](https://github.com/newsuk/times-components/issues/2358)) ([f214bd9](https://github.com/newsuk/times-components/commit/f214bd9))
+
+
+
+
+
 ## [2.9.9](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.9.8...@times-components/ssr@2.9.9) (2019-10-29)
 
 **Note:** Version bump only for package @times-components/ssr
