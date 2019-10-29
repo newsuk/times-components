@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Render comments label, when comments are loaded 1`] = `
-<div>
+<div
+  id="comments-container"
+>
   <p>
     Comments are subject to our community guidelines, which can be viewed
      
@@ -39,19 +41,25 @@ exports[`disabled comments 1`] = `
 `;
 
 exports[`enabled comments 1`] = `
-<div>
+<div
+  id="comments-container"
+>
   <div />
 </div>
 `;
 
 exports[`single comment 1`] = `
-<div>
+<div
+  id="comments-container"
+>
   <div />
 </div>
 `;
 
 exports[`zero comments 1`] = `
-<div>
+<div
+  id="comments-container"
+>
   <div />
 </div>
 `;

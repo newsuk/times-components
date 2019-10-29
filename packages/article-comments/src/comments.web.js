@@ -97,6 +97,7 @@ class Comments extends Component {
 
     return (
       <CommentContainer
+        id="comments-container"
         onCommentStart={onCommentStart}
         onCommentPost={onCommentPost}
       >
