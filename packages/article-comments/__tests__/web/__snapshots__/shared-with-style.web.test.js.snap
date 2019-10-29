@@ -83,6 +83,7 @@ exports[`enabled comments 1`] = `
 
 <div
   className="c0"
+  id="comments-container"
 >
   <div />
 </div>
