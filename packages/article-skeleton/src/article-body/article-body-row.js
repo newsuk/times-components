@@ -114,9 +114,11 @@ const Paragraph = ({
             const type = href ? attribute.tag.type : null;
             const canonicalId = href ? attribute.tag.canonicalId : null;
             if (href) {
+              const { color, ...linkStyle } = style;
               return (
                 <ArticleLink
                   url={href}
+                  style={linkStyle}
                   onPress={e =>
                     onLinkPress(e, { canonicalId, type, url: href })
                   }
