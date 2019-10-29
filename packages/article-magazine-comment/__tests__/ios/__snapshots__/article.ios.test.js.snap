@@ -9,6 +9,7 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
   <View>
     <ModalImage
       aspectRatio={1}
+      rounded={true}
       uri={null}
     />
     <Text>
@@ -74,6 +75,7 @@ exports[`4. an article with ads 1`] = `
   <View>
     <ModalImage
       aspectRatio={1}
+      rounded={true}
       uri={null}
     />
     <Text>
@@ -139,6 +141,7 @@ exports[`7. an article with no author 1`] = `
   <View>
     <ModalImage
       aspectRatio={1}
+      rounded={true}
       uri={null}
     />
     <View>

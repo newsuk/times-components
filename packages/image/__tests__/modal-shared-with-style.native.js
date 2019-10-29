@@ -1,6 +1,6 @@
 import React from "react";
 import { Text, View } from "react-native";
-import TestRenderer from "react-test-renderer";
+import TestRenderer, { act } from "react-test-renderer";
 import {
   addSerializers,
   compose,
@@ -34,6 +34,8 @@ function callOnLayout(testRenderer, layout = { height: 700, width: 350 }) {
   });
 }
 
+jest.useFakeTimers();
+
 export default () => {
   addSerializers(
     expect,
@@ -48,31 +50,38 @@ export default () => {
   const tests = [
     {
       name: "landscape default modal",
-      test: () => {
+      test: async () => {
         const testRenderer = TestRenderer.create(
           <Responsive>
             <ModalImage {...props} aspectRatio={2} />
           </Responsive>
         );
+
+        await act(async () => {
+          jest.runAllImmediates();
+        });
 
         expect(testRenderer).toMatchSnapshot();
       }
     },
     {
       name: "portrait default modal",
-      test: () => {
+      test: async () => {
         const testRenderer = TestRenderer.create(
           <Responsive>
             <ModalImage {...props} aspectRatio={0.5} />
           </Responsive>
         );
+        await act(async () => {
+          jest.runAllImmediates();
+        });
 
         expect(testRenderer).toMatchSnapshot();
       }
     },
     {
       name: "tablet landscape default modal",
-      test: () => {
+      test: async () => {
         setIsTablet(true);
         const testRenderer = TestRenderer.create(
           <Responsive>
@@ -80,22 +89,37 @@ export default () => {
           </Responsive>
         );
 
+        await act(async () => {
+          jest.runAllImmediates();
+        });
+
         callOnLayout(testRenderer, { height: 1400, width: 700 });
+
+        await act(async () => {
+          jest.runAllImmediates();
+        });
 
         expect(testRenderer).toMatchSnapshot();
       }
     },
     {
       name: "tablet portrait default modal",
-      test: () => {
+      test: async () => {
         setIsTablet(true);
         const testRenderer = TestRenderer.create(
           <Responsive>
             <ModalImage {...props} aspectRatio={0.5} />
           </Responsive>
         );
+        await act(async () => {
+          jest.runAllImmediates();
+        });
 
         callOnLayout(testRenderer, { height: 700, width: 1400 });
+
+        await act(async () => {
+          jest.runAllImmediates();
+        });
 
         expect(testRenderer).toMatchSnapshot();
       }

@@ -35,6 +35,8 @@ jest.mock("@times-components/icons", () => ({
   IconForwardArrow: "IconForwardArrow"
 }));
 
+jest.mock("@times-components/responsive-image", () => "ResponsiveImage");
+
 export default () => {
   beforeEach(() => {
     jest.resetModules();
