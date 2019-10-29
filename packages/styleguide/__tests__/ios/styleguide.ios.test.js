@@ -8,7 +8,7 @@ const tests = [
     name: "Font sizes at default scale",
     test: () => {
       const testInstance = styleguide().fontSizes.bodyMobile;
-      expect(testInstance).toEqual(17);
+      expect(testInstance).toEqual(18);
     }
   },
   {
@@ -44,7 +44,7 @@ const tests = [
         font: "body",
         fontSize: "secondary"
       });
-      expect(testInstance).toEqual(31);
+      expect(testInstance).toEqual(30);
     }
   },
   {

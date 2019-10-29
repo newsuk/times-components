@@ -1,15 +1,17 @@
 import scales from "../scales";
 import mappingBase from "./mapping-base";
+import fonSizeFactory from "../fonts/font-sizes";
 
 const mapping = ({ scale }) => {
+  const fontSizes = fonSizeFactory(scale);
   switch (scale) {
     case scales.large:
       return {
         ...mappingBase,
         body: {
           ...mappingBase.body,
-          bodyMobile: 31,
-          secondary: 31
+          bodyMobile: Math.round(fontSizes.bodyMobile * 1.44),
+          secondary: Math.round(fontSizes.secondary * 1.44)
         },
         supporting: {
           button: 17,
@@ -26,8 +28,8 @@ const mapping = ({ scale }) => {
         ...mappingBase,
         body: {
           ...mappingBase.body,
-          bodyMobile: 33,
-          secondary: 33
+          bodyMobile: Math.round(fontSizes.bodyMobile * 1.44),
+          secondary: Math.round(fontSizes.secondary * 1.44)
         },
         supporting: {
           button: 18,
@@ -44,7 +46,7 @@ const mapping = ({ scale }) => {
         ...mappingBase,
         body: {
           ...mappingBase.body,
-          bodyMobile: 28
+          bodyMobile: Math.round(fontSizes.bodyMobile * 1.44)
         },
         headline: {
           ...mappingBase.headline,
