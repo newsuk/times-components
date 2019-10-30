@@ -36,670 +36,7 @@ fragment puzzleSection on PuzzleSection {
 fragment standardSection on StandardSection {
   name: __typename
   slices {
-    name: __typename
-    ... on StandardSlice {
-      items {
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset32
-          }
-          listingAsset {
-            ...listingAsset32
-          }
-        }
-        headline
-        leadAsset {
-          ...leadAsset32
-        }
-      }
-    }
-    ... on CommentLeadAndCartoonSlice {
-      lead {
-        headline
-        strapline
-        leadAsset {
-          ...leadAsset11
-        }
-        article {
-          ...baseArticleProps
-          strapline
-          leadAsset {
-            ...leadAsset11
-          }
-          listingAsset {
-            ...listingAsset11
-          }
-          summary125: summary(maxCharCount: 125)
-        }
-        teaser125: teaser(maxCharCount: 125)
-      }
-      cartoon {
-        headline
-        leadAsset {
-          ...leadAsset32
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset32
-          }
-          listingAsset {
-            ...listingAsset32
-          }
-        }
-      }
-    }
-    ... on LeadersSlice {
-      leader1 {
-        headline
-        strapline
-        article {
-          ...baseArticleProps
-          strapline
-        }
-      }
-      leader2 {
-        headline
-        strapline
-        article {
-          ...baseArticleProps
-          strapline
-        }
-      }
-      leader3 {
-        headline
-        strapline
-        article {
-          ...baseArticleProps
-          strapline
-        }
-      }
-    }
-    ... on LeadOneAndFourSlice {
-      lead {
-        headline
-        leadAsset {
-          ...leadAsset169
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset169
-          }
-          listingAsset {
-            ...listingAsset169
-          }
-        }
-      }
-      support1 {
-        headline
-        leadAsset {
-          ...leadAsset32
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset32
-          }
-          listingAsset {
-            ...listingAsset32
-          }
-          summary300: summary(maxCharCount: 300)
-        }
-        teaser300: teaser(maxCharCount: 300)
-      }
-      support2 {
-        headline
-        leadAsset {
-          ...leadAsset32
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset32
-          }
-          listingAsset {
-            ...listingAsset32
-          }
-          summary300: summary(maxCharCount: 300)
-        }
-        teaser300: teaser(maxCharCount: 300)
-      }
-      support3 {
-        headline
-        leadAsset {
-          ...leadAsset32
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset32
-          }
-          listingAsset {
-            ...listingAsset32
-          }
-          summary300: summary(maxCharCount: 300)
-        }
-        teaser300: teaser(maxCharCount: 300)
-      }
-      support4 {
-        headline
-        leadAsset {
-          ...leadAsset32
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset32
-          }
-          listingAsset {
-            ...listingAsset32
-          }
-          summary300: summary(maxCharCount: 300)
-        }
-        teaser300: teaser(maxCharCount: 300)
-      }
-    }
-    ... on LeadOneAndOneSlice {
-      lead {
-        headline
-        leadAsset {
-          ...leadAsset169and32
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset169and32
-          }
-          listingAsset {
-            ...listingAsset169and32
-          }
-          summary125: summary(maxCharCount: 125)
-          summary300: summary(maxCharCount: 300)
-          summary800: summary(maxCharCount: 800)
-        }
-        teaser125: teaser(maxCharCount: 125)
-        teaser300: teaser(maxCharCount: 300)
-        teaser800: teaser(maxCharCount: 800)
-      }
-      support {
-        headline
-        leadAsset {
-          ...leadAsset169
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset169
-          }
-          listingAsset {
-            ...listingAsset169
-          }
-          summary125: summary(maxCharCount: 125)
-          summary800: summary(maxCharCount: 800)
-        }
-        teaser125: teaser(maxCharCount: 125)
-        teaser800: teaser(maxCharCount: 800)
-      }
-    }
-    ... on LeadOneFullWidthSlice {
-      lead {
-        headline
-        leadAsset {
-          ...leadAsset169
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset169
-          }
-          listingAsset {
-            ...listingAsset169
-          }
-        }
-      }
-    }
-    ... on LeadTwoNoPicAndTwoSlice {
-      lead1 {
-        headline
-        strapline
-        article {
-          ...baseArticleProps
-          strapline
-          summary125: summary(maxCharCount: 125)
-          summary300: summary(maxCharCount: 300)
-          summary800: summary(maxCharCount: 800)
-        }
-        teaser125: teaser(maxCharCount: 125)
-        teaser300: teaser(maxCharCount: 300)
-        teaser800: teaser(maxCharCount: 800)
-      }
-      lead2 {
-        headline
-        article {
-          ...baseArticleProps
-          summary125: summary(maxCharCount: 125)
-          summary300: summary(maxCharCount: 300)
-        }
-        teaser125: teaser(maxCharCount: 125)
-        teaser300: teaser(maxCharCount: 300)
-      }
-      support1 {
-        headline
-        leadAsset {
-          ...leadAsset32and45
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset32and45
-          }
-          listingAsset {
-            ...listingAsset32and45
-          }
-        }
-      }
-      support2 {
-        headline
-        leadAsset {
-          ...leadAsset32and45
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset32and45
-          }
-          listingAsset {
-            ...listingAsset32and45
-          }
-          summary125: summary(maxCharCount: 125)
-          summary800: summary(maxCharCount: 800)
-        }
-        teaser125: teaser(maxCharCount: 125)
-        teaser800: teaser(maxCharCount: 800)
-      }
-    }
-    ... on SecondaryFourSlice {
-      secondary1 {
-        headline
-        leadAsset {
-          ...leadAsset169
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset169
-          }
-          listingAsset {
-            ...listingAsset169
-          }
-          summary125: summary(maxCharCount: 125)
-        }
-        teaser125: teaser(maxCharCount: 125)
-      }
-      secondary2 {
-        headline
-        leadAsset {
-          ...leadAsset169
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset169
-          }
-          listingAsset {
-            ...listingAsset169
-          }
-          summary125: summary(maxCharCount: 125)
-        }
-        teaser125: teaser(maxCharCount: 125)
-      }
-      secondary3 {
-        headline
-        leadAsset {
-          ...leadAsset169
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset169
-          }
-          listingAsset {
-            ...listingAsset169
-          }
-          summary125: summary(maxCharCount: 125)
-        }
-        teaser125: teaser(maxCharCount: 125)
-      }
-      secondary4 {
-        headline
-        leadAsset {
-          ...leadAsset169
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset169
-          }
-          listingAsset {
-            ...listingAsset169
-          }
-          summary125: summary(maxCharCount: 125)
-        }
-        teaser125: teaser(maxCharCount: 125)
-      }
-    }
-    ... on SecondaryOneSlice {
-      secondary {
-        headline
-        leadAsset {
-          ...leadAsset169and32
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset169and32
-          }
-          listingAsset {
-            ...listingAsset169and32
-          }
-          summary125: summary(maxCharCount: 125)
-          summary800: summary(maxCharCount: 800)
-        }
-        teaser125: teaser(maxCharCount: 125)
-        teaser800: teaser(maxCharCount: 800)
-      }
-    }
-    ... on SecondaryOneAndColumnistSlice {
-      secondary {
-        headline
-        leadAsset {
-          ...leadAsset169
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset169
-          }
-          listingAsset {
-            ...listingAsset169
-          }
-          summary800: summary(maxCharCount: 800)
-        }
-        teaser800: teaser(maxCharCount: 800)
-      }
-      columnist {
-        headline
-        leadAsset {
-          ...leadAsset23
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset23
-          }
-          listingAsset {
-            ...listingAsset23
-          }
-          summary125: summary(maxCharCount: 125)
-          summary800: summary(maxCharCount: 800)
-        }
-        teaser125: teaser(maxCharCount: 125)
-        teaser800: teaser(maxCharCount: 800)
-      }
-    }
-    ... on SecondaryOneAndFourSlice {
-      secondary {
-        headline
-        strapline
-        leadAsset {
-          ...leadAsset11
-        }
-        article {
-          ...baseArticleProps
-          strapline
-          leadAsset {
-            ...leadAsset11
-          }
-          listingAsset {
-            ...listingAsset11
-          }
-        }
-      }
-      support1 {
-        headline
-        article {
-          ...baseArticleProps
-        }
-      }
-      support2 {
-        headline
-        article {
-          ...baseArticleProps
-        }
-      }
-      support3 {
-        headline
-        article {
-          ...baseArticleProps
-        }
-      }
-      support4 {
-        headline
-        article {
-          ...baseArticleProps
-        }
-      }
-    }
-    ... on SecondaryTwoAndTwoSlice {
-      secondary1 {
-        headline
-        leadAsset {
-          ...leadAsset169
-        }
-        article {
-          ...baseArticleProps
-          summary800: summary(maxCharCount: 800)
-          leadAsset {
-            ...leadAsset169
-          }
-          listingAsset {
-            ...listingAsset169
-          }
-        }
-        teaser800: teaser(maxCharCount: 800)
-      }
-      secondary2 {
-        headline
-        leadAsset {
-          ...leadAsset169
-        }
-        article {
-          ...baseArticleProps
-          summary800: summary(maxCharCount: 800)
-          leadAsset {
-            ...leadAsset169
-          }
-          listingAsset {
-            ...listingAsset169
-          }
-        }
-        teaser800: teaser(maxCharCount: 800)
-      }
-      support1 {
-        headline
-        leadAsset {
-          ...leadAsset11
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset11
-          }
-          listingAsset {
-            ...listingAsset11
-          }
-        }
-      }
-      support2 {
-        headline
-        leadAsset {
-          ...leadAsset11
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset11
-          }
-          listingAsset {
-            ...listingAsset11
-          }
-        }
-      }
-    }
-    ... on SecondaryTwoNoPicAndTwoSlice {
-      secondary1 {
-        headline
-        article {
-          ...baseArticleProps
-          summary125: summary(maxCharCount: 125)
-          summary800: summary(maxCharCount: 800)
-        }
-        teaser125: teaser(maxCharCount: 125)
-        teaser800: teaser(maxCharCount: 800)
-      }
-      secondary2 {
-        headline
-        article {
-          ...baseArticleProps
-          summary125: summary(maxCharCount: 125)
-          summary800: summary(maxCharCount: 800)
-        }
-        teaser125: teaser(maxCharCount: 125)
-        teaser800: teaser(maxCharCount: 800)
-      }
-      support1 {
-        headline
-        leadAsset {
-          ...leadAsset11
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset11
-          }
-          listingAsset {
-            ...listingAsset11
-          }
-        }
-      }
-      support2 {
-        headline
-        leadAsset {
-          ...leadAsset11
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset11
-          }
-          listingAsset {
-            ...listingAsset11
-          }
-        }
-      }
-    }
-    ... on TwoPicAndSixNoPicSlice {
-      lead1 {
-        headline
-        leadAsset {
-          ...leadAsset169and32
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset169and32
-          }
-          listingAsset {
-            ...listingAsset169and32
-          }
-          summary125: summary(maxCharCount: 125)
-          summary800: summary(maxCharCount: 800)
-        }
-        teaser125: teaser(maxCharCount: 125)
-        teaser800: teaser(maxCharCount: 800)
-      }
-      lead2 {
-        headline
-        leadAsset {
-          ...leadAsset169and32
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset169and32
-          }
-          listingAsset {
-            ...listingAsset169and32
-          }
-          summary125: summary(maxCharCount: 125)
-          summary800: summary(maxCharCount: 800)
-        }
-        teaser125: teaser(maxCharCount: 125)
-        teaser800: teaser(maxCharCount: 800)
-      }
-      support1 {
-        headline
-        article {
-          ...baseArticleProps
-        }
-      }
-      support2 {
-        headline
-        article {
-          ...baseArticleProps
-        }
-      }
-      support3 {
-        headline
-        article {
-          ...baseArticleProps
-        }
-      }
-      support4 {
-        headline
-        article {
-          ...baseArticleProps
-        }
-      }
-      support5 {
-        headline
-        article {
-          ...baseArticleProps
-        }
-      }
-      support6 {
-        headline
-        article {
-          ...baseArticleProps
-        }
-      }
-    }
-    ... on DailyUniversalRegister {
-      briefing {
-        ...durItem
-      }
-      onThisDay {
-        ...durItem
-      }
-      natureNotes {
-        ...durItem
-      }
-      birthdaysToday {
-        ...durItem
-      }
-    }
+    ...commonSlicesSection
   }
 }
 
@@ -712,656 +49,7 @@ fragment magazineSection on MagazineSection {
     }
   }
   slices {
-    name: __typename
-    ... on StandardSlice {
-      items {
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset32
-          }
-          listingAsset {
-            ...listingAsset32
-          }
-        }
-        headline
-        leadAsset {
-          ...leadAsset32
-        }
-      }
-    }
-    ... on CommentLeadAndCartoonSlice {
-      lead {
-        headline
-        strapline
-        leadAsset {
-          ...leadAsset11
-        }
-        article {
-          ...baseArticleProps
-          strapline
-          leadAsset {
-            ...leadAsset11
-          }
-          listingAsset {
-            ...listingAsset11
-          }
-          summary125: summary(maxCharCount: 125)
-        }
-        teaser125: teaser(maxCharCount: 125)
-      }
-      cartoon {
-        headline
-        leadAsset {
-          ...leadAsset169
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset169
-          }
-          listingAsset {
-            ...listingAsset169
-          }
-        }
-      }
-    }
-    ... on LeadersSlice {
-      leader1 {
-        headline
-        strapline
-        article {
-          ...baseArticleProps
-          strapline
-        }
-      }
-      leader2 {
-        headline
-        strapline
-        article {
-          ...baseArticleProps
-          strapline
-        }
-      }
-      leader3 {
-        headline
-        strapline
-        article {
-          ...baseArticleProps
-          strapline
-        }
-      }
-    }
-    ... on LeadOneAndFourSlice {
-      lead {
-        headline
-        leadAsset {
-          ...leadAsset169
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset169
-          }
-          listingAsset {
-            ...listingAsset169
-          }
-        }
-      }
-      support1 {
-        headline
-        leadAsset {
-          ...leadAsset32
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset32
-          }
-          listingAsset {
-            ...listingAsset32
-          }
-          summary300: summary(maxCharCount: 300)
-        }
-        teaser300: teaser(maxCharCount: 300)
-      }
-      support2 {
-        headline
-        leadAsset {
-          ...leadAsset32
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset32
-          }
-          listingAsset {
-            ...listingAsset32
-          }
-          summary300: summary(maxCharCount: 300)
-        }
-        teaser300: teaser(maxCharCount: 300)
-      }
-      support3 {
-        headline
-        leadAsset {
-          ...leadAsset32
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset32
-          }
-          listingAsset {
-            ...listingAsset32
-          }
-          summary300: summary(maxCharCount: 300)
-        }
-        teaser300: teaser(maxCharCount: 300)
-      }
-      support4 {
-        headline
-        leadAsset {
-          ...leadAsset32
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset32
-          }
-          listingAsset {
-            ...listingAsset32
-          }
-          summary300: summary(maxCharCount: 300)
-        }
-        teaser300: teaser(maxCharCount: 300)
-      }
-    }
-    ... on LeadOneAndOneSlice {
-      lead {
-        headline
-        leadAsset {
-          ...leadAsset169and32
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset169and32
-          }
-          listingAsset {
-            ...listingAsset169and32
-          }
-          summary125: summary(maxCharCount: 125)
-          summary300: summary(maxCharCount: 300)
-          summary800: summary(maxCharCount: 800)
-        }
-        teaser125: teaser(maxCharCount: 125)
-        teaser300: teaser(maxCharCount: 300)
-        teaser800: teaser(maxCharCount: 800)
-      }
-      support {
-        headline
-        leadAsset {
-          ...leadAsset169
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset169
-          }
-          listingAsset {
-            ...listingAsset169
-          }
-          summary125: summary(maxCharCount: 125)
-          summary800: summary(maxCharCount: 800)
-        }
-        teaser125: teaser(maxCharCount: 125)
-        teaser800: teaser(maxCharCount: 800)
-      }
-    }
-    ... on LeadOneFullWidthSlice {
-      lead {
-        headline
-        leadAsset {
-          ...leadAsset169
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset169
-          }
-          listingAsset {
-            ...listingAsset169
-          }
-        }
-      }
-    }
-    ... on LeadTwoNoPicAndTwoSlice {
-      lead1 {
-        headline
-        strapline
-        article {
-          ...baseArticleProps
-          strapline
-          summary125: summary(maxCharCount: 125)
-          summary300: summary(maxCharCount: 300)
-          summary800: summary(maxCharCount: 800)
-        }
-        teaser125: teaser(maxCharCount: 125)
-        teaser300: teaser(maxCharCount: 300)
-        teaser800: teaser(maxCharCount: 800)
-      }
-      lead2 {
-        headline
-        article {
-          ...baseArticleProps
-          summary125: summary(maxCharCount: 125)
-          summary300: summary(maxCharCount: 300)
-        }
-        teaser125: teaser(maxCharCount: 125)
-        teaser300: teaser(maxCharCount: 300)
-      }
-      support1 {
-        headline
-        leadAsset {
-          ...leadAsset32and45
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset32and45
-          }
-          listingAsset {
-            ...listingAsset32and45
-          }
-        }
-      }
-      support2 {
-        headline
-        leadAsset {
-          ...leadAsset32and45
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset32and45
-          }
-          listingAsset {
-            ...listingAsset32and45
-          }
-          summary125: summary(maxCharCount: 125)
-          summary800: summary(maxCharCount: 800)
-        }
-        teaser125: teaser(maxCharCount: 125)
-        teaser800: teaser(maxCharCount: 800)
-      }
-    }
-    ... on SecondaryFourSlice {
-      secondary1 {
-        headline
-        leadAsset {
-          ...leadAsset169
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset169
-          }
-          listingAsset {
-            ...listingAsset169
-          }
-          summary125: summary(maxCharCount: 125)
-        }
-        teaser125: teaser(maxCharCount: 125)
-      }
-      secondary2 {
-        headline
-        leadAsset {
-          ...leadAsset169
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset169
-          }
-          listingAsset {
-            ...listingAsset169
-          }
-          summary125: summary(maxCharCount: 125)
-        }
-        teaser125: teaser(maxCharCount: 125)
-      }
-      secondary3 {
-        headline
-        leadAsset {
-          ...leadAsset169
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset169
-          }
-          listingAsset {
-            ...listingAsset169
-          }
-          summary125: summary(maxCharCount: 125)
-        }
-        teaser125: teaser(maxCharCount: 125)
-      }
-      secondary4 {
-        headline
-        leadAsset {
-          ...leadAsset169
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset169
-          }
-          listingAsset {
-            ...listingAsset169
-          }
-          summary125: summary(maxCharCount: 125)
-        }
-        teaser125: teaser(maxCharCount: 125)
-      }
-    }
-    ... on SecondaryOneSlice {
-      secondary {
-        headline
-        leadAsset {
-          ...leadAsset169and32
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset169and32
-          }
-          listingAsset {
-            ...listingAsset169and32
-          }
-          summary125: summary(maxCharCount: 125)
-          summary800: summary(maxCharCount: 800)
-        }
-        teaser125: teaser(maxCharCount: 125)
-        teaser800: teaser(maxCharCount: 800)
-      }
-    }
-    ... on SecondaryOneAndColumnistSlice {
-      secondary {
-        headline
-        leadAsset {
-          ...leadAsset169
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset169
-          }
-          listingAsset {
-            ...listingAsset169
-          }
-          summary800: summary(maxCharCount: 800)
-        }
-        teaser800: teaser(maxCharCount: 800)
-      }
-      columnist {
-        headline
-        leadAsset {
-          ...leadAsset23
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset23
-          }
-          listingAsset {
-            ...listingAsset23
-          }
-          summary125: summary(maxCharCount: 125)
-          summary800: summary(maxCharCount: 800)
-        }
-        teaser125: teaser(maxCharCount: 125)
-        teaser800: teaser(maxCharCount: 800)
-      }
-    }
-    ... on SecondaryOneAndFourSlice {
-      secondary {
-        headline
-        strapline
-        leadAsset {
-          ...leadAsset11
-        }
-        article {
-          ...baseArticleProps
-          strapline
-          leadAsset {
-            ...leadAsset11
-          }
-          listingAsset {
-            ...listingAsset11
-          }
-        }
-      }
-      support1 {
-        headline
-        article {
-          ...baseArticleProps
-        }
-      }
-      support2 {
-        headline
-        article {
-          ...baseArticleProps
-        }
-      }
-      support3 {
-        headline
-        article {
-          ...baseArticleProps
-        }
-      }
-      support4 {
-        headline
-        article {
-          ...baseArticleProps
-        }
-      }
-    }
-    ... on SecondaryTwoAndTwoSlice {
-      secondary1 {
-        headline
-        leadAsset {
-          ...leadAsset169
-        }
-        article {
-          ...baseArticleProps
-          summary800: summary(maxCharCount: 800)
-          leadAsset {
-            ...leadAsset169
-          }
-          listingAsset {
-            ...listingAsset169
-          }
-        }
-        teaser800: teaser(maxCharCount: 800)
-      }
-      secondary2 {
-        headline
-        leadAsset {
-          ...leadAsset169
-        }
-        article {
-          ...baseArticleProps
-          summary800: summary(maxCharCount: 800)
-          leadAsset {
-            ...leadAsset169
-          }
-          listingAsset {
-            ...listingAsset169
-          }
-        }
-        teaser800: teaser(maxCharCount: 800)
-      }
-      support1 {
-        headline
-        leadAsset {
-          ...leadAsset11
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset11
-          }
-          listingAsset {
-            ...listingAsset11
-          }
-        }
-      }
-      support2 {
-        headline
-        leadAsset {
-          ...leadAsset11
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset11
-          }
-          listingAsset {
-            ...listingAsset11
-          }
-        }
-      }
-    }
-    ... on SecondaryTwoNoPicAndTwoSlice {
-      secondary1 {
-        headline
-        article {
-          ...baseArticleProps
-          summary125: summary(maxCharCount: 125)
-          summary800: summary(maxCharCount: 800)
-        }
-        teaser125: teaser(maxCharCount: 125)
-        teaser800: teaser(maxCharCount: 800)
-      }
-      secondary2 {
-        headline
-        article {
-          ...baseArticleProps
-          summary125: summary(maxCharCount: 125)
-          summary800: summary(maxCharCount: 800)
-        }
-        teaser125: teaser(maxCharCount: 125)
-        teaser800: teaser(maxCharCount: 800)
-      }
-      support1 {
-        headline
-        leadAsset {
-          ...leadAsset11
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset11
-          }
-          listingAsset {
-            ...listingAsset11
-          }
-        }
-      }
-      support2 {
-        headline
-        leadAsset {
-          ...leadAsset11
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset11
-          }
-          listingAsset {
-            ...listingAsset11
-          }
-        }
-      }
-    }
-    ... on TwoPicAndSixNoPicSlice {
-      lead1 {
-        headline
-        leadAsset {
-          ...leadAsset169and32
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset169and32
-          }
-          listingAsset {
-            ...listingAsset169and32
-          }
-          summary125: summary(maxCharCount: 125)
-          summary800: summary(maxCharCount: 800)
-        }
-        teaser125: teaser(maxCharCount: 125)
-        teaser800: teaser(maxCharCount: 800)
-      }
-      lead2 {
-        headline
-        leadAsset {
-          ...leadAsset169and32
-        }
-        article {
-          ...baseArticleProps
-          leadAsset {
-            ...leadAsset169and32
-          }
-          listingAsset {
-            ...listingAsset169and32
-          }
-          summary125: summary(maxCharCount: 125)
-          summary800: summary(maxCharCount: 800)
-        }
-        teaser125: teaser(maxCharCount: 125)
-        teaser800: teaser(maxCharCount: 800)
-      }
-      support1 {
-        headline
-        article {
-          ...baseArticleProps
-        }
-      }
-      support2 {
-        headline
-        article {
-          ...baseArticleProps
-        }
-      }
-      support3 {
-        headline
-        article {
-          ...baseArticleProps
-        }
-      }
-      support4 {
-        headline
-        article {
-          ...baseArticleProps
-        }
-      }
-      support5 {
-        headline
-        article {
-          ...baseArticleProps
-        }
-      }
-      support6 {
-        headline
-        article {
-          ...baseArticleProps
-        }
-      }
-    }
+    ...commonSlicesSection
   }
 }
 
@@ -1416,76 +104,6 @@ fragment leadAsset169 on Media {
   }
 }
 
-fragment listingAsset32 on Media {
-  __typename
-  ... on Video {
-    posterImage {
-      crop32: crop(ratio: "3:2") {
-        ...sectionCropProps
-      }
-    }
-  }
-  ... on Image {
-    crop32: crop(ratio: "3:2") {
-      ...sectionCropProps
-    }
-  }
-}
-
-fragment listingAsset11 on Media {
-  __typename
-  ... on Video {
-    posterImage {
-      crop11: crop(ratio: "1:1") {
-        ...sectionCropProps
-      }
-    }
-  }
-  ... on Image {
-    crop11: crop(ratio: "1:1") {
-      ...sectionCropProps
-    }
-  }
-}
-
-fragment listingAsset23 on Media {
-  __typename
-  ... on Video {
-    posterImage {
-      crop23: crop(ratio: "2:3") {
-        ...sectionCropProps
-      }
-    }
-  }
-  ... on Image {
-    crop23: crop(ratio: "2:3") {
-      ...sectionCropProps
-    }
-  }
-}
-
-fragment listingAsset169and32 on Media {
-  __typename
-  ... on Video {
-    posterImage {
-      crop32: crop(ratio: "3:2") {
-        ...sectionCropProps
-      }
-      crop169: crop(ratio: "16:9") {
-        ...sectionCropProps
-      }
-    }
-  }
-  ... on Image {
-    crop32: crop(ratio: "3:2") {
-      ...sectionCropProps
-    }
-    crop169: crop(ratio: "16:9") {
-      ...sectionCropProps
-    }
-  }
-}
-
 fragment leadAsset32 on Media {
   __typename
   ... on Video {
@@ -1529,22 +147,6 @@ fragment leadAsset23 on Media {
   }
   ... on Image {
     crop23: crop(ratio: "2:3") {
-      ...sectionCropProps
-    }
-  }
-}
-
-fragment listingAsset169 on Media {
-  __typename
-  ... on Video {
-    posterImage {
-      crop169: crop(ratio: "16:9") {
-        ...sectionCropProps
-      }
-    }
-  }
-  ... on Image {
-    crop169: crop(ratio: "16:9") {
       ...sectionCropProps
     }
   }
@@ -1594,28 +196,6 @@ fragment leadAsset32and45 on Media {
   }
 }
 
-fragment listingAsset32and45 on Media {
-  __typename
-  ... on Video {
-    posterImage {
-      crop32: crop(ratio: "3:2") {
-        ...sectionCropProps
-      }
-      crop45: crop(ratio: "4:5") {
-        ...sectionCropProps
-      }
-    }
-  }
-  ... on Image {
-    crop32: crop(ratio: "3:2") {
-      ...sectionCropProps
-    }
-    crop45: crop(ratio: "4:5") {
-      ...sectionCropProps
-    }
-  }
-}
-
 fragment sectionCropProps on Crop {
   ratio
   relativeHorizontalOffset
@@ -1623,4 +203,671 @@ fragment sectionCropProps on Crop {
   relativeWidth
   relativeHeight
   url
+}
+
+fragment commonSlicesSection on StandardSectionSlice {
+  name: __typename
+  ... on StandardSlice {
+    items {
+      article {
+        ...baseArticleProps
+        leadAsset {
+          ...leadAsset32
+        }
+        listingAsset {
+          ...leadAsset32
+        }
+      }
+      headline
+      leadAsset {
+        ...leadAsset32
+      }
+    }
+  }
+  ... on CommentLeadAndCartoonSlice {
+    lead {
+      headline
+      strapline
+      leadAsset {
+        ...leadAsset11
+      }
+      article {
+        ...baseArticleProps
+        strapline
+        leadAsset {
+          ...leadAsset11
+        }
+        listingAsset {
+          ...leadAsset11
+        }
+        summary125: summary(maxCharCount: 125)
+      }
+      teaser125: teaser(maxCharCount: 125)
+    }
+    cartoon {
+      headline
+      leadAsset {
+        ...leadAsset32
+      }
+      article {
+        ...baseArticleProps
+        leadAsset {
+          ...leadAsset32
+        }
+        listingAsset {
+          ...leadAsset32
+        }
+      }
+    }
+  }
+  ... on LeadersSlice {
+    leader1 {
+      headline
+      strapline
+      article {
+        ...baseArticleProps
+        strapline
+      }
+    }
+    leader2 {
+      headline
+      strapline
+      article {
+        ...baseArticleProps
+        strapline
+      }
+    }
+    leader3 {
+      headline
+      strapline
+      article {
+        ...baseArticleProps
+        strapline
+      }
+    }
+  }
+  ... on LeadOneAndFourSlice {
+    lead {
+      headline
+      leadAsset {
+        ...leadAsset169
+      }
+      article {
+        ...baseArticleProps
+        leadAsset {
+          ...leadAsset169
+        }
+        listingAsset {
+          ...leadAsset169
+        }
+      }
+    }
+    support1 {
+      headline
+      leadAsset {
+        ...leadAsset32
+      }
+      article {
+        ...baseArticleProps
+        leadAsset {
+          ...leadAsset32
+        }
+        listingAsset {
+          ...leadAsset32
+        }
+        summary300: summary(maxCharCount: 300)
+      }
+      teaser300: teaser(maxCharCount: 300)
+    }
+    support2 {
+      headline
+      leadAsset {
+        ...leadAsset32
+      }
+      article {
+        ...baseArticleProps
+        leadAsset {
+          ...leadAsset32
+        }
+        listingAsset {
+          ...leadAsset32
+        }
+        summary300: summary(maxCharCount: 300)
+      }
+      teaser300: teaser(maxCharCount: 300)
+    }
+    support3 {
+      headline
+      leadAsset {
+        ...leadAsset32
+      }
+      article {
+        ...baseArticleProps
+        leadAsset {
+          ...leadAsset32
+        }
+        listingAsset {
+          ...leadAsset32
+        }
+        summary300: summary(maxCharCount: 300)
+      }
+      teaser300: teaser(maxCharCount: 300)
+    }
+    support4 {
+      headline
+      leadAsset {
+        ...leadAsset32
+      }
+      article {
+        ...baseArticleProps
+        leadAsset {
+          ...leadAsset32
+        }
+        listingAsset {
+          ...leadAsset32
+        }
+        summary300: summary(maxCharCount: 300)
+      }
+      teaser300: teaser(maxCharCount: 300)
+    }
+  }
+  ... on LeadOneAndOneSlice {
+    lead {
+      headline
+      leadAsset {
+        ...leadAsset169and32
+      }
+      article {
+        ...baseArticleProps
+        leadAsset {
+          ...leadAsset169and32
+        }
+        listingAsset {
+          ...leadAsset169and32
+        }
+        summary125: summary(maxCharCount: 125)
+        summary300: summary(maxCharCount: 300)
+        summary800: summary(maxCharCount: 800)
+      }
+      teaser125: teaser(maxCharCount: 125)
+      teaser300: teaser(maxCharCount: 300)
+      teaser800: teaser(maxCharCount: 800)
+    }
+    support {
+      headline
+      leadAsset {
+        ...leadAsset169
+      }
+      article {
+        ...baseArticleProps
+        leadAsset {
+          ...leadAsset169
+        }
+        listingAsset {
+          ...leadAsset169
+        }
+        summary125: summary(maxCharCount: 125)
+        summary800: summary(maxCharCount: 800)
+      }
+      teaser125: teaser(maxCharCount: 125)
+      teaser800: teaser(maxCharCount: 800)
+    }
+  }
+  ... on LeadOneFullWidthSlice {
+    lead {
+      headline
+      leadAsset {
+        ...leadAsset169
+      }
+      article {
+        ...baseArticleProps
+        leadAsset {
+          ...leadAsset169
+        }
+        listingAsset {
+          ...leadAsset169
+        }
+      }
+    }
+  }
+  ... on LeadTwoNoPicAndTwoSlice {
+    lead1 {
+      headline
+      strapline
+      article {
+        ...baseArticleProps
+        strapline
+        summary125: summary(maxCharCount: 125)
+        summary300: summary(maxCharCount: 300)
+        summary800: summary(maxCharCount: 800)
+      }
+      teaser125: teaser(maxCharCount: 125)
+      teaser300: teaser(maxCharCount: 300)
+      teaser800: teaser(maxCharCount: 800)
+    }
+    lead2 {
+      headline
+      article {
+        ...baseArticleProps
+        summary125: summary(maxCharCount: 125)
+        summary300: summary(maxCharCount: 300)
+      }
+      teaser125: teaser(maxCharCount: 125)
+      teaser300: teaser(maxCharCount: 300)
+    }
+    support1 {
+      headline
+      leadAsset {
+        ...leadAsset32and45
+      }
+      article {
+        ...baseArticleProps
+        leadAsset {
+          ...leadAsset32and45
+        }
+        listingAsset {
+          ...leadAsset32and45
+        }
+      }
+    }
+    support2 {
+      headline
+      leadAsset {
+        ...leadAsset32and45
+      }
+      article {
+        ...baseArticleProps
+        leadAsset {
+          ...leadAsset32and45
+        }
+        listingAsset {
+          ...leadAsset32and45
+        }
+        summary125: summary(maxCharCount: 125)
+        summary800: summary(maxCharCount: 800)
+      }
+      teaser125: teaser(maxCharCount: 125)
+      teaser800: teaser(maxCharCount: 800)
+    }
+  }
+  ... on SecondaryFourSlice {
+    secondary1 {
+      headline
+      leadAsset {
+        ...leadAsset169
+      }
+      article {
+        ...baseArticleProps
+        leadAsset {
+          ...leadAsset169
+        }
+        listingAsset {
+          ...leadAsset169
+        }
+        summary125: summary(maxCharCount: 125)
+      }
+      teaser125: teaser(maxCharCount: 125)
+    }
+    secondary2 {
+      headline
+      leadAsset {
+        ...leadAsset169
+      }
+      article {
+        ...baseArticleProps
+        leadAsset {
+          ...leadAsset169
+        }
+        listingAsset {
+          ...leadAsset169
+        }
+        summary125: summary(maxCharCount: 125)
+      }
+      teaser125: teaser(maxCharCount: 125)
+    }
+    secondary3 {
+      headline
+      leadAsset {
+        ...leadAsset169
+      }
+      article {
+        ...baseArticleProps
+        leadAsset {
+          ...leadAsset169
+        }
+        listingAsset {
+          ...leadAsset169
+        }
+        summary125: summary(maxCharCount: 125)
+      }
+      teaser125: teaser(maxCharCount: 125)
+    }
+    secondary4 {
+      headline
+      leadAsset {
+        ...leadAsset169
+      }
+      article {
+        ...baseArticleProps
+        leadAsset {
+          ...leadAsset169
+        }
+        listingAsset {
+          ...leadAsset169
+        }
+        summary125: summary(maxCharCount: 125)
+      }
+      teaser125: teaser(maxCharCount: 125)
+    }
+  }
+  ... on SecondaryOneSlice {
+    secondary {
+      headline
+      leadAsset {
+        ...leadAsset169and32
+      }
+      article {
+        ...baseArticleProps
+        leadAsset {
+          ...leadAsset169and32
+        }
+        listingAsset {
+          ...leadAsset169and32
+        }
+        summary125: summary(maxCharCount: 125)
+        summary800: summary(maxCharCount: 800)
+      }
+      teaser125: teaser(maxCharCount: 125)
+      teaser800: teaser(maxCharCount: 800)
+    }
+  }
+  ... on SecondaryOneAndColumnistSlice {
+    secondary {
+      headline
+      leadAsset {
+        ...leadAsset169
+      }
+      article {
+        ...baseArticleProps
+        leadAsset {
+          ...leadAsset169
+        }
+        listingAsset {
+          ...leadAsset169
+        }
+        summary800: summary(maxCharCount: 800)
+      }
+      teaser800: teaser(maxCharCount: 800)
+    }
+    columnist {
+      headline
+      leadAsset {
+        ...leadAsset23
+      }
+      article {
+        ...baseArticleProps
+        leadAsset {
+          ...leadAsset23
+        }
+        listingAsset {
+          ...leadAsset23
+        }
+        summary125: summary(maxCharCount: 125)
+        summary800: summary(maxCharCount: 800)
+      }
+      teaser125: teaser(maxCharCount: 125)
+      teaser800: teaser(maxCharCount: 800)
+    }
+  }
+  ... on SecondaryOneAndFourSlice {
+    secondary {
+      headline
+      strapline
+      leadAsset {
+        ...leadAsset11
+      }
+      article {
+        ...baseArticleProps
+        strapline
+        leadAsset {
+          ...leadAsset11
+        }
+        listingAsset {
+          ...leadAsset11
+        }
+      }
+    }
+    support1 {
+      headline
+      article {
+        ...baseArticleProps
+      }
+    }
+    support2 {
+      headline
+      article {
+        ...baseArticleProps
+      }
+    }
+    support3 {
+      headline
+      article {
+        ...baseArticleProps
+      }
+    }
+    support4 {
+      headline
+      article {
+        ...baseArticleProps
+      }
+    }
+  }
+  ... on SecondaryTwoAndTwoSlice {
+    secondary1 {
+      headline
+      leadAsset {
+        ...leadAsset169
+      }
+      article {
+        ...baseArticleProps
+        summary800: summary(maxCharCount: 800)
+        leadAsset {
+          ...leadAsset169
+        }
+        listingAsset {
+          ...leadAsset169
+        }
+      }
+      teaser800: teaser(maxCharCount: 800)
+    }
+    secondary2 {
+      headline
+      leadAsset {
+        ...leadAsset169
+      }
+      article {
+        ...baseArticleProps
+        summary800: summary(maxCharCount: 800)
+        leadAsset {
+          ...leadAsset169
+        }
+        listingAsset {
+          ...leadAsset169
+        }
+      }
+      teaser800: teaser(maxCharCount: 800)
+    }
+    support1 {
+      headline
+      leadAsset {
+        ...leadAsset11
+      }
+      article {
+        ...baseArticleProps
+        leadAsset {
+          ...leadAsset11
+        }
+        listingAsset {
+          ...leadAsset11
+        }
+      }
+    }
+    support2 {
+      headline
+      leadAsset {
+        ...leadAsset11
+      }
+      article {
+        ...baseArticleProps
+        leadAsset {
+          ...leadAsset11
+        }
+        listingAsset {
+          ...leadAsset11
+        }
+      }
+    }
+  }
+  ... on SecondaryTwoNoPicAndTwoSlice {
+    secondary1 {
+      headline
+      article {
+        ...baseArticleProps
+        summary125: summary(maxCharCount: 125)
+        summary800: summary(maxCharCount: 800)
+      }
+      teaser125: teaser(maxCharCount: 125)
+      teaser800: teaser(maxCharCount: 800)
+    }
+    secondary2 {
+      headline
+      article {
+        ...baseArticleProps
+        summary125: summary(maxCharCount: 125)
+        summary800: summary(maxCharCount: 800)
+      }
+      teaser125: teaser(maxCharCount: 125)
+      teaser800: teaser(maxCharCount: 800)
+    }
+    support1 {
+      headline
+      leadAsset {
+        ...leadAsset11
+      }
+      article {
+        ...baseArticleProps
+        leadAsset {
+          ...leadAsset11
+        }
+        listingAsset {
+          ...leadAsset11
+        }
+      }
+    }
+    support2 {
+      headline
+      leadAsset {
+        ...leadAsset11
+      }
+      article {
+        ...baseArticleProps
+        leadAsset {
+          ...leadAsset11
+        }
+        listingAsset {
+          ...leadAsset11
+        }
+      }
+    }
+  }
+  ... on TwoPicAndSixNoPicSlice {
+    lead1 {
+      headline
+      leadAsset {
+        ...leadAsset169and32
+      }
+      article {
+        ...baseArticleProps
+        leadAsset {
+          ...leadAsset169and32
+        }
+        listingAsset {
+          ...leadAsset169and32
+        }
+        summary125: summary(maxCharCount: 125)
+        summary800: summary(maxCharCount: 800)
+      }
+      teaser125: teaser(maxCharCount: 125)
+      teaser800: teaser(maxCharCount: 800)
+    }
+    lead2 {
+      headline
+      leadAsset {
+        ...leadAsset169and32
+      }
+      article {
+        ...baseArticleProps
+        leadAsset {
+          ...leadAsset169and32
+        }
+        listingAsset {
+          ...leadAsset169and32
+        }
+        summary125: summary(maxCharCount: 125)
+        summary800: summary(maxCharCount: 800)
+      }
+      teaser125: teaser(maxCharCount: 125)
+      teaser800: teaser(maxCharCount: 800)
+    }
+    support1 {
+      headline
+      article {
+        ...baseArticleProps
+      }
+    }
+    support2 {
+      headline
+      article {
+        ...baseArticleProps
+      }
+    }
+    support3 {
+      headline
+      article {
+        ...baseArticleProps
+      }
+    }
+    support4 {
+      headline
+      article {
+        ...baseArticleProps
+      }
+    }
+    support5 {
+      headline
+      article {
+        ...baseArticleProps
+      }
+    }
+    support6 {
+      headline
+      article {
+        ...baseArticleProps
+      }
+    }
+  }
+  ... on DailyUniversalRegister {
+    briefing {
+      ...durItem
+    }
+    onThisDay {
+      ...durItem
+    }
+    natureNotes {
+      ...durItem
+    }
+    birthdaysToday {
+      ...durItem
+    }
+  }
 }
