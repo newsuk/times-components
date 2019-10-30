@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.76](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.0.75...@times-components/key-facts@2.0.76) (2019-10-30)
+
+
+### Bug Fixes
+
+* article body looked too loose ([#2362](https://github.com/newsuk/times-components/issues/2362)) ([b782cc2](https://github.com/newsuk/times-components/commit/b782cc2))
+
+
+
+
+
 ## [2.0.75](https://github.com/newsuk/times-components/compare/@times-components/key-facts@2.0.74...@times-components/key-facts@2.0.75) (2019-10-29)
 
 **Note:** Version bump only for package @times-components/key-facts

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.11.2](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.11.1...@times-components/provider-queries@2.11.2) (2019-10-30)
+
+**Note:** Version bump only for package @times-components/provider-queries
+
+
+
+
+
 ## [2.11.1](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.11.0...@times-components/provider-queries@2.11.1) (2019-10-11)
 
 **Note:** Version bump only for package @times-components/provider-queries
