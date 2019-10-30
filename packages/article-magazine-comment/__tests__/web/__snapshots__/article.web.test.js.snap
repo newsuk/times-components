@@ -7,7 +7,7 @@ exports[`2. loading 1`] = `null`;
 exports[`3. an article with no headline falls back to use shortheadline 1`] = `
 <div>
   <article
-    article-id="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+    data-article-identifier="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
   >
     <Helmet>
       <title>
@@ -250,7 +250,7 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
 exports[`4. an article with ads 1`] = `
 <div>
   <article
-    article-id="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+    data-article-identifier="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
   >
     <Helmet>
       <title>
@@ -495,7 +495,7 @@ exports[`4. an article with ads 1`] = `
 exports[`7. an article with no author 1`] = `
 <div>
   <article
-    article-id="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+    data-article-identifier="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
   >
     <Helmet>
       <title>

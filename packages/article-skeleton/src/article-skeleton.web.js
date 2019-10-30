@@ -95,10 +95,10 @@ class ArticleSkeleton extends Component {
     return (
       <StickyProvider>
         <article
+          data-article-identifier={article.id}
           ref={node => {
             this.node = node;
           }}
-          article-id={article.id}
         >
           <Head
             article={article}
