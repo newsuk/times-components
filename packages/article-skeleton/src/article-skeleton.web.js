@@ -98,6 +98,7 @@ class ArticleSkeleton extends Component {
           ref={node => {
             this.node = node;
           }}
+          article-id={article.id}
         >
           <Head
             article={article}
