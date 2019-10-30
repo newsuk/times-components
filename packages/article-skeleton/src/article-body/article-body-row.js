@@ -32,7 +32,7 @@ const makeDropCap = (scale, color, dropCapFont, paragraph) => {
     return false;
   }
   const baseStyle = letter.attributes[0].tag.settings;
-  const fontSize = baseStyle.fontSize * 6.6;
+  const fontSize = baseStyle.fontSize * 6;
   const fontSettings = {
     fontFamily: fonts[dropCapFont],
     fontStyle: "",

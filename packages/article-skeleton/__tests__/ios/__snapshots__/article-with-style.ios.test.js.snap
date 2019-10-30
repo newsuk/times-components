@@ -38,11 +38,11 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
               Object {
                 "color": undefined,
                 "fontFamily": "TimesModern-Regular",
-                "fontSize": 224.39999999999998,
-                "left": 65.287109375,
-                "lineHeight": 224.39999999999998,
+                "fontSize": 216,
+                "left": 66.48046875,
+                "lineHeight": 216,
                 "position": "absolute",
-                "top": -17,
+                "top": -18,
               }
             }
           >
@@ -51,7 +51,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
           <View
             style={
               Object {
-                "height": 168,
+                "height": 156,
                 "marginBottom": 20,
                 "paddingLeft": 10,
                 "paddingRight": 10,
@@ -64,11 +64,11 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                   Object {
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
-                    "fontSize": 34,
+                    "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "normal",
-                    "left": 144,
-                    "lineHeight": 56,
+                    "left": 141,
+                    "lineHeight": 52,
                     "position": "absolute",
                     "top": 0,
                   }
@@ -81,11 +81,11 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                   Object {
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
-                    "fontSize": 34,
+                    "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "normal",
-                    "left": 196,
-                    "lineHeight": 56,
+                    "left": 197,
+                    "lineHeight": 52,
                     "position": "absolute",
                     "top": 0,
                   }
@@ -98,11 +98,11 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                   Object {
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
-                    "fontSize": 34,
+                    "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "normal",
-                    "left": 288,
-                    "lineHeight": 56,
+                    "left": 294,
+                    "lineHeight": 52,
                     "position": "absolute",
                     "top": 0,
                   }
@@ -115,11 +115,11 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                   Object {
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
-                    "fontSize": 34,
+                    "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "normal",
-                    "left": 379,
-                    "lineHeight": 56,
+                    "left": 390,
+                    "lineHeight": 52,
                     "position": "absolute",
                     "top": 0,
                   }
@@ -132,11 +132,11 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                   Object {
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
-                    "fontSize": 34,
+                    "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "normal",
-                    "left": 496,
-                    "lineHeight": 56,
+                    "left": 514,
+                    "lineHeight": 52,
                     "position": "absolute",
                     "top": 0,
                   }
@@ -149,11 +149,11 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                   Object {
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
-                    "fontSize": 34,
+                    "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "normal",
-                    "left": 609,
-                    "lineHeight": 56,
+                    "left": 633,
+                    "lineHeight": 52,
                     "position": "absolute",
                     "top": 0,
                   }
@@ -166,13 +166,13 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                   Object {
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
-                    "fontSize": 34,
+                    "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "normal",
-                    "left": 144,
-                    "lineHeight": 56,
+                    "left": 141,
+                    "lineHeight": 52,
                     "position": "absolute",
-                    "top": 56,
+                    "top": 52,
                   }
                 }
               >
@@ -377,11 +377,11 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
               Object {
                 "color": undefined,
                 "fontFamily": "TimesModern-Regular",
-                "fontSize": 224.39999999999998,
-                "left": 68.375,
-                "lineHeight": 224.39999999999998,
+                "fontSize": 216,
+                "left": 69.75,
+                "lineHeight": 216,
                 "position": "absolute",
-                "top": -17,
+                "top": -18,
               }
             }
           >
@@ -390,7 +390,7 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
           <View
             style={
               Object {
-                "height": 168,
+                "height": 156,
                 "marginBottom": 20,
                 "paddingLeft": 10,
                 "paddingRight": 10,
@@ -403,11 +403,11 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                   Object {
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
-                    "fontSize": 34,
+                    "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "bold",
-                    "left": 153,
-                    "lineHeight": 56,
+                    "left": 149,
+                    "lineHeight": 52,
                     "position": "absolute",
                     "top": 0,
                   }
@@ -420,11 +420,11 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                   Object {
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
-                    "fontSize": 34,
+                    "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "bold",
-                    "left": 248,
-                    "lineHeight": 56,
+                    "left": 250,
+                    "lineHeight": 52,
                     "position": "absolute",
                     "top": 0,
                   }
@@ -437,11 +437,11 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                   Object {
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
-                    "fontSize": 34,
+                    "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "bold",
-                    "left": 338,
-                    "lineHeight": 56,
+                    "left": 345,
+                    "lineHeight": 52,
                     "position": "absolute",
                     "top": 0,
                   }
@@ -454,11 +454,11 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                   Object {
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
-                    "fontSize": 34,
+                    "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "bold",
-                    "left": 403,
-                    "lineHeight": 56,
+                    "left": 414,
+                    "lineHeight": 52,
                     "position": "absolute",
                     "top": 0,
                   }
@@ -471,11 +471,11 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                   Object {
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
-                    "fontSize": 34,
+                    "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "bold",
-                    "left": 421,
-                    "lineHeight": 56,
+                    "left": 433,
+                    "lineHeight": 52,
                     "position": "absolute",
                     "top": 0,
                   }
@@ -488,11 +488,11 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                   Object {
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
-                    "fontSize": 34,
+                    "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "bold",
-                    "left": 515,
-                    "lineHeight": 56,
+                    "left": 532,
+                    "lineHeight": 52,
                     "position": "absolute",
                     "top": 0,
                   }
@@ -505,13 +505,13 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                   Object {
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
-                    "fontSize": 34,
+                    "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "bold",
-                    "left": 571,
-                    "lineHeight": 56,
+                    "left": 149,
+                    "lineHeight": 52,
                     "position": "absolute",
-                    "top": 0,
+                    "top": 52,
                   }
                 }
               >
@@ -522,13 +522,13 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                   Object {
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
-                    "fontSize": 34,
+                    "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "bold",
-                    "left": 153,
-                    "lineHeight": 56,
+                    "left": 292,
+                    "lineHeight": 52,
                     "position": "absolute",
-                    "top": 56,
+                    "top": 52,
                   }
                 }
               >
@@ -539,13 +539,13 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                   Object {
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
-                    "fontSize": 34,
+                    "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "bold",
-                    "left": 191,
-                    "lineHeight": 56,
+                    "left": 333,
+                    "lineHeight": 52,
                     "position": "absolute",
-                    "top": 56,
+                    "top": 52,
                   }
                 }
               >
@@ -556,13 +556,13 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                   Object {
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
-                    "fontSize": 34,
+                    "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "bold",
-                    "left": 264,
-                    "lineHeight": 56,
+                    "left": 410,
+                    "lineHeight": 52,
                     "position": "absolute",
-                    "top": 56,
+                    "top": 52,
                   }
                 }
               >
@@ -573,13 +573,13 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                   Object {
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
-                    "fontSize": 34,
+                    "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "bold",
-                    "left": 308,
-                    "lineHeight": 56,
+                    "left": 457,
+                    "lineHeight": 52,
                     "position": "absolute",
-                    "top": 56,
+                    "top": 52,
                   }
                 }
               >
@@ -590,13 +590,13 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                   Object {
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
-                    "fontSize": 34,
+                    "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "bold",
-                    "left": 335,
-                    "lineHeight": 56,
+                    "left": 486,
+                    "lineHeight": 52,
                     "position": "absolute",
-                    "top": 56,
+                    "top": 52,
                   }
                 }
               >
@@ -607,13 +607,13 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                   Object {
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
-                    "fontSize": 34,
+                    "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "bold",
-                    "left": 431,
-                    "lineHeight": 56,
+                    "left": 587,
+                    "lineHeight": 52,
                     "position": "absolute",
-                    "top": 56,
+                    "top": 52,
                   }
                 }
               >
@@ -624,13 +624,13 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                   Object {
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
-                    "fontSize": 34,
+                    "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "bold",
-                    "left": 458,
-                    "lineHeight": 56,
+                    "left": 149,
+                    "lineHeight": 52,
                     "position": "absolute",
-                    "top": 56,
+                    "top": 104,
                   }
                 }
               >
@@ -641,13 +641,13 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                   Object {
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
-                    "fontSize": 34,
+                    "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "bold",
-                    "left": 579,
-                    "lineHeight": 56,
+                    "left": 276,
+                    "lineHeight": 52,
                     "position": "absolute",
-                    "top": 56,
+                    "top": 104,
                   }
                 }
               >
@@ -658,13 +658,13 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                   Object {
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
-                    "fontSize": 34,
+                    "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "bold",
-                    "left": 651,
-                    "lineHeight": 56,
+                    "left": 352,
+                    "lineHeight": 52,
                     "position": "absolute",
-                    "top": 56,
+                    "top": 104,
                   }
                 }
               >
@@ -675,13 +675,13 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                   Object {
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
-                    "fontSize": 34,
+                    "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "bold",
-                    "left": 153,
-                    "lineHeight": 56,
+                    "left": 389,
+                    "lineHeight": 52,
                     "position": "absolute",
-                    "top": 112,
+                    "top": 104,
                   }
                 }
               >
@@ -692,13 +692,13 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                   Object {
                     "color": "#000000",
                     "fontFamily": "TimesDigitalW04",
-                    "fontSize": 34,
+                    "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "bold",
-                    "left": 223,
-                    "lineHeight": 56,
+                    "left": 463,
+                    "lineHeight": 52,
                     "position": "absolute",
-                    "top": 112,
+                    "top": 104,
                   }
                 }
               >
@@ -735,10 +735,10 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                     Object {
                       "color": "#000000",
                       "fontFamily": "TimesDigitalW04",
-                      "fontSize": 34,
+                      "fontSize": 36,
                       "fontStyle": "normal",
                       "fontWeight": "bold",
-                      "lineHeight": 56,
+                      "lineHeight": 52,
                     }
                   }
                 >
@@ -812,10 +812,10 @@ exports[`5. an article skeleton with responsive items 1`] = `
                     Object {
                       "color": "#000000",
                       "fontFamily": "TimesDigitalW04",
-                      "fontSize": 34,
+                      "fontSize": 36,
                       "fontStyle": "normal",
                       "fontWeight": "normal",
-                      "lineHeight": 56,
+                      "lineHeight": 52,
                     }
                   }
                 >

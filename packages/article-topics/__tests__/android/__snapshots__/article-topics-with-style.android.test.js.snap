@@ -92,7 +92,7 @@ exports[`2. group of topics at large scale 1`] = `
               "color": "#696969",
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 14,
-              "lineHeight": 14,
+              "lineHeight": 16,
               "position": "relative",
               "top": 1,
             }
@@ -145,7 +145,7 @@ exports[`3. group of topics at xlarge scale 1`] = `
               "color": "#696969",
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 15,
-              "lineHeight": 15,
+              "lineHeight": 17,
               "position": "relative",
               "top": 1,
             }

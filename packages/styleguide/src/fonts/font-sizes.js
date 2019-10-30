@@ -24,7 +24,10 @@ const fontSizes = scale => {
         secondary: 23
       };
     default:
-      return sharedFontSizes;
+      return {
+        ...sharedFontSizes,
+        bodyMobile: 18
+      };
   }
 };
 

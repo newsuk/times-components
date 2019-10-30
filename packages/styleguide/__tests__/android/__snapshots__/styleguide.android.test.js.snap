@@ -12,7 +12,7 @@ exports[`2. font factory large scale 1`] = `
 Object {
   "fontFamily": "TimesDigitalW04",
   "fontSize": 21,
-  "lineHeight": 31,
+  "lineHeight": 30,
 }
 `;
 
