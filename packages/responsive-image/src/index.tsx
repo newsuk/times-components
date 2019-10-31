@@ -25,10 +25,10 @@ const ResponsiveImage = (props: ResponsiveImageProps) => {
     uri,
     aspectRatio,
     style: propStyle,
-    relativeHeight = 0,
+    relativeHeight = 1,
     relativeHorizontalOffset = 0,
     relativeVerticalOffset = 0,
-    relativeWidth = 0,
+    relativeWidth = 1,
     resizeMode,
     rounded,
     onLayout,
@@ -44,10 +44,14 @@ const ResponsiveImage = (props: ResponsiveImageProps) => {
   if (!uri.includes('data:')) {
     url.query.rel_width = Math.floor(relativeWidth).toString();
     url.query.rel_height = Math.floor(relativeHeight).toString();
-    url.query.rel_vertical_offset = Math.floor(relativeVerticalOffset).toString();
-    url.query.rel_horizontal_offset = Math.floor(
-      relativeHorizontalOffset
-    ).toString();
+    if (relativeVerticalOffset) {
+      url.query.rel_vertical_offset = Math.floor(relativeVerticalOffset).toString();
+    }
+    if (relativeHorizontalOffset) {
+      url.query.rel_horizontal_offset = Math.floor(
+        relativeHorizontalOffset
+      ).toString();
+    }
     url.query.offline = 'true';
   }
   const offlineUrl = url.toString();

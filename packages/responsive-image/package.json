@@ -52,7 +52,7 @@
     "react-native": "0.61.1",
     "react": "16.9.0",
     "url-parse": "1.4.7",
-    "@times-components/styleguide": "3.30.1",
+    "@times-components/styleguide": "3.30.2",
     "react-native-hooks": "0.9.0",
     "memoize-one": "5.1.1"
   },

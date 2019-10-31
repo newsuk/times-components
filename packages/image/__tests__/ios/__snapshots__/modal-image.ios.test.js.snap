@@ -53,7 +53,7 @@ exports[`1. modal image 1`] = `
             <Image
               defaultSource={
                 Object {
-                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=0&rel_height=0&rel_vertical_offset=0&rel_horizontal_offset=0&offline=true",
+                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=true",
                 }
               }
               fadeDuration={0}
@@ -61,7 +61,7 @@ exports[`1. modal image 1`] = `
               resizeMethod="resize"
               source={
                 Object {
-                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=0&rel_height=0&rel_vertical_offset=0&rel_horizontal_offset=0&offline=false&resize=1400",
+                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=false&resize=1400",
                 }
               }
             />
@@ -102,7 +102,7 @@ exports[`1. modal image 1`] = `
       <Image
         defaultSource={
           Object {
-            "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=0&rel_height=0&rel_vertical_offset=0&rel_horizontal_offset=0&offline=true",
+            "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=true",
           }
         }
         fadeDuration={0}
@@ -110,7 +110,7 @@ exports[`1. modal image 1`] = `
         resizeMethod="resize"
         source={
           Object {
-            "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=0&rel_height=0&rel_vertical_offset=0&rel_horizontal_offset=0&offline=false&resize=1400",
+            "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=false&resize=1400",
           }
         }
       />
@@ -180,7 +180,7 @@ exports[`2. modal image with no caption 1`] = `
               resizeMethod="resize"
               source={
                 Object {
-                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=0&rel_height=0&rel_vertical_offset=0&rel_horizontal_offset=0&offline=true",
+                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=true",
                 }
               }
             />
@@ -223,7 +223,7 @@ exports[`2. modal image with no caption 1`] = `
         resizeMethod="resize"
         source={
           Object {
-            "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=0&rel_height=0&rel_vertical_offset=0&rel_horizontal_offset=0&offline=true",
+            "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=true",
           }
         }
       />
@@ -285,7 +285,7 @@ exports[`3. modal image with custom highressize 1`] = `
             <Image
               defaultSource={
                 Object {
-                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=0&rel_height=0&rel_vertical_offset=0&rel_horizontal_offset=0&offline=true",
+                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=true",
                 }
               }
               fadeDuration={0}
@@ -293,7 +293,7 @@ exports[`3. modal image with custom highressize 1`] = `
               resizeMethod="resize"
               source={
                 Object {
-                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=0&rel_height=0&rel_vertical_offset=0&rel_horizontal_offset=0&offline=false&resize=1400",
+                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=false&resize=1400",
                 }
               }
             />
@@ -334,7 +334,7 @@ exports[`3. modal image with custom highressize 1`] = `
       <Image
         defaultSource={
           Object {
-            "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=0&rel_height=0&rel_vertical_offset=0&rel_horizontal_offset=0&offline=true",
+            "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=true",
           }
         }
         fadeDuration={0}
@@ -342,7 +342,7 @@ exports[`3. modal image with custom highressize 1`] = `
         resizeMethod="resize"
         source={
           Object {
-            "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=0&rel_height=0&rel_vertical_offset=0&rel_horizontal_offset=0&offline=false&resize=1400",
+            "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=false&resize=1400",
           }
         }
       />
@@ -399,7 +399,7 @@ exports[`9. hides elements when tapping on the image 1`] = `
               resizeMethod="resize"
               source={
                 Object {
-                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=0&rel_height=0&rel_vertical_offset=0&rel_horizontal_offset=0&offline=true",
+                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=true",
                 }
               }
             />
@@ -425,7 +425,7 @@ exports[`9. hides elements when tapping on the image 1`] = `
         resizeMethod="resize"
         source={
           Object {
-            "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=0&rel_height=0&rel_vertical_offset=0&rel_horizontal_offset=0&offline=true",
+            "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=true",
           }
         }
       />
@@ -495,7 +495,7 @@ exports[`10. re-shows elements when tapping on the image a second time 1`] = `
               resizeMethod="resize"
               source={
                 Object {
-                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=0&rel_height=0&rel_vertical_offset=0&rel_horizontal_offset=0&offline=true",
+                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=true",
                 }
               }
             />
@@ -544,7 +544,7 @@ exports[`10. re-shows elements when tapping on the image a second time 1`] = `
         resizeMethod="resize"
         source={
           Object {
-            "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=0&rel_height=0&rel_vertical_offset=0&rel_horizontal_offset=0&offline=true",
+            "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=true",
           }
         }
       />
