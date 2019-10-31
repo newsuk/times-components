@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.19.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.18.10...@times-components/article-skeleton@1.19.0) (2019-10-31)
+
+
+### Features
+
+* add article id to aid debugging and testing ([#2364](https://github.com/newsuk/times-components/issues/2364)) ([02c4572](https://github.com/newsuk/times-components/commit/02c4572c26ada87842285ee5c8929204f2cb5bb7))
+
+
+
+
+
 ## [1.18.10](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.18.9...@times-components/article-skeleton@1.18.10) (2019-10-30)
 
 **Note:** Version bump only for package @times-components/article-skeleton

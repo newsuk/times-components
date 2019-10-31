@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.15.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.14.10...@times-components/article-magazine-standard@3.15.0) (2019-10-31)
+
+
+### Features
+
+* add article id to aid debugging and testing ([#2364](https://github.com/newsuk/times-components/issues/2364)) ([02c4572](https://github.com/newsuk/times-components/commit/02c4572c26ada87842285ee5c8929204f2cb5bb7))
+
+
+
+
+
 ## [3.14.10](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.14.9...@times-components/article-magazine-standard@3.14.10) (2019-10-30)
 
 **Note:** Version bump only for package @times-components/article-magazine-standard
