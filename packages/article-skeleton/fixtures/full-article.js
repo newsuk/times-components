@@ -622,6 +622,22 @@ export const longContent = [
         },
         children: [],
         name: "text"
+      },
+      {
+        attributes: {
+          href: "https://link.io",
+          target: "_blank"
+        },
+        children: [
+          {
+            attributes: {
+              value: "Some Link"
+            },
+            children: [],
+            name: "text"
+          }
+        ],
+        name: "link"
       }
     ],
     name: "paragraph"
