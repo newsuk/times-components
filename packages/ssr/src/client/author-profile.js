@@ -27,7 +27,8 @@ if (window.nuk && window.nuk.ssr && window.nuk.authorProfile) {
 
   const clientOptions = {
     rootTag,
-    useGET: true
+    useGET: true,
+    skipAuthorization: true
   };
 
   runClient(authorProfile, clientOptions, data);

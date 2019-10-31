@@ -29,7 +29,11 @@ const makeClient = options => {
     networkInterfaceOptions.useGETForQueries = true;
   }
 
-  if (typeof window !== "undefined" && window.nuk) {
+  if (
+    typeof window !== "undefined" &&
+    window.nuk &&
+    !options.skipAuthorization
+  ) {
     const acsTnlCookie = window.nuk.getCookieValue("acs_tnl");
     const sacsTnlCookie = window.nuk.getCookieValue("sacs_tnl");
     networkInterfaceOptions.headers.Authorization = `Cookie acs_tnl=${acsTnlCookie};sacs_tnl=${sacsTnlCookie}`;
@@ -58,7 +62,8 @@ module.exports = (component, clientOptions, data) => {
     initialState: window.__APOLLO_STATE__,
     uri: window.nuk.graphqlapi.url,
     useGET: clientOptions.useGET,
-    headers: clientOptions.headers
+    headers: clientOptions.headers,
+    skipAuthorization: clientOptions.skipAuthorization
   });
 
   const reporterOptions = {
