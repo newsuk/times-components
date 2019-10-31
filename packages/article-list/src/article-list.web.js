@@ -35,7 +35,7 @@ class ArticleList extends Component {
 
   shouldComponentUpdate(nextProps) {
     const { page } = this.props;
-    return page !== nextProps.page;
+    return page === nextProps.page;
   }
 
   render() {
