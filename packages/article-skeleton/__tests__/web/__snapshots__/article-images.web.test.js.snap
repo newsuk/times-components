@@ -2,7 +2,9 @@
 
 exports[`1. a primary image 1`] = `
 <div>
-  <article>
+  <article
+    data-article-identifier="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+  >
     <Head />
     <div>
       <Ad
@@ -82,7 +84,9 @@ exports[`1. a primary image 1`] = `
 
 exports[`2. a fullwidth image 1`] = `
 <div>
-  <article>
+  <article
+    data-article-identifier="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+  >
     <Head />
     <div>
       <Ad
@@ -160,7 +164,9 @@ exports[`2. a fullwidth image 1`] = `
 
 exports[`3. a secondary image 1`] = `
 <div>
-  <article>
+  <article
+    data-article-identifier="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+  >
     <Head />
     <div>
       <Ad
@@ -240,7 +246,9 @@ exports[`3. a secondary image 1`] = `
 
 exports[`4. an inline image 1`] = `
 <div>
-  <article>
+  <article
+    data-article-identifier="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+  >
     <Head />
     <div>
       <Ad
