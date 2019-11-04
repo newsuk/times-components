@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-list",
-  "version": "9.3.19",
+  "version": "9.3.20",
   "description": "Paginated list of articles",
   "main": "dist/article-list",
   "dev": "src/article-list",
