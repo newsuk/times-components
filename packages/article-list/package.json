@@ -74,7 +74,7 @@
   "dependencies": {
     "@times-components/ad": "2.7.28",
     "@times-components/article-summary": "3.14.3",
-    "@times-components/button": "2.3.120",
+    "@times-components/button": "2.4.0",
     "@times-components/card": "6.2.45",
     "@times-components/context": "1.1.10",
     "@times-components/error-view": "2.2.105",
@@ -82,7 +82,7 @@
     "@times-components/lazy-load": "0.4.75",
     "@times-components/link": "3.4.57",
     "@times-components/pagination": "3.2.116",
-    "@times-components/responsive": "0.4.78",
+    "@times-components/responsive": "0.5.0",
     "@times-components/styleguide": "3.30.1",
     "@times-components/tracking": "2.4.80",
     "@times-components/utils": "5.1.4",

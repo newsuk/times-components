@@ -42,7 +42,7 @@
     "@times-components/save-star-web": "0.3.44",
     "@times-components/styleguide": "3.30.1",
     "@times-components/tracking": "2.4.80",
-    "@times-components/user-state": "0.0.39",
+    "@times-components/user-state": "0.1.0",
     "@times-components/utils": "5.1.4",
     "prop-types": "15.7.2"
   },

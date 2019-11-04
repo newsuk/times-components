@@ -1,6 +1,6 @@
 {
   "name": "@times-components/user-state",
-  "version": "0.0.39",
+  "version": "0.1.0",
   "description": "Selectively render react components based on current user state",
   "main": "dist/user-state",
   "dev": "src/user-state",

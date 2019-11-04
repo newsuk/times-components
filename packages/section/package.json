@@ -42,7 +42,7 @@
     "@times-components/icons": "2.13.4",
     "@times-components/image": "6.4.37",
     "@times-components/link": "3.4.57",
-    "@times-components/responsive": "0.4.78",
+    "@times-components/responsive": "0.5.0",
     "@times-components/styleguide": "3.30.1",
     "@times-components/tracking": "2.4.80",
     "lodash.get": "4.4.2",
