@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.45](https://github.com/newsuk/times-components/compare/@times-components/storybook-native@0.0.44...@times-components/storybook-native@0.0.45) (2019-11-04)
+
+**Note:** Version bump only for package @times-components/storybook-native
+
+
+
+
+
 ## [0.0.44](https://github.com/newsuk/times-components/compare/@times-components/storybook-native@0.0.43...@times-components/storybook-native@0.0.44) (2019-10-30)
 
 **Note:** Version bump only for package @times-components/storybook-native

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/mocks",
-  "version": "0.0.53",
+  "version": "0.0.54",
   "description": "Shared mocks for the tests",
   "main": "dist/index",
   "dev": "src/index",
@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
-    "@times-components/styleguide": "3.30.1"
+    "@times-components/styleguide": "3.30.2"
   },
   "devDependencies": {
     "@babel/cli": "7.4.4",

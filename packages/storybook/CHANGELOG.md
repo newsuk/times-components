@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.5](https://github.com/newsuk/times-components/compare/@times-components/storybook@4.1.4...@times-components/storybook@4.1.5) (2019-11-04)
+
+
+### Bug Fixes
+
+* packages ([#2369](https://github.com/newsuk/times-components/issues/2369)) ([9f812a8](https://github.com/newsuk/times-components/commit/9f812a8ba3f0aa192d7dd863b125d6422fc9b717))
+
+
+
+
+
 ## [4.1.4](https://github.com/newsuk/times-components/compare/@times-components/storybook@4.1.3...@times-components/storybook@4.1.4) (2019-10-30)
 
 **Note:** Version bump only for package @times-components/storybook
