@@ -62,8 +62,8 @@
   },
   "dependencies": {
     "@times-components/article-byline": "3.1.139",
-    "@times-components/article-flag": "2.6.85",
-    "@times-components/article-label": "2.4.27",
+    "@times-components/article-flag": "2.7.0",
+    "@times-components/article-label": "2.5.0",
     "@times-components/date-publication": "0.20.106",
     "@times-components/markup": "3.3.118",
     "@times-components/markup-forest": "1.7.28",
