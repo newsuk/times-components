@@ -12,12 +12,12 @@ import {
 import { TextLink } from "@times-components/link";
 import "./mocks.native";
 import { FontStorage } from "@times-components/typeset";
-import { VirtualizedList } from "react-native";
 import shared from "./shared.base";
 import ArticleSkeleton from "../src/article-skeleton";
 import articleFixture, {
   testFixture,
-  nestedContent
+  nestedContent,
+  longContent
 } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
 import articleSkeletonProps from "./shared-article-skeleton-props";
@@ -44,7 +44,6 @@ const omitKeys = new Set([
   "disableVirtualization",
   "horizontal",
   "onViewableItemsChanged",
-  "style",
   "testID",
   "viewabilityConfig",
   "viewabilityConfigCallbackPairs"
@@ -110,14 +109,14 @@ export default () => {
     />
   );
 
-  const renderNestedArticle = () => (
+  const renderArticleContent = content => (
     <ArticleSkeleton
       {...articleSkeletonProps}
       adConfig={adConfig}
       analyticsStream={() => {}}
       data={articleFixture({
         ...testFixture,
-        content: nestedContent
+        content
       })}
       onAuthorPress={() => {}}
       onCommentGuidelinesPress={() => {}}
@@ -166,11 +165,21 @@ export default () => {
     {
       name: "breaks up malformed huge paragraphs",
       test() {
-        const testInstance = TestRenderer.create(renderNestedArticle());
+        const testInstance = TestRenderer.create(
+          renderArticleContent(nestedContent)
+        );
 
-        const [list] = testInstance.root.findAllByType(VirtualizedList);
+        expect(testInstance.toJSON()).toMatchSnapshot();
+      }
+    },
+    {
+      name: "renders content",
+      test() {
+        const testInstance = TestRenderer.create(
+          renderArticleContent(longContent)
+        );
 
-        expect(list.props.data).toMatchSnapshot();
+        expect(testInstance.toJSON()).toMatchSnapshot();
       }
     }
   ];
