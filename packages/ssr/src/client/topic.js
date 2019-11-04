@@ -29,6 +29,7 @@ if (window.nuk && window.nuk.ssr && window.nuk.topicPage) {
   const clientOptions = {
     rootTag,
     useGET: true,
+    skipAuthorization: true,
     headers: useNewTopicDataSource
       ? {
           "x-new-topic-data-source": true
