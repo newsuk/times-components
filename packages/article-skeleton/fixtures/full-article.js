@@ -671,6 +671,31 @@ export const nestedContent = [
   }
 ];
 
+export const styledNestedContent = [
+  {
+    name: "paragraph",
+    children: []
+      .concat(
+        ...longContent.filter(n => n.name === "paragraph").map(p => [
+          {
+            name: "bold",
+            children: [
+              { name: "break" },
+              { name: "break" },
+              {
+                name: "text",
+                attributes: { value: "test break bold" },
+                children: []
+              }
+            ]
+          },
+          ...p.children
+        ])
+      )
+      .slice(2)
+  }
+];
+
 const defaultBrightcovePolicyKey =
   "BCpkADawqM0NK0Rq8n6sEQyWykemrqeSmIQqqVt3XBrdpl8TYlvqN3hwKphBJRnkPgx6WAbozCW_VgTOBCNf1AQRh8KnmXSXfveQalRc5-pyNlSod5XzP99If2U";
 
