@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.19.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.19.1...@times-components/article-skeleton@1.19.2) (2019-11-04)
+
+
+### Bug Fixes
+
+* article link should scale with os font size ([#2360](https://github.com/newsuk/times-components/issues/2360)) ([4cb6410](https://github.com/newsuk/times-components/commit/4cb641022a5c14fe2ec4a873ccf0154c0f658b5a))
+
+
+
+
+
 ## [1.19.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.19.0...@times-components/article-skeleton@1.19.1) (2019-11-04)
 
 
