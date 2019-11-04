@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.9.16](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.9.15...@times-components/ssr@2.9.16) (2019-11-04)
+
+
+### Bug Fixes
+
+* REPLAT-9907 skip auth on topic and author ([#2366](https://github.com/newsuk/times-components/issues/2366)) ([bbe5073](https://github.com/newsuk/times-components/commit/bbe5073284eeb57416ec91a957a74470090752b3))
+
+
+
+
+
 ## [2.9.15](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.9.14...@times-components/ssr@2.9.15) (2019-10-31)
 
 **Note:** Version bump only for package @times-components/ssr
