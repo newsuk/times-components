@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.10.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.9.19...@times-components/ssr@2.10.0) (2019-11-05)
+
+
+### Features
+
+* section colouring of components from tiles ([#2368](https://github.com/newsuk/times-components/issues/2368)) ([22f4a70](https://github.com/newsuk/times-components/commit/22f4a70c97531367aabd194ca3aafe60d3bd31bf))
+
+
+
+
+
 ## [2.9.19](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.9.18...@times-components/ssr@2.9.19) (2019-11-04)
 
 **Note:** Version bump only for package @times-components/ssr
