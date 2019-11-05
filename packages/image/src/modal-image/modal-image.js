@@ -112,7 +112,7 @@ class ModalImage extends Component {
                         {...this.props}
                         highResSize={screenWidth}
                         lowResSize={lowResSize}
-                        resizeMode={'contain'}
+                        resizeMode="contain"
                         style={styles.modalImageContainer}
                       />
                     </Gestures>
