@@ -12,6 +12,10 @@ const {
 const { scales, themeFactory } = require("@times-components/styleguide/rnw");
 
 const scale = scales.large;
+const extractSectionNameFromTiles = article =>
+  article.tiles[0].slices[0].sections[0]
+    ? article.tiles[0].slices[0].sections[0].title.toLowerCase()
+    : "default";
 
 module.exports = (client, analyticsStream, data, helmetContext) => {
   const {
@@ -52,7 +56,10 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
                 makeTopicUrl,
                 newskit: enableNewskit,
                 theme: {
-                  ...themeFactory(article.section, article.template),
+                  ...themeFactory(
+                    extractSectionNameFromTiles(article),
+                    article.template
+                  ),
                   scale: scale || defaults.theme.scale
                 },
                 user: userState
