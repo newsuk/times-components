@@ -78,7 +78,7 @@ exports[`1. article main standard - tablet 1`] = `
           "marginBottom": 20,
           "marginLeft": 0,
           "marginRight": 0,
-          "paddingBottom": 10,
+          "paddingBottom": 5,
         }
       }
     >
