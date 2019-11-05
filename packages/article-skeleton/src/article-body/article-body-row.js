@@ -276,7 +276,14 @@ export default ({
       fontFamily: "TimesDigitalW04",
       fontStyle: "italic"
     },
-    link: defaultFont
+    link: defaultFont,
+    subheading: {
+      ...defaultFont,
+      ...fontFactory({
+        font: "headline",
+        fontSize: "smallHeadline"
+      })
+    }
   };
 
   return {
@@ -287,6 +294,16 @@ export default ({
         tag: { tag: "FONT", settings: fontConfig.body }
       };
       return new AttributedString(attributes.value, [attr]);
+    },
+    heading2(key, attributes, children, index, tree) {
+      const childStr = AttributedString.join(children);
+      return (
+        <ArticleParagraph key={key} ast={tree} style={{ marginBottom: 0 }}>
+          <Text allowFontScaling={false} style={fontConfig.subheading}>
+            {childStr.string}
+          </Text>
+        </ArticleParagraph>
+      );
     },
     bold(key, attributes, children) {
       const childStr = AttributedString.join(children);
@@ -480,8 +497,8 @@ export default ({
         </View>
       );
     },
-    unknown(key, attributes, children, index, tree) {
-      return new AttributedString(JSON.stringify(tree, null, 2), []);
+    unknown() {
+      return new AttributedString("", []);
     }
   };
 };

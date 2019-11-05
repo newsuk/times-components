@@ -9,7 +9,7 @@ const appStyles = {
     ...sharedStyles.articleHeadLineText,
     fontSize: fontSizes.headline,
     lineHeight: 33,
-    marginBottom: spacing(2),
+    marginBottom: spacing(1),
     marginTop: spacing(1)
   },
   articleLabelWrapper: {
@@ -19,11 +19,10 @@ const appStyles = {
   standFirst: {
     ...sharedStyles.standFirst,
     lineHeight: 28,
-    marginTop: -2,
-    paddingBottom: 12
+    paddingBottom: spacing(2)
   },
   standFirstWithoutFlags: {
-    paddingBottom: spacing(4)
+    paddingBottom: spacing(2)
   },
   metaContainer: {
     ...sharedStyles.metaContainer,

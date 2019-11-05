@@ -2,18 +2,13 @@ import { StyleSheet } from "react-native";
 import styleguideFactory from "@times-components/styleguide";
 import sharedStyles from "./shared";
 
-const { fontFactory, spacing } = styleguideFactory();
+const { spacing, colours } = styleguideFactory();
 
 const styles = StyleSheet.create({
   ...sharedStyles,
   headline: {
     ...sharedStyles.headline,
-    ...fontFactory({
-      font: "headlineRegular",
-      fontSize: "smallHeadline"
-    }),
-    fontWeight: "100",
-    lineHeight: 28
+    color: colours.functional.black
   },
   title: {
     ...sharedStyles.title,

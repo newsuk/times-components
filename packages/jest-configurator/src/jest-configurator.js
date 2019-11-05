@@ -22,7 +22,7 @@ const webSpecific = {
 };
 
 const nodeSpecific = {
-  moduleFileExtensions: ["node.js", "web.js", "js", "json"],
+  moduleFileExtensions: ["node.js", "web.js", "js", "ts", "json"],
   moduleNameMapper: {
     "\\.(png)$": "identity-obj-proxy",
     "^react-native$": "react-native-web"
@@ -31,7 +31,7 @@ const nodeSpecific = {
 };
 
 const platformIndependentSpecific = {
-  moduleFileExtensions: ["js", "json"],
+  moduleFileExtensions: ["js", "ts", "json"],
   moduleNameMapper: {
     "\\.(png)$": "identity-obj-proxy"
   }

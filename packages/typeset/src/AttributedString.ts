@@ -89,7 +89,7 @@ export default class AttributedString {
           start = 0;
           length -= begin;
         }
-        if (start + length > str.length - start) {
+        if (start + length > end - begin) {
           length = str.length - start;
         }
         return {
