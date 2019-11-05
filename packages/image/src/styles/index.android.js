@@ -7,6 +7,10 @@ const styles = StyleSheet.create({
   bottomSafeView: {
     ...sharedStyles.bottomSafeView,
     backgroundColor: colours.functional.overlayGradientFallback
+  },
+  modalImageContainer: {
+    ...sharedStyles.modalImageContainer,
+    backgroundColor: colours.functional.black
   }
 });
 
