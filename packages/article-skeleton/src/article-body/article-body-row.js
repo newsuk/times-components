@@ -377,7 +377,7 @@ export default ({
           }}
           key={key}
           imageOptions={{
-            display: !isTablet && display === "inline" ? "secondary" : display,
+            display,
             ratio,
             uri: url,
             relativeWidth,
