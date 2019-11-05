@@ -22,12 +22,12 @@ exports[`Image loads high-res 1`] = `
   }
 >
   <Image
-    defaultSource={
+    fadeDuration={0}
+    loadingIndicatorSource={
       Object {
         "uri": "http://foo.com/bar.png?rel_width=1&rel_height=1&offline=true",
       }
     }
-    fadeDuration={0}
     onLayout={[Function]}
     progressiveRenderingEnabled={true}
     resizeMethod="resize"
@@ -86,12 +86,12 @@ exports[`Image renders 1`] = `
   }
 >
   <Image
-    defaultSource={
+    fadeDuration={300}
+    loadingIndicatorSource={
       Object {
         "testUri": "../../../packages/responsive-image/assets/t.png",
       }
     }
-    fadeDuration={300}
     onLayout={[Function]}
     progressiveRenderingEnabled={true}
     resizeMethod="resize"
@@ -150,12 +150,12 @@ exports[`Image respects resizeMode 1`] = `
   }
 >
   <Image
-    defaultSource={
+    fadeDuration={300}
+    loadingIndicatorSource={
       Object {
         "testUri": "../../../packages/responsive-image/assets/t.png",
       }
     }
-    fadeDuration={300}
     onLayout={[Function]}
     progressiveRenderingEnabled={true}
     resizeMethod="resize"

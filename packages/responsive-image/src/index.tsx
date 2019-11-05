@@ -113,7 +113,7 @@ const ResponsiveImage = (props: ResponsiveImageProps) => {
       resizeMethod={'resize'}
       imageStyle={[styles.imageStyle, { resizeMode: resize }, { borderRadius }]}
       style={[styles.style, propStyle, { aspectRatio }, { borderRadius }]}
-      defaultSource={defaultSource}
+      loadingIndicatorSource={defaultSource}
     />
   );
 };
