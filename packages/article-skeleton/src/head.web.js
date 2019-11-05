@@ -147,7 +147,10 @@ function Head({ article, logoUrl, paidContentClassName }) {
     publisher: {
       "@type": "Organization",
       name: publication,
-      logo: logoUrl
+      logo: {
+        "@type": "ImageObject",
+        url: logoUrl
+      }
     },
     mainEntityOfPage: {
       "@type": "WebPage"
