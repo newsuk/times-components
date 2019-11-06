@@ -14,7 +14,7 @@ class SecondaryTwoNoPicAndTwo extends Component {
   renderSmall(breakpoint) {
     const {
       onPress,
-      slice: { secondary1, secondary2, support1, support2 }
+      slice: { items: [secondary1, secondary2, support1, support2] }
     } = this.props;
 
     return (
@@ -39,7 +39,7 @@ class SecondaryTwoNoPicAndTwo extends Component {
   renderMedium(breakpoint) {
     const {
       onPress,
-      slice: { secondary1, secondary2, support1, support2 }
+      slice: { items: [secondary1, secondary2, support1, support2] }
     } = this.props;
 
     return (

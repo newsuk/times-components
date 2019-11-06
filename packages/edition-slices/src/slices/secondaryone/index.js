@@ -13,7 +13,7 @@ class SecondaryOneSlice extends Component {
   renderSmall() {
     const {
       onPress,
-      slice: { secondary }
+      slice: { items: [secondary] }
     } = this.props;
     return <TileA onPress={onPress} tile={secondary} tileName="secondary" />;
   }
@@ -21,7 +21,7 @@ class SecondaryOneSlice extends Component {
   renderMedium(breakpoint) {
     const {
       onPress,
-      slice: { secondary }
+      slice: { items: [secondary] }
     } = this.props;
     return (
       <TileW

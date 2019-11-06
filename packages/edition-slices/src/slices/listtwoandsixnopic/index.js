@@ -14,7 +14,7 @@ class ListTwoAndSixNoPicSlice extends Component {
   renderSlice(breakpoint) {
     const {
       onPress,
-      slice: {
+      slice: { items: [
         lead1,
         lead2,
         support1,
@@ -23,7 +23,9 @@ class ListTwoAndSixNoPicSlice extends Component {
         support4,
         support5,
         support6
+      ]
       }
+
     } = this.props;
 
     return (
@@ -56,7 +58,7 @@ class ListTwoAndSixNoPicSlice extends Component {
   renderMedium(breakpoint) {
     const {
       onPress,
-      slice: {
+      slice: { items: [
         lead1,
         lead2,
         support1,
@@ -65,6 +67,7 @@ class ListTwoAndSixNoPicSlice extends Component {
         support4,
         support5,
         support6
+      ]
       }
     } = this.props;
 

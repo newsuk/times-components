@@ -20,7 +20,7 @@ class SecondaryOneAndFour extends Component {
   renderSlice(breakpoint) {
     const {
       onPress,
-      slice: { secondary, support1, support2, support3, support4 }
+      slice: { items: [secondary, support1, support2, support3, support4] }
     } = this.props;
 
     const styles = styleFactory(breakpoint);
@@ -33,8 +33,8 @@ class SecondaryOneAndFour extends Component {
               {publicationName === "TIMES" ? (
                 <TheTimesLogo height={37} width={35} />
               ) : (
-                <TheSTLogo height={40} width={60} />
-              )}
+                  <TheSTLogo height={40} width={60} />
+                )}
             </View>
             <ItemRowSeparator style={styles.separator} />
             <SecondaryOneAndFourSlice

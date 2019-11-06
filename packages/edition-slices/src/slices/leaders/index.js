@@ -30,7 +30,7 @@ class LeadersSlice extends Component {
   renderSlice(breakpoint) {
     const {
       onPress,
-      slice: { leader1, leader2, leader3 }
+      slice: { items: [leader1, leader2, leader3] }
     } = this.props;
     const styles = styleFactory(breakpoint);
 
