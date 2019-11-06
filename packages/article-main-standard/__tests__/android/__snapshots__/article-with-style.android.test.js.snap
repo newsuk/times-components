@@ -39,7 +39,7 @@ exports[`full article with style on mobile 1`] = `
             "fontFamily": "TimesModern-Bold",
             "fontSize": 30,
             "lineHeight": 33,
-            "marginBottom": 10,
+            "marginBottom": 5,
             "marginTop": 5,
           }
         }
@@ -53,8 +53,7 @@ exports[`full article with style on mobile 1`] = `
             "fontFamily": "TimesModern-Regular",
             "fontSize": 20,
             "lineHeight": 28,
-            "marginTop": -2,
-            "paddingBottom": 12,
+            "paddingBottom": 10,
           }
         }
       >
@@ -79,8 +78,6 @@ exports[`full article with style on mobile 1`] = `
           "marginLeft": 10,
           "marginRight": 10,
           "paddingBottom": 10,
-          "paddingLeft": 0,
-          "paddingRight": 0,
         }
       }
     >
@@ -99,8 +96,9 @@ exports[`full article with style on mobile 1`] = `
               "color": "#696969",
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
-              "lineHeight": 21,
+              "lineHeight": 15,
               "marginTop": 0,
+              "paddingTop": 0,
             }
           }
         >
@@ -120,8 +118,9 @@ exports[`full article with style on mobile 1`] = `
               "color": "#696969",
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
-              "lineHeight": 21,
+              "lineHeight": 15,
               "marginTop": 0,
+              "paddingTop": 0,
             }
           }
         >
@@ -172,7 +171,7 @@ exports[`full article with style on tablet 1`] = `
             "fontFamily": "TimesModern-Bold",
             "fontSize": 30,
             "lineHeight": 33,
-            "marginBottom": 10,
+            "marginBottom": 5,
             "marginTop": 5,
           }
         }
@@ -186,8 +185,7 @@ exports[`full article with style on tablet 1`] = `
             "fontFamily": "TimesModern-Regular",
             "fontSize": 20,
             "lineHeight": 28,
-            "marginTop": -2,
-            "paddingBottom": 12,
+            "paddingBottom": 10,
           }
         }
       >
@@ -212,8 +210,6 @@ exports[`full article with style on tablet 1`] = `
           "marginLeft": 10,
           "marginRight": 10,
           "paddingBottom": 10,
-          "paddingLeft": 0,
-          "paddingRight": 0,
         }
       }
     >
@@ -232,8 +228,9 @@ exports[`full article with style on tablet 1`] = `
               "color": "#696969",
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
-              "lineHeight": 21,
+              "lineHeight": 15,
               "marginTop": 0,
+              "paddingTop": 0,
             }
           }
         >
@@ -253,8 +250,9 @@ exports[`full article with style on tablet 1`] = `
               "color": "#696969",
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
-              "lineHeight": 21,
+              "lineHeight": 15,
               "marginTop": 0,
+              "paddingTop": 0,
             }
           }
         >

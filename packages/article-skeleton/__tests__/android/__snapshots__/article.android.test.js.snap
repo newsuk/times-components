@@ -83,6 +83,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                   "marginBottom": 20,
                 },
                 false,
+                Object {},
                 Object {
                   "height": 156,
                 },
@@ -574,6 +575,7 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                   "marginBottom": 20,
                 },
                 false,
+                Object {},
                 Object {
                   "height": 156,
                 },
@@ -1027,6 +1029,7 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                   "marginBottom": 20,
                 },
                 false,
+                Object {},
               ]
             }
           >
@@ -1157,6 +1160,7 @@ exports[`7. breaks up malformed huge paragraphs 1`] = `
                   "marginBottom": 20,
                 },
                 false,
+                Object {},
               ]
             }
           >
@@ -1251,6 +1255,7 @@ exports[`7. breaks up malformed huge paragraphs 1`] = `
                   "marginBottom": 20,
                 },
                 false,
+                Object {},
               ]
             }
           >
@@ -1549,6 +1554,7 @@ exports[`9. renders content 1`] = `
                   "marginBottom": 20,
                 },
                 false,
+                Object {},
               ]
             }
           >
@@ -1643,6 +1649,7 @@ exports[`9. renders content 1`] = `
                   "marginBottom": 20,
                 },
                 false,
+                Object {},
               ]
             }
           >

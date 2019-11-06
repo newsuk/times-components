@@ -34,7 +34,7 @@ exports[`tile a without breakpoint 1`] = `
           "fontSize": 35,
           "fontWeight": "400",
           "lineHeight": 35,
-          "marginBottom": 10,
+          "marginBottom": 0,
         }
       }
     >
@@ -56,6 +56,7 @@ exports[`tile a without breakpoint 1`] = `
     fill={true}
     style={
       Object {
+        "marginBottom": 10,
         "width": "100%",
       }
     }
