@@ -14,7 +14,9 @@ class SecondaryOneAndColumnist extends Component {
   renderSmall(breakpoint) {
     const {
       onPress,
-      slice: { items: [columnist, secondary ]}
+      slice: {
+        items: [columnist, secondary]
+      }
     } = this.props;
     return (
       <SecondaryOneAndColumnistSlice
@@ -32,7 +34,9 @@ class SecondaryOneAndColumnist extends Component {
   renderMedium(breakpoint) {
     const {
       onPress,
-      slice: { items: [columnist, secondary] }
+      slice: {
+        items: [columnist, secondary]
+      }
     } = this.props;
     return (
       <SecondaryOneAndColumnistSlice

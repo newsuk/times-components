@@ -15,7 +15,9 @@ class SecondaryFour extends Component {
   renderSmall(breakpoint) {
     const {
       onPress,
-      slice: { items: [secondary1, secondary2, secondary3, secondary4] }
+      slice: {
+        items: [secondary1, secondary2, secondary3, secondary4]
+      }
     } = this.props;
 
     return (
@@ -40,7 +42,10 @@ class SecondaryFour extends Component {
   renderMedium(breakpoint) {
     const {
       onPress,
-      slice: { isConsecutive, items: [secondary1, secondary2, secondary3, secondary4] }
+      slice: {
+        isConsecutive,
+        items: [secondary1, secondary2, secondary3, secondary4]
+      }
     } = this.props;
 
     return (

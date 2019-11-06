@@ -15,7 +15,9 @@ class LeadOneAndOne extends Component {
   renderSmall(breakpoint) {
     const {
       onPress,
-      slice: { items: [lead, support] }
+      slice: {
+        items: [lead, support]
+      }
     } = this.props;
     return (
       <LeadOneAndOneSlice
@@ -29,7 +31,9 @@ class LeadOneAndOne extends Component {
   renderMedium(breakpoint) {
     const {
       onPress,
-      slice: { items: [lead, support] }
+      slice: {
+        items: [lead, support]
+      }
     } = this.props;
     return (
       <LeadOneAndOneSlice
@@ -43,7 +47,9 @@ class LeadOneAndOne extends Component {
   renderWide(breakpoint) {
     const {
       onPress,
-      slice: { items: [lead, support] }
+      slice: {
+        items: [lead, support]
+      }
     } = this.props;
     return (
       <LeadOneAndOneSlice

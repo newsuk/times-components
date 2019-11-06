@@ -14,7 +14,9 @@ class LeadOneAndFour extends Component {
   renderSmall(breakpoint) {
     const {
       onPress,
-      slice: { items: [lead, support1, support2, support3, support4] }
+      slice: {
+        items: [lead, support1, support2, support3, support4]
+      }
     } = this.props;
 
     return (
@@ -40,7 +42,9 @@ class LeadOneAndFour extends Component {
   renderMedium(breakpoint) {
     const {
       onPress,
-      slice: { items: [lead, support1, support2, support3, support4] }
+      slice: {
+        items: [lead, support1, support2, support3, support4]
+      }
     } = this.props;
 
     return (

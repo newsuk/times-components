@@ -15,7 +15,9 @@ class SecondaryTwoAndTwo extends Component {
   renderSmall(breakpoint) {
     const {
       onPress,
-      slice: { items: [secondary1, secondary2, support1, support2] }
+      slice: {
+        items: [secondary1, secondary2, support1, support2]
+      }
     } = this.props;
 
     return (
@@ -40,7 +42,9 @@ class SecondaryTwoAndTwo extends Component {
   renderMedium(breakpoint) {
     const {
       onPress,
-      slice: { items: [secondary1, secondary2, support1, support2] }
+      slice: {
+        items: [secondary1, secondary2, support1, support2]
+      }
     } = this.props;
 
     return (
@@ -75,7 +79,9 @@ class SecondaryTwoAndTwo extends Component {
   renderWide(breakpoint) {
     const {
       onPress,
-      slice: { items: [secondary1, secondary2, support1, support2] }
+      slice: {
+        items: [secondary1, secondary2, support1, support2]
+      }
     } = this.props;
 
     return (

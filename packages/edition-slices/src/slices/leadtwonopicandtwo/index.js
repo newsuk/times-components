@@ -15,7 +15,9 @@ class LeadTwoNoPicAndTwo extends Component {
   renderSmall(breakpoint) {
     const {
       onPress,
-      slice: { items: [lead1, lead2, support1, support2] }
+      slice: {
+        items: [lead1, lead2, support1, support2]
+      }
     } = this.props;
     return (
       <LeadTwoNoPicAndTwoSlice
@@ -35,7 +37,9 @@ class LeadTwoNoPicAndTwo extends Component {
   renderMedium(breakpoint) {
     const {
       onPress,
-      slice: { items: [lead1, lead2, support1, support2] }
+      slice: {
+        items: [lead1, lead2, support1, support2]
+      }
     } = this.props;
     return (
       <LeadTwoNoPicAndTwoSlice
@@ -79,7 +83,9 @@ class LeadTwoNoPicAndTwo extends Component {
   renderWide(breakpoint) {
     const {
       onPress,
-      slice: { items: [lead1, lead2, support1, support2] }
+      slice: {
+        items: [lead1, lead2, support1, support2]
+      }
     } = this.props;
 
     return (

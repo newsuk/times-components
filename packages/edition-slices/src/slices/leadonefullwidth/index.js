@@ -12,7 +12,9 @@ class LeadOneFullWidthSlice extends Component {
 
   renderSmall() {
     const {
-      slice: { items: [lead] },
+      slice: {
+        items: [lead]
+      },
       onPress
     } = this.props;
     return <TileA onPress={onPress} tile={lead} tileName="lead" />;
@@ -20,7 +22,9 @@ class LeadOneFullWidthSlice extends Component {
 
   renderMedium(breakpoint) {
     const {
-      slice: { items: [lead] },
+      slice: {
+        items: [lead]
+      },
       onPress
     } = this.props;
     return (

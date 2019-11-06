@@ -14,18 +14,18 @@ class ListTwoAndSixNoPicSlice extends Component {
   renderSlice(breakpoint) {
     const {
       onPress,
-      slice: { items: [
-        lead1,
-        lead2,
-        support1,
-        support2,
-        support3,
-        support4,
-        support5,
-        support6
-      ]
+      slice: {
+        items: [
+          lead1,
+          lead2,
+          support1,
+          support2,
+          support3,
+          support4,
+          support5,
+          support6
+        ]
       }
-
     } = this.props;
 
     return (
@@ -58,16 +58,17 @@ class ListTwoAndSixNoPicSlice extends Component {
   renderMedium(breakpoint) {
     const {
       onPress,
-      slice: { items: [
-        lead1,
-        lead2,
-        support1,
-        support2,
-        support3,
-        support4,
-        support5,
-        support6
-      ]
+      slice: {
+        items: [
+          lead1,
+          lead2,
+          support1,
+          support2,
+          support3,
+          support4,
+          support5,
+          support6
+        ]
       }
     } = this.props;
 

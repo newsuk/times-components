@@ -14,7 +14,9 @@ class CommentLeadAndCartoonSlice extends Component {
   renderSmall(editionBreakpoint) {
     const {
       onPress,
-      slice: { items: [lead, cartoon] }
+      slice: {
+        items: [lead, cartoon]
+      }
     } = this.props;
 
     return (
@@ -29,7 +31,9 @@ class CommentLeadAndCartoonSlice extends Component {
   renderMedium(editionBreakpoint) {
     const {
       onPress,
-      slice: { items: [lead, cartoon] }
+      slice: {
+        items: [lead, cartoon]
+      }
     } = this.props;
 
     return (
