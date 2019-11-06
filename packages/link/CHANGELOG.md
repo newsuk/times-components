@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.4.59](https://github.com/newsuk/times-components/compare/@times-components/link@3.4.58...@times-components/link@3.4.59) (2019-11-06)
+
+
+### Bug Fixes
+
+* (REPLAT-10157) (REPLAT-10158) (REPLAT-10159) (REPLAT-10162) ([#2371](https://github.com/newsuk/times-components/issues/2371)) ([ea2844b](https://github.com/newsuk/times-components/commit/ea2844b372f9fe3efb9e7c866353c2c5c4b9b58c))
+
+
+
+
+
 ## [3.4.58](https://github.com/newsuk/times-components/compare/@times-components/link@3.4.57...@times-components/link@3.4.58) (2019-11-04)
 
 **Note:** Version bump only for package @times-components/link

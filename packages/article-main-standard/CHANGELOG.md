@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.17.5](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.17.4...@times-components/article-main-standard@3.17.5) (2019-11-06)
+
+
+### Bug Fixes
+
+* (REPLAT-10157) (REPLAT-10158) (REPLAT-10159) (REPLAT-10162) ([#2371](https://github.com/newsuk/times-components/issues/2371)) ([ea2844b](https://github.com/newsuk/times-components/commit/ea2844b372f9fe3efb9e7c866353c2c5c4b9b58c))
+
+
+
+
+
 ## [3.17.4](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.17.3...@times-components/article-main-standard@3.17.4) (2019-11-06)
 
 

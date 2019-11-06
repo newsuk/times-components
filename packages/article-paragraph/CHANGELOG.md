@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.109](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@1.3.108...@times-components/article-paragraph@1.3.109) (2019-11-06)
+
+
+### Bug Fixes
+
+* (REPLAT-10157) (REPLAT-10158) (REPLAT-10159) (REPLAT-10162) ([#2371](https://github.com/newsuk/times-components/issues/2371)) ([ea2844b](https://github.com/newsuk/times-components/commit/ea2844b372f9fe3efb9e7c866353c2c5c4b9b58c))
+
+
+
+
+
 ## [1.3.108](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@1.3.107...@times-components/article-paragraph@1.3.108) (2019-11-06)
 
 **Note:** Version bump only for package @times-components/article-paragraph
