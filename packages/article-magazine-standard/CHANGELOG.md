@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.15.4](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.15.3...@times-components/article-magazine-standard@3.15.4) (2019-11-06)
+
+
+### Bug Fixes
+
+* update author structured data ([#2373](https://github.com/newsuk/times-components/issues/2373)) ([8d5011b](https://github.com/newsuk/times-components/commit/8d5011bfe433b20767ec161d4b452d0f0854910a))
+
+
+
+
+
 ## [3.15.3](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.15.2...@times-components/article-magazine-standard@3.15.3) (2019-11-05)
 
 

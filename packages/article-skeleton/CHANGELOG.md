@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.19.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.19.3...@times-components/article-skeleton@1.19.4) (2019-11-06)
+
+
+### Bug Fixes
+
+* update author structured data ([#2373](https://github.com/newsuk/times-components/issues/2373)) ([8d5011b](https://github.com/newsuk/times-components/commit/8d5011bfe433b20767ec161d4b452d0f0854910a))
+
+
+
+
+
 ## [1.19.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.19.2...@times-components/article-skeleton@1.19.3) (2019-11-05)
 
 
