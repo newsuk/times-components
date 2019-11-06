@@ -14,7 +14,7 @@ const BodyParagraph = props => (
           styles.articleMainContentRow,
           styles.articleTextElement,
           isTablet && styles.articleMainContentRowTablet,
-          props.style && props.style
+          props.style
         ].concat(props.height ? [{ height: props.height }] : [])}
       >
         <View>{props.children}</View>
