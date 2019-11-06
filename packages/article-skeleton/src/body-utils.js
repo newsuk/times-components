@@ -1,4 +1,26 @@
+/* eslint-disable no-plusplus */
 import memoize from "memoize-one";
+
+// Handle the case where jounralist nest paragraph breaks inside styling markup
+const liftBreaks = paragraph => {
+  const children = paragraph.children.slice();
+  for (let i = 0; i < children.length; i++) {
+    const child = children[i];
+    const breaks = (child.children || []).filter(c => c.name === "break");
+    children.splice(
+      i,
+      1,
+      ...breaks.concat({
+        ...child,
+        children: (child.children || []).filter(c => c.name !== "break")
+      })
+    );
+  }
+  return {
+    ...paragraph,
+    children
+  };
+};
 
 // Handle the case where journalists put everything in one paragraph
 const splitHuge = paragraph => {
@@ -36,7 +58,7 @@ const split = content =>
   [].concat(
     ...content.map(node => {
       if (node.name === "paragraph") {
-        return splitHuge(node);
+        return splitHuge(liftBreaks(node));
       }
       return [node];
     })
