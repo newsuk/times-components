@@ -732,6 +732,9 @@ exports[`full article with style 1`] = `
         <ArticleExtras />
       </article>
     </main>
+    <Ad />
+    <Ad />
+    <Ad />
   </article>
 </div>
 `;
@@ -1476,6 +1479,9 @@ exports[`full article with style in the culture magazine 1`] = `
         <ArticleExtras />
       </article>
     </main>
+    <Ad />
+    <Ad />
+    <Ad />
   </article>
 </div>
 `;
@@ -2221,6 +2227,9 @@ exports[`full article with style in the style magazine 1`] = `
         <ArticleExtras />
       </article>
     </main>
+    <Ad />
+    <Ad />
+    <Ad />
   </article>
 </div>
 `;
@@ -2965,6 +2974,9 @@ exports[`full article with style in the sunday times magazine 1`] = `
         <ArticleExtras />
       </article>
     </main>
+    <Ad />
+    <Ad />
+    <Ad />
   </article>
 </div>
 `;

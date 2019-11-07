@@ -483,6 +483,9 @@ exports[`full article with style 1`] = `
         <ArticleExtras />
       </article>
     </main>
+    <Ad />
+    <Ad />
+    <Ad />
   </article>
 </div>
 `;
