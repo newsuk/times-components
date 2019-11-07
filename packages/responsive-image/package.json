@@ -1,0 +1,87 @@
+{
+  "name": "@times-components/responsive-image",
+  "version": "0.0.1",
+  "description": "A responsive-image for react native",
+  "main": "build/index.js",
+  "typings": "build/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/newsuk/times-components.git"
+  },
+  "keywords": [],
+  "author": "News UK & Ireland Ltd",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/newsuk/times-components/issues"
+  },
+  "homepage": "https://github.com/newsuk/times-components#readme",
+  "scripts": {
+    "describe": "npm-scripts-info",
+    "transpile": "run-s build",
+    "build": "run-s clean && run-p build:*",
+    "build:module": "tsc -p tsconfig.json",
+    "fix": "run-s fix:*",
+    "fix:prettier": "prettier \"src/**/*.tsx\" \"__tests__/**/*.tsx\" --write",
+    "fix:tslint": "tslint --fix --project .",
+    "test": "jest",
+    "test:lint": "tslint --project . && prettier \"src/**/*.ts\" --list-different",
+    "test:unit": "jest --coverage",
+    "watch": "run-s clean build:main && run-p \"build:main -- -w\" \"test:unit -- --watch\"",
+    "doc": "run-s doc:html && open-cli build/docs/index.html",
+    "doc:publish": "gh-pages -m \"[ci skip] Updates\" -d build/docs",
+    "version": "standard-version",
+    "reset": "git clean -dfx && git reset --hard && npm i",
+    "clean": "trash build test"
+  },
+  "scripts-info": {
+    "info": "Display information about the package scripts",
+    "build": "Clean and rebuild the project",
+    "fix": "Try to automatically fix any linting problems",
+    "test": "Lint and unit test the project",
+    "watch": "Watch and rebuild the project on save, then rerun relevant tests",
+    "cov": "Rebuild, run tests, then create and open the coverage report",
+    "version": "Bump package.json version, update CHANGELOG.md, tag release",
+    "reset": "Delete all untracked files and reset the repo to the last commit",
+    "prepare-release": "One-step: clean, build, test, publish docs, and prep a release"
+  },
+  "engines": {
+    "node": ">=8.9"
+  },
+  "dependencies": {
+    "react-native": "0.61.1",
+    "react": "16.9.0",
+    "url-parse": "1.4.7",
+    "@times-components/styleguide": "3.30.3",
+    "react-native-hooks": "0.9.0",
+    "memoize-one": "5.1.1"
+  },
+  "devDependencies": {
+    "@bitjson/npm-scripts-info": "1.0.0",
+    "@istanbuljs/nyc-config-typescript": "0.1.3",
+    "@types/react-test-renderer": "16.9.0",
+    "@types/url-parse": "1.4.3",
+    "@types/react-native": "0.60.21",
+    "codecov": "3.6.1",
+    "cz-conventional-changelog": "2.1.0",
+    "gh-pages": "2.0.1",
+    "jest": "24.8.0",
+    "npm-run-all": "4.1.5",
+    "open-cli": "5.0.0",
+    "prettier": "1.14.3",
+    "standard-version": "6.0.1",
+    "trash-cli": "3.0.0",
+    "tslint": "5.18.0",
+    "tslint-config-prettier": "1.18.0",
+    "tslint-immutable": "6.0.1",
+    "typescript": "3.5.3",
+    "react-test-renderer": "16.9.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "prettier": {
+    "singleQuote": true
+  }
+}

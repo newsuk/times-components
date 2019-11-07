@@ -79,6 +79,9 @@ exports[`1. landscape default modal 1`] = `
             style={
               Object {
                 "alignItems": "center",
+                "aspectRatio": 2,
+                "backgroundColor": "#000000",
+                "borderRadius": 0,
                 "height": "100%",
                 "justifyContent": "center",
                 "position": "absolute",
@@ -86,65 +89,21 @@ exports[`1. landscape default modal 1`] = `
               }
             }
           >
-            <View
+            <Image
               style={
                 Object {
                   "borderRadius": 0,
-                  "height": "100%",
-                  "overflow": "hidden",
+                  "bottom": 0,
+                  "height": undefined,
+                  "left": 0,
                   "position": "absolute",
+                  "resizeMode": "contain",
+                  "right": 0,
+                  "top": 0,
                   "width": "100%",
                 }
               }
-            >
-              <Image
-                style={
-                  Object {
-                    "height": "100%",
-                    "position": "absolute",
-                    "resizeMode": "contain",
-                    "width": "100%",
-                  }
-                }
-              />
-              <Image
-                style={
-                  Object {
-                    "height": "100%",
-                    "position": "absolute",
-                    "resizeMode": "contain",
-                    "width": "100%",
-                  }
-                }
-              />
-            </View>
-            <View
-              style={
-                Object {
-                  "height": "100%",
-                  "opacity": 1,
-                  "width": "100%",
-                }
-              }
-            >
-              <View
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "backgroundColor": "#EDEDED",
-                    "justifyContent": "center",
-                  }
-                }
-              >
-                <Image
-                  style={
-                    Object {
-                      "width": "25%",
-                    }
-                  }
-                />
-              </View>
-            </View>
+            />
           </View>
         </Gestures>
       </SafeAreaView>
@@ -198,59 +157,28 @@ exports[`1. landscape default modal 1`] = `
     <View
       style={
         Object {
-          "position": "relative",
+          "aspectRatio": 2,
+          "backgroundColor": "#EDEDED",
+          "borderRadius": 0,
+          "width": "100%",
         }
       }
     >
-      <View
+      <Image
         style={
           Object {
             "borderRadius": 0,
-            "height": "100%",
-            "overflow": "hidden",
+            "bottom": 0,
+            "height": undefined,
+            "left": 0,
             "position": "absolute",
+            "resizeMode": "cover",
+            "right": 0,
+            "top": 0,
             "width": "100%",
           }
         }
-      >
-        <Image
-          style={
-            Object {
-              "height": "100%",
-              "position": "absolute",
-              "resizeMode": "contain",
-              "width": "100%",
-            }
-          }
-        />
-      </View>
-      <View
-        style={
-          Object {
-            "height": "100%",
-            "opacity": 1,
-            "width": "100%",
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "#EDEDED",
-              "justifyContent": "center",
-            }
-          }
-        >
-          <Image
-            style={
-              Object {
-                "width": "25%",
-              }
-            }
-          />
-        </View>
-      </View>
+      />
     </View>
   </View>
 </View>
@@ -335,6 +263,9 @@ exports[`2. portrait default modal 1`] = `
             style={
               Object {
                 "alignItems": "center",
+                "aspectRatio": 0.5,
+                "backgroundColor": "#000000",
+                "borderRadius": 0,
                 "height": "100%",
                 "justifyContent": "center",
                 "position": "absolute",
@@ -342,65 +273,21 @@ exports[`2. portrait default modal 1`] = `
               }
             }
           >
-            <View
+            <Image
               style={
                 Object {
                   "borderRadius": 0,
-                  "height": "100%",
-                  "overflow": "hidden",
+                  "bottom": 0,
+                  "height": undefined,
+                  "left": 0,
                   "position": "absolute",
+                  "resizeMode": "contain",
+                  "right": 0,
+                  "top": 0,
                   "width": "100%",
                 }
               }
-            >
-              <Image
-                style={
-                  Object {
-                    "height": "100%",
-                    "position": "absolute",
-                    "resizeMode": "contain",
-                    "width": "100%",
-                  }
-                }
-              />
-              <Image
-                style={
-                  Object {
-                    "height": "100%",
-                    "position": "absolute",
-                    "resizeMode": "contain",
-                    "width": "100%",
-                  }
-                }
-              />
-            </View>
-            <View
-              style={
-                Object {
-                  "height": "100%",
-                  "opacity": 1,
-                  "width": "100%",
-                }
-              }
-            >
-              <View
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "backgroundColor": "#EDEDED",
-                    "justifyContent": "center",
-                  }
-                }
-              >
-                <Image
-                  style={
-                    Object {
-                      "width": "25%",
-                    }
-                  }
-                />
-              </View>
-            </View>
+            />
           </View>
         </Gestures>
       </SafeAreaView>
@@ -454,59 +341,28 @@ exports[`2. portrait default modal 1`] = `
     <View
       style={
         Object {
-          "position": "relative",
+          "aspectRatio": 0.5,
+          "backgroundColor": "#EDEDED",
+          "borderRadius": 0,
+          "width": "100%",
         }
       }
     >
-      <View
+      <Image
         style={
           Object {
             "borderRadius": 0,
-            "height": "100%",
-            "overflow": "hidden",
+            "bottom": 0,
+            "height": undefined,
+            "left": 0,
             "position": "absolute",
+            "resizeMode": "cover",
+            "right": 0,
+            "top": 0,
             "width": "100%",
           }
         }
-      >
-        <Image
-          style={
-            Object {
-              "height": "100%",
-              "position": "absolute",
-              "resizeMode": "contain",
-              "width": "100%",
-            }
-          }
-        />
-      </View>
-      <View
-        style={
-          Object {
-            "height": "100%",
-            "opacity": 1,
-            "width": "100%",
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "alignItems": "center",
-              "backgroundColor": "#EDEDED",
-              "justifyContent": "center",
-            }
-          }
-        >
-          <Image
-            style={
-              Object {
-                "width": "25%",
-              }
-            }
-          />
-        </View>
-      </View>
+      />
     </View>
   </View>
 </View>
@@ -591,6 +447,9 @@ exports[`3. tablet landscape default modal 1`] = `
             style={
               Object {
                 "alignItems": "center",
+                "aspectRatio": 2,
+                "backgroundColor": "#000000",
+                "borderRadius": 0,
                 "height": "100%",
                 "justifyContent": "center",
                 "position": "absolute",
@@ -598,70 +457,21 @@ exports[`3. tablet landscape default modal 1`] = `
               }
             }
           >
-            <View
+            <Image
               style={
                 Object {
                   "borderRadius": 0,
-                  "height": "100%",
-                  "overflow": "hidden",
+                  "bottom": 0,
+                  "height": undefined,
+                  "left": 0,
                   "position": "absolute",
+                  "resizeMode": "contain",
+                  "right": 0,
+                  "top": 0,
                   "width": "100%",
                 }
               }
-            >
-              <Image
-                style={
-                  Object {
-                    "height": "100%",
-                    "position": "absolute",
-                    "resizeMode": "contain",
-                    "width": "100%",
-                  }
-                }
-              />
-              <Image
-                style={
-                  Object {
-                    "height": "100%",
-                    "position": "absolute",
-                    "resizeMode": "contain",
-                    "width": "100%",
-                  }
-                }
-              />
-            </View>
-            <View
-              style={
-                Object {
-                  "height": "100%",
-                  "opacity": 1,
-                  "width": "100%",
-                }
-              }
-            >
-              <View
-                style={
-                  Object {
-                    "borderRadius": 0,
-                    "height": "100%",
-                    "overflow": "hidden",
-                    "position": "absolute",
-                    "width": "100%",
-                  }
-                }
-              >
-                <Image
-                  style={
-                    Object {
-                      "height": "100%",
-                      "position": "absolute",
-                      "resizeMode": "contain",
-                      "width": "100%",
-                    }
-                  }
-                />
-              </View>
-            </View>
+            />
           </View>
         </Gestures>
       </SafeAreaView>
@@ -715,64 +525,28 @@ exports[`3. tablet landscape default modal 1`] = `
     <View
       style={
         Object {
-          "position": "relative",
+          "aspectRatio": 2,
+          "backgroundColor": "#EDEDED",
+          "borderRadius": 0,
+          "width": "100%",
         }
       }
     >
-      <View
+      <Image
         style={
           Object {
             "borderRadius": 0,
-            "height": "100%",
-            "overflow": "hidden",
+            "bottom": 0,
+            "height": undefined,
+            "left": 0,
             "position": "absolute",
+            "resizeMode": "cover",
+            "right": 0,
+            "top": 0,
             "width": "100%",
           }
         }
-      >
-        <Image
-          style={
-            Object {
-              "height": "100%",
-              "position": "absolute",
-              "resizeMode": "contain",
-              "width": "100%",
-            }
-          }
-        />
-      </View>
-      <View
-        style={
-          Object {
-            "height": "100%",
-            "opacity": 1,
-            "width": "100%",
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "borderRadius": 0,
-              "height": "100%",
-              "overflow": "hidden",
-              "position": "absolute",
-              "width": "100%",
-            }
-          }
-        >
-          <Image
-            style={
-              Object {
-                "height": "100%",
-                "position": "absolute",
-                "resizeMode": "contain",
-                "width": "100%",
-              }
-            }
-          />
-        </View>
-      </View>
+      />
     </View>
   </View>
 </View>
@@ -857,6 +631,9 @@ exports[`4. tablet portrait default modal 1`] = `
             style={
               Object {
                 "alignItems": "center",
+                "aspectRatio": 0.5,
+                "backgroundColor": "#000000",
+                "borderRadius": 0,
                 "height": "100%",
                 "justifyContent": "center",
                 "position": "absolute",
@@ -864,70 +641,21 @@ exports[`4. tablet portrait default modal 1`] = `
               }
             }
           >
-            <View
+            <Image
               style={
                 Object {
                   "borderRadius": 0,
-                  "height": "100%",
-                  "overflow": "hidden",
+                  "bottom": 0,
+                  "height": undefined,
+                  "left": 0,
                   "position": "absolute",
+                  "resizeMode": "contain",
+                  "right": 0,
+                  "top": 0,
                   "width": "100%",
                 }
               }
-            >
-              <Image
-                style={
-                  Object {
-                    "height": "100%",
-                    "position": "absolute",
-                    "resizeMode": "contain",
-                    "width": "100%",
-                  }
-                }
-              />
-              <Image
-                style={
-                  Object {
-                    "height": "100%",
-                    "position": "absolute",
-                    "resizeMode": "contain",
-                    "width": "100%",
-                  }
-                }
-              />
-            </View>
-            <View
-              style={
-                Object {
-                  "height": "100%",
-                  "opacity": 1,
-                  "width": "100%",
-                }
-              }
-            >
-              <View
-                style={
-                  Object {
-                    "borderRadius": 0,
-                    "height": "100%",
-                    "overflow": "hidden",
-                    "position": "absolute",
-                    "width": "100%",
-                  }
-                }
-              >
-                <Image
-                  style={
-                    Object {
-                      "height": "100%",
-                      "position": "absolute",
-                      "resizeMode": "contain",
-                      "width": "100%",
-                    }
-                  }
-                />
-              </View>
-            </View>
+            />
           </View>
         </Gestures>
       </SafeAreaView>
@@ -981,64 +709,28 @@ exports[`4. tablet portrait default modal 1`] = `
     <View
       style={
         Object {
-          "position": "relative",
+          "aspectRatio": 0.5,
+          "backgroundColor": "#EDEDED",
+          "borderRadius": 0,
+          "width": "100%",
         }
       }
     >
-      <View
+      <Image
         style={
           Object {
             "borderRadius": 0,
-            "height": "100%",
-            "overflow": "hidden",
+            "bottom": 0,
+            "height": undefined,
+            "left": 0,
             "position": "absolute",
+            "resizeMode": "cover",
+            "right": 0,
+            "top": 0,
             "width": "100%",
           }
         }
-      >
-        <Image
-          style={
-            Object {
-              "height": "100%",
-              "position": "absolute",
-              "resizeMode": "contain",
-              "width": "100%",
-            }
-          }
-        />
-      </View>
-      <View
-        style={
-          Object {
-            "height": "100%",
-            "opacity": 1,
-            "width": "100%",
-          }
-        }
-      >
-        <View
-          style={
-            Object {
-              "borderRadius": 0,
-              "height": "100%",
-              "overflow": "hidden",
-              "position": "absolute",
-              "width": "100%",
-            }
-          }
-        >
-          <Image
-            style={
-              Object {
-                "height": "100%",
-                "position": "absolute",
-                "resizeMode": "contain",
-                "width": "100%",
-              }
-            }
-          />
-        </View>
-      </View>
+      />
     </View>
   </View>
 </View>

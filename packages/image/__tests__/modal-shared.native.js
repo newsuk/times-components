@@ -1,6 +1,6 @@
 import React from "react";
 import { Modal, Text, View } from "react-native";
-import TestRenderer from "react-test-renderer";
+import TestRenderer, { act } from "react-test-renderer";
 import Link from "@times-components/link";
 import {
   addSerializers,
@@ -21,6 +21,8 @@ const MockCaption = ({ style: { text, container } }) => (
     <Text style={text}>Caption</Text>
   </View>
 );
+
+jest.useFakeTimers();
 
 export default () => {
   addSerializers(
@@ -44,34 +46,50 @@ export default () => {
   const tests = [
     {
       name: "modal image",
-      test() {
+      async test() {
         const testInstance = TestRenderer.create(<ModalImage {...props} />);
+
+        await act(async () => {
+          jest.runAllImmediates();
+        });
 
         testInstance.root.findAllByType(Image).forEach(img =>
           img.children[0].props.onLayout({
             nativeEvent: { layout: { height: 350, width: 700 } }
           })
         );
+
+        await act(async () => {
+          jest.runAllImmediates();
+        });
 
         expect(testInstance).toMatchSnapshot();
       }
     },
     {
       name: "modal image with no caption",
-      test() {
+      async test() {
         const testInstance = TestRenderer.create(
           <ModalImage {...props} caption={null} />
         );
+
+        await act(async () => {
+          jest.runAllImmediates();
+        });
 
         expect(testInstance).toMatchSnapshot();
       }
     },
     {
       name: "modal image with custom highResSize",
-      test() {
+      async test() {
         const testInstance = TestRenderer.create(
           <ModalImage {...props} highResSize={900} />
         );
+
+        await act(async () => {
+          jest.runAllImmediates();
+        });
 
         testInstance.root.findAllByType(Image).forEach(img =>
           img.children[0].props.onLayout({
@@ -79,19 +97,31 @@ export default () => {
           })
         );
 
+        await act(async () => {
+          jest.runAllImmediates();
+        });
+
         expect(testInstance).toMatchSnapshot();
       }
     },
     {
       name: "handle onPress event on the link",
-      test: () => {
+      test: async () => {
         const testInstance = TestRenderer.create(<ModalImage {...props} />);
+
+        await act(async () => {
+          jest.runAllImmediates();
+        });
 
         const [, openButton] = testInstance.root.findAll(
           node => node.type === Link
         );
 
         openButton.props.onPress();
+
+        await act(async () => {
+          jest.runAllImmediates();
+        });
 
         const modal = testInstance.root.find(node => node.type === Modal);
 
@@ -100,7 +130,7 @@ export default () => {
     },
     {
       name: "modal image uses screen width to set highResSize",
-      test: () => {
+      test: async () => {
         const width = 750;
         const testInstance = TestRenderer.create(
           <Responsive>
@@ -117,16 +147,24 @@ export default () => {
     },
     {
       name: "handle onPress event on the close button",
-      test: () => {
+      test: async () => {
         const testInstance = TestRenderer.create(
           <ModalImage {...props} show />
         );
+
+        await act(async () => {
+          jest.runAllImmediates();
+        });
 
         const [closeButton] = testInstance.root.findAll(
           node => node.type === Link
         );
 
         closeButton.props.onPress();
+
+        await act(async () => {
+          jest.runAllImmediates();
+        });
 
         const modal = testInstance.root.find(node => node.type === Modal);
 
@@ -135,14 +173,22 @@ export default () => {
     },
     {
       name: "handle onSwipeDown on the gesture controller",
-      test: () => {
+      test: async () => {
         const testInstance = TestRenderer.create(
           <ModalImage {...props} show />
         );
 
+        await act(async () => {
+          jest.runAllImmediates();
+        });
+
         const gestureController = testInstance.root.findByType(Gestures);
 
         gestureController.props.onSwipeDown();
+
+        await act(async () => {
+          jest.runAllImmediates();
+        });
 
         const modal = testInstance.root.find(node => node.type === Modal);
 
@@ -151,41 +197,61 @@ export default () => {
     },
     {
       name: "image with onImagePress prop should not have Modal",
-      test: () => {
+      test: async () => {
         const onImagePress = () => {};
         const propWithImagePress = { ...props, onImagePress };
         const testInstance = TestRenderer.create(
           <ModalImage {...propWithImagePress} />
         );
 
+        await act(async () => {
+          jest.runAllImmediates();
+        });
+
         expect(testInstance.root.findAllByType(Modal).length).toBe(0);
       }
     },
     {
       name: "hides elements when tapping on the image",
-      test: () => {
+      test: async () => {
         const testInstance = TestRenderer.create(
           <ModalImage {...props} show />
         );
 
+        await act(async () => {
+          jest.runAllImmediates();
+        });
+
         const gestureController = testInstance.root.findByType(Gestures);
 
         gestureController.props.onPress();
+
+        await act(async () => {
+          jest.runAllImmediates();
+        });
 
         expect(testInstance).toMatchSnapshot();
       }
     },
     {
       name: "re-shows elements when tapping on the image a second time",
-      test: () => {
+      test: async () => {
         const testInstance = TestRenderer.create(
           <ModalImage {...props} show />
         );
+
+        await act(async () => {
+          jest.runAllImmediates();
+        });
 
         const gestureController = testInstance.root.findByType(Gestures);
 
         gestureController.props.onPress();
         gestureController.props.onPress();
+
+        await act(async () => {
+          jest.runAllImmediates();
+        });
 
         expect(testInstance).toMatchSnapshot();
       }

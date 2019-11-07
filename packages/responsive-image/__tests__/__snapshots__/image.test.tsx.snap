@@ -1,0 +1,195 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image handles no uri 1`] = `null`;
+
+exports[`Image loads high-res 1`] = `
+<View
+  accessibilityIgnoresInvertColors={true}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#EDEDED",
+        "width": "100%",
+      },
+      undefined,
+      Object {
+        "aspectRatio": undefined,
+      },
+      Object {
+        "borderRadius": 0,
+      },
+    ]
+  }
+>
+  <Image
+    fadeDuration={0}
+    loadingIndicatorSource={
+      Object {
+        "uri": "http://foo.com/bar.png?rel_width=1&rel_height=1&offline=true",
+      }
+    }
+    onLayout={[Function]}
+    progressiveRenderingEnabled={true}
+    resizeMethod="resize"
+    source={
+      Object {
+        "uri": "http://foo.com/bar.png?rel_width=1&rel_height=1&offline=false&resize=1000",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+        Object {
+          "height": undefined,
+          "width": undefined,
+        },
+        Array [
+          Object {
+            "width": "100%",
+          },
+          Object {
+            "resizeMode": "cover",
+          },
+          Object {
+            "borderRadius": 0,
+          },
+        ],
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`Image renders 1`] = `
+<View
+  accessibilityIgnoresInvertColors={true}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#EDEDED",
+        "width": "100%",
+      },
+      undefined,
+      Object {
+        "aspectRatio": undefined,
+      },
+      Object {
+        "borderRadius": 0,
+      },
+    ]
+  }
+>
+  <Image
+    fadeDuration={300}
+    loadingIndicatorSource={
+      Object {
+        "testUri": "../../../packages/responsive-image/assets/t.png",
+      }
+    }
+    onLayout={[Function]}
+    progressiveRenderingEnabled={true}
+    resizeMethod="resize"
+    source={
+      Object {
+        "uri": "http://foo.com/bar.png?rel_width=1&rel_height=1&offline=true",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+        Object {
+          "height": undefined,
+          "width": undefined,
+        },
+        Array [
+          Object {
+            "width": "100%",
+          },
+          Object {
+            "resizeMode": undefined,
+          },
+          Object {
+            "borderRadius": 0,
+          },
+        ],
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`Image respects resizeMode 1`] = `
+<View
+  accessibilityIgnoresInvertColors={true}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#EDEDED",
+        "width": "100%",
+      },
+      undefined,
+      Object {
+        "aspectRatio": undefined,
+      },
+      Object {
+        "borderRadius": 0,
+      },
+    ]
+  }
+>
+  <Image
+    fadeDuration={300}
+    loadingIndicatorSource={
+      Object {
+        "testUri": "../../../packages/responsive-image/assets/t.png",
+      }
+    }
+    onLayout={[Function]}
+    progressiveRenderingEnabled={true}
+    resizeMethod="resize"
+    source={
+      Object {
+        "uri": "http://foo.com/bar.png?rel_width=1&rel_height=1&offline=true",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+        Object {
+          "height": undefined,
+          "width": undefined,
+        },
+        Array [
+          Object {
+            "width": "100%",
+          },
+          Object {
+            "resizeMode": undefined,
+          },
+          Object {
+            "borderRadius": 0,
+          },
+        ],
+      ]
+    }
+  />
+</View>
+`;

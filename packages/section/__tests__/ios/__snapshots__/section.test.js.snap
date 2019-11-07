@@ -27,64 +27,13 @@ exports[`Sunday Times magazine section 1`] = `
             }
           }
         >
-          <View
+          <ResponsiveImage
             style={
               Object {
-                "position": "relative",
                 "width": 750,
               }
             }
-          >
-            <View
-              style={
-                Object {
-                  "borderRadius": 0,
-                  "height": "100%",
-                  "overflow": "hidden",
-                  "position": "absolute",
-                  "width": "100%",
-                }
-              }
-            >
-              <Image
-                style={
-                  Object {
-                    "height": "100%",
-                    "position": "absolute",
-                    "resizeMode": "contain",
-                    "width": "100%",
-                  }
-                }
-              />
-            </View>
-            <View
-              style={
-                Object {
-                  "height": "100%",
-                  "opacity": 1,
-                  "width": "100%",
-                }
-              }
-            >
-              <View
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "backgroundColor": "#EDEDED",
-                    "justifyContent": "center",
-                  }
-                }
-              >
-                <Image
-                  style={
-                    Object {
-                      "width": "25%",
-                    }
-                  }
-                />
-              </View>
-            </View>
-          </View>
+          />
           <View
             style={
               Object {
@@ -145,64 +94,13 @@ exports[`Times magazine section 1`] = `
             }
           }
         >
-          <View
+          <ResponsiveImage
             style={
               Object {
-                "position": "relative",
                 "width": 750,
               }
             }
-          >
-            <View
-              style={
-                Object {
-                  "borderRadius": 0,
-                  "height": "100%",
-                  "overflow": "hidden",
-                  "position": "absolute",
-                  "width": "100%",
-                }
-              }
-            >
-              <Image
-                style={
-                  Object {
-                    "height": "100%",
-                    "position": "absolute",
-                    "resizeMode": "contain",
-                    "width": "100%",
-                  }
-                }
-              />
-            </View>
-            <View
-              style={
-                Object {
-                  "height": "100%",
-                  "opacity": 1,
-                  "width": "100%",
-                }
-              }
-            >
-              <View
-                style={
-                  Object {
-                    "alignItems": "center",
-                    "backgroundColor": "#EDEDED",
-                    "justifyContent": "center",
-                  }
-                }
-              >
-                <Image
-                  style={
-                    Object {
-                      "width": "25%",
-                    }
-                  }
-                />
-              </View>
-            </View>
-          </View>
+          />
           <View
             style={
               Object {

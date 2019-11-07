@@ -35,6 +35,7 @@ const ArticleHeader = ({
           aspectRatio={1}
           style={[styles.authorImage, isTablet && styles.authorImageTablet]}
           uri={authorImage}
+          rounded
         />
         <Label isVideo={hasVideo} label={label} />
         <Text

@@ -187,7 +187,7 @@ exports[`4. an inline image 1`] = `
             }
             imageOptions={
               Object {
-                "display": "inline",
+                "display": "secondary",
                 "ratio": "9:4",
                 "relativeHeight": undefined,
                 "relativeHorizontalOffset": undefined,

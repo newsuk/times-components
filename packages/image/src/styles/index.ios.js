@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { colours } from "@times-components/styleguide";
 import sharedStyles, { captionStyles, tabletCaptionStyles } from "./shared";
 
 const styles = StyleSheet.create({
@@ -6,6 +7,10 @@ const styles = StyleSheet.create({
   bottomSafeView: {
     ...sharedStyles.bottomSafeView,
     justifyContent: "flex-end"
+  },
+  modalImageContainer: {
+    ...sharedStyles.modalImageContainer,
+    backgroundColor: colours.functional.black
   }
 });
 

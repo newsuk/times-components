@@ -48,53 +48,23 @@ exports[`1. modal image 1`] = `
       >
         <Gestures>
           <View
-            aspectRatio={2}
+            accessibilityIgnoresInvertColors={true}
           >
-            <View>
-              <Image
-                caption={<MockCaption />}
-                fadeDuration={0}
-                fadeImageIn={false}
-                onImagePress={null}
-                resizeMode="center"
-                show={false}
-                source={
-                  Object {
-                    "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800&offline=true",
-                  }
+            <Image
+              fadeDuration={0}
+              loadingIndicatorSource={
+                Object {
+                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=true",
                 }
-              />
-              <Image
-                caption={<MockCaption />}
-                fadeDuration={0}
-                fadeImageIn={false}
-                onImagePress={null}
-                show={false}
-                source={
-                  Object {
-                    "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800",
-                  }
+              }
+              progressiveRenderingEnabled={true}
+              resizeMethod="resize"
+              source={
+                Object {
+                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=false&resize=1400",
                 }
-              />
-            </View>
-            <View
-              collapsable={false}
-            >
-              <View>
-                <Image
-                  caption={<MockCaption />}
-                  fadeDuration={0}
-                  fadeImageIn={false}
-                  onImagePress={null}
-                  show={false}
-                  source={
-                    Object {
-                      "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800",
-                    }
-                  }
-                />
-              </View>
-            </View>
+              }
+            />
           </View>
         </Gestures>
       </SafeAreaView>
@@ -113,56 +83,23 @@ exports[`1. modal image 1`] = `
     focusable={true}
   >
     <View
-      aspectRatio={2}
+      accessibilityIgnoresInvertColors={true}
     >
-      <View>
-        <Image
-          caption={<MockCaption />}
-          fadeDuration={0}
-          fadeImageIn={false}
-          fill={true}
-          onImagePress={null}
-          resizeMode="cover"
-          show={false}
-          source={
-            Object {
-              "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800&offline=true",
-            }
+      <Image
+        fadeDuration={0}
+        loadingIndicatorSource={
+          Object {
+            "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=true",
           }
-        />
-        <Image
-          caption={<MockCaption />}
-          fadeDuration={0}
-          fadeImageIn={false}
-          fill={true}
-          onImagePress={null}
-          show={false}
-          source={
-            Object {
-              "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800",
-            }
+        }
+        progressiveRenderingEnabled={true}
+        resizeMethod="resize"
+        source={
+          Object {
+            "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=false&resize=1400",
           }
-        />
-      </View>
-      <View
-        collapsable={false}
-      >
-        <View>
-          <Image
-            caption={<MockCaption />}
-            fadeDuration={0}
-            fadeImageIn={false}
-            fill={true}
-            onImagePress={null}
-            show={false}
-            source={
-              Object {
-                "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800",
-              }
-            }
-          />
-        </View>
-      </View>
+        }
+      />
     </View>
   </View>
 </View>
@@ -216,36 +153,23 @@ exports[`2. modal image with no caption 1`] = `
       >
         <Gestures>
           <View
-            aspectRatio={2}
+            accessibilityIgnoresInvertColors={true}
           >
-            <View>
-              <Image
-                caption={null}
-                fadeDuration={0}
-                fadeImageIn={false}
-                onImagePress={null}
-                show={false}
-                source={null}
-              />
-            </View>
-            <View
-              collapsable={false}
-            >
-              <View
-                height="100%"
-                width="100%"
-              >
-                <Image
-                  fadeDuration={0}
-                  resizeMode="contain"
-                  source={
-                    Object {
-                      "testUri": "../../../packages/image/assets/t.png",
-                    }
-                  }
-                />
-              </View>
-            </View>
+            <Image
+              fadeDuration={300}
+              loadingIndicatorSource={
+                Object {
+                  "testUri": "../../../packages/responsive-image/assets/t.png",
+                }
+              }
+              progressiveRenderingEnabled={true}
+              resizeMethod="resize"
+              source={
+                Object {
+                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=true",
+                }
+              }
+            />
           </View>
         </Gestures>
       </SafeAreaView>
@@ -258,37 +182,23 @@ exports[`2. modal image with no caption 1`] = `
     focusable={true}
   >
     <View
-      aspectRatio={2}
+      accessibilityIgnoresInvertColors={true}
     >
-      <View>
-        <Image
-          caption={null}
-          fadeDuration={0}
-          fadeImageIn={false}
-          fill={true}
-          onImagePress={null}
-          show={false}
-          source={null}
-        />
-      </View>
-      <View
-        collapsable={false}
-      >
-        <View
-          height="100%"
-          width="100%"
-        >
-          <Image
-            fadeDuration={0}
-            resizeMode="contain"
-            source={
-              Object {
-                "testUri": "../../../packages/image/assets/t.png",
-              }
-            }
-          />
-        </View>
-      </View>
+      <Image
+        fadeDuration={300}
+        loadingIndicatorSource={
+          Object {
+            "testUri": "../../../packages/responsive-image/assets/t.png",
+          }
+        }
+        progressiveRenderingEnabled={true}
+        resizeMethod="resize"
+        source={
+          Object {
+            "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=true",
+          }
+        }
+      />
     </View>
   </View>
 </View>
@@ -342,53 +252,23 @@ exports[`3. modal image with custom highressize 1`] = `
       >
         <Gestures>
           <View
-            aspectRatio={2}
+            accessibilityIgnoresInvertColors={true}
           >
-            <View>
-              <Image
-                caption={<MockCaption />}
-                fadeDuration={0}
-                fadeImageIn={false}
-                onImagePress={null}
-                resizeMode="center"
-                show={false}
-                source={
-                  Object {
-                    "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800&offline=true",
-                  }
+            <Image
+              fadeDuration={0}
+              loadingIndicatorSource={
+                Object {
+                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=true",
                 }
-              />
-              <Image
-                caption={<MockCaption />}
-                fadeDuration={0}
-                fadeImageIn={false}
-                onImagePress={null}
-                show={false}
-                source={
-                  Object {
-                    "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800",
-                  }
+              }
+              progressiveRenderingEnabled={true}
+              resizeMethod="resize"
+              source={
+                Object {
+                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=false&resize=1400",
                 }
-              />
-            </View>
-            <View
-              collapsable={false}
-            >
-              <View>
-                <Image
-                  caption={<MockCaption />}
-                  fadeDuration={0}
-                  fadeImageIn={false}
-                  onImagePress={null}
-                  show={false}
-                  source={
-                    Object {
-                      "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=800",
-                    }
-                  }
-                />
-              </View>
-            </View>
+              }
+            />
           </View>
         </Gestures>
       </SafeAreaView>
@@ -407,56 +287,23 @@ exports[`3. modal image with custom highressize 1`] = `
     focusable={true}
   >
     <View
-      aspectRatio={2}
+      accessibilityIgnoresInvertColors={true}
     >
-      <View>
-        <Image
-          caption={<MockCaption />}
-          fadeDuration={0}
-          fadeImageIn={false}
-          fill={true}
-          onImagePress={null}
-          resizeMode="cover"
-          show={false}
-          source={
-            Object {
-              "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080&offline=true",
-            }
+      <Image
+        fadeDuration={0}
+        loadingIndicatorSource={
+          Object {
+            "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=true",
           }
-        />
-        <Image
-          caption={<MockCaption />}
-          fadeDuration={0}
-          fadeImageIn={false}
-          fill={true}
-          onImagePress={null}
-          show={false}
-          source={
-            Object {
-              "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
-            }
+        }
+        progressiveRenderingEnabled={true}
+        resizeMethod="resize"
+        source={
+          Object {
+            "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=false&resize=1400",
           }
-        />
-      </View>
-      <View
-        collapsable={false}
-      >
-        <View>
-          <Image
-            caption={<MockCaption />}
-            fadeDuration={0}
-            fadeImageIn={false}
-            fill={true}
-            onImagePress={null}
-            show={false}
-            source={
-              Object {
-                "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&resize=1080",
-              }
-            }
-          />
-        </View>
-      </View>
+        }
+      />
     </View>
   </View>
 </View>
@@ -497,36 +344,23 @@ exports[`9. hides elements when tapping on the image 1`] = `
       >
         <Gestures>
           <View
-            aspectRatio={2}
+            accessibilityIgnoresInvertColors={true}
           >
-            <View>
-              <Image
-                caption={<MockCaption />}
-                fadeDuration={0}
-                fadeImageIn={false}
-                onImagePress={null}
-                show={true}
-                source={null}
-              />
-            </View>
-            <View
-              collapsable={false}
-            >
-              <View
-                height="100%"
-                width="100%"
-              >
-                <Image
-                  fadeDuration={0}
-                  resizeMode="contain"
-                  source={
-                    Object {
-                      "testUri": "../../../packages/image/assets/t.png",
-                    }
-                  }
-                />
-              </View>
-            </View>
+            <Image
+              fadeDuration={300}
+              loadingIndicatorSource={
+                Object {
+                  "testUri": "../../../packages/responsive-image/assets/t.png",
+                }
+              }
+              progressiveRenderingEnabled={true}
+              resizeMethod="resize"
+              source={
+                Object {
+                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=true",
+                }
+              }
+            />
           </View>
         </Gestures>
       </SafeAreaView>
@@ -536,37 +370,23 @@ exports[`9. hides elements when tapping on the image 1`] = `
     focusable={true}
   >
     <View
-      aspectRatio={2}
+      accessibilityIgnoresInvertColors={true}
     >
-      <View>
-        <Image
-          caption={<MockCaption />}
-          fadeDuration={0}
-          fadeImageIn={false}
-          fill={true}
-          onImagePress={null}
-          show={true}
-          source={null}
-        />
-      </View>
-      <View
-        collapsable={false}
-      >
-        <View
-          height="100%"
-          width="100%"
-        >
-          <Image
-            fadeDuration={0}
-            resizeMode="contain"
-            source={
-              Object {
-                "testUri": "../../../packages/image/assets/t.png",
-              }
-            }
-          />
-        </View>
-      </View>
+      <Image
+        fadeDuration={300}
+        loadingIndicatorSource={
+          Object {
+            "testUri": "../../../packages/responsive-image/assets/t.png",
+          }
+        }
+        progressiveRenderingEnabled={true}
+        resizeMethod="resize"
+        source={
+          Object {
+            "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=true",
+          }
+        }
+      />
     </View>
   </View>
 </View>
@@ -620,36 +440,23 @@ exports[`10. re-shows elements when tapping on the image a second time 1`] = `
       >
         <Gestures>
           <View
-            aspectRatio={2}
+            accessibilityIgnoresInvertColors={true}
           >
-            <View>
-              <Image
-                caption={<MockCaption />}
-                fadeDuration={0}
-                fadeImageIn={false}
-                onImagePress={null}
-                show={true}
-                source={null}
-              />
-            </View>
-            <View
-              collapsable={false}
-            >
-              <View
-                height="100%"
-                width="100%"
-              >
-                <Image
-                  fadeDuration={0}
-                  resizeMode="contain"
-                  source={
-                    Object {
-                      "testUri": "../../../packages/image/assets/t.png",
-                    }
-                  }
-                />
-              </View>
-            </View>
+            <Image
+              fadeDuration={300}
+              loadingIndicatorSource={
+                Object {
+                  "testUri": "../../../packages/responsive-image/assets/t.png",
+                }
+              }
+              progressiveRenderingEnabled={true}
+              resizeMethod="resize"
+              source={
+                Object {
+                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=true",
+                }
+              }
+            />
           </View>
         </Gestures>
       </SafeAreaView>
@@ -668,37 +475,23 @@ exports[`10. re-shows elements when tapping on the image a second time 1`] = `
     focusable={true}
   >
     <View
-      aspectRatio={2}
+      accessibilityIgnoresInvertColors={true}
     >
-      <View>
-        <Image
-          caption={<MockCaption />}
-          fadeDuration={0}
-          fadeImageIn={false}
-          fill={true}
-          onImagePress={null}
-          show={true}
-          source={null}
-        />
-      </View>
-      <View
-        collapsable={false}
-      >
-        <View
-          height="100%"
-          width="100%"
-        >
-          <Image
-            fadeDuration={0}
-            resizeMode="contain"
-            source={
-              Object {
-                "testUri": "../../../packages/image/assets/t.png",
-              }
-            }
-          />
-        </View>
-      </View>
+      <Image
+        fadeDuration={300}
+        loadingIndicatorSource={
+          Object {
+            "testUri": "../../../packages/responsive-image/assets/t.png",
+          }
+        }
+        progressiveRenderingEnabled={true}
+        resizeMethod="resize"
+        source={
+          Object {
+            "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=true",
+          }
+        }
+      />
     </View>
   </View>
 </View>

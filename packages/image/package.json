@@ -71,8 +71,8 @@
     "@times-components/styleguide": "3.30.3",
     "@times-components/svgs": "2.7.28",
     "@times-components/utils": "5.1.6",
+    "@times-components/responsive-image": "0.0.1",
     "hoist-non-react-statics": "2.5.5",
-    "lodash.memoize": "4.1.2",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"
   },
