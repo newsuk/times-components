@@ -384,5 +384,53 @@ exports[`1. a full article 1`] = `
       />
     </article>
   </main>
+  <svg
+    height={1}
+    viewBox="-50 0 1 1"
+    width={1}
+  >
+    <g
+      id="watermark"
+      opacity="0.07"
+    >
+      <path
+        d="53a8dae08c4e492d934bf2f094a46ab4"
+        id="shape"
+      />
+    </g>
+  </svg>
+  ADVERTISEMENT
+  <svg
+    height={1}
+    viewBox="-50 0 1 1"
+    width={1}
+  >
+    <g
+      id="watermark"
+      opacity="0.07"
+    >
+      <path
+        d="53a8dae08c4e492d934bf2f094a46ab4"
+        id="shape"
+      />
+    </g>
+  </svg>
+  ADVERTISEMENT
+  <svg
+    height={1}
+    viewBox="-50 0 1 1"
+    width={1}
+  >
+    <g
+      id="watermark"
+      opacity="0.07"
+    >
+      <path
+        d="53a8dae08c4e492d934bf2f094a46ab4"
+        id="shape"
+      />
+    </g>
+  </svg>
+  ADVERTISEMENT
 </article>
 `;
