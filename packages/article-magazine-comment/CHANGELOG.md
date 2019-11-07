@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.15.6](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.15.5...@times-components/article-magazine-comment@3.15.6) (2019-11-07)
+
+
+### Bug Fixes
+
+* (REPLAT-9869) (REPLAT-7356) image loading crops and overdraw ([#2363](https://github.com/newsuk/times-components/issues/2363)) ([9238ffb](https://github.com/newsuk/times-components/commit/9238ffba4b691d071b8326b47cbac1d84ddad697))
+
+
+
+
+
 ## [3.15.5](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.15.4...@times-components/article-magazine-comment@3.15.5) (2019-11-06)
 
 **Note:** Version bump only for package @times-components/article-magazine-comment
