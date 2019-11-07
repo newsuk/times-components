@@ -147,7 +147,10 @@ function Head({ article, logoUrl, paidContentClassName }) {
     publisher: {
       "@type": "Organization",
       name: publication,
-      logo: logoUrl
+      logo: {
+        "@type": "ImageObject",
+        url: logoUrl
+      }
     },
     mainEntityOfPage: {
       "@type": "WebPage"
@@ -160,7 +163,10 @@ function Head({ article, logoUrl, paidContentClassName }) {
       isAccessibleForFree: false,
       cssSelector: `.${paidContentClassName}`
     },
-    author: authorName || "",
+    author: {
+      "@type": "Person",
+      name: authorName || ""
+    },
     image: {
       "@type": "ImageObject",
       url: leadassetUrl,

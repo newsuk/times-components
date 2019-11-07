@@ -13,7 +13,8 @@ const BodyParagraph = props => (
         style={[
           styles.articleMainContentRow,
           styles.articleTextElement,
-          isTablet && styles.articleMainContentRowTablet
+          isTablet && styles.articleMainContentRowTablet,
+          props.style
         ].concat(props.height ? [{ height: props.height }] : [])}
       >
         <View>{props.children}</View>
@@ -24,11 +25,13 @@ const BodyParagraph = props => (
 
 BodyParagraph.propTypes = {
   children: PropTypes.node.isRequired,
-  height: PropTypes.number
+  height: PropTypes.number,
+  style: PropTypes.objectOf({})
 };
 
 BodyParagraph.defaultProps = {
-  height: null
+  height: null,
+  style: {}
 };
 
 export default BodyParagraph;

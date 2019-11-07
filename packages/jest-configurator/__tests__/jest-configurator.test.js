@@ -84,12 +84,12 @@ describe("Jest Configurator Tests", () => {
   describe("No platform specific config", () => {
     it("should allow a null platform value", () => {
       const config = jestConfigurator(null, dir);
-      expect(config.moduleFileExtensions).toEqual(["js", "json"]);
+      expect(config.moduleFileExtensions).toEqual(["js", "ts", "json"]);
     });
 
     it("should allow any other value to be platformless config", () => {
       const config = jestConfigurator(12345, dir);
-      expect(config.moduleFileExtensions).toEqual(["js", "json"]);
+      expect(config.moduleFileExtensions).toEqual(["js", "ts", "json"]);
     });
   });
 });

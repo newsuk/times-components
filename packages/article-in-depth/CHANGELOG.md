@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.15.5](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.15.4...@times-components/article-in-depth@3.15.5) (2019-11-06)
+
+
+### Bug Fixes
+
+* (REPLAT-10157) (REPLAT-10158) (REPLAT-10159) (REPLAT-10162) ([#2371](https://github.com/newsuk/times-components/issues/2371)) ([ea2844b](https://github.com/newsuk/times-components/commit/ea2844b372f9fe3efb9e7c866353c2c5c4b9b58c))
+
+
+
+
+
+## [3.15.4](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.15.3...@times-components/article-in-depth@3.15.4) (2019-11-06)
+
+
+### Bug Fixes
+
+* update author structured data ([#2373](https://github.com/newsuk/times-components/issues/2373)) ([8d5011b](https://github.com/newsuk/times-components/commit/8d5011bfe433b20767ec161d4b452d0f0854910a))
+
+
+
+
+
+## [3.15.3](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.15.2...@times-components/article-in-depth@3.15.3) (2019-11-05)
+
+
+### Bug Fixes
+
+* amend format of structured data ([#2372](https://github.com/newsuk/times-components/issues/2372)) ([a195b96](https://github.com/newsuk/times-components/commit/a195b96f973ac6ba9ecdd2dcb938c94f8644867a))
+
+
+
+
+
 ## [3.15.2](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.15.1...@times-components/article-in-depth@3.15.2) (2019-11-04)
 
 **Note:** Version bump only for package @times-components/article-in-depth

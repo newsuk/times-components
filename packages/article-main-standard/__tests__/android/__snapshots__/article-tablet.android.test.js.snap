@@ -40,7 +40,7 @@ exports[`1. article main standard - tablet 1`] = `
             "fontFamily": "TimesModern-Bold",
             "fontSize": 45,
             "lineHeight": 45,
-            "marginBottom": 10,
+            "marginBottom": 5,
             "marginTop": 5,
           }
         }
@@ -54,8 +54,7 @@ exports[`1. article main standard - tablet 1`] = `
             "fontFamily": "TimesModern-Regular",
             "fontSize": 20,
             "lineHeight": 28,
-            "marginTop": -2,
-            "paddingBottom": 12,
+            "paddingBottom": 10,
           }
         }
       >
@@ -80,8 +79,6 @@ exports[`1. article main standard - tablet 1`] = `
           "marginLeft": 0,
           "marginRight": 0,
           "paddingBottom": 10,
-          "paddingLeft": 0,
-          "paddingRight": 0,
         }
       }
     >
@@ -100,8 +97,9 @@ exports[`1. article main standard - tablet 1`] = `
               "color": "#696969",
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
-              "lineHeight": 21,
+              "lineHeight": 15,
               "marginTop": 0,
+              "paddingTop": 0,
             }
           }
         >
@@ -121,8 +119,9 @@ exports[`1. article main standard - tablet 1`] = `
               "color": "#696969",
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
-              "lineHeight": 21,
+              "lineHeight": 15,
               "marginTop": 0,
+              "paddingTop": 0,
             }
           }
         >

@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.19.5](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.19.4...@times-components/article-skeleton@1.19.5) (2019-11-06)
+
+
+### Bug Fixes
+
+* (REPLAT-10157) (REPLAT-10158) (REPLAT-10159) (REPLAT-10162) ([#2371](https://github.com/newsuk/times-components/issues/2371)) ([ea2844b](https://github.com/newsuk/times-components/commit/ea2844b372f9fe3efb9e7c866353c2c5c4b9b58c))
+* (REPLAT-10284) nested and styled line-breaks ([#2370](https://github.com/newsuk/times-components/issues/2370)) ([7e64c4b](https://github.com/newsuk/times-components/commit/7e64c4b0d16b59ae7ce8305ccbb87d8f41b8a55c))
+* snapshots ([#2374](https://github.com/newsuk/times-components/issues/2374)) ([2a498d2](https://github.com/newsuk/times-components/commit/2a498d236f657a0c90843c4e5e864f471f472067))
+
+
+
+
+
+## [1.19.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.19.3...@times-components/article-skeleton@1.19.4) (2019-11-06)
+
+
+### Bug Fixes
+
+* update author structured data ([#2373](https://github.com/newsuk/times-components/issues/2373)) ([8d5011b](https://github.com/newsuk/times-components/commit/8d5011bfe433b20767ec161d4b452d0f0854910a))
+
+
+
+
+
+## [1.19.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.19.2...@times-components/article-skeleton@1.19.3) (2019-11-05)
+
+
+### Bug Fixes
+
+* amend format of structured data ([#2372](https://github.com/newsuk/times-components/issues/2372)) ([a195b96](https://github.com/newsuk/times-components/commit/a195b96f973ac6ba9ecdd2dcb938c94f8644867a))
+
+
+
+
+
 ## [1.19.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.19.1...@times-components/article-skeleton@1.19.2) (2019-11-04)
 
 

@@ -78,11 +78,11 @@ exports[`default styles 1`] = `
                 <Text
                   style={
                     Object {
-                      "color": "#333333",
-                      "fontFamily": "TimesModern-Regular",
+                      "color": "#000000",
+                      "fontFamily": "TimesModern-Bold",
                       "fontSize": 22,
-                      "fontWeight": "100",
-                      "lineHeight": 28,
+                      "fontWeight": "400",
+                      "lineHeight": 27,
                       "marginBottom": 5,
                       "marginTop": 0,
                     }

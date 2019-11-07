@@ -16,6 +16,10 @@ const nativeStyles = {
   metaContainer: {
     ...sharedStyles.metaContainer,
     marginTop: spacing(4)
+  },
+  datePublication: {
+    ...sharedStyles.datePublication,
+    marginTop: 0
   }
 };
 

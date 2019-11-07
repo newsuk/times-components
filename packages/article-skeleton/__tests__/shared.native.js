@@ -17,6 +17,7 @@ import ArticleSkeleton from "../src/article-skeleton";
 import articleFixture, {
   testFixture,
   nestedContent,
+  styledNestedContent,
   longContent
 } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
@@ -167,6 +168,16 @@ export default () => {
       test() {
         const testInstance = TestRenderer.create(
           renderArticleContent(nestedContent)
+        );
+
+        expect(testInstance.toJSON()).toMatchSnapshot();
+      }
+    },
+    {
+      name: "breaks up nested malformed markup",
+      test() {
+        const testInstance = TestRenderer.create(
+          renderArticleContent(styledNestedContent)
         );
 
         expect(testInstance.toJSON()).toMatchSnapshot();

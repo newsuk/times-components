@@ -125,7 +125,7 @@ exports[`full article with style 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
               "lineHeight": 15,
-              "marginTop": 5,
+              "marginTop": 0,
             }
           }
         >
@@ -262,7 +262,7 @@ exports[`full article with style in the culture magazine 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
               "lineHeight": 15,
-              "marginTop": 5,
+              "marginTop": 0,
             }
           }
         >
@@ -400,7 +400,7 @@ exports[`full article with style in the style magazine 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
               "lineHeight": 15,
-              "marginTop": 5,
+              "marginTop": 0,
             }
           }
         >
@@ -537,7 +537,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
               "lineHeight": 15,
-              "marginTop": 5,
+              "marginTop": 0,
             }
           }
         >
@@ -674,7 +674,7 @@ exports[`tablet full article with style in the culture magazine 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
               "lineHeight": 15,
-              "marginTop": 5,
+              "marginTop": 0,
             }
           }
         >
@@ -812,7 +812,7 @@ exports[`tablet full article with style in the style magazine 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
               "lineHeight": 15,
-              "marginTop": 5,
+              "marginTop": 0,
             }
           }
         >
@@ -949,7 +949,7 @@ exports[`tablet full article with style in the sunday times magazine 1`] = `
               "fontFamily": "GillSansMTStd-Medium",
               "fontSize": 13,
               "lineHeight": 15,
-              "marginTop": 5,
+              "marginTop": 0,
             }
           }
         >
