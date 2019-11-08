@@ -358,6 +358,21 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
         />
       </article>
     </main>
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixel"
+    />
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixelteads"
+    />
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixelskin"
+    />
   </article>
 </div>
 `;
@@ -490,6 +505,21 @@ exports[`2. an article with interactives 1`] = `
         />
       </article>
     </main>
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixel"
+    />
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixelteads"
+    />
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixelskin"
+    />
   </article>
 </div>
 `;
@@ -600,6 +630,21 @@ exports[`3. an article with no content 1`] = `
         />
       </article>
     </main>
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixel"
+    />
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixelteads"
+    />
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixelskin"
+    />
   </article>
 </div>
 `;
@@ -674,6 +719,21 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
         />
       </article>
     </main>
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixel"
+    />
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixelteads"
+    />
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixelskin"
+    />
   </article>
 </div>
 `;

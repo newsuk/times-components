@@ -78,6 +78,21 @@ exports[`1. a primary image 1`] = `
         />
       </article>
     </main>
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixel"
+    />
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixelteads"
+    />
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixelskin"
+    />
   </article>
 </div>
 `;
@@ -158,6 +173,21 @@ exports[`2. a fullwidth image 1`] = `
         />
       </article>
     </main>
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixel"
+    />
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixelteads"
+    />
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixelskin"
+    />
   </article>
 </div>
 `;
@@ -240,6 +270,21 @@ exports[`3. a secondary image 1`] = `
         />
       </article>
     </main>
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixel"
+    />
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixelteads"
+    />
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixelskin"
+    />
   </article>
 </div>
 `;
@@ -322,6 +367,21 @@ exports[`4. an inline image 1`] = `
         />
       </article>
     </main>
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixel"
+    />
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixelteads"
+    />
+    <Ad
+      contextUrl="https://url.io"
+      section="Some Section"
+      slotName="pixelskin"
+    />
   </article>
 </div>
 `;
