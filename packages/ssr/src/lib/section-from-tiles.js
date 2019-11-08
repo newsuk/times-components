@@ -1,5 +1,6 @@
 module.exports = article =>
   article &&
+  article.tiles &&
   article.tiles.length > 0 &&
   article.tiles[0].slices &&
   article.tiles[0].slices.length > 0 &&
