@@ -10,12 +10,9 @@ const {
   defaults
 } = require("@times-components/context/rnw");
 const { scales, themeFactory } = require("@times-components/styleguide/rnw");
+const getSectionNameFromTiles = require("../lib/section-from-tiles");
 
 const scale = scales.large;
-const extractSectionNameFromTiles = article =>
-  article.tiles[0].slices[0].sections[0]
-    ? article.tiles[0].slices[0].sections[0].title.toLowerCase()
-    : "default";
 
 module.exports = (client, analyticsStream, data, helmetContext) => {
   const {
@@ -57,7 +54,7 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
                 newskit: enableNewskit,
                 theme: {
                   ...themeFactory(
-                    extractSectionNameFromTiles(article),
+                    getSectionNameFromTiles(article),
                     article.template
                   ),
                   scale: scale || defaults.theme.scale
