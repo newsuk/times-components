@@ -24,58 +24,92 @@ Object {
       "slices": Array [
         Object {
           "__typename": "LeadOneFullWidthSlice",
-          "lead": Object {
-            "__typename": "Tile",
-            "article": Object {
-              "__typename": "Article",
-              "bylines": Array [
-                Object {
-                  "__typename": "TextByline",
-                  "byline": Array [
-                    Object {
-                      "attributes": Object {},
-                      "children": Array [
-                        Object {
-                          "attributes": Object {
-                            "value": "Rick Broadbent",
-                          },
-                          "children": Array [],
-                          "name": "text",
+          "items": Array [
+            Object {
+              "__typename": "Tile",
+              "article": Object {
+                "__typename": "Article",
+                "bylines": Array [
+                  Object {
+                    "__typename": "TextByline",
+                    "byline": Array [
+                      Object {
+                        "attributes": Object {
+                          "slug": "richard-lloyd-parry",
                         },
-                      ],
-                      "name": "inline",
-                    },
-                  ],
-                  "image": Object {
-                    "__typename": "Image",
-                    "caption": "some caption",
-                    "credits": "some credits",
-                    "crop": Object {
-                      "__typename": "Crop",
-                      "ratio": "1:1",
-                      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c1333a8-1aa2-11e9-944c-54b267eb465b.jpg?crop=1037%2C1037%2C448%2C38",
-                    },
-                    "id": "372bc095-34c4-47e4-8b1e-d352f5641ee5",
-                    "title": "some title",
+                        "children": Array [
+                          Object {
+                            "attributes": Object {
+                              "value": "Richard Lloyd Parry",
+                            },
+                            "children": Array [],
+                            "name": "text",
+                          },
+                        ],
+                        "name": "author",
+                      },
+                    ],
+                    "image": null,
+                  },
+                  Object {
+                    "__typename": "TextByline",
+                    "byline": Array [
+                      Object {
+                        "children": Array [
+                          Object {
+                            "attributes": Object {
+                              "value": ", Hanoi",
+                            },
+                            "children": Array [],
+                            "name": "text",
+                          },
+                        ],
+                        "name": "inline",
+                      },
+                    ],
+                    "image": null,
+                  },
+                ],
+                "expirableFlags": Array [
+                  Object {
+                    "__typename": "ExpirableFlag",
+                    "expiryTime": "2030-03-14T12:00:00.000Z",
+                    "type": "EXCLUSIVE",
+                  },
+                ],
+                "hasVideo": false,
+                "headline": "Venezuela shows how Corbyn’s socialism works",
+                "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
+                "label": "label",
+                "leadAsset": Object {
+                  "__typename": "Image",
+                  "crop169": Object {
+                    "__typename": "Crop",
+                    "ratio": "16:9",
+                    "relativeHeight": 0.4,
+                    "relativeHorizontalOffset": 0.4,
+                    "relativeVerticalOffset": 0.4,
+                    "relativeWidth": 0.4,
+                    "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32",
                   },
                 },
-              ],
-              "expirableFlags": Array [
-                Object {
-                  "__typename": "ExpirableFlag",
-                  "expiryTime": "2020-03-13T15:00:00.000Z",
-                  "type": "NEW",
+                "listingAsset": Object {
+                  "__typename": "Image",
+                  "crop169": Object {
+                    "__typename": "Crop",
+                    "ratio": "16:9",
+                    "relativeHeight": 0.4,
+                    "relativeHorizontalOffset": 0.4,
+                    "relativeVerticalOffset": 0.4,
+                    "relativeWidth": 0.4,
+                    "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32",
+                  },
                 },
-                Object {
-                  "__typename": "ExpirableFlag",
-                  "expiryTime": "2019-03-13T13:00:00.000Z",
-                  "type": "UPDATED",
-                },
-              ],
-              "hasVideo": true,
-              "headline": "Exclusive interview: the cyclist Geraint Thomas on Welsh pride, drugs cheats and winning the Tour de France",
-              "id": "a-u-u-i-d",
-              "label": "Random label",
+                "section": "business",
+                "shortHeadline": "Driving Off",
+                "url": "/article/123",
+              },
+              "headline": "This is tile headline",
               "leadAsset": Object {
                 "__typename": "Image",
                 "crop169": Object {
@@ -85,39 +119,11 @@ Object {
                   "relativeHorizontalOffset": 0.4,
                   "relativeVerticalOffset": 0.4,
                   "relativeWidth": 0.4,
-                  "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd67cded0-ca7a-11e8-998e-a6e3c63abd14.jpg?crop=1600%2C900%2C0%2C0",
+                  "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32",
                 },
               },
-              "listingAsset": Object {
-                "__typename": "Image",
-                "crop169": Object {
-                  "__typename": "Crop",
-                  "ratio": "16:9",
-                  "relativeHeight": 0.4,
-                  "relativeHorizontalOffset": 0.4,
-                  "relativeVerticalOffset": 0.4,
-                  "relativeWidth": 0.4,
-                  "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd67cded0-ca7a-11e8-998e-a6e3c63abd14la.jpg?crop=1600%2C900%2C0%2C0",
-                },
-              },
-              "section": "business",
-              "shortHeadline": "Let's keep A levels but scrap outdated GCSEs",
-              "url": "https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s",
             },
-            "headline": "Hello World",
-            "leadAsset": Object {
-              "__typename": "Image",
-              "crop169": Object {
-                "__typename": "Crop",
-                "ratio": "16:9",
-                "relativeHeight": 0.4,
-                "relativeHorizontalOffset": 0.4,
-                "relativeVerticalOffset": 0.4,
-                "relativeWidth": 0.4,
-                "url": "https://placeimg.com/320/180/tech",
-              },
-            },
-          },
+          ],
           "name": "LeadOneFullWidthSlice",
         },
       ],
@@ -140,58 +146,92 @@ Object {
       "slices": Array [
         Object {
           "__typename": "LeadOneFullWidthSlice",
-          "lead": Object {
-            "__typename": "Tile",
-            "article": Object {
-              "__typename": "Article",
-              "bylines": Array [
-                Object {
-                  "__typename": "TextByline",
-                  "byline": Array [
-                    Object {
-                      "attributes": Object {},
-                      "children": Array [
-                        Object {
-                          "attributes": Object {
-                            "value": "Rick Broadbent",
-                          },
-                          "children": Array [],
-                          "name": "text",
+          "items": Array [
+            Object {
+              "__typename": "Tile",
+              "article": Object {
+                "__typename": "Article",
+                "bylines": Array [
+                  Object {
+                    "__typename": "TextByline",
+                    "byline": Array [
+                      Object {
+                        "attributes": Object {
+                          "slug": "richard-lloyd-parry",
                         },
-                      ],
-                      "name": "inline",
-                    },
-                  ],
-                  "image": Object {
-                    "__typename": "Image",
-                    "caption": "some caption",
-                    "credits": "some credits",
-                    "crop": Object {
-                      "__typename": "Crop",
-                      "ratio": "1:1",
-                      "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F8c1333a8-1aa2-11e9-944c-54b267eb465b.jpg?crop=1037%2C1037%2C448%2C38",
-                    },
-                    "id": "372bc095-34c4-47e4-8b1e-d352f5641ee5",
-                    "title": "some title",
+                        "children": Array [
+                          Object {
+                            "attributes": Object {
+                              "value": "Richard Lloyd Parry",
+                            },
+                            "children": Array [],
+                            "name": "text",
+                          },
+                        ],
+                        "name": "author",
+                      },
+                    ],
+                    "image": null,
+                  },
+                  Object {
+                    "__typename": "TextByline",
+                    "byline": Array [
+                      Object {
+                        "children": Array [
+                          Object {
+                            "attributes": Object {
+                              "value": ", Hanoi",
+                            },
+                            "children": Array [],
+                            "name": "text",
+                          },
+                        ],
+                        "name": "inline",
+                      },
+                    ],
+                    "image": null,
+                  },
+                ],
+                "expirableFlags": Array [
+                  Object {
+                    "__typename": "ExpirableFlag",
+                    "expiryTime": "2030-03-14T12:00:00.000Z",
+                    "type": "EXCLUSIVE",
+                  },
+                ],
+                "hasVideo": false,
+                "headline": "Venezuela shows how Corbyn’s socialism works",
+                "id": "522abf2c-e752-11e8-9f32-f2801f1b9fd1",
+                "label": "label",
+                "leadAsset": Object {
+                  "__typename": "Image",
+                  "crop169": Object {
+                    "__typename": "Crop",
+                    "ratio": "16:9",
+                    "relativeHeight": 0.4,
+                    "relativeHorizontalOffset": 0.4,
+                    "relativeVerticalOffset": 0.4,
+                    "relativeWidth": 0.4,
+                    "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32",
                   },
                 },
-              ],
-              "expirableFlags": Array [
-                Object {
-                  "__typename": "ExpirableFlag",
-                  "expiryTime": "2020-03-13T15:00:00.000Z",
-                  "type": "NEW",
+                "listingAsset": Object {
+                  "__typename": "Image",
+                  "crop169": Object {
+                    "__typename": "Crop",
+                    "ratio": "16:9",
+                    "relativeHeight": 0.4,
+                    "relativeHorizontalOffset": 0.4,
+                    "relativeVerticalOffset": 0.4,
+                    "relativeWidth": 0.4,
+                    "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32",
+                  },
                 },
-                Object {
-                  "__typename": "ExpirableFlag",
-                  "expiryTime": "2019-03-13T13:00:00.000Z",
-                  "type": "UPDATED",
-                },
-              ],
-              "hasVideo": true,
-              "headline": "Exclusive interview: the cyclist Geraint Thomas on Welsh pride, drugs cheats and winning the Tour de France",
-              "id": "a-u-u-i-d",
-              "label": "Random label",
+                "section": "business",
+                "shortHeadline": "Driving Off",
+                "url": "/article/123",
+              },
+              "headline": "This is tile headline",
               "leadAsset": Object {
                 "__typename": "Image",
                 "crop169": Object {
@@ -201,39 +241,11 @@ Object {
                   "relativeHorizontalOffset": 0.4,
                   "relativeVerticalOffset": 0.4,
                   "relativeWidth": 0.4,
-                  "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd67cded0-ca7a-11e8-998e-a6e3c63abd14.jpg?crop=1600%2C900%2C0%2C0",
+                  "url": "//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd3abdbfc-1776-11e6-b4ba-d249b128bacc.jpg?crop=620%2C348%2C0%2C32",
                 },
               },
-              "listingAsset": Object {
-                "__typename": "Image",
-                "crop169": Object {
-                  "__typename": "Crop",
-                  "ratio": "16:9",
-                  "relativeHeight": 0.4,
-                  "relativeHorizontalOffset": 0.4,
-                  "relativeVerticalOffset": 0.4,
-                  "relativeWidth": 0.4,
-                  "url": "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fd67cded0-ca7a-11e8-998e-a6e3c63abd14la.jpg?crop=1600%2C900%2C0%2C0",
-                },
-              },
-              "section": "business",
-              "shortHeadline": "Let's keep A levels but scrap outdated GCSEs",
-              "url": "https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s",
             },
-            "headline": "Hello World",
-            "leadAsset": Object {
-              "__typename": "Image",
-              "crop169": Object {
-                "__typename": "Crop",
-                "ratio": "16:9",
-                "relativeHeight": 0.4,
-                "relativeHorizontalOffset": 0.4,
-                "relativeVerticalOffset": 0.4,
-                "relativeWidth": 0.4,
-                "url": "https://placeimg.com/320/180/tech",
-              },
-            },
-          },
+          ],
           "name": "LeadOneFullWidthSlice",
         },
       ],
