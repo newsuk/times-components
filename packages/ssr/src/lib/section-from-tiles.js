@@ -1,4 +1,4 @@
-export default article =>
+module.exports = article =>
   article &&
   article.tiles.length > 0 &&
   article.tiles[0].slices &&
