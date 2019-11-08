@@ -30,11 +30,9 @@ export default ({ variables = () => {} } = {}) => {
             __typename: "StandardSlice",
             items: new MockList(sliceCount)
           }),
-          ArticleByline: () => {
-            return {
-              __typename: "TextByline",
-            }
-          },
+          ArticleByline: () => ({
+            __typename: "TextByline"
+          }),
           Crop: (parent, { ratio }) => {
             if (parent.posterImage) {
               return getMediaUrl(parent.posterImage, ratio);
