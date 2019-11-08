@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.8.0](https://github.com/newsuk/times-components/compare/@times-components/ad@2.7.30...@times-components/ad@2.8.0) (2019-11-08)
+
+
+### Features
+
+* add customMPU ad slot ([#2344](https://github.com/newsuk/times-components/issues/2344)) ([e29454e](https://github.com/newsuk/times-components/commit/e29454ed3e780dced6e8d02d1329858e386bfe47))
+
+
+
+
+
 ## [2.7.30](https://github.com/newsuk/times-components/compare/@times-components/ad@2.7.29...@times-components/ad@2.7.30) (2019-11-06)
 
 **Note:** Version bump only for package @times-components/ad
