@@ -24,7 +24,8 @@ const slotPositions = {
   header: 1,
   pixel: 2,
   pixelskin: 2,
-  pixelteads: 2
+  pixelteads: 2,
+  customMPU: 3
 };
 
 const sizeMap = {
@@ -38,7 +39,8 @@ const sizeMap = {
   "native-inline-ad": sizes.native,
   pixel: sizes.pixel,
   pixelskin: sizes.pixel,
-  pixelteads: sizes.pixel
+  pixelteads: sizes.pixel,
+  customMPU: sizes.customMPU
 };
 
 const getAdSizes = (adSizeMap, width) => {

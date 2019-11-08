@@ -48,6 +48,18 @@ const sizes = {
       width: 1024
     }
   ],
+  customMPU: [
+    {
+      height: 0,
+      sizes: [],
+      width: 0
+    },
+    {
+      height: 250,
+      sizes: [[300, 250]],
+      width: 300
+    }
+  ],
   native: [
     {
       height: 250,

@@ -34,7 +34,8 @@ const slotNames = [
   "header",
   "pixel",
   "pixelteads",
-  "pixelskin"
+  "pixelskin",
+  "customMPU"
 ];
 
 const articleContextURL =
