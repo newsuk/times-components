@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.10.7](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.10.6...@times-components/ssr@2.10.7) (2019-11-11)
+
+
+### Bug Fixes
+
+* tighten up section name from tiles validation ([#2377](https://github.com/newsuk/times-components/issues/2377)) ([5a726b9](https://github.com/newsuk/times-components/commit/5a726b9aa819d933c11d9071b4cb7b6ef3afc9ba))
+
+
+
+
+
 ## [2.10.6](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.10.5...@times-components/ssr@2.10.6) (2019-11-08)
 
 **Note:** Version bump only for package @times-components/ssr
