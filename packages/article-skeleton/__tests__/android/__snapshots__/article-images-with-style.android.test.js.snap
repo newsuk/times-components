@@ -47,7 +47,32 @@ exports[`1. a primary image 1`] = `
             }
           }
         >
-          <ArticleExtras />
+          <View
+            style={
+              Object {
+                "backgroundColor": "#ffffff",
+                "maxWidth": "100%",
+                "overflow": "hidden",
+                "width": undefined,
+              }
+            }
+          >
+            <ArticleExtras />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "width": undefined,
+            }
+          }
+        >
+          <ActivityIndicator />
         </View>
       </View>
     </View>
@@ -102,7 +127,32 @@ exports[`2. a fullwidth image 1`] = `
             }
           }
         >
-          <ArticleExtras />
+          <View
+            style={
+              Object {
+                "backgroundColor": "#ffffff",
+                "maxWidth": "100%",
+                "overflow": "hidden",
+                "width": undefined,
+              }
+            }
+          >
+            <ArticleExtras />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "width": undefined,
+            }
+          }
+        >
+          <ActivityIndicator />
         </View>
       </View>
     </View>
@@ -157,7 +207,32 @@ exports[`3. a secondary image 1`] = `
             }
           }
         >
-          <ArticleExtras />
+          <View
+            style={
+              Object {
+                "backgroundColor": "#ffffff",
+                "maxWidth": "100%",
+                "overflow": "hidden",
+                "width": undefined,
+              }
+            }
+          >
+            <ArticleExtras />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "width": undefined,
+            }
+          }
+        >
+          <ActivityIndicator />
         </View>
       </View>
     </View>
@@ -212,7 +287,32 @@ exports[`4. an inline image 1`] = `
             }
           }
         >
-          <ArticleExtras />
+          <View
+            style={
+              Object {
+                "backgroundColor": "#ffffff",
+                "maxWidth": "100%",
+                "overflow": "hidden",
+                "width": undefined,
+              }
+            }
+          >
+            <ArticleExtras />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "width": undefined,
+            }
+          }
+        >
+          <ActivityIndicator />
         </View>
       </View>
     </View>
