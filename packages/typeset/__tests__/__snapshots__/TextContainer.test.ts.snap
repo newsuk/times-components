@@ -4,9 +4,10 @@ exports[`TextContainer#calculateSpans(number) 1`] = `
 Array [
   Span {
     "container": TextContainer {
-      "calculateSpans": [Function],
       "exclusions": Array [],
       "height": 100,
+      "spanY": 120,
+      "spans": Array [],
       "width": 100,
       "x": 0,
       "y": 0,
@@ -22,9 +23,10 @@ Array [
   },
   Span {
     "container": TextContainer {
-      "calculateSpans": [Function],
       "exclusions": Array [],
       "height": 100,
+      "spanY": 120,
+      "spans": Array [],
       "width": 100,
       "x": 0,
       "y": 0,
@@ -40,9 +42,10 @@ Array [
   },
   Span {
     "container": TextContainer {
-      "calculateSpans": [Function],
       "exclusions": Array [],
       "height": 100,
+      "spanY": 120,
+      "spans": Array [],
       "width": 100,
       "x": 0,
       "y": 0,
@@ -58,9 +61,10 @@ Array [
   },
   Span {
     "container": TextContainer {
-      "calculateSpans": [Function],
       "exclusions": Array [],
       "height": 100,
+      "spanY": 120,
+      "spans": Array [],
       "width": 100,
       "x": 0,
       "y": 0,
@@ -77,88 +81,12 @@ Array [
 ]
 `;
 
-exports[`TextContainer#calculateSpans(number) 2`] = `
-Array [
-  Span {
-    "container": TextContainer {
-      "calculateSpans": [Function],
-      "exclusions": Array [],
-      "height": 100,
-      "width": 100,
-      "x": 0,
-      "y": 0,
-    },
-    "end": Point {
-      "x": 100,
-      "y": 0,
-    },
-    "start": Point {
-      "x": 0,
-      "y": 0,
-    },
-  },
-  Span {
-    "container": TextContainer {
-      "calculateSpans": [Function],
-      "exclusions": Array [],
-      "height": 100,
-      "width": 100,
-      "x": 0,
-      "y": 0,
-    },
-    "end": Point {
-      "x": 100,
-      "y": 30,
-    },
-    "start": Point {
-      "x": 0,
-      "y": 30,
-    },
-  },
-  Span {
-    "container": TextContainer {
-      "calculateSpans": [Function],
-      "exclusions": Array [],
-      "height": 100,
-      "width": 100,
-      "x": 0,
-      "y": 0,
-    },
-    "end": Point {
-      "x": 100,
-      "y": 60,
-    },
-    "start": Point {
-      "x": 0,
-      "y": 60,
-    },
-  },
-  Span {
-    "container": TextContainer {
-      "calculateSpans": [Function],
-      "exclusions": Array [],
-      "height": 100,
-      "width": 100,
-      "x": 0,
-      "y": 0,
-    },
-    "end": Point {
-      "x": 100,
-      "y": 90,
-    },
-    "start": Point {
-      "x": 0,
-      "y": 90,
-    },
-  },
-]
-`;
+exports[`TextContainer#calculateSpans(number) 2`] = `Array []`;
 
 exports[`TextContainer(exclusions)#calculateSpans(number) 1`] = `
 Array [
   Span {
     "container": TextContainer {
-      "calculateSpans": [Function],
       "exclusions": Array [
         BoxExclusion {
           "height": 50,
@@ -168,6 +96,8 @@ Array [
         },
       ],
       "height": 100,
+      "spanY": 120,
+      "spans": Array [],
       "width": 100,
       "x": 0,
       "y": 0,
@@ -183,7 +113,6 @@ Array [
   },
   Span {
     "container": TextContainer {
-      "calculateSpans": [Function],
       "exclusions": Array [
         BoxExclusion {
           "height": 50,
@@ -193,6 +122,8 @@ Array [
         },
       ],
       "height": 100,
+      "spanY": 120,
+      "spans": Array [],
       "width": 100,
       "x": 0,
       "y": 0,
@@ -208,7 +139,6 @@ Array [
   },
   Span {
     "container": TextContainer {
-      "calculateSpans": [Function],
       "exclusions": Array [
         BoxExclusion {
           "height": 50,
@@ -218,6 +148,8 @@ Array [
         },
       ],
       "height": 100,
+      "spanY": 120,
+      "spans": Array [],
       "width": 100,
       "x": 0,
       "y": 0,
@@ -233,7 +165,6 @@ Array [
   },
   Span {
     "container": TextContainer {
-      "calculateSpans": [Function],
       "exclusions": Array [
         BoxExclusion {
           "height": 50,
@@ -243,6 +174,8 @@ Array [
         },
       ],
       "height": 100,
+      "spanY": 120,
+      "spans": Array [],
       "width": 100,
       "x": 0,
       "y": 0,
@@ -263,7 +196,6 @@ exports[`TextContainer(exclusions)#calculateSpans(number) 2`] = `
 Array [
   Span {
     "container": TextContainer {
-      "calculateSpans": [Function],
       "exclusions": Array [
         BoxExclusion {
           "height": 50,
@@ -279,6 +211,8 @@ Array [
         },
       ],
       "height": 100,
+      "spanY": 120,
+      "spans": Array [],
       "width": 200,
       "x": 0,
       "y": 0,
@@ -294,7 +228,6 @@ Array [
   },
   Span {
     "container": TextContainer {
-      "calculateSpans": [Function],
       "exclusions": Array [
         BoxExclusion {
           "height": 50,
@@ -310,6 +243,8 @@ Array [
         },
       ],
       "height": 100,
+      "spanY": 120,
+      "spans": Array [],
       "width": 200,
       "x": 0,
       "y": 0,
@@ -325,7 +260,6 @@ Array [
   },
   Span {
     "container": TextContainer {
-      "calculateSpans": [Function],
       "exclusions": Array [
         BoxExclusion {
           "height": 50,
@@ -341,6 +275,8 @@ Array [
         },
       ],
       "height": 100,
+      "spanY": 120,
+      "spans": Array [],
       "width": 200,
       "x": 0,
       "y": 0,
@@ -356,7 +292,6 @@ Array [
   },
   Span {
     "container": TextContainer {
-      "calculateSpans": [Function],
       "exclusions": Array [
         BoxExclusion {
           "height": 50,
@@ -372,6 +307,8 @@ Array [
         },
       ],
       "height": 100,
+      "spanY": 120,
+      "spans": Array [],
       "width": 200,
       "x": 0,
       "y": 0,
@@ -387,7 +324,6 @@ Array [
   },
   Span {
     "container": TextContainer {
-      "calculateSpans": [Function],
       "exclusions": Array [
         BoxExclusion {
           "height": 50,
@@ -403,6 +339,8 @@ Array [
         },
       ],
       "height": 100,
+      "spanY": 120,
+      "spans": Array [],
       "width": 200,
       "x": 0,
       "y": 0,
@@ -418,7 +356,6 @@ Array [
   },
   Span {
     "container": TextContainer {
-      "calculateSpans": [Function],
       "exclusions": Array [
         BoxExclusion {
           "height": 50,
@@ -434,6 +371,8 @@ Array [
         },
       ],
       "height": 100,
+      "spanY": 120,
+      "spans": Array [],
       "width": 200,
       "x": 0,
       "y": 0,

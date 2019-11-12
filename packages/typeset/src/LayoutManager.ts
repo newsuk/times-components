@@ -27,42 +27,46 @@ const getSettings = (str: AttributedString) => {
   return fontAttrs[0].settings;
 };
 
-interface MeasuredItem {
+export interface MeasuredItem {
   width: number;
   text: AttributedString;
 }
 
-function* layoutItemsFromString(
+function layoutItemsFromString(
   s: AttributedString,
   measureFn: (word: AttributedString) => number
-): Generator<MeasuredItem> {
+): MeasuredItem[] {
   const splits = s.split().filter(w => w.length > 0);
 
   const spaceWidth = measureFn(new AttributedString(' ', []));
   const isSpace = (word: AttributedString) => /\s/.test(word.charAt(0));
 
+  const items = [];
+
   for (const split of splits) {
     if (isSpace(split)) {
       if (split.string === '\n') {
-        yield {
+        items.push({
           text: new AttributedString('\n', []),
           width: 0
-        };
+        });
         continue;
       } else {
-        yield {
+        items.push({
           text: new AttributedString(' ', []),
           width: spaceWidth
-        };
+        });
         continue;
       }
     }
 
-    yield {
+    items.push({
       text: split,
       width: measureFn(split)
-    };
+    });
   }
+
+  return items;
 }
 
 export default class LayoutManager {
@@ -83,16 +87,63 @@ export default class LayoutManager {
     this.measure = this.measure.bind(this);
   }
 
-  public layout = function*(this: LayoutManager): Generator<PositionedItem> {
+  public layout = function(this: LayoutManager): PositionedItem[] {
     const leading = getLeading(this.text);
-    for (const container of this.containers) {
+
+    for (const childContainer of this.containers) {
       for (const exclusion of this.exclusions) {
-        container.addExclusion(exclusion.move(-container.x, -container.y));
+        childContainer.addExclusion(
+          exclusion.move(-childContainer.x, -childContainer.y)
+        );
       }
     }
-    const spans = this.concatSpans(leading);
-    const items = layoutItemsFromString(this.text, this.measure);
 
+    const items = layoutItemsFromString(this.text, this.measure);
+    const result: PositionedItem[] = [];
+    const containers = this.containers.slice();
+
+    let container: TextContainer | undefined;
+    let span: Span | false | undefined;
+    let item: MeasuredItem | undefined;
+
+    while (items.length) {
+      if (!container) {
+        container = containers.shift();
+        if (!container) {
+          break;
+        }
+      }
+      if (!span) {
+        span = container.nextSpan(leading);
+        if (!span) {
+          container = undefined;
+          continue;
+        }
+      }
+      if (!item) {
+        item = items.shift();
+        if (!item) {
+          break;
+        }
+      }
+      if (span.end.x - span.start.x >= item.width) {
+        if (item.text.string !== ' ') {
+          result.push({
+            position: new Point(span.start.x, span.end.y),
+            text: item.text
+          });
+        }
+        span.start.x += item.width;
+        item = undefined;
+      } else {
+        span = undefined;
+        if (item.text.string === ' ') {
+          item = undefined;
+        }
+      }
+    }
+
+    /*
     let item: MeasuredItem | undefined;
     spans: for (const span of spans) {
       let x = span.start.x;
@@ -104,7 +155,7 @@ export default class LayoutManager {
             position: new Point(x, span.end.y),
             text: item.text
           };
-          yield positioned;
+          result.push(positioned);
           x += item.width;
           item = undefined;
         }
@@ -119,7 +170,7 @@ export default class LayoutManager {
                 position: new Point(x, span.end.y),
                 text: item.text
               };
-              yield positioned;
+              result.push(positioned);
             }
             x += item.width;
           } else {
@@ -129,15 +180,9 @@ export default class LayoutManager {
         break spans;
       }
     }
-  };
+    */
 
-  private concatSpans = function*(
-    this: LayoutManager,
-    leading: number
-  ): Generator<Span> {
-    for (const container of this.containers) {
-      yield* container.calculateSpans(leading);
-    }
+    return result;
   };
 
   private measure(text: AttributedString): number {

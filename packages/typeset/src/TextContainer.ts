@@ -9,6 +9,8 @@ export default class TextContainer {
   public height: number;
   public x: number;
   public y: number;
+  private spanY: number = 0;
+  private spans: Span[] = [];
 
   constructor(
     width: number,
@@ -29,35 +31,35 @@ export default class TextContainer {
     exclusion.layout();
   }
 
-  public calculateSpans = function*(
-    this: TextContainer,
-    leading: number
-  ): Generator<Span> {
-    let y = 0;
+  public nextSpan(leading: number) {
+    if (this.spans.length) {
+      return this.spans.shift();
+    }
+    if (this.spanY > this.height) {
+      return false;
+    }
+    const y = this.spanY;
     let x = 0;
     let current = new Span(new Point(x, y), new Point(x, y), this);
-    while (y <= this.height) {
-      while (x <= this.width) {
-        for (const exclusion of this.exclusions) {
-          if (inside([x, y], exclusion.layout())) {
-            if (current.start.x < x - 1) {
-              if (current.start.x < current.end.x) {
-                yield current;
-              }
-              current = new Span(new Point(x, y), new Point(x, y), this);
+    while (x <= this.width) {
+      for (const exclusion of this.exclusions) {
+        if (inside([x, y], exclusion.layout())) {
+          if (current.start.x < x - 1) {
+            if (current.start.x < current.end.x) {
+              this.spans.push(current);
             }
-            current.start = new Point(x + 1, y);
+            current = new Span(new Point(x, y), new Point(x, y), this);
           }
+          current.start = new Point(x + 1, y);
         }
-        current.end = new Point(x, y);
-        x++;
       }
-      y += leading;
-      x = 0;
-      if (current.start.x < current.end.x) {
-        yield current;
-      }
-      current = new Span(new Point(0, y), new Point(0, y), this);
+      current.end = new Point(x, y);
+      x++;
     }
-  };
+    this.spanY += leading;
+    if (current.start.x < current.end.x) {
+      this.spans.push(current);
+    }
+    return this.spans.shift();
+  }
 }

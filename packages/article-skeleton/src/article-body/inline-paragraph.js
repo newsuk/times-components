@@ -1,5 +1,5 @@
 /* eslint-disable react/forbid-prop-types */
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import { View, Text } from "react-native";
 import PropTypes from "prop-types";
 import styleguide, { tabletWidth } from "@times-components/styleguide";
@@ -37,14 +37,15 @@ const InlineParagraph = ({
     dropCap ? [dropCap.exclusion] : []
   );
 
+  const slice = str.charAt(1) === " " ? 2 : 1;
+
   const manager = new LayoutManager(
-    dropCap ? str.slice(1) : str,
+    dropCap ? str.slice(slice) : str,
     [container],
     inlineExclusion ? [inlineExclusion.exclusion] : []
   );
 
-  const { current: items } = useRef(manager.layout());
-  const { current: positioned } = useRef(Array.from(items));
+  const positioned = manager.layout();
 
   return [
     dropCap && dropCap.element,
