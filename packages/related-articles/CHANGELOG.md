@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.2.20](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.2.19...@times-components/related-articles@6.2.20) (2019-11-12)
+
+
+### Bug Fixes
+
+* related articles on click analytics ([#2379](https://github.com/newsuk/times-components/issues/2379)) ([e840ff1](https://github.com/newsuk/times-components/commit/e840ff1d31c9381bea6a80859026537e6aad2ae3))
+
+
+
+
+
 ## [6.2.19](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.2.18...@times-components/related-articles@6.2.19) (2019-11-07)
 
 **Note:** Version bump only for package @times-components/related-articles
