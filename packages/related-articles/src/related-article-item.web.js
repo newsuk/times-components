@@ -6,10 +6,14 @@ import relatedArticlesItemTrackingEvents from "./related-articles-item-tracking-
 
 const RelatedArticleItemWeb = props => (
   <RelatedArticleItem {...props}>
-    {({ article, card }) => (
+    {({ article, card, onPress }) => (
       <Context.Consumer>
         {({ makeArticleUrl }) => (
-          <Link linkStyle={{ padding: 10 }} url={makeArticleUrl(article)}>
+          <Link
+            linkStyle={{ padding: 10 }}
+            onPress={e => onPress(e, { url: makeArticleUrl(article) })}
+            url={makeArticleUrl(article)}
+          >
             {card}
           </Link>
         )}
