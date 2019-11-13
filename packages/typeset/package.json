@@ -50,18 +50,8 @@
     "node": ">=8.9"
   },
   "dependencies": {
-    "@simple-dom/document": "1.4.0",
-    "@simple-dom/parser": "1.4.0",
-    "@simple-dom/void-map": "1.4.0",
-    "abs-svg-path": "0.1.1",
-    "hyphenation.en-gb": "0.2.1",
     "opentype.js": "1.1.0",
-    "parse-svg-path": "0.1.2",
-    "point-in-polygon": "1.0.1",
-    "simple-html-tokenizer": "0.5.8",
-    "simplify-geometry": "0.0.2",
-    "svg-path-properties": "0.5.2",
-    "tex-linebreak": "0.5.2"
+    "point-in-polygon": "1.0.1"
   },
   "devDependencies": {
     "@bitjson/npm-scripts-info": "1.0.0",
@@ -83,7 +73,7 @@
     "tslint": "5.18.0",
     "tslint-config-prettier": "1.18.0",
     "tslint-immutable": "6.0.1",
-    "typescript": "3.5.3"
+    "typescript": "3.7.2"
   },
   "config": {
     "commitizen": {

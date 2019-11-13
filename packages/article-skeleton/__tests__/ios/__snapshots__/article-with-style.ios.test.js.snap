@@ -84,7 +84,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                     "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "normal",
-                    "left": 197,
+                    "left": 197.0390625,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 0,
@@ -101,7 +101,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                     "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "normal",
-                    "left": 294,
+                    "left": 294.017578125,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 0,
@@ -118,7 +118,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                     "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "normal",
-                    "left": 390,
+                    "left": 390.75,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 0,
@@ -135,7 +135,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                     "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "normal",
-                    "left": 514,
+                    "left": 514.095703125,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 0,
@@ -152,7 +152,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                     "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "normal",
-                    "left": 633,
+                    "left": 633.486328125,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 0,
@@ -160,23 +160,6 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 }
               >
                 last
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 36,
-                    "fontStyle": "normal",
-                    "fontWeight": "normal",
-                    "left": 141,
-                    "lineHeight": 52,
-                    "position": "absolute",
-                    "top": 52,
-                  }
-                }
-              >
-                week
               </Text>
             </View>
           </View>
@@ -212,6 +195,20 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
           }
         }
       />
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "width": undefined,
+            }
+          }
+        >
+          <ActivityIndicator />
+        </View>
+      </View>
     </View>
   </RCTScrollView>
 </View>
@@ -293,6 +290,20 @@ exports[`2. an article with interactives 1`] = `
           }
         }
       />
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "width": undefined,
+            }
+          }
+        >
+          <ActivityIndicator />
+        </View>
+      </View>
     </View>
   </RCTScrollView>
 </View>
@@ -331,7 +342,32 @@ exports[`3. an article with no content 1`] = `
             }
           }
         >
-          <ArticleExtras />
+          <View
+            style={
+              Object {
+                "backgroundColor": "#ffffff",
+                "maxWidth": "100%",
+                "overflow": "hidden",
+                "width": undefined,
+              }
+            }
+          >
+            <ArticleExtras />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "width": undefined,
+            }
+          }
+        >
+          <ActivityIndicator />
         </View>
       </View>
     </View>
@@ -423,7 +459,7 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                     "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "bold",
-                    "left": 250,
+                    "left": 250.42578125,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 0,
@@ -440,7 +476,7 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                     "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "bold",
-                    "left": 345,
+                    "left": 345.541015625,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 0,
@@ -457,7 +493,7 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                     "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "bold",
-                    "left": 414,
+                    "left": 414.763671875,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 0,
@@ -474,7 +510,7 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                     "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "bold",
-                    "left": 433,
+                    "left": 433.466796875,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 0,
@@ -491,7 +527,7 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                     "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "bold",
-                    "left": 532,
+                    "left": 532.888671875,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 0,
@@ -508,10 +544,10 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                     "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "bold",
-                    "left": 149,
+                    "left": 592.4609375,
                     "lineHeight": 52,
                     "position": "absolute",
-                    "top": 52,
+                    "top": 0,
                   }
                 }
               >
@@ -525,7 +561,7 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                     "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "bold",
-                    "left": 292,
+                    "left": 149,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 52,
@@ -542,7 +578,7 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                     "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "bold",
-                    "left": 333,
+                    "left": 189.8515625,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 52,
@@ -559,7 +595,7 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                     "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "bold",
-                    "left": 410,
+                    "left": 267.072265625,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 52,
@@ -576,7 +612,7 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                     "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "bold",
-                    "left": 457,
+                    "left": 314.12890625,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 52,
@@ -593,7 +629,7 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                     "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "bold",
-                    "left": 486,
+                    "left": 342.623046875,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 52,
@@ -610,7 +646,7 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                     "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "bold",
-                    "left": 587,
+                    "left": 444.189453125,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 52,
@@ -627,10 +663,10 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                     "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "bold",
-                    "left": 149,
+                    "left": 472.68359375,
                     "lineHeight": 52,
                     "position": "absolute",
-                    "top": 104,
+                    "top": 52,
                   }
                 }
               >
@@ -644,10 +680,10 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                     "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "bold",
-                    "left": 276,
+                    "left": 600.177734375,
                     "lineHeight": 52,
                     "position": "absolute",
-                    "top": 104,
+                    "top": 52,
                   }
                 }
               >
@@ -661,10 +697,10 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                     "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "bold",
-                    "left": 352,
+                    "left": 676.501953125,
                     "lineHeight": 52,
                     "position": "absolute",
-                    "top": 104,
+                    "top": 52,
                   }
                 }
               >
@@ -678,7 +714,7 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                     "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "bold",
-                    "left": 389,
+                    "left": 149,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 104,
@@ -695,7 +731,7 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
                     "fontSize": 36,
                     "fontStyle": "normal",
                     "fontWeight": "bold",
-                    "left": 463,
+                    "left": 223.724609375,
                     "lineHeight": 52,
                     "position": "absolute",
                     "top": 104,
@@ -756,6 +792,20 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
           }
         }
       />
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "width": undefined,
+            }
+          }
+        >
+          <ActivityIndicator />
+        </View>
+      </View>
     </View>
   </RCTScrollView>
 </View>
@@ -856,6 +906,20 @@ exports[`5. an article skeleton with responsive items 1`] = `
           }
         }
       />
+      <View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#ffffff",
+              "maxWidth": "100%",
+              "overflow": "hidden",
+              "width": undefined,
+            }
+          }
+        >
+          <ActivityIndicator />
+        </View>
+      </View>
     </View>
   </RCTScrollView>
 </View>

@@ -97,9 +97,19 @@ exports[`1. landscape default modal 1`] = `
                   "height": undefined,
                   "left": 0,
                   "position": "absolute",
-                  "resizeMode": "contain",
+                  "resizeMode": "center",
                   "right": 0,
                   "top": 0,
+                  "width": "100%",
+                }
+              }
+            />
+            <Image
+              style={
+                Object {
+                  "aspectRatio": 2,
+                  "borderRadius": 0,
+                  "resizeMode": "contain",
                   "width": "100%",
                 }
               }
@@ -172,9 +182,19 @@ exports[`1. landscape default modal 1`] = `
             "height": undefined,
             "left": 0,
             "position": "absolute",
-            "resizeMode": "cover",
+            "resizeMode": "center",
             "right": 0,
             "top": 0,
+            "width": "100%",
+          }
+        }
+      />
+      <Image
+        style={
+          Object {
+            "aspectRatio": 2,
+            "borderRadius": 0,
+            "resizeMode": "cover",
             "width": "100%",
           }
         }
@@ -281,9 +301,19 @@ exports[`2. portrait default modal 1`] = `
                   "height": undefined,
                   "left": 0,
                   "position": "absolute",
-                  "resizeMode": "contain",
+                  "resizeMode": "center",
                   "right": 0,
                   "top": 0,
+                  "width": "100%",
+                }
+              }
+            />
+            <Image
+              style={
+                Object {
+                  "aspectRatio": 0.5,
+                  "borderRadius": 0,
+                  "resizeMode": "contain",
                   "width": "100%",
                 }
               }
@@ -356,9 +386,19 @@ exports[`2. portrait default modal 1`] = `
             "height": undefined,
             "left": 0,
             "position": "absolute",
-            "resizeMode": "cover",
+            "resizeMode": "center",
             "right": 0,
             "top": 0,
+            "width": "100%",
+          }
+        }
+      />
+      <Image
+        style={
+          Object {
+            "aspectRatio": 0.5,
+            "borderRadius": 0,
+            "resizeMode": "cover",
             "width": "100%",
           }
         }
@@ -465,9 +505,19 @@ exports[`3. tablet landscape default modal 1`] = `
                   "height": undefined,
                   "left": 0,
                   "position": "absolute",
-                  "resizeMode": "contain",
+                  "resizeMode": "center",
                   "right": 0,
                   "top": 0,
+                  "width": "100%",
+                }
+              }
+            />
+            <Image
+              style={
+                Object {
+                  "aspectRatio": 2,
+                  "borderRadius": 0,
+                  "resizeMode": "contain",
                   "width": "100%",
                 }
               }
@@ -540,9 +590,19 @@ exports[`3. tablet landscape default modal 1`] = `
             "height": undefined,
             "left": 0,
             "position": "absolute",
-            "resizeMode": "cover",
+            "resizeMode": "center",
             "right": 0,
             "top": 0,
+            "width": "100%",
+          }
+        }
+      />
+      <Image
+        style={
+          Object {
+            "aspectRatio": 2,
+            "borderRadius": 0,
+            "resizeMode": "cover",
             "width": "100%",
           }
         }
@@ -649,9 +709,19 @@ exports[`4. tablet portrait default modal 1`] = `
                   "height": undefined,
                   "left": 0,
                   "position": "absolute",
-                  "resizeMode": "contain",
+                  "resizeMode": "center",
                   "right": 0,
                   "top": 0,
+                  "width": "100%",
+                }
+              }
+            />
+            <Image
+              style={
+                Object {
+                  "aspectRatio": 0.5,
+                  "borderRadius": 0,
+                  "resizeMode": "contain",
                   "width": "100%",
                 }
               }
@@ -724,9 +794,19 @@ exports[`4. tablet portrait default modal 1`] = `
             "height": undefined,
             "left": 0,
             "position": "absolute",
-            "resizeMode": "cover",
+            "resizeMode": "center",
             "right": 0,
             "top": 0,
+            "width": "100%",
+          }
+        }
+      />
+      <Image
+        style={
+          Object {
+            "aspectRatio": 0.5,
+            "borderRadius": 0,
+            "resizeMode": "cover",
             "width": "100%",
           }
         }

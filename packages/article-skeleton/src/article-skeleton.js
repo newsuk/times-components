@@ -1,5 +1,5 @@
-import React, { memo } from "react";
-import { View, VirtualizedList } from "react-native";
+import React, { useCallback, useState } from "react";
+import { View, FlatList, ActivityIndicator } from "react-native";
 import PropTypes from "prop-types";
 import { screenWidth } from "@times-components/utils";
 import { withTrackScrollDepth } from "@times-components/tracking";
@@ -45,13 +45,31 @@ const ArticleSkeleton = props => {
     onViewed
   } = props;
 
-  const onViewableItemsChanged = info => {
-    if (!info.changed || !info.changed.length) return [];
+  const onViewableItemsChanged = useCallback(
+    info => {
+      if (!onViewed || !info.changed || !info.changed.length) return [];
 
-    return info.changed
-      .filter(viewableItem => viewableItem.isViewable)
-      .map(viewableItem => onViewed(viewableItem.item, data));
-  };
+      return info.changed
+        .filter(viewableItem => viewableItem.isViewable)
+        .map(viewableItem => onViewed(viewableItem.item, data));
+    },
+    [data, onViewed]
+  );
+
+  const [loading, setLoading] = useState(true);
+  const Loading = useCallback(
+    () =>
+      loading ? (
+        <Gutter>
+          <ActivityIndicator size="large" />
+        </Gutter>
+      ) : null,
+    [loading]
+  );
+
+  const onEndReached = useCallback(() => {
+    setLoading(false);
+  }, []);
 
   if (!data) {
     return null;
@@ -63,59 +81,55 @@ const ArticleSkeleton = props => {
     return null;
   }
 
-  const header = <Header width={Math.min(maxWidth, screenWidth())} />;
+  const header = (
+    <Gutter>
+      <Header width={Math.min(maxWidth, screenWidth())} />
+    </Gutter>
+  );
 
-  const Footer = () => (
-    <ArticleExtras
-      analyticsStream={analyticsStream}
-      articleId={id}
-      articleUrl={url}
-      onCommentGuidelinesPress={onCommentGuidelinesPress}
-      onCommentsPress={onCommentsPress}
-      onRelatedArticlePress={onRelatedArticlePress}
-      onTopicPress={onTopicPress}
-    />
+  const footer = (
+    <Gutter>
+      <ArticleExtras
+        analyticsStream={analyticsStream}
+        articleId={id}
+        articleUrl={url}
+        onCommentGuidelinesPress={onCommentGuidelinesPress}
+        onCommentsPress={onCommentsPress}
+        onRelatedArticlePress={onRelatedArticlePress}
+        onTopicPress={onTopicPress}
+      />
+    </Gutter>
   );
 
   const dropcapsDisabled = isDropcapsDisabled(data);
-
   const renderChild = render(renderers({ dropcapsDisabled, ...props }));
-  const Child = memo(({ item, index }) =>
-    renderChild(item, index.toString(), index)
+  // eslint-disable-next-line react/prop-types
+  const Child = ({ item, index }) => (
+    <Gutter style={{ overflow: "hidden" }}>
+      {item.name === "footer"
+        ? footer
+        : renderChild(item, index.toString(), index)}
+    </Gutter>
   );
 
-  const fixedContent = fixup(isTablet, content);
+  const fixedContent = [...fixup(isTablet, content), { name: "footer" }];
 
   return (
     <AdComposer adConfig={adConfig}>
       <View style={styles.articleContainer}>
         <Viewport.Tracker>
-          <VirtualizedList
+          <FlatList
             data={fixedContent}
+            ListEmptyComponent={Loading}
+            ListHeaderComponent={header}
+            ListFooterComponent={Loading}
+            onEndReached={onEndReached}
             showsVerticalScrollIndicator={false}
-            getItemCount={d => (d ? d.length + 2 : 0)}
-            getItem={(d, i) => {
-              if (i === 0) {
-                return "header";
-              }
-              if (i === d.length + 1) {
-                return "footer";
-              }
-              return d[i - 1];
-            }}
-            renderItem={childProps => (
-              <Gutter style={{ overflow: "hidden" }}>
-                {childProps.item === "header" && header}
-                {childProps.item === "footer" && <Footer />}
-                {typeof childProps.item === "object" && (
-                  <Child {...childProps} />
-                )}
-              </Gutter>
-            )}
-            keyExtractor={(item, index) => index.toString()}
-            onViewableItemsChanged={onViewed ? onViewableItemsChanged : null}
+            renderItem={Child}
+            onViewableItemsChanged={onViewableItemsChanged}
             removeClippedSubviews
-            initialNumToRender={3}
+            keyExtractor={(item, index) => index.toString()}
+            initialNumToRender={2}
             windowSize={3}
             nestedScrollEnabled
             testID="flat-list-article"

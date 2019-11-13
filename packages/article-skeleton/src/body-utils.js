@@ -7,14 +7,16 @@ const liftBreaks = paragraph => {
   for (let i = 0; i < children.length; i++) {
     const child = children[i];
     const breaks = (child.children || []).filter(c => c.name === "break");
-    children.splice(
-      i,
-      1,
-      ...breaks.concat({
-        ...child,
-        children: (child.children || []).filter(c => c.name !== "break")
-      })
-    );
+    if (breaks.length > 1) {
+      children.splice(
+        i,
+        1,
+        ...breaks.concat({
+          ...child,
+          children: (child.children || []).filter(c => c.name !== "break")
+        })
+      );
+    }
   }
   return {
     ...paragraph,

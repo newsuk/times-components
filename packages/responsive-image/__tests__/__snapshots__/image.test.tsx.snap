@@ -22,18 +22,10 @@ exports[`Image loads high-res 1`] = `
   }
 >
   <Image
-    fadeDuration={0}
-    loadingIndicatorSource={
-      Object {
-        "uri": "http://foo.com/bar.png?rel_width=1&rel_height=1&offline=true",
-      }
-    }
     onLayout={[Function]}
-    progressiveRenderingEnabled={true}
-    resizeMethod="resize"
     source={
       Object {
-        "uri": "http://foo.com/bar.png?rel_width=1&rel_height=1&offline=false&resize=1000",
+        "testUri": "../../../packages/responsive-image/assets/t.png",
       }
     }
     style={
@@ -54,12 +46,40 @@ exports[`Image loads high-res 1`] = `
             "width": "100%",
           },
           Object {
-            "resizeMode": "cover",
+            "resizeMode": "center",
           },
           Object {
             "borderRadius": 0,
           },
         ],
+      ]
+    }
+  />
+  <Image
+    fadeDuration={0}
+    resizeMethod="resize"
+    source={
+      Object {
+        "uri": "http://foo.com/bar.png?rel_width=1&rel_height=1&offline=false&resize=1000",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "aspectRatio": undefined,
+        },
+        Object {
+          "borderRadius": 0,
+        },
+        Object {
+          "width": "100%",
+        },
+        Object {
+          "resizeMode": "cover",
+        },
+        Object {
+          "borderRadius": 0,
+        },
       ]
     }
   />
@@ -86,18 +106,10 @@ exports[`Image renders 1`] = `
   }
 >
   <Image
-    fadeDuration={300}
-    loadingIndicatorSource={
-      Object {
-        "testUri": "../../../packages/responsive-image/assets/t.png",
-      }
-    }
     onLayout={[Function]}
-    progressiveRenderingEnabled={true}
-    resizeMethod="resize"
     source={
       Object {
-        "uri": "http://foo.com/bar.png?rel_width=1&rel_height=1&offline=true",
+        "testUri": "../../../packages/responsive-image/assets/t.png",
       }
     }
     style={
@@ -118,12 +130,40 @@ exports[`Image renders 1`] = `
             "width": "100%",
           },
           Object {
-            "resizeMode": undefined,
+            "resizeMode": "center",
           },
           Object {
             "borderRadius": 0,
           },
         ],
+      ]
+    }
+  />
+  <Image
+    fadeDuration={300}
+    resizeMethod="resize"
+    source={
+      Object {
+        "uri": "http://foo.com/bar.png?rel_width=1&rel_height=1&offline=true",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "aspectRatio": undefined,
+        },
+        Object {
+          "borderRadius": 0,
+        },
+        Object {
+          "width": "100%",
+        },
+        Object {
+          "resizeMode": undefined,
+        },
+        Object {
+          "borderRadius": 0,
+        },
       ]
     }
   />
@@ -150,18 +190,10 @@ exports[`Image respects resizeMode 1`] = `
   }
 >
   <Image
-    fadeDuration={300}
-    loadingIndicatorSource={
-      Object {
-        "testUri": "../../../packages/responsive-image/assets/t.png",
-      }
-    }
     onLayout={[Function]}
-    progressiveRenderingEnabled={true}
-    resizeMethod="resize"
     source={
       Object {
-        "uri": "http://foo.com/bar.png?rel_width=1&rel_height=1&offline=true",
+        "testUri": "../../../packages/responsive-image/assets/t.png",
       }
     }
     style={
@@ -182,12 +214,40 @@ exports[`Image respects resizeMode 1`] = `
             "width": "100%",
           },
           Object {
-            "resizeMode": undefined,
+            "resizeMode": "center",
           },
           Object {
             "borderRadius": 0,
           },
         ],
+      ]
+    }
+  />
+  <Image
+    fadeDuration={300}
+    resizeMethod="resize"
+    source={
+      Object {
+        "uri": "http://foo.com/bar.png?rel_width=1&rel_height=1&offline=true",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "aspectRatio": undefined,
+        },
+        Object {
+          "borderRadius": 0,
+        },
+        Object {
+          "width": "100%",
+        },
+        Object {
+          "resizeMode": undefined,
+        },
+        Object {
+          "borderRadius": 0,
+        },
       ]
     }
   />

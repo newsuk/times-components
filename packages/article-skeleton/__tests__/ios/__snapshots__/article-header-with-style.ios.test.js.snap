@@ -3,9 +3,17 @@
 exports[`1. article with header 1`] = `
 <View>
   <RCTScrollView
-    initialNumToRender={3}
+    ListHeaderComponent={
+      <Gutter>
+        <Header
+          width={750}
+        />
+      </Gutter>
+    }
+    initialNumToRender={2}
     maxToRenderPerBatch={10}
     nestedScrollEnabled={true}
+    numColumns={1}
     onEndReachedThreshold={2}
     removeClippedSubviews={true}
     scrollEventThrottle={50}
@@ -96,6 +104,16 @@ exports[`1. article with header 1`] = `
         </View>
       </View>
       <View />
+      <View>
+        <View>
+          <ActivityIndicator
+            animating={true}
+            color="#999999"
+            hidesWhenStopped={true}
+            size="large"
+          />
+        </View>
+      </View>
     </View>
   </RCTScrollView>
 </View>

@@ -74,7 +74,7 @@
     "tslint": "5.18.0",
     "tslint-config-prettier": "1.18.0",
     "tslint-immutable": "6.0.1",
-    "typescript": "3.5.3"
+    "typescript": "3.7.2"
   },
   "config": {
     "commitizen": {

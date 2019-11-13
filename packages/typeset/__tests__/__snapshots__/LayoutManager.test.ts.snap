@@ -1,1064 +1,2475 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`LayoutManager#layout(false, false) 1`] = `
+exports[`LayoutManager#layout() 1`] = `
 Array [
-  PositionedItem {
-    "position": Object {
-      "item": 0,
-      "line": 0,
-      "width": 51.1875,
-      "xOffset": 0,
+  Object {
+    "position": Point {
+      "x": 0,
+      "y": 0,
     },
-    "text": Object {
-      "text": AttributedString {
-        "attributes": Array [
-          Object {
-            "length": 5,
-            "start": 0,
-            "tag": Object {
-              "settings": Object {
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
-                "fontStyle": "normal",
-                "fontWeight": "normal",
-                "lineHeight": 30,
-              },
-              "tag": "FONT",
-            },
-          },
-        ],
-        "length": 5,
-        "split": [Function],
-        "string": "Lorem",
-      },
-      "type": "box",
-      "width": 51.1875,
-    },
-  },
-  PositionedItem {
-    "position": Object {
-      "item": 2,
-      "line": 0,
-      "width": 49.974609375,
-      "xOffset": 55.6435546875,
-    },
-    "text": Object {
-      "text": AttributedString {
-        "attributes": Array [
-          Object {
-            "length": 5,
-            "start": 0,
-            "tag": Object {
-              "settings": Object {
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
-                "fontStyle": "normal",
-                "fontWeight": "normal",
-                "lineHeight": 30,
-              },
-              "tag": "FONT",
-            },
-          },
-        ],
-        "length": 5,
-        "split": [Function],
-        "string": "Ipsum",
-      },
-      "type": "box",
-      "width": 49.974609375,
-    },
-  },
-  PositionedItem {
-    "position": Object {
-      "item": 4,
-      "line": 1,
-      "width": 13.6494140625,
-      "xOffset": 0,
-    },
-    "text": Object {
-      "text": AttributedString {
-        "attributes": Array [
-          Object {
-            "length": 2,
-            "start": 0,
-            "tag": Object {
-              "settings": Object {
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
-                "fontStyle": "normal",
-                "fontWeight": "normal",
-                "lineHeight": 30,
-              },
-              "tag": "FONT",
-            },
-          },
-        ],
-        "length": 2,
-        "split": [Function],
-        "string": "is",
-      },
-      "type": "box",
-      "width": 13.6494140625,
-    },
-  },
-  PositionedItem {
-    "position": Object {
-      "item": 6,
-      "line": 1,
-      "width": 52.4091796875,
-      "xOffset": 18.10546875,
-    },
-    "text": Object {
-      "text": AttributedString {
-        "attributes": Array [
-          Object {
-            "length": 6,
-            "start": 0,
-            "tag": Object {
-              "settings": Object {
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
-                "fontStyle": "normal",
-                "fontWeight": "normal",
-                "lineHeight": 30,
-              },
-              "tag": "FONT",
-            },
-          },
-        ],
-        "length": 6,
-        "split": [Function],
-        "string": "simply",
-      },
-      "type": "box",
-      "width": 52.4091796875,
-    },
-  },
-  PositionedItem {
-    "position": Object {
-      "item": 8,
-      "line": 2,
-      "width": 60.1435546875,
-      "xOffset": 0,
-    },
-    "text": Object {
-      "text": AttributedString {
-        "attributes": Array [
-          Object {
-            "length": 5,
-            "start": 0,
-            "tag": Object {
-              "settings": Object {
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
-                "fontStyle": "normal",
-                "fontWeight": "normal",
-                "lineHeight": 30,
-              },
-              "tag": "FONT",
-            },
-          },
-        ],
-        "length": 5,
-        "split": [Function],
-        "string": "dummy",
-      },
-      "type": "box",
-      "width": 60.1435546875,
-    },
-  },
-  PositionedItem {
-    "position": Object {
-      "item": 10,
-      "line": 2,
-      "width": 30.216796875,
-      "xOffset": 64.599609375,
-    },
-    "text": Object {
-      "text": AttributedString {
-        "attributes": Array [
-          Object {
-            "length": 4,
-            "start": 0,
-            "tag": Object {
-              "settings": Object {
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
-                "fontStyle": "normal",
-                "fontWeight": "normal",
-                "lineHeight": 30,
-              },
-              "tag": "FONT",
-            },
-          },
-        ],
-        "length": 4,
-        "split": [Function],
-        "string": "text",
-      },
-      "type": "box",
-      "width": 30.216796875,
-    },
-  },
-]
-`;
-
-exports[`LayoutManager#layout(false, true) 1`] = `
-Array [
-  PositionedItem {
-    "position": Object {
-      "item": 0,
-      "line": 0,
-      "width": 51.1875,
-      "xOffset": 0,
-    },
-    "text": Object {
-      "text": AttributedString {
-        "attributes": Array [
-          Object {
-            "length": 5,
-            "start": 0,
-            "tag": Object {
-              "settings": Object {
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
-                "fontStyle": "normal",
-                "fontWeight": "normal",
-                "lineHeight": 30,
-              },
-              "tag": "FONT",
-            },
-          },
-        ],
-        "length": 5,
-        "parent": AttributedString {
-          "attributes": Array [
-            Object {
-              "length": 5,
-              "start": 0,
-              "tag": Object {
-                "settings": Object {
-                  "fontFamily": "TimesDigitalW04",
-                  "fontSize": 18,
-                  "fontStyle": "normal",
-                  "fontWeight": "normal",
-                  "lineHeight": 30,
-                },
-                "tag": "FONT",
-              },
-            },
-          ],
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
           "length": 5,
-          "split": [Function],
-          "string": "Lorem",
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
         },
-        "split": [Function],
-        "string": "Lorem",
-      },
-      "type": "box",
-      "width": 51.1875,
+      ],
+      "length": 5,
+      "split": [Function],
+      "string": "Lorem",
     },
   },
-  PositionedItem {
-    "position": Object {
-      "item": 2,
-      "line": 0,
-      "width": 49.974609375,
-      "xOffset": 55.6435546875,
+  Object {
+    "position": Point {
+      "x": 55.6435546875,
+      "y": 0,
     },
-    "text": Object {
-      "text": AttributedString {
-        "attributes": Array [
-          Object {
-            "length": 5,
-            "start": 0,
-            "tag": Object {
-              "settings": Object {
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
-                "fontStyle": "normal",
-                "fontWeight": "normal",
-                "lineHeight": 30,
-              },
-              "tag": "FONT",
-            },
-          },
-        ],
-        "length": 5,
-        "parent": AttributedString {
-          "attributes": Array [
-            Object {
-              "length": 5,
-              "start": 0,
-              "tag": Object {
-                "settings": Object {
-                  "fontFamily": "TimesDigitalW04",
-                  "fontSize": 18,
-                  "fontStyle": "normal",
-                  "fontWeight": "normal",
-                  "lineHeight": 30,
-                },
-                "tag": "FONT",
-              },
-            },
-          ],
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
           "length": 5,
-          "split": [Function],
-          "string": "Ipsum",
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
         },
-        "split": [Function],
-        "string": "Ipsum",
-      },
-      "type": "box",
-      "width": 49.974609375,
+      ],
+      "length": 5,
+      "split": [Function],
+      "string": "Ipsum",
     },
   },
-  PositionedItem {
-    "position": Object {
-      "item": 4,
-      "line": 1,
-      "width": 13.6494140625,
-      "xOffset": 0,
+  Object {
+    "position": Point {
+      "x": 110.07421875,
+      "y": 0,
     },
-    "text": Object {
-      "text": AttributedString {
-        "attributes": Array [
-          Object {
-            "length": 2,
-            "start": 0,
-            "tag": Object {
-              "settings": Object {
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
-                "fontStyle": "normal",
-                "fontWeight": "normal",
-                "lineHeight": 30,
-              },
-              "tag": "FONT",
-            },
-          },
-        ],
-        "length": 2,
-        "parent": AttributedString {
-          "attributes": Array [
-            Object {
-              "length": 2,
-              "start": 0,
-              "tag": Object {
-                "settings": Object {
-                  "fontFamily": "TimesDigitalW04",
-                  "fontSize": 18,
-                  "fontStyle": "normal",
-                  "fontWeight": "normal",
-                  "lineHeight": 30,
-                },
-                "tag": "FONT",
-              },
-            },
-          ],
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
           "length": 2,
-          "split": [Function],
-          "string": "is",
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
         },
-        "split": [Function],
-        "string": "is",
-      },
-      "type": "box",
-      "width": 13.6494140625,
+      ],
+      "length": 2,
+      "split": [Function],
+      "string": "is",
     },
   },
-  PositionedItem {
-    "position": Object {
-      "item": 6,
-      "line": 1,
-      "width": 52.4091796875,
-      "xOffset": 18.10546875,
+  Object {
+    "position": Point {
+      "x": 128.1796875,
+      "y": 0,
     },
-    "text": Object {
-      "text": AttributedString {
-        "attributes": Array [
-          Object {
-            "length": 6,
-            "start": 0,
-            "tag": Object {
-              "settings": Object {
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
-                "fontStyle": "normal",
-                "fontWeight": "normal",
-                "lineHeight": 30,
-              },
-              "tag": "FONT",
-            },
-          },
-        ],
-        "length": 6,
-        "parent": AttributedString {
-          "attributes": Array [
-            Object {
-              "length": 6,
-              "start": 0,
-              "tag": Object {
-                "settings": Object {
-                  "fontFamily": "TimesDigitalW04",
-                  "fontSize": 18,
-                  "fontStyle": "normal",
-                  "fontWeight": "normal",
-                  "lineHeight": 30,
-                },
-                "tag": "FONT",
-              },
-            },
-          ],
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
           "length": 6,
-          "split": [Function],
-          "string": "simply",
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
         },
-        "split": [Function],
-        "string": "simply",
-      },
-      "type": "box",
-      "width": 52.4091796875,
+      ],
+      "length": 6,
+      "split": [Function],
+      "string": "simply",
     },
   },
-  PositionedItem {
-    "position": Object {
-      "item": 8,
-      "line": 2,
-      "width": 60.1435546875,
-      "xOffset": 0,
+  Object {
+    "position": Point {
+      "x": 185.044921875,
+      "y": 0,
     },
-    "text": Object {
-      "text": AttributedString {
-        "attributes": Array [
-          Object {
-            "length": 5,
-            "start": 0,
-            "tag": Object {
-              "settings": Object {
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
-                "fontStyle": "normal",
-                "fontWeight": "normal",
-                "lineHeight": 30,
-              },
-              "tag": "FONT",
-            },
-          },
-        ],
-        "length": 5,
-        "parent": AttributedString {
-          "attributes": Array [
-            Object {
-              "length": 5,
-              "start": 0,
-              "tag": Object {
-                "settings": Object {
-                  "fontFamily": "TimesDigitalW04",
-                  "fontSize": 18,
-                  "fontStyle": "normal",
-                  "fontWeight": "normal",
-                  "lineHeight": 30,
-                },
-                "tag": "FONT",
-              },
-            },
-          ],
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
           "length": 5,
-          "split": [Function],
-          "string": "dummy",
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
         },
-        "split": [Function],
-        "string": "dummy",
-      },
-      "type": "box",
-      "width": 60.1435546875,
+      ],
+      "length": 5,
+      "split": [Function],
+      "string": "dummy",
     },
   },
-  PositionedItem {
-    "position": Object {
-      "item": 10,
-      "line": 2,
-      "width": 30.216796875,
-      "xOffset": 64.599609375,
+  Object {
+    "position": Point {
+      "x": 249.64453125,
+      "y": 0,
     },
-    "text": Object {
-      "text": AttributedString {
-        "attributes": Array [
-          Object {
-            "length": 4,
-            "start": 0,
-            "tag": Object {
-              "settings": Object {
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
-                "fontStyle": "normal",
-                "fontWeight": "normal",
-                "lineHeight": 30,
-              },
-              "tag": "FONT",
-            },
-          },
-        ],
-        "length": 4,
-        "parent": AttributedString {
-          "attributes": Array [
-            Object {
-              "length": 4,
-              "start": 0,
-              "tag": Object {
-                "settings": Object {
-                  "fontFamily": "TimesDigitalW04",
-                  "fontSize": 18,
-                  "fontStyle": "normal",
-                  "fontWeight": "normal",
-                  "lineHeight": 30,
-                },
-                "tag": "FONT",
-              },
-            },
-          ],
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
           "length": 4,
-          "split": [Function],
-          "string": "text",
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
         },
-        "split": [Function],
-        "string": "text",
-      },
-      "type": "box",
-      "width": 30.216796875,
+      ],
+      "length": 4,
+      "split": [Function],
+      "string": "text",
     },
   },
-]
-`;
-
-exports[`LayoutManager#layout(true, false) 1`] = `
-Array [
-  PositionedItem {
-    "position": Object {
-      "item": 0,
-      "line": 0,
-      "width": 51.1875,
-      "xOffset": 0,
+  Object {
+    "position": Point {
+      "x": 284.3173828125,
+      "y": 0,
     },
-    "text": Object {
-      "text": AttributedString {
-        "attributes": Array [
-          Object {
-            "length": 5,
-            "start": 0,
-            "tag": Object {
-              "settings": Object {
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
-                "fontStyle": "normal",
-                "fontWeight": "normal",
-                "lineHeight": 30,
-              },
-              "tag": "FONT",
-            },
-          },
-        ],
-        "length": 5,
-        "split": [Function],
-        "string": "Lorem",
-      },
-      "type": "box",
-      "width": 51.1875,
-    },
-  },
-  PositionedItem {
-    "position": Object {
-      "item": 2,
-      "line": 0,
-      "width": 49.974609375,
-      "xOffset": 55.6435546875,
-    },
-    "text": Object {
-      "text": AttributedString {
-        "attributes": Array [
-          Object {
-            "length": 5,
-            "start": 0,
-            "tag": Object {
-              "settings": Object {
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
-                "fontStyle": "normal",
-                "fontWeight": "normal",
-                "lineHeight": 30,
-              },
-              "tag": "FONT",
-            },
-          },
-        ],
-        "length": 5,
-        "split": [Function],
-        "string": "Ipsum",
-      },
-      "type": "box",
-      "width": 49.974609375,
-    },
-  },
-  PositionedItem {
-    "position": Object {
-      "item": 4,
-      "line": 1,
-      "width": 13.6494140625,
-      "xOffset": 0,
-    },
-    "text": Object {
-      "text": AttributedString {
-        "attributes": Array [
-          Object {
-            "length": 2,
-            "start": 0,
-            "tag": Object {
-              "settings": Object {
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
-                "fontStyle": "normal",
-                "fontWeight": "normal",
-                "lineHeight": 30,
-              },
-              "tag": "FONT",
-            },
-          },
-        ],
-        "length": 2,
-        "split": [Function],
-        "string": "is",
-      },
-      "type": "box",
-      "width": 13.6494140625,
-    },
-  },
-  PositionedItem {
-    "position": Object {
-      "item": 6,
-      "line": 1,
-      "width": 52.4091796875,
-      "xOffset": 47.5908203125,
-    },
-    "text": Object {
-      "text": AttributedString {
-        "attributes": Array [
-          Object {
-            "length": 6,
-            "start": 0,
-            "tag": Object {
-              "settings": Object {
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
-                "fontStyle": "normal",
-                "fontWeight": "normal",
-                "lineHeight": 30,
-              },
-              "tag": "FONT",
-            },
-          },
-        ],
-        "length": 6,
-        "split": [Function],
-        "string": "simply",
-      },
-      "type": "box",
-      "width": 52.4091796875,
-    },
-  },
-  PositionedItem {
-    "position": Object {
-      "item": 8,
-      "line": 2,
-      "width": 60.1435546875,
-      "xOffset": 0,
-    },
-    "text": Object {
-      "text": AttributedString {
-        "attributes": Array [
-          Object {
-            "length": 5,
-            "start": 0,
-            "tag": Object {
-              "settings": Object {
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
-                "fontStyle": "normal",
-                "fontWeight": "normal",
-                "lineHeight": 30,
-              },
-              "tag": "FONT",
-            },
-          },
-        ],
-        "length": 5,
-        "split": [Function],
-        "string": "dummy",
-      },
-      "type": "box",
-      "width": 60.1435546875,
-    },
-  },
-  PositionedItem {
-    "position": Object {
-      "item": 10,
-      "line": 2,
-      "width": 30.216796875,
-      "xOffset": 69.783203125,
-    },
-    "text": Object {
-      "text": AttributedString {
-        "attributes": Array [
-          Object {
-            "length": 4,
-            "start": 0,
-            "tag": Object {
-              "settings": Object {
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
-                "fontStyle": "normal",
-                "fontWeight": "normal",
-                "lineHeight": 30,
-              },
-              "tag": "FONT",
-            },
-          },
-        ],
-        "length": 4,
-        "split": [Function],
-        "string": "text",
-      },
-      "type": "box",
-      "width": 30.216796875,
-    },
-  },
-]
-`;
-
-exports[`LayoutManager#layout(true, true) 1`] = `
-Array [
-  PositionedItem {
-    "position": Object {
-      "item": 0,
-      "line": 0,
-      "width": 51.1875,
-      "xOffset": 0,
-    },
-    "text": Object {
-      "text": AttributedString {
-        "attributes": Array [
-          Object {
-            "length": 5,
-            "start": 0,
-            "tag": Object {
-              "settings": Object {
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
-                "fontStyle": "normal",
-                "fontWeight": "normal",
-                "lineHeight": 30,
-              },
-              "tag": "FONT",
-            },
-          },
-        ],
-        "length": 5,
-        "parent": AttributedString {
-          "attributes": Array [
-            Object {
-              "length": 5,
-              "start": 0,
-              "tag": Object {
-                "settings": Object {
-                  "fontFamily": "TimesDigitalW04",
-                  "fontSize": 18,
-                  "fontStyle": "normal",
-                  "fontWeight": "normal",
-                  "lineHeight": 30,
-                },
-                "tag": "FONT",
-              },
-            },
-          ],
-          "length": 5,
-          "split": [Function],
-          "string": "Lorem",
-        },
-        "split": [Function],
-        "string": "Lorem",
-      },
-      "type": "box",
-      "width": 51.1875,
-    },
-  },
-  PositionedItem {
-    "position": Object {
-      "item": 2,
-      "line": 0,
-      "width": 49.974609375,
-      "xOffset": 55.6435546875,
-    },
-    "text": Object {
-      "text": AttributedString {
-        "attributes": Array [
-          Object {
-            "length": 5,
-            "start": 0,
-            "tag": Object {
-              "settings": Object {
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
-                "fontStyle": "normal",
-                "fontWeight": "normal",
-                "lineHeight": 30,
-              },
-              "tag": "FONT",
-            },
-          },
-        ],
-        "length": 5,
-        "parent": AttributedString {
-          "attributes": Array [
-            Object {
-              "length": 5,
-              "start": 0,
-              "tag": Object {
-                "settings": Object {
-                  "fontFamily": "TimesDigitalW04",
-                  "fontSize": 18,
-                  "fontStyle": "normal",
-                  "fontWeight": "normal",
-                  "lineHeight": 30,
-                },
-                "tag": "FONT",
-              },
-            },
-          ],
-          "length": 5,
-          "split": [Function],
-          "string": "Ipsum",
-        },
-        "split": [Function],
-        "string": "Ipsum",
-      },
-      "type": "box",
-      "width": 49.974609375,
-    },
-  },
-  PositionedItem {
-    "position": Object {
-      "item": 4,
-      "line": 1,
-      "width": 13.6494140625,
-      "xOffset": 0,
-    },
-    "text": Object {
-      "text": AttributedString {
-        "attributes": Array [
-          Object {
-            "length": 2,
-            "start": 0,
-            "tag": Object {
-              "settings": Object {
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
-                "fontStyle": "normal",
-                "fontWeight": "normal",
-                "lineHeight": 30,
-              },
-              "tag": "FONT",
-            },
-          },
-        ],
-        "length": 2,
-        "parent": AttributedString {
-          "attributes": Array [
-            Object {
-              "length": 2,
-              "start": 0,
-              "tag": Object {
-                "settings": Object {
-                  "fontFamily": "TimesDigitalW04",
-                  "fontSize": 18,
-                  "fontStyle": "normal",
-                  "fontWeight": "normal",
-                  "lineHeight": 30,
-                },
-                "tag": "FONT",
-              },
-            },
-          ],
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
           "length": 2,
-          "split": [Function],
-          "string": "is",
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
         },
-        "split": [Function],
-        "string": "is",
-      },
-      "type": "box",
-      "width": 13.6494140625,
+      ],
+      "length": 2,
+      "split": [Function],
+      "string": "of",
     },
   },
-  PositionedItem {
-    "position": Object {
-      "item": 6,
-      "line": 1,
-      "width": 52.4091796875,
-      "xOffset": 47.5908203125,
+  Object {
+    "position": Point {
+      "x": 305.2880859375,
+      "y": 0,
     },
-    "text": Object {
-      "text": AttributedString {
-        "attributes": Array [
-          Object {
-            "length": 6,
-            "start": 0,
-            "tag": Object {
-              "settings": Object {
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
-                "fontStyle": "normal",
-                "fontWeight": "normal",
-                "lineHeight": 30,
-              },
-              "tag": "FONT",
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 3,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
             },
+            "tag": "FONT",
           },
-        ],
-        "length": 6,
-        "parent": AttributedString {
-          "attributes": Array [
-            Object {
-              "length": 6,
-              "start": 0,
-              "tag": Object {
-                "settings": Object {
-                  "fontFamily": "TimesDigitalW04",
-                  "fontSize": 18,
-                  "fontStyle": "normal",
-                  "fontWeight": "normal",
-                  "lineHeight": 30,
-                },
-                "tag": "FONT",
-              },
-            },
-          ],
-          "length": 6,
-          "split": [Function],
-          "string": "simply",
         },
-        "split": [Function],
-        "string": "simply",
-      },
-      "type": "box",
-      "width": 52.4091796875,
+      ],
+      "length": 3,
+      "split": [Function],
+      "string": "the",
     },
   },
-  PositionedItem {
-    "position": Object {
-      "item": 8,
-      "line": 2,
-      "width": 60.1435546875,
-      "xOffset": 0,
+  Object {
+    "position": Point {
+      "x": 335.07421875,
+      "y": 0,
     },
-    "text": Object {
-      "text": AttributedString {
-        "attributes": Array [
-          Object {
-            "length": 5,
-            "start": 0,
-            "tag": Object {
-              "settings": Object {
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
-                "fontStyle": "normal",
-                "fontWeight": "normal",
-                "lineHeight": 30,
-              },
-              "tag": "FONT",
+    "text": AttributedString {
+      "attributes": Array [],
+      "length": 1,
+      "split": [Function],
+      "string": "
+",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 339.5302734375,
+      "y": 0,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 8,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
             },
+            "tag": "FONT",
           },
-        ],
-        "length": 5,
-        "parent": AttributedString {
-          "attributes": Array [
-            Object {
-              "length": 5,
-              "start": 0,
-              "tag": Object {
-                "settings": Object {
-                  "fontFamily": "TimesDigitalW04",
-                  "fontSize": 18,
-                  "fontStyle": "normal",
-                  "fontWeight": "normal",
-                  "lineHeight": 30,
-                },
-                "tag": "FONT",
-              },
+        },
+      ],
+      "length": 8,
+      "split": [Function],
+      "string": "printing",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 404.75390625,
+      "y": 0,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 3,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
             },
-          ],
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 3,
+      "split": [Function],
+      "string": "and",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 0,
+      "y": 30,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 11,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 11,
+      "split": [Function],
+      "string": "typesetting",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 93.462890625,
+      "y": 30,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 9,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 9,
+      "split": [Function],
+      "string": "industry.",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 166.0166015625,
+      "y": 30,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
           "length": 5,
-          "split": [Function],
-          "string": "dummy",
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
         },
-        "split": [Function],
-        "string": "dummy",
-      },
-      "type": "box",
-      "width": 60.1435546875,
+      ],
+      "length": 5,
+      "split": [Function],
+      "string": "Lorem",
     },
   },
-  PositionedItem {
-    "position": Object {
-      "item": 10,
-      "line": 2,
-      "width": 30.216796875,
-      "xOffset": 69.783203125,
+  Object {
+    "position": Point {
+      "x": 221.66015625,
+      "y": 30,
     },
-    "text": Object {
-      "text": AttributedString {
-        "attributes": Array [
-          Object {
-            "length": 4,
-            "start": 0,
-            "tag": Object {
-              "settings": Object {
-                "fontFamily": "TimesDigitalW04",
-                "fontSize": 18,
-                "fontStyle": "normal",
-                "fontWeight": "normal",
-                "lineHeight": 30,
-              },
-              "tag": "FONT",
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 5,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
             },
+            "tag": "FONT",
           },
-        ],
-        "length": 4,
-        "parent": AttributedString {
-          "attributes": Array [
-            Object {
-              "length": 4,
-              "start": 0,
-              "tag": Object {
-                "settings": Object {
-                  "fontFamily": "TimesDigitalW04",
-                  "fontSize": 18,
-                  "fontStyle": "normal",
-                  "fontWeight": "normal",
-                  "lineHeight": 30,
-                },
-                "tag": "FONT",
-              },
-            },
-          ],
-          "length": 4,
-          "split": [Function],
-          "string": "text",
         },
-        "split": [Function],
-        "string": "text",
-      },
-      "type": "box",
-      "width": 30.216796875,
+      ],
+      "length": 5,
+      "split": [Function],
+      "string": "Ipsum",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 276.0908203125,
+      "y": 30,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 3,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 3,
+      "split": [Function],
+      "string": "has",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 309.533203125,
+      "y": 30,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 4,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 4,
+      "split": [Function],
+      "string": "been",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 353.091796875,
+      "y": 30,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 3,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 3,
+      "split": [Function],
+      "string": "the",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 382.8779296875,
+      "y": 30,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 10,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 10,
+      "split": [Function],
+      "string": "industry's",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 0,
+      "y": 60,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 8,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 8,
+      "split": [Function],
+      "string": "standard",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 75.357421875,
+      "y": 60,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 5,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 5,
+      "split": [Function],
+      "string": "dummy",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 139.95703125,
+      "y": 60,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 4,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 4,
+      "split": [Function],
+      "string": "text",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 174.6298828125,
+      "y": 60,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 4,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 4,
+      "split": [Function],
+      "string": "ever",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 212.7392578125,
+      "y": 60,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 5,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 5,
+      "split": [Function],
+      "string": "since",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 259.734375,
+      "y": 60,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 3,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 3,
+      "split": [Function],
+      "string": "the",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 289.5205078125,
+      "y": 60,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 6,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 6,
+      "split": [Function],
+      "string": "1500s,",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 347.220703125,
+      "y": 60,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 4,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 4,
+      "split": [Function],
+      "string": "when",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 394.5849609375,
+      "y": 60,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 2,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 2,
+      "split": [Function],
+      "string": "an",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 418.763671875,
+      "y": 60,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 7,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 7,
+      "split": [Function],
+      "string": "unknown",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 0,
+      "y": 90,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 7,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 7,
+      "split": [Function],
+      "string": "printer",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 56.4521484375,
+      "y": 90,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 4,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 4,
+      "split": [Function],
+      "string": "took",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 96.2666015625,
+      "y": 90,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 1,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 1,
+      "split": [Function],
+      "string": "a",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 110.513671875,
+      "y": 90,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 6,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 6,
+      "split": [Function],
+      "string": "galley",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 161.5341796875,
+      "y": 90,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 2,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 2,
+      "split": [Function],
+      "string": "of",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 182.5048828125,
+      "y": 90,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 4,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 4,
+      "split": [Function],
+      "string": "type",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 220.9921875,
+      "y": 90,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 3,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 3,
+      "split": [Function],
+      "string": "and",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 255.322265625,
+      "y": 90,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 9,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 9,
+      "split": [Function],
+      "string": "scrambled",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 343.9423828125,
+      "y": 90,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 2,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 2,
+      "split": [Function],
+      "string": "it",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 358.646484375,
+      "y": 90,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 2,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 2,
+      "split": [Function],
+      "string": "to",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 379.072265625,
+      "y": 90,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 4,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 4,
+      "split": [Function],
+      "string": "make",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 427.5791015625,
+      "y": 90,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 1,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 1,
+      "split": [Function],
+      "string": "a",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 441.826171875,
+      "y": 90,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 4,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 4,
+      "split": [Function],
+      "string": "type",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 0,
+      "y": 120,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 8,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 8,
+      "split": [Function],
+      "string": "specimen",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 82.40625,
+      "y": 120,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 5,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 5,
+      "split": [Function],
+      "string": "book.",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 131.3525390625,
+      "y": 120,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 2,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 2,
+      "split": [Function],
+      "string": "It",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 146.583984375,
+      "y": 120,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 3,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 3,
+      "split": [Function],
+      "string": "has",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 180.0263671875,
+      "y": 120,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 8,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 8,
+      "split": [Function],
+      "string": "survived",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 251.314453125,
+      "y": 120,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 3,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 3,
+      "split": [Function],
+      "string": "not",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 281.84765625,
+      "y": 120,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 4,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 4,
+      "split": [Function],
+      "string": "only",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 319.3857421875,
+      "y": 120,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 4,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 4,
+      "split": [Function],
+      "string": "five",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 352.599609375,
+      "y": 120,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 10,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 10,
+      "split": [Function],
+      "string": "centuries,",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 434.5576171875,
+      "y": 120,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 3,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 3,
+      "split": [Function],
+      "string": "but",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 464.9150390625,
+      "y": 120,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 4,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 4,
+      "split": [Function],
+      "string": "also",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 0,
+      "y": 150,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 3,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 3,
+      "split": [Function],
+      "string": "the",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 29.7861328125,
+      "y": 150,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 4,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 4,
+      "split": [Function],
+      "string": "leap",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 68.0361328125,
+      "y": 150,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 4,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 4,
+      "split": [Function],
+      "string": "into",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 102.76171875,
+      "y": 150,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 10,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 10,
+      "split": [Function],
+      "string": "electronic",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 185.8623046875,
+      "y": 150,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 12,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 12,
+      "split": [Function],
+      "string": "typesetting,",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 282.8583984375,
+      "y": 150,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 9,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 9,
+      "split": [Function],
+      "string": "remaining",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 367.0400390625,
+      "y": 150,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 11,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 11,
+      "split": [Function],
+      "string": "essentially",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 0,
+      "y": 180,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 10,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 10,
+      "split": [Function],
+      "string": "unchanged.",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 97.892578125,
+      "y": 180,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 2,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 2,
+      "split": [Function],
+      "string": "It",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 113.1240234375,
+      "y": 180,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 3,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 3,
+      "split": [Function],
+      "string": "was",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 150.1787109375,
+      "y": 180,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 11,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 11,
+      "split": [Function],
+      "string": "popularised",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 248.607421875,
+      "y": 180,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 2,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 2,
+      "split": [Function],
+      "string": "in",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 267.36328125,
+      "y": 180,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 3,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 3,
+      "split": [Function],
+      "string": "the",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 297.1494140625,
+      "y": 180,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 5,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 5,
+      "split": [Function],
+      "string": "1960s",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 351.31640625,
+      "y": 180,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 4,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 4,
+      "split": [Function],
+      "string": "with",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 389.4609375,
+      "y": 180,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 3,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 3,
+      "split": [Function],
+      "string": "the",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 419.2470703125,
+      "y": 180,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 7,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 7,
+      "split": [Function],
+      "string": "release",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 481.67578125,
+      "y": 180,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 2,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 2,
+      "split": [Function],
+      "string": "of",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 0,
+      "y": 210,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 8,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 8,
+      "split": [Function],
+      "string": "Letraset",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 69.78515625,
+      "y": 210,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 6,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 6,
+      "split": [Function],
+      "string": "sheets",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 127.669921875,
+      "y": 210,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 10,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 10,
+      "split": [Function],
+      "string": "containing",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 216.1142578125,
+      "y": 210,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 5,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 5,
+      "split": [Function],
+      "string": "Lorem",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 271.7578125,
+      "y": 210,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 5,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 5,
+      "split": [Function],
+      "string": "Ipsum",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 326.1884765625,
+      "y": 210,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 9,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 9,
+      "split": [Function],
+      "string": "passages,",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 411.3369140625,
+      "y": 210,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 3,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 3,
+      "split": [Function],
+      "string": "and",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 445.6669921875,
+      "y": 210,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 4,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 4,
+      "split": [Function],
+      "string": "more",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 0,
+      "y": 240,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 8,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 8,
+      "split": [Function],
+      "string": "recently",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 67.5703125,
+      "y": 240,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 4,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 4,
+      "split": [Function],
+      "string": "with",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 105.71484375,
+      "y": 240,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 7,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 7,
+      "split": [Function],
+      "string": "desktop",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 174.3310546875,
+      "y": 240,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 10,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 10,
+      "split": [Function],
+      "string": "publishing",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 261.2373046875,
+      "y": 240,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 8,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 8,
+      "split": [Function],
+      "string": "software",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 336.146484375,
+      "y": 240,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 4,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 4,
+      "split": [Function],
+      "string": "like",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 367.822265625,
+      "y": 240,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 5,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 5,
+      "split": [Function],
+      "string": "Aldus",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 0,
+      "y": 270,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 9,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 9,
+      "split": [Function],
+      "string": "PageMaker",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 95.220703125,
+      "y": 270,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 9,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 9,
+      "split": [Function],
+      "string": "including",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 172.2392578125,
+      "y": 270,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 8,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 8,
+      "split": [Function],
+      "string": "versions",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 244.0546875,
+      "y": 270,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 2,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 2,
+      "split": [Function],
+      "string": "of",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 265.025390625,
+      "y": 270,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 5,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 5,
+      "split": [Function],
+      "string": "Lorem",
+    },
+  },
+  Object {
+    "position": Point {
+      "x": 320.6689453125,
+      "y": 270,
+    },
+    "text": AttributedString {
+      "attributes": Array [
+        Object {
+          "length": 6,
+          "start": 0,
+          "tag": Object {
+            "settings": Object {
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 18,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 30,
+            },
+            "tag": "FONT",
+          },
+        },
+      ],
+      "length": 6,
+      "split": [Function],
+      "string": "Ipsum.",
     },
   },
 ]

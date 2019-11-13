@@ -1,10 +1,11 @@
-import { LayoutItem, TexItem } from 'tex-linebreak';
+import AttributedString from './AttributedString';
+import Point from './Point';
 
 export default class PositionedItem {
-  public text: TexItem;
-  public position: LayoutItem;
+  public text: AttributedString;
+  public position: Point;
 
-  constructor(text: TexItem, position: LayoutItem) {
+  constructor(text: AttributedString, position: Point) {
     this.text = text;
     this.position = position;
   }

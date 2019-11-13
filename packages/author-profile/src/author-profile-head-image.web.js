@@ -8,7 +8,6 @@ const AuthorProfileHeadImage = ({ uri }) => (
     aspectRatio={1}
     style={styles.authorPhoto}
     uri={uri}
-    rounded
     accessibilityLabel="author-image"
   />
 );

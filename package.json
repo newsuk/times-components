@@ -42,7 +42,7 @@
     "android:logs": "yarn android && react-native log-android",
     "android:app": "react-native start --config ./android-app/metro.config.js",
     "android:build-lib": "yarn android:build-lib:js && cd android-app && yarn build",
-    "android:build-lib:js": "mkdir -p android-app/xnative/src/main/assets/ && mkdir -p android-app/xnative/src/main/res/ && react-native ram-bundle --platform android --dev false --entry-file android-app/index.android.js --bundle-output android-app/xnative/src/main/assets/index.android.bundle --assets-dest android-app/xnative/src/main/res/",
+    "android:build-lib:js": "mkdir -p android-app/xnative/src/main/assets/ && mkdir -p android-app/xnative/src/main/res/ && react-native ram-bundle --platform android --dev false --minify --entry-file android-app/index.android.js --bundle-output android-app/xnative/src/main/assets/index.android.bundle --assets-dest android-app/xnative/src/main/res/",
     "android:device": "./lib/setup_device_connections.sh && yarn android",
     "android:publish-lib": "lerna run --scope @times-components/android-app publish-library --stream",
     "prefmt": "prettier --write '**/*.{js,json}'",

@@ -50,7 +50,7 @@
     "jest": "24.8.0",
     "prettier": "1.14.3",
     "ts-jest": "23.10.4",
-    "typescript": "3.5.3",
+    "typescript": "3.7.2",
     "typings": "^2.1.1"
   },
   "publishConfig": {

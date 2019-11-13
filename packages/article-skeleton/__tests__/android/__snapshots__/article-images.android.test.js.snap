@@ -3,9 +3,17 @@
 exports[`1. a primary image 1`] = `
 <View>
   <RCTScrollView
-    initialNumToRender={3}
+    ListHeaderComponent={
+      <Gutter>
+        <Header
+          width={750}
+        />
+      </Gutter>
+    }
+    initialNumToRender={2}
     maxToRenderPerBatch={10}
     nestedScrollEnabled={true}
+    numColumns={1}
     onEndReachedThreshold={2}
     removeClippedSubviews={true}
     scrollEventThrottle={50}
@@ -42,9 +50,21 @@ exports[`1. a primary image 1`] = `
       </View>
       <View>
         <View>
-          <ArticleExtras
-            articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-            articleUrl="https://url.io"
+          <View>
+            <ArticleExtras
+              articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+              articleUrl="https://url.io"
+            />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View>
+          <ActivityIndicator
+            animating={true}
+            color={null}
+            hidesWhenStopped={true}
+            size="large"
           />
         </View>
       </View>
@@ -56,9 +76,17 @@ exports[`1. a primary image 1`] = `
 exports[`2. a fullwidth image 1`] = `
 <View>
   <RCTScrollView
-    initialNumToRender={3}
+    ListHeaderComponent={
+      <Gutter>
+        <Header
+          width={750}
+        />
+      </Gutter>
+    }
+    initialNumToRender={2}
     maxToRenderPerBatch={10}
     nestedScrollEnabled={true}
+    numColumns={1}
     onEndReachedThreshold={2}
     removeClippedSubviews={true}
     scrollEventThrottle={50}
@@ -95,9 +123,21 @@ exports[`2. a fullwidth image 1`] = `
       </View>
       <View>
         <View>
-          <ArticleExtras
-            articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-            articleUrl="https://url.io"
+          <View>
+            <ArticleExtras
+              articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+              articleUrl="https://url.io"
+            />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View>
+          <ActivityIndicator
+            animating={true}
+            color={null}
+            hidesWhenStopped={true}
+            size="large"
           />
         </View>
       </View>
@@ -109,9 +149,17 @@ exports[`2. a fullwidth image 1`] = `
 exports[`3. a secondary image 1`] = `
 <View>
   <RCTScrollView
-    initialNumToRender={3}
+    ListHeaderComponent={
+      <Gutter>
+        <Header
+          width={750}
+        />
+      </Gutter>
+    }
+    initialNumToRender={2}
     maxToRenderPerBatch={10}
     nestedScrollEnabled={true}
+    numColumns={1}
     onEndReachedThreshold={2}
     removeClippedSubviews={true}
     scrollEventThrottle={50}
@@ -148,9 +196,21 @@ exports[`3. a secondary image 1`] = `
       </View>
       <View>
         <View>
-          <ArticleExtras
-            articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-            articleUrl="https://url.io"
+          <View>
+            <ArticleExtras
+              articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+              articleUrl="https://url.io"
+            />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View>
+          <ActivityIndicator
+            animating={true}
+            color={null}
+            hidesWhenStopped={true}
+            size="large"
           />
         </View>
       </View>
@@ -162,9 +222,17 @@ exports[`3. a secondary image 1`] = `
 exports[`4. an inline image 1`] = `
 <View>
   <RCTScrollView
-    initialNumToRender={3}
+    ListHeaderComponent={
+      <Gutter>
+        <Header
+          width={750}
+        />
+      </Gutter>
+    }
+    initialNumToRender={2}
     maxToRenderPerBatch={10}
     nestedScrollEnabled={true}
+    numColumns={1}
     onEndReachedThreshold={2}
     removeClippedSubviews={true}
     scrollEventThrottle={50}
@@ -201,9 +269,21 @@ exports[`4. an inline image 1`] = `
       </View>
       <View>
         <View>
-          <ArticleExtras
-            articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-            articleUrl="https://url.io"
+          <View>
+            <ArticleExtras
+              articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+              articleUrl="https://url.io"
+            />
+          </View>
+        </View>
+      </View>
+      <View>
+        <View>
+          <ActivityIndicator
+            animating={true}
+            color={null}
+            hidesWhenStopped={true}
+            size="large"
           />
         </View>
       </View>
