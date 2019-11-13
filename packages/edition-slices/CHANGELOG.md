@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.98.8](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.98.7...@times-components/edition-slices@0.98.8) (2019-11-13)
+
+
+### Bug Fixes
+
+* REPLAT-10301 fix bold in daily universal register ([#2381](https://github.com/newsuk/times-components/issues/2381)) ([91e4e5f](https://github.com/newsuk/times-components/commit/91e4e5f85c29a8d1e5882f7f14f9d982aba71454))
+
+
+
+
+
 ## [0.98.7](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.98.6...@times-components/edition-slices@0.98.7) (2019-11-13)
 
 **Note:** Version bump only for package @times-components/edition-slices
