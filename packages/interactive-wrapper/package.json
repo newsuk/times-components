@@ -1,6 +1,6 @@
 {
   "name": "@times-components/interactive-wrapper",
-  "version": "0.3.40",
+  "version": "0.3.41",
   "description": "Wrapper for legacy Interactive components",
   "main": "dist/interactive-wrapper",
   "dev": "src/interactive-wrapper",
@@ -58,7 +58,7 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/image": "6.4.40",
+    "@times-components/image": "6.4.41",
     "prop-types": "15.7.2",
     "react-native-webview": "7.0.5"
   },

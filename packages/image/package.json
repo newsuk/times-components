@@ -1,6 +1,6 @@
 {
   "name": "@times-components/image",
-  "version": "6.4.40",
+  "version": "6.4.41",
   "main": "dist/index",
   "dev": "src/index",
   "scripts": {
@@ -68,7 +68,7 @@
     "@times-components/gradient": "3.1.73",
     "@times-components/link": "3.4.59",
     "@times-components/responsive": "0.5.2",
-    "@times-components/responsive-image": "0.0.2",
+    "@times-components/responsive-image": "0.0.3",
     "@times-components/styleguide": "3.30.3",
     "@times-components/svgs": "2.7.28",
     "@times-components/utils": "5.1.6",

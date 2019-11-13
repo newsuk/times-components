@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.152](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.0.151...@times-components/author-profile@6.0.152) (2019-11-13)
+
+
+### Bug Fixes
+
+* (REPLAT-10300) performance regression fixes, fixes from review ([#2378](https://github.com/newsuk/times-components/issues/2378)) ([789e707](https://github.com/newsuk/times-components/commit/789e7078e2f1565706af74d29b0b581e3208d135))
+
+
+
+
+
 ## [6.0.151](https://github.com/newsuk/times-components/compare/@times-components/author-profile@6.0.150...@times-components/author-profile@6.0.151) (2019-11-08)
 
 **Note:** Version bump only for package @times-components/author-profile
