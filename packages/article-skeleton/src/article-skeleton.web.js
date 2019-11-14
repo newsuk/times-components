@@ -28,13 +28,6 @@ const adStyle = {
   marginBottom: 0
 };
 
-const maybeInsertDropcap = (content, template, dropcapsDisabled) => {
-  if (content && content.length > 0) {
-    return insertDropcapIntoAST(content, template, dropcapsDisabled);
-  }
-  return content;
-};
-
 class ArticleSkeleton extends Component {
   constructor(props) {
     super(props);
@@ -73,14 +66,14 @@ class ArticleSkeleton extends Component {
       headline,
       topics,
       relatedArticleSlice,
-      template,
       savingEnabled,
       sharingEnabled
     } = article;
+    let { template } = article;
 
     const { articleWidth } = this.state;
-    const newContent = maybeInsertDropcap(
-      [...content],
+    const newContent = content && content.length > 0 && insertDropcapIntoAST(
+      content,
       template,
       dropcapsDisabled
     );
@@ -143,7 +136,8 @@ class ArticleSkeleton extends Component {
                         ) : null}
                       </HeaderContainer>
                       <BodyContainer accessibilityRole="article">
-                        <ArticleBody
+                       {
+                         newContent && <ArticleBody
                           content={newContent}
                           contextUrl={url}
                           observed={observed}
@@ -151,6 +145,7 @@ class ArticleSkeleton extends Component {
                           section={section}
                           paidContentClassName={paidContentClassName}
                         />
+                       }
                         <ArticleExtras
                           analyticsStream={analyticsStream}
                           articleId={articleId}
