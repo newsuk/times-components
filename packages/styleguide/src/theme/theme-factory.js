@@ -19,7 +19,8 @@ const sectionColourPicker = (
     },
     mainstandard: {
       ...sectionColours
-    }
+    },
+    takeoverpage: {}
   };
 
   return config[template][section];
@@ -44,7 +45,8 @@ const magazineFontPicker = (
     magazinecomment: magazineSections,
     magazinestandard: magazineSections,
     maincomment: {},
-    mainstandard: {}
+    mainstandard: {},
+    takeoverpage: {}
   };
 
   return config[template][section] || defaultFont;
