@@ -241,6 +241,29 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
               >
                 last
               </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 141,
+                      "position": "absolute",
+                      "top": 52,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                week
+              </Text>
             </View>
           </View>
         </View>
