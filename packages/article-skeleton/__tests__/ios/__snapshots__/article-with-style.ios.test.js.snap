@@ -161,6 +161,23 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
               >
                 last
               </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                    "left": 141,
+                    "lineHeight": 52,
+                    "position": "absolute",
+                    "top": 52,
+                  }
+                }
+              >
+                week
+              </Text>
             </View>
           </View>
         </View>

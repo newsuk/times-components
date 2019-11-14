@@ -106,7 +106,7 @@ export default class LayoutManager {
     let span: Span | false | undefined;
     let item: MeasuredItem | undefined;
 
-    while (items.length) {
+    while (items.length || item) {
       if (!container) {
         container = containers.shift();
         if (!container) {
@@ -142,45 +142,6 @@ export default class LayoutManager {
         }
       }
     }
-
-    /*
-    let item: MeasuredItem | undefined;
-    spans: for (const span of spans) {
-      let x = span.start.x;
-      const end = span.end.x;
-      while (x < end) {
-        // handle orphans
-        if (item && item.text.string !== ' ' && item.width + x <= end) {
-          const positioned: PositionedItem = {
-            position: new Point(x, span.end.y),
-            text: item.text
-          };
-          result.push(positioned);
-          x += item.width;
-          item = undefined;
-        }
-        // proceed as normal
-        for (item of items) {
-          if (x === span.start.x && item.text.string === ' ') {
-            continue;
-          }
-          if (x + item.width <= end) {
-            if (item.text.string !== ' ') {
-              const positioned: PositionedItem = {
-                position: new Point(x, span.end.y),
-                text: item.text
-              };
-              result.push(positioned);
-            }
-            x += item.width;
-          } else {
-            continue spans;
-          }
-        }
-        break spans;
-      }
-    }
-    */
 
     return result;
   };
