@@ -107,50 +107,48 @@ class ArticleSkeleton extends Component {
           />
           <AdComposer adConfig={adConfig}>
             <Fragment>
-              <LazyLoad rootMargin={spacing(10)} threshold={0.5}>
-                {({ observed, registerNode }) => (
-                  <Fragment>
-                    <HeaderAdContainer key="headerAd">
-                      <Ad
-                        contextUrl={url}
-                        section={section}
-                        slotName="header"
-                        style={adStyle}
-                      />
-                    </HeaderAdContainer>
-                    <MainContainer accessibilityRole="main">
-                      <HeaderContainer>
-                        <Header width={articleWidth} />
-                        {savingEnabled || sharingEnabled ? (
-                          <UserState state={UserState.loggedInOrShared}>
-                            <MessageContext.Consumer>
-                              {({ showMessage }) => (
-                                <StickySaveAndShareBar
-                                  articleId={articleId}
-                                  articleHeadline={headline}
-                                  articleUrl={url}
-                                  onCopyLink={() =>
-                                    showMessage("Article link copied")
-                                  }
-                                  onSaveToMyArticles={() => {}}
-                                  onShareOnEmail={() => {}}
-                                  savingEnabled={savingEnabled}
-                                  sharingEnabled={sharingEnabled}
-                                />
-                              )}
-                            </MessageContext.Consumer>
-                          </UserState>
-                        ) : null}
-                      </HeaderContainer>
-                      <BodyContainer accessibilityRole="article">
-                        <ArticleBody
-                          content={newContent}
-                          contextUrl={url}
-                          observed={observed}
-                          registerNode={registerNode}
-                          section={section}
-                          paidContentClassName={paidContentClassName}
-                        />
+              <Fragment>
+                <HeaderAdContainer key="headerAd">
+                  <Ad
+                    contextUrl={url}
+                    section={section}
+                    slotName="header"
+                    style={adStyle}
+                  />
+                </HeaderAdContainer>
+                <MainContainer accessibilityRole="main">
+                  <HeaderContainer>
+                    <Header width={articleWidth} />
+                    {savingEnabled || sharingEnabled ? (
+                      <UserState state={UserState.loggedInOrShared}>
+                        <MessageContext.Consumer>
+                          {({ showMessage }) => (
+                            <StickySaveAndShareBar
+                              articleId={articleId}
+                              articleHeadline={headline}
+                              articleUrl={url}
+                              onCopyLink={() =>
+                                showMessage("Article link copied")
+                              }
+                              onSaveToMyArticles={() => {}}
+                              onShareOnEmail={() => {}}
+                              savingEnabled={savingEnabled}
+                              sharingEnabled={sharingEnabled}
+                            />
+                          )}
+                        </MessageContext.Consumer>
+                      </UserState>
+                    ) : null}
+                  </HeaderContainer>
+                  <BodyContainer accessibilityRole="article">
+                    <ArticleBody
+                      content={newContent}
+                      contextUrl={url}
+                      section={section}
+                      paidContentClassName={paidContentClassName}
+                    />
+                    <LazyLoad rootMargin={spacing(10)} threshold={0.5}>
+                      {({ observed, registerNode }) => (
                         <ArticleExtras
                           analyticsStream={analyticsStream}
                           articleId={articleId}
@@ -167,11 +165,11 @@ class ArticleSkeleton extends Component {
                           spotAccountId={spotAccountId}
                           topics={topics}
                         />
-                      </BodyContainer>
-                    </MainContainer>
-                  </Fragment>
-                )}
-              </LazyLoad>
+                      )}
+                    </LazyLoad>
+                  </BodyContainer>
+                </MainContainer>
+              </Fragment>
               <Ad contextUrl={url} section={section} slotName="pixel" />
               <Ad contextUrl={url} section={section} slotName="pixelteads" />
               <Ad contextUrl={url} section={section} slotName="pixelskin" />
