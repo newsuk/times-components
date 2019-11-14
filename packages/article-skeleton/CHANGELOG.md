@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.19.11](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.19.10...@times-components/article-skeleton@1.19.11) (2019-11-14)
+
+
+### Bug Fixes
+
+* loop condition error in refactor from REPLAT-10300 ([#2382](https://github.com/newsuk/times-components/issues/2382)) ([4002e5f](https://github.com/newsuk/times-components/commit/4002e5fb081eeb4baad706ba91e6bdc944d747d1))
+
+
+
+
+
 ## [1.19.10](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.19.9...@times-components/article-skeleton@1.19.10) (2019-11-13)
 
 
