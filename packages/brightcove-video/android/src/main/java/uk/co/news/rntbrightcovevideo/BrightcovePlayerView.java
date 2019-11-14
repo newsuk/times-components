@@ -2,7 +2,7 @@ package uk.co.news.rntbrightcovevideo;
 
 import android.content.Context;
 import android.graphics.Color;
-import androidx.annotation.NonNull;
+import android.support.annotation.NonNull;
 import android.view.SurfaceView;
 
 import com.brightcove.player.edge.Catalog;
