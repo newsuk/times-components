@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.30.4](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.30.3...@times-components/styleguide@3.30.4) (2019-11-14)
+
+
+### Bug Fixes
+
+* issue with takeover pages erroring ([#2383](https://github.com/newsuk/times-components/issues/2383)) ([62a6de5](https://github.com/newsuk/times-components/commit/62a6de5eca784641f9f18d9e278a82e4bc9edcef))
+
+
+
+
+
 ## [3.30.3](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.30.2...@times-components/styleguide@3.30.3) (2019-11-06)
 
 **Note:** Version bump only for package @times-components/styleguide
