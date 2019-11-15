@@ -4,131 +4,89 @@ exports[`TextContainer#calculateSpans(number) 1`] = `
 Array [
   Span {
     "container": TextContainer {
-      "calculateSpans": [Function],
       "exclusions": Array [],
       "height": 100,
-      "spans": [Circular],
+      "spanY": 120,
+      "spans": Array [],
       "width": 100,
       "x": 0,
       "y": 0,
     },
     "end": Point {
       "x": 100,
-      "y": 15,
+      "y": 0,
     },
     "start": Point {
       "x": 0,
-      "y": 15,
+      "y": 0,
     },
   },
   Span {
     "container": TextContainer {
-      "calculateSpans": [Function],
       "exclusions": Array [],
       "height": 100,
-      "spans": [Circular],
+      "spanY": 120,
+      "spans": Array [],
       "width": 100,
       "x": 0,
       "y": 0,
     },
     "end": Point {
       "x": 100,
-      "y": 45,
+      "y": 30,
     },
     "start": Point {
       "x": 0,
-      "y": 45,
+      "y": 30,
     },
   },
   Span {
     "container": TextContainer {
-      "calculateSpans": [Function],
       "exclusions": Array [],
       "height": 100,
-      "spans": [Circular],
+      "spanY": 120,
+      "spans": Array [],
       "width": 100,
       "x": 0,
       "y": 0,
     },
     "end": Point {
       "x": 100,
-      "y": 75,
+      "y": 60,
     },
     "start": Point {
       "x": 0,
-      "y": 75,
+      "y": 60,
+    },
+  },
+  Span {
+    "container": TextContainer {
+      "exclusions": Array [],
+      "height": 100,
+      "spanY": 120,
+      "spans": Array [],
+      "width": 100,
+      "x": 0,
+      "y": 0,
+    },
+    "end": Point {
+      "x": 100,
+      "y": 90,
+    },
+    "start": Point {
+      "x": 0,
+      "y": 90,
     },
   },
 ]
 `;
 
-exports[`TextContainer#calculateSpans(number) 2`] = `
-Array [
-  Span {
-    "container": TextContainer {
-      "calculateSpans": [Function],
-      "exclusions": Array [],
-      "height": 100,
-      "spans": [Circular],
-      "width": 100,
-      "x": 0,
-      "y": 0,
-    },
-    "end": Point {
-      "x": 100,
-      "y": 15,
-    },
-    "start": Point {
-      "x": 0,
-      "y": 15,
-    },
-  },
-  Span {
-    "container": TextContainer {
-      "calculateSpans": [Function],
-      "exclusions": Array [],
-      "height": 100,
-      "spans": [Circular],
-      "width": 100,
-      "x": 0,
-      "y": 0,
-    },
-    "end": Point {
-      "x": 100,
-      "y": 45,
-    },
-    "start": Point {
-      "x": 0,
-      "y": 45,
-    },
-  },
-  Span {
-    "container": TextContainer {
-      "calculateSpans": [Function],
-      "exclusions": Array [],
-      "height": 100,
-      "spans": [Circular],
-      "width": 100,
-      "x": 0,
-      "y": 0,
-    },
-    "end": Point {
-      "x": 100,
-      "y": 75,
-    },
-    "start": Point {
-      "x": 0,
-      "y": 75,
-    },
-  },
-]
-`;
+exports[`TextContainer#calculateSpans(number) 2`] = `Array []`;
 
 exports[`TextContainer(exclusions)#calculateSpans(number) 1`] = `
 Array [
   Span {
     "container": TextContainer {
-      "calculateSpans": [Function],
       "exclusions": Array [
         BoxExclusion {
           "height": 50,
@@ -138,23 +96,23 @@ Array [
         },
       ],
       "height": 100,
-      "spans": [Circular],
+      "spanY": 120,
+      "spans": Array [],
       "width": 100,
       "x": 0,
       "y": 0,
     },
     "end": Point {
       "x": 100,
-      "y": 15,
+      "y": 0,
     },
     "start": Point {
       "x": 50,
-      "y": 15,
+      "y": 0,
     },
   },
   Span {
     "container": TextContainer {
-      "calculateSpans": [Function],
       "exclusions": Array [
         BoxExclusion {
           "height": 50,
@@ -164,23 +122,23 @@ Array [
         },
       ],
       "height": 100,
-      "spans": [Circular],
+      "spanY": 120,
+      "spans": Array [],
       "width": 100,
       "x": 0,
       "y": 0,
     },
     "end": Point {
       "x": 100,
-      "y": 45,
+      "y": 30,
     },
     "start": Point {
       "x": 50,
-      "y": 45,
+      "y": 30,
     },
   },
   Span {
     "container": TextContainer {
-      "calculateSpans": [Function],
       "exclusions": Array [
         BoxExclusion {
           "height": 50,
@@ -190,18 +148,45 @@ Array [
         },
       ],
       "height": 100,
-      "spans": [Circular],
+      "spanY": 120,
+      "spans": Array [],
       "width": 100,
       "x": 0,
       "y": 0,
     },
     "end": Point {
       "x": 100,
-      "y": 75,
+      "y": 60,
     },
     "start": Point {
       "x": 0,
-      "y": 75,
+      "y": 60,
+    },
+  },
+  Span {
+    "container": TextContainer {
+      "exclusions": Array [
+        BoxExclusion {
+          "height": 50,
+          "width": 50,
+          "x": 0,
+          "y": 0,
+        },
+      ],
+      "height": 100,
+      "spanY": 120,
+      "spans": Array [],
+      "width": 100,
+      "x": 0,
+      "y": 0,
+    },
+    "end": Point {
+      "x": 100,
+      "y": 90,
+    },
+    "start": Point {
+      "x": 0,
+      "y": 90,
     },
   },
 ]
@@ -211,7 +196,6 @@ exports[`TextContainer(exclusions)#calculateSpans(number) 2`] = `
 Array [
   Span {
     "container": TextContainer {
-      "calculateSpans": [Function],
       "exclusions": Array [
         BoxExclusion {
           "height": 50,
@@ -227,23 +211,23 @@ Array [
         },
       ],
       "height": 100,
-      "spans": [Circular],
+      "spanY": 120,
+      "spans": Array [],
       "width": 200,
       "x": 0,
       "y": 0,
     },
     "end": Point {
       "x": 99,
-      "y": 15,
+      "y": 0,
     },
     "start": Point {
       "x": 50,
-      "y": 15,
+      "y": 0,
     },
   },
   Span {
     "container": TextContainer {
-      "calculateSpans": [Function],
       "exclusions": Array [
         BoxExclusion {
           "height": 50,
@@ -259,23 +243,23 @@ Array [
         },
       ],
       "height": 100,
-      "spans": [Circular],
+      "spanY": 120,
+      "spans": Array [],
       "width": 200,
       "x": 0,
       "y": 0,
     },
     "end": Point {
       "x": 200,
-      "y": 15,
+      "y": 0,
     },
     "start": Point {
       "x": 150,
-      "y": 15,
+      "y": 0,
     },
   },
   Span {
     "container": TextContainer {
-      "calculateSpans": [Function],
       "exclusions": Array [
         BoxExclusion {
           "height": 50,
@@ -291,23 +275,23 @@ Array [
         },
       ],
       "height": 100,
-      "spans": [Circular],
+      "spanY": 120,
+      "spans": Array [],
       "width": 200,
       "x": 0,
       "y": 0,
     },
     "end": Point {
       "x": 99,
-      "y": 45,
+      "y": 30,
     },
     "start": Point {
       "x": 50,
-      "y": 45,
+      "y": 30,
     },
   },
   Span {
     "container": TextContainer {
-      "calculateSpans": [Function],
       "exclusions": Array [
         BoxExclusion {
           "height": 50,
@@ -323,23 +307,23 @@ Array [
         },
       ],
       "height": 100,
-      "spans": [Circular],
+      "spanY": 120,
+      "spans": Array [],
       "width": 200,
       "x": 0,
       "y": 0,
     },
     "end": Point {
       "x": 200,
-      "y": 45,
+      "y": 30,
     },
     "start": Point {
       "x": 150,
-      "y": 45,
+      "y": 30,
     },
   },
   Span {
     "container": TextContainer {
-      "calculateSpans": [Function],
       "exclusions": Array [
         BoxExclusion {
           "height": 50,
@@ -355,18 +339,51 @@ Array [
         },
       ],
       "height": 100,
-      "spans": [Circular],
+      "spanY": 120,
+      "spans": Array [],
       "width": 200,
       "x": 0,
       "y": 0,
     },
     "end": Point {
       "x": 200,
-      "y": 75,
+      "y": 60,
     },
     "start": Point {
       "x": 0,
-      "y": 75,
+      "y": 60,
+    },
+  },
+  Span {
+    "container": TextContainer {
+      "exclusions": Array [
+        BoxExclusion {
+          "height": 50,
+          "width": 50,
+          "x": 0,
+          "y": 0,
+        },
+        BoxExclusion {
+          "height": 50,
+          "width": 50,
+          "x": 100,
+          "y": 0,
+        },
+      ],
+      "height": 100,
+      "spanY": 120,
+      "spans": Array [],
+      "width": 200,
+      "x": 0,
+      "y": 0,
+    },
+    "end": Point {
+      "x": 200,
+      "y": 90,
+    },
+    "start": Point {
+      "x": 0,
+      "y": 90,
     },
   },
 ]

@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.4](https://github.com/newsuk/times-components/compare/@times-components/responsive-image@0.0.3...@times-components/responsive-image@0.0.4) (2019-11-14)
+
+
+### Bug Fixes
+
+* the watch command ([#2384](https://github.com/newsuk/times-components/issues/2384)) ([3a9e9a3](https://github.com/newsuk/times-components/commit/3a9e9a3caed007aba2d9f981abe72efd1e513d05))
+
+
+
+
+
+## [0.0.3](https://github.com/newsuk/times-components/compare/@times-components/responsive-image@0.0.2...@times-components/responsive-image@0.0.3) (2019-11-13)
+
+
+### Bug Fixes
+
+* (REPLAT-10300) performance regression fixes, fixes from review ([#2378](https://github.com/newsuk/times-components/issues/2378)) ([789e707](https://github.com/newsuk/times-components/commit/789e7078e2f1565706af74d29b0b581e3208d135))
+
+
+
+
+
 ## 0.0.2 (2019-11-07)
 
 

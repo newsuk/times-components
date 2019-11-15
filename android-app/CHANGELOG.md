@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.16.107](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.16.106...@times-components/android-app@0.16.107) (2019-11-14)
+
+**Note:** Version bump only for package @times-components/android-app
+
+
+
+
+
+## [0.16.106](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.16.105...@times-components/android-app@0.16.106) (2019-11-14)
+
+**Note:** Version bump only for package @times-components/android-app
+
+
+
+
+
+## [0.16.105](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.16.104...@times-components/android-app@0.16.105) (2019-11-13)
+
+**Note:** Version bump only for package @times-components/android-app
+
+
+
+
+
+## [0.16.104](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.16.103...@times-components/android-app@0.16.104) (2019-11-13)
+
+
+### Bug Fixes
+
+* (REPLAT-10300) performance regression fixes, fixes from review ([#2378](https://github.com/newsuk/times-components/issues/2378)) ([789e707](https://github.com/newsuk/times-components/commit/789e7078e2f1565706af74d29b0b581e3208d135))
+
+
+
+
+
+## [0.16.103](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.16.102...@times-components/android-app@0.16.103) (2019-11-12)
+
+**Note:** Version bump only for package @times-components/android-app
+
+
+
+
+
 ## [0.16.102](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.16.101...@times-components/android-app@0.16.102) (2019-11-08)
 
 **Note:** Version bump only for package @times-components/android-app

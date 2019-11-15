@@ -42,7 +42,14 @@ exports[`tile s huge 1`] = `
     }
   >
     <Text>
-      <Text>
+      <Text
+        style={
+          Object {
+            "color": "#1D1D1B",
+            "fontWeight": "bold",
+          }
+        }
+      >
         Rick Astley
       </Text>
       , singer-songwriter, 
@@ -56,7 +63,14 @@ exports[`tile s huge 1`] = `
         Never Gonna Give You Up 
       </Text>
       (1987), 53; 
-      <Text>
+      <Text
+        style={
+          Object {
+            "color": "#1D1D1B",
+            "fontWeight": "bold",
+          }
+        }
+      >
         Mike Batt
       </Text>
       , composer, songwriter, 
@@ -140,7 +154,14 @@ exports[`tile s medium 1`] = `
     }
   >
     <Text>
-      <Text>
+      <Text
+        style={
+          Object {
+            "color": "#1D1D1B",
+            "fontWeight": "bold",
+          }
+        }
+      >
         Rick Astley
       </Text>
       , singer-songwriter, 
@@ -154,7 +175,14 @@ exports[`tile s medium 1`] = `
         Never Gonna Give You Up 
       </Text>
       (1987), 53; 
-      <Text>
+      <Text
+        style={
+          Object {
+            "color": "#1D1D1B",
+            "fontWeight": "bold",
+          }
+        }
+      >
         Mike Batt
       </Text>
       , composer, songwriter, 
@@ -234,7 +262,14 @@ exports[`tile s no byline 1`] = `
     }
   >
     <Text>
-      <Text>
+      <Text
+        style={
+          Object {
+            "color": "#1D1D1B",
+            "fontWeight": "bold",
+          }
+        }
+      >
         Rick Astley
       </Text>
       , singer-songwriter, 
@@ -248,7 +283,14 @@ exports[`tile s no byline 1`] = `
         Never Gonna Give You Up 
       </Text>
       (1987), 53; 
-      <Text>
+      <Text
+        style={
+          Object {
+            "color": "#1D1D1B",
+            "fontWeight": "bold",
+          }
+        }
+      >
         Mike Batt
       </Text>
       , composer, songwriter, 
@@ -314,7 +356,14 @@ exports[`tile s small 1`] = `
     }
   >
     <Text>
-      <Text>
+      <Text
+        style={
+          Object {
+            "color": "#1D1D1B",
+            "fontWeight": "bold",
+          }
+        }
+      >
         Rick Astley
       </Text>
       , singer-songwriter, 
@@ -328,7 +377,14 @@ exports[`tile s small 1`] = `
         Never Gonna Give You Up 
       </Text>
       (1987), 53; 
-      <Text>
+      <Text
+        style={
+          Object {
+            "color": "#1D1D1B",
+            "fontWeight": "bold",
+          }
+        }
+      >
         Mike Batt
       </Text>
       , composer, songwriter, 
@@ -412,7 +468,14 @@ exports[`tile s wide 1`] = `
     }
   >
     <Text>
-      <Text>
+      <Text
+        style={
+          Object {
+            "color": "#1D1D1B",
+            "fontWeight": "bold",
+          }
+        }
+      >
         Rick Astley
       </Text>
       , singer-songwriter, 
@@ -426,7 +489,14 @@ exports[`tile s wide 1`] = `
         Never Gonna Give You Up 
       </Text>
       (1987), 53; 
-      <Text>
+      <Text
+        style={
+          Object {
+            "color": "#1D1D1B",
+            "fontWeight": "bold",
+          }
+        }
+      >
         Mike Batt
       </Text>
       , composer, songwriter, 
@@ -511,7 +581,14 @@ exports[`tile s with logo for medium breakpoint 1`] = `
     }
   >
     <Text>
-      <Text>
+      <Text
+        style={
+          Object {
+            "color": "#1D1D1B",
+            "fontWeight": "bold",
+          }
+        }
+      >
         Rick Astley
       </Text>
       , singer-songwriter, 
@@ -525,7 +602,14 @@ exports[`tile s with logo for medium breakpoint 1`] = `
         Never Gonna Give You Up 
       </Text>
       (1987), 53; 
-      <Text>
+      <Text
+        style={
+          Object {
+            "color": "#1D1D1B",
+            "fontWeight": "bold",
+          }
+        }
+      >
         Mike Batt
       </Text>
       , composer, songwriter, 

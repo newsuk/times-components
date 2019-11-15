@@ -5,6 +5,6 @@
     "no-implicit-dependencies": [true, "dev"],
     "no-var-keyword": true,
     "no-parameter-reassignment": true,
-    "typedef": [true, "call-signature"]
+    "typedef": [true, "arguments"]
   }
 }

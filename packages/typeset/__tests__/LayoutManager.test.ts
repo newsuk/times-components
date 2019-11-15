@@ -12,7 +12,7 @@ FontStorage.registerFont('TimesDigitalW04-Normal', () => TestFont);
 const testString = new AttributedString(testText, [
   makeAttribute(0, testText.length)
 ]);
-const testContainer = new TextContainer(100, 100, 0, 0);
+const testContainer = new TextContainer(500, 500, 0, 0);
 
 test('LayoutManager#constructor()', () => {
   expect(() => {
@@ -21,32 +21,17 @@ test('LayoutManager#constructor()', () => {
   }).not.toThrow();
 });
 
-test('LayoutManager#layout(false, false)', () => {
+test('LayoutManager#layout()', () => {
   const manager = new LayoutManager(
     testString,
     [testContainer],
     [new BoxExclusion(0, 0, 50, 0)]
   );
-  expect(manager.layout(false, false)).toMatchSnapshot();
+  expect(Array.from(manager.layout())).toMatchSnapshot();
 });
 
 test('bad font attribute', () => {
   const testString2 = new AttributedString(testText, []);
   const manager = new LayoutManager(testString2, [testContainer]);
-  expect(() => manager.layout(false, false)).toThrow();
-});
-
-test('LayoutManager#layout(true, false)', () => {
-  const manager = new LayoutManager(testString, [testContainer]);
-  expect(manager.layout(true, false)).toMatchSnapshot();
-});
-
-test('LayoutManager#layout(true, true)', () => {
-  const manager = new LayoutManager(testString, [testContainer]);
-  expect(manager.layout(true, true)).toMatchSnapshot();
-});
-
-test('LayoutManager#layout(false, true)', () => {
-  const manager = new LayoutManager(testString, [testContainer]);
-  expect(manager.layout(false, true)).toMatchSnapshot();
+  expect(() => Array.from(manager.layout())).toThrow();
 });

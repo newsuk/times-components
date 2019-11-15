@@ -1,6 +1,9 @@
 import React from "react";
 import { Text } from "react-native";
-import styles from "./styles";
+import { editionBreakpoints } from "@times-components/styleguide";
+import stylefactory from "./styles";
+
+const styles = stylefactory(editionBreakpoints.small);
 
 export default {
   bold(key, attributes, renderedChildren) {

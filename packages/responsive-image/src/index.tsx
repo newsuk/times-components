@@ -18,6 +18,7 @@ interface ResponsiveImageProps {
   style?: any;
   onLayout?: (ev: any) => {};
   onError?: () => {};
+  disablePlaceholder?: boolean;
 }
 
 const ResponsiveImage = (props: ResponsiveImageProps) => {
@@ -32,7 +33,8 @@ const ResponsiveImage = (props: ResponsiveImageProps) => {
     resizeMode,
     rounded,
     onLayout,
-    onError
+    onError,
+    disablePlaceholder
   } = props;
 
   if (!uri) {
@@ -45,7 +47,9 @@ const ResponsiveImage = (props: ResponsiveImageProps) => {
     url.query.rel_width = Math.floor(relativeWidth).toString();
     url.query.rel_height = Math.floor(relativeHeight).toString();
     if (relativeVerticalOffset) {
-      url.query.rel_vertical_offset = Math.floor(relativeVerticalOffset).toString();
+      url.query.rel_vertical_offset = Math.floor(
+        relativeVerticalOffset
+      ).toString();
     }
     if (relativeHorizontalOffset) {
       url.query.rel_horizontal_offset = Math.floor(
@@ -58,7 +62,6 @@ const ResponsiveImage = (props: ResponsiveImageProps) => {
 
   const [onlineUrl, setHighResLoaded] = React.useState('');
 
-  const defaultSource = onlineUrl ? { uri: offlineUrl } : logoPath;
   const source = onlineUrl ? { uri: onlineUrl } : { uri: offlineUrl };
 
   const imageRef = React.useCallback(event => {
@@ -104,17 +107,38 @@ const ResponsiveImage = (props: ResponsiveImageProps) => {
     );
   }, []);
 
-  return (
-    <ImageBackground
-      onLayout={imageRef}
-      progressiveRenderingEnabled
+  const image = (
+    <Image
       fadeDuration={onlineUrl ? 0 : 300}
       source={source}
       resizeMethod={'resize'}
-      imageStyle={[styles.imageStyle, { resizeMode: resize }, { borderRadius }]}
-      style={[styles.style, propStyle, { aspectRatio }, { borderRadius }]}
-      loadingIndicatorSource={defaultSource}
+      style={[
+        { aspectRatio },
+        { borderRadius },
+        styles.imageStyle,
+        { resizeMode: resize },
+        { borderRadius }
+      ]}
     />
+  );
+
+  if (disablePlaceholder) {
+    return image;
+  }
+
+  return (
+    <ImageBackground
+      onLayout={imageRef}
+      source={logoPath}
+      imageStyle={[
+        styles.imageStyle,
+        { resizeMode: 'center' },
+        { borderRadius }
+      ]}
+      style={[styles.style, propStyle, { aspectRatio }, { borderRadius }]}
+    >
+      {image}
+    </ImageBackground>
   );
 };
 

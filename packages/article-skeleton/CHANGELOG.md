@@ -3,6 +3,44 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.19.12](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.19.11...@times-components/article-skeleton@1.19.12) (2019-11-14)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.19.11](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.19.10...@times-components/article-skeleton@1.19.11) (2019-11-14)
+
+
+### Bug Fixes
+
+* loop condition error in refactor from REPLAT-10300 ([#2382](https://github.com/newsuk/times-components/issues/2382)) ([4002e5f](https://github.com/newsuk/times-components/commit/4002e5fb081eeb4baad706ba91e6bdc944d747d1))
+
+
+
+
+
+## [1.19.10](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.19.9...@times-components/article-skeleton@1.19.10) (2019-11-13)
+
+
+### Bug Fixes
+
+* (REPLAT-10300) performance regression fixes, fixes from review ([#2378](https://github.com/newsuk/times-components/issues/2378)) ([789e707](https://github.com/newsuk/times-components/commit/789e7078e2f1565706af74d29b0b581e3208d135))
+
+
+
+
+
+## [1.19.9](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.19.8...@times-components/article-skeleton@1.19.9) (2019-11-12)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
 ## [1.19.8](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.19.7...@times-components/article-skeleton@1.19.8) (2019-11-08)
 
 **Note:** Version bump only for package @times-components/article-skeleton

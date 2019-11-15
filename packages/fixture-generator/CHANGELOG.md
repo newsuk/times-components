@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.27.1](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.27.0...@times-components/fixture-generator@0.27.1) (2019-11-13)
+
+
+### Bug Fixes
+
+* (REPLAT-10300) performance regression fixes, fixes from review ([#2378](https://github.com/newsuk/times-components/issues/2378)) ([789e707](https://github.com/newsuk/times-components/commit/789e7078e2f1565706af74d29b0b581e3208d135))
+
+
+
+
+
 # [0.27.0](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.26.1...@times-components/fixture-generator@0.27.0) (2019-10-28)
 
 
