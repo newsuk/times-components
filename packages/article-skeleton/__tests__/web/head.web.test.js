@@ -87,7 +87,7 @@ describe("Head", () => {
     expect(title.children).toMatchSnapshot();
   });
 
-  it("defaults to an empty string if both headline and shortHeaddline are null", () => {
+  it("defaults to an empty string if both headline and shortHeadline are null", () => {
     const testRenderer = TestRenderer.create(
       <Head
         article={{
