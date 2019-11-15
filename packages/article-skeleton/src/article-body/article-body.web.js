@@ -67,7 +67,6 @@ const renderers = ({ paidContentClassName }) => ({
         {({ observed, registerNode }) => (
           <div id={key} ref={node => registerNode(node)}>
             <MediaWrapper>
-              <div>testt</div>
               <ArticleImage
                 captionOptions={{
                   caption,
