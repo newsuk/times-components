@@ -1,5 +1,11 @@
 import React, { useCallback, useState } from "react";
-import { View, FlatList, ActivityIndicator } from "react-native";
+import {
+  View,
+  FlatList,
+  ActivityIndicator,
+  Platform,
+  ScrollView
+} from "react-native";
 import PropTypes from "prop-types";
 import { screenWidth } from "@times-components/utils";
 import { withTrackScrollDepth } from "@times-components/tracking";
@@ -114,11 +120,25 @@ const ArticleSkeleton = props => {
 
   const fixedContent = [...fixup(isTablet, content), { name: "footer" }];
 
+  // FIXME: remove this when ios memory leaks are resolved
+  const Scroller = scrollprops =>
+    Platform.select({
+      ios: (
+        <ScrollView {...scrollprops}>
+          {header}
+          {scrollprops.data.map((item, index) => (
+            <Child item={item} index={index} />
+          ))}
+        </ScrollView>
+      ),
+      android: <FlatList {...scrollprops} />
+    });
+
   return (
     <AdComposer adConfig={adConfig}>
       <View style={styles.articleContainer}>
         <Viewport.Tracker>
-          <FlatList
+          <Scroller
             data={fixedContent}
             ListEmptyComponent={Loading}
             ListHeaderComponent={header}
