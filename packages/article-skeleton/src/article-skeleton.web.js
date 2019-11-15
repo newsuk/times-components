@@ -72,11 +72,10 @@ class ArticleSkeleton extends Component {
     } = article;
 
     const { articleWidth } = this.state;
-    const newContent = content && content.length > 0 && insertDropcapIntoAST(
-      content,
-      template,
-      dropcapsDisabled
-    );
+    const newContent =
+      content &&
+      content.length > 0 &&
+      insertDropcapIntoAST(content, template, dropcapsDisabled);
 
     receiveChildList([
       {
@@ -136,16 +135,16 @@ class ArticleSkeleton extends Component {
                         ) : null}
                       </HeaderContainer>
                       <BodyContainer accessibilityRole="article">
-                       {
-                         newContent && <ArticleBody
-                          content={newContent}
-                          contextUrl={url}
-                          observed={observed}
-                          registerNode={registerNode}
-                          section={section}
-                          paidContentClassName={paidContentClassName}
-                        />
-                       }
+                        {newContent && (
+                          <ArticleBody
+                            content={newContent}
+                            contextUrl={url}
+                            observed={observed}
+                            registerNode={registerNode}
+                            section={section}
+                            paidContentClassName={paidContentClassName}
+                          />
+                        )}
                         <ArticleExtras
                           analyticsStream={analyticsStream}
                           articleId={articleId}
