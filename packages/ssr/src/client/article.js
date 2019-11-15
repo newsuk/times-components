@@ -16,7 +16,8 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     navigationMode,
     spotAccountId,
     paidContentClassName,
-    userState
+    userState,
+    isPreview
   } = window.nuk.article;
   const { getCookieValue } = window.nuk;
 
@@ -44,7 +45,8 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     mapArticleToAdConfig,
     spotAccountId,
     paidContentClassName,
-    userState
+    userState,
+    isPreview
   };
 
   const clientOptions = {
