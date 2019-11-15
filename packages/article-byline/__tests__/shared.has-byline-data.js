@@ -4,6 +4,14 @@ import hasBylineData from "../src/has-byline-data";
 export default () => {
   const tests = [
     {
+      name: "returns false if bylines is null",
+      test: () => {
+        const bylines = null;
+
+        expect(hasBylineData(bylines)).toBeFalsy();
+      }
+    },
+    {
       name: "returns false if bylines array is empty",
       test: () => {
         const bylines = [];

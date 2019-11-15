@@ -66,10 +66,10 @@ class ArticleSkeleton extends Component {
       headline,
       topics,
       relatedArticleSlice,
+      template,
       savingEnabled,
       sharingEnabled
     } = article;
-    let { template } = article;
 
     const { articleWidth } = this.state;
     const newContent = content && content.length > 0 && insertDropcapIntoAST(
