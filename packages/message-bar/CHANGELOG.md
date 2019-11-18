@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.2.50...@times-components/message-bar@0.3.0) (2019-11-18)
+
+
+### Features
+
+* add article image lazy loading ([#2385](https://github.com/newsuk/times-components/issues/2385)) ([98604cd](https://github.com/newsuk/times-components/commit/98604cd4137f147fb3e315628b285118000acbab))
+
+
+
+
+
 ## [0.2.50](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.2.49...@times-components/message-bar@0.2.50) (2019-11-06)
 
 **Note:** Version bump only for package @times-components/message-bar

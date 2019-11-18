@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.3.47...@times-components/save-star-web@0.4.0) (2019-11-18)
+
+
+### Features
+
+* add article image lazy loading ([#2385](https://github.com/newsuk/times-components/issues/2385)) ([98604cd](https://github.com/newsuk/times-components/commit/98604cd4137f147fb3e315628b285118000acbab))
+
+
+
+
+
 ## [0.3.47](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.3.46...@times-components/save-star-web@0.3.47) (2019-11-13)
 
 **Note:** Version bump only for package @times-components/save-star-web

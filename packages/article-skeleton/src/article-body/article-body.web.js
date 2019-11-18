@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 import Ad from "@times-components/ad";
+import LazyLoad from "@times-components/lazy-load";
 import ArticleImage from "@times-components/article-image";
 import ArticleParagraph, {
   DropCapView
@@ -10,7 +11,7 @@ import InteractiveWrapper from "@times-components/interactive-wrapper";
 import KeyFacts from "@times-components/key-facts";
 import coreRenderers from "@times-components/markup";
 import PullQuote from "@times-components/pull-quote";
-import { colours } from "@times-components/styleguide";
+import { colours, spacing } from "@times-components/styleguide";
 import Video from "@times-components/video";
 import renderTrees from "@times-components/markup-forest";
 import { AspectRatioContainer } from "@times-components/utils";
@@ -39,7 +40,7 @@ export const responsiveDisplayWrapper = displayType => {
   }
 };
 
-const renderers = ({ observed, registerNode, paidContentClassName }) => ({
+const renderers = ({ paidContentClassName }) => ({
   ...coreRenderers,
   ad(key, attributes) {
     return (
@@ -62,25 +63,29 @@ const renderers = ({ observed, registerNode, paidContentClassName }) => ({
   image(key, { display, ratio, url, caption, credits }) {
     const MediaWrapper = responsiveDisplayWrapper(display);
     return (
-      <div id={key} key={key} ref={node => registerNode(node)}>
-        <MediaWrapper>
-          <ArticleImage
-            captionOptions={{
-              caption,
-              credits
-            }}
-            imageOptions={{
-              display,
-              highResSize: observed.get(key)
-                ? observed.get(key).clientWidth
-                : null,
-              lowResSize: 100,
-              ratio,
-              uri: url
-            }}
-          />
-        </MediaWrapper>
-      </div>
+      <LazyLoad key={key} rootMargin={spacing(15)} threshold={0.5}>
+        {({ observed, registerNode }) => (
+          <div id={key} ref={node => registerNode(node)}>
+            <MediaWrapper>
+              <ArticleImage
+                captionOptions={{
+                  caption,
+                  credits
+                }}
+                imageOptions={{
+                  display,
+                  highResSize: observed.get(key)
+                    ? observed.get(key).clientWidth
+                    : null,
+                  lowResSize: 100,
+                  ratio,
+                  uri: url
+                }}
+              />
+            </MediaWrapper>
+          </div>
+        )}
+      </LazyLoad>
     );
   },
   interactive(key, { url, element, display }) {
@@ -196,14 +201,12 @@ const decorateAd = ({ contextUrl, section }) => element =>
 const ArticleBody = ({
   content: bodyContent,
   contextUrl,
-  observed,
-  registerNode,
   section,
   paidContentClassName
 }) =>
   renderTrees(
     bodyContent.map(decorateAd({ contextUrl, section })),
-    renderers({ observed, registerNode, paidContentClassName })
+    renderers({ paidContentClassName })
   );
 
 ArticleBody.propTypes = {
