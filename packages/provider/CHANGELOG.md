@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.20.0](https://github.com/newsuk/times-components/compare/@times-components/provider@1.19.16...@times-components/provider@1.20.0) (2019-11-18)
+
+
+### Features
+
+* add article image lazy loading ([#2385](https://github.com/newsuk/times-components/issues/2385)) ([98604cd](https://github.com/newsuk/times-components/commit/98604cd4137f147fb3e315628b285118000acbab))
+
+
+
+
+
 ## [1.19.16](https://github.com/newsuk/times-components/compare/@times-components/provider@1.19.15...@times-components/provider@1.19.16) (2019-11-13)
 
 **Note:** Version bump only for package @times-components/provider

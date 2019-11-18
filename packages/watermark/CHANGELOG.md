@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.7.0](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.6.57...@times-components/watermark@2.7.0) (2019-11-18)
+
+
+### Features
+
+* add article image lazy loading ([#2385](https://github.com/newsuk/times-components/issues/2385)) ([98604cd](https://github.com/newsuk/times-components/commit/98604cd4137f147fb3e315628b285118000acbab))
+
+
+
+
+
 ## [2.6.57](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.6.56...@times-components/watermark@2.6.57) (2019-11-06)
 
 **Note:** Version bump only for package @times-components/watermark
