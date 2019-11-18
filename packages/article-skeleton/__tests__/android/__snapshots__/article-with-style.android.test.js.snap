@@ -392,7 +392,9 @@ exports[`3. an article with no content 1`] = `
 </View>
 `;
 
-exports[`4. an article with a nested markup in first paragraph displays a drop cap 1`] = `
+exports[`4. an article with no content if content is set as null 1`] = `null`;
+
+exports[`5. an article with a nested markup in first paragraph displays a drop cap 1`] = `
 <View
   style={
     Object {
@@ -828,7 +830,7 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
 </View>
 `;
 
-exports[`5. an article skeleton with responsive items 1`] = `
+exports[`6. an article skeleton with responsive items 1`] = `
 <View
   style={
     Object {
