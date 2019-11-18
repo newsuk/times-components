@@ -1,0 +1,278 @@
+query ArticleDraftQuery($id: ID!) {
+  draftArticle(id: $id) {
+    backgroundColour {
+      rgba {
+        red
+        green
+        blue
+        alpha
+      }
+    }
+    commentsEnabled
+    content
+    dropcapsDisabled
+    expirableFlags {
+      type
+      expiryTime
+    }
+    keywords
+    leadAsset {
+      ... on Video {
+        id
+        brightcoveAccountId
+        brightcovePolicyKey
+        brightcoveVideoId
+        brightcovePlayerId
+        posterImage {
+          ...imageProps
+        }
+        skySports
+        is360
+      }
+      ... on Image {
+        ...imageProps
+      }
+    }
+    relatedArticleSlice {
+      sliceName: __typename
+      ... on DraftStandardSlice {
+        items {
+          ...relatedProps
+        }
+      }
+      ... on DraftLeadOneAndTwoSlice {
+        lead {
+          ...relatedProps
+        }
+        support1 {
+          ...relatedProps
+        }
+        support2 {
+          ...relatedProps
+        }
+      }
+      ... on DraftOpinionOneAndTwoSlice {
+        opinion {
+          ...relatedProps
+        }
+        support1 {
+          ...relatedProps
+        }
+        support2 {
+          ...relatedProps
+        }
+      }
+    }
+    sharingEnabled
+    savingEnabled
+    standfirst
+    template
+    textColour {
+      rgba {
+        red
+        green
+        blue
+        alpha
+      }
+    }
+    ...draftArticleProps
+  }
+}
+
+fragment imageProps on Image {
+  caption
+  credits
+  crop169: crop(ratio: "16:9") {
+    ratio
+    url
+  }
+  crop32: crop(ratio: "3:2") {
+    ratio
+    url
+  }
+  crop1251: crop(ratio: "1.25:1") {
+    ratio
+    url
+  }
+  crop11: crop(ratio: "1:1") {
+    ratio
+    url
+  }
+  crop45: crop(ratio: "4:5") {
+    ratio
+    url
+  }
+  crop23: crop(ratio: "2:3") {
+    ratio
+    url
+  }
+  crop2251: crop(ratio: "2.25:1") {
+    ratio
+    url
+  }
+  id
+  title
+}
+
+fragment articleProps on Article {
+  bylines {
+    ... on Byline {
+      byline
+      image {
+        id
+        caption
+        credits
+        title
+        crop(ratio: "1:1") {
+          ratio
+          url
+        }
+      }
+    }
+  }
+  hasVideo
+  headline
+  id
+  label
+  publicationName
+  publishedTime
+  updatedTime
+  section
+  shortIdentifier
+  shortHeadline
+  slug
+  url
+}
+
+fragment draftArticleProps on DraftArticle {
+  bylines {
+    ... on Byline {
+      byline
+      image {
+        id
+        caption
+        credits
+        title
+        crop(ratio: "1:1") {
+          ratio
+          url
+        }
+      }
+    }
+  }
+  hasVideo
+  headline
+  id
+  label
+  publicationName
+  publishedTime
+  updatedTime
+  section
+  shortIdentifier
+  shortHeadline
+  slug
+  url
+}
+
+fragment relatedProps on DraftTile {
+  leadAsset {
+    ... on Image {
+      crop169: crop(ratio: "16:9") {
+        url
+      }
+      crop32: crop(ratio: "3:2") {
+        url
+      }
+      id
+      title
+    }
+    ... on Video {
+      posterImage {
+        crop169: crop(ratio: "16:9") {
+          url
+        }
+        crop32: crop(ratio: "3:2") {
+          url
+        }
+        id
+        title
+      }
+    }
+  }
+  article {
+    ... on Article {
+      leadAsset {
+        ... on Image {
+          crop169: crop(ratio: "16:9") {
+            url
+          }
+          crop32: crop(ratio: "3:2") {
+            url
+          }
+          id
+          title
+        }
+        ... on Video {
+          posterImage {
+            crop169: crop(ratio: "16:9") {
+              url
+            }
+            crop32: crop(ratio: "3:2") {
+              url
+            }
+            id
+            title
+          }
+        }
+      }
+      ...articleProps
+      ...summaries
+    }
+    ... on DraftArticle {
+      leadAsset {
+        ... on Image {
+          crop169: crop(ratio: "16:9") {
+            url
+          }
+          crop32: crop(ratio: "3:2") {
+            url
+          }
+          id
+          title
+        }
+        ... on Video {
+          posterImage {
+            crop169: crop(ratio: "16:9") {
+              url
+            }
+            crop32: crop(ratio: "3:2") {
+              url
+            }
+            id
+            title
+          }
+        }
+      }
+      ...draftArticleProps
+      ...draftSummaries
+    }
+  }
+}
+
+fragment summaries on Article {
+  summary105: summary(maxCharCount: 105)
+  summary125: summary(maxCharCount: 125)
+  summary145: summary(maxCharCount: 145)
+  summary160: summary(maxCharCount: 160)
+  summary175: summary(maxCharCount: 175)
+  summary225: summary(maxCharCount: 225)
+}
+
+fragment draftSummaries on DraftArticle {
+  summary105: summary(maxCharCount: 105)
+  summary125: summary(maxCharCount: 125)
+  summary145: summary(maxCharCount: 145)
+  summary160: summary(maxCharCount: 160)
+  summary175: summary(maxCharCount: 175)
+  summary225: summary(maxCharCount: 225)
+}

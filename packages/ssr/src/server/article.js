@@ -19,7 +19,8 @@ module.exports = (
     makeTopicUrl,
     navigationMode,
     spotAccountId,
-    paidContentClassName
+    paidContentClassName,
+    isPreview
   },
   userState
 ) => {
@@ -65,7 +66,8 @@ module.exports = (
       navigationMode,
       spotAccountId,
       userState,
-      paidContentClassName
+      paidContentClassName,
+      isPreview
     },
     name: "article"
   };
