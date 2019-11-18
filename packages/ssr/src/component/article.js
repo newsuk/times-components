@@ -45,8 +45,11 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
           debounceTimeMs,
           id: articleId
         },
-        ({ article, draftArticle, isLoading, error, refetch }) => {
-          const articleData = isPreview ? draftArticle : article;
+        providerData => {
+          const { isLoading, error, refetch } = providerData;
+          const article = isPreview
+            ? providerData.draftArticle
+            : providerData.article;
 
           return React.createElement(
             ContextProviderWithDefaults,
@@ -58,8 +61,8 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
                 newskit: enableNewskit,
                 theme: {
                   ...themeFactory(
-                    getSectionNameFromTiles(articleData),
-                    articleData.template
+                    getSectionNameFromTiles(article),
+                    article.template
                   ),
                   scale: scale || defaults.theme.scale
                 },
@@ -67,9 +70,9 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
               }
             },
             React.createElement(Article, {
-              adConfig: mapArticleToAdConfig(articleData),
+              adConfig: mapArticleToAdConfig(article),
               analyticsStream,
-              article: articleData,
+              article,
               error,
               isLoading,
               logoUrl,
