@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.5.0](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.4.136...@times-components/pull-quote@3.5.0) (2019-11-18)
+
+
+### Features
+
+* add article image lazy loading ([#2385](https://github.com/newsuk/times-components/issues/2385)) ([98604cd](https://github.com/newsuk/times-components/commit/98604cd4137f147fb3e315628b285118000acbab))
+
+
+
+
+
 ## [3.4.136](https://github.com/newsuk/times-components/compare/@times-components/pull-quote@3.4.135...@times-components/pull-quote@3.4.136) (2019-11-06)
 
 **Note:** Version bump only for package @times-components/pull-quote
