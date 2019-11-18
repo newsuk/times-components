@@ -26,7 +26,7 @@ export class TakeoverBailout extends Error {
 
 const Article = props => {
   const { article, onImagePress } = props;
-  if(article){
+  if (article) {
     article.template = article.template || "mainstandard";
   }
 
