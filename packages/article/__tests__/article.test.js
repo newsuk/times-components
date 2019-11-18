@@ -6,6 +6,8 @@ import ArticleMagazineStandard from "@times-components/article-magazine-standard
 import ArticleMagazineComment from "@times-components/article-magazine-comment";
 import Article from "../src/article";
 
+jest.mock("@times-components/image", () => "TimesImage");
+
 const requiredProps = {
   adConfig: {},
   analyticsStream: () => {},

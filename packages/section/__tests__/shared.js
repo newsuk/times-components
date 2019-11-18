@@ -34,8 +34,10 @@ jest.mock("@times-components/edition-slices", () => {
 jest.mock("@times-components/icons", () => ({
   IconForwardArrow: "IconForwardArrow"
 }));
-
-jest.mock("@times-components/responsive-image", () => "ResponsiveImage");
+jest.mock("@times-components/image", () => ({
+  __esModule: true,
+  default: "TimesImage"
+}));
 
 export default () => {
   beforeEach(() => {

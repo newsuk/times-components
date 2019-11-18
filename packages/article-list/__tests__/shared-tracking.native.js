@@ -6,6 +6,8 @@ import Link from "@times-components/link";
 import ArticleList from "../src/article-list";
 import articlesFixture from "../fixtures/articles.json";
 
+jest.mock("@times-components/image", () => "TimesImage");
+
 export default () => {
   jest.useFakeTimers();
 

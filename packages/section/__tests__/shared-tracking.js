@@ -19,7 +19,10 @@ jest.mock("react-native", () => {
   };
   return rn;
 });
-jest.mock("@times-components/responsive-image", () => "ResponsiveImage");
+jest.mock("@times-components/image", () => ({
+  __esModule: true,
+  default: "TimesImage"
+}));
 
 class WithTrackingContext extends Component {
   getChildContext() {

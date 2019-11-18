@@ -18165,6 +18165,18 @@ react-native-hooks@0.9.0:
   resolved "https://registry.yarnpkg.com/react-native-hooks/-/react-native-hooks-0.9.0.tgz#589fc2390296d9afe03327298dabcf0a1f350910"
   integrity sha512-yqSAH0zxqjYHYPo6mPut3dEROoB5qMvsAbN3EK0MDQrWA5zdqmzgTEpS9/qwXaIyllk6hQbHxYnRTWq2uq4tJQ==
 
+react-native-image-pan-zoom@^2.1.9:
+  version "2.1.11"
+  resolved "https://registry.yarnpkg.com/react-native-image-pan-zoom/-/react-native-image-pan-zoom-2.1.11.tgz#61bcb69219d95e76a9797d23e4a2e8e0bd654ae9"
+  integrity sha512-ZCisGUFpPchHXsjT7ZI0anlSLPgcTmjRKXqpVnPu3RDWFXfKjuL4zpY57DX4Y8YgGZCpbf9fApN7KjVYody2Mw==
+
+react-native-image-zoom-viewer@2.2.26:
+  version "2.2.26"
+  resolved "https://registry.yarnpkg.com/react-native-image-zoom-viewer/-/react-native-image-zoom-viewer-2.2.26.tgz#c6f070abb094cfbe1b3b7d8a38ad979a5facbdc5"
+  integrity sha512-Mh4+CJQCDcAumLFXLlDk8nQ5iMxNnupc9HwktsZ3I/v4HULcFPmTLDQ0HGAxjLa5foZRPnKDN06iKGsEb9raoA==
+  dependencies:
+    react-native-image-pan-zoom "^2.1.9"
+
 react-native-modal-datetime-picker@^6.0.0:
   version "6.1.0"
   resolved "https://registry.yarnpkg.com/react-native-modal-datetime-picker/-/react-native-modal-datetime-picker-6.1.0.tgz#246563ed582e68a886134ba1e2a3226504590819"
@@ -18227,12 +18239,12 @@ react-native-switch@^1.5.0:
   dependencies:
     prop-types "^15.6.0"
 
-react-native-v8@latest:
-  version "0.61.1-patch.0"
-  resolved "https://registry.yarnpkg.com/react-native-v8/-/react-native-v8-0.61.1-patch.0.tgz#030c9cdaa92cbc61048b18afbb6f9d8b36595fe0"
-  integrity sha512-5UGXA3NZCP6QMCJIjJRzYm+WeJkWdM5Tp50d1+lWXTwJRyaf4QgXuC/+pfLpLA7iFfthM7YKFUjKLRM1JaQQFg==
+react-native-v8@0.61.1-patch.3:
+  version "0.61.1-patch.3"
+  resolved "https://registry.yarnpkg.com/react-native-v8/-/react-native-v8-0.61.1-patch.3.tgz#1170bfe539b967abd3e190d720cbde51413fa73c"
+  integrity sha512-rkrk4TNkz1WH+Tzd7I3L8HMMyZn5CZ6B+iutQJxUMWCtQF+t3xrs6cZZDsJ8BV26B7D6wkyNRJ9p5U2PgSt1UQ==
   dependencies:
-    v8-android "^7.5.1"
+    v8-android "7.8.x >= 7.8.1"
 
 react-native-web-image-loader@0.0.6:
   version "0.0.6"
@@ -21773,10 +21785,15 @@ uuid@^3.0.0, uuid@^3.0.1, uuid@^3.1.0, uuid@^3.3.2:
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.3.tgz#4568f0216e78760ee1dbf3a4d2cf53e224112866"
   integrity sha512-pW0No1RGHgzlpHJO1nsVrHKpOEIxkGg1xB+v0ZmdNH5OAeAwzAVrCnI2/6Mtx+Uys6iaylxa+D3g4j63IKKjSQ==
 
-v8-android@7.5.1, v8-android@^7.5.1:
+v8-android@7.5.1:
   version "7.5.1"
   resolved "https://registry.yarnpkg.com/v8-android/-/v8-android-7.5.1.tgz#490288785381826d6c96323cecfb3fdbf2200424"
   integrity sha512-FFte/j4T8UtrEd6IB8hGFZS40+kTvgoSa/+krCTBbRPij18mez2CPGyfOa+sJdCSxuXGEj7g7pzOBdtqgzdqow==
+
+"v8-android@7.8.x >= 7.8.1":
+  version "7.8.1"
+  resolved "https://registry.yarnpkg.com/v8-android/-/v8-android-7.8.1.tgz#2686c3fe655742bbd02e1b6d1c3e336365d4e8e0"
+  integrity sha512-fxqBNITrILwfzQI9ZIWHR44B6Hvhplfht+V9dpcTrm7CGZjWpUaD/n3C0ghCW15VLRYhWPuCVltXHwbvsBOLjw==
 
 v8-compile-cache@^2.0.2:
   version "2.1.0"

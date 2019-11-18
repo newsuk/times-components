@@ -26,7 +26,8 @@ exports[`1. landscape default modal 1`] = `
         style={
           Object {
             "padding": 20,
-            "position": "relative",
+            "position": "absolute",
+            "top": 0,
             "zIndex": 2,
           }
         }
@@ -68,94 +69,8 @@ exports[`1. landscape default modal 1`] = `
           }
         }
       >
-        <Gestures
-          style={
-            Object {
-              "height": "100%",
-              "width": "100%",
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "alignItems": "center",
-                "aspectRatio": 2,
-                "backgroundColor": "#000000",
-                "borderRadius": 0,
-                "height": "100%",
-                "justifyContent": "center",
-                "overflow": "hidden",
-                "position": "absolute",
-                "width": "100%",
-              }
-            }
-          >
-            <Image
-              style={
-                Object {
-                  "borderRadius": 0,
-                  "bottom": 0,
-                  "height": undefined,
-                  "left": 0,
-                  "position": "absolute",
-                  "resizeMode": "center",
-                  "right": 0,
-                  "top": 0,
-                  "width": "100%",
-                }
-              }
-            />
-          </View>
-        </Gestures>
+        <ImageZoomView />
       </SafeAreaView>
-      <OverlayGradient
-        style={
-          Object {
-            "flex": 0,
-            "height": 140,
-            "justifyContent": "flex-end",
-            "marginTop": "auto",
-            "position": "relative",
-            "width": "100%",
-            "zIndex": 2,
-          }
-        }
-      >
-        <SafeAreaView>
-          <View
-            style={
-              Object {
-                "margin": 20,
-              }
-            }
-          >
-            <Text
-              style={
-                Object {
-                  "color": "#FFFFFF",
-                  "fontSize": 15,
-                  "lineHeight": 15,
-                }
-              }
-            >
-              Caption
-            </Text>
-            <Text
-              style={
-                Object {
-                  "color": "#FFFFFF",
-                  "fontSize": 10,
-                  "lineHeight": 10,
-                  "marginTop": 5,
-                }
-              }
-            >
-              Credits
-            </Text>
-          </View>
-        </SafeAreaView>
-      </OverlayGradient>
     </View>
   </Modal>
   <View
@@ -222,7 +137,8 @@ exports[`2. portrait default modal 1`] = `
         style={
           Object {
             "padding": 20,
-            "position": "relative",
+            "position": "absolute",
+            "top": 0,
             "zIndex": 2,
           }
         }
@@ -264,94 +180,8 @@ exports[`2. portrait default modal 1`] = `
           }
         }
       >
-        <Gestures
-          style={
-            Object {
-              "height": "100%",
-              "width": "100%",
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "alignItems": "center",
-                "aspectRatio": 0.5,
-                "backgroundColor": "#000000",
-                "borderRadius": 0,
-                "height": "100%",
-                "justifyContent": "center",
-                "overflow": "hidden",
-                "position": "absolute",
-                "width": "100%",
-              }
-            }
-          >
-            <Image
-              style={
-                Object {
-                  "borderRadius": 0,
-                  "bottom": 0,
-                  "height": undefined,
-                  "left": 0,
-                  "position": "absolute",
-                  "resizeMode": "center",
-                  "right": 0,
-                  "top": 0,
-                  "width": "100%",
-                }
-              }
-            />
-          </View>
-        </Gestures>
+        <ImageZoomView />
       </SafeAreaView>
-      <OverlayGradient
-        style={
-          Object {
-            "flex": 0,
-            "height": 140,
-            "justifyContent": "flex-end",
-            "marginTop": "auto",
-            "position": "relative",
-            "width": "100%",
-            "zIndex": 2,
-          }
-        }
-      >
-        <SafeAreaView>
-          <View
-            style={
-              Object {
-                "margin": 20,
-              }
-            }
-          >
-            <Text
-              style={
-                Object {
-                  "color": "#FFFFFF",
-                  "fontSize": 15,
-                  "lineHeight": 15,
-                }
-              }
-            >
-              Caption
-            </Text>
-            <Text
-              style={
-                Object {
-                  "color": "#FFFFFF",
-                  "fontSize": 10,
-                  "lineHeight": 10,
-                  "marginTop": 5,
-                }
-              }
-            >
-              Credits
-            </Text>
-          </View>
-        </SafeAreaView>
-      </OverlayGradient>
     </View>
   </Modal>
   <View
@@ -418,7 +248,8 @@ exports[`3. tablet landscape default modal 1`] = `
         style={
           Object {
             "padding": 20,
-            "position": "relative",
+            "position": "absolute",
+            "top": 0,
             "zIndex": 2,
           }
         }
@@ -460,94 +291,8 @@ exports[`3. tablet landscape default modal 1`] = `
           }
         }
       >
-        <Gestures
-          style={
-            Object {
-              "height": "100%",
-              "width": "100%",
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "alignItems": "center",
-                "aspectRatio": 2,
-                "backgroundColor": "#000000",
-                "borderRadius": 0,
-                "height": "100%",
-                "justifyContent": "center",
-                "overflow": "hidden",
-                "position": "absolute",
-                "width": "100%",
-              }
-            }
-          >
-            <Image
-              style={
-                Object {
-                  "borderRadius": 0,
-                  "bottom": 0,
-                  "height": undefined,
-                  "left": 0,
-                  "position": "absolute",
-                  "resizeMode": "center",
-                  "right": 0,
-                  "top": 0,
-                  "width": "100%",
-                }
-              }
-            />
-          </View>
-        </Gestures>
+        <ImageZoomView />
       </SafeAreaView>
-      <OverlayGradient
-        style={
-          Object {
-            "flex": 0,
-            "height": 140,
-            "justifyContent": "flex-end",
-            "marginTop": "auto",
-            "position": "relative",
-            "width": "100%",
-            "zIndex": 2,
-          }
-        }
-      >
-        <SafeAreaView>
-          <View
-            style={
-              Object {
-                "margin": 20,
-              }
-            }
-          >
-            <Text
-              style={
-                Object {
-                  "color": "#FFFFFF",
-                  "fontSize": 15,
-                  "lineHeight": 15,
-                }
-              }
-            >
-              Caption
-            </Text>
-            <Text
-              style={
-                Object {
-                  "color": "#FFFFFF",
-                  "fontSize": 10,
-                  "lineHeight": 10,
-                  "marginTop": 5,
-                }
-              }
-            >
-              Credits
-            </Text>
-          </View>
-        </SafeAreaView>
-      </OverlayGradient>
     </View>
   </Modal>
   <View
@@ -614,7 +359,8 @@ exports[`4. tablet portrait default modal 1`] = `
         style={
           Object {
             "padding": 20,
-            "position": "relative",
+            "position": "absolute",
+            "top": 0,
             "zIndex": 2,
           }
         }
@@ -656,94 +402,8 @@ exports[`4. tablet portrait default modal 1`] = `
           }
         }
       >
-        <Gestures
-          style={
-            Object {
-              "height": "100%",
-              "width": "100%",
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "alignItems": "center",
-                "aspectRatio": 0.5,
-                "backgroundColor": "#000000",
-                "borderRadius": 0,
-                "height": "100%",
-                "justifyContent": "center",
-                "overflow": "hidden",
-                "position": "absolute",
-                "width": "100%",
-              }
-            }
-          >
-            <Image
-              style={
-                Object {
-                  "borderRadius": 0,
-                  "bottom": 0,
-                  "height": undefined,
-                  "left": 0,
-                  "position": "absolute",
-                  "resizeMode": "center",
-                  "right": 0,
-                  "top": 0,
-                  "width": "100%",
-                }
-              }
-            />
-          </View>
-        </Gestures>
+        <ImageZoomView />
       </SafeAreaView>
-      <OverlayGradient
-        style={
-          Object {
-            "flex": 0,
-            "height": 140,
-            "justifyContent": "flex-end",
-            "marginTop": "auto",
-            "position": "relative",
-            "width": "100%",
-            "zIndex": 2,
-          }
-        }
-      >
-        <SafeAreaView>
-          <View
-            style={
-              Object {
-                "margin": 20,
-              }
-            }
-          >
-            <Text
-              style={
-                Object {
-                  "color": "#FFFFFF",
-                  "fontSize": 15,
-                  "lineHeight": 15,
-                }
-              }
-            >
-              Caption
-            </Text>
-            <Text
-              style={
-                Object {
-                  "color": "#FFFFFF",
-                  "fontSize": 10,
-                  "lineHeight": 10,
-                  "marginTop": 5,
-                }
-              }
-            >
-              Credits
-            </Text>
-          </View>
-        </SafeAreaView>
-      </OverlayGradient>
     </View>
   </Modal>
   <View

@@ -11,9 +11,9 @@ import {
   replacePropTransform
 } from "@times-components/jest-serializer";
 import { hash, iterator } from "@times-components/test-utils";
-import Responsive from "@times-components/responsive";
-import { Gestures, setDimension } from "./mocks";
 import Image, { ModalImage } from "../src";
+
+jest.mock("react-native-image-zoom-viewer", () => "ImageZoomView");
 
 // eslint-disable-next-line react/prop-types
 const MockCaption = ({ style: { text, container } }) => (
@@ -129,23 +129,6 @@ export default () => {
       }
     },
     {
-      name: "modal image uses screen width to set highResSize",
-      test: async () => {
-        const width = 750;
-        const testInstance = TestRenderer.create(
-          <Responsive>
-            <ModalImage {...props} />
-          </Responsive>
-        );
-
-        setDimension({ width, height: width / 2 });
-
-        const modalImage = testInstance.root.findAllByType(Image)[0];
-
-        expect(modalImage.props.highResSize).toEqual(width);
-      }
-    },
-    {
       name: "handle onPress event on the close button",
       test: async () => {
         const testInstance = TestRenderer.create(
@@ -172,30 +155,6 @@ export default () => {
       }
     },
     {
-      name: "handle onSwipeDown on the gesture controller",
-      test: async () => {
-        const testInstance = TestRenderer.create(
-          <ModalImage {...props} show />
-        );
-
-        await act(async () => {
-          jest.runAllImmediates();
-        });
-
-        const gestureController = testInstance.root.findByType(Gestures);
-
-        gestureController.props.onSwipeDown();
-
-        await act(async () => {
-          jest.runAllImmediates();
-        });
-
-        const modal = testInstance.root.find(node => node.type === Modal);
-
-        expect(modal.props.visible).toBe(false);
-      }
-    },
-    {
       name: "image with onImagePress prop should not have Modal",
       test: async () => {
         const onImagePress = () => {};
@@ -209,51 +168,6 @@ export default () => {
         });
 
         expect(testInstance.root.findAllByType(Modal).length).toBe(0);
-      }
-    },
-    {
-      name: "hides elements when tapping on the image",
-      test: async () => {
-        const testInstance = TestRenderer.create(
-          <ModalImage {...props} show />
-        );
-
-        await act(async () => {
-          jest.runAllImmediates();
-        });
-
-        const gestureController = testInstance.root.findByType(Gestures);
-
-        gestureController.props.onPress();
-
-        await act(async () => {
-          jest.runAllImmediates();
-        });
-
-        expect(testInstance).toMatchSnapshot();
-      }
-    },
-    {
-      name: "re-shows elements when tapping on the image a second time",
-      test: async () => {
-        const testInstance = TestRenderer.create(
-          <ModalImage {...props} show />
-        );
-
-        await act(async () => {
-          jest.runAllImmediates();
-        });
-
-        const gestureController = testInstance.root.findByType(Gestures);
-
-        gestureController.props.onPress();
-        gestureController.props.onPress();
-
-        await act(async () => {
-          jest.runAllImmediates();
-        });
-
-        expect(testInstance).toMatchSnapshot();
       }
     }
   ];
