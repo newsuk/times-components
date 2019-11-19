@@ -37,10 +37,13 @@ const Article = props => {
     const mediaList = getMediaList(content, leadAsset);
     onImagePressArticle = index => onImagePress(index, mediaList);
   }
-  const Component = template ? templates[template] : ArticleMainStandard;
+  const Component = templates[template] || ArticleMainStandard;
   const newProps = {
     ...props,
-    article: { ...article, template: article.template || "mainstandard" }
+    article: {
+      ...article,
+      template: article && article.template ? article.template : "mainstandard"
+    }
   };
 
   return (
