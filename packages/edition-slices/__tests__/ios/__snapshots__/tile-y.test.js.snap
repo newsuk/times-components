@@ -41,6 +41,16 @@ exports[`tile y huge 1`] = `
     >
       This is tile headline
     </Text>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
     <Text
       style={
         Object {
@@ -60,16 +70,6 @@ exports[`tile y huge 1`] = `
         ...
       </Text>
     </Text>
-    <ArticleFlags
-      flags={
-        Array [
-          Object {
-            "expiryTime": "2030-03-14T12:00:00.000Z",
-            "type": "EXCLUSIVE",
-          },
-        ]
-      }
-    />
   </View>
 </Link>
 `;
@@ -115,6 +115,16 @@ exports[`tile y medium 1`] = `
     >
       This is tile headline
     </Text>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
     <Text
       style={
         Object {
@@ -134,16 +144,6 @@ exports[`tile y medium 1`] = `
         ...
       </Text>
     </Text>
-    <ArticleFlags
-      flags={
-        Array [
-          Object {
-            "expiryTime": "2030-03-14T12:00:00.000Z",
-            "type": "EXCLUSIVE",
-          },
-        ]
-      }
-    />
   </View>
 </Link>
 `;
@@ -189,6 +189,16 @@ exports[`tile y wide 1`] = `
     >
       This is tile headline
     </Text>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
     <Text
       style={
         Object {
@@ -208,16 +218,6 @@ exports[`tile y wide 1`] = `
         ...
       </Text>
     </Text>
-    <ArticleFlags
-      flags={
-        Array [
-          Object {
-            "expiryTime": "2030-03-14T12:00:00.000Z",
-            "type": "EXCLUSIVE",
-          },
-        ]
-      }
-    />
   </View>
 </Link>
 `;
@@ -263,6 +263,16 @@ exports[`tile y without breakpoint should be like medium 1`] = `
     >
       This is tile headline
     </Text>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
     <Text
       style={
         Object {
@@ -282,16 +292,6 @@ exports[`tile y without breakpoint should be like medium 1`] = `
         ...
       </Text>
     </Text>
-    <ArticleFlags
-      flags={
-        Array [
-          Object {
-            "expiryTime": "2030-03-14T12:00:00.000Z",
-            "type": "EXCLUSIVE",
-          },
-        ]
-      }
-    />
   </View>
 </Link>
 `;

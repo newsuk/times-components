@@ -49,6 +49,16 @@ exports[`tile ad huge 1`] = `
         >
           This is tile headline
         </Text>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+        />
         <Text
           numberOfLines={2}
           style={
@@ -69,16 +79,6 @@ exports[`tile ad huge 1`] = `
             ...
           </Text>
         </Text>
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
       </View>
     </View>
   </View>
@@ -199,6 +199,16 @@ exports[`tile ad wide 1`] = `
         >
           This is tile headline
         </Text>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+        />
         <Text
           numberOfLines={2}
           style={
@@ -219,16 +229,6 @@ exports[`tile ad wide 1`] = `
             ...
           </Text>
         </Text>
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
       </View>
     </View>
   </View>

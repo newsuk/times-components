@@ -75,9 +75,9 @@ function ArticleSummary(props) {
       {isOpinionByline && byline}
       {headline}
       {strapline}
-      {mobileFlags}
       {tabletFlags}
       {content}
+      {mobileFlags}
       {saveStar}
       {datePublicationProps ? (
         <Text style={styles.metaText} testID="datePublication">

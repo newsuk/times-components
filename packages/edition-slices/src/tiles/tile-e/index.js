@@ -1,17 +1,23 @@
 /* eslint-disable react/require-default-props */
 import React from "react";
 import PropTypes from "prop-types";
-import Image from "@times-components/image";
 import { editionBreakpoints } from "@times-components/styleguide";
 import {
   getTileImage,
   TileLink,
   TileSummary,
-  withTileTracking
+  withTileTracking,
+  TileImage,
+  getTileSummary
 } from "../shared";
 import stylesFactory from "./styles";
 
-const TileE = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
+const TileE = ({
+  onPress,
+  tile,
+  breakpoint = editionBreakpoints.small,
+  withMoreTeaser = false
+}) => {
   const crop = getTileImage(tile, "crop45");
   const styles = stylesFactory(breakpoint);
 
@@ -19,9 +25,13 @@ const TileE = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
     return null;
   }
 
+  const {
+    article: { hasVideo }
+  } = tile;
+
   return (
     <TileLink onPress={onPress} style={styles.container} tile={tile}>
-      <Image
+      <TileImage
         aspectRatio={4 / 5}
         relativeWidth={crop.relativeWidth}
         relativeHeight={crop.relativeHeight}
@@ -30,9 +40,11 @@ const TileE = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
         style={styles.imageContainer}
         uri={crop.url}
         fill
+        hasVideo={hasVideo}
       />
       <TileSummary
         headlineStyle={styles.headline}
+        summary={getTileSummary(tile, withMoreTeaser ? 800 : 125)}
         style={styles.summaryContainer}
         tile={tile}
       />
@@ -43,7 +55,8 @@ const TileE = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
 TileE.propTypes = {
   onPress: PropTypes.func.isRequired,
   tile: PropTypes.shape({}).isRequired,
-  breakpoint: PropTypes.string
+  breakpoint: PropTypes.string,
+  withMoreTeaser: PropTypes.bool
 };
 
 export default withTileTracking(TileE);

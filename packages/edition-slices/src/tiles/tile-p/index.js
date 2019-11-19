@@ -1,11 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Image from "@times-components/image";
+import Byline from "@times-components/article-byline";
 import {
   getTileImage,
   getTileStrapline,
   TileLink,
   TileSummary,
+  TileImage,
   withTileTracking
 } from "../shared";
 import styles from "./styles";
@@ -19,7 +20,7 @@ const TileP = ({ onPress, tile }) => {
 
   return (
     <TileLink onPress={onPress} style={styles.container} tile={tile}>
-      <Image
+      <TileImage
         aspectRatio={1}
         relativeWidth={crop.relativeWidth}
         relativeHeight={crop.relativeHeight}
@@ -31,9 +32,8 @@ const TileP = ({ onPress, tile }) => {
         rounded
         resizeMode="cover"
       />
+      <Byline ast={tile.article.bylines} bylineStyle={styles.bylineOpinion} />
       <TileSummary
-        bylines={tile.article.bylines}
-        bylineStyle={styles.bylineOpinion}
         headlineStyle={styles.headline}
         strapline={getTileStrapline(tile)}
         straplineStyle={styles.strapline}

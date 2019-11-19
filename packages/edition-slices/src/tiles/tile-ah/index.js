@@ -1,12 +1,12 @@
 /* eslint-disable react/require-default-props */
 import React from "react";
 import PropTypes from "prop-types";
-import Image from "@times-components/image";
 import { editionBreakpoints } from "@times-components/styleguide";
 import {
   getTileImage,
   getTileStrapline,
   TileLink,
+  TileImage,
   TileSummary,
   withTileTracking
 } from "../shared";
@@ -22,7 +22,7 @@ const TileAH = ({ onPress, tile, breakpoint = editionBreakpoints.medium }) => {
 
   return (
     <TileLink onPress={onPress} style={styles.container} tile={tile}>
-      <Image
+      <TileImage
         aspectRatio={1}
         relativeWidth={crop.relativeWidth}
         relativeHeight={crop.relativeHeight}

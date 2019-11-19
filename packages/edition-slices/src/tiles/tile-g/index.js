@@ -2,12 +2,12 @@
 import React from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
-import Image from "@times-components/image";
 import editionBreakpoints from "@times-components/styleguide";
 import {
   getTileImage,
   TileLink,
   TileSummary,
+  TileImage,
   withTileTracking
 } from "../shared";
 import stylesFactory from "./styles";
@@ -25,7 +25,7 @@ const TileG = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
     <TileLink onPress={onPress} style={styles.container} tile={tile}>
       <View style={styles.outerContainer}>
         <View style={styles.innerContainer}>
-          <Image
+          <TileImage
             aspectRatio={1}
             relativeWidth={crop.relativeWidth}
             relativeHeight={crop.relativeHeight}

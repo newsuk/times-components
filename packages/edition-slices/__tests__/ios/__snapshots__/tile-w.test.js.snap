@@ -59,6 +59,16 @@ exports[`tile w huge 1`] = `
           >
             This is tile headline
           </Text>
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
+          />
           <Text
             numberOfLines={2}
             style={
@@ -79,16 +89,6 @@ exports[`tile w huge 1`] = `
               ...
             </Text>
           </Text>
-          <ArticleFlags
-            flags={
-              Array [
-                Object {
-                  "expiryTime": "2030-03-14T12:00:00.000Z",
-                  "type": "EXCLUSIVE",
-                },
-              ]
-            }
-          />
         </View>
       </View>
     </View>
@@ -165,6 +165,16 @@ exports[`tile w medium 1`] = `
           >
             This is tile headline
           </Text>
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
+          />
           <Text
             numberOfLines={2}
             style={
@@ -185,16 +195,6 @@ exports[`tile w medium 1`] = `
               ...
             </Text>
           </Text>
-          <ArticleFlags
-            flags={
-              Array [
-                Object {
-                  "expiryTime": "2030-03-14T12:00:00.000Z",
-                  "type": "EXCLUSIVE",
-                },
-              ]
-            }
-          />
         </View>
       </View>
     </View>
@@ -271,6 +271,16 @@ exports[`tile w wide 1`] = `
           >
             This is tile headline
           </Text>
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
+          />
           <Text
             numberOfLines={2}
             style={
@@ -291,16 +301,6 @@ exports[`tile w wide 1`] = `
               ...
             </Text>
           </Text>
-          <ArticleFlags
-            flags={
-              Array [
-                Object {
-                  "expiryTime": "2030-03-14T12:00:00.000Z",
-                  "type": "EXCLUSIVE",
-                },
-              ]
-            }
-          />
         </View>
       </View>
     </View>
@@ -377,6 +377,16 @@ exports[`tile w without breakpoint should be like medium 1`] = `
           >
             This is tile headline
           </Text>
+          <ArticleFlags
+            flags={
+              Array [
+                Object {
+                  "expiryTime": "2030-03-14T12:00:00.000Z",
+                  "type": "EXCLUSIVE",
+                },
+              ]
+            }
+          />
           <Text
             numberOfLines={2}
             style={
@@ -397,16 +407,6 @@ exports[`tile w without breakpoint should be like medium 1`] = `
               ...
             </Text>
           </Text>
-          <ArticleFlags
-            flags={
-              Array [
-                Object {
-                  "expiryTime": "2030-03-14T12:00:00.000Z",
-                  "type": "EXCLUSIVE",
-                },
-              ]
-            }
-          />
         </View>
       </View>
     </View>
