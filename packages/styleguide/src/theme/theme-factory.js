@@ -61,7 +61,7 @@ const headlineCasePicker = (section = "default", template = "mainstandard") =>
 
 export default (section, template) => {
   section = section || 'default';
-  template = template || 'mainstandard'
+  template = template || 'mainstandard';
 
   return {
     dropCapFont: magazineFontPicker("dropCap", section, template),
