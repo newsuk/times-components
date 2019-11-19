@@ -87,6 +87,22 @@ describe("Head", () => {
     expect(title.children).toMatchSnapshot();
   });
 
+  it("defaults to an empty string if both headline and shortHeadline are null", () => {
+    const testRenderer = TestRenderer.create(
+      <Head
+        article={{
+          ...article,
+          headline: null,
+          shortHeadline: null
+        }}
+      />
+    );
+
+    const title = testRenderer.root.findByType("title");
+
+    expect(title.children).toMatchSnapshot();
+  });
+
   it("uses the first non-news section in title", () => {
     const testRenderer = TestRenderer.create(
       <Head

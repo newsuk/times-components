@@ -133,7 +133,7 @@ function Head({ article, logoUrl, paidContentClassName }) {
     685
   );
   const caption = get(leadAsset, "caption", null);
-  const title = headline || shortHeadline;
+  const title = headline || shortHeadline || "";
   const datePublished = new Date(publishedTime).toISOString();
   const dateModified = updatedTime || datePublished;
   const thumbnailUrl = hasVideo

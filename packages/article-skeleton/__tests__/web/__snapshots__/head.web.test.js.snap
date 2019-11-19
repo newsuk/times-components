@@ -1,5 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Head defaults to an empty string if both headline and shortHeadline are null 1`] = `
+Array [
+  "",
+  " | ",
+  "Comment | ",
+  "The Times",
+]
+`;
+
 exports[`Head outputs correct metadata 1`] = `
 <Helmet>
   <title>

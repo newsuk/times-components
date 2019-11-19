@@ -106,6 +106,9 @@ const tests = [
       expect(
         themeFactory("thesundaytimesmagazine", "mainstandard").dropCapFont
       ).toEqual("dropCap");
+      expect(themeFactory("thesundaytimesmagazine", null).dropCapFont).toEqual(
+        "dropCap"
+      );
       expect(themeFactory().dropCapFont).toEqual("dropCap");
     }
   },
@@ -130,6 +133,9 @@ const tests = [
       expect(
         themeFactory("thesundaytimesmagazine", "mainstandard").headlineFont
       ).toEqual("headline");
+      expect(themeFactory("thesundaytimesmagazine", null).headlineFont).toEqual(
+        "headline"
+      );
     }
   },
   {
@@ -153,6 +159,9 @@ const tests = [
       expect(
         themeFactory("thesundaytimesmagazine", "mainstandard").pullQuoteFont
       ).toEqual("headlineRegular");
+      expect(
+        themeFactory("thesundaytimesmagazine", null).pullQuoteFont
+      ).toEqual("headlineRegular");
     }
   },
   {
@@ -168,6 +177,7 @@ const tests = [
       expect(themeFactory("news", "mainstandard").sectionColour).toEqual(
         "#13354E"
       );
+      expect(themeFactory("news", null).sectionColour).toEqual("#13354E");
       expect(
         themeFactory("business", "magazinestandard").sectionColour
       ).toEqual("#005B8D");
@@ -183,6 +193,7 @@ const tests = [
         "uppercase"
       );
       expect(themeFactory("style", "mainstandard").headlineCase).toEqual(null);
+      expect(themeFactory("style", null).headlineCase).toEqual(null);
     }
   }
 ];

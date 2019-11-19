@@ -52,6 +52,15 @@ describe("Article", () => {
     expect(testInstance.findByType(ArticleMainStandard)).toBeTruthy();
   });
 
+  it("renders with ArticleMainStandard as the default template if null is set for template", () => {
+    const testRenderer = TestRenderer.create(
+      <Article article={{ template: null }} {...requiredProps} />
+    );
+    const testInstance = testRenderer.root;
+
+    expect(testInstance.findByType(ArticleMainStandard)).toBeTruthy();
+  });
+
   it("renders with ArticleMainStandard if the correct template is chosen", () => {
     const testRenderer = TestRenderer.create(
       <Article article={{ template: "mainstandard" }} {...requiredProps} />

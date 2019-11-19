@@ -28,13 +28,6 @@ const adStyle = {
   marginBottom: 0
 };
 
-const maybeInsertDropcap = (content, template, dropcapsDisabled) => {
-  if (content && content.length > 0) {
-    return insertDropcapIntoAST(content, template, dropcapsDisabled);
-  }
-  return content;
-};
-
 class ArticleSkeleton extends Component {
   constructor(props) {
     super(props);
@@ -79,11 +72,10 @@ class ArticleSkeleton extends Component {
     } = article;
 
     const { articleWidth } = this.state;
-    const newContent = maybeInsertDropcap(
-      [...content],
-      template,
-      dropcapsDisabled
-    );
+    const newContent =
+      content &&
+      content.length > 0 &&
+      insertDropcapIntoAST(content, template, dropcapsDisabled);
 
     receiveChildList([
       {
@@ -141,12 +133,14 @@ class ArticleSkeleton extends Component {
                     ) : null}
                   </HeaderContainer>
                   <BodyContainer accessibilityRole="article">
-                    <ArticleBody
-                      content={newContent}
-                      contextUrl={url}
-                      section={section}
-                      paidContentClassName={paidContentClassName}
-                    />
+                    {newContent && (
+                      <ArticleBody
+                        content={newContent}
+                        contextUrl={url}
+                        section={section}
+                        paidContentClassName={paidContentClassName}
+                      />
+                    )}
                     <LazyLoad rootMargin={spacing(10)} threshold={0.5}>
                       {({ observed, registerNode }) => (
                         <ArticleExtras

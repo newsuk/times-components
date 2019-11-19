@@ -344,6 +344,15 @@ export const snapshotTests = renderComponent => [
     }
   },
   {
+    name: "an article with no content if content is set as null",
+    test() {
+      const article = articleFixture({ ...fixtureArgs, content: null });
+      const output = renderComponent(renderArticle(article));
+
+      expect(output).toMatchSnapshot();
+    }
+  },
+  {
     name:
       "an article with a nested markup in first paragraph displays a drop cap",
     test() {

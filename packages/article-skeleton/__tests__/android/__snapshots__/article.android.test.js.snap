@@ -612,7 +612,9 @@ exports[`3. an article with no content 1`] = `
 </View>
 `;
 
-exports[`4. an article with a nested markup in first paragraph displays a drop cap 1`] = `
+exports[`4. an article with no content if content is set as null 1`] = `null`;
+
+exports[`5. an article with a nested markup in first paragraph displays a drop cap 1`] = `
 <View
   style={
     Object {
@@ -1221,7 +1223,7 @@ exports[`4. an article with a nested markup in first paragraph displays a drop c
 </View>
 `;
 
-exports[`6. an inline link reports analytics event on press 1`] = `
+exports[`7. an inline link reports analytics event on press 1`] = `
 Object {
   "action": "Pressed",
   "attrs": Object {
@@ -1249,7 +1251,7 @@ Object {
 }
 `;
 
-exports[`7. breaks up malformed huge paragraphs 1`] = `
+exports[`8. breaks up malformed huge paragraphs 1`] = `
 <View
   style={
     Object {
@@ -1482,7 +1484,7 @@ exports[`7. breaks up malformed huge paragraphs 1`] = `
 </View>
 `;
 
-exports[`8. breaks up nested malformed markup 1`] = `
+exports[`9. breaks up nested malformed markup 1`] = `
 <View
   style={
     Object {
@@ -1715,7 +1717,7 @@ exports[`8. breaks up nested malformed markup 1`] = `
 </View>
 `;
 
-exports[`9. renders content 1`] = `
+exports[`10. renders content 1`] = `
 <View
   style={
     Object {

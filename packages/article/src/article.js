@@ -26,30 +26,32 @@ export class TakeoverBailout extends Error {
 
 const Article = props => {
   const { article, onImagePress } = props;
-  const { leadAsset, template = "mainstandard" } = article || {};
+  const { leadAsset, template } = article || {};
   let { content } = article || {};
-
   if (template === "takeoverpage") {
     throw new TakeoverBailout("Aborted react render: Takeover page");
   }
-
   let onImagePressArticle = null;
-
   if (onImagePress) {
     content = addIndexesToInlineImages(content, leadAsset);
     const mediaList = getMediaList(content, leadAsset);
     onImagePressArticle = index => onImagePress(index, mediaList);
   }
-
   const Component = templates[template] || ArticleMainStandard;
+  const newProps = {
+    ...props,
+    article: {
+      ...article,
+      template: article && article.template ? article.template : "mainstandard"
+    }
+  };
 
   return (
     <Responsive>
       <MessageManager animate delay={3000} scale={scales.medium}>
-        <Component {...props} onImagePress={onImagePressArticle} />
+        <Component {...newProps} onImagePress={onImagePressArticle} />
       </MessageManager>
     </Responsive>
   );
 };
-
 export default Article;
