@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.3.0](https://github.com/newsuk/times-components/compare/@times-components/article@7.2.190...@times-components/article@7.3.0) (2019-11-19)
+
+
+### Features
+
+* REPLAT-9476 metadata fix ([#2386](https://github.com/newsuk/times-components/issues/2386)) ([387685f](https://github.com/newsuk/times-components/commit/387685fc4bbe307490b5262e445fe17c1224d027))
+
+
+
+
+
 ## [7.2.190](https://github.com/newsuk/times-components/compare/@times-components/article@7.2.189...@times-components/article@7.2.190) (2019-11-18)
 
 **Note:** Version bump only for package @times-components/article

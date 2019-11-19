@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.12.0](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.11.2...@times-components/provider-queries@2.12.0) (2019-11-19)
+
+
+### Features
+
+* REPLAT-10475 draft article query and provider created ([#2387](https://github.com/newsuk/times-components/issues/2387)) ([5af75e4](https://github.com/newsuk/times-components/commit/5af75e43f26ebb4c64cb147079eebc10601b4096))
+
+
+
+
+
 ## [2.11.2](https://github.com/newsuk/times-components/compare/@times-components/provider-queries@2.11.1...@times-components/provider-queries@2.11.2) (2019-10-30)
 
 **Note:** Version bump only for package @times-components/provider-queries

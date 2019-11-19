@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.21.0](https://github.com/newsuk/times-components/compare/@times-components/provider@1.20.0...@times-components/provider@1.21.0) (2019-11-19)
+
+
+### Features
+
+* REPLAT-10475 draft article query and provider created ([#2387](https://github.com/newsuk/times-components/issues/2387)) ([5af75e4](https://github.com/newsuk/times-components/commit/5af75e43f26ebb4c64cb147079eebc10601b4096))
+
+
+
+
+
 # [1.20.0](https://github.com/newsuk/times-components/compare/@times-components/provider@1.19.16...@times-components/provider@1.20.0) (2019-11-18)
 
 

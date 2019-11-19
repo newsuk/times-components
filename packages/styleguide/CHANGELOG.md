@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.31.0](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.30.4...@times-components/styleguide@3.31.0) (2019-11-19)
+
+
+### Features
+
+* REPLAT-9476 metadata fix ([#2386](https://github.com/newsuk/times-components/issues/2386)) ([387685f](https://github.com/newsuk/times-components/commit/387685fc4bbe307490b5262e445fe17c1224d027))
+
+
+
+
+
 ## [3.30.4](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.30.3...@times-components/styleguide@3.30.4) (2019-11-14)
 
 
