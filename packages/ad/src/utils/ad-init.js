@@ -328,8 +328,8 @@ export default ({ el, data, platform, eventCallback, window }) => {
       process() {
         if (isWeb) {
           this.init();
-          return this.bid();
-        }
+            return this.bid();
+          }
 
         const msg = "[Prebid] INFO: no prebid on native";
         eventCallback("warn", msg);
@@ -402,8 +402,7 @@ export default ({ el, data, platform, eventCallback, window }) => {
 
       process() {
         if (amazonAccountID) {
-          this.init();
-          return this.bid();
+          return this.init();
         }
 
         const msg = "[Amazon] INFO: amazonAccountID undefined";
@@ -420,9 +419,11 @@ export default ({ el, data, platform, eventCallback, window }) => {
           },
           pubID: amazonAccountID
         };
-        eventCallback("warn", "[Amazon] INFO: initialised");
         eventCallback("log", apstagConfig);
-        apstag.init(apstagConfig);
+        apstag.init(apstagConfig, () => {
+          eventCallback("warn", "[Amazon] INFO: initialised");
+          return this.bid()
+        });
       }
     },
 
