@@ -38,7 +38,10 @@ const Article = props => {
     onImagePressArticle = index => onImagePress(index, mediaList);
   }
   const Component = template ? templates[template] : ArticleMainStandard;
-  const newProps = {...props, article: {...article, template: article.template || 'mainstandard'}};
+  const newProps = {
+    ...props,
+    article: { ...article, template: article.template || "mainstandard" }
+  };
 
   return (
     <Responsive>
@@ -49,4 +52,3 @@ const Article = props => {
   );
 };
 export default Article;
-

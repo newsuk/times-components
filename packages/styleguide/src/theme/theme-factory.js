@@ -1,9 +1,6 @@
 import sectionColours, { secondarySectionColours } from "../colours/section";
 
-const sectionColourPicker = (
-  section,
-  template
-) => {
+const sectionColourPicker = (section, template) => {
   const config = {
     indepth: {},
     magazinecomment: {
@@ -26,11 +23,7 @@ const sectionColourPicker = (
   return config[template][section];
 };
 
-const magazineFontPicker = (
-  defaultFont,
-  section,
-  template
-) => {
+const magazineFontPicker = (defaultFont, section, template) => {
   const magazineSections = {
     culture: "cultureMagazine",
     Culture: "cultureMagazine",
@@ -52,16 +45,16 @@ const magazineFontPicker = (
   return config[template][section] || defaultFont;
 };
 
-const headlineCasePicker = (section = "default", template = "mainstandard") =>
+const headlineCasePicker = (section, template) =>
   section &&
   section.toLowerCase() === "style" &&
   ["indepth", "magazinestandard", "magazinecomment"].includes(template)
     ? "uppercase"
     : null;
 
-export default (section, template) => {
-  section = section || 'default';
-  template = template || 'mainstandard';
+export default (sectionParam, templateParam) => {
+  const section = sectionParam || "default";
+  const template = templateParam || "mainstandard";
 
   return {
     dropCapFont: magazineFontPicker("dropCap", section, template),
@@ -69,5 +62,5 @@ export default (section, template) => {
     pullQuoteFont: magazineFontPicker("headlineRegular", section, template),
     sectionColour: sectionColourPicker(section, template),
     headlineCase: headlineCasePicker(section, template)
-  }
+  };
 };
