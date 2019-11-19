@@ -4,6 +4,7 @@ const React = require("react");
 const { ApolloProvider } = require("react-apollo");
 const { HelmetProvider } = require("react-helmet-async");
 const { ArticleProvider } = require("@times-components/provider/rnw");
+const { DraftArticleProvider } = require("@times-components/provider/rnw");
 const Article = require("@times-components/article/rnw").default;
 const {
   ContextProviderWithDefaults,
@@ -27,7 +28,8 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     spotAccountId,
     getCookieValue,
     userState,
-    paidContentClassName
+    paidContentClassName,
+    isPreview
   } = data;
 
   return React.createElement(
@@ -37,14 +39,19 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
       ApolloProvider,
       { client },
       React.createElement(
-        ArticleProvider,
+        isPreview ? DraftArticleProvider : ArticleProvider,
         {
           analyticsStream,
           debounceTimeMs,
           id: articleId
         },
-        ({ article, isLoading, error, refetch }) =>
-          React.createElement(
+        providerData => {
+          const { isLoading, error, refetch } = providerData;
+          const article = isPreview
+            ? providerData.draftArticle
+            : providerData.article;
+
+          return React.createElement(
             ContextProviderWithDefaults,
             {
               value: {
@@ -77,7 +84,8 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
               spotAccountId,
               paidContentClassName
             })
-          )
+          );
+        }
       )
     )
   );
