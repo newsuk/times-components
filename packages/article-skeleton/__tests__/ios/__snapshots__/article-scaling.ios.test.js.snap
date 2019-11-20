@@ -10,60 +10,65 @@ exports[`1. scaled medium full article 1`] = `
 >
   <RCTScrollView>
     <View>
-      <View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "overflow": "hidden",
-              "width": undefined,
-            }
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
           }
-        />
-      </View>
-      <View>
+        }
+      />
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
+          }
+        }
+      >
         <View
           style={
             Object {
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "overflow": "hidden",
-              "width": undefined,
+              "marginBottom": 20,
+              "paddingLeft": 10,
+              "paddingRight": 10,
             }
           }
         >
-          <View
-            style={
-              Object {
-                "marginBottom": 20,
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              }
-            }
-          >
-            <View>
-              <Text>
-                <Text
-                  style={
-                    Object {
-                      "color": "#000000",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 36,
-                      "fontStyle": "normal",
-                      "fontWeight": "normal",
-                      "lineHeight": 52,
-                    }
+          <View>
+            <Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                    "lineHeight": 52,
                   }
-                >
-                  Some content
-                </Text>
+                }
+              >
+                Some content
               </Text>
-            </View>
+            </Text>
           </View>
         </View>
       </View>
-      <View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
+          }
+        }
+      >
         <View
           style={
             Object {
@@ -74,32 +79,7 @@ exports[`1. scaled medium full article 1`] = `
             }
           }
         >
-          <View
-            style={
-              Object {
-                "backgroundColor": "#ffffff",
-                "maxWidth": "100%",
-                "overflow": "hidden",
-                "width": undefined,
-              }
-            }
-          >
-            <ArticleExtras />
-          </View>
-        </View>
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "overflow": "hidden",
-              "width": undefined,
-            }
-          }
-        >
-          <ActivityIndicator />
+          <ArticleExtras />
         </View>
       </View>
     </View>
@@ -117,60 +97,65 @@ exports[`2. scaled large full article 1`] = `
 >
   <RCTScrollView>
     <View>
-      <View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "overflow": "hidden",
-              "width": undefined,
-            }
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
           }
-        />
-      </View>
-      <View>
+        }
+      />
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
+          }
+        }
+      >
         <View
           style={
             Object {
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "overflow": "hidden",
-              "width": undefined,
+              "marginBottom": 20,
+              "paddingLeft": 10,
+              "paddingRight": 10,
             }
           }
         >
-          <View
-            style={
-              Object {
-                "marginBottom": 20,
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              }
-            }
-          >
-            <View>
-              <Text>
-                <Text
-                  style={
-                    Object {
-                      "color": "#000000",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 36,
-                      "fontStyle": "normal",
-                      "fontWeight": "normal",
-                      "lineHeight": 52,
-                    }
+          <View>
+            <Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                    "lineHeight": 52,
                   }
-                >
-                  Some content
-                </Text>
+                }
+              >
+                Some content
               </Text>
-            </View>
+            </Text>
           </View>
         </View>
       </View>
-      <View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
+          }
+        }
+      >
         <View
           style={
             Object {
@@ -181,32 +166,7 @@ exports[`2. scaled large full article 1`] = `
             }
           }
         >
-          <View
-            style={
-              Object {
-                "backgroundColor": "#ffffff",
-                "maxWidth": "100%",
-                "overflow": "hidden",
-                "width": undefined,
-              }
-            }
-          >
-            <ArticleExtras />
-          </View>
-        </View>
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "overflow": "hidden",
-              "width": undefined,
-            }
-          }
-        >
-          <ActivityIndicator />
+          <ArticleExtras />
         </View>
       </View>
     </View>
@@ -224,60 +184,65 @@ exports[`3. scaled xlarge full article 1`] = `
 >
   <RCTScrollView>
     <View>
-      <View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "overflow": "hidden",
-              "width": undefined,
-            }
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
           }
-        />
-      </View>
-      <View>
+        }
+      />
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
+          }
+        }
+      >
         <View
           style={
             Object {
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "overflow": "hidden",
-              "width": undefined,
+              "marginBottom": 20,
+              "paddingLeft": 10,
+              "paddingRight": 10,
             }
           }
         >
-          <View
-            style={
-              Object {
-                "marginBottom": 20,
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              }
-            }
-          >
-            <View>
-              <Text>
-                <Text
-                  style={
-                    Object {
-                      "color": "#000000",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 36,
-                      "fontStyle": "normal",
-                      "fontWeight": "normal",
-                      "lineHeight": 52,
-                    }
+          <View>
+            <Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                    "lineHeight": 52,
                   }
-                >
-                  Some content
-                </Text>
+                }
+              >
+                Some content
               </Text>
-            </View>
+            </Text>
           </View>
         </View>
       </View>
-      <View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
+          }
+        }
+      >
         <View
           style={
             Object {
@@ -288,32 +253,7 @@ exports[`3. scaled xlarge full article 1`] = `
             }
           }
         >
-          <View
-            style={
-              Object {
-                "backgroundColor": "#ffffff",
-                "maxWidth": "100%",
-                "overflow": "hidden",
-                "width": undefined,
-              }
-            }
-          >
-            <ArticleExtras />
-          </View>
-        </View>
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "overflow": "hidden",
-              "width": undefined,
-            }
-          }
-        >
-          <ActivityIndicator />
+          <ArticleExtras />
         </View>
       </View>
     </View>

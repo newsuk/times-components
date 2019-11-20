@@ -11,60 +11,39 @@ exports[`1. a primary image 1`] = `
       </Gutter>
     }
     initialNumToRender={2}
-    maxToRenderPerBatch={10}
     nestedScrollEnabled={true}
-    numColumns={1}
-    onEndReachedThreshold={2}
     removeClippedSubviews={true}
-    scrollEventThrottle={50}
     showsVerticalScrollIndicator={false}
-    updateCellsBatchingPeriod={50}
     windowSize={3}
   >
     <View>
+      <View />
       <View>
-        <View />
-      </View>
-      <View>
-        <View>
-          <ArticleImage
-            captionOptions={
-              Object {
-                "caption": "A Caption",
-                "credits": "Some Credits",
-              }
+        <ArticleImage
+          captionOptions={
+            Object {
+              "caption": "A Caption",
+              "credits": "Some Credits",
             }
-            imageOptions={
-              Object {
-                "display": "primary",
-                "ratio": "3:2",
-                "relativeHeight": undefined,
-                "relativeHorizontalOffset": undefined,
-                "relativeVerticalOffset": undefined,
-                "relativeWidth": undefined,
-                "uri": "https://image-2.io",
-              }
+          }
+          imageOptions={
+            Object {
+              "display": "primary",
+              "ratio": "3:2",
+              "relativeHeight": undefined,
+              "relativeHorizontalOffset": undefined,
+              "relativeVerticalOffset": undefined,
+              "relativeWidth": undefined,
+              "uri": "https://image-2.io",
             }
-          />
-        </View>
+          }
+        />
       </View>
       <View>
         <View>
-          <View>
-            <ArticleExtras
-              articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-              articleUrl="https://url.io"
-            />
-          </View>
-        </View>
-      </View>
-      <View>
-        <View>
-          <ActivityIndicator
-            animating={true}
-            color="#999999"
-            hidesWhenStopped={true}
-            size="large"
+          <ArticleExtras
+            articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+            articleUrl="https://url.io"
           />
         </View>
       </View>
@@ -84,60 +63,39 @@ exports[`2. a fullwidth image 1`] = `
       </Gutter>
     }
     initialNumToRender={2}
-    maxToRenderPerBatch={10}
     nestedScrollEnabled={true}
-    numColumns={1}
-    onEndReachedThreshold={2}
     removeClippedSubviews={true}
-    scrollEventThrottle={50}
     showsVerticalScrollIndicator={false}
-    updateCellsBatchingPeriod={50}
     windowSize={3}
   >
     <View>
+      <View />
       <View>
-        <View />
-      </View>
-      <View>
-        <View>
-          <ArticleImage
-            captionOptions={
-              Object {
-                "caption": "A Caption",
-                "credits": "Some Credits",
-              }
+        <ArticleImage
+          captionOptions={
+            Object {
+              "caption": "A Caption",
+              "credits": "Some Credits",
             }
-            imageOptions={
-              Object {
-                "display": "fullwidth",
-                "ratio": "3:2",
-                "relativeHeight": undefined,
-                "relativeHorizontalOffset": undefined,
-                "relativeVerticalOffset": undefined,
-                "relativeWidth": undefined,
-                "uri": "https://image-2.io",
-              }
+          }
+          imageOptions={
+            Object {
+              "display": "fullwidth",
+              "ratio": "3:2",
+              "relativeHeight": undefined,
+              "relativeHorizontalOffset": undefined,
+              "relativeVerticalOffset": undefined,
+              "relativeWidth": undefined,
+              "uri": "https://image-2.io",
             }
-          />
-        </View>
+          }
+        />
       </View>
       <View>
         <View>
-          <View>
-            <ArticleExtras
-              articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-              articleUrl="https://url.io"
-            />
-          </View>
-        </View>
-      </View>
-      <View>
-        <View>
-          <ActivityIndicator
-            animating={true}
-            color="#999999"
-            hidesWhenStopped={true}
-            size="large"
+          <ArticleExtras
+            articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+            articleUrl="https://url.io"
           />
         </View>
       </View>
@@ -157,60 +115,39 @@ exports[`3. a secondary image 1`] = `
       </Gutter>
     }
     initialNumToRender={2}
-    maxToRenderPerBatch={10}
     nestedScrollEnabled={true}
-    numColumns={1}
-    onEndReachedThreshold={2}
     removeClippedSubviews={true}
-    scrollEventThrottle={50}
     showsVerticalScrollIndicator={false}
-    updateCellsBatchingPeriod={50}
     windowSize={3}
   >
     <View>
+      <View />
       <View>
-        <View />
-      </View>
-      <View>
-        <View>
-          <ArticleImage
-            captionOptions={
-              Object {
-                "caption": "A Caption",
-                "credits": "Some Credits",
-              }
+        <ArticleImage
+          captionOptions={
+            Object {
+              "caption": "A Caption",
+              "credits": "Some Credits",
             }
-            imageOptions={
-              Object {
-                "display": "secondary",
-                "ratio": "3:2",
-                "relativeHeight": undefined,
-                "relativeHorizontalOffset": undefined,
-                "relativeVerticalOffset": undefined,
-                "relativeWidth": undefined,
-                "uri": "https://image-2.io",
-              }
+          }
+          imageOptions={
+            Object {
+              "display": "secondary",
+              "ratio": "3:2",
+              "relativeHeight": undefined,
+              "relativeHorizontalOffset": undefined,
+              "relativeVerticalOffset": undefined,
+              "relativeWidth": undefined,
+              "uri": "https://image-2.io",
             }
-          />
-        </View>
+          }
+        />
       </View>
       <View>
         <View>
-          <View>
-            <ArticleExtras
-              articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-              articleUrl="https://url.io"
-            />
-          </View>
-        </View>
-      </View>
-      <View>
-        <View>
-          <ActivityIndicator
-            animating={true}
-            color="#999999"
-            hidesWhenStopped={true}
-            size="large"
+          <ArticleExtras
+            articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+            articleUrl="https://url.io"
           />
         </View>
       </View>
@@ -230,60 +167,39 @@ exports[`4. an inline image 1`] = `
       </Gutter>
     }
     initialNumToRender={2}
-    maxToRenderPerBatch={10}
     nestedScrollEnabled={true}
-    numColumns={1}
-    onEndReachedThreshold={2}
     removeClippedSubviews={true}
-    scrollEventThrottle={50}
     showsVerticalScrollIndicator={false}
-    updateCellsBatchingPeriod={50}
     windowSize={3}
   >
     <View>
+      <View />
       <View>
-        <View />
-      </View>
-      <View>
-        <View>
-          <ArticleImage
-            captionOptions={
-              Object {
-                "caption": "A Caption",
-                "credits": "Some Credits",
-              }
+        <ArticleImage
+          captionOptions={
+            Object {
+              "caption": "A Caption",
+              "credits": "Some Credits",
             }
-            imageOptions={
-              Object {
-                "display": "secondary",
-                "ratio": "9:4",
-                "relativeHeight": undefined,
-                "relativeHorizontalOffset": undefined,
-                "relativeVerticalOffset": undefined,
-                "relativeWidth": undefined,
-                "uri": "https://image-inline.io",
-              }
+          }
+          imageOptions={
+            Object {
+              "display": "secondary",
+              "ratio": "9:4",
+              "relativeHeight": undefined,
+              "relativeHorizontalOffset": undefined,
+              "relativeVerticalOffset": undefined,
+              "relativeWidth": undefined,
+              "uri": "https://image-inline.io",
             }
-          />
-        </View>
+          }
+        />
       </View>
       <View>
         <View>
-          <View>
-            <ArticleExtras
-              articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-              articleUrl="https://url.io"
-            />
-          </View>
-        </View>
-      </View>
-      <View>
-        <View>
-          <ActivityIndicator
-            animating={true}
-            color="#999999"
-            hidesWhenStopped={true}
-            size="large"
+          <ArticleExtras
+            articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+            articleUrl="https://url.io"
           />
         </View>
       </View>

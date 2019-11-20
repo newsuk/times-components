@@ -102,20 +102,26 @@ export const fixtureArgs = {
       name: "image"
     },
     {
-      attributes: {
-        href: "https://link.io",
-        target: "_blank"
-      },
+      attributes: {},
+      name: "paragraph",
       children: [
         {
           attributes: {
-            value: "Some Link"
+            href: "https://link.io",
+            target: "_blank"
           },
-          children: [],
-          name: "text"
+          children: [
+            {
+              attributes: {
+                value: "Some Link"
+              },
+              children: [],
+              name: "text"
+            }
+          ],
+          name: "link"
         }
-      ],
-      name: "link"
+      ]
     },
     {
       attributes: {},

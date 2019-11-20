@@ -10,209 +10,616 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
 >
   <RCTScrollView>
     <View>
-      <View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "overflow": "hidden",
-              "width": undefined,
-            }
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
           }
-        />
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "overflow": "hidden",
-              "width": undefined,
-            }
+        }
+      />
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
           }
-        >
-          <Text
-            style={
-              Object {
-                "color": undefined,
-                "fontFamily": "TimesModern-Regular",
-                "fontSize": 216,
-                "left": 66.48046875,
-                "lineHeight": 216,
-                "position": "absolute",
-                "top": -18,
-              }
-            }
-          >
-            T
-          </Text>
-          <View
-            style={
-              Object {
-                "height": 156,
-                "marginBottom": 20,
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              }
-            }
-          >
-            <View>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 36,
-                    "fontStyle": "normal",
-                    "fontWeight": "normal",
-                    "left": 141,
-                    "lineHeight": 52,
-                    "position": "absolute",
-                    "top": 0,
-                  }
-                }
-              >
-                his
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 36,
-                    "fontStyle": "normal",
-                    "fontWeight": "normal",
-                    "left": 197.0390625,
-                    "lineHeight": 52,
-                    "position": "absolute",
-                    "top": 0,
-                  }
-                }
-              >
-                being
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 36,
-                    "fontStyle": "normal",
-                    "fontWeight": "normal",
-                    "left": 294.017578125,
-                    "lineHeight": 52,
-                    "position": "absolute",
-                    "top": 0,
-                  }
-                }
-              >
-                Black
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 36,
-                    "fontStyle": "normal",
-                    "fontWeight": "normal",
-                    "left": 390.75,
-                    "lineHeight": 52,
-                    "position": "absolute",
-                    "top": 0,
-                  }
-                }
-              >
-                History
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 36,
-                    "fontStyle": "normal",
-                    "fontWeight": "normal",
-                    "left": 514.095703125,
-                    "lineHeight": 52,
-                    "position": "absolute",
-                    "top": 0,
-                  }
-                }
-              >
-                Month,
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 36,
-                    "fontStyle": "normal",
-                    "fontWeight": "normal",
-                    "left": 633.486328125,
-                    "lineHeight": 52,
-                    "position": "absolute",
-                    "top": 0,
-                  }
-                }
-              >
-                last
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 36,
-                    "fontStyle": "normal",
-                    "fontWeight": "normal",
-                    "left": 141,
-                    "lineHeight": 52,
-                    "position": "absolute",
-                    "top": 52,
-                  }
-                }
-              >
-                week
-              </Text>
-            </View>
-          </View>
-        </View>
-      </View>
-      <View>
-        <View
+        }
+      >
+        <Text
           style={
             Object {
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "overflow": "hidden",
-              "width": undefined,
+              "color": undefined,
+              "fontFamily": "TimesModern-Regular",
+              "fontSize": 216,
+              "left": 66.48046875,
+              "lineHeight": 216,
+              "position": "absolute",
+              "top": -18,
             }
           }
         >
-          <View
-            style={
-              Object {
-                "marginBottom": 20,
-                "paddingHorizontal": 10,
-              }
+          T
+        </Text>
+        <View
+          style={
+            Object {
+              "height": 156,
+              "marginBottom": 20,
+              "paddingLeft": 10,
+              "paddingRight": 10,
             }
-          >
-            <InteractiveWrapper />
+          }
+        >
+          <View>
+            <Text
+              style={
+                Object {
+                  "color": "#000000",
+                  "fontFamily": "TimesDigitalW04",
+                  "fontSize": 36,
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                  "left": 141,
+                  "lineHeight": 52,
+                  "position": "absolute",
+                  "top": 0,
+                }
+              }
+            >
+              his
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#000000",
+                  "fontFamily": "TimesDigitalW04",
+                  "fontSize": 36,
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                  "left": 197.0390625,
+                  "lineHeight": 52,
+                  "position": "absolute",
+                  "top": 0,
+                }
+              }
+            >
+              being
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#000000",
+                  "fontFamily": "TimesDigitalW04",
+                  "fontSize": 36,
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                  "left": 294.017578125,
+                  "lineHeight": 52,
+                  "position": "absolute",
+                  "top": 0,
+                }
+              }
+            >
+              Black
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#000000",
+                  "fontFamily": "TimesDigitalW04",
+                  "fontSize": 36,
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                  "left": 390.75,
+                  "lineHeight": 52,
+                  "position": "absolute",
+                  "top": 0,
+                }
+              }
+            >
+              History
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#000000",
+                  "fontFamily": "TimesDigitalW04",
+                  "fontSize": 36,
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                  "left": 514.095703125,
+                  "lineHeight": 52,
+                  "position": "absolute",
+                  "top": 0,
+                }
+              }
+            >
+              Month,
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#000000",
+                  "fontFamily": "TimesDigitalW04",
+                  "fontSize": 36,
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                  "left": 633.486328125,
+                  "lineHeight": 52,
+                  "position": "absolute",
+                  "top": 0,
+                }
+              }
+            >
+              last
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#000000",
+                  "fontFamily": "TimesDigitalW04",
+                  "fontSize": 36,
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                  "left": 141,
+                  "lineHeight": 52,
+                  "position": "absolute",
+                  "top": 52,
+                }
+              }
+            >
+              week
+            </Text>
           </View>
         </View>
       </View>
       <View
         style={
           Object {
-            "height": 0,
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
           }
         }
-      />
-      <View>
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 20,
+              "paddingHorizontal": 10,
+            }
+          }
+        >
+          <InteractiveWrapper />
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
+          }
+        }
+      >
+        <ArticleImage />
+      </View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
+          }
+        }
+      >
+        <ArticleImage />
+      </View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
+          }
+        }
+      >
+        <ArticleImage />
+      </View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 20,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            }
+          }
+        >
+          <View>
+            <Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#006699",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                    "lineHeight": 52,
+                    "marginBottom": 25,
+                    "marginTop": 0,
+                    "textDecorationLine": "underline",
+                  }
+                }
+              >
+                Some Link
+              </Text>
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 20,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            }
+          }
+        >
+          <View>
+            <Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                    "lineHeight": 52,
+                  }
+                }
+              >
+                Some content
+              </Text>
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
+          }
+        }
+      >
+        <Ad />
+      </View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
+          }
+        }
+      >
+        <View>
+          <PullQuote>
+            The pull quote content
+          </PullQuote>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flexDirection": "column",
+              "paddingBottom": 25,
+              "width": "100%",
+            }
+          }
+        >
+          <Video />
+          <View>
+            <View
+              style={
+                Object {
+                  "paddingLeft": 10,
+                  "paddingTop": 10,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 13,
+                    "lineHeight": 16,
+                  }
+                }
+              >
+                This is video caption
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
+          }
+        }
+      >
+        <View>
+          <View
+            style={
+              Object {
+                "marginHorizontal": 10,
+                "marginVertical": 5,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#FF0000",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 15,
+                  "fontWeight": "400",
+                  "letterSpacing": 1.2,
+                  "lineHeight": 18,
+                  "marginBottom": 20,
+                }
+              }
+            >
+              EXAMPLE TITLE
+            </Text>
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                    "marginBottom": 20,
+                    "paddingLeft": 1,
+                    "width": "100%",
+                  }
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#FF0000",
+                      "borderRadius": 2.5,
+                      "height": 5,
+                      "top": 2,
+                      "width": 5,
+                    }
+                  }
+                />
+                <Text
+                  style={
+                    Object {
+                      "color": "#333333",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 16,
+                      "lineHeight": 27,
+                      "marginTop": -8,
+                      "paddingLeft": 15,
+                      "width": "95%",
+                    }
+                  }
+                >
+                  Example bullet text
+                </Text>
+              </View>
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                    "marginBottom": 20,
+                    "paddingLeft": 1,
+                    "width": "100%",
+                  }
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#FF0000",
+                      "borderRadius": 2.5,
+                      "height": 5,
+                      "top": 2,
+                      "width": 5,
+                    }
+                  }
+                />
+                <Text
+                  style={
+                    Object {
+                      "color": "#333333",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 16,
+                      "lineHeight": 27,
+                      "marginTop": -8,
+                      "paddingLeft": 15,
+                      "width": "95%",
+                    }
+                  }
+                >
+                  An example 
+                  <Text
+                    style={
+                      Object {
+                        "color": "#006699",
+                        "textDecorationLine": "underline",
+                      }
+                    }
+                  >
+                    link
+                  </Text>
+                </Text>
+              </View>
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                    "marginBottom": 20,
+                    "paddingLeft": 1,
+                    "width": "100%",
+                  }
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#FF0000",
+                      "borderRadius": 2.5,
+                      "height": 5,
+                      "top": 2,
+                      "width": 5,
+                    }
+                  }
+                />
+                <Text
+                  style={
+                    Object {
+                      "color": "#333333",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 16,
+                      "lineHeight": 27,
+                      "marginTop": -8,
+                      "paddingLeft": 15,
+                      "width": "95%",
+                    }
+                  }
+                >
+                  More example text.
+                </Text>
+              </View>
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                    "marginBottom": 20,
+                    "paddingLeft": 1,
+                    "width": "100%",
+                  }
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#FF0000",
+                      "borderRadius": 2.5,
+                      "height": 5,
+                      "top": 2,
+                      "width": 5,
+                    }
+                  }
+                />
+                <Text
+                  style={
+                    Object {
+                      "color": "#333333",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 16,
+                      "lineHeight": 27,
+                      "marginTop": -8,
+                      "paddingLeft": 15,
+                      "width": "95%",
+                    }
+                  }
+                >
+                  Example text 
+                  <Text
+                    style={
+                      Object {
+                        "fontWeight": "bold",
+                      }
+                    }
+                  >
+                    this is bold 
+                  </Text>
+                  <Text
+                    style={
+                      Object {
+                        "fontStyle": "italic",
+                      }
+                    }
+                  >
+                    this is in italics.
+                  </Text>
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
+          }
+        }
+      >
         <View
           style={
             Object {
@@ -223,7 +630,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
             }
           }
         >
-          <ActivityIndicator />
+          <ArticleExtras />
         </View>
       </View>
     </View>
@@ -241,73 +648,69 @@ exports[`2. an article with interactives 1`] = `
 >
   <RCTScrollView>
     <View>
-      <View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "overflow": "hidden",
-              "width": undefined,
-            }
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
           }
-        />
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "overflow": "hidden",
-              "width": undefined,
-            }
+        }
+      />
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
           }
-        >
-          <View
-            style={
-              Object {
-                "marginBottom": 20,
-                "paddingHorizontal": 10,
-              }
-            }
-          >
-            <InteractiveWrapper />
-          </View>
-        </View>
-      </View>
-      <View>
+        }
+      >
         <View
           style={
             Object {
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "overflow": "hidden",
-              "width": undefined,
+              "marginBottom": 20,
+              "paddingHorizontal": 10,
             }
           }
         >
-          <View
-            style={
-              Object {
-                "marginBottom": 20,
-                "paddingHorizontal": 0,
-                "width": "100%",
-              }
-            }
-          >
-            <InteractiveWrapper />
-          </View>
+          <InteractiveWrapper />
         </View>
       </View>
       <View
         style={
           Object {
-            "height": 0,
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
           }
         }
-      />
-      <View>
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 20,
+              "paddingHorizontal": 0,
+              "width": "100%",
+            }
+          }
+        >
+          <InteractiveWrapper />
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
+          }
+        }
+      >
         <View
           style={
             Object {
@@ -318,7 +721,7 @@ exports[`2. an article with interactives 1`] = `
             }
           }
         >
-          <ActivityIndicator />
+          <ArticleExtras />
         </View>
       </View>
     </View>
@@ -336,44 +739,26 @@ exports[`3. an article with no content 1`] = `
 >
   <RCTScrollView>
     <View>
-      <View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "overflow": "hidden",
-              "width": undefined,
-            }
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
           }
-        />
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "overflow": "hidden",
-              "width": undefined,
-            }
+        }
+      />
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
           }
-        >
-          <View
-            style={
-              Object {
-                "backgroundColor": "#ffffff",
-                "maxWidth": "100%",
-                "overflow": "hidden",
-                "width": undefined,
-              }
-            }
-          >
-            <ArticleExtras />
-          </View>
-        </View>
-      </View>
-      <View>
+        }
+      >
         <View
           style={
             Object {
@@ -384,7 +769,7 @@ exports[`3. an article with no content 1`] = `
             }
           }
         >
-          <ActivityIndicator />
+          <ArticleExtras />
         </View>
       </View>
     </View>
@@ -404,414 +789,410 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
 >
   <RCTScrollView>
     <View>
-      <View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "overflow": "hidden",
-              "width": undefined,
-            }
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
           }
-        />
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "overflow": "hidden",
-              "width": undefined,
-            }
+        }
+      />
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
           }
-        >
-          <Text
-            style={
-              Object {
-                "color": undefined,
-                "fontFamily": "TimesModern-Regular",
-                "fontSize": 216,
-                "left": 69.75,
-                "lineHeight": 216,
-                "position": "absolute",
-                "top": -18,
-              }
-            }
-          >
-            Q
-          </Text>
-          <View
-            style={
-              Object {
-                "height": 156,
-                "marginBottom": 20,
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              }
-            }
-          >
-            <View>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 36,
-                    "fontStyle": "normal",
-                    "fontWeight": "bold",
-                    "left": 149,
-                    "lineHeight": 52,
-                    "position": "absolute",
-                    "top": 0,
-                  }
-                }
-              >
-                Some
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 36,
-                    "fontStyle": "normal",
-                    "fontWeight": "bold",
-                    "left": 250.42578125,
-                    "lineHeight": 52,
-                    "position": "absolute",
-                    "top": 0,
-                  }
-                }
-              >
-                years
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 36,
-                    "fontStyle": "normal",
-                    "fontWeight": "bold",
-                    "left": 345.541015625,
-                    "lineHeight": 52,
-                    "position": "absolute",
-                    "top": 0,
-                  }
-                }
-              >
-                ago
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 36,
-                    "fontStyle": "normal",
-                    "fontWeight": "bold",
-                    "left": 414.763671875,
-                    "lineHeight": 52,
-                    "position": "absolute",
-                    "top": 0,
-                  }
-                }
-              >
-                I
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 36,
-                    "fontStyle": "normal",
-                    "fontWeight": "bold",
-                    "left": 433.466796875,
-                    "lineHeight": 52,
-                    "position": "absolute",
-                    "top": 0,
-                  }
-                }
-              >
-                made
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 36,
-                    "fontStyle": "normal",
-                    "fontWeight": "bold",
-                    "left": 532.888671875,
-                    "lineHeight": 52,
-                    "position": "absolute",
-                    "top": 0,
-                  }
-                }
-              >
-                the
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 36,
-                    "fontStyle": "normal",
-                    "fontWeight": "bold",
-                    "left": 592.4609375,
-                    "lineHeight": 52,
-                    "position": "absolute",
-                    "top": 0,
-                  }
-                }
-              >
-                decision
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 36,
-                    "fontStyle": "normal",
-                    "fontWeight": "bold",
-                    "left": 149,
-                    "lineHeight": 52,
-                    "position": "absolute",
-                    "top": 52,
-                  }
-                }
-              >
-                to
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 36,
-                    "fontStyle": "normal",
-                    "fontWeight": "bold",
-                    "left": 189.8515625,
-                    "lineHeight": 52,
-                    "position": "absolute",
-                    "top": 52,
-                  }
-                }
-              >
-                take
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 36,
-                    "fontStyle": "normal",
-                    "fontWeight": "bold",
-                    "left": 267.072265625,
-                    "lineHeight": 52,
-                    "position": "absolute",
-                    "top": 52,
-                  }
-                }
-              >
-                as
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 36,
-                    "fontStyle": "normal",
-                    "fontWeight": "bold",
-                    "left": 314.12890625,
-                    "lineHeight": 52,
-                    "position": "absolute",
-                    "top": 52,
-                  }
-                }
-              >
-                a
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 36,
-                    "fontStyle": "normal",
-                    "fontWeight": "bold",
-                    "left": 342.623046875,
-                    "lineHeight": 52,
-                    "position": "absolute",
-                    "top": 52,
-                  }
-                }
-              >
-                friend
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 36,
-                    "fontStyle": "normal",
-                    "fontWeight": "bold",
-                    "left": 444.189453125,
-                    "lineHeight": 52,
-                    "position": "absolute",
-                    "top": 52,
-                  }
-                }
-              >
-                a
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 36,
-                    "fontStyle": "normal",
-                    "fontWeight": "bold",
-                    "left": 472.68359375,
-                    "lineHeight": 52,
-                    "position": "absolute",
-                    "top": 52,
-                  }
-                }
-              >
-                woman
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 36,
-                    "fontStyle": "normal",
-                    "fontWeight": "bold",
-                    "left": 600.177734375,
-                    "lineHeight": 52,
-                    "position": "absolute",
-                    "top": 52,
-                  }
-                }
-              >
-                who
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 36,
-                    "fontStyle": "normal",
-                    "fontWeight": "bold",
-                    "left": 676.501953125,
-                    "lineHeight": 52,
-                    "position": "absolute",
-                    "top": 52,
-                  }
-                }
-              >
-                is
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 36,
-                    "fontStyle": "normal",
-                    "fontWeight": "bold",
-                    "left": 149,
-                    "lineHeight": 52,
-                    "position": "absolute",
-                    "top": 104,
-                  }
-                }
-              >
-                very
-              </Text>
-              <Text
-                style={
-                  Object {
-                    "color": "#000000",
-                    "fontFamily": "TimesDigitalW04",
-                    "fontSize": 36,
-                    "fontStyle": "normal",
-                    "fontWeight": "bold",
-                    "left": 223.724609375,
-                    "lineHeight": 52,
-                    "position": "absolute",
-                    "top": 104,
-                  }
-                }
-              >
-                opinionated.
-              </Text>
-            </View>
-          </View>
-        </View>
-      </View>
-      <View>
-        <View
+        }
+      >
+        <Text
           style={
             Object {
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "overflow": "hidden",
-              "width": undefined,
+              "color": undefined,
+              "fontFamily": "TimesModern-Regular",
+              "fontSize": 216,
+              "left": 69.75,
+              "lineHeight": 216,
+              "position": "absolute",
+              "top": -18,
             }
           }
         >
-          <View
-            style={
-              Object {
-                "marginBottom": 20,
-                "paddingLeft": 10,
-                "paddingRight": 10,
-              }
+          Q
+        </Text>
+        <View
+          style={
+            Object {
+              "height": 156,
+              "marginBottom": 20,
+              "paddingLeft": 10,
+              "paddingRight": 10,
             }
-          >
-            <View>
-              <Text>
-                <Text
-                  style={
-                    Object {
-                      "color": "#000000",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 36,
-                      "fontStyle": "normal",
-                      "fontWeight": "bold",
-                      "lineHeight": 52,
-                    }
-                  }
-                >
-                  When she does come to social events, she dominates.
-                </Text>
-              </Text>
-            </View>
+          }
+        >
+          <View>
+            <Text
+              style={
+                Object {
+                  "color": "#000000",
+                  "fontFamily": "TimesDigitalW04",
+                  "fontSize": 36,
+                  "fontStyle": "normal",
+                  "fontWeight": "bold",
+                  "left": 149,
+                  "lineHeight": 52,
+                  "position": "absolute",
+                  "top": 0,
+                }
+              }
+            >
+              Some
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#000000",
+                  "fontFamily": "TimesDigitalW04",
+                  "fontSize": 36,
+                  "fontStyle": "normal",
+                  "fontWeight": "bold",
+                  "left": 250.42578125,
+                  "lineHeight": 52,
+                  "position": "absolute",
+                  "top": 0,
+                }
+              }
+            >
+              years
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#000000",
+                  "fontFamily": "TimesDigitalW04",
+                  "fontSize": 36,
+                  "fontStyle": "normal",
+                  "fontWeight": "bold",
+                  "left": 345.541015625,
+                  "lineHeight": 52,
+                  "position": "absolute",
+                  "top": 0,
+                }
+              }
+            >
+              ago
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#000000",
+                  "fontFamily": "TimesDigitalW04",
+                  "fontSize": 36,
+                  "fontStyle": "normal",
+                  "fontWeight": "bold",
+                  "left": 414.763671875,
+                  "lineHeight": 52,
+                  "position": "absolute",
+                  "top": 0,
+                }
+              }
+            >
+              I
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#000000",
+                  "fontFamily": "TimesDigitalW04",
+                  "fontSize": 36,
+                  "fontStyle": "normal",
+                  "fontWeight": "bold",
+                  "left": 433.466796875,
+                  "lineHeight": 52,
+                  "position": "absolute",
+                  "top": 0,
+                }
+              }
+            >
+              made
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#000000",
+                  "fontFamily": "TimesDigitalW04",
+                  "fontSize": 36,
+                  "fontStyle": "normal",
+                  "fontWeight": "bold",
+                  "left": 532.888671875,
+                  "lineHeight": 52,
+                  "position": "absolute",
+                  "top": 0,
+                }
+              }
+            >
+              the
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#000000",
+                  "fontFamily": "TimesDigitalW04",
+                  "fontSize": 36,
+                  "fontStyle": "normal",
+                  "fontWeight": "bold",
+                  "left": 592.4609375,
+                  "lineHeight": 52,
+                  "position": "absolute",
+                  "top": 0,
+                }
+              }
+            >
+              decision
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#000000",
+                  "fontFamily": "TimesDigitalW04",
+                  "fontSize": 36,
+                  "fontStyle": "normal",
+                  "fontWeight": "bold",
+                  "left": 149,
+                  "lineHeight": 52,
+                  "position": "absolute",
+                  "top": 52,
+                }
+              }
+            >
+              to
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#000000",
+                  "fontFamily": "TimesDigitalW04",
+                  "fontSize": 36,
+                  "fontStyle": "normal",
+                  "fontWeight": "bold",
+                  "left": 189.8515625,
+                  "lineHeight": 52,
+                  "position": "absolute",
+                  "top": 52,
+                }
+              }
+            >
+              take
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#000000",
+                  "fontFamily": "TimesDigitalW04",
+                  "fontSize": 36,
+                  "fontStyle": "normal",
+                  "fontWeight": "bold",
+                  "left": 267.072265625,
+                  "lineHeight": 52,
+                  "position": "absolute",
+                  "top": 52,
+                }
+              }
+            >
+              as
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#000000",
+                  "fontFamily": "TimesDigitalW04",
+                  "fontSize": 36,
+                  "fontStyle": "normal",
+                  "fontWeight": "bold",
+                  "left": 314.12890625,
+                  "lineHeight": 52,
+                  "position": "absolute",
+                  "top": 52,
+                }
+              }
+            >
+              a
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#000000",
+                  "fontFamily": "TimesDigitalW04",
+                  "fontSize": 36,
+                  "fontStyle": "normal",
+                  "fontWeight": "bold",
+                  "left": 342.623046875,
+                  "lineHeight": 52,
+                  "position": "absolute",
+                  "top": 52,
+                }
+              }
+            >
+              friend
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#000000",
+                  "fontFamily": "TimesDigitalW04",
+                  "fontSize": 36,
+                  "fontStyle": "normal",
+                  "fontWeight": "bold",
+                  "left": 444.189453125,
+                  "lineHeight": 52,
+                  "position": "absolute",
+                  "top": 52,
+                }
+              }
+            >
+              a
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#000000",
+                  "fontFamily": "TimesDigitalW04",
+                  "fontSize": 36,
+                  "fontStyle": "normal",
+                  "fontWeight": "bold",
+                  "left": 472.68359375,
+                  "lineHeight": 52,
+                  "position": "absolute",
+                  "top": 52,
+                }
+              }
+            >
+              woman
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#000000",
+                  "fontFamily": "TimesDigitalW04",
+                  "fontSize": 36,
+                  "fontStyle": "normal",
+                  "fontWeight": "bold",
+                  "left": 600.177734375,
+                  "lineHeight": 52,
+                  "position": "absolute",
+                  "top": 52,
+                }
+              }
+            >
+              who
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#000000",
+                  "fontFamily": "TimesDigitalW04",
+                  "fontSize": 36,
+                  "fontStyle": "normal",
+                  "fontWeight": "bold",
+                  "left": 676.501953125,
+                  "lineHeight": 52,
+                  "position": "absolute",
+                  "top": 52,
+                }
+              }
+            >
+              is
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#000000",
+                  "fontFamily": "TimesDigitalW04",
+                  "fontSize": 36,
+                  "fontStyle": "normal",
+                  "fontWeight": "bold",
+                  "left": 149,
+                  "lineHeight": 52,
+                  "position": "absolute",
+                  "top": 104,
+                }
+              }
+            >
+              very
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#000000",
+                  "fontFamily": "TimesDigitalW04",
+                  "fontSize": 36,
+                  "fontStyle": "normal",
+                  "fontWeight": "bold",
+                  "left": 223.724609375,
+                  "lineHeight": 52,
+                  "position": "absolute",
+                  "top": 104,
+                }
+              }
+            >
+              opinionated.
+            </Text>
           </View>
         </View>
       </View>
       <View
         style={
           Object {
-            "height": 0,
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
           }
         }
-      />
-      <View>
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 20,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+            }
+          }
+        >
+          <View>
+            <Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "fontStyle": "normal",
+                    "fontWeight": "bold",
+                    "lineHeight": 52,
+                  }
+                }
+              >
+                When she does come to social events, she dominates.
+              </Text>
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
+          }
+        }
+      >
         <View
           style={
             Object {
@@ -822,7 +1203,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
             }
           }
         >
-          <ActivityIndicator />
+          <ArticleExtras />
         </View>
       </View>
     </View>
@@ -840,92 +1221,508 @@ exports[`6. an article skeleton with responsive items 1`] = `
 >
   <RCTScrollView>
     <View>
-      <View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "overflow": "hidden",
-              "width": undefined,
-            }
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
           }
-        />
-      </View>
-      <View>
+        }
+      />
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
+          }
+        }
+      >
         <View
           style={
             Object {
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "overflow": "hidden",
-              "width": undefined,
+              "alignSelf": "center",
+              "marginBottom": 20,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "width": 660,
             }
           }
         >
-          <View
-            style={
-              Object {
-                "alignSelf": "center",
-                "marginBottom": 20,
-                "paddingLeft": 10,
-                "paddingRight": 10,
-                "width": 660,
-              }
-            }
-          >
-            <View>
-              <Text>
-                <Text
-                  style={
-                    Object {
-                      "color": "#000000",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 36,
-                      "fontStyle": "normal",
-                      "fontWeight": "normal",
-                      "lineHeight": 52,
-                    }
+          <View>
+            <Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                    "lineHeight": 52,
                   }
-                >
-                  This being Black History Month, last week
-                </Text>
+                }
+              >
+                This being Black History Month, last week
               </Text>
-            </View>
-          </View>
-        </View>
-      </View>
-      <View>
-        <View
-          style={
-            Object {
-              "backgroundColor": "#ffffff",
-              "maxWidth": "100%",
-              "overflow": "hidden",
-              "width": undefined,
-            }
-          }
-        >
-          <View
-            style={
-              Object {
-                "marginBottom": 20,
-                "paddingHorizontal": 10,
-              }
-            }
-          >
-            <InteractiveWrapper />
+            </Text>
           </View>
         </View>
       </View>
       <View
         style={
           Object {
-            "height": 0,
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
           }
         }
-      />
-      <View>
+      >
+        <View
+          style={
+            Object {
+              "marginBottom": 20,
+              "paddingHorizontal": 10,
+            }
+          }
+        >
+          <InteractiveWrapper />
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
+          }
+        }
+      >
+        <ArticleImage />
+      </View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
+          }
+        }
+      >
+        <ArticleImage />
+      </View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
+          }
+        }
+      >
+        <ArticleImage />
+      </View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignSelf": "center",
+              "marginBottom": 20,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "width": 660,
+            }
+          }
+        >
+          <View>
+            <Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#006699",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                    "lineHeight": 52,
+                    "marginBottom": 25,
+                    "marginTop": 0,
+                    "textDecorationLine": "underline",
+                  }
+                }
+              >
+                Some Link
+              </Text>
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignSelf": "center",
+              "marginBottom": 20,
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "width": 660,
+            }
+          }
+        >
+          <View>
+            <Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#000000",
+                    "fontFamily": "TimesDigitalW04",
+                    "fontSize": 36,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                    "lineHeight": 52,
+                  }
+                }
+              >
+                Some content
+              </Text>
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
+          }
+        }
+      >
+        <Ad />
+      </View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
+          }
+        }
+      >
+        <View>
+          <PullQuote>
+            The pull quote content
+          </PullQuote>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flexDirection": "column",
+              "paddingBottom": 25,
+              "width": "100%",
+            }
+          }
+        >
+          <Video />
+          <View>
+            <View
+              style={
+                Object {
+                  "paddingLeft": 10,
+                  "paddingTop": 10,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "#696969",
+                    "fontFamily": "GillSansMTStd-Medium",
+                    "fontSize": 13,
+                    "lineHeight": 16,
+                  }
+                }
+              >
+                This is video caption
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
+          }
+        }
+      >
+        <View>
+          <View
+            style={
+              Object {
+                "alignSelf": "center",
+                "flexDirection": "row",
+                "marginHorizontal": 0,
+                "marginVertical": 10,
+                "width": "80.8%",
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#FF0000",
+                  "fontFamily": "GillSansMTStd-Medium",
+                  "fontSize": 15,
+                  "fontWeight": "400",
+                  "letterSpacing": 1.2,
+                  "lineHeight": 18,
+                  "marginBottom": 20,
+                  "paddingRight": 20,
+                  "width": "20%",
+                }
+              }
+            >
+              EXAMPLE TITLE
+            </Text>
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                    "marginBottom": 20,
+                    "paddingLeft": 1,
+                    "width": "100%",
+                  }
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#FF0000",
+                      "borderRadius": 2.5,
+                      "height": 5,
+                      "top": 2,
+                      "width": 5,
+                    }
+                  }
+                />
+                <Text
+                  style={
+                    Object {
+                      "color": "#333333",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 16,
+                      "lineHeight": 27,
+                      "marginTop": -8,
+                      "paddingLeft": 15,
+                      "width": "95%",
+                    }
+                  }
+                >
+                  Example bullet text
+                </Text>
+              </View>
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                    "marginBottom": 20,
+                    "paddingLeft": 1,
+                    "width": "100%",
+                  }
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#FF0000",
+                      "borderRadius": 2.5,
+                      "height": 5,
+                      "top": 2,
+                      "width": 5,
+                    }
+                  }
+                />
+                <Text
+                  style={
+                    Object {
+                      "color": "#333333",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 16,
+                      "lineHeight": 27,
+                      "marginTop": -8,
+                      "paddingLeft": 15,
+                      "width": "95%",
+                    }
+                  }
+                >
+                  An example 
+                  <Text
+                    style={
+                      Object {
+                        "color": "#006699",
+                        "textDecorationLine": "underline",
+                      }
+                    }
+                  >
+                    link
+                  </Text>
+                </Text>
+              </View>
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                    "marginBottom": 20,
+                    "paddingLeft": 1,
+                    "width": "100%",
+                  }
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#FF0000",
+                      "borderRadius": 2.5,
+                      "height": 5,
+                      "top": 2,
+                      "width": 5,
+                    }
+                  }
+                />
+                <Text
+                  style={
+                    Object {
+                      "color": "#333333",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 16,
+                      "lineHeight": 27,
+                      "marginTop": -8,
+                      "paddingLeft": 15,
+                      "width": "95%",
+                    }
+                  }
+                >
+                  More example text.
+                </Text>
+              </View>
+              <View
+                style={
+                  Object {
+                    "flexDirection": "row",
+                    "marginBottom": 20,
+                    "paddingLeft": 1,
+                    "width": "100%",
+                  }
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "backgroundColor": "#FF0000",
+                      "borderRadius": 2.5,
+                      "height": 5,
+                      "top": 2,
+                      "width": 5,
+                    }
+                  }
+                />
+                <Text
+                  style={
+                    Object {
+                      "color": "#333333",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 16,
+                      "lineHeight": 27,
+                      "marginTop": -8,
+                      "paddingLeft": 15,
+                      "width": "95%",
+                    }
+                  }
+                >
+                  Example text 
+                  <Text
+                    style={
+                      Object {
+                        "fontWeight": "bold",
+                      }
+                    }
+                  >
+                    this is bold 
+                  </Text>
+                  <Text
+                    style={
+                      Object {
+                        "fontStyle": "italic",
+                      }
+                    }
+                  >
+                    this is in italics.
+                  </Text>
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ffffff",
+            "maxWidth": "100%",
+            "overflow": "hidden",
+            "width": undefined,
+          }
+        }
+      >
         <View
           style={
             Object {
@@ -936,7 +1733,7 @@ exports[`6. an article skeleton with responsive items 1`] = `
             }
           }
         >
-          <ActivityIndicator />
+          <ArticleExtras />
         </View>
       </View>
     </View>
