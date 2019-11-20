@@ -8,7 +8,7 @@ select and serve targeted ads. GPT is an ad tagging
 key details (targeting parameters) such as ad unit name, ad size, and custom
 targeting, builds the request, and displays the ad on web pages.
 
-When an ad is still loading or the app is offline, the ad component will show a
+When an advert is still loading or the app is offline, the ad component will show a
 placeholder image.
 
 ## DFP setup
