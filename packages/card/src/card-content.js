@@ -31,7 +31,8 @@ class CardContent extends Component {
       isLoading,
       isReversed,
       lowResSize,
-      showImage
+      showImage,
+      relatedArticle
     } = this.props;
 
     const renderImage = isTablet => {
@@ -58,12 +59,19 @@ class CardContent extends Component {
       );
     };
 
+    const cardContainerStyle = relatedArticle
+      ? {
+          ...styles.cardContainer,
+          display: "block"
+        }
+      : styles.cardContainer;
+
     return (
       <ResponsiveContext.Consumer>
         {({ isTablet }) => (
           <View
             style={[
-              isTablet ? styles.cardContainerTablet : styles.cardContainer,
+              isTablet ? styles.cardContainerTablet : cardContainerStyle,
               isReversed ? styles.reversedCardContainer : ""
             ]}
           >

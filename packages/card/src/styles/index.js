@@ -10,7 +10,6 @@ const styles = StyleSheet.create({
     justifyContent: "flex-end"
   },
   cardContainerTablet: {
-    display: "block",
     alignItems: "flex-start",
     flexDirection: "row",
     flexWrap: "wrap"
