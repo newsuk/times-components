@@ -27,8 +27,7 @@ const ArticleExtras = ({
     <div id="sponsored-article" key="sponsored-article" />
   );
   return (
-    <React.Fragment>
-
+    <UserState state={UserState.fullArticle} fallback={sponsoredArticle}>
       <ArticleTopics topics={topics} />
       {(savingEnabled || sharingEnabled) && (
         <UserState state={UserState.loggedInOrShared}>
@@ -44,7 +43,7 @@ const ArticleExtras = ({
                   onShareOnEmail={() => {}}
                   savingEnabled={savingEnabled}
                   sharingEnabled={sharingEnabled}
-                  />
+                />
               </ShareAndSaveContainer>
             )}
           </MessageContext.Consumer>
@@ -55,15 +54,15 @@ const ArticleExtras = ({
           analyticsStream={analyticsStream}
           isVisible={relatedArticlesVisible}
           slice={relatedArticleSlice}
-          />
+        />
       </div>
       {sponsoredArticle}
       <ArticleComments
         articleId={articleId}
         isEnabled={commentsEnabled}
         spotAccountId={spotAccountId}
-        />
-    </React.Fragment>
+      />
+    </UserState>
   );
 };
 
