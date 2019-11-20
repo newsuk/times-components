@@ -84,5 +84,5 @@ export default Component =>
 
       return trackingObject;
     },
-    trackingObjectName: "RelatedArticles"
+    trackingObjectName: "Article"
   });

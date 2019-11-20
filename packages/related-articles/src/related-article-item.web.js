@@ -21,5 +21,6 @@ const RelatedArticleItemWeb = props => (
     )}
   </RelatedArticleItem>
 );
+RelatedArticleItemWeb.displayName = "RelatedArticleItem";
 
 export default relatedArticlesItemTrackingEvents(RelatedArticleItemWeb);
