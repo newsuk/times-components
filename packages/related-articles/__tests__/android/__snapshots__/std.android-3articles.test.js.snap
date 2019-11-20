@@ -29,6 +29,7 @@ exports[`1. three related articles 1`] = `
               imageUri="https://crop1.io"
               isReversed={false}
               lowResSize={100}
+              relatedArticle={true}
               showImage={false}
             >
               <View>
@@ -85,6 +86,7 @@ exports[`1. three related articles 1`] = `
               imageUri="https://crop2.io"
               isReversed={false}
               lowResSize={100}
+              relatedArticle={true}
               showImage={false}
             >
               <View>
@@ -141,6 +143,7 @@ exports[`1. three related articles 1`] = `
               imageUri="https://crop3.io"
               isReversed={false}
               lowResSize={100}
+              relatedArticle={true}
               showImage={false}
             >
               <View>

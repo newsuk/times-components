@@ -33,6 +33,7 @@ exports[`1. one opinion and one support related article 1`] = `
                   imageUri="https://crop23-1.io"
                   isReversed={true}
                   lowResSize={100}
+                  relatedArticle={true}
                   showImage={true}
                 >
                   <div>
@@ -113,6 +114,7 @@ exports[`1. one opinion and one support related article 1`] = `
                     imageUri="https://crop169-2.io"
                     isReversed={false}
                     lowResSize={100}
+                    relatedArticle={true}
                     showImage={true}
                   >
                     <div>

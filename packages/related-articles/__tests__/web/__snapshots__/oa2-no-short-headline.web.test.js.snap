@@ -33,6 +33,7 @@ exports[`1. no short headline 1`] = `
                   imageUri="https://crop23.io"
                   isReversed={true}
                   lowResSize={100}
+                  relatedArticle={true}
                   showImage={true}
                 >
                   <div>
