@@ -52,7 +52,7 @@ exports[`tile ab huge 1`] = `
                 "fontSize": 45,
                 "fontWeight": "900",
                 "lineHeight": 45,
-                "marginBottom": 0,
+                "marginBottom": 5,
               }
             }
           >
@@ -78,7 +78,7 @@ exports[`tile ab huge 1`] = `
                 "fontSize": 14,
                 "lineHeight": 20,
                 "marginBottom": 0,
-                "marginTop": 10,
+                "marginTop": 5,
               }
             }
           >
@@ -157,7 +157,7 @@ exports[`tile ab medium 1`] = `
                 "fontSize": 30,
                 "fontWeight": "900",
                 "lineHeight": 30,
-                "marginBottom": 0,
+                "marginBottom": 5,
               }
             }
           >
@@ -183,7 +183,7 @@ exports[`tile ab medium 1`] = `
                 "fontSize": 14,
                 "lineHeight": 20,
                 "marginBottom": 0,
-                "marginTop": 10,
+                "marginTop": 5,
               }
             }
           >
@@ -262,7 +262,7 @@ exports[`tile ab wide 1`] = `
                 "fontSize": 40,
                 "fontWeight": "900",
                 "lineHeight": 40,
-                "marginBottom": 0,
+                "marginBottom": 5,
               }
             }
           >
@@ -288,7 +288,7 @@ exports[`tile ab wide 1`] = `
                 "fontSize": 14,
                 "lineHeight": 20,
                 "marginBottom": 0,
-                "marginTop": 10,
+                "marginTop": 5,
               }
             }
           >
@@ -367,7 +367,7 @@ exports[`tile ab without breakpoint should be like medium 1`] = `
                 "fontSize": 30,
                 "fontWeight": "900",
                 "lineHeight": 30,
-                "marginBottom": 0,
+                "marginBottom": 5,
               }
             }
           >
@@ -393,7 +393,7 @@ exports[`tile ab without breakpoint should be like medium 1`] = `
                 "fontSize": 14,
                 "lineHeight": 20,
                 "marginBottom": 0,
-                "marginTop": 10,
+                "marginTop": 5,
               }
             }
           >

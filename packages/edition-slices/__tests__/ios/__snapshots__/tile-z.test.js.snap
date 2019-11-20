@@ -53,7 +53,7 @@ exports[`tile z huge 1`] = `
                 "fontSize": 45,
                 "fontWeight": "900",
                 "lineHeight": 45,
-                "marginBottom": 0,
+                "marginBottom": 5,
               }
             }
           >
@@ -79,7 +79,7 @@ exports[`tile z huge 1`] = `
                 "fontSize": 14,
                 "lineHeight": 20,
                 "marginBottom": 0,
-                "marginTop": 10,
+                "marginTop": 5,
               }
             }
           >
@@ -159,7 +159,7 @@ exports[`tile z wide 1`] = `
                 "fontSize": 40,
                 "fontWeight": "900",
                 "lineHeight": 40,
-                "marginBottom": 0,
+                "marginBottom": 5,
               }
             }
           >
@@ -185,7 +185,7 @@ exports[`tile z wide 1`] = `
                 "fontSize": 14,
                 "lineHeight": 20,
                 "marginBottom": 0,
-                "marginTop": 10,
+                "marginTop": 5,
               }
             }
           >
@@ -265,7 +265,7 @@ exports[`tile z without breakpoint should be like wide 1`] = `
                 "fontSize": 40,
                 "fontWeight": "900",
                 "lineHeight": 40,
-                "marginBottom": 0,
+                "marginBottom": 5,
               }
             }
           >
@@ -291,7 +291,7 @@ exports[`tile z without breakpoint should be like wide 1`] = `
                 "fontSize": 14,
                 "lineHeight": 20,
                 "marginBottom": 0,
-                "marginTop": 10,
+                "marginTop": 5,
               }
             }
           >

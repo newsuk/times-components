@@ -31,6 +31,7 @@ exports[`tile p without breakpoint 1`] = `
   letter-spacing: 0.6px;
   line-height: 12px;
   margin-top: 15px;
+  text-transform: uppercase;
 }
 
 .IS3 {
@@ -39,6 +40,7 @@ exports[`tile p without breakpoint 1`] = `
   letter-spacing: 0.6px;
   line-height: 12px;
   margin-top: 15px;
+  text-transform: uppercase;
 }
 
 .IS4 {

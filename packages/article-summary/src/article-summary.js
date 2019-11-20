@@ -60,14 +60,11 @@ function ArticleSummary(props) {
     labelProps,
     style,
     strapline,
-    saveStar,
-    isTablet
+    saveStar
   } = props;
 
   const { isOpinionByline = false } = bylineProps || {};
   const byline = bylineProps ? <Byline {...bylineProps} /> : null;
-  const tabletFlags = isTablet && flags;
-  const mobileFlags = !isTablet && flags;
 
   return (
     <View style={style}>
@@ -75,8 +72,7 @@ function ArticleSummary(props) {
       {isOpinionByline && byline}
       {headline}
       {strapline}
-      {mobileFlags}
-      {tabletFlags}
+      {flags}
       {content}
       {saveStar}
       {datePublicationProps ? (

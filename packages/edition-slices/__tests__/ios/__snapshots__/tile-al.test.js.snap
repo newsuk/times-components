@@ -54,7 +54,7 @@ exports[`tile al huge 1`] = `
               "fontSize": 22,
               "fontWeight": "900",
               "lineHeight": 22,
-              "marginBottom": 0,
+              "marginBottom": 5,
             }
           }
         >
@@ -80,7 +80,7 @@ exports[`tile al huge 1`] = `
               "fontSize": 14,
               "lineHeight": 20,
               "marginBottom": 0,
-              "marginTop": 10,
+              "marginTop": 5,
             }
           }
         >
@@ -150,7 +150,7 @@ exports[`tile al wide 1`] = `
               "fontSize": 20,
               "fontWeight": "900",
               "lineHeight": 20,
-              "marginBottom": 0,
+              "marginBottom": 5,
             }
           }
         >
@@ -176,7 +176,7 @@ exports[`tile al wide 1`] = `
               "fontSize": 14,
               "lineHeight": 20,
               "marginBottom": 0,
-              "marginTop": 10,
+              "marginTop": 5,
             }
           }
         >

@@ -44,7 +44,7 @@ exports[`tile ae huge 1`] = `
               "fontSize": 35,
               "fontWeight": "900",
               "lineHeight": 35,
-              "marginBottom": 0,
+              "marginBottom": 5,
             }
           }
         >
@@ -70,7 +70,7 @@ exports[`tile ae huge 1`] = `
               "fontSize": 14,
               "lineHeight": 20,
               "marginBottom": 0,
-              "marginTop": 10,
+              "marginTop": 5,
             }
           }
         >
@@ -130,7 +130,7 @@ exports[`tile ae medium 1`] = `
               "fontSize": 30,
               "fontWeight": "900",
               "lineHeight": 30,
-              "marginBottom": 0,
+              "marginBottom": 5,
             }
           }
         >
@@ -156,7 +156,7 @@ exports[`tile ae medium 1`] = `
               "fontSize": 14,
               "lineHeight": 20,
               "marginBottom": 0,
-              "marginTop": 10,
+              "marginTop": 5,
             }
           }
         >
@@ -216,7 +216,7 @@ exports[`tile ae wide 1`] = `
               "fontSize": 30,
               "fontWeight": "900",
               "lineHeight": 30,
-              "marginBottom": 0,
+              "marginBottom": 5,
             }
           }
         >
@@ -242,7 +242,7 @@ exports[`tile ae wide 1`] = `
               "fontSize": 14,
               "lineHeight": 20,
               "marginBottom": 0,
-              "marginTop": 10,
+              "marginTop": 5,
             }
           }
         >
@@ -302,7 +302,7 @@ exports[`tile ae without breakpoint should be like medium 1`] = `
               "fontSize": 30,
               "fontWeight": "900",
               "lineHeight": 30,
-              "marginBottom": 0,
+              "marginBottom": 5,
             }
           }
         >
@@ -328,7 +328,7 @@ exports[`tile ae without breakpoint should be like medium 1`] = `
               "fontSize": 14,
               "lineHeight": 20,
               "marginBottom": 0,
-              "marginTop": 10,
+              "marginTop": 5,
             }
           }
         >

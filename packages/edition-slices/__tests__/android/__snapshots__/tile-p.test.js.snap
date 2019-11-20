@@ -34,6 +34,7 @@ exports[`tile p without breakpoint 1`] = `
         "letterSpacing": 0.6,
         "lineHeight": 12,
         "marginTop": 15,
+        "textTransform": "uppercase",
       }
     }
   >
@@ -49,6 +50,7 @@ exports[`tile p without breakpoint 1`] = `
         "letterSpacing": 0.6,
         "lineHeight": 12,
         "marginTop": 15,
+        "textTransform": "uppercase",
       }
     }
   >

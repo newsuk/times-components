@@ -42,7 +42,7 @@ exports[`tile b huge 1`] = `
               "fontSize": 35,
               "fontWeight": "400",
               "lineHeight": 35,
-              "marginBottom": 0,
+              "marginBottom": 5,
             }
           }
         >
@@ -68,7 +68,7 @@ exports[`tile b huge 1`] = `
               "fontSize": 14,
               "lineHeight": 20,
               "marginBottom": 0,
-              "marginTop": 10,
+              "marginTop": 5,
             }
           }
         >
@@ -126,7 +126,7 @@ exports[`tile b medium 1`] = `
               "fontSize": 20,
               "fontWeight": "400",
               "lineHeight": 20,
-              "marginBottom": 0,
+              "marginBottom": 5,
             }
           }
         >
@@ -152,7 +152,7 @@ exports[`tile b medium 1`] = `
               "fontSize": 14,
               "lineHeight": 20,
               "marginBottom": 0,
-              "marginTop": 10,
+              "marginTop": 5,
             }
           }
         >
@@ -293,7 +293,7 @@ exports[`tile b wide 1`] = `
               "fontSize": 30,
               "fontWeight": "400",
               "lineHeight": 30,
-              "marginBottom": 0,
+              "marginBottom": 5,
             }
           }
         >
@@ -319,7 +319,7 @@ exports[`tile b wide 1`] = `
               "fontSize": 14,
               "lineHeight": 20,
               "marginBottom": 0,
-              "marginTop": 10,
+              "marginTop": 5,
             }
           }
         >
@@ -377,7 +377,7 @@ exports[`tile b with more teaser 1`] = `
               "fontSize": 20,
               "fontWeight": "400",
               "lineHeight": 20,
-              "marginBottom": 0,
+              "marginBottom": 5,
             }
           }
         >
@@ -403,7 +403,7 @@ exports[`tile b with more teaser 1`] = `
               "fontSize": 14,
               "lineHeight": 20,
               "marginBottom": 0,
-              "marginTop": 10,
+              "marginTop": 5,
             }
           }
         >
