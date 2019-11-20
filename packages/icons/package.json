@@ -1,6 +1,6 @@
 {
   "name": "@times-components/icons",
-  "version": "2.14.0",
+  "version": "2.14.1",
   "description": "Times SVG Icons",
   "main": "dist/icons",
   "dev": "src/icons",

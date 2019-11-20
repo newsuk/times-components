@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.1](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.3.0...@times-components/message-bar@0.3.1) (2019-11-20)
+
+
+### Bug Fixes
+
+* ios crash ([#2388](https://github.com/newsuk/times-components/issues/2388)) ([9a5f596](https://github.com/newsuk/times-components/commit/9a5f596df07a9130770046ee190dbc8fff3bdfd8))
+
+
+
+
+
 # [0.3.0](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.2.50...@times-components/message-bar@0.3.0) (2019-11-18)
 
 

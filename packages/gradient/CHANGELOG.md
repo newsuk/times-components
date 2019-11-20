@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.1](https://github.com/newsuk/times-components/compare/@times-components/gradient@3.2.0...@times-components/gradient@3.2.1) (2019-11-20)
+
+
+### Bug Fixes
+
+* ios crash ([#2388](https://github.com/newsuk/times-components/issues/2388)) ([9a5f596](https://github.com/newsuk/times-components/commit/9a5f596df07a9130770046ee190dbc8fff3bdfd8))
+
+
+
+
+
 # [3.2.0](https://github.com/newsuk/times-components/compare/@times-components/gradient@3.1.73...@times-components/gradient@3.2.0) (2019-11-18)
 
 

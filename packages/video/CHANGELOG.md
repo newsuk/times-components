@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.7.95](https://github.com/newsuk/times-components/compare/@times-components/video@4.7.94...@times-components/video@4.7.95) (2019-11-20)
+
+
+### Bug Fixes
+
+* ios crash ([#2388](https://github.com/newsuk/times-components/issues/2388)) ([9a5f596](https://github.com/newsuk/times-components/commit/9a5f596df07a9130770046ee190dbc8fff3bdfd8))
+
+
+
+
+
 ## [4.7.94](https://github.com/newsuk/times-components/compare/@times-components/video@4.7.93...@times-components/video@4.7.94) (2019-11-18)
 
 **Note:** Version bump only for package @times-components/video
