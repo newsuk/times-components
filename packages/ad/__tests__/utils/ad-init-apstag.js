@@ -37,11 +37,9 @@ export default () => {
     const init = adInit(merge(initOptions, amazonInitExtension));
     jest.spyOn(init.apstag, "process");
     jest.spyOn(init.apstag, "init");
-    jest.spyOn(init.apstag, "bid");
     init.init();
     expect(init.apstag.process).toHaveBeenCalled();
     expect(init.apstag.init).toHaveBeenCalled();
-    expect(init.apstag.bid).toHaveBeenCalled();
   });
 
   it("does not set up Amazon bidding if no Amazon bidder config is present", () => {
