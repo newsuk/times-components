@@ -149,7 +149,7 @@ Array [
         "template": "StandardSlice",
       },
       "component": "Page",
-      "object": "RelatedArticles",
+      "object": "Article",
     },
   ],
 ]

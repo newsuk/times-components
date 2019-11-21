@@ -98,7 +98,7 @@ Array [
         "template": "StandardSlice",
       },
       "component": "Page",
-      "object": "RelatedArticles",
+      "object": "Article",
     },
   ],
 ]
@@ -112,6 +112,6 @@ Object {
     "targetArticleId": "48604618-fb0e-11e7-a987-7fcf5e9983dc",
     "targetArticleUrl": "https://test.io",
   },
-  "component": "RelatedArticleItemWeb",
+  "component": "RelatedArticleItem",
 }
 `;
