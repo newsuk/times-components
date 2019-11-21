@@ -101,7 +101,7 @@ Array [
         "template": "OpinionOneAndTwoSlice",
       },
       "component": "Page",
-      "object": "RelatedArticles",
+      "object": "Article",
     },
   ],
 ]

@@ -214,7 +214,7 @@ Array [
         "template": "LeadOneAndTwoSlice",
       },
       "component": "Page",
-      "object": "RelatedArticles",
+      "object": "Article",
     },
   ],
 ]
