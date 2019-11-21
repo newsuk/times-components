@@ -8,11 +8,10 @@ exports[`Article Label test on ios renders ArticleLabel 1`] = `
       "fontFamily": "GillSansMTStd-Medium",
       "fontSize": 12,
       "fontWeight": "400",
-      "letterSpacing": 1,
-      "lineHeight": 11,
+      "lineHeight": 12,
       "marginBottom": 0,
       "marginTop": -1,
-      "paddingTop": 1,
+      "paddingTop": 0,
     }
   }
 >
@@ -28,11 +27,10 @@ exports[`Article Label test on ios renders ArticleLabel with GraphQL Colour type
       "fontFamily": "GillSansMTStd-Medium",
       "fontSize": 12,
       "fontWeight": "400",
-      "letterSpacing": 1,
-      "lineHeight": 11,
+      "lineHeight": 12,
       "marginBottom": 0,
       "marginTop": -1,
-      "paddingTop": 1,
+      "paddingTop": 0,
     }
   }
 >

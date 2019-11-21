@@ -1,12 +1,12 @@
 /* eslint-disable react/require-default-props */
 import React from "react";
 import PropTypes from "prop-types";
-import Image from "@times-components/image";
 import { editionBreakpoints } from "@times-components/styleguide";
 import {
   getTileImage,
   TileLink,
   TileSummary,
+  TileImage,
   withTileTracking
 } from "../shared";
 import stylesFactory from "./styles";
@@ -19,9 +19,13 @@ const TileR = ({ onPress, tile, breakpoint = editionBreakpoints.medium }) => {
     return null;
   }
 
+  const {
+    article: { hasVideo }
+  } = tile;
+
   return (
     <TileLink onPress={onPress} style={styles.container} tile={tile}>
-      <Image
+      <TileImage
         aspectRatio={16 / 9}
         uri={crop.url}
         fill
@@ -30,6 +34,7 @@ const TileR = ({ onPress, tile, breakpoint = editionBreakpoints.medium }) => {
         relativeHorizontalOffset={crop.relativeHorizontalOffset}
         relativeVerticalOffset={crop.relativeVerticalOffset}
         style={styles.imageContainer}
+        hasVideo={hasVideo}
       />
       <TileSummary headlineStyle={styles.headline} tile={tile} />
     </TileLink>

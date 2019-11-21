@@ -43,31 +43,11 @@ exports[`tile ad huge 1`] = `
               "fontSize": 22,
               "fontWeight": "400",
               "lineHeight": 22,
-              "marginBottom": 0,
+              "marginBottom": 5,
             }
           }
         >
           This is tile headline
-        </Text>
-        <Text
-          numberOfLines={2}
-          style={
-            Object {
-              "color": "#696969",
-              "flexWrap": "wrap",
-              "fontFamily": "TimesDigitalW04",
-              "fontSize": 14,
-              "lineHeight": 20,
-              "marginBottom": 0,
-              "marginTop": 10,
-            }
-          }
-        >
-          <Text>
-            
-            ‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye.
-            ...
-          </Text>
         </Text>
         <ArticleFlags
           flags={
@@ -79,6 +59,26 @@ exports[`tile ad huge 1`] = `
             ]
           }
         />
+        <Text
+          numberOfLines={2}
+          style={
+            Object {
+              "color": "#696969",
+              "flexWrap": "wrap",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 14,
+              "lineHeight": 20,
+              "marginBottom": 0,
+              "marginTop": 5,
+            }
+          }
+        >
+          <Text>
+            
+            ‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye.
+            ...
+          </Text>
+        </Text>
       </View>
     </View>
   </View>
@@ -128,7 +128,7 @@ exports[`tile ad medium 1`] = `
               "fontSize": 20,
               "fontWeight": "400",
               "lineHeight": 20,
-              "marginBottom": 0,
+              "marginBottom": 5,
             }
           }
         >
@@ -193,31 +193,11 @@ exports[`tile ad wide 1`] = `
               "fontSize": 20,
               "fontWeight": "400",
               "lineHeight": 20,
-              "marginBottom": 0,
+              "marginBottom": 5,
             }
           }
         >
           This is tile headline
-        </Text>
-        <Text
-          numberOfLines={2}
-          style={
-            Object {
-              "color": "#696969",
-              "flexWrap": "wrap",
-              "fontFamily": "TimesDigitalW04",
-              "fontSize": 14,
-              "lineHeight": 20,
-              "marginBottom": 0,
-              "marginTop": 10,
-            }
-          }
-        >
-          <Text>
-            
-            ‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye.
-            ...
-          </Text>
         </Text>
         <ArticleFlags
           flags={
@@ -229,6 +209,26 @@ exports[`tile ad wide 1`] = `
             ]
           }
         />
+        <Text
+          numberOfLines={2}
+          style={
+            Object {
+              "color": "#696969",
+              "flexWrap": "wrap",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 14,
+              "lineHeight": 20,
+              "marginBottom": 0,
+              "marginTop": 5,
+            }
+          }
+        >
+          <Text>
+            
+            ‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye.
+            ...
+          </Text>
+        </Text>
       </View>
     </View>
   </View>
@@ -278,7 +278,7 @@ exports[`tile ad without breakpoint should be like medium 1`] = `
               "fontSize": 20,
               "fontWeight": "400",
               "lineHeight": 20,
-              "marginBottom": 0,
+              "marginBottom": 5,
             }
           }
         >

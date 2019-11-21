@@ -9,7 +9,7 @@ exports[`tile ah huge 1`] = `
 .S2 {
   font-family: TimesModern-Bold;
   font-weight: 400;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
 }
 
 .S3 {
@@ -81,7 +81,7 @@ exports[`tile ah huge 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi r-paddingBottom-1mi0q7o IS2 S2"
+      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 r-paddingBottom-1mi0q7o IS2 S2"
       role="heading"
     >
       This is tile headline
@@ -116,7 +116,7 @@ exports[`tile ah medium 1`] = `
 .S2 {
   font-family: TimesModern-Bold;
   font-weight: 400;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
 }
 
 .S3 {
@@ -189,7 +189,7 @@ exports[`tile ah medium 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS2 S2"
+      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
       role="heading"
     >
       This is tile headline
@@ -224,7 +224,7 @@ exports[`tile ah wide 1`] = `
 .S2 {
   font-family: TimesModern-Bold;
   font-weight: 400;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
 }
 
 .S3 {
@@ -296,7 +296,7 @@ exports[`tile ah wide 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi r-paddingBottom-1mi0q7o IS2 S2"
+      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 r-paddingBottom-1mi0q7o IS2 S2"
       role="heading"
     >
       This is tile headline
@@ -331,7 +331,7 @@ exports[`tile ah without breakpoint should be like medium 1`] = `
 .S2 {
   font-family: TimesModern-Bold;
   font-weight: 400;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
 }
 
 .S3 {
@@ -403,7 +403,7 @@ exports[`tile ah without breakpoint should be like medium 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi r-paddingBottom-1mi0q7o IS2 S2"
+      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 r-paddingBottom-1mi0q7o IS2 S2"
       role="heading"
     >
       This is tile headline

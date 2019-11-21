@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.8.0](https://github.com/newsuk/times-components/compare/@times-components/video@4.7.95...@times-components/video@4.8.0) (2019-11-21)
+
+
+### Features
+
+* design changes for ios release ([#2392](https://github.com/newsuk/times-components/issues/2392)) ([a9ccbe3](https://github.com/newsuk/times-components/commit/a9ccbe3e9af81e8c5173755168be9ec1e8f692f4))
+
+
+
+
+
 ## [4.7.95](https://github.com/newsuk/times-components/compare/@times-components/video@4.7.94...@times-components/video@4.7.95) (2019-11-20)
 
 

@@ -30,6 +30,20 @@ exports[`1. article summary component with a single paragraph 1`] = `
   >
     Test Headline
   </Text>
+  <ArticleFlags
+    flags={
+      Array [
+        Object {
+          "expiryTime": "2020-03-13T12:00:00.000Z",
+          "type": "UPDATED",
+        },
+        Object {
+          "expiryTime": "2019-03-14T12:00:00.000Z",
+          "type": "EXCLUSIVE",
+        },
+      ]
+    }
+  />
   <Text
     style={
       Object {
@@ -48,20 +62,6 @@ exports[`1. article summary component with a single paragraph 1`] = `
       ...
     </Text>
   </Text>
-  <ArticleFlags
-    flags={
-      Array [
-        Object {
-          "expiryTime": "2020-03-13T12:00:00.000Z",
-          "type": "UPDATED",
-        },
-        Object {
-          "expiryTime": "2019-03-14T12:00:00.000Z",
-          "type": "EXCLUSIVE",
-        },
-      ]
-    }
-  />
   <Text
     style={
       Object {

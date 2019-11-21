@@ -18,7 +18,6 @@ const appStyles = {
   },
   standFirst: {
     ...sharedStyles.standFirst,
-    lineHeight: 28,
     paddingBottom: spacing(2)
   },
   standFirstWithoutFlags: {

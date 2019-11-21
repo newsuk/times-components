@@ -10,7 +10,7 @@ exports[`tile z huge 1`] = `
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
 }
 
 .S3 {
@@ -32,7 +32,7 @@ exports[`tile z huge 1`] = `
 
 .IS2 {
   -webkit-line-clamp: 2;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .IS3 {
@@ -102,7 +102,7 @@ exports[`tile z huge 1`] = `
           </div>
           <h3
             aria-level="3"
-            className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS1 S2"
+            className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
             role="heading"
           >
             This is tile headline
@@ -151,7 +151,7 @@ exports[`tile z wide 1`] = `
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
 }
 
 .S3 {
@@ -173,7 +173,7 @@ exports[`tile z wide 1`] = `
 
 .IS2 {
   -webkit-line-clamp: 2;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .IS3 {
@@ -243,7 +243,7 @@ exports[`tile z wide 1`] = `
           </div>
           <h3
             aria-level="3"
-            className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS1 S2"
+            className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
             role="heading"
           >
             This is tile headline
@@ -292,7 +292,7 @@ exports[`tile z without breakpoint should be like wide 1`] = `
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
 }
 
 .S3 {
@@ -314,7 +314,7 @@ exports[`tile z without breakpoint should be like wide 1`] = `
 
 .IS2 {
   -webkit-line-clamp: 2;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .IS3 {
@@ -384,7 +384,7 @@ exports[`tile z without breakpoint should be like wide 1`] = `
           </div>
           <h3
             aria-level="3"
-            className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS1 S2"
+            className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S2"
             role="heading"
           >
             This is tile headline

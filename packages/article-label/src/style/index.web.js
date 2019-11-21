@@ -5,7 +5,8 @@ const styles = StyleSheet.create({
   ...sharedStyles,
   title: {
     ...sharedStyles.title,
-    lineHeight: 12
+    lineHeight: 12,
+    letterSpacing: 1
   }
 });
 

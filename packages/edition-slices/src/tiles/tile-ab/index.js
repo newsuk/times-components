@@ -2,13 +2,13 @@
 import React from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
-import Image from "@times-components/image";
 import { editionBreakpoints } from "@times-components/styleguide";
 import {
   getTileImage,
   getTileSummary,
   TileLink,
   TileSummary,
+  TileImage,
   withTileTracking
 } from "../shared";
 import styleFactory from "./styles";
@@ -22,6 +22,10 @@ const TileAB = ({ onPress, tile, breakpoint = editionBreakpoints.medium }) => {
   if (!crop) {
     return null;
   }
+
+  const {
+    article: { hasVideo }
+  } = tile;
 
   return (
     <TileLink onPress={onPress} style={styles.container} tile={tile}>
@@ -40,7 +44,7 @@ const TileAB = ({ onPress, tile, breakpoint = editionBreakpoints.medium }) => {
         />
         <PositionedTileStar articleId={tile.article.id} />
       </View>
-      <Image
+      <TileImage
         aspectRatio={2 / 3}
         relativeWidth={crop.relativeWidth}
         relativeHeight={crop.relativeHeight}
@@ -49,6 +53,7 @@ const TileAB = ({ onPress, tile, breakpoint = editionBreakpoints.medium }) => {
         style={styles.imageContainer}
         uri={crop.url}
         fill
+        hasVideo={hasVideo}
       />
     </TileLink>
   );
