@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Image from "@times-components/image";
-import { getTileImage, TileLink, withTileTracking } from "../shared";
+import { getTileImage, TileLink, withTileTracking, TileImage } from "../shared";
 import styles from "./styles";
 import PositionedTileStar from "../shared/positioned-tile-star";
 
@@ -12,9 +11,13 @@ const TileQ = ({ onPress, tile }) => {
     return null;
   }
 
+  const {
+    article: { hasVideo }
+  } = tile;
+
   return (
     <TileLink onPress={onPress} style={styles.container} tile={tile}>
-      <Image
+      <TileImage
         aspectRatio={3 / 2}
         relativeWidth={crop.relativeWidth}
         relativeHeight={crop.relativeHeight}
@@ -23,6 +26,7 @@ const TileQ = ({ onPress, tile }) => {
         style={styles.imageContainer}
         uri={crop.url}
         fill
+        hasVideo={hasVideo}
       />
       <PositionedTileStar articleId={tile.article.id} centeredStar />
     </TileLink>

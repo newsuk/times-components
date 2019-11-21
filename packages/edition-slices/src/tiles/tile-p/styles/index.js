@@ -11,7 +11,9 @@ const styles = {
     fontFamily: fonts.supporting,
     fontSize: fontSizes.cardMetaMobile,
     letterSpacing: 0.6,
-    lineHeight: 12
+    lineHeight: 12,
+    marginTop: spacing(3),
+    textTransform: "uppercase"
   },
   container: {
     alignItems: "center",

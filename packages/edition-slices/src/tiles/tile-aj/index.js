@@ -2,9 +2,8 @@ import React from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
 import Link from "@times-components/link";
-import Image from "@times-components/image";
 import { ArticleSummaryHeadline } from "@times-components/article-summary";
-import { withPuzzleTileTracking } from "../shared";
+import { withPuzzleTileTracking, TileImage } from "../shared";
 import styles from "./styles";
 
 const { puzzleContainer, header, headline, imageContainer } = styles;
@@ -27,7 +26,7 @@ const TileAJ = ({ id, image, onPress, title, url }) => {
       <View style={header}>
         <ArticleSummaryHeadline headline={title} style={headline} />
       </View>
-      <Image
+      <TileImage
         aspectRatio={3 / 2}
         disablePlaceholder
         relativeWidth={crop.relativeWidth}

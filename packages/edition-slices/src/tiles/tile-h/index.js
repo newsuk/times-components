@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Image from "@times-components/image";
 import {
   getTileImage,
   getTileSummary,
   TileLink,
   TileSummary,
+  TileImage,
   withTileTracking
 } from "../shared";
 import styles from "./styles";
@@ -17,6 +17,10 @@ const TileH = ({ onPress, tile }) => {
     return null;
   }
 
+  const {
+    article: { hasVideo }
+  } = tile;
+
   return (
     <TileLink onPress={onPress} style={styles.container} tile={tile}>
       <TileSummary
@@ -26,7 +30,7 @@ const TileH = ({ onPress, tile }) => {
         summary={getTileSummary(tile, 125)}
         tile={tile}
       />
-      <Image
+      <TileImage
         aspectRatio={2 / 3}
         relativeWidth={crop.relativeWidth}
         relativeHeight={crop.relativeHeight}
@@ -35,6 +39,7 @@ const TileH = ({ onPress, tile }) => {
         style={styles.imageContainer}
         uri={crop.url}
         fill
+        hasVideo={hasVideo}
       />
     </TileLink>
   );

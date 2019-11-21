@@ -24,6 +24,38 @@ exports[`tile p without breakpoint 1`] = `
     }
     uri="//www.thetimes.co.uk/imageserver/image/methode%2Ftimes%2Fprod%2Fweb%2Fbin%2F5af6925e-2599-11e9-b782-40e94f317da5.jpg?crop=1000%2C1000%2C250%2C0"
   />
+  <Text
+    style={
+      Object {
+        "color": "#850029",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 12,
+        "letterSpacing": 0.6,
+        "lineHeight": 12,
+        "marginTop": 15,
+        "textTransform": "uppercase",
+      }
+    }
+  >
+    Richard Lloyd Parry
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "#850029",
+        "flexDirection": "row",
+        "fontFamily": "GillSansMTStd-Medium",
+        "fontSize": 12,
+        "letterSpacing": 0.6,
+        "lineHeight": 12,
+        "marginTop": 15,
+        "textTransform": "uppercase",
+      }
+    }
+  >
+    , Hanoi
+  </Text>
   <View
     style={
       Object {
@@ -91,36 +123,6 @@ exports[`tile p without breakpoint 1`] = `
         ]
       }
     />
-    <Text>
-      <Text
-        style={
-          Object {
-            "color": "#850029",
-            "flexDirection": "row",
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 12,
-            "letterSpacing": 0.6,
-            "lineHeight": 12,
-          }
-        }
-      >
-        Richard Lloyd Parry
-      </Text>
-      <Text
-        style={
-          Object {
-            "color": "#850029",
-            "flexDirection": "row",
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 12,
-            "letterSpacing": 0.6,
-            "lineHeight": 12,
-          }
-        }
-      >
-        , Hanoi
-      </Text>
-    </Text>
   </View>
 </Link>
 `;

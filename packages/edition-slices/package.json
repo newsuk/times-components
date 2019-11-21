@@ -51,6 +51,8 @@
     "@times-components/styleguide": "3.31.0",
     "@times-components/tracking": "2.5.1",
     "@times-components/utils": "5.1.8",
+    "@times-components/article-byline": "3.2.1",
+    "@times-components/video": "4.7.95",
     "prop-types": "15.7.2"
   },
   "devDependencies": {

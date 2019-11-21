@@ -14,6 +14,18 @@ exports[`tile e huge 1`] = `
   margin-bottom: 0px;
 }
 
+.S3 {
+  color: rgba(105,105,105,1.00);
+  -ms-flex-wrap: wrap;
+  -webkit-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-family: TimesDigitalW04;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
 .IS1 {
   width: 100%;
   margin-bottom: 10px;
@@ -59,6 +71,17 @@ exports[`tile e huge 1`] = `
     >
       This is tile headline
     </h3>
+    <div
+      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
+    >
+      <span
+        className="css-text-901oao css-textHasAncestor-16my406"
+      >
+        
+        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+        ...
+      </span>
+    </div>
     <ArticleFlags
       flags={
         Array [
@@ -83,7 +106,20 @@ exports[`tile e medium 1`] = `
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
+  line-height: 20px;
   margin-bottom: 0px;
+}
+
+.S3 {
+  color: rgba(105,105,105,1.00);
+  -ms-flex-wrap: wrap;
+  -webkit-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-family: TimesDigitalW04;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
 }
 
 .IS1 {
@@ -93,7 +129,6 @@ exports[`tile e medium 1`] = `
 
 .IS2 {
   font-size: 20px;
-  line-height: 20px;
 }
 </style>
 
@@ -126,11 +161,22 @@ exports[`tile e medium 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS2 S2"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-lineHeight-rjixqe r-marginBottom-p1pxzi IS2 S2"
       role="heading"
     >
       This is tile headline
     </h3>
+    <div
+      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
+    >
+      <span
+        className="css-text-901oao css-textHasAncestor-16my406"
+      >
+        
+        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+        ...
+      </span>
+    </div>
     <ArticleFlags
       flags={
         Array [
@@ -157,6 +203,18 @@ exports[`tile e small 1`] = `
   font-size: 22px;
   font-weight: 400;
   margin-bottom: 5px;
+}
+
+.S3 {
+  color: rgba(105,105,105,1.00);
+  -ms-flex-wrap: wrap;
+  -webkit-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-family: TimesDigitalW04;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
 }
 
 .IS1 {
@@ -208,6 +266,17 @@ exports[`tile e small 1`] = `
     >
       This is tile headline
     </h3>
+    <div
+      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
+    >
+      <span
+        className="css-text-901oao css-textHasAncestor-16my406"
+      >
+        
+        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+        ...
+      </span>
+    </div>
     <ArticleFlags
       flags={
         Array [
@@ -232,7 +301,20 @@ exports[`tile e wide 1`] = `
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
   font-weight: 400;
+  line-height: 20px;
   margin-bottom: 0px;
+}
+
+.S3 {
+  color: rgba(105,105,105,1.00);
+  -ms-flex-wrap: wrap;
+  -webkit-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-family: TimesDigitalW04;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
 }
 
 .IS1 {
@@ -242,7 +324,6 @@ exports[`tile e wide 1`] = `
 
 .IS2 {
   font-size: 20px;
-  line-height: 20px;
 }
 </style>
 
@@ -276,11 +357,22 @@ exports[`tile e wide 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-p1pxzi IS2 S2"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-lineHeight-rjixqe r-marginBottom-p1pxzi IS2 S2"
       role="heading"
     >
       This is tile headline
     </h3>
+    <div
+      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
+    >
+      <span
+        className="css-text-901oao css-textHasAncestor-16my406"
+      >
+        
+        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+        ...
+      </span>
+    </div>
     <ArticleFlags
       flags={
         Array [
@@ -307,6 +399,18 @@ exports[`tile e without breakpoint should be like small 1`] = `
   font-size: 22px;
   font-weight: 400;
   margin-bottom: 5px;
+}
+
+.S3 {
+  color: rgba(105,105,105,1.00);
+  -ms-flex-wrap: wrap;
+  -webkit-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  font-family: TimesDigitalW04;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
 }
 
 .IS1 {
@@ -358,6 +462,17 @@ exports[`tile e without breakpoint should be like small 1`] = `
     >
       This is tile headline
     </h3>
+    <div
+      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S3"
+    >
+      <span
+        className="css-text-901oao css-textHasAncestor-16my406"
+      >
+        
+        Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+        ...
+      </span>
+    </div>
     <ArticleFlags
       flags={
         Array [

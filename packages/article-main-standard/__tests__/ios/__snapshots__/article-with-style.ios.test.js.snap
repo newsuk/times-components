@@ -52,7 +52,7 @@ exports[`full article with style on mobile 1`] = `
             "color": "#333333",
             "fontFamily": "TimesModern-Regular",
             "fontSize": 20,
-            "lineHeight": 28,
+            "lineHeight": 22,
             "paddingBottom": 10,
           }
         }
@@ -184,7 +184,7 @@ exports[`full article with style on tablet 1`] = `
             "color": "#333333",
             "fontFamily": "TimesModern-Regular",
             "fontSize": 20,
-            "lineHeight": 28,
+            "lineHeight": 22,
             "paddingBottom": 10,
           }
         }

@@ -21,6 +21,10 @@ const mapping = ({ scale }) => {
         headline: {
           ...mappingBase.headline,
           headline: 36
+        },
+        headlineRegular: {
+          ...mappingBase.headlineRegular,
+          smallestHeadline: 22
         }
       };
     case scales.xlarge:
@@ -39,6 +43,10 @@ const mapping = ({ scale }) => {
         headline: {
           ...mappingBase.headline,
           headline: 36
+        },
+        headlineRegular: {
+          ...mappingBase.headlineRegular,
+          smallestHeadline: 22
         }
       };
     default:
@@ -51,6 +59,10 @@ const mapping = ({ scale }) => {
         headline: {
           ...mappingBase.headline,
           headline: 36
+        },
+        headlineRegular: {
+          ...mappingBase.headlineRegular,
+          smallestHeadline: 22
         }
       };
   }

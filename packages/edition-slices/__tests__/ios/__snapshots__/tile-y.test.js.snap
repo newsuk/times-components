@@ -35,30 +35,11 @@ exports[`tile y huge 1`] = `
           "fontSize": 35,
           "fontWeight": "900",
           "lineHeight": 35,
-          "marginBottom": 0,
+          "marginBottom": 5,
         }
       }
     >
       This is tile headline
-    </Text>
-    <Text
-      style={
-        Object {
-          "color": "#696969",
-          "flexWrap": "wrap",
-          "fontFamily": "TimesDigitalW04",
-          "fontSize": 14,
-          "lineHeight": 20,
-          "marginBottom": 0,
-          "marginTop": 10,
-        }
-      }
-    >
-      <Text>
-        
-        ‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye.
-        ...
-      </Text>
     </Text>
     <ArticleFlags
       flags={
@@ -70,6 +51,25 @@ exports[`tile y huge 1`] = `
         ]
       }
     />
+    <Text
+      style={
+        Object {
+          "color": "#696969",
+          "flexWrap": "wrap",
+          "fontFamily": "TimesDigitalW04",
+          "fontSize": 14,
+          "lineHeight": 20,
+          "marginBottom": 0,
+          "marginTop": 5,
+        }
+      }
+    >
+      <Text>
+        
+        ‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye.
+        ...
+      </Text>
+    </Text>
   </View>
 </Link>
 `;
@@ -109,30 +109,11 @@ exports[`tile y medium 1`] = `
           "fontSize": 30,
           "fontWeight": "900",
           "lineHeight": 30,
-          "marginBottom": 0,
+          "marginBottom": 5,
         }
       }
     >
       This is tile headline
-    </Text>
-    <Text
-      style={
-        Object {
-          "color": "#696969",
-          "flexWrap": "wrap",
-          "fontFamily": "TimesDigitalW04",
-          "fontSize": 14,
-          "lineHeight": 20,
-          "marginBottom": 0,
-          "marginTop": 10,
-        }
-      }
-    >
-      <Text>
-        
-        ‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye.
-        ...
-      </Text>
     </Text>
     <ArticleFlags
       flags={
@@ -144,6 +125,25 @@ exports[`tile y medium 1`] = `
         ]
       }
     />
+    <Text
+      style={
+        Object {
+          "color": "#696969",
+          "flexWrap": "wrap",
+          "fontFamily": "TimesDigitalW04",
+          "fontSize": 14,
+          "lineHeight": 20,
+          "marginBottom": 0,
+          "marginTop": 5,
+        }
+      }
+    >
+      <Text>
+        
+        ‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye.
+        ...
+      </Text>
+    </Text>
   </View>
 </Link>
 `;
@@ -183,30 +183,11 @@ exports[`tile y wide 1`] = `
           "fontSize": 30,
           "fontWeight": "900",
           "lineHeight": 30,
-          "marginBottom": 0,
+          "marginBottom": 5,
         }
       }
     >
       This is tile headline
-    </Text>
-    <Text
-      style={
-        Object {
-          "color": "#696969",
-          "flexWrap": "wrap",
-          "fontFamily": "TimesDigitalW04",
-          "fontSize": 14,
-          "lineHeight": 20,
-          "marginBottom": 0,
-          "marginTop": 10,
-        }
-      }
-    >
-      <Text>
-        
-        ‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye.
-        ...
-      </Text>
     </Text>
     <ArticleFlags
       flags={
@@ -218,6 +199,25 @@ exports[`tile y wide 1`] = `
         ]
       }
     />
+    <Text
+      style={
+        Object {
+          "color": "#696969",
+          "flexWrap": "wrap",
+          "fontFamily": "TimesDigitalW04",
+          "fontSize": 14,
+          "lineHeight": 20,
+          "marginBottom": 0,
+          "marginTop": 5,
+        }
+      }
+    >
+      <Text>
+        
+        ‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye.
+        ...
+      </Text>
+    </Text>
   </View>
 </Link>
 `;
@@ -257,30 +257,11 @@ exports[`tile y without breakpoint should be like medium 1`] = `
           "fontSize": 30,
           "fontWeight": "900",
           "lineHeight": 30,
-          "marginBottom": 0,
+          "marginBottom": 5,
         }
       }
     >
       This is tile headline
-    </Text>
-    <Text
-      style={
-        Object {
-          "color": "#696969",
-          "flexWrap": "wrap",
-          "fontFamily": "TimesDigitalW04",
-          "fontSize": 14,
-          "lineHeight": 20,
-          "marginBottom": 0,
-          "marginTop": 10,
-        }
-      }
-    >
-      <Text>
-        
-        ‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye.
-        ...
-      </Text>
     </Text>
     <ArticleFlags
       flags={
@@ -292,6 +273,25 @@ exports[`tile y without breakpoint should be like medium 1`] = `
         ]
       }
     />
+    <Text
+      style={
+        Object {
+          "color": "#696969",
+          "flexWrap": "wrap",
+          "fontFamily": "TimesDigitalW04",
+          "fontSize": 14,
+          "lineHeight": 20,
+          "marginBottom": 0,
+          "marginTop": 5,
+        }
+      }
+    >
+      <Text>
+        
+        ‘The prodigal son returns.” So read a banner tied to the wall of the Paul Strank Stand at Kingsmeadow, the home of AFC Wimbledon, on Saturday, alongside the sepia-toned image of a fresh-faced Wally Downes, sporting an 80s haircut and Wimbledon strip, with a mischievous glint in his eye.
+        ...
+      </Text>
+    </Text>
   </View>
 </Link>
 `;

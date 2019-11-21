@@ -2,11 +2,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { editionBreakpoints } from "@times-components/styleguide";
-import Image from "@times-components/image";
 import {
   getTileImage,
   TileLink,
   TileSummary,
+  TileImage,
   withTileTracking
 } from "../shared";
 import styleFactory from "./styles";
@@ -19,9 +19,13 @@ const TileK = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
     return null;
   }
 
+  const {
+    article: { hasVideo }
+  } = tile;
+
   return (
     <TileLink onPress={onPress} style={styles.container} tile={tile}>
-      <Image
+      <TileImage
         aspectRatio={3 / 2}
         relativeWidth={crop.relativeWidth}
         relativeHeight={crop.relativeHeight}
@@ -30,6 +34,7 @@ const TileK = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
         style={styles.imageContainer}
         uri={crop.url}
         fill
+        hasVideo={hasVideo}
       />
       <TileSummary
         headlineStyle={styles.headline}

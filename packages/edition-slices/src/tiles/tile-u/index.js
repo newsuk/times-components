@@ -1,11 +1,11 @@
 /* eslint-disable react/require-default-props */
 import React from "react";
 import PropTypes from "prop-types";
-import Image from "@times-components/image";
 import {
   getTileImage,
   TileLink,
   TileSummary,
+  TileImage,
   withTileTracking
 } from "../shared";
 import styles from "./styles";
@@ -17,9 +17,13 @@ const TileU = ({ onPress, tile }) => {
     return null;
   }
 
+  const {
+    article: { hasVideo }
+  } = tile;
+
   return (
     <TileLink onPress={onPress} style={styles.container} tile={tile}>
-      <Image
+      <TileImage
         aspectRatio={16 / 9}
         relativeWidth={crop.relativeWidth}
         relativeHeight={crop.relativeHeight}
@@ -28,6 +32,7 @@ const TileU = ({ onPress, tile }) => {
         style={styles.imageContainer}
         uri={crop.url}
         fill
+        hasVideo={hasVideo}
       />
       <TileSummary headlineStyle={styles.headline} tile={tile} />
     </TileLink>

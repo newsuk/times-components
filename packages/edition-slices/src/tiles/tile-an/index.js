@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Image from "@times-components/image";
 import {
   getTileImage,
   getTileSummary,
   TileLink,
   TileSummary,
+  TileImage,
   withTileTracking
 } from "../shared";
 import styles from "./styles";
@@ -19,7 +19,7 @@ const TileAN = ({ onPress, tile }) => {
 
   return (
     <TileLink onPress={onPress} style={styles.container} tile={tile}>
-      <Image
+      <TileImage
         aspectRatio={1}
         relativeWidth={crop.relativeWidth}
         relativeHeight={crop.relativeHeight}

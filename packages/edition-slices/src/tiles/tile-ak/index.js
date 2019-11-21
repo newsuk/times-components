@@ -3,10 +3,9 @@ import React from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
 import Link from "@times-components/link";
-import Image from "@times-components/image";
 import { ArticleSummaryHeadline } from "@times-components/article-summary";
 import { editionBreakpoints } from "@times-components/styleguide";
-import { withPuzzleTileTracking } from "../shared";
+import { withPuzzleTileTracking, TileImage } from "../shared";
 import stylesFactory from "./styles";
 
 const TileAK = ({
@@ -36,7 +35,7 @@ const TileAK = ({
       <View style={header}>
         <ArticleSummaryHeadline headline={title} style={headline} />
       </View>
-      <Image
+      <TileImage
         aspectRatio={3 / 2}
         disablePlaceholder
         relativeWidth={crop.relativeWidth}

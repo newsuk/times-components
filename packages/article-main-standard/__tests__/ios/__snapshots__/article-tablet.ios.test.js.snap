@@ -53,7 +53,7 @@ exports[`1. article main standard - tablet 1`] = `
             "color": "#333333",
             "fontFamily": "TimesModern-Regular",
             "fontSize": 20,
-            "lineHeight": 28,
+            "lineHeight": 22,
             "paddingBottom": 10,
           }
         }

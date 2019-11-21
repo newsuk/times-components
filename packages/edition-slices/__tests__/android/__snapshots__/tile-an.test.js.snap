@@ -60,6 +60,16 @@ exports[`tile an without breakpoint 1`] = `
     >
       This is tile headline
     </Text>
+    <ArticleFlags
+      flags={
+        Array [
+          Object {
+            "expiryTime": "2030-03-14T12:00:00.000Z",
+            "type": "EXCLUSIVE",
+          },
+        ]
+      }
+    />
     <Text
       style={
         Object {
@@ -78,16 +88,6 @@ exports[`tile an without breakpoint 1`] = `
         ...
       </Text>
     </Text>
-    <ArticleFlags
-      flags={
-        Array [
-          Object {
-            "expiryTime": "2030-03-14T12:00:00.000Z",
-            "type": "EXCLUSIVE",
-          },
-        ]
-      }
-    />
   </View>
 </Link>
 `;

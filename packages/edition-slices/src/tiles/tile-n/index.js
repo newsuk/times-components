@@ -3,12 +3,12 @@ import React from "react";
 import { View } from "react-native";
 import PropTypes from "prop-types";
 import { colours, editionBreakpoints } from "@times-components/styleguide";
-import Image from "@times-components/image";
 import {
   getTileImage,
   getTileStrapline,
   TileLink,
   TileSummary,
+  TileImage,
   withTileTracking
 } from "../shared";
 import styleFactory from "./styles";
@@ -29,10 +29,14 @@ const TileN = ({
     return null;
   }
 
+  const {
+    article: { hasVideo }
+  } = tile;
+
   return (
     <TileLink onPress={onPress} style={styles.container} tile={tile}>
       <View style={styles.content}>
-        <Image
+        <TileImage
           aspectRatio={1}
           relativeWidth={crop.relativeWidth}
           relativeHeight={crop.relativeHeight}
@@ -41,6 +45,7 @@ const TileN = ({
           style={styles.imageContainer}
           uri={crop.url}
           fill
+          hasVideo={hasVideo}
         />
         <TileSummary
           flagColour={styles.flagColour}

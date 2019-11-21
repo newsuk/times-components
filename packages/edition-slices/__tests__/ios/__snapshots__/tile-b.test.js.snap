@@ -42,31 +42,11 @@ exports[`tile b huge 1`] = `
               "fontSize": 35,
               "fontWeight": "900",
               "lineHeight": 35,
-              "marginBottom": 0,
+              "marginBottom": 5,
             }
           }
         >
           This is tile headline
-        </Text>
-        <Text
-          numberOfLines={2}
-          style={
-            Object {
-              "color": "#696969",
-              "flexWrap": "wrap",
-              "fontFamily": "TimesDigitalW04",
-              "fontSize": 14,
-              "lineHeight": 20,
-              "marginBottom": 0,
-              "marginTop": 10,
-            }
-          }
-        >
-          <Text>
-            
-            Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-            ...
-          </Text>
         </Text>
         <ArticleFlags
           flags={
@@ -78,6 +58,26 @@ exports[`tile b huge 1`] = `
             ]
           }
         />
+        <Text
+          numberOfLines={2}
+          style={
+            Object {
+              "color": "#696969",
+              "flexWrap": "wrap",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 14,
+              "lineHeight": 20,
+              "marginBottom": 0,
+              "marginTop": 5,
+            }
+          }
+        >
+          <Text>
+            
+            Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+            ...
+          </Text>
+        </Text>
       </View>
     </View>
   </View>
@@ -126,31 +126,11 @@ exports[`tile b medium 1`] = `
               "fontSize": 20,
               "fontWeight": "900",
               "lineHeight": 20,
-              "marginBottom": 0,
+              "marginBottom": 5,
             }
           }
         >
           This is tile headline
-        </Text>
-        <Text
-          numberOfLines={2}
-          style={
-            Object {
-              "color": "#696969",
-              "flexWrap": "wrap",
-              "fontFamily": "TimesDigitalW04",
-              "fontSize": 14,
-              "lineHeight": 20,
-              "marginBottom": 0,
-              "marginTop": 10,
-            }
-          }
-        >
-          <Text>
-            
-            Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-            ...
-          </Text>
         </Text>
         <ArticleFlags
           flags={
@@ -162,6 +142,26 @@ exports[`tile b medium 1`] = `
             ]
           }
         />
+        <Text
+          numberOfLines={2}
+          style={
+            Object {
+              "color": "#696969",
+              "flexWrap": "wrap",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 14,
+              "lineHeight": 20,
+              "marginBottom": 0,
+              "marginTop": 5,
+            }
+          }
+        >
+          <Text>
+            
+            Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+            ...
+          </Text>
+        </Text>
       </View>
     </View>
   </View>
@@ -216,6 +216,16 @@ exports[`tile b small 1`] = `
         >
           This is tile headline
         </Text>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+        />
         <Text
           numberOfLines={2}
           style={
@@ -235,16 +245,6 @@ exports[`tile b small 1`] = `
             ...
           </Text>
         </Text>
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
       </View>
     </View>
   </View>
@@ -293,31 +293,11 @@ exports[`tile b wide 1`] = `
               "fontSize": 30,
               "fontWeight": "900",
               "lineHeight": 30,
-              "marginBottom": 0,
+              "marginBottom": 5,
             }
           }
         >
           This is tile headline
-        </Text>
-        <Text
-          numberOfLines={2}
-          style={
-            Object {
-              "color": "#696969",
-              "flexWrap": "wrap",
-              "fontFamily": "TimesDigitalW04",
-              "fontSize": 14,
-              "lineHeight": 20,
-              "marginBottom": 0,
-              "marginTop": 10,
-            }
-          }
-        >
-          <Text>
-            
-            Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
-            ...
-          </Text>
         </Text>
         <ArticleFlags
           flags={
@@ -329,6 +309,26 @@ exports[`tile b wide 1`] = `
             ]
           }
         />
+        <Text
+          numberOfLines={2}
+          style={
+            Object {
+              "color": "#696969",
+              "flexWrap": "wrap",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 14,
+              "lineHeight": 20,
+              "marginBottom": 0,
+              "marginTop": 5,
+            }
+          }
+        >
+          <Text>
+            
+            Theresa May has two objectives tomorrow when MPs get to vote on Brexit — the trouble is both are fraught with difficulty.
+            ...
+          </Text>
+        </Text>
       </View>
     </View>
   </View>
@@ -377,31 +377,11 @@ exports[`tile b with more teaser 1`] = `
               "fontSize": 20,
               "fontWeight": "900",
               "lineHeight": 20,
-              "marginBottom": 0,
+              "marginBottom": 5,
             }
           }
         >
           This is tile headline
-        </Text>
-        <Text
-          numberOfLines={2}
-          style={
-            Object {
-              "color": "#696969",
-              "flexWrap": "wrap",
-              "fontFamily": "TimesDigitalW04",
-              "fontSize": 14,
-              "lineHeight": 20,
-              "marginBottom": 0,
-              "marginTop": 10,
-            }
-          }
-        >
-          <Text>
-            
-            Senior ministers accused Labour today of trying to “frustrate and cancel Brexit” after the party announced plans to hijack Boris Johnson’s deal with amendments for a second referendum and customs union with the EU. Rishi Sunak, the chief secretary to the Treasury, warned that any attempt by MPs to add a customs union to the government’s Brexit deal would be “procedural tricks” intended to frustrate departure. His comments came as ministers announced that they planned to publish the legislation that would formally take Britain out of the European Union today. They will also apply to the Speaker to hold another so-called meaningful vote on the deal following Mr Johnson’s decision to comply with the Benn act, which forces the prime minister to request a Brexit
-            ...
-          </Text>
         </Text>
         <ArticleFlags
           flags={
@@ -413,6 +393,26 @@ exports[`tile b with more teaser 1`] = `
             ]
           }
         />
+        <Text
+          numberOfLines={2}
+          style={
+            Object {
+              "color": "#696969",
+              "flexWrap": "wrap",
+              "fontFamily": "TimesDigitalW04",
+              "fontSize": 14,
+              "lineHeight": 20,
+              "marginBottom": 0,
+              "marginTop": 5,
+            }
+          }
+        >
+          <Text>
+            
+            Senior ministers accused Labour today of trying to “frustrate and cancel Brexit” after the party announced plans to hijack Boris Johnson’s deal with amendments for a second referendum and customs union with the EU. Rishi Sunak, the chief secretary to the Treasury, warned that any attempt by MPs to add a customs union to the government’s Brexit deal would be “procedural tricks” intended to frustrate departure. His comments came as ministers announced that they planned to publish the legislation that would formally take Britain out of the European Union today. They will also apply to the Speaker to hold another so-called meaningful vote on the deal following Mr Johnson’s decision to comply with the Benn act, which forces the prime minister to request a Brexit
+            ...
+          </Text>
+        </Text>
       </View>
     </View>
   </View>
@@ -467,6 +467,16 @@ exports[`tile b without breakpoint should be like small 1`] = `
         >
           This is tile headline
         </Text>
+        <ArticleFlags
+          flags={
+            Array [
+              Object {
+                "expiryTime": "2030-03-14T12:00:00.000Z",
+                "type": "EXCLUSIVE",
+              },
+            ]
+          }
+        />
         <Text
           numberOfLines={2}
           style={
@@ -486,16 +496,6 @@ exports[`tile b without breakpoint should be like small 1`] = `
             ...
           </Text>
         </Text>
-        <ArticleFlags
-          flags={
-            Array [
-              Object {
-                "expiryTime": "2030-03-14T12:00:00.000Z",
-                "type": "EXCLUSIVE",
-              },
-            ]
-          }
-        />
       </View>
     </View>
   </View>

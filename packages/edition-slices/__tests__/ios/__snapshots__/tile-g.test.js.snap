@@ -172,7 +172,7 @@ exports[`tile g medium 1`] = `
               "fontSize": 20,
               "fontWeight": "900",
               "lineHeight": 20,
-              "marginBottom": 0,
+              "marginBottom": 5,
             }
           }
         >
@@ -364,7 +364,7 @@ exports[`tile g wide 1`] = `
               "fontSize": 20,
               "fontWeight": "900",
               "lineHeight": 20,
-              "marginBottom": 0,
+              "marginBottom": 5,
             }
           }
         >

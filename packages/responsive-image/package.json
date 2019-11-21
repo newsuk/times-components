@@ -2,7 +2,7 @@
   "name": "@times-components/responsive-image",
   "version": "0.0.5",
   "description": "A responsive-image for react native",
-  "main": "build/index.js",
+  "main": "src/index.tsx",
   "typings": "build/index.d.ts",
   "repository": {
     "type": "git",
