@@ -12,12 +12,7 @@ import {
 } from "../shared";
 import stylesFactory from "./styles";
 
-const TileE = ({
-  onPress,
-  tile,
-  breakpoint = editionBreakpoints.small,
-  withMoreTeaser = false
-}) => {
+const TileE = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
   const crop = getTileImage(tile, "crop45");
   const styles = stylesFactory(breakpoint);
 
@@ -44,7 +39,7 @@ const TileE = ({
       />
       <TileSummary
         headlineStyle={styles.headline}
-        summary={getTileSummary(tile, withMoreTeaser ? 800 : 125)}
+        summary={getTileSummary(tile, 125)}
         style={styles.summaryContainer}
         tile={tile}
       />
@@ -55,8 +50,7 @@ const TileE = ({
 TileE.propTypes = {
   onPress: PropTypes.func.isRequired,
   tile: PropTypes.shape({}).isRequired,
-  breakpoint: PropTypes.string,
-  withMoreTeaser: PropTypes.bool
+  breakpoint: PropTypes.string
 };
 
 export default withTileTracking(TileE);
