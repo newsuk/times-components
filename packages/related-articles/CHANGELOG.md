@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.2.27](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.2.26...@times-components/related-articles@6.2.27) (2019-11-21)
+
+
+### Bug Fixes
+
+* added displayName to relatedArticleItem  and changed the object to 'Article' ([#2396](https://github.com/newsuk/times-components/issues/2396)) ([b0c1cea](https://github.com/newsuk/times-components/commit/b0c1cea108c95cf019b733584e310a54aa7159f8))
+
+
+
+
+
 ## [6.2.26](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.2.25...@times-components/related-articles@6.2.26) (2019-11-21)
 
 **Note:** Version bump only for package @times-components/related-articles

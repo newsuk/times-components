@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.3](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.4.2...@times-components/save-star-web@0.4.3) (2019-11-21)
+
+
+### Bug Fixes
+
+* added displayName to relatedArticleItem  and changed the object to 'Article' ([#2396](https://github.com/newsuk/times-components/issues/2396)) ([b0c1cea](https://github.com/newsuk/times-components/commit/b0c1cea108c95cf019b733584e310a54aa7159f8))
+
+
+
+
+
 ## [0.4.2](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.4.1...@times-components/save-star-web@0.4.2) (2019-11-20)
 
 **Note:** Version bump only for package @times-components/save-star-web

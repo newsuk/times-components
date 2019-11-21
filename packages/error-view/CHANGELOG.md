@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.3.2](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.3.1...@times-components/error-view@2.3.2) (2019-11-21)
+
+
+### Bug Fixes
+
+* added displayName to relatedArticleItem  and changed the object to 'Article' ([#2396](https://github.com/newsuk/times-components/issues/2396)) ([b0c1cea](https://github.com/newsuk/times-components/commit/b0c1cea108c95cf019b733584e310a54aa7159f8))
+
+
+
+
+
 ## [2.3.1](https://github.com/newsuk/times-components/compare/@times-components/error-view@2.3.0...@times-components/error-view@2.3.1) (2019-11-20)
 
 
