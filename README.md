@@ -9,7 +9,7 @@ Home of The Times' `react`/`react native` components, using
 [react-native-web](https://github.com/necolas/react-native-web) to share across
 platforms
 
-### Dev Environment
+### Dev Environment Excellent
 
 We require MacOS with [Node.js](https://nodejs.org) (version >=8.10.0 < 10> with npm v5),
 [yarn](https://yarnpkg.com) (latest) and
