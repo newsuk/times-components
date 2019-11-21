@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.32.0](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.31.0...@times-components/styleguide@3.32.0) (2019-11-21)
+
+
+### Features
+
+* design changes for ios release ([#2392](https://github.com/newsuk/times-components/issues/2392)) ([a9ccbe3](https://github.com/newsuk/times-components/commit/a9ccbe3e9af81e8c5173755168be9ec1e8f692f4))
+
+
+
+
+
 # [3.31.0](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.30.4...@times-components/styleguide@3.31.0) (2019-11-19)
 
 

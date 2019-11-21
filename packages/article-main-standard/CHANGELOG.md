@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.18.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.17.15...@times-components/article-main-standard@3.18.0) (2019-11-21)
+
+
+### Features
+
+* design changes for ios release ([#2392](https://github.com/newsuk/times-components/issues/2392)) ([a9ccbe3](https://github.com/newsuk/times-components/commit/a9ccbe3e9af81e8c5173755168be9ec1e8f692f4))
+
+
+
+
+
 ## [3.17.15](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.17.14...@times-components/article-main-standard@3.17.15) (2019-11-20)
 
 **Note:** Version bump only for package @times-components/article-main-standard
