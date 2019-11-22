@@ -41,7 +41,7 @@ class SaveAndShareBar extends Component {
     } = this.props;
 
     return (
-      <View style={styles.container}>
+      <View style={styles.container} data-testid="save-and-share-bar">
         {sharingEnabled && (
           <View style={styles.rowItem}>
             <Text style={styles.label}>Share</Text>
@@ -68,6 +68,7 @@ class SaveAndShareBar extends Component {
             <BarItem
               onPress={onShareOnTwitter}
               target="_blank"
+              dataTestId="share-twitter"
               url={`${SharingApiUrls.twitter}?text=${articleUrl}`}
             >
               <IconTwitter
@@ -79,6 +80,7 @@ class SaveAndShareBar extends Component {
             <BarItem
               onPress={onShareOnFB}
               target="_blank"
+              dataTestId="share-facebook"
               url={`${SharingApiUrls.facebook}?u=${articleUrl}`}
             >
               <IconFacebook
@@ -91,6 +93,7 @@ class SaveAndShareBar extends Component {
               color={styles.svgIcon.save.strokeColour}
               hoverColor={styles.svgIcon.hoverFillColour}
               onPress={this.copyToClipboard}
+              dataTestId="copy-to-clickboard"
             >
               <IconCopyLink
                 fillColour="currentColor"
@@ -102,7 +105,7 @@ class SaveAndShareBar extends Component {
         )}
         {savingEnabled ? (
           <UserState state={UserState.loggedIn} serverRender={false}>
-            <View style={styles.rowItem}>
+            <View style={styles.rowItem} data-testid="save-star">
               <SaveStar
                 colour={styles.svgIcon.save.strokeColour}
                 hoverColor={styles.svgIcon.hoverFillColour}

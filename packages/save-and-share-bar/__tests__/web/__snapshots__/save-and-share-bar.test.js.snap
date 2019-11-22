@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`save and share bar component email icon when tokenising with loading state while network request is fetching data 1`] = `
-<BarItem>
+<BarItem
+  dataTestId="email-share"
+>
   <div
     aria-valuemax="1"
     aria-valuemin="0"
@@ -64,6 +66,7 @@ exports[`save and share bar component email icon when tokenising with loading st
 exports[`save and share bar component save and share bar renders correctly when logged in 1`] = `
 <div
   className="css-view-1dbjc4n"
+  data-testid="save-and-share-bar"
   style={
     Object {
       "WebkitAlignItems": "center",
@@ -128,7 +131,9 @@ exports[`save and share bar component save and share bar renders correctly when 
     >
       Share
     </div>
-    <BarItem>
+    <BarItem
+      dataTestId="email-share"
+    >
       <IconEmail
         fillColour="currentColor"
         height={16}
@@ -136,6 +141,7 @@ exports[`save and share bar component save and share bar renders correctly when 
       />
     </BarItem>
     <BarItem
+      dataTestId="share-twitter"
       target="_blank"
       url="https://twitter.com/intent/tweet?text=https://www.thetimes.co.uk/"
     >
@@ -146,6 +152,7 @@ exports[`save and share bar component save and share bar renders correctly when 
       />
     </BarItem>
     <BarItem
+      dataTestId="share-facebook"
       target="_blank"
       url="https://www.facebook.com/sharer/sharer.php?u=https://www.thetimes.co.uk/"
     >
@@ -157,6 +164,7 @@ exports[`save and share bar component save and share bar renders correctly when 
     </BarItem>
     <BarItem
       color="#696969"
+      dataTestId="copy-to-clickboard"
       hoverColor="#1D1D1B"
     >
       <IconCopyLink
@@ -168,6 +176,7 @@ exports[`save and share bar component save and share bar renders correctly when 
   </div>
   <div
     className="css-view-1dbjc4n"
+    data-testid="save-star"
     style={
       Object {
         "WebkitAlignItems": "center",
@@ -196,6 +205,7 @@ exports[`save and share bar component save and share bar renders correctly when 
 exports[`save and share bar component save and share bar renders correctly when not logged in 1`] = `
 <div
   className="css-view-1dbjc4n"
+  data-testid="save-and-share-bar"
   style={
     Object {
       "WebkitAlignItems": "center",
@@ -260,7 +270,9 @@ exports[`save and share bar component save and share bar renders correctly when 
     >
       Share
     </div>
-    <BarItem>
+    <BarItem
+      dataTestId="email-share"
+    >
       <IconEmail
         fillColour="currentColor"
         height={16}
@@ -268,6 +280,7 @@ exports[`save and share bar component save and share bar renders correctly when 
       />
     </BarItem>
     <BarItem
+      dataTestId="share-twitter"
       target="_blank"
       url="https://twitter.com/intent/tweet?text=https://www.thetimes.co.uk/"
     >
@@ -278,6 +291,7 @@ exports[`save and share bar component save and share bar renders correctly when 
       />
     </BarItem>
     <BarItem
+      dataTestId="share-facebook"
       target="_blank"
       url="https://www.facebook.com/sharer/sharer.php?u=https://www.thetimes.co.uk/"
     >
@@ -289,6 +303,7 @@ exports[`save and share bar component save and share bar renders correctly when 
     </BarItem>
     <BarItem
       color="#696969"
+      dataTestId="copy-to-clickboard"
       hoverColor="#1D1D1B"
     >
       <IconCopyLink
