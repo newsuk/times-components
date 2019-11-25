@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import { ArticleFlags, getActiveFlags } from "@times-components/article-flag";
 import { ModalImage } from "@times-components/image";
 import { ResponsiveContext } from "@times-components/responsive";
+import Byline from "@times-components/article-byline";
 import Label from "../article-label/article-label";
 import Meta from "../article-meta/article-meta";
 import Standfirst from "../article-standfirst/article-standfirst";
@@ -35,6 +36,7 @@ const ArticleHeader = ({
             uri={authorImage}
             rounded
           />
+          <Byline ast={bylines} bylineStyle={styles.bylineOpinion} />
           <Label isVideo={hasVideo} label={label} />
           <Text
             style={[
@@ -51,7 +53,6 @@ const ArticleHeader = ({
           )}
           <Standfirst standfirst={standfirst} />
           <Meta
-            bylines={bylines}
             hasStandfirst={standfirst}
             isTablet={isTablet}
             onAuthorPress={onAuthorPress}

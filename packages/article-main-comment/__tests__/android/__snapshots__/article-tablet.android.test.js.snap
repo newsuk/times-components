@@ -29,12 +29,13 @@ exports[`1. article main comment - tablet 1`] = `
           Object {
             "borderRadius": 50,
             "height": 100,
-            "marginBottom": 25,
+            "marginBottom": 15,
             "overflow": "hidden",
             "width": 100,
           }
         }
       />
+      <ArticleByline />
       <View
         style={
           Object {
@@ -99,16 +100,6 @@ exports[`1. article main comment - tablet 1`] = `
           }
         }
       >
-        <View
-          style={
-            Object {
-              "flexDirection": "row",
-              "flexWrap": "wrap",
-            }
-          }
-        >
-          <ArticleBylineWithLinks />
-        </View>
         <View
           style={
             Object {

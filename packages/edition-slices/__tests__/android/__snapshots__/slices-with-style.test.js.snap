@@ -302,6 +302,7 @@ exports[`2. leaders 1`] = `
             "fontSize": 16,
             "lineHeight": 18,
             "textAlign": "center",
+            "textTransform": "uppercase",
           }
         }
       >
@@ -383,6 +384,7 @@ exports[`2. leaders 2`] = `
             "fontSize": 16,
             "lineHeight": 18,
             "textAlign": "center",
+            "textTransform": "uppercase",
           }
         }
       >
@@ -1042,6 +1044,7 @@ exports[`14. leaders 1`] = `
             "fontSize": 16,
             "lineHeight": 18,
             "textAlign": "center",
+            "textTransform": "uppercase",
           }
         }
       >

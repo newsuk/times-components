@@ -29,12 +29,15 @@ exports[`tile f without breakpoint 1`] = `
   font-family: TimesDigitalW04;
   font-size: 14px;
   line-height: 20px;
-  margin-bottom: 10px;
 }
 
 .IS1 {
   font-size: 35px;
   line-height: 35px;
+}
+
+.IS2 {
+  margin-bottom: 15px;
 }
 </style>
 
@@ -73,7 +76,7 @@ exports[`tile f without breakpoint 1`] = `
       Three Conservative MPs resign
     </h4>
     <div
-      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe r-marginBottom-15d164r S4"
+      className="css-text-901oao r-color-1khp51w r-flexWrap-1w6e6rj r-fontFamily-1feecvn r-fontSize-1b43r93 r-lineHeight-rjixqe IS2 S4"
     >
       <span
         className="css-text-901oao css-textHasAncestor-16my406"

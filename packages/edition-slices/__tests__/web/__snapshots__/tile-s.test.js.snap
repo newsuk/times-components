@@ -190,6 +190,7 @@ exports[`tile s no byline 1`] = `
   color: rgba(29,29,27,1.00);
   font-family: TimesModern-Bold;
   font-size: 22px;
+  margin-bottom: 5px;
 }
 
 .IS2 {
@@ -257,6 +258,7 @@ exports[`tile s small 1`] = `
   color: rgba(29,29,27,1.00);
   font-family: TimesModern-Bold;
   font-size: 22px;
+  margin-bottom: 5px;
 }
 
 .IS2 {

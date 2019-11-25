@@ -25,12 +25,13 @@ exports[`phone full article with style 1`] = `
           Object {
             "borderRadius": 50,
             "height": 100,
-            "marginBottom": 25,
+            "marginBottom": 15,
             "overflow": "hidden",
             "width": 100,
           }
         }
       />
+      <ArticleByline />
       <View
         style={
           Object {
@@ -93,16 +94,6 @@ exports[`phone full article with style 1`] = `
           }
         }
       >
-        <View
-          style={
-            Object {
-              "flexDirection": "row",
-              "flexWrap": "wrap",
-            }
-          }
-        >
-          <ArticleBylineWithLinks />
-        </View>
         <View
           style={
             Object {
@@ -156,12 +147,13 @@ exports[`tablet full article with style 1`] = `
           Object {
             "borderRadius": 50,
             "height": 100,
-            "marginBottom": 25,
+            "marginBottom": 15,
             "overflow": "hidden",
             "width": 100,
           }
         }
       />
+      <ArticleByline />
       <View
         style={
           Object {
@@ -224,16 +216,6 @@ exports[`tablet full article with style 1`] = `
           }
         }
       >
-        <View
-          style={
-            Object {
-              "flexDirection": "row",
-              "flexWrap": "wrap",
-            }
-          }
-        >
-          <ArticleBylineWithLinks />
-        </View>
         <View
           style={
             Object {

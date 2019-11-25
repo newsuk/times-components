@@ -11,6 +11,7 @@ import {
   getTileSummary
 } from "../shared";
 import stylesFactory from "./styles";
+import WithoutWhiteSpace from "../shared/without-white-space";
 
 const TileE = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
   const crop = getTileImage(tile, "crop45");
@@ -37,11 +38,17 @@ const TileE = ({ onPress, tile, breakpoint = editionBreakpoints.small }) => {
         fill
         hasVideo={hasVideo}
       />
-      <TileSummary
-        headlineStyle={styles.headline}
-        summary={getTileSummary(tile, 125)}
+      <WithoutWhiteSpace
         style={styles.summaryContainer}
-        tile={tile}
+        render={whiteSpaceHeight => (
+          <TileSummary
+            headlineStyle={styles.headline}
+            summary={getTileSummary(tile, 125)}
+            style={styles.summaryContainer}
+            tile={tile}
+            whiteSpaceHeight={whiteSpaceHeight}
+          />
+        )}
       />
     </TileLink>
   );
