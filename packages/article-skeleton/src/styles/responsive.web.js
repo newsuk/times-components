@@ -11,16 +11,12 @@ export const MainContainer = styled(View)`
 `;
 
 export const HeaderAdContainer = styled(View)`
-  display: none;
-
-  @media (min-width: ${breakpoints.medium}px) {
-    display: flex;
-    border-top-color: ${colours.functional.keyline};
-    border-bottom-color: ${colours.functional.keyline};
-    border-bottom-width: 1px;
-    padding-top: ${spacing(2)};
-    padding-bottom: ${spacing(2)};
-  }
+  display: flex;
+  border-top-color: ${colours.functional.keyline};
+  border-bottom-color: ${colours.functional.keyline};
+  border-bottom-width: 1px;
+  padding-top: ${spacing(2)};
+  padding-bottom: ${spacing(2)};
 `;
 
 export const HeaderContainer = styled(View)`
