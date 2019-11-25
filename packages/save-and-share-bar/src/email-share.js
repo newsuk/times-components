@@ -63,7 +63,7 @@ class EmailShare extends Component {
     const { isLoading } = this.state;
 
     return (
-      <BarItem onPress={this.onShare}>
+      <BarItem onPress={this.onShare} dataTestId="email-share">
         {isLoading ? (
           <ActivityIndicator size="small" style={styles.activityLoader} />
         ) : (
