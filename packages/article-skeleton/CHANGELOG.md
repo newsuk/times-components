@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.21.6](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.21.5...@times-components/article-skeleton@1.21.6) (2019-11-26)
+
+
+### Bug Fixes
+
+* remove display:none css styling ([#2401](https://github.com/newsuk/times-components/issues/2401)) ([7ac4d6d](https://github.com/newsuk/times-components/commit/7ac4d6d7c562b65a35ec837400840f546f16949a))
+
+
+
+
+
 ## [1.21.5](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.21.4...@times-components/article-skeleton@1.21.5) (2019-11-26)
 
 **Note:** Version bump only for package @times-components/article-skeleton

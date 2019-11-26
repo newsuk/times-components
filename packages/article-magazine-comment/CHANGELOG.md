@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.15.20](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.15.19...@times-components/article-magazine-comment@3.15.20) (2019-11-26)
+
+
+### Bug Fixes
+
+* remove display:none css styling ([#2401](https://github.com/newsuk/times-components/issues/2401)) ([7ac4d6d](https://github.com/newsuk/times-components/commit/7ac4d6d7c562b65a35ec837400840f546f16949a))
+
+
+
+
+
 ## [3.15.19](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.15.18...@times-components/article-magazine-comment@3.15.19) (2019-11-26)
 
 **Note:** Version bump only for package @times-components/article-magazine-comment
