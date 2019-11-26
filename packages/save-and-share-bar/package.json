@@ -44,6 +44,7 @@
     "@times-components/tracking": "2.5.2",
     "@times-components/user-state": "0.1.5",
     "@times-components/utils": "5.1.9",
+    "@storybook/addon-knobs": "4.1.18",
     "prop-types": "15.7.2"
   },
   "devDependencies": {

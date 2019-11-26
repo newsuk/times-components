@@ -1,4 +1,5 @@
 import React from "react";
+import { boolean } from "@storybook/addon-knobs/react";
 import { scales } from "@times-components/styleguide";
 import { MessageManager, MessageContext } from "@times-components/message-bar";
 import { MockBookmarksProvider } from "@times-components/provider-test-tools";
@@ -35,8 +36,8 @@ export default {
                   articleUrl="https://www.thetimes.co.uk/"
                   onCopyLink={() => showMessage("Article link copied")}
                   getTokenisedShareUrl={mockGetTokenisedArticleUrl}
-                  savingEnabled
-                  sharingEnabled
+                  savingEnabled={boolean("Is Saving Enabled", true)}
+                  sharingEnabled={boolean("Is Sharing Enabled", true)}
                 />
               )}
             </MessageContext.Consumer>
