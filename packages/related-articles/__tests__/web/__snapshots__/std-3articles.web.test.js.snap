@@ -14,201 +14,219 @@ exports[`1. three related articles 1`] = `
     <div>
       <div>
         <div>
-          <Link
-            linkStyle={
-              Object {
-                "padding": 10,
-              }
-            }
-            url="https://www.thetimes.co.uk/article/test-slug-2k629tpvh"
+          <div
+            data-testid="related-article-item"
           >
-            <div>
-              <Card
-                highResSize={null}
-                imageAccessibilityLabel="First Short Headline"
-                imageRatio={1.7777777777777777}
-                imageUri="https://crop1.io"
-                isReversed={false}
-                lowResSize={100}
-                showImage={true}
-              >
-                <div>
-                  <div>
-                    <ArticleLabel
-                      color="#A31D24"
-                      title="first label"
-                    />
-                  </div>
-                  <h3
-                    aria-level="3"
-                    role="heading"
-                  >
-                    First Short Headline
-                  </h3>
+            <Link
+              linkStyle={
+                Object {
+                  "padding": 10,
+                }
+              }
+              url="https://www.thetimes.co.uk/article/test-slug-2k629tpvh"
+            >
+              <div>
+                <Card
+                  highResSize={null}
+                  imageAccessibilityLabel="First Short Headline"
+                  imageRatio={1.7777777777777777}
+                  imageUri="https://crop1.io"
+                  isReversed={false}
+                  lowResSize={100}
+                  showImage={true}
+                >
                   <div>
                     <div>
-                      <span>
-                        
-                        Summary 125
-                        ...
-                      </span>
+                      <ArticleLabel
+                        color="#A31D24"
+                        title="first label"
+                      />
                     </div>
-                    <div>
-                      <span>
-                        
-                        Summary 145
-                        ...
-                      </span>
-                    </div>
-                  </div>
-                  <div>
-                    <time
-                      dateTime="2015-03-13T18:54:58.000Z"
+                    <h3
+                      aria-level="3"
+                      role="heading"
                     >
-                      March 13 2015, 6.54pm
-                    </time>
+                      First Short Headline
+                    </h3>
+                    <div>
+                      <div>
+                        <span>
+                          
+                          Summary 125
+                          ...
+                        </span>
+                      </div>
+                      <div>
+                        <span>
+                          
+                          Summary 145
+                          ...
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      data-testid="datePublication"
+                    >
+                      <time
+                        dateTime="2015-03-13T18:54:58.000Z"
+                      >
+                        March 13 2015, 6.54pm
+                      </time>
+                    </div>
+                    <div>
+                      <span>
+                        Camilla Long, Environment Editor
+                      </span>
+                    </div>
                   </div>
-                  <div>
-                    <span>
-                      Camilla Long, Environment Editor
-                    </span>
-                  </div>
-                </div>
-              </Card>
-            </div>
-          </Link>
+                </Card>
+              </div>
+            </Link>
+          </div>
         </div>
         <div />
         <div>
-          <Link
-            linkStyle={
-              Object {
-                "padding": 10,
-              }
-            }
-            url="https://www.thetimes.co.uk/article/test-slug-2k629tpvh"
+          <div
+            data-testid="related-article-item"
           >
-            <div>
-              <Card
-                highResSize={null}
-                imageAccessibilityLabel="Second Short Headline"
-                imageRatio={1.7777777777777777}
-                imageUri="https://crop2.io"
-                isReversed={false}
-                lowResSize={100}
-                showImage={true}
-              >
-                <div>
-                  <div>
-                    <ArticleLabel
-                      color="#008347"
-                      title="second label"
-                    />
-                  </div>
-                  <h3
-                    aria-level="3"
-                    role="heading"
-                  >
-                    Second Short Headline
-                  </h3>
+            <Link
+              linkStyle={
+                Object {
+                  "padding": 10,
+                }
+              }
+              url="https://www.thetimes.co.uk/article/test-slug-2k629tpvh"
+            >
+              <div>
+                <Card
+                  highResSize={null}
+                  imageAccessibilityLabel="Second Short Headline"
+                  imageRatio={1.7777777777777777}
+                  imageUri="https://crop2.io"
+                  isReversed={false}
+                  lowResSize={100}
+                  showImage={true}
+                >
                   <div>
                     <div>
-                      <span>
-                        
-                        Summary 125
-                        ...
-                      </span>
+                      <ArticleLabel
+                        color="#008347"
+                        title="second label"
+                      />
                     </div>
-                    <div>
-                      <span>
-                        
-                        Summary 145
-                        ...
-                      </span>
-                    </div>
-                  </div>
-                  <div>
-                    <time
-                      dateTime="2018-01-17T12:00:00.000Z"
+                    <h3
+                      aria-level="3"
+                      role="heading"
                     >
-                      January 17 2018, 12.00pm
-                    </time>
+                      Second Short Headline
+                    </h3>
+                    <div>
+                      <div>
+                        <span>
+                          
+                          Summary 125
+                          ...
+                        </span>
+                      </div>
+                      <div>
+                        <span>
+                          
+                          Summary 145
+                          ...
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      data-testid="datePublication"
+                    >
+                      <time
+                        dateTime="2018-01-17T12:00:00.000Z"
+                      >
+                        January 17 2018, 12.00pm
+                      </time>
+                    </div>
+                    <div>
+                      <span>
+                        Camilla Long, Environment Editor
+                      </span>
+                    </div>
                   </div>
-                  <div>
-                    <span>
-                      Camilla Long, Environment Editor
-                    </span>
-                  </div>
-                </div>
-              </Card>
-            </div>
-          </Link>
+                </Card>
+              </div>
+            </Link>
+          </div>
         </div>
         <div />
         <div>
-          <Link
-            linkStyle={
-              Object {
-                "padding": 10,
-              }
-            }
-            url="https://www.thetimes.co.uk/article/test-slug-2k629tpvh"
+          <div
+            data-testid="related-article-item"
           >
-            <div>
-              <Card
-                highResSize={null}
-                imageAccessibilityLabel="Third Short Headline"
-                imageRatio={1.7777777777777777}
-                imageUri="https://crop3.io"
-                isReversed={false}
-                lowResSize={100}
-                showImage={true}
-              >
-                <div>
-                  <div>
-                    <ArticleLabel
-                      color="#1A1F24"
-                      title="third label"
-                    />
-                  </div>
-                  <h3
-                    aria-level="3"
-                    role="heading"
-                  >
-                    Third Short Headline
-                  </h3>
+            <Link
+              linkStyle={
+                Object {
+                  "padding": 10,
+                }
+              }
+              url="https://www.thetimes.co.uk/article/test-slug-2k629tpvh"
+            >
+              <div>
+                <Card
+                  highResSize={null}
+                  imageAccessibilityLabel="Third Short Headline"
+                  imageRatio={1.7777777777777777}
+                  imageUri="https://crop3.io"
+                  isReversed={false}
+                  lowResSize={100}
+                  showImage={true}
+                >
                   <div>
                     <div>
-                      <span>
-                        
-                        Summary 125
-                        ...
-                      </span>
+                      <ArticleLabel
+                        color="#1A1F24"
+                        title="third label"
+                      />
                     </div>
-                    <div>
-                      <span>
-                        
-                        Summary 145
-                        ...
-                      </span>
-                    </div>
-                  </div>
-                  <div>
-                    <time
-                      dateTime="2018-01-17T12:00:00.000Z"
+                    <h3
+                      aria-level="3"
+                      role="heading"
                     >
-                      January 17 2018, 12.00pm
-                    </time>
+                      Third Short Headline
+                    </h3>
+                    <div>
+                      <div>
+                        <span>
+                          
+                          Summary 125
+                          ...
+                        </span>
+                      </div>
+                      <div>
+                        <span>
+                          
+                          Summary 145
+                          ...
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      data-testid="datePublication"
+                    >
+                      <time
+                        dateTime="2018-01-17T12:00:00.000Z"
+                      >
+                        January 17 2018, 12.00pm
+                      </time>
+                    </div>
+                    <div>
+                      <span>
+                        Camilla Long, Environment Editor
+                      </span>
+                    </div>
                   </div>
-                  <div>
-                    <span>
-                      Camilla Long, Environment Editor
-                    </span>
-                  </div>
-                </div>
-              </Card>
-            </div>
-          </Link>
+                </Card>
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

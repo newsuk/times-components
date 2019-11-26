@@ -14,69 +14,75 @@ exports[`1. no short headline 1`] = `
     <div>
       <div>
         <div>
-          <Link
-            linkStyle={
-              Object {
-                "padding": 10,
-              }
-            }
-            url="https://www.thetimes.co.uk/article/test-slug-2k629tpvh"
+          <div
+            data-testid="related-article-item"
           >
-            <div>
-              <Card
-                highResSize={null}
-                imageAccessibilityLabel=""
-                imageRatio={0.6135458167330677}
-                imageUri="https://crop23.io"
-                isReversed={true}
-                lowResSize={100}
-                showImage={true}
-              >
-                <div>
-                  <div>
-                    <ArticleLabel
-                      color="#004D6D"
-                      title="test label"
-                    />
-                  </div>
-                  <div>
-                    <span>
-                      Sathnam Sanghera
-                    </span>
-                  </div>
-                  <h3
-                    aria-level="3"
-                    role="heading"
-                  >
-                    Test Headline
-                  </h3>
+            <Link
+              linkStyle={
+                Object {
+                  "padding": 10,
+                }
+              }
+              url="https://www.thetimes.co.uk/article/test-slug-2k629tpvh"
+            >
+              <div>
+                <Card
+                  highResSize={null}
+                  imageAccessibilityLabel=""
+                  imageRatio={0.6135458167330677}
+                  imageUri="https://crop23.io"
+                  isReversed={true}
+                  lowResSize={100}
+                  showImage={true}
+                >
                   <div>
                     <div>
-                      <span>
-                        
-                        Summary 125
-                        ...
-                      </span>
+                      <ArticleLabel
+                        color="#004D6D"
+                        title="test label"
+                      />
                     </div>
                     <div>
                       <span>
-                        
-                        The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and she should take it seriously. Tobias
-                        ...
+                        Sathnam Sanghera
                       </span>
                     </div>
-                  </div>
-                  <div>
-                    <time
-                      dateTime="2015-03-13T18:54:58.000Z"
+                    <h3
+                      aria-level="3"
+                      role="heading"
                     >
-                      March 13 2015, 6.54pm
-                    </time>
+                      Test Headline
+                    </h3>
+                    <div>
+                      <div>
+                        <span>
+                          
+                          Summary 125
+                          ...
+                        </span>
+                      </div>
+                      <div>
+                        <span>
+                          
+                          The prime minister may feel that she has no time for more mutinies by her own MPs, but she faces one over defence cuts and she should take it seriously. Tobias
+                          ...
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      data-testid="datePublication"
+                    >
+                      <time
+                        dateTime="2015-03-13T18:54:58.000Z"
+                      >
+                        March 13 2015, 6.54pm
+                      </time>
+                    </div>
                   </div>
-                </div>
-              </Card>
-            </div>
-          </Link>
+                </Card>
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
