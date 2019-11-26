@@ -14,73 +14,9 @@ exports[`1. one lead and two support related articles 1`] = `
     <div>
       <div>
         <div>
-          <Link
-            linkStyle={
-              Object {
-                "padding": 10,
-              }
-            }
-            url="https://www.thetimes.co.uk/article/test-slug-2k629tpvh"
+          <div
+            data-testid="related-article-item"
           >
-            <div>
-              <Card
-                highResSize={null}
-                imageAccessibilityLabel="First Short Headline"
-                imageRatio={1.7777777777777777}
-                imageUri="https://crop169-1.io"
-                isReversed={false}
-                lowResSize={100}
-                showImage={true}
-              >
-                <div>
-                  <div>
-                    <ArticleLabel
-                      color="#7B0046"
-                      title="first label"
-                    />
-                  </div>
-                  <h3
-                    aria-level="3"
-                    role="heading"
-                  >
-                    First Short Headline
-                  </h3>
-                  <div>
-                    <div>
-                      <span>
-                        
-                        Summary 125
-                        ...
-                      </span>
-                    </div>
-                    <div>
-                      <span>
-                        
-                        Summary 175
-                        ...
-                      </span>
-                    </div>
-                  </div>
-                  <div>
-                    <time
-                      dateTime="2015-03-13T18:54:58.000Z"
-                    >
-                      March 13 2015, 6.54pm
-                    </time>
-                  </div>
-                  <div>
-                    <span>
-                      Deborah Haynes
-                    </span>
-                  </div>
-                </div>
-              </Card>
-            </div>
-          </Link>
-        </div>
-        <div />
-        <div>
-          <div>
             <Link
               linkStyle={
                 Object {
@@ -92,9 +28,9 @@ exports[`1. one lead and two support related articles 1`] = `
               <div>
                 <Card
                   highResSize={null}
-                  imageAccessibilityLabel="Second Short Headline"
+                  imageAccessibilityLabel="First Short Headline"
                   imageRatio={1.7777777777777777}
-                  imageUri="https://crop169-2.io"
+                  imageUri="https://crop169-1.io"
                   isReversed={false}
                   lowResSize={100}
                   showImage={true}
@@ -102,22 +38,39 @@ exports[`1. one lead and two support related articles 1`] = `
                   <div>
                     <div>
                       <ArticleLabel
-                        color="#FF1D25"
-                        title="second label"
+                        color="#7B0046"
+                        title="first label"
                       />
                     </div>
                     <h3
                       aria-level="3"
                       role="heading"
                     >
-                      Second Short Headline
+                      First Short Headline
                     </h3>
-                    <div />
                     <div>
+                      <div>
+                        <span>
+                          
+                          Summary 125
+                          ...
+                        </span>
+                      </div>
+                      <div>
+                        <span>
+                          
+                          Summary 175
+                          ...
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      data-testid="datePublication"
+                    >
                       <time
-                        dateTime="2018-01-17T12:00:00.000Z"
+                        dateTime="2015-03-13T18:54:58.000Z"
                       >
-                        January 17 2018, 12.00pm
+                        March 13 2015, 6.54pm
                       </time>
                     </div>
                     <div>
@@ -130,55 +83,120 @@ exports[`1. one lead and two support related articles 1`] = `
               </div>
             </Link>
           </div>
+        </div>
+        <div />
+        <div>
           <div>
-            <Link
-              linkStyle={
-                Object {
-                  "padding": 10,
-                }
-              }
-              url="https://www.thetimes.co.uk/article/test-slug-2k629tpvh"
+            <div
+              data-testid="related-article-item"
             >
-              <div>
-                <Card
-                  highResSize={null}
-                  imageAccessibilityLabel="Third Short Headline"
-                  imageRatio={1.7777777777777777}
-                  imageUri="https://crop169-3.io"
-                  isReversed={false}
-                  lowResSize={100}
-                  showImage={true}
-                >
-                  <div>
+              <Link
+                linkStyle={
+                  Object {
+                    "padding": 10,
+                  }
+                }
+                url="https://www.thetimes.co.uk/article/test-slug-2k629tpvh"
+              >
+                <div>
+                  <Card
+                    highResSize={null}
+                    imageAccessibilityLabel="Second Short Headline"
+                    imageRatio={1.7777777777777777}
+                    imageUri="https://crop169-2.io"
+                    isReversed={false}
+                    lowResSize={100}
+                    showImage={true}
+                  >
                     <div>
-                      <ArticleLabel
-                        color="#C04605"
-                        title="third label"
-                      />
-                    </div>
-                    <h3
-                      aria-level="3"
-                      role="heading"
-                    >
-                      Third Short Headline
-                    </h3>
-                    <div />
-                    <div>
-                      <time
-                        dateTime="2018-01-17T12:00:00.000Z"
+                      <div>
+                        <ArticleLabel
+                          color="#FF1D25"
+                          title="second label"
+                        />
+                      </div>
+                      <h3
+                        aria-level="3"
+                        role="heading"
                       >
-                        January 17 2018, 12.00pm
-                      </time>
+                        Second Short Headline
+                      </h3>
+                      <div />
+                      <div
+                        data-testid="datePublication"
+                      >
+                        <time
+                          dateTime="2018-01-17T12:00:00.000Z"
+                        >
+                          January 17 2018, 12.00pm
+                        </time>
+                      </div>
+                      <div>
+                        <span>
+                          Deborah Haynes
+                        </span>
+                      </div>
                     </div>
+                  </Card>
+                </div>
+              </Link>
+            </div>
+          </div>
+          <div>
+            <div
+              data-testid="related-article-item"
+            >
+              <Link
+                linkStyle={
+                  Object {
+                    "padding": 10,
+                  }
+                }
+                url="https://www.thetimes.co.uk/article/test-slug-2k629tpvh"
+              >
+                <div>
+                  <Card
+                    highResSize={null}
+                    imageAccessibilityLabel="Third Short Headline"
+                    imageRatio={1.7777777777777777}
+                    imageUri="https://crop169-3.io"
+                    isReversed={false}
+                    lowResSize={100}
+                    showImage={true}
+                  >
                     <div>
-                      <span>
-                        Deborah Haynes
-                      </span>
+                      <div>
+                        <ArticleLabel
+                          color="#C04605"
+                          title="third label"
+                        />
+                      </div>
+                      <h3
+                        aria-level="3"
+                        role="heading"
+                      >
+                        Third Short Headline
+                      </h3>
+                      <div />
+                      <div
+                        data-testid="datePublication"
+                      >
+                        <time
+                          dateTime="2018-01-17T12:00:00.000Z"
+                        >
+                          January 17 2018, 12.00pm
+                        </time>
+                      </div>
+                      <div>
+                        <span>
+                          Deborah Haynes
+                        </span>
+                      </div>
                     </div>
-                  </div>
-                </Card>
-              </div>
-            </Link>
+                  </Card>
+                </div>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

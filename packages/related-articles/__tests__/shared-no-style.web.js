@@ -18,10 +18,7 @@ addSerializers(
     print,
     minimalWebTransform,
     minimaliseTransform(
-      (value, key) =>
-        key === "style" ||
-        key.toLowerCase().includes("class") ||
-        key === "data-testid"
+      (value, key) => key === "style" || key.toLowerCase().includes("class")
     )
   )
 );

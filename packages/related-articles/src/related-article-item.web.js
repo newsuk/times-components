@@ -5,21 +5,23 @@ import RelatedArticleItem from "./related-article-item.base";
 import relatedArticlesItemTrackingEvents from "./related-articles-item-tracking-events";
 
 const RelatedArticleItemWeb = props => (
-  <RelatedArticleItem {...props}>
-    {({ article, card, onPress }) => (
-      <Context.Consumer>
-        {({ makeArticleUrl }) => (
-          <Link
-            linkStyle={{ padding: 10 }}
-            onPress={e => onPress(e, { url: makeArticleUrl(article) })}
-            url={makeArticleUrl(article)}
-          >
-            {card}
-          </Link>
-        )}
-      </Context.Consumer>
-    )}
-  </RelatedArticleItem>
+  <div data-testid="related-article-item">
+    <RelatedArticleItem {...props}>
+      {({ article, card, onPress }) => (
+        <Context.Consumer>
+          {({ makeArticleUrl }) => (
+            <Link
+              linkStyle={{ padding: 10 }}
+              onPress={e => onPress(e, { url: makeArticleUrl(article) })}
+              url={makeArticleUrl(article)}
+            >
+              {card}
+            </Link>
+          )}
+        </Context.Consumer>
+      )}
+    </RelatedArticleItem>
+  </div>
 );
 RelatedArticleItemWeb.displayName = "RelatedArticleItem";
 

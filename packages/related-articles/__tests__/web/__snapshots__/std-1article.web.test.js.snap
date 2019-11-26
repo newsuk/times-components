@@ -14,66 +14,72 @@ exports[`1. a single related article 1`] = `
     <div>
       <div>
         <div>
-          <Link
-            linkStyle={
-              Object {
-                "padding": 10,
-              }
-            }
-            url="https://www.thetimes.co.uk/article/test-slug-2k629tpvh"
+          <div
+            data-testid="related-article-item"
           >
-            <div>
-              <Card
-                highResSize={null}
-                imageAccessibilityLabel="Test Short Headline"
-                imageRatio={1.7777777777777777}
-                imageUri="https://crop.io"
-                isReversed={false}
-                lowResSize={100}
-                showImage={true}
-              >
-                <div>
-                  <div>
-                    <ArticleLabel
-                      color="#004D6D"
-                      isVideo={false}
-                      title="test label"
-                    />
-                  </div>
-                  <h3
-                    aria-level="3"
-                    role="heading"
-                  >
-                    Test Short Headline
-                  </h3>
+            <Link
+              linkStyle={
+                Object {
+                  "padding": 10,
+                }
+              }
+              url="https://www.thetimes.co.uk/article/test-slug-2k629tpvh"
+            >
+              <div>
+                <Card
+                  highResSize={null}
+                  imageAccessibilityLabel="Test Short Headline"
+                  imageRatio={1.7777777777777777}
+                  imageUri="https://crop.io"
+                  isReversed={false}
+                  lowResSize={100}
+                  showImage={true}
+                >
                   <div>
                     <div>
+                      <ArticleLabel
+                        color="#004D6D"
+                        isVideo={false}
+                        title="test label"
+                      />
+                    </div>
+                    <h3
+                      aria-level="3"
+                      role="heading"
+                    >
+                      Test Short Headline
+                    </h3>
+                    <div>
+                      <div>
+                        <span>
+                          
+                          Summary 125
+                          ...
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      data-testid="datePublication"
+                    >
+                      <time
+                        dateTime="2015-03-13T18:54:58.000Z"
+                      >
+                        March 13 2015, 6.54pm
+                      </time>
+                    </div>
+                    <div>
                       <span>
-                        
-                        Summary 125
-                        ...
+                        Camilla Long
+                      </span>
+                      <span>
+                        , Environment Editor
                       </span>
                     </div>
                   </div>
-                  <div>
-                    <time
-                      dateTime="2015-03-13T18:54:58.000Z"
-                    >
-                      March 13 2015, 6.54pm
-                    </time>
-                  </div>
-                  <div>
-                    <span>
-                      Camilla Long
-                    </span>
-                    <span>
-                      , Environment Editor
-                    </span>
-                  </div>
-                </div>
-              </Card>
-            </div>
-          </Link>
+                </Card>
+              </div>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
