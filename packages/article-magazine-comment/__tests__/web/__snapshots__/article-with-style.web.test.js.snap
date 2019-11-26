@@ -68,7 +68,15 @@ exports[`full article with style 1`] = `
 }
 
 .c0 {
-  display: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-top-color: #DBDBDB;
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .c2 {
@@ -274,20 +282,6 @@ exports[`full article with style 1`] = `
   .c1 {
     padding-top: 20px;
     margin: 0 auto;
-  }
-}
-
-@media (min-width:768px) {
-  .c0 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    border-top-color: #DBDBDB;
-    border-bottom-color: #DBDBDB;
-    border-bottom-width: 1px;
-    padding-top: 10px;
-    padding-bottom: 10px;
   }
 }
 
@@ -807,7 +801,15 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 .c0 {
-  display: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-top-color: #DBDBDB;
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .c2 {
@@ -1013,20 +1015,6 @@ exports[`full article with style in the culture magazine 1`] = `
   .c1 {
     padding-top: 20px;
     margin: 0 auto;
-  }
-}
-
-@media (min-width:768px) {
-  .c0 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    border-top-color: #DBDBDB;
-    border-bottom-color: #DBDBDB;
-    border-bottom-width: 1px;
-    padding-top: 10px;
-    padding-bottom: 10px;
   }
 }
 
@@ -1554,7 +1542,15 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 .c0 {
-  display: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-top-color: #DBDBDB;
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .c2 {
@@ -1760,20 +1756,6 @@ exports[`full article with style in the style magazine 1`] = `
   .c1 {
     padding-top: 20px;
     margin: 0 auto;
-  }
-}
-
-@media (min-width:768px) {
-  .c0 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    border-top-color: #DBDBDB;
-    border-bottom-color: #DBDBDB;
-    border-bottom-width: 1px;
-    padding-top: 10px;
-    padding-bottom: 10px;
   }
 }
 
@@ -2302,7 +2284,15 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 .c0 {
-  display: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-top-color: #DBDBDB;
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .c2 {
@@ -2508,20 +2498,6 @@ exports[`full article with style in the sunday times magazine 1`] = `
   .c1 {
     padding-top: 20px;
     margin: 0 auto;
-  }
-}
-
-@media (min-width:768px) {
-  .c0 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    border-top-color: #DBDBDB;
-    border-bottom-color: #DBDBDB;
-    border-bottom-width: 1px;
-    padding-top: 10px;
-    padding-bottom: 10px;
   }
 }
 
