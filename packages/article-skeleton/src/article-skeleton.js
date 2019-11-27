@@ -22,6 +22,7 @@ import Gutter, { maxWidth } from "./gutter";
 import styles from "./styles/shared";
 import renderers from "./article-body/article-body-row";
 import fixup from "./body-utils";
+import ErrorBoundary from "./boundary";
 
 const templateWithDropCaps = [
   "indepth",
@@ -112,9 +113,11 @@ const ArticleSkeleton = props => {
   // eslint-disable-next-line react/prop-types
   const Child = ({ item, index }) => (
     <Gutter style={{ overflow: "hidden" }}>
-      {item.name === "footer"
-        ? footer
-        : renderChild(item, index.toString(), index)}
+      <ErrorBoundary>
+        {item.name === "footer"
+          ? footer
+          : renderChild(item, index.toString(), index)}
+      </ErrorBoundary>
     </Gutter>
   );
 
