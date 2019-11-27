@@ -15,6 +15,9 @@ const appStyles = {
   standFirst: {
     ...nativeStyles.standFirst,
     marginBottom: spacing(2.5)
+  },
+  label: {
+    marginBottom: 0
   }
 };
 

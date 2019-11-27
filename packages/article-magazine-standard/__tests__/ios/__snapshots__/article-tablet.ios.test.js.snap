@@ -18,7 +18,7 @@ exports[`1. article magazine standard - tablet 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 10,
+          "marginBottom": 0,
         }
       }
     >
