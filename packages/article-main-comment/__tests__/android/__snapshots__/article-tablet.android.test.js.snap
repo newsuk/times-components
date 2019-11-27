@@ -35,7 +35,6 @@ exports[`1. article main comment - tablet 1`] = `
           }
         }
       />
-      <ArticleByline />
       <View
         style={
           Object {
@@ -100,6 +99,16 @@ exports[`1. article main comment - tablet 1`] = `
           }
         }
       >
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+            }
+          }
+        >
+          <ArticleBylineWithLinks />
+        </View>
         <View
           style={
             Object {
