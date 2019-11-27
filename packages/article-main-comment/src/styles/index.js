@@ -1,5 +1,10 @@
 import { StyleSheet } from "react-native";
-import { spacing } from "@times-components/styleguide";
+import {
+  spacing,
+  colours,
+  fonts,
+  fontSizes
+} from "@times-components/styleguide";
 import sharedStyles from "./shared";
 
 const nativeStyles = {
@@ -10,6 +15,7 @@ const nativeStyles = {
   },
   authorImage: {
     ...sharedStyles.authorImage,
+    marginBottom: spacing(3),
     borderRadius: 50,
     height: 100,
     overflow: "hidden",
@@ -26,6 +32,15 @@ const nativeStyles = {
   header: {
     ...sharedStyles.header,
     marginBottom: 0
+  },
+  bylineOpinion: {
+    color: colours.section.comment,
+    fontFamily: fonts.supporting,
+    fontSize: fontSizes.cardMetaMobile,
+    letterSpacing: 0.6,
+    lineHeight: 12,
+    textTransform: "uppercase",
+    marginBottom: spacing(1)
   }
 };
 

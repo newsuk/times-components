@@ -16,6 +16,7 @@ const TileF = ({ onPress, tile }) => (
       strapline={getTileStrapline(tile)}
       summary={getTileSummary(tile, 125)}
       tile={tile}
+      summaryStyle={styles.summaryContainer}
     />
   </TileLink>
 );

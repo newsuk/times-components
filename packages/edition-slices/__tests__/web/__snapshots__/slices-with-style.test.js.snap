@@ -469,6 +469,7 @@ exports[`2. leaders 1`] = `
   font-size: 16px;
   line-height: 18px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .IS3 {
@@ -580,6 +581,7 @@ exports[`2. leaders 2`] = `
   font-size: 16px;
   line-height: 18px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .IS3 {
@@ -1734,6 +1736,7 @@ exports[`14. leaders 1`] = `
   font-size: 16px;
   line-height: 18px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .IS3 {

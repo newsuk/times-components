@@ -24,6 +24,15 @@ jest.mock("@times-components/article-topics", () => "ArticleTopics");
 jest.mock("@times-components/article-skeleton", () => MockArticleSkeleton);
 jest.mock("@times-components/brightcove-video", () => "BrightcoveVideo");
 jest.mock("@times-components/button", () => "Button");
+jest.mock("@times-components/article-byline", () => {
+  const actual = jest.requireActual("@times-components/article-byline");
+  return {
+    __esModule: true,
+    default: "ArticleByline",
+    hasBylineData: actual.hasBylineData,
+    ArticleBylineWithLinks: "ArticleBylineWithLinks"
+  };
+});
 jest.mock("@times-components/image", () => ({
   __esModule: true,
   default: "Image",

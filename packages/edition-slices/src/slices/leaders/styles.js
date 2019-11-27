@@ -14,7 +14,8 @@ const smallBreakpointStyles = {
     color: colours.section.comment,
     fontFamily: fonts.bodyRegular,
     fontSize: 16,
-    lineHeight: 18
+    lineHeight: 18,
+    textTransform: "uppercase"
   },
   headingContainer: {
     paddingBottom: spacing(1),

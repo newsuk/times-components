@@ -264,9 +264,9 @@ exports[`tile g small 1`] = `
             Object {
               "color": "#333333",
               "fontFamily": "TimesModern-Bold",
-              "fontSize": 22,
+              "fontSize": 20,
               "fontWeight": "900",
-              "lineHeight": 22,
+              "lineHeight": 20,
               "marginBottom": 5,
             }
           }

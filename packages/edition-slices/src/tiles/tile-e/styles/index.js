@@ -20,7 +20,6 @@ const styles = {
     width: "50%"
   },
   summaryContainer: {
-    width: "50%",
     paddingLeft: spacing(2),
     paddingBottom: spacing(1)
   }

@@ -11,8 +11,7 @@ const styles = {
   title: {
     ...sharedStyles.title,
     fontSize: fontSizes.meta,
-    lineHeight: fontSizes.meta,
-    marginTop: 3
+    lineHeight: fontSizes.meta
   },
   view: {
     ...sharedStyles.view,

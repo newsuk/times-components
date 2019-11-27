@@ -29,7 +29,8 @@ const smallBreakpointStyles = {
   title: {
     color: colours.functional.brandColour,
     fontFamily: fonts.headline,
-    fontSize: fontSizes.smallHeadline
+    fontSize: fontSizes.smallHeadline,
+    marginBottom: spacing(1)
   },
   titleWrapper: {
     alignItems: "center"

@@ -58,7 +58,8 @@ const mapping = ({ scale }) => {
         },
         headline: {
           ...mappingBase.headline,
-          headline: 36
+          headline: 36,
+          infoTitle: 20
         },
         headlineRegular: {
           ...mappingBase.headlineRegular,

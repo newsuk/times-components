@@ -121,9 +121,9 @@ exports[`tile d small 1`] = `
         Object {
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 22,
+          "fontSize": 20,
           "fontWeight": "400",
-          "lineHeight": 22,
+          "lineHeight": 20,
           "marginBottom": 5,
         }
       }
@@ -193,9 +193,9 @@ exports[`tile d without breakpoint should be like small 1`] = `
         Object {
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
-          "fontSize": 22,
+          "fontSize": 20,
           "fontWeight": "400",
-          "lineHeight": 22,
+          "lineHeight": 20,
           "marginBottom": 5,
         }
       }

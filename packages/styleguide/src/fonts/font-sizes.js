@@ -26,7 +26,8 @@ const fontSizes = scale => {
     default:
       return {
         ...sharedFontSizes,
-        bodyMobile: 18
+        bodyMobile: 18,
+        infoTitle: 20
       };
   }
 };

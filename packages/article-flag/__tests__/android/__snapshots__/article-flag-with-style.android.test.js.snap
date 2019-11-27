@@ -30,7 +30,6 @@ exports[`1. red article flag 1`] = `
         "letterSpacing": 0.6,
         "lineHeight": 14,
         "marginLeft": 5,
-        "marginTop": 3,
       }
     }
   >
@@ -86,7 +85,6 @@ exports[`2. multiple article flags 1`] = `
             "letterSpacing": 0.6,
             "lineHeight": 14,
             "marginLeft": 5,
-            "marginTop": 3,
           }
         }
       >
@@ -130,7 +128,6 @@ exports[`2. multiple article flags 1`] = `
             "letterSpacing": 0.6,
             "lineHeight": 14,
             "marginLeft": 5,
-            "marginTop": 3,
           }
         }
       >
@@ -174,7 +171,6 @@ exports[`2. multiple article flags 1`] = `
             "letterSpacing": 0.6,
             "lineHeight": 14,
             "marginLeft": 5,
-            "marginTop": 3,
           }
         }
       >
@@ -218,7 +214,6 @@ exports[`2. multiple article flags 1`] = `
             "letterSpacing": 0.6,
             "lineHeight": 14,
             "marginLeft": 5,
-            "marginTop": 3,
           }
         }
       >
