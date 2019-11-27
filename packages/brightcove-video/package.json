@@ -1,6 +1,6 @@
 {
   "name": "@times-components/brightcove-video",
-  "version": "3.2.125",
+  "version": "3.2.126",
   "main": "dist/index",
   "dev": "src/index",
   "scripts": {
@@ -48,7 +48,7 @@
   "devDependencies": {
     "@babel/core": "7.4.4",
     "@times-components/eslint-config-thetimes": "0.8.16",
-    "@times-components/storybook": "4.1.9",
+    "@times-components/storybook": "4.1.10",
     "@times-components/webpack-configurator": "2.0.27",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.5",
@@ -67,9 +67,9 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/styleguide": "3.32.0",
+    "@times-components/styleguide": "3.33.0",
     "@times-components/svgs": "2.7.28",
-    "@times-components/utils": "5.1.9",
+    "@times-components/utils": "5.1.10",
     "prop-types": "15.7.2"
   },
   "resolutions": {
