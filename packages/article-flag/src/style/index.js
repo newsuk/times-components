@@ -6,7 +6,7 @@ const styles = {
   flags: {
     ...sharedStyles.flags,
     marginBottom: spacing(1),
-    marginTop: spacing(1)
+    marginTop: spacing(2)
   },
   title: {
     ...sharedStyles.title,
