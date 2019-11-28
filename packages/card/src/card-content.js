@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import React, { Component } from "react";
 import { View } from "react-native";
 import { ResponsiveContext } from "@times-components/responsive";
@@ -6,14 +7,53 @@ import { cardPropTypes, cardDefaultProps } from "./card-prop-types";
 import Loading from "./card-loading";
 import styles from "./styles";
 
+const checkBrowser = () => {
+  if (!navigator) {
+    return false;
+  }
+
+  const { userAgent } = navigator;
+  const matchBrowser =
+    userAgent.match(
+      /(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i
+    ) || [];
+
+  if (/safari/i.test(matchBrowser[1])) {
+    const indexOfVersion = navigator.appVersion.indexOf("Version/") + 8;
+    const version = parseInt(
+      navigator.appVersion.slice(indexOfVersion, indexOfVersion + 1),
+      10
+    );
+
+    return version > 5 && version < 10;
+  }
+  return false;
+};
+
 class CardContent extends Component {
-  shouldComponentUpdate(nextProps) {
+  constructor() {
+    super();
+
+    this.state = {
+      isOldSafari: false
+    };
+  }
+
+  componentDidMount() {
+    const isOldSafari = checkBrowser();
+    this.setState({
+      isOldSafari
+    });
+  }
+
+  shouldComponentUpdate(nextProps, nextState) {
     const { imageUri, lowResSize, highResSize, isLoading } = this.props;
     return (
       imageUri !== nextProps.imageUri ||
       lowResSize !== nextProps.lowResSize ||
       highResSize !== nextProps.highResSize ||
-      isLoading !== nextProps.isLoading
+      isLoading !== nextProps.isLoading ||
+      nextState.isOldSafari
     );
   }
 
@@ -34,6 +74,8 @@ class CardContent extends Component {
       showImage,
       relatedArticle
     } = this.props;
+
+    const { isOldSafari } = this.state;
 
     const renderImage = isTablet => {
       if (!showImage) return null;
@@ -59,12 +101,13 @@ class CardContent extends Component {
       );
     };
 
-    const cardContainerStyle = relatedArticle
-      ? {
-          ...styles.cardContainer,
-          display: "block"
-        }
-      : styles.cardContainer;
+    const cardContainerStyle =
+      relatedArticle && isOldSafari
+        ? {
+            ...styles.cardContainer,
+            display: "block"
+          }
+        : styles.cardContainer;
 
     return (
       <ResponsiveContext.Consumer>
