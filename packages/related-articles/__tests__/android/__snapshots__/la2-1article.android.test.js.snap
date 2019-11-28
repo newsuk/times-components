@@ -29,6 +29,7 @@ exports[`1. one lead related article 1`] = `
               imageUri="https://crop169.io"
               isReversed={false}
               lowResSize={100}
+              relatedArticle={true}
               showImage={true}
             >
               <View>

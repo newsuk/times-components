@@ -29,6 +29,7 @@ exports[`1. one lead and two support related articles 1`] = `
               imageUri="https://crop169-1.io"
               isReversed={false}
               lowResSize={100}
+              relatedArticle={true}
               showImage={true}
             >
               <View>
@@ -85,6 +86,7 @@ exports[`1. one lead and two support related articles 1`] = `
               imageUri="https://crop169-2.io"
               isReversed={false}
               lowResSize={100}
+              relatedArticle={true}
               showImage={false}
             >
               <View>
@@ -132,6 +134,7 @@ exports[`1. one lead and two support related articles 1`] = `
               imageUri="https://crop169-3.io"
               isReversed={false}
               lowResSize={100}
+              relatedArticle={true}
               showImage={false}
             >
               <View>

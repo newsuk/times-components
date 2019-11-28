@@ -39,6 +39,7 @@ exports[`1. one opinion and two support related articles 1`] = `
               imageUri="https://crop23-1.io"
               isReversed={true}
               lowResSize={100}
+              relatedArticle={true}
               showImage={true}
             >
               <View>
@@ -95,6 +96,7 @@ exports[`1. one opinion and two support related articles 1`] = `
               imageUri="https://crop169-2.io"
               isReversed={false}
               lowResSize={100}
+              relatedArticle={true}
               showImage={false}
             >
               <View>
@@ -142,6 +144,7 @@ exports[`1. one opinion and two support related articles 1`] = `
               imageUri="https://crop169-3.io"
               isReversed={false}
               lowResSize={100}
+              relatedArticle={true}
               showImage={false}
             >
               <View>

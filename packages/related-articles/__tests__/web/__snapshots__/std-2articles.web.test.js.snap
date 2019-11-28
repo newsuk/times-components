@@ -33,6 +33,7 @@ exports[`1. two related articles 1`] = `
                   imageUri="https://crop1.io"
                   isReversed={false}
                   lowResSize={100}
+                  relatedArticle={true}
                   showImage={true}
                 >
                   <div>
@@ -98,6 +99,7 @@ exports[`1. two related articles 1`] = `
                   imageUri="https://crop2.io"
                   isReversed={false}
                   lowResSize={100}
+                  relatedArticle={true}
                   showImage={true}
                 >
                   <div>
