@@ -31,7 +31,6 @@ exports[`phone full article with style 1`] = `
           }
         }
       />
-      <ArticleByline />
       <View
         style={
           Object {
@@ -102,6 +101,16 @@ exports[`phone full article with style 1`] = `
             }
           }
         >
+          <ArticleBylineWithLinks />
+        </View>
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+            }
+          }
+        >
           <Text
             style={
               Object {
@@ -153,7 +162,6 @@ exports[`tablet full article with style 1`] = `
           }
         }
       />
-      <ArticleByline />
       <View
         style={
           Object {
@@ -216,6 +224,16 @@ exports[`tablet full article with style 1`] = `
           }
         }
       >
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+              "flexWrap": "wrap",
+            }
+          }
+        >
+          <ArticleBylineWithLinks />
+        </View>
         <View
           style={
             Object {
