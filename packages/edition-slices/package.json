@@ -1,6 +1,6 @@
 {
   "name": "@times-components/edition-slices",
-  "version": "0.100.1",
+  "version": "0.100.2",
   "description": "Components used in edition pages including slices and tiles",
   "main": "dist/edition-slices",
   "dev": "src/edition-slices",
@@ -42,7 +42,7 @@
     "@times-components/article-summary": "3.15.3",
     "@times-components/context": "1.1.16",
     "@times-components/icons": "2.14.3",
-    "@times-components/image": "6.4.47",
+    "@times-components/image": "6.4.48",
     "@times-components/link": "3.5.3",
     "@times-components/markup": "3.4.3",
     "@times-components/markup-forest": "1.7.30",
@@ -52,7 +52,7 @@
     "@times-components/styleguide": "3.33.0",
     "@times-components/tracking": "2.5.3",
     "@times-components/utils": "5.1.10",
-    "@times-components/video": "4.8.2",
+    "@times-components/video": "4.8.3",
     "prop-types": "15.7.2"
   },
   "devDependencies": {

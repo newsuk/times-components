@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.6](https://github.com/newsuk/times-components/compare/@times-components/typeset@0.0.5...@times-components/typeset@0.0.6) (2019-11-28)
+
+
+### Bug Fixes
+
+* related articles fix for old ios ([#2393](https://github.com/newsuk/times-components/issues/2393)) ([9e4fb15](https://github.com/newsuk/times-components/commit/9e4fb15f50cc7028ad9535659f6e7e59ab2571b4))
+
+
+
+
+
 ## [0.0.5](https://github.com/newsuk/times-components/compare/@times-components/typeset@0.0.4...@times-components/typeset@0.0.5) (2019-11-14)
 
 

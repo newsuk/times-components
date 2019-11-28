@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.2.31](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.2.30...@times-components/related-articles@6.2.31) (2019-11-28)
+
+
+### Bug Fixes
+
+* related articles fix for old ios ([#2393](https://github.com/newsuk/times-components/issues/2393)) ([9e4fb15](https://github.com/newsuk/times-components/commit/9e4fb15f50cc7028ad9535659f6e7e59ab2571b4))
+
+
+
+
+
 ## [6.2.30](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.2.29...@times-components/related-articles@6.2.30) (2019-11-28)
 
 **Note:** Version bump only for package @times-components/related-articles

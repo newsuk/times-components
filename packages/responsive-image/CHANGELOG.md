@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.2](https://github.com/newsuk/times-components/compare/@times-components/responsive-image@0.1.1...@times-components/responsive-image@0.1.2) (2019-11-28)
+
+
+### Bug Fixes
+
+* related articles fix for old ios ([#2393](https://github.com/newsuk/times-components/issues/2393)) ([9e4fb15](https://github.com/newsuk/times-components/commit/9e4fb15f50cc7028ad9535659f6e7e59ab2571b4))
+
+
+
+
+
 ## [0.1.1](https://github.com/newsuk/times-components/compare/@times-components/responsive-image@0.1.0...@times-components/responsive-image@0.1.1) (2019-11-27)
 
 **Note:** Version bump only for package @times-components/responsive-image
