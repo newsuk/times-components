@@ -44,17 +44,13 @@ const ResponsiveImage = (props: ResponsiveImageProps) => {
 
   const url: Url = new Url(uri, true);
   if (!uri.includes('data:')) {
-    url.query.rel_width = Math.floor(relativeWidth).toString();
-    url.query.rel_height = Math.floor(relativeHeight).toString();
+    url.query.rel_width = relativeWidth.toString();
+    url.query.rel_height = relativeHeight.toString();
     if (relativeVerticalOffset) {
-      url.query.rel_vertical_offset = Math.floor(
-        relativeVerticalOffset
-      ).toString();
+      url.query.rel_vertical_offset = relativeVerticalOffset.toString();
     }
     if (relativeHorizontalOffset) {
-      url.query.rel_horizontal_offset = Math.floor(
-        relativeHorizontalOffset
-      ).toString();
+      url.query.rel_horizontal_offset = relativeHorizontalOffset.toString();
     }
     url.query.offline = 'true';
   }
