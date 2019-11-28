@@ -25,7 +25,7 @@ const checkBrowser = () => {
       10
     );
 
-    return version > 5 && version < 10;
+    return version > 5 && version <= 9;
   }
   return false;
 };
