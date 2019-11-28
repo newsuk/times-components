@@ -33,6 +33,9 @@ const nativeStyles = {
     ...sharedStyles.header,
     marginBottom: 0
   },
+  label: {
+    marginBottom: 0
+  },
   bylineOpinion: {
     color: colours.section.comment,
     fontFamily: fonts.supporting,

@@ -11,6 +11,9 @@ const appStyles = {
   metaTablet: {
     ...nativeStyles.metaTablet,
     paddingTop: "auto"
+  },
+  label: {
+    marginBottom: 0
   }
 };
 

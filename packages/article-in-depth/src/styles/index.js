@@ -20,6 +20,9 @@ const nativeStyles = {
   datePublication: {
     ...sharedStyles.datePublication,
     marginTop: 0
+  },
+  label: {
+    marginBottom: 0
   }
 };
 
