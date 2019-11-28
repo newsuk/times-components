@@ -1,7 +1,6 @@
 /* eslint-disable no-undef */
 import React, { Component } from "react";
 import { View } from "react-native";
-import { ResponsiveContext } from "@times-components/responsive";
 import Image from "@times-components/image";
 import { cardPropTypes, cardDefaultProps } from "./card-prop-types";
 import Loading from "./card-loading";
@@ -77,14 +76,14 @@ class CardContent extends Component {
 
     const { isOldSafari } = this.state;
 
-    const renderImage = isTablet => {
+    const renderImage = () => {
       if (!showImage) return null;
 
       return (
         <View
           className={imageContainerClass}
           style={[
-            isTablet ? styles.imageContainerTablet : styles.imageContainer,
+            styles.imageContainer,
             imageStyle,
             isReversed ? styles.reversedImageContainer : ""
           ]}
@@ -110,31 +109,25 @@ class CardContent extends Component {
         : styles.cardContainer;
 
     return (
-      <ResponsiveContext.Consumer>
-        {({ isTablet }) => (
-          <View
-            style={[
-              isTablet ? styles.cardContainerTablet : cardContainerStyle,
-              isReversed ? styles.reversedCardContainer : ""
-            ]}
-          >
-            {!isReversed ? renderImage(isTablet) : null}
-            <View
-              className={contentContainerClass}
-              style={[
-                isTablet
-                  ? styles.contentContainerTablet
-                  : styles.contentContainer,
-                isReversed ? styles.reversedContentContainer : "",
-                isLoading ? styles.loadingContentContainer : ""
-              ]}
-            >
-              {isLoading ? <Loading /> : children}
-            </View>
-            {isReversed ? renderImage(isTablet) : null}
-          </View>
-        )}
-      </ResponsiveContext.Consumer>
+      <View
+        style={[
+          cardContainerStyle,
+          isReversed ? styles.reversedCardContainer : ""
+        ]}
+      >
+        {!isReversed ? renderImage() : null}
+        <View
+          className={contentContainerClass}
+          style={[
+            styles.contentContainer,
+            isReversed ? styles.reversedContentContainer : "",
+            isLoading ? styles.loadingContentContainer : ""
+          ]}
+        >
+          {isLoading ? <Loading /> : children}
+        </View>
+        {isReversed ? renderImage() : null}
+      </View>
     );
   }
 }
