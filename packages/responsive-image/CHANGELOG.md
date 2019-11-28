@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.3](https://github.com/newsuk/times-components/compare/@times-components/responsive-image@0.1.2...@times-components/responsive-image@0.1.3) (2019-11-28)
+
+
+### Bug Fixes
+
+* ios crop urls are wrong ([#2409](https://github.com/newsuk/times-components/issues/2409)) ([a93985c](https://github.com/newsuk/times-components/commit/a93985c252cadbc5b7b13bfb4cedc7b88c159bc5))
+
+
+
+
+
 ## [0.1.2](https://github.com/newsuk/times-components/compare/@times-components/responsive-image@0.1.1...@times-components/responsive-image@0.1.2) (2019-11-28)
 
 
