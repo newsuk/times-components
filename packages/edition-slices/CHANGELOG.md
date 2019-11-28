@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.100.3](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.100.2...@times-components/edition-slices@0.100.3) (2019-11-28)
+
+
+### Bug Fixes
+
+* alignment/padding tweaks ([#2408](https://github.com/newsuk/times-components/issues/2408)) ([c08149e](https://github.com/newsuk/times-components/commit/c08149e7f31ace0e3d687ea6b95f1a43d034d86f))
+
+
+
+
+
 ## [0.100.2](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.100.1...@times-components/edition-slices@0.100.2) (2019-11-28)
 
 **Note:** Version bump only for package @times-components/edition-slices
