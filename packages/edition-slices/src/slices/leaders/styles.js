@@ -12,10 +12,11 @@ const smallBreakpointStyles = {
   },
   heading: {
     color: colours.section.comment,
-    fontFamily: fonts.bodyRegular,
+    fontFamily: fonts.supporting,
     fontSize: 16,
     lineHeight: 18,
-    textTransform: "uppercase"
+    textTransform: "uppercase",
+    letterSpacing: 1
   },
   headingContainer: {
     paddingBottom: spacing(1),

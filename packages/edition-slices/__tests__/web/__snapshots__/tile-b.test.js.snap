@@ -273,6 +273,7 @@ exports[`tile b small 1`] = `
     Object {
       "flex": 1,
       "padding": "10px",
+      "paddingBottom": "15px",
     }
   }
   url="/article/123"
@@ -602,6 +603,7 @@ exports[`tile b without breakpoint should be like small 1`] = `
     Object {
       "flex": 1,
       "padding": "10px",
+      "paddingBottom": "15px",
     }
   }
   url="/article/123"

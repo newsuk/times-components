@@ -298,8 +298,9 @@ exports[`2. leaders 1`] = `
         style={
           Object {
             "color": "#850029",
-            "fontFamily": "TimesDigitalW04-Regular",
+            "fontFamily": "GillSansMTStd-Medium",
             "fontSize": 16,
+            "letterSpacing": 1,
             "lineHeight": 18,
             "textAlign": "center",
             "textTransform": "uppercase",
@@ -380,8 +381,9 @@ exports[`2. leaders 2`] = `
         style={
           Object {
             "color": "#850029",
-            "fontFamily": "TimesDigitalW04-Regular",
+            "fontFamily": "GillSansMTStd-Medium",
             "fontSize": 16,
+            "letterSpacing": 1,
             "lineHeight": 18,
             "textAlign": "center",
             "textTransform": "uppercase",
@@ -1040,8 +1042,9 @@ exports[`14. leaders 1`] = `
         style={
           Object {
             "color": "#850029",
-            "fontFamily": "TimesDigitalW04-Regular",
+            "fontFamily": "GillSansMTStd-Medium",
             "fontSize": 16,
+            "letterSpacing": 1,
             "lineHeight": 18,
             "textAlign": "center",
             "textTransform": "uppercase",

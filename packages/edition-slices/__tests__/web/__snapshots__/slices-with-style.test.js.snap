@@ -465,8 +465,9 @@ exports[`2. leaders 1`] = `
 
 .IS2 {
   color: rgba(133,0,41,1.00);
-  font-family: TimesDigitalW04-Regular;
+  font-family: GillSansMTStd-Medium;
   font-size: 16px;
+  letter-spacing: 1px;
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
@@ -577,8 +578,9 @@ exports[`2. leaders 2`] = `
 
 .IS2 {
   color: rgba(133,0,41,1.00);
-  font-family: TimesDigitalW04-Regular;
+  font-family: GillSansMTStd-Medium;
   font-size: 16px;
+  letter-spacing: 1px;
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
@@ -1732,8 +1734,9 @@ exports[`14. leaders 1`] = `
 
 .IS2 {
   color: rgba(133,0,41,1.00);
-  font-family: TimesDigitalW04-Regular;
+  font-family: GillSansMTStd-Medium;
   font-size: 16px;
+  letter-spacing: 1px;
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
