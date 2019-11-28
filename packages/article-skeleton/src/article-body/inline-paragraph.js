@@ -26,6 +26,10 @@ const InlineParagraph = ({
   const { spacing } = styleguide({ scale });
   const [inlineExclusion, setInlineExclusion] = useState(false);
 
+  if (!str.length) {
+    return null;
+  }
+
   const contentWidth = Math.min(screenWidth(), tabletWidth);
   const gutters = (screenWidth() - contentWidth) / 2 + spacing(2);
 

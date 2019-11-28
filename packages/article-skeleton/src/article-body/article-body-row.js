@@ -90,6 +90,18 @@ export default ({
         </ArticleParagraphWrapper>
       );
     },
+    heading3(key, attributes, children, index, tree) {
+      return this.heading2(key, attributes, children, index, tree);
+    },
+    heading4(key, attributes, children, index, tree) {
+      return this.heading2(key, attributes, children, index, tree);
+    },
+    heading5(key, attributes, children, index, tree) {
+      return this.heading2(key, attributes, children, index, tree);
+    },
+    heading6(key, attributes, children, index, tree) {
+      return this.heading2(key, attributes, children, index, tree);
+    },
     bold(key, attributes, children) {
       const childStr = AttributedString.join(children);
       const attr = {
@@ -286,10 +298,8 @@ export default ({
         </View>
       );
     },
-    unknown() {
-      return new AttributedString("", []);
+    unknown(key, attributes, children, index, tree) {
+      return tree;
     }
   };
 };
-
-// TODO: missing node types

@@ -126,17 +126,7 @@ exports[`1. article with header 1`] = `
           </View>
         </View>
       </View>
-      <View>
-        <View>
-          <View>
-            <Text>
-              <Text>
-                
-              </Text>
-            </Text>
-          </View>
-        </View>
-      </View>
+      <View />
       <View>
         <View>
           <Video
