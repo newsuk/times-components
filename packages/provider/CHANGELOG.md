@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.21.2](https://github.com/newsuk/times-components/compare/@times-components/provider@1.21.1...@times-components/provider@1.21.2) (2019-11-28)
+
+
+### Bug Fixes
+
+* (REPLAT-10796) handle headings and add error boundary ([#2407](https://github.com/newsuk/times-components/issues/2407)) ([da968f6](https://github.com/newsuk/times-components/commit/da968f6d97ccf540e846e2c7db0a0ea9a4347a9c))
+
+
+
+
+
 ## [1.21.1](https://github.com/newsuk/times-components/compare/@times-components/provider@1.21.0...@times-components/provider@1.21.1) (2019-11-21)
 
 

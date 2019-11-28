@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.7.30](https://github.com/newsuk/times-components/compare/@times-components/markup-forest@1.7.29...@times-components/markup-forest@1.7.30) (2019-11-28)
+
+
+### Bug Fixes
+
+* (REPLAT-10796) handle headings and add error boundary ([#2407](https://github.com/newsuk/times-components/issues/2407)) ([da968f6](https://github.com/newsuk/times-components/commit/da968f6d97ccf540e846e2c7db0a0ea9a4347a9c))
+
+
+
+
+
 ## [1.7.29](https://github.com/newsuk/times-components/compare/@times-components/markup-forest@1.7.28...@times-components/markup-forest@1.7.29) (2019-11-06)
 
 **Note:** Version bump only for package @times-components/markup-forest

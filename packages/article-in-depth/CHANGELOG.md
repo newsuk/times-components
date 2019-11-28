@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.15.22](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.15.21...@times-components/article-in-depth@3.15.22) (2019-11-28)
+
+
+### Bug Fixes
+
+* label-padding ([#2406](https://github.com/newsuk/times-components/issues/2406)) ([d690da8](https://github.com/newsuk/times-components/commit/d690da8935b3ddc36f6b8f3949a65d6befa8be59))
+
+
+
+
+
 ## [3.15.21](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.15.20...@times-components/article-in-depth@3.15.21) (2019-11-27)
 
 **Note:** Version bump only for package @times-components/article-in-depth

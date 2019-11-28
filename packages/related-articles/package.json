@@ -1,6 +1,6 @@
 {
   "name": "@times-components/related-articles",
-  "version": "6.2.29",
+  "version": "6.2.30",
   "description": "related articles of an article",
   "main": "dist/related-articles",
   "dev": "src/related-articles",
@@ -68,14 +68,14 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/article-summary": "3.15.2",
-    "@times-components/card": "6.2.56",
+    "@times-components/article-summary": "3.15.3",
+    "@times-components/card": "6.2.57",
     "@times-components/context": "1.1.16",
-    "@times-components/link": "3.5.2",
-    "@times-components/markup-forest": "1.7.29",
-    "@times-components/slice-layout": "0.45.2",
+    "@times-components/link": "3.5.3",
+    "@times-components/markup-forest": "1.7.30",
+    "@times-components/slice-layout": "0.45.3",
     "@times-components/styleguide": "3.33.0",
-    "@times-components/tracking": "2.5.2",
+    "@times-components/tracking": "2.5.3",
     "lodash.get": "4.4.2",
     "prop-types": "15.7.2"
   },

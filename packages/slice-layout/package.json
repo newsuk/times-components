@@ -1,6 +1,6 @@
 {
   "name": "@times-components/slice-layout",
-  "version": "0.45.2",
+  "version": "0.45.3",
   "description": "Slice layout",
   "main": "dist/slice-layout",
   "scripts": {

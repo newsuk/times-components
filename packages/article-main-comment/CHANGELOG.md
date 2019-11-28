@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.16.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.16.0...@times-components/article-main-comment@2.16.1) (2019-11-28)
+
+
+### Bug Fixes
+
+* label-padding ([#2406](https://github.com/newsuk/times-components/issues/2406)) ([d690da8](https://github.com/newsuk/times-components/commit/d690da8935b3ddc36f6b8f3949a65d6befa8be59))
+* revert comment article bylines ([#2405](https://github.com/newsuk/times-components/issues/2405)) ([97824ac](https://github.com/newsuk/times-components/commit/97824ac7b055d9f775b3820280c6e9f59c6954f1))
+
+
+
+
+
 # [2.16.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.15.20...@times-components/article-main-comment@2.16.0) (2019-11-27)
 
 
