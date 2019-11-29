@@ -39,6 +39,7 @@ const TileC = ({ onPress, tile }) => {
         headlineStyle={styles.headline}
         tile={tile}
         style={styles.summaryContainer}
+        flagsStyle={styles.flags}
       />
     </TileLink>
   );

@@ -73,12 +73,12 @@ const flagsMapping = color =>
     ["SPONSORED", <SponsoredArticleFlag color={color} />]
   ]);
 
-const ArticleFlags = ({ flags, color }) => {
+const ArticleFlags = ({ flags, color, style }) => {
   const activeFlags = getActiveFlags(flags);
   if (!activeFlags || activeFlags.length === 0) return null;
 
   return (
-    <View style={styles.flags}>
+    <View style={[styles.flags, style]}>
       {activeFlags.map(flag => (
         <View key={flag.type} style={flags.length > 1 && styles.flagPadding}>
           {flagsMapping(color).get(flag.type)}

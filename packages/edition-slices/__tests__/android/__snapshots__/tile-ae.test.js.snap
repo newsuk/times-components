@@ -43,6 +43,7 @@ exports[`tile ae huge 1`] = `
               "fontFamily": "TimesModern-Bold",
               "fontSize": 35,
               "fontWeight": "400",
+              "includeFontPadding": false,
               "lineHeight": 35,
               "marginBottom": 5,
             }
@@ -129,6 +130,7 @@ exports[`tile ae medium 1`] = `
               "fontFamily": "TimesModern-Bold",
               "fontSize": 30,
               "fontWeight": "400",
+              "includeFontPadding": false,
               "lineHeight": 30,
               "marginBottom": 5,
             }
@@ -215,6 +217,7 @@ exports[`tile ae wide 1`] = `
               "fontFamily": "TimesModern-Bold",
               "fontSize": 30,
               "fontWeight": "400",
+              "includeFontPadding": false,
               "lineHeight": 30,
               "marginBottom": 5,
             }
@@ -301,6 +304,7 @@ exports[`tile ae without breakpoint should be like medium 1`] = `
               "fontFamily": "TimesModern-Bold",
               "fontSize": 30,
               "fontWeight": "400",
+              "includeFontPadding": false,
               "lineHeight": 30,
               "marginBottom": 5,
             }

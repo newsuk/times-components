@@ -58,6 +58,7 @@ exports[`tile n huge 1`] = `
             "fontFamily": "TimesModern-Bold",
             "fontSize": 35,
             "fontWeight": "400",
+            "includeFontPadding": false,
             "lineHeight": 35,
             "marginBottom": 0,
             "marginTop": 5,
@@ -140,6 +141,7 @@ exports[`tile n medium 1`] = `
             "fontFamily": "TimesModern-Bold",
             "fontSize": 18,
             "fontWeight": "400",
+            "includeFontPadding": false,
             "lineHeight": 18,
             "marginBottom": 0,
           }
@@ -155,6 +157,7 @@ exports[`tile n medium 1`] = `
             "color": "#CCC",
             "fontFamily": "TimesDigitalW04-Regular",
             "fontSize": 14,
+            "includeFontPadding": false,
             "lineHeight": 20,
             "paddingBottom": 0,
             "paddingTop": 5,
@@ -238,6 +241,7 @@ exports[`tile n small 1`] = `
             "fontFamily": "TimesModern-Bold",
             "fontSize": 18,
             "fontWeight": "400",
+            "includeFontPadding": false,
             "lineHeight": 18,
             "marginBottom": 0,
           }
@@ -253,8 +257,10 @@ exports[`tile n small 1`] = `
             "color": "#696969",
             "fontFamily": "TimesModern-Regular",
             "fontSize": 14,
-            "lineHeight": 21,
-            "paddingBottom": 10,
+            "includeFontPadding": false,
+            "lineHeight": 24,
+            "paddingBottom": 7.5,
+            "paddingTop": 2.5,
           }
         }
       >
@@ -334,6 +340,7 @@ exports[`tile n wide 1`] = `
             "fontFamily": "TimesModern-Bold",
             "fontSize": 28,
             "fontWeight": "400",
+            "includeFontPadding": false,
             "lineHeight": 28,
             "marginBottom": 0,
           }
@@ -349,6 +356,7 @@ exports[`tile n wide 1`] = `
             "color": "#CCC",
             "fontFamily": "TimesDigitalW04-Regular",
             "fontSize": 14,
+            "includeFontPadding": false,
             "lineHeight": 20,
             "paddingBottom": 0,
             "paddingTop": 5,
@@ -432,6 +440,7 @@ exports[`tile n with default star 1`] = `
             "fontFamily": "TimesModern-Bold",
             "fontSize": 18,
             "fontWeight": "400",
+            "includeFontPadding": false,
             "lineHeight": 18,
             "marginBottom": 0,
           }
@@ -447,8 +456,10 @@ exports[`tile n with default star 1`] = `
             "color": "#696969",
             "fontFamily": "TimesModern-Regular",
             "fontSize": 14,
-            "lineHeight": 21,
-            "paddingBottom": 10,
+            "includeFontPadding": false,
+            "lineHeight": 24,
+            "paddingBottom": 7.5,
+            "paddingTop": 2.5,
           }
         }
       >
@@ -529,6 +540,7 @@ exports[`tile n without breakpoint should be like small 1`] = `
             "fontFamily": "TimesModern-Bold",
             "fontSize": 18,
             "fontWeight": "400",
+            "includeFontPadding": false,
             "lineHeight": 18,
             "marginBottom": 0,
           }
@@ -544,8 +556,10 @@ exports[`tile n without breakpoint should be like small 1`] = `
             "color": "#696969",
             "fontFamily": "TimesModern-Regular",
             "fontSize": 14,
-            "lineHeight": 21,
-            "paddingBottom": 10,
+            "includeFontPadding": false,
+            "lineHeight": 24,
+            "paddingBottom": 7.5,
+            "paddingTop": 2.5,
           }
         }
       >

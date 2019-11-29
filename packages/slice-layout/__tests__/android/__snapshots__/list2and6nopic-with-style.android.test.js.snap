@@ -51,7 +51,6 @@ Array [
         "borderBottomWidth": 1,
         "borderColor": "#DBDBDB",
         "borderStyle": "solid",
-        "marginHorizontal": 10,
       }
     }
   />,
@@ -65,7 +64,6 @@ Array [
           "borderBottomWidth": 1,
           "borderColor": "#DBDBDB",
           "borderStyle": "solid",
-          "marginHorizontal": 10,
         }
       }
     />
@@ -78,7 +76,6 @@ Array [
           "borderBottomWidth": 1,
           "borderColor": "#DBDBDB",
           "borderStyle": "solid",
-          "marginHorizontal": 10,
         }
       }
     />
@@ -91,7 +88,6 @@ Array [
           "borderBottomWidth": 1,
           "borderColor": "#DBDBDB",
           "borderStyle": "solid",
-          "marginHorizontal": 10,
         }
       }
     />
@@ -104,7 +100,6 @@ Array [
           "borderBottomWidth": 1,
           "borderColor": "#DBDBDB",
           "borderStyle": "solid",
-          "marginHorizontal": 10,
         }
       }
     />
@@ -117,7 +112,6 @@ Array [
           "borderBottomWidth": 1,
           "borderColor": "#DBDBDB",
           "borderStyle": "solid",
-          "marginHorizontal": 10,
         }
       }
     />
@@ -235,7 +229,6 @@ exports[`2. list two and six no pic - medium 1`] = `
           "borderBottomWidth": 1,
           "borderColor": "#DBDBDB",
           "borderStyle": "solid",
-          "marginHorizontal": 10,
         }
       }
     />
@@ -286,7 +279,6 @@ exports[`2. list two and six no pic - medium 1`] = `
           "borderBottomWidth": 1,
           "borderColor": "#DBDBDB",
           "borderStyle": "solid",
-          "marginHorizontal": 10,
         }
       }
     />
@@ -442,7 +434,6 @@ exports[`3. list two and six no pic - wide 1`] = `
           "borderBottomWidth": 1,
           "borderColor": "#DBDBDB",
           "borderStyle": "solid",
-          "marginHorizontal": 10,
         }
       }
     />
@@ -493,7 +484,6 @@ exports[`3. list two and six no pic - wide 1`] = `
           "borderBottomWidth": 1,
           "borderColor": "#DBDBDB",
           "borderStyle": "solid",
-          "marginHorizontal": 10,
         }
       }
     />
@@ -649,7 +639,6 @@ exports[`4. list two and six no pic - huge 1`] = `
           "borderBottomWidth": 1,
           "borderColor": "#DBDBDB",
           "borderStyle": "solid",
-          "marginHorizontal": 10,
         }
       }
     />
@@ -700,7 +689,6 @@ exports[`4. list two and six no pic - huge 1`] = `
           "borderBottomWidth": 1,
           "borderColor": "#DBDBDB",
           "borderStyle": "solid",
-          "marginHorizontal": 10,
         }
       }
     />

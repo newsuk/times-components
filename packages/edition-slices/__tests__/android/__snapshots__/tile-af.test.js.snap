@@ -42,6 +42,7 @@ exports[`tile af huge 1`] = `
               "fontFamily": "TimesModern-Bold",
               "fontSize": 22,
               "fontWeight": "400",
+              "includeFontPadding": false,
               "lineHeight": 22,
               "marginBottom": 5,
             }
@@ -127,6 +128,7 @@ exports[`tile af wide 1`] = `
               "fontFamily": "TimesModern-Bold",
               "fontSize": 20,
               "fontWeight": "400",
+              "includeFontPadding": false,
               "lineHeight": 20,
               "marginBottom": 5,
             }
@@ -212,6 +214,7 @@ exports[`tile af without breakpoint should be like wide 1`] = `
               "fontFamily": "TimesModern-Bold",
               "fontSize": 20,
               "fontWeight": "400",
+              "includeFontPadding": false,
               "lineHeight": 20,
               "marginBottom": 5,
             }

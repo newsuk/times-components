@@ -84,8 +84,6 @@ Array [
         "borderRightStyle": "solid",
         "borderTopColor": "rgba(219,219,219,1.00)",
         "borderTopStyle": "solid",
-        "marginLeft": "10px",
-        "marginRight": "10px",
       }
     }
   />,
@@ -328,8 +326,6 @@ exports[`2. secondary four - medium 1`] = `
           "borderRightStyle": "solid",
           "borderTopColor": "rgba(219,219,219,1.00)",
           "borderTopStyle": "solid",
-          "marginLeft": "10px",
-          "marginRight": "10px",
         }
       }
     />
@@ -509,8 +505,6 @@ exports[`3. secondary four - medium - with isconsecutive 1`] = `
           "borderRightStyle": "solid",
           "borderTopColor": "rgba(219,219,219,1.00)",
           "borderTopStyle": "solid",
-          "marginLeft": "10px",
-          "marginRight": "10px",
         }
       }
     />
@@ -690,8 +684,6 @@ exports[`4. secondary four - wide 1`] = `
           "borderRightStyle": "solid",
           "borderTopColor": "rgba(219,219,219,1.00)",
           "borderTopStyle": "solid",
-          "marginLeft": "10px",
-          "marginRight": "10px",
         }
       }
     />
@@ -871,8 +863,6 @@ exports[`5. secondary four - wide - with isconsecutive 1`] = `
           "borderRightStyle": "solid",
           "borderTopColor": "rgba(219,219,219,1.00)",
           "borderTopStyle": "solid",
-          "marginLeft": "10px",
-          "marginRight": "10px",
         }
       }
     />

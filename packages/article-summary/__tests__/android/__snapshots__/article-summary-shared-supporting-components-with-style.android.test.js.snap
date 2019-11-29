@@ -10,6 +10,7 @@ exports[`1. article summary headline component 1`] = `
       "fontFamily": "TimesModern-Bold",
       "fontSize": 22,
       "fontWeight": "400",
+      "includeFontPadding": false,
       "lineHeight": 27,
       "marginBottom": 5,
     }
@@ -27,9 +28,11 @@ exports[`2. article summary strapline component 1`] = `
     Object {
       "color": "black",
       "fontFamily": "TimesModern-Regular",
-      "fontSize": 19,
-      "lineHeight": 21,
-      "paddingBottom": 10,
+      "fontSize": 22,
+      "includeFontPadding": false,
+      "lineHeight": 24,
+      "paddingBottom": 7.5,
+      "paddingTop": 2.5,
     }
   }
 >

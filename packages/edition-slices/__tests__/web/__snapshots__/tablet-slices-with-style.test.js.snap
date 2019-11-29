@@ -424,8 +424,6 @@ exports[`5. lead two no pic and two - medium 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS2 {
@@ -456,8 +454,6 @@ exports[`5. lead two no pic and two - medium 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS5 {
@@ -809,8 +805,6 @@ exports[`7. secondary one and four - medium 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS10 {
@@ -1094,8 +1088,6 @@ exports[`9. secondary four - medium 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS7 {
@@ -1335,8 +1327,6 @@ exports[`11. secondary two and two - medium 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS6 {
@@ -1493,8 +1483,6 @@ exports[`12. lead one and four slice - medium 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS4 {
@@ -1507,8 +1495,6 @@ exports[`12. lead one and four slice - medium 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS5 {
@@ -1521,8 +1507,6 @@ exports[`12. lead one and four slice - medium 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS6 {
@@ -1624,8 +1608,6 @@ exports[`13. standard slice - medium 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS2 {
@@ -1638,8 +1620,6 @@ exports[`13. standard slice - medium 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS3 {
@@ -1652,8 +1632,6 @@ exports[`13. standard slice - medium 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS4 {
@@ -1666,8 +1644,6 @@ exports[`13. standard slice - medium 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS5 {
@@ -1817,8 +1793,6 @@ exports[`14. secondary two no pic and two - medium 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS6 {
@@ -2070,8 +2044,6 @@ exports[`15. list two and six no pic - medium 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS10 {
@@ -2124,8 +2096,6 @@ exports[`15. list two and six no pic - medium 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS15 {
@@ -2867,8 +2837,6 @@ exports[`21. lead two no pic and two - wide 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS2 {
@@ -3258,8 +3226,6 @@ exports[`23. secondary one and four - wide 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS10 {
@@ -3543,8 +3509,6 @@ exports[`25. secondary four - wide 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS7 {
@@ -3911,8 +3875,6 @@ exports[`28. lead one and four slice - wide 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS4 {
@@ -3925,8 +3887,6 @@ exports[`28. lead one and four slice - wide 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS5 {
@@ -3939,8 +3899,6 @@ exports[`28. lead one and four slice - wide 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS6 {
@@ -4042,8 +4000,6 @@ exports[`29. standard slice - wide 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS2 {
@@ -4056,8 +4012,6 @@ exports[`29. standard slice - wide 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS3 {
@@ -4070,8 +4024,6 @@ exports[`29. standard slice - wide 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS4 {
@@ -4084,8 +4036,6 @@ exports[`29. standard slice - wide 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS5 {
@@ -4222,8 +4172,6 @@ exports[`30. secondary two no pic and two - wide 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS7 {
@@ -4429,8 +4377,6 @@ exports[`31. list two and six no pic - wide 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS10 {
@@ -4483,8 +4429,6 @@ exports[`31. list two and six no pic - wide 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS15 {
@@ -5310,8 +5254,6 @@ exports[`37. lead two no pic and two - huge 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS2 {
@@ -5743,8 +5685,6 @@ exports[`39. secondary one and four - huge 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS10 {
@@ -6070,8 +6010,6 @@ exports[`41. secondary four - huge 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS7 {
@@ -6501,8 +6439,6 @@ exports[`44. lead one and four slice - huge 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS4 {
@@ -6515,8 +6451,6 @@ exports[`44. lead one and four slice - huge 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS5 {
@@ -6529,8 +6463,6 @@ exports[`44. lead one and four slice - huge 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS6 {
@@ -6653,8 +6585,6 @@ exports[`45. standard slice - huge 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS2 {
@@ -6667,8 +6597,6 @@ exports[`45. standard slice - huge 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS3 {
@@ -6681,8 +6609,6 @@ exports[`45. standard slice - huge 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS4 {
@@ -6695,8 +6621,6 @@ exports[`45. standard slice - huge 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS5 {
@@ -6854,8 +6778,6 @@ exports[`46. secondary two no pic and two - huge 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS7 {
@@ -7082,8 +7004,6 @@ exports[`47. list two and six no pic - huge 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS10 {
@@ -7136,8 +7056,6 @@ exports[`47. list two and six no pic - huge 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS15 {

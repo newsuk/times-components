@@ -54,7 +54,7 @@ exports[`default styles 1`] = `
                 <View
                   style={
                     Object {
-                      "marginBottom": 0,
+                      "marginBottom": 5,
                     }
                   }
                 >
@@ -82,6 +82,7 @@ exports[`default styles 1`] = `
                       "fontFamily": "TimesModern-Bold",
                       "fontSize": 22,
                       "fontWeight": "400",
+                      "includeFontPadding": false,
                       "lineHeight": 27,
                       "marginBottom": 5,
                       "marginTop": 0,

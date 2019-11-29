@@ -87,6 +87,7 @@ exports[`tile p without breakpoint 1`] = `
           "fontFamily": "TimesModern-Bold",
           "fontSize": 35,
           "fontWeight": "400",
+          "includeFontPadding": false,
           "lineHeight": 35,
           "marginBottom": 5,
           "paddingHorizontal": 10,
@@ -104,9 +105,11 @@ exports[`tile p without breakpoint 1`] = `
           "color": "#696969",
           "fontFamily": "TimesDigitalW04-Regular",
           "fontSize": 14,
+          "includeFontPadding": false,
           "lineHeight": 20,
-          "paddingBottom": 10,
+          "paddingBottom": 7.5,
           "paddingHorizontal": 40,
+          "paddingTop": 2.5,
           "textAlign": "center",
         }
       }

@@ -13,7 +13,7 @@ exports[`1. article summary headline component 1`] = `
 exports[`2. article summary strapline component 1`] = `
 <h4
   aria-level="4"
-  className="css-reset-4rbku5 css-text-901oao r-fontFamily-4h8ur4 r-fontSize-1b6yd1w r-lineHeight-10yl4k r-paddingBottom-1mi0q7o"
+  className="css-reset-4rbku5 css-text-901oao r-fontFamily-4h8ur4 r-fontSize-evnaw r-lineHeight-135wba7 r-paddingBottom-1mi0q7o"
   role="heading"
 >
   PM hails breakthrough ahead of key Commons vote

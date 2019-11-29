@@ -11,7 +11,7 @@ const styles = {
     })
   },
   summaryContainer: {
-    marginBottom: spacing(3)
+    marginBottom: spacing(2)
   }
 };
 

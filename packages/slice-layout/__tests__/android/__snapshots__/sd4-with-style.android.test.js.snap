@@ -49,7 +49,6 @@ Array [
         "borderBottomWidth": 1,
         "borderColor": "#DBDBDB",
         "borderStyle": "solid",
-        "marginHorizontal": 10,
       }
     }
   />,
@@ -175,7 +174,6 @@ exports[`2. secondary four - medium 1`] = `
           "borderBottomWidth": 1,
           "borderColor": "#DBDBDB",
           "borderStyle": "solid",
-          "marginHorizontal": 10,
         }
       }
     />
@@ -264,7 +262,6 @@ exports[`3. secondary four - medium - with isconsecutive 1`] = `
           "borderBottomWidth": 1,
           "borderColor": "#DBDBDB",
           "borderStyle": "solid",
-          "marginHorizontal": 10,
         }
       }
     />
@@ -353,7 +350,6 @@ exports[`4. secondary four - wide 1`] = `
           "borderBottomWidth": 1,
           "borderColor": "#DBDBDB",
           "borderStyle": "solid",
-          "marginHorizontal": 10,
         }
       }
     />
@@ -442,7 +438,6 @@ exports[`5. secondary four - wide - with isconsecutive 1`] = `
           "borderBottomWidth": 1,
           "borderColor": "#DBDBDB",
           "borderStyle": "solid",
-          "marginHorizontal": 10,
         }
       }
     />

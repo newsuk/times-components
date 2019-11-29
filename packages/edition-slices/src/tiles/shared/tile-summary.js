@@ -42,10 +42,13 @@ class TileSummary extends Component {
       tile: {
         article: { expirableFlags }
       },
-      flagColour
+      flagColour,
+      flagsStyle
     } = this.props;
 
-    return <ArticleFlags {...flagColour} flags={expirableFlags} />;
+    return (
+      <ArticleFlags {...flagColour} style={flagsStyle} flags={expirableFlags} />
+    );
   }
 
   renderSaveStar() {

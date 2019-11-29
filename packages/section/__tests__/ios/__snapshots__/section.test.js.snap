@@ -241,7 +241,7 @@ exports[`section item separator - small 1`] = `
     Object {
       "backgroundColor": "#DBDBDB",
       "height": 1,
-      "marginHorizontal": 10,
+      "marginHorizontal": 0,
     }
   }
 />
@@ -270,7 +270,7 @@ exports[`section page 1`] = `
             Object {
               "backgroundColor": "#DBDBDB",
               "height": 1,
-              "marginHorizontal": 10,
+              "marginHorizontal": 0,
             }
           }
         />
@@ -284,7 +284,7 @@ exports[`section page 1`] = `
             Object {
               "backgroundColor": "#DBDBDB",
               "height": 1,
-              "marginHorizontal": 10,
+              "marginHorizontal": 0,
             }
           }
         />
@@ -298,7 +298,7 @@ exports[`section page 1`] = `
             Object {
               "backgroundColor": "#DBDBDB",
               "height": 1,
-              "marginHorizontal": 10,
+              "marginHorizontal": 0,
             }
           }
         />
@@ -312,7 +312,7 @@ exports[`section page 1`] = `
             Object {
               "backgroundColor": "#DBDBDB",
               "height": 1,
-              "marginHorizontal": 10,
+              "marginHorizontal": 0,
             }
           }
         />
@@ -326,7 +326,7 @@ exports[`section page 1`] = `
             Object {
               "backgroundColor": "#DBDBDB",
               "height": 1,
-              "marginHorizontal": 10,
+              "marginHorizontal": 0,
             }
           }
         />
@@ -354,7 +354,7 @@ exports[`should render Secondary 2 No Pic and 2 instead of Secondary 2 and 2 for
             Object {
               "backgroundColor": "#DBDBDB",
               "height": 1,
-              "marginHorizontal": 10,
+              "marginHorizontal": 0,
             }
           }
         />
@@ -378,7 +378,7 @@ exports[`should render secondary 2 and 2 for mobile (small breakpoint) 1`] = `
             Object {
               "backgroundColor": "#DBDBDB",
               "height": 1,
-              "marginHorizontal": 10,
+              "marginHorizontal": 0,
             }
           }
         />

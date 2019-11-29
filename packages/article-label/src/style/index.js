@@ -8,7 +8,8 @@ const styles = StyleSheet.create({
     lineHeight: 12,
     paddingTop: 0,
     marginTop: 0,
-    letterSpacing: 1
+    letterSpacing: 1,
+    includeFontPadding: false
   }
 });
 

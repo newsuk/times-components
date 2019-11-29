@@ -45,6 +45,7 @@ exports[`tile u without breakpoint 1`] = `
           "fontFamily": "TimesModern-Bold",
           "fontSize": 40,
           "fontWeight": "400",
+          "includeFontPadding": false,
           "lineHeight": 40,
           "marginBottom": 0,
         }

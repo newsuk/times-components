@@ -22,8 +22,6 @@ exports[`1. secondary two no pic and two - small 1`] = `
         "borderRightStyle": "solid",
         "borderTopColor": "rgba(219,219,219,1.00)",
         "borderTopStyle": "solid",
-        "marginLeft": "10px",
-        "marginRight": "10px",
       }
     }
   />
@@ -45,8 +43,6 @@ exports[`1. secondary two no pic and two - small 1`] = `
         "borderRightStyle": "solid",
         "borderTopColor": "rgba(219,219,219,1.00)",
         "borderTopStyle": "solid",
-        "marginLeft": "10px",
-        "marginRight": "10px",
       }
     }
   />
@@ -68,8 +64,6 @@ exports[`1. secondary two no pic and two - small 1`] = `
         "borderRightStyle": "solid",
         "borderTopColor": "rgba(219,219,219,1.00)",
         "borderTopStyle": "solid",
-        "marginLeft": "10px",
-        "marginRight": "10px",
       }
     }
   />
@@ -201,8 +195,6 @@ exports[`2. secondary two no pic and two - medium 1`] = `
         "borderRightStyle": "solid",
         "borderTopColor": "rgba(219,219,219,1.00)",
         "borderTopStyle": "solid",
-        "marginLeft": "10px",
-        "marginRight": "10px",
       }
     }
   />
@@ -436,8 +428,6 @@ exports[`3. secondary two no pic and two - wide 1`] = `
           "borderRightStyle": "solid",
           "borderTopColor": "rgba(219,219,219,1.00)",
           "borderTopStyle": "solid",
-          "marginLeft": "10px",
-          "marginRight": "10px",
         }
       }
     />
@@ -590,8 +580,6 @@ exports[`4. secondary two no pic and two - huge 1`] = `
           "borderRightStyle": "solid",
           "borderTopColor": "rgba(219,219,219,1.00)",
           "borderTopStyle": "solid",
-          "marginLeft": "10px",
-          "marginRight": "10px",
         }
       }
     />

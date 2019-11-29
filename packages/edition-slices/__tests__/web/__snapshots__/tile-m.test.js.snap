@@ -5,6 +5,7 @@ exports[`tile m huge 1`] = `
 .S1 {
   font-family: TimesModern-Bold;
   font-weight: 400;
+  line-height: 24px;
 }
 
 .S2 {
@@ -15,7 +16,6 @@ exports[`tile m huge 1`] = `
 .IS1 {
   color: rgba(29,29,27,1.00);
   font-size: 24px;
-  line-height: 24px;
   margin-bottom: 10px;
   margin-top: 30px;
   text-align: center;
@@ -42,7 +42,7 @@ exports[`tile m huge 1`] = `
   >
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 IS1 S1"
+      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-lineHeight-135wba7 IS1 S1"
       role="heading"
     >
       Driving Off
@@ -123,7 +123,6 @@ exports[`tile m small 1`] = `
 .S1 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
-  font-size: 22px;
   font-weight: 400;
   margin-bottom: 5px;
 }
@@ -133,7 +132,8 @@ exports[`tile m small 1`] = `
 }
 
 .IS1 {
-  line-height: 22px;
+  font-size: 20px;
+  line-height: 20px;
   margin-top: 20px;
   text-align: center;
 }
@@ -175,7 +175,7 @@ exports[`tile m small 1`] = `
   >
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S1"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S1"
       role="heading"
     >
       Driving Off
@@ -197,6 +197,7 @@ exports[`tile m wide 1`] = `
 .S1 {
   font-family: TimesModern-Bold;
   font-weight: 400;
+  line-height: 24px;
   margin-bottom: 5px;
 }
 
@@ -208,7 +209,6 @@ exports[`tile m wide 1`] = `
 .IS1 {
   color: rgba(29,29,27,1.00);
   font-size: 24px;
-  line-height: 24px;
   margin-top: 30px;
   text-align: center;
 }
@@ -234,7 +234,7 @@ exports[`tile m wide 1`] = `
   >
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S1"
+      className="css-reset-4rbku5 css-text-901oao r-fontFamily-iirzy8 r-fontWeight-16dba41 r-lineHeight-135wba7 r-marginBottom-d0pm55 IS1 S1"
       role="heading"
     >
       Driving Off
@@ -256,7 +256,6 @@ exports[`tile m without breakpoint should be like small 1`] = `
 .S1 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
-  font-size: 22px;
   font-weight: 400;
   margin-bottom: 5px;
 }
@@ -266,7 +265,8 @@ exports[`tile m without breakpoint should be like small 1`] = `
 }
 
 .IS1 {
-  line-height: 22px;
+  font-size: 20px;
+  line-height: 20px;
   margin-top: 20px;
   text-align: center;
 }
@@ -308,7 +308,7 @@ exports[`tile m without breakpoint should be like small 1`] = `
   >
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S1"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-marginBottom-d0pm55 IS1 S1"
       role="heading"
     >
       Driving Off

@@ -6,7 +6,7 @@ import {
 } from "@times-components/styleguide";
 
 const separatorSpacingResolver = {
-  [editionBreakpoints.small]: spacing(2),
+  [editionBreakpoints.small]: spacing(0),
   [editionBreakpoints.medium]: spacing(8),
   [editionBreakpoints.wide]: spacing(10),
   [editionBreakpoints.huge]: spacing(22.6)

@@ -23,7 +23,7 @@ exports[`tile x huge 1`] = `
         <View
           style={
             Object {
-              "marginBottom": 0,
+              "marginBottom": 5,
             }
           }
         >
@@ -41,7 +41,8 @@ exports[`tile x huge 1`] = `
               "color": "#333333",
               "fontFamily": "TimesModern-Bold",
               "fontSize": 45,
-              "fontWeight": "900",
+              "fontWeight": "400",
+              "includeFontPadding": false,
               "lineHeight": 45,
               "marginBottom": 5,
             }
@@ -57,6 +58,7 @@ exports[`tile x huge 1`] = `
               "color": "#333333",
               "fontFamily": "TimesModern-Regular",
               "fontSize": 24,
+              "includeFontPadding": false,
               "lineHeight": 26,
               "paddingBottom": 0,
               "paddingTop": 10,
@@ -124,7 +126,7 @@ exports[`tile x medium 1`] = `
         <View
           style={
             Object {
-              "marginBottom": 0,
+              "marginBottom": 5,
             }
           }
         >
@@ -142,7 +144,8 @@ exports[`tile x medium 1`] = `
               "color": "#333333",
               "fontFamily": "TimesModern-Bold",
               "fontSize": 40,
-              "fontWeight": "900",
+              "fontWeight": "400",
+              "includeFontPadding": false,
               "lineHeight": 40,
               "marginBottom": 5,
             }
@@ -158,6 +161,7 @@ exports[`tile x medium 1`] = `
               "color": "#333333",
               "fontFamily": "TimesModern-Regular",
               "fontSize": 24,
+              "includeFontPadding": false,
               "lineHeight": 26,
               "paddingBottom": 0,
               "paddingTop": 10,
@@ -225,7 +229,7 @@ exports[`tile x wide 1`] = `
         <View
           style={
             Object {
-              "marginBottom": 0,
+              "marginBottom": 5,
             }
           }
         >
@@ -243,7 +247,8 @@ exports[`tile x wide 1`] = `
               "color": "#333333",
               "fontFamily": "TimesModern-Bold",
               "fontSize": 40,
-              "fontWeight": "900",
+              "fontWeight": "400",
+              "includeFontPadding": false,
               "lineHeight": 40,
               "marginBottom": 5,
             }
@@ -259,6 +264,7 @@ exports[`tile x wide 1`] = `
               "color": "#333333",
               "fontFamily": "TimesModern-Regular",
               "fontSize": 24,
+              "includeFontPadding": false,
               "lineHeight": 26,
               "paddingBottom": 0,
               "paddingTop": 10,

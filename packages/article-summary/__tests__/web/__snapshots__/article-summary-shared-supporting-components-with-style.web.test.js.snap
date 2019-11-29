@@ -28,8 +28,8 @@ exports[`2. article summary strapline component 1`] = `
 <style>
 .S1 {
   font-family: TimesModern-Regular;
-  font-size: 19px;
-  line-height: 21px;
+  font-size: 22px;
+  line-height: 24px;
 }
 
 .IS1 {
@@ -39,7 +39,7 @@ exports[`2. article summary strapline component 1`] = `
 
 <h4
   aria-level="4"
-  className="css-reset-4rbku5 css-text-901oao r-fontFamily-4h8ur4 r-fontSize-1b6yd1w r-lineHeight-10yl4k r-paddingBottom-1mi0q7o IS1 S1"
+  className="css-reset-4rbku5 css-text-901oao r-fontFamily-4h8ur4 r-fontSize-evnaw r-lineHeight-135wba7 r-paddingBottom-1mi0q7o IS1 S1"
   role="heading"
 >
   PM hails breakthrough ahead of key Commons vote

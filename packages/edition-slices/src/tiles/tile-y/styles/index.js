@@ -15,7 +15,7 @@ export default breakpoint => ({
   container: {
     paddingHorizontal: spacing(2),
     paddingTop: spacing(2),
-    paddingBottom: spacing(3)
+    paddingBottom: spacing(4)
   },
   headline: {
     ...globalSpacingStyles.tabletHeadline,

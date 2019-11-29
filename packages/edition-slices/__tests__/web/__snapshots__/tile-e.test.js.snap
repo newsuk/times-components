@@ -9,8 +9,8 @@ exports[`tile e huge 1`] = `
 .S2 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
-  font-size: 22px;
   font-weight: 400;
+  line-height: 20px;
   margin-bottom: 0px;
 }
 
@@ -32,7 +32,7 @@ exports[`tile e huge 1`] = `
 }
 
 .IS2 {
-  line-height: 22px;
+  font-size: 20px;
 }
 
 .IS3 {
@@ -89,7 +89,7 @@ exports[`tile e huge 1`] = `
         </div>
         <h3
           aria-level="3"
-          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-p1pxzi IS2 S2"
+          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 r-lineHeight-rjixqe r-marginBottom-p1pxzi IS2 S2"
           role="heading"
         >
           This is tile headline

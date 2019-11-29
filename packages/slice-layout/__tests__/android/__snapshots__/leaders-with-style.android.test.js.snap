@@ -17,7 +17,6 @@ exports[`1. leaders - small 1`] = `
         "borderBottomWidth": 1,
         "borderColor": "#DBDBDB",
         "borderStyle": "solid",
-        "marginHorizontal": 10,
       }
     }
   />
@@ -30,7 +29,6 @@ exports[`1. leaders - small 1`] = `
         "borderBottomWidth": 1,
         "borderColor": "#DBDBDB",
         "borderStyle": "solid",
-        "marginHorizontal": 10,
       }
     }
   />

@@ -16,6 +16,7 @@ exports[`1. red article flag 1`] = `
         "backgroundColor": "red",
         "borderRadius": 2.5,
         "height": 5,
+        "marginBottom": 3,
         "width": 5,
       }
     }
@@ -24,12 +25,16 @@ exports[`1. red article flag 1`] = `
     style={
       Object {
         "color": "red",
-        "fontFamily": "TimesDigitalW04-RegularSC",
-        "fontSize": 14,
-        "fontWeight": "400",
-        "letterSpacing": 0.6,
-        "lineHeight": 14,
+        "fontFamily": "TimesDigitalW04",
+        "fontSize": 10,
+        "fontWeight": "bold",
+        "includeFontPadding": false,
+        "letterSpacing": 0,
+        "lineHeight": 10,
+        "marginBottom": 0,
         "marginLeft": 5,
+        "paddingBottom": 0,
+        "textTransform": "uppercase",
       }
     }
   >
@@ -45,7 +50,7 @@ exports[`2. multiple article flags 1`] = `
       "flexDirection": "row",
       "flexWrap": "wrap",
       "marginBottom": 5,
-      "marginTop": 10,
+      "marginTop": 5,
     }
   }
 >
@@ -71,6 +76,7 @@ exports[`2. multiple article flags 1`] = `
             "backgroundColor": "#3C81BE",
             "borderRadius": 2.5,
             "height": 5,
+            "marginBottom": 3,
             "width": 5,
           }
         }
@@ -79,12 +85,16 @@ exports[`2. multiple article flags 1`] = `
         style={
           Object {
             "color": "#3C81BE",
-            "fontFamily": "TimesDigitalW04-RegularSC",
-            "fontSize": 14,
-            "fontWeight": "400",
-            "letterSpacing": 0.6,
-            "lineHeight": 14,
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 10,
+            "fontWeight": "bold",
+            "includeFontPadding": false,
+            "letterSpacing": 0,
+            "lineHeight": 10,
+            "marginBottom": 0,
             "marginLeft": 5,
+            "paddingBottom": 0,
+            "textTransform": "uppercase",
           }
         }
       >
@@ -114,6 +124,7 @@ exports[`2. multiple article flags 1`] = `
             "backgroundColor": "#C51D24",
             "borderRadius": 2.5,
             "height": 5,
+            "marginBottom": 3,
             "width": 5,
           }
         }
@@ -122,12 +133,16 @@ exports[`2. multiple article flags 1`] = `
         style={
           Object {
             "color": "#C51D24",
-            "fontFamily": "TimesDigitalW04-RegularSC",
-            "fontSize": 14,
-            "fontWeight": "400",
-            "letterSpacing": 0.6,
-            "lineHeight": 14,
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 10,
+            "fontWeight": "bold",
+            "includeFontPadding": false,
+            "letterSpacing": 0,
+            "lineHeight": 10,
+            "marginBottom": 0,
             "marginLeft": 5,
+            "paddingBottom": 0,
+            "textTransform": "uppercase",
           }
         }
       >
@@ -157,6 +172,7 @@ exports[`2. multiple article flags 1`] = `
             "backgroundColor": "#E34605",
             "borderRadius": 2.5,
             "height": 5,
+            "marginBottom": 3,
             "width": 5,
           }
         }
@@ -165,12 +181,16 @@ exports[`2. multiple article flags 1`] = `
         style={
           Object {
             "color": "#E34605",
-            "fontFamily": "TimesDigitalW04-RegularSC",
-            "fontSize": 14,
-            "fontWeight": "400",
-            "letterSpacing": 0.6,
-            "lineHeight": 14,
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 10,
+            "fontWeight": "bold",
+            "includeFontPadding": false,
+            "letterSpacing": 0,
+            "lineHeight": 10,
+            "marginBottom": 0,
             "marginLeft": 5,
+            "paddingBottom": 0,
+            "textTransform": "uppercase",
           }
         }
       >
@@ -200,6 +220,7 @@ exports[`2. multiple article flags 1`] = `
             "backgroundColor": "#4D4D4D",
             "borderRadius": 2.5,
             "height": 5,
+            "marginBottom": 3,
             "width": 5,
           }
         }
@@ -208,12 +229,16 @@ exports[`2. multiple article flags 1`] = `
         style={
           Object {
             "color": "#4D4D4D",
-            "fontFamily": "TimesDigitalW04-RegularSC",
-            "fontSize": 14,
-            "fontWeight": "400",
-            "letterSpacing": 0.6,
-            "lineHeight": 14,
+            "fontFamily": "TimesDigitalW04",
+            "fontSize": 10,
+            "fontWeight": "bold",
+            "includeFontPadding": false,
+            "letterSpacing": 0,
+            "lineHeight": 10,
+            "marginBottom": 0,
             "marginLeft": 5,
+            "paddingBottom": 0,
+            "textTransform": "uppercase",
           }
         }
       >

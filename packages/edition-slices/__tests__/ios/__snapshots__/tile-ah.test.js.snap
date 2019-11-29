@@ -38,7 +38,7 @@ exports[`tile ah huge 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 0,
+          "marginBottom": 5,
         }
       }
     >
@@ -56,7 +56,8 @@ exports[`tile ah huge 1`] = `
           "color": "#1D1D1B",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 45,
-          "fontWeight": "900",
+          "fontWeight": "400",
+          "includeFontPadding": false,
           "lineHeight": 45,
           "marginBottom": 5,
           "paddingBottom": 10,
@@ -75,8 +76,10 @@ exports[`tile ah huge 1`] = `
           "color": "#696969",
           "fontFamily": "TimesDigitalW04-Regular",
           "fontSize": 14,
+          "includeFontPadding": false,
           "lineHeight": 20,
           "paddingBottom": 0,
+          "paddingTop": 2.5,
           "textAlign": "center",
         }
       }
@@ -135,7 +138,7 @@ exports[`tile ah medium 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 0,
+          "marginBottom": 5,
         }
       }
     >
@@ -153,7 +156,8 @@ exports[`tile ah medium 1`] = `
           "color": "#1D1D1B",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 30,
-          "fontWeight": "900",
+          "fontWeight": "400",
+          "includeFontPadding": false,
           "lineHeight": 30,
           "marginBottom": 5,
           "paddingBottom": 10,
@@ -172,8 +176,10 @@ exports[`tile ah medium 1`] = `
           "color": "#696969",
           "fontFamily": "TimesDigitalW04-Regular",
           "fontSize": 14,
+          "includeFontPadding": false,
           "lineHeight": 20,
           "paddingBottom": 0,
+          "paddingTop": 2.5,
           "textAlign": "center",
         }
       }
@@ -232,7 +238,7 @@ exports[`tile ah wide 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 0,
+          "marginBottom": 5,
         }
       }
     >
@@ -250,7 +256,8 @@ exports[`tile ah wide 1`] = `
           "color": "#1D1D1B",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 40,
-          "fontWeight": "900",
+          "fontWeight": "400",
+          "includeFontPadding": false,
           "lineHeight": 40,
           "marginBottom": 5,
           "paddingBottom": 10,
@@ -269,8 +276,10 @@ exports[`tile ah wide 1`] = `
           "color": "#696969",
           "fontFamily": "TimesDigitalW04-Regular",
           "fontSize": 14,
+          "includeFontPadding": false,
           "lineHeight": 20,
           "paddingBottom": 0,
+          "paddingTop": 2.5,
           "textAlign": "center",
         }
       }
@@ -329,7 +338,7 @@ exports[`tile ah without breakpoint should be like medium 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 0,
+          "marginBottom": 5,
         }
       }
     >
@@ -347,7 +356,8 @@ exports[`tile ah without breakpoint should be like medium 1`] = `
           "color": "#1D1D1B",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 30,
-          "fontWeight": "900",
+          "fontWeight": "400",
+          "includeFontPadding": false,
           "lineHeight": 30,
           "marginBottom": 5,
           "paddingBottom": 10,
@@ -366,8 +376,10 @@ exports[`tile ah without breakpoint should be like medium 1`] = `
           "color": "#696969",
           "fontFamily": "TimesDigitalW04-Regular",
           "fontSize": 14,
+          "includeFontPadding": false,
           "lineHeight": 20,
           "paddingBottom": 0,
+          "paddingTop": 2.5,
           "textAlign": "center",
         }
       }
