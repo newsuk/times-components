@@ -25,8 +25,6 @@ exports[`1. daily universal register 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
   margin-top: 25px;
   margin-bottom: 25px;
   width: 100%;
@@ -42,8 +40,6 @@ exports[`1. daily universal register 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
   margin-top: 25px;
   margin-bottom: 25px;
   width: 100%;
@@ -64,8 +60,6 @@ exports[`1. daily universal register 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
   margin-top: 25px;
   margin-bottom: 25px;
   width: 100%;
@@ -171,8 +165,6 @@ exports[`1. secondary one and four 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS3 {
@@ -185,8 +177,6 @@ exports[`1. secondary one and four 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS4 {
@@ -199,8 +189,6 @@ exports[`1. secondary one and four 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS5 {
@@ -213,8 +201,6 @@ exports[`1. secondary one and four 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS6 {
@@ -323,8 +309,6 @@ exports[`1. secondary one and four 2`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS3 {
@@ -337,8 +321,6 @@ exports[`1. secondary one and four 2`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS4 {
@@ -351,8 +333,6 @@ exports[`1. secondary one and four 2`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS5 {
@@ -365,8 +345,6 @@ exports[`1. secondary one and four 2`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS6 {
@@ -495,8 +473,6 @@ exports[`2. leaders 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS6 {
@@ -509,8 +485,6 @@ exports[`2. leaders 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS7 {
@@ -608,8 +582,6 @@ exports[`2. leaders 2`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS6 {
@@ -622,8 +594,6 @@ exports[`2. leaders 2`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS7 {
@@ -721,8 +691,6 @@ Array [
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS2 {
@@ -735,8 +703,6 @@ Array [
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS3 {
@@ -749,8 +715,6 @@ Array [
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 </style>
 
@@ -794,8 +758,6 @@ exports[`5. standard 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS2 {
@@ -808,8 +770,6 @@ exports[`5. standard 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS3 {
@@ -822,8 +782,6 @@ exports[`5. standard 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS4 {
@@ -836,8 +794,6 @@ exports[`5. standard 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 </style>
 
@@ -935,8 +891,6 @@ exports[`6. lead two no pic and two 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS2 {
@@ -949,8 +903,6 @@ exports[`6. lead two no pic and two 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS3 {
@@ -963,8 +915,6 @@ exports[`6. lead two no pic and two 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 </style>
 
@@ -1013,8 +963,6 @@ exports[`8. secondary one and columnist 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 </style>
 
@@ -1109,8 +1057,6 @@ Array [
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 </style>
 
@@ -1208,8 +1154,6 @@ exports[`10. secondary one and four 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS3 {
@@ -1222,8 +1166,6 @@ exports[`10. secondary one and four 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS4 {
@@ -1236,8 +1178,6 @@ exports[`10. secondary one and four 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS5 {
@@ -1250,8 +1190,6 @@ exports[`10. secondary one and four 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS6 {
@@ -1411,8 +1349,6 @@ Array [
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 </style>
 
@@ -1437,8 +1373,6 @@ Array [
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 </style>
 
@@ -1467,8 +1401,6 @@ exports[`12. secondary two no pic and two 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS2 {
@@ -1481,8 +1413,6 @@ exports[`12. secondary two no pic and two 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS3 {
@@ -1495,8 +1425,6 @@ exports[`12. secondary two no pic and two 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 </style>
 
@@ -1605,8 +1533,6 @@ Array [
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 </style>
 
@@ -1624,8 +1550,6 @@ Array [
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS2 {
@@ -1638,8 +1562,6 @@ Array [
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS3 {
@@ -1652,8 +1574,6 @@ Array [
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS4 {
@@ -1666,8 +1586,6 @@ Array [
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS5 {
@@ -1680,8 +1598,6 @@ Array [
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 </style>
 
@@ -1764,8 +1680,6 @@ exports[`14. leaders 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS6 {
@@ -1778,8 +1692,6 @@ exports[`14. leaders 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 
 .IS7 {
@@ -1850,8 +1762,6 @@ exports[`15. comment lead and cartoon 1`] = `
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  margin-right: 10px;
-  margin-left: 10px;
 }
 </style>
 

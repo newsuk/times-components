@@ -52,6 +52,7 @@ exports[`tile z huge 1`] = `
                 "fontFamily": "TimesModern-Bold",
                 "fontSize": 45,
                 "fontWeight": "400",
+                "includeFontPadding": false,
                 "lineHeight": 45,
                 "marginBottom": 5,
               }
@@ -158,6 +159,7 @@ exports[`tile z wide 1`] = `
                 "fontFamily": "TimesModern-Bold",
                 "fontSize": 40,
                 "fontWeight": "400",
+                "includeFontPadding": false,
                 "lineHeight": 40,
                 "marginBottom": 5,
               }
@@ -264,6 +266,7 @@ exports[`tile z without breakpoint should be like wide 1`] = `
                 "fontFamily": "TimesModern-Bold",
                 "fontSize": 40,
                 "fontWeight": "400",
+                "includeFontPadding": false,
                 "lineHeight": 40,
                 "marginBottom": 5,
               }

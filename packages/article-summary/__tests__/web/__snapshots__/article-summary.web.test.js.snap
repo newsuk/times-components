@@ -708,7 +708,7 @@ exports[`13. article summary component with a strapline 1`] = `
   </h3>
   <h4
     aria-level="4"
-    className="css-reset-4rbku5 css-text-901oao r-color-1khp51w r-fontFamily-4h8ur4 r-fontSize-1b6yd1w r-lineHeight-10yl4k r-paddingBottom-1mi0q7o"
+    className="css-reset-4rbku5 css-text-901oao r-color-1khp51w r-fontFamily-4h8ur4 r-fontSize-evnaw r-lineHeight-135wba7 r-paddingBottom-1mi0q7o"
     role="heading"
   >
     Test Strapline
@@ -965,7 +965,7 @@ exports[`20. article summary component with a strapline and flag on tablet 1`] =
   </h3>
   <h4
     aria-level="4"
-    className="css-reset-4rbku5 css-text-901oao r-color-1khp51w r-fontFamily-4h8ur4 r-fontSize-1b6yd1w r-lineHeight-10yl4k r-paddingBottom-1mi0q7o"
+    className="css-reset-4rbku5 css-text-901oao r-color-1khp51w r-fontFamily-4h8ur4 r-fontSize-evnaw r-lineHeight-135wba7 r-paddingBottom-1mi0q7o"
     role="heading"
   >
     Test Strapline

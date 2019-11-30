@@ -10,8 +10,7 @@ const styles = {
   itemRowSeparator: {
     borderBottomWidth: 1,
     borderColor: colours.functional.keyline,
-    borderStyle: "solid",
-    marginHorizontal: spacing(2)
+    borderStyle: "solid"
   }
 };
 

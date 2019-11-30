@@ -31,7 +31,8 @@ exports[`tile ak huge 1`] = `
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 22,
-          "fontWeight": "900",
+          "fontWeight": "400",
+          "includeFontPadding": false,
           "lineHeight": 22,
           "marginBottom": 5,
         }
@@ -87,7 +88,8 @@ exports[`tile ak medium 1`] = `
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 20,
-          "fontWeight": "900",
+          "fontWeight": "400",
+          "includeFontPadding": false,
           "lineHeight": 20,
           "marginBottom": 5,
         }
@@ -143,7 +145,8 @@ exports[`tile ak wide 1`] = `
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 20,
-          "fontWeight": "900",
+          "fontWeight": "400",
+          "includeFontPadding": false,
           "lineHeight": 20,
           "marginBottom": 5,
         }
@@ -199,7 +202,8 @@ exports[`tile ak without breakpoint should be like medium 1`] = `
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 20,
-          "fontWeight": "900",
+          "fontWeight": "400",
+          "includeFontPadding": false,
           "lineHeight": 20,
           "marginBottom": 5,
         }

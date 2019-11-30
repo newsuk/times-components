@@ -66,6 +66,7 @@ exports[`default styles 1`] = `
                       "fontFamily": "TimesModern-Bold",
                       "fontSize": 22,
                       "fontWeight": "400",
+                      "includeFontPadding": false,
                       "lineHeight": 27,
                       "marginBottom": 5,
                       "marginTop": 0,

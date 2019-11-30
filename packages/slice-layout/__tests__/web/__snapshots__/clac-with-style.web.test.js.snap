@@ -17,8 +17,6 @@ exports[`1. comment lead and cartoon - small 1`] = `
         "borderRightStyle": "solid",
         "borderTopColor": "rgba(219,219,219,1.00)",
         "borderTopStyle": "solid",
-        "marginLeft": "10px",
-        "marginRight": "10px",
       }
     }
   />

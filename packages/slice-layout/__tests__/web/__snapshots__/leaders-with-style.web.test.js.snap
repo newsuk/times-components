@@ -23,8 +23,6 @@ exports[`1. leaders - small 1`] = `
         "borderRightStyle": "solid",
         "borderTopColor": "rgba(219,219,219,1.00)",
         "borderTopStyle": "solid",
-        "marginLeft": "10px",
-        "marginRight": "10px",
       }
     }
   />
@@ -43,8 +41,6 @@ exports[`1. leaders - small 1`] = `
         "borderRightStyle": "solid",
         "borderTopColor": "rgba(219,219,219,1.00)",
         "borderTopStyle": "solid",
-        "marginLeft": "10px",
-        "marginRight": "10px",
       }
     }
   />

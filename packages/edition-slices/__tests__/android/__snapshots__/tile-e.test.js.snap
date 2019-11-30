@@ -51,9 +51,10 @@ exports[`tile e huge 1`] = `
             Object {
               "color": "#333333",
               "fontFamily": "TimesModern-Bold",
-              "fontSize": 22,
+              "fontSize": 20,
               "fontWeight": "400",
-              "lineHeight": 22,
+              "includeFontPadding": false,
+              "lineHeight": 20,
               "marginBottom": 0,
             }
           }
@@ -147,6 +148,7 @@ exports[`tile e medium 1`] = `
               "fontFamily": "TimesModern-Bold",
               "fontSize": 20,
               "fontWeight": "400",
+              "includeFontPadding": false,
               "lineHeight": 20,
               "marginBottom": 0,
             }
@@ -247,6 +249,7 @@ exports[`tile e small 1`] = `
               "fontFamily": "TimesModern-Bold",
               "fontSize": 20,
               "fontWeight": "400",
+              "includeFontPadding": false,
               "lineHeight": 20,
               "marginBottom": 5,
             }
@@ -342,6 +345,7 @@ exports[`tile e wide 1`] = `
               "fontFamily": "TimesModern-Bold",
               "fontSize": 20,
               "fontWeight": "400",
+              "includeFontPadding": false,
               "lineHeight": 20,
               "marginBottom": 0,
             }
@@ -442,6 +446,7 @@ exports[`tile e without breakpoint should be like small 1`] = `
               "fontFamily": "TimesModern-Bold",
               "fontSize": 20,
               "fontWeight": "400",
+              "includeFontPadding": false,
               "lineHeight": 20,
               "marginBottom": 5,
             }

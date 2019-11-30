@@ -230,7 +230,7 @@ exports[`tile n small 1`] = `
 .S3 {
   color: rgba(105,105,105,1.00);
   font-family: TimesModern-Regular;
-  line-height: 21px;
+  line-height: 24px;
 }
 
 .IS1 {
@@ -311,7 +311,7 @@ exports[`tile n small 1`] = `
       </h3>
       <h4
         aria-level="4"
-        className="css-reset-4rbku5 css-text-901oao r-color-1khp51w r-fontFamily-4h8ur4 r-lineHeight-10yl4k r-paddingBottom-1mi0q7o IS3 S3"
+        className="css-reset-4rbku5 css-text-901oao r-color-1khp51w r-fontFamily-4h8ur4 r-lineHeight-135wba7 r-paddingBottom-1mi0q7o IS3 S3"
         role="heading"
       >
         Three Conservative MPs resign
@@ -462,7 +462,7 @@ exports[`tile n with default star 1`] = `
 .S3 {
   color: rgba(105,105,105,1.00);
   font-family: TimesModern-Regular;
-  line-height: 21px;
+  line-height: 24px;
 }
 
 .IS1 {
@@ -543,7 +543,7 @@ exports[`tile n with default star 1`] = `
       </h3>
       <h4
         aria-level="4"
-        className="css-reset-4rbku5 css-text-901oao r-color-1khp51w r-fontFamily-4h8ur4 r-lineHeight-10yl4k r-paddingBottom-1mi0q7o IS3 S3"
+        className="css-reset-4rbku5 css-text-901oao r-color-1khp51w r-fontFamily-4h8ur4 r-lineHeight-135wba7 r-paddingBottom-1mi0q7o IS3 S3"
         role="heading"
       >
         Three Conservative MPs resign
@@ -579,7 +579,7 @@ exports[`tile n without breakpoint should be like small 1`] = `
 .S3 {
   color: rgba(105,105,105,1.00);
   font-family: TimesModern-Regular;
-  line-height: 21px;
+  line-height: 24px;
 }
 
 .IS1 {
@@ -660,7 +660,7 @@ exports[`tile n without breakpoint should be like small 1`] = `
       </h3>
       <h4
         aria-level="4"
-        className="css-reset-4rbku5 css-text-901oao r-color-1khp51w r-fontFamily-4h8ur4 r-lineHeight-10yl4k r-paddingBottom-1mi0q7o IS3 S3"
+        className="css-reset-4rbku5 css-text-901oao r-color-1khp51w r-fontFamily-4h8ur4 r-lineHeight-135wba7 r-paddingBottom-1mi0q7o IS3 S3"
         role="heading"
       >
         Three Conservative MPs resign

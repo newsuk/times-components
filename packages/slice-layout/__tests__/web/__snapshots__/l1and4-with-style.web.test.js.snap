@@ -28,8 +28,6 @@ Array [
           "borderRightStyle": "solid",
           "borderTopColor": "rgba(219,219,219,1.00)",
           "borderTopStyle": "solid",
-          "marginLeft": "10px",
-          "marginRight": "10px",
         }
       }
     />
@@ -51,8 +49,6 @@ Array [
           "borderRightStyle": "solid",
           "borderTopColor": "rgba(219,219,219,1.00)",
           "borderTopStyle": "solid",
-          "marginLeft": "10px",
-          "marginRight": "10px",
         }
       }
     />
@@ -74,8 +70,6 @@ Array [
           "borderRightStyle": "solid",
           "borderTopColor": "rgba(219,219,219,1.00)",
           "borderTopStyle": "solid",
-          "marginLeft": "10px",
-          "marginRight": "10px",
         }
       }
     />
@@ -173,8 +167,6 @@ exports[`2. lead one and four - medium 1`] = `
           "borderRightStyle": "solid",
           "borderTopColor": "rgba(219,219,219,1.00)",
           "borderTopStyle": "solid",
-          "marginLeft": "10px",
-          "marginRight": "10px",
         }
       }
     />
@@ -196,8 +188,6 @@ exports[`2. lead one and four - medium 1`] = `
           "borderRightStyle": "solid",
           "borderTopColor": "rgba(219,219,219,1.00)",
           "borderTopStyle": "solid",
-          "marginLeft": "10px",
-          "marginRight": "10px",
         }
       }
     />
@@ -219,8 +209,6 @@ exports[`2. lead one and four - medium 1`] = `
           "borderRightStyle": "solid",
           "borderTopColor": "rgba(219,219,219,1.00)",
           "borderTopStyle": "solid",
-          "marginLeft": "10px",
-          "marginRight": "10px",
         }
       }
     />

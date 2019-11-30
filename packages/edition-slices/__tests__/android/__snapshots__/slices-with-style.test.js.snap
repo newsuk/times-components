@@ -40,7 +40,6 @@ exports[`1. daily universal register 1`] = `
         "borderBottomWidth": 1,
         "borderColor": "#DBDBDB",
         "borderStyle": "solid",
-        "marginHorizontal": 10,
         "marginVertical": 25,
         "width": "100%",
       }
@@ -54,7 +53,6 @@ exports[`1. daily universal register 1`] = `
         "borderBottomWidth": 1,
         "borderColor": "#DBDBDB",
         "borderStyle": "solid",
-        "marginHorizontal": 10,
         "marginVertical": 25,
         "width": "100%",
       }
@@ -76,7 +74,6 @@ exports[`1. daily universal register 1`] = `
         "borderBottomWidth": 1,
         "borderColor": "#DBDBDB",
         "borderStyle": "solid",
-        "marginHorizontal": 10,
         "marginVertical": 25,
         "width": "100%",
       }
@@ -120,7 +117,6 @@ exports[`1. secondary one and four 1`] = `
         "borderBottomWidth": 1,
         "borderColor": "#DBDBDB",
         "borderStyle": "solid",
-        "marginHorizontal": 10,
       }
     }
   />
@@ -145,7 +141,6 @@ exports[`1. secondary one and four 1`] = `
             "borderBottomWidth": 1,
             "borderColor": "#DBDBDB",
             "borderStyle": "solid",
-            "marginHorizontal": 10,
           }
         }
       />
@@ -156,7 +151,6 @@ exports[`1. secondary one and four 1`] = `
             "borderBottomWidth": 1,
             "borderColor": "#DBDBDB",
             "borderStyle": "solid",
-            "marginHorizontal": 10,
           }
         }
       />
@@ -167,7 +161,6 @@ exports[`1. secondary one and four 1`] = `
             "borderBottomWidth": 1,
             "borderColor": "#DBDBDB",
             "borderStyle": "solid",
-            "marginHorizontal": 10,
           }
         }
       />
@@ -203,7 +196,6 @@ exports[`1. secondary one and four 2`] = `
         "borderBottomWidth": 1,
         "borderColor": "#DBDBDB",
         "borderStyle": "solid",
-        "marginHorizontal": 10,
       }
     }
   />
@@ -228,7 +220,6 @@ exports[`1. secondary one and four 2`] = `
             "borderBottomWidth": 1,
             "borderColor": "#DBDBDB",
             "borderStyle": "solid",
-            "marginHorizontal": 10,
           }
         }
       />
@@ -239,7 +230,6 @@ exports[`1. secondary one and four 2`] = `
             "borderBottomWidth": 1,
             "borderColor": "#DBDBDB",
             "borderStyle": "solid",
-            "marginHorizontal": 10,
           }
         }
       />
@@ -250,7 +240,6 @@ exports[`1. secondary one and four 2`] = `
             "borderBottomWidth": 1,
             "borderColor": "#DBDBDB",
             "borderStyle": "solid",
-            "marginHorizontal": 10,
           }
         }
       />
@@ -325,7 +314,6 @@ exports[`2. leaders 1`] = `
           "borderBottomWidth": 1,
           "borderColor": "#DBDBDB",
           "borderStyle": "solid",
-          "marginHorizontal": 10,
         }
       }
     />
@@ -336,7 +324,6 @@ exports[`2. leaders 1`] = `
           "borderBottomWidth": 1,
           "borderColor": "#DBDBDB",
           "borderStyle": "solid",
-          "marginHorizontal": 10,
         }
       }
     />
@@ -408,7 +395,6 @@ exports[`2. leaders 2`] = `
           "borderBottomWidth": 1,
           "borderColor": "#DBDBDB",
           "borderStyle": "solid",
-          "marginHorizontal": 10,
         }
       }
     />
@@ -419,7 +405,6 @@ exports[`2. leaders 2`] = `
           "borderBottomWidth": 1,
           "borderColor": "#DBDBDB",
           "borderStyle": "solid",
-          "marginHorizontal": 10,
         }
       }
     />
@@ -454,7 +439,6 @@ Array [
           "borderBottomWidth": 1,
           "borderColor": "#DBDBDB",
           "borderStyle": "solid",
-          "marginHorizontal": 10,
         }
       }
     />
@@ -465,7 +449,6 @@ Array [
           "borderBottomWidth": 1,
           "borderColor": "#DBDBDB",
           "borderStyle": "solid",
-          "marginHorizontal": 10,
         }
       }
     />
@@ -476,7 +459,6 @@ Array [
           "borderBottomWidth": 1,
           "borderColor": "#DBDBDB",
           "borderStyle": "solid",
-          "marginHorizontal": 10,
         }
       }
     />
@@ -497,7 +479,6 @@ exports[`5. standard 1`] = `
               "borderBottomWidth": 1,
               "borderColor": "#DBDBDB",
               "borderStyle": "solid",
-              "marginHorizontal": 10,
             }
           }
         />
@@ -512,7 +493,6 @@ exports[`5. standard 1`] = `
               "borderBottomWidth": 1,
               "borderColor": "#DBDBDB",
               "borderStyle": "solid",
-              "marginHorizontal": 10,
             }
           }
         />
@@ -527,7 +507,6 @@ exports[`5. standard 1`] = `
               "borderBottomWidth": 1,
               "borderColor": "#DBDBDB",
               "borderStyle": "solid",
-              "marginHorizontal": 10,
             }
           }
         />
@@ -542,7 +521,6 @@ exports[`5. standard 1`] = `
               "borderBottomWidth": 1,
               "borderColor": "#DBDBDB",
               "borderStyle": "solid",
-              "marginHorizontal": 10,
             }
           }
         />
@@ -566,7 +544,6 @@ exports[`6. lead two no pic and two 1`] = `
         "borderBottomWidth": 1,
         "borderColor": "#DBDBDB",
         "borderStyle": "solid",
-        "marginHorizontal": 10,
       }
     }
   />
@@ -577,7 +554,6 @@ exports[`6. lead two no pic and two 1`] = `
         "borderBottomWidth": 1,
         "borderColor": "#DBDBDB",
         "borderStyle": "solid",
-        "marginHorizontal": 10,
       }
     }
   />
@@ -588,7 +564,6 @@ exports[`6. lead two no pic and two 1`] = `
         "borderBottomWidth": 1,
         "borderColor": "#DBDBDB",
         "borderStyle": "solid",
-        "marginHorizontal": 10,
       }
     }
   />
@@ -607,7 +582,6 @@ exports[`8. secondary one and columnist 1`] = `
         "borderBottomWidth": 1,
         "borderColor": "#DBDBDB",
         "borderStyle": "solid",
-        "marginHorizontal": 10,
       }
     }
   />
@@ -660,7 +634,6 @@ Array [
         "borderBottomWidth": 1,
         "borderColor": "#DBDBDB",
         "borderStyle": "solid",
-        "marginHorizontal": 10,
       }
     }
   />,
@@ -730,7 +703,6 @@ exports[`10. secondary one and four 1`] = `
         "borderBottomWidth": 1,
         "borderColor": "#DBDBDB",
         "borderStyle": "solid",
-        "marginHorizontal": 10,
       }
     }
   />
@@ -755,7 +727,6 @@ exports[`10. secondary one and four 1`] = `
             "borderBottomWidth": 1,
             "borderColor": "#DBDBDB",
             "borderStyle": "solid",
-            "marginHorizontal": 10,
           }
         }
       />
@@ -766,7 +737,6 @@ exports[`10. secondary one and four 1`] = `
             "borderBottomWidth": 1,
             "borderColor": "#DBDBDB",
             "borderStyle": "solid",
-            "marginHorizontal": 10,
           }
         }
       />
@@ -777,7 +747,6 @@ exports[`10. secondary one and four 1`] = `
             "borderBottomWidth": 1,
             "borderColor": "#DBDBDB",
             "borderStyle": "solid",
-            "marginHorizontal": 10,
           }
         }
       />
@@ -832,7 +801,6 @@ Array [
         "borderBottomWidth": 1,
         "borderColor": "#DBDBDB",
         "borderStyle": "solid",
-        "marginHorizontal": 10,
       }
     }
   />,
@@ -845,7 +813,6 @@ Array [
         "borderBottomWidth": 1,
         "borderColor": "#DBDBDB",
         "borderStyle": "solid",
-        "marginHorizontal": 10,
       }
     }
   />,
@@ -864,7 +831,6 @@ exports[`12. secondary two no pic and two 1`] = `
         "borderBottomWidth": 1,
         "borderColor": "#DBDBDB",
         "borderStyle": "solid",
-        "marginHorizontal": 10,
       }
     }
   />
@@ -875,7 +841,6 @@ exports[`12. secondary two no pic and two 1`] = `
         "borderBottomWidth": 1,
         "borderColor": "#DBDBDB",
         "borderStyle": "solid",
-        "marginHorizontal": 10,
       }
     }
   />
@@ -886,7 +851,6 @@ exports[`12. secondary two no pic and two 1`] = `
         "borderBottomWidth": 1,
         "borderColor": "#DBDBDB",
         "borderStyle": "solid",
-        "marginHorizontal": 10,
       }
     }
   />
@@ -941,7 +905,6 @@ Array [
         "borderBottomWidth": 1,
         "borderColor": "#DBDBDB",
         "borderStyle": "solid",
-        "marginHorizontal": 10,
       }
     }
   />,
@@ -953,7 +916,6 @@ Array [
           "borderBottomWidth": 1,
           "borderColor": "#DBDBDB",
           "borderStyle": "solid",
-          "marginHorizontal": 10,
         }
       }
     />
@@ -964,7 +926,6 @@ Array [
           "borderBottomWidth": 1,
           "borderColor": "#DBDBDB",
           "borderStyle": "solid",
-          "marginHorizontal": 10,
         }
       }
     />
@@ -975,7 +936,6 @@ Array [
           "borderBottomWidth": 1,
           "borderColor": "#DBDBDB",
           "borderStyle": "solid",
-          "marginHorizontal": 10,
         }
       }
     />
@@ -986,7 +946,6 @@ Array [
           "borderBottomWidth": 1,
           "borderColor": "#DBDBDB",
           "borderStyle": "solid",
-          "marginHorizontal": 10,
         }
       }
     />
@@ -997,7 +956,6 @@ Array [
           "borderBottomWidth": 1,
           "borderColor": "#DBDBDB",
           "borderStyle": "solid",
-          "marginHorizontal": 10,
         }
       }
     />
@@ -1069,7 +1027,6 @@ exports[`14. leaders 1`] = `
           "borderBottomWidth": 1,
           "borderColor": "#DBDBDB",
           "borderStyle": "solid",
-          "marginHorizontal": 10,
         }
       }
     />
@@ -1080,7 +1037,6 @@ exports[`14. leaders 1`] = `
           "borderBottomWidth": 1,
           "borderColor": "#DBDBDB",
           "borderStyle": "solid",
-          "marginHorizontal": 10,
         }
       }
     />
@@ -1098,7 +1054,6 @@ exports[`15. comment lead and cartoon 1`] = `
         "borderBottomWidth": 1,
         "borderColor": "#DBDBDB",
         "borderStyle": "solid",
-        "marginHorizontal": 10,
       }
     }
   />

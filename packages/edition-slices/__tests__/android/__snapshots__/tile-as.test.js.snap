@@ -54,6 +54,7 @@ exports[`tile as huge 1`] = `
           "fontFamily": "TimesModern-Bold",
           "fontSize": 22,
           "fontWeight": "400",
+          "includeFontPadding": false,
           "lineHeight": 22,
           "marginBottom": 5,
         }
@@ -148,6 +149,7 @@ exports[`tile as medium 1`] = `
           "fontFamily": "TimesModern-Bold",
           "fontSize": 18,
           "fontWeight": "400",
+          "includeFontPadding": false,
           "lineHeight": 18,
           "marginBottom": 5,
         }
@@ -242,6 +244,7 @@ exports[`tile as wide 1`] = `
           "fontFamily": "TimesModern-Bold",
           "fontSize": 20,
           "fontWeight": "400",
+          "includeFontPadding": false,
           "lineHeight": 20,
           "marginBottom": 5,
         }

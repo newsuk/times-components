@@ -35,7 +35,7 @@ exports[`tile as huge 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 0,
+          "marginBottom": 5,
         }
       }
     >
@@ -53,7 +53,8 @@ exports[`tile as huge 1`] = `
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 22,
-          "fontWeight": "900",
+          "fontWeight": "400",
+          "includeFontPadding": false,
           "lineHeight": 22,
           "marginBottom": 5,
         }
@@ -129,7 +130,7 @@ exports[`tile as medium 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 0,
+          "marginBottom": 5,
         }
       }
     >
@@ -147,7 +148,8 @@ exports[`tile as medium 1`] = `
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 18,
-          "fontWeight": "900",
+          "fontWeight": "400",
+          "includeFontPadding": false,
           "lineHeight": 18,
           "marginBottom": 5,
         }
@@ -223,7 +225,7 @@ exports[`tile as wide 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 0,
+          "marginBottom": 5,
         }
       }
     >
@@ -241,7 +243,8 @@ exports[`tile as wide 1`] = `
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 20,
-          "fontWeight": "900",
+          "fontWeight": "400",
+          "includeFontPadding": false,
           "lineHeight": 20,
           "marginBottom": 5,
         }

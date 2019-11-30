@@ -55,7 +55,7 @@ exports[`tile g huge 1`] = `
         <View
           style={
             Object {
-              "marginBottom": 0,
+              "marginBottom": 5,
             }
           }
         >
@@ -72,9 +72,10 @@ exports[`tile g huge 1`] = `
             Object {
               "color": "#333333",
               "fontFamily": "TimesModern-Bold",
-              "fontSize": 22,
-              "fontWeight": "900",
-              "lineHeight": 22,
+              "fontSize": 20,
+              "fontWeight": "400",
+              "includeFontPadding": false,
+              "lineHeight": 20,
               "marginBottom": 0,
             }
           }
@@ -152,7 +153,7 @@ exports[`tile g medium 1`] = `
         <View
           style={
             Object {
-              "marginBottom": 0,
+              "marginBottom": 5,
             }
           }
         >
@@ -170,7 +171,8 @@ exports[`tile g medium 1`] = `
               "color": "#333333",
               "fontFamily": "TimesModern-Bold",
               "fontSize": 20,
-              "fontWeight": "900",
+              "fontWeight": "400",
+              "includeFontPadding": false,
               "lineHeight": 20,
               "marginBottom": 5,
             }
@@ -247,7 +249,7 @@ exports[`tile g small 1`] = `
         <View
           style={
             Object {
-              "marginBottom": 0,
+              "marginBottom": 5,
             }
           }
         >
@@ -265,7 +267,8 @@ exports[`tile g small 1`] = `
               "color": "#333333",
               "fontFamily": "TimesModern-Bold",
               "fontSize": 20,
-              "fontWeight": "900",
+              "fontWeight": "400",
+              "includeFontPadding": false,
               "lineHeight": 20,
               "marginBottom": 5,
             }
@@ -344,7 +347,7 @@ exports[`tile g wide 1`] = `
         <View
           style={
             Object {
-              "marginBottom": 0,
+              "marginBottom": 5,
             }
           }
         >
@@ -362,7 +365,8 @@ exports[`tile g wide 1`] = `
               "color": "#333333",
               "fontFamily": "TimesModern-Bold",
               "fontSize": 20,
-              "fontWeight": "900",
+              "fontWeight": "400",
+              "includeFontPadding": false,
               "lineHeight": 20,
               "marginBottom": 5,
             }
@@ -441,7 +445,7 @@ exports[`tile g without breakpoint should be like small 1`] = `
         <View
           style={
             Object {
-              "marginBottom": 0,
+              "marginBottom": 5,
             }
           }
         >
@@ -458,9 +462,10 @@ exports[`tile g without breakpoint should be like small 1`] = `
             Object {
               "color": "#333333",
               "fontFamily": "TimesModern-Bold",
-              "fontSize": 22,
-              "fontWeight": "900",
-              "lineHeight": 22,
+              "fontSize": 20,
+              "fontWeight": "400",
+              "includeFontPadding": false,
+              "lineHeight": 20,
               "marginBottom": 0,
             }
           }

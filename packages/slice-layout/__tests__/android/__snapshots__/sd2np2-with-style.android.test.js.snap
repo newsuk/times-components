@@ -11,7 +11,6 @@ exports[`1. secondary two no pic and two - small 1`] = `
         "borderBottomWidth": 1,
         "borderColor": "#DBDBDB",
         "borderStyle": "solid",
-        "marginHorizontal": 10,
       }
     }
   />
@@ -24,7 +23,6 @@ exports[`1. secondary two no pic and two - small 1`] = `
         "borderBottomWidth": 1,
         "borderColor": "#DBDBDB",
         "borderStyle": "solid",
-        "marginHorizontal": 10,
       }
     }
   />
@@ -37,7 +35,6 @@ exports[`1. secondary two no pic and two - small 1`] = `
         "borderBottomWidth": 1,
         "borderColor": "#DBDBDB",
         "borderStyle": "solid",
-        "marginHorizontal": 10,
       }
     }
   />
@@ -103,7 +100,6 @@ exports[`2. secondary two no pic and two - medium 1`] = `
         "borderBottomWidth": 1,
         "borderColor": "#DBDBDB",
         "borderStyle": "solid",
-        "marginHorizontal": 10,
       }
     }
   />
@@ -230,7 +226,6 @@ exports[`3. secondary two no pic and two - wide 1`] = `
           "borderBottomWidth": 1,
           "borderColor": "#DBDBDB",
           "borderStyle": "solid",
-          "marginHorizontal": 10,
         }
       }
     />
@@ -319,7 +314,6 @@ exports[`4. secondary two no pic and two - huge 1`] = `
           "borderBottomWidth": 1,
           "borderColor": "#DBDBDB",
           "borderStyle": "solid",
-          "marginHorizontal": 10,
         }
       }
     />

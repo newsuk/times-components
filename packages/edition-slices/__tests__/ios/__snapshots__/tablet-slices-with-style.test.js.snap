@@ -263,7 +263,6 @@ exports[`5. lead two no pic and two - medium 1`] = `
             "borderBottomWidth": 1,
             "borderColor": "#DBDBDB",
             "borderStyle": "solid",
-            "marginHorizontal": 10,
           }
         }
       />
@@ -293,7 +292,6 @@ exports[`5. lead two no pic and two - medium 1`] = `
             "borderBottomWidth": 1,
             "borderColor": "#DBDBDB",
             "borderStyle": "solid",
-            "marginHorizontal": 10,
           }
         }
       />
@@ -547,7 +545,6 @@ exports[`7. secondary one and four - medium 1`] = `
               "borderBottomWidth": 1,
               "borderColor": "#4D4D4D",
               "borderStyle": "solid",
-              "marginHorizontal": 10,
             }
           }
         />
@@ -691,7 +688,6 @@ exports[`9. secondary four - medium 1`] = `
             "borderBottomWidth": 1,
             "borderColor": "#DBDBDB",
             "borderStyle": "solid",
-            "marginHorizontal": 10,
           }
         }
       />
@@ -817,7 +813,6 @@ exports[`11. secondary two and two - medium 1`] = `
           "borderBottomWidth": 1,
           "borderColor": "#DBDBDB",
           "borderStyle": "solid",
-          "marginHorizontal": 10,
         }
       }
     />
@@ -917,7 +912,6 @@ exports[`12. lead one and four slice - medium 1`] = `
             "borderBottomWidth": 1,
             "borderColor": "#DBDBDB",
             "borderStyle": "solid",
-            "marginHorizontal": 10,
           }
         }
       />
@@ -928,7 +922,6 @@ exports[`12. lead one and four slice - medium 1`] = `
             "borderBottomWidth": 1,
             "borderColor": "#DBDBDB",
             "borderStyle": "solid",
-            "marginHorizontal": 10,
           }
         }
       />
@@ -939,7 +932,6 @@ exports[`12. lead one and four slice - medium 1`] = `
             "borderBottomWidth": 1,
             "borderColor": "#DBDBDB",
             "borderStyle": "solid",
-            "marginHorizontal": 10,
           }
         }
       />
@@ -977,7 +969,6 @@ exports[`13. standard slice - medium 1`] = `
             "borderBottomWidth": 1,
             "borderColor": "#DBDBDB",
             "borderStyle": "solid",
-            "marginHorizontal": 10,
           }
         }
       />
@@ -988,7 +979,6 @@ exports[`13. standard slice - medium 1`] = `
             "borderBottomWidth": 1,
             "borderColor": "#DBDBDB",
             "borderStyle": "solid",
-            "marginHorizontal": 10,
           }
         }
       />
@@ -999,7 +989,6 @@ exports[`13. standard slice - medium 1`] = `
             "borderBottomWidth": 1,
             "borderColor": "#DBDBDB",
             "borderStyle": "solid",
-            "marginHorizontal": 10,
           }
         }
       />
@@ -1010,7 +999,6 @@ exports[`13. standard slice - medium 1`] = `
             "borderBottomWidth": 1,
             "borderColor": "#DBDBDB",
             "borderStyle": "solid",
-            "marginHorizontal": 10,
           }
         }
       />
@@ -1082,7 +1070,6 @@ exports[`14. secondary two no pic and two - medium 1`] = `
           "borderBottomWidth": 1,
           "borderColor": "#DBDBDB",
           "borderStyle": "solid",
-          "marginHorizontal": 10,
         }
       }
     />
@@ -1237,7 +1224,6 @@ exports[`15. list two and six no pic - medium 1`] = `
             "borderBottomWidth": 1,
             "borderColor": "#DBDBDB",
             "borderStyle": "solid",
-            "marginHorizontal": 10,
           }
         }
       />
@@ -1284,7 +1270,6 @@ exports[`15. list two and six no pic - medium 1`] = `
             "borderBottomWidth": 1,
             "borderColor": "#DBDBDB",
             "borderStyle": "solid",
-            "marginHorizontal": 10,
           }
         }
       />
@@ -1645,7 +1630,6 @@ exports[`21. lead two no pic and two - wide 1`] = `
             "borderBottomWidth": 1,
             "borderColor": "#DBDBDB",
             "borderStyle": "solid",
-            "marginHorizontal": 10,
           }
         }
       />
@@ -1940,7 +1924,6 @@ exports[`23. secondary one and four - wide 1`] = `
               "borderBottomWidth": 1,
               "borderColor": "#4D4D4D",
               "borderStyle": "solid",
-              "marginHorizontal": 10,
             }
           }
         />
@@ -2084,7 +2067,6 @@ exports[`25. secondary four - wide 1`] = `
             "borderBottomWidth": 1,
             "borderColor": "#DBDBDB",
             "borderStyle": "solid",
-            "marginHorizontal": 10,
           }
         }
       />
@@ -2291,7 +2273,6 @@ exports[`28. lead one and four slice - wide 1`] = `
             "borderBottomWidth": 1,
             "borderColor": "#DBDBDB",
             "borderStyle": "solid",
-            "marginHorizontal": 10,
           }
         }
       />
@@ -2302,7 +2283,6 @@ exports[`28. lead one and four slice - wide 1`] = `
             "borderBottomWidth": 1,
             "borderColor": "#DBDBDB",
             "borderStyle": "solid",
-            "marginHorizontal": 10,
           }
         }
       />
@@ -2313,7 +2293,6 @@ exports[`28. lead one and four slice - wide 1`] = `
             "borderBottomWidth": 1,
             "borderColor": "#DBDBDB",
             "borderStyle": "solid",
-            "marginHorizontal": 10,
           }
         }
       />
@@ -2351,7 +2330,6 @@ exports[`29. standard slice - wide 1`] = `
             "borderBottomWidth": 1,
             "borderColor": "#DBDBDB",
             "borderStyle": "solid",
-            "marginHorizontal": 10,
           }
         }
       />
@@ -2362,7 +2340,6 @@ exports[`29. standard slice - wide 1`] = `
             "borderBottomWidth": 1,
             "borderColor": "#DBDBDB",
             "borderStyle": "solid",
-            "marginHorizontal": 10,
           }
         }
       />
@@ -2373,7 +2350,6 @@ exports[`29. standard slice - wide 1`] = `
             "borderBottomWidth": 1,
             "borderColor": "#DBDBDB",
             "borderStyle": "solid",
-            "marginHorizontal": 10,
           }
         }
       />
@@ -2384,7 +2360,6 @@ exports[`29. standard slice - wide 1`] = `
             "borderBottomWidth": 1,
             "borderColor": "#DBDBDB",
             "borderStyle": "solid",
-            "marginHorizontal": 10,
           }
         }
       />
@@ -2476,7 +2451,6 @@ exports[`30. secondary two no pic and two - wide 1`] = `
             "borderBottomWidth": 1,
             "borderColor": "#DBDBDB",
             "borderStyle": "solid",
-            "marginHorizontal": 10,
           }
         }
       />
@@ -2595,7 +2569,6 @@ exports[`31. list two and six no pic - wide 1`] = `
             "borderBottomWidth": 1,
             "borderColor": "#DBDBDB",
             "borderStyle": "solid",
-            "marginHorizontal": 10,
           }
         }
       />
@@ -2642,7 +2615,6 @@ exports[`31. list two and six no pic - wide 1`] = `
             "borderBottomWidth": 1,
             "borderColor": "#DBDBDB",
             "borderStyle": "solid",
-            "marginHorizontal": 10,
           }
         }
       />
@@ -3052,7 +3024,6 @@ exports[`37. lead two no pic and two - huge 1`] = `
               "borderBottomWidth": 1,
               "borderColor": "#DBDBDB",
               "borderStyle": "solid",
-              "marginHorizontal": 10,
             }
           }
         />
@@ -3367,7 +3338,6 @@ exports[`39. secondary one and four - huge 1`] = `
                 "borderBottomWidth": 1,
                 "borderColor": "#4D4D4D",
                 "borderStyle": "solid",
-                "marginHorizontal": 10,
               }
             }
           />
@@ -3531,7 +3501,6 @@ exports[`41. secondary four - huge 1`] = `
               "borderBottomWidth": 1,
               "borderColor": "#DBDBDB",
               "borderStyle": "solid",
-              "marginHorizontal": 10,
             }
           }
         />
@@ -3768,7 +3737,6 @@ exports[`44. lead one and four slice - huge 1`] = `
               "borderBottomWidth": 1,
               "borderColor": "#DBDBDB",
               "borderStyle": "solid",
-              "marginHorizontal": 10,
             }
           }
         />
@@ -3779,7 +3747,6 @@ exports[`44. lead one and four slice - huge 1`] = `
               "borderBottomWidth": 1,
               "borderColor": "#DBDBDB",
               "borderStyle": "solid",
-              "marginHorizontal": 10,
             }
           }
         />
@@ -3790,7 +3757,6 @@ exports[`44. lead one and four slice - huge 1`] = `
               "borderBottomWidth": 1,
               "borderColor": "#DBDBDB",
               "borderStyle": "solid",
-              "marginHorizontal": 10,
             }
           }
         />
@@ -3838,7 +3804,6 @@ exports[`45. standard slice - huge 1`] = `
               "borderBottomWidth": 1,
               "borderColor": "#DBDBDB",
               "borderStyle": "solid",
-              "marginHorizontal": 10,
             }
           }
         />
@@ -3849,7 +3814,6 @@ exports[`45. standard slice - huge 1`] = `
               "borderBottomWidth": 1,
               "borderColor": "#DBDBDB",
               "borderStyle": "solid",
-              "marginHorizontal": 10,
             }
           }
         />
@@ -3860,7 +3824,6 @@ exports[`45. standard slice - huge 1`] = `
               "borderBottomWidth": 1,
               "borderColor": "#DBDBDB",
               "borderStyle": "solid",
-              "marginHorizontal": 10,
             }
           }
         />
@@ -3871,7 +3834,6 @@ exports[`45. standard slice - huge 1`] = `
               "borderBottomWidth": 1,
               "borderColor": "#DBDBDB",
               "borderStyle": "solid",
-              "marginHorizontal": 10,
             }
           }
         />
@@ -3973,7 +3935,6 @@ exports[`46. secondary two no pic and two - huge 1`] = `
               "borderBottomWidth": 1,
               "borderColor": "#DBDBDB",
               "borderStyle": "solid",
-              "marginHorizontal": 10,
             }
           }
         />
@@ -4102,7 +4063,6 @@ exports[`47. list two and six no pic - huge 1`] = `
               "borderBottomWidth": 1,
               "borderColor": "#DBDBDB",
               "borderStyle": "solid",
-              "marginHorizontal": 10,
             }
           }
         />
@@ -4149,7 +4109,6 @@ exports[`47. list two and six no pic - huge 1`] = `
               "borderBottomWidth": 1,
               "borderColor": "#DBDBDB",
               "borderStyle": "solid",
-              "marginHorizontal": 10,
             }
           }
         />

@@ -9,9 +9,7 @@ exports[`tile c without breakpoint 1`] = `
 .S2 {
   color: rgba(51,51,51,1.00);
   font-family: TimesModern-Bold;
-  font-size: 22px;
   font-weight: 400;
-  margin-bottom: 5px;
 }
 
 .IS1 {
@@ -20,11 +18,16 @@ exports[`tile c without breakpoint 1`] = `
 }
 
 .IS2 {
-  line-height: 22px;
-  padding-bottom: 5px;
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 10px;
 }
 
 .IS3 {
+  margin-bottom: 10px;
+}
+
+.IS4 {
   -webkit-flex-grow: 1;
   flex-grow: 1;
   -webkit-flex-shrink: 1;
@@ -57,7 +60,7 @@ exports[`tile c without breakpoint 1`] = `
     />
   </div>
   <div
-    className="css-view-1dbjc4n IS3"
+    className="css-view-1dbjc4n IS4"
   >
     <div
       className="css-view-1dbjc4n r-marginBottom-p1pxzi S1"
@@ -70,12 +73,13 @@ exports[`tile c without breakpoint 1`] = `
     </div>
     <h3
       aria-level="3"
-      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
+      className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontWeight-16dba41 IS2 S2"
       role="heading"
     >
       This is tile headline
     </h3>
     <ArticleFlags
+      className="IS3"
       flags={
         Array [
           Object {

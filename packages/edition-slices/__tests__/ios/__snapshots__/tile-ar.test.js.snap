@@ -37,7 +37,7 @@ exports[`tile ar huge 1`] = `
         <View
           style={
             Object {
-              "marginBottom": 0,
+              "marginBottom": 5,
             }
           }
         >
@@ -55,7 +55,8 @@ exports[`tile ar huge 1`] = `
               "color": "#333333",
               "fontFamily": "TimesModern-Bold",
               "fontSize": 22,
-              "fontWeight": "900",
+              "fontWeight": "400",
+              "includeFontPadding": false,
               "lineHeight": 22,
               "marginBottom": 5,
             }
@@ -136,7 +137,7 @@ exports[`tile ar medium 1`] = `
         <View
           style={
             Object {
-              "marginBottom": 0,
+              "marginBottom": 5,
             }
           }
         >
@@ -154,7 +155,8 @@ exports[`tile ar medium 1`] = `
               "color": "#333333",
               "fontFamily": "TimesModern-Bold",
               "fontSize": 20,
-              "fontWeight": "900",
+              "fontWeight": "400",
+              "includeFontPadding": false,
               "lineHeight": 20,
               "marginBottom": 5,
             }
@@ -235,7 +237,7 @@ exports[`tile ar wide 1`] = `
         <View
           style={
             Object {
-              "marginBottom": 0,
+              "marginBottom": 5,
             }
           }
         >
@@ -253,7 +255,8 @@ exports[`tile ar wide 1`] = `
               "color": "#333333",
               "fontFamily": "TimesModern-Bold",
               "fontSize": 20,
-              "fontWeight": "900",
+              "fontWeight": "400",
+              "includeFontPadding": false,
               "lineHeight": 20,
               "marginBottom": 5,
             }
@@ -334,7 +337,7 @@ exports[`tile ar without breakpoint should be like medium 1`] = `
         <View
           style={
             Object {
-              "marginBottom": 0,
+              "marginBottom": 5,
             }
           }
         >
@@ -352,7 +355,8 @@ exports[`tile ar without breakpoint should be like medium 1`] = `
               "color": "#333333",
               "fontFamily": "TimesModern-Bold",
               "fontSize": 20,
-              "fontWeight": "900",
+              "fontWeight": "400",
+              "includeFontPadding": false,
               "lineHeight": 20,
               "marginBottom": 5,
             }

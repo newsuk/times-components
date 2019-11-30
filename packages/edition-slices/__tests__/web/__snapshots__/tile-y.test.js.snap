@@ -38,7 +38,7 @@ exports[`tile y huge 1`] = `
 <Link
   linkStyle={
     Object {
-      "paddingBottom": "15px",
+      "paddingBottom": "20px",
       "paddingHorizontal": "10px",
       "paddingTop": "10px",
     }
@@ -127,7 +127,7 @@ exports[`tile y medium 1`] = `
 <Link
   linkStyle={
     Object {
-      "paddingBottom": "15px",
+      "paddingBottom": "20px",
       "paddingHorizontal": "10px",
       "paddingTop": "10px",
     }
@@ -216,7 +216,7 @@ exports[`tile y wide 1`] = `
 <Link
   linkStyle={
     Object {
-      "paddingBottom": "15px",
+      "paddingBottom": "20px",
       "paddingHorizontal": "10px",
       "paddingTop": "10px",
     }
@@ -305,7 +305,7 @@ exports[`tile y without breakpoint should be like medium 1`] = `
 <Link
   linkStyle={
     Object {
-      "paddingBottom": "15px",
+      "paddingBottom": "20px",
       "paddingHorizontal": "10px",
       "paddingTop": "10px",
     }

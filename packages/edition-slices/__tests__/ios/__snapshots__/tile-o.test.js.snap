@@ -21,7 +21,7 @@ exports[`tile n huge 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 0,
+          "marginBottom": 5,
         }
       }
     >
@@ -39,7 +39,8 @@ exports[`tile n huge 1`] = `
           "color": "#FFFFFF",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 22,
-          "fontWeight": "900",
+          "fontWeight": "400",
+          "includeFontPadding": false,
           "lineHeight": 22,
           "marginBottom": 5,
           "marginTop": 5,
@@ -84,7 +85,7 @@ exports[`tile n medium 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 0,
+          "marginBottom": 5,
         }
       }
     >
@@ -102,7 +103,8 @@ exports[`tile n medium 1`] = `
           "color": "#FFFFFF",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 18,
-          "fontWeight": "900",
+          "fontWeight": "400",
+          "includeFontPadding": false,
           "lineHeight": 18,
           "marginBottom": 5,
           "marginTop": 0,
@@ -149,7 +151,7 @@ exports[`tile n small 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 0,
+          "marginBottom": 5,
         }
       }
     >
@@ -167,7 +169,8 @@ exports[`tile n small 1`] = `
           "color": "#FFFFFF",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 18,
-          "fontWeight": "900",
+          "fontWeight": "400",
+          "includeFontPadding": false,
           "lineHeight": 18,
           "marginBottom": 11,
         }
@@ -211,7 +214,7 @@ exports[`tile n wide 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 0,
+          "marginBottom": 5,
         }
       }
     >
@@ -229,7 +232,8 @@ exports[`tile n wide 1`] = `
           "color": "#FFFFFF",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 20,
-          "fontWeight": "900",
+          "fontWeight": "400",
+          "includeFontPadding": false,
           "lineHeight": 20,
           "marginBottom": 5,
           "marginTop": 0,
@@ -276,7 +280,7 @@ exports[`tile n with default star 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 0,
+          "marginBottom": 5,
         }
       }
     >
@@ -294,7 +298,8 @@ exports[`tile n with default star 1`] = `
           "color": "#FFFFFF",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 18,
-          "fontWeight": "900",
+          "fontWeight": "400",
+          "includeFontPadding": false,
           "lineHeight": 18,
           "marginBottom": 11,
         }

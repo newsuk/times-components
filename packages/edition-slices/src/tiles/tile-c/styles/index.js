@@ -7,9 +7,9 @@ const styles = {
   },
   headline: {
     fontFamily: fonts.headline,
-    fontSize: 22,
-    lineHeight: 22,
-    paddingBottom: spacing(1)
+    fontSize: 20,
+    lineHeight: 20,
+    marginBottom: spacing(2)
   },
   imageContainer: {
     marginBottom: spacing(2),
@@ -17,6 +17,9 @@ const styles = {
   },
   summaryContainer: {
     flex: 1
+  },
+  flags: {
+    marginBottom: spacing(2)
   }
 };
 

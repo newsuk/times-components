@@ -86,8 +86,6 @@ Array [
         "borderRightStyle": "solid",
         "borderTopColor": "rgba(219,219,219,1.00)",
         "borderTopStyle": "solid",
-        "marginLeft": "10px",
-        "marginRight": "10px",
       }
     }
   />,
@@ -112,8 +110,6 @@ Array [
           "borderRightStyle": "solid",
           "borderTopColor": "rgba(219,219,219,1.00)",
           "borderTopStyle": "solid",
-          "marginLeft": "10px",
-          "marginRight": "10px",
         }
       }
     />
@@ -135,8 +131,6 @@ Array [
           "borderRightStyle": "solid",
           "borderTopColor": "rgba(219,219,219,1.00)",
           "borderTopStyle": "solid",
-          "marginLeft": "10px",
-          "marginRight": "10px",
         }
       }
     />
@@ -158,8 +152,6 @@ Array [
           "borderRightStyle": "solid",
           "borderTopColor": "rgba(219,219,219,1.00)",
           "borderTopStyle": "solid",
-          "marginLeft": "10px",
-          "marginRight": "10px",
         }
       }
     />
@@ -181,8 +173,6 @@ Array [
           "borderRightStyle": "solid",
           "borderTopColor": "rgba(219,219,219,1.00)",
           "borderTopStyle": "solid",
-          "marginLeft": "10px",
-          "marginRight": "10px",
         }
       }
     />
@@ -204,8 +194,6 @@ Array [
           "borderRightStyle": "solid",
           "borderTopColor": "rgba(219,219,219,1.00)",
           "borderTopStyle": "solid",
-          "marginLeft": "10px",
-          "marginRight": "10px",
         }
       }
     />
@@ -417,8 +405,6 @@ exports[`2. list two and six no pic - medium 1`] = `
           "borderRightStyle": "solid",
           "borderTopColor": "rgba(219,219,219,1.00)",
           "borderTopStyle": "solid",
-          "marginLeft": "10px",
-          "marginRight": "10px",
         }
       }
     />
@@ -504,8 +490,6 @@ exports[`2. list two and six no pic - medium 1`] = `
           "borderRightStyle": "solid",
           "borderTopColor": "rgba(219,219,219,1.00)",
           "borderTopStyle": "solid",
-          "marginLeft": "10px",
-          "marginRight": "10px",
         }
       }
     />
@@ -781,8 +765,6 @@ exports[`3. list two and six no pic - wide 1`] = `
           "borderRightStyle": "solid",
           "borderTopColor": "rgba(219,219,219,1.00)",
           "borderTopStyle": "solid",
-          "marginLeft": "10px",
-          "marginRight": "10px",
         }
       }
     />
@@ -868,8 +850,6 @@ exports[`3. list two and six no pic - wide 1`] = `
           "borderRightStyle": "solid",
           "borderTopColor": "rgba(219,219,219,1.00)",
           "borderTopStyle": "solid",
-          "marginLeft": "10px",
-          "marginRight": "10px",
         }
       }
     />
@@ -1145,8 +1125,6 @@ exports[`4. list two and six no pic - huge 1`] = `
           "borderRightStyle": "solid",
           "borderTopColor": "rgba(219,219,219,1.00)",
           "borderTopStyle": "solid",
-          "marginLeft": "10px",
-          "marginRight": "10px",
         }
       }
     />
@@ -1232,8 +1210,6 @@ exports[`4. list two and six no pic - huge 1`] = `
           "borderRightStyle": "solid",
           "borderTopColor": "rgba(219,219,219,1.00)",
           "borderTopStyle": "solid",
-          "marginLeft": "10px",
-          "marginRight": "10px",
         }
       }
     />

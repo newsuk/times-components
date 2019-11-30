@@ -5,7 +5,8 @@ const styles = {
     fontFamily: fonts.headline,
     fontSize: 35,
     lineHeight: 35,
-    marginBottom: spacing(2),
+    includeFontPadding: false,
+    marginBottom: spacing(1),
     textAlign: "center"
   },
   imageContainer: {

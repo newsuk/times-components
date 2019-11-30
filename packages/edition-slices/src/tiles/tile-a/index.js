@@ -26,6 +26,7 @@ const TileA = ({ onPress, tile }) => {
         headlineStyle={styles.headline}
         style={styles.summaryContainer}
         tile={tile}
+        flagsStyle={styles.flags}
       />
       <TileImage
         aspectRatio={16 / 9}
