@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
   ...sharedStyles,
   headline: {
     ...sharedStyles.headline,
-    fontWeight: "400",
+    fontWeight: "bold",
     marginBottom: spacing(1),
     includeFontPadding: false
   },

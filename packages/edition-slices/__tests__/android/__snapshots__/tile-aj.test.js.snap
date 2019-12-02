@@ -29,7 +29,7 @@ exports[`tile aj without breakpoint 1`] = `
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 25,
-          "fontWeight": "400",
+          "fontWeight": "bold",
           "includeFontPadding": false,
           "lineHeight": 25,
           "marginBottom": 5,
