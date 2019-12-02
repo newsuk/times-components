@@ -32,7 +32,7 @@ exports[`tile a without breakpoint 1`] = `
           "color": "#333333",
           "fontFamily": "TimesModern-Bold",
           "fontSize": 35,
-          "fontWeight": "400",
+          "fontWeight": "900",
           "includeFontPadding": false,
           "lineHeight": 35,
           "marginBottom": 5,

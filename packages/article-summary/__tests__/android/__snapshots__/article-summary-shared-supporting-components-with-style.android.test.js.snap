@@ -9,7 +9,7 @@ exports[`1. article summary headline component 1`] = `
       "color": "black",
       "fontFamily": "TimesModern-Bold",
       "fontSize": 22,
-      "fontWeight": "400",
+      "fontWeight": "900",
       "includeFontPadding": false,
       "lineHeight": 27,
       "marginBottom": 5,
