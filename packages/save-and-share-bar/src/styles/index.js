@@ -31,7 +31,7 @@ const styles = {
       margin-left: ${spacing(1)};
       cursor: pointer;
       border-radius: ${ICON_SIZE}px;
-      
+
       &, > * {
         display: flex;
         align-items: center;
@@ -52,6 +52,12 @@ const styles = {
     alignItems: "center",
     flexDirection: "row",
     height: ICON_SIZE
+  },
+  rowItemRight: {
+    alignItems: "center",
+    flexDirection: "row",
+    height: ICON_SIZE,
+    marginLeft: "auto"
   },
   svgIcon: {
     fb: {
