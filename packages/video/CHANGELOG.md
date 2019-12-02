@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.8.5](https://github.com/newsuk/times-components/compare/@times-components/video@4.8.4...@times-components/video@4.8.5) (2019-12-02)
+
+
+### Bug Fixes
+
+* make summary bold ([#2412](https://github.com/newsuk/times-components/issues/2412)) ([7a933e9](https://github.com/newsuk/times-components/commit/7a933e9f5c86caad530f861f1719318481fac53a))
+
+
+
+
+
 ## [4.8.4](https://github.com/newsuk/times-components/compare/@times-components/video@4.8.3...@times-components/video@4.8.4) (2019-11-28)
 
 **Note:** Version bump only for package @times-components/video
