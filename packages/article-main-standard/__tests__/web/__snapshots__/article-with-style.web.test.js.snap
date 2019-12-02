@@ -363,7 +363,7 @@ exports[`full article with style 1`] = `
 @media (min-width:1024px) {
   .c11 {
     line-height: 18px;
-    padding-bottom: 25px !important;
+    padding-bottom: 10px;
   }
 }
 
