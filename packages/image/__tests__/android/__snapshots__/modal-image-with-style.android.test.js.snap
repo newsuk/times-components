@@ -84,6 +84,7 @@ exports[`1. landscape default modal 1`] = `
                 "borderRadius": 0,
                 "height": "100%",
                 "justifyContent": "center",
+                "overflow": "hidden",
                 "position": "absolute",
                 "width": "100%",
               }
@@ -170,6 +171,7 @@ exports[`1. landscape default modal 1`] = `
           "aspectRatio": 2,
           "backgroundColor": "#EDEDED",
           "borderRadius": 0,
+          "overflow": "hidden",
           "width": "100%",
         }
       }
@@ -288,6 +290,7 @@ exports[`2. portrait default modal 1`] = `
                 "borderRadius": 0,
                 "height": "100%",
                 "justifyContent": "center",
+                "overflow": "hidden",
                 "position": "absolute",
                 "width": "100%",
               }
@@ -374,6 +377,7 @@ exports[`2. portrait default modal 1`] = `
           "aspectRatio": 0.5,
           "backgroundColor": "#EDEDED",
           "borderRadius": 0,
+          "overflow": "hidden",
           "width": "100%",
         }
       }
@@ -492,6 +496,7 @@ exports[`3. tablet landscape default modal 1`] = `
                 "borderRadius": 0,
                 "height": "100%",
                 "justifyContent": "center",
+                "overflow": "hidden",
                 "position": "absolute",
                 "width": "100%",
               }
@@ -578,6 +583,7 @@ exports[`3. tablet landscape default modal 1`] = `
           "aspectRatio": 2,
           "backgroundColor": "#EDEDED",
           "borderRadius": 0,
+          "overflow": "hidden",
           "width": "100%",
         }
       }
@@ -696,6 +702,7 @@ exports[`4. tablet portrait default modal 1`] = `
                 "borderRadius": 0,
                 "height": "100%",
                 "justifyContent": "center",
+                "overflow": "hidden",
                 "position": "absolute",
                 "width": "100%",
               }
@@ -782,6 +789,7 @@ exports[`4. tablet portrait default modal 1`] = `
           "aspectRatio": 0.5,
           "backgroundColor": "#EDEDED",
           "borderRadius": 0,
+          "overflow": "hidden",
           "width": "100%",
         }
       }

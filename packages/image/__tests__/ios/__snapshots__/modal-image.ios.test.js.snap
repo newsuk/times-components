@@ -58,11 +58,11 @@ exports[`1. modal image 1`] = `
               }
             />
             <Image
-              fadeDuration={0}
+              fadeDuration={300}
               resizeMethod="resize"
               source={
                 Object {
-                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=false&resize=1400",
+                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=true",
                 }
               }
             />
@@ -108,11 +108,11 @@ exports[`1. modal image 1`] = `
         }
       />
       <Image
-        fadeDuration={0}
+        fadeDuration={300}
         resizeMethod="resize"
         source={
           Object {
-            "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=false&resize=1400",
+            "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=true",
           }
         }
       />
@@ -294,11 +294,11 @@ exports[`3. modal image with custom highressize 1`] = `
               }
             />
             <Image
-              fadeDuration={0}
+              fadeDuration={300}
               resizeMethod="resize"
               source={
                 Object {
-                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=false&resize=1400",
+                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=true",
                 }
               }
             />
@@ -344,11 +344,11 @@ exports[`3. modal image with custom highressize 1`] = `
         }
       />
       <Image
-        fadeDuration={0}
+        fadeDuration={300}
         resizeMethod="resize"
         source={
           Object {
-            "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=false&resize=1400",
+            "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=true",
           }
         }
       />

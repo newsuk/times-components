@@ -36,7 +36,14 @@ test('Image loads high-res', async () => {
     }
   });
   await act(async () => {
-    jest.runAllImmediates();
+    await jest.runAllImmediates();
+  });
+  const images = component.root.findAllByType(Image);
+  images.forEach(
+    image => 'onLoadEnd' in image.props && image.props.onLoadEnd()
+  );
+  await act(async () => {
+    await jest.runAllImmediates();
   });
   expect(component).toMatchSnapshot();
 });
@@ -61,30 +68,17 @@ test('Image calls onlayout', async () => {
 });
 
 test('Image gracefully handles bad high-res url', async () => {
-  const oldGetSize = Image.getSize;
-  Image.getSize = (
-    _: string,
-    __: (width: number, height: number) => void,
-    failure: (error: any) => void
-  ) => failure('error');
-
   const onError = jest.fn();
 
   const component = create(<ResponsiveImage uri={testUri} onError={onError} />);
 
-  const image = component.root.findByType(ImageBackground);
-  image.props.onLayout({
-    nativeEvent: {
-      layout: {
-        width: 500
-      }
-    }
-  });
   await act(async () => {
     jest.runAllImmediates();
   });
 
-  Image.getSize = oldGetSize;
+  const images = component.root.findAllByType(Image);
+  images.forEach(image => 'onError' in image.props && image.props.onError());
 
-  expect(onError).toHaveBeenCalledTimes(2);
+  expect(onError).toHaveBeenCalledTimes(1);
+  expect(component).toMatchSnapshot();
 });
