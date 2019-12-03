@@ -1,5 +1,11 @@
 import * as React from 'react';
-import { Image, ImageBackground, ImageStyle, PixelRatio } from 'react-native';
+import {
+  Image,
+  ImageBackground,
+  ImageSourcePropType,
+  ImageStyle,
+  PixelRatio
+} from 'react-native';
 import Url from 'url-parse';
 import logoPath from '../assets/t.png';
 import styles from './styles';
@@ -9,17 +15,52 @@ interface ResponsiveImageProps {
   readonly onImagePress?: () => void;
   readonly caption?: JSX.Element;
   readonly uri: string;
-  relativeHeight?: number;
-  relativeHorizontalOffset?: number;
-  relativeVerticalOffset?: number;
-  relativeWidth?: number;
-  resizeMode?: ImageStyle['resizeMode'];
-  rounded?: boolean;
-  style?: any;
-  onLayout?: (ev: any) => {};
-  onError?: () => {};
-  disablePlaceholder?: boolean;
+  readonly relativeHeight?: number;
+  readonly relativeHorizontalOffset?: number;
+  readonly relativeVerticalOffset?: number;
+  readonly relativeWidth?: number;
+  readonly resizeMode?: ImageStyle['resizeMode'];
+  readonly rounded?: boolean;
+  readonly style?: any;
+  readonly onLayout?: (ev: any) => {};
+  readonly onError?: () => void;
+  readonly disablePlaceholder?: boolean;
 }
+
+interface ElementProps {
+  readonly source: ImageSourcePropType;
+  readonly onLoadEnd?: () => void;
+  readonly aspectRatio?: ResponsiveImageProps['aspectRatio'];
+  readonly borderRadius: number;
+  readonly resize: ImageStyle['resizeMode'];
+  readonly fadeDuration: number;
+  readonly onError?: () => void;
+}
+
+const ImageElement = ({
+  source,
+  onLoadEnd,
+  aspectRatio,
+  borderRadius,
+  resize,
+  fadeDuration,
+  onError
+}: ElementProps) => (
+  <Image
+    fadeDuration={fadeDuration}
+    source={source}
+    onLoadEnd={onLoadEnd}
+    resizeMethod={'resize'}
+    onError={onError}
+    style={[
+      { aspectRatio },
+      { borderRadius },
+      styles.imageStyle,
+      { resizeMode: resize },
+      { borderRadius }
+    ]}
+  />
+);
 
 const ResponsiveImage = (props: ResponsiveImageProps) => {
   const {
@@ -55,71 +96,59 @@ const ResponsiveImage = (props: ResponsiveImageProps) => {
     url.query.offline = 'true';
   }
   const offlineUrl = url.toString();
-
-  const [onlineUrl, setHighResLoaded] = React.useState('');
-
-  const source = onlineUrl ? { uri: onlineUrl } : { uri: offlineUrl };
+  const [width, setWidth] = React.useState(0);
+  const ratio = PixelRatio.get();
+  url.query.resize = (width * ratio).toString();
+  url.query.offline = 'false';
+  const onlineUrl = url.toString();
+  const [loaded, setLoaded] = React.useState(false);
+  const [showOffline, setShowOffline] = React.useState(true);
 
   const imageRef = React.useCallback(event => {
-    const { width } = event.nativeEvent.layout;
-    const ratio = PixelRatio.get();
-    url.query.resize = (width * ratio).toString();
-    url.query.offline = 'false';
-    const widthUrl = url.toString();
+    const { width: layoutWidth } = event.nativeEvent.layout;
+    setWidth(layoutWidth);
     if (onLayout) {
       onLayout(event);
     }
-    Image.getSize(
-      widthUrl,
-      () => {
-        setHighResLoaded(widthUrl);
-      },
-      () => {
-        if (onError) {
-          onError();
-        }
-      }
-    );
   }, []);
 
-  const [resize, setRezize] = React.useState(
-    undefined as ImageStyle['resizeMode']
-  );
-  React.useEffect(() => {
-    Image.getSize(
-      offlineUrl,
-      () => {
-        if (resizeMode) {
-          setRezize(resizeMode);
-        } else {
-          setRezize('cover');
-        }
-      },
-      () => {
-        if (onError) {
-          onError();
-        }
-      }
-    );
-  }, []);
+  const loadHighRes = () => {
+    setLoaded(true);
+  };
 
-  const image = (
-    <Image
-      fadeDuration={onlineUrl ? 0 : 300}
-      source={source}
-      resizeMethod={'resize'}
-      style={[
-        { aspectRatio },
-        { borderRadius },
-        styles.imageStyle,
-        { resizeMode: resize },
-        { borderRadius }
-      ]}
+  const hideLowRes = () => {
+    setShowOffline(false);
+  };
+
+  const resize = resizeMode || 'cover';
+
+  const highRes = loaded && (
+    <ImageElement
+      source={{ uri: onlineUrl }}
+      onLoadEnd={hideLowRes}
+      aspectRatio={aspectRatio}
+      borderRadius={borderRadius}
+      onError={onError}
+      resize={resize}
+      fadeDuration={0}
     />
   );
+  const lowRes =
+    (disablePlaceholder ||
+    showOffline) && (
+      <ImageElement
+        source={{ uri: offlineUrl }}
+        onLoadEnd={!disablePlaceholder ? loadHighRes : undefined}
+        aspectRatio={aspectRatio}
+        borderRadius={borderRadius}
+        onError={onError}
+        resize={resize}
+        fadeDuration={300}
+      />
+    );
 
   if (disablePlaceholder) {
-    return image;
+    return <React.Fragment>{[lowRes, highRes].filter(Boolean)}</React.Fragment>;
   }
 
   return (
@@ -133,7 +162,8 @@ const ResponsiveImage = (props: ResponsiveImageProps) => {
       ]}
       style={[styles.style, propStyle, { aspectRatio }, { borderRadius }]}
     >
-      {image}
+      {lowRes}
+      {highRes}
     </ImageBackground>
   );
 };

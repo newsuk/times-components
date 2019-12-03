@@ -1,14 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Image handles no uri 1`] = `null`;
-
-exports[`Image loads high-res 1`] = `
+exports[`Image gracefully handles bad high-res url 1`] = `
 <View
   accessibilityIgnoresInvertColors={true}
   style={
     Array [
       Object {
         "backgroundColor": "#EDEDED",
+        "overflow": "hidden",
         "width": "100%",
       },
       undefined,
@@ -56,7 +55,138 @@ exports[`Image loads high-res 1`] = `
     }
   />
   <Image
+    fadeDuration={300}
+    onError={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": undefined,
+          },
+        ],
+      }
+    }
+    onLoadEnd={[Function]}
+    resizeMethod="resize"
+    source={
+      Object {
+        "uri": "http://foo.com/bar.png?rel_width=1&rel_height=1&offline=true",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "aspectRatio": undefined,
+        },
+        Object {
+          "borderRadius": 0,
+        },
+        Object {
+          "width": "100%",
+        },
+        Object {
+          "resizeMode": "cover",
+        },
+        Object {
+          "borderRadius": 0,
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`Image handles no uri 1`] = `null`;
+
+exports[`Image loads high-res 1`] = `
+<View
+  accessibilityIgnoresInvertColors={true}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#EDEDED",
+        "overflow": "hidden",
+        "width": "100%",
+      },
+      undefined,
+      Object {
+        "aspectRatio": undefined,
+      },
+      Object {
+        "borderRadius": 0,
+      },
+    ]
+  }
+>
+  <Image
+    onLayout={[Function]}
+    source={
+      Object {
+        "testUri": "../../../packages/responsive-image/assets/t.png",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+        Object {
+          "height": undefined,
+          "width": undefined,
+        },
+        Array [
+          Object {
+            "width": "100%",
+          },
+          Object {
+            "resizeMode": "center",
+          },
+          Object {
+            "borderRadius": 0,
+          },
+        ],
+      ]
+    }
+  />
+  <Image
+    fadeDuration={300}
+    onLoadEnd={[Function]}
+    resizeMethod="resize"
+    source={
+      Object {
+        "uri": "http://foo.com/bar.png?rel_width=1&rel_height=1&offline=true",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "aspectRatio": undefined,
+        },
+        Object {
+          "borderRadius": 0,
+        },
+        Object {
+          "width": "100%",
+        },
+        Object {
+          "resizeMode": "cover",
+        },
+        Object {
+          "borderRadius": 0,
+        },
+      ]
+    }
+  />
+  <Image
     fadeDuration={0}
+    onLoadEnd={[Function]}
     resizeMethod="resize"
     source={
       Object {
@@ -93,6 +223,7 @@ exports[`Image renders 1`] = `
     Array [
       Object {
         "backgroundColor": "#EDEDED",
+        "overflow": "hidden",
         "width": "100%",
       },
       undefined,
@@ -141,6 +272,7 @@ exports[`Image renders 1`] = `
   />
   <Image
     fadeDuration={300}
+    onLoadEnd={[Function]}
     resizeMethod="resize"
     source={
       Object {
@@ -159,7 +291,7 @@ exports[`Image renders 1`] = `
           "width": "100%",
         },
         Object {
-          "resizeMode": undefined,
+          "resizeMode": "cover",
         },
         Object {
           "borderRadius": 0,
@@ -177,6 +309,7 @@ exports[`Image respects resizeMode 1`] = `
     Array [
       Object {
         "backgroundColor": "#EDEDED",
+        "overflow": "hidden",
         "width": "100%",
       },
       undefined,
@@ -225,6 +358,7 @@ exports[`Image respects resizeMode 1`] = `
   />
   <Image
     fadeDuration={300}
+    onLoadEnd={[Function]}
     resizeMethod="resize"
     source={
       Object {
@@ -243,7 +377,7 @@ exports[`Image respects resizeMode 1`] = `
           "width": "100%",
         },
         Object {
-          "resizeMode": undefined,
+          "resizeMode": "cover",
         },
         Object {
           "borderRadius": 0,

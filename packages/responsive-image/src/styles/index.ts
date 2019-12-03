@@ -7,6 +7,7 @@ const imageStyle: StyleProp<ImageStyle> = {
 
 const style: StyleProp<ViewStyle> = {
   backgroundColor: colours.functional.backgroundSecondary,
+  overflow: 'hidden',
   width: '100%'
 };
 
