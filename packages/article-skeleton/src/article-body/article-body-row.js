@@ -112,10 +112,10 @@ export default ({
       return new AttributedString(childStr.string, [attr]);
     },
     emphasis(key, attributes, children) {
-      return this.bold(key, attributes, children)
+      return this.bold(key, attributes, children);
     },
     strong(key, attributes, children) {
-      return this.bold(key, attributes, children)
+      return this.bold(key, attributes, children);
     },
     italic(key, attributes, children) {
       const childStr = AttributedString.join(children);
