@@ -136,7 +136,7 @@ const ResponsiveImage = (props: ResponsiveImageProps) => {
 
   const highRes = loaded && (
     <ImageElement
-      key="offline"
+      key="online"
       source={{ uri: onlineUrl }}
       onLoad={hideLowRes}
       aspectRatio={aspectRatio}
@@ -148,7 +148,7 @@ const ResponsiveImage = (props: ResponsiveImageProps) => {
   );
   const lowRes = (disablePlaceholder || showOffline) && (
     <ImageElement
-      key="online"
+      key="offline"
       source={{ uri: offlineUrl }}
       onLoadEnd={!disablePlaceholder ? loadHighRes : undefined}
       aspectRatio={aspectRatio}
