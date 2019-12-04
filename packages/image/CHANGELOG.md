@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.4.51](https://github.com/newsuk/times-components/compare/@times-components/image@6.4.50...@times-components/image@6.4.51) (2019-12-04)
+
+
+### Bug Fixes
+
+* (REPLAT-11001) wait for offline image to load before attempting online load ([#2416](https://github.com/newsuk/times-components/issues/2416)) ([7f4facd](https://github.com/newsuk/times-components/commit/7f4facdd75f6c2a391a993db6b734104d7d08cf5))
+
+
+
+
+
 ## [6.4.50](https://github.com/newsuk/times-components/compare/@times-components/image@6.4.49...@times-components/image@6.4.50) (2019-12-02)
 
 
