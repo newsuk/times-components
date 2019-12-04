@@ -46,6 +46,24 @@ describe("getLeadAsset should", () => {
     expect(getLeadAsset({ leadAsset: null })).toEqual(defaultAsset);
   });
 
+  it("return default values if no crops provided", () => {
+    const leadAssetNoCrop = {
+      caption: null,
+      credits: null,
+      crop11: null,
+      crop23: null,
+      crop32: null,
+      crop45: null,
+      crop169: null,
+      crop1251: null,
+      id: "ab0b986f-d503-4c53-9ed3-b524c73a9936",
+      isVideo: false,
+      title: "no crop"
+    };
+
+    expect(getLeadAsset(leadAssetNoCrop)).toEqual(defaultAsset);
+  });
+
   it("return image lead asset values", () => {
     const testLeadAssetResult = {
       aspectRatio: "16:9",
