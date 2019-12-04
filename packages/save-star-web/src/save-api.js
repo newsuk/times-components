@@ -53,33 +53,36 @@ function onUnsaveMutationUpdate(
 function SaveAPI({ articleId, children }) {
   return (
     <ArticleBookmarked id={articleId} debounceTimeMs={0}>
-      {({ isLoading, article: { isBookmarked = false } = {} }) => (
-        <Mutation mutation={saveBookmarks} update={onSaveMutationUpdate}>
-          {(save, { loading: saveMutationLoading }) => (
-            <Mutation
-              mutation={unsaveBookmarks}
-              update={onUnsaveMutationUpdate}
-            >
-              {(unsave, { loading: unsaveMutationLoading }) =>
-                children({
-                  savedStatus: isBookmarked,
-                  async toggleSaved() {
-                    const args = { variables: { id: articleId } };
+      {({ isLoading, article }) => {
+        const isSaved = article && Boolean(article.isBookmarked);
+        return (
+          <Mutation mutation={saveBookmarks} update={onSaveMutationUpdate}>
+            {(save, { loading: saveMutationLoading }) => (
+              <Mutation
+                mutation={unsaveBookmarks}
+                update={onUnsaveMutationUpdate}
+              >
+                {(unsave, { loading: unsaveMutationLoading }) =>
+                  children({
+                    savedStatus: isSaved,
+                    async toggleSaved() {
+                      const args = { variables: { id: articleId } };
 
-                    if (isBookmarked) {
-                      await unsave(args);
-                    } else {
-                      await save(args);
-                    }
-                  },
-                  isLoading:
-                    isLoading || saveMutationLoading || unsaveMutationLoading
-                })
-              }
-            </Mutation>
-          )}
-        </Mutation>
-      )}
+                      if (isSaved) {
+                        await unsave(args);
+                      } else {
+                        await save(args);
+                      }
+                    },
+                    isLoading:
+                      isLoading || saveMutationLoading || unsaveMutationLoading
+                  })
+                }
+              </Mutation>
+            )}
+          </Mutation>
+        );
+      }}
     </ArticleBookmarked>
   );
 }
