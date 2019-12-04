@@ -6,7 +6,7 @@
   "main": "index.js",
   "engines": {
     "node": ">=8.10.0 <13",
-    "yarn": "1.16.0"
+    "yarn": ">1.16.0"
   },
   "bin": {
     "times-components": "times-components"

@@ -30,6 +30,7 @@ interface ResponsiveImageProps {
 interface ElementProps {
   readonly source: ImageSourcePropType;
   readonly onLoadEnd?: () => void;
+  readonly onLoad?: () => void;
   readonly aspectRatio?: ResponsiveImageProps['aspectRatio'];
   readonly borderRadius: number;
   readonly resize: ImageStyle['resizeMode'];
@@ -40,6 +41,7 @@ interface ElementProps {
 const ImageElement = ({
   source,
   onLoadEnd,
+  onLoad,
   aspectRatio,
   borderRadius,
   resize,
@@ -50,6 +52,7 @@ const ImageElement = ({
     fadeDuration={fadeDuration}
     source={source}
     onLoadEnd={onLoadEnd}
+    onLoad={onLoad}
     resizeMethod={'resize'}
     onError={onError}
     style={[
@@ -85,13 +88,15 @@ const ResponsiveImage = (props: ResponsiveImageProps) => {
 
   const url: Url = new Url(uri, true);
   if (!uri.includes('data:')) {
-    url.query.rel_width = relativeWidth.toString();
-    url.query.rel_height = relativeHeight.toString();
+    url.query.rel_width = (relativeWidth || 1).toString();
+    url.query.rel_height = (relativeHeight || 1).toString();
     if (relativeVerticalOffset) {
-      url.query.rel_vertical_offset = relativeVerticalOffset.toString();
+      url.query.rel_vertical_offset = (relativeVerticalOffset || 0).toString();
     }
     if (relativeHorizontalOffset) {
-      url.query.rel_horizontal_offset = relativeHorizontalOffset.toString();
+      url.query.rel_horizontal_offset = (
+        relativeHorizontalOffset || 0
+      ).toString();
     }
     url.query.offline = 'true';
   }
@@ -120,32 +125,39 @@ const ResponsiveImage = (props: ResponsiveImageProps) => {
     setShowOffline(false);
   };
 
+  const hideHighRes = () => {
+    setLoaded(false);
+    if (onError) {
+      onError();
+    }
+  };
+
   const resize = resizeMode || 'cover';
 
   const highRes = loaded && (
     <ImageElement
+      key="online"
       source={{ uri: onlineUrl }}
-      onLoadEnd={hideLowRes}
+      onLoad={hideLowRes}
       aspectRatio={aspectRatio}
       borderRadius={borderRadius}
-      onError={onError}
+      onError={hideHighRes}
       resize={resize}
       fadeDuration={0}
     />
   );
-  const lowRes =
-    (disablePlaceholder ||
-    showOffline) && (
-      <ImageElement
-        source={{ uri: offlineUrl }}
-        onLoadEnd={!disablePlaceholder ? loadHighRes : undefined}
-        aspectRatio={aspectRatio}
-        borderRadius={borderRadius}
-        onError={onError}
-        resize={resize}
-        fadeDuration={300}
-      />
-    );
+  const lowRes = (disablePlaceholder || showOffline) && (
+    <ImageElement
+      key="offline"
+      source={{ uri: offlineUrl }}
+      onLoadEnd={!disablePlaceholder ? loadHighRes : undefined}
+      aspectRatio={aspectRatio}
+      borderRadius={borderRadius}
+      onError={onError}
+      resize={resize}
+      fadeDuration={300}
+    />
+  );
 
   if (disablePlaceholder) {
     return <React.Fragment>{[lowRes, highRes].filter(Boolean)}</React.Fragment>;
