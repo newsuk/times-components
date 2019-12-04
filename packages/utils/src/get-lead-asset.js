@@ -17,6 +17,8 @@ export default function getLeadAsset({ leadAsset }) {
     ? getStandardTemplateCrop(leadAsset.posterImage)
     : getStandardTemplateCrop(leadAsset);
 
+  if (!displayImage) return defaultAsset;
+
   const aspectRatio = displayImage.ratio;
 
   return {
