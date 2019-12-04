@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.12](https://github.com/newsuk/times-components/compare/@times-components/utils@5.1.11...@times-components/utils@5.1.12) (2019-12-04)
+
+
+### Bug Fixes
+
+* lead asset when no crop returned from tpa ([#2417](https://github.com/newsuk/times-components/issues/2417)) ([3bcdcc4](https://github.com/newsuk/times-components/commit/3bcdcc46349aa45db02b94f3ce701fda31de82ce))
+
+
+
+
+
 ## [5.1.11](https://github.com/newsuk/times-components/compare/@times-components/utils@5.1.10...@times-components/utils@5.1.11) (2019-11-30)
 
 **Note:** Version bump only for package @times-components/utils

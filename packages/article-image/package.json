@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-image",
-  "version": "7.3.68",
+  "version": "7.3.69",
   "description": "Article Image",
   "main": "dist/article-image",
   "dev": "src/article-image",
@@ -42,7 +42,7 @@
     "@times-components/jest-configurator": "2.6.10",
     "@times-components/jest-serializer": "3.2.22",
     "@times-components/mocks": "0.0.60",
-    "@times-components/storybook": "4.1.11",
+    "@times-components/storybook": "4.1.12",
     "@times-components/test-utils": "2.3.8",
     "@times-components/webpack-configurator": "2.0.27",
     "babel-jest": "24.8.0",
@@ -69,11 +69,11 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/caption": "3.0.87",
+    "@times-components/caption": "3.0.88",
     "@times-components/context": "1.1.17",
-    "@times-components/image": "6.4.52",
-    "@times-components/responsive": "0.5.7",
-    "@times-components/styleguide": "3.33.1",
+    "@times-components/image": "6.4.53",
+    "@times-components/responsive": "0.5.8",
+    "@times-components/styleguide": "3.33.2",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"
   },
