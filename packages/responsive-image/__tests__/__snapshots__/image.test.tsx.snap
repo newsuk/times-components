@@ -186,7 +186,8 @@ exports[`Image loads high-res 1`] = `
   />
   <Image
     fadeDuration={0}
-    onLoadEnd={[Function]}
+    onError={[Function]}
+    onLoad={[Function]}
     resizeMethod="resize"
     source={
       Object {
