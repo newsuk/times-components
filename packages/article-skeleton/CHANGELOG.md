@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.21.15](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.21.14...@times-components/article-skeleton@1.21.15) (2019-12-04)
+
+
+### Bug Fixes
+
+* (REPAT-11005) crashing article ([#2415](https://github.com/newsuk/times-components/issues/2415)) ([cd6b7e5](https://github.com/newsuk/times-components/commit/cd6b7e543ff0b598c6d74ce80df6560361ba8425))
+
+
+
+
+
 ## [1.21.14](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.21.13...@times-components/article-skeleton@1.21.14) (2019-12-04)
 
 **Note:** Version bump only for package @times-components/article-skeleton

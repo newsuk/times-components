@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-image",
-  "version": "7.3.67",
+  "version": "7.3.68",
   "description": "Article Image",
   "main": "dist/article-image",
   "dev": "src/article-image",
@@ -71,7 +71,7 @@
   "dependencies": {
     "@times-components/caption": "3.0.87",
     "@times-components/context": "1.1.17",
-    "@times-components/image": "6.4.51",
+    "@times-components/image": "6.4.52",
     "@times-components/responsive": "0.5.7",
     "@times-components/styleguide": "3.33.1",
     "prop-types": "15.7.2",

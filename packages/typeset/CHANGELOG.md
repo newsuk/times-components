@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.7](https://github.com/newsuk/times-components/compare/@times-components/typeset@0.0.6...@times-components/typeset@0.0.7) (2019-12-04)
+
+
+### Bug Fixes
+
+* (REPAT-11005) crashing article ([#2415](https://github.com/newsuk/times-components/issues/2415)) ([cd6b7e5](https://github.com/newsuk/times-components/commit/cd6b7e543ff0b598c6d74ce80df6560361ba8425))
+
+
+
+
+
 ## [0.0.6](https://github.com/newsuk/times-components/compare/@times-components/typeset@0.0.5...@times-components/typeset@0.0.6) (2019-11-28)
 
 
