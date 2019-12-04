@@ -48,7 +48,7 @@
     "node": ">=8.9"
   },
   "dependencies": {
-    "@times-components/styleguide": "3.33.1",
+    "@times-components/styleguide": "3.33.2",
     "memoize-one": "5.1.1",
     "react": "16.9.0",
     "react-native": "0.61.1",
