@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.7.5](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.7.4...@times-components/watermark@2.7.5) (2019-12-04)
+
+
+### Bug Fixes
+
+* (REPLAT-10970) minor fixes for a crash and offline images ([#2419](https://github.com/newsuk/times-components/issues/2419)) ([c545919](https://github.com/newsuk/times-components/commit/c5459195402c545381efdf7006a6e09c825afe8f))
+
+
+
+
+
 ## [2.7.4](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.7.3...@times-components/watermark@2.7.4) (2019-12-02)
 
 
