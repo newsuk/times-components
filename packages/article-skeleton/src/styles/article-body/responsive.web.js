@@ -106,6 +106,10 @@ export const PrimaryImg = styled(View)`
   }
 `;
 
+export const FullWidthImg = styled(View)`
+  padding-bottom: ${spacing(4)};
+`;
+
 export const SecondaryImg = styled(View)`
   width: 100%;
   flex-direction: row;
