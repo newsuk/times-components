@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.13](https://github.com/newsuk/times-components/compare/@times-components/utils@5.1.12...@times-components/utils@5.1.13) (2019-12-05)
+
+
+### Bug Fixes
+
+* deps ([#2421](https://github.com/newsuk/times-components/issues/2421)) ([2c8fd34](https://github.com/newsuk/times-components/commit/2c8fd347901aee399506f0d643b9558fb75faed1))
+
+
+
+
+
 ## [5.1.12](https://github.com/newsuk/times-components/compare/@times-components/utils@5.1.11...@times-components/utils@5.1.12) (2019-12-04)
 
 

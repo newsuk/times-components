@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.8](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.4.7...@times-components/save-star-web@0.4.8) (2019-12-05)
+
+
+### Bug Fixes
+
+* bookmarks of null on a preview article ([#2418](https://github.com/newsuk/times-components/issues/2418)) ([5d58e54](https://github.com/newsuk/times-components/commit/5d58e54244786b29267b441cf5e447f96f5dbd70))
+
+
+
+
+
 ## [0.4.7](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.4.6...@times-components/save-star-web@0.4.7) (2019-12-04)
 
 **Note:** Version bump only for package @times-components/save-star-web
