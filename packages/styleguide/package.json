@@ -1,6 +1,6 @@
 {
   "name": "@times-components/styleguide",
-  "version": "3.33.4",
+  "version": "3.33.5",
   "description": "Centralised library for common styles throughout the Times",
   "main": "dist/styleguide",
   "dev": "src/styleguide",
@@ -40,7 +40,7 @@
     "@times-components/eslint-config-thetimes": "0.8.16",
     "@times-components/jest-configurator": "2.6.10",
     "@times-components/jest-serializer": "3.2.22",
-    "@times-components/storybook": "4.1.14",
+    "@times-components/storybook": "4.1.15",
     "@times-components/test-utils": "2.3.8",
     "@times-components/webpack-configurator": "2.0.27",
     "babel-loader": "8.0.5",

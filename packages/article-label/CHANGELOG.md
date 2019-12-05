@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.7.6](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.7.5...@times-components/article-label@2.7.6) (2019-12-05)
+
+**Note:** Version bump only for package @times-components/article-label
+
+
+
+
+
 ## [2.7.5](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.7.4...@times-components/article-label@2.7.5) (2019-12-05)
 
 **Note:** Version bump only for package @times-components/article-label
