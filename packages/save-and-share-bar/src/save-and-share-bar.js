@@ -105,7 +105,7 @@ class SaveAndShareBar extends Component {
         )}
         {savingEnabled ? (
           <UserState state={UserState.loggedIn} serverRender={false}>
-            <View style={styles.rowItem} data-testid="save-star">
+            <View style={styles.rowItemRight} data-testid="save-star">
               <SaveStar
                 colour={styles.svgIcon.save.strokeColour}
                 hoverColor={styles.svgIcon.hoverFillColour}

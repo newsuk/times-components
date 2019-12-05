@@ -187,6 +187,7 @@ exports[`save and share bar component save and share bar renders correctly when 
         "alignItems": "center",
         "flexDirection": "row",
         "height": "40px",
+        "marginLeft": "auto",
         "msFlexAlign": "center",
         "msFlexDirection": "row",
       }
