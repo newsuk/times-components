@@ -607,10 +607,10 @@ exports[`full article with style 1`] = `
           Some content
         </p>
         <div
-          className="c19 responsiveweb__PullQuoteContainer-sc-16nqyj8-9 c19 css-view-1dbjc4n"
+          className="c19 responsiveweb__PullQuoteContainer-sc-16nqyj8-10 c19 css-view-1dbjc4n"
         >
           <div
-            className="c20 responsiveweb__PullQuoteResp-sc-16nqyj8-8 c20 css-view-1dbjc4n"
+            className="c20 responsiveweb__PullQuoteResp-sc-16nqyj8-9 c20 css-view-1dbjc4n"
           >
             <PullQuote>
               The pull quote content
@@ -656,14 +656,14 @@ exports[`full article with style 1`] = `
         />
         <div>
           <div
-            className="c22 responsiveweb__SecondaryImg-sc-16nqyj8-6 c22 css-view-1dbjc4n"
+            className="c22 responsiveweb__SecondaryImg-sc-16nqyj8-7 c22 css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>
         </div>
         <div>
           <div
-            className="c23 responsiveweb__InlineImg-sc-16nqyj8-7 c23 css-view-1dbjc4n"
+            className="c23 responsiveweb__InlineImg-sc-16nqyj8-8 c23 css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>
@@ -1293,10 +1293,10 @@ exports[`full article with style in the culture magazine 1`] = `
           Some content
         </p>
         <div
-          className="c19 responsiveweb__PullQuoteContainer-sc-16nqyj8-9 c19 css-view-1dbjc4n"
+          className="c19 responsiveweb__PullQuoteContainer-sc-16nqyj8-10 c19 css-view-1dbjc4n"
         >
           <div
-            className="c20 responsiveweb__PullQuoteResp-sc-16nqyj8-8 c20 css-view-1dbjc4n"
+            className="c20 responsiveweb__PullQuoteResp-sc-16nqyj8-9 c20 css-view-1dbjc4n"
           >
             <PullQuote>
               The pull quote content
@@ -1342,14 +1342,14 @@ exports[`full article with style in the culture magazine 1`] = `
         />
         <div>
           <div
-            className="c22 responsiveweb__SecondaryImg-sc-16nqyj8-6 c22 css-view-1dbjc4n"
+            className="c22 responsiveweb__SecondaryImg-sc-16nqyj8-7 c22 css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>
         </div>
         <div>
           <div
-            className="c23 responsiveweb__InlineImg-sc-16nqyj8-7 c23 css-view-1dbjc4n"
+            className="c23 responsiveweb__InlineImg-sc-16nqyj8-8 c23 css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>
@@ -1980,10 +1980,10 @@ exports[`full article with style in the style magazine 1`] = `
           Some content
         </p>
         <div
-          className="c19 responsiveweb__PullQuoteContainer-sc-16nqyj8-9 c19 css-view-1dbjc4n"
+          className="c19 responsiveweb__PullQuoteContainer-sc-16nqyj8-10 c19 css-view-1dbjc4n"
         >
           <div
-            className="c20 responsiveweb__PullQuoteResp-sc-16nqyj8-8 c20 css-view-1dbjc4n"
+            className="c20 responsiveweb__PullQuoteResp-sc-16nqyj8-9 c20 css-view-1dbjc4n"
           >
             <PullQuote>
               The pull quote content
@@ -2029,14 +2029,14 @@ exports[`full article with style in the style magazine 1`] = `
         />
         <div>
           <div
-            className="c22 responsiveweb__SecondaryImg-sc-16nqyj8-6 c22 css-view-1dbjc4n"
+            className="c22 responsiveweb__SecondaryImg-sc-16nqyj8-7 c22 css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>
         </div>
         <div>
           <div
-            className="c23 responsiveweb__InlineImg-sc-16nqyj8-7 c23 css-view-1dbjc4n"
+            className="c23 responsiveweb__InlineImg-sc-16nqyj8-8 c23 css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>
@@ -2666,10 +2666,10 @@ exports[`full article with style in the sunday times magazine 1`] = `
           Some content
         </p>
         <div
-          className="c19 responsiveweb__PullQuoteContainer-sc-16nqyj8-9 c19 css-view-1dbjc4n"
+          className="c19 responsiveweb__PullQuoteContainer-sc-16nqyj8-10 c19 css-view-1dbjc4n"
         >
           <div
-            className="c20 responsiveweb__PullQuoteResp-sc-16nqyj8-8 c20 css-view-1dbjc4n"
+            className="c20 responsiveweb__PullQuoteResp-sc-16nqyj8-9 c20 css-view-1dbjc4n"
           >
             <PullQuote>
               The pull quote content
@@ -2715,14 +2715,14 @@ exports[`full article with style in the sunday times magazine 1`] = `
         />
         <div>
           <div
-            className="c22 responsiveweb__SecondaryImg-sc-16nqyj8-6 c22 css-view-1dbjc4n"
+            className="c22 responsiveweb__SecondaryImg-sc-16nqyj8-7 c22 css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>
         </div>
         <div>
           <div
-            className="c23 responsiveweb__InlineImg-sc-16nqyj8-7 c23 css-view-1dbjc4n"
+            className="c23 responsiveweb__InlineImg-sc-16nqyj8-8 c23 css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>
