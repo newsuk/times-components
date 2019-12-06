@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.20](https://github.com/newsuk/times-components/compare/@times-components/context@1.1.19...@times-components/context@1.1.20) (2019-12-06)
+
+
+### Bug Fixes
+
+* fixed the margin below the fullstandard image ([#2424](https://github.com/newsuk/times-components/issues/2424)) ([f3dcc9c](https://github.com/newsuk/times-components/commit/f3dcc9c924c2611ab7376d98ace5a2a9a6dd8438))
+
+
+
+
+
 ## [1.1.19](https://github.com/newsuk/times-components/compare/@times-components/context@1.1.18...@times-components/context@1.1.19) (2019-12-05)
 
 

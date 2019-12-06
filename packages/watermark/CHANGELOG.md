@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.7.7](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.7.6...@times-components/watermark@2.7.7) (2019-12-06)
+
+
+### Bug Fixes
+
+* fixed the margin below the fullstandard image ([#2424](https://github.com/newsuk/times-components/issues/2424)) ([f3dcc9c](https://github.com/newsuk/times-components/commit/f3dcc9c924c2611ab7376d98ace5a2a9a6dd8438))
+
+
+
+
+
 ## [2.7.6](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.7.5...@times-components/watermark@2.7.6) (2019-12-05)
 
 
