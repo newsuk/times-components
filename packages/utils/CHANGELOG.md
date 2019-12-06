@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.15](https://github.com/newsuk/times-components/compare/@times-components/utils@5.1.14...@times-components/utils@5.1.15) (2019-12-06)
+
+
+### Bug Fixes
+
+* fixed article byline padding ([#2414](https://github.com/newsuk/times-components/issues/2414)) ([1700029](https://github.com/newsuk/times-components/commit/1700029d466d9a72c1f9fba120507daa5b2e42f0))
+
+
+
+
+
 ## [5.1.14](https://github.com/newsuk/times-components/compare/@times-components/utils@5.1.13...@times-components/utils@5.1.14) (2019-12-06)
 
 **Note:** Version bump only for package @times-components/utils
