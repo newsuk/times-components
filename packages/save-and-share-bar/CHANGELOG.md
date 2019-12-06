@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.26](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.8.25...@times-components/save-and-share-bar@0.8.26) (2019-12-06)
+
+
+### Bug Fixes
+
+* fixed save-button position when share is disabled ([#2413](https://github.com/newsuk/times-components/issues/2413)) ([8e84d73](https://github.com/newsuk/times-components/commit/8e84d7303907328ac17a26a03de1027074e9142c))
+
+
+
+
+
 ## [0.8.25](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.8.24...@times-components/save-and-share-bar@0.8.25) (2019-12-05)
 
 **Note:** Version bump only for package @times-components/save-and-share-bar
