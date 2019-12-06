@@ -153,7 +153,7 @@ jobs:
                   command: |
                       export COVERALLS_GIT_COMMIT=$CIRCLE_SHA1
                       export COVERALLS_GIT_BRANCH=$CIRCLE_BRANCH
-                      npx yarn@1.16.0 coverage:publish:ci
+                      npx yarn@1.16.0 coverage:publish
                   working_directory: ~/project/
 
 workflows:
