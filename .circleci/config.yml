@@ -1,0 +1,194 @@
+version: 2.1
+
+executors:
+    node:
+        docker:
+            - image: circleci/node:10.13.0-browsers
+        resource_class: 2xlarge
+
+commands:
+    install-dependencies:
+        description: 'Install Dependencies'
+        steps:
+            - run:
+                  name: Install Dependencies
+                  command: npx yarn@1.16.0 install --frozen-lockfile --ignore-engines
+                  working_directory: ~/project/
+
+    restore-yarn:
+        description: 'Restore Yarn Package Cache'
+        steps:
+            - restore_cache:
+                  key: yarn-packages-{{ checksum "yarn.lock" }}
+
+    save-yarn:
+        description: 'Save Yarn Package Cache'
+        steps:
+            - save_cache:
+                  key: yarn-packages-{{ checksum "yarn.lock" }}
+                  paths:
+                      - ~/.cache/yarn
+    install-fontforge:
+        description: 'Install fontforge'
+        steps:
+            - run:
+                  name: Install fontforge
+                  command: |
+                    sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+                    eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+                    brew install fontforge
+
+jobs:
+    setup:
+        executor: node
+        steps:
+            - checkout
+            - install-fontforge
+            - restore-yarn
+            - install-dependencies
+            - save-yarn
+            - persist_to_workspace:
+                root: ./
+                paths:
+                    - ./
+
+    run_lint:
+        executor: node
+        steps:
+            - checkout
+            - attach_workspace:
+                  at: ./
+            - run:
+                  name: Run Lint
+                  command: |
+                      npx yarn@1.16.0 lint
+                  working_directory: ~/project/
+
+    build_storybook:
+        executor: node
+        steps:
+            - checkout
+            - attach_workspace:
+                  at: ./
+            - run:
+                  name: Run Tests
+                  command: |
+                      npx yarn@1.16.0 test
+                  working_directory: ~/project/
+
+    run_noplatform_tests:
+        executor: node
+        steps:
+            - checkout
+            - attach_workspace:
+                  at: ./
+            - run:
+                  name: Run No Specific Platform Tests
+                  command: |
+                      npx lerna run test --stream --since -- -- --ci --bail --coverage
+                  working_directory: ~/project/
+
+    run_android_tests:
+        executor: node
+        steps:
+            - checkout
+            - attach_workspace:
+                  at: ./
+            - run:
+                  name: Run Android Tests
+                  command: |
+                      npx lerna run test:android --stream --since -- -- --ci --bail --coverage
+                  working_directory: ~/project/
+
+    run_ios_tests:
+        executor: node
+        steps:
+            - checkout
+            - attach_workspace:
+                  at: ./
+            - run:
+                  name: Run iOS Tests
+                  command: |
+                      npx lerna run test:ios --stream --since -- -- --ci --bail --coverage
+                  working_directory: ~/project/
+
+    run_web_tests:
+        executor: node
+        steps:
+            - checkout
+            - attach_workspace:
+                  at: ./
+            - run:
+                  name: Run Web Tests
+                  command: |
+                      npx lerna run test:web --stream --since -- -- --ci --bail --coverage
+                  working_directory: ~/project/
+
+    run_cypress_tests:
+        executor: node
+        steps:
+            - checkout
+            - attach_workspace:
+                  at: ./
+            - run:
+                  name: Install Cypress binary
+                  command: |
+                      npx yarn@1.16.0 cypress install
+                  working_directory: ~/project/
+            - run:
+                  name: Run Cypress Tests
+                  command: |
+                    sudo apt install lsof
+                    npx yarn@1.16.0 test:e2e
+                  working_directory: ~/project/
+
+    publish_coverage:
+        executor: node
+        steps:
+            - checkout
+            - attach_workspace:
+                  at: ./
+            - run:
+                  name: Publish coverage
+                  command: |
+                      export COVERALLS_GIT_COMMIT=$CIRCLE_SHA1
+                      export COVERALLS_GIT_BRANCH=$CIRCLE_BRANCH
+                      npx yarn@1.16.0 coverage:publish
+                  working_directory: ~/project/
+
+workflows:
+    version: 2
+
+    run_tests:
+        jobs:
+            - setup
+            - run_lint:
+                  requires:
+                      - setup
+            - build_storybook:
+                  requires:
+                      - setup
+            - run_noplatform_tests:
+                  requires:
+                      - setup
+            - run_android_tests:
+                  requires:
+                      - setup
+            - run_ios_tests:
+                  requires:
+                      - setup
+            - run_web_tests:
+                  requires:
+                      - setup
+            - run_cypress_tests:
+                  requires:
+                      - setup
+            - publish_coverage:
+                  requires:
+                      - build_storybook
+                      - run_lint
+                      - run_noplatform_tests
+                      - run_android_tests
+                      - run_ios_tests
+                      - run_web_tests
+                      - run_cypress_tests

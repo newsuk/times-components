@@ -6,7 +6,7 @@
   "main": "index.js",
   "engines": {
     "node": ">=8.10.0 <13",
-    "yarn": ">1.16.0"
+    "yarn": ">=1.16.0"
   },
   "bin": {
     "times-components": "times-components"
@@ -15,7 +15,7 @@
     "native": "node node_modules/react-native/local-cli/cli.js start",
     "test": "yarn storybook:test-build && jest ./lib --ci --bail --coverage",
     "test:all": "yarn test && lerna run test --since --stream && lerna run test:all --since --stream",
-    "coverage:publish": "lcov-result-merger './**/lcov.info' | coveralls",
+    "coverage:publish": "lcov-result-merger './**/lcov.info' | coveralls -verbose",
     "prelint": "eslint . && prettier --list-different '**/*.js' && yarn deps:lint",
     "lint": "lerna run lint --since -- -- --ci",
     "deps:lint": "lerna run cli -- -- --hint --bail -s majorityProgressive",
