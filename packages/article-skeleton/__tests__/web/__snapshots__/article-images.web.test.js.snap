@@ -143,23 +143,25 @@ exports[`2. a fullwidth image 1`] = `
         <div
           id="0"
         >
-          <ArticleImage
-            captionOptions={
-              Object {
-                "caption": "A Caption",
-                "credits": "Some Credits",
+          <div>
+            <ArticleImage
+              captionOptions={
+                Object {
+                  "caption": "A Caption",
+                  "credits": "Some Credits",
+                }
               }
-            }
-            imageOptions={
-              Object {
-                "display": "fullwidth",
-                "highResSize": null,
-                "lowResSize": 100,
-                "ratio": "3:2",
-                "uri": "https://image-2.io",
+              imageOptions={
+                Object {
+                  "display": "fullwidth",
+                  "highResSize": null,
+                  "lowResSize": 100,
+                  "ratio": "3:2",
+                  "uri": "https://image-2.io",
+                }
               }
-            }
-          />
+            />
+          </div>
         </div>
         <ArticleExtras
           articleHeadline="Some Headline"

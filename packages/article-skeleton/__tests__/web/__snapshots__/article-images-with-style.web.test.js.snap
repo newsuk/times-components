@@ -185,6 +185,10 @@ exports[`1. a primary image 1`] = `
 `;
 
 exports[`2. a fullwidth image 1`] = `
+.c8 {
+  padding-bottom: 20px;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -331,7 +335,11 @@ exports[`2. a fullwidth image 1`] = `
         className="c7 responsiveweb__BodyContainer-sc-1exejum-3 c7 css-view-1dbjc4n"
       >
         <div>
-          <ArticleImage />
+          <div
+            className="c8 responsiveweb__FullWidthImg-sc-16nqyj8-6 c8 css-view-1dbjc4n"
+          >
+            <ArticleImage />
+          </div>
         </div>
         <ArticleExtras />
       </article>
@@ -519,7 +527,7 @@ exports[`3. a secondary image 1`] = `
       >
         <div>
           <div
-            className="c8 responsiveweb__SecondaryImg-sc-16nqyj8-6 c8 css-view-1dbjc4n"
+            className="c8 responsiveweb__SecondaryImg-sc-16nqyj8-7 c8 css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>
@@ -711,7 +719,7 @@ exports[`4. an inline image 1`] = `
       >
         <div>
           <div
-            className="c8 responsiveweb__InlineImg-sc-16nqyj8-7 c8 css-view-1dbjc4n"
+            className="c8 responsiveweb__InlineImg-sc-16nqyj8-8 c8 css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>

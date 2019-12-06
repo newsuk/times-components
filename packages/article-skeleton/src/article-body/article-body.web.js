@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import Ad from "@times-components/ad";
 import LazyLoad from "@times-components/lazy-load";
@@ -21,6 +21,7 @@ import {
   PrimaryImg,
   SecondaryImg,
   InlineImg,
+  FullWidthImg,
   InteractiveContainer,
   PullQuoteContainer,
   PullQuoteResp
@@ -34,7 +35,7 @@ export const responsiveDisplayWrapper = displayType => {
     case "inline":
       return InlineImg;
     case "fullwidth":
-      return Fragment;
+      return FullWidthImg;
     default:
       return PrimaryImg;
   }
