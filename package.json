@@ -47,6 +47,7 @@
     "android:publish-lib": "lerna run --scope @times-components/android-app publish-library --stream",
     "prefmt": "prettier --write '**/*.{js,json}'",
     "fmt": "lerna run fmt",
+    "npm:publish": "sh ./lib/publish.sh",
     "cinstall": "./lib/custom_install.sh",
     "clean": "watchman watch-del-all && rm -rf $TMPDIR/metro-* && rm -rf $TMPDIR/haste-* && yarn cache clean && jest --clearCache",
     "bundle": "lerna run bundle",

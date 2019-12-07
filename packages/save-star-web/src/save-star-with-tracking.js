@@ -43,9 +43,7 @@ function SaveStar({
           <IconStar
             fillColour={fillColour}
             strokeColour={strokeColour}
-            title={
-              savedStatus ? "Remove from My Articles" : "Save to My Articles"
-            }
+            title={savedStatus ? "" : "Save"}
             height={18}
           />
         </IconContainer>

@@ -9,7 +9,7 @@ rm -rf storybook-static || exit 0;
 mkdir storybook-static;
 
 # run our compile script, discussed above
-npm run storybook:build
+npx yarn@1.16.0 storybook:build
 
 # go to the out directory and create a *new* Git repo
 cd storybook-static
@@ -18,7 +18,6 @@ git init
 # inside this git repo we'll pretend to be a new user
 git config user.name "GH Pages Bot"
 git config user.email "hello@ghbot.com"
-
 # set origin url with token for write access
 git remote add origin https://${GH_TOKEN}@github.com/newsuk/times-components.git > /dev/null 2>&1
 

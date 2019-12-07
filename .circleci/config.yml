@@ -156,6 +156,68 @@ jobs:
                       npx yarn@1.16.0 coverage:publish
                   working_directory: ~/project/
 
+    bundle:
+        executor: node
+        steps:
+            - checkout
+            - attach_workspace:
+                  at: ./
+            - run:
+                  name: Bundle project
+                  command: |
+                      npx lerna run bundle --stream
+                  working_directory: ~/project/
+
+    build_native:
+        executor: node
+        steps:
+            - checkout
+            - attach_workspace:
+                  at: ./
+            - run:
+                  name: Build native js bundles
+                  command: |
+                      npx yarn@1.16.0 android:build-lib
+                      npx yarn@1.16.0 ios:build-lib
+                  working_directory: ~/project/
+
+    publish_native:
+        executor: node
+        steps:
+            - checkout
+            - attach_workspace:
+                  at: ./
+            - run:
+                  name: Publish native js bundles
+                  command: |
+                      npx yarn@1.16.0 android:publish-lib
+                      npx yarn@1.16.0 ios:publish-lib
+                  working_directory: ~/project/
+
+    publish_npm:
+        executor: node
+        steps:
+            - checkout
+            - attach_workspace:
+                  at: ./
+            - run:
+                  name: Publish to npm
+                  command: |
+                      npx yarn@1.16.0 npm:publish
+                  working_directory: ~/project/
+
+    publish_storybook:
+        executor: node
+        steps:
+            - checkout
+            - attach_workspace:
+                  at: ./
+            - run:
+                  name: Publish Storybook
+                  command: |
+                      npx yarn@1.16.0 storybook:publish 
+                  working_directory: ~/project/
+
 workflows:
     version: 2
 
@@ -180,6 +242,9 @@ workflows:
             - run_web_tests:
                   requires:
                       - setup
+            - bundle:
+                  requires:
+                      - setup
             - run_cypress_tests:
                   requires:
                       - setup
@@ -192,3 +257,48 @@ workflows:
                       - run_ios_tests
                       - run_web_tests
                       - run_cypress_tests
+            - publish_storybook:
+                  filters:
+                    branches:
+                        only: 
+                          - master
+                  requires:
+                      - build_storybook
+                      - bundle
+                      - run_lint
+                      - run_noplatform_tests
+                      - run_android_tests
+                      - run_ios_tests
+                      - run_web_tests
+                      - run_cypress_tests
+            - publish_npm:
+                  requires:
+                      - build_storybook
+                      - bundle
+                      - run_lint
+                      - run_noplatform_tests
+                      - run_android_tests
+                      - run_ios_tests
+                      - run_web_tests
+                      - run_cypress_tests
+            - build_native:
+                  filters:
+                    branches:
+                        only: 
+                          - master
+                  requires:
+                      - build_storybook
+                      - bundle
+                      - run_lint
+                      - run_noplatform_tests
+                      - run_android_tests
+                      - run_ios_tests
+                      - run_web_tests
+                      - run_cypress_tests
+            - publish_native:
+                  filters:
+                    branches:
+                        only: 
+                          - master
+                  requires:
+                      - build_native
