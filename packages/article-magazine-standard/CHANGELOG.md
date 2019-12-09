@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.15.37](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.15.36...@times-components/article-magazine-standard@3.15.37) (2019-12-09)
+
+**Note:** Version bump only for package @times-components/article-magazine-standard
+
+
+
+
+
 ## [3.15.36](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-standard@3.15.35...@times-components/article-magazine-standard@3.15.36) (2019-12-06)
 
 **Note:** Version bump only for package @times-components/article-magazine-standard

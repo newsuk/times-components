@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.21](https://github.com/newsuk/times-components/compare/@times-components/context@1.1.20...@times-components/context@1.1.21) (2019-12-09)
+
+
+### Bug Fixes
+
+* fixed the space below bylines on article-main-standard on lower resolutions ([#2426](https://github.com/newsuk/times-components/issues/2426)) ([4dfec80](https://github.com/newsuk/times-components/commit/4dfec801f394afe10a585bef2f2008ab18ac2fdc))
+
+
+
+
+
 ## [1.1.20](https://github.com/newsuk/times-components/compare/@times-components/context@1.1.19...@times-components/context@1.1.20) (2019-12-06)
 
 
