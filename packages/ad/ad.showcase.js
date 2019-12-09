@@ -67,19 +67,6 @@ export default {
       type: "story"
     },
     {
-      component: () =>
-        withOpenInNewWindow(
-          <Ad
-            contextUrl={articleContextURL}
-            isLoading
-            section="news"
-            slotName="header"
-          />
-        ),
-      name: "Ad Loading State",
-      type: "story"
-    },
-    {
       component: ({ select }) =>
         withOpenInNewWindow(
           renderAd(select("Slot Name:", slotNames, slotNames[1]))
