@@ -28,7 +28,7 @@ const smallBreakpointStyles = {
     marginBottom: spacing(1)
   },
   summary: {
-    marginBottom: spacing(1)
+    marginBottom: spacing(1.75)
   }
 };
 

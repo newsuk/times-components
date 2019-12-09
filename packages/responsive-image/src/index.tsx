@@ -4,7 +4,8 @@ import {
   ImageBackground,
   ImageSourcePropType,
   ImageStyle,
-  PixelRatio
+  PixelRatio,
+  View
 } from 'react-native';
 import Url from 'url-parse';
 import logoPath from '../assets/t.png';
@@ -77,8 +78,7 @@ const ResponsiveImage = (props: ResponsiveImageProps) => {
     resizeMode,
     rounded,
     onLayout,
-    onError,
-    disablePlaceholder
+    onError
   } = props;
 
   if (!uri) {
@@ -106,8 +106,34 @@ const ResponsiveImage = (props: ResponsiveImageProps) => {
   url.query.resize = (width * ratio).toString();
   url.query.offline = 'false';
   const onlineUrl = url.toString();
-  const [loaded, setLoaded] = React.useState(false);
-  const [showOffline, setShowOffline] = React.useState(true);
+
+  const [showOffline, setShowOffline] = React.useState(false);
+  const [showOnline, setShowOnline] = React.useState(false);
+  const [showPlaceholder, setShowPlaceholder] = React.useState(true);
+  const [checkedCache, setCheckedCache] = React.useState(false);
+  const [failed, setFailed] = React.useState(false);
+
+  React.useEffect(
+    () => {
+      if ('queryCache' in Image && width && !checkedCache) {
+        const cache = Image.queryCache && Image.queryCache([onlineUrl]);
+        if (!cache) {
+          setCheckedCache(true);
+          return;
+        }
+        cache.then(results => {
+          setCheckedCache(true);
+          if (onlineUrl in results) {
+            setShowOnline(true);
+            setShowOffline(false);
+            setShowPlaceholder(false);
+            return;
+          }
+        });
+      }
+    },
+    [width]
+  );
 
   const imageRef = React.useCallback(event => {
     const { width: layoutWidth } = event.nativeEvent.layout;
@@ -117,66 +143,81 @@ const ResponsiveImage = (props: ResponsiveImageProps) => {
     }
   }, []);
 
-  const loadHighRes = () => {
-    setLoaded(true);
-  };
-
-  const hideLowRes = () => {
-    setShowOffline(false);
-  };
-
-  const hideHighRes = () => {
-    setLoaded(false);
-    if (onError) {
-      onError();
-    }
-  };
+  if (!width || !checkedCache) {
+    return (
+      <ImageBackground
+        onLayout={imageRef}
+        source={logoPath}
+        fadeDuration={0}
+        imageStyle={[
+          styles.imageStyle,
+          { resizeMode: 'center' },
+          { borderRadius }
+        ]}
+        style={[styles.style, propStyle, { aspectRatio }, { borderRadius }]}
+      />
+    );
+  }
 
   const resize = resizeMode || 'cover';
 
-  const highRes = loaded && (
+  const highRes = showOnline && (
     <ImageElement
       key="online"
       source={{ uri: onlineUrl }}
-      onLoad={hideLowRes}
       aspectRatio={aspectRatio}
       borderRadius={borderRadius}
-      onError={hideHighRes}
+      onLoad={() => {
+        setShowOffline(false);
+      }}
+      onError={() => {
+        setShowOnline(false);
+        setShowOffline(true);
+        setFailed(true);
+        if (onError) {
+          onError()
+        }
+      }}
       resize={resize}
       fadeDuration={0}
     />
   );
-  const lowRes = (disablePlaceholder || showOffline) && (
+  const lowRes = showOffline && (
     <ImageElement
       key="offline"
       source={{ uri: offlineUrl }}
-      onLoadEnd={!disablePlaceholder ? loadHighRes : undefined}
       aspectRatio={aspectRatio}
       borderRadius={borderRadius}
+      onLoadEnd={() => {
+        if (!failed) {
+          setShowOnline(true);
+        }
+        setShowPlaceholder(false);
+      }}
       onError={onError}
       resize={resize}
-      fadeDuration={300}
+      fadeDuration={0}
+    />
+  );
+  const placeholder = showPlaceholder && (
+    <Image
+      key="placeholder"
+      source={logoPath}
+      borderRadius={0}
+      onLoadEnd={() => {
+        setShowOffline(true);
+      }}
+      fadeDuration={0}
+      style={{ resizeMode: 'center', width, height: '100%' }}
     />
   );
 
-  if (disablePlaceholder) {
-    return <React.Fragment>{[lowRes, highRes].filter(Boolean)}</React.Fragment>;
-  }
-
   return (
-    <ImageBackground
-      onLayout={imageRef}
-      source={logoPath}
-      imageStyle={[
-        styles.imageStyle,
-        { resizeMode: 'center' },
-        { borderRadius }
-      ]}
-      style={[styles.style, propStyle, { aspectRatio }, { borderRadius }]}
-    >
+    <View style={[styles.style, propStyle, { aspectRatio }, { borderRadius }]}>
+      {placeholder}
       {lowRes}
       {highRes}
-    </ImageBackground>
+    </View>
   );
 };
 

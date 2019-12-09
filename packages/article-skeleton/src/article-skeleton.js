@@ -1,11 +1,5 @@
 import React, { useCallback, useState } from "react";
-import {
-  View,
-  FlatList,
-  ActivityIndicator,
-  Platform,
-  ScrollView
-} from "react-native";
+import { View, FlatList, ActivityIndicator, Platform } from "react-native";
 import PropTypes from "prop-types";
 import { screenWidth } from "@times-components/utils";
 import { withTrackScrollDepth } from "@times-components/tracking";
@@ -127,12 +121,11 @@ const ArticleSkeleton = props => {
   const Scroller = scrollprops =>
     Platform.select({
       ios: (
-        <ScrollView {...scrollprops}>
-          {header}
-          {scrollprops.data.map((item, index) => (
-            <Child item={item} index={index} />
-          ))}
-        </ScrollView>
+        <FlatList
+          {...scrollprops}
+          data={scrollprops.data.map((item, index) => Child({ item, index }))}
+          renderItem={({ item }) => item}
+        />
       ),
       android: <FlatList {...scrollprops} />
     });
@@ -173,7 +166,8 @@ ArticleSkeleton.propTypes = {
   onLinkPress: PropTypes.func.isRequired,
   onRelatedArticlePress: PropTypes.func.isRequired,
   onTwitterLinkPress: PropTypes.func.isRequired,
-  onVideoPress: PropTypes.func.isRequired
+  onVideoPress: PropTypes.func.isRequired,
+  onImagePress: PropTypes.func.isRequired
 };
 ArticleSkeleton.defaultProps = {
   ...articleSkeletonDefaultProps,

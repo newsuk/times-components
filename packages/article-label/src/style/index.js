@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, Platform } from "react-native";
 import sharedStyles from "./shared";
 
 const styles = StyleSheet.create({
@@ -9,7 +9,8 @@ const styles = StyleSheet.create({
     paddingTop: 0,
     marginTop: 0,
     letterSpacing: 1,
-    includeFontPadding: false
+    includeFontPadding: false,
+    marginBottom: Platform.OS === "ios" ? -3 : 1
   }
 });
 
