@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.3.78](https://github.com/newsuk/times-components/compare/@times-components/article-image@7.3.77...@times-components/article-image@7.3.78) (2019-12-09)
+
+**Note:** Version bump only for package @times-components/article-image
+
+
+
+
+
 ## [7.3.77](https://github.com/newsuk/times-components/compare/@times-components/article-image@7.3.76...@times-components/article-image@7.3.77) (2019-12-09)
 
 **Note:** Version bump only for package @times-components/article-image
