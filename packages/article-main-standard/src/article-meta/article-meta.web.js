@@ -20,6 +20,10 @@ import styles from "../styles/article-meta";
 const MetaTextElement = styled(Text)`
   padding-top: ${spacing(2)};
 
+  &:last-child {
+    padding-bottom: ${spacing(2)};
+  }
+
   @media (min-width: ${breakpoints.wide}px) {
     line-height: 18px;
     padding-bottom: ${spacing(2)};

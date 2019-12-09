@@ -178,6 +178,10 @@ exports[`full article with style 1`] = `
   padding-top: 10px;
 }
 
+.c11:last-child {
+  padding-bottom: 10px;
+}
+
 .c5 {
   padding-left: 10px;
   padding-right: 10px;
