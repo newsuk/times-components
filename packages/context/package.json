@@ -37,7 +37,7 @@
   },
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
-    "@times-components/styleguide": "3.33.7"
+    "@times-components/styleguide": "3.33.8"
   },
   "devDependencies": {
     "@babel/core": "7.4.4",
