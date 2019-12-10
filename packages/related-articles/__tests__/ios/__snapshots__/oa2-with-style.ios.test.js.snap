@@ -54,7 +54,7 @@ exports[`default styles 1`] = `
                 <View
                   style={
                     Object {
-                      "marginBottom": 5,
+                      "marginBottom": 0,
                     }
                   }
                 >
@@ -125,8 +125,8 @@ exports[`default styles 1`] = `
                       "fontFamily": "GillSansMTStd-Medium",
                       "fontSize": 13,
                       "lineHeight": 15,
-                      "marginBottom": 5,
-                      "marginTop": 5,
+                      "marginBottom": 0,
+                      "marginTop": 0,
                     }
                   }
                 >
