@@ -97,7 +97,7 @@
     "@times-components/tracking": "2.5.16",
     "@times-components/typeset": "0.0.7",
     "@times-components/user-state": "0.1.19",
-    "@times-components/utils": "5.1.17",
+    "@times-components/utils": "6.0.0",
     "@times-components/video": "4.8.19",
     "lodash.get": "4.4.2",
     "lodash.pick": "4.4.0",

@@ -78,7 +78,7 @@
     "@times-components/responsive": "0.5.19",
     "@times-components/styleguide": "3.33.13",
     "@times-components/tracking": "2.5.16",
-    "@times-components/utils": "5.1.17",
+    "@times-components/utils": "6.0.0",
     "lodash.get": "4.4.2",
     "prop-types": "15.7.2",
     "react-helmet-async": "1.0.2",

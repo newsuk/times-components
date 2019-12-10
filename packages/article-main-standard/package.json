@@ -74,7 +74,7 @@
     "@times-components/responsive": "0.5.19",
     "@times-components/styleguide": "3.33.13",
     "@times-components/user-state": "0.1.19",
-    "@times-components/utils": "5.1.17",
+    "@times-components/utils": "6.0.0",
     "@times-components/video-label": "2.4.16",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"
