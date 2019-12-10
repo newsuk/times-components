@@ -51,7 +51,7 @@
     "@times-components/star-button": "0.2.16",
     "@times-components/styleguide": "3.33.13",
     "@times-components/tracking": "2.5.16",
-    "@times-components/utils": "5.1.17",
+    "@times-components/utils": "6.0.0",
     "@times-components/video": "4.8.19",
     "prop-types": "15.7.2"
   },
