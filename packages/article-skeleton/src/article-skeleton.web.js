@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import PropTypes from "prop-types";
-import Ad, { AdComposer } from "@times-components/ad";
+import { AdComposer, AdContainer } from "@times-components/ad";
 import ArticleExtras from "@times-components/article-extras";
 import LazyLoad from "@times-components/lazy-load";
 import { spacing } from "@times-components/styleguide";
@@ -87,7 +87,9 @@ class ArticleSkeleton extends Component {
     return (
       <StickyProvider>
         <article
+          id="article-main"
           data-article-identifier={article.id}
+          data-article-sectionname={section}
           ref={node => {
             this.node = node;
           }}
@@ -101,9 +103,7 @@ class ArticleSkeleton extends Component {
             <Fragment>
               <Fragment>
                 <HeaderAdContainer key="headerAd">
-                  <Ad
-                    contextUrl={url}
-                    section={section}
+                  <AdContainer
                     slotName="header"
                     style={adStyle}
                   />
@@ -164,9 +164,9 @@ class ArticleSkeleton extends Component {
                   </BodyContainer>
                 </MainContainer>
               </Fragment>
-              <Ad contextUrl={url} section={section} slotName="pixel" />
-              <Ad contextUrl={url} section={section} slotName="pixelteads" />
-              <Ad contextUrl={url} section={section} slotName="pixelskin" />
+              <AdContainer slotName="pixel" />
+              <AdContainer slotName="pixelteads" />
+              <AdContainer slotName="pixelskin" />
             </Fragment>
           </AdComposer>
         </article>
