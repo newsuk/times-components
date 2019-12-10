@@ -61,22 +61,6 @@ exports[`1. a full article 1`] = `
       {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"author":{"@type":"Person","name":"Some byline"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=685","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z"}
     </script>
   </Helmet>
-  <svg
-    height={250}
-    viewBox="-630 120 1200 50"
-    width={970}
-  >
-    <g
-      id="watermark"
-      opacity="0.07"
-    >
-      <path
-        d="53a8dae08c4e492d934bf2f094a46ab4"
-        id="shape"
-      />
-    </g>
-  </svg>
-  ADVERTISEMENT
   <main
     role="main"
   >
@@ -384,53 +368,5 @@ exports[`1. a full article 1`] = `
       />
     </article>
   </main>
-  <svg
-    height={1}
-    viewBox="-50 0 1 1"
-    width={1}
-  >
-    <g
-      id="watermark"
-      opacity="0.07"
-    >
-      <path
-        d="53a8dae08c4e492d934bf2f094a46ab4"
-        id="shape"
-      />
-    </g>
-  </svg>
-  ADVERTISEMENT
-  <svg
-    height={1}
-    viewBox="-50 0 1 1"
-    width={1}
-  >
-    <g
-      id="watermark"
-      opacity="0.07"
-    >
-      <path
-        d="53a8dae08c4e492d934bf2f094a46ab4"
-        id="shape"
-      />
-    </g>
-  </svg>
-  ADVERTISEMENT
-  <svg
-    height={1}
-    viewBox="-50 0 1 1"
-    width={1}
-  >
-    <g
-      id="watermark"
-      opacity="0.07"
-    >
-      <path
-        d="53a8dae08c4e492d934bf2f094a46ab4"
-        id="shape"
-      />
-    </g>
-  </svg>
-  ADVERTISEMENT
 </article>
 `;
