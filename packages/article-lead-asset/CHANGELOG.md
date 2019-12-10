@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.85](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.3.84...@times-components/article-lead-asset@1.3.85) (2019-12-10)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
 ## [1.3.84](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.3.83...@times-components/article-lead-asset@1.3.84) (2019-12-10)
 
 **Note:** Version bump only for package @times-components/article-lead-asset
