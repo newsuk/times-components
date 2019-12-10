@@ -1,6 +1,6 @@
 {
   "name": "@times-components/image",
-  "version": "6.4.63",
+  "version": "6.4.64",
   "main": "dist/index",
   "dev": "src/index",
   "scripts": {
@@ -41,7 +41,7 @@
     "@times-components/eslint-config-thetimes": "0.8.16",
     "@times-components/jest-configurator": "2.6.10",
     "@times-components/jest-serializer": "3.2.22",
-    "@times-components/storybook": "4.1.22",
+    "@times-components/storybook": "4.1.23",
     "@times-components/test-utils": "2.3.8",
     "@times-components/webpack-configurator": "2.0.27",
     "babel-jest": "24.8.0",
@@ -64,12 +64,12 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/gestures": "4.2.15",
-    "@times-components/gradient": "3.2.15",
-    "@times-components/link": "3.5.15",
-    "@times-components/responsive": "0.5.18",
-    "@times-components/responsive-image": "0.1.11",
-    "@times-components/styleguide": "3.33.12",
+    "@times-components/gestures": "4.2.16",
+    "@times-components/gradient": "3.2.16",
+    "@times-components/link": "3.5.16",
+    "@times-components/responsive": "0.5.19",
+    "@times-components/responsive-image": "0.1.12",
+    "@times-components/styleguide": "3.33.13",
     "@times-components/svgs": "2.7.28",
     "@times-components/utils": "5.1.17",
     "hoist-non-react-statics": "2.5.5",
