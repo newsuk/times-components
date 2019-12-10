@@ -21,6 +21,7 @@ exports[`Image gracefully handles bad high-res url 1`] = `
   }
 >
   <Image
+    fadeDuration={0}
     onLayout={[Function]}
     source={
       Object {
@@ -51,48 +52,6 @@ exports[`Image gracefully handles bad high-res url 1`] = `
             "borderRadius": 0,
           },
         ],
-      ]
-    }
-  />
-  <Image
-    fadeDuration={300}
-    onError={
-      [MockFunction] {
-        "calls": Array [
-          Array [],
-        ],
-        "results": Array [
-          Object {
-            "type": "return",
-            "value": undefined,
-          },
-        ],
-      }
-    }
-    onLoadEnd={[Function]}
-    resizeMethod="resize"
-    source={
-      Object {
-        "uri": "http://foo.com/bar.png?rel_width=1&rel_height=1&offline=true",
-      }
-    }
-    style={
-      Array [
-        Object {
-          "aspectRatio": undefined,
-        },
-        Object {
-          "borderRadius": 0,
-        },
-        Object {
-          "width": "100%",
-        },
-        Object {
-          "resizeMode": "cover",
-        },
-        Object {
-          "borderRadius": 0,
-        },
       ]
     }
   />
@@ -122,6 +81,7 @@ exports[`Image loads high-res 1`] = `
   }
 >
   <Image
+    fadeDuration={0}
     onLayout={[Function]}
     source={
       Object {
@@ -152,65 +112,6 @@ exports[`Image loads high-res 1`] = `
             "borderRadius": 0,
           },
         ],
-      ]
-    }
-  />
-  <Image
-    fadeDuration={300}
-    onLoadEnd={[Function]}
-    resizeMethod="resize"
-    source={
-      Object {
-        "uri": "http://foo.com/bar.png?rel_width=1&rel_height=1&offline=true",
-      }
-    }
-    style={
-      Array [
-        Object {
-          "aspectRatio": undefined,
-        },
-        Object {
-          "borderRadius": 0,
-        },
-        Object {
-          "width": "100%",
-        },
-        Object {
-          "resizeMode": "cover",
-        },
-        Object {
-          "borderRadius": 0,
-        },
-      ]
-    }
-  />
-  <Image
-    fadeDuration={0}
-    onError={[Function]}
-    onLoad={[Function]}
-    resizeMethod="resize"
-    source={
-      Object {
-        "uri": "http://foo.com/bar.png?rel_width=1&rel_height=1&offline=false&resize=1000",
-      }
-    }
-    style={
-      Array [
-        Object {
-          "aspectRatio": undefined,
-        },
-        Object {
-          "borderRadius": 0,
-        },
-        Object {
-          "width": "100%",
-        },
-        Object {
-          "resizeMode": "cover",
-        },
-        Object {
-          "borderRadius": 0,
-        },
       ]
     }
   />
@@ -238,6 +139,7 @@ exports[`Image renders 1`] = `
   }
 >
   <Image
+    fadeDuration={0}
     onLayout={[Function]}
     source={
       Object {
@@ -268,35 +170,6 @@ exports[`Image renders 1`] = `
             "borderRadius": 0,
           },
         ],
-      ]
-    }
-  />
-  <Image
-    fadeDuration={300}
-    onLoadEnd={[Function]}
-    resizeMethod="resize"
-    source={
-      Object {
-        "uri": "http://foo.com/bar.png?rel_width=1&rel_height=1&offline=true",
-      }
-    }
-    style={
-      Array [
-        Object {
-          "aspectRatio": undefined,
-        },
-        Object {
-          "borderRadius": 0,
-        },
-        Object {
-          "width": "100%",
-        },
-        Object {
-          "resizeMode": "cover",
-        },
-        Object {
-          "borderRadius": 0,
-        },
       ]
     }
   />
@@ -324,6 +197,7 @@ exports[`Image respects resizeMode 1`] = `
   }
 >
   <Image
+    fadeDuration={0}
     onLayout={[Function]}
     source={
       Object {
@@ -354,35 +228,6 @@ exports[`Image respects resizeMode 1`] = `
             "borderRadius": 0,
           },
         ],
-      ]
-    }
-  />
-  <Image
-    fadeDuration={300}
-    onLoadEnd={[Function]}
-    resizeMethod="resize"
-    source={
-      Object {
-        "uri": "http://foo.com/bar.png?rel_width=1&rel_height=1&offline=true",
-      }
-    }
-    style={
-      Array [
-        Object {
-          "aspectRatio": undefined,
-        },
-        Object {
-          "borderRadius": 0,
-        },
-        Object {
-          "width": "100%",
-        },
-        Object {
-          "resizeMode": "cover",
-        },
-        Object {
-          "borderRadius": 0,
-        },
       ]
     }
   />

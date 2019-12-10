@@ -35,7 +35,7 @@ exports[`tile as huge 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 5,
+          "marginBottom": 0,
         }
       }
     >
@@ -130,7 +130,7 @@ exports[`tile as medium 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 5,
+          "marginBottom": 0,
         }
       }
     >
@@ -225,7 +225,7 @@ exports[`tile as wide 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 5,
+          "marginBottom": 0,
         }
       }
     >

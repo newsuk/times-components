@@ -5,13 +5,14 @@ const styles = StyleSheet.create({
   ...sharedStyles,
   iconContainer: {
     ...sharedStyles.iconContainer,
-    marginBottom: 3,
-    paddingBottom: 2
+    marginBottom: 0,
+    paddingBottom: 0
   },
   title: {
     ...sharedStyles.title,
     lineHeight: 12,
-    paddingTop: 0
+    paddingTop: 0,
+    marginTop: 0
   }
 });
 

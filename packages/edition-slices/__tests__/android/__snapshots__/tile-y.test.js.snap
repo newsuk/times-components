@@ -15,7 +15,7 @@ exports[`tile y huge 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 5,
+          "marginBottom": 0,
         }
       }
     >
@@ -90,7 +90,7 @@ exports[`tile y medium 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 5,
+          "marginBottom": 0,
         }
       }
     >
@@ -165,7 +165,7 @@ exports[`tile y wide 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 5,
+          "marginBottom": 0,
         }
       }
     >
@@ -240,7 +240,7 @@ exports[`tile y without breakpoint should be like medium 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 5,
+          "marginBottom": 0,
         }
       }
     >

@@ -34,7 +34,7 @@ exports[`tile c without breakpoint 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 5,
+          "marginBottom": 0,
         }
       }
     >

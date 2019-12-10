@@ -23,7 +23,7 @@ exports[`tile af huge 1`] = `
         <View
           style={
             Object {
-              "marginBottom": 5,
+              "marginBottom": 0,
             }
           }
         >
@@ -109,7 +109,7 @@ exports[`tile af wide 1`] = `
         <View
           style={
             Object {
-              "marginBottom": 5,
+              "marginBottom": 0,
             }
           }
         >
@@ -195,7 +195,7 @@ exports[`tile af without breakpoint should be like wide 1`] = `
         <View
           style={
             Object {
-              "marginBottom": 5,
+              "marginBottom": 0,
             }
           }
         >

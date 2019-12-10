@@ -37,6 +37,7 @@ exports[`1. a primary image 1`] = `
             imageOptions={
               Object {
                 "display": "primary",
+                "index": 1,
                 "ratio": "3:2",
                 "relativeHeight": undefined,
                 "relativeHorizontalOffset": undefined,
@@ -110,6 +111,7 @@ exports[`2. a fullwidth image 1`] = `
             imageOptions={
               Object {
                 "display": "fullwidth",
+                "index": 1,
                 "ratio": "3:2",
                 "relativeHeight": undefined,
                 "relativeHorizontalOffset": undefined,
@@ -183,6 +185,7 @@ exports[`3. a secondary image 1`] = `
             imageOptions={
               Object {
                 "display": "secondary",
+                "index": 1,
                 "ratio": "3:2",
                 "relativeHeight": undefined,
                 "relativeHorizontalOffset": undefined,
@@ -256,6 +259,7 @@ exports[`4. an inline image 1`] = `
             imageOptions={
               Object {
                 "display": "secondary",
+                "index": 1,
                 "ratio": "9:4",
                 "relativeHeight": undefined,
                 "relativeHorizontalOffset": undefined,

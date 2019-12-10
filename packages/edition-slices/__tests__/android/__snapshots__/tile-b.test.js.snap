@@ -22,7 +22,7 @@ exports[`tile b huge 1`] = `
         <View
           style={
             Object {
-              "marginBottom": 5,
+              "marginBottom": 0,
             }
           }
         >
@@ -107,7 +107,7 @@ exports[`tile b medium 1`] = `
         <View
           style={
             Object {
-              "marginBottom": 5,
+              "marginBottom": 0,
             }
           }
         >
@@ -193,7 +193,7 @@ exports[`tile b small 1`] = `
         <View
           style={
             Object {
-              "marginBottom": 5,
+              "marginBottom": 0,
             }
           }
         >
@@ -239,7 +239,7 @@ exports[`tile b small 1`] = `
               "fontFamily": "TimesDigitalW04",
               "fontSize": 14,
               "lineHeight": 20,
-              "marginBottom": 5,
+              "marginBottom": 8.75,
             }
           }
         >
@@ -277,7 +277,7 @@ exports[`tile b wide 1`] = `
         <View
           style={
             Object {
-              "marginBottom": 5,
+              "marginBottom": 0,
             }
           }
         >
@@ -362,7 +362,7 @@ exports[`tile b with more teaser 1`] = `
         <View
           style={
             Object {
-              "marginBottom": 5,
+              "marginBottom": 0,
             }
           }
         >
@@ -448,7 +448,7 @@ exports[`tile b without breakpoint should be like small 1`] = `
         <View
           style={
             Object {
-              "marginBottom": 5,
+              "marginBottom": 0,
             }
           }
         >
@@ -494,7 +494,7 @@ exports[`tile b without breakpoint should be like small 1`] = `
               "fontFamily": "TimesDigitalW04",
               "fontSize": 14,
               "lineHeight": 20,
-              "marginBottom": 5,
+              "marginBottom": 8.75,
             }
           }
         >

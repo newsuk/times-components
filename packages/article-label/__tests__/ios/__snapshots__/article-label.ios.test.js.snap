@@ -11,7 +11,7 @@ exports[`Article Label test on ios renders ArticleLabel 1`] = `
       "includeFontPadding": false,
       "letterSpacing": 1,
       "lineHeight": 12,
-      "marginBottom": 0,
+      "marginBottom": -3,
       "marginTop": 0,
       "paddingTop": 0,
     }
@@ -32,7 +32,7 @@ exports[`Article Label test on ios renders ArticleLabel with GraphQL Colour type
       "includeFontPadding": false,
       "letterSpacing": 1,
       "lineHeight": 12,
-      "marginBottom": 0,
+      "marginBottom": -3,
       "marginTop": 0,
       "paddingTop": 0,
     }

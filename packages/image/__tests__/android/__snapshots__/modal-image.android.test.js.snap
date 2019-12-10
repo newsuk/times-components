@@ -51,18 +51,10 @@ exports[`1. modal image 1`] = `
             accessibilityIgnoresInvertColors={true}
           >
             <Image
+              fadeDuration={0}
               source={
                 Object {
                   "testUri": "../../../packages/responsive-image/assets/t.png",
-                }
-              }
-            />
-            <Image
-              fadeDuration={300}
-              resizeMethod="resize"
-              source={
-                Object {
-                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=true",
                 }
               }
             />
@@ -87,18 +79,10 @@ exports[`1. modal image 1`] = `
       accessibilityIgnoresInvertColors={true}
     >
       <Image
+        fadeDuration={0}
         source={
           Object {
             "testUri": "../../../packages/responsive-image/assets/t.png",
-          }
-        }
-      />
-      <Image
-        fadeDuration={300}
-        resizeMethod="resize"
-        source={
-          Object {
-            "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=true",
           }
         }
       />
@@ -158,18 +142,10 @@ exports[`2. modal image with no caption 1`] = `
             accessibilityIgnoresInvertColors={true}
           >
             <Image
+              fadeDuration={0}
               source={
                 Object {
                   "testUri": "../../../packages/responsive-image/assets/t.png",
-                }
-              }
-            />
-            <Image
-              fadeDuration={300}
-              resizeMethod="resize"
-              source={
-                Object {
-                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=true",
                 }
               }
             />
@@ -188,18 +164,10 @@ exports[`2. modal image with no caption 1`] = `
       accessibilityIgnoresInvertColors={true}
     >
       <Image
+        fadeDuration={0}
         source={
           Object {
             "testUri": "../../../packages/responsive-image/assets/t.png",
-          }
-        }
-      />
-      <Image
-        fadeDuration={300}
-        resizeMethod="resize"
-        source={
-          Object {
-            "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=true",
           }
         }
       />
@@ -259,18 +227,10 @@ exports[`3. modal image with custom highressize 1`] = `
             accessibilityIgnoresInvertColors={true}
           >
             <Image
+              fadeDuration={0}
               source={
                 Object {
                   "testUri": "../../../packages/responsive-image/assets/t.png",
-                }
-              }
-            />
-            <Image
-              fadeDuration={300}
-              resizeMethod="resize"
-              source={
-                Object {
-                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=true",
                 }
               }
             />
@@ -295,18 +255,10 @@ exports[`3. modal image with custom highressize 1`] = `
       accessibilityIgnoresInvertColors={true}
     >
       <Image
+        fadeDuration={0}
         source={
           Object {
             "testUri": "../../../packages/responsive-image/assets/t.png",
-          }
-        }
-      />
-      <Image
-        fadeDuration={300}
-        resizeMethod="resize"
-        source={
-          Object {
-            "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=true",
           }
         }
       />
@@ -353,18 +305,10 @@ exports[`9. hides elements when tapping on the image 1`] = `
             accessibilityIgnoresInvertColors={true}
           >
             <Image
+              fadeDuration={0}
               source={
                 Object {
                   "testUri": "../../../packages/responsive-image/assets/t.png",
-                }
-              }
-            />
-            <Image
-              fadeDuration={300}
-              resizeMethod="resize"
-              source={
-                Object {
-                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=true",
                 }
               }
             />
@@ -380,18 +324,10 @@ exports[`9. hides elements when tapping on the image 1`] = `
       accessibilityIgnoresInvertColors={true}
     >
       <Image
+        fadeDuration={0}
         source={
           Object {
             "testUri": "../../../packages/responsive-image/assets/t.png",
-          }
-        }
-      />
-      <Image
-        fadeDuration={300}
-        resizeMethod="resize"
-        source={
-          Object {
-            "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=true",
           }
         }
       />
@@ -451,18 +387,10 @@ exports[`10. re-shows elements when tapping on the image a second time 1`] = `
             accessibilityIgnoresInvertColors={true}
           >
             <Image
+              fadeDuration={0}
               source={
                 Object {
                   "testUri": "../../../packages/responsive-image/assets/t.png",
-                }
-              }
-            />
-            <Image
-              fadeDuration={300}
-              resizeMethod="resize"
-              source={
-                Object {
-                  "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=true",
                 }
               }
             />
@@ -487,18 +415,10 @@ exports[`10. re-shows elements when tapping on the image a second time 1`] = `
       accessibilityIgnoresInvertColors={true}
     >
       <Image
+        fadeDuration={0}
         source={
           Object {
             "testUri": "../../../packages/responsive-image/assets/t.png",
-          }
-        }
-      />
-      <Image
-        fadeDuration={300}
-        resizeMethod="resize"
-        source={
-          Object {
-            "uri": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0&rel_width=1&rel_height=1&offline=true",
           }
         }
       />

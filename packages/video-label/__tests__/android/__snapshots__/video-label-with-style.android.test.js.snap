@@ -13,8 +13,8 @@ exports[`1. video label with a title 1`] = `
   <View
     style={
       Object {
-        "marginBottom": 3,
-        "paddingBottom": 2,
+        "marginBottom": 0,
+        "paddingBottom": 0,
       }
     }
   >
@@ -34,6 +34,7 @@ exports[`1. video label with a title 1`] = `
         "letterSpacing": 1.2,
         "lineHeight": 12,
         "marginLeft": 5,
+        "marginTop": 0,
         "paddingTop": 0,
       }
     }
@@ -56,8 +57,8 @@ exports[`2. video label without a title shows video 1`] = `
   <View
     style={
       Object {
-        "marginBottom": 3,
-        "paddingBottom": 2,
+        "marginBottom": 0,
+        "paddingBottom": 0,
       }
     }
   >
@@ -77,6 +78,7 @@ exports[`2. video label without a title shows video 1`] = `
         "letterSpacing": 1.2,
         "lineHeight": 12,
         "marginLeft": 5,
+        "marginTop": 0,
         "paddingTop": 0,
       }
     }
@@ -99,8 +101,8 @@ exports[`3. video label with the black default colour 1`] = `
   <View
     style={
       Object {
-        "marginBottom": 3,
-        "paddingBottom": 2,
+        "marginBottom": 0,
+        "paddingBottom": 0,
       }
     }
   >
@@ -120,6 +122,7 @@ exports[`3. video label with the black default colour 1`] = `
         "letterSpacing": 1.2,
         "lineHeight": 12,
         "marginLeft": 5,
+        "marginTop": 0,
         "paddingTop": 0,
       }
     }

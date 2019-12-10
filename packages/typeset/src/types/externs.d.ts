@@ -110,8 +110,25 @@ declare module 'hyphenation.en-gb' {
 }
 
 declare module 'opentype.js' {
+  export interface Bounds {
+    x1: number,
+    y1: number,
+    x2: number,
+    y2: number
+  }
+
+  export interface Glyph {
+    getBoundingBox(): Bounds
+  }
+
+  export interface Path {
+    getBoundingBox(): Bounds
+  }
+
   export interface Font {
     getAdvanceWidth(text: string, size: number): number;
+    stringToGlyphs(text: string): Glyph[];
+    getPath(text: string, x: number, y: number, fontSize: number): Path
   }
   export function loadSync(path: string): Font;
 }

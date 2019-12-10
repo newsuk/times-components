@@ -6,14 +6,16 @@ exports[`1. video label with a title 1`] = `
     Object {
       "alignItems": "flex-start",
       "flexDirection": "row",
-      "marginTop": -1,
+      "marginBottom": -3,
+      "marginTop": 0,
     }
   }
 >
   <View
     style={
       Object {
-        "paddingBottom": 5,
+        "marginBottom": 0,
+        "paddingBottom": 0,
       }
     }
   >
@@ -31,9 +33,10 @@ exports[`1. video label with a title 1`] = `
         "fontSize": 12,
         "fontWeight": "400",
         "letterSpacing": 1.2,
-        "lineHeight": 11,
+        "lineHeight": 12,
         "marginLeft": 5,
-        "paddingTop": 1,
+        "marginTop": 0,
+        "paddingTop": 0,
       }
     }
   >
@@ -48,14 +51,16 @@ exports[`2. video label without a title shows video 1`] = `
     Object {
       "alignItems": "flex-start",
       "flexDirection": "row",
-      "marginTop": -1,
+      "marginBottom": -3,
+      "marginTop": 0,
     }
   }
 >
   <View
     style={
       Object {
-        "paddingBottom": 5,
+        "marginBottom": 0,
+        "paddingBottom": 0,
       }
     }
   >
@@ -73,9 +78,10 @@ exports[`2. video label without a title shows video 1`] = `
         "fontSize": 12,
         "fontWeight": "400",
         "letterSpacing": 1.2,
-        "lineHeight": 11,
+        "lineHeight": 12,
         "marginLeft": 5,
-        "paddingTop": 1,
+        "marginTop": 0,
+        "paddingTop": 0,
       }
     }
   >
@@ -90,14 +96,16 @@ exports[`3. video label with the black default colour 1`] = `
     Object {
       "alignItems": "flex-start",
       "flexDirection": "row",
-      "marginTop": -1,
+      "marginBottom": -3,
+      "marginTop": 0,
     }
   }
 >
   <View
     style={
       Object {
-        "paddingBottom": 5,
+        "marginBottom": 0,
+        "paddingBottom": 0,
       }
     }
   >
@@ -115,9 +123,10 @@ exports[`3. video label with the black default colour 1`] = `
         "fontSize": 12,
         "fontWeight": "400",
         "letterSpacing": 1.2,
-        "lineHeight": 11,
+        "lineHeight": 12,
         "marginLeft": 5,
-        "paddingTop": 1,
+        "marginTop": 0,
+        "paddingTop": 0,
       }
     }
   >

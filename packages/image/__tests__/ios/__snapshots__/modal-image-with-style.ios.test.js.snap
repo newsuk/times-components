@@ -106,16 +106,6 @@ exports[`1. landscape default modal 1`] = `
                 }
               }
             />
-            <Image
-              style={
-                Object {
-                  "aspectRatio": 2,
-                  "borderRadius": 0,
-                  "resizeMode": "contain",
-                  "width": "100%",
-                }
-              }
-            />
           </View>
         </Gestures>
       </SafeAreaView>
@@ -197,16 +187,6 @@ exports[`1. landscape default modal 1`] = `
             "resizeMode": "center",
             "right": 0,
             "top": 0,
-            "width": "100%",
-          }
-        }
-      />
-      <Image
-        style={
-          Object {
-            "aspectRatio": 2,
-            "borderRadius": 0,
-            "resizeMode": "cover",
             "width": "100%",
           }
         }
@@ -322,16 +302,6 @@ exports[`2. portrait default modal 1`] = `
                 }
               }
             />
-            <Image
-              style={
-                Object {
-                  "aspectRatio": 0.5,
-                  "borderRadius": 0,
-                  "resizeMode": "contain",
-                  "width": "100%",
-                }
-              }
-            />
           </View>
         </Gestures>
       </SafeAreaView>
@@ -413,16 +383,6 @@ exports[`2. portrait default modal 1`] = `
             "resizeMode": "center",
             "right": 0,
             "top": 0,
-            "width": "100%",
-          }
-        }
-      />
-      <Image
-        style={
-          Object {
-            "aspectRatio": 0.5,
-            "borderRadius": 0,
-            "resizeMode": "cover",
             "width": "100%",
           }
         }
@@ -538,16 +498,6 @@ exports[`3. tablet landscape default modal 1`] = `
                 }
               }
             />
-            <Image
-              style={
-                Object {
-                  "aspectRatio": 2,
-                  "borderRadius": 0,
-                  "resizeMode": "contain",
-                  "width": "100%",
-                }
-              }
-            />
           </View>
         </Gestures>
       </SafeAreaView>
@@ -629,16 +579,6 @@ exports[`3. tablet landscape default modal 1`] = `
             "resizeMode": "center",
             "right": 0,
             "top": 0,
-            "width": "100%",
-          }
-        }
-      />
-      <Image
-        style={
-          Object {
-            "aspectRatio": 2,
-            "borderRadius": 0,
-            "resizeMode": "cover",
             "width": "100%",
           }
         }
@@ -754,16 +694,6 @@ exports[`4. tablet portrait default modal 1`] = `
                 }
               }
             />
-            <Image
-              style={
-                Object {
-                  "aspectRatio": 0.5,
-                  "borderRadius": 0,
-                  "resizeMode": "contain",
-                  "width": "100%",
-                }
-              }
-            />
           </View>
         </Gestures>
       </SafeAreaView>
@@ -845,16 +775,6 @@ exports[`4. tablet portrait default modal 1`] = `
             "resizeMode": "center",
             "right": 0,
             "top": 0,
-            "width": "100%",
-          }
-        }
-      />
-      <Image
-        style={
-          Object {
-            "aspectRatio": 0.5,
-            "borderRadius": 0,
-            "resizeMode": "cover",
             "width": "100%",
           }
         }

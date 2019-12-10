@@ -33,7 +33,7 @@ exports[`tile z huge 1`] = `
           <View
             style={
               Object {
-                "marginBottom": 5,
+                "marginBottom": 0,
               }
             }
           >
@@ -140,7 +140,7 @@ exports[`tile z wide 1`] = `
           <View
             style={
               Object {
-                "marginBottom": 5,
+                "marginBottom": 0,
               }
             }
           >
@@ -247,7 +247,7 @@ exports[`tile z without breakpoint should be like wide 1`] = `
           <View
             style={
               Object {
-                "marginBottom": 5,
+                "marginBottom": 0,
               }
             }
           >

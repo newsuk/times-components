@@ -23,7 +23,7 @@ exports[`tile x huge 1`] = `
         <View
           style={
             Object {
-              "marginBottom": 5,
+              "marginBottom": 0,
             }
           }
         >
@@ -126,7 +126,7 @@ exports[`tile x medium 1`] = `
         <View
           style={
             Object {
-              "marginBottom": 5,
+              "marginBottom": 0,
             }
           }
         >
@@ -229,7 +229,7 @@ exports[`tile x wide 1`] = `
         <View
           style={
             Object {
-              "marginBottom": 5,
+              "marginBottom": 0,
             }
           }
         >

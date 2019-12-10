@@ -50,7 +50,7 @@ exports[`2. multiple article flags 1`] = `
       "flexDirection": "row",
       "flexWrap": "wrap",
       "marginBottom": 5,
-      "marginTop": 5,
+      "marginTop": 0,
     }
   }
 >

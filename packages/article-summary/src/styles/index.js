@@ -1,5 +1,4 @@
 import { StyleSheet } from "react-native";
-import { spacing } from "@times-components/styleguide";
 import sharedStyles from "./shared";
 
 const styles = StyleSheet.create({
@@ -7,12 +6,10 @@ const styles = StyleSheet.create({
   headline: {
     ...sharedStyles.headline,
     fontWeight: "900",
-    marginBottom: spacing(1),
     includeFontPadding: false
   },
   labelWrapper: {
-    ...sharedStyles.labelWrapper,
-    marginBottom: spacing(1)
+    ...sharedStyles.labelWrapper
   },
   text: {
     ...sharedStyles.text,
@@ -20,12 +17,13 @@ const styles = StyleSheet.create({
   },
   metaText: {
     ...sharedStyles.metaText,
-    marginTop: spacing(1)
+    marginTop: 0,
+    marginBottom: 0
   },
   strapline: {
     ...sharedStyles.strapline,
-    paddingBottom: spacing(1.5),
-    paddingTop: spacing(0.5),
+    paddingBottom: 0,
+    paddingTop: 0,
     includeFontPadding: false
   }
 });

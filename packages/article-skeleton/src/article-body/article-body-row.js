@@ -23,6 +23,7 @@ export default ({
   onLinkPress,
   onTwitterLinkPress,
   onVideoPress,
+  onImagePress,
   isTablet,
   dropcapsDisabled,
   dropCapFont = "dropCap",
@@ -187,7 +188,8 @@ export default ({
         relativeWidth,
         relativeHeight,
         relativeHorizontalOffset,
-        relativeVerticalOffset
+        relativeVerticalOffset,
+        imageIndex
       }
     ) {
       return (
@@ -196,6 +198,7 @@ export default ({
             caption,
             credits
           }}
+          onImagePress={onImagePress}
           key={key}
           imageOptions={{
             display:
@@ -203,6 +206,7 @@ export default ({
                 ? "secondary"
                 : display,
             ratio,
+            index: imageIndex,
             uri: url,
             relativeWidth,
             relativeHeight,
