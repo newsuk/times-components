@@ -65,23 +65,6 @@ export default () => {
 
         expect(testInstance).toMatchSnapshot();
       }
-    },
-    {
-      name: "ad placeholder when isLoading prop is true",
-      test: () => {
-        const testInstance = TestRenderer.create(
-          <AdComposer adConfig={adConfig}>
-            <Ad
-              contextUrl={articleContextURL}
-              isLoading
-              section="news"
-              slotName="header"
-            />
-          </AdComposer>
-        );
-
-        expect(testInstance).toMatchSnapshot();
-      }
     }
   ];
 

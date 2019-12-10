@@ -15,7 +15,6 @@ import adConfig from "../fixtures/article-ad-config.json";
 import Ad, { AdComposer } from "../src/ad";
 
 jest.mock("../src/utils/ad-init");
-jest.mock("../src/ad-placeholder", () => "AdPlaceholder");
 adInit.mockImplementation(() => ({
   destroySlots: () => {},
   init: () => {}
@@ -60,20 +59,6 @@ export default () => {
         const AdComponent = testInstance.root.findAllByType(Ad);
         AdComponent[0].instance.setAdReady();
         AdComponent[1].instance.setAdReady();
-
-        expect(testInstance).toMatchSnapshot();
-      }
-    },
-    {
-      name: "placeholder when isLoading",
-      test: () => {
-        const testInstance = TestRenderer.create(
-          <AdComposer adConfig={adConfig}>
-            <Fragment>
-              <Ad {...props} isLoading slotName="header" />
-            </Fragment>
-          </AdComposer>
-        );
 
         expect(testInstance).toMatchSnapshot();
       }
