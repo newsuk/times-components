@@ -68,7 +68,7 @@ exports[`tile p without breakpoint 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 5,
+          "marginBottom": 0,
         }
       }
     >
@@ -107,9 +107,9 @@ exports[`tile p without breakpoint 1`] = `
           "fontSize": 14,
           "includeFontPadding": false,
           "lineHeight": 20,
-          "paddingBottom": 7.5,
+          "paddingBottom": 0,
           "paddingHorizontal": 40,
-          "paddingTop": 2.5,
+          "paddingTop": 0,
           "textAlign": "center",
         }
       }

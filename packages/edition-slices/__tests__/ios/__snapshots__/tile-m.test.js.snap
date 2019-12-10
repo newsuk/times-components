@@ -40,7 +40,7 @@ exports[`tile m huge 1`] = `
           "includeFontPadding": false,
           "lineHeight": 19,
           "paddingBottom": 5,
-          "paddingTop": 2.5,
+          "paddingTop": 0,
           "textAlign": "center",
         }
       }
@@ -92,7 +92,7 @@ exports[`tile m medium 1`] = `
           "includeFontPadding": false,
           "lineHeight": 19,
           "paddingBottom": 5,
-          "paddingTop": 2.5,
+          "paddingTop": 0,
           "textAlign": "center",
         }
       }
@@ -150,9 +150,9 @@ exports[`tile m small 1`] = `
           "fontSize": 14,
           "includeFontPadding": false,
           "lineHeight": 20,
-          "paddingBottom": 7.5,
+          "paddingBottom": 0,
           "paddingHorizontal": 40,
-          "paddingTop": 2.5,
+          "paddingTop": 0,
           "textAlign": "center",
         }
       }
@@ -204,7 +204,7 @@ exports[`tile m wide 1`] = `
           "includeFontPadding": false,
           "lineHeight": 19,
           "paddingBottom": 5,
-          "paddingTop": 2.5,
+          "paddingTop": 0,
           "textAlign": "center",
         }
       }
@@ -262,9 +262,9 @@ exports[`tile m without breakpoint should be like small 1`] = `
           "fontSize": 14,
           "includeFontPadding": false,
           "lineHeight": 20,
-          "paddingBottom": 7.5,
+          "paddingBottom": 0,
           "paddingHorizontal": 40,
-          "paddingTop": 2.5,
+          "paddingTop": 0,
           "textAlign": "center",
         }
       }

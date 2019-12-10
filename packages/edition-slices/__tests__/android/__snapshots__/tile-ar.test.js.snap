@@ -37,7 +37,7 @@ exports[`tile ar huge 1`] = `
         <View
           style={
             Object {
-              "marginBottom": 5,
+              "marginBottom": 0,
             }
           }
         >
@@ -137,7 +137,7 @@ exports[`tile ar medium 1`] = `
         <View
           style={
             Object {
-              "marginBottom": 5,
+              "marginBottom": 0,
             }
           }
         >
@@ -237,7 +237,7 @@ exports[`tile ar wide 1`] = `
         <View
           style={
             Object {
-              "marginBottom": 5,
+              "marginBottom": 0,
             }
           }
         >
@@ -337,7 +337,7 @@ exports[`tile ar without breakpoint should be like medium 1`] = `
         <View
           style={
             Object {
-              "marginBottom": 5,
+              "marginBottom": 0,
             }
           }
         >

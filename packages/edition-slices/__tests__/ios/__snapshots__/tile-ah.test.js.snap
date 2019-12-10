@@ -38,7 +38,7 @@ exports[`tile ah huge 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 5,
+          "marginBottom": 0,
         }
       }
     >
@@ -79,7 +79,7 @@ exports[`tile ah huge 1`] = `
           "includeFontPadding": false,
           "lineHeight": 20,
           "paddingBottom": 0,
-          "paddingTop": 2.5,
+          "paddingTop": 0,
           "textAlign": "center",
         }
       }
@@ -138,7 +138,7 @@ exports[`tile ah medium 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 5,
+          "marginBottom": 0,
         }
       }
     >
@@ -179,7 +179,7 @@ exports[`tile ah medium 1`] = `
           "includeFontPadding": false,
           "lineHeight": 20,
           "paddingBottom": 0,
-          "paddingTop": 2.5,
+          "paddingTop": 0,
           "textAlign": "center",
         }
       }
@@ -238,7 +238,7 @@ exports[`tile ah wide 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 5,
+          "marginBottom": 0,
         }
       }
     >
@@ -279,7 +279,7 @@ exports[`tile ah wide 1`] = `
           "includeFontPadding": false,
           "lineHeight": 20,
           "paddingBottom": 0,
-          "paddingTop": 2.5,
+          "paddingTop": 0,
           "textAlign": "center",
         }
       }
@@ -338,7 +338,7 @@ exports[`tile ah without breakpoint should be like medium 1`] = `
     <View
       style={
         Object {
-          "marginBottom": 5,
+          "marginBottom": 0,
         }
       }
     >
@@ -379,7 +379,7 @@ exports[`tile ah without breakpoint should be like medium 1`] = `
           "includeFontPadding": false,
           "lineHeight": 20,
           "paddingBottom": 0,
-          "paddingTop": 2.5,
+          "paddingTop": 0,
           "textAlign": "center",
         }
       }
