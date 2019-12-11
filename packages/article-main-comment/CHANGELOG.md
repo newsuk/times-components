@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.16.23](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.16.22...@times-components/article-main-comment@2.16.23) (2019-12-11)
+
+
+### Bug Fixes
+
+* removed placeholder ad, removed ad loading state from storybook … ([#2430](https://github.com/newsuk/times-components/issues/2430)) ([09a76c8](https://github.com/newsuk/times-components/commit/09a76c83ac7dd1097030001cb553f5eab62df78a))
+
+
+
+
+
 ## [2.16.22](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.16.21...@times-components/article-main-comment@2.16.22) (2019-12-11)
 
 **Note:** Version bump only for package @times-components/article-main-comment

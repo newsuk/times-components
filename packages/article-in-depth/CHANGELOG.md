@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.15.44](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.15.43...@times-components/article-in-depth@3.15.44) (2019-12-11)
+
+
+### Bug Fixes
+
+* removed placeholder ad, removed ad loading state from storybook … ([#2430](https://github.com/newsuk/times-components/issues/2430)) ([09a76c8](https://github.com/newsuk/times-components/commit/09a76c83ac7dd1097030001cb553f5eab62df78a))
+
+
+
+
+
 ## [3.15.43](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.15.42...@times-components/article-in-depth@3.15.43) (2019-12-11)
 
 **Note:** Version bump only for package @times-components/article-in-depth
