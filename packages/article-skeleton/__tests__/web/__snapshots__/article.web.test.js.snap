@@ -4,12 +4,12 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
 <div>
   <article
     data-article-identifier="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+    data-article-sectionname="Some Section"
+    id="article-main"
   >
     <Head />
     <div>
-      <Ad
-        contextUrl="https://url.io"
-        section="Some Section"
+      <AdContainer
         slotName="header"
       />
     </div>
@@ -141,9 +141,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
         <p>
           Some content
         </p>
-        <Ad
-          contextUrl="https://url.io"
-          section="Some Section"
+        <AdContainer
           slotName="inline-ad"
         />
         <div>
@@ -360,19 +358,13 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
         />
       </article>
     </main>
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
+    <AdContainer
       slotName="pixel"
     />
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
+    <AdContainer
       slotName="pixelteads"
     />
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
+    <AdContainer
       slotName="pixelskin"
     />
   </article>
@@ -383,12 +375,12 @@ exports[`2. an article with interactives 1`] = `
 <div>
   <article
     data-article-identifier="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+    data-article-sectionname="Some Section"
+    id="article-main"
   >
     <Head />
     <div>
-      <Ad
-        contextUrl="https://url.io"
-        section="Some Section"
+      <AdContainer
         slotName="header"
       />
     </div>
@@ -507,19 +499,13 @@ exports[`2. an article with interactives 1`] = `
         />
       </article>
     </main>
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
+    <AdContainer
       slotName="pixel"
     />
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
+    <AdContainer
       slotName="pixelteads"
     />
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
+    <AdContainer
       slotName="pixelskin"
     />
   </article>
@@ -530,12 +516,12 @@ exports[`3. an article with no content 1`] = `
 <div>
   <article
     data-article-identifier="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+    data-article-sectionname="Some Section"
+    id="article-main"
   >
     <Head />
     <div>
-      <Ad
-        contextUrl="https://url.io"
-        section="Some Section"
+      <AdContainer
         slotName="header"
       />
     </div>
@@ -632,19 +618,13 @@ exports[`3. an article with no content 1`] = `
         />
       </article>
     </main>
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
+    <AdContainer
       slotName="pixel"
     />
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
+    <AdContainer
       slotName="pixelteads"
     />
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
+    <AdContainer
       slotName="pixelskin"
     />
   </article>
@@ -655,12 +635,12 @@ exports[`4. an article with no content if content is set as null 1`] = `
 <div>
   <article
     data-article-identifier="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+    data-article-sectionname="Some Section"
+    id="article-main"
   >
     <Head />
     <div>
-      <Ad
-        contextUrl="https://url.io"
-        section="Some Section"
+      <AdContainer
         slotName="header"
       />
     </div>
@@ -757,19 +737,13 @@ exports[`4. an article with no content if content is set as null 1`] = `
         />
       </article>
     </main>
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
+    <AdContainer
       slotName="pixel"
     />
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
+    <AdContainer
       slotName="pixelteads"
     />
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
+    <AdContainer
       slotName="pixelskin"
     />
   </article>
@@ -780,12 +754,12 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
 <div>
   <article
     data-article-identifier="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+    data-article-sectionname="Some Section"
+    id="article-main"
   >
     <Head />
     <div>
-      <Ad
-        contextUrl="https://url.io"
-        section="Some Section"
+      <AdContainer
         slotName="header"
       />
     </div>
@@ -846,19 +820,13 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
         />
       </article>
     </main>
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
+    <AdContainer
       slotName="pixel"
     />
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
+    <AdContainer
       slotName="pixelteads"
     />
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
+    <AdContainer
       slotName="pixelskin"
     />
   </article>

@@ -6,7 +6,10 @@ export const UserState = mockUserState();
 jest.mock("../src/head.web", () => "Head");
 
 // eslint-disable-next-line global-require
-jest.mock("@times-components/ad", () => require("./ad-mock"));
+jest.mock("@times-components/ad", () => ({
+  __esModule: true,
+  AdContainer: "AdContainer"
+}));
 jest.mock("@times-components/article-byline", () => ({
   ArticleBylineWithLinks: "ArticleBylineWithLinks",
   hasBylineData: () => true
