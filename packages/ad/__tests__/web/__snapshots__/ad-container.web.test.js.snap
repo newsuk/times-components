@@ -1,13 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ad-container advert placeholder 1`] = `
-<div>
-  <div
-    id="ad-header"
-  />
-</div>
-`;
-
 exports[`ad-container header ad 1`] = `
 <div>
   <div
