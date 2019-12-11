@@ -44,9 +44,7 @@ export const responsiveDisplayWrapper = displayType => {
 const renderers = ({ paidContentClassName }) => ({
   ...coreRenderers,
   ad(key) {
-    return (
-      <AdContainer key={key} slotName="inline-ad" style={styles.ad} />
-    );
+    return <AdContainer key={key} slotName="inline-ad" style={styles.ad} />;
   },
   dropCap(key, attrs, children) {
     return (

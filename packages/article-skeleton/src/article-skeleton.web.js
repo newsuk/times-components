@@ -103,10 +103,7 @@ class ArticleSkeleton extends Component {
             <Fragment>
               <Fragment>
                 <HeaderAdContainer key="headerAd">
-                  <AdContainer
-                    slotName="header"
-                    style={adStyle}
-                  />
+                  <AdContainer slotName="header" style={adStyle} />
                 </HeaderAdContainer>
                 <MainContainer accessibilityRole="main">
                   <HeaderContainer>

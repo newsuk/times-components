@@ -9,7 +9,6 @@ import {
 } from "@times-components/jest-serializer";
 import AdContainer from "../../src/ad-container.web";
 
-
 describe("ad-container", () => {
   addSerializers(
     expect,
@@ -17,14 +16,12 @@ describe("ad-container", () => {
       print,
       minimaliseTransform((value, key) => key === "style"),
       minimalNativeTransform
-      )
-    );
-    
-    it("advert placeholder", () => {
-      const testInstance = TestRenderer.create(
-        <AdContainer slotName="header" />
-        );
-        
-        expect(testInstance).toMatchSnapshot();
-      });
-})
+    )
+  );
+
+  it("advert placeholder", () => {
+    const testInstance = TestRenderer.create(<AdContainer slotName="header" />);
+
+    expect(testInstance).toMatchSnapshot();
+  });
+});
