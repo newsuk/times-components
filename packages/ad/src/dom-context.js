@@ -2,6 +2,7 @@ import React, { PureComponent } from "react";
 import { View, Linking, Platform } from "react-native";
 import { WebView } from "react-native-webview";
 import { Viewport } from "@skele/components";
+import DeviceInfo from "react-native-device-info";
 import webviewEventCallbackSetup from "./utils/webview-event-callback-setup";
 import logger from "./utils/logger";
 import { propTypes, defaultProps } from "./dom-context-prop-types";
@@ -33,7 +34,14 @@ class DOMContext extends PureComponent {
   }
 
   componentDidMount() {
-    this.deviceInfo = {};
+    this.deviceInfo = {
+      applicationName: DeviceInfo.getApplicationName(),
+      buildNumber: DeviceInfo.getBuildNumber(),
+      bundleId: DeviceInfo.getBundleId(),
+      deviceId: DeviceInfo.getDeviceId(),
+      readableVersion: DeviceInfo.getReadableVersion(),
+      version: DeviceInfo.getVersion()
+    };
   }
 
   handleNavigationStateChange = ({ url }) => {
@@ -88,7 +96,7 @@ class DOMContext extends PureComponent {
           unrulyViewportStatus(${JSON.stringify({
             ...this.deviceInfo,
             visible: false
-          })})
+          })});
         };
       `);
   };
@@ -102,13 +110,13 @@ class DOMContext extends PureComponent {
   inViewport = () => {
     this.isVisible = true;
     this.webView.injectJavaScript(`
-        if (typeof unrulyViewportStatus === "function") {
-          unrulyViewportStatus(${JSON.stringify({
-            ...this.deviceInfo,
-            visible: true
-          })})
-        };
-      `);
+          if (typeof unrulyViewportStatus === "function") {
+            unrulyViewportStatus(${JSON.stringify({
+              ...this.deviceInfo,
+              visible: true
+            })})
+          };
+        `);
   };
 
   render() {
@@ -174,7 +182,6 @@ class DOMContext extends PureComponent {
         </body>
       </html>
     `;
-    const { loaded } = this.state;
     return (
       <ViewportAwareView
         onViewportEnter={this.loadAd}
@@ -183,25 +190,21 @@ class DOMContext extends PureComponent {
           width
         }}
       >
-        {loaded && (
-          <WebView
-            onMessage={this.handleMessageEvent}
-            onNavigationStateChange={this.handleNavigationStateChange}
-            originWhitelist={
-              Platform.OS === "android"
-                ? ["http://.*", "https://.*"]
-                : undefined
-            }
-            ref={ref => {
-              this.webView = ref;
-            }}
-            source={{
-              baseUrl,
-              html
-            }}
-            style={{ position: "absolute", width, height }}
-          />
-        )}
+        <WebView
+          onMessage={this.handleMessageEvent}
+          onNavigationStateChange={this.handleNavigationStateChange}
+          originWhitelist={
+            Platform.OS === "android" ? ["http://.*", "https://.*"] : undefined
+          }
+          ref={ref => {
+            this.webView = ref;
+          }}
+          source={{
+            baseUrl,
+            html
+          }}
+          style={{ position: "absolute", width, height }}
+        />
         {height !== 0 && (
           <ViewportAwareView
             onViewportEnter={this.inViewport}

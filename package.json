@@ -163,7 +163,7 @@
     "newskit": "0.0.0-70b3f4d2c",
     "react-art": "16.6.3",
     "react-native": "0.61.1",
-    "react-native-device-info": "3.0.0",
+    "react-native-device-info": "5.3.1",
     "react-native-showcase-loader": "1.1.0"
   }
 }

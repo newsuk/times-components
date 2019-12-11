@@ -18155,10 +18155,10 @@ react-native-color-picker@^0.4.0:
     prop-types "^15.5.10"
     tinycolor2 "^1.4.1"
 
-react-native-device-info@3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/react-native-device-info/-/react-native-device-info-3.0.0.tgz#3eb6c4c9427e337268074e6a3e27230d1d0c4178"
-  integrity sha512-GdCIp6SBiOhxhkWcUcFy7RIn9elaJ4DC8UEcs7KBC3bwfZyx/jHwqQc7jk6IFYiI3/+7/rnJletVy8DkSkVOUw==
+react-native-device-info@5.3.1:
+  version "5.3.1"
+  resolved "https://registry.yarnpkg.com/react-native-device-info/-/react-native-device-info-5.3.1.tgz#d764732c4841b6b6c2f42516e8840075717ea88a"
+  integrity sha512-e/fRDoah+HxItscOJTGJY8zyVKmBUdf53VWIDGLGV4VVZ0mfzIQ2uo0ULGri0vjGUYqgyqgnW3jybPSznMxKcA==
 
 react-native-hooks@0.9.0:
   version "0.9.0"
