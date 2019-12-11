@@ -19,9 +19,30 @@ describe("ad-container", () => {
     )
   );
 
-  it("advert placeholder", () => {
+  it("header ad", () => {
     const testInstance = TestRenderer.create(<AdContainer slotName="header" />);
-
+    expect(testInstance).toMatchSnapshot();
+  });
+  it("inline ad", () => {
+    const testInstance = TestRenderer.create(
+      <AdContainer slotName="inline-ad" />
+    );
+    expect(testInstance).toMatchSnapshot();
+  });
+  it("pixel ad", () => {
+    const testInstance = TestRenderer.create(<AdContainer slotName="pixel" />);
+    expect(testInstance).toMatchSnapshot();
+  });
+  it("pixelteads ad", () => {
+    const testInstance = TestRenderer.create(
+      <AdContainer slotName="pixelteads" />
+    );
+    expect(testInstance).toMatchSnapshot();
+  });
+  it("pixelskin ad", () => {
+    const testInstance = TestRenderer.create(
+      <AdContainer slotName="pixelskin" />
+    );
     expect(testInstance).toMatchSnapshot();
   });
 });

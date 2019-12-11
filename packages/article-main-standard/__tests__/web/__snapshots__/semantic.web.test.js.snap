@@ -3,6 +3,8 @@
 exports[`1. a full article with an image as the lead asset 1`] = `
 <article
   data-article-identifier="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+  data-article-sectionname="Some Section"
+  id="article-main"
 >
   <Helmet>
     <title>

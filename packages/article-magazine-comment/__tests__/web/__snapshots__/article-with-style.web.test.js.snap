@@ -542,7 +542,7 @@ exports[`full article with style 1`] = `
     <div
       className="c0 responsiveweb__HeaderAdContainer-sc-1exejum-1 c0 css-view-1dbjc4n"
     >
-      <Ad
+      <AdContainer
         className="IS1"
       />
     </div>
@@ -706,7 +706,7 @@ exports[`full article with style 1`] = `
             </figcaption>
           </figure>
         </div>
-        <Ad
+        <AdContainer
           className="IS12"
         />
         <div>
@@ -726,9 +726,9 @@ exports[`full article with style 1`] = `
         <ArticleExtras />
       </article>
     </main>
-    <Ad />
-    <Ad />
-    <Ad />
+    <AdContainer />
+    <AdContainer />
+    <AdContainer />
   </article>
 </div>
 `;
@@ -1283,7 +1283,7 @@ exports[`full article with style in the culture magazine 1`] = `
     <div
       className="c0 responsiveweb__HeaderAdContainer-sc-1exejum-1 c0 css-view-1dbjc4n"
     >
-      <Ad
+      <AdContainer
         className="IS1"
       />
     </div>
@@ -1447,7 +1447,7 @@ exports[`full article with style in the culture magazine 1`] = `
             </figcaption>
           </figure>
         </div>
-        <Ad
+        <AdContainer
           className="IS14"
         />
         <div>
@@ -1467,9 +1467,9 @@ exports[`full article with style in the culture magazine 1`] = `
         <ArticleExtras />
       </article>
     </main>
-    <Ad />
-    <Ad />
-    <Ad />
+    <AdContainer />
+    <AdContainer />
+    <AdContainer />
   </article>
 </div>
 `;
@@ -2025,7 +2025,7 @@ exports[`full article with style in the style magazine 1`] = `
     <div
       className="c0 responsiveweb__HeaderAdContainer-sc-1exejum-1 c0 css-view-1dbjc4n"
     >
-      <Ad
+      <AdContainer
         className="IS1"
       />
     </div>
@@ -2189,7 +2189,7 @@ exports[`full article with style in the style magazine 1`] = `
             </figcaption>
           </figure>
         </div>
-        <Ad
+        <AdContainer
           className="IS14"
         />
         <div>
@@ -2209,9 +2209,9 @@ exports[`full article with style in the style magazine 1`] = `
         <ArticleExtras />
       </article>
     </main>
-    <Ad />
-    <Ad />
-    <Ad />
+    <AdContainer />
+    <AdContainer />
+    <AdContainer />
   </article>
 </div>
 `;
@@ -2766,7 +2766,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
     <div
       className="c0 responsiveweb__HeaderAdContainer-sc-1exejum-1 c0 css-view-1dbjc4n"
     >
-      <Ad
+      <AdContainer
         className="IS1"
       />
     </div>
@@ -2930,7 +2930,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
             </figcaption>
           </figure>
         </div>
-        <Ad
+        <AdContainer
           className="IS14"
         />
         <div>
@@ -2950,9 +2950,9 @@ exports[`full article with style in the sunday times magazine 1`] = `
         <ArticleExtras />
       </article>
     </main>
-    <Ad />
-    <Ad />
-    <Ad />
+    <AdContainer />
+    <AdContainer />
+    <AdContainer />
   </article>
 </div>
 `;

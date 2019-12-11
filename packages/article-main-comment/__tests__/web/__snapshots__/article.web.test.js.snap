@@ -8,6 +8,8 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
 <div>
   <article
     data-article-identifier="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+    data-article-sectionname="Some Section"
+    id="article-main"
   >
     <Helmet>
       <title>
@@ -67,9 +69,7 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
       </script>
     </Helmet>
     <div>
-      <Ad
-        contextUrl="https://url.io"
-        section="Some Section"
+      <AdContainer
         slotName="header"
       />
     </div>
@@ -229,19 +229,13 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
         />
       </article>
     </main>
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
+    <AdContainer
       slotName="pixel"
     />
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
+    <AdContainer
       slotName="pixelteads"
     />
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
+    <AdContainer
       slotName="pixelskin"
     />
   </article>
@@ -252,6 +246,8 @@ exports[`4. an article with ads 1`] = `
 <div>
   <article
     data-article-identifier="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+    data-article-sectionname="Some Section"
+    id="article-main"
   >
     <Helmet>
       <title>
@@ -311,9 +307,7 @@ exports[`4. an article with ads 1`] = `
       </script>
     </Helmet>
     <div>
-      <Ad
-        contextUrl="https://url.io"
-        section="Some Section"
+      <AdContainer
         slotName="header"
       />
     </div>
@@ -408,9 +402,7 @@ exports[`4. an article with ads 1`] = `
       <article
         role="article"
       >
-        <Ad
-          contextUrl="https://url.io"
-          section="Some Section"
+        <AdContainer
           slotName="inline-ad"
         />
         <ArticleExtras
@@ -475,19 +467,13 @@ exports[`4. an article with ads 1`] = `
         />
       </article>
     </main>
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
+    <AdContainer
       slotName="pixel"
     />
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
+    <AdContainer
       slotName="pixelteads"
     />
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
+    <AdContainer
       slotName="pixelskin"
     />
   </article>

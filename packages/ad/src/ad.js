@@ -5,7 +5,7 @@ import { Platform, View } from "react-native";
 import { screenWidth, ServerClientRender } from "@times-components/utils";
 import { getPrebidSlotConfig, getSlotConfig, prebidConfig } from "./utils";
 import adInit from "./utils/ad-init";
-import AdContainer from "./ad-container"
+import AdContainer from "./ad-container";
 import DOMContext from "./dom-context";
 import AdComposer from "./ad-composer";
 import { defaultProps, propTypes } from "./ad-prop-types";
