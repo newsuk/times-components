@@ -137,7 +137,7 @@ exports[`1. a primary image 1`] = `
     <div
       className="c0 responsiveweb__HeaderAdContainer-sc-1exejum-1 c0 css-view-1dbjc4n"
     >
-      <Ad
+      <AdContainer
         className="IS1"
       />
     </div>
@@ -177,9 +177,9 @@ exports[`1. a primary image 1`] = `
         <ArticleExtras />
       </article>
     </main>
-    <Ad />
-    <Ad />
-    <Ad />
+    <AdContainer />
+    <AdContainer />
+    <AdContainer />
   </article>
 </div>
 `;
@@ -304,7 +304,7 @@ exports[`2. a fullwidth image 1`] = `
     <div
       className="c0 responsiveweb__HeaderAdContainer-sc-1exejum-1 c0 css-view-1dbjc4n"
     >
-      <Ad
+      <AdContainer
         className="IS1"
       />
     </div>
@@ -344,9 +344,9 @@ exports[`2. a fullwidth image 1`] = `
         <ArticleExtras />
       </article>
     </main>
-    <Ad />
-    <Ad />
-    <Ad />
+    <AdContainer />
+    <AdContainer />
+    <AdContainer />
   </article>
 </div>
 `;
@@ -495,7 +495,7 @@ exports[`3. a secondary image 1`] = `
     <div
       className="c0 responsiveweb__HeaderAdContainer-sc-1exejum-1 c0 css-view-1dbjc4n"
     >
-      <Ad
+      <AdContainer
         className="IS1"
       />
     </div>
@@ -535,9 +535,9 @@ exports[`3. a secondary image 1`] = `
         <ArticleExtras />
       </article>
     </main>
-    <Ad />
-    <Ad />
-    <Ad />
+    <AdContainer />
+    <AdContainer />
+    <AdContainer />
   </article>
 </div>
 `;
@@ -687,7 +687,7 @@ exports[`4. an inline image 1`] = `
     <div
       className="c0 responsiveweb__HeaderAdContainer-sc-1exejum-1 c0 css-view-1dbjc4n"
     >
-      <Ad
+      <AdContainer
         className="IS1"
       />
     </div>
@@ -727,9 +727,9 @@ exports[`4. an inline image 1`] = `
         <ArticleExtras />
       </article>
     </main>
-    <Ad />
-    <Ad />
-    <Ad />
+    <AdContainer />
+    <AdContainer />
+    <AdContainer />
   </article>
 </div>
 `;

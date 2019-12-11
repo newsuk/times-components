@@ -4,12 +4,12 @@ exports[`Article with user state Render full article when user has access to ful
 <div>
   <article
     data-article-identifier="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+    data-article-sectionname="Some Section"
+    id="article-main"
   >
     <Head />
     <div>
-      <Ad
-        contextUrl="https://url.io"
-        section="Some Section"
+      <AdContainer
         slotName="header"
       />
     </div>
@@ -332,19 +332,13 @@ exports[`Article with user state Render full article when user has access to ful
         />
       </article>
     </main>
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
+    <AdContainer
       slotName="pixel"
     />
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
+    <AdContainer
       slotName="pixelteads"
     />
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
+    <AdContainer
       slotName="pixelskin"
     />
   </article>
@@ -355,12 +349,12 @@ exports[`Article with user state Render teaser article when user does not have a
 <div>
   <article
     data-article-identifier="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+    data-article-sectionname="Some Section"
+    id="article-main"
   >
     <Head />
     <div>
-      <Ad
-        contextUrl="https://url.io"
-        section="Some Section"
+      <AdContainer
         slotName="header"
       />
     </div>
@@ -683,19 +677,13 @@ exports[`Article with user state Render teaser article when user does not have a
         />
       </article>
     </main>
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
+    <AdContainer
       slotName="pixel"
     />
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
+    <AdContainer
       slotName="pixelteads"
     />
-    <Ad
-      contextUrl="https://url.io"
-      section="Some Section"
+    <AdContainer
       slotName="pixelskin"
     />
   </article>

@@ -68,13 +68,15 @@ const articleTemplateTest = template =>
         .visit("/article/8763d1a0-ca57-11e8-bde6-fae32479843d")
         .wait(2000);
 
-      cy.get("#header")
-        .should("be.visible")
-        .should("not.be.empty");
+      cy.get("#ad-header").should("exist");
 
-      cy.get("#header")
-        .get("googleQueryId")
-        .should("not.be.empty");
+      cy.get("#ad-article-inline").should("exist");
+
+      cy.get("#ad-pixel").should("exist");
+
+      cy.get("#ad-pixelteads").should("exist");
+
+      cy.get("#ad-pixelskin").should("exist");
     });
 
     it("has SpotIM comment tag when article comments are enabled", () => {

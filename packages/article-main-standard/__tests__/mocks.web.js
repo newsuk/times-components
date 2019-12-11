@@ -5,7 +5,10 @@ export const UserState = mockUserState();
 
 jest.mock("react-helmet-async", () => ({ Helmet: "Helmet" }));
 // eslint-disable-next-line global-require
-jest.mock("@times-components/ad", () => require("./ad-mock"));
+jest.mock("@times-components/ad", () => ({
+  __esModule: true,
+  AdContainer: "AdContainer"
+}));
 jest.mock("@times-components/article-byline", () => ({
   ArticleBylineWithLinks: "ArticleBylineWithLinks",
   hasBylineData: () => true

@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ad-container header ad 1`] = `
+<div>
+  <div
+    id="ad-header"
+  />
+</div>
+`;
+
+exports[`ad-container inline ad 1`] = `
+<div>
+  <div
+    id="ad-article-inline"
+  />
+</div>
+`;
+
+exports[`ad-container pixel ad 1`] = `
+<div>
+  <div
+    id="ad-pixel"
+  />
+</div>
+`;
+
+exports[`ad-container pixelskin ad 1`] = `
+<div>
+  <div
+    id="ad-pixelskin"
+  />
+</div>
+`;
+
+exports[`ad-container pixelteads ad 1`] = `
+<div>
+  <div
+    id="ad-pixelteads"
+  />
+</div>
+`;

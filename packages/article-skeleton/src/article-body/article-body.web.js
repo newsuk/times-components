@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Ad from "@times-components/ad";
+import { AdContainer } from "@times-components/ad";
 import LazyLoad from "@times-components/lazy-load";
 import ArticleImage from "@times-components/article-image";
 import ArticleParagraph, {
@@ -43,10 +43,8 @@ export const responsiveDisplayWrapper = displayType => {
 
 const renderers = ({ paidContentClassName }) => ({
   ...coreRenderers,
-  ad(key, attributes) {
-    return (
-      <Ad key={key} slotName="inline-ad" style={styles.ad} {...attributes} />
-    );
+  ad(key) {
+    return <AdContainer key={key} slotName="inline-ad" style={styles.ad} />;
   },
   dropCap(key, attrs, children) {
     return (
