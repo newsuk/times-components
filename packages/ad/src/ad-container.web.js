@@ -1,10 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { ViewPropTypes } from "react-native";
+import { View, ViewPropTypes } from "react-native";
 
 import styles from "./styles";
 
-import { View } from "react-native";
 
 const AdContainer = ({slotName, style}) => {
   
@@ -25,7 +24,7 @@ const AdContainer = ({slotName, style}) => {
 
 const propTypes = {
   slotName: PropTypes.string.isRequired,
-  style: ViewPropTypes.style,
+  style: ViewPropTypes.style.isRequired,
 };
 
 AdContainer.propTypes = propTypes

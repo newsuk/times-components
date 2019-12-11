@@ -150,9 +150,10 @@ export default () => {
 
         setup();
 
-        expect(
-          global.window.requestIdleCallback
-        ).toHaveBeenCalledWith(sendScheduler.sendEvents, { timeout: 2000 });
+        expect(global.window.requestIdleCallback).toHaveBeenCalledWith(
+          sendScheduler.sendEvents,
+          { timeout: 2000 }
+        );
       });
 
       it("should not schedule multiple sends", async () => {
