@@ -130,57 +130,6 @@ exports[`1. multiple ad slots 1`] = `
 exports[`2. placeholder when isloading 1`] = `
 <style>
 .IS1 {
-  left: 0;
-  position: absolute;
-  top: 0;
-}
-
-.IS2 {
-  background-color: #F9F9F9;
-  border-color: #DBDBDB;
-  border-style: solid;
-  border-width: 1;
-  color: #696969;
-  font-family: TimesDigitalW04;
-  font-size: 11;
-  line-height: 15;
-  letter-spacing: 1.5;
-  padding-bottom: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
-  z-index: 1;
-}
-
-.IS3 {
-  height: 250px;
-  width: 970px;
-}
-
-.IS4 {
-  align-items: center;
-  background-color: #F9F9F9;
-  border-color: #DBDBDB;
-  border-style: solid;
-  border-width: 1;
-  justify-content: center;
-  overflow: hidden;
-  height: 250;
-  width: 970;
-}
-
-.IS5 {
-  align-items: center;
-  flex: 1;
-  justify-content: center;
-  min-height: auto;
-}
-
-.IS6 {
-  flex: 1;
-}
-
-.IS7 {
   align-items: center;
   flex: 1;
 }
@@ -197,58 +146,11 @@ exports[`2. placeholder when isloading 1`] = `
     server={null}
   >
     <View
-      className="IS7"
+      className="IS1"
     >
       <div
         className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0"
-      >
-        <AdPlaceholder
-          className="IS6"
-          height={250}
-          width={970}
-        >
-          <View
-            className="IS5"
-          >
-            <div
-              className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0 r-justifyContent-1777fci r-minHeight-tv6buo"
-            >
-              <View
-                className="IS4"
-                testID="ad-placeholder"
-              >
-                <div
-                  className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-gbtiil r-borderColor-1kv57cf r-borderStyle-1phboty r-borderWidth-rs99b7 r-justifyContent-1777fci r-overflow-1udh08x IS3"
-                  data-testid="ad-placeholder"
-                >
-                  <View
-                    className="IS1"
-                  >
-                    <div
-                      className="css-view-1dbjc4n r-left-1d2f490 r-position-u8s1d r-top-ipm5af"
-                    >
-                      <Watermark
-                        height={250}
-                        viewBox="-630 120 1200 50"
-                        width={970}
-                      />
-                    </div>
-                  </View>
-                  <Text
-                    className="IS2"
-                  >
-                    <div
-                      className="css-text-901oao r-backgroundColor-gbtiil r-borderColor-1kv57cf r-borderStyle-1phboty r-borderWidth-rs99b7 r-color-1khp51w r-fontFamily-1feecvn r-fontSize-1gkfh8e r-letterSpacing-i933xg r-lineHeight-fxxt2n r-paddingBottom-1inuy60 r-paddingLeft-1hfyk0a r-paddingRight-1qfoi16 r-paddingTop-glunga r-zIndex-184en5c"
-                    >
-                      ADVERTISEMENT
-                    </div>
-                  </Text>
-                </div>
-              </View>
-            </div>
-          </View>
-        </AdPlaceholder>
-      </div>
+      />
     </View>
   </MockServerClientRender>
 </Ad>
@@ -263,57 +165,6 @@ exports[`3. nothing if there is an error in the loading of scripts 1`] = `
 }
 
 .IS2 {
-  left: 0;
-  position: absolute;
-  top: 0;
-}
-
-.IS3 {
-  background-color: #F9F9F9;
-  border-color: #DBDBDB;
-  border-style: solid;
-  border-width: 1;
-  color: #696969;
-  font-family: TimesDigitalW04;
-  font-size: 11;
-  line-height: 15;
-  letter-spacing: 1.5;
-  padding-bottom: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
-  z-index: 1;
-}
-
-.IS4 {
-  height: 250px;
-  width: 970px;
-}
-
-.IS5 {
-  align-items: center;
-  background-color: #F9F9F9;
-  border-color: #DBDBDB;
-  border-style: solid;
-  border-width: 1;
-  justify-content: center;
-  overflow: hidden;
-  height: 250;
-  width: 970;
-}
-
-.IS6 {
-  align-items: center;
-  flex: 1;
-  justify-content: center;
-  min-height: auto;
-}
-
-.IS7 {
-  flex: 1;
-}
-
-.IS8 {
   align-items: center;
   flex: 1;
 }
@@ -330,7 +181,7 @@ exports[`3. nothing if there is an error in the loading of scripts 1`] = `
     server={null}
   >
     <View
-      className="IS8"
+      className="IS2"
     >
       <div
         className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0"
@@ -344,52 +195,6 @@ exports[`3. nothing if there is an error in the loading of scripts 1`] = `
             className="IS1"
           />
         </DOMContext>
-        <AdPlaceholder
-          className="IS7"
-          height={250}
-          width={970}
-        >
-          <View
-            className="IS6"
-          >
-            <div
-              className="css-view-1dbjc4n r-alignItems-1awozwy r-flex-13awgt0 r-justifyContent-1777fci r-minHeight-tv6buo"
-            >
-              <View
-                className="IS5"
-                testID="ad-placeholder"
-              >
-                <div
-                  className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-gbtiil r-borderColor-1kv57cf r-borderStyle-1phboty r-borderWidth-rs99b7 r-justifyContent-1777fci r-overflow-1udh08x IS4"
-                  data-testid="ad-placeholder"
-                >
-                  <View
-                    className="IS2"
-                  >
-                    <div
-                      className="css-view-1dbjc4n r-left-1d2f490 r-position-u8s1d r-top-ipm5af"
-                    >
-                      <Watermark
-                        height={250}
-                        viewBox="-630 120 1200 50"
-                        width={970}
-                      />
-                    </div>
-                  </View>
-                  <Text
-                    className="IS3"
-                  >
-                    <div
-                      className="css-text-901oao r-backgroundColor-gbtiil r-borderColor-1kv57cf r-borderStyle-1phboty r-borderWidth-rs99b7 r-color-1khp51w r-fontFamily-1feecvn r-fontSize-1gkfh8e r-letterSpacing-i933xg r-lineHeight-fxxt2n r-paddingBottom-1inuy60 r-paddingLeft-1hfyk0a r-paddingRight-1qfoi16 r-paddingTop-glunga r-zIndex-184en5c"
-                    >
-                      ADVERTISEMENT
-                    </div>
-                  </Text>
-                </div>
-              </View>
-            </div>
-          </View>
-        </AdPlaceholder>
       </div>
     </View>
   </MockServerClientRender>

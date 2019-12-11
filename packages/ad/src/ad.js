@@ -5,7 +5,6 @@ import { Platform, View } from "react-native";
 import { screenWidth, ServerClientRender } from "@times-components/utils";
 import { getPrebidSlotConfig, getSlotConfig, prebidConfig } from "./utils";
 import adInit from "./utils/ad-init";
-import AdPlaceholder from "./ad-placeholder";
 import DOMContext from "./dom-context";
 import AdComposer from "./ad-composer";
 import { defaultProps, propTypes } from "./ad-prop-types";
@@ -130,13 +129,6 @@ class Ad extends Component {
             {...sizeProps}
           />
         )}
-        {isLoading || !isAdReady ? (
-          <AdPlaceholder
-            height={config.maxSizes.height}
-            style={styles.children}
-            width={config.maxSizes.width}
-          />
-        ) : null}
       </View>
     );
 

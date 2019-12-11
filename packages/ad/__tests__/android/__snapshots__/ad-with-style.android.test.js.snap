@@ -65,16 +65,4 @@ Array [
 ]
 `;
 
-exports[`2. placeholder when isloading 1`] = `
-<View
-  className="IS2"
->
-  <AdPlaceholder
-    className="IS1"
-    height={50}
-    width={320}
-  />
-</View>
-`;
-
-exports[`3. return null if there is an error in the loading of scripts 1`] = `null`;
+exports[`2. return null if there is an error in the loading of scripts 1`] = `null`;
