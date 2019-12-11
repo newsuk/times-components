@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.22.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.21.30...@times-components/article-skeleton@1.22.0) (2019-12-11)
+
+
+### Features
+
+* add basic implementation for ads ([#2434](https://github.com/newsuk/times-components/issues/2434)) ([6089276](https://github.com/newsuk/times-components/commit/608927657ab4da51b85c9486315c6a449787848d))
+
+
+
+
+
 ## [1.21.30](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.21.29...@times-components/article-skeleton@1.21.30) (2019-12-11)
 
 **Note:** Version bump only for package @times-components/article-skeleton

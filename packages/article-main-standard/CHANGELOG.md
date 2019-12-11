@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.19.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.18.28...@times-components/article-main-standard@3.19.0) (2019-12-11)
+
+
+### Features
+
+* add basic implementation for ads ([#2434](https://github.com/newsuk/times-components/issues/2434)) ([6089276](https://github.com/newsuk/times-components/commit/608927657ab4da51b85c9486315c6a449787848d))
+
+
+
+
+
 ## [3.18.28](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.18.27...@times-components/article-main-standard@3.18.28) (2019-12-11)
 
 
