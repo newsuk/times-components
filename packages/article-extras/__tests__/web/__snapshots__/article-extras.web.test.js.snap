@@ -17,8 +17,12 @@ Array [
     />
   </div>,
   <div
-    id="sponsored-article"
-  />,
+    id="sponsored-article-container"
+  >
+    <div
+      id="sponsored-article"
+    />
+  </div>,
   <ArticleComments
     articleId="dummy-article-id"
     isEnabled={true}
@@ -85,8 +89,12 @@ Array [
     />
   </div>,
   <div
-    id="sponsored-article"
-  />,
+    id="sponsored-article-container"
+  >
+    <div
+      id="sponsored-article"
+    />
+  </div>,
   <ArticleComments
     articleId="dummy-article-id"
     isEnabled={true}
@@ -97,6 +105,10 @@ Array [
 
 exports[`3. no related articles, topics and comments when user not logged in, only sponsored div 1`] = `
 <div
-  id="sponsored-article"
-/>
+  id="sponsored-article-container"
+>
+  <div
+    id="sponsored-article"
+  />
+</div>
 `;

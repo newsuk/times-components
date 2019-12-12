@@ -22,12 +22,14 @@ const ArticleExtras = ({
   spotAccountId,
   topics
 }) => {
-  /* Nativo inserts Sponsored Articles in this div */
-  const sponsoredArticle = (
-    <div id="sponsored-article" key="sponsored-article" />
+  /* Nativo insert Sponsored Articles after the div#sponsored-article element. They are not able to insert directly into that element hence the container div */
+  const sponsoredArticles = (
+    <div id="sponsored-article-container">
+      <div id="sponsored-article" />
+    </div>
   );
   return (
-    <UserState state={UserState.fullArticle} fallback={sponsoredArticle}>
+    <UserState state={UserState.fullArticle} fallback={sponsoredArticles}>
       <ArticleTopics topics={topics} />
       {(savingEnabled || sharingEnabled) && (
         <UserState state={UserState.loggedInOrShared}>
@@ -56,7 +58,7 @@ const ArticleExtras = ({
           slice={relatedArticleSlice}
         />
       </div>
-      {sponsoredArticle}
+      {sponsoredArticles}
       <ArticleComments
         articleId={articleId}
         isEnabled={commentsEnabled}
