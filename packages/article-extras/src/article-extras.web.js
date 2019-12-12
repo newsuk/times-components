@@ -25,7 +25,7 @@ const ArticleExtras = ({
   /* Nativo insert Sponsored Articles after the div#sponsored-article element. They are not able to insert directly into that element hence the container div */
   const sponsoredArticles = (
     <div id="sponsored-article-container">
-      <div id="sponsored-article" key="sponsored-article" />
+      <div id="sponsored-article" />
     </div>
   );
   return (
