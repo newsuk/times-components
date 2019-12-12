@@ -91,12 +91,14 @@ const ResponsiveImage = (props: ResponsiveImageProps) => {
     url.query.rel_width = (relativeWidth || 1).toString();
     url.query.rel_height = (relativeHeight || 1).toString();
     if (relativeVerticalOffset) {
-      url.query.rel_vertical_offset = (relativeVerticalOffset || 0).toString();
+      url.query.rel_vertical_offset = relativeVerticalOffset.toString();
+    } else {
+      url.query.rel_vertical_offset = '0';
     }
     if (relativeHorizontalOffset) {
-      url.query.rel_horizontal_offset = (
-        relativeHorizontalOffset || 0
-      ).toString();
+      url.query.rel_horizontal_offset = relativeHorizontalOffset.toString();
+    } else {
+      url.query.rel_horizontal_offset = '0';
     }
     url.query.offline = 'true';
   }
@@ -175,7 +177,7 @@ const ResponsiveImage = (props: ResponsiveImageProps) => {
         setShowOffline(true);
         setFailed(true);
         if (onError) {
-          onError()
+          onError();
         }
       }}
       resize={resize}
