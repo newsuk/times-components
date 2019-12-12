@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.15.163](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.15.162...@times-components/ios-app@0.15.163) (2019-12-12)
+
+
+### Bug Fixes
+
+* (REPLAT-11167) fix ios ads ([#2435](https://github.com/newsuk/times-components/issues/2435)) ([7aeaa52](https://github.com/newsuk/times-components/commit/7aeaa520803aa9373bbeba82b60614f5f1f4897d))
+
+
+
+
+
 ## [0.15.162](https://github.com/newsuk/times-components/compare/@times-components/ios-app@0.15.161...@times-components/ios-app@0.15.162) (2019-12-11)
 
 **Note:** Version bump only for package @times-components/ios-app

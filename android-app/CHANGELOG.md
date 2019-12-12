@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.16.141](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.16.140...@times-components/android-app@0.16.141) (2019-12-12)
+
+
+### Bug Fixes
+
+* (REPLAT-11167) fix ios ads ([#2435](https://github.com/newsuk/times-components/issues/2435)) ([7aeaa52](https://github.com/newsuk/times-components/commit/7aeaa520803aa9373bbeba82b60614f5f1f4897d))
+
+
+
+
+
 ## [0.16.140](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.16.139...@times-components/android-app@0.16.140) (2019-12-11)
 
 **Note:** Version bump only for package @times-components/android-app

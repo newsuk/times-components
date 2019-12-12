@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.9.1](https://github.com/newsuk/times-components/compare/@times-components/ad@2.9.0...@times-components/ad@2.9.1) (2019-12-12)
+
+
+### Bug Fixes
+
+* (REPLAT-11167) fix ios ads ([#2435](https://github.com/newsuk/times-components/issues/2435)) ([7aeaa52](https://github.com/newsuk/times-components/commit/7aeaa520803aa9373bbeba82b60614f5f1f4897d))
+
+
+
+
+
 # [2.9.0](https://github.com/newsuk/times-components/compare/@times-components/ad@2.8.24...@times-components/ad@2.9.0) (2019-12-11)
 
 
