@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.47](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.4.46...@times-components/article-extras@0.4.47) (2019-12-12)
+
+
+### Bug Fixes
+
+* **REPLAT-11036:** Wrap sponsored article div to fix issue with commenting ([#2436](https://github.com/newsuk/times-components/issues/2436)) ([a37229c](https://github.com/newsuk/times-components/commit/a37229cfc744fceac5e1ad497f093bcc01b920f4))
+
+
+
+
+
 ## [0.4.46](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.4.45...@times-components/article-extras@0.4.46) (2019-12-12)
 
 **Note:** Version bump only for package @times-components/article-extras
