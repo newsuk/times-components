@@ -4,6 +4,7 @@ import { TextLink } from "@times-components/link";
 import renderByline from "./render-byline";
 import { propTypes, defaultProps } from "./article-byline-prop-types";
 import styles from "./styles";
+import withTrackEvents from '../tracking/with-track-events';
 
 const renderAuthorComponent = (
   children,
@@ -12,11 +13,17 @@ const renderAuthorComponent = (
   { onAuthorPress, className }
 ) => {
   const url = `/profile/${attributes.slug}`;
+  const onPress = (e) => {
+    console.log('=====> trigger onpress', attributes.slug, url);
+    onAuthorPress(e, { slug: attributes.slug, url })
+  }
+
+
   return (
     <TextLink
       className={className}
       key={key}
-      onPress={e => onAuthorPress(e, { slug: attributes.slug, url })}
+      onPress={onPress}
       style={styles.link}
       url={url}
     >
@@ -24,6 +31,8 @@ const renderAuthorComponent = (
     </TextLink>
   );
 };
+
+
 
 const ArticleBylineWithLinks = ({ ast, centered, ...props }) =>
   renderByline(
@@ -41,4 +50,4 @@ ArticleBylineWithLinks.displayName = "ArticleBylineWithLinks";
 ArticleBylineWithLinks.propTypes = propTypes;
 ArticleBylineWithLinks.defaultProps = defaultProps;
 
-export default ArticleBylineWithLinks;
+export default withTrackEvents(ArticleBylineWithLinks);
