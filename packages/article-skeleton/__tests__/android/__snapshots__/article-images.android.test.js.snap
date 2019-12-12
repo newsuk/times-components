@@ -10,6 +10,7 @@ exports[`1. a primary image 1`] = `
         />
       </Gutter>
     }
+    extraData={true}
     initialNumToRender={2}
     maxToRenderPerBatch={10}
     nestedScrollEnabled={true}
@@ -84,6 +85,7 @@ exports[`2. a fullwidth image 1`] = `
         />
       </Gutter>
     }
+    extraData={true}
     initialNumToRender={2}
     maxToRenderPerBatch={10}
     nestedScrollEnabled={true}
@@ -158,6 +160,7 @@ exports[`3. a secondary image 1`] = `
         />
       </Gutter>
     }
+    extraData={true}
     initialNumToRender={2}
     maxToRenderPerBatch={10}
     nestedScrollEnabled={true}
@@ -232,6 +235,7 @@ exports[`4. an inline image 1`] = `
         />
       </Gutter>
     }
+    extraData={true}
     initialNumToRender={2}
     maxToRenderPerBatch={10}
     nestedScrollEnabled={true}
