@@ -25,6 +25,7 @@ export default ({
   onVideoPress,
   onImagePress,
   isTablet,
+  adConfig,
   dropcapsDisabled,
   dropCapFont = "dropCap",
   scale
@@ -175,7 +176,14 @@ export default ({
       );
     },
     ad(key, attributes) {
-      return <Ad key={key} slotName="native-inline-ad" {...attributes} />;
+      return (
+        <Ad
+          key={key}
+          adConfig={adConfig}
+          slotName="native-inline-ad"
+          {...attributes}
+        />
+      );
     },
     image(
       key,

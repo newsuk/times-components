@@ -22,6 +22,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
         />
       </Gutter>
     }
+    extraData={true}
     initialNumToRender={2}
     maxToRenderPerBatch={10}
     nestedScrollEnabled={true}
@@ -360,6 +361,7 @@ exports[`2. an article with interactives 1`] = `
         />
       </Gutter>
     }
+    extraData={true}
     initialNumToRender={2}
     maxToRenderPerBatch={10}
     nestedScrollEnabled={true}
@@ -518,6 +520,7 @@ exports[`3. an article with no content 1`] = `
         />
       </Gutter>
     }
+    extraData={true}
     initialNumToRender={2}
     maxToRenderPerBatch={10}
     nestedScrollEnabled={true}
@@ -636,6 +639,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
         />
       </Gutter>
     }
+    extraData={true}
     initialNumToRender={2}
     maxToRenderPerBatch={10}
     nestedScrollEnabled={true}
@@ -1273,6 +1277,7 @@ exports[`8. breaks up malformed huge paragraphs 1`] = `
         />
       </Gutter>
     }
+    extraData={true}
     initialNumToRender={2}
     maxToRenderPerBatch={10}
     nestedScrollEnabled={true}
@@ -1506,6 +1511,7 @@ exports[`9. breaks up nested malformed markup 1`] = `
         />
       </Gutter>
     }
+    extraData={true}
     initialNumToRender={2}
     maxToRenderPerBatch={10}
     nestedScrollEnabled={true}
@@ -1739,6 +1745,7 @@ exports[`10. renders content 1`] = `
         />
       </Gutter>
     }
+    extraData={true}
     initialNumToRender={2}
     maxToRenderPerBatch={10}
     nestedScrollEnabled={true}

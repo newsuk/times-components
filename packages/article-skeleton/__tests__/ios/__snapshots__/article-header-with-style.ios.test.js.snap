@@ -10,6 +10,7 @@ exports[`1. article with header 1`] = `
         />
       </Gutter>
     }
+    extraData={true}
     initialNumToRender={2}
     maxToRenderPerBatch={10}
     nestedScrollEnabled={true}

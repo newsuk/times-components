@@ -141,6 +141,10 @@ class Ad extends Component {
   }
 
   render() {
+    const { adConfig: propAdConfig } = this.props;
+    if (propAdConfig) {
+      return this.renderAd(propAdConfig);
+    }
     return (
       <Subscriber channel="adConfig">
         {adConfig => this.renderAd(adConfig)}
