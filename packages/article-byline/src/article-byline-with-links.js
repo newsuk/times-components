@@ -10,20 +10,16 @@ const renderAuthorComponent = (
   children,
   key,
   attributes,
-  { onAuthorPress, className }
+  { onPress, className }
 ) => {
-  const url = `/profile/${attributes.slug}`;
-  const onPress = (e) => {
-    console.log('=====> trigger onpress', attributes.slug, url);
-    onAuthorPress(e, { slug: attributes.slug, url })
-  }
-
+  const slug = attributes.slug;
+  const url = `/profile/${slug}`;
 
   return (
     <TextLink
       className={className}
       key={key}
-      onPress={onPress}
+      onPress={(e) => {onPress(e, {slug, url})}}
       style={styles.link}
       url={url}
     >
