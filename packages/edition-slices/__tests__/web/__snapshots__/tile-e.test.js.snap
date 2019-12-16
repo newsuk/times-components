@@ -252,7 +252,6 @@ exports[`tile e small 1`] = `
   font-family: TimesModern-Bold;
   font-size: 22px;
   font-weight: 400;
-  margin-bottom: 5px;
 }
 
 .S3 {
@@ -273,6 +272,7 @@ exports[`tile e small 1`] = `
 
 .IS2 {
   line-height: 22px;
+  margin-bottom: 10px;
 }
 
 .IS3 {
@@ -333,7 +333,7 @@ exports[`tile e small 1`] = `
         </div>
         <h3
           aria-level="3"
-          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
+          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 IS2 S2"
           role="heading"
         >
           This is tile headline
@@ -497,7 +497,7 @@ exports[`tile e without breakpoint should be like small 1`] = `
   font-family: TimesModern-Bold;
   font-size: 22px;
   font-weight: 400;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .S3 {
@@ -578,7 +578,7 @@ exports[`tile e without breakpoint should be like small 1`] = `
         </div>
         <h3
           aria-level="3"
-          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-d0pm55 IS2 S2"
+          className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-marginBottom-15d164r IS2 S2"
           role="heading"
         >
           This is tile headline

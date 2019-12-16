@@ -16,7 +16,8 @@ const defaultStyles = {
     ...fontFactory({
       font: "headline",
       fontSize: "infoTitle"
-    })
+    }),
+    marginBottom: spacing(2)
   },
   imageContainer: {
     overflow: "hidden",

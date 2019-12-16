@@ -251,7 +251,7 @@ exports[`tile e small 1`] = `
               "fontWeight": "900",
               "includeFontPadding": false,
               "lineHeight": 20,
-              "marginBottom": 5,
+              "marginBottom": 10,
             }
           }
         >
@@ -448,7 +448,7 @@ exports[`tile e without breakpoint should be like small 1`] = `
               "fontWeight": "900",
               "includeFontPadding": false,
               "lineHeight": 20,
-              "marginBottom": 5,
+              "marginBottom": 10,
             }
           }
         >
