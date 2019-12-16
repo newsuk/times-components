@@ -46,16 +46,13 @@ const ArticleWithContent = props => {
 
   const { id, url, content } = data;
 
-  const onViewableItemsChanged = useCallback(
-    info => {
-      if (!onViewed || !info.changed || !info.changed.length) return [];
+  const onViewableItemsChanged = useCallback(info => {
+    if (!onViewed || !info.changed || !info.changed.length) return [];
 
-      return info.changed
-        .filter(viewableItem => viewableItem.isViewable)
-        .map(viewableItem => onViewed(viewableItem.item, data));
-    },
-    [data, onViewed]
-  );
+    return info.changed
+      .filter(viewableItem => viewableItem.isViewable)
+      .map(viewableItem => onViewed(viewableItem.item, data));
+  }, []);
 
   const [loading, setLoading] = useState(true);
   const Loading = useCallback(
