@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.22.5](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.22.4...@times-components/article-skeleton@1.22.5) (2019-12-16)
+
+
+### Bug Fixes
+
+* invalid callback change ([#2441](https://github.com/newsuk/times-components/issues/2441)) ([6662e8f](https://github.com/newsuk/times-components/commit/6662e8ff8ccb89962040963f67ea40f371ffbc87))
+
+
+
+
+
 ## [1.22.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.22.3...@times-components/article-skeleton@1.22.4) (2019-12-16)
 
 
