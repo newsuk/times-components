@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.3.153](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@1.3.152...@times-components/article-paragraph@1.3.153) (2019-12-16)
+
+**Note:** Version bump only for package @times-components/article-paragraph
+
+
+
+
+
 ## [1.3.152](https://github.com/newsuk/times-components/compare/@times-components/article-paragraph@1.3.151...@times-components/article-paragraph@1.3.152) (2019-12-13)
 
 **Note:** Version bump only for package @times-components/article-paragraph

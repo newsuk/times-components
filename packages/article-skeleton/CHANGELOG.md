@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.22.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.22.3...@times-components/article-skeleton@1.22.4) (2019-12-16)
+
+
+### Bug Fixes
+
+* unnecessary rerender in article ([#2438](https://github.com/newsuk/times-components/issues/2438)) ([4d14e4a](https://github.com/newsuk/times-components/commit/4d14e4a281256b6fea117ffe819cc77c1348a064))
+
+
+
+
+
 ## [1.22.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.22.2...@times-components/article-skeleton@1.22.3) (2019-12-13)
 
 
