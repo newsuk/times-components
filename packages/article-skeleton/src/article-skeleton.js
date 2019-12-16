@@ -54,7 +54,7 @@ const ArticleWithContent = props => {
         .filter(viewableItem => viewableItem.isViewable)
         .map(viewableItem => onViewed(viewableItem.item, data));
     },
-    [data, onViewed]
+    []
   );
 
   const [loading, setLoading] = useState(true);
