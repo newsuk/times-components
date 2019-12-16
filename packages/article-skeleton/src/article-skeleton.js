@@ -59,18 +59,17 @@ const ArticleWithContent = props => {
 
   const [loading, setLoading] = useState(true);
   const Loading = useCallback(
-    () =>
-      loading ? (
-        <Gutter>
-          <ActivityIndicator size="large" />
-        </Gutter>
-      ) : null,
+    () => (
+      <Gutter>
+        <ActivityIndicator size="large" animating={loading} />
+      </Gutter>
+    ),
     [loading]
   );
 
-  const onEndReached = useCallback(() => {
+  const onEndReached = () => {
     setLoading(false);
-  }, []);
+  };
 
   const header = useMemo(
     () => (
@@ -95,15 +94,7 @@ const ArticleWithContent = props => {
         />
       </Gutter>
     ),
-    [
-      analyticsStream,
-      id,
-      onCommentGuidelinesPress,
-      onCommentsPress,
-      onRelatedArticlePress,
-      onTopicPress,
-      url
-    ]
+    []
   );
 
   const dropcapsDisabled = isDropcapsDisabled(data);
@@ -119,7 +110,7 @@ const ArticleWithContent = props => {
         </ErrorBoundary>
       </Gutter>
     ),
-    [footer, renderChild]
+    [footer]
   );
 
   const fixedContent = useMemo(
