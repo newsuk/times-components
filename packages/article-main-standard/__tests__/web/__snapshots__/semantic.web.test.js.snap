@@ -142,6 +142,7 @@ exports[`1. a full article with an image as the lead asset 1`] = `
     </span>
     Share
     <a
+      href=""
       target={null}
     >
       <svg
@@ -202,6 +203,7 @@ exports[`1. a full article with an image as the lead asset 1`] = `
       </svg>
     </a>
     <a
+      href=""
       target={null}
     >
       <svg
@@ -314,6 +316,7 @@ exports[`1. a full article with an image as the lead asset 1`] = `
       </nav>
       Share
       <a
+        href=""
         target={null}
       >
         <svg
@@ -374,6 +377,7 @@ exports[`1. a full article with an image as the lead asset 1`] = `
         </svg>
       </a>
       <a
+        href=""
         target={null}
       >
         <svg
