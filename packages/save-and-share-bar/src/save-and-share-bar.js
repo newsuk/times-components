@@ -94,6 +94,7 @@ class SaveAndShareBar extends Component {
               hoverColor={styles.svgIcon.hoverFillColour}
               onPress={this.copyToClipboard}
               dataTestId="copy-to-clickboard"
+              url=""
             >
               <IconCopyLink
                 fillColour="currentColor"

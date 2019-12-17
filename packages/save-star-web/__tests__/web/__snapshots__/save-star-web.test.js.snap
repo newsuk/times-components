@@ -42,6 +42,7 @@ Array [
     Saved
   </div>,
   <a
+    href=""
     target={null}
   >
     <div>
@@ -72,6 +73,7 @@ Array [
     Save
   </div>,
   <a
+    href=""
     target={null}
   >
     <div>
