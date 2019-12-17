@@ -25,7 +25,7 @@ const smallBreakpointStyles = {
     ...sharedStyles.headline,
     fontSize: 25,
     lineHeight: 25,
-    marginBottom: spacing(2)
+    marginBottom: spacing(1)
   },
   summary: {
     marginBottom: spacing(1.75)

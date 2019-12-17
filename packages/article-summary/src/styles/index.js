@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { spacing } from "@times-components/styleguide";
 import sharedStyles from "./shared";
 
 const styles = StyleSheet.create({
@@ -22,7 +23,7 @@ const styles = StyleSheet.create({
   },
   strapline: {
     ...sharedStyles.strapline,
-    paddingBottom: 0,
+    paddingBottom: spacing(1),
     paddingTop: 0,
     includeFontPadding: false
   }

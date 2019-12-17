@@ -31,7 +31,7 @@ exports[`2. article summary strapline component 1`] = `
       "fontSize": 22,
       "includeFontPadding": false,
       "lineHeight": 24,
-      "paddingBottom": 0,
+      "paddingBottom": 5,
       "paddingTop": 0,
     }
   }

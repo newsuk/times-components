@@ -7,7 +7,6 @@ Array [
   >
     <View
       className="IS4"
-      inViewport={false}
     >
       <View
         className="IS2"
@@ -37,7 +36,6 @@ Array [
   >
     <View
       className="IS4"
-      inViewport={false}
     >
       <View
         className="IS2"

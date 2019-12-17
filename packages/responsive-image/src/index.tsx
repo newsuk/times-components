@@ -196,7 +196,12 @@ const ResponsiveImage = (props: ResponsiveImageProps) => {
         }
         setShowPlaceholder(false);
       }}
-      onError={onError}
+      onError={() => {
+        onError && onError()
+        setShowOffline(false)
+        setFailed(true)
+        setShowPlaceholder(true)
+      }}
       resize={resize}
       fadeDuration={0}
     />
@@ -207,7 +212,9 @@ const ResponsiveImage = (props: ResponsiveImageProps) => {
       source={logoPath}
       borderRadius={0}
       onLoadEnd={() => {
-        setShowOffline(true);
+        if (!failed) {
+          setShowOffline(true);
+        }
       }}
       fadeDuration={0}
       style={{ resizeMode: 'center', width, height: '100%' }}

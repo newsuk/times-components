@@ -26,13 +26,6 @@ class DOMContext extends PureComponent {
       .catch(err => console.error("An error occurred", err)); // eslint-disable-line no-console
   }
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      loaded: false
-    };
-  }
-
   componentDidMount() {
     this.deviceInfo = {
       applicationName: DeviceInfo.getApplicationName(),
@@ -67,14 +60,13 @@ class DOMContext extends PureComponent {
       return;
     }
     const { type, detail } = JSON.parse(json);
-    const { loaded } = this.state;
     const { isVisible } = this;
     switch (type) {
       case "renderFailed":
         onRenderError();
         break;
       case "unrulyLoaded": {
-        if (loaded && isVisible) {
+        if (isVisible) {
           this.inViewport();
         }
         break;
@@ -99,12 +91,6 @@ class DOMContext extends PureComponent {
           })});
         };
       `);
-  };
-
-  loadAd = () => {
-    this.setState({
-      loaded: true
-    });
   };
 
   inViewport = () => {
@@ -183,8 +169,7 @@ class DOMContext extends PureComponent {
       </html>
     `;
     return (
-      <ViewportAwareView
-        onViewportEnter={this.loadAd}
+      <View
         style={{
           height,
           width
@@ -212,7 +197,7 @@ class DOMContext extends PureComponent {
             style={calculateViewportVisible(height)}
           />
         )}
-      </ViewportAwareView>
+      </View>
     );
   }
 }
