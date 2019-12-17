@@ -7,12 +7,7 @@ import { propTypes, defaultProps } from "./article-byline-prop-types";
 import styles from "./styles";
 import withTrackEvents from "../tracking/with-track-events";
 
-const renderAuthorComponent = ({
-  slug,
-  className,
-  onAuthorPress,
-  children
-}) => {
+const AuthorComponent = ({ slug, className, onAuthorPress, children }) => {
   const url = `/profile/${slug}`;
   const name = children[0];
 
@@ -32,7 +27,7 @@ const renderAuthorComponent = ({
 
 const ArticleBylineWithLinks = ({ ast, centered, ...props }) =>
   renderByline(
-    withTrackEvents(renderAuthorComponent),
+    withTrackEvents(AuthorComponent),
     ast,
     // TODO: revert platform switch after design signoff
     centered && Platform.OS === "web"

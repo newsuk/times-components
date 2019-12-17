@@ -1,7 +1,6 @@
 import React from "react";
 import { View } from "react-native";
 import TestRenderer from "react-test-renderer";
-import { shallow } from "enzyme";
 import { iterator } from "@times-components/test-utils";
 import ArticleByline from "../src/article-byline";
 import authorsFixture from "../fixtures/authors.json";
@@ -84,49 +83,6 @@ export default Component => {
       }
     }
   ];
-
-  if (Component.displayName === "ArticleBylineWithLinks") {
-    tests.push(
-      {
-        name: "handle the onPress event",
-        test: () => {
-          const onAuthorPressMock = jest.fn();
-          const wrapper = shallow(
-            <Component
-              ast={authorsFixture.singleAuthor}
-              onAuthorPress={onAuthorPressMock}
-            />
-          );
-
-          console.log("WRAPPER ===>", onAuthorPressMock);
-
-          wrapper
-            .at(0)
-            .dive()
-            .find("Text")
-            .simulate("press");
-
-          expect(onAuthorPressMock).toHaveBeenCalled();
-        }
-      },
-      {
-        name: "handle an empty onPress event",
-        test: () => {
-          const wrapper = shallow(
-            <Component ast={authorsFixture.singleAuthor} />
-          );
-
-          expect(() =>
-            wrapper
-              .at(0)
-              .dive()
-              .find("Text")
-              .simulate("press")
-          ).not.toThrow();
-        }
-      }
-    );
-  }
 
   iterator(tests);
 };
