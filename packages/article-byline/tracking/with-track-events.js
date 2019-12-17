@@ -5,10 +5,10 @@ export default Component =>
     analyticsEvents: [
       {
         actionName: "Pressed",
-        eventName: "onPress",
-        getAttrs: ({ slug, url }) => ({
-          slug,
-          url
+        eventName: "onAuthorPress",
+        getAttrs: ({ name, slug }) => ({
+          name,
+          slug
         }),
         trackingName: "ArticlePressAuthor"
       }

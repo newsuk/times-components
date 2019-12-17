@@ -98,6 +98,8 @@ export default Component => {
             />
           );
 
+          console.log("WRAPPER ===>", onAuthorPressMock);
+
           wrapper
             .at(0)
             .dive()
