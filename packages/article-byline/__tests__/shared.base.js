@@ -5,6 +5,7 @@ import { shallow } from "enzyme";
 import { iterator } from "@times-components/test-utils";
 import ArticleByline from "../src/article-byline";
 import authorsFixture from "../fixtures/authors.json";
+import ArticleBylineWithLinks from "../src/article-byline-with-links";
 
 export default Component => {
   const renderArticleByline = props =>
@@ -86,44 +87,22 @@ export default Component => {
   ];
 
   if (Component.displayName === "ArticleBylineWithLinks") {
-    tests.push(
-      {
-        name: "handle the onPress event",
-        test: () => {
-          const onAuthorPressMock = jest.fn();
-          const wrapper = shallow(
-            <Component
-              ast={authorsFixture.singleAuthor}
-              onAuthorPress={onAuthorPressMock}
-            />
-          );
+    tests.push({
+      name: "handle an empty onPress event",
+      test: () => {
+        const wrapper = shallow(
+          <ArticleBylineWithLinks ast={authorsFixture.singleAuthor} />
+        );
 
+        expect(() =>
           wrapper
             .at(0)
             .dive()
-            .find("Text")
-            .simulate("press");
-
-          expect(onAuthorPressMock).toHaveBeenCalled();
-        }
-      },
-      {
-        name: "handle an empty onPress event",
-        test: () => {
-          const wrapper = shallow(
-            <Component ast={authorsFixture.singleAuthor} />
-          );
-
-          expect(() =>
-            wrapper
-              .at(0)
-              .dive()
-              .find("Text")
-              .simulate("press")
-          ).not.toThrow();
-        }
+            .find("AuthorComponent")
+            .simulate("press")
+        ).not.toThrow();
       }
-    );
+    });
   }
 
   iterator(tests);

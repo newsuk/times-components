@@ -1,15 +1,11 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 import { Text } from "react-native";
 import renderByline from "./render-byline";
 import { propTypes, defaultProps } from "./article-byline-prop-types";
 import styles from "./styles";
 
-const renderAuthorComponent = (
-  children,
-  key,
-  attributes,
-  { className, bylineStyle }
-) => (
+const AuthorComponent = ({ children, key, className, bylineStyle }) => (
   <Text
     className={className}
     key={key}
@@ -20,7 +16,7 @@ const renderAuthorComponent = (
 );
 
 const ArticleByline = ({ ast, ...props }) =>
-  renderByline(renderAuthorComponent, ast, styles.nonLinkText, props);
+  renderByline(AuthorComponent, ast, styles.nonLinkText, props);
 
 ArticleByline.displayName = "ArticleByline";
 

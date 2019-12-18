@@ -67,6 +67,7 @@
     "@times-components/markup": "3.4.17",
     "@times-components/markup-forest": "1.7.30",
     "@times-components/styleguide": "3.33.14",
+    "@times-components/tracking": "2.5.17",
     "prop-types": "15.7.2"
   },
   "resolutions": {
