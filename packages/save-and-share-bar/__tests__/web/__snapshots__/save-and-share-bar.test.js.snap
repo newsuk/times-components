@@ -3,6 +3,7 @@
 exports[`save and share bar component email icon when tokenising with loading state while network request is fetching data 1`] = `
 <BarItem
   dataTestId="email-share"
+  url=""
 >
   <div
     aria-valuemax="1"
@@ -133,6 +134,7 @@ exports[`save and share bar component save and share bar renders correctly when 
     </div>
     <BarItem
       dataTestId="email-share"
+      url=""
     >
       <IconEmail
         fillColour="currentColor"
@@ -166,6 +168,7 @@ exports[`save and share bar component save and share bar renders correctly when 
       color="#696969"
       dataTestId="copy-to-clickboard"
       hoverColor="#1D1D1B"
+      url=""
     >
       <IconCopyLink
         fillColour="currentColor"
@@ -273,6 +276,7 @@ exports[`save and share bar component save and share bar renders correctly when 
     </div>
     <BarItem
       dataTestId="email-share"
+      url=""
     >
       <IconEmail
         fillColour="currentColor"
@@ -306,6 +310,7 @@ exports[`save and share bar component save and share bar renders correctly when 
       color="#696969"
       dataTestId="copy-to-clickboard"
       hoverColor="#1D1D1B"
+      url=""
     >
       <IconCopyLink
         fillColour="currentColor"

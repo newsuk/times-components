@@ -34,7 +34,11 @@ function SaveStar({
     const { fillColour, strokeColour } = getStyles({ saveStatus: savedStatus });
     return (
       // eslint-disable-next-line jsx-a11y/anchor-is-valid
-      <Link onPress={onSaveButtonPress} responsiveLinkStyles={styles.link}>
+      <Link
+        onPress={onSaveButtonPress}
+        responsiveLinkStyles={styles.link}
+        url=""
+      >
         <IconContainer colour={colour} hoverColour={hoverColour}>
           <IconStar
             fillColour={fillColour}

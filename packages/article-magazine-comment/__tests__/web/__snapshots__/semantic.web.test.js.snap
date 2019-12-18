@@ -129,6 +129,7 @@ exports[`1. a full article 1`] = `
     </figure>
     Share
     <a
+      href=""
       target={null}
     >
       <svg
@@ -189,6 +190,7 @@ exports[`1. a full article 1`] = `
       </svg>
     </a>
     <a
+      href=""
       target={null}
     >
       <svg
@@ -301,6 +303,7 @@ exports[`1. a full article 1`] = `
       </nav>
       Share
       <a
+        href=""
         target={null}
       >
         <svg
@@ -361,6 +364,7 @@ exports[`1. a full article 1`] = `
         </svg>
       </a>
       <a
+        href=""
         target={null}
       >
         <svg
