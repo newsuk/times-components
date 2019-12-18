@@ -66,19 +66,6 @@ export default () => {
     expect(inViewport).toHaveBeenCalledTimes(1);
   });
 
-  it("doesnt call inViewport when it receives a unrulyLoaded event from the webview and we are not loaded", () => {
-    const inViewport = jest.fn();
-    const component = new DOMContextNative(DOMContextNative.defaultProps);
-    component.state = {
-      loaded: false
-    };
-    component.isVisible = true;
-    component.inViewport = inViewport;
-
-    component.handleMessageEvent(makeMessageEvent("unrulyLoaded"));
-    expect(inViewport).toHaveBeenCalledTimes(0);
-  });
-
   it("doesnt call inViewport when it receives a unrulyLoaded event from the webview and we are not visible", () => {
     const inViewport = jest.fn();
     const component = new DOMContextNative(DOMContextNative.defaultProps);

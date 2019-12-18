@@ -17,7 +17,7 @@ const defaultStyles = {
       font: "headline",
       fontSize: "infoTitle"
     }),
-    marginBottom: spacing(2)
+    marginBottom: spacing(1)
   },
   imageContainer: {
     overflow: "hidden",

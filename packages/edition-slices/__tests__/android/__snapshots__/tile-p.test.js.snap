@@ -107,7 +107,7 @@ exports[`tile p without breakpoint 1`] = `
           "fontSize": 14,
           "includeFontPadding": false,
           "lineHeight": 20,
-          "paddingBottom": 0,
+          "paddingBottom": 5,
           "paddingHorizontal": 40,
           "paddingTop": 0,
           "textAlign": "center",

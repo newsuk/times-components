@@ -259,7 +259,7 @@ exports[`tile n small 1`] = `
             "fontSize": 14,
             "includeFontPadding": false,
             "lineHeight": 24,
-            "paddingBottom": 0,
+            "paddingBottom": 5,
             "paddingTop": 0,
           }
         }
@@ -458,7 +458,7 @@ exports[`tile n with default star 1`] = `
             "fontSize": 14,
             "includeFontPadding": false,
             "lineHeight": 24,
-            "paddingBottom": 0,
+            "paddingBottom": 5,
             "paddingTop": 0,
           }
         }
@@ -558,7 +558,7 @@ exports[`tile n without breakpoint should be like small 1`] = `
             "fontSize": 14,
             "includeFontPadding": false,
             "lineHeight": 24,
-            "paddingBottom": 0,
+            "paddingBottom": 5,
             "paddingTop": 0,
           }
         }
