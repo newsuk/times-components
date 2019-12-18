@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.36](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.8.35...@times-components/save-and-share-bar@0.8.36) (2019-12-18)
+
+
+### Bug Fixes
+
+* **REPLAT-10511:** tabbing issue in share and save bar ([#2442](https://github.com/newsuk/times-components/issues/2442)) ([6875b57](https://github.com/newsuk/times-components/commit/6875b57f42436c7e1ed9ecaebaef34bffb566635))
+
+
+
+
+
 ## [0.8.35](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.8.34...@times-components/save-and-share-bar@0.8.35) (2019-12-11)
 
 **Note:** Version bump only for package @times-components/save-and-share-bar

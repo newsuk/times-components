@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.19](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.4.18...@times-components/save-star-web@0.4.19) (2019-12-18)
+
+
+### Bug Fixes
+
+* **REPLAT-10511:** tabbing issue in share and save bar ([#2442](https://github.com/newsuk/times-components/issues/2442)) ([6875b57](https://github.com/newsuk/times-components/commit/6875b57f42436c7e1ed9ecaebaef34bffb566635))
+
+
+
+
+
 ## [0.4.18](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.4.17...@times-components/save-star-web@0.4.18) (2019-12-10)
 
 **Note:** Version bump only for package @times-components/save-star-web

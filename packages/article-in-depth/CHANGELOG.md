@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.16.6](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.16.5...@times-components/article-in-depth@3.16.6) (2019-12-18)
+
+
+### Bug Fixes
+
+* **REPLAT-10511:** tabbing issue in share and save bar ([#2442](https://github.com/newsuk/times-components/issues/2442)) ([6875b57](https://github.com/newsuk/times-components/commit/6875b57f42436c7e1ed9ecaebaef34bffb566635))
+
+
+
+
+
 ## [3.16.5](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.16.4...@times-components/article-in-depth@3.16.5) (2019-12-16)
 
 **Note:** Version bump only for package @times-components/article-in-depth
