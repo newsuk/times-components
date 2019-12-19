@@ -3,6 +3,7 @@
 exports[`1. iconemail renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
+  aria-label="icon-email"
   bbWidth={20}
   focusable={false}
   meetOrSlice={0}
@@ -154,6 +155,7 @@ exports[`1. iconemail renders 1`] = `
 exports[`2. iconfacebook renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
+  aria-label="icon-facebook"
   bbWidth={20}
   focusable={false}
   meetOrSlice={0}
@@ -305,6 +307,7 @@ exports[`2. iconfacebook renders 1`] = `
 exports[`3. iconforwardarrow renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
+  aria-label="icon-forward-arrow"
   bbHeight={12}
   bbWidth={7}
   focusable={false}
@@ -458,6 +461,7 @@ exports[`3. iconforwardarrow renders 1`] = `
 exports[`4. iconstar renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
+  aria-label="icon-save-star"
   bbWidth={20}
   focusable={false}
   meetOrSlice={0}
@@ -567,6 +571,7 @@ exports[`4. iconstar renders 1`] = `
 exports[`5. iconcopylink renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
+  aria-label="icon-copy-link"
   bbHeight={15}
   bbWidth={20}
   focusable={false}
@@ -681,6 +686,7 @@ exports[`5. iconcopylink renders 1`] = `
 exports[`6. iconsavebookmark renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
+  aria-label="icon-save-bookmark"
   bbHeight={16}
   bbWidth={20}
   focusable={false}
@@ -795,6 +801,7 @@ exports[`6. iconsavebookmark renders 1`] = `
 exports[`7. icontwitter renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
+  aria-label="icon-twitter"
   bbWidth={20}
   focusable={false}
   meetOrSlice={0}
@@ -904,6 +911,7 @@ exports[`7. icontwitter renders 1`] = `
 exports[`8. iconvideo renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
+  aria-label="icon-video"
   bbWidth={20}
   focusable={false}
   meetOrSlice={0}
@@ -1058,6 +1066,7 @@ exports[`8. iconvideo renders 1`] = `
 exports[`9. iconvideo360player renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
+  aria-label="icon-video-360-player"
   bbWidth={20}
   focusable={false}
   meetOrSlice={0}
@@ -1167,6 +1176,7 @@ exports[`9. iconvideo360player renders 1`] = `
 exports[`10. thestlogo renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
+  aria-label="logo-the-sunday-times"
   bbWidth={20}
   focusable={false}
   meetOrSlice={0}
@@ -1276,6 +1286,7 @@ exports[`10. thestlogo renders 1`] = `
 exports[`11. thetimeslogo renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
+  aria-label="logo-the-times"
   bbWidth={20}
   focusable={false}
   meetOrSlice={0}
@@ -1385,6 +1396,7 @@ exports[`11. thetimeslogo renders 1`] = `
 exports[`12. closeicon renders 1`] = `
 <RNSVGSvgView
   align="xMidYMid"
+  aria-label="icon-close"
   bbHeight={28}
   bbWidth={20}
   focusable={false}

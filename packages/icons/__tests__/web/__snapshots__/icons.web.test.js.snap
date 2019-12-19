@@ -2,7 +2,7 @@
 
 exports[`1. iconemail renders 1`] = `
 <svg
-  aria-label="[title]"
+  aria-label="icon-email"
   role="img"
   viewBox="b4de9ef077a0a2ad684a1d8e6916ebc4"
   width={20}
@@ -23,7 +23,7 @@ exports[`1. iconemail renders 1`] = `
 
 exports[`2. iconfacebook renders 1`] = `
 <svg
-  aria-label="[title]"
+  aria-label="icon-facebook"
   role="img"
   viewBox="bd9a71c8a3142edf7cab6a62a2277378"
   width={20}
@@ -44,6 +44,7 @@ exports[`2. iconfacebook renders 1`] = `
 
 exports[`3. iconforwardarrow renders 1`] = `
 <svg
+  aria-label="icon-forward-arrow"
   height={12}
   viewBox="5c14eb9241a8569e247b0186d9e66a8a"
   width={7}
@@ -60,7 +61,7 @@ exports[`3. iconforwardarrow renders 1`] = `
 
 exports[`4. iconstar renders 1`] = `
 <svg
-  aria-label="[title]"
+  aria-label="icon-save-star"
   role="img"
   viewBox="951cf65ef61fef616e498a37f3f5a9b1"
   width={20}
@@ -77,7 +78,7 @@ exports[`4. iconstar renders 1`] = `
 
 exports[`5. iconcopylink renders 1`] = `
 <svg
-  aria-label="[title]"
+  aria-label="icon-copy-link"
   height={15}
   role="img"
   viewBox="7798bdae936d01418f5704cad29092ad"
@@ -95,7 +96,7 @@ exports[`5. iconcopylink renders 1`] = `
 
 exports[`6. iconsavebookmark renders 1`] = `
 <svg
-  aria-label="[title]"
+  aria-label="icon-save-bookmark"
   height={16}
   role="img"
   viewBox="192c9a888d6def500471679101ad9f5c"
@@ -113,7 +114,7 @@ exports[`6. iconsavebookmark renders 1`] = `
 
 exports[`7. icontwitter renders 1`] = `
 <svg
-  aria-label="[title]"
+  aria-label="icon-twitter"
   role="img"
   viewBox="f0ca3b77f62fa9136cdfd9a3f847d07b"
   width={20}
@@ -130,7 +131,7 @@ exports[`7. icontwitter renders 1`] = `
 
 exports[`8. iconvideo renders 1`] = `
 <svg
-  aria-label="[title]"
+  aria-label="icon-video"
   role="img"
   viewBox="32c562c1b3cee8479f67d0cbd8edef4d"
   width={20}
@@ -154,7 +155,7 @@ exports[`8. iconvideo renders 1`] = `
 
 exports[`9. iconvideo360player renders 1`] = `
 <svg
-  aria-label="[title]"
+  aria-label="icon-video-360-player"
   role="img"
   viewBox="544726bb051c5bacf72288529e947083"
   width={20}
@@ -171,7 +172,7 @@ exports[`9. iconvideo360player renders 1`] = `
 
 exports[`10. thestlogo renders 1`] = `
 <svg
-  aria-label="[title]"
+  aria-label="logo-the-sunday-times"
   role="img"
   viewBox="432b2b997b72ed04860614d58bfe21fa"
   width={20}
@@ -188,7 +189,7 @@ exports[`10. thestlogo renders 1`] = `
 
 exports[`11. thetimeslogo renders 1`] = `
 <svg
-  aria-label="[title]"
+  aria-label="logo-the-times"
   role="img"
   viewBox="064d9dc888226a281482b4aa9646de05"
   width={20}
@@ -205,7 +206,7 @@ exports[`11. thetimeslogo renders 1`] = `
 
 exports[`12. closeicon renders 1`] = `
 <svg
-  aria-label="[title]"
+  aria-label="icon-close"
   height={28}
   role="img"
   viewBox="a20267b134584c37a6dc39235d4a5519"

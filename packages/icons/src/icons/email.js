@@ -15,6 +15,7 @@ const IconEmail = ({
   width
 }) => (
   <Svg
+    aria-label="icon-email"
     role="img"
     viewBox={viewBox}
     {...clean({

@@ -13,6 +13,7 @@ const IconSaveBookmark = ({
   width
 }) => (
   <Svg
+    aria-label="icon-save-bookmark"
     role="img"
     viewBox="0 0 12 16"
     {...clean({

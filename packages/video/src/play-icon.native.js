@@ -4,7 +4,7 @@ import Svg, { Polygon, Rect } from "@times-components/svgs";
 
 const PlayIcon = () => (
   <View>
-    <Svg height={70} viewBox="0 0 100 100" width={70}>
+    <Svg aria-label="icon-play" height={70} viewBox="0 0 100 100" width={70}>
       <Rect
         fill="#000000"
         fillOpacity="0.4"
