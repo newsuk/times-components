@@ -2,6 +2,7 @@
 
 exports[`1. renders correctly 1`] = `
 Array [
+  <div />,
   <div>
     <nav
       data-cy="topic-tags"
@@ -33,6 +34,7 @@ Array [
 
 exports[`2. renders correctly with newskit 1`] = `
 Array [
+  <div />,
   <div>
     <nav
       data-cy="topic-tags"

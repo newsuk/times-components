@@ -8,6 +8,10 @@ import SaveAndShareBar from "@times-components/save-and-share-bar";
 import ArticleTopics from "./article-topics";
 import { ShareAndSaveContainer } from "./styles/responsive";
 
+const clearingStyle = {
+  clear: "both"
+};
+
 const ArticleExtras = ({
   analyticsStream,
   articleId,
@@ -30,6 +34,7 @@ const ArticleExtras = ({
   );
   return (
     <UserState state={UserState.fullArticle} fallback={sponsoredArticles}>
+      <div style={clearingStyle} />
       <ArticleTopics topics={topics} />
       {(savingEnabled || sharingEnabled) && (
         <UserState state={UserState.loggedInOrShared}>
