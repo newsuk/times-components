@@ -12,7 +12,7 @@ exports[`1. renders correctly 1`] = `
           tabIndex="0"
         >
           <svg
-            aria-label="[title]"
+            aria-label="icon-close"
             height="28"
             role="img"
             viewBox="0 0 28 28"
