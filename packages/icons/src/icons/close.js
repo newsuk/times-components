@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 
 const IconClose = ({ height, width }) => (
   <Svg
+    aria-label="icon-close"
     role="img"
     viewBox="0 0 28 28"
     {...clean({

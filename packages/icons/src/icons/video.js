@@ -15,6 +15,7 @@ const IconVideo = ({
   width
 }) => (
   <Svg
+    aria-label="icon-video"
     role="img"
     viewBox={viewBox}
     {...clean({

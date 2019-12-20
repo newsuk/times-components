@@ -4,7 +4,7 @@ import Svg, { G, Path } from "@times-components/svgs";
 import { colours } from "@times-components/styleguide";
 
 const Watermark = ({ height, viewBox, width }) => (
-  <Svg height={height} viewBox={viewBox} width={width}>
+  <Svg aria-label="watermark" height={height} viewBox={viewBox} width={width}>
     <G
       fill="none"
       fillRule="evenodd"

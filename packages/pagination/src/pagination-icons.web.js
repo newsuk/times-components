@@ -57,6 +57,7 @@ export const NextPageIcon = () => (
       <PageLabel direction="Next" />
     </Text>
     <Svg
+      aria-label="icon-next-page"
       height={12}
       style={{ marginTop: spacing(-0.5) }}
       viewBox="42 12 60 120"

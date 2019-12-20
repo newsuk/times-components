@@ -14,6 +14,7 @@ const IconTwitter = ({
   width
 }) => (
   <Svg
+    aria-label="icon-twitter"
     role="img"
     viewBox="-354.2 -279.4 750 600"
     {...clean({

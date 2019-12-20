@@ -117,7 +117,7 @@ exports[`1. a full article 1`] = `
       target={null}
     >
       <svg
-        aria-label="[title]"
+        aria-label="icon-email"
         height={16}
         role="img"
         viewBox="0 0 22 16"
@@ -138,7 +138,7 @@ exports[`1. a full article 1`] = `
       target="_blank"
     >
       <svg
-        aria-label="[title]"
+        aria-label="icon-twitter"
         height={16}
         role="img"
         viewBox="-354.2 -279.4 750 600"
@@ -157,7 +157,7 @@ exports[`1. a full article 1`] = `
       target="_blank"
     >
       <svg
-        aria-label="[title]"
+        aria-label="icon-facebook"
         height={18}
         role="img"
         viewBox="14 10 10.592460632324219 20.397258758544922"
@@ -178,7 +178,7 @@ exports[`1. a full article 1`] = `
       target={null}
     >
       <svg
-        aria-label="[title]"
+        aria-label="icon-copy-link"
         height={16}
         role="img"
         viewBox="0 0 15 15"
@@ -238,7 +238,7 @@ exports[`1. a full article 1`] = `
         AName
         , a text
         <svg
-          aria-label="[title]"
+          aria-label="icon-twitter"
           height={10}
           role="img"
           viewBox="-354.2 -279.4 750 600"
@@ -291,7 +291,7 @@ exports[`1. a full article 1`] = `
         target={null}
       >
         <svg
-          aria-label="[title]"
+          aria-label="icon-email"
           height={16}
           role="img"
           viewBox="0 0 22 16"
@@ -312,7 +312,7 @@ exports[`1. a full article 1`] = `
         target="_blank"
       >
         <svg
-          aria-label="[title]"
+          aria-label="icon-twitter"
           height={16}
           role="img"
           viewBox="-354.2 -279.4 750 600"
@@ -331,7 +331,7 @@ exports[`1. a full article 1`] = `
         target="_blank"
       >
         <svg
-          aria-label="[title]"
+          aria-label="icon-facebook"
           height={18}
           role="img"
           viewBox="14 10 10.592460632324219 20.397258758544922"
@@ -352,7 +352,7 @@ exports[`1. a full article 1`] = `
         target={null}
       >
         <svg
-          aria-label="[title]"
+          aria-label="icon-copy-link"
           height={16}
           role="img"
           viewBox="0 0 15 15"

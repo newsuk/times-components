@@ -77,6 +77,7 @@ exports[`1. renders results, previous and next 1`] = `
                     </span>
                   </div>
                   <svg
+                    aria-label="icon-next-page"
                     height={12}
                     viewBox="42 12 60 120"
                     width={7}
@@ -170,6 +171,7 @@ exports[`2. renders with no results 1`] = `
                     </span>
                   </div>
                   <svg
+                    aria-label="icon-next-page"
                     height={12}
                     viewBox="42 12 60 120"
                     width={7}
@@ -366,6 +368,7 @@ exports[`6. renders next and not previous 1`] = `
                     </span>
                   </div>
                   <svg
+                    aria-label="icon-next-page"
                     height={12}
                     viewBox="42 12 60 120"
                     width={7}
