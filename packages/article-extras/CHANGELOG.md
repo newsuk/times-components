@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.50](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.4.49...@times-components/article-extras@0.4.50) (2019-12-20)
+
+
+### Bug Fixes
+
+* **REPLAT-11035:** fix layout issue with inline image and article-extra ([#2446](https://github.com/newsuk/times-components/issues/2446)) ([eab36fe](https://github.com/newsuk/times-components/commit/eab36fe0d27348dba88100bb2b64ba7366cf3564))
+
+
+
+
+
 ## [0.4.49](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.4.48...@times-components/article-extras@0.4.49) (2019-12-18)
 
 **Note:** Version bump only for package @times-components/article-extras
