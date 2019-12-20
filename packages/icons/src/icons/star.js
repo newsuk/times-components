@@ -13,6 +13,7 @@ const IconStar = ({
   width
 }) => (
   <Svg
+    aria-label="icon-save-star"
     role="img"
     viewBox="0 0 18 18"
     {...clean({

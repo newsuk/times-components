@@ -15,6 +15,7 @@ const IconFacebook = ({
   width
 }) => (
   <Svg
+    aria-label="icon-facebook"
     role="img"
     viewBox={viewBox}
     {...clean({

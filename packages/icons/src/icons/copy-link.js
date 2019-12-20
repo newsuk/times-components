@@ -13,6 +13,7 @@ const IconCopyLink = ({
   width
 }) => (
   <Svg
+    aria-label="icon-copy-link"
     role="img"
     viewBox="0 0 15 15"
     {...clean({

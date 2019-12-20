@@ -14,6 +14,7 @@ const IconVideo360Player = ({
   width
 }) => (
   <Svg
+    aria-label="icon-video-360-player"
     role="img"
     viewBox="0 0 108 100"
     {...clean({

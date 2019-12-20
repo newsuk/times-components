@@ -12,6 +12,7 @@ const TheSTLogo = ({
   width
 }) => (
   <Svg
+    aria-label="logo-the-sunday-times"
     role="img"
     viewBox="0 0 29 20"
     {...clean({

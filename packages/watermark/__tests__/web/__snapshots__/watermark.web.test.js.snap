@@ -2,6 +2,7 @@
 
 exports[`1. watermark 1`] = `
 <Svg
+  aria-label="watermark"
   height={250}
   viewBox="0 0 300 250"
   width={300}
