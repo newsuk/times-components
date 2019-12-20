@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-summary",
-  "version": "3.15.22",
+  "version": "3.15.23",
   "main": "dist/article-summary",
   "dev": "src/article-summary",
   "scripts": {
@@ -68,7 +68,7 @@
     "@times-components/markup": "3.4.17",
     "@times-components/markup-forest": "1.7.30",
     "@times-components/styleguide": "3.33.14",
-    "@times-components/video-label": "2.4.18",
+    "@times-components/video-label": "2.4.19",
     "prop-types": "15.7.2"
   },
   "resolutions": {

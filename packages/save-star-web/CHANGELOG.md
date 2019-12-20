@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.20](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.4.19...@times-components/save-star-web@0.4.20) (2019-12-20)
+
+
+### Bug Fixes
+
+* added aria-label to svgs ([#2447](https://github.com/newsuk/times-components/issues/2447)) ([dba5426](https://github.com/newsuk/times-components/commit/dba542683c2288a1aa357e521941e9b02a7e1ea6))
+
+
+
+
+
 ## [0.4.19](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.4.18...@times-components/save-star-web@0.4.19) (2019-12-18)
 
 

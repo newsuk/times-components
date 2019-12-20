@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.3.18](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.3.17...@times-components/pagination@3.3.18) (2019-12-20)
+
+
+### Bug Fixes
+
+* added aria-label to svgs ([#2447](https://github.com/newsuk/times-components/issues/2447)) ([dba5426](https://github.com/newsuk/times-components/commit/dba542683c2288a1aa357e521941e9b02a7e1ea6))
+
+
+
+
+
 ## [3.3.17](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.3.16...@times-components/pagination@3.3.17) (2019-12-10)
 
 **Note:** Version bump only for package @times-components/pagination

@@ -1,6 +1,6 @@
 {
   "name": "@times-components/watermark",
-  "version": "2.7.11",
+  "version": "2.7.12",
   "description": "Watermark",
   "main": "dist/watermark",
   "dev": "src/watermark",

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.17.9](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.17.8...@times-components/article-main-comment@2.17.9) (2019-12-20)
+
+
+### Bug Fixes
+
+* added aria-label to svgs ([#2447](https://github.com/newsuk/times-components/issues/2447)) ([dba5426](https://github.com/newsuk/times-components/commit/dba542683c2288a1aa357e521941e9b02a7e1ea6))
+* **REPLAT-11399:** fix bylines that were breaking out of container ([#2449](https://github.com/newsuk/times-components/issues/2449)) ([8206ed0](https://github.com/newsuk/times-components/commit/8206ed07fc9c86ae43056926a082f9120533c7bd))
+
+
+
+
+
 ## [2.17.8](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.17.7...@times-components/article-main-comment@2.17.8) (2019-12-20)
 
 **Note:** Version bump only for package @times-components/article-main-comment

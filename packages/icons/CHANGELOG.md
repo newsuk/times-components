@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.14.18](https://github.com/newsuk/times-components/compare/@times-components/icons@2.14.17...@times-components/icons@2.14.18) (2019-12-20)
+
+
+### Bug Fixes
+
+* added aria-label to svgs ([#2447](https://github.com/newsuk/times-components/issues/2447)) ([dba5426](https://github.com/newsuk/times-components/commit/dba542683c2288a1aa357e521941e9b02a7e1ea6))
+
+
+
+
+
 ## [2.14.17](https://github.com/newsuk/times-components/compare/@times-components/icons@2.14.16...@times-components/icons@2.14.17) (2019-12-10)
 
 **Note:** Version bump only for package @times-components/icons

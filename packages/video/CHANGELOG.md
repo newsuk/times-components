@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.8.24](https://github.com/newsuk/times-components/compare/@times-components/video@4.8.23...@times-components/video@4.8.24) (2019-12-20)
+
+
+### Bug Fixes
+
+* added aria-label to svgs ([#2447](https://github.com/newsuk/times-components/issues/2447)) ([dba5426](https://github.com/newsuk/times-components/commit/dba542683c2288a1aa357e521941e9b02a7e1ea6))
+
+
+
+
+
 ## [4.8.23](https://github.com/newsuk/times-components/compare/@times-components/video@4.8.22...@times-components/video@4.8.23) (2019-12-18)
 
 **Note:** Version bump only for package @times-components/video
