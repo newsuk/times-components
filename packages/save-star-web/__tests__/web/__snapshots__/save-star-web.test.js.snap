@@ -47,7 +47,7 @@ Array [
   >
     <div>
       <svg
-        aria-label="[title]"
+        aria-label="icon-save-star"
         height={18}
         role="img"
         viewBox="0 0 18 18"
@@ -78,7 +78,7 @@ Array [
   >
     <div>
       <svg
-        aria-label="[title]"
+        aria-label="icon-save-star"
         height={18}
         role="img"
         viewBox="0 0 18 18"

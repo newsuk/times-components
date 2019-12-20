@@ -13,6 +13,7 @@ exports[`1. renders correctly 1`] = `
         >
           <RNSVGSvgView
             align="xMidYMid"
+            aria-label="icon-close"
             bbHeight="28"
             bbWidth="28"
             focusable={false}

@@ -13,6 +13,7 @@ exports[`1. video 1`] = `
   <View>
     <View>
       <Svg
+        aria-label="icon-play"
         height={70}
         viewBox="0 0 100 100"
         width={70}
@@ -54,6 +55,7 @@ exports[`2. video without a poster image 1`] = `
   <View>
     <View>
       <Svg
+        aria-label="icon-play"
         height={70}
         viewBox="0 0 100 100"
         width={70}
@@ -106,6 +108,7 @@ exports[`3. sky sports video 1`] = `
   <View>
     <View>
       <Svg
+        aria-label="icon-play"
         height={70}
         viewBox="0 0 100 100"
         width={70}
@@ -150,6 +153,7 @@ exports[`4. 360 video 1`] = `
   <View>
     <View>
       <Svg
+        aria-label="icon-play"
         height={70}
         viewBox="0 0 100 100"
         width={70}
