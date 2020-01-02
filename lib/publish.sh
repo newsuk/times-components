@@ -15,6 +15,9 @@ fi
 echo "Setting up npm"
 echo "//registry.npmjs.org/:_authToken=${NEWS_TOOLS_NPM_TOKEN}" > ~/.npmrc
 
+git config user.name "times-tools"
+git config user.email "tools@news.co.uk"
+
 # bump versions, create change logs, create tags, publish to npm
 PR_MSG=$(git log --pretty=format:"%h" -1)
 MESSAGE=$(printf "chore: Publish %s [ci skip]" $PR_MSG)
