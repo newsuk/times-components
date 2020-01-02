@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 set -e
 
 TIP_COMMIT=$(git rev-parse HEAD)
