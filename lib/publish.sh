@@ -13,7 +13,7 @@ fi
 
 # set npm credentials
 echo "Setting up npm"
-echo "//registry.npmjs.org/:_authToken=${NEWS_TOOLS_NPM_TOKEN}" > ./.npmrc
+echo "//registry.npmjs.org/:_authToken=${NEWS_TOOLS_NPM_TOKEN}" > ~/.npmrc
 
 # bump versions, create change logs, create tags, publish to npm
 PR_MSG=$(git log --pretty=format:"%h" -1)
