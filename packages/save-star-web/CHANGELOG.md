@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.4.20...@times-components/save-star-web@0.5.0) (2020-01-02)
+
+
+### Features
+
+* migrate master pipeline to circleci ([36c8052](https://github.com/newsuk/times-components/commit/36c8052b21d480025afcb8a68b26013fba6d843f))
+
+
+
+
+
 ## [0.4.20](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.4.19...@times-components/save-star-web@0.4.20) (2019-12-20)
 
 
