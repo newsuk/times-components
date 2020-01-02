@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 set -e
 
+git remote set-url origin https://${GH_TOKEN}@github.com/newsuk/times-components.git > /dev/null 2>&1
+git checkout master
+
 TIP_COMMIT=$(git rev-parse HEAD)
 echo $(printf "CircleCI commit: %s, Head commit: %s" $CIRCLE_SHA1 $TIP_COMMIT)
 
