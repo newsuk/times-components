@@ -200,6 +200,8 @@ jobs:
             - run:
                   name: Publish to npm
                   command: |
+                      git remote set-url origin https://${GH_TOKEN}@github.com/newsuk/times-components.git > /dev/null 2>&1
+                      git checkout master
                       npx yarn@1.16.0 npm:publish
                   working_directory: ~/project/
 
