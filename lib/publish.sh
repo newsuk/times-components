@@ -2,7 +2,7 @@
 set -e
 
 git remote set-url origin https://${GH_TOKEN}@github.com/newsuk/times-components.git > /dev/null 2>&1
-git checkout master
+# git checkout master
 
 TIP_COMMIT=$(git rev-parse HEAD)
 echo $(printf "CircleCI commit: %s, Head commit: %s" $CIRCLE_SHA1 $TIP_COMMIT)
@@ -18,8 +18,8 @@ fi
 echo "Setting up npm"
 echo "//registry.npmjs.org/:_authToken=${NEWS_TOOLS_NPM_TOKEN}" > ~/.npmrc
 
-# git config user.name "times-tools"
-# git config user.email "tools@news.co.uk"
+git config user.name "times-tools"
+git config user.email "tools@news.co.uk"
 
 # bump versions, create change logs, create tags, publish to npm
 PR_MSG=$(git log --pretty=format:"%h" -1)
