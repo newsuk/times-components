@@ -250,7 +250,6 @@ workflows:
                           - master
                   requires:
                       - build_storybook
-                      - bundle
                       - run_lint
                       - run_noplatform_tests
                       - run_android_tests
@@ -260,7 +259,6 @@ workflows:
             - publish_npm:
                   requires:
                       - build_storybook
-                      - bundle
                       - run_lint
                       - run_noplatform_tests
                       - run_android_tests
@@ -274,7 +272,6 @@ workflows:
                           - master
                   requires:
                       - build_storybook
-                      - bundle
                       - run_lint
                       - run_noplatform_tests
                       - run_android_tests
