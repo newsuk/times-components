@@ -61,7 +61,7 @@ function SaveStar({
 
   return (
     <Fragment>
-      <Text style={styles.label}>{savedStatus ? "Saved" : "Save"}</Text>
+      <Text style={styles.label}>{savedStatus ? "Sav" : "Save"}</Text>
       {renderActivity()}
     </Fragment>
   );

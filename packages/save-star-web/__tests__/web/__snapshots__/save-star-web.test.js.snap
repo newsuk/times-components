@@ -39,7 +39,7 @@ Array [
 exports[`save star component star with saved status renders correctly 1`] = `
 Array [
   <div>
-    Saved
+    Sav
   </div>,
   <a
     href=""

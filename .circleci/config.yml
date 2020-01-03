@@ -156,18 +156,6 @@ jobs:
                       npx yarn@1.16.0 coverage:publish
                   working_directory: ~/project/
 
-    bundle:
-        executor: node
-        steps:
-            - checkout
-            - attach_workspace:
-                  at: ./
-            - run:
-                  name: Bundle project
-                  command: |
-                      npx lerna run bundle --stream
-                  working_directory: ~/project/
-
     build_native:
         executor: node
         steps:
@@ -203,6 +191,7 @@ jobs:
             - run:
                   name: Publish to npm
                   command: |
+                      npx lerna run bundle --stream
                       npx yarn@1.16.0 npm:publish
                   working_directory: ~/project/
 
@@ -240,9 +229,6 @@ workflows:
                   requires:
                       - setup
             - run_web_tests:
-                  requires:
-                      - setup
-            - bundle:
                   requires:
                       - setup
             - run_cypress_tests:
