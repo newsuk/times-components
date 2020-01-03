@@ -12,6 +12,13 @@ const splitNode = node => {
     return node;
   }
   if (children[0].name === "text") {
+    const firstLetterOrDigit = children[0].attributes.value.match(
+      "[a-zA-Z0-9]"
+    );
+    const firstLetterOrDigitIndex = firstLetterOrDigit
+      ? firstLetterOrDigit.index
+      : 0;
+
     return {
       ...node,
       attributes: {
@@ -22,7 +29,10 @@ const splitNode = node => {
           ...children[0],
           attributes: {
             ...children[0].attributes,
-            value: children[0].attributes.value.slice(0, 1),
+            value: children[0].attributes.value.slice(
+              0,
+              firstLetterOrDigitIndex + 1
+            ),
             dropCap: true
           }
         },
@@ -30,7 +40,9 @@ const splitNode = node => {
           ...children[0],
           attributes: {
             ...children[0].attributes,
-            value: children[0].attributes.value.slice(1),
+            value: children[0].attributes.value.slice(
+              firstLetterOrDigitIndex + 1
+            ),
             dropCap: true
           }
         },
