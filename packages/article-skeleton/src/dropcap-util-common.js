@@ -1,4 +1,6 @@
 /* eslint-disable no-param-reassign */
+import get from "lodash.get";
+
 const templateWithDropCaps = [
   "indepth",
   "maincomment",
@@ -6,16 +8,19 @@ const templateWithDropCaps = [
   "magazinecomment"
 ];
 
+export const isQuote = char => /'|"|‘|“/.test(char);
+
 const splitNode = node => {
   const { children } = node;
   if (children.length === 0) {
     return node;
   }
   if (children[0].name === "text") {
-    const firstLetterOrDigit = children[0].attributes.value.match(
-      "[a-zA-Z0-9]"
-    );
-    const sliceIndex = (firstLetterOrDigit ? firstLetterOrDigit.index : 0) + 1;
+    const sliceIndex =
+      isQuote(get(children[0], "attributes.value[0]")) &&
+      children[0].attributes.value.length > 1
+        ? 2
+        : 1;
 
     return {
       ...node,

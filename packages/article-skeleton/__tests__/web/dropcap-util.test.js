@@ -1,4 +1,5 @@
 import insertDropcapIntoAST from "../../src/dropcap-util";
+import { isQuote } from "../../src/dropcap-util-common";
 
 const child = {
   attributes: [],
@@ -266,5 +267,27 @@ describe("insertDropcapIntoAST", () => {
     expect(insertDropcapIntoAST([childWithMarkupAndQuote], template)).toEqual([
       childWithDropCapAndMarkupAndQuote
     ]);
+  });
+});
+
+describe("isQuote", () => {
+  it("should return true if the character is straight single quote", () => {
+    expect(isQuote("'")).toBe(true);
+  });
+
+  it("should return true if the character is opening single quote", () => {
+    expect(isQuote("‘")).toBe(true);
+  });
+
+  it("should return true if the character is straight double quote", () => {
+    expect(isQuote("\"")).toBe(true);
+  });
+
+  it("should return true if the character is opening double quote", () => {
+    expect(isQuote("“")).toBe(true);
+  });
+
+  it("should return false if the character is letter", () => {
+    expect(isQuote("a")).toBe(false);
   });
 });
