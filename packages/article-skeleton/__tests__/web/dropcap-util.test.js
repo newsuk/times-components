@@ -280,7 +280,7 @@ describe("isQuote", () => {
   });
 
   it("should return true if the character is straight double quote", () => {
-    expect(isQuote("\"")).toBe(true);
+    expect(isQuote('"')).toBe(true);
   });
 
   it("should return true if the character is opening double quote", () => {
