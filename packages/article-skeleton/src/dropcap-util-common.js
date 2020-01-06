@@ -15,9 +15,7 @@ const splitNode = node => {
     const firstLetterOrDigit = children[0].attributes.value.match(
       "[a-zA-Z0-9]"
     );
-    const firstLetterOrDigitIndex = firstLetterOrDigit
-      ? firstLetterOrDigit.index
-      : 0;
+    const sliceIndex = (firstLetterOrDigit ? firstLetterOrDigit.index : 0) + 1;
 
     return {
       ...node,
@@ -29,10 +27,7 @@ const splitNode = node => {
           ...children[0],
           attributes: {
             ...children[0].attributes,
-            value: children[0].attributes.value.slice(
-              0,
-              firstLetterOrDigitIndex + 1
-            ),
+            value: children[0].attributes.value.slice(0, sliceIndex),
             dropCap: true
           }
         },
@@ -40,9 +35,7 @@ const splitNode = node => {
           ...children[0],
           attributes: {
             ...children[0].attributes,
-            value: children[0].attributes.value.slice(
-              firstLetterOrDigitIndex + 1
-            ),
+            value: children[0].attributes.value.slice(sliceIndex),
             dropCap: true
           }
         },
