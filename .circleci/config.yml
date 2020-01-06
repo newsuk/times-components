@@ -165,9 +165,23 @@ jobs:
             - run:
                   name: Build and publish native js bundles
                   command: |
+                      # Install JDK and android SDK   
+                      sudo apt-get update
+                      sudo apt install default-jdk
+                      cd /home
+                      sudo wget https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
+                      sudo unzip sdk-tools-linux-4333796.zip
+                      sudo rm sdk-tools-linux-4333796.zip
+                      sudo mkdir /home/android-sdk
+                      sudo mv tools /home/android-sdk/tools
+                      export ANDROID_SDK_ROOT=/home/android-sdk
+                      echo $(yes | sudo $ANDROID_SDK_ROOT/tools/bin/sdkmanager --licenses)
+                      sudo chmod ugo+rwx "android-sdk"
+                      cd ~/project/
+                      # TODO: move above lines in a docker image
                       npx yarn@1.16.0 android:build-lib
                       npx yarn@1.16.0 ios:build-lib
-                      npx yarn@1.16.0 android:publish-lib
+                      npx yarn@1.16.0 android:publish-lib	
                       npx yarn@1.16.0 ios:publish-lib
                   working_directory: ~/project/
 
@@ -259,9 +273,5 @@ workflows:
                       - run_web_tests
                       - run_cypress_tests
             - publish_native:
-                  filters:
-                    branches:
-                        only: 
-                          - master
                   requires:
                       - publish_npm
