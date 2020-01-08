@@ -34,10 +34,9 @@ commands:
             - run:
                   name: Install fontforge
                   command: |
-                    sudo apt-get update
-                    sudo apt-get install software-properties-common
-                    ENTER | sudo add-apt-repository ppa:fontforge/fontforge
-                    yes | sudo apt-get install fontforge
+                    sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+                    echo $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+                    brew install fontforge
 
 jobs:
     setup:
