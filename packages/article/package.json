@@ -50,10 +50,10 @@
     "eslint": "5.9.0",
     "jest": "24.8.0",
     "prettier": "1.14.3",
-    "react": "16.9.0",
+    "react": "16.12.0",
     "react-art": "16.6.3",
     "react-dom": "16.9.0",
-    "react-native": "0.61.1",
+    "react-native": "0.61.5",
     "react-native-web": "0.11.4",
     "react-test-renderer": "16.9.0",
     "webpack": "4.30.0",
@@ -73,7 +73,7 @@
     "@times-components/styleguide": "3.33.14"
   },
   "resolutions": {
-    "react": "16.9.0",
+    "react": "16.12.0",
     "react-dom": "16.9.0"
   },
   "peerDependencies": {

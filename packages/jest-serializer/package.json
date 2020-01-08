@@ -57,7 +57,7 @@
     "lodash.omitby": "4.6.0"
   },
   "resolutions": {
-    "react": "16.9.0",
+    "react": "16.12.0",
     "react-dom": "16.9.0"
   },
   "peerDependencies": {
