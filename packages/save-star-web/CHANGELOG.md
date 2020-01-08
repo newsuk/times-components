@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.2](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.4.20...@times-components/save-star-web@0.5.2) (2020-01-08)
+
+
+### Bug Fixes
+
+* package versions ([#2453](https://github.com/newsuk/times-components/issues/2453)) ([6639f32](https://github.com/newsuk/times-components/commit/6639f32c5c7ea1a22bf3d903036fa1d84affa954))
+
+
+
+
+
 ## [0.4.20](https://github.com/newsuk/times-components/compare/@times-components/save-star-web@0.4.19...@times-components/save-star-web@0.4.20) (2019-12-20)
 
 
