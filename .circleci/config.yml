@@ -181,7 +181,7 @@ jobs:
                       # TODO: move above lines in a docker image
                       npx yarn@1.16.0 android:build-lib
                       npx yarn@1.16.0 ios:build-lib
-                      npx yarn@1.16.0 android:publish-lib	
+                      npx yarn@1.16.0 android:publish-lib
                       npx yarn@1.16.0 ios:publish-lib
                   working_directory: ~/project/
 
@@ -273,5 +273,9 @@ workflows:
                       - run_web_tests
                       - run_cypress_tests
             - publish_native:
+                  filters:
+                    branches:
+                        only: 
+                          - master
                   requires:
                       - publish_npm
