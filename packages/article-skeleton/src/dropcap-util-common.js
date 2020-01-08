@@ -1,4 +1,6 @@
 /* eslint-disable no-param-reassign */
+import get from "lodash.get";
+
 const templateWithDropCaps = [
   "indepth",
   "maincomment",
@@ -6,12 +8,20 @@ const templateWithDropCaps = [
   "magazinecomment"
 ];
 
+export const isQuote = char => /'|"|‘|“/.test(char);
+
 const splitNode = node => {
   const { children } = node;
   if (children.length === 0) {
     return node;
   }
   if (children[0].name === "text") {
+    const sliceIndex =
+      isQuote(get(children[0], "attributes.value[0]")) &&
+      children[0].attributes.value.length > 1
+        ? 2
+        : 1;
+
     return {
       ...node,
       attributes: {
@@ -22,7 +32,7 @@ const splitNode = node => {
           ...children[0],
           attributes: {
             ...children[0].attributes,
-            value: children[0].attributes.value.slice(0, 1),
+            value: children[0].attributes.value.slice(0, sliceIndex),
             dropCap: true
           }
         },
@@ -30,7 +40,7 @@ const splitNode = node => {
           ...children[0],
           attributes: {
             ...children[0].attributes,
-            value: children[0].attributes.value.slice(1),
+            value: children[0].attributes.value.slice(sliceIndex),
             dropCap: true
           }
         },
