@@ -7,6 +7,8 @@ import {
 
 const tile = mockEditionSlice(1).items[0];
 
+jest.mock("@times-components/image", () => "TimesImage");
+
 export default () => {
   describe("getTileImage should", () => {
     test("getTileImage - return null if there is no lead asset", () => {

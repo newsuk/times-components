@@ -15,6 +15,8 @@ import { setIsTablet } from "./mocks";
 
 import ModalImage from "../src/modal-image";
 
+jest.mock("react-native-image-zoom-viewer", () => "ImageZoomView");
+
 // eslint-disable-next-line react/prop-types
 const MockCaption = ({ style: { text, caption, credits, container } }) => (
   <View style={container}>

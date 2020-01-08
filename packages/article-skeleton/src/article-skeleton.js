@@ -94,8 +94,14 @@ const ArticleWithContent = props => {
     []
   );
 
+  const fixedContent = useMemo(
+    () => [...fixup(isTablet, content), { name: "footer" }],
+    [content, isTablet]
+  );
+  const images = fixedContent.filter(node => node.name === "image");
+
   const dropcapsDisabled = isDropcapsDisabled(data);
-  const renderChild = render(renderers({ dropcapsDisabled, ...props }));
+  const renderChild = render(renderers({ dropcapsDisabled, ...props, images }));
   // eslint-disable-next-line react/prop-types
   const Child = useCallback(
     ({ item, index }) => (
@@ -108,11 +114,6 @@ const ArticleWithContent = props => {
       </Gutter>
     ),
     [footer]
-  );
-
-  const fixedContent = useMemo(
-    () => [...fixup(isTablet, content), { name: "footer" }],
-    [content, isTablet]
   );
 
   // FIXME: remove this when ios memory leaks are resolved

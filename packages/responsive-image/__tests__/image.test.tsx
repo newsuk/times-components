@@ -1,11 +1,17 @@
 import * as React from 'react';
-import { ImageBackground, Image } from 'react-native';
+import { Image, ImageBackground } from 'react-native';
 import { act, create } from 'react-test-renderer';
 import ResponsiveImage from '../src';
 
 const testUri = 'http://foo.com/bar.png';
 
-jest.useFakeTimers();
+beforeEach(() => {
+  jest.useFakeTimers();
+});
+
+afterEach(() => {
+  jest.useRealTimers();
+});
 
 test('Image renders', async () => {
   const component = create(<ResponsiveImage uri={testUri} />);
@@ -39,9 +45,7 @@ test('Image loads high-res', async () => {
     await jest.runAllImmediates();
   });
   const images = component.root.findAllByType(Image);
-  images.forEach(
-    image => 'onLoadEnd' in image.props && image.props.onLoadEnd()
-  );
+  images.forEach(img => 'onLoadEnd' in img.props && img.props.onLoadEnd());
   await act(async () => {
     await jest.runAllImmediates();
   });

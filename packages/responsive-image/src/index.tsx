@@ -56,13 +56,12 @@ const ImageElement = ({
     onLoad={onLoad}
     resizeMethod={'resize'}
     onError={onError}
-    style={[
-      { aspectRatio },
-      { borderRadius },
-      styles.imageStyle,
-      { resizeMode: resize },
-      { borderRadius }
-    ]}
+    style={{
+      aspectRatio,
+      borderRadius,
+      ...styles.imageStyle,
+      resizeMode: resize
+    }}
   />
 );
 
@@ -90,16 +89,12 @@ const ResponsiveImage = (props: ResponsiveImageProps) => {
   if (!uri.includes('data:')) {
     url.query.rel_width = (relativeWidth || 1).toString();
     url.query.rel_height = (relativeHeight || 1).toString();
-    if (relativeVerticalOffset) {
-      url.query.rel_vertical_offset = relativeVerticalOffset.toString();
-    } else {
-      url.query.rel_vertical_offset = '0';
-    }
-    if (relativeHorizontalOffset) {
-      url.query.rel_horizontal_offset = relativeHorizontalOffset.toString();
-    } else {
-      url.query.rel_horizontal_offset = '0';
-    }
+    url.query.rel_vertical_offset = relativeVerticalOffset
+      ? relativeVerticalOffset.toString()
+      : '0';
+    url.query.rel_horizontal_offset = relativeHorizontalOffset
+      ? relativeHorizontalOffset.toString()
+      : '0';
     url.query.offline = 'true';
   }
   const offlineUrl = url.toString();
@@ -119,12 +114,11 @@ const ResponsiveImage = (props: ResponsiveImageProps) => {
     () => {
       if ('queryCache' in Image && width && !checkedCache) {
         const cache = Image.queryCache && Image.queryCache([onlineUrl]);
+        setCheckedCache(true);
         if (!cache) {
-          setCheckedCache(true);
           return;
         }
         cache.then(results => {
-          setCheckedCache(true);
           if (onlineUrl in results) {
             setShowOnline(true);
             setShowOffline(false);
@@ -151,12 +145,17 @@ const ResponsiveImage = (props: ResponsiveImageProps) => {
         onLayout={imageRef}
         source={logoPath}
         fadeDuration={0}
-        imageStyle={[
-          styles.imageStyle,
-          { resizeMode: 'center' },
-          { borderRadius }
-        ]}
-        style={[styles.style, propStyle, { aspectRatio }, { borderRadius }]}
+        imageStyle={{
+          ...styles.imageStyle,
+          borderRadius,
+          resizeMode: 'center'
+        }}
+        style={{
+          ...styles.style,
+          ...propStyle,
+          aspectRatio,
+          borderRadius
+        }}
       />
     );
   }
@@ -197,10 +196,12 @@ const ResponsiveImage = (props: ResponsiveImageProps) => {
         setShowPlaceholder(false);
       }}
       onError={() => {
-        onError && onError()
-        setShowOffline(false)
-        setFailed(true)
-        setShowPlaceholder(true)
+        if (onError) {
+          onError();
+        }
+        setShowOffline(false);
+        setFailed(true);
+        setShowPlaceholder(true);
       }}
       resize={resize}
       fadeDuration={0}
@@ -222,7 +223,7 @@ const ResponsiveImage = (props: ResponsiveImageProps) => {
   );
 
   return (
-    <View style={[styles.style, propStyle, { aspectRatio }, { borderRadius }]}>
+    <View style={{ ...styles.style, ...propStyle, aspectRatio, borderRadius }}>
       {placeholder}
       {lowRes}
       {highRes}

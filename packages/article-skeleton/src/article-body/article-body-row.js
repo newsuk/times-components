@@ -26,6 +26,7 @@ export default ({
   onImagePress,
   isTablet,
   adConfig,
+  images = [],
   dropcapsDisabled,
   dropCapFont = "dropCap",
   scale
@@ -207,6 +208,7 @@ export default ({
             credits
           }}
           onImagePress={onImagePress}
+          images={images}
           key={key}
           imageOptions={{
             display:

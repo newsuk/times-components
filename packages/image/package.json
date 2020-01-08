@@ -64,7 +64,6 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/gestures": "4.2.17",
     "@times-components/gradient": "3.2.17",
     "@times-components/link": "3.5.17",
     "@times-components/responsive": "0.5.21",
@@ -74,7 +73,8 @@
     "@times-components/utils": "6.0.1",
     "hoist-non-react-statics": "2.5.5",
     "prop-types": "15.7.2",
-    "styled-components": "4.3.2"
+    "styled-components": "4.3.2",
+    "react-native-image-zoom-viewer": "2.2.26"
   },
   "resolutions": {
     "react": "16.9.0",

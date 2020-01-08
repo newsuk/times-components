@@ -13,7 +13,8 @@ const styles = {
   },
   buttonContainer: {
     padding: spacing(3),
-    position: "relative",
+    position: "absolute",
+    top: 0,
     zIndex: 2
   },
   buttonContainerTablet: {

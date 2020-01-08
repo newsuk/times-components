@@ -47,6 +47,22 @@ exports[`1. a primary image 1`] = `
                 "uri": "https://image-2.io",
               }
             }
+            images={
+              Array [
+                Object {
+                  "attributes": Object {
+                    "caption": "A Caption",
+                    "credits": "Some Credits",
+                    "display": "primary",
+                    "imageIndex": 1,
+                    "ratio": "3:2",
+                    "url": "https://image-2.io",
+                  },
+                  "children": Array [],
+                  "name": "image",
+                },
+              ]
+            }
           />
         </View>
       </View>
@@ -121,6 +137,22 @@ exports[`2. a fullwidth image 1`] = `
                 "relativeWidth": undefined,
                 "uri": "https://image-2.io",
               }
+            }
+            images={
+              Array [
+                Object {
+                  "attributes": Object {
+                    "caption": "A Caption",
+                    "credits": "Some Credits",
+                    "display": "fullwidth",
+                    "imageIndex": 1,
+                    "ratio": "3:2",
+                    "url": "https://image-2.io",
+                  },
+                  "children": Array [],
+                  "name": "image",
+                },
+              ]
             }
           />
         </View>
@@ -197,6 +229,22 @@ exports[`3. a secondary image 1`] = `
                 "uri": "https://image-2.io",
               }
             }
+            images={
+              Array [
+                Object {
+                  "attributes": Object {
+                    "caption": "A Caption",
+                    "credits": "Some Credits",
+                    "display": "secondary",
+                    "imageIndex": 1,
+                    "ratio": "3:2",
+                    "url": "https://image-2.io",
+                  },
+                  "children": Array [],
+                  "name": "image",
+                },
+              ]
+            }
           />
         </View>
       </View>
@@ -271,6 +319,22 @@ exports[`4. an inline image 1`] = `
                 "relativeWidth": undefined,
                 "uri": "https://image-inline.io",
               }
+            }
+            images={
+              Array [
+                Object {
+                  "attributes": Object {
+                    "caption": "A Caption",
+                    "credits": "Some Credits",
+                    "display": "inline",
+                    "imageIndex": 1,
+                    "ratio": "9:4",
+                    "url": "https://image-inline.io",
+                  },
+                  "children": Array [],
+                  "name": "image",
+                },
+              ]
             }
           />
         </View>

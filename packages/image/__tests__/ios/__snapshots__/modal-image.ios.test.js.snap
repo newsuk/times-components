@@ -15,14 +15,8 @@ exports[`1. modal image 1`] = `
     visible={false}
   >
     <View>
-      <SafeAreaView
-        forceInset={
-          Object {
-            "bottom": "never",
-            "horizontal": "always",
-            "top": "always",
-          }
-        }
+      <View
+        pointerEvents="box-none"
       />
       <View>
         <View
@@ -38,61 +32,27 @@ exports[`1. modal image 1`] = `
           />
         </View>
       </View>
-      <SafeAreaView
-        forceInset={
-          Object {
-            "horizontal": "always",
-            "vertical": "always",
-          }
-        }
+      <View
+        pointerEvents="box-none"
       >
-        <Gestures>
-          <View
-            accessibilityIgnoresInvertColors={true}
-          >
-            <Image
-              fadeDuration={0}
-              source={
-                Object {
-                  "testUri": "../../../packages/responsive-image/assets/t.png",
-                }
-              }
-            />
-          </View>
-        </Gestures>
-      </SafeAreaView>
-      <OverlayGradient
-        degrees={0}
-        height={140}
-        pointerEvents="none"
-        startPoint="0.35714285714285715"
-        width={750}
-      >
-        <SafeAreaView
-          forceInset={
-            Object {
-              "bottom": "always",
-              "horizontal": "always",
-              "top": "never",
-            }
+        <ImageZoomView
+          imageUrls={
+            Array [
+              Object {
+                "url": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0",
+              },
+            ]
           }
-        >
-          <View>
-            <Text>
-              Caption
-            </Text>
-          </View>
-        </SafeAreaView>
-      </OverlayGradient>
+        />
+      </View>
     </View>
   </Modal>
   <View
     focusable={true}
   >
-    <View
-      accessibilityIgnoresInvertColors={true}
-    >
+    <View>
       <Image
+        borderRadius={0}
         fadeDuration={0}
         source={
           Object {
@@ -120,14 +80,8 @@ exports[`2. modal image with no caption 1`] = `
     visible={false}
   >
     <View>
-      <SafeAreaView
-        forceInset={
-          Object {
-            "bottom": "never",
-            "horizontal": "always",
-            "top": "always",
-          }
-        }
+      <View
+        pointerEvents="box-none"
       />
       <View>
         <View
@@ -143,46 +97,19 @@ exports[`2. modal image with no caption 1`] = `
           />
         </View>
       </View>
-      <SafeAreaView
-        forceInset={
-          Object {
-            "horizontal": "always",
-            "vertical": "always",
-          }
-        }
+      <View
+        pointerEvents="box-none"
       >
-        <Gestures>
-          <View
-            accessibilityIgnoresInvertColors={true}
-          >
-            <Image
-              fadeDuration={0}
-              source={
-                Object {
-                  "testUri": "../../../packages/responsive-image/assets/t.png",
-                }
-              }
-            />
-          </View>
-        </Gestures>
-      </SafeAreaView>
-      <OverlayGradient
-        degrees={0}
-        height={140}
-        pointerEvents="none"
-        startPoint="0.35714285714285715"
-        width={750}
-      >
-        <SafeAreaView
-          forceInset={
-            Object {
-              "bottom": "always",
-              "horizontal": "always",
-              "top": "never",
-            }
+        <ImageZoomView
+          imageUrls={
+            Array [
+              Object {
+                "url": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0",
+              },
+            ]
           }
         />
-      </OverlayGradient>
+      </View>
     </View>
   </Modal>
   <View
@@ -219,14 +146,8 @@ exports[`3. modal image with custom highressize 1`] = `
     visible={false}
   >
     <View>
-      <SafeAreaView
-        forceInset={
-          Object {
-            "bottom": "never",
-            "horizontal": "always",
-            "top": "always",
-          }
-        }
+      <View
+        pointerEvents="box-none"
       />
       <View>
         <View
@@ -242,235 +163,27 @@ exports[`3. modal image with custom highressize 1`] = `
           />
         </View>
       </View>
-      <SafeAreaView
-        forceInset={
-          Object {
-            "horizontal": "always",
-            "vertical": "always",
-          }
-        }
+      <View
+        pointerEvents="box-none"
       >
-        <Gestures>
-          <View
-            accessibilityIgnoresInvertColors={true}
-          >
-            <Image
-              fadeDuration={0}
-              source={
-                Object {
-                  "testUri": "../../../packages/responsive-image/assets/t.png",
-                }
-              }
-            />
-          </View>
-        </Gestures>
-      </SafeAreaView>
-      <OverlayGradient
-        degrees={0}
-        height={140}
-        pointerEvents="none"
-        startPoint="0.35714285714285715"
-        width={750}
-      >
-        <SafeAreaView
-          forceInset={
-            Object {
-              "bottom": "always",
-              "horizontal": "always",
-              "top": "never",
-            }
-          }
-        >
-          <View>
-            <Text>
-              Caption
-            </Text>
-          </View>
-        </SafeAreaView>
-      </OverlayGradient>
-    </View>
-  </Modal>
-  <View
-    focusable={true}
-  >
-    <View
-      accessibilityIgnoresInvertColors={true}
-    >
-      <Image
-        fadeDuration={0}
-        source={
-          Object {
-            "testUri": "../../../packages/responsive-image/assets/t.png",
-          }
-        }
-      />
-    </View>
-  </View>
-</View>
-`;
-
-exports[`9. hides elements when tapping on the image 1`] = `
-<View>
-  <Modal
-    animationType="slide"
-    hardwareAccelerated={false}
-    presentationStyle="fullScreen"
-    supportedOrientations={
-      Array [
-        "portrait",
-        "landscape",
-      ]
-    }
-    visible={true}
-  >
-    <View>
-      <SafeAreaView
-        forceInset={
-          Object {
-            "bottom": "never",
-            "horizontal": "always",
-            "top": "always",
-          }
-        }
-      />
-      <View />
-      <SafeAreaView
-        forceInset={
-          Object {
-            "horizontal": "always",
-            "vertical": "always",
-          }
-        }
-      >
-        <Gestures>
-          <View
-            accessibilityIgnoresInvertColors={true}
-          >
-            <Image
-              fadeDuration={0}
-              source={
-                Object {
-                  "testUri": "../../../packages/responsive-image/assets/t.png",
-                }
-              }
-            />
-          </View>
-        </Gestures>
-      </SafeAreaView>
-    </View>
-  </Modal>
-  <View
-    focusable={true}
-  >
-    <View
-      accessibilityIgnoresInvertColors={true}
-    >
-      <Image
-        fadeDuration={0}
-        source={
-          Object {
-            "testUri": "../../../packages/responsive-image/assets/t.png",
-          }
-        }
-      />
-    </View>
-  </View>
-</View>
-`;
-
-exports[`10. re-shows elements when tapping on the image a second time 1`] = `
-<View>
-  <Modal
-    animationType="slide"
-    hardwareAccelerated={false}
-    presentationStyle="fullScreen"
-    supportedOrientations={
-      Array [
-        "portrait",
-        "landscape",
-      ]
-    }
-    visible={true}
-  >
-    <View>
-      <SafeAreaView
-        forceInset={
-          Object {
-            "bottom": "never",
-            "horizontal": "always",
-            "top": "always",
-          }
-        }
-      />
-      <View>
-        <View
-          focusable={true}
-        >
-          <Image
-            resizeMode="contain"
-            source={
+        <ImageZoomView
+          imageUrls={
+            Array [
               Object {
-                "testUri": "../../../packages/image/assets/close-button.png",
-              }
-            }
-          />
-        </View>
+                "url": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0",
+              },
+            ]
+          }
+        />
       </View>
-      <SafeAreaView
-        forceInset={
-          Object {
-            "horizontal": "always",
-            "vertical": "always",
-          }
-        }
-      >
-        <Gestures>
-          <View
-            accessibilityIgnoresInvertColors={true}
-          >
-            <Image
-              fadeDuration={0}
-              source={
-                Object {
-                  "testUri": "../../../packages/responsive-image/assets/t.png",
-                }
-              }
-            />
-          </View>
-        </Gestures>
-      </SafeAreaView>
-      <OverlayGradient
-        degrees={0}
-        height={140}
-        pointerEvents="none"
-        startPoint="0.35714285714285715"
-        width={750}
-      >
-        <SafeAreaView
-          forceInset={
-            Object {
-              "bottom": "always",
-              "horizontal": "always",
-              "top": "never",
-            }
-          }
-        >
-          <View>
-            <Text>
-              Caption
-            </Text>
-          </View>
-        </SafeAreaView>
-      </OverlayGradient>
     </View>
   </Modal>
   <View
     focusable={true}
   >
-    <View
-      accessibilityIgnoresInvertColors={true}
-    >
+    <View>
       <Image
+        borderRadius={0}
         fadeDuration={0}
         source={
           Object {

@@ -27,7 +27,7 @@ exports[`Sunday Times magazine section 1`] = `
             }
           }
         >
-          <ResponsiveImage
+          <TimesImage
             style={
               Object {
                 "width": 750,
@@ -94,7 +94,7 @@ exports[`Times magazine section 1`] = `
             }
           }
         >
-          <ResponsiveImage
+          <TimesImage
             style={
               Object {
                 "width": 750,

@@ -1,8 +1,8 @@
 import React, { Component, Fragment } from "react";
 import { Modal, View } from "react-native";
-import Gestures from "@times-components/gestures";
 import { ResponsiveContext } from "@times-components/responsive";
 import Button from "@times-components/link";
+import ImageViewer from "react-native-image-zoom-viewer";
 import CloseButton from "../close-button";
 import ModalCaptionContainer from "../modal-caption-container";
 import SafeAreaView from "../safeAreaView";
@@ -54,7 +54,7 @@ class ModalImage extends Component {
   }
 
   render() {
-    const { highResSize, index, onImagePress } = this.props;
+    const { highResSize, index, onImagePress, images = [], uri } = this.props;
     if (onImagePress) {
       return (
         <Button onPress={() => onImagePress(index)}>
@@ -64,6 +64,13 @@ class ModalImage extends Component {
     }
     const { showModal, lowResImageWidth, elementsVisible } = this.state;
     const lowResSize = highResSize || lowResImageWidth;
+    const urls = [{ url: uri }].concat(
+      images
+        .map(i => ({
+          url: i.attributes.url
+        }))
+        .filter(({ url }) => url !== uri)
+    );
 
     return (
       <View>
@@ -103,28 +110,28 @@ class ModalImage extends Component {
                     forceInset={{ horizontal: "always", vertical: "always" }}
                     style={styles.middleSafeView}
                   >
-                    <Gestures
-                      onPress={this.toggleElements}
-                      onSwipeDown={this.hideModal}
-                      style={styles.gestureContainer}
-                    >
-                      <Image
-                        {...this.props}
-                        highResSize={screenWidth}
-                        lowResSize={lowResSize}
-                        resizeMode="contain"
-                        style={styles.modalImageContainer}
-                      />
-                    </Gestures>
+                    <ImageViewer
+                      imageUrls={urls}
+                      renderImage={({ source }) => [
+                        <Image
+                          {...this.props}
+                          uri={source.uri}
+                          highResSize={screenWidth}
+                          lowResSize={lowResSize}
+                          resizeMode="contain"
+                          style={styles.modalImageContainer}
+                        />,
+                        elementsVisible ? (
+                          <ModalCaptionContainer
+                            pointerEvents="none"
+                            style={styles.bottomSafeView}
+                          >
+                            {this.renderCaption({ isTablet })}
+                          </ModalCaptionContainer>
+                        ) : null
+                      ]}
+                    />
                   </SafeAreaView>
-                  {elementsVisible ? (
-                    <ModalCaptionContainer
-                      pointerEvents="none"
-                      style={styles.bottomSafeView}
-                    >
-                      {this.renderCaption({ isTablet })}
-                    </ModalCaptionContainer>
-                  ) : null}
                 </Fragment>
               )}
             </ResponsiveContext.Consumer>

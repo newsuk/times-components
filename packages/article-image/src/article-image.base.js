@@ -51,7 +51,12 @@ const renderCaption = (caption, credits, display, theme) => {
   );
 };
 
-const ArticleImage = ({ imageOptions, captionOptions, onImagePress }) => {
+const ArticleImage = ({
+  imageOptions,
+  captionOptions,
+  onImagePress,
+  images
+}) => {
   const {
     display,
     highResSize,
@@ -98,6 +103,7 @@ const ArticleImage = ({ imageOptions, captionOptions, onImagePress }) => {
           caption={<Caption credits={credits} text={caption} />}
           highResSize={highResSize}
           index={index}
+          images={images}
           lowResSize={lowResSize}
           onImagePress={onImagePress}
           uri={uri}
