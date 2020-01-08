@@ -50,10 +50,9 @@ exports[`1. modal image 1`] = `
   <View
     focusable={true}
   >
-    <View
-      accessibilityIgnoresInvertColors={true}
-    >
+    <View>
       <Image
+        borderRadius={0}
         fadeDuration={0}
         source={
           Object {
@@ -182,10 +181,9 @@ exports[`3. modal image with custom highressize 1`] = `
   <View
     focusable={true}
   >
-    <View
-      accessibilityIgnoresInvertColors={true}
-    >
+    <View>
       <Image
+        borderRadius={0}
         fadeDuration={0}
         source={
           Object {
