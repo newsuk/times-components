@@ -35,8 +35,8 @@ commands:
                   name: Install fontforge
                   command: |
                     sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
-                    eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
-                    brew install fontforge
+                    echo $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+                    /home/linuxbrew/.linuxbrew/bin/brew install fontforge
 
 jobs:
     setup:
