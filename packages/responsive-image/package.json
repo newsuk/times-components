@@ -1,6 +1,6 @@
 {
   "name": "@times-components/responsive-image",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A responsive-image for react native",
   "main": "src/index.tsx",
   "typings": "build/index.d.ts",
