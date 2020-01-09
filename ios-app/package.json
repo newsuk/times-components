@@ -10,7 +10,7 @@
     "start": "react-native start --config metro.config.js"
   },
   "dependencies": {
-    "@times-components/pages": "2.0.296",
+    "@times-components/pages": "2.1.0",
     "@times-components/typeset": "0.0.8",
     "prop-types": "15.7.2",
     "react": "16.9.0",
