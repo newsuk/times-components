@@ -302,23 +302,11 @@ workflows:
                         only: 
                           - master
                   requires:
-                      - build_storybook
-                      - run_lint
-                      - run_noplatform_tests
-                      - run_android_tests
-                      - run_ios_tests
-                      - run_web_tests
-                      - run_cypress_tests
+                      - publish_npm
             - publish_ios:
                   filters:
                     branches:
                         only: 
                           - master
                   requires:
-                      - build_storybook
-                      - run_lint
-                      - run_noplatform_tests
-                      - run_android_tests
-                      - run_ios_tests
-                      - run_web_tests
-                      - run_cypress_tests
+                      - publish_npm
