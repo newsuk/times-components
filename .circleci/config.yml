@@ -163,7 +163,7 @@ jobs:
             - attach_workspace:
                   at: ./
             - run:
-                  name: Build and publish native js bundles
+                  name: Build and publish android js bundles
                   command: |
                       # Install JDK and android SDK   
                       sudo apt-get update
@@ -189,7 +189,7 @@ jobs:
             - attach_workspace:
                   at: ./
             - run:
-                  name: Build and publish native js bundles
+                  name: Build and publish iOS js bundles
                   command: |
                       npx yarn@1.16.0 ios:build-lib
                       npx yarn@1.16.0 ios:publish-lib
