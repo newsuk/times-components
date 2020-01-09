@@ -87,7 +87,11 @@ export default ({
           ast={tree}
           style={{ marginBottom: 0 }}
         >
-          <Text allowFontScaling={false} style={fontConfig.subheading}>
+          <Text
+            selectable
+            allowFontScaling={false}
+            style={fontConfig.subheading}
+          >
             {childStr.string}
           </Text>
         </ArticleParagraphWrapper>
