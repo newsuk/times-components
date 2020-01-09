@@ -67,7 +67,7 @@
     "@times-components/gradient": "3.2.17",
     "@times-components/link": "3.6.1",
     "@times-components/responsive": "0.5.21",
-    "@times-components/responsive-image": "0.2.1",
+    "@times-components/responsive-image": "0.3.0",
     "@times-components/styleguide": "3.33.14",
     "@times-components/svgs": "2.7.28",
     "@times-components/utils": "6.0.1",
