@@ -80,14 +80,18 @@ cd - 2>&4 1>&3
 log "Update new assets"
 git config user.name "Publish Bot"
 git config user.email "publish@ghbot.com"
+log "test"
 rm -rf $TMP_ASSET_DIR/assets 1>&3
+log "test 0"
 mkdir -p $TMP_ASSET_DIR/assets 1>&3
+log "test 0.5"
 cp -r ios-app/ios-assets/* $TMP_ASSET_DIR/assets 1>&3
 # Lets not copy podspec file over as it has path info for this repo
 # and it will be confusing to see it over in assets repo
-
+log "Test 1"
 cd $TMP_ASSET_DIR 2>&4 1>&3
 git add $TMP_ASSET_DIR/assets TimesComponents.podspec 1>&3
+log "Test 2"
 # If there are no changes and we still want to tag the version, ignore error
 git commit -m "IOS assets for version:$VERSION"  1>&3 || true
 log "Create new version tag: $VERSION"

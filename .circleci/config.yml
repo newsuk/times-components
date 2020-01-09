@@ -156,7 +156,7 @@ jobs:
                       npx yarn@1.16.0 coverage:publish
                   working_directory: ~/project/
 
-    publish_native:
+    publish_android:
         executor: node
         steps:
             - checkout
@@ -180,8 +180,18 @@ jobs:
                       cd ~/project/
                       # TODO: move above lines in a docker image
                       npx yarn@1.16.0 android:build-lib
-                      npx yarn@1.16.0 ios:build-lib
                       npx yarn@1.16.0 android:publish-lib
+                  working_directory: ~/project/
+    publish_ios:
+        executor: node
+        steps:
+            - checkout
+            - attach_workspace:
+                  at: ./
+            - run:
+                  name: Build and publish native js bundles
+                  command: |
+                      npx yarn@1.16.0 ios:build-lib
                       npx yarn@1.16.0 ios:publish-lib
                   working_directory: ~/project/
 
@@ -272,7 +282,14 @@ workflows:
                       - run_ios_tests
                       - run_web_tests
                       - run_cypress_tests
-            - publish_native:
+            - publish_android:
+                  filters:
+                    branches:
+                        only: 
+                          - master
+                  requires:
+                      - publish_npm
+            - publish_ios:
                   filters:
                     branches:
                         only: 
