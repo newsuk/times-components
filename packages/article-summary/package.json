@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-summary",
-  "version": "3.16.1",
+  "version": "3.16.2",
   "main": "dist/article-summary",
   "dev": "src/article-summary",
   "scripts": {
@@ -61,7 +61,7 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/article-byline": "3.4.1",
+    "@times-components/article-byline": "3.4.2",
     "@times-components/article-flag": "2.9.17",
     "@times-components/article-label": "2.7.16",
     "@times-components/date-publication": "0.21.17",

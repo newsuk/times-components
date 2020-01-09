@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.4.2](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.4.1...@times-components/article-byline@3.4.2) (2020-01-09)
+
+
+### Bug Fixes
+
+* (REPLAT-6829) (REPLAT-11392) fix text selection and a typo in byline component ([#2460](https://github.com/newsuk/times-components/issues/2460)) ([a0533e9](https://github.com/newsuk/times-components/commit/a0533e9e3a923f29b49a4db0755ea0ef4df673a2))
+
+
+
+
+
 ## [3.4.1](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.3.19...@times-components/article-byline@3.4.1) (2020-01-09)
 
 
