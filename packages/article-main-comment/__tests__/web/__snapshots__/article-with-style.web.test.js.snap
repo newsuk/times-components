@@ -169,10 +169,6 @@ exports[`full article with style 1`] = `
   order: 2;
 }
 
-.c9 {
-  width: 100%;
-}
-
 .c8 {
   -webkit-align-items: center;
   -webkit-box-align: center;
