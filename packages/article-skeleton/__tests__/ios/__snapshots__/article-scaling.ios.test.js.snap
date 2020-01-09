@@ -43,7 +43,13 @@ exports[`1. scaled medium full article 1`] = `
             }
           >
             <View>
-              <Text>
+              <Text
+                style={
+                  Object {
+                    "lineHeight": 52,
+                  }
+                }
+              >
                 <Text
                   style={
                     Object {
@@ -150,7 +156,13 @@ exports[`2. scaled large full article 1`] = `
             }
           >
             <View>
-              <Text>
+              <Text
+                style={
+                  Object {
+                    "lineHeight": 52,
+                  }
+                }
+              >
                 <Text
                   style={
                     Object {
@@ -257,7 +269,13 @@ exports[`3. scaled xlarge full article 1`] = `
             }
           >
             <View>
-              <Text>
+              <Text
+                style={
+                  Object {
+                    "lineHeight": 52,
+                  }
+                }
+              >
                 <Text
                   style={
                     Object {

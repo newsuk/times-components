@@ -11,32 +11,44 @@ const SimpleParagraph = ({
   children,
   defaultFont,
   LinkComponent
-}) => (
-  <ArticleParagraphWrapper ast={tree} key={key} uid={key}>
-    <Text allowFontScaling={false}>
-      {children.map(child => {
-        const attribute = child.attributes[0];
-        const style = attribute ? attribute.tag.settings : defaultFont;
-        const href = attribute ? attribute.tag.href : null;
-        const type = href ? attribute.tag.type : null;
-        const canonicalId = href ? attribute.tag.canonicalId : null;
-        if (href) {
-          const { color, ...linkStyle } = style;
+}) => {
+  if (children.length === 0) {
+    return null;
+  }
+
+  const { lineHeight } = defaultFont;
+
+  return (
+    <ArticleParagraphWrapper ast={tree} key={key} uid={key}>
+      <Text allowFontScaling={false} selectable style={{ lineHeight }}>
+        {children.map(child => {
+          const attribute = child.attributes[0];
+          const style = attribute ? attribute.tag.settings : defaultFont;
+          const href = attribute ? attribute.tag.href : null;
+          const type = href ? attribute.tag.type : null;
+          const canonicalId = href ? attribute.tag.canonicalId : null;
+          if (href) {
+            const { color, ...linkStyle } = style;
+            return (
+              <LinkComponent
+                url={href}
+                style={linkStyle}
+                onPress={e => onLinkPress(e, { canonicalId, type, url: href })}
+              >
+                {child.string}
+              </LinkComponent>
+            );
+          }
           return (
-            <LinkComponent
-              url={href}
-              style={linkStyle}
-              onPress={e => onLinkPress(e, { canonicalId, type, url: href })}
-            >
+            <Text selectable allowFontScaling={false} style={style}>
               {child.string}
-            </LinkComponent>
+            </Text>
           );
-        }
-        return <Text style={style}>{child.string}</Text>;
-      })}
-    </Text>
-  </ArticleParagraphWrapper>
-);
+        })}
+      </Text>
+    </ArticleParagraphWrapper>
+  );
+};
 
 SimpleParagraph.propTypes = {
   onLinkPress: PropTypes.func.isRequired,

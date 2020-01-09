@@ -1172,8 +1172,16 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
             }
           >
             <View>
-              <Text>
+              <Text
+                selectable={true}
+                style={
+                  Object {
+                    "lineHeight": 52,
+                  }
+                }
+              >
                 <Text
+                  selectable={true}
                   style={
                     Object {
                       "color": "#000000",
@@ -1339,8 +1347,16 @@ exports[`8. breaks up malformed huge paragraphs 1`] = `
             }
           >
             <View>
-              <Text>
+              <Text
+                selectable={true}
+                style={
+                  Object {
+                    "lineHeight": 52,
+                  }
+                }
+              >
                 <Text
+                  selectable={true}
                   style={
                     Object {
                       "color": "#000000",
@@ -1355,6 +1371,7 @@ exports[`8. breaks up malformed huge paragraphs 1`] = `
                   Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
                 </Text>
                 <Text
+                  selectable={true}
                   style={
                     Object {
                       "color": "#000000",
@@ -1369,6 +1386,7 @@ exports[`8. breaks up malformed huge paragraphs 1`] = `
                   Telegraph 
                 </Text>
                 <Text
+                  selectable={true}
                   style={
                     Object {
                       "color": "#000000",
@@ -1383,6 +1401,7 @@ exports[`8. breaks up malformed huge paragraphs 1`] = `
                   last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
                 </Text>
                 <Text
+                  selectable={true}
                   style={
                     Object {
                       "color": "#000000",
@@ -1434,8 +1453,16 @@ exports[`8. breaks up malformed huge paragraphs 1`] = `
             }
           >
             <View>
-              <Text>
+              <Text
+                selectable={true}
+                style={
+                  Object {
+                    "lineHeight": 52,
+                  }
+                }
+              >
                 <Text
+                  selectable={true}
                   style={
                     Object {
                       "color": "#000000",
@@ -1573,8 +1600,16 @@ exports[`9. breaks up nested malformed markup 1`] = `
             }
           >
             <View>
-              <Text>
+              <Text
+                selectable={true}
+                style={
+                  Object {
+                    "lineHeight": 52,
+                  }
+                }
+              >
                 <Text
+                  selectable={true}
                   style={
                     Object {
                       "color": "#000000",
@@ -1589,6 +1624,7 @@ exports[`9. breaks up nested malformed markup 1`] = `
                   Telegraph 
                 </Text>
                 <Text
+                  selectable={true}
                   style={
                     Object {
                       "color": "#000000",
@@ -1603,6 +1639,7 @@ exports[`9. breaks up nested malformed markup 1`] = `
                   last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
                 </Text>
                 <Text
+                  selectable={true}
                   style={
                     Object {
                       "color": "#000000",
@@ -1654,8 +1691,16 @@ exports[`9. breaks up nested malformed markup 1`] = `
             }
           >
             <View>
-              <Text>
+              <Text
+                selectable={true}
+                style={
+                  Object {
+                    "lineHeight": 52,
+                  }
+                }
+              >
                 <Text
+                  selectable={true}
                   style={
                     Object {
                       "color": "#000000",
@@ -1670,6 +1715,7 @@ exports[`9. breaks up nested malformed markup 1`] = `
                   test break bold
                 </Text>
                 <Text
+                  selectable={true}
                   style={
                     Object {
                       "color": "#000000",
@@ -1807,8 +1853,16 @@ exports[`10. renders content 1`] = `
             }
           >
             <View>
-              <Text>
+              <Text
+                selectable={true}
+                style={
+                  Object {
+                    "lineHeight": 52,
+                  }
+                }
+              >
                 <Text
+                  selectable={true}
                   style={
                     Object {
                       "color": "#000000",
@@ -1823,6 +1877,7 @@ exports[`10. renders content 1`] = `
                   Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
                 </Text>
                 <Text
+                  selectable={true}
                   style={
                     Object {
                       "color": "#000000",
@@ -1837,6 +1892,7 @@ exports[`10. renders content 1`] = `
                   Telegraph 
                 </Text>
                 <Text
+                  selectable={true}
                   style={
                     Object {
                       "color": "#000000",
@@ -1851,6 +1907,7 @@ exports[`10. renders content 1`] = `
                   last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
                 </Text>
                 <Text
+                  selectable={true}
                   style={
                     Object {
                       "color": "#000000",
@@ -1902,8 +1959,16 @@ exports[`10. renders content 1`] = `
             }
           >
             <View>
-              <Text>
+              <Text
+                selectable={true}
+                style={
+                  Object {
+                    "lineHeight": 52,
+                  }
+                }
+              >
                 <Text
+                  selectable={true}
                   style={
                     Object {
                       "color": "#000000",
