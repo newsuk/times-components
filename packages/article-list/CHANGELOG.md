@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.4.1](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.3.61...@times-components/article-list@9.4.1) (2020-01-09)
+
+
+### Bug Fixes
+
+* (REPLAT-10519) better modal images ([#2390](https://github.com/newsuk/times-components/issues/2390)) ([0a8ee31](https://github.com/newsuk/times-components/commit/0a8ee311f45bb19f1af766ee2891eaf9f5270369))
+* bump all packages ([#2456](https://github.com/newsuk/times-components/issues/2456)) ([048353a](https://github.com/newsuk/times-components/commit/048353a846ebae757f58fd5638d504288a71b107))
+
+
+
+
+
 ## [9.3.61](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.3.60...@times-components/article-list@9.3.61) (2019-12-20)
 
 **Note:** Version bump only for package @times-components/article-list

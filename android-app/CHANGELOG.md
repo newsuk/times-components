@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.17.2](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.16.149...@times-components/android-app@0.17.2) (2020-01-09)
+
+
+### Bug Fixes
+
+* (REPLAT-10519) better modal images ([#2390](https://github.com/newsuk/times-components/issues/2390)) ([0a8ee31](https://github.com/newsuk/times-components/commit/0a8ee311f45bb19f1af766ee2891eaf9f5270369))
+* bump all packages ([#2456](https://github.com/newsuk/times-components/issues/2456)) ([048353a](https://github.com/newsuk/times-components/commit/048353a846ebae757f58fd5638d504288a71b107))
+* bump apps packages ([#2455](https://github.com/newsuk/times-components/issues/2455)) ([8a9ff62](https://github.com/newsuk/times-components/commit/8a9ff623ff1f3b7c448d775e2e3d96e71ff46e13))
+* package versions ([#2453](https://github.com/newsuk/times-components/issues/2453)) ([6639f32](https://github.com/newsuk/times-components/commit/6639f32c5c7ea1a22bf3d903036fa1d84affa954))
+* pages package version ([#2457](https://github.com/newsuk/times-components/issues/2457)) ([c4071b7](https://github.com/newsuk/times-components/commit/c4071b7452273294bc67033917a12b8711706a31))
+
+
+
+
+
 ## [0.16.149](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.16.148...@times-components/android-app@0.16.149) (2019-12-20)
 
 **Note:** Version bump only for package @times-components/android-app

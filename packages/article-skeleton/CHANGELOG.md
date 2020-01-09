@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.24.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.22.9...@times-components/article-skeleton@1.24.0) (2020-01-09)
+
+
+### Bug Fixes
+
+* (REPLAT-10519) better modal images ([#2390](https://github.com/newsuk/times-components/issues/2390)) ([0a8ee31](https://github.com/newsuk/times-components/commit/0a8ee311f45bb19f1af766ee2891eaf9f5270369))
+* bump all packages ([#2456](https://github.com/newsuk/times-components/issues/2456)) ([048353a](https://github.com/newsuk/times-components/commit/048353a846ebae757f58fd5638d504288a71b107))
+* package versions ([#2453](https://github.com/newsuk/times-components/issues/2453)) ([6639f32](https://github.com/newsuk/times-components/commit/6639f32c5c7ea1a22bf3d903036fa1d84affa954))
+
+
+### Features
+
+* REPLAT-11397 drop cap starting with quote for web ([#2451](https://github.com/newsuk/times-components/issues/2451)) ([b0b3d34](https://github.com/newsuk/times-components/commit/b0b3d343768e8a5bcb1c057a3484311aa91f0e81))
+
+
+
+
+
 ## [1.22.9](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.22.8...@times-components/article-skeleton@1.22.9) (2019-12-20)
 
 **Note:** Version bump only for package @times-components/article-skeleton
