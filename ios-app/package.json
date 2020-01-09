@@ -1,6 +1,6 @@
 {
   "name": "@times-components/ios-app",
-  "version": "0.15.173",
+  "version": "0.17.0",
   "license": "BSD-3-Clause",
   "scripts": {
     "build": "cat package.json | grep version | head -1 | sed 's/[\",\t ]//g' | awk -F: '{ print \"Bundle Version: \" $2 }' > ios-assets/js/version.meta",
