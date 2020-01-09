@@ -1,7 +1,18 @@
-# Change Log
+# Changelog
 
-All notable changes to this project will be documented in this file.
-See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### [0.3.3](https://github.com/newsuk/times-components/compare/v0.3.0...v0.3.3) (2020-01-09)
+
+
+### Bug Fixes
+
+* (REPLAT-6829) (REPLAT-11392) fix text selection and a typo in byline component ([#2460](https://github.com/newsuk/times-components/issues/2460)) ([a0533e9](https://github.com/newsuk/times-components/commit/a0533e9))
+* ios git user ([#2463](https://github.com/newsuk/times-components/issues/2463)) ([f3d9602](https://github.com/newsuk/times-components/commit/f3d9602))
+* ios publish of artifactories ([#2458](https://github.com/newsuk/times-components/issues/2458)) ([165f951](https://github.com/newsuk/times-components/commit/165f951))
+* responsive image ([#2464](https://github.com/newsuk/times-components/issues/2464)) ([6afe689](https://github.com/newsuk/times-components/commit/6afe689))
+
+
 
 # [0.3.0](https://github.com/newsuk/times-components/compare/@times-components/responsive-image@0.1.16...@times-components/responsive-image@0.3.0) (2020-01-09)
 
