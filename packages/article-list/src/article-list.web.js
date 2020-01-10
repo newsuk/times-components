@@ -1,7 +1,7 @@
 /* eslint-env browser */
 import React, { Component, Fragment } from "react";
 import { View } from "react-native";
-import Ad, { AdComposer } from "@times-components/ad";
+import { AdContainer } from "@times-components/ad";
 import Button from "@times-components/button";
 import ErrorView from "@times-components/error-view";
 import { spacing } from "@times-components/styleguide";
@@ -40,7 +40,6 @@ class ArticleList extends Component {
 
   render() {
     const {
-      adConfig,
       articleListHeader,
       articles,
       articlesLoading,
@@ -57,8 +56,6 @@ class ArticleList extends Component {
       refetch,
       showImages
     } = this.props;
-
-    const hasAdvertConfig = Object.keys(adConfig).length > 0;
 
     const paginationComponent = ({
       hideResults = false,
@@ -92,14 +89,12 @@ class ArticleList extends Component {
       </ListContentContainer>
     );
 
-    const renderAdComponent = ({ key }) => (
-      <AdComposer adConfig={adConfig} key={key}>
-        <Ad
+    const renderAdComponent = () => (
+        <AdContainer
           isLoading={articlesLoading}
           slotName="inline-ad"
           style={styles.adContainer}
         />
-      </AdComposer>
     );
 
     const data = articlesLoading

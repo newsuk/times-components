@@ -8,7 +8,6 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     rootTag,
     makeArticleUrl,
     makeTopicUrl,
-    mapArticleToAdConfig
   } = window.nuk.ssr;
   const {
     articleId,
@@ -42,7 +41,6 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
     makeTopicUrl,
     navigationMode,
     getCookieValue,
-    mapArticleToAdConfig,
     spotAccountId,
     paidContentClassName,
     userState,

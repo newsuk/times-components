@@ -18,7 +18,6 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     debounceTimeMs,
     makeArticleUrl,
     makeTopicUrl,
-    mapTopicToAdConfig,
     page,
     pageSize,
     topicSlug
@@ -49,7 +48,6 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
               }
             },
             React.createElement(Topic, {
-              adConfig: mapTopicToAdConfig(),
               analyticsStream,
               error,
               isLoading,
