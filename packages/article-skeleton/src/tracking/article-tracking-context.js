@@ -28,10 +28,13 @@ export default Component =>
           ""
         )}`,
         edition_type: editionType,
-        published_time: get(data, "publishedTime", ""),
+        published_time: published.toISODate(),
         past_edition_date:
-          editionType === "past 6 days" ? get(data, "publishedTime", "") : null,
-        parent_site: get(data, "publicationName", ""),
+          editionType === "past 6 days" ? published.toISODate() : null,
+        parent_site:
+          get(data, "publicationName", "") === "TIMES"
+            ? "the times"
+            : "the sunday times",
         referral_url: referralUrl || get(data, "referralUrl", ""),
         section: pageSection || get(data, "section", ""),
         template: get(data, "template", "Default")

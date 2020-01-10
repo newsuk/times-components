@@ -139,7 +139,7 @@ const ResponsiveImage = (props: ResponsiveImageProps) => {
     }
   }, []);
 
-  if (!width || !checkedCache) {
+  if (!width) {
     return (
       <ImageBackground
         onLayout={imageRef}
