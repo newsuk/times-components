@@ -31,7 +31,6 @@
     "watch:tests": "run-s clean build:main && run-p \"build:main -- -w\" \"test:unit -- --watch\"",
     "doc": "run-s doc:html && open-cli build/docs/index.html",
     "doc:publish": "gh-pages -m \"[ci skip] Updates\" -d build/docs",
-    "version": "standard-version",
     "reset": "git clean -dfx && git reset --hard && npm i",
     "clean": "rm -rf build"
   },
@@ -42,7 +41,6 @@
     "test": "Lint and unit test the project",
     "watch:tests": "Watch and rebuild the project on save, then rerun relevant tests",
     "cov": "Rebuild, run tests, then create and open the coverage report",
-    "version": "Bump package.json version, update CHANGELOG.md, tag release",
     "reset": "Delete all untracked files and reset the repo to the last commit",
     "prepare-release": "One-step: clean, build, test, publish docs, and prep a release"
   },
@@ -68,7 +66,6 @@
     "npm-run-all": "4.1.5",
     "open-cli": "5.0.0",
     "prettier": "1.14.3",
-    "standard-version": "6.0.1",
     "trash-cli": "3.0.0",
     "tslint": "5.18.0",
     "tslint-config-prettier": "1.18.0",
