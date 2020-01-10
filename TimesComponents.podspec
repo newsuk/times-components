@@ -64,39 +64,4 @@ Pod::Spec.new do |s|
     'TimesComponents' => ['assets/js/index.ios.bundle', 'assets/res/*']
   }
   
-  # React, and the subspecs we have to use
-  s.dependency 'React/Core', react_native_version
-  s.dependency 'React/CxxBridge', react_native_version
-  s.dependency 'React/RCTAnimation', react_native_version
-  s.dependency 'React/RCTCameraRoll', react_native_version
-  s.dependency 'React/RCTImage', react_native_version
-  s.dependency 'React/RCTLinkingIOS', react_native_version
-  s.dependency 'React/RCTNetwork', react_native_version
-  s.dependency 'React/RCTText', react_native_version
-  s.dependency 'React/RCTGeolocation', react_native_version
-  s.dependency 'React/RCTActionSheet', react_native_version
-  s.dependency 'React/RCTWebSocket', react_native_version
-  s.dependency 'React/DevSupport', react_native_version
-  s.dependency 'React/ART', react_native_version
-
-  # React's Dependencies
-  react_podspecs = [
-    'node_modules/react-native/ReactCommon/yoga/yoga.podspec',
-    'node_modules/react-native/third-party-podspecs/DoubleConversion.podspec',
-    'node_modules/react-native/third-party-podspecs/Folly.podspec',
-    'node_modules/react-native/third-party-podspecs/glog.podspec'
-  ]
-
-  # Native dependencies if any, which come from node_modules
-  dep_podspecs = [
-    'node_modules/react-native-webview/react-native-webview.podspec'
-  ]
-
-  # Ties the exact versions so host apps don't need to guess the version
-  # or have a potential mismatch
-  podspecs = react_podspecs + dep_podspecs
-  podspecs.each do |podspec_path|
-    spec = Pod::Specification.from_file podspec_path
-    s.dependency spec.name, "#{spec.version}"
-  end
 end
