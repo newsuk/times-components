@@ -23,7 +23,6 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
     logoUrl,
     makeArticleUrl,
     makeTopicUrl,
-    mapArticleToAdConfig,
     navigationMode,
     spotAccountId,
     getCookieValue,
@@ -69,7 +68,6 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
               }
             },
             React.createElement(Article, {
-              adConfig: mapArticleToAdConfig(article),
               analyticsStream,
               article: {
                 ...article,

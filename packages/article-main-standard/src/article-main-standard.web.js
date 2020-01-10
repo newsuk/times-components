@@ -73,7 +73,6 @@ class ArticlePage extends Component {
 
   render() {
     const {
-      adConfig,
       article,
       analyticsStream,
       error,
@@ -92,7 +91,6 @@ class ArticlePage extends Component {
     return (
       <ArticleMainStandardContainer>
         <ArticleSkeleton
-          adConfig={adConfig}
           analyticsStream={analyticsStream}
           data={article}
           Header={this.renderHeader}

@@ -5,8 +5,7 @@ if (window.nuk && window.nuk.ssr && window.nuk.authorProfile) {
   const {
     rootTag,
     makeArticleUrl,
-    makeTopicUrl,
-    mapProfileToAdConfig
+    makeTopicUrl
   } = window.nuk.ssr;
   const {
     authorSlug,
@@ -20,7 +19,6 @@ if (window.nuk && window.nuk.ssr && window.nuk.authorProfile) {
     debounceTimeMs,
     makeArticleUrl,
     makeTopicUrl,
-    mapProfileToAdConfig,
     page,
     pageSize
   };

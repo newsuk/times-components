@@ -6,6 +6,7 @@ import {
 
 const articlePropTypes = {
   ...articlePropTypesBase,
+  adConfig: PropTypes.shape({}).isRequired,
   error: PropTypes.bool.isRequired,
   isLoading: PropTypes.bool.isRequired,
   onAuthorPress: PropTypes.func.isRequired,
