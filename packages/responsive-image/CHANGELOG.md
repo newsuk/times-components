@@ -1,3 +1,23 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [0.4.2](https://github.com/newsuk/times-components/compare/@times-components/responsive-image@0.3.2...@times-components/responsive-image@0.4.2) (2020-01-10)
+
+
+
+## 0.4.2 (2020-01-10)
+
+
+### Bug Fixes
+
+* responsive image ([#2467](https://github.com/newsuk/times-components/issues/2467)) ([793d6d6](https://github.com/newsuk/times-components/commit/793d6d6e631eb3333194ab219ba02b656cee173e))
+
+
+
+
+
 # Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.

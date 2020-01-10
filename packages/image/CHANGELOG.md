@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.5.5](https://github.com/newsuk/times-components/compare/@times-components/image@6.5.4...@times-components/image@6.5.5) (2020-01-10)
+
+
+### Bug Fixes
+
+* responsive image ([#2467](https://github.com/newsuk/times-components/issues/2467)) ([793d6d6](https://github.com/newsuk/times-components/commit/793d6d6e631eb3333194ab219ba02b656cee173e))
+
+
+
+
+
 ## [6.5.4](https://github.com/newsuk/times-components/compare/@times-components/image@6.5.3...@times-components/image@6.5.4) (2020-01-10)
 
 
