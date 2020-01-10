@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.18.6](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.5...@times-components/article-main-comment@2.18.6) (2020-01-10)
+
+
+### Bug Fixes
+
+* REPLAT-11287 inline ad web styling ([#2465](https://github.com/newsuk/times-components/issues/2465)) ([368d8e8](https://github.com/newsuk/times-components/commit/368d8e8f5cb13a3dee42051552c678936ba25393))
+
+
+
+
+
 ## [2.18.5](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.4...@times-components/article-main-comment@2.18.5) (2020-01-09)
 
 **Note:** Version bump only for package @times-components/article-main-comment
