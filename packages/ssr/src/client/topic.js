@@ -5,8 +5,7 @@ if (window.nuk && window.nuk.ssr && window.nuk.topicPage) {
   const {
     rootTag,
     makeArticleUrl,
-    makeTopicUrl,
-    mapTopicToAdConfig
+    makeTopicUrl
   } = window.nuk.ssr;
   const {
     debounceTimeMs,
@@ -20,7 +19,6 @@ if (window.nuk && window.nuk.ssr && window.nuk.topicPage) {
     debounceTimeMs,
     makeArticleUrl,
     makeTopicUrl,
-    mapTopicToAdConfig,
     page,
     pageSize,
     topicSlug
