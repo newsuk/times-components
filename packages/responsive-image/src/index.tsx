@@ -54,8 +54,8 @@ const ImageElement = ({
     source={source}
     onLoadEnd={onLoadEnd}
     onLoad={onLoad}
-    resizeMethod={'resize'}
     onError={onError}
+    resizeMethod={'resize'}
     style={{
       aspectRatio,
       borderRadius,
