@@ -6,7 +6,6 @@ import {
 
 export const propTypes = {
   ...basePropTypes,
-  adConfig: PropTypes.shape({}).isRequired,
   count: PropTypes.number,
   onNext: PropTypes.func,
   onPrev: PropTypes.func,
