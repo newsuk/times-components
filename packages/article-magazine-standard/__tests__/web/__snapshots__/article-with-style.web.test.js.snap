@@ -479,6 +479,7 @@ exports[`full article with style 1`] = `
   padding-horizontal: 10px;
   padding-vertical: 10px;
   margin-top: 30px;
+  width: 100%;
 }
 </style>
 
@@ -1165,6 +1166,7 @@ exports[`full article with style in the culture magazine 1`] = `
   padding-horizontal: 10px;
   padding-vertical: 10px;
   margin-top: 30px;
+  width: 100%;
 }
 </style>
 
@@ -1852,6 +1854,7 @@ exports[`full article with style in the style magazine 1`] = `
   padding-horizontal: 10px;
   padding-vertical: 10px;
   margin-top: 30px;
+  width: 100%;
 }
 </style>
 
@@ -2538,6 +2541,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
   padding-horizontal: 10px;
   padding-vertical: 10px;
   margin-top: 30px;
+  width: 100%;
 }
 </style>
 

@@ -473,6 +473,7 @@ exports[`full article with style 1`] = `
   padding-horizontal: 10px;
   padding-vertical: 10px;
   margin-top: 30px;
+  width: 100%;
 }
 </style>
 

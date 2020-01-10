@@ -10,7 +10,8 @@ const webStyles = {
   ad: {
     ...sharedStyles.ad,
     marginBottom: spacing(6),
-    marginTop: spacing(6)
+    marginTop: spacing(6),
+    width: "100%"
   },
   articleTextElement: {
     ...sharedStyles.articleTextElement,
