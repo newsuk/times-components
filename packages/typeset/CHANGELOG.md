@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.9](https://github.com/newsuk/times-components/compare/@times-components/typeset@0.0.8...@times-components/typeset@0.0.9) (2020-01-10)
+
+
+### Bug Fixes
+
+* remove unnecessary version scripts ([#2473](https://github.com/newsuk/times-components/issues/2473)) ([c794532](https://github.com/newsuk/times-components/commit/c79453211789136429b3f8ebb6d9550831a7cd98))
+
+
+
+
+
 ## [0.0.8](https://github.com/newsuk/times-components/compare/@times-components/typeset@0.0.7...@times-components/typeset@0.0.8) (2019-12-11)
 
 
