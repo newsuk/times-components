@@ -66,7 +66,6 @@
     "npm-run-all": "4.1.5",
     "open-cli": "5.0.0",
     "prettier": "1.14.3",
-    "standard-version": "6.0.1",
     "trash-cli": "3.0.0",
     "tslint": "5.18.0",
     "tslint-config-prettier": "1.18.0",
