@@ -70,7 +70,7 @@
     "@times-components/user-state": "0.1.20",
     "newskit": "0.0.0-70b3f4d2c",
     "prop-types": "15.7.2",
-    "styled-components": "4.3.2"
+    "styled-components": "5.0.0"
   },
   "resolutions": {
     "react": "16.9.0",
