@@ -84,6 +84,7 @@ git config --global user.email "publish@ghbot.com"
 rm -rf $TMP_ASSET_DIR/assets 1>&3
 mkdir -p $TMP_ASSET_DIR/assets 1>&3
 cp -r ios-app/ios-assets/* $TMP_ASSET_DIR/assets 1>&3
+cp package.json $TMP_ASSET_DIR/assets 1>&3
 # Lets not copy podspec file over as it has path info for this repo
 # and it will be confusing to see it over in assets repo
 
