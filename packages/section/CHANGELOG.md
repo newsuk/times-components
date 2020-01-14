@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.6.13](https://github.com/newsuk/times-components/compare/@times-components/section@1.6.12...@times-components/section@1.6.13) (2020-01-14)
+
+
+### Bug Fixes
+
+* section slice keys were entirely based on index ([#2474](https://github.com/newsuk/times-components/issues/2474)) ([cc9ea96](https://github.com/newsuk/times-components/commit/cc9ea967cdb4307cc231f6c1d67654a0c5ebd58c))
+
+
+
+
+
 ## [1.6.12](https://github.com/newsuk/times-components/compare/@times-components/section@1.6.11...@times-components/section@1.6.12) (2020-01-14)
 
 **Note:** Version bump only for package @times-components/section
