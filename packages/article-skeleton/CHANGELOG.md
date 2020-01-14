@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.24.12](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.24.11...@times-components/article-skeleton@1.24.12) (2020-01-14)
+
+
+### Bug Fixes
+
+* REPLAT-11059 moving marketing-header ([#2477](https://github.com/newsuk/times-components/issues/2477)) ([1c2c287](https://github.com/newsuk/times-components/commit/1c2c287fd3e9735c1d904baed7e6601f8de23c9b))
+
+
+
+
+
 ## [1.24.11](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.24.10...@times-components/article-skeleton@1.24.11) (2020-01-14)
 
 **Note:** Version bump only for package @times-components/article-skeleton
