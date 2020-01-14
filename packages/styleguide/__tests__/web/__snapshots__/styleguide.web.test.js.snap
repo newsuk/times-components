@@ -26,8 +26,8 @@ Object {
 
 exports[`4. animations should have a fadein animation wrapper component 1`] = `
 .c0 {
-  -webkit-animation: eMLfYp 0.3s ease-in-out;
-  animation: eMLfYp 0.3s ease-in-out;
+  -webkit-animation: fLRwcH 0.3s ease-in-out;
+  animation: fLRwcH 0.3s ease-in-out;
 }
 
 <div
