@@ -523,6 +523,7 @@ exports[`full article with style 1`] = `
   className="c0 responsiveweb__ArticleMainStandardContainer-sc-1gngn7q-4 c0 css-view-1dbjc4n"
 >
   <div>
+    <div />
     <article>
       <Helmet>
         <title>

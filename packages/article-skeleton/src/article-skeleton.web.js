@@ -85,6 +85,7 @@ class ArticleSkeleton extends Component {
 
     return (
       <StickyProvider>
+        <div id="article-marketing-header" />
         <article
           id="article-main"
           data-article-identifier={article.id}

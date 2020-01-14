@@ -517,6 +517,7 @@ exports[`full article with style 1`] = `
 </style>
 
 <div>
+  <div />
   <article>
     <Helmet>
       <title>
@@ -1259,6 +1260,7 @@ exports[`full article with style in the culture magazine 1`] = `
 </style>
 
 <div>
+  <div />
   <article>
     <Helmet>
       <title>
@@ -2002,6 +2004,7 @@ exports[`full article with style in the style magazine 1`] = `
 </style>
 
 <div>
+  <div />
   <article>
     <Helmet>
       <title>
@@ -2744,6 +2747,7 @@ exports[`full article with style in the sunday times magazine 1`] = `
 </style>
 
 <div>
+  <div />
   <article>
     <Helmet>
       <title>
