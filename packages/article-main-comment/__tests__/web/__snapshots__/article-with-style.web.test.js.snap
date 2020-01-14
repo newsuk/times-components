@@ -478,6 +478,7 @@ exports[`full article with style 1`] = `
 </style>
 
 <div>
+  <div />
   <article>
     <Helmet>
       <title>
