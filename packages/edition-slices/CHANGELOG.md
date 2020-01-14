@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.101.12](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.101.11...@times-components/edition-slices@0.101.12) (2020-01-14)
+
+**Note:** Version bump only for package @times-components/edition-slices
+
+
+
+
+
 ## [0.101.11](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.101.10...@times-components/edition-slices@0.101.11) (2020-01-10)
 
 **Note:** Version bump only for package @times-components/edition-slices

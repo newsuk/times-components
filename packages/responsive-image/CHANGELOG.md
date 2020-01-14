@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.6](https://github.com/newsuk/times-components/compare/@times-components/responsive-image@0.4.5...@times-components/responsive-image@0.4.6) (2020-01-14)
+
+
+### Bug Fixes
+
+* REPLAT-8723 load offline images from react cache before tarball ([#2476](https://github.com/newsuk/times-components/issues/2476)) ([2d588c0](https://github.com/newsuk/times-components/commit/2d588c034eb72d2bf0287d430826e635bb9f73e2))
+
+
+
+
+
 ## [0.4.5](https://github.com/newsuk/times-components/compare/@times-components/responsive-image@0.4.4...@times-components/responsive-image@0.4.5) (2020-01-10)
 
 
