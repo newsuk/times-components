@@ -137,7 +137,7 @@ exports[`2. a single child element 1`] = `
 
 <configweb__Base>
   <div
-    className="c0 configweb__Base-sc-1adgnqc-0 configweb__Base-sc-1adgnqc-1 configweb__Base-sc-1adgnqc-2 c0 css-view-1dbjc4n"
+    className="configweb__Base-sc-1adgnqc-0 configweb__Base-sc-1adgnqc-1 c0 configweb__Base-sc-1adgnqc-0 configweb__Base-sc-1adgnqc-1 configweb__Base-sc-1adgnqc-2 c0 css-view-1dbjc4n"
   >
     <responsiveweb__SliceContainer>
       <div
@@ -145,7 +145,7 @@ exports[`2. a single child element 1`] = `
       >
         <responsiveweb__Base>
           <div
-            className="c2 responsiveweb__Base-aumpme-1 responsiveweb__Base-aumpme-3 responsiveweb__Base-aumpme-4 c2 css-view-1dbjc4n"
+            className="responsiveweb__Base-aumpme-1 responsiveweb__Base-aumpme-3 c2 responsiveweb__Base-aumpme-1 responsiveweb__Base-aumpme-3 responsiveweb__Base-aumpme-4 c2 css-view-1dbjc4n"
           >
             <responsiveweb__ChildContainer>
               <div
@@ -304,7 +304,7 @@ exports[`3. two child elements 1`] = `
 
 <configweb__Base>
   <div
-    className="c0 configweb__Base-sc-1adgnqc-0 configweb__Base-sc-1adgnqc-2 c0 css-view-1dbjc4n"
+    className="configweb__Base-sc-1adgnqc-0 c0 configweb__Base-sc-1adgnqc-0 configweb__Base-sc-1adgnqc-2 c0 css-view-1dbjc4n"
   >
     <responsiveweb__SliceContainer>
       <div
@@ -312,7 +312,7 @@ exports[`3. two child elements 1`] = `
       >
         <responsiveweb__Base>
           <div
-            className="c2 responsiveweb__Base-aumpme-1 responsiveweb__Base-aumpme-3 responsiveweb__Base-aumpme-4 c2 css-view-1dbjc4n"
+            className="responsiveweb__Base-aumpme-1 responsiveweb__Base-aumpme-3 c2 responsiveweb__Base-aumpme-1 responsiveweb__Base-aumpme-3 responsiveweb__Base-aumpme-4 c2 css-view-1dbjc4n"
           >
             <responsiveweb__ChildContainer>
               <div
@@ -489,7 +489,7 @@ exports[`4. three child elements 1`] = `
 
 <configweb__Base>
   <div
-    className="c0 configweb__Base-sc-1adgnqc-0 configweb__Base-sc-1adgnqc-2 c0 css-view-1dbjc4n"
+    className="configweb__Base-sc-1adgnqc-0 c0 configweb__Base-sc-1adgnqc-0 configweb__Base-sc-1adgnqc-2 c0 css-view-1dbjc4n"
   >
     <responsiveweb__SliceContainer>
       <div
@@ -497,7 +497,7 @@ exports[`4. three child elements 1`] = `
       >
         <responsiveweb__Base>
           <div
-            className="c2 responsiveweb__Base-aumpme-1 responsiveweb__Base-aumpme-2 responsiveweb__Base-aumpme-4 c2 css-view-1dbjc4n"
+            className="responsiveweb__Base-aumpme-1 responsiveweb__Base-aumpme-2 c2 responsiveweb__Base-aumpme-1 responsiveweb__Base-aumpme-2 responsiveweb__Base-aumpme-4 c2 css-view-1dbjc4n"
           >
             <responsiveweb__ChildContainer>
               <div
