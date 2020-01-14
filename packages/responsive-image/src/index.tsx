@@ -113,7 +113,8 @@ const ResponsiveImage = (props: ResponsiveImageProps) => {
   React.useEffect(
     () => {
       if ('queryCache' in Image && width && !checkedCache) {
-        const cache = Image.queryCache && Image.queryCache([onlineUrl]);
+        const cache =
+          Image.queryCache && Image.queryCache([onlineUrl, offlineUrl]);
         setCheckedCache(true);
         if (!cache) {
           return;
@@ -124,6 +125,10 @@ const ResponsiveImage = (props: ResponsiveImageProps) => {
             setShowOffline(false);
             setShowPlaceholder(false);
             return;
+          }
+          if (offlineUrl in results) {
+            setShowOffline(true);
+            setShowPlaceholder(false);
           }
         });
       }
