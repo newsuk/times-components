@@ -92,7 +92,7 @@ class ArticleList extends Component {
     const renderAdComponent = () => (
         <AdContainer
           isLoading={articlesLoading}
-          slotName="inline-ad"
+          slotName="articleListAd"
           style={styles.adContainer}
         />
     );
@@ -123,7 +123,7 @@ class ArticleList extends Component {
               const { elementId } = item;
 
               const renderAd = () => {
-                if (index === this.advertPosition && hasAdvertConfig) {
+                if (index === this.advertPosition) {
                   return renderAdComponent({ key: `advert${index}` });
                 }
 
