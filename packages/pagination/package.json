@@ -52,7 +52,7 @@
     "enzyme": "3.9.0",
     "eslint": "5.9.0",
     "jest": "24.8.0",
-    "jest-styled-components": "6.3.1",
+    "jest-styled-components": "7.0.0",
     "prettier": "1.14.3",
     "react": "16.9.0",
     "react-art": "16.6.3",
@@ -74,7 +74,7 @@
     "@times-components/tracking": "2.5.17",
     "prop-types": "15.7.2",
     "react-display-name": "0.2.3",
-    "styled-components": "4.3.2"
+    "styled-components": "5.0.0"
   },
   "resolutions": {
     "react": "16.9.0",

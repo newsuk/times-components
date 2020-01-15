@@ -2,8 +2,8 @@
 
 exports[`1. card loading state 1`] = `
 .c0 {
-  -webkit-animation: eMLfYp 0.3s ease-in-out;
-  animation: eMLfYp 0.3s ease-in-out;
+  -webkit-animation: fLRwcH 0.3s ease-in-out;
+  animation: fLRwcH 0.3s ease-in-out;
 }
 
 .c1 {
@@ -187,101 +187,64 @@ exports[`1. card loading state 1`] = `
 </style>
 
 <indexweb__FadeIn>
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "indexweb__FadeIn-v0crhg-0",
-          "isStatic": true,
-          "lastClassName": "c0",
-          "rules": Array [
-            "animation:",
-            Keyframes {
-              "id": "sc-keyframes-eMLfYp",
-              "inject": [Function],
-              "name": "eMLfYp",
-              "rules": Array [
-                "@-webkit-keyframes eMLfYp{from{opacity:0;}to{opacity:1;}}",
-                "@keyframes eMLfYp{from{opacity:0;}to{opacity:1;}}",
-              ],
-              "toString": [Function],
-            },
-            " 0.3s ease-in-out;",
-          ],
-        },
-        "displayName": "indexweb__FadeIn",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "indexweb__FadeIn-v0crhg-0",
-        "target": [Function],
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
+  <div
+    className="c0 indexweb__FadeIn-v0crhg-0 c0 css-view-1dbjc4n"
   >
     <div
-      className="c0 indexweb__FadeIn-v0crhg-0 c0 css-view-1dbjc4n"
+      className="css-view-1dbjc4n r-alignItems-1habvwh r-display-6koalj r-flexDirection-18u37iz r-flexWrap-1w6e6rj r-justifyContent-17s6mgv S7"
     >
       <div
-        className="css-view-1dbjc4n r-alignItems-1habvwh r-display-6koalj r-flexDirection-18u37iz r-flexWrap-1w6e6rj r-justifyContent-17s6mgv S7"
+        className="css-view-1dbjc4n r-flex-13awgt0 r-marginBottom-15d164r r-minWidth-3e7lpq S2"
       >
-        <div
-          className="css-view-1dbjc4n r-flex-13awgt0 r-marginBottom-15d164r r-minWidth-3e7lpq S2"
-        >
-          <TimesImage
-            aspectRatio={0.6666666666666666}
-            disablePlaceholder={false}
-            fadeImageIn={false}
-            highResSize={800}
-            lowResSize={60}
-            rounded={false}
-            uri="https://img.io/img"
+        <TimesImage
+          aspectRatio={0.6666666666666666}
+          disablePlaceholder={false}
+          fadeImageIn={false}
+          highResSize={800}
+          lowResSize={60}
+          rounded={false}
+          uri="https://img.io/img"
+        />
+      </div>
+      <div
+        className="css-view-1dbjc4n r-flex-13awgt0 r-marginBottom-p1pxzi r-minHeight-1lorjx1 r-minWidth-3e7lpq S6"
+      >
+        <_default>
+          <Gradient
+            className="IS6"
+            degrees={264}
+            endPoint="1"
+            startPoint="0"
           />
-        </div>
-        <div
-          className="css-view-1dbjc4n r-flex-13awgt0 r-marginBottom-p1pxzi r-minHeight-1lorjx1 r-minWidth-3e7lpq S6"
-        >
-          <_default>
-            <Gradient
-              className="IS6"
-              degrees={264}
-              endPoint="1"
-              startPoint="0"
-            />
-            <Gradient
-              className="IS9"
-              degrees={267}
-              endPoint="1"
-              startPoint="0"
-            />
-            <Gradient
-              className="IS12"
-              degrees={267}
-              endPoint="1"
-              startPoint="0"
-            />
-            <Gradient
-              className="IS15"
-              degrees={267}
-              endPoint="1"
-              startPoint="0"
-            />
-          </_default>
-        </div>
+          <Gradient
+            className="IS9"
+            degrees={267}
+            endPoint="1"
+            startPoint="0"
+          />
+          <Gradient
+            className="IS12"
+            degrees={267}
+            endPoint="1"
+            startPoint="0"
+          />
+          <Gradient
+            className="IS15"
+            degrees={267}
+            endPoint="1"
+            startPoint="0"
+          />
+        </_default>
       </div>
     </div>
-  </StyledComponent>
+  </div>
 </indexweb__FadeIn>
 `;
 
 exports[`2. card with reversed loading state 1`] = `
 .c0 {
-  -webkit-animation: eMLfYp 0.3s ease-in-out;
-  animation: eMLfYp 0.3s ease-in-out;
+  -webkit-animation: fLRwcH 0.3s ease-in-out;
+  animation: fLRwcH 0.3s ease-in-out;
 }
 
 .c1 {
@@ -466,93 +429,56 @@ exports[`2. card with reversed loading state 1`] = `
 </style>
 
 <indexweb__FadeIn>
-  <StyledComponent
-    forwardedComponent={
-      Object {
-        "$$typeof": Symbol(react.forward_ref),
-        "attrs": Array [],
-        "componentStyle": ComponentStyle {
-          "componentId": "indexweb__FadeIn-v0crhg-0",
-          "isStatic": true,
-          "lastClassName": "c0",
-          "rules": Array [
-            "animation:",
-            Keyframes {
-              "id": "sc-keyframes-eMLfYp",
-              "inject": [Function],
-              "name": "eMLfYp",
-              "rules": Array [
-                "@-webkit-keyframes eMLfYp{from{opacity:0;}to{opacity:1;}}",
-                "@keyframes eMLfYp{from{opacity:0;}to{opacity:1;}}",
-              ],
-              "toString": [Function],
-            },
-            " 0.3s ease-in-out;",
-          ],
-        },
-        "displayName": "indexweb__FadeIn",
-        "foldedComponentIds": Array [],
-        "render": [Function],
-        "styledComponentId": "indexweb__FadeIn-v0crhg-0",
-        "target": [Function],
-        "toString": [Function],
-        "warnTooManyClasses": [Function],
-        "withComponent": [Function],
-      }
-    }
-    forwardedRef={null}
+  <div
+    className="c0 indexweb__FadeIn-v0crhg-0 c0 css-view-1dbjc4n"
   >
     <div
-      className="c0 indexweb__FadeIn-v0crhg-0 c0 css-view-1dbjc4n"
+      className="css-view-1dbjc4n r-alignItems-1habvwh r-display-6koalj r-flexDirection-18u37iz r-flexWrap-1w6e6rj r-height-16l9doz r-justifyContent-17s6mgv S7"
     >
       <div
-        className="css-view-1dbjc4n r-alignItems-1habvwh r-display-6koalj r-flexDirection-18u37iz r-flexWrap-1w6e6rj r-height-16l9doz r-justifyContent-17s6mgv S7"
+        className="css-view-1dbjc4n r-flex-13awgt0 r-marginBottom-15d164r r-minHeight-1lorjx1 r-minWidth-3e7lpq S4"
       >
-        <div
-          className="css-view-1dbjc4n r-flex-13awgt0 r-marginBottom-15d164r r-minHeight-1lorjx1 r-minWidth-3e7lpq S4"
-        >
-          <_default>
-            <Gradient
-              className="IS3"
-              degrees={264}
-              endPoint="1"
-              startPoint="0"
-            />
-            <Gradient
-              className="IS6"
-              degrees={267}
-              endPoint="1"
-              startPoint="0"
-            />
-            <Gradient
-              className="IS9"
-              degrees={267}
-              endPoint="1"
-              startPoint="0"
-            />
-            <Gradient
-              className="IS12"
-              degrees={267}
-              endPoint="1"
-              startPoint="0"
-            />
-          </_default>
-        </div>
-        <div
-          className="css-view-1dbjc4n r-flex-13awgt0 r-marginBottom-p1pxzi r-minWidth-3e7lpq S6"
-        >
-          <TimesImage
-            aspectRatio={0.6666666666666666}
-            disablePlaceholder={false}
-            fadeImageIn={false}
-            highResSize={800}
-            lowResSize={60}
-            rounded={false}
-            uri="https://img.io/img"
+        <_default>
+          <Gradient
+            className="IS3"
+            degrees={264}
+            endPoint="1"
+            startPoint="0"
           />
-        </div>
+          <Gradient
+            className="IS6"
+            degrees={267}
+            endPoint="1"
+            startPoint="0"
+          />
+          <Gradient
+            className="IS9"
+            degrees={267}
+            endPoint="1"
+            startPoint="0"
+          />
+          <Gradient
+            className="IS12"
+            degrees={267}
+            endPoint="1"
+            startPoint="0"
+          />
+        </_default>
+      </div>
+      <div
+        className="css-view-1dbjc4n r-flex-13awgt0 r-marginBottom-p1pxzi r-minWidth-3e7lpq S6"
+      >
+        <TimesImage
+          aspectRatio={0.6666666666666666}
+          disablePlaceholder={false}
+          fadeImageIn={false}
+          highResSize={800}
+          lowResSize={60}
+          rounded={false}
+          uri="https://img.io/img"
+        />
       </div>
     </div>
-  </StyledComponent>
+  </div>
 </indexweb__FadeIn>
 `;
