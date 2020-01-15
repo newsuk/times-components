@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.17.18](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.17.17...@times-components/android-app@0.17.18) (2020-01-15)
+
+
+### Bug Fixes
+
+* update v8 for linking issues ([#2481](https://github.com/newsuk/times-components/issues/2481)) ([f09530e](https://github.com/newsuk/times-components/commit/f09530ebd6c450b74c099f9097a3a8a5aaea418d))
+
+
+
+
+
 ## [0.17.17](https://github.com/newsuk/times-components/compare/@times-components/android-app@0.17.16...@times-components/android-app@0.17.17) (2020-01-15)
 
 **Note:** Version bump only for package @times-components/android-app
