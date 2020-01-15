@@ -2,6 +2,7 @@ import { Dimensions } from "react-native";
 import { tabletWidth } from "@times-components/styleguide";
 
 export const acceptedWidths = [
+  160,
   320,
   440,
   660,
