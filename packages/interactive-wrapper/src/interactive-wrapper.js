@@ -23,13 +23,15 @@ class InteractiveWrapper extends Component {
   constructor() {
     super();
     this.state = {
-      height: 1
+      height: 1,
+      retries: 3
     };
     this.onMessage = this.onMessage.bind(this);
     this.handleNavigationStateChange = this.handleNavigationStateChange.bind(
       this
     );
     this.onLoadEnd = this.onLoadEnd.bind(this);
+    this.onError = this.onError.bind(this);
   }
 
   onMessage(e) {
@@ -37,8 +39,13 @@ class InteractiveWrapper extends Component {
       (e && e.nativeEvent && e.nativeEvent.data) ||
       e.nativeEvent.data === "0"
     ) {
-      const height = Number(e.nativeEvent.data);
-      this.setState({ height });
+      const height = parseInt(e.nativeEvent.data, 10);
+      // eslint-disable-next-line no-restricted-globals
+      if (!isNaN(height)) {
+        this.setState({ height });
+      } else {
+        this.onError();
+      }
     } else {
       console.error(`Invalid height received ${e.nativeEvent.data}`); // eslint-disable-line no-console
     }
@@ -46,6 +53,16 @@ class InteractiveWrapper extends Component {
 
   onLoadEnd() {
     this.webview.postMessage("thetimes.co.uk", "*");
+  }
+
+  onError() {
+    const { retries } = this.state;
+    if (retries) {
+      this.setState({ retries: retries - 1 });
+      setTimeout(() => {
+        this.webview.reload();
+      }, 1000);
+    }
   }
 
   handleNavigationStateChange(data) {
@@ -72,6 +89,7 @@ class InteractiveWrapper extends Component {
     return (
       <View style={{ height }}>
         <WebView
+          onError={this.onError}
           injectedJavaScript={`window.postMessage = function(data) {window.ReactNativeWebView.postMessage(data);};(${webviewEventCallbackSetup})({window});`}
           onLoadEnd={this.onLoadEnd}
           onMessage={this.onMessage}
