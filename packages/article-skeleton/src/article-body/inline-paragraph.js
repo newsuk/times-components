@@ -11,6 +11,12 @@ import {
 } from "@times-components/typeset";
 import ArticleParagraphWrapper from "@times-components/article-paragraph";
 
+const isLink = node => {
+  const attribute = node.text.attributes[0];
+  const href = attribute ? attribute.tag.href : null;
+  return href ?? false;
+};
+
 const InlineParagraph = ({
   onLinkPress,
   isTablet,
@@ -49,7 +55,18 @@ const InlineParagraph = ({
     inlineExclusion ? [inlineExclusion.exclusion] : []
   );
 
-  const positioned = manager.layout();
+  const positioned = manager.layout().reduce((acc, current) => {
+    const prev = acc[acc.length - 1];
+    if (
+      isLink(current) &&
+      isLink(prev) &&
+      current.position.y === prev.position.y
+    ) {
+      prev.text.string += ` ${current.text.string}`;
+      return acc;
+    }
+    return [...acc, current];
+  }, []);
 
   return [
     dropCap && dropCap.element,
