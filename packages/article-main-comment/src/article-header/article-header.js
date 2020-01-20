@@ -23,7 +23,8 @@ const ArticleHeader = ({
   onAuthorPress,
   publicationName,
   publishedTime,
-  standfirst
+  standfirst,
+  onImagePress
 }) => (
   <ResponsiveContext.Consumer>
     {({ isTablet }) => (
@@ -33,6 +34,7 @@ const ArticleHeader = ({
             aspectRatio={1}
             style={styles.authorImage}
             uri={authorImage}
+            onImagePress={onImagePress ? () => onImagePress(0) : undefined}
             rounded
           />
           <Label isVideo={hasVideo} label={label} />
