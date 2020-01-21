@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.10.0](https://github.com/newsuk/times-components/compare/@times-components/ad@2.9.4...@times-components/ad@2.10.0) (2020-01-21)
+
+
+### Features
+
+* super mpu ad size added to custom slot ([#2487](https://github.com/newsuk/times-components/issues/2487)) ([5cb4f6d](https://github.com/newsuk/times-components/commit/5cb4f6d9c90ed7860986431c478f79126e9fefb5))
+
+
+
+
+
 ## [2.9.4](https://github.com/newsuk/times-components/compare/@times-components/ad@2.9.3...@times-components/ad@2.9.4) (2020-01-15)
 
 **Note:** Version bump only for package @times-components/ad
