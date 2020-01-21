@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.5.13](https://github.com/newsuk/times-components/compare/@times-components/image@6.5.12...@times-components/image@6.5.13) (2020-01-21)
+
+
+### Bug Fixes
+
+* REPLAT-11812 caption appearing over images ([#2483](https://github.com/newsuk/times-components/issues/2483)) ([b8dacdd](https://github.com/newsuk/times-components/commit/b8dacdd7ddcc0388539f5592973f31be4b0f4b06))
+
+
+
+
+
 ## [6.5.12](https://github.com/newsuk/times-components/compare/@times-components/image@6.5.11...@times-components/image@6.5.12) (2020-01-15)
 
 **Note:** Version bump only for package @times-components/image
