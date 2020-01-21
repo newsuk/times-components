@@ -14,14 +14,6 @@ exports[`1. landscape default modal 1`] = `
         }
       }
     >
-      <SafeAreaView
-        style={
-          Object {
-            "backgroundColor": "#000000",
-            "flex": 0,
-          }
-        }
-      />
       <View
         style={
           Object {
@@ -54,22 +46,52 @@ exports[`1. landscape default modal 1`] = `
           />
         </View>
       </View>
-      <SafeAreaView
+      <ImageZoomView />
+      <View
         style={
           Object {
+            "backgroundColor": "#000000B3",
             "bottom": 0,
-            "height": "100%",
-            "left": 0,
+            "flex": 0,
+            "marginTop": "auto",
             "position": "absolute",
-            "right": 0,
-            "top": 0,
             "width": "100%",
-            "zIndex": 1,
+            "zIndex": 2,
           }
         }
       >
-        <ImageZoomView />
-      </SafeAreaView>
+        <View
+          style={
+            Object {
+              "margin": 20,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 15,
+                "lineHeight": 15,
+              }
+            }
+          >
+            Caption
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 10,
+                "lineHeight": 10,
+                "marginTop": 5,
+              }
+            }
+          >
+            Credits
+          </Text>
+        </View>
+      </View>
     </View>
   </Modal>
   <View>
@@ -118,14 +140,6 @@ exports[`2. portrait default modal 1`] = `
         }
       }
     >
-      <SafeAreaView
-        style={
-          Object {
-            "backgroundColor": "#000000",
-            "flex": 0,
-          }
-        }
-      />
       <View
         style={
           Object {
@@ -158,22 +172,52 @@ exports[`2. portrait default modal 1`] = `
           />
         </View>
       </View>
-      <SafeAreaView
+      <ImageZoomView />
+      <View
         style={
           Object {
+            "backgroundColor": "#000000B3",
             "bottom": 0,
-            "height": "100%",
-            "left": 0,
+            "flex": 0,
+            "marginTop": "auto",
             "position": "absolute",
-            "right": 0,
-            "top": 0,
             "width": "100%",
-            "zIndex": 1,
+            "zIndex": 2,
           }
         }
       >
-        <ImageZoomView />
-      </SafeAreaView>
+        <View
+          style={
+            Object {
+              "margin": 20,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 15,
+                "lineHeight": 15,
+              }
+            }
+          >
+            Caption
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 10,
+                "lineHeight": 10,
+                "marginTop": 5,
+              }
+            }
+          >
+            Credits
+          </Text>
+        </View>
+      </View>
     </View>
   </Modal>
   <View>
@@ -222,14 +266,6 @@ exports[`3. tablet landscape default modal 1`] = `
         }
       }
     >
-      <SafeAreaView
-        style={
-          Object {
-            "backgroundColor": "#000000",
-            "flex": 0,
-          }
-        }
-      />
       <View
         style={
           Object {
@@ -262,22 +298,52 @@ exports[`3. tablet landscape default modal 1`] = `
           />
         </View>
       </View>
-      <SafeAreaView
+      <ImageZoomView />
+      <View
         style={
           Object {
+            "backgroundColor": "#000000B3",
             "bottom": 0,
-            "height": "100%",
-            "left": 0,
+            "flex": 0,
+            "marginTop": "auto",
             "position": "absolute",
-            "right": 0,
-            "top": 0,
             "width": "100%",
-            "zIndex": 1,
+            "zIndex": 2,
           }
         }
       >
-        <ImageZoomView />
-      </SafeAreaView>
+        <View
+          style={
+            Object {
+              "margin": 20,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 15,
+                "lineHeight": 15,
+              }
+            }
+          >
+            Caption
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 10,
+                "lineHeight": 10,
+                "marginTop": 5,
+              }
+            }
+          >
+            Credits
+          </Text>
+        </View>
+      </View>
     </View>
   </Modal>
   <View>
@@ -326,14 +392,6 @@ exports[`4. tablet portrait default modal 1`] = `
         }
       }
     >
-      <SafeAreaView
-        style={
-          Object {
-            "backgroundColor": "#000000",
-            "flex": 0,
-          }
-        }
-      />
       <View
         style={
           Object {
@@ -366,22 +424,52 @@ exports[`4. tablet portrait default modal 1`] = `
           />
         </View>
       </View>
-      <SafeAreaView
+      <ImageZoomView />
+      <View
         style={
           Object {
+            "backgroundColor": "#000000B3",
             "bottom": 0,
-            "height": "100%",
-            "left": 0,
+            "flex": 0,
+            "marginTop": "auto",
             "position": "absolute",
-            "right": 0,
-            "top": 0,
             "width": "100%",
-            "zIndex": 1,
+            "zIndex": 2,
           }
         }
       >
-        <ImageZoomView />
-      </SafeAreaView>
+        <View
+          style={
+            Object {
+              "margin": 20,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 15,
+                "lineHeight": 15,
+              }
+            }
+          >
+            Caption
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#FFFFFF",
+                "fontSize": 10,
+                "lineHeight": 10,
+                "marginTop": 5,
+              }
+            }
+          >
+            Credits
+          </Text>
+        </View>
+      </View>
     </View>
   </Modal>
   <View>
