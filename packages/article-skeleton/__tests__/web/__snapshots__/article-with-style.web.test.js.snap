@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`full article with style 1`] = `
-.c7 {
+.c8 {
   color: #333333;
   display: block;
   font-family: "TimesDigitalW04-Regular";
@@ -12,13 +12,13 @@ exports[`full article with style 1`] = `
   padding-left: 10px;
 }
 
-.c7:first-of-type:after {
+.c8:first-of-type:after {
   content: "";
   clear: both;
   display: table;
 }
 
-.c8 {
+.c9 {
   float: left;
   color: #333333;
   padding-right: 10px;
@@ -29,38 +29,25 @@ exports[`full article with style 1`] = `
   font-family: "TimesModern-Regular";
 }
 
-.c16 {
+.c17 {
   padding-left: 10px;
-}
-
-.c9 {
-  margin-bottom: 20px;
-  padding: 0 10px;
 }
 
 .c10 {
   margin-bottom: 20px;
-  width: 100%;
+  padding: 0 10px;
 }
 
 .c11 {
+  margin-bottom: 20px;
   width: 100%;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding-bottom: 25px;
 }
 
 .c12 {
   width: 100%;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  padding-left: 10px;
-  padding-right: 10px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding-bottom: 25px;
 }
 
@@ -74,17 +61,30 @@ exports[`full article with style 1`] = `
   flex-wrap: nowrap;
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 25px;
+}
+
+.c14 {
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: 0;
   display: block;
 }
 
-.c15 {
+.c16 {
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 10px;
 }
 
-.c14 {
+.c15 {
   display: block;
 }
 
@@ -107,63 +107,63 @@ exports[`full article with style 1`] = `
   display: flex;
 }
 
-.c2 > .keylines__ArticleKeylineItem-sc-1s03wwf-1 {
+.c2 > .c3 {
   -webkit-order: 3;
   -ms-flex-order: 3;
   order: 3;
 }
 
-.c6 {
+.c7 {
   display: block;
   -webkit-order: 4;
   -ms-flex-order: 4;
   order: 4;
 }
 
-.c5 {
+.c6 {
   background-color: #FFFFFF;
   height: 60px;
 }
 
-.c5 [data-tc-sticky-sizer] {
+.c6 [data-tc-sticky-sizer] {
   border-bottom: 1px solid transparent;
   will-change: border-bottom-color;
 }
 
-.c5.tc-sticky {
+.c6.tc-sticky {
   will-change: height,box-shadow;
 }
 
-.c5[MOCK-PROGRESS-SELECTOR] {
+.c6[MOCK-PROGRESS-SELECTOR] {
   height: 59.5px;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.010000000000000002);
 }
 
-.c5[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
+.c6[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
   border-bottom-color: rgba(219,219,219,0.9);
 }
 
-.c4 {
+.c5 {
   border: solid #DBDBDB;
   border-width: 1px 0;
   margin-left: 10px;
   margin-right: 10px;
 }
 
-.c4 + .c3 {
+.c5 + .c4 {
   margin-top: -1px !important;
 }
 
-.c4:last-child {
+.c5:last-child {
   margin-bottom: 30px;
 }
 
-.c4.contains-tc-sticky {
+.c5.contains-tc-sticky {
   border-bottom-color: transparent;
 }
 
 @media (min-width:768px) {
-  .c7 {
+  .c8 {
     font-size: 18px;
     line-height: 30px;
     padding-left: 0;
@@ -173,19 +173,19 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c7 {
+  .c8 {
     width: 56.2%;
   }
 }
 
 @media (min-width:768px) {
-  .c16 {
+  .c17 {
     padding-left: 0px;
   }
 }
 
 @media (min-width:768px) {
-  .c9 {
+  .c10 {
     width: 80.8%;
     margin-left: auto;
     margin-right: auto;
@@ -194,20 +194,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c9 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c11 {
-    width: 80.8%;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width:1024px) {
-  .c11 {
+  .c10 {
     width: 56.2%;
   }
 }
@@ -216,8 +203,6 @@ exports[`full article with style 1`] = `
   .c12 {
     width: 80.8%;
     margin: 0 auto;
-    padding-left: 0;
-    padding-right: 0;
   }
 }
 
@@ -243,7 +228,22 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c15 {
+  .c14 {
+    width: 80.8%;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:1024px) {
+  .c14 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c16 {
     width: 50%;
     float: left;
     margin-right: 20px;
@@ -255,7 +255,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c14 {
+  .c15 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -264,7 +264,7 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c14 {
+  .c15 {
     width: 56.2%;
   }
 }
@@ -277,19 +277,19 @@ exports[`full article with style 1`] = `
 }
 
 @media (min-width:768px) {
-  .c4 {
+  .c5 {
     margin: 0 auto;
   }
 }
 
 @media (min-width:768px) {
-  .c4 {
+  .c5 {
     width: 80.8%;
   }
 }
 
 @media (min-width:1024px) {
-  .c4 {
+  .c5 {
     width: 56.2%;
   }
 }
@@ -357,14 +357,14 @@ exports[`full article with style 1`] = `
         className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
       >
         <div
-          className="keylines__KeylineItem-sc-1s03wwf-0 keylines__ArticleKeylineItem-sc-1s03wwf-1 c3 c4"
+          className="c3 c4 c5"
         >
           <div
             className="IS2"
           />
           <div>
             <div
-              className="c5"
+              className="c6"
             >
               <div>
                 <SaveAndShareBar />
@@ -374,45 +374,45 @@ exports[`full article with style 1`] = `
         </div>
       </div>
       <article
-        className="c6 responsiveweb__BodyContainer-sc-1exejum-3 c6 css-view-1dbjc4n"
+        className="c7 responsiveweb__BodyContainer-sc-1exejum-3 c7 css-view-1dbjc4n"
       >
         <p
-          className="c7"
+          className="c8"
         >
           <span
-            className="c8 IS3"
+            className="c9 IS3"
           >
             T
           </span>
           his being Black History Month, last week
         </p>
         <div
-          className="c9"
-        >
-          <InteractiveWrapper />
-        </div>
-        <div
           className="c10"
         >
           <InteractiveWrapper />
         </div>
+        <div
+          className="c11"
+        >
+          <InteractiveWrapper />
+        </div>
         <div>
           <div
-            className="c11 responsiveweb__PrimaryImg-sc-16nqyj8-5 c11 css-view-1dbjc4n"
+            className="c12 responsiveweb__PrimaryImg-sc-16nqyj8-5 c12 css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>
         </div>
         <div>
           <div
-            className="c12 responsiveweb__SecondaryImg-sc-16nqyj8-7 c12 css-view-1dbjc4n"
+            className="c13 responsiveweb__SecondaryImg-sc-16nqyj8-7 c13 css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>
         </div>
         <div>
           <div
-            className="c13 responsiveweb__InlineImg-sc-16nqyj8-8 c13 css-view-1dbjc4n"
+            className="c14 responsiveweb__InlineImg-sc-16nqyj8-8 c14 css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>
@@ -424,15 +424,15 @@ exports[`full article with style 1`] = `
           className="paidContentClassName"
         >
           <p
-            className="c7"
+            className="c8"
           >
             Some content
           </p>
           <div
-            className="c14 responsiveweb__PullQuoteContainer-sc-16nqyj8-10 c14 css-view-1dbjc4n"
+            className="c15 responsiveweb__PullQuoteContainer-sc-16nqyj8-10 c15 css-view-1dbjc4n"
           >
             <div
-              className="c15 responsiveweb__PullQuoteResp-sc-16nqyj8-9 c15 css-view-1dbjc4n"
+              className="c16 responsiveweb__PullQuoteResp-sc-16nqyj8-9 c16 css-view-1dbjc4n"
             >
               <PullQuote>
                 The pull quote content
@@ -440,7 +440,7 @@ exports[`full article with style 1`] = `
             </div>
           </div>
           <div
-            className="c11 responsiveweb__PrimaryImg-sc-16nqyj8-5 c11 css-view-1dbjc4n"
+            className="c12 responsiveweb__PrimaryImg-sc-16nqyj8-5 c12 css-view-1dbjc4n"
           >
             <figure
               className="IS9"
@@ -466,7 +466,7 @@ exports[`full article with style 1`] = `
               </div>
               <figcaption>
                 <div
-                  className="c16 inset-captionweb__InsetCaptionStyle-sc-8m7lci-0 c16 css-view-1dbjc4n"
+                  className="c17 inset-captionweb__InsetCaptionStyle-sc-8m7lci-0 c17 css-view-1dbjc4n"
                 >
                   <Caption />
                 </div>

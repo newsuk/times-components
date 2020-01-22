@@ -282,7 +282,7 @@ exports[`default styles 1`] = `
     </h3>
   </div>
   <div
-    className="configweb__Base-cj50u7-0 configweb__Base-cj50u7-1 configweb__Base-cj50u7-3 c0 configweb__Base-cj50u7-0 configweb__Base-cj50u7-1 configweb__Base-cj50u7-3 configweb__Base-cj50u7-4 c0 css-view-1dbjc4n"
+    className="c0 configweb__Base-cj50u7-0 configweb__Base-cj50u7-1 configweb__Base-cj50u7-3 configweb__Base-cj50u7-4 c0 css-view-1dbjc4n"
   >
     <div
       className="c1 responsiveweb__SliceContainer-sc-2kg7gs-0 c1 css-view-1dbjc4n"
@@ -291,7 +291,7 @@ exports[`default styles 1`] = `
         className="c2 responsiveweb-fgzeui-0 c2 css-view-1dbjc4n"
       >
         <div
-          className="responsiveweb__Base-fgzeui-1 responsiveweb__Base-fgzeui-3 c3 responsiveweb__Base-fgzeui-1 responsiveweb__Base-fgzeui-3 responsiveweb__Base-fgzeui-5 c3 css-view-1dbjc4n"
+          className="c3 responsiveweb__Base-fgzeui-1 responsiveweb__Base-fgzeui-3 responsiveweb__Base-fgzeui-5 c3 css-view-1dbjc4n"
         >
           <div>
             <Link>

@@ -51,7 +51,7 @@
     "depcheck": "0.6.9",
     "eslint": "5.9.0",
     "jest": "24.8.0",
-    "jest-styled-components": "7.0.0",
+    "jest-styled-components": "6.3.1",
     "prettier": "1.14.3",
     "react": "16.9.0",
     "react-art": "16.6.3",
@@ -74,7 +74,7 @@
     "hoist-non-react-statics": "2.5.5",
     "prop-types": "15.7.2",
     "react-native-image-zoom-viewer": "2.2.26",
-    "styled-components": "5.0.0"
+    "styled-components": "4.3.2"
   },
   "resolutions": {
     "react": "16.9.0",

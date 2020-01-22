@@ -106,155 +106,303 @@ exports[`6. card with reversed layout and no image 1`] = `
 
 exports[`7. card with a loading state 1`] = `
 <indexweb__FadeIn>
-  <div>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "indexweb__FadeIn-v0crhg-0",
+          "isStatic": true,
+          "lastClassName": "grpdxt",
+          "rules": Array [
+            "animation:",
+            Keyframes {
+              "id": "sc-keyframes-eMLfYp",
+              "inject": [Function],
+              "name": "eMLfYp",
+              "rules": Array [
+                "@-webkit-keyframes eMLfYp{from{opacity:0;}to{opacity:1;}}",
+                "@keyframes eMLfYp{from{opacity:0;}to{opacity:1;}}",
+              ],
+              "toString": [Function],
+            },
+            " 0.3s ease-in-out;",
+          ],
+        },
+        "displayName": "indexweb__FadeIn",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "indexweb__FadeIn-v0crhg-0",
+        "target": [Function],
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
     <div>
       <div>
-        <TimesImage
-          aspectRatio={0.6666666666666666}
-          disablePlaceholder={false}
-          fadeImageIn={false}
-          highResSize={360}
-          lowResSize={50}
-          rounded={false}
-          uri="https://img.io/img"
-        />
-      </div>
-      <div>
-        <_default>
-          <Gradient
-            degrees={264}
-            endPoint="1"
-            startPoint="0"
+        <div>
+          <TimesImage
+            aspectRatio={0.6666666666666666}
+            disablePlaceholder={false}
+            fadeImageIn={false}
+            highResSize={360}
+            lowResSize={50}
+            rounded={false}
+            uri="https://img.io/img"
           />
-          <Gradient
-            degrees={267}
-            endPoint="1"
-            startPoint="0"
-          />
-          <Gradient
-            degrees={267}
-            endPoint="1"
-            startPoint="0"
-          />
-          <Gradient
-            degrees={267}
-            endPoint="1"
-            startPoint="0"
-          />
-        </_default>
+        </div>
+        <div>
+          <_default>
+            <Gradient
+              degrees={264}
+              endPoint="1"
+              startPoint="0"
+            />
+            <Gradient
+              degrees={267}
+              endPoint="1"
+              startPoint="0"
+            />
+            <Gradient
+              degrees={267}
+              endPoint="1"
+              startPoint="0"
+            />
+            <Gradient
+              degrees={267}
+              endPoint="1"
+              startPoint="0"
+            />
+          </_default>
+        </div>
       </div>
     </div>
-  </div>
+  </StyledComponent>
 </indexweb__FadeIn>
 `;
 
 exports[`8. card with a loading state and no image 1`] = `
 <indexweb__FadeIn>
-  <div>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "indexweb__FadeIn-v0crhg-0",
+          "isStatic": true,
+          "lastClassName": "grpdxt",
+          "rules": Array [
+            "animation:",
+            Keyframes {
+              "id": "sc-keyframes-eMLfYp",
+              "inject": [Function],
+              "name": "eMLfYp",
+              "rules": Array [
+                "@-webkit-keyframes eMLfYp{from{opacity:0;}to{opacity:1;}}",
+                "@keyframes eMLfYp{from{opacity:0;}to{opacity:1;}}",
+              ],
+              "toString": [Function],
+            },
+            " 0.3s ease-in-out;",
+          ],
+        },
+        "displayName": "indexweb__FadeIn",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "indexweb__FadeIn-v0crhg-0",
+        "target": [Function],
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
     <div>
       <div>
-        <_default>
-          <Gradient
-            degrees={264}
-            endPoint="1"
-            startPoint="0"
-          />
-          <Gradient
-            degrees={267}
-            endPoint="1"
-            startPoint="0"
-          />
-          <Gradient
-            degrees={267}
-            endPoint="1"
-            startPoint="0"
-          />
-          <Gradient
-            degrees={267}
-            endPoint="1"
-            startPoint="0"
-          />
-        </_default>
+        <div>
+          <_default>
+            <Gradient
+              degrees={264}
+              endPoint="1"
+              startPoint="0"
+            />
+            <Gradient
+              degrees={267}
+              endPoint="1"
+              startPoint="0"
+            />
+            <Gradient
+              degrees={267}
+              endPoint="1"
+              startPoint="0"
+            />
+            <Gradient
+              degrees={267}
+              endPoint="1"
+              startPoint="0"
+            />
+          </_default>
+        </div>
       </div>
     </div>
-  </div>
+  </StyledComponent>
 </indexweb__FadeIn>
 `;
 
 exports[`9. card with reversed loading state 1`] = `
 <indexweb__FadeIn>
-  <div>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "indexweb__FadeIn-v0crhg-0",
+          "isStatic": true,
+          "lastClassName": "grpdxt",
+          "rules": Array [
+            "animation:",
+            Keyframes {
+              "id": "sc-keyframes-eMLfYp",
+              "inject": [Function],
+              "name": "eMLfYp",
+              "rules": Array [
+                "@-webkit-keyframes eMLfYp{from{opacity:0;}to{opacity:1;}}",
+                "@keyframes eMLfYp{from{opacity:0;}to{opacity:1;}}",
+              ],
+              "toString": [Function],
+            },
+            " 0.3s ease-in-out;",
+          ],
+        },
+        "displayName": "indexweb__FadeIn",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "indexweb__FadeIn-v0crhg-0",
+        "target": [Function],
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
     <div>
       <div>
-        <_default>
-          <Gradient
-            degrees={264}
-            endPoint="1"
-            startPoint="0"
+        <div>
+          <_default>
+            <Gradient
+              degrees={264}
+              endPoint="1"
+              startPoint="0"
+            />
+            <Gradient
+              degrees={267}
+              endPoint="1"
+              startPoint="0"
+            />
+            <Gradient
+              degrees={267}
+              endPoint="1"
+              startPoint="0"
+            />
+            <Gradient
+              degrees={267}
+              endPoint="1"
+              startPoint="0"
+            />
+          </_default>
+        </div>
+        <div>
+          <TimesImage
+            aspectRatio={0.6666666666666666}
+            disablePlaceholder={false}
+            fadeImageIn={false}
+            highResSize={360}
+            lowResSize={50}
+            rounded={false}
+            uri="https://img.io/img"
           />
-          <Gradient
-            degrees={267}
-            endPoint="1"
-            startPoint="0"
-          />
-          <Gradient
-            degrees={267}
-            endPoint="1"
-            startPoint="0"
-          />
-          <Gradient
-            degrees={267}
-            endPoint="1"
-            startPoint="0"
-          />
-        </_default>
-      </div>
-      <div>
-        <TimesImage
-          aspectRatio={0.6666666666666666}
-          disablePlaceholder={false}
-          fadeImageIn={false}
-          highResSize={360}
-          lowResSize={50}
-          rounded={false}
-          uri="https://img.io/img"
-        />
+        </div>
       </div>
     </div>
-  </div>
+  </StyledComponent>
 </indexweb__FadeIn>
 `;
 
 exports[`10. card with reversed loading state with no image 1`] = `
 <indexweb__FadeIn>
-  <div>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "indexweb__FadeIn-v0crhg-0",
+          "isStatic": true,
+          "lastClassName": "grpdxt",
+          "rules": Array [
+            "animation:",
+            Keyframes {
+              "id": "sc-keyframes-eMLfYp",
+              "inject": [Function],
+              "name": "eMLfYp",
+              "rules": Array [
+                "@-webkit-keyframes eMLfYp{from{opacity:0;}to{opacity:1;}}",
+                "@keyframes eMLfYp{from{opacity:0;}to{opacity:1;}}",
+              ],
+              "toString": [Function],
+            },
+            " 0.3s ease-in-out;",
+          ],
+        },
+        "displayName": "indexweb__FadeIn",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "indexweb__FadeIn-v0crhg-0",
+        "target": [Function],
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
     <div>
       <div>
-        <_default>
-          <Gradient
-            degrees={264}
-            endPoint="1"
-            startPoint="0"
-          />
-          <Gradient
-            degrees={267}
-            endPoint="1"
-            startPoint="0"
-          />
-          <Gradient
-            degrees={267}
-            endPoint="1"
-            startPoint="0"
-          />
-          <Gradient
-            degrees={267}
-            endPoint="1"
-            startPoint="0"
-          />
-        </_default>
+        <div>
+          <_default>
+            <Gradient
+              degrees={264}
+              endPoint="1"
+              startPoint="0"
+            />
+            <Gradient
+              degrees={267}
+              endPoint="1"
+              startPoint="0"
+            />
+            <Gradient
+              degrees={267}
+              endPoint="1"
+              startPoint="0"
+            />
+            <Gradient
+              degrees={267}
+              endPoint="1"
+              startPoint="0"
+            />
+          </_default>
+        </div>
       </div>
     </div>
-  </div>
+  </StyledComponent>
 </indexweb__FadeIn>
 `;
 

@@ -43,7 +43,7 @@
     "@times-components/utils": "6.0.2",
     "prop-types": "15.7.2",
     "react-apollo": "2.5.5",
-    "styled-components": "5.0.0"
+    "styled-components": "4.3.2"
   },
   "devDependencies": {
     "@babel/core": "7.4.4",
