@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.18.19](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.18...@times-components/article-main-comment@2.18.19) (2020-01-22)
+
+
+### Bug Fixes
+
+* REPLAT-11787 use native modal for author images ([#2486](https://github.com/newsuk/times-components/issues/2486)) ([67dfa4f](https://github.com/newsuk/times-components/commit/67dfa4f83a9290228945c0d8bf858ce14807d6a0))
+
+
+
+
+
 ## [2.18.18](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.17...@times-components/article-main-comment@2.18.18) (2020-01-21)
 
 **Note:** Version bump only for package @times-components/article-main-comment
