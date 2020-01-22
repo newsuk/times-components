@@ -7,8 +7,9 @@ const styles = {
   bottomSafeView: {
     flex: 0,
     marginTop: "auto",
-    position: "relative",
+    position: "absolute",
     width: "100%",
+    bottom: 0,
     zIndex: 2
   },
   buttonContainer: {

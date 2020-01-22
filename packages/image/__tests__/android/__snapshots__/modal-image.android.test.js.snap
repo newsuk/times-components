@@ -15,9 +15,6 @@ exports[`1. modal image 1`] = `
     visible={false}
   >
     <View>
-      <View
-        pointerEvents="box-none"
-      />
       <View>
         <View
           focusable={true}
@@ -32,18 +29,26 @@ exports[`1. modal image 1`] = `
           />
         </View>
       </View>
+      <ImageZoomView
+        captureEvent={true}
+        enablePreload={true}
+        enableSwipeDown={true}
+        imageUrls={
+          Array [
+            Object {
+              "url": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0",
+            },
+          ]
+        }
+      />
       <View
-        pointerEvents="box-none"
+        pointerEvents="none"
       >
-        <ImageZoomView
-          imageUrls={
-            Array [
-              Object {
-                "url": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0",
-              },
-            ]
-          }
-        />
+        <View>
+          <Text>
+            Caption
+          </Text>
+        </View>
       </View>
     </View>
   </Modal>
@@ -80,9 +85,6 @@ exports[`2. modal image with no caption 1`] = `
     visible={false}
   >
     <View>
-      <View
-        pointerEvents="box-none"
-      />
       <View>
         <View
           focusable={true}
@@ -97,19 +99,21 @@ exports[`2. modal image with no caption 1`] = `
           />
         </View>
       </View>
+      <ImageZoomView
+        captureEvent={true}
+        enablePreload={true}
+        enableSwipeDown={true}
+        imageUrls={
+          Array [
+            Object {
+              "url": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0",
+            },
+          ]
+        }
+      />
       <View
-        pointerEvents="box-none"
-      >
-        <ImageZoomView
-          imageUrls={
-            Array [
-              Object {
-                "url": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0",
-              },
-            ]
-          }
-        />
-      </View>
+        pointerEvents="none"
+      />
     </View>
   </Modal>
   <View
@@ -146,9 +150,6 @@ exports[`3. modal image with custom highressize 1`] = `
     visible={false}
   >
     <View>
-      <View
-        pointerEvents="box-none"
-      />
       <View>
         <View
           focusable={true}
@@ -163,18 +164,26 @@ exports[`3. modal image with custom highressize 1`] = `
           />
         </View>
       </View>
+      <ImageZoomView
+        captureEvent={true}
+        enablePreload={true}
+        enableSwipeDown={true}
+        imageUrls={
+          Array [
+            Object {
+              "url": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0",
+            },
+          ]
+        }
+      />
       <View
-        pointerEvents="box-none"
+        pointerEvents="none"
       >
-        <ImageZoomView
-          imageUrls={
-            Array [
-              Object {
-                "url": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0",
-              },
-            ]
-          }
-        />
+        <View>
+          <Text>
+            Caption
+          </Text>
+        </View>
       </View>
     </View>
   </Modal>

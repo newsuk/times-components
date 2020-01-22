@@ -15,9 +15,6 @@ exports[`1. modal image 1`] = `
     visible={false}
   >
     <View>
-      <View
-        pointerEvents="box-none"
-      />
       <View>
         <View
           focusable={true}
@@ -32,18 +29,83 @@ exports[`1. modal image 1`] = `
           />
         </View>
       </View>
-      <View
-        pointerEvents="box-none"
-      >
-        <ImageZoomView
-          imageUrls={
-            Array [
-              Object {
-                "url": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0",
-              },
-            ]
-          }
-        />
+      <ImageZoomView
+        captureEvent={true}
+        enablePreload={true}
+        enableSwipeDown={true}
+        imageUrls={
+          Array [
+            Object {
+              "url": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0",
+            },
+          ]
+        }
+      />
+      <View>
+        <ARTSurfaceView>
+          <ARTShape
+            d={
+              Array [
+                2,
+                750,
+                0,
+                2,
+                750,
+                140,
+                2,
+                0,
+                140,
+                2,
+                0,
+                0,
+              ]
+            }
+            fill={
+              Array [
+                1,
+                750,
+                140,
+                749.9999999999999,
+                -3.108624468950438e-14,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.9019607843137255,
+                1,
+                0.35714285714285715,
+              ]
+            }
+            opacity={1}
+            stroke={null}
+            strokeCap={1}
+            strokeDash={null}
+            strokeJoin={1}
+            strokeWidth={1}
+            transform={
+              Array [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+              ]
+            }
+          />
+        </ARTSurfaceView>
+        <View
+          pointerEvents="box-none"
+        >
+          <View>
+            <Text>
+              Caption
+            </Text>
+          </View>
+        </View>
       </View>
     </View>
   </Modal>
@@ -80,9 +142,6 @@ exports[`2. modal image with no caption 1`] = `
     visible={false}
   >
     <View>
-      <View
-        pointerEvents="box-none"
-      />
       <View>
         <View
           focusable={true}
@@ -97,17 +156,76 @@ exports[`2. modal image with no caption 1`] = `
           />
         </View>
       </View>
-      <View
-        pointerEvents="box-none"
-      >
-        <ImageZoomView
-          imageUrls={
-            Array [
-              Object {
-                "url": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0",
-              },
-            ]
-          }
+      <ImageZoomView
+        captureEvent={true}
+        enablePreload={true}
+        enableSwipeDown={true}
+        imageUrls={
+          Array [
+            Object {
+              "url": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0",
+            },
+          ]
+        }
+      />
+      <View>
+        <ARTSurfaceView>
+          <ARTShape
+            d={
+              Array [
+                2,
+                750,
+                0,
+                2,
+                750,
+                140,
+                2,
+                0,
+                140,
+                2,
+                0,
+                0,
+              ]
+            }
+            fill={
+              Array [
+                1,
+                750,
+                140,
+                749.9999999999999,
+                -3.108624468950438e-14,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.9019607843137255,
+                1,
+                0.35714285714285715,
+              ]
+            }
+            opacity={1}
+            stroke={null}
+            strokeCap={1}
+            strokeDash={null}
+            strokeJoin={1}
+            strokeWidth={1}
+            transform={
+              Array [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+              ]
+            }
+          />
+        </ARTSurfaceView>
+        <View
+          pointerEvents="box-none"
         />
       </View>
     </View>
@@ -146,9 +264,6 @@ exports[`3. modal image with custom highressize 1`] = `
     visible={false}
   >
     <View>
-      <View
-        pointerEvents="box-none"
-      />
       <View>
         <View
           focusable={true}
@@ -163,18 +278,83 @@ exports[`3. modal image with custom highressize 1`] = `
           />
         </View>
       </View>
-      <View
-        pointerEvents="box-none"
-      >
-        <ImageZoomView
-          imageUrls={
-            Array [
-              Object {
-                "url": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0",
-              },
-            ]
-          }
-        />
+      <ImageZoomView
+        captureEvent={true}
+        enablePreload={true}
+        enableSwipeDown={true}
+        imageUrls={
+          Array [
+            Object {
+              "url": "http://example.com/image.jpg?crop=1016%2C677%2C0%2C0",
+            },
+          ]
+        }
+      />
+      <View>
+        <ARTSurfaceView>
+          <ARTShape
+            d={
+              Array [
+                2,
+                750,
+                0,
+                2,
+                750,
+                140,
+                2,
+                0,
+                140,
+                2,
+                0,
+                0,
+              ]
+            }
+            fill={
+              Array [
+                1,
+                750,
+                140,
+                749.9999999999999,
+                -3.108624468950438e-14,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0.9019607843137255,
+                1,
+                0.35714285714285715,
+              ]
+            }
+            opacity={1}
+            stroke={null}
+            strokeCap={1}
+            strokeDash={null}
+            strokeJoin={1}
+            strokeWidth={1}
+            transform={
+              Array [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+              ]
+            }
+          />
+        </ARTSurfaceView>
+        <View
+          pointerEvents="box-none"
+        >
+          <View>
+            <Text>
+              Caption
+            </Text>
+          </View>
+        </View>
       </View>
     </View>
   </Modal>
