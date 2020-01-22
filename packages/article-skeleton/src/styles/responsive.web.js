@@ -10,13 +10,13 @@ export const MainContainer = styled(View)`
   }
 `;
 
-export const HeaderAdContainer = styled(View)`
+export const getHeaderAdContainer = hideKeylines => styled(View)`
   display: flex;
   border-top-color: ${colours.functional.keyline};
   border-bottom-color: ${colours.functional.keyline};
-  border-bottom-width: 1px;
+  border-bottom-width: ${hideKeylines ? "0" : "1px"};
   padding-top: ${spacing(2)};
-  padding-bottom: ${spacing(2)};
+  padding-bottom: ${hideKeylines ? "0" : spacing(2)};
 `;
 
 export const HeaderContainer = styled(View)`
