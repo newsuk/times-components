@@ -2,8 +2,8 @@
 
 exports[`1. an article list header 1`] = `
 .c1 {
-  -webkit-animation: fLRwcH 0.3s ease-in-out;
-  animation: fLRwcH 0.3s ease-in-out;
+  -webkit-animation: eMLfYp 0.3s ease-in-out;
+  animation: eMLfYp 0.3s ease-in-out;
 }
 
 .c0 {
@@ -95,13 +95,10 @@ exports[`1. an article list header 1`] = `
 }
 
 .S5 {
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  align-items: center;
   background-color: rgba(0,0,0,0.00);
-  width: 100%;
 }
+
+
 
 .IS1 {
   border-color: #FFFFFF;
@@ -121,17 +118,13 @@ exports[`1. an article list header 1`] = `
   padding-left: 5px;
   text-decoration-line: none;
 }
-
-.IS3 {
-  width: 100%;
-}
 </style>
 
 <div
-  className="c0 responsiveweb__AuthorHeadWrapper-rnqjol-0 c0 css-view-1dbjc4n"
+  className="c0 responsiveweb__AuthorHeadWrapper-rnqjol-0 c0 css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-gbtiil r-borderBottomColor-rp7rv6 r-borderBottomWidth-qklmqi r-flexDirection-eqz5dr r-paddingBottom-1uwte3a r-width-13qz1uu S6"
 >
   <div
-    className="c1 indexweb__FadeIn-v0crhg-0 c1 css-view-1dbjc4n IS3"
+    className="c1 indexweb__FadeIn-v0crhg-0 c1 css-view-1dbjc4n r-width-13qz1uu S6"
   >
     <div
       className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-1niwhzg r-pointerEvents-12vffkv r-width-13qz1uu S5"
@@ -203,16 +196,10 @@ exports[`2. an article list header loading 1`] = `
 }
 
 .S2 {
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  align-items: center;
-  background-color: rgba(249,249,249,1.00);
-  border-bottom-color: rgba(240,240,240,1.00);
-  border-bottom-width: 1px;
   min-height: 264px;
-  width: 100%;
 }
+
+
 
 .IS1 {
   flex: 1;
@@ -220,7 +207,7 @@ exports[`2. an article list header loading 1`] = `
 </style>
 
 <div
-  className="c0 responsiveweb__AuthorHeadWrapper-rnqjol-0 c0 css-view-1dbjc4n"
+  className="c0 responsiveweb__AuthorHeadWrapper-rnqjol-0 c0 css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-gbtiil r-borderBottomColor-rp7rv6 r-borderBottomWidth-qklmqi r-flexDirection-eqz5dr r-paddingBottom-1uwte3a r-width-13qz1uu S3"
 >
   <div
     className="css-view-1dbjc4n r-alignItems-1awozwy r-backgroundColor-gbtiil r-borderBottomColor-rp7rv6 r-borderBottomWidth-qklmqi r-minHeight-1lv5adl r-width-13qz1uu S2"

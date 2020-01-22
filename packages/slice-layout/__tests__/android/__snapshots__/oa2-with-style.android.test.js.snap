@@ -146,9 +146,8 @@ Object {
   "$$typeof": Symbol(react.forward_ref),
   "attrs": Array [],
   "componentStyle": ComponentStyle {
-    "baseHash": 2059608660,
     "componentId": "responsiveweb__Base-fgzeui-15",
-    "isStatic": false,
+    "isStatic": true,
     "rules": Array [
       "flex:1;flex-wrap:wrap;min-height:auto;padding-left:",
       "10",
@@ -185,7 +184,6 @@ Object {
       "10",
       ";}",
     ],
-    "staticRulesId": "",
   },
   "displayName": "responsiveweb__Base",
   "foldedComponentIds": Array [
@@ -207,9 +205,8 @@ Object {
   "$$typeof": Symbol(react.forward_ref),
   "attrs": Array [],
   "componentStyle": ComponentStyle {
-    "baseHash": 2059608660,
     "componentId": "responsiveweb__Base-fgzeui-15",
-    "isStatic": false,
+    "isStatic": true,
     "rules": Array [
       "flex:1;flex-wrap:wrap;min-height:auto;padding-left:",
       "10",
@@ -246,7 +243,6 @@ Object {
       "10",
       ";}",
     ],
-    "staticRulesId": "",
   },
   "displayName": "responsiveweb__Base",
   "foldedComponentIds": Array [
@@ -268,9 +264,8 @@ Object {
   "$$typeof": Symbol(react.forward_ref),
   "attrs": Array [],
   "componentStyle": ComponentStyle {
-    "baseHash": 2059608660,
     "componentId": "responsiveweb__Base-fgzeui-15",
-    "isStatic": false,
+    "isStatic": true,
     "rules": Array [
       "flex:1;flex-wrap:wrap;min-height:auto;padding-left:",
       "10",
@@ -295,7 +290,6 @@ Object {
       "10",
       ";}",
     ],
-    "staticRulesId": "",
   },
   "displayName": "responsiveweb__Base",
   "foldedComponentIds": Array [
@@ -317,9 +311,8 @@ Object {
   "$$typeof": Symbol(react.forward_ref),
   "attrs": Array [],
   "componentStyle": ComponentStyle {
-    "baseHash": 2059608660,
     "componentId": "responsiveweb__Base-fgzeui-15",
-    "isStatic": false,
+    "isStatic": true,
     "rules": Array [
       "flex:1;flex-wrap:wrap;min-height:auto;padding-left:",
       "10",
@@ -344,7 +337,6 @@ Object {
       "10",
       ";}",
     ],
-    "staticRulesId": "",
   },
   "displayName": "responsiveweb__Base",
   "foldedComponentIds": Array [
@@ -366,9 +358,8 @@ Object {
   "$$typeof": Symbol(react.forward_ref),
   "attrs": Array [],
   "componentStyle": ComponentStyle {
-    "baseHash": 1103616583,
     "componentId": "responsiveweb__Base-fgzeui-9",
-    "isStatic": false,
+    "isStatic": true,
     "rules": Array [
       "flex:1;flex-direction:column;height:auto;@media (min-width:",
       "768",
@@ -382,7 +373,6 @@ Object {
       "auto",
       ";}",
     ],
-    "staticRulesId": "",
   },
   "displayName": "responsiveweb__Base",
   "foldedComponentIds": Array [
@@ -403,9 +393,8 @@ Object {
   "$$typeof": Symbol(react.forward_ref),
   "attrs": Array [],
   "componentStyle": ComponentStyle {
-    "baseHash": 1103616583,
     "componentId": "responsiveweb__Base-fgzeui-9",
-    "isStatic": false,
+    "isStatic": true,
     "rules": Array [
       "flex:1;flex-direction:column;height:auto;@media (min-width:",
       "768",
@@ -416,7 +405,6 @@ Object {
       "400px",
       ";}",
     ],
-    "staticRulesId": "",
   },
   "displayName": "responsiveweb__Base",
   "foldedComponentIds": Array [
@@ -436,9 +424,8 @@ Object {
   "$$typeof": Symbol(react.forward_ref),
   "attrs": Array [],
   "componentStyle": ComponentStyle {
-    "baseHash": 1103616579,
     "componentId": "responsiveweb__Base-fgzeui-5",
-    "isStatic": false,
+    "isStatic": true,
     "rules": Array [
       "flex:1;flex-grow:1;padding-left:",
       "10",
@@ -466,7 +453,6 @@ Object {
       "10",
       ";}",
     ],
-    "staticRulesId": "",
   },
   "displayName": "responsiveweb__Base",
   "foldedComponentIds": Array [
@@ -487,9 +473,8 @@ Object {
   "$$typeof": Symbol(react.forward_ref),
   "attrs": Array [],
   "componentStyle": ComponentStyle {
-    "baseHash": 1103616579,
     "componentId": "responsiveweb__Base-fgzeui-5",
-    "isStatic": false,
+    "isStatic": true,
     "rules": Array [
       "flex:1;flex-grow:1;padding-left:",
       "10",
@@ -511,7 +496,6 @@ Object {
       "10",
       ";}",
     ],
-    "staticRulesId": "",
   },
   "displayName": "responsiveweb__Base",
   "foldedComponentIds": Array [
@@ -532,9 +516,8 @@ Object {
   "$$typeof": Symbol(react.forward_ref),
   "attrs": Array [],
   "componentStyle": ComponentStyle {
-    "baseHash": 1103616579,
     "componentId": "responsiveweb__Base-fgzeui-5",
-    "isStatic": false,
+    "isStatic": true,
     "rules": Array [
       "flex:1;flex-grow:1;padding-left:",
       "10",
@@ -571,7 +554,6 @@ Object {
       "10",
       ";}",
     ],
-    "staticRulesId": "",
   },
   "displayName": "responsiveweb__Base",
   "foldedComponentIds": Array [
@@ -593,9 +575,8 @@ Object {
   "$$typeof": Symbol(react.forward_ref),
   "attrs": Array [],
   "componentStyle": ComponentStyle {
-    "baseHash": 1103616579,
     "componentId": "responsiveweb__Base-fgzeui-5",
-    "isStatic": false,
+    "isStatic": true,
     "rules": Array [
       "flex:1;flex-grow:1;padding-left:",
       "10",
@@ -626,7 +607,6 @@ Object {
       "10",
       ";}",
     ],
-    "staticRulesId": "",
   },
   "displayName": "responsiveweb__Base",
   "foldedComponentIds": Array [
@@ -648,9 +628,8 @@ Object {
   "$$typeof": Symbol(react.forward_ref),
   "attrs": Array [],
   "componentStyle": ComponentStyle {
-    "baseHash": 2081513707,
     "componentId": "responsiveweb-fgzeui-6",
-    "isStatic": false,
+    "isStatic": true,
     "rules": Array [
       "border-bottom-color:",
       "#DBDBDB",
@@ -668,7 +647,6 @@ Object {
       "1024",
       "px){display:block;}",
     ],
-    "staticRulesId": "",
   },
   "displayName": "responsiveweb",
   "foldedComponentIds": Array [],
@@ -686,9 +664,8 @@ Object {
   "$$typeof": Symbol(react.forward_ref),
   "attrs": Array [],
   "componentStyle": ComponentStyle {
-    "baseHash": 2081513707,
     "componentId": "responsiveweb-fgzeui-6",
-    "isStatic": false,
+    "isStatic": true,
     "rules": Array [
       "border-bottom-color:",
       "#DBDBDB",
@@ -706,7 +683,6 @@ Object {
       "1024",
       "px){display:block;}",
     ],
-    "staticRulesId": "",
   },
   "displayName": "responsiveweb",
   "foldedComponentIds": Array [],
@@ -724,9 +700,8 @@ Object {
   "$$typeof": Symbol(react.forward_ref),
   "attrs": Array [],
   "componentStyle": ComponentStyle {
-    "baseHash": 2081513701,
     "componentId": "responsiveweb-fgzeui-0",
-    "isStatic": false,
+    "isStatic": true,
     "rules": Array [
       "flex:1;flex-direction:column;flex-wrap:wrap;height:auto;padding-bottom:",
       "10",
@@ -744,7 +719,6 @@ Object {
       "100%",
       ";}",
     ],
-    "staticRulesId": "",
   },
   "displayName": "responsiveweb",
   "foldedComponentIds": Array [],
@@ -762,9 +736,8 @@ Object {
   "$$typeof": Symbol(react.forward_ref),
   "attrs": Array [],
   "componentStyle": ComponentStyle {
-    "baseHash": 2081513701,
     "componentId": "responsiveweb-fgzeui-0",
-    "isStatic": false,
+    "isStatic": true,
     "rules": Array [
       "flex:1;flex-direction:column;flex-wrap:wrap;height:auto;padding-bottom:",
       "10",
@@ -782,7 +755,6 @@ Object {
       "56.2%",
       ";}",
     ],
-    "staticRulesId": "",
   },
   "displayName": "responsiveweb",
   "foldedComponentIds": Array [],

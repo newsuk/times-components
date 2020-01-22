@@ -34,10 +34,6 @@ exports[`2. with a target 1`] = `
   text-decoration: none;
 }
 
-@media (min-width:768px) {
-
-}
-
 <a
   className="c0"
   href="http://thetimes.co.uk"
@@ -53,10 +49,6 @@ exports[`3. renders link 1`] = `
   text-decoration: none;
 }
 
-@media (min-width:768px) {
-
-}
-
 <a
   className="c0"
   href="http://thetimes.co.uk"
@@ -70,10 +62,6 @@ exports[`4. renders link with target 1`] = `
 .c0 {
   -webkit-text-decoration: none;
   text-decoration: none;
-}
-
-@media (min-width:768px) {
-
 }
 
 <a

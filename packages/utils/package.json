@@ -58,7 +58,7 @@
     "lodash.omitby": "4.6.0",
     "prop-types": "15.7.2",
     "react-native": "0.61.1",
-    "styled-components": "5.0.0",
+    "styled-components": "4.3.2",
     "unfetch": "^3.0.0"
   },
   "resolutions": {
