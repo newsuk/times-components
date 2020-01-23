@@ -14,7 +14,7 @@ export const getHeaderAdStyles = template => {
     padding-top: ${spacing(2)};
     padding-bottom: ${hideKeylines ? "0" : spacing(2)};
   `;
-}
+};
 
 export const MainContainer = styled(View)`
   @media (min-width: ${breakpoints.wide}px) {
