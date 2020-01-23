@@ -523,6 +523,27 @@ exports[`full article with style 1`] = `
   className="c0 responsiveweb__ArticleMainStandardContainer-sc-1gngn7q-4 c0 css-view-1dbjc4n"
 >
   <div>
+    <div
+      className="Container"
+    >
+      <div
+        className="ArticleMetaBanner"
+      >
+        <div
+          className="ArticleMetaBanner-field"
+        >
+          <label>
+            UUID
+            <input />
+          </label>
+          <button
+            className="ArticleMetaBanner-button"
+          >
+            Copy
+          </button>
+        </div>
+      </div>
+    </div>
     <div />
     <article>
       <Helmet>

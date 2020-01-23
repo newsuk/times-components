@@ -87,6 +87,30 @@ class ArticleSkeleton extends Component {
 
     return (
       <StickyProvider>
+        <div className="Container">
+          <div className="ArticleMetaBanner">
+            <div className="ArticleMetaBanner-field">
+              <label htmlFor="ArticleMetaBanner-uuid">
+                UUID
+                <input
+                  type="text"
+                  placeholder="UUID"
+                  name="UUID"
+                  id="ArticleMetaBanner-uuid"
+                  value={articleId}
+                  readOnly
+                />
+              </label>
+              <button
+                type="button"
+                className="ArticleMetaBanner-button"
+                data-clipboard-target="#ArticleMetaBanner-uuid"
+              >
+                Copy
+              </button>
+            </div>
+          </div>
+        </div>
         <div id="article-marketing-header" />
         <article
           id="article-main"

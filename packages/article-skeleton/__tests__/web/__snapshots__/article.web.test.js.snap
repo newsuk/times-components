@@ -2,6 +2,31 @@
 
 exports[`1. a full article with all content items with dropcap template 1`] = `
 <div>
+  <div>
+    <div>
+      <div>
+        <label
+          htmlFor="ArticleMetaBanner-uuid"
+        >
+          UUID
+          <input
+            id="ArticleMetaBanner-uuid"
+            name="UUID"
+            placeholder="UUID"
+            readOnly={true}
+            type="text"
+            value="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+          />
+        </label>
+        <button
+          data-clipboard-target="#ArticleMetaBanner-uuid"
+          type="button"
+        >
+          Copy
+        </button>
+      </div>
+    </div>
+  </div>
   <div
     id="article-marketing-header"
   />
@@ -391,6 +416,31 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
 
 exports[`2. an article with interactives 1`] = `
 <div>
+  <div>
+    <div>
+      <div>
+        <label
+          htmlFor="ArticleMetaBanner-uuid"
+        >
+          UUID
+          <input
+            id="ArticleMetaBanner-uuid"
+            name="UUID"
+            placeholder="UUID"
+            readOnly={true}
+            type="text"
+            value="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+          />
+        </label>
+        <button
+          data-clipboard-target="#ArticleMetaBanner-uuid"
+          type="button"
+        >
+          Copy
+        </button>
+      </div>
+    </div>
+  </div>
   <div
     id="article-marketing-header"
   />
@@ -535,6 +585,31 @@ exports[`2. an article with interactives 1`] = `
 
 exports[`3. an article with no content 1`] = `
 <div>
+  <div>
+    <div>
+      <div>
+        <label
+          htmlFor="ArticleMetaBanner-uuid"
+        >
+          UUID
+          <input
+            id="ArticleMetaBanner-uuid"
+            name="UUID"
+            placeholder="UUID"
+            readOnly={true}
+            type="text"
+            value="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+          />
+        </label>
+        <button
+          data-clipboard-target="#ArticleMetaBanner-uuid"
+          type="button"
+        >
+          Copy
+        </button>
+      </div>
+    </div>
+  </div>
   <div
     id="article-marketing-header"
   />
@@ -657,6 +732,31 @@ exports[`3. an article with no content 1`] = `
 
 exports[`4. an article with no content if content is set as null 1`] = `
 <div>
+  <div>
+    <div>
+      <div>
+        <label
+          htmlFor="ArticleMetaBanner-uuid"
+        >
+          UUID
+          <input
+            id="ArticleMetaBanner-uuid"
+            name="UUID"
+            placeholder="UUID"
+            readOnly={true}
+            type="text"
+            value="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+          />
+        </label>
+        <button
+          data-clipboard-target="#ArticleMetaBanner-uuid"
+          type="button"
+        >
+          Copy
+        </button>
+      </div>
+    </div>
+  </div>
   <div
     id="article-marketing-header"
   />
@@ -779,6 +879,31 @@ exports[`4. an article with no content if content is set as null 1`] = `
 
 exports[`5. an article with a nested markup in first paragraph displays a drop cap 1`] = `
 <div>
+  <div>
+    <div>
+      <div>
+        <label
+          htmlFor="ArticleMetaBanner-uuid"
+        >
+          UUID
+          <input
+            id="ArticleMetaBanner-uuid"
+            name="UUID"
+            placeholder="UUID"
+            readOnly={true}
+            type="text"
+            value="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+          />
+        </label>
+        <button
+          data-clipboard-target="#ArticleMetaBanner-uuid"
+          type="button"
+        >
+          Copy
+        </button>
+      </div>
+    </div>
+  </div>
   <div
     id="article-marketing-header"
   />

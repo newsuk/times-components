@@ -2,6 +2,31 @@
 
 exports[`1. a primary image 1`] = `
 <div>
+  <div>
+    <div>
+      <div>
+        <label
+          htmlFor="ArticleMetaBanner-uuid"
+        >
+          UUID
+          <input
+            id="ArticleMetaBanner-uuid"
+            name="UUID"
+            placeholder="UUID"
+            readOnly={true}
+            type="text"
+            value="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+          />
+        </label>
+        <button
+          data-clipboard-target="#ArticleMetaBanner-uuid"
+          type="button"
+        >
+          Copy
+        </button>
+      </div>
+    </div>
+  </div>
   <div
     id="article-marketing-header"
   />
@@ -96,6 +121,31 @@ exports[`1. a primary image 1`] = `
 
 exports[`2. a fullwidth image 1`] = `
 <div>
+  <div>
+    <div>
+      <div>
+        <label
+          htmlFor="ArticleMetaBanner-uuid"
+        >
+          UUID
+          <input
+            id="ArticleMetaBanner-uuid"
+            name="UUID"
+            placeholder="UUID"
+            readOnly={true}
+            type="text"
+            value="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+          />
+        </label>
+        <button
+          data-clipboard-target="#ArticleMetaBanner-uuid"
+          type="button"
+        >
+          Copy
+        </button>
+      </div>
+    </div>
+  </div>
   <div
     id="article-marketing-header"
   />
@@ -190,6 +240,31 @@ exports[`2. a fullwidth image 1`] = `
 
 exports[`3. a secondary image 1`] = `
 <div>
+  <div>
+    <div>
+      <div>
+        <label
+          htmlFor="ArticleMetaBanner-uuid"
+        >
+          UUID
+          <input
+            id="ArticleMetaBanner-uuid"
+            name="UUID"
+            placeholder="UUID"
+            readOnly={true}
+            type="text"
+            value="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+          />
+        </label>
+        <button
+          data-clipboard-target="#ArticleMetaBanner-uuid"
+          type="button"
+        >
+          Copy
+        </button>
+      </div>
+    </div>
+  </div>
   <div
     id="article-marketing-header"
   />
@@ -284,6 +359,31 @@ exports[`3. a secondary image 1`] = `
 
 exports[`4. an inline image 1`] = `
 <div>
+  <div>
+    <div>
+      <div>
+        <label
+          htmlFor="ArticleMetaBanner-uuid"
+        >
+          UUID
+          <input
+            id="ArticleMetaBanner-uuid"
+            name="UUID"
+            placeholder="UUID"
+            readOnly={true}
+            type="text"
+            value="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+          />
+        </label>
+        <button
+          data-clipboard-target="#ArticleMetaBanner-uuid"
+          type="button"
+        >
+          Copy
+        </button>
+      </div>
+    </div>
+  </div>
   <div
     id="article-marketing-header"
   />

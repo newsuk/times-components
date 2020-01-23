@@ -132,6 +132,27 @@ exports[`1. a primary image 1`] = `
 </style>
 
 <div>
+  <div
+    className="Container"
+  >
+    <div
+      className="ArticleMetaBanner"
+    >
+      <div
+        className="ArticleMetaBanner-field"
+      >
+        <label>
+          UUID
+          <input />
+        </label>
+        <button
+          className="ArticleMetaBanner-button"
+        >
+          Copy
+        </button>
+      </div>
+    </div>
+  </div>
   <div />
   <article>
     <Head />
@@ -300,6 +321,27 @@ exports[`2. a fullwidth image 1`] = `
 </style>
 
 <div>
+  <div
+    className="Container"
+  >
+    <div
+      className="ArticleMetaBanner"
+    >
+      <div
+        className="ArticleMetaBanner-field"
+      >
+        <label>
+          UUID
+          <input />
+        </label>
+        <button
+          className="ArticleMetaBanner-button"
+        >
+          Copy
+        </button>
+      </div>
+    </div>
+  </div>
   <div />
   <article>
     <Head />
@@ -492,6 +534,27 @@ exports[`3. a secondary image 1`] = `
 </style>
 
 <div>
+  <div
+    className="Container"
+  >
+    <div
+      className="ArticleMetaBanner"
+    >
+      <div
+        className="ArticleMetaBanner-field"
+      >
+        <label>
+          UUID
+          <input />
+        </label>
+        <button
+          className="ArticleMetaBanner-button"
+        >
+          Copy
+        </button>
+      </div>
+    </div>
+  </div>
   <div />
   <article>
     <Head />
@@ -685,6 +748,27 @@ exports[`4. an inline image 1`] = `
 </style>
 
 <div>
+  <div
+    className="Container"
+  >
+    <div
+      className="ArticleMetaBanner"
+    >
+      <div
+        className="ArticleMetaBanner-field"
+      >
+        <label>
+          UUID
+          <input />
+        </label>
+        <button
+          className="ArticleMetaBanner-button"
+        >
+          Copy
+        </button>
+      </div>
+    </div>
+  </div>
   <div />
   <article>
     <Head />
