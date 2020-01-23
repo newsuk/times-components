@@ -88,6 +88,61 @@ exports[`full article with style 1`] = `
   display: block;
 }
 
+.c18 {
+  color: #333333;
+  font-family: "TimesModern-Bold";
+  font-weight: 400;
+  margin: 0 auto 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 25px;
+  line-height: 25px;
+}
+
+.c19 {
+  color: #333333;
+  font-family: "TimesModern-Bold";
+  font-weight: 400;
+  margin: 0 auto 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+.c20 {
+  color: #333333;
+  font-family: "TimesModern-Bold";
+  font-weight: 400;
+  margin: 0 auto 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 19px;
+  line-height: 19px;
+}
+
+.c21 {
+  color: #333333;
+  font-family: "TimesModern-Bold";
+  font-weight: 400;
+  margin: 0 auto 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 17px;
+  line-height: 17px;
+}
+
+.c22 {
+  color: #333333;
+  font-family: "TimesModern-Bold";
+  font-weight: 400;
+  margin: 0 auto 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 17px;
+  line-height: 17px;
+}
+
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -266,6 +321,111 @@ exports[`full article with style 1`] = `
 @media (min-width:1024px) {
   .c15 {
     width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c18 {
+    padding-left: 0;
+    padding-right: 0;
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c18 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c18 {
+    font-size: 28px;
+    line-height: 28px;
+  }
+}
+
+@media (min-width:768px) {
+  .c19 {
+    padding-left: 0;
+    padding-right: 0;
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c19 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c19 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width:768px) {
+  .c20 {
+    padding-left: 0;
+    padding-right: 0;
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c20 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c20 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width:768px) {
+  .c21 {
+    padding-left: 0;
+    padding-right: 0;
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c21 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c21 {
+    font-size: 19px;
+    line-height: 19px;
+  }
+}
+
+@media (min-width:768px) {
+  .c22 {
+    padding-left: 0;
+    padding-right: 0;
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c22 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c22 {
+    font-size: 19px;
+    line-height: 19px;
   }
 }
 
@@ -475,6 +635,31 @@ exports[`full article with style 1`] = `
           </div>
           <KeyFacts />
         </span>
+        <h2
+          className="c18"
+        >
+          This is heading 2
+        </h2>
+        <h3
+          className="c19"
+        >
+          This is heading 3
+        </h3>
+        <h4
+          className="c20"
+        >
+          This is heading 4
+        </h4>
+        <h5
+          className="c21"
+        >
+          This is heading 5
+        </h5>
+        <h6
+          className="c22"
+        >
+          This is heading 6
+        </h6>
         <ArticleExtras />
       </article>
     </main>
