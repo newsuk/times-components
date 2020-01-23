@@ -17,7 +17,7 @@ import articleTrackingContext from "./tracking/article-tracking-context";
 import insertDropcapIntoAST from "./dropcap-util";
 import {
   BodyContainer,
-  getHeaderAdContainer,
+  getHeaderAdStyles,
   HeaderContainer,
   MainContainer
 } from "./styles/responsive";
@@ -27,11 +27,6 @@ import StickySaveAndShareBar from "./sticky-save-and-share-bar";
 const adStyle = {
   marginBottom: 0
 };
-
-const templatesWithoutHeaderAdKeylines = ["indepth"];
-
-const shouldHideHeaderAdKeyline = template =>
-  templatesWithoutHeaderAdKeylines.includes(template);
 
 class ArticleSkeleton extends Component {
   constructor(props) {
@@ -81,9 +76,7 @@ class ArticleSkeleton extends Component {
       content.length > 0 &&
       insertDropcapIntoAST(content, template, dropcapsDisabled);
 
-    const HeaderAdContainer = getHeaderAdContainer(
-      shouldHideHeaderAdKeyline(template)
-    );
+    const HeaderAdContainer = getHeaderAdStyles(template);
 
     receiveChildList([
       {
