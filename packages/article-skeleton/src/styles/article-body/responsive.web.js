@@ -183,3 +183,70 @@ export const PullQuoteContainer = styled(View)`
     width: 56.2%;
   }
 `;
+
+const sharedHeadingStyles = `color: ${colours.functional.primary};
+  font-family: "${fonts.headline}";
+  font-weight: 400;
+  margin: 0 auto ${spacing(2)};
+  padding-right: ${spacing(2)};
+  padding-left: ${spacing(2)};
+
+  @media (min-width: ${breakpoints.medium}px) {
+    padding-left: 0;
+    padding-right: 0;
+    width: 80.8%;
+  }
+
+  @media (min-width: ${breakpoints.wide}px) {
+    width: 56.2%;
+  }`;
+
+export const Heading2 = styled.h2`
+  ${sharedHeadingStyles}
+  font-size: ${fontSizes.heading2Mobile}px;
+  line-height: ${fontSizes.heading2Mobile}px;
+  @media (min-width: ${breakpoints.medium}px) {
+    font-size: ${fontSizes.heading2}px;
+    line-height: ${fontSizes.heading2}px;
+  }
+`;
+
+export const Heading3 = styled.h3`
+  ${sharedHeadingStyles}
+  font-size: ${fontSizes.heading3Mobile}px;
+  line-height: ${fontSizes.heading3Mobile}px;
+  @media (min-width: ${breakpoints.medium}px) {
+    font-size: ${fontSizes.heading3}px;
+    line-height: ${fontSizes.heading3}px;
+  }
+`;
+
+export const Heading4 = styled.h4`
+  ${sharedHeadingStyles}
+  font-size: ${fontSizes.heading4Mobile}px;
+  line-height: ${fontSizes.heading4Mobile}px;
+  @media (min-width: ${breakpoints.medium}px) {
+    font-size: ${fontSizes.heading4}px;
+    line-height: ${fontSizes.heading4}px;
+  }
+`;
+
+export const Heading5 = styled.h5`
+  ${sharedHeadingStyles}
+  font-size: ${fontSizes.heading5Mobile}px;
+  line-height: ${fontSizes.heading5Mobile}px;
+  @media (min-width: ${breakpoints.medium}px) {
+    font-size: ${fontSizes.heading5}px;
+    line-height: ${fontSizes.heading5}px;
+  }
+`;
+
+export const Heading6 = styled.h6`
+  ${sharedHeadingStyles}
+  font-size: ${fontSizes.heading5Mobile}px;
+  line-height: ${fontSizes.heading5Mobile}px;
+  @media (min-width: ${breakpoints.medium}px) {
+    font-size: ${fontSizes.heading5}px;
+    line-height: ${fontSizes.heading5}px;
+  }
+`;
