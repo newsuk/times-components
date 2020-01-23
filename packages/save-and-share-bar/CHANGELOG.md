@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.4](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.9.3...@times-components/save-and-share-bar@0.9.4) (2020-01-23)
+
+
+### Bug Fixes
+
+* prevent default for copy and email buttons ([#2491](https://github.com/newsuk/times-components/issues/2491)) ([eddab24](https://github.com/newsuk/times-components/commit/eddab241ae143aeea33ae22991193d16395aa40c))
+
+
+
+
+
 ## [0.9.3](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.9.2...@times-components/save-and-share-bar@0.9.3) (2020-01-22)
 
 **Note:** Version bump only for package @times-components/save-and-share-bar

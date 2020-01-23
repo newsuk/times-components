@@ -24,8 +24,10 @@ class SaveAndShareBar extends Component {
     this.copyToClipboard = this.copyToClipboard.bind(this);
   }
 
-  copyToClipboard() {
+  copyToClipboard(e) {
     const { onCopyLink, articleUrl } = this.props;
+    e.preventDefault();
+
     Clipboard.setString(articleUrl);
     onCopyLink();
   }
