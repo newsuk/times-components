@@ -1,6 +1,6 @@
 {
   "name": "@times-components/message-bar",
-  "version": "0.3.21",
+  "version": "0.3.22",
   "description": "A component for showing user notifications",
   "main": "dist/index",
   "dev": "src/index",
