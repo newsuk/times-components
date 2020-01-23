@@ -9,18 +9,6 @@ exports[`1. a primary image 1`] = `
   padding-bottom: 25px;
 }
 
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  border-top-color: #DBDBDB;
-  border-bottom-color: #DBDBDB;
-  border-bottom-width: 1px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -83,6 +71,18 @@ exports[`1. a primary image 1`] = `
   border-bottom-color: transparent;
 }
 
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-top-color: #DBDBDB;
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 @media (min-width:768px) {
   .c8 {
     width: 80.8%;
@@ -136,14 +136,14 @@ exports[`1. a primary image 1`] = `
   <article>
     <Head />
     <div
-      className="c0 responsiveweb__HeaderAdContainer-sc-1exejum-1 c0 css-view-1dbjc4n"
+      className="c0 responsiveweb-sc-1exejum-0 c0 css-view-1dbjc4n"
     >
       <AdContainer
         className="IS1"
       />
     </div>
     <main
-      className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
+      className="c1 responsiveweb__MainContainer-sc-1exejum-1 c1 css-view-1dbjc4n"
     >
       <div
         className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
@@ -190,18 +190,6 @@ exports[`2. a fullwidth image 1`] = `
   padding-bottom: 20px;
 }
 
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  border-top-color: #DBDBDB;
-  border-bottom-color: #DBDBDB;
-  border-bottom-width: 1px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -264,6 +252,18 @@ exports[`2. a fullwidth image 1`] = `
   border-bottom-color: transparent;
 }
 
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-top-color: #DBDBDB;
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 @media (min-width:1024px) {
   .c1 {
     padding-top: 20px;
@@ -304,14 +304,14 @@ exports[`2. a fullwidth image 1`] = `
   <article>
     <Head />
     <div
-      className="c0 responsiveweb__HeaderAdContainer-sc-1exejum-1 c0 css-view-1dbjc4n"
+      className="c0 responsiveweb-sc-1exejum-0 c0 css-view-1dbjc4n"
     >
       <AdContainer
         className="IS1"
       />
     </div>
     <main
-      className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
+      className="c1 responsiveweb__MainContainer-sc-1exejum-1 c1 css-view-1dbjc4n"
     >
       <div
         className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
@@ -367,18 +367,6 @@ exports[`3. a secondary image 1`] = `
   padding-bottom: 25px;
 }
 
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  border-top-color: #DBDBDB;
-  border-bottom-color: #DBDBDB;
-  border-bottom-width: 1px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -439,6 +427,18 @@ exports[`3. a secondary image 1`] = `
 
 .c5.contains-tc-sticky {
   border-bottom-color: transparent;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-top-color: #DBDBDB;
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 @media (min-width:768px) {
@@ -496,14 +496,14 @@ exports[`3. a secondary image 1`] = `
   <article>
     <Head />
     <div
-      className="c0 responsiveweb__HeaderAdContainer-sc-1exejum-1 c0 css-view-1dbjc4n"
+      className="c0 responsiveweb-sc-1exejum-0 c0 css-view-1dbjc4n"
     >
       <AdContainer
         className="IS1"
       />
     </div>
     <main
-      className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
+      className="c1 responsiveweb__MainContainer-sc-1exejum-1 c1 css-view-1dbjc4n"
     >
       <div
         className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
@@ -560,18 +560,6 @@ exports[`4. an inline image 1`] = `
   display: block;
 }
 
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  border-top-color: #DBDBDB;
-  border-bottom-color: #DBDBDB;
-  border-bottom-width: 1px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -634,6 +622,18 @@ exports[`4. an inline image 1`] = `
   border-bottom-color: transparent;
 }
 
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-top-color: #DBDBDB;
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 @media (min-width:768px) {
   .c8 {
     width: 80.8%;
@@ -689,14 +689,14 @@ exports[`4. an inline image 1`] = `
   <article>
     <Head />
     <div
-      className="c0 responsiveweb__HeaderAdContainer-sc-1exejum-1 c0 css-view-1dbjc4n"
+      className="c0 responsiveweb-sc-1exejum-0 c0 css-view-1dbjc4n"
     >
       <AdContainer
         className="IS1"
       />
     </div>
     <main
-      className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
+      className="c1 responsiveweb__MainContainer-sc-1exejum-1 c1 css-view-1dbjc4n"
     >
       <div
         className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
