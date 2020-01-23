@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.25.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.24.20...@times-components/article-skeleton@1.25.0) (2020-01-23)
+
+
+### Features
+
+* REPLAT-11948 article H-tags web implemented ([#2493](https://github.com/newsuk/times-components/issues/2493)) ([74ee7b1](https://github.com/newsuk/times-components/commit/74ee7b1bf6b9526576c55308399285eaf66a16d7))
+
+
+
+
+
 ## [1.24.20](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.24.19...@times-components/article-skeleton@1.24.20) (2020-01-23)
 
 

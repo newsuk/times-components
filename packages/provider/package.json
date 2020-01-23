@@ -1,6 +1,6 @@
 {
   "name": "@times-components/provider",
-  "version": "1.21.18",
+  "version": "1.21.19",
   "main": "dist/provider",
   "dev": "src/provider",
   "scripts": {
@@ -38,8 +38,8 @@
     "@times-components/eslint-config-thetimes": "0.8.16",
     "@times-components/jest-configurator": "2.6.10",
     "@times-components/jest-serializer": "3.2.22",
-    "@times-components/provider-test-tools": "1.17.58",
-    "@times-components/storybook": "4.1.26",
+    "@times-components/provider-test-tools": "1.18.0",
+    "@times-components/storybook": "4.1.27",
     "@times-components/test-utils": "2.3.8",
     "@times-components/webpack-configurator": "2.0.27",
     "babel-jest": "24.8.0",
