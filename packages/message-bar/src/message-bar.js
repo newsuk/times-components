@@ -90,7 +90,7 @@ class MessageBar extends Component {
           }
         }
       >
-        <View style={styles.messageBarBodyContainer}>
+        <View data-testid="message-bar" style={styles.messageBarBodyContainer}>
           <View style={styles.messageBarBody}>
             <Text style={styles.messageBarText}>{message}</Text>
             <View style={styles.messageBarCloseButton}>

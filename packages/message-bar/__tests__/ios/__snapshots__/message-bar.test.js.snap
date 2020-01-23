@@ -2,7 +2,9 @@
 
 exports[`1. renders correctly 1`] = `
 <View>
-  <View>
+  <View
+    data-testid="message-bar"
+  >
     <View>
       <Text>
         test message
