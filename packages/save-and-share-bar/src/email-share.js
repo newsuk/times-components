@@ -13,7 +13,7 @@ class EmailShare extends Component {
     this.onShare = this.onShare.bind(this);
   }
 
-  onShare() {
+  onShare(e) {
     const {
       articleId,
       getTokenisedShareUrl,
@@ -22,6 +22,8 @@ class EmailShare extends Component {
       onShareEmail,
       articleHeadline
     } = this.props;
+
+    e.preventDefault();
 
     onShareEmail({ articleId, articleUrl, articleHeadline });
 
