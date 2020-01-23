@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article",
-  "version": "7.4.20",
+  "version": "7.4.21",
   "description": "The article",
   "main": "dist/article",
   "dev": "src/article",
@@ -61,13 +61,13 @@
   },
   "dependencies": {
     "@times-components/ad": "2.10.1",
-    "@times-components/article-in-depth": "3.17.20",
-    "@times-components/article-magazine-comment": "3.17.20",
-    "@times-components/article-magazine-standard": "3.17.20",
-    "@times-components/article-main-comment": "2.18.20",
-    "@times-components/article-main-standard": "3.20.19",
+    "@times-components/article-in-depth": "3.17.21",
+    "@times-components/article-magazine-comment": "3.17.21",
+    "@times-components/article-magazine-standard": "3.17.21",
+    "@times-components/article-main-comment": "2.18.21",
+    "@times-components/article-main-standard": "3.20.20",
     "@times-components/context": "1.1.26",
-    "@times-components/message-bar": "0.3.21",
+    "@times-components/message-bar": "0.3.22",
     "@times-components/provider": "1.21.18",
     "@times-components/responsive": "0.5.23",
     "@times-components/styleguide": "3.33.16"
