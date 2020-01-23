@@ -17,7 +17,7 @@ import articleTrackingContext from "./tracking/article-tracking-context";
 import insertDropcapIntoAST from "./dropcap-util";
 import {
   BodyContainer,
-  HeaderAdContainer,
+  getHeaderAdStyles,
   HeaderContainer,
   MainContainer
 } from "./styles/responsive";
@@ -75,6 +75,8 @@ class ArticleSkeleton extends Component {
       content &&
       content.length > 0 &&
       insertDropcapIntoAST(content, template, dropcapsDisabled);
+
+    const HeaderAdContainer = getHeaderAdStyles(template);
 
     receiveChildList([
       {

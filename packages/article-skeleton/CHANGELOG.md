@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.24.20](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.24.19...@times-components/article-skeleton@1.24.20) (2020-01-23)
+
+
+### Bug Fixes
+
+* **REPLAT-11906:** remove keylines below header ad on indepth template ([#2489](https://github.com/newsuk/times-components/issues/2489)) ([0329cf5](https://github.com/newsuk/times-components/commit/0329cf58161b30bf86b4ced1bebf3da7faf5207e))
+
+
+
+
+
 ## [1.24.19](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.24.18...@times-components/article-skeleton@1.24.19) (2020-01-23)
 
 **Note:** Version bump only for package @times-components/article-skeleton

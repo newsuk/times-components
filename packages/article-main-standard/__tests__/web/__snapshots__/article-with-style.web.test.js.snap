@@ -91,18 +91,6 @@ exports[`full article with style 1`] = `
   margin-bottom: 30px;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  border-top-color: #DBDBDB;
-  border-bottom-color: #DBDBDB;
-  border-bottom-width: 1px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
 .c3 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -210,6 +198,18 @@ exports[`full article with style 1`] = `
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-top-color: #DBDBDB;
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 @media (min-width:768px) {
@@ -548,14 +548,14 @@ exports[`full article with style 1`] = `
         </script>
       </Helmet>
       <div
-        className="c1 responsiveweb__HeaderAdContainer-sc-1exejum-1 c1 css-view-1dbjc4n"
+        className="c1 responsiveweb-sc-1exejum-0 c1 css-view-1dbjc4n"
       >
         <AdContainer
           className="IS1"
         />
       </div>
       <main
-        className="c2 responsiveweb__MainContainer-sc-1exejum-0 c2 css-view-1dbjc4n"
+        className="c2 responsiveweb__MainContainer-sc-1exejum-1 c2 css-view-1dbjc4n"
       >
         <div
           className="c3 responsiveweb__HeaderContainer-sc-1exejum-2 c3 css-view-1dbjc4n"

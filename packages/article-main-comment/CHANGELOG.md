@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.18.22](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.21...@times-components/article-main-comment@2.18.22) (2020-01-23)
+
+
+### Bug Fixes
+
+* **REPLAT-11906:** remove keylines below header ad on indepth template ([#2489](https://github.com/newsuk/times-components/issues/2489)) ([0329cf5](https://github.com/newsuk/times-components/commit/0329cf58161b30bf86b4ced1bebf3da7faf5207e))
+
+
+
+
+
 ## [2.18.21](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.20...@times-components/article-main-comment@2.18.21) (2020-01-23)
 
 **Note:** Version bump only for package @times-components/article-main-comment
