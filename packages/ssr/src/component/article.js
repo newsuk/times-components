@@ -82,7 +82,8 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
               onTopicPress: () => {},
               refetch,
               spotAccountId,
-              paidContentClassName
+              paidContentClassName,
+              isPreview
             })
           );
         }

@@ -1,136 +1,290 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. a full article 1`] = `
-Array [
-  <label
-    htmlFor="ArticleMetaBanner-uuid"
-  >
-    UUID
-    <input
-      id="ArticleMetaBanner-uuid"
-      name="UUID"
-      placeholder="UUID"
-      readOnly={true}
-      type="text"
-      value="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+<article
+  data-article-identifier="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+  data-article-sectionname="Some Section"
+  id="article-main"
+>
+  <Helmet>
+    <title>
+      Some Headline
+       | 
+      
+      The Times
+    </title>
+    <meta
+      content="Some Headline"
+      name="article:title"
     />
-  </label>,
-  <button
-    data-clipboard-target="#ArticleMetaBanner-uuid"
-    type="button"
-  >
-    Copy
-  </button>,
-  <article
-    data-article-identifier="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-    data-article-sectionname="Some Section"
-    id="article-main"
-  >
-    <Helmet>
-      <title>
-        Some Headline
-         | 
-        
-        The Times
-      </title>
-      <meta
-        content="Some Headline"
-        name="article:title"
-      />
-      <meta
-        content="The Times"
-        name="article:publication"
-      />
-      <meta
-        content="Some byline"
-        name="author"
-      />
-      <meta
-        content="Some Headline"
-        property="og:title"
-      />
-      <meta
-        content="article"
-        property="og:type"
-      />
-      <meta
-        content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
-        property="og:url"
-      />
-      <meta
-        content="https://crop169.io?resize=685"
-        property="og:image"
-      />
-      <meta
-        content="Some Headline"
-        name="twitter:title"
-      />
-      <meta
-        content="summary_large_image"
-        name="twitter:card"
-      />
-      <meta
-        content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
-        name="twitter:url"
-      />
-      <meta
-        content="https://crop169.io?resize=685"
-        name="twitter:image"
-      />
-      <script
-        type="application/ld+json"
-      >
-        {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"author":{"@type":"Person","name":"Some byline"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=685","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z"}
-      </script>
-    </Helmet>
-    <main
-      role="main"
+    <meta
+      content="The Times"
+      name="article:publication"
+    />
+    <meta
+      content="Some byline"
+      name="author"
+    />
+    <meta
+      content="Some Headline"
+      property="og:title"
+    />
+    <meta
+      content="article"
+      property="og:type"
+    />
+    <meta
+      content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+      property="og:url"
+    />
+    <meta
+      content="https://crop169.io?resize=685"
+      property="og:image"
+    />
+    <meta
+      content="Some Headline"
+      name="twitter:title"
+    />
+    <meta
+      content="summary_large_image"
+      name="twitter:card"
+    />
+    <meta
+      content="https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"
+      name="twitter:url"
+    />
+    <meta
+      content="https://crop169.io?resize=685"
+      name="twitter:image"
+    />
+    <script
+      type="application/ld+json"
     >
-      SOME LABEL
-      <h1
-        aria-level="1"
-        role="heading"
+      {"@context":"http://schema.org","@type":"NewsArticle","headline":"Some Headline","publisher":{"@type":"Organization","name":"The Times","logo":{"@type":"ImageObject"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.thetimes.co.uk/article/this-is-slug-2k629tpvh"},"dateCreated":"2015-03-13T18:54:58.000Z","datePublished":"2015-03-13T18:54:58.000Z","isAccessibleForFree":false,"hasPart":{"@type":"WebPageElement","isAccessibleForFree":false,"cssSelector":".undefined"},"author":{"@type":"Person","name":"Some byline"},"image":{"@type":"ImageObject","url":"https://crop169.io?resize=685","caption":"Some Caption"},"thumbnailUrl":"https://crop169.io","dateModified":"2015-03-13T18:54:58.000Z"}
+    </script>
+  </Helmet>
+  <main
+    role="main"
+  >
+    SOME LABEL
+    <h1
+      aria-level="1"
+      role="heading"
+    >
+      Some Headline
+    </h1>
+    <h2
+      aria-level="2"
+      data-testid="standfirst"
+      role="heading"
+    >
+      Some Standfirst
+    </h2>
+    Some byline
+    <time
+      dateTime="2015-03-13T18:54:58.000Z"
+    >
+      Friday March 13 2015, 6.54pm
+    </time>
+    <span>
+      , The Times
+    </span>
+    <figure>
+      <img
+        alt="Some Caption"
+        src="https://crop169.io?resize=100"
+      />
+      <svg
+        height="auto"
+        version="1.1"
+        viewBox="145 50 108 120"
+        width="100%"
       >
-        Some Headline
-      </h1>
-      <h2
-        aria-level="2"
-        data-testid="standfirst"
-        role="heading"
+        <g>
+          <path
+            d="6a6c07166e9c40e4f62e57af2b507822"
+          />
+        </g>
+      </svg>
+      <figcaption>
+        Some Caption
+        SOME CREDITS
+      </figcaption>
+    </figure>
+    Share
+    <a
+      href=""
+      target={null}
+    >
+      <svg
+        aria-label="icon-email"
+        height={16}
+        role="img"
+        viewBox="0 0 22 16"
+        width={22}
       >
-        Some Standfirst
-      </h2>
-      Some byline
-      <time
-        dateTime="2015-03-13T18:54:58.000Z"
+        <title>
+          Share by email
+        </title>
+        <g>
+          <path
+            d="7662b27a9a5411e756afc5097a4eb94d"
+          />
+        </g>
+      </svg>
+    </a>
+    <a
+      href="https://twitter.com/intent/tweet?text=https://url.io"
+      target="_blank"
+    >
+      <svg
+        aria-label="icon-twitter"
+        height={16}
+        role="img"
+        viewBox="-354.2 -279.4 750 600"
+        width={20}
       >
-        Friday March 13 2015, 6.54pm
-      </time>
-      <span>
-        , The Times
-      </span>
-      <figure>
-        <img
-          alt="Some Caption"
-          src="https://crop169.io?resize=100"
+        <title>
+          Share on Twitter
+        </title>
+        <path
+          d="ebf51b280a2c9ea0e632fdbf86606550"
         />
+      </svg>
+    </a>
+    <a
+      href="https://www.facebook.com/sharer/sharer.php?u=https://url.io"
+      target="_blank"
+    >
+      <svg
+        aria-label="icon-facebook"
+        height={18}
+        role="img"
+        viewBox="14 10 10.592460632324219 20.397258758544922"
+        width={9}
+      >
+        <title>
+          Share on Facebook
+        </title>
+        <g>
+          <path
+            d="8f9b8bbdce60b96352628d3dbf6e37a0"
+          />
+        </g>
+      </svg>
+    </a>
+    <a
+      href=""
+      target={null}
+    >
+      <svg
+        aria-label="icon-copy-link"
+        height={16}
+        role="img"
+        viewBox="0 0 15 15"
+        width={15}
+      >
+        <title>
+          Copy link to clipboard
+        </title>
+        <path
+          d="f65af77b7574644b0c2e60934732135f"
+        />
+      </svg>
+    </a>
+    <SaveStarWeb
+      articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
+      colour="#696969"
+      height={18}
+      hoverColor="#1D1D1B"
+    />
+    <article
+      role="article"
+    >
+      <img
+        alt="An image caption"
+        src="https://image.io?resize=100"
+      />
+      <svg
+        height="auto"
+        version="1.1"
+        viewBox="145 50 108 120"
+        width="100%"
+      >
+        <g>
+          <path
+            d="6a6c07166e9c40e4f62e57af2b507822"
+          />
+        </g>
+      </svg>
+      An image caption
+      THE IMAGE CREDITS
+      <a
+        href="https://link.io"
+        target="_blank"
+      >
+        Some Link
+      </a>
+      <p>
+        Some content
+      </p>
+      <blockquote
+        url="https://twitter.com/@AName"
+      >
+        “
+        <cite>
+          The pull quote content
+        </cite>
+        AName
+        , a text
         <svg
-          height="auto"
-          version="1.1"
-          viewBox="145 50 108 120"
-          width="100%"
+          aria-label="icon-twitter"
+          height={10}
+          role="img"
+          viewBox="-354.2 -279.4 750 600"
+          width={11}
         >
-          <g>
-            <path
-              d="6a6c07166e9c40e4f62e57af2b507822"
-            />
-          </g>
+          <title>
+            Twitter Icon
+          </title>
+          <path
+            d="ebf51b280a2c9ea0e632fdbf86606550"
+          />
         </svg>
+        <a
+          href="https://twitter.com/@AName"
+          rel=" noopener noreferrer"
+          role="link"
+          target="_blank"
+        >
+          @AName
+        </a>
+      </blockquote>
+      <figure>
+        <video
+          controls={true}
+          data-account="57838016001"
+          data-application-id={true}
+          data-embed="default"
+          data-player="default"
+          data-video-id="4084164751001"
+          id="4084164751001-57838016001-3dbfe6b8-680b-11e9-b277-88f3d445182c"
+          poster="https://image.io"
+        />
         <figcaption>
-          Some Caption
-          SOME CREDITS
+          This is video caption
         </figcaption>
       </figure>
+      <nav
+        data-cy="topic-tags"
+      >
+        <a
+          href="/topic/topic"
+          target={null}
+        >
+          Topic
+        </a>
+      </nav>
       Share
       <a
         href=""
@@ -218,182 +372,7 @@ Array [
         height={18}
         hoverColor="#1D1D1B"
       />
-      <article
-        role="article"
-      >
-        <img
-          alt="An image caption"
-          src="https://image.io?resize=100"
-        />
-        <svg
-          height="auto"
-          version="1.1"
-          viewBox="145 50 108 120"
-          width="100%"
-        >
-          <g>
-            <path
-              d="6a6c07166e9c40e4f62e57af2b507822"
-            />
-          </g>
-        </svg>
-        An image caption
-        THE IMAGE CREDITS
-        <a
-          href="https://link.io"
-          target="_blank"
-        >
-          Some Link
-        </a>
-        <p>
-          Some content
-        </p>
-        <blockquote
-          url="https://twitter.com/@AName"
-        >
-          “
-          <cite>
-            The pull quote content
-          </cite>
-          AName
-          , a text
-          <svg
-            aria-label="icon-twitter"
-            height={10}
-            role="img"
-            viewBox="-354.2 -279.4 750 600"
-            width={11}
-          >
-            <title>
-              Twitter Icon
-            </title>
-            <path
-              d="ebf51b280a2c9ea0e632fdbf86606550"
-            />
-          </svg>
-          <a
-            href="https://twitter.com/@AName"
-            rel=" noopener noreferrer"
-            role="link"
-            target="_blank"
-          >
-            @AName
-          </a>
-        </blockquote>
-        <figure>
-          <video
-            controls={true}
-            data-account="57838016001"
-            data-application-id={true}
-            data-embed="default"
-            data-player="default"
-            data-video-id="4084164751001"
-            id="4084164751001-57838016001-3dbfe6b8-680b-11e9-b277-88f3d445182c"
-            poster="https://image.io"
-          />
-          <figcaption>
-            This is video caption
-          </figcaption>
-        </figure>
-        <nav
-          data-cy="topic-tags"
-        >
-          <a
-            href="/topic/topic"
-            target={null}
-          >
-            Topic
-          </a>
-        </nav>
-        Share
-        <a
-          href=""
-          target={null}
-        >
-          <svg
-            aria-label="icon-email"
-            height={16}
-            role="img"
-            viewBox="0 0 22 16"
-            width={22}
-          >
-            <title>
-              Share by email
-            </title>
-            <g>
-              <path
-                d="7662b27a9a5411e756afc5097a4eb94d"
-              />
-            </g>
-          </svg>
-        </a>
-        <a
-          href="https://twitter.com/intent/tweet?text=https://url.io"
-          target="_blank"
-        >
-          <svg
-            aria-label="icon-twitter"
-            height={16}
-            role="img"
-            viewBox="-354.2 -279.4 750 600"
-            width={20}
-          >
-            <title>
-              Share on Twitter
-            </title>
-            <path
-              d="ebf51b280a2c9ea0e632fdbf86606550"
-            />
-          </svg>
-        </a>
-        <a
-          href="https://www.facebook.com/sharer/sharer.php?u=https://url.io"
-          target="_blank"
-        >
-          <svg
-            aria-label="icon-facebook"
-            height={18}
-            role="img"
-            viewBox="14 10 10.592460632324219 20.397258758544922"
-            width={9}
-          >
-            <title>
-              Share on Facebook
-            </title>
-            <g>
-              <path
-                d="8f9b8bbdce60b96352628d3dbf6e37a0"
-              />
-            </g>
-          </svg>
-        </a>
-        <a
-          href=""
-          target={null}
-        >
-          <svg
-            aria-label="icon-copy-link"
-            height={16}
-            role="img"
-            viewBox="0 0 15 15"
-            width={15}
-          >
-            <title>
-              Copy link to clipboard
-            </title>
-            <path
-              d="f65af77b7574644b0c2e60934732135f"
-            />
-          </svg>
-        </a>
-        <SaveStarWeb
-          articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-          colour="#696969"
-          height={18}
-          hoverColor="#1D1D1B"
-        />
-      </article>
-    </main>
-  </article>,
-]
+    </article>
+  </main>
+</article>
 `;

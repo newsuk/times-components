@@ -6,31 +6,6 @@ exports[`2. loading 1`] = `null`;
 
 exports[`3. an article with no headline falls back to use shortheadline 1`] = `
 <div>
-  <div>
-    <div>
-      <div>
-        <label
-          htmlFor="ArticleMetaBanner-uuid"
-        >
-          UUID
-          <input
-            id="ArticleMetaBanner-uuid"
-            name="UUID"
-            placeholder="UUID"
-            readOnly={true}
-            type="text"
-            value="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-          />
-        </label>
-        <button
-          data-clipboard-target="#ArticleMetaBanner-uuid"
-          type="button"
-        >
-          Copy
-        </button>
-      </div>
-    </div>
-  </div>
   <div
     id="article-marketing-header"
   />
@@ -292,31 +267,6 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
 
 exports[`4. an article with ads 1`] = `
 <div>
-  <div>
-    <div>
-      <div>
-        <label
-          htmlFor="ArticleMetaBanner-uuid"
-        >
-          UUID
-          <input
-            id="ArticleMetaBanner-uuid"
-            name="UUID"
-            placeholder="UUID"
-            readOnly={true}
-            type="text"
-            value="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
-          />
-        </label>
-        <button
-          data-clipboard-target="#ArticleMetaBanner-uuid"
-          type="button"
-        >
-          Copy
-        </button>
-      </div>
-    </div>
-  </div>
   <div
     id="article-marketing-header"
   />

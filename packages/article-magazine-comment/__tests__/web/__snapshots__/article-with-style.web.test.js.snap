@@ -529,27 +529,6 @@ exports[`full article with style 1`] = `
 </style>
 
 <div>
-  <div
-    className="Container"
-  >
-    <div
-      className="ArticleMetaBanner"
-    >
-      <div
-        className="ArticleMetaBanner-field"
-      >
-        <label>
-          UUID
-          <input />
-        </label>
-        <button
-          className="ArticleMetaBanner-button"
-        >
-          Copy
-        </button>
-      </div>
-    </div>
-  </div>
   <div />
   <article>
     <Helmet>
@@ -1305,27 +1284,6 @@ exports[`full article with style in the culture magazine 1`] = `
 </style>
 
 <div>
-  <div
-    className="Container"
-  >
-    <div
-      className="ArticleMetaBanner"
-    >
-      <div
-        className="ArticleMetaBanner-field"
-      >
-        <label>
-          UUID
-          <input />
-        </label>
-        <button
-          className="ArticleMetaBanner-button"
-        >
-          Copy
-        </button>
-      </div>
-    </div>
-  </div>
   <div />
   <article>
     <Helmet>
@@ -2082,27 +2040,6 @@ exports[`full article with style in the style magazine 1`] = `
 </style>
 
 <div>
-  <div
-    className="Container"
-  >
-    <div
-      className="ArticleMetaBanner"
-    >
-      <div
-        className="ArticleMetaBanner-field"
-      >
-        <label>
-          UUID
-          <input />
-        </label>
-        <button
-          className="ArticleMetaBanner-button"
-        >
-          Copy
-        </button>
-      </div>
-    </div>
-  </div>
   <div />
   <article>
     <Helmet>
@@ -2858,27 +2795,6 @@ exports[`full article with style in the sunday times magazine 1`] = `
 </style>
 
 <div>
-  <div
-    className="Container"
-  >
-    <div
-      className="ArticleMetaBanner"
-    >
-      <div
-        className="ArticleMetaBanner-field"
-      >
-        <label>
-          UUID
-          <input />
-        </label>
-        <button
-          className="ArticleMetaBanner-button"
-        >
-          Copy
-        </button>
-      </div>
-    </div>
-  </div>
   <div />
   <article>
     <Helmet>
