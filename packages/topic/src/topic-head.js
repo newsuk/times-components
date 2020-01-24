@@ -16,6 +16,18 @@ const TopicHead = ({ name, description, isLoading }) => {
       </Fragment>
     ) : null;
 
+    const showTissotAd = () => (
+      <Fragment>
+        <Text>
+          IN ASSOCIATION WITH
+        </Text>
+        <Image
+        // eslint-disable-next-line global-require
+        source={require("../assets/tissot_logo_official.png")} />
+
+      </Fragment>
+    )
+
   return isLoading ? (
     <View style={styles.wrapper} />
   ) : (
@@ -29,6 +41,7 @@ const TopicHead = ({ name, description, isLoading }) => {
           {name}
         </Text>
         {showDescription()}
+        {showTissotAd()}
       </View>
     </View>
   );
