@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.7.15](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.7.14...@times-components/watermark@2.7.15) (2020-01-24)
+
+
+### Bug Fixes
+
+* REPLAT-11684 handle responsive-graphic specially on ios ([#2490](https://github.com/newsuk/times-components/issues/2490)) ([a7ae457](https://github.com/newsuk/times-components/commit/a7ae457b0a422556ce75504fa7ead0da2d658f2b))
+
+
+
+
+
 ## [2.7.14](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.7.13...@times-components/watermark@2.7.14) (2020-01-22)
 
 **Note:** Version bump only for package @times-components/watermark

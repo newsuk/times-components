@@ -59,6 +59,9 @@ export const LabelContainer = styled(View)`
 `;
 
 export const Meta = styled(View)`
+  max-width: 100%;
+  justify-content: center;
+
   @media (min-width: ${breakpoints.medium}px) {
     margin-top: 0;
   }
@@ -66,6 +69,7 @@ export const Meta = styled(View)`
 
 export const MetaContainer = styled(View)`
   align-items: center;
+  justify-content: center;
 
   @media (min-width: ${breakpoints.medium}px) {
     flex-direction: row;
