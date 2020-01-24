@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.17.25](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.17.24...@times-components/article-magazine-comment@3.17.25) (2020-01-24)
+
+
+### Bug Fixes
+
+* REPLAT-11399 bylines styling ([#2495](https://github.com/newsuk/times-components/issues/2495)) ([6c3c809](https://github.com/newsuk/times-components/commit/6c3c809ac236184fb7158677fbddc92a63853c6c))
+
+
+
+
+
 ## [3.17.24](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.17.23...@times-components/article-magazine-comment@3.17.24) (2020-01-24)
 
 **Note:** Version bump only for package @times-components/article-magazine-comment
