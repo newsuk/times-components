@@ -165,6 +165,10 @@ exports[`full article with style 1`] = `
   order: 2;
 }
 
+.c11 {
+  max-width: 100%;
+}
+
 .c10 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -924,6 +928,10 @@ exports[`full article with style in the culture magazine 1`] = `
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
+}
+
+.c11 {
+  max-width: 100%;
 }
 
 .c10 {
@@ -1688,6 +1696,10 @@ exports[`full article with style in the style magazine 1`] = `
   order: 2;
 }
 
+.c11 {
+  max-width: 100%;
+}
+
 .c10 {
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -2449,6 +2461,10 @@ exports[`full article with style in the sunday times magazine 1`] = `
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
+}
+
+.c11 {
+  max-width: 100%;
 }
 
 .c10 {
