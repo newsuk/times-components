@@ -1,6 +1,6 @@
 {
   "name": "@times-components/image",
-  "version": "6.5.14",
+  "version": "6.5.15",
   "main": "dist/index",
   "dev": "src/index",
   "scripts": {
@@ -64,8 +64,8 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/gradient": "3.2.19",
-    "@times-components/link": "3.6.3",
+    "@times-components/gradient": "3.2.20",
+    "@times-components/link": "3.6.4",
     "@times-components/responsive": "0.5.24",
     "@times-components/responsive-image": "0.4.9",
     "@times-components/styleguide": "3.34.0",

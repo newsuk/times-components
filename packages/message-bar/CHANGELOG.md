@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.23](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.3.22...@times-components/message-bar@0.3.23) (2020-01-24)
+
+
+### Bug Fixes
+
+* REPLAT-11684 handle responsive-graphic specially on ios ([#2490](https://github.com/newsuk/times-components/issues/2490)) ([a7ae457](https://github.com/newsuk/times-components/commit/a7ae457b0a422556ce75504fa7ead0da2d658f2b))
+
+
+
+
+
 ## [0.3.22](https://github.com/newsuk/times-components/compare/@times-components/message-bar@0.3.21...@times-components/message-bar@0.3.22) (2020-01-23)
 
 **Note:** Version bump only for package @times-components/message-bar
