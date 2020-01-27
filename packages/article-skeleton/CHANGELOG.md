@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.25.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.25.2...@times-components/article-skeleton@1.25.3) (2020-01-27)
+
+
+### Bug Fixes
+
+* sticky share and save bar on preview article ([#2494](https://github.com/newsuk/times-components/issues/2494)) ([e80ddc3](https://github.com/newsuk/times-components/commit/e80ddc364bb1f06d5ff8a29ff2d1831ef51057fd))
+
+
+
+
+
 ## [1.25.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.25.1...@times-components/article-skeleton@1.25.2) (2020-01-27)
 
 **Note:** Version bump only for package @times-components/article-skeleton
