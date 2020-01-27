@@ -61,7 +61,9 @@ class InteractiveWrapper extends Component {
     if (retries) {
       this.setState({ retries: retries - 1 });
       setTimeout(() => {
-        this.webview.reload();
+        if (this.webview) {
+          this.webview.reload();
+        }
       }, 1000);
     }
   }
@@ -74,7 +76,9 @@ class InteractiveWrapper extends Component {
     ) {
       // Need to handle native routing when something is clicked.
       InteractiveWrapper.openURLInBrowser(data.url);
-      this.webview.reload();
+      if (this.webview) {
+        this.webview.reload();
+      }
     }
   }
 

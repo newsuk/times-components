@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.17](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.4.16...@times-components/interactive-wrapper@0.4.17) (2020-01-27)
+
+
+### Bug Fixes
+
+* REPLAT-11942 fix missing prop crash ([#2496](https://github.com/newsuk/times-components/issues/2496)) ([9198a1c](https://github.com/newsuk/times-components/commit/9198a1cbc186e742d0762ea54a84009a223d776f))
+
+
+
+
+
 ## [0.4.16](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.4.15...@times-components/interactive-wrapper@0.4.16) (2020-01-24)
 
 
