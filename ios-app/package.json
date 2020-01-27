@@ -1,6 +1,6 @@
 {
   "name": "@times-components/ios-app",
-  "version": "0.17.29",
+  "version": "0.17.30",
   "license": "BSD-3-Clause",
   "scripts": {
     "build": "cat package.json | grep version | head -1 | sed 's/[\",\t ]//g' | awk -F: '{ print \"Bundle Version: \" $2 }' > ios-assets/js/version.meta",
@@ -10,8 +10,8 @@
     "start": "react-native start --config metro.config.js"
   },
   "dependencies": {
-    "@times-components/pages": "2.1.28",
-    "@times-components/typeset": "0.0.9",
+    "@times-components/pages": "2.1.29",
+    "@times-components/typeset": "0.0.10",
     "prop-types": "15.7.2",
     "react": "16.9.0",
     "react-native": "0.61.1",

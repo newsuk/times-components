@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.10](https://github.com/newsuk/times-components/compare/@times-components/typeset@0.0.9...@times-components/typeset@0.0.10) (2020-01-27)
+
+
+### Bug Fixes
+
+* defensively handle unknown paragraph nodes ([#2497](https://github.com/newsuk/times-components/issues/2497)) ([7d505b3](https://github.com/newsuk/times-components/commit/7d505b3583937da2d812221ccec5804031004f2f))
+
+
+
+
+
 ## [0.0.9](https://github.com/newsuk/times-components/compare/@times-components/typeset@0.0.8...@times-components/typeset@0.0.9) (2020-01-10)
 
 
