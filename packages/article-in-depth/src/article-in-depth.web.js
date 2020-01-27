@@ -75,7 +75,8 @@ class ArticlePage extends Component {
       logoUrl,
       navigationMode,
       receiveChildList,
-      spotAccountId
+      spotAccountId,
+      isPreview
     } = this.props;
 
     if (error || isLoading) {
@@ -92,6 +93,7 @@ class ArticlePage extends Component {
         receiveChildList={receiveChildList}
         navigationMode={navigationMode}
         spotAccountId={spotAccountId}
+        isPreview={isPreview}
       />
     );
   }
