@@ -11,6 +11,7 @@ import {
 import { scales } from "@times-components/styleguide";
 
 import Context from "@times-components/context";
+import { UserState } from "../mocks.web";
 
 import { adConfig } from "../ad-mock";
 import articleFixture, { testFixture } from "../../fixtures/full-article";
@@ -319,12 +320,14 @@ const renderArticle = () => (
 
 describe("Article with isPreview", () => {
   it("Render article with ArticleMetaBanner when isPreview is passed", () => {
+    UserState.mockStates = [];
     const output = TestRenderer.create(renderArticle());
 
     expect(output).toMatchSnapshot();
   });
 
   it("Render article without ArticleMetaBanner when isPreview is missing", () => {
+    UserState.mockStates = [];
     isPreview = false;
     const output = TestRenderer.create(renderArticle());
 
