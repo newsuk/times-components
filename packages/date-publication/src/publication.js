@@ -3,7 +3,13 @@ export const publications = {
   TIMES: "The Times"
 };
 
+export const getPublicationComma = publication =>
+  publication && publications[publication] ? ", " : "";
+
+export const getPublicationName = publication =>
+  publication && publications[publication] ? publications[publication] : "";
+
 export default publication =>
   publication && publications[publication]
     ? `, ${publications[publication]}`
-    : ``;
+    : "";

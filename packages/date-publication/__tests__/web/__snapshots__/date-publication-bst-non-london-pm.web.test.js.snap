@@ -6,9 +6,12 @@ Array [
     dateTime="2017-07-01T14:32:00.000Z"
   >
     Saturday July 01 2017, 3.32pm BST
+    , 
   </time>,
-  <span>
-    , The Times
+  <span
+    className="date-publicationweb__PublicationName-pg8gov-0 hzKDdt"
+  >
+    The Times
   </span>,
 ]
 `;
