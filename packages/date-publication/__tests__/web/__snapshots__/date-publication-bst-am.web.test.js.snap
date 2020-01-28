@@ -8,11 +8,11 @@ Array [
     Saturday July 01 2017, 5.32am
     , 
   </time>,
-  <p
-    className="date-publicationweb__PublicationName-pg8gov-0 ifoGdb"
+  <span
+    className="date-publicationweb__PublicationName-pg8gov-0 QypuJ"
   >
     The Times
-  </p>,
+  </span>,
 ]
 `;
 
@@ -24,11 +24,11 @@ Array [
     Saturday July 01 2017, 5.32am
     , 
   </time>,
-  <p
-    className="date-publicationweb__PublicationName-pg8gov-0 ifoGdb"
+  <span
+    className="date-publicationweb__PublicationName-pg8gov-0 QypuJ"
   >
     The Sunday Times
-  </p>,
+  </span>,
 ]
 `;
 

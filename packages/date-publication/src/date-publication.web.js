@@ -24,8 +24,8 @@ const DatePublication = ({ publication, ...props }) => (
   </DateTime>
 );
 
-const PublicationName = styled.p`
-  margin: 0;
+const PublicationName = styled.span`
+  display: block;
 `;
 
 DatePublication.propTypes = {
