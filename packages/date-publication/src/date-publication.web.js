@@ -25,7 +25,7 @@ const DatePublication = ({ publication, ...props }) => (
 );
 
 const PublicationName = styled.span`
-  display: block;
+  display: inline-block;
 `;
 
 DatePublication.propTypes = {
