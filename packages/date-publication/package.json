@@ -1,6 +1,6 @@
 {
   "name": "@times-components/date-publication",
-  "version": "0.21.20",
+  "version": "0.21.21",
   "description": "Date and Publication properties",
   "main": "dist/date-publication",
   "dev": "src/date-publication",
