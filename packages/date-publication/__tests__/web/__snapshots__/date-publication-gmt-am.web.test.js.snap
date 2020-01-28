@@ -6,10 +6,13 @@ Array [
     dateTime="2017-01-01T04:32:00.000Z"
   >
     Sunday January 01 2017, 4.32am
+    , 
   </time>,
-  <span>
-    , The Times
-  </span>,
+  <p
+    className="date-publicationweb__PublicationName-pg8gov-0 ifoGdb"
+  >
+    The Times
+  </p>,
 ]
 `;
 
@@ -19,10 +22,13 @@ Array [
     dateTime="2017-01-01T04:32:00.000Z"
   >
     Sunday January 01 2017, 4.32am
+    , 
   </time>,
-  <span>
-    , The Sunday Times
-  </span>,
+  <p
+    className="date-publicationweb__PublicationName-pg8gov-0 ifoGdb"
+  >
+    The Sunday Times
+  </p>,
 ]
 `;
 
@@ -31,6 +37,7 @@ exports[`3. date and no given publication 1`] = `
   dateTime="2017-01-01T04:32:00.000Z"
 >
   Sunday January 01 2017, 4.32am
+  
 </time>
 `;
 
@@ -39,5 +46,6 @@ exports[`4. date and no day 1`] = `
   dateTime="2017-01-01T04:32:00.000Z"
 >
   January 01 2017, 4.32am
+  
 </time>
 `;
