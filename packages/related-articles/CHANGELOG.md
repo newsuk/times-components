@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.3.18](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.3.17...@times-components/related-articles@6.3.18) (2020-01-28)
+
+
+### Bug Fixes
+
+* Date publication and publication name ([#2498](https://github.com/newsuk/times-components/issues/2498)) ([10c3617](https://github.com/newsuk/times-components/commit/10c361725a22d030940100b29ecdbd724bd35e24))
+
+
+
+
+
 ## [6.3.17](https://github.com/newsuk/times-components/compare/@times-components/related-articles@6.3.16...@times-components/related-articles@6.3.17) (2020-01-24)
 
 **Note:** Version bump only for package @times-components/related-articles

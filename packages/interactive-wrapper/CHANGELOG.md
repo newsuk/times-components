@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.18](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.4.17...@times-components/interactive-wrapper@0.4.18) (2020-01-29)
+
+
+### Bug Fixes
+
+* (REPLAT-12046) revert interactive reload that is causing issues and no longer needed ([#2499](https://github.com/newsuk/times-components/issues/2499)) ([00d0d7c](https://github.com/newsuk/times-components/commit/00d0d7c63009e7b8c31fb95e439649e353c53c35))
+
+
+
+
+
 ## [0.4.17](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.4.16...@times-components/interactive-wrapper@0.4.17) (2020-01-27)
 
 

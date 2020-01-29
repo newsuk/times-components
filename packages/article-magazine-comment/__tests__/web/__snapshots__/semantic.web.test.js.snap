@@ -101,9 +101,10 @@ exports[`1. a full article 1`] = `
       dateTime="2015-03-13T18:54:58.000Z"
     >
       Friday March 13 2015, 6.54pm
+      , 
     </time>
     <span>
-      , The Times
+      The Times
     </span>
     <figure>
       <img

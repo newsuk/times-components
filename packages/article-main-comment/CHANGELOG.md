@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.18.31](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.30...@times-components/article-main-comment@2.18.31) (2020-01-29)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.18.30](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.29...@times-components/article-main-comment@2.18.30) (2020-01-29)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.18.29](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.28...@times-components/article-main-comment@2.18.29) (2020-01-28)
+
+
+### Bug Fixes
+
+* Date publication and publication name ([#2498](https://github.com/newsuk/times-components/issues/2498)) ([10c3617](https://github.com/newsuk/times-components/commit/10c361725a22d030940100b29ecdbd724bd35e24))
+
+
+
+
+
+## [2.18.28](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.27...@times-components/article-main-comment@2.18.28) (2020-01-27)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.18.27](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.26...@times-components/article-main-comment@2.18.27) (2020-01-27)
+
+
+### Bug Fixes
+
+* sticky share and save bar on preview article ([#2494](https://github.com/newsuk/times-components/issues/2494)) ([e80ddc3](https://github.com/newsuk/times-components/commit/e80ddc364bb1f06d5ff8a29ff2d1831ef51057fd))
+
+
+
+
+
 ## [2.18.26](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.25...@times-components/article-main-comment@2.18.26) (2020-01-27)
 
 **Note:** Version bump only for package @times-components/article-main-comment

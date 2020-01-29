@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.20.29](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.20.28...@times-components/article-main-standard@3.20.29) (2020-01-29)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.20.28](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.20.27...@times-components/article-main-standard@3.20.28) (2020-01-29)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.20.27](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.20.26...@times-components/article-main-standard@3.20.27) (2020-01-28)
+
+
+### Bug Fixes
+
+* Date publication and publication name ([#2498](https://github.com/newsuk/times-components/issues/2498)) ([10c3617](https://github.com/newsuk/times-components/commit/10c361725a22d030940100b29ecdbd724bd35e24))
+
+
+
+
+
+## [3.20.26](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.20.25...@times-components/article-main-standard@3.20.26) (2020-01-27)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.20.25](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.20.24...@times-components/article-main-standard@3.20.25) (2020-01-27)
+
+
+### Bug Fixes
+
+* sticky share and save bar on preview article ([#2494](https://github.com/newsuk/times-components/issues/2494)) ([e80ddc3](https://github.com/newsuk/times-components/commit/e80ddc364bb1f06d5ff8a29ff2d1831ef51057fd))
+
+
+
+
+
 ## [3.20.24](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.20.23...@times-components/article-main-standard@3.20.24) (2020-01-27)
 
 **Note:** Version bump only for package @times-components/article-main-standard

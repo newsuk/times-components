@@ -67,7 +67,7 @@ const renderers = ({ paidContentClassName }) => ({
   image(key, { display, ratio, url, caption, credits }) {
     const MediaWrapper = responsiveDisplayWrapper(display);
     return (
-      <LazyLoad key={key} rootMargin={spacing(15)} threshold={0.5}>
+      <LazyLoad key={key} rootMargin={spacing(40)} threshold={0}>
         {({ observed, registerNode }) => (
           <div id={key} ref={node => registerNode(node)}>
             <MediaWrapper>

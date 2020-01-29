@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.13.31](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.13.30...@times-components/ssr@2.13.31) (2020-01-29)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.13.30](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.13.29...@times-components/ssr@2.13.30) (2020-01-29)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.13.29](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.13.28...@times-components/ssr@2.13.29) (2020-01-28)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.13.28](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.13.27...@times-components/ssr@2.13.28) (2020-01-27)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.13.27](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.13.26...@times-components/ssr@2.13.27) (2020-01-27)
+
+
+### Bug Fixes
+
+* sticky share and save bar on preview article ([#2494](https://github.com/newsuk/times-components/issues/2494)) ([e80ddc3](https://github.com/newsuk/times-components/commit/e80ddc364bb1f06d5ff8a29ff2d1831ef51057fd))
+
+
+
+
+
 ## [2.13.26](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.13.25...@times-components/ssr@2.13.26) (2020-01-27)
 
 **Note:** Version bump only for package @times-components/ssr

@@ -24,15 +24,13 @@ class InteractiveWrapper extends Component {
   constructor() {
     super();
     this.state = {
-      height: 1,
-      retries: 3
+      height: 1
     };
     this.onMessage = this.onMessage.bind(this);
     this.handleNavigationStateChange = this.handleNavigationStateChange.bind(
       this
     );
     this.onLoadEnd = this.onLoadEnd.bind(this);
-    this.onError = this.onError.bind(this);
   }
 
   onMessage(e) {
@@ -44,8 +42,6 @@ class InteractiveWrapper extends Component {
       // eslint-disable-next-line no-restricted-globals
       if (!isNaN(height)) {
         this.setState({ height });
-      } else {
-        this.onError();
       }
     } else {
       console.error(`Invalid height received ${e.nativeEvent.data}`); // eslint-disable-line no-console
@@ -56,18 +52,6 @@ class InteractiveWrapper extends Component {
     this.webview.postMessage("thetimes.co.uk", "*");
   }
 
-  onError() {
-    const { retries } = this.state;
-    if (retries) {
-      this.setState({ retries: retries - 1 });
-      setTimeout(() => {
-        if (this.webview) {
-          this.webview.reload();
-        }
-      }, 1000);
-    }
-  }
-
   handleNavigationStateChange(data) {
     if (
       !data.url.includes("data:text/html") &&
@@ -76,9 +60,7 @@ class InteractiveWrapper extends Component {
     ) {
       // Need to handle native routing when something is clicked.
       InteractiveWrapper.openURLInBrowser(data.url);
-      if (this.webview) {
-        this.webview.reload();
-      }
+      this.webview.reload();
     }
   }
 
@@ -94,7 +76,6 @@ class InteractiveWrapper extends Component {
     return (
       <View style={{ height }}>
         <WebView
-          onError={this.onError}
           injectedJavaScript={`window.postMessage = function(data) {window.ReactNativeWebView.postMessage(data);};(${webviewEventCallbackSetup})({window});`}
           onLoadEnd={this.onLoadEnd}
           onMessage={this.onMessage}
