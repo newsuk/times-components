@@ -185,7 +185,7 @@ class ArticleList extends Component {
     if (!articlesLoading) receiveChildList(data);
 
     return (
-      <LazyLoad rootMargin={spacing(10)} threshold={0.5}>
+      <LazyLoad rootMargin={spacing(40)} threshold={0}>
         {({ clientHasRendered, observed, registerNode }) => (
           <View accessibilityRole="main">
             {articleListHeader}
