@@ -166,7 +166,7 @@ class ArticleSkeleton extends Component {
                       paidContentClassName={paidContentClassName}
                     />
                   )}
-                  <LazyLoad rootMargin={spacing(10)} threshold={0.5}>
+                  <LazyLoad rootMargin={spacing(40)} threshold={0}>
                     {({ observed, registerNode }) => (
                       <ArticleExtras
                         analyticsStream={analyticsStream}
