@@ -10,6 +10,7 @@ export const propTypes = {
   fadeImageIn: PropTypes.bool,
   highResSize: PropTypes.number,
   lowResSize: PropTypes.number,
+  lowResQuality: PropTypes.number,
   onLayout: PropTypes.func,
   rounded: PropTypes.bool,
   uri: PropTypes.string

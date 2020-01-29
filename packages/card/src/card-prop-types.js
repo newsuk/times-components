@@ -13,7 +13,8 @@ export const cardPropTypes = {
   imageStyle: ViewPropTypesStyle,
   imageUri: PropTypes.string,
   isLoading: PropTypes.bool,
-  lowResSize: PropTypes.number
+  lowResSize: PropTypes.number,
+  lowResQuality: PropTypes.number
 };
 
 export const cardDefaultProps = {
@@ -25,5 +26,6 @@ export const cardDefaultProps = {
   imageStyle: {},
   imageUri: null,
   isLoading: false,
-  lowResSize: null
+  lowResSize: null,
+  lowResQuality: null
 };
