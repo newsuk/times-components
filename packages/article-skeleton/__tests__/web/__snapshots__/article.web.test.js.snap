@@ -79,7 +79,8 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 Object {
                   "display": "primary",
                   "highResSize": null,
-                  "lowResSize": 100,
+                  "lowResQuality": 3,
+                  "lowResSize": 400,
                   "ratio": "1500:1000",
                   "uri": "https://image.io",
                 }
@@ -102,7 +103,8 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 Object {
                   "display": "secondary",
                   "highResSize": null,
-                  "lowResSize": 100,
+                  "lowResQuality": 3,
+                  "lowResSize": 400,
                   "ratio": "1500:1000",
                   "uri": "https://image.io/secondary",
                 }
@@ -125,7 +127,8 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 Object {
                   "display": "inline",
                   "highResSize": null,
-                  "lowResSize": 100,
+                  "lowResQuality": 3,
+                  "lowResSize": 400,
                   "ratio": "1500:1000",
                   "uri": "https://image.io/inline",
                 }
