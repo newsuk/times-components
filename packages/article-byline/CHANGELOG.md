@@ -3,6 +3,60 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.4.6](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.4.5...@times-components/article-byline@3.4.6) (2020-01-24)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.4.5](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.4.4...@times-components/article-byline@3.4.5) (2020-01-23)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.4.4](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.4.3...@times-components/article-byline@3.4.4) (2020-01-22)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.4.3](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.4.2...@times-components/article-byline@3.4.3) (2020-01-15)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.4.2](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.4.1...@times-components/article-byline@3.4.2) (2020-01-09)
+
+
+### Bug Fixes
+
+* (REPLAT-6829) (REPLAT-11392) fix text selection and a typo in byline component ([#2460](https://github.com/newsuk/times-components/issues/2460)) ([a0533e9](https://github.com/newsuk/times-components/commit/a0533e9e3a923f29b49a4db0755ea0ef4df673a2))
+
+
+
+
+
+## [3.4.1](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.3.19...@times-components/article-byline@3.4.1) (2020-01-09)
+
+
+### Bug Fixes
+
+* bump all packages ([#2456](https://github.com/newsuk/times-components/issues/2456)) ([048353a](https://github.com/newsuk/times-components/commit/048353a846ebae757f58fd5638d504288a71b107))
+
+
+
+
+
 ## [3.3.19](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.3.18...@times-components/article-byline@3.3.19) (2019-12-18)
 
 **Note:** Version bump only for package @times-components/article-byline

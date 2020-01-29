@@ -28,19 +28,20 @@ export interface Attribute {
 export default class AttributedString {
   public static join(strings: AttributedString[]): AttributedString {
     const emptyString = new AttributedString('', []);
-    return strings.reduce(
-      (string1, string2) =>
-        new AttributedString(
-          string1.string + string2.string,
-          string1.attributes.concat(
-            string2.attributes.map(attr => ({
-              ...attr,
-              start: attr.start + string1.string.length
-            }))
-          )
-        ),
-      emptyString
-    );
+    return strings.reduce((string1, string2) => {
+      if (!(string2 instanceof AttributedString)) {
+        return string1;
+      }
+      return new AttributedString(
+        string1.string + string2.string,
+        string1.attributes.concat(
+          string2.attributes.map(attr => ({
+            ...attr,
+            start: attr.start + string1.string.length
+          }))
+        )
+      );
+    }, emptyString);
   }
   public string: string = '';
   public attributes: Attribute[] = [];

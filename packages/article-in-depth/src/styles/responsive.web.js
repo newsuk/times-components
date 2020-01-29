@@ -57,7 +57,7 @@ export const LabelContainer = styled(View)`
 `;
 
 export const Meta = styled(View)`
-  width: 100%;
+  max-width: 100%;
 
   @media (min-width: ${breakpoints.medium}px) {
     margin-top: 0;

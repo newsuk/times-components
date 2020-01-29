@@ -3,6 +3,7 @@ import { Linking, View } from "react-native";
 import { WebView } from "react-native-webview";
 import PropTypes from "prop-types";
 import webviewEventCallbackSetup from "./webview-event-callback-setup";
+import ResponsiveImageInteractive from "./responsive-image";
 
 const editorialLambdaProtocol = "https://";
 const editorialLambdaOrigin = "jotn9sgpg6.execute-api.eu-west-1.amazonaws.com";
@@ -37,8 +38,11 @@ class InteractiveWrapper extends Component {
       (e && e.nativeEvent && e.nativeEvent.data) ||
       e.nativeEvent.data === "0"
     ) {
-      const height = Number(e.nativeEvent.data);
-      this.setState({ height });
+      const height = parseInt(e.nativeEvent.data, 10);
+      // eslint-disable-next-line no-restricted-globals
+      if (!isNaN(height)) {
+        this.setState({ height });
+      }
     } else {
       console.error(`Invalid height received ${e.nativeEvent.data}`); // eslint-disable-line no-console
     }
@@ -96,5 +100,7 @@ InteractiveWrapper.propTypes = {
 InteractiveWrapper.defaultProps = {
   config: {}
 };
+
+InteractiveWrapper.ResponsiveImageInteractive = ResponsiveImageInteractive;
 
 export default InteractiveWrapper;

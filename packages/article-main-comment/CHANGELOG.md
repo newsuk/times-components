@@ -3,6 +3,271 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.18.30](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.29...@times-components/article-main-comment@2.18.30) (2020-01-29)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.18.29](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.28...@times-components/article-main-comment@2.18.29) (2020-01-28)
+
+
+### Bug Fixes
+
+* Date publication and publication name ([#2498](https://github.com/newsuk/times-components/issues/2498)) ([10c3617](https://github.com/newsuk/times-components/commit/10c361725a22d030940100b29ecdbd724bd35e24))
+
+
+
+
+
+## [2.18.28](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.27...@times-components/article-main-comment@2.18.28) (2020-01-27)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.18.27](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.26...@times-components/article-main-comment@2.18.27) (2020-01-27)
+
+
+### Bug Fixes
+
+* sticky share and save bar on preview article ([#2494](https://github.com/newsuk/times-components/issues/2494)) ([e80ddc3](https://github.com/newsuk/times-components/commit/e80ddc364bb1f06d5ff8a29ff2d1831ef51057fd))
+
+
+
+
+
+## [2.18.26](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.25...@times-components/article-main-comment@2.18.26) (2020-01-27)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.18.25](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.24...@times-components/article-main-comment@2.18.25) (2020-01-24)
+
+
+### Bug Fixes
+
+* REPLAT-11399 bylines styling ([#2495](https://github.com/newsuk/times-components/issues/2495)) ([6c3c809](https://github.com/newsuk/times-components/commit/6c3c809ac236184fb7158677fbddc92a63853c6c))
+
+
+
+
+
+## [2.18.24](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.23...@times-components/article-main-comment@2.18.24) (2020-01-24)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.18.23](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.22...@times-components/article-main-comment@2.18.23) (2020-01-23)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.18.22](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.21...@times-components/article-main-comment@2.18.22) (2020-01-23)
+
+
+### Bug Fixes
+
+* **REPLAT-11906:** remove keylines below header ad on indepth template ([#2489](https://github.com/newsuk/times-components/issues/2489)) ([0329cf5](https://github.com/newsuk/times-components/commit/0329cf58161b30bf86b4ced1bebf3da7faf5207e))
+
+
+
+
+
+## [2.18.21](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.20...@times-components/article-main-comment@2.18.21) (2020-01-23)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.18.20](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.19...@times-components/article-main-comment@2.18.20) (2020-01-23)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.18.19](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.18...@times-components/article-main-comment@2.18.19) (2020-01-22)
+
+
+### Bug Fixes
+
+* REPLAT-11787 use native modal for author images ([#2486](https://github.com/newsuk/times-components/issues/2486)) ([67dfa4f](https://github.com/newsuk/times-components/commit/67dfa4f83a9290228945c0d8bf858ce14807d6a0))
+
+
+
+
+
+## [2.18.18](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.17...@times-components/article-main-comment@2.18.18) (2020-01-21)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.18.17](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.16...@times-components/article-main-comment@2.18.17) (2020-01-21)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.18.16](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.15...@times-components/article-main-comment@2.18.16) (2020-01-17)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.18.15](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.14...@times-components/article-main-comment@2.18.15) (2020-01-15)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.18.14](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.13...@times-components/article-main-comment@2.18.14) (2020-01-14)
+
+
+### Bug Fixes
+
+* REPLAT-11059 moving marketing-header ([#2477](https://github.com/newsuk/times-components/issues/2477)) ([1c2c287](https://github.com/newsuk/times-components/commit/1c2c287fd3e9735c1d904baed7e6601f8de23c9b))
+
+
+
+
+
+## [2.18.13](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.12...@times-components/article-main-comment@2.18.13) (2020-01-14)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.18.12](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.11...@times-components/article-main-comment@2.18.12) (2020-01-10)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.18.11](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.10...@times-components/article-main-comment@2.18.11) (2020-01-10)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.18.10](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.9...@times-components/article-main-comment@2.18.10) (2020-01-10)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.18.9](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.8...@times-components/article-main-comment@2.18.9) (2020-01-10)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.18.8](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.7...@times-components/article-main-comment@2.18.8) (2020-01-10)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.18.7](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.6...@times-components/article-main-comment@2.18.7) (2020-01-10)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.18.6](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.5...@times-components/article-main-comment@2.18.6) (2020-01-10)
+
+
+### Bug Fixes
+
+* REPLAT-11287 inline ad web styling ([#2465](https://github.com/newsuk/times-components/issues/2465)) ([368d8e8](https://github.com/newsuk/times-components/commit/368d8e8f5cb13a3dee42051552c678936ba25393))
+
+
+
+
+
+## [2.18.5](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.4...@times-components/article-main-comment@2.18.5) (2020-01-09)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.18.4](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.3...@times-components/article-main-comment@2.18.4) (2020-01-09)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.18.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.2...@times-components/article-main-comment@2.18.3) (2020-01-09)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.18.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.1...@times-components/article-main-comment@2.18.2) (2020-01-09)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.18.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.17.9...@times-components/article-main-comment@2.18.1) (2020-01-09)
+
+
+### Bug Fixes
+
+* bump all packages ([#2456](https://github.com/newsuk/times-components/issues/2456)) ([048353a](https://github.com/newsuk/times-components/commit/048353a846ebae757f58fd5638d504288a71b107))
+* package versions ([#2453](https://github.com/newsuk/times-components/issues/2453)) ([6639f32](https://github.com/newsuk/times-components/commit/6639f32c5c7ea1a22bf3d903036fa1d84affa954))
+
+
+
+
+
 ## [2.17.9](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.17.8...@times-components/article-main-comment@2.17.9) (2019-12-20)
 
 

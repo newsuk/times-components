@@ -5,7 +5,6 @@ import Button from "@times-components/link";
 import ImageViewer from "react-native-image-zoom-viewer";
 import CloseButton from "../close-button";
 import ModalCaptionContainer from "../modal-caption-container";
-import SafeAreaView from "../safeAreaView";
 import Image from "../image";
 import { modalPropTypes, modalDefaultProps } from "./modal-image-prop-types";
 import styles, { captionStyles, tabletCaptionStyles } from "../styles";
@@ -85,14 +84,6 @@ class ModalImage extends Component {
             <ResponsiveContext.Consumer>
               {({ isTablet, screenWidth }) => (
                 <Fragment>
-                  <SafeAreaView
-                    forceInset={{
-                      bottom: "never",
-                      horizontal: "always",
-                      top: "always"
-                    }}
-                    style={styles.topSafeView}
-                  />
                   <View
                     style={[
                       styles.buttonContainer,
@@ -106,32 +97,32 @@ class ModalImage extends Component {
                       />
                     ) : null}
                   </View>
-                  <SafeAreaView
-                    forceInset={{ horizontal: "always", vertical: "always" }}
-                    style={styles.middleSafeView}
-                  >
-                    <ImageViewer
-                      imageUrls={urls}
-                      renderImage={({ source }) => [
-                        <Image
-                          {...this.props}
-                          uri={source.uri}
-                          highResSize={screenWidth}
-                          lowResSize={lowResSize}
-                          resizeMode="contain"
-                          style={styles.modalImageContainer}
-                        />,
-                        elementsVisible ? (
-                          <ModalCaptionContainer
-                            pointerEvents="none"
-                            style={styles.bottomSafeView}
-                          >
-                            {this.renderCaption({ isTablet })}
-                          </ModalCaptionContainer>
-                        ) : null
-                      ]}
-                    />
-                  </SafeAreaView>
+                  <ImageViewer
+                    imageUrls={urls}
+                    renderIndicator={() => null}
+                    enableSwipeDown
+                    captureEvent
+                    onSwipeDown={this.hideModal}
+                    enablePreload
+                    renderImage={({ source }) => [
+                      <Image
+                        {...this.props}
+                        uri={source.uri}
+                        highResSize={screenWidth}
+                        lowResSize={lowResSize}
+                        resizeMode="contain"
+                        style={styles.modalImageContainer}
+                      />
+                    ]}
+                  />
+                  {elementsVisible ? (
+                    <ModalCaptionContainer
+                      pointerEvents="none"
+                      style={styles.bottomSafeView}
+                    >
+                      {this.renderCaption({ isTablet })}
+                    </ModalCaptionContainer>
+                  ) : null}
                 </Fragment>
               )}
             </ResponsiveContext.Consumer>

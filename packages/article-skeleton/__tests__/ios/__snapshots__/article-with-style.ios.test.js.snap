@@ -784,7 +784,13 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
             }
           >
             <View>
-              <Text>
+              <Text
+                style={
+                  Object {
+                    "lineHeight": 52,
+                  }
+                }
+              >
                 <Text
                   style={
                     Object {
@@ -875,7 +881,13 @@ exports[`6. an article skeleton with responsive items 1`] = `
             }
           >
             <View>
-              <Text>
+              <Text
+                style={
+                  Object {
+                    "lineHeight": 52,
+                  }
+                }
+              >
                 <Text
                   style={
                     Object {

@@ -3,6 +3,165 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.18](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.4.17...@times-components/interactive-wrapper@0.4.18) (2020-01-29)
+
+
+### Bug Fixes
+
+* (REPLAT-12046) revert interactive reload that is causing issues and no longer needed ([#2499](https://github.com/newsuk/times-components/issues/2499)) ([00d0d7c](https://github.com/newsuk/times-components/commit/00d0d7c63009e7b8c31fb95e439649e353c53c35))
+
+
+
+
+
+## [0.4.17](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.4.16...@times-components/interactive-wrapper@0.4.17) (2020-01-27)
+
+
+### Bug Fixes
+
+* REPLAT-11942 fix missing prop crash ([#2496](https://github.com/newsuk/times-components/issues/2496)) ([9198a1c](https://github.com/newsuk/times-components/commit/9198a1cbc186e742d0762ea54a84009a223d776f))
+
+
+
+
+
+## [0.4.16](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.4.15...@times-components/interactive-wrapper@0.4.16) (2020-01-24)
+
+
+### Bug Fixes
+
+* REPLAT-11684 handle responsive-graphic specially on ios ([#2490](https://github.com/newsuk/times-components/issues/2490)) ([a7ae457](https://github.com/newsuk/times-components/commit/a7ae457b0a422556ce75504fa7ead0da2d658f2b))
+
+
+
+
+
+## [0.4.15](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.4.14...@times-components/interactive-wrapper@0.4.15) (2020-01-22)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.4.14](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.4.13...@times-components/interactive-wrapper@0.4.14) (2020-01-21)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.4.13](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.4.12...@times-components/interactive-wrapper@0.4.13) (2020-01-17)
+
+
+### Bug Fixes
+
+* REPLAT-11684 handle bad messages and attempt reload on interactives ([#2482](https://github.com/newsuk/times-components/issues/2482)) ([b879c6f](https://github.com/newsuk/times-components/commit/b879c6f30453b1868e23bc3d19964773e9f5d140))
+
+
+
+
+
+## [0.4.12](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.4.11...@times-components/interactive-wrapper@0.4.12) (2020-01-15)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.4.11](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.4.10...@times-components/interactive-wrapper@0.4.11) (2020-01-14)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.4.10](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.4.9...@times-components/interactive-wrapper@0.4.10) (2020-01-10)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.4.9](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.4.8...@times-components/interactive-wrapper@0.4.9) (2020-01-10)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.4.8](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.4.7...@times-components/interactive-wrapper@0.4.8) (2020-01-10)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.4.7](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.4.6...@times-components/interactive-wrapper@0.4.7) (2020-01-10)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.4.6](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.4.5...@times-components/interactive-wrapper@0.4.6) (2020-01-10)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.4.5](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.4.4...@times-components/interactive-wrapper@0.4.5) (2020-01-10)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.4.4](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.4.3...@times-components/interactive-wrapper@0.4.4) (2020-01-10)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.4.3](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.4.2...@times-components/interactive-wrapper@0.4.3) (2020-01-09)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.4.2](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.4.1...@times-components/interactive-wrapper@0.4.2) (2020-01-09)
+
+**Note:** Version bump only for package @times-components/interactive-wrapper
+
+
+
+
+
+## [0.4.1](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.3.68...@times-components/interactive-wrapper@0.4.1) (2020-01-09)
+
+
+### Bug Fixes
+
+* bump all packages ([#2456](https://github.com/newsuk/times-components/issues/2456)) ([048353a](https://github.com/newsuk/times-components/commit/048353a846ebae757f58fd5638d504288a71b107))
+
+
+
+
+
 ## [0.3.68](https://github.com/newsuk/times-components/compare/@times-components/interactive-wrapper@0.3.67...@times-components/interactive-wrapper@0.3.68) (2019-12-18)
 
 **Note:** Version bump only for package @times-components/interactive-wrapper

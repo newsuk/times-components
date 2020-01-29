@@ -3,6 +3,44 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.4.4](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.4.3...@times-components/pagination@3.4.4) (2020-01-24)
+
+
+### Bug Fixes
+
+* REPLAT-11684 handle responsive-graphic specially on ios ([#2490](https://github.com/newsuk/times-components/issues/2490)) ([a7ae457](https://github.com/newsuk/times-components/commit/a7ae457b0a422556ce75504fa7ead0da2d658f2b))
+
+
+
+
+
+## [3.4.3](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.4.2...@times-components/pagination@3.4.3) (2020-01-22)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.4.2](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.4.1...@times-components/pagination@3.4.2) (2020-01-15)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.4.1](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.3.18...@times-components/pagination@3.4.1) (2020-01-09)
+
+
+### Bug Fixes
+
+* bump all packages ([#2456](https://github.com/newsuk/times-components/issues/2456)) ([048353a](https://github.com/newsuk/times-components/commit/048353a846ebae757f58fd5638d504288a71b107))
+
+
+
+
+
 ## [3.3.18](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.3.17...@times-components/pagination@3.3.18) (2019-12-20)
 
 

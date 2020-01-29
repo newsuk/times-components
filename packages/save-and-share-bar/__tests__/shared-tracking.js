@@ -6,6 +6,10 @@ import "./mocks";
 import BarItem from "../src/bar-item";
 import SaveAndShareBar from "../src/save-and-share-bar";
 
+const mockEvent = {
+  preventDefault: () => {}
+};
+
 class WithTrackingContext extends Component {
   getChildContext() {
     const { analyticsStream } = this.props;
@@ -106,7 +110,7 @@ export default () => {
       const copyToClipboardBarItem = testInstance.root.findAllByType(
         BarItem
       )[3];
-      copyToClipboardBarItem.props.onPress();
+      copyToClipboardBarItem.props.onPress(mockEvent);
 
       const call = stream.mock.calls[0][0];
 
@@ -118,7 +122,7 @@ export default () => {
       const shareArticleUrlByEmailBarItem = testInstance.root.findAllByType(
         BarItem
       )[0];
-      await shareArticleUrlByEmailBarItem.props.onPress();
+      await shareArticleUrlByEmailBarItem.props.onPress(mockEvent);
 
       const call = stream.mock.calls[0][0];
 

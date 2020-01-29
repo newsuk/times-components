@@ -3,6 +3,261 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.25.6](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.25.5...@times-components/article-skeleton@1.25.6) (2020-01-29)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.25.5](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.25.4...@times-components/article-skeleton@1.25.5) (2020-01-28)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.25.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.25.3...@times-components/article-skeleton@1.25.4) (2020-01-27)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.25.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.25.2...@times-components/article-skeleton@1.25.3) (2020-01-27)
+
+
+### Bug Fixes
+
+* sticky share and save bar on preview article ([#2494](https://github.com/newsuk/times-components/issues/2494)) ([e80ddc3](https://github.com/newsuk/times-components/commit/e80ddc364bb1f06d5ff8a29ff2d1831ef51057fd))
+
+
+
+
+
+## [1.25.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.25.1...@times-components/article-skeleton@1.25.2) (2020-01-27)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.25.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.25.0...@times-components/article-skeleton@1.25.1) (2020-01-24)
+
+
+### Bug Fixes
+
+* REPLAT-11684 handle responsive-graphic specially on ios ([#2490](https://github.com/newsuk/times-components/issues/2490)) ([a7ae457](https://github.com/newsuk/times-components/commit/a7ae457b0a422556ce75504fa7ead0da2d658f2b))
+
+
+
+
+
+# [1.25.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.24.20...@times-components/article-skeleton@1.25.0) (2020-01-23)
+
+
+### Features
+
+* REPLAT-11948 article H-tags web implemented ([#2493](https://github.com/newsuk/times-components/issues/2493)) ([74ee7b1](https://github.com/newsuk/times-components/commit/74ee7b1bf6b9526576c55308399285eaf66a16d7))
+
+
+
+
+
+## [1.24.20](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.24.19...@times-components/article-skeleton@1.24.20) (2020-01-23)
+
+
+### Bug Fixes
+
+* **REPLAT-11906:** remove keylines below header ad on indepth template ([#2489](https://github.com/newsuk/times-components/issues/2489)) ([0329cf5](https://github.com/newsuk/times-components/commit/0329cf58161b30bf86b4ced1bebf3da7faf5207e))
+
+
+
+
+
+## [1.24.19](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.24.18...@times-components/article-skeleton@1.24.19) (2020-01-23)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.24.18](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.24.17...@times-components/article-skeleton@1.24.18) (2020-01-23)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.24.17](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.24.16...@times-components/article-skeleton@1.24.17) (2020-01-22)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.24.16](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.24.15...@times-components/article-skeleton@1.24.16) (2020-01-21)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.24.15](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.24.14...@times-components/article-skeleton@1.24.15) (2020-01-21)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.24.14](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.24.13...@times-components/article-skeleton@1.24.14) (2020-01-17)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.24.13](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.24.12...@times-components/article-skeleton@1.24.13) (2020-01-15)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.24.12](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.24.11...@times-components/article-skeleton@1.24.12) (2020-01-14)
+
+
+### Bug Fixes
+
+* REPLAT-11059 moving marketing-header ([#2477](https://github.com/newsuk/times-components/issues/2477)) ([1c2c287](https://github.com/newsuk/times-components/commit/1c2c287fd3e9735c1d904baed7e6601f8de23c9b))
+
+
+
+
+
+## [1.24.11](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.24.10...@times-components/article-skeleton@1.24.11) (2020-01-14)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.24.10](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.24.9...@times-components/article-skeleton@1.24.10) (2020-01-10)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.24.9](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.24.8...@times-components/article-skeleton@1.24.9) (2020-01-10)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.24.8](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.24.7...@times-components/article-skeleton@1.24.8) (2020-01-10)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.24.7](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.24.6...@times-components/article-skeleton@1.24.7) (2020-01-10)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.24.6](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.24.5...@times-components/article-skeleton@1.24.6) (2020-01-10)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.24.5](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.24.4...@times-components/article-skeleton@1.24.5) (2020-01-10)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.24.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.24.3...@times-components/article-skeleton@1.24.4) (2020-01-10)
+
+
+### Bug Fixes
+
+* REPLAT-11287 inline ad web styling ([#2465](https://github.com/newsuk/times-components/issues/2465)) ([368d8e8](https://github.com/newsuk/times-components/commit/368d8e8f5cb13a3dee42051552c678936ba25393))
+
+
+
+
+
+## [1.24.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.24.2...@times-components/article-skeleton@1.24.3) (2020-01-09)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.24.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.24.1...@times-components/article-skeleton@1.24.2) (2020-01-09)
+
+
+### Bug Fixes
+
+* (REPLAT-6829) (REPLAT-11392) fix text selection and a typo in byline component ([#2460](https://github.com/newsuk/times-components/issues/2460)) ([a0533e9](https://github.com/newsuk/times-components/commit/a0533e9e3a923f29b49a4db0755ea0ef4df673a2))
+
+
+
+
+
+## [1.24.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.24.0...@times-components/article-skeleton@1.24.1) (2020-01-09)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.24.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.22.9...@times-components/article-skeleton@1.24.0) (2020-01-09)
+
+
+### Bug Fixes
+
+* (REPLAT-10519) better modal images ([#2390](https://github.com/newsuk/times-components/issues/2390)) ([0a8ee31](https://github.com/newsuk/times-components/commit/0a8ee311f45bb19f1af766ee2891eaf9f5270369))
+* bump all packages ([#2456](https://github.com/newsuk/times-components/issues/2456)) ([048353a](https://github.com/newsuk/times-components/commit/048353a846ebae757f58fd5638d504288a71b107))
+* package versions ([#2453](https://github.com/newsuk/times-components/issues/2453)) ([6639f32](https://github.com/newsuk/times-components/commit/6639f32c5c7ea1a22bf3d903036fa1d84affa954))
+
+
+### Features
+
+* REPLAT-11397 drop cap starting with quote for web ([#2451](https://github.com/newsuk/times-components/issues/2451)) ([b0b3d34](https://github.com/newsuk/times-components/commit/b0b3d343768e8a5bcb1c057a3484311aa91f0e81))
+
+
+
+
+
 ## [1.22.9](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.22.8...@times-components/article-skeleton@1.22.9) (2019-12-20)
 
 **Note:** Version bump only for package @times-components/article-skeleton

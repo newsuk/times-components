@@ -3,6 +3,151 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.5.15](https://github.com/newsuk/times-components/compare/@times-components/image@6.5.14...@times-components/image@6.5.15) (2020-01-24)
+
+
+### Bug Fixes
+
+* REPLAT-11684 handle responsive-graphic specially on ios ([#2490](https://github.com/newsuk/times-components/issues/2490)) ([a7ae457](https://github.com/newsuk/times-components/commit/a7ae457b0a422556ce75504fa7ead0da2d658f2b))
+
+
+
+
+
+## [6.5.14](https://github.com/newsuk/times-components/compare/@times-components/image@6.5.13...@times-components/image@6.5.14) (2020-01-22)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.5.13](https://github.com/newsuk/times-components/compare/@times-components/image@6.5.12...@times-components/image@6.5.13) (2020-01-21)
+
+
+### Bug Fixes
+
+* REPLAT-11812 caption appearing over images ([#2483](https://github.com/newsuk/times-components/issues/2483)) ([b8dacdd](https://github.com/newsuk/times-components/commit/b8dacdd7ddcc0388539f5592973f31be4b0f4b06))
+
+
+
+
+
+## [6.5.12](https://github.com/newsuk/times-components/compare/@times-components/image@6.5.11...@times-components/image@6.5.12) (2020-01-15)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.5.11](https://github.com/newsuk/times-components/compare/@times-components/image@6.5.10...@times-components/image@6.5.11) (2020-01-14)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.5.10](https://github.com/newsuk/times-components/compare/@times-components/image@6.5.9...@times-components/image@6.5.10) (2020-01-10)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.5.9](https://github.com/newsuk/times-components/compare/@times-components/image@6.5.8...@times-components/image@6.5.9) (2020-01-10)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.5.8](https://github.com/newsuk/times-components/compare/@times-components/image@6.5.7...@times-components/image@6.5.8) (2020-01-10)
+
+
+### Bug Fixes
+
+* broken image urls ([#2470](https://github.com/newsuk/times-components/issues/2470)) ([35a4bc0](https://github.com/newsuk/times-components/commit/35a4bc0fd4d9c86cbf4ac8fc1545bf491e44f076))
+
+
+
+
+
+## [6.5.7](https://github.com/newsuk/times-components/compare/@times-components/image@6.5.6...@times-components/image@6.5.7) (2020-01-10)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.5.6](https://github.com/newsuk/times-components/compare/@times-components/image@6.5.5...@times-components/image@6.5.6) (2020-01-10)
+
+
+### Bug Fixes
+
+* responsive image package version with dummy change ([#2469](https://github.com/newsuk/times-components/issues/2469)) ([7e1f764](https://github.com/newsuk/times-components/commit/7e1f7640e20a73bbe9a0d24cafc2e23f726f69a3))
+
+
+
+
+
+## [6.5.5](https://github.com/newsuk/times-components/compare/@times-components/image@6.5.4...@times-components/image@6.5.5) (2020-01-10)
+
+
+### Bug Fixes
+
+* responsive image ([#2467](https://github.com/newsuk/times-components/issues/2467)) ([793d6d6](https://github.com/newsuk/times-components/commit/793d6d6e631eb3333194ab219ba02b656cee173e))
+
+
+
+
+
+## [6.5.4](https://github.com/newsuk/times-components/compare/@times-components/image@6.5.3...@times-components/image@6.5.4) (2020-01-10)
+
+
+### Bug Fixes
+
+* lint ([#2466](https://github.com/newsuk/times-components/issues/2466)) ([bccb315](https://github.com/newsuk/times-components/commit/bccb315a7627309902fcf77df810630fedf7091c))
+
+
+
+
+
+## [6.5.3](https://github.com/newsuk/times-components/compare/@times-components/image@6.5.2...@times-components/image@6.5.3) (2020-01-09)
+
+
+### Bug Fixes
+
+* responsive image ([#2464](https://github.com/newsuk/times-components/issues/2464)) ([6afe689](https://github.com/newsuk/times-components/commit/6afe6896278a125331086de3a421400eea4dfbf0))
+
+
+
+
+
+## [6.5.2](https://github.com/newsuk/times-components/compare/@times-components/image@6.5.1...@times-components/image@6.5.2) (2020-01-09)
+
+**Note:** Version bump only for package @times-components/image
+
+
+
+
+
+## [6.5.1](https://github.com/newsuk/times-components/compare/@times-components/image@6.4.68...@times-components/image@6.5.1) (2020-01-09)
+
+
+### Bug Fixes
+
+* (REPLAT-10519) better modal images ([#2390](https://github.com/newsuk/times-components/issues/2390)) ([0a8ee31](https://github.com/newsuk/times-components/commit/0a8ee311f45bb19f1af766ee2891eaf9f5270369))
+* bump all packages ([#2456](https://github.com/newsuk/times-components/issues/2456)) ([048353a](https://github.com/newsuk/times-components/commit/048353a846ebae757f58fd5638d504288a71b107))
+
+
+
+
+
 ## [6.4.68](https://github.com/newsuk/times-components/compare/@times-components/image@6.4.67...@times-components/image@6.4.68) (2019-12-18)
 
 **Note:** Version bump only for package @times-components/image

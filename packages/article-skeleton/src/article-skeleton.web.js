@@ -17,7 +17,7 @@ import articleTrackingContext from "./tracking/article-tracking-context";
 import insertDropcapIntoAST from "./dropcap-util";
 import {
   BodyContainer,
-  HeaderAdContainer,
+  getHeaderAdStyles,
   HeaderContainer,
   MainContainer
 } from "./styles/responsive";
@@ -52,7 +52,8 @@ class ArticleSkeleton extends Component {
       logoUrl,
       receiveChildList,
       spotAccountId,
-      paidContentClassName
+      paidContentClassName,
+      isPreview
     } = this.props;
 
     const {
@@ -76,6 +77,8 @@ class ArticleSkeleton extends Component {
       content.length > 0 &&
       insertDropcapIntoAST(content, template, dropcapsDisabled);
 
+    const HeaderAdContainer = getHeaderAdStyles(template);
+
     receiveChildList([
       {
         elementId: "related-articles",
@@ -85,6 +88,33 @@ class ArticleSkeleton extends Component {
 
     return (
       <StickyProvider>
+        {isPreview && (
+          <div className="Container">
+            <div className="ArticleMetaBanner">
+              <div className="ArticleMetaBanner-field">
+                <label htmlFor="ArticleMetaBanner-uuid">
+                  UUID
+                  <input
+                    type="text"
+                    placeholder="UUID"
+                    name="UUID"
+                    id="ArticleMetaBanner-uuid"
+                    value={articleId}
+                    readOnly
+                  />
+                </label>
+                <button
+                  type="button"
+                  className="ArticleMetaBanner-button"
+                  data-clipboard-target="#ArticleMetaBanner-uuid"
+                >
+                  Copy
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+        <div id="article-marketing-header" />
         <article
           id="article-main"
           data-article-identifier={article.id}
@@ -136,7 +166,7 @@ class ArticleSkeleton extends Component {
                       paidContentClassName={paidContentClassName}
                     />
                   )}
-                  <LazyLoad rootMargin={spacing(10)} threshold={0.5}>
+                  <LazyLoad rootMargin={spacing(40)} threshold={0}>
                     {({ observed, registerNode }) => (
                       <ArticleExtras
                         analyticsStream={analyticsStream}

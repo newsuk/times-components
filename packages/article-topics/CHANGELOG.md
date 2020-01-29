@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.5](https://github.com/newsuk/times-components/compare/@times-components/article-topics@4.1.4...@times-components/article-topics@4.1.5) (2020-01-24)
+
+**Note:** Version bump only for package @times-components/article-topics
+
+
+
+
+
+## [4.1.4](https://github.com/newsuk/times-components/compare/@times-components/article-topics@4.1.3...@times-components/article-topics@4.1.4) (2020-01-23)
+
+**Note:** Version bump only for package @times-components/article-topics
+
+
+
+
+
+## [4.1.3](https://github.com/newsuk/times-components/compare/@times-components/article-topics@4.1.2...@times-components/article-topics@4.1.3) (2020-01-22)
+
+**Note:** Version bump only for package @times-components/article-topics
+
+
+
+
+
+## [4.1.2](https://github.com/newsuk/times-components/compare/@times-components/article-topics@4.1.1...@times-components/article-topics@4.1.2) (2020-01-15)
+
+**Note:** Version bump only for package @times-components/article-topics
+
+
+
+
+
+## [4.1.1](https://github.com/newsuk/times-components/compare/@times-components/article-topics@4.0.95...@times-components/article-topics@4.1.1) (2020-01-09)
+
+
+### Bug Fixes
+
+* bump all packages ([#2456](https://github.com/newsuk/times-components/issues/2456)) ([048353a](https://github.com/newsuk/times-components/commit/048353a846ebae757f58fd5638d504288a71b107))
+
+
+
+
+
 ## [4.0.95](https://github.com/newsuk/times-components/compare/@times-components/article-topics@4.0.94...@times-components/article-topics@4.0.95) (2019-12-10)
 
 **Note:** Version bump only for package @times-components/article-topics

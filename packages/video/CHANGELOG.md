@@ -3,6 +3,132 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.9.15](https://github.com/newsuk/times-components/compare/@times-components/video@4.9.14...@times-components/video@4.9.15) (2020-01-24)
+
+
+### Bug Fixes
+
+* REPLAT-11684 handle responsive-graphic specially on ios ([#2490](https://github.com/newsuk/times-components/issues/2490)) ([a7ae457](https://github.com/newsuk/times-components/commit/a7ae457b0a422556ce75504fa7ead0da2d658f2b))
+
+
+
+
+
+## [4.9.14](https://github.com/newsuk/times-components/compare/@times-components/video@4.9.13...@times-components/video@4.9.14) (2020-01-22)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.9.13](https://github.com/newsuk/times-components/compare/@times-components/video@4.9.12...@times-components/video@4.9.13) (2020-01-21)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.9.12](https://github.com/newsuk/times-components/compare/@times-components/video@4.9.11...@times-components/video@4.9.12) (2020-01-15)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.9.11](https://github.com/newsuk/times-components/compare/@times-components/video@4.9.10...@times-components/video@4.9.11) (2020-01-14)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.9.10](https://github.com/newsuk/times-components/compare/@times-components/video@4.9.9...@times-components/video@4.9.10) (2020-01-10)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.9.9](https://github.com/newsuk/times-components/compare/@times-components/video@4.9.8...@times-components/video@4.9.9) (2020-01-10)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.9.8](https://github.com/newsuk/times-components/compare/@times-components/video@4.9.7...@times-components/video@4.9.8) (2020-01-10)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.9.7](https://github.com/newsuk/times-components/compare/@times-components/video@4.9.6...@times-components/video@4.9.7) (2020-01-10)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.9.6](https://github.com/newsuk/times-components/compare/@times-components/video@4.9.5...@times-components/video@4.9.6) (2020-01-10)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.9.5](https://github.com/newsuk/times-components/compare/@times-components/video@4.9.4...@times-components/video@4.9.5) (2020-01-10)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.9.4](https://github.com/newsuk/times-components/compare/@times-components/video@4.9.3...@times-components/video@4.9.4) (2020-01-10)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.9.3](https://github.com/newsuk/times-components/compare/@times-components/video@4.9.2...@times-components/video@4.9.3) (2020-01-09)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.9.2](https://github.com/newsuk/times-components/compare/@times-components/video@4.9.1...@times-components/video@4.9.2) (2020-01-09)
+
+**Note:** Version bump only for package @times-components/video
+
+
+
+
+
+## [4.9.1](https://github.com/newsuk/times-components/compare/@times-components/video@4.8.24...@times-components/video@4.9.1) (2020-01-09)
+
+
+### Bug Fixes
+
+* bump all packages ([#2456](https://github.com/newsuk/times-components/issues/2456)) ([048353a](https://github.com/newsuk/times-components/commit/048353a846ebae757f58fd5638d504288a71b107))
+
+
+
+
+
 ## [4.8.24](https://github.com/newsuk/times-components/compare/@times-components/video@4.8.23...@times-components/video@4.8.24) (2019-12-20)
 
 

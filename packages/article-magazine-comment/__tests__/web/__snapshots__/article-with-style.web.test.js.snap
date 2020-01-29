@@ -67,18 +67,6 @@ exports[`full article with style 1`] = `
   display: block;
 }
 
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  border-top-color: #DBDBDB;
-  border-bottom-color: #DBDBDB;
-  border-bottom-width: 1px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -170,7 +158,11 @@ exports[`full article with style 1`] = `
 }
 
 .c9 {
-  width: 100%;
+  max-width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c8 {
@@ -178,6 +170,10 @@ exports[`full article with style 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c10 {
@@ -188,6 +184,18 @@ exports[`full article with style 1`] = `
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-top-color: #DBDBDB;
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 @media (min-width:768px) {
@@ -516,10 +524,12 @@ exports[`full article with style 1`] = `
   padding-horizontal: 10px;
   padding-vertical: 10px;
   margin-top: 30px;
+  width: 100%;
 }
 </style>
 
 <div>
+  <div />
   <article>
     <Helmet>
       <title>
@@ -544,14 +554,14 @@ exports[`full article with style 1`] = `
       </script>
     </Helmet>
     <div
-      className="c0 responsiveweb__HeaderAdContainer-sc-1exejum-1 c0 css-view-1dbjc4n"
+      className="c0 responsiveweb-sc-1exejum-0 c0 css-view-1dbjc4n"
     >
       <AdContainer
         className="IS1"
       />
     </div>
     <main
-      className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
+      className="c1 responsiveweb__MainContainer-sc-1exejum-1 c1 css-view-1dbjc4n"
     >
       <div
         className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
@@ -804,18 +814,6 @@ exports[`full article with style in the culture magazine 1`] = `
   display: block;
 }
 
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  border-top-color: #DBDBDB;
-  border-bottom-color: #DBDBDB;
-  border-bottom-width: 1px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -907,7 +905,11 @@ exports[`full article with style in the culture magazine 1`] = `
 }
 
 .c9 {
-  width: 100%;
+  max-width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c8 {
@@ -915,6 +917,10 @@ exports[`full article with style in the culture magazine 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c10 {
@@ -925,6 +931,18 @@ exports[`full article with style in the culture magazine 1`] = `
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-top-color: #DBDBDB;
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 @media (min-width:768px) {
@@ -1261,10 +1279,12 @@ exports[`full article with style in the culture magazine 1`] = `
   padding-horizontal: 10px;
   padding-vertical: 10px;
   margin-top: 30px;
+  width: 100%;
 }
 </style>
 
 <div>
+  <div />
   <article>
     <Helmet>
       <title>
@@ -1289,14 +1309,14 @@ exports[`full article with style in the culture magazine 1`] = `
       </script>
     </Helmet>
     <div
-      className="c0 responsiveweb__HeaderAdContainer-sc-1exejum-1 c0 css-view-1dbjc4n"
+      className="c0 responsiveweb-sc-1exejum-0 c0 css-view-1dbjc4n"
     >
       <AdContainer
         className="IS1"
       />
     </div>
     <main
-      className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
+      className="c1 responsiveweb__MainContainer-sc-1exejum-1 c1 css-view-1dbjc4n"
     >
       <div
         className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
@@ -1549,18 +1569,6 @@ exports[`full article with style in the style magazine 1`] = `
   display: block;
 }
 
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  border-top-color: #DBDBDB;
-  border-bottom-color: #DBDBDB;
-  border-bottom-width: 1px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1652,7 +1660,11 @@ exports[`full article with style in the style magazine 1`] = `
 }
 
 .c9 {
-  width: 100%;
+  max-width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c8 {
@@ -1660,6 +1672,10 @@ exports[`full article with style in the style magazine 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c10 {
@@ -1670,6 +1686,18 @@ exports[`full article with style in the style magazine 1`] = `
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-top-color: #DBDBDB;
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 @media (min-width:768px) {
@@ -2007,10 +2035,12 @@ exports[`full article with style in the style magazine 1`] = `
   padding-horizontal: 10px;
   padding-vertical: 10px;
   margin-top: 30px;
+  width: 100%;
 }
 </style>
 
 <div>
+  <div />
   <article>
     <Helmet>
       <title>
@@ -2035,14 +2065,14 @@ exports[`full article with style in the style magazine 1`] = `
       </script>
     </Helmet>
     <div
-      className="c0 responsiveweb__HeaderAdContainer-sc-1exejum-1 c0 css-view-1dbjc4n"
+      className="c0 responsiveweb-sc-1exejum-0 c0 css-view-1dbjc4n"
     >
       <AdContainer
         className="IS1"
       />
     </div>
     <main
-      className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
+      className="c1 responsiveweb__MainContainer-sc-1exejum-1 c1 css-view-1dbjc4n"
     >
       <div
         className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
@@ -2295,18 +2325,6 @@ exports[`full article with style in the sunday times magazine 1`] = `
   display: block;
 }
 
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  border-top-color: #DBDBDB;
-  border-bottom-color: #DBDBDB;
-  border-bottom-width: 1px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
 .c2 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2398,7 +2416,11 @@ exports[`full article with style in the sunday times magazine 1`] = `
 }
 
 .c9 {
-  width: 100%;
+  max-width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c8 {
@@ -2406,6 +2428,10 @@ exports[`full article with style in the sunday times magazine 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .c10 {
@@ -2416,6 +2442,18 @@ exports[`full article with style in the sunday times magazine 1`] = `
   -webkit-order: 2;
   -ms-flex-order: 2;
   order: 2;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-top-color: #DBDBDB;
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 @media (min-width:768px) {
@@ -2752,10 +2790,12 @@ exports[`full article with style in the sunday times magazine 1`] = `
   padding-horizontal: 10px;
   padding-vertical: 10px;
   margin-top: 30px;
+  width: 100%;
 }
 </style>
 
 <div>
+  <div />
   <article>
     <Helmet>
       <title>
@@ -2780,14 +2820,14 @@ exports[`full article with style in the sunday times magazine 1`] = `
       </script>
     </Helmet>
     <div
-      className="c0 responsiveweb__HeaderAdContainer-sc-1exejum-1 c0 css-view-1dbjc4n"
+      className="c0 responsiveweb-sc-1exejum-0 c0 css-view-1dbjc4n"
     >
       <AdContainer
         className="IS1"
       />
     </div>
     <main
-      className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
+      className="c1 responsiveweb__MainContainer-sc-1exejum-1 c1 css-view-1dbjc4n"
     >
       <div
         className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"

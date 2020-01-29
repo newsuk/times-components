@@ -88,16 +88,59 @@ exports[`full article with style 1`] = `
   display: block;
 }
 
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  border-top-color: #DBDBDB;
-  border-bottom-color: #DBDBDB;
-  border-bottom-width: 1px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+.c18 {
+  color: #333333;
+  font-family: "TimesModern-Bold";
+  font-weight: 400;
+  margin: 0 auto 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 25px;
+  line-height: 25px;
+}
+
+.c19 {
+  color: #333333;
+  font-family: "TimesModern-Bold";
+  font-weight: 400;
+  margin: 0 auto 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+.c20 {
+  color: #333333;
+  font-family: "TimesModern-Bold";
+  font-weight: 400;
+  margin: 0 auto 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 19px;
+  line-height: 19px;
+}
+
+.c21 {
+  color: #333333;
+  font-family: "TimesModern-Bold";
+  font-weight: 400;
+  margin: 0 auto 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 17px;
+  line-height: 17px;
+}
+
+.c22 {
+  color: #333333;
+  font-family: "TimesModern-Bold";
+  font-weight: 400;
+  margin: 0 auto 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 17px;
+  line-height: 17px;
 }
 
 .c2 {
@@ -160,6 +203,18 @@ exports[`full article with style 1`] = `
 
 .c5.contains-tc-sticky {
   border-bottom-color: transparent;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-top-color: #DBDBDB;
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 @media (min-width:768px) {
@@ -269,6 +324,111 @@ exports[`full article with style 1`] = `
   }
 }
 
+@media (min-width:768px) {
+  .c18 {
+    padding-left: 0;
+    padding-right: 0;
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c18 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c18 {
+    font-size: 28px;
+    line-height: 28px;
+  }
+}
+
+@media (min-width:768px) {
+  .c19 {
+    padding-left: 0;
+    padding-right: 0;
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c19 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c19 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width:768px) {
+  .c20 {
+    padding-left: 0;
+    padding-right: 0;
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c20 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c20 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width:768px) {
+  .c21 {
+    padding-left: 0;
+    padding-right: 0;
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c21 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c21 {
+    font-size: 19px;
+    line-height: 19px;
+  }
+}
+
+@media (min-width:768px) {
+  .c22 {
+    padding-left: 0;
+    padding-right: 0;
+    width: 80.8%;
+  }
+}
+
+@media (min-width:1024px) {
+  .c22 {
+    width: 56.2%;
+  }
+}
+
+@media (min-width:768px) {
+  .c22 {
+    font-size: 19px;
+    line-height: 19px;
+  }
+}
+
 @media (min-width:1024px) {
   .c1 {
     padding-top: 20px;
@@ -340,17 +500,18 @@ exports[`full article with style 1`] = `
 </style>
 
 <div>
+  <div />
   <article>
     <Head />
     <div
-      className="c0 responsiveweb__HeaderAdContainer-sc-1exejum-1 c0 css-view-1dbjc4n"
+      className="c0 responsiveweb-sc-1exejum-0 c0 css-view-1dbjc4n"
     >
       <AdContainer
         className="IS1"
       />
     </div>
     <main
-      className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
+      className="c1 responsiveweb__MainContainer-sc-1exejum-1 c1 css-view-1dbjc4n"
     >
       <div
         className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
@@ -474,6 +635,31 @@ exports[`full article with style 1`] = `
           </div>
           <KeyFacts />
         </span>
+        <h2
+          className="c18"
+        >
+          This is heading 2
+        </h2>
+        <h3
+          className="c19"
+        >
+          This is heading 3
+        </h3>
+        <h4
+          className="c20"
+        >
+          This is heading 4
+        </h4>
+        <h5
+          className="c21"
+        >
+          This is heading 5
+        </h5>
+        <h6
+          className="c22"
+        >
+          This is heading 6
+        </h6>
         <ArticleExtras />
       </article>
     </main>
