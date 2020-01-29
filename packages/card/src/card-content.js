@@ -8,7 +8,13 @@ import styles from "./styles";
 
 class CardContent extends Component {
   shouldComponentUpdate(nextProps) {
-    const { imageUri, lowResSize, highResSize, isLoading } = this.props;
+    const {
+      imageUri,
+      lowResSize,
+      lowResQuality,
+      highResSize,
+      isLoading
+    } = this.props;
     return (
       imageUri !== nextProps.imageUri ||
       lowResSize !== nextProps.lowResSize ||
