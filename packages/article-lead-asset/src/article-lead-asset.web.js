@@ -47,8 +47,8 @@ const ArticleLeadAsset = ({
       accessibilityLabel={caption.text}
       aspectRatio={getRatio(aspectRatio)}
       highResSize={width}
-      lowResSize={100}
       uri={displayImage.url}
+      isLeadAsset
     />
   );
 

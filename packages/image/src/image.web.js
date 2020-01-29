@@ -57,10 +57,16 @@ class TimesImage extends Component {
     });
   }
 
-  highResImage({ highResSize, lowResSize, url }) {
+  highResImage(url) {
     const { highResIsLoaded } = this.state;
-    const { accessibilityLabel } = this.props;
-    if (!lowResSize || highResSize) {
+    const {
+      lowResSize,
+      highResSize,
+      accessibilityLabel,
+      isLeadAsset
+    } = this.props;
+
+    if (!lowResSize || highResSize || isLeadAsset) {
       return (
         <StyledImage
           alt={accessibilityLabel}
@@ -77,9 +83,10 @@ class TimesImage extends Component {
     return null;
   }
 
-  lowResImage({ lowResSize, url }) {
+  lowResImage(url) {
     const { highResIsVisible, lowResIsLoaded } = this.state;
-    const { accessibilityLabel } = this.props;
+    const { lowResSize, accessibilityLabel } = this.props;
+
     if (lowResSize && !highResIsVisible) {
       return (
         <StyledImage
@@ -100,12 +107,11 @@ class TimesImage extends Component {
     const {
       aspectRatio,
       disablePlaceholder,
-      highResSize,
-      lowResSize,
       style,
       uri,
       onLayout,
-      rounded
+      rounded,
+      isLeadAsset
     } = this.props;
     const { imageIsLoaded } = this.state;
     const url = addMissingProtocol(uri);
@@ -118,8 +124,8 @@ class TimesImage extends Component {
         <div
           style={{ ...styles.wrapper, paddingBottom: `${100 / aspectRatio}%` }}
         >
-          {this.highResImage({ highResSize, lowResSize, url })}
-          {this.lowResImage({ lowResSize, url })}
+          {this.highResImage(url)}
+          {!isLeadAsset && this.lowResImage(url)}
           {disablePlaceholder || imageIsLoaded ? null : (
             <Placeholder borderRadius={rounded ? "50%" : 0} />
           )}

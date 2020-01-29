@@ -5,8 +5,6 @@ exports[`1. default layout 1`] = `
   display: block;
   opacity: 0;
   position: absolute;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
   width: 100%;
   z-index: 2;
 }
@@ -45,8 +43,6 @@ exports[`2. default layout without uri 1`] = `
   display: block;
   opacity: 0;
   position: absolute;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
   width: 100%;
   z-index: 2;
 }
@@ -85,8 +81,6 @@ exports[`3. default layout without aspect ratio 1`] = `
   display: block;
   opacity: 0;
   position: absolute;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
   width: 100%;
   z-index: 2;
 }
@@ -125,8 +119,6 @@ exports[`4. rounded image 1`] = `
   display: block;
   opacity: 0;
   position: absolute;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
   width: 100%;
   z-index: 2;
 }
@@ -165,8 +157,6 @@ exports[`5. with existing url params 1`] = `
   display: block;
   opacity: 0;
   position: absolute;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
   width: 100%;
   z-index: 2;
 }
@@ -205,8 +195,6 @@ exports[`6. with disabled placeholder 1`] = `
   display: block;
   opacity: 0;
   position: absolute;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
   width: 100%;
   z-index: 2;
 }
@@ -225,8 +213,6 @@ exports[`7. remove the low res image after the high res image has transitioned i
   display: block;
   opacity: 1;
   position: absolute;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
   width: 100%;
   z-index: 1;
 }
@@ -235,8 +221,6 @@ exports[`7. remove the low res image after the high res image has transitioned i
   display: block;
   opacity: 1;
   position: absolute;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
   width: 100%;
   z-index: 2;
 }
@@ -258,8 +242,6 @@ exports[`7. remove the low res image after the high res image has transitioned i
   display: block;
   opacity: 1;
   position: absolute;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
   width: 100%;
   z-index: 2;
 }
@@ -278,8 +260,6 @@ exports[`8. only a low res image 1`] = `
   display: block;
   opacity: 1;
   position: absolute;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
   width: 100%;
   z-index: 1;
 }
@@ -318,8 +298,6 @@ exports[`9. fade in the low res image 1`] = `
   display: block;
   opacity: 0;
   position: absolute;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
   width: 100%;
   z-index: 1;
 }
@@ -358,8 +336,6 @@ exports[`9. fade in the low res image 2`] = `
   display: block;
   opacity: 1;
   position: absolute;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
   width: 100%;
   z-index: 1;
 }
@@ -378,8 +354,6 @@ exports[`10. both high and low res sizes 1`] = `
   display: block;
   opacity: 0;
   position: absolute;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
   width: 100%;
   z-index: 2;
 }
@@ -388,8 +362,6 @@ exports[`10. both high and low res sizes 1`] = `
   display: block;
   opacity: 1;
   position: absolute;
-  -webkit-transition: opacity 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out;
   width: 100%;
   z-index: 1;
 }

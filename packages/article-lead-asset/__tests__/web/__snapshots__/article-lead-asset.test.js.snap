@@ -34,7 +34,7 @@ exports[`1. renders correctly with an image lead asset 1`] = `
           accessibilityLabel="Chris Reynolds Gordon at one of his party venues in London"
           aspectRatio={1.7777777777777777}
           highResSize={600}
-          lowResSize={100}
+          isLeadAsset={true}
           uri="https://crop169.io/"
         />
       </div>
@@ -157,7 +157,7 @@ exports[`5. it renders correctly with a classname 1`] = `
           accessibilityLabel="Chris Reynolds Gordon at one of his party venues in London"
           aspectRatio={1.7777777777777777}
           highResSize={600}
-          lowResSize={100}
+          isLeadAsset={true}
           uri="https://crop169.io/"
         />
       </div>
