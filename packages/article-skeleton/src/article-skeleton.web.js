@@ -30,7 +30,6 @@ const adStyle = {
   marginBottom: 0
 };
 
-
 const PaywallPortal = ({id,component}) => {
   if (typeof window === "undefined"){
 

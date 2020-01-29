@@ -272,6 +272,9 @@ exports[`Article with user state Render full article when user has access to ful
             }
           />
         </span>
+        <div
+          id="paywall-portal-article-footer"
+        />
         <ArticleExtras
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
@@ -620,6 +623,9 @@ exports[`Article with user state Render teaser article when user does not have a
             }
           />
         </span>
+        <div
+          id="paywall-portal-article-footer"
+        />
         <ArticleExtras
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
