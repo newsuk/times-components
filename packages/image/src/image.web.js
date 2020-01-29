@@ -76,17 +76,22 @@ class TimesImage extends Component {
     return null;
   }
 
-  lowResImage({ lowResSize, url }) {
+  lowResImage({ lowResSize, url, lowResQuality }) {
     const { highResIsVisible, lowResIsLoaded } = this.state;
     const { accessibilityLabel } = this.props;
     if (lowResSize && !highResIsVisible) {
+      let imageSource = appendToImageURL(url, "resize", lowResSize);
+      if (lowResQuality) {
+        imageSource = appendToImageURL(imageSource, "quality", lowResQuality);
+      }
+
       return (
         <StyledImage
           alt={accessibilityLabel}
           ref={this.getLowResImage}
           isLoaded={lowResIsLoaded}
           onLoad={this.handleLowResOnLoad}
-          src={appendToImageURL(url, "resize", lowResSize)}
+          src={imageSource}
           zIndex={1}
         />
       );
@@ -101,6 +106,7 @@ class TimesImage extends Component {
       disablePlaceholder,
       highResSize,
       lowResSize,
+      lowResQuality,
       style,
       uri,
       onLayout,
@@ -118,7 +124,7 @@ class TimesImage extends Component {
           style={{ ...styles.wrapper, paddingBottom: `${100 / aspectRatio}%` }}
         >
           {this.highResImage({ highResSize, lowResSize, url })}
-          {this.lowResImage({ lowResSize, url })}
+          {this.lowResImage({ lowResSize, lowResQuality, url })}
           {disablePlaceholder || imageIsLoaded ? null : (
             <Placeholder borderRadius={rounded ? "50%" : 0} />
           )}

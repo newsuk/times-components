@@ -32,7 +32,8 @@ exports[`1. one opinion related article 1`] = `
                   imageRatio={0.6135458167330677}
                   imageUri="https://crop23.io"
                   isReversed={true}
-                  lowResSize={100}
+                  lowResQuality={3}
+                  lowResSize={200}
                   relatedArticle={true}
                   showImage={true}
                 >

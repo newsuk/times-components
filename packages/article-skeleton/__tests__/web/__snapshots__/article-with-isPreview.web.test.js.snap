@@ -81,7 +81,8 @@ exports[`Article with isPreview Render article with ArticleMetaBanner when isPre
                 Object {
                   "display": "primary",
                   "highResSize": null,
-                  "lowResSize": 100,
+                  "lowResQuality": 3,
+                  "lowResSize": 400,
                   "ratio": "1500:1000",
                   "uri": "https://image.io",
                 }
@@ -104,7 +105,8 @@ exports[`Article with isPreview Render article with ArticleMetaBanner when isPre
                 Object {
                   "display": "secondary",
                   "highResSize": null,
-                  "lowResSize": 100,
+                  "lowResQuality": 3,
+                  "lowResSize": 400,
                   "ratio": "1500:1000",
                   "uri": "https://image.io/secondary",
                 }
@@ -127,7 +129,8 @@ exports[`Article with isPreview Render article with ArticleMetaBanner when isPre
                 Object {
                   "display": "inline",
                   "highResSize": null,
-                  "lowResSize": 100,
+                  "lowResQuality": 3,
+                  "lowResSize": 400,
                   "ratio": "1500:1000",
                   "uri": "https://image.io/inline",
                 }
@@ -433,7 +436,8 @@ exports[`Article with isPreview Render article without ArticleMetaBanner when is
                 Object {
                   "display": "primary",
                   "highResSize": null,
-                  "lowResSize": 100,
+                  "lowResQuality": 3,
+                  "lowResSize": 400,
                   "ratio": "1500:1000",
                   "uri": "https://image.io",
                 }
@@ -456,7 +460,8 @@ exports[`Article with isPreview Render article without ArticleMetaBanner when is
                 Object {
                   "display": "secondary",
                   "highResSize": null,
-                  "lowResSize": 100,
+                  "lowResQuality": 3,
+                  "lowResSize": 400,
                   "ratio": "1500:1000",
                   "uri": "https://image.io/secondary",
                 }
@@ -479,7 +484,8 @@ exports[`Article with isPreview Render article without ArticleMetaBanner when is
                 Object {
                   "display": "inline",
                   "highResSize": null,
-                  "lowResSize": 100,
+                  "lowResQuality": 3,
+                  "lowResSize": 400,
                   "ratio": "1500:1000",
                   "uri": "https://image.io/inline",
                 }

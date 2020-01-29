@@ -9,6 +9,7 @@ export const propTypes = {
     display: PropTypes.oneOf(["primary", "secondary", "inline", "fullwidth"]),
     highResSize: PropTypes.number,
     lowResSize: PropTypes.number,
+    lowResQuality: PropTypes.number,
     ratio: PropTypes.string,
     uri: PropTypes.string.isRequired
   }).isRequired,
