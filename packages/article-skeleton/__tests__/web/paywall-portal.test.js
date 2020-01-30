@@ -3,7 +3,7 @@ import TestRenderer from "react-test-renderer";
 import PaywallPortal from "../../src/paywall-portal";
 
 describe("Paywall Portal", () => {
-  describe.skip("Should return an empty div with an id of the id that is passed as prop", () => {
+  describe("Should return an empty div with an id of the id that is passed as prop", () => {
     const props = {
       id: "id",
       componentName: "componentName"
