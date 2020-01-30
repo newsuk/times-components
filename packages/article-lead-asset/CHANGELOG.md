@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.5.0](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.4.16...@times-components/article-lead-asset@1.5.0) (2020-01-30)
+
+
+### Features
+
+* lead asset image optimization ([#2506](https://github.com/newsuk/times-components/issues/2506)) ([addbf25](https://github.com/newsuk/times-components/commit/addbf25ccb2315dfd912c0f517eb809b5eeda737))
+
+
+
+
+
 ## [1.4.16](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.4.15...@times-components/article-lead-asset@1.4.16) (2020-01-24)
 
 **Note:** Version bump only for package @times-components/article-lead-asset

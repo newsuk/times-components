@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.1.0](https://github.com/newsuk/times-components/compare/@times-components/utils@6.0.4...@times-components/utils@6.1.0) (2020-01-30)
+
+
+### Features
+
+* lead asset image optimization ([#2506](https://github.com/newsuk/times-components/issues/2506)) ([addbf25](https://github.com/newsuk/times-components/commit/addbf25ccb2315dfd912c0f517eb809b5eeda737))
+
+
+
+
+
 ## [6.0.4](https://github.com/newsuk/times-components/compare/@times-components/utils@6.0.3...@times-components/utils@6.0.4) (2020-01-23)
 
 **Note:** Version bump only for package @times-components/utils
