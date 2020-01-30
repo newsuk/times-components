@@ -8,6 +8,7 @@ exports[`Article with user state Render full article when user has access to ful
   <article
     data-article-identifier="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
     data-article-sectionname="Some Section"
+    data-article-template="mainstandard"
     id="article-main"
   >
     <Head />
@@ -356,6 +357,7 @@ exports[`Article with user state Render teaser article when user does not have a
   <article
     data-article-identifier="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
     data-article-sectionname="Some Section"
+    data-article-template="mainstandard"
     id="article-main"
   >
     <Head />
