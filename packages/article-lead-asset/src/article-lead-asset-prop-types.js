@@ -16,6 +16,13 @@ const videoLeadAssetPropTypes = {
   skySports: PropTypes.bool
 };
 
+export const imageLeadAssetPropTypes = {
+  aspectRatio: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+  uri: PropTypes.string.isRequired,
+  size: PropTypes.number.isRequired
+};
+
 export const videoPropTypes = {
   aspectRatio: PropTypes.number.isRequired,
   leadAsset: PropTypes.shape(videoLeadAssetPropTypes),

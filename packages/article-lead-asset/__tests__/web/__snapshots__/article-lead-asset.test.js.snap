@@ -3,17 +3,34 @@
 exports[`1. renders correctly with an image lead asset 1`] = `
 <style>
 .IS1 {
+  opacity: 1;
+  z-index: 2;
+  width: 100%;
+  position: absolute;
+  display: block;
+}
+
+.IS2 {
+  display: table;
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+
+.IS3 {
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
-.IS2 {
+.IS4 {
   padding-bottom: 56.25%;
   position: relative;
 }
 
-.IS3 {
+.IS5 {
   margin: 0;
 }
 </style>
@@ -22,21 +39,23 @@ exports[`1. renders correctly with an image lead asset 1`] = `
   className="css-view-1dbjc4n"
 >
   <figure
-    className="IS3"
+    className="IS5"
   >
     <div
-      className="css-view-1dbjc4n IS2"
+      className="css-view-1dbjc4n IS4"
     >
       <div
-        className="css-view-1dbjc4n IS1"
+        className="css-view-1dbjc4n IS3"
       >
-        <Image
-          accessibilityLabel="Chris Reynolds Gordon at one of his party venues in London"
-          aspectRatio={1.7777777777777777}
-          highResSize={600}
-          lowResSize={100}
-          uri="https://crop169.io/"
-        />
+        <div
+          className="IS2"
+        >
+          <img
+            alt="Chris Reynolds Gordon at one of his party venues in London"
+            className="IS1"
+            src="https://crop169.io/?resize=600"
+          />
+        </div>
       </div>
     </div>
     <figcaption>
@@ -126,17 +145,34 @@ exports[`4. correctly renders when there is no displayimage 1`] = `null`;
 exports[`5. it renders correctly with a classname 1`] = `
 <style>
 .IS1 {
+  opacity: 1;
+  z-index: 2;
+  width: 100%;
+  position: absolute;
+  display: block;
+}
+
+.IS2 {
+  display: table;
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+
+.IS3 {
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
-.IS2 {
+.IS4 {
   padding-bottom: 56.25%;
   position: relative;
 }
 
-.IS3 {
+.IS5 {
   margin: 0;
 }
 </style>
@@ -145,21 +181,23 @@ exports[`5. it renders correctly with a classname 1`] = `
   className="test-class-name test-class-name css-view-1dbjc4n"
 >
   <figure
-    className="IS3"
+    className="IS5"
   >
     <div
-      className="css-view-1dbjc4n IS2"
+      className="css-view-1dbjc4n IS4"
     >
       <div
-        className="css-view-1dbjc4n IS1"
+        className="css-view-1dbjc4n IS3"
       >
-        <Image
-          accessibilityLabel="Chris Reynolds Gordon at one of his party venues in London"
-          aspectRatio={1.7777777777777777}
-          highResSize={600}
-          lowResSize={100}
-          uri="https://crop169.io/"
-        />
+        <div
+          className="IS2"
+        >
+          <img
+            alt="Chris Reynolds Gordon at one of his party venues in London"
+            className="IS1"
+            src="https://crop169.io/?resize=600"
+          />
+        </div>
       </div>
     </div>
     <figcaption>
