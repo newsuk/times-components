@@ -171,7 +171,7 @@ class ArticleSkeleton extends Component {
                     id="paywall-portal-article-footer"
                     componentName="subscribe-cta"
                   />
-                  <LazyLoad rootMargin={spacing(10)} threshold={0.5}>
+                  <LazyLoad rootMargin={spacing(40)} threshold={0}>
                     {({ observed, registerNode }) => (
                       <ArticleExtras
                         analyticsStream={analyticsStream}
