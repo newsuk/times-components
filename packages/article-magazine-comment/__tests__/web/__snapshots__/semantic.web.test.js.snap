@@ -109,20 +109,8 @@ exports[`1. a full article 1`] = `
     <figure>
       <img
         alt="Some Caption"
-        src="https://crop169.io?resize=100"
+        src="https://crop169.io"
       />
-      <svg
-        height="auto"
-        version="1.1"
-        viewBox="145 50 108 120"
-        width="100%"
-      >
-        <g>
-          <path
-            d="6a6c07166e9c40e4f62e57af2b507822"
-          />
-        </g>
-      </svg>
       <figcaption>
         Some Caption
         SOME CREDITS
