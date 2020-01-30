@@ -13,3 +13,4 @@ export { default as gqlRgbaToHex } from "./gql-rgba-to-hex";
 export { default as gqlRgbaToStyle } from "./gql-rgba-to-style";
 export { default as HoverIcon } from "./hover-icon";
 export { default as ServerClientRender } from "./server-client-render";
+export { default as appendToImageURL } from "./append-to-image-url";
