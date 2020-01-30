@@ -5,9 +5,10 @@ import get from "lodash.get";
 const PaywallPortal = ({ id, componentName }) => {
   if (typeof window !== "undefined") {
     const componentToRender = get(window, `paywallComponent.${componentName}`);
-    
+
     if (componentToRender) {
       return (
+        // eslint-disable-next-line
         <div id={id} dangerouslySetInnerHTML={{ __html: componentToRender }} />
       );
     }

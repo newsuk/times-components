@@ -23,7 +23,7 @@ import {
   MainContainer
 } from "./styles/responsive";
 import Head from "./head";
-import PaywallPortal from "./paywall-portall";
+import PaywallPortal from "./paywall-portal";
 import StickySaveAndShareBar from "./sticky-save-and-share-bar";
 
 const adStyle = {
