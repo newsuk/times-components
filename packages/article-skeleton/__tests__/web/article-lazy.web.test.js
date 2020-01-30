@@ -101,7 +101,7 @@ iterator([
       } = testRenderer.root.findByType("ArticleImage");
 
       expect(highResSize).toEqual(null);
-      expect(lowResSize).toEqual(100);
+      expect(lowResSize).toEqual(400);
     }
   },
   {
@@ -169,7 +169,7 @@ iterator([
       ] = testRenderer.root.findAllByType("ArticleImage");
 
       expect(highResSize).toEqual(600);
-      expect(lowResSize).toEqual(100);
+      expect(lowResSize).toEqual(400);
     }
   },
   {
