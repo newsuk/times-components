@@ -228,7 +228,7 @@ exports[`11. card should not re-render when imageratio prop is changed 2`] = `
 <View>
   <View>
     <Image
-      aspectRatio={1.7777777777777777}
+      aspectRatio={0.6666666666666666}
       fadeImageIn={false}
       highResSize={360}
       lowResQuality={null}

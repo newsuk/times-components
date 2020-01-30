@@ -48,15 +48,15 @@ class CardContent extends Component {
   shouldComponentUpdate(nextProps, nextState) {
     const {
       imageUri,
-      lowResSize,
       lowResQuality,
+      lowResSize,
       highResSize,
       isLoading
     } = this.props;
     return (
       imageUri !== nextProps.imageUri ||
+      lowResQuality !== nextProps.lowResQuality ||
       lowResSize !== nextProps.lowResSize ||
-      lowResQuality !== nextProps.lowResSize ||
       highResSize !== nextProps.highResSize ||
       isLoading !== nextProps.isLoading ||
       nextState.isOldSafari
@@ -76,8 +76,8 @@ class CardContent extends Component {
       imageUri,
       isLoading,
       isReversed,
-      lowResSize,
       lowResQuality,
+      lowResSize,
       showImage,
       relatedArticle
     } = this.props;
@@ -101,8 +101,8 @@ class CardContent extends Component {
             aspectRatio={imageRatio}
             fadeImageIn={fadeImageIn}
             highResSize={highResSize}
-            lowResSize={lowResSize}
             lowResQuality={lowResQuality}
+            lowResSize={lowResSize}
             uri={imageUri}
           />
         </View>

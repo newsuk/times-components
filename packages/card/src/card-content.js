@@ -10,15 +10,15 @@ class CardContent extends Component {
   shouldComponentUpdate(nextProps) {
     const {
       imageUri,
-      lowResSize,
       lowResQuality,
+      lowResSize,
       highResSize,
       isLoading
     } = this.props;
     return (
       imageUri !== nextProps.imageUri ||
+      lowResQuality !== nextProps.lowResQuality ||
       lowResSize !== nextProps.lowResSize ||
-      lowResQuality !== nextProps.lowResSize ||
       highResSize !== nextProps.highResSize ||
       isLoading !== nextProps.isLoading
     );
@@ -37,8 +37,8 @@ class CardContent extends Component {
       imageUri,
       isLoading,
       isReversed,
-      lowResSize,
       lowResQuality,
+      lowResSize,
       showImage
     } = this.props;
 
@@ -59,8 +59,8 @@ class CardContent extends Component {
             aspectRatio={imageRatio}
             fadeImageIn={fadeImageIn}
             highResSize={highResSize}
-            lowResSize={lowResSize}
             lowResQuality={lowResQuality}
+            lowResSize={lowResSize}
             uri={imageUri}
           />
         </View>
