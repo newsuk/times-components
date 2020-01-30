@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import { View } from "react-native";
-import { addMissingProtocol } from "@times-components/utils";
+import { addMissingProtocol, appendToImageURL } from "@times-components/utils";
 import Placeholder from "./placeholder";
 import { defaultProps, propTypes } from "./image-prop-types";
-import appendToURL from "./utils";
 import styles from "./styles/index.web";
 import StyledImage from "./styles/responsive";
 
@@ -68,7 +67,7 @@ class TimesImage extends Component {
           isLoaded={highResIsLoaded}
           onLoad={this.handleHighResOnLoad}
           onTransitionEnd={this.onHighResTransitionEnd}
-          src={appendToURL(url, "resize", highResSize)}
+          src={appendToImageURL(url, "resize", highResSize)}
           zIndex={2}
         />
       );
@@ -87,7 +86,7 @@ class TimesImage extends Component {
           ref={this.getLowResImage}
           isLoaded={lowResIsLoaded}
           onLoad={this.handleLowResOnLoad}
-          src={appendToURL(url, "resize", lowResSize)}
+          src={appendToImageURL(url, "resize", lowResSize)}
           zIndex={1}
         />
       );

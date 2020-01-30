@@ -138,13 +138,12 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
           <figure>
             <div>
               <div>
-                <Image
-                  accessibilityLabel="Some Caption"
-                  aspectRatio={1.7777777777777777}
-                  highResSize={null}
-                  lowResSize={100}
-                  uri="https://crop169.io"
-                />
+                <div>
+                  <img
+                    alt="Some Caption"
+                    src="https://crop169.io"
+                  />
+                </div>
               </div>
             </div>
             <figcaption>
@@ -393,13 +392,12 @@ exports[`4. an article with ads 1`] = `
           <figure>
             <div>
               <div>
-                <Image
-                  accessibilityLabel="Some Caption"
-                  aspectRatio={1.7777777777777777}
-                  highResSize={null}
-                  lowResSize={100}
-                  uri="https://crop169.io"
-                />
+                <div>
+                  <img
+                    alt="Some Caption"
+                    src="https://crop169.io"
+                  />
+                </div>
               </div>
             </div>
             <figcaption>
@@ -669,13 +667,12 @@ exports[`7. an article with no author 1`] = `
           <figure>
             <div>
               <div>
-                <Image
-                  accessibilityLabel="Some Caption"
-                  aspectRatio={1.7777777777777777}
-                  highResSize={null}
-                  lowResSize={100}
-                  uri="https://crop169.io"
-                />
+                <div>
+                  <img
+                    alt="Some Caption"
+                    src="https://crop169.io"
+                  />
+                </div>
               </div>
             </div>
             <figcaption>
