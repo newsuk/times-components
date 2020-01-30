@@ -17,13 +17,13 @@ exports[`Paywall Portal Should return an empty div with an id of the id that is 
 />
 `;
 
-exports[`Paywall Portal Should return an empty div with an id of the id that is passed as prop when paywallComponent is undefiend 1`] = `
+exports[`Paywall Portal Should return an empty div with an id of the id that is passed as prop when paywallComponent is undefined 1`] = `
 <div
   id="id"
 />
 `;
 
-exports[`Paywall Portal Should return an empty div with an id of the id that is passed as prop when window is undefiend 1`] = `
+exports[`Paywall Portal Should return an empty div with an id of the id that is passed as prop when window is undefined 1`] = `
 <div
   id="id"
 />
