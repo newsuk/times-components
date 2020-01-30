@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.18.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.17.32...@times-components/article-magazine-comment@3.18.0) (2020-01-30)
+
+
+### Features
+
+* lead asset image optimization ([#2506](https://github.com/newsuk/times-components/issues/2506)) ([addbf25](https://github.com/newsuk/times-components/commit/addbf25ccb2315dfd912c0f517eb809b5eeda737))
+
+
+
+
+
 ## [3.17.32](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.17.31...@times-components/article-magazine-comment@3.17.32) (2020-01-30)
 
 **Note:** Version bump only for package @times-components/article-magazine-comment
