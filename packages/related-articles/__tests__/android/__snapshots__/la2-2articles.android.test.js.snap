@@ -28,7 +28,8 @@ exports[`1. one lead and one support related article 1`] = `
               imageRatio={1.7777777777777777}
               imageUri="https://crop169-1.io"
               isReversed={false}
-              lowResSize={100}
+              lowResQuality={3}
+              lowResSize={200}
               relatedArticle={true}
               showImage={true}
             >
@@ -85,7 +86,8 @@ exports[`1. one lead and one support related article 1`] = `
               imageRatio={1.7777777777777777}
               imageUri="https://crop169-2.io"
               isReversed={false}
-              lowResSize={100}
+              lowResQuality={3}
+              lowResSize={200}
               relatedArticle={true}
               showImage={false}
             >
