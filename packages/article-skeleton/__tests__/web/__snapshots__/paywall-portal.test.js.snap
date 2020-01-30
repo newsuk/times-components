@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Paywall Portal Should return a div with an id of the id that is passed as prop and contain the component that is passed as componentName 1`] = `
+<div
+  dangerouslySetInnerHTML={
+    Object {
+      "__html": "<div>Hello World</div>",
+    }
+  }
+  id="id"
+/>
+`;
