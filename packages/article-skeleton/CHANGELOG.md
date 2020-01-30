@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.26.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.25.7...@times-components/article-skeleton@1.26.0) (2020-01-30)
+
+
+### Features
+
+* add template name as data attr for debugging ([#2505](https://github.com/newsuk/times-components/issues/2505)) ([60b93d0](https://github.com/newsuk/times-components/commit/60b93d0732aaacac79d03d82fc92f084e81da1ce))
+
+
+
+
+
 ## [1.25.7](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.25.6...@times-components/article-skeleton@1.25.7) (2020-01-29)
 
 **Note:** Version bump only for package @times-components/article-skeleton
