@@ -119,6 +119,7 @@ class ArticleSkeleton extends Component {
           id="article-main"
           data-article-identifier={article.id}
           data-article-sectionname={section}
+          data-article-template={template}
           ref={node => {
             this.node = node;
           }}
