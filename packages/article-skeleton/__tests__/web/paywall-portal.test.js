@@ -9,13 +9,13 @@ describe("Paywall Portal", () => {
       componentName: "componentName"
     };
 
-    it("when window is undefiend", () => {
+    it("when window is undefined", () => {
       window = undefined;
       const output = TestRenderer.create(<PaywallPortal {...props} />);
       expect(output).toMatchSnapshot();
     });
 
-    it("when paywallComponent is undefiend", () => {
+    it("when paywallComponent is undefined", () => {
       window = {};
       const output = TestRenderer.create(<PaywallPortal {...props} />);
       expect(output).toMatchSnapshot();
