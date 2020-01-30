@@ -38,7 +38,8 @@ exports[`1. one opinion related article 1`] = `
               }
               imageUri="https://crop23.io"
               isReversed={true}
-              lowResSize={100}
+              lowResQuality={3}
+              lowResSize={200}
               relatedArticle={true}
               showImage={true}
             >
