@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.7.0](https://github.com/newsuk/times-components/compare/@times-components/image@6.6.6...@times-components/image@6.7.0) (2020-01-31)
+
+
+### Features
+
+* **REPLAT-12043:** improve low res images ([#2503](https://github.com/newsuk/times-components/issues/2503)) ([37b1e43](https://github.com/newsuk/times-components/commit/37b1e43cafc34516bb223f4dc338eca22b469fad))
+
+
+
+
+
 ## [6.6.6](https://github.com/newsuk/times-components/compare/@times-components/image@6.6.5...@times-components/image@6.6.6) (2020-01-31)
 
 

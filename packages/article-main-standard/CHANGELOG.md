@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.22.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.21.6...@times-components/article-main-standard@3.22.0) (2020-01-31)
+
+
+### Features
+
+* **REPLAT-12043:** improve low res images ([#2503](https://github.com/newsuk/times-components/issues/2503)) ([37b1e43](https://github.com/newsuk/times-components/commit/37b1e43cafc34516bb223f4dc338eca22b469fad))
+
+
+
+
+
 ## [3.21.6](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.21.5...@times-components/article-main-standard@3.21.6) (2020-01-31)
 
 **Note:** Version bump only for package @times-components/article-main-standard
