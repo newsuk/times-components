@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.7.16](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.7.15...@times-components/watermark@2.7.16) (2020-01-31)
+
+
+### Bug Fixes
+
+* (REPLAT-12060) handle interactives sending wrong height values ([#2504](https://github.com/newsuk/times-components/issues/2504)) ([40a143e](https://github.com/newsuk/times-components/commit/40a143ee9575bab5f27932369aacbcf59c286ba5))
+
+
+
+
+
 ## [2.7.15](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.7.14...@times-components/watermark@2.7.15) (2020-01-24)
 
 

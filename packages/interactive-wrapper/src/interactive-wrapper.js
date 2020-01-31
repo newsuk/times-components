@@ -38,10 +38,14 @@ class InteractiveWrapper extends Component {
       (e && e.nativeEvent && e.nativeEvent.data) ||
       e.nativeEvent.data === "0"
     ) {
-      const height = parseInt(e.nativeEvent.data, 10);
+      const { height } = this.state;
+      const newHeight = parseInt(e.nativeEvent.data, 10);
       // eslint-disable-next-line no-restricted-globals
-      if (!isNaN(height)) {
-        this.setState({ height });
+      if (!isNaN(newHeight) && newHeight > height) {
+        this.setState({ height: newHeight });
+        if (this.webview) {
+          this.webview.reload();
+        }
       }
     } else {
       console.error(`Invalid height received ${e.nativeEvent.data}`); // eslint-disable-line no-console
