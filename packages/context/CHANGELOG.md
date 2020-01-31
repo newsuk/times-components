@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.28](https://github.com/newsuk/times-components/compare/@times-components/context@1.1.27...@times-components/context@1.1.28) (2020-01-31)
+
+
+### Bug Fixes
+
+* (REPLAT-12060) handle interactives sending wrong height values ([#2504](https://github.com/newsuk/times-components/issues/2504)) ([40a143e](https://github.com/newsuk/times-components/commit/40a143ee9575bab5f27932369aacbcf59c286ba5))
+
+
+
+
+
 ## [1.1.27](https://github.com/newsuk/times-components/compare/@times-components/context@1.1.26...@times-components/context@1.1.27) (2020-01-23)
 
 **Note:** Version bump only for package @times-components/context
