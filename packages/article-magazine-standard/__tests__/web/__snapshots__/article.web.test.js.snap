@@ -177,6 +177,9 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
         <p>
           Some content
         </p>
+        <div
+          id="paywall-portal-article-footer"
+        />
         <ArticleExtras
           articleHeadline=""
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
@@ -424,6 +427,9 @@ exports[`4. an article with ads 1`] = `
       >
         <AdContainer
           slotName="inline-ad"
+        />
+        <div
+          id="paywall-portal-article-footer"
         />
         <ArticleExtras
           articleHeadline="Some Headline"

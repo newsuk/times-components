@@ -298,6 +298,9 @@ exports[`Article with isPreview Render article with ArticleMetaBanner when isPre
             }
           />
         </span>
+        <div
+          id="paywall-portal-article-footer"
+        />
         <ArticleExtras
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
@@ -647,6 +650,9 @@ exports[`Article with isPreview Render article without ArticleMetaBanner when is
             }
           />
         </span>
+        <div
+          id="paywall-portal-article-footer"
+        />
         <ArticleExtras
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"

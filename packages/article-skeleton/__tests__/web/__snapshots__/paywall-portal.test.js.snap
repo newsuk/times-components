@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Paywall Portal Should return a div with an id of the id that is passed as prop and contain the component that is passed as componentName 1`] = `
+<div
+  dangerouslySetInnerHTML={
+    Object {
+      "__html": "<div>Hello World</div>",
+    }
+  }
+  id="id"
+/>
+`;
+
+exports[`Paywall Portal Should return an empty div with an id of the id that is passed as prop when id is not a property of paywallComponent 1`] = `
+<div
+  id="id"
+/>
+`;
+
+exports[`Paywall Portal Should return an empty div with an id of the id that is passed as prop when paywallComponent is undefined 1`] = `
+<div
+  id="id"
+/>
+`;
+
+exports[`Paywall Portal Should return an empty div with an id of the id that is passed as prop when window is undefined 1`] = `
+<div
+  id="id"
+/>
+`;
