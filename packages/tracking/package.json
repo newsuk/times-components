@@ -1,6 +1,6 @@
 {
   "name": "@times-components/tracking",
-  "version": "2.5.22",
+  "version": "2.5.23",
   "main": "dist/tracking",
   "dev": "src/tracking",
   "scripts": {
@@ -40,7 +40,7 @@
     "@times-components/eslint-config-thetimes": "0.8.16",
     "@times-components/jest-configurator": "2.6.10",
     "@times-components/jest-serializer": "3.2.22",
-    "@times-components/storybook": "4.1.29",
+    "@times-components/storybook": "4.1.30",
     "@times-components/tealium-utils": "0.7.66",
     "babel-jest": "24.8.0",
     "babel-loader": "8.0.5",
