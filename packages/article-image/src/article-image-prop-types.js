@@ -8,6 +8,7 @@ export const propTypes = {
   imageOptions: PropTypes.shape({
     display: PropTypes.oneOf(["primary", "secondary", "inline", "fullwidth"]),
     highResSize: PropTypes.number,
+    lowResQuality: PropTypes.number,
     lowResSize: PropTypes.number,
     ratio: PropTypes.string,
     uri: PropTypes.string.isRequired

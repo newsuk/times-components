@@ -56,7 +56,8 @@ exports[`Article with user state Render full article when user has access to ful
                 Object {
                   "display": "primary",
                   "highResSize": null,
-                  "lowResSize": 100,
+                  "lowResQuality": 3,
+                  "lowResSize": 400,
                   "ratio": "1500:1000",
                   "uri": "https://image.io",
                 }
@@ -79,7 +80,8 @@ exports[`Article with user state Render full article when user has access to ful
                 Object {
                   "display": "secondary",
                   "highResSize": null,
-                  "lowResSize": 100,
+                  "lowResQuality": 3,
+                  "lowResSize": 400,
                   "ratio": "1500:1000",
                   "uri": "https://image.io/secondary",
                 }
@@ -102,7 +104,8 @@ exports[`Article with user state Render full article when user has access to ful
                 Object {
                   "display": "inline",
                   "highResSize": null,
-                  "lowResSize": 100,
+                  "lowResQuality": 3,
+                  "lowResSize": 400,
                   "ratio": "1500:1000",
                   "uri": "https://image.io/inline",
                 }
@@ -408,7 +411,8 @@ exports[`Article with user state Render teaser article when user does not have a
                 Object {
                   "display": "primary",
                   "highResSize": null,
-                  "lowResSize": 100,
+                  "lowResQuality": 3,
+                  "lowResSize": 400,
                   "ratio": "1500:1000",
                   "uri": "https://image.io",
                 }
@@ -431,7 +435,8 @@ exports[`Article with user state Render teaser article when user does not have a
                 Object {
                   "display": "secondary",
                   "highResSize": null,
-                  "lowResSize": 100,
+                  "lowResQuality": 3,
+                  "lowResSize": 400,
                   "ratio": "1500:1000",
                   "uri": "https://image.io/secondary",
                 }
@@ -454,7 +459,8 @@ exports[`Article with user state Render teaser article when user does not have a
                 Object {
                   "display": "inline",
                   "highResSize": null,
-                  "lowResSize": 100,
+                  "lowResQuality": 3,
+                  "lowResSize": 400,
                   "ratio": "1500:1000",
                   "uri": "https://image.io/inline",
                 }

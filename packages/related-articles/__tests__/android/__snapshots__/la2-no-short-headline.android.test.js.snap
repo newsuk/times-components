@@ -28,7 +28,8 @@ exports[`1. no short headline 1`] = `
               imageRatio={1.7777777777777777}
               imageUri="https://crop169.io"
               isReversed={false}
-              lowResSize={100}
+              lowResQuality={3}
+              lowResSize={200}
               relatedArticle={true}
               showImage={true}
             >

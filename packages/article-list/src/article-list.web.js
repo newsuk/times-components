@@ -166,7 +166,8 @@ class ArticleList extends Component {
                               index={index}
                               isLoading={item.isLoading === true}
                               length={data.length}
-                              lowResSize={100}
+                              lowResQuality={3}
+                              lowResSize={200}
                               showImage={showImages}
                             />
                           </ListContentContainer>
