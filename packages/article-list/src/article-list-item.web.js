@@ -24,8 +24,8 @@ const ArticleListItem = props => {
     highResSize,
     imageRatio,
     isLoading,
-    lowResSize,
     lowResQuality,
+    lowResSize,
     showImage
   } = props;
 
@@ -121,8 +121,8 @@ const ArticleListItem = props => {
                 imageRatio={imageRatio}
                 imageUri={imageUri}
                 isLoading={isLoading}
-                lowResSize={lowResSize}
                 lowResQuality={lowResQuality}
+                lowResSize={lowResSize}
                 showImage={showImage}
               >
                 <Animations.FadeIn>{children}</Animations.FadeIn>

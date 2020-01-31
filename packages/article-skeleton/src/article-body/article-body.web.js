@@ -81,10 +81,10 @@ const renderers = ({ paidContentClassName }) => ({
                   highResSize: observed.get(key)
                     ? observed.get(key).clientWidth
                     : null,
+                  lowResQuality: 3,
                   lowResSize: 400,
                   ratio,
-                  uri: url,
-                  lowResQuality: 3
+                  uri: url
                 }}
               />
             </MediaWrapper>
