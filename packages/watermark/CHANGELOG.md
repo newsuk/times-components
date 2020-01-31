@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.7.20](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.7.19...@times-components/watermark@2.7.20) (2020-01-31)
+
+
+### Bug Fixes
+
+* styleguide versions ([#2512](https://github.com/newsuk/times-components/issues/2512)) ([d33b7db](https://github.com/newsuk/times-components/commit/d33b7db18ce84703f7d0cff01e30ee3ca086d1f3))
+
+
+
+
+
 ## [2.7.19](https://github.com/newsuk/times-components/compare/@times-components/watermark@2.7.18...@times-components/watermark@2.7.19) (2020-01-31)
 
 **Note:** Version bump only for package @times-components/watermark
