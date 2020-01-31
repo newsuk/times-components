@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.39](https://github.com/newsuk/times-components/compare/@times-components/pages@2.1.38...@times-components/pages@2.1.39) (2020-01-31)
+
+
+### Bug Fixes
+
+* styleguide versions ([#2512](https://github.com/newsuk/times-components/issues/2512)) ([d33b7db](https://github.com/newsuk/times-components/commit/d33b7db18ce84703f7d0cff01e30ee3ca086d1f3))
+
+
+
+
+
+## [2.1.38](https://github.com/newsuk/times-components/compare/@times-components/pages@2.1.37...@times-components/pages@2.1.38) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+## [2.1.37](https://github.com/newsuk/times-components/compare/@times-components/pages@2.1.36...@times-components/pages@2.1.37) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
+## [2.1.36](https://github.com/newsuk/times-components/compare/@times-components/pages@2.1.35...@times-components/pages@2.1.36) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/pages
+
+
+
+
+
 ## [2.1.35](https://github.com/newsuk/times-components/compare/@times-components/pages@2.1.34...@times-components/pages@2.1.35) (2020-01-31)
 
 **Note:** Version bump only for package @times-components/pages
