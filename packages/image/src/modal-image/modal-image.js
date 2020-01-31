@@ -63,10 +63,10 @@ class ModalImage extends Component {
     }
     const { showModal, lowResImageWidth, elementsVisible } = this.state;
     const lowResSize = highResSize || lowResImageWidth;
-    const urls = [{ url: uri }].concat(
+    const urls = [{ url: `${uri}&offline=true` }].concat(
       images
         .map(i => ({
-          url: i.attributes.url
+          url: `${i.attributes.url}&offline=true`
         }))
         .filter(({ url }) => url !== uri)
     );
@@ -82,7 +82,7 @@ class ModalImage extends Component {
         >
           <View style={styles.modal}>
             <ResponsiveContext.Consumer>
-              {({ isTablet, screenWidth }) => (
+              {({ isTablet }) => (
                 <Fragment>
                   <View
                     style={[
@@ -104,16 +104,6 @@ class ModalImage extends Component {
                     captureEvent
                     onSwipeDown={this.hideModal}
                     enablePreload
-                    renderImage={({ source }) => [
-                      <Image
-                        {...this.props}
-                        uri={source.uri}
-                        highResSize={screenWidth}
-                        lowResSize={lowResSize}
-                        resizeMode="contain"
-                        style={styles.modalImageContainer}
-                      />
-                    ]}
                   />
                   {elementsVisible ? (
                     <ModalCaptionContainer
