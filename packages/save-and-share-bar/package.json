@@ -41,7 +41,7 @@
     "@times-components/message-bar": "0.3.28",
     "@times-components/provider-queries": "2.12.0",
     "@times-components/save-star-web": "0.6.10",
-    "@times-components/styleguide": "3.34.5",
+    "@times-components/styleguide": "3.35.0",
     "@times-components/tracking": "2.5.25",
     "@times-components/user-state": "0.1.28",
     "@times-components/utils": "6.1.2",

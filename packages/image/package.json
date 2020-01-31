@@ -68,7 +68,7 @@
     "@times-components/link": "3.6.9",
     "@times-components/responsive": "0.5.29",
     "@times-components/responsive-image": "0.4.11",
-    "@times-components/styleguide": "3.34.5",
+    "@times-components/styleguide": "3.35.0",
     "@times-components/svgs": "2.7.28",
     "@times-components/utils": "6.1.2",
     "hoist-non-react-statics": "2.5.5",

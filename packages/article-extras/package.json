@@ -66,7 +66,7 @@
     "@times-components/related-articles": "6.3.23",
     "@times-components/responsive": "0.5.29",
     "@times-components/save-and-share-bar": "0.9.12",
-    "@times-components/styleguide": "3.34.5",
+    "@times-components/styleguide": "3.35.0",
     "@times-components/user-state": "0.1.28",
     "newskit": "0.0.0-70b3f4d2c",
     "prop-types": "15.7.2",
