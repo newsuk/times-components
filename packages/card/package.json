@@ -70,7 +70,7 @@
     "@times-components/gradient": "3.2.25",
     "@times-components/image": "6.6.4",
     "@times-components/responsive": "0.5.29",
-    "@times-components/styleguide": "3.34.5",
+    "@times-components/styleguide": "3.35.0",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"
   },
