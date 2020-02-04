@@ -17,13 +17,12 @@ module.exports = article => {
     return acc;
   }, []);
 
-  const titles = sections.map(section => section.title);
-
-  if (titles.length === 0) {
-    return null;
-  }
+  let titles = sections.map(section => section.title);
+  titles = titles.filter(title => title);
 
   const nonNewsSection = titles.filter(title => title !== "news");
 
-  return nonNewsSection.length ? nonNewsSection[0].toLowerCase() : "news";
+  return nonNewsSection.length
+    ? nonNewsSection[0].toLowerCase()
+    : "unknown section";
 };

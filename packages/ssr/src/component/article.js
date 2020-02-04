@@ -3,6 +3,7 @@
 const React = require("react");
 const { ApolloProvider } = require("react-apollo");
 const { HelmetProvider } = require("react-helmet-async");
+const { getSectionNameForAnalytics } = require("@times-components/utils/rnw");
 const { ArticleProvider } = require("@times-components/provider/rnw");
 const { DraftArticleProvider } = require("@times-components/provider/rnw");
 const Article = require("@times-components/article/rnw").default;
@@ -12,7 +13,6 @@ const {
 } = require("@times-components/context/rnw");
 const { scales, themeFactory } = require("@times-components/styleguide/rnw");
 const getSectionNameFromTiles = require("../lib/section-from-tiles");
-const getSectionNameForAnalytics = require("../lib/get-analytics-section");
 
 const scale = scales.large;
 
