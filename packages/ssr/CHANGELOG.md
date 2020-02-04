@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.13.43](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.13.42...@times-components/ssr@2.13.43) (2020-02-04)
+
+
+### Bug Fixes
+
+* section name for analytics ([#2514](https://github.com/newsuk/times-components/issues/2514)) ([a78279a](https://github.com/newsuk/times-components/commit/a78279ab871e1f05be89046931e45b993fa1cb22))
+
+
+
+
+
 ## [2.13.42](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.13.41...@times-components/ssr@2.13.42) (2020-02-04)
 
 **Note:** Version bump only for package @times-components/ssr
