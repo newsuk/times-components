@@ -1,7 +1,5 @@
-module.exports = article => {
+module.exports = ({ tiles }) => {
   // Get the section for an article, preferring it not to be news
-
-  const { tiles } = article;
 
   if (!tiles) {
     return null;
