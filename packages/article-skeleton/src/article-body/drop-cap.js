@@ -3,9 +3,13 @@ import { fonts, tabletWidth } from "@times-components/styleguide";
 import { FontStorage, BoxExclusion } from "@times-components/typeset";
 import { screenWidth } from "@times-components/utils";
 import { Text } from "react-native";
+import { getStringBounds } from "../body-utils";
 
 export default (scale, color, dropCapFont, paragraph) => {
-  const letter = paragraph.slice(0, 1);
+  let letter = paragraph.slice(0, 1);
+  if (['"', "“", "‘", "'"].includes(letter.string)) {
+    letter = paragraph.slice(0, 2);
+  }
   if (!letter.attributes.length) {
     return false;
   }
@@ -19,13 +23,8 @@ export default (scale, color, dropCapFont, paragraph) => {
     color
   };
   const font = FontStorage.getFont(fontSettings);
-  const glyph = font.charToGlyph(letter.string);
-  const { x1, x2, y1, y2 } = glyph.getBoundingBox();
-  const width =
-    (x2 * fontSize) / font.unitsPerEm - (x1 * fontSize) / font.unitsPerEm;
+  const { width, height } = getStringBounds(fontSettings, letter.string);
   const advance = font.getAdvanceWidth(letter.string, baseStyle.fontSize);
-  const height =
-    (y2 * fontSize) / font.unitsPerEm - (y1 * fontSize) / font.unitsPerEm;
   const gutters = (screenWidth() - Math.min(screenWidth(), tabletWidth)) / 2;
   const exclusion = new BoxExclusion(0, 0, width + advance, height);
   const element = (
@@ -48,6 +47,7 @@ export default (scale, color, dropCapFont, paragraph) => {
   );
   return {
     exclusion,
-    element
+    element,
+    length: letter.length
   };
 };
