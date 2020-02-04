@@ -23,7 +23,7 @@ module.exports = article => {
     return null;
   }
 
-  const nonNews = titles.filter(title => title !== "news");
+  const nonNewsSection = titles.filter(title => title !== "news");
 
-  return nonNews.length ? nonNews[0].toLowerCase() : "news";
+  return nonNewsSection.length ? nonNewsSection[0].toLowerCase() : "news";
 };
