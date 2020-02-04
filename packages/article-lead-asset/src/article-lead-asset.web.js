@@ -12,8 +12,7 @@ const ArticleLeadAsset = ({
   displayImage,
   isVideo,
   leadAsset,
-  style,
-  width
+  style
 }) => {
   if (!leadAsset || !displayImage) {
     return null;
@@ -45,7 +44,6 @@ const ArticleLeadAsset = ({
       aspectRatio={aspectRatio}
       alt={caption.text}
       uri={displayImage.url}
-      size={width}
     />
   );
 
