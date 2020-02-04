@@ -110,7 +110,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 141,
+                      "left": 146,
                       "position": "absolute",
                       "top": 0,
                     },
@@ -133,7 +133,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 197.0390625,
+                      "left": 202.0390625,
                       "position": "absolute",
                       "top": 0,
                     },
@@ -156,7 +156,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 294.017578125,
+                      "left": 299.017578125,
                       "position": "absolute",
                       "top": 0,
                     },
@@ -179,7 +179,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 390.75,
+                      "left": 395.75,
                       "position": "absolute",
                       "top": 0,
                     },
@@ -202,7 +202,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 514.095703125,
+                      "left": 519.095703125,
                       "position": "absolute",
                       "top": 0,
                     },
@@ -225,7 +225,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 633.486328125,
+                      "left": 638.486328125,
                       "position": "absolute",
                       "top": 0,
                     },
@@ -248,7 +248,7 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                 style={
                   Array [
                     Object {
-                      "left": 141,
+                      "left": 146,
                       "position": "absolute",
                       "top": 52,
                     },
@@ -727,7 +727,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                 style={
                   Array [
                     Object {
-                      "left": 149,
+                      "left": 161,
                       "position": "absolute",
                       "top": 0,
                     },
@@ -750,7 +750,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                 style={
                   Array [
                     Object {
-                      "left": 250.42578125,
+                      "left": 262.42578125,
                       "position": "absolute",
                       "top": 0,
                     },
@@ -773,7 +773,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                 style={
                   Array [
                     Object {
-                      "left": 345.541015625,
+                      "left": 357.541015625,
                       "position": "absolute",
                       "top": 0,
                     },
@@ -796,7 +796,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                 style={
                   Array [
                     Object {
-                      "left": 414.763671875,
+                      "left": 426.763671875,
                       "position": "absolute",
                       "top": 0,
                     },
@@ -819,7 +819,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                 style={
                   Array [
                     Object {
-                      "left": 433.466796875,
+                      "left": 445.466796875,
                       "position": "absolute",
                       "top": 0,
                     },
@@ -842,7 +842,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                 style={
                   Array [
                     Object {
-                      "left": 532.888671875,
+                      "left": 544.888671875,
                       "position": "absolute",
                       "top": 0,
                     },
@@ -865,9 +865,9 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                 style={
                   Array [
                     Object {
-                      "left": 592.4609375,
+                      "left": 161,
                       "position": "absolute",
-                      "top": 0,
+                      "top": 52,
                     },
                     Object {
                       "color": "#000000",
@@ -888,7 +888,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                 style={
                   Array [
                     Object {
-                      "left": 149,
+                      "left": 304.560546875,
                       "position": "absolute",
                       "top": 52,
                     },
@@ -911,7 +911,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                 style={
                   Array [
                     Object {
-                      "left": 189.8515625,
+                      "left": 345.412109375,
                       "position": "absolute",
                       "top": 52,
                     },
@@ -934,7 +934,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                 style={
                   Array [
                     Object {
-                      "left": 267.072265625,
+                      "left": 422.6328125,
                       "position": "absolute",
                       "top": 52,
                     },
@@ -957,7 +957,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                 style={
                   Array [
                     Object {
-                      "left": 314.12890625,
+                      "left": 469.689453125,
                       "position": "absolute",
                       "top": 52,
                     },
@@ -980,7 +980,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                 style={
                   Array [
                     Object {
-                      "left": 342.623046875,
+                      "left": 498.18359375,
                       "position": "absolute",
                       "top": 52,
                     },
@@ -1003,7 +1003,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                 style={
                   Array [
                     Object {
-                      "left": 444.189453125,
+                      "left": 599.75,
                       "position": "absolute",
                       "top": 52,
                     },
@@ -1026,9 +1026,9 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                 style={
                   Array [
                     Object {
-                      "left": 472.68359375,
+                      "left": 161,
                       "position": "absolute",
-                      "top": 52,
+                      "top": 104,
                     },
                     Object {
                       "color": "#000000",
@@ -1049,9 +1049,9 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                 style={
                   Array [
                     Object {
-                      "left": 600.177734375,
+                      "left": 288.494140625,
                       "position": "absolute",
-                      "top": 52,
+                      "top": 104,
                     },
                     Object {
                       "color": "#000000",
@@ -1072,9 +1072,9 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                 style={
                   Array [
                     Object {
-                      "left": 676.501953125,
+                      "left": 364.818359375,
                       "position": "absolute",
-                      "top": 52,
+                      "top": 104,
                     },
                     Object {
                       "color": "#000000",
@@ -1095,7 +1095,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                 style={
                   Array [
                     Object {
-                      "left": 149,
+                      "left": 401.029296875,
                       "position": "absolute",
                       "top": 104,
                     },
@@ -1118,7 +1118,7 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                 style={
                   Array [
                     Object {
-                      "left": 223.724609375,
+                      "left": 475.75390625,
                       "position": "absolute",
                       "top": 104,
                     },

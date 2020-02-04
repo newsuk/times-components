@@ -41,7 +41,7 @@ const InlineParagraph = ({
     dropCap ? [dropCap.exclusion] : []
   );
 
-  const slice = str.charAt(1) === " " ? 2 : 1;
+  const slice = str.charAt(1) === " " ? 2 : dropCap.length;
 
   const manager = new LayoutManager(
     dropCap ? str.slice(slice) : str,
