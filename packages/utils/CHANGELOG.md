@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.1.4](https://github.com/newsuk/times-components/compare/@times-components/utils@6.1.3...@times-components/utils@6.1.4) (2020-02-04)
+
+
+### Bug Fixes
+
+* section name for analytics ([#2514](https://github.com/newsuk/times-components/issues/2514)) ([a78279a](https://github.com/newsuk/times-components/commit/a78279ab871e1f05be89046931e45b993fa1cb22))
+
+
+
+
+
 ## [6.1.3](https://github.com/newsuk/times-components/compare/@times-components/utils@6.1.2...@times-components/utils@6.1.3) (2020-01-31)
 
 
