@@ -6,7 +6,7 @@ module.exports = ({ tiles }) => {
   }
 
   const slices = tiles.reduce((acc, tile) => {
-    acc.push(...tile.slices);
+    acc.push(...tile.slices)
     return acc;
   }, []);
 
