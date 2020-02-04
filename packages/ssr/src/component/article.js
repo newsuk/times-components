@@ -12,6 +12,7 @@ const {
 } = require("@times-components/context/rnw");
 const { scales, themeFactory } = require("@times-components/styleguide/rnw");
 const getSectionNameFromTiles = require("../lib/section-from-tiles");
+const getSectionNameForAnalytics = require("../lib/get-analytics-section");
 
 const scale = scales.large;
 
@@ -72,7 +73,10 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
             React.createElement(Article, {
               adConfig: mapArticleToAdConfig(article),
               analyticsStream,
-              article,
+              article: {
+                ...article,
+                section: getSectionNameForAnalytics(article)
+              },
               error,
               isLoading,
               logoUrl,
