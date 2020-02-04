@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.27.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.27.1...@times-components/article-skeleton@1.27.2) (2020-02-04)
+
+
+### Bug Fixes
+
+* REPLAT-11573 drop caps with a starting quote ([#2485](https://github.com/newsuk/times-components/issues/2485)) ([81f541f](https://github.com/newsuk/times-components/commit/81f541f7363b0abce65d776e10aaee20c6b4191c))
+
+
+
+
+
 ## [1.27.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.27.0...@times-components/article-skeleton@1.27.1) (2020-02-03)
 
 **Note:** Version bump only for package @times-components/article-skeleton
