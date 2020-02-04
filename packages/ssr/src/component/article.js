@@ -3,6 +3,7 @@
 const React = require("react");
 const { ApolloProvider } = require("react-apollo");
 const { HelmetProvider } = require("react-helmet-async");
+const { getSectionNameForAnalytics } = require("@times-components/utils/rnw");
 const { ArticleProvider } = require("@times-components/provider/rnw");
 const { DraftArticleProvider } = require("@times-components/provider/rnw");
 const Article = require("@times-components/article/rnw").default;
@@ -72,7 +73,10 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
             React.createElement(Article, {
               adConfig: mapArticleToAdConfig(article),
               analyticsStream,
-              article,
+              article: {
+                ...article,
+                section: getSectionNameForAnalytics(article)
+              },
               error,
               isLoading,
               logoUrl,
