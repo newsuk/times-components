@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/newsuk/times-components/compare/@times-components/responsive-image@0.4.12...@times-components/responsive-image@0.5.0) (2020-02-05)
+
+
+### Features
+
+* add srcSet to lead-asset-image ([#2515](https://github.com/newsuk/times-components/issues/2515)) ([52d641b](https://github.com/newsuk/times-components/commit/52d641bc35e1e5e93090bed43882ff16336fcce0))
+
+
+
+
+
 ## [0.4.12](https://github.com/newsuk/times-components/compare/@times-components/responsive-image@0.4.11...@times-components/responsive-image@0.4.12) (2020-01-31)
 
 
