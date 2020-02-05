@@ -466,6 +466,10 @@ exports[`full article with style 1`] = `
 }
 
 .IS2 {
+  color: rgba(29,29,27,1.00);
+}
+
+.IS3 {
   opacity: 1;
   z-index: 2;
   width: 100%;
@@ -473,7 +477,7 @@ exports[`full article with style 1`] = `
   display: block;
 }
 
-.IS3 {
+.IS4 {
   display: table;
   height: 0;
   overflow: hidden;
@@ -482,57 +486,57 @@ exports[`full article with style 1`] = `
   padding-bottom: 56.25%;
 }
 
-.IS4 {
+.IS5 {
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
-.IS5 {
+.IS6 {
   padding-bottom: 56.25%;
   position: relative;
 }
 
-.IS6 {
+.IS7 {
   margin: 0;
 }
 
-.IS7 {
-  display: none;
-}
-
 .IS8 {
-  height: 100%;
-  width: 100%;
+  display: none;
 }
 
 .IS9 {
   height: 100%;
   width: 100%;
-  position: relative;
 }
 
 .IS10 {
   height: 100%;
   width: 100%;
+  position: relative;
 }
 
 .IS11 {
+  height: 100%;
+  width: 100%;
+}
+
+.IS12 {
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
-.IS12 {
+.IS13 {
   padding-bottom: 56.25%;
   position: relative;
 }
 
-.IS13 {
+.IS14 {
   margin: 0;
 }
 
-.IS14 {
+.IS15 {
   border-bottom-color: #DBDBDB;
   border-bottom-width: 1;
   border-top-color: #DBDBDB;
@@ -595,7 +599,7 @@ exports[`full article with style 1`] = `
             className="css-view-1dbjc4n r-marginBottom-15d164r S3"
           >
             <div
-              className="css-text-901oao r-color-1yqk5fa r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv S2"
+              className="css-text-901oao r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS2 S2"
             >
               SOME LABEL
             </div>
@@ -641,19 +645,19 @@ exports[`full article with style 1`] = `
           className="c12 responsiveweb__LeadAsset-sc-1epfk4y-10 c12 css-view-1dbjc4n r-marginBottom-117bsoe S8"
         >
           <figure
-            className="IS6"
+            className="IS7"
           >
             <div
-              className="css-view-1dbjc4n IS5"
+              className="css-view-1dbjc4n IS6"
             >
               <div
-                className="css-view-1dbjc4n IS4"
+                className="css-view-1dbjc4n IS5"
               >
                 <div
-                  className="IS3"
+                  className="IS4"
                 >
                   <img
-                    className="IS2"
+                    className="IS3"
                   />
                 </div>
               </div>
@@ -667,7 +671,7 @@ exports[`full article with style 1`] = `
           className="c13 c14 c15"
         >
           <div
-            className="IS7"
+            className="IS8"
           />
           <div>
             <div
@@ -713,22 +717,22 @@ exports[`full article with style 1`] = `
           className="c18 responsiveweb__PrimaryImg-sc-16nqyj8-5 c18 css-view-1dbjc4n"
         >
           <figure
-            className="IS13"
+            className="IS14"
           >
             <div
-              className="css-view-1dbjc4n IS12"
+              className="css-view-1dbjc4n IS13"
             >
               <div
-                className="css-view-1dbjc4n IS11"
+                className="css-view-1dbjc4n IS12"
               >
                 <div
-                  className="IS10"
+                  className="IS11"
                 >
                   <div
-                    className="IS9"
+                    className="IS10"
                   >
                     <video
-                      className="video-js IS8"
+                      className="video-js IS9"
                     />
                   </div>
                 </div>
@@ -744,7 +748,7 @@ exports[`full article with style 1`] = `
           </figure>
         </div>
         <AdContainer
-          className="IS14"
+          className="IS15"
         />
         <div>
           <div

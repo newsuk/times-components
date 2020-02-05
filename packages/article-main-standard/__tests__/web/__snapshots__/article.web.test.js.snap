@@ -164,7 +164,8 @@ exports[`1. an article 1`] = `
                   <div>
                     <img
                       alt="Some Caption"
-                      src="https://crop169.io"
+                      src="https://crop169.io?resize=1180"
+                      srcSet="https://crop169.io?resize=320 320w, https://crop169.io?resize=685 685w, https://crop169.io?resize=1180 1180w"
                     />
                   </div>
                 </div>
@@ -798,7 +799,8 @@ exports[`6. should show topics when logged in or shared 1`] = `
                   <div>
                     <img
                       alt="Some Caption"
-                      src="https://crop169.io"
+                      src="https://crop169.io?resize=1180"
+                      srcSet="https://crop169.io?resize=320 320w, https://crop169.io?resize=685 685w, https://crop169.io?resize=1180 1180w"
                     />
                   </div>
                 </div>
@@ -1102,7 +1104,8 @@ exports[`7. an article with no byline 1`] = `
                   <div>
                     <img
                       alt="Some Caption"
-                      src="https://crop169.io"
+                      src="https://crop169.io?resize=1180"
+                      srcSet="https://crop169.io?resize=320 320w, https://crop169.io?resize=685 685w, https://crop169.io?resize=1180 1180w"
                     />
                   </div>
                 </div>
@@ -1383,7 +1386,8 @@ exports[`8. an article with no label 1`] = `
                   <div>
                     <img
                       alt="Some Caption"
-                      src="https://crop169.io"
+                      src="https://crop169.io?resize=1180"
+                      srcSet="https://crop169.io?resize=320 320w, https://crop169.io?resize=685 685w, https://crop169.io?resize=1180 1180w"
                     />
                   </div>
                 </div>
