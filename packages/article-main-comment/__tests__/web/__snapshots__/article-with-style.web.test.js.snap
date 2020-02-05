@@ -442,41 +442,45 @@ exports[`full article with style 1`] = `
 }
 
 .IS2 {
-  display: none;
+  color: rgba(29,29,27,1.00);
 }
 
 .IS3 {
-  height: 100%;
-  width: 100%;
+  display: none;
 }
 
 .IS4 {
   height: 100%;
   width: 100%;
-  position: relative;
 }
 
 .IS5 {
   height: 100%;
   width: 100%;
+  position: relative;
 }
 
 .IS6 {
+  height: 100%;
+  width: 100%;
+}
+
+.IS7 {
   height: 100%;
   position: absolute;
   width: 100%;
 }
 
-.IS7 {
+.IS8 {
   padding-bottom: 56.25%;
   position: relative;
 }
 
-.IS8 {
+.IS9 {
   margin: 0;
 }
 
-.IS9 {
+.IS10 {
   border-bottom-color: #DBDBDB;
   border-bottom-width: 1;
   border-top-color: #DBDBDB;
@@ -539,7 +543,7 @@ exports[`full article with style 1`] = `
             className="css-view-1dbjc4n r-marginBottom-15d164r S3"
           >
             <div
-              className="css-text-901oao r-color-1yqk5fa r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv S2"
+              className="css-text-901oao r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS2 S2"
             >
               SOME LABEL
             </div>
@@ -585,7 +589,7 @@ exports[`full article with style 1`] = `
           className="c12 c13 c14"
         >
           <div
-            className="IS2"
+            className="IS3"
           />
           <div>
             <div
@@ -631,22 +635,22 @@ exports[`full article with style 1`] = `
           className="c17 responsiveweb__PrimaryImg-sc-16nqyj8-5 c17 css-view-1dbjc4n"
         >
           <figure
-            className="IS8"
+            className="IS9"
           >
             <div
-              className="css-view-1dbjc4n IS7"
+              className="css-view-1dbjc4n IS8"
             >
               <div
-                className="css-view-1dbjc4n IS6"
+                className="css-view-1dbjc4n IS7"
               >
                 <div
-                  className="IS5"
+                  className="IS6"
                 >
                   <div
-                    className="IS4"
+                    className="IS5"
                   >
                     <video
-                      className="video-js IS3"
+                      className="video-js IS4"
                     />
                   </div>
                 </div>
@@ -662,7 +666,7 @@ exports[`full article with style 1`] = `
           </figure>
         </div>
         <AdContainer
-          className="IS9"
+          className="IS10"
         />
         <div>
           <div
