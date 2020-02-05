@@ -24,7 +24,12 @@ import {
   FullWidthImg,
   InteractiveContainer,
   PullQuoteContainer,
-  PullQuoteResp
+  PullQuoteResp,
+  Heading2,
+  Heading3,
+  Heading4,
+  Heading5,
+  Heading6
 } from "../styles/article-body/responsive";
 import styles from "../styles/article-body";
 
@@ -62,7 +67,7 @@ const renderers = ({ paidContentClassName }) => ({
   image(key, { display, ratio, url, caption, credits }) {
     const MediaWrapper = responsiveDisplayWrapper(display);
     return (
-      <LazyLoad key={key} rootMargin={spacing(15)} threshold={0.5}>
+      <LazyLoad key={key} rootMargin={spacing(40)} threshold={0}>
         {({ observed, registerNode }) => (
           <div id={key} ref={node => registerNode(node)}>
             <MediaWrapper>
@@ -76,7 +81,8 @@ const renderers = ({ paidContentClassName }) => ({
                   highResSize: observed.get(key)
                     ? observed.get(key).clientWidth
                     : null,
-                  lowResSize: 100,
+                  lowResQuality: 3,
+                  lowResSize: 400,
                   ratio,
                   uri: url
                 }}
@@ -102,6 +108,21 @@ const renderers = ({ paidContentClassName }) => ({
   },
   keyFacts(key, attributes, renderedChildren, indx, node) {
     return <KeyFacts ast={node} key={key} />;
+  },
+  heading2(key, attributes, children) {
+    return <Heading2>{children}</Heading2>;
+  },
+  heading3(key, attributes, children) {
+    return <Heading3>{children}</Heading3>;
+  },
+  heading4(key, attributes, children) {
+    return <Heading4>{children}</Heading4>;
+  },
+  heading5(key, attributes, children) {
+    return <Heading5>{children}</Heading5>;
+  },
+  heading6(key, attributes, children) {
+    return <Heading6>{children}</Heading6>;
   },
   link(key, attributes, children) {
     const { href, target, dropCap } = attributes;

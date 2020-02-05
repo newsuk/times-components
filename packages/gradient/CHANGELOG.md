@@ -3,6 +3,84 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.27](https://github.com/newsuk/times-components/compare/@times-components/gradient@3.2.26...@times-components/gradient@3.2.27) (2020-02-04)
+
+**Note:** Version bump only for package @times-components/gradient
+
+
+
+
+
+## [3.2.26](https://github.com/newsuk/times-components/compare/@times-components/gradient@3.2.25...@times-components/gradient@3.2.26) (2020-01-31)
+
+
+### Bug Fixes
+
+* styleguide versions ([#2512](https://github.com/newsuk/times-components/issues/2512)) ([d33b7db](https://github.com/newsuk/times-components/commit/d33b7db18ce84703f7d0cff01e30ee3ca086d1f3))
+
+
+
+
+
+## [3.2.25](https://github.com/newsuk/times-components/compare/@times-components/gradient@3.2.24...@times-components/gradient@3.2.25) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/gradient
+
+
+
+
+
+## [3.2.24](https://github.com/newsuk/times-components/compare/@times-components/gradient@3.2.23...@times-components/gradient@3.2.24) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/gradient
+
+
+
+
+
+## [3.2.23](https://github.com/newsuk/times-components/compare/@times-components/gradient@3.2.22...@times-components/gradient@3.2.23) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/gradient
+
+
+
+
+
+## [3.2.22](https://github.com/newsuk/times-components/compare/@times-components/gradient@3.2.21...@times-components/gradient@3.2.22) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/gradient
+
+
+
+
+
+## [3.2.21](https://github.com/newsuk/times-components/compare/@times-components/gradient@3.2.20...@times-components/gradient@3.2.21) (2020-01-30)
+
+**Note:** Version bump only for package @times-components/gradient
+
+
+
+
+
+## [3.2.20](https://github.com/newsuk/times-components/compare/@times-components/gradient@3.2.19...@times-components/gradient@3.2.20) (2020-01-24)
+
+
+### Bug Fixes
+
+* REPLAT-11684 handle responsive-graphic specially on ios ([#2490](https://github.com/newsuk/times-components/issues/2490)) ([a7ae457](https://github.com/newsuk/times-components/commit/a7ae457b0a422556ce75504fa7ead0da2d658f2b))
+
+
+
+
+
+## [3.2.19](https://github.com/newsuk/times-components/compare/@times-components/gradient@3.2.18...@times-components/gradient@3.2.19) (2020-01-22)
+
+**Note:** Version bump only for package @times-components/gradient
+
+
+
+
+
 ## [3.2.18](https://github.com/newsuk/times-components/compare/@times-components/gradient@3.2.17...@times-components/gradient@3.2.18) (2020-01-15)
 
 **Note:** Version bump only for package @times-components/gradient

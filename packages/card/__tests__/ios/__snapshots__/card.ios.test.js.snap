@@ -7,6 +7,7 @@ exports[`1. card default state 1`] = `
       aspectRatio={0.6666666666666666}
       fadeImageIn={false}
       highResSize={360}
+      lowResQuality={null}
       lowResSize={50}
       uri="https://img.io/img"
     />
@@ -26,6 +27,7 @@ exports[`2. pass an empty state to the image component 1`] = `
       aspectRatio={0.6666666666666666}
       fadeImageIn={false}
       highResSize={360}
+      lowResQuality={null}
       lowResSize={50}
       uri={null}
     />
@@ -55,6 +57,7 @@ exports[`4. pass an empty state to the image component when the uri is null 1`] 
       aspectRatio={0.6666666666666666}
       fadeImageIn={false}
       highResSize={360}
+      lowResQuality={null}
       lowResSize={50}
       uri={null}
     />
@@ -79,6 +82,7 @@ exports[`5. card with reversed layout 1`] = `
       aspectRatio={0.6666666666666666}
       fadeImageIn={false}
       highResSize={360}
+      lowResQuality={null}
       lowResSize={50}
       uri="https://img.io/img"
     />
@@ -104,6 +108,7 @@ exports[`7. card with a loading state 1`] = `
         aspectRatio={0.6666666666666666}
         fadeImageIn={false}
         highResSize={360}
+        lowResQuality={null}
         lowResSize={50}
         uri="https://img.io/img"
       />
@@ -169,6 +174,7 @@ exports[`9. card with reversed loading state 1`] = `
         aspectRatio={0.6666666666666666}
         fadeImageIn={false}
         highResSize={360}
+        lowResQuality={null}
         lowResSize={50}
         uri="https://img.io/img"
       />
@@ -205,6 +211,7 @@ exports[`11. card should not re-render when imageratio prop is changed 1`] = `
       aspectRatio={0.6666666666666666}
       fadeImageIn={false}
       highResSize={360}
+      lowResQuality={null}
       lowResSize={50}
       uri="https://img.io/img"
     />
@@ -224,6 +231,7 @@ exports[`11. card should not re-render when imageratio prop is changed 2`] = `
       aspectRatio={0.6666666666666666}
       fadeImageIn={false}
       highResSize={360}
+      lowResQuality={null}
       lowResSize={50}
       uri="https://img.io/img"
     />
@@ -243,6 +251,7 @@ exports[`12. card should re-render when image uri changes 1`] = `
       aspectRatio={0.6666666666666666}
       fadeImageIn={false}
       highResSize={360}
+      lowResQuality={null}
       lowResSize={50}
       uri="https://img.io/img"
     />
@@ -262,6 +271,7 @@ exports[`12. card should re-render when image uri changes 2`] = `
       aspectRatio={0.6666666666666666}
       fadeImageIn={false}
       highResSize={360}
+      lowResQuality={null}
       lowResSize={50}
       uri="http://foo"
     />
@@ -281,6 +291,7 @@ exports[`13. card should re-render when low res size changes 1`] = `
       aspectRatio={0.6666666666666666}
       fadeImageIn={false}
       highResSize={360}
+      lowResQuality={null}
       lowResSize={50}
       uri="https://img.io/img"
     />
@@ -300,6 +311,7 @@ exports[`13. card should re-render when low res size changes 2`] = `
       aspectRatio={0.6666666666666666}
       fadeImageIn={false}
       highResSize={360}
+      lowResQuality={null}
       lowResSize={null}
       uri="https://img.io/img"
     />
@@ -319,6 +331,7 @@ exports[`14. card should re-render when high res size changes 1`] = `
       aspectRatio={0.6666666666666666}
       fadeImageIn={false}
       highResSize={360}
+      lowResQuality={null}
       lowResSize={50}
       uri="https://img.io/img"
     />
@@ -338,6 +351,7 @@ exports[`14. card should re-render when high res size changes 2`] = `
       aspectRatio={0.6666666666666666}
       fadeImageIn={false}
       highResSize={null}
+      lowResQuality={null}
       lowResSize={50}
       uri="https://img.io/img"
     />
@@ -358,6 +372,7 @@ exports[`15. card should re-render when loading state changes 1`] = `
         aspectRatio={0.6666666666666666}
         fadeImageIn={false}
         highResSize={360}
+        lowResQuality={null}
         lowResSize={50}
         uri="https://img.io/img"
       />
@@ -387,6 +402,7 @@ exports[`15. card should re-render when loading state changes 2`] = `
       aspectRatio={0.6666666666666666}
       fadeImageIn={false}
       highResSize={360}
+      lowResQuality={null}
       lowResSize={50}
       uri="https://img.io/img"
     />

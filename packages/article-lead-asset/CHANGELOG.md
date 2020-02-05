@@ -3,6 +3,113 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.5.8](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.5.7...@times-components/article-lead-asset@1.5.8) (2020-02-04)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.5.7](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.5.6...@times-components/article-lead-asset@1.5.7) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.5.6](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.5.5...@times-components/article-lead-asset@1.5.6) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.5.5](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.5.4...@times-components/article-lead-asset@1.5.5) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.5.4](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.5.3...@times-components/article-lead-asset@1.5.4) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.5.3](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.5.2...@times-components/article-lead-asset@1.5.3) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.5.2](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.5.1...@times-components/article-lead-asset@1.5.2) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.5.1](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.5.0...@times-components/article-lead-asset@1.5.1) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+# [1.5.0](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.4.16...@times-components/article-lead-asset@1.5.0) (2020-01-30)
+
+
+### Features
+
+* lead asset image optimization ([#2506](https://github.com/newsuk/times-components/issues/2506)) ([addbf25](https://github.com/newsuk/times-components/commit/addbf25ccb2315dfd912c0f517eb809b5eeda737))
+
+
+
+
+
+## [1.4.16](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.4.15...@times-components/article-lead-asset@1.4.16) (2020-01-24)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.4.15](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.4.14...@times-components/article-lead-asset@1.4.15) (2020-01-23)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.4.14](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.4.13...@times-components/article-lead-asset@1.4.14) (2020-01-22)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
+## [1.4.13](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.4.12...@times-components/article-lead-asset@1.4.13) (2020-01-21)
+
+**Note:** Version bump only for package @times-components/article-lead-asset
+
+
+
+
+
 ## [1.4.12](https://github.com/newsuk/times-components/compare/@times-components/article-lead-asset@1.4.11...@times-components/article-lead-asset@1.4.12) (2020-01-15)
 
 **Note:** Version bump only for package @times-components/article-lead-asset

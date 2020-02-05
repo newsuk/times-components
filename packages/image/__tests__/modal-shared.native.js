@@ -33,7 +33,10 @@ export default () => {
       minimaliseTransform(
         (value, key) => key === "style" || key === "nativeBackgroundAndroid"
       ),
-      replacePropTransform((value, key) => (key === "d" ? hash(value) : value))
+      replacePropTransform(
+        (value, key) =>
+          key === "d" && typeof d === "string" ? hash(value) : value
+      )
     )
   );
 

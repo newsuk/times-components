@@ -3,6 +3,78 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.21.26](https://github.com/newsuk/times-components/compare/@times-components/provider@1.21.25...@times-components/provider@1.21.26) (2020-02-04)
+
+**Note:** Version bump only for package @times-components/provider
+
+
+
+
+
+## [1.21.25](https://github.com/newsuk/times-components/compare/@times-components/provider@1.21.24...@times-components/provider@1.21.25) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/provider
+
+
+
+
+
+## [1.21.24](https://github.com/newsuk/times-components/compare/@times-components/provider@1.21.23...@times-components/provider@1.21.24) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/provider
+
+
+
+
+
+## [1.21.23](https://github.com/newsuk/times-components/compare/@times-components/provider@1.21.22...@times-components/provider@1.21.23) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/provider
+
+
+
+
+
+## [1.21.22](https://github.com/newsuk/times-components/compare/@times-components/provider@1.21.21...@times-components/provider@1.21.22) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/provider
+
+
+
+
+
+## [1.21.21](https://github.com/newsuk/times-components/compare/@times-components/provider@1.21.20...@times-components/provider@1.21.21) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/provider
+
+
+
+
+
+## [1.21.20](https://github.com/newsuk/times-components/compare/@times-components/provider@1.21.19...@times-components/provider@1.21.20) (2020-01-30)
+
+**Note:** Version bump only for package @times-components/provider
+
+
+
+
+
+## [1.21.19](https://github.com/newsuk/times-components/compare/@times-components/provider@1.21.18...@times-components/provider@1.21.19) (2020-01-23)
+
+**Note:** Version bump only for package @times-components/provider
+
+
+
+
+
+## [1.21.18](https://github.com/newsuk/times-components/compare/@times-components/provider@1.21.17...@times-components/provider@1.21.18) (2020-01-22)
+
+**Note:** Version bump only for package @times-components/provider
+
+
+
+
+
 ## [1.21.17](https://github.com/newsuk/times-components/compare/@times-components/provider@1.21.16...@times-components/provider@1.21.17) (2020-01-15)
 
 **Note:** Version bump only for package @times-components/provider

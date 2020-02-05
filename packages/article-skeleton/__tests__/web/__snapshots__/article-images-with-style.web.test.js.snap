@@ -1,12 +1,74 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. a primary image 1`] = `
-.c7 {
+.c8 {
   width: 100%;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
   padding-bottom: 25px;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c2 > .c3 {
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+}
+
+.c7 {
+  display: block;
+  -webkit-order: 4;
+  -ms-flex-order: 4;
+  order: 4;
+}
+
+.c6 {
+  background-color: #FFFFFF;
+  height: 60px;
+}
+
+.c6 [data-tc-sticky-sizer] {
+  border-bottom: 1px solid transparent;
+  will-change: border-bottom-color;
+}
+
+.c6.tc-sticky {
+  will-change: height,box-shadow;
+}
+
+.c6[MOCK-PROGRESS-SELECTOR] {
+  height: 59.5px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.010000000000000002);
+}
+
+.c6[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
+  border-bottom-color: rgba(219,219,219,0.9);
+}
+
+.c5 {
+  border: solid #DBDBDB;
+  border-width: 1px 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.c5 + .c4 {
+  margin-top: -1px !important;
+}
+
+.c5:last-child {
+  margin-bottom: 30px;
+}
+
+.c5.contains-tc-sticky {
+  border-bottom-color: transparent;
 }
 
 .c0 {
@@ -21,77 +83,15 @@ exports[`1. a primary image 1`] = `
   padding-bottom: 10px;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c2 > .keylines__ArticleKeylineItem-sc-1s03wwf-1 {
-  -webkit-order: 3;
-  -ms-flex-order: 3;
-  order: 3;
-}
-
-.c6 {
-  display: block;
-  -webkit-order: 4;
-  -ms-flex-order: 4;
-  order: 4;
-}
-
-.c5 {
-  background-color: #FFFFFF;
-  height: 60px;
-}
-
-.c5 [data-tc-sticky-sizer] {
-  border-bottom: 1px solid transparent;
-  will-change: border-bottom-color;
-}
-
-.c5.tc-sticky {
-  will-change: height,box-shadow;
-}
-
-.c5[MOCK-PROGRESS-SELECTOR] {
-  height: 59.5px;
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.010000000000000002);
-}
-
-.c5[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
-  border-bottom-color: rgba(219,219,219,0.9);
-}
-
-.c4 {
-  border: solid #DBDBDB;
-  border-width: 1px 0;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.c4 + .c3 {
-  margin-top: -1px !important;
-}
-
-.c4:last-child {
-  margin-bottom: 30px;
-}
-
-.c4.contains-tc-sticky {
-  border-bottom-color: transparent;
-}
-
 @media (min-width:768px) {
-  .c7 {
+  .c8 {
     width: 80.8%;
     margin: 0 auto;
   }
 }
 
 @media (min-width:1024px) {
-  .c7 {
+  .c8 {
     width: 56.2%;
   }
 }
@@ -104,19 +104,19 @@ exports[`1. a primary image 1`] = `
 }
 
 @media (min-width:768px) {
-  .c4 {
+  .c5 {
     margin: 0 auto;
   }
 }
 
 @media (min-width:768px) {
-  .c4 {
+  .c5 {
     width: 80.8%;
   }
 }
 
 @media (min-width:1024px) {
-  .c4 {
+  .c5 {
     width: 56.2%;
   }
 }
@@ -136,27 +136,27 @@ exports[`1. a primary image 1`] = `
   <article>
     <Head />
     <div
-      className="c0 responsiveweb__HeaderAdContainer-sc-1exejum-1 c0 css-view-1dbjc4n"
+      className="c0 responsiveweb-sc-1exejum-0 c0 css-view-1dbjc4n"
     >
       <AdContainer
         className="IS1"
       />
     </div>
     <main
-      className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
+      className="c1 responsiveweb__MainContainer-sc-1exejum-1 c1 css-view-1dbjc4n"
     >
       <div
         className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
       >
         <div
-          className="keylines__KeylineItem-sc-1s03wwf-0 keylines__ArticleKeylineItem-sc-1s03wwf-1 c3 c4"
+          className="c3 c4 c5"
         >
           <div
             className="IS2"
           />
           <div>
             <div
-              className="c5"
+              className="c6"
             >
               <div>
                 <SaveAndShareBar />
@@ -166,15 +166,16 @@ exports[`1. a primary image 1`] = `
         </div>
       </div>
       <article
-        className="c6 responsiveweb__BodyContainer-sc-1exejum-3 c6 css-view-1dbjc4n"
+        className="c7 responsiveweb__BodyContainer-sc-1exejum-3 c7 css-view-1dbjc4n"
       >
         <div>
           <div
-            className="c7 responsiveweb__PrimaryImg-sc-16nqyj8-5 c7 css-view-1dbjc4n"
+            className="c8 responsiveweb__PrimaryImg-sc-16nqyj8-5 c8 css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>
         </div>
+        <div />
         <ArticleExtras />
       </article>
     </main>
@@ -186,8 +187,70 @@ exports[`1. a primary image 1`] = `
 `;
 
 exports[`2. a fullwidth image 1`] = `
-.c7 {
+.c8 {
   padding-bottom: 20px;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c2 > .c3 {
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+}
+
+.c7 {
+  display: block;
+  -webkit-order: 4;
+  -ms-flex-order: 4;
+  order: 4;
+}
+
+.c6 {
+  background-color: #FFFFFF;
+  height: 60px;
+}
+
+.c6 [data-tc-sticky-sizer] {
+  border-bottom: 1px solid transparent;
+  will-change: border-bottom-color;
+}
+
+.c6.tc-sticky {
+  will-change: height,box-shadow;
+}
+
+.c6[MOCK-PROGRESS-SELECTOR] {
+  height: 59.5px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.010000000000000002);
+}
+
+.c6[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
+  border-bottom-color: rgba(219,219,219,0.9);
+}
+
+.c5 {
+  border: solid #DBDBDB;
+  border-width: 1px 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.c5 + .c4 {
+  margin-top: -1px !important;
+}
+
+.c5:last-child {
+  margin-bottom: 30px;
+}
+
+.c5.contains-tc-sticky {
+  border-bottom-color: transparent;
 }
 
 .c0 {
@@ -202,68 +265,6 @@ exports[`2. a fullwidth image 1`] = `
   padding-bottom: 10px;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c2 > .keylines__ArticleKeylineItem-sc-1s03wwf-1 {
-  -webkit-order: 3;
-  -ms-flex-order: 3;
-  order: 3;
-}
-
-.c6 {
-  display: block;
-  -webkit-order: 4;
-  -ms-flex-order: 4;
-  order: 4;
-}
-
-.c5 {
-  background-color: #FFFFFF;
-  height: 60px;
-}
-
-.c5 [data-tc-sticky-sizer] {
-  border-bottom: 1px solid transparent;
-  will-change: border-bottom-color;
-}
-
-.c5.tc-sticky {
-  will-change: height,box-shadow;
-}
-
-.c5[MOCK-PROGRESS-SELECTOR] {
-  height: 59.5px;
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.010000000000000002);
-}
-
-.c5[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
-  border-bottom-color: rgba(219,219,219,0.9);
-}
-
-.c4 {
-  border: solid #DBDBDB;
-  border-width: 1px 0;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.c4 + .c3 {
-  margin-top: -1px !important;
-}
-
-.c4:last-child {
-  margin-bottom: 30px;
-}
-
-.c4.contains-tc-sticky {
-  border-bottom-color: transparent;
-}
-
 @media (min-width:1024px) {
   .c1 {
     padding-top: 20px;
@@ -272,19 +273,19 @@ exports[`2. a fullwidth image 1`] = `
 }
 
 @media (min-width:768px) {
-  .c4 {
+  .c5 {
     margin: 0 auto;
   }
 }
 
 @media (min-width:768px) {
-  .c4 {
+  .c5 {
     width: 80.8%;
   }
 }
 
 @media (min-width:1024px) {
-  .c4 {
+  .c5 {
     width: 56.2%;
   }
 }
@@ -304,27 +305,27 @@ exports[`2. a fullwidth image 1`] = `
   <article>
     <Head />
     <div
-      className="c0 responsiveweb__HeaderAdContainer-sc-1exejum-1 c0 css-view-1dbjc4n"
+      className="c0 responsiveweb-sc-1exejum-0 c0 css-view-1dbjc4n"
     >
       <AdContainer
         className="IS1"
       />
     </div>
     <main
-      className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
+      className="c1 responsiveweb__MainContainer-sc-1exejum-1 c1 css-view-1dbjc4n"
     >
       <div
         className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
       >
         <div
-          className="keylines__KeylineItem-sc-1s03wwf-0 keylines__ArticleKeylineItem-sc-1s03wwf-1 c3 c4"
+          className="c3 c4 c5"
         >
           <div
             className="IS2"
           />
           <div>
             <div
-              className="c5"
+              className="c6"
             >
               <div>
                 <SaveAndShareBar />
@@ -334,15 +335,16 @@ exports[`2. a fullwidth image 1`] = `
         </div>
       </div>
       <article
-        className="c6 responsiveweb__BodyContainer-sc-1exejum-3 c6 css-view-1dbjc4n"
+        className="c7 responsiveweb__BodyContainer-sc-1exejum-3 c7 css-view-1dbjc4n"
       >
         <div>
           <div
-            className="c7 responsiveweb__FullWidthImg-sc-16nqyj8-6 c7 css-view-1dbjc4n"
+            className="c8 responsiveweb__FullWidthImg-sc-16nqyj8-6 c8 css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>
         </div>
+        <div />
         <ArticleExtras />
       </article>
     </main>
@@ -354,7 +356,7 @@ exports[`2. a fullwidth image 1`] = `
 `;
 
 exports[`3. a secondary image 1`] = `
-.c7 {
+.c8 {
   width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -367,6 +369,68 @@ exports[`3. a secondary image 1`] = `
   padding-bottom: 25px;
 }
 
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c2 > .c3 {
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+}
+
+.c7 {
+  display: block;
+  -webkit-order: 4;
+  -ms-flex-order: 4;
+  order: 4;
+}
+
+.c6 {
+  background-color: #FFFFFF;
+  height: 60px;
+}
+
+.c6 [data-tc-sticky-sizer] {
+  border-bottom: 1px solid transparent;
+  will-change: border-bottom-color;
+}
+
+.c6.tc-sticky {
+  will-change: height,box-shadow;
+}
+
+.c6[MOCK-PROGRESS-SELECTOR] {
+  height: 59.5px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.010000000000000002);
+}
+
+.c6[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
+  border-bottom-color: rgba(219,219,219,0.9);
+}
+
+.c5 {
+  border: solid #DBDBDB;
+  border-width: 1px 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.c5 + .c4 {
+  margin-top: -1px !important;
+}
+
+.c5:last-child {
+  margin-bottom: 30px;
+}
+
+.c5.contains-tc-sticky {
+  border-bottom-color: transparent;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -379,70 +443,8 @@ exports[`3. a secondary image 1`] = `
   padding-bottom: 10px;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c2 > .keylines__ArticleKeylineItem-sc-1s03wwf-1 {
-  -webkit-order: 3;
-  -ms-flex-order: 3;
-  order: 3;
-}
-
-.c6 {
-  display: block;
-  -webkit-order: 4;
-  -ms-flex-order: 4;
-  order: 4;
-}
-
-.c5 {
-  background-color: #FFFFFF;
-  height: 60px;
-}
-
-.c5 [data-tc-sticky-sizer] {
-  border-bottom: 1px solid transparent;
-  will-change: border-bottom-color;
-}
-
-.c5.tc-sticky {
-  will-change: height,box-shadow;
-}
-
-.c5[MOCK-PROGRESS-SELECTOR] {
-  height: 59.5px;
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.010000000000000002);
-}
-
-.c5[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
-  border-bottom-color: rgba(219,219,219,0.9);
-}
-
-.c4 {
-  border: solid #DBDBDB;
-  border-width: 1px 0;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.c4 + .c3 {
-  margin-top: -1px !important;
-}
-
-.c4:last-child {
-  margin-bottom: 30px;
-}
-
-.c4.contains-tc-sticky {
-  border-bottom-color: transparent;
-}
-
 @media (min-width:768px) {
-  .c7 {
+  .c8 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -451,7 +453,7 @@ exports[`3. a secondary image 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c7 {
+  .c8 {
     width: 56.2%;
   }
 }
@@ -464,19 +466,19 @@ exports[`3. a secondary image 1`] = `
 }
 
 @media (min-width:768px) {
-  .c4 {
+  .c5 {
     margin: 0 auto;
   }
 }
 
 @media (min-width:768px) {
-  .c4 {
+  .c5 {
     width: 80.8%;
   }
 }
 
 @media (min-width:1024px) {
-  .c4 {
+  .c5 {
     width: 56.2%;
   }
 }
@@ -496,27 +498,27 @@ exports[`3. a secondary image 1`] = `
   <article>
     <Head />
     <div
-      className="c0 responsiveweb__HeaderAdContainer-sc-1exejum-1 c0 css-view-1dbjc4n"
+      className="c0 responsiveweb-sc-1exejum-0 c0 css-view-1dbjc4n"
     >
       <AdContainer
         className="IS1"
       />
     </div>
     <main
-      className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
+      className="c1 responsiveweb__MainContainer-sc-1exejum-1 c1 css-view-1dbjc4n"
     >
       <div
         className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
       >
         <div
-          className="keylines__KeylineItem-sc-1s03wwf-0 keylines__ArticleKeylineItem-sc-1s03wwf-1 c3 c4"
+          className="c3 c4 c5"
         >
           <div
             className="IS2"
           />
           <div>
             <div
-              className="c5"
+              className="c6"
             >
               <div>
                 <SaveAndShareBar />
@@ -526,15 +528,16 @@ exports[`3. a secondary image 1`] = `
         </div>
       </div>
       <article
-        className="c6 responsiveweb__BodyContainer-sc-1exejum-3 c6 css-view-1dbjc4n"
+        className="c7 responsiveweb__BodyContainer-sc-1exejum-3 c7 css-view-1dbjc4n"
       >
         <div>
           <div
-            className="c7 responsiveweb__SecondaryImg-sc-16nqyj8-7 c7 css-view-1dbjc4n"
+            className="c8 responsiveweb__SecondaryImg-sc-16nqyj8-7 c8 css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>
         </div>
+        <div />
         <ArticleExtras />
       </article>
     </main>
@@ -546,7 +549,7 @@ exports[`3. a secondary image 1`] = `
 `;
 
 exports[`4. an inline image 1`] = `
-.c7 {
+.c8 {
   width: 100%;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
@@ -560,6 +563,68 @@ exports[`4. an inline image 1`] = `
   display: block;
 }
 
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c2 > .c3 {
+  -webkit-order: 3;
+  -ms-flex-order: 3;
+  order: 3;
+}
+
+.c7 {
+  display: block;
+  -webkit-order: 4;
+  -ms-flex-order: 4;
+  order: 4;
+}
+
+.c6 {
+  background-color: #FFFFFF;
+  height: 60px;
+}
+
+.c6 [data-tc-sticky-sizer] {
+  border-bottom: 1px solid transparent;
+  will-change: border-bottom-color;
+}
+
+.c6.tc-sticky {
+  will-change: height,box-shadow;
+}
+
+.c6[MOCK-PROGRESS-SELECTOR] {
+  height: 59.5px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.010000000000000002);
+}
+
+.c6[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
+  border-bottom-color: rgba(219,219,219,0.9);
+}
+
+.c5 {
+  border: solid #DBDBDB;
+  border-width: 1px 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.c5 + .c4 {
+  margin-top: -1px !important;
+}
+
+.c5:last-child {
+  margin-bottom: 30px;
+}
+
+.c5.contains-tc-sticky {
+  border-bottom-color: transparent;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -572,70 +637,8 @@ exports[`4. an inline image 1`] = `
   padding-bottom: 10px;
 }
 
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c2 > .keylines__ArticleKeylineItem-sc-1s03wwf-1 {
-  -webkit-order: 3;
-  -ms-flex-order: 3;
-  order: 3;
-}
-
-.c6 {
-  display: block;
-  -webkit-order: 4;
-  -ms-flex-order: 4;
-  order: 4;
-}
-
-.c5 {
-  background-color: #FFFFFF;
-  height: 60px;
-}
-
-.c5 [data-tc-sticky-sizer] {
-  border-bottom: 1px solid transparent;
-  will-change: border-bottom-color;
-}
-
-.c5.tc-sticky {
-  will-change: height,box-shadow;
-}
-
-.c5[MOCK-PROGRESS-SELECTOR] {
-  height: 59.5px;
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.010000000000000002);
-}
-
-.c5[MOCK-PROGRESS-SELECTOR].tc-sticky [data-tc-sticky-sizer] {
-  border-bottom-color: rgba(219,219,219,0.9);
-}
-
-.c4 {
-  border: solid #DBDBDB;
-  border-width: 1px 0;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.c4 + .c3 {
-  margin-top: -1px !important;
-}
-
-.c4:last-child {
-  margin-bottom: 30px;
-}
-
-.c4.contains-tc-sticky {
-  border-bottom-color: transparent;
-}
-
 @media (min-width:768px) {
-  .c7 {
+  .c8 {
     width: 80.8%;
     margin: 0 auto;
     padding-left: 0;
@@ -644,7 +647,7 @@ exports[`4. an inline image 1`] = `
 }
 
 @media (min-width:1024px) {
-  .c7 {
+  .c8 {
     width: 56.2%;
   }
 }
@@ -657,19 +660,19 @@ exports[`4. an inline image 1`] = `
 }
 
 @media (min-width:768px) {
-  .c4 {
+  .c5 {
     margin: 0 auto;
   }
 }
 
 @media (min-width:768px) {
-  .c4 {
+  .c5 {
     width: 80.8%;
   }
 }
 
 @media (min-width:1024px) {
-  .c4 {
+  .c5 {
     width: 56.2%;
   }
 }
@@ -689,27 +692,27 @@ exports[`4. an inline image 1`] = `
   <article>
     <Head />
     <div
-      className="c0 responsiveweb__HeaderAdContainer-sc-1exejum-1 c0 css-view-1dbjc4n"
+      className="c0 responsiveweb-sc-1exejum-0 c0 css-view-1dbjc4n"
     >
       <AdContainer
         className="IS1"
       />
     </div>
     <main
-      className="c1 responsiveweb__MainContainer-sc-1exejum-0 c1 css-view-1dbjc4n"
+      className="c1 responsiveweb__MainContainer-sc-1exejum-1 c1 css-view-1dbjc4n"
     >
       <div
         className="c2 responsiveweb__HeaderContainer-sc-1exejum-2 c2 css-view-1dbjc4n"
       >
         <div
-          className="keylines__KeylineItem-sc-1s03wwf-0 keylines__ArticleKeylineItem-sc-1s03wwf-1 c3 c4"
+          className="c3 c4 c5"
         >
           <div
             className="IS2"
           />
           <div>
             <div
-              className="c5"
+              className="c6"
             >
               <div>
                 <SaveAndShareBar />
@@ -719,15 +722,16 @@ exports[`4. an inline image 1`] = `
         </div>
       </div>
       <article
-        className="c6 responsiveweb__BodyContainer-sc-1exejum-3 c6 css-view-1dbjc4n"
+        className="c7 responsiveweb__BodyContainer-sc-1exejum-3 c7 css-view-1dbjc4n"
       >
         <div>
           <div
-            className="c7 responsiveweb__InlineImg-sc-16nqyj8-8 c7 css-view-1dbjc4n"
+            className="c8 responsiveweb__InlineImg-sc-16nqyj8-8 c8 css-view-1dbjc4n"
           >
             <ArticleImage />
           </div>
         </div>
+        <div />
         <ArticleExtras />
       </article>
     </main>

@@ -3,6 +3,132 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.5.1](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.5.0...@times-components/article-list@9.5.1) (2020-02-04)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+# [9.5.0](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.4.27...@times-components/article-list@9.5.0) (2020-01-31)
+
+
+### Features
+
+* **REPLAT-12043:** improve low res images ([#2503](https://github.com/newsuk/times-components/issues/2503)) ([37b1e43](https://github.com/newsuk/times-components/commit/37b1e43cafc34516bb223f4dc338eca22b469fad))
+
+
+
+
+
+## [9.4.27](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.4.26...@times-components/article-list@9.4.27) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.4.26](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.4.25...@times-components/article-list@9.4.26) (2020-01-31)
+
+
+### Bug Fixes
+
+* styleguide versions ([#2512](https://github.com/newsuk/times-components/issues/2512)) ([d33b7db](https://github.com/newsuk/times-components/commit/d33b7db18ce84703f7d0cff01e30ee3ca086d1f3))
+
+
+
+
+
+## [9.4.25](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.4.24...@times-components/article-list@9.4.25) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.4.24](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.4.23...@times-components/article-list@9.4.24) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.4.23](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.4.22...@times-components/article-list@9.4.23) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.4.22](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.4.21...@times-components/article-list@9.4.22) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.4.21](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.4.20...@times-components/article-list@9.4.21) (2020-01-30)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.4.20](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.4.19...@times-components/article-list@9.4.20) (2020-01-29)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.4.19](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.4.18...@times-components/article-list@9.4.19) (2020-01-28)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.4.18](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.4.17...@times-components/article-list@9.4.18) (2020-01-24)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.4.17](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.4.16...@times-components/article-list@9.4.17) (2020-01-23)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.4.16](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.4.15...@times-components/article-list@9.4.16) (2020-01-22)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
+## [9.4.15](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.4.14...@times-components/article-list@9.4.15) (2020-01-21)
+
+**Note:** Version bump only for package @times-components/article-list
+
+
+
+
+
 ## [9.4.14](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.4.13...@times-components/article-list@9.4.14) (2020-01-21)
 
 **Note:** Version bump only for package @times-components/article-list

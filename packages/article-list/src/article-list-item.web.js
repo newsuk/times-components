@@ -24,6 +24,7 @@ const ArticleListItem = props => {
     highResSize,
     imageRatio,
     isLoading,
+    lowResQuality,
     lowResSize,
     showImage
   } = props;
@@ -120,6 +121,7 @@ const ArticleListItem = props => {
                 imageRatio={imageRatio}
                 imageUri={imageUri}
                 isLoading={isLoading}
+                lowResQuality={lowResQuality}
                 lowResSize={lowResSize}
                 showImage={showImage}
               >

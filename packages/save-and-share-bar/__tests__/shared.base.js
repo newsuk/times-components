@@ -8,6 +8,10 @@ import BarItem from "../src/bar-item";
 import SaveAndShareBar from "../src/save-and-share-bar";
 import EmailShare from "../src/email-share";
 
+const mockEvent = {
+  preventDefault: () => {}
+};
+
 export default () => {
   describe("save and share bar component", () => {
     const onCopyLink = jest.fn();
@@ -56,7 +60,7 @@ export default () => {
 
     it("onPress events triggers correctly", () => {
       const testInstance = TestRenderer.create(<SaveAndShareBar {...props} />);
-      testInstance.root.findAllByType(BarItem)[3].props.onPress();
+      testInstance.root.findAllByType(BarItem)[3].props.onPress(mockEvent);
       expect(Clipboard.setString).toHaveBeenCalledWith(articleUrl);
       expect(onCopyLink).toHaveBeenCalled();
     });
@@ -91,7 +95,7 @@ export default () => {
           publicationName="TIMES"
         />
       );
-      await testInstance.root.findByType(BarItem).props.onPress();
+      await testInstance.root.findByType(BarItem).props.onPress(mockEvent);
 
       expect(testInstance).toMatchSnapshot();
     });
@@ -106,7 +110,9 @@ export default () => {
 
       const mailtoUrl = `mailto:?subject=${articleHeadline} from The Times&body=I thought you would be interested in this story from The Times%0A%0A${articleHeadline}%0A%0A${url}`;
 
-      await testInstance.root.findAllByType(BarItem)[0].props.onPress();
+      await testInstance.root
+        .findAllByType(BarItem)[0]
+        .props.onPress(mockEvent);
       expect(window.location.assign).toBeCalledWith(mailtoUrl);
     });
 
@@ -124,7 +130,9 @@ export default () => {
 
       const mailtoUrl = `mailto:?subject=${articleHeadline} from The Sunday Times&body=I thought you would be interested in this story from The Sunday Times%0A%0A${articleHeadline}%0A%0A${url}`;
 
-      await testInstance.root.findAllByType(BarItem)[0].props.onPress();
+      await testInstance.root
+        .findAllByType(BarItem)[0]
+        .props.onPress(mockEvent);
       expect(window.location.assign).toBeCalledWith(mailtoUrl);
     });
 
@@ -137,7 +145,9 @@ export default () => {
       const url = `${articleUrl}?shareToken=foo`;
       const mailtoUrl = `mailto:?subject=${articleHeadline} from The Times&body=I thought you would be interested in this story from The Times%0A%0A${articleHeadline}%0A%0A${url}`;
 
-      await testInstance.root.findAllByType(BarItem)[0].props.onPress();
+      await testInstance.root
+        .findAllByType(BarItem)[0]
+        .props.onPress(mockEvent);
       expect(window.location.assign).toBeCalledWith(mailtoUrl);
     });
 
@@ -148,7 +158,9 @@ export default () => {
 
       const mailtoUrl = `mailto:?subject=${articleHeadline} from The Times&body=I thought you would be interested in this story from The Times%0A%0A${articleHeadline}%0A%0A${articleUrl}`;
 
-      await testInstance.root.findAllByType(BarItem)[0].props.onPress();
+      await testInstance.root
+        .findAllByType(BarItem)[0]
+        .props.onPress(mockEvent);
       expect(window.location.assign).toBeCalledWith(mailtoUrl);
     });
   });

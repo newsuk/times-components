@@ -3,6 +3,74 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.1.4](https://github.com/newsuk/times-components/compare/@times-components/utils@6.1.3...@times-components/utils@6.1.4) (2020-02-04)
+
+
+### Bug Fixes
+
+* section name for analytics ([#2514](https://github.com/newsuk/times-components/issues/2514)) ([a78279a](https://github.com/newsuk/times-components/commit/a78279ab871e1f05be89046931e45b993fa1cb22))
+
+
+
+
+
+## [6.1.3](https://github.com/newsuk/times-components/compare/@times-components/utils@6.1.2...@times-components/utils@6.1.3) (2020-01-31)
+
+
+### Bug Fixes
+
+* styleguide versions ([#2512](https://github.com/newsuk/times-components/issues/2512)) ([d33b7db](https://github.com/newsuk/times-components/commit/d33b7db18ce84703f7d0cff01e30ee3ca086d1f3))
+
+
+
+
+
+## [6.1.2](https://github.com/newsuk/times-components/compare/@times-components/utils@6.1.1...@times-components/utils@6.1.2) (2020-01-31)
+
+
+### Bug Fixes
+
+* deps ([#2510](https://github.com/newsuk/times-components/issues/2510)) ([e870147](https://github.com/newsuk/times-components/commit/e870147988f2f4e3ac9654e65bcd6eaed7135b4c))
+
+
+
+
+
+## [6.1.1](https://github.com/newsuk/times-components/compare/@times-components/utils@6.1.0...@times-components/utils@6.1.1) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/utils
+
+
+
+
+
+# [6.1.0](https://github.com/newsuk/times-components/compare/@times-components/utils@6.0.4...@times-components/utils@6.1.0) (2020-01-30)
+
+
+### Features
+
+* lead asset image optimization ([#2506](https://github.com/newsuk/times-components/issues/2506)) ([addbf25](https://github.com/newsuk/times-components/commit/addbf25ccb2315dfd912c0f517eb809b5eeda737))
+
+
+
+
+
+## [6.0.4](https://github.com/newsuk/times-components/compare/@times-components/utils@6.0.3...@times-components/utils@6.0.4) (2020-01-23)
+
+**Note:** Version bump only for package @times-components/utils
+
+
+
+
+
+## [6.0.3](https://github.com/newsuk/times-components/compare/@times-components/utils@6.0.2...@times-components/utils@6.0.3) (2020-01-22)
+
+**Note:** Version bump only for package @times-components/utils
+
+
+
+
+
 ## [6.0.2](https://github.com/newsuk/times-components/compare/@times-components/utils@6.0.1...@times-components/utils@6.0.2) (2020-01-15)
 
 **Note:** Version bump only for package @times-components/utils

@@ -115,6 +115,7 @@ exports[`card with default layout 1`] = `
       disablePlaceholder={false}
       fadeImageIn={false}
       highResSize={100}
+      lowResQuality={null}
       lowResSize={50}
       rounded={false}
       uri="https://img.io/img"

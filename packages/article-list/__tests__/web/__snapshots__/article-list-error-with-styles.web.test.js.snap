@@ -275,10 +275,6 @@ exports[`2. article list 1`] = `
 }
 
 @media (min-width:768px) {
-
-}
-
-@media (min-width:768px) {
   .c2 {
     left: 0;
     right: 0;

@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.30](https://github.com/newsuk/times-components/compare/@times-components/context@1.1.29...@times-components/context@1.1.30) (2020-01-31)
+
+
+### Bug Fixes
+
+* styleguide versions ([#2512](https://github.com/newsuk/times-components/issues/2512)) ([d33b7db](https://github.com/newsuk/times-components/commit/d33b7db18ce84703f7d0cff01e30ee3ca086d1f3))
+
+
+
+
+
+## [1.1.29](https://github.com/newsuk/times-components/compare/@times-components/context@1.1.28...@times-components/context@1.1.29) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/context
+
+
+
+
+
+## [1.1.28](https://github.com/newsuk/times-components/compare/@times-components/context@1.1.27...@times-components/context@1.1.28) (2020-01-31)
+
+
+### Bug Fixes
+
+* (REPLAT-12060) handle interactives sending wrong height values ([#2504](https://github.com/newsuk/times-components/issues/2504)) ([40a143e](https://github.com/newsuk/times-components/commit/40a143ee9575bab5f27932369aacbcf59c286ba5))
+
+
+
+
+
+## [1.1.27](https://github.com/newsuk/times-components/compare/@times-components/context@1.1.26...@times-components/context@1.1.27) (2020-01-23)
+
+**Note:** Version bump only for package @times-components/context
+
+
+
+
+
+## [1.1.26](https://github.com/newsuk/times-components/compare/@times-components/context@1.1.25...@times-components/context@1.1.26) (2020-01-22)
+
+**Note:** Version bump only for package @times-components/context
+
+
+
+
+
 ## [1.1.25](https://github.com/newsuk/times-components/compare/@times-components/context@1.1.24...@times-components/context@1.1.25) (2020-01-15)
 
 **Note:** Version bump only for package @times-components/context

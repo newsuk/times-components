@@ -6,9 +6,12 @@ Array [
     dateTime="2017-01-01T14:32:00.000Z"
   >
     Sunday January 01 2017, 2.32pm GMT
+    , 
   </time>,
-  <span>
-    , The Times
+  <span
+    className="date-publicationweb__PublicationName-pg8gov-0 hzKDdt"
+  >
+    The Times
   </span>,
 ]
 `;

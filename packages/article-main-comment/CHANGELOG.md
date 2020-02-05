@@ -3,6 +3,235 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.19.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.19.2...@times-components/article-main-comment@2.19.3) (2020-02-04)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.19.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.19.1...@times-components/article-main-comment@2.19.2) (2020-02-04)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.19.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.19.0...@times-components/article-main-comment@2.19.1) (2020-02-03)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+# [2.19.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.39...@times-components/article-main-comment@2.19.0) (2020-01-31)
+
+
+### Features
+
+* **REPLAT-12043:** improve low res images ([#2503](https://github.com/newsuk/times-components/issues/2503)) ([37b1e43](https://github.com/newsuk/times-components/commit/37b1e43cafc34516bb223f4dc338eca22b469fad))
+
+
+
+
+
+## [2.18.39](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.38...@times-components/article-main-comment@2.18.39) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.18.38](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.37...@times-components/article-main-comment@2.18.38) (2020-01-31)
+
+
+### Bug Fixes
+
+* styleguide versions ([#2512](https://github.com/newsuk/times-components/issues/2512)) ([d33b7db](https://github.com/newsuk/times-components/commit/d33b7db18ce84703f7d0cff01e30ee3ca086d1f3))
+
+
+
+
+
+## [2.18.37](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.36...@times-components/article-main-comment@2.18.37) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.18.36](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.35...@times-components/article-main-comment@2.18.36) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.18.35](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.34...@times-components/article-main-comment@2.18.35) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.18.34](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.33...@times-components/article-main-comment@2.18.34) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.18.33](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.32...@times-components/article-main-comment@2.18.33) (2020-01-30)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.18.32](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.31...@times-components/article-main-comment@2.18.32) (2020-01-30)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.18.31](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.30...@times-components/article-main-comment@2.18.31) (2020-01-29)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.18.30](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.29...@times-components/article-main-comment@2.18.30) (2020-01-29)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.18.29](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.28...@times-components/article-main-comment@2.18.29) (2020-01-28)
+
+
+### Bug Fixes
+
+* Date publication and publication name ([#2498](https://github.com/newsuk/times-components/issues/2498)) ([10c3617](https://github.com/newsuk/times-components/commit/10c361725a22d030940100b29ecdbd724bd35e24))
+
+
+
+
+
+## [2.18.28](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.27...@times-components/article-main-comment@2.18.28) (2020-01-27)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.18.27](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.26...@times-components/article-main-comment@2.18.27) (2020-01-27)
+
+
+### Bug Fixes
+
+* sticky share and save bar on preview article ([#2494](https://github.com/newsuk/times-components/issues/2494)) ([e80ddc3](https://github.com/newsuk/times-components/commit/e80ddc364bb1f06d5ff8a29ff2d1831ef51057fd))
+
+
+
+
+
+## [2.18.26](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.25...@times-components/article-main-comment@2.18.26) (2020-01-27)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.18.25](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.24...@times-components/article-main-comment@2.18.25) (2020-01-24)
+
+
+### Bug Fixes
+
+* REPLAT-11399 bylines styling ([#2495](https://github.com/newsuk/times-components/issues/2495)) ([6c3c809](https://github.com/newsuk/times-components/commit/6c3c809ac236184fb7158677fbddc92a63853c6c))
+
+
+
+
+
+## [2.18.24](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.23...@times-components/article-main-comment@2.18.24) (2020-01-24)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.18.23](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.22...@times-components/article-main-comment@2.18.23) (2020-01-23)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.18.22](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.21...@times-components/article-main-comment@2.18.22) (2020-01-23)
+
+
+### Bug Fixes
+
+* **REPLAT-11906:** remove keylines below header ad on indepth template ([#2489](https://github.com/newsuk/times-components/issues/2489)) ([0329cf5](https://github.com/newsuk/times-components/commit/0329cf58161b30bf86b4ced1bebf3da7faf5207e))
+
+
+
+
+
+## [2.18.21](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.20...@times-components/article-main-comment@2.18.21) (2020-01-23)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.18.20](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.19...@times-components/article-main-comment@2.18.20) (2020-01-23)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
+## [2.18.19](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.18...@times-components/article-main-comment@2.18.19) (2020-01-22)
+
+
+### Bug Fixes
+
+* REPLAT-11787 use native modal for author images ([#2486](https://github.com/newsuk/times-components/issues/2486)) ([67dfa4f](https://github.com/newsuk/times-components/commit/67dfa4f83a9290228945c0d8bf858ce14807d6a0))
+
+
+
+
+
+## [2.18.18](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.17...@times-components/article-main-comment@2.18.18) (2020-01-21)
+
+**Note:** Version bump only for package @times-components/article-main-comment
+
+
+
+
+
 ## [2.18.17](https://github.com/newsuk/times-components/compare/@times-components/article-main-comment@2.18.16...@times-components/article-main-comment@2.18.17) (2020-01-21)
 
 **Note:** Version bump only for package @times-components/article-main-comment

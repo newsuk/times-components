@@ -3,6 +3,108 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.14](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.9.13...@times-components/save-and-share-bar@0.9.14) (2020-02-04)
+
+**Note:** Version bump only for package @times-components/save-and-share-bar
+
+
+
+
+
+## [0.9.13](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.9.12...@times-components/save-and-share-bar@0.9.13) (2020-01-31)
+
+
+### Bug Fixes
+
+* styleguide versions ([#2512](https://github.com/newsuk/times-components/issues/2512)) ([d33b7db](https://github.com/newsuk/times-components/commit/d33b7db18ce84703f7d0cff01e30ee3ca086d1f3))
+
+
+
+
+
+## [0.9.12](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.9.11...@times-components/save-and-share-bar@0.9.12) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/save-and-share-bar
+
+
+
+
+
+## [0.9.11](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.9.10...@times-components/save-and-share-bar@0.9.11) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/save-and-share-bar
+
+
+
+
+
+## [0.9.10](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.9.9...@times-components/save-and-share-bar@0.9.10) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/save-and-share-bar
+
+
+
+
+
+## [0.9.9](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.9.8...@times-components/save-and-share-bar@0.9.9) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/save-and-share-bar
+
+
+
+
+
+## [0.9.8](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.9.7...@times-components/save-and-share-bar@0.9.8) (2020-01-30)
+
+**Note:** Version bump only for package @times-components/save-and-share-bar
+
+
+
+
+
+## [0.9.7](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.9.6...@times-components/save-and-share-bar@0.9.7) (2020-01-24)
+
+**Note:** Version bump only for package @times-components/save-and-share-bar
+
+
+
+
+
+## [0.9.6](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.9.5...@times-components/save-and-share-bar@0.9.6) (2020-01-23)
+
+**Note:** Version bump only for package @times-components/save-and-share-bar
+
+
+
+
+
+## [0.9.5](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.9.4...@times-components/save-and-share-bar@0.9.5) (2020-01-23)
+
+**Note:** Version bump only for package @times-components/save-and-share-bar
+
+
+
+
+
+## [0.9.4](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.9.3...@times-components/save-and-share-bar@0.9.4) (2020-01-23)
+
+
+### Bug Fixes
+
+* prevent default for copy and email buttons ([#2491](https://github.com/newsuk/times-components/issues/2491)) ([eddab24](https://github.com/newsuk/times-components/commit/eddab241ae143aeea33ae22991193d16395aa40c))
+
+
+
+
+
+## [0.9.3](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.9.2...@times-components/save-and-share-bar@0.9.3) (2020-01-22)
+
+**Note:** Version bump only for package @times-components/save-and-share-bar
+
+
+
+
+
 ## [0.9.2](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.9.1...@times-components/save-and-share-bar@0.9.2) (2020-01-15)
 
 **Note:** Version bump only for package @times-components/save-and-share-bar

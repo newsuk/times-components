@@ -3,6 +3,81 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.150](https://github.com/newsuk/times-components/compare/@times-components/article-error@0.2.149...@times-components/article-error@0.2.150) (2020-02-04)
+
+**Note:** Version bump only for package @times-components/article-error
+
+
+
+
+
+## [0.2.149](https://github.com/newsuk/times-components/compare/@times-components/article-error@0.2.148...@times-components/article-error@0.2.149) (2020-01-31)
+
+
+### Bug Fixes
+
+* styleguide versions ([#2512](https://github.com/newsuk/times-components/issues/2512)) ([d33b7db](https://github.com/newsuk/times-components/commit/d33b7db18ce84703f7d0cff01e30ee3ca086d1f3))
+
+
+
+
+
+## [0.2.148](https://github.com/newsuk/times-components/compare/@times-components/article-error@0.2.147...@times-components/article-error@0.2.148) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/article-error
+
+
+
+
+
+## [0.2.147](https://github.com/newsuk/times-components/compare/@times-components/article-error@0.2.146...@times-components/article-error@0.2.147) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/article-error
+
+
+
+
+
+## [0.2.146](https://github.com/newsuk/times-components/compare/@times-components/article-error@0.2.145...@times-components/article-error@0.2.146) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/article-error
+
+
+
+
+
+## [0.2.145](https://github.com/newsuk/times-components/compare/@times-components/article-error@0.2.144...@times-components/article-error@0.2.145) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/article-error
+
+
+
+
+
+## [0.2.144](https://github.com/newsuk/times-components/compare/@times-components/article-error@0.2.143...@times-components/article-error@0.2.144) (2020-01-30)
+
+**Note:** Version bump only for package @times-components/article-error
+
+
+
+
+
+## [0.2.143](https://github.com/newsuk/times-components/compare/@times-components/article-error@0.2.142...@times-components/article-error@0.2.143) (2020-01-23)
+
+**Note:** Version bump only for package @times-components/article-error
+
+
+
+
+
+## [0.2.142](https://github.com/newsuk/times-components/compare/@times-components/article-error@0.2.141...@times-components/article-error@0.2.142) (2020-01-22)
+
+**Note:** Version bump only for package @times-components/article-error
+
+
+
+
+
 ## [0.2.141](https://github.com/newsuk/times-components/compare/@times-components/article-error@0.2.140...@times-components/article-error@0.2.141) (2020-01-15)
 
 **Note:** Version bump only for package @times-components/article-error

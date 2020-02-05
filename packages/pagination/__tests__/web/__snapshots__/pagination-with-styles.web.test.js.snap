@@ -61,10 +61,6 @@ exports[`1. renders 1`] = `
 }
 
 @media (min-width:768px) {
-
-}
-
-@media (min-width:768px) {
   .c5 {
     display: inline;
   }

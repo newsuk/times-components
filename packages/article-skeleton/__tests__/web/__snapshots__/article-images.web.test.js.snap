@@ -8,6 +8,7 @@ exports[`1. a primary image 1`] = `
   <article
     data-article-identifier="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
     data-article-sectionname="Some Section"
+    data-article-template="mainstandard"
     id="article-main"
   >
     <Head />
@@ -61,7 +62,8 @@ exports[`1. a primary image 1`] = `
                 Object {
                   "display": "primary",
                   "highResSize": null,
-                  "lowResSize": 100,
+                  "lowResQuality": 3,
+                  "lowResSize": 400,
                   "ratio": "3:2",
                   "uri": "https://image-2.io",
                 }
@@ -69,6 +71,9 @@ exports[`1. a primary image 1`] = `
             />
           </div>
         </div>
+        <div
+          id="paywall-portal-article-footer"
+        />
         <ArticleExtras
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
@@ -102,6 +107,7 @@ exports[`2. a fullwidth image 1`] = `
   <article
     data-article-identifier="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
     data-article-sectionname="Some Section"
+    data-article-template="mainstandard"
     id="article-main"
   >
     <Head />
@@ -155,7 +161,8 @@ exports[`2. a fullwidth image 1`] = `
                 Object {
                   "display": "fullwidth",
                   "highResSize": null,
-                  "lowResSize": 100,
+                  "lowResQuality": 3,
+                  "lowResSize": 400,
                   "ratio": "3:2",
                   "uri": "https://image-2.io",
                 }
@@ -163,6 +170,9 @@ exports[`2. a fullwidth image 1`] = `
             />
           </div>
         </div>
+        <div
+          id="paywall-portal-article-footer"
+        />
         <ArticleExtras
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
@@ -196,6 +206,7 @@ exports[`3. a secondary image 1`] = `
   <article
     data-article-identifier="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
     data-article-sectionname="Some Section"
+    data-article-template="mainstandard"
     id="article-main"
   >
     <Head />
@@ -249,7 +260,8 @@ exports[`3. a secondary image 1`] = `
                 Object {
                   "display": "secondary",
                   "highResSize": null,
-                  "lowResSize": 100,
+                  "lowResQuality": 3,
+                  "lowResSize": 400,
                   "ratio": "3:2",
                   "uri": "https://image-2.io",
                 }
@@ -257,6 +269,9 @@ exports[`3. a secondary image 1`] = `
             />
           </div>
         </div>
+        <div
+          id="paywall-portal-article-footer"
+        />
         <ArticleExtras
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
@@ -290,6 +305,7 @@ exports[`4. an inline image 1`] = `
   <article
     data-article-identifier="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
     data-article-sectionname="Some Section"
+    data-article-template="mainstandard"
     id="article-main"
   >
     <Head />
@@ -343,7 +359,8 @@ exports[`4. an inline image 1`] = `
                 Object {
                   "display": "inline",
                   "highResSize": null,
-                  "lowResSize": 100,
+                  "lowResQuality": 3,
+                  "lowResSize": 400,
                   "ratio": "9:4",
                   "uri": "https://image-inline.io",
                 }
@@ -351,6 +368,9 @@ exports[`4. an inline image 1`] = `
             />
           </div>
         </div>
+        <div
+          id="paywall-portal-article-footer"
+        />
         <ArticleExtras
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"

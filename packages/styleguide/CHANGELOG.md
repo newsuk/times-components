@@ -3,6 +3,84 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.35.2](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.35.1...@times-components/styleguide@3.35.2) (2020-02-04)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+## [3.35.1](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.34.5...@times-components/styleguide@3.35.1) (2020-01-31)
+
+
+### Bug Fixes
+
+* styleguide versions ([#2512](https://github.com/newsuk/times-components/issues/2512)) ([d33b7db](https://github.com/newsuk/times-components/commit/d33b7db18ce84703f7d0cff01e30ee3ca086d1f3))
+
+
+
+
+
+## [3.34.5](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.34.4...@times-components/styleguide@3.34.5) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+## [3.34.4](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.34.3...@times-components/styleguide@3.34.4) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+## [3.34.3](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.34.2...@times-components/styleguide@3.34.3) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+## [3.34.2](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.34.1...@times-components/styleguide@3.34.2) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+## [3.34.1](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.34.0...@times-components/styleguide@3.34.1) (2020-01-30)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
+# [3.34.0](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.33.16...@times-components/styleguide@3.34.0) (2020-01-23)
+
+
+### Features
+
+* REPLAT-11948 article H-tags web implemented ([#2493](https://github.com/newsuk/times-components/issues/2493)) ([74ee7b1](https://github.com/newsuk/times-components/commit/74ee7b1bf6b9526576c55308399285eaf66a16d7))
+
+
+
+
+
+## [3.33.16](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.33.15...@times-components/styleguide@3.33.16) (2020-01-22)
+
+**Note:** Version bump only for package @times-components/styleguide
+
+
+
+
+
 ## [3.33.15](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.33.14...@times-components/styleguide@3.33.15) (2020-01-15)
 
 **Note:** Version bump only for package @times-components/styleguide

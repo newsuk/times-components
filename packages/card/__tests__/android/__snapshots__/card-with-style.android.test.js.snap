@@ -25,6 +25,7 @@ exports[`1. card default state 1`] = `
       aspectRatio={0.6666666666666666}
       fadeImageIn={false}
       highResSize={900}
+      lowResQuality={null}
       lowResSize={25}
       uri="https://img.io/img"
     />
@@ -84,6 +85,7 @@ exports[`2. card with reversed state 1`] = `
       aspectRatio={0.6666666666666666}
       fadeImageIn={false}
       highResSize={900}
+      lowResQuality={null}
       lowResSize={25}
       uri="https://img.io/img"
     />
@@ -116,6 +118,7 @@ exports[`3. card loading state 1`] = `
       aspectRatio={0.6666666666666666}
       fadeImageIn={false}
       highResSize={900}
+      lowResQuality={null}
       lowResSize={25}
       uri="https://img.io/img"
     />
@@ -247,6 +250,7 @@ exports[`4. card reversed loading state 1`] = `
       aspectRatio={0.6666666666666666}
       fadeImageIn={false}
       highResSize={900}
+      lowResQuality={null}
       lowResSize={25}
       uri="https://img.io/img"
     />

@@ -9,6 +9,7 @@ export const propTypes = {
   disablePlaceholder: PropTypes.bool,
   fadeImageIn: PropTypes.bool,
   highResSize: PropTypes.number,
+  lowResQuality: PropTypes.number,
   lowResSize: PropTypes.number,
   onLayout: PropTypes.func,
   rounded: PropTypes.bool,

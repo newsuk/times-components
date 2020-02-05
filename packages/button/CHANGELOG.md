@@ -3,6 +3,81 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.4.30](https://github.com/newsuk/times-components/compare/@times-components/button@2.4.29...@times-components/button@2.4.30) (2020-02-04)
+
+**Note:** Version bump only for package @times-components/button
+
+
+
+
+
+## [2.4.29](https://github.com/newsuk/times-components/compare/@times-components/button@2.4.28...@times-components/button@2.4.29) (2020-01-31)
+
+
+### Bug Fixes
+
+* styleguide versions ([#2512](https://github.com/newsuk/times-components/issues/2512)) ([d33b7db](https://github.com/newsuk/times-components/commit/d33b7db18ce84703f7d0cff01e30ee3ca086d1f3))
+
+
+
+
+
+## [2.4.28](https://github.com/newsuk/times-components/compare/@times-components/button@2.4.27...@times-components/button@2.4.28) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/button
+
+
+
+
+
+## [2.4.27](https://github.com/newsuk/times-components/compare/@times-components/button@2.4.26...@times-components/button@2.4.27) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/button
+
+
+
+
+
+## [2.4.26](https://github.com/newsuk/times-components/compare/@times-components/button@2.4.25...@times-components/button@2.4.26) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/button
+
+
+
+
+
+## [2.4.25](https://github.com/newsuk/times-components/compare/@times-components/button@2.4.24...@times-components/button@2.4.25) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/button
+
+
+
+
+
+## [2.4.24](https://github.com/newsuk/times-components/compare/@times-components/button@2.4.23...@times-components/button@2.4.24) (2020-01-30)
+
+**Note:** Version bump only for package @times-components/button
+
+
+
+
+
+## [2.4.23](https://github.com/newsuk/times-components/compare/@times-components/button@2.4.22...@times-components/button@2.4.23) (2020-01-23)
+
+**Note:** Version bump only for package @times-components/button
+
+
+
+
+
+## [2.4.22](https://github.com/newsuk/times-components/compare/@times-components/button@2.4.21...@times-components/button@2.4.22) (2020-01-22)
+
+**Note:** Version bump only for package @times-components/button
+
+
+
+
+
 ## [2.4.21](https://github.com/newsuk/times-components/compare/@times-components/button@2.4.20...@times-components/button@2.4.21) (2020-01-15)
 
 **Note:** Version bump only for package @times-components/button

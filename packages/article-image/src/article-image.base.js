@@ -61,6 +61,7 @@ const ArticleImage = ({
     display,
     highResSize,
     index,
+    lowResQuality,
     lowResSize,
     ratio,
     uri,
@@ -105,6 +106,7 @@ const ArticleImage = ({
           index={index}
           images={images}
           lowResSize={lowResSize}
+          lowResQuality={lowResQuality}
           onImagePress={onImagePress}
           uri={uri}
           relativeWidth={relativeWidth}

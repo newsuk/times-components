@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import PropTypes from "prop-types";
+
 import { AdContainer } from "@times-components/ad";
 import ArticleExtras from "@times-components/article-extras";
 import LazyLoad from "@times-components/lazy-load";
@@ -17,11 +18,12 @@ import articleTrackingContext from "./tracking/article-tracking-context";
 import insertDropcapIntoAST from "./dropcap-util";
 import {
   BodyContainer,
-  HeaderAdContainer,
+  getHeaderAdStyles,
   HeaderContainer,
   MainContainer
 } from "./styles/responsive";
 import Head from "./head";
+import PaywallPortal from "./paywall-portal";
 import StickySaveAndShareBar from "./sticky-save-and-share-bar";
 
 const adStyle = {
@@ -52,7 +54,8 @@ class ArticleSkeleton extends Component {
       logoUrl,
       receiveChildList,
       spotAccountId,
-      paidContentClassName
+      paidContentClassName,
+      isPreview
     } = this.props;
 
     const {
@@ -76,20 +79,48 @@ class ArticleSkeleton extends Component {
       content.length > 0 &&
       insertDropcapIntoAST(content, template, dropcapsDisabled);
 
+    const HeaderAdContainer = getHeaderAdStyles(template);
+
     receiveChildList([
       {
         elementId: "related-articles",
         name: "related articles"
       }
     ]);
-
     return (
       <StickyProvider>
+        {isPreview && (
+          <div className="Container">
+            <div className="ArticleMetaBanner">
+              <div className="ArticleMetaBanner-field">
+                <label htmlFor="ArticleMetaBanner-uuid">
+                  UUID
+                  <input
+                    type="text"
+                    placeholder="UUID"
+                    name="UUID"
+                    id="ArticleMetaBanner-uuid"
+                    value={articleId}
+                    readOnly
+                  />
+                </label>
+                <button
+                  type="button"
+                  className="ArticleMetaBanner-button"
+                  data-clipboard-target="#ArticleMetaBanner-uuid"
+                >
+                  Copy
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
         <div id="article-marketing-header" />
         <article
           id="article-main"
           data-article-identifier={article.id}
           data-article-sectionname={section}
+          data-article-template={template}
           ref={node => {
             this.node = node;
           }}
@@ -137,7 +168,11 @@ class ArticleSkeleton extends Component {
                       paidContentClassName={paidContentClassName}
                     />
                   )}
-                  <LazyLoad rootMargin={spacing(10)} threshold={0.5}>
+                  <PaywallPortal
+                    id="paywall-portal-article-footer"
+                    componentName="subscribe-cta"
+                  />
+                  <LazyLoad rootMargin={spacing(40)} threshold={0}>
                     {({ observed, registerNode }) => (
                       <ArticleExtras
                         analyticsStream={analyticsStream}

@@ -90,7 +90,7 @@ const tests = [
           .find("TimesImage")
           .at(0)
           .props().lowResSize
-      ).toEqual(100);
+      ).toEqual(200);
 
       expect(
         component
@@ -116,7 +116,7 @@ const tests = [
           .find("TimesImage")
           .at(0)
           .props().lowResSize
-      ).toEqual(100);
+      ).toEqual(200);
 
       expect(
         component
@@ -148,7 +148,7 @@ const tests = [
         .at(1)
         .props();
 
-      expect(lowResSize).toEqual(100);
+      expect(lowResSize).toEqual(200);
 
       expect(highResSize).toEqual(null);
     }
