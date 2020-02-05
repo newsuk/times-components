@@ -107,7 +107,8 @@ exports[`1. a full article with an image as the lead asset 1`] = `
     <figure>
       <img
         alt="Some Caption"
-        src="https://crop169.io"
+        src="https://crop169.io?resize=1180"
+        srcSet="https://crop169.io?resize=320 320w, https://crop169.io?resize=685 685w, https://crop169.io?resize=1180 1180w"
       />
       <figcaption>
         Some Caption

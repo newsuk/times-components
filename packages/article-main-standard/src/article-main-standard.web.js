@@ -31,7 +31,7 @@ class ArticlePage extends Component {
     this.renderHeader = this.renderHeader.bind(this);
   }
 
-  renderHeader(parentProps) {
+  renderHeader() {
     const { article } = this.props;
     const {
       bylines,
@@ -65,11 +65,7 @@ class ArticlePage extends Component {
             <ArticleTopics topics={topics} />
           </MetaContainer>
         </HeaderTopContainer>
-        <LeadAsset
-          {...getLeadAsset(article)}
-          renderCaption={renderCaption}
-          width={parentProps.width}
-        />
+        <LeadAsset {...getLeadAsset(article)} renderCaption={renderCaption} />
         <ArticleMeta {...metaProps} inline className="inline-meta" />
       </Fragment>
     );

@@ -19,8 +19,7 @@ const videoLeadAssetPropTypes = {
 export const imageLeadAssetPropTypes = {
   aspectRatio: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
-  uri: PropTypes.string.isRequired,
-  size: PropTypes.number.isRequired
+  uri: PropTypes.string.isRequired
 };
 
 export const videoPropTypes = {
