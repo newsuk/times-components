@@ -70,7 +70,7 @@
     "@times-components/message-bar": "0.3.31",
     "@times-components/provider": "1.21.27",
     "@times-components/responsive": "0.5.32",
-    "@times-components/styleguide": "3.35.3"
+    "@times-components/styleguide": "3.36.0"
   },
   "resolutions": {
     "react": "16.9.0",

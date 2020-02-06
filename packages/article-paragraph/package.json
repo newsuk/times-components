@@ -41,7 +41,7 @@
     "@times-components/context": "1.2.0",
     "@times-components/markup-forest": "1.7.30",
     "@times-components/responsive": "0.5.32",
-    "@times-components/styleguide": "3.35.3",
+    "@times-components/styleguide": "3.36.0",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"
   },

@@ -69,7 +69,7 @@
   },
   "dependencies": {
     "@times-components/link": "3.6.12",
-    "@times-components/styleguide": "3.35.3",
+    "@times-components/styleguide": "3.36.0",
     "@times-components/svgs": "2.7.28",
     "@times-components/tracking": "2.5.28",
     "prop-types": "15.7.2",

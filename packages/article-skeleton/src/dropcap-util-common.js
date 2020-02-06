@@ -80,18 +80,34 @@ const findFirstTextNode = children => {
   return children;
 };
 
+const getChild = children => {
+  if (children[0].name === "paragraph") {
+    return children[0];
+  }
+
+  if (children.length > 1 && children[1].name === "paragraph") {
+    return children[1];
+  }
+
+  return null;
+};
+
 const insertDropcapIntoAST = (children, template, isDropcapDisabled) => {
   try {
     if (
       template &&
       templateWithDropCaps.includes(template) &&
       !isDropcapDisabled &&
-      children.length > 0 &&
-      children[0].name === "paragraph" &&
-      children[0].children.length > 0
+      children.length > 0
     ) {
-      const withCap = splitNode(children[0]);
-      const withoutCap = splitNode(children[0]);
+      const child = getChild(children);
+
+      if (!child || child.name !== "paragraph" || child.children.length === 0) {
+        return children;
+      }
+
+      const withCap = splitNode(child);
+      const withoutCap = splitNode(child);
 
       const newCapChildren = findFirstTextNode(withCap.children);
       newCapChildren.splice(1);
