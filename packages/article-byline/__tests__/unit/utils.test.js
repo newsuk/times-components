@@ -17,7 +17,7 @@ describe("trimCommasAndDashes", () => {
   });
   it("shouldn't remove comma between inline text elements", () => {
     expect(trimCommasAndDashes("John Simpson, Crime Correspondent")).toBe(
-      "John Simpson, Crime Correspondent TEST"
+      "John Simpson, Crime Correspondent"
     );
   });
 });
