@@ -1,11 +1,21 @@
+const hasTiles = t => t && t.tiles && t.tiles.length > 0;
+
+const hasSlices = s => s.slices && s.slices.length > 0;
+
+const hasSections = s =>
+  s.slices[0].sections && s.slices[0].sections.length > 0;
+
+const getSectionTitle = t =>
+  t.slices[0].sections[0].title
+    ? t.slices[0].sections[0].title.toLowerCase()
+    : "";
+
 module.exports = article =>
-  article &&
-  article.tiles &&
-  article.tiles.length > 0 &&
-  article.tiles[0].slices &&
-  article.tiles[0].slices.length > 0 &&
-  article.tiles[0].slices[0].sections &&
-  article.tiles[0].slices[0].sections.length > 0 &&
-  article.tiles[0].slices[0].sections[0].title
-    ? article.tiles[0].slices[0].sections[0].title.toLowerCase()
-    : "default";
+  hasTiles(article) &&
+  article.tiles.reduce(
+    (acc, curr) =>
+      hasSlices(curr) && hasSections(curr) && getSectionTitle(curr)
+        ? getSectionTitle(curr)
+        : acc,
+    "default"
+  );
