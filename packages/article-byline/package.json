@@ -13,7 +13,7 @@
     "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
     "test:web": "jest --config='./__tests__/web/jest.config.js'",
     "test:unit": "jest --config='./__tests__/unit/jest.config.js' ./__tests__/unit",
-    "test:all": "yarn test:android --coverage && yarn test:ios --coverage && yarn test:web --coverage yarn test:unit --coverage",
+    "test:all": "yarn test:android --coverage && yarn test:ios --coverage && yarn test:web --coverage && yarn test:unit --coverage",
     "prepublishOnly": "yarn transpile && yarn bundle",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist",
