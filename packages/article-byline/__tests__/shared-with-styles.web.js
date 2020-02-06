@@ -34,34 +34,34 @@ export default Component => {
   shared(Component);
 
   const renderArticleBylineMainStandard = props =>
-  TestRenderer.create(
-    <View>
-      <Component {...props} isMainStandard />
-    </View>
-  );
+    TestRenderer.create(
+      <View>
+        <Component {...props} isMainStandard />
+      </View>
+    );
 
-const tests = [
-  {
-    name: "main standard template - with a single author",
-    test: () => {
-      const testInstance = renderArticleBylineMainStandard({
-        ast: authorsFixture.singleAuthor
-      });
+  const tests = [
+    {
+      name: "main standard template - with a single author",
+      test: () => {
+        const testInstance = renderArticleBylineMainStandard({
+          ast: authorsFixture.singleAuthor
+        });
 
-      expect(testInstance).toMatchSnapshot();
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "main standard template - with a very long byline",
+      test: () => {
+        const testInstance = renderArticleBylineMainStandard({
+          ast: authorsFixture.veryLongByline
+        });
+
+        expect(testInstance).toMatchSnapshot();
+      }
     }
-  },
-  {
-    name: "main standard template - with a very long byline",
-    test: () => {
-      const testInstance = renderArticleBylineMainStandard({
-        ast: authorsFixture.veryLongByline
-      });
-
-      expect(testInstance).toMatchSnapshot();
-    }
-  }
-];
+  ];
 
   iterator(tests);
 };
