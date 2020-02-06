@@ -74,7 +74,7 @@
     "@times-components/link": "3.6.12",
     "@times-components/markup-forest": "1.7.30",
     "@times-components/slice-layout": "0.45.28",
-    "@times-components/styleguide": "3.35.3",
+    "@times-components/styleguide": "3.36.0",
     "@times-components/tracking": "2.5.28",
     "lodash.get": "4.4.2",
     "prop-types": "15.7.2"

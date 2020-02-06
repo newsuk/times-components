@@ -59,7 +59,7 @@
     "@times-components/provider": "1.21.27",
     "@times-components/schema": "0.6.23",
     "@times-components/section": "1.6.29",
-    "@times-components/styleguide": "3.35.3",
+    "@times-components/styleguide": "3.36.0",
     "@times-components/topic": "5.1.30",
     "apollo-cache-inmemory": "1.5.1",
     "apollo-client": "2.5.1",

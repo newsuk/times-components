@@ -90,11 +90,10 @@ const getChild = children => {
   }
 
   return null;
-}
+};
 
 const insertDropcapIntoAST = (children, template, isDropcapDisabled) => {
   try {
-
     if (
       template &&
       templateWithDropCaps.includes(template) &&
@@ -104,7 +103,7 @@ const insertDropcapIntoAST = (children, template, isDropcapDisabled) => {
       const child = getChild(children);
 
       if (!child || child.name !== "paragraph" || child.children.length === 0) {
-        return children
+        return children;
       }
 
       const withCap = splitNode(child);
