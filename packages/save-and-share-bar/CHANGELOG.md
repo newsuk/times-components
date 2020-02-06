@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.9.16](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.9.15...@times-components/save-and-share-bar@0.9.16) (2020-02-06)
+
+
+### Bug Fixes
+
+* Dropcap when first element is interactive ([#2516](https://github.com/newsuk/times-components/issues/2516)) ([4ae6a80](https://github.com/newsuk/times-components/commit/4ae6a8025116f9d2960be7769e37ab5c43a4caee))
+
+
+
+
+
 ## [0.9.15](https://github.com/newsuk/times-components/compare/@times-components/save-and-share-bar@0.9.14...@times-components/save-and-share-bar@0.9.15) (2020-02-05)
 
 **Note:** Version bump only for package @times-components/save-and-share-bar

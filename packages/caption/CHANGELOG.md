@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.112](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.111...@times-components/caption@3.0.112) (2020-02-06)
+
+
+### Bug Fixes
+
+* Dropcap when first element is interactive ([#2516](https://github.com/newsuk/times-components/issues/2516)) ([4ae6a80](https://github.com/newsuk/times-components/commit/4ae6a8025116f9d2960be7769e37ab5c43a4caee))
+
+
+
+
+
 ## [3.0.111](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.110...@times-components/caption@3.0.111) (2020-02-05)
 
 **Note:** Version bump only for package @times-components/caption

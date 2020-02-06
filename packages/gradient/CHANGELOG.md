@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.29](https://github.com/newsuk/times-components/compare/@times-components/gradient@3.2.28...@times-components/gradient@3.2.29) (2020-02-06)
+
+
+### Bug Fixes
+
+* Dropcap when first element is interactive ([#2516](https://github.com/newsuk/times-components/issues/2516)) ([4ae6a80](https://github.com/newsuk/times-components/commit/4ae6a8025116f9d2960be7769e37ab5c43a4caee))
+
+
+
+
+
 ## [3.2.28](https://github.com/newsuk/times-components/compare/@times-components/gradient@3.2.27...@times-components/gradient@3.2.28) (2020-02-05)
 
 **Note:** Version bump only for package @times-components/gradient
