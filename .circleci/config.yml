@@ -124,6 +124,18 @@ jobs:
                       npx lerna run test:web --stream --since -- -- --ci --bail --coverage
                   working_directory: ~/project/
 
+    run_unit_tests:
+        executor: node
+        steps:
+            - checkout
+            - attach_workspace:
+                  at: ./
+            - run:
+                  name: Run Unit Tests
+                  command: |
+                      npx lerna run test:unit --stream --since -- -- --ci --bail --coverage
+                  working_directory: ~/project/
+
     run_cypress_tests:
         executor: node
         steps:
@@ -244,6 +256,9 @@ workflows:
             - run_web_tests:
                   requires:
                       - setup
+            - run_unit_tests:
+                  requires:
+                      - setup
             - run_cypress_tests:
                   requires:
                       - setup
@@ -255,6 +270,7 @@ workflows:
                       - run_android_tests
                       - run_ios_tests
                       - run_web_tests
+                      - run_unit_tests
                       - run_cypress_tests
             - publish_storybook:
                   filters:
@@ -268,6 +284,7 @@ workflows:
                       - run_android_tests
                       - run_ios_tests
                       - run_web_tests
+                      - run_unit_tests
                       - run_cypress_tests
             - publish_npm:
                   filters:
@@ -281,6 +298,7 @@ workflows:
                       - run_android_tests
                       - run_ios_tests
                       - run_web_tests
+                      - run_unit_tests
                       - run_cypress_tests
             - publish_android:
                   filters:
