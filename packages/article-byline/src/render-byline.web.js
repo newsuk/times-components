@@ -48,7 +48,7 @@ const bylineRenderers = (Component, textStyle, props = {}, length) => ({
       <InlineBlockWrapper>
         <Text className={className} key={key} style={[textStyle, bylineStyle]}>
           {[trimmedString]}
-          {!isLast ? <Text>, </Text> : ""}
+          {!isLast && <Text>, </Text>}
         </Text>
       </InlineBlockWrapper>
     ) : (
