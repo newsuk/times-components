@@ -73,7 +73,7 @@
     "@times-components/context": "1.2.1",
     "@times-components/image": "6.7.4",
     "@times-components/responsive": "0.5.34",
-    "@times-components/styleguide": "3.36.2",
+    "@times-components/styleguide": "3.36.3",
     "prop-types": "15.7.2",
     "styled-components": "4.3.2"
   },
