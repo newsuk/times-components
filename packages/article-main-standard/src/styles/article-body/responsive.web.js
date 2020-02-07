@@ -76,10 +76,16 @@ export const LeadAsset = styled(View)`
 `;
 
 export const LeadAssetCaptionContainer = styled(View)`
-  display: none;
+  margin-left: ${spacing(2)};
+  margin-right: ${spacing(2)};
+
+  @media (min-width: ${breakpoints.medium}px) {
+    width: 80.8%;
+    margin: 0 auto;
+  }
 
   @media (min-width: ${breakpoints.wide}px) {
-    display: flex;
+    width: 100%;
   }
 `;
 
