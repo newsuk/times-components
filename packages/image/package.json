@@ -74,7 +74,8 @@
     "hoist-non-react-statics": "2.5.5",
     "prop-types": "15.7.2",
     "react-native-image-zoom-viewer": "2.2.26",
-    "styled-components": "4.3.2"
+    "styled-components": "4.3.2",
+    "url-parse": "1.4.7"
   },
   "resolutions": {
     "react": "16.9.0",
