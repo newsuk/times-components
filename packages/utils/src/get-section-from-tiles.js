@@ -11,11 +11,12 @@ const getSectionTitle = t =>
     : "";
 
 module.exports = article =>
-  hasTiles(article) &&
-  article.tiles.reduce(
-    (acc, curr) =>
-      hasSlices(curr) && hasSections(curr) && getSectionTitle(curr)
-        ? getSectionTitle(curr)
-        : acc,
-    "default"
-  );
+  hasTiles(article)
+    ? article.tiles.reduce(
+        (acc, curr) =>
+          hasSlices(curr) && hasSections(curr) && getSectionTitle(curr)
+            ? getSectionTitle(curr)
+            : acc,
+        "default"
+      )
+    : "default";
