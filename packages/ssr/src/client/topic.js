@@ -12,8 +12,7 @@ if (window.nuk && window.nuk.ssr && window.nuk.topicPage) {
     debounceTimeMs,
     page,
     pageSize,
-    topicSlug,
-    useNewTopicDataSource
+    topicSlug
   } = window.nuk.topicPage;
 
   const data = {
@@ -30,11 +29,7 @@ if (window.nuk && window.nuk.ssr && window.nuk.topicPage) {
     rootTag,
     useGET: true,
     skipAuthorization: true,
-    headers: useNewTopicDataSource
-      ? {
-          "x-new-topic-data-source": true
-        }
-      : {}
+    headers: { "x-new-topic-data-source": true }
   };
 
   runClient(topic, clientOptions, data);
