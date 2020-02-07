@@ -4,6 +4,7 @@ const React = require("react");
 const { ApolloProvider } = require("react-apollo");
 const { HelmetProvider } = require("react-helmet-async");
 const { getSectionNameForAnalytics } = require("@times-components/utils/rnw");
+const { getSectionFromTiles } = require("@times-components/utils/rnw");
 const { ArticleProvider } = require("@times-components/provider/rnw");
 const { DraftArticleProvider } = require("@times-components/provider/rnw");
 const Article = require("@times-components/article/rnw").default;
@@ -12,7 +13,6 @@ const {
   defaults
 } = require("@times-components/context/rnw");
 const { scales, themeFactory } = require("@times-components/styleguide/rnw");
-const getSectionNameFromTiles = require("../lib/section-from-tiles");
 
 const scale = scales.large;
 
@@ -62,7 +62,7 @@ module.exports = (client, analyticsStream, data, helmetContext) => {
                 newskit: enableNewskit,
                 theme: {
                   ...themeFactory(
-                    getSectionNameFromTiles(article),
+                    getSectionFromTiles(article),
                     article.template
                   ),
                   scale: scale || defaults.theme.scale

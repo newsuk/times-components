@@ -12,3 +12,4 @@ export { default as getStandardTemplateCrop } from "./crop-config";
 export { default as getHeadline } from "./get-headline";
 export { default as gqlRgbaToHex } from "./gql-rgba-to-hex";
 export { default as gqlRgbaToStyle } from "./gql-rgba-to-style";
+export { default as getSectionFromTiles } from "./get-section-from-tiles";
