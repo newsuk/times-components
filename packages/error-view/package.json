@@ -62,7 +62,7 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/styleguide": "3.36.2",
+    "@times-components/styleguide": "3.36.3",
     "prop-types": "15.7.2"
   },
   "resolutions": {
