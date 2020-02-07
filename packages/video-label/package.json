@@ -38,7 +38,7 @@
   "homepage": "https://github.com/newsuk/times-components#readme",
   "dependencies": {
     "@times-components/icons": "2.14.31",
-    "@times-components/styleguide": "3.36.2",
+    "@times-components/styleguide": "3.36.3",
     "lodash.pick": "4.4.0",
     "prop-types": "15.7.2"
   },

@@ -82,7 +82,7 @@
     "@times-components/pagination": "3.4.14",
     "@times-components/provider": "1.21.29",
     "@times-components/responsive": "0.5.34",
-    "@times-components/styleguide": "3.36.2",
+    "@times-components/styleguide": "3.36.3",
     "@times-components/tracking": "2.5.30",
     "@times-components/utils": "6.2.0",
     "lodash.get": "4.4.2",
