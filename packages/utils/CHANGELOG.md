@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.2.0](https://github.com/newsuk/times-components/compare/@times-components/utils@6.1.5...@times-components/utils@6.2.0) (2020-02-07)
+
+
+### Features
+
+* get section name from tiles improvement ([#2518](https://github.com/newsuk/times-components/issues/2518)) ([524d390](https://github.com/newsuk/times-components/commit/524d390d03718349aa017ec110accbe19e015b1a))
+
+
+
+
+
 ## [6.1.5](https://github.com/newsuk/times-components/compare/@times-components/utils@6.1.4...@times-components/utils@6.1.5) (2020-02-06)
 
 
