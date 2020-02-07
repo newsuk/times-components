@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.24.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.23.3...@times-components/article-main-standard@3.24.0) (2020-02-07)
+
+
+### Features
+
+* show lead asset captions for mobile and tablet bp ([#2520](https://github.com/newsuk/times-components/issues/2520)) ([b1bb0e2](https://github.com/newsuk/times-components/commit/b1bb0e2436ad37bb47caba41722e2c18686815e3))
+
+
+
+
+
 ## [3.23.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.23.2...@times-components/article-main-standard@3.23.3) (2020-02-07)
 
 **Note:** Version bump only for package @times-components/article-main-standard
