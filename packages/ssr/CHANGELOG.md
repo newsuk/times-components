@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.14.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.13.45...@times-components/ssr@2.14.0) (2020-02-07)
+
+
+### Features
+
+* get section name from tiles improvement ([#2518](https://github.com/newsuk/times-components/issues/2518)) ([524d390](https://github.com/newsuk/times-components/commit/524d390d03718349aa017ec110accbe19e015b1a))
+
+
+
+
+
 ## [2.13.45](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.13.44...@times-components/ssr@2.13.45) (2020-02-06)
 
 
