@@ -29,7 +29,9 @@ if (window.nuk && window.nuk.ssr && window.nuk.topicPage) {
     rootTag,
     useGET: true,
     skipAuthorization: true,
-    headers: { "x-new-topic-data-source": true }
+    headers: { 
+      "x-new-topic-data-source": true 
+    }
   };
 
   runClient(topic, clientOptions, data);
