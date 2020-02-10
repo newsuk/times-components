@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.24.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.24.1...@times-components/article-main-standard@3.24.2) (2020-02-10)
+
+
+### Bug Fixes
+
+* REPLAT-12259 mainstandard mobile caption ([#2525](https://github.com/newsuk/times-components/issues/2525)) ([f681fa5](https://github.com/newsuk/times-components/commit/f681fa57146dcf66aa1e5afdf14fd6b0a9d80108))
+
+
+
+
+
 ## [3.24.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.24.0...@times-components/article-main-standard@3.24.1) (2020-02-10)
 
 **Note:** Version bump only for package @times-components/article-main-standard

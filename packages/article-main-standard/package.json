@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-main-standard",
-  "version": "3.24.1",
+  "version": "3.24.2",
   "description": "Main Standard Article Template",
   "main": "dist/article-main-standard",
   "dev": "src/article-main-standard",
