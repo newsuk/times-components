@@ -49,6 +49,9 @@ const sharedStyles = scale => {
       flexDirection: "column",
       paddingBottom: spacing(5),
       width: "100%"
+    },
+    captionContainer: {
+      paddingHorizontal: spacing(2)
     }
   };
 };
