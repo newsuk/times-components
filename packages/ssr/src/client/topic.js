@@ -8,12 +8,7 @@ if (window.nuk && window.nuk.ssr && window.nuk.topicPage) {
     makeTopicUrl,
     mapTopicToAdConfig
   } = window.nuk.ssr;
-  const {
-    debounceTimeMs,
-    page,
-    pageSize,
-    topicSlug
-  } = window.nuk.topicPage;
+  const { debounceTimeMs, page, pageSize, topicSlug } = window.nuk.topicPage;
 
   const data = {
     debounceTimeMs,
@@ -29,8 +24,8 @@ if (window.nuk && window.nuk.ssr && window.nuk.topicPage) {
     rootTag,
     useGET: true,
     skipAuthorization: true,
-    headers: { 
-      "x-new-topic-data-source": true 
+    headers: {
+      "x-new-topic-data-source": true
     }
   };
 

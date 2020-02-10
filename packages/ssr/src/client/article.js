@@ -52,8 +52,8 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
   const clientOptions = {
     rootTag,
     useGET: false,
-    headers: { 
-      "x-new-topic-data-source": true 
+    headers: {
+      "x-new-topic-data-source": true
     }
   };
 
