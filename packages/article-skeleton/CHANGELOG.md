@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.28.4](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.28.3...@times-components/article-skeleton@1.28.4) (2020-02-10)
+
+
+### Bug Fixes
+
+* refactor url constructor ([#2521](https://github.com/newsuk/times-components/issues/2521)) ([a7324f0](https://github.com/newsuk/times-components/commit/a7324f0af65d07b0b9b6f053fc3233a1e87fa52f))
+
+
+
+
+
 ## [1.28.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.28.2...@times-components/article-skeleton@1.28.3) (2020-02-07)
 
 **Note:** Version bump only for package @times-components/article-skeleton
