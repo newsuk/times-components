@@ -12,7 +12,8 @@
     "test:android": "jest --config='./__tests__/android/jest.config.js'",
     "test:ios": "jest --config='./__tests__/ios/jest.config.js'",
     "test:web": "jest --config='./__tests__/web/jest.config.js'",
-    "test:all": "yarn test:android --coverage && yarn test:ios --coverage && yarn test:web --coverage",
+    "test:unit": "jest --config='./__tests__/unit/jest.config.js' ./__tests__/unit",
+    "test:all": "yarn test:android --coverage && yarn test:ios --coverage && yarn test:web --coverage && yarn test:unit --coverage",
     "prepublishOnly": "yarn transpile && yarn bundle",
     "cleanup-dist": "rm -rf dist",
     "transpile": "yarn cleanup-dist && babel src -d dist",
@@ -68,7 +69,8 @@
     "@times-components/markup-forest": "1.7.30",
     "@times-components/styleguide": "3.36.4",
     "@times-components/tracking": "2.5.31",
-    "prop-types": "15.7.2"
+    "prop-types": "15.7.2",
+    "styled-components": "4.3.2"
   },
   "resolutions": {
     "react": "16.9.0",

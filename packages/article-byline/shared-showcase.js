@@ -116,6 +116,19 @@ export default (Component, name) => ({
       ),
       name: "Byline with style overriden",
       type: "story"
+    },
+    {
+      component: (_, { decorateAction }) => (
+        <ComponentWrapper>
+          <Component
+            ast={authorsAST.veryLongByline}
+            {...getProps(decorateAction)}
+            isMainStandard
+          />
+        </ComponentWrapper>
+      ),
+      name: "Byline main standard template",
+      type: "story"
     }
   ],
   name
