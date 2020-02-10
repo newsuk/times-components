@@ -1,14 +1,10 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import { Text } from "react-native";
-import styled from "styled-components";
 import renderTrees from "@times-components/markup-forest";
 import renderers from "@times-components/markup";
 import trimCommasAndDashes from "./utils";
-
-const InlineBlockWrapper = styled.span`
-  display: inline-block;
-`;
+import InlineBlockWrapper from "./styles/responsive";
 
 const bylineRenderers = (Component, textStyle, props = {}, length) => ({
   ...renderers,
