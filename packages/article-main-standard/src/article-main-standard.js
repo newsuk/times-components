@@ -53,9 +53,12 @@ class ArticlePage extends Component {
                 getImageCrop={getStandardTemplateCrop}
                 onImagePress={onImagePress}
                 onVideoPress={onVideoPress}
-                renderCaption={({ caption }) =>
-                  isTablet && <Caption {...caption} />
-                }
+                renderCaption={({ caption }) => (
+                  <Caption
+                    {...caption}
+                    style={!isTablet && { container: styles.captionContainer }}
+                  />
+                )}
                 style={[styles.leadAsset, isTablet && styles.leadAssetTablet]}
                 width={Math.min(parentProps.width, tabletWidth)}
               />

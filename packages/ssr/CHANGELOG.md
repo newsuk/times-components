@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.15.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.14.3...@times-components/ssr@2.15.0) (2020-02-10)
+
+
+### Features
+
+* **TNLT-193:** added newSoureData to headers ([#2524](https://github.com/newsuk/times-components/issues/2524)) ([0ed3865](https://github.com/newsuk/times-components/commit/0ed38656998c621dd09fcf0d59632dc6a2b0a34a))
+
+
+
+
+
 ## [2.14.3](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.14.2...@times-components/ssr@2.14.3) (2020-02-10)
 
 **Note:** Version bump only for package @times-components/ssr
