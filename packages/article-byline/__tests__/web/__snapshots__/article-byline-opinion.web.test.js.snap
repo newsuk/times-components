@@ -144,7 +144,7 @@ exports[`8. main standard template - single inline element 1`] = `
   className="css-view-1dbjc4n"
 >
   <span
-    className="render-bylineweb__InlineBlockWrapper-sc-99j5ao-0 gfPGYM"
+    className="responsiveweb-e5ajv9-0 gOHwqY"
   >
     <div
       className="css-text-901oao r-color-1dunems r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw"
@@ -160,7 +160,7 @@ exports[`9. main standard template - with the author in the beginning 1`] = `
   className="css-view-1dbjc4n"
 >
   <span
-    className="render-bylineweb__InlineBlockWrapper-sc-99j5ao-0 gfPGYM"
+    className="responsiveweb-e5ajv9-0 gOHwqY"
   >
     <div
       className="css-text-901oao r-color-1dunems r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw"
@@ -174,7 +174,7 @@ exports[`9. main standard template - with the author in the beginning 1`] = `
     </div>
   </span>
   <span
-    className="render-bylineweb__InlineBlockWrapper-sc-99j5ao-0 gfPGYM"
+    className="responsiveweb-e5ajv9-0 gOHwqY"
   >
     <div
       className="css-text-901oao r-color-1dunems r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw"
@@ -190,7 +190,7 @@ exports[`10. main standard template - with the author at the end 1`] = `
   className="css-view-1dbjc4n"
 >
   <span
-    className="render-bylineweb__InlineBlockWrapper-sc-99j5ao-0 gfPGYM"
+    className="responsiveweb-e5ajv9-0 gOHwqY"
   >
     <div
       className="css-text-901oao r-color-1dunems r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw"
@@ -204,7 +204,7 @@ exports[`10. main standard template - with the author at the end 1`] = `
     </div>
   </span>
   <span
-    className="render-bylineweb__InlineBlockWrapper-sc-99j5ao-0 gfPGYM"
+    className="responsiveweb-e5ajv9-0 gOHwqY"
   >
     <div
       className="css-text-901oao r-color-1dunems r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw"
@@ -221,7 +221,7 @@ exports[`11. main standard template - with multiple authors separated by a pipe,
   className="css-view-1dbjc4n"
 >
   <span
-    className="render-bylineweb__InlineBlockWrapper-sc-99j5ao-0 gfPGYM"
+    className="responsiveweb-e5ajv9-0 gOHwqY"
   >
     <div
       className="css-text-901oao r-color-1dunems r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw"
@@ -235,7 +235,7 @@ exports[`11. main standard template - with multiple authors separated by a pipe,
     </div>
   </span>
   <span
-    className="render-bylineweb__InlineBlockWrapper-sc-99j5ao-0 gfPGYM"
+    className="responsiveweb-e5ajv9-0 gOHwqY"
   >
     <div
       className="css-text-901oao r-color-1dunems r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw"
@@ -249,7 +249,7 @@ exports[`11. main standard template - with multiple authors separated by a pipe,
     </div>
   </span>
   <span
-    className="render-bylineweb__InlineBlockWrapper-sc-99j5ao-0 gfPGYM"
+    className="responsiveweb-e5ajv9-0 gOHwqY"
   >
     <div
       className="css-text-901oao r-color-1dunems r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw"
@@ -266,7 +266,7 @@ exports[`12. main standard template - with multiple authors separated by text wi
   className="css-view-1dbjc4n"
 >
   <span
-    className="render-bylineweb__InlineBlockWrapper-sc-99j5ao-0 gfPGYM"
+    className="responsiveweb-e5ajv9-0 gOHwqY"
   >
     <div
       className="css-text-901oao r-color-1dunems r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw"
@@ -280,7 +280,7 @@ exports[`12. main standard template - with multiple authors separated by text wi
     </div>
   </span>
   <span
-    className="render-bylineweb__InlineBlockWrapper-sc-99j5ao-0 gfPGYM"
+    className="responsiveweb-e5ajv9-0 gOHwqY"
   >
     <div
       className="css-text-901oao r-color-1dunems r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw"
@@ -294,7 +294,7 @@ exports[`12. main standard template - with multiple authors separated by text wi
     </div>
   </span>
   <span
-    className="render-bylineweb__InlineBlockWrapper-sc-99j5ao-0 gfPGYM"
+    className="responsiveweb-e5ajv9-0 gOHwqY"
   >
     <div
       className="css-text-901oao r-color-1dunems r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw"
@@ -311,7 +311,7 @@ exports[`13. main standard template - with multiple authors separated by spaces 
   className="css-view-1dbjc4n"
 >
   <span
-    className="render-bylineweb__InlineBlockWrapper-sc-99j5ao-0 gfPGYM"
+    className="responsiveweb-e5ajv9-0 gOHwqY"
   >
     <div
       className="css-text-901oao r-color-1dunems r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw"
@@ -325,7 +325,7 @@ exports[`13. main standard template - with multiple authors separated by spaces 
     </div>
   </span>
   <span
-    className="render-bylineweb__InlineBlockWrapper-sc-99j5ao-0 gfPGYM"
+    className="responsiveweb-e5ajv9-0 gOHwqY"
   >
     <div
       className="css-text-901oao r-color-1dunems r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw"
@@ -339,7 +339,7 @@ exports[`13. main standard template - with multiple authors separated by spaces 
     </div>
   </span>
   <span
-    className="render-bylineweb__InlineBlockWrapper-sc-99j5ao-0 gfPGYM"
+    className="responsiveweb-e5ajv9-0 gOHwqY"
   >
     <div
       className="css-text-901oao r-color-1dunems r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw"

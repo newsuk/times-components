@@ -19,7 +19,7 @@ exports[`1. main standard template - with a single author 1`] = `
   className="css-view-1dbjc4n"
 >
   <span
-    className="render-bylineweb__InlineBlockWrapper-sc-99j5ao-0 gfPGYM"
+    className="responsiveweb-e5ajv9-0 gOHwqY"
   >
     <div
       className="css-text-901oao r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S1"
@@ -76,7 +76,7 @@ exports[`2. main standard template - with a very long byline 1`] = `
   className="css-view-1dbjc4n"
 >
   <span
-    className="render-bylineweb__InlineBlockWrapper-sc-99j5ao-0 gfPGYM"
+    className="responsiveweb-e5ajv9-0 gOHwqY"
   >
     <div
       className="css-text-901oao r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S1"
@@ -90,7 +90,7 @@ exports[`2. main standard template - with a very long byline 1`] = `
     </div>
   </span>
   <span
-    className="render-bylineweb__InlineBlockWrapper-sc-99j5ao-0 gfPGYM"
+    className="responsiveweb-e5ajv9-0 gOHwqY"
   >
     <div
       className="css-text-901oao r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S1"
@@ -104,7 +104,7 @@ exports[`2. main standard template - with a very long byline 1`] = `
     </div>
   </span>
   <span
-    className="render-bylineweb__InlineBlockWrapper-sc-99j5ao-0 gfPGYM"
+    className="responsiveweb-e5ajv9-0 gOHwqY"
   >
     <div
       className="css-text-901oao r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S1"
@@ -118,7 +118,7 @@ exports[`2. main standard template - with a very long byline 1`] = `
     </div>
   </span>
   <span
-    className="render-bylineweb__InlineBlockWrapper-sc-99j5ao-0 gfPGYM"
+    className="responsiveweb-e5ajv9-0 gOHwqY"
   >
     <div
       className="css-text-901oao r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S1"
@@ -132,7 +132,7 @@ exports[`2. main standard template - with a very long byline 1`] = `
     </div>
   </span>
   <span
-    className="render-bylineweb__InlineBlockWrapper-sc-99j5ao-0 gfPGYM"
+    className="responsiveweb-e5ajv9-0 gOHwqY"
   >
     <div
       className="css-text-901oao r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S1"
@@ -146,7 +146,7 @@ exports[`2. main standard template - with a very long byline 1`] = `
     </div>
   </span>
   <span
-    className="render-bylineweb__InlineBlockWrapper-sc-99j5ao-0 gfPGYM"
+    className="responsiveweb-e5ajv9-0 gOHwqY"
   >
     <div
       className="css-text-901oao r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S1"
