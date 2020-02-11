@@ -12,7 +12,7 @@ export default (scale, color, dropCapFont, paragraph) => {
   if (!letter.attributes.length) {
     return false;
   }
-  const baseStyle = letter.attributes[0].tag.settings;
+  const baseStyle = letter.attributes[0][0].settings;
   const fontSize = baseStyle.fontSize * 6;
   const fontSettings = {
     fontFamily: fonts[dropCapFont],
