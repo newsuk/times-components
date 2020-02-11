@@ -7,14 +7,7 @@ export default (uriString, key, value) => {
     return uriString;
   }
 
-  let url;
-  try {
-    url = new URL(uriString);
-  } catch (e) {
-    return uriString;
-  }
-
-  if (url.search) {
+  if (uriString.includes("?")) {
     return `${uriString}&${key}=${value}`;
   }
 
