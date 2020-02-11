@@ -6,7 +6,9 @@ exports[`1. a full article with an image as the lead asset 1`] = `
   data-article-sectionname="Some Section"
   id="article-main"
 >
-  <Helmet>
+  <Helmet
+    encodeSpecialCharacters={false}
+  >
     <title>
       Some Headline
        | 
