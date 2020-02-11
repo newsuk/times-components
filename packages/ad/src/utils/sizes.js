@@ -48,7 +48,7 @@ const sizes = {
       width: 1024
     }
   ],
-  customMPU: [
+  mpu: [
     {
       height: 0,
       sizes: [],
