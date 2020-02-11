@@ -159,7 +159,7 @@ function Head({ article, logoUrl, paidContentClassName }) {
       {({ makeArticleUrl }) => {
         jsonLD.mainEntityOfPage["@id"] = makeArticleUrl(article);
         return (
-          <Helmet>
+          <Helmet encodeSpecialCharacters={false}>
             <title>
               {title} | {sectionname ? `${sectionname} | ` : ""}
               {publication}
