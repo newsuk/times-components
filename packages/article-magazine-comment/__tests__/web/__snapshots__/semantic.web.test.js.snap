@@ -6,7 +6,9 @@ exports[`1. a full article 1`] = `
   data-article-sectionname="Some Section"
   id="article-main"
 >
-  <Helmet>
+  <Helmet
+    encodeSpecialCharacters={false}
+  >
     <title>
       Some Headline
        | 

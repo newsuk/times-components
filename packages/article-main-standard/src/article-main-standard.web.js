@@ -61,7 +61,7 @@ class ArticlePage extends Component {
             />
           </HeaderContainer>
           <MetaContainer>
-            <ArticleMeta {...metaProps} />
+            <ArticleMeta {...metaProps} isMainStandard />
             <ArticleTopics topics={topics} />
           </MetaContainer>
         </HeaderTopContainer>
