@@ -36,12 +36,17 @@ function ArticleMeta({
   publishedTime,
   onAuthorPress,
   inline = false,
-  className = ""
+  className = "",
+  isMainStandard
 }) {
   const bylineRow = hasBylineData(bylines) ? (
     <MetaTextElement>
       <Text style={styles.byline}>
-        <ArticleBylineWithLinks ast={bylines} onAuthorPress={onAuthorPress} />
+        <ArticleBylineWithLinks
+          ast={bylines}
+          onAuthorPress={onAuthorPress}
+          isMainStandard={isMainStandard}
+        />
       </Text>
     </MetaTextElement>
   ) : null;

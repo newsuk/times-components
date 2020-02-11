@@ -33,7 +33,8 @@ exports[`1. article list 1`] = `
               imageRatio={1}
               imageUri="https://lead1.io"
               isLoading={false}
-              lowResSize={100}
+              lowResQuality={3}
+              lowResSize={200}
               showImage={true}
             >
               <div>
@@ -104,7 +105,8 @@ exports[`1. article list 1`] = `
               imageRatio={1}
               imageUri="https://lead2.io"
               isLoading={false}
-              lowResSize={100}
+              lowResQuality={3}
+              lowResSize={200}
               showImage={true}
             >
               <div>
@@ -198,7 +200,8 @@ exports[`1. article list 1`] = `
               imageRatio={1}
               imageUri="https://lead3.io"
               isLoading={false}
-              lowResSize={100}
+              lowResQuality={3}
+              lowResSize={200}
               showImage={true}
             >
               <div>
@@ -292,7 +295,8 @@ exports[`1. article list 1`] = `
               imageRatio={1}
               imageUri="https://lead4.io"
               isLoading={false}
-              lowResSize={100}
+              lowResQuality={3}
+              lowResSize={200}
               showImage={true}
             >
               <div>
@@ -386,7 +390,8 @@ exports[`1. article list 1`] = `
               imageRatio={1}
               imageUri="https://lead5.io"
               isLoading={false}
-              lowResSize={100}
+              lowResQuality={3}
+              lowResSize={200}
               showImage={true}
             >
               <div>
@@ -511,7 +516,8 @@ exports[`2. article list with no images 1`] = `
               imageRatio={1}
               imageUri="https://lead1.io"
               isLoading={false}
-              lowResSize={100}
+              lowResQuality={3}
+              lowResSize={200}
               showImage={false}
             >
               <div>
@@ -636,7 +642,8 @@ exports[`3. article list with missing image 1`] = `
               imageRatio={1}
               imageUri={null}
               isLoading={false}
-              lowResSize={100}
+              lowResQuality={3}
+              lowResSize={200}
               showImage={false}
             >
               <div>

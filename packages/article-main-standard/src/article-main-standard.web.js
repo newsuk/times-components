@@ -31,7 +31,7 @@ class ArticlePage extends Component {
     this.renderHeader = this.renderHeader.bind(this);
   }
 
-  renderHeader(parentProps) {
+  renderHeader() {
     const { article } = this.props;
     const {
       bylines,
@@ -61,15 +61,11 @@ class ArticlePage extends Component {
             />
           </HeaderContainer>
           <MetaContainer>
-            <ArticleMeta {...metaProps} />
+            <ArticleMeta {...metaProps} isMainStandard />
             <ArticleTopics topics={topics} />
           </MetaContainer>
         </HeaderTopContainer>
-        <LeadAsset
-          {...getLeadAsset(article)}
-          renderCaption={renderCaption}
-          width={parentProps.width}
-        />
+        <LeadAsset {...getLeadAsset(article)} renderCaption={renderCaption} />
         <ArticleMeta {...metaProps} inline className="inline-meta" />
       </Fragment>
     );
@@ -86,7 +82,8 @@ class ArticlePage extends Component {
       navigationMode,
       receiveChildList,
       spotAccountId,
-      paidContentClassName
+      paidContentClassName,
+      isPreview
     } = this.props;
 
     if (error || isLoading) {
@@ -104,6 +101,7 @@ class ArticlePage extends Component {
           navigationMode={navigationMode}
           spotAccountId={spotAccountId}
           paidContentClassName={paidContentClassName}
+          isPreview={isPreview}
         />
       </ArticleMainStandardContainer>
     );

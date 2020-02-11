@@ -19,7 +19,7 @@ class ArticlePage extends Component {
     this.renderHeader = this.renderHeader.bind(this);
   }
 
-  renderHeader({ width }) {
+  renderHeader() {
     const { article } = this.props;
     const {
       backgroundColour,
@@ -50,7 +50,6 @@ class ArticlePage extends Component {
           {...getLeadAsset(article)}
           renderCaption={({ caption }) => <CentredCaption {...caption} />}
           style={styles.leadAsset}
-          width={width}
         />
         <ArticleKeylineItem>
           <Meta
@@ -75,7 +74,8 @@ class ArticlePage extends Component {
       logoUrl,
       navigationMode,
       receiveChildList,
-      spotAccountId
+      spotAccountId,
+      isPreview
     } = this.props;
 
     if (error || isLoading) {
@@ -92,6 +92,7 @@ class ArticlePage extends Component {
         receiveChildList={receiveChildList}
         navigationMode={navigationMode}
         spotAccountId={spotAccountId}
+        isPreview={isPreview}
       />
     );
   }

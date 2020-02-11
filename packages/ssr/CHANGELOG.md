@@ -3,6 +3,320 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.15.3](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.15.2...@times-components/ssr@2.15.3) (2020-02-11)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.15.2](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.15.1...@times-components/ssr@2.15.2) (2020-02-10)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.15.1](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.15.0...@times-components/ssr@2.15.1) (2020-02-10)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+# [2.15.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.14.3...@times-components/ssr@2.15.0) (2020-02-10)
+
+
+### Features
+
+* **TNLT-193:** added newSoureData to headers ([#2524](https://github.com/newsuk/times-components/issues/2524)) ([0ed3865](https://github.com/newsuk/times-components/commit/0ed38656998c621dd09fcf0d59632dc6a2b0a34a))
+
+
+
+
+
+## [2.14.3](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.14.2...@times-components/ssr@2.14.3) (2020-02-10)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.14.2](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.14.1...@times-components/ssr@2.14.2) (2020-02-07)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.14.1](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.14.0...@times-components/ssr@2.14.1) (2020-02-07)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+# [2.14.0](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.13.45...@times-components/ssr@2.14.0) (2020-02-07)
+
+
+### Features
+
+* get section name from tiles improvement ([#2518](https://github.com/newsuk/times-components/issues/2518)) ([524d390](https://github.com/newsuk/times-components/commit/524d390d03718349aa017ec110accbe19e015b1a))
+
+
+
+
+
+## [2.13.45](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.13.44...@times-components/ssr@2.13.45) (2020-02-06)
+
+
+### Bug Fixes
+
+* Dropcap when first element is interactive ([#2516](https://github.com/newsuk/times-components/issues/2516)) ([4ae6a80](https://github.com/newsuk/times-components/commit/4ae6a8025116f9d2960be7769e37ab5c43a4caee))
+
+
+
+
+
+## [2.13.44](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.13.43...@times-components/ssr@2.13.44) (2020-02-05)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.13.43](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.13.42...@times-components/ssr@2.13.43) (2020-02-04)
+
+
+### Bug Fixes
+
+* section name for analytics ([#2514](https://github.com/newsuk/times-components/issues/2514)) ([a78279a](https://github.com/newsuk/times-components/commit/a78279ab871e1f05be89046931e45b993fa1cb22))
+
+
+
+
+
+## [2.13.42](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.13.41...@times-components/ssr@2.13.42) (2020-02-04)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.13.41](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.13.40...@times-components/ssr@2.13.41) (2020-02-03)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.13.40](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.13.39...@times-components/ssr@2.13.40) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.13.39](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.13.38...@times-components/ssr@2.13.39) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.13.38](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.13.37...@times-components/ssr@2.13.38) (2020-01-31)
+
+
+### Bug Fixes
+
+* styleguide versions ([#2512](https://github.com/newsuk/times-components/issues/2512)) ([d33b7db](https://github.com/newsuk/times-components/commit/d33b7db18ce84703f7d0cff01e30ee3ca086d1f3))
+
+
+
+
+
+## [2.13.37](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.13.36...@times-components/ssr@2.13.37) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.13.36](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.13.35...@times-components/ssr@2.13.36) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.13.35](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.13.34...@times-components/ssr@2.13.35) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.13.34](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.13.33...@times-components/ssr@2.13.34) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.13.33](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.13.32...@times-components/ssr@2.13.33) (2020-01-30)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.13.32](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.13.31...@times-components/ssr@2.13.32) (2020-01-30)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.13.31](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.13.30...@times-components/ssr@2.13.31) (2020-01-29)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.13.30](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.13.29...@times-components/ssr@2.13.30) (2020-01-29)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.13.29](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.13.28...@times-components/ssr@2.13.29) (2020-01-28)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.13.28](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.13.27...@times-components/ssr@2.13.28) (2020-01-27)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.13.27](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.13.26...@times-components/ssr@2.13.27) (2020-01-27)
+
+
+### Bug Fixes
+
+* sticky share and save bar on preview article ([#2494](https://github.com/newsuk/times-components/issues/2494)) ([e80ddc3](https://github.com/newsuk/times-components/commit/e80ddc364bb1f06d5ff8a29ff2d1831ef51057fd))
+
+
+
+
+
+## [2.13.26](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.13.25...@times-components/ssr@2.13.26) (2020-01-27)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.13.25](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.13.24...@times-components/ssr@2.13.25) (2020-01-24)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.13.24](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.13.23...@times-components/ssr@2.13.24) (2020-01-24)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.13.23](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.13.22...@times-components/ssr@2.13.23) (2020-01-23)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.13.22](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.13.21...@times-components/ssr@2.13.22) (2020-01-23)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.13.21](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.13.20...@times-components/ssr@2.13.21) (2020-01-23)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.13.20](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.13.19...@times-components/ssr@2.13.20) (2020-01-23)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.13.19](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.13.18...@times-components/ssr@2.13.19) (2020-01-22)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.13.18](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.13.17...@times-components/ssr@2.13.18) (2020-01-21)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.13.17](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.13.16...@times-components/ssr@2.13.17) (2020-01-21)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
 ## [2.13.16](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.13.15...@times-components/ssr@2.13.16) (2020-01-17)
 
 **Note:** Version bump only for package @times-components/ssr

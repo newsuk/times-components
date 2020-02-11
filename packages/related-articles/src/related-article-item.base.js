@@ -112,7 +112,8 @@ class RelatedArticleItem extends Component {
             imageStyle={imageStyle}
             imageUri={imageUri}
             isReversed={isReversed}
-            lowResSize={100}
+            lowResQuality={3}
+            lowResSize={200}
             relatedArticle
             showImage={showImage}
           >

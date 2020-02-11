@@ -16,6 +16,9 @@ const webStyles = {
   articleTextElement: {
     ...sharedStyles.articleTextElement,
     marginTop: 0
+  },
+  adMarginStyle: {
+    marginBottom: 0
   }
 };
 

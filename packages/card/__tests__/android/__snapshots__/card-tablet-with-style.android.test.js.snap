@@ -23,6 +23,7 @@ exports[`1. card default state 1`] = `
       aspectRatio={0.6666666666666666}
       fadeImageIn={false}
       highResSize={900}
+      lowResQuality={null}
       lowResSize={25}
       uri="https://img.io/img"
     />

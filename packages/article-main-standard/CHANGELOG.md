@@ -3,6 +3,319 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.25.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.25.0...@times-components/article-main-standard@3.25.1) (2020-02-11)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+# [3.25.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.24.2...@times-components/article-main-standard@3.25.0) (2020-02-10)
+
+
+### Features
+
+* REPLAT-12031 mainstandard bylines handling ([#2517](https://github.com/newsuk/times-components/issues/2517)) ([8f99a38](https://github.com/newsuk/times-components/commit/8f99a383d147ae3b968a3d612de50b3dd581cdaa))
+
+
+
+
+
+## [3.24.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.24.1...@times-components/article-main-standard@3.24.2) (2020-02-10)
+
+
+### Bug Fixes
+
+* REPLAT-12259 mainstandard mobile caption ([#2525](https://github.com/newsuk/times-components/issues/2525)) ([f681fa5](https://github.com/newsuk/times-components/commit/f681fa57146dcf66aa1e5afdf14fd6b0a9d80108))
+
+
+
+
+
+## [3.24.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.24.0...@times-components/article-main-standard@3.24.1) (2020-02-10)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+# [3.24.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.23.3...@times-components/article-main-standard@3.24.0) (2020-02-07)
+
+
+### Features
+
+* show lead asset captions for mobile and tablet bp ([#2520](https://github.com/newsuk/times-components/issues/2520)) ([b1bb0e2](https://github.com/newsuk/times-components/commit/b1bb0e2436ad37bb47caba41722e2c18686815e3))
+
+
+
+
+
+## [3.23.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.23.2...@times-components/article-main-standard@3.23.3) (2020-02-07)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.23.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.23.1...@times-components/article-main-standard@3.23.2) (2020-02-07)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.23.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.23.0...@times-components/article-main-standard@3.23.1) (2020-02-06)
+
+
+### Bug Fixes
+
+* Dropcap when first element is interactive ([#2516](https://github.com/newsuk/times-components/issues/2516)) ([4ae6a80](https://github.com/newsuk/times-components/commit/4ae6a8025116f9d2960be7769e37ab5c43a4caee))
+
+
+
+
+
+# [3.23.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.22.3...@times-components/article-main-standard@3.23.0) (2020-02-05)
+
+
+### Features
+
+* add srcSet to lead-asset-image ([#2515](https://github.com/newsuk/times-components/issues/2515)) ([52d641b](https://github.com/newsuk/times-components/commit/52d641bc35e1e5e93090bed43882ff16336fcce0))
+
+
+
+
+
+## [3.22.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.22.2...@times-components/article-main-standard@3.22.3) (2020-02-04)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.22.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.22.1...@times-components/article-main-standard@3.22.2) (2020-02-04)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.22.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.22.0...@times-components/article-main-standard@3.22.1) (2020-02-03)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+# [3.22.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.21.6...@times-components/article-main-standard@3.22.0) (2020-01-31)
+
+
+### Features
+
+* **REPLAT-12043:** improve low res images ([#2503](https://github.com/newsuk/times-components/issues/2503)) ([37b1e43](https://github.com/newsuk/times-components/commit/37b1e43cafc34516bb223f4dc338eca22b469fad))
+
+
+
+
+
+## [3.21.6](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.21.5...@times-components/article-main-standard@3.21.6) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.21.5](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.21.4...@times-components/article-main-standard@3.21.5) (2020-01-31)
+
+
+### Bug Fixes
+
+* styleguide versions ([#2512](https://github.com/newsuk/times-components/issues/2512)) ([d33b7db](https://github.com/newsuk/times-components/commit/d33b7db18ce84703f7d0cff01e30ee3ca086d1f3))
+
+
+
+
+
+## [3.21.4](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.21.3...@times-components/article-main-standard@3.21.4) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.21.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.21.2...@times-components/article-main-standard@3.21.3) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.21.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.21.1...@times-components/article-main-standard@3.21.2) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.21.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.21.0...@times-components/article-main-standard@3.21.1) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+# [3.21.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.20.30...@times-components/article-main-standard@3.21.0) (2020-01-30)
+
+
+### Features
+
+* lead asset image optimization ([#2506](https://github.com/newsuk/times-components/issues/2506)) ([addbf25](https://github.com/newsuk/times-components/commit/addbf25ccb2315dfd912c0f517eb809b5eeda737))
+
+
+
+
+
+## [3.20.30](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.20.29...@times-components/article-main-standard@3.20.30) (2020-01-30)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.20.29](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.20.28...@times-components/article-main-standard@3.20.29) (2020-01-29)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.20.28](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.20.27...@times-components/article-main-standard@3.20.28) (2020-01-29)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.20.27](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.20.26...@times-components/article-main-standard@3.20.27) (2020-01-28)
+
+
+### Bug Fixes
+
+* Date publication and publication name ([#2498](https://github.com/newsuk/times-components/issues/2498)) ([10c3617](https://github.com/newsuk/times-components/commit/10c361725a22d030940100b29ecdbd724bd35e24))
+
+
+
+
+
+## [3.20.26](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.20.25...@times-components/article-main-standard@3.20.26) (2020-01-27)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.20.25](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.20.24...@times-components/article-main-standard@3.20.25) (2020-01-27)
+
+
+### Bug Fixes
+
+* sticky share and save bar on preview article ([#2494](https://github.com/newsuk/times-components/issues/2494)) ([e80ddc3](https://github.com/newsuk/times-components/commit/e80ddc364bb1f06d5ff8a29ff2d1831ef51057fd))
+
+
+
+
+
+## [3.20.24](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.20.23...@times-components/article-main-standard@3.20.24) (2020-01-27)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.20.23](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.20.22...@times-components/article-main-standard@3.20.23) (2020-01-24)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.20.22](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.20.21...@times-components/article-main-standard@3.20.22) (2020-01-23)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.20.21](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.20.20...@times-components/article-main-standard@3.20.21) (2020-01-23)
+
+
+### Bug Fixes
+
+* **REPLAT-11906:** remove keylines below header ad on indepth template ([#2489](https://github.com/newsuk/times-components/issues/2489)) ([0329cf5](https://github.com/newsuk/times-components/commit/0329cf58161b30bf86b4ced1bebf3da7faf5207e))
+
+
+
+
+
+## [3.20.20](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.20.19...@times-components/article-main-standard@3.20.20) (2020-01-23)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.20.19](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.20.18...@times-components/article-main-standard@3.20.19) (2020-01-23)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.20.18](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.20.17...@times-components/article-main-standard@3.20.18) (2020-01-22)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.20.17](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.20.16...@times-components/article-main-standard@3.20.17) (2020-01-21)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
+## [3.20.16](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.20.15...@times-components/article-main-standard@3.20.16) (2020-01-21)
+
+**Note:** Version bump only for package @times-components/article-main-standard
+
+
+
+
+
 ## [3.20.15](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.20.14...@times-components/article-main-standard@3.20.15) (2020-01-17)
 
 **Note:** Version bump only for package @times-components/article-main-standard

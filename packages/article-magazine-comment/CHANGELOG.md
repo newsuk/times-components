@@ -3,6 +3,305 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.20.6](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.20.5...@times-components/article-magazine-comment@3.20.6) (2020-02-11)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.20.5](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.20.4...@times-components/article-magazine-comment@3.20.5) (2020-02-10)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.20.4](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.20.3...@times-components/article-magazine-comment@3.20.4) (2020-02-10)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.20.3](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.20.2...@times-components/article-magazine-comment@3.20.3) (2020-02-07)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.20.2](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.20.1...@times-components/article-magazine-comment@3.20.2) (2020-02-07)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.20.1](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.20.0...@times-components/article-magazine-comment@3.20.1) (2020-02-06)
+
+
+### Bug Fixes
+
+* Dropcap when first element is interactive ([#2516](https://github.com/newsuk/times-components/issues/2516)) ([4ae6a80](https://github.com/newsuk/times-components/commit/4ae6a8025116f9d2960be7769e37ab5c43a4caee))
+
+
+
+
+
+# [3.20.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.19.3...@times-components/article-magazine-comment@3.20.0) (2020-02-05)
+
+
+### Features
+
+* add srcSet to lead-asset-image ([#2515](https://github.com/newsuk/times-components/issues/2515)) ([52d641b](https://github.com/newsuk/times-components/commit/52d641bc35e1e5e93090bed43882ff16336fcce0))
+
+
+
+
+
+## [3.19.3](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.19.2...@times-components/article-magazine-comment@3.19.3) (2020-02-04)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.19.2](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.19.1...@times-components/article-magazine-comment@3.19.2) (2020-02-04)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.19.1](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.19.0...@times-components/article-magazine-comment@3.19.1) (2020-02-03)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+# [3.19.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.18.6...@times-components/article-magazine-comment@3.19.0) (2020-01-31)
+
+
+### Features
+
+* **REPLAT-12043:** improve low res images ([#2503](https://github.com/newsuk/times-components/issues/2503)) ([37b1e43](https://github.com/newsuk/times-components/commit/37b1e43cafc34516bb223f4dc338eca22b469fad))
+
+
+
+
+
+## [3.18.6](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.18.5...@times-components/article-magazine-comment@3.18.6) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.18.5](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.18.4...@times-components/article-magazine-comment@3.18.5) (2020-01-31)
+
+
+### Bug Fixes
+
+* styleguide versions ([#2512](https://github.com/newsuk/times-components/issues/2512)) ([d33b7db](https://github.com/newsuk/times-components/commit/d33b7db18ce84703f7d0cff01e30ee3ca086d1f3))
+
+
+
+
+
+## [3.18.4](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.18.3...@times-components/article-magazine-comment@3.18.4) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.18.3](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.18.2...@times-components/article-magazine-comment@3.18.3) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.18.2](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.18.1...@times-components/article-magazine-comment@3.18.2) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.18.1](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.18.0...@times-components/article-magazine-comment@3.18.1) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+# [3.18.0](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.17.32...@times-components/article-magazine-comment@3.18.0) (2020-01-30)
+
+
+### Features
+
+* lead asset image optimization ([#2506](https://github.com/newsuk/times-components/issues/2506)) ([addbf25](https://github.com/newsuk/times-components/commit/addbf25ccb2315dfd912c0f517eb809b5eeda737))
+
+
+
+
+
+## [3.17.32](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.17.31...@times-components/article-magazine-comment@3.17.32) (2020-01-30)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.17.31](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.17.30...@times-components/article-magazine-comment@3.17.31) (2020-01-29)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.17.30](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.17.29...@times-components/article-magazine-comment@3.17.30) (2020-01-29)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.17.29](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.17.28...@times-components/article-magazine-comment@3.17.29) (2020-01-28)
+
+
+### Bug Fixes
+
+* Date publication and publication name ([#2498](https://github.com/newsuk/times-components/issues/2498)) ([10c3617](https://github.com/newsuk/times-components/commit/10c361725a22d030940100b29ecdbd724bd35e24))
+
+
+
+
+
+## [3.17.28](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.17.27...@times-components/article-magazine-comment@3.17.28) (2020-01-27)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.17.27](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.17.26...@times-components/article-magazine-comment@3.17.27) (2020-01-27)
+
+
+### Bug Fixes
+
+* sticky share and save bar on preview article ([#2494](https://github.com/newsuk/times-components/issues/2494)) ([e80ddc3](https://github.com/newsuk/times-components/commit/e80ddc364bb1f06d5ff8a29ff2d1831ef51057fd))
+
+
+
+
+
+## [3.17.26](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.17.25...@times-components/article-magazine-comment@3.17.26) (2020-01-27)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.17.25](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.17.24...@times-components/article-magazine-comment@3.17.25) (2020-01-24)
+
+
+### Bug Fixes
+
+* REPLAT-11399 bylines styling ([#2495](https://github.com/newsuk/times-components/issues/2495)) ([6c3c809](https://github.com/newsuk/times-components/commit/6c3c809ac236184fb7158677fbddc92a63853c6c))
+
+
+
+
+
+## [3.17.24](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.17.23...@times-components/article-magazine-comment@3.17.24) (2020-01-24)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.17.23](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.17.22...@times-components/article-magazine-comment@3.17.23) (2020-01-23)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.17.22](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.17.21...@times-components/article-magazine-comment@3.17.22) (2020-01-23)
+
+
+### Bug Fixes
+
+* **REPLAT-11906:** remove keylines below header ad on indepth template ([#2489](https://github.com/newsuk/times-components/issues/2489)) ([0329cf5](https://github.com/newsuk/times-components/commit/0329cf58161b30bf86b4ced1bebf3da7faf5207e))
+
+
+
+
+
+## [3.17.21](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.17.20...@times-components/article-magazine-comment@3.17.21) (2020-01-23)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.17.20](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.17.19...@times-components/article-magazine-comment@3.17.20) (2020-01-23)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.17.19](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.17.18...@times-components/article-magazine-comment@3.17.19) (2020-01-22)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.17.18](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.17.17...@times-components/article-magazine-comment@3.17.18) (2020-01-21)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
+## [3.17.17](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.17.16...@times-components/article-magazine-comment@3.17.17) (2020-01-21)
+
+**Note:** Version bump only for package @times-components/article-magazine-comment
+
+
+
+
+
 ## [3.17.16](https://github.com/newsuk/times-components/compare/@times-components/article-magazine-comment@3.17.15...@times-components/article-magazine-comment@3.17.16) (2020-01-17)
 
 **Note:** Version bump only for package @times-components/article-magazine-comment

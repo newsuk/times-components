@@ -6,9 +6,12 @@ Array [
     dateTime="2017-07-01T14:32:00.000Z"
   >
     Saturday July 01 2017, 3.32pm
+    , 
   </time>,
-  <span>
-    , The Times
+  <span
+    className="date-publicationweb__PublicationName-pg8gov-0 hzKDdt"
+  >
+    The Times
   </span>,
 ]
 `;
@@ -19,9 +22,12 @@ Array [
     dateTime="2017-07-01T14:32:00.000Z"
   >
     Saturday July 01 2017, 3.32pm
+    , 
   </time>,
-  <span>
-    , The Sunday Times
+  <span
+    className="date-publicationweb__PublicationName-pg8gov-0 hzKDdt"
+  >
+    The Sunday Times
   </span>,
 ]
 `;
@@ -31,6 +37,7 @@ exports[`3. date and no given publication 1`] = `
   dateTime="2017-07-01T14:32:00.000Z"
 >
   Saturday July 01 2017, 3.32pm
+  
 </time>
 `;
 
@@ -39,5 +46,6 @@ exports[`4. date and no day 1`] = `
   dateTime="2017-07-01T14:32:00.000Z"
 >
   July 01 2017, 3.32pm
+  
 </time>
 `;

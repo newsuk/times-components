@@ -3,6 +3,116 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.114](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.113...@times-components/caption@3.0.114) (2020-02-07)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.113](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.112...@times-components/caption@3.0.113) (2020-02-07)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.112](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.111...@times-components/caption@3.0.112) (2020-02-06)
+
+
+### Bug Fixes
+
+* Dropcap when first element is interactive ([#2516](https://github.com/newsuk/times-components/issues/2516)) ([4ae6a80](https://github.com/newsuk/times-components/commit/4ae6a8025116f9d2960be7769e37ab5c43a4caee))
+
+
+
+
+
+## [3.0.111](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.110...@times-components/caption@3.0.111) (2020-02-05)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.110](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.109...@times-components/caption@3.0.110) (2020-02-04)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.109](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.108...@times-components/caption@3.0.109) (2020-01-31)
+
+
+### Bug Fixes
+
+* styleguide versions ([#2512](https://github.com/newsuk/times-components/issues/2512)) ([d33b7db](https://github.com/newsuk/times-components/commit/d33b7db18ce84703f7d0cff01e30ee3ca086d1f3))
+
+
+
+
+
+## [3.0.108](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.107...@times-components/caption@3.0.108) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.107](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.106...@times-components/caption@3.0.107) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.106](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.105...@times-components/caption@3.0.106) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.105](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.104...@times-components/caption@3.0.105) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.104](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.103...@times-components/caption@3.0.104) (2020-01-30)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.103](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.102...@times-components/caption@3.0.103) (2020-01-23)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
+## [3.0.102](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.101...@times-components/caption@3.0.102) (2020-01-22)
+
+**Note:** Version bump only for package @times-components/caption
+
+
+
+
+
 ## [3.0.101](https://github.com/newsuk/times-components/compare/@times-components/caption@3.0.100...@times-components/caption@3.0.101) (2020-01-15)
 
 **Note:** Version bump only for package @times-components/caption

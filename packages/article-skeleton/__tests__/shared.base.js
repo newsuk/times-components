@@ -282,6 +282,66 @@ export const fixtureArgs = {
         }
       ],
       name: "keyFacts"
+    },
+    {
+      name: "heading2",
+      children: [
+        {
+          name: "text",
+          children: [],
+          attributes: {
+            value: "This is heading 2"
+          }
+        }
+      ]
+    },
+    {
+      name: "heading3",
+      children: [
+        {
+          name: "text",
+          children: [],
+          attributes: {
+            value: "This is heading 3"
+          }
+        }
+      ]
+    },
+    {
+      name: "heading4",
+      children: [
+        {
+          name: "text",
+          children: [],
+          attributes: {
+            value: "This is heading 4"
+          }
+        }
+      ]
+    },
+    {
+      name: "heading5",
+      children: [
+        {
+          name: "text",
+          children: [],
+          attributes: {
+            value: "This is heading 5"
+          }
+        }
+      ]
+    },
+    {
+      name: "heading6",
+      children: [
+        {
+          name: "text",
+          children: [],
+          attributes: {
+            value: "This is heading 6"
+          }
+        }
+      ]
     }
   ]
 };

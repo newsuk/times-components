@@ -162,7 +162,7 @@ exports[`1. a single child element 1`] = `
 
 <configweb__Base>
   <div
-    className="configweb__Base-sc-11p999w-0 c0 configweb__Base-sc-11p999w-0 configweb__Base-sc-11p999w-2 c0 css-view-1dbjc4n"
+    className="c0 configweb__Base-sc-11p999w-0 configweb__Base-sc-11p999w-2 c0 css-view-1dbjc4n"
   >
     <responsiveweb__SliceContainer>
       <div
@@ -170,11 +170,11 @@ exports[`1. a single child element 1`] = `
       >
         <responsiveweb__Base>
           <div
-            className="responsiveweb__Base-sc-1xpiscc-0 responsiveweb__Base-sc-1xpiscc-2 c2 responsiveweb__Base-sc-1xpiscc-0 responsiveweb__Base-sc-1xpiscc-2 responsiveweb__Base-sc-1xpiscc-3 c2 css-view-1dbjc4n"
+            className="c2 responsiveweb__Base-sc-1xpiscc-0 responsiveweb__Base-sc-1xpiscc-2 responsiveweb__Base-sc-1xpiscc-3 c2 css-view-1dbjc4n"
           >
             <responsiveweb__Base>
               <div
-                className="responsiveweb__Base-sc-1xpiscc-4 responsiveweb__Base-sc-1xpiscc-6 c3 responsiveweb__Base-sc-1xpiscc-4 responsiveweb__Base-sc-1xpiscc-6 responsiveweb__Base-sc-1xpiscc-7 c3 css-view-1dbjc4n"
+                className="c3 responsiveweb__Base-sc-1xpiscc-4 responsiveweb__Base-sc-1xpiscc-6 responsiveweb__Base-sc-1xpiscc-7 c3 css-view-1dbjc4n"
               >
                 <div
                   className="css-text-901oao"
@@ -421,7 +421,7 @@ exports[`2. two child elements 1`] = `
 
 <configweb__Base>
   <div
-    className="configweb__Base-sc-11p999w-0 c0 configweb__Base-sc-11p999w-0 configweb__Base-sc-11p999w-2 c0 css-view-1dbjc4n"
+    className="c0 configweb__Base-sc-11p999w-0 configweb__Base-sc-11p999w-2 c0 css-view-1dbjc4n"
   >
     <responsiveweb__SliceContainer>
       <div
@@ -429,11 +429,11 @@ exports[`2. two child elements 1`] = `
       >
         <responsiveweb__Base>
           <div
-            className="responsiveweb__Base-sc-1xpiscc-0 responsiveweb__Base-sc-1xpiscc-1 c2 responsiveweb__Base-sc-1xpiscc-0 responsiveweb__Base-sc-1xpiscc-1 responsiveweb__Base-sc-1xpiscc-3 c2 css-view-1dbjc4n"
+            className="c2 responsiveweb__Base-sc-1xpiscc-0 responsiveweb__Base-sc-1xpiscc-1 responsiveweb__Base-sc-1xpiscc-3 c2 css-view-1dbjc4n"
           >
             <responsiveweb__Base>
               <div
-                className="responsiveweb__Base-sc-1xpiscc-4 responsiveweb__Base-sc-1xpiscc-5 c3 responsiveweb__Base-sc-1xpiscc-4 responsiveweb__Base-sc-1xpiscc-5 responsiveweb__Base-sc-1xpiscc-7 c3 css-view-1dbjc4n"
+                className="c3 responsiveweb__Base-sc-1xpiscc-4 responsiveweb__Base-sc-1xpiscc-5 responsiveweb__Base-sc-1xpiscc-7 c3 css-view-1dbjc4n"
               >
                 <div
                   className="css-text-901oao"
@@ -747,7 +747,7 @@ exports[`3. three child elements 1`] = `
 
 <configweb__Base>
   <div
-    className="configweb__Base-sc-11p999w-0 c0 configweb__Base-sc-11p999w-0 configweb__Base-sc-11p999w-1 c0 css-view-1dbjc4n"
+    className="c0 configweb__Base-sc-11p999w-0 configweb__Base-sc-11p999w-1 c0 css-view-1dbjc4n"
   >
     <responsiveweb__SliceContainer>
       <div
@@ -755,11 +755,11 @@ exports[`3. three child elements 1`] = `
       >
         <responsiveweb__Base>
           <div
-            className="responsiveweb__Base-sc-1xpiscc-0 responsiveweb__Base-sc-1xpiscc-1 c2 responsiveweb__Base-sc-1xpiscc-0 responsiveweb__Base-sc-1xpiscc-1 responsiveweb__Base-sc-1xpiscc-3 c2 css-view-1dbjc4n"
+            className="c2 responsiveweb__Base-sc-1xpiscc-0 responsiveweb__Base-sc-1xpiscc-1 responsiveweb__Base-sc-1xpiscc-3 c2 css-view-1dbjc4n"
           >
             <responsiveweb__Base>
               <div
-                className="responsiveweb__Base-sc-1xpiscc-4 responsiveweb__Base-sc-1xpiscc-5 c3 responsiveweb__Base-sc-1xpiscc-4 responsiveweb__Base-sc-1xpiscc-5 responsiveweb__Base-sc-1xpiscc-7 c3 css-view-1dbjc4n"
+                className="c3 responsiveweb__Base-sc-1xpiscc-4 responsiveweb__Base-sc-1xpiscc-5 responsiveweb__Base-sc-1xpiscc-7 c3 css-view-1dbjc4n"
               >
                 <div
                   className="css-text-901oao"

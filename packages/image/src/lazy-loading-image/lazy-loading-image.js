@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { Image } from "react-native";
-import { appendParamsToQuery } from "../utils";
+import appendParamsToQuery from "../utils";
 
 const LazyLoadingImage = props => {
   const {

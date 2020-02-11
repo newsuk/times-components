@@ -1,11 +1,9 @@
 import React from "react";
 import { View } from "react-native";
-import Image from "@times-components/image";
 import { AspectRatioContainer } from "@times-components/utils";
 import Video from "@times-components/video";
-
+import LeadAssetImage from "./article-lead-asset-image.web";
 import { defaultProps, propTypes } from "./article-lead-asset-prop-types";
-import getRatio from "./get-ratio";
 
 const ArticleLeadAsset = ({
   aspectRatio,
@@ -14,8 +12,7 @@ const ArticleLeadAsset = ({
   displayImage,
   isVideo,
   leadAsset,
-  style,
-  width
+  style
 }) => {
   if (!leadAsset || !displayImage) {
     return null;
@@ -43,11 +40,9 @@ const ArticleLeadAsset = ({
       width="100%"
     />
   ) : (
-    <Image
-      accessibilityLabel={caption.text}
-      aspectRatio={getRatio(aspectRatio)}
-      highResSize={width}
-      lowResSize={100}
+    <LeadAssetImage
+      aspectRatio={aspectRatio}
+      alt={caption.text}
       uri={displayImage.url}
     />
   );

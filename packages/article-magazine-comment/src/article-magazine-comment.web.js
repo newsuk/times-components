@@ -20,7 +20,7 @@ class ArticlePage extends Component {
     this.renderHeader = this.renderHeader.bind(this);
   }
 
-  renderHeader({ width }) {
+  renderHeader() {
     const { article } = this.props;
     const {
       bylines,
@@ -61,7 +61,6 @@ class ArticlePage extends Component {
           getImageCrop={getStandardTemplateCrop}
           renderCaption={({ caption }) => <CentredCaption {...caption} />}
           style={styles.leadAssetContainer}
-          width={width}
         />
       </Fragment>
     );
@@ -78,7 +77,8 @@ class ArticlePage extends Component {
       navigationMode,
       receiveChildList,
       spotAccountId,
-      paidContentClassName
+      paidContentClassName,
+      isPreview
     } = this.props;
 
     if (error || isLoading) {
@@ -96,6 +96,7 @@ class ArticlePage extends Component {
         navigationMode={navigationMode}
         spotAccountId={spotAccountId}
         paidContentClassName={paidContentClassName}
+        isPreview={isPreview}
       />
     );
   }

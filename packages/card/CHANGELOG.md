@@ -3,6 +3,151 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.4.5](https://github.com/newsuk/times-components/compare/@times-components/card@6.4.4...@times-components/card@6.4.5) (2020-02-07)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.4.4](https://github.com/newsuk/times-components/compare/@times-components/card@6.4.3...@times-components/card@6.4.4) (2020-02-07)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.4.3](https://github.com/newsuk/times-components/compare/@times-components/card@6.4.2...@times-components/card@6.4.3) (2020-02-06)
+
+
+### Bug Fixes
+
+* Dropcap when first element is interactive ([#2516](https://github.com/newsuk/times-components/issues/2516)) ([4ae6a80](https://github.com/newsuk/times-components/commit/4ae6a8025116f9d2960be7769e37ab5c43a4caee))
+
+
+
+
+
+## [6.4.2](https://github.com/newsuk/times-components/compare/@times-components/card@6.4.1...@times-components/card@6.4.2) (2020-02-05)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.4.1](https://github.com/newsuk/times-components/compare/@times-components/card@6.4.0...@times-components/card@6.4.1) (2020-02-04)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+# [6.4.0](https://github.com/newsuk/times-components/compare/@times-components/card@6.3.23...@times-components/card@6.4.0) (2020-01-31)
+
+
+### Features
+
+* **REPLAT-12043:** improve low res images ([#2503](https://github.com/newsuk/times-components/issues/2503)) ([37b1e43](https://github.com/newsuk/times-components/commit/37b1e43cafc34516bb223f4dc338eca22b469fad))
+
+
+
+
+
+## [6.3.23](https://github.com/newsuk/times-components/compare/@times-components/card@6.3.22...@times-components/card@6.3.23) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.3.22](https://github.com/newsuk/times-components/compare/@times-components/card@6.3.21...@times-components/card@6.3.22) (2020-01-31)
+
+
+### Bug Fixes
+
+* styleguide versions ([#2512](https://github.com/newsuk/times-components/issues/2512)) ([d33b7db](https://github.com/newsuk/times-components/commit/d33b7db18ce84703f7d0cff01e30ee3ca086d1f3))
+
+
+
+
+
+## [6.3.21](https://github.com/newsuk/times-components/compare/@times-components/card@6.3.20...@times-components/card@6.3.21) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.3.20](https://github.com/newsuk/times-components/compare/@times-components/card@6.3.19...@times-components/card@6.3.20) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.3.19](https://github.com/newsuk/times-components/compare/@times-components/card@6.3.18...@times-components/card@6.3.19) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.3.18](https://github.com/newsuk/times-components/compare/@times-components/card@6.3.17...@times-components/card@6.3.18) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.3.17](https://github.com/newsuk/times-components/compare/@times-components/card@6.3.16...@times-components/card@6.3.17) (2020-01-30)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.3.16](https://github.com/newsuk/times-components/compare/@times-components/card@6.3.15...@times-components/card@6.3.16) (2020-01-24)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.3.15](https://github.com/newsuk/times-components/compare/@times-components/card@6.3.14...@times-components/card@6.3.15) (2020-01-23)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.3.14](https://github.com/newsuk/times-components/compare/@times-components/card@6.3.13...@times-components/card@6.3.14) (2020-01-22)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
+## [6.3.13](https://github.com/newsuk/times-components/compare/@times-components/card@6.3.12...@times-components/card@6.3.13) (2020-01-21)
+
+**Note:** Version bump only for package @times-components/card
+
+
+
+
+
 ## [6.3.12](https://github.com/newsuk/times-components/compare/@times-components/card@6.3.11...@times-components/card@6.3.12) (2020-01-15)
 
 **Note:** Version bump only for package @times-components/card

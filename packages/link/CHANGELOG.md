@@ -3,6 +3,119 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.6.15](https://github.com/newsuk/times-components/compare/@times-components/link@3.6.14...@times-components/link@3.6.15) (2020-02-07)
+
+**Note:** Version bump only for package @times-components/link
+
+
+
+
+
+## [3.6.14](https://github.com/newsuk/times-components/compare/@times-components/link@3.6.13...@times-components/link@3.6.14) (2020-02-07)
+
+**Note:** Version bump only for package @times-components/link
+
+
+
+
+
+## [3.6.13](https://github.com/newsuk/times-components/compare/@times-components/link@3.6.12...@times-components/link@3.6.13) (2020-02-06)
+
+
+### Bug Fixes
+
+* Dropcap when first element is interactive ([#2516](https://github.com/newsuk/times-components/issues/2516)) ([4ae6a80](https://github.com/newsuk/times-components/commit/4ae6a8025116f9d2960be7769e37ab5c43a4caee))
+
+
+
+
+
+## [3.6.12](https://github.com/newsuk/times-components/compare/@times-components/link@3.6.11...@times-components/link@3.6.12) (2020-02-05)
+
+**Note:** Version bump only for package @times-components/link
+
+
+
+
+
+## [3.6.11](https://github.com/newsuk/times-components/compare/@times-components/link@3.6.10...@times-components/link@3.6.11) (2020-02-04)
+
+**Note:** Version bump only for package @times-components/link
+
+
+
+
+
+## [3.6.10](https://github.com/newsuk/times-components/compare/@times-components/link@3.6.9...@times-components/link@3.6.10) (2020-01-31)
+
+
+### Bug Fixes
+
+* styleguide versions ([#2512](https://github.com/newsuk/times-components/issues/2512)) ([d33b7db](https://github.com/newsuk/times-components/commit/d33b7db18ce84703f7d0cff01e30ee3ca086d1f3))
+
+
+
+
+
+## [3.6.9](https://github.com/newsuk/times-components/compare/@times-components/link@3.6.8...@times-components/link@3.6.9) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/link
+
+
+
+
+
+## [3.6.8](https://github.com/newsuk/times-components/compare/@times-components/link@3.6.7...@times-components/link@3.6.8) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/link
+
+
+
+
+
+## [3.6.7](https://github.com/newsuk/times-components/compare/@times-components/link@3.6.6...@times-components/link@3.6.7) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/link
+
+
+
+
+
+## [3.6.6](https://github.com/newsuk/times-components/compare/@times-components/link@3.6.5...@times-components/link@3.6.6) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/link
+
+
+
+
+
+## [3.6.5](https://github.com/newsuk/times-components/compare/@times-components/link@3.6.4...@times-components/link@3.6.5) (2020-01-30)
+
+**Note:** Version bump only for package @times-components/link
+
+
+
+
+
+## [3.6.4](https://github.com/newsuk/times-components/compare/@times-components/link@3.6.3...@times-components/link@3.6.4) (2020-01-24)
+
+
+### Bug Fixes
+
+* REPLAT-11684 handle responsive-graphic specially on ios ([#2490](https://github.com/newsuk/times-components/issues/2490)) ([a7ae457](https://github.com/newsuk/times-components/commit/a7ae457b0a422556ce75504fa7ead0da2d658f2b))
+
+
+
+
+
+## [3.6.3](https://github.com/newsuk/times-components/compare/@times-components/link@3.6.2...@times-components/link@3.6.3) (2020-01-22)
+
+**Note:** Version bump only for package @times-components/link
+
+
+
+
+
 ## [3.6.2](https://github.com/newsuk/times-components/compare/@times-components/link@3.6.1...@times-components/link@3.6.2) (2020-01-15)
 
 **Note:** Version bump only for package @times-components/link

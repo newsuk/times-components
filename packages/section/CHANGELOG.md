@@ -3,6 +3,164 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.6.33](https://github.com/newsuk/times-components/compare/@times-components/section@1.6.32...@times-components/section@1.6.33) (2020-02-10)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
+## [1.6.32](https://github.com/newsuk/times-components/compare/@times-components/section@1.6.31...@times-components/section@1.6.32) (2020-02-07)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
+## [1.6.31](https://github.com/newsuk/times-components/compare/@times-components/section@1.6.30...@times-components/section@1.6.31) (2020-02-07)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
+## [1.6.30](https://github.com/newsuk/times-components/compare/@times-components/section@1.6.29...@times-components/section@1.6.30) (2020-02-06)
+
+
+### Bug Fixes
+
+* Dropcap when first element is interactive ([#2516](https://github.com/newsuk/times-components/issues/2516)) ([4ae6a80](https://github.com/newsuk/times-components/commit/4ae6a8025116f9d2960be7769e37ab5c43a4caee))
+
+
+
+
+
+## [1.6.29](https://github.com/newsuk/times-components/compare/@times-components/section@1.6.28...@times-components/section@1.6.29) (2020-02-05)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
+## [1.6.28](https://github.com/newsuk/times-components/compare/@times-components/section@1.6.27...@times-components/section@1.6.28) (2020-02-04)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
+## [1.6.27](https://github.com/newsuk/times-components/compare/@times-components/section@1.6.26...@times-components/section@1.6.27) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
+## [1.6.26](https://github.com/newsuk/times-components/compare/@times-components/section@1.6.25...@times-components/section@1.6.26) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
+## [1.6.25](https://github.com/newsuk/times-components/compare/@times-components/section@1.6.24...@times-components/section@1.6.25) (2020-01-31)
+
+
+### Bug Fixes
+
+* styleguide versions ([#2512](https://github.com/newsuk/times-components/issues/2512)) ([d33b7db](https://github.com/newsuk/times-components/commit/d33b7db18ce84703f7d0cff01e30ee3ca086d1f3))
+
+
+
+
+
+## [1.6.24](https://github.com/newsuk/times-components/compare/@times-components/section@1.6.23...@times-components/section@1.6.24) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
+## [1.6.23](https://github.com/newsuk/times-components/compare/@times-components/section@1.6.22...@times-components/section@1.6.23) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
+## [1.6.22](https://github.com/newsuk/times-components/compare/@times-components/section@1.6.21...@times-components/section@1.6.22) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
+## [1.6.21](https://github.com/newsuk/times-components/compare/@times-components/section@1.6.20...@times-components/section@1.6.21) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
+## [1.6.20](https://github.com/newsuk/times-components/compare/@times-components/section@1.6.19...@times-components/section@1.6.20) (2020-01-30)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
+## [1.6.19](https://github.com/newsuk/times-components/compare/@times-components/section@1.6.18...@times-components/section@1.6.19) (2020-01-28)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
+## [1.6.18](https://github.com/newsuk/times-components/compare/@times-components/section@1.6.17...@times-components/section@1.6.18) (2020-01-24)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
+## [1.6.17](https://github.com/newsuk/times-components/compare/@times-components/section@1.6.16...@times-components/section@1.6.17) (2020-01-23)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
+## [1.6.16](https://github.com/newsuk/times-components/compare/@times-components/section@1.6.15...@times-components/section@1.6.16) (2020-01-22)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
+## [1.6.15](https://github.com/newsuk/times-components/compare/@times-components/section@1.6.14...@times-components/section@1.6.15) (2020-01-21)
+
+**Note:** Version bump only for package @times-components/section
+
+
+
+
+
 ## [1.6.14](https://github.com/newsuk/times-components/compare/@times-components/section@1.6.13...@times-components/section@1.6.14) (2020-01-15)
 
 **Note:** Version bump only for package @times-components/section

@@ -91,18 +91,6 @@ exports[`full article with style 1`] = `
   margin-bottom: 30px;
 }
 
-.c1 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  border-top-color: #DBDBDB;
-  border-bottom-color: #DBDBDB;
-  border-bottom-width: 1px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
 .c3 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -210,6 +198,18 @@ exports[`full article with style 1`] = `
   -webkit-order: 1;
   -ms-flex-order: 1;
   order: 1;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-top-color: #DBDBDB;
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 @media (min-width:768px) {
@@ -433,23 +433,33 @@ exports[`full article with style 1`] = `
 }
 
 .S2 {
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.S3 {
+  line-height: 33px;
+  margin-bottom: 7px;
+}
+
+.S4 {
   line-height: 26px;
   padding-bottom: 10px;
 }
 
-.S3 {
+.S5 {
   margin-bottom: 10px;
 }
 
-.S4 {
+.S6 {
   line-height: 15px;
 }
 
-.S5 {
+.S7 {
   line-height: 17px;
 }
 
-.S6 {
+.S8 {
   padding-top: 10px;
 }
 
@@ -542,14 +552,14 @@ exports[`full article with style 1`] = `
         </script>
       </Helmet>
       <div
-        className="c1 responsiveweb__HeaderAdContainer-sc-1exejum-1 c1 css-view-1dbjc4n"
+        className="c1 responsiveweb-sc-1exejum-0 c1 css-view-1dbjc4n"
       >
         <AdContainer
           className="IS1"
         />
       </div>
       <main
-        className="c2 responsiveweb__MainContainer-sc-1exejum-0 c2 css-view-1dbjc4n"
+        className="c2 responsiveweb__MainContainer-sc-1exejum-1 c2 css-view-1dbjc4n"
       >
         <div
           className="c3 responsiveweb__HeaderContainer-sc-1exejum-2 c3 css-view-1dbjc4n"
@@ -564,7 +574,7 @@ exports[`full article with style 1`] = `
                 className="css-view-1dbjc4n"
               >
                 <div
-                  className="c6 responsiveweb__LabelContainer-sc-1jw79sf-1 c6 css-view-1dbjc4n"
+                  className="c6 responsiveweb__LabelContainer-sc-1jw79sf-1 c6 css-view-1dbjc4n r-paddingBottom-1inuy60 r-paddingTop-glunga S2"
                 >
                   <div
                     className="css-text-901oao r-fontFamily-j2s0nr r-fontSize-1enofrn r-fontWeight-16dba41 r-letterSpacing-ud0q2t r-lineHeight-56xrmm r-marginBottom-p1pxzi r-marginTop-19i43ro r-paddingTop-njp1lv IS2 S1"
@@ -573,17 +583,17 @@ exports[`full article with style 1`] = `
                   </div>
                 </div>
                 <h1
-                  className="c7 css-reset-4rbku5 responsiveweb__HeadlineContainer-sc-1jw79sf-0 c7 css-text-901oao"
+                  className="c7 css-reset-4rbku5 responsiveweb__HeadlineContainer-sc-1jw79sf-0 c7 css-text-901oao r-color-1yqk5fa r-fontFamily-iirzy8 r-fontSize-1ra0lkn r-lineHeight-1j8sj39 r-marginBottom-11mo1y0 S3"
                 >
                   Some Headline
                 </h1>
                 <h2
-                  className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-4h8ur4 r-fontSize-adyw6z r-lineHeight-eaezby r-paddingBottom-1mi0q7o S2"
+                  className="css-reset-4rbku5 css-text-901oao r-color-1khnkhu r-fontFamily-4h8ur4 r-fontSize-adyw6z r-lineHeight-eaezby r-paddingBottom-1mi0q7o S4"
                 >
                   Some Standfirst
                 </h2>
                 <div
-                  className="css-view-1dbjc4n r-marginBottom-15d164r S3"
+                  className="css-view-1dbjc4n r-marginBottom-15d164r S5"
                 >
                   <ArticleFlags />
                 </div>
@@ -602,7 +612,7 @@ exports[`full article with style 1`] = `
                     className="c11 article-metaweb__MetaTextElement-sc-15fsa1p-0 c11 css-text-901oao"
                   >
                     <span
-                      className="css-text-901oao css-textHasAncestor-16my406 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S4"
+                      className="css-text-901oao css-textHasAncestor-16my406 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S6"
                     >
                       <ArticleBylineWithLinks />
                     </span>
@@ -619,7 +629,7 @@ exports[`full article with style 1`] = `
                     className="c11 article-metaweb__MetaTextElement-sc-15fsa1p-0 c11 css-text-901oao"
                   >
                     <span
-                      className="css-text-901oao css-textHasAncestor-16my406 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S4"
+                      className="css-text-901oao css-textHasAncestor-16my406 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S6"
                     >
                       <DatePublication />
                     </span>
@@ -637,7 +647,7 @@ exports[`full article with style 1`] = `
             className="c12"
           />
           <div
-            className="c9 c13 c14 inline-meta"
+            className="c9 inline-meta c13 c14"
           >
             <div
               className="css-view-1dbjc4n"
@@ -646,7 +656,7 @@ exports[`full article with style 1`] = `
                 className="c11 article-metaweb__MetaTextElement-sc-15fsa1p-0 c11 css-text-901oao"
               >
                 <span
-                  className="css-text-901oao css-textHasAncestor-16my406 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S4"
+                  className="css-text-901oao css-textHasAncestor-16my406 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S6"
                 >
                   <ArticleBylineWithLinks />
                 </span>
@@ -655,7 +665,7 @@ exports[`full article with style 1`] = `
                 className="c11 article-metaweb__MetaTextElement-sc-15fsa1p-0 c11 css-text-901oao"
               >
                 <span
-                  className="css-text-901oao css-textHasAncestor-16my406 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S4"
+                  className="css-text-901oao css-textHasAncestor-16my406 r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S6"
                 >
                   <DatePublication />
                 </span>
@@ -741,10 +751,10 @@ exports[`full article with style 1`] = `
                     className="css-view-1dbjc4n"
                   >
                     <div
-                      className="css-view-1dbjc4n r-paddingTop-m611by S6"
+                      className="css-view-1dbjc4n r-paddingTop-m611by S8"
                     >
                       <div
-                        className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0 S5"
+                        className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-5fcqz0 S7"
                       >
                         This is video caption
                       </div>
@@ -771,6 +781,7 @@ exports[`full article with style 1`] = `
               <ArticleImage />
             </div>
           </div>
+          <div />
           <ArticleExtras />
         </article>
       </main>

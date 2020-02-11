@@ -3,6 +3,82 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.2](https://github.com/newsuk/times-components/compare/@times-components/mocks@0.1.1...@times-components/mocks@0.1.2) (2020-02-07)
+
+**Note:** Version bump only for package @times-components/mocks
+
+
+
+
+
+## [0.1.1](https://github.com/newsuk/times-components/compare/@times-components/mocks@0.1.0...@times-components/mocks@0.1.1) (2020-02-06)
+
+
+### Bug Fixes
+
+* Dropcap when first element is interactive ([#2516](https://github.com/newsuk/times-components/issues/2516)) ([4ae6a80](https://github.com/newsuk/times-components/commit/4ae6a8025116f9d2960be7769e37ab5c43a4caee))
+
+
+
+
+
+# [0.1.0](https://github.com/newsuk/times-components/compare/@times-components/mocks@0.0.73...@times-components/mocks@0.1.0) (2020-02-05)
+
+
+### Features
+
+* add srcSet to lead-asset-image ([#2515](https://github.com/newsuk/times-components/issues/2515)) ([52d641b](https://github.com/newsuk/times-components/commit/52d641bc35e1e5e93090bed43882ff16336fcce0))
+
+
+
+
+
+## [0.0.73](https://github.com/newsuk/times-components/compare/@times-components/mocks@0.0.72...@times-components/mocks@0.0.73) (2020-01-31)
+
+
+### Bug Fixes
+
+* styleguide versions ([#2512](https://github.com/newsuk/times-components/issues/2512)) ([d33b7db](https://github.com/newsuk/times-components/commit/d33b7db18ce84703f7d0cff01e30ee3ca086d1f3))
+
+
+
+
+
+## [0.0.72](https://github.com/newsuk/times-components/compare/@times-components/mocks@0.0.71...@times-components/mocks@0.0.72) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/mocks
+
+
+
+
+
+## [0.0.71](https://github.com/newsuk/times-components/compare/@times-components/mocks@0.0.70...@times-components/mocks@0.0.71) (2020-01-31)
+
+
+### Bug Fixes
+
+* (REPLAT-12060) handle interactives sending wrong height values ([#2504](https://github.com/newsuk/times-components/issues/2504)) ([40a143e](https://github.com/newsuk/times-components/commit/40a143ee9575bab5f27932369aacbcf59c286ba5))
+
+
+
+
+
+## [0.0.70](https://github.com/newsuk/times-components/compare/@times-components/mocks@0.0.69...@times-components/mocks@0.0.70) (2020-01-23)
+
+**Note:** Version bump only for package @times-components/mocks
+
+
+
+
+
+## [0.0.69](https://github.com/newsuk/times-components/compare/@times-components/mocks@0.0.68...@times-components/mocks@0.0.69) (2020-01-22)
+
+**Note:** Version bump only for package @times-components/mocks
+
+
+
+
+
 ## [0.0.68](https://github.com/newsuk/times-components/compare/@times-components/mocks@0.0.67...@times-components/mocks@0.0.68) (2020-01-15)
 
 **Note:** Version bump only for package @times-components/mocks

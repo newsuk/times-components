@@ -3,6 +3,127 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.10.13](https://github.com/newsuk/times-components/compare/@times-components/ad@2.10.12...@times-components/ad@2.10.13) (2020-02-07)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.10.12](https://github.com/newsuk/times-components/compare/@times-components/ad@2.10.11...@times-components/ad@2.10.12) (2020-02-07)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.10.11](https://github.com/newsuk/times-components/compare/@times-components/ad@2.10.10...@times-components/ad@2.10.11) (2020-02-06)
+
+
+### Bug Fixes
+
+* Dropcap when first element is interactive ([#2516](https://github.com/newsuk/times-components/issues/2516)) ([4ae6a80](https://github.com/newsuk/times-components/commit/4ae6a8025116f9d2960be7769e37ab5c43a4caee))
+
+
+
+
+
+## [2.10.10](https://github.com/newsuk/times-components/compare/@times-components/ad@2.10.9...@times-components/ad@2.10.10) (2020-02-05)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.10.9](https://github.com/newsuk/times-components/compare/@times-components/ad@2.10.8...@times-components/ad@2.10.9) (2020-02-04)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.10.8](https://github.com/newsuk/times-components/compare/@times-components/ad@2.10.7...@times-components/ad@2.10.8) (2020-01-31)
+
+
+### Bug Fixes
+
+* styleguide versions ([#2512](https://github.com/newsuk/times-components/issues/2512)) ([d33b7db](https://github.com/newsuk/times-components/commit/d33b7db18ce84703f7d0cff01e30ee3ca086d1f3))
+
+
+
+
+
+## [2.10.7](https://github.com/newsuk/times-components/compare/@times-components/ad@2.10.6...@times-components/ad@2.10.7) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.10.6](https://github.com/newsuk/times-components/compare/@times-components/ad@2.10.5...@times-components/ad@2.10.6) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.10.5](https://github.com/newsuk/times-components/compare/@times-components/ad@2.10.4...@times-components/ad@2.10.5) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.10.4](https://github.com/newsuk/times-components/compare/@times-components/ad@2.10.3...@times-components/ad@2.10.4) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.10.3](https://github.com/newsuk/times-components/compare/@times-components/ad@2.10.2...@times-components/ad@2.10.3) (2020-01-30)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.10.2](https://github.com/newsuk/times-components/compare/@times-components/ad@2.10.1...@times-components/ad@2.10.2) (2020-01-23)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.10.1](https://github.com/newsuk/times-components/compare/@times-components/ad@2.10.0...@times-components/ad@2.10.1) (2020-01-22)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+# [2.10.0](https://github.com/newsuk/times-components/compare/@times-components/ad@2.9.4...@times-components/ad@2.10.0) (2020-01-21)
+
+
+### Features
+
+* super mpu ad size added to custom slot ([#2487](https://github.com/newsuk/times-components/issues/2487)) ([5cb4f6d](https://github.com/newsuk/times-components/commit/5cb4f6d9c90ed7860986431c478f79126e9fefb5))
+
+
+
+
+
 ## [2.9.4](https://github.com/newsuk/times-components/compare/@times-components/ad@2.9.3...@times-components/ad@2.9.4) (2020-01-15)
 
 **Note:** Version bump only for package @times-components/ad

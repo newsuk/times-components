@@ -14,7 +14,9 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
     data-article-sectionname="Some Section"
     id="article-main"
   >
-    <Helmet>
+    <Helmet
+      encodeSpecialCharacters={false}
+    >
       <title>
         Some Short Headline
          | 
@@ -99,13 +101,13 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
           <figure>
             <div>
               <div>
-                <Image
-                  accessibilityLabel="Some Caption"
-                  aspectRatio={1.7777777777777777}
-                  highResSize={null}
-                  lowResSize={100}
-                  uri="https://crop169.io"
-                />
+                <div>
+                  <img
+                    alt="Some Caption"
+                    src="https://crop169.io?resize=1180"
+                    srcSet="https://crop169.io?resize=320 320w, https://crop169.io?resize=685 685w, https://crop169.io?resize=1180 1180w"
+                  />
+                </div>
               </div>
             </div>
             <figcaption>
@@ -190,6 +192,9 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
         <p>
           Some content
         </p>
+        <div
+          id="paywall-portal-article-footer"
+        />
         <ArticleExtras
           articleHeadline=""
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
@@ -275,7 +280,9 @@ exports[`4. an article with ads 1`] = `
     data-article-sectionname="Some Section"
     id="article-main"
   >
-    <Helmet>
+    <Helmet
+      encodeSpecialCharacters={false}
+    >
       <title>
         Some Headline
          | 
@@ -360,13 +367,13 @@ exports[`4. an article with ads 1`] = `
           <figure>
             <div>
               <div>
-                <Image
-                  accessibilityLabel="Some Caption"
-                  aspectRatio={1.7777777777777777}
-                  highResSize={null}
-                  lowResSize={100}
-                  uri="https://crop169.io"
-                />
+                <div>
+                  <img
+                    alt="Some Caption"
+                    src="https://crop169.io?resize=1180"
+                    srcSet="https://crop169.io?resize=320 320w, https://crop169.io?resize=685 685w, https://crop169.io?resize=1180 1180w"
+                  />
+                </div>
               </div>
             </div>
             <figcaption>
@@ -450,6 +457,9 @@ exports[`4. an article with ads 1`] = `
       >
         <AdContainer
           slotName="inline-ad"
+        />
+        <div
+          id="paywall-portal-article-footer"
         />
         <ArticleExtras
           articleHeadline="Some Headline"

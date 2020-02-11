@@ -555,6 +555,18 @@
   ],
   "content": [
     {
+      "name": "heading2",
+      "children": [
+        {
+          "name": "text",
+          "children": [],
+          "attributes": {
+            "value": "This is heading 2"
+          }
+        }
+      ]
+    },
+    {
       "name": "paragraph",
       "attributes": {},
       "children": [
@@ -596,6 +608,18 @@
       ]
     },
     {
+      "name": "heading3",
+      "children": [
+        {
+          "name": "text",
+          "children": [],
+          "attributes": {
+            "value": "This is heading 3"
+          }
+        }
+      ]
+    },
+    {
       "name": "image",
       "attributes": {
         "display": "secondary",
@@ -620,6 +644,18 @@
             "value": "Reynolds Gordon, 30, has a light beard, wears a white T-shirt, jeans and no shoes, and while self-satisfaction oozes from him, it seems to mask a fragility. We are sitting at an elegant dining table in a crimson room that mixes old and new. Oil paintings in gold frames adorn the walls. There is a sofa with a tiger-skin throw draped over it. He speaks quickly in middle-class tones. “The people coming to the parties are probably people you work with,” he says. “You’d be shocked. Absolutely shocked. It’s teachers, doctors, lawyers, journalists.”"
           },
           "children": []
+        }
+      ]
+    },
+    {
+      "name": "heading4",
+      "children": [
+        {
+          "name": "text",
+          "children": [],
+          "attributes": {
+            "value": "This is heading 4"
+          }
         }
       ]
     },
@@ -681,6 +717,18 @@
       ]
     },
     {
+      "name": "heading5",
+      "children": [
+        {
+          "name": "text",
+          "children": [],
+          "attributes": {
+            "value": "This is heading 5"
+          }
+        }
+      ]
+    },
+    {
       "name": "paragraph",
       "attributes": {},
       "children": [
@@ -690,6 +738,18 @@
             "value": "He did go to university, and eventually he tried to make amends. “I wrote them a letter, basically saying life is too short and you never know what’s going to happen. I remember writing it with tears streaming down my face and smudging the ink.”"
           },
           "children": []
+        }
+      ]
+    },
+    {
+      "name": "heading6",
+      "children": [
+        {
+          "name": "text",
+          "children": [],
+          "attributes": {
+            "value": "This is heading 6"
+          }
         }
       ]
     },

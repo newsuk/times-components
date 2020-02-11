@@ -3,6 +3,119 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.4.15](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.4.14...@times-components/pagination@3.4.15) (2020-02-07)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.4.14](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.4.13...@times-components/pagination@3.4.14) (2020-02-07)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.4.13](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.4.12...@times-components/pagination@3.4.13) (2020-02-06)
+
+
+### Bug Fixes
+
+* Dropcap when first element is interactive ([#2516](https://github.com/newsuk/times-components/issues/2516)) ([4ae6a80](https://github.com/newsuk/times-components/commit/4ae6a8025116f9d2960be7769e37ab5c43a4caee))
+
+
+
+
+
+## [3.4.12](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.4.11...@times-components/pagination@3.4.12) (2020-02-05)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.4.11](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.4.10...@times-components/pagination@3.4.11) (2020-02-04)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.4.10](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.4.9...@times-components/pagination@3.4.10) (2020-01-31)
+
+
+### Bug Fixes
+
+* styleguide versions ([#2512](https://github.com/newsuk/times-components/issues/2512)) ([d33b7db](https://github.com/newsuk/times-components/commit/d33b7db18ce84703f7d0cff01e30ee3ca086d1f3))
+
+
+
+
+
+## [3.4.9](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.4.8...@times-components/pagination@3.4.9) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.4.8](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.4.7...@times-components/pagination@3.4.8) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.4.7](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.4.6...@times-components/pagination@3.4.7) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.4.6](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.4.5...@times-components/pagination@3.4.6) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.4.5](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.4.4...@times-components/pagination@3.4.5) (2020-01-30)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
+## [3.4.4](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.4.3...@times-components/pagination@3.4.4) (2020-01-24)
+
+
+### Bug Fixes
+
+* REPLAT-11684 handle responsive-graphic specially on ios ([#2490](https://github.com/newsuk/times-components/issues/2490)) ([a7ae457](https://github.com/newsuk/times-components/commit/a7ae457b0a422556ce75504fa7ead0da2d658f2b))
+
+
+
+
+
+## [3.4.3](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.4.2...@times-components/pagination@3.4.3) (2020-01-22)
+
+**Note:** Version bump only for package @times-components/pagination
+
+
+
+
+
 ## [3.4.2](https://github.com/newsuk/times-components/compare/@times-components/pagination@3.4.1...@times-components/pagination@3.4.2) (2020-01-15)
 
 **Note:** Version bump only for package @times-components/pagination

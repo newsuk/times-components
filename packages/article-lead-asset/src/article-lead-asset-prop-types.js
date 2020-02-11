@@ -16,6 +16,12 @@ const videoLeadAssetPropTypes = {
   skySports: PropTypes.bool
 };
 
+export const imageLeadAssetPropTypes = {
+  aspectRatio: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+  uri: PropTypes.string.isRequired
+};
+
 export const videoPropTypes = {
   aspectRatio: PropTypes.number.isRequired,
   leadAsset: PropTypes.shape(videoLeadAssetPropTypes),
@@ -29,7 +35,7 @@ export const videoDefaultProps = {
   }
 };
 
-export const leadAssetImagePropTypes = {
+export const leadAssetImageCropsPropTypes = {
   caption: PropTypes.string,
   credits: PropTypes.string,
   crop: cropPropTypes,
@@ -46,7 +52,7 @@ export const propTypes = {
   displayImage: cropPropTypes,
   isVideo: PropTypes.bool,
   leadAsset: PropTypes.oneOfType([
-    PropTypes.shape(leadAssetImagePropTypes),
+    PropTypes.shape(leadAssetImageCropsPropTypes),
     PropTypes.shape(videoLeadAssetPropTypes)
   ]),
   renderCaption: PropTypes.func,

@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import { View } from "react-native";
-import { addMissingProtocol } from "@times-components/utils";
+import { addMissingProtocol, appendToImageURL } from "@times-components/utils";
 import Placeholder from "./placeholder";
 import { defaultProps, propTypes } from "./image-prop-types";
-import appendToURL from "./utils";
 import styles from "./styles/index.web";
 import StyledImage from "./styles/responsive";
 
@@ -68,7 +67,7 @@ class TimesImage extends Component {
           isLoaded={highResIsLoaded}
           onLoad={this.handleHighResOnLoad}
           onTransitionEnd={this.onHighResTransitionEnd}
-          src={appendToURL(url, "resize", highResSize)}
+          src={appendToImageURL(url, "resize", highResSize)}
           zIndex={2}
         />
       );
@@ -77,17 +76,22 @@ class TimesImage extends Component {
     return null;
   }
 
-  lowResImage({ lowResSize, url }) {
+  lowResImage({ lowResQuality, lowResSize, url }) {
     const { highResIsVisible, lowResIsLoaded } = this.state;
     const { accessibilityLabel } = this.props;
     if (lowResSize && !highResIsVisible) {
+      let imageSource = appendToImageURL(url, "resize", lowResSize);
+      if (lowResQuality) {
+        imageSource = appendToImageURL(imageSource, "quality", lowResQuality);
+      }
+
       return (
         <StyledImage
           alt={accessibilityLabel}
           ref={this.getLowResImage}
           isLoaded={lowResIsLoaded}
           onLoad={this.handleLowResOnLoad}
-          src={appendToURL(url, "resize", lowResSize)}
+          src={imageSource}
           zIndex={1}
         />
       );
@@ -101,6 +105,7 @@ class TimesImage extends Component {
       aspectRatio,
       disablePlaceholder,
       highResSize,
+      lowResQuality,
       lowResSize,
       style,
       uri,
@@ -119,7 +124,7 @@ class TimesImage extends Component {
           style={{ ...styles.wrapper, paddingBottom: `${100 / aspectRatio}%` }}
         >
           {this.highResImage({ highResSize, lowResSize, url })}
-          {this.lowResImage({ lowResSize, url })}
+          {this.lowResImage({ lowResQuality, lowResSize, url })}
           {disablePlaceholder || imageIsLoaded ? null : (
             <Placeholder borderRadius={rounded ? "50%" : 0} />
           )}

@@ -3,6 +3,135 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.5.0](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.4.17...@times-components/article-byline@3.5.0) (2020-02-10)
+
+
+### Features
+
+* REPLAT-12031 mainstandard bylines handling ([#2517](https://github.com/newsuk/times-components/issues/2517)) ([8f99a38](https://github.com/newsuk/times-components/commit/8f99a383d147ae3b968a3d612de50b3dd581cdaa))
+
+
+
+
+
+## [3.4.17](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.4.16...@times-components/article-byline@3.4.17) (2020-02-07)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.4.16](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.4.15...@times-components/article-byline@3.4.16) (2020-02-07)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.4.15](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.4.14...@times-components/article-byline@3.4.15) (2020-02-06)
+
+
+### Bug Fixes
+
+* Dropcap when first element is interactive ([#2516](https://github.com/newsuk/times-components/issues/2516)) ([4ae6a80](https://github.com/newsuk/times-components/commit/4ae6a8025116f9d2960be7769e37ab5c43a4caee))
+
+
+
+
+
+## [3.4.14](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.4.13...@times-components/article-byline@3.4.14) (2020-02-05)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.4.13](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.4.12...@times-components/article-byline@3.4.13) (2020-02-04)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.4.12](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.4.11...@times-components/article-byline@3.4.12) (2020-01-31)
+
+
+### Bug Fixes
+
+* styleguide versions ([#2512](https://github.com/newsuk/times-components/issues/2512)) ([d33b7db](https://github.com/newsuk/times-components/commit/d33b7db18ce84703f7d0cff01e30ee3ca086d1f3))
+
+
+
+
+
+## [3.4.11](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.4.10...@times-components/article-byline@3.4.11) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.4.10](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.4.9...@times-components/article-byline@3.4.10) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.4.9](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.4.8...@times-components/article-byline@3.4.9) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.4.8](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.4.7...@times-components/article-byline@3.4.8) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.4.7](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.4.6...@times-components/article-byline@3.4.7) (2020-01-30)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.4.6](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.4.5...@times-components/article-byline@3.4.6) (2020-01-24)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.4.5](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.4.4...@times-components/article-byline@3.4.5) (2020-01-23)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
+## [3.4.4](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.4.3...@times-components/article-byline@3.4.4) (2020-01-22)
+
+**Note:** Version bump only for package @times-components/article-byline
+
+
+
+
+
 ## [3.4.3](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.4.2...@times-components/article-byline@3.4.3) (2020-01-15)
 
 **Note:** Version bump only for package @times-components/article-byline

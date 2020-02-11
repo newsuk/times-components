@@ -3,6 +3,116 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.7.30](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.7.29...@times-components/article-label@2.7.30) (2020-02-07)
+
+**Note:** Version bump only for package @times-components/article-label
+
+
+
+
+
+## [2.7.29](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.7.28...@times-components/article-label@2.7.29) (2020-02-07)
+
+**Note:** Version bump only for package @times-components/article-label
+
+
+
+
+
+## [2.7.28](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.7.27...@times-components/article-label@2.7.28) (2020-02-06)
+
+
+### Bug Fixes
+
+* Dropcap when first element is interactive ([#2516](https://github.com/newsuk/times-components/issues/2516)) ([4ae6a80](https://github.com/newsuk/times-components/commit/4ae6a8025116f9d2960be7769e37ab5c43a4caee))
+
+
+
+
+
+## [2.7.27](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.7.26...@times-components/article-label@2.7.27) (2020-02-05)
+
+**Note:** Version bump only for package @times-components/article-label
+
+
+
+
+
+## [2.7.26](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.7.25...@times-components/article-label@2.7.26) (2020-02-04)
+
+**Note:** Version bump only for package @times-components/article-label
+
+
+
+
+
+## [2.7.25](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.7.24...@times-components/article-label@2.7.25) (2020-01-31)
+
+
+### Bug Fixes
+
+* styleguide versions ([#2512](https://github.com/newsuk/times-components/issues/2512)) ([d33b7db](https://github.com/newsuk/times-components/commit/d33b7db18ce84703f7d0cff01e30ee3ca086d1f3))
+
+
+
+
+
+## [2.7.24](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.7.23...@times-components/article-label@2.7.24) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/article-label
+
+
+
+
+
+## [2.7.23](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.7.22...@times-components/article-label@2.7.23) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/article-label
+
+
+
+
+
+## [2.7.22](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.7.21...@times-components/article-label@2.7.22) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/article-label
+
+
+
+
+
+## [2.7.21](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.7.20...@times-components/article-label@2.7.21) (2020-01-31)
+
+**Note:** Version bump only for package @times-components/article-label
+
+
+
+
+
+## [2.7.20](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.7.19...@times-components/article-label@2.7.20) (2020-01-30)
+
+**Note:** Version bump only for package @times-components/article-label
+
+
+
+
+
+## [2.7.19](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.7.18...@times-components/article-label@2.7.19) (2020-01-23)
+
+**Note:** Version bump only for package @times-components/article-label
+
+
+
+
+
+## [2.7.18](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.7.17...@times-components/article-label@2.7.18) (2020-01-22)
+
+**Note:** Version bump only for package @times-components/article-label
+
+
+
+
+
 ## [2.7.17](https://github.com/newsuk/times-components/compare/@times-components/article-label@2.7.16...@times-components/article-label@2.7.17) (2020-01-15)
 
 **Note:** Version bump only for package @times-components/article-label

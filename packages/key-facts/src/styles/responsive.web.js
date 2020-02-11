@@ -18,13 +18,13 @@ export const KeyFactsResponsiveContainer = styled(View)`
 
 export const KeyFactsResponsiveWrapper = styled(View)`
   @media (min-width: ${breakpoints.medium}px) {
-    width: 80%;
+    width: 75%;
   }
 `;
 
 export const KeyFactsTitleResponsive = styled(Text)`
   @media (min-width: ${breakpoints.medium}px) {
     padding-right: ${spacing(4)};
-    width: 20%;
+    width: 25%;
   }
 `;

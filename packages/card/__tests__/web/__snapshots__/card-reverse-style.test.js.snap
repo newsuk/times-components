@@ -125,6 +125,7 @@ exports[`card with reversed layout 1`] = `
       disablePlaceholder={false}
       fadeImageIn={false}
       highResSize={600}
+      lowResQuality={null}
       lowResSize={30}
       rounded={false}
       uri="https://img.io/img"

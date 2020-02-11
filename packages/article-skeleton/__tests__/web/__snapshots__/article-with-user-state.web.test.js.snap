@@ -8,6 +8,7 @@ exports[`Article with user state Render full article when user has access to ful
   <article
     data-article-identifier="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
     data-article-sectionname="Some Section"
+    data-article-template="mainstandard"
     id="article-main"
   >
     <Head />
@@ -55,7 +56,8 @@ exports[`Article with user state Render full article when user has access to ful
                 Object {
                   "display": "primary",
                   "highResSize": null,
-                  "lowResSize": 100,
+                  "lowResQuality": 3,
+                  "lowResSize": 400,
                   "ratio": "1500:1000",
                   "uri": "https://image.io",
                 }
@@ -78,7 +80,8 @@ exports[`Article with user state Render full article when user has access to ful
                 Object {
                   "display": "secondary",
                   "highResSize": null,
-                  "lowResSize": 100,
+                  "lowResQuality": 3,
+                  "lowResSize": 400,
                   "ratio": "1500:1000",
                   "uri": "https://image.io/secondary",
                 }
@@ -101,7 +104,8 @@ exports[`Article with user state Render full article when user has access to ful
                 Object {
                   "display": "inline",
                   "highResSize": null,
-                  "lowResSize": 100,
+                  "lowResQuality": 3,
+                  "lowResSize": 400,
                   "ratio": "1500:1000",
                   "uri": "https://image.io/inline",
                 }
@@ -272,6 +276,9 @@ exports[`Article with user state Render full article when user has access to ful
             }
           />
         </span>
+        <div
+          id="paywall-portal-article-footer"
+        />
         <ArticleExtras
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
@@ -356,6 +363,7 @@ exports[`Article with user state Render teaser article when user does not have a
   <article
     data-article-identifier="198c4b2f-ecec-4f34-be53-c89f83bc1b44"
     data-article-sectionname="Some Section"
+    data-article-template="mainstandard"
     id="article-main"
   >
     <Head />
@@ -403,7 +411,8 @@ exports[`Article with user state Render teaser article when user does not have a
                 Object {
                   "display": "primary",
                   "highResSize": null,
-                  "lowResSize": 100,
+                  "lowResQuality": 3,
+                  "lowResSize": 400,
                   "ratio": "1500:1000",
                   "uri": "https://image.io",
                 }
@@ -426,7 +435,8 @@ exports[`Article with user state Render teaser article when user does not have a
                 Object {
                   "display": "secondary",
                   "highResSize": null,
-                  "lowResSize": 100,
+                  "lowResQuality": 3,
+                  "lowResSize": 400,
                   "ratio": "1500:1000",
                   "uri": "https://image.io/secondary",
                 }
@@ -449,7 +459,8 @@ exports[`Article with user state Render teaser article when user does not have a
                 Object {
                   "display": "inline",
                   "highResSize": null,
-                  "lowResSize": 100,
+                  "lowResQuality": 3,
+                  "lowResSize": 400,
                   "ratio": "1500:1000",
                   "uri": "https://image.io/inline",
                 }
@@ -620,6 +631,9 @@ exports[`Article with user state Render teaser article when user does not have a
             }
           />
         </span>
+        <div
+          id="paywall-portal-article-footer"
+        />
         <ArticleExtras
           articleHeadline="Some Headline"
           articleId="198c4b2f-ecec-4f34-be53-c89f83bc1b44"

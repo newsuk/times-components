@@ -5,7 +5,7 @@
   "description": "A collection of presentational components for The Times and Sunday Times",
   "main": "index.js",
   "engines": {
-    "node": ">=8.10.0 <13",
+    "node": ">=10.13.0 <13",
     "yarn": ">=1.16.0"
   },
   "bin": {
@@ -60,6 +60,7 @@
     "test:ios": "lerna run test:ios --stream",
     "test:android": "lerna run test:android --stream",
     "test:web": "lerna run test:web --stream",
+    "test:unit": "lerna run test:unit --stream",
     "test:e2e": "yarn bundle && lerna run test:integration --stream",
     "test:e2e:debug": "yarn bundle && lerna run test:integration:debug --stream",
     "watch": "lerna run watch --stream --no-sort --concurrency 100"

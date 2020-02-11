@@ -56,7 +56,7 @@ const sizes = {
     },
     {
       height: 250,
-      sizes: [[300, 250]],
+      sizes: [[300, 250], [300, 600]],
       width: 300
     }
   ],
