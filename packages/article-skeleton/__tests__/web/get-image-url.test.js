@@ -37,12 +37,4 @@ describe("getImageUrl", () => {
     const expectedUrl = "https://myurl.com?myKey=myValue";
     expect(getImageUrl(url, "myKey", "myValue")).toEqual(expectedUrl);
   });
-
-  it("real url", () => {
-    const url =
-      "https://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/d25bfcbabb483488861e9b35d64be66224fd4db1.jpg?crop=1000%2C563%2C0%2C220";
-    const expectedUrl =
-      "https://nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/d25bfcbabb483488861e9b35d64be66224fd4db1.jpg?crop=1000%2C563%2C0%2C220&myKey=myValue";
-    expect(getImageUrl(url, "myKey", "myValue")).toEqual(expectedUrl);
-  });
 });
