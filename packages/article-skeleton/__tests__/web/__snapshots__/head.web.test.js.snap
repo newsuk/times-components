@@ -10,7 +10,9 @@ Array [
 `;
 
 exports[`Head outputs correct metadata 1`] = `
-<Helmet>
+<Helmet
+  encodeSpecialCharacters={false}
+>
   <title>
     Some Headline
      | 
@@ -82,7 +84,9 @@ exports[`Head outputs correct metadata 1`] = `
 `;
 
 exports[`Head outputs correct metadata for a video article 1`] = `
-<Helmet>
+<Helmet
+  encodeSpecialCharacters={false}
+>
   <title>
     Some Headline
      | 

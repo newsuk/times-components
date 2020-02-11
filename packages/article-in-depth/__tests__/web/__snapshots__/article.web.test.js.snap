@@ -14,7 +14,9 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
     data-article-sectionname="Some Section"
     id="article-main"
   >
-    <Helmet>
+    <Helmet
+      encodeSpecialCharacters={false}
+    >
       <title>
         Some Short Headline
          | 
@@ -278,7 +280,9 @@ exports[`4. an article with ads 1`] = `
     data-article-sectionname="Some Section"
     id="article-main"
   >
-    <Helmet>
+    <Helmet
+      encodeSpecialCharacters={false}
+    >
       <title>
         Some Headline
          | 
