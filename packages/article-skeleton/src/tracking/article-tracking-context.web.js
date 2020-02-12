@@ -17,7 +17,9 @@ export default Component =>
 
       return {
         articleId: get(data, "id", ""),
-        article_topic_tags: get(data, "topics", []).map(topic => topic.name),
+        article_topic_tags: data.topics
+          ? data.topics.map(topic => topic.name)
+          : [],
         bylines: get(
           data,
           "bylines[0].byline[0].children[0].attributes.value",
