@@ -18,3 +18,10 @@ jest.mock("react-native-device-info", () => {
     getVersion: jest.fn()
   };
 });
+
+jest.mock("@react-native-community/netinfo", () => {
+  return {
+    fetch: () => Promise.resolve({ isConnected: true }),
+    subscribe: () => () => {}
+  };
+});
