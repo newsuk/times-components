@@ -12,6 +12,15 @@ exports[`full article with style on mobile 1`] = `
         }
       >
         <ModalImage />
+        <Caption
+          style={
+            Object {
+              "container": Object {
+                "paddingHorizontal": 10,
+              },
+            }
+          }
+        />
       </View>
     </View>
     <View
@@ -144,6 +153,15 @@ exports[`full article with style on tablet 1`] = `
         }
       >
         <ModalImage />
+        <Caption
+          style={
+            Object {
+              "container": Object {
+                "paddingHorizontal": 10,
+              },
+            }
+          }
+        />
       </View>
     </View>
     <View

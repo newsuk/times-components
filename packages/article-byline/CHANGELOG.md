@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.5.0](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.4.17...@times-components/article-byline@3.5.0) (2020-02-10)
+
+
+### Features
+
+* REPLAT-12031 mainstandard bylines handling ([#2517](https://github.com/newsuk/times-components/issues/2517)) ([8f99a38](https://github.com/newsuk/times-components/commit/8f99a383d147ae3b968a3d612de50b3dd581cdaa))
+
+
+
+
+
 ## [3.4.17](https://github.com/newsuk/times-components/compare/@times-components/article-byline@3.4.16...@times-components/article-byline@3.4.17) (2020-02-07)
 
 **Note:** Version bump only for package @times-components/article-byline

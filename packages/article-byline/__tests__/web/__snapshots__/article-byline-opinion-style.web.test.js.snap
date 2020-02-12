@@ -1,5 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`1. main standard template - with a single author 1`] = `
+<style>
+.S1 {
+  color: rgba(133,0,41,1.00);
+  font-family: TimesModern-Bold;
+  font-size: 22px;
+  line-height: 27px;
+}
+</style>
+
+<div
+  className="css-view-1dbjc4n"
+>
+  <span
+    className="responsiveweb-e5ajv9-0 gOHwqY"
+  >
+    <div
+      className="css-text-901oao r-color-1dunems r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw S1"
+    >
+      Alexandra Frean
+    </div>
+    
+  </span>
+</div>
+`;
+
 exports[`1. with a single author 1`] = `
 <style>
 .S1 {
@@ -18,6 +44,101 @@ exports[`1. with a single author 1`] = `
   >
     Alexandra Frean
   </div>
+</div>
+`;
+
+exports[`2. main standard template - with a very long byline 1`] = `
+<style>
+.S1 {
+  color: rgba(133,0,41,1.00);
+  font-family: TimesModern-Bold;
+  font-size: 22px;
+  line-height: 27px;
+}
+</style>
+
+<div
+  className="css-view-1dbjc4n"
+>
+  <span
+    className="responsiveweb-e5ajv9-0 gOHwqY"
+  >
+    <div
+      className="css-text-901oao r-color-1dunems r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw S1"
+    >
+      Camilla Long
+    </div>
+    <div
+      className="css-text-901oao"
+    >
+      , 
+    </div>
+  </span>
+  <span
+    className="responsiveweb-e5ajv9-0 gOHwqY"
+  >
+    <div
+      className="css-text-901oao r-color-1dunems r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw S1"
+    >
+      Environment Editor
+      <span
+        className="css-text-901oao css-textHasAncestor-16my406"
+      >
+        , 
+      </span>
+    </div>
+  </span>
+  <span
+    className="responsiveweb-e5ajv9-0 gOHwqY"
+  >
+    <div
+      className="css-text-901oao r-color-1dunems r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw S1"
+    >
+      Camilla Long
+    </div>
+    <div
+      className="css-text-901oao"
+    >
+      , 
+    </div>
+  </span>
+  <span
+    className="responsiveweb-e5ajv9-0 gOHwqY"
+  >
+    <div
+      className="css-text-901oao r-color-1dunems r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw S1"
+    >
+      Environment Editor
+      <span
+        className="css-text-901oao css-textHasAncestor-16my406"
+      >
+        , 
+      </span>
+    </div>
+  </span>
+  <span
+    className="responsiveweb-e5ajv9-0 gOHwqY"
+  >
+    <div
+      className="css-text-901oao r-color-1dunems r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw S1"
+    >
+      Camilla Long
+    </div>
+    <div
+      className="css-text-901oao"
+    >
+      , 
+    </div>
+  </span>
+  <span
+    className="responsiveweb-e5ajv9-0 gOHwqY"
+  >
+    <div
+      className="css-text-901oao r-color-1dunems r-fontFamily-iirzy8 r-fontSize-evnaw r-fontWeight-16dba41 r-lineHeight-1kt6imw S1"
+    >
+      Environment Editor
+    </div>
+  </span>
 </div>
 `;
 

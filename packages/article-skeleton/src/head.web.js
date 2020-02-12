@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet-async";
 import PropTypes from "prop-types";
 import Context from "@times-components/context";
 import { renderTreeAsText } from "@times-components/markup-forest";
+import appendToUrl from "./utils/append-to-url";
 
 // Get the section for an article, preferring it not to be News
 function getSectionName(article) {
@@ -49,22 +50,6 @@ function getAuthorAsText(article) {
   }, []);
 
   return renderTreeAsText({ children });
-}
-
-function appendToUrl(uriString, key, value) {
-  if (!uriString || !key || !value) {
-    return uriString;
-  }
-
-  if (uriString.includes(`?${key}`) || uriString.includes(`&${key}`)) {
-    return uriString;
-  }
-
-  if (uriString.includes("?")) {
-    return `${uriString}&${key}=${value}`;
-  }
-
-  return `${uriString}?${key}=${value}`;
 }
 
 const PUBLICATION_NAMES = {
@@ -174,7 +159,7 @@ function Head({ article, logoUrl, paidContentClassName }) {
       {({ makeArticleUrl }) => {
         jsonLD.mainEntityOfPage["@id"] = makeArticleUrl(article);
         return (
-          <Helmet>
+          <Helmet encodeSpecialCharacters={false}>
             <title>
               {title} | {sectionname ? `${sectionname} | ` : ""}
               {publication}

@@ -1,5 +1,36 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`1. main standard template - with a single author 1`] = `
+<style>
+.S1 {
+  color: rgba(51,51,51,1.00);
+  -ms-flex-direction: row;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  font-family: GillSansMTStd-Medium;
+  font-size: 13px;
+  line-height: 15px;
+}
+</style>
+
+<div
+  className="css-view-1dbjc4n"
+>
+  <span
+    className="responsiveweb-e5ajv9-0 gOHwqY"
+  >
+    <div
+      className="css-text-901oao r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S1"
+    >
+      Alexandra Frean
+    </div>
+    
+  </span>
+</div>
+`;
+
 exports[`1. with a single author 1`] = `
 <style>
 .S1 {
@@ -23,6 +54,106 @@ exports[`1. with a single author 1`] = `
   >
     Alexandra Frean
   </div>
+</div>
+`;
+
+exports[`2. main standard template - with a very long byline 1`] = `
+<style>
+.S1 {
+  color: rgba(51,51,51,1.00);
+  -ms-flex-direction: row;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  font-family: GillSansMTStd-Medium;
+  font-size: 13px;
+  line-height: 15px;
+}
+</style>
+
+<div
+  className="css-view-1dbjc4n"
+>
+  <span
+    className="responsiveweb-e5ajv9-0 gOHwqY"
+  >
+    <div
+      className="css-text-901oao r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S1"
+    >
+      Camilla Long
+    </div>
+    <div
+      className="css-text-901oao"
+    >
+      , 
+    </div>
+  </span>
+  <span
+    className="responsiveweb-e5ajv9-0 gOHwqY"
+  >
+    <div
+      className="css-text-901oao r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S1"
+    >
+      Environment Editor
+      <span
+        className="css-text-901oao css-textHasAncestor-16my406"
+      >
+        , 
+      </span>
+    </div>
+  </span>
+  <span
+    className="responsiveweb-e5ajv9-0 gOHwqY"
+  >
+    <div
+      className="css-text-901oao r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S1"
+    >
+      Camilla Long
+    </div>
+    <div
+      className="css-text-901oao"
+    >
+      , 
+    </div>
+  </span>
+  <span
+    className="responsiveweb-e5ajv9-0 gOHwqY"
+  >
+    <div
+      className="css-text-901oao r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S1"
+    >
+      Environment Editor
+      <span
+        className="css-text-901oao css-textHasAncestor-16my406"
+      >
+        , 
+      </span>
+    </div>
+  </span>
+  <span
+    className="responsiveweb-e5ajv9-0 gOHwqY"
+  >
+    <div
+      className="css-text-901oao r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S1"
+    >
+      Camilla Long
+    </div>
+    <div
+      className="css-text-901oao"
+    >
+      , 
+    </div>
+  </span>
+  <span
+    className="responsiveweb-e5ajv9-0 gOHwqY"
+  >
+    <div
+      className="css-text-901oao r-color-1khnkhu r-flexDirection-18u37iz r-fontFamily-j2s0nr r-fontSize-n6v787 r-lineHeight-fxxt2n S1"
+    >
+      Environment Editor
+    </div>
+  </span>
 </div>
 `;
 
