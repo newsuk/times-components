@@ -14,7 +14,9 @@ export default Component =>
       const editionType = days > 1.0 ? "past 6 days" : "current edition";
       return {
         articleId: get(data, "id", ""),
-        article_topic_tags: get(data, "topics", []).map(topic => topic.slug),
+        article_topic_tags: data.topics
+          ? data.topics.map(topic => topic.slug)
+          : [],
         bylines: get(
           data,
           "bylines[0].byline[0].children[0].attributes.value",
