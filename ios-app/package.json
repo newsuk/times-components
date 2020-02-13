@@ -18,6 +18,7 @@
     "react-native-device-info": "5.3.1",
     "react-native-svg": "9.11.1",
     "react-native-webview": "7.0.5",
+    "@react-native-community/netinfo": "5.3.3",
     "url-polyfill": "1.1.0"
   },
   "devDependencies": {

@@ -2,8 +2,7 @@
 import React, { Component } from "react";
 import { Subscriber } from "react-broadcast";
 import { Platform, View } from "react-native";
-import { screenWidth } from "@times-components/utils";
-import NetInfo from "@react-native-community/netinfo";
+import { screenWidth, ServerClientRender } from "@times-components/utils";
 import { getPrebidSlotConfig, getSlotConfig, prebidConfig } from "./utils";
 import adInit from "./utils/ad-init";
 import AdContainer from "./ad-container";
@@ -28,38 +27,21 @@ class Ad extends Component {
 
     this.prebidConfig = prebidConfig;
 
+    this.isWeb = Platform.OS === "web";
+
     this.state = {
       config: getSlotConfig(slotName, screenWidth()),
       hasError: false,
       isAdReady: false,
-      offline: false
+      hasAdBlock: false
     };
   }
 
   componentDidMount() {
-    NetInfo.fetch()
-      .then(state => {
-        const { isConnected } = state;
-        this.setState({
-          offline: !isConnected
-        });
-      })
-      .then(() => {
-        this.unsubscribe = NetInfo.addEventListener(state => {
-          const { offline } = this.state;
-          const { isConnected } = state;
-          if (isConnected && offline) {
-            this.setState({
-              offline: false
-            });
-          }
-        });
+    if (this.isWeb) {
+      this.setState({
+        hasAdBlock: window.hasAdBlock
       });
-  }
-
-  componentWillUnmount() {
-    if (typeof this.unsubscribe === "function") {
-      this.unsubscribe();
     }
   }
 
@@ -84,9 +66,10 @@ class Ad extends Component {
       slotName,
       style
     } = this.props;
-    const { config, hasError, isAdReady, offline } = this.state;
+    const { config, hasError, isAdReady, hasAdBlock } = this.state;
+    const { isWeb } = this;
 
-    if (hasError || offline) return null;
+    if ((isWeb && hasAdBlock) || hasError) return null;
 
     this.slots = adConfig.bidderSlots.map(slot =>
       getPrebidSlotConfig(
@@ -125,18 +108,17 @@ class Ad extends Component {
       slotTargeting: adConfig.slotTargeting
     };
 
-    const sizeProps =
-      !isAdReady || hasError
-        ? { height: 0, width: 0 }
-        : {
-            height: config.maxSizes.height,
-            width:
-              Platform.OS === "ios" || Platform.OS === "android"
-                ? screenWidth()
-                : config.maxSizes.width
-          };
+    const sizeProps = !isAdReady
+      ? { height: 0, width: 0 }
+      : {
+          height: config.maxSizes.height,
+          width:
+            Platform.OS === "ios" || Platform.OS === "android"
+              ? screenWidth()
+              : config.maxSizes.width
+        };
 
-    return (
+    const adView = (
       <View style={[styles.container, style]}>
         {isLoading ? null : (
           <DOMContext
@@ -149,6 +131,12 @@ class Ad extends Component {
           />
         )}
       </View>
+    );
+
+    return isWeb ? (
+      <ServerClientRender client={() => adView} server={null} />
+    ) : (
+      adView
     );
   }
 
