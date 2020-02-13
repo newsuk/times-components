@@ -1,6 +1,7 @@
 export default str =>
   str
     .trim()
-    .replace(/^(\||,)/, "")
-    .replace(/(\||,)$/, "")
+    .replace(/^(and)$/, "")
+    .replace(/^(\||,|and )/, "")
+    .replace(/(\||,| and)$/, "")
     .trim();

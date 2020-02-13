@@ -499,5 +499,108 @@
         }
       ]
     }
+  ],
+  "multipleAuthorsAndSeparated": [
+    {
+      "__typename": "AuthorByline",
+      "byline": [
+        {
+          "name": "author",
+          "children": [
+            {
+              "name": "text",
+              "children": [],
+              "attributes": {
+                "value": "Tim Shipman"
+              }
+            }
+          ],
+          "attributes": {
+            "slug": "tim-shipman"
+          }
+        }
+      ],
+      "image": null
+    },
+    {
+      "__typename": "TextByline",
+      "byline": [
+        {
+          "name": "inline",
+          "children": [
+            {
+              "name": "text",
+              "children": [],
+              "attributes": {
+                "value": " and "
+              }
+            }
+          ]
+        }
+      ],
+      "image": null
+    },
+    {
+      "__typename": "AuthorByline",
+      "byline": [
+        {
+          "name": "author",
+          "children": [
+            {
+              "name": "text",
+              "children": [],
+              "attributes": {
+                "value": "Sam Chambers"
+              }
+            }
+          ],
+          "attributes": {
+            "slug": "sam-chambers"
+          }
+        }
+      ],
+      "image": null
+    }
+  ],
+  "authorAndText": [
+    {
+      "__typename": "TextByline",
+      "byline": [
+        {
+          "name": "inline",
+          "children": [
+            {
+              "name": "text",
+              "children": [],
+              "attributes": {
+                "value": "Tim Hook and "
+              }
+            }
+          ]
+        }
+      ],
+      "image": null
+    },
+    {
+      "__typename": "AuthorByline",
+      "byline": [
+        {
+          "name": "author",
+          "children": [
+            {
+              "name": "text",
+              "children": [],
+              "attributes": {
+                "value": "Sabah Meddings"
+              }
+            }
+          ],
+          "attributes": {
+            "slug": "sabah-meddings"
+          }
+        }
+      ],
+      "image": null
+    }
   ]
 }

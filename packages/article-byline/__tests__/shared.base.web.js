@@ -154,6 +154,46 @@ export default Component => {
 
         expect(testInstance).toMatchSnapshot();
       }
+    },
+    {
+      name: "main standard template - with multiple authors separated by and",
+      test: () => {
+        const testInstance = renderArticleBylineMainStandard({
+          ast: authorsFixture.multipleAuthorsAndSeparated
+        });
+
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "main standard template - inline text with 'and' and author",
+      test: () => {
+        const testInstance = renderArticleBylineMainStandard({
+          ast: authorsFixture.authorAndText
+        });
+
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "with multiple authors separated by and",
+      test: () => {
+        const testInstance = renderArticleByline({
+          ast: authorsFixture.multipleAuthorsAndSeparated
+        });
+
+        expect(testInstance).toMatchSnapshot();
+      }
+    },
+    {
+      name: "maiinline text with 'and' and author",
+      test: () => {
+        const testInstance = renderArticleByline({
+          ast: authorsFixture.authorAndText
+        });
+
+        expect(testInstance).toMatchSnapshot();
+      }
     }
   ];
 
