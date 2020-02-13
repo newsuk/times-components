@@ -1,6 +1,6 @@
 {
   "name": "@times-components/svgs",
-  "version": "2.7.28",
+  "version": "2.7.29",
   "description": "Svgs wrapper",
   "main": "dist/index",
   "dev": "src/index",
@@ -50,8 +50,8 @@
   "devDependencies": {
     "@babel/core": "7.4.4",
     "@times-components/eslint-config-thetimes": "0.8.16",
-    "@times-components/jest-configurator": "2.6.10",
-    "@times-components/jest-serializer": "3.2.22",
+    "@times-components/jest-configurator": "2.6.11",
+    "@times-components/jest-serializer": "3.2.23",
     "@times-components/test-utils": "2.3.8",
     "@times-components/webpack-configurator": "2.0.27",
     "babel-jest": "24.8.0",

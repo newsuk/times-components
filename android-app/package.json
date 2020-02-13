@@ -1,6 +1,6 @@
 {
   "name": "@times-components/android-app",
-  "version": "0.17.56",
+  "version": "0.17.57",
   "license": "BSD-3-Clause",
   "scripts": {
     "build": "./gradlew clean && ./gradlew generateReactArchives && ./gradlew assemble && ./gradlew publish",
@@ -11,7 +11,8 @@
     "start": "react-native start --config metro.config.js"
   },
   "dependencies": {
-    "@times-components/pages": "2.1.54",
+    "@react-native-community/netinfo": "5.3.3",
+    "@times-components/pages": "2.1.55",
     "@times-components/typeset": "0.0.10",
     "prop-types": "15.7.2",
     "react": "16.9.0",
@@ -20,7 +21,6 @@
     "react-native-svg": "9.11.1",
     "react-native-v8": "0.61.1-patch.3",
     "react-native-webview": "7.0.5",
-    "@react-native-community/netinfo": "5.3.3",
     "url-polyfill": "1.1.0",
     "v8-android": "7.8.2"
   },
