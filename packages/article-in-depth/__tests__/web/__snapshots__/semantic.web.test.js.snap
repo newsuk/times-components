@@ -261,7 +261,7 @@ exports[`1. a full article 1`] = `
           data-player="default"
           data-video-id="4084164751001"
           id="4084164751001-57838016001-3dbfe6b8-680b-11e9-b277-88f3d445182c"
-          poster="https://image.io"
+          poster="https://image.io?resize=960"
         />
         <figcaption>
           This is video caption

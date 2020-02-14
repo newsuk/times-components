@@ -17,7 +17,7 @@ exports[`1. video marked as sky sports 1`] = `
       </div>
     </div>
     <video
-      poster="b9a31d3949b1882a09ed2f8508d538f3"
+      poster="c7dd06ff1063ae467c3a3be00c6caeca"
     />
   </div>
 </div>
@@ -27,7 +27,7 @@ exports[`2. no sky banner displayed on play 1`] = `
 <div>
   <div>
     <video
-      poster="b9a31d3949b1882a09ed2f8508d538f3"
+      poster="c7dd06ff1063ae467c3a3be00c6caeca"
     />
   </div>
 </div>
@@ -43,7 +43,7 @@ exports[`3. 360 video 1`] = `
       />
     </div>
     <video
-      poster="b9a31d3949b1882a09ed2f8508d538f3"
+      poster="c7dd06ff1063ae467c3a3be00c6caeca"
     />
   </div>
 </div>
@@ -53,7 +53,7 @@ exports[`4. player icon for 360 video not displayed after play 1`] = `
 <div>
   <div>
     <video
-      poster="b9a31d3949b1882a09ed2f8508d538f3"
+      poster="c7dd06ff1063ae467c3a3be00c6caeca"
     />
   </div>
 </div>
