@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-main-standard",
-  "version": "3.25.3",
+  "version": "3.26.0",
   "description": "Main Standard Article Template",
   "main": "dist/article-main-standard",
   "dev": "src/article-main-standard",
@@ -65,8 +65,8 @@
     "@times-components/article-error": "0.2.155",
     "@times-components/article-flag": "2.9.32",
     "@times-components/article-label": "2.7.31",
-    "@times-components/article-lead-asset": "1.6.4",
-    "@times-components/article-skeleton": "1.28.8",
+    "@times-components/article-lead-asset": "1.6.5",
+    "@times-components/article-skeleton": "1.29.0",
     "@times-components/article-topics": "4.1.17",
     "@times-components/caption": "3.0.115",
     "@times-components/context": "1.2.3",

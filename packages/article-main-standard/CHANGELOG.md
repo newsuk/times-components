@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.26.0](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.25.3...@times-components/article-main-standard@3.26.0) (2020-02-14)
+
+
+### Features
+
+* add resize param poster video image ([#2533](https://github.com/newsuk/times-components/issues/2533)) ([274069d](https://github.com/newsuk/times-components/commit/274069dd1f02eca02a03459975d0b6b0a0abc5c3))
+
+
+
+
+
 ## [3.25.3](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.25.2...@times-components/article-main-standard@3.25.3) (2020-02-13)
 
 **Note:** Version bump only for package @times-components/article-main-standard
