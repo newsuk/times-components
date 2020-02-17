@@ -61,6 +61,7 @@
     "@times-components/section": "1.6.35",
     "@times-components/styleguide": "3.36.5",
     "@times-components/topic": "5.1.35",
+    "@times-components/search": "0.0.1",
     "apollo-cache-inmemory": "1.5.1",
     "apollo-client": "2.5.1",
     "apollo-link-http": "1.5.14",

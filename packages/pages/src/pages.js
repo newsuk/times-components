@@ -8,7 +8,8 @@ export default page => {
       return require("./author-profile").default;
     }
     case "Section": {
-      return require("./section").default;
+      return require("@times-components/search").default;
+      // return require("./section").default;
     }
     case "Topic": {
       return require("./topic").default;
