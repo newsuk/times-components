@@ -16,31 +16,33 @@ const getMaxSizes = adSizes => {
 
 const slotPositions = {
   "ad-header": 1,
+  "ad-mpu": 3,
   "ad-pixel": 2,
   "ad-pixelskin": 2,
   "ad-pixelteads": 2,
   "article-sponsored-ad": 2,
   default: 0,
   header: 1,
+  mpu: 3,
   pixel: 2,
   pixelskin: 2,
-  pixelteads: 2,
-  customMPU: 3
+  pixelteads: 2
 };
 
 const sizeMap = {
   "ad-header": sizes.header,
+  "ad-mpu": sizes.mpu,
   "ad-pixel": sizes.pixel,
   "ad-pixelskin": sizes.pixelskin,
   "ad-pixelteads": sizes.pixelteads,
   "article-sponsored-ad": sizes.pixel,
   default: sizes.intervention,
   header: sizes.header,
+  mpu: sizes.mpu,
   "native-inline-ad": sizes.native,
   pixel: sizes.pixel,
   pixelskin: sizes.pixel,
-  pixelteads: sizes.pixel,
-  customMPU: sizes.customMPU
+  pixelteads: sizes.pixel
 };
 
 const getAdSizes = (adSizeMap, width) => {
