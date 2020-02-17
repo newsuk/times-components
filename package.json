@@ -41,7 +41,7 @@
     "android": "react-native run-android --no-packager",
     "android:logs": "yarn android && react-native log-android",
     "android:app": "react-native start --config ./android-app/metro.config.js",
-    "android:build-lib": "yarn android:build-lib:js && cd android-app && yarn build",
+    "android:build-lib": "yarn android:build-lib:js && cp -r node_modules/@react-native-community/netinfo node_modules/react-native-community-netinfo && cd android-app && yarn build",
     "android:build-lib:js": "mkdir -p android-app/xnative/src/main/assets/ && mkdir -p android-app/xnative/src/main/res/ && react-native ram-bundle --platform android --dev false --minify --entry-file android-app/index.android.js --bundle-output android-app/xnative/src/main/assets/index.android.bundle --assets-dest android-app/xnative/src/main/res/",
     "android:device": "./lib/setup_device_connections.sh && yarn android",
     "android:publish-lib": "lerna run --scope @times-components/android-app publish-library --stream",
@@ -166,6 +166,7 @@
     "react-art": "16.6.3",
     "react-native": "0.61.1",
     "react-native-device-info": "5.3.1",
+    "@react-native-community/netinfo": "5.3.3",
     "react-native-showcase-loader": "1.1.0"
   }
 }
