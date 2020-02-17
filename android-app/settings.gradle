@@ -8,3 +8,6 @@ project(':react-native-webview').projectDir = new File(settingsDir, '../node_mod
 
 include ':react-native-device-info'
 project(':react-native-device-info').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-device-info/android')
+
+include ':react-native-community-netinfo'
+project(':react-native-community-netinfo').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-community-netinfo/android')

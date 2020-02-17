@@ -1,5 +1,6 @@
 /* eslint-env browser */
 import React, { Component, Fragment } from "react";
+import { appendToImageURL } from "@times-components/utils";
 import { propTypes, defaultProps } from "./video-prop-types";
 import SkySportsBanner from "./sky-sports-banner";
 import Video360Icon from "./video-360-icon";
@@ -192,7 +193,9 @@ class InlineVideoPlayer extends Component {
           <video
             id={this.id}
             style={{ height, width }}
-            {...(poster ? { poster: poster.uri } : {})}
+            {...(poster
+              ? { poster: appendToImageURL(poster.uri, "resize", 960) }
+              : {})}
             className="video-js"
             controls
             data-account={accountId}

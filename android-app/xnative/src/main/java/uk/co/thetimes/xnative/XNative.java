@@ -5,6 +5,7 @@ import com.learnium.RNDeviceInfo.RNDeviceInfo;
 import com.facebook.react.ReactPackage;
 import com.horcrux.svg.SvgPackage;
 import com.reactnativecommunity.webview.RNCWebViewPackage;
+import com.reactnativecommunity.netinfo.NetInfoPackage;
 
 import java.util.List;
 
@@ -14,7 +15,8 @@ public class XNative {
                 new ComponentsPackage(),
                 new SvgPackage(),
                 new RNCWebViewPackage(),
-                new RNDeviceInfo()
+                new RNDeviceInfo(),
+                new NetInfoPackage()
         );
     }
 }
