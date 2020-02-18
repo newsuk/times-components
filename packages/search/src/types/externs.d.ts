@@ -7,7 +7,6 @@ declare module '@times-components/styleguide' {
   export const colours: Colours;
   export const fontFactory: any;
   export const spacing: any;
-  
 }
 
 declare module "@times-components/article-summary" {

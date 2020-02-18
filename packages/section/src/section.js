@@ -10,6 +10,7 @@ import MagazineCover from "./magazine-cover";
 import Slice from "./slice";
 import styleFactory from "./styles";
 import { prepareSlicesForRender, createPuzzleData } from "./utils";
+import Search from '@times-components/search'
 
 const styles = styleFactory();
 
@@ -51,6 +52,10 @@ class Section extends Component {
   }
 
   renderItem({ index, item: slice }) {
+    if (slice == "search") {
+      return <Search />
+    }
+
     const {
       onArticlePress,
       onPuzzlePress,
@@ -112,7 +117,7 @@ class Section extends Component {
                   isTablet && isPuzzle && styles.additionalContainerPadding
                 }
                 removeClippedSubviews
-                data={data}
+                data={["search", ...data]}
                 initialNumToRender={isTablet ? 5 : 2}
                 ItemSeparatorComponent={leadingItem =>
                   this.renderItemSeperator(leadingItem, editionBreakpoint)
@@ -147,11 +152,11 @@ Section.propTypes = {
 };
 
 Section.defaultProps = {
-  onArticlePress: () => {},
-  onPuzzleBarPress: () => {},
-  onPuzzlePress: () => {},
-  onViewed: () => {},
-  receiveChildList: () => {}
+  onArticlePress: () => { },
+  onPuzzleBarPress: () => { },
+  onPuzzlePress: () => { },
+  onViewed: () => { },
+  receiveChildList: () => { }
 };
 
 export default withTrackingContext(withTrackScrollDepth(Section));
