@@ -7,11 +7,13 @@ exports[`2. loading 1`] = `null`;
 exports[`3. an article with no headline falls back to use shortheadline 1`] = `
 <ArticleSkeleton>
   <View>
-    <ModalImage
-      aspectRatio={1}
-      rounded={true}
-      uri={null}
-    />
+    <View>
+      <ModalImage
+        aspectRatio={1}
+        rounded={true}
+        uri={null}
+      />
+    </View>
     <Text>
       Some Short Headline
     </Text>
@@ -73,11 +75,13 @@ exports[`3. an article with no headline falls back to use shortheadline 1`] = `
 exports[`4. an article with ads 1`] = `
 <ArticleSkeleton>
   <View>
-    <ModalImage
-      aspectRatio={1}
-      rounded={true}
-      uri={null}
-    />
+    <View>
+      <ModalImage
+        aspectRatio={1}
+        rounded={true}
+        uri={null}
+      />
+    </View>
     <Text>
       Some Headline
     </Text>
@@ -139,11 +143,13 @@ exports[`4. an article with ads 1`] = `
 exports[`7. an article with no author 1`] = `
 <ArticleSkeleton>
   <View>
-    <ModalImage
-      aspectRatio={1}
-      rounded={true}
-      uri={null}
-    />
+    <View>
+      <ModalImage
+        aspectRatio={1}
+        rounded={true}
+        uri={null}
+      />
+    </View>
     <View>
       <ArticleLabel
         color="#1D1D1B"
