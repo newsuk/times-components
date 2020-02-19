@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.29.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.29.0...@times-components/article-skeleton@1.29.1) (2020-02-19)
+
+
+### Bug Fixes
+
+* article-magazine-comment was messed up ([#2536](https://github.com/newsuk/times-components/issues/2536)) ([28511e7](https://github.com/newsuk/times-components/commit/28511e7dc2eebdb59af213658503135f100e6fca))
+
+
+
+
+
 # [1.29.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.28.8...@times-components/article-skeleton@1.29.0) (2020-02-14)
 
 

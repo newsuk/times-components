@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.11.0](https://github.com/newsuk/times-components/compare/@times-components/ad@2.10.14...@times-components/ad@2.11.0) (2020-02-19)
+
+
+### Features
+
+* rename mpu ad slot ([#2528](https://github.com/newsuk/times-components/issues/2528)) ([2cea3f4](https://github.com/newsuk/times-components/commit/2cea3f49ef5e3b28169e02955845e0a10bccbd47))
+
+
+
+
+
 ## [2.10.14](https://github.com/newsuk/times-components/compare/@times-components/ad@2.10.13...@times-components/ad@2.10.14) (2020-02-13)
 
 
