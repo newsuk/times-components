@@ -15,17 +15,19 @@ exports[`1. article magazine comment - tablet 1`] = `
       }
     }
   >
-    <ModalImage
+    <View
       style={
         Object {
           "borderRadius": 50,
           "height": 108,
-          "marginBottom": 25,
+          "marginBottom": 10,
           "overflow": "hidden",
           "width": 108,
         }
       }
-    />
+    >
+      <ModalImage />
+    </View>
     <View
       style={
         Object {
@@ -80,7 +82,6 @@ exports[`1. article magazine comment - tablet 1`] = `
           "alignItems": "center",
           "flexDirection": "row",
           "justifyContent": "center",
-          "marginTop": 20,
         }
       }
     >

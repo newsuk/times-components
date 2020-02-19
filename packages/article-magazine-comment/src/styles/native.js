@@ -8,7 +8,8 @@ const nativeStyles = {
     borderRadius: 50,
     height: 100,
     overflow: "hidden",
-    width: 100
+    width: 100,
+    marginBottom: spacing(2)
   },
   authorImageTablet: {
     height: 108,
@@ -17,10 +18,6 @@ const nativeStyles = {
   standFirst: {
     ...sharedStyles.standFirst,
     lineHeight: 25
-  },
-  metaContainer: {
-    ...sharedStyles.metaContainer,
-    marginTop: spacing(4)
   }
 };
 

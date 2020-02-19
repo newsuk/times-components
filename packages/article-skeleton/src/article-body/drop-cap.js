@@ -1,7 +1,6 @@
 import React from "react";
-import { fonts, tabletWidth } from "@times-components/styleguide";
+import { fonts } from "@times-components/styleguide";
 import { FontStorage, BoxExclusion } from "@times-components/typeset";
-import { screenWidth } from "@times-components/utils";
 import { Text } from "react-native";
 import { getStringBounds } from "../body-utils";
 
@@ -25,18 +24,21 @@ export default (scale, color, dropCapFont, paragraph) => {
   const font = FontStorage.getFont(fontSettings);
   const { width, height } = getStringBounds(fontSettings, letter.string);
   const advance = font.getAdvanceWidth(letter.string, baseStyle.fontSize);
-  const gutters = (screenWidth() - Math.min(screenWidth(), tabletWidth)) / 2;
-  const exclusion = new BoxExclusion(0, 0, width + advance, height);
+  const exclusion = new BoxExclusion(
+    0,
+    0,
+    width + letter.length * advance,
+    height
+  );
   const element = (
     <Text
       allowFontScaling={false}
       style={[
         {
           position: "absolute",
-          left: gutters + advance,
+          left: advance,
           fontSize,
-          lineHeight: fontSize,
-          top: -(baseStyle.fontSize / 2),
+          lineHeight: height * 1.33,
           fontFamily: fonts[dropCapFont],
           color: fontSettings.color
         }
