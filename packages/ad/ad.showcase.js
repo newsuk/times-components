@@ -18,10 +18,10 @@ const withOpenInNewWindow = children => (
 const slotNames = [
   "intervention",
   "header",
+  "mpu",
   "pixel",
   "pixelteads",
-  "pixelskin",
-  "customMPU"
+  "pixelskin"
 ];
 
 const articleContextURL =

@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.11.0](https://github.com/newsuk/times-components/compare/@times-components/ad@2.10.14...@times-components/ad@2.11.0) (2020-02-19)
+
+
+### Features
+
+* rename mpu ad slot ([#2528](https://github.com/newsuk/times-components/issues/2528)) ([2cea3f4](https://github.com/newsuk/times-components/commit/2cea3f49ef5e3b28169e02955845e0a10bccbd47))
+
+
+
+
+
+## [2.10.14](https://github.com/newsuk/times-components/compare/@times-components/ad@2.10.13...@times-components/ad@2.10.14) (2020-02-13)
+
+
+### Bug Fixes
+
+* (REPLAT-11368) make ads network-aware ([#2531](https://github.com/newsuk/times-components/issues/2531)) ([f890bae](https://github.com/newsuk/times-components/commit/f890bae52ecad851fa63ba10473539ba07fc7287))
+
+
+
+
+
 ## [2.10.13](https://github.com/newsuk/times-components/compare/@times-components/ad@2.10.12...@times-components/ad@2.10.13) (2020-02-07)
 
 **Note:** Version bump only for package @times-components/ad
