@@ -9,12 +9,15 @@ import {
   addDimensionsListener,
   removeDimensionsListener
 } from "@times-components/utils";
+import { NativeModules } from "react-native";
 import ResponsiveContext from "./context";
+
+const config = (NativeModules || {}).ReactConfig;
 
 const calculateState = (width, fontScale) => ({
   editionBreakpoint: getEditionBreakpoint(width),
   fontScale,
-  isTablet: width > tabletWidth,
+  isTablet: (config && config.breakpoint !== "small") || width > tabletWidth,
   screenWidth: width
 });
 
