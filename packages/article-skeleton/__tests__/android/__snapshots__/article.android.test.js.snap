@@ -75,10 +75,9 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                   "color": undefined,
                   "fontFamily": "TimesModern-Regular",
                   "fontSize": 216,
-                  "left": 66.48046875,
-                  "lineHeight": 216,
+                  "left": 21.48046875,
+                  "lineHeight": 204.23812500000003,
                   "position": "absolute",
-                  "top": -18,
                 },
               ]
             }
@@ -692,10 +691,9 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                   "color": undefined,
                   "fontFamily": "TimesModern-Regular",
                   "fontSize": 216,
-                  "left": 69.75,
-                  "lineHeight": 216,
+                  "left": 24.75,
+                  "lineHeight": 241.55085937500002,
                   "position": "absolute",
-                  "top": -18,
                 },
               ]
             }

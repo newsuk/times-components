@@ -13,17 +13,19 @@ exports[`full article with style 1`] = `
       }
     }
   >
-    <ModalImage
+    <View
       style={
         Object {
           "borderRadius": 50,
           "height": 100,
-          "marginBottom": 25,
+          "marginBottom": 10,
           "overflow": "hidden",
           "width": 100,
         }
       }
-    />
+    >
+      <ModalImage />
+    </View>
     <View
       style={
         Object {
@@ -76,7 +78,6 @@ exports[`full article with style 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "marginTop": 20,
         }
       }
     >
@@ -140,17 +141,19 @@ exports[`full article with style in the culture magazine 1`] = `
       }
     }
   >
-    <ModalImage
+    <View
       style={
         Object {
           "borderRadius": 50,
           "height": 100,
-          "marginBottom": 25,
+          "marginBottom": 10,
           "overflow": "hidden",
           "width": 100,
         }
       }
-    />
+    >
+      <ModalImage />
+    </View>
     <View
       style={
         Object {
@@ -203,7 +206,6 @@ exports[`full article with style in the culture magazine 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "marginTop": 20,
         }
       }
     >
@@ -267,17 +269,19 @@ exports[`full article with style in the style magazine 1`] = `
       }
     }
   >
-    <ModalImage
+    <View
       style={
         Object {
           "borderRadius": 50,
           "height": 100,
-          "marginBottom": 25,
+          "marginBottom": 10,
           "overflow": "hidden",
           "width": 100,
         }
       }
-    />
+    >
+      <ModalImage />
+    </View>
     <View
       style={
         Object {
@@ -331,7 +335,6 @@ exports[`full article with style in the style magazine 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "marginTop": 20,
         }
       }
     >
@@ -395,17 +398,19 @@ exports[`full article with style in the sunday times magazine 1`] = `
       }
     }
   >
-    <ModalImage
+    <View
       style={
         Object {
           "borderRadius": 50,
           "height": 100,
-          "marginBottom": 25,
+          "marginBottom": 10,
           "overflow": "hidden",
           "width": 100,
         }
       }
-    />
+    >
+      <ModalImage />
+    </View>
     <View
       style={
         Object {
@@ -458,7 +463,6 @@ exports[`full article with style in the sunday times magazine 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "marginTop": 20,
         }
       }
     >
@@ -522,17 +526,19 @@ exports[`tablet full article with style in the culture magazine 1`] = `
       }
     }
   >
-    <ModalImage
+    <View
       style={
         Object {
           "borderRadius": 50,
           "height": 100,
-          "marginBottom": 25,
+          "marginBottom": 10,
           "overflow": "hidden",
           "width": 100,
         }
       }
-    />
+    >
+      <ModalImage />
+    </View>
     <View
       style={
         Object {
@@ -585,7 +591,6 @@ exports[`tablet full article with style in the culture magazine 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "marginTop": 20,
         }
       }
     >
@@ -649,17 +654,19 @@ exports[`tablet full article with style in the style magazine 1`] = `
       }
     }
   >
-    <ModalImage
+    <View
       style={
         Object {
           "borderRadius": 50,
           "height": 100,
-          "marginBottom": 25,
+          "marginBottom": 10,
           "overflow": "hidden",
           "width": 100,
         }
       }
-    />
+    >
+      <ModalImage />
+    </View>
     <View
       style={
         Object {
@@ -713,7 +720,6 @@ exports[`tablet full article with style in the style magazine 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "marginTop": 20,
         }
       }
     >
@@ -777,17 +783,19 @@ exports[`tablet full article with style in the sunday times magazine 1`] = `
       }
     }
   >
-    <ModalImage
+    <View
       style={
         Object {
           "borderRadius": 50,
           "height": 100,
-          "marginBottom": 25,
+          "marginBottom": 10,
           "overflow": "hidden",
           "width": 100,
         }
       }
-    />
+    >
+      <ModalImage />
+    </View>
     <View
       style={
         Object {
@@ -840,7 +848,6 @@ exports[`tablet full article with style in the sunday times magazine 1`] = `
       style={
         Object {
           "alignItems": "center",
-          "marginTop": 20,
         }
       }
     >
