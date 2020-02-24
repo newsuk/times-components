@@ -9,9 +9,10 @@ const testText = `Lorem Ipsum is simply dummy text of the \n printing and typese
 
 FontStorage.registerFont('TimesDigitalW04-Normal', () => TestFont);
 
-const testString = new AttributedString(testText, [
-  makeAttribute(0, testText.length)
-]);
+const testString = new AttributedString(
+  testText,
+  makeAttribute([], 0, testText.length)
+);
 const testContainer = new TextContainer(500, 500, 0, 0);
 
 test('LayoutManager#constructor()', () => {

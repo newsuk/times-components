@@ -39,45 +39,41 @@ export default ({
       font: "body",
       fontSize: "bodyMobile"
     }),
-    fontStyle: "normal",
-    fontWeight: "normal",
     color: colours.functional.black
   };
 
   const { fontScale } = Dimensions.get("window");
   defaultFont.fontSize *= fontScale;
   defaultFont.lineHeight *= fontScale;
+  const headingSettings = fontFactory({
+    font: "headline",
+    fontSize: "smallHeadline"
+  });
 
   const fontConfig = {
     body: defaultFont,
     bold: {
-      ...defaultFont,
-      fontFamily: "TimesDigitalW04",
       fontWeight: "bold"
     },
     italic: {
-      ...defaultFont,
-      fontFamily: "TimesDigitalW04",
       fontStyle: "italic"
     },
-    link: defaultFont,
     subheading: {
-      ...defaultFont,
-      ...fontFactory({
-        font: "headline",
-        fontSize: "smallHeadline"
-      })
+      font: headingSettings.fontFamily,
+      fontSize: headingSettings.fontSize
     }
   };
 
   return {
     text(key, attributes) {
       const attr = {
-        length: attributes.value.length,
-        start: 0,
-        tag: { tag: "FONT", settings: fontConfig.body }
+        tag: "FONT",
+        settings: fontConfig.body
       };
-      return new AttributedString(attributes.value, [attr]);
+      return new AttributedString(
+        attributes.value,
+        attributes.value.split("").map(() => [attr])
+      );
     },
     heading2(key, attributes, children, index, tree) {
       const childStr = AttributedString.join(children);
@@ -112,11 +108,11 @@ export default ({
     bold(key, attributes, children) {
       const childStr = AttributedString.join(children);
       const attr = {
-        length: childStr.string.length,
-        start: 0,
-        tag: { tag: "FONT", settings: fontConfig.bold }
+        tag: "FONT",
+        settings: fontConfig.bold
       };
-      return new AttributedString(childStr.string, [attr]);
+      childStr.addAttribute(0, childStr.length, attr);
+      return childStr;
     },
     emphasis(key, attributes, children) {
       return this.bold(key, attributes, children);
@@ -127,38 +123,43 @@ export default ({
     italic(key, attributes, children) {
       const childStr = AttributedString.join(children);
       const attr = {
-        length: childStr.string.length,
-        start: 0,
-        tag: { tag: "FONT", settings: fontConfig.italic }
+        tag: "FONT",
+        settings: fontConfig.italic
       };
-      return new AttributedString(childStr.string, [attr]);
+      childStr.addAttribute(0, childStr.length, attr);
+      return childStr;
     },
     link(key, { href, canonicalId, type }, children) {
+      if (!children.length) {
+        return new AttributedString("", []);
+      }
       const childStr = AttributedString.join(children);
       const attr = {
-        length: childStr.string.length,
-        start: 0,
-        tag: { tag: "LINK", href, canonicalId, type, settings: fontConfig.body }
+        tag: "LINK",
+        href,
+        canonicalId,
+        type
       };
-      return new AttributedString(childStr.string, [attr]);
+      childStr.addAttribute(0, childStr.length, attr);
+      return childStr;
     },
     subscript(key, attributes, children) {
       const childStr = AttributedString.join(children);
       const attr = {
-        length: childStr.string.length,
-        start: 0,
-        tag: { tag: "FONT", settings: fontConfig.body }
+        tag: "FONT",
+        settings: fontConfig.body
       };
-      return new AttributedString(childStr.string, [attr]);
+      childStr.addAttribute(0, childStr.length, attr);
+      return childStr;
     },
     superscript(key, attributes, children) {
       const childStr = AttributedString.join(children);
       const attr = {
-        length: childStr.string.length,
-        start: 0,
-        tag: { tag: "FONT", settings: fontConfig.body }
+        tag: "FONT",
+        settings: fontConfig.body
       };
-      return new AttributedString(childStr.string, [attr]);
+      childStr.addAttribute(0, childStr.length, attr);
+      return childStr;
     },
     paragraph(key, attributes, children, index, tree) {
       return (
@@ -261,11 +262,10 @@ export default ({
     },
     break() {
       const attr = {
-        length: 1,
-        start: 0,
-        tag: { tag: "FONT", settings: fontConfig.body }
+        tag: "FONT",
+        settings: fontConfig.body
       };
-      return new AttributedString("\n", [attr]);
+      return new AttributedString("\n", [[attr]]);
     },
     keyFacts(key, attributes, children, index, tree) {
       return (

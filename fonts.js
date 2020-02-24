@@ -15,7 +15,7 @@ const fonts = {
     require("./dist/public/fonts/TimesModern-Bold.js").default,
   "TimesDigitalW04-Regular": () =>
     require("./dist/public/fonts/TimesDigitalW04-Regular.js").default,
-  "TimesDigitalW04-Normal": () =>
+  TimesDigitalW04: () =>
     require("./dist/public/fonts/TimesDigitalW04.js").default,
   "TimesModern-Regular": () =>
     require("./dist/public/fonts/TimesModern-Regular.js").default
