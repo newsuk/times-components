@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.37.0](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.36.5...@times-components/styleguide@3.37.0) (2020-02-24)
+
+
+### Features
+
+* allow native to override breakpoints ([#2537](https://github.com/newsuk/times-components/issues/2537)) ([24d920f](https://github.com/newsuk/times-components/commit/24d920f1f259ac2c201b403500868145db9b17fe))
+
+
+
+
+
 ## [3.36.5](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.36.4...@times-components/styleguide@3.36.5) (2020-02-13)
 
 **Note:** Version bump only for package @times-components/styleguide

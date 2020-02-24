@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.102.0](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.101.35...@times-components/edition-slices@0.102.0) (2020-02-24)
+
+
+### Features
+
+* allow native to override breakpoints ([#2537](https://github.com/newsuk/times-components/issues/2537)) ([24d920f](https://github.com/newsuk/times-components/commit/24d920f1f259ac2c201b403500868145db9b17fe))
+
+
+
+
+
 ## [0.101.35](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.101.34...@times-components/edition-slices@0.101.35) (2020-02-24)
 
 **Note:** Version bump only for package @times-components/edition-slices
