@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.22.0](https://github.com/newsuk/times-components/compare/@times-components/provider@1.21.31...@times-components/provider@1.22.0) (2020-02-24)
+
+
+### Features
+
+* (REPLAT-12170) handle arbitrary newlines and nested styling in markup ([#2535](https://github.com/newsuk/times-components/issues/2535)) ([5ccceb8](https://github.com/newsuk/times-components/commit/5ccceb809c388c877dbf3a8e45959d6ddf8e052a))
+
+
+
+
+
 ## [1.21.31](https://github.com/newsuk/times-components/compare/@times-components/provider@1.21.30...@times-components/provider@1.21.31) (2020-02-13)
 
 **Note:** Version bump only for package @times-components/provider

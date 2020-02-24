@@ -1,6 +1,6 @@
 {
   "name": "@times-components/save-star-web",
-  "version": "0.6.18",
+  "version": "0.6.19",
   "description": "Save Star for Web",
   "main": "dist/save-star-web",
   "dev": "src/save-star-web",
@@ -36,10 +36,10 @@
   "dependencies": {
     "@times-components/icons": "2.14.34",
     "@times-components/link": "3.6.17",
-    "@times-components/provider": "1.21.31",
+    "@times-components/provider": "1.22.0",
     "@times-components/provider-queries": "2.12.0",
     "@times-components/styleguide": "3.37.0",
-    "@times-components/tracking": "2.5.32",
+    "@times-components/tracking": "2.6.0",
     "@times-components/utils": "6.2.3",
     "prop-types": "15.7.2",
     "react-apollo": "2.5.5",
