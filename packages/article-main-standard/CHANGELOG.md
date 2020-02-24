@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.26.2](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.26.1...@times-components/article-main-standard@3.26.2) (2020-02-24)
+
+
+### Reverts
+
+* feat: REPLAT-12031 mainstandard bylines ([#2538](https://github.com/newsuk/times-components/issues/2538)) ([23feec9](https://github.com/newsuk/times-components/commit/23feec93be546692818365b6534359c96f3e2bc6))
+
+
+
+
+
 ## [3.26.1](https://github.com/newsuk/times-components/compare/@times-components/article-main-standard@3.26.0...@times-components/article-main-standard@3.26.1) (2020-02-19)
 
 **Note:** Version bump only for package @times-components/article-main-standard
