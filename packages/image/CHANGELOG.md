@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.7.8](https://github.com/newsuk/times-components/compare/@times-components/image@6.7.7...@times-components/image@6.7.8) (2020-02-25)
+
+
+### Bug Fixes
+
+* (REPLAT-12288) make sure modal images are cropped ([#2523](https://github.com/newsuk/times-components/issues/2523)) ([ecb9355](https://github.com/newsuk/times-components/commit/ecb93557f27b25f8c8c5f0001bfe69d7b22a5f4b))
+
+
+
+
+
 ## [6.7.7](https://github.com/newsuk/times-components/compare/@times-components/image@6.7.6...@times-components/image@6.7.7) (2020-02-24)
 
 **Note:** Version bump only for package @times-components/image
