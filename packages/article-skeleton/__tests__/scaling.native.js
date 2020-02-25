@@ -14,7 +14,7 @@ import { FontStorage } from "@times-components/typeset";
 import snapshotTests from "./scaling.base";
 
 FontStorage.registerFont(
-  "TimesDigitalW04-Normal",
+  "TimesDigitalW04",
   () => require("@times-components/test-utils").TestFont
 );
 FontStorage.registerFont(

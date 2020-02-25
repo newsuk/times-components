@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.4](https://github.com/newsuk/times-components/compare/@times-components/responsive-image@0.5.3...@times-components/responsive-image@0.5.4) (2020-02-24)
+
+**Note:** Version bump only for package @times-components/responsive-image
+
+
+
+
+
 ## [0.5.3](https://github.com/newsuk/times-components/compare/@times-components/responsive-image@0.5.2...@times-components/responsive-image@0.5.3) (2020-02-13)
 
 **Note:** Version bump only for package @times-components/responsive-image

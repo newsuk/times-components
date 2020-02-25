@@ -117,14 +117,33 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                       "color": "#000000",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 36,
-                      "fontStyle": "normal",
-                      "fontWeight": "normal",
                       "lineHeight": 52,
                     },
                   ]
                 }
               >
-                his
+                h
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 165.828125,
+                      "position": "absolute",
+                      "top": 0,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                is
               </Text>
               <Text
                 numberOfLines={1}
@@ -140,8 +159,6 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                       "color": "#000000",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 36,
-                      "fontStyle": "normal",
-                      "fontWeight": "normal",
                       "lineHeight": 52,
                     },
                   ]
@@ -163,8 +180,6 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                       "color": "#000000",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 36,
-                      "fontStyle": "normal",
-                      "fontWeight": "normal",
                       "lineHeight": 52,
                     },
                   ]
@@ -186,8 +201,6 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                       "color": "#000000",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 36,
-                      "fontStyle": "normal",
-                      "fontWeight": "normal",
                       "lineHeight": 52,
                     },
                   ]
@@ -209,8 +222,6 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                       "color": "#000000",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 36,
-                      "fontStyle": "normal",
-                      "fontWeight": "normal",
                       "lineHeight": 52,
                     },
                   ]
@@ -232,8 +243,6 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                       "color": "#000000",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 36,
-                      "fontStyle": "normal",
-                      "fontWeight": "normal",
                       "lineHeight": 52,
                     },
                   ]
@@ -255,8 +264,6 @@ exports[`1. a full article with all content items with dropcap template 1`] = `
                       "color": "#000000",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 36,
-                      "fontStyle": "normal",
-                      "fontWeight": "normal",
                       "lineHeight": 52,
                     },
                   ]
@@ -733,14 +740,35 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                       "color": "#000000",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 36,
-                      "fontStyle": "normal",
                       "fontWeight": "bold",
                       "lineHeight": 52,
                     },
                   ]
                 }
               >
-                Some
+                S
+              </Text>
+              <Text
+                numberOfLines={1}
+                selectable={true}
+                style={
+                  Array [
+                    Object {
+                      "left": 182.357421875,
+                      "position": "absolute",
+                      "top": 0,
+                    },
+                    Object {
+                      "color": "#000000",
+                      "fontFamily": "TimesDigitalW04",
+                      "fontSize": 36,
+                      "fontWeight": "bold",
+                      "lineHeight": 52,
+                    },
+                  ]
+                }
+              >
+                ome
               </Text>
               <Text
                 numberOfLines={1}
@@ -756,7 +784,6 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                       "color": "#000000",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 36,
-                      "fontStyle": "normal",
                       "fontWeight": "bold",
                       "lineHeight": 52,
                     },
@@ -779,7 +806,6 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                       "color": "#000000",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 36,
-                      "fontStyle": "normal",
                       "fontWeight": "bold",
                       "lineHeight": 52,
                     },
@@ -802,7 +828,6 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                       "color": "#000000",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 36,
-                      "fontStyle": "normal",
                       "fontWeight": "bold",
                       "lineHeight": 52,
                     },
@@ -825,7 +850,6 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                       "color": "#000000",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 36,
-                      "fontStyle": "normal",
                       "fontWeight": "bold",
                       "lineHeight": 52,
                     },
@@ -848,7 +872,6 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                       "color": "#000000",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 36,
-                      "fontStyle": "normal",
                       "fontWeight": "bold",
                       "lineHeight": 52,
                     },
@@ -871,7 +894,6 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                       "color": "#000000",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 36,
-                      "fontStyle": "normal",
                       "fontWeight": "bold",
                       "lineHeight": 52,
                     },
@@ -894,7 +916,6 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                       "color": "#000000",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 36,
-                      "fontStyle": "normal",
                       "fontWeight": "bold",
                       "lineHeight": 52,
                     },
@@ -917,7 +938,6 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                       "color": "#000000",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 36,
-                      "fontStyle": "normal",
                       "fontWeight": "bold",
                       "lineHeight": 52,
                     },
@@ -940,7 +960,6 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                       "color": "#000000",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 36,
-                      "fontStyle": "normal",
                       "fontWeight": "bold",
                       "lineHeight": 52,
                     },
@@ -963,7 +982,6 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                       "color": "#000000",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 36,
-                      "fontStyle": "normal",
                       "fontWeight": "bold",
                       "lineHeight": 52,
                     },
@@ -986,7 +1004,6 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                       "color": "#000000",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 36,
-                      "fontStyle": "normal",
                       "fontWeight": "bold",
                       "lineHeight": 52,
                     },
@@ -1009,7 +1026,6 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                       "color": "#000000",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 36,
-                      "fontStyle": "normal",
                       "fontWeight": "bold",
                       "lineHeight": 52,
                     },
@@ -1032,7 +1048,6 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                       "color": "#000000",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 36,
-                      "fontStyle": "normal",
                       "fontWeight": "bold",
                       "lineHeight": 52,
                     },
@@ -1055,7 +1070,6 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                       "color": "#000000",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 36,
-                      "fontStyle": "normal",
                       "fontWeight": "bold",
                       "lineHeight": 52,
                     },
@@ -1078,7 +1092,6 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                       "color": "#000000",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 36,
-                      "fontStyle": "normal",
                       "fontWeight": "bold",
                       "lineHeight": 52,
                     },
@@ -1101,7 +1114,6 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                       "color": "#000000",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 36,
-                      "fontStyle": "normal",
                       "fontWeight": "bold",
                       "lineHeight": 52,
                     },
@@ -1124,7 +1136,6 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                       "color": "#000000",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 36,
-                      "fontStyle": "normal",
                       "fontWeight": "bold",
                       "lineHeight": 52,
                     },
@@ -1185,7 +1196,6 @@ exports[`5. an article with a nested markup in first paragraph displays a drop c
                       "color": "#000000",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 36,
-                      "fontStyle": "normal",
                       "fontWeight": "bold",
                       "lineHeight": 52,
                     }
@@ -1247,7 +1257,12 @@ Object {
     "headline": "Some Headline",
     "label": "Some Label",
     "linkType": "",
-    "linkUrl": "https://link.io",
+    "linkUrl": Object {
+      "canonicalId": undefined,
+      "href": "https://link.io",
+      "tag": "LINK",
+      "type": undefined,
+    },
     "pageName": "this-is-slug-2k629tpvh",
     "parent_site": "TIMES",
     "past_edition_date": "2015-03-13T18:54:58.000Z",
@@ -1261,7 +1276,7 @@ Object {
 }
 `;
 
-exports[`8. breaks up malformed huge paragraphs 1`] = `
+exports[`8. renders content 1`] = `
 <View
   style={
     Object {
@@ -1360,8 +1375,6 @@ exports[`8. breaks up malformed huge paragraphs 1`] = `
                       "color": "#000000",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 36,
-                      "fontStyle": "normal",
-                      "fontWeight": "normal",
                       "lineHeight": 52,
                     }
                   }
@@ -1376,7 +1389,6 @@ exports[`8. breaks up malformed huge paragraphs 1`] = `
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 36,
                       "fontStyle": "italic",
-                      "fontWeight": "normal",
                       "lineHeight": 52,
                     }
                   }
@@ -1390,8 +1402,6 @@ exports[`8. breaks up malformed huge paragraphs 1`] = `
                       "color": "#000000",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 36,
-                      "fontStyle": "normal",
-                      "fontWeight": "normal",
                       "lineHeight": 52,
                     }
                   }
@@ -1405,7 +1415,6 @@ exports[`8. breaks up malformed huge paragraphs 1`] = `
                       "color": "#000000",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 36,
-                      "fontStyle": "normal",
                       "fontWeight": "bold",
                       "lineHeight": 52,
                     }
@@ -1466,513 +1475,6 @@ exports[`8. breaks up malformed huge paragraphs 1`] = `
                       "color": "#000000",
                       "fontFamily": "TimesDigitalW04",
                       "fontSize": 36,
-                      "fontStyle": "normal",
-                      "fontWeight": "bold",
-                      "lineHeight": 52,
-                    }
-                  }
-                >
-                  Baroness Thatcher, LG, OM, PC, FRS, Prime Minister, 1979-90, was born on October 13, 1925. She died on April 8, 2013, aged 87.
-                </Text>
-              </Text>
-            </View>
-          </View>
-        </View>
-      </View>
-      <View
-        style={
-          Object {
-            "height": 0,
-          }
-        }
-      />
-      <View>
-        <View
-          style={
-            Array [
-              Object {
-                "overflow": "hidden",
-              },
-              Object {
-                "backgroundColor": "#ffffff",
-                "maxWidth": "100%",
-                "width": undefined,
-              },
-            ]
-          }
-        >
-          <ActivityIndicator
-            animating={true}
-            color="#999999"
-            hidesWhenStopped={true}
-            size="large"
-          />
-        </View>
-      </View>
-    </View>
-  </RCTScrollView>
-</View>
-`;
-
-exports[`9. breaks up nested malformed markup 1`] = `
-<View
-  style={
-    Object {
-      "backgroundColor": "#f0f0f0",
-    }
-  }
->
-  <RCTScrollView
-    ListHeaderComponent={
-      <Gutter
-        style={
-          Object {
-            "overflow": "hidden",
-          }
-        }
-      >
-        <Header
-          width={750}
-        />
-      </Gutter>
-    }
-    extraData={true}
-    initialNumToRender={2}
-    maxToRenderPerBatch={10}
-    nestedScrollEnabled={true}
-    numColumns={1}
-    onEndReachedThreshold={2}
-    removeClippedSubviews={true}
-    scrollEventThrottle={50}
-    showsVerticalScrollIndicator={false}
-    updateCellsBatchingPeriod={50}
-    windowSize={3}
-  >
-    <View>
-      <View>
-        <View
-          style={
-            Array [
-              Object {
-                "overflow": "hidden",
-              },
-              Object {
-                "backgroundColor": "#ffffff",
-                "maxWidth": "100%",
-                "width": undefined,
-              },
-            ]
-          }
-        />
-      </View>
-      <View
-        style={null}
-      >
-        <View
-          style={
-            Array [
-              Object {
-                "overflow": "hidden",
-              },
-              Object {
-                "backgroundColor": "#ffffff",
-                "maxWidth": "100%",
-                "width": undefined,
-              },
-            ]
-          }
-        >
-          <View
-            style={
-              Array [
-                Object {
-                  "paddingLeft": 10,
-                  "paddingRight": 10,
-                },
-                Object {
-                  "marginBottom": 20,
-                },
-                false,
-                Object {},
-              ]
-            }
-          >
-            <View>
-              <Text
-                selectable={true}
-                style={
-                  Object {
-                    "lineHeight": 52,
-                  }
-                }
-              >
-                <Text
-                  selectable={true}
-                  style={
-                    Object {
-                      "color": "#000000",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 36,
-                      "fontStyle": "italic",
-                      "fontWeight": "normal",
-                      "lineHeight": 52,
-                    }
-                  }
-                >
-                  Telegraph 
-                </Text>
-                <Text
-                  selectable={true}
-                  style={
-                    Object {
-                      "color": "#000000",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 36,
-                      "fontStyle": "normal",
-                      "fontWeight": "normal",
-                      "lineHeight": 52,
-                    }
-                  }
-                >
-                  last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
-                </Text>
-                <Text
-                  selectable={true}
-                  style={
-                    Object {
-                      "color": "#000000",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 36,
-                      "fontStyle": "normal",
-                      "fontWeight": "bold",
-                      "lineHeight": 52,
-                    }
-                  }
-                >
-                  When Thatcher joined the campaign trail for the 2001 general election...
-                </Text>
-              </Text>
-            </View>
-          </View>
-        </View>
-      </View>
-      <View
-        style={null}
-      >
-        <View
-          style={
-            Array [
-              Object {
-                "overflow": "hidden",
-              },
-              Object {
-                "backgroundColor": "#ffffff",
-                "maxWidth": "100%",
-                "width": undefined,
-              },
-            ]
-          }
-        >
-          <View
-            style={
-              Array [
-                Object {
-                  "paddingLeft": 10,
-                  "paddingRight": 10,
-                },
-                Object {
-                  "marginBottom": 20,
-                },
-                false,
-                Object {},
-              ]
-            }
-          >
-            <View>
-              <Text
-                selectable={true}
-                style={
-                  Object {
-                    "lineHeight": 52,
-                  }
-                }
-              >
-                <Text
-                  selectable={true}
-                  style={
-                    Object {
-                      "color": "#000000",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 36,
-                      "fontStyle": "normal",
-                      "fontWeight": "bold",
-                      "lineHeight": 52,
-                    }
-                  }
-                >
-                  test break bold
-                </Text>
-                <Text
-                  selectable={true}
-                  style={
-                    Object {
-                      "color": "#000000",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 36,
-                      "fontStyle": "normal",
-                      "fontWeight": "bold",
-                      "lineHeight": 52,
-                    }
-                  }
-                >
-                  Baroness Thatcher, LG, OM, PC, FRS, Prime Minister, 1979-90, was born on October 13, 1925. She died on April 8, 2013, aged 87.
-                </Text>
-              </Text>
-            </View>
-          </View>
-        </View>
-      </View>
-      <View
-        style={
-          Object {
-            "height": 0,
-          }
-        }
-      />
-      <View>
-        <View
-          style={
-            Array [
-              Object {
-                "overflow": "hidden",
-              },
-              Object {
-                "backgroundColor": "#ffffff",
-                "maxWidth": "100%",
-                "width": undefined,
-              },
-            ]
-          }
-        >
-          <ActivityIndicator
-            animating={true}
-            color="#999999"
-            hidesWhenStopped={true}
-            size="large"
-          />
-        </View>
-      </View>
-    </View>
-  </RCTScrollView>
-</View>
-`;
-
-exports[`10. renders content 1`] = `
-<View
-  style={
-    Object {
-      "backgroundColor": "#f0f0f0",
-    }
-  }
->
-  <RCTScrollView
-    ListHeaderComponent={
-      <Gutter
-        style={
-          Object {
-            "overflow": "hidden",
-          }
-        }
-      >
-        <Header
-          width={750}
-        />
-      </Gutter>
-    }
-    extraData={true}
-    initialNumToRender={2}
-    maxToRenderPerBatch={10}
-    nestedScrollEnabled={true}
-    numColumns={1}
-    onEndReachedThreshold={2}
-    removeClippedSubviews={true}
-    scrollEventThrottle={50}
-    showsVerticalScrollIndicator={false}
-    updateCellsBatchingPeriod={50}
-    windowSize={3}
-  >
-    <View>
-      <View>
-        <View
-          style={
-            Array [
-              Object {
-                "overflow": "hidden",
-              },
-              Object {
-                "backgroundColor": "#ffffff",
-                "maxWidth": "100%",
-                "width": undefined,
-              },
-            ]
-          }
-        />
-      </View>
-      <View
-        style={null}
-      >
-        <View
-          style={
-            Array [
-              Object {
-                "overflow": "hidden",
-              },
-              Object {
-                "backgroundColor": "#ffffff",
-                "maxWidth": "100%",
-                "width": undefined,
-              },
-            ]
-          }
-        >
-          <View
-            style={
-              Array [
-                Object {
-                  "paddingLeft": 10,
-                  "paddingRight": 10,
-                },
-                Object {
-                  "marginBottom": 20,
-                },
-                false,
-                Object {},
-              ]
-            }
-          >
-            <View>
-              <Text
-                selectable={true}
-                style={
-                  Object {
-                    "lineHeight": 52,
-                  }
-                }
-              >
-                <Text
-                  selectable={true}
-                  style={
-                    Object {
-                      "color": "#000000",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 36,
-                      "fontStyle": "normal",
-                      "fontWeight": "normal",
-                      "lineHeight": 52,
-                    }
-                  }
-                >
-                  Mr Gove has previously said that memorising a poem is to “own a great work of art forever”. Andrew Motion, the former Poet Laureate, wrote in the 
-                </Text>
-                <Text
-                  selectable={true}
-                  style={
-                    Object {
-                      "color": "#000000",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 36,
-                      "fontStyle": "italic",
-                      "fontWeight": "normal",
-                      "lineHeight": 52,
-                    }
-                  }
-                >
-                  Telegraph 
-                </Text>
-                <Text
-                  selectable={true}
-                  style={
-                    Object {
-                      "color": "#000000",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 36,
-                      "fontStyle": "normal",
-                      "fontWeight": "normal",
-                      "lineHeight": 52,
-                    }
-                  }
-                >
-                  last year that rote learning has “a lot to be said against it”, but added: “As the phrase ‘learning by heart’ implies, this sort of remembering places the poem at a central place in ourselves and makes it precious.”
-                </Text>
-                <Text
-                  selectable={true}
-                  style={
-                    Object {
-                      "color": "#000000",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 36,
-                      "fontStyle": "normal",
-                      "fontWeight": "bold",
-                      "lineHeight": 52,
-                    }
-                  }
-                >
-                  When Thatcher joined the campaign trail for the 2001 general election...
-                </Text>
-              </Text>
-            </View>
-          </View>
-        </View>
-      </View>
-      <View
-        style={null}
-      >
-        <View
-          style={
-            Array [
-              Object {
-                "overflow": "hidden",
-              },
-              Object {
-                "backgroundColor": "#ffffff",
-                "maxWidth": "100%",
-                "width": undefined,
-              },
-            ]
-          }
-        >
-          <View
-            style={
-              Array [
-                Object {
-                  "paddingLeft": 10,
-                  "paddingRight": 10,
-                },
-                Object {
-                  "marginBottom": 20,
-                },
-                false,
-                Object {},
-              ]
-            }
-          >
-            <View>
-              <Text
-                selectable={true}
-                style={
-                  Object {
-                    "lineHeight": 52,
-                  }
-                }
-              >
-                <Text
-                  selectable={true}
-                  style={
-                    Object {
-                      "color": "#000000",
-                      "fontFamily": "TimesDigitalW04",
-                      "fontSize": 36,
-                      "fontStyle": "normal",
                       "fontWeight": "bold",
                       "lineHeight": 52,
                     }
