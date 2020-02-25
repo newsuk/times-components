@@ -3,6 +3,7 @@ import { Modal, View } from "react-native";
 import { ResponsiveContext } from "@times-components/responsive";
 import Button from "@times-components/link";
 import ImageViewer from "react-native-image-zoom-viewer";
+import Url from "url-parse";
 import CloseButton from "../close-button";
 import ModalCaptionContainer from "../modal-caption-container";
 import Image from "../image";
@@ -63,12 +64,16 @@ class ModalImage extends Component {
     }
     const { showModal, lowResImageWidth, elementsVisible } = this.state;
     const lowResSize = highResSize || lowResImageWidth;
-    const urls = [{ url: `${uri}&offline=true` }].concat(
+    const mainUrl = new Url(uri, true);
+    mainUrl.query.offline = "true";
+    const urls = [{ url: mainUrl.toString() }].concat(
       images
-        .map(i => ({
-          url: `${i.attributes.url}&offline=true`
-        }))
-        .filter(({ url }) => url !== uri)
+        .map(i => {
+          const offlineUrl = new Url(i.attributes.url, true);
+          offlineUrl.query.offline = "true";
+          return { url: offlineUrl.toString() };
+        })
+        .filter(({ url }) => url !== mainUrl.toString())
     );
 
     return (
@@ -101,6 +106,19 @@ class ModalImage extends Component {
                     imageUrls={urls}
                     renderIndicator={() => null}
                     enableSwipeDown
+                    renderImage={({ source }) => {
+                      const onlineUrl = new Url(source.uri, true);
+                      delete onlineUrl.query.offline;
+                      return (
+                        <View style={styles.modalImageContainer}>
+                          <Image
+                            {...this.props}
+                            uri={onlineUrl.toString()}
+                            fill
+                          />
+                        </View>
+                      );
+                    }}
                     captureEvent
                     onSwipeDown={this.hideModal}
                     enablePreload
