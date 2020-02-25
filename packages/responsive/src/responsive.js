@@ -17,7 +17,9 @@ const config = (NativeModules || {}).ReactConfig;
 const calculateState = (width, fontScale) => ({
   editionBreakpoint: getEditionBreakpoint(width),
   fontScale,
-  isTablet: (config && config.breakpoint !== "small") || width > tabletWidth,
+  isTablet:
+    (config && config.breakpoint && config.breakpoint !== "small") ||
+    width >= tabletWidth,
   screenWidth: width
 });
 
