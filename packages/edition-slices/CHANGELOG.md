@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.102.3](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.102.2...@times-components/edition-slices@0.102.3) (2020-02-25)
+
+
+### Bug Fixes
+
+* bad conditional for breakpoint check ([#2540](https://github.com/newsuk/times-components/issues/2540)) ([f2396b8](https://github.com/newsuk/times-components/commit/f2396b8623fd9d36f68f7a6075a7eb972e041a51))
+
+
+
+
+
 ## [0.102.2](https://github.com/newsuk/times-components/compare/@times-components/edition-slices@0.102.1...@times-components/edition-slices@0.102.2) (2020-02-25)
 
 **Note:** Version bump only for package @times-components/edition-slices
