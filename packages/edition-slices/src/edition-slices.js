@@ -24,7 +24,8 @@ const config = (NativeModules || {}).ReactConfig;
 
 const { width } = getDimensions();
 const isTablet =
-  (config && config.breakpoint !== "small") || width > tabletWidth;
+  (config && config.breakpoint && config.breakpoint !== "small") ||
+  width > tabletWidth;
 const SecondaryTwoAndTwoMapper = isTablet
   ? SecondaryTwoNoPicAndTwoSlice
   : SecondaryTwoAndTwoSlice;
