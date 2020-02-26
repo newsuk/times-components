@@ -17,6 +17,7 @@ import renderTrees from "@times-components/markup-forest";
 import { AspectRatioContainer } from "@times-components/utils";
 import ArticleLink from "./article-link";
 import InsetCaption from "./inset-caption";
+import { InlineNewsletterPuff } from './inline-newsletter-puff'
 import {
   PrimaryImg,
   SecondaryImg,
@@ -95,16 +96,25 @@ const renderers = ({ paidContentClassName }) => ({
   },
   interactive(key, { url, element, display }) {
     const { attributes, value } = element;
-    return (
-      <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
-        <InteractiveWrapper
-          attributes={attributes}
-          element={value}
-          key={key}
-          source={url}
-        />
-      </InteractiveContainer>
-    );
+
+    switch (attributes["deck-id"]) {
+      case "8567":
+        const bulletinId = "a2l0J000000MDl5QAG";
+        return (
+            <InlineNewsletterPuff key={key} bulletinId={bulletinId} attributes={attributes} element={value} source={url}/>
+        );
+      default:
+        return (
+          <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
+            <InteractiveWrapper
+              attributes={attributes}
+              element={value}
+              key={key}
+              source={url}
+            />
+          </InteractiveContainer>
+        );
+    }
   },
   keyFacts(key, attributes, renderedChildren, indx, node) {
     return <KeyFacts ast={node} key={key} />;

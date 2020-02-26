@@ -16,6 +16,7 @@ import ArticleParagraph from "./article-body-paragraph";
 import InsetCaption from "./inset-caption";
 import styleFactory from "../styles/article-body";
 import ArticleLink from "./article-link";
+import { InlineNewsletterPuff } from './inline-newsletter-puff';
 
 export default ({
   data,
@@ -239,13 +240,32 @@ export default ({
         const {
           attributes: { "deck-id": deckId }
         } = element;
+
         return (
           <InteractiveWrapper.ResponsiveImageInteractive
             deckId={deckId}
             key={key}
           />
         );
+      }   
+         if (
+        element &&
+        element.attributes["deck-id"] === "8567"
+      ) {
+        const bulletinId = "a2l0J000000MDl5QAG";
+        return (
+          <InlineNewsletterPuff
+            bulletinId={bulletinId}
+            key={key}
+          />
+        );
       }
+      console.log("============================");
+      console.log(interactiveConfig);
+      console.log(id);
+      console.log(id);
+      console.log(id);
+      console.log("============================");
       return (
         <View
           key={key}
