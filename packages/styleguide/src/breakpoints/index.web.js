@@ -1,4 +1,3 @@
-import { NativeModules } from "react-native";
 import widths, {
   editionBreakpoints,
   editionMaxWidth,
@@ -6,12 +5,7 @@ import widths, {
   sliceContentMaxWidth
 } from "./index.shared";
 
-const config = (NativeModules || {}).ReactConfig;
-
 const getEditionBreakpoint = width => {
-  if (config && config.breakpoint) {
-    return config.breakpoint;
-  }
   if (width < editionBreakpointWidths.medium) {
     return editionBreakpoints.small;
   }

@@ -22,18 +22,19 @@ const SimpleParagraph = ({
     <ArticleParagraphWrapper ast={tree} key={key} uid={key}>
       <Text allowFontScaling={false} selectable style={{ lineHeight }}>
         {children.map(child => {
-          const attribute = child.attributes[0];
-          const style = attribute ? attribute.tag.settings : defaultFont;
-          const href = attribute ? attribute.tag.href : null;
-          const type = href ? attribute.tag.type : null;
-          const canonicalId = href ? attribute.tag.canonicalId : null;
+          const [attribute, href] = child.collapsedAttributes(0);
+          const style = attribute ? attribute.settings : defaultFont;
+          const type = href ? href.type : null;
+          const canonicalId = href ? href.canonicalId : null;
           if (href) {
             const { color, ...linkStyle } = style;
             return (
               <LinkComponent
                 url={href}
                 style={linkStyle}
-                onPress={e => onLinkPress(e, { canonicalId, type, url: href })}
+                onPress={e =>
+                  onLinkPress(e, { canonicalId, type, url: href.href })
+                }
               >
                 {child.string}
               </LinkComponent>

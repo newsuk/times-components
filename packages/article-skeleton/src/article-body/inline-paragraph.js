@@ -35,7 +35,7 @@ const InlineParagraph = ({
 
   const container = new TextContainer(
     isTablet ? contentWidth : screenWidth() - spacing(4),
-    10000,
+    Infinity,
     0,
     0,
     dropCap ? [dropCap.exclusion] : []
@@ -92,16 +92,17 @@ const InlineParagraph = ({
       )}
     >
       {positioned.map((p, i) => {
-        const attribute = p.text.attributes[0];
-        const style = attribute ? attribute.tag.settings : defaultFont;
-        const href = attribute ? attribute.tag.href : null;
-        const type = href ? attribute.tag.type : null;
-        const canonicalId = href ? attribute.tag.canonicalId : null;
+        const [attribute, href] = p.text.collapsedAttributes(0);
+        const style = attribute ? attribute.settings : defaultFont;
+        const type = href ? href.type : null;
+        const canonicalId = href ? href.canonicalId : null;
         if (href) {
           return (
             <LinkComponent
               url={href}
-              onPress={e => onLinkPress(e, { canonicalId, type, url: href })}
+              onPress={e =>
+                onLinkPress(e, { canonicalId, type, url: href.href })
+              }
               style={{
                 position: "absolute",
                 left: p.position.x,

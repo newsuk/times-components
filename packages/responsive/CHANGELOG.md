@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.1](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.6.0...@times-components/responsive@0.6.1) (2020-02-25)
+
+
+### Bug Fixes
+
+* bad conditional for breakpoint check ([#2540](https://github.com/newsuk/times-components/issues/2540)) ([f2396b8](https://github.com/newsuk/times-components/commit/f2396b8623fd9d36f68f7a6075a7eb972e041a51))
+
+
+
+
+
+# [0.6.0](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.5.36...@times-components/responsive@0.6.0) (2020-02-24)
+
+
+### Features
+
+* allow native to override breakpoints ([#2537](https://github.com/newsuk/times-components/issues/2537)) ([24d920f](https://github.com/newsuk/times-components/commit/24d920f1f259ac2c201b403500868145db9b17fe))
+
+
+
+
+
 ## [0.5.36](https://github.com/newsuk/times-components/compare/@times-components/responsive@0.5.35...@times-components/responsive@0.5.36) (2020-02-13)
 
 **Note:** Version bump only for package @times-components/responsive
