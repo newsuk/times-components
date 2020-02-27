@@ -17,7 +17,7 @@ import articleFixture from "../fixtures/full-article";
 import shared, { renderArticle, fixtureArgs } from "./shared.base";
 
 FontStorage.registerFont(
-  "TimesDigitalW04-Normal",
+  "TimesDigitalW04",
   () => require("@times-components/test-utils").TestFont
 );
 FontStorage.registerFont(

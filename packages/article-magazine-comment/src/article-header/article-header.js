@@ -31,12 +31,11 @@ const ArticleHeader = ({
   <Context.Consumer>
     {({ theme: { headlineFont, headlineCase } }) => (
       <View style={[styles.container, isTablet && styles.containerTablet]}>
-        <ModalImage
-          aspectRatio={1}
+        <View
           style={[styles.authorImage, isTablet && styles.authorImageTablet]}
-          uri={authorImage}
-          rounded
-        />
+        >
+          <ModalImage aspectRatio={1} uri={authorImage} rounded />
+        </View>
         <Label isVideo={hasVideo} label={label} />
         <Text
           style={[

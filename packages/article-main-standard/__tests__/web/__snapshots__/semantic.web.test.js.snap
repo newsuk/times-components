@@ -84,9 +84,7 @@ exports[`1. a full article with an image as the lead asset 1`] = `
     </h2>
     <span>
       <span>
-        <span>
-          Some byline
-        </span>
+        Some byline
       </span>
     </span>
     <span>

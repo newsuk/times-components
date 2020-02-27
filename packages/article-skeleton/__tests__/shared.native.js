@@ -16,15 +16,13 @@ import shared from "./shared.base";
 import ArticleSkeleton from "../src/article-skeleton";
 import articleFixture, {
   testFixture,
-  nestedContent,
-  styledNestedContent,
   longContent
 } from "../fixtures/full-article";
 import { adConfig } from "./ad-mock";
 import articleSkeletonProps from "./shared-article-skeleton-props";
 
 FontStorage.registerFont(
-  "TimesDigitalW04-Normal",
+  "TimesDigitalW04",
   () => require("@times-components/test-utils").TestFont
 );
 FontStorage.registerFont(
@@ -161,26 +159,6 @@ export default () => {
         const [, [call]] = stream.mock.calls;
 
         expect(call).toMatchSnapshot();
-      }
-    },
-    {
-      name: "breaks up malformed huge paragraphs",
-      test() {
-        const testInstance = TestRenderer.create(
-          renderArticleContent(nestedContent)
-        );
-
-        expect(testInstance.toJSON()).toMatchSnapshot();
-      }
-    },
-    {
-      name: "breaks up nested malformed markup",
-      test() {
-        const testInstance = TestRenderer.create(
-          renderArticleContent(styledNestedContent)
-        );
-
-        expect(testInstance.toJSON()).toMatchSnapshot();
       }
     },
     {

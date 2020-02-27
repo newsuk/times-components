@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.5.40](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.5.39...@times-components/article-extras@0.5.40) (2020-02-25)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.5.39](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.5.38...@times-components/article-extras@0.5.39) (2020-02-25)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.5.38](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.5.37...@times-components/article-extras@0.5.38) (2020-02-24)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.5.37](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.5.36...@times-components/article-extras@0.5.37) (2020-02-24)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
+## [0.5.36](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.5.35...@times-components/article-extras@0.5.36) (2020-02-24)
+
+**Note:** Version bump only for package @times-components/article-extras
+
+
+
+
+
 ## [0.5.35](https://github.com/newsuk/times-components/compare/@times-components/article-extras@0.5.34...@times-components/article-extras@0.5.35) (2020-02-13)
 
 **Note:** Version bump only for package @times-components/article-extras

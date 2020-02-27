@@ -3,6 +3,60 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.30.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.30.1...@times-components/article-skeleton@1.30.2) (2020-02-25)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.30.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.30.0...@times-components/article-skeleton@1.30.1) (2020-02-25)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.30.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.29.3...@times-components/article-skeleton@1.30.0) (2020-02-24)
+
+
+### Features
+
+* (REPLAT-12170) handle arbitrary newlines and nested styling in markup ([#2535](https://github.com/newsuk/times-components/issues/2535)) ([5ccceb8](https://github.com/newsuk/times-components/commit/5ccceb809c388c877dbf3a8e45959d6ddf8e052a))
+
+
+
+
+
+## [1.29.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.29.2...@times-components/article-skeleton@1.29.3) (2020-02-24)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.29.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.29.1...@times-components/article-skeleton@1.29.2) (2020-02-24)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.29.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.29.0...@times-components/article-skeleton@1.29.1) (2020-02-19)
+
+
+### Bug Fixes
+
+* article-magazine-comment was messed up ([#2536](https://github.com/newsuk/times-components/issues/2536)) ([28511e7](https://github.com/newsuk/times-components/commit/28511e7dc2eebdb59af213658503135f100e6fca))
+
+
+
+
+
 # [1.29.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.28.8...@times-components/article-skeleton@1.29.0) (2020-02-14)
 
 
