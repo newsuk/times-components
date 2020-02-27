@@ -229,6 +229,240 @@ const childWithDropCapAndMarkupAndQuote = {
   name: "paragraph"
 };
 
+const childWithKeyFacts = [
+  {
+    name: "keyFacts",
+    children: [
+      {
+        name: "unorderedList",
+        children: [
+          {
+            name: "listElement",
+            children: [
+              {
+                name: "text",
+                children: [],
+                attributes: {
+                  value: "First fact"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    attributes: {
+      title: "Key facts title"
+    }
+  },
+  {
+    name: "paragraph",
+    children: [
+      {
+        name: "text",
+        children: [],
+        attributes: {
+          value:
+            "As I follow Chris Reynolds Gordon down the first f…fty Shades of Grey but, he says, “I’m living it.”"
+        }
+      }
+    ]
+  }
+];
+
+const childWithKeyFactsDropCapped = [
+  {
+    name: "keyFacts",
+    children: [
+      {
+        name: "unorderedList",
+        children: [
+          {
+            name: "listElement",
+            children: [
+              {
+                name: "text",
+                children: [],
+                attributes: {
+                  value: "First fact"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    attributes: {
+      title: "Key facts title"
+    }
+  },
+  {
+    attributes: {},
+    children: [
+      {
+        name: "dropCap",
+        attributes: {},
+        children: [
+          {
+            attributes: {
+              value: "A",
+              dropCap: true
+            },
+            children: [],
+            name: "text"
+          }
+        ]
+      },
+      {
+        attributes: {
+          value:
+            "s I follow Chris Reynolds Gordon down the first f…fty Shades of Grey but, he says, “I’m living it.”",
+          dropCap: true
+        },
+        children: [],
+        name: "text"
+      }
+    ],
+    name: "paragraph"
+  }
+];
+
+const childWithKeyFactsAndInteractive = [
+  {
+    name: "interactive",
+    attributes: {
+      id: "25ba0601-75f3-473e-80c2-9e6f09d61549",
+      display: "primary",
+      url:
+        "https://components.timesdev.tools/lib2/times-chapter-menu-1.0.0/chapter-menu.html",
+      element: {
+        value: "chapter-menu",
+        attributes: {
+          buttons:
+            "Series three%20%7C%20%20Series two%20%7C%20%20Series one%20%7C%20",
+          chapters:
+            "Series%20three%20%7C%20Series%20two%20%7C%20Series%20one%20%7C%20"
+        }
+      }
+    },
+    children: []
+  },
+  {
+    name: "keyFacts",
+    children: [
+      {
+        name: "unorderedList",
+        children: [
+          {
+            name: "listElement",
+            children: [
+              {
+                name: "text",
+                children: [],
+                attributes: {
+                  value: "First fact"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    attributes: {
+      title: "Key facts title"
+    }
+  },
+  {
+    name: "paragraph",
+    children: [
+      {
+        name: "text",
+        children: [],
+        attributes: {
+          value:
+            "As I follow Chris Reynolds Gordon down the first f…fty Shades of Grey but, he says, “I’m living it.”"
+        }
+      }
+    ]
+  }
+];
+
+const childWithKeyFactsAndInteractiveDropCapped = [
+  {
+    name: "interactive",
+    attributes: {
+      id: "25ba0601-75f3-473e-80c2-9e6f09d61549",
+      display: "primary",
+      url:
+        "https://components.timesdev.tools/lib2/times-chapter-menu-1.0.0/chapter-menu.html",
+      element: {
+        value: "chapter-menu",
+        attributes: {
+          buttons:
+            "Series three%20%7C%20%20Series two%20%7C%20%20Series one%20%7C%20",
+          chapters:
+            "Series%20three%20%7C%20Series%20two%20%7C%20Series%20one%20%7C%20"
+        }
+      }
+    },
+    children: []
+  },
+  {
+    name: "keyFacts",
+    children: [
+      {
+        name: "unorderedList",
+        children: [
+          {
+            name: "listElement",
+            children: [
+              {
+                name: "text",
+                children: [],
+                attributes: {
+                  value: "First fact"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    attributes: {
+      title: "Key facts title"
+    }
+  },
+  {
+    attributes: {},
+    children: [
+      {
+        name: "dropCap",
+        attributes: {},
+        children: [
+          {
+            attributes: {
+              value: "A",
+              dropCap: true
+            },
+            children: [],
+            name: "text"
+          }
+        ]
+      },
+      {
+        attributes: {
+          value:
+            "s I follow Chris Reynolds Gordon down the first f…fty Shades of Grey but, he says, “I’m living it.”",
+          dropCap: true
+        },
+        children: [],
+        name: "text"
+      }
+    ],
+    name: "paragraph"
+  }
+];
+
 describe("insertDropcapIntoAST", () => {
   it("should insert dropcap if it belongs to the right template", () => {
     const template = "indepth";
@@ -267,6 +501,19 @@ describe("insertDropcapIntoAST", () => {
     expect(insertDropcapIntoAST([childWithMarkupAndQuote], template)).toEqual([
       childWithDropCapAndMarkupAndQuote
     ]);
+  });
+
+  it("should insert dropcap to the first paragraph when the article start with keyfacts", () => {
+    const template = "indepth";
+    expect(insertDropcapIntoAST(childWithKeyFacts, template)).toEqual(
+      childWithKeyFactsDropCapped
+    );
+  });
+  it("should insert dropcap to the first paragraph when the article start with has keyfacts and interactive", () => {
+    const template = "indepth";
+    expect(
+      insertDropcapIntoAST(childWithKeyFactsAndInteractive, template)
+    ).toEqual(childWithKeyFactsAndInteractiveDropCapped);
   });
 });
 
