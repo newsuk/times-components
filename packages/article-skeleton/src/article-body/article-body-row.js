@@ -261,12 +261,6 @@ export default ({
           />
         );
       }
-      console.log("============================");
-      console.log(interactiveConfig);
-      console.log(id);
-      console.log(id);
-      console.log(id);
-      console.log("============================");
       return (
         <View
           key={key}
