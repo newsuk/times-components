@@ -33,10 +33,10 @@ export const InpImageContainer = styled(View)`
 export const InpTextEditor = styled(View)`
 justify-content: center;
     padding: 20px;
-    flex: 1;
    @media (min-width: ${breakpoints.small}px) {
       padding-right: 0px;
       padding-left: 0px;
+      flex: 1;
   } 
 `
 export const InpLabel = styled(Text)`

@@ -4,6 +4,7 @@ import {View, Text, Platform} from 'react-native';
 import {InpContainer,InpImageContainer,InpTextEditor,  InpLabel, InpHeadline, InpDetails, TagContainer, Atag, Linktext} from '../styles/inline-newsletter-puff';
 import Image from '@times-components/image';
 import InteractiveWrapper from "@times-components/interactive-wrapper";
+import { IconForwardArrow } from "@times-components/icons";
 import Link from "@times-components/link";
 
 function onSignUpClick() {
@@ -31,7 +32,16 @@ const InlineNewsletterPuff = (props) => {
                     </Atag>
                   </Link>
                 </TagContainer>
-
+                <View style={{
+                  flexDirection: "row",
+                  justifyContent: "center"}}>
+                      <Text style={{color: "#006699"}}>Manage preferences here</Text>
+                      <View style={{
+                        paddingLeft: 8,
+                        paddingTop: 2}}>
+                        <IconForwardArrow fillColour={"#006699"} />
+                      </View>
+                    </View>
             </InpTextEditor>
         </InpContainer>
     )
