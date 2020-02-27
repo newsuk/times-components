@@ -5,15 +5,6 @@ import {InpContainer,InpImageContainer,InpTextEditor,  InpLabel, InpHeadline, In
 import Image from '@times-components/image';
 import InteractiveWrapper from "@times-components/interactive-wrapper";
 import Link from "@times-components/link";
-import PropTypes from "prop-types";
-import { ModalImage } from "@times-components/image";
-import {subscribeNewsletterData} from './subscribeNewsletterData';
-import {unSubscribeNewsletterData} from './unSubscribeNewsletterData';
-
-
-const checkIfSubscribed = (bulletinId) => {
-    return unSubscribeNewsletterData.find(bulletin => bulletin.bulletinId === bulletinId).isSubscribed;
-}
 
 function onSignUpClick() {
   if (Platform.OS !== "web") {
@@ -22,7 +13,6 @@ function onSignUpClick() {
 }
 
 const InlineNewsletterPuff = (props) => {
-    const isSubscribed = checkIfSubscribed(props.bulletinId);
 
     return (
         <InpContainer>
