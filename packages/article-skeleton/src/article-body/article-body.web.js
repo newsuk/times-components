@@ -93,11 +93,7 @@ const renderers = ({ paidContentClassName, template }) => ({
                 }}
                 imageOptions={{
                   display,
-                  highResSize: highResSizeCalc(
-                    observed,
-                    key,
-                    template
-                  ),
+                  highResSize: highResSizeCalc(observed, key, template),
                   lowResQuality: 3,
                   lowResSize: 400,
                   ratio,
