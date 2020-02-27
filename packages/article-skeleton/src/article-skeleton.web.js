@@ -138,6 +138,7 @@ const ArticleSkeleton = ({
                     contextUrl={url}
                     section={section}
                     paidContentClassName={paidContentClassName}
+                    template={template}
                   />
                 )}
                 <PaywallPortal
