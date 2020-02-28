@@ -6,14 +6,12 @@ export default (children, template, isDropcapDisabled) => {
     template,
     isDropcapDisabled
   );
-  if (
-    newContent.length > 0 &&
-    newContent.find(child => child.name === "dropCap")
-  ) {
+  const dropCapChild =
+    newContent.length > 0 && newContent.find(child => child.name === "dropCap");
+
+  if (dropCapChild) {
     // remove the wrapping paragraph
-    const dropCapIndex = newContent.findIndex(
-      child => child.name === "dropCap"
-    );
+    const dropCapIndex = newContent.indexOf(dropCapChild);
     newContent[dropCapIndex].children = newContent[
       dropCapIndex
     ].children[0].children.slice(0, 1);

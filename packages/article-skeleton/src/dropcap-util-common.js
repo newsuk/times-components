@@ -93,9 +93,7 @@ const insertDropcapIntoAST = (children, template, isDropcapDisabled) => {
       if (!child || child.children.length === 0) {
         return children;
       }
-      const firstParagraphIndex = children.findIndex(
-        x => x.name === "paragraph"
-      );
+      const firstParagraphIndex = children.indexOf(child);
 
       const withCap = splitNode(child);
       const withoutCap = splitNode(child);
