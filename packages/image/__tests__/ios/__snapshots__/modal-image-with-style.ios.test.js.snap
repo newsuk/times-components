@@ -14,9 +14,10 @@ exports[`1. landscape default modal 1`] = `
         }
       }
     >
-      <View
+      <RCTSafeAreaView
         style={
           Object {
+            "marginLeft": 10,
             "padding": 20,
             "position": "absolute",
             "top": 0,
@@ -46,7 +47,7 @@ exports[`1. landscape default modal 1`] = `
             }
           />
         </View>
-      </View>
+      </RCTSafeAreaView>
       <ImageZoomView />
       <OverlayGradient
         style={
@@ -150,9 +151,10 @@ exports[`2. portrait default modal 1`] = `
         }
       }
     >
-      <View
+      <RCTSafeAreaView
         style={
           Object {
+            "marginLeft": 10,
             "padding": 20,
             "position": "absolute",
             "top": 0,
@@ -182,7 +184,7 @@ exports[`2. portrait default modal 1`] = `
             }
           />
         </View>
-      </View>
+      </RCTSafeAreaView>
       <ImageZoomView />
       <OverlayGradient
         style={
@@ -286,9 +288,10 @@ exports[`3. tablet landscape default modal 1`] = `
         }
       }
     >
-      <View
+      <RCTSafeAreaView
         style={
           Object {
+            "marginLeft": 10,
             "padding": 20,
             "position": "absolute",
             "top": 0,
@@ -318,7 +321,7 @@ exports[`3. tablet landscape default modal 1`] = `
             }
           />
         </View>
-      </View>
+      </RCTSafeAreaView>
       <ImageZoomView />
       <OverlayGradient
         style={
@@ -422,9 +425,10 @@ exports[`4. tablet portrait default modal 1`] = `
         }
       }
     >
-      <View
+      <RCTSafeAreaView
         style={
           Object {
+            "marginLeft": 10,
             "padding": 20,
             "position": "absolute",
             "top": 0,
@@ -454,7 +458,7 @@ exports[`4. tablet portrait default modal 1`] = `
             }
           />
         </View>
-      </View>
+      </RCTSafeAreaView>
       <ImageZoomView />
       <OverlayGradient
         style={

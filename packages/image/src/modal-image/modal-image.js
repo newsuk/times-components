@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import { Modal, View } from "react-native";
+import { Modal, View, SafeAreaView } from "react-native";
 import { ResponsiveContext } from "@times-components/responsive";
 import Button from "@times-components/link";
 import ImageViewer from "react-native-image-zoom-viewer";
@@ -89,7 +89,7 @@ class ModalImage extends Component {
             <ResponsiveContext.Consumer>
               {({ isTablet }) => (
                 <Fragment>
-                  <View
+                  <SafeAreaView
                     style={[
                       styles.buttonContainer,
                       isTablet && styles.buttonContainerTablet
@@ -101,7 +101,7 @@ class ModalImage extends Component {
                         onPress={this.hideModal}
                       />
                     ) : null}
-                  </View>
+                  </SafeAreaView>
                   <ImageViewer
                     imageUrls={urls}
                     renderIndicator={() => null}
