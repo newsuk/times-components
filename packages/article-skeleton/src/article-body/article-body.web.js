@@ -47,7 +47,22 @@ export const responsiveDisplayWrapper = displayType => {
   }
 };
 
-const renderers = ({ paidContentClassName }) => ({
+const highResSizeCalc = (observed, key, template) => {
+  const screenWidth =
+    observed.get(key) && observed.get(key).clientWidth
+      ? observed.get(key).clientWidth
+      : null;
+
+  const indepthRetinaScreenWidth =
+    screenWidth &&
+    window.devicePixelRatio > 1 &&
+    template === "indepth" &&
+    screenWidth * 1.5;
+
+  return indepthRetinaScreenWidth || screenWidth;
+};
+
+const renderers = ({ paidContentClassName, template }) => ({
   ...coreRenderers,
   ad(key) {
     return <AdContainer key={key} slotName="inline-ad" style={styles.ad} />;
@@ -79,9 +94,7 @@ const renderers = ({ paidContentClassName }) => ({
                 }}
                 imageOptions={{
                   display,
-                  highResSize: observed.get(key)
-                    ? observed.get(key).clientWidth
-                    : null,
+                  highResSize: highResSizeCalc(observed, key, template),
                   lowResQuality: 3,
                   lowResSize: 400,
                   ratio,
@@ -232,11 +245,12 @@ const ArticleBody = ({
   content: bodyContent,
   contextUrl,
   section,
-  paidContentClassName
+  paidContentClassName,
+  template
 }) =>
   renderTrees(
     bodyContent.map(decorateAd({ contextUrl, section })),
-    renderers({ paidContentClassName })
+    renderers({ paidContentClassName, template })
   );
 
 ArticleBody.propTypes = {
