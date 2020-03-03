@@ -46,6 +46,11 @@ test('AttributedString.join([Self, Self])', () => {
   expect(joined.string).toEqual('foobar');
 });
 
+test('AttributedString.join([])', () => {
+  const joined = AttributedString.join([]);
+  expect(joined.string).toEqual('');
+});
+
 test('AttributedString.slice(number)', () => {
   const attrs: AttributeTag[][] = [];
   makeAttribute(attrs, 0, 1);
