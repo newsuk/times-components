@@ -12,12 +12,13 @@ import {
 import styles from "./styles";
 
 const TopicHead = ({ name, description, isLoading }) => {
-  const Container = description.length
-    ? HeadContainerWithDescription
-    : HeadContainer;
+  const Container =
+    description && description.length
+      ? HeadContainerWithDescription
+      : HeadContainer;
 
   const showDescription = () =>
-    description.length > 0 ? (
+    description && description.length > 0 ? (
       <Fragment>
         <ResponsiveDivider />
         <Text style={styles.description} testID="topic-description">
