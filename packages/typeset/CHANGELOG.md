@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.1](https://github.com/newsuk/times-components/compare/@times-components/typeset@0.1.0...@times-components/typeset@0.1.1) (2020-03-03)
+
+
+### Bug Fixes
+
+* (TNLT-634) fix handling of empty paragraphs ([#2544](https://github.com/newsuk/times-components/issues/2544)) ([a14df85](https://github.com/newsuk/times-components/commit/a14df858e1da71594a8f787e6a32a2ecf1fcc788))
+
+
+
+
+
 # [0.1.0](https://github.com/newsuk/times-components/compare/@times-components/typeset@0.0.10...@times-components/typeset@0.1.0) (2020-02-24)
 
 

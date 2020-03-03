@@ -1,6 +1,6 @@
 {
   "name": "@times-components/typeset",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A package for markup layout with arbitrary shapes",
   "main": "src/index.ts",
   "typings": "build/main/index.d.ts",
