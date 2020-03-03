@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.42](https://github.com/newsuk/times-components/compare/@times-components/topic@5.1.41...@times-components/topic@5.1.42) (2020-03-03)
+
+
+### Bug Fixes
+
+* (TNLT-617) topics crash ([#2545](https://github.com/newsuk/times-components/issues/2545)) ([6cb8eff](https://github.com/newsuk/times-components/commit/6cb8eff50086d91a1fe4f68278b0820d0a79f862))
+
+
+
+
+
 ## [5.1.41](https://github.com/newsuk/times-components/compare/@times-components/topic@5.1.40...@times-components/topic@5.1.41) (2020-02-25)
 
 **Note:** Version bump only for package @times-components/topic
