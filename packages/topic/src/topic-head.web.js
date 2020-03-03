@@ -12,9 +12,10 @@ import {
 import styles from "./styles";
 
 const TopicHead = ({ name, description, isLoading }) => {
-  const Container = description && description.length
-    ? HeadContainerWithDescription
-    : HeadContainer;
+  const Container =
+    description && description.length
+      ? HeadContainerWithDescription
+      : HeadContainer;
 
   const showDescription = () =>
     description && description.length > 0 ? (
