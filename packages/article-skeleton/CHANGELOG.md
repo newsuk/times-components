@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.31.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.31.1...@times-components/article-skeleton@1.31.2) (2020-03-04)
+
+
+### Bug Fixes
+
+* (TNLT-400) dropcap web handling ([#2542](https://github.com/newsuk/times-components/issues/2542)) ([190b013](https://github.com/newsuk/times-components/commit/190b0130e62773bce0489fc1aa75d04c01f09431))
+
+
+
+
+
 ## [1.31.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.31.0...@times-components/article-skeleton@1.31.1) (2020-03-03)
 
 **Note:** Version bump only for package @times-components/article-skeleton
