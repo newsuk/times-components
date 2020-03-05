@@ -3,7 +3,7 @@ import findClosestWidth from "../src/utils/findClosestWidth";
 describe("findClosestWidth", () => {
   it("should return the corrent width", () => {
     const width = 330;
-    const expectedWidth = 320;
+    const expectedWidth = 330;
     expect(findClosestWidth(width)).toEqual(expectedWidth);
   });
 
@@ -33,7 +33,7 @@ describe("findClosestWidth", () => {
 
   it("should return the corrent width if width is negative number", () => {
     const width = 828;
-    const expectedWidth = 758;
+    const expectedWidth = 750;
     expect(findClosestWidth(width)).toEqual(expectedWidth);
   });
 });
