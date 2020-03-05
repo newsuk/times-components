@@ -212,7 +212,7 @@ const ResponsiveImage = (props: ResponsiveImageProps) => {
       fadeDuration={0}
     />
   );
-  const placeholder = showPlaceholder && (
+  const placeholder = (
     <Image
       key="placeholder"
       source={logoPath}
@@ -229,9 +229,10 @@ const ResponsiveImage = (props: ResponsiveImageProps) => {
 
   return (
     <View style={{ ...styles.style, ...propStyle, aspectRatio, borderRadius }}>
-      {placeholder}
+      {showPlaceholder && placeholder}
       {lowRes}
       {highRes}
+      {!showPlaceholder && placeholder}
     </View>
   );
 };
