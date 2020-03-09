@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet-async";
 import PropTypes from "prop-types";
 import Context from "@times-components/context";
 import { renderTreeAsText } from "@times-components/markup-forest";
-import appendToUrl from "./utils/append-to-url";
+import { appendToImageURL } from "@times-components/utils";
 
 // Get the section for an article, preferring it not to be News
 function getSectionName(article) {
@@ -105,7 +105,7 @@ function Head({ article, logoUrl, paidContentClassName }) {
       ? renderTreeAsText({ children: descriptionMarkup })
       : null;
   const sectionname = getSectionName(article);
-  const leadassetUrl = appendToUrl(
+  const leadassetUrl = appendToImageURL(
     getArticleLeadAssetUrl(article),
     "resize",
     685

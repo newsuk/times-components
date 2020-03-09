@@ -9,6 +9,8 @@ import {
 } from 'react-native';
 import Url from 'url-parse';
 import logoPath from '../assets/t.png';
+import { appendToImageURL } from '@times-components/utils';
+import findClosestWidth from './utils/findClosestWidth';
 import styles from './styles';
 
 interface ResponsiveImageProps {
@@ -99,8 +101,6 @@ const ResponsiveImage = (props: ResponsiveImageProps) => {
   }
   const offlineUrl = url.toString();
   const [width, setWidth] = React.useState(0);
-  const ratio = PixelRatio.get();
-  url.query.resize = (width * ratio).toString();
   url.query.offline = 'false';
   const onlineUrl = url.toString();
 
@@ -137,8 +137,9 @@ const ResponsiveImage = (props: ResponsiveImageProps) => {
   );
 
   const imageRef = React.useCallback(event => {
-    const { width: layoutWidth } = event.nativeEvent.layout;
-    setWidth(layoutWidth);
+    const { width } = event.nativeEvent.layout;
+
+    setWidth(width);
     if (onLayout) {
       onLayout(event);
     }
@@ -166,11 +167,13 @@ const ResponsiveImage = (props: ResponsiveImageProps) => {
   }
 
   const resize = resizeMode || 'cover';
+  const ratio = PixelRatio.get();
+  const closestWidth = width && findClosestWidth(width * ratio);
 
   const highRes = showOnline && (
     <ImageElement
       key="online"
-      source={{ uri: onlineUrl }}
+      source={{ uri: appendToImageURL(onlineUrl, 'resize', closestWidth) }}
       aspectRatio={aspectRatio}
       borderRadius={borderRadius}
       onLoad={() => {
@@ -191,7 +194,7 @@ const ResponsiveImage = (props: ResponsiveImageProps) => {
   const lowRes = showOffline && (
     <ImageElement
       key="offline"
-      source={{ uri: offlineUrl }}
+      source={{ uri: appendToImageURL(offlineUrl, 'resize', closestWidth) }}
       aspectRatio={aspectRatio}
       borderRadius={borderRadius}
       onLoadEnd={() => {
