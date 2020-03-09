@@ -38,6 +38,9 @@ export default class AttributedString {
     return newString;
   }
   public static join(strings: AttributedString[]): AttributedString {
+    if (strings.length === 0) {
+      return new AttributedString('', []);
+    }
     return strings.reduce(AttributedString.concat);
   }
 
