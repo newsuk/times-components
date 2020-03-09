@@ -15,7 +15,9 @@ exports[`1. modal image 1`] = `
     visible={false}
   >
     <View>
-      <View>
+      <RCTSafeAreaView
+        emulateUnlessSupported={true}
+      >
         <View
           focusable={true}
         >
@@ -28,7 +30,7 @@ exports[`1. modal image 1`] = `
             }
           />
         </View>
-      </View>
+      </RCTSafeAreaView>
       <ImageZoomView
         captureEvent={true}
         enablePreload={true}
@@ -142,7 +144,9 @@ exports[`2. modal image with no caption 1`] = `
     visible={false}
   >
     <View>
-      <View>
+      <RCTSafeAreaView
+        emulateUnlessSupported={true}
+      >
         <View
           focusable={true}
         >
@@ -155,7 +159,7 @@ exports[`2. modal image with no caption 1`] = `
             }
           />
         </View>
-      </View>
+      </RCTSafeAreaView>
       <ImageZoomView
         captureEvent={true}
         enablePreload={true}
@@ -264,7 +268,9 @@ exports[`3. modal image with custom highressize 1`] = `
     visible={false}
   >
     <View>
-      <View>
+      <RCTSafeAreaView
+        emulateUnlessSupported={true}
+      >
         <View
           focusable={true}
         >
@@ -277,7 +283,7 @@ exports[`3. modal image with custom highressize 1`] = `
             }
           />
         </View>
-      </View>
+      </RCTSafeAreaView>
       <ImageZoomView
         captureEvent={true}
         enablePreload={true}

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.7.10](https://github.com/newsuk/times-components/compare/@times-components/image@6.7.9...@times-components/image@6.7.10) (2020-03-06)
+
+
+### Bug Fixes
+
+* (TNLT-652) use safe area view for modals ([#2548](https://github.com/newsuk/times-components/issues/2548)) ([3ffb80d](https://github.com/newsuk/times-components/commit/3ffb80d9a32a655fa22ce44eed699cf8f3d26b15))
+
+
+
+
+
 ## [6.7.9](https://github.com/newsuk/times-components/compare/@times-components/image@6.7.8...@times-components/image@6.7.9) (2020-02-25)
 
 **Note:** Version bump only for package @times-components/image
