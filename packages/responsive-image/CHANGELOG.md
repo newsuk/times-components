@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/newsuk/times-components/compare/@times-components/responsive-image@0.5.4...@times-components/responsive-image@0.6.0) (2020-03-09)
+
+
+### Features
+
+* native images add predefined widths ([#2549](https://github.com/newsuk/times-components/issues/2549)) ([3f81784](https://github.com/newsuk/times-components/commit/3f81784192ac60d6f14df4df11610122caef049f))
+
+
+
+
+
 ## [0.5.4](https://github.com/newsuk/times-components/compare/@times-components/responsive-image@0.5.3...@times-components/responsive-image@0.5.4) (2020-02-24)
 
 **Note:** Version bump only for package @times-components/responsive-image

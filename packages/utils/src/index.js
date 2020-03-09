@@ -13,3 +13,4 @@ export { default as getHeadline } from "./get-headline";
 export { default as gqlRgbaToHex } from "./gql-rgba-to-hex";
 export { default as gqlRgbaToStyle } from "./gql-rgba-to-style";
 export { default as getSectionFromTiles } from "./get-section-from-tiles";
+export { default as appendToImageURL } from "./append-to-image-url";

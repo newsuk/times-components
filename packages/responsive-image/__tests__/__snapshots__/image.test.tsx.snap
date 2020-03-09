@@ -83,7 +83,7 @@ exports[`Image loads high-res 1`] = `
     resizeMethod="resize"
     source={
       Object {
-        "uri": "http://foo.com/bar.png?rel_width=1&rel_height=1&rel_vertical_offset=0&rel_horizontal_offset=0&offline=true",
+        "uri": "http://foo.com/bar.png?rel_width=1&rel_height=1&rel_vertical_offset=0&rel_horizontal_offset=0&offline=true&resize=1024",
       }
     }
     style={

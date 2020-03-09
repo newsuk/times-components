@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.3.0](https://github.com/newsuk/times-components/compare/@times-components/utils@6.2.3...@times-components/utils@6.3.0) (2020-03-09)
+
+
+### Features
+
+* native images add predefined widths ([#2549](https://github.com/newsuk/times-components/issues/2549)) ([3f81784](https://github.com/newsuk/times-components/commit/3f81784192ac60d6f14df4df11610122caef049f))
+
+
+
+
+
 ## [6.2.3](https://github.com/newsuk/times-components/compare/@times-components/utils@6.2.2...@times-components/utils@6.2.3) (2020-02-24)
 
 **Note:** Version bump only for package @times-components/utils

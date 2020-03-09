@@ -7,6 +7,12 @@ declare module '@times-components/styleguide' {
   export const colours: Colours;
 }
 
+declare module '@times-components/utils' {
+  type appendToImageURL = (url: string, key: string, value: string | number) => string;
+
+  export const appendToImageURL: appendToImageURL;
+}
+
 declare module 'react-native-hooks' {
   export const useLayout: () => {
     onLayout: () => {};
