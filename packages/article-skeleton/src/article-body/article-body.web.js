@@ -17,7 +17,7 @@ import renderTrees from "@times-components/markup-forest";
 import { AspectRatioContainer } from "@times-components/utils";
 import ArticleLink from "./article-link";
 import InsetCaption from "./inset-caption";
-import { InlineNewsletterPuff } from './inline-newsletter-puff'
+import InlineNewsletterPuff from './inline-newsletter-puff'
 import {
   PrimaryImg,
   SecondaryImg,
@@ -98,10 +98,12 @@ const renderers = ({ paidContentClassName }) => ({
     const { attributes, value } = element;
 
     switch (attributes["deck-id"]) {
+      // switch (value) {
+      //   case: "newsletter-puff"
       case "8567":
-        const bulletinId = "a2l0J000000MDl5QAG";
+        const newsletterId = "a2l0J000000MDl5QAG";
         return (
-            <InlineNewsletterPuff key={key} bulletinId={bulletinId} attributes={attributes} element={value} source={url}/>
+            <InlineNewsletterPuff key={key} newsletterId={newsletterId} attributes={attributes} element={value} source={url}/>
         );
       default:
         return (

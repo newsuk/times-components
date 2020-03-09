@@ -16,7 +16,7 @@ import ArticleParagraph from "./article-body-paragraph";
 import InsetCaption from "./inset-caption";
 import styleFactory from "../styles/article-body";
 import ArticleLink from "./article-link";
-import { InlineNewsletterPuff } from './inline-newsletter-puff';
+import InlineNewsletterPuff from './inline-newsletter-puff';
 
 export default ({
   data,
@@ -252,11 +252,12 @@ export default ({
          if (
         element &&
         element.attributes["deck-id"] === "8567"
+        // element.value === "newsletter-puff"
       ) {
-        const bulletinId = "a2l0J000000MDl5QAG";
+        const newsletterId = "a2l0J000000MDl5QAG";
         return (
           <InlineNewsletterPuff
-            bulletinId={bulletinId}
+            newsletterId={newsletterId}
             key={key}
           />
         );

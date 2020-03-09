@@ -6,15 +6,15 @@ import {
     fontSizes,
     spacing
   } from "@times-components/styleguide";
-  import {View, Text, Platform} from 'react-native';
+  import {View, Text} from 'react-native';
 
 export const InpContainer = styled(View)`
-    background-color: #F9F8F3;
+    background-color: ${colours.functional.newsletterPuffBackground};
     display: flex;
     flex-direction: column;
-    margin-right: 10px;
-    margin-bottom: 20px;
-    margin-left: 10px;
+    margin-right: ${spacing(2)};
+    margin-bottom: ${spacing(4)};
+    margin-left: ${spacing(2)};
 
    @media (min-width: ${breakpoints.medium}px) {
     flex-direction: row;
@@ -32,18 +32,18 @@ export const InpImageContainer = styled(View)`
 `
 export const InpTextEditor = styled(View)`
 justify-content: center;
-    padding: 20px;
+    padding: ${spacing(4)};
    @media (min-width: ${breakpoints.small}px) {
-      padding-right: 0px;
-      padding-left: 0px;
+      padding-right: ${spacing(0)};
+      padding-left: ${spacing(0)};
       flex: 1;
   } 
 `
 export const InpLabel = styled(Text)`
-    font-family: 'GillSansMTStd-Medium';
+    font-family: ${fonts.supporting};
     font-size: 12px;
     letter-spacing: 1px;
-    color: #1d1d1b;
+    color: ${colours.functional.brandColour};
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 3px;
@@ -52,57 +52,36 @@ export const InpLabel = styled(Text)`
   } 
 `
 export const InpHeadline = styled(Text)`
-    color: #1d1d1b;
-    font-family: 'TimesModern-Bold';
+    color: ${colours.functional.brandColour};
+    font-family: ${fonts.headline};
     text-align: center;
     font-size: 28px;
     text-decoration: none;
-    margin-bottom: 5px;
+    margin-bottom: ${spacing(1)};
     @media (max-width: ${breakpoints.medium}px) {
   } 
 `
 export const InpDetails = styled(Text)`
-    font-family: 'TimesDigitalW04';
+    font-family: ${fonts.body};
     font-size: 15px;
     text-align: center;
-    color: #333333;
-    margin-bottom: 16px;
+    color: ${colours.functional.primary};
+    margin-bottom: ${spacing(3)};
     @media (max-width: ${breakpoints.medium}px) {
   } 
 `
-export const InpCTA = styled(Text)`
-    color: #CD0000;
-    font-family: 'GillSansMTStd-Medium';
-    font-size: 13px;
-    letter-spacing: 0.2;
-    line-height: 13px;
-    margin-top: 10px;
-
-    /* &::after{
-    content: "";
-    font-family: iconfont;
-    padding: 0 0 0 .5rem;
-    font-size: .8em;
-    display: inline-block;
-    vertical-align: middle;
-    font-smoothing: antialiased;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    } */
-`
-export const TagContainer = styled(View)`
+export const SignupContainer = styled(View)`
    @media (min-width: ${breakpoints.medium}px) {
     width: 220px;
-    margin: 0px auto;
+    margin: ${spacing(0)} auto;
   } 
 `
 
-export const Atag = styled(View)`
-color: #CD0000;    
+export const Signup = styled(View)`
 border-width: 2px;
 border-style: solid;
-border-color: #1d1d1b;
-font-family: 'GillSansMTStd-Medium';
+border-color: ${colours.functional.brandColour};
+font-family: ${fonts.supporting};
 letter-spacing: 0.2;
 height: 45px;
 justify-content: center;
@@ -110,7 +89,22 @@ align-items: center;
 `
 
 
-export const Linktext = styled(Text)`
+export const SignupText = styled(Text)`
 font-size: 15px;
-font-family: 'GillSansMTStd-Medium';
+font-family: ${fonts.supporting};
+`
+
+export const PreferencesContainer = styled(View)`
+flex-direction: row;
+justify-content: center;
+`
+
+export const PreferencesText = styled(Text)`
+color: ${colours.functional.action};
+cursor: pointer;
+`
+
+export const IconContainer = styled(View)`
+padding-left: 5px;
+padding-top: 4px;
 `
