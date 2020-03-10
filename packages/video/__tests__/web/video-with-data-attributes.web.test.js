@@ -53,7 +53,12 @@ const tests = [
     test: () => {
       const testInstance = TestRenderer.create(
         <IsPaidSubscriber.Provider value>
-          <Video {...defaultVideoProps} isPaidOnly={false} poster={null} is360 />
+          <Video
+            {...defaultVideoProps}
+            isPaidOnly={false}
+            poster={null}
+            is360
+          />
         </IsPaidSubscriber.Provider>
       );
 

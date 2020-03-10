@@ -190,7 +190,12 @@ export default {
           >
             Desktop size:
           </Text>
-          <Video {...skySportsVideoProps} height={374} isSkySports width={664} />
+          <Video
+            {...skySportsVideoProps}
+            height={374}
+            isSkySports
+            width={664}
+          />
           <Text
             style={{
               marginBottom: 10,

@@ -122,45 +122,6 @@ exports[`3. sky sports video 1`] = `
       }
     }
   >
-    <OverlayGradient
-      style={
-        Object {
-          "flex": 1,
-          "flexDirection": "row",
-          "height": 40,
-          "justifyContent": "space-between",
-          "left": 0,
-          "paddingHorizontal": 5,
-          "position": "absolute",
-          "top": 0,
-          "width": "100%",
-          "zIndex": 3,
-        }
-      }
-    >
-      <Text
-        style={
-          Object {
-            "color": "#FFFFFF",
-            "fontFamily": "GillSansMTStd-Medium",
-            "fontSize": 11,
-            "lineHeight": undefined,
-            "marginTop": 10,
-          }
-        }
-      >
-        Premier League clips powered by Sky Sports
-      </Text>
-      <Image
-        style={
-          Object {
-            "height": 17,
-            "marginTop": 7,
-            "width": 80,
-          }
-        }
-      />
-    </OverlayGradient>
     <Image
       style={
         Object {
