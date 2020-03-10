@@ -37,9 +37,6 @@ const styles = StyleSheet.create({
     height: "100vh",
     justifyContent: "flex-end"
   },
-  listEmptyWatermarkContainer: {
-    alignSelf: "flex-end"
-  },
   listErrorHeading: {
     ...sharedStyles.listErrorHeading,
     marginTop: spacing(4)
@@ -60,11 +57,5 @@ const retryButtonStyles = {
   marginTop: spacing(8)
 };
 
-const watermarkStyles = {
-  height: 350,
-  viewBox: "0 0 350 200",
-  width: 500
-};
-
-export { retryButtonStyles, watermarkStyles };
+export { retryButtonStyles };
 export default styles;
