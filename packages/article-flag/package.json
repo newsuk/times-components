@@ -63,7 +63,7 @@
   },
   "dependencies": {
     "@times-components/styleguide": "3.37.2",
-    "@times-components/utils": "6.3.0",
+    "@times-components/utils": "6.3.1",
     "mockdate": "2.0.2",
     "prop-types": "15.7.2"
   },
