@@ -249,16 +249,21 @@ export default ({
           />
         );
       }   
-         if (
+      if (
         element &&
-        element.attributes["deck-id"] === "8567"
-        // element.value === "newsletter-puff"
+        element.value === "newsletter-puff"
       ) {
-        const newsletterId = "a2l0J000000MDl5QAG";
+        const copy = decodeURIComponent(element.attributes.copy)
+        const label = decodeURIComponent(element.attributes.label)
+        const headline = decodeURIComponent(element.attributes.headline)  
+              
         return (
           <InlineNewsletterPuff
-            newsletterId={newsletterId}
+            newsletterId={element.attributes.newsletterId}
             key={key}
+            label={label} 
+            headline={headline}
+            copy={copy} 
           />
         );
       }

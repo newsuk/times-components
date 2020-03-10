@@ -5,8 +5,8 @@ import Image from '@times-components/image';
 import InteractiveWrapper from "@times-components/interactive-wrapper";
 import { IconForwardArrow } from "@times-components/icons";
 import Link from "@times-components/link";
-import {InpContainer,InpImageContainer,InpTextEditor,  InpLabel, InpHeadline, InpDetails, SignupContainer, Signup, SignupText, PreferencesContainer, PreferencesText, IconContainer} from '../styles/inline-newsletter-puff';
 import { colours } from "@times-components/styleguide";
+import {InpContainer,InpImageContainer,InpTextEditor,  InpLabel, InpHeadline, InpCopy, SignupContainer, Signup, SignupText, PreferencesContainer, PreferencesText, IconContainer} from '../styles/inline-newsletter-puff';
 
 
 function onSignUpClick() {
@@ -15,7 +15,8 @@ function onSignUpClick() {
   }
 }
 
-const InlineNewsletterPuff = () => {
+const InlineNewsletterPuff = (props) => {
+  const {label, headline, copy} = {...props};
   const isSubscribed = false;
   return (
         <InpContainer>
@@ -24,9 +25,9 @@ const InlineNewsletterPuff = () => {
             </InpImageContainer>
 
             <InpTextEditor>
-                <InpLabel>STRAIGHT IN YOUR INBOX</InpLabel>
-                <InpHeadline>Politics. Explained.</InpHeadline>
-                <InpDetails>Sign up to receive our brilliant Red Box newsletter, Matt Chorley`s poke at politics delivered every weekday morning at 8am.</InpDetails>
+                <InpLabel>{label}</InpLabel>
+                <InpHeadline>{headline}</InpHeadline>
+                <InpCopy>{copy}</InpCopy>
                   {!isSubscribed ? 
                   <SignupContainer>
                     <Link url="https://home.thetimes.co.uk/myNews" onPress={onSignUpClick}>

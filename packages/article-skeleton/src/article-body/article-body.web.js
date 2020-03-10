@@ -110,14 +110,14 @@ const renderers = ({ paidContentClassName, template }) => ({
   interactive(key, { url, element, display }) {
     const { attributes, value } = element;
 
-    switch (attributes["deck-id"]) {
-      // switch (value) {
-      //   case: "newsletter-puff"
-      case "8567":
-        const newsletterId = "a2l0J000000MDl5QAG";
+        switch (value) {
+        case "newsletter-puff": {
+          const copy = decodeURIComponent(attributes.copy)
+          const label = decodeURIComponent(attributes.label)
+          const headline = decodeURIComponent(attributes.headline)
         return (
-            <InlineNewsletterPuff key={key} newsletterId={newsletterId} attributes={attributes} element={value} source={url}/>
-        );
+            <InlineNewsletterPuff key={key} newsletterId={attributes.newsletterId} copy={copy} label={label} headline={headline} />
+        );}
       default:
         return (
           <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
