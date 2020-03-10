@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.39](https://github.com/newsuk/times-components/compare/@times-components/user-state@0.1.38...@times-components/user-state@0.1.39) (2020-03-10)
+
+
+### Bug Fixes
+
+* deps ([#2552](https://github.com/newsuk/times-components/issues/2552)) ([60d16c2](https://github.com/newsuk/times-components/commit/60d16c261d9c763ad5d533fca43534710a32fcff))
+
+
+
+
+
 ## [0.1.38](https://github.com/newsuk/times-components/compare/@times-components/user-state@0.1.37...@times-components/user-state@0.1.38) (2020-03-10)
 
 **Note:** Version bump only for package @times-components/user-state
