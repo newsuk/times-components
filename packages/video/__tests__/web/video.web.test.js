@@ -42,7 +42,7 @@ const tests = [
     name: "video marked as sky sports",
     test: () => {
       const testInstance = TestRenderer.create(
-        <Video {...defaultVideoProps} skySports />
+        <Video {...defaultVideoProps} isSkySports />
       );
 
       expect(testInstance.toJSON()).toMatchSnapshot();
@@ -52,7 +52,7 @@ const tests = [
     name: "no sky banner displayed on play",
     test: () => {
       const testInstance = TestRenderer.create(
-        <Video {...defaultVideoProps} skySports />
+        <Video {...defaultVideoProps} isSkySports />
       );
 
       const VideoComponent = testInstance.root.findAllByType(InlineVideoPlayer);

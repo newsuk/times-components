@@ -14,7 +14,7 @@ const Video = ({
   onVideoPress,
   policyKey,
   poster,
-  skySports,
+  isSkySports,
   videoId,
   width,
   relativeWidth,
@@ -34,7 +34,7 @@ const Video = ({
     testID="splash-component"
   >
     <View style={[styles.videoTabletContainer, { height, width }]}>
-      {skySports && <SkySportsBanner />}
+      {isSkySports && <SkySportsBanner />}
       {poster ? (
         <Image
           aspectRatio={width / height}

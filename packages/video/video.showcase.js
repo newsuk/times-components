@@ -161,7 +161,7 @@ export default {
           >
             <Video
               {...defaultVideoProps}
-              paidOnly={boolean("paidOnly video", false)}
+              isPaidOnly={boolean("paidOnly video", false)}
             />
           </IsPaidSubscriber.Provider>
         </View>
@@ -181,7 +181,7 @@ export default {
           >
             Mobile size:
           </Text>
-          <Video {...skySportsVideoProps} skySports />
+          <Video {...skySportsVideoProps} isSkySports />
           <Text
             style={{
               marginBottom: 10,
@@ -190,7 +190,7 @@ export default {
           >
             Desktop size:
           </Text>
-          <Video {...skySportsVideoProps} height={374} skySports width={664} />
+          <Video {...skySportsVideoProps} height={374} isSkySports width={664} />
           <Text
             style={{
               marginBottom: 10,

@@ -212,7 +212,7 @@ const renderers = ({ paidContentClassName, template }) => ({
               playerId={brightcovePlayerId}
               policyKey={brightcovePolicyKey}
               poster={{ uri: posterImageUrl }}
-              skySports={skysports}
+              isSkySports={skysports}
               videoId={brightcoveVideoId}
               width="100%"
             />

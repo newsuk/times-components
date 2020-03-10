@@ -50,7 +50,7 @@ const testSubscriberAndVideoPaidStatus = ({
 }) => {
   const testInstance = TestRenderer.create(
     <IsPaidSubscriber.Provider value={subscriberIsPaid}>
-      <Video {...defaultWebVideoProps} paidOnly={videoIsPaidOnly} />
+      <Video {...defaultWebVideoProps} isPaidOnly={videoIsPaidOnly} />
     </IsPaidSubscriber.Provider>
   );
 
@@ -90,7 +90,7 @@ const tests = [
     test: () => {
       const testInstance = TestRenderer.create(
         <IsPaidSubscriber.Provider value>
-          <Video {...defaultWebVideoProps} paidOnly={false} poster={null} />
+          <Video {...defaultWebVideoProps} isPaidOnly={false} poster={null} />
         </IsPaidSubscriber.Provider>
       );
 

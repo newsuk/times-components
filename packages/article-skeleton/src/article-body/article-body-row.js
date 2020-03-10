@@ -329,7 +329,7 @@ export default ({
             onVideoPress={onVideoPress}
             policyKey={brightcovePolicyKey}
             poster={{ uri: posterImageUrl }}
-            skySports={skySports}
+            isSkySports={skySports}
             videoId={brightcoveVideoId}
             width={screenW}
           />
