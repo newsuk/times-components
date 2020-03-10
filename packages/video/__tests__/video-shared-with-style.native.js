@@ -55,7 +55,7 @@ export default () => {
       name: "sky sports video",
       test: () => {
         const testInstance = TestRenderer.create(
-          <Video {...defaultVideoProps} skySports />
+          <Video {...defaultVideoProps} isSkySports />
         );
 
         expect(testInstance).toMatchSnapshot();

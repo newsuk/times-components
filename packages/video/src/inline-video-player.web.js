@@ -167,7 +167,7 @@ class InlineVideoPlayer extends Component {
       videoId,
       accountId,
       playerId,
-      skySports,
+      isSkySports,
       is360
     } = this.props;
     const { error, hasVideoPlayed } = this.state;
@@ -186,7 +186,7 @@ class InlineVideoPlayer extends Component {
         <div style={{ height, width, position: "relative" }}>
           {!hasVideoPlayed && (
             <Fragment>
-              {skySports && <SkySportsBanner />}
+              {isSkySports && <SkySportsBanner />}
               {is360 && <Video360Icon />}
             </Fragment>
           )}
