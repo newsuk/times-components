@@ -1,6 +1,6 @@
 {
   "name": "@times-components/article-list",
-  "version": "9.5.17",
+  "version": "9.5.18",
   "description": "Paginated list of articles",
   "main": "dist/article-list",
   "dev": "src/article-list",
@@ -72,7 +72,7 @@
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@times-components/ad": "2.11.4",
+    "@times-components/ad": "2.11.5",
     "@times-components/article-summary": "3.16.26",
     "@times-components/button": "2.4.39",
     "@times-components/card": "6.4.13",
