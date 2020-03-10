@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.5](https://github.com/newsuk/times-components/compare/@times-components/mocks@0.1.4...@times-components/mocks@0.1.5) (2020-03-10)
+
+
+### Bug Fixes
+
+* deps ([#2551](https://github.com/newsuk/times-components/issues/2551)) ([eeb6fc2](https://github.com/newsuk/times-components/commit/eeb6fc22289538c0d6e7f7fb842e63334cff9baa))
+
+
+
+
+
 ## [0.1.4](https://github.com/newsuk/times-components/compare/@times-components/mocks@0.1.3...@times-components/mocks@0.1.4) (2020-02-24)
 
 **Note:** Version bump only for package @times-components/mocks
