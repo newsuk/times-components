@@ -62,7 +62,7 @@
     "@times-components/styleguide": "3.37.2",
     "@times-components/tealium": "1.13.29",
     "@times-components/topic": "5.1.45",
-    "@times-components/utils": "6.3.0",
+    "@times-components/utils": "6.3.1",
     "apollo-cache-inmemory": "1.5.1",
     "apollo-client": "2.5.1",
     "apollo-link": "1.2.4",

@@ -62,7 +62,7 @@
     "@react-native-community/netinfo": "5.3.3",
     "@skele/components": "1.0.0-alpha.40",
     "@times-components/styleguide": "3.37.2",
-    "@times-components/utils": "6.3.0",
+    "@times-components/utils": "6.3.1",
     "prop-types": "15.7.2",
     "react-broadcast": "0.5.2",
     "react-native-device-info": "5.3.1",
