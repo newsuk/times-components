@@ -30,12 +30,10 @@ const ArticleLeadAsset = ({
       height="100%"
       id={leadAsset.id}
       is360={leadAsset.is360}
-      isPaidOnly={leadAsset.paidOnly}
       playerId={leadAsset.brightcovePlayerId}
       policyKey={leadAsset.brightcovePolicyKey}
       position="absolute"
       poster={{ uri: displayImage.url }}
-      isSkySports={leadAsset.skySports}
       videoId={leadAsset.brightcoveVideoId}
       width="100%"
     />

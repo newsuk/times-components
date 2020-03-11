@@ -127,10 +127,6 @@ export interface VideoInput {
 
   brightcoveAccountId: string;
 
-  paidOnly: boolean;
-
-  skySports: boolean;
-
   posterImage: ImageInput;
 
   is360?: boolean | null;
@@ -1160,10 +1156,6 @@ export interface Video {
   brightcovePlayerId?: string | null;
 
   brightcoveVideoId?: string | null;
-
-  paidOnly?: boolean | null;
-
-  skySports?: boolean | null;
 
   brightcoveAccountId?: string | null;
 

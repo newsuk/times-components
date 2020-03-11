@@ -204,7 +204,6 @@ export default [
           brightcovePlayerId: "default",
           caption: "This is video caption",
           display: "primary",
-          paidOnly: "false",
           posterImageId: "0c0309d4-1aeb-11e8-9010-1eef6ba5d3de",
           posterImageUrl: "http://placekitten.com/1000/1000"
         },
@@ -238,7 +237,6 @@ export default [
           brightcoveVideoId: "5831024132001",
           caption: "This is video caption secondary",
           display: "secondary",
-          paidOnly: "false",
           posterImageUrl: "http://placekitten.com/500/500"
         },
         children: [],

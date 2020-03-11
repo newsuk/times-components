@@ -710,7 +710,6 @@ export const videoLeadAsset = ({
   brightcoveVideoId: "5831024132001",
   brightcovePlayerId: "default",
   caption: "This is video caption",
-  paidOnly: "false",
   posterImage: {
     __typename: "Image",
     caption: "CCTV captures moment of the explosion",

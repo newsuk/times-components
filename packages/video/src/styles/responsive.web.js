@@ -1,12 +1,5 @@
-import { Text, View } from "react-native";
+import { View } from "react-native";
 import styled from "styled-components";
-import { breakpoints, fontSizes } from "@times-components/styleguide";
-
-const SkySportsTextContainer = styled(Text)`
-  @media (min-width: ${breakpoints.medium}px) {
-    font-size: ${fontSizes.caption}px;
-  }
-`;
 
 const Video360Container = styled(View)`
   border-radius: 100%;
@@ -24,4 +17,4 @@ const Video360Container = styled(View)`
   }
 `;
 
-export { SkySportsTextContainer, Video360Container };
+export default Video360Container;

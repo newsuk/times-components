@@ -67,16 +67,6 @@ export default () => {
       }
     },
     {
-      name: "sky sports video",
-      test: () => {
-        const testInstance = TestRenderer.create(
-          <Video {...defaultVideoProps} isSkySports />
-        );
-
-        expect(testInstance.toJSON()).toMatchSnapshot();
-      }
-    },
-    {
       name: "360 video",
       test: () => {
         const testInstance = TestRenderer.create(

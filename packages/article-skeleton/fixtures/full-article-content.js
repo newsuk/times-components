@@ -203,7 +203,6 @@ export default [
       caption: "This is video caption",
       display: "primary",
       imageIndex: 1,
-      paidOnly: "false",
       posterImageId: "0c0309d4-1aeb-11e8-9010-1eef6ba5d3de",
       posterImageUrl: "http://placekitten.com/1000/1000"
     },
@@ -258,7 +257,6 @@ export default [
       caption: "This is video caption secondary",
       display: "secondary",
       imageIndex: 2,
-      paidOnly: "false",
       posterImageUrl: "http://placekitten.com/500/500"
     },
     children: [],

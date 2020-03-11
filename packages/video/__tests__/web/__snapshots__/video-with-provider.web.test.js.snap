@@ -1,56 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`1. paidonly video for unpaid users 1`] = `
-<div>
-  <Image
-    aspectRatio={1.5}
-    uri="fa3ca0da118e3184f45765fbc02fb72f"
-  />
-  <div>
-    <div>
-      We are sorry, you need to be a subscriber to watch this video
-    </div>
-  </div>
-</div>
-`;
-
-exports[`2. paidonly video for paid users 1`] = `
-<div>
-  <div>
-    <video
-      controls={true}
-      id="[video id]-[account id]-[tpa video id]"
-      poster="ac535779a0a734ce80e2785639347b11"
-    />
-  </div>
-</div>
-`;
-
-exports[`3. non-paidonly video for unpaid users 1`] = `
-<div>
-  <div>
-    <video
-      controls={true}
-      id="[video id]-[account id]-[tpa video id]"
-      poster="ac535779a0a734ce80e2785639347b11"
-    />
-  </div>
-</div>
-`;
-
-exports[`4. non-paidonly video for paid users 1`] = `
-<div>
-  <div>
-    <video
-      controls={true}
-      id="[video id]-[account id]-[tpa video id]"
-      poster="ac535779a0a734ce80e2785639347b11"
-    />
-  </div>
-</div>
-`;
-
-exports[`5. video without a poster image 1`] = `
+exports[`1. video without a poster image 1`] = `
 <div>
   <div>
     <video

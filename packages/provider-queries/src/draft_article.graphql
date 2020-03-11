@@ -26,7 +26,6 @@ query ArticleDraftQuery($id: ID!) {
         posterImage {
           ...imageProps
         }
-        skySports
         is360
       }
       ... on Image {

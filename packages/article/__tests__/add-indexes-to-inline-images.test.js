@@ -18,8 +18,7 @@ const content = [
   {
     attributes: {
       caption: "caption",
-      posterImageUrl: "image.com",
-      skySports: false
+      posterImageUrl: "image.com"
     },
     name: "video"
   }

@@ -85,10 +85,8 @@ const article = articleFixture({
         brightcoveVideoId: "4084164751001",
         caption: "This is video caption",
         display: "primary",
-        paidOnly: "false",
         posterImageId: "0c0309d4-1aeb-11e8-9010-1eef6ba5d3de",
-        posterImageUrl: "https://image.io",
-        skySports: false
+        posterImageUrl: "https://image.io"
       },
       children: [],
       name: "video"
