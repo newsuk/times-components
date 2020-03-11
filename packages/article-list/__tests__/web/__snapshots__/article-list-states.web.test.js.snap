@@ -71,13 +71,6 @@ exports[`3. an empty list 1`] = `
     <div>
       Empty state
     </div>
-    <div>
-      <Watermark
-        height={350}
-        viewBox="0 0 350 200"
-        width={500}
-      />
-    </div>
   </div>
 </main>
 `;

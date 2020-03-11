@@ -89,11 +89,6 @@ const styles = {
     borderWidth: 1,
     justifyContent: "center",
     overflow: "hidden"
-  },
-  watermarkContainer: {
-    left: 0,
-    position: "absolute",
-    top: 0
   }
 };
 

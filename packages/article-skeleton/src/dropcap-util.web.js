@@ -6,11 +6,22 @@ export default (children, template, isDropcapDisabled) => {
     template,
     isDropcapDisabled
   );
-  if (newContent.length > 0 && newContent[0].name === "dropCap") {
+  const dropCapChild =
+    newContent.length > 0 && newContent.find(child => child.name === "dropCap");
+
+  if (dropCapChild) {
     // remove the wrapping paragraph
-    newContent[0].children = newContent[0].children[0].children.slice(0, 1);
-    newContent[1].children = [newContent[0], ...newContent[1].children];
-    return newContent.slice(1);
+    const dropCapIndex = newContent.indexOf(dropCapChild);
+    newContent[dropCapIndex].children = newContent[
+      dropCapIndex
+    ].children[0].children.slice(0, 1);
+    newContent[dropCapIndex + 1].children = [
+      newContent[dropCapIndex],
+      ...newContent[dropCapIndex + 1].children
+    ];
+    newContent.splice(dropCapIndex, 1);
+
+    return newContent;
   }
   return newContent;
 };

@@ -3,6 +3,68 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.15.22](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.15.21...@times-components/ssr@2.15.22) (2020-03-10)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.15.21](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.15.20...@times-components/ssr@2.15.21) (2020-03-10)
+
+
+### Bug Fixes
+
+* deps ([#2552](https://github.com/newsuk/times-components/issues/2552)) ([60d16c2](https://github.com/newsuk/times-components/commit/60d16c261d9c763ad5d533fca43534710a32fcff))
+
+
+
+
+
+## [2.15.20](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.15.19...@times-components/ssr@2.15.20) (2020-03-10)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.15.19](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.15.18...@times-components/ssr@2.15.19) (2020-03-09)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.15.18](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.15.17...@times-components/ssr@2.15.18) (2020-03-06)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
+## [2.15.17](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.15.16...@times-components/ssr@2.15.17) (2020-03-04)
+
+
+### Bug Fixes
+
+* issue with topics ([#2546](https://github.com/newsuk/times-components/issues/2546)) ([3e4f806](https://github.com/newsuk/times-components/commit/3e4f8062f51216e3833e03da12a166d2059d0687))
+
+
+
+
+
+## [2.15.16](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.15.15...@times-components/ssr@2.15.16) (2020-03-04)
+
+**Note:** Version bump only for package @times-components/ssr
+
+
+
+
+
 ## [2.15.15](https://github.com/newsuk/times-components/compare/@times-components/ssr@2.15.14...@times-components/ssr@2.15.15) (2020-03-03)
 
 **Note:** Version bump only for package @times-components/ssr

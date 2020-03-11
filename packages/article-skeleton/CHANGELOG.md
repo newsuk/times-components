@@ -3,6 +3,63 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.32.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.32.2...@times-components/article-skeleton@1.32.3) (2020-03-10)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.32.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.32.1...@times-components/article-skeleton@1.32.2) (2020-03-10)
+
+
+### Bug Fixes
+
+* deps ([#2552](https://github.com/newsuk/times-components/issues/2552)) ([60d16c2](https://github.com/newsuk/times-components/commit/60d16c261d9c763ad5d533fca43534710a32fcff))
+
+
+
+
+
+## [1.32.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.32.0...@times-components/article-skeleton@1.32.1) (2020-03-10)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+# [1.32.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.31.3...@times-components/article-skeleton@1.32.0) (2020-03-09)
+
+
+### Features
+
+* native images add predefined widths ([#2549](https://github.com/newsuk/times-components/issues/2549)) ([3f81784](https://github.com/newsuk/times-components/commit/3f81784192ac60d6f14df4df11610122caef049f))
+
+
+
+
+
+## [1.31.3](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.31.2...@times-components/article-skeleton@1.31.3) (2020-03-06)
+
+**Note:** Version bump only for package @times-components/article-skeleton
+
+
+
+
+
+## [1.31.2](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.31.1...@times-components/article-skeleton@1.31.2) (2020-03-04)
+
+
+### Bug Fixes
+
+* (TNLT-400) dropcap web handling ([#2542](https://github.com/newsuk/times-components/issues/2542)) ([190b013](https://github.com/newsuk/times-components/commit/190b0130e62773bce0489fc1aa75d04c01f09431))
+
+
+
+
+
 ## [1.31.1](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.31.0...@times-components/article-skeleton@1.31.1) (2020-03-03)
 
 **Note:** Version bump only for package @times-components/article-skeleton

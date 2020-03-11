@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.11.5](https://github.com/newsuk/times-components/compare/@times-components/ad@2.11.4...@times-components/ad@2.11.5) (2020-03-10)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.11.4](https://github.com/newsuk/times-components/compare/@times-components/ad@2.11.3...@times-components/ad@2.11.4) (2020-03-10)
+
+
+### Bug Fixes
+
+* deps ([#2552](https://github.com/newsuk/times-components/issues/2552)) ([60d16c2](https://github.com/newsuk/times-components/commit/60d16c261d9c763ad5d533fca43534710a32fcff))
+
+
+
+
+
+## [2.11.3](https://github.com/newsuk/times-components/compare/@times-components/ad@2.11.2...@times-components/ad@2.11.3) (2020-03-10)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
+## [2.11.2](https://github.com/newsuk/times-components/compare/@times-components/ad@2.11.1...@times-components/ad@2.11.2) (2020-03-09)
+
+**Note:** Version bump only for package @times-components/ad
+
+
+
+
+
 ## [2.11.1](https://github.com/newsuk/times-components/compare/@times-components/ad@2.11.0...@times-components/ad@2.11.1) (2020-02-24)
 
 **Note:** Version bump only for package @times-components/ad
