@@ -1,5 +1,6 @@
 import React from "react";
 import { Platform } from "react-native";
+import PropTypes from "prop-types";
 
 import Image from "@times-components/image";
 import InteractiveWrapper from "@times-components/interactive-wrapper";
@@ -27,9 +28,9 @@ function onSignUpClick() {
   }
 }
 
-const InlineNewsletterPuff = props => {
-  const { label, headline, copy } = { ...props };
+const InlineNewsletterPuff = ({ label, headline, copy }) => {
   const isSubscribed = false;
+
   return (
     <InpContainer>
       <InpImageContainer>
@@ -43,7 +44,16 @@ const InlineNewsletterPuff = props => {
         <InpLabel>{label}</InpLabel>
         <InpHeadline>{headline}</InpHeadline>
         <InpCopy>{copy}</InpCopy>
-        {!isSubscribed ? (
+        {isSubscribed ? (
+          <PreferencesContainer>
+            <PreferencesText>
+              Manage preferences here
+              <IconContainer>
+                <IconForwardArrow fillColour={colours.functional.action} />
+              </IconContainer>
+            </PreferencesText>
+          </PreferencesContainer>
+        ) : (
           <SignupContainer>
             <Link
               url="https://home.thetimes.co.uk/myNews"
@@ -54,19 +64,16 @@ const InlineNewsletterPuff = props => {
               </Signup>
             </Link>
           </SignupContainer>
-        ) : (
-          <PreferencesContainer>
-            <PreferencesText>
-              Manage preferences here
-              <IconContainer>
-                <IconForwardArrow fillColour={colours.functional.action} />
-              </IconContainer>
-            </PreferencesText>
-          </PreferencesContainer>
         )}
       </InpTextEditor>
     </InpContainer>
   );
+};
+
+InlineNewsletterPuff.propTypes = {
+  label: PropTypes.string.isRequired,
+  headline: PropTypes.string.isRequired,
+  copy: PropTypes.string.isRequired
 };
 
 export default InlineNewsletterPuff;
