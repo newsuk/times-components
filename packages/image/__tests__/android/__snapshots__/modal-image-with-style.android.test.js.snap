@@ -19,6 +19,7 @@ exports[`1. landscape default modal 1`] = `
           Object {
             "padding": 20,
             "position": "absolute",
+            "right": 5,
             "top": 0,
             "zIndex": 2,
           }
@@ -145,6 +146,7 @@ exports[`2. portrait default modal 1`] = `
           Object {
             "padding": 20,
             "position": "absolute",
+            "right": 5,
             "top": 0,
             "zIndex": 2,
           }
@@ -271,6 +273,7 @@ exports[`3. tablet landscape default modal 1`] = `
           Object {
             "padding": 20,
             "position": "absolute",
+            "right": 5,
             "top": 0,
             "zIndex": 2,
           }
@@ -397,6 +400,7 @@ exports[`4. tablet portrait default modal 1`] = `
           Object {
             "padding": 20,
             "position": "absolute",
+            "right": 5,
             "top": 0,
             "zIndex": 2,
           }

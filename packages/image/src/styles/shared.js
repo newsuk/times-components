@@ -16,6 +16,7 @@ const styles = {
     padding: spacing(3),
     position: "absolute",
     top: 0,
+    right: 5,
     zIndex: 2
   },
   buttonContainerTablet: {
