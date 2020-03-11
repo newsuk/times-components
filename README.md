@@ -6,14 +6,14 @@
 ### Purpose
 
 Home of The Times' `react`/`react native` components, using
-[react-native-web](https://github.com/necolas/react-native-web) to share across
-platforms
+[react-native-web](https://github.com/necolas/react-native-web) to share across platforms
 
 ### Dev Environment
 
-We require MacOS with [Node.js](https://nodejs.org) (version >=8.10.0 < 10> with npm v5),
-[yarn](https://yarnpkg.com) (latest) and
-[watchman](https://facebook.github.io/watchman) installed. Native development
+We require MacOS with [Node.js](https://nodejs.org) (for specific version please check package.json restrictions),
+[yarn](https://yarnpkg.com) (latest)
+
+Native development
 requires [Xcode](https://developer.apple.com/xcode),
 [Android Studio](https://developer.android.com/studio/index.html),
 [JDK 8](http://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html) and
@@ -102,14 +102,6 @@ To debug our native Storybook:
 ## Link times-components to the Render project
 
 Follow these steps [here](https://github.com/newsuk/cps-content-render#locally-mount-your-custom-build-of-times-components)
-
-## Testing and code coverage
-
-| Tests                                      | Covered            | CI                                                            |
-| ------------------------------------------ | ------------------ | ------------------------------------------------------------- |
-| Unit tests, UI tests and Integration tests | :white_check_mark: | [Travis Build](https://travis-ci.org/newsuk/times-components) |
-| Visual Regression tool (Dextrose)          | :white_check_mark: | Not automated                                                 |
-| Functional Regression tool (Fructose)      | :white_check_mark: | Not automated                                                 |
 
 ## Debugging the tests
 
