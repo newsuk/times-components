@@ -9,17 +9,20 @@ import Link from "@times-components/link";
 import { colours } from "@times-components/styleguide";
 import {
   InpContainer,
-  InpImageContainer,
-  InpTextEditor,
-  InpLabel,
-  InpHeadline,
   InpCopy,
-  SignupContainer,
-  Signup,
-  SignupText,
-  PreferencesContainer,
-  PreferencesText,
-  IconContainer
+  InpIconContainer,
+  InpImageContainer,
+  InpPreferencesContainer,
+  InpPreferencesText,
+  InpSignup,
+  InpSignupContainer,
+  InpSignupCTAContainer,
+  InpSignupHeadline,
+  InpSignupLabel,
+  InpSignupText,
+  InpSubcribedCopy,
+  InpSubcribedHeadline,
+  InpSubscribedContainer
 } from "../styles/inline-newsletter-puff";
 
 function onSignUpClick() {
@@ -39,33 +42,41 @@ const InlineNewsletterPuff = ({ label, headline, copy }) => {
           uri="https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/2aa9050e6c3d4de682f11a4802ebba96.jpg"
         />
       </InpImageContainer>
-
-      <InpTextEditor>
-        <InpLabel>{label}</InpLabel>
-        <InpHeadline>{headline}</InpHeadline>
-        <InpCopy>{copy}</InpCopy>
-        {isSubscribed ? (
-          <PreferencesContainer>
-            <PreferencesText>
-              Manage preferences here
-              <IconContainer>
+      {!isSubscribed ? (
+        <InpSubscribedContainer>
+          {/* eslint-disable-next-line */}
+          <InpSubcribedHeadline>
+            You've successfully signed up
+          </InpSubcribedHeadline>
+          <InpSubcribedCopy>
+            Congratulations you can now enjoy daily updates from Red Box.
+          </InpSubcribedCopy>
+          <InpPreferencesContainer>
+            <InpPreferencesText>
+              {"Manage preferences here"}
+              <InpIconContainer>
                 <IconForwardArrow fillColour={colours.functional.action} />
-              </IconContainer>
-            </PreferencesText>
-          </PreferencesContainer>
-        ) : (
-          <SignupContainer>
+              </InpIconContainer>
+            </InpPreferencesText>
+          </InpPreferencesContainer>
+        </InpSubscribedContainer>
+      ) : (
+        <InpSignupContainer>
+          <InpSignupLabel>{label}</InpSignupLabel>
+          <InpSignupHeadline>{headline}</InpSignupHeadline>
+          <InpCopy>{copy}</InpCopy>
+          <InpSignupCTAContainer>
             <Link
               url="https://home.thetimes.co.uk/myNews"
               onPress={onSignUpClick}
             >
-              <Signup>
-                <SignupText>Sign up to newsletter</SignupText>
-              </Signup>
+              <InpSignup>
+                <InpSignupText>Sign up to newsletter</InpSignupText>
+              </InpSignup>
             </Link>
-          </SignupContainer>
-        )}
-      </InpTextEditor>
+          </InpSignupCTAContainer>
+        </InpSignupContainer>
+      )}
     </InpContainer>
   );
 };

@@ -25,26 +25,56 @@ export const InpContainer = styled(View)`
     width: 56.2%;
   }
 `;
+
 export const InpImageContainer = styled(View)`
   @media (min-width: ${breakpoints.medium}px) {
     width: 45%;
   }
 `;
 
-export const InpTextEditor = styled(View)`
+export const InpSubscribedContainer = styled(View)`
   justify-content: center;
-  padding-top: ${spacing(4)};
-  padding-right: ${spacing(4)};
-  padding-bottom: ${spacing(4)};
-  padding-left: ${spacing(4)};
+  padding: ${spacing(9)}px ${spacing(8)}px;
   @media (min-width: ${breakpoints.small}px) {
-    padding-right: ${spacing(0)};
-    padding-left: ${spacing(0)};
+    padding: ${spacing(0)} ${spacing(1)};
     flex: 1;
   }
 `;
 
-export const InpLabel = styled(Text)`
+export const InpSubcribedHeadline = styled(Text)`
+  color: ${colours.functional.brandColour};
+  font-family: ${fonts.headline};
+  text-align: center;
+  font-size: ${fontSizes.newsletterPuffHeadline}px;
+  text-decoration: none;
+  margin-bottom: ${spacing(2)};
+`;
+
+export const InpSubcribedCopy = styled(Text)`
+  font-family: ${fonts.body};
+  font-size: ${fontSizes.newsletterPuffCopy}px;
+  text-align: center;
+  color: ${colours.functional.primary};
+  margin-bottom: ${spacing(2)};
+  @media (min-width: ${breakpoints.small}px) {
+    padding: ${spacing(0)} ${spacing(1)};
+    margin-bottom: ${spacing(1)};
+  }
+  @media (min-width: ${breakpoints.medium}px) {
+    padding: ${spacing(0)} ${spacing(4)};
+  }
+`;
+
+export const InpSignupContainer = styled(View)`
+  justify-content: center;
+  padding: ${spacing(4)}px;
+  @media (min-width: ${breakpoints.small}px) {
+    padding: ${spacing(0)} ${spacing(4)};
+    flex: 1;
+  }
+`;
+
+export const InpSignupLabel = styled(Text)`
   font-family: ${fonts.supporting};
   font-size: ${fontSizes.newsletterPuffLabel}px;
   letter-spacing: 1px;
@@ -54,7 +84,7 @@ export const InpLabel = styled(Text)`
   margin-bottom: ${spacing(1)};
 `;
 
-export const InpHeadline = styled(Text)`
+export const InpSignupHeadline = styled(Text)`
   color: ${colours.functional.brandColour};
   font-family: ${fonts.headline};
   text-align: center;
@@ -71,14 +101,14 @@ export const InpCopy = styled(Text)`
   margin-bottom: ${spacing(3)};
 `;
 
-export const SignupContainer = styled(View)`
+export const InpSignupCTAContainer = styled(View)`
   @media (min-width: ${breakpoints.medium}px) {
     width: 220px;
     margin: 0px auto;
   }
 `;
 
-export const Signup = styled(View)`
+export const InpSignup = styled(View)`
   border-width: 2px;
   border-style: solid;
   border-color: ${colours.functional.brandColour};
@@ -89,21 +119,21 @@ export const Signup = styled(View)`
   align-items: center;
 `;
 
-export const SignupText = styled(Text)`
+export const InpSignupText = styled(Text)`
   font-size: ${fontSizes.newsletterPuffCopy}px;
   font-family: ${fonts.supporting};
 `;
 
-export const PreferencesContainer = styled(View)`
+export const InpPreferencesContainer = styled(View)`
   flex-direction: row;
   justify-content: center;
 `;
 
-export const PreferencesText = styled(Text)`
+export const InpPreferencesText = styled(Text)`
   color: ${colours.functional.action};
 `;
 
-export const IconContainer = styled(View)`
+export const InpIconContainer = styled(View)`
   padding-left: 5px;
   padding-top: 6px;
 `;
