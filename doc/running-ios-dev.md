@@ -2,14 +2,14 @@
 
 ## Prequisites
 * clone https://github.com/newsuk/times-components
-* clone https://github.com/newsuk/nu-digital-projectd-times-smartphone-ios/
+* clone https://github.com/newsuk/nuk-tnl-app-ios-universal/
 * brew install cocoapods (https://brew.sh)
 
 The directory structure should look like:
 ```
 root
   | -> times-components
-  | -> nu-digital-projectd-times-smartphone-ios
+  | -> nuk-tnl-app-ios-universal
 ```
 
 ## Set up Times-Components
@@ -20,7 +20,7 @@ GRAPHQL_ENDPOINT="https://api.thetimes.co.uk/graphql" yarn
 
 ## Set up the IOS App
 ```
-cd nu-digital-projectd-times-smartphone-ios
+cd nuk-tnl-app-ios-universal
 pod update
 ```
 

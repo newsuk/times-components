@@ -21,13 +21,13 @@ on-the-fly bundles for the react development.
 
 ### Prerequisites
 
-- Get the latest code on `develop` for [nu-digital-projectd-times-smartphone-ios](https://github.com/newsuk/nu-digital-projectd-times-smartphone-ios)
+- Get the latest code on `develop` for [nuk-tnl-app-ios-universal](https://github.com/newsuk/nuk-tnl-app-ios-universal)
 - Get the latest Xcode [here](https://developer.apple.com/xcode/)
 
 ### Step-by-step Guide
 
 - Run `yarn ios:app` in `times-components` to bundles the latest code on-the-fly once the emulator request a bundle.
-- Open `TheTimesProjectD.xcworkspace` from [nu-digital-projectd-times-smartphone-ios](https://github.com/newsuk/nu-digital-projectd-times-smartphone-ios) in Xcode.
+- Open `TheTimesProjectD.xcworkspace` from [nuk-tnl-app-ios-universal](https://github.com/newsuk/nuk-tnl-app-ios-universal) in Xcode.
 - In Xcode, click `TheTimes` next to the play/stop icons.
 - Edit Scheme... -> Run -> Arguments -> Tick the `REACT_DEV_DEBUG_MODE` checkbox.
 - Run the application with Xcode.
@@ -36,4 +36,4 @@ on-the-fly bundles for the react development.
 
 ### Upgrade Times Component in the iOS app
 
-see [Readme](https://github.com/newsuk/nu-digital-projectd-times-smartphone-ios/blob/develop/README.md)
+see [Readme](https://github.com/newsuk/nuk-tnl-app-ios-universal/blob/develop/README.md)
