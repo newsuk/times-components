@@ -17,7 +17,7 @@ import renderTrees from "@times-components/markup-forest";
 import { AspectRatioContainer } from "@times-components/utils";
 import ArticleLink from "./article-link";
 import InsetCaption from "./inset-caption";
-import InlineNewsletterPuff from './inline-newsletter-puff'
+import InlineNewsletterPuff from "./inline-newsletter-puff";
 import {
   PrimaryImg,
   SecondaryImg,
@@ -110,14 +110,21 @@ const renderers = ({ paidContentClassName, template }) => ({
   interactive(key, { url, element, display }) {
     const { attributes, value } = element;
 
-        switch (value) {
-        case "newsletter-puff": {
-          const copy = decodeURIComponent(attributes.copy)
-          const label = decodeURIComponent(attributes.label)
-          const headline = decodeURIComponent(attributes.headline)
+    switch (value) {
+      case "newsletter-puff": {
+        const copy = decodeURIComponent(attributes.copy);
+        const label = decodeURIComponent(attributes.label);
+        const headline = decodeURIComponent(attributes.headline);
         return (
-            <InlineNewsletterPuff key={key} newsletterId={attributes.newsletterId} copy={copy} label={label} headline={headline} />
-        );}
+          <InlineNewsletterPuff
+            key={key}
+            newsletterId={attributes.newsletterId}
+            copy={copy}
+            label={label}
+            headline={headline}
+          />
+        );
+      }
       default:
         return (
           <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>

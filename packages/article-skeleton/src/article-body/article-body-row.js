@@ -16,7 +16,7 @@ import ArticleParagraph from "./article-body-paragraph";
 import InsetCaption from "./inset-caption";
 import styleFactory from "../styles/article-body";
 import ArticleLink from "./article-link";
-import InlineNewsletterPuff from './inline-newsletter-puff';
+import InlineNewsletterPuff from "./inline-newsletter-puff";
 
 export default ({
   data,
@@ -248,22 +248,19 @@ export default ({
             key={key}
           />
         );
-      }   
-      if (
-        element &&
-        element.value === "newsletter-puff"
-      ) {
-        const copy = decodeURIComponent(element.attributes.copy)
-        const label = decodeURIComponent(element.attributes.label)
-        const headline = decodeURIComponent(element.attributes.headline)  
-              
+      }
+      if (element && element.value === "newsletter-puff") {
+        const copy = decodeURIComponent(element.attributes.copy);
+        const label = decodeURIComponent(element.attributes.label);
+        const headline = decodeURIComponent(element.attributes.headline);
+
         return (
           <InlineNewsletterPuff
             newsletterId={element.attributes.newsletterId}
             key={key}
-            label={label} 
+            label={label}
             headline={headline}
-            copy={copy} 
+            copy={copy}
           />
         );
       }
