@@ -75,7 +75,6 @@
   },
   "dependencies": {
     "@times-components/error-view": "2.3.36",
-    "@times-components/gradient": "3.2.36",
     "@times-components/icons": "2.14.37",
     "@times-components/image": "6.7.13",
     "@times-components/styleguide": "3.37.3",

@@ -13,9 +13,6 @@ import Video from "../src/video";
 import defaultVideoProps from "./default-video-props";
 
 jest.mock("@times-components/image", () => "Image");
-jest.mock("@times-components/gradient", () => ({
-  OverlayGradient: "OverlayGradient"
-}));
 
 // eslint-disable-next-line global-require
 jest.mock("@times-components/svgs", () => require("./mock-svg"));
