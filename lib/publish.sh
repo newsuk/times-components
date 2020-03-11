@@ -29,6 +29,6 @@ npx lerna publish --conventional-commits --yes --concurrency=1 --exact -m "$MESS
 
 # push above changes to git
 echo "Pushing to master"
-git config user.name "Publish Bot"
-git config user.email "publish@ghbot.com"
+git config user.name "times-tools"
+git config user.email "tools@news.co.uk"
 git push origin master --tags --quiet > /dev/null 2>&1
