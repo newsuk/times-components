@@ -58,7 +58,7 @@
     "@times-components/image": "6.7.14",
     "@times-components/jest-serializer": "3.2.23",
     "@times-components/test-utils": "2.3.8",
-    "@times-components/utils": "6.3.3",
+    "@times-components/utils": "6.3.4",
     "@times-components/video": "4.10.8",
     "prop-types": "15.7.2"
   },
