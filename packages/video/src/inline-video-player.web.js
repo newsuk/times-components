@@ -2,46 +2,45 @@
 import React, { Component, Fragment } from "react";
 import { appendToImageURL } from "@times-components/utils";
 import { propTypes, defaultProps } from "./video-prop-types";
-import SkySportsBanner from "./sky-sports-banner";
 import Video360Icon from "./video-360-icon";
 
 const css = `
-div[data-is-360="true"] button.vjs-big-play-button {
-  display: none !important;
-}
+  div[data-is-360="true"] button.vjs-big-play-button {
+    display: none !important;
+  }
 
-.video-js .vjs-big-play-button {
-  width: 70px;
-  height: 70px;
-  margin-top: -35px;
-  margin-left: -35px;
+  .video-js .vjs-big-play-button {
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-left: -35px;
 
-  background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.4);
 
-  line-height: 65px;
+    line-height: 65px;
 
-  border-radius: 0;
-  border-style: solid;
-  border-width: 3px;
-  border-color: white;
-}
+    border-radius: 0;
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+  }
 
-.video-js .vjs-big-play-button:before {
-  font-size: 60px;
-  left: -2px;
-}
+  .video-js .vjs-big-play-button:before {
+    font-size: 60px;
+    left: -2px;
+  }
 
-.video-js .vjs-dock-text {
-  visibility: hidden;
-}
+  .video-js .vjs-dock-text {
+    visibility: hidden;
+  }
 
-.video-js .vjs-poster {
-  background-size: cover;
-}
+  .video-js .vjs-poster {
+    background-size: cover;
+  }
 
-.video-js .vjs-tech {
-  position: relative;
-}
+  .video-js .vjs-tech {
+    position: relative;
+  }
 `;
 
 class InlineVideoPlayer extends Component {
@@ -167,7 +166,6 @@ class InlineVideoPlayer extends Component {
       videoId,
       accountId,
       playerId,
-      skySports,
       is360
     } = this.props;
     const { error, hasVideoPlayed } = this.state;
@@ -184,12 +182,7 @@ class InlineVideoPlayer extends Component {
         style={{ height, width }}
       >
         <div style={{ height, width, position: "relative" }}>
-          {!hasVideoPlayed && (
-            <Fragment>
-              {skySports && <SkySportsBanner />}
-              {is360 && <Video360Icon />}
-            </Fragment>
-          )}
+          {!hasVideoPlayed && <Fragment>{is360 && <Video360Icon />}</Fragment>}
           <video
             id={this.id}
             style={{ height, width }}

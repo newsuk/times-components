@@ -20,8 +20,7 @@ const ArticleLeadAssetVideo = ({
   const {
     brightcoveVideoId,
     brightcovePolicyKey,
-    brightcoveAccountId,
-    skySports
+    brightcoveAccountId
   } = leadAsset;
   const height = width / aspectRatio;
 
@@ -32,7 +31,6 @@ const ArticleLeadAssetVideo = ({
       onVideoPress={onVideoPress}
       policyKey={brightcovePolicyKey}
       poster={{ uri }}
-      skySports={skySports}
       videoId={brightcoveVideoId}
       width={width}
       relativeWidth={relativeWidth}

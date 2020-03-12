@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.9.37](https://github.com/newsuk/times-components/compare/@times-components/article-flag@2.9.36...@times-components/article-flag@2.9.37) (2020-03-12)
+
+**Note:** Version bump only for package @times-components/article-flag
+
+
+
+
+
 ## [2.9.36](https://github.com/newsuk/times-components/compare/@times-components/article-flag@2.9.35...@times-components/article-flag@2.9.36) (2020-03-10)
 
 

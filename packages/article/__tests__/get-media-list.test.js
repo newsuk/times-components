@@ -18,8 +18,7 @@ const content = [
   {
     attributes: {
       caption: "caption",
-      posterImageUrl: "image.com",
-      skySports: false
+      posterImageUrl: "image.com"
     },
     name: "video"
   }
@@ -34,7 +33,6 @@ const videoLeadAsset = {
     },
     title: ""
   },
-  skySports: false,
   type: "Video"
 };
 
@@ -79,8 +77,7 @@ describe("getMediaList", () => {
         name: "inlineVideo",
         value: {
           caption: "caption",
-          posterImageUrl: "image.com",
-          skySports: false
+          posterImageUrl: "image.com"
         }
       }
     ];
@@ -104,7 +101,6 @@ describe("getMediaList", () => {
             },
             title: ""
           },
-          skySports: false,
           type: "Video"
         }
       },
@@ -122,8 +118,7 @@ describe("getMediaList", () => {
         name: "inlineVideo",
         value: {
           caption: "caption",
-          posterImageUrl: "image.com",
-          skySports: false
+          posterImageUrl: "image.com"
         }
       }
     ];
@@ -150,8 +145,7 @@ describe("getMediaList", () => {
         name: "inlineVideo",
         value: {
           caption: "caption",
-          posterImageUrl: "image.com",
-          skySports: false
+          posterImageUrl: "image.com"
         }
       }
     ];
@@ -176,7 +170,6 @@ describe("getMediaList", () => {
             },
             title: ""
           },
-          skySports: false,
           type: "Video"
         }
       }
@@ -202,7 +195,6 @@ describe("getMediaList", () => {
             },
             title: ""
           },
-          skySports: false,
           type: "Video"
         }
       }

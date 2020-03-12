@@ -21,14 +21,13 @@ const getMediaList = (content, leadAsset) => {
     let inlineMedia;
 
     if (item.name === "video") {
-      const { caption, posterImageUrl, skySports } = item.attributes;
+      const { caption, posterImageUrl } = item.attributes;
       inlineMedia = {
         index,
         name: "inlineVideo",
         value: {
           caption,
-          posterImageUrl,
-          skySports
+          posterImageUrl
         }
       };
     } else {

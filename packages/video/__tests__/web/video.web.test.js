@@ -39,29 +39,6 @@ addSerializers(
 
 const tests = [
   {
-    name: "video marked as sky sports",
-    test: () => {
-      const testInstance = TestRenderer.create(
-        <Video {...defaultVideoProps} skySports />
-      );
-
-      expect(testInstance.toJSON()).toMatchSnapshot();
-    }
-  },
-  {
-    name: "no sky banner displayed on play",
-    test: () => {
-      const testInstance = TestRenderer.create(
-        <Video {...defaultVideoProps} skySports />
-      );
-
-      const VideoComponent = testInstance.root.findAllByType(InlineVideoPlayer);
-      VideoComponent[0].instance.handlePlay();
-
-      expect(testInstance).toMatchSnapshot();
-    }
-  },
-  {
     name: "360 video",
     test: () => {
       const testInstance = TestRenderer.create(

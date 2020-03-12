@@ -25,7 +25,6 @@ const videoLeadAsset = {
   brightcovePolicyKey:
     "BCpkADawqM0NK0Rq8n6sEQyWykemrqeSmIQqqVt3XBrdpl8TYlvqN3hwKphBJRnkPgx6WAbozCW_VgTOBCNf1AQRh8KnmXSXfveQalRc5-pyNlSod5XzP99If2U",
   brightcoveVideoId: "5831024132001",
-  paidOnly: "false",
   posterImage: imageLeadAsset
 };
 

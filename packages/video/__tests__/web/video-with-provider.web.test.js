@@ -44,53 +44,13 @@ addSerializers(
   )
 );
 
-const testSubscriberAndVideoPaidStatus = ({
-  subscriberIsPaid = true,
-  videoIsPaidOnly = true
-}) => {
-  const testInstance = TestRenderer.create(
-    <IsPaidSubscriber.Provider value={subscriberIsPaid}>
-      <Video {...defaultWebVideoProps} paidOnly={videoIsPaidOnly} />
-    </IsPaidSubscriber.Provider>
-  );
-
-  expect(testInstance.toJSON()).toMatchSnapshot();
-};
-
 const tests = [
-  {
-    name: "paidOnly video for unpaid users",
-    test: () => {
-      testSubscriberAndVideoPaidStatus({ subscriberIsPaid: false });
-    }
-  },
-  {
-    name: "paidOnly video for paid users",
-    test: () => {
-      testSubscriberAndVideoPaidStatus({});
-    }
-  },
-  {
-    name: "non-paidOnly video for unpaid users",
-    test: () => {
-      testSubscriberAndVideoPaidStatus({
-        subscriberIsPaid: false,
-        videoIsPaidOnly: false
-      });
-    }
-  },
-  {
-    name: "non-paidOnly video for paid users",
-    test: () => {
-      testSubscriberAndVideoPaidStatus({ videoIsPaidOnly: false });
-    }
-  },
   {
     name: "video without a poster image",
     test: () => {
       const testInstance = TestRenderer.create(
         <IsPaidSubscriber.Provider value>
-          <Video {...defaultWebVideoProps} paidOnly={false} poster={null} />
+          <Video {...defaultWebVideoProps} poster={null} />
         </IsPaidSubscriber.Provider>
       );
 

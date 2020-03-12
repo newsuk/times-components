@@ -328,8 +328,7 @@ export default ({
         brightcoveVideoId,
         brightcoveAccountId,
         posterImageUrl,
-        caption,
-        skySports
+        caption
       }
     ) {
       const aspectRatio = 16 / 9;
@@ -346,7 +345,6 @@ export default ({
             onVideoPress={onVideoPress}
             policyKey={brightcovePolicyKey}
             poster={{ uri: posterImageUrl }}
-            skySports={skySports}
             videoId={brightcoveVideoId}
             width={screenW}
           />

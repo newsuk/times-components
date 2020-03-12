@@ -8,11 +8,8 @@ import VideoError from "./video-error";
 import { propTypes, defaultProps } from "./video-prop-types";
 import styles from "./styles";
 
-export const isPaidOnly = paidOnlyValue =>
-  paidOnlyValue === "false" ? false : !!paidOnlyValue;
-
 const Video = props => {
-  const { height, paidOnly, poster, width } = props;
+  const { height, poster, width } = props;
   return (
     <ErrorView>
       {({ hasError }) =>
@@ -21,7 +18,7 @@ const Video = props => {
         ) : (
           <IsPaidSubscriber.Consumer>
             {isPaidSubscriber =>
-              isPaidOnly(paidOnly) && !isPaidSubscriber ? (
+              !isPaidSubscriber ? (
                 <View
                   style={{
                     height,
