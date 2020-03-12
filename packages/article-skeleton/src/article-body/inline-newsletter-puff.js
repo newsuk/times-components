@@ -44,9 +44,8 @@ const InlineNewsletterPuff = ({ label, headline, copy }) => {
       </InpImageContainer>
       {!isSubscribed ? (
         <InpSubscribedContainer>
-          {/* eslint-disable-next-line */}
           <InpSubcribedHeadline>
-            You've successfully signed up
+            You’ve successfully signed up
           </InpSubcribedHeadline>
           <InpSubcribedCopy>
             Congratulations you can now enjoy daily updates from Red Box.
