@@ -51,32 +51,32 @@
     "jsdom": "9.12.0",
     "lodash.merge": "4.6.2",
     "prettier": "1.14.3",
-    "react": "16.9.0",
-    "react-dom": "16.9.0",
-    "react-native": "0.61.1",
-    "react-test-renderer": "16.9.0",
+    "react": "16.13.0",
+    "react-dom": "16.13.0",
+    "react-native": "0.61.5",
+    "react-test-renderer": "16.13.0",
     "webpack": "4.30.0",
     "webpack-cli": "3.3.1"
   },
   "dependencies": {
-    "@react-native-community/netinfo": "5.3.3",
+    "@react-native-community/netinfo": "5.6.2",
     "@skele/components": "1.0.0-alpha.40",
     "@times-components/styleguide": "3.38.0",
     "@times-components/utils": "6.3.6",
     "prop-types": "15.7.2",
     "react-broadcast": "0.5.2",
-    "react-native-device-info": "5.3.1",
+    "react-native-device-info": "5.5.3",
     "react-native-webview": "7.0.5"
   },
   "resolutions": {
-    "react": "16.9.0",
-    "react-dom": "16.9.0"
+    "react": "16.13.0",
+    "react-dom": "16.13.0"
   },
   "peerDependencies": {
     "react": ">=16.9",
     "react-dom": ">=16.9",
     "react-native": ">=0.59",
-    "react-native-web": "0.11.4"
+    "react-native-web": "0.12.2"
   },
   "publishConfig": {
     "access": "public"

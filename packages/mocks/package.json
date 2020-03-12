@@ -41,17 +41,17 @@
     "eslint": "5.9.0",
     "jest": "24.8.0",
     "prettier": "1.14.3",
-    "react": "16.9.0",
-    "react-native": "0.61.1"
+    "react": "16.13.0",
+    "react-native": "0.61.5"
   },
   "resolutions": {
-    "react": "16.9.0",
-    "react-dom": "16.9.0"
+    "react": "16.13.0",
+    "react-dom": "16.13.0"
   },
   "peerDependencies": {
     "react": ">=16.5",
     "react-native": ">=0.59",
-    "react-native-web": "0.11.4"
+    "react-native-web": "0.12.2"
   },
   "publishConfig": {
     "access": "public"

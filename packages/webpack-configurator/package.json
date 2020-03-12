@@ -47,12 +47,12 @@
     "prettier": "1.14.3"
   },
   "resolutions": {
-    "react": "16.9.0",
-    "react-dom": "16.9.0"
+    "react": "16.13.0",
+    "react-dom": "16.13.0"
   },
   "peerDependencies": {
     "babel-loader": "8.0.5",
-    "react-native-web": "0.11.4",
+    "react-native-web": "0.12.2",
     "webpack": ">=4.30.0"
   },
   "publishConfig": {
