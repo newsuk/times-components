@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { View, Text } from "react-native";
 import {
   breakpoints,
   colours,
@@ -6,7 +7,6 @@ import {
   fontSizes,
   spacing
 } from "@times-components/styleguide";
-import { View, Text } from "react-native";
 
 export const InpContainer = styled(View)`
   background-color: ${colours.functional.newsletterPuffBackground};

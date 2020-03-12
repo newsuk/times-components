@@ -118,7 +118,11 @@ const renderers = ({ paidContentClassName, template }) => ({
         return (
           <InlineNewsletterPuff
             key={key}
+            // When the GeaphQL service is ready newsletterId will be passed as prop
+            // and with that we are going to check it the user is subscribed to
+            // this newsletter or not
             newsletterId={attributes.newsletterId}
+            isSubscribedToNewsletter={false}
             copy={copy}
             label={label}
             headline={headline}

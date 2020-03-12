@@ -1,13 +1,9 @@
 import React from "react";
-import { View } from "react-native";
 import TestRenderer from "react-test-renderer";
 
 import InlineNewsletterPuff from "../../src/article-body/inline-newsletter-puff";
 
-jest.mock("@times-components/image", () => ({
-    __esModule: true,
-    Placeholder: () => <View>Mock</View>
-}));
+jest.mock("@times-components/image", () => "Image");
 
 describe("Inline Newsletter Puff", () => {
   const props = {
@@ -17,8 +13,17 @@ describe("Inline Newsletter Puff", () => {
       "Sign up to receive our brilliant Red Box newsletter, Matt Chorley`s poke at politics delivered every weekday morning at 8am."
   };
 
-  it("renders correctly", () => {
-    const component = TestRenderer.create(<InlineNewsletterPuff {...props} />);
+  it("renders the Signup view when the user is NOT subscribed to the newsletter", () => {
+    const component = TestRenderer.create(
+      <InlineNewsletterPuff {...props} isSubscribedToNewsletter={false} />
+    );
+    expect(component).toMatchSnapshot();
+  });
+
+  it("renders the subscribed view when the user is subscribed to the newsletter", () => {
+    const component = TestRenderer.create(
+      <InlineNewsletterPuff {...props} isSubscribedToNewsletter />
+    );
     expect(component).toMatchSnapshot();
   });
 });

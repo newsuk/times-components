@@ -1,0 +1,198 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Inline Newsletter Puff renders the Signup view when the user is NOT subscribed to the newsletter 1`] = `
+<View
+  className="inline-newsletter-puff__InpContainer-sc-13hmjc-0 cJjDiY"
+>
+  <View
+    className="inline-newsletter-puff__InpImageContainer-sc-13hmjc-1 fAjoxv"
+  >
+    <Image
+      aspectRatio={1.42}
+      uri="https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/2aa9050e6c3d4de682f11a4802ebba96.jpg"
+    />
+  </View>
+  <View
+    className="inline-newsletter-puff__InpSignupContainer-sc-13hmjc-5 fhcdpp"
+  >
+    <Text
+      className="inline-newsletter-puff__InpSignupLabel-sc-13hmjc-6 bMAtxh"
+    >
+      STRAIGHT IN YOUR INBOX
+    </Text>
+    <Text
+      className="inline-newsletter-puff__InpSignupHeadline-sc-13hmjc-7 hYPuGW"
+    >
+      Politics. Explained.
+    </Text>
+    <Text
+      className="inline-newsletter-puff__InpCopy-sc-13hmjc-8 jDEpQZ"
+    >
+      Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am.
+    </Text>
+    <View
+      className="inline-newsletter-puff__InpSignupCTAContainer-sc-13hmjc-9 hrIwVO"
+    >
+      <View
+        accessible={true}
+        focusable={true}
+        isTVSelectable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+      >
+        <View
+          className="inline-newsletter-puff__InpSignup-sc-13hmjc-10 imrJVF"
+        >
+          <Text
+            className="inline-newsletter-puff__InpSignupText-sc-13hmjc-11 jaxEiV"
+          >
+            Sign up to newsletter
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Inline Newsletter Puff renders the subscribed view when the user is subscribed to the newsletter 1`] = `
+<View
+  className="inline-newsletter-puff__InpContainer-sc-13hmjc-0 cJjDiY"
+>
+  <View
+    className="inline-newsletter-puff__InpImageContainer-sc-13hmjc-1 fAjoxv"
+  >
+    <Image
+      aspectRatio={1.42}
+      uri="https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/2aa9050e6c3d4de682f11a4802ebba96.jpg"
+    />
+  </View>
+  <View
+    className="inline-newsletter-puff__InpSubscribedContainer-sc-13hmjc-2 jAaZNR"
+  >
+    <Text
+      className="inline-newsletter-puff__InpSubcribedHeadline-sc-13hmjc-3 kSJifc"
+    >
+      You’ve successfully signed up
+    </Text>
+    <Text
+      className="inline-newsletter-puff__InpSubcribedCopy-sc-13hmjc-4 bfNIzF"
+    >
+      Congratulations you can now enjoy daily updates from Red Box.
+    </Text>
+    <View
+      className="inline-newsletter-puff__InpPreferencesContainer-sc-13hmjc-12 cZJpjJ"
+    >
+      <Text
+        className="inline-newsletter-puff__InpPreferencesText-sc-13hmjc-13 eQpQAT"
+      >
+        Manage preferences here
+        <View
+          className="inline-newsletter-puff__InpIconContainer-sc-13hmjc-14 kmTbJd"
+        >
+          <ARTSurfaceView
+            style={
+              Array [
+                undefined,
+                Object {
+                  "height": 14,
+                  "width": 7,
+                },
+              ]
+            }
+          >
+            <ARTGroup
+              opacity={1}
+              transform={
+                Array [
+                  0.11666666666666667,
+                  0,
+                  0,
+                  0.11666666666666667,
+                  -4.9,
+                  -1.4,
+                ]
+              }
+            >
+              <ARTGroup
+                opacity={1}
+                transform={
+                  Array [
+                    1,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                  ]
+                }
+              >
+                <ARTShape
+                  d={
+                    Array [
+                      0,
+                      45.8,
+                      132,
+                      2,
+                      42,
+                      128.2,
+                      2,
+                      74.8,
+                      72,
+                      2,
+                      42,
+                      15.8,
+                      2,
+                      45.8,
+                      12,
+                      2,
+                      102,
+                      72,
+                      1,
+                    ]
+                  }
+                  fill={
+                    Array [
+                      0,
+                      0,
+                      0.4,
+                      0.6,
+                      1,
+                    ]
+                  }
+                  opacity={1}
+                  stroke={null}
+                  strokeCap={1}
+                  strokeDash={null}
+                  strokeJoin={1}
+                  strokeWidth={1}
+                  transform={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                    ]
+                  }
+                />
+              </ARTGroup>
+            </ARTGroup>
+          </ARTSurfaceView>
+        </View>
+      </Text>
+    </View>
+  </View>
+</View>
+`;

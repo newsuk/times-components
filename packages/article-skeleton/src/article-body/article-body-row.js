@@ -253,9 +253,13 @@ export default ({
         const copy = decodeURIComponent(element.attributes.copy);
         const label = decodeURIComponent(element.attributes.label);
         const headline = decodeURIComponent(element.attributes.headline);
-
+        
         return (
           <InlineNewsletterPuff
+            // When the GeaphQL service is ready newsletterId will be passed as prop
+            // and with that we are going to check it the user is subscribed to
+            // this newsletter or not
+            isSubscribedToNewsletter={false}
             newsletterId={element.attributes.newsletterId}
             key={key}
             label={label}
