@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.18.1](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.18.0...@times-components/provider-test-tools@1.18.1) (2020-03-12)
+
+
+### Bug Fixes
+
+* Remove paidOnly and skySports video attributes ([#2555](https://github.com/newsuk/times-components/issues/2555)) ([aff064c](https://github.com/newsuk/times-components/commit/aff064c06c25062763669fe29c6afe124d57803c))
+
+
+
+
+
 # [1.18.0](https://github.com/newsuk/times-components/compare/@times-components/provider-test-tools@1.17.58...@times-components/provider-test-tools@1.18.0) (2020-01-23)
 
 

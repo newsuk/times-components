@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.4.70](https://github.com/newsuk/times-components/compare/@times-components/article@7.4.69...@times-components/article@7.4.70) (2020-03-12)
+
+
+### Bug Fixes
+
+* Remove paidOnly and skySports video attributes ([#2555](https://github.com/newsuk/times-components/issues/2555)) ([aff064c](https://github.com/newsuk/times-components/commit/aff064c06c25062763669fe29c6afe124d57803c))
+
+
+
+
+
 ## [7.4.69](https://github.com/newsuk/times-components/compare/@times-components/article@7.4.68...@times-components/article@7.4.69) (2020-03-10)
 
 **Note:** Version bump only for package @times-components/article

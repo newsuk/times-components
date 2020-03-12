@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.27.2](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.27.1...@times-components/fixture-generator@0.27.2) (2020-03-12)
+
+
+### Bug Fixes
+
+* Remove paidOnly and skySports video attributes ([#2555](https://github.com/newsuk/times-components/issues/2555)) ([aff064c](https://github.com/newsuk/times-components/commit/aff064c06c25062763669fe29c6afe124d57803c))
+
+
+
+
+
 ## [0.27.1](https://github.com/newsuk/times-components/compare/@times-components/fixture-generator@0.27.0...@times-components/fixture-generator@0.27.1) (2019-11-13)
 
 

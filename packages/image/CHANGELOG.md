@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.7.14](https://github.com/newsuk/times-components/compare/@times-components/image@6.7.13...@times-components/image@6.7.14) (2020-03-12)
+
+
+### Bug Fixes
+
+* close icon on modal images ([#2558](https://github.com/newsuk/times-components/issues/2558)) ([14075ab](https://github.com/newsuk/times-components/commit/14075ab66a1b552e606f11b6b698efc0cedefa8c))
+
+
+
+
+
 ## [6.7.13](https://github.com/newsuk/times-components/compare/@times-components/image@6.7.12...@times-components/image@6.7.13) (2020-03-10)
 
 
