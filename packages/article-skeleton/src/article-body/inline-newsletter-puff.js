@@ -32,6 +32,9 @@ function onSignUpClick() {
 }
 
 const InlineNewsletterPuff = ({ label, headline, copy }) => {
+  // When the GeaphQL service is ready newsletterId will be passed as prop
+  // and with that we are going to check it the user is subscribed to
+  // this newsletter or not
   const isSubscribed = false;
 
   return (
@@ -42,7 +45,7 @@ const InlineNewsletterPuff = ({ label, headline, copy }) => {
           uri="https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/2aa9050e6c3d4de682f11a4802ebba96.jpg"
         />
       </InpImageContainer>
-      {!isSubscribed ? (
+      {isSubscribed ? (
         <InpSubscribedContainer>
           <InpSubcribedHeadline>
             You’ve successfully signed up
@@ -52,7 +55,7 @@ const InlineNewsletterPuff = ({ label, headline, copy }) => {
           </InpSubcribedCopy>
           <InpPreferencesContainer>
             <InpPreferencesText>
-              {"Manage preferences here"}
+              Manage preferences here
               <InpIconContainer>
                 <IconForwardArrow fillColour={colours.functional.action} />
               </InpIconContainer>
