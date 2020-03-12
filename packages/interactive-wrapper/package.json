@@ -60,7 +60,7 @@
   },
   "dependencies": {
     "@times-components/image": "6.7.14",
-    "@times-components/utils": "6.3.3",
+    "@times-components/utils": "6.3.4",
     "prop-types": "15.7.2",
     "react-native-webview": "7.0.5"
   },
