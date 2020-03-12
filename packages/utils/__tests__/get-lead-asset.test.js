@@ -132,9 +132,7 @@ describe("getLeadAsset should", () => {
 
           id: "ee04d453-32e6-4ab3-f5b6-126ea07a3f5e",
           title: "West Indies v England - 3rd Test: Day Three"
-        },
-
-        skySports: false
+        }
       }
     };
     expect(getLeadAsset({ leadAsset: testLeadAssetResult.leadAsset })).toEqual(

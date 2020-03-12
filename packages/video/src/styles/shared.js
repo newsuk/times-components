@@ -31,31 +31,6 @@ const styles = {
     top: 0,
     zIndex: 2
   },
-  skySportsBadge: {
-    height: 17,
-    marginTop: 7,
-    width: 80
-  },
-  skySportsBanner: {
-    flex: 1,
-    flexDirection: "row",
-    height: 40,
-    justifyContent: "space-between",
-    left: 0,
-    paddingHorizontal: spacing(1),
-    position: "absolute",
-    top: 0,
-    width: "100%",
-    zIndex: 3
-  },
-  skySportsBannerText: {
-    color: colours.functional.contrast,
-    ...fontFactory({
-      font: "supporting",
-      fontSize: "imageOverlayTextSmall"
-    }),
-    marginTop: spacing(2)
-  },
   videoTabletContainer: {
     alignSelf: "center"
   }

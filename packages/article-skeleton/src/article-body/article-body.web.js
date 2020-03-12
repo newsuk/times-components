@@ -195,8 +195,7 @@ const renderers = ({ paidContentClassName, template }) => ({
       brightcoveAccountId,
       brightcovePlayerId,
       caption,
-      posterImageUrl,
-      skysports
+      posterImageUrl
     }
   ) {
     const MediaWrapper = responsiveDisplayWrapper("primary");
@@ -212,7 +211,6 @@ const renderers = ({ paidContentClassName, template }) => ({
               playerId={brightcovePlayerId}
               policyKey={brightcovePolicyKey}
               poster={{ uri: posterImageUrl }}
-              skySports={skysports}
               videoId={brightcoveVideoId}
               width="100%"
             />

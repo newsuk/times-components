@@ -5,7 +5,6 @@ import Image from "@times-components/image";
 import Touchable from "./touchable";
 import PlayIcon from "./play-icon.native";
 import { propTypes, defaultProps } from "./video-prop-types";
-import SkySportsBanner from "./sky-sports-banner";
 import styles from "./styles";
 
 const Video = ({
@@ -14,7 +13,6 @@ const Video = ({
   onVideoPress,
   policyKey,
   poster,
-  skySports,
   videoId,
   width,
   relativeWidth,
@@ -34,7 +32,6 @@ const Video = ({
     testID="splash-component"
   >
     <View style={[styles.videoTabletContainer, { height, width }]}>
-      {skySports && <SkySportsBanner />}
       {poster ? (
         <Image
           aspectRatio={width / height}

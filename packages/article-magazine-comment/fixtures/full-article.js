@@ -654,7 +654,6 @@ export const videoLeadAsset = ({
   brightcoveVideoId: "5831024132001",
   brightcovePlayerId: "default",
   caption: "This is video caption",
-  paidOnly: "false",
   posterImage: {
     __typename: "Image",
     caption: "CCTV captures moment of the explosion",
@@ -917,7 +916,6 @@ const defaultContent = [
       brightcoveVideoId: "5831024132001",
       caption: "This is video caption",
       display: "primary",
-      paidOnly: "false",
       posterImageId: "0c0309d4-1aeb-11e8-9010-1eef6ba5d3de",
       posterImageUrl:
         "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0"
@@ -953,7 +951,6 @@ const defaultContent = [
       brightcoveVideoId: "5831024132001",
       caption: "This is video caption secondary",
       display: "secondary",
-      paidOnly: "false",
       posterImageUrl:
         "https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F0c0309d4-1aeb-11e8-9010-1eef6ba5d3de.jpg?crop=1024%2C576%2C0%2C0"
     },

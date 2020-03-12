@@ -25,7 +25,6 @@ fragment articlePageProps on Article {
       posterImage {
         ...imageProps
       }
-      skySports
     }
     ... on Image {
       ...imageProps

@@ -49,16 +49,6 @@ addSerializers(
 
 const tests = [
   {
-    name: "video marked as sky sports",
-    test: () => {
-      const testInstance = TestRenderer.create(
-        <Video {...defaultVideoProps} skySports />
-      );
-
-      expect(testInstance.toJSON()).toMatchSnapshot();
-    }
-  },
-  {
     name: "360 video",
     test: () => {
       const testInstance = TestRenderer.create(

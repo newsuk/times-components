@@ -12,8 +12,7 @@ const videoLeadAssetPropTypes = {
   posterImage: PropTypes.shape({
     crop32: cropPropTypes,
     crop169: cropPropTypes
-  }).isRequired,
-  skySports: PropTypes.bool
+  }).isRequired
 };
 
 export const imageLeadAssetPropTypes = {
@@ -30,9 +29,7 @@ export const videoPropTypes = {
 };
 
 export const videoDefaultProps = {
-  leadAsset: {
-    skySports: null
-  }
+  leadAsset: {}
 };
 
 export const leadAssetImageCropsPropTypes = {

@@ -2,7 +2,6 @@
 import { View, Text, Alert } from "react-native";
 import React from "react";
 import Video from "./src/video";
-import IsPaidSubscriber from "./src/is-paid-subscriber";
 
 const id = "3dbfe6b8-680b-11e9-b277-88f3d445182c";
 const policyKey =
@@ -11,9 +10,6 @@ const accountId = "5436121857001";
 const videoId = "5831024132001";
 const posterImageURI =
   "https://clips.news.co.uk/thetimes/p5dzhoYzE6kYmndXxYdBsfnnyMzDVTyD/Ut_HKthATH4eww8X4xMDoxOmFkOxyVqc";
-
-const skySportsPosterImageURI =
-  "https://www.thetimes.co.uk/imageserver/image/methode%2Fsundaytimes%2Fprod%2Fweb%2Fbin%2F82d8be88-c422-11e8-8cd0-138e4f72a3e1.jpg?crop=1280%2C720%2C0%2C0";
 
 const defaultVideoProps = {
   accountId,
@@ -32,13 +28,6 @@ const defaultVideoProps = {
   },
   videoId,
   width: 320
-};
-
-const skySportsVideoProps = {
-  ...defaultVideoProps,
-  poster: {
-    uri: skySportsPosterImageURI
-  }
 };
 
 const mockId = "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee";
@@ -151,58 +140,6 @@ export default {
       ),
       name: "100% width and height",
       platform: "web",
-      type: "story"
-    },
-    {
-      component: ({ boolean }) => (
-        <View>
-          <IsPaidSubscriber.Provider
-            value={boolean("Is paid subscriber?", false)}
-          >
-            <Video
-              {...defaultVideoProps}
-              paidOnly={boolean("paidOnly video", false)}
-            />
-          </IsPaidSubscriber.Provider>
-        </View>
-      ),
-      name: "paidOnly state",
-      platform: "web",
-      type: "story"
-    },
-    {
-      component: () => (
-        <View>
-          <Text
-            style={{
-              marginBottom: 10,
-              marginTop: 10
-            }}
-          >
-            Mobile size:
-          </Text>
-          <Video {...skySportsVideoProps} skySports />
-          <Text
-            style={{
-              marginBottom: 10,
-              marginTop: 20
-            }}
-          >
-            Desktop size:
-          </Text>
-          <Video {...skySportsVideoProps} height={374} skySports width={664} />
-          <Text
-            style={{
-              marginBottom: 10,
-              marginTop: 20
-            }}
-          >
-            Non sky sports:
-          </Text>
-          <Video {...defaultVideoProps} height={374} width={664} />
-        </View>
-      ),
-      name: "skysports video",
       type: "story"
     },
     {
