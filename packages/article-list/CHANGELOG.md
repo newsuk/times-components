@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.5.20](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.5.19...@times-components/article-list@9.5.20) (2020-03-12)
+
+
+### Bug Fixes
+
+* deps ([#2560](https://github.com/newsuk/times-components/issues/2560)) ([7645ac6](https://github.com/newsuk/times-components/commit/7645ac660f984c187dbb6e89e40ed28a573fbc96))
+
+
+
+
+
 ## [9.5.19](https://github.com/newsuk/times-components/compare/@times-components/article-list@9.5.18...@times-components/article-list@9.5.19) (2020-03-12)
 
 **Note:** Version bump only for package @times-components/article-list

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.21.16](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.21.15...@times-components/article-in-depth@3.21.16) (2020-03-12)
+
+
+### Bug Fixes
+
+* deps ([#2560](https://github.com/newsuk/times-components/issues/2560)) ([7645ac6](https://github.com/newsuk/times-components/commit/7645ac660f984c187dbb6e89e40ed28a573fbc96))
+
+
+
+
+
 ## [3.21.15](https://github.com/newsuk/times-components/compare/@times-components/article-in-depth@3.21.14...@times-components/article-in-depth@3.21.15) (2020-03-12)
 
 
