@@ -85,7 +85,7 @@
     "@times-components/responsive": "0.6.5",
     "@times-components/styleguide": "3.37.4",
     "@times-components/tracking": "2.6.4",
-    "@times-components/utils": "6.3.3",
+    "@times-components/utils": "6.3.4",
     "@times-components/watermark": "2.7.31",
     "lodash.get": "4.4.2",
     "prop-types": "15.7.2",
