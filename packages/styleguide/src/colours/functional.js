@@ -16,6 +16,7 @@ const functionalColours = {
   gutter: "#f0f0f0",
   keyline: "#DBDBDB",
   modalBackground: "#000000",
+  newsletterPuffBackground: "#F9F8F3",
   overlayGradientEnd: "#00000000",
   overlayGradientFallback: "#000000B3",
   overlayGradientStart: "#000000E6",

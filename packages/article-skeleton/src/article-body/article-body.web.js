@@ -17,6 +17,7 @@ import renderTrees from "@times-components/markup-forest";
 import { AspectRatioContainer } from "@times-components/utils";
 import ArticleLink from "./article-link";
 import InsetCaption from "./inset-caption";
+import InlineNewsletterPuff from "./inline-newsletter-puff";
 import {
   PrimaryImg,
   SecondaryImg,
@@ -108,16 +109,38 @@ const renderers = ({ paidContentClassName, template }) => ({
   },
   interactive(key, { url, element, display }) {
     const { attributes, value } = element;
-    return (
-      <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
-        <InteractiveWrapper
-          attributes={attributes}
-          element={value}
-          key={key}
-          source={url}
-        />
-      </InteractiveContainer>
-    );
+
+    switch (value) {
+      case "newsletter-puff": {
+        const copy = decodeURIComponent(attributes.copy);
+        const label = decodeURIComponent(attributes.label);
+        const headline = decodeURIComponent(attributes.headline);
+        return (
+          <InlineNewsletterPuff
+            key={key}
+            // When the GeaphQL service is ready newsletterId will be passed as prop
+            // and with that we are going to check it the user is subscribed to
+            // this newsletter or not
+            newsletterId={attributes.newsletterId}
+            isSubscribedToNewsletter={false}
+            copy={copy}
+            label={label}
+            headline={headline}
+          />
+        );
+      }
+      default:
+        return (
+          <InteractiveContainer key={key} fullWidth={display === "fullwidth"}>
+            <InteractiveWrapper
+              attributes={attributes}
+              element={value}
+              key={key}
+              source={url}
+            />
+          </InteractiveContainer>
+        );
+    }
   },
   keyFacts(key, attributes, renderedChildren, indx, node) {
     return <KeyFacts ast={node} key={key} />;

@@ -82,6 +82,8 @@
     "@times-components/article-topics": "4.1.24",
     "@times-components/caption": "3.0.121",
     "@times-components/context": "1.2.7",
+    "@times-components/icons": "2.14.39",
+    "@times-components/image": "6.7.15",
     "@times-components/interactive-wrapper": "0.4.41",
     "@times-components/key-facts": "2.1.25",
     "@times-components/lazy-load": "0.6.5",

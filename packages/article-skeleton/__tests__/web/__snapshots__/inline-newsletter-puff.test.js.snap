@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Inline Newsletter Puff renders the Signup view when the user is NOT subscribed to the newsletter 1`] = `
+<div
+  className="inline-newsletter-puff__InpContainer-sc-13hmjc-0 iUoiZz inline-newsletter-puff__InpContainer-sc-13hmjc-0 iUoiZz css-view-1dbjc4n"
+>
+  <div
+    className="inline-newsletter-puff__InpImageContainer-sc-13hmjc-1 fAjoxv inline-newsletter-puff__InpImageContainer-sc-13hmjc-1 fAjoxv css-view-1dbjc4n"
+  >
+    <Image
+      aspectRatio={1.42}
+      uri="https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/2aa9050e6c3d4de682f11a4802ebba96.jpg"
+    />
+  </div>
+  <div
+    className="inline-newsletter-puff__InpSignupContainer-sc-13hmjc-5 fgHAmw inline-newsletter-puff__InpSignupContainer-sc-13hmjc-5 fgHAmw css-view-1dbjc4n"
+  >
+    <div
+      className="inline-newsletter-puff__InpSignupLabel-sc-13hmjc-6 fGDuEb inline-newsletter-puff__InpSignupLabel-sc-13hmjc-6 fGDuEb css-text-901oao"
+      dir="auto"
+    >
+      STRAIGHT IN YOUR INBOX
+    </div>
+    <div
+      className="inline-newsletter-puff__InpSignupHeadline-sc-13hmjc-7 kSVfs inline-newsletter-puff__InpSignupHeadline-sc-13hmjc-7 kSVfs css-text-901oao"
+      dir="auto"
+    >
+      Politics. Explained.
+    </div>
+    <div
+      className="inline-newsletter-puff__InpCopy-sc-13hmjc-8 hLhbxF inline-newsletter-puff__InpCopy-sc-13hmjc-8 hLhbxF css-text-901oao"
+      dir="auto"
+    >
+      Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am.
+    </div>
+    <div
+      className="inline-newsletter-puff__InpSignupCTAContainer-sc-13hmjc-9 hrIwVO inline-newsletter-puff__InpSignupCTAContainer-sc-13hmjc-9 hrIwVO css-view-1dbjc4n"
+    >
+      <a
+        className="linkweb__RespLink-yfb9n-0 cCCShB"
+        href="https://home.thetimes.co.uk/myNews"
+        onClick={[Function]}
+        target={null}
+      >
+        <div
+          className="inline-newsletter-puff__InpSignup-sc-13hmjc-10 imrJVF inline-newsletter-puff__InpSignup-sc-13hmjc-10 imrJVF css-view-1dbjc4n"
+        >
+          <div
+            className="inline-newsletter-puff__InpSignupText-sc-13hmjc-11 jaxEiV inline-newsletter-puff__InpSignupText-sc-13hmjc-11 jaxEiV css-text-901oao"
+            dir="auto"
+          >
+            Sign up to newsletter
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Inline Newsletter Puff renders the subscribed view when the user is subscribed to the newsletter 1`] = `
+<div
+  className="inline-newsletter-puff__InpContainer-sc-13hmjc-0 iUoiZz inline-newsletter-puff__InpContainer-sc-13hmjc-0 iUoiZz css-view-1dbjc4n"
+>
+  <div
+    className="inline-newsletter-puff__InpImageContainer-sc-13hmjc-1 fAjoxv inline-newsletter-puff__InpImageContainer-sc-13hmjc-1 fAjoxv css-view-1dbjc4n"
+  >
+    <Image
+      aspectRatio={1.42}
+      uri="https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/2aa9050e6c3d4de682f11a4802ebba96.jpg"
+    />
+  </div>
+  <div
+    className="inline-newsletter-puff__InpSubscribedContainer-sc-13hmjc-2 cJNdAl inline-newsletter-puff__InpSubscribedContainer-sc-13hmjc-2 cJNdAl css-view-1dbjc4n"
+  >
+    <div
+      className="inline-newsletter-puff__InpSubcribedHeadline-sc-13hmjc-3 clepKB inline-newsletter-puff__InpSubcribedHeadline-sc-13hmjc-3 clepKB css-text-901oao"
+      dir="auto"
+    >
+      You’ve successfully signed up
+    </div>
+    <div
+      className="inline-newsletter-puff__InpSubcribedCopy-sc-13hmjc-4 iDtSG inline-newsletter-puff__InpSubcribedCopy-sc-13hmjc-4 iDtSG css-text-901oao"
+      dir="auto"
+    >
+      Congratulations you can now enjoy daily updates from Red Box.
+    </div>
+    <div
+      className="inline-newsletter-puff__InpPreferencesContainer-sc-13hmjc-12 cZJpjJ inline-newsletter-puff__InpPreferencesContainer-sc-13hmjc-12 cZJpjJ css-view-1dbjc4n"
+    >
+      <div
+        className="inline-newsletter-puff__InpPreferencesText-sc-13hmjc-13 eQpQAT inline-newsletter-puff__InpPreferencesText-sc-13hmjc-13 eQpQAT css-text-901oao"
+        dir="auto"
+      >
+        Manage preferences here
+        <div
+          className="inline-newsletter-puff__InpIconContainer-sc-13hmjc-14 kmTbJd inline-newsletter-puff__InpIconContainer-sc-13hmjc-14 kmTbJd css-view-1dbjc4n r-display-xoduu5"
+        >
+          <svg
+            aria-label="icon-forward-arrow"
+            height={12}
+            style={Object {}}
+            viewBox="42 12 60 120"
+            width={7}
+          >
+            <g
+              fill="#006699"
+              style={Object {}}
+            >
+              <path
+                d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+                style={Object {}}
+              />
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

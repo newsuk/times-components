@@ -1,0 +1,271 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Inline Newsletter Puff renders the Signup view when the user is NOT subscribed to the newsletter 1`] = `
+<View
+  className="inline-newsletter-puff__InpContainer-sc-13hmjc-0 cJjDiY"
+>
+  <View
+    className="inline-newsletter-puff__InpImageContainer-sc-13hmjc-1 fAjoxv"
+  >
+    <Image
+      aspectRatio={1.42}
+      uri="https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/2aa9050e6c3d4de682f11a4802ebba96.jpg"
+    />
+  </View>
+  <View
+    className="inline-newsletter-puff__InpSignupContainer-sc-13hmjc-5 fhcdpp"
+  >
+    <Text
+      className="inline-newsletter-puff__InpSignupLabel-sc-13hmjc-6 bMAtxh"
+    >
+      STRAIGHT IN YOUR INBOX
+    </Text>
+    <Text
+      className="inline-newsletter-puff__InpSignupHeadline-sc-13hmjc-7 hYPuGW"
+    >
+      Politics. Explained.
+    </Text>
+    <Text
+      className="inline-newsletter-puff__InpCopy-sc-13hmjc-8 jDEpQZ"
+    >
+      Sign up to receive our brilliant Red Box newsletter, Matt Chorley\`s poke at politics delivered every weekday morning at 8am.
+    </Text>
+    <View
+      className="inline-newsletter-puff__InpSignupCTAContainer-sc-13hmjc-9 hrIwVO"
+    >
+      <View
+        accessible={true}
+        focusable={true}
+        isTVSelectable={true}
+        nativeBackgroundAndroid={
+          Object {
+            "attribute": "selectableItemBackground",
+            "type": "ThemeAttrAndroid",
+          }
+        }
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={Object {}}
+      >
+        <View
+          className="inline-newsletter-puff__InpSignup-sc-13hmjc-10 imrJVF"
+        >
+          <Text
+            className="inline-newsletter-puff__InpSignupText-sc-13hmjc-11 jaxEiV"
+          >
+            Sign up to newsletter
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Inline Newsletter Puff renders the subscribed view when the user is subscribed to the newsletter 1`] = `
+<View
+  className="inline-newsletter-puff__InpContainer-sc-13hmjc-0 cJjDiY"
+>
+  <View
+    className="inline-newsletter-puff__InpImageContainer-sc-13hmjc-1 fAjoxv"
+  >
+    <Image
+      aspectRatio={1.42}
+      uri="https://nuk-tnl-deck-prod-static.s3-eu-west-1.amazonaws.com/uploads/2aa9050e6c3d4de682f11a4802ebba96.jpg"
+    />
+  </View>
+  <View
+    className="inline-newsletter-puff__InpSubscribedContainer-sc-13hmjc-2 jAaZNR"
+  >
+    <Text
+      className="inline-newsletter-puff__InpSubcribedHeadline-sc-13hmjc-3 kSJifc"
+    >
+      You’ve successfully signed up
+    </Text>
+    <Text
+      className="inline-newsletter-puff__InpSubcribedCopy-sc-13hmjc-4 bfNIzF"
+    >
+      Congratulations you can now enjoy daily updates from Red Box.
+    </Text>
+    <View
+      className="inline-newsletter-puff__InpPreferencesContainer-sc-13hmjc-12 cZJpjJ"
+    >
+      <Text
+        className="inline-newsletter-puff__InpPreferencesText-sc-13hmjc-13 eQpQAT"
+      >
+        Manage preferences here
+        <View
+          className="inline-newsletter-puff__InpIconContainer-sc-13hmjc-14 kmTbJd"
+        >
+          <RNSVGSvgView
+            align="xMidYMid"
+            aria-label="icon-forward-arrow"
+            bbHeight={12}
+            bbWidth={7}
+            focusable={false}
+            height={12}
+            meetOrSlice={0}
+            minX={42}
+            minY={12}
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "borderWidth": 0,
+                },
+                undefined,
+                Object {
+                  "opacity": 1,
+                },
+                Object {
+                  "flex": 0,
+                  "height": 12,
+                  "width": 7,
+                },
+              ]
+            }
+            vbHeight={120}
+            vbWidth={60}
+            width={7}
+          >
+            <RNSVGGroup
+              fill={
+                Array [
+                  0,
+                  -16777216,
+                ]
+              }
+              fillOpacity={1}
+              fillRule={1}
+              font={Object {}}
+              matrix={
+                Array [
+                  1,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0,
+                ]
+              }
+              opacity={1}
+              originX={0}
+              originY={0}
+              propList={Array []}
+              rotation={0}
+              scaleX={1}
+              scaleY={1}
+              skewX={0}
+              skewY={0}
+              stroke={null}
+              strokeDasharray={null}
+              strokeDashoffset={null}
+              strokeLinecap={0}
+              strokeLinejoin={0}
+              strokeMiterlimit={4}
+              strokeOpacity={1}
+              strokeWidth={1}
+              vectorEffect={0}
+              x={0}
+              y={0}
+            >
+              <RNSVGGroup
+                fill={
+                  Array [
+                    0,
+                    -16750951,
+                  ]
+                }
+                fillOpacity={1}
+                fillRule={1}
+                font={Object {}}
+                matrix={
+                  Array [
+                    1,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                  ]
+                }
+                opacity={1}
+                originX={0}
+                originY={0}
+                propList={
+                  Array [
+                    "fill",
+                  ]
+                }
+                rotation={0}
+                scaleX={1}
+                scaleY={1}
+                skewX={0}
+                skewY={0}
+                stroke={null}
+                strokeDasharray={null}
+                strokeDashoffset={null}
+                strokeLinecap={0}
+                strokeLinejoin={0}
+                strokeMiterlimit={4}
+                strokeOpacity={1}
+                strokeWidth={1}
+                vectorEffect={0}
+                x={0}
+                y={0}
+              >
+                <RNSVGPath
+                  d="M45.8,132L42,128.2,74.8,72,42,15.8,45.8,12,102,72Z"
+                  fill={
+                    Array [
+                      0,
+                      -16777216,
+                    ]
+                  }
+                  fillOpacity={1}
+                  fillRule={1}
+                  matrix={
+                    Array [
+                      1,
+                      0,
+                      0,
+                      1,
+                      0,
+                      0,
+                    ]
+                  }
+                  opacity={1}
+                  originX={0}
+                  originY={0}
+                  propList={Array []}
+                  rotation={0}
+                  scaleX={1}
+                  scaleY={1}
+                  skewX={0}
+                  skewY={0}
+                  stroke={null}
+                  strokeDasharray={null}
+                  strokeDashoffset={null}
+                  strokeLinecap={0}
+                  strokeLinejoin={0}
+                  strokeMiterlimit={4}
+                  strokeOpacity={1}
+                  strokeWidth={1}
+                  vectorEffect={0}
+                  x={0}
+                  y={0}
+                />
+              </RNSVGGroup>
+            </RNSVGGroup>
+          </RNSVGSvgView>
+        </View>
+      </Text>
+    </View>
+  </View>
+</View>
+`;
