@@ -1,5 +1,4 @@
 import React from "react";
-import { ContextProviderWithDefaults } from "@times-components/context";
 import ArticleExtras from "./src/article-extras";
 import { relatedArticleSlice, topics } from "./fixtures/article-extras";
 

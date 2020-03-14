@@ -8,7 +8,7 @@ const ShowTopics = ({ topics }) => {
   if (topics && topics.length > 0) {
     return (
       <TopicsContainer>
-        <nav data-cy="topic-tags">              
+        <nav data-cy="topic-tags">
           <ArticleTopics style={styles.topicsContainer} topics={topics} />
         </nav>
       </TopicsContainer>
