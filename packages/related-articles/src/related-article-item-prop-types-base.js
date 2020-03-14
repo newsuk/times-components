@@ -1,8 +1,5 @@
 import PropTypes from "prop-types";
-import { ViewPropTypes } from "react-native";
 import { propTypes as treePropType } from "@times-components/markup-forest";
-
-const { style: ViewPropTypesStyle } = ViewPropTypes;
 
 export const sharedPropTypes = {
   article: PropTypes.shape({
@@ -23,7 +20,7 @@ export const sharedPropTypes = {
   imageConfig: PropTypes.shape({
     cropSize: PropTypes.string,
     imageRatio: PropTypes.number,
-    style: ViewPropTypesStyle
+    style: PropTypes.shape({})
   }),
   isOpinionByline: PropTypes.bool,
   isReversed: PropTypes.bool,
@@ -31,7 +28,7 @@ export const sharedPropTypes = {
   showSummary: PropTypes.bool,
   summaryConfig: PropTypes.shape({
     lengths: PropTypes.arrayOf(PropTypes.number),
-    style: ViewPropTypesStyle,
+    style: PropTypes.shape({}),
     type: PropTypes.string
   })
 };

@@ -1,11 +1,9 @@
 /* eslint-disable react/prefer-stateless-function, react/require-render-return, react/no-multi-comp */
 import React, { Component } from "react";
-import { StyleSheet, Text, View, ViewPropTypes } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 import PropTypes from "prop-types";
 import { fontSizes } from "@times-components/styleguide";
 import ErrorView from "./src/error-view";
-
-const { style: ViewPropTypesStyle } = ViewPropTypes;
 
 class BadComponent extends Component {
   render() {
@@ -45,7 +43,7 @@ ErrorState.propTypes = {
     message: PropTypes.string,
     stack: PropTypes.string
   }),
-  style: ViewPropTypesStyle
+  style: PropTypes.shape({})
 };
 
 class FiresOnError extends Component {

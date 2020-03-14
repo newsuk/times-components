@@ -1,14 +1,13 @@
-import { Text, ViewPropTypes } from "react-native";
+import { Text } from "react-native";
 import PropTypes from "prop-types";
 
 const { style: TextPropTypesStyle } = Text.propTypes;
-const { style: ViewPropTypesStyle } = ViewPropTypes;
 
 export const propTypes = {
   children: PropTypes.element,
   credits: PropTypes.string,
   style: PropTypes.shape({
-    container: ViewPropTypesStyle,
+    container: PropTypes.shape({}),
     text: TextPropTypesStyle
   }),
   text: PropTypes.string

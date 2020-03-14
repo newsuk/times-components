@@ -1,11 +1,9 @@
 import PropTypes from "prop-types";
-import { ViewPropTypes } from "react-native";
 
-const { style: ViewPropTypesStyle } = ViewPropTypes;
 
 export const topicsPropTypes = {
   onPress: PropTypes.func.isRequired,
-  style: ViewPropTypesStyle,
+  style: PropTypes.shape({}),
   topics: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,

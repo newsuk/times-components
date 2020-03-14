@@ -1,8 +1,6 @@
 import React from "react";
-import { Text, View, ViewPropTypes } from "react-native";
+import { Text, View } from "react-native";
 import PropTypes from "prop-types";
-
-const { style: ViewPropTypesStyle } = ViewPropTypes;
 
 const SomeComponent = ({ style, children }) => (
   <View style={style}>
@@ -16,7 +14,7 @@ SomeComponent.propTypes = {
     PropTypes.element,
     PropTypes.arrayOf(PropTypes.element)
   ]).isRequired,
-  style: ViewPropTypesStyle
+  style: PropTypes.shape({})
 };
 
 SomeComponent.defaultProps = {
