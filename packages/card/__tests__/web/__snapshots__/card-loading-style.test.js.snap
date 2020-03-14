@@ -224,7 +224,7 @@ exports[`1. card loading state 1`] = `
     forwardedRef={null}
   >
     <div
-      className="c0 indexweb__FadeIn-v0crhg-0 c0 css-view-1dbjc4n"
+      className="css-view-1dbjc4n"
     >
       <div
         className="css-view-1dbjc4n r-alignItems-1habvwh r-display-6koalj r-flexDirection-18u37iz r-flexWrap-1w6e6rj r-justifyContent-17s6mgv S7"
@@ -504,7 +504,7 @@ exports[`2. card with reversed loading state 1`] = `
     forwardedRef={null}
   >
     <div
-      className="c0 indexweb__FadeIn-v0crhg-0 c0 css-view-1dbjc4n"
+      className="css-view-1dbjc4n"
     >
       <div
         className="css-view-1dbjc4n r-alignItems-1habvwh r-display-6koalj r-flexDirection-18u37iz r-flexWrap-1w6e6rj r-height-16l9doz r-justifyContent-17s6mgv S7"

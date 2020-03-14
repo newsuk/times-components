@@ -179,7 +179,7 @@ exports[`5. it renders correctly with a classname 1`] = `
 </style>
 
 <div
-  className="test-class-name test-class-name css-view-1dbjc4n"
+  className="css-view-1dbjc4n"
 >
   <figure
     className="IS5"

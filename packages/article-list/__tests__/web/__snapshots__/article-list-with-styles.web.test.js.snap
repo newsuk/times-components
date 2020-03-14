@@ -1,76 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. article list 1`] = `
-.c2 {
-  -webkit-animation: eMLfYp 0.3s ease-in-out;
-  animation: eMLfYp 0.3s ease-in-out;
-}
-
-.c0 {
-  margin: 0 auto;
-  max-width: 680px;
-  width: 100%;
-}
-
-.c1 {
-  padding-bottom: 10px;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.c3 {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-@media (min-width:768px) {
-  .c0 {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
-@media (min-width:1320px) {
-  .c0 {
-    max-width: 760px;
-  }
-}
-
-@media (min-width:768px) {
-  .c1 {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .c1 .articleListImage {
-    -webkit-flex: 2;
-    -ms-flex: 2;
-    flex: 2;
-    margin-bottom: 0;
-    max-width: 285px;
-    min-width: auto;
-    padding-right: 15px;
-  }
-
-  .c1 .articleListContent {
-    -webkit-flex: 2.7;
-    -ms-flex: 2.7;
-    flex: 2.7;
-    -webkit-flex-basis: 0 !important;
-    -ms-flex-preferred-size: 0 !important;
-    flex-basis: 0 !important;
-    min-width: auto;
-  }
-}
-
-@media (min-width:768px) {
-  .c3 {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
 <style>
 .S1 {
   -ms-flex-negative: 1;
@@ -123,7 +53,7 @@ exports[`1. article list 1`] = `
     className="css-view-1dbjc4n"
   >
     <div
-      className="c0 responsiveweb__ListContentContainer-sc-143eup1-0 c0 css-view-1dbjc4n"
+      className="css-view-1dbjc4n"
     >
       <div
         className="css-view-1dbjc4n r-alignItems-1oszu61 r-flexDirection-18u37iz r-justifyContent-1777fci S2"
@@ -137,18 +67,18 @@ exports[`1. article list 1`] = `
     </div>
     <div>
       <div
-        className="c0 responsiveweb__ListContentContainer-sc-143eup1-0 c0 css-view-1dbjc4n"
+        className="css-view-1dbjc4n"
       >
         <Link>
           <div
-            className="c1 responsiveweb__ListItemWrapper-sc-143eup1-1 c1 css-view-1dbjc4n"
+            className="css-view-1dbjc4n"
           >
             <Card
               contentContainerClass="articleListContent"
               imageContainerClass="articleListImage"
             >
               <div
-                className="c2 indexweb__FadeIn-v0crhg-0 c2 css-view-1dbjc4n"
+                className="css-view-1dbjc4n"
               >
                 <ArticleSummary />
               </div>
@@ -159,10 +89,10 @@ exports[`1. article list 1`] = `
     </div>
     <div>
       <div
-        className="c0 responsiveweb__ListContentContainer-sc-143eup1-0 c0 css-view-1dbjc4n"
+        className="css-view-1dbjc4n"
       >
         <div
-          className="c3 responsiveweb__ListItemSeparator-sc-143eup1-2 c3 css-view-1dbjc4n"
+          className="css-view-1dbjc4n"
         >
           <div
             className="css-view-1dbjc4n r-backgroundColor-oyv1ms r-height-109y4c4 S3"
@@ -170,14 +100,14 @@ exports[`1. article list 1`] = `
         </div>
         <Link>
           <div
-            className="c1 responsiveweb__ListItemWrapper-sc-143eup1-1 c1 css-view-1dbjc4n"
+            className="css-view-1dbjc4n"
           >
             <Card
               contentContainerClass="articleListContent"
               imageContainerClass="articleListImage"
             >
               <div
-                className="c2 indexweb__FadeIn-v0crhg-0 c2 css-view-1dbjc4n"
+                className="css-view-1dbjc4n"
               >
                 <ArticleSummary />
               </div>
@@ -188,10 +118,10 @@ exports[`1. article list 1`] = `
     </div>
     <div>
       <div
-        className="c0 responsiveweb__ListContentContainer-sc-143eup1-0 c0 css-view-1dbjc4n"
+        className="css-view-1dbjc4n"
       >
         <div
-          className="c3 responsiveweb__ListItemSeparator-sc-143eup1-2 c3 css-view-1dbjc4n"
+          className="css-view-1dbjc4n"
         >
           <div
             className="css-view-1dbjc4n r-backgroundColor-oyv1ms r-height-109y4c4 S3"
@@ -199,14 +129,14 @@ exports[`1. article list 1`] = `
         </div>
         <Link>
           <div
-            className="c1 responsiveweb__ListItemWrapper-sc-143eup1-1 c1 css-view-1dbjc4n"
+            className="css-view-1dbjc4n"
           >
             <Card
               contentContainerClass="articleListContent"
               imageContainerClass="articleListImage"
             >
               <div
-                className="c2 indexweb__FadeIn-v0crhg-0 c2 css-view-1dbjc4n"
+                className="css-view-1dbjc4n"
               >
                 <ArticleSummary />
               </div>
@@ -217,10 +147,10 @@ exports[`1. article list 1`] = `
     </div>
     <div>
       <div
-        className="c0 responsiveweb__ListContentContainer-sc-143eup1-0 c0 css-view-1dbjc4n"
+        className="css-view-1dbjc4n"
       >
         <div
-          className="c3 responsiveweb__ListItemSeparator-sc-143eup1-2 c3 css-view-1dbjc4n"
+          className="css-view-1dbjc4n"
         >
           <div
             className="css-view-1dbjc4n r-backgroundColor-oyv1ms r-height-109y4c4 S3"
@@ -228,14 +158,14 @@ exports[`1. article list 1`] = `
         </div>
         <Link>
           <div
-            className="c1 responsiveweb__ListItemWrapper-sc-143eup1-1 c1 css-view-1dbjc4n"
+            className="css-view-1dbjc4n"
           >
             <Card
               contentContainerClass="articleListContent"
               imageContainerClass="articleListImage"
             >
               <div
-                className="c2 indexweb__FadeIn-v0crhg-0 c2 css-view-1dbjc4n"
+                className="css-view-1dbjc4n"
               >
                 <ArticleSummary />
               </div>
@@ -246,10 +176,10 @@ exports[`1. article list 1`] = `
     </div>
     <div>
       <div
-        className="c0 responsiveweb__ListContentContainer-sc-143eup1-0 c0 css-view-1dbjc4n"
+        className="css-view-1dbjc4n"
       >
         <div
-          className="c3 responsiveweb__ListItemSeparator-sc-143eup1-2 c3 css-view-1dbjc4n"
+          className="css-view-1dbjc4n"
         >
           <div
             className="css-view-1dbjc4n r-backgroundColor-oyv1ms r-height-109y4c4 S3"
@@ -257,14 +187,14 @@ exports[`1. article list 1`] = `
         </div>
         <Link>
           <div
-            className="c1 responsiveweb__ListItemWrapper-sc-143eup1-1 c1 css-view-1dbjc4n"
+            className="css-view-1dbjc4n"
           >
             <Card
               contentContainerClass="articleListContent"
               imageContainerClass="articleListImage"
             >
               <div
-                className="c2 indexweb__FadeIn-v0crhg-0 c2 css-view-1dbjc4n"
+                className="css-view-1dbjc4n"
               >
                 <ArticleSummary />
               </div>

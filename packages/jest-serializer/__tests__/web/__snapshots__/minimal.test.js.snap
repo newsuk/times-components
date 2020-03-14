@@ -31,9 +31,6 @@ exports[`The minimal serializer should for web remove undefined props 1`] = `
   className="css-view-1dbjc4n"
 >
   <div
-    False={false}
-    Null={null}
-    Zero={0}
     className="css-text-901oao"
   />
 </div>

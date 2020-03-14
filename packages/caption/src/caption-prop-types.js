@@ -1,14 +1,11 @@
-import { Text } from "react-native";
 import PropTypes from "prop-types";
-
-const { style: TextPropTypesStyle } = Text.propTypes;
 
 export const propTypes = {
   children: PropTypes.element,
   credits: PropTypes.string,
   style: PropTypes.shape({
     container: PropTypes.shape({}),
-    text: TextPropTypesStyle
+    text: PropTypes.shape({})
   }),
   text: PropTypes.string
 };

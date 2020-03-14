@@ -1,39 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`key facts with title 1`] = `
-.c0 {
-  margin: 5px 10px;
-}
-
-@media (min-width:768px) {
-  .c0 {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    margin: 10px auto;
-    width: 80.8%;
-  }
-}
-
-@media (min-width:1024px) {
-  .c0 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    width: 75%;
-  }
-}
-
-@media (min-width:768px) {
-  .c1 {
-    padding-right: 20px;
-    width: 25%;
-  }
-}
-
 <div>
   <div>
     EXAMPLE TITLE
@@ -77,39 +44,6 @@ exports[`key facts with title 1`] = `
 `;
 
 exports[`key facts with title and context theme 1`] = `
-.c0 {
-  margin: 5px 10px;
-}
-
-@media (min-width:768px) {
-  .c0 {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    margin: 10px auto;
-    width: 80.8%;
-  }
-}
-
-@media (min-width:1024px) {
-  .c0 {
-    width: 56.2%;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    width: 75%;
-  }
-}
-
-@media (min-width:768px) {
-  .c1 {
-    padding-right: 20px;
-    width: 25%;
-  }
-}
-
 <div>
   <div>
     EXAMPLE TITLE

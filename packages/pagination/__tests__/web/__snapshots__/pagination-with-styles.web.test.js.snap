@@ -1,96 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`1. renders 1`] = `
-.c4 {
+.c0 {
   -webkit-text-decoration: none;
   text-decoration: none;
-}
-
-.c5 {
-  display: none;
-}
-
-.c1 {
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  height: 50px;
-}
-
-.c2 {
-  border-style: solid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  height: 50px;
-  border-bottom-color: #DBDBDB;
-  border-bottom-width: 1px;
-  border-top-color: #DBDBDB;
-  border-top-width: 1px;
-}
-
-.c0 {
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c3 {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-@media (min-width:768px) {
-  .c5 {
-    display: inline;
-  }
-}
-
-@media (min-width:768px) {
-  .c1 {
-    left: 0;
-    right: 0;
-    position: absolute;
-  }
-}
-
-@media (min-width:768px) {
-  .c2 {
-    border-top-width: 0px;
-  }
-}
-
-@media (min-width:768px) {
-  .c0 {
-    margin-top: 30px;
-  }
-}
-
-@media (min-width:768px) {
-  .c3 {
-    padding-left: 0;
-    padding-right: 0;
-  }
 }
 
 <style>
@@ -134,11 +47,11 @@ exports[`1. renders 1`] = `
 
 <pagination-containerweb__ContainerWithResults>
   <div
-    className="c0 pagination-containerweb__ContainerWithResults-sc-1kff8us-0 c0 css-view-1dbjc4n"
+    className="css-view-1dbjc4n"
   >
     <resultsweb__MessageContainer>
       <div
-        className="c1 resultsweb__MessageContainer-sc-1eowhty-0 c1 css-view-1dbjc4n"
+        className="css-view-1dbjc4n"
       >
         <div
           className="css-text-901oao r-color-1khp51w r-fontFamily-j2s0nr r-fontSize-a023e6 r-lineHeight-fxxt2n r-paddingTop-1h8ys4a S1"
@@ -150,11 +63,11 @@ exports[`1. renders 1`] = `
     </resultsweb__MessageContainer>
     <pagination-borderweb__BorderWithResults>
       <div
-        className="c2 pagination-borderweb__BorderWithResults-sc-1tad75g-0 c2 css-view-1dbjc4n"
+        className="css-view-1dbjc4n"
       >
         <responsiveweb__LinkContainer>
           <div
-            className="c3 responsiveweb__LinkContainer-sc-10qy9xl-0 c3 css-view-1dbjc4n"
+            className="css-view-1dbjc4n"
           >
             <linkweb__RespLink
               href="?mock-1"
@@ -163,7 +76,7 @@ exports[`1. renders 1`] = `
               underlined={true}
             >
               <a
-                className="c4"
+                className="c0"
                 href="?mock-1"
                 target={null}
               >
@@ -180,7 +93,7 @@ exports[`1. renders 1`] = `
                       Previous
                       <page-labelweb__ResponsiveLabel>
                         <span
-                          className="c5 page-labelweb__ResponsiveLabel-sc-1gpr097-0 c5 css-text-901oao css-textHasAncestor-16my406"
+                          className="css-text-901oao css-textHasAncestor-16my406"
                         >
                            page
                         </span>
@@ -194,7 +107,7 @@ exports[`1. renders 1`] = `
         </responsiveweb__LinkContainer>
         <responsiveweb__LinkContainer>
           <div
-            className="c3 responsiveweb__LinkContainer-sc-10qy9xl-0 c3 css-view-1dbjc4n"
+            className="css-view-1dbjc4n"
           >
             <linkweb__RespLink
               href="?mock-3"
@@ -203,7 +116,7 @@ exports[`1. renders 1`] = `
               underlined={true}
             >
               <a
-                className="c4"
+                className="c0"
                 href="?mock-3"
                 target={null}
               >
@@ -220,7 +133,7 @@ exports[`1. renders 1`] = `
                       Next
                       <page-labelweb__ResponsiveLabel>
                         <span
-                          className="c5 page-labelweb__ResponsiveLabel-sc-1gpr097-0 c5 css-text-901oao css-textHasAncestor-16my406"
+                          className="css-text-901oao css-textHasAncestor-16my406"
                         >
                            page
                         </span>
@@ -239,64 +152,22 @@ exports[`1. renders 1`] = `
 `;
 
 exports[`2. renders with no results 1`] = `
-.c1 {
-  border-style: solid;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  height: 50px;
-  border-bottom-color: #DBDBDB;
-  border-bottom-width: 1px;
-  border-top-color: #DBDBDB;
-  border-top-width: 1px;
-}
-
-.c0 {
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.c2 {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-@media (min-width:768px) {
-  .c2 {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
 <pagination-containerweb__ContainerWithoutResults>
   <div
-    className="c0 pagination-containerweb__ContainerWithoutResults-sc-1kff8us-1 c0 css-view-1dbjc4n"
+    className="css-view-1dbjc4n"
   >
     <pagination-borderweb__BorderWithoutResults>
       <div
-        className="c1 pagination-borderweb__BorderWithoutResults-sc-1tad75g-1 c1 css-view-1dbjc4n"
+        className="css-view-1dbjc4n"
       >
         <responsiveweb__LinkContainer>
           <div
-            className="c2 responsiveweb__LinkContainer-sc-10qy9xl-0 c2 css-view-1dbjc4n"
+            className="css-view-1dbjc4n"
           />
         </responsiveweb__LinkContainer>
         <responsiveweb__LinkContainer>
           <div
-            className="c2 responsiveweb__LinkContainer-sc-10qy9xl-0 c2 css-view-1dbjc4n"
+            className="css-view-1dbjc4n"
           />
         </responsiveweb__LinkContainer>
       </div>

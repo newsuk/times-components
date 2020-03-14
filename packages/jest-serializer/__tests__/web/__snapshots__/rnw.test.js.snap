@@ -133,7 +133,6 @@ exports[`The React Native Web serializer should remove rnw-classnames and hoist 
 <div
   className="css-text-901oao r-color-howw7u r-flex-13awgt0 r-fontSize-1b43r93 S1"
   dir="auto"
-  testFunc={[Function]}
 />
 `;
 

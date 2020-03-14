@@ -1,24 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`different colours 1`] = `
-.c0 {
-  color: #333333;
-  font-family: "TimesModern-Regular";
-  font-size: 25px;
-  line-height: 30px;
-}
-
-.c0 cite {
-  font-style: normal;
-}
-
-@media (min-width:768px) {
-  .c0 {
-    font-size: 30px;
-    line-height: 35px;
-  }
-}
-
 <style>
 .S1 {
   margin-top: 0px;
@@ -99,7 +81,7 @@ exports[`different colours 1`] = `
       “
     </div>
     <div
-      className="c0 responsiveweb__PullQuoteContent-sc-16yokeu-0 c0 css-text-901oao"
+      className="css-text-901oao"
     >
       <cite>
         Some content

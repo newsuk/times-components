@@ -3,8 +3,6 @@ import { Text, Platform } from "react-native";
 import PropTypes from "prop-types";
 import styles from "./styles";
 
-const { style: TextStylePropTypes } = Text.propTypes;
-
 const ArticleSummaryHeadline = ({ className, headline, style }) => (
   <Text
     accessibilityRole="header"
@@ -20,7 +18,7 @@ const ArticleSummaryHeadline = ({ className, headline, style }) => (
 ArticleSummaryHeadline.propTypes = {
   className: PropTypes.string,
   headline: PropTypes.string.isRequired,
-  style: TextStylePropTypes
+  style: PropTypes.shape({})
 };
 
 ArticleSummaryHeadline.defaultProps = {
