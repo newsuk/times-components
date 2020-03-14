@@ -52,32 +52,6 @@ export default () => {
       }
     },
     {
-      name: "renders correctly with newskit",
-      test: () => {
-        UserState.mockStates = [UserState.fullArticle];
-        const testInstance = TestRenderer.create(
-          <ContextProviderWithDefaults
-            value={{
-              newskit: true
-            }}
-          >
-            <ArticleExtras
-              analyticsStream={() => {}}
-              articleId="dummy-article-id"
-              commentsEnabled
-              registerNode={() => {}}
-              relatedArticleSlice={relatedArticleSlice}
-              relatedArticlesVisible
-              spotAccountId="dummy-spot-id"
-              topics={topics}
-            />
-          </ContextProviderWithDefaults>
-        );
-
-        expect(testInstance.toJSON()).toMatchSnapshot();
-      }
-    },
-    {
       name:
         "no related articles, topics and comments when user not logged in, only sponsored div",
       test: () => {

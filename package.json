@@ -162,7 +162,6 @@
   "dependencies": {
     "@babel/runtime-corejs2": "7.4.4",
     "opentype.js": "1.1.0",
-    "newskit": "0.0.0-70b3f4d2c",
     "react-art": "16.6.3",
     "react-native": "0.61.1",
     "react-native-device-info": "5.3.1",

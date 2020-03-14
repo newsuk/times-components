@@ -21,23 +21,9 @@ if (window.nuk && window.nuk.ssr && window.nuk.article) {
   } = window.nuk.article;
   const { getCookieValue } = window.nuk;
 
-  const enableNewskit = decodeURIComponent(
-    window.location.search.replace(
-      new RegExp(
-        `^(?:.*[&\\?]${encodeURIComponent("newskit").replace(
-          /[\.\+\*]/g,
-          "\\$&"
-        )}(?:\\=([^&]*))?)?.*$`,
-        "i"
-      ),
-      "$1"
-    )
-  );
-
   const data = {
     articleId,
     debounceTimeMs,
-    enableNewskit,
     makeArticleUrl,
     makeTopicUrl,
     navigationMode,

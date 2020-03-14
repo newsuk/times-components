@@ -20,28 +20,6 @@ export default {
       ),
       name: "Article Extras",
       type: "story"
-    },
-    {
-      component: () => (
-        <ContextProviderWithDefaults
-          value={{
-            newskit: true
-          }}
-        >
-          <ArticleExtras
-            analyticsStream={() => {}}
-            articleId="dummy-article-id"
-            commentsEnabled
-            registerNode={() => {}}
-            relatedArticleSlice={relatedArticleSlice}
-            relatedArticlesVisible
-            spotAccountId="dummy-spot-id"
-            topics={topics}
-          />
-        </ContextProviderWithDefaults>
-      ),
-      name: "Article Extras via Newskit",
-      type: "story"
     }
   ],
   name: "Composed/Article Extras"

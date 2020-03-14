@@ -11,7 +11,6 @@ module.exports = (
   articleId,
   headers,
   {
-    enableNewskit,
     graphqlApiUrl,
     logger,
     logoUrl,
@@ -57,7 +56,6 @@ module.exports = (
     },
     data: {
       articleId,
-      enableNewskit,
       debounceTimeMs: 0,
       logoUrl,
       makeArticleUrl,
