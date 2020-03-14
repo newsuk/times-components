@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.33.0](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.32.5...@times-components/article-skeleton@1.33.0) (2020-03-14)
+
+
+### Features
+
+* **TNLT-581:** Newsletter puff ([#2541](https://github.com/newsuk/times-components/issues/2541)) ([ec319a0](https://github.com/newsuk/times-components/commit/ec319a0582dbfdbb35c71f49b7a49fdf8394fab1))
+
+
+
+
+
 ## [1.32.5](https://github.com/newsuk/times-components/compare/@times-components/article-skeleton@1.32.4...@times-components/article-skeleton@1.32.5) (2020-03-12)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.38.0](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.37.5...@times-components/styleguide@3.38.0) (2020-03-14)
+
+
+### Features
+
+* **TNLT-581:** Newsletter puff ([#2541](https://github.com/newsuk/times-components/issues/2541)) ([ec319a0](https://github.com/newsuk/times-components/commit/ec319a0582dbfdbb35c71f49b7a49fdf8394fab1))
+
+
+
+
+
 ## [3.37.5](https://github.com/newsuk/times-components/compare/@times-components/styleguide@3.37.4...@times-components/styleguide@3.37.5) (2020-03-12)
 
 **Note:** Version bump only for package @times-components/styleguide
